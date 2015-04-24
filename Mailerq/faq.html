@@ -1,0 +1,108 @@
+<h1>MailerQ Frequently Asked Questions</h1>
+
+<p>
+  Below you will find a short list of our most frequently asked questions about our Mail Transfer Agent.
+  For more information please see our documentation. If you cannot find what you are looking for,
+  please contact <a href="mailto:support@copernica.com" title="contact support">support</a>.
+</p>
+
+<p>There are two parts of the FAQ: the <a href="/documentation/faq#TechnicalQuestions">Technical Questions</a> and
+  <a href="/documentation/faq#LicenseQuestions">License related Questions</a>.
+</p>
+
+<a name="TechnicalQuestions"></a><h2>Technical Questions</h2>
+
+<p>
+  Before you download and install MailerQ, make sure you have a working <a href="https://www.rabbitmq.com" title="RabbitMQ website">RabbitMQ</a> message broker (version 3.3.1+)
+  . There are <a href="/documentation/send-email" title="Send email">three ways to send email</a> with MailerQ.
+  However, posting messages directly to the AMQP message queue is the fastest way. Below you will find
+  the 'technical' questions that are asked most frequent.
+</p>
+
+<h3>Does MailerQ support IPv6?</h3>
+
+<p>
+  Yes, MailerQ supports IPv6. However, do note that not all receiving mail servers
+  have support for IPv6. It is therefore recommended to use IPv4.
+</p>
+
+<h3>Can I see my opens, clicks, etc. in MailerQ?</h3>
+
+<p>
+  No, statistics, such as opens, clicks and more are handled outside of MailerQ.
+  MailerQ focuses completely on the delivery process of your e-mails. All delivery
+  related results are registered by MailerQ and returned to the RabbitMQ results queue.
+  Here your own application can read and process these results.
+</p>
+
+<h3>What happens when an email cannot be delivered?</h3>
+
+<p>
+  There are many reasons why an email cannot be delivered (initially). MailerQ will
+  automatically place these e-mails in the retry queue and send them again after
+  a set amount of time. Each attempt will also add a new "results" property to the
+  JSON so you will know exactly what happened during the delivery of the email.
+</p>
+
+<h3></h3>
+
+<p>
+
+</p>
+
+
+<a name="LicenseQuestions"></a><h2>License related Questions</h2>
+
+<p>
+  After downloading and installing MailerQ, you will need a license to be able to
+  use the software. This license holds a special 'key', the end date and the IP addresses
+  you have specified as the ones you want to use.
+</p>
+
+<h3>Where can I find a MailerQ license?</h3>
+
+<p>
+  You can find MailerQ licenses on the
+  <a href="/product/license" title="Create license">Create License</a> page. On this you can choose
+  to create a Free License (which allows you to use one IP address, send 1000 messages a minute and
+  expires after one month) or a Commercial License (unlimited messages, unlimited IP addresses,
+  renewed montly or annually and professional support). <u>Make sure you add your VAT number
+    when purchasing a commercial license</u>. After reading the terms and conditions press
+    the 'create' button, pay for your license if applicable, and you can download your license.
+  </p>
+
+  <h3>How do I renew a license?</h3>
+
+  <p>
+    On the license page of your <a href="/product/license/all" title="personal profile">personal profile</a>
+    you can renew your current license. Renewing a license will create the exact same license,
+    with the same IP addresses, but with a different end date. <u>Make sure you use the 'create new license'
+    option when you want to add new IP addreses</u>.
+    </p>
+
+    <h3>What do I do when I want to add new IP-addresses?</h3>
+
+    <p>
+      If you want to add new IP addresses to your license there are currently two ways to do so.
+      The first one is to add them to your license when you create a new license. This is the easiest
+      way if you have a monthly license. If you have an annual license or need to add new IPs right away
+      you can contact <a href="mailto:support@copernica.com" title="contact support">support</a>.
+      We will have to manually add a new IP addresses to your license. In the future you will be able to do
+      so on your profile page.
+    </p>
+
+
+    <h3>What if I accidentally delete my license?</h3>
+
+    <p>
+      In the license page of your <a href="/product/license/all" title="personal profile">personal profile</a>
+      you can download any of your current and old licenses.
+    </p>
+
+
+    <h3>Are there any extra costs?</h3>
+
+    <p>
+      No. Once you have purchased your license we will not charge you anything extra for the services
+      offered within that license.
+    </p>

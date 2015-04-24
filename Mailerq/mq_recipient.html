@@ -1,0 +1,36 @@
+<h1>Function MQ_Recipient</h1>
+<p>
+    If you want to retrieve the recipient from a <a href="/documentation/mq_message">MQ_Message</a>,
+    you can use this function for it. It returns a NULL terminated string,
+    or simply NULL if no recipient has been set.
+</p>
+<pre class="prettyprint lang-c">
+/**
+ *  Retrieve the recipient
+ *
+ *  @param  message the message to retrieve the recipient from
+ *  @return         the recipient
+ */
+const char *<a href="/documentation/mq_recipient">MQ_Recipient</a>(<a href="/documentation/mq_message">MQ_Message</a> *message);
+</pre>
+<p>
+    This function has a different behavior if you call it on a message
+    <i>that is being received</i> and on a message <i>that is being sent</i>.
+    If you call it on a message that is being received, for example
+    inside your <a href="/documentation/mq_smtp_in_message">mq_smtp_in_message()</a>
+    function, it is simply an alias for retrieving the "recipient" property
+    from the JSON.
+</p>
+<p>
+    For outgoing messages however, the recipient set in the JSON and the
+    recipient that is returned by this function may be different. This
+    function returns the recipient that is actually being used in the SMTP
+    protocol for the "RCPT TO" instruction, and could be different than the 
+    one that was originally loaded from RabbitMQ (for example, when a plugin 
+    modified the recipient in the mean time).
+</p>
+<p>
+    For more info, see the documentation about 
+    <a href="/documentation/mq_setrecipient">MQ_SetRecipient</a>.
+</p>
+    

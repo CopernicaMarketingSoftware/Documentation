@@ -1,0 +1,112 @@
+<h1>Structure MQ_Context</h1>
+<p>
+    This structure is provided for every asynchronous function a plugin can 
+    implement. It can be used to get access to the event loop as well as 
+    indicating to MailerQ when the plugin is done.
+</p>
+<h2>Functions that your plugin can export</h2>
+<p>
+    MailerQ is a multi-threading application, with multiple working threads
+    that are all sending and receiving messages at the same time. For every
+    single worker thread, a seperate context object is created. If you want
+    to be notified when a new context is created, or when a context is
+    destroyed, you can define the following functions in your plugin:
+<p>
+<table>
+    <thead>
+        <tr>
+            <th>Implementable function</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr valign="top">
+            <td><a href="/documentation/mq_context_initialize">mq_context_initialize()</a></td>
+            <td>Called by MailerQ when a worker thread is created</td>
+        </tr>
+        <tr valign="top">
+            <td><a href="/documentation/mq_context_cleanup">mq_context_cleanup()</a></td>
+            <td>Called by MailerQ when a worker thread is destroyed</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<p>
+    Both of the listed functions are optional. It is not necessary for your
+    plugin to export them, but you can for example use these functions to
+    initialize plugin specific data, and to deallocate that data when
+    the worker thread exits.
+</p>
+<h2>Associating data with a context</h2>
+<p>
+    Your plugin may store a pointer to plugin specific data in a context. This is a 
+    pointer that is completely ignored by MailerQ, but that might be useful
+    for your plugin. If you allocate data for this, it is also your responsibility
+    to deallocate the data when the context is destroyed.
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Callable function</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/documentation/mq_contextdata">MQ_ContextData()</a></td>
+            <td>Retrieve the plugin managed data from the context</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_setcontextdata">MQ_SetContextData()</a></td>
+            <td>Assign plugin managed data to the context</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<p>
+    The plugin data is <i>not</i> shared between plugins. Every plugin can therefore
+    associate its own data with a context, and you do not have to worry about
+    other plugins that overwrite your data.
+</p>
+<h2>Controlling the event loop</h2>
+<p>
+    The main feature that a MQ_Context offers, is access to the event loop. There
+    are a number of functions available that you can use for registering file
+    descriptors and timeouts with the event loop. Internally, MailerQ uses a
+    libev event loop, and you can also get access to this loop pointer.
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Callable function</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/documentation/mq_ev">MQ_ev()</a></td>
+            <td>Access to the underlying libev instance</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_iowatch">MQ_IOWatch()</a></td>
+            <td>Watch a filedescriptor for activity</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_iounwatch">MQ_IOUnwatch()</a></td>
+            <td>Stop watching a filedescriptor for activity</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_timerstart">MQ_TimerStart()</a></td>
+            <td>Start a timer</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_timerstop">MQ_TimerStop()</a></td>
+            <td>Stop a timer</td>
+        </tr>
+        <tr>
+            <td><a href="/documentation/mq_timerreset">MQ_TimerReset()</a></td>
+            <td>Reset a timer to a new timeout</td>
+        </tr>
+    </tbody>
+</table>
+<br/>

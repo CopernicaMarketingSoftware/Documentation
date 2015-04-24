@@ -1,0 +1,32 @@
+<h1>Callback mq_version()</h1>
+<p>
+    When you write your own MailerQ plugin, you must implement the
+    mq_version() function. This function is called by MailerQ to find
+    out if your plugin is compatible with the MailerQ binary.
+</p>
+<p>
+    Normally, this function can be very simple and just has to return
+    the MQ_API_VERSION value. This is an integer value that increments
+    with every new version of MailerQ.
+</p>
+<p>
+    <pre class="prettyprint lang-c">
+#include &lt;mailerq.h&gt;
+
+/**
+ *  Function called by MailerQ to find out if the plugin is compatible
+ *  with the MailerQ executable
+ *
+ *  @return int     API version number for which the plugin is compiled
+ */
+MQ_EXPORT int mq_version() {
+    return MQ_API_VERSION;
+}
+    </pre>
+</p>
+<p>
+    If the returned version number is not valid, MailerQ will report an
+    error message and quit. If the function number is valid, MailerQ
+    will continue to run, and will call your
+    <a href="/documentation/mq_initialize">mq_initialize()</a> function.
+</p>

@@ -1,0 +1,39 @@
+<h1>Function MQ_Mime</h1>
+<p>
+    If you want to retrieve the MIME data from a <a href="/documentation/mq_message">MQ_Message</a>,
+    you can use this function. It returns a NULL terminated string,
+    or simply NULL if no mime has been set.
+</p>
+<pre class="prettyprint lang-c">
+/**
+ *  Retrieve the MIME data
+ *
+ *  @param  message the message to retrieve the mime from
+ *  @return         the MIME data
+ */
+const char *<a href="/documentation/mq_mime">MQ_Mime</a>(<a href="/documentation/mq_mime">MQ_Message</a> *message);
+</pre>
+<p>
+    This function has a different behavior if you call it on a message
+    <i>that is being received</i> and on a message <i>that is being sent</i>.
+    If you call it on a message that is being received, for example
+    inside your <a href="/documentation/mq_smtp_in_message">mq_smtp_in_message()</a>
+    function, it is simply an alias for retrieving the "mime" property
+    from the JSON.
+</p>
+<p>
+    For outgoing messages however, the "mime" property set in the JSON and the
+    data that is returned by this function may be different. In fact,
+    very often the original JSON does not even hold any MIME data, and
+    it is exactly the task of the plugin to <i>generate the MIME</i> based
+    on other properties in the MIME. Exactly for that reason, this function 
+    normally returns NULL if you call it from a plugin that intercepts 
+    outgoing messages - unless some other
+    plugin has already set the data using the <a href="/documentation/mq_setmime">
+    MQ_SetMime()</a> function.
+</p>
+<p>
+    For more info, see the documentation about 
+    <a href="/documentation/mq_setmime">MQ_SetMime</a>.
+</p>
+    

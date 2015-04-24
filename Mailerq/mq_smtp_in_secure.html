@@ -1,0 +1,22 @@
+<h1>Function mq_smtp_in_secure</h1>
+<p>
+    When an incoming SMTP connection is turned into a secure SMTP
+    connection, MailerQ will call the <a href="/documentation/mq_smtp_in_secure">
+    mq_smtp_in_secure()</a> function in the plugins. This function
+    is called <i>after</i> the connection is secured, so you can be
+    sure that the passed in connection object is guaranteed to be secure.
+</p>
+<p>
+    Your function should return true if you want your plugin to take over 
+    control from MailerQ, or false if control should stay with MailerQ.
+</p>
+<pre class="prettyprint lang-c">
+bool mq_smtp_in_secure(<a href="/documentation/mq_context">MQ_Context</a> *context, <a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection);
+</pre>
+<p>
+    If your plugin returns true, MailerQ hands over control to your plugin,
+    and you should also hand control back. For more information on how MailerQ 
+    plugins can interact with the event
+    loop, and how control is passed to and from plugins, see 
+    <a href="/documentation/eventloop">the article about the MailerQ event loop</a>.
+</p>

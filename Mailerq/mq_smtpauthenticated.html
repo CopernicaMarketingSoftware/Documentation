@@ -1,0 +1,20 @@
+<h1>Function MQ_SmtpAuthenticated</h1>
+<p>
+    Returns whether the connection is considered authenticated. If
+    this is the first plugin checking a connection (or if there is
+    only one plugin) this function will initially always return
+    false. If a previous plugin has already set the connection to
+    be authenticated using
+    <a href="/documentation/mq_setsmtpauthenticated">MQ_SetSmtpAuthenticated()</a>
+    this function will return the last value set with this function.
+</p>
+
+<pre class="prettyprint lang-c">
+/**
+ *  Get whether the connection is considered authenticated
+ *
+ *  @param  connection  the connection that we want to know the status of
+ *  @return bool
+ */
+bool <a href="/documentation/mq_smtpauthenticated">MQ_SmtpAuthenticated</a>(<a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection);
+</pre>

@@ -1,0 +1,129 @@
+<h1>SMTP reply codes</h1>
+<p>
+    The list below is a standard list with the SMTP reply codes
+    according to the SMTP standard. Beware however that this is just a standard,  
+    and that certain SMTP servers might return their own status, codes and descriptions
+    that differ from the list below.
+</p>
+<table class="mailerq">
+    <tr>
+        <th class="code">Code</th>
+        <th class="status">Status (SMTP Error)</th>
+        <th class="description">Description</th>
+    </tr>
+    <tr>
+        <td>211</td>
+        <td>2.1.1</td>
+        <td>System status, or system help reply</td>
+    </tr>
+    <tr>
+        <td>214</td>
+        <td>2.1.4</td>
+        <td>Help message</td>
+    </tr>
+    <tr>
+        <td>220</td>
+        <td>2.2.0</td>
+        <td>&#60;domain&#62; Service ready</td>
+    </tr>
+    <tr>
+        <td>221</td>
+        <td>2.2.1</td>
+        <td>&#60;domain&#62; Service closing transmission channel</td>
+    </tr>
+    <tr>
+        <td>250</td>
+        <td>2.5.0</td>
+        <td>Requested mail action okay, completed</td>
+    </tr>
+    <tr>
+        <td>251</td>
+        <td>2.5.1</td>
+        <td>User not local; will forward to &#60;forward-path&#62;</td>
+    </tr>
+    <tr>
+        <td>354</td>
+        <td>3.5.4</td>
+        <td>Start mail input; end with &#60;CRLF&#62;.&#60;CRLF&#62;</td>
+    </tr>
+    <tr>
+        <td>421</td>
+        <td>4.2.1</td>
+        <td>&#60;domain&#62; Service not available, closing transmission channel</td>
+    </tr>
+    <tr>
+        <td>450</td>
+        <td>4.5.0</td>
+        <td>Requested mail action not taken: mailbox unavailable</td>
+    </tr>
+    <tr>
+        <td>451</td>
+        <td>4.5.0</td>
+        <td>Requested action aborted: local error in processing</td>
+    </tr>
+    <tr>
+        <td>452</td>
+        <td>4.5.2</td>
+        <td>Requested action not taken: insufficient system storage</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>5.0.0</td>
+        <td>Syntax error, command unrecognised</td>
+    </tr>
+    <tr>
+        <td>501</td>
+        <td>5.0.1</td>
+        <td>Syntax error in parameters or arguments</td>
+    </tr>
+    <tr>
+        <td>502</td>
+        <td>5.0.2</td>
+        <td>Command not implemented</td>
+    </tr>
+    <tr>
+        <td>503</td>
+        <td>5.0.3</td>
+        <td>Bad sequence of commands</td>
+    </tr>
+    <tr>
+        <td>504</td>
+        <td>5.0.4</td>
+        <td>Command parameter not implemented</td>
+    </tr>
+    <tr>
+        <td>521</td>
+        <td>5.2.1</td>
+        <td>&#60;domain&#62; does not accept mai</td>
+    </tr>
+    <tr>
+        <td>530</td>
+        <td>5.3.0</td>
+        <td>Access denied</td>
+    </tr>
+    <tr>
+        <td>550</td>
+        <td>5.5.0</td>
+        <td>Requested action not taken: mailbox unavailable</td>
+    </tr>
+    <tr>
+        <td>551</td>
+        <td>5.5.1</td>
+        <td>User not local; please try &#60;forward-path&#62;</td>
+    </tr>
+    <tr>
+        <td>552</td>
+        <td>5.5.2</td>
+        <td>Requested mail action aborted: exceeded storage allocation</td>
+    </tr>
+    <tr>
+        <td>553</td>
+        <td>5.5.3</td>
+        <td>Requested action not taken: mailbox name not allowed</td>
+    </tr>
+    <tr>
+        <td>554</td>
+        <td>5.5.4</td>
+        <td>Transaction failed</td>
+    </tr>
+</table>
