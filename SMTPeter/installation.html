@@ -1,0 +1,168 @@
+<h1>How to install PHP-JS</h1>
+<p>
+    PHP-JS depends on a couple of other libraries and applications. Before you install PHP-JS you must make sure that the following other
+    libraries and tools are installed:
+</p>
+
+<ul>
+    <li>C++ compiler (GCC is prefered)</li>
+    <li>PHP development environment</li>
+    <li>PHP-CPP</li>
+    <li>Google's V8 Javascript Engine</li>
+</ul>
+
+<p>
+    We are not going to help you set up
+    a PHP build environment, or tell you how to install a C++ compiler -- Google is your friend here, and there are
+    a billion websites explaining how to achieve this. However, PHP-CPP 
+    and V8 are less well documented, so we will describe how to install these, before we start with PHP-JS.
+</p>
+<p>
+    During this tutorial you will use Git and Make, and it is assumed that you have these installed.
+</p>
+
+<h2>Installing PHP-CPP</h2>
+<p>
+    <a href="https://www.php-cpp.com">PHP-CPP</a> is a library (also made
+    by Copernica, just like PHP-JS) that allows one to create native PHP 
+    extensions using C++. PHP-JS is built on top of this library, because 
+    the API of the V8 engine also uses C++.
+</p>
+
+<h3>Download PHP-CPP</h3>
+<p>
+    The first thing you have to do, is <a href="http://www.php-cpp.com/download">download PHP-CPP (stable)</a>
+    from the PHP-CPP website. And unarchive to your desired location.
+</p>
+
+<h3>Build PHP-CPP</h3>
+<p>
+    Next, we have to build the project. Open the terminal, and navigate
+    to the directory where you have unarchived PHP-CPP to. You will find
+    a file called <i>Makefile</i>. To build the project, execute the following command:
+<pre class="language-bash">
+<code>  make</code>
+</pre>
+    After building has finished, install the library using like so:
+<pre class="language-bash">
+<code>  sudo make install</code>
+</pre>
+    PHP-CPP is now successfully installed!
+</p>
+
+<h2>Installing Google's V8 javascript Engine</h2>
+<p>
+    <a href="https://code.google.com/p/v8/">V8</a> is Google's open source JavaScript engine.
+    You can follow their <a href="https://developers.google.com/v8/build">tutorial</a>
+    if you prefer, but we think it is a bit vague, so we provide our own step by
+    step walkthrough.
+</p>
+<p>
+    Google uses its own wrapper around Git, called depot_tools. 
+    You will need this to download the V8 source.
+    Depot_tools also has its own <a href="http://dev.chromium.org/developers/how-tos/install-depot-tools">tutorial</a>, but again we provide our own here.
+</p>
+<h3>Download & install depot_tools</h3>
+<p>
+    Using the terminal, navigate to the folder where you want to store depot_tools,
+    and download the project using the following terminal command:
+<pre class="language-bash">
+<code>  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git</code>
+</pre>
+</p>
+<h3>Add depot_tools to your PATH variable</h3>
+<p>
+    The easiest way to use depot_tools is to add it to your PATH variable.
+    Below is the command for doing this. Do not exit the terminal, or your
+    path variable will reset!
+</p>
+<pre class="language-bash">
+<code>  export PATH=`pwd`/depot_tools:"$PATH"</code>
+</pre>
+<p>
+    To test if depot_tools is correctly configured, type the following command:
+</p>
+<pre class="language-bash">
+<code>  gclient</code>
+</pre>
+<p>
+    If installed correctly, a list of possible commands appears, and a .gclient
+    directory is created in your home directory.
+</p>
+<h3>Download & build V8</h3>
+<p>
+    Next up is downloading the V8 source code. Navigate to the folder
+    where you want to store the V8 source folder. Depot_tools provides
+    the following command for downloading V8:
+</p>
+<pre class="language-bash">
+<code>  fetch v8</code>
+</pre>
+<p>
+    To build V8, navigate to the V8 source folder, where you will see a
+    file called <i>Makefile</i>. Run the following command to build V8:
+</p>
+<pre class="language-bash">
+<code>  make library=shared native</code>
+</pre>
+<p>
+    This can take some time. The <i>native</i> argument makes sure V8
+    is built for your current platform, and the <i>library=shared</i>
+    argument tells make to build V8 as a shared library.
+</p>
+
+<h3>Install V8</h3>
+
+<p>
+    Finally, you will have to install V8 manually, as its <em>Makefile</em> does not support <i>install</i>.
+    This happens in two steps, the first being the copying of include files.
+    Navigate to the folder where you have the V8 source, and enter v8/include.
+</p>
+<p>
+    There are two possible locations you can copy the include files to, and both are provided below.
+    For this tutorial, it does not matter which one you choose. Take the
+    one you prefer, but if you do not know what to choose, we recommend the first.
+</p>
+
+<strong>Location 1 (recommended)</strong>
+
+<pre class="language-bash">
+<code>  sudo cp . -r /usr/local/include</code>
+</pre>
+<strong>Location 2</strong>
+<pre class="language-bash">
+<code>  sudo cp . -r /usr/include</code>
+</pre>
+
+<p>
+    Next to the include files, you also need to copy the compiled libraries.
+    Navigate to v8/out/native/lib.target.
+    Again, there are two possibilities:
+</p>
+<pre class="language-bash">
+<code>  sudo cp . -r /usr/lib</code>
+</pre>
+<pre class="language-bash">
+<code>  sudo cp . -r /usr/local/lib</code></pre>
+<p>
+    You now have successfully installed Google's V8 JavaScript Engine.
+</p>
+
+<h2>Installing PHP-JS</h2>
+<p>
+    Installing PHP-JS is very similar to installing PHP-CPP.
+    Start by opening the terminal.
+    Download the library at the <a href="https://github.com/CopernicaMarketingSoftware/PHP-JS">GitHub page</a> and unarchive it.
+</p>
+<p>
+    Navigate to the PHP-JS source folder, where you will see a file called <i>Makefile</i>.
+    Build the project with this command:
+<pre class="language-bash">
+<code>  make</code>
+</pre>
+    When building is done, install the library:
+<pre class="language-bash">
+<code>  sudo make install</code>
+</pre>
+    PHP-JS is now ready to use!
+</p>
