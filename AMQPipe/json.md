@@ -76,7 +76,7 @@ like this one:
         "script":   "/path/to/myscript.php",
         "pid":      17211,
         "exitcode": 787,
-        "signal":   11
+        "signal":   11,
         "errors":   "PHP Notice: undefined variable $x",
         "started":  "2015-05-01 13:12:55",
         "finished": "2015-05-01 13:12:57",
