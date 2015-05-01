@@ -57,6 +57,51 @@ different queue, or you can for example choose to ignore output from succesful
 scripts).
 
 
+## Specify plugin or script
+
+For all messages loaded from RabbitMQ, the AMQPipe process manager runs
+your program(s) or script(s) to process them. With the `plugin` variable
+you can specify the location of your script.
+
+````txt
+plugin:           /path/to/your/plugin
+````
+
+The path to you plugin should either be:
+
+* An executable file
+* A shared object (*.so) file 
+* Or a directory
+
+If you specify an executable file, AMQPipe will start that executable for
+every message that is consumed from RabbitMQ. If you want to use a script
+for processing messages (for example, a PHP script), you must make sure
+that your script starts with a "hashbanh", and that you set the 
+executable bit on your script (you can use the command `chmod 777 
+yourscript.php` for that):
+
+````php
+#!/usr/bin/php
+<?php
+// read data from stdin
+$input = stream_get_contents(STDIN);
+
+// @todo add your own code
+?>
+````
+
+A special sort of plugins are _shared objects_. A shared object is written
+in C++ and is loaded by AMQPipe when the application starts. Unlike 
+executables, which are started for every consumed messages, a shared
+object is only loaded once, and the same function from that shared
+object gets called for each consumed message.
+
+The third possible value that can be set is the path to a directory. If
+you set the `plugin` variable to a directory, AMQPipe will run all
+executable files and all shared objects _from that directory_ for
+incoming messages.
+
+
 ## Input
 
 Normally, AMQPipe sends the complete message body that was loaded from RabbitMQ 
