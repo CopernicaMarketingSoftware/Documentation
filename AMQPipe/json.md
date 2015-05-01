@@ -7,6 +7,8 @@ information about the consumed message. The format of this input is as follows:
 
 ````json
 {
+    "exchange":         "the exchange to which the message was original published",
+    "routing-key":      "the routing key that was used for publishing",
     "expiration":       "string value",
     "reply-to":         "string value",
     "correlation-id":   "string value",
@@ -25,10 +27,14 @@ information about the consumed message. The format of this input is as follows:
 }
 ````
 
-All of the above properties are optional, and are only included in the
-JSON if they were also set in the AMQP envelope. Only the `message` 
-property does not come from the envelope, but holds the actual message
-body.
+Most of the above properties are optional, and are only included in the
+JSON if they were are available. The `message` property
+holds the actual message body, and the `exchange` and `routing-key`
+properties hold the name of the exchange and the routing key that
+were used when the message was originally published to RabbitMQ. All
+the other properties come from the envelope, and are only set
+if the application that originally published the message, also set them
+(most application don't use the AMQP envelope fields).
 
 The above properties are part of the AMQP protocol. In reality, most
 of these properties are not used and are left out of the envelope and
@@ -40,7 +46,7 @@ all sort of output.
 ## Headers property
 
 When AMQPipe publishes the output of a script or program back to
-RabbitMQ, it uses the 'headers' property from an envelope to store
+RabbitMQ, it uses the 'headers' property of the envelope to store
 meta information about the script. In this header, you can find
 the following information:
 
