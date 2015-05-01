@@ -13,11 +13,13 @@ publish a message with the generated output to this exchange.
 When a script finishes, AMQPipe checks the exit status of the script. If it
 exited normally (with exit code 0), the output of the script is collected,
 and published to the configured RabbitMQ exchange. AMQPipe will use routing key 
-`success` for such results. The following routing keys are used by AMQPipe:
+`success` for such results. If a script did not correctly terminate, or when
+it sent output to stderr, different routing keys will be used. The following 
+routing keys are used by AMQPipe:
 
 * `success`: successfully completed script (exit code 0)
 * `warning`: successfully completed script (exit code 0), that also generated output on stderr
-* `error`: script that terminated with an exit code other that 0
+* `failure`: script that terminated with an exit code other that 0
 * `killed`: script that was terminated by a signal
 
 You can make use of these routing keys to create a topology of message queues.
@@ -45,15 +47,15 @@ If you have a script that processes completed message, you can read out this
 header, and utilize this meta information.
 
 
-## Multiple plugins
+## Multiple scripts
 
-If you have configured AMQPipe to run multiple plugins (you can do this by setting
+If you have configured AMQPipe to run multiple scripts (you can do this by setting
 the `plugin` property in the configuration file to a directory instead of a single
-file), AMQPipe will pass the output of the first plugin as input to the second
-plugin. The result that is published back to RabbitMQ is the output of the last
-plugin. If one of the earlier plugins does not terminate correctly (with an exit 
-status other than zero), AMQPipe will not call the subsequent plugins, but will
-report the result immediately back to RabbitmQ.
+file), AMQPipe will pass the output of the first script as input to the second
+script. The result that is published back to RabbitMQ is the output of the last
+script. If one of the earlier plugins does not terminate correctly (with an exit 
+status other than zero, or by a signal), AMQPipe will not call the subsequent 
+scripts, but will report the result immediately back to RabbitmQ.
 
 In case of a multi-plugin setup, the `started` property holds the time when the
 first plugin or script started, and the `finished` property the time when the
