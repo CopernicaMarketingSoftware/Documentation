@@ -75,10 +75,11 @@ The path to you plugin should either be:
 * Or a directory
 
 If you specify an executable file, AMQPipe will start that executable for
-every message that is consumed from RabbitMQ. If you want to use a script
-for processing messages (for example, a PHP script), you must make sure
-that your script starts with a "hashbanh", and that you set the 
-executable bit on your script (you can use the command `chmod 777 
+every message that is consumed from RabbitMQ. Be aware that if you want to 
+use a script for processing messages (for example, a PHP script), you must 
+turn that script first into an executable program. You do this by adding
+a [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29) to your script, 
+and by setting the executable bit (you can use the command `chmod 755 
 yourscript.php` for that):
 
 ````php
