@@ -25,6 +25,7 @@ config file:
 rabbitmq-host:      localhost
 rabbitmq-user:      guest
 rabbitmq-password:  guest
+rabbitmq-vhost:     /
 ````
 
 Of course, you should replace the hostname and login credentials with settings
