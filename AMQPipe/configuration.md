@@ -2,7 +2,7 @@
 
 All the settings of the AMQPipe process manager can be set in the configuration
 file. This file holds the login credentials to connect to RabbitMQ, the max
-number of simultaneous processes to run, and the name of the exchanges to which
+number of simultaneous processes to run, and the name of the exchange to which
 messages are published.
 
 When AMQPipe starts, it will first check for a configuration file name 
