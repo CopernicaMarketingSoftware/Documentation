@@ -10,7 +10,7 @@ When AMQPipe starts, it will first check for a configuration file name
 the system wide "/etc/amqpipe" configuration file.
 
 All the settings from the configuration file can also be supplied as command
-line arguments, with two extra dashes in front of the variable name (for example,
+line arguments, with two extra dashes in front of the variable name. For example,
 you may use the command line argument `--rabbitmq-host=queue.example.com` to
 override the `rabbitmq-host` variable from the config file.
 
@@ -47,7 +47,7 @@ rabbitmq-exchange:  myexchange
 
 The `rabbitmq-queue` variable specifies the queue _from which messages are loaded_,
 and the `rabbitmq-exchange` variable holds the name of the exchange _to which
-messages are published`. When AMQPipe publishes a message to this exchange, it
+messages are published_. When AMQPipe publishes a message to this exchange, it
 uses different routing keys to specify whether a program or script succesfully 
 completed, or somehow crashed or was killed during the execution. Inside your
 RabbitMQ queue topology you can use these routing keys to redirect messages 
@@ -60,16 +60,32 @@ scripts).
 ## Input
 
 Normally, AMQPipe sends the complete message body that was loaded from RabbitMQ 
-directly to 'stdin' of your script. Inside your script you can read in this data
+directly to 'stdin' of your script. Inside your script you read in this data
 from stdin, process it, and generate the output. However, the AMQP protocol has
 way more data than just the message body - every message has a full envelope 
-and header holding all sort of additional properties. If you're also interested
-in the information from this envelope, you can set the input format to JSON.
+and header holding all sort of additional properties. However, this meta data 
+is normally _not_ exposed to your scripts or programs.
 
-When the input format is set to JSON, AMQPipe will turn the message body and the
-message envelope into a 
+However, if you're also interested in the envelope information, you can set the 
+input format to JSON. When you do this, AMQPipe will turn the message body and the
+message envelope into one big JSON object, and sends this JSON object to
+'stdin' of your script. Your script should read in this message body, and parse
+the JSON.
 
+````txt
+input-format:     json
+input-encoding:   base64
+````
 
+Currently, two sort of input formats are supported: `message` (which is the default)
+to only send the raw message body to your script, and `json` to turn the envelope
+and the message in one big JSON array.
+
+Besides the input-format, you can also set the variable `input-encoding`. If you
+use RabbitMQ for queueing binary data, it is not possible to turn this data into
+valid JSON objects. By setting the `input-encoding` to `base64` you tell AMQPipe
+to first convert the message to base64 encoding before it is sent to your script.
+The default settings for the `input-encoding` is `none`.
 
 ## Max processes
 
