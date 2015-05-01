@@ -164,7 +164,7 @@ max-cpu-time:     60
 ````
 
 The `max-*-memory` are set in bytes, but you can use postfixes like 'MB' and 'GB'.
-The `max-*_time` variables are set in number of seconds. All variables have a default
+The `max-*-time` variables are set in number of seconds. All variables have a default
 value of `unlimited`.
 
 The memory limits set the maximum amount of virtual memory, residient memory and
