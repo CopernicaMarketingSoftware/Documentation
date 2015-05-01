@@ -87,7 +87,7 @@ like this one:
 
 Some of the fields are optional. For example, if the program was not killed
 by a signal, the `signal` property will not be included, and if no stderr
-output was created, the `errors` property will not be vailable. The
+output was created, the `errors` property will not be available. The
 `exitcode` property is only included for programs that terminated normally
 (thus not by a signal). The `exitcode` and `signal` properties will never
 both be set.
