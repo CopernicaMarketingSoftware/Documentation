@@ -3,8 +3,8 @@
 AMQPipe consumes messages from RabbitMQ - passes them to your script or scripts -
 and publishes the results _back to RabbitMQ_. But how does it do this?
 
-In the configuration file, you should set the name of an exchange that will be
-used by AMQPipe for the publishing. Every time a script completes, it will
+In the configuration file, you set the name of an exchange that is used by 
+AMQPipe for publishing results. Every time a script completes, it will
 publish a message with the generated output to this exchange.
 
 
