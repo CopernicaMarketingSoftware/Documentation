@@ -58,7 +58,7 @@ information:
 * The name of the script
 * The process ID (pid) of the script
 * The script exit code (0 for success)
-* The signal number that killed the script (if it was killed by a script)
+* The signal number that killed the script (if it was killed by a signal)
 * Any output that the script sent to stderr
 * The time when the script started
 * The time when the script exited
@@ -84,6 +84,13 @@ like this one:
     "message":  "This is the script output"
 }
 ````
+
+Some of the fields are optional. For example, if the program was not killed
+by a signal, the `signal` property will not be included, and if no stderr
+output was created, the `errors` property will not be vailable. The
+`exitcode` property is only included for programs that terminated normally
+(thus not by a signal). The `exitcode` and `signal` properties will never
+both be set.
 
 Because the AMQP protocol only allows a limited size for the envelope, the 
 output that was sent to stderr is sometimes truncated.
