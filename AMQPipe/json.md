@@ -1,7 +1,9 @@
 # JSON specification
 
-If you set the input format to JSON, your script(s) will receive 
-JSON input from AMQPipe. The format of this input is as follows:
+If you set the `input-format` variable in the config file to 'json', your 
+script(s) will receive JSON input from AMQPipe instead of just the message
+bodies. This JSON object holds all sort of additional information about
+the consumed message. The format of this input is as follows:
 
 ````json
 {
