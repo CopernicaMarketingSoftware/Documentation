@@ -9,7 +9,7 @@ Here you can explore in detail our products, which include:
 - PHP-JS - to execute JavaScript right from your PHP script and share variables between JavaScript and PHP
 - Responsive Email - an online service to create and send responsive HTML emails.
 - SMTPeter - to connect your app via SMTP or REST API and start sending emails through the cloud instead of your server
-
+- AMQPipe - Tool to process AMQP messages
 
 With Copernica you can deliver relevant and timely communications using email, sms, landing pages and PDF.
  
