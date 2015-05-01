@@ -57,6 +57,9 @@ crashed scripts into one queue, and the output of all succesful scripts in a
 different queue, or you can for example choose to ignore output from succesful
 scripts).
 
+The queue and exchange _are not declared_ by AMQPipe. You must make sure that
+the exchange and queue are declared before you start AMQPipe.
+
 
 ## Specify plugin or script
 
@@ -153,12 +156,22 @@ time a script takes to complete, or the amount of memory it can consume. When th
 limit is reached, AMQPipe automatically kills the program.
 
 ````text
-max-memory:       2GB
-max-runtime:      3600
+max-virt-memory:  2GB
+max-res-memory:   2GB
+max-shr-memory:   2GB
+max-real-time:    3600
+max-cpu-time:     60
 ````
 
-The `max-memory` is set in bytes, but you can use postfixes like 'MB' and 'GB'.
-The `max-runtime` variable is set in number of seconds. Both values have a default
+The `max-*-memory` are set in bytes, but you can use postfixes like 'MB' and 'GB'.
+The `max-*_time` variables are set in number of seconds. All variables have a default
 value of `unlimited`.
 
+The memory limits set the maximum amount of virtual memory, residient memory and
+shared memory. See [this article by 
+Mugurel Sumanariu](http://mugurel.sumanariu.ro/linux/the-difference-among-virt-res-and-shr-in-top-output/)
+for an explentation of the differences between these three. 
 
+The `max-real-time` controls how many seconds a process may exist before it is killed,
+while `max-cpu-time` limits the number of seconds of CPU time that a process
+may use.
