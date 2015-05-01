@@ -101,7 +101,7 @@ object gets called for each consumed message.
 The third possible value that can be set is the path to a directory. If
 you set the `plugin` variable to a directory, AMQPipe will run all
 executable files and all shared objects _from that directory_ for
-incoming messages.
+incoming messages. The plugins are loaded in alphabetical order.
 
 
 ## Input
@@ -113,7 +113,7 @@ way more data than just the message body - every message has a full envelope
 and header holding all sort of additional properties. However, this meta data 
 is normally _not_ exposed to your scripts or programs.
 
-However, if you're also interested in the envelope information, you can set the 
+If you're also interested in the envelope information, you can set the 
 input format to JSON. When you do this, AMQPipe will turn the message body and the
 message envelope into one big JSON object, and sends this JSON object to
 'stdin' of your script. Your script should read in this message body, and parse
@@ -134,8 +134,31 @@ valid JSON objects. By setting the `input-encoding` to `base64` you tell AMQPipe
 to first convert the message to base64 encoding before it is sent to your script.
 The default settings for the `input-encoding` is `none`.
 
+
 ## Max processes
 
+AMQPipe runs multiple processes in parallel to optimize the use of the resources
+of the server. You can control the number of processes to run with the 
+`max-processes` variable. It is best to set this to a number close to the number
+of CPU's you have available on your server.
 
+````txt
+max-processes:    16
+````
+
+## Process limits
+
+To prevent that scripts or programs get out of control, you may set limits on the
+time a script takes to complete, or the amount of memory it can consume. When this
+limit is reached, AMQPipe automatically kills the program.
+
+````text
+max-memory:       2GB
+max-runtime:      3600
+````
+
+The `max-memory` is set in bytes, but you can use postfixes like 'MB' and 'GB'.
+The `max-runtime` variable is set in number of seconds. Both values have a default
+value of `unlimited`.
 
 
