@@ -1,11 +1,11 @@
 # AMQPipe documentation
 
 AMQPipe is a task manager application that reads messages from a 
-RabbitMQ message queue, passes the message to a script or program
-that may modify the message, and publishes the result of that script
-or program back to RabbitMQ. The AMQPipe program ensures that your
-servers are fully optimized, because it runs as many scripts or 
-programs in parallel as you have configured.
+RabbitMQ message queue, passes the message to a script or program, 
+and publishes the result of that scripts or programs back to RabbitMQ. 
+The AMQPipe program ensures that your servers are fully optimized, 
+because it runs as many scripts or programs in parallel as you have 
+configured.
 
 
 ## Configuration file
