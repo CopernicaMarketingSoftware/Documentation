@@ -1,49 +1,49 @@
 <h1>Special features</h1>
 <p>
     One of the questions we had to ask ourselves when we developed the PHP-CPP
-    library was whether we should follow PHP conventions or follow C++ 
+    library was whether we should follow PHP conventions or follow C++
     conventions for many of the library features.
 </p>
 <p>
-    In PHP scripts you can use <a href="magic-methods">magic methods</a> and 
+    In PHP scripts you can use <a href="magic-methods">magic methods</a> and
     <a href="magic-interfaces">magic interfaces</a> to add special behavior to
     classes. With C++ classes you can achieve the same, but by using technologies like
     operator overloading, implicit constructors and casting operators. The
-    PHP __invoke() method for example, is more or less identical to operator () 
-    in C++. The question that we asked ourselves was whether we should automatically 
-    pass the __invoke PHP method to a C++ operator() call - or use the same 
+    PHP __invoke() method for example, is more or less identical to operator ()
+    in C++. The question that we asked ourselves was whether we should automatically
+    pass the __invoke PHP method to a C++ operator() call - or use the same
     __invoke() method name in C++ too?
 </p>
 <p>
     We have decided to follow the PHP conventions, and use magic methods
-    and magic interfaces in C++ as well - although we must admit that having 
+    and magic interfaces in C++ as well - although we must admit that having
     methods that start with two underscores does not make the code look very
     pretty. But by using magic methods the switch from PHP to C++ is kept simpler
     for starting C++ programmers. And on top of that, not all magic methods and
     interfaces could have been implemented with core C++ features (like operator
-    overloading), so we had to use <i>some</i> magic methods and/or interfaces 
-    anyway. That's why we decided that because we had to use <i>some</i> magic methods 
-    in C++, we could just as well follow PHP completely and support <i>all</i> magic 
+    overloading), so we had to use <i>some</i> magic methods and/or interfaces
+    anyway. That's why we decided that because we had to use <i>some</i> magic methods
+    in C++, we could just as well follow PHP completely and support <i>all</i> magic
     PHP methods in C++ too.
 </p>
 <p>
     Besides the magic methods and interfaces that are available in PHP
     user space, the Zend engine has additional features that are not exposed to
-    PHP user space scripts. Features that are only accessible for extension 
-    programmers. The PHP-CPP library also supports these special features. This 
-    means that if you use PHP-CPP for writing functions and classes, you can 
+    PHP user space scripts. Features that are only accessible for extension
+    programmers. The PHP-CPP library also supports these special features. This
+    means that if you use PHP-CPP for writing functions and classes, you can
     achieve things that can not be achieved by writing pure PHP code.
 </p>
 <h2 id="casting-functions">Extra casting functions</h2>
 <p>
-    Internally, the Zend engine has special casting routines to cast objects 
-    to integers, to booleans and to floating point values. For one reason or another, 
-    a PHP script can only implement the __toString() method, while all other casting 
-    operations are kept away from it. The PHP-CPP library solves this limitation, 
+    Internally, the Zend engine has special casting routines to cast objects
+    to integers, to booleans and to floating point values. For one reason or another,
+    a PHP script can only implement the __toString() method, while all other casting
+    operations are kept away from it. The PHP-CPP library solves this limitation,
     and allows one to implement the other casting functions as well.
 </p>
 <p>
-    One of the design goals of the PHP-CPP library is to stay as close to PHP as 
+    One of the design goals of the PHP-CPP library is to stay as close to PHP as
     possible. For that reason the casting functions have been given names that match
     the __toString() method: __toInteger(), __toFloat(), and __toBool().
 </p>
@@ -77,7 +77,7 @@ public:
     {
         return "abcd";
     }
-    
+
     /**
      *  Cast to a integer
      *  @return long
@@ -86,7 +86,7 @@ public:
     {
         return 1234;
     }
-    
+
     /**
      *  Cast to a floating point number
      *  @return double
@@ -95,7 +95,7 @@ public:
     {
         return 88.88;
     }
-    
+
     /**
      *  Cast to a boolean
      *  @return bool
@@ -112,22 +112,22 @@ public:
  */
 extern "C" {
     /**
-     *  Startup function that is called by the Zend engine 
+     *  Startup function that is called by the Zend engine
      *  to retrieve all information about the extension
      *  @return void*
      */
     PHPCPP_EXPORT void *get_module() {
-        
+
         // extension object
         static Php::Extension myExtension("my_extension", "1.0");
-        
-        // description of the class so that PHP knows 
+
+        // description of the class so that PHP knows
         // which methods are accessible
         Php::Class&lt;MyClass&gt; myClass("MyClass");
-        
+
         // add the class to the extension
         myExtension.add(std::move(myClass));
-        
+
         // return the extension
         return myExtension;
     }
@@ -158,7 +158,7 @@ echo((float)$object."\n");
 <p>
     If you compare two objects in PHP with comparison operators like &lt; ==, !=
     &gt; (and the obvious others), the Zend engine runs an object comparison function.
-    The PHP-CPP library interupts this method, and passes the comparison method
+    The PHP-CPP library intercepts this method, and passes the comparison method
     to the __compare method of your class. In other words, if you want to install
     a custom comparison operator, you can do so by implementing __compare().
 </p>
@@ -181,12 +181,12 @@ public:
     /**
      *  C++ constructor
      */
-    MyClass() 
+    MyClass()
     {
         // start with random value
         _value = rand();
     }
-    
+
     /**
      *  C++ destructor
      */
@@ -200,7 +200,7 @@ public:
     {
         return std::to_string(_value);
     }
-    
+
     /**
      *  Compare with a different object
      *  @param  that
@@ -218,22 +218,22 @@ public:
  */
 extern "C" {
     /**
-     *  Startup function that is called by the Zend engine 
+     *  Startup function that is called by the Zend engine
      *  to retrieve all information about the extension
      *  @return void*
      */
     PHPCPP_EXPORT void *get_module() {
-        
+
         // extension object
         static Php::Extension myExtension("my_extension", "1.0");
-        
-        // description of the class so that PHP knows 
+
+        // description of the class so that PHP knows
         // which methods are accessible
         Php::Class&lt;MyClass&gt; myClass("MyClass");
-        
+
         // add the class to the extension
         myExtension.add(std::move(myClass));
-        
+
         // return the extension
         return myExtension;
     }
