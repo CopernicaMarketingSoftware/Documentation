@@ -14,7 +14,7 @@
 <p>
     We are not going to help you set up
     a PHP build environment, or tell you how to install a C++ compiler -- Google is your friend here, and there are
-    a billion websites explaining how to achieve this. However, PHP-CPP 
+    a billion websites explaining how to achieve this. However, PHP-CPP
     and V8 are less well documented, so we will describe how to install these, before we start with PHP-JS.
 </p>
 <p>
@@ -24,8 +24,8 @@
 <h2>Installing PHP-CPP</h2>
 <p>
     <a href="https://www.php-cpp.com">PHP-CPP</a> is a library (also made
-    by Copernica, just like PHP-JS) that allows one to create native PHP 
-    extensions using C++. PHP-JS is built on top of this library, because 
+    by Copernica, just like PHP-JS) that allows one to create native PHP
+    extensions using C++. PHP-JS is built on top of this library, because
     the API of the V8 engine also uses C++.
 </p>
 
@@ -58,7 +58,7 @@
     step walkthrough.
 </p>
 <p>
-    Google uses its own wrapper around Git, called depot_tools. 
+    Google uses its own wrapper around Git, called depot_tools.
     You will need this to download the V8 source.
     Depot_tools also has its own <a href="http://dev.chromium.org/developers/how-tos/install-depot-tools">tutorial</a>, but again we provide our own here.
 </p>
@@ -103,12 +103,21 @@
     file called <i>Makefile</i>. Run the following command to build V8:
 </p>
 <pre class="language-bash">
-<code>  make library=shared native</code>
+<code>  make library=shared i18nsupport=off native</code>
 </pre>
 <p>
     This can take some time. The <i>native</i> argument makes sure V8
     is built for your current platform, and the <i>library=shared</i>
     argument tells make to build V8 as a shared library.
+</p>
+
+<p>
+    The i18nsupport=off makes sure that the v8 engine does not build the
+    provided i18n library. The reason to not do this is that this usually
+    clashes with the system-provided i18n library (the shared object names
+    are the same and a package update could wipe it, or - if you install it
+    in some other directory - won't find it). Usually the system-provided
+    library works well enough.
 </p>
 
 <h3>Install V8</h3>
@@ -140,10 +149,10 @@
     Again, there are two possibilities:
 </p>
 <pre class="language-bash">
-<code>  sudo cp . -r /usr/lib</code>
+<code>  sudo cp libv8.so -r /usr/lib</code>
 </pre>
 <pre class="language-bash">
-<code>  sudo cp . -r /usr/local/lib</code></pre>
+<code>  sudo cp libv8.so -r /usr/local/lib</code></pre>
 <p>
     You now have successfully installed Google's V8 JavaScript Engine.
 </p>
