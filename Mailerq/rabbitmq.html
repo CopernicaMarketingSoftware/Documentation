@@ -21,7 +21,7 @@
 </p>
 <h2>Check your login and password</h2>
 <p>
-    By default, when you first install RabbitMQ, it creates the first user 
+    By default, when you install RabbitMQ, it creates the first user 
     with login "guest" and password "guest". You can only use this default login 
     if you connect to RabbitMQ locally (from localhost). If you connect from a 
     remote host, the "guest/guest" login does not work. Therefore, if you
@@ -61,14 +61,14 @@
     MailerQ not only uses RabbitMQ to fetch the message that it is going to send, 
     but also (if you have this configured) to publish back the delivery results. 
     If you do not process these delivery results in time, you run the risk that 
-    your RabbitMQ server runs out of resources. This can especially run in
+    your RabbitMQ server runs out of resources. This can especially happen in
     a production environment, where many messages are published and
     consumed.
 </p>
 <p>
     So, when you run MailerQ in production, do make sure that you have set up
     crontabs or other scripts that periodically or continuously process the 
-    messages from the result queue. If you do not do this, your RabbitMQ
+    messages from the result queues. If you do not do this, your RabbitMQ
     server will run out of resources fast.
 </p>
 <p>
