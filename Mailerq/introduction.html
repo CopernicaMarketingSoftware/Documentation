@@ -48,6 +48,22 @@
     all supported configuration options</a>. A number of options require
     special attention.
 </p>
+<h3>RabbitMQ configuration</h3>
+<p>
+    The most important settings in the config file of course deal with
+    RabbitMQ. The hostname of the RabbitMQ server, and the names of the 
+    exchanges and queues should all be specified in the config file. MailerQ
+    helps you in setting up the RabbitMQ configuration: if you include a 
+    queue or exchange in the config file that does not yet exist, it will
+    automatically be created by MailerQ.
+</p>
+<p>
+    Keep in mind that all results are also published to RabbitMQ. If you
+    run MailerQ in production, this could result in queues that are built
+    up rappidly. To prevent that your RabbitMQ server runs out of resources,
+    you either have to ensure that you periodically clean these queues,
+    or you should configure MailerQ not to publish results.
+</p>
 <h3>Database configuration</h3>
 <p>
     Besides the <i>essential</i> settings to connect to RabbitMQ, you
