@@ -2,19 +2,18 @@
 <p>
     MailerQ heavenly depends on RabbitMQ for all its queueing. You
     therefore need a running RabbitMQ instance (or better: a cluster
-    of instances) before you can start MailerQ. We do intend to write
-    a full installation guide for RabbitMQ here (you better check out
+    of instances) before you can start MailerQ. We do not intend to write
+    a full installation guide for RabbitMQ here (you better check
     the <a href="https://www.rabbitmq.com">www.rabbitmq.com</a> website
     for that), but we do have some tips, tricks and recommendations.
 </p>
-<h2>Make sure you the right MailerQ version</h2>
+<h2>Make sure you use the right MailerQ version</h2>
 <p>
     The RabbitMQ version that is installed in the repository of your
-    operating system might be outdated. You really need
-    a version that is up-to-date, because MailerQ uses a couple of new
-    features that were only recently installed. So you better download
-    and install RabbitMQ directly from the 
-    <a href="https://www.rabbitmq.com">www.rabbitmq.com</a> website
+    operating system might be outdated. You really need a version that is 
+    up-to-date, because MailerQ uses a couple of new features that were 
+    only recently added to RabbitMQ. So you better download and install 
+    RabbitMQ directly from the <a href="https://www.rabbitmq.com">www.rabbitmq.com</a> website
     instead of using the version that comes with your OS.
 </p>
 <p>
@@ -22,13 +21,13 @@
 </p>
 <h2>Check your login and password</h2>
 <p>
-    By default, RabbitMQ creates a user with login "guest" and password 
-    "guest". However, you can use this default login only if you connect
-    to RabbitMQ locally. If you connect from a remote host, the "guest/guest" 
-    login does not work. Therefore, if you install RabbitMQ and MailerQ on 
-    different machines, you either need to add a user with a different name
-    and password, or you should configure RabbitMQ to allow "guest/guest"
-    logins from remote hosts as well.
+    By default, when you first install RabbitMQ, it creates the first user 
+    with login "guest" and password "guest". You can only use this default login 
+    if you connect to RabbitMQ locally (from localhost). If you connect from a 
+    remote host, the "guest/guest" login does not work. Therefore, if you
+    install RabbitMQ and MailerQ on different machines, you either need to add 
+    a user with a different name and password, or you should configure RabbitMQ 
+    to allow "guest/guest" logins from remote hosts as well.
 </p>
 <p>
     The <code>loopback_users</code> setting in the RabbitMQ config file
@@ -39,16 +38,18 @@
     do not want everyone from all over the internet to connect to your
     RabbitMQ instance!
 </p>
+<p>
+    <a href="https://www.rabbitmq.com/access-control.html"><strong>Read more about setting up <code>loopback_users</code></strong></a>.
+</p>
+
 <h2>Management plugin</h2>
 <p>
     Just like MailerQ, RabbitMQ comes with a very nice web interface. However,
-    this web interface is not enabled by default, and must explicitly 
-    be configured. We recommend doing this, because it is much easier
+    this web interface is not enabled by default, and must be explicitly 
+    configured. We recommend doing this, because it is much easier
     to control RabbitMQ via a web browser, than with command line tools.
-</p>
-<p>
     You can find an article on the RabbitMQ website that explains how
-    to enable and use the web interfance:
+    to do this:
 </p>
 <p>
     <a href="https://www.rabbitmq.com/management.html">
@@ -60,10 +61,12 @@
     MailerQ not only uses RabbitMQ to fetch the message that it is going to send, 
     but also (if you have this configured) to publish back the delivery results. 
     If you do not process these delivery results in time, you run the risk that 
-    your RabbitMQ server runs out of resources.
+    your RabbitMQ server runs out of resources. This can especially run in
+    a production environment, where many messages are published and
+    consumed.
 </p>
 <p>
-    When you run MailerQ in production, do make sure that you have set up
+    So, when you run MailerQ in production, do make sure that you have set up
     crontabs or other scripts that periodically or continuously process the 
     messages from the result queue. If you do not do this, your RabbitMQ
     server will run out of resources fast.
