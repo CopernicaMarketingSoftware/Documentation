@@ -4,96 +4,94 @@
     message queues. RabbitMQ is a server application that deals with message
     queue'ing. Before you're going to install and configure MailerQ, you
     must therefore first make sure you have access to a working RabbitMQ 
-    server.
+    server. If you have a working and up-to-date RabbitMQ server, you
+    can proceed with setting up MailerQ. Otherwise, check our 
+    <a href="/documentation/rabbitmq">RabbitMQ tips and trics article</a>.
 </p>
+<h2 id="installing-mailerq">Installing MailerQ</h2>
 <p>
-    <a href="https://www.rabbitmq.com/download.html"><strong>Click here to download and install RabbitMQ</strong></a>.
-</p>
-<p>
-    If you have a running RabbitMQ server, you can <a href="#installing-mailerq">
-    proceed with installing</a> MailerQ. Make sure you know the login and password 
-    for your RabbitMQ server, because MailerQ needs them for connecting to RabbitMQ.
-</p>
-<p>
-    If you're completely new to RabbitMQ, there are a couple of things that might
-    need attention:
-</p>
-<ul>
-    <li>
-        <div><strong>Login and password</strong></div>
-        The default login-password combination only works if you connect from localhost. 
-        If you install RabbitMQ and MailerQ on a different servers, you either have to 
-        change the default "guest/guest" password to something else, or set the 'loopback_users'
-        option in the RabbitMQ configuration (see <a href="https://www.rabbitmq.com/access-control.html">
-        https://www.rabbitmq.com/access-control.html</a>).
-    </li>
-    <li>
-        <div><strong>Management plugin</strong></div>
-        RabbitMQ has a plugin that adds a cool web interface to it. We recommend that 
-        you install this plugin, so that you can use your webbrowser to control your 
-        RabbitMQ instance. (see <a href="https://www.rabbitmq.com/management.html">
-        https://www.rabbitmq.com/management.html</a>).
-    </li>
-    <li>
-        <div><strong>Don't run out of resources</strong></div>
-        MailerQ not only uses RabbitMQ to fetch the message that it is going to send, but
-        also (if you have this configured) to publish back the delivery results. If you
-        do not process these delivery results, you run the risk that your RabbitMQ server
-        runs out of resources.
-    </li>
-</ul>
-<h1 id="installing-mailerq">Installing MailerQ</h1>
-<p>
-    Installing the Mail Transfer Agent (MTA) MailerQ on a Linux server is easy. We have 
-    <a href="/product/download" title="Download MailerQ">downloads</a> for Debian based environments 
-    (Debian, Ubuntu, etc) and for Red Hat based environments (Red Hat, Fedora, CentOS, etc). 
-    Before you start the installation of MailerQ, make sure that you have 
-    access to a working <a href="http://www.rabbitmq.com/" target="_blank" rel="nofollow">
-    RabbitMQ message broker</a> (version 3.3.1+), because that's what MailerQ uses for storing
-    all e-mails.
+    After you've installed your RabbitMQ server, you can proceed with setting
+    up MailerQ. Installing the MailerQ Mail Transfer Agent (MTA) on a Linux 
+    server is easy. We have <a href="/product/download" title="Download MailerQ">
+    downloads</a> for Debian based environments (Debian, Ubuntu, etc) and for 
+    Red Hat based environments (Red Hat, Fedora, CentOS, etc). 
 </p>
 <p>
     After you have <a href="/product/download" title="Download MailerQ">downloaded</a> 
-    the appropriate MailerQ .deb or .rpm file,
-    you can install it on your system. This can probably be
-    achieved by double-clicking on it if you have a desktop
+    the appropriate MailerQ .deb or .rpm file, you can install it on your system. 
+    This can probably be achieved by double-clicking on it if you have a desktop
     computer, or with one of the following command line instructions:
 </p>
 <h2>Red Hat based environments:</h2>
-<pre><strong>$</strong> sudo rpm -i /path/to/mailerq-version.rpm</pre>
-
+<div class="codeBox">
+    <pre><strong>$</strong> sudo rpm -i /path/to/mailerq-version.rpm</pre>
+</div>
 <h2>Debian based environments:</h2>
-
 <div class="codeBox">
     <pre><strong>$</strong> sudo dpkg -i path/to/mailerq-version.deb</pre>
 </div>
-
 <p>
     Now MailerQ is installed on your system. The MTA can be started
     by entering the "mailerq" command on the command line. But 
     before you do this, you probably want to make some changes to
     the configuration file.
 </p>
-<h2>Configuration file and license</h2>
+<h2>Configuration</h2>
 <p>
-    The <a href="/documentation/configuration" title="MailerQ configuration">MailerQ 
-    configuration file</a> can be found in the "/etc/mailerq"
-    directory and is named "config.txt". It holds many options that
-    you should set before you can start mailerq. The most important
-    options are the address and login credentials of your RabbitMQ
-    message broker and your license key. We have documented
-    <a href="/documentation/configuration" title="MailerQ configuration" >all supported 
-    configuration options</a>.
+    The <a href="/documentation/configuration" title="MailerQ configuration">
+    MailerQ configuration file</a> can be found in the "/etc/mailerq" 
+    directory and is named "config.txt". It holds many options that you 
+    should set before you can start mailerq. The most important options 
+    are the address and login credentials of your RabbitMQ message broker 
+    and your license key. We have documented 
+    <a href="/documentation/configuration" title="MailerQ configuration">
+    all supported configuration options</a>. A number of options require
+    special attention.
+</p>
+<h3>Database configuration</h3>
+<p>
+    Besides the <i>essential</i> settings to connect to RabbitMQ, you
+    probably also want to connect to a SQL database. Such a database is
+    used by MailerQ to store the configuration of email throttling settings, 
+    DKIM keys, flood patterns and any other delivery settings. By default,
+    MailerQ sets up a SQlite database for these settings. However, MySQL 
+    and PostgreSQL are faster and better suited for high performance servers.
 </p>
 <p>
-    The configuration file also holds a reference to a license file. After creating a MailerQ
-    account, you can download a license <a href="/product/license" title="MailerQ license">from this 
-    website</a>.
+    If you are happy to use the standard SQLite database you do not need to 
+    change any of the settings in the database configuration file. If you 
+    want MailerQ to store the settings in a different database , you will 
+    have to specify the database address. You can find more information on 
+    how to do so in the database configuration settings.
 </p>
 <p>
-    You can choose to renew your license either monthly or annually. License pricing
-    varies based on the renewal period and amount of IP addresses you use. If you 
-    have any questions feel free to send an email to <a href="maito:info@mailerq.com">info@mailerq.com</a>.
+    MailerQ automatically creates or alters missing or incomplete tables. If 
+    you use a MySQL or PostgreSQL database, you should ensure that the specified 
+    database is already created, and that MailerQ has enough privileges to 
+    create and modify tables. For a SQLite database you only have to make sure 
+    that the database file is writable.
+</p>
+<p>
+    You must also make sure that you've installed the necessary database 
+    libraries on your system so that MailerQ can actually <i>connect</i> to 
+    the database. If you use the default SQLite database, you must ensure 
+    that the sqlite3 library is installed on your server. For MySQL you need 
+    the mysqlclient or mariadbclient library, and for PostgreSql you need to 
+    pq library.
+</p>
+<h3>DKIM signing</h3>
+<p>
+    MailerQ can sign emails with DKIM keys. However, to do this, MailerQ
+    uses then 'opendkim' library. You must make sure that this library
+    is installed on your system. If it is missing, no DKIM signatures
+    can be created.
+</p>
+<h3>License file</h3>
+<p>
+    The configuration file also holds a reference to a license file. After 
+    creating a MailerQ account, you can <a href="/product/license">download 
+    a license from this website</a>. If you have questions about your
+    license, feel free to send an email to <a href="mailto:info@mailerq.com">info@mailerq.com</a>.
 </p>
 <h2>Let's get started!</h2>
 <p>
@@ -116,7 +114,6 @@
 <p>
     To start sending mails with MailerQ, you need 
     <a href="/documentation/send-email" title="Send emails with MailerQ">
-        to publish an e-mail to the appropriate message queue</a> in 
-        RabbitMQ or use one of our  
-        <a href="/documentation/mailerq-examples" title="MailerQ examples">examples</a>. 
+    to publish an e-mail to the appropriate message queue</a> in RabbitMQ or 
+    use one of our <a href="/documentation/mailerq-examples" title="MailerQ examples">examples</a>. 
 </p>
