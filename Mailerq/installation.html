@@ -10,12 +10,39 @@
     <a href="https://www.rabbitmq.com/download.html"><strong>Click here to download and install RabbitMQ</strong></a>.
 </p>
 <p>
-    If you have a running RabbitMQ server, you can proceed with installing
-    MailerQ. Make sure you know the login and password for your RabbitMQ
-    server, because MailerQ needs them for connecting to RabbitMQ. Login
-    "guest" and password "guest" are the defaults.
+    If you have a running RabbitMQ server, you can <a href="#installing-mailerq">
+    proceed with installing</a> MailerQ. Make sure you know the login and password 
+    for your RabbitMQ server, because MailerQ needs them for connecting to RabbitMQ.
 </p>
-<h2>Installing MailerQ</h2>
+<p>
+    If you're completely new to RabbitMQ, there are a couple of things that might
+    need attention:
+</p>
+<ul>
+    <li>
+        <div><strong>Login and password</strong></div>
+        The default login-password combination only works if you connect from localhost. 
+        If you install RabbitMQ and MailerQ on a different servers, you either have to 
+        change the default "guest/guest" password to something else, or set the 'loopback_users'
+        option in the RabbitMQ configuration (see <a href="https://www.rabbitmq.com/access-control.html">
+        https://www.rabbitmq.com/access-control.html</a>).
+    </li>
+    <li>
+        <div><strong>Management plugin</strong></div>
+        RabbitMQ has a plugin that adds a cool web interface to it. We recommend that 
+        you install this plugin, so that you can use your webbrowser to control your 
+        RabbitMQ instance. (see <a href="https://www.rabbitmq.com/management.html">
+        https://www.rabbitmq.com/management.html</a>).
+    </li>
+    <li>
+        <div><strong>Don't run out of resources</strong></div>
+        MailerQ not only uses RabbitMQ to fetch the message that it is going to send, but
+        also (if you have this configured) to publish back the delivery results. If you
+        do not process these delivery results, you run the risk that your RabbitMQ server
+        runs out of resources.
+    </li>
+</ul>
+<h1 id="installing-mailerq">Installing MailerQ</h1>
 <p>
     Installing the Mail Transfer Agent (MTA) MailerQ on a Linux server is easy. We have 
     <a href="/product/download" title="Download MailerQ">downloads</a> for Debian based environments 
