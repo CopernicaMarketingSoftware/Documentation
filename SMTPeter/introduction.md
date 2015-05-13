@@ -1,4 +1,4 @@
-# Documentation
+# Introduction
 
 Documentation will be added soon.
 
