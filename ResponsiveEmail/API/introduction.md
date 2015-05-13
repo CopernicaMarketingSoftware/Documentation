@@ -1,4 +1,4 @@
-# API reference
+# API reference API 
 
 The Responsive Email API provides a simple RESTful interface. This means 
 that your application can access the API using the HTTP protocol. With
