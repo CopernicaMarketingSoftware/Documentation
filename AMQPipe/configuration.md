@@ -1,4 +1,4 @@
-# Configuration file of AMQPipe
+# Configuration file
 
 All the settings of the AMQPipe process manager can be set in the configuration
 file. This file holds the login credentials to connect to RabbitMQ, the max
