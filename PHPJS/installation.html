@@ -96,11 +96,23 @@
     the following command for downloading V8:
 </p>
 <pre class="language-bash">
-<code>  fetch v8</code>
+<code>  fetch v8 &amp;&amp; cd v8</code>
 </pre>
 <p>
-    To build V8, navigate to the V8 source folder, where you will see a
-    file called <i>Makefile</i>. Run the following command to build V8:
+    This likely takes quite some time. After downloading is complete, you
+    will be put inside the v8 source directory. By default, the latest -
+    unstable - version is selected. This might work for you, but sometimes
+    this version will simply segfault.
+</p>
+<p>
+    The version we have tested with - and that seems to work - is 4.4.9.1.
+    To select this version to be build execute the following command:
+</p>
+<pre class="language-bash">
+<code>  git checkout 4.4.9.1</code>
+</pre>
+<p>
+    You can now build v8, using the following command.
 </p>
 <pre class="language-bash">
 <code>  make library=shared i18nsupport=off native</code>
