@@ -5,7 +5,7 @@
 </p>
 
 <ul>
-    <li>C++ compiler (GCC is prefered)</li>
+    <li>C++ compiler (clang is prefered)</li>
     <li>PHP development environment</li>
     <li>PHP-CPP</li>
     <li>Google's V8 Javascript Engine</li>
@@ -124,7 +124,7 @@
 </p>
 
 <p>
-    The i18nsupport=off makes sure that the v8 engine does not build the
+    The <i>i18nsupport=off</i> makes sure that the v8 engine does not build the
     provided i18n library. The reason to not do this is that this usually
     clashes with the system-provided i18n library (the shared object names
     are the same and a package update could wipe it, or - if you install it
@@ -148,11 +148,11 @@
 <strong>Location 1 (recommended)</strong>
 
 <pre class="language-bash">
-<code>  sudo cp . -r /usr/local/include</code>
+<code>  sudo cp *.h /usr/local/include</code>
 </pre>
 <strong>Location 2</strong>
 <pre class="language-bash">
-<code>  sudo cp . -r /usr/include</code>
+<code>  sudo cp *.h /usr/include</code>
 </pre>
 
 <p>
