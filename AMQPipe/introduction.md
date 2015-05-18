@@ -46,4 +46,4 @@ there was such output), and/or the signal that killed the script.
 Besides running scripts and applications, AMQPipe comes with a C++
 API that allows you to write your own plugins that process messages.
 
-[Read more about the meta result data](/documentation/shared-objects)
+[Read more about C++ API](/documentation/shared-objects)
