@@ -22,7 +22,7 @@
 </p>
 <p>
  
-<pre><code class="language-php">
+<pre class="language-php"><code class="language-php">
 
 &lt;?php
 
@@ -32,8 +32,8 @@
 
 
 /*  RabbitMQ configuration options, replace those values with your own
-values, those values have to correspond with the values in the MailerQ
-config.txt file  */
+    values, those values have to correspond with the values in the MailerQ
+    config.txt file  */
    
    
 $hostname  = 'localhost';    # same as the rabbitmq-host option in the config file
@@ -63,13 +63,13 @@ $fromAddress     = 'me@my-domain.com'; # address where the email was sent from
 </p>
 <p>
  
-<pre><code class="language-php">
+<pre class="language-php"><code class="language-php">
         
 &lt;?php
 
 /*  send.php
-Script that connects to RabbitMQ, constructs a json encoded message
-and puts that message on the outbox message queue.  */
+    Script that connects to RabbitMQ, constructs a json encoded message
+    and puts that message on the outbox message queue.  */
  
 // include the settings
 require_once('settings.php');
@@ -187,13 +187,13 @@ $connection->disconnect();
 </p>
 <p>
    
-<pre><code class="language-php">
+<pre class="language-php"><code class="language-php">
 
 &lt;?php
 
 /*  result.php
-Script that connects to RabbitMQ, and takes the result message from
-the result message queue.  */
+    Script that connects to RabbitMQ, and takes the result message from
+    the result message queue.  */
 
 // include the settings
 require_once('settings.php');
