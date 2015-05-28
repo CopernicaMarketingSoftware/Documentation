@@ -26,27 +26,30 @@
 
 &lt;?php
 
-/*  This file holds the settings that the PHP test script uses to connect
-    to RabbitMQ and to construct the message that will be placed on the
-    outbox message queue.  */
+/**
+ * This file holds the settings that the PHP test script uses to connect
+ * to RabbitMQ and to construct the message that will be placed on the
+ * outbox message queue.  
+ */
 
 
-/*  RabbitMQ configuration options, replace those values with your own
-    values, those values have to correspond with the values in the MailerQ
-    config.txt file  */
+/**
+ * RabbitMQ configuration options, replace those values with your own
+ * values, those values have to correspond with the values in the MailerQ
+ * config.txt file  
+ */
    
-   
-$hostname  = 'localhost';    # same as the rabbitmq-host option in the config file
-$username  = 'guest';        # same as the rabbitmq-user option in the config file
-$password  = 'guest';        # same as the rabbitmq-password option in the config file
-$vhost     = '/';            # same as the rabbitmq-vhost option in the config file
-$outbox    = 'outbox_test';  # same as the rabbitmq-outbox option in the config file
-$resultbox = 'results_test'; # same as the rabbitmq-results option in the config file
+$hostname  = 'localhost';    // same as the rabbitmq-host option in the config file
+$username  = 'guest';        // same as the rabbitmq-user option in the config file
+$password  = 'guest';        // same as the rabbitmq-password option in the config file
+$vhost     = '/';            // same as the rabbitmq-vhost option in the config file
+$outbox    = 'outbox_test';  // same as the rabbitmq-outbox option in the config file
+$resultbox = 'results_test'; // same as the rabbitmq-results option in the config file
 
 // email message settings
-$recipientDomain = 'example.org';      # domain where the test message should be delivered
-$recipientEmail  = 'info@example.org'; # email where the test message should be delivered
-$fromAddress     = 'me@my-domain.com'; # address where the email was sent from
+$recipientDomain = 'example.org';      // domain where the test message should be delivered
+$recipientEmail  = 'info@example.org'; // email where the test message should be delivered
+$fromAddress     = 'me@my-domain.com'; // address where the email was sent from
 
 ?&gt;
 </code></pre>
@@ -67,9 +70,11 @@ $fromAddress     = 'me@my-domain.com'; # address where the email was sent from
         
 &lt;?php
 
-/*  send.php
-    Script that connects to RabbitMQ, constructs a json encoded message
-    and puts that message on the outbox message queue.  */
+/**
+ * send.php
+ * Script that connects to RabbitMQ, constructs a json encoded message
+ * and puts that message on the outbox message queue.  
+ */
  
 // include the settings
 require_once('settings.php');
@@ -191,9 +196,11 @@ $connection->disconnect();
 
 &lt;?php
 
-/*  result.php
-    Script that connects to RabbitMQ, and takes the result message from
-    the result message queue.  */
+/**
+ * result.php
+ * Script that connects to RabbitMQ, and takes the result message from
+ * the result message queue.  
+ */
 
 // include the settings
 require_once('settings.php');
