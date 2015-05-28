@@ -25,15 +25,15 @@
 <pre><code class="language-php">
 
 &lt;?php
-/**
- *  This file holds the settings that the PHP test script uses to connect
- *  to RabbitMQ and to construct the message that will be placed on the
- *  outbox message queue.
- */
 
-// RabbitMQ configuration options, replace those values with your own
-// values, those values have to correspond with the values in the MailerQ
-// config.txt file
+ /*  This file holds the settings that the PHP test script uses to connect
+     to RabbitMQ and to construct the message that will be placed on the
+     outbox message queue.  */
+
+
+/* RabbitMQ configuration options, replace those values with your own
+   values, those values have to correspond with the values in the MailerQ
+   config.txt file */
 $hostname  = 'localhost';    // same as the rabbitmq-host option in the config file
 $username  = 'guest';        // same as the rabbitmq-user option in the config file
 $password  = 'guest';        // same as the rabbitmq-password option in the config file
