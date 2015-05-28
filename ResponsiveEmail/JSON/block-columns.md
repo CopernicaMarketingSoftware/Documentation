@@ -74,7 +74,7 @@ The following example shows an email whose top part is
 split in two columns holding
 two images, followed by some text that takes up the entire width
 of the mail, followed by three columns each holding a button.
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Mail with multiple columns columns",
@@ -116,7 +116,7 @@ of the mail, followed by three columns each holding a button.
             } ]
         }
     }
-
+</code></pre>
 
 
 ## Responsive behavior
