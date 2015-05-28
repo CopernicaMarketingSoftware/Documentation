@@ -20,7 +20,7 @@ result in a 400 Bad Request response.
 
 You can do a call to the API with any programming language that supports HTTP requests.
 The following is an example of how to request the JSON representation of an email template.
-
+<pre class="language-php"><code class="language-php">
     <?php
     // create curl resource
     $ch = curl_init();
@@ -45,6 +45,7 @@ The following is an example of how to request the JSON representation of an emai
     
     // close curl resource to free up system resources
     curl_close($ch);
+</code></pre>
 
 View more [code examples](/support/api/examples "code examples")
 
