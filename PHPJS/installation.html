@@ -40,11 +40,11 @@
     Next, we have to build the project. Open the terminal, and navigate
     to the directory where you have unarchived PHP-CPP to. You will find
     a file called <i>Makefile</i>. To build the project, execute the following command:
-<pre>
+<pre class="language-bash">
 <code>  make</code>
 </pre>
     After building has finished, install the library using like so:
-<pre>
+<pre class="language-bash">
 <code>  sudo make install</code>
 </pre>
     PHP-CPP is now successfully installed!
@@ -66,7 +66,7 @@
 <p>
     Using the terminal, navigate to the folder where you want to store depot_tools,
     and download the project using the following terminal command:
-<pre>
+<pre class="language-bash">
 <code>  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git</code>
 </pre>
 </p>
@@ -76,13 +76,13 @@
     Below is the command for doing this. Do not exit the terminal, or your
     path variable will reset!
 </p>
-<pre>
+<pre class="language-bash">
 <code>  export PATH=`pwd`/depot_tools:"$PATH"</code>
 </pre>
 <p>
     To test if depot_tools is correctly configured, type the following command:
 </p>
-<pre>
+<pre class="language-bash">
 <code>  gclient</code>
 </pre>
 <p>
@@ -95,7 +95,7 @@
     where you want to store the V8 source folder. Depot_tools provides
     the following command for downloading V8:
 </p>
-<pre>
+<pre class="language-bash">
 <code>  fetch v8 &amp;&amp; cd v8</code>
 </pre>
 <p>
@@ -108,13 +108,13 @@
     The version we have tested with - and that seems to work - is 4.4.9.1.
     To select this version to be built, execute the following command:
 </p>
-<pre>
+<pre class="language-bash">
 <code>  git checkout 4.4.9.1</code>
 </pre>
 <p>
     You can now build v8, using the following command.
 </p>
-<pre>
+<pre class="language-bash">
 <code>  make library=shared i18nsupport=off native</code>
 </pre>
 <p>
@@ -147,11 +147,11 @@
 
 <strong>Location 1 (recommended)</strong>
 
-<pre>
+<pre class="language-bash">
 <code>  sudo cp *.h /usr/local/include</code>
 </pre>
 <strong>Location 2</strong>
-<pre>
+<pre class="language-bash">
 <code>  sudo cp *.h /usr/include</code>
 </pre>
 
@@ -160,10 +160,10 @@
     Navigate to v8/out/native/lib.target.
     Again, there are two possibilities:
 </p>
-<pre>
+<pre class="language-bash">
 <code>  sudo cp libv8.so /usr/lib</code>
 </pre>
-<pre>
+<pre class="language-bash">
 <code>  sudo cp libv8.so /usr/local/lib</code></pre>
 <p>
     You now have successfully installed Google's V8 JavaScript Engine.
@@ -178,11 +178,11 @@
 <p>
     Navigate to the PHP-JS source folder, where you will see a file called <i>Makefile</i>.
     Build the project with this command:
-<pre>
+<pre class="language-bash">
 <code>  make</code>
 </pre>
     When building is done, install the library:
-<pre>
+<pre class="language-bash">
 <code>  sudo make install</code>
 </pre>
     PHP-JS is now ready to use!
