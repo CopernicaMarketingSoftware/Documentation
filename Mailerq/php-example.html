@@ -21,8 +21,8 @@
     configuration of MailerQ.
 </p>
 <p>
-    <code>
-        <pre class="language-php" >
+ 
+<pre class="language-php"><code>
 
 &#60;?php
 /**
@@ -45,8 +45,9 @@ $resultbox = 'results_test'; // same as the rabbitmq-results option in the confi
 $recipientDomain = 'example.org';      // domain where the test message should be delivered
 $recipientEmail  = 'info@example.org'; // email where the test message should be delivered
 $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
-        </pre>
-    </code>
+
+</code></pre>
+
 </p>
 <h3>send.php</h3>
 <p>
@@ -58,8 +59,8 @@ $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
     script before running the result.php script.
 </p>
 <p>
-    <code>
-        <pre class="language-php" >
+  
+<pre class="language-php"><code>
         
 &#60;?php
 /**
@@ -168,8 +169,9 @@ catch (AMQPChannelException $exception)
 
 // done, close the connection to RabbitMQ
 $connection->disconnect();
-        </pre>
-    <code>
+        
+</code></pre>
+
 </p>
 <h3>result.php</h3>
 <p>
@@ -181,8 +183,8 @@ $connection->disconnect();
     script was executed.
 </p>
 <p>
-    <code>
-        <pre class="language-php" >
+   
+<pre class="language-php"><code>
 
 &#60;?php
 /**
@@ -252,6 +254,7 @@ while ($envelope = $queue->get()) {
 
 // done, close the connection to RabbitMQ
 $connection->disconnect();
-        </pre>
-    </code>
+        
+</code></pre>
+
 </p>
