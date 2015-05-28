@@ -196,7 +196,7 @@ There are three 'basic' top level properties:
 ## Example input
 
 Just an idea of how a JSON document could look like.
-
+<pre><code>
     {
         "name": "My template",
         "from": "info@example.com",
@@ -214,7 +214,7 @@ Just an idea of how a JSON document could look like.
             }]
         }
     }
-
+</code></pre>
 ## Output
 
 <table class="responsive-output" style="background-color: #f3f3f3;">
