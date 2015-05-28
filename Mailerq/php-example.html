@@ -24,7 +24,7 @@
  
 <pre class="language-php"><code>
 
-&#60;?php
+&lt;?php
 /**
  *  This file holds the settings that the PHP test script uses to connect
  *  to RabbitMQ and to construct the message that will be placed on the
@@ -46,6 +46,7 @@ $recipientDomain = 'example.org';      // domain where the test message should b
 $recipientEmail  = 'info@example.org'; // email where the test message should be delivered
 $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
 
+?&gt;
 </code></pre>
 
 </p>
@@ -59,10 +60,10 @@ $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
     script before running the result.php script.
 </p>
 <p>
-  
+ 
 <pre class="language-php"><code>
         
-&#60;?php
+&lt;?php
 /**
  *  send.php
  *  Script that connects to RabbitMQ, constructs a json encoded message
@@ -169,7 +170,8 @@ catch (AMQPChannelException $exception)
 
 // done, close the connection to RabbitMQ
 $connection->disconnect();
-        
+
+?&gt;
 </code></pre>
 
 </p>
@@ -186,7 +188,7 @@ $connection->disconnect();
    
 <pre class="language-php"><code>
 
-&#60;?php
+&lt;?php
 /**
  *  result.php
  *  Script that connects to RabbitMQ, and takes the result message from
@@ -254,7 +256,8 @@ while ($envelope = $queue->get()) {
 
 // done, close the connection to RabbitMQ
 $connection->disconnect();
-        
+
+?&gt;    
 </code></pre>
 
 </p>
