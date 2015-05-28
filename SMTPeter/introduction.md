@@ -1,4 +1,65 @@
-# Introduction
+<h1>SMTPeter: delivering emails through the cloud</h1>
 
-Documentation will be added soon.
+<h2>What is SMTPeter?</h2>
+	<p>
+		SMTPeter is a cloud-based SMTP server that delivers your email fast
+		and secure. You can connect your own application or mail server through
+		SMTP or by using our REST API and start sending your emails right away. 
+		All you have to do is connect!
+	</p>
+
+<h2>Who is SMTPeter for?</h2>
+	<p>
+		SMTPeter is for anyone looking for professional email delivery. Whether 
+		they are transactional or marketing emails, SMTPeter is made to deliver
+		large volumes of email and gives back detailed statistics of your campaigns. 
+	</p>
+
+<h3>Easy to integrate</h3>
+	<p>
+		Connecting your own application to SMTPeter and using the SMTP relay
+		service is easy. Simply <a href="/app/register" title="create an account">create an account</a>
+		to get your login credentials and configure your application to forward your emails through SMTP 
+		or by using the REST API. 
+	</p>
+
+<h2>Setting up your account</h2>
+	<p>
+		Once you have created your account you can <a href="/app/" title="SMTPeter Dashboard">generate your own SMTPeter login credentials</a>. These 
+		credentials allow you to connect to SMTPeter and have to be included whenever you want to connect to the SMTPeter server to send emails. 
+		In your account you can also change your company details and the settings of any of your registered employees. The first [INSERT VALUE]
+		emails of each month are on us! If you want to send more emails you will have to choose one of our <a href="/pricing/" title="Email bundles">email bundles</a>.
+	</p>
+
+<h2>Connecting to SMTPeter</h2>
+	<p>
+		As we said before, connecting to SMTPeter is easy. Simply login and connect through SMTP or use our REST API. 
+		For more information about connecting to SMTPeter you can read our <a href="#" title="connecting documentation">
+		connecting documentation</a>. 
+	</p>
+
+<h2>Becoming a "trusted" sender</h2>
+	<p>
+		Here at SMTPeter we have a strong anti-spam policy. Bylimiting the amount of emails an account can send 
+		at first, we keep malicious users from damaging our IP reputation with spam. It also allows us to ensure
+		the highest possible delivery rate. There are two ways to become a trusted sender. One way is to:
+		choose to use one or more <a href="#" title="using dedicated IP addresses">dedicated IP addresses</a>. All your emails (and only your emails!) will go over those
+		IP addresses, giving you control over your own IP reputation. The other way is simple as well: fill out this form/send us an email stating you 
+	</p>
+	<p>
+		<strong>Warning!</strong> if we do find you send SPAM we will immediately stop delivering your emails and close your account. No refunds will be given. 
+	</p>
+
+<h2>A single account for all of Copernica's services</h2>
+	<p>
+		Once you have created your account you can use the account to log in to all of Copernica's services. 
+		If you want to use an easy to use editor to create and send responsive emails or connect to our
+		responsive API, you can log in to <a href="www.responsiveemail.com" title="ResponsiveEmail">ResponsiveEmail.com</a>. 
+		Or if you prefer to send the emails yourself, you can login, download and install <a href="www.mailerq.com" title="MailerQ website">
+		MailerQ</a>. MailerQ is the SMTP server software SMTPeter is built on. If you are looking for email marketing software
+		which allows you to create, send and automate your email campaigns you can log in <a href="www.copernica.com" title="Copernica Marketing Software">
+		Copernica Marketing Software</a>. 
+		
+	</p>
+
 
