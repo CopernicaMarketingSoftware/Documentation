@@ -85,7 +85,7 @@ a [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29) to your script,
 and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
-````php
+<pre class="language-php"><code class="language-php">
 #!/usr/bin/php
 <?php
 // read data from stdin
@@ -93,7 +93,7 @@ $input = stream_get_contents(STDIN);
 
 // @todo add your own code
 ?>
-````
+</code></pre>
 
 A special sort of plugins are _shared objects_. A shared object is written
 in C++ and is loaded by AMQPipe when the application starts. Unlike
