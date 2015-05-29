@@ -42,6 +42,8 @@ not see the `img` property.
 </table>
 
 ## Example use
+
+
 ````json
     {
         "from" : "info@example.com",
