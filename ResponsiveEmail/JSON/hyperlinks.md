@@ -139,11 +139,11 @@ Example of link parameters added on toplevel in the JSON document:
 </code></pre>
 The JSON above will result in the following links:
 
-```http://www.google.com?fruit=apple```
-
-```http://www.altavista.com?fruit=apple&city=Haarlem```
-
-```http://www.example.org```
+    ```http://www.google.com?fruit=apple```
+    
+    ```http://www.altavista.com?fruit=apple&city=Haarlem```
+        
+    ````http://www.example.org````
 
 ### Specify URL parameters on block level
 
@@ -170,7 +170,7 @@ A short example will again show its working:
 </code></pre>
 The output of the example below would look as follows:
 
-```http://thegiantteapot.com?a=b&type=nonbelieber```
+    ```http://thegiantteapot.com?a=b&type=nonbelieber```
 
 As you can see from the example, the API is totally cool with you including URL parameters in both the `url` property and in the property `params`. The API will not get angry and just do what you requested.
 
