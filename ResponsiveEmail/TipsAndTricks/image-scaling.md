@@ -21,7 +21,7 @@ images to behave differently depending on the device the email is viewed on.
 If you want an image to scale differently it can easily be done with <a href="support/json/property-columns">columns</a>. 
 Let's say you want an image to cover half of the email width on desktop clients and 100% on mobile clients. All you 
 have to do is place the image in a column:
-
+<pre><code>
     {
         "from": {
             "address": "info@example.com",
@@ -47,7 +47,7 @@ have to do is place the image in a column:
          } ]
         }
     }
-
+</code></pre>
  
 If, instead of setting a specific width, you place an image in a column, the image will only cover the width of the column. Columns scale to the complete width of the template in mobile clients. This means that if the email is opened on a mobile device it will scale to the full width of the email. By changing the size of the column you can easily change the size of the image in the desktop client. ResponsiveEmail.com uses a 12 column grid system. The column-size can range from '1' to '11', covering from 8% to 92% of the width of an email. If you want an image to cover one third of the email in the desktop client, the column that holds the image needs to have a size of '4', the other column should be given a size of '8'. An image will never exceed the width of the container its placed in. 
 
