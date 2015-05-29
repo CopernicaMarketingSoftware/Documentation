@@ -56,7 +56,7 @@ specific piece of text.
 ## Example
 
 Consider the following input JSON:
-
+````javascript
     {
         "from" : "info@example.com",
         "subject" : "Email with a default font, and a different font for a specific text",
@@ -85,7 +85,7 @@ Consider the following input JSON:
             }]
         }
     }
-
+````
 The example above shows a template with a top-level font setting that 
 specifies the default font for all the texts in the template, and three
 text blocks. The second of the three blocks also has a `font` property,
@@ -98,13 +98,13 @@ The font family is a comma seperated list of font names. It is best to
 use websafe fonts, because your mail will be delivered to many 
 different devices that may not have the exotic font installed that
 you would like to use.
-
+````javascript
     {
         "font" {
             "family" : "Arial, 'Helvetica Neue', Helvetica, sans-serif"
         }
     }
-
+````
 <a name="size"></a>
 ### Nested property `size`
 
