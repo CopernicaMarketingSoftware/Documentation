@@ -21,6 +21,8 @@ automatically escaped by the Responsive Email API.
 
 The following JSON input shows an example how to a text block and a HTML
 block with the `content` propery.
+
+
 ````javascript
     {
         "from" : "info@example.com",
