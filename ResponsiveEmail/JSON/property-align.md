@@ -28,7 +28,7 @@ image, video or link to the left (this is the default), to the center or to the 
         </tr>
     </tbody>
 </table>
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with a single image",
@@ -41,4 +41,4 @@ image, video or link to the left (this is the default), to the center or to the 
             } ]
         }
     }
-
+</code></pre>
