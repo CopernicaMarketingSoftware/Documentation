@@ -39,7 +39,7 @@ inside a <a href="/support/json/block-html">HTML block</a>,
 <a href="/support/json/block-link">link block</a> or a 
 <a href="/support/json/block-button">button block</a>. In that case the 
 rewrite rules will only be applied on the block it was used in.
-
+````json
     {
         "name" : "template13",
         "subject" : "This email has links",
@@ -59,4 +59,4 @@ rewrite rules will only be applied on the block it was used in.
             }
         }
     }
-
+````
