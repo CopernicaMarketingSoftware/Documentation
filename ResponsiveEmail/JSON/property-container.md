@@ -74,7 +74,7 @@ example of a button block:
 
 (for the sake of readability, we omitted the default button styling in this example)
 
-````markup
+````html
     <td style="padding: 20em; margin: 2px" summary="This summary is applied to the parent">
         <table>
             <tr>
