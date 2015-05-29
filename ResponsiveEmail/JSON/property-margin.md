@@ -5,7 +5,7 @@ The `margin` property can be used for that. The margin can either be
 a numeric value, if you want to use the same margin for all four sides
 around the block, or an object if you want to set the top, left, right
 and bottom margins seperately.
-
+````javascript
     {
         "from" : "info@example.com",
         "subject" : "This email shows how to use margins",
@@ -26,7 +26,7 @@ and bottom margins seperately.
             } ]
         }
     }
-
+````
 Above example shows how you can use the `margin` property to set the margins
 for all four sides around a block at once, and how to use the property
 to set different margins for all four sides.
