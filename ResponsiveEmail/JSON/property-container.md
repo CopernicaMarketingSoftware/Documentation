@@ -73,7 +73,7 @@ example of a button block:
 **This would result in the following pseudo HTML**
 
 (for the sake of readability, we omitted the default button styling in this example)
-<pre><code>
+````html
     <td style="padding: 20em; margin: 2px" summary="This summary is applied to the parent">
         <table>
             <tr>
@@ -83,7 +83,8 @@ example of a button block:
             </tr>
         </table>
     </td>
-</code></pre>
+````
+
 ## Why are table cells used, and not just divs?
 
 The `container` property allows you to specify custom CSS and attributes for 
