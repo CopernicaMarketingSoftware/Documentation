@@ -14,6 +14,8 @@ Currently, the API runs on version ***17***.
 
 The following JSON input demonstrates how to set the name, description
 and version number, and a simple textual content.
+
+
 ````json
     {
         "name" : "my-template",
@@ -27,6 +29,8 @@ and version number, and a simple textual content.
         }
     }
 ````
+
+
 The ResponsiveEmail.com API will turn the above JSON into a responsive email.
 But imagine the unlikely situation that in a future version of the API
 the property "source" is no longer supported for text blocks. Your email
