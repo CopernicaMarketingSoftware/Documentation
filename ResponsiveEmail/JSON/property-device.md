@@ -60,7 +60,7 @@ Mobile devices have small screens, and often use low bandwitdth internet
 connections. Using high resolution images is then not always a good
 practice. With the `device` property you can leave these hires images
 out if the mail is opened on a mobile device.
-<pre><code>
+````javascript
     {
         "from" : "info@example.com",
         "subject" : "Mail with hires images hidden on mobile devices",
@@ -83,4 +83,4 @@ out if the mail is opened on a mobile device.
             } ]
         }
     }
-</code></pre>
+````
