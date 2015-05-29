@@ -3,7 +3,9 @@
 When you are sending commercial emails, you might want to add tracking variables to your links,
 or include custom query strings, for instance to prefill a webform on your landing page with subscriber
 details. The API allows you to add any of these, on every level, using the link property `params`. This 
-property accepts another object, containing the names and values of the URL parameters to be added. 
+property accepts another object, containing the names and values of the URL parameters to be added.
+
+
 ````javascript
     {
         "subject" : "link example",
@@ -26,6 +28,8 @@ property accepts another object, containing the names and values of the URL para
         }
     }
 ````
+
+
 The responsive email API ensures that all the supplied parameters are
 encoded and appended to the URL, split by '&amp;' ampersands.
 
