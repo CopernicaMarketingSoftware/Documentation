@@ -3,6 +3,8 @@
 Heading blocks implement six levels of document headings, &lt;h1&gt; is the most
 important and &lt;h6&gt; is the least. A heading block briefly describes the topic
 of the section it introduces.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -16,6 +18,8 @@ of the section it introduces.
         }
     }
 ````
+
+
 Inside the block you can use sub properties. The most obvious ones were
 already demonstrated in the example, `size`, `content` and `type`, but there are
 many more. The following tables lists all supported properties.
@@ -96,6 +100,8 @@ Please keep in mind that you can only use pure text in heading blocks.
 
 The following JSON input shows a more extensive example how to use all
 the properties of a heading block.
+
+
 ````json
     {
         "from" : "info@example.com",
