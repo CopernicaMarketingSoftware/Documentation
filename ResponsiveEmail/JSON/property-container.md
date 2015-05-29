@@ -44,7 +44,7 @@ Every property that you set in the container `css` property will be
 appended to the inline `style` attribute of the ```<td>``` tag. And every `attributes`
 property will be set as attribute of the ```<td>``` tag. Consider the following JSON 
 example of a button block:
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Example container modification",
@@ -68,12 +68,12 @@ example of a button block:
             } ]
         }
     }
-
+</code></pre>
 
 **This would result in the following pseudo HTML**
 
 (for the sake of readability, we omitted the default button styling in this example)
-
+<pre class="language-markup"><code class="language-markup">
     <td style="padding: 20em; margin: 2px" summary="This summary is applied to the parent">
         <table>
             <tr>
@@ -83,7 +83,7 @@ example of a button block:
             </tr>
         </table>
     </td>
-
+</code></pre>
 ## Why are table cells used, and not just divs?
 
 The `container` property allows you to specify custom CSS and attributes for 
