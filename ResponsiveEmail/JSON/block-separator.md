@@ -81,7 +81,7 @@ styled in order to look like an ```<hr>``` tag.
 
 The following JSON can be used to generate an email with two paragraphs,
 seperated by a dotted, red, 10 pixels high separator.
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with a red, dotted separator",
@@ -100,3 +100,4 @@ seperated by a dotted, red, 10 pixels high separator.
             } ]
         }
     }
+</code></pre>
