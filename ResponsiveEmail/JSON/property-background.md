@@ -49,7 +49,7 @@ you can use it to set the background color for just a single block.
 
 Here is an example with the background property used in many different
 places.
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with many different background colors",
@@ -75,7 +75,7 @@ places.
             } ]
         }
     }
-
+</code></pre>
 The above input JSON will result in an email with a gray background. Inside
 that email, there is a centered content section with a yellow background.
 Inside that content section a button is displayed with a piece of text
