@@ -82,9 +82,9 @@ When directly linking to a file, it is good practice to mention this fact, and t
 
 If a link text looks like a link, but the link itself points to a different address, email clients may block your email or obscure the link. Don't do the following:
 
-    ````txt
-        <a href="http://www.google.nl">http://altavista.com</a>
-    ````
+````txt
+    <a href="http://www.google.nl">http://altavista.com</a>
+````
 
 ## Link tracking and URL parameters
 
