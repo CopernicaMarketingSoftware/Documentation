@@ -14,7 +14,7 @@ of your pixel as the value. You better make sure that the image is actually
 a transparant pixel, as it will be included in the body of your message.  
 
 This example JSON shows you how to include your tracking pixel.
-
+````json
     {
         "name" : "template13",
         "subject" : "This email is being tracked by the NSA",
@@ -23,7 +23,7 @@ This example JSON shows you how to include your tracking pixel.
             "pixel" : "http://www.prism.gov/images/pixel.gif"
         }
     }
-
+````
 ## Keeping stats
 
 If you include the tracking pixel, you must make sure that the pixel
@@ -49,7 +49,7 @@ tracking pixel, even if you did explicitly set the `pixel` property in
 the JSON. If you want to force the inclusion of the tracking pixel,
 even when your email holds other images, you can do so by setting
 the `force` property:
-
+````json
     {
         "name" : "template13",
         "subject" : "This email is being tracked by the NSA",
@@ -59,4 +59,4 @@ the `force` property:
             "force" : true
         }
     }
-
+````
