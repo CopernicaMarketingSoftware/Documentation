@@ -44,6 +44,8 @@ Every property that you set in the container `css` property will be
 appended to the inline `style` attribute of the ```<td>``` tag. And every `attributes`
 property will be set as attribute of the ```<td>``` tag. Consider the following JSON 
 example of a button block:
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -74,6 +76,7 @@ example of a button block:
 
 (for the sake of readability, we omitted the default button styling in this example)
 
+
 ````html
     <td style="padding: 20em; margin: 2px" summary="This summary is applied to the parent">
         <table>
@@ -85,6 +88,7 @@ example of a button block:
         </table>
     </td>
 ````
+
 
 ## Why are table cells used, and not just divs?
 
