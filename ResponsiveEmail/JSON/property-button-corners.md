@@ -29,6 +29,8 @@ rounded corners to a button. Currently you can choose from 3 values.
 
 ## Example
 Add rounded corners to a button
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -43,6 +45,8 @@ Add rounded corners to a button
         }
     }
 ````
+
+
 ## Output
 
 <table class="responsive-output property-button">
