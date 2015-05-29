@@ -20,6 +20,8 @@
     To give you an idea, the following JSON object contains a simple email with
     just some text:
 </p>
+
+
 ````json
 {
     "subject" : "Example document",
@@ -39,6 +41,7 @@
     }
 }
 ````
+
 
 <div class="row-12">
     <div class="cols-6 gutter-small">
@@ -70,6 +73,8 @@ into multiple responsive columns and many more.
 ## Example
 Add an image
 
+
+
 ````json
 {
   "subject" : "Example document",
@@ -86,6 +91,7 @@ Add an image
   }
 }
 ````
+
 
 ## Output
 
