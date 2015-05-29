@@ -4,7 +4,7 @@ This method can be used to retrieve a list of your previously stored templates.
 The start and length parameters are supported, when not supplied the default start value is 0 and the length value is 100.
 
 ## Example request
-
+<pre><code>
     GET /v1/templates/0/100/?access_token=yourtoken
     Host: www.responsiveemail.com
 
@@ -22,7 +22,7 @@ The start and length parameters are supported, when not supplied the default sta
             "name"  : "Test 123"
         }
     ]
-
+</code></pre>
 ## Related information
 
 You can only retrieve the templates which you have already stored with POST
