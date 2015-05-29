@@ -42,7 +42,7 @@ not see the `img` property.
 </table>
 
 ## Example use
-
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a single image",
@@ -62,4 +62,4 @@ not see the `img` property.
             } ]
         }
     }
-
+````
