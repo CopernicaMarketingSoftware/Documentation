@@ -2,6 +2,8 @@
 
 The `src` property is used inside <a href="/support/json/block-image">image blocks</a>
 and should hold the location of the image you want to add to your email.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -15,5 +17,7 @@ and should hold the location of the image you want to add to your email.
         }
     }
 ````
+
+
 For more information and more examples, please check the documentation
 of <a href="/support/json/block-image">image blocks</a>.
