@@ -17,9 +17,9 @@
     mq_smtp_in_message()</a> function will also be called multiple times,
     <i>once for every addressee</i>.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 bool mq_smtp_in_message(<a href="/documentation/mq_context">MQ_Context</a> *context, <a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection, <a href="/documentation/mq_message">MQ_Message</a> *message);
-</pre>
+</code></pre>
 <p>
     If your plugin returns true, MailerQ hands over control to your plugin,
     and you should also hand control back. For more information on how MailerQ 
