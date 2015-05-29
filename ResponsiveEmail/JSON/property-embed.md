@@ -11,6 +11,7 @@ property is respected is when the web version of the email is generated,
 because the web version of an email is opened in a browser, and not in
 an email client.
 
+
 ````javascript
     {
         "from" : "info@example.com",
@@ -24,5 +25,7 @@ an email client.
         }
     }
 ````
+
+
 For more information and more examples, please check the documentation
 of <a href="/support/json/block-video">video blocks</a>.
