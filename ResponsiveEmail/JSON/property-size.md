@@ -15,7 +15,7 @@ the column sizes that reside in a block should be 12.
                     "size" : 3,
                     "blocks" : [
                         
-                        /* blocks inside the left column */
+                        // blocks inside the left column 
                     
                     ]
                 }, {
