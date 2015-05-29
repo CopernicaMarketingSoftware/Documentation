@@ -5,7 +5,7 @@ The `color` property is a simple property inside
 the button. You can assign color names, as well as hexadecimal color values.
 
 ## Example use
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with a single button",
@@ -18,4 +18,4 @@ the button. You can assign color names, as well as hexadecimal color values.
             } ]
         }
     }
-
+</code></pre>
