@@ -67,7 +67,7 @@ When you're writing a script that processes messages that were published
 by a different AMQPipe instance, you will typically see JSON messages
 like this one:
 
-````json
+````javascript
 {
     "exchange":     "result-exchange",
     "routing-key":  "error",
