@@ -5,7 +5,7 @@
     you can use this function. This function allows you to store 
     a new envelope address in a message.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Update the envelope address
  *
@@ -14,7 +14,7 @@
  *  @param  size        length of the envelope string
  */
 void <a href="/documentation/mq_setenvelope">MQ_SetEnvelope</a>(<a href="/documentation/mq_message">MQ_Message</a> *message, const char *envelope, size_t size);
-</pre>
+</code></pre>
 <p>
     This function has a different behavior if you call it on a message
     <i>that is being received</i> and on a message <i>that is being sent</i>.
