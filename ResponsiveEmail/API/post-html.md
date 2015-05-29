@@ -16,10 +16,10 @@ email, without storing any data on the ResponsiveEmail.com servers.
     Content-Type: text/html
     Content-Length: 239872
 </code></pre>
-<pre class="language-markup"><code class="language-markup">
+
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml"><head> ....
-</code></pre>
+
 To help readability, we have left out most of the returned HTML code in
 above example.
 
