@@ -17,6 +17,7 @@ the block will not be created.
 The following example will completely ignore images within the
 article and instead only show the heading and article content.
 
+
 ````javascript
     {
         "from" : "info@example.com",
@@ -30,5 +31,7 @@ article and instead only show the heading and article content.
         }
     }
 ````
+
+
 For more examples, see the <a href="/support/json/block-feed">
 feed block</a> documentation.
