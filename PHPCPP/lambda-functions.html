@@ -45,7 +45,7 @@ other_function(function() {
     Php::Value objects.
 </p>
 <p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 /**
  *  Native function that is callable from PHP
  *
@@ -127,7 +127,7 @@ function my_array_map($array, $callback) {
     using a C++ lambda function as a callback. This is possible, and easy:
 </p>
 <p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 /**
  *  Native function that is callable from PHP
  */
@@ -218,7 +218,7 @@ extern "C" {
     function signatures:
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 Php::Value function();
 Php::Value function(Php::Parameters &amp;params);
 </code></pre>
