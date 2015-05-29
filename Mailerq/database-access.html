@@ -183,7 +183,7 @@
     open at the same time:
 </p>
 <div class="codeBox">
-    <pre>insert into capacity (domain, domain_maxmessages, domain_maxconnections) values ('example.org', 1000, 2)</pre>
+    <pre><code>insert into capacity (domain, domain_maxmessages, domain_maxconnections) values ('example.org', 1000, 2)</code></pre>
 </div>
 <p>
     Imagine that the example.org has four different IP addresses on which
@@ -192,7 +192,7 @@
     new connections in total):
 </p>
 <div class="codeBox">
-    <pre>update capacity set ip_maxconnects = 5 where domain = 'example.org'</pre>
+    <pre><code>update capacity set ip_maxconnects = 5 where domain = 'example.org'</code></pre>
 </div>
 <h3 id="deliveries">Tables 'deliveries_domain', 'deliveries_ip' and 'deliveries_total'</h3>
 <p>
@@ -341,8 +341,8 @@
     In PHP you can use the functions inet_ntop() and inet_pton() to convert 
     IP addresses to and from binary format:
 </p>
-<div class="codeBox"><pre>
+<div class="codeBox"><pre><code>
 $binary4 = inet_pton($ipv4).pack("LLL",0,0,0);
 $binary6 = inet_pton($ipv6);
 $ipv4 = inet_ntop($binary4);
-$ipv6 = inet_ntop($binary6);</pre></div>
+$ipv6 = inet_ntop($binary6);</code></pre></div>
