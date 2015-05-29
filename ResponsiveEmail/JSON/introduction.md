@@ -20,7 +20,7 @@
     To give you an idea, the following JSON object contains a simple email with
     just some text:
 </p>
-<pre><code>
+````json
 {
     "subject" : "Example document",
     "text" : "This message will show up for clients which are text only.",
@@ -38,7 +38,7 @@
         }]
     }
 }
-</code></pre>
+````
 
 <div class="row-12">
     <div class="cols-6 gutter-small">
@@ -70,7 +70,7 @@ into multiple responsive columns and many more.
 ## Example
 Add an image
 
-<pre><code>
+````json
 {
   "subject" : "Example document",
   "text" : "This message will show up for clients which are text only.",
@@ -85,7 +85,7 @@ Add an image
       }]
   }
 }
-</code></pre>
+````
 
 ## Output
 
