@@ -181,7 +181,8 @@ why there is full support for if statements. Syntax for these is fairly easy,
 9000. But it doesn't stop right there, you can use ```OR``` and ```AND``` operators
 within your if statements. Naturally we also support elseif and else statements,
 meaning you can create complete statements like the following example.
-<pre><code>
+
+````smarty
     {if $key > 9000}
         Key is over 9000
     {elseif $key < 0 AND $key > -1000}
@@ -189,7 +190,7 @@ meaning you can create complete statements like the following example.
     {else}
         None of the previous statements matched
     {/if}
-</code></pre>
+````
 ## Math
 
 The personalization engine also supports some basic forms of math. Meaning that
