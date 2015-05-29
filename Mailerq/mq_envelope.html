@@ -4,7 +4,7 @@
     you can use this function for it. It returns a NULL terminated string,
     or simply NULL if no envelope has been set.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Retrieve the envelope address
  *
@@ -12,7 +12,7 @@
  *  @return         the recipient
  */
 const char *<a href="/documentation/mq_envelope">MQ_Envelope</a>(<a href="/documentation/mq_message">MQ_Message</a> *message);
-</pre>
+</code></pre>
 <p>
     This function has a different behavior if you call it on a message
     <i>that is being received</i> and on a message <i>that is being sent</i>.
