@@ -43,7 +43,7 @@ not see the `a` property.
 </table>
 
 ## Example use
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a single button",
@@ -63,4 +63,4 @@ not see the `a` property.
             } ]
         }
     }
-</code></pre>
+````
