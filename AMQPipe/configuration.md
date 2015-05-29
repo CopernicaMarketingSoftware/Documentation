@@ -21,12 +21,12 @@ AMQPipe connects to a RabbitMQ message broker to load messages. The address
 of this message broker should be set using the following variables in the
 config file:
 
-<pre><code>
+````
 rabbitmq-host:      localhost
 rabbitmq-user:      guest
 rabbitmq-password:  guest
 rabbitmq-vhost:     /
-</code></pre>
+````
 
 Of course, you should replace the hostname and login credentials with settings
 that work for you.
@@ -41,10 +41,10 @@ about your script, will be put back in RabbitMQ. In the configuration file
 you can set the name of the queue from which message are loaded, and the name
 of the exchange to which the generated messages are published.
 
-<pre><code>
+````
 rabbitmq-queue:     myqueue
 rabbitmq-exchange:  myexchange
-</code></pre>
+````
 
 The `rabbitmq-queue` variable specifies the queue _from which messages are loaded_,
 and the `rabbitmq-exchange` variable holds the name of the exchange _to which
@@ -67,9 +67,9 @@ For all messages loaded from RabbitMQ, the AMQPipe process manager runs
 your program(s) or script(s) to process them. With the `plugin` variable
 you can specify the location of your script(s).
 
-<pre><code>
+````
 plugin:           /path/to/your/plugin
-</code></pre>
+````
 
 The path to you plugin should either be:
 
@@ -85,7 +85,7 @@ a [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29) to your script,
 and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
-<pre class="language-php"><code class="language-php">
+````php
 &num;!/usr/bin/php
 &lt;?php
 // read data from stdin
@@ -93,7 +93,7 @@ $input = stream_get_contents(STDIN);
 
 // @todo add your own code
 ?&gt;
-</code></pre>
+````
 
 A special sort of plugins are _shared objects_. A shared object is written
 in C++ and is loaded by AMQPipe when the application starts. Unlike
@@ -122,10 +122,10 @@ message envelope into one big JSON object, and sends this JSON object to
 'stdin' of your script. Your script should read in this message body, and parse
 the JSON.
 
-<pre><code>
+````
 input-format:     json
 input-encoding:   base64
-</code></pre>
+````
 
 Currently, two sort of input formats are supported: `message` (which is the default)
 to only send the raw message body to your script, and `json` to turn the envelope
@@ -145,9 +145,9 @@ of the server. You can control the number of processes to run with the
 `max-processes` variable. It is best to set this to a number close to the number
 of CPU's you have available on your server.
 
-<pre><code>
+````
 max-processes:    16
-</code></pre>
+````
 
 ## Process limits
 
@@ -155,12 +155,12 @@ To prevent that scripts or programs get out of control, you may set limits on th
 time a script takes to complete, or the amount of memory it can consume. When this
 limit is reached, AMQPipe automatically kills the program.
 
-<pre><code>
+````
 max-virt-memory:  2GB
 max-memory:       2GB
 max-real-time:    3600
 max-cpu-time:     60
-</code></pre>
+````
 
 The `max-*-memory` are set in bytes, but you can use postfixes like 'MB' and 'GB'.
 The `max-*-time` variables are set in number of seconds. All variables have a default
