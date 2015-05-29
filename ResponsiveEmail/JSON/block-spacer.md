@@ -56,7 +56,7 @@ which should be set to the height of your spacer in pixels.
 ## Example
 
 A complete example of a spacer block is shown below.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with two images",
@@ -67,4 +67,4 @@ A complete example of a spacer block is shown below.
             } ]
         }
     }
-</code></pre>
+````
