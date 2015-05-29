@@ -10,7 +10,7 @@ all the images in your email, and that the tracking pixel is only
 necessary if your email does not contain any images at all. If you want
 to turn off this behavior, and want to include the tracking pixel _no matter_
 the number of other images in the mail, you can use the `force` property.
-
+````javascript
     {
         "name" : "template13",
         "subject" : "This email is being tracked by the NSA",
@@ -20,4 +20,4 @@ the number of other images in the mail, you can use the `force` property.
             "force" : true
         }
     }
-
+````
