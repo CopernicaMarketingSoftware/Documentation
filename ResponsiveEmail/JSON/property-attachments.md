@@ -44,7 +44,7 @@ to your data.
 </table>
 
 ## Example Code
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Here are some example attachments",
@@ -69,3 +69,4 @@ to your data.
             } ]
         }
     }
+</code></pre>
