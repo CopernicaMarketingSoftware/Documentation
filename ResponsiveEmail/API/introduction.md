@@ -22,7 +22,7 @@ You can do a call to the API with any programming language that supports HTTP re
 The following is an example of how to request the JSON representation of an email template.
 
 ````php
-&lt;?php
+<?php
 // create curl resource
 $ch = curl_init();
 
