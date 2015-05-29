@@ -68,6 +68,8 @@ block that may contain textual content. The `font` property is available in text
 
 The following example would result in an email that has a text about _apples_ written in _Comic Sans_
 and a text about _banana's_ written in Arial. 
+
+
 ````json
     {
         "templateName" : "Vet gave template man!",
@@ -91,6 +93,8 @@ and a text about _banana's_ written in Arial.
         }
     } 
 ````
+
+
 [Read more about font properties](/support/json/property-font)
 
 
@@ -108,6 +112,8 @@ The `background` property accepts another JSON object that contains the actual b
 Currently, the only supported background property is `color`. Here is an example with the background property on toplevel and inside a content block. 
 
 A rastafari colored email template could be constructed as follows. 
+
+
 ````json
     {
         "background" : {
@@ -127,10 +133,14 @@ A rastafari colored email template could be constructed as follows.
         }
     }
 ````
+
+
 <a class="anchor" name="margin"></a>
 ### Property `margin`
 
 You may change the amount of whitespace that is reserved around a block. The margin property can be used for that. The margin can either be a numeric value, if you want to use the same margin for all four sides around the block, or an object if you want to set the top, left, right and bottom margins seperately.
+
+
 ````json
     {
         "type": "button",
@@ -142,13 +152,17 @@ You may change the amount of whitespace that is reserved around a block. The mar
         }
     }
 ````
+
+
 <a class="anchor" name="css"></a>
 ### Property `css`
 
 The API allows you to specify custom CSS properties and element attributes. The CSS rules
 will be directly applied as inline CSS to the HTML element. For instance, in an image block, the css specified within `css` will be directy applied to the html ```<img>``` tag. 
 
-When using your own custom CSS, you must be aware that it might break the email lay-out or responsiveness in some clients.  
+When using your own custom CSS, you must be aware that it might break the email lay-out or responsiveness in some clients.
+
+
 ````json
     {
         "type" : "image",
@@ -158,10 +172,14 @@ When using your own custom CSS, you must be aware that it might break the email 
         }
     }
 ````
+
+
 <a class="anchor" name="attributes"></a>
 ### Property `attributes`
 
 The API allows you to specify, add or overwrite HTML element attributes using the property `attributes`. The property `attributes` is also available in each block within the content section of your document. The attributes you set in this property will be directly applied to the element customary for this type of block. For instance, in an image block, the CSS specified within `css` will be directy applied to the HTML ```<img>``` tag. 
+
+
 ````json
     {
         "type" : "image",
@@ -170,6 +188,8 @@ The API allows you to specify, add or overwrite HTML element attributes using th
         }
     }
 ````
+
+
 <a class="anchor" name="container"></a>
 ### Property `container`
 
@@ -177,7 +197,9 @@ Any block type is normally wrapped inside a table ```<td>``` element. For this c
 
 The `container` property accepts a JSON object with a `css` and/or `attributes` property. 
 Both `css` and `attributes` accept a JSON block containing the CSS properties or element attributes
-you would like to add to the container element. 
+you would like to add to the container element.
+
+
 ````json
     {
         "type" : "image",
@@ -191,4 +213,6 @@ you would like to add to the container element.
         }
     }
 ````
+
+
 <a href="/support/json/property-container">Read more about the container property</a>
