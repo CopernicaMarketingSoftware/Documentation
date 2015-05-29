@@ -4,6 +4,8 @@ The property `columns` is a nested property that is used inside a
 <a href="/support/json/block-columns">columns block</a>. It expects
 a JSON array as value, with a list of JSON objects. Each object 
 in this array describes the contents of a single column.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -33,6 +35,7 @@ in this array describes the contents of a single column.
         }
     }
 ````
+
 
 The above example holds an email with a single block. This block 
 happens to be a `columns` block, that splits the mail in two columns.
@@ -95,6 +98,8 @@ are placed in a twelve columns wide fluid grid. You can assign each column
 a size from 1 to 12, as long as the total of all sizes is 12. Thus, if 
 you want to create a mail with two small side columns, and a wider column
 in the middle, you could use column sizes 2-8-2.
+
+
 ````json
     {
         "from" : "info@example.com",
