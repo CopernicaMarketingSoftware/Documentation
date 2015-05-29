@@ -68,7 +68,7 @@ block that may contain textual content. The `font` property is available in text
 
 The following example would result in an email that has a text about _apples_ written in _Comic Sans_
 and a text about _banana's_ written in Arial. 
-<pre><code>
+````json
     {
         "templateName" : "Vet gave template man!",
         "font" : {
@@ -90,7 +90,7 @@ and a text about _banana's_ written in Arial.
             ]
         }
     } 
-</code></pre>
+````
 [Read more about font properties](/support/json/property-font)
 
 
@@ -108,7 +108,7 @@ The `background` property accepts another JSON object that contains the actual b
 Currently, the only supported background property is `color`. Here is an example with the background property on toplevel and inside a content block. 
 
 A rastafari colored email template could be constructed as follows. 
-<pre><code>
+````json
     {
         "background" : {
             "color" : "green"
@@ -126,12 +126,12 @@ A rastafari colored email template could be constructed as follows.
             } ],
         }
     }
-</code></pre>
+````
 <a class="anchor" name="margin"></a>
 ### Property `margin`
 
 You may change the amount of whitespace that is reserved around a block. The margin property can be used for that. The margin can either be a numeric value, if you want to use the same margin for all four sides around the block, or an object if you want to set the top, left, right and bottom margins seperately.
-<pre><code>
+````json
     {
         "type": "button",
         "margin": {
@@ -141,7 +141,7 @@ You may change the amount of whitespace that is reserved around a block. The mar
             "bottom": 5
         }
     }
-</code></pre>
+````
 <a class="anchor" name="css"></a>
 ### Property `css`
 
@@ -149,7 +149,7 @@ The API allows you to specify custom CSS properties and element attributes. The 
 will be directly applied as inline CSS to the HTML element. For instance, in an image block, the css specified within `css` will be directy applied to the html ```<img>``` tag. 
 
 When using your own custom CSS, you must be aware that it might break the email lay-out or responsiveness in some clients.  
-<pre><code>
+````json
     {
         "type" : "image",
         "css" : {
@@ -157,19 +157,19 @@ When using your own custom CSS, you must be aware that it might break the email 
             "border" : "2px dashed pink"
         }
     }
-</code></pre>
+````
 <a class="anchor" name="attributes"></a>
 ### Property `attributes`
 
 The API allows you to specify, add or overwrite HTML element attributes using the property `attributes`. The property `attributes` is also available in each block within the content section of your document. The attributes you set in this property will be directly applied to the element customary for this type of block. For instance, in an image block, the CSS specified within `css` will be directy applied to the HTML ```<img>``` tag. 
-<pre><code>
+````json
     {
         "type" : "image",
         "attributes" : {
             "border" : 1
         }
     }
-</code></pre>
+````
 <a class="anchor" name="container"></a>
 ### Property `container`
 
@@ -178,7 +178,7 @@ Any block type is normally wrapped inside a table ```<td>``` element. For this c
 The `container` property accepts a JSON object with a `css` and/or `attributes` property. 
 Both `css` and `attributes` accept a JSON block containing the CSS properties or element attributes
 you would like to add to the container element. 
-<pre><code>
+````json
     {
         "type" : "image",
         "container" : {
@@ -190,5 +190,5 @@ you would like to add to the container element.
             }
         }
     }
-</code></pre>
+````
 <a href="/support/json/property-container">Read more about the container property</a>
