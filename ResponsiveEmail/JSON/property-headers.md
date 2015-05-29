@@ -10,6 +10,8 @@ headers, you can do so by using the `headers` property.
 
 To add a single '`x-my-header`' to the MIME of your responsive email, you
 may include a `headers` property in the input JSON.
+
+
 ````javascript
     {
         "from"    : "info@example.com",
@@ -19,6 +21,8 @@ may include a `headers` property in the input JSON.
         }
     }
 ````
+
+
 All the headers are directly copied from the input JSON into the responsive
 email, without any validation.
 
