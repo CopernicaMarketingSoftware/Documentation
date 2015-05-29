@@ -20,7 +20,7 @@ set the `from` and `replyTo` properties to string values holding
 email addresses.
 
 ## Examples
-<pre><code>
+````javascript
 {
   "name": "My template",
   "from" : {
@@ -45,14 +45,14 @@ email addresses.
     }]
   }
 }
-</code></pre>
+````
 
 The above code shows the recommended way of setting the from address
 and the reply-to address: as JSON objects with the name and
 email address as nested properties. But you can also assign string
 values:
 
-<code><pre>
+````javascript
 {
   "name": "My template",
   "from" : "info@example.org",
@@ -71,7 +71,7 @@ values:
     }]
   }
 }
-</code></pre>
+````
 ## Related information
 
 The sender addresses are stored in the header of the email. Other <a href="/support/json/top-level-properties">top level
