@@ -79,6 +79,8 @@ All available properties of this block type are mentioned in the table below.
 The following input JSON shows how to a video to a document. This is the basic
 usage, showing a thumbnail image in both email and webversions, that links to
 the video on youtube when clicked:
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -91,11 +93,15 @@ the video on youtube when clicked:
         }
     }
 ````
+
+
 ## Embedding videos
 
 Inside mail clients, it is unfortunately not possible to directly embed videos.
 On webversions, however, it is possible to embed the video directly into the
 webpage. To do this, set the 'embed' property to true (it is false by default).
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -109,6 +115,8 @@ webpage. To do this, set the 'embed' property to true (it is false by default).
         }
     }
 ````
+
+
 ## Custom link target
 
 By default, if no link target is specified, when the video thumbnail is clicked,
@@ -118,6 +126,8 @@ to make sure this URI is valid, and that it contains the video in questions.
 
 If embed is set to true, only users using their mail client will get redirected,
 the video will still be embedded directly into the webversion.
+
+
 ````json
     {
         "from" : "info@example.com",
