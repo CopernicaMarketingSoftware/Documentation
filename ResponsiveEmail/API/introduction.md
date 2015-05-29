@@ -21,6 +21,7 @@ result in a 400 Bad Request response.
 You can do a call to the API with any programming language that supports HTTP requests.
 The following is an example of how to request the JSON representation of an email template.
 
+
 ````php
 <?php
 // create curl resource
@@ -47,6 +48,7 @@ doSomethingWithResult($output);
 // close curl resource to free up system resources
 curl_close($ch);
 ````
+
 
 View more [code examples](/support/api/examples "code examples")
 
