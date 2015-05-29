@@ -15,14 +15,14 @@
     data stored by other plugins. If no data was stored
     earlier, NULL will be returned.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Retrieve userdata stored using MQ_SetSmtpData
  *  @param  connection  the connection in which the data was stored
  *  @return void*
  */
 void *<a href="/documentation/mq_smtpdata">MQ_SmtpData</a>(<a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection);
-</pre>
+</code></pre>
 <p>
     Be aware that if you store data in the connection that you had
     allocated yourself, it is also your responsibility to deallocate
