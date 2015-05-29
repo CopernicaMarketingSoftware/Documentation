@@ -215,17 +215,23 @@ class Result {
 </p>
 <h4>Compile the code</h4>
 <div class="codeBox">
+ <pre class="language-bash"><code class="language-bash">
     <strong>$</strong> gmcs -r:/lib/bin/RabbitMQ.Client.dll Send.cs<br />
     <strong>$</strong> gmcs -r:/lib/bin/RabbitMQ.Client.dll Result.cs
+ </code></pre>
 </div>
 <h4>Run the Send.exe file, to put a message on the queue.</h4>
 <div class="codeBox">
+ <pre class="language-bash"><code class="language-bash">
     <strong>$</strong> MONO_PATH=/lib/bin mono Send.exe
+ </code></pre>
 </div>
 <h4>
     Run the Result.exe file, to get the result messages from the
     result message queue.
 </h4>
 <div class="codeBox">
+ <pre class="language-bash"><code class="language-bash">
     <strong>$</strong> MONO_PATH=/lib/bin mono Result.exe
+ </code></pre>
 </div>
