@@ -13,7 +13,7 @@
     <div>       
             
 ````php
-&lt;?php
+<?php
 // create curl resource
 $ch = curl_init();
 
