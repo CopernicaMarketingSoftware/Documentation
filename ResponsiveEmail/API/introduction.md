@@ -21,31 +21,31 @@ result in a 400 Bad Request response.
 You can do a call to the API with any programming language that supports HTTP requests.
 The following is an example of how to request the JSON representation of an email template.
 
-<pre class="language-php"><code>
-    <?php
-    // create curl resource
-    $ch = curl_init();
-    
-    // set url
-    $href = "https://www.responsiveemail.com/v1/template/$id/json?access_token=$token";
-    curl_setopt($ch, CURLOPT_URL, $href);
-    
-    //return the transfer as a string
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    
-    // $output contains the output string
-    $output = curl_exec($ch);
-    
-    // get the status code (should be 200 if all went good)
-    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    
-    // do something with the result if we succeeded
-    if ($status == 200) {
-    doSomethingWithResult($output);
-    }
-    
-    // close curl resource to free up system resources
-    curl_close($ch);
+<pre><code>
+&lt;?php
+// create curl resource
+$ch = curl_init();
+
+// set url
+$href = "https://www.responsiveemail.com/v1/template/$id/json?access_token=$token";
+curl_setopt($ch, CURLOPT_URL, $href);
+
+//return the transfer as a string
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+// $output contains the output string
+$output = curl_exec($ch);
+
+// get the status code (should be 200 if all went good)
+$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+// do something with the result if we succeeded
+if ($status == 200) {
+doSomethingWithResult($output);
+}
+
+// close curl resource to free up system resources
+curl_close($ch);
 </code></pre>
 
 View more [code examples](/support/api/examples "code examples")
