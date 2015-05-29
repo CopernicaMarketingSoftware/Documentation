@@ -12,7 +12,7 @@
     all steps in the SMTP protocol. If you start sending data yourself,
     the SMTP connection may end up in an invalid state.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Send data over a TCP connection
  *  @param  connection  the connection in which the data was stored
@@ -21,4 +21,4 @@
  *  @return size_t      number of bytes sent
  */
 size_t <a href="/documentation/mq_smtpsend">MQ_SmtpSend</a>(<a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection, const void *buffer, size_t size);
-</pre>
+</code></pre>
