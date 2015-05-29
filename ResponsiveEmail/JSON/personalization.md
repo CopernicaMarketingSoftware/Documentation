@@ -182,6 +182,7 @@ why there is full support for if statements. Syntax for these is fairly easy,
 within your if statements. Naturally we also support elseif and else statements,
 meaning you can create complete statements like the following example.
 
+
 ````smarty
     {if $key > 9000}
         Key is over 9000
@@ -191,6 +192,8 @@ meaning you can create complete statements like the following example.
         None of the previous statements matched
     {/if}
 ````
+
+
 ## Math
 
 The personalization engine also supports some basic forms of math. Meaning that
