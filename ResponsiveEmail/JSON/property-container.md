@@ -44,7 +44,7 @@ Every property that you set in the container `css` property will be
 appended to the inline `style` attribute of the ```<td>``` tag. And every `attributes`
 property will be set as attribute of the ```<td>``` tag. Consider the following JSON 
 example of a button block:
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Example container modification",
@@ -68,7 +68,7 @@ example of a button block:
             } ]
         }
     }
-</code></pre>
+````
 
 **This would result in the following pseudo HTML**
 
