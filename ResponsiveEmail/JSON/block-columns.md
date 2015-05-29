@@ -16,7 +16,7 @@ and <a href="/support/json/property-container">`container`</a> properties).
 There is however a difference; a `columns` block itself is also a content container,
 and you can add additional blocks *inside* it, for example the `text` 
 and `image`.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Mail with two columns",
@@ -41,7 +41,7 @@ and `image`.
             } ]
         }
     }
-</code></pre>
+````
 The above example shows a simple email, with a normal 
 <a href="/support/json/property-content">`content`</a> property that
 holds the 580px wide center content. Inside this centered content section,
@@ -74,7 +74,7 @@ The following example shows an email whose top part is
 split in two columns holding
 two images, followed by some text that takes up the entire width
 of the mail, followed by three columns each holding a button.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Mail with multiple columns columns",
@@ -116,7 +116,7 @@ of the mail, followed by three columns each holding a button.
             } ]
         }
     }
-</code></pre>
+````
 
 
 ## Responsive behavior
