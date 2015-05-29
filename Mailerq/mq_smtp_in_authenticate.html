@@ -17,9 +17,9 @@
     database lookup). If the plugin takes over control, it should of course
     give back control to MailerQ when the credentials lookup has been completed.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 bool mq_smtp_in_authenticate(<a href="/documentation/mq_context">MQ_Context</a> *context, <a href="/documentation/mq_smtpconnection">MQ_SmtpConnection</a> *connection, const char *login, size_t loginsize, const char *passwd, size_t passwdsize);
-</pre>
+</code></pre>
 <p>
     If your plugin returns true, MailerQ hands over control to your plugin,
     and you should also hand control back. For more information on how MailerQ 
