@@ -55,7 +55,7 @@ to a web based version of the mail. This hyperlink is only included in the
 mail when the responsive API outputs the mail version of the mail. The first
 paragraph holds an apology for users who were unable to view the mail in
 their email client, and this apology is only included in the web version.
-
+````json
     {
         "from" : "info@example.com",
         "subject" : "Example email with a link to the webversion",
@@ -81,6 +81,6 @@ their email client, and this apology is only included in the web version.
             } ]
         }
     }
-
+````
 In the above example we've assumed that you're doing the hosting of the
 web version of the mail yourself.
