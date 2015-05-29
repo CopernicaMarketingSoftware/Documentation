@@ -24,14 +24,14 @@
     to a received message, and you want to run all plugins again so that
     they can all respond to the modified message.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Finish plugin processing
  *
  *  @param  context the context that may move on to the next plugin
  */
 void <a href="/documentation/mq_retry">MQ_Retry</a>(<a href="/documentation/mq_retry">MQ_Context</a> *context);
-</pre>
+</code></pre>
 
 <p>
     See also <a href="/documentation/mq_continue">MQ_Continue()</a> and
