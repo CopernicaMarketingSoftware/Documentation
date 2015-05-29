@@ -4,6 +4,7 @@ Container blocks are - you might have guessed it - a block that contains other
 blocks. The blocks inside the container block are displayed below eachother in
 a vertical fashion. It is thus best compared to a
 <a href="/support/json/block-columns">columns block</a> with only a single column.
+
 ````json
     {
         "from" : "info@example.com",
