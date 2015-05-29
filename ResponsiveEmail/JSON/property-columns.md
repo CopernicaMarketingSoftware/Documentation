@@ -95,7 +95,7 @@ are placed in a twelve columns wide fluid grid. You can assign each column
 a size from 1 to 12, as long as the total of all sizes is 12. Thus, if 
 you want to create a mail with two small side columns, and a wider column
 in the middle, you could use column sizes 2-8-2.
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with two small columns on the side",
@@ -128,4 +128,4 @@ in the middle, you could use column sizes 2-8-2.
             } ]
         }
     }
-
+</code></pre>
