@@ -3,7 +3,7 @@
 A HTML block is one of the many block types that you can use in a responsive
 email. It is a very popular one and it is easy to use: it is just a piece of text, with 
 simple HTML formatting.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with only one text block",
@@ -14,7 +14,7 @@ simple HTML formatting.
             } ]
         }
     }
-</code></pre>
+````
 
 The example above demonstrates how to include a HTML block in your email. 
 As you can see, you can use simple markup tags like 
@@ -90,7 +90,7 @@ many more. The following tables lists all supported properties.
 
 The following JSON input shows a more extensive example how to use all 
 the properties of a text block.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with only one HTML block",
@@ -118,5 +118,5 @@ the properties of a text block.
             } ]
         }
     }
-</code></pre>
+````
 
