@@ -20,6 +20,7 @@ intact.
 
 ## Example request
 
+
 ````txt
     GET /v1/template/2345/embedded?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -39,6 +40,7 @@ intact.
     R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
     tml"><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=
 ````
+
 
 To help readability, we have left out most of the returned MIME code in
 above example. Note that the HTTP protocol also returns data
