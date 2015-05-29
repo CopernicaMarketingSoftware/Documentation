@@ -10,6 +10,8 @@ the button. Currently we have support for 4 sizes, where small is the default.
 - large
 
 ## Example use
+
+
 ````json
     {
         "from" : "info@example.com",
