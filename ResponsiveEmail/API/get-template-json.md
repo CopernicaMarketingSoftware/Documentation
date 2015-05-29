@@ -5,7 +5,8 @@ that you previously stored. You must include the numeric ID of your
 template in the URL.
 
 ## Example request
-<pre><code>
+
+````txt
     GET /v1/template/1234/json?access_token=yourtoken
     Host: www.responsiveemail.com
 
@@ -24,7 +25,8 @@ template in the URL.
             } ]
         }
     }
-</code></pre>
+```
+
 ## Related information
 
 You can only retrieve the JSON of template resources that you
