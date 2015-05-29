@@ -4,6 +4,8 @@ With this method you can convert JSON directly into a MIME representation of an
 email, without storing any data on the responsiveemail.com servers.
 
 ## Example request
+
+
 ````txt
     POST /v1/mime?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -26,6 +28,7 @@ email, without storing any data on the responsiveemail.com servers.
     R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
     tml"><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=
 ````
+
 
 To help readability, we have left out most of the returned MIME code in
 above example. Also note that the HTTP protocol also returns data
