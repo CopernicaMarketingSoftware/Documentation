@@ -14,7 +14,7 @@
     the parameters is:
 </p>
 <p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 
 void example(Php::Parameters &amp;params)
 {
@@ -120,7 +120,7 @@ example("x", "y", "z");
     Let's look at the first constructor from the C++ header file:
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 /**
  *  Constructor
  *  @param  name        Name of the parameter
@@ -175,7 +175,7 @@ Php::Type::Callable
     use the second form of the Php::ByVal constructor:
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 /**
  *  Constructor
  *  @param  name        Name of the parameter
@@ -205,7 +205,7 @@ function example1(DateTime $time = null) { Php::Value time = params[0]; ... }
     This would be identical to the following code in C++:
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 void example1(Php::Parameters &amp;params) { Php::Value time = params[0]; ... }
@@ -239,7 +239,7 @@ extern "C" {
     swaps the contents of two variables.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 void swap(Php::Parameters &amp;params) 
