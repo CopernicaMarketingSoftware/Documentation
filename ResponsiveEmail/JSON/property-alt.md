@@ -4,6 +4,8 @@ The `alt` property is used inside <a href="/support/json/block-image">image bloc
 and can be used to set a text that will be displayed when the image could
 not be shown. This could for example happen when a user has configured his or email email
 client in such a manner that images are not directly downloaded.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -17,5 +19,7 @@ client in such a manner that images are not directly downloaded.
         }
     }
 ````
+
+
 For more information and more examples, please check the documentation
 of <a href="/support/json/block-image">image blocks</a>.
