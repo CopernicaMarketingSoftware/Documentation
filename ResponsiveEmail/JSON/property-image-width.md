@@ -32,7 +32,7 @@ If you use a relative width (a percentage value) the image will only take
 up a relative part of the container. Thus, if you only want your image to
 take up one third of the container in which it is placed, you can set
 the width to 33%:
-
+````javascript
     {
         "subject" : "Example email",
         "from" : "info@example.com",
@@ -45,7 +45,7 @@ the width to 33%:
             "source" : "<p>Here comes all the text</p>"
         } ]
     }
-
+````
 In the above example, the image will take up one third of the total
 width the mail. Be aware that this is true for all devices! Even on
 small mobile devices, the image will only take up one third of the
@@ -59,7 +59,7 @@ possible, but you should not use the image width property for it,
 but use <a href="/support/json/block-columns">columns</a> instead. 
 Columns are automatically placed under each  other when a device is too 
 small to display them next to each other:
-
+````javascript
     {
         "subject" : "Example email",
         "from" : "info@example.com",
@@ -80,7 +80,7 @@ small to display them next to each other:
             "source" : "<p>Here comes all the text</p>"
         } ]
     }
-    
+````    
 The example above shows an email that splits the top of the contents
 into two columns. Because ResponsiveEmail.com uses a 12 columns wide fluid
 grid system, we have created one column that is 4 units wide (one third
@@ -120,7 +120,7 @@ the image will automatically take up half of the email width. Watch out:
 this means that the image will thus also take up half of the email on
 small devices, even if that means that the image would then be much smaller
 than 290 pixels!
-
+````javascript
     {
         "subject" : "Example email",
         "from" : "info@example.com",
@@ -130,7 +130,7 @@ than 290 pixels!
             "width" : "290px"
         } ]
     }
-
+````
 For images used inside columns, the conversion to a relative width is also
 done, but of course then it is based on the width of the specific
 column, and not on the full 580px wide email content.
