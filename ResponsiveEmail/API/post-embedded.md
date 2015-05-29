@@ -36,11 +36,11 @@ intact.
     Subject: Responsive email.com example
     From: Clayton <clayton@copernica.com>
 </code></pre>
-<pre class="language-markup"><code class="language-markup">
+
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/T=
     R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
     tml"><head><meta http-equiv=3D"content-type" content=3D"text/html" charset=
-</code></pre>  
+  
 
 
 To help readability, we have left out most of the returned MIME code in
