@@ -7,6 +7,8 @@ around the block, or an object if you want to set the top, left, right
 and bottom padding seperately. This difference between `padding` and
 <a href="/support/json/property-margin">`margin`</a> is that padding will
 get the background color of said block, unlike margin.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -29,6 +31,8 @@ get the background color of said block, unlike margin.
         }
     }
 ````
+
+
 Above example shows how you can use the `padding` property to set the padding
 for all four sides around a block at once, and how to use the property
 to set different padding for all four sides.
