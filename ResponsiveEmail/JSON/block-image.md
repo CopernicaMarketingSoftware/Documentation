@@ -102,7 +102,7 @@ All available properties of this block type are mentioned in the table below.
 
 The following input JSON shows how to add an image to a document. This is
 the basic usage, to only include an image with an extra "alt" tag:
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a single image",
@@ -114,7 +114,7 @@ the basic usage, to only include an image with an extra "alt" tag:
             } ]
         }
     }
-</code></pre>
+````
 ## Clickable images
 
 It is possible to make the image clickable. You do this by providing the
@@ -122,7 +122,7 @@ It is possible to make the image clickable. You do this by providing the
 be a string holding a URL, or an object with link properties.
 The following example shows the input for an email with the two ways
 to add a link.
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with two images",
@@ -143,7 +143,7 @@ to add a link.
             } ]
         }
     }
-</code></pre>
+````
 ## Direct access to the ```<img>``` and ```<a>``` tags
 
 All the properties in the input JSON are turned into a HTML ```<img>``` tag,
@@ -151,7 +151,7 @@ and, if you add a link, also into a HTML ```<a>``` tag. If you want to set
 custom attributes or custom CSS properties to these tags, you can
 do so by using the <a href="/support/json/property-img">`img`</a> and
 <a href="/support/json/property-a">`a`</a> properties:
-<pre><code>
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a single image",
@@ -180,7 +180,7 @@ do so by using the <a href="/support/json/property-img">`img`</a> and
             } ]
         }
     }
-</code></pre>
+````
 The `img` and `a` properties are of course fully optional, and you
 normally do not need them when working with images. Please also
 keep in mind that the property
