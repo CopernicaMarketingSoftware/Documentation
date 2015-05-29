@@ -5,6 +5,8 @@ The `blocks` property is used inside the
 an array of blocks that make up the mail. Every block in the array
 should at least have a <a href="/support/json/property-type">`type`</a>
 property to identify the block type.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -23,6 +25,8 @@ property to identify the block type.
         }
     }
 ````
+
+
 The example above shows the input for an email with a text, followed 
 by a button.
 
@@ -32,6 +36,8 @@ The `blocks` property is also used if make use of
 <a href="/support/json/block-columns">columns</a>. Every 
 <a href="/support/json/property-columns">column</a> also has a `blocks`
 property that describes the blocks that are placed in the column.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -67,6 +73,8 @@ property that describes the blocks that are placed in the column.
         }
     }
 ````
+
+
 The above example shows the two uses of the `blocks` property. First you
 see it in action as a property inside the
 <a href="/support/json/property-content">main content section</a>, and
