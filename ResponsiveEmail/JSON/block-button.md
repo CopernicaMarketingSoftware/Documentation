@@ -92,7 +92,7 @@ better on different email clients.
 </table>
 
 ## Example
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with a single button",
@@ -110,3 +110,4 @@ better on different email clients.
             } ]
         }
     }
+</code></pre>
