@@ -77,7 +77,7 @@ $d = new DERIVED();
     to activate the object.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 /**
@@ -188,7 +188,7 @@ echo($counter->value()."\n");
     (and call the C++ destructor).
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 /**
@@ -226,7 +226,7 @@ extern "C" {
     private __construct() method before.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 /**
@@ -326,7 +326,7 @@ extern "C" {
     other than objects.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // new variable holding the string "Counter"
 Php::Value counter0("Counter");
 
@@ -363,7 +363,7 @@ Php::Object copy2 = counter0;
     want to bypass a call to your own __construct() method.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 // actual class implementation
