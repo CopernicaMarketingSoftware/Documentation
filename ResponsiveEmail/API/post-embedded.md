@@ -19,6 +19,7 @@ intact.
 
 ## Example request
 
+
 ````txt
     POST /v1/embedded?access_token=yourtoken
     Host: www.responsiveemail.com
