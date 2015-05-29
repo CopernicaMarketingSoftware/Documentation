@@ -82,7 +82,9 @@ When directly linking to a file, it is good practice to mention this fact, and t
 
 If a link text looks like a link, but the link itself points to a different address, email clients may block your email or obscure the link. Don't do the following:
 
-    ````<a href="http://www.google.nl">http://altavista.com</a>````
+    ````txt
+        <a href="http://www.google.nl">http://altavista.com</a>
+    ````
 
 ## Link tracking and URL parameters
 
@@ -96,7 +98,7 @@ Link parameters can be specified on toplevel, meaning that the parameters will b
 links only or to overwrite these params on block level. But more on this later.
 
 `params` are set inside a <em>rewrite rule</em>, the `links` property and then `rewrite` property. Take a look at this example:
-<pre><code>
+````json
     "name" : "some template", 
     "rewrite" : {
         "links" : {
@@ -107,13 +109,13 @@ links only or to overwrite these params on block level. But more on this later.
             }
         }
     }
-</code></pre>
+````
 The above JSON will return all links with hostname `json.com` appended with `&apple=bananana`
 
 As illustrated in the example below, you can make use of truncation or even regular expressions for your rewrite rules to target links in more detail.
 
 Example of link parameters added on toplevel in the JSON document:
-<pre><code>
+````json
     "name" : "template13",
     "subject" : "This email has links",
     "rewrite": {
@@ -136,16 +138,16 @@ Example of link parameters added on toplevel in the JSON document:
             }
         }
     }
-</code></pre>
+````
 The JSON above will result in the following links:
 
-<pre><code>
+````txt
     http://www.google.com?fruit=apple
     
     http://www.altavista.com?fruit=apple&city=Haarlem
         
     http://www.example.org
-</code></pre>
+````
 
 ### Specify URL parameters on block level
 
@@ -157,7 +159,7 @@ When the same URL parameter already exists on toplevel, the toplevel version wil
 **Example custom query strings on block level:**
 
 A short example will again show its working:
-<pre><code>
+````json
     {
         "type" : "button",
         "label" : "Buy large teapot",
@@ -169,18 +171,18 @@ A short example will again show its working:
             }
         }
     }
-</code></pre>
+````
 The output of the example below would look as follows:
 
-<pre><code>
+````json
    http://thegiantteapot.com?a=b&type=nonbelieber
-</code></pre>
+````
 As you can see from the example, the API is totally cool with you including URL parameters in both the `url` property and in the property `params`. The API will not get angry and just do what you requested.
 
 ### URL parameters in text blocks
 
 Because a text block may of course contain multiple hyperlinks, the property `params` is also available in text blocks, as shown in the example below:
-<pre><code>
+````json
     {
         "type" : "text"
         "rewrite" : {
@@ -193,14 +195,14 @@ Because a text block may of course contain multiple hyperlinks, the property `pa
             }
         }
     }
+````
 
-</code></pre>
 ### Google link tracking
 
 It is possible to add Google tracking code to each link in your email document. Because Google uses normal URL parameters, it works exactly the same as including normal URL parameters.
 
 Example:
-<pre><code>
+````json
     {
         "name" : "myFirstTemplate",
         "subject" : "hope you don\'t bother this email",
@@ -218,7 +220,8 @@ Example:
             }
         }
     }
-</code></pre>
+````
+
 ### Google tracking on specific links
 
 Some of the Google variables are normally added to each link in an email, while others can differ per link in the same email.
@@ -229,7 +232,7 @@ links in your email. The variable `content` on the other hand, may differ per li
 You can use the same methods of defining specific values for different links using the methods described for normal (custom) URL parameters.
 
 Example of specific Google link tracking in a button block:
-<pre><code>
+````json
     {
         "type" : "button",
         "label" : "Buy large teapot",
@@ -241,4 +244,4 @@ Example of specific Google link tracking in a button block:
             }
         }
     }
-</code></pre>
+````
