@@ -7,7 +7,7 @@ in email clients, it is recommended keep your subject line to 50 characters
 or less.
 
 ## Example
-<pre><code>
+````json
 {
   "name": "My template",
   "from": "info@example.com",
@@ -26,7 +26,7 @@ or less.
       ]
     }
 }
-</code></pre>
+````
 
 ## Related information
 
