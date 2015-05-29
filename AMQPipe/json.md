@@ -5,7 +5,7 @@ script(s) will receive JSON input from AMQPipe instead of just the message
 bodies. Besides the message body, this JSON object also holds additional 
 information about the consumed message. The format of this input is as follows:
 
-````json
+````javascript
 {
     "exchange":         "the exchange to which the message was original published",
     "routing-key":      "the routing key that was used for publishing",
