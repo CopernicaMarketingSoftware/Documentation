@@ -14,7 +14,7 @@ its <code>name</code> and <code>description</code>. Both the <a href="/support/j
 and  <a href="/support/json/property-description"><code>description</code></a>
 properties are meta properties that are not used by the API to generate the
 email, but that may be helpful to identify and/or describe the template.
-<pre><code>
+````json
     {
       "name": "Name of the template",
       "description": "Description of the template",
@@ -33,7 +33,7 @@ email, but that may be helpful to identify and/or describe the template.
               }]
           }
     }
-</code></pre>
+````
 ## Related information
 
 The property <a href="/support/json/property-description"><code>description</code></a> can be used
