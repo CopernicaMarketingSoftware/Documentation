@@ -92,6 +92,8 @@ better on different email clients.
 </table>
 
 ## Example
+
+
 ````json
     {
         "from" : "info@example.com",
