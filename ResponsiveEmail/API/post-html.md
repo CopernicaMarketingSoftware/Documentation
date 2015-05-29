@@ -5,6 +5,7 @@ email, without storing any data on the ResponsiveEmail.com servers.
 
 ## Example request
 
+
 ````txt
     POST /v1/html?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -20,6 +21,7 @@ email, without storing any data on the ResponsiveEmail.com servers.
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml"><head> ....
 ````
+
 
 To help readability, we have left out most of the returned HTML code in
 above example.
