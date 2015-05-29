@@ -6,7 +6,7 @@ the separator. You can use hex notation of colors here, direct color names as su
 by HTML etc. If omitted this will default to #cccccc.
 
 ## Example use
-
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a red separator",
@@ -23,3 +23,4 @@ by HTML etc. If omitted this will default to #cccccc.
             } ]
         }
     }
+````
