@@ -5,6 +5,8 @@ The `color` property is a simple property inside
 the button. You can assign color names, as well as hexadecimal color values.
 
 ## Example use
+
+
 ````json
     {
         "from" : "info@example.com",
