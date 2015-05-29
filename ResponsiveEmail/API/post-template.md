@@ -6,7 +6,7 @@ to your new template in the Location header and in the id property in the output
 JSON.
 
 ## Example request
-<pre><code>
+````txt
     POST /v1/template/?access_token=yourtoken
     Host: www.responsiveemail.com
     Content-Type: application/json
@@ -18,7 +18,7 @@ JSON.
     Content-Type: application/json
 
     { "id" : 2 }
-</code></pre>
+````
 ## Related information
 
 After you've created the template, you can use GET methods
