@@ -12,8 +12,8 @@
     <h2>PHP</h2>
     <div>       
 
-<pre class="language-php"><code class="language-php">
-&lt;?php
+````php
+<?php
 // create curl resource
 $ch = curl_init();
 
@@ -37,14 +37,14 @@ if ($status == 200) {
 
 // close curl resource to free up system resources
 curl_close($ch);
-?&gt;
-</code></pre>
+?>
+````
     
     </div>
     <h2>Python</h2>
     <div>
     
-<pre class="language-python"><code class="language-python">
+````python
 #/usr/bin/python2
 import urllib2
 
@@ -58,7 +58,7 @@ try:
     doSomethingWithResult(result)
 except urllib2.URLError, e:
     handleError(e)
-</code></pre>
+````
 
 </div>
 </div>
