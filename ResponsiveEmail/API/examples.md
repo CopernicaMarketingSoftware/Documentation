@@ -10,7 +10,10 @@
 
         <div class="tabs">
             <h2>PHP</h2>
-            <div><pre><code class="language-php">&lt;?php
+            <div>
+            
+````php 
+&lt;?php
 // create curl resource
 $ch = curl_init();
 
@@ -34,13 +37,11 @@ if ($status == 200) {
 
 // close curl resource to free up system resources
 curl_close($ch);
-</code>
-</pre>
+````
             </div>
             <h2>Python</h2>
             <div>
-<pre>
-<code class="language-python">
+````python
 #/usr/bin/python2
 import urllib2
 
@@ -54,8 +55,7 @@ try:
     doSomethingWithResult(result)
 except urllib2.URLError, e:
     handleError(e)
-</code>
-</pre>
+````
             </div>
         </div>
 </article>
