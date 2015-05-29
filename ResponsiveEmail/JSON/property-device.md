@@ -60,6 +60,8 @@ Mobile devices have small screens, and often use low bandwitdth internet
 connections. Using high resolution images is then not always a good
 practice. With the `device` property you can leave these hires images
 out if the mail is opened on a mobile device.
+
+
 ````javascript
     {
         "from" : "info@example.com",
