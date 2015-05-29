@@ -111,7 +111,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "From: my-sender-address@my-domain.com\r\n
@@ -119,7 +119,7 @@
              Subject:Example subject\r\n\r\n
              This is the example message text"
 }
-        </pre>
+        </code></pre>
     </div>
 </p>
 <p>
@@ -134,7 +134,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": {
@@ -144,7 +144,7 @@
         "textVersion": "This is the example message text"
     }
 }
-        </pre>
+       </code></pre>
     </div>
 </p>
 <p>
@@ -190,10 +190,10 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre>$ mailerq recipient1@example.com recipient2@example.com</pre>
+        <pre><code>$ mailerq recipient1@example.com recipient2@example.com</code></pre>
     </div>
     <div class="codeBox">
-        <pre>$ mailerq --extract-recipients</pre>
+        <pre><code>$ mailerq --extract-recipients</code></pre>
     </div>
 </p>
 <p>
@@ -219,10 +219,10 @@
 <p>
 <p>
     <div class="codeBox">
-        <pre>$ mailerq --ignore-dot recipient1@example.com recipient2@example.com</pre>
+        <pre><code>$ mailerq --ignore-dot recipient1@example.com recipient2@example.com</code></pre>
     </div>
     <div class="codeBox">
-        <pre>$ mailerq --ignore-dot --extract-recipients</pre>
+        <pre><code>$ mailerq --ignore-dot --extract-recipients</code></pre>
     </div>
 </p>
 <h3>Envelope address</h3>
@@ -235,7 +235,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre>$ mailerq --envelope myaddress@mydomain.com --extract-recipients</pre>
+        <pre><code>$ mailerq --envelope myaddress@mydomain.com --extract-recipients</code></pre>
     </div>
 </p>
 <h3>Message format</h3>
@@ -246,7 +246,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre>From: sender@example.com
+        <pre><code>From: sender@example.com
 To: recipient@example.com
 Subject: Example message
 x-mq-maxdelivertime: 2013-05-01 00:00:00
@@ -254,7 +254,7 @@ x-mq-maxdelivertime: 2013-05-01 00:00:00
 Example email data.
 Email data ends when a single dot followed by new line character is send.
 .
-</pre>
+</code></pre>
     </div>
 <h3>Sending emails from file</h3>
 <p>
@@ -263,10 +263,10 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <p>
     <div class="codeBox">
-        <pre>$ cat email.txt | mailerq --extract-recipients --ignore-dot</pre>
+        <pre><code>$ cat email.txt | mailerq --extract-recipients --ignore-dot</code></pre>
     </div>
     <div class="codeBox">
-        <pre>$ mailerq --extract-recipients --ignore-dot < email.txt </pre>
+        <pre><code>$ mailerq --extract-recipients --ignore-dot < email.txt </code></pre>
     </div>
 </p>
 <h3 id="PhpIni">Using MailerQ in PHP mail() function</h3>
@@ -280,7 +280,7 @@ Email data ends when a single dot followed by new line character is send.
     To use MailerQ for sending emails in PHP using mail() function, set
     property "sendmail_path" in php.ini to:
     <div class="codeBox">
-        <pre>sendmail_path = mailerq --envelope my-sender-address@my-domain.com --extract-recipients --ignore-dot</pre>
+        <pre><code>sendmail_path = mailerq --envelope my-sender-address@my-domain.com --extract-recipients --ignore-dot</code></pre>
     </div>
 </p>
 <h2 id="Properties">Setting additional properties for better delivery control</h2>
@@ -310,16 +310,16 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-envelope: my-sender-address@my-domain.com</pre></div>
+    <div class="codeBox"><pre><code>x-mq-envelope: my-sender-address@my-domain.com</code></pre>
 </p>
 <h4>JSON property</h4>
 <p>
-    <div class="codeBox"><pre>{
+    <div class="codeBox"><pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "..."
 }
-        </pre>
+        </code></pre>
     </div>
 </p>
 <h3>Max delivery time</h3>
@@ -335,18 +335,18 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-maxdelivertime: 2013-02-01 00:00:00</pre></div>
+    <div class="codeBox"><pre><code>x-mq-maxdelivertime: 2013-02-01 00:00:00</code></pre></div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
     "maxdelivertime": "2013-02-01 00:00:00"
 }
-        </pre>
+        </code></pre>
     </div>
 </p>
 <p>
@@ -371,17 +371,17 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-maxattempts: 3</pre></div>
+    <div class="codeBox"><pre><code>x-mq-maxattempts: 3</code></pre></div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
     "maxattempts": 3
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <h3 id="normalize">Normalize line endings</h3>
@@ -394,17 +394,17 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-normalize: 1</pre></div>
+    <div class="codeBox"><pre><code>x-normalize: 1</code></pre></div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
     "normalize": 1
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <h3 id="localips">Local IP addresses</h3>
@@ -426,19 +426,19 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-ip: 231.34.13.156
-x-mq-ip: 231.34.13.158</pre>
+    <div class="codeBox"><pre><code>x-mq-ip: 231.34.13.156
+x-mq-ip: 231.34.13.158</code></pre>
     </div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
     "ips": ["231.34.13.156", "231.34.13.158"]
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <p>
@@ -505,16 +505,16 @@ x-mq-ip: 231.34.13.158</pre>
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-keepmime: 1</pre></div>
+    <div class="codeBox"><pre><code>x-mq-keepmime: 1</code></pre></div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "keepmime": 1
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <h3 id="custom-queues">Custom result queues</h3>
@@ -526,16 +526,16 @@ x-mq-ip: 231.34.13.158</pre>
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-results-queue: name-of-results-queue
+    <div class="codeBox"><pre><code>x-mq-results-queue: name-of-results-queue
 x-mq-failure-queue: name-of-failure-queue
 x-mq-success-queue: name-of-success-queue
-x-mq-retry-queue: name-of-retry-queue</pre>
+x-mq-retry-queue: name-of-retry-queue</code></pre>
     </div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -545,7 +545,7 @@ x-mq-retry-queue: name-of-retry-queue</pre>
         "success": "name-of-success-queue",
         "retry": "name-of-retry-queue"
     }
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <p>
@@ -575,17 +575,17 @@ x-mq-retry-queue: name-of-retry-queue</pre>
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-smarthost-name: hostname-smarthost
+    <div class="codeBox"><pre><code>x-mq-smarthost-name: hostname-smarthost
 x-mq-smarthost-port: 25
 x-mq-smarthost-username: example-user
-x-mq-smarthost-password: example-password</pre>
+x-mq-smarthost-password: example-password</code></pre>
     </div>
 </p>
 
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -595,7 +595,7 @@ x-mq-smarthost-password: example-password</pre>
         "username": "example-user",
         "password": "example-password"
     }
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <p>
@@ -615,19 +615,19 @@ x-mq-smarthost-password: example-password</pre>
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre>x-mq-custom-property-name: some debug data that will be visible only in RabbitMQ message
-</pre>
+    <div class="codeBox"><pre><code>x-mq-custom-property-name: some debug data that will be visible only in RabbitMQ message
+</code></pre>
     </div>
 </p>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre>{
+        <pre><code>{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "custom-property-name": "some debug data that will be visible only in RabbitMQ message"
     "mime": "..."
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <p>
