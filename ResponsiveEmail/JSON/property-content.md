@@ -23,7 +23,9 @@ displayed inside this 580 pixels wide column.
 ## Example input
 The JSON code below would give you an email with a gray (body) background, 
 and a content section with a yellow background. 
-<pre><code>
+
+
+````json
     {
         "from" : "info@example.com",
         "subject" : "Example email",
@@ -43,7 +45,7 @@ and a content section with a yellow background.
             } ]
         }
     }
-</code></pre>
+````
 
 ## Example output
 
