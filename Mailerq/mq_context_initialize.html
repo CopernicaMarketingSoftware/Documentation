@@ -19,7 +19,7 @@
     loop, and how control is passed to and from plugins, see 
     <a href="/documentation/eventloop">the article about the MailerQ event loop</a>.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 #include &lt;mailerq.h&gt;
 
 /**
@@ -38,7 +38,7 @@ MQ_EXPORT bool mq_context_initialize(<a href="/documentation/mq_context">MQ_Cont
     // return true, MailerQ can stay in control
     return false;
 }
-</pre>
+</code></pre>
 <p>
     If you allocate memory in this function, you probably also have to add
     a <a href="/documentation/mq_context_cleanup">mq_context_cleanup</a>
