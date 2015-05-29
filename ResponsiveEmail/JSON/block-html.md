@@ -4,6 +4,7 @@ A HTML block is one of the many block types that you can use in a responsive
 email. It is a very popular one and it is easy to use: it is just a piece of text, with 
 simple HTML formatting.
 
+
 ````javascript
     {
         "from" : "info@example.com",
@@ -16,6 +17,7 @@ simple HTML formatting.
         }
     }
 ````
+
 
 The example above demonstrates how to include a HTML block in your email. 
 As you can see, you can use simple markup tags like 
@@ -91,6 +93,7 @@ many more. The following tables lists all supported properties.
 
 The following JSON input shows a more extensive example how to use all 
 the properties of a text block.
+
 
 ````javascript
     {
