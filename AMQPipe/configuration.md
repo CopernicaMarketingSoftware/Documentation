@@ -21,6 +21,7 @@ AMQPipe connects to a RabbitMQ message broker to load messages. The address
 of this message broker should be set using the following variables in the
 config file:
 
+
 ````txt
 rabbitmq-host:      localhost
 rabbitmq-user:      guest
@@ -40,6 +41,7 @@ RabbitMQ. Any output that your scripts generate, but also meta information
 about your script, will be put back in RabbitMQ. In the configuration file
 you can set the name of the queue from which message are loaded, and the name
 of the exchange to which the generated messages are published.
+
 
 ````txt
 rabbitmq-queue:     myqueue
@@ -67,6 +69,7 @@ For all messages loaded from RabbitMQ, the AMQPipe process manager runs
 your program(s) or script(s) to process them. With the `plugin` variable
 you can specify the location of your script(s).
 
+
 ````txt
 plugin:           /path/to/your/plugin
 ````
@@ -85,6 +88,7 @@ a [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29) to your script,
 and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
+
 ````php
 #!/usr/bin/php
 <?php
@@ -94,6 +98,7 @@ $input = stream_get_contents(STDIN);
 // @todo add your own code
 ?>
 ````
+
 
 A special sort of plugins are _shared objects_. A shared object is written
 in C++ and is loaded by AMQPipe when the application starts. Unlike
@@ -122,10 +127,12 @@ message envelope into one big JSON object, and sends this JSON object to
 'stdin' of your script. Your script should read in this message body, and parse
 the JSON.
 
+
 ````txt
 input-format:     json
 input-encoding:   base64
 ````
+
 
 Currently, two sort of input formats are supported: `message` (which is the default)
 to only send the raw message body to your script, and `json` to turn the envelope
@@ -145,9 +152,11 @@ of the server. You can control the number of processes to run with the
 `max-processes` variable. It is best to set this to a number close to the number
 of CPU's you have available on your server.
 
+
 ````txt
 max-processes:    16
 ````
+
 
 ## Process limits
 
@@ -155,12 +164,14 @@ To prevent that scripts or programs get out of control, you may set limits on th
 time a script takes to complete, or the amount of memory it can consume. When this
 limit is reached, AMQPipe automatically kills the program.
 
+
 ````txt
 max-virt-memory:  2GB
 max-memory:       2GB
 max-real-time:    3600
 max-cpu-time:     60
 ````
+
 
 The `max-*-memory` are set in bytes, but you can use postfixes like 'MB' and 'GB'.
 The `max-*-time` variables are set in number of seconds. All variables have a default
