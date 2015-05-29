@@ -22,7 +22,7 @@
     any blocking calls from within this function, if you do you will disturb
     other active connections resulting in timeouts.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 #include &lt;mailerq.h&gt;
 
 /**
@@ -48,7 +48,7 @@ MQ_EXPORT bool mq_smtp_out_data(<a href="/documentation/mq_context">MQ_Context</
     // remote server to close the connection and mark it as an error.
     return true;
 }
-</pre>
+</code></pre>
 <p>
     If your plugin returns true, MailerQ hands over control to your plugin,
     and you should also hand control back. For more information on how MailerQ 
