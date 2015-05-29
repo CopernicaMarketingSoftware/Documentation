@@ -8,9 +8,9 @@
             said template and your own access token.
         </p>
 
-        <div class="tabs">
-            <h2>PHP</h2>
-            <div>
+<div class="tabs">
+    <h2>PHP</h2>
+    <div>       
             
 ````php 
 &lt;?php
@@ -38,9 +38,9 @@ if ($status == 200) {
 // close curl resource to free up system resources
 curl_close($ch);
 ````
-            </div>
-            <h2>Python</h2>
-            <div>
+    </div>
+    <h2>Python</h2>
+    <div>
 ````python
 #/usr/bin/python2
 import urllib2
@@ -56,6 +56,6 @@ try:
 except urllib2.URLError, e:
     handleError(e)
 ````
-            </div>
-        </div>
+    </div>
+</div>
 </article>
