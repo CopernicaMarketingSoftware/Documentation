@@ -3,6 +3,8 @@
 A text block is one of the many block types that you can use in a responsive
 email. It is a very popular one (we do not often see mails
 without text), and it is easy to use: it is just a piece of text.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -15,6 +17,8 @@ without text), and it is easy to use: it is just a piece of text.
         }
     }
 ````
+
+
 Inside the block you can use sub properties. The most obvious ones were
 already demonstrated in the example, `content` and `type`, but there are
 many more. The following tables lists all supported properties.
@@ -82,6 +86,8 @@ you want some sort of formatting, you can use a
 
 The following JSON input shows a more extensive example how to use all 
 the properties of a text block.
+
+
 ````json
     {
         "from" : "info@example.com",
