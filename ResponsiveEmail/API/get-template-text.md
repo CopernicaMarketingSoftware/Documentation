@@ -5,7 +5,8 @@ can retrieve the plain text representation using this method. This will simply r
 <a href="/support/json/property-text">text property</a>.
 
 ## Example request
-<pre><code>
+
+```txt
     GET /v1/template/2345/text?access_token=yourtoken
     Host: www.responsiveemail.com
 
@@ -15,7 +16,8 @@ can retrieve the plain text representation using this method. This will simply r
     Content-Length: 38
 
     This is the text version of the email.
-</code></pre>
+```
+
 ## Personalization
 
 In order to [personalize](/personalization) the output it's possible to
