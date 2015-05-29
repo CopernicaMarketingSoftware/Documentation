@@ -55,7 +55,7 @@ The default is "solid".
 ## Example
 
 An example with a dashed separator.
-
+````json
     {
         "from" : "info@example.com",
         "subject" : "Email with a dashed separator",
@@ -72,4 +72,4 @@ An example with a dashed separator.
             } ]
         }
     }
-
+````
