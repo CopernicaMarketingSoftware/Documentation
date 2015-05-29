@@ -111,7 +111,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "From: my-sender-address@my-domain.com\r\n
@@ -134,7 +134,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": {
@@ -190,10 +190,10 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre><code>$ mailerq recipient1@example.com recipient2@example.com</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq recipient1@example.com recipient2@example.com</code></pre>
     </div>
     <div class="codeBox">
-        <pre><code>$ mailerq --extract-recipients</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq --extract-recipients</code></pre>
     </div>
 </p>
 <p>
@@ -219,10 +219,10 @@
 <p>
 <p>
     <div class="codeBox">
-        <pre><code>$ mailerq --ignore-dot recipient1@example.com recipient2@example.com</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq --ignore-dot recipient1@example.com recipient2@example.com</code></pre>
     </div>
     <div class="codeBox">
-        <pre><code>$ mailerq --ignore-dot --extract-recipients</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq --ignore-dot --extract-recipients</code></pre>
     </div>
 </p>
 <h3>Envelope address</h3>
@@ -235,7 +235,7 @@
 </p>
 <p>
     <div class="codeBox">
-        <pre><code>$ mailerq --envelope myaddress@mydomain.com --extract-recipients</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq --envelope myaddress@mydomain.com --extract-recipients</code></pre>
     </div>
 </p>
 <h3>Message format</h3>
@@ -263,10 +263,10 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <p>
     <div class="codeBox">
-        <pre><code>$ cat email.txt | mailerq --extract-recipients --ignore-dot</code></pre>
+        <pre class="language-bash"><code class="language-bash">$ cat email.txt | mailerq --extract-recipients --ignore-dot</code></pre>
     </div>
     <div class="codeBox">
-        <pre><code>$ mailerq --extract-recipients --ignore-dot < email.txt </code></pre>
+        <pre class="language-bash"><code class="language-bash">$ mailerq --extract-recipients --ignore-dot < email.txt </code></pre>
     </div>
 </p>
 <h3 id="PhpIni">Using MailerQ in PHP mail() function</h3>
@@ -314,7 +314,7 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>JSON property</h4>
 <p>
-    <div class="codeBox"><pre><code>{
+    <div class="codeBox"><pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "..."
@@ -340,7 +340,7 @@ Email data ends when a single dot followed by new line character is send.
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -376,7 +376,7 @@ Email data ends when a single dot followed by new line character is send.
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -399,7 +399,7 @@ Email data ends when a single dot followed by new line character is send.
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -433,7 +433,7 @@ x-mq-ip: 231.34.13.158</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -473,11 +473,11 @@ x-mq-ip: 231.34.13.158</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre >{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "key": "message-store-key-where-data-can-be-found"
-}           </pre>
+}           </code></pre>
     </div>
 </p>
 <p>
@@ -510,7 +510,7 @@ x-mq-ip: 231.34.13.158</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "keepmime": 1
@@ -535,7 +535,7 @@ x-mq-retry-queue: name-of-retry-queue</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -585,7 +585,7 @@ x-mq-smarthost-password: example-password</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
@@ -622,7 +622,7 @@ x-mq-smarthost-password: example-password</code></pre>
 <h4>JSON property</h4>
 <p>
     <div class="codeBox">
-        <pre><code>{
+        <pre class="language-javascript"><code class="language-javascript">{
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "custom-property-name": "some debug data that will be visible only in RabbitMQ message"
