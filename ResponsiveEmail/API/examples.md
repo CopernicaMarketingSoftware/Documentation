@@ -13,7 +13,7 @@
     <div>       
 
 <pre class="language-php"><code class="language-php">
-<?php
+&lt;?php
 // create curl resource
 $ch = curl_init();
 
@@ -37,7 +37,7 @@ if ($status == 200) {
 
 // close curl resource to free up system resources
 curl_close($ch);
-?>
+?&gt;
 </code></pre>
     
     </div>
