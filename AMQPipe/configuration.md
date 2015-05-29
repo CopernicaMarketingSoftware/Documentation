@@ -67,7 +67,7 @@ For all messages loaded from RabbitMQ, the AMQPipe process manager runs
 your program(s) or script(s) to process them. With the `plugin` variable
 you can specify the location of your script(s).
 
-````
+````txt
 plugin:           /path/to/your/plugin
 ````
 
@@ -122,7 +122,7 @@ message envelope into one big JSON object, and sends this JSON object to
 'stdin' of your script. Your script should read in this message body, and parse
 the JSON.
 
-````
+````txt
 input-format:     json
 input-encoding:   base64
 ````
@@ -145,7 +145,7 @@ of the server. You can control the number of processes to run with the
 `max-processes` variable. It is best to set this to a number close to the number
 of CPU's you have available on your server.
 
-````
+````txt
 max-processes:    16
 ````
 
@@ -155,7 +155,7 @@ To prevent that scripts or programs get out of control, you may set limits on th
 time a script takes to complete, or the amount of memory it can consume. When this
 limit is reached, AMQPipe automatically kills the program.
 
-````
+````txt
 max-virt-memory:  2GB
 max-memory:       2GB
 max-real-time:    3600
