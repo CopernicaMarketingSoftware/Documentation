@@ -22,7 +22,7 @@ email, without storing any data on the responsiveemail.com servers.
     Subject: Responsive email.com example
     From: Clayton <clayton@copernica.com>
 ````
-````markup
+````html
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/T=
     R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
     tml"><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=
