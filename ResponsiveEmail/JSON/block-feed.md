@@ -2,6 +2,8 @@
 
 Feed blocks provide the possibility to display the contents of any RSS
 feed inside a responsive document.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -14,6 +16,7 @@ feed inside a responsive document.
         }
     }
 ````
+
 The only - obviously - required option for this block is of course the `source` property.
 This property must point to the URI of a valid RSS feed.
 
@@ -33,6 +36,8 @@ Similarly, the default properties for the <a href="/support/json/block-html">htm
 the `content` property will be filled with the content of the article, and for the
 <a href="/support/json/block-image">image block</a> the `src` and `link` property will
 be filled with the source URI and article link, respectively.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -53,10 +58,13 @@ be filled with the source URI and article link, respectively.
         }
     }
 ````
+
 In addition to changing properties of the different blocks, it is also possible to change the order
 of the blocks as well as disable certain blocks completely, by using the `blocks` property. If this
 property is given, it must be an array with the desired blocks, in the preferred order. The following
 example would exclude any images that might be availeble in the article.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -70,6 +78,7 @@ example would exclude any images that might be availeble in the article.
         }
     }
 ````
+
 The following properties are supported:
 
 <table class="info">
