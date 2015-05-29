@@ -115,7 +115,7 @@ and that stores all consumed messages in that database. We use an imaginary
 database API so that our code looks as simple as possible. The database API is
 blocking, so we create a thread for storing the messages.
 
-<pre class="language-cpp"><code class="language-cpp">
+````c++
 #include <amqpipe.h>
 #include <simpledb.h>
 
@@ -250,4 +250,4 @@ void cleanup(AMQPipe::App &app, int plugin)
         });
     });
 }
-</code></pre>
+````
