@@ -5,6 +5,7 @@ The start and length parameters are supported, when not supplied the default sta
 
 ## Example request
 
+
 ````txt
     GET /v1/templates/0/100/?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -24,6 +25,7 @@ The start and length parameters are supported, when not supplied the default sta
         }
     ]
 ````
+
 
 ## Related information
 
