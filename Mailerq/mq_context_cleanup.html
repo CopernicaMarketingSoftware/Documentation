@@ -21,7 +21,7 @@
 </p>
 
 
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 #include &lt;mailerq.h&gt;
 
 /**
@@ -40,7 +40,7 @@ MQ_EXPORT bool mq_context_cleanup(<a href="/documentation/mq_context">MQ_Context
     // return false, MailerQ can stay in control
     return false;
 }
-</pre>
+</code></pre>
 <p>
     Remember that if you return true,
     MailerQ hands over control to your plugin, and your plugin must call one of the 
