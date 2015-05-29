@@ -56,6 +56,8 @@ which should be set to the height of your spacer in pixels.
 ## Example
 
 A complete example of a spacer block is shown below.
+
+
 ````json
     {
         "from" : "info@example.com",
