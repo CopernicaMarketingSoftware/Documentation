@@ -67,9 +67,9 @@ For all messages loaded from RabbitMQ, the AMQPipe process manager runs
 your program(s) or script(s) to process them. With the `plugin` variable
 you can specify the location of your script(s).
 
-````txt
+<pre><code>
 plugin:           /path/to/your/plugin
-````
+</code></pre>
 
 The path to you plugin should either be:
 
@@ -87,12 +87,12 @@ yourscript.php` for that):
 
 <pre class="language-php"><code class="language-php">
 #!/usr/bin/php
-<?php
+&lt;?php
 // read data from stdin
 $input = stream_get_contents(STDIN);
 
 // @todo add your own code
-?>
+?&gt;
 </code></pre>
 
 A special sort of plugins are _shared objects_. A shared object is written
