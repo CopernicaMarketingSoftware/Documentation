@@ -4,6 +4,8 @@ Inside a <a href="/support/json/property-link">`link`</a> property,
 you can assign an url. The link property `url` contains the actual link 
 address of the link. Thus, the internet address the user is redirected 
 to after clicking the link. 
+
+
 ````javascript
     {
         "subject" : "link example",
