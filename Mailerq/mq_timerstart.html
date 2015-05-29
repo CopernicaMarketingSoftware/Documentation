@@ -5,7 +5,7 @@
     with <a href="/documentation/mq_timerstop">MQ_TimerStop</a>.
 </p>
 
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Start a timer
  *
@@ -15,7 +15,7 @@
  *  @param  data        customer user data to provide to the callback
  */
 MQ_Timer *<a href="/documentation/mq_timerstart">MQ_TimerStart</a>(<a href="/documentation/mq_context">MQ_Context</a> *context, float timeout, void(*callback)(void *data), void *data);
-</pre>
+</code></pre>
 
 <p>
     Using timer functionality, we can amend the example for the
@@ -24,7 +24,7 @@ MQ_Timer *<a href="/documentation/mq_timerstart">MQ_TimerStart</a>(<a href="/doc
     at least five seconds.
 </p>
 
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 #include &lt;mailerq.h&gt;
 #include &lt;string.h&gt;
 #include &lt;stdio.h&gt;
@@ -134,4 +134,4 @@ void monitor(<a href="/documentation/mq_context">MQ_Context</a> *context)
     // and stop monitoring after five seconds
     timers.timer = <a href="/documentation/mq_timerstart">MQ_TimerStart</a>(context, 5.0, timer_callback, timers);
 }
-</pre>
+</code></pre>
