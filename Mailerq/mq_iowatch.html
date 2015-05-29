@@ -6,7 +6,7 @@
     the given callback will be invoked.
 </p>
 
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Monitor a file descriptor for activity
  *
@@ -17,7 +17,7 @@
  *  @param  data        custom data to supply to the callback
  */
 MQ_IOWatcher *<a href="/documentation/mq_iowatch">MQ_IOWatch</a>(<a href="/documentation/mq_context">MQ_Context</a> *context, int fd, int events, void(*callback)(MQ_IOWatcher *watcher, int fd, int events, void *data), void *data);
-</pre>
+</code></pre>
 
 <p>
     As an example, we will read from the standard input until an empty line
