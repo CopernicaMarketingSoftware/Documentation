@@ -11,7 +11,17 @@
 <div class="tabs">
     <h2>PHP</h2>
     <div>       
-            
+
+````php
+#!/usr/bin/php
+<?php
+// read data from stdin
+$input = stream_get_contents(STDIN);
+
+// @todo add your own code
+?>
+````
+
 ````php
 <?php
 // create curl resource
