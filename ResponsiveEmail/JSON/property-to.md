@@ -41,6 +41,7 @@ a JSON object with a `name` and `address` property. If you
 want to include more than one addresses, you
 can also use array values.
 
+
 ````json
 {
       "name": "My template",
@@ -73,6 +74,7 @@ can also use array values.
       }
 }
 ````
+
 
 The above example shows the different ways how you can set the `to`, `cc` and `bcc`
 properties: as string value, as object value or as an array. The array in turn may
