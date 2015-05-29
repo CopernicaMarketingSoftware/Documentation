@@ -5,6 +5,7 @@ blocks. The blocks inside the container block are displayed below eachother in
 a vertical fashion. It is thus best compared to a
 <a href="/support/json/block-columns">columns block</a> with only a single column.
 
+
 ````json
     {
         "from" : "info@example.com",
@@ -23,6 +24,7 @@ a vertical fashion. It is thus best compared to a
         }
     }
 ````
+
 Inside the block you can use sub properties. The following tables lists all supported properties.
 
 <table class="info">
