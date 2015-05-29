@@ -2,6 +2,8 @@
 
 The property `columns` accepts a JSON array, with a comma seperated list with JSON objects,
 containing the actual `blocks` inside the `columns`.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -31,6 +33,8 @@ containing the actual `blocks` inside the `columns`.
         }
     }
 ````
+
+
 The `columns` property has 2 mandatory properties: `size` and `blocks`. Because
 the API is based on  <a href="http://zurb.com/ink/docs.php" title="visit docs of
 the email boilerplate template">ZURB's INK boilerplate</a>, which is a 12 column
