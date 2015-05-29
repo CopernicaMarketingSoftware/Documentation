@@ -2,6 +2,8 @@
 
 The `label` property is used inside <a href="/support/json/block-button">button blocks</a>
 and should hold the visible text for the button.
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -14,5 +16,7 @@ and should hold the visible text for the button.
         }
     }
 ````
+
+
 For more information and more examples, please check the documentation
 of <a href="/support/json/block-button">button blocks</a>.
