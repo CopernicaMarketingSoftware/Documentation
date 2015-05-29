@@ -31,11 +31,11 @@ and `image`.
                 },
                 "columns" : [ {
                 
-                    /* your left column data */
+                    // your left column data 
                 
                 }, {
                 
-                    /* your right column data */
+                    // your right column data 
                 
                 } ]
             } ]
