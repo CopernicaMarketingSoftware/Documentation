@@ -5,6 +5,7 @@ script(s) will receive JSON input from AMQPipe instead of just the message
 bodies. Besides the message body, this JSON object also holds additional 
 information about the consumed message. The format of this input is as follows:
 
+
 ````javascript
 {
     "exchange":         "the exchange to which the message was original published",
@@ -26,6 +27,7 @@ information about the consumed message. The format of this input is as follows:
     "message":          "the full message body loaded from RabbitMQ"
 }
 ````
+
 
 Most of the above properties are optional, and are only included in the
 JSON if they were also set in the header frame of the consumed AMQP message. 
@@ -67,6 +69,7 @@ When you're writing a script that processes messages that were published
 by a different AMQPipe instance, you will typically see JSON messages
 like this one:
 
+
 ````javascript
 {
     "exchange":     "result-exchange",
@@ -84,6 +87,7 @@ like this one:
     "message":  "This is the script output"
 }
 ````
+
 
 Some of the fields are optional. For example, if the program was not killed
 by a signal, the `signal` property will not be included, and if no stderr
