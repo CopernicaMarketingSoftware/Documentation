@@ -7,6 +7,8 @@ in email clients, it is recommended keep your subject line to 50 characters
 or less.
 
 ## Example
+
+
 ````json
 {
   "name": "My template",
@@ -27,6 +29,7 @@ or less.
     }
 }
 ````
+
 
 ## Related information
 
