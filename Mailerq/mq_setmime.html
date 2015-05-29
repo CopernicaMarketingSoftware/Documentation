@@ -4,7 +4,7 @@
     <a href="/documentation/mq_message">MQ_Message</a>,
     you can use this function. This function sets the MIME data.
 </p>
-<pre class="prettyprint lang-c">
+<pre class="language-c"><code class="language-c">
 /**
  *  Update the MIME data
  *
@@ -13,7 +13,7 @@
  *  @param  size        length of the mime string
  */
 void <a href="/documentation/mq_setmime">MQ_SetMime</a>(<a href="/documentation/mq_message">MQ_Message</a> *message, const char *mime, size_t size);
-</pre>
+</code></pre>
 <p>
     This function has a different behavior if you call it on a message
     <i>that is being received</i> and on a message <i>that is being sent</i>.
