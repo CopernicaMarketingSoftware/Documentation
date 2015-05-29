@@ -14,6 +14,8 @@ small devices like those modern age Apple watches and Google glasses.
 Sending along a text version allegedly improves email deliverability.
 
 ## Example
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -27,6 +29,7 @@ Sending along a text version allegedly improves email deliverability.
         }
     }
 ````
+
 
 The above example shows the HTML input that will be transformed into a
 responsive email with two alternate versions: a pure text version and a HTML
