@@ -6,7 +6,7 @@
     one of the following four signatures, you can call it almost directly from PHP:
 </p>
 <p>
-<pre class="language-c++"><code>void example1();
+<pre class="language-cpp"><code>void example1();
 void example2(Php::Parameters &amp;params);
 Php::Value example3();
 Php::Value example4(Php::Parameters &amp;params);</code></pre>
@@ -27,7 +27,7 @@ Php::Value example4(Php::Parameters &amp;params);</code></pre>
     name by which the function becomes callable from within your PHP scripts.
 </p>
 <p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 #include &lt;iostream&gt;
 
 void myFunction()
@@ -55,7 +55,7 @@ extern "C" {
     want to return a value from your function?
 </p>
 <p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 #include &lt;stdlib.h&gt;
 
 Php::Value myFunction()
@@ -117,7 +117,7 @@ string
     The following function takes a variable number of parameters, 
     and sums up the integer value of all the parameters:
 </p>
-<pre class="language-c++"><code>#include &lt;phpcpp.h&gt;
+<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
 
 Php::Value sum_everything(Php::Parameters &parameters)
 {
