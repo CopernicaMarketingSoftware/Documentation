@@ -21,7 +21,7 @@ AMQPipe connects to a RabbitMQ message broker to load messages. The address
 of this message broker should be set using the following variables in the
 config file:
 
-````
+````txt
 rabbitmq-host:      localhost
 rabbitmq-user:      guest
 rabbitmq-password:  guest
@@ -41,7 +41,7 @@ about your script, will be put back in RabbitMQ. In the configuration file
 you can set the name of the queue from which message are loaded, and the name
 of the exchange to which the generated messages are published.
 
-````
+````txt
 rabbitmq-queue:     myqueue
 rabbitmq-exchange:  myexchange
 ````
@@ -86,13 +86,13 @@ and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
 ````php
-&num;!/usr/bin/php
-&lt;?php
+#!/usr/bin/php
+<?php
 // read data from stdin
 $input = stream_get_contents(STDIN);
 
 // @todo add your own code
-?&gt;
+?>
 ````
 
 A special sort of plugins are _shared objects_. A shared object is written
