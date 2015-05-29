@@ -4,7 +4,7 @@ The property `columns` is a nested property that is used inside a
 <a href="/support/json/block-columns">columns block</a>. It expects
 a JSON array as value, with a list of JSON objects. Each object 
 in this array describes the contents of a single column.
-
+<pre><code>
     {
         "from" : "info@example.com",
         "subject" : "Email with two text blocks side by side",
@@ -32,7 +32,7 @@ in this array describes the contents of a single column.
             } ]
         }
     }
-
+</code></pre>
 
 The above example holds an email with a single block. This block 
 happens to be a `columns` block, that splits the mail in two columns.
