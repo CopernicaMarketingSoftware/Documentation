@@ -31,8 +31,9 @@
     then directly picked up again and scheduled for immediate forwarding.
 </p>
 <p>
-    <img class="screenshot" src="/Resources/Images/mailerq-shared-inbox-outbox-queue.png"/ alt="MailerQ shared inbox outbox queue">
+    <img class="screenshot" src="/Resources/Images/mailerq-shared-inbox-outbox-queue.png" alt="MailerQ shared inbox outbox queue"/>
 </p>
+<p>
     Because MailerQ stores all incoming mails first in a message queue, you
     can add intermediate scripts that process the messages before they
     are forwarded. If you want to add a script that does additional processing
@@ -82,7 +83,7 @@
     created a few examples</a> for commonly used languages.
 </p>
 <p>
-    <img class="screenshot" src="/Resources/Images/mailerq-put-it-in-rabbitmq.png"/ alt="MailerQ put it in RabbitMQ">
+    <img class="screenshot" src="/Resources/Images/mailerq-put-it-in-rabbitmq.png" alt="MailerQ put it in RabbitMQ"/>
 </p>
 <p>
     On top of that, if you publish the messages directly to a message queue,
@@ -252,9 +253,9 @@ x-mq-maxdelivertime: 2013-05-01 00:00:00
 
 Example email data.
 Email data ends when a single dot followed by new line character is send.
-.
-</code></pre>
+        </code></pre>
     </div>
+</p>
 <h3>Sending emails from file</h3>
 <p>
     Because MailerQ reads in messages from standard input, you can use regular unix
@@ -309,7 +310,9 @@ Email data ends when a single dot followed by new line character is send.
 </p>
 <h4>MIME header</h4>
 <p>
-    <div class="codeBox"><pre><code>x-mq-envelope: my-sender-address@my-domain.com</code></pre>
+    <div class="codeBox">
+        <pre><code>x-mq-envelope: my-sender-address@my-domain.com</code></pre>
+    </div>
 </p>
 <h4>JSON property</h4>
 <p>
