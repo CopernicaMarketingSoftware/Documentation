@@ -6,6 +6,7 @@ can retrieve the plain text representation using this method. This will simply r
 
 ## Example request
 
+
 ```txt
     GET /v1/template/2345/text?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -17,6 +18,7 @@ can retrieve the plain text representation using this method. This will simply r
 
     This is the text version of the email.
 ```
+
 
 ## Personalization
 
