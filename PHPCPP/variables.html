@@ -60,7 +60,7 @@
     To create such a scalar variable, just assign it to a Php::Value object.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 Php::Value value1 = 1234;
 Php::Value value2 = "this is a string";
 Php::Value value3 = std::string("another string");
@@ -76,7 +76,7 @@ Php::Value value6 = true;
     assign it.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 void myFunction(const Php::Value &amp;value)
 {
     int value1 = value;
@@ -97,7 +97,7 @@ void myFunction(const Php::Value &amp;value)
     or send it to an output stream.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 void myFunction(Php::Value &amp;value)
 {
     value += 10;
@@ -119,7 +119,7 @@ void myFunction(Php::Value &amp;value)
     converted into a Php::Value object by the compiler.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 Php::Value myFunction(const Php::Value &amp;value)
 {
     if (value == 12)
@@ -160,7 +160,7 @@ Php::Value myFunction(const Php::Value &amp;value)
     the pointer to the buffer is no longer guaranteed to be valid.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 /**
  *  Example function
  *  @param  params
@@ -189,7 +189,7 @@ void myFunction(Parameters &amp;params)
     access to the buffer.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 /**
  *  Example function to read bytes from a filedescriptor, and
  *  return it as a Php::Value object
@@ -262,7 +262,7 @@ Php::Value readExample2(int fd)
     values to a Php::Value object, you automatically turn it into an array.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // create a regular array
 Php::Value array;
 array[0] = "apple";
@@ -306,7 +306,7 @@ std::map&lt;std::string,std::string&gt; map = assoc2;
     operators (square brackets) for this too.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 Php::Value array;
 array["x"] = 10;
 array["y"] = 20;
@@ -321,7 +321,7 @@ Php::out &lt;&lt; array["y"] &lt;&lt; std::endl;
     Php::Value objects that by default construct to NULL values).
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // create empty array
 Php::Array array1;
 
@@ -340,7 +340,7 @@ array1 = 100;
     most simple class.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // create empty object of type stdClass
 Php::Object object;
 
@@ -376,7 +376,7 @@ Php::out &lt;&lt; value.call("format", "Y-m-d H:i:s") &lt;&lt; std::endl;
     two types.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 #include &lt;phpcpp.h&gt;
 
 class MyClass : public Php::Base
@@ -454,7 +454,7 @@ class MyClass : public Php::Base
     just like you would iterate over a std::map class.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 /**
  *  Function that accepts an array as parameter
  *  @param  array
@@ -515,7 +515,7 @@ void myFunction(const Php::Value &amp;value)
     to call this function or method.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // create a string with a function name
 Php::Value date = "date";
 
@@ -544,7 +544,7 @@ Php::out &lt;&lt; array("Y-m-d H:i:s") &lt;&lt; std::endl;
     variable in a PHP script.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // set a global PHP variable
 Php::GLOBALS["a"] = 12345;
 
@@ -567,7 +567,7 @@ Php::out &lt;&lt; Php::GLOBALS["b"] &lt;&lt; std::endl;
     method. You can thus access them as if it were associative arrays.
 </p>
 <p>
-<pre class="language-c++"><code>
+<pre class="language-cpp"><code>
 // retrieve the value of a request variable
 int age = Php::REQUEST["name"];
 
