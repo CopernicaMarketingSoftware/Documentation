@@ -86,7 +86,7 @@ and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
 <pre class="language-php"><code class="language-php">
-&num!/usr/bin/php
+&num;!/usr/bin/php
 &lt;?php
 // read data from stdin
 $input = stream_get_contents(STDIN);
