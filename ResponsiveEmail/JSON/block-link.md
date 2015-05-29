@@ -85,6 +85,8 @@ In this block you can set `label`, `title` and `link` properties.
 ## Example
 
 The following fragment of JSON would render into a fully functional hyperlink
+
+
 ````json
     {
         "from" : "info@example.com",
@@ -101,5 +103,7 @@ The following fragment of JSON would render into a fully functional hyperlink
         }
     }
 ````
+
+
 **An important remark**: instead of adding a `link` property, the system is
 able to interpret correctly a string containing the url.
