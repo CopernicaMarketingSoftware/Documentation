@@ -11,69 +11,16 @@
     either:
 </p>
 <ul>
-    <li>use MailerQ's <a href="/documentation/send-email#Smtp" title="SMTP">built-in SMTP server</a></li>
     <li>write a program or script that <a href="/documentation/send-email#Amqp" title="AMQP">directly adds
     a JSON encoded email</a> to the outbox message queue</li>
+    <li>use MailerQ's <a href="/documentation/send-email#Smtp" title="SMTP">built-in SMTP server</a></li>
     <li>use MailerQ to <a href="/documentation/send-email#Cli">read messages from standard input</a></li>
 </ul>
-<h2 id="Smtp">Using the built-in SMTP server</h2>
-<p>
-    MailerQ opens a SMTP port and all messages sent to it are automatically
-    added to a message queue, where they are then picked up and delivered to
-    the recipients. To send email with MailerQ, you simply need to configure
-    your servers and/or software to use MailerQ as SMTP server.
-</p>
-<p>
-    In MailerQ's <a href="/documentation/configuration" title="MailerQ configuration" >config file</a> you
-    can set to which queue emails received by MailerQ are published. Most
-    users set this to the same value as the outbox queue, so that all received
-    emails are automatically published to the outbox queue, from which they are
-    then directly picked up again and scheduled for immediate forwarding.
-</p>
-<p>
-    <img class="screenshot" src="/Resources/Images/mailerq-shared-inbox-outbox-queue.png" alt="MailerQ shared inbox outbox queue"/>
-</p>
-<p>
-    Because MailerQ stores all incoming mails first in a message queue, you
-    can add intermediate scripts that process the messages before they
-    are forwarded. If you want to add a script that does additional processing
-    or filtering before a message is forwarded, you can configure MailerQ
-    to publish the received mails in an inbox queue, and write your
-    own scripts that read the messages from this inbox queue, process or filter
-    them, and that post the messages to the outbox queue where MailerQ
-    can pick them up and deliver them.
-</p>
-<p>
-    <img class="screenshot" src="/Resources/Images/mailerq-seperate-inbox-outbox-queues.png" alt="MailerQ seperate inbox outbox queues"/>
-</p>
-<p>
-    Note that if you use an external message store (like Couchbase, MongoDB, etc.)
-    for storing the MIME bodies, the data that MailerQ stores in the inbox queue 
-    only contains a key to the MIME in the message store, and not the actual 
-    MIME itself.
-</p>
-<h3>SMTP and multiple IP addresses</h3>
-<p>
-    If you run MailerQ on a server with multiple IP addresses, the SMTP server
-    is available on all those addresses too. You can thus choose to which IP address
-    to send your mail. MailerQ recognizes the IP address to which the mail was originally
-    submitted, stores that information in the JSON message, and when the mail is
-    finally forwarded to the internet, it will be sent out from
-    <i>exactly the same</i> IP address.
-    You should be aware that this can cause problems if you deliver your email
-    to an IP address from which no external connections can be made (like
-    <a href="http://en.wikipedia.org/wiki/Localhost" target="_blank" rel="nofollow">127.0.0.1</a>).
-</p>
-<p>
-    If you want MailerQ to send out the mail from a different IP address than that
-    you originally sent it to, you can include <a href="/documentation/send-email#localips">an extra mime header field</a> that
-    instructs MailerQ to use a different IP instead.
-</p>
 <h2 id="Amqp">Post email directly to the AMQP message queue</h2>
 <p>
-    To send an email with MailerQ you can also bypass the SMTP server and publish
-    a JSON encoded message directlty to the outbox queue. This is not so difficult.
-    After all, JSON is a
+    Because MailerQ fetches all messages from a RabbitMQ message queue, the fastest
+    way to inject emails is by having your application publish the mails
+    directly to RabbitMQ. This is not difficult. After all, JSON is a
     <a href="http://www.json.org" target="_blank" rel="nofollow">widely known data format</a> that can be
     easily created and processed by almost every programming language there is,
     and the message queue can be easily accessed (add messages, remove messages)
@@ -165,9 +112,59 @@
     <a href="/documentation/responsive-email">creating responsive emails with MailerQ</a>.
 </p>
 <p>
-    As we said, you need a special license to use this feature. If you
-    do not have such a special license, you will have to create the MIME
+    As we said, you need a special license to use this "responsive email" feature. If you
+    do not have such a special license, you can of course still inject emails
+    in the message queue, but will have to create the MIME string
     yourself, and you can only assign strings to the JSON "mime" property.
+</p>
+
+<h2 id="Smtp">Using the built-in SMTP server</h2>
+<p>
+    If you do not want to inject mails directly into the RabbitMQ message queue,
+    you can also send emails to the SMTP port that is opened by MailerQ.
+    All messages sent to this port are received by MailerQ and are automatically
+    published to a message queue, where they will then be picked up and delivered to
+    the recipients.
+</p>
+<p>
+    In MailerQ's <a href="/documentation/configuration" title="MailerQ configuration" >config file</a> you
+    can set to which queue emails received by MailerQ are published. Most
+    users set this to the same value as the outbox queue, so that all received
+    emails are automatically published to the outbox queue, from which they are
+    then directly picked up again and scheduled for immediate forwarding.
+</p>
+<p>
+    <img class="screenshot" src="/Resources/Images/mailerq-shared-inbox-outbox-queue.png" alt="MailerQ shared inbox outbox queue"/>
+</p>
+<p>
+    Because MailerQ stores all incoming mails first in a message queue, you
+    can add intermediate scripts that process the messages before they
+    are forwarded. If you want to add a script that does additional processing
+    or filtering before a message is forwarded, you can configure MailerQ
+    to publish the received mails in an inbox queue, and write your
+    own scripts that read the messages from this inbox queue, process or filter
+    them, and that post the messages to the outbox queue where MailerQ
+    can pick them up and deliver them.
+</p>
+<p>
+    <img class="screenshot" src="/Resources/Images/mailerq-seperate-inbox-outbox-queues.png" alt="MailerQ seperate inbox outbox queues"/>
+</p>
+<h3>SMTP and multiple IP addresses</h3>
+<p>
+    If you run MailerQ on a server with multiple IP addresses, the SMTP server
+    is available on all those addresses too. You can thus choose to which IP address
+    to send your mail. MailerQ recognizes the IP address to which the mail was originally
+    submitted, stores that information in the JSON message, and when the mail is
+    finally forwarded to the internet, it will be sent out from
+    <i>exactly the same</i> IP address.
+    You should be aware that this can cause problems if you deliver your email
+    to an IP address from which no external connections can be made (like
+    <a href="http://en.wikipedia.org/wiki/Localhost" target="_blank" rel="nofollow">127.0.0.1</a>).
+</p>
+<p>
+    If you want MailerQ to send out the mail from a different IP address than that
+    you originally sent it to, you can include <a href="/documentation/send-email#localips">an extra mime header field</a> that
+    instructs MailerQ to use a different IP instead.
 </p>
 <h2 id="Cli">MailerQ as command line utility</h2>
 <p>
@@ -383,6 +380,35 @@ Email data ends when a single dot followed by new line character is send.
     "recipient": "info@example.org",
     "mime": "...",
     "maxattempts": 3
+}           </code></pre>
+    </div>
+</p>
+<h3 id="inlinecss">Inlinize CSS</h3>
+<p>
+    When you send out HTML emails, you face the problem that not all email
+    clients support stylesheets that are set in the header. Some email clients
+    (especially web based clients) strip out the CSS code from the HTML header.
+    This often messes up the layout and look of your messages.
+    To overcome this, it is better not to set CSS settings in the header in
+    the first place, but use 'style="..."' attributes in the HTML code instead.
+</p>
+<p>
+    MailerQ can do this automatically. If you set the "inlinecss" property to
+    true, MailerQ parses the HTML email, and converts the CSS code from the
+    HTML header into inline 'style="..."' attributes in the HTML body.
+</p>
+<h4>MIME header</h4>
+<p>
+    <div class="codeBox"><pre><code>x-mq-inlinecss: true</code></pre></div>
+</p>
+<h4>JSON property</h4>
+<p>
+    <div class="codeBox">
+        <pre class="language-javascript"><code class="language-javascript">{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "inlinecss": true
 }           </code></pre>
     </div>
 </p>
