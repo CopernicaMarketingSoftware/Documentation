@@ -21,3 +21,30 @@
     SMTP AUTH PLAIN or SMTP AUTH LOGIN method with one of your
     <a href="/app/#/admin/smtp-credentials">SMTP credentials</a>
 </p>
+
+<h2>Setup SENDER ID</h2>
+
+<p>
+    If you utilise SPF for a domain you would like to send mail
+    from through SMTPeter, you should include the SMTPeter
+    IP-addresses to make sure the mail is not regarded as spam.
+</p>
+
+<p>
+    To make this easier (and since the IP-addresses that SMTPeter
+    sends from can change), we have set up a SPF record that can
+    be included, so you automatically keep the latest - and correct -
+    version.
+</p>
+
+<p>
+    To include all the SMTPeter IP-addresses, add the following
+    TXT - and if possible SPF - record on your domain.
+</p>
+
+<pre><code>"v=spf1 include:_senderspf.smtpeter.com a mx ~all"</code></pre>
+
+<p>
+    Of course, you can also allow your own IP addresses. For more
+    information, view the <a href="http://www.openspf.org/">OpenSPF website</a>
+</p>
