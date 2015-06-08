@@ -1,8 +1,19 @@
 <h1>Using SMTPeter</h1>
 
 <p>
-    To use SMTPeter, your software must support the SMTP protocol,
-    have support for TLS and support authentication.
+    Using SMTPeter is very simple, it works exactly like any
+    normal mailserver would do - e.g. that of an I.S.P.
+</p>
+
+<p>
+    Because of this, SMTPeter could be used through standard
+    desktop email programs like Thunderbird, Evolution or
+    Apple Mail.
+</p>
+
+<p>
+    To send mail through SMTPeter, configure your chosen
+    e-mail client with the following settings:
 </p>
 
 <dl>
@@ -17,10 +28,34 @@
 </dl>
 
 <p>
-    Your software must be configured to login using either the
-    SMTP AUTH PLAIN or SMTP AUTH LOGIN method with one of your
-    <a href="/app/#/admin/smtp-credentials">SMTP credentials</a>
+    To prevent spam from being sent, we require authentication
+    before being allowed to send out messages. To authenticate
+    with SMTPeter, configure your client to authenticate either
+    using AUTH PLAIN or AUTH LOGIN.
 </p>
+
+<h2>Using SMTPeter as a smart host</h2>
+
+<p>
+    If you are already using an MTA and want to avoid changing
+    the way that different applications send out mail, the MTA
+    could likely be configured to use SMTPeter as a smart host.
+</p>
+
+<p>
+    In a smart host setup, your application still connects to
+    the already existing MTA. The MTA will then - instead of
+    directly delivering the mail itself - deliver it to
+    SMTPeter.
+<p>
+
+<p>
+    This way, you get the best of both worlds. Connect times
+    are very low (because the MTA is likely local), which is
+    ideal when making many connections for single mail delivery,
+    while SMTPeter takes care of the actual email delivery,
+    throttling according to the speed of the receiving mail
+    server.
 
 <h2>Setup SENDER ID</h2>
 
