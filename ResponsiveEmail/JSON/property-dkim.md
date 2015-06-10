@@ -74,9 +74,6 @@ was correctly signed.
     }
 ````
 
-To help readability, we have shortened the private key in the above 
-example. 
-
 If you want to add multiple signatures to an email, you can specify
 multiple DKIM signatures:
 
@@ -104,3 +101,7 @@ multiple DKIM signatures:
         }
     }
 ````
+
+To help readability, we have shortened the private key in the two
+examples. 
+
