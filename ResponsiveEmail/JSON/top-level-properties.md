@@ -110,6 +110,11 @@ There are three 'basic' top level properties:
             <td><em>array</em></td>
             <td>Attachments to download and add to the email.</td>
         </tr>
+        <tr>
+            <td><a href="/support/json/property-dkim">dkim</a></td>
+            <td><em>object</em></td>
+            <td>Private key for DKIM signature.</td>
+        </tr>
     </tbody>
     <a class="anchor" name="content-and-style-properties"></a>
     <thead>
