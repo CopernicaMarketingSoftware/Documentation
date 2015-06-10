@@ -45,7 +45,10 @@ that you normally see in private keys, although it is allowed.
 </table>
 
 For a valid signature, you need to specify a domain, selector and 
-private key. When a receiving party receives a signed email, it will
+private key. The hashing algorithm is optional. If it is not set,
+the "sha256" algorithm is used. 
+
+When a receiving party receives a signed email, it will
 use the domain and selector to do a DNS lookup to retrieve
 the _public_ key. With this public key it can verify whether the email
 was correctly signed.
@@ -103,5 +106,5 @@ multiple DKIM signatures:
 ````
 
 To help readability, we have shortened the private key in the two
-examples. 
+above examples. 
 
