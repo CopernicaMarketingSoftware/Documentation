@@ -46,7 +46,7 @@ that you normally see in private keys, although it is allowed.
 
 For a valid signature, you need to specify a domain, selector and 
 private key. When a receiving party receives a signed email, it will
-do a DNS lookup for the "selector._domainkey.domain" domain to retrieve
+use the domain and selector to do a DNS lookup to retrieve
 the _public_ key. With this public key it can verify whether the email
 was correctly signed.
 
