@@ -290,6 +290,7 @@
         <li><strong>idle</strong> - Remote peer closed the connection because MailerQ was idle for too long</li>
         <li><strong>overflow</strong> - The remote peer sent an answer that was (way) too long for the SMTP protocol</li>
         <li><strong>tls</strong> - Failed to setup a secure socket connection</li>
+        <li><strong>responsive</strong> - Failed to generate a responsive email</li>
     </ul>
 </p>
 <p>
@@ -310,7 +311,7 @@
     has not been configured correctly.
 </p>
 <p>
-    In normal operations, you will most likely run into this error for wronly 
+    In normal operations, you will most likely run into this error for wrongly 
     entered email addresses (example,org instead of example.org).
 </p>
 <p>
@@ -476,6 +477,12 @@
     To send connections over a secure connection, MailerQ and the receiving server
     have to perform a handshake operation. If something goes wrong during this
     handshake, the "tls" error type is reported. This is a non-fatal error.
+</p>
+<h2>Result type "responsive"</h2>
+<p>
+    MailerQ failed to generate a responsive email. This could be caused by images
+    inside the responsive email json that failed to download, personalization errors.
+    The reasons it failed to generated will be placed inside a array called "reasons".
 </p>
 <h2>SMTP states explained</h2>
 <p>
