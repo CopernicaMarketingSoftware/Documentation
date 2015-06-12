@@ -140,14 +140,14 @@ Will output:
 
 Below is a table that summarizes what kind of top-level variables are available for given targets.
 
-| Variable/Target | Customers list | Orders list | Quotes list | Subscribers list | Persons list |
-|:----------------|:--------------:|:-----------:|:-----------:|:----------------:|:------------:|
-| $magento        | Yes            | Yes         | Yes         | Yes              | Yes          |
-| $customer       | Yes            | Yes         | Yes         | No               | Yes and No   |
-| $quote          | No             | Yes         | Yes         | No               | No           |
-| $order          | No             | Yes         | No          | No               | No           |
-| $subscriber     | No             | No          | No          | Yes              | No           |
-| $person         | No             | No          | No          | No               | Yes          |
+| Variable/Target | Variable type                                                                            | Customers list | Orders list | Quotes list | Subscribers list | Persons list |
+|:----------------|:----------------------------------------------------------------------------------------:|:--------------:|:-----------:|:-----------:|:----------------:|:------------:|
+| $magento        | [Magento](#/menu/documentation/MarketingSuite/magento-integration/object/Magento)        | Yes            | Yes         | Yes         | Yes              | Yes          |
+| $customer       | [Customer](#/menu/documentation/MarketingSuite/magento-integration/object/Customer)      | Yes            | Yes         | Yes         | No               | Yes and No   |
+| $quote          | [Quote](#/menu/documentation/MarketingSuite/magento-integration/object/Quote)            | No             | Yes         | Yes         | No               | No           |
+| $order          | [Order](#/menu/documentation/MarketingSuite/magento-integration/object/Order)            | No             | Yes         | No          | No               | No           |
+| $subscriber     | [Subscriber](#/menu/documentation/MarketingSuite/magento-integration/object/Subscriber)  | No             | No          | No          | Yes              | No           |
+| $person         | [Person](#/menu/documentation/MarketingSuite/magento-integration/object/Person)          | No             | No          | No          | No               | Yes          |
 
 ## Personalization objects
 
@@ -155,14 +155,14 @@ To personalize templates it's required to use predefined objects. It's very clos
 
 Below is a list of object types that can be returned from various properties:
 
-* [Address](#/menu/documentation/MarketingSuite/magento-integration/Address)
-* [Category](#/menu/documentation/MarketingSuite/magento-integration/Category)
-* [Customer](#/menu/documentation/MarketingSuite/magento-integration/Customer)
-* [Order](#/menu/documentation/MarketingSuite/magento-integration/Order)
-* [OrderItem](#/menu/documentation/MarketingSuite/magento-integration/OrderItem)
-* [Person](#/menu/documentation/MarketingSuite/magento-integration/Person)
-* [Product](#/menu/documentation/MarketingSuite/magento-integration/Product)
-* [Quote](#/menu/documentation/MarketingSuite/magento-integration/Quote)
-* [QuoteItem](#/menu/documentation/MarketingSuite/magento-integration/QuoteItem)
-* [Subscriber](#/menu/documentation/MarketingSuite/magento-integration/Subscriber)
-* [Webstore](#/menu/documentation/MarketingSuite/magento-integration/Webstore)
+* [Address](#/menu/documentation/MarketingSuite/magento-integration/object/Address)
+* [Category](#/menu/documentation/MarketingSuite/magento-integration/object/Category)
+* [Customer](#/menu/documentation/MarketingSuite/magento-integration/object/Customer)
+* [Order](#/menu/documentation/MarketingSuite/magento-integration/object/Order)
+* [OrderItem](#/menu/documentation/MarketingSuite/magento-integration/object/OrderItem)
+* [Person](#/menu/documentation/MarketingSuite/magento-integration/object/Person)
+* [Product](#/menu/documentation/MarketingSuite/magento-integration/object/Product)
+* [Quote](#/menu/documentation/MarketingSuite/magento-integration/object/Quote)
+* [QuoteItem](#/menu/documentation/MarketingSuite/magento-integration/object/QuoteItem)
+* [Subscriber](#/menu/documentation/MarketingSuite/magento-integration/object/Subscriber)
+* [Webstore](#/menu/documentation/MarketingSuite/magento-integration/object/Webstore)
