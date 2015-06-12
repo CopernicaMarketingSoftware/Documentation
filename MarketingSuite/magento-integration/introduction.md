@@ -1,7 +1,7 @@
 # Introduction
 
 Each Copernica account comes with ability to send mailings based on Magento related targets. Thus, for proper options to show up initial synchronization should be performed. To do so, particular Magento webshop installation has to be extended with [Magento Integration](http://www.magentocommerce.com/magento-connect/copernica.html). 
-It's strongly recommended to install integration with Magento Connect platform as it offers a automated way of installation. Alternatively, [GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) version is available for manual or automated deployment.
+It's strongly recommended to install integration with Magento Connect platform as it offers a automated way of installation. Alternatively, [GitHub](https://github.com/CopernicaMarketingSoftware/MAGENTO) version is available for manual or automated deployment.
 After successful installation extension should start data sync with Copernica account and Magento related functionalities will show up in Marketing Suite
 
 [insert image of side menu before and after magento sync is enabled]
