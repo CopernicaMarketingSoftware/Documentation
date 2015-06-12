@@ -35,7 +35,7 @@ In this screen you can fine tune mailing target options. Each target type has sp
 
 Customers list provides targets that are customers in Magento environment. That means users that are registered. Thus user that bought something is a customer, but also a user that only registered is also a customer.
 
-Each mailing target is a (Magento Customer)[#/menu/documentation/magento/customer].
+Each mailing target is a [Magento Customer](#/menu/documentation/magento/customer).
 
 Customer list can have following filter options:
 * **First name**
@@ -52,7 +52,7 @@ Customer list can have following filter options:
 
 Order list provides targets that are real orders in Magento environment. That means all baskets that were finalized (user checked out). 
 
-Each mailing target is a (Magento Order)[#/menu/documentation/magento/order].
+Each mailing target is a [Magento Order](#/menu/documentation/magento/order).
 
 Order list can have following filter options:
 * **Quote Id**
@@ -71,7 +71,7 @@ Order list can have following filter options:
 
 Quotes list provides targets that are quotes/baskets. Note that only quotes that have access to email address will be synchronized. Another note is that every order is also a quote.
 
-Each mailing target is a (Magento Quote)[#/menu/documentation/magento/quote].
+Each mailing target is a [Magento Quote](#/menu/documentation/magento/quote).
 
 Quotes list can have following filter options:
 * **Active/inactive**
@@ -92,7 +92,7 @@ Quotes list can have following filter options:
 
 Subscribers list provides targets that are subscribers. Magento has an internal list of subscribers that is also synchronized with Copernica. That has two benefits. Any way that Magento provides for subscribing for newsletter will be honored by Copernica also. Also changes made by any extension using core Magento newsletter module will be honored.
 
-Each mailing target is a (Magento Subscriber)[#/menu/documentation/magento/subscriber]
+Each mailing target is a [Magento Subscriber](#/menu/documentation/magento/subscriber)
 
 Subscribers list can have following filter options:
 * **Subscriptions status**
@@ -106,7 +106,7 @@ Subscribers list can have following filter options:
 Persons list is Copernica specific list. Each entity from that list will be build of compiled information about certain person. What does that mean? For example, when we have a customer that registers for it's first order giving additional informations like address, a new person is created. Later on that user can decide to make a purchase as a guest. Internally for Magento those are two separate users. Thus, when we see that email addresses are the same we can assume that they are the same person. 
 Information about that user will be compiled to present most recent ones.
 
-Each mailing target is a (Magento Person)[#/menu/documentation/magento/person]
+Each mailing target is a [Magento Person](#/menu/documentation/magento/person)
 
 Persons list can have following filter options:
 * **First name**
