@@ -155,14 +155,14 @@ To personalize templates it's required to use predefined objects. It's very clos
 
 Below is a list of object types that can be returned from various properties:
 
-* (Address)[#/menu/documentation/MarketingSuite/magento-integration/Address]
-* (Category)[#/menu/documentation/MarketingSuite/magento-integration/Category]
-* (Customer)[#/menu/documentation/MarketingSuite/magento-integration/Customer]
-* (Order)[#/menu/documentation/MarketingSuite/magento-integration/Order]
-* (OrderItem)[#/menu/documentation/MarketingSuite/magento-integration/OrderItem]
-* (Person)[#/menu/documentation/MarketingSuite/magento-integration/Person]
-* (Product)[#/menu/documentation/MarketingSuite/magento-integration/Product]
-* (Quote)[#/menu/documentation/MarketingSuite/magento-integration/Quote]
-* (QuoteItem)[#/menu/documentation/MarketingSuite/magento-integration/QuoteItem]
-* (Subscriber)[#/menu/documentation/MarketingSuite/magento-integration/Subscriber]
-* (Webstore)[#/menu/documentation/MarketingSuite/magento-integration/Webstore]
+* [Address](#/menu/documentation/MarketingSuite/magento-integration/Address)
+* [Category](#/menu/documentation/MarketingSuite/magento-integration/Category)
+* [Customer](#/menu/documentation/MarketingSuite/magento-integration/Customer)
+* [Order](#/menu/documentation/MarketingSuite/magento-integration/Order)
+* [OrderItem](#/menu/documentation/MarketingSuite/magento-integration/OrderItem)
+* [Person](#/menu/documentation/MarketingSuite/magento-integration/Person)
+* [Product](#/menu/documentation/MarketingSuite/magento-integration/Product)
+* [Quote](#/menu/documentation/MarketingSuite/magento-integration/Quote)
+* [QuoteItem](#/menu/documentation/MarketingSuite/magento-integration/QuoteItem)
+* [Subscriber](#/menu/documentation/MarketingSuite/magento-integration/Subscriber)
+* [Webstore](#/menu/documentation/MarketingSuite/magento-integration/Webstore)
