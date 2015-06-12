@@ -37,7 +37,16 @@ Customers list provides targets that are customers in Magento environment. That 
 
 Each mailing target is a (Magento Customer)[#/menu/documentation/magento/customer].
 
-
+Customer list can have following filter options:
+* **First name**
+* **Middle name**
+* **Prefix**
+* **Last name**
+* **Email address**
+* **Customer group**
+* **Gender**
+* **Subscription status**
+* **Web store**
 
 ### Magento orders list
 
@@ -45,11 +54,39 @@ Order list provides targets that are real orders in Magento environment. That me
 
 Each mailing target is a (Magento Order)[#/menu/documentation/magento/order].
 
+Order list can have following filter options:
+* **Quote Id**
+* **Customer Id**
+* **State**
+* **Status**
+* **Quantity**
+* **Total weight**
+* **Bought product**
+* **Product's category**
+* **Web store**
+* **Currency**
+* **IP address**
+
 ### Magento quotes list
 
 Quotes list provides targets that are quotes/baskets. Note that only quotes that have access to email address will be synchronized. Another note is that every order is also a quote.
 
 Each mailing target is a (Magento Quote)[#/menu/documentation/magento/quote].
+
+Quotes list can have following filter options:
+* **Active/inactive**
+* **Customer Id**
+* **Quantity**
+* **Weight**
+* **Total weight**
+* **Chosen product**
+* **Product's category**
+* **Web store**
+* **Currency**
+* **IP address** 
+* **Last modification date**
+* **Finalized**
+* **Empty/with items**
 
 ### Magento subscribers list
 
@@ -57,9 +94,26 @@ Subscribers list provides targets that are subscribers. Magento has an internal 
 
 Each mailing target is a (Magento Subscriber)[#/menu/documentation/magento/subscriber]
 
+Subscribers list can have following filter options:
+* **Subscriptions status**
+* **Customer Id**
+* **Web store**
+* **Only guest subscribers**
+* **Only registered users**
+
 ### Magento persons list
 
 Persons list is Copernica specific list. Each entity from that list will be build of compiled information about certain person. What does that mean? For example, when we have a customer that registers for it's first order giving additional informations like address, a new person is created. Later on that user can decide to make a purchase as a guest. Internally for Magento those are two separate users. Thus, when we see that email addresses are the same we can assume that they are the same person. 
 Information about that user will be compiled to present most recent ones.
 
 Each mailing target is a (Magento Person)[#/menu/documentation/magento/person]
+
+Persons list can have following filter options:
+* **First name**
+* **Middle name**
+* **Prefix**
+* **Last name**
+* **Email address**
+* **Gender**
+* **Subscription status**
+* **Web store**
