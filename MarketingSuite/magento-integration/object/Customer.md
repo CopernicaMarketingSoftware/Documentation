@@ -1,6 +1,6 @@
 #Customer object
 
-Customer object is a Magento registered user. It doesn't mean that such object has any orders, baskets, subscriptions or any other kind of data. As a minimum it should have an Id. With normal Magento installation customer is also have an email address, but when using extension that modify register/login process email address could be empty.
+Customer object is a Magento registered user. It doesn't mean that such object has any orders, baskets, subscriptions or any other kind of data. As a minimum it should have an Id. With normal Magento installation customer is also have an email address, but when using extension that alters register/login process email address could be empty.
 
 ## Personalization properties
 
