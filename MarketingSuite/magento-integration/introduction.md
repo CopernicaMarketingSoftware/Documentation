@@ -141,7 +141,7 @@ Will output:
 Below is a table that summarizes what kind of top-level variables are available for given targets.
 
 | Variable/Target | Variable type                                                                            | Customers list | Orders list | Quotes list | Subscribers list | Persons list |
-|:----------------|:----------------------------------------------------------------------------------------:|:--------------:|:-----------:|:-----------:|:----------------:|:------------:|
+|:----------------|:-----------------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:------------:|
 | $magento        | [Magento](#/menu/documentation/MarketingSuite/magento-integration/object/Magento)        | Yes            | Yes         | Yes         | Yes              | Yes          |
 | $customer       | [Customer](#/menu/documentation/MarketingSuite/magento-integration/object/Customer)      | Yes            | Yes         | Yes         | No               | Yes and No   |
 | $quote          | [Quote](#/menu/documentation/MarketingSuite/magento-integration/object/Quote)            | No             | Yes         | Yes         | No               | No           |
