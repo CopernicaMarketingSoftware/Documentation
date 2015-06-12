@@ -146,5 +146,23 @@ Below is a table that summarizes what kind of top-level variables are available 
 | $customer       | Yes            | Yes         | Yes         | No               | Yes and No   |
 | $quote          | No             | Yes         | Yes         | No               | No           |
 | $order          | No             | Yes         | No          | No               | No           |
-| $subscrib       | No             | No          | No          | Yes              | No           |
+| $subscriber     | No             | No          | No          | Yes              | No           |
 | $person         | No             | No          | No          | No               | Yes          |
+
+## Personalization objects
+
+To personalize templates it's required to use predefined objects. It's very close to how data is structurized with [Object Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming), and how Magento internally works with data. 
+
+Below is a list of object types that can be returned from various properties:
+
+* (Address)[#/menu/documentation/MarketingSuite/magento-integration/Address]
+* (Category)[#/menu/documentation/MarketingSuite/magento-integration/Category]
+* (Customer)[#/menu/documentation/MarketingSuite/magento-integration/Customer]
+* (Order)[#/menu/documentation/MarketingSuite/magento-integration/Order]
+* (OrderItem)[#/menu/documentation/MarketingSuite/magento-integration/OrderItem]
+* (Person)[#/menu/documentation/MarketingSuite/magento-integration/Person]
+* (Product)[#/menu/documentation/MarketingSuite/magento-integration/Product]
+* (Quote)[#/menu/documentation/MarketingSuite/magento-integration/Quote]
+* (QuoteItem)[#/menu/documentation/MarketingSuite/magento-integration/QuoteItem]
+* (Subscriber)[#/menu/documentation/MarketingSuite/magento-integration/Subscriber]
+* (Webstore)[#/menu/documentation/MarketingSuite/magento-integration/Webstore]
