@@ -158,6 +158,7 @@ Below is a list of object types that can be returned from various properties:
 * [Address](#/menu/documentation/MarketingSuite/magento-integration/object/Address)
 * [Category](#/menu/documentation/MarketingSuite/magento-integration/object/Category)
 * [Customer](#/menu/documentation/MarketingSuite/magento-integration/object/Customer)
+* [Magento](#/menu/documentation/MarketingSuite/magento-integration/object/Magento)
 * [Order](#/menu/documentation/MarketingSuite/magento-integration/object/Order)
 * [OrderItem](#/menu/documentation/MarketingSuite/magento-integration/object/OrderItem)
 * [Person](#/menu/documentation/MarketingSuite/magento-integration/object/Person)
