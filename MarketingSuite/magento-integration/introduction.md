@@ -117,3 +117,34 @@ Persons list can have following filter options:
 * **Gender**
 * **Subscription status**
 * **Web store**
+
+# Personalization
+
+When designing a template for Magento target it's possible to use special Smarty variables available for such mailings. Each mailing will have *$magento* variable available. This variable will give access to Magento installation data. Beside that each mailing target has set of variables that points to data specific for given destination. For example, when sending a mailing to 3 customers (Bob, Dave and Jane), *$customer* variable in each destination will point to different customer. 
+Beside top-level variables there is also many other variables that can be accessed via top-level ones. 
+
+```
+{foreach $order in $customer.orders}
+    #{$order.increment} {$order.currency} {$order.grandTotal}
+{/foreach}
+```
+
+Will output:
+
+```
+#2009222 EUR 12.33
+#2009223 EUR 13.34
+#2009224 EUR 16.12
+#2009225 EUR 55.22
+```
+
+Below is a table that summarizes what kind of top-level variables are available for given targets.
+
+| Variable/Target | Customers list | Orders list | Quotes list | Subscribers list | Persons list |
+|:----------------|:--------------:|:-----------:|:-----------:|:----------------:|:------------:|
+| $magento        | Yes            | Yes         | Yes         | Yes              | Yes          |
+| $customer       | Yes            | Yes         | Yes         | No               | Yes and No   |
+| $quote          | No             | Yes         | Yes         | No               | No           |
+| $order          | No             | Yes         | No          | No               | No           |
+| $subscrib       | No             | No          | No          | Yes              | No           |
+| $person         | No             | No          | No          | No               | Yes          |
