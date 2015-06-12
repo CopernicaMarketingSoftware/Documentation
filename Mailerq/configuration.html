@@ -554,6 +554,11 @@ postgresql://user:password@hostname/databasename</pre>
         Maximum size of the log file, before MailerQ rotates the log files
         and continues writing to a new file. Default is "100MB".
     </li>
+    <li><strong>send-log-maxage</strong> &lt;seconds&gt; -
+        Maximum age of a log file. MailerQ rotates the log files when the
+        current log file gets older than the specified number of seconds.
+        If not set, log files are not rotated based on age.
+    </li>
     <li><strong>download-log-directory:</strong> &lt;directory&gt; -
         directory where logfiles with downloads are stored. 
         The directory be writable for MailerQ.
@@ -568,6 +573,11 @@ postgresql://user:password@hostname/databasename</pre>
     <li><strong>download-log-maxsize</strong> &lt;size&gt; -
         Maximum size of the log file, before MailerQ rotates the log files
         and continues writing to a new file. Default is "100MB".
+    </li>
+    <li><strong>download-log-maxage</strong> &lt;seconds&gt; -
+        Maximum age of a log file. MailerQ rotates the log files when the
+        current log file gets older than the specified number of seconds.
+        If not set, log files are not rotated based on age.
     </li>
 </ul>
 <h2 id="License">License</h2>
