@@ -2,7 +2,7 @@
 
 AMQPipe is a task manager application that reads messages from a 
 RabbitMQ message queue, passes the message to a script or program, 
-and publishes the result of that scripts or programs back to RabbitMQ. 
+and publishes the result of that script or program back to RabbitMQ. 
 The AMQPipe program ensures that your servers are fully optimized, 
 because it runs as many scripts or programs in parallel as you have 
 configured.
@@ -12,8 +12,8 @@ configured.
 
 In the configuration you can specify from which RabbitMQ message queue 
 AMQPipe reads its messages, and to which exchange the results are
-published back. You can also set the location of the scripts and programs
-in the message queue, and other configurable options.
+published back. You can also set the location of the scripts and program, 
+and other configurable options.
 
 [Read more about the config file](/documentation/configuration)
 
@@ -32,11 +32,11 @@ feed your scripts with JSON input.
 
 ## Script output
 
-The raw output of each script is directly published back to RabbitMQ.
-Besides this raw output, AMQPipe also adds meta data to each published
-message in the AMQP envelope. In this meta data AMQPipe adds for
-example the result code of the script, the output sent to stderr (if
-there was such output), and/or the signal that killed the script.
+The raw output of each of your scripts is directly published back to RabbitMQ.
+Besides this raw output, AMQPipe stores meta data about each script in 
+the AMQP envelope. This meta data includes (among other things) the result code 
+of the script, the output sent to stderr (if there was such output), 
+and/or the signal that killed the script.
 
 [Read more about the meta result data](/documentation/results)
 
