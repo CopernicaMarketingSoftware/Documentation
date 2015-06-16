@@ -644,9 +644,22 @@ postgresql://user:password@hostname/databasename</pre>
     </li>
 </ul>
 
-<h2 id="HELO">Custom HELO map</h2>
+<h2 id="DNS">DNS settings</h2>
 <p>
-    When MailerQ sets up a SMTP connection, it first sends out the "HELO" message as
+    You can override the settings that MailerQ uses to communicate with DNS settings.
+    By default, MailerQ does 4 attempts to resolve a domain, and uses a timeout
+    of 5 seconds to wait for an answer before it proceeds to the next server to 
+    resolve the domain. These settings can be changed.
+</p>
+<p>
+    The first lookup is done using UDP. If the response from the DNS server is
+    truncated because it does not fit in a UDP datagram, MailerQ opens a TCP
+    connection to the same DNS server to repeat the request. You can also 
+    modify this behavior and enforce that MailerQ only uses TCP, or only
+    uses UDP.
+</p>
+<p>
+    When MailerQ sets up an SMTP connection, it first sends out the "HELO" message as
     is required by the SMTP protocol. (In fact, it first tries the more modern "EHLO"
     command defined by the ESMTP protocol). With this HELO or EHLO message a hostname
     is sent to the remote server that identifies the sender. Normally, MailerQ
@@ -665,7 +678,25 @@ postgresql://user:password@hostname/databasename</pre>
     </pre>
 </p>
 <ul>
-    <li><strong>helo-file:</strong> &lt;filename&gt;
+    <li><strong>dns-timeout:</strong> &lt;timeout&gt;
+        timeout in milliseconds before MailerQ proceeds to next DNS server. Default
+        is 5000 milliseconds.
+    </li>
+</ul>
+<ul>
+    <li><strong>dns-attempts:</strong> &lt;attempts&gt;
+        number of attempts before giving up, defaults to 4.
+    </li>
+</ul>
+<ul>
+    <li><strong>dns-force:</strong> "udp"|"tcp"
+        the communication channel to use, either "udp" or "tcp". The default
+        value is to use both.
+    </li>
+</ul>
+
+<ul>
+    <li><strong>dns-helofile:</strong> &lt;filename&gt;
         loaction of the file containing HELO map
     </li>
 </ul>
