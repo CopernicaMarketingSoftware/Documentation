@@ -25,7 +25,7 @@ The following properties are supported:
 <table class="info">
     <thead>
         <tr>
-            <td colspan="3">Feed block properties</td>
+            <td colspan="3">Import block properties</td>
         </tr>
     </thead>
     <tbody>
@@ -36,13 +36,13 @@ The following properties are supported:
         </tr>
         <tr>
             <td>type</td>
-            <td>"feed"</td>
-            <td>Identifies the block as a feed block.</td>
+            <td>"import"</td>
+            <td>Identifies the block as a import block.</td>
         </tr>
         <tr>
             <td><a href="/support/json/property-source">source</a></td>
             <td><em>string</em></td>
-            <td>The source URI of the feed</td>
+            <td>The source URI of the JSON to import</td>
         </tr>
     </tbody>
 </table>
