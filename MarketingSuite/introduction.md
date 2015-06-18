@@ -19,7 +19,7 @@ Also, you don't have to worry about how your email looks in the wide variety of 
 
 This template editor is galaxies away from the final we have in mind. As a matter of fact, it is still being developed by our dedicated team of cavia's and space monkeys. While working with the editor, you will most likely search yourself an accident for basic features that are not even implemented yet. Also, you might sometimes encounter hidious bugs and grotesque user interface errors. As this product is under heavy development, we'd love to hear your feedback. And if you need a life saving feature, just drop us a line. It's probably already on our todo list, but maybe we can make it happen quicker if that makes you a more happy person. 
 
-All your complaints, kudos and kilos methamphetamine to feed our hamsters and monkeys can be addressed to [Ridiculously Noisy  Richard](mailto:richard.hordijk@copernica.com)
+If you have any questions or comments about the template editor please send an email to [Richard Hordijk](mailto:richard.hordijk@copernica.com). 
 
 #### Things that you cannot do with this template editor
 
