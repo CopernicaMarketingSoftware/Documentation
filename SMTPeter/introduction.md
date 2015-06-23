@@ -17,13 +17,12 @@ to deliver large volumes of email messages on demand.
 
 1. ### [Register your app](/documentation/register-your-app)
 
-Create your account and configure your environment
-according to the volume of emails you will be sending.
+   Create your account and configure your environment according to the volume of emails you will be sending.
 
-2. ### [Integrate SMTPeter](/documentation/using-smtpeter)
+1. ### [Integrate SMTPeter](/documentation/using-smtpeter)
 
-Either use SMTP authentication or our RESTApi to submit your emails to SMTPeter.
+   Either use SMTP authentication or our RESTApi to submit your emails to SMTPeter.
 
-3. ### [Connect and go!](/documentation/using-smtpeter)
+1. ### [Connect and go!](/documentation/using-smtpeter)
 
-Once your environment and software is configured, start using as desired.
+   Once your environment and software is configured, start using as desired.
