@@ -22,7 +22,7 @@ declared in one context are not visible to any other context.
 The context does not take any parameters in its constructor,
 and can thus be constructed like this.
 
-```
+```php
 // create a new context
 $context = new JS\Context;
 ```
@@ -36,7 +36,7 @@ the value of the last statement executed.
 The evaluate method takes exactly one parameter, a string,
 with javascript code to execute.
 
-```
+```php
 // create a new context
 $context = new JS\Context;
 // execute a statement concatenating into a very well-known greeting
@@ -60,7 +60,7 @@ method accepts as parameters the name of the variable, the actual
 variable to assign and an optional third parameter with some
 additional attributes.
     
-```
+```php
 /**
  *  Assign a property to make it accessible to the javascript context
  *
@@ -81,7 +81,7 @@ by an evaluated piece of javascript code. Using JS\ReadOnly, any changes
 JS\DontDelete will allow the variable to be updated, but not deleted while
 JS\DontEnumerate will prevent the variable from appearing in an enumeration:
 
-```
+```php
 // iterate over all properties in an object
 for (var name in ...)
 {
@@ -93,7 +93,7 @@ statements is cast to the appropriate corresponding type in
 PHP. This works both ways, as variables can be assigned to
 the javascript context.
 
-```
+```php
 // create a new context
 $context = new JS\Context;
 
@@ -111,7 +111,7 @@ All variables - with the exception of resources - can be assigned
 to the context. Assigning a function will make that function callable
 from the javascript context.
 
-```
+```php
 // create a new context
 $context = new JS\Context;
 
@@ -129,7 +129,7 @@ This is not possible in javascript, as functions are also
 properties and we cannot have two properties by the same
 name (that would be ambiguous).
 
-```
+```php
 // create a new context
 $context = new JS\Context;
 
