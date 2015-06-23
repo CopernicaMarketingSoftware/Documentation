@@ -5,16 +5,16 @@ RabbitMQ is a server application that deals with message queue'ing. Before you'r
 going to install and configure MailerQ, you must therefore first make sure you 
 have access to a working RabbitMQ server. If you have a working and up-to-date 
 RabbitMQ server, you can proceed with setting up MailerQ. Otherwise, check our 
-[RabbitMQ tips and trics article](https://www.mailerq.com/documentation/rabbitmq).
+[RabbitMQ tips and trics article](/documentation/rabbitmq).
 
 ## Installing MailerQ
 
 After you've installed your RabbitMQ server, you can proceed with setting up MailerQ. 
 Installing the MailerQ Mail Transfer Agent (MTA) on a Linux server is easy. We have 
-[downloads](https://www.mailerq.com/product/download "Download MailerQ") for Debian based environments
+[downloads](/product/download "Download MailerQ") for Debian based environments
 (Debian, Ubuntu, etc) and for Red Hat based environments (Red Hat, Fedora, CentOS, etc).
 
-After you have [downloaded](https://www.mailerq.com/product/download "Download MailerQ") the appropriate 
+After you have [downloaded](/product/download "Download MailerQ") the appropriate 
 MailerQ .deb or .rpm file, you can install it on your system. This can probably 
 be achieved by double-clicking on it if you have a desktop computer, or with 
 one of the following command line instructions:
@@ -38,11 +38,11 @@ want to make some changes to the configuration file.
 
 ## Configuration
 
-The [MailerQ configuration file](https://www.mailerq.com/documentation/configuration "MailerQ configuration")
+The [MailerQ configuration file](/documentation/configuration "MailerQ configuration")
 can be found in the "/etc/mailerq" directory and is named "config.txt". It holds
 many options that you should set before you can start mailerq. The most important
 options are the address and login credentials of your RabbitMQ message broker
-and your license key. We have documented [all supported configuration options](https://www.mailerq.com/documentation/configuration "MailerQ configuration").
+and your license key. We have documented [all supported configuration options](/documentation/configuration "MailerQ configuration").
 A number of options require special attention.
 
 ### RabbitMQ configuration
@@ -98,12 +98,12 @@ $ mailerq
 ```
 
 MailerQ comes with a web based
-[management console](https://www.mailerq.com/documentation/management-console "An MTA with a management console")
+[management console](/documentation/management-console "An MTA with a management console")
 that you can use to monitor exactly what is happening. This MTA console can be opened
 from your browser. The port number and password can be set in
-the [config file](https://www.mailerq.com/documentation/configuration "MailerQ configuration"). 
+the [config file](/documentation/configuration "MailerQ configuration"). 
 The default location is http://your-server-name:8485.
 
 To start sending mails with MailerQ, you need
-[to publish an e-mail to the appropriate message queue](https://www.mailerq.com/documentation/send-email "Send emails with MailerQ")
-in RabbitMQ or use one of our [examples]https://www.mailerq.com/documentation/mailerq-examples "MailerQ examples").
+[to publish an e-mail to the appropriate message queue](/documentation/send-email "Send emails with MailerQ")
+in RabbitMQ or use one of our [examples]/documentation/mailerq-examples "MailerQ examples").
