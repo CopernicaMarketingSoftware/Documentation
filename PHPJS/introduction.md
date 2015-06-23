@@ -22,8 +22,10 @@ declared in one context are not visible to any other context.
 The context does not take any parameters in its constructor,
 and can thus be constructed like this.
 
-    // create a new context
-    $context = new JS\Context;
+```
+// create a new context
+$context = new JS\Context;
+```
 
 ## Evaluating a piece of javascript code
 
@@ -34,12 +36,14 @@ the value of the last statement executed.
 The evaluate method takes exactly one parameter, a string,
 with javascript code to execute.
 
-    // create a new context
-    $context = new JS\Context;
-    // execute a statement concatenating into a very well-known greeting
-    $result = $context-&gt;evaluate("'Hello, ' + 'world!'");
-    // string(13) "Hello, world!"
-    var_dump($result);
+```
+// create a new context
+$context = new JS\Context;
+// execute a statement concatenating into a very well-known greeting
+$result = $context-&gt;evaluate("'Hello, ' + 'world!'");
+// string(13) "Hello, world!"
+var_dump($result);
+```
 
 In this example we concatenate two strings: 'Hello, ' and 'world!'.
 Since this is the last statement in the script, this is the result
@@ -56,14 +60,16 @@ method accepts as parameters the name of the variable, the actual
 variable to assign and an optional third parameter with some
 additional attributes.
     
-    /**
-     *  Assign a property to make it accessible to the javascript context
-     *
-     *  @param  string      name of the property to assign
-     *  @param  mixed       the value to assign to javascript (anything except a resource)
-     *  @param  unspecified one of JS\None, JS\ReadOnly, JS\DontDelete or JS\DontEnumerate
-     */
-    void assign(string $name, mixed $value [, $attribute = JS\None ] );
+```
+/**
+ *  Assign a property to make it accessible to the javascript context
+ *
+ *  @param  string      name of the property to assign
+ *  @param  mixed       the value to assign to javascript (anything except a resource)
+ *  @param  unspecified one of JS\None, JS\ReadOnly, JS\DontDelete or JS\DontEnumerate
+ */
+void assign(string $name, mixed $value [, $attribute = JS\None ] );
+```
 
 The first two parameters seem obvious: the name of the property and
 the actual value of the property to assign. The third property gives
@@ -75,44 +81,46 @@ by an evaluated piece of javascript code. Using JS\ReadOnly, any changes
 JS\DontDelete will allow the variable to be updated, but not deleted while
 JS\DontEnumerate will prevent the variable from appearing in an enumeration:
 
-
-    // iterate over all properties in an object
-    for (var name in ...)
-    {
-        // this loop won't be entered for any variables assigned with JS\DontEnumerate
-    }
-
+```
+// iterate over all properties in an object
+for (var name in ...)
+{
+    // this loop won't be entered for any variables assigned with JS\DontEnumerate
+}
+```
 As you saw in the previous example, the result of javascript
 statements is cast to the appropriate corresponding type in
 PHP. This works both ways, as variables can be assigned to
 the javascript context.
 
+```
+// create a new context
+$context = new JS\Context;
 
-    // create a new context
-    $context = new JS\Context;
-    
-    // assign the greeting to the context
-    $context-&gt;assign("greet", "Hello");
-    
-    // execute a statement using the just-assigned variable
-    $result = $context-&gt;evaluate("greet + ', world!'");
-    
-    // string(13) "Hello, world!"
-    var_dump($result);
+// assign the greeting to the context
+$context-&gt;assign("greet", "Hello");
+
+// execute a statement using the just-assigned variable
+$result = $context-&gt;evaluate("greet + ', world!'");
+
+// string(13) "Hello, world!"
+var_dump($result);
+```
 
 All variables - with the exception of resources - can be assigned
 to the context. Assigning a function will make that function callable
 from the javascript context.
 
+```
+// create a new context
+$context = new JS\Context;
 
-    // create a new context
-    $context = new JS\Context;
-    
-    // create a function to greet something (or someone) and assign it to the context
-    $context-&gt;assign("greet", function($what) { echo "Hello, ", $what, "!\n"; }, JS\ReadOnly);
-    
-    // execute a statement and call the assigned function
-    $context-&gt;evaluate("greet('world')");
+// create a function to greet something (or someone) and assign it to the context
+$context-&gt;assign("greet", function($what) { echo "Hello, ", $what, "!\n"; }, JS\ReadOnly);
+
+// execute a statement and call the assigned function
+$context-&gt;evaluate("greet('world')");
+```
 
 If you assign an object, all public properties and methods
 become available. There is one gotcha though: In PHP it is
@@ -121,31 +129,31 @@ This is not possible in javascript, as functions are also
 properties and we cannot have two properties by the same
 name (that would be ambiguous).
 
+```
+// create a new context
+$context = new JS\Context;
 
-    // create a new context
-    $context = new JS\Context;
-    
-    // create a function to print variables from javascript
-    $context-&gt;assign('print_r', function($variable) { print_r($variable); });
-    
-    // context to an example database
-    $context-&gt;assign('database', new mysqli('example.com', 'user', 'password', 'database'));
-    
-    // the script to execute
-    $script = &lt;&lt;&lt;'EOD'
+// create a function to print variables from javascript
+$context-&gt;assign('print_r', function($variable) { print_r($variable); });
 
-    // retrieve data from our test table
-    var result = database.query("SELECT id FROM test ORDER BY id ASC");
+// context to an example database
+$context-&gt;assign('database', new mysqli('example.com', 'user', 'password', 'database'));
 
-    // and process all rows
-    while (row = result.fetch_assoc())
-    {
-        // each row gets dumped using our imported print_r function
-        print_r(row);
-    }
+// the script to execute
+$script = &lt;&lt;&lt;'EOD'
 
-    EOD;
+// retrieve data from our test table
+var result = database.query("SELECT id FROM test ORDER BY id ASC");
 
-    // execute the script now
-    $context-&gt;evaluate($script);
+// and process all rows
+while (row = result.fetch_assoc())
+{
+    // each row gets dumped using our imported print_r function
+    print_r(row);
+}
 
+EOD;
+
+// execute the script now
+$context-&gt;evaluate($script);
+```
