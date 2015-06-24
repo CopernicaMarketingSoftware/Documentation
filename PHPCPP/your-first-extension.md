@@ -178,7 +178,7 @@ implementation of the extension. Because the extension is empty (duh!) the
 contents of this main.cpp need a lot of modification: you will have to add
 all your functions and classes to it.
 
-```
+```cpp
 #include <phpcpp.h>
 
 /**
