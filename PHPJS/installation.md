@@ -110,7 +110,7 @@ library works well enough.
 
 ### Install V8
 
-Finally, you will have to install V8 manually, as its <em>Makefile</em> does not support <i>install</i>.
+Finally, you will have to install V8 manually, as its *Makefile* does not support *install*.
 This happens in two steps, the first being the copying of include files.
 Navigate to the folder where you have the V8 source, and enter v8/include.
 
@@ -141,7 +141,7 @@ Installing PHP-JS is very similar to installing PHP-CPP.
 Start by opening the terminal.
 Download the library at the [GitHub page](https://github.com/CopernicaMarketingSoftware/PHP-JS) and unarchive it.
 
-Navigate to the PHP-JS source folder, where you will see a file called <i>Makefile</i>.
+Navigate to the PHP-JS source folder, where you will see a file called *Makefile*.
 Build the project with this command:
 `none  make `
 
