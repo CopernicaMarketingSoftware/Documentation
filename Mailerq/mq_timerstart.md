@@ -1,11 +1,8 @@
-<h1>Function MQ_TimerStart</h1>
-<p>
-    This function starts a timer. When the given time runs out, the
-    callback will be invoked, unless the timer is stopped first
-    with <a href="/documentation/mq_timerstop">MQ_TimerStop</a>.
-</p>
+# Function MQ_TimerStart
 
-<pre class="language-c"><code class="language-c">
+This function starts a timer. When the given time runs out, the callback will be invoked, unless the timer is stopped first with [MQ_TimerStop](/documentation/mq_timerstop).
+
+```c
 /**
  *  Start a timer
  *
@@ -14,20 +11,16 @@
  *  @param  callback    the callback to invoke when the timer runs out
  *  @param  data        customer user data to provide to the callback
  */
-MQ_Timer *<a href="/documentation/mq_timerstart">MQ_TimerStart</a>(<a href="/documentation/mq_context">MQ_Context</a> *context, float timeout, void(*callback)(void *data), void *data);
-</code></pre>
+MQ_Timer *MQ_TimerStart(MQ_Context *context, float timeout, void(*callback)(void *data), void *data);
 
-<p>
-    Using timer functionality, we can amend the example for the
-    <a href="/documentation/mq_context#mq_iowatch">MQ_IOWatch</a>
-    function so that it times out when no input is entered for
-    at least five seconds.
-</p>
+```
 
-<pre class="language-c"><code class="language-c">
-#include &lt;mailerq.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
+Using timer functionality, we can amend the example for the [MQ_IOWatch](/documentation/mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
+
+```c
+#include <mailerq.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  *  Structure that references both timers
@@ -66,8 +59,8 @@ void io_callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     // have to check the events variable, otherwise we could
     // check for readability or writability like this:
     //
-    // events &amp; MQ_READ
-    // events &amp; MQ_WRITE
+    // events & MQ_READ
+    // events & MQ_WRITE
 
     // normally, when we check for readability we should not
     // assume that we are receiving complete lines, however
@@ -82,10 +75,10 @@ void io_callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     if (length == 2)
     {
         // stop watching the file descriptor
-        <a href="/documentation/mq_context#mq_iounwatch">MQ_IOUnwatch</a>(watcher);
+        MQ_IOUnwatch(watcher);
 
         // deactive the timer
-        <a href="/documentation/mq_context#mq_timerstop">MQ_TimerStop</a>(timers-&gt;timer);
+        MQ_TimerStop(timers->timer);
 
         // clean up the timers
         free(timers);
@@ -93,7 +86,7 @@ void io_callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     else
     {
         // reset the timer to five seconds
-        <a href="/documentation/mq_context#mq_timerreset">MQ_TimerReset</a>(timers-&gt;timer, 5.0);
+        MQ_TimerReset(timers->timer, 5.0);
     }
 }
 
@@ -109,7 +102,7 @@ void timer_callback(void *data)
 
     // we did not receive any input for 5 seconds
     // so we stop listening to input
-    <a href="/documentation/mq_context#mq_iounwatch">MQ_IOUnwatch</a>(timers-&gt;io);
+    MQ_IOUnwatch(timers->io);
 
     // and free the timers
     free(timers);
@@ -120,18 +113,19 @@ void timer_callback(void *data)
  *
  *  @param  context the context to monitor in
  */
-void monitor(<a href="/documentation/mq_context">MQ_Context</a> *context)
+void monitor(MQ_Context *context)
 {
     // create the structure holding the timers
     Timers *timers = malloc(sizeof(struct Timers));
 
     // set the context
-    timers-&gt;context = context;
+    timers->context = context;
 
     // monitor stdin for input
-    timers.io = <a href="/documentation/mq_iowatch">MQ_IOWatch</a>(context, STDIN, MQ_READ, callback, timers);
+    timers.io = MQ_IOWatch(context, STDIN, MQ_READ, callback, timers);
 
     // and stop monitoring after five seconds
-    timers.timer = <a href="/documentation/mq_timerstart">MQ_TimerStart</a>(context, 5.0, timer_callback, timers);
+    timers.timer = MQ_TimerStart(context, 5.0, timer_callback, timers);
 }
-</code></pre>
+
+```
