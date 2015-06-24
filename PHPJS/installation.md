@@ -57,7 +57,9 @@ Depot_tools also has its own [tutorial](http://dev.chromium.org/developers/how-t
 Using the terminal, navigate to the folder where you want to store depot_tools,
 and download the project using the following terminal command:
 
-`bash git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git `
+```bash 
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git 
+```
 
 ### Add depot_tools to your PATH variable
 
@@ -65,11 +67,11 @@ The easiest way to use depot_tools is to add it to your PATH variable.
 Below is the command for doing this. Do not exit the terminal, or your
 path variable will reset!
 
-`bash export PATH=`pwd`/depot_tools:"$PATH" `
+` export PATH=`pwd`/depot_tools:"$PATH" `
 
 To test if depot_tools is correctly configured, type the following command:
 
-`bash gclient `
+` gclient `
 
 If installed correctly, a list of possible commands appears, and a .gclient
 directory is created in your home directory.
@@ -80,7 +82,7 @@ Next up is downloading the V8 source code. Navigate to the folder
 where you want to store the V8 source folder. Depot_tools provides
 the following command for downloading V8:
 
-`bash fetch v8 &amp;&amp; cd v8 `
+` fetch v8 &amp;&amp; cd v8 `
 
 This likely takes quite some time. After downloading is complete, you
 will be put inside the v8 source directory. By default, the latest -
@@ -90,11 +92,13 @@ this version will simply segfault.
 The version we have tested with - and that seems to work - is 4.4.9.1.
 To select this version to be built, execute the following command:
 
-`bash git checkout 4.4.9.1 `
+` git checkout 4.4.9.1 `
 
 You can now build v8, using the following command.
 
-`bash make library=shared i18nsupport=off native `
+```none
+make library=shared i18nsupport=off native 
+```
 
 This can take some time. The _native_ argument makes sure V8
 is built for your current platform, and the _library=shared_
@@ -120,18 +124,26 @@ one you prefer, but if you do not know what to choose, we recommend the first.
 
 **Location 1 (recommended)**
 
-`none sudo cp *.h /usr/local/include`
+```none
+sudo cp *.h /usr/local/include
+```
 
 **Location 2**
-`none sudo cp *.h /usr/include `
+```none
+sudo cp *.h /usr/include 
+```
 
 Next to the include files, you also need to copy the compiled libraries.
 Navigate to v8/out/native/lib.target.
 Again, there are two possibilities:
 
-`none  sudo cp libv8.so /usr/lib `
+```none
+sudo cp libv8.so /usr/lib 
+```
 
-`none sudo cp libv8.so /usr/local/lib`
+```none
+sudo cp libv8.so /usr/local/lib
+```
 
 You now have successfully installed Google's V8 JavaScript Engine.
 
@@ -143,10 +155,14 @@ Download the library at the [GitHub page](https://github.com/CopernicaMarketingS
 
 Navigate to the PHP-JS source folder, where you will see a file called *Makefile*.
 Build the project with this command:
-`none  make `
+```none 
+make 
+```
 
 When building is done, install the library:
-`none sudo make install `
+```none 
+sudo make install 
+```
 
 PHP-JS is now ready to use!
 
