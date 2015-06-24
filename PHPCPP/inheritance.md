@@ -11,10 +11,10 @@ hierarchies of PHP classes and PHP interfaces.
 
 ## Defining interfaces
 
-In case you want your extension to <i>define</i> an interface, so that the
+In case you want your extension to *define* an interface, so that the
 interface can be implemented from PHP user space scripts, you can do that
 almost in a similar way to how you would define a class. The only 
-difference is that you do not use Php::Class<YourClass>, but a 
+difference is that you do not use `Php::Class<YourClass>`, but a 
 Php::Interface instance.
 
 
