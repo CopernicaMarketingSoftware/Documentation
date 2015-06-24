@@ -1,32 +1,28 @@
-<h1>Your first extension</h1>
-<p>
-    When you create your own PHP-CPP extension, you also have to compile and
-    deploy it. A normal PHP script only has to be copied to a web server to be 
-    deployed, but it takes a little more effort to deploy an extension: you need
-    a Makefile, an extension specific php.ini file and of course the *.cpp files
-    in which you implement your extension.
-</p>
-<p>
-    To help you out with these steps, we have created an almost empty extension with 
-    all these required files. It contains a sample Makefile, a sample configuration 
-    file, and a first main.cpp file in which the get_module() call is already 
-    implemented. This gives you a kickstart in developing an extension.
-</p>
-<p>
-    <ul>
-        <li><a href="http://www.php-cpp.com/EmptyExtension.zip">EmptyExtension.zip</a></li>
-        <li><a href="http://www.php-cpp.com/EmptyExtension.tar.gz">EmptyExtension.tar.gz</a></li>
-    </ul>
-</p>
-<h2 id="makefile">Makefile</h2>
-<p>
-    The EmptyExtension file contains a Makefile with instructions for the compiler.
-    You will have to make some (small) changes to this Makefile to make it compatible
-    with your extension. The most important things you want to modify are the NAME
-    variable, and probably also the INI_DIR.
-</p>
-<p>
-<pre>
+## Your first extension
+
+When you create your own PHP-CPP extension, you also have to compile and
+deploy it. A normal PHP script only has to be copied to a web server to be 
+deployed, but it takes a little more effort to deploy an extension: you need
+a Makefile, an extension specific php.ini file and of course the *.cpp files
+in which you implement your extension.
+
+To help you out with these steps, we have created an almost empty extension with 
+all these required files. It contains a sample Makefile, a sample configuration 
+file, and a first main.cpp file in which the get_module() call is already 
+implemented. This gives you a kickstart in developing an extension.
+
+* [EmptyExtension.zip](http://www.php-cpp.com/EmptyExtension.zip)
+* [EmptyExtension.tar.gz](http://www.php-cpp.com/EmptyExtension.tar.gz)
+
+
+## Makefile
+
+The EmptyExtension file contains a Makefile with instructions for the compiler.
+You will have to make some (small) changes to this Makefile to make it compatible
+with your extension. The most important things you want to modify are the NAME
+variable, and probably also the INI_DIR.
+
+```
 #
 #   Makefile template
 #
@@ -162,29 +158,28 @@ install:
 clean:
                         ${RM} ${EXTENSION} ${OBJECTS}
 
-</pre>
-</p>
-<h2>Yourextension.ini</h2>
-<p>
-    Your extension should not only have a Makefile, but also an initial
-    yourextension.ini file. This file is much simpler than the Makefile. You
-    should also modify this file to refer to the real name of your extension
-    (instead of yourextension.so).
-</p>
-<p>
-<pre>
+```
+
+## Yourextension.ini
+
+Your extension should not only have a Makefile, but also an initial
+yourextension.ini file. This file is much simpler than the Makefile. You
+should also modify this file to refer to the real name of your extension
+(instead of yourextension.so).
+
+```
 extension=yourextension.so
-</pre>
-</p>
-<h2>Main.cpp</h2>
-<p>
-    The last file that is available in this EmptyExtension file is the actual
-    implementation of the extension. Because the extension is empty (duh!) the
-    contents of this main.cpp need a lot of modification: you will have to add
-    all your functions and classes to it.
-</p>
-<p>
-<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
+```
+
+## Main.cpp
+
+The last file that is available in this EmptyExtension file is the actual
+implementation of the extension. Because the extension is empty (duh!) the
+contents of this main.cpp need a lot of modification: you will have to add
+all your functions and classes to it.
+
+```
+#include <phpcpp.h>
 
 /**
  *  tell the compiler that the get_module is a pure C function
@@ -209,7 +204,5 @@ extern "C" {
         // return the extension
         return extension;
     }
-}</code></pre>
-</p>
-
-    
+}
+```
