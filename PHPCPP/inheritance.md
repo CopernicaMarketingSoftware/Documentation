@@ -1,25 +1,24 @@
-<h1>Inheritance</h1>
-<p>
-    Both PHP and C++ are object oriented programming languages that support
-    class inheritance. There are some differences: C++ supports multiple 
-    inheritance, while a PHP class can only have a single base class.
-    To make up for not having multiple inheritance, PHP supports interfaces
-    and traits.
-</p>
-<p>
-    The PHP-CPP library also allows you to define PHP interfaces and to create 
-    hierarchies of PHP classes and PHP interfaces.
-<p>
-<h2 id="defining-interfaces">Defining interfaces</h2>
-<p>
-    In case you want your extension to <i>define</i> an interface, so that the
-    interface can be implemented from PHP user space scripts, you can do that
-    almost in a similar way to how you would define a class. The only 
-    difference is that you do not use Php::Class&lt;YourClass&gt;, but a 
-    Php::Interface instance.
-</p>
-<p>
-<pre class="language-cpp"><code>
+# Inheritance</h1>
+
+Both PHP and C++ are object oriented programming languages that support
+class inheritance. There are some differences: C++ supports multiple 
+inheritance, while a PHP class can only have a single base class.
+To make up for not having multiple inheritance, PHP supports interfaces
+and traits.
+
+The PHP-CPP library also allows you to define PHP interfaces and to create 
+hierarchies of PHP classes and PHP interfaces.
+
+## Defining interfaces
+
+In case you want your extension to *define* an interface, so that the
+interface can be implemented from PHP user space scripts, you can do that
+almost in a similar way to how you would define a class. The only 
+difference is that you do not use `Php::Class<YourClass>`, but a 
+`Php::Interface instance`.
+
+
+```cpp
 /**
  *  Switch to C context to ensure that the get_module() function
  *  is callable by C programs (which the Zend engine is)
@@ -54,26 +53,25 @@ extern "C" {
         return myExtension;
     }
 }
-</code></pre>
-</p>
-<h2 id="deriving-and-implementing">Deriving and implementing</h2>
-<p>
-    The PHP-CPP library tries to make working with PHP and C++ as transparent
-    as possible. C++ functions can be called from PHP userspace scripts,
-    and C++ classes can be made accessible from PHP. However, in the end PHP
-    and C++ are still different languages, and because C++ does not have the 
-    same reflection features as PHP, you will have to explicit tell the PHP
-    engine which base classes and interfaces the class implements.
-</p>
-<p>
-    The Php::Class&lt;YourClass&gt; object has a method 'extends()' and a 
-    method 'implements()' that can be used for specifying the base classes
-    and implemented interfaces. You need to pass in a class or interface that
-    you configured before. Let's look at an example.
-</p>
-<p>
-<p>
-<pre class="language-cpp"><code>
+```
+
+## Deriving and implementing
+
+The PHP-CPP library tries to make working with PHP and C++ as transparent
+as possible. C++ functions can be called from PHP userspace scripts,
+and C++ classes can be made accessible from PHP. However, in the end PHP
+and C++ are still different languages, and because C++ does not have the 
+same reflection features as PHP, you will have to explicit tell the PHP
+engine which base classes and interfaces the class implements.
+
+
+The `Php::Class<YourClass>` object has a method 'extends()' and a 
+method 'implements()' that can be used for specifying the base classes
+and implemented interfaces. You need to pass in a class or interface that
+you configured before. Let's look at an example.
+
+
+```cpp
 /**
  *  Switch to C context to ensure that the get_module() function
  *  is callable by C programs (which the Zend engine is)
@@ -98,19 +96,19 @@ extern "C" {
         });
         
         // register our own class
-        Php::Class&lt;MyClass&gt; myClass("MyClass");
+        Php::Class<MyClass> myClass("MyClass");
         
         // from PHP user space scripts, it must look like the myClass implements
         // the MyInterface interface
         myClass.implements(myInterface);
         
         // the interface requires that the myMethod method is implemented
-        myClass.method("myMethod", &amp;MyClass::myMethod, {
+        myClass.method("myMethod", &MyClass::myMethod, {
             Php::ByVal("value", Php::Type::String, true) 
         });
         
         // create a third class
-        Php::Class&lt;DerivedClass&gt; derivedClass("DerivedClass");
+        Php::Class<DerivedClass> derivedClass("DerivedClass");
         
         // in PHP scripts, it should look like DerivedClass has "MyClass" 
         // as its base
@@ -125,13 +123,11 @@ extern "C" {
         return myExtension;
     }
 }
-</code></pre>
-</p>
-<p>
-    Be aware that the PHP class hierarchy that you define inside the get_module()
-    function does not have to match the C++ class hierarchy. Your C++ class 
-    "DerivedClass" does not at all have to have "MyClass" as its base, even
-    although in PHP scripts it would look like it has. For code maintainability
-    is it of course better to make the PHP signature more or less similar to the
-    C++ implementation.
-<p>
+```
+
+Be aware that the PHP class hierarchy that you define inside the get_module()
+function does not have to match the C++ class hierarchy. Your C++ class 
+"DerivedClass" does not at all have to have "MyClass" as its base, even
+although in PHP scripts it would look like it has. For code maintainability
+is it of course better to make the PHP signature more or less similar to the
+C++ implementation.
