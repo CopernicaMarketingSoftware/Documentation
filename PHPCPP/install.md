@@ -61,7 +61,9 @@ install it on your system. You can use the "make install" command for it.
 This command should be executed as root, either by using "sudo", or by
 logging on as root first.
 
-`$ sudo make install`
+```
+$ sudo make install
+```
 
 That was it! After these steps you are now the happy owner of a system with 
 PHP-CPP installed and nothing can stop you from building your first fast 
