@@ -33,11 +33,15 @@ Next, we have to build the project. Open the terminal, and navigate
 to the directory where you have unarchived PHP-CPP to. You will find
 a file called _Makefile_. To build the project, execute the following command:
 
-` make `
+```bash
+make
+```
 
 After building has finished, install the library using like so:
 
-` sudo make install `
+```bash
+sudo make install
+```
 
 PHP-CPP is now successfully installed!
 
@@ -67,11 +71,15 @@ The easiest way to use depot_tools is to add it to your PATH variable.
 Below is the command for doing this. Do not exit the terminal, or your
 path variable will reset!
 
-` export PATH=`pwd`/depot_tools:"$PATH" `
+```bash
+export PATH=`pwd`/depot_tools:"$PATH"
+```
 
 To test if depot_tools is correctly configured, type the following command:
 
-` gclient `
+```bash
+gclient 
+```
 
 If installed correctly, a list of possible commands appears, and a .gclient
 directory is created in your home directory.
@@ -82,7 +90,9 @@ Next up is downloading the V8 source code. Navigate to the folder
 where you want to store the V8 source folder. Depot_tools provides
 the following command for downloading V8:
 
-` fetch v8 &amp;&amp; cd v8 `
+```bash
+fetch v8 &amp;&amp; cd v8
+```
 
 This likely takes quite some time. After downloading is complete, you
 will be put inside the v8 source directory. By default, the latest -
@@ -92,11 +102,13 @@ this version will simply segfault.
 The version we have tested with - and that seems to work - is 4.4.9.1.
 To select this version to be built, execute the following command:
 
-` git checkout 4.4.9.1 `
+```bash
+git checkout 4.4.9.1
+```
 
 You can now build v8, using the following command.
 
-```none
+```bash
 make library=shared i18nsupport=off native 
 ```
 
@@ -124,12 +136,12 @@ one you prefer, but if you do not know what to choose, we recommend the first.
 
 **Location 1 (recommended)**
 
-```none
+```bash
 sudo cp *.h /usr/local/include
 ```
 
 **Location 2**
-```none
+```bash
 sudo cp *.h /usr/include 
 ```
 
@@ -137,11 +149,11 @@ Next to the include files, you also need to copy the compiled libraries.
 Navigate to v8/out/native/lib.target.
 Again, there are two possibilities:
 
-```none
+```bash
 sudo cp libv8.so /usr/lib 
 ```
 
-```none
+```bash
 sudo cp libv8.so /usr/local/lib
 ```
 
@@ -155,12 +167,12 @@ Download the library at the [GitHub page](https://github.com/CopernicaMarketingS
 
 Navigate to the PHP-JS source folder, where you will see a file called *Makefile*.
 Build the project with this command:
-```none 
+```bash
 make 
 ```
 
 When building is done, install the library:
-```none 
+```bash 
 sudo make install 
 ```
 
