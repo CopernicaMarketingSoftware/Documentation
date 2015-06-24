@@ -1,20 +1,20 @@
-<h1>Lambda functions</h1>
-<p>
-    C++ and PHP both support lambda functions or anonymous functions (in 
-    the C++ world the word 'lambda' is most used, PHP people speak about
-    'anonymous functions'). With PHP-CPP you can pass these functions 
-    from one language to the other. It is possible to call an anonymous 
-    PHP function from your C++ code, and the other way around, to call a C++
-    lambda from a PHP script.
-</p>
-<h2>Calling anonymous PHP functions from C++</h2>
-<p>
-    Let's start with a very simple example in PHP. In PHP you can create
-    anonymous functions, and assign them to a variable (or pass them
-    directly to a function).
-</p>
-<p>
-<pre class="language-php"><code>&lt;?php
+# Lambda functions
+
+C++ and PHP both support lambda functions or anonymous functions (in 
+the C++ world the word 'lambda' is most used, PHP people speak about
+'anonymous functions'). With PHP-CPP you can pass these functions 
+from one language to the other. It is possible to call an anonymous 
+PHP function from your C++ code, and the other way around, to call a C++
+lambda from a PHP script.
+
+## Calling anonymous PHP functions from C++
+
+Let's start with a very simple example in PHP. In PHP you can create
+anonymous functions, and assign them to a variable (or pass them
+directly to a function).
+
+```php
+<?php
 // anonymous PHP function stored in the variable $f
 $f = function($a, $b) {
     
@@ -32,20 +32,19 @@ other_function(function() {
     return $a * $b;
 });
 
-?&gt;
-</code></pre>
-</p>
-<p>
-    The code above should be familiar to most PHP programmers. The 
-    'other_function' can of course be implemented in PHP user space,
-    but to demonstrate how to do this with PHP-CPP we are going to
-    build it with C++. Just like all the other functions that you've
-    seen in the earlier examples, such a C++ function function receives 
-    a Php::Parmeters object as its parameter, which is a std::vector of 
-    Php::Value objects.
-</p>
-<p>
-<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
+?>
+```
+
+The code above should be familiar to most PHP programmers. The 
+'other_function' can of course be implemented in PHP user space,
+but to demonstrate how to do this with PHP-CPP we are going to
+build it with C++. Just like all the other functions that you've
+seen in the earlier examples, such a C++ function function receives 
+a Php::Parmeters object as its parameter, which is a std::vector of 
+Php::Value objects.
+
+```cpp
+#include <phpcpp.h>
 /**
  *  Native function that is callable from PHP
  *
@@ -54,7 +53,7 @@ other_function(function() {
  *
  *  @param  params      The parameters passed to the function
  */
-void other_function(Php::Parameters &amp;params)
+void other_function(Php::Parameters &params)
 {
     // make sure the function was really called with at least one parameter
     if (params.size() == 0) return nullptr;
@@ -91,16 +90,15 @@ extern "C" {
         // return the extension details
         return extension;
     }
-}</code></pre>
-</p>
-<p>
-    It is that simple. But the other way around is possible too. Imagine
-    we have a function in PHP user space code that accepts a callback 
-    function. The following function is a simple version of the 
-    PHP array_map() function:
-</p>
-<p>
-<pre class="language-php"><code>&lt;?php
+}
+```
+It is that simple. But the other way around is possible too. Imagine
+we have a function in PHP user space code that accepts a callback 
+function. The following function is a simple version of the 
+PHP array_map() function:
+
+```php
+<?php
 // function that iterates over an array, and calls a function on every
 // element in that array, it returns a new array with every item
 // replaced by the result of the callback
@@ -119,22 +117,20 @@ function my_array_map($array, $callback) {
     // done
     return $result;
 }
-?&gt;
-</code></pre>
-</p>
-<p>
-    Imagine that we want to call this PHP function from your C++ code,
-    using a C++ lambda function as a callback. This is possible, and easy:
-</p>
-<p>
-<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
+?>
+
+Imagine that we want to call this PHP function from your C++ code,
+using a C++ lambda function as a callback. This is possible, and easy:
+
+```cpp
+#include <phpcpp.h>
 /**
  *  Native function that is callable from PHP
  */
 void run_test()
 {
     // create the anonymous function
-    Php::Function multiply_by_two([](Php::Parameters &amp;params) -> Php::Value {
+    Php::Function multiply_by_two([](Php::Parameters &params) -> Php::Value {
         
         // make sure the function was really called with at least one parameter
         if (params.size() == 0) return nullptr;
@@ -192,39 +188,34 @@ extern "C" {
         // return the extension details
         return extension;
     }
-}</code></pre>
-</p>
-<p>
-    In the example we assigned a C++ lambda function to a Php::Function
-    object. The Php::Function class is derived from the Php::Value class.
-    The only difference between a Php::Value and a Php::Function is
-    that the constructor of Php::Function accepts a function. Despite 
-    that difference, both classes are completely identical. In fact, we 
-    would have preferred to make it possible to assign C++ functions 
-    directly to Php::Value objects, and skip the Php::Function 
-    constructor, but that is impossible because of calling ambiguities.
-</p>
-<p>
-    The Php::Function class can be used as if it is a normal Php::Value
-    object: you can assign it to other Php::Value objects, and you
-    can use it as a parameter when you call user space PHP functions.
-    In the above example we do exactly that: we call the user space
-    my_iterate() function with our own 'multiply_by_two' C++ function.
-</p>
-<h2>Signature of the C++ function</h2>
-<p>
-    You can pass different sort of C++ functions to the Php::Function
-    constructor, as long as they are compatible with the following two
-    function signatures:
-</p>
-<p>
-<pre class="language-cpp"><code>
+}
+```
+In the example we assigned a C++ lambda function to a Php::Function
+object. The Php::Function class is derived from the Php::Value class.
+The only difference between a Php::Value and a Php::Function is
+that the constructor of Php::Function accepts a function. Despite 
+that difference, both classes are completely identical. In fact, we 
+would have preferred to make it possible to assign C++ functions 
+directly to Php::Value objects, and skip the Php::Function 
+constructor, but that is impossible because of calling ambiguities.
+
+The Php::Function class can be used as if it is a normal Php::Value
+object: you can assign it to other Php::Value objects, and you
+can use it as a parameter when you call user space PHP functions.
+In the above example we do exactly that: we call the user space
+my_iterate() function with our own 'multiply_by_two' C++ function.
+
+## Signature of the C++ function
+
+You can pass different sort of C++ functions to the Php::Function
+constructor, as long as they are compatible with the following two
+function signatures:
+
+```cpp
 Php::Value function();
-Php::Value function(Php::Parameters &amp;params);
-</code></pre>
-</p>
-<p>
-    Internally, the Php::Function class uses a C++ std::function object 
-    to store the function, so anything that can be stored in such a 
-    std::function object, can be assigned to the Php::Function class.
-</p>
+Php::Value function(Php::Parameters &params);
+```
+
+Internally, the Php::Function class uses a C++ std::function object 
+to store the function, so anything that can be stored in such a 
+std::function object, can be assigned to the Php::Function class.
