@@ -217,7 +217,7 @@ swaps the contents of two variables.
 ```cpp
 #include <phpcpp.h>
 
-void swap(Php::Parameters &amp;params) 
+void swap(Php::Parameters &params) 
 {
     Php::Value temp = params[0];
     params[0] = params[1];
@@ -262,6 +262,6 @@ the parameter specification that you gave, and will trigger an error if they
 are not.
 
 Specifying parameters is optional. If you choose to leave this specification
-out it is up to you to check <i>inside</i> the function if there are enough
+out it is up to you to check *inside* the function if there are enough
 parameters, and if the types are correct.
 
