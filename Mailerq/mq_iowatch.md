@@ -1,12 +1,9 @@
-<h1>Function MQ_IOWatch</h1>
+# Function MQ_IOWatch
 
-<p>
-    This function will start monitoring a file descriptor for the
-    requested events. When one (or more) of these events occur,
-    the given callback will be invoked.
-</p>
+This function will start monitoring a file descriptor for the requested events.
+When one (or more) of these events occur, the given callback will be invoked.
 
-<pre class="language-c"><code class="language-c">
+````c
 /**
  *  Monitor a file descriptor for activity
  *
@@ -16,20 +13,15 @@
  *  @param  callback    callback to invoke when one or more of the events occur
  *  @param  data        custom data to supply to the callback
  */
-MQ_IOWatcher *<a href="/documentation/mq_iowatch">MQ_IOWatch</a>(<a href="/documentation/mq_context">MQ_Context</a> *context, int fd, int events, void(*callback)(MQ_IOWatcher *watcher, int fd, int events, void *data), void *data);
-</code></pre>
+MQ_IOWatcher *MQ_IOWatch(MQ_Context *context, int fd, int events, void(*callback)(MQ_IOWatcher *watcher, int fd, int events, void *data), void *data);
+````
 
-<p>
-    As an example, we will read from the standard input until an empty line
-    is found, at which point we will stop listening to the input. This
-    example makes no sense for a MailerQ plugin, but will illustrate
-    the point.
-</p>
+As an example, we will read from the standard input until an empty line is found, at which point we will stop listening to the input. This example makes no sense for a MailerQ plugin, but will illustrate the point.
 
-<pre class="language-c"><code class="language-c">
-#include &lt;mailerq.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
+````c
+#include <mailerq.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  *  Callback function to receive standard input
@@ -49,8 +41,8 @@ void callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     // have to check the events variable, otherwise we could
     // check for readability or writability like this:
     //
-    // events &amp; MQ_READ
-    // events &amp; MQ_WRITE
+    // events & MQ_READ
+    // events & MQ_WRITE
 
     // normally, when we check for readability we should not
     // assume that we are receiving complete lines, however
@@ -65,7 +57,7 @@ void callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     if (length == 2)
     {
         // stop watching the file descriptor
-        <a href="/documentation/mq_iounwatch">MQ_IOUnwatch</a>(watcher);
+        MQ_IOUnwatch(watcher);
     }
     else
     {
@@ -78,10 +70,9 @@ void callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
  *
  *  @param  context the context to monitor in
  */
-void monitor(<a href="/documentation/mq_context">MQ_Context</a> *context)
+void monitor(MQ_Context *context)
 {
     // monitor stdin for input
-    <a href="/documentation/mq_iowatch">MQ_IOWatch</a>(context, STDIN, MQ_READ, callback, NULL);
+    MQ_IOWatch(context, STDIN, MQ_READ, callback, NULL);
 }
-
-</code></pre>
+````
