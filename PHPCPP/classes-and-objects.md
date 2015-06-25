@@ -8,8 +8,7 @@ accessible from PHP.
 Sadly (but also logically if you think about it) not every thinkable C++ class can be directly 
 exported to PHP. It takes a little more work (although not so much). For a
 start, you must make sure that your class is derived from Php::Base, and 
-secondly, when you add your class to the extension object, you must also  
-specify all methods that you want to make accessible from PHP.
+secondly, when you add your class to the extension object, you must also specify all methods that you want to make accessible from PHP.
 
 ```cpp
 #include <phpcpp.h>
@@ -89,7 +88,7 @@ of the counter after the operation, the value() method returns the current value
 
 If you want to make a class method accessible from PHP, you must
 ensure that it matches one of the supported signatures. These are essentially
-the same signatures as <a href="functions">exportable plain functions</a>
+the same signatures as [exportable plain functions](functions)
 can have, but with versions for const and non-const methods.
 
 ```cpp
@@ -104,7 +103,7 @@ Php::Value  YourClass::example7() const;
 Php::Value  YourClass::example8(Php::Parameters &params) const;
 ```
 
-Methods work exactly the same as <a href="functions">regular functions</a>, with the 
+Methods work exactly the same as [regular functions](functions), with the 
 difference that in a method you have (of course) access to the member
 variables of the object.
 
