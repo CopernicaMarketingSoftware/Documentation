@@ -1,4 +1,4 @@
-Magic methods
+# Magic methods
 
 Every PHP class has "magic methods". You may already know these methods
 from writing PHP code: the methods start with two underscores and have
