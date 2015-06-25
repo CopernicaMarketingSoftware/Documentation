@@ -67,7 +67,7 @@ And this works the other way around too. If your extension calls a PHP function,
 ```cpp
     #include <phpcpp.h>
 
-    Php::Value callMe(Php::Parameters ¶ms)
+    Php::Value callMe(Php::Parameters &params)
     {
         // prevent that exceptions bubble up
         try
