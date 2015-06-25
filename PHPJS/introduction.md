@@ -40,7 +40,7 @@ with javascript code to execute.
 // create a new context
 $context = new JS\Context;
 // execute a statement concatenating into a very well-known greeting
-$result = $context-&gt;evaluate("'Hello, ' + 'world!'");
+$result = $context->evaluate("'Hello, ' + 'world!'");
 // string(13) "Hello, world!"
 var_dump($result);
 ```
@@ -98,10 +98,10 @@ the javascript context.
 $context = new JS\Context;
 
 // assign the greeting to the context
-$context-&gt;assign("greet", "Hello");
+$context->assign("greet", "Hello");
 
 // execute a statement using the just-assigned variable
-$result = $context-&gt;evaluate("greet + ', world!'");
+$result = $context->evaluate("greet + ', world!'");
 
 // string(13) "Hello, world!"
 var_dump($result);
@@ -116,10 +116,10 @@ from the javascript context.
 $context = new JS\Context;
 
 // create a function to greet something (or someone) and assign it to the context
-$context-&gt;assign("greet", function($what) { echo "Hello, ", $what, "!\n"; }, JS\ReadOnly);
+$context->assign("greet", function($what) { echo "Hello, ", $what, "!\n"; }, JS\ReadOnly);
 
 // execute a statement and call the assigned function
-$context-&gt;evaluate("greet('world')");
+$context->evaluate("greet('world')");
 ```
 
 If you assign an object, all public properties and methods
@@ -134,13 +134,13 @@ name (that would be ambiguous).
 $context = new JS\Context;
 
 // create a function to print variables from javascript
-$context-&gt;assign('print_r', function($variable) { print_r($variable); });
+$context->assign('print_r', function($variable) { print_r($variable); });
 
 // context to an example database
-$context-&gt;assign('database', new mysqli('example.com', 'user', 'password', 'database'));
+$context->assign('database', new mysqli('example.com', 'user', 'password', 'database'));
 
 // the script to execute
-$script = &lt;&lt;&lt;'EOD'
+$script = <<<'EOD'
 
 // retrieve data from our test table
 var result = database.query("SELECT id FROM test ORDER BY id ASC");
@@ -155,5 +155,5 @@ while (row = result.fetch_assoc())
 EOD;
 
 // execute the script now
-$context-&gt;evaluate($script);
+$context->evaluate($script);
 ```

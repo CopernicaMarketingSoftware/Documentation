@@ -1,12 +1,12 @@
-<h1>Reading php.ini variables</h1>
-<p>
-    Reading settings from the php.ini file(s) is just as simple as it
-    is to obtain these settings from a regular PHP script. Inside a PHP script 
-    you can use the built-in ini_get() function to read settings from the php.ini 
-    file, and in your C++ extension you use the Php::ini_get() function.
-</p>
-<p>
-<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
+# Reading php.ini variables
+
+Reading settings from the php.ini file(s) is just as simple as it
+is to obtain these settings from a regular PHP script. Inside a PHP script 
+you can use the built-in ini_get() function to read settings from the php.ini 
+file, and in your C++ extension you use the Php::ini_get() function.
+
+```cpp
+#include <phpcpp.h>
 
 /**
  *  Simple function that is used to demonstrate how settings from the
@@ -41,21 +41,19 @@ extern "C" {
         // return a pointer to the extension object
         return extension;
     }
-}</code></pre>
-</p>
-<p>
-    The Php::ini_get() function returns an object that can be assigned to
-    strings, integers and floating point numbers. In the above example we have
-    used this to assign the settings directly to an integer and a std::string.
-</p>
-<p>
-    You can only retrieve <i>predefined</i> variables from the php.ini. It is thus not 
-    possible to call Php::ini_get() with random strings. If you want to use
-    your own variables, you must first register them in the get_module()
-    function before you can call Php::ini_get() to retrieve the current values.
-</p>
-<p>
-<pre class="language-cpp"><code>#include &lt;phpcpp.h&gt;
+}
+```
+The Php::ini_get() function returns an object that can be assigned to
+strings, integers and floating point numbers. In the above example we have
+used this to assign the settings directly to an integer and a std::string.
+
+You can only retrieve _predefined_ variables from the php.ini. It is thus not 
+possible to call Php::ini_get() with random strings. If you want to use
+your own variables, you must first register them in the get_module()
+function before you can call Php::ini_get() to retrieve the current values.
+
+```cpp
+#include <phpcpp.h>
 
 /**
  *  Simple function that is used to demonstrate how settings from the
@@ -95,5 +93,5 @@ extern "C" {
         // return a pointer to the extension object
         return extension;
     }
-}</code></pre>
-</p>
+}
+```
