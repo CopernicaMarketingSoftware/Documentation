@@ -14,32 +14,32 @@ to do a similar thing in C++.
 ```php
 <?php
 
-// base class in PHP, in which the an abstract method is called
-abstract class BASE 
-{
-    // constructor
-    public function __construct() 
+    // base class in PHP, in which the an abstract method is called
+    abstract class BASE 
     {
-        // call abstract method
-        $this->doSomething();
+        // constructor
+        public function __construct() 
+        {
+            // call abstract method
+            $this->doSomething();
+        }
+        
+        // abstract method to be implemented by derived classes
+        public abstract function doSomething();
     }
-    
-    // abstract method to be implemented by derived classes
-    public abstract function doSomething();
-}
 
-// the derived class
-class DERIVED extends BASE 
-{
-    // implement the abstract method
-    public function doSomething() 
+    // the derived class
+    class DERIVED extends BASE 
     {
-        echo("doSomething()\n");
+        // implement the abstract method
+        public function doSomething() 
+        {
+            echo("doSomething()\n");
+        }
     }
-}
 
-// create an instance of the derived class
-$d = new DERIVED();
+    // create an instance of the derived class
+    $d = new DERIVED();
 ?>    
 ```
 This script outputs 'doSomething()'. The reason for this is that  `__construct()` 
@@ -140,11 +140,12 @@ value to the "constructor".
 
 ```php
 <?php
-$counter = new Counter(10);
-$counter-&gt;increment();
-echo($counter->value()."\n");
-?
+    $counter = new Counter(10);
+    $counter->increment();
+    echo($counter->value()."\n");
+?>
 ```
+
 Because the `__construct()` method is seen as a regular method, you can also 
 specify its parameters, and whether the method is public, private or protected.
 The `__construct()` is also directly callable from PHP user space, so that
@@ -244,7 +245,7 @@ public:
      *  php "constructor"
      *  @param  params
      */
-    void __construct(Php::Parameters &amp;params)
+    void __construct(Php::Parameters &params)
     {
         // copy first parameter (if available)
         if (params.size() > 0) _value = params[0];
@@ -271,7 +272,7 @@ extern "C" {
         static Php::Extension myExtension("my_extension", "1.0");
         
         // description of the class so that PHP knows which methods are accessible
-        Php::Class&lt;Counter&gt; counter("Counter");
+        Php::Class<Counter> counter("Counter");
         counter.method("__construct", &Counter::__construct);
         counter.method("increment", &Counter::increment);
         counter.method("decrement", &Counter::decrement);
@@ -370,7 +371,7 @@ extern "C" {
         // description of the class so that PHP knows which methods are accessible,
         // the __construct method is private because PHP scripts are not allowed
         // to create Counter instances
-        Php::Class&lt;Counter&gt; counter("Counter");
+        Php::Class<Counter> counter("Counter");
         counter.method("__construct", &Counter::__construct, Php::Private);
         counter.method("value", &Counter::value);
         
