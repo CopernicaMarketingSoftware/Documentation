@@ -118,6 +118,7 @@ function my_array_map($array, $callback) {
     return $result;
 }
 ?>
+```
 
 Imagine that we want to call this PHP function from your C++ code,
 using a C++ lambda function as a callback. This is possible, and easy:
