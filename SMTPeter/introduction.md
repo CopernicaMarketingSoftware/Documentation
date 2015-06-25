@@ -15,14 +15,14 @@ to deliver large volumes of email messages on demand.
 
 ## Getting started
 
-1. ### [Register your app](/documentation/register-your-app)
+1. ### [Register your app](copernica-docs:SMTPeter/register-your-app)
 
    Create your account and configure your environment according to the volume of emails you will be sending.
 
-1. ### [Integrate SMTPeter](/documentation/using-smtpeter)
+1. ### [Integrate SMTPeter](copernica-docs:SMTPeter/using-smtpeter)
 
    Either use SMTP authentication or our RESTApi to submit your emails to SMTPeter.
 
-1. ### [Connect and go!](/documentation/using-smtpeter)
+1. ### [Connect and go!](copernica-docs:SMTPeter/using-smtpeter)
 
    Once your environment and software is configured, start using as desired.
