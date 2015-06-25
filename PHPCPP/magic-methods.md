@@ -419,7 +419,7 @@ echo(MyClass::whatever("x","y")."\n");
 // call the object as if it was a function
 echo($object("parameter","passed","to","invoke")."\n");
 ?>
-
+```
 The above PHP script calls some method on this class. And will generate
 the following output:
 
@@ -436,9 +436,9 @@ invoke parameter passed to invoke
 
 ## Casting to a string
 
-In PHP you can add a __toString() method to a class. This method is automatically
+In PHP you can add a `__toString()` method to a class. This method is automatically
 called when an object is casted to a string, or when an object is used in a string
-context. PHP-CPP supports this __toString() method too.
+context. PHP-CPP supports this `__toString()` method too.
 
 ```cpp
 #include <phpcpp.h>
