@@ -1,28 +1,14 @@
-<h1>Introduction to the JSON documentation</h1>
+# Introduction to the JSON documentation
 
-<p>
-    The ResponsiveEmail.com API accepts JSON objects as input, and turns these 
-    objects into responsive emails.
-</p>
-<p>
-    The properties of the email are set in the JSON document. This includes MIME
-    headers, alternate versions and optional email attachments. Of course, the
-    most important properties are the ones that describe what your email should
-    eventually look like: the texts and images that you want to include, and the
-    layout of the email.
-<p>
-<p>
-    <div class="info-bar info">
-        <strong>New to JSON?</strong> <a href="http://www.json.org/">Anything you need to know about JSON &rarr;</a>
-    </div>
-</p>
-<p>
-    To give you an idea, the following JSON object contains a simple email with
-    just some text:
-</p>
+The ResponsiveEmail.com API accepts JSON objects as input, and turns these objects into responsive emails.
 
+The properties of the email are set in the JSON document. This includes MIME headers, alternate versions and optional email attachments. Of course, the most important properties are the ones that describe what your email should eventually look like: the texts and images that you want to include, and the layout of the email.
 
-````json
+> **New to JSON?** [Anything you need to know about JSON →](http://www.json.org/)
+
+To give you an idea, the following JSON object contains a simple email with just some text:
+
+```json
 {
     "subject" : "Example document",
     "text" : "This message will show up for clients which are text only.",
@@ -40,29 +26,19 @@
         }]
     }
 }
-````
+```
 
+## Top level properties
 
-<div class="row-12">
-    <div class="cols-6 gutter-small">
-        <h2>Top level properties</h2>
-        <p>
-            As you can probably guess from the first example, there are many different properties,
-            e.g. <code>subject</code>, <code>text</code>, <code>from</code>, that can be set. 
-            These objects can even hold arrays and nested data.
-        </p>
-        <p><a href="/support/json/top-level-properties" title="Learn more about top level properties">Learn more about top level properties</a></p>
-    </div>
-    <div class="cols-6 gutter-small">
-        <h2>The <code>content</code> property</h2>
-        <p>
-            The structure and design of emails generated with the API is defined inside the property `content`.
-            Here you can add the blocks that will form your responsive email, based on a 12 columns grid system.
-        </p>
-        <p><a href="/support/json/property-content" title="Learn more about the content property">Learn more about the content property</a></p>
-    </div>
-</div>
+As you can probably guess from the first example, there are many different properties, e.g. `subject`, `text`, `from`, that can be set. These objects can even hold arrays and nested data.
 
+[Learn more about top level properties](/support/json/top-level-properties "Learn more about top level properties")
+
+## The `content` property
+
+The structure and design of emails generated with the API is defined inside the property `content`. Here you can add the blocks that will form your responsive email, based on a 12 columns grid system.
+
+[Learn more about the content property](/support/json/property-content "Learn more about the content property")
 
 ## The content block types
 
@@ -73,9 +49,7 @@ into multiple responsive columns and many more.
 ## Example
 Add an image
 
-
-
-````json
+```json
 {
   "subject" : "Example document",
   "text" : "This message will show up for clients which are text only.",
@@ -90,10 +64,11 @@ Add an image
       }]
   }
 }
-````
+```
 
 
 ## Output
+
 
 <table class="responsive-output">
     <tr>
@@ -102,4 +77,5 @@ Add an image
         </td>
     </tr>
 </table>
-<p><a href="/support/json/property-blocks" title="Learn more about content block types">Learn more about content block types</a></p>
+
+[Learn more about content block types](/support/json/property-blocks "Learn more about content block types")

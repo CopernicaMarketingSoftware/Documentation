@@ -2,8 +2,8 @@
 
 The button block allows you to add buttons, optimized for HTML email,
 to your email document. But unlike what you would expect, an email
-button is not turned into a HTML ```<button>``` tag, but built using
-a HTML ```<table>``` by the Responsive Email API, because it renders
+button is not turned into a HTML `<button>` tag, but built using
+a HTML `<table>` by the Responsive Email API, because it renders
 better on different email clients.
 
 <table class="info">

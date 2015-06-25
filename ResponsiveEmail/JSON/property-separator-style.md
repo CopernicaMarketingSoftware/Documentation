@@ -1,9 +1,7 @@
 # Property `style`
 
-The `style` property is a simple property inside
-<a href="/support/json/block-separator">separator blocks</a> used to set the style of
-the separator. You can for example create dashed, dotted, or solid separators.
-The default is "solid".
+The `style` property is a simple property inside [separator blocks](/support/json/block-separator)
+used to set the style of the separator. You can for example create dashed, dotted, or solid separators. The default is "solid".
 
 <table class="info">
     <thead>
@@ -57,7 +55,7 @@ The default is "solid".
 An example with a dashed separator.
 
 
-````json
+```json
     {
         "from" : "info@example.com",
         "subject" : "Email with a dashed separator",
@@ -74,4 +72,4 @@ An example with a dashed separator.
             } ]
         }
     }
-````
+```

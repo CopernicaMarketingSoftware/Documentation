@@ -1,15 +1,15 @@
 # Property `container` 
 
 All blocks, whether they are text blocks, image blocks or blocks of any of the other supported types,
-are wrapped by the responsive API in table ```<td>``` elements. In normal circumstances,
-you do not have to make any changes to such a ```<td>``` element, but if you 
+are wrapped by the responsive API in table `<td>` elements. In normal circumstances,
+you do not have to make any changes to such a `<td>` element, but if you 
 insist, the responsive API allows you to access this element via the `container`
 property.
 
 The `container` property is an advanced nested property inside each block, and can be
-used to change the styling or even the attributes of the ```<td>```. The `container` 
+used to change the styling or even the attributes of the `<td>`. The `container` 
 property accepts a JSON object with optional nested
-<a href="/support/json/property-css">`css`</a> and <a href="/support/json/property-attributes">`attributes`</a>
+[`css`](/support/json/property-css) and [`attributes`](/support/json/property-attributes)
 sub properties. The `css` and `attributes` in turn also accept JSON blocks containing the 
 CSS properties or element attributes you want to add to the container. 
 
@@ -125,4 +125,3 @@ The `container` property completely bypasses this fundamental design
 principle: the properties are blindly copied from the JSON
 into the responsive email without any validation. If done wrongly, this
 could harm your email.
-
