@@ -21,13 +21,13 @@ one of the following command line instructions:
 
 ## Red Hat based environments:
 
-```
+```bash
 $ sudo rpm -i /path/to/mailerq-version.rpm
 ```
 
 ## Debian based environments:
 
-```
+```bash
 $ sudo dpkg -i path/to/mailerq-version.deb
 ```
 
@@ -93,7 +93,7 @@ If you have questions about your license, feel free to send an email to
 
 Now you're ready to get started. Enter "mailerq" on the command line and your MTA is running.
 
-```
+```bash
 $ mailerq
 ```
 
