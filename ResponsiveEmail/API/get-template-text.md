@@ -1,8 +1,7 @@
 # API method GET /v1/template/{ID}/text
 
-After storing a template on the ResponsiveEmail.com servers, you
-can retrieve the plain text representation using this method. This will simply return the
-<a href="/support/json/property-text">text property</a>.
+After storing a template on the ResponsiveEmail.com servers, you can retrieve the plain text representation using this method.
+This will simply return the [text property](/support/json/property-text).
 
 ## Example request
 
@@ -29,6 +28,4 @@ will be returned.
 
 ## Related information
 
-You can only retrieve the text version of templates that you
-created earlier with a POST call to the <a href="/support/api/post-template">/v1/template</a>
-method.
+You can only retrieve the text version of templates that you created earlier with a POST call to the [/v1/template](/support/api/post-template) method.

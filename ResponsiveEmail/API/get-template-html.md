@@ -33,14 +33,6 @@ will be returned.
 
 ## Related information
 
-You can only retrieve the HTML code of templates that you
-created earlier with a POST call to the <a href="/support/api/post-template">/v1/template</a>
-method.
+You can only retrieve the HTML code of templates that you created earlier with a POST call to the [/v1/template](/support/api/post-template) method.
 
-Note that the returned HTML code is optimized for *email clients*. If the
-template JSON contains <a href="/support/json/property-visibility">visibility properties</a>
-that limit certain blocks to only be visible in the web version of
-the email, then these blocks will not be included in the returned HTML
-code. If you want to fetch the web version of an email, use the
-<a href="/support/api/get-template-webversion">/v1/template/{ID}/webversion</a> method
-instead.
+Note that the returned HTML code is optimized for *email clients*. If the template JSON contains [visibility properties](/support/json/property-visibility) that limit certain blocks to only be visible in the web version of the email, then these blocks will not be included in the returned HTML code. If you want to fetch the web version of an email, use the [/v1/template/{ID}/webversion](/support/api/get-template-webversion) method instead.

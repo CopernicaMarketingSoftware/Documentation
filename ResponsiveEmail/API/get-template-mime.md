@@ -7,7 +7,6 @@ attachments.
 
 ## Example request
 
-
 ```txt
     GET /v1/template/2345/mime?access_token=yourtoken
     Host: www.responsiveemail.com
@@ -43,6 +42,4 @@ will be returned.
 
 ## Related information
 
-You can only retrieve the MIME code of templates that you
-created earlier with a POST call to the <a href="/support/api/post-template">/v1/template</a>
-method.
+You can only retrieve the MIME code of templates that you created earlier with a POST call to the [/v1/template](/support/api/post-template) method.

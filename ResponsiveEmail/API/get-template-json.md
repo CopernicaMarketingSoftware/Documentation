@@ -31,6 +31,4 @@ template in the URL.
 
 ## Related information
 
-You can only retrieve the JSON of template resources that you
-created with an earlier POST call to the <a href="/support/api/post-template">/v1/template</a>
-method.
+You can only retrieve the JSON of template resources that you created with an earlier POST call to the [/v1/template](/support/api/post-template) method.

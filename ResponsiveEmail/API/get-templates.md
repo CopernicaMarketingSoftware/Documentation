@@ -29,5 +29,4 @@ The start and length parameters are supported, when not supplied the default sta
 
 ## Related information
 
-You can only retrieve the templates which you have already stored with POST
-calls to the <a href="/support/api/post-template">/v1/template</a> method.
+You can only retrieve the templates which you have already stored with POST calls to the [/v1/template](/support/api/post-template) method.
