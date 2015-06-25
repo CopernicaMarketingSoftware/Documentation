@@ -1,0 +1,5 @@
+* [Introduction](copernice-docs:AMQPipe/introduction "Introduction")
+* [Configuration File](copernice-docs:AMQPipe/configuration "Configuration File")
+* [Script input](copernice-docs:AMQPipe/json "Script input")
+* [Script output](copernice-docs:AMQPipe/results "Script output")
+* [C++ API](copernice-docs:AMQPipe/shared-objects "C++ API")

@@ -2,8 +2,8 @@
 
 One of the cool things about AMQPipe is that you can not only instruct it to
 run scripts and programs to process AMQP messages, but that you can also write
-native C++ plugins. If you assign a *.so shared object file to the `plugin`
-variable in the configuration file, or if you include one or more of these *.so
+native C++ plugins. If you assign a \*.so shared object file to the `plugin`
+variable in the configuration file, or if you include one or more of these \*.so
 shared object files in the directory with all the plugins, AMQPipe will load
 these shared object files on startup, and for every consumed message, it will
 call a function in this shared object file to process the message.
@@ -115,7 +115,7 @@ and that stores all consumed messages in that database. We use an imaginary
 database API so that our code looks as simple as possible. The database API is
 blocking, so we create a thread for storing the messages.
 
-````cpp
+```cpp
 #include <amqpipe.h>
 #include <simpledb.h>
 
@@ -250,4 +250,4 @@ void cleanup(AMQPipe::App &app, int plugin)
         });
     });
 }
-````
+```
