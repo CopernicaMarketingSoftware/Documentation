@@ -3,17 +3,9 @@
 There is a small but very important difference between constructors and 
 destructors in C++, and the __construct() and __destruct() methods in PHP.
 
-A C++ constructor is called on an object that is <i>being</i> initialized,
-but that is <i>not</i> in an initialized state <i>yet</i>. You can experience 
-this by calling a virtual method from the constructor. Even when this virtual 
-method was overridden in a derived class, this will always execute the method 
-of the class itselves, and not the overridden implementation. The reason 
-for this is that during the call to the C++ constructor the object is not yet 
-fully initialized, and the object is not yet aware of it's position in the 
-class hierarchy. The call to the virtual method can thus not be passed 
-on to the derived object.
+A C++ constructor is called on an object that is _being_ initialized, but that is _not_ in an initialized state _yet_. You can experience this by calling a virtual method from the constructor. Even when this virtual method was overridden in a derived class, this will always execute the method of the class itselves, and not the overridden implementation. The reason for this is that during the call to the C++ constructor the object is not yet fully initialized, and the object is not yet aware of it's position in the class hierarchy. The call to the virtual method can thus not be passed on to the derived object.
 
-In PHP however, the __construct() method has a different behavior. When
+In PHP however, the `__construct()` method has a different behavior. When
 it gets called, the object is already initialized and it is perfectly 
 legal to make calls to even abstract methods that are implemented in derived 
 classes. The following PHP script is completely valid - but it is impossible
@@ -50,13 +42,13 @@ class DERIVED extends BASE
 $d = new DERIVED();
 ?>    
 ```
-This script outputs 'doSomething()'. The reason for this is that  __construct() 
+This script outputs 'doSomething()'. The reason for this is that  `__construct()` 
 is not a constructor at all, but a very normal method that just happens to 
-be the first method that is called, and that is called automatically <i>after</i>
+be the first method that is called, and that is called automatically _after_
 the object is constructed.
 
 This difference is important for you as a C++ programmer, because you should
-never confuse your C++ constructor with the PHP __construct() method. In the C++
+never confuse your C++ constructor with the PHP `__construct()` method. In the C++
 constructor the object is being constructed and not all data is yet available. 
 Virtual methods can not be called, and the object also does not yet exist in
 PHP user space.
@@ -64,9 +56,9 @@ PHP user space.
 After the constructor is finished, the PHP engine takes over control and creates 
 the PHP object, and the PHP-CPP library then links that PHP object to your C++ 
 object. Only after both the PHP object and the C++ object are fully constructed, 
-the __construct() method is called - just like a normal method. It is therefore 
-not uncommon to have both a C++ constructor and a __construct() method in your 
-class. The C++ constructor to initialize the member variables, and __construct() 
+the `__construct()` method is called - just like a normal method. It is therefore 
+not uncommon to have both a C++ constructor and a `__construct()` method in your 
+class. The C++ constructor to initialize the member variables, and `__construct()` 
 to activate the object.
 
 ```cpp
@@ -140,7 +132,7 @@ extern "C" {
     }
 }
 ```
-The code above shows that __construct() is registered as if it was 
+The code above shows that `__construct()` is registered as if it was 
 a regular method - and that's what it is. The example that we've 
 used before (the one with the Counter class) is now extended so that it 
 is possible to give it an initial value to the counter by passing a 
@@ -153,25 +145,25 @@ $counter-&gt;increment();
 echo($counter->value()."\n");
 ?
 ```
-Because the __construct() method is seen as a regular method, you can also 
+Because the `__construct()` method is seen as a regular method, you can also 
 specify its parameters, and whether the method is public, private or protected.
-The __construct() is also directly callable from PHP user space, so that
-derived methods can explicitly call parent::__construct().
+The `__construct()` is also directly callable from PHP user space, so that
+derived methods can explicitly call `parent::__construct()`.
 
 ## Private constructors
 
-Just like any other method, the __construct() method can also be
+Just like any other method, the `__construct()` method can also be
 marked as being private or protected. If you do this, you will make it
 impossible to create instances of your class from PHP scripts. It is 
 important to realize that the C++ constructor and C++ destructor still get 
-called in such situations, because it is the __construct() call that is 
+called in such situations, because it is the` __construct()` call that is 
 going to fail - and not the actual object construction.
 
 
-Yes indeed: if you make the __construct() method private, and inside a PHP
+Yes indeed: if you make the `__construct()` method private, and inside a PHP
 script a "new Counter()" call is executed, the PHP-CPP library will first
 instantiate a new instance of your class, then report an error because the
-__construct() method is private, and then immediately destruct the object
+`__construct()` method is private, and then immediately destruct the object
 (and call the C++ destructor).
 
 ```cpp
@@ -208,8 +200,8 @@ extern "C" {
 If your class has a copy constructor, it automatically becomes clonable. If
 you do not want that your class can be cloned by PHP scripts, you can do
 two things: you can either remove the copy constructor from your class, or
-you can register a private __clone() method, just like we registered a 
-private __construct() method before.
+you can register a private `__clone()` method, just like we registered a 
+private `__construct()` method before.
 
 ```cpp
 #include <phpcpp.h>
@@ -329,17 +321,18 @@ Php::Value copy1 = counter1;
 
 // invalid statement, a Php::Object can only be used for storing objects
 Php::Object copy2 = counter0;
+```
 
 The constructor of a Php::Object takes the name of a class, and an optional
-list of parameters that will be passed to the __construct() function. You 
+list of parameters that will be passed to the `__construct()` function. You 
 can use names from built-in PHP classes and other extensions (like DateTime), 
 classes from your extension (like Counter), and even classes from PHP user 
 space.
 
 The Php::Object class can also be used if you want to construct an instance
-of your own C++ class without calling the __construct() function. This can 
-for example be useful when the __construct() method is private, or when you
-want to bypass a call to your own __construct() method.
+of your own C++ class without calling the `__construct()` function. This can 
+for example be useful when the `__construct()` method is private, or when you
+want to bypass a call to your own `__construct()` method.
 
 ```cpp
 #include <phpcpp.h>
@@ -393,16 +386,16 @@ extern "C" {
 }
 ```
 
-In the code above we made the __construct() function of the Counter class
+In the code above we made the `__construct()` function of the Counter class
 private. This makes it impossible to create instances of this class - both
-from PHP user scripts, and via calls to Php::Object("Counter") - because
+from PHP user scripts, and via calls to `Php::Object("Counter")` - because
 constructing objects in these ways will eventually result in a forbidden 
-__construct() call.
+`__construct()` call.
 
 The Php::Object does have an alternative syntax that takes a pointer 
 to a C++ class (allocated on the heap, with operator new!) and that turns 
 this pointer into a PHP variable without calling the 
-__construct() method. Notice that you must also specify the classname, 
+`__construct()` method. Notice that you must also specify the classname, 
 because C++ classes do not hold any information about themselves (like their 
 name), while in PHP such information is required to handle reflection and 
-functions like get_class().
+functions like `get_class()`.
