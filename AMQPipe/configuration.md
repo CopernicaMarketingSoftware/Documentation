@@ -77,7 +77,7 @@ plugin:           /path/to/your/plugin
 The path to you plugin should either be:
 
 * An executable file
-* A shared object (*.so) file
+* A shared object (\*.so) file
 * Or a directory
 
 If you specify an executable file, AMQPipe will start that executable for
