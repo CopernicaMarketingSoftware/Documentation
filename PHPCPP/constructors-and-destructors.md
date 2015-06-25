@@ -1,7 +1,7 @@
 # Constructors
 
 There is a small but very important difference between constructors and 
-destructors in C++, and the __construct() and __destruct() methods in PHP.
+destructors in C++, and the `__construct()` and `__destruct()` methods in PHP.
 
 A C++ constructor is called on an object that is _being_ initialized, but that is _not_ in an initialized state _yet_. You can experience this by calling a virtual method from the constructor. Even when this virtual method was overridden in a derived class, this will always execute the method of the class itselves, and not the overridden implementation. The reason for this is that during the call to the C++ constructor the object is not yet fully initialized, and the object is not yet aware of it's position in the class hierarchy. The call to the virtual method can thus not be passed on to the derived object.
 
