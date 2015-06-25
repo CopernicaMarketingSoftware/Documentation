@@ -6,7 +6,7 @@ bodies. Besides the message body, this JSON object also holds additional
 information about the consumed message. The format of this input is as follows:
 
 
-````javascript
+```javascript
 {
     "exchange":         "the exchange to which the message was original published",
     "routing-key":      "the routing key that was used for publishing",
@@ -26,7 +26,7 @@ information about the consumed message. The format of this input is as follows:
     "message-id":       "string value",
     "message":          "the full message body loaded from RabbitMQ"
 }
-````
+```
 
 
 Most of the above properties are optional, and are only included in the
@@ -70,7 +70,7 @@ by a different AMQPipe instance, you will typically see JSON messages
 like this one:
 
 
-````javascript
+```javascript
 {
     "exchange":     "result-exchange",
     "routing-key":  "error",
@@ -86,7 +86,7 @@ like this one:
     },
     "message":  "This is the script output"
 }
-````
+```
 
 
 Some of the fields are optional. For example, if the program was not killed
@@ -98,4 +98,3 @@ both be set.
 
 Because the AMQP protocol only allows a limited size for the envelope, the 
 output that was sent to stderr is sometimes truncated.
-

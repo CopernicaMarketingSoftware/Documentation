@@ -22,12 +22,12 @@ of this message broker should be set using the following variables in the
 config file:
 
 
-````txt
+```txt
 rabbitmq-host:      localhost
 rabbitmq-user:      guest
 rabbitmq-password:  guest
 rabbitmq-vhost:     /
-````
+```
 
 Of course, you should replace the hostname and login credentials with settings
 that work for you.
@@ -43,10 +43,10 @@ you can set the name of the queue from which message are loaded, and the name
 of the exchange to which the generated messages are published.
 
 
-````txt
+``txt
 rabbitmq-queue:     myqueue
 rabbitmq-exchange:  myexchange
-````
+```
 
 The `rabbitmq-queue` variable specifies the queue _from which messages are loaded_,
 and the `rabbitmq-exchange` variable holds the name of the exchange _to which
@@ -70,9 +70,9 @@ your program(s) or script(s) to process them. With the `plugin` variable
 you can specify the location of your script(s).
 
 
-````txt
+```txt
 plugin:           /path/to/your/plugin
-````
+```
 
 The path to you plugin should either be:
 
@@ -89,7 +89,7 @@ and by setting the executable bit (you can use the command `chmod 755
 yourscript.php` for that):
 
 
-````php
+```php
 #!/usr/bin/php
 <?php
 // read data from stdin
@@ -97,7 +97,7 @@ $input = stream_get_contents(STDIN);
 
 // @todo add your own code
 ?>
-````
+```
 
 
 A special sort of plugins are _shared objects_. A shared object is written
@@ -128,10 +128,10 @@ message envelope into one big JSON object, and sends this JSON object to
 the JSON.
 
 
-````txt
+``txt
 input-format:     json
 input-encoding:   base64
-````
+```
 
 
 Currently, two sort of input formats are supported: `message` (which is the default)
@@ -153,9 +153,9 @@ of the server. You can control the number of processes to run with the
 of CPU's you have available on your server.
 
 
-````txt
+``txt
 max-processes:    16
-````
+```
 
 
 ## Process limits
@@ -165,12 +165,12 @@ time a script takes to complete, or the amount of memory it can consume. When th
 limit is reached, AMQPipe automatically kills the program.
 
 
-````txt
+```txt
 max-virt-memory:  2GB
 max-memory:       2GB
 max-real-time:    3600
 max-cpu-time:     60
-````
+```
 
 
 The `max-*-memory` are set in bytes, but you can use postfixes like 'MB' and 'GB'.
