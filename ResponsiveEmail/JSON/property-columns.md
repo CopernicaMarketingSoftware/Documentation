@@ -1,7 +1,7 @@
 # Property `columns`
 
 The property `columns` is a nested property that is used inside a 
-<a href="/support/json/block-columns">columns block</a>. It expects
+[columns block](/support/json/block-columns). It expects
 a JSON array as value, with a list of JSON objects. Each object 
 in this array describes the contents of a single column.
 
@@ -47,46 +47,15 @@ The `columns` property itself holds an array of JSON objects, with every
 object representing a single column. The following table shows the 
 nested properties that can be set for each column.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Columns [ { ... }, { ... } ] properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-blocks">blocks</a></td>
-            <td><em>array</em></td>
-            <td>
-                An array with objects, each one representing any other block type, such as <code>button</code> and <code>text</code> blocks. 
-            </td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-size">size</a></td>
-            <td><em>integer</em></td>
-            <td>
-                The size of the column. Supported values are 1 up to 12.
-            </td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-container">container</a></td>
-            <td><em>object</em></td>
-            <td>Get access to the container element</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-background">background</a></td>
-            <td><em>object</em></td>
-            <td>The background of the column.</td>
-        </tr>
-    </tbody>
-</table>
+| Columns [ { ... }, { ... } ] properties |
+| --- |
+| Property | Value | Desc. |
+| [blocks](/support/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as `button` and `text` blocks. |
+| [size](/support/json/property-size) | _integer_ | The size of the column. Supported values are 1 up to 12. |
+| [container](/support/json/property-container) | _object_ | Get access to the container element |
+| [background](/support/json/property-background) | _object_ | The background of the column. |
 
-The most important property is the <a href="/support/json/property-blocks">`blocks`</a>
+The most important property is the [`blocks`](/support/json/property-blocks)
 property. You can use it to assign an array of other blocks that are placed 
 inside the column. To keep the examples readable, we normally show this
 property with only a single block in it (in the example on this page, we show

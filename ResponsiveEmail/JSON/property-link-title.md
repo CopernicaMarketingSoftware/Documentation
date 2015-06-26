@@ -1,6 +1,6 @@
 # Property `title`
 
-The `title` property nested inside a <a href="/support/json/property-link">`link`</a>
+The `title` property nested inside a [`link`](/support/json/property-link)
 object allows you to provide a description of the link. Usually the link title 
 appears when the user hovers the link. 
 

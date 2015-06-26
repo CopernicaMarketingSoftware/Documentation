@@ -1,6 +1,6 @@
 # Property name
 
-The property <code>name</code> can be used to identify the template. This
+The property `name` can be used to identify the template. This
 is a meta property, and therefore does not have any effect on either
 the headers or the contents of the email. This property can be
 useful if you want to give a name to your template to easily identify it.
@@ -11,11 +11,7 @@ templates). This is an optional property.
 
 ## Example
 
-The following input JSON contains a very simple example template the top two properties are
-its <code>name</code> and <code>description</code>. Both the <a href="/support/json/property-name"><code>name</code></a>
-and  <a href="/support/json/property-description"><code>description</code></a>
-properties are meta properties that are not used by the API to generate the
-email, but that may be helpful to identify and/or describe the template.
+The following input JSON contains a very simple example template the top two properties are its `name` and `description`. Both the [`name`](/support/json/property-name) and [`description`](/support/json/property-description) properties are meta properties that are not used by the API to generate the email, but that may be helpful to identify and/or describe the template.
 
 
 ````javascript
@@ -42,7 +38,4 @@ email, but that may be helpful to identify and/or describe the template.
 
 ## Related information
 
-The property <a href="/support/json/property-name"><code>name</code></a> can be used
-to give the template a name. Both the <a href="/support/json/property-name"><code>name</code></a>
-and the <a href="/support/json/property-description"><code>description</code></a>
-are <a href="/support/json/top-level-properties">top level properties</a>.
+The property [`name`](/support/json/property-name) can be used to give the template a name. Both the [`name`](/support/json/property-name) and the [`description`](/support/json/property-description) are [top level properties](/support/json/top-level-properties).

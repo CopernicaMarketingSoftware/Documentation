@@ -9,40 +9,13 @@ than a single signature to the mail. The private key should be base64
 encoded. It is not necessary to include the header and footer lines 
 that you normally see in private keys, although it is allowed.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">DKIM properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td>domain</td>
-            <td><em>string</em></td>
-            <td>The signing domain</td>
-        </tr>
-        <tr>
-            <td>selector</td>
-            <td><em>string</em></td>
-            <td>The domain selector</td>
-        </tr>
-        <tr>
-            <td>key</td>
-            <td><em>string</em></td>
-            <td>Base64 encoded private key</td>
-        </tr>
-        <tr>
-            <td>algorithm</td>
-            <td><em>string</em></td>
-            <td>The hashing algorithm to use, sha1 or sha256</td>
-        </tr>
-    </tbody>
-</table>
+| DKIM properties |
+| --- |
+| Property | Value | Description |
+| domain | _string_ | The signing domain |
+| selector | _string_ | The domain selector |
+| key | _string_ | Base64 encoded private key |
+| algorithm | _string_ | The hashing algorithm to use, sha1 or sha256 |
 
 For a valid signature, you need to specify a domain, selector and 
 private key. The hashing algorithm is optional. If it is not set,

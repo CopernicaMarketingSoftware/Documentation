@@ -2,9 +2,9 @@
 
 In many different places in the API you can use the `css` property to
 change the style of HTML elements. You may for example use this property
-in the very <a href="/support/json/top-level-properties">top level</a>
+in the very [top level](/support/json/top-level-properties)
 of the JSON document to change the style of the entire email, inside
-the <a href="/support/property-content">`content`</a> property to
+the [`content`](/support/property-content) property to
 change the styling of the 580px wide centered content, and in many blocks
 to change the styling of the blocks. This `css` JSON property expects
 an object with styling properties that will be directly copied into a

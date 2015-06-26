@@ -14,30 +14,11 @@ the block should be included when the message is generated for use
 in an email and/or for use in a webversion, and a sub property to specify
 on which sort of screen size the block should be visible.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Block visibilty properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-output">output</a></td>
-            <td><em>string</em></td>
-            <td>Should the block be included in the webversion and/or in the email version?</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-device">device</a></td>
-            <td><em>string</em></td>
-            <td>Should the block be visible when the mail is opened on a device with a certain size?</td>
-        </tr>
-    </tbody>
-</table>
+| Block visibilty properties |
+| --- |
+| Property | Value | Desc. |
+| [output](/support/json/property-output) | _string_ | Should the block be included in the webversion and/or in the email version? |
+| [device](/support/json/property-device) | _string_ | Should the block be visible when the mail is opened on a device with a certain size? |
 
 
 ## Server-side evaluation
@@ -57,12 +38,7 @@ link should of course only be included in the actual delivered email, and not
 in the version that is hosted on the web, because that web hosted message is 
 exactly the page that the links leads to.
 
-The sub property <a href="/support/json/property-output">`output`</a>
-does this. You can assign the value "webonly" or "mailonly" to tell the 
-responsive API to only output the content when either
-the web hosted version or the mail version of the message is generated.
-For an example, see the <a href="/support/json/property-output">documentation
-about the property</a>.
+The sub property [`output`](/support/json/property-output) does this. You can assign the value "webonly" or "mailonly" to tell the responsive API to only output the content when either the web hosted version or the mail version of the message is generated. For an example, see the [documentation about the property](/support/json/property-output).
 
 
 ## Client-side evaluation
@@ -76,7 +52,4 @@ opened on a mobile device or not. The email client however, will now show
 the content if it does not match the constraint.
 
 This feature is enabled by setting the 
-<a href="/support/json/property-device">device</a> sub property. For more
-information, and example code, see 
-<a href="/support/json/property-device">the documentation</a> of that property.
-
+[device](/support/json/property-device) sub property. For more information, and example code, see [the documentation](/support/json/property-device) of that property.

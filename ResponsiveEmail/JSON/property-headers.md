@@ -1,10 +1,6 @@
 # Property `headers`
 
-The ResponsiveEmail API supports many predefined properties to set MIME headers.
-These include properties like <a href="/support/json/property-subject">`subject`</a>,
-<a href="/support/json/property-to">`to`</a> and <a href="/support/json/property-reply-to">`reply-to`</a>.
-But if you want to set other headers in the header too, maybe even unofficial
-headers, you can do so by using the `headers` property.
+The ResponsiveEmail API supports many predefined properties to set MIME headers. These include properties like [`subject`](/support/json/property-subject), [`to`](/support/json/property-to) and [`reply-to`](/support/json/property-reply-to). But if you want to set other headers in the header too, maybe even unofficial headers, you can do so by using the `headers` property.
 
 ## Example
 
@@ -38,9 +34,4 @@ with current or future official email headers.
 
 The `headers` property should be used for setting custom headers. For
 the normal headers, better use one of the predefined properties, like
-<a href="/support/json/property-subject"><code>subject</code></a>,
-<a href="/support/json/property-from"><code>from</code></a>,
-<a href="/support/json/property-reply-to"><code>replyTo</code></a>,
-<a href="/support/json/property-to"><code>to</code></a>,
-<a href="/support/json/property-cc"><code>cc</code></a> and
-<a href="/support/json/property-bcc"><code>bcc</code></a>.
+[`subject`](/support/json/property-subject), [`from`](/support/json/property-from), [`replyTo`](/support/json/property-reply-to), [`to`](/support/json/property-to), [`cc`](/support/json/property-cc) and [`bcc`](/support/json/property-bcc).

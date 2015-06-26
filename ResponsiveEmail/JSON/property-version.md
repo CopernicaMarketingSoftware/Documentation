@@ -47,8 +47,7 @@ to the API do not affect the way how your email is created.
 
 Besides the version number in the JSON input, the URL via which the
 API is accessible also has a version number in it (https://www.responsiveemail.com/v1/...).
-There is a difference between <a href="/support/api/versions">this version
-number</a>, and the number in the JSON.
+There is a difference between [this version number](/support/api/versions), and the number in the JSON.
 
 The version number in the JSON describes the format of the JSON that is
 used, while the version number in the URL is used for the version of the

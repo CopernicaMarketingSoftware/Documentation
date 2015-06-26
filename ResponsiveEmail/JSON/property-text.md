@@ -40,5 +40,4 @@ versions will be shown.
 ## See also
 
 Besides the text version, your email should of course also have a fully 
-formatted HTML version. This can be set using the 
-<a href="/support/json/property-content"><code>content</code> property</a>.
+formatted HTML version. This can be set using the [`content` property](/support/json/property-content).
