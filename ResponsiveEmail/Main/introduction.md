@@ -13,10 +13,10 @@ desktop, tablet and mobile devices. Are you ready to start this awesome journey?
 
 Tell us what your app will do and get your API key
 
-2. ### [Learn the API basics](/support/api/introduction)
+2. ### [Learn the API basics](copernica-docs:ResponsiveEmail/api/introduction)
 
 The ins and outs of the API
 
-3. ### [Create a JSON document](/support/json/introduction)
+3. ### [Create a JSON document](copernica-docs:ResponsiveEmail/json/introduction)
 
 Learn more about the JSON properties
