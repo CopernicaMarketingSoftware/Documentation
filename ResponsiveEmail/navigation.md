@@ -2,7 +2,7 @@
   * [API reference](copernica-docs:ResponsiveEmail/api/introduction "API reference")
   * [Example code](copernica-docs:ResponsiveEmail/api/examples "Example code")
   * [API version numbers](copernica-docs:ResponsiveEmail/api/versions "API version numbers")
-  * [FAQ](copernica-docs:ResponsiveEmail/api/faq "Frequently Asked Questions")
+<!--  * [FAQ](copernica-docs:ResponsiveEmail/main/faq "Frequently Asked Questions") -->
 * [JSON documentation](copernica-docs:ResponsiveEmail/json/introduction "JSON properties documentation")
   * [Top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties "Top level properties")
   * [Content blocks](copernica-docs:ResponsiveEmail/json/property-content)
