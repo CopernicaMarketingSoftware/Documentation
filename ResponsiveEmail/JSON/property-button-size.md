@@ -1,7 +1,7 @@
 # Property `size`
 
 The `size` property is a simple property inside
-[button blocks](/support/json/block-button) used to set the size of
+[button blocks](copernica-docs:ResponsiveEmail/json/block-button) used to set the size of
 the button. Currently we have support for 4 sizes, where small is the default.
 
 - small

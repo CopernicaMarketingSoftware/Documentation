@@ -1,6 +1,6 @@
 # Property `style`
 
-The `style` property is a simple property inside [separator blocks](/support/json/block-separator)
+The `style` property is a simple property inside [separator blocks](copernica-docs:ResponsiveEmail/json/block-separator)
 used to set the style of the separator. You can for example create dashed, dotted, or solid separators. The default is "solid".
 
 <table class="info">

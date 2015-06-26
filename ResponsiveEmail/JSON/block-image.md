@@ -2,9 +2,9 @@
 
 The image block provides the ability to add images to your emails.
 Aside from all the regular block properties there are some properties specific for images,
-such as the [src](/support/json/property-src) property,
+such as the [src](copernica-docs:ResponsiveEmail/json/property-src) property,
 that should be set to the url to the image you would like to show.
-Another image specific property is [alt](/support/json/property-alt),
+Another image specific property is [alt](copernica-docs:ResponsiveEmail/json/property-alt),
 which is used to set the alternative text when for some reason the image is not displayed.
 
 All available properties of this block type are mentioned in the table below.
@@ -13,19 +13,19 @@ All available properties of this block type are mentioned in the table below.
 | --- |
 | Property | Value | Description |
 | type | "image" | Property to identify the block as an image block. |
-| [src](/support/json/property-src) | _string_ | The url of the image. |
-| [alt](/support/json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email. |
-| [align](/support/json/property-align) | _string_ | To which side should the image be aligned? default is left. |
-| [background](/support/json/property-background) | _string_ | The background settings for the video block. |
-| [margin](/support/json/property-margin) | _mixed_ | Margins around the image. |
-| [padding](/support/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [visibility](/support/json/property-visibility) | _block_ | Visibility based on device, client and/or receiver. |
-| [link](/support/json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`. |
-| [width](/support/json/property-image-width) | _string_ | Optional width of the image, default is 100% |
-| [height](/support/json/property-image-height) | _string_ | Optional height of the image, default is not set (image is automatically scaled) |
-| [img](/support/json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes` |
-| [a](/support/json/property-a) | _object_ | When the image is clickable, you can use this property to specify `css` and `attributes` for the HTML anchor. |
-| [container](/support/json/property-container) | _object_ | Access to the parent element. |
+| [src](copernica-docs:ResponsiveEmail/json/property-src) | _string_ | The url of the image. |
+| [alt](copernica-docs:ResponsiveEmail/json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email. |
+| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the image be aligned? default is left. |
+| [background](copernica-docs:ResponsiveEmail/json/property-background) | _string_ | The background settings for the video block. |
+| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the image. |
+| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _block_ | Visibility based on device, client and/or receiver. |
+| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`. |
+| [width](copernica-docs:ResponsiveEmail/json/property-image-width) | _string_ | Optional width of the image, default is 100% |
+| [height](copernica-docs:ResponsiveEmail/json/property-image-height) | _string_ | Optional height of the image, default is not set (image is automatically scaled) |
+| [img](copernica-docs:ResponsiveEmail/json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes` |
+| [a](copernica-docs:ResponsiveEmail/json/property-a) | _object_ | When the image is clickable, you can use this property to specify `css` and `attributes` for the HTML anchor. |
+| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the parent element. |
 
 ## Example use
 
@@ -51,7 +51,7 @@ the basic usage, to only include an image with an extra "alt" tag:
 ## Clickable images
 
 It is possible to make the image clickable. You do this by providing the
-[link](/support/json/property-link) property. This can either
+[link](copernica-docs:ResponsiveEmail/json/property-link) property. This can either
 be a string holding a URL, or an object with link properties.
 The following example shows the input for an email with the two ways
 to add a link.
@@ -86,7 +86,7 @@ to add a link.
 All the properties in the input JSON are turned into a HTML `<img>` tag,
 and, if you add a link, also into a HTML `<a>` tag. If you want to set
 custom attributes or custom CSS properties to these tags, you can
-do so by using the [img](/support/json/property-img) and [a](/support/json/property-a) properties:
+do so by using the [img](copernica-docs:ResponsiveEmail/json/property-img) and [a](copernica-docs:ResponsiveEmail/json/property-a) properties:
 
 
 ```json
@@ -124,4 +124,4 @@ do so by using the [img](/support/json/property-img) and [a](/support/json/prope
 The `img` and `a` properties are of course fully optional, and you
 normally do not need them when working with images. Please also
 keep in mind that the property
-[attributes](/support/json/property-attributes) and the property [css](/support/json/property-css) are advanced properties and their use is not recommended.
+[attributes](copernica-docs:ResponsiveEmail/json/property-attributes) and the property [css](copernica-docs:ResponsiveEmail/json/property-css) are advanced properties and their use is not recommended.

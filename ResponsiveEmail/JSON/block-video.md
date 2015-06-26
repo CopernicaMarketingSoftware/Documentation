@@ -13,15 +13,15 @@ All available properties of this block type are mentioned in the table below.
 | --- |
 | Property | Value | Description |
 | type | "video" | Property to identify the block as a video block. |
-| [source](/support/json/property-source) | _string_ | The video source URI |
-| [link](/support/json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`. |
-| [embed](/support/json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
-| [align](/support/json/property-align) | _string_ | To which side should the video be aligned? default is left. |
-| [background](/support/json/property-background) | _object_ | The background settings for the video block. |
-| [margin](/support/json/property-margin) | _mixed_ | Margins around the video. |
-| [padding](/support/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [visibility](/support/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
-| [container](/support/json/property-container) | _object_ | Access to the surrounding container |
+| [source](copernica-docs:ResponsiveEmail/json/property-source) | _string_ | The video source URI |
+| [link](copernica-docs:ResponsiveEmail/json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`. |
+| [embed](copernica-docs:ResponsiveEmail/json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
+| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the video be aligned? default is left. |
+| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the video block. |
+| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the video. |
+| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
+| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container |
 
 ## Example usage
 

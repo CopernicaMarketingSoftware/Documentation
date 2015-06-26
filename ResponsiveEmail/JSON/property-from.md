@@ -79,4 +79,4 @@ values:
 
 ## Related information
 
-The sender addresses are stored in the header of the email. Other [top level properties](/support/json/top-level-properties) to change the mime header of the generated mime are for example [`subject`](/support/json/property-subject), [`to`](/support/json/property-to), [`cc`](/support/json/property-cc) and the property [`headers`](/support/json/property-headers).
+The sender addresses are stored in the header of the email. Other [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) to change the mime header of the generated mime are for example [`subject`](copernica-docs:ResponsiveEmail/json/property-subject), [`to`](copernica-docs:ResponsiveEmail/json/property-to), [`cc`](copernica-docs:ResponsiveEmail/json/property-cc) and the property [`headers`](copernica-docs:ResponsiveEmail/json/property-headers).

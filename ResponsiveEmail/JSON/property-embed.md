@@ -1,6 +1,6 @@
 # Property `embed`
 
-The `embed` property is used inside [video blocks](/support/json/block-video)
+The `embed` property is used inside [video blocks](copernica-docs:ResponsiveEmail/json/block-video)
 to indicate whether the video should be embedded in the webversion of the document.
 
 It is important to realize that the majority of the email clients do not
@@ -28,4 +28,4 @@ an email client.
 
 
 For more information and more examples, please check the documentation
-of [video blocks](/support/json/block-video).
+of [video blocks](copernica-docs:ResponsiveEmail/json/block-video).

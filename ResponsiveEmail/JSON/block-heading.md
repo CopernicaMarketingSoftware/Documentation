@@ -32,7 +32,7 @@ Please keep in mind that you can only use pure text in heading blocks.
 | type | "heading" | Identifies the block as a heading block. |
 | [size](copernica-docs:ResponsiveEmail/json/property-link) | _integer_ | The level of the heading, supported range: 1 - 6\. Defaults to 1. |
 | [content](copernica-docs:ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may not include HTML. |
-| [align](/support/json/property-align) | _string_ | To which side should the text be aligned? default is left. |
+| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the text be aligned? default is left. |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties. |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`. |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block. |

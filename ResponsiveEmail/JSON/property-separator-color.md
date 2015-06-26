@@ -1,7 +1,7 @@
 # Property `color`
 
 The `color` property is a simple property inside
-[separator blocks](/support/json/block-separator) used to set the color of
+[separator blocks](copernica-docs:ResponsiveEmail/json/block-separator) used to set the color of
 the separator. You can use hex notation of colors here, direct color names as supported
 by HTML etc. If omitted this will default to #cccccc.
 

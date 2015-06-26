@@ -39,5 +39,5 @@ to set different margins for all four sides.
 ## Where to use?
 
 The `margin` property can be used for every type of block, whether it is
-a [text block](/support/json/block-text), an [image block](/support/json/block-image) or any other block: they all have margins.
+a [text block](copernica-docs:ResponsiveEmail/json/block-text), an [image block](copernica-docs:ResponsiveEmail/json/block-image) or any other block: they all have margins.
 

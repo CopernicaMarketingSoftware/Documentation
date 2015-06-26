@@ -1,6 +1,6 @@
 # Property `url`
 
-Inside a [`link`](/support/json/property-link) property,
+Inside a [`link`](copernica-docs:ResponsiveEmail/json/property-link) property,
 you can assign an url. The link property `url` contains the actual link 
 address of the link. Thus, the internet address the user is redirected 
 to after clicking the link. 

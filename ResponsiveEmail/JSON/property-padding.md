@@ -5,7 +5,7 @@ The `padding` property can be used for that. The padding can either be
 a numeric value, if you want to use the same padding for all four sides
 around the block, or an object if you want to set the top, left, right
 and bottom padding seperately. This difference between `padding` and
-[`margin`](/support/json/property-margin) is that padding will
+[`margin`](copernica-docs:ResponsiveEmail/json/property-margin) is that padding will
 get the background color of said block, unlike margin.
 
 
@@ -41,4 +41,4 @@ to set different padding for all four sides.
 ## Where to use?
 
 The `padding` property can be used for every type of block, whether it is
-a [text block](/support/json/block-text), an [image block](/support/json/block-image) or any other block: they all have padding.
+a [text block](copernica-docs:ResponsiveEmail/json/block-text), an [image block](copernica-docs:ResponsiveEmail/json/block-image) or any other block: they all have padding.

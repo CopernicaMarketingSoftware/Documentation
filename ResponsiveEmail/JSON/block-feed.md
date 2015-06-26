@@ -20,9 +20,9 @@ feed inside a responsive document.
 The only - obviously - required option for this block is of course the `source` property.
 This property must point to the URI of a valid RSS feed.
 
-This will create a feed block using all default settings. For each article a [heading block](/support/json/block-heading) and [html block](/support/json/block-html) is created. If the article contains an image, an [image block](/support/json/block-image) is also created.
+This will create a feed block using all default settings. For each article a [heading block](copernica-docs:ResponsiveEmail/json/block-heading) and [html block](copernica-docs:ResponsiveEmail/json/block-html) is created. If the article contains an image, an [image block](copernica-docs:ResponsiveEmail/json/block-image) is also created.
 
-For each of these blocks, default properties can be given. To change the default properties for the [heading block](/support/json/block-heading), create a `heading` object within your JSON. All properties valid for the [heading block](/support/json/block-heading) can be given here, although the `content` property will of course be filled with the title of the article. Similarly, the default properties for the [html block](/support/json/block-html) and [image block](/support/json/block-image) can be overwritten by adding a `html` and `image` object to the JSON respectively. For the [html block](/support/json/block-html), the `content` property will be filled with the content of the article, and for the [image block](/support/json/block-image) the `src` and `link` property will be filled with the source URI and article link, respectively.
+For each of these blocks, default properties can be given. To change the default properties for the [heading block](copernica-docs:ResponsiveEmail/json/block-heading), create a `heading` object within your JSON. All properties valid for the [heading block](copernica-docs:ResponsiveEmail/json/block-heading) can be given here, although the `content` property will of course be filled with the title of the article. Similarly, the default properties for the [html block](copernica-docs:ResponsiveEmail/json/block-html) and [image block](copernica-docs:ResponsiveEmail/json/block-image) can be overwritten by adding a `html` and `image` object to the JSON respectively. For the [html block](copernica-docs:ResponsiveEmail/json/block-html), the `content` property will be filled with the content of the article, and for the [image block](copernica-docs:ResponsiveEmail/json/block-image) the `src` and `link` property will be filled with the source URI and article link, respectively.
 
 
 ````json
@@ -72,9 +72,9 @@ The following properties are supported:
 | --- |
 | Property | Value | Description |
 | type | "feed" | Identifies the block as a feed block. |
-| [source](/support/json/property-source) | _string_ | The source URI of the feed |
-| [blocks](/support/json/property-feed-blocks) | _array_ | The blocks to show for each article |
-| [heading](/support/json/block-heading) | _object_ | Properties for the heading block |
-| [image](/support/json/block-image) | _object_ | Properties for the image block |
-| [html](/support/json/block-html) | _object_ | Properties for the HTML block |
-| [visibility](/support/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
+| [source](copernica-docs:ResponsiveEmail/json/property-source) | _string_ | The source URI of the feed |
+| [blocks](copernica-docs:ResponsiveEmail/json/property-feed-blocks) | _array_ | The blocks to show for each article |
+| [heading](copernica-docs:ResponsiveEmail/json/block-heading) | _object_ | Properties for the heading block |
+| [image](copernica-docs:ResponsiveEmail/json/block-image) | _object_ | Properties for the image block |
+| [html](copernica-docs:ResponsiveEmail/json/block-html) | _object_ | Properties for the HTML block |
+| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |

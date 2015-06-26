@@ -93,22 +93,22 @@ The following table lists all sub properties that can be used inside the `conten
             <td>Description</td>
         </tr>
         <tr>
-            <td><a href="/support/json/property-background">background</a></td>
+            <td><a href="copernica-docs:ResponsiveEmail/json/property-background">background</a></td>
             <td><em>object</em></td>
             <td>Background properties for the 580px wide center column.</td>
         </tr>
         <tr>
-            <td><a href="/support/json/property-blocks">blocks</a></td>
+            <td><a href="copernica-docs:ResponsiveEmail/json/property-blocks">blocks</a></td>
             <td><em>array</em></td>
             <td>List of the actual content blocks inside the center column.</td>
         </tr>
         <tr>
-            <td><a href="/support/json/property-css">css</a></td>
+            <td><a href="copernica-docs:ResponsiveEmail/json/property-css">css</a></td>
             <td><em>object</em></td>
             <td>Optional additional CSS properties to be added to the column.</td>
         </tr>
         <tr>
-            <td><a href="/support/json/property-attributes">attributes</a></td>
+            <td><a href="copernica-docs:ResponsiveEmail/json/property-attributes">attributes</a></td>
             <td><em>object</em></td>
             <td>Optional additional attributes to be added to the column.</td>
         </tr>

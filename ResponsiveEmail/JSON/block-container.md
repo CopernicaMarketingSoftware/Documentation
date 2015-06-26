@@ -3,7 +3,7 @@
 Container blocks are - you might have guessed it - a block that contains other
 blocks. The blocks inside the container block are displayed below eachother in
 a vertical fashion. It is thus best compared to a
-[columns block](/support/json/block-columns) with only a single column.
+[columns block](copernica-docs:ResponsiveEmail/json/block-columns) with only a single column.
 
 
 ````json
@@ -31,4 +31,4 @@ Inside the block you can use sub properties. The following tables lists all supp
 | --- |
 | Property | Value | Description |
 | type | "container" | Identifies the block as a container block. |
-| [blocks](/support/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as [button blocks](/support/json/block-button) and [text blocks](/support/json/block-text). |
+| [blocks](copernica-docs:ResponsiveEmail/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as [button blocks](copernica-docs:ResponsiveEmail/json/block-button) and [text blocks](copernica-docs:ResponsiveEmail/json/block-text). |
