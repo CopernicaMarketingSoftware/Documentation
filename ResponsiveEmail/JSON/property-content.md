@@ -41,7 +41,7 @@ and a content section with a yellow background.
                 "src": "http://www.responsiveemail.com/Resources/Images/responsive-email-logo.png"
             }, {
                 "type": "text",
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ... mollit anim id est laborum."
             } ]
         }
     }
@@ -49,30 +49,7 @@ and a content section with a yellow background.
 
 ## Example output
 
-<table class="responsive-output" style="background-color: #eee;">
-    <tr>
-        <td>
-            <table class="responsive-output" style="background-color: yellow;">
-                <tr>
-                    <td>
-                        <img src="http://www.responsiveemail.com/Resources/Images/responsive-email-logo.png"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+![](copernica-docs:ResponsiveEmail/images/example-output-content.png)
 
 ## Sub properties
 
@@ -80,40 +57,13 @@ As described above, and as demonstrated in the example JSON, the `content`
 property is a nested property that can have different kind of sub properties.
 The following table lists all sub properties that can be used inside the `content` section.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Content block properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-background">background</a></td>
-            <td><em>object</em></td>
-            <td>Background properties for the 580px wide center column.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-blocks">blocks</a></td>
-            <td><em>array</em></td>
-            <td>List of the actual content blocks inside the center column.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-css">css</a></td>
-            <td><em>object</em></td>
-            <td>Optional additional CSS properties to be added to the column.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-attributes">attributes</a></td>
-            <td><em>object</em></td>
-            <td>Optional additional attributes to be added to the column.</td>
-        </tr>
-    </tbody>
-</table>
+| Content block properties |
+| --- |
+| Property | Value | Description |
+| [background](/support/json/property-background) | _object_ | Background properties for the 580px wide center column. |
+| [blocks](/support/json/property-blocks) | _array_ | List of the actual content blocks inside the center column. |
+| [css](/support/json/property-css) | _object_ | Optional additional CSS properties to be added to the column. |
+| [attributes](/support/json/property-attributes) | _object_ | Optional additional attributes to be added to the column. |
 
 ## A word of warning about setting attributes and css
 
