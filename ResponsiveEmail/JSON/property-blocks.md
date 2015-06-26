@@ -1,9 +1,7 @@
 # Property `blocks`
 
 The `blocks` property is used inside the 
-<a href="/support/json/property-content">main content section</a> and holds
-an array of blocks that make up the mail. Every block in the array
-should at least have a <a href="/support/json/property-type">`type`</a>
+[main content section](/support/json/property-content) and holds an array of blocks that make up the mail. Every block in the array should at least have a [`type`](/support/json/property-type)
 property to identify the block type.
 
 
@@ -33,8 +31,7 @@ by a button.
 ## Use in columns
 
 The `blocks` property is also used if make use of 
-<a href="/support/json/block-columns">columns</a>. Every 
-<a href="/support/json/property-columns">column</a> also has a `blocks`
+[columns](/support/json/block-columns). Every [column](/support/json/property-columns) also has a `blocks`
 property that describes the blocks that are placed in the column.
 
 
@@ -77,5 +74,5 @@ property that describes the blocks that are placed in the column.
 
 The above example shows the two uses of the `blocks` property. First you
 see it in action as a property inside the
-<a href="/support/json/property-content">main content section</a>, and
+[main content section](/support/json/property-content), and
 then twice when the blocks inside the columns are described.
