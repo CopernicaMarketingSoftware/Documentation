@@ -1,6 +1,6 @@
 # Property `height`
 
-The `height` property is used inside <a href="/support/json/block-separator">separator blocks</a>
+The `height` property is used inside [separator blocks](/support/json/block-separator)
 to configure how much whitespace it should represent, this will default to 4px.
 
 
@@ -25,4 +25,4 @@ to configure how much whitespace it should represent, this will default to 4px.
 
 
 For more information and more examples, please check the documentation
-of <a href="/support/json/block-separator">separator blocks</a>.
+of [separator blocks](/support/json/block-separator)..

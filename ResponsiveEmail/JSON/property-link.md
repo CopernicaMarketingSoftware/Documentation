@@ -5,35 +5,12 @@ The are various block types that have the `link` property, such as the
 a string holding a URL, or a full JSON object,
 containing the properties of the links. See table below.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Link properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-link-url">url</a></td>
-            <td><em>string</em></td>
-            <td>The online location where user is redirected to.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-link-title">title</a></td>
-            <td><em>string</em></td>
-            <td>The link title / description.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-link-params">params</a></td>
-            <td><em>object</em></td>
-            <td>Add or overwrite URL query strings, presented as a key-value pair</td>
-        </tr>
-    </tbody>
-</table>
+| Link properties |
+| --- |
+| Property | Value | Desc. |
+| [url](/support/json/property-link-url) | _string_ | The online location where user is redirected to. |
+| [title](/support/json/property-link-title) | _string_ | The link title / description. |
+| [params](/support/json/property-link-params) | _object_ | Add or overwrite URL query strings, presented as a key-value pair |
 
 ## Example
 

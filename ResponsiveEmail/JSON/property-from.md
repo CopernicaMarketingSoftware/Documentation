@@ -3,7 +3,7 @@
 The visible _from_ address, and the visible _reply-to_ address are the address
 of the sender of the email, and the address that is used when the receiver
 of the email presses the 'reply' button. In the input JSON object, you
-can set these properties through the <code>from</code> and <code>replyTo</code>
+can set these properties through the `from` and `replyTo`
 properties.
 
 Although all properties in the JSON are optional, you are strongly advised
@@ -79,9 +79,4 @@ values:
 
 ## Related information
 
-The sender addresses are stored in the header of the email. Other <a href="/support/json/top-level-properties">top level
-properties</a> to change the mime header of the generated mime are for example
-<a href="/support/json/property-subject"><code>subject</code></a>,
-<a href="/support/json/property-to"><code>to</code></a>,
-<a href="/support/json/property-cc"><code>cc</code></a> and the property
-<a href="/support/json/property-headers"><code>headers</code></a>.
+The sender addresses are stored in the header of the email. Other [top level properties](/support/json/top-level-properties) to change the mime header of the generated mime are for example [`subject`](/support/json/property-subject), [`to`](/support/json/property-to), [`cc`](/support/json/property-cc) and the property [`headers`](/support/json/property-headers).

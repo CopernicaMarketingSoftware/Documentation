@@ -33,10 +33,4 @@ or less.
 
 ## Related information
 
-The subject line is stored in the header of the email. Other <a href="/support/json/top-level-properties">top level
-properties</a> to change the mime header of the generated mime are for example
-<a href="/support/json/property-from"><code>from</code></a>,
-<a href="/support/json/property-to"><code>to</code></a>,
-<a href="/support/json/property-reply-to"><code>replyTo</code></a>,
-<a href="/support/json/property-cc"><code>cc</code></a> and the property
-<a href="/support/json/property-headers"><code>headers</code></a>.
+The subject line is stored in the header of the email. Other [top level properties](/support/json/top-level-properties) to change the mime header of the generated mime are for example [`from`](/support/json/property-from), [`to`](/support/json/property-to), [`replyTo`](/support/json/property-reply-to), [`cc`](/support/json/property-cc) and the property [`headers`](/support/json/property-headers).

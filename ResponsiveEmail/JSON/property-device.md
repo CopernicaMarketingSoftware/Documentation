@@ -3,40 +3,17 @@
 One of the ideas behind responsive email is that you can include or exclude 
 content based on the device on which the email is opened. That is exactly
 what the `device` property is for. This is a properted nested inside the
-<a href="/support/json/property-visibility">`visibility`</a> property, and
+[`visibility`](/support/json/property-visibility) property, and
 that accepts a string value to specify whether the content should be
 visible when the email is opened on a mobile device and/or on a desktop computer.
 
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Supported values for the `device` property</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Value</td>
-            <td>&nbsp;</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>"always"</td>
-            <td><em>default</em></td>
-            <td>The block is always visible, on all possible screen sizes.</td>
-        </tr>
-        <tr>
-            <td>"desktop"</td>
-            <td></td>
-            <td>The block is only visible on big, desktop like, screen sizes.</td>
-        </tr>
-        <tr>
-            <td>"mobile"</td>
-            <td></td>
-            <td>The block is only visible on small, mobile like, screen sizes.</td>
-        </tr>
-    </tbody>
-</table>
+| Supported values for the `device` property |
+| --- |
+| Value |  | Desc. |
+| "always" | _default_ | The block is always visible, on all possible screen sizes. |
+| "desktop" |  | The block is only visible on big, desktop like, screen sizes. |
+| "mobile" |  | The block is only visible on small, mobile like, screen sizes. |
 
 
 ## Email client support
