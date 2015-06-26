@@ -25,7 +25,7 @@ The JSON code below would give you an email with a gray (body) background,
 and a content section with a yellow background. 
 
 
-````json
+```json
     {
         "from" : "info@example.com",
         "subject" : "Example email",
@@ -45,7 +45,7 @@ and a content section with a yellow background.
             } ]
         }
     }
-````
+```
 
 ## Example output
 
@@ -64,7 +64,6 @@ The following table lists all sub properties that can be used inside the `conten
 | [blocks](/support/json/property-blocks) | _array_ | List of the actual content blocks inside the center column. |
 | [css](/support/json/property-css) | _object_ | Optional additional CSS properties to be added to the column. |
 | [attributes](/support/json/property-attributes) | _object_ | Optional additional attributes to be added to the column. |
->>>>>>> d0e50efc330e47c87a83c5e0680b9d2b253ccaec:ResponsiveEmail/JSON/property-content.md
 
 ## A word of warning about setting attributes and css
 
