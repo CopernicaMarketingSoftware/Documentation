@@ -24,6 +24,6 @@ JSON.
 
 ## Related information
 
-After you've created the template, you can use GET methods to retrieve the [MIME](/support/api/get-template-mime),
-[HTML](/support/api/get-template-html), [webversion](/support/api/get-template-webversion) and
-[text](/support/api/get-template-text) representation of the mail.
+After you've created the template, you can use GET methods to retrieve the [MIME](copernica-docs:ResponsiveEmail/api/get-template-mime),
+[HTML](copernica-docs:ResponsiveEmail/api/get-template-html), [webversion](copernica-docs:ResponsiveEmail/api/get-template-webversion) and
+[text](copernica-docs:ResponsiveEmail/api/get-template-text) representation of the mail.
