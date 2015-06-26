@@ -20,4 +20,4 @@ MQ_EXPORT int mq_version() {
 
 ```
 
-If the returned version number is not valid, MailerQ will report an error message and quit. If the function number is valid, MailerQ will continue to run, and will call your [mq_initialize()](/documentation/mq_initialize) function.
+If the returned version number is not valid, MailerQ will report an error message and quit. If the function number is valid, MailerQ will continue to run, and will call your [mq_initialize()](copernica-docs:Mailerq/mq_initialize) function.
