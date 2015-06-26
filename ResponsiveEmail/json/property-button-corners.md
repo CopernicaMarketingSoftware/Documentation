@@ -32,10 +32,4 @@ Add rounded corners to a button
 
 ## Output
 
-<table class="responsive-output property-button">
-    <tr>
-        <td>
-            <a href="http://www.example.com" title="Button">Button</a>
-        </td>
-    </tr>
-</table>
+![](copernica-docs:ResponsiveEmail/images/example-output-button.png)
