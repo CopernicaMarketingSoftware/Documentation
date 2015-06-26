@@ -1,50 +1,45 @@
-<article>
-    <h1>Example code</h1>
-        <p>
-            As explained in the <a href="/support/api/introduction">API reference</a>,
-            you can do a call to the API with any programming language that
-            supports HTTP requests. These examples will only work with existing templates
-            stored in your ResponsiveEmail.com account. You will need to fill in the id of
-            said template and your own access token.
-        </p>
+# Example code
 
-<div class="tabs">
-    <h2>PHP</h2>
-    <div>       
+As explained in the [API reference](copernica-docs:ResponsiveEmail/support/api/introduction), you can do a call to the API with any programming language that supports HTTP requests. These examples will only work with existing templates stored in your ResponsiveEmail.com account. You will need to fill in the id of said template and your own access token.
 
-<pre class="language-php"><code class="language-php">
-&lt;?php
-// create curl resource
-$ch = curl_init();
 
-// set url
-$href = "https://www.responsiveemail.com/v1/template/$id/json?access_token=$token";
-curl_setopt($ch, CURLOPT_URL, $href);
 
-//return the transfer as a string
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+## PHP
 
-// $output contains the output string
-$output = curl_exec($ch);
 
-// get the status code (should be 200 if all went good)
-$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+```php
+    <?php
+    // create curl resource
+    $ch = curl_init();
 
-// do something with the result if we succeeded
-if ($status == 200) {
-  doSomethingWithResult($output);
-}
+    // set url
+    $href = "https://www.responsiveemail.com/v1/template/$id/json?access_token=$token";
+    curl_setopt($ch, CURLOPT_URL, $href);
 
-// close curl resource to free up system resources
-curl_close($ch);
-?&gt;
-</code></pre>
-    
-    </div>
-    <h2>Python</h2>
-    <div>
-    
-<pre class="language-php"><code class="language-python">
+    //return the transfer as a string
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+    // $output contains the output string
+    $output = curl_exec($ch);
+
+    // get the status code (should be 200 if all went good)
+    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    // do something with the result if we succeeded
+    if ($status == 200) {
+      doSomethingWithResult($output);
+    }
+
+    // close curl resource to free up system resources
+    curl_close($ch);
+?>
+```
+
+
+
+## Python
+
+```python
 #/usr/bin/python2
 import urllib2
 
@@ -58,8 +53,4 @@ try:
     doSomethingWithResult(result)
 except urllib2.URLError, e:
     handleError(e)
-</code></pre>
-
-</div>
-</div>
-</article>
+```
