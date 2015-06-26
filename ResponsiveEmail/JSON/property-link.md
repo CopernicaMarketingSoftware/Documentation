@@ -39,7 +39,7 @@ containing the properties of the links. See table below.
 
 The JSON below represents a link with all available properties, used in a 
 button block.  When the link is clicked, the user will be directed to the URL
-"http://thegiantteapot.com?a=b&type=nonbelieber". The second button in the
+`http://thegiantteapot.com?a=b&type=nonbelieber`. The second button in the
 email has exactly the same link, but here the `link` property is
 given a string value.
 
