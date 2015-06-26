@@ -95,4 +95,4 @@ email should look like, and what content it should have.
 ## Output
 
 
-![](opernica-docs:ResponsiveEmail/json/example-output.png)
+![](copernica-docs:ResponsiveEmail/json/example-output.png)
