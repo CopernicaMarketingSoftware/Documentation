@@ -12,45 +12,45 @@ is running when you use the MTA. The address and login data to access the messag
 be set in the following way. These setting should be the same as your RabbitMQ settings
 that you configured yourself.
 
-*   ###rabbitmq-host:  `<hostname>`
+###rabbitmq-host:  `<hostname>`
 Hostname of your RabbitMQ server. If you have a cluster of RabbitMQ nodes, you can enter multiple hostnames, delimted by a comma (host1, host2, host3...).
 
-*   ###rabbitmq-user:  `<username>`
+###rabbitmq-user:  `<username>`
 User name for RabbitMQ.
 
-*   ###rabbitmq-password: `<password>` 
+###rabbitmq-password: `<password>` 
 Password for RabbitMQ.
 
-*   ###rabbitmq-vhost: `<vhost>`
+###rabbitmq-vhost: `<vhost>`
 The RabbitMQ environment that MailerQ may use
 
-*   ###rabbitmq-exchange: `<exchange>`
+###rabbitmq-exchange: `<exchange>`
 The name of the exchange in RabbitMQ that MailerQ uses to publish all messages to.
 If not explicitly set, MailerQ uses an exchange with the name "mailerq".
 
-*   ###rabbitmq-outbox: `<queue name>`
+###rabbitmq-outbox: `<queue name>`
 Outbox message queue. All outgoing messages are loaded from here. 
 If the outbox queue does not exist yet, MailerQ will create it.
 
-*   ###rabbitmq-results: `<queue name>`
+###rabbitmq-results: `<queue name>`
 Results message queue. All messages that were delivered or could not be delivered are posted here. If the result queue does not exist yet, MailerQ will create it. You can turn off results queue by leaving this field empty.
 
-*   ###rabbitmq-success: `<queue name>`
+###rabbitmq-success: `<queue name>`
 Success message queue. All messages that were successfully delivered are posted here. If the success queue does not exist yet, MailerQ will create it. You can turn off success queue by leaving this field empty.
 
-*   ###rabbitmq-failure: `<queue name>`
+###rabbitmq-failure: `<queue name>`
 Failure message queue. All messages that could not be delivered are posted here. If the failure queue does not exist yet, MailerQ will create it. You can turn off failure queue by leaving this field empty.
 
-*   ###rabbitmq-inbox: `<queue name>`
+###rabbitmq-inbox: `<queue name>`
 Inbox message queue. All messages that are received on the SMTP port are added to this inbox queue where you can pick them up for further processing. Most users set the inbox queue to the same value as the outbox queue. This will cause MailerQ to automatically forward incoming messages.
 
-*   ###rabbitmq-retry: `<queue name>`
+###rabbitmq-retry: `<queue name>`
 If a message can not immediately be delivered, or when it it greylisted and is going to be retries, it is published back to the outbox queue. MailerQ will later automatically pick it up from this outbox queue. If you want to process those intermediate messages too, you can also set a queue with the 'rabbitmq-retry' queue. All copy of all failed deliveries that are going to be retried are posted there (as well as to the 'outbox' queue).
 
-*   ###rabbitmq-persistent: `<0 or 1>` 
+###rabbitmq-persistent: `<0 or 1>` 
 Persistent message delivery mode. You can set this option to 0 to disable persistent delivery mode. It can be useful if your RabbitMQ server cannot keep up with the rate of publishing retries and delivery results. If you enable this feature, all messages published to RabbitMQ will be published _persistently_, meaning that they will be stored to disk by MailerQ.
 
-*   ###rabbitmq-durable: `<0 or 1>`
+###rabbitmq-durable: `<0 or 1>`
 MailerQ creates its own queues and exchanges in RabbitMQ when it starts. With this setting you can control whether these queues and exchanges should be durable or not.
 
 
@@ -60,19 +60,19 @@ It is possible to run multiple instances of MailerQ at the same time, each conne
 
 To use this feature, you should specify in the configuration file the address of the RabbitMQ server and the name of the exchange that is used for communicating between the MailerQ instances.
 
-*   ###cluster-host: `<hostname>`
+###cluster-host: `<hostname>`
 Hostname of the RabbitMQ server that is used for communicating between the running MailerQ instances.
 
-*   ###cluster-user: `<username>`
+###cluster-user: `<username>`
 User name for RabbitMQ.
 
-*   ###cluster-password: `<password>`
+###cluster-password: `<password>`
 Password for RabbitMQ.
 
-*   ###cluster-vhost: `<username>`
+###cluster-vhost: `<username>`
 The RabbitMQ environment that MailerQ uses for cluster communication.
 
-*   ###cluster-exchange: `<username>`
+###cluster-exchange: `<username>`
 Name of the exchange in RabbitMQ that is used for cluster communication.
 
  
@@ -85,7 +85,7 @@ Using a database is optional. Without it, MailerQ will simply send e-mails using
 
 The MailerQ MTA supports a number of database engines: MySQL, SQLite and PostgreSQL. The SQLite is the simplest one and the easiest one to set up (you do not need a seperate database server for it). However, the other supported engines are faster and better suited for high performance servers.
 
-*   ###database: `<database address>`
+###database: `<database address>`
 Name of the MySQL database that MailerQ can use to get the mail sending settings. You will need to have a database in place already. The format for the database address is:
 
 ```
@@ -106,7 +106,7 @@ To overcome this, MailerQ can be configured to store the full message bodies in 
 
 You can use a number of different storage systems for this: Couchbase, MongoDB, Mysql, Sqlite and PostgreSQL. (Be aware that in practice it only makes sense to use Couchbase or MongoDB, because it can handle the required high loads. If you do not have a Couchbase or MongoDB server, you can better not set up a storage system and put the message bodies in RabbitMQ, than using one of the SQL alternatives).
 
-*   ###storage: `<storage address>`
+###storage: `<storage address>`
 The address of a storage server can be specified as follows:
 
 ```
@@ -132,10 +132,10 @@ If, for one reason or another, a message could not immediately be delivered, the
 The interval between attempts grows with the number of attempts. The second attempt will be made only a few minutes after the first, the 10th or 20th attempt can even be many hours or days later. The default number of attempts and the amount of time spent retrying can both be set in the config file.
 
 
-*   ###max-attempts: `<number of attempts>`
+###max-attempts: `<number of attempts>`
 Maximum number of retry attempts. If delivery doesn't succeed in this number of attempts, it is marked as failed and no more delivery attempts will be taken.
 
-*   ###max-deliver-time: `<delay in seconds from first attempt>`
+###max-deliver-time: `<delay in seconds from first attempt>`
 Maximum time in which retry attempts are made. If delivery doesn't succeed during this time, it is marked as failed and will be no further attempts.
 
 ## Normalize line endings
@@ -144,7 +144,7 @@ All lines in an email MIME message must be terminated with linefeed-newline (\r\
 
 Normally, MailerQ trusts you to supply valid MIME messages, with valid line endings. However, if you want MailerQ to repair your messages if the line endings are incorrect, you can enable the following option.
 
-*   ###normalize-mime: `<0|1>`
+###normalize-mime: `<0|1>`
 Let MailerQ normalize line endings to linefeed-newline.
 
 
@@ -154,16 +154,16 @@ MailerQ uses seperate throttle settings for individual domains. The maximum numb
 
 MailerQ always checks if there are domain specific settings stored in the database. If no specific settings can be found in the database, the server will rely on the defaults set in the configuration file. The following config file variables can be used to set these defaults.
 
-*   ###domain-maxmessages: `<messages>`
+###domain-maxmessages: `<messages>`
 Default maximum amount of messages delivered per minute, set to '-1' for no limit. Only used for domains for which no other limit is set.
 
-*   ###domain-maxconnects: `<connection attempts>`
+###domain-maxconnects: `<connection attempts>`
 The maximum number of connection attempts to make to a domain in one minute, set to '-1' for no limit. Only used for domains for which no other limit is set.
 
-*   ###domain-maxconnections: `<connections>`
+###domain-maxconnections: `<connections>`
 The maximum number of connections to a domain that can exist at the same time, set to '-1' for no limit. Only used for domains for which no other limit is set.
 
-*   ###domain-maxqueue: `<length>`
+###domain-maxqueue: `<length>`
 The max number of messages that are kept in memory for this domain. Use '-1' for unlimited.
 
 
@@ -172,26 +172,26 @@ The max number of messages that are kept in memory for this domain. Use '-1' for
 
 Just like it is possible to set limits for a domain, it is also possible to set limits per IP address. The following variables can be used to limit the deliveries to IP addresses. The values for the IP limits in the "config.txt" file are the default values and can be overridden for specific domains in via the management console or in the database.
 
-*   ###ip-maxmessages: `<messages>`
+###ip-maxmessages: `<messages>`
 Default maximum amount of messages delivered per minute, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
 
-*   ###ip-maxconnects: `<connection attempts>`
+###ip-maxconnects: `<connection attempts>`
 The maximum number of connection attempts to make to an IP address in one minute, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
 
-*   ###ip-maxconnections: `<connections>`
+###ip-maxconnections: `<connections>`
 The maximum number of connections that can exist at the same time to an IP address, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
 
 ## Connection limits
 
 Each connection that is made with a remote server also has its limits, and just like the settings per domain and per IP address, these settings can also be configured for specific domains. The settings in the config file are the defaults in case no settings for a domain exist in the database.
 
-*   ###connection-maxmessages: `<messages>`
+###connection-maxmessages: `<messages>`
 This setting defines the maximum number of messages that are sent over a connection, before the connection is closed. When the maximum number of messages is reached, the connection is closed and subsequent messages are sent over a new connection. Set this value to -1 if there should be no limit.
 
-*   ###connection-maxidle: `<miliseconds>`
+###connection-maxidle: `<miliseconds>`
 This variable defines for what time in milliseconds a connection is kept open while it is idle. If two messages to the same domain are sent within the "connection-maxidle" time, they are sent over the same connection. If the time between the messages is greater than the "connection-maxidle" time, the connection closes and a new connection has to be opened before the message can be sent.
 
-*   ###connection-secure: `<0 or 1>`
+###connection-secure: `<0 or 1>`
 This value is either 1 or 0 and it tells MailerQ to try to use encrypted TLS connections to communicate with the remote server. Communication over TLS is slower than communicating over a normal unencrypted connection.
 
 ## Number of threads
@@ -200,27 +200,27 @@ MailerQ starts up multiple worker threads for various tasks. There is a thread f
 
 Next to these threads, MailerQ starts additional threads for sending out SMTP messages. The number of SMTP threads to start can be configured with the max-threads variable. On a dedicated machine it is wise to set this to a value close to the number of cores in the machine (minus about five for the threads mentioned above).
 
-*   ###max-threads: `<threads>`
+###max-threads: `<threads>`
 Number of worker threads for sending out mail and doing the SMTP communication.
 
 ## Number of connections in total
 
 To prevent the server from running out of file descriptors, it only opens a certain number of connections at the same time. Make sure that this variable does not exceed the limit for the number of open files! To let everthing work smoothly, leave at least 100 file descriptors to the application that can be used for communication with databases, logfiles, message queues and dns servers.
 
-*   ###max-connections: `<connections>`
+###max-connections: `<connections>`
 The maximum number of connections at the same time.
 
 ## Memory usage configuration
 
 To prevent the server from running out of memory, you can limit the number of messages loaded into memory.
 
-*   ###max-messages: `<messages>`
+###max-messages: `<messages>`
 This is the number of messages that MailerQ loads from RabbitMQ and stores in internal in-memory queues.
 
-*   ###max-queues: `<queues>`
+###max-queues: `<queues>`
 This is the maximum number of queues which MailerQ is allowed to keep in memory, excluding the temporary queues.
 
-*   ###max-memory: `<memory>`
+###max-memory: `<memory>`
 Max memory to use by MailerQ. This setting can be specified in GB or MB (for example '16GB' or '512MB'). To set it to u###imited leave the value empty.
 
 When the max memory limit is reached, MailerQ stops loading messages from the message queue until more memory is available.
@@ -229,19 +229,19 @@ When the max memory limit is reached, MailerQ stops loading messages from the me
 
 MailerQ opens a web port that can be used for monitoring the application. Go with your browser to http://your-server-name:port to access this management console.
 
-*   ###www-ip: `<ip address>`
+###www-ip: `<ip address>`
 By default, the MailerQ management console can be accessed via all the IP addresses that are available on the server. If you only want to use a single IP, you can use this setting.
 
-*   ###www-port: `<port>`
+###www-port: `<port>`
 Specific port opened to your management console.
 
-*   ###www-host: `<hostname>`
+###www-host: `<hostname>`
 MailerQ automatically detects its hostname by doing a reverse DNS lookup. If you want to use a different host instead, you can use this variable.
 
-*   ###www-dir: `<path to 'www' dir>`
+###www-dir: `<path to 'www' dir>`
 Directory holding the static content (html, javascript, images, css) of the admin console.
 
-*   ###www-password: `<password>`
+###www-password: `<password>`
 Password you want to use to login into the MailerQ management console. Leave this empty if you do not want to use a password for the management console. Make sure to install a firewall so that the web interface can only accessed by you - especially if you do not use a password.
 
 
@@ -257,103 +257,103 @@ Besides limiting the IP addresses that are able to deliver mail to MailerQ throu
 
 To protect the messages delivered from eavesdropping, TLS can be enabled by setting the smtp-certificate and smtp-key to the full path containing the certificate and private key, respectively.
 
-*   ###smtp-ip: `<ip address>`
+###smtp-ip: `<ip address>`
 Normally, MailerQ opens a socket that can be accessed via all the IP addresses that are available on the server. If MailerQ should only be accessible via a specific IP address, you can set that IP with this setting. Make sure the IP address is assigned to the server.
 
-*   ###smtp-port: `<port number>`
+###smtp-port: `<port number>`
 Number for the SMTP port. If this is a set to a value lower than 1024, MailerQ needs to be started by user root.
 
-*   ###smtp-range: `<ip range>`
+###smtp-range: `<ip range>`
 The IP range from which incomming connections are allowed in CIDR notation.
 
-*   ###smtp-username: `<username>`
+###smtp-username: `<username>`
 The username clients have to authenticate for SMTP email delivery.
 
-*   ###smtp-password: `<password>`
+###smtp-password: `<password>`
 The username clients have to authenticate for SMTP email delivery.
 
-*   ###smtp-certificate: `<filename>`
+###smtp-certificate: `<filename>`
 The full path and filename to the file containing the certificate
 
-*   ###smtp-key: `<filename>`
+###smtp-key: `<filename>`
 The full path and filename to the file containing the private key
 
 ## Logging
 
 All abnormal events are logged to the error logfile. This includes failures like databases that are suddenly offline, or RabbitMQ connections that are lost. The name and error of the error log file can be set with the error-log setting.
 
-*   ###error-log: `<filename>`
+###error-log: `<filename>`
 Filename to which errors are logged. The file must of course be writable for MailerQ.
 
 MailerQ also create logfiles for all delivery attempts and for all downloads. Every time that MailerQ tries to send out an email, it writes a line to the send log. When MailerQ downloads a file from the internet (for example an image or an RSS feed) it logs this in the downloads log.
 
 With the following settings you can specify to which directory the logs should be written, the name of the log files (you specify a prefix, MailerQ automatically rotates the log files, and appends a number to prefix), and the maximum size of a log file before MailerQ moves on to the next log file. The number of log files that MailerQ keeps on disk can be limited by setting the 'history' option.
 
-*   ###send-log-directory: `<directory>`
+###send-log-directory: `<directory>`
 Directory where logfiles with send attempts are stored. The directory must be writable for MailerQ.
 
-*   ###send-log-prefix: `<prefix>`
+###send-log-prefix: `<prefix>`
 Prefix of the name of the log files. Default is "attempts.log".
 
-*   ###send-log-history: `<number of files>`
+###send-log-history: `<number of files>`
 This option holds the number of old delivery logfiles to keep on disk before oldest files are removed.
 
-*   ###send-log-maxsize: `<size>`
+###send-log-maxsize: `<size>`
 Maximum size of the log file, before MailerQ rotates the log files and continues writing to a new file. Default is "100MB".
 
-*   ###send-log-maxage: `<seconds>`
+###send-log-maxage: `<seconds>`
 Maximum age of a log file. MailerQ rotates the log files when the current log file gets older than the specified number of seconds. If not set, log files are not rotated based on age.
 
-*   ###download-log-directory: `<directory>`
+###download-log-directory: `<directory>`
 Directory where logfiles with downloads are stored. The directory be writable for MailerQ.
 
-*   ###download-log-prefix: `<prefix>`
+###download-log-prefix: `<prefix>`
 Prefix of the name of the log files. Default is "downloads.log".
 
-*   ###download-log-history: `<number of files>`
+###download-log-history: `<number of files>`
 This option holds the number of old download logfiles to keep on disk before oldest files are removed.
 
-*   ###download-log-maxsize:  `<size>`
+###download-log-maxsize:  `<size>`
 Maximum size of the log file, before MailerQ rotates the log files and continues writing to a new file. Default is "100MB".
 
-*   ###download-log-maxage: `<seconds>`
+###download-log-maxage: `<seconds>`
 Maximum age of a log file. MailerQ rotates the log files when the current log file gets older than the specified number of seconds. If not set, log files are not rotated based on age.
 
 ## License
 
 To work properly, MailerQ needs a license file. The license file can be [downloaded](http://mailerq.com/product/license "MailerQ license") from the MailerQ website. You can store the file anywhere on the file system.
 
-*   ###license: `<path to license.txt>`
+###license: `<path to license.txt>`
 The path to the license file. The default path is "/etc/mailerq/license.txt".
 
 ## User
 
 If you have configured MailerQ to use ports lower than 1024 (like port 25 for SMTP and/or port 80 for the management console), the MTA must be started as user root. Once the ports have been opened, MailerQ changes its identity to the user set in the config file.
 
-*   ###user: `<user name>`
+###user: `<user name>`
 The user name to change identify to after the SMTP and HTTP ports have been opened.
 
 ## Plugins
 
 Normally, MailerQ tries to load plugins from the default plugin directory, which is `/usr/share/mailerq/plugins`. However, if you want to load plugins from another directory instead, you can use the option below to specify the directory from which to load the plugins. Beware, MailerQ will silently continue when the specified directory can not be found, possibly causing plugins not to be loaded without a warning.
 
-*   ###plugin-directory: `<path>`
+###plugin-directory: `<path>`
 The path to the directory where the plugins are located.
 
 ## Smarthosts
 
 When all messages need to be routed via an external mailserver, the smarthost option can be used. This global setting will cause all messages to be routed via the specified smarthost, where authentication is performed using the specified credentials.
 
-*   ###smarthost: `<hostname>`
+###smarthost: `<hostname>`
 Hostname of the smarthost.
 
-*   ###smarthost-port: `<port>`
+###smarthost-port: `<port>`
 Port number on which to contact the smarthost. Defaults to 25 if omitted.
 
-*   ###smarthost-username: `<username>`
+###smarthost-username: `<username>`
 Username to authenticate to the smarthost. Omit if no authentication is required.
 
-*   ###smarthost-password: `<password>`
+###smarthost-password: `<password>`
 Password to authenticate to the smarthost. Omit if no authentication is needed.
 
 ## DNS settings
@@ -374,16 +374,16 @@ The file should contain IPs and hostnames in following format:
 [...]
 ```
 
-*   ###dns-timeout: `<timeout>`
+###dns-timeout: `<timeout>`
 Timeout in milliseconds before MailerQ proceeds to next DNS server. Default is 5000 milliseconds.
 
-*   ###dns-attempts: `<attempts>`
+###dns-attempts: `<attempts>`
 Number of attempts before giving up, defaults to 4.
 
-*   ###dns-force: `<"udp"|"tcp">`
+###dns-force: `<"udp"|"tcp">`
 The communication channel to use, either "udp" or "tcp". The default value is to use both.
 
-*   ###dns-helofile: `<filename>`
+###dns-helofile: `<filename>`
 Loaction of the file containing HELO map.
 
 ## Debugging
@@ -392,21 +392,21 @@ When you're debugging or testing, you can force MailerQ to deliver all messages 
 
 It is recommended to only use this option for debugging; for other purposes such as routing all emails to a single external host the smarthost option should be utilized. This is because internally, MailerQ is still constructing queues and throttling domains, while the server for each domain is equal. With the smarthost option, these internal performance wastes are omitted and everything is routed directly to the external server, improving performance.
 
-*   ###smtp-sink-ip: `<ip address>`
+###smtp-sink-ip: `<ip address>`
 Debug/test IP address to deliver all outgoing emails to.
 
-*   ###smtp-sink-port: `<port>`
+###smtp-sink-port: `<port>`
 Debug/test port number to deliver all outgoing emails to.
 
-*   ###smtp-sink-username: `<username>`
+###smtp-sink-username: `<username>`
 Username to authenticate to the sink.
 
-*   ###smtp-sink-password: `<password>`
+###smtp-sink-password: `<password>`
 Password to authenticate to the sink.
 
 ## Lockfile
 
 To prevent that MailerQ starts more than once, MailerQ stores its process ID (pid) in a lockfile. The name and location of the lockfile can be set in the configuration file.
 
-*   ###lock: `<filename>`
+###lock: `<filename>`
 Location of the lock file. Default is "/tmp/mailerq.pid".
