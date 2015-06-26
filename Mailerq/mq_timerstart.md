@@ -1,6 +1,6 @@
 # Function MQ_TimerStart
 
-This function starts a timer. When the given time runs out, the callback will be invoked, unless the timer is stopped first with [MQ_TimerStop](/documentation/mq_timerstop).
+This function starts a timer. When the given time runs out, the callback will be invoked, unless the timer is stopped first with [MQ_TimerStop](copernica-docs:Mailerq/mq_timerstop).
 
 ```c
 /**
@@ -15,7 +15,7 @@ MQ_Timer *MQ_TimerStart(MQ_Context *context, float timeout, void(*callback)(void
 
 ```
 
-Using timer functionality, we can amend the example for the [MQ_IOWatch](/documentation/mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
+Using timer functionality, we can amend the example for the [MQ_IOWatch](copernica-docs:Mailerq/mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
 
 ```c
 #include <mailerq.h>

@@ -10,7 +10,7 @@ For those of you that want to see the MailerQ management console in action, you 
 
 The status overview shows a summary of the email messages passing through MailerQ. Here you can see how many messages have been processed, delivered, retried, failed and more. It also shows the amount of SMTP connections are currently active and how many are being attempted.
 
-![MailerQ status](/Resources/Images/mailerq-overview.png)
+![MailerQ status](copernica-docs:Mailerq/Images/mailerq-overview.png)
 
 ### AMQP monitor
 
@@ -20,19 +20,19 @@ The Overview interface also shows a summery of the messages going through your R
 
 To get a more detailed picture, the MailerQ MTA management console allows you to zoom in on per-IP performance. This list is updated in real time.
 
-![MailerQ IP's](/Resources/Images/mailerq-mta-ips.png)
+![MailerQ IP's](copernica-docs:Mailerq/Images/mailerq-mta-ips.png)
 
 ## Domains
 
 Not every domain likes to receive email at high rates. The domains view provides real-time information on per-domain performance e.g. queues or failed deliveries. Use this info to make adjustments on the fly for example modify email throttle settings.
 
-![MailerQ domains](/Resources/Images/mailerq-domains.png)
+![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-domains.png)
 
 ## Email throttling
 
 Setting up email throttling can be done in the MailerQ Management Console. All throttling settings can be adjusted in real-time, making it easy to improve your email delivery when needed. You can choose to set up throttling settings for a single domain for all IP addresses or for all IP addresses.
 
-![MailerQ domains](/Resources/Images/mailerq-email-throttling.png)
+![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-email-throttling.png)
 
 ## Flood patterns
 
@@ -61,4 +61,4 @@ Every delivery attempt is registered by MailerQ is saved in the MailerQ log file
 
 One of MailerQ's cool features (if we may say so) is the live SMTP monitor. By starting up the monitor in the management console, your browser opens a [HTML 5 websocket](http://www.websocket.org) to the core MailerQ process. All SMTP traffic received and sent out by MailerQ is also sent to this websocket, so you can exactly keep an eye on what is happening to your mailings.
 
-![MailerQ SMTP monitor with websockets](/Resources/Images/mailerq-websocket.png)
+![MailerQ SMTP monitor with websockets](copernica-docs:Mailerq/Images/mailerq-websocket.png)

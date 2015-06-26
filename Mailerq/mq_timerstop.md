@@ -12,4 +12,4 @@ void MQ_TimerStop(MQ_Timer *timer);
 
 ```
 
-For a detailed example, see [MQ_TimerStart](/documentation/mq_timerstart)
+For a detailed example, see [MQ_TimerStart](copernica-docs:Mailerq/mq_timerstart)
