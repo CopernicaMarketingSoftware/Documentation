@@ -11,55 +11,17 @@ The are various block types that have the `link` property, such as the
 `button` and `link` block. The `link` property accepts a JSON object,
 containing the properties of the links. See table below.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Link</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>link</td>
-            <td><em>object</em></td>
-            <td>Object with link properties. See table below. </td>
-        </tr>
-    </tbody>
-</table>
+| Link |
+| --- |
+| Property | Value | Desc. |
+| link | _object_ | Object with link properties. See table below. |
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Link properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><em>string</em></td>
-            <td>The online location where user is redirected to.</td>
-        </tr>
-        <tr>
-            <td>title</td>
-            <td><em>string</em></td>
-            <td>The link title / description.</td>
-        </tr>
-        <tr>
-            <td>params</td>
-            <td><em>object</em></td>
-            <td>Add or overwrite URL query strings, presented as a key-value pair</td>
-        </tr>
-    </tbody>
-</table>
+| Link properties |
+| --- |
+| Property | Value | Desc. |
+| url | _string_ | The online location where user is redirected to. |
+| title | _string_ | The link title / description. |
+| params | _object_ | Add or overwrite URL query strings, presented as a key-value pair |
 
 ### Absolute and relative links
 
@@ -74,7 +36,7 @@ because tracking of those links is impossible. This doesn't mean of course that 
 You may sometimes find yourself in the situation that you have the uncontrollable urgh to directly
 link to -for instance- a PDF file. The API totally accepts these kind of links and will treat
 them like normal absolute links. For your own deliverabilities sake, make sure to link to 'save' files
-only, as email clients may block links pointing to executables and other files that could carry <s>ebola</s> a virus.
+only, as email clients may block links pointing to executables and other files that could carry ~~ebola~~ a virus.
 
 When directly linking to a file, it is good practice to mention this fact, and the size of the file, e.g., `Download PDF (300kb)`
 
@@ -99,7 +61,7 @@ details. The API allows you to add any of these, on every level.
 Link parameters can be specified on toplevel, meaning that the parameters will be added as a query string to every link in the document. Of course it is also possible to add these params to specific
 links only or to overwrite these params on block level. But more on this later.
 
-`params` are set inside a <em>rewrite rule</em>, the `links` property and then `rewrite` property. Take a look at this example:
+`params` are set inside a _rewrite rule_,, the `links` property and then `rewrite` property. Take a look at this example:
 
 
 ````json

@@ -9,70 +9,19 @@ for this is that most email programs are not capable of showing video's.
 
 All available properties of this block type are mentioned in the table below.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Video block properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td>"video"</td>
-            <td>Property to identify the block as a video block. </td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-source">source</a></td>
-            <td><em>string</em></td>
-            <td>The video source URI</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-link">link</a></td>
-            <td><em>mixed</em></td>
-            <td>A string with the link target, or an object with the properties <code>url</code>, <code>title</code> and <code>params</code>.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-embed">embed</a></td>
-            <td><em>boolean</em></td>
-            <td>A boolean indicating whether or not the full video should be embedded when displaying a webversion</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-align">align</a></td>
-            <td><em>string</em></td>
-            <td>To which side should the video be aligned? default is left.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-background">background</a></td>
-            <td><em>object</em></td>
-            <td>The background settings for the video block.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-margin">margin</a></td>
-            <td><em>mixed</em></td>
-            <td>Margins around the video.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-padding">padding</a></td>
-            <td><em>mixed</em></td>
-            <td>Whitespace around the block, this whitespace will have a background</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-visibility">visibility</a></td>
-            <td><em>object</em></td>
-            <td>Visibility based on device, client and/or receiver.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-container">container</a></td>
-            <td><em>object</em></td>
-            <td>Access to the surrounding container</td>
-        </tr>
-    </tbody>
-</table>
+| Video block properties |
+| --- |
+| Property | Value | Description |
+| type | "video" | Property to identify the block as a video block. |
+| [source](/support/json/property-source) | _string_ | The video source URI |
+| [link](/support/json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`. |
+| [embed](/support/json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
+| [align](/support/json/property-align) | _string_ | To which side should the video be aligned? default is left. |
+| [background](/support/json/property-background) | _object_ | The background settings for the video block. |
+| [margin](/support/json/property-margin) | _mixed_ | Margins around the video. |
+| [padding](/support/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](/support/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
+| [container](/support/json/property-container) | _object_ | Access to the surrounding container |
 
 ## Example usage
 

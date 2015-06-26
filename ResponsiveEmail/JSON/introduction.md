@@ -70,12 +70,6 @@ Add an image
 ## Output
 
 
-<table class="responsive-output">
-    <tr>
-        <td>
-            <img src="//placekitten.com/200/140" />
-        </td>
-    </tr>
-</table>
+![](//placekitten.com/200/140)
 
 [Learn more about content block types](/support/json/property-blocks "Learn more about content block types")

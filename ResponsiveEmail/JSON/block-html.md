@@ -29,65 +29,18 @@ Inside the block you can use sub properties. The most obvious ones were
 already demonstrated in the example, `content` and `type`, but there are
 many more. The following tables lists all supported properties.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Text block properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td>"text"</td>
-            <td>Identifies the block as a text block.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-html-content">content</a></td>
-            <td><em>string</em></td>
-            <td>The textual content of the block. This may include HTML.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font">font</a></td>
-            <td><em>object</em></td>
-            <td>Override the template wide default font properties.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-background">background</a></td>
-            <td><em>object</em></td>
-            <td>The background of the text block.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-margin">margin</a></td>
-            <td><em>mixed</em></td>
-            <td>Margins around the text.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-padding">padding</a></td>
-            <td><em>mixed</em></td>
-            <td>Whitespace around the block, this whitespace will have a background</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-visibility">visibility</a></td>
-            <td><em>object</em></td>
-            <td>Visibility based on device, client and/or receiver.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-rewrite">rewrite</a></td>
-            <td><em>object</em></td>
-            <td>Rewrite rules for urls.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-container">container</a></td>
-            <td><em>object</em></td>
-            <td>Access to the surrounding container </td>
-        </tr>
-    </tbody>
-</table>
+| Text block properties |
+| --- |
+| Property | Value | Description |
+| type | "text" | Identifies the block as a text block. |
+| [content](/support/json/property-html-content) | _string_ | The textual content of the block. This may include HTML. |
+| [font](/support/json/property-font) | _object_ | Override the template wide default font properties. |
+| [background](/support/json/property-background) | _object_ | The background of the text block. |
+| [margin](/support/json/property-margin) | _mixed_ | Margins around the text. |
+| [padding](/support/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](/support/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
+| [rewrite](/support/json/property-rewrite) | _object_ | Rewrite rules for urls. |
+| [container](/support/json/property-container) | _object_ | Access to the surrounding container |
 
 ## Example
 

@@ -22,27 +22,8 @@ This property must point to the URI of a valid JSON object.
 
 The following properties are supported:
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Import block properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td>"import"</td>
-            <td>Identifies the block as a import block.</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-source">source</a></td>
-            <td><em>string</em></td>
-            <td>The source URI of the JSON to import</td>
-        </tr>
-    </tbody>
-</table>
+| Import block properties |
+| --- |
+| Property | Value | Description |
+| type | "import" | Identifies the block as a import block. |
+| [source](/support/json/property-source) | _string_ | The source URI of the JSON to import |
