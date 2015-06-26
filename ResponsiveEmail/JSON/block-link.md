@@ -5,82 +5,21 @@ A block with the type link represents a single link.
 
 In this block you can set `label`, `title` and `link` properties. 
 
-<table class="info">
-        <thead>
-            <tr>
-                <td colspan="3">Link block properties</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="thead">
-                <td>Property</td>
-                <td>Value</td>
-                <td>Desc.</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>"link"</td>
-                <td>Identifies the block as a link block</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-link-label">label</a></td>
-                <td><em>string</em></td>
-                <td>The link text of the link</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-link">link</a></td>
-                <td><em>object</em></td>
-                <td>Same as `url` except that the link property accepts another JSON block
-                    with extra options: `title`, `params`. 
-                </td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-font">font</a></td>
-                <td><em>object</em></td>
-                <td>Font properties for the hyperlink</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-margin">margin</a></td>
-                <td><em>mixed</em></td>
-                <td>Whitespace around the block</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-padding">padding</a></td>
-                <td><em>mixed</em></td>
-                <td>Whitespace around the block, this whitespace will have a background</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-background">background</a></td>
-                <td><em>object</em></td>
-                <td>The background of the block.</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-align">align</a></td>
-                <td><em>string</em></td>
-                <td>The alignment of the link.</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-css">css</a></td>
-                <td><em>object</em></td>
-                <td>Add custom css to the link</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-attributes">attributes</a></td>
-                <td><em>object</em></td>
-                <td>Add custom HTML attributes to the link</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-rewrite">rewrite</a></td>
-                <td><em>object</em></td>
-                <td>Rewrite rules for the link</td>
-            </tr>
-            <tr>
-                <td><a href="/support/json/property-container">container</a></td>
-                <td><em>object</em></td>
-                <td>Get access to the table cell in which this block is wrapped</td>
-            </tr>
-        </tbody>
-</table>
+| Link block properties |
+| --- |
+| Property | Value | Desc. |
+| type | "link" | Identifies the block as a link block |
+| [label](/support/json/property-link-label) | _string_ | The link text of the link |
+| [link](/support/json/property-link) | _object_ | Same as `url` except that the link property accepts another JSON block with extra options: `title`, `params`. |
+| [font](/support/json/property-font) | _object_ | Font properties for the hyperlink |
+| [margin](/support/json/property-margin) | _mixed_ | Whitespace around the block |
+| [padding](/support/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [background](/support/json/property-background) | _object_ | The background of the block. |
+| [align](/support/json/property-align) | _string_ | The alignment of the link. |
+| [css](/support/json/property-css) | _object_ | Add custom css to the link |
+| [attributes](/support/json/property-attributes) | _object_ | Add custom HTML attributes to the link |
+| [rewrite](/support/json/property-rewrite) | _object_ | Rewrite rules for the link |
+| [container](/support/json/property-container) | _object_ | Get access to the table cell in which this block is wrapped |
 
 ## Example
 
