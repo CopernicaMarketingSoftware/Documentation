@@ -33,4 +33,4 @@ will be returned.
 
 ## Related information
 
-Note that the returned HTML code is optimized for *web browsers*. If the template JSON contains [visibility properties](/support/json/property-visibility) that limit certain blocks to only be visible in an email, then these blocks will not be included in the returned HTML code. If you want to fetch the HTML version of an email optimized to use in email messages, use the [/v1/template/{ID}/html](/support/api/get-template-html) method instead.
+Note that the returned HTML code is optimized for *web browsers*. If the template JSON contains [visibility properties](copernica-docs:ResponsiveEmail/json/property-visibility) that limit certain blocks to only be visible in an email, then these blocks will not be included in the returned HTML code. If you want to fetch the HTML version of an email optimized to use in email messages, use the [/v1/template/{ID}/html](copernica-docs:ResponsiveEmail/api/get-template-html) method instead.

@@ -26,8 +26,7 @@ better on different email clients.
 
 ## Example
 
-
-````json
+```json
     {
         "from" : "info@example.com",
         "subject" : "Email with a single button",
@@ -45,5 +44,5 @@ better on different email clients.
             } ]
         }
     }
-````
+```
 

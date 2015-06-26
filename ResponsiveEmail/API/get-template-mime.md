@@ -42,4 +42,4 @@ will be returned.
 
 ## Related information
 
-You can only retrieve the MIME code of templates that you created earlier with a POST call to the [/v1/template](/support/api/post-template) method.
+You can only retrieve the MIME code of templates that you created earlier with a POST call to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
