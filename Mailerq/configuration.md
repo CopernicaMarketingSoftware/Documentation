@@ -160,7 +160,7 @@ MailerQ opens a web port that can be used for monitoring the application. Go wit
 
 ## SMTP server
 
-MailerQ can open a SMTP port to accept incoming emails. All mails that are received on the SMTP port will automatically be published on the [inbox queue](/documentation/configuration/#rabbitmq-inbox "inbox queue"). If this inbox queue is set to the same value as the outbox queue (which most users do), MailerQ automatically forwards all received messages.
+MailerQ can open a SMTP port to accept incoming emails. All mails that are received on the SMTP port will automatically be published on the [inbox queue](copernica-docs:Mailerq/configuration/#rabbitmq-inbox "inbox queue"). If this inbox queue is set to the same value as the outbox queue (which most users do), MailerQ automatically forwards all received messages.
 
 The recommended SMTP port is 25\. To open this port however, MailerQ needs to be started with root privileges. After the port is opened, MailerQ changes its identity to a different (and safer) user.
 

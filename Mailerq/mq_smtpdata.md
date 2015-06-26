@@ -1,6 +1,6 @@
 # Function MQ_SmtpData
 
-Retrieve the plugin managed data pointer stored for this connection. If you've made a call to [MQ_SetSmtpData](/documentation/mq_setsmtpdata) to associate data with a SMTP connection, you can use this function to get back that data pointer.
+Retrieve the plugin managed data pointer stored for this connection. If you've made a call to [MQ_SetSmtpData](copernica-docs:Mailerq/mq_setsmtpdata) to associate data with a SMTP connection, you can use this function to get back that data pointer.
 
 The data pointer is completely ignored by MailerQ. This API function is only provided to give plugins the possibility to associate data with a connection.
 

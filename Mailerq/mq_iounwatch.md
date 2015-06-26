@@ -11,4 +11,4 @@ This function will stop monitoring a file descriptor.
 void MQ_IOUnwatch(MQ_IOWatcher *watcher);
 ````
 
-For a more detailed example, see the [MQ_IOWatch](/documentation/mq_iowatch) documentation
+For a more detailed example, see the [MQ_IOWatch](copernica-docs:Mailerq/mq_iowatch) documentation
