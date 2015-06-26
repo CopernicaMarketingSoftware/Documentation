@@ -14,7 +14,7 @@ with a previous version number will not be affected by the changed API behavior.
 ## What's the difference with the JSON version number?
 
 We use two different version number schemes for the API: "v1", "v2", etcetera, version numbering in the URL's that we
-described above and the [version](/support/json/property-version) property in the JSON templates. What's the difference between these two?
+described above and the [version](copernica-docs:ResponsiveEmail/json/property-version) property in the JSON templates. What's the difference between these two?
 
 The version number in the URL is modified every time we make changes to
 the API end point. For example, if we decide to remove a method from the

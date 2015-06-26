@@ -3,10 +3,10 @@
 With this method you can convert JSON directly into a MIME representation of an
 email, without storing any data on the responsiveemail.com servers.
 
-All the images that you've included images in your input JSON, either via [`image blocks`](/support/json/block-image) or via `<img>` tags inside [`html blocks`](/support/json/block-html),
+All the images that you've included images in your input JSON, either via [`image blocks`](copernica-docs:ResponsiveEmail//json/block-image) or via `<img>` tags inside [`html blocks`](copernica-docs:ResponsiveEmail//json/block-html),
 will be downloaded by ResponsiveEmail.com, and will be embedded in the output mime.
 
-In general, it is considered not to be a good practive to use embedded images. It makes the MIME output much larger, and your email will be more vulnerable to be blocked by spam and/or virus filters. You can therefore better use the [mime api call](/support/api/get-template-mime) to retrieve the MIME with the original image url's still intact.
+In general, it is considered not to be a good practive to use embedded images. It makes the MIME output much larger, and your email will be more vulnerable to be blocked by spam and/or virus filters. You can therefore better use the [mime api call](copernica-docs:ResponsiveEmail/api/get-template-mime) to retrieve the MIME with the original image url's still intact.
 
 
 ## Example request

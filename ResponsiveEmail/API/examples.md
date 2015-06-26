@@ -1,6 +1,6 @@
 # Example code
 
-As explained in the [API reference](copernica-docs:ResponsiveEmail/support/api/introduction), you can do a call to the API with any programming language that supports HTTP requests. These examples will only work with existing templates stored in your ResponsiveEmail.com account. You will need to fill in the id of said template and your own access token.
+As explained in the [API reference](copernica-docs:ResponsiveEmail/api/introduction), you can do a call to the API with any programming language that supports HTTP requests. These examples will only work with existing templates stored in your ResponsiveEmail.com account. You will need to fill in the id of said template and your own access token.
 
 
 
