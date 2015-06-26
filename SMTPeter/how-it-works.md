@@ -18,4 +18,4 @@ to connect to the right server, and that the addresses we send from have
 a reputation sufficient to avoid getting marked as spam. If the receiving
 server can not handle the flow of messages, we throttle back delivery.
 
-![](copernica-docs:SMTPeter/how_does_smtpeter_work_diagram.png)
+![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png)
