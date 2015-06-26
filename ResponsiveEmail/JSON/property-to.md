@@ -1,7 +1,6 @@
 # Properties `to`, `cc` and `bcc`
 
-All addressees of an email are set in the <a href="/support/json/property-to">`to`</a>,
-<a href="/support/json/property-cc">`cc`</a> and <a href="/support/json/property-bcc">`bcc`</a>
+All addressees of an email are set in the [`to`](/support/json/property-to), [`cc`](/support/json/property-cc) and [`bcc`](/support/json/property-bcc)
 fields of the MIME header. In the input JSON object, you can use the JSON properties
 with similar names to specify the addresses to which the email should be sent.
 
@@ -10,7 +9,7 @@ is flexible in reading the input: the input JSON may contain a single receiver, 
 long lists of receivers stored in arrays. The number of receivers in the input JSON
 is not limited.
 
-## 'to' and 'cc' headers
+## `to` and `cc` headers
 
 With the `to` and `cc` properties you specify the `to` and `cc` headers in the MIME message.
 This however does not necessarily mean that the mail is going to be sent to these
@@ -21,7 +20,7 @@ This also is possible with the responsive API: the addresses that you set in the
 and `cc` fields do not have to match the addresses to which you will eventually
 send the email.
 
-## The 'bcc' header
+## The `bcc` header
 
 The `bcc` field is supposed to be a hidden field. When you
 send an email, it will be stripped out of the mail so that the receiver
@@ -83,9 +82,5 @@ recognize the input format that you specify.
 
 ## Related information
 
-The destination addresses are stored in the header of the email. Other <a href="/support/json/top-level-properties">top level
-properties</a> to change the mime header of the generated mime are for example
-<a href="/support/json/property-subject"><code>subject</code></a>,
-<a href="/support/json/property-from"><code>from</code></a>,
-<a href="/support/json/property-reply-to"><code>replyTo</code></a> and the property
-<a href="/support/json/property-headers"><code>headers</code></a>.
+The destination addresses are stored in the header of the email. Other [top level properties](/support/json/top-level-properties) to change the mime header of the generated mime are for example
+The destination addresses are stored in the header of the email. Other [top level properties](/support/json/top-level-properties) to change the mime header of the generated mime are for example [`subject`](/support/json/property-subject), [`from`](/support/json/property-from), [`replyTo`](/support/json/property-reply-to) and the property [`headers`](/support/json/property-headers).

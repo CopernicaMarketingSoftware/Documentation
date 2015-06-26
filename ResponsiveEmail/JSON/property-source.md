@@ -1,8 +1,6 @@
 # Property `source`
 
-The `source` property is used inside <a href="/support/json/block-video">video blocks</a>
-and <a href="/support/json/block-feed">feed blocks</a> and should hold the location of the
-video or feed you want to add to your email.
+The `source` property is used inside [video blocks](/support/json/block-video) and [feed blocks](/support/json/block-feed) and should hold the location of the video or feed you want to add to your email.
 
 When it comes to recognizing video URI's we are pretty tolerant, you can simply copy-and-paste a
 URL to e.g. a Youtube or Vimeo video, and we'll manage to filter out the video identifier.
@@ -25,6 +23,4 @@ URL to e.g. a Youtube or Vimeo video, and we'll manage to filter out the video i
 ````
 
 
-For more information and more examples, please check the documentation
-of <a href="/support/json/block-video">video blocks</a> and
-<a href="/support/json/block-feed">feed blocks</a>.
+For more information and more examples, please check the documentation of [video blocks](/support/json/block-video) and [feed blocks](/support/json/block-feed).

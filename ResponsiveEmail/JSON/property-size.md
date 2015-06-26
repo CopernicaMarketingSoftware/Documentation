@@ -1,7 +1,7 @@
 # Property `size`
 
 The `size` property is used inside a column inside a
-<a href="/support/json/block-columns">columns block</a>. Because 
+[columns block](/support/json/block-columns). Because 
 the API uses a 12 columns wide fluid grid system for lay-out, the sum of the all 
 the column sizes that reside in a block should be 12.
 

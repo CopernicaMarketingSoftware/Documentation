@@ -2,7 +2,7 @@
 
 The `height` property is not normally used, because scaling and resizing
 the image can be best done with the
-<a href="/support/json/property-image-width">`width`</a> property.
+[`width`](/support/json/property-image-width) property.
 However, if you do supply a `height` property it will be used.
 
 ## Using the `height` property in combination with `width`

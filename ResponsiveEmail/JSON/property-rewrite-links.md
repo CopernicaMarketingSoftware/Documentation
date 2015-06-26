@@ -1,6 +1,6 @@
 # Property `links`
 
-Inside the <a href="/support/json/property-rewrite">`rewrite`</a>
+Inside the [`rewrite`](/support/json/property-rewrite)
 property, you can set the nested `links` property to tell the 
 Responsive Email API how you would like to rewrite hyperlinks
 that appear in the mail.
@@ -48,29 +48,10 @@ that all links with hostname `example.org` should be left alone.
 In the above example, we only give an example on how to add parameters
 to the hyperlinks. There are more properties to be set:
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Rewrite rule properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>params</td>
-            <td><em>object</em></td>
-            <td>Parameters to be added to matching urls</td>
-        </tr>
-        <tr>
-            <td>protocol</td>
-            <td><em>string</em></td>
-            <td>Protocol to change</td>
-        </tr>
-    </tbody>
-</table>
+| Rewrite rule properties |
+| --- |
+| Property | Value | Desc. |
+| params | _object_ | Parameters to be added to matching urls |
+| protocol | _string_ | Protocol to change |
 
 

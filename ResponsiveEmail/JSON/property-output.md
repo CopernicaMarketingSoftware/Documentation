@@ -1,7 +1,7 @@
 # Property `ouput`
 
 The `output` property is a deeply nested property that can be used inside
-the <a href="/support/json/property-visibility">`visibility`</a> property to specify
+the [`visibility`](/support/json/property-visibility) property to specify
 under which circumstances a block should be included in the mail.
 
 The responsive email API can generate two versions of an email message based
@@ -17,35 +17,12 @@ have their `output` property set to "mailonly". And when it is outputting
 the version to be emailed, it leaves out the blocks with `output`
 set to "webonly".
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Supported values for the `output` property</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Value</td>
-            <td>&nbsp;</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>"always"</td>
-            <td><em>default</em></td>
-            <td>The block is always included: for the web version and for the mail version.</td>
-        </tr>
-        <tr>
-            <td>"mailonly"</td>
-            <td></td>
-            <td>The block is only included in the mail version.</td>
-        </tr>
-        <tr>
-            <td>"webonly"</td>
-            <td></td>
-            <td>The block is only included in the web version.</td>
-        </tr>
-    </tbody>
-</table>
+| Supported values for the `output` property |
+| --- |
+| Value |  | Desc. |
+| "always" | _default_ | The block is always included: for the web version and for the mail version. |
+| "mailonly" |  | The block is only included in the mail version. |
+| "webonly" |  | The block is only included in the web version. |
 
 
 ## Example

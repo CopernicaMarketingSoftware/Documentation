@@ -12,7 +12,7 @@ Sending email with MailerQ can be done in three different ways, you can either:
 
 Because MailerQ fetches all messages from a RabbitMQ message queue, the fastest way to inject emails is by having your application publish the mails directly to RabbitMQ. This is not difficult. After all, JSON is a [widely known data format](http://www.json.org) that can be easily created and processed by almost every programming language there is, and the message queue can be easily accessed (add messages, remove messages) using the AMQP protocol, for which also [many plugins and libraries](http://www.rabbitmq.com/devtools.html) are available. To help you out, we [created a few examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples") for commonly used languages.
 
-![MailerQ put it in RabbitMQ](/Resources/Images/mailerq-put-it-in-rabbitmq.png)
+![MailerQ put it in RabbitMQ](copernica-docs:Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
 
 On top of that, if you publish the messages directly to a message queue, your script will be faster (publishing to AMQP is fast), and you can use special features that are not available when you use SMTP.
 
@@ -70,11 +70,11 @@ If you do not want to inject mails directly into the RabbitMQ message queue, you
 
 In MailerQ's [config file](copernica-docs:Mailerq/configuration "MailerQ configuration") you can set to which queue emails received by MailerQ are published. Most users set this to the same value as the outbox queue, so that all received emails are automatically published to the outbox queue, from which they are then directly picked up again and scheduled for immediate forwarding.
 
-![MailerQ shared inbox outbox queue](/Resources/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
 
 MailerQ stores all incoming messages first in a message queue. You can add intermediate scripts that process these messages before they are forwarded to the outbox queue. Would you like to add a script that does additional processing or filtering before a message is forwarded? Configure MailerQ to publish received messages in an inbox queue and let your scripts read these messages, from this inbox queue, to process or filter them. After that, post the message to the outbox queue where MailerQ picks them up to deliver them. You might be interested in [AMQPipe](https://www.amqpipe.com "AMQPipe"), a high performance application that reads messages as fast as it can from a RabbitMQ message queue, runs your scripts to process these messages, and publishes the results back to RabbitMQ.
 
-![MailerQ seperate inbox outbox queues](/Resources/Images/mailerq-seperate-inbox-outbox-queues.png)
+![MailerQ seperate inbox outbox queues](copernica-docs:Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
 
 ### SMTP and multiple IP addresses
 
@@ -86,7 +86,7 @@ If you want MailerQ to send out the mail from a different IP address than that y
 
 The MailerQ program can be started in two different modes: as a daemon process that runs all the time and that sends out the messages, or as a command line utility that reads a message from standard input and publishes it to the inbox queue. As a command line utility, MailerQ does not attempt to send out the mail - it only puts the message in the RabbitMQ message queue. You need a seperate running MailerQ daemon process that takes care of the delivery.
 
-![MailerQ mime output](/Resources/Images/mailerq-mime-output-stdout.png)
+![MailerQ mime output](copernica-docs:Mailerq/Images/mailerq-mime-output-stdout.png)
 
 When you normally start up MailerQ, it operates as a daemon process. To start it as a command line utility for reading a message from standard input, you need to pass extra arguments to the program; either the email addresses of the recipients, or the option '--extract-recipients' to tell MailerQ that it should read in a mime message from standard input and filter out the destination addresses from it.
 

@@ -1,31 +1,14 @@
 # Property `corners`   
 
-The `corners` property is a property inside <a href="/support/json/block-button">button blocks</a> that adds
+The `corners` property is a property inside [button blocks](/support/json/block-button) that adds
 rounded corners to a button. Currently you can choose from 3 values.
 
-<table class="info">
-    <thead>
-        <tr><td colspan="3">Property values</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td>default</td>
-            <td>Default button without rounded corners</td>
-        </tr>
-        <tr>
-            <td>radius</td>
-            <td>Adds subtle rounded corners</td>
-        </tr>
-        <tr>
-            <td>round</td>
-            <td>Adds obvious rounded corners for a 'pill-like' button look</td>
-        </tr>
-    </tbody>
-</table>
+| Property values |
+| --- |
+| Value | Description |
+| default | Default button without rounded corners |
+| radius | Adds subtle rounded corners |
+| round | Adds obvious rounded corners for a 'pill-like' button look |
 
 ## Example
 Add rounded corners to a button

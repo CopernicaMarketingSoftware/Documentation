@@ -13,30 +13,11 @@ property accepts a JSON object with optional nested
 sub properties. The `css` and `attributes` in turn also accept JSON blocks containing the 
 CSS properties or element attributes you want to add to the container. 
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Container properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-css">css</a></td>
-            <td><em>object</em></td>
-            <td>Add custom css to the container element</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-attributes">attributes</a></td>
-            <td><em>object</em></td>
-            <td>Add custom HTML attributes to the container element</td>
-        </tr>
-    </tbody>
-</table>
+| Container properties |
+| --- |
+| Property | Value | Description |
+| [css](/support/json/property-css) | _object_ | Add custom css to the container element |
+| [attributes](/support/json/property-attributes) | _object_ | Add custom HTML attributes to the container element |
 
 ## Example
 

@@ -33,5 +33,4 @@ article and instead only show the heading and article content.
 ````
 
 
-For more examples, see the <a href="/support/json/block-feed">
-feed block</a> documentation.
+For more examples, see the [feed block](/support/json/block-feed) documentation.

@@ -1,6 +1,6 @@
 # Tracking property `force`
 
-If you include the <a href="/support/json/property-pixel">`pixel`</a>
+If you include the [`pixel`](/support/json/property-pixel)
 property to add a tracking pixel to your responsive email, you may find
 yourself in a position that the pixel was left out of your email after all!
 

@@ -5,45 +5,14 @@ such as the font-size, color and font-family. The property value should
 be a nested JSON object. The following table lists all 
 sub-properties that can be used inside this nested font block.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Font properties</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Property</td>
-            <td>Value</td>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font#family">family</a></td>
-            <td><em>string</em></td>
-            <td>Equivalent to the CSS font-family property</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font#size">size</a></td>
-            <td><em>string</em></td>
-            <td>Equivalent to the CSS font-size property</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font#lineheight">lineHeight</a></td>
-            <td><em>string</em></td>
-            <td>Equivalent to the CSS line-height property</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font#color">color</a></td>
-            <td><em>string</em></td>
-            <td>Equivalent to the CSS color property</td>
-        </tr>
-        <tr>
-            <td><a href="/support/json/property-font#color">weight</a></td>
-            <td><em>mixed</em></td>
-            <td>Equivalent to the CSS font-weight property</td>
-        </tr>
-    </tbody>
-</table>
+| Font properties |
+| --- |
+| Property | Value | Description |
+| family | _string_ | Equivalent to the CSS font-family property |
+| size | _string_ | Equivalent to the CSS font-size property |
+| lineHeight | _string_ | Equivalent to the CSS line-height property |
+| color | _string_ | Equivalent to the CSS color property |
+| weight | _mixed_ | Equivalent to the CSS font-weight property |
 
 ## Where to use?
 
@@ -95,8 +64,8 @@ specifies the default font for all the texts in the template, and three
 text blocks. The second of the three blocks also has a `font` property,
 and will be displayed with a different font.
 
-<a name="family"></a>
-### Nested property `family`
+
+### Nested property family
 
 The font family is a comma seperated list of font names. It is best to
 use websafe fonts, because your mail will be delivered to many 
@@ -113,22 +82,22 @@ you would like to use.
 ````
 
 
-<a name="size"></a>
-### Nested property `size`
+
+### Nested property size
 
 The `size` property can be used to set the size of the font. If you leave
 it out, the system default will be used instead. The `size` property accepts 
 a string. This means that you can use any type of unit (px, em, %, rem, pt, etcetera). 
 
-<a name="lineheight"></a>
-### Property `lineHeight`
+
+### Property lineHeight
 
 The space between two lines of text, which will set a CSS `line-height` property 
 on the element. The `lineHeight` property accepts a string. This means that you 
 can use any type of unit (px, em, %, rem, pt, etcetera). 
 
-<a name="color"></a>
-### Property `color`
+
+### Property color
 
 The color of the text, equivalent to the CSS color property. Colors may be 
 specified as an RGB triplet or in hexadecimal format. They may also be specified 
@@ -136,12 +105,5 @@ according to their common English names (e.g., 'red', 'PaleGoldenrod').
 
 ## See also
 
-The `font` property can be set as a <a href="/support/json/top-level-properties">top 
-level property</a>, but can also be used in various content blocks, like
-<a href="/support/json/block-text">text blocks</a>, 
-<a href="/support/json/block-link">link blocks</a> and
-<a href="/support/json/block-button">button blocks</a>. Other style
-related properties are for example the 
-<a href="/support/json/property-background">property `background`</a> and
-the <a href="/support/json/property-css">`css` property</a>.
+The `font` property can be set as a [top level property](/support/json/top-level-properties), but can also be used in various content blocks, like [text blocks](/support/json/block-text), [link blocks](/support/json/block-link) and [button blocks](/support/json/block-button). Other style related properties are for example the [property `background`](/support/json/property-background) and the [`css` property](/support/json/property-css).
 

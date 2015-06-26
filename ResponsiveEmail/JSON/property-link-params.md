@@ -31,5 +31,5 @@ property accepts another object, containing the names and values of the URL para
 
 
 The responsive email API ensures that all the supplied parameters are
-encoded and appended to the URL, split by '&amp;' ampersands.
+encoded and appended to the URL, split by `&` ampersands.
 
