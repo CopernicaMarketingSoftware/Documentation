@@ -20,158 +20,36 @@ Uppercase is also an option using ```{$key|toupper}```. Some of these modifiers
 can also take some parameters, for example ```{$key|truncate:13:"...":true}```.
 A complete list of these modifiers and their properties can be found below.
 
-<table class="info">
-    <thead>
-        <tr>
-            <td colspan="3">Modifiers</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="thead">
-            <td>Modifier</td>
-            <td>Properties</td>
-            <td>Desc.</td>
-        </tr>
-        <tr>
-            <td>toupper</td>
-            <td>None</td>
-            <td>Make all the letters uppercase</td>
-        </tr>
-        <tr>
-            <td>tolower</td>
-            <td>None</td>
-            <td>Make all the letters lowercase</td>
-        </tr>
-        <tr>
-            <td>ucfirst</td>
-            <td>None</td>
-            <td>Make sure the first character is uppercase</td>
-        </tr>
-        <tr>
-            <td>cat</td>
-            <td>Every parameter will be concatenated to the input</td>
-            <td>Concatenate multiple string together</td>
-        </tr>
-        <tr>
-            <td>count_words</td>
-            <td>None</td>
-            <td>Count the amount of words in the input string</td>
-        </tr>
-        <tr>
-            <td>count_characters</td>
-            <td>First parameter is a boolean specifying if we should inclue spaces or not, false by default</td>
-            <td>Count the amount of characters in the input string</td>
-        </tr>
-        <tr>
-            <td>count_paragraphs</td>
-            <td>None</td>
-            <td>Count the amount of paragraphs in the input string</td>
-        </tr>
-        <tr>
-            <td>default</td>
-            <td>The value to print when the input is empty</td>
-            <td>Print a specified default value in case the input value is empty</td>
-        </tr>
-        <tr>
-            <td>indent</td>
-            <td>The first parameter is the amount of indents we should insert, default of 4.
-                The second parameter is the character we should use a indent, default is 1 space.</td>
-            <td>Add indentation to all the new lines</td>
-        </tr>
-        <tr>
-            <td>replace</td>
-            <td>First string is the string to look for, the second one is the one to replace it with</td>
-            <td>Apply some simple replace with operations on the input</td>
-        </tr>
-        <tr>
-            <td>regex_replace</td>
-            <td>First string is the regex to search for, the second one is the replace string</td>
-            <td>Apply some simple replace operations based on regex, in case of invalid regex the input string is returned</td>
-        </tr>
-        <tr>
-            <td>nl2br</td>
-            <td>None</td>
-            <td>Replace all the new lines with html new lines</td>
-        </tr>
-        <tr>
-            <td>truncate</td>
-            <td>First parameter is the length at which we should truncate, default is 80.
-                Second parameter is the string we should append to show that it got truncated, default is "...".
-                Third parameter is if we are allowed to break up words or not, default is false.</td>
-            <td>Truncate the input string to a certain length</td>
-        </tr>
-        <tr>
-            <td>count</td>
-            <td>None</td>
-            <td>Count the amount of item inside the map or list</td>
-        </tr>
-        <tr>
-            <td>strlen</td>
-            <td>None</td>
-            <td>Returns the length of the input string</td>
-        </tr>
-        <tr>
-            <td>empty</td>
-            <td>None</td>
-            <td>Returns true if the map, list or string is empty</td>
-        </tr>
-        <tr>
-            <td>trim</td>
-            <td>The characters to trim away, by default this are all whitespace characters</td>
-            <td>Trim of certain characters</td>
-        </tr>
-        <tr>
-            <td>substr</td>
-            <td>First parameter is the character to start the substring at, second parameter is an optional length</td>
-            <td>Take a substring of the input</td>
-        </tr>
-        <tr>
-            <td>strstr</td>
-            <td>One parameter which is the needle</td>
-            <td>Returns part of your input string starting from and including the first occurrence of the needle</td>
-        </tr>
-        <tr>
-            <td>urlencode</td>
-            <td>None</td>
-            <td>Url encode the input</td>
-        </tr>
-        <tr>
-            <td>urldecode</td>
-            <td>None</td>
-            <td>Url decode the input</td>
-        </tr>
-        <tr>
-            <td>md5</td>
-            <td>None</td>
-            <td>Returns a md5 hash of the input</td>
-        </tr>
-        <tr>
-            <td>sha1</td>
-            <td>None</td>
-            <td>Returns a sha1 hash of the input</td>
-        </tr>
-        <tr>
-            <td>sha256</td>
-            <td>None</td>
-            <td>Returns a sha256 hash of the input</td>
-        </tr>
-        <tr>
-            <td>sha512</td>
-            <td>None</td>
-            <td>Returns a sha512 hash of the input</td>
-        </tr>
-        <tr>
-            <td>base64_encode</td>
-            <td>None</td>
-            <td>Base64 encodes the input</td>
-        </tr>
-        <tr>
-            <td>base64_decode</td>
-            <td>None</td>
-            <td>Base64 decode the input</td>
-        </tr>
-    </tbody>
-</table>
+| Modifiers |
+| --- |
+| Modifier | Properties | Desc. |
+| toupper | None | Make all the letters uppercase |
+| tolower | None | Make all the letters lowercase |
+| ucfirst | None | Make sure the first character is uppercase |
+| cat | Every parameter will be concatenated to the input | Concatenate multiple string together |
+| count_words | None | Count the amount of words in the input string |
+| count_characters | First parameter is a boolean specifying if we should inclue spaces or not, false by default | Count the amount of characters in the input string |
+| count_paragraphs | None | Count the amount of paragraphs in the input string |
+| default | The value to print when the input is empty | Print a specified default value in case the input value is empty |
+| indent | The first parameter is the amount of indents we should insert, default of 4. The second parameter is the character we should use a indent, default is 1 space. | Add indentation to all the new lines |
+| replace | First string is the string to look for, the second one is the one to replace it with | Apply some simple replace with operations on the input |
+| regex_replace | First string is the regex to search for, the second one is the replace string | Apply some simple replace operations based on regex, in case of invalid regex the input string is returned |
+| nl2br | None | Replace all the new lines with html new lines |
+| truncate | First parameter is the length at which we should truncate, default is 80. Second parameter is the string we should append to show that it got truncated, default is "...". Third parameter is if we are allowed to break up words or not, default is false. | Truncate the input string to a certain length |
+| count | None | Count the amount of item inside the map or list |
+| strlen | None | Returns the length of the input string |
+| empty | None | Returns true if the map, list or string is empty |
+| trim | The characters to trim away, by default this are all whitespace characters | Trim of certain characters |
+| substr | First parameter is the character to start the substring at, second parameter is an optional length | Take a substring of the input |
+| strstr | One parameter which is the needle | Returns part of your input string starting from and including the first occurrence of the needle |
+| urlencode | None | Url encode the input |
+| urldecode | None | Url decode the input |
+| md5 | None | Returns a md5 hash of the input |
+| sha1 | None | Returns a sha1 hash of the input |
+| sha256 | None | Returns a sha256 hash of the input |
+| sha512 | None | Returns a sha512 hash of the input |
+| base64_encode | None | Base64 encodes the input |
+| base64_decode | None | Base64 decode the input |
 
 ## If statements
 
