@@ -10,8 +10,8 @@ not appear inside the email.
 
 
 The following input JSON contains a very simple example template the top two properties are
-its `name` and `description`. Both the [`name`](/copernica-docs:ResponsiveEmail/json/property-name)
-and  [`description`](/copernica-docs:ResponsiveEmail/json/property-description)
+its `name` and `description`. Both the [`name`](copernica-docs:ResponsiveEmail/json/property-name)
+and  [`description`](copernica-docs:ResponsiveEmail/json/property-description)
 properties are meta properties that are not used by the API to generate the
 email, but that may be helpful to identify and/or describe the template.
 
@@ -40,4 +40,4 @@ email, but that may be helpful to identify and/or describe the template.
 
 ## Related information
 
-The property [`description`](/copernica-docs:ResponsiveEmail/json/property-description) can be used to set a human readable description in the template. Both the name and the description are [top level properties](/copernica-docs:ResponsiveEmail/json/top-level-properties).
+The property [`description`](copernica-docs:ResponsiveEmail/json/property-description) can be used to set a human readable description in the template. Both the name and the description are [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties).

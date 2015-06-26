@@ -11,7 +11,7 @@ templates). This is an optional property.
 
 ## Example
 
-The following input JSON contains a very simple example template the top two properties are its `name` and `description`. Both the [`name`](/copernica-docs:ResponsiveEmail/json/property-name) and [`description`](/copernica-docs:ResponsiveEmail/json/property-description) properties are meta properties that are not used by the API to generate the email, but that may be helpful to identify and/or describe the template.
+The following input JSON contains a very simple example template the top two properties are its `name` and `description`. Both the [`name`](copernica-docs:ResponsiveEmail/json/property-name) and [`description`](copernica-docs:ResponsiveEmail/json/property-description) properties are meta properties that are not used by the API to generate the email, but that may be helpful to identify and/or describe the template.
 
 
 ````javascript
@@ -38,4 +38,4 @@ The following input JSON contains a very simple example template the top two pro
 
 ## Related information
 
-The property [`name`](/copernica-docs:ResponsiveEmail/json/property-name) can be used to give the template a name. Both the [`name`](/copernica-docs:ResponsiveEmail/json/property-name) and the [`description`](/copernica-docs:ResponsiveEmail/json/property-description) are [top level properties](/copernica-docs:ResponsiveEmail/json/top-level-properties).
+The property [`name`](copernica-docs:ResponsiveEmail/json/property-name) can be used to give the template a name. Both the [`name`](copernica-docs:ResponsiveEmail/json/property-name) and the [`description`](copernica-docs:ResponsiveEmail/json/property-description) are [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties).

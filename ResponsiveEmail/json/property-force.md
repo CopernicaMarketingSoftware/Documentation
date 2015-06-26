@@ -1,6 +1,6 @@
 # Tracking property `force`
 
-If you include the [`pixel`](/copernica-docs:ResponsiveEmail/json/property-pixel)
+If you include the [`pixel`](copernica-docs:ResponsiveEmail/json/property-pixel)
 property to add a tracking pixel to your responsive email, you may find
 yourself in a position that the pixel was left out of your email after all!
 

@@ -1,6 +1,6 @@
 # Property `height`
 
-The `height` property is used inside [separator blocks](/copernica-docs:ResponsiveEmail/json/block-separator)
+The `height` property is used inside [separator blocks](copernica-docs:ResponsiveEmail/json/block-separator)
 to configure how much whitespace it should represent, this will default to 4px.
 
 
@@ -25,4 +25,4 @@ to configure how much whitespace it should represent, this will default to 4px.
 
 
 For more information and more examples, please check the documentation
-of [separator blocks](/copernica-docs:ResponsiveEmail/json/block-separator)..
+of [separator blocks](copernica-docs:ResponsiveEmail/json/block-separator)..

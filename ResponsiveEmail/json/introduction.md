@@ -32,13 +32,13 @@ To give you an idea, the following JSON object contains a simple email with just
 
 As you can probably guess from the first example, there are many different properties, e.g. `subject`, `text`, `from`, that can be set. These objects can even hold arrays and nested data.
 
-[Learn more about top level properties](/copernica-docs:ResponsiveEmail/json/top-level-properties "Learn more about top level properties")
+[Learn more about top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties "Learn more about top level properties")
 
 ## The `content` property
 
 The structure and design of emails generated with the API is defined inside the property `content`. Here you can add the blocks that will form your responsive email, based on a 12 columns grid system.
 
-[Learn more about the content property](/copernica-docs:ResponsiveEmail/json/property-content "Learn more about the content property")
+[Learn more about the content property](copernica-docs:ResponsiveEmail/json/property-content "Learn more about the content property")
 
 ## The content block types
 
@@ -72,4 +72,4 @@ Add an image
 
 ![](//placekitten.com/200/140)
 
-[Learn more about content block types](/copernica-docs:ResponsiveEmail/json/property-blocks "Learn more about content block types")
+[Learn more about content block types](copernica-docs:ResponsiveEmail/json/property-blocks "Learn more about content block types")

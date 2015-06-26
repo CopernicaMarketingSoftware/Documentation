@@ -4,7 +4,7 @@ The toplevel property `text` enables you to include a text version of the email 
 
 Responsive emails are created with HTML and CSS. For email clients that
 do not supported HTML, you can include a pure text version of the mail
-as well. This text version can be set in the input JSON as a [top level propery](/copernica-docs:ResponsiveEmail/json/top-level-properties).
+as well. This text version can be set in the input JSON as a [top level propery](copernica-docs:ResponsiveEmail/json/top-level-properties).
 
 The text version is normally not 
 visible because the majority of the email clients nowadays support HTML. 
@@ -40,4 +40,4 @@ versions will be shown.
 ## See also
 
 Besides the text version, your email should of course also have a fully 
-formatted HTML version. This can be set using the [`content` property](/copernica-docs:ResponsiveEmail/json/property-content).
+formatted HTML version. This can be set using the [`content` property](copernica-docs:ResponsiveEmail/json/property-content).

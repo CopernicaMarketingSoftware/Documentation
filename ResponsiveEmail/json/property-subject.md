@@ -33,4 +33,4 @@ or less.
 
 ## Related information
 
-The subject line is stored in the header of the email. Other [top level properties](/copernica-docs:ResponsiveEmail/json/top-level-properties) to change the mime header of the generated mime are for example [`from`](/copernica-docs:ResponsiveEmail/json/property-from), [`to`](/copernica-docs:ResponsiveEmail/json/property-to), [`replyTo`](/copernica-docs:ResponsiveEmail/json/property-reply-to), [`cc`](/copernica-docs:ResponsiveEmail/json/property-cc) and the property [`headers`](/copernica-docs:ResponsiveEmail/json/property-headers).
+The subject line is stored in the header of the email. Other [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) to change the mime header of the generated mime are for example [`from`](copernica-docs:ResponsiveEmail/json/property-from), [`to`](copernica-docs:ResponsiveEmail/json/property-to), [`replyTo`](copernica-docs:ResponsiveEmail/json/property-reply-to), [`cc`](copernica-docs:ResponsiveEmail/json/property-cc) and the property [`headers`](copernica-docs:ResponsiveEmail/json/property-headers).

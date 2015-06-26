@@ -1,6 +1,6 @@
 # Property `src`
 
-The `src` property is used inside [image blocks](/copernica-docs:ResponsiveEmail/json/block-image)
+The `src` property is used inside [image blocks](copernica-docs:ResponsiveEmail/json/block-image)
 and should hold the location of the image you want to add to your email.
 
 
@@ -20,4 +20,4 @@ and should hold the location of the image you want to add to your email.
 
 
 For more information and more examples, please check the documentation
-of [image blocks](/copernica-docs:ResponsiveEmail/json/block-image).
+of [image blocks](copernica-docs:ResponsiveEmail/json/block-image).

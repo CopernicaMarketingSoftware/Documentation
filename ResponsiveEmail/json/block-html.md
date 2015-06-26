@@ -33,14 +33,14 @@ many more. The following tables lists all supported properties.
 | --- |
 | Property | Value | Description |
 | type | "text" | Identifies the block as a text block. |
-| [content](/copernica-docs:ResponsiveEmail/json/property-html-content) | _string_ | The textual content of the block. This may include HTML. |
-| [font](/copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties. |
-| [background](/copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block. |
-| [margin](/copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text. |
-| [padding](/copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [visibility](/copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
-| [rewrite](/copernica-docs:ResponsiveEmail/json/property-rewrite) | _object_ | Rewrite rules for urls. |
-| [container](/copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container |
+| [content](copernica-docs:ResponsiveEmail/json/property-html-content) | _string_ | The textual content of the block. This may include HTML. |
+| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties. |
+| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block. |
+| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text. |
+| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver. |
+| [rewrite](copernica-docs:ResponsiveEmail/json/property-rewrite) | _object_ | Rewrite rules for urls. |
+| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container |
 
 ## Example
 

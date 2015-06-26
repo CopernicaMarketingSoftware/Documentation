@@ -55,7 +55,7 @@ and a text about _banana's_ written in Arial.
 ````
 
 
-[Read more about font properties](/copernica-docs:ResponsiveEmail/json/property-font)
+[Read more about font properties](copernica-docs:ResponsiveEmail/json/property-font)
 
 
 ### Property background
@@ -166,4 +166,4 @@ you would like to add to the container element.
 ````
 
 
-[Read more about the container property](/copernica-docs:ResponsiveEmail/json/property-container)
+[Read more about the container property](copernica-docs:ResponsiveEmail/json/property-container)

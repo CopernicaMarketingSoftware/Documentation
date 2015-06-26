@@ -1,7 +1,7 @@
 # Property `blocks`
 
 The `blocks` property is used inside the 
-[main content section](/copernica-docs:ResponsiveEmail/json/property-content) and holds an array of blocks that make up the mail. Every block in the array should at least have a [`type`](/copernica-docs:ResponsiveEmail/json/property-type)
+[main content section](copernica-docs:ResponsiveEmail/json/property-content) and holds an array of blocks that make up the mail. Every block in the array should at least have a [`type`](copernica-docs:ResponsiveEmail/json/property-type)
 property to identify the block type.
 
 
@@ -31,7 +31,7 @@ by a button.
 ## Use in columns
 
 The `blocks` property is also used if make use of 
-[columns](/copernica-docs:ResponsiveEmail/json/block-columns). Every [column](/copernica-docs:ResponsiveEmail/json/property-columns) also has a `blocks`
+[columns](copernica-docs:ResponsiveEmail/json/block-columns). Every [column](copernica-docs:ResponsiveEmail/json/property-columns) also has a `blocks`
 property that describes the blocks that are placed in the column.
 
 
@@ -74,5 +74,5 @@ property that describes the blocks that are placed in the column.
 
 The above example shows the two uses of the `blocks` property. First you
 see it in action as a property inside the
-[main content section](/copernica-docs:ResponsiveEmail/json/property-content), and
+[main content section](copernica-docs:ResponsiveEmail/json/property-content), and
 then twice when the blocks inside the columns are described.
