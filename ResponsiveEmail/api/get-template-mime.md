@@ -8,23 +8,23 @@ attachments.
 ## Example request
 
 ```txt
-    GET /v1/template/2345/mime?access_token=yourtoken
-    Host: www.responsiveemail.com
+GET /v1/template/2345/mime?access_token=yourtoken
+Host: www.responsiveemail.com
 
-    HTTP/1.1 200 Ok
-    Date: Mon, 03 Nov 2014 16:46:59 GMT
-    Content-Type: multipart/mixed
-    Content-Length: 239872
+HTTP/1.1 200 Ok
+Date: Mon, 03 Nov 2014 16:46:59 GMT
+Content-Type: multipart/mixed
+Content-Length: 239872
 
-    Content-Type: text/html; charset="utf-8"
-    Content-Transfer-Encoding: quoted-printable
-    Mime-Version: 1.0
-    Subject: Responsive email.com example
-    From: Clayton <clayton@copernica.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0
+Subject: Responsive email.com example
+From: Clayton <clayton@copernica.com>
 
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/T=
-    R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
-    tml"><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN http://www.w3.org/T=
+R/xhtml1/DTD/xhtml1-strict.dtd">=0A<html xmlns=3D"http://www.w3.org/1999/xh=
+tml"><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=
 ```
 
 
@@ -42,4 +42,5 @@ will be returned.
 
 ## Related information
 
-You can only retrieve the MIME code of templates that you created earlier with a POST call to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
+You can only retrieve the MIME code of templates that you created earlier with 
+a POST call to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
