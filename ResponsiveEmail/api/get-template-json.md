@@ -6,29 +6,28 @@ template in the URL.
 
 ## Example request
 
+```txt
+GET /v1/template/1234/json?access_token=yourtoken
+Host: www.responsiveemail.com
 
-````txt
-    GET /v1/template/1234/json?access_token=yourtoken
-    Host: www.responsiveemail.com
+HTTP/1.1 200 Ok
+Date: Mon, 03 Nov 2014 16:46:59 GMT
+Content-Type: application/json
+Content-Length: 192
 
-    HTTP/1.1 200 Ok
-    Date: Mon, 03 Nov 2014 16:46:59 GMT
-    Content-Type: application/json
-    Content-Length: 192
-
-    {
-        "subject" : "Test email",
-        "from" : "info@example.com",
-        "content" : {
-            "blocks" : [ {
-                "type" : "text",
-                "source" : "Hello world!"
-            } ]
-        }
+{
+    "subject" : "Test email",
+    "from" : "info@example.com",
+    "content" : {
+        "blocks" : [ {
+            "type" : "text",
+            "source" : "Hello world!"
+        } ]
     }
+}
 ```
-
 
 ## Related information
 
-You can only retrieve the JSON of template resources that you created with an earlier POST call to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
+You can only retrieve the JSON of template resources that you created with an 
+earlier POST call to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
