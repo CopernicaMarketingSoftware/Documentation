@@ -28,7 +28,7 @@ emails always render as you intended.
 ## What about personalization?
 
 Personalization is fully implemented. Check out our documentation how you can 
-[include personalization](/documentation/JSON/personalization "Responsive Email API documentation"). 
+[include personalization](copernica-docs:ResponsiveEmail/json/personalization "Responsive Email API documentation"). 
 Remember: personalisation improves conversion!
 
 ## Is it fast?

@@ -20,10 +20,9 @@ This is the text version of the email.
 
 ## Personalization
 
-In order to [personalize](/personalization) the output it's possible to
-provide additional key-value pairs containing personalization data as parameters
-to the GET request. Without these parameters an unpersonalized output
-will be returned.
+In order to [personalize](copernica-docs:ResponsiveEmail/personalization) the output it's possible to
+provide additional key-value pairs containing personalization data as parameters to the GET request.
+Without these parameters an unpersonalized output will be returned.
 
 ## Related information
 

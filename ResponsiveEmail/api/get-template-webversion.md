@@ -1,8 +1,8 @@
 # API method GET /v1/template/{ID}/webversion
 
-After you've stored a template on the `responsiveemail.com` servers, you
-can retrieve the web version representation of it. The input JSON is converted
-into HTML code that you can host on a web server.
+After you've stored a template on the `responsiveemail.com` servers, you can retrieve the
+web version representation of it. The input JSON is converted into HTML code that you
+can host on a web server.
 
 ## Example request
 
@@ -24,10 +24,9 @@ above example.
 
 ## Personalization
 
-In order to [personalize](/personalization) the output it's possible to
+In order to [personalize](copernica-docs:ResponsiveEmail/personalization) the output it's possible to
 provide additional key-value pairs containing personalization data as parameters
-to the GET request. Without these parameters an unpersonalized output
-will be returned.
+to the GET request. Without these parameters an unpersonalized output will be returned.
 
 ## Related information
 

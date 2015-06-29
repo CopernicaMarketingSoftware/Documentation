@@ -64,28 +64,34 @@ retrieve the template via GET requests.
 ## Supported methods
 The following table lists all the methods that are supported by the API.
 
-| GET methods                                                                                |
-|:-------------------------------------------------------------------------------------------|
-| [/v1/templates/{start}/{length}](copernica-docs:ResponsiveEmail/api/get-templates/)        |
-| [/v1/template/{ID}/json](copernica-docs:ResponsiveEmail/api/get-template-json)             |
-| [/v1/template/{ID}/html](copernica-docs:ResponsiveEmail/api/get-template-html)             |
-| [/v1/template/{ID}/webversion](copernica-docs:ResponsiveEmail/api/get-template-webversion) |
-| [/v1/template/{ID}/mime](copernica-docs:ResponsiveEmail/api/get-template-mime)             |
-| [/v1/template/{ID}/embedded](copernica-docs:ResponsiveEmail/api/get-template-embedded)     |
-| [/v1/template/{ID}/text](copernica-docs:ResponsiveEmail/api/get-template-text)             |
+### GET methods
 
-| POST methods                                                         |
-|:---------------------------------------------------------------------|
-| [/v1/template](copernica-docs:ResponsiveEmail/api/post-template)     |
-| [/v1/html](copernica-docs:ResponsiveEmail/api/post-html)             |
-| [/v1/webversion](copernica-docs:ResponsiveEmail/api/post-webversion) |
-| [/v1/mime](copernica-docs:ResponsiveEmail/api/post-mime)             |
-| [/v1/embedded](copernica-docs:ResponsiveEmail/api/post-embedded)     |
+| Method | Description                                                                                                                                             |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/templates/{start}/{length}](copernica-docs:ResponsiveEmail/api/get-templates/) | Returns a list of your templates                                           |
+| [/v1/template/{ID}/json](copernica-docs:ResponsiveEmail/api/get-template-json) | Returns the JSON representation of an email template.                           |
+| [/v1/template/{ID}/html](copernica-docs:ResponsiveEmail/api/get-template-html) | Returns the HTML representation of an email for use inside an email.            |
+| [/v1/template/{ID}/webversion](copernica-docs:ResponsiveEmail/api/get-template-webversion) | Returns the HTML representation of an email for us as a webversion. |
+| [/v1/template/{ID}/mime](copernica-docs:ResponsiveEmail/api/get-template-mime) | Returns the MIME representation of an email, with externally hosted images      |
+| [/v1/template/{ID}/embedded](copernica-docs:ResponsiveEmail/api/get-template-embedded) | Returns the MIME representation of an email, with embedded images       |
+| [/v1/template/{ID}/text](copernica-docs:ResponsiveEmail/api/get-template-text) | Returns the text version of an email.                                           |
 
-| DELETE methods                                                          |
-|:------------------------------------------------------------------------|
-| [/v1/template/{ID}](copernica-docs:ResponsiveEmail/api/delete-template) |
+### POST methods
+
+| Method | Description                                                                                                                                        |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) | Store a new template.                                                                    |
+| [/v1/html](copernica-docs:ResponsiveEmail/api/post-html) | Convert JSON input into a responsive HTML email, without creating a template resource            |
+| [/v1/webversion](copernica-docs:ResponsiveEmail/api/post-webversion) | Convert JSON input into a responsive website, without creating a template resource   |
+| [/v1/mime](copernica-docs:ResponsiveEmail/api/post-mime) | Convert JSON input into MIME with externally hosted images, without creating a template resource |
+| [/v1/embedded](copernica-docs:ResponsiveEmail/api/post-embedded) | Convert JSON input into MIME with embedded images, without creating a template resource  |
+
+### DELETE methods
+
+| Method | Description                                                                                   |
+|:-------------------------------------------------------------------------------------------------------|
+| [/v1/template/{ID}](copernica-docs:ResponsiveEmail/api/delete-template) | Remove an existing template. |
 
 ## Create your first JSON document
-Head over to the [JSON documentation](copernica-docs:ResponsiveEmail/json/introduction "JSON documentation") 
-and learn how to create your first JSON documentation.
+Head over to the [JSON documentation](copernica-docs:ResponsiveEmail/json/introduction "JSON documentation") and learn how to create your first JSON documentation.
+

@@ -19,13 +19,12 @@ Content-Length: 239872
 <html xmlns="http://www.w3.org/1999/xhtml"><head> ....
 ```
 
-
 To improve readability, we have left out most of the returned HTML code in
 above example.
 
 ## Personalization
 
-In order to [personalize](/personalization) the output it's possible to
+In order to [personalize](copernica-docs:ResponsiveEmail/json/personalization) the output it's possible to
 provide additional key-value pairs containing personalization data as parameters
 to the GET request. Without these parameters an unpersonalized output
 will be returned.

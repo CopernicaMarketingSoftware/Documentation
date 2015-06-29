@@ -35,10 +35,9 @@ first header is the HTTP header, and the second header is part of the returned e
 
 ## Personalization
 
-In order to [personalize](/personalization) the output it's possible to
+In order to [personalize](copernica-docs:ResponsiveEmail/personalization) the output it's possible to
 provide additional key-value pairs containing personalization data as parameters
-to the GET request. Without these parameters an unpersonalized output
-will be returned.
+to the GET request. Without these parameters an unpersonalized output will be returned.
 
 ## Related information
 
