@@ -33,22 +33,20 @@ up a relative part of the container. Thus, if you only want your image to
 take up one third of the container in which it is placed, you can set
 the width to 33%:
 
-
-````javascript
-    {
-        "subject" : "Example email",
-        "from" : "info@example.com",
-        "blocks" : [ {
-            "type" : "image",
-            "src" : "http://www.example.com/logo.png",
-            "width" : "33%"
-        }, {
-            "type" : "html",
-            "source" : "<p>Here comes all the text</p>"
-        } ]
-    }
-````
-
+```javascript
+{
+    "subject" : "Example email",
+    "from" : "info@example.com",
+    "blocks" : [ {
+        "type" : "image",
+        "src" : "http://www.example.com/logo.png",
+        "width" : "33%"
+    }, {
+        "type" : "html",
+        "source" : "<p>Here comes all the text</p>"
+    } ]
+}
+```
 
 In the above example, the image will take up one third of the total
 width the mail. Be aware that this is true for all devices! Even on
@@ -64,30 +62,28 @@ but use [columns](copernica-docs:ResponsiveEmail/json/block-columns) instead.
 Columns are automatically placed under each  other when a device is too 
 small to display them next to each other:
 
-
-````javascript
-    {
-        "subject" : "Example email",
-        "from" : "info@example.com",
-        "blocks" : [ {
-            "type" : "columns",
-            "columns" : [ {
-                "size" : 4,
-                "blocks" : [ {
-                    "type" : "image",
-                    "src" : "http://www.example.com/logo.png"
-                } ],
-                "size" : 8
-                } , {
-                "blocks" : []
-            } ]
-        }, {
-            "type" : "html",
-            "source" : "<p>Here comes all the text</p>"
+```javascript
+{
+    "subject" : "Example email",
+    "from" : "info@example.com",
+    "blocks" : [ {
+        "type" : "columns",
+        "columns" : [ {
+            "size" : 4,
+            "blocks" : [ {
+                "type" : "image",
+                "src" : "http://www.example.com/logo.png"
+            } ],
+            "size" : 8
+            } , {
+            "blocks" : []
         } ]
-    }
-````    
-
+    }, {
+        "type" : "html",
+        "source" : "<p>Here comes all the text</p>"
+    } ]
+}
+```
 
 The example above shows an email that splits the top of the contents
 into two columns. Because ResponsiveEmail.com uses a 12 columns wide fluid
@@ -130,17 +126,17 @@ small devices, even if that means that the image would then be much smaller
 than 290 pixels!
 
 
-````javascript
-    {
-        "subject" : "Example email",
-        "from" : "info@example.com",
-        "blocks" : [ {
-            "type" : "image",
-            "src" : "http://www.example.com/logo.png",
-            "width" : "290px"
-        } ]
-    }
-````
+```javascript
+{
+    "subject" : "Example email",
+    "from" : "info@example.com",
+    "blocks" : [ {
+        "type" : "image",
+        "src" : "http://www.example.com/logo.png",
+        "width" : "290px"
+    } ]
+}
+```
 
 
 For images used inside columns, the conversion to a relative width is also
@@ -164,4 +160,3 @@ height always stays the same. In normal circumstances there is no need
 to set the image height. If you set the 
 [height property](copernica-docs:ResponsiveEmail/json/property-image-height) your
 images may be stretched, and the width to height ratio may change.
-
