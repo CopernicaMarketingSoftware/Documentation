@@ -22,61 +22,71 @@ email addresses.
 ## Examples
 
 
-````javascript
+```javascript
 {
-  "name": "My template",
-  "from" : {
-    "name" : "Name 1",
-    "address" : "info@example.org"
+    "name": "My template",
+    "from" : {
+        "name" : "Name 1",
+        "address" : "info@example.org"
     },
     "replyTo" : {
-      "name" : "Name 2",
-      "address" : "reply-to@example.org"
+        "name" : "Name 2",
+        "address" : "reply-to@example.org"
     },
-  "subject": "I am the best example",
-  "background": {
-    "color": "#FC00CA"
-  },
-  "content": {
-    "blocks": [{
-      "type": "text",
-      "content": "Hello I am the best example text!"
-    }, {
-      "type": "image",
-      "src": "http://www.example.com/best-example.gif"
-    }]
-  }
+    "subject": "I am the best example",
+    "background": {
+        "color": "#FC00CA"
+    },
+    "content": {
+        "blocks": [
+            {
+                "type": "text",
+                "content": "Hello I am the best example text!"
+            }, 
+            {
+                "type": "image",
+                "src": "http://www.example.com/best-example.gif"
+            }
+        ]
+    }
 }
-````
+```
 
 The above code shows the recommended way of setting the from address
 and the reply-to address: as JSON objects with the name and
 email address as nested properties. But you can also assign string
 values:
 
-
-````javascript
+```javascript
 {
-  "name": "My template",
-  "from" : "info@example.org",
-  "replyTo" : "reply-to@example.org",
-  "subject": "I am the best example",
-  "background": {
-    "color": "#FC00CA"
-  },
-  "content": {
-    "blocks": [{
-      "type": "text",
-      "content": "Hello I am the best example text!"
-    }, {
-      "type": "image",
-      "src": "http://www.example.com/best-example.gif"
-    }]
-  }
+    "name": "My template",
+    "from" : "info@example.org",
+    "replyTo" : "reply-to@example.org",
+    "subject": "I am the best example",
+    "background": {
+        "color": "#FC00CA"
+    },
+    "content": {
+        "blocks": [
+            {
+                "type": "text",
+                "content": "Hello I am the best example text!"
+            }, 
+            {
+                "type": "image",
+                "src": "http://www.example.com/best-example.gif"
+            }
+        ]
+    }
 }
-````
-
+```
 
 ## Related information
 
-The sender addresses are stored in the header of the email. Other [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) to change the mime header of the generated mime are for example [`subject`](copernica-docs:ResponsiveEmail/json/property-subject), [`to`](copernica-docs:ResponsiveEmail/json/property-to), [`cc`](copernica-docs:ResponsiveEmail/json/property-cc) and the property [`headers`](copernica-docs:ResponsiveEmail/json/property-headers).
+The sender addresses are stored in the header of the email. Other 
+[top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) 
+to change the mime header of the generated mime are for example 
+[`subject`](copernica-docs:ResponsiveEmail/json/property-subject), 
+[`to`](copernica-docs:ResponsiveEmail/json/property-to), 
+[`cc`](copernica-docs:ResponsiveEmail/json/property-cc) and the property 
+[`headers`](copernica-docs:ResponsiveEmail/json/property-headers).
