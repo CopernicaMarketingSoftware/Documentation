@@ -9,6 +9,7 @@ desktop, tablet and mobile devices. Are you ready to start this awesome journey?
 
 
 ## Getting started
+
 1. ### [Register your app](/app)
 
 Tell us what your app will do and get your API key
