@@ -15,18 +15,16 @@ a transparant pixel, as it will be included in the body of your message.
 
 This example JSON shows you how to include your tracking pixel.
 
-
-````json
-    {
-        "name" : "template13",
-        "subject" : "This email is being tracked by the NSA",
-        "from" : "info@example.com",
-        "tracking" : {
-            "pixel" : "http://www.prism.gov/images/pixel.gif"
-        }
+```javascript
+{
+    "name" : "template13",
+    "subject" : "This email is being tracked by the NSA",
+    "from" : "info@example.com",
+    "tracking" : {
+        "pixel" : "http://www.prism.gov/images/pixel.gif"
     }
-````
-
+}
+```
 
 ## Keeping stats
 
@@ -54,15 +52,14 @@ the JSON. If you want to force the inclusion of the tracking pixel,
 even when your email holds other images, you can do so by setting
 the `force` property:
 
-
-````json
-    {
-        "name" : "template13",
-        "subject" : "This email is being tracked by the NSA",
-        "from" : "info@example.com",
-        "tracking" : {
-            "pixel" : "http://www.prism.gov/images/pixel.gif",
-            "force" : true
-        }
+```javascript
+{
+    "name" : "template13",
+    "subject" : "This email is being tracked by the NSA",
+    "from" : "info@example.com",
+    "tracking" : {
+        "pixel" : "http://www.prism.gov/images/pixel.gif",
+        "force" : true
     }
-````
+}
+```
