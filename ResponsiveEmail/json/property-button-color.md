@@ -1,14 +1,13 @@
 # Property `color`
 
-The `color` property is a simple property inside
-[button blocks](copernica-docs:ResponsiveEmail/json/block-button) used to set the color of
-the button. You can assign color names, as well as hexadecimal color values.
+The `color` property is a simple property inside [button blocks](copernica-docs:ResponsiveEmail/json/block-button) 
+used to set the color of the button. You can assign color names, as well as 
+hexadecimal color values.
 
 ## Example use
 
-
-````json
-    {
+```javascript
+    {   
         "from" : "info@example.com",
         "subject" : "Email with a single button",
         "content" : {
@@ -20,4 +19,4 @@ the button. You can assign color names, as well as hexadecimal color values.
             } ]
         }
     }
-````
+```
