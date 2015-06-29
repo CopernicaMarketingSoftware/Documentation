@@ -35,8 +35,6 @@ As explained in the [API reference](copernica-docs:ResponsiveEmail/api/introduct
 ?>
 ```
 
-
-
 ## Python
 
 ```python

@@ -16,7 +16,7 @@ Yes. As long as you send valid JSON and limit yourself to the basic properties a
 
 ### What about personalization?
 
-Personalization is fully implemented. Check out our documentation how you can [include personalization](/documentation/JSON/personalization "Responsive Email API documentation"). Remember: personalisation improves conversion!
+Personalization is fully implemented. Check out our documentation how you can [include personalization](copernica-docs:ResponsiveEmail/json/personalization "Responsive Email API documentation"). Remember: personalisation improves conversion!
 
 ### Is it fast?
 

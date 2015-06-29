@@ -8,19 +8,19 @@ JSON.
 ## Example request
 
 
-````txt
-    POST /v1/template/?access_token=yourtoken
-    Host: www.responsiveemail.com
-    Content-Type: application/json
+```txt
+POST /v1/template/?access_token=yourtoken
+Host: www.responsiveemail.com
+Content-Type: application/json
 
-    { "name" : "template..." }
+{ "name" : "template..." }
 
-    HTTP/1.1 201 Created
-    Location: https://responsiveemail.com/v1/template/2/html/?access_token=yourtoken
-    Content-Type: application/json
+HTTP/1.1 201 Created
+Location: https://responsiveemail.com/v1/template/2/html/?access_token=yourtoken
+Content-Type: application/json
 
-    { "id" : 2 }
-````
+{ "id" : 2 }
+```
 
 ## Related information
 

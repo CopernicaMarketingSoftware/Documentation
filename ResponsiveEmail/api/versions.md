@@ -7,14 +7,16 @@ Every time we make a change to the API that breaks compatibility we will
 introduce new version numbers. Scripts that call the API using URL's
 with a previous version number will not be affected by the changed API behavior.
 
-| API versions |
-| --- |
+| API versions                                 |
+|:---------------------------------------------|
 | v1 | First, and current, version of the API. |
 
 ## What's the difference with the JSON version number?
 
-We use two different version number schemes for the API: "v1", "v2", etcetera, version numbering in the URL's that we
-described above and the [version](copernica-docs:ResponsiveEmail/json/property-version) property in the JSON templates. What's the difference between these two?
+We use two different version number schemes for the API: "v1", "v2", etcetera,
+version numbering in the URL's that we described above and the
+[version](copernica-docs:ResponsiveEmail/json/property-version) property in the
+JSON templates. What's the difference between these two?
 
 The version number in the URL is modified every time we make changes to
 the API end point. For example, if we decide to remove a method from the
