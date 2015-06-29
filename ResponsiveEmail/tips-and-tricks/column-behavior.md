@@ -9,30 +9,30 @@ with a size of "4". This way the columns fill up all of the 12 cells in the grid
 The left column fills 2/3 of the grid and the right column 1/3.  
 
 ```javascript
-    {
-        "from" : "info@example.com",
-        "subject" : "Email with two blocks side by side",
-        "content" : {
-            "blocks" : [{
-                "type" : "columns",
-                "columns" : [{
-                    "size" : 8,
-                    "blocks" : [{
-                            "type" : "text",
-                            "content" : "I'm just a text block within a column."
-                            }
-                        ]}, 
-                    {
-                    "size" : 4,
-                    "blocks" : [{
-                            "type" : "image",
-                            "src" : "https://responsiveemail.com/example.png",
-                            "alt" : "example image" 
-                    }]
+{
+    "from" : "info@example.com",
+    "subject" : "Email with two blocks side by side",
+    "content" : {
+        "blocks" : [{
+            "type" : "columns",
+            "columns" : [{
+                "size" : 8,
+                "blocks" : [{
+                        "type" : "text",
+                        "content" : "I'm just a text block within a column."
+                        }
+                    ]}, 
+                {
+                "size" : 4,
+                "blocks" : [{
+                        "type" : "image",
+                        "src" : "https://responsiveemail.com/example.png",
+                        "alt" : "example image" 
                 }]
             }]
-        }
+        }]
     }
+}
 ```
 
 In the desktop client this will show text on the left side of the email and an 
@@ -45,7 +45,7 @@ an image block to the left column in order to show it first on mobile clients.
 
 *Column placement on desktop clients (left) and mobile devices (right)*
 
-### Keeping text below images in the mobile version of your email
+## Keeping text below images in the mobile version of your email
 
 The image above shows column behavior on mobile devices, however if you create 
 multiple columns and try to recreate the behavior in the image, the second image 
