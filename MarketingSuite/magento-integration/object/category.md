@@ -1,7 +1,12 @@
 # Category object
 
-A product category. Each product can be assigned to a category. Also each store 
-view has to have a root product category.
+Category is an object representing one Magento category. Category objects are
+structurized into tree-like structure. Each category can be a parent category
+for one or more children. Each category can have one parent. 
+
+Each store view has a root category. Such category can have parents and 
+children. Root category forms a subtree of categories available for given store
+view.
 
 ## Personalization properties
 
