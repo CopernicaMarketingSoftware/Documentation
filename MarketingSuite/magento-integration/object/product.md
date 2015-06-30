@@ -14,7 +14,7 @@ Object representing catalog product. A physical item or service.
 - _number_ **weight**
 - _string_ **URI** Url to product catalog page. 
 - _string_ **image** Url to product image.
-- _collection of [Category](#/menu/documentation/MarketingSuite/magento-integration/object/Category)_ **categories**
+- _collection of [Category](copernica-docs:MarketingSuite/magento-integration/object/category)_ **categories**
 
 ## Links
 [Magento user guide product page](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-information.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____0)

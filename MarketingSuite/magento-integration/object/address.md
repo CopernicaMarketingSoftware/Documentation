@@ -1,11 +1,12 @@
 # Address object
 
-Address object represents a specific location in the world. Inside Magento there are addresses assigned to customer, quotes and orders. 
+Address object represents a specific location in the world. Inside Magento there 
+are addresses assigned to customer, quotes and orders. 
 
 ## Personalization properties
 
 - _number_ **ID**
-- _[Customer](magento/documentation/Customer.md)_ **customer**
+- _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_ **customer**
 - _string_ **street**
 - _string_ **city**
 - _string_ **zipcode**
