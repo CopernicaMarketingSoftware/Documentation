@@ -1,6 +1,6 @@
 # Magento persons list
 
-Persons list is Copernica specific list. Each entity from that list will be build
+Persons list is a Copernica specific list. Each entity from that list will be build
 of compiled information about certain person. What does that mean? For example, 
 when we have a customer that registers for it's first order giving additional 
 informations like address, a new person is created. Later on that user can 
