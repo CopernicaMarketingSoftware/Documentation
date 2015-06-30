@@ -15,6 +15,18 @@ making responsive email templates is easy.
 
 [Read more about Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
 
+## Email sending
+
+Send emails immediately or schedule mailing in the future.
+
+[Read more about Email sending](copernica-docs:MarketingSuite/send-app/introduction)
+
+## Email statistics
+
+Email statistics.
+
+[Read more about Email Statistics](copernica-docs:MarketingSuite/statistics/introduction)
+
 ## Magento integration
 
 Marketing Suite has a built in [Magento](http://magento.com) support. So, setting
