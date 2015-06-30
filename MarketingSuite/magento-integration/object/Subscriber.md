@@ -2,7 +2,7 @@
 
 Subscriber is a person that is subscribed to newsletter. Subscriber can be a customer.
 
-## Personalization properties:
+## Personalization properties
 
 - _number_ **ID**
 - _[Webstore](#/menu/documentation/MarketingSuite/magento-integration/object/Webstore)_ **webstore**

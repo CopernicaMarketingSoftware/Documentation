@@ -2,7 +2,7 @@
 
 Address object represents a specific location in the world. Inside Magento there are addresses assigned to customer, quotes and orders. 
 
-Properties:
+## Personalization properties
 
 - _number_ **ID**
 - _[Customer](magento/documentation/Customer.md)_ **customer**

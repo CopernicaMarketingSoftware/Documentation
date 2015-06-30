@@ -2,7 +2,7 @@
 
 Order item is a product that is sold in certain quantity with certain pricing rules within one order.
 
-## Personalization properties:
+## Personalization properties
 
 - _number_ **ID**
 - _[Order](#/menu/documentation/MarketingSuite/magento-integration/object/Order)_ **order**

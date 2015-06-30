@@ -2,7 +2,7 @@
 
 Quote, or basket is a collection of items that will or were bought. 
 
-## Personalization properties:
+## Personalization properties
 
 - _number_ **ID**
 - _bool_ **active**

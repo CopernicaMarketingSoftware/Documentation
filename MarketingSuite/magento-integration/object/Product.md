@@ -2,7 +2,7 @@
 
 Object representing catalog product. A physical item or service.
 
-## Personalization properties:
+## Personalization properties
 
 - _number_ **ID**
 - _string_ **SKU**

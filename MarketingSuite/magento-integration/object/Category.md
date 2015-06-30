@@ -2,7 +2,7 @@
 
 A product category. Each product can be assigned to a category. Also each store view has to have a root product category.
 
-Properties:
+## Personalization properties
 
 - _number_ **ID**
 - _string_ **name**

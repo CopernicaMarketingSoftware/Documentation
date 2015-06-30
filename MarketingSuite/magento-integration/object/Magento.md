@@ -30,6 +30,6 @@ Product Two 183
 Product Three 333
 ```
 
-## Personalization properties:
+## Personalization properties
 
 * _collection of [Product](#/menu/documentation/MarketingSuite/magento-integration/object/Product)_ **products**

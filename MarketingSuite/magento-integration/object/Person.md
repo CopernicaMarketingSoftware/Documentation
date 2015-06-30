@@ -2,7 +2,7 @@
 
 Person object hold most recent informations about a user. It tracks user by it's email address and applies proper changes to itself with latest informations. For example: When there is a user that registered with Magento, and then same email was used to place an guest order such data will be combined inside person object (containing most recent data).
 
-## Personalization properties:
+## Personalization properties
 
 - _string_ **email**
 - _string_ **firstname**

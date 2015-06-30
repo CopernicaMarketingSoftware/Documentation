@@ -2,7 +2,7 @@
 
 It represents a single Magento store. 
 
-## Properties:
+## Personalization properties
 
 - _number_ **ID**
 - _string_ **name**

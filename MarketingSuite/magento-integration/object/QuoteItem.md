@@ -2,7 +2,7 @@
 
 One item inside a quote/basket.
 
-## Personalization properties:
+## Personalization properties
 
 - _number_ **ID**
 - _[Quote](#/menu/documentation/MarketingSuite/magento-integration/object/Quote)_ **quote**
