@@ -4,6 +4,7 @@
   * [Introduction](copernica-docs:MarketingSuite/template-editor/introduction)
 * [Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
   * [Introduction](copernica-docs:MarketingSuite/magento-integration/introduction)
+  * [Integration](copernica-docs:MarketingSuite/magento-integration/integration)
   * [Personalization objects](copernica-docs:MarketingSuite/magento-integration/personalization)
      * [Address](copernica-docs:MarketingSuite/magento-integration/object/address)
      * [Category](copernica-docs:MarketingSuite/magento-integration/object/category)
