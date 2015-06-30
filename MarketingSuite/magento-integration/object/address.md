@@ -1,7 +1,9 @@
 # Address object
 
-Address object represents a specific location in the world. Inside Magento there 
-are addresses assigned to customer, quotes and orders. 
+Address object represents a specific location in the world. Usually a billing or
+shipping address. Can be assigned to customer, order or quote. Thus there may
+be a situation when two address object can have same ID (one comming from 
+customer other from order). 
 
 ## Personalization properties
 
