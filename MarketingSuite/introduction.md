@@ -1,17 +1,20 @@
 # Introduction
 
-Our new Marketing Suite allows you to compose, send and process emailings. 
-Finally, it will be replacing current set of tools completely. Now
-it integrates with old tools (like database management and SOAP/REST API).
+The Copernica Marketing Suite allows you to create, send and process emails. 
+It gives detailed statistics of your recent email campaigns in a clear
+and easy to use interface. The Marketing Suite is not feature complete yet, 
+however we are working hard to incorporate all current features of publisher.copernica.com
+and many new ones into our new interface.
 
-[Feature parity of Marketing Suite and Publisher](copernica-docs:MarketingSuite/feature-parity)
+
+[Feature list of Marketing Suite and Publisher](copernica-docs:MarketingSuite/feature-parity)
 
 ## Drag and drop Template Editor
 
 One of main features of new Marketing Suite is Drag & Drop Template Editor. This
-editor allows creating emailing templates with no knowledge of HTML or CSS. And 
-since whole editor is based on [ResposinveEmail](http://www.responsiveemail.com),
-making responsive email templates is easy.
+editor allows creating email templates without knowledge of HTML or CSS. And because  
+the whole editor is based on [ResposinveEmail](http://www.responsiveemail.com),
+all emails created with the drag-and-drop editor are responsive.
 
 [Read more about Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
 
@@ -29,7 +32,7 @@ Email statistics.
 
 ## Magento integration
 
-Marketing Suite has a built in [Magento](http://magento.com) support. So, setting
-up mailings based on data from Magento is really easy.
+Marketing Suite has a built in [Magento](http://magento.com) support. Which makes setting
+up email campaigns based on data from a Magento webshop is really easy.
 
 [Read more about Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
