@@ -1,6 +1,6 @@
 # Feature parity
 
-Our old software (Publisher) and our new software (MarketingSuite) differ in 
+Our old software (Publisher) and our new software (MarketingSuite) differs in 
 available features. Eventually all features from old software will be revised 
 and incorporated into new software.
 
@@ -8,10 +8,13 @@ and incorporated into new software.
 
 Currently available features within Marketing Suite are:
 
-* [Template editor](copernica-docs:MarketingSuite/template-editor)
-* [Magento Integration](copernica-docs:MarketingSuite/magento-integration)
+- [Drag & Drop Template editor](copernica-docs:MarketingSuite/template-editor)
+- [Magento Integration](copernica-docs:MarketingSuite/magento-integration)
+- Email presonalization
+- Scheduled emails
+- Periodic emails
 
-## Features missing from Marketing Suite
+Features missing from Marketing Suite:
 
 - Block conditions: you cannot show or hide template blocks based on subscriber data.
 - The posibility to add Google Tracking variables (or other link parameters).
@@ -20,5 +23,5 @@ Currently available features within Marketing Suite are:
 - Social media buttons
 - File and image library
 - Ability to quickly send a testmail
-- Extended email deliverability check (DKIM, Sender ID, SPF). 
+- Follow-ups
 - More minor features
