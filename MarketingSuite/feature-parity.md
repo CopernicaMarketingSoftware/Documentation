@@ -1,4 +1,4 @@
-# Feature parity
+# Feature list
 
 Our old software (Publisher) and our new software (MarketingSuite) differs in 
 available features. Eventually all features from old software will be revised 
