@@ -10,7 +10,7 @@ If you have any questions about the marketing suite or template editor please se
 to [Richard Hordijk](mailto:richard.hordijk@copernica.com).
 
 
-[Feature list of Marketing Suite and Publisher](copernica-docs:MarketingSuite/feature-parity)
+[Feature list of Marketing Suite and Publisher](copernica-docs:MarketingSuite/feature-list)
 
 ## Drag and drop Template Editor
 
