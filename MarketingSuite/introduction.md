@@ -26,7 +26,7 @@ made by Copernica, which means all emails created in the editor are automaticall
 
 After creating your email you can use the marketing suite's send-interface to set up
 your email campaign. Pick a target selection and start sending right away, or schedule
-them for later. 
+your campaigns for recurring or later sending. 
 
 [Read more about Email sending](copernica-docs:MarketingSuite/send-app/introduction)
 
