@@ -40,8 +40,8 @@ graphs show you exactly when and on what device your recipients opened your emai
 
 ## Magento integration
 
-For userse with a Magento webshop the Marketing Suite has a built in [Magento](http://magento.com) support. 
-The integration makes setting up email campaigns based on data from a Magento webshop easy and fast.
+For users with a Magento webshop the Marketing Suite has a built-in [Magento](http://magento.com) integration. 
+This integration makes setting up email campaigns based on data from a Magento webshop easy and fast.
 
 [Read more about Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
 
