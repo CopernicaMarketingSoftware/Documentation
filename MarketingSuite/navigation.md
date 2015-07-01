@@ -17,7 +17,7 @@
      * [Text block](copernica-docs:MarketingSuite/template-editor/blocks/text)
      * [Video block](copernica-docs:MarketingSuite/template-editor/blocks/video)
      * [Webversion block](copernica-docs:MarketingSuite/template-editor/blocks/webversion)
-* [Email sending](copernica-docs:MarketingSuite/send-app/introduction)
+* [Sending Email](copernica-docs:MarketingSuite/send-app/introduction)
 * [Statistics](copernica-docs:MarketingSuite/statistics/introduction)
 * [Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
   * [Introduction](copernica-docs:MarketingSuite/magento-integration/introduction)
