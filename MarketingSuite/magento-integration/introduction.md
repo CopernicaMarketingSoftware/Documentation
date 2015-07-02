@@ -10,7 +10,7 @@ on describing how to work with latest extension.
 
 ## Mailing targets
 
-Firther more, Marketing Suite Magento Extension introduces Magento specific 
+Further more, Marketing Suite Magento Extension introduces Magento specific 
 mailing targets, that are available only after first synchronization.
 
 [Read more about Magento mailing targets](copernica-docs:MarketingSuite/magento-integration/targets)
