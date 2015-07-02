@@ -232,11 +232,20 @@ MailerQ opens a web port that can be used for monitoring the application. Go wit
 ###www-ip: `<ip address>`
 By default, the MailerQ management console can be accessed via all the IP addresses that are available on the server. If you only want to use a single IP, you can use this setting.
 
+###www-host: `<hostname>`
+MailerQ automatically detects its hostname by doing a reverse DNS lookup. If you want to use a different host instead, you can use this variable.
+
 ###www-port: `<port>`
 Specific port opened to your management console.
 
-###www-host: `<hostname>`
-MailerQ automatically detects its hostname by doing a reverse DNS lookup. If you want to use a different host instead, you can use this variable.
+###www-certificate: `<certificate file>`
+Path to certificate file for HTTPS.
+
+###www-privatekey: `<private key file>`
+Path to private key file for HTTPS.
+
+###www-ciphers: `<cipher list>`
+Colon-separated list of allowed ciphers for HTTPS.
 
 ###www-dir: `<path to 'www' dir>`
 Directory holding the static content (html, javascript, images, css) of the admin console.
@@ -277,6 +286,13 @@ The full path and filename to the file containing the certificate
 
 ###smtp-key: `<filename>`
 The full path and filename to the file containing the private key
+
+###smtp-ciphers: `<cipher list>`
+Colon-separated list of allowed ciphers to use when securing incoming SMTP connections with TLS.
+
+###smtp-proxy:
+Enable the PROXY protocol. If this is enabled, MailerQ will expect a PROXY v2 header at the start of every incoming SMTP connection. Be aware that enabling this option without using a PROXY-enabled frontend will break incoming SMTP functionality.
+
 
 ## Logging
 
