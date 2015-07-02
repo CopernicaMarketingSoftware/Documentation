@@ -5,7 +5,6 @@ linked to registered [customer](copernica-docs:MarketingSuite/magento-integratio
 Subscribers can be in different states of subscription. Below all states are
 explained in more detail.
 
-
 ## Subscription status
 
 Subscriptions status is exactly the same subscriptions status as you can find
