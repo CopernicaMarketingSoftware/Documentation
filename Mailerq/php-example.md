@@ -1,12 +1,19 @@
 # PHP example
 
-This example assumes that MailerQ is running and configured and that PHP is working on the server with the [PECL AMQP package](http://pecl.php.net/package/amqp) installed.
+This example assumes that MailerQ is running and configured and that PHP 
+is working on the server with the [PECL AMQP package](http://pecl.php.net/package/amqp) 
+installed.
 
-The PHP example consists of three files; settings.php, send.php and result.php. If you want to use these scripts, save the three files inside the same folder.
+The PHP example consists of three files; settings.php, send.php and result.php. 
+If you want to use these scripts, save the three files inside the same folder.
 
 ### settings.php
 
-The settings.php file, defines the settings that are needed to connect to RabbitMQ and it also contains the settings that are being used for sending an email. If you want to use the PHP example to test your MailerQ configuration, you will have to adjust the values inside the settings.php file to match your configuration of MailerQ.
+The settings.php file, defines the settings that are needed to connect to 
+RabbitMQ and it also contains the settings that are being used for sending 
+an email. If you want to use the PHP example to test your MailerQ configuration, 
+you will have to adjust the values inside the settings.php file to match your 
+configuration of MailerQ.
 
 ```php
 <?php
@@ -41,7 +48,11 @@ $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
 
 ### send.php
 
-This php script connects to RabbitMQ and places a JSON encoded message on the outbox message queue. To connect to RabbitMQ and to create the JSON encoded message, the script uses the values from the settings.php file. If you want to use this script to test your MailerQ configuration, you will have to run the send.php script before running the result.php script.
+This php script connects to RabbitMQ and places a JSON encoded message on 
+the outbox message queue. To connect to RabbitMQ and to create the JSON encoded 
+message, the script uses the values from the settings.php file. If you want 
+to use this script to test your MailerQ configuration, you will have to run 
+the send.php script before running the result.php script.
 
 ```php
 <?php
@@ -159,7 +170,11 @@ $connection->disconnect();
 
 ### result.php
 
-This php script connects to the RabbitMQ server and gets the message, that was placed on the outbox message queue by the send.php script, back from the result message queue. The result message from the result queue is shown to the user. The result.php can only output any relevant information, if it is executed after the send.php script was executed.
+This php script connects to the RabbitMQ server and gets the message, that was 
+placed on the outbox message queue by the send.php script, back from the result 
+message queue. The result message from the result queue is shown to the user. 
+The result.php can only output any relevant information, if it is executed after 
+the send.php script was executed.
 
 ```php
 <?php

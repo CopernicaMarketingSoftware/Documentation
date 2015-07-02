@@ -16,9 +16,8 @@ Because MailerQ is compatible with many different database systems, we do not us
 *   [capacity_per_ip](documentation/database-access#capacity "capacity per IP")
 *   [deliveries_domain](documentation/database-access#deliveries "deliveries domain")
 *   [deliveries_ip](documentation/database-access#deliveries "deliveries IP")
-*   [deliveries_total](documentation/database-access#deliveries "deliveries total")<a></a>
-<a></a>
-*   <a></a>[dkim_keys](documentation/database-access#dkimKeys "DKIM keys")
+*   [deliveries_total](documentation/database-access#deliveries "deliveries total")
+*   [dkim_keys](documentation/database-access#dkimKeys "DKIM keys")
 
 ### Tables 'capacity' and 'capacity_per_ip'
 

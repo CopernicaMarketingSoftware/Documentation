@@ -5,7 +5,7 @@ RabbitMQ is a server application that deals with message queue'ing. Before you'r
 going to install and configure MailerQ, you must therefore first make sure you 
 have access to a working RabbitMQ server. If you have a working and up-to-date 
 RabbitMQ server, you can proceed with setting up MailerQ. Otherwise, check our 
-[RabbitMQ tips and trics article](/documentation/rabbitmq).
+[RabbitMQ tips and tricks article](copernica-docs:Mailerq/rabbitmq).
 
 ## Installing MailerQ
 
@@ -38,11 +38,11 @@ want to make some changes to the configuration file.
 
 ## Configuration
 
-The [MailerQ configuration file](/documentation/configuration "MailerQ configuration")
+The [MailerQ configuration file](copernica-docs:Mailerq/configuration "MailerQ configuration")
 can be found in the "/etc/mailerq" directory and is named "config.txt". It holds
 many options that you should set before you can start mailerq. The most important
 options are the address and login credentials of your RabbitMQ message broker
-and your license key. We have documented [all supported configuration options](/documentation/configuration "MailerQ configuration").
+and your license key. We have documented [all supported configuration options](copernica-docs:Mailerq/configuration "MailerQ configuration").
 A number of options require special attention.
 
 ### RabbitMQ configuration
@@ -98,12 +98,12 @@ $ mailerq
 ```
 
 MailerQ comes with a web based
-[management console](/documentation/management-console "An MTA with a management console")
+[management console](copernica-docs:Mailerq/management-console "An MTA with a management console")
 that you can use to monitor exactly what is happening. This MTA console can be opened
 from your browser. The port number and password can be set in
-the [config file](/documentation/configuration "MailerQ configuration"). 
+the [config file](copernica-docs:Mailerq/configuration "MailerQ configuration"). 
 The default location is http://your-server-name:8485.
 
 To start sending mails with MailerQ, you need
-[to publish an e-mail to the appropriate message queue](/documentation/send-email "Send emails with MailerQ")
-in RabbitMQ or use one of our [examples]/documentation/mailerq-examples "MailerQ examples").
+[to publish an e-mail to the appropriate message queue](copernica-docs:Mailerq/send-email "Send emails with MailerQ")
+in RabbitMQ or use one of our [examples]copernica-docs:Mailerq/mailerq-examples "MailerQ examples").
