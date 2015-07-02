@@ -21,19 +21,19 @@ A will not show up in product's category list.
 
 ## Personalization properties
 
-| Property name   | Property type                                                                                 | Description                                    |
-|-----------------|---------------------------------------------------------------------------------------------- |------------------------------------------------|
-| ID              | _number_                                                                                      | Product ID.                                    |
-| SKU             | _string_                                                                                      | The Stock Keeping Unit.                        |
-| name            | _string_                                                                                      | The product name.                              |
-| description     | _string_                                                                                      | Product description.                           |
-| price           | _string_                                                                                      | Product price in "[currency] [amount]" format. |
-| created         | _string_                                                                                      | The date when product was created.             |
-| updated         | _string_                                                                                      | The last date when product was updated.        |
-| weight          | _string_                                                                                      | The product weight.                            |
-| URI             | _string_                                                                                      | The online address of the product.             |
-| image           | _string_                                                                                      | The online address of product's image.         |
-| categories      | _collection of [Category](copernica-docs:MarketingSuite/magento-integration/object/category)_ | List of categires that product is assigned to. |
+| Property name   | Property type                                                                                 | Description                                     |
+|-----------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------|
+| ID              | _number_                                                                                      | Product ID.                                     |
+| SKU             | _string_                                                                                      | The Stock Keeping Unit.                         |
+| name            | _string_                                                                                      | The product name.                               |
+| description     | _string_                                                                                      | Product description.                            |
+| price           | _string_                                                                                      | Product price in "[currency] [amount]" format.  |
+| created         | _string_                                                                                      | The date when product was created.              |
+| updated         | _string_                                                                                      | The last date when product was updated.         |
+| weight          | _string_                                                                                      | The product weight.                             |
+| URI             | _string_                                                                                      | The online address of the product.              |
+| image           | _string_                                                                                      | The online address of product's image.          |
+| categories      | _collection of [Category](copernica-docs:MarketingSuite/magento-integration/object/category)_ | List of categories that product is assigned to. |
 
 ## Examples
 
@@ -57,4 +57,4 @@ Our new offers:
 ## Links
 
 [Magento user guide product page](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-information.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____0)
-[Stock Keeping Unit wki page](https://en.wikipedia.org/wiki/Stock_keeping_unit)
+[Stock Keeping Unit wiki page](https://en.wikipedia.org/wiki/Stock_keeping_unit)
