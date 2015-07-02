@@ -42,6 +42,33 @@ That's it. In short, the minimal JSON encoded message to put in the queue theref
 
 Note that for ease of reading we added some spaces to the message mime in the above example.
 
+If you wish to secure outgoing mail using DKIM, you can provide the key to use to MailerQ by
+adding an object named "dkim" to the JSON with the following properties:
+
+**DKIM signing requirements**
+
+*   The private key to sign with
+*   The domain name the key belongs to
+*   The DKIM selector
+
+A very simple JSON encoded message using DKIM signing could look like this:
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "From: my-sender-address@my-domain.com\r\n
+             To: info@example.org\r\n
+             Subject:Example subject\r\n\r\n
+             This is the example message text",
+    "dkim": {
+        "domain": "my-domain.com",
+        "selector": "dkim1",
+        "key": "---BEGIN PRIVATE KEY--- ... (actual key) ..."
+    }
+}
+````
+
 If your MailerQ license allows this, you can also assign nested JSON objects to the "mime" field. MailerQ detects whether you set a string or nested object, and will in the latter case process this nested structure, and create a full MIME out of it:
 
 ````
