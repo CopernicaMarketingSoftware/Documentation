@@ -1,13 +1,14 @@
-# Sending an emailing
+# Sending an email
 
-To send a massmailing to a mailing list, click on **Send emailing** in 
-the top bar. This will bring you to the mass mailing settings, where you set 
-the target, the timestamp and the other related settings. 
+To send your campaign to your recipients, click on **Send emailing** in 
+the top bar when you are in the template editor or press **new mailing** in the 
+sidebar when you are in the general interface. This will bring you to the mass 
+mailing settings, where you set the target, the timestamp and the other related settings. 
 
 ## Choosing the target of the emailing. 
 
 The target of an emailing can be an entire database, a selection, a collection,
-a miniselection or a Magento target.
+a miniselection or, if you have a Magento webshop, a Magento target.
 
 These targets are not created in the template editor, but in the old Publisher 
 environment. [Creating mailinglists using selections in the old Publisher environment](https://www.copernica.com/en/blog/selections-and-miniselections).
@@ -33,7 +34,7 @@ the related **Edit** button to make your adjustment.
 
 ## Sending the mailing
 
-You can now finally send your mailing. Hit the **Send** button on the preview 
+You can now send your mailing. Hit the **Send** button on the preview 
 page to start the mailing. Your mailing will start sending immediately or be 
 scheduled if you've chose to send it in the future.  
 
