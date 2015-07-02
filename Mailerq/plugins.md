@@ -70,7 +70,7 @@ If you want your plugin to interact with outgoing SMTP traffic, you can add one 
 
 As you read above, the `mq_version()` function is currently the only function that your plugin is _required_ to implement. All other callbacks are optional. A very basic plugin (one that does nothing) would look like this:
 
-````
+```cpp
 #include <mailerq.h>
 
 /**
@@ -103,7 +103,7 @@ MQ_EXPORT void mq_initialize() {
 MQ_EXPORT void mq_cleanup() {
     // @todo add your own cleanup code
 }
-````
+```
 
 The `MQ_EXPORT` directive is a C #define that is turned by the preprocessor in a statement to ensure that the symbol is correctly exported. If you compile your extension with gcc, it is for example turned into `__attribute__ ((visibility("default")))`.
 

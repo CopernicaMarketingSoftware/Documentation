@@ -16,12 +16,12 @@ Order represents a finalized basket (one that was checked out).
 - _number_ **quantity**
 - _string_ **currency** Currency code
 - _number_ **weight**
-- _collection of [OrderItem](#/menu/documentation/MarketingSuite/magento-integration/object/OrderItem)_ **items**
-- _[Customer](#/menu/documentation/MarketingSuite/magento-integration/object/Customer)_ **customer**
-- _[Address](#/menu/documentation/MarketingSuite/magento-integration/object/Address)_ **billingAddress**
-- _[Address](#/menu/documentation/MarketingSuite/magento-integration/object/Address)_ **deliveryAddress**
+- _collection of [OrderItem](copernica-docs:MarketingSuite/magento-integration/object/order-item)_ **items**
+- _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_ **customer**
+- _[Address](copernica-docs:MarketingSuite/magento-integration/object/address)_ **billingAddress**
+- _[Address](copernica-docs:MarketingSuite/magento-integration/object/address)_ **deliveryAddress**
 - _string_ **IPAddress**
-- _[Webstore](#/menu/documentation/MarketingSuite/magento-integration/object/Webstore)_ **webstore**
+- _[Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)_ **webstore**
 
 ## Links
 
