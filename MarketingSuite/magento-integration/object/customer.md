@@ -1,10 +1,13 @@
-#Customer object
+# Customer object
 
-Customer object is a Magento registered user. It doesn't mean that such object 
-has any orders, baskets, subscriptions or any other kind of data. As a minimum 
-it should have an Id. With normal Magento installation customer is also have 
-an email address, but when using extension that alters register/login process 
-email address could be empty.
+Customer is a registered Magento user. Magento calls every registered user 
+a customer. It doesn't matter if user bought anything from the shop or not.
+
+## Subscription
+
+Customer can be subscribed to newsletter. To check if customer is subscribed 
+`subscribed` property can be used. This property returns current subscription 
+status.
 
 ## Personalization properties
 
@@ -22,3 +25,29 @@ email address could be empty.
 - _collection of [Order](copernica-docs:MarketingSuite/magento-integration/object/order)_ **orders**
 - _collection of [Address](copernica-docs:MarketingSuite/magento-integration/object/address)_ **addresses**
 - _[Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)_ **webstore**
+
+## Examples
+
+If there is a need to create a listing of all customer's [orders](copernica-docs:MarketingSuite/magento-integration/object/order) with informations
+like increment number, grant total, shipiing amount and total weight, following 
+code can be used:
+
+```
+{foreach $order in $customer.orders}
+
+#{$order.increment} Shipping costs: {$order.shippingAmount} Grant total: {$order.grantTotal}
+
+{/foreach}
+```
+
+Will output following:
+
+```
+
+# 123123123001 Shipping costs: EUR 7.99 Grant total: EUR 129.99
+# 123123123002 Shipping costs: EUR 7.99 Grant total: EUR 179.99
+# 123123123003 Shipping costs: EUR 9.99 Grant total: EUR 139.99
+# 123123123004 Shipping costs: EUR 7.99 Grant total: EUR 289.99
+# 123123123005 Shipping costs: EUR 9.99 Grant total: EUR 29.99
+
+```
