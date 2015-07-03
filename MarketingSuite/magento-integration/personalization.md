@@ -15,22 +15,8 @@ to target that contains customers with addresses 'john.doe@example.com' and
 'tim.smith@example.com', Tim Smith will see his own email address inside template, 
 and John Doe will see his own email address inside template.
 
-```
-{foreach $order in $customer.orders}
-    #{$order.increment} {$order.currency} {$order.grandTotal}
-{/foreach}
-```
-
-Will output:
-
-```
-#2009222 EUR 12.33
-#2009223 EUR 13.34
-#2009224 EUR 16.12
-#2009225 EUR 55.22
-```
-
-Below is a table that summarizes what kind of top-level variables are available for given Magento targets.
+Below, you can find a table that summarizes what kind of top-level variables are 
+available for given Magento targets.
 
 | Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  |
 |:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|
