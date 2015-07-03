@@ -1,15 +1,19 @@
 # Personalization
 
-When designing a template for Magento target it's possible to use special SMARTY 
-variables available for such mailings. Each mailing will have `$magento` variable 
-available. This variable will give access to Magento installation data. Beside 
-that each mailing target has set of variables that points to data specific for 
-given destination. For example, when sending a mailing to 3 customers (Bob, Dave 
-and Jane), `$customer` variable in each destination will point to different 
-customer. 
+Email personalization for Magento targets follows same rules as [personalization](copernica-docs:MarketingSuite/template-editor/personalization)
+for publisher targets. Only difference is with top-level variables available
+in such templates.
 
-Beside top-level variables there is also many other variables that can be 
-accessed via top-level ones. 
+With Magento targets variables `$profile` and `$subprofile` are not available. 
+Instead Magento specific variables are available. They differ, depending on
+chosen target. Only [$magento](copernica-docs:MarketingSuite/magento-integration/object/magento) 
+variable is always available.
+
+All variables, beside [$magento](copernica-docs:MarketingSuite/magento-integration/object/magento)
+variable are personalized for each destination. That means, when sending email
+to target that contains customers with addresses 'john.doe@example.com' and
+'tim.smith@example.com', Tim Smith will see his own email address inside template, 
+and John Doe will see his own email address inside template.
 
 ```
 {foreach $order in $customer.orders}
@@ -37,15 +41,15 @@ Below is a table that summarizes what kind of top-level variables are available 
 | $subscriber     | [Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            |
 | $person         | [Person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | No          | No          | No               | Yes           |
 
-_\* `$customer` variable available via Persons list can turn our to be `false`
+_\* `$customer` variable available via Persons list can evaluate to `false`
 value as an indication that given person is not a customer (a guest customer,
 only subscriber, etc.)._
 
 ## Personalization objects
 
-To personalize templates it's required to use predefined objects. It's very 
-close to how data is structurized with [Object Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 
-and how Magento internally works with data. 
+Magento object are related to each other. One customer can have multiple orders,
+subscriber can be a customer, etc. We maintain such relations and we give access
+to them via personalization object.
 
 Below is a list of object types that can be returned from various properties:
 
