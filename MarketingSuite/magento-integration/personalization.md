@@ -1,11 +1,11 @@
 # Personalization
 
 When designing a template for Magento target it's possible to use special SMARTY 
-variables available for such mailings. Each mailing will have *$magento* variable 
+variables available for such mailings. Each mailing will have `$magento` variable 
 available. This variable will give access to Magento installation data. Beside 
 that each mailing target has set of variables that points to data specific for 
 given destination. For example, when sending a mailing to 3 customers (Bob, Dave 
-and Jane), *$customer* variable in each destination will point to different 
+and Jane), `$customer` variable in each destination will point to different 
 customer. 
 
 Beside top-level variables there is also many other variables that can be 
@@ -26,12 +26,12 @@ Will output:
 #2009225 EUR 55.22
 ```
 
-Below is a table that summarizes what kind of top-level variables are available for given targets.
+Below is a table that summarizes what kind of top-level variables are available for given Magento targets.
 
 | Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  |
 |:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|
 | $magento        | [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           |
-| $customer       | [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Yes and No \* |
+| $customer       | [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*       |
 | $quote          | [Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            |
 | $order          | [Order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            |
 | $subscriber     | [Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            |
