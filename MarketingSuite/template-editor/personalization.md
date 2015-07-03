@@ -13,3 +13,8 @@ input fields that have that dollar sign ($) on the right.
 Documentation about our SmartTPL Personalization engine is in the making, 
 but since the syntax is 99% similar to Smarty personalization, you can also take
 a look at our [old documentation](https://www.copernica.com/en/blog/personalize-campaigns).
+
+Do note that unlike in the old environment, the new template editor requires you to always
+specify if the personalization is referring to a profile or sub-profile. This means that
+instead of $FirstName you will have to write $Profile.FirstName. Sub-profiles can be used
+by adding $subprofile.FieldName to your personalization. 
