@@ -1,6 +1,6 @@
 # Order object
 
-When customer decides that he added all neded products inside his basket and 
+When customer decides that he added all needed products inside his basket and 
 goes through checkout, an order is created. Order is a finalized [quote](copernica-docs:MarketingSuite/magento-integration/object/quote).
 
 ## State and status
