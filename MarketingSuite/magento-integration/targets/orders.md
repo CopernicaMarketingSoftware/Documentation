@@ -1,9 +1,7 @@
 # Magento orders list
 
-Order list provides targets that are real orders in Magento environment. 
-That means all baskets that were finalized (user checked out). 
-
-Each mailing target is a [Magento Order](#/menu/documentation/magento/order).
+Order list provides targets based on order informations. It's possible to set 
+up mailing to all customers that bought certain product or from certain category.
 
 ## Personalization variables
 

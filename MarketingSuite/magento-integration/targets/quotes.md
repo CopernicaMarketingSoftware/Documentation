@@ -1,8 +1,7 @@
 # Magento quotes list
 
 Quotes list provides targets that are quotes/baskets. Note that only quotes that 
-have access to email address will be synchronized. Another note is that every 
-order is also a quote.
+have access to email address will be synchronized. 
 
 ## Personalization variables
 

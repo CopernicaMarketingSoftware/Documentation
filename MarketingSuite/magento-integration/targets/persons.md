@@ -8,7 +8,7 @@ decide to make a purchase as a guest. Internally for Magento those are two
 separate users. Thus, when we see that email addresses are the same we can 
 assume that they are the same person. 
 
-Information about that user will be compiled to present most recent ones.
+Information about that user will be compiled to most recent ones.
 
 ## Personalization variables
 
@@ -18,7 +18,7 @@ Variables available for email personalization.
 - [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer) `$customer` \*
 - [Person](copernica-docs:MarketingSuite/magento-integration/object/customer) `$person`
 
-\* _Only when person is a customer. When person is only a subscriber or guest this variable will evaluate to FALSE_
+_\* Only when person is a customer. When person is only a subscriber or guest this variable will evaluate to FALSE_
 
 ## Filter options
 
