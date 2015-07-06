@@ -1,9 +1,9 @@
 # Mailing targets
 
 Each mass mailing that is send with Copernica Marketing Suite has to have 
-a target. Targets are list of email addresses with some data. With classic 
-Copernica account targets are: databases, views, selection, etc. With Magento 
-enabled accounts five new target types come into play: 
+a target. Targets are list of email addresses with some associated data. With
+classic Copernica account targets are: databases, views, selection, etc. With 
+Magento enabled accounts five new target types comes into play: 
 
 - [Magento customers list](copernica-docs:MarketingSuite/magento-integration/targets/customers)
 - [Magento orders list](copernica-docs:MarketingSuite/magento-integration/targets/orders)
@@ -18,7 +18,7 @@ Each list provides different personalization and filtering options.
 For each synchronized store default targets are automatically created. Such 
 targets reflect most basic/common mailing targets. This way mailing target for 
 all subscribers of specific store is always available and doesn't have to be 
-created for each store.
+created for each time.
 
 Default targets will always be created when given set of data is synchronized.
 That means, when a new store view "NEW SHOP" is created, shortly new default 
