@@ -1,6 +1,5 @@
-## Using the REST API
-
 # API reference
+
 The SMTPeter API provides a simple RESTful interface. This means that  
 your application can access the API using the HTTP protocol. With simple (secure) 
 HTTP calls you can create, store and modify email messages (in HTML or MIME  
@@ -31,6 +30,7 @@ SMTPeter processes the messages:
 The fields can be either provided as regular POST data, or
 they can be encoded in JSON. For JSON the Content-Type should
 be set to application/json.
+
 
 ## Authentication
 The API requires an application key (token) that is provided after you register 
