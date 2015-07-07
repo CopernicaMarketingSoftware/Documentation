@@ -58,12 +58,9 @@ $data = array (
 // json encode data
 $data_string = json_encode($data); 
 
-// the token
-$token = '1eccae72f314c25ca1f6eb1c56f92b7d6f46615e5cfb97a2d95fc52eceb6ebef9c90bfad275d1ef79dd7162ad33964e63b';
-
 // set up the curl resource
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send?access_token=$token");
+curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POST, true);
