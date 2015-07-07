@@ -12,7 +12,7 @@ requests will result in a 400 Bad Request response. You can do a call to the API
 with any programming language that supports HTTP requests. 
 
 
-To send a mail this way, simply execute a POST request to
+To send a mail this way, simply execute a POST request with your api token as parameter to
 [https://www.smtpeter.com/v1/send](https://www.smtpeter.com/v1/send).
 
 
@@ -58,9 +58,12 @@ $data = array (
 // json encode data
 $data_string = json_encode($data); 
 
+// your API token
+$token = '123abc...';
+
 // set up the curl resource
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send");
+curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send?access_token={$token}");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POST, true);
