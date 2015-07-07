@@ -6,18 +6,22 @@ HTTP calls you can create, store and modify email messages (in HTML or MIME
 format) and retrieve email statistics. All you need is an 
 [access-token](/app/#/admin/api-access) and you are ready to go. 
 
+
 > **Note:** API requests must use secure HTTPS connections. Unsecure HTTP 
 requests will result in a 400 Bad Request response. You can do a call to the API 
 with any programming language that supports HTTP requests. 
 
+
 To send a mail this way, simply execute a POST request to
 [https://www.smtpeter.com/v1/send](https://www.smtpeter.com/v1/send).
+
 
 The request should contain the following the fields:
 
     envelope: The address the e-mail originated from
     mime: The mime data for the message
     recipient: The email address that will receive the email
+
 
 The following fields are optional, and control the way that
 SMTPeter processes the messages:
@@ -27,9 +31,58 @@ SMTPeter processes the messages:
     bouncetracking: When set to true, bounces will be monitored
     openstracking: When set to true, impressions will be monitored
 
+
 The fields can be either provided as regular POST data, or
 they can be encoded in JSON. For JSON the Content-Type should
 be set to application/json.
+
+Here is an example of POST request in PHP with cURL: 
+
+```php
+<?php
+/**
+ *  Example API call
+ *  Send a mail
+ */
+
+$data = array (
+	"envelope" => "from@email.com",
+	"mime" => "text/html",
+    "recipient" => "to@email.com",
+    "inlinizecss" => true,
+    "clicktracking" => true,
+    "bouncetracking" => false,
+    "openstracking" => true,
+);
+
+// json encode data
+$data_string = json_encode($data); 
+
+// the token
+$token = '1eccae72f314c25ca1f6eb1c56f92b7d6f46615e5cfb97a2d95fc52eceb6ebef9c90bfad275d1ef79dd7162ad33964e63b';
+
+// set up the curl resource
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send?access_token=$token");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+curl_setopt($ch, CURLOPT_HEADER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+    'Content-Type: application/json',                                                                                
+    'Content-Length: ' . strlen($data_string)                                                                       
+));       
+
+// execute the request
+$output = curl_exec($ch);
+
+// output the profile information - includes the header
+echo($output) . PHP_EOL;
+
+// close curl resource to free up system resources
+curl_close($ch);
+```
 
 
 ## Authentication
