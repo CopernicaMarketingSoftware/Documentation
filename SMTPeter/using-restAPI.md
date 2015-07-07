@@ -16,7 +16,7 @@ To send a mail this way, simply execute a POST request to
 [https://www.smtpeter.com/v1/send](https://www.smtpeter.com/v1/send).
 
 
-The request should contain the following the fields:
+The request should contain the following fields:
 
     envelope: The address the e-mail originated from
     mime: The mime data for the message
