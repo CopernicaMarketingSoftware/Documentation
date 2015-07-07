@@ -1,7 +1,7 @@
 # Introduction
 
 The Copernica Marketing Suite is Copernica's brand new application for building rich and 
-powerfull email campaigns. Whilst the Marketing Suite is fully equipped to help you send and create email marketing campaigns, it is not feature complete yet and we are constantly 
+powerful email campaigns. Whilst the Marketing Suite is fully equipped to help you send and create email marketing campaigns, it is not feature complete yet and we are constantly 
 working hard on adding new and more advanced features. 
 
 If you have any questions or suggestions feel free to send a message
@@ -42,7 +42,7 @@ For users with a Magento webshop the Marketing Suite has a built-in [Magento](ht
 
 If you landed on this page, you probably have access to (and maybe also worked in) the Publisher environment. Publisher will eventually replaced by the Copernica Marketing Suite, of which this drag and drop template editor is just a tiny part. Replacing this extensive but outdated software package obviously takes some time. 
 
-Things like managing your lists, unsubscribe behaviour, creating web forms, landing pages, creating emails with advances personalization are not possible in the Copernica Marketing Suite and still need to be done in the old software.
+Things like managing your lists, unsubscribe behaviour, creating web forms, landing pages, creating emails with advanced personalization are not possible in the Copernica Marketing Suite and still need to be done in the old software.
 
 The old Publisher environment can be accessed via [publisher.copernica.com](https://publisher.copernica.com) and requires the same login credentials.  
 

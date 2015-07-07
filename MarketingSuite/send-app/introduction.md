@@ -1,6 +1,6 @@
 # Sending an email
 
-To send your campaign to your recipients, click on **Send emailing** in 
+To send your campaign to a list with subscribers, click on **Send emailing** in 
 the top bar when you are in the template editor or press **new mailing** in the 
 sidebar when you are in the general interface. This will bring you to the mass 
 mailing settings, where you set the target, the timestamp and the other related settings. 

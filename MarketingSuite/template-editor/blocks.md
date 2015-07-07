@@ -1,8 +1,7 @@
 # Blocks
 
-Template Editor can compose email templates from smaller framgments called 
-**blocks**. Most of blocks correspond to [ResponsiveEmail](copernica-docs:ResponsiveEmail/json/property-content) content 
-blocks.
+The drag and drop editor enables you to create email designs from smaller fragments called 
+**blocks**. 
 
 There are couple of different types of blocks available:
 
