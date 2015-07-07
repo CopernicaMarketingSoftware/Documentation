@@ -20,13 +20,13 @@ The request should contain the following fields:
 
     envelope: The address the e-mail originated from
     mime: The mime data for the message
-    recipient: The email address that will receive the email
+    recipients: The email address that will receive the email
 
 
 The following fields are optional, and control the way that
 SMTPeter processes the messages:
 
-    inlinizecss: When set to true, all CSS will be inlined inside the HTML
+    inlineizecss: When set to true, all CSS will be inlined inside the HTML
     clicktracking: When set to true, links will be redirected and logged
     bouncetracking: When set to true, bounces will be monitored
     openstracking: When set to true, impressions will be monitored
@@ -48,8 +48,8 @@ Here is an example of POST request in PHP with cURL:
 $data = array (
 	"envelope" => "from@email.com",
 	"mime" => "text/html",
-    "recipient" => "to@email.com",
-    "inlinizecss" => true,
+    "recipients" => "to@email.com",
+    "inlineizecss" => true,
     "clicktracking" => true,
     "bouncetracking" => false,
     "openstracking" => true,
