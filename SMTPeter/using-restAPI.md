@@ -26,7 +26,7 @@ The request should contain the following fields:
 The following fields are optional, and control the way that
 SMTPeter processes the messages:
 
-    inlineizecss: When set to true, all CSS will be inlined inside the HTML
+    inlinizecss: When set to true, all CSS will be inlined inside the HTML
     clicktracking: When set to true, links will be redirected and logged
     bouncetracking: When set to true, bounces will be monitored
     openstracking: When set to true, impressions will be monitored
@@ -49,7 +49,7 @@ $data = array (
 	"envelope" => "from@email.com",
 	"mime" => "text/html",
     "recipients" => "to@email.com",
-    "inlineizecss" => true,
+    "inlinizecss" => true,
     "clicktracking" => true,
     "bouncetracking" => false,
     "openstracking" => true,
