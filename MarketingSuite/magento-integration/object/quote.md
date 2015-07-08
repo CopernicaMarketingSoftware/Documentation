@@ -1,24 +1,20 @@
 # Quote object
 
-Quote is a Magento name for basket. Quote is a collection of products that 
-customer intends to buy. 
+A **quote** is the basket/shopping cart in Magento lingo. It represents a collection of
+products that the customer intends to buy. 
 
-Quotes can be active or no. An active quote is a quote that has more than one
-item in it and was not finalized by placing order. Quotes that were converted 
+Quotes can be active or inactive. An active quote is a quote that has more than one
+item in it and was not yet finalized by placing the order. Quotes that were converted 
 into orders are considered inactive.
 
-Inside Magento environment quotes could not belong to customers, but such quotes 
-are not synchronized with Copernica. It's mostly cause Magento is creating a lot 
-of quotes. But quotes without customer data are useless for any kind of actions. 
-To save bandwidth and speed up sending important data, such quotes are  
-not synchronized. When such quote is assigned to a customer it will
-be synchronized.
+Not all quotes are synchronized with Magento Sync. The reason for this is that Magento creates
+a lot of quotes that are considered useless for marketing purposes, because it lacks the viable 
+information to target. Only when a quote is assigned to a customer it will be synchronized.
 
-If user asked for price estimate and provided Magento with his address, shipping
-address will also be available.
+If a customer asked for a price estimate and provided Magento with his or her address, the 
+address(es) will also be included in the `quote` object. 
 
-Every quote is assigned to a [webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore),
-in which was created.
+Every quote is assigned to the [webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore) in which was created.
 
 ## Personalization properties
 

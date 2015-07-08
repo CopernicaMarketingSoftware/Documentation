@@ -1,7 +1,7 @@
 # Magento object
 
-This object represents Magento installation. It will grant access to Magento
-resources. At this time it's possible to get access to list of all products and
+The object `magento` represents an entire Magento installation. It will grant access to certain Magento
+resources. At this time it's only possible to get access to a list of all products and
 fetch them by ID.
 
 
@@ -13,7 +13,7 @@ fetch them by ID.
 
 ## Examples
 
-To list couple of new products inside newsletter (let's say product number 455,
+To list a couple of new products inside a newsletter (let's say product number 455,
 444 and 466) we can use following code:
 
 ```

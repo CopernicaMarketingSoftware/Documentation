@@ -1,7 +1,7 @@
 # Address object
 
-Address object represents a specific location in the world. Each [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
-can have multiple addresses assigned to. They can be managed both by customer 
+The object 'address' contains information about a specific location in the world. A [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
+can have one or multiple addresses assigned to it. They can be managed both by customer 
 himself and by Magento administrator. Each [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
 can also have default billing and shipping address.
 

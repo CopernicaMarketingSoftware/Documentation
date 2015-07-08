@@ -1,32 +1,33 @@
 # Subscriber object
 
-Subscriber is a someone that subscribed to newsletter. Optionally, he can be 
-linked to registered [customer](copernica-docs:MarketingSuite/magento-integration/object/customer). 
-Subscribers can be in different states of subscription. Below all states are
-explained in more detail.
+A subscriber is a someone that subscribed to a newsletter. Optionally, he can be 
+linked to a registered [customer](copernica-docs:MarketingSuite/magento-integration/object/customer). 
+
+Subscribers can have different states of subscription. All possible states are
+explained in more detail below.
 
 ## Subscription status
 
-Subscriptions status is exactly the same subscriptions status as you can find
-inside Magento code. Status changes in response to subscribers actions.
+Subscription status in Copernica is exactly the same as the statuses used by Magento. 
+The status of a subscriber changes in response to subscribers actions.
 
 * **unknown**
 
-  This status is the initial subscriptions status. When subscriber is created 
-  inside Magento environment and no action was taken on it this status will show
-  up in Copernica environment. Shortly after creation status should change either
-  to 'subscribed' or 'unconfirmed' or 'not active', depending if Magento 
-  is configured to require confirmation after subscription.
+  This is the initial subscriptions status. When a subscriber is created 
+  inside Magento environment and no action was taken on it yet, this status will show
+  up in Copernica. Shortly hereafter, the creation status should change either
+  to 'subscribed', 'unconfirmed' or 'not active', depending if Magento 
+  is configured to require confirmation (double optin) after subscription.
   
 * **subscribed**
 
-  This status tell us that user actually wants to receive email newsletter and
-  no further confirmation of his will is needed.
+  This status tells us that user actually wants to receive email newsletters and
+  no further confirmation is needed.
   
 * **not active**
 
-  It will show up when Magento is configured to require additional confirmation 
-  after user subscribes to newsletter and an email address is being subscribed 
+  This status will show up when Magento is configured to require additional confirmation 
+  after a user subscribes to newsletter and an email address is being subscribed 
   when no customer is logged on or email address differs from currently logged 
   in user's email address.
   
@@ -36,8 +37,8 @@ inside Magento code. Status changes in response to subscribers actions.
   
 * **unsubscribed**
   
-  This status shows up when user explicitly express the will of not receiving 
-  newsletter emails.
+  This status shows up when user explicitly expresses the will of not receiving 
+  newsletter emails (any longer).
 
 * **unconfirmed**
  

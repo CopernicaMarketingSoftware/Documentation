@@ -1,10 +1,9 @@
 # Magento subscribers list
 
-Subscribers list provides targets that are subscribers. Magento has an internal 
-list of subscribers that is also synchronized with Copernica. It has two 
-benefits. Any way that Magento provides for subscribing for newsletter will be 
-honored by Copernica also. And, changes made by any extension using core Magento 
-newsletter module will be honored.
+The *Subscribers* list provides targets that are subscribers. Magento keeps an internal 
+list of subscribers that is synchronized with Copernica. It is a two way communication. 
+Any way that Magento provides for subscribing for newsletter will be 
+honored by Copernica and the other way around.
 
 ## Personalization variables
 

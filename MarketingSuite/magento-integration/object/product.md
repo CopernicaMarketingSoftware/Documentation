@@ -1,23 +1,21 @@
 # Product object
 
-Product is a real world item or service that can be sold.
+A product is a real world item or service that can be sold. The object `product` 
+holds all available information about a single product and makes it available for 
+email personalization. 
 
 ## Catalog URI
 
-The online address of product is highly depending on how product and whole 
-Magento is configured. One product can be visible from different Magento 
-websites, under different URLs. `URI` property depends on [Magento base URL](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#configuration/general/web.html%3FTocPath%3DConfiguration%7CGeneral%7C_____2) 
-configuration and [product URL key](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-general.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____1). 
+The online address (URL) of a product is highly depending on how the Magento installation is configured. The same product can be visible from different Magento websites, under different URLs. The property `URI` depends on the [Magento base URL](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#configuration/general/web.html%3FTocPath%3DConfiguration%7CGeneral%7C_____2) 
+configuration and the [product URL key](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-general.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____1). 
 
 ## Product categories
 
-Each product can be assigned to one or more categories. Thus, it's possible to
-sell products that are not assigned to any of categories (by direct links). 
+Inside Magento, products can be assigned a category. For instance, a red sports car can be assigned a 
+category 'red'. The same product can be in multiple
+categories (the car can be both red and fast), or can have no category at all. For the product itself this doesn't matter. It still has a product URL, and can thus be linked from an email, just like any other product. 
 
-Inside Magento categories can have children/parent categories, but products are
-assigned to categories without that kind of relation. That means, if we have 
-category A and a child category B, and a product assigned to category B, category
-A will not show up in product's category list.
+For more information about product categories, go to the [category object](copernica-docs:MarketingSuite/magento-integration/objects/category) documentation. 
 
 ## Personalization properties
 
@@ -37,7 +35,7 @@ A will not show up in product's category list.
 
 ## Examples
 
-To include product informations inside newsletter following code can be used:
+To include product information inside your newsletter the following code can be used:
 
 ```
 

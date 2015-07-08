@@ -1,16 +1,19 @@
 # Customer object
 
-Customer is a registered Magento user. Magento calls every registered user 
+A customer is a registered Magento user. Magento calls every registered user 
 a customer. It doesn't matter if user bought anything from the shop or not.
+
+The object `customer`  gives you access to all information related to a single 
+customer. 
 
 ## Subscription
 
-Customer can be subscribed to newsletter. To check if customer is subscribed 
-`subscribed` property can be used. This property returns current subscription 
-status. For more informations about subscription status read _[Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)_
+A customer can be subscribed to newsletter. To check if a customer is subscribed, the 
+`subscribed` property can be used. This property returns the current subscription 
+status. For more information about subscription status read _[Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)_
 page.
 
-For more details about customer subscription `subscriber` property should be used.
+For more details about customer subscription the `subscriber` property should be used.
 
 ## Personalization properties
 
@@ -33,9 +36,7 @@ For more details about customer subscription `subscriber` property should be use
 
 ## Examples
 
-If there is a need to create a listing of all customer's [orders](copernica-docs:MarketingSuite/magento-integration/object/order) 
-with informations like increment number, grant total, shipping amount and total 
-weight, following code can be used:
+If you want to enlist all [orders](copernica-docs:MarketingSuite/magento-integration/object/order) of a customer with the increment number, grant total, shipping amount and total weight, the following code can be used:
 
 ```
 {foreach $order in $customer.orders}

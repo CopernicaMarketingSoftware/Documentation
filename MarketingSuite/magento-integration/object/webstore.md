@@ -1,22 +1,24 @@
 # Webstore object
 
 Each Magento installation is structurized with websites, stores and store views.
-Those are basic building blocks used to setup Magento installation. 
+Those are considered the basic building blocks used to setup a Magento installation. 
 
-**Magento website** represents the actual website that can be found under given
+The **Magento website** represents the actual website that can be found under given
 URL. Each of **Magento websites** can have one or more **Magento stores**. Each 
 of[Magento products](copernica-docs:MarketingSuite/magento-integration/object/product)
 has to be assigned to website to be visible on that website.
 
 **Magento store** should represent an actual store. Instead it represents a part
-of a Magento website with given [category](copernica-docs:MarketingSuite/magento-integration/object/category) 
-to limit amount of products available inside given store. **Magento store** can
+of a Magento website with the given [category](copernica-docs:MarketingSuite/magento-integration/object/category) or categories. 
+
+To limit amount of products available inside given store. **Magento store** can
 have one or more **Magento views**.
 
 **Magento view** is the actual content that is displayed to the user. Usually 
-it's used to display different languages. 
+it's used to display different languages or to show a different look and feel based on 
+a product category. 
 
-Webstore object aggregates this data into one object for convenience. 
+The `Webstore` object aggregates this data into one object. 
 
 [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer),
 [order](copernica-docs:MarketingSuite/magento-integration/object/order), 
@@ -35,7 +37,7 @@ are linked to **Magento view**
 
 ## Examples
 
-When using [customers target](copernica-docs:MarketingSuite/magento-integration/targets/customers) 
+Using a [customers target](copernica-docs:MarketingSuite/magento-integration/targets/customers) 
 to send simple confirmation email:
 
 ```
