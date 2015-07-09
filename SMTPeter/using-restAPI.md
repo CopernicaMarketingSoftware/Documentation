@@ -61,7 +61,26 @@ Here is an example of POST request in PHP with cURL:
 
 $data = array (
 	"envelope" => "from@email.com",
-	"mime" => "text/html",
+	"mime" => "From: John Doe <from@email.com>
+		MIME-Version: 1.0
+		Content-Type: multipart/mixed;
+		        boundary='XXXXboundary text'
+		
+		This is a multipart message in MIME format.
+		
+		--XXXXboundary text 
+		Content-Type: text/plain
+		
+		this is the body text
+		
+		--XXXXboundary text 
+		Content-Type: text/plain;
+		Content-Disposition: attachment;
+		        filename='test.txt'
+		
+		this is the attachment text
+		
+		--XXXXboundary text--",
     "recipients" => "to@email.com",
     "inlinizecss" => true,
     "clicktracking" => true,
