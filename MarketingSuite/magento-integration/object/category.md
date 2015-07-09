@@ -46,8 +46,6 @@ The object Category gives you access to the categories available in a webstore. 
 [code example]
 
 
-
-
 ## Personalization properties
 
 | Property name   | Property type                                                                   | Description                                  |

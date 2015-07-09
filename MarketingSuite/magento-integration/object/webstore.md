@@ -5,7 +5,7 @@ Those are considered the basic building blocks used to setup a Magento installat
 
 The **Magento website** represents the actual website that can be found under given
 URL. Each of **Magento websites** can have one or more **Magento stores**. Each 
-of[Magento products](copernica-docs:MarketingSuite/magento-integration/object/product)
+[Magento product](copernica-docs:MarketingSuite/magento-integration/object/product)
 has to be assigned to website to be visible on that website.
 
 **Magento store** should represent an actual store. Instead it represents a part

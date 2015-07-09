@@ -3,52 +3,55 @@
 A subscriber is a someone that subscribed to a newsletter. Optionally, he can be 
 linked to a registered [customer](copernica-docs:MarketingSuite/magento-integration/object/customer). 
 
+Magento offers two different newsletter subscription procedures: the single opt-in and the 
+double opt-in. In a single opt-in procedure, the user is subscribed directly after he entered his
+email address in the subscription form. The latter means that an additional confirmation email is sent to verify the email address. The user is only subscribed after he clicked the confirmation link in the email.
+
 Subscribers can have different states of subscription. All possible states are
 explained in more detail below.
 
-## Subscription status
+## Subscription statuses
 
-Subscription status in Copernica is exactly the same as the statuses used by Magento. 
-The status of a subscriber changes in response to subscribers actions.
+The subscription statuses in Copernica are exactly the same as the statuses used by Magento. 
+The status of a subscriber changes in response to subscriber's actions.
 
 * **unknown**
 
-  This is the initial subscriptions status. When a subscriber is created 
-  inside Magento environment and no action was taken on it yet, this status will show
+  This is the initial subscription status. When a subscriber is created 
+  inside the Magento environment and no action was taken on it yet, this status will show
   up in Copernica. Shortly hereafter, the creation status should change either
   to 'subscribed', 'unconfirmed' or 'not active', depending if Magento 
-  is configured to require confirmation (double optin) after subscription.
+  is configured to require confirmation (double opt-in) after subscription.
   
 * **subscribed**
 
-  This status tells us that user actually wants to receive email newsletters and
-  no further confirmation is needed.
+  This status tells us that user actually wants to receive email newsletters. 
+  No further confirmation is needed.
   
 * **not active**
 
-  This status will show up when Magento is configured to require additional confirmation 
-  after a user subscribes to newsletter and an email address is being subscribed 
-  when no customer is logged on or email address differs from currently logged 
-  in user's email address.
+  This status will show up when Magento is configured to require additional confirmation (double opt-in procedure). It occurs in two situations.
   
-  Difference between **not active** and **unconfirmed** is that **not active**
-  is dealing with email addresses and **unconfirmed** is dealing with registered
-  customers.
+  1. A user gets this status when he is logged on the website, and manually enters 
+     an email address in the subscribe form, that is different from the email address 
+     he registered his account with. 
+
+  2. When an anonymous visitor uses the subscription form with an unknown email address.
+  
+  The difference between **unconfirmed** and **not active** is that **unconfirmed**
+  is dealing with registered customers and **not active** is dealing with anonymous users.
+  
+* **unconfirmed**
+ 
+  This status will only show up in a double opt-in procedure after a new user subscribes to a newsletter and when an already registered customer wants to subscribe to newsletter.
+  
+  The difference between **unconfirmed** and **not active** is that **unconfirmed**
+  is dealing with registered customers and **not active** is dealing with anonymous users.
   
 * **unsubscribed**
   
   This status shows up when user explicitly expresses the will of not receiving 
   newsletter emails (any longer).
-
-* **unconfirmed**
- 
-  This status will show up only when Magento is configured to require additional 
-  confirmation after user subscribes to newsletter and a registered customer 
-  wants to subscribe to newsletter.
-  
-  Difference between **unconfirmed** and **not active** is that **unconfirmed**
-  is dealing with registered customers and **not active** is dealing with email
-  addresses.
 
 ## Personalization properties
 
@@ -64,7 +67,7 @@ The status of a subscriber changes in response to subscribers actions.
 ## Examples
 
 When there is a need to send an email that will detect if subscriber is 
-a customer or not, following code can be used:
+a customer or not, the following code can be used:
 
 ```
 {if $subscriber.customer}

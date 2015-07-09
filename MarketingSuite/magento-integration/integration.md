@@ -43,7 +43,7 @@ Cool. Now, lets synchronize!
 *   Find the *Synchronize data* button in the top right corner, and click it to 
     start the synchronization process.
 
-Depending on you amount of data to synchronize it can take from 5 minutes to hours. 
+Depending on the amount of data to synchronize, synchronization can take from 5 minutes to hours. 
 
 Once the installation and synschronzation is complete, the two applications will
 automcatically remain in sync. Thus, if a customer places an order, Magento will 
