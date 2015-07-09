@@ -38,19 +38,19 @@ available for given the different Magento targets.
 
 | Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  |
 |:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|
-| $magento        | [magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           |
-| $customer       | [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*       |
+| $magento \*     | [magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           |
+| $customer       | [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     |
 | $quote          | [quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            |
 | $order          | [order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            |
 | $subscriber     | [subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            |
 | $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | No          | No          | No               | Yes           |
 
-_\* The `$customer` variable available via Persons list can evaluate to `false`
+_\* As you can see in the table, the variable `$magento` is the only one variable available
+in all list types._ 
+
+_\*\* The `$customer` variable available via Persons list can evaluate to `false`
 value as an indication that given person is not a customer (a guest customer,
 only subscriber, etc.)._
-
-_\* As you can see in the table, the variable `$magento` is the only one variable available
-    in all list types._ 
 
 ## Personalization objects
 
