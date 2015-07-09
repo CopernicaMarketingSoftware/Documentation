@@ -23,14 +23,17 @@ The request should contain the following fields:
     recipient: The email address that will receive the email
     recipients: The email addresses that will receive the email
 
-You can choose either to set the data for the message in the mime, or to add the following fields:
+You can choose either to set the mime, or to set individual properties 
+for the message in the following fields:
 
     from: The address the e-mail originated from
     to: The email address that will receive the email
     cc: The carbon copy - additional email addresses that will receive the email
     subject: The email subject
-    text: The actual email message in plain text (set either the text field or the html field)
-    html: The actual email message in html format (set either the text field or the html field)
+    text: The actual email message in plain text
+    html: The actual email message in html format
+
+Note: set either the text field or the html field
 
 The following fields are optional, and control the way that
 SMTPeter processes the messages:
