@@ -23,7 +23,7 @@ The request should contain the following fields:
     recipient: The email address that will receive the email
     recipients: The email addresses that will receive the email
 
-Note: set either the recipient field for one recipient or the recipients field for more
+Note: set either the recipient field for one recipient or the recipients field for more than one
 
 You can choose either to set the mime, or to set individual properties 
 for the message in the following fields:
