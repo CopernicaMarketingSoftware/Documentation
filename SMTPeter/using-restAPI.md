@@ -81,7 +81,7 @@ $data = array (
 		this is the attachment text
 		
 		--XXXXboundary text--",
-    "recipients" => "to@email.com",
+    "recipients" => "to@email.com", "to@email.com",
     "inlinizecss" => true,
     "clicktracking" => true,
     "bouncetracking" => false,
