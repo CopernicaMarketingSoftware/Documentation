@@ -127,76 +127,7 @@ variables.
 
 ### PHP examples
 
-The example below illustrates how you can send an email with SMTPeter using PHP and cURL
-with the mime variable. 
-
-```php
-<?php
-/**
- *  Example API call
- *  Send a mail
- */
-
-$data = array (
-	"envelope" => "from@email.com",
-	"mime" => "From: John Doe <from@email.com>
-		MIME-Version: 1.0
-		Content-Type: multipart/mixed;
-		        boundary='XXXXboundary text'
-		
-		This is a multipart message in MIME format.
-		
-		--XXXXboundary text 
-		Content-Type: text/plain
-		
-		this is the body text
-		
-		--XXXXboundary text 
-		Content-Type: text/plain;
-		Content-Disposition: attachment;
-		        filename='test.txt'
-		
-		this is the attachment text
-		
-		--XXXXboundary text--",
-    "recipients" => "to@email.com", "to@email.com",
-    "inlinizecss" => true,
-    "clicktracking" => true,
-    "bouncetracking" => false,
-    "openstracking" => true,
-);
-
-// json encode data
-$data_string = json_encode($data); 
-
-// your API token
-$token = '123abc...';
-
-// set up the curl resource
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://www.smtpeter.com/v1/send?access_token={$token}");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-curl_setopt($ch, CURLOPT_HEADER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-    'Content-Type: application/json',                                                                                
-    'Content-Length: ' . strlen($data_string)                                                                       
-));       
-
-// execute the request
-$output = curl_exec($ch);
-
-// output the profile information - includes the header
-echo($output) . PHP_EOL;
-
-// close curl resource to free up system resources
-curl_close($ch);
-```
-
-The example below illustrates how you can send an email with SMTPeter using PHP and cURL
-without the mime variable. 
+The example below illustrates how you can send an email with SMTPeter using PHP and cURL.
 
 ```php
 <?php
