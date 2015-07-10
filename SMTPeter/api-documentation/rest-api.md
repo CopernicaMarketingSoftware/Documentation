@@ -145,9 +145,6 @@ $data = array(
     'from'          =>  '"Peter" <sender@example.com>',
     'to'            =>  '"John" <reciever@example.com>'
     
-    < >
-    
-    '< >'
 );
 
 // set options
