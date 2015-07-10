@@ -4,8 +4,7 @@
 
 SMTPeter is a cloud-based SMTP server for fast and secure email delivery. It 
 is designed to help your applications and websites send email messages, from
-[transactional email messages](copernica-docs:SMTPeter/transactional-email) 
-to [mass mailings](copernica-docs:SMTPeter/mass-mailing), we will take care of 
+transactional email messages to mass mailings, we will take care of 
 all of the technical details, so you can focus on creating and optimizing your email messages. 
 
 Of course, there is more to SMTPeter than just delivering your email messages. We can track 
