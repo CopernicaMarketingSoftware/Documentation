@@ -33,6 +33,8 @@ right server, and that the addresses we send from have a reputation sufficient t
 avoid getting marked as spam. If the receiving server can not handle the flow of
 messages, we throttle back delivery.
 
+![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png)
+
 ## Connecting with SMTPeter
 
 SMTPeter proves two ways to send email: through our SMTP API or our REST API. 
