@@ -3,9 +3,10 @@
 ## What is SMTPeter?
 
 SMTPeter is a cloud-based SMTP server for fast and secure email delivery. It 
-is designed to help your applications and websites send email messages, from
+is designed to help your applications and websites send email messages. From
 transactional email messages to mass mailings, we will take care of 
-all of the technical details, so you can focus on creating and optimizing your email messages. 
+all of the technical and delivery details, so you can focus on creating 
+and optimizing your email messages. 
 
 Of course, there is more to SMTPeter than just delivering your email messages. We can track 
 opens, clicks and bounces, and you can create fully responsive emails using our 
