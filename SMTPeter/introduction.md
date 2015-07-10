@@ -39,15 +39,15 @@ messages, we throttle back delivery.
 
 SMTPeter proves two ways to send email: through our SMTP API or our REST API. 
 
-The [SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api) makes it 
-easy to integrate SMTPeter with any exising application. 
+The [SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API Documentation") 
+makes it easy to integrate SMTPeter with any exising application. 
 Simply modify your SMTP configuration to use SMTPeter and you are ready to send. 
 
-The [REST API](copernica-docs:SMTPeter/api-documentation/rest-api), ads more control, speed
-and configuration options to the integration. Allowing for a deeper and
-more advanced integration with our email delivery service. 
+The [REST API](copernica-docs:SMTPeter/api-documentation/rest-api "REST API Documentation"), 
+ads more control, speed and configuration options to the integration. 
+Allowing for a deeper and more advanced integration with our email delivery service. 
 
-[Introduction to our REST and SMTP APIs](copernica-docs:SMTPeter/api-documentation/api-introduction)
+[Introduction to our REST and SMTP APIs](copernica-docs:SMTPeter/api-documentation/api-introduction "API Overview")
 
 ## The SMTPeter Dashboard
 

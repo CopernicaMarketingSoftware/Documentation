@@ -144,6 +144,7 @@ $data = array(
     'text'          =>  'This is the body of the text mail',
     'from'          =>  '"Peter" <sender@example.com>',
     'to'            =>  '"John" <reciever@example.com>'
+    
 );
 
 // set options

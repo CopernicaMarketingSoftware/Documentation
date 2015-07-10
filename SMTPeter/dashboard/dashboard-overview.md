@@ -26,6 +26,7 @@ In the configuration tab you can set your configuration options for SMTPeter. He
 view and update your DKIM keys and configure your bounce management. 
 
 [Configuring DKIM keys](copernica-docs:SMTPeter/dashboard/dkim-keys "Configuring DKIM keys")
+
 [Bounce Management](copernica-docs:SMTPeter/dashboard/bounce-management "Configuring bounce management")
 
 
