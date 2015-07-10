@@ -33,7 +33,7 @@ powerful RESTful interface.  Which means that your application can access
 the API using the HTTP protocol. 
 
 Before you can send a request to our API you will need to 
-[create an API access token](copernica-docs:SMTPeter/dashboard/rest-api-token "Create REST API token documentation"). This token has to be added as a parameter (so as '?access_token={YOUR_API_TOKEN}' to all of your API calls. 
+[create an API access token](copernica-docs:SMTPeter/dashboard/rest-api-token "Create REST API token documentation"). This token has to be added as a parameter (so as `?access_token={YOUR_API_TOKEN}`) to all of your API calls. 
 
 All API methods are accessed via:
 
