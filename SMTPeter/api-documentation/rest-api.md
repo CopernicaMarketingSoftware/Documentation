@@ -76,8 +76,8 @@ use JSON, the Content-Type should be set to application/json.
 
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
-address without the name of the recipient or angle brackets ('\<' and '\>') 
-(e.g. it should state 'richard@copernica.com' and not '"Richard" \<richard@copernica.com\>'). 
+address without the name of the recipient or angle brackets ('<' and '>') 
+(e.g. it should state 'richard@copernica.com' and not '"Richard" <richard@copernica.com>'). 
 
 Both the envelope and recipient variables should only contain a single
 email address. It is not possible to add multiple comma-separated addresses. 
@@ -100,7 +100,7 @@ Examples:
 The 'from' variable has to contain a **single** email address. However, 
 the notation here is more flexible than the 'recipient' and 'envelope' 
 variables. The 'from' variable may contain a name in front of the address
-as well as angle brackets ('\<' and '\>')
+as well as angle brackets ('<' and '>')
 
 The 'to' and 'cc' variables are even more flexible. Like the 'from' variable
 they may contain a name and angle brackets. Unlike the 'from' variable they 
