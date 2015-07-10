@@ -17,4 +17,4 @@ while SMTPeter takes care of the actual email delivery,
 throttling according to the speed of the receiving mail
 server.
 
-[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/api-documentation/smtpeter-postfix "Sending through SMTPeter with Postfix")
+[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/integrate/postfix "Sending through SMTPeter with Postfix")
