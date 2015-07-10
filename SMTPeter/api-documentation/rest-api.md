@@ -84,18 +84,14 @@ email address. It is not possible to add multiple comma-separated addresses.
 
 ### Adding multiple email addresses
 
-It is possible to add multiple recipients to the 'recipient' variable, but not by comma
-separation. To add is done by adding an array of recipients.
+It is possible to add multiple recipients either by by adding the `recipients' variable instead
+of the recipient variable. The email addresses here can be comma-separated. 
 
-Example:
+Examples:
 
 ```javascript
 {
-  "to": [
-    "one@example.com",
-    "two@example.com",
-    "three@example.com"
-  ] 
+    "recipients": "one@example.com", "two@example.com", ...
 }
 ```
 
