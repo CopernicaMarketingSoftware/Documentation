@@ -17,6 +17,7 @@ In the API access you can create and manage your REST API token and
 SMTP credentials, that are needed to connect with SMTPeter. 
 
 [Creating a REST API token](copernica-docs:SMTPeter/dashboard/rest-api-token "Creating REST API tokens")
+
 [Setting up SMTP credentials](copernica-docs:SMTPeter/dashboard/smtp-credentials "Setting up SMTP credentials")
 
 ## Configuration
