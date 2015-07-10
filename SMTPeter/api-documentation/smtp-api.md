@@ -53,4 +53,4 @@ to avoid limits set by some hosting providers.
 You can also set up your local mail server, such as Postfix
 to use SMTPeter as [smart host](copernica-docs:SMTPeter/api-documentation/smart-host).
 
-[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/api-documentation/smtpeter-postfix) 
+[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/integrate/postfix) 
