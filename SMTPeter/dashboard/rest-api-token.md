@@ -15,4 +15,4 @@ a new token will have to be generated.
 old API token and revoke its access. Afterwards you will have to use your new token to access
 our API. 
 
-[Read our REST API Documentation](coerpnica-docs:SMTPeter/api-documentation/rest-api "REST API Documentation")
+[Read our REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API Documentation")
