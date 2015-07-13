@@ -16,4 +16,3 @@
   * [Smart host](copernica-docs:SMTPeter/integrate/smart-host "Using SMTPeter as Smart Host") 
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
-* [Terms & Conditions](copernica-docs:SMTPeter/terms-and-conditions "Terms & Conditions")
