@@ -11,7 +11,7 @@ this will generate an API access token. Pressing the 'REVOKE ACCESS' button, wil
 revoke the access of the API token. Access for that specific can not be restored and
 a new token will have to be generated. 
 
-> Pressing `CREATE TOKEN` when you already have a REST API token will override the
+ > **Note:** Pressing `CREATE TOKEN` when you already have a REST API token will override the
 old API token and revoke its access. Afterwards you will have to use your new token to access
 our API. 
 
