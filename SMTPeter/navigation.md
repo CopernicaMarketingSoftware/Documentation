@@ -16,3 +16,4 @@
   * [Smart host](copernica-docs:SMTPeter/integrate/smart-host "Using SMTPeter as Smart Host") 
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
+* [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTpeter with ResponsiveEmail")
