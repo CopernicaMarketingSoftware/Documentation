@@ -24,7 +24,9 @@ result in a 400 Bad Request response.
 All messages sent through the REST API should **at least** contain the following variables:
 
     "envelope":     string with a pure email address
-    "recipient":    string or array with pure email addresses
+    "recipient":    string or array with a pure email address
+    "recipients":   string with comma-separated email addresses
+
 
 The request should, of course, also contain your email message. SMTPeter offers two ways  
 to include your message when sending through our REST API:
@@ -34,13 +36,16 @@ to include your message when sending through our REST API:
   * You can also submit the different parts of your message, such as the subject and
   the html parts. 
 
-Without these variables, your email message, and a valid access key, your email cannot be sent.
+Without the envelope, recipient or recipients variables, your email message, and a 
+valid access key, your email cannot be sent.
 
 If you want to use the mime variable, simply add the following variable to your request: 
 
     "mime":      string containing the full mime message
 
+
 If you do not use the mime variable, you can add one or more of the following variables:
+
 
     "subject"           string containing the subject
     "from"              string containing the sender (email address)
@@ -77,7 +82,7 @@ use JSON, the Content-Type should be set to application/json.
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>') 
-(e.g. it should state 'richard@copernica.com' and not '"Richard" <richard@copernica.com>'). 
+(e.g. it should state 'richard@copernica.com' and not '"Richard" \<richard@copernica.com\>'). 
 
 Both the envelope and recipient variables should only contain a single
 email address. It is not possible to add multiple comma-separated addresses. 
@@ -85,7 +90,7 @@ email address. It is not possible to add multiple comma-separated addresses.
 ### Adding multiple email addresses
 
 It is possible to add multiple recipients either by by adding the `recipients' variable instead
-of the recipient variable. The email addresses here can be comma-separated. 
+of the recipient variable. The email addresses here have to be comma-separated. 
 
 Examples:
 

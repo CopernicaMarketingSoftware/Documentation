@@ -1,7 +1,8 @@
 # Administration dashboard
 
-The administration tab of your SMTPeter dashboard consists of four different parts: 
-Company, Users, License and Billing. 
+The administration tab of your SMTPeter dashboard is where you can view and 
+edit your administrative information. The dashboard consists of four different 
+parts: Company, Users, License and Billing. 
 
 ## Company
 
@@ -25,15 +26,17 @@ you need to do is add their email address and they will receive a link to create
 
 ## License
 
-In the license overview you can view the details of your license. It shows t
+In the license overview you can view the details of your license. It shows the type of license, which 
+states whether you are using just SMTPeter, or SMTPeter is combination with 
+[ResponsiveEmail](copernica-docs:SMTPter/responsive-email "ResponsiveEmail Documentation"). 
 
 
- > Having a license does not cost anything, but it is neseccary to have one because
- it means you have agreed with our [terms-and-conditions](copernica-docs:SMTPeter/terms-and-conditions "terms and conditions")
+ > Having a license does not cost anything, hwoever it is neseccary to have a license, becuase it shows 
+you have agreed with the SMTPeter terms and conditions. 
 
 ## Billing
 
-This overview shows your invoices for the past 12 months. You can click on an individual invoice
+This overview shows your invoices from the past 12 months. You can click on an individual invoice
 to see more details about that specific invoice. 
 
 [read more about license and billing](copernica-docs:SMTPeter/license-and-billing "License and Billing")

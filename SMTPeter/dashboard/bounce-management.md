@@ -11,7 +11,7 @@ your email list.
 ## Managing Bounces in SMTPeter
 
 You can set SMTPeter to react in three different ways when a bounce 
-is received. 
+is received:
 
 ### Ignore bounces
 

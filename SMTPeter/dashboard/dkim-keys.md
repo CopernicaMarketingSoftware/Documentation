@@ -21,9 +21,9 @@ set them to only be used for specific emails.
 Creating a DKIM key requires you to fill out the  following fields:
 
 ```ini
-selector: used to determine with which DNS record the public key is verified
-domain name: your domanain name
-algorithm: SHA256 (default) or SHA1
+selector:       used to determine which DNS record is used to verifythe public key
+domain name:    your domanain name
+algorithm:      SHA256 (default) or SHA1
 ```
 
 ### Configuring DKIM keys for specific emails
@@ -57,3 +57,6 @@ Follow the next steps to set the DKIM for your domain.
   4. Add your DKIM key to your TXT record, in the SMTPeter dashboard there are tailored instructions 	on how to install your DKIM. 
   
   5. Save your changes
+
+ >**Note:** When creating a DKIM key on the SMTPeter dashboard the above five steps will be 
+ personalized so you can easily copy and paste your DKIM key into your TXT record. 

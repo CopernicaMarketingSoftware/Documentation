@@ -25,14 +25,14 @@ a receipt/invoice about your costs for the past month.
 
 If you prefer to use a postpay option instead of the pay-as-you-go payment, you
 can contact us at [info@smtpeter.com](mailto:info@smtpeter.com "email us") or
-call at `+31 (0)20 520 61 90`. The post payment method means youw ill be invoiced
-for the amount of emails you have sent at the end of each month, with the same
-discounts calculated as the pay-as-you-go system. This invoice has to be paid 
-within two weeks of the invoice date. 
+call at `+31 (0)20 520 61 90`. The post payment method means you will be invoiced
+for the amount of emails you have sent at the end of each month. Of course the same
+discounts as in the pay-as-you go payment system apply for the post payment system. 
+This invoice has to be paid within two weeks of the invoice date. 
 
 ## License
 
 Whilst SMTPeter has a pay-as-you-go payment system it does work 
 with a license. This license means you have complied with our
 [terms and conditions](copernica-docs:SMTPeter/terms-and-conditions)
-and does not cost anything. 
+and does involve any costs. 

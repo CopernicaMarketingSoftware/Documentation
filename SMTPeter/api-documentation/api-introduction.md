@@ -12,19 +12,20 @@ desktop email programs, such as Thunderbird, Microsoft Outlook or
 Apple Mail to send email with SMTPeter. Simply change your application
  settings to forward its email to SMTPeter's servers:
 
-    Host: mail.smtpeter.com
-    Port: 25
+    Host:       mail.smtpeter.com
+    Port:       587 (recommended) or 25
     Encryption: STARTTLS
 
 To makes sure not just anyone can use SMTPeter to send email, we require 
 authentication before the connection is accepted. The credentials for 
-SMTP authentication can be found in the [SMTP credentials](copernica-docs:SMTPeter/dashboard/smtp-credentials)
+SMTP authentication can be found in the 
+[SMTP credentials](copernica-docs:SMTPeter/dashboard/smtp-credentials "SMTP credentials documentation")
 tab of your [SMTPeter Dashboard](copernica-docs:SMTPeter/dashboard/dashboard-overview).
 
 To authenticate with SMTPeter, make sure to configure your client to authenticate either
-using [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
+using [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication "SMTP Authentication Wiki").
 
-[Read more about the SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api)
+[Read the SMTP API Documentation](copernica-docs:SMTPeter/api-documentation/smtp-api)
 
 ## REST API
 
@@ -42,19 +43,20 @@ All API methods are accessed via:
  > **Note:**All API requests must use secure HTTPS connections. Unsecure HTTP requests will 
 result in a 400 Bad Request response. 
 
-[Read more about the REST API](copernica-docs:SMTPeter/api-documentation/rest-api)
+[Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
 
 ## SMTP vs REST
 
 So what exactly is the difference between the SMTP and REST API? The biggest difference
 is that SMTP tends to be a bit "chatty" compared to the REST API, this because the SMTP protocol is
-a so called [handshake protocol](https://en.wikipedia.org/wiki/Handshaking). A REST API simply gives 
+a so called [handshake protocol](https://en.wikipedia.org/wiki/Handshaking "Handshaking Wiki"). A REST API simply gives 
 orders to be followed by the receiver, making the REST API faster than the SMTP API. 
 
 Another difference is that the REST API inheritly has the possiblity to include different variables 
 in a single "call", the SMTP protocol was not designed to do so. Because of this you currently have to 
-create separate logins in your [Dashboard](copernica-docs:SMTPeter/Dashboard/smtp-credentials) for
-variables such as tracking, inline css and bounce management. 
+create separate logins in your 
+[Dashboard](copernica-docs:SMTPeter/Dashboard/smtp-credentials "SMTP credentials dashboard documentation") 
+to enable or disable variables such as tracking, inline css and bounce management. 
 
 <!---
 ## Which API should I use? 
