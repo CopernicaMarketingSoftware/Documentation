@@ -32,8 +32,9 @@ your mail to SMTPeter and we take care of the rest. We make sure to connect to t
 right server, and that the addresses we send from have a reputation sufficient to
 avoid getting marked as spam. If the receiving server can not handle the flow of
 messages, we throttle back delivery.
-
+<!---
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
+-->
 
 ## Connecting with SMTPeter
 
@@ -70,7 +71,7 @@ statistics of all your email messages and campaigns.
 Of course, there is more to SMTPeter than just delivering your email messages. We can track 
 opens, clicks and bounces, and can also automatically inline all your css for you 
 
-[Read more about SMTPeter's features](copernica-docs:SMTPeter/dashboard/features "SMtpeter features")
+[Read more about SMTPeter's features](copernica-docs:SMTPeter/features "SMtpeter features")
 
 ##Responsive Email
 
