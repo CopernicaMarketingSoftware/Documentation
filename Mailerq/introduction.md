@@ -7,6 +7,8 @@ have access to a working RabbitMQ server. If you have a working and up-to-date
 RabbitMQ server, you can proceed with setting up MailerQ. Otherwise, check our 
 [RabbitMQ tips and tricks article](copernica-docs:Mailerq/rabbitmq).
 
+**MailerQ requires RabbitMQ version 3.3.1+**
+
 ## Installing MailerQ
 
 After you've installed your RabbitMQ server, you can proceed with setting up MailerQ. 

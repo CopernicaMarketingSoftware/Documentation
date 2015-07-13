@@ -30,7 +30,7 @@ In that case the rewrite rules will only be applied on the block it was used in.
     "content" : {
         "blocks" : [ {
             "type" : "html",
-            "content" : "Content with <a href="http://www.example.com">hyperlinks</a>"
+            "content" : "Content with <a href=\"http://www.example.com\">hyperlinks</a>"
         } ]
     },
     "rewrite": {

@@ -1,8 +1,23 @@
 # Magento customers list
 
-Customers list provides targets that are customers in Magento environment. That 
-means users that are registered. Thus user that bought something is a customer, 
-but also a user that only registered is also a customer.
+A customer, in Magento sense, is basically a registered user of your website. 
+A customer doesn't necessarily have to buy anything or even have items inside a basket. 
+He just has to provide his email and register with the website. 
+
+## Targeting 'real word' customers
+
+If you want to target customers that actually payed for an order, it's better to use [orders list target](copernica-docs:MarketingSuite/magento-integration/targets/orders).
+An orders list will provide a list of email address of customers with a purchasing history.
+
+For targeting customers that are considering a purchase it's better 
+to use [quotes list target](copernica-docs:MarketingSuite/magento-integration/targets/quotes).
+Quotes list will provide a list of email address of users that inserted items
+into theirs baskets but did not checked out and payed.
+
+For targeting newsletter subscribers it's better to use the [subscribers list target](copernica-docs:MarketingSuite/magento-integration/targets/subscribers).
+Subscribers list will provide a list of users that expressed
+a will of receiving newsletters, regardless if they are registered customers or
+not.
 
 ## Personalization variables
 

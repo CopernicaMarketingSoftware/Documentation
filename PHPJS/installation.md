@@ -91,7 +91,7 @@ where you want to store the V8 source folder. Depot_tools provides
 the following command for downloading V8:
 
 ```bash
-fetch v8 &amp;&amp; cd v8
+fetch v8 && cd v8
 ```
 
 This likely takes quite some time. After downloading is complete, you

@@ -1,8 +1,8 @@
 # Template Editor overview
 
-The template editor allows you to design and put together your own emails 
+The template editor enables you to design and put together your own emails 
 templates without having to write any HTML or CSS code yourself. It uses
-a simple drag and drop system, which can be used to drag content into your
+a drag and drop system, which can be used to drag elements into your
 email template. The user interface of the editor consists of 4 main parts:
 
 1. [Toolbox](copernica-docs:MarketingSuite/template-editor/ui/toolbox)

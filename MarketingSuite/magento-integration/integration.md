@@ -1,67 +1,71 @@
 # Integration
 
-Integrating Magento webshop with Copernica environment can be done in couple of
-way. We have two extensions and two API protocols ([REST](https://en.wikipedia.org/wiki/Representational_state_transfer) and [SOAP](https://en.wikipedia.org/wiki/SOAP)).
+Copernica developed an official extension for Magento to synchronize data between your Magento webshop and the Marketing Suite. Once you have installed the extenstion and synchronized the data, you will 
+be able to target mailings based on the data of your Magento webshop.  
 
-At the time of writing there are two Copernica-Magento extension. Both of them 
-interface with different part of our software.
+## Download extension
 
-## Publisher based extension
+The extension can be installed for free from the [Magento Connect](http://www.magentocommerce.com/magento-connect/copernica.html) website.
 
-Old extension maintained by *Cream*, a company based in the Netherlands. This 
-plugin uses [Copernica REST API](http://www.copernica.com/en/support/rest/the-copernica-rest-api "Copernica REST API documentation page").
+## Installation guide
 
-This extension was designed to work with Publisher, so it creates databases, 
-views, profiles and subprofiles inside Publisher. All that data is still very 
-usable inside MarketingSuite, thus most of Magento specific meta-data is 
-flattened.
+Installing the extension is actually pretty simple and performed in just a few steps. 
 
-Recommended way of installation is to use Magento Connect platform.
+**Important**: If you have an existing installation of the old SOAP based extension, it is important
+to remove this extension first before proceeding with installing the new one.
 
-[Magento Connect page](http://www.magentocommerce.com/magento-connect/copernica-marketing-software.html)
+**Also important** To install the extension, you need access to the Magento Admin Panel of the webshop. Also you need Admin rights inside Copernica. To see if you have such priveleges, log in to your dashboard on [Copernica.com/en/dashboard](https://www.copernica.com/nl/account/-/choose), go to the account settings (not your personal settings), and then click *Users* under *Account* from the left side menu.   
 
-## Marketing Suite extension
+### Now the actual installation
 
-New way of bridging Magento webshops with Marketing Suite. This extension was
-developed by Copernica, and it uses dedicated REST API. Additionally, this 
-extension is developed openly and code can be review/cloned from [GitHub]((https://github.com/CopernicaMarketingSoftware/MAGENTO)).
+*   Go to [Magento Connect](http://www.magentocommerce.com/magento-connect/copernica.html) to get the 
+    link to the extension. 
 
-This extension was designed to work with Marketing Suite. Data synchronized from
-Magento retain it's relations and structure (with some additions available only
-inside Marketing Suite). Thanks to that, better selections are possible.
+*   Copy this link to your clipboard. 
+*   Go to your Magento Admin Panel and paste the link into Magento Connect Manager 
+    (System -> Magento Connect -> Magento Connect Manager)    
 
-Recommended way of installation is to use Magento Connect platform. Thus if one
-is using git deployment and wish to work with git, it's possible to use git 
-repository hosted on [GitHub](https://github.com/CopernicaMarketingSoftware/MAGENTO).
-`master` branch should always have same code a latest released version on Magento 
-Connect platform.
+Magento Connect Mananager will now start installing the extension. Once the installation 
+is complete, a new menu item named 'Copernica' will appear in the Magento Admin navigation. 
 
-[Magento Connect page](http://www.magentocommerce.com/magento-connect/copernica.html)
+If you don't see this menu item, you might try to logout and login again. 
 
-[GitHub page](https://github.com/CopernicaMarketingSoftware/MAGENTO)
+*   Go to Copernica -> Account Settings 
+*   Click the link 'Authorize for account'
 
-## APIs
+This will bring you to the Copernica website where you can choose the account 
+you want to sync your webshop with. A webshop can only be linked to one Copernica 
+account at the same time. The Magento webshop is now authorized to sync data with Copernica.
 
-For more fine-tuned integration it's possible to use our APIs for creating your
-own extension. Thus, both of our APIs offer only access to Publisher databases
-and Magento dedicated API is not publicly available. It means that constructing
-dedicated objects can be very hard to achieve.
+Cool. Now, lets synchronize!
 
-For informations about our APIs go to proper pages about them:
+*   Go back to the *Magento Admin Panel* and choose *Synchronize data* from the the *Copernica* menu.
+*   Find the *Synchronize data* button in the top right corner, and click it to 
+    start the synchronization process.
 
-- [REST API](http://www.copernica.com/en/support/rest/the-copernica-rest-api)
-- [SOAP API](http://www.copernica.com/en/support/soap-api-documentation)
+Depending on the amount of data to synchronize, synchronization can take from 5 minutes to hours. 
 
-If any questions arise, it's possible to get answers on our [subforum](http://www.copernica.com/en/forum/category/28)
+Once the installation and synschronzation is complete, the two applications will
+automcatically remain in sync. Thus, if a customer places an order, Magento will 
+automatically inform Copernica of this event. 
 
-## Data synchronization
 
-Magento Integration will synchronize data from Magento installation within 
-5 minute cycles. That means, when initial synchronization is done, new customers, 
-orders or quotes should show up in Copernica account withing 5 minutes. 
+## Open source
 
-If given Magento installation has more than one store available, it's possible 
-to choose subset of them for synchronization. This way test or archived data 
-will not be synchronized with Copernica. To do so, inside Magento Admin Panel, 
-navigate to System -> Configuration -> Copernica Marketing Software, pick 
-a store that should be disabled/enabled and save your choice.
+The Magento integration for the Marketing Suite is created and maintained by Copernica. 
+We have decided to make the integration open source, and we invite anyone interested to contribute. 
+
+The code is hosted on  [GitHub](https://github.com/CopernicaMarketingSoftware/MAGENTO).
+
+## Old extension
+
+Inside Magento Connect platform users can find two extensions. [The most recent one](http://www.magentocommerce.com/magento-connect/copernica.html) is created by Copernica and it's designed to work with Marketing Suite.
+
+The second is created and maintained by partner company [Cream](http://www.cream.nl/). This 
+extension was developed with Publisher software in mind. That means it will use product databases and selections instead of the special Magento targets.
+
+### Compatibility
+
+The extensions are not compatible with eachother and there is no way to upgrade 
+from old one to new one. It's highly advised to remove the old extension prior 
+to the installation of the newest version.
