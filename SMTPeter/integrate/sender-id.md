@@ -5,7 +5,7 @@ such as Microsoft, Yahoo and Google use to confirm whether emails
 are actually coming from the company they say they are coming from. 
 This is accomplished by checking the address of the server sending 
 the mail against a registered list of servers that the domain owner 
-has authorized to send e-mail. It’s one of the many methods email 
+has authorized to send e-mail. It is one of the many methods email 
 clients use to distinguish spam from not spam.
 
 > Setting up Sender ID requires access to your domain DNS settings. 
