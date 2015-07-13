@@ -14,6 +14,10 @@ your email client/mail server to forward mail with the following settings:
     Port: 587 (recommended) or 25
     Encryption: STARTTLS
 
+Whenever you send email using the SMTPeter SMTP API you will need to include 
+your login credentials. In order to login you should configure your 
+application to either authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 
+
 And that is it! You are all set up for sending email through SMTPeter. 
 
 ## Where can I find my SMTP credentials?
@@ -51,6 +55,6 @@ to avoid limits set by some hosting providers.
 ## Setting up your local mail server to send with SMTPeter
 
 You can also set up your local mail server, such as Postfix
-to use SMTPeter as [smart host](copernica-docs:SMTPeter/api-documentation/smart-host).
+to use SMTPeter as [smart host](copernica-docs:SMTPeter/api-documentation/smart-host "Using SMTPeter as smart host").
 
-[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/integrate/postfix) 
+[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/integrate/postfix "Setting up Postfix to send with SMTPeter") 
