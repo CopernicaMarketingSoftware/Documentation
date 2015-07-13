@@ -69,7 +69,7 @@ statistics of all your email messages and campaigns.
 ## SMTPeter features
 
 Of course, there is more to SMTPeter than just delivering your email messages. We can track 
-opens, clicks and bounces, and can also automatically inline all your css for you 
+opens, clicks and bounces, and can also automatically inline all your css for you.
 
 [Read more about SMTPeter's features](copernica-docs:SMTPeter/features "SMtpeter features")
 
