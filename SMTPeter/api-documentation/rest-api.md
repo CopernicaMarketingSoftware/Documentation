@@ -23,8 +23,8 @@ result in a 400 Bad Request response.
 
 All messages sent through the REST API should **at least** contain the following variables:
 
-    "envelope": string with a pure email address
-    "recipient": string or array with pure email addresses
+    "envelope":     string with a pure email address
+    "recipient":    string or array with pure email addresses
 
 The request should, of course, also contain your email message. SMTPeter offers two ways  
 to include your message when sending through our REST API:
@@ -38,7 +38,7 @@ Without these variables, your email message, and a valid access key, your email 
 
 If you want to use the mime variable, simply add the following variable to your request: 
 
-    "mime"    string containing the full mime message
+    "mime":      string containing the full mime message
 
 If you do not use the mime variable, you can add one or more of the following variables:
 
@@ -63,10 +63,10 @@ SMTPeter also offers the following boolean variables (e.g. variable: true/false)
 that can be sent with each request. Including these variables and setting them 
 to true or false will enable or disable the features for the email.   
 
-    inlinizecss: When set to true, all CSS will be inlined inside the HTML
-    clicktracking: When set to true, links will be redirected and tracked
-    bouncetracking: When set to true, bounces will be tracked
-    openstracking: When set to true, opens will be tracked
+    "inlinizecss":        When set to true, all CSS will be inlined inside the HTML
+    "clicktracking":      When set to true, links will be redirected and tracked
+    "bouncetracking":     When set to true, bounces will be tracked
+    "openstracking":      When set to true, opens will be tracked
 
 The variables can be either provided as regular POST data, or they can be encoded in JSON. If you
 use JSON, the Content-Type should be set to application/json. 
