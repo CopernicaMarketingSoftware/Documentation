@@ -12,7 +12,7 @@
 * [Integrate](copernica-docs:SMTPeter/integrate/code-examples "Integrate with SMTPeter")
   * [Code Examples](copernica-docs:SMTPeter/integrate/code-examples "Code Examples")
   * [Postfix](copernica-docs:SMTPeter/integrate/postfix "Integrate Postfix with SMTPeter")
-  * [Set up Sender ID](copernica-docs:SMTPeter/integrate/sender-id "Set up your Sender ID")
+  * [Sender ID](copernica-docs:SMTPeter/integrate/sender-id "Set up your Sender ID")
   * [Smart host](copernica-docs:SMTPeter/integrate/smart-host "Using SMTPeter as Smart Host") 
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
