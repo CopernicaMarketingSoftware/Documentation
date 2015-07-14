@@ -3,7 +3,7 @@
 A customer is a registered Magento user. Magento calls every registered user 
 a customer. It doesn't matter if user bought anything from the shop or not.
 
-The object `customer`  gives you access to all information related to a single 
+The object `customer` gives you access to all information related to a single 
 customer. 
 
 ## Subscription

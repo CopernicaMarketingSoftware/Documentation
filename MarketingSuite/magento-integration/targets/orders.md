@@ -29,7 +29,6 @@ For lists based on orders the following filter options are available:
 * **Currency**
 * **IP address**
 
-
 ## State and status
 
 `state` and `status` properties sound very similar. And indeed, they _are_ very
