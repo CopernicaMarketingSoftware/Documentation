@@ -41,7 +41,7 @@ and 100% on mobile clients. All you have to do is place the image in a column:
                 "blocks": [ {
                     "type": "columns",
                     "columns": [ {
-                        "blocks": [  {cd
+                        "blocks": [  {
                             "type": "image",
                             "src": "image.png"
                     }   ],
