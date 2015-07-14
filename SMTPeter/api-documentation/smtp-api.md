@@ -11,8 +11,14 @@ send email. Once you have your credentials you will have to configure
 your email client/mail server to forward mail with the following settings:
 
     Host:       mail.smtpeter.com
-    Port:       25, 265 (for SSL connections) or 587
+    Port:       25 or 587
     Encryption: STARTTLS
+    
+    or, for SSL connections:
+    
+    Host:       mail.smtpeter.com
+    Port:       465
+    Encryption: SSL
 
 Whenever you send email using the SMTPeter SMTP API you will need to include 
 your login credentials. In order to login you should configure your 
@@ -36,7 +42,8 @@ different logins if you want to enable or disable certain features for specific 
 
 ## Which ports does SMTPeter support? 
 
-SMTPeter supports both port 25, 465 and 587. 
+SMTPeter supports both port 25, 465 and 587. Port 25 and 587 are for STARTTLS encryption, 
+SSL is supported on port 465.
 
 
 <!---
