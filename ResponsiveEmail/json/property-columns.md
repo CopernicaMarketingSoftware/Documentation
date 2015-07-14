@@ -13,7 +13,7 @@ describes the contents of a single column.
             "blocks" : [ {
                 "type" : "columns",
                 "columns" : [ {
-                    "size" : 6
+                    "size" : 6,
                     "blocks" : [
                         {
                             "type" : "text",
@@ -21,12 +21,11 @@ describes the contents of a single column.
                         }
                     ]
                 }, {
-                    "size" : 6
+                    "size" : 6,
                     "blocks" : [
                         {
                             "type" : "text",
-                            "content" : "I'm another text block within a column,
-                                         I'm next to the other text block."
+                            "content" : "I'm another text block within a column, I'm next to the other text block."
                         }
                     ]
                 } ]
@@ -74,20 +73,20 @@ could use column sizes 2-8-2.
         "blocks" : [ {
             "type" : "columns",
             "columns" : [ {
-                "size" : 2
+                "size" : 2,
                 "blocks" : [
                 
                     /* array of small blocks in the left column */
                 
                 ]
             }, {
-                "size" : 8
+                "size" : 8,
                 "blocks" : [
                 
                     /* array of wide blocks in the center column */
                 ]
             }, {
-                "size" : 2
+                "size" : 2,
                 "blocks" : [
                 
                     /* array of small blocks in the right column */

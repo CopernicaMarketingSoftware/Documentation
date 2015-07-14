@@ -23,8 +23,7 @@ JSON objects, containing the actual `blocks` inside the `columns`.
                 "blocks" : [
                     {
                         "type" : "text",
-                        "content" : "I'm another text block within a column,
-                                     I'm next to the other text block."
+                        "content" : "I'm another text block within a column, I'm next to the other text block."
                     }
                 ]
             } ]
