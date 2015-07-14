@@ -13,7 +13,7 @@ Apple Mail to send email with SMTPeter. Simply change your application
  settings to forward its email to SMTPeter's servers:
 
     Host:       mail.smtpeter.com
-    Port:       587 (recommended) or 25
+    Port:       25, 465 (for secure connections) or 587
     Encryption: STARTTLS
 
 To makes sure not just anyone can use SMTPeter to send email, we require 
