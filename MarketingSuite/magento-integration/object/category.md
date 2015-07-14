@@ -23,7 +23,8 @@ not show up in a category, but for the rest is behaves like any other product fr
 
 The example below visually shows you the category structure from the above text
 
-<pre>Root category
+```
+Root category
     +Clothes
         -Undies
         -Shirts
@@ -36,25 +37,38 @@ The example below visually shows you the category structure from the above text
             -Nike       // Nike shoe is also in this category
             -Adidas
             -Van Bommel
-</pre>
-
+```
 
 ## Using the Category object in personalization
 
-The object Category gives you access to the categories available in a webstore. It allows you for instance to show products from a certain category in an email. 
+Categories can be user various purposes: grouping products by type, 
+by manufacturer, by certain event, etc. Thus they make am excellent tool for 
+personalization. 
 
-[code example]
+For example, to show products that were assigned to special event category 
+(let say cookie baking contest). We can assign them to not visible category in 
+Magento and then iterate that category inside email template like that:
 
+```
+{assign $magento.categories[42] to $cookiesCategory}
+
+{foreach $cookieProduct as $cookiesCategory.products}
+
+{$products.name}
+
+{/foreach}
+```
 
 ## Personalization properties
 
-| Property name   | Property type                                                                   | Description                                  |
-|-----------------|---------------------------------------------------------------------------------|----------------------------------------------|
-| ID              | _number_                                                                        | Category ID.                                 |
-| name            | _string_                                                                        | The name of category.                        |
-| created         | _string_                                                                        | Date when category was created.              |
-| modified        | _string_                                                                        | Date when category was last modified.        |
-| parent          | _[Category](copernica-docs:MarketingSuite/magento-integration/object/category)_ | Parent category. Null if there is no parent. |
+| Property name   | Property type                                                                               | Description                                            |
+|-----------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| ID              | _number_                                                                                    | Category ID.                                           |
+| name            | _string_                                                                                    | The name of category.                                  |
+| created         | _string_                                                                                    | Date when category was created.                        |
+| modified        | _string_                                                                                    | Date when category was last modified.                  |
+| parent          | _[Category](copernica-docs:MarketingSuite/magento-integration/object/category)_             | Parent category. Null if there is no parent.           |
+| products        | _collection of [Product](copernica-docs:MarketingSuite/magento-integration/object/product)_ | Collection of all products assigned to given category. |
 
 ## Links
 
