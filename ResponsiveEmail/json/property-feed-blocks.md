@@ -18,14 +18,19 @@ only show the heading and article content.
 
 ```javascript
 {
-    "from" : "info@example.com",
-    "subject" : "Email with a feed block",
-    "content" : {
-        "blocks" : [ {
-            "type" : "feed",
-            "source" : "http://feeds.bbci.co.uk/news/rss.xml"
-            "blocks" : [ "heading", "html" ]
-        } ]
+    "from": "info@example.com",
+    "subject": "Email with a feed block",
+    "content": {
+        "blocks": [
+            {
+                "type": "feed",
+                "source": "http://feeds.bbci.co.uk/news/rss.xml",
+                "blocks": [
+                    "heading",
+                    "html"
+                ]
+            }
+        ]
     }
 }
 ```

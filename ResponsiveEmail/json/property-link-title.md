@@ -15,7 +15,7 @@ appears when the user hovers the link.
             "label" : "Click me",
             "link" : {
                 "url" : "http://www.dustsckr2000.com/models/P2000",
-                "title", "Yes, you can click me"
+                "title": "Yes, you can click me"
             }
         } ]
     }
