@@ -63,6 +63,8 @@ The status of a subscriber changes in response to subscriber's actions.
 | modified      | _string_                                                                         | Last date that subscription status was changed.          |
 | status        | _string_                                                                         | Subscription status. More detailed explanation is above. |
 | email         | _string_                                                                         | Subscriber's email                                       |
+| isSubscribed  | _boolean_                                                                        | Is subscriber subscribed?                                |
+| person        | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_      | Person assigned to this subscriber.                      |
 
 ## Examples
 
