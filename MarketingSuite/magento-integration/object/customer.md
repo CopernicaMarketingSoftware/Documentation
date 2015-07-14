@@ -17,22 +17,26 @@ For more details about customer subscription the `subscriber` property should be
 
 ## Personalization properties
 
-| Property name | Property type                                                                               | Description                                               |
-|---------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| ID            | _number_                                                                                    | The customer ID from Magento.                             |
-| firstname     | _string_                                                                                    | The first name of the customer.                           |
-| middlename    | _string_                                                                                    | The middle name of the customer.                          |
-| prefix        | _string_                                                                                    | The prefix of the customer.                               |
-| lastname      | _string_                                                                                    | The last name of the customer.                            |
-| email         | _string_                                                                                    | The email address.                                        |
-| subscribed    | _string_                                                                                    | Customer subscription status.                             |
-| subscriber    | _[Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)_         | Subscriber linked to the customer                         |
-| group         | _string_                                                                                    | Name of a group that customer is linked to                |
-| gender        | _string_                                                                                    | Customer gender. Can be either: 'male', 'female' or null  |
-| quotes        | _collection of [Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)_     | List of all quotes that are linked to the customer.       |
-| orders        | _collection of [Order](copernica-docs:MarketingSuite/magento-integration/object/order)_     | List of all orders that are linked to the customer.       |
-| addresses     | _collection of [Address](copernica-docs:MarketingSuite/magento-integration/object/address)_ | List of all addresses that are linked to the customer.    |
-| webstore      | _[Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)_             | The webstore that customer is linked to.                  |
+| Property name     | Property type                                                                               | Description                                               |
+|-------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| ID                | _number_                                                                                    | The customer ID from Magento.                             |
+| firstname         | _string_                                                                                    | The first name of the customer.                           |
+| middlename        | _string_                                                                                    | The middle name of the customer.                          |
+| prefix            | _string_                                                                                    | The prefix of the customer.                               |
+| lastname          | _string_                                                                                    | The last name of the customer.                            |
+| email             | _string_                                                                                    | The email address.                                        |
+| subscribed        | _string_                                                                                    | Customer subscription status.                             |
+| subscriber        | _[Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)_         | Subscriber linked to the customer                         |
+| group             | _string_                                                                                    | Name of a group that customer is linked to                |
+| gender            | _string_                                                                                    | Customer gender. Can be either: 'male', 'female' or null  |
+| quotes            | _collection of [Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)_     | List of all quotes that are linked to the customer.       |
+| orders            | _collection of [Order](copernica-docs:MarketingSuite/magento-integration/object/order)_     | List of all orders that are linked to the customer.       |
+| addresses         | _collection of [Address](copernica-docs:MarketingSuite/magento-integration/object/address)_ | List of all addresses that are linked to the customer.    |
+| webstore          | _[Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)_             | The webstore that customer is linked to.                  |
+| billingAddress    | _[Address](copernica-docs:MarketingSuite/magento-integration/object/address)_               | Customer's default billing address.                       |
+| shippingAddress   | _[Address](copernica-docs:MarketingSuite/magento-integration/object/address)_               | Customer's default shipping address.                      |
+| activeBasket      | _[Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)_                   | Customer's active basket.                                 |
+| person            | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_                 | Associated person object.                                 |
 
 ## Examples
 
