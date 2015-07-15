@@ -1,8 +1,8 @@
 # Magento guests list
 
-Guest is a user that finalized a quote but decided to not register as real customer.
-It may happen that there will be more than one guest objects that are referring 
-to one real person.
+Guest is a user that finalized his quote but decided to not register as a real 
+customer. It may happen that there will be more than one guest objects that are 
+referring to one real person.
 
 ## Personalization variables
 
