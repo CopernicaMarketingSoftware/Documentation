@@ -60,3 +60,14 @@ Follow the next steps to set the DKIM for your domain.
 
  >**Note:** When creating a DKIM key on the SMTPeter dashboard the above five steps will be 
  personalized so you can easily copy and paste your DKIM key into your TXT record. 
+
+
+ ## DKIM key status
+
+ Once you have added your DKIM key, the overview shows the domain, selector and algorithm 
+ used for each of your keys. It also shows wheter it's a conditional DKIM key or one that 
+ is always used. 
+
+ If you click on a DKIM key it will allow you to change the sign rules (whether it is a 
+ conditional key or one that is always used) and check the DKIM status. The status shows 
+ if your DKIM key is valid and whether you have a DKIM record on your domain. 

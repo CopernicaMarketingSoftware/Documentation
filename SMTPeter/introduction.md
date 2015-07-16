@@ -23,7 +23,7 @@ An email sent to user@live.com will be delivered to Microsoft.
 
 All these mail senders have their own configuration. They may e.g.
 limit the number of messages that may be delivered over a single connection,
-how many connections may be opened from a single I.P. address. They may also
+how many connections may be opened from a single IP address. They may also
 keep an eye on IP addresses that suddenly send a lot of mails when they did not
 use to do so in the past and mark these mails as spam.
 
@@ -32,6 +32,7 @@ your mail to SMTPeter and we take care of the rest. We make sure to connect to t
 right server, and that the addresses we send from have a reputation sufficient to
 avoid getting marked as spam. If the receiving server can not handle the flow of
 messages, we throttle back delivery.
+
 <!---
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
 -->
@@ -41,7 +42,7 @@ messages, we throttle back delivery.
 SMTPeter proves two ways to send email: through our SMTP API or our REST API. 
 
 The [SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API Documentation") 
-makes it easy to integrate SMTPeter with any exising application. 
+makes it easy to integrate SMTPeter with any existing application. 
 Simply modify your SMTP configuration to use SMTPeter and you are ready to send. 
 
 The [REST API](copernica-docs:SMTPeter/api-documentation/rest-api "REST API Documentation"), 
@@ -77,7 +78,7 @@ opens, clicks and bounces, and can also automatically inline all your css for yo
 
 [Copernica](https://www.copernica.com "Copernica Website"), the company behind SMTPeter, 
 offers a wide range of email and email delivery tools. SMTPeter has been designed for 
-email delivery, hwoever for those of you that want to create emails and save templates 
+email delivery, however for those of you that want to create emails and save templates 
 for SMTPeter, we also offer a drag-and-drop editor for fully responsive emails. 
 
 If you already have an SMTPeter account, all you have to do is go to 
@@ -89,8 +90,8 @@ can be found in the ResponsiveEmail dashboard.
 
 ## MailerQ
 
-SMTPeter is a SaaS (software as a service) soluttion. It operates on our servers 
-and we handle all the techinical details. For those of you that are not interested 
+SMTPeter is a SaaS (software as a service) solution. It operates on our servers 
+and we handle all the technical details. For those of you that are not interested 
 in a SaaS-solution, or do not want to share data with third parties, we also offer MailerQ,
 the Mail Transfer Agent behind SMTPeter's and Copernica's email delivery, as an on-premise 
 solution. 

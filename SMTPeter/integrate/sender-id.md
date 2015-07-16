@@ -8,7 +8,7 @@ the mail against a registered list of servers that the domain owner
 has authorized to send e-mail. It’s one of the many methods email 
 clients use to distinguish spam from not spam.
 
-> Setting up Sender ID requires access to your domain DNS settings. 
+> Setting up a Sender ID requires access to your domain DNS settings. 
 If you use the from address *info@mydomain.com * for your email, 
 you need access to the DNS settings of mydomain.com.
 
