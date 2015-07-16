@@ -45,7 +45,7 @@ example of a button block:
                     "padding" : "20em",
                     "margin" : "2px"
                 },
-                "attributes" {
+                "attributes" : {
                     "summary" : "This summary is applied to the parent"
                 }
             }

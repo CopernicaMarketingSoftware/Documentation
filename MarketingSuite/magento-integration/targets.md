@@ -3,7 +3,7 @@
 Each mailing sent with Copernica Marketing Suite has to have a target. A target can 
 be a single email address (think of a transactional email) or a large list with 
 subscribers if you are sending a newsletter. Inside Copernica these targets are 
-created with selections and/or miniselections. With Magento enabled accounts, five
+created with selections and/or miniselections. With Magento enabled accounts, six
 new target types are introduced: 
 
 - [Magento customers list](copernica-docs:MarketingSuite/magento-integration/targets/customers)
@@ -11,6 +11,7 @@ new target types are introduced:
 - [Magento quotes list](copernica-docs:MarketingSuite/magento-integration/targets/quotes)
 - [Magento subscribers list](copernica-docs:MarketingSuite/magento-integration/targets/subscribers)
 - [Magento persons list](copernica-docs:MarketingSuite/magento-integration/targets/persons)
+- [Magento guests list](copernica-docs:MarketingSuite/magento-integration/targets/guests)
 
 Each list provides different personalization and filtering options. 
 

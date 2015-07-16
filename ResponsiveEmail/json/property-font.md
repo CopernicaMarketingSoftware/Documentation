@@ -70,8 +70,8 @@ that may not have the exotic font installed that you would like to use.
 
 ```javascript
 {
-    "font" {
-        "family" : "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+    "font": {
+        "family": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
     }
 }
 ```

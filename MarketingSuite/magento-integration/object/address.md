@@ -6,11 +6,13 @@ himself and by Magento administrator. Each [customer](copernica-docs:MarketingSu
 can also have default billing and shipping address.
 
 Additionally, [orders](copernica-docs:MarketingSuite/magento-integration/object/order) 
-have both billing and shipping address assigned to them. 
+have both billing and shipping address assigned to them. They may differ from 
+ones that can be fetched from [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
+object.
 
 [Quotes](copernica-docs:MarketingSuite/magento-integration/object/quotes) can 
 have assigned shipping or billing address. That happens when user asks for estimate
-of total price or shipping costs. 
+of total price or shipping costs.
 
 ## Personalization properties
 
@@ -26,3 +28,5 @@ of total price or shipping costs.
 | phone           | _string_                                                                        | The phone number.                         |
 | fax             | _string_                                                                        | The fax number.                           |
 | company         | _string_                                                                        | The company name.                         |
+| isBilling       | _boolean_                                                                       | Is address a billing address?             |
+| isShipping      | _boolean_                                                                       | Is address a shipping address?             |

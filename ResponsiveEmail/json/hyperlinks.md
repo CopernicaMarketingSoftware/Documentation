@@ -114,7 +114,7 @@ Example of link parameters added on toplevel in the JSON document:
             },
             "^example.org" : {
                 "params" : {
-                    "toilet seat" : "red"
+                    "toilet seat" : "red",
                     "fruit" : "apple"
                 }
             }
@@ -154,7 +154,7 @@ A short example will again show its working:
     "label" : "Buy large teapot",
     "link" : {
         "url" : "http://thegiantteapot.com?a=b",
-        "title" : "Proof that it does\'t exist",
+        "title" : "Proof that it doesn't exist",
         "params" : {
             "type" : "nonbelieber"
         }
@@ -179,7 +179,7 @@ Because a text block may of course contain multiple hyperlinks, the property
 
 ```json
 {
-    "type" : "text"
+    "type" : "text",
     "rewrite" : {
         "links" : {
             "*.json.com" : {
@@ -203,7 +203,7 @@ Example:
 ```javascript
 {
     "name" : "myFirstTemplate",
-    "subject" : "hope you don\'t bother this email",
+    "subject" : "hope you don't bother this email",
     "rewrite" : {
         "links" : {
             "*.json.com" : {
@@ -212,7 +212,7 @@ Example:
                     "utm_medium"    : "email",
                     "utm_term"      : "shoes+cars+ducks",
                     "utm_content"   : "textlink",
-                    "utm_campaign"  : "winter-campaign",
+                    "utm_campaign"  : "winter-campaign"
                 }
             }
         }
@@ -241,7 +241,7 @@ Example of specific Google link tracking in a button block:
     "label" : "Buy large teapot",
     "link" : {
         "url" : "http://thegiantteapot.com",
-        "title" : "Proof that it does\'t exist",
+        "title" : "Proof that it doesn't exist",
         "params" : {
             "utm_content" : "CTA-A"
         }

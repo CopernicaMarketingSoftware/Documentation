@@ -37,7 +37,7 @@ and a text about _banana's_ written in Arial.
         "family" : "Arial"
     },
     "content" : {
-        "blocks" [
+        "blocks": [
             {
                 "type" : "text",
                 "content" : "Text about apples",
@@ -47,7 +47,7 @@ and a text about _banana's_ written in Arial.
             },
             {
                 "type" : "text",
-                "content" : "Text about banana\'s"
+                "content" : "Text about banana's"
             }
         ]
     }
@@ -76,23 +76,25 @@ a content block.
 A rastafari colored email template could be constructed as follows. 
 
 ```javascript
-{
-    "background" : {
-        "color" : "green"
-    },
-    "content" : {
-        "background" : {
-            "color" : "yellow"
+    {
+        "background": {
+            "color": "green"
         },
-        "blocks" : [ {
-            "background" : {
-                "color" : "red"
+        "content": {
+            "background": {
+                "color": "yellow"
             },
-            "type" : "text",
-            "content" : "This is just an example test."
-        } ],
+            "blocks": [
+                {
+                    "background": {
+                        "color": "red"
+                    },
+                    "type": "text",
+                    "content": "This is just an example test."
+                }
+            ]
+        }
     }
-}
 ```
 
 ### Property margin

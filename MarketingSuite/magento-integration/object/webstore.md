@@ -28,12 +28,13 @@ are linked to **Magento view**
 
 ## Personalization properties
 
-| Property name | Property type   | Description                                                 |
-|---------------|-----------------|-------------------------------------------------------------|
-| ID            | _number_        | Original ID of store view from Magento.                     |
-| name          | _string_        | Name of **Magento view** associated with webstore object    |
-| group         | _string_        | Name of **Magento store** associated with webstore object   |
-| website       | _string_        | Name of **Magento website** associated with webstore object |
+| Property name | Property type                                                                  | Description                                                                                                                    |
+|---------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ID            | _number_                                                                       | Original ID of store view from Magento.                                                                                        |
+| name          | _string_                                                                       | Name of **Magento view** associated with webstore object.                                                                      |
+| group         | _string_                                                                       | Name of **Magento store** associated with webstore object.                                                                     |
+| website       | _string_                                                                       | Name of **Magento website** associated with webstore object.                                                                   |
+| rootCategory  | _[Category](copernica-docs:MarketingSuite/magento-integration/object/category) | The root category of a webstore. It's possible that webstore doesn't have a root category. If so, NULL value will be returned. | 
 
 ## Examples
 
