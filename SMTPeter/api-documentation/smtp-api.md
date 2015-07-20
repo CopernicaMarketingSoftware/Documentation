@@ -13,9 +13,11 @@ your email client/mail server to forward mail with the following settings:
     Host:       mail.smtpeter.com
     Port:       25 or 587
     Encryption: STARTTLS
-    
-    or, for SSL connections:
-    
+
+
+or, for SSL connections:
+
+
     Host:       mail.smtpeter.com
     Port:       465
     Encryption: SSL
@@ -25,6 +27,25 @@ your login credentials. In order to login you should configure your
 application to either authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 
 
 And that is it! You are all set up for sending email through SMTPeter. 
+
+
+## Enabling SMTPeter features with the SMTP API
+
+There are two ways to enable or disable specific features in the SMTP API. The first one 
+is to [create separate logins](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation") 
+in which you enable or disable certain features. The second one is to add one of the following 
+MIME-headers to your email. When set to true they will enabled, when set to false they will be 
+disabled. 
+
+
+MIME headers for SMTPeter features:
+```
+x-smtpeter-inlinizecss:        When set to true, all CSS will be inlined inside the HTML
+x-smtpeter-clicktracking:      When set to true, links will be redirected and tracked
+x-smtpeter-bouncetracking:     When set to true, bounces will be tracked
+x-smtpeter-openstracking:      When set to true, opens will be tracked
+```
+
 
 ## Where can I find my SMTP credentials?
 
@@ -60,8 +81,8 @@ SSL is supported on port 465.
 ## Setting up your local mail server to send with SMTPeter
 
 You can also set up your local mail server, such as Postfix
-to use SMTPeter as [smart host](copernica-docs:SMTPeter/api-documentation/smart-host "Using SMTPeter as smart host"). 
+to use SMTPeter as [smart host](copernica-docs:SMTPeter/smart-host "Using SMTPeter as smart host"). 
 If you want to use your local mail server setting SMTPeter as smart host 
 is the fastest and recommended way to connect. 
 
-[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/integrate/postfix "Setting up Postfix to send with SMTPeter") 
+[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/quick-start/postfix "Setting up Postfix to send with SMTPeter") 

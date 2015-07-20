@@ -2,7 +2,8 @@
 
 The SMTPeter API provides a powerful RESTful interface. 
 Which means that your application can access the API using 
-the HTTP protocol. 
+the HTTP protocol. Our REST API accepts POST and JSON data 
+on its endpoint. 
 
 ## API Access Token
 
