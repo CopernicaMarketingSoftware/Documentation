@@ -19,17 +19,20 @@ You can create multiple logins.
 Now you've created your login credentials you will need to change the 
 SMTP credentials of your application/mail server. Please set it to the 
 following to send through SMTPeter:
-`
-Host:       mail.smtpeter.com
-Port:       25 or 587
-Encryption: STARTTLS
-`
+
+```
+Host:       mail.smtpeter.com 
+Port:       25 or 587 
+Encryption: STARTTLS 
+```
+
 or, for SSL connections:
-`
-Host:       mail.smtpeter.com
-Port:       465
-Encryption: SSL
-`
+
+```
+Host:       mail.smtpeter.com 
+Port:       465 
+Encryption: SSL 
+```
 
 Authentication is done using your login credentials. Make sureto use either 
 [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 

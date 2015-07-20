@@ -11,7 +11,7 @@ going to `/etc/postfix/main.cf` and setting the following:
 myhostname = fqdn.yourdomain.com
 ```
 
-## Configure SMTP Username and password
+## Configure SMTP username and password
 
 The next step is to configure your SMTP username and password for
 SMTPeter. These credentials are generally stored in a file called
