@@ -53,9 +53,7 @@ If you want to use SMTPeter with Postfix, please follow our
 [Using SMTPeter with Postfix guide](copernica-docs:SMTPeter/quick-start/postfix "Using SMTPeter with Postfix").
 
 If you are already sending through SMTP or want to send through SMTP you should 
-us our SMTP API. 
-
-[SMTP API quick start guide](copernica-docs:SMTPeter/quick-start/smtp-api)
+read our [SMTP API quick start guide](copernica-docs:SMTPeter/quick-start/smtp-api)
 
 If you want to use our REST API go to our 
 [REST API quick start guide](copernica-docs:SMTPeter/quick-start/rest-api)

@@ -22,3 +22,10 @@ https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
 
  ## Sending Email with the REST API
 
+All messages sent through the REST API should at least contain the following variables:
+
+```
+"envelope":     string with a pure email address
+"recipient":    string or array with a pure email address
+```
+
