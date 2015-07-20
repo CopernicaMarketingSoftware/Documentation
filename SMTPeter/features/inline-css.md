@@ -33,10 +33,10 @@ Turns into:
 
 ## Enabling inline CSS using the SMTP API
 
-There are two ways to enable SMTPeter's inline CSS faeture when using the 
+There are two ways to enable SMTPeter's inline CSS feature when using the 
 SMTP API. The first one is to go to your SMTPeter dashboard and 
 [create a new SMTP login](copernica-docs:SMTPeter/dashboard/smtp-credentials) 
-when creating this new login make sure to tick the box next to inlinecss to 
+when creating this new login make sure to tick the box next to inlinecss` to 
 enable the feature. You can also enable other features for the same login by 
 checking the boxes next to those features. 
 

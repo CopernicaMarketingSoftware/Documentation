@@ -15,7 +15,9 @@ This token has to be added as a parameter to all of your API calls.
 
 All API methods are accessed via:
 
-    https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
+```
+https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
+```
 
  > **Note:** All API requests must use secure HTTPS connections. Unsecure HTTP requests will 
 result in a 400 Bad Request response. 
@@ -24,36 +26,40 @@ result in a 400 Bad Request response.
 
 All messages sent through the REST API should **at least** contain the following variables:
 
-    "envelope":     string with a pure email address
-    "recipient":    string or array with a pure email address
-    "recipients":   string with comma-separated email addresses
+```
+"envelope":     string with a pure email address
+"recipient":    string or array with a pure email address
+```
 
+### Including your email message
 
-The request should, of course, also contain your email message. SMTPeter offers two ways  
+The request should, of course, also contain your email message. SMTPeter offers two ways 
 to include your message when sending through our REST API:
 
-  * You can send emails by adding the variable "mime", followed by the full mime
-  message. 
-  * You can also submit the different parts of your message, such as the subject and
-  the html parts. 
+
+* Add the variable "mime", followed by the full mime message.
+* Submit the different parts of your message, such as the subject and the html parts.
+
 
 Without the envelope, recipient or recipients variables, your email message, and a 
 valid access key, your email cannot be sent.
 
 If you want to use the mime variable, simply add the following variable to your request: 
 
-    "mime":      string containing the full mime message
-
+```
+"mime":             string containing the full mime message
+```
 
 If you do not use the mime variable, you can add one or more of the following variables:
 
-
-    "subject"           string containing the subject
-    "from"              string containing the sender (email address)
-    "to"                string or array containing recipients (email address)
-    "cc"                string or array containing the cc addresses (email address)
-    "text"              text version of the email
-    "html"              html version of the email
+```
+"subject":          string containing the subject
+"from":             string containing the sender (email address)
+"to":               string or array containing recipients (email address)
+"cc":               string or array containing the cc addresses (email address)
+"text":             text version of the email
+"html":             html version of the email
+```
 
  >**Note:** The 'from', to' and 'cc' variables only state what the MIME
  looks like, not who the actual recipients of the email are. The email
@@ -69,13 +75,15 @@ SMTPeter also offers the following boolean variables (e.g. variable: true/false)
 that can be sent with each request. Including these variables and setting them 
 to true or false will enable or disable the features for the email.   
 
-    "inlinizecss":        When set to true, all CSS will be inlined inside the HTML
-    "clicktracking":      When set to true, links will be redirected and tracked
-    "bouncetracking":     When set to true, bounces will be tracked
-    "openstracking":      When set to true, opens will be tracked
+```
+"inlinizecss":        When set to true, all CSS will be inlined inside the HTML
+"clicktracking":      When set to true, links will be redirected and tracked
+"bouncetracking":     When set to true, bounces will be tracked
+"openstracking":      When set to true, opens will be tracked
+```
 
 The variables can be either provided as regular POST data, or they can be encoded in JSON. If you
-use JSON, the Content-Type should be set to application/json. 
+use JSON, the content-type should be set to application/json. 
 
 
 ### Envelope and recipient address notation 
@@ -83,21 +91,25 @@ use JSON, the Content-Type should be set to application/json.
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>') 
-(e.g. it should state 'richard@copernica.com' and not '"Richard" \<richard@copernica.com\>'). 
+(e.g. it should state 'richard@copernica.com' and not '"Richard" <richard@copernica.com>'). 
 
-Both the envelope and recipient variables should only contain a single
-email address. It is not possible to add multiple comma-separated addresses. 
+The envelope variable should only contain a single email address. 
 
 ### Adding multiple email addresses
 
-It is possible to add multiple recipients either by by adding the `recipients' variable instead
-of the recipient variable. The email addresses here have to be comma-separated. 
+It is possible to add multiple recipients by adding an array with multiple email addresses. 
+The email addresses here have to be stored 
+in an array. 
 
 Examples:
 
-```javascript
+```json
 {
-    "recipients": "one@example.com", "two@example.com", ...
+"recipient": [
+                "one@example.com",
+                "two@example.com", 
+                "..." 
+              ]
 }
 ```
 
@@ -115,7 +127,7 @@ the 'recipient' variable, but also allow comma separated addresses:
 
 Example:
 
-```javascript
+```json
 {
   "to": [
     "one@example.com",

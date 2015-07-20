@@ -5,8 +5,8 @@ guide to quickly start sending your email through SMTPeter.
 
 ## 1. Create an account
 
-First things first: before you start using SMTPeter, you first 
-need to [create and account](https://www.smtpeter.com/app/#/menu/register "create an account"). 
+First things first: before you start using SMTPeter, you first need to 
+[create an account](https://www.smtpeter.com/app/#/menu/register "create an account"). 
 Creating an account gives you access to your 
 [SMTPeter Dashboard](copernica-docs:SMTPeter/dashboard/dashboard-overview "Dashboard Documentation"). 
 In this dashboard you can access and edit all your administrative, 

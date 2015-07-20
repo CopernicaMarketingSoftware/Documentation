@@ -59,17 +59,17 @@ Open tracking adds a so called 'tracking pixel' to your email. When one of your 
 opens your email the tracking pixel will send a notification back to SMTPeter's 
 servers and show this in your statistics overview or can be retreived using the REST API. 
 
-The tracking pixels knows exactly which email address corresponds with the 
+The tracking pixels knows exactly which email address corresponds with the registered
 open, which gives you detailed recipient based statistics. 
 
 ### Click Tracking
 
 Click tracking means that SMTPeter convert's all your links to point towards 
-SMTPeter's servers where we forward them to the original link's location. This does not 
+SMTPeter's servers, where we forward them to the original link's location. This does not 
 change anything for your links, but makes it so our servers receive a notification 
 whenever one of your recipients clicks on a link in your email. All clicks are 
 show in your statistics overview or can be retreived using the REST API. 
 
 Link tracking shows exactly which email address corresponds with a click, 
-which gives you detailed recipient based statistics
+which gives you detailed recipient based statistics.
 
