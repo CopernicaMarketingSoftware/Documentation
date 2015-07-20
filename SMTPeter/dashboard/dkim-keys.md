@@ -59,10 +59,10 @@ Follow the next steps to set the DKIM for your domain.
   5. Save your changes
 
  >**Note:** When creating a DKIM key on the SMTPeter dashboard the above five steps will be 
- personalized so you can easily copy and paste your DKIM key into your TXT record. 
+ personalized so you can easily copy and paste your DKIM key into your TXT record.
 
 
- ## DKIM key status
+## DKIM key status
 
  Once you have added your DKIM key, the overview shows the domain, selector and algorithm 
  used for each of your keys. It also shows wheter it's a conditional DKIM key or one that 
