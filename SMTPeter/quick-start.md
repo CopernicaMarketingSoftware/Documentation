@@ -35,7 +35,6 @@ TXT - and if possible SPF - record on your domain.
 
 ` "v=spf1 include:_senderspf.smtpeter.com a mx ~all" `
 
-
 ## 3. Choose an API
 
 Once you have created your account and set up your Sender ID it is time to choose
@@ -47,7 +46,6 @@ the SMTP protocol is a so called [handshake protocol](https://en.wikipedia.org/w
 The REST API is also designed to include different variables 
 in a single "call", the SMTP protocol was not designed to do so. Our REST API accepts POST and JSON data 
 on its endpoint. 
-
 
 If you want to use SMTPeter with Postfix, please follow our 
 [Using SMTPeter with Postfix guide](copernica-docs:SMTPeter/quick-start/postfix "Using SMTPeter with Postfix").

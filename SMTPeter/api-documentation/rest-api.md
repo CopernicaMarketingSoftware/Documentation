@@ -2,8 +2,7 @@
 
 The SMTPeter API provides a powerful RESTful interface. 
 Which means that your application can access the API using 
-the HTTP protocol. Our REST API accepts POST and JSON data 
-on its endpoint. 
+the HTTP protocol. 
 
 ## API Access Token
 
@@ -13,23 +12,36 @@ This token has to be added as a parameter to all of your API calls.
 
 ## API Endpoint
 
+The SMTPeter REST API accepts POST and JSON data on its endpoint. 
+
 All API methods are accessed via:
 
 ```
 https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
 ```
 
- > **Note:** All API requests must use secure HTTPS connections. Unsecure HTTP requests will 
-result in a 400 Bad Request response. 
+ > **Note:** All API requests must use secure HTTPS connections. Unsecure 
+HTTP requests will result in a 400 Bad Request response. 
 
 ## Sending email using the REST API
 
-All messages sent through the REST API should **at least** contain the following variables:
+To send email with SMTPeter you will have to use the `send` method, which can be 
+accessed at:
+
+```
+https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
+```
+
+When sending a message through the API, it needs to contain **at least** the following
+variables as well as the message itself:
 
 ```
 "envelope":     string with a pure email address
 "recipient":    string or array with a pure email address
 ```
+
+If you do not include these variables in your request, you will receive an error and 
+the email will not be sent. 
 
 ### Including your email message
 
@@ -40,17 +52,14 @@ to include your message when sending through our REST API:
 * Add the variable "mime", followed by the full mime message.
 * Submit the different parts of your message, such as the subject and the html parts.
 
-
-Without the envelope, recipient or recipients variables, your email message, and a 
-valid access key, your email cannot be sent.
-
 If you want to use the mime variable, simply add the following variable to your request: 
 
 ```
 "mime":             string containing the full mime message
 ```
 
-If you do not use the mime variable, you can add one or more of the following variables:
+If you do not use the mime variable, but define the individual values you can do so by 
+adding the following variables:
 
 ```
 "subject":          string containing the subject
@@ -61,12 +70,15 @@ If you do not use the mime variable, you can add one or more of the following va
 "html":             html version of the email
 ```
 
- >**Note:** The 'from', to' and 'cc' variables only state what the MIME
+ >**Note:** The 'from', 'to' and 'cc' variables only state what the MIME
  looks like, not who the actual recipients of the email are. The email
  will be deliver to the email address stated in the 'recipient' variable
  and not necessarily to the addresses stated in the MIME headers. The email
  addresses stated in the 'to' and 'cc' variables will (often) be the same
  as the ones stated in the recipient variable. 
+
+
+These variables will then be converted to a full MIME message by SMTPeter. 
 
 
 ### Additional variables for tracking and processing
@@ -91,15 +103,14 @@ use JSON, the content-type should be set to application/json.
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>') 
-(e.g. it should state 'richard@copernica.com' and not '"Richard" <richard@copernica.com>'). 
+(e.g. it should state 'richard@copernica.com' and not '"Richard" /<richard@copernica.com/>'). 
 
 The envelope variable should only contain a single email address. 
 
 ### Adding multiple email addresses
 
 It is possible to add multiple recipients by adding an array with multiple email addresses. 
-The email addresses here have to be stored 
-in an array. 
+The email addresses have to be stored in an array, but can also be comma separated. 
 
 Examples:
 
@@ -107,7 +118,7 @@ Examples:
 {
 "recipient": [
                 "one@example.com",
-                "two@example.com", 
+                "two@example.com, three@example.com", 
                 "..." 
               ]
 }
@@ -132,7 +143,7 @@ Example:
   "to": [
     "one@example.com",
     "two@example.com",
-    " \"Number three\" <three@example.com>, <info@example.com>"
+    " \"Number three\" <three@example.com>, info@example.com"
   ] 
 }
 ```
