@@ -14,7 +14,7 @@ All available properties of this block type are mentioned in the table below.
 | Property | Value | Description                                                                                                                                               |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "video" | Property to identify the block as a video block.                                                                                                            |
-| [source](copernica-docs:ResponsiveEmail/json/property-source) | _string_ | The video source URI                                                                              |
+| [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | The video source URI                                                                                    |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`.           |
 | [embed](copernica-docs:ResponsiveEmail/json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
 | [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the video be aligned? default is left.                                         |
@@ -38,7 +38,7 @@ the video on youtube when clicked:
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "source" : "https://www.youtube.com/watch?v=zSQCH1qyIDo"
+            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo"
         } ]
     }
 }
@@ -58,7 +58,7 @@ webpage. To do this, set the 'embed' property to true (it is false by default).
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "source" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
+            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
             "embed"  : true
         } ]
     }
@@ -84,7 +84,7 @@ the video will still be embedded directly into the webversion.
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "source" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
+            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
             "link"   : {
                 "url"   : "http://www.example.com/video",
                 "title" : "Watch the video"
