@@ -32,7 +32,7 @@ Email API, because it renders better on different email clients.
     "content" : {
         "blocks" : [ {
             "type"      : "button",
-            "size"      : "small",
+            "size"      : 10,
             "corners"   : "round",
             "label"     : "Click me!",
             "color"     : "red",
