@@ -2,7 +2,7 @@
 
 ## Pay-as-you-go
 
-SMTPeter's standard payment system is a so called 'pay-as-you go' system:
+SMTPeter's standard payment system is a so called 'pay-as-you-go' system:
 you can top up your balance and the costs of any emails will be taken off 
 that balance. You can send email as long as your balance is high enough to 
 support the amount of emails you want to send (e.g. if your balance allows for
@@ -25,7 +25,7 @@ a receipt/invoice about your costs for the past month.
 
 If you prefer to use a postpay option instead of the pay-as-you-go payment, you
 can contact us at [info@smtpeter.com](mailto:info@smtpeter.com "email us") or
-call at `+31 (0)20 520 61 90`. The post payment method means you will be invoiced
+call at +31 (0)20 520 61 90. The post payment method means you will be invoiced
 for the amount of emails you have sent at the end of each month. Of course the same
 discounts as in the pay-as-you go payment system apply for the post payment system. 
 This invoice has to be paid within two weeks of the invoice date. 

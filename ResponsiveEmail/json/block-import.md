@@ -1,7 +1,7 @@
 # Import blocks
 
-Import blocks provide the possibility to import a piece of json from an external 
-source and use this json as input for other new blocks, essentially allowing you 
+Import blocks provide the possibility to import a piece of json from an external
+source and use this json as input for other new blocks, essentially allowing you
 to dynamically generate blocks.
 
 ```javascript
@@ -11,13 +11,13 @@ to dynamically generate blocks.
     "content" : {
         "blocks" : [ {
             "type" : "import",
-            "source" : "https://www.responsiveemail.com//headers/heading1.json"
+            "url" : "https://www.responsiveemail.com//headers/heading1.json"
         } ]
     }
 }
 ```
 
-The only - obviously - required option for this block is of course the `source` 
+The only - obviously - required option for this block is of course the `url`
 property. This property must point to the URI of a valid JSON object.
 
 The following properties are supported:
@@ -27,4 +27,4 @@ The following properties are supported:
 | Property | Value | Description                                                                                  |
 |:----------------------------------------------------------------------------------------------------------------|
 | type | "import" | Identifies the block as a import block.                                                       |
-| [source](copernica-docs:ResponsiveEmail/json/property-source) | _string_ | The source URI of the JSON to import |
+| [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | The source URI of the JSON to import       |

@@ -1,6 +1,6 @@
 # Configuring DKIM keys
 
-The SMTPeter dashboard shows the DKIm keys you have currently 
+The SMTPeter dashboard shows the DKIM keys you have currently 
 configured and allows you to create new DKIM keys or add an 
 existing key for SMTPeter to sign your emails with.
 
@@ -59,4 +59,15 @@ Follow the next steps to set the DKIM for your domain.
   5. Save your changes
 
  >**Note:** When creating a DKIM key on the SMTPeter dashboard the above five steps will be 
- personalized so you can easily copy and paste your DKIM key into your TXT record. 
+ personalized so you can easily copy and paste your DKIM key into your TXT record.
+
+
+## DKIM key status
+
+ Once you have added your DKIM key, the overview shows the domain, selector and algorithm 
+ used for each of your keys. It also shows whether it's a conditional DKIM key or one that 
+ is always used. 
+
+ If you click on a DKIM key it will allow you to change the sign rules (whether it is a 
+ conditional key or one that is always used) and check the DKIM status. The status shows 
+ if your DKIM key is valid and whether you have a DKIM record on your domain. 
