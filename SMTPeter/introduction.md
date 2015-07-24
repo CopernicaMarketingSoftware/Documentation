@@ -3,55 +3,55 @@
 ## What is SMTPeter?
 
 SMTPeter is a cloud-based SMTP server for fast and secure email delivery. It 
-is designed to help your applications and websites send email messages.
+helps applications and websites to send email. Instead of sending email directly
+to the recipient, you can let your application send the message through SMTPeter
+to improve your deliverability, and track all sort of statistics.
 
 
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
 
-
-You can send all kinds of email with SMTPeter: from transactional email messages 
-to mass mailings. We will take care of all of the technical and delivery details, 
-so you can focus on creating and optimizing your email messages and campaigns. 
+You can pass all types of email through SMTPeter: for example mass mailing, but also
+individual transactional emails, or even the messages that you send with your local
+desktop based mail client (like Outlook or Thunderbird). We take care of the 
+technical and delivery details, and you can focus on creating and optimizing your email 
+messages and campaigns. 
 
 
 ## What does SMTPeter do?
 
-Different mail servers, such as Yahoo, Gmail and Hotmail, have different configurations. 
-They accept email at a different rate, using different limits on, for example the amount 
-of connections or messages over a single connection. SMTPeter handles optimizing delivery 
-for these diferrent mail servers and improves your email deliverability. 
+There are many reasons why you'd want to use SMTPeter. For example, mail servers such 
+as Yahoo, Gmail and Hotmail all have different policies for accepting email. They all
+accept emails at different rates, and use different limits for the number of acceptable
+connections or messages. SMTPeter knows about these limits, and optimizes and improves 
+your email deliverability. 
 
-Besides improving email delivery, SMTPeter also has several different features to help 
-you further improve your email messages. 
+But deliverability is not the only reason to use SMTPeter. SMTPeter also has many other cool 
+features to further improve your email messages. Let's name a few.
 
-### Inlining CSS
 
-The style (CSS) of your email is normally placed in the header of your HTML document, 
-however some email clients strip out the email headers, getting rid of the complete style 
-sheet of your email. To avoid this SMTPeter gives you the option to automatically inline 
-all CSS. This will add your header style to each corresponding HTML tag. 
+### Inline CSS
 
+The stylesheet (CSS) of your email is normally placed in the header of your HTML document. 
+However, some web based email clients strip out these HTML headers, and get rid of the 
+complete stylesheet of your email. To avoid this, SMTPeter can automatically inlinize
+all CSS code. If you use this feature, the CSS stylesheet that was originally placed on 
+top of your HTML document, is transformed by SMTPeter into many different "style" attributes 
+for the individual tags. Even when the header gets removed by a web based email client,
+your email message will still be displayed correctly.
 
 [Read more about inlining CSS](copernica-docs:SMTPeter/features/inline-css)
 
 
 ### Bounce tracking
 
-When an e-mail cannot be delivered the receiving mail server often sends a specific 
-'bounce' message. This message often gives a code and states why an email cannot be 
-delivered and is sent the the envelope address of your email. 
+Normally, when you send out email, you must also take care of failed deliveries and
+bounce messages that are sent back to the envelope address. If you do not feel like
+setting up such an infrastructure to process and parse incoming bounces, you can let
+SMTPeter do this for you. All bounces can be processed by SMTPeter, and the results
+are presented to you in a clear dashboard, or automatically send to you using SMTP
+or web hooks. You can also use the SMTPeter API to download bounces at periodic intervals.
 
-SMTPeter can track bounces and also allows you to [send bounces to a specific address or link](copernica-docs:SMTPeter/dashboard/bounce-management "Bounce Management"). 
-The bounced addresses will be shown in your statistics dashboard and, if you have 
-set up your bounce management, they can also be returned to your own application, 
-where you can process them further. 
-
-
-## Email analytics 
-
-Statistics are an important indicator of the succes of an email campaign and 
-helps to further improve your campaign. SMTPeter offers both open and click 
-tracking. 
+<!--
 
 ### Open Tracking
 
@@ -61,6 +61,7 @@ servers and show this in your statistics overview or can be retreived using the 
 
 The tracking pixels knows exactly which email address corresponds with the registered
 open, which gives you detailed recipient based statistics. 
+
 
 ### Click Tracking
 
@@ -73,3 +74,4 @@ show in your statistics overview or can be retreived using the REST API.
 Link tracking shows exactly which email address corresponds with a click, 
 which gives you detailed recipient based statistics.
 
+-->
