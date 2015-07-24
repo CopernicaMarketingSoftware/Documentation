@@ -37,6 +37,7 @@ For more details about customer subscription the `subscriber` property should be
 | shippingAddress   | _[Address](copernica-docs:MarketingSuite/magento-integration/object/address)_               | Customer's default shipping address.                      |
 | activeBasket      | _[Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)_                   | Customer's active basket.                                 |
 | person            | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_                 | Associated person object.                                 |
+| wishlist          | _[Wishlist](copernica-docs:MarketingSuite/magento-integration/object/wishlist)_             | Customer's wish list                                       |
 
 ## Examples
 
