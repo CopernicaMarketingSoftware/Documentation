@@ -10,11 +10,24 @@ to improve your deliverability, and track all sort of statistics.
 
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
 
-You can pass all types of email through SMTPeter: for example mass mailing, but also
+You can pass all types of email through SMTPeter: mass mailings, but also
 individual transactional emails, or even the messages that you send with your local
 desktop based mail client (like Outlook or Thunderbird). We take care of the 
 technical and delivery details, and you can focus on creating and optimizing your email 
 messages and campaigns. 
+
+
+## How can you integrate SMTPeter?
+
+SMTPeter comes with two easy-to-use API's. The first one is a regular SMTP API. If you
+already have an environment in which you send emails over SMTP, you can simply change
+the SMTP settings and have your email sent through SMTPeter instead.
+
+The other API is a REST API. This makes it possible to send out email using regular
+HTTP POST calls. Because the HTTP protocol is more flexible than SMTP, you can even
+pass all sorts of options with each message to improve deliverability.
+
+[Read more about our REST API vs our SMTP API](copernica-docs:SMTPeter/api-documentation/api-introduction)
 
 
 ## What does SMTPeter do?
