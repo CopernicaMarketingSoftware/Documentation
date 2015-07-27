@@ -32,7 +32,7 @@ REST API
     "envelope":     "info@example.com",
     "recipient":    "recipient@example.com",
     "from":         "info@example.com",
-    "to":           "recipient@example.com"
+    "to":           "recipient@example.com",
     "html":         "This is example content."
 }
 ```
