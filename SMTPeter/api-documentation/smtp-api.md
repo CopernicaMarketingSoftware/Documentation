@@ -1,14 +1,13 @@
 ## SMTP API Overview
 
-An overview of SMTPeter's SMTP API. 
+To use the SMTP API you need SMTP login credentials. You can create
+a username/password combination in your [Dashboard](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation").
+Once you have your credentials you can configure your email client/mail server to forward email 
+to SMTPeter.com.
 
-## Connecting through SMTP
-
-Connecting to SMTPeter through our SMTP API is very simple. First
-you will need to create login credentials in your [Dashboard](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation"), 
-these credentials will let SMTPeter know that you are allowed to
-send email. Once you have your credentials you will have to configure
-your email client/mail server to forward email with the following settings:
+The SMTPeter.com server can be reached via the "mail.smtpeter.com" domain, on port 25
+and 587. Only authenticated and encrypted connections using "STARTTLS" are supported. 
+Mails that are not sent over a secured connection will be rejected.
 
 ```
 Host:       mail.smtpeter.com
@@ -16,24 +15,61 @@ Port:       25 or 587
 Encryption: STARTTLS
 ```
 
-You can connect using either port 25 or 587, but these are identical. Some residential 
-ISPs and Cloud Hosting Providers block port 25 and it is often recommended to use 
-port 587 instead. 
+### What is the difference between port 25 and port 587?
 
- > **Note:** All connections on port 25 and 587 have to use STARTTLS, SMTPeter does not accept 
-unsecured connections. 
+You can use both port 25 and port 587 to send mail to SMTPeter. There is no difference
+between these two ports. We have opened port 587 because some providers have blocked
+access to port 25.
 
-MailerQ also supports port 465 for SSL connections. If you use this port you do not 
-have to use STARTTLS, but SSL. These connections are always encrypted. To use this port 
-you have to set your application to forward email using the following settings: 
 
-```
-Host:       mail.smtpeter.com
-Port:       465
-Encryption: SSL
-```
+### Example communication
 
-Using port 465 the SMTP protocol will look something like this: 
+The SMTP protocol is quite "chatty". Once your application has opened up a connection to
+SMTPeter, a handshake protocol is started in which your client and the SMTPeter server 
+exchange pleasantries, convert the connection into a secure connection, and hand over 
+the full MIME message. The following output is a typical handshake that may occur.
+
+````
+220 smtpeter1.copernica.nl MailerQ ESMTP
+EHLO mydomain.com
+250-STARTTLS
+250-PIPELINING
+250-8BITMIME
+250 Pleased to meet you
+STARTTLS
+220 Ready to start TLS
+EHLO mydomain.com
+250-PIPELINING
+250-8BITMIME
+250 Pleased to meet you
+AUTH LOGIN bXktdXNlcm5hbWU=
+334 UGFzc3dvcmQ6
+bXktcGFzc3dvcmQ=
+235 Welcome back
+MAIL FROM:<info@example.com>
+250 Sender OK
+RCPT TO:<john@doe.com>
+250 Recipient OK
+DATA
+From: <info@example.com>
+To: <john@doe.com>
+Subject: Example email
+MIME-Version: 1.0
+
+This is example content
+.
+250 Ok, queued as jkKa2Skd3Uu
+````
+
+### Faster handshake using port 465
+
+As an alternative, you can also connect to port 465. This opens up a TCP connection in a
+secure state right away, and skips the STARTTLS handshake. Although sending mail over port 465 
+was never standardized and is even deprecated in favour of the STARTTLS encryption
+(in fact, port 465 has even [been reassigned to a new service](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=465 "IANA Port 465")),
+communication over port 465 is faster.
+
+Using port 465 the SMTP handshake looks like this: 
 
 
 ````
@@ -61,44 +97,40 @@ This is example content
 250 Ok, queued as jkKa2Skd3Uu
 ````
 
- > **Note:** Whilst we do support port 465, it is mostly to support legacy 
- system that are only capable of using this method. Using port 465 for SMTPS 
- is depriciated because [IANA has reassigned a new service to this port](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=465 "IANA Port 465"). 
+```
+. 
 
-## Which ports does SMTPeter support? 
-
-SMTPeter supports both port 25, 587 and 465. Port 25 and 587 are for STARTTLS encryption, 
-SSL is supported on port 465.
 
 ### SMTP Authentication
 
-Whenever you send email using the SMTPeter SMTP API you will need to include 
-your login credentials. In order to login you should configure your 
-application to either authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 
+Whenever you send email using the SMTPeter SMTP API you must include your 
+login credentials. In order to login you should configure your application to either 
+authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 
 
-### Where can I find my SMTP credentials?
-
-You can find and create your SMTP credentials in your
+You can find and create your SMTP credentials in the
 [SMTP credential overview](https://www.smtpeter.com/app/#/admin/smtp-credentials "Go to your dashboard") 
 on your SMTPeter Dashboard. The overview shows all the generated usernames for 
-your account, the passwords are not shown in the dashboard and are only shown once
-when you create new SMTP credentials. Make sure you write down your password somewhere
-safe!
+your account. The passwords can not be displayed because they are stored in an encrypted format.
+Make therefore sure you write down or remember your password!
 
-You can create multiple SMTP credentials for your account. Each set of credentials
-can have a [specific set of features](copernica-docs:SMTPeter/features) enabled or 
-disabled, which you need to specify when you create new SMTP credentials. You can use the 
-different logins if you want to enable or disable certain features for specific emails. 
 
-## Enabling SMTPeter features with the SMTP API
+### Passing parameters / using different logins
 
-There are two ways to enable specific features in the SMTP API. The first one 
-is to [create separate logins](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation") 
-with different features enabled and use these logins when you connect to SMTPeter. 
+The SMTP protocol was never meant to pass parameters with each message. If you want
+to enable or disable specific SMTPeter features for specific messages, you will have
+to either use MIME header fields or use different SMTP credentials. 
 
-The second one is to add special MIME-headers to your email. You can add these to 
-the MIME of your email and enable or disable a feature by setting them to true 
-or false:
+In the [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation") 
+you can create multiple SMTP logins. You can for example
+create a login for which the "inlinecss" feature is enabled, and one for which
+it is disabled. When you connect to the SMTP API, you simply pick a login/password
+combination that has the features you need. 
+
+
+### Passing parameters / MIME headers
+
+The alternative method to enable or disable features is by adding special MIME-headers to 
+your email.
 
 MIME headers for SMTPeter features:
 ```
@@ -108,18 +140,21 @@ x-smtpeter-trackbounces:     When set to true, bounces will be tracked
 x-smtpeter-trackopens:       When set to true, opens will be tracked
 ```
 
-## Setting up your local mail server to send with SMTPeter
+Every incoming MIME message is parsed by SMTPeter, and if one of the above MIME headers
+is set, the corresponding feature is activated, possibly overriding the setting
+from the credentials.
 
-You can also set up your local mail server, such as Postfix
-to use SMTPeter as [smart host](copernica-docs:SMTPeter/smart-host "Using SMTPeter as smart host"). 
-If you want to use your local mail server setting SMTPeter as smart host 
-is the fastest and recommended way to connect. 
-
-[Learn how to set up Postfix to send through SMTPeter](copernica-docs:SMTPeter/quick-start/postfix "Setting up Postfix to send with SMTPeter") 
+All x-smtpeter-* headers are instructions to the SMTPeter servers, and are stripped
+from the message before it is delivered. Your receivers will therefore
+never see these x-smtpeter-* headers, even if they do inspect the source.
 
 
-<!---
-## Common errors
+<!--
 
-@todo
+examples:
+    - configure postfix
+    - php script
+
+
 -->
+
