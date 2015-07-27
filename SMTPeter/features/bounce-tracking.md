@@ -75,8 +75,8 @@ SMTPeter to track your bounces there are several different ways to do so.
 ### No bounce tracking
 
 Not setting up bounce tracking means SMTPeter will not track the bounces of your 
-emails. THis does not mean you will not receive any bounces. It is impossible to 
-completely disable bounces; when you send email through SMTPeter they will be delivered 
+emails. This does not mean you will not receive any bounces. It is impossible to 
+completely disable bounces: when you send email through SMTPeter they will be delivered 
  to the recipient's mail server, which will return any bounces to your envelope 
 or Return-Path address. 
 
