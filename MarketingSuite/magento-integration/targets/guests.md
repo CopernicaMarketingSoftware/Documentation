@@ -20,3 +20,5 @@ For lists based on guests the following filter options are available:
 * **Last name**
 * **Email address**
 * **Gender**
+* **bought product**
+* **bought product from category**

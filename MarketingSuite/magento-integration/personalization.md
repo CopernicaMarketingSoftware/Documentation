@@ -36,14 +36,15 @@ Below, you can find a table that summarizes what kind of top-level variables are
 available for given the different Magento targets.
 
 
-| Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  |
-|:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|
-| $magento \*     | [magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           |
-| $customer       | [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     |
-| $quote          | [quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            |
-| $order          | [order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            |
-| $subscriber     | [subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            |
-| $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | No          | No          | No               | Yes           |
+| Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  | Guests list |
+|:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|:-----------:|
+| $magento \*     | [magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           | Yes         |
+| $customer       | [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     | No          |
+| $guest          | [guest](copernica-docs:MarketingSuite/magento-integration/object/guest)            | No             | No          | No          | No               | No            | Yes         |
+| $quote          | [quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
+| $order          | [order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            | Yes         |
+| $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | No          | No          | No               | Yes           | No          |
+| $subscriber     | [subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
 
 _\* As you can see in the table, the variable `$magento` is the only one variable available
 in all list types._ 
@@ -67,6 +68,7 @@ Below is a list of object types that can be returned from various properties:
 * [Address](copernica-docs:MarketingSuite/magento-integration/object/address)
 * [Category](copernica-docs:MarketingSuite/magento-integration/object/category)
 * [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
+* [Guest](copernica-docs:MarketingSuite/magento-integration/object/guest)
 * [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)
 * [Order](copernica-docs:MarketingSuite/magento-integration/object/order)
 * [OrderItem](copernica-docs:MarketingSuite/magento-integration/object/order-item)
@@ -76,3 +78,5 @@ Below is a list of object types that can be returned from various properties:
 * [QuoteItem](copernica-docs:MarketingSuite/magento-integration/object/quote-item)
 * [Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)
 * [Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)
+* [Wishlist](copernica-docs:MarketingSuite/magento-integration/object/wishlist)
+* [WishlistItem](copernica-docs:MarketingSuite/magento-integration/object/wishlist-item)
