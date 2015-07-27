@@ -97,9 +97,6 @@ This is example content
 250 Ok, queued as jkKa2Skd3Uu
 ````
 
-```
-. 
-
 
 ### SMTP Authentication
 
@@ -132,7 +129,6 @@ combination that has the features you need.
 The alternative method to enable or disable features is by adding special MIME-headers to 
 your email.
 
-MIME headers for SMTPeter features:
 ```
 x-smtpeter-inlinecss:        When set to true, all CSS will be inlined
 x-smtpeter-trackclicks:      When set to true, links will be tracked
@@ -142,11 +138,13 @@ x-smtpeter-trackopens:       When set to true, opens will be tracked
 
 Every incoming MIME message is parsed by SMTPeter, and if one of the above MIME headers
 is set, the corresponding feature is activated, possibly overriding the setting
-from the credentials.
+from the credentials (in other words: if you have disabled the "inlinecss" feature
+for an SMTP login, but you do include the "x-smtpeter-inlinecss: true" header in the
+mime, the CSS code is going to be inlinized anyway).
 
-All x-smtpeter-* headers are instructions to the SMTPeter servers, and are stripped
-from the message before it is delivered. Your receivers will therefore
-never see these x-smtpeter-* headers, even if they do inspect the source.
+All headers prefixed with "x-smtpeter-" are instructions to the SMTPeter servers, and are 
+stripped from the message before it is delivered. Your receivers will therefore
+never see these "x-smtpeter-" headers, even if they do inspect the source.
 
 
 <!--

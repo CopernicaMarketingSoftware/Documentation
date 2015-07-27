@@ -1,8 +1,4 @@
 * [Introduction](copernica-docs:SMTPeter/introduction "Introduction")
-* [Quick Start Guide](copernica-docs:SMTPeter/quick-start "Quick Start Guide")
-  * [SMTP API](copernica-docs:SMTPeter/quick-start/smtp-api "Quick start guide SMTP API")
-  * [REST API](copernica-docs:SMTPeter/quick-start/rest-api "Quick start guide REST API")
-  * [Postfix](copernica-docs:SMTPeter/quick-start/postfix "Integrate Postfix with SMTPeter")
 * [API Documentation](copernica-docs:SMTPeter/api-documentation/api-introduction "API Documentation")
   * [SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API")
   * [REST API](copernica-docs:SMTPeter/api-documentation/rest-api "REST API")
