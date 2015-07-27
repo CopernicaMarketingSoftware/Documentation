@@ -1,10 +1,10 @@
 # Inline CSS
 
 The style (CSS) of your email is normally placed in the header of your HTML document, 
-however some email clients strip out the email headers, getting rid of the complete style 
-sheet of your email and completely ruining your layout. 
+however some email clients strip out the email headers, and remove the complete style 
+sheet of your email and ruin your layout. 
 
-To avoid this SMTPeter can automatically inlinize all CSS code. This transforms the 
+To avoid this, SMTPeter can automatically inlinize all CSS code. This transforms the 
 styles in your header to style attributes in the HTML tags. 
 
 
@@ -41,7 +41,7 @@ SMTP API. The first one is to go to your SMTPeter dashboard and
 As you probably know, the SMTP protocol does not easily allow to pass
 parameters with each message. To overcome this, we allow you to create
 many different SMTP logins, each one with different features enabled. If you
-want to automatically inlinize CSS, you just have to create a login with
+want to automatically inline CSS, you just have to create a login with
 this feature enabled, and use that login for sending your messages.
 
 If you are in a position to change the MIME bodies of the email messages,
@@ -50,16 +50,19 @@ header variable. If this header line is present in the mail, SMTPeter will
 also transform the CSS header into style attributes.
 
 ```
-x-smtpeter-inlinizecss:   true
+x-smtpeter-inlinecss:   true
 ```
+
+The MIME header will be stripped from the mail when the mail is sent to
+the final recipient.
 
 
 ## Enabling inline CSS using the REST API
 
-Enabling inline CSS for the SMTPeter REST API is simple. If you use the REST API
-to send emails through SMTPeter, you either submit plain HTTP POST variables, or 
-JSON documents. If you set the "inlinizecss" parameter to "true" in these POST 
-variables or in the JSON document, you tell SMTPeter to enable the inlinizer.
+If you use the REST API to send emails through SMTPeter, you either submit 
+plain HTTP POST variables, or JSON documents. If you set the "inlinecss" 
+parameter in these POST variables or in the JSON input to "true", you tell 
+SMTPeter to enable the inlinizer.
 
 ```
 POST /send HTTP/1.1

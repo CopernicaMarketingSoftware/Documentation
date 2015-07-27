@@ -8,6 +8,7 @@
   * [REST API](copernica-docs:SMTPeter/api-documentation/rest-api "REST API")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
   * [Inlining CSS](copernica-docs:SMTPeter/features/inline-css "Inline CSS Documentation")
+  * [Bounce Tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
 * [Dashboard](copernica-docs:SMTPeter/dashboard/dashboard-overview "Dashboard")
   * [Administration](copernica-docs:SMTPeter/dashboard/administration "Administration Dashboard")
   * [REST API Token](copernica-docs:SMTPeter/dashboard/rest-api-token "REST API token Dashboard")

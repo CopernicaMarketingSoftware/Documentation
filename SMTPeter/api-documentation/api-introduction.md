@@ -1,37 +1,80 @@
 # API Introduction
 
-SMTPeter offers two different ways to send email: through our SMTP API or
-by using our REST API. 
-
-## SMTP vs REST
-
-So what exactly are the differences between the SMTP and REST API? The SMTP API uses the 
-SMTP protocol, the protocol normally used by mail server to communicate with each other. This 
-makes the SMTP API the easiest way to connect to SMTPeter. If you already send using the SMTP 
-protocol you only have to change your SMTP configuration. 
-
-The REST API uses the HTTP protocol, a faster and more flexible protocol than SMTP. The 
-SMTP protocol tends to be a bit "chatty" compared to the REST API, this because 
-the SMTP protocol is a so called [handshake protocol](https://en.wikipedia.org/wiki/Handshaking "Handshaking Wiki"). 
-A REST API simply gives 'orders' to be followed by the receiver, making the REST API faster than the SMTP API. 
-
-Another difference is that the REST API inheritly has the possiblity to include different variables 
-in a single "call", the SMTP protocol was not designed to do so. Our REST API accepts POST and JSON data 
-on its endpoint. 
-
-To enable or disable variables such as tracking, inline css and bounce management in the SMTP API, you currently 
-have to create separate SMTP logins in your [Dashboard](copernica-docs:SMTPeter/Dashboard/smtp-credentials "SMTP credentials dashboard documentation") 
+SMTPeter offers two different ways to send email: through our SMTP API or by using our REST API. 
+Below we will explain the differences between the SMTP and REST API. 
 
 
-You can also enable specific features for SMTPeter through the SMTP api by adding 
-special MIME-headers to your email message.
+## The SMTP protocol
 
-[Read the SMTP API Documentation](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation")
+The SMTP API uses the SMTP protocol, the protocol normally used by mail servers to communicate with 
+each other. Your application connects to one of the SMTP ports (25, 587 or 465) of mail.smtpeter.com, and
+submits one or more email messages:
+
+````
+220 smtpeter1.copernica.nl MailerQ ESMTP
+EHLO mydomain.com
+250-STARTTLS
+250-PIPELINING
+250-8BITMIME
+250 Pleased to meet you
+STARTTLS
+220 Ready to start TLS
+EHLO mydomain.com
+250-PIPELINING
+250-8BITMIME
+250 Pleased to meet you
+AUTH LOGIN bXktdXNlcm5hbWU=
+334 UGFzc3dvcmQ6
+bXktcGFzc3dvcmQ=
+235 Welcome back
+MAIL FROM:<info@example.com>
+250 Sender OK
+RCPT TO:<john@doe.com>
+250 Recipient OK
+DATA
+From: <info@example.com>
+To: <john@doe.com>
+Subject: Example email
+MIME-Version: 1.0
+
+This is example content
+.
+250 Ok, queued as jkKa2Skd3Uu
+````
+
+As you can see, the SMTP protocol is very "chatty", a lot of handshaking and negotiating
+is going on between the server and the client. Even though the SMTP protocol is the
+world wide standard for mail delivery, and can be very easy to integrate if you have an
+already working architecture, it is not as fast as it could be, and does not allow one
+to (easily) supply per-message settings. We therefore recommend using the REST API instead.
+
+However, if you do want to use the SMTP API, please check our documentation for more details on
+how to submit email and enable SMTPeter's features using SMTP. 
+
+[Read our SMTP API Documentation](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation")
+
+
+## The REST protocol
+
+The REST API uses the the HTTP protocol, this protocol is the foundation of data communication 
+for the world wide web. To send an email your application sends an HTTP POST request to the 
+SMTPeter API endpoint:
+
+```
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+Host: www.smtpeter.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 146
+
+envelope=info%40example.com&recipient=john%doe.com&subject=this+is+the+subject&html=This+is+example+text&from=info%40example.com&to=john%40doe.com
+```
+
+The above example shows how to send a message using HTTP POST variables. In order to send through 
+SMTPeter you will also need to include an API token, which you can create on your SMTPeter dashboard. 
+
+Instead of HTTP POST variables, you can also send JSON documents to the API endpoint. To learn more 
+about adding variables, where to find your API token and how to enable or disable features using 
+our REST API, please check our REST API documentation. 
 
 [Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
 
-<!---
-## Which API should I use? 
-
-@todo
--->

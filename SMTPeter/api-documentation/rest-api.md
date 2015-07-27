@@ -25,7 +25,7 @@ HTTP requests will result in a 400 Bad Request response.
 
 ## Sending email using the REST API
 
-To send email with SMTPeter you will have to use the `send` method, which can be
+To send email with SMTPeter you have to use the `send` method, which can be
 accessed at:
 
 ```
@@ -87,11 +87,12 @@ SMTPeter also offers the following boolean variables (e.g. variable: true/false)
 that can be sent with each request. Including these variables and setting them
 to true or false will enable or disable the features for the email.
 
+
 ```
-"inlinizecss":        When set to true, all CSS will be inlined inside the HTML
-"clicktracking":      When set to true, links will be redirected and tracked
-"bouncetracking":     When set to true, bounces will be tracked
-"openstracking":      When set to true, opens will be tracked
+"inlinecss":        When set to true, all CSS will be inlined inside the HTML
+"trackclicks":      When set to true, links will be redirected and tracked
+"trackbounces":     When set to true, bounces will be tracked
+"trackopens":       When set to true, opens will be tracked
 ```
 
 

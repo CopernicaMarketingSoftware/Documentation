@@ -57,13 +57,14 @@ your email message will still be displayed correctly.
 
 ### Bounce tracking
 
-Normally, when you send out email, you must also take care of failed deliveries and
-bounce messages that are sent back to the envelope address. If you do not feel like
-setting up such an infrastructure to process and parse incoming bounces, you can let
-SMTPeter do this for you. All bounces can be processed by SMTPeter, and the results
-are presented to you in a clear dashboard, or automatically send to you using SMTP
-or web hooks. You can also use the SMTPeter API to download bounces at periodic intervals.
+When you send out email, you normally also have to take care of failed deliveres 
+and bounce messages that are sent back to the email's envelope address. However, 
+if you do not want to set up an infrastructure to take care of bounces yourself, 
+you can let SMTPeter do this for you. SMTPeter can process all bounces and present 
+the results in a clear overview. It can also automatically send them to you using 
+SMTP or web hooks. You can also use the API to download bounces at periodic intervals. 
 
+[Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking)
 <!--
 
 ### Open Tracking
