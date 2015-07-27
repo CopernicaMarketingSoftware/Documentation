@@ -87,7 +87,7 @@ its own envelope or return-path header to your email. All bounces will be receiv
 by SMTPeter and your bounce statistics can be found in your SMTPeter dashboard. 
 
 To set up SMTPeter to track your bounces you have to adjust the 
-[bounce settings in your SMTpeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management/ "Bounce Management Dashboard Documentation").
+[bounce settings in your SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management/ "Bounce Management Dashboard Documentation").
 There you can configure SMTPeter to forward the email to a specific email address after 
 the bounce is processed or call a specific web hook for processing. 
 
