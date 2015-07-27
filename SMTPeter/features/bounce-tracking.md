@@ -32,7 +32,7 @@ REST API
     "envelope":     "info@example.com",
     "recipient":    "recipient@example.com",
     "from":         "info@example.com",
-    "to":           "recipient@example.com"
+    "to":           "recipient@example.com",
     "html":         "This is example content."
 }
 ```
@@ -75,8 +75,8 @@ SMTPeter to track your bounces there are several different ways to do so.
 ### No bounce tracking
 
 Not setting up bounce tracking means SMTPeter will not track the bounces of your 
-emails. THis does not mean you will not receive any bounces. It is impossible to 
-completely disable bounces; when you send email through SMTPeter they will be delivered 
+emails. This does not mean you will not receive any bounces. It is impossible to 
+completely disable bounces: when you send email through SMTPeter they will be delivered 
  to the recipient's mail server, which will return any bounces to your envelope 
 or Return-Path address. 
 
@@ -87,7 +87,7 @@ its own envelope or return-path header to your email. All bounces will be receiv
 by SMTPeter and your bounce statistics can be found in your SMTPeter dashboard. 
 
 To set up SMTPeter to track your bounces you have to adjust the 
-[bounce settings in your SMTpeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management/ "Bounce Management Dashboard Documentation").
+[bounce settings in your SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management/ "Bounce Management Dashboard Documentation").
 There you can configure SMTPeter to forward the email to a specific email address after 
 the bounce is processed or call a specific web hook for processing. 
 
