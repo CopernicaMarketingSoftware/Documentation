@@ -2,7 +2,7 @@
 
 The SMTPeter Dashboard gives you an extensive overview of your
 email activity. It can also be used to edit your license, your company details, 
-view your billing information of the past tweleve months, set up your API and SMTP 
+view your billing information of the past twelve months, set up your API and SMTP 
 access and manage your configuration. 
 
 ## Administration

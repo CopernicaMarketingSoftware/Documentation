@@ -3,8 +3,8 @@
 In the Bounce Managment tab of your SMTPeter dashboard
 you can configure what SMTPeter should do with bounces. 
 
-A email is considered 'bounced' when it cannot be delivered, due 
-to, for example, a full mailbox or a non existing recipient. It 
+An email is considered 'bounced' when it cannot be delivered, due 
+to, for example a full mailbox or a non existing recipient. It 
 is considered good practice to remove unreachable addresses from 
 your email list. 
 
@@ -28,4 +28,4 @@ this address where your own application can process it further.
 
 Another way to process bounces is to post the bounce report 
 to a callback URL. This is the best way for your own application 
-to further process the boucne message. 
+to further process the bounce message. 

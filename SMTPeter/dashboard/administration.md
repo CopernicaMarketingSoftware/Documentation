@@ -13,11 +13,11 @@ are not shown in the overview, they can be viewed and changed by pressing the
 
 ## Users
 
-In the user overview you can view and editor your current users or add new employees to
-your company. Each employee can have their own account and login credentials for SMTPeter, 
+In the user overview you can view and edit your current users or add new users to
+your company. Each user can have their own account and login credentials for SMTPeter, 
 there are no extra costs involved for using multiple accounts. 
 
-By clicking on an employees portrait you can view their preferences and see their access rights, 
+By clicking on a user's portrait you can view their preferences and see their access rights, 
 newsletter subscriptions and language preferences. If you have administrator rights for your company
  you can also change these settings for each employee. 
 
@@ -28,10 +28,10 @@ you need to do is add their email address and they will receive a link to create
 
 In the license overview you can view the details of your license. It shows the type of license, which 
 states whether you are using just SMTPeter, or SMTPeter is combination with 
-[ResponsiveEmail](copernica-docs:SMTPter/responsive-email "ResponsiveEmail Documentation"). 
+[ResponsiveEmail](copernica-docs:SMTPeter/responsive-email "ResponsiveEmail Documentation"). 
 
 
- > Having a license does not cost anything, hwoever it is neseccary to have a license, becuase it shows 
+ > Having a license does not cost anything, however it is necessary to have a license, because it shows 
 you have agreed with the SMTPeter terms and conditions. 
 
 ## Billing
@@ -39,4 +39,4 @@ you have agreed with the SMTPeter terms and conditions.
 This overview shows your invoices from the past 12 months. You can click on an individual invoice
 to see more details about that specific invoice. 
 
-[read more about license and billing](copernica-docs:SMTPeter/license-and-billing "License and Billing")
+[Read more about license and billing](copernica-docs:SMTPeter/license-and-billing "License and Billing")

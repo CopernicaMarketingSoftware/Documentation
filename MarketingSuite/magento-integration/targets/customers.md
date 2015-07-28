@@ -39,3 +39,7 @@ Customer list can have following filter options:
 * **Gender**
 * **Subscription status**
 * **Web store**
+* **bought product**
+* **bought product from category**
+* **wishes for product**
+* **wisges for product from category**

@@ -31,6 +31,7 @@ instead.
 |:------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "text" | Identifies the block as a text block.                                                                                           |
 | [content](copernica-docs:ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may include HTML.      |
+| [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | A url to fetch the textual content from.                                   |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block.                            |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text.                                              |
