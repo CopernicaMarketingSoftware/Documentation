@@ -1,4 +1,4 @@
-## SMTP API Overview
+# SMTP API Overview
 
 To use the SMTP API you need SMTP login credentials. You can create
 a username/password combination in your [Dashboard](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation").
