@@ -1,6 +1,6 @@
 # Configuration of MailerQ
 
-MailerQ can be configured, using the config file that can be found at “/etc/mailerq/config.txt”. 
+MailerQ can be configured, using the config file that can be found at "/etc/mailerq/config.txt". 
 The "config.txt" file holds configuration options for the connection to RabbitMQ, storage engine
 (Couchbase, MongoDB, MySQL, SQLite or PostgreSQL) and database (MySQL, SQLite or PostgreSQL)
 and other options for MailerQ itself.
@@ -400,7 +400,7 @@ Number of attempts before giving up, defaults to 4.
 The communication channel to use, either "udp" or "tcp". The default value is to use both.
 
 ###dns-helofile: `<filename>`
-Loaction of the file containing HELO map.
+Location of the file containing HELO map.
 
 ## Debugging
 

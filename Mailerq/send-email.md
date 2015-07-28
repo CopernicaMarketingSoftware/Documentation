@@ -352,7 +352,7 @@ Even when you have configured MailerQ to use an external message store, you may 
 
 ### Keep messages after delivery
 
-When a message is completely processed – either because it was successfully delivered, or the delivery failed – MailerQ publishes it to the results queue, where you can pick it up for further processing.
+When a message is completely processed - either because it was successfully delivered, or the delivery failed - MailerQ publishes it to the results queue, where you can pick it up for further processing.
 
 By default, MailerQ throws away the mime data to make room in the JSON object and in the message store. If you do not want the message data to be removed, you can tell so by adding the "keepmime" option:
 
