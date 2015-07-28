@@ -115,7 +115,7 @@ use JSON, the content-type should be set to application/json.
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>')
-(e.g. it should state 'richard@copernica.com' and not '"Richard" /<richard@copernica.com/>').
+(e.g. it should state 'richard@copernica.com' and not '"Richard" \<richard@copernica.com\>').
 
 The envelope variable should only contain a single email address.
 
