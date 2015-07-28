@@ -43,7 +43,7 @@ you can set the name of the queue from which message are loaded, and the name
 of the exchange to which the generated messages are published.
 
 
-``txt
+```txt
 rabbitmq-queue:     myqueue
 rabbitmq-exchange:  myexchange
 ```
@@ -128,7 +128,7 @@ message envelope into one big JSON object, and sends this JSON object to
 the JSON.
 
 
-``txt
+```txt
 input-format:     json
 input-encoding:   base64
 ```
@@ -153,7 +153,7 @@ of the server. You can control the number of processes to run with the
 of CPU's you have available on your server.
 
 
-``txt
+```txt
 max-processes:    16
 ```
 
