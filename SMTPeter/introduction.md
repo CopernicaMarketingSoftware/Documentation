@@ -8,14 +8,13 @@ This improves your deliverability, and allows you to track all sort of statistic
 
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
 
-You can pass all types of email through SMTPeter: mass mailings, but also
-individual transactional emails, or even the messages that you send with your local
+You can pass all types of email through SMTPeter: mass mailings, 
+individual transactional emails, and even the messages that you send with your local
 desktop based mail client (like Outlook or Thunderbird). We take care of the 
-technical and delivery details, and you can focus on creating and optimizing your email 
-messages and campaigns. 
+technical details, and you can focus on creating and optimizing your campaigns. 
 
 
-## How can you integrate SMTPeter?
+## How to integrate SMTPeter
 
 SMTPeter comes with two easy-to-use API's. The first one is a regular SMTP API. If you
 already have an environment in which you send emails over SMTP, you can simply change
@@ -60,7 +59,7 @@ and bounce messages that are sent back to the email's envelope address. However,
 if you do not want to set up an infrastructure to take care of bounces yourself, 
 you can let SMTPeter do this for you. SMTPeter can process all bounces and present 
 the results in a clear overview. It can also automatically send them to you using 
-SMTP or web hooks. You can also use the API to download bounces at periodic intervals. 
+SMTP or webhooks. You can also use the API to download bounces at periodic intervals. 
 
 [Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking)
 <!--
