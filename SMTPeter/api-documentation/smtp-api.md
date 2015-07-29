@@ -130,7 +130,7 @@ The alternative method to enable or disable features is by adding special MIME-h
 your email.
 
 ```http
-x-smtpeter-inlinecss:        When set to true, all CSS will be inlined
+x-smtpeter-inlinecss:        When set to true, all CSS will be inlined 
 x-smtpeter-trackclicks:      When set to true, links will be tracked
 x-smtpeter-trackbounces:     When set to true, bounces will be tracked
 x-smtpeter-trackopens:       When set to true, opens will be tracked

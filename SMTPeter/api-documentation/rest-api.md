@@ -1,20 +1,18 @@
 # REST API Overview
 
-The SMTPeter API provides a powerful RESTful interface.
-Which means that your application can access the API using
-the HTTP protocol.
+SMTPeter provides a powerful REST API. The SMTPeter REST API uses 
+the HTTPS protocol, which is faster and more flexible than the 
+SMTP protocol. 
 
 ## API Access Token
 
-Before you can send a request to our API you will need to
-[create an API access token](copernica-docs:SMTPeter/dashboard/rest-api-token "Create REST API token documentation").
-This token has to be added as a parameter to all of your API calls.
+To use the REST API you will need to [create an API access token](copernica-docs:SMTPeter/dashboard/rest-api-token "Create REST API token documentation")
+in your SMTPeter dashboard. You have to include this token in all 
+of your REST API calls to SMTPeter. 
 
 ## API Endpoint
 
-The SMTPeter REST API accepts POST and JSON data on its endpoint.
-
-All API methods are accessed via:
+You can reach SMTPeter on the following endpoint:
 
 ```
 https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
@@ -23,43 +21,58 @@ https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
  > **Note:** All API requests must use secure HTTPS connections. Unsecure
 HTTP requests will result in a 400 Bad Request response.
 
+You can provide either HTTP POST variables or JSON documents to the 
+SMTPeter API endpoint. Make sure to set the 'content-type' header to 
+the correct type, else the content cannot be read. 
+
+For HTTP POST variables:
+```text
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
+Host: www.smtpeter.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: ...
+
+``` 
+For JSON variables:
+```text
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
+Host: www.smtpeter.com
+Content-Type: application/json
+Content-Length: ...
+```
+
 ## Sending email using the REST API
 
-To send email with SMTPeter you have to use the `send` method, which can be
-accessed at:
+To send email using the REST API you will have to use the 'send' method. 
+The send message method can be accessed at:
 
 ```
 https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
 ```
 
-When sending a message through the API, it needs to contain **at least** the following
-variables as well as the message itself:
+When sending a message using there REST API there are several variables that 
+an email **must** contain. These are the envelope variable with the envelope 
+email address, the recipient variable, with the recipient's email address and 
+the message itself. 
 
+There are two ways to include the message, you can either 
+include the "mime" variable followed by a full mime string or provide "html", 
+, "subject", text", "to" and "cc" variables, SMTPeter will then turn these 
+loose variables into a full MIME message. 
+
+
+The envelope and recipient variables: 
 ```text
-"envelope":     string with a pure email address
-"recipient":    string or array with a pure email address
+"envelope":         string with a pure email address
+"recipient":        string or array with a pure email address
 ```
 
-If you do not include these variables in your request, you will receive an error and
-the email will not be sent.
-
-### Including your email message
-
-The request should, of course, also contain your email message. SMTPeter offers two ways
-to include your message when sending through our REST API:
-
-
-* Add the variable "mime", followed by the full mime message.
-* Submit the different parts of your message, such as the subject and the html parts.
-
-If you want to use the mime variable, simply add the following variable to your request:
-
+The MIME variable:
 ```text
 "mime":             string containing the full mime message
 ```
 
-If you do not use the mime variable, but define the individual values you can do so by
-adding the following variables:
+Defining the individual variables:
 
 ```text
 "subject":          string containing the subject
@@ -78,13 +91,11 @@ adding the following variables:
  as the ones stated in the recipient variable.
 
 
-These variables will then be converted to a full MIME message by SMTPeter.
-
 
 ### Additional variables for tracking and processing
 
-SMTPeter also offers the following boolean variables (e.g. variable: true/false)
-that can be sent with each request. Including these variables and setting them
+SMTPeter also offers the following boolean variables (e.g. "variable": true/false)
+that can be included in each POST request. Including these variables and setting them
 to true or false will enable or disable the features for the email.
 
 
@@ -166,39 +177,11 @@ will use the same values as the ones stated in the 'envelope' and 'recipient'
 variables.
 
 
-### PHP examples
 
-The example below illustrates how you can send an email with SMTPeter using PHP and cURL.
+<!--
 
-```php
-<?php
-// access token
-$token = "your-api-token";
+## Examples
 
-// create curl resource
-$curl = curl_init("https://www.smtpeter.com/v1/send?access_token={$token}");
+@todo example
 
-$data = array(
-    'recipient'     =>  'reciever@example.com',
-    'envelope'      =>  'sender@example.com',
-    'subject'       =>  'This is a test mail',
-    'text'          =>  'This is the body of the text mail',
-    'from'          =>  '"Peter" <sender@example.com>',
-    'to'            =>  '"John" <reciever@example.com>'
-
-);
-
-// set options
-curl_setopt_array($curl, array(
-    CURLOPT_RETURNTRANSFER      =>  1,
-    CURLOPT_POST                =>  true,
-    CURLOPT_POSTFIELDS          =>  json_encode($data),
-    CURLOPT_HTTPHEADER          =>  array('content-type: application/json')
-));
-
-// $output contains the output string
-$output = curl_exec($curl);
-
-// clean up curl resource
-curl_close($curl);
-```
+-->

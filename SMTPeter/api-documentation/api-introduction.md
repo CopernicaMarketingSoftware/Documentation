@@ -31,13 +31,13 @@ To send an email your application sends an POST request to the SMTPeter API endp
 your emails and API keys secure, SMTPeter only accepts mails via HTTPS (port 443). The API is not 
 reachable over HTTP.
 
-```
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+```txt
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 148
 
-envelope=info%40example.com&recipient=john%40doe.com&subject=this+is+the+subject&html=This+is+example+text&from=info%40example.com&to=john%40doe.com
+envelope=info%40example.com&recipient=john%40doe.com&subject=this+is+the+subject&html=This+is+example+text&from=info%40example.com&to=john%40doe.com 
 ```
 
 The above example shows how to send a message using traditional HTTP POST variables. However, 
