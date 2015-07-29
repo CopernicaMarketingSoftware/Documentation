@@ -129,7 +129,7 @@ combination that has the features you need.
 The alternative method to enable or disable features is by adding special MIME-headers to 
 your email.
 
-```http
+```text
 x-smtpeter-inlinecss:        When set to true, all CSS will be inlined
 x-smtpeter-trackclicks:      When set to true, links will be tracked
 x-smtpeter-trackbounces:     When set to true, bounces will be tracked

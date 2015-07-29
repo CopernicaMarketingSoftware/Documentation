@@ -31,7 +31,7 @@ To send an email your application sends an POST request to the SMTPeter API endp
 your emails and API keys secure, SMTPeter only accepts mails via HTTPS (port 443). The API is not 
 reachable over HTTP.
 
-```
+```text
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
