@@ -136,9 +136,9 @@ x-smtpeter-trackbounces:     When set to true, bounces will be tracked
 x-smtpeter-trackopens:       When set to true, opens will be tracked
 ```
 
-Every incoming MIME message is parsed by SMTPeter, and if one of the above MIME headers
-is set, the corresponding feature is activated, possibly overriding the setting
-from the credentials (in other words: if you have disabled the "inlinecss" feature
+Every incoming MIME message is parsed by SMTPeter and if one of the above MIME headers
+is set the corresponding feature is activated, this overrides the settings from your 
+login credentials (in other words: if you have disabled the "inlinecss" feature
 for an SMTP login, but you do include the "x-smtpeter-inlinecss: true" header in the
 mime, the CSS code is going to be inlinized anyway).
 
