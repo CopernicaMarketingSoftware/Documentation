@@ -20,7 +20,7 @@ Now you've created your login credentials you will need to change the
 SMTP credentials of your application/mail server. Please set it to the 
 following to send through SMTPeter:
 
-```
+```text
 Host:       mail.smtpeter.com 
 Port:       25 or 587 
 Encryption: STARTTLS 
@@ -28,7 +28,7 @@ Encryption: STARTTLS
 
 or, for SSL connections:
 
-```
+```text
 Host:       mail.smtpeter.com 
 Port:       465 
 Encryption: SSL 

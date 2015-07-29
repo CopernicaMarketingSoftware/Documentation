@@ -9,7 +9,7 @@ The SMTPeter.com server can be reached via the "mail.smtpeter.com" domain, on po
 and 587. Only authenticated and encrypted connections using "STARTTLS" are supported. 
 Mails that are not sent over a secured connection will be rejected.
 
-```
+```text
 Host:       mail.smtpeter.com
 Port:       25 or 587
 Encryption: STARTTLS
@@ -29,7 +29,7 @@ SMTPeter, a handshake protocol is started in which your client and the SMTPeter 
 exchange pleasantries, convert the connection into a secure connection, and hand over 
 the full MIME message. The following output is a typical handshake that may occur.
 
-````
+```smtp
 220 smtpeter1.copernica.nl MailerQ ESMTP
 EHLO mydomain.com
 250-STARTTLS
@@ -59,7 +59,7 @@ MIME-Version: 1.0
 This is example content
 .
 250 Ok, queued as jkKa2Skd3Uu
-````
+```
 
 ### Faster handshake using port 465
 
@@ -72,7 +72,7 @@ communication over port 465 is faster.
 Using port 465 the SMTP handshake looks like this: 
 
 
-````
+```smtp
 220 smtpeter1.copernica.nl MailerQ ESMTP
 EHLO mydomain.com
 250-PIPELINING
@@ -95,7 +95,7 @@ MIME-Version: 1.0
 This is example content
 .
 250 Ok, queued as jkKa2Skd3Uu
-````
+```
 
 
 ### SMTP Authentication
@@ -129,7 +129,7 @@ combination that has the features you need.
 The alternative method to enable or disable features is by adding special MIME-headers to 
 your email.
 
-```
+```http
 x-smtpeter-inlinecss:        When set to true, all CSS will be inlined
 x-smtpeter-trackclicks:      When set to true, links will be tracked
 x-smtpeter-trackbounces:     When set to true, bounces will be tracked
@@ -155,4 +155,3 @@ examples:
 
 
 -->
-

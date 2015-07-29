@@ -35,7 +35,7 @@ https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
 When sending a message through the API, it needs to contain **at least** the following
 variables as well as the message itself:
 
-```
+```text
 "envelope":     string with a pure email address
 "recipient":    string or array with a pure email address
 ```
@@ -54,14 +54,14 @@ to include your message when sending through our REST API:
 
 If you want to use the mime variable, simply add the following variable to your request:
 
-```
+```text
 "mime":             string containing the full mime message
 ```
 
 If you do not use the mime variable, but define the individual values you can do so by
 adding the following variables:
 
-```
+```text
 "subject":          string containing the subject
 "from":             string containing the sender (email address)
 "to":               string or array containing recipients (email address)
@@ -88,7 +88,7 @@ that can be sent with each request. Including these variables and setting them
 to true or false will enable or disable the features for the email.
 
 
-```
+```text
 "inlinecss":        When set to true, all CSS will be inlined inside the HTML
 "trackclicks":      When set to true, links will be redirected and tracked
 "trackbounces":     When set to true, bounces will be tracked
@@ -115,7 +115,7 @@ use JSON, the content-type should be set to application/json.
 The email addresses stated in the envelope and recipient variables have to
 be **pure** email addresses. That means they should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>')
-(e.g. it should state 'richard@copernica.com' and not '"Richard" \<richard@copernica.com\>').
+(e.g. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
 
 The envelope variable should only contain a single email address.
 

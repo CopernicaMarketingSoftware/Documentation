@@ -18,7 +18,7 @@ Before you can send email from your domain you will need to set up
 a Sender ID. Sender ID is heavily based on SPF. 
 
 > Setting up a Sender ID requires access to your domain DNS settings. 
-If you use the from address *info@mydomain.com * for your email, 
+If you use the from address *info@mydomain.com* for your email, 
 you need access to the DNS settings of mydomain.com.
 
 If you utilise SPF for a domain you would like to send mail
