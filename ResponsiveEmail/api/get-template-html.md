@@ -6,7 +6,7 @@ into HTML code that can be sent over SMTP.
 
 ## Example request
 
-```txt
+```http
 GET /v1/template/2345/html?access_token=yourtoken
 Host: www.responsiveemail.com
 

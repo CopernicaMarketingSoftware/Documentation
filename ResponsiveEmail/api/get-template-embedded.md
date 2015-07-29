@@ -18,7 +18,7 @@ the MIME with the original image url's still intact.
 
 ## Example request
 
-```txt
+```http
 GET /v1/template/2345/embedded?access_token=yourtoken
 Host: www.responsiveemail.com
 

@@ -5,7 +5,7 @@ servers.
 
 ## Example request
 
-```txt
+```http
 DELETE /v1/template/3/?access_token=yourtoken
 Host: www.responsiveemail.com
 

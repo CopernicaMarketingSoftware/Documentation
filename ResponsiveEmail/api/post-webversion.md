@@ -5,7 +5,7 @@ email, without storing any data on the ResponsiveEmail.com servers.
 
 ## Example request
 
-```txt
+```http
 POST /v1/webversion?access_token=yourtoken
 Host: www.responsiveemail.com
 Content-Type: application/json

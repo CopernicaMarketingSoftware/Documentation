@@ -16,7 +16,7 @@ the MIME with the original image url's still intact.
 
 ## Example request
 
-```txt
+```http
 POST /v1/embedded?access_token=yourtoken
 Host: www.responsiveemail.com
 Content-Type: application/json

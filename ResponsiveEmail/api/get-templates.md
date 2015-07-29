@@ -6,7 +6,7 @@ start value is 0 and the length value is 100.
 
 ## Example request
 
-```txt
+```http
 GET /v1/templates/0/100/?access_token=yourtoken
 Host: www.responsiveemail.com
 

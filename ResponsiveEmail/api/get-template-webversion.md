@@ -6,7 +6,7 @@ can host on a web server.
 
 ## Example request
 
-```txt
+```http
 GET /v1/template/2345/web?access_token=yourtoken
 Host: www.responsiveemail.com
 

@@ -6,7 +6,7 @@ the plain text representation using this method. This will simply return the
 
 ## Example request
 
-```txt
+```http
 GET /v1/template/2345/text?access_token=yourtoken
 Host: www.responsiveemail.com
 

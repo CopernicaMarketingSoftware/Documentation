@@ -6,7 +6,7 @@ template in the URL.
 
 ## Example request
 
-```txt
+```http
 GET /v1/template/1234/json?access_token=yourtoken
 Host: www.responsiveemail.com
 

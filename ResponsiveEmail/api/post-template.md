@@ -7,7 +7,7 @@ JSON.
 
 ## Example request
 
-```txt
+```http
 POST /v1/template/?access_token=yourtoken
 Host: www.responsiveemail.com
 Content-Type: application/json
