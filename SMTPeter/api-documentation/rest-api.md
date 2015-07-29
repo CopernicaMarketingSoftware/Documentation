@@ -96,16 +96,6 @@ to true or false will enable or disable the features for the email.
 ```
 
 
-### Handling bounces
-
-If you provide a `bounce` variable in your request SMTPeter will notify you
-if it was unable to deliver the message by sending a bounce report to the
-given email address. Note that if the receiving mail daemon first accepts
-the message and later decides it does not like it after all, this variable
-will be ignored (as it is not sent to the receiving mailer daemon) and the
-Return-Path or envelope address is likely used instead, depending on the
-configuration of the mailer daemon.
-
 The variables can be either provided as regular POST data, or they can be encoded in JSON. If you
 use JSON, the content-type should be set to application/json.
 
