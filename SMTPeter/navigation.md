@@ -11,8 +11,6 @@
   * [SMTP Credentials](copernica-docs:SMTPeter/dashboard/smtp-credentials "SMTP credentials Dashboard")
   * [DKIM keys](copernica-docs:SMTPeter/dashboard/dkim-keys "DKIM keys Dashboard")
   * [Bounce Management](copernica-docs:SMTPeter/dashboard/bounce-management "Bounce management Dashboard") 
-* [Code Examples](copernica-docs:SMTPeter/code-examples "Code Examples") 
-* [Sender ID](copernica-docs:SMTPeter/sender-id "Set up your Sender ID")
 * [Smart host](copernica-docs:SMTPeter/smart-host "Using SMTPeter as Smart Host")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
 * [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")

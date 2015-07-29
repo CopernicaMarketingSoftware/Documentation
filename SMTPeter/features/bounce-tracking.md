@@ -6,16 +6,33 @@ if you do not want to set up an infrastructure to take care of bounces yourself,
 you can let SMTPeter do this for you. 
 
 SMTPeter can process all bounces and present the results in a clear overview. It 
-can also automatically send them to you using SMTP or web hooks. You can also use 
+can also automatically send them to you using SMTP or webhooks. You can also use 
 our API to download bounces at periodic intervals. 
 
-## How bounces work
+There are multiple ways SMTPeter's bounce processing works depending on which API 
+you use and whether you have bounce tracking enabled or disabled. 
 
-As mentioned above, a bounce is normally sent to the envelope address of your email. 
-In the examples below this means that any bounces and spam complaints are sent to the 
-info@example.com address. 
 
-SMTP PROTOCOL
+## SMTP API
+
+The SMTP protocol is the standard protocol mail servers use to communicate with each 
+other. When you correctly send a message to SMTPeter using the SMTP API, SMTPeter will 
+always receive the message. It then attempts to deliver the message to the receiving 
+mail server. If the message cannot be delivered, which can happen for various reasons 
+such as a full mailbox or an incorrect email address, what happens next depends on whether 
+or not you have bounce tracking enabled.
+
+### Bounce tracking disabled
+
+When sending a message through SMTPeter without bounce tracking enabled any bounce messages 
+will automatically be sent to the email address specified in the Return-Path-header 
+(if one is specified in the MIME of your email message). If you do not add a 
+Return-Path-header to the MIME of your email all bounces will be sent to the envelope 
+address of your email. 
+
+If have bounce tracking disabled, your bounces will not be tracked by SMTPeter 
+and will not show up in the statistics of your SMTPeter dashboard. 
+
 ```
 MAIL FROM:<info@example.com>
 RCPT TO:<recipient@example.com>
@@ -26,23 +43,10 @@ This is example content.
 .
 ```
 
-REST API
-```json
-{
-    "envelope":     "info@example.com",
-    "recipient":    "recipient@example.com",
-    "from":         "info@example.com",
-    "to":           "recipient@example.com",
-    "html":         "This is example content."
-}
-```
+In the above example all bounces will be sent to the "info@example.com" address. If you 
+have a Return-Path header, as shown in the example below, all bounces will be sent to 
+the return-path address:
 
-However, it is also possible to set a specific bounce address by adding return-path 
-MIME header to your email. If you add a Return-Path header, all bounces and spam 
-complaints are sent to the Return-Path address. In the example below the bounces 
-and complaints will be sent to the bounce@example.com address. 
-
-SMTP PROTOCOL
 ```
 MAIL FROM: <info@example.com>
 RCPT TO: <recipient@example.com>
@@ -55,7 +59,71 @@ This is example content.
 .
 ```
 
-REST API
+All bounces in the example above will be sent to the address specified in the Return-Path-header: 
+"bounce@example.com". 
+
+### Bounce tracking enabled
+
+When sending an email through SMTPeter using SMTP with bounce tracking enabled, SMTPeter will 
+add its own return-path address. If you already specified a return-path address in your MIME header 
+SMTPeter will override this address. What happens next is up to your bounce management 
+settings in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
+
+If you choose to set up a forward address, SMTPeter will forward all bounces after they have been 
+processed. You can then process the bounces further in your own application. Do note that if you 
+send email to a lot of recipients at the same time this could fill up the mail box of this address 
+quite quickly. 
+
+It is also possible to forward the bounce message to a 'webhook'. You can specify the 
+callback url for the webhook in the SMTPeter dashboard. SMTPeter will send the bounce report to 
+the callback url as a POST request. The bounce message will be sent as a JSON document. 
+<!--
+Example of a bounce message to callback url
+
+-->
+
+Go to your [bounce management dashboard](https://www.smtpeter.com//app/#/admin/bounce-management "Bounce Management Dasbhoard") 
+and set up your bounce management. 
+
+
+## REST API
+
+The REST API communicates uses the HTTPS protocol, the protocol used by web browesers to communicate
+with each other. When you correctly send a message to SMTPeter using the REST API, SMTPeter will 
+always receive the message. It then attempts to deliver the message to the receiving 
+mail server. If the message cannot be delivered, which can happen for various reasons 
+such as a full mailbox or an incorrect email address, what happens next depends on whether 
+or not you have bounce tracking enabled. 
+
+### Bounce tracking disabled
+
+If you send email through SMTPeter using the REST API and the email cannot be delivered, SMTPeter will not 
+return a bounce message. The HTTP connection is already closed the moment SMTPeter tries to deliver your message 
+and the details are no longer available. 
+
+Whilst SMTPeter won't sent bounce message when bounce tracking is not enabled, the receiving mail servers 
+will still send their bounce messages to the address specified in your "envelope" property. In the following 
+example bounce messages from the receiving servers will be sent to "info@example.com". 
+
+```json
+{
+    "envelope":     "info@example.com",
+    "recipient":    "recipient@example.com",
+    "from":         "info@example.com",
+    "to":           "recipient@example.com",
+    "html":         "This is example content."
+}
+```
+
+### Bounce tracking enabled
+
+When sending an email through SMTPeter using the REST API and with bounce tracking enabled, SMTPeter 
+will add a "bounce" property to the JSON document. This property holds an SMTPeter bounce email address, 
+all bounces will be sent to the addresses specified in the bounce property. If you already specified a 
+return-path address in your MIME header SMTPeter will override this address. 
+
+In the following example the bounce message will be sent to "bounce@example.com".
+
 ```json
 {
     "envelope":     "info@example.com",
@@ -67,36 +135,15 @@ REST API
 }
 ```
 
-## Bounce tracking options in SMTPeter
+What SMTPeter does with the bounce message depends on your bounce management settings. You 
+can set up your bounce management in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management). 
 
-You can choose to let SMTPeter track your bounces, or do it yourself. If you set 
-SMTPeter to track your bounces there are several different ways to do so. 
+If you choose to set up a forward address, SMTPeter will forward all bounces after they have been 
+processed. You can then process the bounces further in your own application. Do note that if you 
+send email to a lot of recipients at the same time this could fill up the mail box of this address 
+quite quickly. 
 
-### No bounce tracking
-
-Not setting up bounce tracking means SMTPeter will not track the bounces of your 
-emails. This does not mean you will not receive any bounces. It is impossible to 
-completely disable bounces: when you send email through SMTPeter they will be delivered 
- to the recipient's mail server, which will return any bounces to your envelope 
-or Return-Path address. 
-
-### Bounce tracking
-
-If you do want SMTPeter to track bounces, SMTPeter will rewrite your email and add 
-its own envelope or return-path header to your email. All bounces will be received 
-by SMTPeter and your bounce statistics can be found in your SMTPeter dashboard. 
-
-To set up SMTPeter to track your bounces you have to adjust the 
-[bounce settings in your SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management/ "Bounce Management Dashboard Documentation").
-There you can configure SMTPeter to forward the email to a specific email address after 
-the bounce is processed or call a specific web hook for processing. 
-
-It is also possible to use the API to download your bounces:
-
-```
-GET /v1/bounces/{start_date}/{end_date}?access_token={YOUR_API_TOKEN} HTTP/1.0
-Host: www.smtpeter.com
-
-```
-
+It is also possible to forward the bounce message to a 'webhook'. You can specify the 
+callback url for the webhook in the SMTPeter dashboard. SMTPeter will send the bounce report to 
+the callback url as a POST request. The bounce message will be sent as a JSON document. 
 

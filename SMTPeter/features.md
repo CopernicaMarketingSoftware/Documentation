@@ -14,7 +14,16 @@ will be placed inline by SMTPeter. This is sometimes nessecary because some ISPs
 of your email will be displayed correctly in the inbox of recipients using these
 ISPs. 
 
-[Read more about inlining CSS](copernica-docs:SMTPeter/features/inline-css)
+[Read more about inlining CSS](copernica-docs:SMTPeter/features/inline-css "Inlining CSS Documentation")
+
+
+## Bounce Tracking
+
+Enabling the bounce tracking function means all bounces of your email will be tracked
+by SMTPeter. These statistics will be shown in the statistics overview of your SMTPeter
+dashboard. 
+
+[Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
 
 ## Click Tracking
 
@@ -32,11 +41,6 @@ dashboard.
 
 
 
-## Bounce Tracking
-
-Enabling the bounce tracking function means all bounces of your email will be tracked
-by SMTPeter. These statistics will be shown in the statistics overview of your SMTPeter
-dashboard. 
 
 
 

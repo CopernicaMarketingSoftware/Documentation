@@ -20,12 +20,13 @@ which means SMTPeter will receive the bounce message and do nothing.
 
 ### Forward the bounce message
 
-You can also choose to let SMTPeter forward the bounce report to a 
-specific email address. The bounce message will then be forwarded to 
-this address where your own application can process it further. 
+If you choose to set up a forward address, SMTPeter will forward all bounces after they have been 
+processed. You can then process the bounces further in your own application. Do note that if you 
+send email to a lot of recipients at the same time this could fill up the mail box of this address 
+quite quickly. 
 
 ### Post the bounce message to a callback url
 
-Another way to process bounces is to post the bounce report 
-to a callback URL. This is the best way for your own application 
-to further process the bounce message. 
+It is also possible to forward the bounce message to a 'webhook'. You can specify the 
+callback url for the webhook in your dashboard. SMTPeter will send the bounce report to 
+the callback url as a POST request. The bounce message will be sent as a JSON document. 
