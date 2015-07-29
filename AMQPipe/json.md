@@ -6,7 +6,7 @@ bodies. Besides the message body, this JSON object also holds additional
 information about the consumed message. The format of this input is as follows:
 
 
-```javascript
+```json
 {
     "exchange":         "the exchange to which the message was original published",
     "routing-key":      "the routing key that was used for publishing",
@@ -70,7 +70,7 @@ by a different AMQPipe instance, you will typically see JSON messages
 like this one:
 
 
-```javascript
+```json
 {
     "exchange":     "result-exchange",
     "routing-key":  "error",
