@@ -39,7 +39,7 @@ Your original JSON encoded message (the message you published to the outbox queu
 
 A result message will thus look something like this:
 
-````
+```json
 {
     "domain": "example.org",
     "envelope": "my-sender-address@my-domain.com",
@@ -69,7 +69,7 @@ A result message will thus look something like this:
     ]
 }
 
-````
+```
 
 ## The original message
 
@@ -85,12 +85,12 @@ However, if you have enabled the message store, MailerQ will still remove the mi
 
 To summarize, if you use MailerQ with a message store and you set the "keepmime" property, the message body will be stored in the message store, and the JSON object in the result queues gets an extra "key" property that holds the key by which the mime can be retrieved from the message store. If you do not set the "keepmime" property, the message will be thrown away (also from the message store) and no "key" property is added.
 
-````
+```json
 {
     "domain": "example.org",
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
-    "keepmime"; 1,
+    "keepmime": 1,
     "key": "message-store-key-where-data-can-be-found",
     "results": [
         { 
@@ -109,7 +109,7 @@ To summarize, if you use MailerQ with a message store and you set the "keepmime"
     ]
 }
 
-````
+```
 
 ## Understanding the results
 
