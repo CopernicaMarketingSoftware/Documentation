@@ -44,7 +44,7 @@ Content-Length: ...
 ## Sending email using the REST API
 
 To send email using the REST API you will have to use the 'send' method. 
-The send message method can be accessed at:
+This method can be accessed at:
 
 ```text
 https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}

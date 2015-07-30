@@ -19,9 +19,13 @@ ISPs.
 
 ## Bounce Tracking
 
-Enabling the bounce tracking function means all bounces of your email will be tracked
-by SMTPeter. These statistics will be shown in the statistics overview of your SMTPeter
-dashboard. 
+Enabling bounce tracking in SMTPeter means all the bounce messages that mail servers 
+return when an email cannot be delivered, are tracked by SMTPeter. To do so SMTPeter 
+adds its own return-path address and then forwards the bounce to the address or webhook 
+you specified in your dashboard. If you already have a return-path address in the MIME 
+of your email, SMTPeter will override this address. 
+
+The bounce statistics are shown in your SMTPeter dashboard overview. 
 
 [Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
 
