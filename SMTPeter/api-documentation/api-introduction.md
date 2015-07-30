@@ -32,7 +32,6 @@ your emails and API keys secure, SMTPeter only accepts mails via HTTPS (port 443
 reachable over HTTP.
 
 ```txt
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 148

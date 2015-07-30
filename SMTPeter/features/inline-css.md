@@ -64,7 +64,7 @@ plain HTTP POST variables, or JSON documents. If you set the "inlinecss"
 parameter in these POST variables or in the JSON input to "true", you tell 
 SMTPeter to enable the inlinizer.
 
-```http
+```txt
 POST /send HTTP/1.1
 Content-Type: application/json
 Content-Length: 302
