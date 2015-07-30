@@ -1,14 +1,14 @@
 # REST API Overview
 
-SMTPeter provides a powerful REST API. The SMTPeter REST API uses 
-the HTTPS protocol, which is faster and more flexible than the 
-SMTP protocol. 
+SMTPeter provides a powerful REST API. The SMTPeter REST API uses
+the HTTPS protocol, which is faster and more flexible than the
+SMTP protocol.
 
 ## API Access Token
 
 To use the REST API you will need to [create an API access token](copernica-docs:SMTPeter/dashboard/rest-api-token "Create REST API token documentation")
-in your SMTPeter dashboard. You have to include this token in all 
-of your REST API calls to SMTPeter. 
+in your SMTPeter dashboard. You have to include this token in all
+of your REST API calls to SMTPeter.
 
 ## API Endpoint
 
@@ -21,21 +21,21 @@ https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
  > **Note:** All API requests must use secure HTTPS connections. Unsecure
 HTTP requests will result in a 400 Bad Request response.
 
-You can provide either HTTP POST variables or JSON documents to the 
-SMTPeter API endpoint. Make sure to set the 'content-type' header to 
-the correct type, else the content cannot be read. 
+You can provide either HTTP POST variables or JSON documents to the
+SMTPeter API endpoint. Make sure to set the 'content-type' header to
+the correct type, else the content cannot be read.
 
 For HTTP POST variables:
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: ...
 
-``` 
+```
 For JSON variables:
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0 
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: ...
@@ -43,29 +43,38 @@ Content-Length: ...
 
 ## Sending email using the REST API
 
-To send email using the REST API you will have to use the 'send' method. 
+To send email using the REST API you will have to use the 'send' method.
 This method can be accessed at:
 
 ```text
 https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
 ```
 
-When sending a message using there REST API there are several variables that 
-an email **must** contain. These are the envelope variable with the envelope 
-email address, the recipient variable, with the recipient's email address and 
-the message itself. 
+When sending a message using the REST API there is one variable that
+an email **must** contain. This is the recipient address that will
+receive the message.
 
-There are two ways to include the message, you can either 
-include the "mime" variable followed by a full mime string or provide "html", 
-, "subject", text", "to" and "cc" variables, SMTPeter will then turn these 
-loose variables into a full MIME message. 
+Another variable you can use is the "envelope" variable. If bounce tracking
+is disabled and this variable is set, the email address given here will
+receive a delivery status notification indicating the failure and the reason
+why.
 
+Note that this variable is separate from the 'trackbounces' option. It is
+possible to set 'trackbounces' to true and have SMTPeter generate a bounce
+report after receiving notification of a bounce. This report will always go
+to the address configured under 'Bounce management'.
 
-The envelope and recipient variables: 
+The envelope and recipient variables:
 ```text
 "envelope":         string with a pure email address
 "recipient":        string or array with a pure email address
 ```
+
+
+There are two ways to include the message content. You can either
+include the "mime" variable followed by a full mime string or provide "html",
+"subject", "text", "to" and "cc" variables, SMTPeter will then turn these
+separate variables into a full MIME message.
 
 The MIME variable:
 ```text
@@ -94,11 +103,11 @@ as the ones stated in the recipient variable.
 
 ### Additional variables for tracking and processing
 
-SMTPeter also offers the following boolean variables (e.g. "variable": true/false), 
+SMTPeter also offers the following boolean variables (e.g. "variable": true/false),
 which can be included in each POST request. Including these variables and setting them
-to true or false will enable or disable the features for the email. This makes it possible 
-to use different settings for individual emails. The variables can be either provided as 
-regular POST data, or they can be encoded in JSON. If you use JSON, the content-type should 
+to true or false will enable or disable the features for the email. This makes it possible
+to use different settings for individual emails. The variables can be either provided as
+regular POST data, or they can be encoded in JSON. If you use JSON, the content-type should
 be set to application/json.
 
 
@@ -109,8 +118,8 @@ be set to application/json.
 "trackopens":       When set to true, opens will be tracked
 ```
 
-These variables are optional and disabled by default, not inluding a variable means it 
-will automatically be set to 'false'. 
+These variables are optional and enabled by default, omitting a variable means it
+will automatically be set to 'true'.
 
 
 
