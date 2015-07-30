@@ -3,8 +3,6 @@
 SMTPeter has several optional features which can be enabled or 
 disabled per email message. 
 
-> **Note:** These features are currently being worked on and should be implemented 
-soon.
 
 ## Inlining CSS
 
@@ -28,6 +26,10 @@ of your email, SMTPeter will override this address.
 The bounce statistics are shown in your SMTPeter dashboard overview. 
 
 [Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
+
+> **Note:** These features below are currently being worked on and should be implemented 
+soon.
+
 
 ## Click Tracking
 

@@ -12,7 +12,35 @@ Creating an account gives you access to your
 In this dashboard you can access and edit all your administrative, 
 SMTP/REST api access and configuration information. 
 
-## 2. Setup your sender ID
+## 2. Allow SMTPeter to send from your domain
+
+Before you can send email through SMTPeter you first need to allow the SMTPeter 
+mail servers to send email messages from your domain. To do so you will have to 
+set up a Sender ID and an SPF record. These are email-validations systems that 
+are designed to detect email spoofing by checking if a mail comes from a host 
+that is authorized by the domain administrators. It does so by doing a DNS check 
+on the from domain. 
+
+The main difference between Sender ID and SPF is the field it checks. SPF checks 
+the MAIL FROM-field. Sender ID checks a combinations of fhe following fields: 
+From, Sender, Resent-From and Resent-Sender.
+
+### Setting up an SPF record
+
+
+### Setting up a Sender ID
+
+To set up a Sender ID you will need access to the DNS-settings of your domain. 
+If you you have access, it is very easy to set up the Sender ID. Add the following 
+line to the TXT-record when sending through SMTPeter: 
+
+
+```text
+v=spf1 include:_senderspf.copernica.com a mx ~all
+
+```
+
+
 
 Before you can send email from your domain you will need to set up 
 a Sender ID. Sender ID is heavily based on SPF. 
