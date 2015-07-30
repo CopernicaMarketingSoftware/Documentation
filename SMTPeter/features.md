@@ -27,7 +27,7 @@ The bounce statistics are shown in your SMTPeter dashboard overview.
 
 [Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
 
-> **Note:** These features below are currently being worked on and should be implemented 
+> **Note:** The features below are currently being worked on and should be implemented 
 soon.
 
 
