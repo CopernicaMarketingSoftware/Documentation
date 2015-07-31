@@ -15,7 +15,7 @@ parameter to identify your application.
 https://www.responsiveemail.com/v1/{RESOURCE}?access_token={YOUR_API_TOKEN}
 ```
 
-> **Note:** API requests must use secure HTTPS connections. Unsecure HTTP 
+> **Note:** API requests must use secure HTTPS connections. Unsecured HTTP 
 requests will result in a 400 Bad Request response. You can do a call to the API 
 with any programming language that supports HTTP requests. The following is an 
 example of how to request the JSON representation of an email template.

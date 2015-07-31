@@ -18,27 +18,43 @@ You can reach SMTPeter on the following endpoint:
 https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
 ```
 
- > **Note:** All API requests must use secure HTTPS connections. Unsecure
-HTTP requests will result in a 400 Bad Request response.
+ > **Note:** All API requests must use secure HTTPS connections. Unsecured
+HTTP requests will result in a '400 Bad Request' response.
 
-You can provide either HTTP POST variables or JSON documents to the
-SMTPeter API endpoint. Make sure to set the 'content-type' header to
-the correct type, else the content cannot be read.
+There are two ways to provide imput variables to the REST API. The first one 
+is by using regular POST data. This is the same as when you have your browser 
+POST a form. 
 
-For HTTP POST variables:
+Example:
 ```text
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
-Content-Length: ...
+Content-Length: 148
+
+envelope=info%40example.com&recipient=john%40doe.com&subject=this+is+the+subject&html=This+is+example+text&from=info%40example.com&to=john%40doe.com
 
 ```
-For JSON variables:
+The other way is to JSON-encode your input. Please be aware that for this 
+to work, you must set the 'Content-Type' to 'application/json'.
+
+Example:
 ```text
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
-Content-Length: ...
+Content-Length: 246
+
+{
+    "envelope":     "info@example.com",
+    "recipient":    "john@doe.com",
+    "subject":      "This is the subject",
+    "html":         "This is example content",
+    "from":         "info@example.com",
+    "to":           "john@doe.com"
+
+}
+
 ```
 
 ## Sending email using the REST API
@@ -50,16 +66,24 @@ This method can be accessed at:
 https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
 ```
 
+### Recipient and envelope information
+
+The recipient and envelope variables control where the email is delivered ('recipient')
+and where delivery failure notifications are sent to ('envelope'). They are like the 
+addresses written on the outside of an envelope, they do not influence the way the actual 
+letter (email), looks. 
+
 When sending a message using the REST API there is one variable that
 an email **must** contain. This is the recipient address that will
 receive the message.
 
-Another variable you can use is the "envelope" variable. If bounce tracking
-is disabled and this variable is set, the email address given here will
-receive a delivery status notification indicating the failure and the reason
-why.
+Another variable you can use is the "envelope" variable. If delivery fails and 
+bounce tracking is disabled, the email address given here will receive a delivery 
+status notification indicating the failure and the reason why. If this variable 
+is not set and bounce tracking is disabled, delivery notifications will be silently 
+ignored. 
 
-Note that this variable is separate from the 'trackbounces' option. It is
+Note that this variable is separate from the ['trackbounces' option](#tracking-options). It is
 possible to set 'trackbounces' to true and have SMTPeter generate a bounce
 report after receiving notification of a bounce. This report will always go
 to the address configured under 'Bounce management'.
@@ -70,6 +94,12 @@ The envelope and recipient variables:
 "recipient":        string or array with a pure email address
 ```
 
+### Including the message content
+
+The variables below specificy the actual content of the email message. You might notice 
+that we specify variables, such as 'from' and 'to' here. These might seem redundant, because 
+we have already specified the 'recipient' and 'envelope' address. However, these variables 
+do not control the actual delivery, but only 
 
 There are two ways to include the message content. You can either
 include the "mime" variable followed by a full mime string or provide "html",
@@ -81,7 +111,7 @@ The MIME variable:
 "mime":             string containing the full mime message
 ```
 
-Or defining individual message variables:
+Defining individual message variables:
 
 ```text
 "subject":          string containing the subject
@@ -92,23 +122,12 @@ Or defining individual message variables:
 "html":             html version of the email
 ```
 
-The 'from', 'to' and 'cc' variables only state what the MIME
-looks like, not who the actual recipients of the email are. The email
-will be delivered to the email address stated in the 'recipient' variable
-and not necessarily to the addresses stated in the MIME headers. The email
-addresses stated in the 'to' and 'cc' variables will (often) be the same
-as the ones stated in the recipient variable.
 
-
-
-### Additional variables for tracking and processing
+###<a name="tracking-options"></a> Additional variables for tracking and processing
 
 SMTPeter also offers the following boolean variables (e.g. "variable": true/false),
-which can be included in each POST request. Including these variables and setting them
-to true or false will enable or disable the features for the email. This makes it possible
-to use different settings for individual emails. The variables can be either provided as
-regular POST data, or they can be encoded in JSON. If you use JSON, the content-type should
-be set to application/json.
+which can be included in each POST request. Using these variables you can enable or disable 
+certain features. This makes it possible to use different settings for individual emails. 
 
 
 ```text
