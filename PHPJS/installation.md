@@ -128,7 +128,6 @@ library works well enough.
 
 Finally, you will have to install V8 manually, as its *Makefile* does not support *install*.
 This happens in two steps, the first being the copying of include files.
-Navigate to the folder where you have the V8 source, and enter v8/include.
 
 There are two possible locations you can copy the include files to, and both are provided below.
 For this tutorial, it does not matter which one you choose. Take the
@@ -137,24 +136,24 @@ one you prefer, but if you do not know what to choose, we recommend the first.
 **Location 1 (recommended)**
 
 ```bash
-sudo cp *.h /usr/local/include
+sudo cp include/*.h /usr/local/include
 ```
 
 **Location 2**
 ```bash
-sudo cp *.h /usr/include 
+sudo cp include/*.h /usr/include 
 ```
 
 Next to the include files, you also need to copy the compiled libraries.
-Navigate to v8/out/native/lib.target.
+The compiled files can be found in v8/out/native/lib.target.
 Again, there are two possibilities:
 
 ```bash
-sudo cp libv8.so /usr/lib 
+sudo cp out/native/lib.target/libv8.so /usr/lib 
 ```
 
 ```bash
-sudo cp libv8.so /usr/local/lib
+sudo cp out/native/lib.target/libv8.so /usr/local/lib
 ```
 
 You now have successfully installed Google's V8 JavaScript Engine.
