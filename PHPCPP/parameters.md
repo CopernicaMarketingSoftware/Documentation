@@ -67,7 +67,7 @@ function example3(int $param)
 }
 
 ?>
-
+```
 The same is true for native functions. Although the core PHP engine and PHP-CPP
 library both offer the possibility to specify that your function accepts parameters of type 
 "Php::Type::Numeric" or of type "Php::Type::String", this setting is further 
