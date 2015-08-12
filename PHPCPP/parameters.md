@@ -99,7 +99,7 @@ example(12, new DateTime(), new DateTime());
 // invalid, "x" and "z" are no objects
 example("x", "y", "z");
 ?>
-
+```
 The PHP engine will trigger an error if your function is called with wrong
 parameters, and will not make the actual call to the native function.
 
