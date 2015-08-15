@@ -81,8 +81,8 @@ sudo ldconfig
 ## Installing PHP-JS
 
 Installing PHP-JS is very similar to installing PHP-CPP. You can also choose
-between installing the latest [bleeding edge unstable version from GitHub]
-(https://github.com/CopernicaMarketingSoftware/PHP-JS), or one
+between installing the latest [bleeding edge unstable version from
+GitHub](https://github.com/CopernicaMarketingSoftware/PHP-JS), or one
 of the [versioned releases](https://github.com/CopernicaMarketingSoftware/PHP-JS/releases).
 
 To download and install the unstable version, just copy-and-paste the following
