@@ -58,8 +58,8 @@ var_dump($result);
 
 ## Assigning data
 
-Things start to become powerful once you start assigning PHP variables to the 
-Javascript engine. It then suddenly makes sense to write scripts:
+Things start to become interesting once you start assigning PHP variables to the 
+Javascript engine. The javascript code can use data from PHP context:
 
 ```php
 <?php
@@ -71,9 +71,9 @@ $context->assign('language', 'dutch');
 $context->assign('name', 'Emiel');
 
 // execute a statement concatenating into a very well-known greeting
-$result = $context->evaluate("var x = language == 'dutch' ? ('Hallo ' + name + '!') : ('Hello ' + name + '!');");
+$result = $context->evaluate("var x = language == 'dutch' ? ('Hallo ' + name) : ('Hello ' + name);");
 
-// result now contains the string "Hallo Emiel!" (because the language was set to dutch)
+// result now contains the string "Hallo Emiel" (because the language was set to dutch)
 var_dump($result);
 ?>
 ```
