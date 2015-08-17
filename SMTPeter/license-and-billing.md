@@ -9,12 +9,12 @@ support the amount of emails you want to send (e.g. if your balance allows for
 100.000 emails and you want to send 100.001 emails, you will have to top up
 your balance). 
 
+The first 10.000 emails every month are free and your email credits will never expire. 
+That way you never pay more than you have to. 
+
 The price of emails is variable and discounts are automatically calculated into
 the price of your emails. If you have sent 100.000 emails, the 100.001th email will 
 automatically be caluclated with the cheaper price per email. 
-
-Your email volume and discount will automatically be reset each month, meaning you 
-will receive 10.000 free emails each month. 
 
 ## Billing
 
@@ -25,7 +25,9 @@ a receipt/invoice about your costs for the past month.
 
 If you prefer to use a postpay option instead of the pay-as-you-go payment, you
 can contact us at [info@smtpeter.com](mailto:info@smtpeter.com "email us") or
-call at +31 (0)20 520 61 90. The post payment method means you will be invoiced
+call at +31 (0)20 520 61 90. 
+
+The post payment method means you will be invoiced
 for the amount of emails you have sent at the end of each month. Of course the same
 discounts as in the pay-as-you go payment system apply for the post payment system. 
 This invoice has to be paid within two weeks of the invoice date. 
@@ -35,4 +37,4 @@ This invoice has to be paid within two weeks of the invoice date.
 Whilst SMTPeter has a pay-as-you-go payment system it does work 
 with a license. This license means you have complied with our
 [terms and conditions](copernica-docs:SMTPeter/terms-and-conditions)
-and does involve any costs. 
+and does not involve any costs. 
