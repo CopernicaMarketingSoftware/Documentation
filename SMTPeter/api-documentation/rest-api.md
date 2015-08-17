@@ -99,7 +99,7 @@ The envelope and recipient variables:
 The variables below specify the actual content of the email message. You might notice
 that we specify variables, such as 'from' and 'to' here. These might seem redundant, because
 we have already specified the 'recipient' and 'envelope' address. However, these variables
-do not control the actual delivery, but only
+do not control the actual delivery, but only the way the MIME looks. 
 
 There are two ways to include the message content. You can either
 include the "mime" variable followed by a full mime string or provide "html",
