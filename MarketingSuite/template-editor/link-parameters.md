@@ -5,7 +5,7 @@ the extend link option. This allows you to identify the campaigns that send
 traffic to your website by adding tags to your links. A populair example of 
 link extension is the 
 [Google Analytics URL builder](https://support.google.com/analytics/answer/1033867 "Google Analytics URL builder").
-Adding these paremeters (also known as UTM codes for Google Analytics) to 
+Adding these parameters (also known as UTM codes for Google Analytics) to 
 your links allows you to filter on traffic from specific campaigns in 
 Google Analytics. 
 
