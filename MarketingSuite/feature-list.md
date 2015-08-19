@@ -17,7 +17,8 @@ Currently available features within Marketing Suite are:
 Features missing from Marketing Suite:
 
 - Block conditions: you cannot show or hide template blocks based on subscriber data.
-- The posibility to add Google Tracking variables (or other link parameters).
+- RSS Feed integration
+- Social media buttons
 - Style and text formatting properties. There are some, but definately not all. 
 - File and image library
 - Ability to quickly send a testmail
