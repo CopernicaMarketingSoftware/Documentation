@@ -7,6 +7,7 @@
   * [Template source](copernica-docs:MarketingSuite/template-editor/template-source)
   * [Template preview](copernica-docs:MarketingSuite/template-editor/template-preview)
   * [Personalization](copernica-docs:MarketingSuite/template-editor/personalization)
+  * [Extending Links](copernica-docs:MarketingSuite/template-editor/link-parameters)
   * [Blocks](copernica-docs:MarketingSuite/template-editor/blocks)
      * [Button block](copernica-docs:MarketingSuite/template-editor/blocks/button)
      * [Column block](copernica-docs:MarketingSuite/template-editor/blocks/column)
