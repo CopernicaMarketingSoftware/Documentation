@@ -3,5 +3,5 @@
 * [Hello world](copernica-docs:PHPJS/helloworld "Hello World example")
 * [Assigning PHP variables](copernica-docs:PHPJS/assign "Assigning PHP variables")
 * [Lazy loading](copernica-docs:PHPJS/lazyload "Lazy loading")
-* [Outrageous example](copernica-docs:PHPJS/lazyload "Outrageous example")
+* [Outrageous example](copernica-docs:PHPJS/outrageous "Outrageous example")
 
