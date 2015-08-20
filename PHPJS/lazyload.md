@@ -8,8 +8,8 @@ Lazy loading is useful if you do not know in advance what data is going
 to be used inside the executed JavaScript code. With lazy loading you
 can load the data the moment it is needed.
 
-The following example shows how you can use the magic __isset() and
-__get() properties to implement lazy loading. The first time a certain
+The following example shows how you can use the magic `__isset()` and
+`__get()` properties to implement lazy loading. The first time a certain
 property is accessed, the PHP script will automatically query the
 database to retrieve the requested property.
 
