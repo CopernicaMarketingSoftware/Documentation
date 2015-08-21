@@ -26,7 +26,7 @@ All available properties of this block type are mentioned in the table below.
 
 ## Example usage
 
-The following input JSON shows how to a video to a document. This is the basic
+The following input JSON shows how to display a video in a document. This is the basic
 usage, showing a thumbnail image in both email and webversions, that links to
 the video on youtube when clicked:
 

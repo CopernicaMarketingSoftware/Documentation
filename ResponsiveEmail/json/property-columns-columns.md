@@ -34,5 +34,5 @@ JSON objects, containing the actual `blocks` inside the `columns`.
 ```
 
 The `columns` property has 2 mandatory properties: `size` and `blocks`. Because
-the API is based on  [ZURB's INK boilerplate](http://zurb.com/ink/docs.php "visit docs of the email boilerplate template"), 
+the API is based on [ZURB's INK boilerplate](http://zurb.com/ink/docs.php "visit docs of the email boilerplate template"), 
 which is a 12 column grid system, each row in your email, can contain up to 12 blocks.
