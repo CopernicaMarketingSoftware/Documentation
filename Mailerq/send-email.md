@@ -467,7 +467,7 @@ x-mq-custom-property-name: some debug data that will be visible only in RabbitMQ
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
-    "custom-property-name": "some debug data that will be visible only in RabbitMQ message"
+    "custom-property-name": "some debug data that will be visible only in RabbitMQ message",
     "mime": "..."
 }
 
