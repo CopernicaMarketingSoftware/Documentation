@@ -152,9 +152,12 @@ The exchange must know exactly what to do with a message it receives.
 ### Sending email
 
 The `rabbitmq-outbox` queue is the queue which hold all messages waiting to be 
-picked up and delivered by MailerQ. 
+picked up and delivered by MailerQ. There are three ways to get messages into the 
+`rabbitmq-outbox` and to have MailerQ deliver them. You can either write a script that 
+publishes messages straight into the outbox queue, you can use MailerQ's built-in SMTP 
+server or use MailerQ to read messages from standard input. 
 
-[Read our separate article about sending email](copernica-docs:MailerQ/send-email)
+[Read our separate article to learn more about sending email](copernica-docs:MailerQ/send-email)
 
 ### Incoming messages
 
