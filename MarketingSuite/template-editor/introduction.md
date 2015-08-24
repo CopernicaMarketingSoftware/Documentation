@@ -1,4 +1,4 @@
-# Template Editor overview
+# Template Editor
 
 It has never been easier to create your email templates without any knowledge of HTML. This editor uses a state of the art 'drag & drop' workflow which makes it easy to position desired elements (images, buttons, text, etc, etc) in your email templates. 
 
