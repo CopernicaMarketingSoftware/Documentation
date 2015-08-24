@@ -1,5 +1,4 @@
 * [Introduction](copernica-docs:MarketingSuite/introduction)
-* [Feature list](copernica-docs:MarketingSuite/feature-list)
 * [Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
   * [Introduction](copernica-docs:MarketingSuite/template-editor/introduction)
   * [Basic features](copernica-docs:MarketingSuite/template-editor/basic-features)
