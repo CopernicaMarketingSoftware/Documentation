@@ -76,7 +76,11 @@ rabbitmq-vhost:         <The RabbitMQ environment MailerQ may use>
 ```
 
 The `rabbitmq-host` variable holds the hostname of your RabbitMQ server. If you have 
-a cluster of RabbitMQ nodes they have to be separated by a semi-colon (e.g. host1;host2;host3;).
+a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they have to 
+be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
+will have highly available queues.
+
+[Read more about highly available queues](https://www.rabbitmq.com/ha.html)
 
 The `rabbitmq-user` and `rabbitmq-password` variables need to hold the username and 
 password for your RabbitMQ server, as set in your RabbitMQ configuration. The default 
