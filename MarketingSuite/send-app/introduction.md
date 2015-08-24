@@ -3,7 +3,8 @@
 To send your campaign to a list with subscribers, click on **Send emailing** in 
 the top bar when you are in the template editor or press **new mailing** in the 
 sidebar when you are in the general interface. This will bring you to the mass 
-mailing settings, where you set the target, the timestamp and the other related settings. 
+mailing settings. Here you will be able to set where the mailing should be send, 
+when to send the mailing and (many) other related settings.
 
 ## Choosing the target of the emailing. 
 
@@ -21,7 +22,7 @@ when setting up a mailing.
 By default, a mailing will be sent immediately after you hit the **confirm and 
 send** button in the final step. Alternatively you can choose to schedule 
 the mailing on a future date or/and to automatically repeat the mailing with 
-a specific interval.
+a [specific interval](copernica-docs:MarketingSuite/send-app/repeat-mailings).
 
 To schedule and/or repeat the mailing, click the link at the **Date and Time** 
 section when settings up a new mailing. 
@@ -43,8 +44,7 @@ scheduled if you've chose to send it in the future.
 Setting of scheduled mailings that haven't started sending yet can be cancelled 
 or edited. 
 
-## Changing template content 
-
+## Changing template content
 After you've setup a scheduled mailing, you can still make modifications to 
 the template, for example to change its content or improve typos. The final 
 version of the email template will be sent. 

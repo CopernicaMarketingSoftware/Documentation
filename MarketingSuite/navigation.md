@@ -1,5 +1,4 @@
 * [Introduction](copernica-docs:MarketingSuite/introduction)
-* [Feature list](copernica-docs:MarketingSuite/feature-list)
 * [Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
   * [Introduction](copernica-docs:MarketingSuite/template-editor/introduction)
   * [Basic features](copernica-docs:MarketingSuite/template-editor/basic-features)
@@ -19,6 +18,7 @@
      * [Video block](copernica-docs:MarketingSuite/template-editor/blocks/video)
      * [Webversion block](copernica-docs:MarketingSuite/template-editor/blocks/webversion)
 * [Sending Email](copernica-docs:MarketingSuite/send-app/introduction)
+     * [Repeat Emailings](copernica-docs:MarketingSuite/send-app/repeat-mailings)
 * [Statistics](copernica-docs:MarketingSuite/statistics/introduction)
 * [Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
   * [Introduction](copernica-docs:MarketingSuite/magento-integration/introduction)
