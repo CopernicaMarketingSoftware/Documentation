@@ -80,6 +80,19 @@ be retried are posted there (as well as to the 'outbox' queue).
 If you want to disable any of result or retry queues, simply leave its value empty. The
 outbox and inbox queues can not be empty.
 
+MailerQ can also track refused messages. Refused messages are messages
+that we did not accept. This happens to messages delivered without first
+authenticating that are also not delivery reports. Authentication is only
+necessary if the 'smtp-username' and 'smtp-password' properties are set
+or if a plugin is installed supporting authentication. If no queue is set
+to store delivery reports, they will also require authentication.
+
+By setting `rabbitmq-persistent` to 1 you turn on persistent message delivery mode. 
+If you enable this feature, all messages published to RabbitMQ will be 
+published persistently, meaning that they will be stored to disk by MailerQ.
+This can be useful if your RabbitMQ server cannot keep up with the rate of publishing 
+retries and delivery results. 
+
 ## Bounce reports
 
 If you want MailerQ to generate bounce reports when it is unable to deliver
@@ -106,15 +119,33 @@ will be placed inside this queue. Authentication is then disabled for
 delivery reports, meaning they can deliver these messages despite of
 whether or not the remote daemon has authenticated with us or not.
 
-MailerQ can also track refused messages. Refused messages are messages
-that we did not accept. This happens to messages delivered without first
-authenticating that are also not delivery reports. Authentication is only
-necessary if the 'smtp-username' and 'smtp-password' properties are set
-or if a plugin is installed supporting authentication. If no queue is set
-to store delivery reports, they will also require authentication.
 
-By setting `rabbitmq-persistent` to 1 you turn on persistent message delivery mode. 
-If you enable this feature, all messages published to RabbitMQ will be 
-published persistently, meaning that they will be stored to disk by MailerQ.
-This can be useful if your RabbitMQ server cannot keep up with the rate of publishing 
-retries and delivery results. 
+## Cluster configuration options
+
+If you run MailerQ on multiple servers, you can set up a cluster.
+Every MailerQ instance in the cluster needs its own outbox (you can
+thus not share multiple outbox queues). If one of the MailerQ
+instances consumes a message from the outbox, but sees that it
+can only be sent from a MailerQ server that runs on a different
+server (because only that other server is configured with the
+appropriate IP address), it will automatically publish the message
+to the outbox queue of the MailerQ instance.
+
+To let the MailerQ servers communicate with each other, you need
+to specify a special cluster exchange on RabbitMQ. All cluster-*
+variables below identify an exchange in a RabbitMQ instance.
+
+
+```
+cluster-host:           <Hostname of the RabbitmQ server used for the cluster>
+cluster-user:           <RabbitMQ username>
+cluster-password:       <RabbitMQ password>
+cluster-vhost:          <The RabbitMQ vhost for MailerQ cluster communication>
+cluster-exchange:       <Name of the exchange in RabbitMQ used for cluster communication>
+```
+
+If not set, cluster exchange will be created on same RabbitMQ
+instance as the outbox.
+
+
+   
