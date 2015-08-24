@@ -3,6 +3,7 @@
 * [Send email](copernica-docs:Mailerq/send-email "Send email with MailerQ")
 * [Responsive-email](copernica-docs:Mailerq/responsive-email "Responsive e-mail")
 * [Result queue](copernica-docs:Mailerq/result-queue "Result queue")
+* [Smart host & debugging](copernica-docs:Mailerq/smarthost "Smarthost & debugging")
 * [Management console](copernica-docs:Mailerq/management-console "Management console")
 * [Database access](copernica-docs:Mailerq/database-access "Database access")
 * [Examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples")
