@@ -11,8 +11,6 @@ Other use cases for smarthosts are when you want to create a chain of
 MailerQ instances, and have the mails from one instance be forwarded to
 the next instance.
 
-(plaatje?)
-
 
 ## How to configure the smarthost feature
 
@@ -34,6 +32,40 @@ The other `smarthost-*` options are optional, and may be used if you the
 target smarthost uses a different port than the default one (default is 25),
 and if the smarthost requires authentication.
 
+
+## Setting the smarthost on a per-message level
+
+If you do not want to send all messages using a smarthost, but only specific 
+messages or send specific messages to specific smarthosts, you can do so by adding 
+the smarthost variables to the JSON or MIME-header of a specific message. If global 
+smarthost settings are set, these settings will override the settings set in your 
+configuration file. 
+
+```
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "smarthost": {
+        "name": "hostname-smarthost",
+        "port": "25",
+        "username": "example-user",
+        "password": "example-password"
+    }
+}
+```
+
+#### MIME header
+
+```
+x-mq-smarthost-name:    <hostname-smarthost>
+x-mq-smarthost-port:    <25>
+x-mq-smarthost-username: <example-user>
+x-mq-smarthost-password: <example-password>
+```
+
+Only the `name` property is mandatory. The Port will default to 25, and not setting 
+the username or password means MailerQ will not try to authenticate to the smarthost. 
 
 ## Using smarthost for debugging
 
