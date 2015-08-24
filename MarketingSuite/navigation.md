@@ -2,7 +2,6 @@
 * [Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
   * [Creating a template](copernica-docs:MarketingSuite/template-editor/create-template)
   * [Template basics](copernica-docs:MarketingSuite/template-editor/template-basics)
-  * [Template preview](copernica-docs:MarketingSuite/template-editor/template-preview)
   * [Personalization](copernica-docs:MarketingSuite/template-editor/personalization)
   * [Extending Links](copernica-docs:MarketingSuite/template-editor/link-parameters)
   * [Blocks](copernica-docs:MarketingSuite/template-editor/blocks)
