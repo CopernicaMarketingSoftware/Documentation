@@ -356,21 +356,6 @@ Normally, MailerQ tries to load plugins from the default plugin directory, which
 ###plugin-directory: `<path>`
 The path to the directory where the plugins are located.
 
-## Smarthosts
-
-When all messages need to be routed via an external mailserver, the smarthost option can be used. This global setting will cause all messages to be routed via the specified smarthost, where authentication is performed using the specified credentials.
-
-###smarthost: `<hostname>`
-Hostname of the smarthost.
-
-###smarthost-port: `<port>`
-Port number on which to contact the smarthost. Defaults to 25 if omitted.
-
-###smarthost-username: `<username>`
-Username to authenticate to the smarthost. Omit if no authentication is required.
-
-###smarthost-password: `<password>`
-Password to authenticate to the smarthost. Omit if no authentication is needed.
 
 ## DNS settings
 
@@ -402,23 +387,6 @@ The communication channel to use, either "udp" or "tcp". The default value is to
 ###dns-helofile: `<filename>`
 Location of the file containing HELO map.
 
-## Debugging
-
-When you're debugging or testing, you can force MailerQ to deliver all messages to a fixed IP address and port. You can for example use the [smtp-sink](http://www.postfix.org/smtp-sink.1.html) program for catching all these dummy deliveries.
-
-It is recommended to only use this option for debugging; for other purposes such as routing all emails to a single external host the smarthost option should be utilized. This is because internally, MailerQ is still constructing queues and throttling domains, while the server for each domain is equal. With the smarthost option, these internal performance wastes are omitted and everything is routed directly to the external server, improving performance.
-
-###smtp-sink-ip: `<ip address>`
-Debug/test IP address to deliver all outgoing emails to.
-
-###smtp-sink-port: `<port>`
-Debug/test port number to deliver all outgoing emails to.
-
-###smtp-sink-username: `<username>`
-Username to authenticate to the sink.
-
-###smtp-sink-password: `<password>`
-Password to authenticate to the sink.
 
 ## Lockfile
 
