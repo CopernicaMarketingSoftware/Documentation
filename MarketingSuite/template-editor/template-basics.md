@@ -6,6 +6,8 @@
 
 ## Text version
 
+## Attachments
+
 ## Default styling
 
 ## Preview template
@@ -13,3 +15,4 @@ You can preview your email template within the template editor which shows you a
 
 There's also a print button, in case you want to send your newsletter by postal service. Don't forget to stamp the envelope sufficient before sending.
 
+[Next personalization](copernica-docs:MarketingSuite/template-editor/personalization)
