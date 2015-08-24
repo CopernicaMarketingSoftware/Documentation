@@ -1,27 +1,48 @@
 # Sending bounces with MailerQ
 
-MailerQ can also be used for sending bounces - or, to be more precise:
-to send Delivery Status Notifications (DSN).
+Besides the delivery of regular email messages, MailerQ can also be used for 
+sending bounces, or, to be more precise: to send Delivery Status Notifications (DSN).
 
 A Delivery Status Notification is an email message that contains meta
 information about the delivery of an email. Mail servers send such DSN
-messages to each other when the delivery of an email is delayed, or
-when the delivery has completely failed. It is even possible to send
-DNS messages on successful delivery, although in practice only
-failure and delay notifications are sent.
+messages to each other when the delivery of an email is delayed, or when the 
+delivery has completely failed. And you can even send DSN messages on successful
+delivery, although in practice success-notifications are seldomly used.
 
 
 ## Enable DSN messages
 
-Normally, MailerQ does not send DSN messages. All results are published
-in JSON format to the appropriate result queues, where you can pick them
-up and process them. Most users find it more convenient to collect
-results in JSON format from a message queue than setting up a special 
-incoming mail server to receive and parse incoming bounces.
+In its default configuration, MailerQ does not send DSN messages. Normally, 
+results are published in JSON format to the appropriate result queues, where you
+can pick them up and process them. Most users find it more convenient to collect
+results in JSON format from a message queue than setting up a special incoming 
+mail servers to receive and parse incoming bounces.
 
-However, if you do want to receive bounces by mail, you simply have to
-add an extra property to the JSON input that instructs MailerQ that it
-should send back a bounce message when something goes wrong:
+However, if you do want to receive bounces by mail, you can configure MailerQ
+to send out delivery status notifications. This can either be configured 
+in the configuration file, so that DSN messages are sent for every failed
+delivery, or on a per-message basis.
+
+
+## Configuration file options
+
+
+
+
+## Configure DSN for individual messages
+
+You can specify for every message individually whether and when MailerQ should
+send a delivery status notification. You can do this by adding extra properties
+to the JSON (if you inject mails by publishing them to a RabbitMQ message queue 
+directly), by using the DSN extension of the ESMTP protocol, by adding meta
+headers to the MIME message body, or by using command line options if you
+inject mails through the CLI interface.
+
+
+### Enable notifications through JSON
+
+If you want to receive a bounce message when the delivery fails, you can achieve
+this by adding a `dsn` property to the input JSON:
 
 ```json
 {
@@ -29,8 +50,8 @@ should send back a bounce message when something goes wrong:
     "recipient":    "friend@example.com",
     "mime":         "MIME-Version: 1.0\r\n....",
     "dsn":          {
-        "envelope":     "mailer-daemon@example.com",
         "notify":       "FAILURE",
+        "envelope":     "mailer-daemon@example.com",
         "orcpt":        "example@example.com"
         "ret":          "FULL",
         "envid":        "your-specific-identifier"
@@ -40,39 +61,42 @@ should send back a bounce message when something goes wrong:
 
 The above message contains a simple straightforward email message that
 is sent from envelope address example@domain.com to recipient address
-friend@example.com, and the full message content is stored in the "mime"
+friend@example.com, with the full message content being stored in the "mime"
 property. Nothing special to see here.
 
-However, the extra "dsn" property instructs MailerQ (and the mail server
-to which the email is going to be delivered as well) to send back a 
-DSN message to the envelope address when the mail could not be delivered.
-The "dsn" object can have the following five sub properties:
+The extra "dsn" property instructs MailerQ (and subsequent mail servers that
+will process the mail as well) to send back a DSN message to the envelope 
+address when the mail could not be delivered. The "dsn" object can have the 
+following five sub properties:
 
-* envelope
 * notify
+* envelope
 * orcpt
 * ret
 * envid
 
+The `notify` variable specifies what sort of events should trigger the delivery
+status notification. Possible values are "NEVER", "SUCCESS", "FAILURE" and 
+"DELAY". If you set it to "FAILURE", MailerQ will only send a bounce back on
+failure. It is also allowed to set this to a comma seperated list of 
+values. If you set the `notify` property to "SUCCESS,FAILURE", a bounce message
+will be sent on successful delivery as well as on failure.
+
+Currently, MailerQ only sends notifications for failures and successful 
+deliveries, and not yet for delayed deliveries. However, if you do set the 
+`notify` property to "DELAY" and the message does get forwarded to a different
+server, this other server may still send delay notifications. In other words: 
+even although MailerQ does not yet send delay notifications, that does not mean
+that you will never receive such notifications.
+
 The `envelope` property is an optional property that sets the envelope
-address that is used by MailerQ when the bounce is sent. You would
-normally set this to an address like "mailer-daemon@yourdomain.com".
+address to be used for the bounce. You normally set this to an address like 
+"mailer-daemon@yourdomain.com". If you do not include this property, the default
+value from the configuration file is used.
 
-The `notify` variable specifies what sort of events trigger the delivery
-of DSN messages. Possible values are "NEVER", "SUCCESS", "FAILURE" and 
-"DELAY". It is also allowed to set this to a comma seperated list of 
-values (for example "SUCCESS,FAILURE"). Currently, MailerQ only sends
-notifications for failures and successful deliveries, and not yet for
-delayed deliveriers. However, if you do set this to "DELAY" and the 
-message gets forwarded to an other server, this other server may still
-send delay notifications. In other words: even although MailerQ does not
-yet send delay notifications, that does not mean that you will never 
-receive such notifications.
-
-The property `orcpt` holds the original recipient address. Inside the
-bounce message generated by MailerQ, this original recipient address is 
-included in the delivery report, and it contains exactly the same
-address as set in the `orcpt` JSON property. This property is optional;
+The property `orcpt` is also an optional property and holds the original 
+recipient address. Inside the bounce message generated by MailerQ, this original
+recipient address is included in the delivery report. This property is optional;
 if you leave it out the actual `recipient` property will be used.
 
 The bounce message that is sent back by MailerQ holds a full delivery
@@ -83,7 +107,7 @@ in the status notification, but only the original MIME headers.
 
 The last property that you can include in the "dsn" object, is `envid`.
 This is a application specific environment ID, and you can set it to
-whatever you like. It will be included in the sent bounce message, so
+whatever you like. It will be included in the bounce message, so
 that you can match the bounces with the sent messages.
 
 
