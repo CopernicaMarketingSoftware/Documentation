@@ -1,22 +1,7 @@
 # Template Editor overview
 
-The template editor enables you to design and put together your own emails 
-templates without having to write any HTML or CSS code yourself. It uses
-a drag and drop system, which can be used to drag elements into your
-email template. The user interface of the editor consists of 4 main parts:
+It has never been easier to create your email templates without any knowledge of HTML. This editor uses a state of the art 'drag & drop' workflow which makes it easy to position desired elements (images, buttons, text, etc, etc) in your email templates. As a bonus, the generated emails are responsive out of the box! No more cursing and headaches, hacking your css to get your template responsive and working in different email clients.
 
-1. [Toolbox](copernica-docs:MarketingSuite/template-editor/ui/toolbox)
+The editor renders templates under the hood using [ResponsiveEmail.com](https://www.responsiveemail.com) which is based on JSON input. For advanced users the editor includes a JSON editor to take full control of the generated template. The json templates render multiple times faster than the Publisher templates making large emailings to be send out faster. 
 
-   Drag any item from this toolbox onto your screen. While dragging, this toolbox will contain options related to the item or block that is being dragged.  
-   
-2. [Canvas](copernica-docs:MarketingSuite/template-editor/ui/canvas)
-
-   This is the workspace that you will be using to compose your emailing templates. Drag items from the toolbox onto the canvas to use them as blocks in your template.  
-   
-3. [Settings](copernica-docs:MarketingSuite/template-editor/ui/settings)
-
-   The Settings panel contains all the settings directly related to the active block.    
-   
-4. [Topbar](copernica-docs:MarketingSuite/template-editor/ui/top-bar)
-
-   Quick access to basic actions, such as saving your template, previewing, setup a mass mailing and so forth.
+[Next Creating a template](copernica-docs:MarketingSuite/template-editor/create-template)
