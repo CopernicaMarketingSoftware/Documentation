@@ -161,7 +161,7 @@ picked up and delivered by MailerQ. There are three ways to get messages into th
 publishes messages straight into the outbox queue, you can use MailerQ's built-in SMTP 
 server or use MailerQ to read messages from standard input. 
 
-[Read our separate article to learn more about sending email](copernica-docs:MailerQ/send-email)
+[Read our separate article to learn more about sending email](copernica-docs:Mailerq/send-email)
 
 ### Incoming messages
 
@@ -181,7 +181,7 @@ necessary if the 'smtp-username' and 'smtp-password' properties are set
 or if a plugin is installed supporting authentication. If no queue is set
 to store delivery reports, they will also require authentication.
 
-[Read more about incoming messages](copernica-docs:MailerQ/incoming-messages)
+[Read more about incoming messages](copernica-docs:Mailerq/incoming-messages)
 
 ### Bounces & RabbitMQ
 
@@ -205,7 +205,7 @@ bounce-envelope:            <example@example.com>
 ```
 
 
-[Read more about how MailerQ handles bounces](copernica-docs:MailerQ/bounce-handling)
+[Read more about how MailerQ handles bounces](copernica-docs:Mailerq/bounce-handling)
 
 
 ### Delivery report queues
