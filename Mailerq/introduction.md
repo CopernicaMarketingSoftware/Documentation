@@ -5,7 +5,7 @@ RabbitMQ is a server application that deals with message queue'ing. Before you'r
 going to install and configure MailerQ, you must therefore first make sure you 
 have access to a working RabbitMQ server. If you have a working and up-to-date 
 RabbitMQ server, you can proceed with setting up MailerQ. Otherwise, check our 
-[RabbitMQ tips and tricks article](copernica-docs:Mailerq/rabbitmq).
+[using RabbitMQ article](copernica-docs:Mailerq/rabbitmq).
 
 **MailerQ requires RabbitMQ version 3.3.1+**
 
