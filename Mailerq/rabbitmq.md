@@ -110,14 +110,14 @@ your scripts will immediately be able to publish messages to these queues. If du
 is turned off all exchanges and queues will be created once MailerQ starts (this because 
 MailerQ makes sure all queues and exchanges are created once it starts). If you run a 
 script BEFORE you start MailerQ you could possibly use messages. However, this is mostly 
-'in theory', in practice you probably won't notice much a difference.
+'in theory', in practice you probably won't notice much of a difference.
 
 Another setting is the "persistent" setting, which is a 'per-message' setting. When a 
 message is published to a queue, RabbitMQ saves this message in the fast main memory and 
 not on disk. This because it is much, much faster than storing the messages on disk. Saving 
-in main memory does bring a higher risk, because if RabbitMQ crashes, messages in RabbitMQ
-will be lost. Turning on persistant will mean your messages are also saved on disk, which 
-means it is much slower. We therefore recommend leaving the `rabbitmq-persistent` option 
+the message in main memory does bring a higher risk, because if RabbitMQ crashes, messages 
+in RabbitMQ will be lost. Turning on persistant will mean your messages are also saved on disk, 
+which makes it much slower. We therefore recommend leaving the `rabbitmq-persistent` option 
 off (on 0). 
 
 
