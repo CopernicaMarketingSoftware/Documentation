@@ -1,7 +1,8 @@
 # Person object
 
-Persons is not term from Magento, but a Copernica specific thing. Each record from
-this list contains all data that we gathered of a single person. 
+Person is a 'real world' person. Magento doesn't have such concept in it, so 
+this object is compiled from other objects (customer, order, quote, guest, subscriber).
+Email address is used as a way to distinguish various persons from each other. 
 
 Example, when someone registers on your website, or places an order for the first 
 time, a new person record will be created, and the data known about this person 
@@ -11,16 +12,16 @@ internally, those are two seperate users. Copernica however, will link together
 those two entities based on the provided email address and merge them into one 
 single object: a person. 
 
-The object `person` holds the most recent information about a user. It tracks 
-user by it's email address and applies proper changes to itself when new 
-information is added. 
+Information inside person object are the most recent information that was received
+by MarketingSuite. When new data is synchronized with Marketing Suite changes to 
+person object are automatically applied.
 
 ## Persons, guests and customers
 
 One person can have one customer assigned. On other hand, one person can have
 multiple guest objects assigned to it. It's cause of how guests are created.
 For every guest order placed there is one guest object. Cause of that when
-data is compiled into person object all guest will be assigned to person. They
+data is compiled into person object all guests will be assigned to person. They
 are accessible via `guests` property.
 
 ## Personalization properties
