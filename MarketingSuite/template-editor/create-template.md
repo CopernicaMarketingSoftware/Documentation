@@ -1,4 +1,4 @@
-# Creating a template.
+# Creating a template
 
 There are a few ways of creating a new email template. The most easy way to create a new email template 
 is, once logged in the MarketingSuite, by clicking on the 'new template' link. You will be prompted what 

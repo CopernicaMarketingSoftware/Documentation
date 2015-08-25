@@ -19,6 +19,14 @@ Subscribers list will provide a list of users that expressed
 a will of receiving newsletters, regardless if they are registered customers or
 not.
 
+Aside from registered customers, there are also customers that didn't want to 
+register and completed theirs using anonymous checkout (has to be enabled inside 
+Magento configuration). For targeting such guest customers use the [guest list target](copernica-docs:MarketingSuite/magento-integration/targets/guests).
+
+[Persons list target](copernica-docs:MarketingSuite/magento-integration/targets/persons)
+will aggregate informations from all above lists using email address as a way 
+to distinguish various people.
+
 ## Personalization variables
 
 Variables available for email personalization.
