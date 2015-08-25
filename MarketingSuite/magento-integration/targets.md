@@ -13,7 +13,35 @@ new target types are introduced:
 - [Magento persons list](copernica-docs:MarketingSuite/magento-integration/targets/persons)
 - [Magento guests list](copernica-docs:MarketingSuite/magento-integration/targets/guests)
 
-Each list provides different personalization and filtering options. 
+Each list provides different personalization and filtering options.
+
+## What target list to pick?
+
+Depending on intention of a mailing different mailing target list can be chosen.
+
+To target subscribers, regardless if they are customers, guests or just plain 
+website users, there is [subscribers list](copernica-docs:MarketingSuite/magento-integration/targets/subscribers). 
+Usually, this type of target list will be used to compose general newsletters.
+
+To target only registered customers, there is [customers list](copernica-docs:MarketingSuite/magento-integration/targets/customers).
+Usually, this type of target list will be used to composer members only emailings.
+
+To target only customers that bought products, there is [orders list](copernica-docs:MarketingSuite/magento-integration/targets/orders).
+Usually, this type of target list will be used to compose emailings asking for 
+opinion about the service or offering special price on accessories to certain product.
+
+To target only users that are considering purchase or forgot about their active
+basket, there is [quotes list](copernica-docs:MarketingSuite/magento-integration/targets/quotes).
+Usually, this type of target list will be used to compose emailings reminding 
+users that they have products in their shopping carts.
+
+To target only customers that placed orders as anonymous users, there is [guests list](copernica-docs:MarketingSuite/magento-integration/targets/guests).
+Usually, this type of target will be used to compose emailing advertising website
+membership.
+
+To target 'real world' persons, there is [persons list](copernica-docs:MarketingSuite/magento-integration/targets/persons).
+Usually, this type of target will be used to send emailing to users interested 
+in certain product (regardless if they registered or not).
 
 ## Default targets
 
