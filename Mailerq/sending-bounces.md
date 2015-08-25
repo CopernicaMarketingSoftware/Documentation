@@ -1,13 +1,14 @@
 # Sending bounces with MailerQ
 
-Besides the delivery of regular email messages, MailerQ can also be used for 
-sending bounces, or, to be more precise: to send Delivery Status Notifications (DSN).
+Besides the delivery of regular email messages, MailerQ can also send out 
+bounce message, or, to be more precise: send Delivery Status Notifications (DSN).
 
 A Delivery Status Notification is an email message that contains meta
 information about the delivery of an email. Mail servers send such DSN
 messages to each other when the delivery of an email is delayed, or when the 
-delivery has completely failed. And you can even send DSN messages on successful
-delivery, although in practice success-notifications are seldomly used.
+delivery completely failed. You can even instruct MailerQ to send DSN messages 
+on successful delivery, although in practice success-notifications are seldomly 
+used.
 
 
 ## Enable DSN messages
@@ -16,22 +17,62 @@ In its default configuration, MailerQ does not send DSN messages. Normally,
 results are published in JSON format to the appropriate result queues, where you
 can pick them up and process them. Most users find it more convenient to collect
 results in JSON format from a message queue than setting up a special incoming 
-mail servers to receive and parse incoming bounces.
+mail servers to receive and parse incoming delivery status notifications.
 
-However, if you do want to receive bounces by mail, you can configure MailerQ
-to send out delivery status notifications. This can either be configured 
-in the configuration file, so that DSN messages are sent for every failed
-delivery, or on a per-message basis.
+However, if you do want to receive bounces and notifications by mail, 
+you can configure MailerQ to send out delivery status notifications. This can 
+either be configured in the configuration file, so that DSN messages are sent 
+for every failed delivery, or on a per-message basis.
 
 
 ## Configuration file options
 
+There are several DSN options that can be set in the MailerQ configuration file. 
+Note that all these settings are optional and can be left blank. Leaving them blank 
+does mean MailerQ does not send Delivery Status Notifications. 
 
+```
+dsn-notify          <NEVER, FAILURE, DELAY or SUCCESS>
+```
+The `dsn-notify` setting, determines under which circumstances MailerQ has to send 
+a DSN. It can contain the following values: NEVER, SUCCESS, FAILURE and DELAY. When 
+dsn-notify is set to "NEVER" (default), MailerQ will never send notifications, if 
+it is set to "FAILURE" it only sends notifications when messages fail. "SUCCESS" means 
+a DSN is sent at every successful delivery (not recommended!) and "DELAY"  will give 
+notifications when a delivery is temporarily delayed. This can be a commaseparated list 
+(e.g. FAILURE, DELAY).
+
+```
+dsn-envelope
+```
+The `dsn-envelope` address is the envelope address from which all delivery status 
+notifications are sent. The default is `mailer-daemon@localhost`, you **must** change 
+this to your own address!
+
+```
+dns-ret             <FULL or HDRS>
+```
+
+The `dns-ret` setting determines whether the delivery status notification holds the 
+complete email message (this can create very large bounce messages!) or just the 
+message headers from the original email (which is recommended). Possible values are 
+FULL (full original email message) and HDRS (just the headers).
+
+The standard value of `dns-notify` is NEVER, which means that MailerQ does not send 
+bounce messages by default. You have to change the configuration to make it work. 
+However, when the feature is disabled in the config file, it is still possible to 
+set DNS settings on a per message level. This can be done by adding dsn properties 
+to the JSON or in the MIME headers. 
+
+Settings set in the message JSON or MIME headers override the settings in your config 
+file. Meaning that if in your config file the `dns-notify` is set to "NEVER" and in 
+the message to "FAILURE", a notification will be sent when MailerQ fails to deliver 
+the message. 
 
 
 ## Configure DSN for individual messages
 
-You can specify for every message individually whether and when MailerQ should
+You can specify for each individual message whether and when MailerQ should
 send a delivery status notification. You can do this by adding extra properties
 to the JSON (if you inject mails by publishing them to a RabbitMQ message queue 
 directly), by using the DSN extension of the ESMTP protocol, by adding meta
@@ -120,120 +161,120 @@ instruct MailerQ to send bounces.
 
 MailerQ supports the DSN extension for the SMTP protocol, and you can
 also supply the "notify", "orcpt", "ret" and "envid" variables via
-the SMTP protocol:
+the SMTP protocol: 
+
+RFC: https://tools.ietf.org/html/rfc3461
+
+At the "MAIL FROM" part of the SMTP protocol you can add the RET and ENVID parameters, 
+at the "RCPT TO" part you can add the NOTIFY and ORCPT parameters. All these parameters 
+are optional and do no thave to be added. 
+
+See the example below from the RFC:
 
 ```smtp
-
-@todo show SMTP communication
+<<< 220 Example.ORGMTP server here
+>>> EHLO Example.ORG
+<<< 250-Example.ORG
+<<< 250 DSN
+>>> MAIL FROM:<Alice@Example.ORG> RET=HDRS ENVID=QQ314159
+<<< 250 <Alice@Example.ORG> sender ok
+>>> RCPT TO:<Bob@Example.COM> NOTIFY=SUCCESS \
+    ORCPT=rfc822;Bob@Example.COM
+<<< 250 <Bob@Example.COM> recipient ok
+>>> RCPT TO:<Carol@Ivory.EDU> NOTIFY=FAILURE \
+    ORCPT=rfc822;Carol@Ivory.EDU
+<<< 250 <Carol@Ivory.EDU> recipient ok
+>>> RCPT TO:<Dana@Ivory.EDU> NOTIFY=SUCCESS,FAILURE \
+    ORCPT=rfc822;Dana@Ivory.EDU
+<<< 250 <Dana@Ivory.EDU> recipient ok
+>>> DATA
+<<< 354 okay, send message
+>>> (message goes here)
+>>> .
+<<< 250 message accepted
+>>> QUIT <<< 221 goodbye
 
 ```
+
+When MailerQ receives a message through the SMTP port, MailerQ will automatically 
+transform the received message into JSON and adds it to the "inbox" queue. The 
+RET, ENVID, NOTIFY and ORCPT parameters will be converted to a JSON "dsn" property 
+as described above. 
+
+The above communication will be converted into:
+
+```json
+{
+    "envelope": "alice@example.org",
+    "recipient": "bob@example.com",
+    "mime": "(message goes here)",
+    "dsn": {
+        "ret": "hdrs",
+        "envid": "QQ314159",
+        "notify": "SUCCESS",
+        "orcpt": "rfc822;Bob@Example.COM",
+    }
+}
+
+{
+    "envelope": "alice@example.org",
+    "recipient": "carol@ivory.edu",
+    "mime": "(message goes here)",
+    "dsn": {
+        "ret": "hdrs",
+        "envid": "QQ314159",
+        "notify": "FAILURE",
+        "orcpt": "rfc822;Carol@Ivory.EDU",
+    }
+
+}
+
+{
+    "envelope": "alice@example.org",
+    "recipient": "Dana@Ivory.EDU",
+    "mime": "(message goes here)",
+    "dsn": {
+        "ret": "hdrs",
+        "envid": "QQ314159",
+        "notify": "SUCCESS,FAILURE ",
+        "orcpt": "rfc822;Dana@Ivory.EDU",
+    }
+
+}
+```
+
 
 ## Enable DSN via message headers
 
-Using 
 
+The third possiblity to add or adjust DNS settings to a message is by adding 
+special MIME headers. The following MIME headers are available to adjust the 
+DSN settings:
 
-
-
-## Default settings in the config file
-
-
-
-
-## The special bounce queue
-
-
-
-
-
-## Sending a Delivery Status Notification by hand
-
-We start with a lame example. In the end, a delivery status notification
-is nothing more than a regular MIME formatted email message,  with a 
-different content-type. Because you can use MailerQ to send all sorts of
-MIME messages, you can also use it for sending DSN messages. You just 
-have to pass in an alternative MIME message:
-
-```json
-{
-    "envelope":     "mailer-daemon@example.com",
-    "recipient":    "example@example.com",
-    "mime":         "Content-Type: multipart/report\r\n...."
-}
+```mime
+x-mq-dsn-notify:        FAILURE, SUCCESS, DELAY, NEVER
+x-mq-dsn-envid:         the envelope id
+x-mq-dsn-ret:           FULL or HDRS
+x-mq-dsn-orcpt:         email@example.com
 ```
 
-Above you see the JSON for sending a DSN message. This is not much
-different than sending a regular email, with HTML and/or text content.
-The notification will be sent from envelope address 
-"mailer-daemon@example.com" and to recipient "example@example.com".
+Just like all other x-mq-* headers, these will be stripped out of the message by 
+MailerQ and converted to JSON properties. 
 
 
-## Tell MailerQ to construct DSN messages
+## The special DSN queue
 
-You can also instruct MailerQ to create the DSN messages given a regular
-email. You can add one extra property to the input JSON, and MailerQ
-will send a completely different type of e-mail. Consider the following
-input JSON:
+For MailerQ sending a DSN message is basically the same as sending a normal email 
+message. MailerQ can place the message in its own outbox to make sure it gets delivered. 
 
-```json
-{
-    "envelope":     "sender@yourdomain.com",
-    "recipient":    "receiver@example.com",
-    "mime":         "..."
-}
-```
+However, it is still possible to set a separate queue where DSN message are published to 
+in the config file. By default this queue is the same queue as the outbox queue. However, 
+if you want your DSN message to be sent by a separate MailerQ instance, or if you want 
+to process and filter the messages yourself (before sending them), you can adjust the queue 
+in the config file and let MailerQ publish the dsn messages to a separate queue. 
 
-The above JSON contains the input for sending a regular email to
-"receiver@example.com". Imagine however, that you want to send a 
-notification back to the original envelope, containing a report about
-exactly this original e-mail. You can achieve this by simply adding a 
-"report" property to this JSON object. MailerQ will then convert the
-mime data into a DSN that is going to be sent back to the 
-
-```json
-{
-    "envelope":     "sender@yourdomain.com",
-    "recipient":    "receiver@example.com",
-    "mime":         "....",
-    "dsn": {
-        "envelope":     "mailer-daemon@example.com",
-        "notify":       "FAILURE,DELAY",                /* supported FAILURE, DELAY, SUCCESS and NEVER */
-        "orcpt":        "example@example.com",
-        "ret":          "FULL",                         /* HDRS of FULL */
-        "envid":        "skldfjslfkjsdlk"
-    },
-    "report":   {
-        "original-envelope-id": "....",     envid uit DSN JSON
-        "reporting-mta":        "....",     MailerQ (niet configurabel)
-        "received-from-mta":    "....",     niet gezet door MailerQ
-        "arrival-date":         "....",     niet gezet door MailerQ
-        "human-readable":       "....",     niet gezet door MailerQ
-        "full":                 boolean,    True als ret=FULL in input JSON
-        "recipients": [ {
-            "original":             "....",     orcpt in input JSON
-            "final":                "....",     gezet op de recipient
-            "action":               "....",     "relayed" of "failed" ("delayed" is nog niet geimplementeerd)
-            "status":               "....",     "5.2.1" (code geretourneerd door ontvanger)
-            "remote-mta":           "....",     niet gezet door MailerQ
-            "diagnostic-code":      "....",     de SMTP code
-            "last-attempt-date":    "....",     de tijd waarop de laatste poging voor het bericht was ingeroosterd
-            "final-log-id":         "....",     niet gebruikt door MailerQ
-            "will-retry-until":     "...."      niet gebruikt door MailerQ
-        } ]
-    }
-}
-```
-
-When MailerQ detects that the "report" propery was added to the JSON
-input, it suddenly
+However, this means it is up to you to make sure these messages are sent and/or 
+consumed (e.g. run a separate instance of MailerQ and publish to its outbox)
 
 
-
-
-
-
-
-
-It is
-therefore very easy to send DSN messages with MailerQ: just insert the
 

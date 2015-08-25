@@ -138,7 +138,7 @@ rabbitmq-outbox:        <Name of your outbox message queue>
 rabbitmq-results:       <Name of your result queue>
 rabbitmq-success:       <Name of your success queue>
 rabbitmq-failure:       <Name of your failure queue>
-rabbitmq-bounces:       <Name of your bounces queue>
+rabbitmq-dsn:           <Name of your delivery status notification queue>
 rabbitmq-reports:       <Name of your reports queue>
 rabbitmq-retry:         <Name of your retry queue>
 rabbitmq-inbox:         <Name of your inbox queue>
@@ -186,8 +186,9 @@ to store delivery reports, they will also require authentication.
 ### Bounces & RabbitMQ
 
 If you want MailerQ to generate bounce reports when it is unable to deliver
-email, you can set the 'rabbitmq-bounces' queue. Note that this queue will
-only contain messages that generate an error directly as they are being
+email or any other delivery status notifications, such as 'delayed'  or 'succes' 
+you can set the 'rabbitmq-dsn' queue. Note that this queue will
+only contain messages that generate an error or notification directly as they are being
 sent. If the receiving mail daemon pretends to accept the message and
 later decides it does not like it after all, it should send a bounce
 message back the the original envelope address.
@@ -205,7 +206,7 @@ bounce-envelope:            <example@example.com>
 ```
 
 
-[Read more about how MailerQ handles bounces](copernica-docs:Mailerq/bounce-handling)
+[Read more about how MailerQ handles bounces](copernica-docs:Mailerq/sending-bounces)
 
 
 ### Delivery report queues
