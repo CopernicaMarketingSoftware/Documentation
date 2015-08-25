@@ -1,30 +1,77 @@
 # Magento orders list
 
-Order list allows you to create custom targets based on order information. 
-For example it's possible to send a mailing to all customers that bought specific 
-or a product or from certain category.
+Order is a collection of items that customer decided to buy. Each items defines
+how many of given product at given price should be delivered.
+
+Orders can be placed either by registered customers or anonymous guests. For 
+guests placed orders suitable option has to be enabled in Magento configuration
+(anonymous check out).
+
+Each order is created from a quote. Quote is basically a shopping basket.
+
+## Orders state and status
+
+Orders can be in various states and statuses. State is Magento value that can't 
+be modifier by user. Status is user defined (or Magento predefined) value that
+can be set up inside Magento admin panel.
+
+Read more about order state and status on [order object](copernica-docs:MarketingSuite/magento-integration/object/order) page.
 
 ## Personalization variables
 
-Variables available for email personalization.
+| Variable name | Variable type                                                                    | Description                                    |
+|---------------|----------------------------------------------------------------------------------|------------------------------------------------| 
+| $magento      | _[Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)_    | Overall Magento installation.                  |
+| $customer     | _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_  | Instance of customer that placed the order.    |
+| $quote        | _[Quote](coperncia-docs:MarketingSuite/magento-integration/object/quote)_        | Instance of quote that order was created from. |
+| $order        | _[Order](copernica-docs:MarketingSuite/magento-integration/object/order)_        | Instance of the actual order.                  |
+| $person       | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_      | Instance of person that placed the order.      |
 
-- [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento) `$magento` 
-- [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer) `$customer`
-- [Order](copernica-docs:MarketingSuite/magento-integration/object/order) `$order`
-- [Quote](copernica-docs:MarketingSuite/magento-integration/object/customer) `$quote`
+## Limiting orders list
 
-## Filter options
+It's possible to limit orders list to a shorten, more precise one, by applying
+filter options to it. It's possible to apply following filter options:
 
-For lists based on orders the following filter options are available:
+*  **Quote Id**
 
-* **Quote Id**
-* **Customer Id**
-* **State**
-* **Status**
-* **Quantity**
-* **Total weight**
-* **Bought product**
-* **Product's category**
-* **Web store**
-* **Currency**
-* **IP address**
+   Limits orders list to orders that were created using [quote](coperncia-docs:MarketingSuite/magento-integration/object/quote) with given ID.
+
+*  **Customer Id**
+
+   Limits orders list to orders that were placed by [customer](coperncia-docs:MarketingSuite/magento-integration/object/customer) with given ID.
+
+*  **State**
+
+   Limits orders list to orders that are in given state.
+
+*  **Status**
+
+   Limits orders list to orders that have given status.
+
+*  **Quantity**
+
+   Limits orders list to orders that have given amount of products.
+
+*  **Total weight**
+
+   Limits orders list to orders that weighted given amount of kilograms.
+
+*  **Products**
+
+   Limits orders list to orders that contain given [product](coperncia-docs:MarketingSuite/magento-integration/object/product).
+
+*  **Product's category**
+
+   Limits orders list to orders that contain product from given [category](coperncia-docs:MarketingSuite/magento-integration/object/category).
+
+*  **Web store**
+
+   Limits orders list to orders that were placed in given [webstore](coperncia-docs:MarketingSuite/magento-integration/object/webstore).
+
+*  **Currency**
+
+   Limits orders list to orders that were placed with use of given [currency](coperncia-docs:MarketingSuite/magento-integration/object/currency).
+
+*  **IP address**
+
+   Limtis orders list to orders that were placed with use of given IP address.
