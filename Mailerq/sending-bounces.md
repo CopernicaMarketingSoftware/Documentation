@@ -50,22 +50,22 @@ notifications are sent. The default is `mailer-daemon@localhost`, you **must** c
 this to your own address!
 
 ```
-dns-ret             <FULL or HDRS>
+dsn-ret             <FULL or HDRS>
 ```
 
-The `dns-ret` setting determines whether the delivery status notification holds the 
+The `dsn-ret` setting determines whether the delivery status notification holds the 
 complete email message (this can create very large bounce messages!) or just the 
 message headers from the original email (which is recommended). Possible values are 
 FULL (full original email message) and HDRS (just the headers).
 
-The standard value of `dns-notify` is NEVER, which means that MailerQ does not send 
+The standard value of `dsn-notify` is NEVER, which means that MailerQ does not send 
 bounce messages by default. You have to change the configuration to make it work. 
 However, when the feature is disabled in the config file, it is still possible to 
-set DNS settings on a per message level. This can be done by adding dsn properties 
+set DSN settings on a per message level. This can be done by adding DSN properties 
 to the JSON or in the MIME headers. 
 
 Settings set in the message JSON or MIME headers override the settings in your config 
-file. Meaning that if in your config file the `dns-notify` is set to "NEVER" and in 
+file. Meaning that if in your config file the `dsn-notify` is set to "NEVER" and in 
 the message to "FAILURE", a notification will be sent when MailerQ fails to deliver 
 the message. 
 
@@ -247,7 +247,7 @@ The above communication will be converted into:
 ## Enable DSN via message headers
 
 
-The third possiblity to add or adjust DNS settings to a message is by adding 
+The third possiblity to add or adjust DSN settings to a message is by adding 
 special MIME headers. The following MIME headers are available to adjust the 
 DSN settings:
 
@@ -271,7 +271,7 @@ However, it is still possible to set a separate queue where DSN message are publ
 in the config file. By default this queue is the same queue as the outbox queue. However, 
 if you want your DSN message to be sent by a separate MailerQ instance, or if you want 
 to process and filter the messages yourself (before sending them), you can adjust the queue 
-in the config file and let MailerQ publish the dsn messages to a separate queue. 
+in the config file and let MailerQ publish the DSN messages to a separate queue. 
 
 However, this means it is up to you to make sure these messages are sent and/or 
 consumed (e.g. run a separate instance of MailerQ and publish to its outbox)
