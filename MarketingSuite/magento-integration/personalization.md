@@ -43,7 +43,7 @@ available for given the different Magento targets.
 | $guest          | [guest](copernica-docs:MarketingSuite/magento-integration/object/guest)            | No             | No          | No          | No               | No            | Yes         |
 | $quote          | [quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
 | $order          | [order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            | Yes         |
-| $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | No          | No          | No               | Yes           | No          |
+| $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | Yes         | No          | No               | Yes           | No          |
 | $subscriber     | [subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
 
 _\* As you can see in the table, the variable `$magento` is the only one variable available
