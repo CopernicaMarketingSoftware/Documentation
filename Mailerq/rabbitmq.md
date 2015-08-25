@@ -197,12 +197,12 @@ To have MailerQ actually deliver bounce reports back to the original sender
 of the message, this option should be set to the same queue as the outbox.
 MailerQ will then generate a report, attach the original message to it as
 an attachment and send it back to the envelope address. When this option is
-used, it is recommended to set the 'bounce-envelope' property in your 
+used, it is recommended to set the 'dsn-envelope' property in your 
 MailerQ configuration:
 
 
 ```
-bounce-envelope:            <example@example.com>
+dsn-envelope:            <example@example.com>
 ```
 
 
