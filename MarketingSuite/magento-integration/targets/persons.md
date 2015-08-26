@@ -1,38 +1,101 @@
 # Magento persons list
 
-Persons is not term from Magento, but a Copernica specific thing. Each record from
-this list contain all data that we gathered of a single person. 
+Person is a set of data about one individual. Data for this object is gathered
+from other objects: customer, quote, order, subscriber and guest. Email address
+is used to distinguish different individuals.
 
-Example, when someone registers on your website, or places an order for the first time, a new person record will be created, and the data known about this person will be stored in it. Months later, this same person can decide to do another purchase but now as an anonymous guest, using the 
-same email address. For Magento internally, those are two seperate users. 
-Copernica however, will link together those two entities based on the provided email address and 
-merge them into one single object: a person. 
+New person is created when data associated with given email address is synchronized.
+Usually that means a customer, order or subscriber is synchronized and previously
+there was no objects associated with email address contained in one of such. Every
+next object that is associated with given email address will add data to corresponding 
+person object.
 
-The stored information about a person will be compiled to the most recently provided. 
+For example, when someone registers on your website, a Magento customer will be 
+synchronized with Copernica. Alongside, a new person will be created inside 
+Marketing Suite. All relevant data from customer object will be available inside
+person object and customer will be linked to created person object. After some 
+time, a guest order is placed using same email address. When order is synchronized 
+with Copernica relevant data from that order will be added to previously created 
+person object and order will be available via person object. For Magento, created
+customer and guest checkout are unrelated. For Marketing Suite, order is assigned
+to person. 
+
+Magento doesn't have a person concept. It's only available inside Marketing Suite.
 
 ## Personalization variables
 
-Variables available for email personalization.
+| Variable name | Variable type                                                                    | Description                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------| 
+| $magento      | _[Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)_    | Overall Magento installation.                                                                                                    |
+| $person       | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_      | Instance of person that placed the order.                                                                                        |
+| $customer     | _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_  | Instance of customer that placed the order. If there is no customer associated with person this variable will evaluate to FALSE. |
 
-- [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento) `$magento` 
-- [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer) `$customer` \*
-- [Person](copernica-docs:MarketingSuite/magento-integration/object/customer) `$person`
+## Limiting persons list
 
-_\* Only when person is a customer. When person is only a subscriber or guest this variable will evaluate to FALSE_
+It's possible to limit persons list to a shorten, more precise one, by applying
+filter options to it. It's possible to apply following filter options:
 
-## Filter options
+*  **First name**
 
-A persons list can have following filter options:
+   Limits persons list to persons that have given first name.
 
-* **First name**
-* **Middle name**
-* **Prefix**
-* **Last name**
-* **Email address**
-* **Gender**
-* **Subscription status**
-* **Web store**
-* **bought product**
-* **bought product from category**
-* **wishes for product**
-* **wisges for product from category**
+*  **Middle name**
+
+   Limits persons list to persons that have given middle name.
+
+*  **Prefix**
+
+   Limits persons list to persons that have given prefix in theirs name.
+
+*  **Last name**
+
+   Limits persons list to persons that have given last name.
+
+*  **Email address**
+
+   Limits persons list to persons with given email address. In practice it will
+   product list with one person on it (or zero, if there is no person with such
+   email address), since every person has it's own email address.
+
+*  **Gender**
+
+   Limits persons list to persons that declared given gender in their profile.
+
+*  **Subscription status**
+
+   Limits persons list to persons that are subscribers and have given subscription
+   status. To learn more about subscription statuses read about them on [subscribers 
+   target list](copernica-docs:MarketingSuite/magento-integration/targets/subscribers) 
+   page.    
+
+*  **Web store**
+
+   Limits persons list to persons that are from given [webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore).
+
+*  **bought product**
+
+   Limits persons list to persons that bought given [product](copernica-docs:MarketingSuite/magento-integration/object/product). 
+   Either as a [customer](copernica-docs:MarketingSuite/magento-integration/object/customer) 
+   or a [guest](copernica-docs:MarketingSuite/magento-integration/object/guest).
+
+*  **bought product from category**
+
+   Limits persons list to persons that bought a [product](copernica-docs:MarketingSuite/magento-integration/object/product) 
+   from given [category](copernica-docs:MarketingSuite/magento-integration/object/category).
+   Either as a [customer](copernica-docs:MarketingSuite/magento-integration/object/customer) 
+   or a [guest](copernica-docs:MarketingSuite/magento-integration/object/guest).
+
+*  **wishes for product**
+
+   Limits persons list to persons that placed given [product](copernica-docs:MarketingSuite/magento-integration/object/product) 
+   inside theirs [wishlist](copernica-docs:MarketingSuite/magento-integration/object/wishlist).
+   [Wishlists](copernica-docs:MarketingSuite/magento-integration/object/wishlist) 
+   are available only for [customers](copernica-docs:MarketingSuite/magento-integration/object/customer).
+
+*  **wishes for product from category**
+
+   Limits persons list to persons that placed a [product](copernica-docs:MarketingSuite/magento-integration/object/product) 
+   from given [category](copernica-docs:MarketingSuite/magento-integration/object/category)
+   inside theirs [wishlist](copernica-docs:MarketingSuite/magento-integration/object/wishlist).
+   [Wishlists](copernica-docs:MarketingSuite/magento-integration/object/wishlist) 
+   are available only for [customers](copernica-docs:MarketingSuite/magento-integration/object/customer).
