@@ -36,8 +36,8 @@ as a way to distinguish various people.
 
 ## Personalization variables
 
-| Variable name | Variable type                                                                       | Description                                 |
-|---------------|-------------------------------------------------------------------------------------|---------------------------------------------| 
+| Variable name | Variable type                     | Description                                 |
+|---------------|-----------------------------------|---------------------------------------------| 
 | $magento      | _[Magento][magento-object]_       | Overall Magento installation.               |
 | $customer     | _[Customer][customer-object]_     | Instance of customer that email is sent to. |
 
