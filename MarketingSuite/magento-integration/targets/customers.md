@@ -11,26 +11,26 @@ Magento any user that registered with his email address is considered a customer
 To provide more specific emailing targets, there are different emailing lists.
 
 To target users that actually put items into their baskets, it's better to use
-[quotes list target][quotes-object]. 
+[quotes list target][quotes-target]. 
 It will provide a list of users that have a basket, either open or finalized 
 (transformed into order). This list will be also useful for targeting abandoned
 shopping carts.
 
 To target actual, real world customers, that placed an order it's better to use
-[orders list target][orders-object].
+[orders list target][orders-target].
 This list will additionally contain all customers (ones that ordered) that opted 
 for anonymous checkout.
 
 To target users/visitors that subscribed to a newsletter it's better to use 
-[subscribers list target][suubscribers-target].
+[subscribers list target][subscribers-target].
 This list will provide users that subscribed to newsletter regardless if they are
 customers, guests or just visitors.
 
 Aside from registered customers, there are also customers that didn't want to 
 register and completed theirs using anonymous checkout (has to be enabled inside 
-Magento configuration). For targeting such guest customers use the [guest list target][guests-object].
+Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
 
-Finally, there is [persons list target][persons-object]
+Finally, there is ["persons list target"][persons-target]
 that will aggregate latest information from all above lists using email address 
 as a way to distinguish various people.
 
