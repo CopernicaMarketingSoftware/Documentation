@@ -4,10 +4,13 @@ Order is a collection of items that customer decided to buy. Each items defines
 how many of given product at given price should be delivered.
 
 Orders can be placed either by registered customers or anonymous guests. For 
-guests placed orders suitable option has to be enabled in Magento configuration
+guests placed orders, suitable option has to be enabled in Magento configuration
 (anonymous check out).
 
-Each order is created from a quote. Quote is basically a shopping basket.
+Each order is created from a quote. Quote object represents a set of products
+that can be bought on given conditions (quantity, price, etc). When order is 
+created, quote from which it is created is finalized. Quote will be no longer 
+available for modification by user and new active quote is created for that user.
 
 ## Orders state and status
 
