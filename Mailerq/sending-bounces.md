@@ -271,7 +271,7 @@ This is the mail body
 ## The special DSN queue
 
 Sending a DSN message is for MailerQ the same as sending a normal email message. 
-When MailerQ has to send out a bounce, it will simply add this bounce message
+When MailerQ has to send out a bounce, it simply adds this bounce message
 to the outbox queue so that it will be picked up and delivered.
 
 However, if you want your DSN message to be sent by a separate MailerQ instance, or 
