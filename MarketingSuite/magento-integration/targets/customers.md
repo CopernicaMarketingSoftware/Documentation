@@ -30,7 +30,7 @@ Aside from registered customers, there are also customers that didn't want to
 register and completed theirs using anonymous checkout (has to be enabled inside 
 Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
 
-Finally, there is ["persons list target"][persons-target]
+Finally, there is [persons list target][persons-target]
 that will aggregate latest information from all above lists using email address 
 as a way to distinguish various people.
 
