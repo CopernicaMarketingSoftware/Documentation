@@ -10,8 +10,8 @@ them.
 
 ## View the Management Console demo
 
-If you want to see the MailerQ management console in action, without 
-setting up a MailerQ environment, you can take a look at out 
+If you want to see the MailerQ management console in action without 
+setting up a MailerQ environment, you can take a look at our 
 [Management Console Demo](http://demo.mailerq.com "MailerQ Demo environment").
 The data in this environment is fictional, but all settings are available. 
 Feel free to play around with the settings and explore the options available.
@@ -20,7 +20,7 @@ Feel free to play around with the settings and explore the options available.
 ## Activate the management console
 
 The management console can be enabled in MailerQ's configuration file.
-The following variables can be used for it:
+The following variables should be used:
 
 ````
 www-port:           80
@@ -30,14 +30,13 @@ www-dir:            /usr/share/mailerq/www
 ````
 
 The `www-port` variable holds the port number for the management console.
-80 is the default port for web servers. If you use this port, you do
+80 is the default. If you use port 80, you do
 not have to include the port number in the URL and you can access the
 management console with using a browser via address "http://hostname.of.your.server". 
 If you assign a different port number (like 8080), you have to include
 the port number in the URL: "http://hostname.of.your.server:8080".
 
-If you do not assign a specific IP address to the `www-ip` variable,
-the management console is accessible via all IP addresses that are 
+By default, the management console is accessible via all IP addresses that are 
 assigned to the server on which MailerQ runs. If you only want to make
 it accessible via one specific IP, you can set the `www-ip` variable.
 Of course, the IP address that you assign must be bound to the server.
@@ -56,12 +55,13 @@ location, you can change this dir with the `www-dir` variable.
 
 ## Setting up a secure management console
 
-If is a good idea to secure your management console, as you can also
-use it to set up private DKIM keys, and such private keys are better
+If is a good idea to secure your management console, as it will also
+used to set up private DKIM keys, and such private keys are better
 kept private (hence the name) and not transfered over interceptable 
 non-secure HTTP connections.
 
-To enable HTTPS, the following variables can be set in the config file:
+The following configuration file variables are relevant for enabling 
+HTTPS support:
 
 ````
 www-port:                   0

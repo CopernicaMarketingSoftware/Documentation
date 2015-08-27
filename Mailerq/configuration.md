@@ -154,34 +154,6 @@ Max memory to use by MailerQ. This setting can be specified in GB or MB (for exa
 
 When the max memory limit is reached, MailerQ stops loading messages from the message queue until more memory is available.
 
-## Management console
-
-MailerQ opens a web port that can be used for monitoring the application. Go with your browser to http://your-server-name:port to access this management console.
-
-###www-ip: `<ip address>`
-By default, the MailerQ management console can be accessed via all the IP addresses that are available on the server. If you only want to use a single IP, you can use this setting.
-
-###www-host: `<hostname>`
-MailerQ automatically detects its hostname by doing a reverse DNS lookup. If you want to use a different host instead, you can use this variable.
-
-###www-port: `<port>`
-Specific port opened to your management console.
-
-###www-certificate: `<certificate file>`
-Path to certificate file for HTTPS.
-
-###www-privatekey: `<private key file>`
-Path to private key file for HTTPS.
-
-###www-ciphers: `<cipher list>`
-Colon-separated list of allowed ciphers for HTTPS.
-
-###www-dir: `<path to 'www' dir>`
-Directory holding the static content (html, javascript, images, css) of the admin console.
-
-###www-password: `<password>`
-Password you want to use to login into the MailerQ management console. Leave this empty if you do not want to use a password for the management console. Make sure to install a firewall so that the web interface can only accessed by you - especially if you do not use a password.
-
 
 ## SMTP server
 
