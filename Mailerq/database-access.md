@@ -9,18 +9,18 @@ to do is ensure that the sqlite3 library is installed on your system.
 The other two database systems, Mysql and PostgreSql, take a little
 more time to set up, but are not too difficult to install too. You only 
 need to create the database and put the login and password in the 
-MailerQ configuration file. MailerQ will do the rest and creates all
+MailerQ configuration file. MailerQ does the rest and creates all
 tables.
 
 Using a database is *optional*. MailerQ can also run without having a 
-database connection. However, since connecting to a database is so simple 
-(especially a Sqlite database), you can better use it with a database.
+database connection. However, since connecting to a database is simple 
+(especially a Sqlite database), you better use it with a database.
 
 
 ## Database settings in the config file
 
-Only one variable exists in the config file that you need to set for
-the database: the `database` variable:
+Only one variable has to be set in the config file to connect to a
+database: the `database` variable:
 
 ````
 database:           sqlite://path/to/database/file
