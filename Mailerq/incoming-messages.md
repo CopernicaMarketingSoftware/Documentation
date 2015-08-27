@@ -116,7 +116,8 @@ smtp-proxy:             1
 ````
 
 If you run MailerQ behind a proxy server, you should also enable this 
-PROXY protocol in the configuration file of your proxy server.
+PROXY protocol in the configuration file of your proxy server. Only 
+version 2 of the PROXY protocol is supported.
 
 
 ## Publishing incoming messages

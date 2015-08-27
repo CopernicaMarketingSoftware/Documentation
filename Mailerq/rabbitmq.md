@@ -67,7 +67,7 @@ Are you looking for a tool to consume messages from RabbitMQ message queues, and
 to pipe the input to scripts to process these messages? Check our [AMQPipe application](https://www.amqpipe.com).
 
 
-## Configuring RabbitMQ for MailerQ
+## Configuring MailerQ to connect with RabbitMQ
 
 MailerQ reads the location and authentication information to connect to RabbitMQ
 from its config file. Make sure you include the following variables
