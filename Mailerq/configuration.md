@@ -6,27 +6,6 @@ The "config.txt" file holds configuration options for the connection to RabbitMQ
 and other options for MailerQ itself.
  
 
-## Database configuration options
-
-The configuration for the various domains - like the max delivery rate and max connect rate - is stored in a database. The address of this database is set in the config file and should match your database configuration.
-
-Using a database is optional. Without it, MailerQ will simply send e-mails using default settings, and it is not possible to set the delivery rates for specific domains.
-
-The MailerQ MTA supports a number of database engines: MySQL, SQLite and PostgreSQL. The SQLite is the simplest one and the easiest one to set up (you do not need a seperate database server for it). However, the other supported engines are faster and better suited for high performance servers.
-
-###database: `<database address>`
-Name of the MySQL database that MailerQ can use to get the mail sending settings. You will need to have a database in place already. The format for the database address is:
-
-```
-sqlite:///path/to/database/file
-mysql://user:password@hostname/databasename
-postgresql://user:password@hostname/databasename
-```
-
-MailerQ automatically creates or alters missing or incomplete tables. If you use a MySQL or PostgreSQL database, you should ensure that the specified database is already created, and that MailerQ has enough privileges to create and modify tables. For a SQLite database you only have to make sure that the database file is writable.
-
-In normal operations you do not need to login to the database yourself and run any queries, but if you do like to access that data you are free to do so. MailerQ reloads data from the database every couple of minutes, so any changes you make will automatically come into effect without the need to restart the MTA.
-
 ## Message store options
 
 Sometimes MailerQ needs to republish mails back into the message queue - for example when a message is greylisted and should be retried later. When this republishing is done a few times for a single delivery, it causes extra network traffic between MailerQ and RabbitMQ. This traffic can be large, especially if emails contain attachments and/or embedded content.

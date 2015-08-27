@@ -1,12 +1,54 @@
-# How to effectively use the MailerQ database
+# The MailerQ database
 
-MailerQ uses a database to store statistics and configuration data. This is either a Mysql, PostgreSql or Sqlite database. You need to set up this database before you install MailerQ. The Sqlite database is by far the simplest to configure - all you need to do is ensure that the sqlite3 library is installed on your system, and that MailerQ has write permission for the database file.
+MailerQ can use a database to store configuration data. This is either a 
+Mysql, PostgreSql or Sqlite database. We recommend to set up such a 
+database before you run MailerQ, but this is not strictly necessary.
+The Sqlite database is by far the simplest to configure - all you need 
+to do is ensure that the sqlite3 library is installed on your system.
 
-But the other two database systems are easy to install too. You only need to create the database and put the login and password in the MailerQ configuration file. MailerQ will do the rest and create the tables for you.
+The other two database systems, Mysql and PostgreSql, take a little
+more time to set up, but are not too difficult to install too. You only 
+need to create the database and put the login and password in the 
+MailerQ configuration file. MailerQ will do the rest and creates all
+tables.
 
-MailerQ has a powerful web based MTA management console. This console gives you full access to statistics and configuration forms. It is thus not at all necessary to run any queries on the database by yourself. However, if you do want to make a script or a program that retrieves information from MailerQ, or that updates MailerQ's configuration, you can simply do so by accessing the database directly. Every couple of minutes MailerQ reloads all data from its database, so the changes that you make to the database are automatically picked up. This does not require a restart.
+Using a database is *optional*. MailerQ can also run without having a 
+database connection. However, since connecting to a database is so simple 
+(especially a Sqlite database), you can better use it with a database.
 
-In this article we will explain the tables that are created by MailerQ, and how you can use them to retrieve information or to change the MTA's configuration.
+
+## Database settings in the config file
+
+Only one variable exists in the config file that you need to set for
+the database: the `database` variable:
+
+````
+database:           sqlite://path/to/database/file
+database:           mysql://user:password@hostname/databasename
+database:           postgresql://user:password@hostname/databasename
+````
+
+Sqlite is the simplest database to set up, because you just specify the 
+path to a file on the MailerQ server (this file does not even have to 
+exist). However, Sqlite is not the most powerful or fastest system, so 
+using a Mysql or PostgreSql is better.
+
+MailerQ automatically creates or alters missing or incomplete tables. 
+If you use a MySQL or PostgreSQL database, you should ensure that the 
+database already exists, and that MailerQ has enough privileges to 
+create and modify tables.
+
+
+## Reading and writing to the database directly
+
+MailerQ has a powerful [web based MTA management console](copernica-docs:Mailerq/management-console "Management console"). 
+This console gives you full access to statistics and configuration forms. 
+It is therefore in normal operations not at all necessary to run any 
+queries on the database by yourself. But if you do like to access the data
+you are free to do so. MailerQ reloads data from the database every couple 
+of minutes, so any changes you make will automatically come into effect 
+without the need to restart MailerQ.
+
 
 ## Database structure
 
