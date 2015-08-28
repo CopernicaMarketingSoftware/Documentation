@@ -147,7 +147,7 @@ By doing so, you instruct MailerQ not to include the full MIME message
 in the status notification, but only the original MIME headers.
 
 The last property that you can include in the "dsn" object, is `envid`.
-This is a application specific message identifier, and you can set it to
+This is an application specific message identifier, and you can set it to
 whatever you like. It will be included in the bounce message, so
 that you can match the bounces with the sent messages.
 
@@ -200,8 +200,8 @@ transform the received message into JSON and adds it to the "inbox" queue. The
 RET, ENVID, NOTIFY and ORCPT parameters will be converted to a JSON "dsn" property 
 as described above. 
 
-The above communication will be converted into the following JSON message
-tjat are published to the inbox:
+The above communication will be converted into the following JSON messages
+that are published to the inbox:
 
 ```json
 {
