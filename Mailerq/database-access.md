@@ -39,29 +39,90 @@ database already exists, and that MailerQ has enough privileges to
 create and modify tables.
 
 
+## Rebuilding the database
+
+When MailerQ starts, it first connects to the database and checks whether
+all tables are in a valid state. Tables that do not exist are created,
+and tables that miss columns are automatically altered and the missing
+columns are added. This automatic table-checking is done every time
+that MailerQ starts up.
+
+Normally, the only time when tables are created is the very first
+time that you start MailerQ, and the only time when tables are altered 
+is after upgrading to a new version that uses a slightly different 
+database schema.
+
+If you want to enforce that all tables in the database are dropped and
+replaced by brand new empty tables, you can start MailerQ with the 
+"--purge-tables" command line option:
+
+````
+mailerq --purge-tables
+````
+
+This option tells MailerQ not to check and repair tables, but to drop
+them all and create new ones.
+
+
+
+## Multiple MailerQ instances
+
+It is possible to run multiple MailerQ instances that all connect to the
+same database. The data in the database is periodically reloaded into main 
+memory by all MailerQ instances, meaning that updates that are made via 
+the management console of one MailerQ instance become (after a couple of 
+minutes) available in the other instances as well.
+
+
 ## Reading and writing to the database directly
 
 MailerQ has a powerful [web based MTA management console](copernica-docs:Mailerq/management-console "Management console"). 
-This console gives you full access to statistics and configuration forms. 
+This console gives you access to the database driven MailerQ configuration forms. 
 It is therefore in normal operations not at all necessary to run any 
 queries on the database by yourself. But if you do like to access the data
-you are free to do so. MailerQ reloads data from the database every couple 
-of minutes, so any changes you make will automatically come into effect 
-without the need to restart MailerQ.
+you are free to do so. As mentioned above, MailerQ reloads data from the 
+database every couple of minutes, so any changes you make will automatically 
+come into effect without the need to restart MailerQ.
 
 
 ## Database structure
 
-Because MailerQ is compatible with many different database systems, we do not use obscure or vendor specific features. All tables are simple and straightforward. There are no foreign keys or constraints on the tables. Booleans are stored as integers and NULL and 0 values have the same semantics. The value -1 is used to set something to 'unlimited'.
+All created SQL tables are straight forward. Because MailerQ is compatible with 
+many different database systems, it was not possible to use obscure or vendor 
+specific SQL features. The tables use well known data types, and no foreign 
+keys or constraints. Booleans are stored as integers and NULL and 0 values 
+have the same semantics. The value -1 is used to set something to 'unlimited'.
 
-*   [capacity](documentation/database-access#capacity "capacity")
-*   [capacity_per_ip](documentation/database-access#capacity "capacity per IP")
-*   [deliveries_domain](documentation/database-access#deliveries "deliveries domain")
-*   [deliveries_ip](documentation/database-access#deliveries "deliveries IP")
-*   [deliveries_total](documentation/database-access#deliveries "deliveries total")
-*   [dkim_keys](documentation/database-access#dkimKeys "DKIM keys")
+The following tables are created
 
-### Tables 'capacity' and 'capacity_per_ip'
+*   [ips](documentation/database-access#ips "ips")
+*   [capacity](documentation/database-access#capacities "Capacity")
+*   [capacity_per_ip](documentation/database-access#capacities "Capacity per IP")
+*   [dkim_keys](documentation/database-access#dkim "DKIM keys")
+*   [dkim_patterns](documentation/database-access#dkim "DKIM patterns")
+*   [flood_responses](documentation/database-access#floodResponses "Flood Responses")
+
+
+### The "ips" table
+
+On startup, MailerQ detects all IP addresses that are linked to the server,
+and stores these IP addresses in a database table. MailerQ does not use this
+table for queries or for anything, the table is only created so that other
+programs, like yours, have some way to find out which IP addresses are
+available for sending out emails. If you run multiple instances of MailerQ,
+and you want to find out to which RabbitMQ exchange you should publish
+JSON formatted messages to send them via a certain IP, you just have to
+let your script connect to the database and do the lookup
+
+| Field name | Type    | Description                                        |
+|------------|---------|----------------------------------------------------|
+| ip         | varchar | IP address that is available to a MailerQ instance |
+| vhost      | varchar | RabbitMQ vhost                                     |
+| exchange   | varchar | RabbitMQ exchange                                  |
+| outbox     | varchar | RabbitMQ outbox ( = routing key )                  |
+
+
+### Tables "capacity" and "capacity_per_ip"
 
 The 'capacity' and 'capacity_per_ip' tables hold the delivery capacities per target domain. If you want to install different limits for your local outgoing IP addresses you can use the 'capacity_per_ip' table. The 'capacity' table holds the records for system wide delivery capacities per domain - no matter what local IP is used.
 
