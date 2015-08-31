@@ -21,7 +21,7 @@ https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
  > **Note:** All API requests must use secure HTTPS connections. Unsecured
 HTTP requests will result in a '400 Bad Request' response.
 
-There are two ways to provide imput variables to the REST API. The first one
+There are two ways to provide input variables to the REST API. The first one
 is by using regular POST data. This is the same as when you have your browser
 POST a form.
 
@@ -66,7 +66,7 @@ This method can be accessed at:
 https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
 ```
 
-### Recipient and envelope information
+### Recipient, envelope and bounce information
 
 The recipient and envelope variables control where the email is delivered ('recipient')
 and where delivery failure notifications are sent to ('envelope'). They are like the
@@ -83,15 +83,26 @@ status notification indicating the failure and the reason why. If this variable
 is not set and bounce tracking is disabled, delivery notifications will be silently
 ignored.
 
+If bounce tracking is disabled, you can also specify in what cases you would like
+to receive a delivery status notification and what that notification should contain.
+It should be provided as an object with the following keys:
+
+```text
+"notify":           either "NEVER" or one or more of "FAILURE", "SUCCESS" and "DELAY", comma-separated
+"orcpt":            The original recipient (defaults to the recipient address)
+"ret":              Either "FULL" to receive the full message back or "HDRS" to receive just the headers
+```
+
 Note that this variable is separate from the ['trackbounces' option](#tracking-options). It is
 possible to set 'trackbounces' to true and have SMTPeter generate a bounce
 report after receiving notification of a bounce. This report will always go
 to the address configured under 'Bounce management'.
 
-The envelope and recipient variables:
+The envelope, recipient and dsn variables:
 ```text
 "envelope":         string with a pure email address
 "recipient":        string or array with a pure email address
+"dsn":              object containing the keys "notify", "orcpt" and "ret"
 ```
 
 ### Including the message content

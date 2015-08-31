@@ -37,7 +37,7 @@ Enabling the click tracking function means all clicks on links
 in your email will be tracked by SMTPeter. These statistics will
 be shown in the statistic overview of your SMTPeter dashboard. 
 
-
+[Read more about click tracking](copernica-docs:SMTPeter/features/click-tracking "Click Tracking Documentation")
 
 ## Open Tracking
 

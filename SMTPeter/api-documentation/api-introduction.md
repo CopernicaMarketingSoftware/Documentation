@@ -25,7 +25,7 @@ SMTPeter's features using SMTP.
 
 The REST API uses the the HTTPS protocol, this protocol is the foundation of data communication
 for the world wide web. It is faster than the SMTP protocol, because only a single
-instruction has to be sent from your application to a SMTPeter web server to send out an email.
+instruction has to be sent from your application to an SMTPeter web server to send out an email.
 
 To send an email your application sends a POST request to the SMTPeter API endpoint. To keep
 your emails and API keys secure, SMTPeter only accepts mails via HTTPS (port 443). The API is not
