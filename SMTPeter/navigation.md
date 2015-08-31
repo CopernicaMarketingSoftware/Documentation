@@ -5,6 +5,7 @@
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
   * [Inlining CSS](copernica-docs:SMTPeter/features/inline-css "Inline CSS Documentation")
   * [Bounce Tracking](copernica-docs:SMTPeter/features/bounce-tracking "Bounce Tracking Documentation")
+  * [Click Tracking](copernica-docs:SMTPeter/features/click-tracking "Click Tracking Documentation")
 * [Dashboard](copernica-docs:SMTPeter/dashboard/dashboard-overview "Dashboard")
   * [Administration](copernica-docs:SMTPeter/dashboard/administration "Administration Dashboard")
   * [REST API Token](copernica-docs:SMTPeter/dashboard/rest-api-token "REST API token Dashboard")

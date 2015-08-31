@@ -1,6 +1,6 @@
 # Bounce tracking
 
-When you send out email, you normally also have to take care of failed deliveres
+When you send out email, you normally also have to take care of failed deliveries
 and bounce messages that are sent back to the email's envelope address. However,
 if you do not want to set up an infrastructure to take care of bounces yourself,
 you can let SMTPeter do this for you.
