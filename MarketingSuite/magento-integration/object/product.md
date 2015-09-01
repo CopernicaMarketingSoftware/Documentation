@@ -15,7 +15,7 @@ Inside Magento, products can be assigned a category. For instance, a red sports 
 category 'red'. The same product can be in multiple
 categories (the car can be both red and fast), or can have no category at all. For the product itself this doesn't matter. It still has a product URL, and can thus be linked from an email, just like any other product. 
 
-For more information about product categories, go to the [category object](copernica-docs:MarketingSuite/magento-integration/objects/category) documentation. 
+For more information about product categories, go to the [category object](copernica-docs:MarketingSuite/magento-integration/object/category) documentation. 
 
 ## Personalization properties
 
