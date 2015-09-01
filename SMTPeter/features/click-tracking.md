@@ -33,7 +33,7 @@ Becomes:
 
 http://clicks.example.com/path-of-the-uri-QogGwQIAgQQAg
 
-[Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking Set up your click domain).
+[Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking "Set up your click domain").
 
 ## DNS configuration
 
