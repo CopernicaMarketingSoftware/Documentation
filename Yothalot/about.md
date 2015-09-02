@@ -10,7 +10,7 @@ The Yothalot project was started after we were fed up with the complexity
 of Hadoop and the realization that a map/reduce server is essentially
 a very simple process that just processes incoming jobs and distributes
 them over a group of servers. We already had all the tools and libraries
-in house to create such a server.
+in house to create such a server - so we decided just to do that.
 
 But why were we fed up with Hadoop in the first place, you might wonder.
 Well, here at Copernica we try to keep things simple and we don't want
@@ -45,12 +45,10 @@ implemented in Java, with a Java API. There is, once again, in principe
 nothing wrong with Java, but Copernica is a non-Java organization. We 
 just happen to have a team full of qualified and experienced PHP and 
 C++ programmers, and most of our business logic is written in these 
-languages as well.
-
-If we had to write map/reduce algorithms in Java, many people from our
-team would have to learn this new language, and we would be unable to 
-use the functions and objects from our existing data models. That would 
-be a waste.
+languages as well. If we had to write map/reduce algorithms in Java, 
+many people from our team would have to learn this new language, and we 
+would be unable to use the functions and objects from our existing data
+models. That would be a waste.
 
 We tried to use the other Hadoop API's, like the C++ API, but we
 struggled to get it running, and to find our way through the sparse
