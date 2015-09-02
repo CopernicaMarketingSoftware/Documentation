@@ -1,3 +1,5 @@
 * [Introduction](copernica-docs:Yothalot/introduction "Introduction")
 * [Hello world!](copernica-docs:Yothalot/helloworld "Hello world!")
+* [Files and paths](copernica-docs:Yothalot/files "Files and paths")
+* [Reader and Writer classes](copernica-docs:Yothalot/reader-writer "Reader and Writer classes")
 * [About](copernica-docs:Yothalot/about "About Yothalot")
