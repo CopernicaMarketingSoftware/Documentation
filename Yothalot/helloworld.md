@@ -5,7 +5,10 @@ is the word counter. Given a file or a set of files you can create
 a map/reduce job that counts all words in them.
 
 ````php
+<?php
 /**
+ *  WordCount.php
+ *
  *  WordCount implemented as MapReduce class.
  *
  *  This class implements the Yothalot\MapReduce interface, which 
@@ -66,7 +69,7 @@ class WordCount implements Yothalot\MapReduce
         $path = new Yothalot\Path($value);
     
         // the value is a filename that we can open
-        if (!is_resource($fp = fopen($value.absolute(), "r"))) return;
+        if (!is_resource($fp = fopen($path->absolute(), "r"))) return;
         
         // read lines
         while (($line = fgets($fp)) !== false)
@@ -130,30 +133,69 @@ class WordCount implements Yothalot\MapReduce
         file_put_contents($path->absolute(), "$key: $value\n", FILE_APPEND);
     }
 }
+?>
+````
 
+To send this job to the Yothalot cluster, you can write a script that
+connects to the Yothalot master node, and starts up a MapReduce job.
+This job is then fed with input data (the pathnames to files in which
+words should be counted).
 
-// we need access to the Yothalot master process
+````php
+/**
+ *  Dependencies
+ */
+require_once('WordCount.php');
+
+/**
+ *  The Yothalot master process allows us to communicate with the master
+ *
+ *  (Under the hood, you do not connect with the Yothalot master process,
+ *  but to a RabbitMQ message queue, the login details are therefore
+ *  the RabbitMQ details)
+ *
+ *  @var Yothalot\Master
+ */
 $master = new Yothalot\Master("rabbit1.yothalot.com","guest","guest","/");
 
-// create a map/reduce job in the master
+/**
+ *  Now that we have access to the master, we can tell the master to
+ *  create a new MapReduce job, using our WordCount implementation
+ *
+ *  @var Yothalot\Job
+ */
 $job = $master->create(new WordCount());
 
-// add the files in which to look for words, the following three calls
-// will result in three calls to the WordCount::map() function. However,
-// these functions will be called on one of the nodes on GlusterFS
+/**
+ *  Add the files in which to look for words, the following three calls
+ *  will result in three calls to the WordCount::map() function. For
+ *  each input file, the WordCount object is serialized and sent to
+ *  one of the Yothalot nodes, where the map() method will be called.
+ */
 $job->add("path/to/file1.txt");
 $job->add("path/to/file2.txt");
 $job->add("path/to/file3.txt");
 
-// wait for the job to be ready (this could take some time because
-// the Yothalot master will now start up various mapper, reducer and
-// writer processes)
+/**
+ *  Wait for the job to be ready (this could take some time because
+ *  the Yothalot master has to start up various mapper, reducer and 
+ *  writer processes to complete the job)
+ */
 $job->wait();
 
-// the output file is stored on the gluster
+/**
+ *  The output file is stored on the gluster, we use the Yothalot\Path
+ *  class to turn it into an absolute path name (note that for this to
+ *  work, GlusterFS must be mounted on the machine that this script
+ *  runs on, otherwise it has no access to the output file)
+ *
+ *  @var Yothalot\Path
+ *
 $path = new Yothalot\Path("relative/path/in/gluster/results.txt");
 
-// all files are stored in the "path/to/results.txt" file
+/**
+ *  Show the found words
+ */
 echo(file_get_contents($path->absolute()));
 
 ````
