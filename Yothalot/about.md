@@ -1,9 +1,21 @@
 # About Yothalot
 
-Yothalot was built by Copernica BV in Amsterdam. We are a leading Dutch
-provider of Email Marketing solutions, and we tried to setup a Hadoop
-cluster to process our logs. However we like things to be simple,
-and got annoyed by a number of things:
+Yothalot is maintained by Copernica BV in Amsterdam, a leading Dutch
+provider of Email Marketing solutions.
+
+
+## Why Yothalot?
+
+The Yothalot project was started after we were fed up with the complexity
+of Hadoop and the realization that a map/reduce server is essentially
+a very simple process that just processes incoming jobs and distributes
+them over a group of servers. We already had all the tools and libraries
+in house to create such a server.
+
+But why were we fed up with Hadoop in the first place, you might wonder.
+Well, here at Copernica we try to keep things simple and we don't want
+to make things more complicated than strictly necessary. When we worked
+with Hadoop, we however were constantly annoyed by a couple of things:
 
 - The special-purpose HDFS file system
 - The Java API (and lousy API's in other languages)
