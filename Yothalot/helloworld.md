@@ -190,7 +190,7 @@ $job->wait();
  *  runs on, otherwise it has no access to the output file)
  *
  *  @var Yothalot\Path
- *
+ */
 $path = new Yothalot\Path("relative/path/in/gluster/results.txt");
 
 /**
