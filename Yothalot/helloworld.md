@@ -142,6 +142,7 @@ This job is then fed with input data (the pathnames to files in which
 words should be counted).
 
 ````php
+<?php
 /**
  *  Dependencies
  */
@@ -197,6 +198,6 @@ $path = new Yothalot\Path("relative/path/in/gluster/results.txt");
  *  Show the found words
  */
 echo(file_get_contents($path->absolute()));
-
+?>
 ````
 
