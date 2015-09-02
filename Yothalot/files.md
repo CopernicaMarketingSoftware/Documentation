@@ -1,9 +1,9 @@
-# Files stored on the Yothalot cluster
+# Files on the Yothalot cluster
 
-Every node in the Yothalot cluster is mounted (and has access) to the GlusterFS
-file system. This is the only requirement: a Yothalot node has to be mounted to 
-the GlusterFS file  system, but it is not necessary that the node is also part 
-of the GlusterFS system.
+Every node in the Yothalot cluster needs access (and therefore has to be 
+mounted)to the GlusterFS file system. This is the only requirement: a Yothalot 
+node has to be mounted to the GlusterFS file system, but it is not necessary 
+that the node also shares disk space.
 
 This might be confusing. Let's clarify this with the following example: imagine
 that in your environment you have 10 servers that all have a lot of free disk 
