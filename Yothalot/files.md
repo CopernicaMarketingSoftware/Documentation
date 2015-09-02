@@ -34,8 +34,9 @@ The directory that you use for the mount point is irrelevant. You can mount
 the GlusterFS via "/mnt", "/home/user/glusterfs", "/media/glusterfs" or any
 other mount point. It is even permitted to use different mount points on 
 different servers. The Yothalot framework internally always uses relative 
-pathnames (relative to the mount point) and each node can reconstructs these
-relative paths into full pathname based on the mount point used on that node.
+pathnames (relative to the mount point) when tasks are assigned, and each node 
+reconstructs these relative paths into full pathname based on the mount point 
+used on that node.
 
 
 ## The Path class
