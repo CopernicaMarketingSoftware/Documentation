@@ -15,12 +15,11 @@ Here your own application or script can pick them up for further processing.
 
 Sending email with MailerQ can be done in three different ways, you can either:
 
-*   write a program or script that [directly adds a JSON encoded email](copernica-docs:Mailerq/send-email#Amqp "AMQP") 
-to the outbox message queue
-*   use MailerQ's [built-in SMTP server](copernica-docs:Mailerq/send-email#Smtp "SMTP")
-*   use MailerQ to [read messages from standard input](copernica-docs:Mailerq/send-email#Cli)
+*   write a program or script that directly adds a JSON encoded email to the outbox message queue
+*   use MailerQ's built-in SMTP server
+*   use MailerQ to read messages from standard input
 
-<id="Amqp">## Post email directly to the AMQP message queue
+## Post email directly to the AMQP message queue
 
 Because MailerQ fetches all messages from a RabbitMQ message queue, the fastest 
 way to inject emails is by having your application publish the mails directly to RabbitMQ. 
@@ -104,7 +103,7 @@ If you do not have such a special license, you can of course still inject emails
 in the message queue, but will have to create the MIME string yourself, and you 
 can only assign strings to the JSON "mime" property.
 
-<id="Smtp">## Using the built-in SMTP server
+## Using the built-in SMTP server
 
 If you do not want to inject mails directly into the RabbitMQ message queue, you 
 can also send emails to the SMTP port that is opened by MailerQ. All messages 
@@ -147,7 +146,7 @@ If you want MailerQ to send out the mail from a different IP address than that
 you originally sent it to, you can include [an extra mime header field](copernica-docs:Mailerq/send-email#localips) 
 that instructs MailerQ to use a different IP instead.
 
-<id="Cli">## MailerQ as command line utility
+## MailerQ as command line utility
 
 The MailerQ program can be started in two different modes: as a daemon process 
 that runs all the time and that sends out the messages, or as a command line 
