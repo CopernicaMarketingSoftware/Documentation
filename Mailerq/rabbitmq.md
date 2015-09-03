@@ -54,7 +54,7 @@ website that explains how to do this:
 ## Don't run out of resources
 
 MailerQ not only uses RabbitMQ to fetch the messages that it is going to send, 
-but also (if you have this configured) to publish back the delivery results. If 
+but also publish back the delivery results (if you have this configured). If 
 you do not process these delivery results in time, you run the risk that your 
 RabbitMQ server runs out of resources (memory or disk space). This can especially 
 happen in a production  environment, where many messages are published and consumed.
