@@ -68,6 +68,6 @@ extension was developed with Publisher software in mind. That means it will use 
 
 ### Compatibility
 
-The extensions are not compatible with eachother and there is no way to upgrade 
+The extensions are not compatible with each other and there is no way to upgrade 
 from old one to new one. It's highly advised to remove the old extension prior 
 to the installation of the newest version.
