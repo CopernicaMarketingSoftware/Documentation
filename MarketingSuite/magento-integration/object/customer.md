@@ -46,7 +46,7 @@ If you want to enlist all [orders](copernica-docs:MarketingSuite/magento-integra
 ```
 {foreach $order in $customer.orders}
 
-#{$order.increment} Shipping costs: {$order.shippingAmount} Grand total: {$order.grantTotal}
+#{$order.increment} Shipping costs: {$order.shippingAmount} Grand total: {$order.grandTotal}
 
 {/foreach}
 ```
