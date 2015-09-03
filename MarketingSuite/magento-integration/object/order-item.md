@@ -12,7 +12,7 @@ The OrderItem object holds the following properties
 | Property name   | Property type                                                                 | Description                         |
 |-----------------|-------------------------------------------------------------------------------|-------------------------------------|
 | ID              | _number_                                                                      | Original order item ID.             |
-| order           | _[Order](copernica-docs:MarketingSuite/magento-integration/object/order)_     | The order that item belogns to.     |
+| order           | _[Order](copernica-docs:MarketingSuite/magento-integration/object/order)_     | The order that item belongs to.     |
 | quantity        | _number_                                                                      | Amount of products.                 |
 | price           | _string_                                                                      | Final item price.                   |
 | weight          | _number_                                                                      | Weight of item.                     |
