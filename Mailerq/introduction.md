@@ -82,7 +82,7 @@ You must also make sure that you've installed the necessary database libraries o
 your system so that MailerQ can actually _connect_ to the database. If you use the
 default SQLite database, you must ensure that the sqlite3 library is installed on
 your server. For MySQL you need the mysqlclient or mariadbclient library, and for
-PostgreSql you need to pq library.
+PostgreSql you need the pq library.
 
 ### License file
 
