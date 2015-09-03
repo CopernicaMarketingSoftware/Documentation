@@ -71,7 +71,7 @@ to pipe the input to scripts to process these messages? Check our [AMQPipe appli
 
 MailerQ reads the location and authentication information to connect to RabbitMQ
 from its config file. Make sure you include the following variables
-in the MailerQ configuration file:
+in the MailerQ configuration file (/etc/mailerq/config.txt):
 
 ```
 rabbitmq-host:          <Hostname(s) of your RabbitMQ server(s)>
@@ -179,12 +179,12 @@ that have successfully been delivered to the success-queue, a copy of messages t
 could not be delivered to the failure-queue, and a copy of all messages, both failed 
 and successfully delivered to the results-queue. 
 
-If a message can not immediately be delivered, or when it it greylisted and
+If a message cannot immediately be delivered, or when it it greylisted and
 will be retried, it is published back to the outbox queue. MailerQ
 will automatically pick it up from this outbox queue at a later time. If you want to
 process those intermediate messages too, you can also set the
-`rabbitmq-retry` variable. A copy of all failed deliveries that are going to
-be retried is posted there (as well as to the 'outbox' queue).
+`rabbitmq-retry` variable. Copies of all failed deliveries that are going to
+be retried are posted there (as well as to the 'outbox' queue).
 
 If you're not interested in the results, or when you're only interested in
 specific results (like failures), you can leave these values empty.
@@ -197,7 +197,7 @@ specific results (like failures), you can leave these values empty.
 Besides sending email, MailerQ also opens up SMTP ports to which email can be 
 delivered. This allows you to inject email into MailerQ using the SMTP protocol.
 
-Messages that are received on one the SMTP ports are published to different queues.
+Messages that are received on one of the SMTP ports are published to different queues.
 The `rabbitmq-inbox` setting specifies the queue to which all correctly received
 messages are delivered, and `rabbitmq-refused` holds the messages that were delivered
 to the SMTP port, but that were not accepted (for example because the client

@@ -108,4 +108,4 @@ The default location is http://your-server-name:8485.
 
 To start sending mails with MailerQ, you need
 [to publish an e-mail to the appropriate message queue](copernica-docs:Mailerq/send-email "Send emails with MailerQ")
-in RabbitMQ or use one of our [examples]copernica-docs:Mailerq/mailerq-examples "MailerQ examples").
+in RabbitMQ or use one of our [examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples").

@@ -12,7 +12,7 @@ Sometimes MailerQ needs to republish mails back into the message queue - for exa
 
 To overcome this, MailerQ can be configured to store the full message bodies in a seperate storage system, and use RabbitMQ only for the email meta data (which is much smaller).
 
-You can use a number of different storage systems for this: Couchbase, MongoDB, Mysql, Sqlite and PostgreSQL. (Be aware that in practice it only makes sense to use Couchbase or MongoDB, because it can handle the required high loads. If you do not have a Couchbase or MongoDB server, you can better not set up a storage system and put the message bodies in RabbitMQ, than using one of the SQL alternatives).
+You can use a number of different storage systems for this: Couchbase, MongoDB, Mysql, Sqlite and PostgreSQL. (Be aware that in practice it only makes sense to use Couchbase or MongoDB, because these can handle the required high loads. If you do not have a Couchbase or MongoDB server, you better not set up a storage system and put the message bodies in RabbitMQ, instead of using one of the SQL alternatives).
 
 ###storage: `<storage address>`
 The address of a storage server can be specified as follows:
