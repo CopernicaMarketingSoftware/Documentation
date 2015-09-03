@@ -6,8 +6,8 @@ queue. This queue holds all messages that are waiting to be sent. MailerQ picks 
 the messages from this queue (which are JSON encoded) and sends the out over an SMTP 
 connection. 
 
-After sending the email MailerQ publishes a JSON encoded a copy to the [result queue](copernica-docs:Mailerq/result-queue "MailerQ result queue") 
-and, depending on whether the delivery was successful, into the sucess or failure queue. 
+After sending the email MailerQ publishes a JSON encoded copy to the [result queue](copernica-docs:Mailerq/result-queue "MailerQ result queue") 
+and, depending on whether the delivery was successful, into the success or failure queue. 
 Here your own application or script can pick them up for further processing. 
 
 
@@ -27,7 +27,7 @@ This is not difficult. After all, JSON is a [widely known data format](http://ww
 that can be easily created and processed by almost every programming language there is, 
 and the message queue can be easily accessed (add messages, remove messages) using 
 the AMQP protocol, for which also [many plugins and libraries](http://www.rabbitmq.com/devtools.html) 
-are available. To help you out, we [created a few examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples") 
+are available. To help you out, we have [created a few examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples") 
 for commonly used languages.
 
 ![MailerQ put it in RabbitMQ](copernica-docs:Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
@@ -98,9 +98,9 @@ MailerQ recognizes much more properties that allow you to add HTML code, include
 images, attachments, RSS feeds -- and much more. To read more about this, please 
 read our documentation about [creating responsive emails with MailerQ](copernica-docs:Mailerq/responsive-email).
 
-As we said, you need a special license to use this "responsive email" feature. 
+As said, you need a special license to use this "responsive email" feature. 
 If you do not have such a special license, you can of course still inject emails 
-in the message queue, but will have to create the MIME string yourself, and you 
+in the message queue, but you will have to create the MIME string yourself, and you 
 can only assign strings to the JSON "mime" property.
 
 ## Using the built-in SMTP server
@@ -108,7 +108,7 @@ can only assign strings to the JSON "mime" property.
 If you do not want to inject mails directly into the RabbitMQ message queue, you 
 can also send emails to the SMTP port that is opened by MailerQ. All messages 
 sent to this port are received by MailerQ and are automatically published to a 
-message queue, where they will then be picked up and delivered to the recipients.
+message queue, where they will be picked up and delivered to the recipients.
 
 In MailerQ's [config file](copernica-docs:Mailerq/configuration "MailerQ configuration") 
 you can set to which queue emails received by MailerQ are published. Most users set 
@@ -149,7 +149,7 @@ that instructs MailerQ to use a different IP instead.
 ## MailerQ as command line utility
 
 The MailerQ program can be started in two different modes: as a daemon process 
-that runs all the time and that sends out the messages, or as a command line 
+that runs all the time and sends out the messages, or as a command line 
 utility that reads a message from standard input and publishes it to the inbox 
 queue. As a command line utility, MailerQ does not attempt to send out the mail 
 - it only puts the message in the RabbitMQ message queue. You need a seperate 
@@ -260,8 +260,8 @@ sendmail_path = mailerq --envelope my-sender-address@my-domain.com --extract-rec
 
 ## Setting additional properties for better delivery control
 
-In the examples that we have so far given, we only demonstrated the elementary 
-properties "envelope", "recipient" and "mime". But to have better control of delivery, 
+In the examples given, we only have demonstrated the elementary 
+properties "envelope", "recipient", and "mime". But to have better control of delivery, 
 you can set all sort of additional properties too. These are properties that for 
 example specify the number of send attempts, the max delivery time, the IP 
 addresses to use, et cetera. These properties can either be set in the JSON 
@@ -435,7 +435,7 @@ By default, MailerQ makes all connections to remote mail servers from the defaul
 (first) available IP of the host server. If your server has multiple IPs assigned 
 to it, you can instruct MailerQ to use a different local IP for sending out the mail.
 
-To try different IP address for sending out the mail, you can add a list of 
+To try a different IP address for sending out the mail, you can add a list of 
 available IP addresses:
 
 #### MIME header
@@ -479,8 +479,8 @@ This is probably the best thing to do, as most messages are delivered right away
 and there would be more overhead in storing messages in an external message store. 
 However, if an email has to be rescheduled, and is going to be stored in RabbitMQ 
 for a longer period of time, it is better to store the MIME message in an external 
-message store. In the JSON message you will then not need a "mime" property, 
-but a "key" property instead that refers to the key where the message can be found.
+message store. In the JSON message you will not need a "mime" property, 
+but a "key" property instead. This "key" property refers to the key where the message can be found.
 
 #### JSON property
 
