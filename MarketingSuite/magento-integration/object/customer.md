@@ -41,12 +41,12 @@ For more details about customer subscription the `subscriber` property should be
 
 ## Examples
 
-If you want to enlist all [orders](copernica-docs:MarketingSuite/magento-integration/object/order) of a customer with the increment number, grant total, shipping amount and total weight, the following code can be used:
+If you want to enlist all [orders](copernica-docs:MarketingSuite/magento-integration/object/order) of a customer with the increment number, grand total, shipping amount and total weight, the following code can be used:
 
 ```
 {foreach $order in $customer.orders}
 
-#{$order.increment} Shipping costs: {$order.shippingAmount} Grant total: {$order.grantTotal}
+#{$order.increment} Shipping costs: {$order.shippingAmount} Grand total: {$order.grantTotal}
 
 {/foreach}
 ```
@@ -55,10 +55,10 @@ Will output following:
 
 ```
 
-# 123123123001 Shipping costs: EUR 7.99 Grant total: EUR 129.99
-# 123123123002 Shipping costs: EUR 7.99 Grant total: EUR 179.99
-# 123123123003 Shipping costs: EUR 9.99 Grant total: EUR 139.99
-# 123123123004 Shipping costs: EUR 7.99 Grant total: EUR 289.99
-# 123123123005 Shipping costs: EUR 9.99 Grant total: EUR 29.99
+# 123123123001 Shipping costs: EUR 7.99 Grand total: EUR 129.99
+# 123123123002 Shipping costs: EUR 7.99 Grand total: EUR 179.99
+# 123123123003 Shipping costs: EUR 9.99 Grand total: EUR 139.99
+# 123123123004 Shipping costs: EUR 7.99 Grand total: EUR 289.99
+# 123123123005 Shipping costs: EUR 9.99 Grand total: EUR 29.99
 
 ```
