@@ -10,7 +10,7 @@ and other options for MailerQ itself.
 
 Sometimes MailerQ needs to republish mails back into the message queue - for example when a message is greylisted and should be retried later. When this republishing is done a few times for a single delivery, it causes extra network traffic between MailerQ and RabbitMQ. This traffic can be large, especially if emails contain attachments and/or embedded content.
 
-To overcome this, MailerQ can be configured to store the full message bodies in a seperate storage system, and use RabbitMQ only for the email meta data (which is much smaller).
+To overcome this, MailerQ can be configured to store the full message bodies in a separate storage system, and use RabbitMQ only for the email meta data (which is much smaller).
 
 You can use a number of different storage systems for this: Couchbase, MongoDB, Mysql, Sqlite and PostgreSQL. (Be aware that in practice it only makes sense to use Couchbase or MongoDB, because these can handle the required high loads. If you do not have a Couchbase or MongoDB server, you better not set up a storage system and put the message bodies in RabbitMQ, instead of using one of the SQL alternatives).
 
@@ -58,7 +58,7 @@ Let MailerQ normalize line endings to linefeed-newline.
 
 ## Domain limits
 
-MailerQ uses seperate throttle settings for individual domains. The maximum number of simultaneous connections, maximum number of messages per minute and maximum number of new connections per minute can all be set for specific domains. It is thus possible to have different limits for mails sent to GMAIL.COM and for mails to VERYSMALLCOMPANY.COM. All these settings can be configured using MailerQ's online management console.
+MailerQ uses separate throttle settings for individual domains. The maximum number of simultaneous connections, maximum number of messages per minute and maximum number of new connections per minute can all be set for specific domains. It is thus possible to have different limits for mails sent to GMAIL.COM and for mails to VERYSMALLCOMPANY.COM. All these settings can be configured using MailerQ's online management console.
 
 MailerQ always checks if there are domain specific settings stored in the database. If no specific settings can be found in the database, the server will rely on the defaults set in the configuration file. The following config file variables can be used to set these defaults.
 
