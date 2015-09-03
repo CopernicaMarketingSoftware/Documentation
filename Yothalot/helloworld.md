@@ -6,7 +6,7 @@ counts all words in them. The mapper processes create the initial key/value
 pairs for each found word, and the reducers sum up these values to get to the 
 total number of words.
 
-Because Yothalot comes with a simple PHP API, we also show how you can implement 
+Because Yothalot comes with a simple PHP API, we show how you can implement 
 the WordCount map/reduce job in PHP. You simply start by writing your own
 WordCount class that implements the Yothalot\MapReduce interface. This 
 MapReduce interface prescribes that you implement the methods "map()", 
@@ -14,7 +14,7 @@ MapReduce interface prescribes that you implement the methods "map()",
 
 Besides these three methods you also need to implement the "includes()" method
 that return the names of the PHP files that should be loaded before a WordCount
-instance if unserialized.
+instance is unserialized.
 
 
 ````php
@@ -27,7 +27,7 @@ instance if unserialized.
  *  It is therefore possible that the map(), reduce() and write() methods will 
  *  all be called on different nodes in the cluster. It is the responsibility of
  *  the Yothalot framework to make calls to your object at the right time. You 
- *  are not supposed to make calls to methods in this class yourself.
+ *  are not supposed to make calls to methods of this class yourself.
  */
 class WordCount implements Yothalot\MapReduce
 {
@@ -89,13 +89,13 @@ class WordCount implements Yothalot\MapReduce
     /**
      *  When the mapper algorithm emits identical keys, the Yothalot framework
      *  will start making calls to the reduce() method to reduce the values 
-     *  linked to these keys into new reduced values. This reduced value should 
-     *  then be passed to the writer.
+     *  linked to these keys. This reduced value should be passed to the writer.
      *
      *  It is very well possible that the reduce() method gets called more than
-     *  once for the same key (for example if so many keys are found that 
-     *  multiple reducers are started). The value that you emit to the writer 
-     *  does therefore not always have to be the value that is finally written.
+     *  once for the same key (for example if so many keys were found that 
+     *  multiple reducers were started). The value that you emit might therefore
+     *  be an intermediate value that is going to be reduced for a second or
+     *  third time because it is finally written.
      *
      *  In this specific WordCount implementation, the key is a word, and
      *  values is a list of numbers telling how often the word was found.
@@ -118,8 +118,8 @@ class WordCount implements Yothalot\MapReduce
     }
     
     /**
-     *  The final step in the reducer process calls the write() method that gets
-     *  called once for every found key, and for each reduced value.
+     *  The final step in the reducer process calls the write() method once for 
+     *  every found key, and for each reduced value.
      *
      *  In this specific WordCount example, the key is a word, and the
      *  value the total number of occurances
