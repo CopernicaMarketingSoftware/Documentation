@@ -85,13 +85,13 @@ a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they hav
 be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
 will have highly available queues.
 
-[Read more about highly available queues](https://www.rabbitmq.com/ha.html)
+[Read more about highly available queues](https://www.rabbitmq.com/ha.html).
 
 The `rabbitmq-user` and `rabbitmq-password` variables hold the username and 
 password for your RabbitMQ server, as set in your RabbitMQ configuration. The default 
 username is guest/guest, however this only works when connecting to localhost. If you 
 run RabbitMQ on a separate server, you will need to set your own username and password,
-or configure the RabbitMQ server to allow guest/guest logins from remote hosts (see above).
+or configure the RabbitMQ server to allow guest/guest logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html "RabbitMQ's Access Control Configuration")).
 
 If you have created a specific RabbitMQ vhost environment you can add the specific vhost
 to the `rabbitmq-vhost` variable. The default vhost is "/".
