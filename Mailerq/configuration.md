@@ -126,7 +126,7 @@ When the max memory limit is reached, MailerQ stops loading messages from the me
 
 ## SMTP server
 
-MailerQ can open a SMTP port to accept incoming emails. All mails that are received on the SMTP port will automatically be published on the [inbox queue](copernica-docs:Mailerq/configuration/#rabbitmq-inbox "inbox queue"). If this inbox queue is set to the same value as the outbox queue (which most users do), MailerQ automatically forwards all received messages.
+MailerQ can open a SMTP port to accept incoming emails (see [Incoming messages](copernica-docs:Mailerq/incoming-messages "Incoming messages") for more detailed information on this topic). All mails that are received on the SMTP port will automatically be published on the [inbox queue](copernica-docs:Mailerq/configuration/#rabbitmq-inbox "inbox queue"). If this inbox queue is set to the same value as the outbox queue (which most users do), MailerQ automatically forwards all received messages.
 
 The recommended SMTP port is 25\. To open this port however, MailerQ needs to be started with root privileges. After the port is opened, MailerQ changes its identity to a different (and safer) user.
 
