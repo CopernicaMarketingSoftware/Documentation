@@ -46,16 +46,6 @@ Maximum number of retry attempts. If delivery doesn't succeed in this number of 
 ###max-deliver-time: `<delay in seconds from first attempt>`
 Maximum time in which retry attempts are made. If delivery doesn't succeed during this time, it is marked as failed and will be no further attempts.
 
-## Normalize line endings
-
-All lines in an email MIME message must be terminated with linefeed-newline (\r\n). If you use other line endings (for example only newlines, without the linefeeds) the mail might not be delivered and DKIM signing could fail.
-
-Normally, MailerQ trusts you to supply valid MIME messages, with valid line endings. However, if you want MailerQ to repair your messages if the line endings are incorrect, you can enable the following option.
-
-###normalize-mime: `<0|1>`
-Let MailerQ normalize line endings to linefeed-newline.
-
-
 ## Domain limits
 
 MailerQ uses separate throttle settings for individual domains. The maximum number of simultaneous connections, maximum number of messages per minute and maximum number of new connections per minute can all be set for specific domains. It is thus possible to have different limits for mails sent to GMAIL.COM and for mails to VERYSMALLCOMPANY.COM. All these settings can be configured using MailerQ's online management console.
