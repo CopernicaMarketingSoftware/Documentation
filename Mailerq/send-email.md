@@ -584,7 +584,7 @@ is done using SMART-TPL.
 Normally, MailerQ delivers all mail to the actual recipient. However, in some cases 
 it is desired that another server actually delivers the emails, whereas MailerQ only 
 forwards them to that other server. For these cases, the smarthost settings are available. 
-These settings can be set for all messages in the configuration file. If all messages are 
+These settings can be set for all messages in the configuration file (see [Smarhost & debugging](copernica-docs:Mailerq/smarthost "Smarthost & debugging") for extra details). If all messages are 
 to be routed via a smarthost, this is the best option.
 
 However, for fine-grained control over smarthosts, these settings can also be added 
