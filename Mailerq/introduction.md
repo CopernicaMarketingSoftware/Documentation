@@ -1,38 +1,38 @@
 # Getting started with MailerQ
 
-MailerQ relies on [RabbitMQ](https://www.rabbitmq.com) for its message queues. 
-RabbitMQ is a server application that deals with message queue'ing. Before you're 
-going to install and configure MailerQ, you must therefore first make sure you 
-have access to a working RabbitMQ server. If you have a working and up-to-date 
-RabbitMQ server, you can proceed with setting up MailerQ. Otherwise, check our 
-[using RabbitMQ article](copernica-docs:Mailerq/rabbitmq).
+MailerQ is a Mail Transfer Agent (MTA) that relies on [RabbitMQ](https:
+//www.rabbitmq.com) for its message queues. Therfore, before you install 
+and configure MailerQ, you need to have access to a working RabbitMQ server. 
+If you have a working and up-to-date RabbitMQ server, you can proceed 
+with Installing MailerQ, otherwise, check our [using RabbitMQ article](
+copernica-docs:Mailerq/rabbitmq).
 
-**MailerQ requires RabbitMQ version 3.3.1+**
+**Note: MailerQ requires RabbitMQ version 3.3.1+**
 
 ## Installing MailerQ
 
-After you've installed your RabbitMQ server, you can proceed with setting up MailerQ. 
-Installing the MailerQ Mail Transfer Agent (MTA) on a Linux server is easy. We have 
-[downloads](/product/download "Download MailerQ") for Debian based environments
-(Debian, Ubuntu, etc) and for Red Hat based environments (Red Hat, Fedora, CentOS, etc).
+After you have installed your RabbitMQ server, you can proceed with setting 
+up MailerQ. Installing the MailerQ Mail Transfer Agent (MTA) on a Linux 
+server is easy. We have [downloads](/product/download "Download MailerQ")
+for Debian based (Debian, Ubuntu, etc) and Red Hat based environments 
+(Red Hat, Fedora, CentOS, etc).
 
 After you have [downloaded](/product/download "Download MailerQ") the appropriate 
 MailerQ .deb or .rpm file, you can install it on your system. This can probably 
 be achieved by double-clicking on it if you have a desktop computer, or with 
 one of the following command line instructions:
 
-## Red Hat based environments:
+### Red Hat based environments:
 
 ```bash
 $ sudo rpm -i /path/to/mailerq-version.rpm
 ```
 
-## Debian based environments:
+### Debian based environments:
 
 ```bash
 $ sudo dpkg -i path/to/mailerq-version.deb
 ```
-
 
 Now MailerQ is installed on your system. The MTA can be started by entering the
 "mailerq" command on the command line. But before you do this, you probably
@@ -40,56 +40,66 @@ want to make some changes to the configuration file.
 
 ## Configuration
 
-The [MailerQ configuration file](copernica-docs:Mailerq/configuration "MailerQ configuration")
-can be found in the "/etc/mailerq" directory and is named "config.txt". It holds
-many options that you should set before you can start mailerq. The most important
-options are the address and login credentials of your RabbitMQ message broker
-and your license key. We have documented [all supported configuration options](copernica-docs:Mailerq/configuration "MailerQ configuration").
-A number of options require special attention.
+MailerQ is configured via one central configuration file "config.txt" that can 
+be found in the "/etc/mailerq" directory. It holds many options that you should
+set before you can start MailerQ. The most important options are the address
+and login credentials of your RabbitMQ message broker and your license key
+location. The configuration of these options is discussed below. A complete 
+list of all options on how MailerQ interacts with RabbitMQ can be found 
+[here](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ").
+A list of other configurable options is given [here](copernica-docs:Mailerq/configuration 
+"MailerQ configuration").
 
-### RabbitMQ configuration
+### Configuring MailerQ to connect with RabbitMQ
 
-The most important settings in the config file of course deal with RabbitMQ.
-The hostname of the RabbitMQ server, and the names of the exchanges and queues
-should all be specified in the config file. MailerQ helps you in setting up the
-RabbitMQ configuration: if you include a queue or exchange in the config file
-that does not yet exist, it will automatically be created by MailerQ.
+MailerQ reads the location and authentication information to connect with RabbitMQ
+from its config file. Make sure you include the following variables
+in the MailerQ configuration file (/etc/mailerq/config.txt):
 
-Keep in mind that all results are also published to RabbitMQ. If you run MailerQ
-in production, this could result in queues that are built up rappidly. To prevent
-that your RabbitMQ server runs out of resources, you either have to ensure that
-you periodically clean these queues, or you should configure MailerQ not to publish results.
+```
+rabbitmq-host:          <Hostname(s) of your RabbitMQ server(s)>
+rabbitmq-user:          <Your RabbitMQ username>
+rabbitmq-password:      <Your RabbitMQ password>
+rabbitmq-vhost:         <The RabbitMQ environment MailerQ may use>
+```
 
-### Database configuration
+The `rabbitmq-host` variable holds the hostname of your RabbitMQ server. If you have 
+a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they have to 
+be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
+will have highly available queues.
 
-Besides the _essential_ settings to connect to RabbitMQ, you probably also want to
-connect to a SQL database. Such a database is used by MailerQ to store the configuration
-of email throttling settings, DKIM keys, flood patterns and any other delivery settings.
-By default, MailerQ sets up a SQlite database for these settings. However, MySQL and
-PostgreSQL are faster and better suited for high performance servers.
+[Read more about highly available queues](https://www.rabbitmq.com/ha.html)
 
-If you are happy to use the standard SQLite database you do not need to change any
-of the settings in the database configuration file. If you want MailerQ to store the
-settings in a different database , you will have to specify the database address.
-You can find more information on how to do so in the database configuration settings.
+The `rabbitmq-user` and `rabbitmq-password` variables hold the username and 
+password of your RabbitMQ server, as set in your RabbitMQ configuration. The default 
+username is guest/guest, however this only works when connecting to localhost. If you 
+run RabbitMQ on a separate server, you will need to set your own username and password,
+or configure the RabbitMQ server to allow guest/guest logins from remote hosts (see
+[RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html
+"RabbitMQ's Access Control Configuration")).
 
-MailerQ automatically creates or alters missing or incomplete tables. If you use a
-MySQL or PostgreSQL database, you should ensure that the specified database is
-already created, and that MailerQ has enough privileges to create and modify tables.
-For a SQLite database you only have to make sure that the database file is writable.
+If you have created a specific RabbitMQ vhost environment you can add the specific vhost
+to the `rabbitmq-vhost` variable. The default vhost is "/".
 
-You must also make sure that you've installed the necessary database libraries on
-your system so that MailerQ can actually _connect_ to the database. If you use the
-default SQLite database, you must ensure that the sqlite3 library is installed on
-your server. For MySQL you need the mysqlclient or mariadbclient library, and for
-PostgreSql you need the pq library.
+These basic settings enable MailerQ to connect to RabbitMQ. A complete list of all
+configurable options on how MailerQ interacts with RabbitMQ can be found
+[here](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ")
 
 ### License file
 
-The configuration file also holds a reference to a license file. After creating a
-MailerQ account, you can [download a license from this website](/product/license).
+After creating a MailerQ account, you can [download a license from this website](/product/license). MailerQ
+should be aware of the location of this license. This location can be set in the configuration file via:
+```
+license:		<Path to your license>
+```
+On a clean installation the path to the license is set to the same directory as config.txt (i.e. /etc/mailerq/).
 If you have questions about your license, feel free to send an email to
 [info@mailerq.com](mailto:info@mailerq.com).
+
+With these configuration steps you are ready to start. However, we do recommend to read the
+[page](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ") on how 
+MailerQ interacts with RabbitMQ and the [page](copernica-docs:Mailerq/configuration 
+"MailerQ configuration") with all other configuration options, and adjust your configuration accordingly.
 
 ## Let's get started!
 
@@ -103,9 +113,10 @@ MailerQ comes with a web based
 [management console](copernica-docs:Mailerq/management-console "An MTA with a management console")
 that you can use to monitor exactly what is happening. This MTA console can be opened
 from your browser. The port number and password can be set in
-the [config file](copernica-docs:Mailerq/configuration "MailerQ configuration"). 
+the config file (for more information see [Management Console](copernica-docs:Mailerq/management-console "Management console"). 
 The default location is http://your-server-name:8485.
 
 To start sending mails with MailerQ, you need
 [to publish an e-mail to the appropriate message queue](copernica-docs:Mailerq/send-email "Send emails with MailerQ")
 in RabbitMQ or use one of our [examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples").
+
