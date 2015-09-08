@@ -8,10 +8,9 @@ This improves your deliverability, and allows you to track all sort of statistic
 
 ![](copernica-docs:SMTPeter/Images/how_does_smtpeter_work_diagram.png "How SMTPeter Works")
 
-You can pass all types of email through SMTPeter: mass mailings, 
-individual transactional emails, and even the messages that you send with your local
-desktop based mail client (like Outlook or Thunderbird). We take care of the 
-technical details, and you can focus on creating and optimizing your campaigns. 
+SMTPeter can be used for different kind of emails: mass emailings, transactional emails 
+and even the messages that you send with your local (native) mail client (like Outlook or Thunderbird). 
+We take care of the technical aspects so you can focus on creating and optimizing your campaigns.
 
 
 ## How to integrate SMTPeter
@@ -29,11 +28,11 @@ pass all sorts of options with each message to improve deliverability.
 
 ## What does SMTPeter do?
 
-There are many reasons why you'd want to use SMTPeter. For example, mail servers such 
+There are many reasons why you would want to use SMTPeter. For example, mail services such 
 as Yahoo, Gmail and Hotmail all have different policies for accepting email. They all
-accept emails at different rates, and use different limits for the number of acceptable
-connections or messages. SMTPeter knows about these limits, and optimizes and improves 
-your email deliverability. 
+accept emails at different rates and use different limits for the number of acceptable
+connections or messages. SMTPeter knows about these limits and throttles automatically your 
+messages for best deliverability.
 
 But deliverability is not the only reason to use SMTPeter. SMTPeter also has many other cool 
 features to further improve your email messages. Let's name a few.
@@ -54,14 +53,25 @@ your email message will still be displayed correctly.
 
 ### Bounce tracking
 
-When you send out email, you normally also have to take care of failed deliveres 
-and bounce messages that are sent back to the email's envelope address. However, 
-if you do not want to set up an infrastructure to take care of bounces yourself, 
-you can let SMTPeter do this for you. SMTPeter can process all bounces and present 
-the results in a clear overview. It can also automatically send them to you using 
-SMTP or webhooks. You can also use the API to download bounces at periodic intervals. 
+When you send an email, you normally have to take care of failed deliveries 
+that are sent back to the email's envelope address. However, if you do not want to 
+set up an infrastructure to take care of bounces yourself, you can let SMTPeter 
+do this for you. SMTPeter can process all bounces and present the results in a 
+clear overview. These bounce reports can optionally be forwarded to you by
+email or using a POST request to a preconfigured callback url.
+
 
 [Read more about bounce tracking](copernica-docs:SMTPeter/features/bounce-tracking)
+
+### Click Tracking
+
+SMTPeter is able to track when a recipient clicks on a link within your email.
+Link tracking shows exactly which email address corresponds with a click, 
+which gives you detailed recipient based statistics.
+
+[Read more about click tracking](copernica-docs:SMTPeter/features/click-tracking)
+
+
 <!--
 
 ### Open Tracking
@@ -72,17 +82,5 @@ servers and show this in your statistics overview or can be retreived using the 
 
 The tracking pixels knows exactly which email address corresponds with the registered
 open, which gives you detailed recipient based statistics. 
-
-
-### Click Tracking
-
-Click tracking means that SMTPeter convert's all your links to point towards 
-SMTPeter's servers, where we forward them to the original link's location. This does not 
-change anything for your links, but makes it so our servers receive a notification 
-whenever one of your recipients clicks on a link in your email. All clicks are 
-show in your statistics overview or can be retreived using the REST API. 
-
-Link tracking shows exactly which email address corresponds with a click, 
-which gives you detailed recipient based statistics.
 
 -->
