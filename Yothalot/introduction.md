@@ -1,11 +1,11 @@
 # Introduction
 
 Yothalot is an application for running parallel map/reduce algorithms on big 
-data  clusters. If you have a lot of data and want to process it using either
+data clusters. If you have a lot of data and want to process it using either
 native C++ code or simple PHP scripts, Yothalot is the tool for you.
 
-Yothalot was designed with simplicity in mind: it uses the GlusterFS distributed
-file system for storing distributed data, and you can create a Yothalot cluster
+Yothalot was designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
+distributed file system for storing distributed data, and you can create a Yothalot cluster
 by simply starting up the Yothalot process on each of these servers. The map/reduce 
 jobs that you assign to this cluster are automatically split up in smaller tasks
 and are sent to cluster nodes that have local access to the files being
@@ -19,7 +19,8 @@ you can use for writing the jobs (although there is a C++ API too).
 
 ## Clustered file system
 
-Yothalot is based on GlusterFS, which is a distributed network file system, that
+Yothalot is based on [GlusterFS](http://www.gluster.org/), which is a
+distributed network file system, that
 behaves just like a normal (POSIX) file system - but that happens to be 
 distributed over many different servers. Because GlusterFS acts like a regular 
 file system, you can use traditional tools and functions to read, write and 
@@ -35,7 +36,7 @@ files does not consume network bandwidth.
 
 ## Fail safe message queues
 
-Yothalot works with RabbitMQ for inter process message queuing. All jobs that 
+Yothalot works with [RabbitMQ](https://www.rabbitmq.com/) for inter process message queuing. All jobs that 
 you assign to Yothalot, and the communication between jobs use RabbitMQ message
 queues.
 
