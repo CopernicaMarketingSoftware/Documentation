@@ -190,6 +190,10 @@ Maximum size of the log file, before MailerQ rotates the log files and continues
 ###send-log-maxage: `<seconds>`
 Maximum age of a log file. MailerQ rotates the log files when the current log file gets older than the specified number of seconds. If not set, log files are not rotated based on age.
 
+###send-log-compression `<"gzip"|"">`
+
+This option will compress the already existing send log directory and add new log entries to this compressed folder. Currently only gzip compression is supported.
+
 ###download-log-directory: `<directory>`
 Directory where logfiles with downloads are stored. The directory be writable for MailerQ.
 
@@ -204,6 +208,10 @@ Maximum size of the log file, before MailerQ rotates the log files and continues
 
 ###download-log-maxage: `<seconds>`
 Maximum age of a log file. MailerQ rotates the log files when the current log file gets older than the specified number of seconds. If not set, log files are not rotated based on age.
+
+###download-log-compression `<"gzip"|"">`
+
+This option will compress the already existing download log directory and add new log entries to this compressed folder. Currently only gzip compression is supported.
 
 ## License
 
