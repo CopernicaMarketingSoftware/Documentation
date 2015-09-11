@@ -1,10 +1,10 @@
 #Specifying function parameters
 
 PHP has a mechanism to enforce the types of function parameters, and to accept
-parameters either by reference or by value. In the [earlier examples](functions), we had not yet used that mechanism, and we left it to 
-the function implementations to inspect the 'Php::Parameters' object (which
-is a std::vector of Php::Value objects), and to check whether the number of 
-parameters is correct, and of the right type.
+parameters either by reference or by value. In the [earlier examples](functions), 
+we had not yet used that mechanism, and we left it to the function implementations 
+to inspect the 'Php::Parameters' object (which is a std::vector of Php::Value 
+objects), and to check whether the number of parameters is correct, and of the right type.
 
 However, the 'Extension::add()' method takes a third optional parameter that
 you can use to specify the number of parameters that are supported, if
@@ -12,7 +12,7 @@ the parameters are passed by reference or by value, and what the type of
 the parameters is:
 
 ```cpp
-#include <phpcpp.h?
+#include <phpcpp.h>
 
 void example(Php::Parameters &params)
 {
@@ -30,6 +30,7 @@ extern "C" {
     }
 }
 ```
+
 Above you see that we pass in additional information when we register the
 "example" function. We tell the PHP engine that our function accepts three parameters:
 the first parameter must be numeric, while the other ones are 
@@ -39,7 +40,8 @@ the moment it gets called, you can be sure that the Php::Parameters object
 will be filled with three members, and that two of them are objects of the 
 appropriate type.
 
-##Can you really enforce scalar parameters?
+## Can you really enforce scalar parameters?
+
 You may be surprised to see that we specified the first parameter to be of
 type Numeric. After all, in PHP there is no offical way to enforce the type of a 
 scalar parameter. When you write a function in PHP, it is possible to enforce 
@@ -65,9 +67,8 @@ function example3(int $param)
 {
     ...
 }
-
-?>
 ```
+
 The same is true for native functions. Although the core PHP engine and PHP-CPP
 library both offer the possibility to specify that your function accepts parameters of type 
 "Php::Type::Numeric" or of type "Php::Type::String", this setting is further 
@@ -98,8 +99,8 @@ example(12, new DateTime(), new DateTime());
 
 // invalid, "x" and "z" are no objects
 example("x", "y", "z");
-?>
 ```
+
 The PHP engine will trigger an error if your function is called with wrong
 parameters, and will not make the actual call to the native function.
 
@@ -177,13 +178,12 @@ at the following code in PHP:
 <?php
 function example1(DateTime $time) { ... }
 function example1(DateTime $time = null) { Php::Value time = params[0]; ... }
-?php
 ```
 
 This would be identical to the following code in C++:
 
 ```cpp
-#include &lt;phpcpp.h&gt;
+#include <phpcpp.h>;
 
 void example1(Php::Parameters &amp;params) { Php::Value time = params[0]; ... }
 void example2(Php::Parameters &amp;params) { Php::Value time = params[0]; ... }
