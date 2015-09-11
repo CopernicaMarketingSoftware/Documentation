@@ -30,7 +30,7 @@ exchange pleasantries, convert the connection into a secure connection, and hand
 the full MIME message. The following output is a typical handshake that may occur.
 
 ```smtp
-220 smtpeter1.copernica.nl MailerQ ESMTP
+220 mail.smtpeter.com MailerQ ESMTP
 EHLO mydomain.com
 250-STARTTLS
 250-PIPELINING
@@ -73,7 +73,7 @@ Using port 465 the SMTP handshake looks like this:
 
 
 ```smtp
-220 smtpeter1.copernica.nl MailerQ ESMTP
+220 mail.smtpeter.com MailerQ ESMTP
 EHLO mydomain.com
 250-PIPELINING
 250-8BITMIME
