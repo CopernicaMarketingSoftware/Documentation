@@ -67,6 +67,7 @@ the Yothalot formated files are splittable.
 ```php
 /**
  * Retrieve the size of the output file
+ */
 echo($output->size());
 ```
 
