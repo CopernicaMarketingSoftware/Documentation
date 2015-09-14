@@ -8,40 +8,57 @@ Internally the Yothalot framework uses records to store mapped and/or reduced in
 
 Moreover, you can iterate of the data stored in a record.
 
-**identifier()**
-returns the identifier of the record. Its usage is:
+##Member identifier()
+The member `identifier()` returns the identifier of the record.
 ```php
-identifier();
+/**
+ * retrieve the identifier of an record
+ */
+$id = $record->identifier();
 ```
 
-**size()**
-returns the size of the record. Its usage is:
+##Member size()
+To obtain the size of a record you can use `size()`. 
 ```php
-size()
+/**
+ * Obtain the size of a record
+ */
+$recordSize = $record->size();
 ```
 
-**count()**
-returns the number of fields stored in the record. Its usage is:
+##Member count()
+In order the get the number of fields in a record you can use `count()` 
 ```php
-count()
+/**
+ * Get the number of fields in the record
+ */
+$numberOfFields = $record->count();
 ```
-or
+You can also use:
 ```php
-count($record);
+/**
+ * Get the number of fields by calling count as if it is a function
+ */
+$numberOfFields = count($record);
 ```
 if you want to use it like a free function.
 
+##Iterating over fields
 Iterating over the fields stored in the record works as follows:
 ```php
+// Visit each field in a record...
 foreach($record as $field => $value)
 {
-    echo("$field: $value\n");
+   // ... and echo its value.
+   echo("$field: $value\n");
 }
 ```
-You can also acces the fields by index:
+You can also access the fields by index:
 ```php
+// Visit each field in the record...
 for ($i = 0; $i < count($record); $i++)
 {
-    echo("Index $i: ".$record[$i]."\n");
+   // ... and echo its value
+   echo("Index $i: ".$record[$i]."\n");
 }
 ```
