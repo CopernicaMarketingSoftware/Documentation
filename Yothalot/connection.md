@@ -78,7 +78,7 @@ The Yothalot::Connection::create() method is used to create a new
 mapreduce job. It gets one parameter: an instance of your own object
 in which your mapreduce algorithm is implemented.
 
-For more information on how to create your own mapreduce objects, see [usage](copernica-docs:Yothalot/usage "Usage").
+For more information on how to create your own mapreduce objects, see our [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") exampel.
 
 ```php
 /**

@@ -125,4 +125,4 @@ The default values for "host", "user", "password", and "vhost" are, "localhost",
 "guest", "guest", and "/" respectively. For more information and some advanced
 setting we refer to the [Connectio](copernica-docs:Yothalot/connection "Connection") documentation.
 
-For more information on how to use Yothalot see [Usage](copernica-docs:Yothalot/usage "Usage") or an [example](copernica-docs:Yothalot/hellowordl). 
+For more information on how to use Yothalot see our [Hello world!](copernica-docs:Yothalot/hellowordl) example. 

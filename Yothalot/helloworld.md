@@ -6,7 +6,8 @@ counts all words in them. The mapper processes create the initial key/value
 pairs for each found word, and the reducers sum up these values to get to the 
 total number of words.
 
-Because Yothalot comes with a simple PHP API, we show how you can implement 
+Because Yothalot comes with a simple PHP API (adding other APIs is work in 
+progress), we show how you can implement 
 the WordCount map/reduce job in PHP. You simply start by writing your own
 WordCount class that implements the Yothalot\MapReduce interface. This 
 MapReduce interface prescribes that you implement the methods `map()`, 
@@ -160,7 +161,7 @@ require_once('WordCount.php');
 $wordcount = new WordCount();
 
 /**
- *  We want to send this WordCount instance to the Yothalot master. To do this,
+ *  We want to send this WordCount instance to the Yothalot connection. To do this,
  *  we need an instance of the connection to Yothalot.
  *
  *  (Under the hood, you do not connect with the Yothalot master process, but to
@@ -169,16 +170,23 @@ $wordcount = new WordCount();
  *
  *  @var Yothalot\Connect
  */
-$master = new Yothalot\Connection("host","user","password","vhost","exchange","routingkey");
+$connection = new Yothalot\Connection(array(
+   "host"         => "localhost",
+   "user"         => "guest",
+   "password"     => "guest",
+   "vhost"        => "/",
+   "exchange"     => "",
+   "routingkey"   => "mapreduce"
+)); 
 /**
  *  Now that we have access to the master, we can tell the master to create a 
  *  new MapReduce job, using our WordCount implementation. The return value
  *  is a Yothalot\Job object, that has many methods to feed data to the job,
- *  and to finetune the job.
+ *  and to fine tune the job.
  *
  *  @var Yothalot\Job
  */
-$job = $master->create($wordcount);
+$job = $connection->create($wordcount);
 
 /**
  *  Now we can feed the job with data that has to be mapped. In this WordCount
@@ -193,9 +201,7 @@ $job->file("path/to/file3.txt");
 /**
  *  Start the job. After starting the job, no extra data can be added to job anymore.
  */
-$jog->start()
- 
-
+$job->start()
 
 /**
  *  Wait for the job to be ready (this could take some time because the Yothalot
@@ -207,7 +213,7 @@ $job->wait();
 /**
  *  The WordCount class wrote its output to a file on the distributed file
  *  system. To find out what the absolute path name of this file is on this 
- *  machine, we  make use of the Yothalot\Path class to turn the relative name
+ *  machine, we make use of the Yothalot\Path class to turn the relative name
  *  into an absolute path (GlusterFS must be mounted on this machine)
  *
  *  @var Yothalot\Path
