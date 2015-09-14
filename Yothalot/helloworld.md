@@ -9,12 +9,12 @@ total number of words.
 Because Yothalot comes with a simple PHP API, we show how you can implement 
 the WordCount map/reduce job in PHP. You simply start by writing your own
 WordCount class that implements the Yothalot\MapReduce interface. This 
-MapReduce interface prescribes that you implement the methods "map()", 
-"reduce()" and "write()": the three common steps of the map-reduce algorithm. 
+MapReduce interface prescribes that you implement the methods `map()`, 
+`reduce()`, and `write()`: the three common steps of the map-reduce algorithm. 
 
-Besides these three methods you also need to implement the "includes()" method
+Besides these three methods you also need to implement the `includes()` method
 that return the names of the PHP files that should be loaded before a WordCount
-instance is unserialized.
+instance is serialized.
 
 
 ````php
@@ -106,7 +106,7 @@ class WordCount implements Yothalot\MapReduce
      */
     function reduce($key, Yothalot\Values $values, Yothalot\Writer $writer)
     {
-        // total number of occurances for the word
+        // total number of occurrences for the word
         $total = 0;
         
         // iterate over the found values (the Yothalot\Values class is a 
@@ -122,7 +122,7 @@ class WordCount implements Yothalot\MapReduce
      *  every found key, and for each reduced value.
      *
      *  In this specific WordCount example, the key is a word, and the
-     *  value the total number of occurances
+     *  value the total number of occurrences
      *
      *  @param  mixed       The key for which the result comes in
      *  @param  mixed       Fully reduced value
@@ -139,10 +139,12 @@ class WordCount implements Yothalot\MapReduce
 ?>
 ````
 
-To send this job to the Yothalot cluster, you can write a second script that 
-creates a "WordCount" instance, and sends it to the Yothalot master node.
-This master node will send your object to one or more nodes in cluster where
-the actual algorithm will run.
+To send this [job](copernica-docs:Yothalot/job "Job") to the Yothalot cluster,
+you can write a second script that creates a "WordCount" instance, creates a
+[connection](copernica-docs:Yothalot/connection "Connection") to Yothalot, sends
+this instance to the Yothalot master node, and specify on which data the
+[job](copernica-docs:Yothalot/job "Job") should run. This master node will send
+your object to one or more nodes in cluster where the actual algorithm will run.
 
 ````php
 <?php
@@ -159,16 +161,15 @@ $wordcount = new WordCount();
 
 /**
  *  We want to send this WordCount instance to the Yothalot master. To do this,
- *  we need an instance of this master object.
+ *  we need an instance of the connection to Yothalot.
  *
  *  (Under the hood, you do not connect with the Yothalot master process, but to
  *  a RabbitMQ message queue, the login details are therefore the RabbitMQ 
  *  details)
  *
- *  @var Yothalot\Master
+ *  @var Yothalot\Connect
  */
-$master = new Yothalot\Master("rabbit1.yothalot.com","guest","guest","/");
-
+$master = new Yothalot\Connection("host","user","password","vhost","exchange","routingkey");
 /**
  *  Now that we have access to the master, we can tell the master to create a 
  *  new MapReduce job, using our WordCount implementation. The return value
@@ -185,9 +186,16 @@ $job = $master->create($wordcount);
  *  call to this add() method, corresponds to a call to the WordCount::map()
  *  method. These mapper processes can run in parallel.
  */
-$job->add("path/to/file1.txt");
-$job->add("path/to/file2.txt");
-$job->add("path/to/file3.txt");
+$job->file("path/to/file1.txt");
+$job->file("path/to/file2.txt");
+$job->file("path/to/file3.txt");
+
+/**
+ *  Start the job. After starting the job, no extra data can be added to job anymore.
+ */
+$jog->start()
+ 
+
 
 /**
  *  Wait for the job to be ready (this could take some time because the Yothalot
@@ -212,4 +220,10 @@ $path = new Yothalot\Path("relative/path/in/gluster/results.txt");
 echo(file_get_contents($path->absolute()));
 ?>
 ````
+
+Maybe you have noticed that we have used 
+[Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") to handle 
+the path name to the output file. Since you work with files on a cluster using 
+relative and absolute paths can be a bit cumbersome. 
+[Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") is a solution for this.
 

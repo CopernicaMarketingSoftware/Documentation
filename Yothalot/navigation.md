@@ -3,6 +3,7 @@
 * [Usage](copernica-docs:Yothalot/usage "Usage")
 * [Connection](copernica-docs:Yothalot/connection "Connection")
 * [Job](copernica-docs:Yothalot/job "Job")
+* [Internal Files](copernica-docs:Yothalot/internalfiles "Internal File Format")
 * [Input](copernica-docs:Yothalot/input "Input")
 * [Output](copernica-docs:Yothalot/output "Output")
 * [Record](copernica-docs:Yothalot/record "Record")
