@@ -15,26 +15,61 @@ are available:
 
 ## Constructor
 
-The constructor takes six parameters, holding the address and login data
-of the RabbitMQ server, as well as the name of the exchange and routing
-key to be used for publishing the job.
+The constructor takes one parameter, an associative array, holding the
+address and login data of the RabbitMQ server, as well as the name of
+the exchange and routing key to be used for publishing the job.
 
 ```php
 /**
  *  Create a connection to the Yothalot cluster
  *  @var Yothalot\Connection
  */
-$connection = new Yothalot\Connection("host","user","password","vhost","exchange","routingkey");
+$connection = new Yothalot\Connection(array(
+   "host"         => "localhost",
+   "user"         => "guest",
+   "password"     => "guest",
+   "vhost"        => "/",
+   "exchange"     => "",
+   "routingkey"   => "mapreduce"
+)); 
 ```
-Where `"host"` is the hostname of RabbitMQ, `"user"` is the username of 
-RabbitMQ, `"Password"` is the password of RabbitMQ, `"vhost"` is the 
-virtual host of RabbitMQ, `"routingkey"` is the routing key.
+Where `"host"` holds the hostname of RabbitMQ, `"user"` holds the username of 
+RabbitMQ, `"Password"` holds the password of RabbitMQ, `"vhost"` holds the 
+virtual host of RabbitMQ, `"routingkey"` holds the routing key. All keys have a
+default value. The default values are "localhost", "guest", "guest", "/", """",
+and "mapreduce" respecively.
 
-In most Yothalot environments, the queue to which mapreduce jobs are published
-is called "mapreduce". To submit jobs to this queue, you can use an empty
-exchange name, and "mapreduce" as the routing key. By doing this, you
-ensure that the jobs published on the connections do end up in this queue.
- 
+If you have installed RabbitMQ locally and have used the default configuration settings, the
+default values of the associative array should lead to a propper connection to
+RabbitMQ. If you run RabbitMQ elsewere you should set the "host" key to the proper
+location. If you have changed the user name of password of RabbitMQ, you should
+change the "user" key and "password" key accordingly. If you have created a
+specific RabbitMQ vhost environment you can add the specific vhost to the
+rabbitmq-vhost variable by setting the "vhost" key.
+
+Finally there are the keys `"exchange"` and `"routingkey"` values that you can set. These are advanced
+settings and in most Yothalot environments the default values will suffice. In order to
+understand what effect they have and when you need to change them, you need to have some
+information on how RabbitMQ internally works. RabbitMQ allows you to publish and consume
+messages to and from a queue. However, you do not publish directly into a queue. You publish into an
+exchange and the exchange figures out to which queues the message has to be published. The name
+of the exchange is set with the "exchange" key in the associative array. It is also possible
+to provide the exchange some extra information, known as routing key, so it knows to which
+queues it has to publish its incomming messages. RabbitMQ has a default exchange with an
+empty name (i.e. "") the routing key of this exchange is seen as
+the name of the queue to which the message has to be published. Since the default queue
+that Yothalot uses is named "mapreduce" you can publish to this queue by publishing to the
+exchange "" and use routing key "mapreduce".
+As said above, you do not have to change these settings in normal circumstances, but in
+some cases you may want to. If you use RabbitMQ for other software as well and this software
+happens to use a queue that is named "mapreduce", you may want to change the name in
+Yothalot, so there are no conflicts. You can change the name in Yothalot in the config file.
+If you change the name of the queue overthere, you also have to change the name of the
+routingkey (note that it is probably better to use a different vhost if you run into this 
+problem). Another usecase is that you want to publish to multiple queues for debugging
+purposes. You can do this by setting up an exchange that publishes to the mapreduce queue as
+well as to the queue that you use for debugging. For more information on how to set up
+exchanges in RabbitMQ we refer to their [tutorial](https://www.rabbitmq.com/tutorials/tutorial-four-php.html).
 
 ## Method create()
 
@@ -42,7 +77,7 @@ The Yothalot::Connection::create() method is used to create a new
 mapreduce job. It gets one parameter: an instance of your own object
 in which your mapreduce algorithm is implemented.
 
-For more information on how to create your own mapreduce objects, see ????
+For more information on how to create your own mapreduce objects, see [usage](copernica-docs:Yothalot/usage "Usage").
 
 ```php
 /**
@@ -52,13 +87,11 @@ For more information on how to create your own mapreduce objects, see ????
  */
 $job = $connection->create(new MyMapReduceAlgorithm());
 ```
-
-The methods returns a linkto:Yothalot\Reduce object. This object can be
-used to add data, or to finetune the performance parameters of the job.
-For more information about adding data to the job, or setting these
-parameters, see the job article.
-
 Where `mapReduce` is an instance of your MapReduce class that implements the Yothalot\Mapreduce interface.
+The methods returns a [Yothalot\Job](copernica-docs:Yothalot/job "Job") object. This object can be
+used to add data to the job, or to finetune the performance parameters of the job.
+For more information about adding data to the job, or setting these
+parameters, see the [job article](copernica-docs:Yothalot/job "Job").
 
 
 ## Method flush()
@@ -79,3 +112,8 @@ explicitly call the flush() method.
 $connection->flush();
 ```
 
+In normal circumstances you do not have to flush the connection because
+all jobs get flushed when the connection is destructed, or when the
+PHP script finishes. However, in circumstances where you are about to
+start a long running algorithm after creating a job, you may want to
+call this flush method to ensure that all jobs are actually sent.
