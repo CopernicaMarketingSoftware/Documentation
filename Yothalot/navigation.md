@@ -4,5 +4,5 @@
 * [Usage](copernica-docs:Yothalot/usage "Usage")
 * [PHP API](copernica-docs:Yothalot/phpapi "PHP API")
 * [Files and paths](copernica-docs:Yothalot/files "Files and paths")
-* [Reader and Writer classes](copernica-docs:Yothalot/reader-writer "Reader and Writer classes")
+* [Internal File Format](copernica-docs:Yothalot/internalfiles "Internal File Format")
 * [About](copernica-docs:Yothalot/about "About Yothalot")

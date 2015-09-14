@@ -38,67 +38,6 @@ pathnames (relative to the mount point) when tasks are assigned, and each node
 reconstructs these relative paths into full pathname based on the mount point 
 used on that node.
 
+To help you with switching between relative and absolute paths, we have
+created [Yothalot/Path](copernica-docs:Yothalot/path "Files and paths").
 
-## The Path class
-
-If you want to turn a relative path to a GlusterFS file or directory into
-an absolute path, or the other way around, you can use the Yothalot\Path class
-for that:
-
-````php
-<?php
-// prevent exceptions
-try
-{
-    // create a path object
-    $path = new Yothalot\Path("relative/path/to/glusterfs/file");
-    
-    // output the relative pathname (relative to the glusterfs mountpoint)
-    echo("relative: ".$path->relative()."\n");
-    
-    // output the absolute pathname (this path is only useful on the current 
-    // server, because the same file might have a different absolute pathname 
-    // on other servers if the GlusterFS is mounted on a different directory)
-    echo("absolute: ".$path->absolute()."\n");
-}
-catch (Exception $exception)
-{
-    // the pathname was invalid (this means that the path can not be on the
-    // gluster, this happens if you specify a pathname like "../../../etc/passwd")
-    // the Path class does _not_ check if a file exists, it is permitted to
-    // create Path objects for files or dirs that do not (yet) exist
-    trigger_error($exception->getMessage());
-}
-?>
-````
-
-The other way around works too: if you have an absolute pathname and you want
-to turn that into a relative path (for example because you want to start a
-mapreduce task for that file, but you want to distribute the relative path as
-the absolute path is only local to the current machine), you can use the
-Yothalot\Path class too:
-
-````php
-<?php
-// prevent exceptions
-try
-{
-    // create a path object
-    $path = new Yothalot\Path("/absolute/path/to/glusterfs/file");
-    
-    // output the relative pathname (relative to the glusterfs mountpoint)
-    echo("relative: ".$path->relative()."\n");
-    
-    // output the absolute pathname (this path is only useful on the current 
-    // server, because the same file might have a different absolute pathname 
-    // on other servers if the GlusterFS is mounted on a different directory)
-    echo("absolute: ".$path->absolute()."\n");
-}
-catch (Exception $exception)
-{
-    // the pathname was invalid (happens if you specify an absolute path to
-    // a directory that is not at all a GlusterFS mount point)
-    trigger_error($exception->getMessage());
-}
-?>
-````
