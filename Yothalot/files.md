@@ -38,6 +38,12 @@ pathnames (relative to the mount point) when tasks are assigned, and each node
 reconstructs these relative paths into full pathname based on the mount point 
 used on that node.
 
-To help you with switching between relative and absolute paths, we have
-created [Yothalot/Path](copernica-docs:Yothalot/path "Files and paths").
+Since Yothalot deals with the different mounting points, you as a user do
+not have to do anything. However, it may be that you are generating intermediate
+files yourself. In this case you may want to have full control over path
+names and may want to switch between absolute and relative paths.  
+To help you in situations like this we have created
+[Yothalot/Path](copernica-docs:Yothalot/path "Files and paths"). With this
+helper class switching between absolute and relative paths becomes a trivial
+task.
 
