@@ -28,7 +28,8 @@ distributed over many different servers. Because GlusterFS acts like a regular
 file system, you can use traditional tools and functions to read, write and 
 manipulate files, without needing special tools or libraries to work with files.
 
-GlusterFS automatically distributes files over the servers in the cluster, and 
+GlusterFS automatically distributes files over the servers in the cluster, keeps
+track on which files are stored on which server, and 
 (based on your GlusterFS configuration) stores copies of each file on different
 servers, meaning that no files are lost when a server in the cluster crashes or
 goes offline. The Yothalot job manager automatically tries to assign tasks 
