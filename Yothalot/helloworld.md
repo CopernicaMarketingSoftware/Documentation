@@ -14,7 +14,7 @@ MapReduce interface prescribes that you implement the methods `map()`,
 `reduce()`, and `write()`: the three common steps of the map-reduce algorithm. 
 
 Besides these three methods you also need to implement the `includes()` method
-that return the names of the PHP files that should be loaded before a WordCount
+that returns the names of the PHP files that should be loaded before a WordCount
 instance is serialized.
 
 
@@ -96,7 +96,7 @@ class WordCount implements Yothalot\MapReduce
      *  once for the same key (for example if so many keys were found that 
      *  multiple reducers were started). The value that you emit might therefore
      *  be an intermediate value that is going to be reduced for a second or
-     *  third time because it is finally written.
+     *  third time before it is finally written.
      *
      *  In this specific WordCount implementation, the key is a word, and
      *  values is a list of numbers telling how often the word was found.
@@ -179,14 +179,14 @@ $connection = new Yothalot\Connection(array(
    "routingkey"   => "mapreduce"
 )); 
 /**
- *  Now that we have access to the master, we can tell the master to create a 
- *  new MapReduce job, using our WordCount implementation. The return value
- *  is a Yothalot\Job object, that has many methods to feed data to the job,
+ *  Now that we have access to a connection, we can create a 
+ *  new MapReduce job object, using this connection and our WordCount 
+ * implementation. The job object has many methods to feed data to the job,
  *  and to fine tune the job.
  *
  *  @var Yothalot\Job
  */
-$job = $connection->create($wordcount);
+$job = new Yothalot\Job($connection,$wordcount);
 
 /**
  *  Now we can feed the job with data that has to be mapped. In this WordCount

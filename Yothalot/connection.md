@@ -34,7 +34,7 @@ $connection = new Yothalot\Connection(array(
 )); 
 ```
 Where `"host"` holds the hostname of RabbitMQ, `"user"` holds the user name of 
-RabbitMQ, `"Password"` holds the password of RabbitMQ, `"vhost"` holds the 
+RabbitMQ, `"password"` holds the password of RabbitMQ, `"vhost"` holds the 
 virtual host of RabbitMQ, `"routingkey"` holds the routing key. All keys have a
 default value. The default values are "localhost", "guest", "guest", "/", """",
 and "mapreduce" respectively.
@@ -48,10 +48,15 @@ specific RabbitMQ vhost environment you can add the specific vhost to the
 rabbitmq-vhost variable by setting the "vhost" key.
 
 Finally there are the keys `"exchange"` and `"routingkey"` with their associative
-values that you can set. These are advanced
-settings and in most Yothalot environments the default values will suffice. In order to
-understand what effect they have and when you need to change them, you need to have some
-information on how RabbitMQ internally works. RabbitMQ allows you to publish and consume
+values that you can set. These are advanced settings and in most Yothalot environments 
+the default values will suffice, because a normal Yothalot installation loads its
+jobs from the "mapreduce" queue - which is exactly the queue where jobs end up
+with the default values.
+
+In order to understand what effect they have and when you need to change them, you need to have some
+information on how RabbitMQ internally works. 
+
+RabbitMQ allows you to publish and consume
 messages to and from a queue. However, you do not publish directly into a queue. You publish into an
 exchange and the exchange figures out to which queues the message has to be published. The name
 of the exchange is set with the "exchange" key in the associative array. It is also possible
