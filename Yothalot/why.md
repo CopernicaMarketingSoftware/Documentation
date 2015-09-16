@@ -1,10 +1,4 @@
-# About Yothalot
-
-Yothalot is maintained by Copernica BV in Amsterdam, a leading Dutch
-provider of Email Marketing solutions.
-
-
-## Why Yothalot?
+# Why Yothalot?
 
 The Yothalot project was started after we were fed up with the complexity
 of Hadoop and the realization that a map/reduce server is essentially

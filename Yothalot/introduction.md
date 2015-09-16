@@ -3,6 +3,8 @@
 Yothalot is an application for running parallel map/reduce algorithms on big 
 data clusters. If you have a lot of data and want to process it using either
 native C++ code or simple PHP scripts, Yothalot is the tool for you.
+Yothalot is maintained by Copernica BV in Amsterdam, a leading Dutch provider of
+Email Marketing solutions.
 
 Yothalot was designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
 distributed file system for storing distributed data, and you can create a Yothalot cluster
