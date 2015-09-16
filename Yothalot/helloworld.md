@@ -140,11 +140,11 @@ class WordCount implements Yothalot\MapReduce
 ?>
 ````
 
-To send this [job](copernica-docs:Yothalot/job "Job") to the Yothalot cluster,
+To send this [job](copernica-docs:Yothalot/php-job "Job") to the Yothalot cluster,
 you can write a second script that creates a "WordCount" instance, creates a
-[connection](copernica-docs:Yothalot/connection "Connection") to Yothalot, sends
+[connection](copernica-docs:Yothalot/php-connection "Connection") to Yothalot, sends
 this instance to the Yothalot master node, and specify on which data the
-[job](copernica-docs:Yothalot/job "Job") should run. This master node will send
+[job](copernica-docs:Yothalot/php-job "Job") should run. This master node will send
 your object to one or more nodes in cluster where the actual algorithm will run.
 
 ````php

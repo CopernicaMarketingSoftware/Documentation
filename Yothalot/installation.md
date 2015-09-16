@@ -17,7 +17,7 @@ We advise you to follow the steps described over there for your use case
 to setup your GlusterFS cluster.
 
 If you have GlusterFS installed and configured on your cluster you
-have to mount the cluster to the machine where you run Yothalot. You
+have to mount the cluster to the machines where you run Yothalot. You
 can do this by typing in:
 ```bash
 sudo mount -t glusterfs nameOfCluster: /mount/point/
@@ -86,6 +86,9 @@ installed. You can download a Yothalot package for your distribution from our
 [Download page](LINK). After having downloaded the package you can install it on
 Debian based systems with:
 
+** Note: This is work in progress. Currently there are no packages available. If you want
+to have access to Yothalot you can send an e-mail to:<info@copernica.com>**
+
 ```bash
 sudo pkg -i /path/to/yothalot-version.rpm
 ```
@@ -94,35 +97,20 @@ On Red Hat based systems you can use:
 ```bash
 $ sudo rpm -i /path/to/yothalot-version.rpm
 ```
-Does a package "automatically" set up the php modules? If not a user should
-add Yothalot to php with:
-```bash
-sudo php5enmod yothalot
-```
+
+## Installation of an API
+
+There are several APIs to use Yothalot with different languages. To use Yothalot
+with the language of your preference you should download the appropriate API from
+our download page and install it.
+
+** Note: This is work in progress. Currently there are no packages available. The
+first API that will be provided is a PHP API. APIs for other languages will follow
+afterwards.
 
 ## Connecting Yothalot with RabbitMQ 
 
-When you want to send jobs to the Yothalot cluster, you actually send the job to a RabbitMQ
-message queue. Therefore, when you create an instance of the connection object, you have to pass
-RabbitMQ's credentials to it. 
+This is all there is. Your Yothalot cluster is ready to go. If you are curious on how
+to use it you can have a look at our MapReduce [Hello world!](copernica-docs:Yothalot/hellowordl)
+example, our read the documentation of the API of that language that you are using.
 
-```php
-// construct the connection to the RabbitMQ server
-$master = new Yothalot\Connection(array(
-   "host"         => "localhost",
-   "user"         => "guest",
-   "password"     => "guest",
-   "vhost"        => "/",
-)); 
-```
-Yothalot\Connection takes an associative array in which the keys "host, "user",
-"password" and "vhost" can be set to specific values. With the "host" key you set
-the host name of the server where RabbitMQ runs. With the "user" key you set the user
-name of RabbitMQ and with the "password" key you set its password.
-If you have created a specific RabbitMQ vhost environment you can add the
-specific vhost to the rabbitmq-vhost variable by setting the "vhost" key.
-The default values for "host", "user", "password", and "vhost" are, "localhost",
-"guest", "guest", and "/" respectively. For more information and some advanced
-setting we refer to the [Connectio](copernica-docs:Yothalot/connection "Connection") documentation.
-
-For more information on how to use Yothalot see our [Hello world!](copernica-docs:Yothalot/hellowordl) example. 

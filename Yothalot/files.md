@@ -43,7 +43,7 @@ not have to do anything. However, it may be that you are generating intermediate
 files yourself. In this case you may want to have full control over path
 names and may want to switch between absolute and relative paths.  
 To help you in situations like this we have created
-[Yothalot/Path](copernica-docs:Yothalot/path "Files and paths"). With this
+[Yothalot/Path](copernica-docs:Yothalot/php-path "Files and paths"). With this
 helper class switching between absolute and relative paths becomes a trivial
 task.
 

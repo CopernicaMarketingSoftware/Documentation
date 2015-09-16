@@ -4,7 +4,7 @@ In the **Yothalot\Job** class you can store all the information of a
 mapreduce job. It stores the connection, the mapreduce algorithm, the
 information about the data the algorithm is applied to, and several
 performance settings. You can only create instances of this class via
-`Yothalot\Connection.create()` [see Connection](copernica-docs:Yothalot/connection "Connection").
+`Yothalot\Connection.create()` [see Connection](copernica-docs:Yothalot/php-connection "Connection").
 This ensures that each job is linked to a valid connection. 
 
 The most important member functions of Yothalot\Job are probably the

@@ -21,7 +21,7 @@ The constructor takes one parameter, the name of the input file.
  */
 $input = new Yothalot\Input("/path/to/inputFile.log");
 ```
-Where `"/paht/to/inpuFile.log"` is the input file you want to read from.
+Where `"/paht/to/inputFile.log"` is the input file you want to read from.
 
 ##Member name()
 Yothalot::Input::name() returns the full name of the input file.

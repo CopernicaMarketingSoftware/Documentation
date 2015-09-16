@@ -16,6 +16,6 @@ corrupt unreadable parts.
 
 You normally do not have to read or write such files yourself, as they are fully
 managed by the Yothalot framework. But if you do want to create or read such
-files too, you can use the [Yothalot\Input](copernica-docs:Yothalot/input "Input")
-and [Yothalot\Output](copernica-docs:Yothalot/output "Output") utility classes.
+files too, you can use the [Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
+and [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") utility classes.
 
