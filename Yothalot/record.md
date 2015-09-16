@@ -5,6 +5,7 @@ Internally the Yothalot framework uses records to store mapped and/or reduced in
 - identifier (returns the identifier)
 - size (returns the size)
 - count (returns the number of fields)
+- array (returns the fields and values as one array)
 
 Moreover, you can iterate of the data stored in a record.
 
@@ -42,6 +43,17 @@ You can also use:
 $numberOfFields = count($record);
 ```
 if you want to use it like a free function.
+
+##Member array()
+To get all fields and values of the record in on array you can use
+the member function `array()`
+```php
+$input = new Yothalot\Input("/path/to/file.log");
+foreach($input as $record){
+    // Get the fields and values as an array and print them
+    print_r($record->array());
+}
+```
 
 ##Iterating over fields
 Iterating over the fields stored in the record works as follows:
