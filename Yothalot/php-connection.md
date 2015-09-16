@@ -1,16 +1,11 @@
 # Yothalot\Connection
 
 With the **Yothalot\Connection** class you can create a connection to the
-Yothalot cluster, and send jobs to this cluster. Internally, the 
+Yothalot cluster, which can send jobs to this cluster. Internally, the 
 Yothalot\Connection object connects to the RabbitMQ server, and all jobs
 that you create, are sent to this RabbitMQ server.
 
-The most important Yothalot\Connection method is `create()`. With this
-method you can create a new mapreduce job. The following methods 
-are available:
-
 - __construct() (constructor)
-- create() (creates a new mapreduce job)
 - flush()  (flushes job)
 
 ## Constructor
@@ -85,28 +80,6 @@ by setting up an exchange that publishes to the mapreduce queue as
 well as to the queue that you use for debugging. For more information
 on how to set up exchanges in RabbitMQ we refer to their
 [tutorial](https://www.rabbitmq.com/tutorials/tutorial-four-php.html).
-
-## Method create()
-
-The Yothalot::Connection::create() method is used to create a new 
-mapreduce job. It gets one parameter: an instance of your own object
-in which your mapreduce algorithm is implemented.
-
-For more information on how to create your own mapreduce objects, see our [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
-
-```php
-/**
- *  Create a new mapreduce job
- *  This method returns a Yothalot\Job object
- *  @var Yothalot\Job
- */
-$job = $connection->create(new MyMapReduceAlgorithm());
-```
-Where `mapReduce` is an instance of your MapReduce class that implements the Yothalot\Mapreduce interface.
-The methods returns a [Yothalot\Job](copernica-docs:Yothalot/php-job "Job") object. This object can be
-used to add data to the job, or to fine tune the performance parameters of the job.
-For more information about adding data to the job, or setting these
-parameters, see the [job article](copernica-docs:Yothalot/php-job "Job").
 
 
 ## Method flush()
