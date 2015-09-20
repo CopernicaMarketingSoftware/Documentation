@@ -5,4 +5,5 @@
 * [PHP API](copernica-docs:Yothalot/phpapi "PHP API")
 * [C++ API](copernica-docs:Yothalot/cppapi "C++ API")
 * [Files and paths](copernica-docs:Yothalot/files "Files and paths")
+* [Tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
 * [Internal File Format](copernica-docs:Yothalot/internalfiles "Internal File Format")
