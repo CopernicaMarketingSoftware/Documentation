@@ -7,7 +7,7 @@ resources that can be used by jobs.
 The tuning settings have no effect on the outcome of the map/reduce algorithm.
 The output will be exactly the same, but internally the Yothalot will start
 up different number of sub jobs, which could lead to a faster or slower
-job.
+algorithm.
 
 
 ## Setting the modulo
@@ -15,9 +15,9 @@ job.
 You can tweak the performance of your mapreduce jobs by changing the per-job
 *modulo* setting. The Yothalot framework calculates the hash value for every 
 mapped key, and based on the hash and the modulo setting it splits up the 
-intermediate data in groups. The default modulo value is one, meaning that all 
-data ends up in the same group, which effectively means that you do not have 
-grouped data.
+intermediate mapped data into groups. The default modulo value is one, meaning 
+that all data ends up in the same group, which effectively means that you do not 
+have grouped data.
 
 When you use a higher value for modulo, the mapped data gets grouped into multiple
 intermediate files, and the subsequent reducers and writers will only operate
@@ -36,10 +36,10 @@ you can thus for example write all output to a single file.
 However, if you discover that a lot of time is lost in the writing phase
 of your map/reduce algorithm, you can start experimenting with setting the modulo
 to higher values. Yothalot will start up more reducers and writers, but each 
-one of these processes receive less data and can therefore run faster. 
+of these processes receive less data and can therefore run faster. 
 
 Keep in mind that if you use a modulo value higher than one, multiple writer 
-processes are started at the end of the mapreduce algorithm, and your write() 
+processes are started at the end of the mapreduce algorithm, and your `write()` 
 method has to be "parallelism safe". You should write to a resource that can 
 deal with parallel writes (like a database or different files in a directory), 
 or you should use some kind of locking mechanism.
@@ -72,7 +72,7 @@ these settings if you discover that your algorithm spends a lot of time in
 the final *write* phase.
 
 
-## Module vs input limits
+## Setting modulo vs setting input limits
 
 Both the *modulo* setting and the *maxfiles* and *maxbytes* settings are
 useful when you discover that much time is lost in the write phase of your
@@ -87,7 +87,8 @@ you can then first try to limit the input parameters.
 Setting the input parameters (*maxfiles* and *maxbytes*) is especially effective 
 if the output from the mapper processes still contains a lot of data with 
 similar keys, in other words: if there is still a lot of data to reduce after
-the mapper phase.
+the mapper phase, and the extra reducers that are started can really make
+a difference.
 
 
 ## Reducing the number of processes
@@ -105,25 +106,27 @@ By default, Yothalot sets no limit on the max number of processes: it starts
 up as many jobs as it can, using the capacity of the entire Yothalot cluster to 
 the max. However, if you want to limit this (for example because you don't want 
 that one application or one customer uses all the resources, potentially blocking 
-others) you can set the *maxprocesses* parameters. This ensures that during a
+others) you can set the *maxprocesses* parameters. This ensures that for a
 specific job, there will never be more than this number of processes running.
 
-If you know that one specific phase of your algorithm uses a limited resources, 
+If you know that one specific phase of your algorithm uses a limited resource, 
 you can also limit the number of mappers or writers that are started. For example,
-if your writer make a connection to a database, you probably don't want the full
+if your writer make a connection to a database, you probably don't want a full
 Yothalot cluster of 1000 CPU's all connect to the same database at the same time.
 In such a setup you can set the *maxwriter* setting to four, ensuring that
 there will at most be four writers running at the same time, and your database
-does not get overloaded.
+does not get overloaded. The *maxmappers* can be used in a similar fashion to
+limit the number of mappers that may run.
 
 A special word of warning about the *maxreducer* setting. During all phases of 
 the mapreduce algorithm (the mapping, the reducing and the writing) values are 
-being reduced and calls to the user-supplied reduce() method are made. The 
+being reduced and calls to the user-supplied `reduce()` method are made. The 
 *maxreducers* setting only limits the number of pure reducer processes that 
-are started, but does not limit the number of mappers and writers. If you want
-to restrict the number of processes that can make calls to the user-supplied
-reduce() function at the same time (for example because you use a database
-connection in your `reduce()` method), you better use the *maxprocesses* setting.
+are started, but does not limit the number of mappers and writers, which could
+also make calls to your `reduce()` method. If you want to restrict the number of 
+processes that can make calls to the user-supplied `reduce()` function at the 
+same time (for example because you use a database connection inside the 
+`reduce()` method), you better use the *maxprocesses* setting.
 
 
 
