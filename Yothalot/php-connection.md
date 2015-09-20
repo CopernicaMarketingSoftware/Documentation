@@ -1,13 +1,13 @@
 # Yothalot\Connection
 
-With the **Yothalot\Connection** class you can create a connection to the
-Yothalot cluster, which can send jobs to this cluster. Internally, the 
-Yothalot\Connection object connects to the RabbitMQ server, and all jobs
+With the `Yothalot\Connection` class you can create a connection to the
+Yothalot cluster, which is needed to send jobs to this cluster. Internally, the 
+`Yothalot\Connection` object connects to your RabbitMQ server, and all jobs
 that you create, are sent to this RabbitMQ server.
 
-Because in practive the connection to the Yothalot cluster is essentially
+Because in practice the connection to the Yothalot cluster is essentially
 a connection to RabbitMQ, you need to pass the login credentials for the
-RabbitMQ server to the constructor.
+RabbitMQ server to the constructor. There are only two methods available:
 
 ```php
 class Yothalot\Connection
@@ -41,12 +41,12 @@ $connection = new Yothalot\Connection(array(
 
 The following connection parameters are available:
 
-* **host**          hostname for the RabbitMQ server (default: "localhost")
-* **user**          login for the RabbitMQ server (default "guest")
-* **password**      password for the RabbitMQ server (default "guest")
-* **vhost**         vhost for the RabbitMQ server (default "/")
-* **exchange**      exchange name for publishing jobs (default "")
-* **routingkey**    routingkey for publishing jobs (default "mapreduce")
+* **host**          - hostname for the RabbitMQ server (default: "localhost")
+* **user**          - login for the RabbitMQ server (default "guest")
+* **password**      - password for the RabbitMQ server (default "guest")
+* **vhost**         - vhost for the RabbitMQ server (default "/")
+* **exchange**      - exchange name for publishing jobs (default "")
+* **routingkey**    - routingkey for publishing jobs (default "mapreduce")
 
 The keys `"exchange"` and `"routingkey"` are the most advanced settings, and in 
 most Yothalot environments the default values will suffice, because a normal 
@@ -67,7 +67,7 @@ $connection = new Yothalot\Connection(array(
     "host"      =>  "rabbit1.example.com",
     "vhost"     =>  "yothalot"
 ));
-
+```
 
 ## Method flush()
 
@@ -78,12 +78,23 @@ because all these buffers get flushed when the connection is destructed, but if
 you want to enforce this flush call, you can explicitly call the flush() method.
 
 ```php
-/**
- *  Flush the connection to enforce that buffered jobs are sent 
- *  over the connection. This connection hangs until all jobs have
- *  been sent and the buffers have been emptied.
- */
+// create a yothalot connection
+$connection = new Yothalot\Connetion(array(
+    "host"      =>  "rabbit1.example.com",
+    "vhost"     =>  "yothalot"
+));
+
+// create a yothalot job
+$job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
+
+// start the job
+$job->start();
+
+// we don't want to wait for the connection destructor to flush buffers
 $connection->flush();
+
+// run long-running algorithm
+calculate_pi();
 ```
 
 In normal circumstances you do not have to flush the connection because
