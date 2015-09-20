@@ -3,15 +3,23 @@
 The PHP API is the simplest and most popular mapreduce API that Yothalot offers.
 You can use it to write mapreduce jobs, and to send them to the Yothalot cluster.
 
-The API consists of interfaces that you can implement, and classes that you can
-use to communicate with the cluster.
+The API consists of an interface that you can implement, and classes that you
+use to communicate with the cluster. Writing a mapreduce job in PHP normally
+comes down to create a class that implements the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
+interface, and then to create a connection to the Yothalot cluster using the 
+[Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection") class.
 
-## Interfaces
+If you have both a connection and mapreduce object, you can then create a 
+[Yothalot\Job](copernica-docs:Yothalot/php-job "Job") that you can feed with
+input and tuning parameters.
+
+
+## The Yothalot\MapReduce interface
 
 To write a mapreduce job, you simply have to create a class that implements
 the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 
-* [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
+* [Interface Yothalot\MapReduce "MapReduce"](copernica-docs:Yothalot/php-mapreduce "MapReduce")
 
 
 ## Jobs and connections
@@ -23,17 +31,12 @@ that:
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 
-The [Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
-class is used for setting up a connection to the Yothalot cluster. The 
-[Yothalot\Job](copernica-docs:Yothalot/php-job "Job") class is used for running
-and tuning a mapreduce job.
-
 
 ## Utility classes
 
 The classes and interface mentioned above are sufficient for writing and running
-mapreduce jobs. But the Yothalot API also allows comes with a couple of extra
-utility classes that might be useful.
+mapreduce jobs. As an extra service however, the Yothalot API also allows comes 
+with a couple of extra utility classes that might be useful.
 
 * [Class Yothalot\Path](copernica-docs:Yothalot/php-path "Path")
 * [Class Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
@@ -41,7 +44,8 @@ utility classes that might be useful.
 
 The [Yothalot\Path](copernica-docs:Yothalot/php-path "Path") class can be used
 for converting absolute pathnames into pathnames that are relative to the
-GlusterFS mount point, and the other way around.
+GlusterFS mount point, and the other way around. This is especial useful if
+you use different mount points on different servers.
 
 The [Yothalot\Input](copernica-docs:Yothalot/php-input "Input") and 
 [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") classes allow you
