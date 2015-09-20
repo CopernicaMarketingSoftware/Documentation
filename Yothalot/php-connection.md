@@ -5,12 +5,22 @@ Yothalot cluster, which can send jobs to this cluster. Internally, the
 Yothalot\Connection object connects to the RabbitMQ server, and all jobs
 that you create, are sent to this RabbitMQ server.
 
-- __construct() (constructor)
-- flush()  (flushes job)
+Because in practive the connection to the Yothalot cluster is essentially
+a connection to RabbitMQ, you need to pass the login credentials for the
+RabbitMQ server to the constructor.
+
+```php
+class Yothalot\Connection
+{
+    public function __construct(array $settings);
+    public function flush();
+}
+```
+
 
 ## Constructor
 
-The constructor takes one parameter, an associative array, holding the
+The constructor takes one parameter, an associative array holding the
 address and login data of the RabbitMQ server, as well as the name of
 the exchange and routing key to be used for publishing the job.
 
@@ -28,68 +38,44 @@ $connection = new Yothalot\Connection(array(
    "routingkey"   => "mapreduce"
 )); 
 ```
-Where `"host"` holds the hostname of RabbitMQ, `"user"` holds the user name of 
-RabbitMQ, `"password"` holds the password of RabbitMQ, `"vhost"` holds the 
-virtual host of RabbitMQ, `"routingkey"` holds the routing key. All keys have a
-default value. The default values are "localhost", "guest", "guest", "/", """",
-and "mapreduce" respectively.
 
-If you have installed RabbitMQ locally and have used the default configuration settings, the
-default values of the associative array should lead to a proper connection to
-RabbitMQ. If you run RabbitMQ elsewhere you should set the "host" key to the proper
-location. If you have changed the user name of password of RabbitMQ, you should
-change the "user" key and "password" key accordingly. If you have created a
-specific RabbitMQ vhost environment you can add the specific vhost to the
-rabbitmq-vhost variable by setting the "vhost" key.
+The following connection parameters are available:
 
-Finally there are the keys `"exchange"` and `"routingkey"` with their associative
-values that you can set. These are advanced settings and in most Yothalot environments 
-the default values will suffice, because a normal Yothalot installation loads its
-jobs from the "mapreduce" queue - which is exactly the queue where jobs end up
-with the default values. However, if you want to change the queue, or add one,
-you can do so with `"exchange"` and `"routingkey"`.
+* **host**          hostname for the RabbitMQ server (default: "localhost")
+* **user**          login for the RabbitMQ server (default "guest")
+* **password**      password for the RabbitMQ server (default "guest")
+* **vhost**         vhost for the RabbitMQ server (default "/")
+* **exchange**      exchange name for publishing jobs (default "")
+* **routingkey**    routingkey for publishing jobs (default "mapreduce")
 
-In order to understand what effect `"exchange"` and `"routingkey"` have
-and when you need to change them, you need to have some information on
-how RabbitMQ internally works. RabbitMQ allows you to publish and consume
-messages to and from a queue. However, you do not publish directly into
-a queue. You publish into an exchange and the exchange figures out to
-which queues the message has to be published. The name of the exchange
-is set with the "exchange" key in the associative array. It is also possible
-to provide the exchange some extra information, known as routing key,
-so it knows to which queues it has to publish its incoming messages.
-RabbitMQ has a default exchange with an empty name (i.e. "") the routing
-key of this exchange is seen as the name of the queue to which the message
-has to be published.
+The keys `"exchange"` and `"routingkey"` are the most advanced settings, and in 
+most Yothalot environments the default values will suffice, because a normal 
+Yothalot installation loads its jobs from the "mapreduce" queue - which is 
+exactly the queue where jobs end up if you publish them to the empty exchange 
+with routingkey "mapreduce". However, if you want to have a different RabbitMQ 
+setup, you can do so and set the `"exchange"` and `"routingkey"` accordingly.
 
-Since the default queue that Yothalot uses is named
-"mapreduce" you can publish to this queue by publishing to the exchange
-"" and use routing key "mapreduce". As said above, you do not have to
-change these settings in normal circumstances, but in some cases you
-may want to. E.g. if you use RabbitMQ for other software as well and
-this software happens to use a queue that is named "mapreduce", you
-may want to change the name in Yothalot, so there are no conflicts.
-You can change the name in Yothalot in the config file. If you change
-the name of the queue over there, you also have to change the name of the
-routing key (note that it is probably better to use a different vhost
-if you run into this problem).
-    
-Another use case for setting both values is if you want to
-publish to multiple queues, e.g. for debugging purposes. You can do this
-by setting up an exchange that publishes to the mapreduce queue as
-well as to the queue that you use for debugging. For more information
-on how to set up exchanges in RabbitMQ we refer to their
-[tutorial](https://www.rabbitmq.com/tutorials/tutorial-four-php.html).
+Because the default values are good for most use cases, you often see that
+connections are created by passing only two parameters:
+
+```php
+/**
+ *  Connection to the Yothalot cluster
+ *  @var Yothalot\Connection
+ */
+$connection = new Yothalot\Connection(array(
+    "host"      =>  "rabbit1.example.com",
+    "vhost"     =>  "yothalot"
+));
 
 
 ## Method flush()
 
-Internally, when jobs are created, they are sent in serialized form over 
-the AMQP connection to RabbitMQ. If the connection gets congested, internal
-buffers might be created. In normal circumstances, this is not much of
-a problem, because all these buffers get flushed when the connection 
-is destructed, but if you want to enforce this flush call, you can 
-explicitly call the flush() method.
+Internally, when jobs are created, they are sent in serialized form over the 
+AMQP connection to RabbitMQ. If the connection gets congested, internal buffers 
+might be created. In normal circumstances, this is not much of a problem, 
+because all these buffers get flushed when the connection is destructed, but if 
+you want to enforce this flush call, you can explicitly call the flush() method.
 
 ```php
 /**
