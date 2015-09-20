@@ -1,188 +1,153 @@
-#Yothalot\Job
+# Yothalot\Job
 
-In the **Yothalot\Job** class you can store all the information of a
-mapreduce job. It stores the connection, the mapreduce algorithm, the
-information about the data the algorithm is applied to, and several
-performance settings. You can only create instances of this class via
-`Yothalot\Connection.create()` [see Connection](copernica-docs:Yothalot/php-connection "Connection").
-This ensures that each job is linked to a valid connection. 
+With the **Yothalot\Job** class you can create, tune and control mapreduce 
+jobs. A job holds the mapreduce algorithm, the input data and several
+performance settings.
 
 The most important member functions of Yothalot\Job are probably the
-methods with which you add `data()`, `file()`, and `server()` information
-to the job and where you `start()` and `wait()` the job. The following
-member functions are available: 
+ones with which you add input data to the job, and the method to start the
+job. You can also set all sort of tuning parameters to make your job faster,
+or to reduce the amount of resources that your job takes.
 
-- __construct() (constructor)
-- add (adds data to a job)
-- file (adds a file to a job)
-- server (adds a server name to a job)
-- start (starts the job)
-- detach (detaches the job)
-- wait (wait till job is finished)
-- maxjobs (set number of max concurent jobs)
-- maxfiles (sets max number of files per job)
-- maxbytes (sets max number of bytes per job)
-- modulo (influences the number of reducer processes)
+```php
+class Yothalot\Job
+{
+    // constructor
+    public function __construct(Yothalot\Connection $connection, Yothalot\MapReduce $algorithm);
+    
+    // adding input data to a job
+    public function add($data);
+    public function server($data, $server = null);
+    public function file($data, $file = null);
+
+    // running the job
+    public function start();
+    public function detach();
+    public function wait();
+    
+    // tuning the job
+    public function modulo($modulo);
+    public function maxfiles($max);
+    public function maxbytes($max);
+    public function maxprocesses($max);
+    public function maxmappers($max);
+    public function maxreducers($max);
+    public function maxwriters($max);
+    
+}
+```
 
 ## Constructor
 
 The constructor takes two parameters, a Yothalot\Connection and an instance of
 your own object in which your mapreduce algorithm is implemented.
 
-For more information on how to create your own mapreduce objects, see our [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
+For more information on how to create your own mapreduce objects, see our 
+[hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
 
 ```php
-/**
- *  Create a new mapreduce job
- *  This method returns a Yothalot\Job object
- *  @var Yothalot\Job
- */
-$job = $connection->create(new Yothalot\Connection(), new MyMapReduceAlgorithm());
-```
-Where `Yothalot\Connection()` is the connection that the job is using and
-`mapReduce` is an instance of your MapReduce class that implements the
-Yothalot\Mapreduce interface.
+// create a connection
+$connection = new Yothalot\Connection(array(
+    "host"  =>  "rabbit1.example.com",
+    "vhost" =>  "yothalot"
+));
 
-##Method add()
-The Yothalot::Job::add() method is used to add data to the job. The data
-is passed to the first argument of the member function `map()` in your
-mapreduce class. You can e.g. add a string that contains the name of
-the file that holds the data to the job (although there is a better way
-of doing this as is discussed below). Each call to `add()` corresponds
-to a call to the `MapReduce::map()` method. These mapper processes can
-ran in parallel. 
+// create a job
+$job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
 
-```php
-/**
-  * Add data to your job
-  * This data should be a string
-  */
-$job->add(data);
-```
-where `data` is the data you want to add to the job. Note that `data`
-should be serializable. Another aspect that should be taken into
-account is that in the current Yothalot implementation all the data
-that is passed with `add()` is kept in memory. So, do not parse a
-data file yourself and add each datum from this file with a separate
-call to `data()`, since this will imply that the entire data file
-(together with some overhead) is kept in memory.
+// feed the job with input data
+$job->add("input data");
+$job->add("more data");
+$job->add("even more data");
 
-##Method file()
-The Yothalot::Job::file() method is used to add a filename to the job.
-Although it is possible to add a filename via the `add()` method, using
-the `file()` method is preferred. Since your files are stored in a cluster,
-each file is accessible on each node, yet, each node does not hold all
-files locally. It is in general good practice to run a job on a node where
-the file is locally stored to reduce the amount of network traffic. If you
-pass a file name via the `add()` method, Yothalot is unaware that the
-string that you are adding is actually a file name. Therefore, Yothalot
-cannot schedule the job to a node that has local access to this file. If
-you use `file()` instead, Yothatlot is aware that the string is a file
-name and tries to schedule the process on an appropriate node. Besides
-that Yothalot becomes aware that the string that is passed is a filename
-`file()` behaves just like `add()`. Each call to `file()` corresponds
-to a call to the `MapReduce::map()` method. Also in this case these
-mapper processes can run in parallel.
-
-```php
-/**
- * Add a file name to your job.
- * This file name should be a string.
- */
-$job->file("file");
-```
-where `"file"` is a string with the complete absolute path to the location
-of the file (you may want to have a look at [Files and paths](LINK) for
-more information on paths).
-
-It may be that you want to add data to your job together with a hint
-to Yothalot that the process with that data should be scheduled on a
-node that has locally stored a certain file. This is possible with an
-overloaded version of `file()`.
-
-```php
-/**
- * Add data and a file name to your job.
- * This file name should be a string.
- */
-$job->file(data, "file");
-```
-where `data` is serializable and holds the data you want to pass and
-`"file"` is the absolute path to file that Yothalot uses as a hint to
-schedule the process with.
-
-##Method server()
-Like `file()` adds a filename to the job, `server()` adds a server name
-to the job. It may be that you want to run a job on a specific server,
-e.g. because it hosts a database that you want to use. In order to make
-Yothalot aware that the name you pass is a server name you use `server()`.
-Yothalot tries to schedule the process of the job that uses this server
-name on the server with the particular name (note that there is no
-guarantee that the process is scheduled on the named server). Besides
-the extra hint to Yothatalot that the string that is passed is a server
-name, `server()` behaves just like `add()` and `file()`. Each call to
-`server()` corresponds to a call to the `MapReduce::map()` method. Also
-in this case these mapper processes can run in parallel.
-```php
-/**
- * Add a server name to your job
- * This server name should be a string
- */
-
-$job->server("server.name");
-where `"server.name"` is the name of the sever.
-```
-It is likely that you want to add some data to your job with a hint to
-Yothalot that the process with that particular data should be scheduled
-on a server with a particular name. This is possible with the overloaded
-version of `data()` that takes two input arguments. 
-```php
-/**
- * Add data and a server name to your job.
- * This server name should be a string.
- */
-$job->server(data,"server.name");
-```
-
-##Method start()
-After you have added all the data to your job you can start the job
-with `start()`. Once a job has been started it is no longer possible
-to add data, files, or servers to the job.
-```php
-/**
- * start a job
- */
+// start the job
 $job->start();
 ```
 
-##Method wait()
-Before you can use the results of the map reduce job, you have to be
-sure that the job with all its processes has ended. Therefore, before
-you use results of the map reduce job you have to call `wait()`. Note
-that in the current implementation a job that waits is still counted
-as a running job. So, if you have a mapreduce procedure that calls
-other mapreduce procedures that at a certain point in time all wait
-you may run out of resources.
+## Adding input data
+
+The `add()` method is used to add input data to the job. There is a very direct
+one-to-one relation between the number of times that you call this `add()` method
+and the number of mapper processes that are started on the cluster: every call
+to the `add()` method automatically results in a mapper process that is started, 
+and the variable that you pass to this add() function is used as the input data 
+for the `map()` function of this mapper process.
+
+Because this direct relation, it is best to only add things like file names to
+your job, so that the mapper process will have plenty of stuff to process, and
+that no trivial mapper processes are started.
+
+If you do add a file name to the job, you must of course make sure that this
+file is available on every node in the cluster, because you can not know in
+advance on which server the job is going to run.
+
+
+## Controlling the server
+
+Every call to the `add()` method results in a mapper process that is started
+somewhere on the Yothalot cluster. This is done randomly: the first available
+node receives the job. However, if you want to control on which server the
+mapper is going to run, you can use the `server()` or `file()` methods to pass
+a hint to the Yothalot framework about the server that can best be used to run 
+the job.
+
+The `server()` and `file()` methods do *exactly the same* as the `add()` method, 
+with one exception: they accept a second parameter that you can use to give a 
+hint on which server to run the job:
+
 ```php
-/**
- * wait till the job has ended before you can use its returned results
- */
-$job-wait();
+// construct a job
+$job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
+
+// add data for which it is not important on which server it runs
+$job->add("random data");
+$job->add("more random data");
+
+// add data that can best be processed on "server7"
+$job->server("server specific data", "server7.example.com");
+$job->server("more server data", "server7.example.com");
+
+// add data that can best be processed on a server that has local
+// access to a specific file
+$job->file("file specific data", "path/to/some/file.txt");
+
+// start the job
+$job->start();
 ```
 
-##Method detach()
-The method Yothalot::Job::detach method detaches a job from the master
-object. If the job has already been started, the job still will run but
-does not wait for an answer anymore. In practice using `detach()` is the
-same as not calling `wait()`. The main difference is that if `detach()`
-is called you cannot call `wait()` anymore.
+When the jobs are distributed over the Yothalot nodes, the master Yothalot
+server will do its best to assign the server specific jobs to "server7.example.com",
+and the file specific job to a server that holds a local copy of the specified
+file. This is only a hint, if the desired server is not available, the job will
+be assigned to a different server instead.
 
-```php
-/**
- * Detach the job from the master and ignore its results
- */ 
-$job-detach();
-```
+Note that the input data should be serializable because it is transferred to
+other servers.
+
+
+## Running a job
+
+After you have added all the data to your job you can start the job with 
+`start()`. Once a job has been started it is no longer possible to add input 
+data to the job, and it is no longer possible to tune the job.
+
+If you want to wait for your job to finish, you can call the `wait()` method.
+This will block your PHP script until the mapreduce job is finished. This could
+take some time, so you better only call this `wait()` method if it is not much
+of a problem that your PHP scripts gets in a blocked state.
+
+The counter part of the `wait()` method is the `detach()` method. This detaches
+the job from your script. In practice it is not necessary to explicitly call 
+`detach()` after you've called `start()`, because running jobs are automatically 
+detached when the PHP script ends. The only effect of the `detach()` call is
+that it becomes impossible to call `wait()` later on.
+
+
+## Tuning the job
+
+
+
+
 
 ##Method maxprocesses()
 The maximum number of processes that may concurrently run for a particular
