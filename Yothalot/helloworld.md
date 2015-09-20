@@ -6,11 +6,10 @@ counts all words in them. The mapper processes create the initial key/value
 pairs for each found word, and the reducers sum up these values to get to the 
 total number of words.
 
-Because Yothalot comes with a simple PHP API (adding other APIs is work in 
-progress), we show how you can implement 
-the WordCount map/reduce job in PHP. You simply start by writing your own
-WordCount class that implements the Yothalot\MapReduce interface. This 
-MapReduce interface prescribes that you implement the methods `map()`, 
+Because Yothalot comes with a very simple [PHP API](copernica-docs:Yothalot/phpapi), 
+we show how you can implement the WordCount map/reduce job in PHP. You simply start 
+by writing your own WordCount class that implements the Yothalot\MapReduce interface. 
+This MapReduce interface prescribes that you implement the methods `map()`, 
 `reduce()`, and `write()`: the three common steps of the map-reduce algorithm. 
 
 Besides these three methods you also need to implement the `includes()` method
@@ -227,9 +226,10 @@ echo(file_get_contents($path->absolute()));
 ?>
 ````
 
-Maybe you have noticed that we have used 
-[Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") to handle 
-the path name to the output file. Since you work with files on a cluster using 
-relative and absolute paths can be a bit cumbersome. 
-[Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") is a solution for this.
+Maybe you have noticed that we have used the [Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") 
+class to find the full path name to the output file. Since you work with files on 
+a distributed cluster, it is possible that similar files have other names
+on other servers (if the servers use different mount points). Relative and absolute 
+paths can be a bit cumbersome then. The [Yothalot\Path](copernica-docs:Yothalot/files "Files and paths") 
+class is a solution for this.
 

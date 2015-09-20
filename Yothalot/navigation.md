@@ -3,5 +3,6 @@
 * [Installation](copernica-docs:Yothalot/installation "Installation")
 * [Hello world!](copernica-docs:Yothalot/helloworld "Hello world!")
 * [PHP API](copernica-docs:Yothalot/phpapi "PHP API")
+* [C++ API](copernica-docs:Yothalot/cppapi "C++ API")
 * [Files and paths](copernica-docs:Yothalot/files "Files and paths")
 * [Internal File Format](copernica-docs:Yothalot/internalfiles "Internal File Format")
