@@ -22,7 +22,7 @@ class Yothalot\Connection
 
 The constructor takes one parameter, an associative array holding the
 address and login data of the RabbitMQ server, as well as the name of
-the exchange and routing key to be used for publishing the job.
+the exchange and routing key to be used for publishing jobs.
 
 ```php
 /**

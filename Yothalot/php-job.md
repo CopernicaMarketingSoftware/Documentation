@@ -136,80 +136,56 @@ This will block your PHP script until the mapreduce job is finished. This could
 take some time, so you better only call this `wait()` method if it is not much
 of a problem that your PHP scripts gets in a blocked state.
 
+```php
+// construct a job
+$job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
+
+// add data for which it is not important on which server it runs
+$job->add("random data");
+$job->add("more random data");
+
+// start the job
+$job->start();
+
+// wait for the job to finish
+$job->wait();
+
+// because the job is now finished, we can use the output data of the job
+$output = file_get_contents("path/to/output/file.txt");
+```
+
 The counter part of the `wait()` method is the `detach()` method. This detaches
-the job from your script. In practice it is not necessary to explicitly call 
-`detach()` after you've called `start()`, because running jobs are automatically 
-detached when the PHP script ends. The only effect of the `detach()` call is
-that it becomes impossible to call `wait()` later on.
+the script from the job - while the job continues running in the background. In practice
+it is not necessary to explicitly call `detach()`, because active jobs are 
+automatically detached when the PHP script ends. The only effect of the `detach()` 
+call is that it becomes impossible to call `wait()` later on, because the job
+is already detached.
 
 
 ## Tuning the job
 
+There are many methods to tune your job performance. You can for example set the
+modulo so that the mapped data is split up into multiple groups that are 
+individually reduced and written, or you can limit the number of processes
+that are started.
 
-
-
-
-##Method maxprocesses()
-The maximum number of processes that may concurrently run for a particular
-job can be set with `maxprocesses()`. This is an optimization setting
-with which you can fine tune the behavior of the mapreduce job. In
-general, if you set it to low you will waste valuable resources, if you
-set it to high processes will compete with each other which will create
-a lot of extra overhead. You can also use this option to distribute
-resources over several jobs that are run simultaneously on the same
-cluster. You probably do not want to set it higher than the maximum
-number of CPUs in your cluster.   
 ```php
-/**
- * Set the maximum number of processes of a job that may run concurrently 
- */
-$job->maxprocesses(numberOfMaxJobs);
+class Yothalot\Job
+{
+    // functions for performance tuning
+    public function modulo($modulo);
+    public function maxfiles($max);
+    public function maxbytes($max);
+    public function maxprocesses($max);
+    public function maxmappers($max);
+    public function maxreducers($max);
+    public function maxwriters($max);
+}
 ```
 
-##Method maxfiles()
-The maximum number of files per concurrent process in the job can be set with
-`maxfiles()`. Just like the `maxprocesses()` member, `maxfiles()` is an
-optimization setting. It sets the maximum number of files that one concurrent
-process may process. If it is set to low you may need extra processes to process
-all the files, which increases the overhead of creating extra processes.
-If you set it to high you do less work in parallel. The best number of
-course depends on the algorithm but also on the file sizes. So, it
-interacts with `maxbytes()` (see below).
-```php
-/**
- * Set the maximum number of files that a process may consume
- */
-$job->maxfiles(numberOfMaxFiles);
-```
+All of the above methods accept one parameter: an integer value with the
+max setting. You must set these tuning parameters *before* you start the job.
+It is pointless to start then *after* the job. For an explanation of the 
+meaning of all the tuning parameters, see the special in-depth
+[article about tuning mapreduce jobs](copernica-docs:Yothalot\tuning).
 
-##Member maxbytes()
-The member `maxbytes()` sets the maximum bytes that one process in
-the job may use. Just like with `files()` there is a trade-off between
-the overhead of creating extra processes and the possibility to perform
-more work in parallel. If it is set to low, 
-```php
-/**
- * Set the number of bytes that a process maximally may process
- */
-$job->maxbytes(numberOfMaxBytes);
-```
-
-##Member modulo()
-With the member `modulo()` you can just like with the `max*` members
-tweak the performance of the algorithm. The setting provides the
-option to force multiple reducer processes per mapper process. Normally
-each input file/data is mapped to one intermediate file with key/value
-pairs. With modulo the input file is mapped to multiple intermediate
-files where modulo of the hashed key determines in which file the
-key/value pair is stored. Using the modulo of the hashed key ensures
-that the key/value pairs are nicely distributed over the multiple
-intermediate files. The benefit of using this option is that the reducer
-step is better paralizeable. The drawback of this option is that it
-also increases the number of calls to the finalizer.
-Usage:
-```php
-/**
- * Setting the number of possible reducer processes per map process
- */
-$job->modulo(numberOfIntermediateFiles);
-```
