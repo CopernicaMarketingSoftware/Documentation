@@ -4,7 +4,7 @@ With the **Yothalot\Job** class you can create, tune and control mapreduce
 jobs. A job holds the mapreduce algorithm, the input data and several
 performance settings.
 
-The most important member functions of Yothalot\Job are probably the
+The most important member functions of Yothalot\Job are the
 ones with which you add input data to the job, and the method to start the
 job. You can also set all sort of tuning parameters to make your job faster,
 or to reduce the amount of resources that your job takes.
@@ -39,8 +39,8 @@ class Yothalot\Job
 
 ## Constructor
 
-The constructor takes two parameters, a Yothalot\Connection and an instance of
-your own object in which your mapreduce algorithm is implemented.
+The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection) 
+and an instance of your own object in which your mapreduce algorithm is implemented.
 
 For more information on how to create your own mapreduce objects, see our 
 [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
@@ -66,20 +66,23 @@ $job->start();
 
 ## Adding input data
 
-The `add()` method is used to add input data to the job. There is a very direct
-one-to-one relation between the number of times that you call this `add()` method
-and the number of mapper processes that are started on the cluster: every call
-to the `add()` method automatically results in a mapper process that is started, 
-and the variable that you pass to this add() function is used as the input data 
-for the `map()` function of this mapper process.
+The `add()` method is used to add input data to the job. You must add the input
+data before you start the job. All the data that you add to the job will be passed
+to the `map()` method in your own mapreduce object.
+
+There is a one-to-one relation between the number of times that you call the 
+`add()` method and the number of mapper processes that are started on the cluster: 
+every call to the `add()` method automatically results in a mapper process that 
+is started, and the value that you pass to this add() function is used as the 
+input data for the `map()` method of this mapper process.
 
 Because this direct relation, it is best to only add things like file names to
-your job, so that the mapper process will have plenty of stuff to process, and
+your job, so that the mapper processes will have plenty of stuff to process, and
 that no trivial mapper processes are started.
 
 If you do add a file name to the job, you must of course make sure that this
 file is available on every node in the cluster, because you can not know in
-advance on which server the job is going to run.
+advance on which server a job is going to run.
 
 
 ## Controlling the server
@@ -155,8 +158,8 @@ $output = file_get_contents("path/to/output/file.txt");
 ```
 
 The counter part of the `wait()` method is the `detach()` method. This detaches
-the script from the job - while the job continues running in the background. In practice
-it is not necessary to explicitly call `detach()`, because active jobs are 
+the script from the job - while the job continues to run in the background. In practice
+it is not necessary to explicitly call `detach()` because active jobs are 
 automatically detached when the PHP script ends. The only effect of the `detach()` 
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
@@ -185,7 +188,6 @@ class Yothalot\Job
 
 All of the above methods accept one parameter: an integer value with the
 max setting. You must set these tuning parameters *before* you start the job.
-It is pointless to start then *after* the job. For an explanation of the 
-meaning of all the tuning parameters, see the special in-depth
-[article about tuning mapreduce jobs](copernica-docs:Yothalot\tuning).
+For an explanation of the  meaning of all the tuning parameters, see the special in-depth
+[article about tuning mapreduce jobs](copernica-docs:Yothalot/tuning).
 
