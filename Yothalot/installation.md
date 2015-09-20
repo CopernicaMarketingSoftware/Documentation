@@ -16,23 +16,44 @@ A more in-depth guide is available [here](http://gluster.readthedocs.org/en/late
 We advise you to follow the steps described over there for your use case
 to setup your GlusterFS cluster.
 
-If you have GlusterFS installed and configured on your cluster you
-have to mount the cluster to the machines where you run Yothalot. You
-can do this by typing in:
+If you have GlusterFS installed and configured you have to mount the file system 
+on the machines that you want to include in the Yothalot cluster. Every Yothalot 
+node needs access to the file system. You can make a mount point with the following
+command:
+
 ```bash
-sudo mount -t glusterfs nameOfCluster: /mount/point/
+sudo mount -t glusterfs nameOfCluster:/volume-name /path/to/mount/point
 ```
 
-After this step you have access to all the files in the cluster.
+Yothalot automatically tries to assign jobs to nodes in the cluster that have 
+local access to the files that are mapped or reduced. To find out on which 
+servers files are stored, Yothalot runs the `getfattr` command line tool. For a 
+reason that is not completely clear to us, only the root user may do this. For 
+Yothalot to work properly you therefore need to give special privileges to run 
+this command.
+
+The easiest way to do is, is to add an extra line to the `/etc/sudoers` file
+that says that the user that you use for running the yothalot process, may start
+the `getfattr` tool without entering a password:
+
+```
+username ALL=(ALL) NOPASSWD: /usr/bin/getfattr
+```
+
+To make changes to the sudoers file, better use the `visudo` tool instead of
+writing to `/etc/sudoers` directly. This prevents that you lock yourself out
+if you make a mistake.
 
 
 ## Installation and configuration of RabbitMQ
 
-Yothalot heavenly depends on RabbitMQ for all its queueing. You therefore need a 
-running RabbitMQ instance (or better: a cluster of instances) before you can start 
-Yothalot. We do not intend to write a full installation guide for RabbitMQ here 
-(you better check the [www.rabbitmq.com](https://www.rabbitmq.com) website for that), 
-but we do have some tips, tricks and recommendations.
+After you've set up GlusterFS, the next stop is to install and configure
+RabbitMQ. Yothalot depends on this for all its queueing and inter process 
+communication. You therefore need a running RabbitMQ instance (or even better: 
+a cluster of instances) before you can start Yothalot. We do not intend to write 
+a full installation guide for RabbitMQ here (you better check the 
+[www.rabbitmq.com](https://www.rabbitmq.com) website for that), but we do have 
+some tips, tricks and recommendations.
 
 
 ### Make sure you use the right RabbitMQ version
@@ -50,9 +71,9 @@ The RabbitMQ installation has to be **at least version 3.3.1+** for Yothalot to 
 able to connect to it.
 
 
-### Check your login and password
+### Check the RabbitMQ login and password
 
-By default, when you install RabbitMQ, it creates the first user with login 
+By default, when you install RabbitMQ, it creates a first user with login 
 "guest" and password "guest". You can only use this default login if you connect 
 to RabbitMQ locally (from localhost). If you connect from a remote host, the "guest/guest" 
 login does not work. Therefore, if you install RabbitMQ and Yothalot on different machines, 
@@ -69,7 +90,7 @@ RabbitMQ instance!
 [Read more about setting up loopback_users](https://www.rabbitmq.com/access-control.html).
 
 
-### Management plugin
+### RabbitMQ management plugin
 
 RabbitMQ comes with a very nice web interface. However, this 
 web interface is not enabled by default, and must be explicitly configured. We 
@@ -81,36 +102,27 @@ website that explains how to do this:
 
 ## Installation of Yothalot
 
-After GlusterFS and RabbitMQ have been installed and configured, Yothatlot can be
-installed. You can download a Yothalot package for your distribution from our 
-[Download page](LINK). After having downloaded the package you can install it on
-Debian based systems with:
+After GlusterFS and RabbitMQ have been installed and configured, you're ready to
+install Yothatlot. At this point in time, we do not have finished our download
+section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com).
 
-** Note: This is work in progress. Currently there are no packages available. If you want
-to have access to Yothalot you can send an e-mail to:<info@copernica.com>**
+The yothalot process reads its configuration from the `/etc/yothalot/config.txt`
+config file. In this configuration file you can configure your Yothalot process.
+We have a special [copernica-docs:Yothalot/configuration](configuration section)
+on this website that explains all the settings from this config file.
 
-```bash
-sudo pkg -i /path/to/yothalot-version.rpm
-```
-On Red Hat based systems you can use:
-
-```bash
-$ sudo rpm -i /path/to/yothalot-version.rpm
-```
 
 ## Installation of an API
 
-There are several APIs to use Yothalot with different languages. To use Yothalot
-with the language of your preference you should download the appropriate API from
-our download page and install it.
+When you have all the processes running: a distributed GlusterFS file system,
+a RabbitMQ server, and one or more yothalot processes on different
+machines in your network, you're ready to start running map/reduce jobs. To
+create a map/reduce job, you can one of our API's:
 
-** Note: This is work in progress. Currently there are no packages available. The
-first API that will be provided is a PHP API. APIs for other languages will follow
-afterwards.
+* [PHP API](copernica-docs:Yothalot/phpapi)
+* [C++ API](copernica-docs:Yothalot/cppapi)
 
-## Connecting Yothalot with RabbitMQ 
-
-This is all there is. Your Yothalot cluster is ready to go. If you are curious on how
-to use it you can have a look at our MapReduce [Hello world!](copernica-docs:Yothalot/hellowordl)
-example, our read the documentation of the API of that language that you are using.
+That is all there is. Your Yothalot cluster is ready to go. If you are curious on how
+to use it you can have a look at our MapReduce [Hello world!](copernica-docs:Yothalot/helloworld)
+example, or read the documentation of the API of that language that you are using.
 
