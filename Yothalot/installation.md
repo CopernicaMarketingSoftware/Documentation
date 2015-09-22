@@ -51,8 +51,8 @@ After you've set up GlusterFS, the next stop is to install and configure
 RabbitMQ. Yothalot depends on this for all its queueing and inter process 
 communication. You therefore need a running RabbitMQ instance (or even better: 
 a cluster of instances) before you can start Yothalot. We do not intend to write 
-a full installation guide for RabbitMQ here (you better check the 
-[www.rabbitmq.com](https://www.rabbitmq.com) website for that), but we do have 
+a full installation guide for RabbitMQ here (you can find a full guide on the 
+[www.rabbitmq.com](https://www.rabbitmq.com) website), but we do have 
 some tips, tricks and recommendations.
 
 
@@ -115,7 +115,7 @@ on this website that explains all the settings from this config file.
 ## Installation of an API
 
 When you have all the processes running: a distributed GlusterFS file system,
-a RabbitMQ server, and one or more yothalot processes on different
+a RabbitMQ server, and one or more Yothalot processes on different
 machines in your network, you're ready to start running map/reduce jobs. To
 create a map/reduce job, you can one of our API's:
 

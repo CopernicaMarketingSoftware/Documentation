@@ -6,8 +6,8 @@ a very simple process that just processes incoming jobs and distributes
 them over a group of servers. We already had all the tools and libraries
 in house to create such a service - so we decided just to do that.
 
-But why were we fed up with Hadoop in the first place, you might wonder.
-Well, here at Copernica we try to keep things simple and we don't want
+You might wonder why we were fed up with Hadoop in the first place.
+At Copernica we try to keep things simple and we don't want
 to make things more complicated than strictly necessary. When we worked
 with Hadoop, we however were constantly annoyed by a couple of things:
 

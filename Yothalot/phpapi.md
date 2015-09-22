@@ -1,6 +1,6 @@
 # PHP API
 
-The PHP API is the simplest and most popular mapreduce API that Yothalot offers.
+The PHP API is the simplest and most popular map/reduce API that Yothalot offers.
 You can use it to write mapreduce jobs, and to send them to the Yothalot cluster.
 
 The API consists of an interface, and classes to communicate with the cluster. 
