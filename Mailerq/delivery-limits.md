@@ -172,7 +172,7 @@ pause or slow down your email delivery.
 
 ### Creating flood patterns
 
-To set up a flood patter you can either instert them directly into the [database](copernica-docs:Mailerq/database-access) 
+To set up a flood pattern you can either insert them directly into the [database](copernica-docs:Mailerq/database-access) 
 or add them using the management console. The database access documentation shows you 
 all you need to know about which tables are available, to add them using the management 
 console you have to go to the Flood Patterns tab and press 'create new pattern'. This will 
@@ -181,7 +181,7 @@ take you to a form.
 
 ### Flood pattern creation form
 
-The creation form has several fields you can set. 
+The creation form has several fields you can set: 
 
 ### Name  
 Here you can name your flood pattern. We recommend using a descriptive name to make 
@@ -197,9 +197,9 @@ You can use three types of pattern matching methods:
 * **Regular expression:** The pattern is treated as a ECMA regular expression
 * **Wildcard:** In the pattern wildcards can be used similar to the ones used for file matching in the shell: 
 For example:
-- Asterisk (*) matches everything: *@mailerq.com will match foo@mailerq.com, bar@mailerq.com, etc etc.
-- Question mark (?) matches a single character: mailerq.?? will match mailerq.nl, mailerq.de but not mailerq.com.
-- Brackets ([]) matches any character within the brackets: [abc] will match a, b, or c and [!abc] won't.
+    - Asterisk (\*) matches everything: *@mailerq.com will match foo@mailerq.com, bar@mailerq.com, etc etc.
+    - Question mark (?) matches a single character: mailerq.?? will match mailerq.nl, mailerq.de but not mailerq.com.
+    - Brackets ([]) matches any character within the brackets: [abc] will match a, b, or c and [!abc] won't.
 
 * **Substring:** The pattern must be a substring of the answer from the server: 'bar' will match 'foobar'
 
