@@ -188,6 +188,4 @@ cluster-vhost:          <The RabbitMQ vhost for MailerQ cluster communication>
 cluster-exchange:       <Name of the exchange in RabbitMQ used for cluster communication>
 ```
 
-If not set, the cluster exchange will be created on the same RabbitMQ
-instance as the outbox.
 
