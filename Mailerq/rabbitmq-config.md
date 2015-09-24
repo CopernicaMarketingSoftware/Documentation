@@ -171,6 +171,17 @@ and connect each one of them to the same RabbitMQ exchange. The different instan
 periodically announce their existance on this shared queue, so that they are
 all aware of each other, and can forward messages to each other.
 
+If you do set up a cluster of MailerQ instances, it is important that each of the
+MailerQ instances connects _to the same RabbitMQ_ instance for the cluster
+communication. It is perfectly valid to use different RabbitMQ instances
+for queueing emails and results, but the cluster exchange must
+be located on the same RabbitMQ instance. That's why the config file allows you
+to set both a rabbitmq-host variable with the name of the RabbitMQ server from which the
+emails are loaded, and a cluster-host variable to set the RabbitMQ instance that
+is used by all MailerQ instances for their internal communication.
+
+One of the advantages of setting up a cluster is that messages that can not
+be processed by one MailerQ instance, are automatically handed over to an other.
 If one of the MailerQ instances consumes a message from its outbox, but sees 
 that this message can only be sent from a MailerQ server that runs on a different server 
 (because only that other server is configured with the appropriate IP address), it will 
