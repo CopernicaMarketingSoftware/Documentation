@@ -26,8 +26,8 @@ The domain limits are limits on the maximum amount of messages per minute, maxim
 of connection attempts, maximum simultaneous connections and the maximum messages in 
 the message queue to a receiving domain. 
 
-The settings below are set in your config file and only used for domains that have 
-no specific limits set:
+The following options are available in your config file. These settings are only used 
+for domains that have no specific limits set:
 
 ```
 domain-maxmessages:     <messages>
@@ -49,11 +49,11 @@ when the domain only accepts messages at a slow rate.
 ### IP address limits
 
 The IP address limits are limits on the maximum amount of messages per minute, maximum amount 
-of connection attempts, maximum simultaneous connections and the maximum messages in 
-the message queue to a single IP address on a receiving domain. 
+of connection attempts and maximum simultaneous connections to a single IP address on a 
+receiving domain. 
 
-The settings below are set in your config file and only used for domains that have 
-no specific limits set:
+The following options are available in your config file. These settings are only used 
+for domains that have no specific limits set:
 
 ```
 ip-maxmessages:     <messages>
@@ -71,7 +71,8 @@ Each connection to a remote server can also have limits configured in the config
 Just like the IP and domain limits the settings in the configuration file are the default settings 
 MailerQ falls back on when there are no domain specific settings.
 
-The following options are available for connections:
+The following options are available in your config file. These settings are only used 
+for domains that have no specific limits set:
 
 ```
 connection-maxmessages:     <messages>
