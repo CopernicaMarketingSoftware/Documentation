@@ -2,23 +2,17 @@
 
 Sending large volumes of email messages can be tricky: receiving domains often set 
 limits on the amount of messages or connections they accept. In order to adjust your 
-email delivery to these limits, MailerQ allows you to set delivery limits. 
-You can set these limits globally in the config file or on a per domain basis in the 
-management console or by directly adding them to the database. 
+email delivery to these restrictions, MailerQ allows you to set delivery limits for
+the maximum number of simultaneous connections, maximum number of messages per minute and 
+maximum number of new connections per minute. 
 
-
-## Configuring limits
-
-MailerQ can set specific throttling settings for individual domains. The maximum 
-number of simultaneous connections, maximum number of messages per minute and 
-maximum number of new connections per minute can all be set for specific domains. 
-This makes it possible to have different limits for mails sent to, for example gmail.com 
-and hotmail.com. 
+You can set these limits globally in the configuration file and on a per domain basis 
+in the management console or by directly adding them to the database. 
 
 We will start with the global/default limits and will get into the domain specific settings 
 later in this article. 
 
-## Global settings
+## Global delivery limits
 
 Global settings are the default settings MailerQ falls back on when there are no 
 domain specific limits set. These limits can be set in the MailerQ configuration file 
@@ -106,11 +100,12 @@ max-connections:    <connections>
 This is a limit set for a single instance of MailerQ and can not be set per domain. 
 
 
-## Domain specific settings
+## Domain specific limits
 
 MailerQ allows you to set specific limits for each domain by settings these in the 
 [management console](copernica-docs:Mailerq/management-console/) or by adding them 
-directly into the [database](copernica-docs:Mailerq/database-access/). 
+directly into the [database](copernica-docs:Mailerq/database-access/). This makes it 
+possible to have different limits for mails sent to, for example gmail.com and hotmail.com. 
 
 To add them using the management console, all you have to do is go the the 'Email throttling' 
 tab of the web-interface and press the 'add domain' button. Entering a domain name (e.g. Hotmail.com) 
