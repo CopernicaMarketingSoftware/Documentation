@@ -5,12 +5,11 @@ The "config.txt" file holds configuration options for the connection to RabbitMQ
 (Couchbase, MongoDB, MySQL, SQLite or PostgreSQL) and database (MySQL, SQLite or PostgreSQL)
 and other options for [MailerQ itself](copernica-docs:Mailerq/database-access "The MailerQ database").
  
-
 ## Message store options
 
 Sometimes MailerQ needs to republish mails back into the message queue - for example when a message is greylisted and should be retried later. When this republishing is done a few times for a single delivery, it causes extra network traffic between MailerQ and RabbitMQ. This traffic can be large, especially if emails contain attachments and/or embedded content.
 
-To overcome this, MailerQ can be configured to store the full message bodies in a separate storage system, and use RabbitMQ only for the email meta data (which is much smaller).
+To overcome this, MailerQ can be configured to store the full message bodies in a seperate storage system, and use RabbitMQ only for the email meta data (which is much smaller).
 
 You can use a number of different storage systems for this: Couchbase, MongoDB, Mysql, Sqlite and PostgreSQL. (Be aware that in practice it only makes sense to use Couchbase or MongoDB, because these can handle the required high loads. If you do not have a Couchbase or MongoDB server, you better not set up a storage system and put the message bodies in RabbitMQ, instead of using one of the SQL alternatives).
 
@@ -33,6 +32,7 @@ This is an optional setting. If you leave it empty, the full message bodies are 
 
 We intend to add support for other key/value stores as well.
 
+
 ## Automatic retry limit
 
 If, for one reason or another, a message could not immediately be delivered, the message is put back in the outbox message queue to be retried later.
@@ -46,123 +46,7 @@ Maximum number of retry attempts. If delivery doesn't succeed in this number of 
 ###max-deliver-time: `<delay in seconds from first attempt>`
 Maximum time in which retry attempts are made. If delivery doesn't succeed during this time, it is marked as failed and will be no further attempts.
 
-## Domain limits
-
-MailerQ uses separate throttle settings for individual domains. The maximum number of simultaneous connections, maximum number of messages per minute and maximum number of new connections per minute can all be set for specific domains. It is thus possible to have different limits for mails sent to GMAIL.COM and for mails to VERYSMALLCOMPANY.COM. All these settings can be configured using MailerQ's online management console.
-
-MailerQ always checks if there are domain specific settings stored in the database. If no specific settings can be found in the database, the server will rely on the defaults set in the configuration file. The following config file variables can be used to set these defaults.
-
-###domain-maxmessages: `<messages>`
-Default maximum amount of messages delivered per minute, set to '-1' for no limit. Only used for domains for which no other limit is set.
-
-###domain-maxconnects: `<connection attempts>`
-The maximum number of connection attempts to make to a domain in one minute, set to '-1' for no limit. Only used for domains for which no other limit is set.
-
-###domain-maxconnections: `<connections>`
-The maximum number of connections to a domain that can exist at the same time, set to '-1' for no limit. Only used for domains for which no other limit is set.
-
-###domain-maxqueue: `<length>`
-The max number of messages that are kept in memory for this domain. Use '-1' for unlimited.
-
-
-
-## IP address limits
-
-Just like it is possible to set limits for a domain, it is also possible to set limits per IP address. The following variables can be used to limit the deliveries to IP addresses. The values for the IP limits in the "config.txt" file are the default values and can be overridden for specific domains in via the management console or in the database.
-
-###ip-maxmessages: `<messages>`
-Default maximum amount of messages delivered per minute, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
-
-###ip-maxconnects: `<connection attempts>`
-The maximum number of connection attempts to make to an IP address in one minute, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
-
-###ip-maxconnections: `<connections>`
-The maximum number of connections that can exist at the same time to an IP address, -1 for no limit. Only used for IP's linked to domains for which no other limit is set.
-
-## Connection limits
-
-Each connection that is made with a remote server also has its limits, and just like the settings per domain and per IP address, these settings can also be configured for specific domains. The settings in the config file are the defaults in case no settings for a domain exist in the database.
-
-###connection-maxmessages: `<messages>`
-This setting defines the maximum number of messages that are sent over a connection, before the connection is closed. When the maximum number of messages is reached, the connection is closed and subsequent messages are sent over a new connection. Set this value to -1 if there should be no limit.
-
-###connection-maxidle: `<miliseconds>`
-This variable defines for what time in milliseconds a connection is kept open while it is idle. If two messages to the same domain are sent within the "connection-maxidle" time, they are sent over the same connection. If the time between the messages is greater than the "connection-maxidle" time, the connection closes and a new connection has to be opened before the message can be sent.
-
-###connection-secure: `<0 or 1>`
-This value is either 1 or 0 and it tells MailerQ to try to use encrypted TLS connections to communicate with the remote server. Communication over TLS is slower than communicating over a normal unencrypted connection.
-
-## Number of threads
-
-MailerQ starts up multiple worker threads for various tasks. There is a thread for writing to the log file, a thread for loading messages from RabbitMQ, and a thread for writing them back to RabbitMQ, and special threads to communicate with the database and storage.
-
-Next to these threads, MailerQ starts additional threads for sending out SMTP messages. The number of SMTP threads to start can be configured with the max-threads variable. On a dedicated machine it is wise to set this to a value close to the number of cores in the machine (minus about five for the threads mentioned above).
-
-###max-threads: `<threads>`
-Number of worker threads for sending out mail and doing the SMTP communication.
-
-## Number of connections in total
-
-To prevent the server from running out of file descriptors, it only opens a certain number of connections at the same time. Make sure that this variable does not exceed the limit for the number of open files! To let everthing work smoothly, leave at least 100 file descriptors to the application that can be used for communication with databases, logfiles, message queues and dns servers.
-
-###max-connections: `<connections>`
-The maximum number of connections at the same time.
-
-## Memory usage configuration
-
-To prevent the server from running out of memory, you can limit the number of messages loaded into memory.
-
-###max-messages: `<messages>`
-This is the number of messages that MailerQ loads from RabbitMQ and stores in internal in-memory queues.
-
-###max-queues: `<queues>`
-This is the maximum number of queues which MailerQ is allowed to keep in memory, excluding the temporary queues.
-
-###max-memory: `<memory>`
-Max memory to use by MailerQ. This setting can be specified in GB or MB (for example '16GB' or '512MB'). To set it to u###imited leave the value empty.
-
-When the max memory limit is reached, MailerQ stops loading messages from the message queue until more memory is available.
-
-
-## SMTP server
-
-MailerQ can open a SMTP port to accept incoming emails (see [Incoming messages](copernica-docs:Mailerq/incoming-messages "Incoming messages") for more detailed information on this topic). All mails that are received on the SMTP port will automatically be published on the [inbox queue](copernica-docs:Mailerq/configuration/#rabbitmq-inbox "inbox queue"). If this inbox queue is set to the same value as the outbox queue (which most users do), MailerQ automatically forwards all received messages.
-
-The recommended SMTP port is 25\. To open this port however, MailerQ needs to be started with root privileges. After the port is opened, MailerQ changes its identity to a different (and safer) user.
-
-Be aware that by opening the SMTP port you might create an open SMTP proxy that the world can use for sending out spam. It therefore is wise to configure your firewall to only allow access from trusted hosts. The smtp-range setting can be used to limit access from specific IP addresses. Connections from other sources are blocked. The IP range must be set in [CIDR notation](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation).
-
-Besides limiting the IP addresses that are able to deliver mail to MailerQ through the SMTP port, authentication can also be required by setting the smtp-username and smtp-password options. By default these are empty, meaning no authentication is required.
-
-To protect the messages delivered from eavesdropping, TLS can be enabled by setting the smtp-certificate and smtp-key to the full path containing the certificate and private key, respectively.
-
-###smtp-ip: `<ip address>`
-Normally, MailerQ opens a socket that can be accessed via all the IP addresses that are available on the server. If MailerQ should only be accessible via a specific IP address, you can set that IP with this setting. Make sure the IP address is assigned to the server.
-
-###smtp-port: `<port number>`
-Number for the SMTP port. If this is a set to a value lower than 1024, MailerQ needs to be started by user root.
-
-###smtp-range: `<ip range>`
-The IP range from which incomming connections are allowed in CIDR notation.
-
-###smtp-username: `<username>`
-The username clients have to authenticate for SMTP email delivery.
-
-###smtp-password: `<password>`
-The username clients have to authenticate for SMTP email delivery.
-
-###smtp-certificate: `<filename>`
-The full path and filename to the file containing the certificate
-
-###smtp-key: `<filename>`
-The full path and filename to the file containing the private key
-
-###smtp-ciphers: `<cipher list>`
-Colon-separated list of allowed ciphers to use when securing incoming SMTP connections with TLS.
-
-###smtp-proxy:
-Enable the PROXY protocol. If this is enabled, MailerQ will expect a PROXY v2 header at the start of every incoming SMTP connection. Be aware that enabling this option without using a PROXY-enabled frontend will break incoming SMTP functionality.
-
+hout using a PROXY-enabled frontend will break incoming SMTP functionality.
 
 ## Logging
 
