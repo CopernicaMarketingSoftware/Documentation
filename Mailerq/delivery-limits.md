@@ -1,8 +1,8 @@
-# Delivery limits
+# Delivery Throttling
 
 Sending large volumes of email messages can be tricky: receiving domains often set 
 limits on the amount of messages or connections they accept. In order to adjust your 
-email delivery to these restrictions, MailerQ allows you to set delivery limits for
+email delivery to these restrictions, MailerQ allows you to throttle delivery by setting
 the maximum number of simultaneous connections, maximum number of messages per minute and 
 maximum number of new connections per minute. 
 
@@ -87,6 +87,38 @@ By setting `connection-secure` to 1, MailerQ will always use a secure connection
 if available. If no secure connection is available MailerQ will make a regular 
 conenction. 
 
+### Maximum delivery time
+
+When a message cannot be delivered immediately because of unresponsive 
+receivers, greylisting or throttling, MailerQ publishes back the email 
+to the outbox queue for later delivery. This can result in emails that 
+are sent much later than the time that you first added them to the message queue. 
+
+
+
+```
+max-deliver-time:         <seconds>
+```
+
+This setting is time in seconds from first delivery attempt and is a default 
+setting that is set in the configuration file. it is also possible to set a maximum 
+delivery time on a per email level.
+[Read more about setting per message maximum delivery time](copernica-docs:Mailerq/send-email)
+
+### Maximum delivery attempts
+
+Just like a max delivery time, you can also control the max number of 
+attempts that MailerQ uses to send out an email. If a first attempt 
+fails because a remote server is unreachable or does not immediately 
+accept the message, MailerQ will make a new attempt a later.
+
+```
+max-attempts:            <number of attempts>
+```
+This setting is a default setting that is set in the configuration file. 
+It is also possible to set the maximum delivery attempts on a per email. 
+[Read more about setting per message maximum delivery attempts](copernica-docs:Mailerq/send-email)
+
 ### Total number of connections
 
 To prevent the server from running out of file descriptors, it only opens a certain 
@@ -99,6 +131,8 @@ logfiles, message queues and dns servers.
 max-connections:    <connections>
 ```
 This is a limit set for a single instance of MailerQ and can not be set per domain. 
+
+
 
 
 ## Domain specific limits
