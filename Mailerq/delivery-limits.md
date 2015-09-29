@@ -95,7 +95,6 @@ to the outbox queue for later delivery. This can result in emails that
 are sent much later than the time that you first added them to the message queue. 
 
 
-
 ```
 max-deliver-time:         <seconds>
 ```
@@ -103,7 +102,7 @@ max-deliver-time:         <seconds>
 This setting is time in seconds from first delivery attempt and is a default 
 setting that is set in the configuration file. it is also possible to set a maximum 
 delivery time on a per email level.
-[Read more about setting per message maximum delivery time](copernica-docs:Mailerq/send-email)
+[Read more about setting per message maximum delivery time](copernica-docs:Mailerq/delivery-properties)
 
 ### Maximum delivery attempts
 
@@ -117,7 +116,7 @@ max-attempts:            <number of attempts>
 ```
 This setting is a default setting that is set in the configuration file. 
 It is also possible to set the maximum delivery attempts on a per email. 
-[Read more about setting per message maximum delivery attempts](copernica-docs:Mailerq/send-email)
+[Read more about setting per message maximum delivery attempts](copernica-docs:Mailerq/delivery-properties)
 
 ### Total number of connections
 
