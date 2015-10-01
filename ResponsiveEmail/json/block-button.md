@@ -7,7 +7,7 @@ Email API, because it renders better on different email clients.
 
 ## Button block properties
 | Property | Value | Desc.                                                                                                                        |
-|:------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|--------------------------------------------------------------------------------------------------------------------------------|
 | type | "button" | Property to identify block as button                                                                                          |
 | [label](copernica-docs:ResponsiveEmail/json/property-button-label) | _string_ | Label of the button                                             |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _mixed_ | Link that is opened when the button is clicked                            |
