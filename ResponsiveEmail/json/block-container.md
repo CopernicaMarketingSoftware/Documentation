@@ -31,6 +31,6 @@ supported properties.
 ## Container block properties
 
 | Property | Value | Description |
-| --- |
+| -------- | ----- | ----------- |
 | type | "container" | Identifies the block as a container block. |
 | [blocks](copernica-docs:ResponsiveEmail/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as [button blocks](copernica-docs:ResponsiveEmail/json/block-button) and [text blocks](copernica-docs:ResponsiveEmail/json/block-text). |

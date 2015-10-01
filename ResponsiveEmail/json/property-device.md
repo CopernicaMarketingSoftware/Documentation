@@ -10,7 +10,7 @@ visible when the email is opened on a mobile device and/or on a desktop computer
 ## Supported values for the `device` property
 
 | Value |  | Desc.                                                                  |
-|:----------------------------------------------------------------------------------|
+|:------|--|------------------------------------------------------------------------|
 | "always" | _default_ | The block is always visible, on all possible screen sizes. |
 | "desktop" |  | The block is only visible on big, desktop like, screen sizes.      |
 | "mobile" |  | The block is only visible on small, mobile like, screen sizes.      |

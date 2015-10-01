@@ -47,7 +47,7 @@ that can be set for each column.
 ### Columns [ { ... }, { ... } ] properties
 
 | Property | Value | Desc.                                                                                                                                                         |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [blocks](copernica-docs:ResponsiveEmail/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as `button` and `text` blocks. |
 | [size](copernica-docs:ResponsiveEmail/json/property-size) | _integer_ | The size of the column. Supported values are 1 up to 12.                                                 |
 | [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Get access to the container element                                                             |

@@ -8,7 +8,7 @@ All available properties of this block type are mentioned in the table below.
 ## Share block properties
 
 | Property | Value | Description                                                                                                                                       |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "share" | Property to identify the block as a share block.                                                                                                    |
 | [label](copernica-docs:ResponsiveEmail/json/property-label) | _string_ | The label to show above all the social buttons.                                             |
 | [platforms](copernica-docs:ResponsiveEmail/json/property-platforms) | _array_ | A list of the platforms which we should be displaying in this share block.           |

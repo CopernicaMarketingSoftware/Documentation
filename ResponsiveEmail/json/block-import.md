@@ -25,6 +25,6 @@ The following properties are supported:
 ## Import block properties
 
 | Property | Value | Description                                                                                  |
-|:----------------------------------------------------------------------------------------------------------------|
+|:---------|-------|----------------------------------------------------------------------------------------------|
 | type | "import" | Identifies the block as a import block.                                                       |
 | [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | The source URI of the JSON to import       |

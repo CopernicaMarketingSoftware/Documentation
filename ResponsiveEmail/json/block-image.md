@@ -12,7 +12,7 @@ All available properties of this block type are mentioned in the table below.
 ## Image block properties
 
 | Property | Value | Description                                                                                                                                                 |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "image" | Property to identify the block as an image block.                                                                                                             |
 | [src](copernica-docs:ResponsiveEmail/json/property-src) | _string_ | The url of the image.                                                                                     |
 | [alt](copernica-docs:ResponsiveEmail/json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email.                     |

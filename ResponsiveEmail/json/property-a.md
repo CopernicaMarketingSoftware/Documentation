@@ -17,7 +17,7 @@ document, you will therefore not see the `a` property.
 ## Supported sub properties
 
 | Property | Value | Description                                                                                             |
-|:---------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------------------------------------------|
 | [css](copernica-docs:ResponsiveEmail/json/property-css) | _object_ | Add custom css to the a tag                           |
 | [attributes](copernica-docs:ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the a tag |
 

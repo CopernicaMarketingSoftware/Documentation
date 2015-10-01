@@ -133,7 +133,7 @@ supports many of the properties that other blocks also support.
 ### Columns block top level properties
 
 | Property | Value | Desc. |
-| --- |
+| -------- | ----- | ----- |
 | type | "columns" | Property to identify block as a `columns` block. |
 | [columns](copernica-docs:ResponsiveEmail/json/property-columns) | _JSON array_ | A JSON array containing JSON objects. These objects should contain another JSON array names `blocks`. |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of all the columns. |

@@ -11,7 +11,7 @@ to your data.
 ## Background properties
 
 | Property | Value | Description                                                                                                                 |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-----------------------------------------------------------------------------------------------------------------------------|
 | url | _string_ | Url to your data, this will be downloaded and included                                                                        |
 | data | _string_ | The raw data of your attachment, this has to be base64 encoded                                                               |
 | name | _string_ | The name for your attachment, this will be visibile in most email clients                                                    |

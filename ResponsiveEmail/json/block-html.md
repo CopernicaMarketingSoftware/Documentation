@@ -29,7 +29,7 @@ many more. The following tables lists all supported properties.
 ## Text block properties
 
 | Property | Value | Description                                                                                                                  |
-|:------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "text" | Identifies the block as a text block.                                                                                           |
 | [content](copernica-docs:ResponsiveEmail/json/property-html-content) | _string_ | The textual content of the block. This may include HTML.      |
 | [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | A url to fetch the html content from.                                      |

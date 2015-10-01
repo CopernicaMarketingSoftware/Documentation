@@ -75,7 +75,7 @@ to the hyperlinks. There are more properties to be set:
 ### Rewrite rule properties
 
 | Property | Value | Desc.                                                               |
-|:---------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------|
 | params | _object_ | Parameters to be added to matching urls                            |
 | protocol | _string_ | Protocol to change                                               |
 | match | _string_ | A wildcard string we have to match with the hostname first          |

@@ -8,7 +8,7 @@ nested font block.
 ## Font properties
 
 | Property | Value | Description                                     |
-|:-------------------------------------------------------------------|
+|:---------|-------|-------------------------------------------------|
 | family | _string_ | Equivalent to the CSS font-family property     |
 | size | _string_ | Equivalent to the CSS font-size property         |
 | lineHeight | _string_ | Equivalent to the CSS line-height property |

@@ -9,7 +9,7 @@ like an `<hr>` tag.
 ## Seperator block properties
 
 | Property | Value | Desc.                                                                                                                        |
-|:------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "separator" | Identifies the block as a separator                                                                                        |
 | [color](copernica-docs:ResponsiveEmail/json/property-separator-color) | _string_ | The color of the seperator. Default #cccccc                  |
 | [style](copernica-docs:ResponsiveEmail/json/property-separator-style) | _string_ | The style of the seperator.                                  |

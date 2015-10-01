@@ -7,7 +7,7 @@ In this block you can set `label`, `title` and `link` properties.
 ## Link block properties
 
 | Property | Value | Desc.                                                                                                                                                             |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "link" | Identifies the block as a link block                                                                                                                                 |
 | [label](copernica-docs:ResponsiveEmail/json/property-link-label) | _string_ | The link text of the link                                                                              |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Same as `url` except that the link property accepts another JSON block with extra options: `title`, `params`. |

@@ -12,13 +12,13 @@ the properties of the links. See table below.
 ### Link
 
 | Property | Value | Desc.                                        |
-|:----------------------------------------------------------------|
+|:---------|-------|----------------------------------------------|
 | link | _object_ | Object with link properties. See table below. |
 
 ### Link properties
 
 | Property | Value | Desc.                                                              |
-|:--------------------------------------------------------------------------------------|
+|:---------|-------|--------------------------------------------------------------------|
 | url | _string_ | The online location where user is redirected to.                     |
 | title | _string_ | The link title / description.                                      |
 | params | _object_ | Add or overwrite URL query strings, presented as a key-value pair |

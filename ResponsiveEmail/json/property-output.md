@@ -20,7 +20,7 @@ set to "webonly".
 ## Supported values for the `output` property
 
 | Value |  | Desc.                                                                                   |
-|:---------------------------------------------------------------------------------------------------|
+|:------|--|-----------------------------------------------------------------------------------------|
 | "always" | _default_ | The block is always included: for the web version and for the mail version. |
 | "mailonly" |  | The block is only included in the mail version.                                    |
 | "webonly" |  | The block is only included in the web version.                                      |

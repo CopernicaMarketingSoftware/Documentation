@@ -8,7 +8,7 @@ properties available on block level.
 ## Block level content and style properties
 
 | Property | Value | Description                                                          |
-|:----------------------------------------------------------------------------------------|
+|:---------|-------|----------------------------------------------------------------------|
 | font | _object_ | Font and text settings for this block                                 |
 | background | _object_ | Background settings for this block                              |
 | margin | _mixed_ | Whitespace around the block                                          |

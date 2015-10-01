@@ -16,7 +16,7 @@ The API also offers some advanced properties, such as the `rewrite` property.
 ## Top level meta properties
 
 | Property | Type | Description                                                                                            |
-|:-------------------------------------------------------------------------------------------------------------------------|
+|:---------|------|--------------------------------------------------------------------------------------------------------|
 | [name](copernica-docs:ResponsiveEmail/json/property-name) | _string_ | User readable template name.                      |
 | [description](copernica-docs:ResponsiveEmail/json/property-description) | _string_ | User readable template description. |
 | [version](copernica-docs:ResponsiveEmail/json/property-version) | _integer_ | Version number of the JSON input.          |
@@ -24,7 +24,7 @@ The API also offers some advanced properties, such as the `rewrite` property.
 ## Top level MIME properties
 
 | Property | Value | Description                                                                                                                       |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-----------------------------------------------------------------------------------------------------------------------------------|
 | [subject](copernica-docs:ResponsiveEmail/json/property-subject) | _string_ | Subject line of the email.                                              |
 | [from](copernica-docs:ResponsiveEmail/json/property-from) | _object_ | Email address and name of the sender.                                         |
 | [replyTo](copernica-docs:ResponsiveEmail/json/property-reply-to) | _object_ | Optional email address and name of the user to which replies are sent. |
@@ -38,7 +38,7 @@ The API also offers some advanced properties, such as the `rewrite` property.
 ## Top level content and style properties
 
 | Property | Value | Description                                                                                                                                      |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [text](copernica-docs:ResponsiveEmail/json/property-text) | _string_ | Supply text version for clients that do not support HTML emails                              |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Template wide font and text settings.                                                        |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | Background settings for the entire template.                                     |
@@ -49,7 +49,7 @@ The API also offers some advanced properties, such as the `rewrite` property.
 ## Top level advanced properties
 
 | Property | Value | Description                                                                                                                     |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------|
 | [rewrite](copernica-docs:ResponsiveEmail/json/property-rewrite) | _object_ | Define specific rules to overwrite information specified in the JSON. |
 | [tracking](copernica-docs:ResponsiveEmail/json/property-tracking) | _object_ | Supply email tracking information.                                  |
 

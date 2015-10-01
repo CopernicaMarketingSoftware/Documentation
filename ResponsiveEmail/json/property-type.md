@@ -9,7 +9,7 @@ The following block types are supported:
 # Block types
 
 | Value | Desc.                                                                                    |
-|:-------------------------------------------------------------------------------------------------|
+|:------|------------------------------------------------------------------------------------------|
 | ["heading"](copernica-docs:ResponsiveEmail/json/block-heading) | Heading block ("h1", "h2", etc) |
 | ["text"](copernica-docs:ResponsiveEmail/json/block-text) | Text block                            |
 | ["html"](copernica-docs:ResponsiveEmail/json/block-html) | HTML block                            |

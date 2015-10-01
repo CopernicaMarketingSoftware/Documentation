@@ -12,7 +12,7 @@ All available properties of this block type are mentioned in the table below.
 ##  Video block properties
 
 | Property | Value | Description                                                                                                                                               |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "video" | Property to identify the block as a video block.                                                                                                            |
 | [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | The video source URI                                                                                    |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`.           |

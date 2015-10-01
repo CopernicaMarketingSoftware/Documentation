@@ -84,7 +84,7 @@ The following properties are supported:
 ## Feed block properties
 
 | Property | Value | Description                                                                                                         |
-| ---                                                                                                                                    |
+| -------- | ----- | -----------                                                                                                         |
 | type | "feed" | Identifies the block as a feed block.                                                                                  |
 | [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | The source URI of the feed                                        |
 | [blocks](copernica-docs:ResponsiveEmail/json/property-feed-blocks) | _array_ | The blocks to show for each article                     |

@@ -16,7 +16,7 @@ CSS properties or element attributes you want to add to the container.
 ## Container properties
 
 | Property | Value | Description                                                                                                         |
-|:---------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------|
 | [css](copernica-docs:ResponsiveEmail/json/property-css) | _object_ | Add custom css to the container element                           |
 | [attributes](copernica-docs:ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the container element |
 

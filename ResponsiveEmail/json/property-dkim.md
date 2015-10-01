@@ -12,7 +12,7 @@ keys, although it is allowed.
 ## DKIM properties
 
 | Property | Value | Description                                      |
-|:--------------------------------------------------------------------|
+|:---------|-------|--------------------------------------------------|
 | domain | _string_ | The signing domain                              |
 | selector | _string_ | The domain selector                           |
 | key | _string_ | Base64 encoded private key                         |

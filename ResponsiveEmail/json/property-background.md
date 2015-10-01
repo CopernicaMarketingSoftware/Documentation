@@ -14,7 +14,7 @@ specific moment however, only the sub property `color` can be used.
 ## Background properties
 
 | Property | Value | Description          |
-|:----------------------------------------|
+|:---------|-------|----------------------|
 | color | _string_ | The background color |
 
 Colors may be specified as an RGB triplet or in hexadecimal format. They may 

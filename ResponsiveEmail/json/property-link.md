@@ -7,7 +7,7 @@ a full JSON object, containing the properties of the links. See table below.
 ## Link properties
 
 | Property | Value | Desc.                                                                                                                          |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|--------------------------------------------------------------------------------------------------------------------------------|
 | [url](copernica-docs:ResponsiveEmail/json/property-link-url) | _string_ | The online location where user is redirected to.                        |
 | [title](copernica-docs:ResponsiveEmail/json/property-link-title) | _string_ | The link title / description.                                       |
 | [params](copernica-docs:ResponsiveEmail/json/property-link-params) | _object_ | Add or overwrite URL query strings, presented as a key-value pair |

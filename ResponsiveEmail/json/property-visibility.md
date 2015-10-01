@@ -17,7 +17,7 @@ on which sort of screen size the block should be visible.
 ### Block visibilty properties |
 
 | Property | Value | Desc.                                                                                                                                        |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | [output](copernica-docs:ResponsiveEmail/json/property-output) | _string_ | Should the block be included in the webversion and/or in the email version?          |
 | [device](copernica-docs:ResponsiveEmail/json/property-device) | _string_ | Should the block be visible when the mail is opened on a device with a certain size? |
 

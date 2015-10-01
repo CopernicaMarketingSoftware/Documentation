@@ -28,7 +28,7 @@ instead.
 ## Text block properties
 
 | Property | Value | Description                                                                                                                  |
-|:------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "text" | Identifies the block as a text block.                                                                                           |
 | [content](copernica-docs:ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may include HTML.      |
 | [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | A url to fetch the textual content from.                                   |

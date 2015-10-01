@@ -11,7 +11,7 @@ be added as this API is under constant development.
 ## Rewrite properties
 
 | Property | Value | Desc.                                                                                                 |
-|:-------------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-------------------------------------------------------------------------------------------------------|
 | [links](copernica-docs:ResponsiveEmail/json/property-rewrite-links) | _object_ | Specify links that should be rewritten. |
 
 ## Where to use?

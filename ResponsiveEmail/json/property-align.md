@@ -8,7 +8,7 @@ the center or to the right.
 ## Property values
 
 | Value | Description                  |
-|:-------------------------------------|
+|:------|------------------------------|
 | left   | Align element to the left   |
 | center | Align element to the center |
 | right  | Align element to the right  |

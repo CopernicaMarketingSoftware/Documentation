@@ -58,7 +58,7 @@ section.
 ### Content block properties
 
 | Property | Value | Description                                                                                         |
-|:-----------------------------------------------------------------------------------------------------------------------|
+|:---------|-------|-----------------------------------------------------------------------------------------------------|
 | [background](/support/json/property-background) | _object_ | Background properties for the 580px wide center column.   |
 | [blocks](/support/json/property-blocks) | _array_ | List of the actual content blocks inside the center column.        |
 | [css](/support/json/property-css) | _object_ | Optional additional CSS properties to be added to the column.           |
