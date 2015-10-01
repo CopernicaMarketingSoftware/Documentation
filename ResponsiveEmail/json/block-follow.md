@@ -17,6 +17,8 @@ All available properties of this block type are mentioned in the table below.
 | [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                      |
 | [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                               |
 | [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container                                                 |
+| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | The alignment of the label text of this block                                               |
+| size | _number_ | The size of each platform icon                                                                                                                     |
 
 ## Example usage
 
@@ -31,8 +33,8 @@ the basic usage, showing a set of follow buttons.
         "blocks" : [ {
             "type"      : "follow",
             "label"     : "Follow us!",
+            "size"      : 32,
             "platforms" : [ {
-                "platform" : "twitter",
                 "link"     : "https://twitter.com/copernica"
             } ]
         } ]

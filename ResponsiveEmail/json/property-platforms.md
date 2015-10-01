@@ -11,18 +11,21 @@ JSON objects, containing the actual `platforms` inside the `follow` or `share`.
         "blocks" : [ {
             "type"      : "follow",
             "label"     : "Follow us!",
+            "align"     : "center",
+            "size"      : 32,
             "platforms" : [ {
-                "platform" : "twitter",
                 "link"     : "https://twitter.com/copernica",
-                "icon"     : "https://example.org/my-twitter-icon.png"
+                "img"      : {
+                    "src"      : "https://example.org/my-twitter-icon.png",
+                    "alt"      : "The optional alt text"
+                }
             } ]
         } ]
     }
 }
 ```
 
-Each platform json block has 1 mandatory property: `platform`. This should indicate
-the platform in use, currently we support `twitter`, `facebook`, `googleplus` & `linkedin`.
-The `link` property is mandatory in the case you're working in a `follow` block, this should
-be the direct link to your social media page. Then finally we have the optional `icon`
-property which you can use to override the default platform pictures being displayed.
+Each platform json block has 1 mandatory property: `src`. This should contain a
+direct url to the image that should be shown for this platform. Then there also
+is an optional `alt` property, which would simply contain the alt text for this
+image.
