@@ -3,7 +3,7 @@
 ## Configure your hostname
 
 Before you can properly relay your email messages you will have
-to make sure that the **myhostename** parameter is configured with your
+to make sure that the **myhostname** parameter is configured with your
 server's fully-qualified domain name (FQDN). You can set this by
 going to `/etc/postfix/main.cf` and setting the following:
 
