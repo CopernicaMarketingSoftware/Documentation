@@ -20,7 +20,7 @@ https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
 
  > Note: All API requests must use secure HTTPS connections. Unsecure HTTP requests will result in a 400 Bad Request response.
 
- ## Sending Email with the REST API
+## Sending Email with the REST API
 
 All messages sent through the REST API should at least contain the following variables:
 
