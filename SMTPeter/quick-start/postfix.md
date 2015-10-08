@@ -1,4 +1,4 @@
-# Setting up Postfix to send through SMTPeter
+# Set up Postfix to send through SMTPeter
 
 ## Configure your hostname
 
