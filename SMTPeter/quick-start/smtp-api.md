@@ -34,7 +34,7 @@ Port:       465
 Encryption: SSL 
 ```
 
-Authentication is done using your login credentials. Make sureto use either 
+Authentication is done using your login credentials. Make sure to use either 
 [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication). 
 
 And that's it! You are now ready to send using our SMTP API. If you want more 
