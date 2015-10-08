@@ -2,10 +2,10 @@
 
 ## Configure your hostname
 
-Before you can properly relay your email messages you will have
-to make sure that the **myhostname** parameter is configured with your
+Before you can properly relay your email messages, make sure that
+the **myhostname** parameter is configured with your
 server's fully-qualified domain name (FQDN). You can set this by
-going to `/etc/postfix/main.cf` and setting the following:
+going to `/etc/postfix/main.cf` and set the following:
 
 ```ini
 myhostname = fqdn.yourdomain.com
@@ -43,7 +43,7 @@ postmap command:
 $ postmap /etc/postfix/sasl_passwd
 ```
 
-For security reasons you should run the following command, to make sure
+For security reasons, run the following command to make sure
 only root can read and write to the file with your SMTP credentials: 
 
 ```bash
@@ -82,7 +82,7 @@ smtp_tls_CAfile             = /etc/ssl/certs/ca-certificates.crt
  > **Note:** If you specified a non-default TCP port in the *sasl_passwd file, you will have
     to use the same port when setting the **relayhost** parameter.
 
-After you have saved your changes you should restart Poxtfix and you 
+After you have saved your changes, restart Poxtfix and you 
 should be ready to test. 
 
 ```bash
