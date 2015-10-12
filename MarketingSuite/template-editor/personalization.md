@@ -24,16 +24,20 @@ ways to show variables, depending on the variables of course.
 
 ### Variables
 
-{$foo}             <-- displaying a simple variable (non array/object)
-{$foo[4]}          <-- display the 5th element of a zero-indexed array
-{$foo.bar}         <-- display the "bar" key value of an array, you'll most likely use this to access profile data
+| Syntax     | Meaning                                                                                      |
+|------------|----------------------------------------------------------------------------------------------|
+| {$foo}     | Displaying a simple variable (non array/object).                                             |
+| {$foo[4]}  | Display the 5th element of a zero-indexed array.                                             |
+| {$foo.bar} | Display the "bar" key value of an array, you'll most likely use this to access profile data. |
 
 Many other combinations are allowed
 
-{$foo.bar.baz}     <-- display the value behind the key "baz" inside the array "bar" which is a part of $foo
-{$foo[4].baz}      <-- display the value behind the key "baz" inside the 5th element of $foo
-{$foo.bar.baz[4]}  <-- display the 5th element of baz, which is in bar which is in $foo
-{"foo"}            <-- static values are allowed
+| Syntax            | Meaning                                                                                |
+|-------------------|----------------------------------------------------------------------------------------|
+| {$foo.bar.baz}    | Display the value behind the key "baz" inside the array "bar" which is a part of $foo. |
+| {$foo[4].baz}     | Display the value behind the key "baz" inside the 5th element of $foo.                 |
+| {$foo.bar.baz[4]} | Display the 5th element of baz, which is in bar which is in $foo.                      |
+| {"foo"}           | Static values are allowed.                                                             |
 
 ### Math
 When we're talking about simply outputing variables we can also do some simple math with them.
