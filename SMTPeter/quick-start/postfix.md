@@ -82,7 +82,7 @@ smtp_tls_CAfile             = /etc/ssl/certs/ca-certificates.crt
  > **Note:** If you specified a non-default TCP port in the *sasl_passwd file, you will have
     to use the same port when setting the **relayhost** parameter.
 
-After you have saved your changes, restart Poxtfix and you 
+After you have saved your changes, restart Postfix and you 
 should be ready to test. 
 
 ```bash
