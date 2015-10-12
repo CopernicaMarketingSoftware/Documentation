@@ -130,6 +130,7 @@ are parameters. A list with all the modifiers that take parameters (and what the
 
 | Modifier name   | Parameters | Meaning |
 |-----------------|------------|---------|
+| truncate        | The first parameter is the amount of characters after which we should truncate. The second parameter contains the string we'll use to truncate. | Truncate a string. |
 | cat             | Additional input | Appends all the parameters to the input. |
 | default         | The value which will be applied if the input is empty. | Apply a default value in case of empty input. |
 | ident           | First parameter should contain the amount of idents it should place, the second parameter the indent itself, which will default to a single space. | Ident the original input a bit. |
