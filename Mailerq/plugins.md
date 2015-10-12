@@ -67,18 +67,6 @@ If you want your plugin to interact with outgoing SMTP traffic, you can add one 
 | [mq_smtp_out_data()](copernica-docs:Mailerq/mq_smtp_out_data) | Called by MailerQ when the connection enters data state |
 
 
-
-## Plugins for generating custom message ids
-
-MailerQ will by default create message ids that store information about their creation time as well as the machine on which they were generated, which may not be exactly what you want. If you want to change the default behavior there are two functions that you can implement inside your plugin to do so.
-
-Be aware, however, that there can only be a single plugin in control of message id generation. If there are multiple plugins that both implement this functionality, only the last plugin doing so will actually be used. One message id per message is, after all, sufficient.
-
-| Function name                                         | Description                                               |
-|-------------------------------------------------------|-----------------------------------------------------------|
-| [mq_message_id_size()](copernica-docs:Mailerq/mq_message_id_size) | Called once to retrieve the buffer size of message ids    |
-| [mq_message_id()](copernica-docs:Mailerq/mq_message_id)           | Called for every message that does not have a message id  |
-
 ## A minimalistic plugin
 
 As you read above, the `mq_version()` function is currently the only function that your plugin is _required_ to implement. All other callbacks are optional. A very basic plugin (one that does nothing) would look like this:
