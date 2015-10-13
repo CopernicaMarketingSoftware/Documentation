@@ -164,13 +164,20 @@ automatically detached when the PHP script ends. The only effect of the `detach(
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
 
+## Getting information from your job
+
+Besides that the `wait()` method will block your script, the method will also
+return a Yothalot\Results object with all kind of information on the performance
+and behaviour of the job. 
+
 
 ## Tuning the job
 
 There are many methods to tune your job performance. You can for example set the
 modulo so that the mapped data is split up into multiple groups that are 
 individually reduced and written, or you can limit the number of processes
-that are started.
+that are started. Information on the results that you have access to is given in
+the [Information about the job](copernica-docs:Yothalot/php-result "Result").
 
 ```php
 class Yothalot\Job

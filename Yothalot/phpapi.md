@@ -31,6 +31,14 @@ that:
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 
+## Information about the job
+
+Once you have run your mapreduce job you may be interested in the behavior
+of the job. The information is given in a couple of classes the main class
+is:
+
+* [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
+
 
 ## Utility classes
 
