@@ -1,19 +1,23 @@
 #Yothalot\Input
 
 Yothalot\Input is a utility class that helps you to read files that have
-the Yothalot internal [format](copernica-docs:Yothalot/internalfiles "Internal Files").
+the internal Yothalot [format](copernica-docs:Yothalot/internalfiles "Internal Files").
 In general you do not need this class. However, it is useful if you want
 to read files in this format, which has the cool property of being compressed
 but still splittable. 
 
-Its member functions are of Yothalot:
-- __construct() (constructor)
-- name  (returns full name of the file)
-- size  (returns the size)
-
+There are only two methods available:
+```php
+class Yothalot\Input
+{
+    public function __construct($filename);
+    public function name();
+    public function size();
+}
+```
 Moreover, the class allows you to iterate over the records stored in the input file.
 
-##Constructor
+## Constructor
 The constructor takes one parameter, the name of the input file.
 ```php
 /**
@@ -21,10 +25,10 @@ The constructor takes one parameter, the name of the input file.
  */
 $input = new Yothalot\Input("/path/to/inputFile.log");
 ```
-Where `"/paht/to/inputFile.log"` is the input file you want to read from.
+Where `"/path/to/inputFile.log"` is the input file you want to read from.
 
-##Member name()
-Yothalot::Input::name() returns the full name of the input file.
+## Method name()
+The member name() returns the full name of the input file.
 ```php
 /**
  * Retrieve the full name of the input file
@@ -32,8 +36,8 @@ Yothalot::Input::name() returns the full name of the input file.
 $name = $input->name();
 ```
 
-##Member size()
-Yothalot::Input::size() returns the size (in bytes) of the input file.
+## Method size()
+method size() returns the size (in bytes) of the input file.
 This information may be useful to decide if the file should be splitted
 into smaller blocks.
 ```php
