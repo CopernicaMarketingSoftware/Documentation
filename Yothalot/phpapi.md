@@ -22,6 +22,15 @@ the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 * [Interface Yothalot\MapReduce "MapReduce"](copernica-docs:Yothalot/php-mapreduce "MapReduce")
 
 
+## The Yothalot\Race interface
+
+To process a lot of data simultaneously but only get the result that is
+available first, you simply have to create a class that implements the
+[Yothalot\Race](copernica-docs:Yothalot/php-race "Race") interface.
+
+* [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
+
+
 ## Jobs and connections
 
 Once you've written your own mapreduce algorithm, you can turn it into a job,
