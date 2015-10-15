@@ -34,7 +34,7 @@ available first, you simply have to create a class that implements the
 ## Jobs and connections
 
 Once you've written your own mapreduce or race algorithm, you can turn it into a job,
-and send it to the Yothalot cluster. The following two classes are necessary for
+and send it to the Yothalot cluster. The following classes are necessary for
 that:
 
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
