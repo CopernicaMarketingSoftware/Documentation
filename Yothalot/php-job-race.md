@@ -2,11 +2,11 @@
 
 The **Yothalot\Job** class that holds a Race class can almost be used the same as
 a [job that holds a MapReduce class](copernica-docs:Yothalot/php-job "Job"),
-except for some small differences. Some tuning settings do not make sense 
+except for some small differences. Most tuning settings do not make sense 
 for a Race job (e.g. the max number of reducers). Also, a Yothalot\Job that
 holds a Race class returns the result of the process method in wait().
 
-Since some of the tuning settings of a MapReuduce job do not make sense 
+Since most of the tuning settings of a MapReuduce job do not make sense 
 for a Race job the interface of a Yothalot\Job class that uses a Yothalot\Race
 class is somewhat smaller.
 
@@ -26,9 +26,7 @@ class Yothalot\Job
     public function detach();
     public function wait();
     
-    // tuning the job
-    public function maxfiles($max);
-    public function maxbytes($max);
+    // setting resources
     public function maxprocesses($max);
 }
 ```
@@ -134,12 +132,16 @@ After you have added all the data to your job you can start the job with
 `start()`. Once a job has been started it is no longer possible to add input 
 data to the job, and it is no longer possible to tune the job.
 
-If you want to wait for the first result, you can call the `wait()` method.
-This method will return the first value that is returned from the `process()`
-method of your Race class. This will block your PHP script until the first
-method returns a result. This could take some time, so you better only call
-this `wait()` method if it is not much of a problem that your PHP scripts
-gets in a blocked state.
+If you want to wait for the first non zero result, you can call the `wait()`
+method. This method will return the first non zero value that is returned from the
+`process()` method of your Race class after which the entire job stops. You
+will get a zero value if all data you have passed to the job have been processed
+and `process()` always returned a zero.
+
+Note that calling `wait()` will block your PHP script until a non zero value
+is returned or when all data is processed. This could take some time, so
+you better only call the `wait()` method if it is not much of a problem
+that your PHP scripts gets in a blocked state.
 
 ```php
 // construct a job
@@ -155,7 +157,9 @@ $job->start();
 // wait for the job to finish and get a result
 $x = $job->wait();
 
-// do something with the result
+// $x is the first non zero result that was returned
+// or zero if all data have been processed and there
+// where no non zero retuns
 echo($x);
 ```
 
@@ -169,21 +173,17 @@ is already detached.
 
 ## Tuning the job
 
-There are some methods to tune your job's performance, or actually in the
+There is one method to tune your job's performance, or actually in the
 case of a race job, set the resources that that job may use. 
 
 ```php
 class Yothalot\Job
 {
     // functions for resource tuning
-    public function maxfiles($max);
-    public function maxbytes($max);
     public function maxprocesses($max);
 
 }
 ```
-
-All of the above methods accept one parameter: an integer value with the
-max setting. You must set these tuning parameters *before* you start the job.
-For an explanation of the  meaning of all the tuning parameters, see the special in-depth
-[article about tuning mapreduce jobs](copernica-docs:Yothalot/tuning).
+The above method accepts one parameter: an integer value. If you want to
+limit the resources that the race job may use you have to set it before
+you call start.

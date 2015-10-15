@@ -15,7 +15,7 @@ class Yothalot\Output
     public function add($identifier, $fields);
     public function name();
     public function size();
-    // public function flush(); // Not supported at the moment
+    public function flush();
 }
 ```
 ## Constructor

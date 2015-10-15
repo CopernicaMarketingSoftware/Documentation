@@ -2,15 +2,16 @@
 
 Yothalot is specially developed for mapreduce tasks. Yet, it turns out that 
 the Yothalot framework provides some extra useful features besides running 
-mapreduce algorithms. E.g. it is possible to easily process a lot of files
+mapreduce algorithms. E.g. it is possible to easily process a lot of data
 simultaneously. This can be done by using empty reducer and writer steps. 
-However, there is one limitation in this process. You have to wait till
+However, there is a limitation in this process. You have to wait till
 all files are processed. What if you want to process a lot of files, but
-you are only interested in the first result you get? Yothalot\Race is a
+you are only interested in the first result you get, or, you want to avoid
+the overhead of the empty writer and reducer steps. Yothalot\Race is a
 solution for this problem. Using Yothalot\Race is as simple as using 
 Yothalot\MapReduce, or maybe even simpler. Instead of creating a class
 that implements the Yothalot\MapReduce interface you create a class that
-implements the Yothalot\Race interface. You can  use this class like you
+implements the Yothalot\Race interface. You can use this class like you
 use your mapreduce classes. That is it. 
 
 ## Yothalot\Race interface
@@ -97,7 +98,9 @@ class MyRace implements Yothalot\Race, Serializable
 
 The last part that needs to be implemented is the `process()` method. In this
 method you implement your algorithm that processes the data. The method receives
-one parameter, the data, and has to return.
+one parameter, the data, and has to return. If it returns a zero, the job
+will continue with processing the data. Otherwise the value will be returned
+by the job and the job will stop.
 
 ```php
 class MyRace implements Yothalot\Race
@@ -112,11 +115,17 @@ class MyRace implements Yothalot\Race
         // @todo:   implement your process algorithm that 
         //          uses value and returns a result         
         
+        // if the result is zero the job will continue else the result 
+        // will be returned by the job and the job will be stopped
         return result;
     }
 
     // @todo implement other methods
 }
 ```
+
+
+
+
 
 
