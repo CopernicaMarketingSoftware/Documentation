@@ -12,6 +12,7 @@
 * [Management console](copernica-docs:Mailerq/management-console "Management console")
 * [Database access](copernica-docs:Mailerq/database-access "Database access")
 * [Message store options](copernica-docs:Mailerq/message-store-options "Message Store options")
+* [Logging](copernica-docs:Mailerq/logging "Logging")
 * [Responsive-email](copernica-docs:Mailerq/responsive-email "Responsive e-mail")
 * [Examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples")
 * [Plugins](copernica-docs:Mailerq/plugins "MailerQ plugin development")
