@@ -76,7 +76,7 @@ every call to the `add()` method automatically results in a mapper process that
 is started, and the value that you pass to this add() function is used as the 
 input data for the `map()` method of this mapper process.
 
-Because this direct relation, it is best to only add things like file names to
+Because of this direct relation, it is best practice to only add things like file names to
 your job, so that the mapper processes will have plenty of stuff to process, and
 that no trivial mapper processes are started.
 

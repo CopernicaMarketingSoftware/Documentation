@@ -2,8 +2,8 @@
 
 With the `Yothalot\Connection` class you can create a connection to the
 Yothalot cluster, which is needed to send jobs to this cluster. Internally, the 
-`Yothalot\Connection` object connects to your RabbitMQ server, and all jobs
-that you create, are sent to this RabbitMQ server.
+`Yothalot\Connection` object connects to your RabbitMQ server and all jobs
+that you create are sent to this RabbitMQ server.
 
 Because in practice the connection to the Yothalot cluster is essentially
 a connection to RabbitMQ, you need to pass the login credentials for the

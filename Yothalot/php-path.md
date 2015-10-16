@@ -21,11 +21,11 @@ In this case the string passed to the constructor is an absolute path.
 You can also use:
 
 ```php
-$/**
+/**
  * Create a path class to manipulate absolute and relative paths.
  * @var Yothalot\Path
  */
-path = new Yothalot\Paht("relative/path/to/glusterfs/file");
+path = new Yothalot\Path("relative/path/to/glusterfs/file");
 ```
 Here the string holds a relative path.
 
