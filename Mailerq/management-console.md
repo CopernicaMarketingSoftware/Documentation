@@ -23,14 +23,14 @@ The management console can be enabled in MailerQ's configuration file.
 The following variables should be used:
 
 ````
-www-port:           80
+www-port:           8485
 www-ip:             1.2.3.4
 www-password:       admin
 www-dir:            /usr/share/mailerq/www
 ````
 
 The `www-port` variable holds the port number for the management console.
-80 is the default. If you use port 80, you do
+80 is the default. If you use port 8485, you do
 not have to include the port number in the URL and you can access the
 management console with using a browser via address "http://hostname.of.your.server". 
 If you assign a different port number (like 8080), you have to include
