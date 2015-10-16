@@ -3,7 +3,7 @@
 * [RabbitMQ connection](copernica-docs:Mailerq/rabbitmq-config "RabbitmQ connection")
 * [Configuration](copernica-docs:Mailerq/configuration "Configure MailerQ")
 * [Send email](copernica-docs:Mailerq/send-email "Send email with MailerQ")
-* [Delivery properties](copernica-docs:Mailerq/delivery-properties "Settings aditional delivery properties")
+* [Message properties](copernica-docs:Mailerq/delivery-properties "Settings aditional delivery properties")
 * [Delivery throttling](copernica-docs:Mailerq/delivery-limits "Delivery Throttling")
 * [Incoming messages](copernica-docs:Mailerq/incoming-messages "Incoming messages")
 * [Smarthost & debugging](copernica-docs:Mailerq/smarthost "Smarthost & debugging")
