@@ -6,7 +6,7 @@ All abnormal events, downloads and deliveries are logged by MailerQ in different
 
 All abnormal events are logged to the error logfile. This includes failures like databases that are suddenly offline, or RabbitMQ connections that are lost. The name and error of the error log file can be set with the error-log setting.
 
-```
+```txt
 error-log:      <location of file>
 ```
 
@@ -24,7 +24,7 @@ are removed.
 
 The configuration file holds the following options:
 
-```
+```txt
 send-log-directory:         <directory>
 send-log-prefix:            <name.log>
 send-log-maxsize:           <megabytes> 
@@ -32,6 +32,7 @@ send-log-maxage:            <seconds>
 send-log-compression:       gzip
 send-log-history:           <number of files>
 ```
+
 The `send-log-directory` is the directory where logfiles with send attempts are 
 stored. The directory must be writable for MailerQ. The `send-log-prefix` is the 
 prefix for the send log. The default is "attempts.log". The `send-log-maxsize` is the 
@@ -52,7 +53,7 @@ out their size, and/or RSS feeds to include in the mail. All these
 downloads are automatically logged. The settings for the download
 log are essentially the same as the settings for the send-log:
 
-```
+```txt
 download-log-directory:     <directory>
 download-log-prefix:        <name.log>
 download-log-maxsize:       <megabytes> 
