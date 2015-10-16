@@ -14,6 +14,13 @@ If you have both a connection and mapreduce object, you can then create a
 input and tuning parameters.
 
 
+## Installation
+
+If you want to use the PHP API you have to install the Yothalot PHP extension.
+
+* [How to install the Yothalot PHP extension](copernica-docs:Yothalot/php-install "PHP Extension Installation")
+
+
 ## The Yothalot\MapReduce interface
 
 To write a mapreduce job, you simply have to create a class that implements
@@ -40,6 +47,7 @@ that:
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job with Yothalot\MapReduce Objects](copernica-docs:Yothalot/php-job "Job with mapreduce objects")
 * [Class Yothalot\Job with Yothalot\Race Objects](copernica-docs:Yothalot/php-job-race "Job with race objects")
+
 
 ## Information about the job
 
