@@ -82,7 +82,8 @@ that no trivial mapper processes are started.
 
 If you do add a file name to the job, you must of course make sure that this
 file is available on every node in the cluster, because you can not know in
-advance on which server a job is going to run.
+advance on which server a job is going to run. If each Yothalot node has
+access to your GlusterFS cluster, this is guaranteed.
 
 
 ## Controlling the server
@@ -113,6 +114,10 @@ $job->server("more server data", "server7.example.com");
 // add data that can best be processed on a server that has local
 // access to a specific file
 $job->file("file specific data", "path/to/some/file.txt");
+
+// add data that can best be processed on a server that has local
+// access to a specific file, and the data is the file name itself
+$job->file("path/to/some/file.txt");
 
 // start the job
 $job->start();
@@ -164,10 +169,17 @@ automatically detached when the PHP script ends. The only effect of the `detach(
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
 
+## Getting information from your job
+
+Besides that the `wait()` method will block your script, the method will also
+return a [Yothalot\Results](copernica-docs:Yothalot/php-result "Result")
+object with all kind of information on the performance and behavior of
+the job. 
+
 
 ## Tuning the job
 
-There are many methods to tune your job performance. You can for example set the
+There are many methods to tune your job's performance. You can for example set the
 modulo so that the mapped data is split up into multiple groups that are 
 individually reduced and written, or you can limit the number of processes
 that are started.

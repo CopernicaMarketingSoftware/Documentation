@@ -3,17 +3,21 @@
 Yothalot\Output is a utility class that helps you to create files in the same 
 [format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot 
 uses internally. In general you do not need to create a file like this since
-Yothalot can handle all files (with a little bit of your help). However, the 
+Yothalot can handle all types of files (with a little bit of your help). However, the 
 Yothalot format has the cool property of being compressed while still being
-splittable. 
+splittable. Therefore you may want to use this format for your own files as well.
 
-Its member functions are:
-- __construct() (constructor)
-- add    (add record i.e. identifier and field to output file)
-- name   (returns full name of the file)
-- flush  (flushes the object to the file)
-- size   (returns the size)
-
+There are five methods available for this class:
+```php
+class Yothalot\Output
+{
+    public function __construct($filename);
+    public function add($identifier, $fields);
+    public function name();
+    public function size();
+    public function flush();
+}
+```
 ## Constructor
 The constructor takes one parameter, the file name. A file with this 
 file name will be created if it does not exist. Otherwise the file will 
@@ -27,36 +31,27 @@ $output = new Yothalot\Output("/path/to/file.log");
 ```
 where `"/path/to/file.log"` is the path to the file you want to write to.
 
-
-##Member add()
-Yothalot::Output::add() is a member that adds a record to the output 
-file. A record exists of an identifier and fields. The identifier has
-to be numeric. The field can be an array of basic types.
+## Member add()
+add() is a member that adds a record to the output file. A record exists
+of an identifier and fields. The identifier has to be numeric. The field
+can be an array of basic types.
 ```php
 /**
  * Add a record with key and value to output file
  */
 $output->add(1, array('1', '2', '3'));
 ```
-where: `1` is in this case a key and `array('1', '2', '3')` is the value.
+where: `1` is in this case the identifier and `array('1', '2', '3')` are
+the fields.
+
 
 ## Member name()
-Yothalot::Output::name() returns the full name of the output file.
+name() returns the full name of the output file.
 ```php
 /**
  * Get the name of the output file
  */
 echo($output->name());
-```
-##Member flush()
-Yothalot::Output::flush() flushes the object to the file. In general
-you do not need this, only if your code can crash you may use it to be
-sure that your data is stored. Although it is better to fix the code.
-```php
-/**
- * flush the data to the output file
- */
-$output->flush();
 ```
 
 ##Member size()
@@ -71,3 +66,13 @@ the Yothalot formated files are splittable.
 echo($output->size());
 ```
 
+##Member flush()
+Yothalot::Output::flush() flushes the object to the file. In general
+you do not need this, only if your code can crash you may use it to be
+sure that your data is stored. Although it is better to fix the code.
+```php
+/**
+ * flush the data to the output file
+ */
+$output->flush();
+```

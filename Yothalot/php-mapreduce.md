@@ -102,7 +102,7 @@ You can emit key/value pairs to the reducer, that will later be reduced.
 class MyMapReduce implements Yothalot\MapReduce
 {
     /**
-     *  Implemention for a mapper function
+     *  Implementation for a mapper function
      *  @param  mixed       Value that is being mapped
      *  @param  Reducer     Reducer object to which we may emit key/value pairs
      */

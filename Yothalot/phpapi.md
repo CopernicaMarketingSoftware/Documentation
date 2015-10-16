@@ -22,14 +22,32 @@ the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 * [Interface Yothalot\MapReduce "MapReduce"](copernica-docs:Yothalot/php-mapreduce "MapReduce")
 
 
+## The Yothalot\Race interface
+
+To process a lot of data simultaneously but only get the result that is
+available first, you simply have to create a class that implements the
+[Yothalot\Race](copernica-docs:Yothalot/php-race "Race") interface.
+
+* [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
+
+
 ## Jobs and connections
 
-Once you've written your own mapreduce algorithm, you can turn it into a job,
-and send it to the Yothalot cluster. The following two classes are necessary for
+Once you've written your own mapreduce or race algorithm, you can turn it into a job,
+and send it to the Yothalot cluster. The following classes are necessary for
 that:
 
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
-* [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
+* [Class Yothalot\Job with Yothalot\MapReduce Objects](copernica-docs:Yothalot/php-job "Job with mapreduce objects")
+* [Class Yothalot\Job with Yothalot\Race Objects](copernica-docs:Yothalot/php-job-race "Job with race objects")
+
+## Information about the job
+
+Once you have run your mapreduce job you may be interested in the behavior
+of the job. The information is given in a couple of classes the main class
+is:
+
+* [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
 
 
 ## Utility classes
