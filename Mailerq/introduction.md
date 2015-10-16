@@ -97,8 +97,7 @@ If you have questions about your license, feel free to send an email to
 
 With these configuration steps you are ready to start. However, we do recommend to read the
 [page](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ") on how 
-MailerQ interacts with RabbitMQ and the [page](copernica-docs:Mailerq/configuration 
-"MailerQ configuration") with all other configuration options, and adjust your configuration accordingly.
+MailerQ interacts with RabbitMQ and the [page](copernica-docs:Mailerq/configuration "MailerQ configuration") with all other configuration options, and adjust your configuration accordingly.
 
 ## Let's get started!
 

@@ -1,4 +1,4 @@
-# Configuration of MailerQ
+# Advanced Configuration
 
 MailerQ can be configured, using the config file that can be found at "/etc/mailerq/config.txt". 
 The "config.txt" file holds configuration options for the connection to RabbitMQ, storage engine
