@@ -16,7 +16,8 @@ processed.
 To keep things simple, Yothalot relies heavily on existing and proven open
 source technologies: GlusterFS for the distributed file system, RabbitMQ for
 robust inter process communication, and PHP as the simple script language that
-you can use for writing the jobs (although there is a C++ API too).
+you can use for [writing the jobs](copernica-docs:Yothalot/phpapi "PHP API")
+(although there is a [C++ API](copernica-docs:Yothalot/cppapi "C++ API") too).
 
 
 ## Clustered file system
@@ -57,10 +58,10 @@ one of the RabbitMQ nodes goes offline.
 
 ## Scripting
 
-Yothalot comes with a straightforward but powerful PHP API that allows you to
-write and deploy your map/reduce jobs. Because PHP is crazy simple and at the
-same time hugely popular, you can easily find programmers to write map/reduce
-jobs.
+Yothalot comes with a straightforward but powerful [PHP API](copernica-docs:Yothalot/phpapi "PHP API")
+that allows you to write and deploy your map/reduce jobs. Because PHP is
+crazy simple and at the same time hugely popular, you can easily find
+programmers to write map/reduce jobs.
 
 Because PHP is a scripting language, you do not have to compile or deploy the
 scripts. When you're debugging your code, you can simply save your changes, and
@@ -69,5 +70,12 @@ schedule your job. Writing map/reduce algorithms has never been easier.
 
 ## Native API
 
-If, however, you prefer speed over simplicity, Yothalot also comes with a C++ API.
-With this API you can write super fast C++ applications that run map/reduce jobs.
+If, however, you prefer speed over simplicity, Yothalot also comes with a 
+[C++ API](copernica-docs:Yothalot/cppapi "C++ API"). With this API you
+can write super fast C++ applications that run map/reduce jobs
+
+Interested? You can go to the [installation page](copernica-docs:Yothalot/installation "Installation")
+to read how Yothalot can be obtained and installed or you can read 
+[why](copernica-docs:Yothalot/why "Why Yothalot") we have created Yothalot
+and are not using Hadoop.
+

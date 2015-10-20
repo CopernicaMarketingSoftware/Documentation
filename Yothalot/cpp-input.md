@@ -16,7 +16,7 @@ public:
     size_t size();
     InputIterator getIterator();
 }
-
+```
 ## Constructor
 The constructor takes one parameter, the name of the input file.
 ```cpp
@@ -28,7 +28,7 @@ Yothalot::Input input("/path/to/inputFile.log");
 Where `"/path/to/inputFile.log"` is the input file you want to read from.
 
 ## Method name()
-The member name() returns the full name of the input file.
+The member name() returns the full name of the input file as a std::string.
 ```cpp
 /**
  * Retrieve the full name of the input file
@@ -37,7 +37,7 @@ std::string name = input.name();
 ```
 
 ## Method size()
-method size() returns the size (in bytes) of the input file.
+Method size() returns the size (in bytes) of the input file.
 This information may be useful to decide if the file should be splitted
 into smaller blocks.
 ```cpp
@@ -48,7 +48,7 @@ size_t filesize = input.size();
 ```
 
 ## Member getIterator()
-The input files are organized around [records](copernica-docs:Yothalot/record).
+The input files are organized around [records](copernica-docs:Yothalot/cpp-record).
 You can get an input iterator to iterate over these records via the member
 `getIterator`. @todo add more info on records.
 

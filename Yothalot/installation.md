@@ -108,7 +108,7 @@ section, but if you're interested, drop us an email at [info@copernica.com](mail
 
 The yothalot process reads its configuration from the `/etc/yothalot/config.txt`
 config file. In this configuration file you can configure your Yothalot process.
-We have a special [copernica-docs:Yothalot/configuration](configuration section)
+We have a special [configuration section](copernica-docs:Yothalot/configuration)
 on this website that explains all the settings from this config file.
 
 

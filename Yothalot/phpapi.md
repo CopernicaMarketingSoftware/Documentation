@@ -1,10 +1,10 @@
 # PHP API
 
 The PHP API is the simplest and most popular map/reduce API that Yothalot offers.
-You can use it to write mapreduce jobs, and to send them to the Yothalot cluster.
+You can use this API to write mapreduce jobs, and to send them to the Yothalot cluster.
 
-The API consists of an interface, and classes to communicate with the cluster. 
-Writing a mapreduce job in PHP normally comes down to write a class that implements 
+The API consists of interfaces and classes to communicate with the cluster. 
+Writing a mapreduce job using the PHP API comes down to write a class that implements 
 the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
 interface, and then to create a connection to the Yothalot cluster using the 
 [Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection") class.
@@ -16,14 +16,16 @@ input and tuning parameters.
 
 ## Installation
 
-If you want to use the PHP API you have to install the Yothalot PHP extension.
+If you want to use the PHP API you have to install Yothalot and the Yothalot
+PHP extension.
 
+* [How to install Yothalot](copernica-docs:Yothalot/installation "Installation")
 * [How to install the Yothalot PHP extension](copernica-docs:Yothalot/php-install "PHP Extension Installation")
 
 
 ## The Yothalot\MapReduce interface
 
-To write a mapreduce job, you simply have to create a class that implements
+To write a mapreduce job, you have to create a class that implements
 the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 
 * [Interface Yothalot\MapReduce "MapReduce"](copernica-docs:Yothalot/php-mapreduce "MapReduce")
@@ -31,8 +33,8 @@ the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 
 ## The Yothalot\Race interface
 
-To process a lot of data simultaneously but only get the result that is
-available first, you simply have to create a class that implements the
+If you want to process a lot of data simultaneously but do not want to use
+a reduce step, you have to create a class that implements the
 [Yothalot\Race](copernica-docs:Yothalot/php-race "Race") interface.
 
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
@@ -41,10 +43,13 @@ available first, you simply have to create a class that implements the
 ## Jobs and connections
 
 Once you've written your own mapreduce or race algorithm, you can turn it into a job,
-and send it to the Yothalot cluster. The following classes are necessary for
-that:
+and send it to the Yothalot cluster. 
+Firt you create a Yothalot\Connection:
 
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
+
+Then you create a job using this connection and your mapreduce or race class:
+
 * [Class Yothalot\Job with Yothalot\MapReduce Objects](copernica-docs:Yothalot/php-job "Job with mapreduce objects")
 * [Class Yothalot\Job with Yothalot\Race Objects](copernica-docs:Yothalot/php-job-race "Job with race objects")
 
@@ -75,5 +80,5 @@ you use different mount points on different servers.
 
 The [Yothalot\Input](copernica-docs:Yothalot/php-input "Input") and 
 [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") classes allow you
-to read and write files in the same compressed format used by the Yothalot 
-framework internally for intermediate result files.
+to read and write files in the same [format](copernica-docs:Yothalot/internalfiles "Internal File Format")
+used internally by the Yothalot framework for intermediate result files.
