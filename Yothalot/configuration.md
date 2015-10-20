@@ -1,0 +1,91 @@
+# Configuration of Yothalot
+
+When you have [installed Yothalot](copernica-docs:Yothalot/installation "Installation")
+you can configure it by changing settings in the configuration file "config.txt
+located in /etc/yothalot. This will change the default behavior of Yothalot.
+The configuration file should be self explanatory. Its contents is listed
+below.
+
+```
+#
+#   Configuration file for Yothalot application.
+#
+#
+#
+#   RabbitMQ configuration.
+#
+#   Yothalot uses RabbitMQ message queues to pass messages with information
+#   on the mapreduce jobs between nodes. The address and login data to access
+#   these queues should be configured here. The RabbitMQ host name, login name,
+#   password and virtual host can be set via, rabbitmq-host, rabbitmq-login,
+#   rabbitmq-password, and rabbitmq-vhost respecively. If these are not set at
+#   all the will switch to their default values, which are: localhost, guest, 
+#   guest, and /.
+#   Yothalot uses names for queues several of its queues The names of these queues
+#   can be changed. With rabbitmq-jobs you can set set the name of the queue that
+#   holds the messages of all the jobs. With rabbitmq-mapreduce you can set
+#   the name of the queue that holds the mapreduce messages. With rabbitmq-race
+#   you can set the name of the queue that holds all the racer messages. With
+#   rabbitmq-preload you can set the number of messages that pre-load.
+
+rabbitmq-host:          localhost
+rabbitmq-login:         guest
+rabbitmq-password:      guest
+rabbitmq-vhost:         /
+rabbitmq-jobs:          jobs
+rabbitmq-mapreduce:     mapreduce
+rabbitmq-racer          racer
+rabbitmq-preload:       10
+
+
+#
+#   Inter-node communication
+#
+#   The nodes communicate with each other via messages yet there has to 
+#   be agreement over who is the master node that arranges these messages. The location
+#   of the master node and the port to which it is listening can be set via master.
+#   In the future a web interface will become available. To port of this
+#   web interface can be set via www-port
+
+master:                 http://localhost:8997
+www-port:               8997
+
+
+#
+#   Limits
+#
+#   Yothalot uses in general all the resources that you have available up to the
+#   amount that your license permits. If you use your Yothalot cluster also for
+#   other task you can set the number of nodes that Yothalot is allowed to use
+#   and the max number of jobs that may run concurrently, so Yothalot does not
+#   use all the resources.
+
+max-nodes:              100
+max-jobs:               4
+
+
+#
+#   Logging
+#
+#   Yothalot will keep a log of its task. The location of this log can be
+#   set via log-file. You can limit the file size of the log file with
+#   log-maxfilesize. When the log file exceeds this limit, the log file will 
+#   be copied to logfile.0 and new log files will be written to a clean logfile.
+#   If there is laready a logfile.0 the contents of logfile.0 will be copied
+#   to logfile.1, ad infinitum. However, you can set a maximum of this log history
+#   via log-maxhistory.
+
+
+log-file:               /path/to/YothalotDir/yothalot.log
+log-maxfilesize:        10KB
+log-maxhistory:         100
+
+#
+#   Location of GlusterFS
+#
+#   Yothalot needs to know where GlusterFS is mounted in order to have access to 
+#   the data and to be able to write and read temporary files to GlusterFS. This
+#   information is passed to Yothalot via base-directory.
+
+base-directory:         /GlusterFs/mountpoint/
+```
