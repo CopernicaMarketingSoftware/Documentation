@@ -108,6 +108,8 @@ Yothalot::Connetion myConnection("rabbit1.example.com", "yothalot");
 // Create a Yothalot Job
 Yothalot::Job job(myConnection, "a.out");
 
+// ... 
+
 // Start the job
 job.start();
 

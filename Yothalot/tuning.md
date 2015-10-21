@@ -127,6 +127,3 @@ also make calls to your `reduce()` method. If you want to restrict the number of
 processes that can make calls to the user-supplied `reduce()` function at the 
 same time (for example because you use a database connection inside the 
 `reduce()` method), you better use the *maxprocesses* setting.
-
-
-
