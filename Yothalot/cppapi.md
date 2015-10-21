@@ -8,7 +8,7 @@ The API consist of a blueprint on how to write a mapreduce program and an
 API that can be used to set up a connection create jobs and send them 
 to the Yothalot cluster. Writing a mapreduce job in C++ normally comes
 down to write a [program](copernica-docs:Yothalot/cpp-program) that 
-implements your mapreduce algorithm. This program can be send to the 
+implements your mapreduce algorithm. This program can be sent to the 
 Yothalot cluster via job [Yohtalot::Job](copernica-docs:Yothalot/cpp-job)
 or by [hand](@todo) if you like.
 
