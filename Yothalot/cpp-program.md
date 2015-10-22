@@ -143,9 +143,9 @@ class MyMapReduce : public Yothalot::MapReduce
 {
     /**
      *  Implementation for the reduce function
-     *  @param  Key         The key for which values should be reduced
-     *  @param  Values      Iterateable object with values linked to the key
-     *  @param  Writer      Object to which the reduced value can be sent
+     *  @param  Yothalot::Key         The key for which values should be reduced
+     *  @param  Yothalot::Values      Iterateable object with values linked to the key
+     *  @param  Yothalot::Writer      Object to which the reduced value can be sent
      */
     virtual void function reduce(Yothalot::Key key, Yothalot::Values values, Yothalot::Writer writer) override
     {
@@ -183,8 +183,8 @@ class MyMapReduce : public Yothalot::MapReduce
 {
     /**
      *  Implement a write function:
-     *  @param  mixed       The key for which the result comes in
-     *  @param  mixed       Fully reduced value
+     *  @param  Yothalot::Key   The key for which the result comes in
+     *  @param  Yothalot::Value Fully reduced value
      */
     virtual void write(Yothalot::Key key, Yothalot::Value value) override
     {

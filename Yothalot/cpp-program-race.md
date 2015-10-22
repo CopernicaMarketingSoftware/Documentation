@@ -1,4 +1,4 @@
-# Writing a Race C++ Program
+# Writing a C++ Race Program
 
 To run your Race algorithm on a Yothalot cluster you have to implement
 the algorithm in a class and create a little main function that uses this 
@@ -57,7 +57,36 @@ resources and multiple calls to `process()` may happen at the same time,
  therefore, you can have race conditions if the objects try to access
 the same resource at the same time.
 
-# Create the program
+## Processing
+The part that needs to be implemented is the `process()` method. In this
+method you implement your algorithm that processes the data. The method receives
+one parameter, the data of type std::string, and has to return. If it returns a zero, the job
+will continue with processing the data. Otherwise the value will be returned
+by the job and the job will stop. This is useful if you are just interested
+in one result but not necessarily all results.
+
+```cpp
+class MyRace : public Yothalot::Race
+{
+public:
+    /**
+     *  Implementation for a process function
+     *  @param  std::string       Value that is being mapped
+     *  @return Yothalot::Value   Your return value
+     */
+    virtual Yothalot::Value process(Yothalot::Value value) override
+    {
+        // @todo:   implement your process algorithm
+        
+        // if the result is zero the job will continue else the result 
+        // will be returned by the job and the job will be stopped
+        // We will process all data so we can just return a zero
+        return  0;
+    }
+}
+```
+
+## Create the program
 
 After implementing your mapreduce algorithm you have to create a little 
 program that uses this implementation. The program should look as follows:
