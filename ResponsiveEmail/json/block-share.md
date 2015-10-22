@@ -1,6 +1,6 @@
 # Share block
 
-The share block provides the ability to share a link to social media pages so
+The `share` block provides the ability to share a link to social media pages so
 people can easily post a link to your website or product.
 
 All available properties of this block type are mentioned in the table below.
