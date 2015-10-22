@@ -1,34 +1,35 @@
 # Yothalot\Race
 
-The Yothalot\Race class allows you to write a mapreduce task with empty
-mapper and writer methods. This is useful if you just want to process a 
-lot of data and want to avoid the overhead of the reducer and writer steps.
-Moreover, the *Yothalot\Race* class overs you the possibility to stop a
-job without processing all the data. Using Yothalot\Race is as simple as
-using Yothalot\MapReduce. Instead of creating a class that implements
-the Yothalot\MapReduce interface you create a class that implements the 
-Yothalot\Race interface. You can use this class like you use your mapreduce
-classes.
+Yothalot was designed to run map/reduce jobs. However, since Yothalot
+had to be able distribute jobs over different servers for that, we 
+decided to also support different types of jobs: like race jobs.
 
+The *Yothalot\Race* class offers you the possibility to start a number of
+parallel running PHP scripts. The result of the first job to 
+complete is returned back to you. This could for example be useful if you
+try to locate information in a large set of log files -- as soon as one
+job finds the appropriate entry in the log the result is returned an all
+other jobs are stopped.
 
 ## Yothalot\Race interface
 
-Your class that processes files in a race has to implement the Yothalot\Race
-interface. This interface looks as follows:
+To write a race job, you have to create a class that implements ths
+Yothalot\Race interface. This interface looks as follows:
+
 ```php
+<?php
+interface Yothalot\Race
 {
     public function includes();
     public function process();
 }
+?>
 ```
-When you write your own race classes, keep in mind that the Yothalot
-framework distributes a job over multiple servers, and runs it in parallel. 
-It is therefore possible that your object gets serialized and is moved to
-a different server, and that multiple calls to process happen at the same time.
-After all you want to process your files simultaneously. However, calling 
-process at the same time could lead to race conditions (the type of race 
-you do want to avoid) if calls are trying to access the same resource
-at the same time.
+When you write your own race class, keep in mind that the Yothalot
+framework distributes the job over multiple servers. It is therefore possible 
+that your object gets serialized and is moved to a different server, and 
+that multiple instances are running at the same time.
+
 
 ## Serializing and unserializing
 
@@ -38,6 +39,7 @@ included before the object is unserialized, you can name these files in the
 `includes()` method.
 
 ```php
+<?php
 class MyRace implements Yothalot\Race
 {
     /**
@@ -51,6 +53,7 @@ class MyRace implements Yothalot\Race
     
     // @todo implement the other methods
 }
+?>
 ```
 
 PHP classes are serializable by default. If you however want to write your own
@@ -58,6 +61,7 @@ custom serialize and unserialize algorithm, you can simply implement the
 [Serializable interface](http://php.net/manual/en/class.serializable.php):
 
 ```php
+<?php
 class MyRace implements Yothalot\Race, Serializable
 {
     /**
@@ -89,18 +93,19 @@ class MyRace implements Yothalot\Race, Serializable
     
     // @todo implement other methods from the 
 }
+?>
 ```
 
 ## Processing
 
-The last part that needs to be implemented is the `process()` method. In this
-method you implement your algorithm that processes the data. The method receives
-one parameter, the data, and has to return. If it returns a zero, the job
-will continue with processing the data. Otherwise the value will be returned
-by the job and the job will stop. This is useful if you are just interested
-in one result but not necessarily all results.
+The final method that should be implemented is the `process()` method. In this
+method you implement your data processing algorithm. The method receives
+one parameter, the data, and should return NULL if the algorithm was not completed
+(the job did not win the race), or anything other than NULL if the algorithm
+is won. 
 
 ```php
+<?php
 class MyRace implements Yothalot\Race
 {
     /**
@@ -110,20 +115,18 @@ class MyRace implements Yothalot\Race
      */
     public function process($value)
     {
-        // @todo:   implement your process algorithm that 
-        //          uses value and returns a result         
-        
-        // if the result is zero the job will continue else the result 
-        // will be returned by the job and the job will be stopped
-        return result;
+        // does this job win the race?
+        if (check_if_data_contains_what_we_were_looking_for($value))
+        {
+            // return the found data (all other running sub-jobs will be killed)
+            return extract_appropriate_data($value);
+        }
+        else
+        {
+            // data was not found, let other processes continue
+            return NULL;
+        }
     }
-
-    // @todo implement other methods
 }
+?>
 ```
-
-
-
-
-
-

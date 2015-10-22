@@ -34,7 +34,7 @@ object and sent to the cluster.
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
-* [Class Yothalot\Job with Yothalot\MapReduce Objects](copernica-docs:Yothalot/php-job "Job with mapreduce objects")
+* [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
 
 
