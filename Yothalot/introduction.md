@@ -4,8 +4,8 @@ Yothalot is an application for running parallel map/reduce algorithms on big
 data clusters. If you have a lot of data and want to process it using either
 native C++ or simple PHP scripts, Yothalot is the tool for you.
 
-Yothalot is designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
-distributed file system for storing distributed data, and you can create a Yothalot cluster
+Yothalot was designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
+distributed file system for storing distributed data, and you can start the cluster
 by simply starting up the Yothalot process on each of the servers in your network. The map/reduce
 jobs that you assign to the cluster are automatically split up in smaller tasks
 and are sent to cluster nodes that have local access to the files being
