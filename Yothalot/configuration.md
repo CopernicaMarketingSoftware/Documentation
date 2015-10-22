@@ -12,6 +12,11 @@ below.
 #
 #
 #
+#
+#   File that holds licensing information
+
+license:                /etc/yothalot/license.txt
+
 #   RabbitMQ configuration.
 #
 #   Yothalot uses RabbitMQ message queues to pass messages with information
@@ -58,7 +63,8 @@ www-port:               8997
 #   amount that your license permits. If you use your Yothalot cluster also for
 #   other task you can set the number of nodes that Yothalot is allowed to use
 #   and the max number of jobs that may run concurrently, so Yothalot does not
-#   use all the resources.
+#   use all the resources. Note: if you set max-nodes larger than your license
+#   permits the max-nodes will be equal the the max-nodes of your license.
 
 max-nodes:              100
 max-jobs:               4
