@@ -225,14 +225,16 @@ program that uses this implementation. The program should look as follows:
 int main(int argc, char* argv[])
 {
    // Instantiate your class
-   MyMapReduce* myMR = new MyMapReduce();
+   MyMapReduce myMR;
    
    // Construct a Yothalot::Program object. You pass the instantiation of
    // your mapreduce class as a first argument and you pass argc and argv
-   // as the second and third argument. 
-   Yothalot::Program myYothalotProgram(myMR, argc, argv);
+   // as the second and third argument, so that the yothalot framework
+   // can process the command line arguments to find out whether to start
+   // the algorith in map, reduce or write state
+   Yothalot::Program myYothalotProgram(&myMR, argc, argv);
    
-   // return
+   // run, run, run!
    return myYothalotProgram.run();
 }
 ```
