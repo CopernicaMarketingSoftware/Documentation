@@ -1,8 +1,8 @@
 #Yothalot::Path
 
 The *Path* class is a utility class that helps with dealing with relative
-and absolute paths on the Yothalot cluster. The public interface of this
-class looks like follows:
+and absolute paths on the Yothalot cluster (see [Files and paths](copernica-docs:Yothalot/files "Files and paths")
+for some background). The public interface of this class looks like follows:
 ```cpp
 class Path
 {
@@ -10,7 +10,7 @@ class Path
     std::string absolute();
     std::string relative();
 }
-
+```
 ## Constructor. 
 The constructor takes one argument, a string that holds the relative or absolute path to
 a file.
