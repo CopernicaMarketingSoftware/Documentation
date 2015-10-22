@@ -1,7 +1,7 @@
 # Property `icon`
 
 The property `icon` allows you to set the type and size of the platform icon
-for the follow and share blocks. The property value should be a nested JSON object. 
+for the `follow` and `share` blocks. The property value should be a nested JSON object. 
 The following table lists all sub-properties of the icon property:
 
 ## Icon properties
