@@ -226,10 +226,10 @@ echo(file_get_contents($path->absolute()));
 ?>
 ````
 
-Maybe you have noticed that we have used the [Yothalot\Path](copernica-docs:Yothalot/files "Files and paths")
+Maybe you have noticed that we have used the [Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path")
 class to find the full path name to the output file. Since you work with files on
 a distributed cluster, it is possible that similar files have other names
 on other servers (if the servers use different mount points). Relative and absolute
-paths can be a bit cumbersome then. The [Yothalot\Path](copernica-docs:Yothalot/files "Files and paths")
+paths can be a bit cumbersome then. The [Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path")
 class is a solution for this.
 
