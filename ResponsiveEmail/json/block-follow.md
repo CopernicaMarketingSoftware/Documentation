@@ -45,6 +45,12 @@ the basic usage, showing a set of follow buttons.
                 "link"      : {
                     "url"       : "https://facebook.com/copernica"
                 }
+            },
+            {
+                "platform"  :   "twitter",
+                "link"      : {
+                    "url"       : "https://twitter.com/copernica"
+                }
             } ]
         } ]
     }
