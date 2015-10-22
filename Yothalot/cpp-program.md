@@ -85,7 +85,125 @@ As you may have noticed the MapReduce class uses types: `Reducer`, `Writer`,
 `key`, `value`, and `values`. You can find the properties of these types
 on our [Yothalot Types](copernica-docs:Yothalot/cpp-types) page.
 
-# Create the program
+
+## Mapping
+
+The `map()` method is called when data is being mapped. It receives two parameters:
+the input data as std::string and a `Yothalot::Reducer` object. The data is
+passed to the mapper member via member `add()`, `filename()`, or `server()`
+of the [Yothalot::Job](copernica-docs:Yothalot/cpp-job).
+
+The `Yothalot::Reducer` object is a very simple object with only one method: `emit()`.
+You can emit key/value pairs to the reducer, that will later be reduced.
+
+```cpp
+class MyMapReduce : public Yothalot::MapReduce
+{
+    public :
+    /**
+     *  Implementation for a mapper function
+     *  @param  std::string           Value that is being mapped
+     *  @param  Yothalot::Reducer     Reducer object to which we may emit key/value pairs
+     */
+    virtual void map(const std::string &value, Yothalot::Reducer &reducer) override
+    {
+        // imagine that the to-be-mapped data is a string, and we want to 
+        // emit key/value pairs for all the words found in the string
+
+        std::istringstream iss(value);
+        std::string word;
+        while(iss >> word)
+        {   
+            reducer.emit(word, 1);
+        }
+
+    }
+    // @todo implement other methods
+}
+```
+
+The `emit()` method in the `Yothalot::Reducer` class takes two parameters: a
+Yothalot::Key and a Yothalot::Value. See
+[Yothalot Classes](copernica-docs:Yothalot/cpp-classes "Yothalot Classes")
+for a description of these types.
+
+
+## Reducing
+
+When the same key was multiple times emitted by the `map()` method, the different
+values are reduced into a single new value. This is done by the `reduce()`
+method.
+
+The `reduce()` method takes three parameters: the key for which values are going
+to be reduced, a traversable set of two or more values that are linked to that
+key, and a `Yothalot::Writer` object to which you can emit the reduced value.
+
+```cpp
+class MyMapReduce : public Yothalot::MapReduce
+{
+    /**
+     *  Implementation for the reduce function
+     *  @param  Key         The key for which values should be reduced
+     *  @param  Values      Iterateable object with values linked to the key
+     *  @param  Writer      Object to which the reduced value can be sent
+     */
+    virtual void function reduce(Yothalot::Key key, Yothalot::Values values, Yothalot::Writer writer) override
+    {
+        // total of all values
+        int total = 0;
+        
+        // iterate over the values
+        for (auto value : values) total += value;
+        
+        // emit the result to the writer
+        writer.emit(total);
+    }
+    
+    // @todo implement other methods
+}
+```
+
+The `emit()` method in the `Yothalot::Writer` class takes one parameter: the
+reduced value of type [Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Yothalot Classes")
+Keep in mind that it is very well possible that the reduce() method gets called 
+more than once for the same key. This for example happens when so many keys were 
+found that multiple chained reducers are started. The value that you emit might 
+therefore be an intermediate value that is going to be reduced for a second or
+third time.
+
+
+## Writing
+
+After all mappers ran, and everything has been reduced to single keys with single
+values, the results are ready to be written to some kind of storage. The Yothalot
+framework calls your `write()` method for this.
+
+```cpp
+class MyMapReduce : public Yothalot::MapReduce
+{
+    /**
+     *  Implement a write function:
+     *  @param  mixed       The key for which the result comes in
+     *  @param  mixed       Fully reduced value
+     */
+    virtual void write(Yothalot::Key key, Yothalot::Value value) override
+    {
+        // simply write to an output file
+        std::ofstream outfile;
+        outfile.open("/path/to/output.txt", std::ios_base::app);
+        outfile << key << " : " << value << std::endl; 
+    }
+}
+```
+
+It is completely up to you to decide where you want to write your results to.
+Keep in mind however that you can [tune your job](copernica-docs:Yothalot/tuning)
+in such a manner, that multple writers can be started at the same time. You should
+therefore use some kind of locking if you want all your writers to write to the
+same resource.
+
+
+## Create the program
 
 After implementing your mapreduce algorithm you have to create a little 
 program that uses this implementation. The program should look as follows:
