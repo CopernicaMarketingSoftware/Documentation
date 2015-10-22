@@ -1,16 +1,22 @@
 # C++ API
 
-The C++ API is for those who need to have the speed of a native implementation
-of their mapreduce algorithm. You can use it to write your mapreduce jobs
-in C++ and send them to the Yothalot cluster, by hand, or automatically.
+The C++ API is for those who need the speed of a native implementation
+for mapreduce algorithms. You can use the API to write mapreduce jobs
+in C++ and send them to the Yothalot cluster.
 
-The API consist of a blueprint on how to write a mapreduce program and an
-API that can be used to set up a connection create jobs and send them 
-to the Yothalot cluster. Writing a mapreduce job in C++ normally comes
-down to write a [program](copernica-docs:Yothalot/cpp-program) that 
-implements your mapreduce algorithm. This program can be sent to the 
-Yothalot cluster via job [Yohtalot::Job](copernica-docs:Yothalot/cpp-job)
-or by [hand](@todo) if you like.
+With the C++ API you write a C++ executable (so you do have to include 
+a main() function in your algorithm). This executable has to be installed on
+each of the servers in the Yothalot cluster (it could therefore be useful
+to store the executable on GlusterFS, so that each of the servers automatically
+has access to it). The Yothalot process starts up this executable with
+specific command line arguments and input data, so that (a part of the)
+mapreduce algorithm gets executed. You do not have to process these
+command line arguments and input, because that is done by the mapreduce
+framework.
+
+To send the job to the Yothalot cluster, you simply have to start the
+executable without any command line arguments -- or use the [Yohtalot::Connection](copernica-docs:Yothalot/cpp-connection)
+and [Yohtalot::Job](copernica-docs:Yothalot/cpp-job) classes from the C++ API to start the job programmatically. 
 
 ## Installation
 
