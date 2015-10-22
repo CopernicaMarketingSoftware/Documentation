@@ -117,7 +117,7 @@ on this website that explains all the settings from this config file.
 When you have all the processes running: a distributed GlusterFS file system,
 a RabbitMQ server, and one or more Yothalot processes on different
 machines in your network, you're ready to start running map/reduce jobs. To
-create a map/reduce job, you can one of our API's:
+create a map/reduce job, you can use one of our API's:
 
 * [PHP API](copernica-docs:Yothalot/phpapi)
 * [C++ API](copernica-docs:Yothalot/cppapi)
