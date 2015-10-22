@@ -9,15 +9,14 @@ Each platform json block inside the `platforms` can have the following sub-prope
 
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [platform] | _string_ | The name of the platform
-|
+| platform | _string_ | The name of the platform.  |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`.                                            |
-| [img](copernica-docs:ResponsiveEmail/json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes`                                      |
+| [img](copernica-docs:ResponsiveEmail/json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes`.                                      |
 
 
 ## Example usage
 
-The following input JSON shows how to show platforms in a follow block. This is
+The following input JSON shows how to set platforms in a follow block. This is
 the basic usage, showing a set of follow buttons.
 
 ```javascript
