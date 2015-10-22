@@ -59,7 +59,7 @@ that allows you to write and deploy your map/reduce jobs. Because PHP is
 crazy simple and at the same time hugely popular, you can easily write 
 map/reduce jobs - or find people who can do that for you.
 
-Because PHP is a scripting language, you do not have to compile and code. 
+Because PHP is a scripting language, you do not have to compile any code. 
 When you're testing and debugging your algorithm, you can simply save your changes, and
 schedule your job. Writing map/reduce algorithms has never been easier.
 
