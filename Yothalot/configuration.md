@@ -1,14 +1,14 @@
 # Configuration of Yothalot
 
 When you have [installed Yothalot](copernica-docs:Yothalot/installation "Installation")
-you can configure it by changing settings in the configuration file "config.txt
-located in /etc/yothalot. This will change the default behavior of Yothalot.
-The configuration file should be self explanatory. Its contents is listed
+you can configure it by changing settings in the configuration file `config.txt`
+located in `/etc/yothalot`. This will change the default behavior of Yothalot.
+The configuration file should be self explanatory. Its content is listed
 below.
 
 ```
 #
-#   Configuration file for Yothalot application.
+#   Configuration file for the Yothalot application.
 #
 #
 #
@@ -77,7 +77,7 @@ max-jobs:               4
 
 
 log-file:               /path/to/YothalotDir/yothalot.log
-log-maxfilesize:        10KB
+log-maxfilesize:        10MB
 log-maxhistory:         100
 
 #
