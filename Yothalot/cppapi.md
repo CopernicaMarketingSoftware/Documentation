@@ -12,6 +12,14 @@ implements your mapreduce algorithm. This program can be sent to the
 Yothalot cluster via job [Yohtalot::Job](copernica-docs:Yothalot/cpp-job)
 or by [hand](@todo) if you like.
 
+## Installation
+
+If you want to use the C++ API you have to install Yothalot and the Yothalot
+library.
+
+* [How to install Yothalot](copernica-docs:Yothalot/installation "Installation")
+* [How to install the Yothalot C++ library](copernica-docs:Yothalot/cpp-install "C++ Library Installation")
+ 
 
 ## The Yothalot mapreduce program
 
@@ -23,9 +31,9 @@ some specific rules so Yothalot can use it.
 
 ## The Yothalot race program
 
-To process a lot of data simultaneously but only get the result that is
-available first, you simply have to create program that follows some specif
-rules so Yothalot can use it. 
+If you want to process a lot of data simultaneously but do not want to use
+a reduce step, you can create a program that follows the Race API so Yothalot
+can use it.
 
 * [Race program "Race program"](copernica-docs:Yothalot/cpp-program-race "Race")
 

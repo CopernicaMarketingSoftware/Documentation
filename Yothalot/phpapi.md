@@ -34,7 +34,7 @@ the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 ## The Yothalot\Race interface
 
 If you want to process a lot of data simultaneously but do not want to use
-a reduce step, you have to create a class that implements the
+a reduce step, you can create a class that implements the
 [Yothalot\Race](copernica-docs:Yothalot/php-race "Race") interface.
 
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
