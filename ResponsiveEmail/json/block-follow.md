@@ -1,6 +1,6 @@
 # Follow block
 
-The follow block provides the ability to add links to your social media pages so
+The `follow` block provides the ability to add links to your social media pages so
 people can follow you.
 
 All available properties of this block type are mentioned in the table below.
@@ -24,7 +24,7 @@ All available properties of this block type are mentioned in the table below.
 
 ## Example usage
 
-The following input JSON shows how to show a follow block in a document. This is
+The following input JSON shows how to show a `follow` block in a document. This is
 the basic usage, showing a set of follow buttons.
 
 ```javascript
