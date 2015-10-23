@@ -1,8 +1,8 @@
 # The Yothalot::Scalar Class
 
-The Yothalot::Scalar class is used as a building block for the Yothalot::Key 
-and Yothalot::Value classes. The Yothalot::Scalar class acts as a type that
-can hold types of, int32_t, int64_t, char *, std::nullptr_t and doubles.
+The Yothalot::Scalar class is used as a building block for the 
+[Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple) class. The
+Yothalot::Scalar class acts as a type that can hold types of, int32_t, int64_t, char *, std::nullptr_t and doubles.
 Its public interface looks like:
 
 ```cpp

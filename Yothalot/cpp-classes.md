@@ -1,38 +1,41 @@
 # Yothalot Classes
 
 You have to use some Yothalot specific classes to implement your mapreduce
-class. These classes are `Reducer`, `Writer`, `Key`, `Value`,  `Values'.
-A description of these types is given below.
+class. These classes are `Yothalot::Reducer`, `Yothalot::Writer`, `Yothalot::Key`,
+`Yothalot::Value`, and `Yothalot::Values`. A description of these types is given below.
 
-## The Reducer class
-The reducer class is used to emit a key, value pair from the mapper step
+## The Yothalot::Reducer class
+The `Yothalot::Reducer` class is used to emit a key value pair from the mapper step
 to the reducer step. The class has one member function, `emit()`, that takes
-two arguments, the first argument is the key and the second argument 
-is the value. Its usage is:
+two arguments, the first argument is the key of type `Yothalot::Key` and the second argument 
+is the value of type `Yothalot::Value`. Its usage is:
 ```cpp
 /**
  * emit a key, value pair to the reducer step
  */
 reducer.emit(key, value);
 ```
-where reducer is an instance of the Reducer class, key has type Key and
-value has type Value.
+where `reducer` is an instance of the `Yothalot::Reducer` class, `key` has type 
+`Yothalot::Key` and `value` has type `Yothalot::Value`.
 
-## The Writer class
-The writer class is used to emit a value from the reducer step to the writer
+## The Yothalot::Writer class
+The `Yothalot::Writer` class is used to emit a value from the reducer step to the writer
 step. The class has one member function, `emit()`, that takes one argument
-of type Value. Its usage is:
+of type `Yothalot::Value`. Its usage is:
 ```cpp
 /**
  *  emit a value to the writer step
  */
 writer.emit(value);
 ```
-where writer is an instance of the writer class and value has type Value.
+where `writer` is an instance of the `Yothalot::Writer` class and `value` 
+has type `Yothalot::Value`.
 
-## The Key and Value classes
-The Yothalot::Key and Yothalot::Value classes are std::vectors with elements 
-of type [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar).
+## The Yothalot::Key and Yothalot::Value classes
+
+The `Yothalot::Key` and `Yothalot::Value` type definitions of 
+[Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple). These tuples can hold
+fields of type [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar).
 
 
 ## The Values class
