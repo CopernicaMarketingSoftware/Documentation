@@ -61,8 +61,9 @@ Another way to construct a Record is to create it via an
 constructor will read the data from the given input log and parse the
 stored fields back into a proper Record. This process can of cours fail,
 in which case it will throw a std::runtime_error.
-Note that the record ins consumed from the input so if you want to reuse
-the data again it should be copied to another file.
+Note that the record is consumed from the input so if you want to reuse
+the data again you should create a new instance of the `Yotholot::Input`
+class.
 ```cpp
 Yothalot::Record myRecord(input);
 ```
