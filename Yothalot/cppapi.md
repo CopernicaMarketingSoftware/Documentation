@@ -52,7 +52,6 @@ that:
 
 * [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
 * [Class Yothalot::Job with Yothalot::MapReduce Objects](copernica-docs:Yothalot/cpp-job "Job with mapreduce objects")
-* [Class Yothalot::Job with Yothalot::Race Objects](copernica-docs:Yothalot/cpp-job-race "Job with race objects")
 
 
 ## Information about the job
