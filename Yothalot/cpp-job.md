@@ -26,7 +26,7 @@ public:
     // running the job
     void start();
     void detach();
-    void wait();
+    Yothalot::Result wait();
     
     // tuning the job
     void modulo(size_t modulo);
@@ -61,7 +61,8 @@ data before you start the job. All the data that you add to the job will be pass
 to the `map()` method in your own mapreduce object.
 
 There is a one-to-one relation between the number of times that you call the 
-`add()` method and the number of mapper processes that are started on the cluster: 
+`add()` method and the number of mapper processes, or process processes in the case
+of a Race, that are started on the cluster: 
 every call to the `add()` method automatically results in a mapper process that 
 is started, and the value that you pass to this add() function is used as the 
 input data for the `map()` method of this mapper process.
@@ -162,6 +163,12 @@ automatically detached when the program ends. The only effect of the `detach()`
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
 
+## Getting information from your job
+
+Besides that the `wait()` method blocks your program while it waits for the
+job to complete, the method also return a [Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
+object with all kind of information about the performance and behavior of
+the job.
 
 ## Tuning the job
 
