@@ -40,25 +40,6 @@ public:
 }
 ```
 
-# Yothalot\Connection
-
-With the `Yothalot\Connection` class you can create a connection to the
-Yothalot cluster, which is needed to send jobs to this cluster. Internally, the 
-`Yothalot\Connection` object connects to your RabbitMQ server, and all jobs
-that you create, are sent to this RabbitMQ server.
-
-Because in practice the connection to the Yothalot cluster is essentially
-a connection to RabbitMQ, you need to pass the login credentials for the
-RabbitMQ server to the constructor. There are only two methods available:
-
-```php
-class Yothalot\Connection
-{
-    public function __construct(array $settings);
-    public function flush();
-}
-```
-
 ## Constructor
 
 The constructor takes six parameters, all strings, that provide the connection
@@ -98,7 +79,7 @@ Internally, when jobs are created, they are sent  over the AMQP connection
 to RabbitMQ. If the connection gets congested, internal buffers might be 
 created. In normal circumstances, this is not much of a problem, because
 all these buffers get flushed when the connection is destructed, but if 
-you want to enforce this flush call, you can explicitly call the flush()
+you want to enforce this flush call, you can explicitly call the `flush()`
 method.
 
 ```cpp
