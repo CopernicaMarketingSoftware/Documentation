@@ -1,10 +1,11 @@
 # Yothalot::Job
 
-With the **Yothalot::Job** class you can create, tune and control mapreduce 
-jobs. A job holds the mapreduce algorithm, the input data and several
-performance settings.
+With the **Yothalot::Job** class you can create, tune and control mapreduce
+and race jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
+or [race](copernica-docs:Yothalot/cpp-program-race "Race") program, the
+input data and several performance settings.
 
-The most important member functions of Yothalot::Job are the
+The most important member functions of Yothalot::Job are the 
 ones with which you add input data to the job, and the method to start the
 job. You can also set all sort of tuning parameters to make your job faster,
 or to reduce the amount of resources that your job takes.
@@ -14,8 +15,8 @@ namespace Yothalot{
 class Job
 {
 public:
-    // Constructor
-    Job(const Yothalot::Connection &connection, const std::string &mapReduceProgName);
+    // Constructor for a job
+    Job(const Yothalot::Connection &connection, const std::string &mapReduceOrRaceProgName);
     
     // adding input data to a job
     void add(const std::string &data);
@@ -42,11 +43,8 @@ public:
 ## Constructor
 
 The constructor takes two parameters, a [Yothalot::Connection](copernica-docs:Yothalot/cpp-connection) 
-and the filename of your program that holds the mapreduce algorithm.
-
-For more information on how to create your own mapreduce objects, see our 
-[hello world!](copernica-docs:Yothalot/@todo: create helloworld-cpp "Hello world!")
-example.
+and the filename of your program that holds the [mapreduce](copernica-docs:Yothalot/cpp-program)
+or [race](copernica-docs:Yothalot/cpp-program-race "Race") algorithm.
 
 ```cpp
 // create a connection
@@ -54,13 +52,6 @@ Yothalot::Connection connection("rabbit1.example.com", "yothalot");
 
 // create a job
 Yothalot::Job job(connection, "a.out");
-// feed the job with input data
-job.add("input data");
-job.add("more data");
-job.add("even more data");
-
-// start the job
-job.start();
 ```
 
 ## Adding input data
@@ -84,6 +75,17 @@ file is available on every node in the cluster, because you can not know in
 advance on which server a job is going to run. If each Yothalot node has
 access to your GlusterFS cluster, this is guaranteed.
 
+```cpp
+// create a connection
+Yothalot::Connection connection("rabbit1.example.com", "yothalot");
+
+// create a job
+Yothalot::Job job(connection, "a.out");
+// feed the job with input data
+job.add("input data");
+job.add("more data");
+job.add("even more data");
+```
 
 ## Controlling the server
 
@@ -117,9 +119,6 @@ job.file("file specific data", "path/to/some/file.txt");
 // add data that can best be processed on a server that has local
 // access to a specific file, and the data is the file name itself
 job.file("path/to/some/file.txt");
-
-// start the job
-job.start();
 ```
 
 When the jobs are distributed over the Yothalot nodes, the master Yothalot
@@ -162,13 +161,6 @@ it is not necessary to explicitly call `detach()` because active jobs are
 automatically detached when the program ends. The only effect of the `detach()` 
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
-
-## Getting information from your job
-
-Besides that the `wait()` method will block your script, the method will also
-return a [Yothalot\Results](copernica-docs:Yothalot/php-result "Result")
-object with all kind of information on the performance and behavior of
-the job. 
 
 
 ## Tuning the job
