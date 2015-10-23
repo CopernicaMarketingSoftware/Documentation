@@ -103,13 +103,42 @@ website that explains how to do this:
 ## Installation of Yothalot
 
 After GlusterFS and RabbitMQ have been installed and configured, you're ready to
-install Yothatlot. At this point in time, we do not have finished our download
-section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com).
+install Yothatlot. You can download packages of the latest version of Yothalot
+for Debian based (Debian, Ubuntu, etc) and Red Hat based environments 
+(Red Hat, Fedora, CentOS, etc) from our [Download page](/download "Download Page").
+These packages should be installed on the nodes that will form your Yothalot cluster.
+You can install these packages with:
+```bash
+$ sudo rpm -i /path/to/yothalot-version.rpm
+```
+for Red Hat based systems or:
+```bash
+$ sudo dpkg -i path/to/yothalot-version.deb
+```
+for Debian based systems.
 
-The yothalot process reads its configuration from the `/etc/yothalot/config.txt`
-config file. In this configuration file you can configure your Yothalot process.
+** Note: At this point in time, we do not have finished our download
+section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
+
+After the installation of Yothalot on all the nodes in the cluster you have
+to configure Yothalot. The yothalot process reads its configuration standard 
+from the `/etc/yothalot/config.txt` config file. In this configuration file you can configure your Yothalot process.
 We have a special [configuration section](copernica-docs:Yothalot/configuration)
 on this website that explains all the settings from this config file.
+
+## Getting a license
+
+You can get a license via the [License Page](/license). Your license file should
+be installed on each node in the path that you can specify in the 
+[configuration file](copernica-docs:Yothalot/configuration).
+
+
+## Starting the processes
+
+After having installed Yothalot on all the nodes that you want to use and
+installed all the license files, you have to start a Yothalot process on
+each node. You do not have to add extra command line arguments to specify
+which node is the master node. This will be figured out by Yothalot itself.
 
 
 ## Installation of an API
