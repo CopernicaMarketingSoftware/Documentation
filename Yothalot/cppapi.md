@@ -63,6 +63,15 @@ is:
 * [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
 
 
+## Start up a job manually
+
+You can use the above classes to send a job to the Yothalot cluster.
+However, since you have written a complete executable you can start up
+a job manually if you apply the appropriate arguments to your program.
+
+* [Start up a job manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job")
+
+
 ## Classes 
 
 In order to create a Yothalot MapReduce program you have to use some specific
