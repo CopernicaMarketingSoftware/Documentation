@@ -51,7 +51,7 @@ and send it to the Yothalot cluster. The following classes are necessary for
 that:
 
 * [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
-* [Class Yothalot::Job with Yothalot::MapReduce Objects](copernica-docs:Yothalot/cpp-job "Job with mapreduce objects")
+* [Class Yothalot::Job ](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
 
 
 ## Information about the job
