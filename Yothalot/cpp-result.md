@@ -10,8 +10,8 @@ behavior of the job by using its [tuning settings](copernica-docs:Yothalot/tunin
 We provide you all the information about a finished job in the **Yothalot::Result** class. 
 This **Yothalot::Result** class holds results on the behavior of a job.
 An instance of this class that holds all the information of the job 
-is returned by the `wait()` method of the **Yothalot::Job class**. The
-class provides you all the information on the behaviour of the job you
+is returned by the `wait()` method of the [Yothalot::Job class](copernica-docs:Yothalot/cpp-job "Yothalot::Job").
+The class provides you all the information on the behaviour of the job you
 want and probably some extra. However, if there is relevant information
 that you would like to have but is currently not provided, please contact
 us by sending an email to [info@copernica.com](mailto:info@copernica.com)
@@ -33,12 +33,12 @@ public:
     /**
      *  Get the time when the job was started (in Unix time)
      */
-    size_t started();
+    double started();
     
     /**
      *  Get the runtime of the job (in seconds)
      */
-    size_t runtime();
+    double runtime();
 
     /**
      *  Get the statistics class of the mappers of the job
@@ -74,7 +74,7 @@ std::cout << "The job started on: " << result.started() << std::endl;
 std::cout << "The runtime was:    " << result.runtime() << std::endl;
 ```
 
-## The Yothalot\Stats class
+## The Yothalot::Stats class
 
 A mapreduce job has three basic steps. A mapper step, a reducer step and
 a finalizer, or writer, step. Information on each step is stored in the 
@@ -90,37 +90,37 @@ public:
     /**
      *  get the time the first mapper, reducer, or finalizer was started (in Unix time)
      */
-    size_t first();
+    double first();
     
     /**
      *  get the time the last mapper, reducer, or finalizer was started (in Unix time)
      */
-    size_t last();
+    double last();
     
     /**
      *  get the time the last mapper, reducer, or finalizer was finished (in Unix time)
      */
-    size_t finished();
+    double finished();
 
     /**
      *  get the running time of the mappers, reducers, or finalizers (in seconds)
      */
-    size_t runtime();
+    double runtime();
 
     /**
      *  get the running time of the fastest mapper, reducer, or finalizer (in seconds)
      */
-    size_t fastest();
+    double fastest();
 
     /**
      *  get the running time of the slowest mapper, reducer, or finalizer (in seconds)
      */
-    size_t slowest();
+    double slowest();
 
     /**
      *  get the number of mapper, reducer, or finalizer processes
      */
-    size_t processes();
+    int64_t processes();
 
     /**
      *  get an object with information on the input used by the mappers,
@@ -172,12 +172,12 @@ public :
     /**
      *  get the number of files
      */
-    size_t files();
+    int64_t files();
     
     /**
      *  get the number of bytes
      */
-    size_t bytes();
+    int64_t bytes();
 };
 }
 ```
