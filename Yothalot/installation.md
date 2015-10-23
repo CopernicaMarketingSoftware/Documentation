@@ -126,11 +126,22 @@ from the `/etc/yothalot/config.txt` config file. In this configuration file you 
 We have a special [configuration section](copernica-docs:Yothalot/configuration)
 on this website that explains all the settings from this config file.
 
+
 ## Getting a license
 
-You can get a license via the [License Page](/license). Your license file should
-be installed on each node in the path that you can specify in the 
-[configuration file](copernica-docs:Yothalot/configuration).
+You can get your license via the [License Page](/license) using your Copernica 
+account credentials. If you do not have an account yet, you can create one
+[over here](/account/register "Create an account"). Of course Yothalot should be aware
+of your license. On a clean installation the path to the license is is
+the same as the path of the [configuration file](copernica-docs:Yothalot/configuration)
+(i.e. `/etc/yothalot`). So you can install the license file in this path on
+each node. However, you can change the default path in the [configuration file](copernica-docs:Yothalot/configuration)
+via:
+```
+license:        <Path to your license>
+```
+If you have questions about your license, feel free to send an email to
+[support@copernica.com](mailto:support@copernica.com).
 
 
 ## Starting the processes
