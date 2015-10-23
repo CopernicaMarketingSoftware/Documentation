@@ -45,25 +45,6 @@ public:
     friend std::ostream &operator<<(std::ostream &stream, const Record &record);
 };
 }
-namespace Yothalot {
-class Record
-public:
-
-
-    bool isNull(size_t field) const { if (field >= _fields.size()) return false; else return _fields[field].isNull(); }
-    bool isNumber(size_t field) const { return isInt32(field) || isInt64(field); };
-    bool isString(size_t field) const { if (field >= _fields.size()) return false; else return _fields[field].isString(); }
-    bool isInt32(size_t field) const { if (field >= _fields.size()) return false; else return _fields[field].isInt32(); }
-    bool isInt64(size_t field) const { if (field >= _fields.size()) return false; else return _fields[field].isInt64(); }
-    int64_t number(size_t field) const { if (field >= _fields.size()) return 0; else return _fields[field].number(); }
-    int32_t int32(size_t field) const { return number(field); }
-    int64_t int64(size_t field) const { return number(field); }
-    std::string string(size_t field) const { if (field >= _fields.size()) return {}; else return _fields[field].string(); }
-    friend std::ostream &operator<<(std::ostream &stream, const Record &record)
-};
-}
-
-
 
 ```
 ## Constructors

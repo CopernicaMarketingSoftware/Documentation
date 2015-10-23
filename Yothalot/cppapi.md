@@ -32,7 +32,7 @@ library.
 To write a mapreduce job, you simply have to create a program that follows
 some specific rules so Yothalot can use it.
 
-* [MapReduce program "MapReduce program"](copernica-docs:Yothalot/cpp-program)
+* [Creating a MapReduce program](copernica-docs:Yothalot/cpp-program "MapReduce program")
 
 
 ## The Yothalot race program
@@ -41,7 +41,7 @@ If you want to process a lot of data simultaneously but do not want to use
 a reduce step, you can create a program that follows the Race API so Yothalot
 can use it.
 
-* [Race program "Race program"](copernica-docs:Yothalot/cpp-program-race "Race")
+* [Creating a Race program](copernica-docs:Yothalot/cpp-program-race "Race program")
 
 
 ## Jobs and connections
