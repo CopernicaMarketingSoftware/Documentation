@@ -102,7 +102,7 @@ record1.swap(record2);
 ```
 
 ## Member add()
-With the add member it is possible to add a [Yothalot::Scalar](@todo) to
+With the add member it is possible to add a [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar) to
 the record. The object itself is returned, so chaining is possible.
 You can use it like:
 ```cpp
