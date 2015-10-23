@@ -14,7 +14,7 @@ class Record
 public:
     Record(uint32_t identifier);
     Record(Input &input);
-    Record(Inputs &inputs); // Not implemented yet
+    Record(Inputs &inputs);
     Record(const Record &that);
     Record(Record &&that);
     virtual ~Record();
@@ -61,13 +61,15 @@ Another way to construct a Record is to create it via an
 constructor will read the data from the given input log and parse the
 stored fields back into a proper Record. This process can of cours fail,
 in which case it will throw a std::runtime_error.
+Note that the record ins consumed from the input so if you want to reuse
+the data again it should be copied to another file.
 ```cpp
 Yothalot::Record myRecord(input);
 ```
-Moreover in the near futures you can construct a record from a set of inputs
+Moreover you can construct a record from a set of inputs
 where the smallest record is used first.
 ```cpp
-Yothalot::Record myRecord(inputs); // Not implemented yet
+Yothalot::Record myRecord(inputs); /
 ```
 Finally there is a copy and move constructor to create records.
 

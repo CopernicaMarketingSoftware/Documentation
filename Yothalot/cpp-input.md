@@ -4,7 +4,8 @@ Yothalot::Input is a utility class that helps you to read files that have
 the internal Yothalot [format](copernica-docs:Yothalot/internalfiles "Internal Files").
 In general you do not need this class. However, it is useful if you want
 to read files in this format, which has the cool property of being compressed
-but still splittable. 
+but still splittable. The `Yothalot::Input` class can be used to construct
+a [Yothalot::Record](copernica-docs:Yothalot/cpp-record "record")
 
 The public interface of Input looks like:
 ```cpp
@@ -47,9 +48,5 @@ into smaller blocks.
 size_t filesize = input.size();
 ```
 
-## Member getIterator()
-The input files are organized around [records](copernica-docs:Yothalot/cpp-record).
-You can get an input iterator to iterate over these records via the member
-`getIterator`. @todo add more info on records.
 
 
