@@ -28,7 +28,7 @@ Consider the following input JSON:
                 "size"      : 32
             },
             "platforms" : [ {
-                "platform"  :   "facebook",
+                "name"  :   "facebook",
                 "link"      : {
                     "url"       : "https://facebook.com/copernica"
                 }
