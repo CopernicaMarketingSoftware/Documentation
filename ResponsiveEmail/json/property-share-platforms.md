@@ -11,7 +11,7 @@ Below are listed the specific ones for each social media:
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "facebook" | The name of the social media.                                             |
 | appid | _string_ | The appid of the social platform. If not specified, this field is automatically gets the value of the Copernica Marketing Software appid (optional).           |
-| caption | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
+| title | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
 | description | _string_ | The post description (optional). If not specified, this field is automatically populated by information scraped from the link, typically the title of the page.                       |
 | picture | _string_ | The URL of a picture attached to this post. The picture must be at least 200px by 200px.                       |
 
@@ -20,17 +20,17 @@ Below are listed the specific ones for each social media:
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "linkedin" | The name of the social media.                                             |
-| title | _string_ | The post title.                       |
-| description | _string_ | The post description.                       |
+| title | _string_ | The title of the content being shared. Max length : 200 chars.                       |
+| description | _string_ | The description of the content being shared. Max length : 256 chars.                       |
 
 ## Twitter
 
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "twitter" | The name of the social media.                                             |
-| description | _string_ | The prefilled text to tweet (optional).                       |
-| hashtags | _array_ | The hashtags which apply to the tweet.                       |
-| via | _string_ | The provider/source of the post.                       |
+| description | _string_ | Pre-populated UTF-8 and URL-encoded Tweet text. The passed text will appear pre-selected for a Twitter user to delete or edit before posting. Max length : 140 chars  (optional).                       |
+| hashtags | _array_ | Allow easy discovery of Tweets by topic by including a comma-separated list of hashtag values without the preceding # character (optional).                       |
+| via | _string_ | A Twitter username to associate with the Tweet, such as your site’s Twitter account. The provided username will be appended to the end of the Tweet with the text “via @username” (optional).                       |
 
 ## GooglePlus
 
@@ -95,7 +95,7 @@ the basic usage, showing a set of share buttons.
                 "platform"     :   "facebook",
                 "name"         :   "facebook",
                 "appid"        :   "1234",
-                "caption"      :   "Post title",
+                "title"        :   "Post title",
                 "description"  :   "Post description",
                 "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
