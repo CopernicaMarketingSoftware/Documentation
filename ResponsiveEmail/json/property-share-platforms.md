@@ -13,7 +13,7 @@ Below are listed the specific ones for each social media:
 | appid | _string_ | The appid of the social platform. If not specified, this field is automatically gets the value of the Copernica Marketing Software appid (optional).           |
 | caption | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
 | description | _string_ | The post description (optional). If not specified, this field is automatically populated by information scraped from the link, typically the title of the page.                       |
-| picture | _string_ | The post image.                       |
+| picture | _string_ | The URL of a picture attached to this post. The picture must be at least 200px by 200px.                       |
 
 ## LinkedIn
 
