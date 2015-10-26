@@ -34,11 +34,13 @@ the basic usage, showing a set of follow buttons.
             },
             "platforms" : [ {
                 "platform"  :   "facebook",
-                "name": "facebook",
-                "appid": "facebook",
-                "title": "facebook",
-                "description": "facebook",
-                "picture": "facebook"
+                "link"      : {
+                    "url"       : "https://facebook.com/copernica"
+                },
+                "img": {
+                    "src": "http://www.images.com/facebook.png",
+                    "alt": "facebook"
+                }
             },
             {
                 "platform"  :   "twitter",
