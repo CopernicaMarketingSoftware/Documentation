@@ -11,8 +11,9 @@ All available properties of this block type are mentioned in the table below.
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "share" | Property to identify the block as a share block.                                                                                                    |
 | [label](copernica-docs:ResponsiveEmail/json/property-label) | _string_ | The label to show above all the social buttons.                                             |
-| [platforms](copernica-docs:ResponsiveEmail/json/property-platforms) | _array_ | A list of the platforms which we should be displaying in this share block.           |
+| [platforms](copernica-docs:ResponsiveEmail/json/property-share-platforms) | _array_ | A list of the platforms which we should be displaying in this share block.           |
 | [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each platform icon                       |
+| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to share.                                            |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |                                              |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the share block.                                      |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the share block.                                                            |
@@ -39,17 +40,21 @@ the basic usage, showing a set of share buttons.
                 "type"      : "rounded",
                 "size"      : 32
             },
+            "link"      : {
+                "url"       : "https://copernica.com/"
+            },
             "platforms" : [ {
-                "platform"  :   "facebook",
-                "link"      : {
-                    "url"       : "https://facebook.com/copernica"
-                }
+                "name"         :   "facebook",
+                "appid"        :   "1234",
+                "title"        :   "Post title",
+                "description"  :   "Post description",
+                "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
             {
-                "platform"  :   "twitter",
-                "link"      : {
-                    "url"       : "https://twitter.com/copernica"
-                }
+                "name"         :   "twitter",
+                "description"  :   "Optional prefilled text to tweet",
+                "hashtags"     :   ["responsive","email","copernica"],
+                "via"          :   "ResponsiveEmail",
             } ]
         } ]
     }

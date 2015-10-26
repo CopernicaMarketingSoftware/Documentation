@@ -13,8 +13,10 @@ and should hold the text that is displayed above your follow buttons.
             "type"      : "follow",
             "label"     : "Follow us!",
             "platforms" : [ {
-                "platform" : "twitter",
-                "link"     : "https://twitter.com/copernica"
+                "name" : "twitter",
+                "link"     : {
+                    "url"   :   "https://twitter.com/copernica"
+                }
             } ]
         } ]
     }
