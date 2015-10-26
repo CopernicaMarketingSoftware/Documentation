@@ -14,13 +14,13 @@ All available properties of this block type are mentioned in the table below.
 | [platforms](copernica-docs:ResponsiveEmail/json/property-share-platforms) | _array_ | A list of the platforms which we should be displaying in this share block.           |
 | [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each platform icon                       |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to share.                                            |
-| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |                                              |
+| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties and can be used to style the label property.                      |                                              |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the share block.                                      |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the share block.                                                            |
 | [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                      |
 | [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                               |
 | [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container                                                 |
-| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | The alignment of the label text of this block                                               |
+| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | The alignment of and the social media icons of this block and their label text.                                               |
 
 ## Example usage
 
