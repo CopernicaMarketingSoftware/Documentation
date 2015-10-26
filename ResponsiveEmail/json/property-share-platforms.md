@@ -92,7 +92,6 @@ the basic usage, showing a set of share buttons.
                 "url"       : "https://copernica.com/"
             },
             "platforms" : [ {
-                "platform"     :   "facebook",
                 "name"         :   "facebook",
                 "appid"        :   "1234",
                 "title"        :   "Post title",
@@ -100,42 +99,35 @@ the basic usage, showing a set of share buttons.
                 "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
             {
-                "platform"     :   "linkedin",
                 "name"         :   "linkedin",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
             },
             {
-                "platform"     :   "twitter",
                 "name"         :   "twitter",
                 "description"  :   "Optional prefilled text to tweet",
                 "hashtags"     :   ["responsive","email","copernica"],
                 "via"          :   "ResponsiveEmail",
             },
             {
-                "platform"     :   "googleplus",
                 "name"         :   "googleplus",
             },
             {
-                "platform"     :   "windows",
                 "name"         :   "windowslive",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
             },
             {
-                "platform"     :   "tumblr",
                 "name"         :   "tumbler",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
             },
             {
-                "platform"     :   "delicious",
                 "name"         :   "delicious",
                 "title"        :   "Post title",
                 "provider"     :   "Optional, company name",
             },
             {
-                "platform"     :   "reddit",
                 "name"         :   "reddit",
                 "title"        :   "Post title",
             },]
