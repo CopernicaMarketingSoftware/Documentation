@@ -43,15 +43,12 @@ fields of type [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar).
 Values is a input iterator over a container that holds value types. This type
 is passed to the reducer step as a second argument. You can use it to 
 iterate over all the values or you can pass it to algorithms
-that use constant forward iterators. The interface with members that are
-useful looks like:
+that use constant forward iterators. The public interface looks like:
 
 ```cpp
 class Values :
 {
-
 public:
-
     Values begin() const;
     Values end() const;
     Values &operator++ ();
@@ -124,7 +121,7 @@ std::cout << "the size of the first value is " firstValIt->bytes() << " bytes\n"
 ```
 
 ### Member operator==()
-With `==` you can compare two Values to see if they are equal. You can use
+With `==` you can compare two `Yothalot::Values` to see if they are equal. You can use
 it like:
 ```cpp
 /**

@@ -168,9 +168,9 @@ int64_t is3 = myTuple.number(2);
 
 ## Member string()
 With member `string()` you can retrieve a string from the tuple. It does
-not matter if you passed in a char *, char * with length, or a string, you
-will receive a std::string. The fields are indexed from zero. You can use
-it like:
+not matter if the value you have passed into the tuple was a string or not. If it was
+a numeric value, it will be converted to a string. The fields are indexed
+from zero. You can use it like:
 ```cpp
 /**
  *  Create a tuple that holds some numbers and a string
