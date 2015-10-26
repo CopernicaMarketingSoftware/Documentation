@@ -4,19 +4,18 @@ The C++ API is for those who need the speed of a native implementation
 for mapreduce algorithms. You can use the API to write mapreduce jobs
 in C++ and send them to the Yothalot cluster.
 
-With the C++ API you write a C++ executable (so you do have to include 
-a main() function in your algorithm). This executable has to be installed on
-each of the servers in the Yothalot cluster (it could therefore be useful
-to store the executable on GlusterFS, so that each of the servers automatically
-has access to it). The Yothalot process starts up this executable with
-specific command line arguments and input data, so that (a part of the)
-mapreduce algorithm gets executed. You do not have to process these
-command line arguments and input, because that is done by the mapreduce
-framework.
+With the C++ API you write an executable (so you have to write 
+a main() function too). This executable has to be installed on
+each of the servers in the Yothalot cluster. The Yothalot process will
+start up this executable with specific command line arguments and input 
+data, so that (a part of the) mapreduce algorithm gets executed. 
 
-To send the job to the Yothalot cluster, you simply have to start the
-executable without any command line arguments -- or use the [Yohtalot::Connection](copernica-docs:Yothalot/cpp-connection)
-and [Yohtalot::Job](copernica-docs:Yothalot/cpp-job) classes from the C++ API to start the job programmatically. 
+Besides the main() function that you have to supply, you also have to
+implement the map/reduce algorithm. For this, the C++ offers a virtual
+base class that you have to extend in your program. This base class
+has various methods for mapping, reducing and writing that should all
+be implemented by you.
+
 
 ## Installation
 
@@ -27,59 +26,46 @@ library.
 * [How to install the Yothalot C++ library](copernica-docs:Yothalot/cpp-install "C++ Library Installation")
  
 
-## The Yothalot mapreduce program
+## Algorithms
 
-To write a mapreduce job, you simply have to create a program that follows
-some specific rules so Yothalot can use it.
+You can run two types of algorithms on the Yothalot cluster: traditional
+map/reduce algorithms, and special "race" algorithms. This race algorithm
+is a simple algorithm that might be useful if you do not need to full
+power and flexibility of map/reduce.
 
-* [Creating a MapReduce program](copernica-docs:Yothalot/cpp-program "MapReduce program")
+Both algorithms can be implemented by simply extending a virtual base
+class that is supplied by the Yothalot framework:
 
-
-## The Yothalot race program
-
-If you want to process a lot of data simultaneously but do not want to use
-a reduce step, you can create a program that follows the Race API so Yothalot
-can use it.
-
-* [Creating a Race program](copernica-docs:Yothalot/cpp-program-race "Race program")
+* [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
+* [Class Yothalot::Race](copernica-docs:Yothalot/cpp-race "Race")
 
 
-## Jobs and connections
+## Creating your program
 
-Once you've written your own mapreduce or race algorithm, you can turn it into a job,
-and send it to the Yothalot cluster. The following classes are necessary for
-that:
+To turn your algorithm into an executable that can run on the Yothalot
+cluster, you have to add a "main()" function to it, and process the
+command line arguments that are passed to it by Yothalot. The C++ API
+offers a very useful utility class for parsing these arguments, so that 
+your main() function normally does not need more than 3 lines of code:
 
-* [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
-* [Class Yothalot::Job ](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
-
-
-## Information about the job
-
-Once you have run your mapreduce job you may be interested in the behavior
-of the job. The information is given in a couple of classes the main class
-is:
-
-* [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
+* [Creating program](copernica-docs:Yothalot/cpp-program "Writing a program")
 
 
-## Start up a job manually
+## Starting a job
 
-You can use the above classes to send a job to the Yothalot cluster.
-However, since you have written a complete executable you can start up
-a job manually if you apply the appropriate arguments to your program.
+The executable program that you created and that is installed on each
+of the servers can also be used to start up the job. By simply running
+the executable with some command line arguments, you start up the job
+and run it on the Yothalot cluster.
+
+If you prefer to start up the job programmatically instead of manually,
+the API also allows offers a couple of classes that allow you to connect
+to the Yothalot cluster and send jobs to it using C++.
 
 * [Start up a job manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job")
-
-
-## Classes 
-
-In order to create a Yothalot MapReduce program you have to use some specific
-classes since instances of these classes are provided to you via the arguments
-of the `reducer()` and `writer()` member functions. Information about these
-classes is given in:
-
-* [Yothalot Classes](copernica-docs:Yothalot/cpp-classes "Yothalot Classes")
+* [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
+* [Class Yothalot::Job](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
+* [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
 
 
 ## Utility classes
@@ -101,3 +87,19 @@ The [Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input") and
 [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output") classes allow you
 to read and write files in the same compressed format used by the Yothalot 
 framework internally for intermediate result files.
+
+
+## Full class reference
+
+The following classes are offered by the Yothalot framework:
+* [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Values](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar "Scalar"),
+* [Class Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple "Tuple"),
+* [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+* [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
+* [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+* [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
