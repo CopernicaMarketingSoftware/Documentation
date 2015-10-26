@@ -18,6 +18,7 @@
      * [Spacer blocks](copernica-docs:ResponsiveEmail/json/block-spacer)
      * [Separator blocks](copernica-docs:ResponsiveEmail/json/block-separator)
      * [Follow blocks](copernica-docs:ResponsiveEmail/json/block-follow)
+     * [Share blocks](copernica-docs:ResponsiveEmail/json/block-share)
      * [Multiple columns](copernica-docs:ResponsiveEmail/json/block-columns)
      * [Container blocks](copernica-docs:ResponsiveEmail/json/block-container)
 * [JSON editor](http://www.responsiveemail.com/support/json-editor)
