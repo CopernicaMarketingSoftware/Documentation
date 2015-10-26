@@ -44,7 +44,6 @@ the basic usage, showing a set of share buttons.
                 "url"       : "https://copernica.com/"
             },
             "platforms" : [ {
-                "platform"     :   "facebook",
                 "name"         :   "facebook",
                 "appid"        :   "1234",
                 "title"        :   "Post title",
@@ -52,7 +51,6 @@ the basic usage, showing a set of share buttons.
                 "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
             {
-                "platform"     :   "twitter",
                 "name"         :   "twitter",
                 "description"  :   "Optional prefilled text to tweet",
                 "hashtags"     :   ["responsive","email","copernica"],
