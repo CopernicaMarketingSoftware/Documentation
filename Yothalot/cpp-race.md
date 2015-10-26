@@ -1,8 +1,14 @@
-# Writing a C++ Race Program
+# Writing a Race C++ Algorithm
 
-To run your Race algorithm on a Yothalot cluster you have to implement
-the algorithm in a class and create a little main function that uses this 
-class in a particular way, just like you do when writing a Mapreduce algorithm.
+If you want to process a lot of data simultaneously in a general way and
+do not want to use a reduce and write step, you can create a program that
+follows the Race API so you can use the Yothalot framework to parallelize
+the work for you.
+
+To run your race algorithm on a Yothalot cluster you have to implement
+the algorithm in a class that inherits form Yothalot::Race. This class
+should then be called from a [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
+
 
 ## The Race Class
 
@@ -42,7 +48,7 @@ public:
      *  @param  size        Size of the value
      *  @param  reducer     The result object to which key/value pairs can be mapped
      */
-    virtual void process(const std::string &value) = 0;
+    virtual Result process(const std::string &value) = 0;
 };
 /**
  *  end namespace
@@ -51,19 +57,31 @@ public:
 
 ```
 In your class that inherits from this pure virtual base class you have 
-to implement `process()`. Since instances of these classes run in isolation,
-you cannot use shared state between them. However, the objects share
-resources and multiple calls to `process()` may happen at the same time,
- therefore, you can have race conditions if the objects try to access
-the same resource at the same time.
+to implement `process()`.
 
 ## Processing
-The part that needs to be implemented is the `process()` method. In this
-method you implement your algorithm that processes the data. The method receives
-one parameter, the data of type std::string, and has to return. If it returns a zero, the job
-will continue with processing the data. Otherwise the value will be returned
-by the job and the job will stop. This is useful if you are just interested
-in one result but not necessarily all results.
+The part that needs to be implemented by you is the `process()` method.
+In this method you implement your algorithm that processes the data. 
+The data that needs to be processed is passed to `process()` via its first
+argument of type `std::string`. Note that each single piece of data that you
+pass to your Yothalot program will result in a call to `process()`. So, although it possible to call
+process on each single piece of data, this will result in a lot of calls to prcess,
+each call having some overhead. Therefore, you want to provide `process()` with
+enough data in that single argument to keep it busy for a while. E.g. you can
+pass strings that contain the name of a file that contains some data that you want to 
+process. If you pass some file names, some processes can nicely run in parallel and the
+overhead is not to large. Passing data can be done in multiple ways and is
+described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
+and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
+
+The `process()` method returns a type Yothalot::Result. When a process returns
+a value of null, the Yothalot framework keeps the other processes running 
+and start up a new process if there is data waiting to be processed. However,
+if the data is non-null, all processes will be ended. With this functionality 
+it is not only easy to process a lot of data, but you can also use it for
+searching to a lot of data. Once you have found an occurrence of the thing
+you are looking for you simply pass the location and you are done. An example
+of a race algorithm is:
 
 ```cpp
 class MyRace : public Yothalot::Race
@@ -74,7 +92,7 @@ public:
      *  @param  std::string       Value that is being mapped
      *  @return Yothalot::Value   Your return value
      */
-    virtual Yothalot::Value process(Yothalot::Value value) override
+    virtual Yothalot::Value process(std::string data) override
     {
         // @todo:   implement your process algorithm
         
@@ -85,50 +103,11 @@ public:
     }
 }
 ```
+Since instances of these classes run in isolation, you cannot use shared
+state between them. However, the objects share resources and multiple calls
+to `process()` may happen at the same time, therefore, you can have race
+conditions if the objects try to access the same resource at the same time.
 
-## Create the program
-
-After implementing your mapreduce algorithm you have to create a little 
-program that uses this implementation. The program should look as follows:
-```cpp
-/**
- *  myRace.cpp
- *  main program that is passed to the Yothalot framework
- */
-
-/**
- *  includes
- */
-#include <yothalot.h>
-#include "MyRace.h"
-
-/**
- *  the main program
- */
-int main(int argc, char* argv[])
-{
-   // Instantiate your class
-   MyRace* myR = new MyRace();
-   
-   // Construct a Yothalot::Program object. You pass the instantiation of
-   // your mapreduce class as a first argument and you pass argc and argv
-   // as the second and third argument. 
-   Yothalot::Program myYothalotProgram(myR, argc, argv);
-   
-   // return
-   return myYothalotProgram.run();
-}
-```
-After you have created the class with your race implementation and the
-main program you have to compile it. If you are using gcc you can use something
-like:
-```bash
-g++ myRace.cpp
-```
-You can of course add the optimization flags that you like, however, you
-have to make sure that if you allow the compiler to use certain CPU features
-these features should be supported by all CPUs in your Yothalot cluster.
-
-Running the above command will give you a program a.out. The Yothalot
-framework will pass this program around to its nodes and multiple calls
-to this program may occur on one node.
+After having created your race algorithm in the above described way
+you can call your algorithm from a little 
+[executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program")
