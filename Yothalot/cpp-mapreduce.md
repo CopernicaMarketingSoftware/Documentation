@@ -244,7 +244,8 @@ However, you should be aware that if you want to write with multiple writers
 to the same resource you should use some kind of locking mechanism.
 
 After having created your mapreduce algorithm in the above described way
-you can call your algorithm from a little [executable]()
+you can call your algorithm from a little 
+[executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program")
 
 
 
