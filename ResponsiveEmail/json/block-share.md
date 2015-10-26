@@ -55,3 +55,20 @@ the basic usage, showing a set of share buttons.
     }
 }
 ```
+
+## Share block platforms
+
+Each share block platform can have different sub-properties. Below are listed the specific ones for each social media: 
+
+## Facebook
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| type | "share" | Property to identify the block as a share block.                                                                                                    |
+| name | "facebook" | The name of the social media.                                             |
+| appid | _string_ | The appid of the social platform. If not set - get the value of the Copernica Marketing Software appid (optional).           |
+| title | _string_ | The post title (optional).                       |
+| description | _string_ | The post description (optional).                       |
+
+
+
