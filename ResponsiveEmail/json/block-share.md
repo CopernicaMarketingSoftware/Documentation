@@ -47,7 +47,7 @@ the basic usage, showing a set of share buttons.
                 "platform"     :   "facebook",
                 "name"         :   "facebook",
                 "appid"        :   "1234",
-                "title"        :   "Post title",
+                "caption"      :   "Post title",
                 "description"  :   "Post description",
                 "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
