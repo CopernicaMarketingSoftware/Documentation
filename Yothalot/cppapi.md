@@ -92,14 +92,19 @@ framework internally for intermediate result files.
 ## Full class reference
 
 The following classes are offered by the Yothalot framework:
-* [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
-* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
+* [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
+* [Class Yothalot::Inputs](copernica-docs:Yothalot/cpp-input "Inputs")
+* [Class Yothalot::Job](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
 * [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes"),
-* [Class Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Classes"),
-* [Class Yothalot::Values](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+* [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+* [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
+* [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
 * [Class Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar "Scalar"),
 * [Class Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple "Tuple"),
-* [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
-* [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
-* [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
-* [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
+* [Class Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Values](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes"),
+
