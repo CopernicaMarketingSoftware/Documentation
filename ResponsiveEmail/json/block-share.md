@@ -63,12 +63,63 @@ Each share block platform can have different sub-properties. Below are listed th
 ## Facebook
 
 | Property | Value | Description                                                                                                                                       |
-|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| type | "share" | Property to identify the block as a share block.                                                                                                    |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "facebook" | The name of the social media.                                             |
 | appid | _string_ | The appid of the social platform. If not set - get the value of the Copernica Marketing Software appid (optional).           |
 | title | _string_ | The post title (optional).                       |
 | description | _string_ | The post description (optional).                       |
+| picture | _string_ | The post image.                       |
 
+## LinkedIn
 
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "linkedin" | The name of the social media.                                             |
+| title | _string_ | The post title.                       |
+| description | _string_ | The post description.                       |
 
+## Twitter
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "twitter" | The name of the social media.                                             |
+| description | _string_ | The prefilled text to tweet (optional).                       |
+| hashtags | _array_ | The hashtags which apply to the tweet.                       |
+| via | _string_ | The provider/source of the post.                       |
+
+## GooglePlus
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "googleplus" | The name of the social media.                                             |
+
+## WindowsLive
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "windowslive" | The name of the social media.                                             |
+| title | _string_ | The post title.                       |
+| description | _string_ | The post description.                       |
+
+## Tumblr
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "tumbler" | The name of the social media.                                             |
+| title | _string_ | The post title.                       |
+| description | _string_ | The post description.                       |
+
+## Delicious
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "delicious" | The name of the social media.                                             |
+| title | _string_ | The post title.                       |
+| provider | _string_ | The provider/source of the post (optional).                       |
+
+## Reddit
+
+| Property | Value | Description                                                                                                                                       |
+|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
+| name | "reddit" | The name of the social media.                                             |
+| title | _string_ | The post title.                       |
