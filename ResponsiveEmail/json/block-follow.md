@@ -13,7 +13,7 @@ All available properties of this block type are mentioned in the table below.
 | [label](copernica-docs:ResponsiveEmail/json/property-label) | _string_ | The label to show above all the social buttons.                                             |
 | [platforms](copernica-docs:ResponsiveEmail/json/property-follow-platforms) | _array_ | A list of the platforms which we should be displaying in this follow block           |
 | [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each platform icon                       |
-| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties and can be used to style the label property.                      |
+| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties and style the label property.                      |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the follow block.                                     |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the follow block.                                                           |
 | [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                      |
