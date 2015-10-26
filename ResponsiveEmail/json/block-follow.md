@@ -41,13 +41,13 @@ the basic usage, showing a set of follow buttons.
                 "size"      : 32
             },
             "platforms" : [ {
-                "platform"  :   "facebook",
+                "name"  :   "facebook",
                 "link"      : {
                     "url"       : "https://facebook.com/copernica"
                 }
             },
             {
-                "platform"  :   "twitter",
+                "name"  :   "twitter",
                 "link"      : {
                     "url"       : "https://twitter.com/copernica"
                 }
