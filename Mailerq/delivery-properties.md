@@ -318,12 +318,7 @@ When the "queues" property is used, the queues mentioned in the global configura
 file are completely ignored. This is even so if you have not even specified all 
 possible queues in the MIME header or JSON object.
 
-### Data
 
-It is possible to personalize your mime object input before sending it using the 
-data property. In case this property is omitted the mime is sent as is. This data 
-property will only work in JSON as it can be completely nested. This personalization 
-is done using SMART-TPL.
 
 ## Setting custom message properties
 

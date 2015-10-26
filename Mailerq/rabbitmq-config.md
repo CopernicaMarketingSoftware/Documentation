@@ -22,7 +22,8 @@ The `rabbitmq-user` and `rabbitmq-password` variables hold the username and
 password for your RabbitMQ server, as set in your RabbitMQ configuration. The default 
 username is guest/guest, however this only works when connecting to localhost. If you 
 run RabbitMQ on a separate server, you will need to set your own username and password,
-or configure the RabbitMQ server to allow guest/guest logins from remote hosts (see above).
+or configure the RabbitMQ server to allow guest/guest logins from remote hosts. See 
+[RabbitMQ installation documentation](copernica-docs:Mailerq/rabbitmq-install) for more details
 
 If you have created a specific RabbitMQ vhost environment you can add the specific vhost
 to the `rabbitmq-vhost` variable. The default vhost is "/".
@@ -67,8 +68,8 @@ but at the same time it makes things much slower. We therefore recommend leaving
 
 MailerQ uses several queues and exchanges to manage email messages. MailerQ creates 
 these queues itself, in the MailerQ configuration you can name these queues. Only the 
-MailerQ outbox is mandatory, if you want to disable the other queues they can be simply 
-left empty. 
+MailerQ outbox is mandatory, if you want to disable the other queues the field behind them 
+ can be simply be left empty. 
 
 ```
 rabbitmq-exchange:      <Name of your rabbitmq exchange> 

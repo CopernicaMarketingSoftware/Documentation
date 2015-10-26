@@ -1,10 +1,10 @@
 # Getting started with MailerQ
 
-MailerQ is a Mail Transfer Agent (MTA) that relies on [RabbitMQ](https://www.rabbitmq.com) 
-for its message queues. Therfore, before you install 
-and configure MailerQ, you need to have access to a working RabbitMQ server. 
-If you have a working and up-to-date RabbitMQ server, you can proceed 
-with Installing MailerQ, otherwise, check our [using RabbitMQ article](copernica-docs:Mailerq/rabbitmq).
+MailerQ is a Mail Transfer Agent (MTA) that uses [RabbitMQ](https://www.rabbitmq.com) 
+for its message queues. Before you install and configure MailerQ you will need to download 
+and set-up RabbitMQ. Once you have installed RabbitMQ and have access to a running and 
+up-to-date RabbitMQ server, you can proceed with installing MailerQ. For tips on 
+how to install RabbitMQ, read our [RabbitMQ installation article](http://www.mailerq.io/documentation/rabbitmq-install "RabbitMQ installation").
 
 **Note: MailerQ requires RabbitMQ version 3.3.1+**
 
@@ -97,7 +97,8 @@ If you have questions about your license, feel free to send an email to
 
 With these configuration steps you are ready to start. However, we do recommend to read the
 [page](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ") on how 
-MailerQ interacts with RabbitMQ and the [page](copernica-docs:Mailerq/configuration "MailerQ configuration") with all other configuration options, and adjust your configuration accordingly.
+MailerQ interacts with RabbitMQ and checking all other configuration options, so you can 
+ adjust your configuration accordingly.
 
 ## Let's get started!
 

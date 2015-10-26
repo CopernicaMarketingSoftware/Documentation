@@ -1,11 +1,11 @@
 # Setting up RabbitMQ
 
-MailerQ heavily depends on RabbitMQ for all its queueing. You therefore need a 
-running RabbitMQ instance (or better: a cluster of instances) before you can start 
-MailerQ. We do not intend to write a full installation guide for RabbitMQ here 
-(you better check the [www.rabbitmq.com](https://www.rabbitmq.com) website for that), 
-but we do have some tips, tricks and recommendations.
-
+MailerQ depends on RabbitMQ for all its queueing. This means you will need a running
+RabbitmQ instance or cluster of instances before you can start MailerQ.  We do not 
+intend to write a full installation guide for RabbitMQ here, on the 
+[www.rabbitmq.com](https://www.rabbitmq.com) website you will find any information 
+you  need about RabbitmQ. However, we do have some tips, tricks and recommendations 
+for setting up RabbitMQ with MailerQ. 
 
 ## Make sure you use the right RabbitMQ version
 
