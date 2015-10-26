@@ -2,9 +2,8 @@
 
 # Installation of the C++ API
 
-In order to use the C++ API you need to have some libraries installed on
-your nodes and of course the Yothalot-CPP-API that can be downloaded from
-our [download page](/download).
+In order to use the C++ API you need to have some libraries and of course
+the Yothalot-CPP-API installed on your nodes.
 
 The libraries that you need are:
 *   libev, 
@@ -20,8 +19,8 @@ of the popular Linux distributions. You can use your package manager to install
 them.
 
 AMQP-CPP is our own developed library for communicating with a RabbitMQ
-message broker. The project is on github. You can find it at over 
-[here](https://github.com/CopernicaMarketingSoftware/AMQP-CPP).
+message broker. The project is open source and is available on 
+[github](https://github.com/CopernicaMarketingSoftware/AMQP-CPP).
 To install the library you can create a directory, move to this directory and type:
 
 ```bash
@@ -57,3 +56,6 @@ $ sudo dpkg -i path/to/yothalot-cpp-api-version.deb
 ```
 for debian based systems.
 
+After you have installed the necessary libraries you can create your 
+Yothalot [mapreduce](copernica-docs:Yothalot/cpp-program "MapReduce program")
+and [race](copernica-docs:Yothalot/cpp-program-race "Race program") programs.
