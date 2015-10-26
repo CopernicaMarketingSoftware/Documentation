@@ -10,9 +10,9 @@ Below are listed the specific ones for each social media:
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "facebook" | The name of the social media.                                             |
-| appid | _string_ | The appid of the social platform. If not set - get the value of the Copernica Marketing Software appid (optional).           |
-| title | _string_ | The post title (optional).                       |
-| description | _string_ | The post description (optional).                       |
+| appid | _string_ | The appid of the social platform. If not specified, this field is automatically gets the value of the Copernica Marketing Software appid (optional).           |
+| caption | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
+| description | _string_ | The post description (optional). If not specified, this field is automatically populated by information scraped from the link, typically the title of the page.                       |
 | picture | _string_ | The post image.                       |
 
 ## LinkedIn
@@ -95,7 +95,7 @@ the basic usage, showing a set of share buttons.
                 "platform"     :   "facebook",
                 "name"         :   "facebook",
                 "appid"        :   "1234",
-                "title"        :   "Post title",
+                "caption"      :   "Post title",
                 "description"  :   "Post description",
                 "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
             },
