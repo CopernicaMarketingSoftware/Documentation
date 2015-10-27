@@ -9,7 +9,7 @@ All supported platforms are described below:
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "facebook" | The name of the platform.                                             |
-| [appid](https://developers.facebook.com/apps/) | _string_ | The facebook appid. If not specified, this field automatically gets the value of the ResponsiveEmail appid (optional).           |
+| [appid](https://developers.facebook.com/apps/) | _string_ | The facebook appid. If not specified, this field automatically gets the value of the Copernica appid (optional).           |
 | title | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
 | description | _string_ | The post description. If not specified, this field is automatically populated by information scraped from the link, typically the title of the page (optional).                       |
 | picture | _string_ | The URL of a picture attached to this post. The picture must be at least 200px by 200px (optional).                       |
