@@ -12,42 +12,18 @@ Each platform json block inside the `platforms` can have the following sub-prope
 | name | _string_ | The name of the platform.  |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to follow for this platform.                                            |
 
-
-    <table>
-      <tbody>
-        <tr>
-          <th>Tables</th>
-          <th align="center">Are</th>
-          <th align="right">Cool</th>
-        </tr>
-        <tr>
-          <td>col 3 is</td>
-          <td align="center">right-aligned</td>
-          <td align="right">$1600</td>
-        </tr>
-        <tr>
-          <td>col 2 is</td>
-          <td align="center">centered</td>
-          <td align="right">$12</td>
-        </tr>
-        <tr>
-          <td>zebra stripes</td>
-          <td align="center">are neat</td>
-          <td align="right">$1</td>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>item1</li>
-              <li>item2</li>
-            </ul>
-          </td>
-          <td align="center">See the list</td>
-          <td align="right">from the first column</td>
-        </tr>
-      </tbody>
-    </table>
-
+| Platforms |         |         |         |         |         |         |         |         |
+|:---------|---------|---------|---------|---------|---------|---------|---------|---------|
+| addthis | bing | drupal | formspring | icq | myspace1 | share | tripadvisor | wordpress |
+| amazon | blogger | envato | forrst | imdb | myspace2 | skype | tumblr | xbox |
+| android | chrome | etsy | friendfeed | instagram | newsvine | snapchat | twitter | xing |
+| aol | delicious | evernote | getpocket | lastfm | overflow | soundcloud | twitter2 | yahoo |
+| apple | deviantart | facebook | github2 | linkedin | paypal | squidoo | viber | yelp |
+| appstore | digg | fav | googleplus | livejournal | photobucket | steam | vimeo | youtube |
+| ask | diigo | feed | google | mail | picasa | store | whatsapp | youtube2 |
+| badoo | dribbble | feedburner | google2 | messenger | pinterest | stumbleupon | wikipedia | zoosk |
+| bebo | drive | fiverr | hi5 | metacafe | quora | techcrunch | windows | zootool |
+| behance | dropbox | flickr | html5 | msn | reddit | technorati | windows8 | zynga |
 
 ## Example usage
 
