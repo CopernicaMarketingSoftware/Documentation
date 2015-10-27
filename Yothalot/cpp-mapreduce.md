@@ -87,7 +87,7 @@ map on each single piece of data, this will result in a lot of calls to map,
 each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to 
-map. If you pass some file names, map can nicely run in parallel and the
+map. If you pass file names, map can nicely run in parallel on each file and the
 overhead is not to large. Passing the data can be done in multiple ways
 and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
 and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
@@ -155,7 +155,7 @@ multiple values that all have the same key. The reduce step in a mapreduce
 algorithm will reduce these multiple values into a single new value. So,
 you end up with unique keys that all hold just one value. This is exactly done
 by `reduce()`. The `reduce()` member takes three arguments. The first
-argument is the key of type `Yothalot::Key`. This key is at least passed
+argument is the key of type `Yothalot::Key`. Each key is at least passed
 by `map()` once. 
 
 The second argument are the values of type `Yothalot::Values`.
@@ -166,7 +166,7 @@ the first argument. Since there are multiple values for one key, the type
 that it stores. It is your job to reduce all these values into one reduced 
 value.
 
-The third argument that is `reduce()` takes is of type `Yothalot::Writer`.
+The third argument that `reduce()` takes is of type `Yothalot::Writer`.
 Just like `map` needs to know what it should do with the key value pairs,
 `reduce()` needs to know what it should do with the reduced value. This
 information is taken from the third argument `Yothalot::Writer`. `Yothalot::Writer` has just
@@ -205,10 +205,10 @@ Above we said that the second argument, values, contains all the values that
 belong to a certain key. This is actually only partly correct. If we would have
 implemented Yothalot to only start a reducer if all values for a specific 
 key would be available, Yothalot would be very inefficient. Because, if
-all values have to be available, a reducer step can be only started if all
+all values have to be available, a reducer step can only be started if all
 mapper processes have been finished. This would harm the parallelization
 of the mapreduce task. Moreover, the task needs to have a lot of extra memory
-or disk space since all reduced values should stay in 'memory' just before
+or disk space since all key value pairs should stay somewhere before
 the reduce step starts. Therefore, Yothalot starts reducer tasks if there
 are enough values for one key to reduce. So the argument values contain all the values that are at
 that time available. Or it may be a subset if there are so many values
@@ -222,7 +222,7 @@ to mapreduce tasks and not Yothalot specific but it is something to be aware of.
 After all mappers have ran, and everything has been reduced to keys with single
 values, the results are ready to be written to some kind of storage. The Yothalot
 framework calls your `write()` method for this. The `write()` method has two
-arguments the first argument is key of type `Yothalot::Key` and the second
+arguments the first argument is the key of type `Yothalot::Key` and the second
 argument is the value of type `Yothalot::Value` that belongs to the particular
 key. It is completely up to you to decide where you want to write your results to.
 An example of a `write()` method is:
@@ -262,7 +262,7 @@ to the same resource you should use some kind of locking mechanism.
 
 After having created your mapreduce algorithm in the above described way
 you can call your algorithm from a little 
-[executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program")
+[executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program").
 
 
 
