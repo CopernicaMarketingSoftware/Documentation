@@ -12,8 +12,8 @@ All available properties of this block type are mentioned in the table below.
 | type | "share" | Property to identify the block as a share block.                                                                                                    |
 | [label](copernica-docs:ResponsiveEmail/json/property-label) | _string_ | The label to show above all the social buttons.                                             |
 | [platforms](copernica-docs:ResponsiveEmail/json/property-share-platforms) | _array_ | A list of the platforms which we should be displaying in this share block.           |
-| [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each platform icon.                       |
-| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to share.                                            |
+| [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each social icon.                       |
+| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to share on the timeline/wall of the user on the external social platform.                                            |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties and style the label property.                      |                                              |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the share block.                                      |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the share block.                                                            |
