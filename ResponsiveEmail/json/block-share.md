@@ -41,14 +41,14 @@ the basic usage, showing a set of share buttons.
                 "size"      : 32
             },
             "link"      : {
-                "url"       : "https://copernica.com/"
+                "url"       : "https://responsiveemail.com/"
             },
             "platforms" : [ {
                 "name"         :   "facebook",
                 "appid"        :   "1234",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
-                "picture"      :   "http://www.copernica.com/images/somecustomimage.png"
+                "picture"      :   "http://www.responsiveemail.com/images/somecustomimage.png"
             },
             {
                 "name"         :   "twitter",
