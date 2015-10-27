@@ -12,7 +12,7 @@ Each platform json block inside the `platforms` can have the following sub-prope
 | name | _string_ | The name of the platform.  |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to follow for this platform.                                            |
 
-| Platforms |         |         |         |         |         |         |         |         |
+| Platforms |
 |:---------|---------|---------|---------|---------|---------|---------|---------|---------|
 | addthis | bing | drupal | formspring | icq | myspace1 | share | tripadvisor | wordpress |
 | amazon | blogger | envato | forrst | imdb | myspace2 | skype | tumblr | xbox |
