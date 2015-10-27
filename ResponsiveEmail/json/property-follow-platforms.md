@@ -47,8 +47,3 @@ the basic usage, showing a set of follow buttons.
     }
 }
 ```
-
-Each platform json block has 1 mandatory image property: `src`. This should contain a
-direct url to the image that should be shown for this platform. Then there also
-is an optional `alt` property, which would simply contain the alt text for this
-image.
