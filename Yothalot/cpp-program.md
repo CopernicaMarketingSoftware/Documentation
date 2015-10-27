@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
 }
 ```
 You first initialize the class with your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-or [race](copernica-docs:Yothalot/cpp-race "Race"). Here we used a default
+or [race](copernica-docs:Yothalot/cpp-race "Race") algorithm. Here we used a default
 initialization of a MapReduce class, but you can of course add other
 functionality to your class with other constructors as well that you 
 use when you instantiate it.
@@ -59,7 +59,7 @@ class. That is all there is to create the executable.
 
 ## Compiling your program
 
-Since you are using C++ you need to compile your program in order to use
+Since you are using C++ to implement your algorithm. you need to compile your program in order to use
 it. You may use your preferred compiler but we are at least sure that it
 works with gcc 4.8.4. You can install gcc using the repository of your Linux
 distribution.
@@ -72,7 +72,7 @@ g++ -std=c++11 myMapReduce.cpp -lyothalot
 ```
 
 Since the Yothalot C++ API uses C++ 11 features you need to pass the -std=c++11
-flag. Morover, the program depends on the Yothalot library. You need to tell this
+flag. Moreover, the program depends on the Yothalot library. You need to tell this
 to the compiler as well. This is done with -lyothalot. 
 
 Running the above command will give you a program a.out. The Yothalot
@@ -80,8 +80,13 @@ framework will call this program from its nodes. Therefore, the program
 should be available on all the nodes. If you copy your file to the GlusterFS
 cluster, you are sure that all nodes have access to the program.
 
-
 You can of course add the optimization flags that you like, however, you
 have to make sure that if you allow the compiler to use certain CPU features
 these features should be supported by all CPUs in your Yothalot cluster.
 
+After you have created your program you can start a Yothalot job by using
+creating another program where you set up the [connection](copernica-docs:Yothalot/cpp-connection "Connection")
+and run the [job](copernica-docs:Yothalot/cpp-job "Yothalot::Job") that 
+starts up the job for you, or simply run the program you just have created 
+[manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job") with
+the appropriate command line arguments.

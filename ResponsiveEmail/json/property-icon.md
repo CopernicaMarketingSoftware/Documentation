@@ -8,10 +8,9 @@ The following table lists all sub-properties of the icon property:
 
 | Property | Value | Description                                     |
 |:---------|-------|-------------------------------------------------|
-| type | _string_ | The type / flavour of the icon. The default value is "rounded".     |
+| type | _string_ | The type / flavour of the icon. The default value is "rounded". All supported values are:  "flower", "glossy", "grey", "leaf", "polygon", "rectangular", "rounded", "roundedcorners", "waterdrop".  |
 | size | _number_ | The size of the icon. The default value is 32.         |
-
-
+ 
 ## Example
 
 The following input JSON shows an icon basic usage in a follow block:

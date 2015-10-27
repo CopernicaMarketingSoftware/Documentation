@@ -1,4 +1,4 @@
-# Writing a Race C++ Algorithm
+# Writing a C++ Race Algorithm
 
 If you want to process a lot of data simultaneously in a general way and
 do not want to use a reduce and write step, you can create a program that
@@ -7,7 +7,7 @@ the work for you.
 
 To run your race algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::Race. This class
-should then be called from a [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
+should then be called from an [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
 
 
 ## The Race Class
@@ -48,7 +48,7 @@ public:
      *  @param  size        Size of the value
      *  @param  reducer     The result object to which key/value pairs can be mapped
      */
-    virtual Result process(const std::string &value) = 0;
+    virtual Result process(const char *value, size_t size) = 0;
 };
 /**
  *  end namespace
@@ -63,9 +63,10 @@ to implement `process()`.
 The part that needs to be implemented by you is the `process()` method.
 In this method you implement your algorithm that processes the data. 
 The data that needs to be processed is passed to `process()` via its first
-argument of type `std::string`. Note that each single piece of data that you
+argument of type `const char *` and the second argument that holds the length
+of the data of type `size_t`. Note that each single piece of data that you
 pass to your Yothalot program will result in a call to `process()`. So, although it possible to call
-process on each single piece of data, this will result in a lot of calls to prcess,
+process on each single piece of data, this will result in a lot of calls to `process()`,
 each call having some overhead. Therefore, you want to provide `process()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to 
@@ -74,9 +75,8 @@ overhead is not to large. Passing data can be done in multiple ways and is
 described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
 and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
 
-The `process()` method returns a type Yothalot::Result. When a process returns
-a value of null, the Yothalot framework keeps the other processes running 
-and start up a new process if there is data waiting to be processed. However,
+The `process()` method returns a type Yothalot::Result. When `Yothalot::Result` object
+that is returned holds the value null, the Yothalot framework keeps on processing. However,
 if the data is non-null, all processes will be ended. With this functionality 
 it is not only easy to process a lot of data, but you can also use it for
 searching to a lot of data. Once you have found an occurrence of the thing
@@ -92,7 +92,7 @@ public:
      *  @param  std::string       Value that is being mapped
      *  @return Yothalot::Value   Your return value
      */
-    virtual Yothalot::Value process(std::string data) override
+    virtual Yothalot::Value process(const char *value, size_t size) override
     {
         // @todo:   implement your process algorithm
         
