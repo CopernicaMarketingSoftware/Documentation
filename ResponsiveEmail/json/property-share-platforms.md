@@ -2,8 +2,7 @@
 
 The property `platforms` accepts a JSON array, with a comma seperated list with 
 JSON objects, containing the actual `platforms` inside the `share` block.
-Each platform json block inside the `platforms` can have different sub-properties.
-Below are listed the specific ones for each social media: 
+All supported platforms are described below: 
 
 ## Facebook
 
