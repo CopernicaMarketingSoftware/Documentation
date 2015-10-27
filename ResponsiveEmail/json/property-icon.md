@@ -12,6 +12,10 @@ The following table lists all sub-properties of the icon property:
 | size | _number_ | The size of the icon. The default value is 32.         |
 
 
+|Icon types|         |         |         |         |         |         |         |         |
+|:---------|---------|---------|---------|---------|---------|---------|---------|---------|
+| flower | glossy | grey | leaf | polygon | rectangular | rounded | roundedcorners | waterdrop |
+ 
 ## Example
 
 The following input JSON shows an icon basic usage in a follow block:
