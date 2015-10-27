@@ -2,7 +2,7 @@
 
 The `label` property is used inside [follow blocks](copernica-docs:ResponsiveEmail/json/block-follow)
 or [share blocks](copernica-docs:ResponsiveEmail/json/block-share)
-and should hold the text that is displayed above your follow buttons.
+and should hold the text that is displayed above your follow or share buttons.
 
 ```javascript
 {
@@ -12,10 +12,15 @@ and should hold the text that is displayed above your follow buttons.
         "blocks" : [ {
             "type"      : "follow",
             "label"     : "Follow us!",
+            "align"     : "left",
+            "icon"      : {
+                "type"      : "rounded",
+                "size"      : 32
+            },
             "platforms" : [ {
-                "name" : "twitter",
-                "link"     : {
-                    "url"   :   "https://twitter.com/copernica"
+                "name"  :   "twitter",
+                "link"      : {
+                    "url"       : "https://twitter.com/copernica"
                 }
             } ]
         } ]
