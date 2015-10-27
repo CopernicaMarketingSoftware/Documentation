@@ -9,8 +9,10 @@ Each platform json block inside the `platforms` can have the following sub-prope
 
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| name | _string_ | The name of the platform.  |
+| name | _string_ | The name of the platform.  See the table below for supported platforms. |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to follow for this platform.                                            |
+
+### Supported platform names:
 
 |          |         |         |         |         |         |         |         |         |
 |:---------|---------|---------|---------|---------|---------|---------|---------|---------|
