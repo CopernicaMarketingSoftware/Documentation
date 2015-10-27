@@ -2,7 +2,7 @@
 
 To run your mapreduce algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::MapReduce. This class
-should then be called from a [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
+should then be called from an [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
 
 ## The MapReduce Class
 
@@ -50,7 +50,7 @@ public:
      *  @param  size        Size of the value
      *  @param  reducer     The result object to which key/value pairs can be mapped
      */
-    virtual void map(const std::string &value, Reducer &reducer) = 0;
+    vvirtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
 
     /**
      *  Function to reduce a key that comes with a number of values
@@ -58,14 +58,14 @@ public:
      *  @param  values      Iteratable object with values that come with this key
      *  @param  writer      The result object to which values can written to
      */
-    virtual void reduce(const Key &key, const Values &values, Writer &writer) = 0;
+    virtual void reduce(const Yothalot::Key &key, const Yothalot::Values &values, Yothalot::Writer &writer) = 0;
 
     /**
      *  Function to write the final result
      *  @param  key         The key for which a single value was found
      *  @param  value       The found value
      */
-    virtual void write(const Key &key, const Value &value) = 0;
+    virtual void write(const Yothalot::Key &key, const Yothalot::Value &value) = 0;
 };
 /**
  *  end namespace
@@ -81,7 +81,8 @@ and your writer step in `write()`.
 
 The `map()` method is used to map the input data to keys and values, the first part of the mapreduce
 process. The input data for the mapper process is passed to `map()` via its
-first argument, of type `const char *`. Note that each single piece of data that you
+first argument, of type `const char *`, that holds the buffer, and its second argument
+that holds the size of the buffer. Note that each single piece of data that you
 pass to your Yothalot program will result in a call to `map()`. So, although it possible to call
 map on each single piece of data, this will result in a lot of calls to map,
 each call having some overhead. Therefore, you want to provide `map()` with
@@ -92,7 +93,7 @@ overhead is not to large. Passing the data can be done in multiple ways
 and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
 and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
 
-The second argument that `map()` receives is used to provide `map()` the
+The third argument that `map()` receives is used to provide `map()` the
 information what to do with the data once it has been mapped into keys and values.
 The argument is of type `Yothalot::Reducer`. This `Yothalot::Reducer` class has one member
 function that is of importance for the map method , `emit()`. After you have
