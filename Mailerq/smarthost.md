@@ -6,7 +6,7 @@ to an alternative mailserver instead - the so-called smarthost.
 
 This feature could for example be useful if you use MailerQ for sending
 mails from your own server to the internet, but you want to use an external
-service (like smtpeter.com) to track the clicks and opens for your mailings.
+service (like [smtpeter.com](www.smtpeter.com)) to track the clicks and opens for your mailings.
 Other use cases for smarthosts are when you want to create a chain of
 MailerQ instances, and have the mails from one instance be forwarded to
 the next instance.
