@@ -3,7 +3,7 @@
 MailerQ is a Mail Transfer Agent (MTA) that uses RabbitMQ, an AMQP message broker 
 for queuing messages. One of the queues MailerQ creates within RabbitMQ is the outbox 
 queue. This queue holds all messages that are waiting to be sent. MailerQ picks up 
-the messages from this queue (which are JSON encoded) and sends the out over an SMTP 
+the messages from this queue (which are [JSON encoded](http://www.json.org "JSON website")) and sends the out over an SMTP 
 connection. 
 
 After sending the email MailerQ publishes a JSON encoded copy to the [result queue](copernica-docs:Mailerq/result-queue "MailerQ result queue") 

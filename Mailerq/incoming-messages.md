@@ -1,6 +1,6 @@
 # Processing incoming mail
 
-Mail can be injected into MailerQ by using the AMQP protocol to publish
+Mail can be injected into MailerQ in two ways: either by using the AMQP protocol to publish
 messages directly to the outbox message queue, or by using MailerQ's 
 built-in SMTP port. Your application can connect to this port, and
 use the SMTP protocol to inject emails.
@@ -9,7 +9,7 @@ use the SMTP protocol to inject emails.
 ## Available ports
 
 In the config file there are a number of variables that you can use
-to set the ports to which MailerQ should listen, and on which it should
+to set the ports on which MailerQ should listen, and from which ips MailerQ should
 accept incoming SMTP connections:
 
 ````
@@ -127,10 +127,9 @@ message queues in RabbitMQ. In the MailerQ configuration file you can
 set the names of the message queues to which these messages are 
 published.
 
-````
+````txt
 rabbitmq-inbox:         name-of-queue-for-valid-messages
 rabbitmq-refused:       name-of-queue-for-rejected-messages
-rabbitmq-reports:       name-of-queue-for-delivery-reports
 ````
 
 Every valid incoming message is published to the inbox queue. Many users
@@ -153,11 +152,15 @@ Be careful here: the queue with refused messages does not automatically
 get emptied, and can fill up fast in case of an attack. MailerQ only 
 adds messages to it, and it is up to you to periodically check the
 contents of the queue and empty it, or to set a max length and/or max
-age for messages in the queue (you can use RabbitMQ's web based 
-management console to set such limits).
+age for messages in the queue (you can use [RabbitMQ's web based 
+management console](copernica-docs:Mailerq/rabbitmq-config) to set such limits).
 
 
 ## Collecting bounces and notifications
+
+```txt
+rabbitmq-reports:       name-of-queue-for-delivery-reports
+``` 
 
 Every incoming message is checked by MailerQ to see if it is a Delivery 
 Status Notification, or some other sort of delivery report or feedback 
