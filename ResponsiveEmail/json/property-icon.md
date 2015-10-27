@@ -11,8 +11,8 @@ The following table lists all sub-properties of the icon property:
 | type | _string_ | The type / flavour of the icon. The default value is "rounded".     |
 | size | _number_ | The size of the icon. The default value is 32.         |
 
-The supported icon types are the following:
-| Icon types                                                                               |
+
+|Icon types|         |         |         |         |         |         |         |         |
 |:---------|---------|---------|---------|---------|---------|---------|---------|---------|
 | flower | glossy | grey | leaf | polygon | rectangular | rounded | roundedcorners | waterdrop |
  
