@@ -1,8 +1,8 @@
-# Writing a Mapreduce C++ Algorithm
+# Writing a C++ Mapreduce Algorithm
 
 To run your mapreduce algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::MapReduce. This class
-should then be called from a [program]()
+should then be called from a [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
 
 ## The MapReduce Class
 
@@ -81,15 +81,15 @@ and your writer step in `write()`.
 
 The `map()` method is used to map the input data to keys and values, the first part of the mapreduce
 process. The input data for the mapper process is passed to `map()` via its
-first argument, a `std::string`. Note that each single piece of data that you
-pass to your Yothalot program will result in a call to map(). So, although it possible to call
+first argument, of type `const char *`. Note that each single piece of data that you
+pass to your Yothalot program will result in a call to `map()`. So, although it possible to call
 map on each single piece of data, this will result in a lot of calls to map,
 each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to 
 map. If you pass some file names, map can nicely run in parallel and the
-overhead is not to large. Passing the data can be done in multiple ways.
-Passing data can be done in multiple ways and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
+overhead is not to large. Passing the data can be done in multiple ways
+and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
 and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
 
 The second argument that `map()` receives is used to provide `map()` the
@@ -109,24 +109,33 @@ An example of an implementation of a `map()` is:
 ```cpp
 class MyMapReduce : public Yothalot::MapReduce
 {
-    public :
+public :
     /**
      *  Implementation for a mapper function
-     *  @param  std::string           Value that is being mapped
+     *  @param  const char *          Value that is being mapped
      *  @param  Yothalot::Reducer     Reducer object to which we may emit key/value pairs
      */
-    virtual void map(const std::string &value, Yothalot::Reducer &reducer) override
+    virtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) override
     {
         // imagine that the to-be-mapped data is a string, and we want to 
         // emit key/value pairs for all the words found in the string
-
+        
+        // Create a input string stream from value
         std::istringstream iss(value);
+        
+        // Read one word at the time
         std::string word;
         while(iss >> word)
         {   
-            reducer.emit(word, 1);
+            // Create a key from the word.
+            Yothalot::Key key = {word};
+            
+            // Create a value 1.
+            Yothalot::Value value = {1};
+            
+            // Emit the key and value.
+            reducer.emit(key, value);
         }
-
     }
     // @todo implement other methods
 }
@@ -169,22 +178,24 @@ An example of a reducer is:
 ```cpp
 class MyMapReduce : public Yothalot::MapReduce
 {
+public:
     /**
      *  Implementation for the reduce function
      *  @param  Yothalot::Key         The key for which values should be reduced
      *  @param  Yothalot::Values      Iterateable object with values linked to the key
      *  @param  Yothalot::Writer      Object to which the reduced value can be sent
      */
-    virtual void function reduce(Yothalot::Key key, Yothalot::Values values, Yothalot::Writer writer) override
+    virtual void reduce(const Yothalot::Key &key, const Yothalot::Values &values, Yothalot::Writer &writer) override
     {
         // total of all values
-        int total = 0;
+        int64_t total = 0;
         
         // iterate over the values
-        for (auto value : values) total += value;
+        for (auto value : values) total += value.int64(0);
         
         // emit the result to the writer
-        writer.emit(total);
+        Yothalot::Value value = {total};
+        writer.emit(value);
     }
     
     // @todo implement other methods
@@ -219,18 +230,24 @@ An example of a `write()` method is:
 ```cpp
 class MyMapReduce : public Yothalot::MapReduce
 {
+public:
     /**
      *  Implement a write function:
      *  @param  Yothalot::Key   The key for which the result comes in
      *  @param  Yothalot::Value Fully reduced value
      */
-    virtual void write(Yothalot::Key key, Yothalot::Value value) override
+    virtual void write(const Yothalot::Key &key, const Yothalot::Value &value) override
     {
         // simply write to an output file
         std::ofstream outfile;
+        
+        // Open the file.
         outfile.open("/path/to/output.txt", std::ios_base::app);
-        outfile << key << " : " << value << std::endl; 
+        
+        // Write to it.
+        outfile << key.string(0) << " : " << value.string(0) << std::endl; 
     }
+    // @todo: implement other methods
 }
 ```
 So there is your mapreduce task. One `mapper()` will start for each string of

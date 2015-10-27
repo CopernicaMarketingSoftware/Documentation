@@ -20,7 +20,7 @@ program that uses your implementation. The program should look as follows:
 /**
  *  the main program
  */
-int main(int argc, char* argv[])
+int main(int argc, const char* argv[])
 {
    // Instantiate your class
    MyMapReduce myMR;
@@ -68,15 +68,20 @@ If you are using gcc you can compile your program by typing on the command
 line in the directory where your program is stored:
 
 ```bash
-g++ -std=c++11 myMapReduce.cpp
+g++ -std=c++11 myMapReduce.cpp -lyothalot
 ```
 
 Since the Yothalot C++ API uses C++ 11 features you need to pass the -std=c++11
-flag. You can of course add the optimization flags that you like, however, you
-have to make sure that if you allow the compiler to use certain CPU features
-these features should be supported by all CPUs in your Yothalot cluster.
+flag. Morover, the program depends on the Yothalot library. You need to tell this
+to the compiler as well. This is done with -lyothalot. 
 
 Running the above command will give you a program a.out. The Yothalot
 framework will call this program from its nodes. Therefore, the program
 should be available on all the nodes. If you copy your file to the GlusterFS
 cluster, you are sure that all nodes have access to the program.
+
+
+You can of course add the optimization flags that you like, however, you
+have to make sure that if you allow the compiler to use certain CPU features
+these features should be supported by all CPUs in your Yothalot cluster.
+
