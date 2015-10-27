@@ -14,7 +14,7 @@ The following table lists all sub-properties of the icon property:
 
 ## Example
 
-Consider the following input JSON:
+The following input JSON shows an icon basic usage in a follow block:
 
 ```javascript
 {
