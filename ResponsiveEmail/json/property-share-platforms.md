@@ -10,10 +10,10 @@ Below are listed the specific ones for each social media:
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "facebook" | The name of the social media.                                             |
-| appid | _string_ | The appid of the social platform. If not specified, this field is automatically gets the value of the Copernica Marketing Software appid (optional).           |
+| appid | _string_ | The appid of the social platform. If not specified, this field automatically gets the value of the Copernica Marketing Software appid (optional).           |
 | title | _string_ | The caption of the link (appears beneath the link name). If not specified, this field is automatically populated with the URL of the link. (optional).                       |
-| description | _string_ | The post description (optional). If not specified, this field is automatically populated by information scraped from the link, typically the title of the page.                       |
-| picture | _string_ | The URL of a picture attached to this post. The picture must be at least 200px by 200px.                       |
+| description | _string_ | The post description. If not specified, this field is automatically populated by information scraped from the link, typically the title of the page (optional).                       |
+| picture | _string_ | The URL of a picture attached to this post. The picture must be at least 200px by 200px (optional).                       |
 
 ## LinkedIn
 
@@ -28,9 +28,9 @@ Below are listed the specific ones for each social media:
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "twitter" | The name of the social media.                                             |
-| description | _string_ | Pre-populated UTF-8 and URL-encoded Tweet text. The passed text will appear pre-selected for a Twitter user to delete or edit before posting. Max length : 140 chars  (optional).                       |
+| description | _string_ | Pre-populated UTF-8 and URL-encoded Tweet text. Max length : 140 chars  (optional).                       |
 | hashtags | _array_ | Allow easy discovery of Tweets by topic by including a comma-separated list of hashtag values without the preceding # character (optional).                       |
-| via | _string_ | A Twitter username to associate with the Tweet, such as your site’s Twitter account. The provided username will be appended to the end of the Tweet with the text “via @username” (optional).                       |
+| via | _string_ | A Twitter username to associate with the Tweet, such as your site's Twitter account. The provided username will be appended to the end of the Tweet with the text "via @username" (optional).                       |
 
 ## GooglePlus
 
@@ -42,7 +42,7 @@ Below are listed the specific ones for each social media:
 
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
-| name | "windowslive" | The name of the social media.                                             |
+| name | "windows" | The name of the social media.                                             |
 | title | _string_ | The post title.                       |
 | description | _string_ | The post description.                       |
 
@@ -50,7 +50,7 @@ Below are listed the specific ones for each social media:
 
 | Property | Value | Description                                                                                                                                       |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
-| name | "tumbler" | The name of the social media.                                             |
+| name | "tumblr" | The name of the social media.                                             |
 | title | _string_ | The post title.                       |
 | description | _string_ | The post description.                       |
 
@@ -113,12 +113,12 @@ the basic usage, showing a set of share buttons.
                 "name"         :   "googleplus",
             },
             {
-                "name"         :   "windowslive",
+                "name"         :   "windows",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
             },
             {
-                "name"         :   "tumbler",
+                "name"         :   "tumblr",
                 "title"        :   "Post title",
                 "description"  :   "Post description",
             },
