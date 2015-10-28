@@ -28,10 +28,12 @@ public:
     bool isInt32(size_t index) const;
     bool isInt64(size_t index) const;
     bool isNull(size_t index) const;
+    bool isDouble(size_t index) const;
     
     int32_t int32(size_t index) const;
     int64_t int64(size_t index) const;
     int64_t number(size_t index) const;
+    double doubleValue(size_t index) const;
     
     std::string string(size_t index) const;
     
@@ -116,9 +118,9 @@ myTuple.add(12);
 
 ## Member isXxx()
 
-With members `isNumber()`, `isString()`, `isInt32()`, `isInt64()`, and 
+With members `isNumber()`, `isString()`, `isInt32()`, `isInt64()`, `isDouble()` and 
 `isNull()` you can check if a field is a number, a string, an int32_t,
-an int64_t or a nullptr respectively. The fields are indexed from zero.
+an int64_t, a double or a nullptr respectively. The fields are indexed from zero.
 You can use it like:
 ```cpp
 /**
@@ -149,6 +151,25 @@ Yothalot::Tuple myTuple = {12, 23}
 int_32 a = myTuple.int32(0);
 // a is 12
 ```
+
+## Member doubleValue()
+With member `doubleValue()` you can retrieve fields of type double
+from the tuple. The field are indexed from zero. You can
+use it like
+```cpp
+/**
+ *  create a tuple that holds two int32_t values
+ */
+Yothalot::Tuple myTuple = {12.14, 23.008}
+
+/**
+ *  get the first field from the tuple
+ */
+double a = myTuple.int32(0);
+// a is 12.14
+```
+
+
 ## Member number()
 With member `number()` you can retrieve a numeric value from the tuple 
 without caring about its size. The number returned is of type int64_t.
