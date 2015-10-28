@@ -2,13 +2,16 @@
 
 You can start a Yothalot job by running the [program](copernica-docs:Yothalot/cpp-program "Program")
 that uses your [MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce algorithm")
-or [racer](copernica-docs:Yothalot/cpp-race "Racer algorithm") algorithm. 
-It does not matter where this program is started. However, you have to make sure
-that all nodes have access to this program, since each node can start up
+or [racer](copernica-docs:Yothalot/cpp-race "Racer algorithm") algorithm and add some
+command line parameters to it. 
+
+When you start your program manually it does not matter where this program
+is started. However, you have to make sure that all nodes have access to this program, since each node can start up
 a new map or reduce task for which it needs your program. The easiest way
 to achieve this is to copy your program to the GlusterFS cluster. After all,
 each node of the Yothalot cluster should have access to the GlusterFS
-cluster in order to be able to have access to the data. 
+cluster in order to be able to have access to the data. Some extra information
+is given below in the **Be aware of paths** section.
 
 
 ## Information about the connection
@@ -37,6 +40,7 @@ The command line options that are available to set up the connection are:
 *   --rabbitmq-vhost
 *   --rabbitmq-exchange
 *   --rabbitmq-mapreduce
+*   --wait
 
 
 ### Option rabbbitmq-host
@@ -74,6 +78,14 @@ With this option you can set the name of the RabbitMQ queue for the mapreduce
 jobs. If the option is not passed to your program and `/etc/yothalot/config.txt` 
 is not available it will set the mapreduce queue to `mapreduce`.
 
+### Option wait
+Option wait is not really an option to control the connection. The option
+tells the program you have started if it should wait for the Yothalot
+job to be finished or not in order to terminate. You can e.g. use it to
+see when a job is finished. In the case of a Yothalot::Racer job, the
+returned output, if any, will be shown as a JSON object. This output can
+be passed to file so you can use it later.
+
 
 ## Passing data to your program
 
@@ -85,7 +97,7 @@ arguments to the first argument of the `map()` method in your created MapReduce
 class.
 
 
-# Be aware of paths
+## Be aware of paths
 
 Yothalot needs to know where files and other resources are located on the GlusterFS file system.
 Therefore, it is important that you provide the absolute paths to these resources.
