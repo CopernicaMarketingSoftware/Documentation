@@ -37,7 +37,7 @@ Both algorithms can be implemented by simply extending a virtual base
 class that is supplied by the Yothalot framework:
 
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-* [Class Yothalot::Race](copernica-docs:Yothalot/cpp-race "Race")
+* [Class Yothalot::Racer](copernica-docs:Yothalot/cpp-race "Racer")
 
 
 ## Creating your program
@@ -97,8 +97,10 @@ The following classes are offered by the Yothalot framework:
 * [Class Yothalot::Inputs](copernica-docs:Yothalot/cpp-input "Inputs")
 * [Class Yothalot::Job](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
 * [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes"),
+* [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
 * [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+* [Class Yothalot::Racer](copernica-docs:Yothalot/cpp-race "Racer")
 * [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
 * [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
@@ -106,5 +108,4 @@ The following classes are offered by the Yothalot framework:
 * [Class Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple "Tuple"),
 * [Class Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::Values](copernica-docs:Yothalot/cpp-classes "Classes"),
-* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes"),
-
+* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes")

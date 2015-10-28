@@ -1,7 +1,7 @@
 # Create a Yothalot program
 
 After having implemented your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-or [race](copernica-docs:Yothalot/cpp-race "Race") algorithm you have to create a little 
+or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm you have to create a little 
 program that uses your implementation. The program should look as follows:
 
 
@@ -15,7 +15,7 @@ program that uses your implementation. The program should look as follows:
  *  includes
  */
 #include <yothalot.h>
-#include "MyMapReduce.h" // or #include "MyRace.h"
+#include "MyMapReduce.h" // or #include "MyRacer.h"
 
 /**
  *  the main program
@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
 }
 ```
 You first initialize the class with your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-or [race](copernica-docs:Yothalot/cpp-race "Race") algorithm. Here we used a default
+or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm. Here we used a default
 initialization of a MapReduce class, but you can of course add other
 functionality to your class with other constructors as well that you 
 use when you instantiate it.

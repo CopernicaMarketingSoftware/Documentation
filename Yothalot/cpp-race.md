@@ -10,7 +10,7 @@ the algorithm in a class that inherits form Yothalot::Racer. This class
 should then be called from an [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
 
 
-## The Race Class
+## The Racer Class
 
 The class that you have to create for your race algorithm should inherit 
 from the following base class.

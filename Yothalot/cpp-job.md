@@ -2,7 +2,7 @@
 
 With the **Yothalot::Job** class you can create, tune and control mapreduce
 and race jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [race](copernica-docs:Yothalot/cpp-program-race "Race") program, the
+or [racer](copernica-docs:Yothalot/cpp-program-race "Racer") program, the
 input data and several performance settings.
 
 The most important member functions of Yothalot::Job are the 
@@ -16,7 +16,7 @@ class Job
 {
 public:
     // Constructor for a job
-    Job(const Yothalot::Connection &connection, const std::string &mapReduceOrRaceProgName);
+    Job(const Yothalot::Connection &connection, const std::string &mapReduceOrRacerProgName);
     
     // adding input data to a job
     void add(const std::string &data);
@@ -44,7 +44,7 @@ public:
 
 The constructor takes two parameters, a [Yothalot::Connection](copernica-docs:Yothalot/cpp-connection) 
 and the filename of your program that holds the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [race](copernica-docs:Yothalot/cpp-program-race "Race") algorithm.
+or [racer](copernica-docs:Yothalot/cpp-program-race "Racer") algorithm.
 
 ```cpp
 // create a connection
@@ -62,7 +62,7 @@ to the `map()` method in your own mapreduce object.
 
 There is a one-to-one relation between the number of times that you call the 
 `add()` method and the number of mapper processes, or process processes in the case
-of a Race, that are started on the cluster: 
+of a Racer, that are started on the cluster: 
 every call to the `add()` method automatically results in a mapper process that 
 is started, and the value that you pass to this add() function is used as the 
 input data for the `map()` method of this mapper process.

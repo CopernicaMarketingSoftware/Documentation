@@ -58,4 +58,4 @@ for debian based systems.
 
 After you have installed the necessary libraries you can create your 
 Yothalot [mapreduce](copernica-docs:Yothalot/cpp-program "MapReduce program")
-and [race](copernica-docs:Yothalot/cpp-program-race "Race program") programs.
+and [racer](copernica-docs:Yothalot/cpp-program-race "Racer program") programs.

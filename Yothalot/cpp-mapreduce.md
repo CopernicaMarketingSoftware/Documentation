@@ -83,7 +83,7 @@ The `map()` method is used to map the input data to keys and values, the first p
 process. The input data for the mapper process is passed to `map()` via its
 first argument, of type `const char *`, that holds the buffer, and its second argument
 that holds the size of the buffer. Note that each single piece of data that you
-pass to your Yothalot program will result in a call to `map()`. So, although it possible to call
+pass to your Yothalot program will result in a call to `map()`. So, although it is possible to call
 map on each single piece of data, this will result in a lot of calls to map,
 each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
