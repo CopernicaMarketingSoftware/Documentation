@@ -160,7 +160,7 @@ argument is the key of type `Yothalot::Key`. Each key is at least passed
 by `map()` once. 
 
 The second argument are the values of type `Yothalot::Values`.
-These are all the values that belong to the this particular key that is passed as
+These are the values that belong to the particular key that is passed as
 the first argument. Since there are multiple values for one key, the type
 `Yothalot::Values` is a class that can hold multiple `Yothalot::Value`s
 (note the difference) with which you easily can iterate over all the values
@@ -202,8 +202,8 @@ public:
     // @todo implement other methods
 }
 ```
-Above we said that the second argument, values, contains all the values that
-belong to a certain key. This is actually only partly correct. If we would have
+Above we said that the second argument, values, contains the values that
+belong to a certain key. This is only partly part of the story. If we would have
 implemented Yothalot to only start a reducer if all values for a specific 
 key would be available, Yothalot would be very inefficient. Because, if
 all values have to be available, a reducer step can only be started if all
@@ -211,11 +211,11 @@ mapper processes have been finished. This would harm the parallelization
 of the mapreduce task. Moreover, the task needs to have a lot of extra memory
 or disk space since all key value pairs should stay somewhere before
 the reduce step starts. Therefore, Yothalot starts reducer tasks if there
-are enough values for one key to reduce. So the argument values contain all the values that are at
-that time available. Or it may be a subset if there are so many values
+are enough values for one key to reduce. So the argument values contain the values that are at
+that time available or even a subset if there are so many values
 that consuming them at once takes to many resources. This implies that
 your reduced value may be re-reduced in a next reduce step. This is inherit
-to mapreduce tasks and not Yothalot specific but it is something to be aware of.
+to efficient mapreduce tasks and is something to be aware of.
 
 
 ## Writing
