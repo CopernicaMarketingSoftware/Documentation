@@ -8,7 +8,7 @@ total number of words.
 
 Because Yothalot comes with a very simple [PHP API](copernica-docs:Yothalot/phpapi),
 we show how you can implement the WordCount map/reduce job in PHP. You simply start
-by writing your own WordCount class that implements the Yothalot\MapReduce interface.
+by writing your own WordCount class that implements the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
 This MapReduce interface prescribes that you implement the methods `map()`,
 `reduce()`, and `write()`: the three common steps of the map-reduce algorithm.
 
