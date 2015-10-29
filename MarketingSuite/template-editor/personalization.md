@@ -105,7 +105,7 @@ is equal to 'john'.
 
 `{if $name == 'john'}Hello John{/if}`
 
-But what if there's also a Sarah in your mailing list. You wouldn't want to display 
+But what if there's also a Sarah in your mailing list. You wouldnt want to display 
 nothing to her, wouldn't you? That's where the {elseif} keyword comes to save the day. 
 
 `{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}`
@@ -125,7 +125,7 @@ executed if none of the preceeding statements returned true.
 ```
 
 This is of course a very bad example of how you should write your personal salutation,
-because your conditional block would become as long as the list of all names in the world. 
+because your conditional block should become as long as the list of all names in the world. 
 
 A much better example would obviously be: 
 
@@ -165,37 +165,61 @@ or and and operators. Meaning you can actually have statements like
 ```{if $a >= $b and $b <= $c}true{else}false{/if}```.
 
 ### Foreach
-The foreach statement is used to loop over arrays. The syntax of this is fairly straight forward.
+
+If you have a collection of data (an array), and want to see if a specific something is inside 
+that collection, you'll have to loop through all the items in this collection. 
+
+Or (in a real world example) you want to display all the soccer team members who are stored in the array $soccerTeam.   
+
+To loop over collections of data, the foreach statement is used. The syntax of this is fairly straight forward.
+
 ```
-{foreach $item in $list}
-  {$item.name}
-{/foreach}
+    {foreach $player in $soccerTeam}
+       {$player.name}
+    {/foreach}
 ```
-This will loop over the items in $list and assign them to $item in each iteration, inside this
-foreach block you can do with it whatever you want. Of course we also support looping over arrays
-that have non standard keys.
+
+This will loop over the items (team members) in $soccerTeam and assign each player to the variable $player in 
+each iteration. Inside this foreach block you can do whatever you want with the outputted information. You can for
+example generate a HTML list with soccer players from that team. 
+
+It becomes a little bit more technical now... 
+
+Of course we also support looping over arrays that have non-standard keys.
+
 ```
-{foreach $list as $key => $value}
-  Key {$key} contains {$value}.
-{/foreach}
+    {foreach $list as $key => $value}
+       Key {$key} contains {$value}.
+    {/foreach}
 ```
-As you can see here, you now specify both a $key and a $value which will be used to store these
-values on each iteration. And finally, sometimes you want certain code to execute if there is no
-data at all, this is done using the {foreachelse} statement.
+
+As you can see here, you specify both a $key and a $value which will be used to store these
+values on each iteration. 
+
+And finally, sometimes you want certain code to execute if there is no
+data at all, this is done using the `{foreachelse}` statement.
+
 ```
-{foreach $item in $list}
-  {$item.name}
-{foreachelse}
-  No items in list.
-{/foreach}
+    {foreach $item in $list}
+       {$item.name}
+    {foreachelse}
+        No items in list.
+    {/foreach}
 ```
 This foreachelse statement is only executed in case of no data, it is completely ignored otherwise.
 
-### Assigning
+### Assigning variables 
+
 You can assign values on runtime. You can for example use this to calculate the total price of a
-set of items that were bought. Or remember a certain item in a foreach statement. Assigning is simply
-done like ```{assign $item to $topitem}```. After this statement the variable $topitem is available and it will
-contain what $item contained at the time. This will allow you to do things like the following.
+set of purchased items. Or remember a certain item inside a foreach statement. Assigning variables 
+is done as follows:
+
+```{assign $item to $topitem}``` 
+
+After this statement the variable $topitem is available and it will
+contain what $item contained when the email was .
+
+ This will allow you to do things like the following.
 ```
 {foreach $item in $list}
   {assign $total + $item.price to $total}
