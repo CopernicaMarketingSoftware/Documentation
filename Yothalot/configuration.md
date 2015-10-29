@@ -91,7 +91,10 @@ log-maxhistory:         100
 #
 #   Yothalot needs to know where GlusterFS is mounted in order to have access to 
 #   the data and to be able to write and read temporary files to GlusterFS. This
+#   information can be retrieved by Yothalot itself if you only have one mount point
+#   to a GlusterFS cluster. If you happen to have multiple mount points to multiple
+#   GlusterFS you have to tell Yothalot which mount point you want to use. This 
 #   information is passed to Yothalot via base-directory.
 
-base-directory:         /GlusterFs/mountpoint/
+# base-directory:         /GlusterFs/mountpoint/
 ```
