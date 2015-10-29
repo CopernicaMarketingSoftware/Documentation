@@ -7,14 +7,15 @@ many processes were used, how many temporary files were created, etc. You can
 use this information to tweak your mapreduce algorithm or to fine tune the
 behavior of the job by using its [tuning settings](copernica-docs:Yothalot/tuning).
 
-We provide you all the information about a finished job in the **Yothalot\Result** class. 
+We provide you all the information about a finished job in the **Yothalot\Result** class.
 This **Yothalot\Result** class holds results on the behavior of a job.
 You cannot create a results class yourself as this would not make any sense,
-yet, **Yothalot\Results** classes are returned by the `wait()` method of the 
-**Yothalot\Job class**. The class provides you all the information on the 
-behaviour of the job you want and probably some extra. However, if there is relevant 
+yet, **Yothalot\Results** classes are returned by the `wait()` method of the
+**Yothalot\Job class**. The class provides you all the information on the
+behaviour of the job you want and probably some extra. However, if there is relevant
 information that you would like to have but is currently not provided,
-please contact us by sending an email to [info@copernica.com](mailto:info@copernica.com)
+please contact us by sending an email to [info@copernica.com](mailto:info@copernica.com).
+
 
 ## The Yothalot\Result class
 
@@ -22,7 +23,7 @@ The **Yothalot\Result** class provides the general information of the job, i.e.
 the time when the job was started and the runtime. The class also gives
 you access to classes that hold statistics on the individual steps of the mapreduce
 algorithm, i.e. the mapper step, the reducer step, and the finalizer step.
- The interface of the Yothalot\Result class looks as follows:
+The interface of the Yothalot\Result class looks as follows:
 
 ```php
 class Yothalot\Result
@@ -73,9 +74,9 @@ echo("The runtime was: ".$result->runtime()."\n");
 ## The Yothalot\Stats class
 
 A mapreduce job has three basic steps. A mapper step, a reducer step and
-a finalizer, or writer, step. Information on each step is stored in the 
+a finalizer, or writer, step. Information on each step is stored in the
 Yothalot\Stats class and can be retrieved via the above listed members
-`mappers()`, `reducers()`, and `finalizers()`. The interface of this class 
+`mappers()`, `reducers()`, and `finalizers()`. The interface of this class
 looks as follows.
 
 ```php
@@ -146,7 +147,7 @@ echo("The runtime of the fastest reducer was: ".$result->reducers()->fastest()."
 ```
 As you can see you can get quite some details about the job. You can e.g. see
 which step is spending the most time. This information may help you to adjust
-your algorithm for the job or [fine tune](copernica-docs:Yothalot/tuning) the 
+your algorithm for the job or [fine tune](copernica-docs:Yothalot/tuning) the
 job behavior.
 
 
@@ -154,8 +155,8 @@ job behavior.
 
 The mapper, reducer, and finalizer steps may produce temporary files that are used
 by the step itself or are used to pass information from one step to the next one.
-You can use the Yothalot\DataStas object to get insight in the amount of 
-temporary files and their sizes that are consumed and created in each step. 
+You can use the Yothalot\DataStas object to get insight in the amount of
+temporary files and their sizes that are consumed and created in each step.
 The interface of Yothalot\DataStats class is as follows:
 ```php
 class DataStats
@@ -184,6 +185,6 @@ $result = $job->wait();
 echo("The number of temporary bytes produced by the mapper is:  ".$result->mappers()->output()->bytes()."\n");
 echo("The number of temporary files consumed by the reducer is: ".$result->reducers()->input()->files()."\n");
 ```
-The information on the number of files and their sizes may again help you 
+The information on the number of files and their sizes may again help you
 to adjust your algorithm and use the [tuning settings](copernica-docs:Yothalot/tuning)
 to increase the performance of your mapreduce job.
