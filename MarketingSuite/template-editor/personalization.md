@@ -105,7 +105,7 @@ is equal to 'john'.
 
 `{if $name == 'john'}Hello John{/if}`
 
-But what if there's also a Sarah in your mailing list. You wouldnt want to display 
+But what if there's also a Sarah in your mailing list. You wouldn't want to display 
 nothing to her, wouldn't you? That's where the {elseif} keyword comes to save the day. 
 
 `{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}`
@@ -125,7 +125,7 @@ executed if none of the preceeding statements returned true.
 ```
 
 This is of course a very bad example of how you should write your personal salutation,
-because your conditional block should become as long as the list of all names in the world. 
+because your conditional block would become as long as the list of all names in the world. 
 
 A much better example would obviously be: 
 
