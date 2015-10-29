@@ -1,8 +1,11 @@
 # Yothalot\Job
 
-With the **Yothalot\Job** class you can create, tune and control  
-jobs. A job holds the mapreduce or race algorithm, the input data and 
-several performance settings.
+With the **Yothalot\Job** class you can create, tune and control
+jobs. A job holds the [connection](copernica-docs:Yothalot/php-connection "Connection"),
+the [mapreduce](copernica-docs:Yothalot/php-mapreduce) or
+[race](copernica-docs:Yothalot/php-race) algorithm, the input data and
+several performance settings. For an example of creating a complete job you can see our
+[hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
 
 The most important member functions of Yothalot\Job are the
 ones with which you add input data to the job, and the method to start the
@@ -39,14 +42,11 @@ class Yothalot\Job
 
 ## Constructor
 
-The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection) 
+The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection)
 and an instance of your own object in which your algorithm is implemented.
 The algorithm sbould either be an instance of [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
 for map/reduce jobs, or an instance of [Yothalot\Race](copernica-docs:Yothalot/php-race)
-for race jobs.
-
-For more information on how to create your own jobs, see our 
-[hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
+for race jobs. Creating a job looks like:
 
 ```php
 // create a connection
@@ -55,6 +55,39 @@ $connection = new Yothalot\Connection(array(
     "vhost" =>  "yothalot"
 ));
 
+// create a job
+$job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
+```
+
+
+## Adding input data
+
+The `add()` method is used to add input data to the job. You must add the input
+data before you start the job. All the data that you add to the job will be passed
+to the `map()` method in your own mapreduce object, or to the `process()` method
+if you had assigned a race algorithm.
+
+There is a one-to-one relation between the number of times that you call the
+`add()` method and the number of mapper or race processes that are started on the cluster:
+every call to the `add()` method automatically results in a mapper or races process that
+is started, and the value that you pass to this add() function is used as the
+input data for the `map()` or `process()` method of this mapper or racer process.
+
+Because of this direct relation, it is best practice to only add things like file names to
+your job, so that the processes will have plenty of stuff to process, and
+that no trivial processes are started.
+
+If you do add a file name to the job, you must of course make sure that this
+file is available on every node in the cluster, because you can not know in
+advance on which server a job is going to run. It is therefore advisable to
+store the input data on GlusterFS.
+
+```php
+// create a connection
+$connection = new Yothalot\Connection(array(
+    "host"  =>  "rabbit1.example.com",
+    "vhost" =>  "yothalot"
+));
 // create a job
 $job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
 
@@ -67,41 +100,22 @@ $job->add("even more data");
 $job->start();
 ```
 
-## Adding input data
-
-The `add()` method is used to add input data to the job. You must add the input
-data before you start the job. All the data that you add to the job will be passed
-to the `map()` method in your own mapreduce object, or to the `process()` method
-if you had assigned a race algorithm.
-
-There is a one-to-one relation between the number of times that you call the 
-`add()` method and the number of mapper or races processes that are started on the cluster: 
-every call to the `add()` method automatically results in a mapper or races process that 
-is started, and the value that you pass to this add() function is used as the 
-input data for the `map()` or `process()` method of this mapper or racer process.
-
-Because of this direct relation, it is best practice to only add things like file names to
-your job, so that the processes will have plenty of stuff to process, and
-that no trivial processes are started.
-
-If you do add a file name to the job, you must of course make sure that this
-file is available on every node in the cluster, because you can not know in
-advance on which server a job is going to run. It is therefore advisable to
-store the input data on GlusterFS.
-
-
 ## Controlling the server
 
 Every call to the `add()` method results in a process that is started
 somewhere on the Yothalot cluster. This is done randomly: the first available
-node receives the job. However, if you want to control on which server the
-mapper is going to run, you can use the `server()` or `file()` methods to pass
-a hint to the Yothalot framework about the server that can best be used to run 
-the job.
-
-The `server()` and `file()` methods do *exactly the same* as the `add()` method, 
-with one exception: they accept a second parameter that you can use to give a 
-hint on which server to run the job:
+node receives the job. However, this may not always be the best choice. Since
+Yothalot uses a distributed file system it would be ideal to run the process
+on a server where the data is locally available to avoid network overhead.
+For this purpose members `file()` and `server()` are created. The `file()`
+and `server()` methods do *exactly the same* as the `add()` method,
+with one exception: they accept a second parameter that you can use to give a
+hint on which server to run the job. The hint in `file()` is the filename
+so Yothalot knows that the data you pass belongs to that particular filename
+and the process should be scheduled on a server where that file is locally
+available. If you pass only one parameter in `file()` it assumes that that
+parameter is the filename. Member `server()` takes as a hint the server name
+on which the process ideally should run. You can use it like:
 
 ```php
 // construct a job
@@ -139,8 +153,8 @@ other servers.
 
 ## Running a job
 
-After you have added all the data to your job you can start the job with 
-`start()`. Once a job has been started it is no longer possible to add input 
+After you have added all the data to your job you can start the job with
+`start()`. Once a job has been started it is no longer possible to add input
 data to the job, and it is no longer possible to tune the job.
 
 If you want to wait for your job to finish, you can call the `wait()` method.
@@ -168,8 +182,8 @@ $output = file_get_contents("path/to/output/file.txt");
 
 The counter part of the `wait()` method is the `detach()` method. This detaches
 the script from the job - while the job continues to run in the background. In practice
-it is not necessary to explicitly call `detach()` because active jobs are 
-automatically detached when the PHP script ends. The only effect of the `detach()` 
+it is not necessary to explicitly call `detach()` because active jobs are
+automatically detached when the PHP script ends. The only effect of the `detach()`
 call is that it becomes impossible to call `wait()` later on, because the job
 is already detached.
 
@@ -178,17 +192,17 @@ is already detached.
 Besides that the `wait()` method blocks your script while it waits for the
 job to complete, the method also return a [Yothalot\Results](copernica-docs:Yothalot/php-result "Result")
 object with all kind of information about the performance and behavior of
-the job. 
+the job.
 
 
 ## Tuning the job
 
 There are many methods to tune your job's performance. You can for example set the
-modulo so that the mapped data is split up into multiple groups that are 
+modulo so that the mapped data is split up into multiple groups that are
 individually reduced and written, or you can limit the number of processes
 that are started.
 
-Most of the tuning parameters only apply to map/reduce jobs. For racer algorithms, 
+Most of the tuning parameters only apply to map/reduce jobs. For racer algorithms,
 only the `maxprocesses()` setting is relevant.
 
 ```php
@@ -209,4 +223,3 @@ All of the above methods accept one parameter: an integer value with the
 setting. You must set these tuning parameters *before* you start the job.
 For an explanation of the  meaning of all the tuning parameters, see the special in-depth
 [article about tuning mapreduce jobs](copernica-docs:Yothalot/tuning).
-
