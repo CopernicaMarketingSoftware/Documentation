@@ -14,6 +14,7 @@ There are couple of different types of blocks available:
 - [Text block](copernica-docs:MarketingSuite/template-editor/blocks/text)
 - [Video block](copernica-docs:MarketingSuite/template-editor/blocks/video)
 - [Webversion block](copernica-docs:MarketingSuite/template-editor/blocks/webversion)
+- [Follow us block](copernica-docs:MarketingSuite/template-editor/blocks/follow-us)
 
 ## Adding blocks
 

@@ -6,15 +6,16 @@ you are known with the basics, we still want to remind you of the following:
 
 
 ## Template header
-The from details and subject of your email is just as important as the
-actual content of your email. Make sure your the recipients of your mailing
-know its you by just looking at the from details. Just like within the content
-of your email, be careful with misspellings, spammy words (buy now!, Free!,
-viagra) are big spam flags, as are ALL CAPS AND EXCLAMATION MARKS!!!!!!!!!!!!!
+The sender details and subject of your email are just as important as the
+actual content of your email. Make sure that your subscribers know it is you, 
+just by looking at the details. Just with the content
+of your email, make sure there are no misspellings in your subject line. Spammy words (buy now!, Free!,
+viagra) are big spam flags, as are ALL CAPS and exclamation marks!!!!!!!!!!!!!.
 
 
 ## Text version
-Sending HTML only email is not well received by ESPs. Also, nowadays some
+The text version is a text-only version of your email that is automatically sent
+along with the HTML version. Sending HTML only email is not well received by ESPs. Also, nowadays some
 email clients show a popup notification when a new email arrives. The text
 version of your email is automatically shown within some of these popup
 notifications. This is another reason why you should care about the text
@@ -23,8 +24,8 @@ version of your email.
 
 ## Attachments
 Even though we support attachments, our best advice: Don't use attachements
-in your mass mailings. Those that send a large amount of emails on a regular
-basis that include attachments typically are spammers.
+in your mass mailings. Those that send a large volumes of emails that include attachments
+typically are spammers.
 
 Aside of a bigger risk of being flagged as a spammer, not all recipients
 might have enough space in their mailbox to receive large emails with the
