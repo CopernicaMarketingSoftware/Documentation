@@ -27,8 +27,9 @@ in which we deal with files using calls like "fopen()", "fwrite()" and
 "fclose()" - and our operations department also prefers tools like "ls",
 "mkdir" and "less". Switching to HDFS would not make things easier.
 
-We therefore decided not to use HDFS, but GlusterFS. This allowed us
-to use the functions and tools mentioned above, and still have a
+We therefore decided not to use HDFS, but [GlusterFS](http://www.gluster.org/),
+a distributed network file system that behaves just like a normal (POSIX) file system.
+This allows us to use the functions and tools mentioned above, and still have a
 distributed file system for our map/reduce jobs.
 
 
@@ -67,10 +68,10 @@ starting up that initial wordcount example.
 All these frustrations, and the fact that the actual map/reduce
 algorithm did not look that complicated to us, led to the conclusion that we
 would be better off writing our own alternative map/reduce system. In
-the end it came just down to combining ingredients: we use GlusterFS for
-the distributed file system, RabbitMQ for reliable communication between
+the end it came just down to combining ingredients: we use [GlusterFS](http://www.gluster.org/) for
+the distributed file system, [RabbitMQ](https://www.rabbitmq.com/) for reliable communication between
 jobs and nodes, and PHP as the scripting language in which map/reduce
-tasks can be written (although you can use other languages too).
+tasks can be written (although you can use C++ too).
 
 Our Yothalot product turns out to be a powerful solution, that allows
 one to write map/reduce algorithms in PHP to process huge log files (and
