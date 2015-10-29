@@ -19,11 +19,12 @@ be implemented by you.
 
 ## Installation
 
-If you want to use the C++ API you have to install Yothalot and the Yothalot
-library.
+If you want to use the C++ API you only have to install Yothalot. Make sure
+that Yothalot is also installed on the machine where you build your mapreduce
+programs since building the program requires the yothalot library that comes
+with the Yothalot installation.
 
 * [How to install Yothalot](copernica-docs:Yothalot/installation "Installation")
-* [How to install the Yothalot C++ library](copernica-docs:Yothalot/cpp-install "C++ Library Installation")
  
 
 ## Algorithms
