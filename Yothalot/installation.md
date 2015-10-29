@@ -1,22 +1,24 @@
 # Installation
 
 Yothalot uses [GlusterFS](http://www.gluster.org/) as its distributed
-file system and [RabbitMQ](https://www.rabbitmq.com/) for its communication.
-Before you can use Yothalot you need to have these installed and
-configured. This page provides some installation guidelines for these
-packages and provides links to various resources.
+file system and [RabbitMQ](https://www.rabbitmq.com/) for its internal communication.
+Therefore, before you can use Yothalot you need to have these installed and
+configured. This page provides some installation guidelines for both
+packages and provides links to various resources. It of course also discusses
+how Yothalot itself can be installed and configured.
 
 
 ## Installation and configuration of GlusterFS
 
-The GlusterFS project contains a large amount of documentation on how to
+GlusterFS is a distributed file system that should be configured before
+Yothalot can be used. The GlusterFS project contains a large amount of documentation on how to
 setup and configure GlusterFS. A quick install guide of GlusterFS can
 be found [here](http://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/).
 A more in-depth guide is available [here](http://gluster.readthedocs.org/en/latest/Install-Guide/Overview/).
 We advise you to follow the steps described over there for your use case
 to setup your GlusterFS cluster.
 
-If you have GlusterFS installed and configured you have to mount the file system
+If you have GlusterFS installed and configured you have to mount the GlusterFS file system
 on the machines that you want to include in the Yothalot cluster. Every Yothalot
 node needs access to the file system. You can make a mount point with the following
 command:
@@ -25,7 +27,7 @@ command:
 sudo mount -t glusterfs nameOfCluster:/volume-name /path/to/mount/point
 ```
 
-Yothalot automatically tries to assign jobs to nodes in the cluster that have
+For efficiency purposes Yothalot automatically tries to assign jobs to nodes in the cluster that have
 local access to the files that are mapped or reduced. To find out on which
 servers files are stored, Yothalot runs the `getfattr` command line tool. For a
 reason that is not completely clear to us, only the root user may do this. For
@@ -100,6 +102,7 @@ website that explains how to do this:
 
 [https://www.rabbitmq.com/management.html](https://www.rabbitmq.com/management.html)
 
+
 ## Installation of Yothalot
 
 After GlusterFS and RabbitMQ have been installed and configured, you're ready to
@@ -121,7 +124,7 @@ for Debian based systems.
 section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
 
 After the installation of Yothalot on all the nodes in the cluster you have
-to configure Yothalot. The yothalot process reads its configuration standard 
+to configure Yothalot. Yothalot reads its configuration standard 
 from the `/etc/yothalot/config.txt` config file. In this configuration file you can configure your Yothalot process.
 We have a special [configuration section](copernica-docs:Yothalot/configuration)
 on this website that explains all the settings from this config file.
@@ -132,7 +135,7 @@ on this website that explains all the settings from this config file.
 You can get your license via the [License Page](/license) using your Copernica 
 account credentials. If you do not have an account yet, you can create one
 [over here](/account/register "Create an account"). Of course Yothalot should be aware
-of your license. On a clean installation the path to the license is is
+of your license. On a clean installation the path to the license is 
 the same as the path of the [configuration file](copernica-docs:Yothalot/configuration)
 (i.e. `/etc/yothalot`). So you can install the license file in this path on
 each node. However, you can change the default path in the [configuration file](copernica-docs:Yothalot/configuration)
