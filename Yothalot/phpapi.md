@@ -4,7 +4,7 @@ After the installation of the [PHP API](copernica-docs:Yothalot/php-install "PHP
 you can use the simplest and most popular map/reduce API that Yothalot offers.
 You can use this API to write mapreduce jobs and send them to the Yothalot cluster.
 With this API you can also write jobs that process a lot of data without
-reducing it, so called race jobs, and send these to the Yothalot cluster.
+reducing it, so called racer jobs, and send these to the Yothalot cluster.
 
 
 ## Installation
@@ -32,13 +32,13 @@ for the job to be processed and retrieve some [results](copernica-docs:Yothalot/
 about the behavior of the job, or you can detach your script and let
 Yothalot do its work while you do other work. If you want to process a lot
 of data and are not interested in the reduce step of the mapreduce algorithm
-you can implement a class using the [Yothalot\Race](copernica-docs:Yothalot/php-race)
+you can implement a class using the [Yothalot\Racer](copernica-docs:Yothalot/php-race)
 interface instead of the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
-interface, with which you create a race job. The implementation of a race job is
+interface, with which you create a racer job. The implementation of a racer job is
 besides implementing a different interface similar to implementing a mapreduce job.
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
-* [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
+* [Interface Yothalot\Racer](copernica-docs:Yothalot/php-race)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
@@ -68,7 +68,7 @@ used internally by the Yothalot framework for intermediate result files.
 ## Overview of all interfaces and classes
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
-* [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
+* [Interface Yothalot\Racer](copernica-docs:Yothalot/php-race)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
