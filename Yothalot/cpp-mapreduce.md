@@ -6,7 +6,7 @@ should then be called from an [executable](copernica-docs:Yothalot/cpp-program "
 
 ## The MapReduce Class
 
-The class that you have to create for your mapreduce algorithm should inherit 
+The class that you have to create for your mapreduce algorithm should inherit
 from the following pure virtual base class.
 
 ```cpp
@@ -73,9 +73,9 @@ public:
 }
 
 ```
-In your class that inherits from this pure virtual base class you have 
+In your class that inherits from this pure virtual base class you have
 to implement your mapper step in `map()`, your reducer step in `reduce()`,
-and your writer step in `write()`. 
+and your writer step in `write()`.
 
 ## Mapping
 
@@ -87,17 +87,17 @@ pass to your Yothalot program will result in a call to `map()`. So, although it 
 map on each single piece of data, this will result in a lot of calls to map,
 each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
-pass strings that contain the name of a file that contains some data that you want to 
+pass strings that contain the name of a file that contains some data that you want to
 map. If you pass file names, map can nicely run in parallel on each file and the
 overhead is not to large. Passing the data can be done in multiple ways
-and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job) 
+and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job)
 and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
 
 The third argument that `map()` receives is used to provide `map()` the
 information what to do with the data once it has been mapped into keys and values.
 The argument is of type `Yothalot::Reducer`. This `Yothalot::Reducer` class has one member
 function that is of importance for the map method , `emit()`. After you have
-mapped your data into keys and values you can use `emit()` to pass these 
+mapped your data into keys and values you can use `emit()` to pass these
 keys and values to the next step in your mapreduce algorithm, the reducer step.
 Member `emit()` receives two arguments, a key and a value. These arguments
 have type `Yothalot::Key` and `Yothalot::Value` respectively. These types
@@ -157,14 +157,14 @@ algorithm will reduce these multiple values into a single new value. So,
 you end up with unique keys that all hold just one value. This is exactly done
 by `reduce()`. The `reduce()` member takes three arguments. The first
 argument is the key of type `Yothalot::Key`. Each key is at least passed
-by `map()` once. 
+by `map()` once.
 
 The second argument are the values of type `Yothalot::Values`.
 These are the values that belong to the particular key that is passed as
 the first argument. Since there are multiple values for one key, the type
 `Yothalot::Values` is a class that can hold multiple `Yothalot::Value`s
 (note the difference) with which you easily can iterate over all the values
-that it stores. It is your job to reduce all these values into one reduced 
+that it stores. It is your job to reduce all these values into one reduced
 value.
 
 The third argument that `reduce()` takes is of type `Yothalot::Writer`.
@@ -204,7 +204,7 @@ public:
 ```
 Above we said that the second argument, values, contains the values that
 belong to a certain key. This is only partly part of the story. If we would have
-implemented Yothalot to only start a reducer if all values for a specific 
+implemented Yothalot to only start a reducer if all values for a specific
 key would be available, Yothalot would be very inefficient. Because, if
 all values have to be available, a reducer step can only be started if all
 mapper processes have been finished. This would harm the parallelization
@@ -252,18 +252,15 @@ public:
 }
 ```
 So there is your mapreduce task. One `mapper()` will start for each string of
-data that you pass to it. These mappers may run in parallel. Yothalot starts a 
+data that you pass to it. These mappers may run in parallel. Yothalot starts a
 `reduce()` task on keys that have enough values. These reducers may run
-in parallel as well. So, the mapreduce process is nicely parallelizable. 
-The only part that is not parallelizable on default is the writer task. 
+in parallel as well. So, the mapreduce process is nicely parallelizable.
+The only part that is not parallelizable on default is the writer task.
 If you want to use multiple writers as well, you can do so by using some
 tuning parameters about which you can read in [tune your job](copernica-docs:Yothalot/tuning).
 However, you should be aware that if you want to write with multiple writers
 to the same resource you should use some kind of locking mechanism.
 
 After having created your mapreduce algorithm in the above described way
-you can call your algorithm from a little 
+you can call your algorithm from a little
 [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program").
-
-
-
