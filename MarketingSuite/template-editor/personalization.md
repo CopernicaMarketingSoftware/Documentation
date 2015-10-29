@@ -35,18 +35,18 @@ A variable name is a string of characters, prefixed with `$profile.`* and surrou
 curly braces (the mustaches next to the P character on your keyboard). Here are some facts about 
 valid variables in the MarketingSuite. 
 
-Basis syntac: 
+Basis syntax: 
 [left curlybrace][dollar sign][profile or subprofile][dot][variable name][right curly brace]
 
-- starts with a dollar sign
+- Starts with a dollar sign
 - prefixed with profile or sometimes subprofile (see block below) 
 - surrounded by curly braces
-- may contain alphanumeric characters. May not start with a number. 
-- may contain dash and underscore symbols. May not start with dash or underscore. 
-- variables are case sensitive, meaning that {$NAME} is different from {$name}
+- may contain alphanumeric characters. May **not start** with a number. 
+- may contain dash (-) and underscore (_) symbols. May **not start** with dash or underscore. 
+- variables are case sensitive, meaning that {$profile.NAME} is different from {$profile.name}
 
 If you have a column in your database with the name `email` and you want to show the 
-email address of the subriber in the email, you simply write {$profile.email}
+email address of the subsriber in the email, you simply write {$profile.email}
 
 ### Profile or subprofile? 
 
