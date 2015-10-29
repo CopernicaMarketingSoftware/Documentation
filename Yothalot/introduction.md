@@ -7,7 +7,7 @@ native C++ or simple PHP scripts, Yothalot is the tool for you.
 Yothalot was designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
 distributed file system for storing distributed data, and you can start the cluster
 by simply starting up the Yothalot process on each of the servers in your network. The map/reduce
-jobs that you assign to the cluster are automatically split up in smaller tasks
+jobs that you assign to the Yothalot cluster are automatically split up in smaller tasks
 and are sent to cluster nodes that have local access to the files being
 processed.
 
@@ -16,6 +16,8 @@ source technologies: GlusterFS for the distributed file system, RabbitMQ for
 robust inter process communication, and PHP as the simple script language that
 you can use for [writing the jobs](copernica-docs:Yothalot/phpapi "PHP API")
 (although there is a [C++ API](copernica-docs:Yothalot/cppapi "C++ API") too).
+To see how easy it is to use Yothalot you can have a look at our mapreduce
+counterpart of [Hello world!](copernica-docs:Yothalot/helloworld "Hello world!").
 
 
 ## Clustered file system
@@ -71,7 +73,8 @@ If, however, you prefer speed over simplicity, Yothalot also comes with a
 can write super fast C++ applications that run map/reduce jobs
 
 Interested? You can go to the [installation page](copernica-docs:Yothalot/installation "Installation")
-to read how Yothalot can be obtained and installed or you can read 
+to read how Yothalot can be obtained and installed, you can read 
 [why](copernica-docs:Yothalot/why "Why Yothalot") we have created Yothalot
-and are not using Hadoop.
+and are not using Hadoop, or look or mapreduce [Hello world!](copernica-docs:Yothalot/helloworld "Hello world!")
+example.
 
