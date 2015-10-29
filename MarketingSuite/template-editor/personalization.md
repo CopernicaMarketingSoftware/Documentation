@@ -94,7 +94,7 @@ example the following. ```{$var + 10}``` Besides just that, all standard math ru
 
 One of the key concepts of any programming language are conditional statements. 
 Using conditionals you simply ask the computer to test multiple statements. The first 
-one that evaluates true, will be executed. 
+one that evaluates true will be executed. The remaining statements (if any) will not be tested. 
 
 A conditional block always starts with the 
 `{if}` keyword (always with the curly braces) followed by the first statement that is
@@ -154,8 +154,14 @@ list:
 | not $a         | Negation, will invert the boolean value of $a |
 | $a % $b        | Modulous                                      |
 
+If you are writing conditional blocks, you will sometimes find yourself ending up 
+with blocks that become too long or complex. To shorten long or more complex conditional blocks you
+can use multiple statements into one single {if} block using the beforementioned 
+operators: 
+
 Of course you can also have multiple statements inside a single if statement, using the
 or and and operators. Meaning you can actually have statements like
+
 ```{if $a >= $b and $b <= $c}true{else}false{/if}```.
 
 ### Foreach
