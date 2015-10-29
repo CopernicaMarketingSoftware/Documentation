@@ -59,7 +59,7 @@ All supported platforms are described below:
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|                                          |
 | name | "delicious" | The name of the platform.                                             |
 | title | _string_ | The post title.                       |
-| provider | _string_ | The provider/source of the post (optional).                       |
+| provider | _string_ | Your company name (optional).                       |
 
 ## Reddit
 
