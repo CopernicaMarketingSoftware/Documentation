@@ -1,18 +1,72 @@
 # Personalization
-Emails created with the MS template editor can of 
-course be personalized with data about your subscribers. For example to start 
-your email with `Hi James`, instead of `Hi Mr or Miss Anonymous`.
 
-To write and process personalization, we use our own inhouse created [SmartTPL](https://github.com/CopernicaMarketingSoftware/SMART-TPL), 
-which has a syntax based on the widely known [Smarty Templating Engine](http://www.smarty.net/). 
+Emails created with the template editor can be personalized 
+with data about your subscribers, meaning that each subscriber will see the 
+email tailored with (or based on) his personal information, interests and history. 
+For instance, a subscriber named John may read _Hi John_ above the email and may see content
+that is entirely different from what Jane sees and reads (who -unlike John- happens to be 
+a women, and has -unlike John- no interest in buying John Deere tracktor magazines).
 
-## Where can I use personalization?
-You can include personalization code in the email template itself, and in all 
-input fields that have that dollar sign ($) on the right.
+Personalization is added to your email designs by including variables. These 
+variables usually refer to a field in the subscribers database. But variables can also
+hold information that is not direclty linked to a subscriber, such as a date, for automatically 
+displaying the current week number or year in the email. 
 
-Documentation about our SmartTPL Personalization engine is in the making, 
-but since the syntax is 99% similar to Smarty personalization, you can also take
-a look at our [old documentation](https://www.copernica.com/en/blog/personalize-campaigns).
+If you have previously written email personalization, or even did 
+more advanced coding before, you will know that many programming languages exist, serving 
+different purposes and having different syntaxes. The syntax used in the Marketing Suite 
+is based on the widely known [Smarty Templating Engine](http://www.smarty.net/), which is a PHP based templating engine that was once very popular, and was also used in the predecessor of the Marketing Suite (Copernica Publisher).
+
+This article will dive into the basics needed to know to create email designs with tailored content. 
+
+## Where can email personalization be applied 
+
+An email basically consists of 3 parts. The email header contains (among many other things)
+information about the sender, subject and the receiver of the email, the text version (a plain text 
+version automatically sent along with the email) and most importantly of course the email itself. 
+Personalization can be used in all three of them. 
+
+Inside the Marketing Suite, you will recognize personalization friendly fields by the 
+dollar sign ($) on the right hand side of the field.
+
+## Basic syntax
+
+A variable name is a string of characters, prefixed with `$profile.`* and surrounded by 
+curly braces (the mustaches next to the P character on your keyboard). Here are some facts about 
+valid variables in the MarketingSuite. 
+
+Basis syntac: 
+[left curlybrace][dollar sign][profile or subprofile][dot][variable name][right curly brace]
+
+- starts with a dollar sign
+- prefixed with profile or sometimes subprofile (see block below) 
+- surrounded by curly braces
+- may contain alphanumeric characters. May not start with a number. 
+- may contain dash and underscore symbols. May not start with dash or underscore. 
+- variables are case sensitive, meaning that {$NAME} is different from {$name}
+
+If you have a column in your database with the name `email` and you want to show the 
+email address of the subriber in the email, you simply write {$profile.email}
+
+### Profile or subprofile? 
+
+You must always include the word profile or subprofile. But when to use which one? 
+
+Most emails are sent direcly to a database, or a selection inside this database. If the email 
+is sent to a database or selection, you always use `profile`.
+
+Copernica also allows you to create extra layers of data inside the database: **collections**. 
+Emails can also be sent to a collection, or a selection on the data in a collection (a **miniselection**). 
+
+If you are sending to a miniselection, you must per variable specify if this variable is linked to 
+a field in the database or a collection inside this database. If the field is part of the collection, you 
+prefix the variabel with `subprofile`. For fields linked to the database, you use `profile`.
+
+When sending to a collection (or miniselection), you always have access to the information in the parent database.
+When sending to a database (or selection), you never have access to collections that exist inside this database.  
+
+
+
 
 Do note that unlike in the old environment, the new template editor requires you to always
 specify if the personalization is referring to a profile or subprofile. This means that
