@@ -94,7 +94,10 @@ log-maxhistory:         100
 #   information can be retrieved by Yothalot itself if you only have one mount point
 #   to a GlusterFS cluster. If you happen to have multiple mount points to multiple
 #   GlusterFS you have to tell Yothalot which mount point you want to use. This 
-#   information is passed to Yothalot via base-directory.
+#   information is passed to Yothalot via base-directory. If you are using the
+#   PHP plugin, you should also update /etc/php5/cli/conf.d/xx-yothalot.ini with
+#   the following line:
+#   yothalot.base-directory = /GlusterFs/mountpoint/
 
 # base-directory:         /GlusterFs/mountpoint/
 ```
