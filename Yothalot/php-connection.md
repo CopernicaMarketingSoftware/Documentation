@@ -49,14 +49,17 @@ The following connection parameters are available:
 * **routingkey**    - routingkey for publishing jobs (default "mapreduce")
 
 The keys `"exchange"` and `"routingkey"` are the most advanced settings, and in 
-most Yothalot environments the default values will suffice, because a normal 
+most Yothalot environments the default values will suffice when running mapreduce task, because a normal 
 Yothalot installation loads its jobs from the "mapreduce" queue - which is 
 exactly the queue where jobs end up if you publish them to the empty exchange 
-with routingkey "mapreduce". However, if you want to have a different RabbitMQ 
+with routingkey "mapreduce". However, if you run a racer job you have to create
+a connection where you use the `racer` queue. This can be achieved by setting
+the routing key to "racer". Besides, if you want to have a different RabbitMQ 
 setup, you can do so and set the `"exchange"` and `"routingkey"` accordingly.
 
 Because the default values are good for most use cases, you often see that
-connections are created by passing only two parameters:
+connections are created by passing only two parameters for mapreduce task and
+three for racer tasks:
 
 ```php
 /**
@@ -66,8 +69,11 @@ connections are created by passing only two parameters:
 $connection = new Yothalot\Connection(array(
     "host"      =>  "rabbit1.example.com",
     "vhost"     =>  "yothalot"
+//   ,"routingkey =>  "racer"         // uncommented when a racer task is used.
 ));
 ```
+
+
 
 ## Method flush()
 

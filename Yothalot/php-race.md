@@ -130,3 +130,26 @@ class MyRacer implements Yothalot\Racer
 }
 ?>
 ```
+
+## Update your connection after using it for mapreduce tasks
+
+If you haven't set up a connection yet, you can skip this section and
+go to our [Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection") page. If you have set up a connection for
+mapreduce tasks you to update it in order to use it for racer tasks. 
+The reason is that mapreduce and racer tasks are very similar. In order
+to avoid conflicts racer tasks should use another queue than  mapreduce
+tasks, nameley the racer queue. To achieve this you update the routing key
+in your connection. A standard racer connection looks like:
+
+```php
+/**
+ *  Connection to the Yothalot cluster
+ *  @var Yothalot\Connection
+ */
+$connection = new Yothalot\Connection(array(
+    "host"      =>  "rabbit1.example.com",
+    "vhost"     =>  "yothalot",
+    "routingkey =>  "racer" 
+)); 
+```
+For more information you can see our [Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection") page.
