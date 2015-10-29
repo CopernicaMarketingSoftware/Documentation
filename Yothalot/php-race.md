@@ -1,11 +1,11 @@
 # Yothalot\Racer
 
 Yothalot was designed to run map/reduce jobs. However, since Yothalot
-had to be able distribute jobs over different servers for that, we 
+had to be able distribute jobs over different servers for that, we
 decided to also support different types of jobs: like racer jobs.
 
 The *Yothalot\Racer* class offers you the possibility to start a number of
-parallel running PHP scripts. The result of the first job to 
+parallel running PHP scripts. The result of the first job to
 complete is returned back to you. This could for example be useful if you
 try to locate information in a large set of log files -- as soon as one
 job finds the appropriate entry in the log the result is returned an all
@@ -26,8 +26,8 @@ interface Yothalot\Racer
 ?>
 ```
 When you write your own racer class, keep in mind that the Yothalot
-framework distributes the job over multiple servers. It is therefore possible 
-that your object gets serialized and is moved to a different server, and 
+framework distributes the job over multiple servers. It is therefore possible
+that your object gets serialized and is moved to a different server, and
 that multiple instances are running at the same time.
 
 
@@ -101,8 +101,8 @@ class MyRacer implements Yothalot\Racer, Serializable
 The final method that should be implemented is the `process()` method. In this
 method you implement your data processing algorithm. The method receives
 one parameter, the data, and should return NULL if the algorithm was not completed
-(the job did not win the race), or anything other than NULL if the algorithm
-is won. 
+(the job did not win the race), or an array of arrays with results if the algorithm
+is won.
 
 ```php
 <?php
@@ -119,7 +119,7 @@ class MyRacer implements Yothalot\Racer
         if (check_if_data_contains_what_we_were_looking_for($value))
         {
             // return the found data (all other running sub-jobs will be killed)
-            return extract_appropriate_data($value);
+            return array("result", extract_appropriate_data($value));
         }
         else
         {
@@ -135,7 +135,7 @@ class MyRacer implements Yothalot\Racer
 
 If you haven't set up a connection yet, you can skip this section and
 go to our [Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection") page. If you have set up a connection for
-mapreduce tasks you to update it in order to use it for racer tasks. 
+mapreduce tasks you have to update it in order to use it for racer tasks.
 The reason is that mapreduce and racer tasks are very similar. In order
 to avoid conflicts racer tasks should use another queue than  mapreduce
 tasks, nameley the racer queue. To achieve this you update the routing key
