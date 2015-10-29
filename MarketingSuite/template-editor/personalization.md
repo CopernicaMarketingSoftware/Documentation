@@ -33,7 +33,7 @@ dollar sign ($) on the right hand side of the field.
 
 A variable name is a string of characters, prefixed with `$profile.`* and surrounded by 
 curly braces (the mustaches next to the P character on your keyboard). Here are some facts about 
-valid variables in the MarketingSuite. 
+valid variables in the Marketing Suite. 
 
 Basis syntax: 
 [left curlybrace][dollar sign][profile or subprofile][dot][variable name][right curly brace]
@@ -62,27 +62,17 @@ If you are sending to a miniselection, you must per variable specify if this var
 a field in the database or a collection inside this database. If the field is part of the collection, you 
 prefix the variabel with `subprofile`. For fields linked to the database, you use `profile`.
 
-When sending to a collection (or miniselection), you always have access to the information in the parent database.
-When sending to a database (or selection), you never have access to collections that exist inside this database.  
+- When sending to a collection (or miniselection), you always have access to the information in the parent database.
+- When sending to a database (or selection), you never have access to collections that exist inside this database.  
 
 
+### All variable notations
 
-
-Do note that unlike in the old environment, the new template editor requires you to always
-specify if the personalization is referring to a profile or subprofile. This means that
-instead of `{$FirstName}` you will have to write `{$Profile.FirstName}`. Subprofile data can be accessed by adding `{$subprofile.FieldName}` to your personalization. 
-
-## SmartTpl Syntax
-The syntax of SmartTpl is extremely similar to Smarty, for starters there are multiple
-ways to show variables, depending on the variables of course.
-
-### Variables
-
-| Syntax     | Meaning                                                                                      |
-|------------|----------------------------------------------------------------------------------------------|
-| {$foo}     | Displaying a simple variable (non array/object).                                             |
-| {$foo[4]}  | Display the 5th element of a zero-indexed array.                                             |
-| {$foo.bar} | Display the "bar" key value of an array, you'll most likely use this to access profile data. |
+| Syntax        | Meaning                                                                                          |
+|---------------|--------------------------------------------------------------------------------------------------|
+| {$foo}        | Displaying a simple variable (non array/object).                                                 |
+| {$foo[4]} *   | Display the 5th element of a zero-indexed array.                                                 |
+| {$foo.bar} *  | Display the "bar" key value of an array. You'll most likely use this to access profile data.     |
 
 Many other combinations are allowed
 
@@ -93,14 +83,65 @@ Many other combinations are allowed
 | {$foo.bar.baz[4]} | Display the 5th element of baz, which is in bar which is in $foo.                      |
 | {"foo"}           | Static values are allowed.                                                             |
 
-### Math
-When we're talking about simply outputing variables we can also do some simple math with them.
-Just like outputing variables, all math should be done within {} brackets. So you can do for
+### Simple calculations
+
+When you have a variables or multiple variables containing a numerical value you can do some simple math. 
+
+Just like with normal variables, all math should be done within the {} brackets. So you can do for
 example the following. ```{$var + 10}``` Besides just that, all standard math rules apply.
 
-### If statements
-If statements in SmartTpl have the same flexibility as they have in Smarty. All the
-common operators are allowed to be used inside if statements, a complete list of these follows.
+### Conditional statements
+
+One of the key concepts of any programming language are conditional statements. 
+Using conditionals you simply ask the computer to test multiple statements. The first 
+one that evaluates true, will be executed. 
+
+A conditional block always starts with the 
+`{if}` keyword (always with the curly braces) followed by the first statement that is
+to be tested. A conditional block always ends with the if closing tag `{/if}`. 
+
+In the next example, the text 'Hello John' is only displayed when the value of the variable $name 
+is equal to 'john'.
+
+`{if $name == 'john'}Hello John{/if}`
+
+But what if there's also a Sarah in your mailing list. You wouldnt want to display 
+nothing to her, wouldn't you? That's where the {elseif} keyword comes to save the day. 
+
+`{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}`
+
+Now, if we want to say something to anyone except to John and Sarah, we 
+will use the {else} keyword. The code after the {else} keyword will be 
+executed if none of the preceeding statements returned true.
+
+```
+    {if $name == 'john'}
+        Hello John
+    {elseif $name == 'sarah'}
+        Hello Sarah
+    {else}
+        Hello anybody else
+    {/if}
+```
+
+This is of course a very bad example of how you should write your personal salutation,
+because your conditional block should become as long as the list of all names in the world. 
+
+A much better example would obviously be: 
+
+```
+    {if $name == ''}
+        Dear subscriber,
+    {else} 
+        Dear {$name},
+    {/if}
+```
+Human readable: if the value of name is empty, show 'Dear subscriber'. Otherwhise 
+show Dear John (or Sarah).
+
+In the preceeding example, the operator `==` was used, meaning 'is equal to'. This is 
+just one of the many operators that you can use to test the statements. Here's the complete
+list: 
 
 | Syntax example | Meaning                                       |
 |----------------|-----------------------------------------------|
