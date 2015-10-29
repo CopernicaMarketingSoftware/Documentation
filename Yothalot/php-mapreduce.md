@@ -20,7 +20,7 @@ interface Yothalot\MapReduce
 ```
 
 When you write your own mapreduce classes, keep in mind that the Yothalot framework
-distributes a job over multiple servers, and runs it in parallel. It is 
+distributes a job over multiple servers, and runs it in parallel. It is
 therefore possible that your object gets serialized and is moved to a different
 server, and that multiple calls to map(), reduce() and write() happen at the
 same time, which could lead to race conditions if they all try to access the
@@ -30,9 +30,12 @@ same resource.
 ## Serializing and unserializing
 
 The Yothalot framework serializes and unserializes your objects to distribute them
-over different nodes in the cluster. If there are any files that have to be
-included before the object is unserialized, you can name these files in the
-`includes()` method.
+over different nodes in the cluster. This means that your object is converted in
+a stream of bytes (serialized), the stream is given to another node, this other
+node converts this stream into your object again (unserialize). If there are
+any files that have to be included before the object is unserialized, you
+have to name these files in the `includes()` method. This ensures that your
+objects can properly be reconstructed.
 
 ```php
 class MyMapReduce implements Yothalot\MapReduce
@@ -89,14 +92,18 @@ class MyMapReduce implements Yothalot\MapReduce, Serializable
 ```
 
 ## Mapping
-
-The `map()` method is called when data is being mapped. It receives two parameters:
-the input data and a `Yothalot\Reducer` object. The type of the input data is not given:
-it can be anything, and is exactly the same data that you feed to the 
-[Yothalot\Job](copernica-docs:Yothalot/php-job).
-
-The `Yothalot\Reducer` object is a very simple object with only one method: `emit()`.
-You can emit key/value pairs to the reducer, that will later be reduced.
+The first step in a mapreduce algorithm is the map step in which you map data
+to key value pairs. This step should be implemented in the `map()` method of your class.
+The method receives two parameters. The first parameter contains the input data
+that you have to map. The content of this parameter is what you pass to the
+`Yothalot\Job` `add()` method, which is discussed in [Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
+The second argument provides `map()` the information what to do with the mapped results.
+This is a `Yothalot\Reducer` object, which is a very simple
+object with only one method: `emit()`. With this `emit()` method you can 
+emit key/value pairs to the reducer. The `emit()` method takes two parameters: a
+key and a value. You can only use scalars or arrays of scalars for keys
+and values. It is not possible to emit objects or deeply nested data
+structures. An example of a `map()` function is:
 
 ```php
 class MyMapReduce implements Yothalot\MapReduce
@@ -121,21 +128,18 @@ class MyMapReduce implements Yothalot\MapReduce
 }
 ```
 
-The `emit()` method in the `Yothalot\Reducer` class takes two parameters: a
-key and a value. You can only use scalars for keys and values, or 
-arrays containing scalar values. It is not possible to emit objects or deeply
-nested data structures.
-
-
 ## Reducing
 
 When the same key was multiple times emitted by the `map()` method, the different
 values are reduced into a single new value. This is done by the `reduce()`
-method.
-
-The `reduce()` method takes three parameters: the key for which values are going
-to be reduced, a traversable set of two or more values that are linked to that
-key, and a `Yothalot\Writer` object to which you can emit the reduced value.
+method. The `reduce()` method takes three parameters. The first two arguments contain
+the key for which values are going to be reduced, and a traversable set of
+values that are linked to that key. This set of values should be reduced
+into one value. The third argument is a `Yothalot\Writer` object with
+which you can emit the reduced value. The `emit()` method in the `Yothalot\Writer`
+class takes one parameter: the reduced value. You can only use scalars
+for these values, or an array containing scalars. An example of a reducer
+step looks like:
 
 ```php
 class MyMapReduce implements Yothalot\MapReduce
@@ -162,10 +166,6 @@ class MyMapReduce implements Yothalot\MapReduce
 }
 ```
 
-The `emit()` method in the `Yothalot\Writer` class takes one parameter: the
-reduced value. You can only use scalars for these values, or an array containing 
-scalars.
-
 Keep in mind that it is very well possible that the reduce() method gets called 
 more than once for the same key. This for example happens when so many keys were 
 found that multiple chained reducers are started. The value that you emit might 
@@ -177,7 +177,9 @@ third time.
 
 After all mappers ran, and everything has been reduced to single keys with single
 values, the results are ready to be written to some kind of storage. The Yothalot
-framework calls your `write()` method for this.
+framework calls your `write()` method for this. The `write()` method receives
+two parameters. The first being the key and the second being the value. For
+each key value pair write is called.
 
 ```php
 class MyMapReduce implements Yothalot\MapReduce
@@ -200,4 +202,3 @@ Keep in mind however that you can [tune your job](copernica-docs:Yothalot/tuning
 in such a manner, that multple writers can be started at the same time. You should
 therefore use some kind of locking if you want all your writers to write to the
 same resource.
-
