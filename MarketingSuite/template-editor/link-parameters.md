@@ -13,9 +13,9 @@ It is also possible to add custom tags and parameters to links using the
 'custom parameters' tab. This is for users that want to add their own 
 parameters or use a different campaign tag monitor. 
 
-The extend link option only works when your template has links. Link extension
-can be set per website. This makes it possible to add different parameters 
-for different websites. 
+The extend link option only works when your template has links. Link parameters
+are set per website domain. This makes it possible to add different parameters 
+for different domains. 
 
 All fields within the link extension menu allow for [personalization using smarty-code](copernica-docs:MarketingSuite/template-editor/personalization "Personalization documentation").
 
