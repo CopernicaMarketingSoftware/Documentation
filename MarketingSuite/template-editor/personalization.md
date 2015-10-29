@@ -22,8 +22,8 @@ This article will dive into the basics needed to know to create email designs wi
 ## Where can email personalization be applied 
 
 An email basically consists of 3 parts. The email header contains (among many other things)
-information about the sender, subject and the receiver of the email, the text version (a plain text 
-version automatically sent along with the email) and most importantly of course the email itself. 
+information about the sender, subject and the receiver of the email. Then there is the text version (a plain text 
+version automatically sent along with the email). But most importantly of course the email itself. 
 Personalization can be used in all three of them. 
 
 Inside the Marketing Suite, you will recognize personalization friendly fields by the 
