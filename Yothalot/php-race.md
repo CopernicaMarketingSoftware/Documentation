@@ -1,31 +1,31 @@
-# Yothalot\Race
+# Yothalot\Racer
 
 Yothalot was designed to run map/reduce jobs. However, since Yothalot
 had to be able distribute jobs over different servers for that, we 
-decided to also support different types of jobs: like race jobs.
+decided to also support different types of jobs: like racer jobs.
 
-The *Yothalot\Race* class offers you the possibility to start a number of
+The *Yothalot\Racer* class offers you the possibility to start a number of
 parallel running PHP scripts. The result of the first job to 
 complete is returned back to you. This could for example be useful if you
 try to locate information in a large set of log files -- as soon as one
 job finds the appropriate entry in the log the result is returned an all
 other jobs are stopped.
 
-## Yothalot\Race interface
+## Yothalot\Racer interface
 
-To write a race job, you have to create a class that implements ths
-Yothalot\Race interface. This interface looks as follows:
+To write a racer job, you have to create a class that implements this
+Yothalot\Racer interface. This interface looks as follows:
 
 ```php
 <?php
-interface Yothalot\Race
+interface Yothalot\Racer
 {
     public function includes();
     public function process();
 }
 ?>
 ```
-When you write your own race class, keep in mind that the Yothalot
+When you write your own racer class, keep in mind that the Yothalot
 framework distributes the job over multiple servers. It is therefore possible 
 that your object gets serialized and is moved to a different server, and 
 that multiple instances are running at the same time.
@@ -40,7 +40,7 @@ included before the object is unserialized, you can name these files in the
 
 ```php
 <?php
-class MyRace implements Yothalot\Race
+class MyRacer implements Yothalot\Racer
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -62,7 +62,7 @@ custom serialize and unserialize algorithm, you can simply implement the
 
 ```php
 <?php
-class MyRace implements Yothalot\Race, Serializable
+class MyRacer implements Yothalot\Racer, Serializable
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -106,7 +106,7 @@ is won.
 
 ```php
 <?php
-class MyRace implements Yothalot\Race
+class MyRacer implements Yothalot\Racer
 {
     /**
      *  Implementation for a process function

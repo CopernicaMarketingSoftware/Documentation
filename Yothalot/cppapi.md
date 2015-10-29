@@ -29,7 +29,7 @@ library.
 ## Algorithms
 
 You can run two types of algorithms on the Yothalot cluster: traditional
-map/reduce algorithms, and special "race" algorithms. This race algorithm
+map/reduce algorithms, and special "racer" algorithms. This racer algorithm
 is a simple algorithm that might be useful if you do not need to full
 power and flexibility of map/reduce.
 

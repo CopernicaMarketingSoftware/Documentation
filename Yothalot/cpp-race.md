@@ -5,14 +5,14 @@ do not want to use a reduce and write step, you can create a program that
 follows the Racer API so you can use the Yothalot framework to parallelize
 the work for you.
 
-To run your race algorithm on a Yothalot cluster you have to implement
+To run your racer algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::Racer. This class
 should then be called from an [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
 
 
 ## The Racer Class
 
-The class that you have to create for your race algorithm should inherit 
+The class that you have to create for your racer algorithm should inherit 
 from the following base class.
 
 ```cpp
@@ -51,8 +51,8 @@ public:
          *  @param  key
          *  @param  value
          */
-        template<typename ... T> void put(std::string key, T ... value) { _data.emplace(std::move(key), Scalar(std::forward<T>(value)...)); }
-
+        void put(std::string key, Tuple value) { _data.emplace(std::move(key), std::move(value)); }
+        
         /**
          *  Turn this result into a string
          *  @return std::string
@@ -113,7 +113,7 @@ you are looking for you simply pass the location and you are done. An example
 of a racer algorithm is:
 
 ```cpp
-class MyRace : public Yothalot::Racer
+class MyRacer : public Yothalot::Racer
 {
 public:
     /**
@@ -137,5 +137,5 @@ state between them. However, the objects share resources and multiple calls
 to `process()` may happen at the same time, therefore, you can have race
 conditions if the objects try to access the same resource at the same time.
 
-After having created your race algorithm in the above described way
+After having created your racer algorithm in the above described way
 you can call your algorithm from a little [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program")

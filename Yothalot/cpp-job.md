@@ -1,7 +1,7 @@
 # Yothalot::Job
 
 With the **Yothalot::Job** class you can create, tune and control mapreduce
-and race jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
+and racer jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
 or [racer](copernica-docs:Yothalot/cpp-program-race "Racer") program, the
 input data and several performance settings.
 
