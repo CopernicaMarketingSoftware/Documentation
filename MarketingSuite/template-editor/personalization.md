@@ -274,9 +274,9 @@ like the following:
 
 ```{$description|truncate:200:"..."}``` 
 
-where `truncate` is the modifier and `200` and `....` are parameters. If the variable
+where `truncate` is the modifier and `200` and `...` are parameters. If the variable
 `$description` contains more than 200 characters, the text will be cut off, and an ellipsis 
-will b...
+will be ...
 
 A complete list with all the modifiers that take parameters (and what they do) is shown below.
 
@@ -293,7 +293,7 @@ A complete list with all the modifiers that take parameters (and what they do) i
 
 ## Literals
 
-We use the handlebars {} to tell the computer _'Hey, what follows is a variable or something else
+We use the handlebars `{}` to tell the computer _'Hey, what follows is a variable or something else
 related to email personalization, so treat me differently'._ 
 But what if you want to use these handlebars for a different purpose. This might 
 cause personlization errors. To prevent this, you can wrap your text inside literals.
@@ -308,9 +308,3 @@ Example:
   What {if} I rotate my face 45 deg?
 {/literal}
 ```
-
-
-
-
-
-
