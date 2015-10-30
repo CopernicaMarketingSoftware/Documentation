@@ -10,21 +10,45 @@ splittable. Therefore you may want to use this format for your own files as well
 
 The public interface of this class looks like:
 ```cpp
+namespace Yothalot {
 class Output
 {
 public:
-    Output(std:string filename);
-    void add(int64_t identifier, Yothalot::Tuple fields);
-    std::string name();
+    class Options {
+    public:
+        Options();
+        virtual ~Options();
+        void checksum(bool checksum);
+        void compress(bool compress);
+    };
+
+public:
+    Output(std::string filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
+    Output(const char *filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
+    Output(const Options &options, std::string filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
+    virtual ~Output();
+    Output &add(const Record &record);
+    Output &operator<<(const Record &record);
+    const char *name() const;
     size_t size();
+    size_t splitsize() const;
+    size_t splits() const;    
     void flush();
+};
 }
 
 ```
 ## Constructor
-The constructor takes one std::string argument, the file name. A file with this 
-file name will be created if it does not exist. Otherwise the file will 
-be opened. 
+Yothalot::Output has three constructors the first two take as a first argument
+the file name of type  `std::string` and `const char \*` that is used for
+output. With the second argument you can set the size at which the file
+can be split into smaller files (see  [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format"))
+The size at which these splits can happen has the default of 10MB but you can
+change this. With the last argument you can change the behavior when an 
+existing file is used as output. You can choose to append (default) or truncate the
+existing file by passing false or true. The third constructor behaves
+similar to the first two, yet it takes Yothalot::Output::Options as a first 
+argument. The options are discussed below.
 
 ```cpp
 /**
@@ -34,12 +58,42 @@ Yothalot::Output output("/path/to/file.log");
 ```
 where `"/path/to/file.log"` is the path to the file you want to write to.
 
+
+## Yothalot::Output::Options
+With the Yothalot::Output::Options object you can set some options on how
+the Yothalot::Output object should behave. You can set if a checksum should
+be calculated (default) and if the output file should be compressed (default).
+You can pass it as a first argument to the Yothalot::Output constructor
+like:
+```cpp
+/**
+ *  Create an options object
+ */
+Yothalot::Output::Options options;
+
+/**
+ *  The checksum should be calculated but the file should not be compressed
+ */
+options.checksum(true);
+options.compress(false);
+
+/**
+ *  Pass it to the constructor
+ */
+Yothalot::Output output(options, "/home/aljar/file.log");
+
+```
+
 ## Member add()
 add() is a member that adds a record to the output file. A record exists
 of an identifier and fields. The identifier has to be a type that fits in
 a int64_t. The fields are of type [Yothalot::Tuple](copernica-docs:Yothalot/cpp-classes "Internal Files")
 
 ```cpp
+/**
+ * Create or open an output file
+ */
+Yothalot::Output output("/path/to/file.log");
 /**
  * Add a record with key and value to output file
  */
@@ -48,6 +102,25 @@ output.add(Yothalot::Record(0).add(1).add(2).add(3));
 where: `0` is in this case the identifier and the `1`, `2`, and `3` are
 the fields.
 
+## operator<<()
+With `<<` you can add records to the output file just like with streams.
+You can use it like:
+```cpp
+/**
+ * Create or open an output file
+ */
+Yothalot::Output output("/path/to/file.log");
+
+/**
+ *  Create a record
+ */
+Yothalot::Record record(1);
+
+/**
+ *  pass a record to the output
+ */
+output << record;
+```
 
 ## Member name()
 name() returns the full name of the output file as a std::string
@@ -59,7 +132,7 @@ std::cout << "The name of the output file is " << output.name() << std::endl;
 
 ```
 
-##Member size()
+## Member size()
 size() returns the size (in bytes) of the output file. You
 may use it e.g. to determine if the file has become to large, so
 you can close it and create a new output file. However, note that
@@ -69,6 +142,39 @@ the Yothalot formated files are splittable.
  * Retrieve the size of the output file
  */
 std::cout << "the size of the output is " << output.size() << " bytes\n";
+```
+
+## Member splitsize()
+With member `splitsize()` the size at which the file can be split is returned
+You can use it like:
+```cpp
+/**
+ * Create or open an output file
+ */
+Yothalot::Output output("/path/to/file.log"); 
+
+/**
+ *  Get the size at which the file can be split
+ */
+std::cout << "The file can be split at: " << output.splitsize() << " bytes\n";
+```
+
+## Member splits()
+Member `splits()` returns how many splits are possible with the current file
+(starting from zero). You can use it like:
+```cpp
+/**
+ * Create or open an output file
+ */
+Yothalot::Output output("/path/to/file.log"); 
+
+// add data
+
+/**
+ *  Provide the number of of possible splits
+ */
+std::cout << "Number of splits possible is: " << output.splits() << std::endl;
+
 ```
 
 ##Member flush()
