@@ -38,7 +38,7 @@ $name = $input->name();
 
 ## Method size()
 method size() returns the size (in bytes) of the input file.
-This information may be useful to decide if the file should be splitted
+This information may be useful to decide if the file should be split
 into smaller blocks.
 ```php
 /**
