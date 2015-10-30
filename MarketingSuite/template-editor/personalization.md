@@ -159,7 +159,7 @@ list:
 | not $a         | Negation, will invert the boolean value of $a |
 | $a % $b        | Modulous                                      |
 
-## AND and OR operators
+### AND and OR operators
 
 If you are writing conditional blocks, you will sometimes find yourself ending up 
 with blocks that become too long or complex. To shorten long or more complex conditional blocks you
@@ -298,7 +298,7 @@ A complete list with all the modifiers that take parameters (and what they do) i
 | substr          | First parameter is the starting location of the sub string, the second parameter the length (optional). | Take a sub string of a string. |
 | range           | In case of 1 parameter the parameter is the start position and it'll continue till the end. In case of 2, the second parameter is the length of the range. | Select a certain range of an array. |
 
-## Literals
+### Literals
 
 We use the handlebars `{}` to tell the computer _'Hey, what follows is a variable or something else
 related to email personalization, so treat me differently'._ 
