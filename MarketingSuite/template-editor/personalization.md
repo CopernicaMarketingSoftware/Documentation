@@ -105,19 +105,19 @@ A conditional block always starts with the
 `{if}` keyword (always with the curly braces) followed by the first statement that is
 to be tested. A conditional block always ends with the if closing tag `{/if}`. 
 
-In the next example, the text 'Hello John' is only displayed when the value of the variable $name 
+In the next example, the text 'Hello John' is only displayed when the value of the variable `$name` 
 is equal to 'john'.
 
 `{if $name == 'john'}Hello John{/if}`
 
 But what if there's also a Sarah in your mailing list. You wouldn't want to display 
-nothing to her, wouldn't you? That's where the {elseif} keyword comes to save the day. 
+nothing to her, wouldn't you? That's where the `{elseif}` becomes the protagonist. 
 
 `{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}`
 
 Now, if we want to say something to anyone except to John and Sarah, we 
-will use the {else} keyword. The code after the {else} keyword will be 
-executed if none of the preceeding statements returned true.
+will use the `{else}` keyword. The code after the `{else}` keyword will be 
+executed if none of the preceeding statements returned `true`.
 
 ```
     {if $name == 'john'}
@@ -130,7 +130,7 @@ executed if none of the preceeding statements returned true.
 ```
 
 This is of course a very bad example of how you should write your personal salutation,
-because your conditional block should become as long as the list of all names in the world. 
+because your conditional block would need to be as long as the list of all names in the world. 
 
 A much better example would obviously be: 
 
