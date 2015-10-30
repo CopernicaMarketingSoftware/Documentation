@@ -5,7 +5,7 @@ with data about your subscribers, meaning that each subscriber will see the
 email tailored with (or based on) his personal information, interests and history. 
 For instance, a subscriber named John may read _Hi John_ above the email and may see content
 that is entirely different from what Jane sees and reads (who -unlike John- happens to be 
-a women, and has -unlike John- no interest in buying John Deere tracktor magazines).
+a woman, and has -unlike John- no interest in buying John Deere tracktor magazines).
 
 Personalization is added to your email designs by including variables. These 
 variables usually refer to a field in the subscribers database. But variables can also
