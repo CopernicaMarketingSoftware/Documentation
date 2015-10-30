@@ -65,6 +65,9 @@ prefix the variabel with `subprofile`. For fields linked to the database, you us
 - When sending to a collection (or miniselection), you always have access to the information in the parent database.
 - When sending to a database (or selection), you never have access to collections that exist inside this database.  
 
+Note: To improve readability, the profile and subprofile prefixes are left out in most
+examples.
+
 
 ### All variable notations
 
@@ -158,7 +161,7 @@ list:
 
 If you are writing conditional blocks, you will sometimes find yourself ending up 
 with blocks that become too long or complex. To shorten long or more complex conditional blocks you
-can use multiple statements into one single {if} block using the beforementioned 
+can use multiple statements into one single `{if}` block using the beforementioned 
 operators: 
 
 ```{if $a >= $b and $b <= $c}true{else}false{/if}```.
@@ -168,9 +171,9 @@ operators:
 If you have a collection of data (an array), and want to see if a specific something is inside 
 that collection, you'll have to loop through all the items in this collection. 
 
-Or (in a real world example) you want to display all the soccer team members who are stored in the array $soccerTeam.   
+Or (in a real world example) you want to display all the soccer team members who are stored in the array `$soccerTeam`.   
 
-To loop over collections of data, the foreach statement is used. The syntax of this is fairly straight forward.
+To loop over collections of data, the **foreach statement** is used. The syntax of this is fairly straight forward.
 
 ```
     {foreach $player in $soccerTeam}
@@ -178,8 +181,8 @@ To loop over collections of data, the foreach statement is used. The syntax of t
     {/foreach}
 ```
 
-This will loop over the items (team members) in $soccerTeam and assign each player to the variable $player in 
-each iteration. Inside this foreach block you can do whatever you want with the outputted information. You can for
+This will loop over the items (team members) in `$soccerTeam` and assign each player to the variable `$player` in 
+each iteration. Inside this _foreach_ block you can do whatever you want with the outputted information. You can for
 example generate a HTML list with soccer players from that team. 
 
 It becomes a little bit more technical now... 
@@ -192,7 +195,7 @@ Of course we also support looping over arrays that have non-standard keys.
     {/foreach}
 ```
 
-As you can see here, you specify both a $key and a $value which will be used to store these
+As you can see here, you specify both a `$key` and a `$value` which will be used to store these
 values on each iteration. 
 
 And finally, sometimes you want certain code to execute if there is no
@@ -205,18 +208,18 @@ data at all, this is done using the `{foreachelse}` statement.
         No items in list.
     {/foreach}
 ```
-This foreachelse statement is only executed in case of no data. It is completely ignored otherwise.
+This _foreachelse_ statement is only executed in case of no data. It is completely ignored otherwise.
 
 ### Assigning variables 
 
 You can assign values on runtime. You can for example use this to calculate the total price of a
-set of purchased items. Or to remember a certain item inside a foreach statement. Assigning variables 
+set of purchased items. Or to remember a certain item inside a _foreach_ statement. Assigning variables 
 is done as follows:
 
 ```{assign $item to $topitem}``` 
 
-After this statement the variable $topitem is available and it will
-contain what $item contained when the email was being compiled and sent to the
+After this statement the variable `$topitem` is available and it will
+contain what `$item` contained when the email was being compiled and sent to the
 user.
 
  This will allow you to do things like the following.
@@ -230,24 +233,23 @@ user.
   {/foreach}
 ```
 
-Which will eventually have the most expensive item in the $topitem variable. And the total price in $total.
+Which will eventually have the most expensive item in the `$topitem` variable. And the total price in `$total`.
 
 ### Variable modifiers
 
 Variable modifiers are handy tools that let you do all sorts of things with the 
-raw output of a variable. Modifiers are applied directly on the variable, using 
-the pipe (|) character, right above your enter key on the keyboard. 
+raw output of a variable. Modifiers are applied directly on the variable using 
+the pipe (|) character (right above your enter key on the keyboard). 
 
 Example. When you have a subscribtion form, some people will write their name with capitals only
 or without any capitals at all. However, when sending an email, you don't want to
 say 'WALTER' in all caps. Here's where modifiers come in handy.  
 
-{$profile.name|tolower|ucfirst}
+```{$profile.name|tolower|ucfirst}```
 
-The variable will now output 'Walter' in the email. 
-
-The modifier 'tolower' converts all characters to lowercase. The second
-modifier 'ucfirst' will finaly convert the first character to a uppercase.
+The variable will now output 'Walter' in the email. The modifier `tolower` 
+converts all characters to lowercase. The second
+modifier `ucfirst` will finaly convert the first character to uppercase.
 
 There are plenty of variable modifiers available:
 
@@ -263,14 +265,16 @@ There are plenty of variable modifiers available:
 | strlen           | Counts the amount of characters inside a string.                                     |
 | count            | Counts the amount of items inside an array.                                          |
 | empty            | Returns if we're an empty string or not.                                             |
-| ucfirst          | Change the first letter to a captial letter.                                         |
+| ucfirst          | Change the first letter to a capital letter.                                         |
 
-Modifiers don't just stop there. Some modifiers actually can take parameters. The syntax for this looks
+Modifiers don't just stop there. No they go further and beyond.
+
+Some modifiers actually can take parameters. The syntax for this looks
 like the following: 
 
 ```{$description|truncate:200:"..."}``` 
 
-where `truncate` is the modifier and `200` and ....` are parameters. If the variable
+where `truncate` is the modifier and `200` and `....` are parameters. If the variable
 `$description` contains more than 200 characters, the text will be cut off, and an ellipsis 
 will b...
 
@@ -292,15 +296,15 @@ A complete list with all the modifiers that take parameters (and what they do) i
 We use the handlebars {} to tell the computer _'Hey, what follows is a variable or something else
 related to email personalization, so treat me differently'._ 
 But what if you want to use these handlebars for a different purpose. This might 
-cause personlization errors. To prevent this, you can wrap your text inside literal block.
-Text inside a literal block will be ignored by the parser en displayed as it is in the 
+cause personlization errors. To prevent this, you can wrap your text inside literals.
+Text inside a _literal_ block will be ignored by the parser en displayed as it is in the 
 final email. 
 
 Example: 
 
 ```
 {literal}
-  Look, my {} are growing vertically. It's a facial miracel!
+  Look, my {} are growing vertically. It's a facial miracle!
   What {if} I rotate my face 45 deg?
 {/literal}
 ```
