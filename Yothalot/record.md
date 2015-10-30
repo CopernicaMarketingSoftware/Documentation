@@ -2,7 +2,7 @@
 
 Internally the Yothalot framework uses records to store mapped and/or 
 reduced information in temporary files. You can access these files yourself
-with [input](copernica-docs:Yothalot/php-input). It is not possible to
+with [Yothalot\Input](copernica-docs:Yothalot/php-input). It is not possible to
 instantiate an object yourself. However, input returns one if you iterate
 over the file. Note that for working with Yothalot you do not need this
 functionality. This functionality is only necessary if you want to store

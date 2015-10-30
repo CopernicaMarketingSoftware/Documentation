@@ -11,7 +11,7 @@ a new map or reduce task for which it needs your program. The easiest way
 to achieve this is to copy your program to the GlusterFS cluster. After all,
 each node of the Yothalot cluster should have access to the GlusterFS
 cluster in order to be able to have access to the data. Some extra information
-is given below in the **Be aware of paths** section.
+is given below in the **Be aware of paths** section below.
 
 
 ## Information about the connection

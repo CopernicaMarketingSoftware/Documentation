@@ -2,7 +2,7 @@
 
 With the **Yothalot::Job** class you can create, tune and control mapreduce
 and racer jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [racer](copernica-docs:Yothalot/cpp-program-race "Racer") program, the
+or [racer](copernica-docs:Yothalot/cpp-race "Racer") program, the
 input data and several performance settings.
 
 The most important member functions of Yothalot::Job are the 
@@ -44,7 +44,7 @@ public:
 
 The constructor takes two parameters, a [Yothalot::Connection](copernica-docs:Yothalot/cpp-connection) 
 and the filename of your program that holds the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [racer](copernica-docs:Yothalot/cpp-program-race "Racer") algorithm.
+or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm.
 
 ```cpp
 // create a connection
