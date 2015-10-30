@@ -43,9 +43,9 @@ a int64_t. The fields are of type [Yothalot::Tuple](copernica-docs:Yothalot/cpp-
 /**
  * Add a record with key and value to output file
  */
-output.add(1, Yothalot::Tuple({1, 2, 3'}));
+output.add(Yothalot::Record(0).add(1).add(2).add(3));
 ```
-where: `1` is in this case the identifier and the `1`, `2`, and `3` are
+where: `0` is in this case the identifier and the `1`, `2`, and `3` are
 the fields.
 
 

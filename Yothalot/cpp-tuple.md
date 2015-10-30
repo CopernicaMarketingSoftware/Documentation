@@ -63,24 +63,24 @@ You can use it like:
 /** 
  *  create an empty tuple with the default constructor
  */ 
-Tuple myTuple1();
+Yothalot::Tuple myTuple1();
 
 /**
  *  create a tuple that holds 1, 2, and 12 with the 
  *  constructor that takes a initializer list
  */
-Tuple myTuple2 = {1, 2, 12};
+Yothalot::Tuple myTuple2 = {1, 2, 12};
 
 /**
  *  Creat a std::vector with some values
  */
-std::Vector<int> myVec = {1,2,3,4,5}
+std::vector<int> myVec = {1,2,3,4,5};
 
 /**
  *  Creat a Tuple with the values in myVec
  *  using the constructor with the iterator pair
  */
-Tuple myTuple3(myVec.begin(), myVec.end());
+Yothalot::Tuple myTuple3(myVec.begin(), myVec.end());
 
 // Create record
 Yothalot::Record myRecord(1);
@@ -89,7 +89,7 @@ Yothalot::Record myRecord(1);
  *  Create a tuple from a record using the
  *  constructo that takes a record.
  */
-Tuple myTuple4(myRecord);
+Yothalot::Tuple myTuple4(myRecord);
 ```
 
 ## Member add()
@@ -101,7 +101,7 @@ The add also accepts nullptr_t. You can use it like:
 /**
  *  create an empty tuple
  */
-Yothalot::Tuple myTuple();
+Yothalot::Tuple myTuple;
 
 /**
  *  add a string to the tuple
@@ -148,7 +148,7 @@ Yothalot::Tuple myTuple = {12, 23}
 /**
  *  get the first field from the tuple
  */
-int_32 a = myTuple.int32(0);
+int32_t a = myTuple.int32(0);
 // a is 12
 ```
 
@@ -160,7 +160,7 @@ use it like
 /**
  *  create a tuple that holds two int32_t values
  */
-Yothalot::Tuple myTuple = {12.14, 23.008}
+Yothalot::Tuple myTuple = {12.14, 23.008};
 
 /**
  *  get the first field from the tuple
@@ -323,7 +323,7 @@ Yothalot::Tuple myTuple = {1,2,3,4};
 /**
  * yes indeed 4 fields
  */
-std::cout << "the tuple has << myTuple.fields() << " fields.\n";
+std::cout << "the tuple has " << myTuple.fields() << " fields.\n";
 ```
 
 ## Member bytes()
@@ -338,5 +338,5 @@ Yothalot::Tuple myTuple = {1,2,3,4};
 /**
  *  and see how large the tuple is in bytes
  */
-std::cout << "the tuple is << myTuple.bytes() << " bytes large.\n";
+std::cout << "the tuple is " << myTuple.bytes() << " bytes large.\n";
 ```

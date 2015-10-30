@@ -62,8 +62,8 @@ equal to a int64_t(1). You can use it like:
 /**
  *  Create two scalars
  */
-Scalar scal1(1);
-Scalar scal2(1);
+Yothalot::Scalar scal1(1);
+Yothalot::Scalar scal2(1);
 /**
  *  Compare the two scalars
  */
@@ -87,8 +87,8 @@ is smaller than the size of the string of the second scalar. You can use it like
 /**
  *  Create two scalars
  */
-Scalar scal1(1);
-Scalar scal2(2);
+Yothalot::Scalar scal1(1);
+Yothalot::Scalar scal2(2);
 /**
  *  Compare the two scalars
  */
@@ -150,7 +150,7 @@ char *buffer = new char[size];
 /**
  *  Write to the buffer.
  */
-myScallar.write(buffer);
+myScalar.write(buffer);
 
 /**
  *  Free the buffer when you're done
@@ -170,7 +170,7 @@ Yothalot::Scalar myScalar(1.0);
  *  Check type
  */
 if (myScalar.isDouble())
-    std::cout "yes it is a double\n";
+    std::cout << "yes it is a double\n";
 ```
 
 ## Member number()
