@@ -78,10 +78,12 @@ Many other combinations are allowed
 
 | Syntax            | Meaning                                                                                |
 |-------------------|----------------------------------------------------------------------------------------|
-| {$foo.bar.baz}    | Display the value behind the key "baz" inside the array "bar" which is a part of $foo. |
-| {$foo[4].baz}     | Display the value behind the key "baz" inside the 5th element of $foo.                 |
-| {$foo.bar.baz[4]} | Display the 5th element of baz, which is in bar which is in $foo.                      |
+| {$foo.bar.baz}*   | Display the value behind the key "baz" inside the array "bar" which is a part of $foo. |
+| {$foo[4].baz}*    | Display the value behind the key "baz" inside the 5th element of $foo.                 |
+| {$foo.bar.baz[4]}*| Display the 5th element of baz, which is in bar which is in $foo.                      |
 | {"foo"}           | Static values are allowed.                                                             |
+
+* Currenly only available inside Magento Templates 
 
 ### Simple calculations
 
@@ -105,7 +107,7 @@ is equal to 'john'.
 
 `{if $name == 'john'}Hello John{/if}`
 
-But what if there's also a Sarah in your mailing list. You wouldnt want to display 
+But what if there's also a Sarah in your mailing list. You wouldn't want to display 
 nothing to her, wouldn't you? That's where the {elseif} keyword comes to save the day. 
 
 `{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}`
@@ -159,9 +161,6 @@ with blocks that become too long or complex. To shorten long or more complex con
 can use multiple statements into one single {if} block using the beforementioned 
 operators: 
 
-Of course you can also have multiple statements inside a single if statement, using the
-or and and operators. Meaning you can actually have statements like
-
 ```{if $a >= $b and $b <= $c}true{else}false{/if}```.
 
 ### Foreach
@@ -206,35 +205,52 @@ data at all, this is done using the `{foreachelse}` statement.
         No items in list.
     {/foreach}
 ```
-This foreachelse statement is only executed in case of no data, it is completely ignored otherwise.
+This foreachelse statement is only executed in case of no data. It is completely ignored otherwise.
 
 ### Assigning variables 
 
 You can assign values on runtime. You can for example use this to calculate the total price of a
-set of purchased items. Or remember a certain item inside a foreach statement. Assigning variables 
+set of purchased items. Or to remember a certain item inside a foreach statement. Assigning variables 
 is done as follows:
 
 ```{assign $item to $topitem}``` 
 
 After this statement the variable $topitem is available and it will
-contain what $item contained when the email was .
+contain what $item contained when the email was being compiled and sent to the
+user.
 
  This will allow you to do things like the following.
+
 ```
-{foreach $item in $list}
-  {assign $total + $item.price to $total}
-  {if $item.price > $topitem.price}
-    {assign $item to $topitem}
-  {/if}
-{/foreach}
+  {foreach $item in $list}
+    {assign $total + $item.price to $total}
+    {if $item.price > $topitem.price}
+      {assign $item to $topitem}
+    {/if}
+  {/foreach}
 ```
+
 Which will eventually have the most expensive item in the $topitem variable. And the total price in $total.
 
-### Modifiers
-Sometimes the value of a variable is just not the thing you want, you may want to slightly
-change it. For this SmartTpl supports modifiers, modifiers are applied using the | syntax.
-So you'll get expressions like ```{$name|ucfirst}```. A list of all the supported modifiers
-is shown below.
+### Variable modifiers
+
+Variable modifiers are handy tools that let you do all sorts of things with the 
+raw output of a variable. Modifiers are applied directly on the variable, using 
+the pipe (|) character, right above your enter key on the keyboard. 
+
+Example. When you have a subscribtion form, some people will write their name with capitals only
+or without any capitals at all. However, when sending an email, you don't want to
+say 'WALTER' in all caps. Here's where modifiers come in handy.  
+
+{$profile.name|tolower|ucfirst}
+
+The variable will now output 'Walter' in the email. 
+
+The modifier 'tolower' converts all characters to lowercase. The second
+modifier 'ucfirst' will finaly convert the first character to a uppercase.
+
+There are plenty of variable modifiers available:
+
 
 | Modifier name    | Meaning                                                                              |
 |------------------|--------------------------------------------------------------------------------------|
@@ -249,17 +265,48 @@ is shown below.
 | empty            | Returns if we're an empty string or not.                                             |
 | ucfirst          | Change the first letter to a captial letter.                                         |
 
-Modifiers don't just stop there, some modifiers actually can take parameters. The syntax for this looks
-like the following. ```{$description|truncate:200:"...."}``` where truncate is the modifier and 200 and "...."
-are parameters. A list with all the modifiers that take parameters (and what they do) is shown below.
+Modifiers don't just stop there. Some modifiers actually can take parameters. The syntax for this looks
+like the following: 
+
+```{$description|truncate:200:"..."}``` 
+
+where `truncate` is the modifier and `200` and ....` are parameters. If the variable
+`$description` contains more than 200 characters, the text will be cut off, and an ellipsis 
+will b...
+
+A complete list with all the modifiers that take parameters (and what they do) is shown below.
 
 | Modifier name   | Parameters | Meaning |
 |-----------------|------------|---------|
 | truncate        | The first parameter is the amount of characters after which we should truncate. The second parameter contains the string we'll use to truncate. | Truncate a string. |
 | cat             | Additional input | Appends all the parameters to the input. |
 | default         | The value which will be applied if the input is empty. | Apply a default value in case of empty input. |
-| ident           | First parameter should contain the amount of idents it should place, the second parameter the indent itself, which will default to a single space. | Ident the original input a bit. |
+| indent           | First parameter should contain the amount of indents it should place, the second parameter the indent itself, which will default to a single space. | Indent the original input a bit. |
 | replace         | Replace occurences of the first parameter with the value of the second parameter. | Replace occurences. |
 | regex_replace   | The first parameter should be a regex, the second parameter will the replacement. | Replace based on regex matches. |
 | substr          | First parameter is the starting location of the sub string, the second parameter the length (optional). | Take a sub string of a string. |
 | range           | In case of 1 parameter the parameter is the start position and it'll continue till the end. In case of 2, the second parameter is the length of the range. | Select a certain range of an array. |
+
+## Literals
+
+We use the handlebars {} to tell the computer _'Hey, what follows is a variable or something else
+related to email personalization, so treat me differently'._ 
+But what if you want to use these handlebars for a different purpose. This might 
+cause personlization errors. To prevent this, you can wrap your text inside literal block.
+Text inside a literal block will be ignored by the parser en displayed as it is in the 
+final email. 
+
+Example: 
+
+```
+{literal}
+  Look, my {} are growing vertically. It's a facial miracel!
+  What {if} I rotate my face 45 deg?
+{/literal}
+```
+
+
+
+
+
+
