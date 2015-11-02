@@ -36,6 +36,7 @@ curly braces (the mustaches next to the P character on your keyboard). Here are 
 valid variables in the Marketing Suite. 
 
 Basis syntax: 
+
 [left curlybrace][dollar sign][profile or subprofile][dot][variable name][right curly brace]
 
 - Starts with a dollar sign
@@ -43,10 +44,10 @@ Basis syntax:
 - surrounded by curly braces
 - may contain alphanumeric characters. May **not start** with a number. 
 - may contain dash (-) and underscore (_) symbols. May **not start** with dash or underscore. 
-- variables are case sensitive, meaning that {$profile.NAME} is different from {$profile.name}
+- variables are case sensitive, meaning that `{$profile.NAME}` is different from `{$profile.name}`
 
 If you have a column in your database with the name `email` and you want to show the 
-email address of the subsriber in the email, you simply write {$profile.email}
+email address of the subsriber in the email, you simply write `{$profile.email}`
 
 ### Profile or subprofile? 
 
@@ -60,11 +61,10 @@ Emails can also be sent to a collection, or a selection on the data in a collect
 
 If you are sending to a miniselection, you must per variable specify if this variable is linked to 
 a field in the database or a collection inside this database. If the field is part of the collection, you 
-prefix the variabel with `subprofile`. For fields linked to the database, you use `profile`.
+prefix the variable with `subprofile`. For fields linked to the database, you use `profile`.
 
 - When sending to a collection (or miniselection), you always have access to the information in the parent database.
 - When sending to a database (or selection), you never have access to collections that exist inside this database.  
-
 Note: To improve readability, the profile and subprofile prefixes are left out in most
 examples.
 
