@@ -218,7 +218,7 @@ This _foreachelse_ statement is only executed in case of no data. It is complete
 
 ### Assigning variables 
 
-You can assign values on runtime. You can for example use this to calculate the total price of a
+It is possible to assign values on runtime. You can for example use this to calculate the total price of a
 set of purchased items. Or to remember a certain item inside a _foreach_ statement. Assigning variables 
 is done as follows:
 
