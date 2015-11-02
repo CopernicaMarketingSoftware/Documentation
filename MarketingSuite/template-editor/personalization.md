@@ -171,7 +171,7 @@ operators:
 | Syntax example | Meaning                                       |
 |----------------|-----------------------------------------------|
 | AND (&&)       | Both statements must be true                  |
-| OR (||)        | One of both statements must be true           |
+| OR (&#124;&#124;)        | One of both statements must be true           |
 
 ### Foreach
 
