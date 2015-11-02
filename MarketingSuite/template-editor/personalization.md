@@ -162,8 +162,8 @@ list:
 ### AND and OR operators
 
 If you are writing conditional blocks, you will sometimes find yourself ending up 
-with blocks that become too long or complex. To shorten long or more complex conditional blocks you
-can use multiple statements into one single `{if}` block using the `AND` and/or `OR` 
+with blocks that become too long or complex. To shorten long or more complex conditional blocks, you
+can put multiple statements in one single `{if}` block using the `AND` and/or `OR` 
 operators: 
 
 ```{if $a >= $b AND $b <= $c}true{else}false{/if}```
