@@ -86,7 +86,7 @@ Many other combinations are allowed
 | {$foo.bar.baz[4]}*| Display the 5th element of baz, which is in bar which is in $foo.                      |
 | {"foo"}           | Static values are allowed.                                                             |
 
-* Currenly only available inside Magento Templates 
+(*) Currenly only available inside Magento Templates 
 
 ### Simple calculations
 
