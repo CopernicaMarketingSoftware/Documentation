@@ -22,7 +22,7 @@ here to help you, and if you configure your domain and DNS records correctly,
 you can be pretty sure that others can no longer send out email out of 
 your name. However, these technologies not only make it harder for spammers 
 and fishers to send out email, but it makes it more difficult for legitimate
-senders to send email as well! SMTPeter can help you out.
+senders (like you!) to send email as well. SMTPeter can help you out.
 
 
 ## Setting up your sender domain
@@ -41,42 +41,75 @@ as the one and only party from which "example.com" emails may be sent.
 This is a very safe setup and makes it very hard for fishers and spammers
 to send out mails from your domain, but you must be absolutely sure that
 from that moment on, all your own legitimate mail is really routed via the 
-SMTPeter.com gateway, because otherwise it is going to be blocked. This
-is not only a requirement for your commercial newsletters, but also for 
-your transactional emails (like order confirmations and password reminders) 
-as well as all the regular office mails sent by you and your colleagues!
+SMTPeter.com gateway. This is not only a requirement for your commercial 
+newsletters, but also for your transactional emails (like order confirmations 
+and password reminders) as well as all the regular office mails sent by you 
+and your colleagues!
 
-There are a couple of approaches that you can take: you can for example 
-set up your mail infrastructure so that _indeed_ all your mail is sent 
-out via the SMTPeter.com gateway (this is by the way our recommended 
-approach: you secure 100% of all your mails by setting up all your 
-applications, websites and email clients (don't forget the mobile devices) 
-to send email via SMTPeter.com). You can even roll this our slowly, there 
-is a special mechanism that allows you to configure that only a small 
-percentage of mails is initially going to be checked, and that you are 
-informed if you have forgotten to change the configuration of one or more
-of your mail clients.
+There are a couple of approaches that you can take if you want to be sure
+that all mails are correctly validated by the receivers: you can set up 
+your mail infrastructure so that _indeed_ all your mail is sent out via 
+the SMTPeter.com gateway (this is the recommended approach: you secure 
+100% of all your mails by setting up all your applications, websites and 
+email clients (don't forget the mobile devices) to send email via 
+SMTPeter.com). You can even roll this our slowly, there is a special 
+mechanism that allows you to configure that only a small percentage of 
+mails is initially going to be checked, and that you are informed if you 
+have forgotten to change the configuration of one or more of your mail 
+clients.
+
+But if you do not want to change all these application, you can also take
+a different approach. You can for example modify the suggested DNS records, 
+so that they also include the data of your regular email servers, or you
+could use SMTPeter.com only for sending mails from a certain _subdomain_.
 
 
 ## Incorporating your own servers
 
-We mentioned that once you copy the DNS records that are created by 
-SMTPeter.com, all of your mails have to be sent out by SMTPeter.com. This
-is true. However, you are free to edit the DNS record suggestions and
-include your own settings in it too. If you do this, it is possible to
-send out mail from both your own servers, and from the SMTPeter.com
-servers too.
+We mentioned that once you copy the DNS records that are suggested by 
+SMTPeter.com to your DNS servers, all your mails must be sent out by 
+SMTPeter.com. This is true. However, you are free to edit the DNS record
+suggestions and include your own settings in it too. If you do this, it 
+is possible to send out mail from both your own servers, and from the 
+SMTPeter.com servers too.
+
+For more information on the format of the DKIM, SPF, DMARC records that
+are generated, and to find out how you can modify them to include your
+own IP and/or own DKIM keys, you can take a look at the official 
+specification of these technologies. You can find links to the 
+specifications near the bottom of this article.
+
+
+## Using subdomains
+
+If changing your entire mail architecture is too much of a hassle (for now), 
+but you also do not feel like manually editing DNS records, you can take
+also take an alternative approach, and use a (new) _subdomain_ for your email
+delivery instead. For example, if your normal mail is sent out from the 
+"example.com" domain name, you can use the SMTPeter.com dashboard
+to set up a sender domain for the "newsletter.example.com" subdomain, and
+use the SMTPeter.com service just for messages with a _from_ address that
+ends with "@newsletter.example.com".
+
+In this setup, SMTPeter will present you the DNS records that you can
+copy-paste into your DNS configuration so that your newsletters that are 
+sent out through SMTPeter.com are accepted by the mailbox providers. Your
+newsletters must use a _from_ address of the form "something@newsletter.example.com".
+This of course does not look as cool as a "something@example.com", but
+it allows you to setup SMTPeter.com without changing the rest of your
+email infrastructure.
+
 
 
 ## Slow rollout
 
-If you choose to send all your emails via the SMTPeter.com gateway, we
-recommend that you roll out slowly. Via the dashboard you can create a DNS 
-record that instructs receivers that email that is not sent out via
-SMTPeter.com should be accepted anyway, and that a notification is sent 
-back to you. This is a safe approach, because your mail will still be 
-delivered, even when you forget to send out via SMTPeter.com, and you 
-will be informed about this misconfiguration.
+Whatever setup you choose, if you change your DNS configuration, we 
+recommend to use a slow rollout. A mistake is easily made, and you
+do not want to have all your emails blocks, simply because you made
+a typo in your DNS, or because you forgot to send out a mail via SMTPeter.com. 
+Via the dashboard you can create a slow-rollout DNS record that instructs 
+receivers that email that is not sent out via SMTPeter.com should be 
+accepted anyway, and that a notification is sent back to you.
 
 Using the slow rollout feature, you can basically configure two things:
 (1) what do you want receivers to do with mails that are not sent out via
@@ -90,7 +123,7 @@ instruct all receivers that all your mails that are not received via
 SMTPeter.com should be rejected. "Quarantine" is less strict, and means 
 that you want these kind of mails to be placed in a spam folder. The 
 "none" policy means that all mails should be accepted, even the ones 
-that were not sent via SMTPeter.com (although in reality many mailbox 
+that were not sent via SMTPeter.com (although in reality some mailbox 
 providers do not respect this "none" property and reject or quarantine 
 such messages anyway).
 
@@ -101,26 +134,10 @@ come from a SMTPeter.com server should be rejected, and you want all
 other mails to be accepted anyway. This percentage is another tool to 
 slowly rollout and/or to test a sender domain setup.
 
-After your slow rollout, you should change the percentage to 100%, and 
+After the slow rollout, and once you have ensured that all the configuration
+seems to be okay, you should change the percentage to 100%, and 
 the policy to "reject". This is the best protection against fishers, and
 also leads to the best deliverability.
-
-
-## Using subdomains
-
-If changing your entire mail architecture is too much of a hassle (for now), 
-you can take an alternative approach, and use a (new) _subdomain_ for your email
-delivery instead. For example, if your normal mail is sent out from the 
-"example.com" domain name, you can use the SMTPeter.com dashboard
-to set up a sender domain for the "newsletter.example.com" subdomain.
-
-In this latter setup, SMTPeter will present the DNS records that you can
-copy-paste into your DNS configuration so that your newsletters that are 
-sent out through SMTPeter.com are validated by the mailbox providers. Your
-newsletters must use a _from_ address of the form "something@newsletter.example.com", 
-which of course does not look as cool as a "something@example.com", but
-it allows you to setup SMTPeter.com without changing the rest of your
-email infrastructure.
 
 
 ## What if you do not set up a sender domain?
@@ -145,18 +162,19 @@ a couple of times. These are technologies that (1) allow a sender to
 sign an email, so that nobody can modify mails, and receivers can verify
 that a message was really sent by the person who claims to be the sender 
 (this is DKIM), a technology (2) to list the servers that have permission
-to send out emai for a certain domain (this is SPF), and (3) a technology 
+to send out email for a certain domain (this is SPF), and (3) a technology 
 that receivers can use to find out what they should do in case the DKIM
 or SPF checks fail (this is DMARC).
 
 DKIM, SPF and DMARC all use the Domain Name System (DNS, the technology to
 turn domain names into IP addresses, and to store other domain name related
-information), and it is therefore up to you to add records to your DNS
-configuration to enable this for your emails. Setting up these DKIM, SPF 
-and DMARC records can sometimes be troublesome. This is exactly where 
-SMTPeter helps you, because if you tell SMTPeter that you want to send
-out mail from a certain domain, we will show you exactly what type of
-DNS records you have to copy-and-paste into your DNS configuration tool.
+information), and it is therefore up to you as the domain owner to add 
+records to your DNS configuration to enable this for your emails. Setting 
+up these DKIM, SPF and DMARC records can sometimes be troublesome. This 
+is exactly where SMTPeter helps you, because if you tell SMTPeter that 
+you want to send out mail from a certain domain, we will show you exactly 
+what type of DNS records you have to copy-and-paste into your DNS 
+configuration tool.
 
 To learn more about these technologies, we recommend to take a look at
 the offical protocol specifications:
