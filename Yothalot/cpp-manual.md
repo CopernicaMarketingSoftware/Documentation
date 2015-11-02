@@ -11,7 +11,7 @@ a new map or reduce task for which it needs your program. The easiest way
 to achieve this is to copy your program to the GlusterFS cluster. After all,
 each node of the Yothalot cluster should have access to the GlusterFS
 cluster in order to be able to have access to the data. Some extra information
-is given below in the **Be aware of paths** section below.
+is given below in the **Be aware of paths** section.
 
 
 ## Information about the connection
@@ -86,6 +86,49 @@ see when a job is finished. In the case of a Yothalot::Racer job, the
 returned output, if any, will be shown as a JSON object. This output can
 be passed to file so you can use it later.
 
+## Tuning parameters
+
+You can tune your job with some tuning options. These options affect the
+behavior of how Yothalot standardly runs the mapreduce tasks. You can e.g.
+use these options to reduce the amount of resources that Yothalot uses, so 
+you can use the cluster for other tasks, or possibly speed up some slow steps.
+For some tips on how to speed up these steps you can read our 
+[Tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") documentation.
+
+The tuning tuning options that are provided are:
+*   --maxfiles,
+*   --maxbytes,
+*   --maxprocesses,
+*   --maxmappers,
+*   --maxreducers,
+*   --maxwriters,
+*   --modulo
+
+### Option maxfiles
+With this option you can set the maximum number of files that are merged
+by a writer process.
+
+### Option maxbytes
+With this option you can set the maximum number of bytes that is processed
+by a writer.
+
+### Option maxprocesses
+With this option you can set the maximum number of processes that run may
+concurrently.
+
+### Option maxmappers
+With this option you can set the maximum number of mapper processes that
+may run concurrently.
+
+### Option maxreducers
+With this option you can set the maximum number of reducer processes that
+may run concurrently.
+
+### Option maxwriters
+With this option you can set the maximum of writers that may run concurrently.
+
+### Option modulo
+With this option it is possible to get multiple writer processes.
 
 ## Passing data to your program
 
@@ -111,11 +154,11 @@ program and use absolute paths if you want to access a file or other resource.
 Yet, there is one issue that [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
 does not solve, the path to your program. You run your program to start up
 a job, this job later on starts up your program with a couple of extra arguments
-to run your `map()`, `reduce()`, or `write()` methods. In order to do this, 
+to run your `map()`, `reduce()`, or `write()` method. In order to do this, 
 Yothalot needs to know where your program is located, or a place to look
 where your program may be located. You can of course start up your program
 using the absolute path, however, this requires again that all nodes have
-the same mounting point. Therefore it is easier to store your Yothalot
+the same mounting point. Therefore, it is easier to store your Yothalot
 programs in a directory and add this directory to your PATH environment.
 This PATH environment tells where to look for programs. To extent the PATH
 you can add:
