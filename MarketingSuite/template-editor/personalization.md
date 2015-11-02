@@ -178,9 +178,9 @@ operators:
 If you have a collection of data (an array), and want to see if a specific something is inside 
 that collection, you'll have to loop through all the items in this collection. 
 
-Or (in a real world example) you want to display all the soccer team members who are stored in the array `$soccerTeam`.   
+Let's use a real world example and display all members of a soccer team, stored in an array `$soccerTeam`.   
 
-To loop over collections of data, the **foreach statement** is used. The syntax of this is fairly straight forward.
+To get the members of the team, the **foreach statement** is used. Its syntax is fairly straight forward:
 
 ```
     {foreach $player in $soccerTeam}
@@ -189,8 +189,7 @@ To loop over collections of data, the **foreach statement** is used. The syntax 
 ```
 
 This will loop over the items (team members) in `$soccerTeam` and assign each player to the variable `$player` in 
-each iteration. Inside this _foreach_ block you can do whatever you want with the outputted information. You can for
-example generate a HTML list with soccer players from that team. 
+each iteration. Inside this _foreach_ block you can do whatever you want with the outputted information. You can forexample generate a HTML list with soccer players from that team. 
 
 It becomes a little bit more technical now... 
 
