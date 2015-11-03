@@ -35,9 +35,12 @@ $connection = new Yothalot\Connection(array(
    "password"     => "guest",
    "vhost"        => "/",
    "exchange"     => "",
-   "routingkey"   => "mapreduce"
+   "mapreduce"    => "mapreduce",
+   "race"         => "racer",
+   "jobs"         => "jobs
 )); 
 ```
+
 
 The following connection parameters are available:
 
@@ -46,20 +49,20 @@ The following connection parameters are available:
 * **password**      - password for the RabbitMQ server (default "guest")
 * **vhost**         - vhost for the RabbitMQ server (default "/")
 * **exchange**      - exchange name for publishing jobs (default "")
-* **routingkey**    - routingkey for publishing jobs (default "mapreduce")
+* **mapreduce**     - routingkey for publishing mapreduce jobs (default "mapreduce")
+* **race**          - routingkey for publishing race jobs (default "racer")
+* **jobs**          - routingkey for publishing regular jobs (default "jobs")
 
-The keys `"exchange"` and `"routingkey"` are the most advanced settings, and in 
-most Yothalot environments the default values will suffice when running mapreduce task, because a normal 
-Yothalot installation loads its jobs from the "mapreduce" queue - which is 
-exactly the queue where jobs end up if you publish them to the empty exchange 
-with routingkey "mapreduce". However, if you run a racer job you have to create
-a connection where you use the `racer` queue. This can be achieved by setting
-the routing key to "racer". Besides, if you want to have a different RabbitMQ 
-setup, you can do so and set the `"exchange"` and `"routingkey"` accordingly.
-
-Because the default values are good for most use cases, you often see that
-connections are created by passing only two parameters for mapreduce task and
-three for racer tasks:
+The keys `"exchange"`, `"mapreduce"`, `"race"`, and `"jobs"` are the most advanced settings, and in
+most Yothalot environments the default values will suffice. A standard Yothalot
+installation will load its mapreduce jobs from the "mapreduce" queue, its
+racer jobs from the "racer" queue, and its regular jobs from the "jobs" queue.
+Those queues are exactly the queues where the jobs end up if you publish them
+to the empty exchange and set the routing keys to "mapreduce", "race", and
+"jobs" respectively. Because the default values are good for most use cases, you often see that
+connections are created by passing only two parameters. However, if you
+happen to have a different RabbitMQ  setup, you can set the `"exchange"`
+and routing keys accordingly.
 
 ```php
 /**
