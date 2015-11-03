@@ -16,5 +16,5 @@ The following properties are available for personalization in the `QuoteItemOpti
 | label           | _string_                                 | The label.                                    |
 
 
-[product-option-object] : copernica-docs:MarketingSuite/magento-integration/object/product-option
-[quote-item-object] : copernica-docs:MarketingSuite/magento-integration/object/quote-item
+[product-option-object]: copernica-docs:MarketingSuite/magento-integration/object/product-option
+[quote-item-object]: copernica-docs:MarketingSuite/magento-integration/object/quote-item

@@ -82,11 +82,11 @@ Our new offers:
 [Stock Keeping Unit wiki page](https://en.wikipedia.org/wiki/Stock_keeping_unit)
 
 
-[magento-base-url] : http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#configuration/general/web.html%3FTocPath%3DConfiguration%7CGeneral%7C_____2
-[product-url-key] : http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-general.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____1
-[eav-wiki] : https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model#Representing_substructure:_EAV_with_classes_and_relationships_.28EAV.2FCR.29
+[magento-base-url]: http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#configuration/general/web.html%3FTocPath%3DConfiguration%7CGeneral%7C_____2
+[product-url-key]: http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#catalog/product-general.html%3FTocPath%3DProduct%2520Catalog%7CProduct%2520Information%7C_____1
+[eav-wiki]: https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model#Representing_substructure:_EAV_with_classes_and_relationships_.28EAV.2FCR.29
 
 
-[category-object] : copernica-docs:MarketingSuite/magento-integration/object/category
-[option-object] : copernica-docs:MarketingSuite/magento-integration/object/product-option
-[attribute-object] : copernica-docs:MarketingSuite/magento-integration/object/product-attribute
+[category-object]: copernica-docs:MarketingSuite/magento-integration/object/category
+[option-object]: copernica-docs:MarketingSuite/magento-integration/object/product-option
+[attribute-object]: copernica-docs:MarketingSuite/magento-integration/object/product-attribute
