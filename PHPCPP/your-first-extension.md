@@ -1,4 +1,4 @@
-## Your first extension
+# Your first extension
 
 When you create your own PHP-CPP extension, you also have to compile and
 deploy it. A normal PHP script only has to be copied to a web server to be 

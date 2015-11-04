@@ -1,4 +1,4 @@
-# Inheritance</h1>
+# Inheritance
 
 Both PHP and C++ are object oriented programming languages that support
 class inheritance. There are some differences: C++ supports multiple 
