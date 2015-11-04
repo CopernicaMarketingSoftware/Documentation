@@ -26,7 +26,7 @@ If you post a JSON encoded message to the regular "jobs" queue, the
 master node will pick up this message, and assigns the job to a node
 in the cluster that has the capacity to run it.
 
-The input JSON for a regular job is JSON formatted, and looks like this:
+The input for a regular job is JSON formatted, and looks like this:
 
 ```json
 {
@@ -93,8 +93,8 @@ and removed:
     "pid": 1234,
     "signal": 0,
     "exit": 0,
-    "started": 1446557439,
-    "finished": 1446557459,
+    "started": 1446557439.0,
+    "finished": 1446557459.0,
     "runtime": 20
 }
 ```
@@ -202,12 +202,13 @@ this:
         "pid": 1234,
         "signal": 0,
         "exit": 0,
-        "started": "1446557439",
-        "finished": "1446557479"
+        "started": 1446557439.0,
+        "finished": 1446557479.0
     },
     "processes": 123, (total number of processes started)
-    "started": "1446557439",   (start of race)
-    "finished": "1446557479"   (end of race)
+    "started": 1446557439.0,   (start of race)
+    "finished": 1446557479.0,   (end of race)
+    "runtime":
 }
 ```
 
@@ -406,13 +407,13 @@ parallel, with multiple write stages, there is normally no output:
 {
     // general stats
     "mapper": {
-        "first": 1446557439,
-        "last": 1446557539,
-        "finished": 1446557539,
+        "first": 1446557439.0,
+        "last": 1446557539.0,
+        "finished": 1446557539.0,
         "fastest": 1,
         "slowest": 20,
         "processes": 10,
-        "runtime": 100,
+        "runtime": 100.0,
         "input":{
             "files": 10,
             "bytes": 10485760
@@ -423,13 +424,13 @@ parallel, with multiple write stages, there is normally no output:
         }
     },
     "reducer": {
-        "first": 1446557440,
-        "last": 1446557539,
-        "finished": 1446557540,
-        "fastest": 1,
-        "slowest": 5,
+        "first": 1446557440.0,
+        "last": 1446557539.0,
+        "finished": 1446557540.0,
+        "fastest": 1.0,
+        "slowest": 5.0,
         "processes": 10,
-        "runtime": 50,
+        "runtime": 50.0,
         "input":{
             "files": 10,
             "bytes": 104857
@@ -440,11 +441,11 @@ parallel, with multiple write stages, there is normally no output:
         }
     },    
     "finalizer": {
-        "first": 1446557540,
-        "last": 1446557540,
-        "finished": 1446557542,
-        "fastest": 2,
-        "slowest": 2,
+        "first": 1446557540.0,
+        "last": 1446557540.0,
+        "finished": 1446557542.0,
+        "fastest": 2.0,
+        "slowest": 2.0,
         "processes": 1,
         "runtime": 2,
         "input":{
@@ -466,8 +467,8 @@ parallel, with multiple write stages, there is normally no output:
         "pid": 1234,
         "signal": 0,
         "exit": 0,
-        "started": "1446557538",
-        "finished": "1446557539"
+        "started": 1446557538.0,
+        "finished": 1446557539.0
     }
 }
 ```
