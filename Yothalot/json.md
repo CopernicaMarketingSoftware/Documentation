@@ -95,7 +95,7 @@ and removed:
     "exit": 0,
     "started": 1446557439.0,
     "finished": 1446557459.0,
-    "runtime": 20
+    "runtime": 20.0
 }
 ```
 
