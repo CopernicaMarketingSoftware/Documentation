@@ -71,6 +71,7 @@ Multiple `status` codes can be assigned to one `state` code.
 | weight          | _number_                                      | Total order weight.                                                                                                          |
 | items           | _collection of [OrderItem][orderitem-object]_ | Collection of order items assigned to this order.                                                                            |
 | customer        | _[Customer][customer-object]_                 | The customer to which order is assigned to. Note that when order was placed by anonymous user this property will be empty.   |
+| quote           | _[Quote][quote-object]_                       | The quote that was used to create order.                                                                                    |
 | guest           | _[Guest][guest-object]_                       | The guest object assigned to this order. Note that when order was placed by registered customer this property will be empty. |
 | person          | _[Person][person-object]_                     | The person object assigned to this order.                                                                                    |
 | state           | _string_                                      | Current order state.                                                                                                         |
