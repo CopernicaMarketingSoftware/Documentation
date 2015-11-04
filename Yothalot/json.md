@@ -19,7 +19,7 @@ to start and submit jobs.
 
 ## Regular jobs
 
-The most simple jobs that the Yothalot cluster can run, are the regular
+The simplest jobs that the Yothalot cluster can run, are the regular
 jobs. A regular job is nothing more that a single script or single
 executable that should be started *somewhere* on the Yothalot cluster.
 If you post a JSON encoded message to the regular "jobs" queue, the
@@ -50,7 +50,7 @@ name of a program that can be found in the $PATH of the servers.
 
 All other parameters are options: "arguments" holds an array with optional
 command line arguments that should be passed to the executable, "directory"
-the working directory for the new process and "stdin" contains the input 
+is the working directory for the new process and "stdin" contains the input 
 for the process: the data that is going to be sent to stdin
 the moment the program starts.
 
@@ -93,8 +93,9 @@ and removed:
     "pid": 1234,
     "signal": 0,
     "exit": 0,
-    "started": "2015-11-01 23:22:11",
-    "finished": "2015-11-01 23:22:17"
+    "started": 1446557439,
+    "finished": 1446557459,
+    "runtime": 20
 }
 ```
 
@@ -149,11 +150,11 @@ like this:
 }
 ```
 
-The "input" property is an array that hold objects with properties "data",
+The "input" property is an array that holds objects with properties "data",
 "server", and "filename". For every object in the array a race process is
 started. The data in the "data" property is passed to the process via stdin.
 The "server" and "filename" properties are optional for each input and
-provide a hint Yothalot on which server the process ideally should start.
+provide a hint to Yothalot on which server the process ideally should start.
 
 If the input data is too big, you can also choose to store your input
 data in files in a temporary directory on the Yothalot cluster. In that
@@ -176,13 +177,13 @@ mount point, and the data from _all_ the files in the input directory
 are going to be used as input for the race job.
 
 The files in this directory should be regular Yothalot files (you can
-create such files using the PHP class Yothalot\Output (hyperlink) or the
-C++ Yothalot::Output class (also hyperlink). Every record in these files
+create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") or the
+C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output"). Every record in these files
 will result in one racer process to be started. In other words: if you
 store 10 files in the temporary directory, and each of these ten files
-hold 100 record, a total of 1000 individual processes are started by
+hold 100 records, a total of 1000 individual processes are started by
 the Yothalot framework, each to process one record from the input 
-files (unless of course one of the jobs that is started early succeeds 
+files (unless of course one of the jobs that is started succeeds 
 before the later jobs can run, then the race is finished before all
 jobs were started). When the race is over, the Yothalot framework 
 automatically removes the temporary directory with the input files.
@@ -201,34 +202,33 @@ this:
         "pid": 1234,
         "signal": 0,
         "exit": 0,
-        "started": "2015-11-01 23:22:11",
-        "finished": "2015-11-01 23:22:17"
+        "started": "1446557439",
+        "finished": "1446557479"
     },
-    "processes": 123, (total number of processes started),
-    "started": "2015-11-01 23:21:08",   (start of race)
-    "finished": "2015-11-01 23:22:17"   (end of race)
+    "processes": 123, (total number of processes started)
+    "started": "1446557439",   (start of race)
+    "finished": "1446557479"   (end of race)
 }
 ```
 
 This JSON contains some of the properties that you have provided to start
 up the race. It also has a property "winner" that contains an object with
 properties about the winning process. You can e.g. see with which data
-the process has won the race, when the winning process was started and when
-it ended. The JSON also contains a property with the number of processes
-that were started before one process won the race.
-
-@todo meer uitleg
+the process has won the race and what output it generated. You also can see
+when the winning process was started and when it ended. The JSON also contains
+a property with the number of processes that were started before one process won the race. The JSON also contains
+the information when the race was started and when the race ended.
 
 
 ## Mapreduce jobs
 
-Besides regular and race jobs mapreduce jobs can be started. Mapreduce
+Besides regular and race jobs, mapreduce jobs can be started. Mapreduce
 jobs are the most advanced jobs that the Yothalot cluster can run, and
 the output from one process is forwarded to be the input of the next 
 process. Unlike the previously mentioned regular and race jobs, the
-mapper and reducer executables must produce output in a predescribed 
+mapper and reducer executables must produce output in a prescribed 
 format, while the reducer and finalizer executable need to accept
-input in a similar format.
+input in this format.
 
 To start a mapreduce task you have to publish a JSON to the mapreduce 
 queue. When you send a mapreduce job to the cluster, the master node 
@@ -249,7 +249,7 @@ parallel.
         "arguments" : ["extra", "command", "line", "arguments"],
         "limits" : {
             "files": 100,
-            "bytes": "10MB",
+            "bytes": 10485760,
             "processes": 100
         }
     },    
@@ -257,8 +257,8 @@ parallel.
         "executable": "path/to/executable",
         "arguments" : ["extra", "command", "line", "arguments"],
         "limits" : {
-            "files": 100
-            "bytes": "10MB
+            "files": 100,
+            "bytes": 10485760,
             "processes": 100
         }
     },
@@ -271,36 +271,36 @@ parallel.
         "server": "server to run job 2 on",
         "filename": "filename for job 2"
     } ],
-    "modulo": 1
-    "processes": 100
+    "modulo": 1,
+    "processes": 100,
     "exchange": "exchange for publishing result",
     "routingkey": "routingkey for publishing result"
 }
 ```
 
-The "mapper", "reducer" and "finalizer" properties hold the name of an
-executable, and the command line arguments, just like you can specify
-these properties for regular jobs and race jobs that we described
-above. But unlike the executable for these other job types, it is not 
-possible to set a working directory for mapreduce jobs. The Yothalot 
-framework takes care of creating a temporary directory in which the 
-jobs are going to run.
+The "mapper", "reducer", and "finalizer" properties hold the name of an
+executable and the command line arguments, just like you can specify
+these properties for regular and race jobs that we have described
+above. But unlike the executable for these other job types, it is not
+possible to set a working directory for mapreduce jobs. The Yothalot
+framework takes care of creating a temporary directory that the
+jobs are going to use.
 
-Besides the executable name and command line arguments, you can also 
+Besides the executable name and command line arguments, you can also
 add an optional "limits" object with hints for the Yothalot master
 process about the amount of data that the executable can process. Each
 "mapper", "reducer" and "finalizer" is going to be started in parallel,
 and with the "limits.processes" option, you can limit the max number
 of mappers/reducers/finalizers that are going to run at the same time.
 
-The reducer and finalizers take a set of temporary files as input, and 
+The reducer and finalizer take a set of temporary files as input, and 
 it is their job to reduce and finalize (write) this data. The
 "limits.files" and "limits.bytes" settings specify how many input files
 a reducer or finalizer can process at most, and the number of bytes that it
-can handle at most. If more files or more data has to be mapped, the 
+can handle at most. If more files or more data has to be reduced or finalized, the 
 Yothalot master node will attempt to split up the job in smaller
-sub jobs, so that no process will handle more data that set in the
-limit. This is a soft limit, if it is impossible to split up the
+sub jobs, so that no process will handle more data than set in the
+limits. Note that these are a soft limits, if it is impossible to split up the
 data, it could happen that reducers or finalizers are started with
 more input.
 
@@ -326,7 +326,7 @@ is therefore also automatically removed when the job is finished:
         "arguments" : ["extra", "command", "line", "arguments"],
         "limits" : {
             "files": 100,
-            "bytes": "10MB",
+            "bytes": 10485760,
             "processes": 100
         }
     },    
@@ -334,24 +334,26 @@ is therefore also automatically removed when the job is finished:
         "executable": "path/to/executable",
         "arguments" : ["extra", "command", "line", "arguments"],
         "limits" : {
-            "files": 100
-            "bytes": "10MB
+            "files": 100,
+            "bytes": 10485760,
             "processes": 100
         }
     },
-    "input": "path/to/input/directory"
-    "modulo": 1
-    "processes": 100
+    "input": "path/to/input/directory",
+    "modulo": 1,
+    "processes": 100,
     "exchange": "exchange for publishing result",
     "routingkey": "routingkey for publishing result"
 }
 ```
 
 The "modulo" setting (default value is 1) is a setting that allows you
-to split up the intermediate data into multiple groups, so that more
-processes can run in parallel, and the global "processes" setting holds
-the total max number of processes that can run in parallel (you can 
-thus set a maximum for the max number of parallel mappers/reducers/finalizers, 
+to split up the intermediate data deterministically into multiple groups, so that more
+processes can run in parallel (for a discussion on the modulo setting you
+can read our [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") page).
+The global "processes" setting holds
+the total max number of processes that can run in parallel (you can
+thus set a maximum for the max number of parallel mappers/reducers/finalizers,
 to run, but also a maximum for the total number of parallel processes).
 
 Just like with the other job types, the "exchange" and "routingkey"
@@ -359,24 +361,27 @@ properties can be used to set the name of a result queue to which the
 result data should be written.
 
 
-## Input and output for mapreduce processes
+## Input and output for mapper reducer and finalizer processes
 
-Although you are free to choose any output format for regular jobs and
-race jobs, the output for mapper and reducer jobs is well defined, because 
-reducers and finalizers will have to further process this output.
+Although you are free to choose any output format for regular and
+race jobs, the output of mapper process should have a particular format since 
+reducer processes will get this as their input. This also holds for the output of a reducer process
+since this will be passed on to the finalizer. 
 
 The "mapper" processes receive exactly the input that is set in the
 "input" property and are therefore basically the same as the regular
 jobs and race jobs. The output however, should be a list of filenames,
-each written using the Yothalot::Output class. When the mapper process
+each written using the [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+class if you are using C++ or [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
+class if you are using PHP. When the mapper process
 is started, the Yothalot framework inserts one command line argument to
-the list of already defined arguments, holding the modulo setting,
+the list of already defined arguments in the JSON, holding the modulo setting,
 for example, the JSON mentioned above would result in the following
 mapper process to be started: "path/to/executable --modulo 1 extra command line arguments".
 
-The number of files that a mapper creates should be identical to the
-passed in modulo setting, and each file should have unique key/value
-combinations, ordered by key. If a file is empty, the mapper can output
+The number of files that a mapper process creates should be identical to the
+passed in modulo setting, and each file should have unique keys with their
+associate values. The keys should be ordered. If a file is empty, the mapper can output
 an empty line. See below for a more specific description of the format
 of the output files.
 
@@ -388,13 +393,11 @@ The finalizer process finally, also takes a list of input files, just like
 the reducer does, and is required to reduce all records from these files.
 The finalizer process does not have to generate any output.
 
-@todo better explenation
-
 
 ## Output of a mapreduce process
 
 When a mapreduce process is finished, the Yothalot master process
-publishes a JSON message back to the result queue, holding the results
+publishes a JSON message back to the result queue, if this was set, holding the results
 for the mapreduce process. Because a mapreduce process can run in 
 parallel, with multiple write stages, there is normally no output:
 
@@ -403,14 +406,55 @@ parallel, with multiple write stages, there is normally no output:
 {
     // general stats
     "mapper": {
-        // mapper-specific-stats
-        "processes": 100
+        "first": 1446557439,
+        "last": 1446557539,
+        "finished": 1446557539,
+        "fastest": 1,
+        "slowest": 20,
+        "processes": 10,
+        "runtime": 100,
+        "input":{
+            "files": 10,
+            "bytes": 10485760
+        },
+        "output":{
+            "files": 10,
+            "bytes": 104857
+        }
     },
     "reducer": {
-        // reducer-specific-stats
+        "first": 1446557440,
+        "last": 1446557539,
+        "finished": 1446557540,
+        "fastest": 1,
+        "slowest": 5,
+        "processes": 10,
+        "runtime": 50,
+        "input":{
+            "files": 10,
+            "bytes": 104857
+        },
+        "output":{
+            "files": 1,
+            "bytes": 10000
+        }
     },    
     "finalizer": {
-        // finalizer-specific-stats
+        "first": 1446557540,
+        "last": 1446557540,
+        "finished": 1446557542,
+        "fastest": 2,
+        "slowest": 2,
+        "processes": 1,
+        "runtime": 2,
+        "input":{
+            "files": 1,
+            "bytes": 10000
+        },
+        "output":{
+            "files": 1,
+            "bytes": 1000
+        }
     },
     "error": {
         "executable": "executable that caused the error",
@@ -422,13 +466,49 @@ parallel, with multiple write stages, there is normally no output:
         "pid": 1234,
         "signal": 0,
         "exit": 0,
-        "started": "2015-11-01 23:22:11",
-        "finished": "2015-11-01 23:22:17"
+        "started": "1446557538",
+        "finished": "1446557539"
     }
 }
 ```
+The JSON contains statistics on how the mapreduce job performed and where
+it consumed its time and resources. Moreover when an error occurred while
+running the mapreduce task information about the error is provided as well.
+
+The statistics that are provided in the JSON are ordered per mapper, reducer,
+and finalizer stage. You get information when the "first" and the "last" process
+in that stage was stared. Moreover you get information when the stage "finished".
+All this information is in UNIX time. You also get information about the
+running time of the "fastest" and "slowest" process in that stage and the total
+"runtime" of the stage. Finally you get information on the "input" and
+"output" of that stage. The input and output is given in "bytes" as well as
+in "files".
+
+If an error occurred during the entire mapreduce process information about
+the error is provided in the JSON as well. You get the name of the "executable"
+that caused the error and which command line "arguments" where passed to the
+executable. Moreover the standard input is provided in property "stdin".
+If the program has written something to standard error or standard out the output
+is put in "stderr" and "stdout" respectively. You also get the process id in "pid".
+You also get the "signal" if the process was killed by a signal. You also get
+the "exit" code with which the program exited. Finally you get the information
+when the process that caused the error was "started" and when it "finished".
+
 
 ## Format of the intermediate files
 
-
-
+Yothalot uses an internal file format that has some unique properties, e.g.
+it is compressible and splittable at the same time. You can use this format with
+the [Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input") and
+[Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output") classes
+tif you are using C++ or [Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
+and [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") if you
+are using PHP. Yet, here is some extra background on how to use them storing
+keys and values. 
+The internal files are organized around records. Each record contains an
+identifier of type uint32_t and a vector that can hold numerical and string
+data. Each unique key value pair is stored in a separate record, where the fields of the key
+are stored before the fields of the value in the vector. The identifier of the record
+is used to specify the number of fields that the key has. If you are publishing
+a JSON with a mapreduce job you have to follow this format and you have to
+make sure that the records are ordered with respect to the keys.
