@@ -46,7 +46,7 @@ is required. The executable name holds the path to a program that must
 be installed on *each* of the servers in the Yothalot cluster (because
 you can never know on which server the job is going to be started). The
 pathname can either be an absolute pathname (like /usr/bin/ls), or the 
-name of a program that can be found in the $PATH of the servers.
+name of a program that can be found in the ```$PATH``` of the servers.
 
 All other parameters are options: "arguments" holds an array with optional
 command line arguments that should be passed to the executable, "directory"
@@ -205,10 +205,10 @@ this:
         "started": 1446557439.0,
         "finished": 1446557479.0
     },
-    "processes": 123, (total number of processes started)
-    "started": 1446557439.0,   (start of race)
-    "finished": 1446557479.0,   (end of race)
-    "runtime":
+    "processes": 123,
+    "started": 1446557439.0,
+    "finished": 1446557479.0,
+    "runtime": 40.0
 }
 ```
 
@@ -405,7 +405,6 @@ parallel, with multiple write stages, there is normally no output:
 
 ```json
 {
-    // general stats
     "mapper": {
         "first": 1446557439.0,
         "last": 1446557539.0,
@@ -502,7 +501,7 @@ Yothalot uses an internal file format that has some unique properties, e.g.
 it is compressible and splittable at the same time. You can use this format with
 the [Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input") and
 [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output") classes
-tif you are using C++ or [Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
+if you are using C++ or [Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
 and [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") if you
 are using PHP. Yet, here is some extra background on how to use them storing
 keys and values. 
