@@ -17,14 +17,20 @@ The public interface of `Yothalot::Input` looks like:
 class Input
 {
 public:
-    Input(std::string filename);
-    std::string name();
+    Input(std::string filename, size_t seek = 0, size_t bytes = 0);
+    Input(const char *filename, size_t seek = 0, size_t bytes = 0);
+    bool valid();
     size_t size();
     InputIterator getIterator();
 }
 ```
 ## Constructor
-The constructor takes one parameter, the name of the input file.
+The constructor takes three parameters but only one parameter is mandatory.
+The first parameter should contain the name of the input file. With the 
+second parameter you can seek to the initial position that you want to read.
+and with the third parameter you can set the size of the chunk you want to
+read.
+
 ```cpp
 /**
  * Create an input object to read a file that has the Yothalot format
@@ -44,7 +50,7 @@ std::string name = input.name();
 
 ## Method size()
 Method size() returns the size (in bytes) of the input file.
-This information may be useful to decide if the file should be splitted
+This information may be useful to decide if the file should be split
 into smaller blocks.
 ```cpp
 /**
