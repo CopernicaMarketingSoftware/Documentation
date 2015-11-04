@@ -68,12 +68,12 @@ If you are using gcc you can compile your program by typing on the command
 line in the directory where your program is stored:
 
 ```bash
-g++ -std=c++11 myMapReduce.cpp -lyothalot
+g++ -std=c++11 -lyothalot myMapReduce.cpp
 ```
 
 Since the Yothalot C++ API uses C++ 11 features you need to pass the -std=c++11
 flag. Moreover, the program depends on the Yothalot library. You need to tell this
-to the compiler as well. This is done with -lyothalot. 
+to the compiler as well. This is done with -lyothalot.
 
 Running the above command will give you a program a.out. The Yothalot
 framework will call this program from its nodes. Therefore, the program
@@ -90,3 +90,22 @@ and run the [job](copernica-docs:Yothalot/cpp-job "Yothalot::Job") that
 starts up the job for you, or simply run the program you just have created 
 [manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job") with
 the appropriate command line arguments.
+
+
+## Access and paths
+
+Yothalot needs to know where files and other resources are located on the GlusterFS file system.
+Therefore, it is important that you provide the absolute paths to these resources.
+To solve help you with this issue we have created a utility class
+[Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+that makes switching between relative and absolute paths easy. By using this
+class in your program you can pass either relative or absolute paths to your program and use
+absolute paths if you want to access a file or other resource.
+
+Yet, there is one issue that [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+does not solve, the path to your program. Your program is started up to perform
+mapper, reducer, and writer tasks. Therefore Yothalot needs to have access
+to your program. You can achieve this by putting your program on the Yothalot cluster.
+When you provide Yothalot the information about your program, you either have
+to provide the full path to your program, or you have add the program to the
+the $PATH environment. Then Yothalot knows where to look for your program.
