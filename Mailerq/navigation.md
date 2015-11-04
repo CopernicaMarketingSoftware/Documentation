@@ -2,6 +2,7 @@
 * [RabbitMQ installation](copernica-docs:Mailerq/rabbitmq-install "RabbitmQ installation")
 * [RabbitMQ connection](copernica-docs:Mailerq/rabbitmq-config "RabbitmQ connection")
 * [Send email](copernica-docs:Mailerq/send-email "Send email with MailerQ")
+* [DKIM signing](copernica-docs:Mailerq/dkim "Signing email with DKIM")
 * [Message properties](copernica-docs:Mailerq/delivery-properties "Settings aditional delivery properties")
 * [Delivery throttling](copernica-docs:Mailerq/delivery-limits "Delivery Throttling")
 * [Incoming messages](copernica-docs:Mailerq/incoming-messages "Incoming messages")

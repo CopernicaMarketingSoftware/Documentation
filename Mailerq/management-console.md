@@ -148,36 +148,7 @@ MailerQ supports DKIM, Domain Key Identified Mail, a mehtod for email
 authentication. Adding DKIM keys can be easily done in the management 
 console.
 
-### DKIM signing patterns
-
-Normally MailerQ checks the 'from' domain of an email and use the DKIM key 
-set in MailerQ for that domain. However, it is also possible to set a 
-specific pattern to use the DKIM for different domains. 
-
-After adding the DKIM key to MailerQ you can go to the DKIM you want to add 
-a pattern to. At the bottom of the page you will finde the 'add new pattern' option, 
-here you can specify the pattern you want to use. It has the following options: 
-
-**Exact match**: The input must be an exact match
-
-**Regular expression**: The input is treated as a ECMA regular expression
-
-**Wildcard**: In the input wildcards can be used similar to the ones used for file matching in the shell: 
-
-For example:
-- Asterisk (*) matches everything: *@mailerq.com will match foo@mailerq.com, bar@mailerq.com, etc etc.
-- Question mark (?) matches a single character: mailerq.?? will match mailerq.nl, mailerq.de but not mailerq.com.
-- Brackets ([]) matches any character within the brackets: [abc] will match a, b, or c and [!abc] won't.
-
-**Substring**: The input must be a substring of the answer from the server: 'bar' will match 'foobar'
-
-**Global**: Will be used for all emails sent using MailerQ. 
-
-
-A global pattern will sign ALL emails with the DKIM, meaning that if you have a specific 
-DKIM for mailerq.com and a global DKIM as well, emails sent from the mailerq.com domain will 
-be signed with the mailerq.com DKIM as well as the copernica.com DKIM. 
-
+[Read more about signing email with DKIM](copernica-docs:Mailerq/dkim "MailerQ DKIM documentation")
 
 ## Paused deliveries
 
