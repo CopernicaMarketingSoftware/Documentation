@@ -1,4 +1,4 @@
-## Additional properties for delivery control
+# Additional properties for delivery control
 
 In the examples given in the [Send email documentation](copernica-docs:Mailerq/send-email)
 , we only demonstrated the elementary properties "envelope", "recipient", and "mime". 
