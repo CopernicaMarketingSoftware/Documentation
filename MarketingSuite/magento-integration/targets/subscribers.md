@@ -74,11 +74,11 @@ uses this module for managing subscribers should work fine with Copernica extens
 
 ## Personalization variables
 
-| Variable name | Variable type                                                                       | Description                                                                                                    |
-|---------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| 
-| $magento      | _[Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)_       | Overall Magento installation.                                                                                  |
-| $subscriber   | _[Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)_ | Instance of subscriber that email is sent to.                                                                  |
-| $customer     | _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_     | Instance of customer that email is sent to. When email is sent to non-customer this variable will be **NULL**. |
+| Variable name | Variable type                     | Description                                         |
+|---------------|-----------------------------------|-----------------------------------------------------| 
+| $magento      | _[Magento][magento-object]_       | Overall Magento installation.                       |
+| $subscriber   | _[Subscriber][subscriber-object]_ | Instance of subscriber that email is sent to.       |
+| $person       | _[Person][person-object]_         | Instance of person that subscriber was assigned to. |
 
 ## Limiting subscribers list
 
@@ -105,3 +105,8 @@ to it. It's possible to apply following filter options:
 *  **Only registered users**
 
    Limits subscribers list to subscribers that are attached to one of registered customers.
+
+
+[magento-object]: copernica-docs:MarketingSuite/magento-integration/object/magento
+[subscriber-object]: copernica-docs:MarketingSuite/magento-integration/object/subscriber
+[person-object]: copernica-docs:MarketingSuite/magento-integration/object/person
