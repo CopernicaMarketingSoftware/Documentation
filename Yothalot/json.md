@@ -134,7 +134,7 @@ like this:
     "executable": "path/to/executable",
     "arguments": [ "extra","command","line","arguments"],
     "directory": "working directory for race processes",
-    "stdin": "data that should be sent to stdin"
+    "stdin": "data that should be sent to stdin",
     "input": [ {
         "data": "input data for process 1",
         "server": "server to run job 1 on",
