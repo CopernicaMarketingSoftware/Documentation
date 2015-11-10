@@ -122,5 +122,3 @@ in the JSON data. A JSON message with mulitple DKIM keys will look something lik
 }
 
 ````
-
-The `dkim` array holds each key you want MailerQ to sign the email with. 
