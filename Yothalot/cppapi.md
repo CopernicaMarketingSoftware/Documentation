@@ -56,7 +56,7 @@ algorithm. The requirements of these programs and there use is discussed in:
 You start up a job by calling the Yothalot program and the appropriate
 command line arguments. The options are discussed on this page:
 
-[Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
+* [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
 
 
 ## Utility classes

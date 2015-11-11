@@ -1,10 +1,16 @@
 # JSON specification
 
+This document provides some background on how Yothalot passes its information
+around in the background. You do not need to know this information to use Yothalot effectively.
+It is probably always better to use the [PHP](copernica-docs:Yothalot/phpapi "PHP API")
+or [C++](copernica-docs:Yothalot/cppapi "C++ API") APIs instead. Yet,
+if you are curious you can read this document.
+
 The Yothalot master server loads its instructions from three different
 queues: a queue for the mapreduce jobs, a queue for the race jobs and
 a queue for regular jobs. The PHP API and the C++ API publish, under
 the hood, messages to these queues. However, if you like, you can also
-post messages to these queues directly.
+post messages to these queues directly (you can but you should not).
 
 The messages that you can post to the three queues should be JSON 
 formatted, and contain all information that is needed to start up

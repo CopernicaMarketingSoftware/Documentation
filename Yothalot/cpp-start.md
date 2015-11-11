@@ -22,7 +22,8 @@ as data.
 This option specifies that you want to run a regular job. After the option
 you provide the name of your program, or you provide a string where the
 first word in the string is the name of your program. All other words in
-the string are put in the arguments array in the JSON.
+the string are passed as input arguments to your program when it is started
+by Yothalot.
 
 
 ### race
@@ -30,7 +31,8 @@ the string are put in the arguments array in the JSON.
 This option specifies that you want to run a race job. After the option
 you provide the name of your program, or you provide a string where the
 first word in the string is the name of your program. All other words in
-the string are put in the arguments array in the JSON.
+the string are passed as input arguments each time when your program is started
+by Yothalot.
 
 
 ### mapreduce

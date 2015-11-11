@@ -89,9 +89,7 @@ each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to
 map. If you pass file names, map can nicely run in parallel on each file and the
-overhead is not to large. Passing the data can be done in multiple ways
-and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job)
-and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
+overhead is not to large.
 
 The third argument that `map()` receives is used to provide `map()` the
 information what to do with the data once it has been mapped into keys and values.
