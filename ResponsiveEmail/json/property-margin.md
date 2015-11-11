@@ -39,3 +39,8 @@ The `margin` property can be used for every type of block, whether it is
 a [text block](copernica-docs:ResponsiveEmail/json/block-text), an 
 [image block](copernica-docs:ResponsiveEmail/json/block-image) or any other block: 
 they all have margins.
+
+## Negative values
+
+Negative values are not allowed for both margins and paddings. If a negative value is set in the JSON, it will be converted to a zero by the parser. There is no limit on the maximum value of margins and paddings. 
+
