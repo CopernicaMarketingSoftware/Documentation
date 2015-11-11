@@ -22,21 +22,21 @@ license:                /etc/yothalot/license.txt
 #   Yothalot uses RabbitMQ message queues to pass messages with information
 #   on the mapreduce jobs between nodes. The address and login data to access
 #   these queues should be configured here. The RabbitMQ host name, login name,
-#   password and virtual host can be set via, rabbitmq-host, rabbitmq-login,
-#   rabbitmq-password, and rabbitmq-vhost respecively. If these are not set at
-#   all the will switch to their default values, which are: localhost, guest, 
-#   guest, and /.
-#   Yothalot uses names for queues several of its queues The names of these queues
-#   can be changed. With rabbitmq-jobs you can set set the name of the queue that
+#   password and virtual host can be set via, rabbitmq-address. The format in which
+#   can be set is: amqp://username:password@hostname. If rabbitmq-address is not
+#   specified default values for user name, password, and host are assumed. 
+#   The default value is of rabbitmq-address is: amqp://guest:guest@localhost/
+#   
+#   Yothalot uses names for queues several of its queues. The names of these queues
+#   can be changed as well. With rabbitmq-jobs you can set set the name of the queue that
 #   holds the messages of all the jobs. With rabbitmq-mapreduce you can set
-#   the name of the queue that holds the mapreduce messages. With rabbitmq-race
-#   you can set the name of the queue that holds all the racer messages. With
-#   rabbitmq-preload you can set the number of messages that pre-load.
+#   the name of the queue that holds the mapreduce messages. With rabbitmq-racer
+#   you can set the name of the queue that holds all the racer messages. The default
+#   values of these settings are "jobs", "mapreduce", and "racer" respectively.
+#   With rabbitmq-preload you can set the number of messages that pre-load.
 
-rabbitmq-host:          localhost
-rabbitmq-login:         guest
-rabbitmq-password:      guest
-rabbitmq-vhost:         /
+
+rabitmq-address:        amqp://guest:guest@localhost/
 rabbitmq-jobs:          jobs
 rabbitmq-mapreduce:     mapreduce
 rabbitmq-racer          racer
