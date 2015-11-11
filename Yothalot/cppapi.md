@@ -83,10 +83,8 @@ framework internally for intermediate result files.
 ## Full class reference
 
 The following classes are offered by the Yothalot framework:
-* [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
 * [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
 * [Class Yothalot::Inputs](copernica-docs:Yothalot/cpp-input "Inputs")
-* [Class Yothalot::Job](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
 * [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
