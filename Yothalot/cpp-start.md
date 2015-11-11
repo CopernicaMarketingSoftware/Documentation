@@ -14,6 +14,8 @@ up jobs are:
 *   --wait,
 *   --stdin
 
+All arguments that are provided to Yothalot but are not options are treated
+as data.
 
 ### run
 
@@ -39,8 +41,9 @@ the name of the program that you have [created](copernica-docs:Yothalot/cpp-prog
 
 ### stdin
 
-@todo
-
+The input for regular jobs may come from standard input. If you set the option
+`--stdin` the Yothalot program will read standard input and will pass this to
+the standard input of the program that is started up.
 
 ### directory
 
@@ -67,3 +70,19 @@ guaranteed that the file is indeed locally available.
 
 With this option you specify that you want to wait for the result. If there
 is any output it will be displayed if this option is set.
+
+
+## Passing data to the job
+
+All non option arguments that are passed to Yothalot are treated as data. For
+regular jobs this means that these arguments are ignored since regular jobs
+cannot deal with data. For race jobs a program is started up by Yothalot for
+each piece of data. This piece of data is passed to the standard input of
+the program. For mapreduce jobs the extra arguments are also seen as data.
+
+
+## Other options
+
+If you are using Yothalot to start up a job you still can use the command
+line options as discussed in the [configuration file](copernica-docs:Yothalot/configuration)
+section. E.g. you can determine in which queue your job should be placed.

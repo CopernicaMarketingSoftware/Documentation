@@ -4,7 +4,14 @@ When you have [installed Yothalot](copernica-docs:Yothalot/installation "Install
 you can configure it by changing settings in the configuration file `config.txt`
 located in `/etc/yothalot`. This will change the default behavior of Yothalot.
 The configuration file should be self explanatory. Its content is listed
-below.
+below. If you want to you can overwrite the options set in this file by passing
+extra command line arguments to Yothalot. Passing a command line argument that
+overwrites the behavior can be done by putting `--` in front of the option.
+One option that is not available in the configuration file but may be useful to
+pass as an extra command line option is the location of the configuration
+file if it is not in the default location (/etc/yothalot/config.txt). You
+can do this with `--config-file <path>`.
+
 
 ```
 #
