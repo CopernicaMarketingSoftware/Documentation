@@ -193,7 +193,7 @@ holding the input files.
 The files in this directory should be regular Yothalot files (you can
 create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") 
 or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output"). 
-Every record in these files will result in one racer subprocess to be started. 
+Every record in these files will result in one race subprocess to be started. 
 In other words: if you store 10 files in the temporary directory, and each 
 of these ten files hold 100 records, a total of 1000 individual processes
 are started by the Yothalot framework, each to process one record from 
@@ -530,3 +530,5 @@ are stored before the fields of the value in the vector. The identifier of the r
 is used to specify the number of fields that the key has. If you are publishing
 a JSON with a mapreduce job you have to follow this format and you have to
 make sure that the records are ordered with respect to the keys.
+
+

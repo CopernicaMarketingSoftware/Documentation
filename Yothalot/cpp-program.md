@@ -1,8 +1,7 @@
 # Create a Yothalot program
 
 After having implemented your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm you have to create a little 
-program that uses your implementation. The program should look as follows:
+algorithm you have to create a little program that uses your implementation. The program should look as follows:
 
 
 ```cpp
@@ -15,7 +14,7 @@ program that uses your implementation. The program should look as follows:
  *  includes
  */
 #include <yothalot.h>
-#include "MyMapReduce.h" // or #include "MyRacer.h"
+#include "MyMapReduce.h"
 
 /**
  *  the main program
@@ -37,7 +36,7 @@ int main(int argc, const char* argv[])
 }
 ```
 You first initialize the class with your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm. Here we used a default
+algorithm. Here we used a default
 initialization of a MapReduce class, but you can of course add other
 functionality to your class with other constructors as well that you 
 use when you instantiate it.
@@ -47,9 +46,7 @@ with arguments `argc`, `argv` and a pointer to the instance of your class.
 By passing `argc`, and `argv` to the constructor of `Yothalot::Program`,
 all command line arguments are passed to `Yothalot::Program`. This enables
 the Yothalot framework to call your program with the appropriate command
-line arguments to get the behavior of the program Yothalot wants. It also
-allows you to call your program with the appropriate command line arguments
-to start a job [manually](copernica-docs:Yothalot/cpp-manual "Manual"). Passing
+line arguments to get the behavior of the program Yothalot wants. Passing
 a pointer to your algorithm is of course necessary to `Yothalot::Program`
 is aware of your algorithm.
 
@@ -84,12 +81,10 @@ You can of course add the optimization flags that you like, however, you
 have to make sure that if you allow the compiler to use certain CPU features
 these features should be supported by all CPUs in your Yothalot cluster.
 
-After you have created your program you can start a Yothalot job by using
-creating another program where you set up the [connection](copernica-docs:Yothalot/cpp-connection "Connection")
-and run the [job](copernica-docs:Yothalot/cpp-job "Yothalot::Job") that 
-starts up the job for you, or simply run the program you just have created 
-[manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job") with
-the appropriate command line arguments.
+After you have created your program you can start a Yothalot job by calling
+yothalot with the command line option `--mapreduce` and the name of your
+program and some data (see [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
+for more information).
 
 
 ## Access and paths

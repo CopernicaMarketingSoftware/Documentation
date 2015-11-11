@@ -1,19 +1,19 @@
-# Yothalot\Racer
+# Yothalot\Race
 
 Yothalot was designed to run map/reduce jobs. However, since Yothalot
 had to be able distribute jobs over different servers for that, we
-decided to also support different types of jobs: like racer jobs.
+decided to also support different types of jobs: like race jobs.
 
-The *Yothalot\Racer* class offers you the possibility to start a number of
+The *Yothalot\Race* class offers you the possibility to start a number of
 parallel running PHP scripts. The result of the first job to
 complete is returned back to you. This could for example be useful if you
 try to locate information in a large set of log files -- as soon as one
 job finds the appropriate entry in the log the result is returned an all
 other jobs are stopped.
 
-## Yothalot\Racer interface
+## Yothalot\Race interface
 
-To write a racer job, you have to create a class that implements this
+To write a race job, you have to create a class that implements this
 Yothalot\Racer interface. This interface looks as follows:
 
 ```php
@@ -25,7 +25,7 @@ interface Yothalot\Racer
 }
 ?>
 ```
-When you write your own racer class, keep in mind that the Yothalot
+When you write your own race class, keep in mind that the Yothalot
 framework distributes the job over multiple servers. It is therefore possible
 that your object gets serialized and is moved to a different server, and
 that multiple instances are running at the same time.
@@ -40,7 +40,7 @@ included before the object is unserialized, you can name these files in the
 
 ```php
 <?php
-class MyRacer implements Yothalot\Racer
+class MyRace implements Yothalot\Race
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -62,7 +62,7 @@ custom serialize and unserialize algorithm, you can simply implement the
 
 ```php
 <?php
-class MyRacer implements Yothalot\Racer, Serializable
+class MyRace implements Yothalot\Race, Serializable
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -106,7 +106,7 @@ is won.
 
 ```php
 <?php
-class MyRacer implements Yothalot\Racer
+class MyRace implements Yothalot\Race
 {
     /**
      *  Implementation for a process function
@@ -119,7 +119,7 @@ class MyRacer implements Yothalot\Racer
         if (check_if_data_contains_what_we_were_looking_for($value))
         {
             // return the found data (all other running sub-jobs will be killed)
-            return array("result", extract_appropriate_data($value));
+            return "data found";
         }
         else
         {

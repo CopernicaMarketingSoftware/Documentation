@@ -37,16 +37,16 @@ license:                /etc/yothalot/license.txt
 #   Yothalot uses names for queues several of its queues. The names of these queues
 #   can be changed as well. With rabbitmq-jobs you can set set the name of the queue that
 #   holds the messages of all the jobs. With rabbitmq-mapreduce you can set
-#   the name of the queue that holds the mapreduce messages. With rabbitmq-racer
-#   you can set the name of the queue that holds all the racer messages. The default
-#   values of these settings are "jobs", "mapreduce", and "racer" respectively.
+#   the name of the queue that holds the mapreduce messages. With rabbitmq-races
+#   you can set the name of the queue that holds all the race messages. The default
+#   values of these settings are "jobs", "mapreduce", and "races" respectively.
 #   With rabbitmq-preload you can set the number of messages that pre-load.
 
 
 rabitmq-address:        amqp://guest:guest@localhost/
 rabbitmq-jobs:          jobs
 rabbitmq-mapreduce:     mapreduce
-rabbitmq-racer          racer
+rabbitmq-races          races
 rabbitmq-preload:       10
 
 
