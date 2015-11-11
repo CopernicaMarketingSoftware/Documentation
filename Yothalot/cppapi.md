@@ -27,18 +27,12 @@ with the Yothalot installation.
 * [How to install Yothalot](copernica-docs:Yothalot/installation "Installation")
  
 
-## Algorithms
+## Mapreduce algorithms
 
-You can run two types of algorithms on the Yothalot cluster: traditional
-map/reduce algorithms, and special "racer" algorithms. This racer algorithm
-is a simple algorithm that might be useful if you do not need to full
-power and flexibility of map/reduce.
-
-Both algorithms can be implemented by simply extending a virtual base
-class that is supplied by the Yothalot framework:
+You can run a mapreduce task on the Yothalot cluster by extending a virtual
+base class that is supplied by the Yothalot framework:
 
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-* [Class Yothalot::Racer](copernica-docs:Yothalot/cpp-race "Racer")
 
 
 ## Creating your program
@@ -49,24 +43,20 @@ command line arguments that are passed to it by Yothalot. The C++ API
 offers a very useful utility class for parsing these arguments, so that 
 your main() function normally does not need more than 3 lines of code:
 
-* [Creating program](copernica-docs:Yothalot/cpp-program "Writing a program")
+* [Creating a mapreduce program](copernica-docs:Yothalot/cpp-program "Writing a program")
+
+It is also possible to use Yothalot to run programs that do not hold a mapreduce 
+algorithm. The requirements of these programs and there use is discussed in:
+
+* [Creating non mapreduce programs](copernica-docs:Yothalot/cpp-other "Writing non mapreduce programs")
 
 
-## Starting a job
+## Starting a Yothalot job
 
-The executable program that you created and that is installed on each
-of the servers can also be used to start up the job. By simply running
-the executable with some command line arguments, you start up the job
-and run it on the Yothalot cluster.
+You start up a job by calling the Yothalot program and the appropriate
+command line arguments. The options are discussed on this page:
 
-If you prefer to start up the job programmatically instead of manually,
-the API also allows offers a couple of classes that allow you to connect
-to the Yothalot cluster and send jobs to it using C++.
-
-* [Start up a job manually](copernica-docs:Yothalot/cpp-manual "Manual start up a job")
-* [Class Yothalot::Connection](copernica-docs:Yothalot/cpp-connection "Connection")
-* [Class Yothalot::Job](copernica-docs:Yothalot/cpp-job "Yothalot::Job")
-* [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
+[Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
 
 
 ## Utility classes
@@ -101,7 +91,6 @@ The following classes are offered by the Yothalot framework:
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
 * [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
-* [Class Yothalot::Racer](copernica-docs:Yothalot/cpp-race "Racer")
 * [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
 * [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
