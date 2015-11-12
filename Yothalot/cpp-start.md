@@ -83,6 +83,73 @@ each piece of data. This piece of data is passed to the standard input of
 the program. For mapreduce jobs the extra arguments are also seen as data.
 
 
+## Extra mapreduce options
+
+When you start up a mapreduce job you have some extra options with which you
+can tune your job. You can use these options to affect the underlying behavior
+of the Yothalot framework. For more information on how to tune your job you
+are referred to our [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+documentation page. The options for tuning your mapreduce job are:
+
+* --maxprocesses,
+* --maxmappers,
+* --maxreducers,
+* --maxwriters,
+* --maxfiles,
+* --maxbytes,
+* --modulo
+
+
+### maxprocesses
+
+With this option you can limit the total amount of processes that Yothalot is
+allowed to run at the same time. You can use this option to limit the amount
+of resources that Yothalot uses so you can use the cluster for other tasks
+as well.
+
+
+### maxmappers
+
+With this option you can specify the maximum number of mapper processes that may run at
+the same time. 
+
+
+### maxreducers
+
+With this option you can specify the maximum number of reducer processes
+that may run at the same time.
+
+
+### maxwriters
+
+With this option you can specify the maximum number of writer processes that
+may run at the same time.
+
+
+### maxfiles
+
+With this option you can limit the input that is used in the write phase
+of the mapreduce algothm based on the number of files. For an elaborate
+discussion on this issue you are referred to the [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+page.
+
+
+### maxbytes
+
+With this option you can limit the input that is used in the write phase
+of the mapreduce algothm based on the number of bytes. For an elaborate
+discussion on this issue you are referred to the [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+page.
+
+
+### modulo
+
+Normally the `write()` member function in your mapreduce implementation is
+called only once. You can change this with the modulo option. For a discussion
+on how this works exactly and why this is useful you are referred to the 
+[tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") documentation.
+
+
 ## Other options
 
 If you are using Yothalot to start up a job you still can use the command
