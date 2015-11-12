@@ -65,7 +65,7 @@ If you are using gcc you can compile your program by typing on the command
 line in the directory where your program is stored:
 
 ```bash
-g++ -std=c++11 -lyothalot myMapReduce.cpp
+g++ -std=c++11 myMapReduce.cpp -lyothalot 
 ```
 
 Since the Yothalot C++ API uses C++ 11 features you need to pass the -std=c++11

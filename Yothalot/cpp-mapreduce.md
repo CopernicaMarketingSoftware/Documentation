@@ -137,7 +137,7 @@ public :
         }
     }
     // @todo implement other methods
-}
+};
 ```
 Note that the different calls to `map()` run in isolation. So, you cannot
 use shared state between two mappers. However, the objects share resources
@@ -198,7 +198,7 @@ public:
     }
     
     // @todo implement other methods
-}
+};
 ```
 Above we said that the second argument, values, contains the values that
 belong to a certain key. This is only partly part of the story. If we would have
@@ -247,7 +247,7 @@ public:
         outfile << key.string(0) << " : " << value.string(0) << std::endl; 
     }
     // @todo: implement other methods
-}
+};
 ```
 So there is your mapreduce task. One `mapper()` will start for each string of
 data that you pass to it. These mappers may run in parallel. Yothalot starts a
