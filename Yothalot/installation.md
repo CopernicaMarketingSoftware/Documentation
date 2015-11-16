@@ -123,6 +123,35 @@ for Debian based systems.
 ** Note: At this point in time, we do not have finished our download
 section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
 
+
+## Installation of LZ4 (optional)
+
+Yothalot can compress the files that it is using for storing intermediate
+results. This is useful as it reduces the network overhead in the cluster.
+The compression that Yothalot uses is [LZ4](http://cyan4973.github.io/lz4/).
+If you want to want to make use of this functionality you have to install
+the LZ4 library on all the nodes in your cluster. If you do not install this library, Yothalot will work but
+does not compress the files.
+
+Installing the LZ4 library is simple. If you have Git installed you move
+to a directory where you can store the source code of LZ4 and type in:
+```bash
+git clone https://github.com/Cyan4973/lz4/
+```
+(Note: If Git is not installed on your system you can install it via the package
+manager of your Linux distribution.)
+
+After this command there should be a directory called lz4. Move to this
+directory and type in:
+```bash
+make
+sudo make install
+```
+Now LZ4 is installed on your system.
+** Note that you have to install the LZ4 library on each node in your cluster. **
+
+## Configuration of Yothalot
+
 After the installation of Yothalot on all the nodes in the cluster you have
 to configure Yothalot. Yothalot reads its configuration standard 
 from the `/etc/yothalot/config.txt` config file. In this configuration file you can configure your Yothalot process.

@@ -9,17 +9,23 @@ you also of course also need to have
 on all machines in the cluster and on the machine on which you want to run
 your script. Finally you need to install the Yothalot PHP extension.
 The extension is an open source project that is hosted on
-[GitHub](https://github.com/CopernicaMarketingSoftware/Yothalot-PHP).
-To download the the project you can create a directory, move to this
-directory and type:
+[GitHub](https://github.com/CopernicaMarketingSoftware/Yothalot-PHP). The
+project depends on two other open source projects of ours. Firstly, it depends
+on our [PHP-CPP](https://github.com/CopernicaMarketingSoftware/PHP-CPP) library,
+which is a C++ library that can be used to build PHP extensions. Secondly,
+the extension depends on [AMQP-CPP](https://github.com/CopernicaMarketingSoftware/AMQP-CPP),
+a C++ library for communicating with a RabbitMQ message broker.
 
-```bash
-git clone https://github.com/CopernicaMarketingSoftware/Yothalot-PHP
+Firstly, download the souce of [PHP-CPP](https://github.com/CopernicaMarketingSoftware/PHP-CPP)
+To download the the source of this project you can create a directory, move to this
+directory and type:
+```
+git clone https://github.com/CopernicaMarketingSoftware/PHP-CPP
 ```
 Here we assume that git is already installed. If this is not the case you can install
 it from the repository of your Linux distribution.
 
-After having downloaded the project you go to the directory `Yothalot-PHP`
+After having downloaded the project you go to the directory `PHP-CPP`
 and type in the command line:
 
 ```bash
@@ -33,3 +39,24 @@ you can install it by typing in:
 sudo make install
 ```
 You need to use sudo (or have root access already).
+
+Secondly, you have to download the source of [AMQP-CPP](https://github.com/CopernicaMarketingSoftware/AMQP-CPP)
+
+```bash
+git clone https://github.com/CopernicaMarketingSoftware/AMQP-CPP
+```
+and install it:
+```bash
+make -j
+sudo make install
+```
+
+Finally, you can download the source of the [Yothalot-PHP](https://github.com/CopernicaMarketingSoftware/Yothalot-PHP)
+extension and install it
+
+```bash
+git clone https://github.com/CopernicaMarketingSoftware/Yothalot-PHP
+cd Yothalot-PHP
+make -j
+sudo make install
+```
