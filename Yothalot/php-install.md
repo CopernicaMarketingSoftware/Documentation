@@ -2,8 +2,7 @@
 
 Yothalot can be used with a [PHP API](copernica-docs:Yothalot/phpapi "PHP API"). This PHP API enables you to run PHP scripts
 with mapreduce jobs on the Yothalot cluster. The API also makes it easy to
-start up these jobs from within PHP. Before you can use this functionality
-you have to install some extra libraries besides Yothalot. Before you can
+start up these jobs from within PHP. Before you can
 use the PHP API you need to install PHP and the Yothalot-PHP extension besides
 Yothalot. This page discusses how to install these. If you want to install
 Yothalot you are referred to our [Installation](copernica-docs:Yothalot/installation "Installation of Yothalot")
