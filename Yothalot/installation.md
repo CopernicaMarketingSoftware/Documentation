@@ -128,8 +128,9 @@ section, but if you're interested, drop us an email at [info@copernica.com](mail
 
 Yothalot can compress the files that it is using for storing intermediate
 results. This is useful as it reduces the network overhead in the cluster.
-The compression that Yothalot uses is [LZ4](http://cyan4973.github.io/lz4/).
-If you want to want to make use of this functionality you have to install
+However, it comes at a cost that compressing and decompressing the files
+takes some CPU time. The compression that Yothalot uses is [LZ4](http://cyan4973.github.io/lz4/).
+If you want to want to make use of the compression functionality you have to install
 the LZ4 library on all the nodes in your cluster. If you do not install this library, Yothalot will work but
 does not compress the files.
 
@@ -138,8 +139,7 @@ to a directory where you can store the source code of LZ4 and type in:
 ```bash
 git clone https://github.com/Cyan4973/lz4/
 ```
-(Note: If Git is not installed on your system you can install it via the package
-manager of your Linux distribution.)
+(Note: If Git is not installed on your system you can install it via the repository of your Linux distribution.)
 
 After this command there should be a directory called lz4. Move to this
 directory and type in:
@@ -148,7 +148,10 @@ make
 sudo make install
 ```
 Now LZ4 is installed on your system.
-** Note that you have to install the LZ4 library on each node in your cluster. **
+
+** Note that if you have to install the LZ4 library on each node in your cluster 
+if you want to use the compression functionality or on none if you do not want
+to use it.**
 
 ## Configuration of Yothalot
 
