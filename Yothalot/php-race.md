@@ -21,7 +21,7 @@ Yothalot\Racer interface. This interface looks as follows:
 interface Yothalot\Racer
 {
     public function includes();
-    public function process();
+    public function process($value);
 }
 ?>
 ```
@@ -101,8 +101,7 @@ class MyRace implements Yothalot\Race, Serializable
 The final method that should be implemented is the `process()` method. In this
 method you implement your data processing algorithm. The method receives
 one parameter, the data, and should return NULL if the algorithm was not completed
-(the job did not win the race), or an array of arrays with results if the algorithm
-is won.
+(the job did not win the race), or a non NULL value if the algorithm is won.
 
 ```php
 <?php
