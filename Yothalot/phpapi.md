@@ -36,13 +36,16 @@ you can implement a class using the [Yothalot\Race](copernica-docs:Yothalot/php-
 interface instead of the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
 interface, with which you create a race job. The implementation of a race job is
 besides implementing a different interface similar to implementing a mapreduce job.
+A race job also returns result if you call the option wait. The class in 
+which the result are returned is the [Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
+class.
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
-
+* [Class Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
 
 ## Utility classes
 
@@ -74,5 +77,6 @@ used internally by the Yothalot framework for intermediate result files.
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
 * [Class Yothalot\Path](copernica-docs:Yothalot/php-path "Path")
+* [Class Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
 * [Class Yothalot\Record](copernica-docs:Yothalot/record "Record")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
