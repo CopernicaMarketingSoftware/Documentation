@@ -124,7 +124,44 @@ for Debian based systems.
 section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
 
 
-## Installation of LZ4 (optional)
+### Installation of json-c
+
+Yothalot uses JSON objects to pass information between nodes.
+For the construction of these JSON objects Yothalot relies on the [JSON-C](https://github.com/json-c/json-c/wiki)
+library. Therefore you need to have this library installed on the systems
+where Yothalot is installed. In particular Yothalot uses version 0.12 of
+this library. Since older versions are not compatible with this version we
+advise you to get the correct version from [GitHub](https://github.com/json-c/json-c/tree/json-c-0.12)
+instead of trying to install it from the repository of your Linux distribution.
+You can use Git to download the source code of the correct version. If you
+have not installed Git on your system we advise you to install it as it can
+also be used to download the source code that is necessary to [build the PHP API](copernica-docs:Yothalot/php-install "PHP Extension Installation").
+If you have Git installed you can create a directory, move to this directory
+and type in:
+```bash
+git clone --branch json-c-0.12 https://github.com/json-c/json-c
+```
+This will download the source code of the correct version of the JSON-C library
+After you have downloaded the source code you move to the directory `json-c`
+and type in:
+```bash
+sh autogen.sh
+./configure
+```
+These commands will result in a Makefile with which you can build your version
+of the JSON-C library. To actually build the library you can type:
+```bash
+make
+```
+After having build the library you can install it by typing in:
+```bash
+sudo make install
+```
+Since the library will be installed in some system directories you need
+to have super user privileges.
+
+
+### Installation of LZ4 (optional)
 
 Yothalot can compress the files that it is using for storing intermediate
 results. This is useful as it reduces the network overhead in the cluster.
