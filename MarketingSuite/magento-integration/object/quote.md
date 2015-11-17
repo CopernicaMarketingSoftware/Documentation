@@ -37,7 +37,7 @@ Every quote is assigned to the [webstore][webstore-object] in which was created.
 
 ## Examples
 
-To list current basket inside email message following code can be used:
+The following code example will show the products of the current basket. 
 
 ```
 Hi {$quote.customer.firstname} {$quote.customer.lastname},
