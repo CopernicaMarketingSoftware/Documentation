@@ -1,7 +1,6 @@
 # Person object
 
-A person represents a 'real world' person. Because Magento doesn't have such concept itself, the 
-person object is comprised of various other objects (customer, order, quote, guest, subscriber).
+A person represents a 'real world' person. Magento itself doesn't have such concept and is thus unique in Copernica. The person object is comprised of various other objects (customer, order, quote, guest, subscriber).
 
 Copernica uses the the email address stored in these objects to build a rich profile about a customer, which
 is stored in and accessible via the person object.  
@@ -14,17 +13,18 @@ internally, those are two seperate users. Copernica however, will link together
 those two entities based on the provided email address and merge them into one 
 single object: a person. 
 
-Information inside person object are the most recent information that was received
+Information inside person object always is the most recent information that was received
 by MarketingSuite. When new data is synchronized with Marketing Suite changes to 
 person object are automatically applied.
 
 ## Persons, guests and customers
 
-One person can have one customer assigned. On other hand, one person can have
-multiple guest objects assigned to it. It's cause of how guests are created.
-For every guest order placed there is one guest object. Cause of that when
-data is compiled into person object all guests will be assigned to person. They
-are accessible via `guests` property.
+A single person can be linked to a single customer. However, a single person can have
+multiple guest objects assigned to it. This is because of how guests are created.
+For every order placed as a guest a new guest object will be created in Magento. If these guest orders 
+were placed with the same email address, Copernica will automatically combine these guest 
+orders into one single person object, supplemented with data already known about this person. 
+Of course, the individual guest orders remain in tact and can still be accessed via the `guests` property. 
 
 ## Personalization properties
 
