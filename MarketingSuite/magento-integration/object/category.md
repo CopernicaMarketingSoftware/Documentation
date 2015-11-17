@@ -46,13 +46,13 @@ Root category
 
 ## Using the Category object in personalization
 
-Categories can be user various purposes: grouping products by type, 
-by manufacturer, by certain event, etc. Thus they make am excellent tool for 
+Categories can be grouped in various ways: grouping products by type, 
+by manufacturer, by certain event, etc. Thus they make an excellent tool for 
 personalization. 
 
-For example, to show products that were assigned to special event category 
-(let say cookie baking contest). We can assign them to not visible category in 
-Magento and then iterate that category inside email template like that:
+For example, to show products that were assigned to a category specifically made 
+for a campaign (let say, around cookie baking contest), we can assign them to a hidden category in 
+Magento and then iterate that category inside email template:
 
 ```
 {assign $magento.categories[42] to $cookiesCategory}
