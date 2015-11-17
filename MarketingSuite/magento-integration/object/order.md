@@ -1,7 +1,6 @@
 # Order object
 
-When a customer decides that he added all needed products inside his basket and 
-goes through checkout, an order is created. An order is a finalized [quote][quote-object].
+An order is a finalized [quote][quote-object]. When a customer decides that he added all needed products inside his basket and goes through checkout, an order is created. 
 
 The object `order` gives you access to the properties of an order, such as 
 the quantity, items and the customer who placed the order.  
@@ -16,7 +15,7 @@ Multiple `status` codes can be assigned to one `state` code.
 
 ### State values
 
-`state` property can hold one of following values:
+The `state` property can hold one of following values:
 
 * 'new'
 
@@ -33,7 +32,7 @@ Multiple `status` codes can be assigned to one `state` code.
   
 * 'complete'
 
-  This state describes a fully processed order. When order contains shippable 
+  This state describes a fully processed order. When an order contains shippable 
   items, shipments for all items have to be created. Also, the customer has to 
   be invoiced.
   
@@ -43,7 +42,7 @@ Multiple `status` codes can be assigned to one `state` code.
   
 * 'canceled'
   
-  This state will show up when an order is successfully cancelled.
+  This state will show up when an order is successfully canceled.
   
 * 'holded'
   
