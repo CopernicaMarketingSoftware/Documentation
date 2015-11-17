@@ -1,6 +1,6 @@
 # Person object
 
-A person represents a 'real world' person. Magento itself doesn't have such a concept and the `person` object thus only exists inside Copernica. The person object is comprised of various other objects (customer, order, quote, guest, subscriber).
+A person represents a 'real world' person. Magento itself doesn't have such a concept; the `person` object only exists inside Copernica. The person object is comprised of various other objects (customer, order, quote, guest, subscriber).
 
 Copernica uses the the email address stored in these objects to build a rich profile about a customer, which
 is stored in and accessible via the person object.  
