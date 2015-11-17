@@ -4,7 +4,7 @@ The _product option_  is one of the custom options that can be set inside a prod
 webshop owner can predefine product options at products, later to be selected by the customer
 to customize the product he wants to purchase. 
 
-Custom options can be marked as required. That means customer must choose an option before he can add the product into his basket. Think of the size and color of a t-shirt.
+Custom options can be marked as required. The customer is then required to choose an option before he can add the product into his basket. Think of the size and/or color of a t-shirt.
 
 ## Types
 
