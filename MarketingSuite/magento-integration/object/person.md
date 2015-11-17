@@ -1,8 +1,10 @@
 # Person object
 
-Person is a 'real world' person. Magento doesn't have such concept in it, so 
-this object is compiled from other objects (customer, order, quote, guest, subscriber).
-Email address is used as a way to distinguish various persons from each other. 
+A person represents a 'real world' person. Because Magento doesn't have such concept itself, the 
+person object is comprised of various other objects (customer, order, quote, guest, subscriber).
+
+Copernica uses the the email address stored in these objects to build a rich profile about a customer, which
+is stored in and accessible via the person object.  
 
 Example, when someone registers on your website, or places an order for the first 
 time, a new person record will be created, and the data known about this person 
