@@ -13,9 +13,9 @@ internally, those are two seperate users. Copernica however, will link together
 those two entities based on the provided email address and merge them into one 
 single object: a person. 
 
-Information inside person object always is the most recent information that was received
+Information inside the person object is always the most recent information that was received
 by MarketingSuite. When new data is synchronized with Marketing Suite changes to 
-person object are automatically applied.
+person object are automatically applied. Outdated information will be discarded.
 
 ## Persons, guests and customers
 
