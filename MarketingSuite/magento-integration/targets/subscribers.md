@@ -35,10 +35,10 @@ is 5 statuses:
 
    The status _unknown_ means that we don't know if subscriber wants to receive newsletter email or not.
    It is assigned just after subscriber is created inside Magento installation 
-   and no follow up actions were taken. Depending if Magento is configured to
+   and no follow-up actions were taken. Depending if Magento is configured to
    require confirmation after subscription (double opt-in), this status should change into 
    'subscribed' (no confirmation required), 'unconfirmed' (email address is associated with  
-   registered customer) or 'not active' (the email address is not associated to registered customer).
+    a registered customer) or 'not active' (the email address is not associated to a registered customer).
 
 *  **not active**
 
@@ -54,7 +54,7 @@ is 5 statuses:
 
 *  **unconfirmed** 
 
-   This status only occurs in a double opt-in procedure for newsletter subscription. It means that subscription has yet to be confirmed. Newsletter emails shouldn't be sent to this person.  
+   This status only occurs in a double opt-in procedure for newsletter subscription. It means that subscription has yet to be confirmed. Newsletter emails shouldn't be sent to this person (yet).  
 
    The difference between **unconfirmed** and **not active** is that **unconfirmed** is dealing with registered users and **not active** is dealing with anonymous users.
 
@@ -70,7 +70,7 @@ is 5 statuses:
 ## Compatibility with other extensions
 
 To ensure compatibility, the MarketingSuite extension is designed to use Magento core modules. For
-subscribers synchronization Mage_Newsletter is used. Any other extension that 
+subscribers synchronization the field `Mage_Newsletter` is used. Any other extension that 
 uses this module for managing subscribers should work fine with Copernica extension.
 
 ## Personalization variables
