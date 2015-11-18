@@ -7,7 +7,7 @@ a basket. He just has to provide his email and register with the website.
 ## Targeting 'real word' customers
 
 A real world customer would be a user that paid for a service or product (and not only registered).
-To target real world customers inside Magento, we provided various basic mailing list, based 
+To target real world customers inside Magento, we provided various basic mailing lists, based 
 on specific traits that makes a person a real customer. 
 
 ### Quotes list target
