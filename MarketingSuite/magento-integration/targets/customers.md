@@ -1,38 +1,45 @@
 # Magento customers list
 
 A customer, in Magento sense, is basically a registered user of your website. 
-A customer doesn't necessarily have to buy anything or even have items inside 
+In Magento, a customer doesn't necessarily have to buy anything or even have items inside 
 a basket. He just has to provide his email and register with the website. 
 
 ## Targeting 'real word' customers
 
-Real world customer would be a user that paid for service or product. Thus, inside
-Magento any user that registered with his email address is considered a customer. 
-To provide more specific emailing targets, there are different emailing lists.
+A real world customer would be a user that paid for a service or product (and not only registered).
+To target real world customers inside Magento, we provided various basic mailing list, based 
+on specific traits that makes a person a real customer. 
 
-To target users that actually put items into their baskets, it's better to use
-[quotes list target][quotes-target]. 
-It will provide a list of users that have a basket, either open or finalized 
-(transformed into order). This list will be also useful for targeting abandoned
-shopping carts.
+### Quotes list target
 
-To target actual, real world customers, that placed an order it's better to use
+To target users that actually put items into their baskets, you can use the 
+[quotes list target][quotes-target]. It will provide a list of users that have a basket, either open or finalized (transformed into order). This list will be also useful for targeting **abandoned
+shopping carts**.
+
+### Orders list target
+
+To target actual, real world customers, that placed an order you can use the
 [orders list target][orders-target].
-This list will additionally contain all customers (ones that ordered) that opted 
+This list will contain all customers (ones that ordered) that opted 
 for anonymous checkout.
 
-To target users/visitors that subscribed to a newsletter it's better to use 
+### Subscribers list target
+ 
+To target **users/visitors** that subscribed to a newsletter you can use the 
 [subscribers list target][subscribers-target].
 This list will provide users that subscribed to newsletter regardless if they are
 customers, guests or just visitors.
 
-Aside from registered customers, there are also customers that didn't want to 
-register and completed theirs using anonymous checkout (has to be enabled inside 
-Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
+### Guest list target
 
-Finally, there is [persons list target][persons-target]
-that will aggregate latest information from all above lists using email address 
-as a way to distinguish various people.
+Aside from registered customers, there are also customers that didn't want to 
+register and finalized their order using an anonymous checkout (has to be enabled inside 
+the Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
+
+### Person list target
+
+Finally, there is the [persons list target][persons-target]
+that will build a profile of a customer by aggregating the the latest information associated with the same email address.
 
 ## Personalization variables
 
