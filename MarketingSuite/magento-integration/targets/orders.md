@@ -1,24 +1,24 @@
 # Magento orders list
 
-Order is a collection of items that customer decided to buy. Each items defines
-how many of given product at given price should be delivered.
+An order is a collection of items that a customer decided to buy. The order contains
+information about the products, their price and the quantity of each item.
 
-Orders can be placed either by registered customers or anonymous guests. For 
-guests placed orders, suitable option has to be enabled in Magento configuration
-(anonymous check out).
+Orders can be placed either by registered customers or by anonymous guests. For the latter, 
+the option _anonymous checkout_ has to be enabled inside the Magento configuration.
 
-Each order is created from a quote. Quote object represents a set of products
-that can be bought on given conditions (quantity, price, etc). When order is 
-created, quote from which it is created is finalized. Quote will be no longer 
-available for modification by user and new active quote is created for that user.
+Each order is created from a quote. The _quote object_ represents a collection of products
+that can be purchased on the conditions (quantity, price, etc) described in the quote. When order is 
+created, the quote from which it was created will be frozen and flagged as inactive. 
+From that moment, the customer can no longer modify this quote and a new active quote for future activities will be created for that user.
 
 ## Orders state and status
 
-Orders can be in various states and statuses. State is Magento value that can't 
-be modifier by user. Status is user defined (or Magento predefined) value that
-can be set up inside Magento admin panel.
+Orders can have various _states_ and _statuses_. 
+**State** is a Magento value assigned to an order that cannot be modiefied by a user.
+**Status** is a user defined (of Magento predefined) value that can be modified inside the 
+Magento admin panel. 
 
-Read more about order state and status on [order object](copernica-docs:MarketingSuite/magento-integration/object/order) page.
+Read more about order _state_ and _status_ on [order object](copernica-docs:MarketingSuite/magento-integration/object/order) page.
 
 ## Personalization variables
 
@@ -32,12 +32,11 @@ Read more about order state and status on [order object](copernica-docs:Marketin
 
 ## Limiting orders list
 
-It's possible to limit orders list to a shorten, more precise one, by applying
-filter options to it. It's possible to apply following filter options:
+It is possible to limit the results of the orders list by applying filters.
 
 *  **Quote Id**
 
-   Limits orders list to orders that were created using [quote](coperncia-docs:MarketingSuite/magento-integration/object/quote) with given ID.
+   Limits orders list to orders that were created using the [quote](coperncia-docs:MarketingSuite/magento-integration/object/quote) with given ID.
 
 *  **Customer Id**
 
@@ -45,23 +44,23 @@ filter options to it. It's possible to apply following filter options:
 
 *  **State**
 
-   Limits orders list to orders that are in given state.
+   Limits orders list to orders that are in the given state.
 
 *  **Status**
 
-   Limits orders list to orders that have given status.
+   Limits orders list to orders that have the given status.
 
 *  **Quantity**
 
-   Limits orders list to orders that have given amount of products.
+   Limits orders list to orders that have a given amount of products.
 
 *  **Total weight**
 
-   Limits orders list to orders that weighted given amount of kilograms.
+   Limits orders list to orders that weighted the given amount of kilograms.
 
 *  **Products**
 
-   Limits orders list to orders that contain given [product](coperncia-docs:MarketingSuite/magento-integration/object/product).
+   Limits orders list to orders that contain the  given [product](coperncia-docs:MarketingSuite/magento-integration/object/product).
 
 *  **Product's category**
 
@@ -69,12 +68,12 @@ filter options to it. It's possible to apply following filter options:
 
 *  **Web store**
 
-   Limits orders list to orders that were placed in given [webstore](coperncia-docs:MarketingSuite/magento-integration/object/webstore).
+   Limits the list to orders that were placed in the given [webstore](coperncia-docs:MarketingSuite/magento-integration/object/webstore).
 
 *  **Currency**
 
-   Limits orders list to orders that were placed with use of given [currency](coperncia-docs:MarketingSuite/magento-integration/object/currency).
+   Limits orders list to orders that were placed with use of a given [currency](coperncia-docs:MarketingSuite/magento-integration/object/currency).
 
 *  **IP address**
 
-   Limtis orders list to orders that were placed with use of given IP address.
+   Limtis orders list to orders that were placed with use of a given IP address.
