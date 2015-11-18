@@ -89,9 +89,6 @@ $ sudo dpkg -i path/to/yothalot-version.deb
 ```
 for Debian based systems.
 
-** Note: At this point in time, we do not have finished our download
-section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
-
 These commands will install Yothalot. However, there is one library on which
 Yothalot depend that you should install yourself. The library on which Yothalot
 depends is the JSON-C library, its installation is discussed below.
@@ -190,4 +187,4 @@ After having installed and configured Yothalot you can start the Yothalot sever
 and send jobs to it by using the [C++ API](copernica-docs:Yothalot/cppapi).
 You can also use the [PHP API](copernica-docs:Yothalot/phpapi), yet, if you want
 to use the PHP API you need to [install](copernica-docs:Yothalot/php-install "PHP Extension Installation")
-it first.
+our Yothalot PHP extension first.

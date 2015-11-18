@@ -1,11 +1,36 @@
 # Installation
 
-Yothalot uses [GlusterFS](http://www.gluster.org/) as its distributed
-file system and [RabbitMQ](https://www.rabbitmq.com/) for its internal communication.
-Therefore, before you can use Yothalot you need to have these installed and
-configured. This page provides some installation guidelines for both
-packages and provides links to various resources. It of course also discusses
-how Yothalot itself can be installed and configured.
+This page discusses how you can install and create a Yothalot cluster. Since
+Yothalot uses some proven technologies developed by others some extra programs need to be installed as well.
+The installation of these programs is discussed here too. If you simply want
+to try out Yothalot you do not need to create a complete cluster and do not
+have to follow all the steps discussed over here. You can go to our
+[Setting up a local Yothalot configuration](copernica-docs:Yothalot/local-installation) page
+instead.
+
+
+## Some background
+
+A working Yothalot cluster is actually composed out of two clusters, a cluster
+used for storage and a cluster that is used for the actual computations.
+These clusters may physically exist out of the same systems our different
+ones, as long as they are connected. For the
+storage side Yothalot depends on [GlusterFS](http://www.gluster.org/), a distributed
+file system. Therefore, if you want to use Yothalot a GlusterFS cluster needs to be configured too.
+
+The computational side is handled by Yothalot itself, where it uses messages
+to communicate between the several processes that run on this cluster. These
+messages are handled by [RabbitMQ](https://www.rabbitmq.com/), a proven message
+broker. Therefore, RabbitMQ needs to be installed too in order to use Yothalot.
+
+Below you can find some installation guidelines on how to create a GlusterFS
+cluster and links to various resources are provided. Moreover, some configuration
+settings specific for using GlusterFS with Yothalot are discussed. The page
+also discusses how the install and configure RabbitMQ. Finally the page
+discusses how Yothalot itself can be installed and configured. If you want
+to have some extra information about the connection between the storage and
+computation cluster you can read the [Files on the Yothalot cluster](copernica-docs:Yothalot/files "Files and paths")
+documentation.
 
 
 ## Installation and configuration of GlusterFS
@@ -29,7 +54,7 @@ sudo mount -t glusterfs nameOfCluster:/volume-name /path/to/mount/point
 
 For efficiency purposes Yothalot automatically tries to assign jobs to nodes in the cluster that have
 local access to the files that are mapped or reduced. To find out on which
-servers files are stored, Yothalot runs the `getfattr` command line tool. For a
+servers the files are stored, Yothalot runs the `getfattr` command line tool. For a
 reason that is not completely clear to us, only the root user may do this. For
 Yothalot to work properly you therefore need to give special privileges to run
 this command.
@@ -70,7 +95,15 @@ instead of using the version that comes with your OS.
 [Click here to download and install RabbitMQ](https://www.rabbitmq.com/download.html).
 
 The RabbitMQ installation has to be **at least version 3.3.1+** for Yothalot to be
-able to connect to it.
+able to connect to it. You can install these packages with:
+```bash
+$ sudo rpm -i /path/to/rabbitmq-server_version.rpm
+```
+for Red Hat based systems or:
+```bash
+$ sudo dpkg -i path/to/rabbitmq-server_version.deb
+```
+for Debian based systems.
 
 
 ### Check the RabbitMQ login and password
@@ -119,14 +152,14 @@ for Red Hat based systems or:
 $ sudo dpkg -i path/to/yothalot-version.deb
 ```
 for Debian based systems.
-
-** Note: At this point in time, we do not have finished our download
-section, but if you're interested, drop us an email at [info@copernica.com](mailto:info@copernica.com). **
+These commands will install Yothalot. However, there is one library on which
+Yothalot depend that you should install yourself. The library on which Yothalot
+depends is the JSON-C library, its installation is discussed below.
 
 
 ### Installation of json-c
 
-Yothalot uses JSON objects to pass information between nodes.
+Yothalot uses JSON objects to pass the information over the RabbitMQ queues.
 For the construction of these JSON objects Yothalot relies on the [JSON-C](https://github.com/json-c/json-c/wiki)
 library. Therefore you need to have this library installed on the systems
 where Yothalot is installed. In particular Yothalot uses version 0.12 of
@@ -136,12 +169,13 @@ instead of trying to install it from the repository of your Linux distribution.
 You can use Git to download the source code of the correct version. If you
 have not installed Git on your system we advise you to install it as it can
 also be used to download the source code that is necessary to [build the PHP API](copernica-docs:Yothalot/php-install "PHP Extension Installation").
+For the installation of Git you can use the repository of your Linux distribution.
 If you have Git installed you can create a directory, move to this directory
 and type in:
 ```bash
 git clone --branch json-c-0.12 https://github.com/json-c/json-c
 ```
-This will download the source code of the correct version of the JSON-C library
+The above command will download the source code of the correct version of the JSON-C library
 After you have downloaded the source code you move to the directory `json-c`
 and type in:
 ```bash
@@ -165,7 +199,7 @@ to have super user privileges.
 
 Yothalot can compress the files that it is using for storing intermediate
 results. This is useful as it reduces the network overhead in the cluster.
-However, it comes at a cost that compressing and decompressing the files
+However, it comes at a cost, compressing and decompressing the files
 takes some CPU time. The compression that Yothalot uses is [LZ4](http://cyan4973.github.io/lz4/).
 If you want to want to make use of the compression functionality you have to install
 the LZ4 library on all the nodes in your cluster. If you do not install this library, Yothalot will work but
@@ -176,8 +210,6 @@ to a directory where you can store the source code of LZ4 and type in:
 ```bash
 git clone https://github.com/Cyan4973/lz4/
 ```
-(Note: If Git is not installed on your system you can install it via the repository of your Linux distribution.)
-
 After this command there should be a directory called lz4. Move to this
 directory and type in:
 ```bash
@@ -186,7 +218,7 @@ sudo make install
 ```
 Now LZ4 is installed on your system.
 
-** Note that if you have to install the LZ4 library on each node in your cluster 
+** Note that you have to install the LZ4 library on each node in your cluster 
 if you want to use the compression functionality or on none if you do not want
 to use it.**
 
@@ -201,7 +233,13 @@ on this website that explains all the settings from this config file.
 
 ## Getting a license
 
-You can get your license via the [License Page](/license) using your Copernica 
+You can try out Yothalot without having a license. However, without a license
+Yothalot is limited to one node and four concurrent processes. Besides the
+restriction on the amount of resources that Yothalot will use, the behavior
+is exactly the same as Yothalot installation without this limitation (see our
+[Setting up a local Yothalot configuration](copernica-docs:Yothalot/local-installation)
+documentation for more information on this). If you want to use Yothalot to
+its full potential you need to have a license. You can get your license via the [License Page](/license) using your Copernica 
 account credentials. If you do not have an account yet, you can create one
 [over here](/account/register "Create an account"). Of course Yothalot should be aware
 of your license. On a clean installation the path to the license is 
@@ -224,15 +262,18 @@ each node. You do not have to add extra command line arguments to specify
 which node is the master node. This will be figured out by Yothalot itself.
 
 
-## Installation of an API
+## Using Yothalot
 
 When you have all the processes running: a distributed GlusterFS file system,
 a RabbitMQ server, and one or more Yothalot processes on different
 machines in your network, you're ready to start running map/reduce jobs. To
 create a map/reduce job, you can use one of our API's:
 
-* [PHP API](copernica-docs:Yothalot/phpapi)
 * [C++ API](copernica-docs:Yothalot/cppapi)
+* [PHP API](copernica-docs:Yothalot/phpapi)
+
+(Note that in order to use the PHP API you need to [install](copernica-docs:Yothalot/php-install "PHP Extension Installation")
+the Yothalot PHP extension first)
 
 That is all there is. Your Yothalot cluster is ready to go. If you are curious on how
 to use it you can have a look at our MapReduce [Hello world!](copernica-docs:Yothalot/helloworld)
