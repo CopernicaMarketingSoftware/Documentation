@@ -16,12 +16,16 @@ To target users that actually put items into their baskets, you can use the
 [quotes list target][quotes-target]. It will provide a list of users that have a basket, either open or finalized (transformed into order). This list will be also useful for targeting **abandoned
 shopping carts**.
 
+* [quotes-target]: copernica-docs:MarketingSuite/magento-integration/targets/quotes
+
 ### Orders list target
 
 To target actual, real world customers, that placed an order you can use the
 [orders list target][orders-target].
 This list will contain all customers (ones that ordered) that opted 
 for anonymous checkout.
+
+[orders-target]: copernica-docs:MarketingSuite/magento-integration/targets/orders
 
 ### Subscribers list target
  
@@ -30,16 +34,22 @@ To target **users/visitors** that subscribed to a newsletter you can use the
 This list will provide users that subscribed to newsletter regardless if they are
 customers, guests or just visitors.
 
+* [subscribers-target]: copernica-docs:MarketingSuite/magento-integration/targets/subscribers
+
 ### Guest list target
 
 Aside from registered customers, there are also customers that didn't want to 
 register and finalized their order using an anonymous checkout (has to be enabled inside 
 the Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
 
+* [guests-target]: copernica-docs:MarketingSuite/magento-integration/targets/guests
+
 ### Person list target
 
 Finally, there is the [persons list target][persons-target]
 that will build a profile of a customer by aggregating the the latest information associated with the same email address.
+
+* [persons-target]: copernica-docs:MarketingSuite/magento-integration/targets/persons
 
 ## Personalization variables
 
