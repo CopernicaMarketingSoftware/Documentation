@@ -1,61 +1,62 @@
 # Magento subscribers list
 
-A subscriber is just an email address that agreed to receive newsletter emails. 
-Single subscriber can be attached to a customer, but that is not required. 
-Whenever subscribers is created it's synchronized with Marketing Suite. Subscriber
-can be created via newsletter field or via subscription options in users account
-settings inside Magento.
+In Magento, a subscriber is just someone who opted in to receive newsletter 
+emails. This person doesn't necessarily have to be a customer.
 
-Subscribers can be created via Magento installation only. Marketing Suite doesn't
-provide a way to insert Magento subscriber.
+There are various ways in which someone can subscribe.
+
+Someone can subscribe via a subscription form on your website (anonymous), 
+via the subscription options in the user's account settings (when logged in), or 
+by ticking a check box during the checkout of an order. 
+
+Subscribers are automatically synchronized with the Marketing Suite. 
+
+Note that subscribers can only be created in Magento. It is not possible to
+manage this inside the MarketingSuite. 
 
 ## Subscribing / unsubscribing
 
-Subscribers can subscribe to a newsletter. Subscribing will be automatically pushed 
-to Marketing Suite via synchronization queue.
+When someone subscribes himself, this is automatically pushed to Marketing Suite via the synchronization queue.
 
-Subscribers can unsubscribe from a newsletter. Unsubscribing can be done via 
-Magento interface. This action will be synchronized with Marketing Suite. It's
-also possible to unsubscribe via link generated from {$unsubscribe} personaliation
-tag. Following that link will notify Magento installation about unsubscription.
+Also, when someone unsubscribes, this will also be pushed to the Marketing Suite.
+The Marketing Suite also provides the `{unsubscribe}` personalization tag which can be added to 
+your email. Clicking this link will automatically unsubscribe the user. The MarketingSuite
+will push the unsubscribe request to Magento. 
 
-## Subscription lifecycle
+## Subscription life cycle
 
-Magento introduces subscription lifecycle. Lifecycle is basically, as status in 
-which subscriber is. Status tell us if subscriber wants to receive newsletter, 
-or resigned from receiving it, or he has to confirm his decision. Only when
+The Magento Subscription Life Cycle basically describes the subscription status 
+of a person. It tells us if someone wants to receive newsletter, 
+or resigned from receiving it, or he has yet to confirm his decision. Only when
 status is **subscribed** newsletter emails should be sent. In total there
 is 5 statuses: 
 
 *  **unknown** 
 
-   It means that we don't know if subscriber wants to receive newsletter email.
+   The status _unknown_ means that we don't know if subscriber wants to receive newsletter email or not.
    It is assigned just after subscriber is created inside Magento installation 
    and no follow up actions were taken. Depending if Magento is configured to
-   require confirmation after subscription, this status should change into 
-   'subscribed' (no confirmation required), 'unconfirmed'(email address is of 
-   registered customer) or 'not active' (email address is of anonymous user).
+   require confirmation after subscription (double opt-in), this status should change into 
+   'subscribed' (no confirmation required), 'unconfirmed' (email address is associated with  
+   registered customer) or 'not active' (the email address is not associated to registered customer).
 
 *  **not active**
 
-   It means that subscription is not active yet. It will occur when an logged in 
-   user enters manually email address, that is not his, into subscription field.
-   This status will occur also, when an anonymous visitor enters an unknown email
-   address into subscription field.
+   It means that subscription is not active yet. It will occur when a logged in 
+   user manually enters an email address into a subscription field that is different from the email address he registered his account with.
+
+   This status will also occur when an anonymous visitor enters an unknown email
+   address into the subscription field.
    
    The difference between **not active** and **unconfirmed** is that **not active**
    is dealing with anonymous users and **unconfirmed** is dealing with registered
-   user.
+   users.
 
 *  **unconfirmed** 
 
-   It means that subscription has to be yet confirmed and newsletter emails 
-   shouldn't be sent. It will occur when new user or already registered customer
-   wants to receive newsletter emails. This status will show up when Magento is 
-   configured to require additional subscription confirmation. 
-   
-   The difference between **unconfirmed** and **not active** is that **unconfirmed** is dealing with registered
-   user and **not active** is dealing with anonymous users.
+   This status only occurs in a double opt-in procedure for newsletter subscription. It means that subscription has yet to be confirmed. Newsletter emails shouldn't be sent to this person.  
+
+   The difference between **unconfirmed** and **not active** is that **unconfirmed** is dealing with registered users and **not active** is dealing with anonymous users.
 
 *  **subscribed**
 
@@ -64,11 +65,11 @@ is 5 statuses:
 
 *  **unsubscribed**
 
-   It means that user explicitly doesn't want to receive newsletter emails.
+   Specifies that a user explicitly doesn't want to receive newsletter emails.
 
 ## Compatibility with other extensions
 
-To ensure compatibility, extension is designed to use Magento core modules. For
+To ensure compatibility, the MarketingSuite extension is designed to use Magento core modules. For
 subscribers synchronization Mage_Newsletter is used. Any other extension that 
 uses this module for managing subscribers should work fine with Copernica extension.
 
