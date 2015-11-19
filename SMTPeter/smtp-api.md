@@ -1,5 +1,14 @@
 # SMTP API Overview
 
+The SMTP API uses the SMTP protocol, the standard protocol that is normally used by
+mail servers to communicate with each other. The SMTP protocol is very "chatty" - a lot of handshaking and negotiating
+goes on between the server and the client, and it does not easily allow to pass
+tuning parameters on a per-message level. It therefore is often more efficient to
+use the REST API instead. Yet, if you already have an environment in which you
+send emails over SMTP, you can simply change the SMTP settings and have your
+email sent through SMTPeter instead.
+
+
 To use the SMTP API you need SMTP login credentials. You can create
 a username/password combination in your [Dashboard](copernica-docs:SMTPeter/dashboard/smtp-credentials "Dashboard Documentation").
 Once you have your credentials you can configure your email client/mail server to forward email 
