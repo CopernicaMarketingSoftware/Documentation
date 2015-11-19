@@ -1,21 +1,15 @@
 # REST API Overview
 
 SMTPeter provides a powerful REST API. With this REST API you can communicate
-with SMTPeter using the HTTPS protocol. The API allows you to send an instruction
-to SMTPeter and add some extra data to which the instruction should be applied to.
-When SMTPeter receives your instruction and the added data, it will take care of it.
+with SMTPeter using the HTTPS protocol.
 
 
 ## API Access Token
 
-To use the REST API you will need to [create an API access token](https://www.smtpeter.com/app/#/admin/api/rest-token "create a rest token")
-in your SMTPeter dashboard. This token is used to authenticate your instructions
-to SMTPeter. Therefore, you have to include this token in all your REST API
-calls to SMTPeter. Since this token is used for authentication, you should
-keep it private. For this reason you also communicate with SMTPeter via
-HTTPS so that the communication with SMTPeter is secure. You can create
-a new access token, if you need to, on the same page in your SMTPeter dashboard.
-After having created a new access token the old access token is revoked.
+To use the REST API you need an [API access token](https://www.smtpeter.com/app/#/admin/api/rest-token "create a rest token"),
+which can be created via the SMTPeter dashboard. This token is used to authenticate 
+your calls to SMTPeter. You must keep this access token private, to prevent that
+other people can send out emails out of your name.
 
 
 ## API Endpoint
