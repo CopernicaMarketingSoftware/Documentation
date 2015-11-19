@@ -1,89 +1,56 @@
-# REST API Overview
+# REST API method: send
 
-SMTPeter provides a powerful REST API. With this REST API you can communicate
-with SMTPeter using the HTTPS protocol.
-
-
-## API Access Token
-
-To use the REST API you need an [API access token](https://www.smtpeter.com/app/#/admin/api/rest-token "create a rest token"),
-which can be created via the SMTPeter dashboard. This token is used to authenticate 
-your calls to SMTPeter. You must keep this access token private, to prevent that
-other people can send out emails out of your name.
-
-
-## API Endpoint
-
-You can reach SMTPeter on the following endpoint:
-
-```
-https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
-```
-
-where `{METHOD}` contains the name of the method (e.g. `send`
-if you want to send an email) and `{YOUR_API_TOKEN}` contains the API access
-token you have created for authenticating your instruction.
-
-> **Note:** All API requests must use secure HTTPS connections. Unsecured
-HTTP requests will result in a '400 Bad Request' response.
-
-Besides giving an instruction to SMTPeter, you probably want to add data 
-to this instruction as well; e.g. the email information if you want to send
-an email. There are two ways to provide this information to the REST API.
-The first one is by using regular POST data. This is the same as when you
-have your browser POST a form (see our examples page on how to POST over https @todo add page).
-
-Example:
-```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
-Host: www.smtpeter.com
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 148
-
-envelope=info%40example.com&recipient=john%40doe.com&subject=this+is+the+subject&html=This+is+example+text&from=info%40example.com&to=john%40doe.com
-```
-As you can see `Host` and `POST` form your endpoint and `Content-Type`, `Content-Length`, and
-the bottom string form the data.
-
-The other way to send data to the REST API is to JSON-encode your input. 
-Please be aware that for this to work, you must set the 'Content-Type' to 'application/json' (see our
-example page for an example on how to do this @todo add link).
-
-Example:
-```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
-Host: www.smtpeter.com
-Content-Type: application/json
-Content-Length: 246
-
-{
-    "envelope":     "info@example.com",
-    "recipient":    "john@doe.com",
-    "subject":      "This is the subject",
-    "html":         "This is example content",
-    "from":         "info@example.com",
-    "to":           "john@doe.com"
-
-}
-
-```
-Again, `host` and `POST` form the endpoint. `Content-Type`, `Content-Lenght`,
-and the JSON now form the data. Note that `Content-Type` is set to `application/json`
-as an indication that the actual data is JSON formatted.
-
-
-## Sending email using the REST API
-
-To send email using the REST API you call the `send` method. This method
-can be called by using the endpoint as discussed above and use for `{METHOD}`
-`send`:
+To send email using the REST API you use the `send` method. This method
+can be called by using the following URL
 
 ```text
-https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}
+https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
 ```
 
-Besides calling the `send` method you also have to provide the data for the
-email.
+The method is only available as POST call, and your body data should 
+contain one or more of the following variables:
+
+@todo add internal hyperlinks
+* envelope
+* recipient(s)
+* mime
+* subject
+* from
+* to
+* cc
+* text
+* html
+
+
+## Sending MIME data
+
+The "send" method can both be used to send fully formatted MIME messages,
+or to send many different fields so that SMTPeter can generate the MIME
+message for you. If you create the MIME message yourself, you need to
+provide the following two fields at least:
+
+* recipient
+* mime
+
+The "recipient" should hold the email address of the actual recipient, and
+"mime" the full MIME encoded message. The following additional fields may 
+also be included:
+
+* envelope
+
+
+## Sending non-MIME data
+
+If the "mime" field is not included in the call to the REST API, SMTPeter
+will generate an email based on the settings of all the other variables:
+
+* subject
+* from
+* to
+* cc
+* text
+* html
+
 
 ### Recipient and envelope
 
@@ -100,21 +67,20 @@ Note that it really should be an array and not a comma separated list.
 
 ```json
 {
-"recipient": [
-                "one@example.com",
-                "two@example.com, three@example.com",
-                "..."
-              ]
+    "recipient": [
+        "one@example.com",
+        "two@example.com, three@example.com",
+        "..."
+    ]
 }
 ```
 
 Another important variable, although not mandatory, is the "envelope" variable. 
-If delivery fails and bounce tracking is disabled, the email address given here will receive a delivery
+If delivery fails, the email address given here will receive a delivery
 status notification indicating the failure and the reason why. If this variable
-is not set and bounce tracking is disabled, delivery notifications will be silently
-ignored (more on bounce tracking is discussed below). Note that just like the recipient variable the
-email address in the "envelope" should be **pure** as well. Unlike recipient
-it is not possible to specify multiple "envelope" addresses.
+is not included, delivery notifications will be silently ignored. Note that 
+just like the recipient variable the email address in the "envelope" should be 
+**pure** as well. It is not possible to specify multiple "envelope" addresses.
 
 The recipient and envelope variables control where the email is delivered ('recipient')
 and where delivery failure notifications are sent to ('envelope'). They are like the
