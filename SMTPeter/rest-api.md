@@ -9,19 +9,14 @@ with SMTPeter using the HTTPS protocol.
 To use the REST API you need an [API access token](https://www.smtpeter.com/app/#/admin/api/rest-token "create a rest token"),
 which can be created via the SMTPeter dashboard. This token is used to authenticate 
 your calls to SMTPeter. You must keep this access token private, to prevent that
-other people can send out emails out of your name.
-
-With your access token, you can reach the SMTPeter API via the following 
-HTTPS endpoint:
+other people can send out emails out of your name. With your access token, you can 
+reach the SMTPeter API via the following URL:
 
 ```
-https://www.smtpeter.com/v1/{METHOD}?access_token={YOUR_API_TOKEN}
+https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
 ```
 
-`{METHOD}` contains the name of the method (e.g. `send` if you want to send 
-an email) and `{YOUR_API_TOKEN}` contains the API access token.
-
-**Note:** You can only use HTTPS connections. Unsecure HTTP requests are not
+You can only use HTTPS connections. Unsecure HTTP requests are not
 accepted and will result in a '400 Bad Request' response.
 
 
