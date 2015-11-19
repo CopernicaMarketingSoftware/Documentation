@@ -3,24 +3,25 @@
 This page explains how to install and create a full Yothalot cluster, including
 the installation of the external programs and libraries that Yothalot depends on. 
 If you simply want to try out Yothalot first without setting up a full cluster,
-you but can also install and run Yothalot on your local computer too. We have a 
-special article about [setting up such a local Yothalot environment](copernica-docs:Yothalot/local-installation) too.
+you can follow this installation guide too, but skip installing and setting up 
+GlusterFS: Yothalot can use a local file system if it runs on just a single node.
 
 
 ## Some background
 
-A working Yothalot cluster is actually composed out of two clusters, a distributed
+A working Yothalot cluster is composed out of two clusters, a distributed
 file system for storage and a cluster of servers used for running the algorithms.
-Very often the same servers are used for these clusters - but in theory it is 
-very well possible to use different servers for the distributed file system and
-different servers for the Yothalot cluster. 
+Very often the same servers are used for these clusters: the clusters that make
+up the distributed file system are then the same servers that run the mapreduce 
+jobs - but in theory it is very well possible to use different servers for the 
+distributed file system and different servers for running the jobs. 
 
-For the storage side Yothalot depends on [GlusterFS](http://www.gluster.org/), a 
-distributed file system. If you want to set up a Yothalot cluster, you therefore
-first need to set up a GlusterFS cluster too.
+For the storage side Yothalot depends on [GlusterFS](http://www.gluster.org/), an 
+open source distributed file system. If you want to set up a Yothalot cluster, 
+you therefore first need to set up a GlusterFS cluster.
 
-The computational side is handled by Yothalot itself, with one Yothalot node 
-daemon process running on each server that is part of the cluster. These yothalot
+The computational side is handled by Yothalot itself, with one Yothalot daemon 
+process running on each server that is part of the cluster. These yothalot
 processes use message queues to communicate. These queues are handled by 
 [RabbitMQ](https://www.rabbitmq.com/). RabbitMQ needs to be installed too in 
 order to use Yothalot.
@@ -40,25 +41,23 @@ can be used. The GlusterFS project contains a lot of documentation on how to
 setup and configure GlusterFS. A quick install guide of GlusterFS can
 be found [here](http://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/).
 A more in-depth guide is available [here](http://gluster.readthedocs.org/en/latest/Install-Guide/Overview/).
-We advise you to follow the steps described over there for your use case
-to setup your GlusterFS cluster.
+We advise you to follow the steps described over there.
 
-Once you have GlusterFS installed and configured on one or more or your servers
-you must mount this GlusterFS file system on each of the machines that you are 
-going to include in the Yothalot cluster. Every server that you want to use for 
-running Yothalot jobs needs access to the distributed file system. You can make 
-such a mount point with the following command:
+Once you have GlusterFS installed and configured you must mount this file system 
+on each of the machines that you are going to include in the Yothalot cluster. 
+Every server that you want to use for running Yothalot jobs needs access to the 
+distributed file system. You can make such a mount point with the following command:
 
 ```bash
-sudo mount -t glusterfs clustername:/volume-name /path/to/mount/point
+sudo mount -t glusterfs glusterfsserver:/volume-name /path/to/mount/point
 ```
 
 Yothalot automatically tries to assign jobs to nodes in the cluster that have
 local access to the files that are being mapped or reduced. To find out on which
 servers the files are stored, Yothalot runs the `getfattr` command line tool. 
 However, for a reason that is not completely clear to us, root privileges are 
-required to run this tool. As a consequence, you need to give special privileges 
-to the Yothalot process to run this command.
+required to run this tool. As a consequence, you need to give special rights 
+to the Yothalot process to be able to run this command with root privileges.
 
 The easiest way to do this is to add an extra line to the `/etc/sudoers` file
 that says that the user that you use for running the yothalot process, may start
@@ -77,7 +76,7 @@ if you make a mistake.
 
 After you've set up GlusterFS, the next stop is to install and configure
 RabbitMQ. Yothalot depends on this for all its queueing and inter process
-communication. You need a running RabbitMQ instance (or if you want high availability
+communication. You need one running RabbitMQ instance (or if you want high availability
 maybe even a cluster of instances) before you start Yothalot. We do not intend to write
 a full installation guide for RabbitMQ here (you can find a full guide on the
 [www.rabbitmq.com](https://www.rabbitmq.com) website), but we do have
@@ -87,17 +86,17 @@ some tips, tricks and recommendations.
 ### Make sure you use the right RabbitMQ version
 
 The RabbitMQ version that is installed in the repository of your operating
-system might be outdated. You really need a version that is up-to-date,
-because Yothalot uses a couple of new features that were only recently
-added to RabbitMQ. We recommend downloading and installing RabbitMQ
-directly from the [www.rabbitmq.com](https://www.rabbitmq.com) website
-instead of using the version that comes with your OS.
+system might be outdated. You really need a version that is up-to-date, because 
+Yothalot uses a couple of new features that were only recently added to RabbitMQ. 
+We recommend downloading and installing RabbitMQ directly from the 
+[www.rabbitmq.com](https://www.rabbitmq.com) website instead of using the version 
+that comes with your OS.
 
 [Click here to download and install RabbitMQ](https://www.rabbitmq.com/download.html).
 
 The RabbitMQ installation has to be **at least version 3.3.1+** for Yothalot to be
 able to connect to it. For Red Hat based systems (like Red Hat, Fedora and CentOS)
-you can install the that you downloaded with the `rpm` tool:
+you can install the downloaded file with the `rpm` tool:
 
 ```bash
 $ sudo rpm -i /path/to/rabbitmq-server_version.rpm
@@ -121,12 +120,12 @@ a login that also works from remote machines. You therefore either need to add
 a user with a different name and password, or you should configure RabbitMQ to 
 allow "guest/guest" logins from remote hosts.
 
-The `loopback_users` setting in the RabbitMQ config file can be used if you want
-to allow "guest/guest" logins from remote servers. By including this option in the 
-RabbitMQ config file, you tell RabbitMQ that it is OK to login with "guest/guest", 
-even if the user comes from a remote location. If you do include this setting, 
-do make sure that you also have a firewall running, because you do not want everyone 
-from all over the internet to connect to your RabbitMQ instance!
+The `loopback_users` setting in the RabbitMQ config file can be used for that. 
+By including this option in the RabbitMQ config file, you tell RabbitMQ that it 
+is OK to login with "guest/guest", even if the user comes from a remote location. 
+If you do include this setting, do make sure that you also have a firewall running, 
+because you do not want everyone from all over the internet to connect to your 
+RabbitMQ instance!
 
 [Read more about setting up loopback_users](https://www.rabbitmq.com/access-control.html).
 
@@ -160,7 +159,7 @@ $ sudo rpm -i /path/to/yothalot-version.rpm
 $ sudo dpkg -i path/to/yothalot-version.deb
 ```
 
-This installs the Yothalot server, and the yothalot library that you need for
+This installs the Yothalot server and the yothalot library that you need for
 writing mapreduce jobs. However, the Yothalot daemon application only works if
 the "JSON-C" library is available on your system too.
 
@@ -168,18 +167,18 @@ the "JSON-C" library is available on your system too.
 ### Installation of json-c
 
 Yothalot uses JSON objects to pass information over the RabbitMQ queues. For 
-construction and parsing these JSON objects Yothalot relies on the [JSON-C](https://github.com/json-c/json-c/wiki)
+construction and parsing JSON objects Yothalot relies on the [JSON-C](https://github.com/json-c/json-c/wiki)
 library. You need to have this library installed on all the systems where Yothalot
 is installed. In particular Yothalot uses version 0.12 of this library. Older 
 versions do not work. It is best to get the correct version from [GitHub](https://github.com/json-c/json-c/tree/json-c-0.12)
 
-You can use Git to download the source code of the correct version, with the
-following command:
+You can use Git to download the source code using the following command:
+
 ```bash
 git clone --branch json-c-0.12 https://github.com/json-c/json-c
 ```
 
-The above command will download the source code of the JSON-C library. Now
+The above command downloads the source code of the JSON-C library. Now
 now you have to compile and install the JSON-C library on your system:
 
 ```bash
@@ -196,13 +195,13 @@ Yothalot creates intermediate files when it runs mapreduce jobs. Yothalot can
 compress these intermediate files to save disk space and network bandwith. 
 However, this comes at a cost: compressing and decompressing the files
 takes CPU time. The compression that Yothalot uses is [LZ4](http://cyan4973.github.io/lz4/).
-If you want to want to make use of the compression functionality you need to 
-have the LZ4 library installed on all the nodes in your cluster. If this library
-is not installed, Yothalot will work just as well, but will not compress intermediate 
+If you want the intermediate files to be compressed you need to have the LZ4 
+library installed on all the nodes in your cluster. If this library is not 
+installed, Yothalot will work just as well, but does not compress intermediate 
 files.
 
-Installing the LZ4 library is simple. If you have Git installed you move
-to a directory where you can store the source code of LZ4 and type in:
+Installing the LZ4 library is simple. If you have Git, just give the following
+instructions:
 
 ```bash
 git clone https://github.com/Cyan4973/lz4/
@@ -222,6 +221,13 @@ your nodes, you first have to manually edit the `/etc/yothalot/config.txt` confi
 file. In this configuration file you can configure your Yothalot process.
 We have a special [configuration section](copernica-docs:Yothalot/configuration)
 on this website that explains all the settings from this config file.
+
+The Yothalot process automatically detects the GlusterFS mount point, and will
+read and write the intermediate files to this mount point. If you run Yothalot 
+locally, without access to a GlusterFS mount point, you must include an extra
+option in the config file to tell Yothalot where its "virtual" distributed
+file system can be found. See our special article about [setting up a local Yothalot environment](copernica-docs:Yothalot/local-installation) 
+for more information.
 
 
 ## Getting a license
