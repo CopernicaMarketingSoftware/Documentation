@@ -13,6 +13,7 @@ of the HTML document that holds the style (CSS). This will ruin your
 carefully designed layout.
 
 Example of a deleted style:
+
 ![inlincecss](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
 
 With SMTPeter you can inline this style into your HTML and thus your layout
