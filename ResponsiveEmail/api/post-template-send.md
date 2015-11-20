@@ -4,6 +4,8 @@ With this method you can send a template that you previously stored.
 You must include the numeric ID of your template in the URL. Additionally there are several variables, 
 that you can set as email data in your POST request:
 
+## Email data 
+
 ### Recipient and envelope
 
 The most important and mandatory variable is the "recipient" variable. This variable controls where the email
