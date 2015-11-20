@@ -64,7 +64,7 @@ Content-Type: application/json
 {
     "envelope": "example@example.org",
     "recipient": "john@doe.com",
-    "inlinecss": true,
+    "inlineizecss": true,
     "clicktracking": false,
     "bouncetracking": true,
     "openstracking": false,
