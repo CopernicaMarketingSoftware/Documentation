@@ -198,8 +198,8 @@ It should be provided as an object with the following keys:
 "ret":              Either "FULL" to receive the full message back or "HDRS" to receive just the headers
 ```
 
-Note that this variable is separate from the ['trackbounces' option](#tracking-options). It is
-possible to set 'trackbounces' to true and have SMTPeter generate a bounce
+Note that this variable is separate from the ['bouncetracking' option](#tracking-options). It is
+possible to set 'bouncetracking' to true and have SMTPeter generate a bounce
 report after receiving notification of a bounce. This report will always go
 to the address configured under 'Bounce management'.
 
@@ -255,10 +255,10 @@ certain features. This makes it possible to use different settings for individua
 
 
 ```text
-"inlinecss":        When set to true, all CSS will be inlined inside the HTML
-"trackclicks":      When set to true, links will be redirected and tracked
-"trackbounces":     When set to true, bounces will be tracked
-"trackopens":       When set to true, opens will be tracked
+"inlinizecss":        When set to true, all CSS will be inlined inside the HTML
+"clicktracking":      When set to true, links will be redirected and tracked
+"bouncetracking":     When set to true, bounces will be tracked
+"openstracking":      When set to true, opens will be tracked
 ```
 
 These variables are optional and enabled by default, omitting a variable means it
@@ -280,7 +280,7 @@ Rest documentation in other place
 ## Enabling inline CSS using the REST API
 
 If you use the REST API to send emails through SMTPeter, you either submit 
-plain HTTP POST variables, or JSON documents. If you set the "inlinecss" 
+plain HTTP POST variables, or JSON documents. If you set the "inlinizecss" 
 parameter in these POST variables or in the JSON input to "true", you tell 
 SMTPeter to enable the inlinizer.
 
@@ -296,7 +296,7 @@ Content-Length: 302
     "to": "john@doe.com",
     "from": "example@example.org",
     "html": "<html><head><style>body { font-weight: 10pt; }</style></head><body>Hello there!</body></html>",
-    "inlinecss": true
+    "inlinizecss": true
 }
 ```
 
