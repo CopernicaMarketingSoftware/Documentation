@@ -69,7 +69,7 @@ provide at least "recipient" and "mime" variables.
 If the "mime" field is not included in the call to the REST API, ResponsiveEmail
 will generate an email based on the settings of the following variables:
 
-### "From", "to" and "cc"
+### From, to and cc
 
 You may have noticed that we specify variables, such as "from" and "to" here. These might seem redundant, because
 we have already specified the "recipient" and "envelope" addresses. However, these variables
@@ -78,11 +78,11 @@ Whereas "envelope" and "recipient" can be seen as the outside of an envelope,
 "from" and "to" can be seen as the address details that are put on the letter itself. 
 The "cc" variable has to be a string or array containing the cc email addresses.
 
-### "Subject"
+### Subject
 
 You could specify the "subject". If not set, the email will be delivered without any subject.
 
-### "Text" and "HTML"
+### Text and HTML
 
 You have to specify the "html" and "text" variables, too. These are the html and the text versions of the email.
 
