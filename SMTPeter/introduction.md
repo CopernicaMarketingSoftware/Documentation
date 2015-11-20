@@ -28,7 +28,7 @@ The other API is a REST API. This makes it possible to send out email using regu
 HTTP POST calls. Because the HTTP protocol is more flexible than SMTP, you can even
 pass all sorts of options with each message to improve deliverability.
 
-[Read more about our REST API vs our SMTP API](copernica-docs:SMTPeter/api-documentation/api-introduction)
+[Read more about our REST API and SMTP API](copernica-docs:SMTPeter/api-overview)
 
 
 ## What does SMTPeter do?
