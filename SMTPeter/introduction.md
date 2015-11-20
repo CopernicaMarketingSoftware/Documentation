@@ -33,4 +33,4 @@ However, both API's fully support different delivery options, bounce management 
 of opens and clicks. 
 
 
-[Read our API documentation for more information on our API](copernica-docs:SMTPeter/api-overview)
+[Read our API documentation for more information on our APIs](copernica-docs:SMTPeter/api-overview)

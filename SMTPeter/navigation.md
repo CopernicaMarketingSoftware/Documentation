@@ -2,7 +2,6 @@
 * [API Overview](copernica-docs:SMTPeter/api-overview "API overview")
 * [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
 * [REST API](copernica-docs:SMTPeter/rest-api "REST API")
-  * [REST API advanced](copernica-docs:SMTPeter/rest-api-advanced "REST API advanced")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
   * [Sender Domains](copernica-docs:SMTPeter/features/sender-domains "Setting up sender domains")
   * [Inlining CSS](copernica-docs:SMTPeter/features/inline-css "Inline CSS Documentation")

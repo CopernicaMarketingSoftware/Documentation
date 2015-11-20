@@ -1,24 +1,16 @@
 # Magento persons list
 
-Person is a set of data about one individual. Data for this object is gathered
-from other objects: customer, quote, order, subscriber and guest. Email address
-is used to distinguish different individuals.
+A _person_ is a collection of data about one individual. Data for this object is aggregated 
+from various other objects: customer, quote, order, subscriber and guest. A person is 
+identified with its email address.  
 
-New person is created when data associated with given email address is synchronized.
-Usually that means a customer, order or subscriber is synchronized and previously
-there was no objects associated with email address contained in one of such. Every
-next object that is associated with given email address will add data to corresponding 
-person object.
+A new _person_ is created when new data is synchyronized and an email address 
+was found that was not yet associated with an existing customer. When an email 
+address is already known in the system, the _Person_ associated with this address 
+will be updated with the newly synchronized data.    
 
-For example, when someone registers on your website, a Magento customer will be 
-synchronized with Copernica. Alongside, a new person will be created inside 
-Marketing Suite. All relevant data from customer object will be available inside
-person object and customer will be linked to created person object. After some 
-time, a guest order is placed using same email address. When order is synchronized 
-with Copernica relevant data from that order will be added to previously created 
-person object and order will be available via person object. For Magento, created
-customer and guest checkout are unrelated. For Marketing Suite, order is assigned
-to person. 
+For example, when someone registers on your website with the email address johnsmith@hotmail.com, a new Magento Customer will be created. Alongside, inside the MarkertingSuite, a new 
+_person_ will be created bound to the address johnsmith@hotmail.com. From now on, every future purchase, or other relevant data that can be associated with johnsmith@hotmail.com  will also be stored in his or her _person_ profile.    
 
 Magento doesn't have a person concept. It's only available inside Marketing Suite.
 
@@ -53,9 +45,9 @@ filter options to it. It's possible to apply following filter options:
 
 *  **Email address**
 
-   Limits persons list to persons with given email address. In practice it will
+   Limits the persons list to persons with given the email address. In practice it will
    product list with one person on it (or zero, if there is no person with such
-   email address), since every person has it's own email address.
+   email address), since every person has its own email address.
 
 *  **Gender**
 

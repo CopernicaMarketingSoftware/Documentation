@@ -1,7 +1,7 @@
 # Customer object
 
 A customer is a registered Magento user. Magento calls every registered user 
-a customer. It doesn't matter if user bought anything from the shop or not.
+a customer. It doesn't matter if a user bought anything from the shop or not.
 
 The object `customer` gives you access to all information related to a single 
 customer. 
@@ -41,8 +41,8 @@ For more details about customer subscription the `subscriber` property should be
 
 ## Examples
 
-If you want to enlist all [orders][order-object] of a customer with the increment
-number, grand total, shipping amount and total weight, the following code can 
+If you want to enlist all [orders][order-object] of a customer with the incremental
+order number, grand total, shipping amount and total weight, the following code can 
 be used:
 
 ```
@@ -53,7 +53,7 @@ be used:
 {/foreach}
 ```
 
-Will output following:
+This could output the following:
 
 ```
 

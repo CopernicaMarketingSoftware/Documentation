@@ -1,33 +1,47 @@
 # Address object
 
-The 'address' object describes specific location in the words as well as some 
-contact information. Location is described by `street`, `city`, `zipcode`, `state`
-and `country` properties. Contact information is described by `phone`, `fax` and
-`company` properties.
+The `address` object describes the address and contact information of a customer. 
+Customer location is comprised of  `street`, `city`, `zipcode`, `state` and `country` properties. 
+Contact information is described by `phone`, `fax` and `company` properties.
 
-Addresses can be created and managed both by user himself and by Magento 
-administrators. Changes made by both will be synchronized with Copernica.
+Addresses can be created and managed both by the user himself and by Magento 
+administrators. Either who made the changes, they will be synchronized with Copernica.
+
+Each address object has an ID that is unique _only_ inside its own group of addresses. Magento
+distinguishes three different address groups: customer addresses, order addresses and quote 
+addresses. 
+
+- Customer addresses are all addresses created for customer objects. 
+- Orders addresses are addresses created for orders objects. 
+- Quotes addresses are created for quotes objects. 
+
+For some reason they don't share the same ID range. With that in mind, it's
+not advised to compare address IDs of from different groups.
 
 ## Relation to customer, quote and order
 
-Addresses are used with conjunction with [customer][customer-object], [order][order-object]
-or [quote][quote-object]. Each address will be assigned to at least one of such 
-object. 
+Addresses are used in conjunction with [customer][customer-object], [order][order-object]
+or [quote][quote-object]. Each address will be assigned to at least one of these 
+objects. 
 
-Customer can have multiple addresses assigned to him. But one customer can have 
-only one default billing address and one shipping address. They can be the same
-address object.
+### Customer addresses
 
-Order can have multiple addresses assigned to it. Orders will have billing 
-and shipping adddresses (one of each). Both of them can point to the same address
-object.
+A single customer can have unlimited addresses assigned to him, of which two of them are set to the 
+default addresses for billing and shipping. The addresses for billing and shipping can point to the same object.
 
-Quote can have multiple addresses assigned to it. Quote can have shipping and billing
-address assigned to them (one of each). They are filled when customer ask for 
-shipping estimation for his quote. However, Magento is producing a lot of empty
-addresses for quotes. It is advised to check properties before they are used. For
-example following code could be used to check if quote has address with street and
-city properties.
+### Order addresses
+
+An order also has both a shipping and billing address assigned to it. They can point to the same address object, if
+shipping and billing address are the same. 
+
+### Quote addresses
+
+Quote addresses are created when a customer asks for shipping information (tariff) for a quote. 
+Usually, providing a country or state is sufficient to get this information. As a result, 
+Magento is producing a lot of invalid or incomplete address objects for quotes. It is 
+therefor advised to validate quote addresses before using them. 
+
+The following example code will check if a quote has an address with street and city information: 
 
 ```
 {$address = $quote.billingAddress}
@@ -37,14 +51,6 @@ city properties.
     {$address.street}, {$address.city}
 {/if}
 ```
-
-Address object has an id. This id is unique. However, it's unique only inside its 
-own group of addresses. There are 3 groups of addresses: customer addresses, order
-addresses and quote addresses. Customer addresses are all addresses created for 
-customer objects. Orders addresses are addresses created for orders objects. 
-Quotes addresses are created for quotes objects. For some reason they don't share
-same id range and ids for them are generated separately. With that in mind, it's
-not advised to compare ids of address from different sources.
 
 ## Personalization properties
 

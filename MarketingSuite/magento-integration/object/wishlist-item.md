@@ -1,7 +1,10 @@
 # WishlistItem object
 
-Inside wish lists customers can assign products. WishlistItem is a object that
-makes that connection. In addition it's possible to add a comment to product.
+Customers can create wishlists with the products they are interested in, but not 
+neccessarily are going to buy. These products are stored in the object WishListItem. 
+
+Besides just putting an item in a wishlist, customers can add a description for a product for their 
+own reference.
 
 ## Personalization properties
 
