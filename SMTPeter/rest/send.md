@@ -29,10 +29,10 @@ or to send many different fields so that SMTPeter can generate the MIME
 message for you. If you create the MIME message yourself, you need to
 provide the following two fields at least:
 
-* recipient
+* recipient(s)
 * mime
 
-The "recipient" should hold the email address of the actual recipient, and
+The "recipient"/ "recipients" should hold the email address(es) of the actual recipient, and
 "mime" the full MIME encoded message. The following additional fields may 
 also be included:
 
@@ -62,12 +62,12 @@ address without the name of the recipient or angle brackets ('<' and '>')
 (i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
 
 If you want to send the same email to multiple email addresses you can do so by
-setting "recipient" to an array of email addresses instead of one single address.
-Note that it really should be an array and not a comma separated list.
+setting the "recipients" variable instead of the "recipient". The "recipients" variable should 
+be an array of email addresses.
 
 ```json
 {
-    "recipient": [
+    "recipients": [
         "one@example.com",
         "two@example.com, three@example.com",
         "..."
@@ -118,9 +118,8 @@ as well as angle brackets ('<' and '>').
 
 The "to" and "cc" variables are even more flexible. Just like the "from" variable
 they may contain a name and angle brackets. They even
-may contain multiple addresses. These can be added in the same way as for
-the "recipient" variable, i.e. in an array. Yet, comma separated addresses
-are also allowed:
+may contain multiple addresses. These can be added i.e. in an array. 
+Yet, comma separated addresses are also allowed:
 
 Example:
 
@@ -206,7 +205,7 @@ to the address configured under 'Bounce management'.
 The envelope, recipient and dsn variables:
 ```text
 "envelope":         string with a pure email address
-"recipient":        string or array with a pure email address
+"recipient":        string with a pure email address
 "dsn":              object containing the keys "notify", "orcpt" and "ret"
 ```
 
