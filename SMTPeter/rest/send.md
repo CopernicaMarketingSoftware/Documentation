@@ -20,7 +20,11 @@ contain one or more of the following variables:
 * cc
 * text
 * html
-
+* inlinizenecss
+* dsn
+* bouncetracking
+* clicktracking
+* openstracking
 
 ## Sending MIME data
 
@@ -42,7 +46,7 @@ also be included:
 ## Sending non-MIME data
 
 If the "mime" field is not included in the call to the REST API, SMTPeter
-will generate an email based on the settings of all the other variables:
+will generate an email based on the settings of the variables:
 
 * subject
 * from
@@ -52,12 +56,11 @@ will generate an email based on the settings of all the other variables:
 * html
 
 
-### Recipient and envelope
+## recipient or recipients
 
-There are several variables in email data. The most important and mandatory
-variable is the "recipient" variable. This variable controls where the email
-is delivered and should therefore contain an email address. Note that this
-email address should be **pure**. This means it should just contain the email
+This variable controls where the email is delivered and is mandatory in all
+send calls. The variable should be set to an email address and this address
+should be **pure**. Pure means that it should just contain the email
 address without the name of the recipient or angle brackets ('<' and '>')
 (i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
 
@@ -75,52 +78,47 @@ be an array of email addresses.
 }
 ```
 
-Another important variable, although not mandatory, is the "envelope" variable. 
-If delivery fails, the email address given here will receive a delivery
-status notification indicating the failure and the reason why. If this variable
-is not included, delivery notifications will be silently ignored. Note that 
-just like the recipient variable the email address in the "envelope" should be 
-**pure** as well. It is not possible to specify multiple "envelope" addresses.
+## envelope
 
-The recipient and envelope variables control where the email is delivered ('recipient')
-and where delivery failure notifications are sent to ('envelope'). They are like the
-addresses written on the outside of an envelope, they do not influence the way the actual
-letter (email), looks.
+The "envelope" variable determines where delivery status notifications will
+be send to. This variable can contain only one email address and this address
+should be **pure**. Pure means that it should just contain the email
+address without the name of the recipient or angle brackets ('<' and '>')
+(i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
+Note that you can specify in what cases you would like to receive a delivery
+status notification and what that notification should contain via the `dsn`
+variable. You can also let SMTPeter take care of it by setting variable
+"bouncetracking".
 
 
+## mime
 
-### Including the message content
+Via this variable you can add your full MIME encoded message as a string.
+You can also let SMTPeter generate the MIME message for you be setting,
+"subject", "from", "to", "cc", "text", and "html" separately.
 
-Besides the variables "recipient" and "envelope", you have variables that
-determine the way the message looks. These message variables are:
 
-```text
-"subject":          string containing the subject
-"from":             string containing the sender (email address)
-"to":               string or array containing recipients (email address)
-"cc":               string or array containing the cc addresses (email address)
-"text":             text version of the email
-"html":             html version of the email
-```
+## subject
 
-You may have noticed that we specify variables, such as "from" and "to" here. These might seem redundant, because
-we have already specified the "recipient" and "envelope" addresses. However, these variables
-do not control the actual delivery, but only the way the MIME looks. Whereas
-"envelope" and "recipient" can be seen as the outside of an envelope, 
-"from" and "to" can be seen as the address details that are put on the letter
-itself. 
+With this variable you can set the subject of your email via a string if
+you do not provide a MIME message.
+
+
+## from
 
 The "from" variable has to contain a **single** email address, just like the
-variable "envelope". However,
-the notation here is more flexible than the 'recipient' and 'envelope'
-variables. The 'from' variable may contain a name in front of the address
-as well as angle brackets ('<' and '>').
+variable "envelope". However, the notation here is more flexible than in
+"envelope". The "from" variable may contain a name in front of the address
+as well as angle brackets ('<' and '>'). Note that the address set in "from"
+is only used for creating the MIME message and does not affect the destination
+of delivery status notifications.
 
-The "to" and "cc" variables are even more flexible. Just like the "from" variable
-they may contain a name and angle brackets. They even
-may contain multiple addresses. These can be added i.e. in an array. 
-Yet, comma separated addresses are also allowed:
+## to
 
+The "to" variable can contain one ore more email addresses. These addresses may contain
+a name in front of the address as well as angle brackets ('<' and '>').
+You can set multiple email addresses by using an array, a comma separated list,
+or a combination of both.
 Example:
 
 ```json
@@ -133,86 +131,100 @@ Example:
 }
 ```
 
-Again, the "from", "to", and "cc" variables are not used to determine
-the recipients of the email and only to determine the MIME layout. Most users
-will use the same values as the ones stated in the "envelope" and "recipient"
-variables.
+Note that "to" does not affect the "recipient" variable. It is only used to
+create the MIME message.
 
-By sending the above listed variables to SMTPeter, SMTPeter will turn
-them into a full MIME message. If you have already created the MIME message
-yourself, you can pass the MIME message instead of the individual variables.
-You can do this via the MIME variable:
+## cc
 
-```text
-"mime":             string containing the full mime message
-```
-
-## Bounced emails and bounce tracking.
-
-When you correctly send a message to SMTPeter, SMTPeter will
-always receive the message. It then attempts to deliver the message to the receiving
-mail server. If the message cannot be delivered - which can happen for various reasons
-such as a full mailbox or an incorrect email address - what happens next depends on whether
-or not you have bounce tracking enabled.
+The "cc" variable behaves similar to the "to" variable. It can contain one
+or more email addresses with names in front and angle brackets. Multiple
+addresses can be set via an array, a comma separated list, or a combination.
+The "cc" variable does not affect the "recipient" variable
 
 
-### Bounce tracking disabled
+## text
 
-If you send email through SMTPeter using the REST API and the email cannot be delivered, SMTPeter will - by default -
-send a bounce message to the recipient address (if provided). Please note that the API will not indicate this, since
-the HTTP connection is already closed the moment SMTPeter tries to deliver your message.
+With "text" you can set the text version of your email.
 
-In the following example bounce messages from the receiving servers will be sent to "info@example.com".
 
+## html
+
+With "html" you can set the HTML version of the email.
+
+
+## inlinizecss
+
+By setting this variable to true you enable the feature that your stylesheet will
+be inlinize.
+
+The stylesheet (CSS) of your email is normally placed in the header of your HTML document.
+However, some web based email clients strip out these HTML headers, and get rid of the
+complete stylesheet of your email. To avoid this, SMTPeter can automatically inlinize
+all CSS code. If you use this feature, the CSS stylesheet that was originally placed on
+top of your HTML document, is transformed by SMTPeter into many different "style" attributes
+for the individual tags. Even when the header gets removed by a web based email client,
+your email message will still be displayed correctly.
+
+
+## dsn
+
+With the "dsn" variable you can set when and what delivery notification
+messages you want to receive. These notification messages will be send
+to the email address you have specified in the "envelope" variable. Make
+sure that you have specified this, otherwise all notification will fail
+silently. 
+
+The "dsn" variable accepts a JSON object with two fields:
 ```json
 {
-    "envelope":     "info@example.com",
-    "recipient":    "recipient@example.com",
-    "from":         "info@example.com",
-    "to":           "recipient@example.com",
-    "html":         "This is example content.",
-    "dsn":          {
-        "notify":       "FAILURE",
-        "ret":          "HDRS"
-}}
+    "notify": ,         either "NEVER" or one or more of "FAILURE", "SUCCESS" and "DELAY", comma-separated
+    "ret":              Either "FULL" to receive the full message back or "HDRS" to receive just the headers
+}
 ```
+With the "notify" field you can specify when you want to get an email notification.
+You can set it either to "NEVER" or to one or more of "FAILURE", "SUCCESS" and "DELAY"
+and these a comma separated. If you set it to "NEVER" you never will get
+a notification email. If you specify "FAILURE", you well get a notification
+when SMTPeter fails to deliver your email to the receiving mail server.
+This can happen for various reasons such as a full mailbox of the receiver
+or an incorrect email address. When you specify "SUCCES" you well get a
+notification when the email was successfully delivered. When you specify
+"DELAY" you will get a notification when the delivery of your email takes
+longer than expected. This may be caused by an unresponsive email server.
+Most of the time you are only interested in failure notifications. Based on
+these failures you can cleanup your email list.
 
-Note that if you do not wish to receive these bounce messages, simply set the "notify" property to "NEVER".
+With the "ret" field you can specify what message you want to receive in
+your notification. You can specify "FULL" if you want tot receive the full
+message back or "HDRS" if you just want to receive the headers.
 
+Do note that if you send email to a lot of recipients at the same time 
+this could fill up the mail box that you have specified in "envelope" quite
+quickly.
 
-SMTPeter can do the bounce tracking for you, however, you can do it also
-yourself by disabling the bounce tracking functionality. If you want to
-handle the bounces yourself, you have to make sure that you set the
-"envelope" variable in the email data. If you do not set the "envelope" variable
-and you do not use SMTPeters bounce tracking, all bounces will silently be
-ignored.
-
-If you have set the "envelope" variable, you can specify in what cases you would like
-to receive a delivery status notification and what that notification should contain.
-It should be provided as an object with the following keys:
-
-```text
-"notify":           either "NEVER" or one or more of "FAILURE", "SUCCESS" and "DELAY", comma-separated
-"orcpt":            The original recipient (defaults to the recipient address)
-"ret":              Either "FULL" to receive the full message back or "HDRS" to receive just the headers
-```
-
-Note that this variable is separate from the ['bouncetracking' option](#tracking-options). It is
-possible to set 'bouncetracking' to true and have SMTPeter generate a bounce
-report after receiving notification of a bounce. This report will always go
-to the address configured under 'Bounce management'.
-
-The envelope, recipient and dsn variables:
-```text
-"envelope":         string with a pure email address
-"recipient":        string with a pure email address
-"dsn":              object containing the keys "notify", "orcpt" and "ret"
-```
+If you do not want to track failure notifications yourself, you can let SMTPeter
+handle this by setting the variable "bouncetracking" to true. The discussion
+about this setting is given in the next section.
 
 
+## bouncetracking
 
+Bouncetracking is enabled by default. 
+When "bouncetracking" is set to true, SMTPeter will track bounced emails for
+you. An email bounces when SMTPeter fails to deliver the message to the
+receiving mail server. This can happen for various reasons such as a full
+mailbox or an incorrect email address. What SMTPeter does with the bounce
+message depends on your bounce management settings. You can set up your
+bounce management in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
 
-### Bounce tracking enabled
+If you choose to set up a forward address, SMTPeter will forward all bounces after they have been
+processed. You can then process the bounces further in your own application. Do note that if you
+send email to a lot of recipients at the same time this could fill up the mail box of this address
+quite quickly.
+
+It is also possible to forward the bounce message to a 'webhook'. You can specify the
+callback url for the webhook in the SMTPeter dashboard. SMTPeter will send the bounce report to
+the callback url as a POST request. The bounce message will be sent as a JSON document.
 
 When sending an email through SMTPeter using the REST API and with bounce tracking enabled, SMTPeter
 will rewrite the envelope address and DSN properties so that it receives and processes bounces itself.
@@ -227,80 +239,41 @@ Any envelope address - if specified - will simply be ignored.
 }
 ```
 
-What SMTPeter does with the bounce message depends on your bounce management settings. You
-can set up your bounce management in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
+## clicktracking
 
-If you choose to set up a forward address, SMTPeter will forward all bounces after they have been
-processed. You can then process the bounces further in your own application. Do note that if you
-send email to a lot of recipients at the same time this could fill up the mail box of this address
-quite quickly.
+When variable "clicktracking" is set to true all links in an email are
+rewritten so that they are first sent through SMTPeter before being
+redirected to the original URI.
 
-It is also possible to forward the bounce message to a 'webhook'. You can specify the
-callback url for the webhook in the SMTPeter dashboard. SMTPeter will send the bounce report to
-the callback url as a POST request. The bounce message will be sent as a JSON document.
+All these redirections are logged so statistics of all these clicks can
+then be seen. We log the time of the click, as well as the link the user
+clicked on and the position of the link within the email. This means it
+is possible to add the same link to the email in multiple places to see
+which one receives more clicks.
 
+When rewriting the links to detect the clicks, we do our best to make the
+rewritten link look as much as the original. We leave the path intact, and
+only add a small identifier to the end. We also change the domain to one
+that leads to us. This domain is clicks.smtpeter.com by default, which
+likely does not ring a bell for many of your customers.
 
+For this reason we have made it possible to configure the exact domain that
+is used for click tracking. Say you have a domain called 'example.com' you
+could set up 'clicks.example.com' as the click domain to use. The following
+URI could then be rewritten as follows:
 
+http://www.example.com/path-of-the-uri
 
+Becomes:
 
+http://clicks.example.com/path-of-the-uri-QogGwQIAgQQAg
 
-
-
-###<a name="tracking-options"></a> Additional variables for tracking and processing
-
-SMTPeter also offers the following boolean variables (e.g. "variable": true/false),
-which can be included in each POST request. Using these variables you can enable or disable
-certain features. This makes it possible to use different settings for individual emails.
-
-
-```text
-"inlinizecss":        When set to true, all CSS will be inlined inside the HTML
-"clicktracking":      When set to true, links will be redirected and tracked
-"bouncetracking":     When set to true, bounces will be tracked
-"openstracking":      When set to true, opens will be tracked
-```
-
-These variables are optional and enabled by default, omitting a variable means it
-will automatically be set to 'true'.
+[Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking "Set up your click domain").
 
 
+## openstracking
 
-<!--
-
-## Examples
-
-@todo example
-
--->
-
-
-<!--
-Rest documentation in other place 
-## Enabling inline CSS using the REST API
-
-If you use the REST API to send emails through SMTPeter, you either submit 
-plain HTTP POST variables, or JSON documents. If you set the "inlinizecss" 
-parameter in these POST variables or in the JSON input to "true", you tell 
-SMTPeter to enable the inlinizer.
-
-```txt
-POST /send HTTP/1.1
-Content-Type: application/json
-Content-Length: 302
-
-{
-    "envelope": "example@example.org",
-    "recipient": "john@doe.com",
-    "subject": "example subject",
-    "to": "john@doe.com",
-    "from": "example@example.org",
-    "html": "<html><head><style>body { font-weight: 10pt; }</style></head><body>Hello there!</body></html>",
-    "inlinizecss": true
-}
-```
-
-In the above example we've used JSON to format the entire email. You can of course
-also submit already formatted MIME messages via the REST API.
-
-
--->
+This starts by detecting if your sent message
+is opened or not. SMTPeter's open tracking functionality can be used for this.
+If you enable open tracking, SMTPeter tracks all opens of your email and
+shows the statistics in the statistics overview of your SMTPeter dashboard.
