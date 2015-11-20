@@ -101,7 +101,7 @@ Content-Type: application/json
     "envelope": "example@example.org",
     "recipient": "john@doe.com",
     "subject":  "This is the subject",
-    "html": "<html><head><style>body { font-weight: 10pt; }</style></head><body>Hello there!</body></html>",
+    "html": "<html><head><style>body { font-weight: 600; }</style></head><body>Hello there!</body></html>",
     "text": "This is example content text",
     "from" : "example@example.org",
     "to": "john@doe.com",
