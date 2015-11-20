@@ -32,8 +32,6 @@ the different options are.
 However, both API's fully support different delivery options, bounce management and tracking 
 of opens and clicks. 
 
-[Read more about our REST API and SMTP API](copernica-docs:SMTPeter/api-overview)
-
 
 ## What does SMTPeter do?
 
@@ -126,4 +124,3 @@ open, which gives you detailed recipient based statistics.
 
 -->
 
-[Read our API documentation for more information on our APIs](copernica-docs:SMTPeter/api-overview)
