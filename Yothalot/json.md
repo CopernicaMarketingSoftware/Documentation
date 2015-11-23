@@ -42,6 +42,7 @@ The input for a regular job is JSON formatted, and looks like this:
     "stdin": "data that should be sent to stdin",
     "server": "optional hostname of server that is best suited to run the job",
     "filename": "optional filename that is going to be processed",
+    "location": "optional argument to force instead of hint server to run job on",
     "exchange": "optional exchange name to publish results",
     "routingkey": "optional routing key for the results",
 }
@@ -60,16 +61,13 @@ is the working directory for the new process (the directory will be created
 if it does not yet exist) and "stdin" contains the input for the process: 
 the data that is going to be sent to stdin the moment the program starts.
 
-The Yothalot master server automatically assigns the job to one of the 
-nodes in the cluster. This can literally be any node, and you can never
-be sure on which server the job will be started. However, with the 
-optional "server" and "filename" properties you can include hints for the
-Yothalot master on which server the job would run best. If you include 
-the "server" property, and set it to a hostname of one of the nodes in
-the Yothalot cluster, the master node will do its best to assign the job
-to that specific node. By including the "filename" property, the master
-will try to assign the job to a node that holds a local copy of that
-specific file. 
+The Yothalot master server automatically assigns  the job to one of the nodes 
+in the cluster. By setting the "server" property, you can tell which server 
+you want to run the job on. By setting the "filename" property, you can 
+specify it to run the job on a node that holds a local copy of that specific 
+file. These are just hints (the server can assign it to another node). Only
+when you specify "location" to be "force", you can actually enforce this 
+behaviour.
 
 If you want to be notified when the job is finished, you must include
 an exchange and routing key in the JSON, so that the Yothalot process
