@@ -89,7 +89,7 @@ The following classes are offered by the Yothalot framework:
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
 * [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
-* [Class Yothalot::Record](copernica-docs:Yothalot/record "Record")
+* [Class Yothalot::Record](copernica-docs:Yothalot/cpp-record "Record")
 * [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
 * [Class Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar "Scalar"),
