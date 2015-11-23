@@ -1,7 +1,7 @@
 # SMTP API
 
 Sending email via SMTPeter using the SMTP API is very simple. However, before you 
-can send email there are a few things you will need to do. First you will need to 
+can send email there are a few things you need to do. First you need to 
 create an [SMTPeter account](https://www.smtpeter.com/app/ "dashboard"). 
 
 Once you have created your account you have access to your SMTPeter dashboard. Here
@@ -19,8 +19,8 @@ authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_
 
 ## Connecting to SMTPeter
 
-Now you have set up your login credentials it is time to connect to SMTPeter. As 
-we said before, connecting using SMTP is really easy. You can simply set your mail 
+After you have set up your login credentials it is time to connect to SMTPeter. As 
+we have said before, connecting using SMTP is really easy. You can simply set your mail 
 server/application to forward email to SMTPeter's server. SMTPeter can be reached 
 on the "mail.smtpeter.com" domain, using port 25 and 587:
 
@@ -63,14 +63,14 @@ entering the password.
 ### 2: Configure your application to use SMTPeter
 
 Once you have your credentials it is time for step 2: configuring your application. 
-The application we will be using is Mozilla Thunderbird, however any email application 
+The application we use for this example is Mozilla Thunderbird, however any email application 
 that allows you to configure the outgoing SMTP server can be used. 
 
 In Thunderbird we are going to account settings: 
 
 ![Account Settings](copernica-docs:SMTPeter/Images/account_settings.png "Go to account settings")
 
-In your account settings we go to t he Outgoing Server and press Add. A small 
+In your account settings we go to the Outgoing Server and press Add. A small 
 popup window will come up: 
 
 ![Add SMTP server](copernica-docs:SMTPeter/Images/add_smtp_server.png "Add SMTP server")
