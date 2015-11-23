@@ -50,7 +50,7 @@ public:
      *  @param  size        Size of the value
      *  @param  reducer     The result object to which key/value pairs can be mapped
      */
-    vvirtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
+    virtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
 
     /**
      *  Function to reduce a key that comes with a number of values
