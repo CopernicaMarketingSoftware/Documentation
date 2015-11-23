@@ -56,7 +56,7 @@ class. That is all there is to create the executable.
 
 ## Compiling your program
 
-Since you are using C++ to implement your algorithm. you need to compile your program in order to use
+Since you are using C++ to implement your algorithm, you need to compile your program in order to use
 it. You may use your preferred compiler but we are at least sure that it
 works with gcc 4.8.4. You can install gcc using the repository of your Linux
 distribution.
@@ -65,14 +65,14 @@ If you are using gcc you can compile your program by typing on the command
 line in the directory where your program is stored:
 
 ```bash
-g++ -std=c++11 myMapReduce.cpp -lyothalot 
+g++ -std=c++11 myMapReduce.cpp -lyothalot -o myMapReduce
 ```
 
 Since the Yothalot C++ API uses C++ 11 features you need to pass the -std=c++11
 flag. Moreover, the program depends on the Yothalot library. You need to tell this
 to the compiler as well. This is done with -lyothalot.
 
-Running the above command will give you a program a.out. The Yothalot
+Running the above command will give you a program myMapReduce. The Yothalot
 framework will call this program from its nodes. Therefore, the program
 should be available on all the nodes. If you copy your file to the GlusterFS
 cluster, you are sure that all nodes have access to the program.
@@ -81,10 +81,19 @@ You can of course add the optimization flags that you like, however, you
 have to make sure that if you allow the compiler to use certain CPU features
 these features should be supported by all CPUs in your Yothalot cluster.
 
-After you have created your program you can start a Yothalot job by calling
-yothalot with the command line option `--mapreduce` and the name of your
-program and some data (see [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
-for more information).
+## Running your program
+You are now ready to execute this MapReduce job on the Yothalot framework. Make sure
+Yothalot is running on the master node. If you are running locally this means
+that the Yothalot application should be started. 
+
+You can start a MapReduce job by calling Yothalot with the command line option `--mapreduce`, the name of your
+program, and some data. In case of the example [MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce") this yields:
+```bash
+./yothalot --mapreduce /path/to/myMapReduce word1 word2 word3 word1
+```
+After executing correctly, the output file on GlusterFS should contain three different word counts.
+
+See [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job") for more detailed information on running jobs.
 
 
 ## Access and paths

@@ -70,7 +70,7 @@ schedule your job. Writing map/reduce algorithms has never been easier.
 
 If, however, you prefer speed over simplicity, Yothalot also comes with a 
 [C++ API](copernica-docs:Yothalot/cppapi "C++ API"). With this API you
-can write super fast C++ applications that run map/reduce jobs
+can write super fast C++ applications that run map/reduce jobs.
 
 Interested? You can go to the [installation page](copernica-docs:Yothalot/installation "Installation")
 to read how Yothalot can be obtained and installed, you can read 
