@@ -65,7 +65,7 @@ all your mails have a valid DKIM signature.
 
 ### DMARC validation
 
-The latest technology in email delivery is DMARC. DMARC combineds SPF and
+The latest technology in email delivery is DMARC. DMARC combines SPF and
 DKIM to further verify all your outgoing emails. Via the SMTPeter dashboard
 you can check whether you have correctly configured your DMARC, DKIM and
 SPF records, and set up sender domains to fix this if necessary.
