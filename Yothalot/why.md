@@ -8,8 +8,7 @@ in house to create such a service - so we decided just to do that.
 
 You might wonder why we were fed up with Hadoop in the first place.
 At Copernica we try to keep things simple and we don't want
-to make things more complicated than strictly necessary. When we worked
-with Hadoop, we however were constantly annoyed by a couple of things:
+to make things more complicated than strictly necessary. When using Hadoop we were constantly annoyed by a couple of things:
 
 - The special-purpose HDFS file system
 - The Java API (and lousy API's in other languages)

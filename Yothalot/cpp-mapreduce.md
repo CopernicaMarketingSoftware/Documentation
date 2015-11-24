@@ -50,7 +50,7 @@ public:
      *  @param  size        Size of the value
      *  @param  reducer     The result object to which key/value pairs can be mapped
      */
-    vvirtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
+    virtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
 
     /**
      *  Function to reduce a key that comes with a number of values
@@ -89,9 +89,7 @@ each call having some overhead. Therefore, you want to provide `map()` with
 enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to
 map. If you pass file names, map can nicely run in parallel on each file and the
-overhead is not to large. Passing the data can be done in multiple ways
-and is described in the [using a Yothalot::Job](copernica-docs:Yothalot/cpp-job)
-and [starting up a job manually](copernica-docs:Yothalot/cpp-manual) articles.
+overhead is not to large.
 
 The third argument that `map()` receives is used to provide `map()` the
 information what to do with the data once it has been mapped into keys and values.
@@ -139,7 +137,7 @@ public :
         }
     }
     // @todo implement other methods
-}
+};
 ```
 Note that the different calls to `map()` run in isolation. So, you cannot
 use shared state between two mappers. However, the objects share resources
@@ -200,7 +198,7 @@ public:
     }
     
     // @todo implement other methods
-}
+};
 ```
 Above we said that the second argument, values, contains the values that
 belong to a certain key. This is only partly part of the story. If we would have
@@ -249,7 +247,7 @@ public:
         outfile << key.string(0) << " : " << value.string(0) << std::endl; 
     }
     // @todo: implement other methods
-}
+};
 ```
 So there is your mapreduce task. One `mapper()` will start for each string of
 data that you pass to it. These mappers may run in parallel. Yothalot starts a

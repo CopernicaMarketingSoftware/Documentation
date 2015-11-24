@@ -3,7 +3,7 @@
 With the **Yothalot\Job** class you can create, tune and control
 jobs. A job holds the [connection](copernica-docs:Yothalot/php-connection "Connection"),
 the [mapreduce](copernica-docs:Yothalot/php-mapreduce) or
-[racer](copernica-docs:Yothalot/php-race) algorithm, the input data and
+[race](copernica-docs:Yothalot/php-race) algorithm, the input data and
 several performance settings. For an example of creating a complete job you can see our
 [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
 
@@ -45,8 +45,8 @@ class Yothalot\Job
 The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection)
 and an instance of your own object in which your algorithm is implemented.
 The algorithm sbould either be an instance of [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
-for map/reduce jobs, or an instance of [Yothalot\Racer](copernica-docs:Yothalot/php-race)
-for racer jobs. Creating a job looks like:
+for map/reduce jobs, or an instance of [Yothalot\Race](copernica-docs:Yothalot/php-race)
+for race jobs. Creating a job looks like:
 
 ```php
 // create a connection
@@ -65,13 +65,13 @@ $job = new Yothalot\Job($connection, new MyMapReduceAlgorithm());
 The `add()` method is used to add input data to the job. You must add the input
 data before you start the job. All the data that you add to the job will be passed
 to the `map()` method in your own mapreduce object, or to the `process()` method
-if you had assigned a racer algorithm.
+if you had assigned a race algorithm.
 
 There is a one-to-one relation between the number of times that you call the
-`add()` method and the number of mapper or racer processes that are started on the cluster:
-every call to the `add()` method automatically results in a mapper or racer process that
+`add()` method and the number of mapper or race processes that are started on the cluster:
+every call to the `add()` method automatically results in a mapper or race process that
 is started, and the value that you pass to this add() function is used as the
-input data for the `map()` or `process()` method of this mapper or racer process.
+input data for the `map()` or `process()` method of this mapper or race process.
 
 Because of this direct relation, it is best practice to only add things like file names to
 your job, so that the processes will have plenty of stuff to process, and
@@ -202,7 +202,7 @@ modulo so that the mapped data is split up into multiple groups that are
 individually reduced and written, or you can limit the number of processes
 that are started.
 
-Most of the tuning parameters only apply to map/reduce jobs. For racer algorithms,
+Most of the tuning parameters only apply to map/reduce jobs. For race algorithms,
 only the `maxprocesses()` setting is relevant.
 
 ```php

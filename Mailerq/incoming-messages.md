@@ -181,3 +181,14 @@ inbox queue if it came from a valid authenticated connection, or to the
 queue with refused messages if it came from an non-authenticated 
 client.
 
+## Local email addresses
+
+MailerQ only accepts messages through SMTP when the connection has been 
+successfully authorized to send messages. In some cases you need to be 
+able to accept messages to a specific (local) email address without having 
+to authenticate first. 
+
+These can be set in the [MailerQ management console](copernica-docs:Mailerq/management-console).
+All emails sent to specific addresses in the local email address list, will not 
+have to authenticate before sending and will be entered directly into the `rabbitmq-local`-queue. 
+

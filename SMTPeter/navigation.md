@@ -1,7 +1,7 @@
 * [Introduction](copernica-docs:SMTPeter/introduction "Introduction")
-* [API Documentation](copernica-docs:SMTPeter/api-documentation/api-introduction "API Documentation")
-  * [SMTP API](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API")
-  * [REST API](copernica-docs:SMTPeter/api-documentation/rest-api "REST API")
+* [API Overview](copernica-docs:SMTPeter/api-overview "API overview")
+* [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
+* [REST API](copernica-docs:SMTPeter/rest-api "REST API")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
   * [Sender Domains](copernica-docs:SMTPeter/features/sender-domains "Setting up sender domains")
   * [Inlining CSS](copernica-docs:SMTPeter/features/inline-css "Inline CSS Documentation")
@@ -17,4 +17,5 @@
 * [Smart host](copernica-docs:SMTPeter/smart-host "Using SMTPeter as Smart Host")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
 * [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
+* [MIME Headers](copernica-docs:SMTPeter/mime "MIME headers")
 

@@ -36,7 +36,7 @@ $connection = new Yothalot\Connection(array(
    "vhost"        => "/",
    "exchange"     => "",
    "mapreduce"    => "mapreduce",
-   "race"         => "racer",
+   "races"         => "races",
    "jobs"         => "jobs
 )); 
 ```
@@ -50,15 +50,15 @@ The following connection parameters are available:
 * **vhost**         - vhost for the RabbitMQ server (default "/")
 * **exchange**      - exchange name for publishing jobs (default "")
 * **mapreduce**     - routingkey for publishing mapreduce jobs (default "mapreduce")
-* **race**          - routingkey for publishing race jobs (default "racer")
+* **races**          - routingkey for publishing race jobs (default "races")
 * **jobs**          - routingkey for publishing regular jobs (default "jobs")
 
-The keys `"exchange"`, `"mapreduce"`, `"race"`, and `"jobs"` are the most advanced settings, and in
+The keys `"exchange"`, `"mapreduce"`, `"races"`, and `"jobs"` are the most advanced settings, and in
 most Yothalot environments the default values will suffice. A standard Yothalot
 installation will load its mapreduce jobs from the "mapreduce" queue, its
-racer jobs from the "racer" queue, and its regular jobs from the "jobs" queue.
+race jobs from the "races" queue, and its regular jobs from the "jobs" queue.
 Those queues are exactly the queues where the jobs end up if you publish them
-to the empty exchange and set the routing keys to "mapreduce", "race", and
+to the empty exchange and set the routing keys to "mapreduce", "races", and
 "jobs" respectively. Because the default values are good for most use cases, you often see that
 connections are created by passing only two parameters. However, if you
 happen to have a different RabbitMQ  setup, you can set the `"exchange"`
@@ -72,11 +72,8 @@ and routing keys accordingly.
 $connection = new Yothalot\Connection(array(
     "host"      =>  "rabbit1.example.com",
     "vhost"     =>  "yothalot"
-//   ,"routingkey =>  "racer"         // uncommented when a racer task is used.
 ));
 ```
-
-
 
 ## Method flush()
 
