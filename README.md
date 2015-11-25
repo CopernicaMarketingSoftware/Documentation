@@ -43,6 +43,24 @@ Examples:
 etc...
 ```
 
+### Internal links
+
+Documentations pages can have internal links. Such links are created in HTML like
+fashion by adding hash part to the link. 
+
+Examples:
+```
+[Page on MailerQ](copernica-docs:Mailerq/page#segment)
+```
+
+Internal links can reference headers. Identifiers to use inside such links 
+are generated with use of text inside the header. Following steps will be applied
+to create identifier:
+
+1. convert every utf-8 characted into ascii character
+2. lowercase all characters
+3. replace all spaces with '-'
+
 ## Special files
 
 In each directory there should be two files: navigation.md and introduction.md.
