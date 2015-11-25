@@ -10,21 +10,20 @@ https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
 The method is only available as POST call, and your body data should 
 contain one or more of the following variables:
 
-@todo add internal hyperlinks
-* envelope
-* recipient(s)
-* mime
-* subject
-* from
-* to
-* cc
-* text
-* html
-* inlinizenecss
-* dsn
-* bouncetracking
-* clicktracking
-* openstracking
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
+* [inlinizenecss](copernica-docs:SMTPeter/rest/send#inlinizecss)
+* [dsn](copernica-docs:SMTPeter/rest/send#dsn)
+* [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
+* [clicktracking](copernica-docs:SMTPeter/rest/send#clicktracking)
+* [openstracking](copernica-docs:SMTPeter/rest/send#openstracking)
 
 ## Sending MIME data
 
