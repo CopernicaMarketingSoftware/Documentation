@@ -32,14 +32,14 @@ or to send many different fields so that SMTPeter can generate the MIME
 message for you. If you create the MIME message yourself, you need to
 provide the following two fields at least:
 
-* recipient(s)
-* mime
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
 
 The "recipient"/ "recipients" should hold the email address(es) of the actual recipient, and
 "mime" the full MIME encoded message. The following additional fields may 
 also be included:
 
-* envelope
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
 
 
 ## Sending non-MIME data
@@ -47,12 +47,12 @@ also be included:
 If the "mime" field is not included in the call to the REST API, SMTPeter
 will generate an email based on the settings of the variables:
 
-* subject
-* from
-* to
-* cc
-* text
-* html
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
 
 
 ## recipient or recipients
