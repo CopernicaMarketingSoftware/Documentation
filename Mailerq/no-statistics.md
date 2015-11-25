@@ -10,16 +10,16 @@ way too much resources from the servers. Why was that?
 To understand this, you need to realize that keeping and presenting
 statistics is a complicated process, and that the implementation of it totally 
 depends on the volume of emails that is being sent. If you send out a 
-couple of thousands messages per day, it is perfectly doable to have a
+couple of thousand messages per day, it is perfectly doable to have a
 simple implementation that stores all results in a relational database, 
-and have the management console simply query that database to show the 
+and have the management console query that database to show the 
 statistics. This was also the solution used by the early version of MailerQ.
 
 However, inserting data into such a database becomes an issue once you start 
 sending big volumes of mail from a whole cluster of MailerQ instances. Imagine
 that you have 20 MailerQ instances that all try to insert gigabytes of data 
 into the very same database. This single database then becomes the bottleneck 
-of your mail architecture. 
+of the mail architecture. 
 
 How do you solve this? By using a different database per MailerQ instance? Or 
 a different database per CPU? And how do you merge all these data if you want 
@@ -33,22 +33,23 @@ data collecting and data processing.
 
 MailerQ does not insert data into database tables for the send attempts. There
 is a very good reason for this: MailerQ is a scalable application that does
-not want to be limited by the performance of a database. All the results of 
-MailerQ deliveries (successful deliveries, but also the failures and retries) 
-are published to fast RabbitMQ message queues instead, and not to slow databases.
+not want to be limited by the performance of a file system or database. All the 
+results of MailerQ deliveries (successful deliveries, but also the failures and 
+retries) are published to fast RabbitMQ message queues instead, and not to slow
+disks or databases.
 
 But if your send volume is not too high, it would still be nice to store all
 results in database anyway, and use old fashioned SQL queries for getting
 statistical information. To achieve this, you can simple write a couple of
 scripts that retrieve the results from RabbitMQ, and store the things you need
-in a database. You then only need to make a simple website that queries these
+in a database. You then only need to make a simple website that queries this
 database and present the information to the user.
 
 
 ## Statistics for large volumes
 
 However, if you use MailerQ, you probably send out huge volumes of email. It
-makes no sense to insert all the results into database tables, and run live
+then makes no sense to insert all the results into database tables, and run live
 queries on these tables. That would be totally unscalable, and the performance 
 will deteriorate once the volumes get higher. This is exactly the situation 
 that we had to deal with at Copernica (the company behind MailerQ). How did
@@ -81,8 +82,7 @@ jobs that process all the log files for that specific customer. This
 distributed map/reduce job runs on many servers in parallel, and collects
 all the relevant information and stores it in a temporary database. This job
 only takes a couple of seconds to run, fast enough to be ready when the user
-starts navigating through the dashboard, which loads the data from this
-temporary database.
+starts navigating through the dashboard.
 
 If you are interested in creating a similar setup, it is nice to know that
 we have released the special tool that we use for running these distributed 
@@ -92,3 +92,14 @@ in parallel. It can be used for much more than just processing log files,
 because it is a generic tool for processing data.
 
 
+## Future Yothalot - MailerQ integration
+
+Both Yothalot and MailerQ are created by Copernica, and are used for
+processing email results and creating statistics. The solutions are both 
+available for third parties and can be used to send email, and to process 
+big data. 
+
+The software-in-the-middle, the algorithms that write data to log files
+and that create the statistics is at this moment in time not available.
+The reason for this is that these algorithms are completely optimized for 
+our own business needs - and are not (yet?) usable for senders in general.
