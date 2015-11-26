@@ -1,4 +1,4 @@
-# Setting up Thunderbird to send through SMTPeter
+# Setting up Thunderbird
 
 If you use Mozilla Thunderbird as your email client, and you want to send all 
 your outgoing messages through SMTPeter, you can take the following steps
