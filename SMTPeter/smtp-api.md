@@ -1,19 +1,15 @@
 # SMTP API
 
 The SMTPeter service can of course be accessed using the traditional SMTP
-API. SMTP (Simple Mail Transfer Protocol) is the "language" that email programs 
-(like servers and clients) use to transfer mail from one computer to the 
-other. Because SMTPeter comes with such a SMTP API, you can easily integrate 
-SMTPeter in your existing mail infrastructure, and you can even set up 
-traditional email clients like Outlook, Thunderbird or your mobile devices 
-to send all messages through SMTPeter.
+API. SMTP (this stands for Simple Mail Transfer Protocol) is the "language" that email programs 
+use to transfer mail from one computer to the other. Because SMTPeter comes 
+with such a SMTP API, you can easily integrate SMTPeter in your existing 
+mail infrastructure, and you can even set up traditional email clients like 
+Outlook, Thunderbird or your mobile devices to send all messages through SMTPeter.
 
 To use the SMTP API there are a few things you need to do. First you need to 
-create an [SMTPeter account](https://www.smtpeter.com/app/ "dashboard"). 
-
-Once you have created your account you have access to your SMTPeter dashboard. Here
-you need to generate your own [SMTP login](https://www.smtpeter.com/app/#/admin/api/smtp). 
-Make sure to write down your password somewhere safe, it is only shown once. 
+create an SMTP login via the dashboard. Make sure to write down your password 
+somewhere safe, it is only shown once. 
 
 The SMTP login is used to authenticate with SMTPeter and allows you to enable 
 [SMTPeter's features](copernica-docs:SMTPeter/features). You can have multiple logins 
@@ -38,7 +34,7 @@ Encryption: STARTTLS
 ````
 
 Only authenticated and encrypted connections using "STARTTLS" are supported. 
-Non-authenticed email and email that is not send over a secure connection are 
+Non-authenticed email and email that is not sent over a secure connection are 
 rejected. 
 
 ### What is the difference between port 25 and port 587? 
