@@ -4,16 +4,16 @@ Yothalot is an application for running parallel map/reduce algorithms on big
 data clusters. If you have a lot of data and want to process it using either
 native C++ or simple PHP scripts, Yothalot is the tool for you.
 
-Yothalot was designed with simplicity in mind: it uses the [GlusterFS](http://www.gluster.org/)
-distributed file system for storing distributed data, and you can start the cluster
-by simply starting up the Yothalot process on each of the servers in your network. The map/reduce
-jobs that you assign to the Yothalot cluster are automatically split up in smaller tasks
-and are sent to cluster nodes that have local access to the files being
-processed.
+Yothalot was designed with simplicity in mind: you can start the cluster
+by simply starting up the Yothalot process on each of the servers in your 
+network. The map/reduce jobs that you assign to the Yothalot cluster are 
+automatically split up in smaller tasks and are sent to cluster nodes that 
+have local access to the files being processed.
 
 To keep things simple, Yothalot relies heavily on existing and proven open
-source technologies: GlusterFS for the distributed file system, RabbitMQ for
-robust inter process communication, and PHP as the simple script language that
+source technologies: [GlusterFS](http://www.gluster.org/) for the distributed 
+file system, [RabbitMQ](http://www.rabbitmq.com) for robust inter process 
+communication, and [PHP](http://www.php.net) as the simple script language that 
 you can use for [writing the jobs](copernica-docs:Yothalot/phpapi "PHP API")
 (although there is a [C++ API](copernica-docs:Yothalot/cppapi "C++ API") too).
 To see how easy it is to use Yothalot you can have a look at our mapreduce
