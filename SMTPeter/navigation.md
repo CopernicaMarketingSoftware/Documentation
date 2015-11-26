@@ -1,6 +1,6 @@
 * [Introduction](copernica-docs:SMTPeter/introduction "Introduction")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
-* [Security](copernica-docs:SMTPeter/security "Security")
+* [Security](copernica-docs:SMTPeter/secure "Security")
 * [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
 * [REST API](copernica-docs:SMTPeter/rest-api "REST API")
 * [MIME Headers](copernica-docs:SMTPeter/mime "MIME headers")
