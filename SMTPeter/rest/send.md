@@ -168,7 +168,7 @@ your email message will still be displayed correctly.
 ## dsn
 
 With the "dsn" variable you can set when and what delivery notification
-messages you want to receive. These notification messages will be send
+messages you want to receive. These notification messages will be sent
 to the email address you have specified in the "envelope" variable. Make
 sure that you have specified this, otherwise all notification will fail
 silently. 
