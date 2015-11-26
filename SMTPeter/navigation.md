@@ -1,6 +1,5 @@
 * [Introduction](copernica-docs:SMTPeter/introduction "Introduction")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
-* [API Overview](copernica-docs:SMTPeter/api-overview "API overview")
 * [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
 * [REST API](copernica-docs:SMTPeter/rest-api "REST API")
 * [Smart host](copernica-docs:SMTPeter/smart-host "Using SMTPeter as Smart Host")

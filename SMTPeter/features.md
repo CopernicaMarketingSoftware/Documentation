@@ -13,7 +13,7 @@ of the HTML document that holds the style (CSS). This will ruin your
 carefully designed layout.
 
 Example of a deleted style:
-![inlincecss](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
+![Inlinize CSS](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
 
 With SMTPeter you can inline this style into your HTML and thus your layout
 will be preserved if the header is stripped. This transformation is optional, so if you prefer not to use it you
@@ -62,5 +62,7 @@ You can use the SMTP protocol if you have already the infrastructure for this
 or if you are using an e-mail client like Outlook or Thunderbird. You can
 also use our REST API, which is more flexible and efficient.
 
-[Read our SMTP API Documentation](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation")
+[Read our SMTP API Documentation][smtp-api-documentation]
 [Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
+
+[smtp-api-documentation]: copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation"
