@@ -1,7 +1,14 @@
 # SMTP API
 
-Sending email via SMTPeter using the SMTP API is very simple. However, before you 
-can send email there are a few things you need to do. First you need to 
+The SMTPeter service can of course be accessed using the traditional SMTP
+API. SMTP (Simple Mail Transfer Protocol) is the "language" that email programs 
+(like servers and clients) use to transfer mail from one computer to the 
+other. Because SMTPeter comes with such a SMTP API, you can easily integrate 
+SMTPeter in your existing mail infrastructure, and you can even set up 
+traditional email clients like Outlook, Thunderbird or your mobile devices 
+to send all messages through SMTPeter.
+
+To use the SMTP API there are a few things you need to do. First you need to 
 create an [SMTPeter account](https://www.smtpeter.com/app/ "dashboard"). 
 
 Once you have created your account you have access to your SMTPeter dashboard. Here
