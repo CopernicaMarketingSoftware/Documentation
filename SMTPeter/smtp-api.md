@@ -53,7 +53,7 @@ standardized and is even deprecated in favour of the STARTTLS encryption
 (in fact, port 465 has even been reassigned to a new service), communication
 over port 465 is faster and SMTPeter supports its usage.
 
-<!---
+
 ## Examples
 
 To demonstrate how easy connecting to SMTPeter is we will give you three simple
