@@ -79,26 +79,22 @@ The configuration is of course application dependent. Here we give examples
 for:
 
 * [Mozilla Thunderbird](copernica-docs:SMTPeter/thunderbird "Example of setting up Mozilla Thunderbird")
+* [Android email app](copernica-docs:SMTPeter/android "Example of setting up Android email app")
 * [Postfix](copernica-docs:SMTPeter/quick-start/postfix "Example of setting up Postfix")
 
-<!---
-and
-
-[Android](copernica-docs:SMTPeter/android "Example of setting up Android)
---->
 
 ### 3: send email!
 
 Now your emails will use SMTPeter as your default smtp server and will apply any 
 options and keys to your email. The first time you send an email you are prompted 
 to enter your password (if you use Thunderbird) and after that you're all set!
---->
 
-## Passing parameters
+
+## Passing parameters for SMTPeter's options
 
 The SMTP protocol was never meant to pass parameters with each message. If you want to 
-enable or disable specific SMTPeter features for specific messages, you will have to 
-either use MIME header fields or use different SMTP credentials.
+enable or disable specific SMTPeter [features](copernica-docs:SMTPeter/features "SMTPeter Features")
+for specific messages, you will have to either use SMTP credentials or use different MIME header fields.
 
 In the SMTPeter dashboard you can create multiple SMTP logins. You can for example 
 create a login for which the "inlinecss" feature is enabled, and one for which it 
