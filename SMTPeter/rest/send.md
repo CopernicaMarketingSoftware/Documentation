@@ -265,7 +265,7 @@ http://www.example.com/path-of-the-uri
 
 Becomes:
 
-http://clicks.example.com/path-of-the-uri-QogGwQIAgQQAg
+http://clicks.example.com/QogGwQIAgQQAg-path-of-the-uri
 
 [Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking "Set up your click domain").
 
