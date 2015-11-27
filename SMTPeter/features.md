@@ -52,6 +52,15 @@ openings of your emails with our openings statistics. You also can track
 on which links are clicked within the email with our click statistics.
 
 
+## Email Throttling
+
+Sending large volumes of email messages can be tricky: receiving domains often set 
+limits on the amount of messages or connections they accept. SMTPeter automatically
+adjusts the number of simultaneous connections, the number of messages per minute and 
+the number of new connections per minute, according to the speed of the receiving
+mail server.
+
+
 ## Flexibility
 
 There are two different ways to use SMTPeter: either using the SMTP API or REST API.
