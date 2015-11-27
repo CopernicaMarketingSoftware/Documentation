@@ -3,7 +3,7 @@
 This example shows how you can send an email via the REST API of SMTPeter
 using PHP.
 
-The next code example shows an simple class called SMTPeter. The constructor
+The next code example shows a simple class called SMTPeter. The constructor
 of the class takes your access token as its input. Currently only the `post()`
 member function is implemented with which you can send an email instruction
 to SMTPeter.
