@@ -32,8 +32,8 @@ you use. This header should be set to "application/x-www-form-urlencoded"
 if you're submitting traditional form data, or "application/json" if your 
 input data is JSON formatted.
 
-For many programming languages we have created example scripts, so that
-you do not have to program the low-level API calls youself, and can use
+For many programming languages we have [created example scripts](copernica-docs:SMTPeter/examples "Examples"),
+so that you do not have to program the low-level API calls yourself, and can use
 our examples instead.
 
 Sending data in JSON format is slightly more powerful than sending
