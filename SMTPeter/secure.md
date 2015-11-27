@@ -57,7 +57,7 @@ servers. This technology ensures that mails can only be signed by you (if
 you send your mails through SMTPeter), and that they can be verified by
 everyone else (because everyone has access to the public key to check
 the signatures). This makes it impossible for spammers, fishers, or anyone 
-else to sign mails out of your name, simply because noone else has access to 
+else to sign mails out of your name, simply because no one else has access to 
 your private key.
 
 
@@ -70,7 +70,7 @@ copy and paste these records from the SMTPeter dashboard into your own
 DNS server (or the DNS tool of your provider) and you're ready to go. 
 
 Do you already have private and public key pairs, and do you now want 
-SMTPeter to generate new pairs? No problem, you can use the dashboard to
+SMTPeter to use these? No problem, you can use the dashboard to
 upload your existing keys as well.
 
 
@@ -116,7 +116,7 @@ and your colleagues! So, you have to set up all your applications, websites
 and email clients (don't forget the mobile devices) to send email via
 SMTPeter.com.
 
-If you do not want to reconfigure all your applications to send via SMTPeter.com
+If you do not want to reconfigure all your applications to send out mail via SMTPeter.com
 you have two options. Firstly, you can modify the suggested DNS records,
 so that they also include the data of your regular email servers. Secondly,
 you could use SMTPeter.com only for sending mails from a certain _subdomain_.
@@ -153,7 +153,7 @@ If you want to use this setup, you can create a sender domain via the dashboard
 just like for a regular sender domain. When the wizard asks you the name
 of your sender domain you use the subdomain "newsletter.example.com".
 SMTPeter will present you the DNS records that you can
-copy-paste into your DNS configuration so that your newsletters that are
+copy-paste into your DNS configuration tool so that your newsletters that are
 sent out through SMTPeter.com are accepted by the mailbox providers. Your
 newsletters must use a _from_ address of the form "something@newsletter.example.com".
 This of course does not look as cool as a "something@example.com", but
@@ -166,18 +166,18 @@ security.
 
 ## Slow rollout
 
-By setting up a sender domain a mistake is easily made, and you do not
+By setting up a sender domain or by signing your emails a mistake is easily made, and you do not
 want to have all your emails blocked, simply because you made a typo in
 your DNS, or because you forgot to send out a mail via SMTPeter.com.
 Therefore, we recommend to always use a slow rollout, when you start using
-sender domains.
+sender domains or signing your emails.
 
 The wizard that helps you to setup your sender domain will as a default
 suggest that you slowly rollout the sender domain already. This default starts with a
 setting in which all your emails should be accepted by receiving mail servers,
 no matter whether the mails are sent by SMTPeter.com or not. Moreover,
 a receiving mail server should notify SMTPeter that a mail was received
-that was not sent by SMTPeter.com. SMTPeter will keep track on how
+that was not sent by SMTPeter.com or not properly signed. SMTPeter will keep track on how
 often these notifications occur and will provide reports with statistics on a regular
 basis on your dashboard. This gives you the information to check
 if you have made any mistakes or not. If you see a lot of notifications
@@ -191,7 +191,7 @@ reconfigurations, so receiving servers do not simply accept all your emails
 anymore. This will increase the security of your emails, yet, there is also
 a greater impact if you do make a mistake. Fortunately, changing the behavior 
 is not an all or nothing setting, so you can gradually increasing the security
-without increasing the impact of error to much. You can basically configure two things:
+without increasing the impact of an error to much. You can basically configure two things:
 (1) what do you want receivers to do with mails that are not sent out via
 SMTPeter.com (we refer only to SMTPeter for simplicity. If you have manually
 edited the DNS records to incorporate your own servers these should be
@@ -249,10 +249,10 @@ well. A safe deployment cycle resembles something like this:
 Of course SMTPeter guides you on how the adjust your DNS records accordingly.
 
 
-## What if you do not set up a sender domain?
+## What if you do not sign emails or set up a sender domain?
 
-Setting up a sender domain via the SMTPeter.com dashboard is _optional_.
-If you do not set up sender domains, all mails that you send through the
+Signing emails or setting up a sender domain via the SMTPeter.com dashboard is _optional_.
+If you do not sign emails or set up sender domains, all mails that you send through the
 SMTPeter.com gateway are simply forwarded to the internet, using our IP addresses
 and using our domain names - and many emails will probably just end up
 where you want them to be: in the mailboxes of your recipients.
