@@ -78,8 +78,8 @@ entering the password.
 The configuration is of course application dependent. Here we give examples
 for:
 
-* [Mozilla Thunderbird](copernica-docs:SMTPeter/thunderbird "Example of setting up Mozilla Thunderbird)
-* [Postfix](copernica-docs:SMTPeter/quick-start/postfix "Example of setting up Postfix)
+* [Mozilla Thunderbird](copernica-docs:SMTPeter/thunderbird "Example of setting up Mozilla Thunderbird")
+* [Postfix](copernica-docs:SMTPeter/quick-start/postfix "Example of setting up Postfix")
 
 <!---
 and
