@@ -23,7 +23,7 @@ class SMTPeter:
     # post method
     def post(self, method, fields):
         # Create correct url
-        url = "https://www-dev.smtpeter.com/v1/" + method + "?access_token=" + self.token
+        url = "https://www.smtpeter.com/v1/" + method + "?access_token=" + self.token
         
         # Create JSON
         data_json = json.dumps(fields)
