@@ -10,21 +10,20 @@ https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
 The method is only available as POST call, and your body data should 
 contain one or more of the following variables:
 
-@todo add internal hyperlinks
-* envelope
-* recipient(s)
-* mime
-* subject
-* from
-* to
-* cc
-* text
-* html
-* inlinizenecss
-* dsn
-* bouncetracking
-* clicktracking
-* openstracking
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
+* [inlinizenecss](copernica-docs:SMTPeter/rest/send#inlinizecss)
+* [dsn](copernica-docs:SMTPeter/rest/send#dsn)
+* [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
+* [clicktracking](copernica-docs:SMTPeter/rest/send#clicktracking)
+* [openstracking](copernica-docs:SMTPeter/rest/send#openstracking)
 
 ## Sending MIME data
 
@@ -33,14 +32,14 @@ or to send many different fields so that SMTPeter can generate the MIME
 message for you. If you create the MIME message yourself, you need to
 provide the following two fields at least:
 
-* recipient(s)
-* mime
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
 
 The "recipient"/ "recipients" should hold the email address(es) of the actual recipient, and
 "mime" the full MIME encoded message. The following additional fields may 
 also be included:
 
-* envelope
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
 
 
 ## Sending non-MIME data
@@ -48,12 +47,12 @@ also be included:
 If the "mime" field is not included in the call to the REST API, SMTPeter
 will generate an email based on the settings of the variables:
 
-* subject
-* from
-* to
-* cc
-* text
-* html
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
 
 
 ## recipient or recipients
@@ -169,7 +168,7 @@ your email message will still be displayed correctly.
 ## dsn
 
 With the "dsn" variable you can set when and what delivery notification
-messages you want to receive. These notification messages will be send
+messages you want to receive. These notification messages will be sent
 to the email address you have specified in the "envelope" variable. Make
 sure that you have specified this, otherwise all notification will fail
 silently. 
@@ -266,7 +265,7 @@ http://www.example.com/path-of-the-uri
 
 Becomes:
 
-http://clicks.example.com/path-of-the-uri-QogGwQIAgQQAg
+http://clicks.example.com/QogGwQIAgQQAg-path-of-the-uri
 
 [Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking "Set up your click domain").
 

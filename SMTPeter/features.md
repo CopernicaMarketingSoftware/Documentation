@@ -13,7 +13,7 @@ of the HTML document that holds the style (CSS). This will ruin your
 carefully designed layout.
 
 Example of a deleted style:
-![inlincecss](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
+![Inlinize CSS](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
 
 With SMTPeter you can inline this style into your HTML and thus your layout
 will be preserved if the header is stripped. This transformation is optional, so if you prefer not to use it you
@@ -27,7 +27,9 @@ abbreviation of current technologies that enable receiving servers and
 mailbox providers (like Gmail, Yahoo, Hotmail, et cetera) to verify that
 your emails are actually sent by you (and not by a spammer or malicious
 fisher). Not only can you use these techniques, SMTPeter will also guide
-you on how to use them so you do not make any mistakes.
+you on how to use them so you do not make any mistakes. You can read more
+about this on our [Secure email](copernica-docs:SMTPeter/secure "Security")
+page.
 
 
 ## Bounce management
@@ -52,6 +54,21 @@ openings of your emails with our openings statistics. You also can track
 on which links are clicked within the email with our click statistics.
 
 
+## Email Throttling
+
+Sending large volumes of email messages can be tricky: receiving domains often set 
+limits on the amount of messages or connections they accept. SMTPeter knows
+about these limits and throttles automatically your messages for best deliverability.
+
+
+## Simplicity
+
+Although there are a lot of features, SMTPeter is easy to use. There is a
+dashboard that provides all information in an accessible way, there are
+wizards that help you with the setup, and there are two easy two use APIs
+(see below).
+
+
 ## Flexibility
 
 There are two different ways to use SMTPeter: either using the SMTP API or REST API.
@@ -62,5 +79,7 @@ You can use the SMTP protocol if you have already the infrastructure for this
 or if you are using an e-mail client like Outlook or Thunderbird. You can
 also use our REST API, which is more flexible and efficient.
 
-[Read our SMTP API Documentation](copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation")
-[Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
+* [Read our SMTP API Documentation][smtp-api-documentation] 
+* [Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
+
+[smtp-api-documentation]: copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation"

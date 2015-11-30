@@ -1,13 +1,16 @@
 # REST API Overview
 
 SMTPeter provides a powerful REST API. With this REST API you can communicate
-with SMTPeter using the HTTPS protocol.
+with SMTPeter using the HTTPS protocol. The REST API is ofter faster than
+the SMTP protocol (because you don't need the full SMTP handshake between 
+the server and the client), and it is more powerful because you can send
+all sorts of parameters with each calls.
 
 
 ## API Endpoint
 
-To use the REST API you need an [API access token](https://www.smtpeter.com/app/#/admin/api/rest-token "create a rest token"),
-which can be created via the SMTPeter dashboard. This token is used to authenticate 
+To use the REST API you need an API access token, which can be created via the 
+SMTPeter dashboard. This token is used to authenticate 
 your calls to SMTPeter. You must keep this access token private, to prevent that
 other people can send out emails out of your name. With your access token, you can 
 reach the SMTPeter API via the following URL:
@@ -29,8 +32,8 @@ you use. This header should be set to "application/x-www-form-urlencoded"
 if you're submitting traditional form data, or "application/json" if your 
 input data is JSON formatted.
 
-For many programming languages we have created example scripts, so that
-you normally do not have to program the low-level API calls youself, and can use
+For many programming languages we have [created example scripts](copernica-docs:SMTPeter/examples "Examples"),
+so that you do not have to program the low-level API calls yourself, and can use
 our examples instead.
 
 Sending data in JSON format is slightly more powerful than sending
