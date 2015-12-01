@@ -62,14 +62,14 @@ command line arguments. The options are discussed on this page:
 ## Utility classes
 
 The classes mentioned above are sufficient for writing and running mapreduce
-jobs. As an extra service however, the Yothalot API also allows comes with
+jobs. As an extra service however, the Yothalot C++ API also allows comes with
 a couple of extra utility classes.
 
-* [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+* [Class Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
 * [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
 
-The [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path") class can be used
+The [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fulname "Fullname") class can be used
 for converting absolute pathnames into pathnames that are relative to the
 GlusterFS mount point, and the other way around. This is especial useful if
 you use different mount points on different servers.
@@ -85,10 +85,10 @@ framework internally for intermediate result files.
 The following classes are offered by the Yothalot framework:
 * [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
 * [Class Yothalot::Inputs](copernica-docs:Yothalot/cpp-input "Inputs")
+* [Class Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
 * [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
 * [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
-* [Class Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
 * [Class Yothalot::Record](copernica-docs:Yothalot/cpp-record "Record")
 * [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes"),
 * [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")

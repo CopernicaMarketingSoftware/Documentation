@@ -101,12 +101,12 @@ See [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job"
 Yothalot needs to know where files and other resources are located on the GlusterFS file system.
 Therefore, it is important that you provide the absolute paths to these resources.
 To solve help you with this issue we have created a utility class
-[Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+[Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
 that makes switching between relative and absolute paths easy. By using this
 class in your program you can pass either relative or absolute paths to your program and use
 absolute paths if you want to access a file or other resource.
 
-Yet, there is one issue that [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+Yet, there is one issue that [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
 does not solve, the path to your program. Your program is started up to perform
 mapper, reducer, and writer tasks. Therefore Yothalot needs to have access
 to your program. You can achieve this by putting your program on the Yothalot cluster.
