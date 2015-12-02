@@ -37,4 +37,4 @@ Although there are two APIs, both APIs fully support all of SMTPeter's options.
 ## Want to use SMTPeter?
 
 Are you just as excited about SMTPeter as we are and cannot wait to start using it?
-You can read how you can get a license and cost over [here](copernica-docs:SMTPeter/license-and-billing "License & Billing").
+You can read how you can get a license over [here](copernica-docs:SMTPeter/license-and-billing "License & Billing").
