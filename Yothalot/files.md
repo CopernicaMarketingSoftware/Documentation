@@ -42,7 +42,7 @@ files yourself. In such a case you may want to have full control over path
 names and may want to switch between absolute and relative paths.  
 To help you in situations like this we have created
 [Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path") for PHP users
-and [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Yothalot::Path") for
+and [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Yothalot::Fullname") for
 C++ users. With these helper classes switching between absolute and relative
 paths becomes a trivial task.
 

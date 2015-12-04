@@ -3,10 +3,9 @@
 The object `magento` represents an entire Magento installation. It will grant 
 access to certain Magento resources. 
 
-General collection like products, categories, webstores are available from
-this object. All of them can be used to fetch very precise instances. It can
-be done by supplying an ID of specific instance inside `[]` operator when 
-accessing collection. 
+More specific collections, like product, category and webstore collections  are available from
+this object. These can then be used to fetch more precise instances. This can
+be done by referring to the ID of a specific instance within brackets `[]`.
 
 ```
 {assign $magento.categories[42] to $cookiesCategory}
@@ -22,8 +21,8 @@ accessing collection.
 
 ## Examples
 
-To list a couple of new products inside a newsletter (let's say product number 455,
-444 and 466) we can use following code:
+To show a couple of new products inside a newsletter (let's say product number 455,
+444 and 466) we can use the following code:
 
 ```
 {assign $magento.products[455] to $newPants}
@@ -39,7 +38,7 @@ Our awesome offer!
 {$newBelt.name}
 ```
 
-Will output:
+This will output:
 
 ``` 
 Our awesome offer!

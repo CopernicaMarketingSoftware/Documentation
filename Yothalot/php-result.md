@@ -1,4 +1,4 @@
-# Information about the job
+# Information about the mapreduce job
 
 When you run your mapreduce job you are obviously mostly interested in the
 result of the job. However, mapreduce jobs may take a long time and it may 

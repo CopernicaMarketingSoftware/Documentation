@@ -1,4 +1,4 @@
-Exporting native functions
+# Exporting native functions
 
 A PHP extension can of course only be useful if you can make functions and/or 
 classes that can be called from PHP scripts. For functions this is 

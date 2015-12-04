@@ -1,16 +1,15 @@
 # ProductOption object
 
-Product option is one of custom options that can be set inside product. Custom
-option enables seller to predefine an option that buyer can fill up to customize
-his product. There might be more than one custom option predefined on one product.
+The _product option_  is one of the custom options that can be set inside a product. A 
+webshop owner can predefine product options at products, later to be selected by the customer
+to customize the product he wants to purchase. 
 
-Custom options can be marked as required. That means customer will have to fill 
-that option before he can add the product into his basket.
+Custom options can be marked as required. The customer is then required to choose an option before he can add the product to his basket. Think of the size and/or color of a t-shirt.
 
 ## Types
 
-Each custom option has a type of input that it can hold. Sellers can choose from
-following list when defining custom option:
+Each custom option has a type of input that it can hold. Sellers can choose from the 
+following list when defining custom options:
 
 | Type            | Identifier    | Description                                      |
 |-----------------|---------------|--------------------------------------------------|
@@ -25,7 +24,7 @@ following list when defining custom option:
 | Date & Time     | 'date_time'   | Date and time input field.                       |
 | Time            | 'time'        | Time only field.                                 |
 
-Inside smarty code it's possible to detect option type by referencing `type` 
+Whitin email personalizatoin it's possible to detect the option type by referencing to the `type` 
 property. 
 
 ## Personalization properties

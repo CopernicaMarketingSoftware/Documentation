@@ -81,7 +81,9 @@ The following table lists all the methods that are supported by the API.
 
 | Method | Description                                                                                                                                        |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/template/{ID}/send](copernica-docs:ResponsiveEmail/api/post-template-send) | Send a template.                                                                    |
 | [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) | Store a new template.                                                                    |
+| [/v1/send](copernica-docs:ResponsiveEmail/api/post-send) | Send an email.                                                                    |
 | [/v1/html](copernica-docs:ResponsiveEmail/api/post-html) | Convert JSON input into a responsive HTML email, without creating a template resource            |
 | [/v1/webversion](copernica-docs:ResponsiveEmail/api/post-webversion) | Convert JSON input into a responsive website, without creating a template resource   |
 | [/v1/mime](copernica-docs:ResponsiveEmail/api/post-mime) | Convert JSON input into MIME with externally hosted images, without creating a template resource |

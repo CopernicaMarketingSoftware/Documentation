@@ -1,20 +1,29 @@
 # License and billing information
 
-## Pay-as-you-go
+This page describes how you can get a license for SMTPeter, what the price
+structure is and how the billing works.
 
-SMTPeter's standard payment system is a so called 'pay-as-you-go' system:
-you can top up your balance and the costs of any emails will be taken off 
-that balance. You can send email as long as your balance is high enough to 
+## License
+
+You need to have a license before you can use SMTPeter. You can create a license
+by logging in on [SMTPeter](https://www.smtpeter.com/app/) with your with
+your Copernica account credentials. If you do not have a Copernica account
+yet, you can create one over [here](https://www.smtpeter.com/app/#/menu/register).
+
+
+## Payment structure
+
+You pay a small amount per month to use SMTPeter. This amount includes a 
+certain amount of emails that can be sent for free (see our [pricing page](https://www.smtpeter.com/pricing)
+for the exact details). If you want to send more emails, you simply can
+increase your payment. You can send emails as long as your balance is high enough to 
 support the amount of emails you want to send (e.g. if your balance allows for
-100.000 emails and you want to send 100.001 emails, you will have to top up
-your balance). 
-
-The first 10.000 emails every month are free and your email credits will never expire. 
-That way you never pay more than you have to. 
-
-The price of emails is variable and discounts are automatically calculated into
-the price of your emails. If you have sent 100.000 emails, the 100.001th email will 
-automatically be caluclated with the cheaper price per email. 
+100.000 emails and you want to send 100.001 emails, you will have to increase
+your balance). You only pay for the amount of emails that you have sent in
+a month. So, if you happen to have sent less emails in a month, your credit will be
+passed to the next month. The price per sent email decreases with the amount
+of sent emails. This discount will be calculated automatically. For the exact
+prices you can visit our [pricing page](https://www.smtpeter.com/pricing)
 
 ## Billing
 
@@ -31,10 +40,3 @@ The post payment method means you will be invoiced
 for the amount of emails you have sent at the end of each month. Of course the same
 discounts as in the pay-as-you go payment system apply for the post payment system. 
 This invoice has to be paid within two weeks of the invoice date. 
-
-## License
-
-Whilst SMTPeter has a pay-as-you-go payment system it does work 
-with a license. This license means you have complied with our
-[terms and conditions](copernica-docs:SMTPeter/terms-and-conditions)
-and does not involve any costs. 

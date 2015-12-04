@@ -1,10 +1,11 @@
 # Magento guests list
 
-Guest is a user that placed order but didn't want to register and opted for 
-anonymous check out. Anonymous check out has to be enabled in Magento configuration. 
+A guest is a user that placed order but didn't register and opted for 
+anonymous check out. Note that anonymous check out has to be 
+enabled inside the Magento configuration. 
 
-One guest user is created on each anonymous check out, thus it may happen that 
-there will be multiple guest users referring to one real person.
+Magento creates a new guest user for each anonymous checkout, so it is possible 
+that different guest users point to the same real world person.
 
 ## Personalization variables
 
@@ -16,7 +17,7 @@ there will be multiple guest users referring to one real person.
 
 ## Limiting guests list
 
-It's possible to limit guests list to a shorten, more precise one, by applying
+It's possible to limit _guests list_ to a shorter, more precise one, by applying
 filter options to it. It's possible to apply following filter options:
 
 *  **First name**

@@ -13,7 +13,7 @@ has not been modified during transport.
 
 ## Adding a new DKIM key
 
-To add a new DKIM key press the `ADD DKIM` button on the top right 
+To add a new DKIM key press the 'ADD DKIM' button on the top right 
 of the page. Here you can create a new DKIM key or, if you have one, 
 add an existing private key. You can create multiple DKIM keys, and
 set them to only be used for specific emails. 
@@ -31,7 +31,7 @@ algorithm:      SHA256 (default) or SHA1
 You can choose whether SMTPeter will sign all emails from your domain with 
 your DKIM key, or create a filter based on sender information.
 
-To set up a filter, select the `only use this DKIM key for emails with specific sender information` 
+To set up a filter, select the 'only use this DKIM key for emails with specific sender information'
 option when creating DKIM keys. You can then create a condition based on the from name, a filename 
 pattern, or a regular expression. 
 

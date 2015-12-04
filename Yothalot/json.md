@@ -1,10 +1,16 @@
 # JSON specification
 
+This document provides some background on how Yothalot passes its information
+around in the background. You do not need to know this information to use Yothalot effectively.
+It is probably always better to use the [PHP](copernica-docs:Yothalot/phpapi "PHP API")
+or [C++](copernica-docs:Yothalot/cppapi "C++ API") APIs instead. Yet,
+if you are curious you can read this document.
+
 The Yothalot master server loads its instructions from three different
 queues: a queue for the mapreduce jobs, a queue for the race jobs and
 a queue for regular jobs. The PHP API and the C++ API publish, under
 the hood, messages to these queues. However, if you like, you can also
-post messages to these queues directly.
+post messages to these queues directly (you can but you should not).
 
 The messages that you can post to the three queues should be JSON 
 formatted, and contain all information that is needed to start up
@@ -36,6 +42,7 @@ The input for a regular job is JSON formatted, and looks like this:
     "stdin": "data that should be sent to stdin",
     "server": "optional hostname of server that is best suited to run the job",
     "filename": "optional filename that is going to be processed",
+    "location": "optional argument to force instead of hint server to run job on",
     "exchange": "optional exchange name to publish results",
     "routingkey": "optional routing key for the results",
 }
@@ -48,45 +55,40 @@ you can never know on which server the job is going to be started). The
 pathname can either be an absolute pathname (like /usr/bin/ls), or the 
 name of a program that can be found in the ```$PATH``` of the servers.
 
-All other parameters are options: "arguments" holds an array with optional
+All other parameters are optional: "arguments" holds an array with optional
 command line arguments that should be passed to the executable, "directory"
-is the working directory for the new process and "stdin" contains the input 
-for the process: the data that is going to be sent to stdin
-the moment the program starts.
+is the working directory for the new process (the directory will be created
+if it does not yet exist) and "stdin" contains the input for the process: 
+the data that is going to be sent to stdin the moment the program starts.
 
-The Yothalot master server automatically assigns the job to one of the 
-nodes in the cluster. This can literally be any node, and you can never
-be sure on which server the job will be started. However, with the 
-optional "server" and "filename" properties you can include hints for the
-Yothalot master on which server the job would run best. If you include 
-the "server" property, and set it to a hostname of one of the nodes in
-the Yothalot cluster, the master node will do its best to assign the job
-to that specific node. By including the "filename" property, the master
-will try to assign the job to a node that holds a local copy of that
-specific file. 
+The Yothalot master server automatically assigns  the job to one of the nodes 
+in the cluster. By setting the "server" property, you can tell which server 
+you want to run the job on. By setting the "filename" property, you can 
+specify it to run the job on a node that holds a local copy of that specific 
+file. These are just hints (the server can assign it to another node). Only
+when you specify "location" to be "force", you can actually enforce this 
+behaviour.
 
 If you want to be notified when the job is finished, you must include
 an exchange and routing key in the JSON, so that the Yothalot process
 knows where to publish the results to. If you leave these properties out
 of the JSON, no job results are published back. You can for example use
-this feature by first creating a temporary queue, then publish the
+this feature to create a temporary queue, then publish the
 input JSON holding the name of this temporary queue as "routingkey"
 property, and then waiting for a message to be appear in this temporary
 queue.
 
-All other properties that you add to the input JSON are ignored by the
-Yothalot cluster - but they are included in the result JSON that is 
-published to the specified result exchange and routing key. This means
-that you can use this to add your own properties to be able to identify
-a result.
-
 The results that are published back by the Yothalot master node, have
-almost the same format and same properties as the input object - but 
-with some additional properties added, and with some properties replaced
-and removed:
+the same format and same properties as the input object - but with some 
+additional properties added that hold information about how the job
+ran:
 
 ```json
 {
+    "executable":  "path/to/executable",
+    "arguments": [ "extra", "command", "line", "arguments" ],
+    "directory": "the working directory",
+    "stdin": "the input that was sent to stdin",
     "stdout": "output that was sent to stdout",
     "stderr": "output that was sent to stderr",
     "server": "hostname of the server on which the job ran",
@@ -107,10 +109,10 @@ code 0, a non-zero exit code often is an indication of some kind of
 error.
 
 The amount of data that can be included in the JSON is limited. If the
-job sends out too much data to stdout and/or stderr, the output is going
-to be truncated so that the output JSON does not become too big. If this
-is the case, you can find an extra property "truncated" set to true in
-the output JSON.
+job sends out too much data to stdout and/or stderr (more than one megabyte), 
+the output is going to be truncated so that the JSON does not become too 
+big. If this is the case, you can find an extra property "truncated" set 
+to true in the output JSON.
 
 You can consume these messages from the result queue and process the 
 results. Note that besides the properties mentioned above, your custom
@@ -120,13 +122,13 @@ properties will also be included in the output JSON.
 ## Race jobs
 
 Besides regular jobs, you can also publish so called "race" jobs to
-the special race queue. A race job is a special kind of job that we (as
-in: Copernica) use for running multiple processes in parallel to find
-a certain record in a group of log files. When you send a race job to
-the cluster, the master node will start up multiple processes in parallel,
-and the first process that creates output on stdout or stderr, or the first
-processes that does not end normally "wins" the race, and the output
-and result status of that job is published to a result queue.
+the special race queue. A race job is a special kind of job that runs
+many processes in parallel, until one of these processes returns a 
+result. We at Copernica use this to locate information in log files:
+when we want to locate a record in a group of log files, we start up a
+race of many processes that all process a part of all the log files, the
+first one that locates the right record, reports the result and wins the
+race.
 
 The instruction of a race job is also JSON formatted, and looks 
 like this:
@@ -136,6 +138,7 @@ like this:
     "executable": "path/to/executable",
     "arguments": [ "extra","command","line","arguments"],
     "directory": "working directory for race processes",
+    "stdin": "data that should be sent to stdin",
     "input": [ {
         "data": "input data for process 1",
         "server": "server to run job 1 on",
@@ -151,39 +154,54 @@ like this:
 ```
 
 The "input" property is an array that holds objects with properties "data",
-"server", and "filename". For every object in the array a race process is
+"server", and "filename". For every object in the array a single subprocess is
 started. The data in the "data" property is passed to the process via stdin.
 The "server" and "filename" properties are optional for each input and
 provide a hint to Yothalot on which server the process ideally should start.
 
-If the input data is too big, you can also choose to store your input
-data in files in a temporary directory on the Yothalot cluster. In that
-case you should not include an input _array_ in the input JSON, but an
-"input" string holding a path to the directory with the input files:
+The name of the executable and the property "input" are both required. If
+one of them is missing, it is not possible to start the race. All other 
+properties are optional. 
+
+A special word of warning about the optional "stdin" property. If you include 
+this property in the input, each subprocess is going to be started with this 
+data on stdin, immediately followed by the subjob specific input. The above 
+JSON holds therefore the data for a race between two subjobs, and these jobs 
+will be started with the following input:
+
+* "data that should be sent to stdininput data for process 1"
+* "data that should be sent to stdininput data for process 2"
+
+It is up to you to deal with this, for example by including a newline after
+the data in "stdin", or by not specifying a "stdin" property at all.
+
+If your input data is too big to fit reasonably in a JSON object, you can 
+store the input data in one or more temporary files on GlusterFS, and include 
+the path to this temporary directory in the JSON instead. If the "input" 
+property does not hold an array but a string, the Yothalot server will treat 
+it as a pathname relative to the GlusterFS mount point to a directory 
+holding the input files.
 
 ```json
 {
     "executable": "path/to/executable",
     "arguments": [ "extra","command","line","arguments"],
     "directory": "working directory for the race processes",
+    "stdin": "data that should be sent to stdin",
     "input": "relative/path/to/directory",
     "exchange": "exchange for publishing result",
     "routingkey": "routingkey for publishing result"
 }
 ```
 
-The path to the input directory should be relative to the GlusterFS
-mount point, and the data from _all_ the files in the input directory 
-are going to be used as input for the race job.
-
 The files in this directory should be regular Yothalot files (you can
-create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") or the
-C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output"). Every record in these files
-will result in one racer process to be started. In other words: if you
-store 10 files in the temporary directory, and each of these ten files
-hold 100 records, a total of 1000 individual processes are started by
-the Yothalot framework, each to process one record from the input 
-files (unless of course one of the jobs that is started succeeds 
+create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") 
+or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output"). 
+Every record in these files will result in one race subprocess to be started. 
+In other words: if you store 10 files in the temporary directory, and each 
+of these ten files hold 100 records, a total of 1000 individual processes
+are started by the Yothalot framework, each to process one record from 
+the input files (unless of course one of the jobs that is started succeeds 
 before the later jobs can run, then the race is finished before all
 jobs were started). When the race is over, the Yothalot framework 
 automatically removes the temporary directory with the input files.
@@ -195,6 +213,9 @@ this:
 ```json
 {
     "winner": {
+        "executable":  "path/to/executable",
+        "arguments": [ "extra", "command", "line", "arguments" ],
+        "directory": "the working directory",
         "stdin": "data that was sent to stdin",
         "stdout": "output that was sent to stdout",
         "stderr": "output that was sent to stderr",
@@ -203,7 +224,8 @@ this:
         "signal": 0,
         "exit": 0,
         "started": 1446557439.0,
-        "finished": 1446557479.0
+        "finished": 1446557479.0,
+        "runtime": 40.0
     },
     "processes": 123,
     "started": 1446557439.0,
@@ -525,3 +547,5 @@ are stored before the fields of the value in the vector. The identifier of the r
 is used to specify the number of fields that the key has. If you are publishing
 a JSON with a mapreduce job you have to follow this format and you have to
 make sure that the records are ordered with respect to the keys.
+
+

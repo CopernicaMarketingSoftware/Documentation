@@ -1,8 +1,8 @@
 # Guest object
 
 A guest is a Magento user that decided to finalize his basket without registration.
-Any Magento user can do that by using anonymous checkout option. Prior to such
-checkout, 'Allow guest checkouts' option has to be set inside Magento.
+Any Magento user can do that by using the anonymous checkout option. To enable anonymous
+checkouts, the 'Allow guest checkouts' option has to be set inside Magento.
 
 ## Personalization properties
 

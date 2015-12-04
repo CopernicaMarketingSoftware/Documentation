@@ -82,12 +82,13 @@ rabbitmq-dsn:           <Name of your delivery status notification queue>
 rabbitmq-inbox:         <Name of your inbox queue>
 rabbitmq-refused:       <Name of your refused queue>
 rabbitmq-reports:       <Name of your reports queue>
+rabbitmq-local          <Name of your local queue>
 ```
 
 
 The `rabbitmq-exchange` variable holds the name of the exchange in RabbitMQ 
 that MailerQ uses to publish all messages to. If not explicitly set, MailerQ 
-uses an exchange with the name "mailerq". You do not have to craete the 
+uses an exchange with the name "mailerq". You do not have to create the 
 exchange yourself. If the exchange does not exist MailerQ at startup, RabbitMQ 
 automatically creates the exchange.
 
@@ -144,6 +145,15 @@ A very common setup is to assign the same queue to the `rabbitmq-outbox` and
 the `rabbitmq-inbox` variables. By doing this, you ensure that all messages
 that are sent to the SMTP port of MailerQ are automatically forwarded to
 the actual recipient.
+
+Another queue that deals with incoming messages is the `rabbitmq-local` queue. Normally when you send 
+an email to MailerQ using SMTP you will first have to authenticate before MailerQ 
+accepts the message. However, sometimes you will want emails sent to certain (local) 
+email addresses to be accepted without authentication and placed into the `rabbitmq-local`-queue. These can be set in the 
+[MailerQ management console](copernica-docs:Mailerq/management-console).
+
+When MailerQ recognizes these messages it will move them to the `rabbitmq-local` queue, 
+which you can specify in the configuration file. 
 
 [Read more about incoming messages](copernica-docs:Mailerq/incoming-messages)
 

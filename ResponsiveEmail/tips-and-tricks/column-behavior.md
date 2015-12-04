@@ -41,8 +41,6 @@ Often you'll want the image to show first, to attract the attention of the reade
 to the article. Because of the way responsive emails work, you will have to add 
 an image block to the left column in order to show it first on mobile clients. 
 
-![Column Behavior](Resources/Images/responsive-email-columns.png)
-
 *Column placement on desktop clients (left) and mobile devices (right)*
 
 ## Keeping text below images in the mobile version of your email

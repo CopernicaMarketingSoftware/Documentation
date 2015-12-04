@@ -5,7 +5,7 @@ be able to target mailings based on the data of your Magento webshop.
 
 ## Download extension
 
-The extension can be installed for free from the [Magento Connect](http://www.magentocommerce.com/magento-connect/copernica.html) website.
+The extension can be installed for free from the [Magento Connect][connect-link] website.
 
 ## Installation guide
 
@@ -18,15 +18,37 @@ to remove this extension first before proceeding with installing the new one.
 
 ### Now the actual installation
 
-*   Go to [Magento Connect](http://www.magentocommerce.com/magento-connect/copernica.html) to get the 
-    link to the extension. 
+Extension can be installed via Magento Connect platform and via [modman][modman-link]. Both installation methods should yield same results.
 
-*   Copy this link to your clipboard. 
+#### Magento Connect installation
+
+*   Go to [Magento Connect][connect-link] to get the link to the extension. 
+
+*   Copy this link to your clipboaard. 
+
 *   Go to your Magento Admin Panel and paste the link into Magento Connect Manager 
-    (System -> Magento Connect -> Magento Connect Manager)    
+    (System -> Magento Connect -> Magento Connect Manager)
 
 Magento Connect Mananager will now start installing the extension. Once the installation 
-is complete, a new menu item named 'Copernica' will appear in the Magento Admin navigation. 
+is complete, a new menu item named 'Copernica' will appeara in the Magento Admin navigation.
+
+#### Modman installation
+
+To install extension via modman, ssh access to server will be required. 
+
+Navigate to magento directory and execute following lines:
+
+```
+git clone https://github.com/CopernicaMarketingSoftware/MAGENTO.git ~/Copernica_Integration
+
+modman init
+
+modman link ~/Copernica_Integration
+
+modman deploy Copernica_Integration
+```
+
+#### Initial configuration
 
 If you don't see this menu item, you might try to logout and login again. 
 
@@ -71,3 +93,6 @@ extension was developed with Publisher software in mind. That means it will use 
 The extensions are not compatible with each other and there is no way to upgrade 
 from old one to new one. It's highly advised to remove the old extension prior 
 to the installation of the newest version.
+
+[modman-link]: https://github.com/colinmollenhour/modman
+[connect-link]: http://www.magentocommerce.com/magento-connect/copernica.html
