@@ -273,6 +273,7 @@ parallel.
         "filename": "filename for job 2"
     } ],
     "modulo": 1,
+    "local": true,
     "processes": 100,
     "exchange": "exchange for publishing result",
     "routingkey": "routingkey for publishing result"
@@ -342,6 +343,7 @@ is therefore also automatically removed when the job is finished:
     },
     "input": "path/to/input/directory",
     "modulo": 1,
+    "local": true,
     "processes": 100,
     "exchange": "exchange for publishing result",
     "routingkey": "routingkey for publishing result"
@@ -356,6 +358,17 @@ The global "processes" setting holds
 the total max number of processes that can run in parallel (you can
 thus set a maximum for the max number of parallel mappers/reducers/finalizers,
 to run, but also a maximum for the total number of parallel processes).
+
+During the map/reduce algorithm, intermediate results are first written to
+local disks, and only in the final phase when all results are merged and
+reduced, the temporary results are copied to the shared distributed file
+system. If you want to store intermediate results also on GlusterFS, you
+can set the property "local" to false. This however will dramatically increase
+the amount of data that is sent over the network (because GlusterFS is normally
+configured to replicate each file on multiple servers). However, by setting
+"local" to false, less processes have to be started because all intermediate
+results are automatically accessible for all nodes. This sometimes improves
+the performance.
 
 Just like with the other job types, the "exchange" and "routingkey"
 properties can be used to set the name of a result queue to which the
