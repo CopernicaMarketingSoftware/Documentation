@@ -56,7 +56,7 @@ reducer steps, no matter how big that input is.
 
 You can limit this input. You can for example specify that a writer is only
 allowed to merge at most 100 intermediate input files, or that it may only
-process 1GB of intermediate date. If more files or more data is available, the
+process 1GB of intermediate data. If more files or more data is available, the
 Yothalot framework will first run an intermediate algorithm to merge (and optionally
 reduce) input data, until the number of intermediate files is small enough to
 start up the final writer jobs. 
@@ -127,3 +127,11 @@ also make calls to your `reduce()` method. If you want to restrict the number of
 processes that can make calls to the user-supplied `reduce()` function at the 
 same time (for example because you use a database connection inside the 
 `reduce()` method), you better use the *maxprocesses* setting.
+
+## Write intermediate files directly to GlusterFS
+
+By default all the intermediate files are written to the local filesystem and are
+only written to GlusterFS during the reduce phase. This is mostly to avoid huge
+loads on GlusterFS. In case you only have very little mappers or multiple mappers
+are unlikely to run on the same server you can turn this feature off. You turn
+this feature off by setting **local** to **false**.
