@@ -161,8 +161,13 @@ $ sudo dpkg -i path/to/yothalot-version.deb
 
 This installs the Yothalot server and the yothalot library that you need for
 writing mapreduce jobs. However, the Yothalot daemon application only works if
-the "JSON-C" library is available on your system too.
+the "JSON-C" and curl libraries are available on your system too.
 
+### Installation of libcurl
+
+The curl library can generally be found in your operating systems repository. If
+it can't be found in there head over to [the libcurl website](http://curl.haxx.se/download.html)
+to download according packages for the latest version.
 
 ### Installation of json-c
 
