@@ -161,38 +161,13 @@ $ sudo dpkg -i path/to/yothalot-version.deb
 
 This installs the Yothalot server and the yothalot library that you need for
 writing mapreduce jobs. However, the Yothalot daemon application only works if
-the "JSON-C" and curl libraries are available on your system too.
+the curl library is available on your system too.
 
 ### Installation of libcurl
 
 The curl library can generally be found in your operating systems repository. If
 it can't be found in there head over to [the libcurl website](http://curl.haxx.se/download.html)
 to download packages for the latest version.
-
-### Installation of json-c
-
-Yothalot uses JSON objects to pass information over the RabbitMQ queues. For
-construction and parsing JSON objects Yothalot relies on the [JSON-C](https://github.com/json-c/json-c/wiki)
-library. You need to have this library installed on all the systems where Yothalot
-is installed. In particular Yothalot uses version 0.12 of this library. Older
-versions do not work. It is best to get the correct version from [GitHub](https://github.com/json-c/json-c/tree/json-c-0.12).
-
-You can use Git to download the source code using the following command:
-
-```bash
-git clone --branch json-c-0.12 https://github.com/json-c/json-c
-```
-
-The above command downloads the source code of the JSON-C library. Now
-you have to compile and install the JSON-C library on your system:
-
-```bash
-cd json-c
-./configure
-make
-sudo make install
-```
-
 
 ### Installation of LZ4 (optional)
 
