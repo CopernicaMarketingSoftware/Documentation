@@ -14,8 +14,7 @@ to SMTPeter.
  *  SMTPeter.php
  * 
  *  Class to communicate with the SMTPeter service, and send emails to it
- * 
- *  @copyright 2015 Copernica BV
+ *
  */
 
 /**
