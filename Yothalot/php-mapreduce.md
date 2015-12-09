@@ -98,7 +98,7 @@ The method receives two parameters. The first parameter contains the input data
 that you have to map. The content of this parameter is what you pass to the
 `Yothalot\Job` `add()` method, which is discussed in [Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 The second argument provides `map()` the information what to do with the mapped results.
-This is a `Yothalot\Reducer` object, which is a very simple
+This is a [Yothalot\Reducer](copernica-docs:Yothalot/php-reducer "Yothalot\Reducer") object, which is a very simple
 object with only one method: `emit()`. With this `emit()` method you can 
 emit key/value pairs to the reducer. The `emit()` method takes two parameters: a
 key and a value. You can only use scalars or arrays of scalars for keys
@@ -135,10 +135,10 @@ values are reduced into a single new value. This is done by the `reduce()`
 method. The `reduce()` method takes three parameters. The first two arguments contain
 the key for which values are going to be reduced, and a traversable set of
 values that are linked to that key. This set of values should be reduced
-into one value. The third argument is a `Yothalot\Writer` object with
+into one value. The third argument is a [Yothalot\Writer](copernica-docs:Yothalot/php-writer "Yothalot\Writer") object with
 which you can emit the reduced value. The `emit()` method in the `Yothalot\Writer`
 class takes one parameter: the reduced value. You can only use scalars
-for these values, or an array containing scalars. An example of a reducer
+or an array containing scalars for these values. An example of a reducer
 step looks like:
 
 ```php

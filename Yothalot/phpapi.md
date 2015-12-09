@@ -79,4 +79,6 @@ used internally by the Yothalot framework for intermediate result files.
 * [Class Yothalot\Path](copernica-docs:Yothalot/php-path "Path")
 * [Class Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
 * [Class Yothalot\Record](copernica-docs:Yothalot/record "Record")
+* [Class Yothalot\Reducer](copernica-docs:Yothalot/php-reducer "Reducer")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
+* [Class Yothalot\Writer](copernica-docs:Yothalot/php-writer "Writer")
