@@ -41,7 +41,7 @@ public:
 ## Constructor
 Yothalot::Output has three constructors the first two take as a first argument
 the file name of type  `std::string` and `const char \*` that is used for
-output. With the second argument you can set the size at which the file
+output. With the second argument you can set the size (in bytes) at which the file
 can be split into smaller files (see  [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format"))
 The size at which these splits can happen has the default of 10MB but you can
 change this. With the last argument you can change the behavior when an 
@@ -145,8 +145,8 @@ std::cout << "the size of the output is " << output.size() << " bytes\n";
 ```
 
 ## Member splitsize()
-With member `splitsize()` the size at which the file can be split is returned
-You can use it like:
+With member `splitsize()` the size (in bytes) at which the file can be
+split is returned. You can use it like:
 ```cpp
 /**
  * Create or open an output file

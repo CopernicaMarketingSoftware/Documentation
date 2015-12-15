@@ -27,9 +27,9 @@ public:
 ## Constructor
 The constructor takes three parameters but only one parameter is mandatory.
 The first parameter should contain the name of the input file. With the 
-second parameter you can seek to the initial position that you want to read.
-and with the third parameter you can set the size of the chunk you want to
-read.
+second parameter you can seek to the initial position (in bytes) that you
+want to read. and with the third parameter you can set the size of the
+chunk (in bytes) you want to read.
 
 ```cpp
 /**

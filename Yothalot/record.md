@@ -10,7 +10,7 @@ information in the Yothalot format yourself. Functions that allow you to
 access data from the record are:
 
 - identifier (returns the identifier)
-- size (returns the size)
+- size (returns the size in bytes)
 - count (returns the number of fields)
 - array (returns the fields and values as one array)
 
