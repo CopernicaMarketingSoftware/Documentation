@@ -180,7 +180,7 @@ can create a iterator pair that can be passed to every algorithm that can
 handle a random access iterator pair.
 
 ## Member size()
-With `field()` you can obtain the number of fields that are stored in the
+With `size()` you can obtain the number of fields that are stored in the
 record. You can use it like:
 ```cpp
 /**

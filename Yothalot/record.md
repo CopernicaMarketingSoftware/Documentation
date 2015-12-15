@@ -26,7 +26,7 @@ $id = $record->identifier();
 ```
 
 ##Member size()
-To obtain the size of a record you can use `size()`. 
+To obtain the size (in bytes) of a record you can use `size()`. 
 ```php
 /**
  * Obtain the size of a record
