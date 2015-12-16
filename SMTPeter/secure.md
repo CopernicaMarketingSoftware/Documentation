@@ -166,9 +166,9 @@ security.
 
 ## Slow rollout
 
-By setting up a sender domain or by signing your emails a mistake is easily made, and you do not
-want to have all your emails blocked, simply because you made a typo in
-your DNS, or because you forgot to send out a mail via SMTPeter.com.
+By setting up a sender domain or by signing your emails a mistake is easily made. You do not
+want to have all your emails blocked, simply because you made a typo in your DNS, or because
+you forgot to send out a mail via SMTPeter.com.
 Therefore, we recommend to always use a slow rollout, when you start using
 sender domains or signing your emails.
 
