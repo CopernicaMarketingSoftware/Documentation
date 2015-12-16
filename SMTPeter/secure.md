@@ -86,8 +86,8 @@ when your keys are becoming old. If you start using a new
 key, it is recommended to keep your old key in your DNS records for
 a while, so that parties that receive old emails can still compare
 them with the old public key. On top of that, it is also advisable to
-have your emails during the transition period being signed by both the
-old and the new private key, so that your emails will not be blocked
+have your emails signed by both the old and the new private key during
+the transition period. This is to prevent your emails from being blocked
 because of outdated DNS caches.
 
 
