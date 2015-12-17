@@ -52,7 +52,7 @@ $numberOfFields = count($record);
 if you want to use it like a free function.
 
 ##Member array()
-To get all fields and values of the record in on array you can use
+To get all fields and values of the record in an array you can use
 the member function `array()`
 ```php
 $input = new Yothalot\Input("/path/to/file.log");
@@ -66,10 +66,10 @@ foreach($input as $record){
 Iterating over the fields stored in the record works as follows:
 ```php
 // Visit each field in a record...
-foreach($record as $field => $value)
+foreach($record as $value)
 {
    // ... and echo its value.
-   echo("$field: $value\n");
+   echo $field, "\n";
 }
 ```
 You can also access the fields by index:
@@ -78,6 +78,6 @@ You can also access the fields by index:
 for ($i = 0; $i < count($record); $i++)
 {
    // ... and echo its value
-   echo("Index $i: ".$record[$i]."\n");
+   echo "Index {$i}: {$record[$i]}\n";
 }
 ```
