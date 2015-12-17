@@ -164,6 +164,7 @@ Mails ending with just "example.com" do not benefit from the increased
 security.
 
 
+<a name="slowrollout"></a>
 ## Slow rollout
 
 By setting up a sender domain or by signing your emails a mistake is easily made. You do not
