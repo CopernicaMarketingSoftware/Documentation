@@ -123,7 +123,7 @@ mobile-mode to make the columns appear on top of each other.
 *One final warning*: although a `columns` block is a regular block and has the 
 same behavior as the other blocks, it is not possible to place blocks of type 
 `columns` inside other `columns` blocks. A `columns` block can only be placed 
-inside the [main content section](/support/property-content).
+inside the [main content section](/support/json/property-content).
 
 ## Supported properties
 
