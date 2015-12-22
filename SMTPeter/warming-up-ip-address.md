@@ -57,4 +57,3 @@ For example, if you want to send 1,000,000 emails a week, you should ramp up lik
 | 7    | 333k per day ( 3 days |              1M |
 | 8    | 500k per day (2 days) |              1M |
 | 9    | 1M per day (1 day)    |              1M |
-
