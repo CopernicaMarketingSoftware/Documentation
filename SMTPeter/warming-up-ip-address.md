@@ -40,5 +40,19 @@ few things you need to check first.
 As mentioned before, warming up an IP involves ramping up email volume over a specified period of time.
 Please be aware that every sender is different and so is every ISP. How many emails you send in that
 first period depends on the amount of emails you want to send once the warming up process is finished.
-As a rule of thumb, you should send at least 50,000 emails per month
+
+You can never warm up an IP fast. That is just insane. At SMTPeter we suggest two approaches:
+
+### The safe approach
+Estimate your total monthly email volume and divide that number by 30.
+Then, spread your sending evenly over the first 30 days, based on that calculation.
+
+__Example:__ If you want to send 180,000 emails a month, start off by sending
+6,000 emails per day over the first month.
+
+### The 'Living on the Edge' approach
+Estimate your total monthly email volume and divide that number by 15. Then, spread your sending evenly over the first 30 days, based on that calculation.
+
+__Example:__ if you want to send 180,000 emails/ month, start off by sending 12,000 per day
+over the first 15 days. If your experience throttling (deferred emails), slow down a bit.
 
