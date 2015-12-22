@@ -43,15 +43,15 @@ first period depends on the amount of emails you want to send once the warming u
 
 You can never warm up an IP fast. That is just insane. At SMTPeter we suggest two approaches:
 
-#### The safe approach
+#### 1. The safe approach
 Estimate your total monthly email volume and divide that number by 30.
 Then, spread your sending evenly over the first 30 days, based on that calculation.
 
 __Example:__ If you want to send 180,000 emails a month, start off by sending
 6,000 emails per day over the first month.
 
-#### The 'Living on the Edge' approach
-Estimate your total monthly email volume and divide that number by 15. Then, spread your sending evenly over the first 30 days, based on that calculation.
+#### 2. The 'Living on the Edge' approach
+Estimate your total monthly email volume and divide that number by 15. Then, spread your sending evenly over the first 15 days instead of 30, based on that calculation.
 
 __Example:__ if you want to send 180,000 emails/ month, start off by sending 12,000 per day
 over the first 15 days. If your experience throttling (deferred emails), slow down a bit.
