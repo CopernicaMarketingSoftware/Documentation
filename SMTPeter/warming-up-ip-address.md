@@ -11,3 +11,6 @@ through the ISP's killer filters with more success.
 
 How to begin? Peter will show you how to start sending emails over a new IP address
 without delivery failures.
+
+##Why do you need to warm up an IP address?
+The main reason why you should warm up an IP address, is because that IP does not have a reputation score.
