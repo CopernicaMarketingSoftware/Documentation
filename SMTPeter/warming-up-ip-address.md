@@ -1,4 +1,4 @@
-#How to warm up and IP address
+#How to warm up an IP address
 
 Some might say that email deliverability is Rocket Science. But with the right information,
 you can ensure that your emails get delivered in the inbox of your audience. One of the key pieces
