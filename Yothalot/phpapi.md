@@ -81,4 +81,5 @@ used internally by the Yothalot framework for intermediate result files.
 * [Class Yothalot\Record](copernica-docs:Yothalot/record "Record")
 * [Class Yothalot\Reducer](copernica-docs:Yothalot/php-reducer "Reducer")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
+* [Class Yothalot\Values](copernica-docs:Yothalot/php-values "Values")
 * [Class Yothalot\Writer](copernica-docs:Yothalot/php-writer "Writer")
