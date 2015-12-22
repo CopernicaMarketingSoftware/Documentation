@@ -37,22 +37,24 @@ few things you need to check first.
 * Regularly monitor your email deliverability (bounce rate < 10% & complaint rate < 0.1%)
 
 ## Ramping up guide
-As mentioned before, warming up an IP involves ramping up email volume over a specified period of time (30 days or more).
+As mentioned before, warming up an IP involves ramping up email volume over a specified period of time.
 Please be aware that every sender is different and so is every ISP. How many emails you send in that
 first period depends on the amount of emails you want to send once the warming up process is finished.
 
-You can never warm up an IP fast. That is just insane. At SMTPeter we suggest two approaches:
+A good rule of thumb for larger ramp-ups is to start your sending at 10,000 prospects per day.
+Assuming your bounce rate stays below 10% and your spam complaint rate stays below 0.1%.
 
-#### 1. The safe approach
-Estimate your total monthly email volume and divide that number by 30.
-Then, spread your sending evenly over the first 30 days, based on that calculation.
+For example, if you want to send 1,000,000 emails a week, you should ramp up like this:
 
-__Example:__ If you want to send 180,000 emails a month, start off by sending
-6,000 emails per day over the first month.
-
-#### 2. The 'Living on the Edge' approach
-Estimate your total monthly email volume and divide that number by 15. Then, spread your sending evenly over the first 15 days instead of 30, based on that calculation.
-
-__Example:__ if you want to send 180,000 emails/ month, start off by sending 12,000 per day
-over the first 15 days. If your experience throttling (deferred emails), slow down a bit.
+| Week | Emails per day        | Emails per week |
+|------|-----------------------|----------------:|
+| 1    | 10k per day (5 days)  |             50k |
+| 2    | 20k per day (5 days)  |            100k |
+| 3    | 40k per day (5 days)  |            200k |
+| 4    | 80k per day (4 days)  |            320k |
+| 5    | 160k per day (4 days) |            640k |
+| 6    | 250k per day (4 days) |              1M |
+| 7    | 333k per day ( 3 days |              1M |
+| 8    | 500k per day (2 days) |              1M |
+| 9    | 1M per day (1 day)    |              1M |
 
