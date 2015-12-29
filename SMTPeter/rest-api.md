@@ -95,4 +95,4 @@ Content-Length: 246
 The following methods are supported by the REST API:
 
 * [POST /v1/send](copernica-docs:SMTPeter/rest/send "REST command send")
-
+* [GET /v1/stats/](copernica-docs:SMTPeter/rest/stats "REST command stats")
