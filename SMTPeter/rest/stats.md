@@ -4,33 +4,45 @@ To view statistics using the REST API you use the `stats` method. This method
 can be called by using the following URI:
 
 ```text
-https://www.smtpeter.com/v1/stats/[tag]?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/stats?access_token=YOUR_API_TOKEN
 ```
+
+## Overview of recent activity
 
 Whenever you send an email using SMTPeter, you can use one or more tags for the
 message. Statistics are recorded for the message and logged under each of these
 tags. The accumulated statistics for all messages sharing the tag can then be
 retrieved using the `stats` method.
 
-If you have sent messages before using the tag `abc` you can retrieve information
-about these messages by sending a GET request to the following URI:
+The `stats` method - without any parameters will give basic statistics about
+the 10 most recently active tags. Whenever activity is detected on a message,
+all the tags it is linked to are bumped to the top.
 
-```text
-https://www.smtpeter.com/v1/stats/abc?access_token=YOUR_API_TOKEN
-```
-
-As a result of this request, you will get a JSON-object with the following keys:
+An example response to the `stats` method might be something like this:
 
 ```json
-{
+[{
+    "tag":          "tag1",
     "first":        "2016-01-01 12:00:00",
-    "last":         "2016-01-01 16:00:00",
+    "last":         "2016-01-01 18:00:00",
     "opens":        10,
     "clicks":       5,
     "messages":     15,
     "deliveries":   15
-}
+},{
+    "tag":          "tag2",
+    "first":        "2016-01-01 12:00:00",
+    "last":         "2016-01-01 16:00:00",
+    "opens":        20,
+    "clicks":       10,
+    "messages":     30,
+    "deliveries":   30
+}]
 ```
+
+The response will be an array with a maximum of ten recently active tags.
+For each of these tags, the key `tag` obviously tells the tag under which
+the messages were sent.
 
 The `first` and `last` keys indicate the first and last time activity was
 detected on the tag, respectively. Activity can either be a message being
@@ -56,3 +68,28 @@ of deliveries is much lower it means that either SMTPeter cannot connect
 to the destination server or that the destination server is refusing to
 accept our messages - either because the email address does not exist,
 the mailbox is permanently full or the server thinks that it is spam.
+
+## Detailed information about a specific tag
+
+It is also possible to retrieve information for a specific tag - instead of
+the most recently active ones. To retrieve information for messages sent out
+using the tag 'tag1' (as seen in the previous example), a request to the
+following URI can be made:
+
+```text
+https://www.smtpeter.com/v1/stats/tag1?access_token=YOUR_API_TOKEN
+```
+
+As a result of this request, you will get a JSON-object with the following keys:
+
+```json
+{
+    "tag":          "tag1",
+    "first":        "2016-01-01 12:00:00",
+    "last":         "2016-01-01 16:00:00",
+    "opens":        10,
+    "clicks":       5,
+    "messages":     15,
+    "deliveries":   15
+}
+```
