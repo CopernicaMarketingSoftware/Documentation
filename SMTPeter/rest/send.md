@@ -7,7 +7,7 @@ can be called by using the following URL
 https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
 ```
 
-The method is only available as POST call, and your body data should 
+The method is only available as POST call, and your body data should
 contain one or more of the following variables:
 
 * [envelope](copernica-docs:SMTPeter/rest/send#envelope)
@@ -24,6 +24,7 @@ contain one or more of the following variables:
 * [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
 * [clicktracking](copernica-docs:SMTPeter/rest/send#clicktracking)
 * [openstracking](copernica-docs:SMTPeter/rest/send#openstracking)
+* [tags](copernica-docs:SMTPeter/rest/send#tags)
 
 ## Sending MIME data
 
@@ -36,7 +37,7 @@ provide the following two fields at least:
 * [mime](copernica-docs:SMTPeter/rest/send#mime)
 
 The "recipient"/ "recipients" should hold the email address(es) of the actual recipient, and
-"mime" the full MIME encoded message. The following additional fields may 
+"mime" the full MIME encoded message. The following additional fields may
 also be included:
 
 * [envelope](copernica-docs:SMTPeter/rest/send#envelope)
@@ -64,7 +65,7 @@ address without the name of the recipient or angle brackets ('<' and '>')
 (i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
 
 If you want to send the same email to multiple email addresses you can do so by
-setting the "recipients" variable instead of the "recipient". The "recipients" variable should 
+setting the "recipients" variable instead of the "recipient". The "recipients" variable should
 be an array of email addresses.
 
 ```json
@@ -171,7 +172,7 @@ With the "dsn" variable you can set when and what delivery notification
 messages you want to receive. These notification messages will be sent
 to the email address you have specified in the "envelope" variable. Make
 sure that you have specified this, otherwise all notification will fail
-silently. 
+silently.
 
 The "dsn" variable accepts a JSON object with two fields:
 ```json
@@ -197,7 +198,7 @@ With the "ret" field you can specify what message you want to receive in
 your notification. You can specify "FULL" if you want tot receive the full
 message back or "HDRS" if you just want to receive the headers.
 
-Do note that if you send email to a lot of recipients at the same time 
+Do note that if you send email to a lot of recipients at the same time
 this could fill up the mail box that you have specified in "envelope" quite
 quickly.
 
@@ -208,7 +209,7 @@ about this setting is given in the next section.
 
 ## bouncetracking
 
-Bouncetracking is enabled by default. 
+Bouncetracking is enabled by default.
 When "bouncetracking" is set to true, SMTPeter will track bounced emails for
 you. An email bounces when SMTPeter fails to deliver the message to the
 receiving mail server. This can happen for various reasons such as a full
@@ -276,3 +277,24 @@ This starts by detecting if your sent message
 is opened or not. SMTPeter's open tracking functionality can be used for this.
 If you enable open tracking, SMTPeter tracks all opens of your email and
 shows the statistics in the statistics overview of your SMTPeter dashboard.
+
+## tags
+
+When sending a message, you can opt to include one or more tags. This can be
+a string with a single tag - or an array or strings if you wish to send the
+message under multiple tags.
+
+When one or more tags are included in the message every event that SMTPeter
+detects will be logged under all these tags. This allows you to easily create
+statistics segmented the way you want. Suppose you want to segment your statistics
+both by the weeknumber and by the day of the week you had sent them, your tags
+could be something like this:
+
+```json
+{
+    "tags":    [ "week10", "monday" ]
+}
+```
+
+For more information about statistics and how to retrieve them, see the
+[documentation on the stats method](copernica-docs:SMTPeter/rest/stats "documentation on the stats method").
