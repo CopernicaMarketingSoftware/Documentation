@@ -170,7 +170,10 @@ Keep in mind that it is very well possible that the reduce() method gets called
 more than once for the same key. This for example happens when so many keys were 
 found that multiple chained reducers are started. The value that you emit might 
 therefore be an intermediate value that is going to be reduced for a second or
-third time.
+third time. It is also possible that the reducer is never called for a key. This
+happens if the key never has to be reduced since it only has one single value.
+So, if you want to do some processing on all keys that you have, it is better
+to do this in the writer phase.
 
 
 ## Writing

@@ -215,6 +215,11 @@ that consuming them at once takes to many resources. This implies that
 your reduced value may be re-reduced in a next reduce step. This is inherit
 to efficient mapreduce tasks and is something to be aware of.
 
+You should also note that a reducer will not be called for keys that have only
+one value since there is nothing to reduce. Therefore, if you want to do
+some extra processing on all keys in your mapreduce algorithm, you should do
+this in the writing phase, since the writing method will be called for each
+key.
 
 ## Writing
 
