@@ -91,6 +91,7 @@ of the Yothalot framework. For more information on how to tune your job you
 are referred to our [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
 documentation page. The options for tuning your mapreduce job are:
 
+* --local,
 * --maxprocesses,
 * --maxmappers,
 * --maxreducers,
@@ -99,6 +100,11 @@ documentation page. The options for tuning your mapreduce job are:
 * --maxbytes,
 * --modulo
 
+### local
+
+With this option you can specify if temporary files should be stored locally
+(1) or on the GlusterFS (0) (see [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+for more information).
 
 ### maxprocesses
 

@@ -29,6 +29,7 @@ class Yothalot\Job
     public function wait();
     
     // tuning the job
+    public function local($local);
     public function modulo($modulo);
     public function maxfiles($max);
     public function maxbytes($max);
@@ -209,6 +210,7 @@ only the `maxprocesses()` setting is relevant.
 class Yothalot\Job
 {
     // functions for performance tuning
+    public function local($local);
     public function modulo($modulo);
     public function maxfiles($max);
     public function maxbytes($max);
@@ -219,7 +221,7 @@ class Yothalot\Job
 }
 ```
 
-All of the above methods accept one parameter: an integer value with the
-setting. You must set these tuning parameters *before* you start the job.
+All of the above methods but local accept one parameter: an integer value with the
+setting. The local method accepts a boolean. You must set these tuning parameters *before* you start the job.
 For an explanation of the  meaning of all the tuning parameters, see the special in-depth
 [article about tuning mapreduce jobs](copernica-docs:Yothalot/tuning).
