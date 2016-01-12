@@ -26,6 +26,7 @@ after receiving the message.
 >> Content-Type: application/json
 >>
 >> {"id":"XXXXXXXX","received":"2016-01-06 20:01:34","text":"Your email client does not support HTML messages. View the mail online at webversion\r\n"}
+```
 
 ## return value
 
