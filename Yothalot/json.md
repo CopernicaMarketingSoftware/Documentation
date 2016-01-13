@@ -12,21 +12,21 @@ a queue for regular jobs. The PHP API and the C++ API publish, under
 the hood, messages to these queues. However, if you like, you can also
 post messages to these queues directly (you can but you should not).
 
-The messages that you can post to the three queues should be JSON 
+The messages that you can post to the three queues should be JSON
 formatted, and contain all information that is needed to start up
-jobs. 
+jobs.
 
 **Watch out** if you're publishing JSON to the queues directly
 (especially JSON for mapreduce jobs), you must carefully understand
-what kind of input and output the jobs have to generate and have to
-accept. It is often better and easier to use the C++ and PHP API instead
+what kind of input and output the jobs have to accept and to
+generate. It is often better and easier to use the C++ and PHP API instead
 to start and submit jobs.
 
 
 ## Regular jobs
 
 The simplest jobs that the Yothalot cluster can run, are the regular
-jobs. A regular job is nothing more that a single script or single
+jobs. A regular job is nothing more than a single script or single
 executable that should be started *somewhere* on the Yothalot cluster.
 If you post a JSON encoded message to the regular "jobs" queue, the
 master node will pick up this message, and assigns the job to a node
@@ -42,7 +42,7 @@ The input for a regular job is JSON formatted, and looks like this:
     "stdin": "data that should be sent to stdin",
     "server": "optional hostname of server that is best suited to run the job",
     "filename": "optional filename that is going to be processed",
-    "location": "optional argument to force instead of hint server to run job on",
+    "location": "force",
     "exchange": "optional exchange name to publish results",
     "routingkey": "optional routing key for the results",
 }
@@ -52,22 +52,22 @@ Many of the above properties are optional, only the name of the executable
 is required. The executable name holds the path to a program that must
 be installed on *each* of the servers in the Yothalot cluster (because
 you can never know on which server the job is going to be started). The
-pathname can either be an absolute pathname (like /usr/bin/ls), or the 
+pathname can either be an absolute pathname (like /usr/bin/ls), or the
 name of a program that can be found in the ```$PATH``` of the servers.
 
 All other parameters are optional: "arguments" holds an array with optional
 command line arguments that should be passed to the executable, "directory"
 is the working directory for the new process (the directory will be created
-if it does not yet exist) and "stdin" contains the input for the process: 
+if it does not yet exist) and "stdin" contains the input for the process:
 the data that is going to be sent to stdin the moment the program starts.
 
-The Yothalot master server automatically assigns  the job to one of the nodes 
-in the cluster. By setting the "server" property, you can tell which server 
-you want to run the job on. By setting the "filename" property, you can 
-specify it to run the job on a node that holds a local copy of that specific 
-file. These are just hints (the server can assign it to another node). Only
-when you specify "location" to be "force", you can actually enforce this 
-behaviour.
+The Yothalot master server automatically assigns  the job to one of the nodes
+in the cluster. By setting the "server" property, you can tell which server
+you want to run the job on. By setting the "filename" property, you can
+specify it to run the job on a node that holds a local copy of that specific
+file. These are just hints (the server can assign it to another node).
+When you want to enforce the hint you can set "location" to "force". On default
+this is not set.
 
 If you want to be notified when the job is finished, you must include
 an exchange and routing key in the JSON, so that the Yothalot process
@@ -79,7 +79,7 @@ property, and then waiting for a message to be appear in this temporary
 queue.
 
 The results that are published back by the Yothalot master node, have
-the same format and same properties as the input object - but with some 
+the same format and same properties as the input object - but with some
 additional properties added that hold information about how the job
 ran:
 
@@ -102,35 +102,35 @@ ran:
 ```
 
 The "signal" property is only included if the process was killed by a
-signal (for example by signal 11 in case of a segmentation fault), and
-the "exit" property is only used for processes that ended normally, and
+signal (for example by signal 11 in case of a segmentation fault).
+The "exit" property is only used for processes that ended normally, and
 produced a valid exit code (most processes that exit normally use exit
-code 0, a non-zero exit code often is an indication of some kind of 
+code 0. A non-zero exit code often is an indication of some kind of
 error.
 
 The amount of data that can be included in the JSON is limited. If the
-job sends out too much data to stdout and/or stderr (more than one megabyte), 
-the output is going to be truncated so that the JSON does not become too 
-big. If this is the case, you can find an extra property "truncated" set 
+job sends out too much data to stdout and/or stderr (more than one megabyte),
+the output is going to be truncated so that the JSON does not become too
+big. If this is the case, you can find an extra property "truncated" set
 to true in the output JSON.
 
-You can consume these messages from the result queue and process the 
+You can consume these messages from the result queue and process the
 results. Note that besides the properties mentioned above, your custom
 properties will also be included in the output JSON.
 
 
 ## Race jobs
 
-Besides regular jobs, you can also publish so called "race" jobs to
+Besides regular jobs, you can publish so called "race" jobs to
 the special race queue. A race job is a special kind of job that runs
-many processes in parallel, until one of these processes returns a 
+many processes in parallel, until one of these processes returns a
 result. We at Copernica use this to locate information in log files:
 when we want to locate a record in a group of log files, we start up a
 race of many processes that all process a part of all the log files, the
 first one that locates the right record, reports the result and wins the
 race.
 
-The instruction of a race job is also JSON formatted, and looks 
+The instruction of a race job is also JSON formatted, and looks
 like this:
 
 ```json
@@ -160,13 +160,13 @@ The "server" and "filename" properties are optional for each input and
 provide a hint to Yothalot on which server the process ideally should start.
 
 The name of the executable and the property "input" are both required. If
-one of them is missing, it is not possible to start the race. All other 
-properties are optional. 
+one of them is missing, it is not possible to start the race. All other
+properties are optional.
 
-A special word of warning about the optional "stdin" property. If you include 
-this property in the input, each subprocess is going to be started with this 
-data on stdin, immediately followed by the subjob specific input. The above 
-JSON holds therefore the data for a race between two subjobs, and these jobs 
+A special word of warning about the optional "stdin" property. If you include
+this property in the input, each subprocess is going to be started with this
+data on stdin, immediately followed by the subjob specific input. The above
+JSON holds therefore the data for a race between two subjobs, and these jobs
 will be started with the following input:
 
 * "data that should be sent to stdininput data for process 1"
@@ -175,11 +175,11 @@ will be started with the following input:
 It is up to you to deal with this, for example by including a newline after
 the data in "stdin", or by not specifying a "stdin" property at all.
 
-If your input data is too big to fit reasonably in a JSON object, you can 
-store the input data in one or more temporary files on GlusterFS, and include 
-the path to this temporary directory in the JSON instead. If the "input" 
-property does not hold an array but a string, the Yothalot server will treat 
-it as a pathname relative to the GlusterFS mount point to a directory 
+If your input data is too big to fit reasonably in a JSON object, you can
+store the input data in one or more temporary files on GlusterFS, and include
+the path to this temporary directory in the JSON instead. If the "input"
+property does not hold an array but a string, the Yothalot server will treat
+it as a pathname relative to the GlusterFS mount point to a directory
 holding the input files.
 
 ```json
@@ -195,19 +195,19 @@ holding the input files.
 ```
 
 The files in this directory should be regular Yothalot files (you can
-create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") 
-or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output"). 
-Every record in these files will result in one race subprocess to be started. 
-In other words: if you store 10 files in the temporary directory, and each 
+create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
+or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output").
+Every record in these files will result in one race subprocess to be started.
+In other words: if you store 10 files in the temporary directory, and each
 of these ten files hold 100 records, a total of 1000 individual processes
-are started by the Yothalot framework, each to process one record from 
-the input files (unless of course one of the jobs that is started succeeds 
+are started by the Yothalot framework, each to process one record from
+the input files (unless of course one of the jobs that is started succeeds
 before the later jobs can run, then the race is finished before all
-jobs were started). When the race is over, the Yothalot framework 
+jobs were started). When the race is over, the Yothalot framework
 automatically removes the temporary directory with the input files.
 
 The output from a race job is also JSON formatted and is published back
-to the exchange and routingkey named in the input JSON, and looks like 
+to the exchange and routingkey named in the input JSON, and looks like
 this:
 
 ```json
@@ -247,16 +247,16 @@ the information when the race was started and when the race ended.
 
 Besides regular and race jobs, mapreduce jobs can be started. Mapreduce
 jobs are the most advanced jobs that the Yothalot cluster can run, and
-the output from one process is forwarded to be the input of the next 
+the output from one process is forwarded to be the input of the next
 process. Unlike the previously mentioned regular and race jobs, the
-mapper and reducer executables must produce output in a prescribed 
-format, while the reducer and finalizer executable need to accept
-input in this format.
+mapper reducer, and finalizer executables must accept input in a prescribed
+format, and thus the mapper and reducer executable need to produce
+output in this format.
 
-To start a mapreduce task you have to publish a JSON to the mapreduce 
-queue. When you send a mapreduce job to the cluster, the master node 
-will start up the multiple mapper, reducer and finalizer jobs in 
-parallel. 
+To start a mapreduce task you have to publish a JSON to the mapreduce
+queue. When you send a mapreduce job to the cluster, the master node
+will start up the multiple mapper, reducer and finalizer jobs in
+parallel.
 
 ```json
 {
@@ -275,7 +275,7 @@ parallel.
             "bytes": 10485760,
             "processes": 100
         }
-    },    
+    },
     "finalizer": {
         "executable": "path/to/executable",
         "arguments" : ["extra", "command", "line", "arguments"],
@@ -285,15 +285,25 @@ parallel.
             "processes": 100
         }
     },
-    "input": [ {
-        "data": "input data for process 1",
-        "server": "server to run job 1 on",
-        "filename": "filename for job 1"
+    "input": [
+    {
+        "filename": "nameOfYothalotFile",
+        "start": 0,
+        "size": 0,
+        "server": "server1",
+        "remove": true
     }, {
-        "data": "input data for process 2",
-        "server": "server to run job 2 on",
-        "filename": "filename for job 2"
-    } ],
+        "directory": "a directory with Yothalot files",
+        "server": "server2",
+        "remove": false
+    ,{
+        "key":   "a key value",
+        "value": "a value value"
+    }, {
+        "key":   ["some", 1, "key values"],
+        "value": ["some", 2, "value values"]
+    }
+    ],
     "modulo": 1,
     "local": true,
     "processes": 100,
@@ -303,9 +313,8 @@ parallel.
 ```
 
 The "mapper", "reducer", and "finalizer" properties hold the name of an
-executable and the command line arguments, just like you can specify
-these properties for regular and race jobs that we have described
-above. But unlike the executable for these other job types, it is not
+executable and the command line arguments, just like in the above discussed
+regular and race jobs. Yet, unlike regular and race jobs, it is not
 possible to set a working directory for mapreduce jobs. The Yothalot
 framework takes care of creating a temporary directory that the
 jobs are going to use.
@@ -317,60 +326,49 @@ process about the amount of data that the executable can process. Each
 and with the "limits.processes" option, you can limit the max number
 of mappers/reducers/finalizers that are going to run at the same time.
 
-The reducer and finalizer take a set of temporary files as input, and 
+The reducer and finalizer take a set of temporary files as input, and
 it is their job to reduce and finalize (write) this data. The
 "limits.files" and "limits.bytes" settings specify how many input files
 a reducer or finalizer can process at most, and the number of bytes that it
-can handle at most. If more files or more data has to be reduced or finalized, the 
+can handle at most. If more files or more data has to be reduced or finalized, the
 Yothalot master node will attempt to split up the job in smaller
 sub jobs, so that no process will handle more data than set in the
 limits. Note that these are a soft limits, if it is impossible to split up the
 data, it could happen that reducers or finalizers are started with
 more input.
 
-The input that is sent to the mapper processes can be specified in the
-very same format as the input for race processes: you can set the
-"input" property to an array holding the different data items (with
-optional hints about the server to best start it on), or you can
-specify a directory that holds the input files. Once again, this works
-exactly the same as it does for race jobs, and the input directory
-is therefore also automatically removed when the job is finished:
+The input that can be specified via the input property is sent to the mapper
+processes. Unlike regular and race jobs the input that a mapper
+accepts has some requirements. You can pass three types of inputs to the
+mapper, a filename, a directory name, or a key value pair. It is also
+possible to pass a combination of these types in an array. The file name
+that you can pass should be the name of a [Yothalot formatted file](copernica-docs:Yothalot/internalfiles "Internal File Format").
+Such a file can be created by using  the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
+or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output").
+The Yothalot framework will process this file and will pass the stored key-value pairs
+to your map implementation. The directory that you can pass as input should contain only Yothalot
+formatted files. All files in the directory will be processed by Yothalot
+and the stored key-value pairs again will be passed to map. If you specify
+key-value pairs yourself in the JSON, these will be passed to map. The key and
+value property can hold single values or an array of values. If you want
+to pass a lot of key-value pairs, it is probably better to store them in
+a Yothalot file and pass the filename in the JSON to Yothalot. This will
+reduce the load on your network.
 
-```json
-{
-    "mapper": {
-        "executable": "path/to/executable",
-        "arguments" : ["extra", "command", "line", "arguments"],
-        "limits" : {
-            "processes": 100
-        }
-    },
-    "reducer": {
-        "executable": "path/to/executable",
-        "arguments" : ["extra", "command", "line", "arguments"],
-        "limits" : {
-            "files": 100,
-            "bytes": 10485760,
-            "processes": 100
-        }
-    },    
-    "finalizer": {
-        "executable": "path/to/executable",
-        "arguments" : ["extra", "command", "line", "arguments"],
-        "limits" : {
-            "files": 100,
-            "bytes": 10485760,
-            "processes": 100
-        }
-    },
-    "input": "path/to/input/directory",
-    "modulo": 1,
-    "local": true,
-    "processes": 100,
-    "exchange": "exchange for publishing result",
-    "routingkey": "routingkey for publishing result"
-}
-```
+Besides passing the file or directory name you can add some optional
+properties to affect how Yothalot will treat the files or directories.
+Together with the file name you can inform Yothalot where to start processing
+the file (in bytes), with start, and how many bytes should be processed with size. If
+you do not specify these, Yothalot will start from the beginning and will
+process the file to the end. You get the same behavior if you pass in values
+0 and 0 respectively. For both the file and directory name you can pass a
+server property that hints Yothalot on which server the data ideally should
+be mapped. Finally you can pass the property remove to the file and directory name.
+If you set this property to true, Yothalot will remove the file, or directory
+when it is finished with processing the data. This is useful if you know that you are
+using temporary data that has to be cleaned up anyway. The default of this
+property is false, so, if it is not set, files and directories will not
+be removed.
 
 The "modulo" setting (default value is 1) is a setting that allows you
 to split up the intermediate data deterministically into multiple groups, so that more
@@ -400,13 +398,12 @@ result data should be written.
 ## Input and output for mapper reducer and finalizer processes
 
 Although you are free to choose any output format for regular and
-race jobs, the output of mapper process should have a particular format since 
+race jobs, the output of mapper processes should have a particular format since
 reducer processes will get this as their input. This also holds for the output of a reducer process
-since this will be passed on to the finalizer. 
+since this will be passed on to the finalizer.
 
-The "mapper" processes receive exactly the input that is set in the
-"input" property and are therefore basically the same as the regular
-jobs and race jobs. The output however, should be a list of filenames,
+Mapper processes receive key-value pairs that are obtained from the json
+or via files or directories, as discussed above. The output however, should be a list of filenames,
 each written using the [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
 class if you are using C++ or [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
 class if you are using PHP. When the mapper process
@@ -547,5 +544,4 @@ are stored before the fields of the value in the vector. The identifier of the r
 is used to specify the number of fields that the key has. If you are publishing
 a JSON with a mapreduce job you have to follow this format and you have to
 make sure that the records are ordered with respect to the keys.
-
 

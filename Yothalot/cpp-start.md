@@ -47,6 +47,7 @@ The input for regular jobs may come from standard input. If you set the option
 `--stdin` the Yothalot program will read standard input and will pass this to
 the standard input of the program that is started up.
 
+
 ### directory
 
 With this option you can specify the working directory for regular and 
@@ -80,7 +81,15 @@ All non option arguments that are passed to Yothalot are treated as data. For
 regular jobs this means that these arguments are ignored since regular jobs
 cannot deal with data. For race jobs a program is started up by Yothalot for
 each piece of data. This piece of data is passed to the standard input of
-the program. For mapreduce jobs the extra arguments are also seen as data.
+the program. For mapreduce jobs it depends whether only one or multiple
+extra arguments are passed. If only one argument is added, this argument
+is treated as the name of the directory that holds [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format")
+These files will be read and the key-value pairs that are stored in them
+will be passed to your mapper function. If multiple arguments are passed,
+the arguments are treated as file names. Again, Yothalot will read these
+files and will pass the stored key-value pairs to your map function.
+You can create these files using the [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+class. 
 
 
 ## Extra mapreduce options

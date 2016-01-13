@@ -46,12 +46,12 @@ class MapReduce
 public:
     /**
      *  The mapper step
-     *  @param  value       The value to map
-     *  @param  size        Size of the value
-     *  @param  reducer     The result object to which key/value pairs can be mapped
+     *  @param  Key        The value to map
+     *  @param  Value      Size of the value
+     *  @param  reducer    The result object to which key/value pairs can be mapped
      */
-    virtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) = 0;
-
+    virtual void map(const Yothalot::Key &key, const Yothalot::Value &value, Yothalot::Reducer &reducer) = 0;
+    
     /**
      *  Function to reduce a key that comes with a number of values
      *  @param  key         The key that should be reduced
@@ -66,6 +66,7 @@ public:
      *  @param  value       The found value
      */
     virtual void write(const Yothalot::Key &key, const Yothalot::Value &value) = 0;
+    
 };
 /**
  *  end namespace
@@ -77,20 +78,17 @@ In your class that inherits from this pure virtual base class you have
 to implement your mapper step in `map()`, your reducer step in `reduce()`,
 and your writer step in `write()`.
 
+
 ## Mapping
 
-The `map()` method is used to map the input data to keys and values, the first part of the mapreduce
-process. The input data for the mapper process is passed to `map()` via its
-first argument, of type `const char *`, that holds the buffer, and its second argument
-that holds the size of the buffer. Note that each single piece of data that you
-pass to your Yothalot program will result in a call to `map()`. So, although it is possible to call
-map on each single piece of data, this will result in a lot of calls to map,
-each call having some overhead. Therefore, you want to provide `map()` with
-enough data in that single argument to keep it busy for a while. E.g. you can
-pass strings that contain the name of a file that contains some data that you want to
-map. If you pass file names, map can nicely run in parallel on each file and the
-overhead is not to large.
-
+The `map()` method is used to map the keys and values, the first part of
+the mapreduce process. The keys and values for the mapper process are passed to `map()` via its
+first argument, of type `Yothalot::Key`, and its second argument, of type
+Yothalot::Value. The Yothalot::Key and Yothalot::Value types are tupples
+whose fields can be of type `int32_t`, `int64_t`, and string types.
+More information on these types is given in the [Yothalot Classes](copernica-docs:Yothalot/cpp-classes)
+documentation 
+ 
 The third argument that `map()` receives is used to provide `map()` the
 information what to do with the data once it has been mapped into keys and values.
 The argument is of type `Yothalot::Reducer`. This `Yothalot::Reducer` class has one member
@@ -98,12 +96,8 @@ function that is of importance for the map method , `emit()`. After you have
 mapped your data into keys and values you can use `emit()` to pass these
 keys and values to the next step in your mapreduce algorithm, the reducer step.
 Member `emit()` receives two arguments, a key and a value. These arguments
-have type `Yothalot::Key` and `Yothalot::Value` respectively. These types
-are tupples whose fields can be of type `int32_t`, `int64_t`, and string types.
-More information on these types is given in the [Yothalot Classes](copernica-docs:Yothalot/cpp-classes)
-documentation.
-
-An example of an implementation of a `map()` is:
+have type `Yothalot::Key` and `Yothalot::Value` respectively as well.
+An example of `map()` is:
 
 ```cpp
 class MyMapReduce : public Yothalot::MapReduce
@@ -114,27 +108,10 @@ public :
      *  @param  const char *          Value that is being mapped
      *  @param  Yothalot::Reducer     Reducer object to which we may emit key/value pairs
      */
-    virtual void map(const char *value, size_t size, Yothalot::Reducer &reducer) override
+    virtual void map(const Yothalot::Key &key, const Yothalot::Value &value, Yothalot::Reducer &reducer) override
     {
-        // imagine that the to-be-mapped data is a string, and we want to 
-        // emit key/value pairs for all the words found in the string
-        
-        // Create a input string stream from value
-        std::istringstream iss(value);
-        
-        // Read one word at the time
-        std::string word;
-        while(iss >> word)
-        {   
-            // Create a key from the word.
-            Yothalot::Key key = {word};
-            
-            // Create a value 1.
-            Yothalot::Value value = {1};
-            
-            // Emit the key and value.
-            reducer.emit(key, value);
-        }
+        // simplest mapper possible, just pass through
+        reducer.emit(key, value);
     }
     // @todo implement other methods
 };
