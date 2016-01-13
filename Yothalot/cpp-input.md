@@ -210,5 +210,5 @@ do
 {
     //process the files
 }
-while (myInputs.next())
+while (myInputs.next());
  ```
