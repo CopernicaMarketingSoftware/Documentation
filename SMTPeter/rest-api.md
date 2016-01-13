@@ -96,3 +96,5 @@ The following methods are supported by the REST API:
 
 * [POST /v1/send](copernica-docs:SMTPeter/rest/send "REST command send")
 * [GET /v1/stats/](copernica-docs:SMTPeter/rest/stats "REST command stats")
+* [GET /v1/text/](copernica-docs:SMTPeter/rest/text "REST command text")
+* [GET /v1/html/](copernica-docs:SMTPeter/rest/html "REST command html")
