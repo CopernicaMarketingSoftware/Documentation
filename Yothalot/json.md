@@ -337,33 +337,40 @@ limits. Note that these are a soft limits, if it is impossible to split up the
 data, it could happen that reducers or finalizers are started with
 more input.
 
-The input that can be specified via the input property is sent to the mapper
-processes. Unlike regular and race jobs the input that a mapper
-accepts has some requirements. You can pass three types of inputs to the
-mapper, a filename, a directory name, or a key value pair. It is also
-possible to pass a combination of these types in an array. The file name
-that you can pass should be the name of a [Yothalot formatted file](copernica-docs:Yothalot/internalfiles "Internal File Format").
-Such a file can be created by using  the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
+The input can be specified via the input property, which is sent to the mapper
+processes. Unlike regular and race jobs the input that can be used has some
+requirements but still it is quite flexible. If you give the input property a string value,
+Yothalot will treat this string as a directory. The files in this directory should be regular Yothalot files,
+just like specifying a directory for the race job (you can create such
+files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
 or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output").
-The Yothalot framework will process this file and will pass the stored key-value pairs
-to your map implementation. The directory that you can pass as input should contain only Yothalot
-formatted files. All files in the directory will be processed by Yothalot
-and the stored key-value pairs again will be passed to map. If you specify
-key-value pairs yourself in the JSON, these will be passed to map. The key and
-value property can hold single values or an array of values. If you want
-to pass a lot of key-value pairs, it is probably better to store them in
-a Yothalot file and pass the filename in the JSON to Yothalot. This will
-reduce the load on your network.
+Yothalot will process these files and provide all stored key-value pairs
+in the files to your mapper. You can also pass an array to the input. This
+array can contain multiple directory names, yet, you can also provide
+multiple filenames, or key-value pairs. It is also possible to pass a
+combination of these types in an array. To make a distinction between the
+types in the array, the elements in the array should be objects. A directory
+object should have a "directory" property that contains the directory name.
+A file object should have a "filename" property that contains the filename.
+Finally, a key-value object should have a property "key", with the key value,
+and a property "value", with the value value. If you want to pass a lot
+of key-value pairs, it is probably better to store them in a Yothalot file
+and pass the filename in the JSON to Yothalot. This will reduce the load
+on your network.
 
-Besides passing the file or directory name you can add some optional
-properties to affect how Yothalot will treat the files or directories.
-Together with the file name you can inform Yothalot where to start processing
-the file (in bytes), with start, and how many bytes should be processed with size. If
-you do not specify these, Yothalot will start from the beginning and will
-process the file to the end. You get the same behavior if you pass in values
-0 and 0 respectively. For both the file and directory name you can pass a
+Besides passing the file or directory name in filename and directory objects,
+you can add some optional properties to affect how Yothalot will treat the
+files or directories. In the filename object you can specify with the "start"
+property where to start processing the file. All records up to and including
+the amount of bytes specified will not be passed as key-value pairs to your
+mapper. You can specify how many bytes you want to consume from the file
+with property "size", Yothalot will only process the amount of bytes specified
+plus some extra so the last record that is processed is not truncated.
+All other records in the file are simply ignored. If you omit the start and
+bytes property, they will be ignored. You get the same behavior if you
+specify 0 and 0. For both the file and directory object you can pass a
 server property that hints Yothalot on which server the data ideally should
-be mapped. Finally you can pass the property remove to the file and directory name.
+be mapped. Finally you can pass the property remove to the file and directory object.
 If you set this property to true, Yothalot will remove the file, or directory
 when it is finished with processing the data. This is useful if you know that you are
 using temporary data that has to be cleaned up anyway. The default of this
