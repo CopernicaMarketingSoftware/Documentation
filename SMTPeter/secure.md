@@ -1,4 +1,4 @@
-# Secure email
+# Secure email by using DMARC, DKIM, and SPF
 
 With SMTPeter you can set up sender domains and private security keys to
 enable receiving servers and mailbox providers (like Gmail, Yahoo, Hotmail,
@@ -25,7 +25,7 @@ and fishers to send out email, but it makes it more difficult for legitimate
 senders (like you!) to send email as well. SMTPeter can help you out.
 
 
-## DNS Records
+## Update your DNS records to use DMARC, DKIM, and SPF
 
 The DKIM, SPF, and DMARC technologies use the domain name system (DNS) to
 secure email. DNS is traditionally the technology to convert human readable
@@ -43,7 +43,7 @@ you can find forms and wizards to generate DNS records that you can
 copy into your name server configuration.
 
 
-## Signing your emails
+## Signing your emails with a DKIM key
 
 With SMTPeter you can automatically sign your emails. This allows receiving
 parties to verify if the mail was indeed sent by you and that the content
@@ -61,7 +61,7 @@ else to sign mails out of your name, simply because no one else has access to
 your private key.
 
 
-## Generating keys
+## Generating DKIM keys
 
 When you create a sender domain, a DKIM key is automatically generated for you.
 You simply have to copy and paste these records from the SMTPeter dashboard into
@@ -85,7 +85,7 @@ in the SMTPeter's dashboard. After a while, you are notified when it is
 safe to remove the old DKIM key from your DNS.
 
 
-## Setting up your sender domain
+## Setting up your SPF sender domain
 
 Via the dashboard on SMTPeter.com you can add the domain names from
 which you normally send out email. For example, if you normally send out
@@ -116,7 +116,7 @@ so that they also include the data of your regular email servers. Secondly,
 you could use SMTPeter.com only for sending mails from a certain _subdomain_.
 
 
-## Incorporating your own servers
+## Incorporating your own servers while using sender domains
 
 We mentioned that once you have copied the DNS records that are suggested by
 SMTPeter.com to your DNS servers, all your mails must be sent out by
@@ -131,7 +131,7 @@ specification of these technologies. You can find links to the
 specifications near the bottom of this article.
 
 
-## Using subdomains
+## Using subdomains as sender domains
 
 If changing your entire mail architecture is too much of a hassle (for now)
 and you also do not feel like manually editing DNS records, you can take a
