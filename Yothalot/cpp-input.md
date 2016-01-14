@@ -28,8 +28,10 @@ public:
 The constructor takes three parameters but only one parameter is mandatory.
 The first parameter should contain the name of the input file. With the 
 second parameter you can seek to the initial position (in bytes) that you
-want to read. and with the third parameter you can set the size of the
-chunk (in bytes) you want to read.
+want to read. If this parameter is set you start reading the first record
+that is stored after the amount of bytes specified. With the third parameter
+you can set the size of the chunk (in bytes) you want to read. You may receive
+some extra bytes than you have specified to avoid the truncation of an record.
 
 ```cpp
 /**
@@ -106,10 +108,11 @@ form it and use manual memory management you can safely do so.
 
 With member `add()` you can add files to the `Yothalot::Input` object.
 It uses three arguments but argument two and three are optional. With the
-first argument you set the filename, the second argument sets at what position
-in the file the records should be included. The last argument set the number
-of bytes to read.
-You can use it like:
+first argument you set the filename, the second argument sets from what position
+in the file the records should be included. Inclusion starts from the first
+record that is stored after the specified position. The last argument set the number
+of bytes to read. If the amount of bytes cause a truncated record, some
+extra bytes will be read. You can use the member like:
 ```cpp
 /**
  *  Create a Yothalot::Inputs object to store multiple inputs
@@ -208,7 +211,7 @@ myInputs.add("file2.log");
 // Use
 do
 {
-    //process the files
+    //process the records stored
 }
 while (myInputs.next());
  ```
