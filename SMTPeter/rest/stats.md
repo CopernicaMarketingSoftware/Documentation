@@ -22,21 +22,25 @@ An example response to the `stats` method might be something like this:
 
 ```json
 [{
-    "tag":          "tag1",
-    "first":        "2016-01-01 12:00:00",
-    "last":         "2016-01-01 18:00:00",
-    "opens":        10,
-    "clicks":       5,
-    "messages":     15,
-    "deliveries":   15
+    "tag":              "tag1",
+    "first":            "2016-01-01 12:00:00",
+    "last":             "2016-01-01 18:00:00",
+    "all_opens":        10,
+    "unique_opens":     8,
+    "all_clicks":       5,
+    "unique_clicks":    3,
+    "messages":         15,
+    "deliveries":       15
 },{
-    "tag":          "tag2",
-    "first":        "2016-01-01 12:00:00",
-    "last":         "2016-01-01 16:00:00",
-    "opens":        20,
-    "clicks":       10,
-    "messages":     30,
-    "deliveries":   30
+    "tag":              "tag2",
+    "first":            "2016-01-01 12:00:00",
+    "last":             "2016-01-01 16:00:00",
+    "all_opens":        20,
+    "unique_opens":     15,
+    "all_clicks":       10,
+    "unique_clicks":    9,
+    "messages":         30,
+    "deliveries":       30
 }]
 ```
 
@@ -54,7 +58,15 @@ this message will not influence the `first` and `last` time for the tag, as
 well as of course not being counted towards the total number of clicks and
 opens itself.
 
-The `opens` and `clicks` keys show the number of opens and clicks detected.
+The `all_opens` and `all_clicks` keys show the number of opens and clicks
+detected. This are all opens and clicks we detected, even if multiple opens
+or clicks originated from the same receiver of the same message.
+
+The `unique_opens` and `unique_clicks` keys keys show the number of opens
+and clicks unique to a message. Say a person clicks twice on a link in a
+received message, it will only show as a single unique click, but as two
+clicks under all_clicks.
+
 Note that the number of opens is - at best - an approximation. We use a
 tracking image to detect opens and quite a lot of email clients block
 external images by default and thus will not download the tracking image,
@@ -84,12 +96,14 @@ As a result of this request, you will get a JSON-object with the following keys:
 
 ```json
 {
-    "tag":          "tag1",
-    "first":        "2016-01-01 12:00:00",
-    "last":         "2016-01-01 16:00:00",
-    "opens":        10,
-    "clicks":       5,
-    "messages":     15,
-    "deliveries":   15
+    "tag":              "tag1",
+    "first":            "2016-01-01 12:00:00",
+    "last":             "2016-01-01 16:00:00",
+    "all_opens":        10,
+    "unique_opens":     8,
+    "all_clicks":       5,
+    "unique_clicks":    3
+    "messages":         15,
+    "deliveries":       15
 }
 ```

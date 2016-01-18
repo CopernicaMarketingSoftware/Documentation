@@ -6,7 +6,7 @@ et cetera) to verify that your emails are actually sent by you (and not
 by a spammer or malicious fisher). SMTPeter comes with an easy to use
 and powerful dashboard to configure this.
 
-Why do you need this? For that to understand, you must know that email was
+Why do you need this? To understand, you must know that email was
 traditionally not designed to prevent _bad guys_ from sending out emails
 pretending to be sent by you. The email protocol was invented a long time
 ago, when the internet was only used by researchers as a tool to send
@@ -19,7 +19,7 @@ sent by someone else. Spammers and fishers abuse this.
 Fortunately, new technologies have been invented to solve this shortcoming,
 technologies with names like DMARC, DKIM and SPF. These technologies are
 here to help you. If you configure your domain and DNS records correctly,
-you can be pretty sure that others can no longer send out email out of
+you can be pretty sure that others can no longer send out email in
 your name. However, these technologies not only make it harder for spammers
 and fishers to send out email, but it makes it more difficult for legitimate
 senders (like you!) to send email as well. SMTPeter can help you out.
@@ -29,7 +29,7 @@ senders (like you!) to send email as well. SMTPeter can help you out.
 
 The DKIM, SPF, and DMARC technologies use the domain name system (DNS) to
 secure email. DNS is traditionally the technology to convert human readable
-domain names (like yourcompany.com) into numeric IP addresses that are 
+domain names (like yourcompany.com) into numeric IP addresses that are
 understood by computers. This system has been enhanced to not only convert
 domain names into IP addresses, but also to answer questions about who
 is allowed to send email using specific domains. If you own one or more
@@ -37,8 +37,8 @@ domains, you can simply add a couple of extra records to your DNS
 servers (or ask your provider to do this for you) so that you can send
 legitimate email.
 
-SMTPeter provides guidance in how the change your DNS records in order 
-to use the above mentioned technologies. In the dashboard of SMTPeter
+SMTPeter provides guidance in how the change your DNS records in order
+to use the above mentioned technologies. In the SMTPeter dashboard
 you can find forms and wizards to generate DNS records that you can
 copy into your name server configuration.
 
@@ -46,18 +46,18 @@ copy into your name server configuration.
 ## Signing your emails with a DKIM key
 
 With SMTPeter you can automatically sign your emails. This allows receiving
-parties to verify if the mail was indeed sent by you and that the content
+parties to verify whether the mail was indeed sent by you and that the content
 of the email (including attachments) was not modified during transport.
 
-This signing technology is based on the mechanism of related private and 
+This signing technology is based on the mechanism of related private and
 public keys. Your public keys are published in the DNS records of your domains
 (and can therefore be seen by everyone in the world), while the private
 key that are needed to sign your messages are privately stored on the SMTPeter
 servers. This technology ensures that mails can only be signed by you (if
 you send your mails through SMTPeter), and that they can be verified by
 everyone else (because everyone has access to the public key to check
-the signatures). This makes it impossible for spammers, fishers, or anyone 
-else to sign mails out of your name, simply because no one else has access to 
+the signatures). This makes it impossible for spammers, fishers, or anyone
+else to sign mails out of your name, simply because no one else has access to
 your private key.
 
 
@@ -65,9 +65,9 @@ your private key.
 
 When you create a sender domain, a DKIM key is automatically generated for you.
 You simply have to copy and paste these records from the SMTPeter dashboard into
-your own DNS server (or the DNS tool of your provider) and you're ready to go. 
+your own DNS server (or the DNS tool of your provider) and you're ready to go.
 
-Do you already have private and public key pairs, and do you now want 
+Do you already have private and public key pairs, and do you now want
 SMTPeter to use these? No problem, get in touch with us and we will fix
 this for you.
 
@@ -75,13 +75,13 @@ this for you.
 ## Important: automatic DKIM keys rotation!
 
 Your private keys are stored on the SMTPeter servers and are never exposed.
-The technology behind the public and private keys is very secure, yet, if 
-someone spends a lot of time on it, the keys can be broken. Therefore, you 
+The technology behind the public and private keys is very secure, yet, if
+someone spends a lot of time on it, the keys can be broken. Therefore, you
 do want to update your keys every now and then.
 
-SMTPeter automatically generates every six months a new DKIM key for you.
-Instructions are send to you by email and are, ofcourse, also available
-in the SMTPeter's dashboard. After a while, you are notified when it is
+SMTPeter automatically generates a new DKIM key for you every six months.
+Instructions are sent to you by email and are, ofcourse, also available
+in the SMTPeter dashboard. After a while, you are notified when it is
 safe to remove the old DKIM key from your DNS.
 
 
@@ -92,9 +92,9 @@ which you normally send out email. For example, if you normally send out
 email from the domain name "example.com", you can enter this domain in the
 SMTPeter dashboard. SMTPeter will start up a wizard that asks you some
 questions. After you have answered these questions SMTPeter will show you
-step by step how to adjust your DNS records for setting up DMARC, DKIM and
-SPF. If you copy-and-paste these DNS records from the SMTPeter.com dashboard
-into your DNS configuration tool, your email platform is ready for use.
+step by step instructions to adjust your DNS records for setting up DMARC,
+DKIM and SPF. If you copy-and-paste these DNS records from the SMTPeter.com
+dashboard into your DNS configuration tool, your email platform is ready for use.
 
 Is that all you have to do? No, sadly it is not. The moment you have copied
 and installed the DNS records according to the suggestions made by SMTPeter,
@@ -139,8 +139,8 @@ third approach: you can use a (new) _subdomain_ for your email delivery that is
 used by SMTPeter instead. For example, if your normal mail is sent out from the
 "example.com" domain name, you can use SMTPeter.com to set up a sender
 domain for a subdomain e.g. "newsletter.example.com". After this setup
-you can use the SMTPeter.com service just for messages with a _from_ address that ends with 
-"@newsletter.example.com". You still can use your current setup to send 
+you can use the SMTPeter.com service just for messages with a _from_ address that ends with
+"@newsletter.example.com". You still can use your current setup to send
 mails from example.com.
 
 If you want to use this setup, you can create a sender domain via the dashboard
@@ -153,7 +153,7 @@ newsletters must use a _from_ address of the form "something@newsletter.example.
 This of course does not look as cool as a "something@example.com", but
 it allows you to setup SMTPeter.com without changing the rest of your
 email infrastructure. Obviously, if you use this approach, only mails
-that end with "newsletter.example.com" can be verified by receiving mail servers. 
+that end with "newsletter.example.com" can be verified by receiving mail servers.
 Mails ending with just "example.com" do not benefit from the increased
 security.
 
@@ -184,7 +184,7 @@ out emails via another server than SMTPeter.com.
 If you are comfortable with the results in the reports, you can make some
 reconfigurations, so receiving servers do not simply accept all your emails
 anymore. This will increase the security of your emails, yet, there is also
-a greater impact if you do make a mistake. Fortunately, changing the behavior 
+a greater impact if you do make a mistake. Fortunately, changing the behavior
 is not an all or nothing setting, so you can gradually increasing the security
 without increasing the impact of an error to much. You can basically configure two things:
 (1) what do you want receivers to do with mails that are not sent out via
@@ -195,7 +195,7 @@ want this behavior?
 
 What a receiver should do with your emails can be set with a policy.
 There are three types of policies: "none", "quarantine", and "reject".
-The most loose policy is "none". This means that all mails 
+The most loose policy is "none". This means that all mails
 should be accepted, even the ones that were not sent via SMTPeter.com. This
 is the policy that is advised by SMTPeter to start with.
 "Quarantine" is more strict and indicates that you want mails that are not
@@ -207,11 +207,11 @@ not respect the "none" policy and quarantine or reject such messages anyway.
 
 Besides the policy you can specify a percentage of mails to which the
 policy should be applied to. If you set the policy to "quarantine", and the
-precentage to "10", it means that only 10% of all mails that do not
+percentage to "10", it means that only 10% of all mails that do not
 come from a SMTPeter.com server should be quarantined, and you want all
 other mails to be accepted anyway. If you set the policy to "reject, and
 the percentage to "5", it means that only 5% of all mails that do not
-come form SMTPeter.com server should be rejected. The other 95% of the 
+come form SMTPeter.com server should be rejected. The other 95% of the
 mails that do not come from SMTPeter.com will be quarantined in this case.
 
 So, after having used the slow rollout setting suggested by SMTPeter
