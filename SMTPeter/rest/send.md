@@ -271,6 +271,15 @@ http://clicks.example.com/QogGwQIAgQQAg-path-of-the-uri
 [Set up your click domain](https://www.smtpeter.com/app/#/admin/click-tracking "Set up your click domain").
 
 
+## preventscam
+
+When "preventscam" is set to true, links with a label equal to the link will
+not be tracked. In order to track links the have to be rewritten as discussed
+above. If the label of the url is equal to the url and the url is rewritten,
+the link may look like a scam. I.e., the link points to something else
+than what it displays. This may look like a scam. With "preventscam"
+you avoid this type of behavior.
+
 ## openstracking
 
 This starts by detecting if your sent message

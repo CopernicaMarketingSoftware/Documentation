@@ -21,4 +21,5 @@ The headers in the table below can be used to affect SMTPeter's behavior.
 | x-smtpeter-trackclicks:  | When set to true, links will be tracked   |
 | x-smtpeter-trackbounces: | When set to true, bounces will be tracked |
 | x-smtpeter-trackopens:   | When set to true, opens will be tracked   |
+| x-smtpeter-preventscam:  | When set to true, links with labels equal to the link will not be tracked |
 | x-smtpeter-tags:         | Comma-separated list of message tags      |
