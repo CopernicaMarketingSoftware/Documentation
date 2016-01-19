@@ -57,7 +57,7 @@ over port 465 is faster and SMTPeter supports its usage.
 ## Examples
 
 To demonstrate how easy connecting to SMTPeter is we will give you three simple
-steps of how to set up SMTPeter, with detailed descriptions of the configuration
+steps showing how to set up SMTPeter, with detailed descriptions of the configuration
 of various programs.
 
 

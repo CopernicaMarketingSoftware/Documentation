@@ -1,6 +1,6 @@
 # Features
 
-SMTPeter is not only a cloud-based SMTP service for fast and secure email 
+SMTPeter is not only a cloud-based SMTP service for fast and secure email
 delivery, it has extra unique features too. These features are listed over
 here.
 
@@ -22,7 +22,7 @@ can switch it of.
 
 ## Increased security with ease
 
-With SMTPeter you can use DKIM, SPF and DMARC easily. These names are 
+With SMTPeter you can use DKIM, SPF and DMARC easily. These names are
 abbreviation of current technologies that enable receiving servers and
 mailbox providers (like Gmail, Yahoo, Hotmail, et cetera) to verify that
 your emails are actually sent by you (and not by a spammer or malicious
@@ -43,7 +43,7 @@ care of bounces yourself, you can let SMTPeter do this for you.
 ## Flexible input
 
 With SMTPeter you can send your MIME messages or let SMTPeter create MIME messages
-out the information you provide.
+out of the information you provide.
 
 
 ## Detailed Statistics
@@ -56,9 +56,9 @@ on which links are clicked within the email with our click statistics.
 
 ## Email Throttling
 
-Sending large volumes of email messages can be tricky: receiving domains often set 
+Sending large volumes of email messages can be tricky: receiving domains often set
 limits on the amount of messages or connections they accept. SMTPeter knows
-about these limits and throttles automatically your messages for best deliverability.
+about these limits and automatically throttles your messages for best deliverability.
 
 
 ## Simplicity
@@ -75,11 +75,11 @@ There are two different ways to use SMTPeter: either using the SMTP API or REST 
 The SMTP protocol is the traditional protocol mail programs use to communicate with
 each other, while REST is a protocol built on top of HTTP, the protocol of the web.
 
-You can use the SMTP protocol if you have already the infrastructure for this
+You can use the SMTP protocol if you already have the infrastructure for this
 or if you are using an e-mail client like Outlook or Thunderbird. You can
 also use our REST API, which is more flexible and efficient.
 
-* [Read our SMTP API Documentation][smtp-api-documentation] 
+* [Read our SMTP API Documentation][smtp-api-documentation]
 * [Read the REST API Documentation](copernica-docs:SMTPeter/api-documentation/rest-api "REST API documentation")
 
 [smtp-api-documentation]: copernica-docs:SMTPeter/api-documentation/smtp-api "SMTP API documentation"
