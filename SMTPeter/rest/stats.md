@@ -102,7 +102,7 @@ As a result of this request, you will get a JSON-object with the following keys:
     "all_opens":        10,
     "unique_opens":     8,
     "all_clicks":       5,
-    "unique_clicks":    3
+    "unique_clicks":    3,
     "messages":         15,
     "deliveries":       15
 }
