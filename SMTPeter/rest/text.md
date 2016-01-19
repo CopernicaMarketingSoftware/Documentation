@@ -1,6 +1,6 @@
 # REST API method: text
 
-To retrieve the text send previously you use the `html` method. This will
+To retrieve the text send previously you use the `text` method. This will
 return the text as it was received by SMTPeter.
 
 This method can be called using the following URI:
