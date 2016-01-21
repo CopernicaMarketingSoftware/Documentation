@@ -19,7 +19,7 @@ contain one or more of the following variables:
 * [cc](copernica-docs:SMTPeter/rest/send#cc)
 * [text](copernica-docs:SMTPeter/rest/send#text)
 * [html](copernica-docs:SMTPeter/rest/send#html)
-* [inlinizenecss](copernica-docs:SMTPeter/rest/send#inlinizecss)
+* [inlinecss](copernica-docs:SMTPeter/rest/send#inlinecss)
 * [dsn](copernica-docs:SMTPeter/rest/send#dsn)
 * [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
 * [clicktracking](copernica-docs:SMTPeter/rest/send#clicktracking)
@@ -152,14 +152,14 @@ With "text" you can set the text version of your email.
 With "html" you can set the HTML version of the email.
 
 
-## inlinizecss
+## inlinecss
 
 By setting this variable to true you enable the feature that your stylesheet will
-be inlinize.
+be inlined.
 
 The stylesheet (CSS) of your email is normally placed in the header of your HTML document.
 However, some web based email clients strip out these HTML headers, and get rid of the
-complete stylesheet of your email. To avoid this, SMTPeter can automatically inlinize
+complete stylesheet of your email. To avoid this, SMTPeter can automatically inline
 all CSS code. If you use this feature, the CSS stylesheet that was originally placed on
 top of your HTML document, is transformed by SMTPeter into many different "style" attributes
 for the individual tags. Even when the header gets removed by a web based email client,
@@ -280,12 +280,14 @@ the link may look like a scam. I.e., the link points to something else
 than what it displays. This may look like a scam. With "preventscam"
 you avoid this type of behavior.
 
+
 ## openstracking
 
 This starts by detecting if your sent message
 is opened or not. SMTPeter's open tracking functionality can be used for this.
 If you enable open tracking, SMTPeter tracks all opens of your email and
 shows the statistics in the statistics overview of your SMTPeter dashboard.
+
 
 ## tags
 
@@ -307,3 +309,35 @@ could be something like this:
 
 For more information about statistics and how to retrieve them, see the
 [documentation on the stats method](copernica-docs:SMTPeter/rest/stats "documentation on the stats method").
+
+
+## Result
+
+After successfully posting your request SMTPeter will send out your message or messages.
+Each sent message will get a unique ID to identify it. These unique IDs will
+be returned to you as properties in a JSON encoded string. The values of the
+properties is the recipient of the message. The JSON looks like:
+
+```json
+{
+    "id1" : "recipient1",
+    "id2" : "recipient2",
+    ...
+}
+```
+With these ids you can obtain information using the GET methods [text](copernica-docs:SMTPeter/rest/text "REST command text")
+and [html](copernica-docs:SMTPeter/rest/html "REST command html")
+
+If your post resulted in an error SMTPeter will also return a JSON encoded
+string. This JSON has a property "error" that holds another JSON object.
+This object has the property "message", that holds the error message. E.g.:
+
+```json
+{
+    "error": {
+        "message": "Invalid access token"
+    }
+}
+```
+
+
