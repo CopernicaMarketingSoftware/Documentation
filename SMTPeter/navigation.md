@@ -4,6 +4,7 @@
 * [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
 * [REST API](copernica-docs:SMTPeter/rest-api "REST API")
 * [MIME Headers](copernica-docs:SMTPeter/mime "MIME headers")
+* [Warming up IP addresses](copernica-docs:SMTPeter/warming-up-ip-address "Warming up IP addresses")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
 * [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
 * [Examples](copernica-docs:SMTPeter/examples "Examples")
