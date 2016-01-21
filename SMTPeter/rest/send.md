@@ -315,8 +315,8 @@ For more information about statistics and how to retrieve them, see the
 
 After successfully posting your request SMTPeter will send out your message or messages.
 Each sent message will get a unique ID to identify it. These unique IDs will
-be returned to you as properties in a JSON encoded string. The values of the
-properties is the recipient of the message. The JSON looks like:
+be returned to you as properties in a JSON encoded string. The value of each
+property is the recipient of the message. The JSON looks like:
 
 ```json
 {

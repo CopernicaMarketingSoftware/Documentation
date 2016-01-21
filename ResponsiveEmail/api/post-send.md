@@ -119,10 +119,10 @@ Content-Type: application/json
 
 ## Return data
 
-After successfully posting your request your message or messages will be sent.
+After successfully posting your request, your message or messages will be sent.
 Each sent message will get a unique ID to identify it. These unique IDs will
-be returned to you as properties in a JSON encoded string. The values of the
-properties is the recipient of the message. The JSON looks like:
+be returned to you as properties in a JSON encoded string. The value of each
+property is the recipient of the message. The JSON looks like:
 
 ```json
 {
@@ -132,8 +132,8 @@ properties is the recipient of the message. The JSON looks like:
 }
 ```
 
-If your post resulted in an error SMTPeter will also return a JSON encoded
-string. This JSON has a property "error" that holds another JSON object.
+If your post resulted in an error another JSON encoded string will be returned.
+This JSON has a property "error" that holds another JSON object.
 This object has the property "message", that holds the error message. E.g.:
 
 ```json
@@ -143,5 +143,3 @@ This object has the property "message", that holds the error message. E.g.:
     }
 }
 ```
-
-
