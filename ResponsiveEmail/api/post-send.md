@@ -106,7 +106,7 @@ Content-Type: application/json
     "from" : "example@example.org",
     "to": "john@doe.com",
     "cc": "john@doedoe.com",
-    "inlinizecss": true,
+    "inlinecss": true,
     "clicktracking": false,
     "bouncetracking": true,
     "openstracking": false,
