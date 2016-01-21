@@ -35,7 +35,7 @@ which can be included in each POST request. Using these variables you can enable
 certain features. This makes it possible to use different settings for individual emails.
 
 ```text
-"inlineizecss":        When set to true, all CSS will be inlined inside the HTML
+"inlinecss":           When set to true, all CSS will be inlined inside the HTML
 "clicktracking":       When set to true, links will be redirected and tracked
 "bouncetracking":      When set to true, bounces will be tracked
 "openstracking":       When set to true, opens will be tracked
@@ -116,3 +116,32 @@ Content-Type: application/json
         "ret":  "HDRS",
     }
 }
+
+## Return data
+
+After successfully posting your request your message or messages will be sent.
+Each sent message will get a unique ID to identify it. These unique IDs will
+be returned to you as properties in a JSON encoded string. The values of the
+properties is the recipient of the message. The JSON looks like:
+
+```json
+{
+    "id1" : "recipient1",
+    "id2" : "recipient2",
+    ...
+}
+```
+
+If your post resulted in an error SMTPeter will also return a JSON encoded
+string. This JSON has a property "error" that holds another JSON object.
+This object has the property "message", that holds the error message. E.g.:
+
+```json
+{
+    "error": {
+        "message": "Decide: recipient or recipients. Can't have both"
+    }
+}
+```
+
+
