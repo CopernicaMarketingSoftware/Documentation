@@ -37,7 +37,7 @@ $connection = new Yothalot\Connection(array(
    "exchange"     => "",
    "mapreduce"    => "mapreduce",
    "races"         => "races",
-   "jobs"         => "jobs
+   "jobs"         => "jobs"
 )); 
 ```
 
