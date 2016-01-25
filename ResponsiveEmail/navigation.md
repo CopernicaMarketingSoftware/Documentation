@@ -8,7 +8,6 @@
   * [Content blocks](copernica-docs:ResponsiveEmail/json/property-content "Content blocks")
      * [Button blocks](copernica-docs:ResponsiveEmail/json/block-button "Button blocks")
      * [Container blocks](copernica-docs:ResponsiveEmail/json/block-container "Container blocks")
-     * [Feed blocks](copernica-docs:ResponsiveEmail/json/block-feed "Feed blocks")
      * [Follow blocks](copernica-docs:ResponsiveEmail/json/block-follow "Follow blocks")
      * [Heading blocks](copernica-docs:ResponsiveEmail/json/block-heading "Heading blocks")
      * [HTML blocks](copernica-docs:ResponsiveEmail/json/block-html "HTML blocks")
