@@ -42,10 +42,12 @@ class.
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
+* [Interface Yothalot\Task](copernica-docs:Yothalot/php-task)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
 * [Class Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
+* [Class Yothalot\TaskResult](copernica-docs:Yothalot/php-taskresult "TaskResult")
 
 ## Utility classes
 
@@ -72,12 +74,14 @@ used internally by the Yothalot framework for intermediate result files.
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race)
+* [Interface Yothalot\Task](copernica-docs:Yothalot/php-task)
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
 * [Class Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
 * [Class Yothalot\Job](copernica-docs:Yothalot/php-job "Job")
 * [Class Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
 * [Class Yothalot\Path](copernica-docs:Yothalot/php-path "Path")
 * [Class Yothalot\RaceResult](copernica-docs:Yothalot/php-raceresult "RaceResult")
+* [Class Yothalot\TaskResult](copernica-docs:Yothalot/php-taskresult "TaskResult")
 * [Class Yothalot\Record](copernica-docs:Yothalot/record "Record")
 * [Class Yothalot\Reducer](copernica-docs:Yothalot/php-reducer "Reducer")
 * [Class Yothalot\Result](copernica-docs:Yothalot/php-result "Result")

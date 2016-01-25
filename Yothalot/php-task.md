@@ -1,46 +1,37 @@
-# Yothalot\Race
+# Yothalot\Task
 
 Yothalot was designed to run map/reduce jobs. However, since Yothalot
 had to be able distribute jobs over different servers for that, we
-decided to also support different types of jobs: like race jobs.
+decided to also support different types of jobs: like normal jobs.
 
-The *Yothalot\Race* class offers you the possibility to start a number of
-parallel running PHP scripts. The result of the first job to
-complete is returned back to you. This could for example be useful if you
-try to locate information in a large set of log files -- as soon as one
-job finds the appropriate entry in the log the result is returned an all
-other jobs are stopped.
+The *Yothalot\Task* class offers you the possibility to run a single job on the
+yothalot cluster. This for example can be used to start more advanced map reduce
+jobs that need access to the glusterfs during creation.
 
-## Yothalot\Race interface
+## Yothalot\Task interface
 
-To write a race job, you have to create a class that implements this
-Yothalot\Race interface. This interface looks as follows:
+To write a task job, you have to create a class that implements this
+Yothalot\Task interface. This interface looks as follows:
 
 ```php
 <?php
-interface Yothalot\Race
+interface Yothalot\Task
 {
     public function includes();
     public function process($value);
 }
 ?>
 ```
-When you write your own race class, keep in mind that the Yothalot
-framework distributes the job over multiple servers. It is therefore possible
-that your object gets serialized and is moved to a different server, and
-that multiple instances are running at the same time.
-
 
 ## Serializing and unserializing
 
-The Yothalot framework serializes and unserializes your objects to distribute them
-over different nodes in the cluster. If there are any files that have to be
-included before the object is unserialized, you can name these files in the
-`includes()` method.
+The Yothalot framework serializes and unserializes your object to distribute them
+over a node in the cluster. If there are any files that have to be included
+before the object is unserialized, you can name these files in the `includes()` method.
 
 ```php
 <?php
-class MyRace implements Yothalot\Race
+class MyTask implements Yothalot\Task
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -62,7 +53,7 @@ custom serialize and unserialize algorithm, you can simply implement the
 
 ```php
 <?php
-class MyRace implements Yothalot\Race, Serializable
+class MyTask implements Yothalot\Task, Serializable
 {
     /**
      *  Files that should be loaded before the object is unserialized
@@ -105,7 +96,7 @@ one parameter, the data, and should return NULL if the algorithm was not complet
 
 ```php
 <?php
-class MyRace implements Yothalot\Race
+class MyTask implements Yothalot\Task
 {
     /**
      *  Implementation for a process function
@@ -114,17 +105,10 @@ class MyRace implements Yothalot\Race
      */
     public function process($value)
     {
-        // does this job win the race?
-        if (check_if_data_contains_what_we_were_looking_for($value))
-        {
-            // return the found data (all other running sub-jobs will be killed)
-            return "data found";
-        }
-        else
-        {
-            // data was not found, let other processes continue
-            return NULL;
-        }
+        // long processing job that runs on the yothalot cluster
+
+        // output that we will return to the caller
+        return array(1, 2, 3);
     }
 }
 ?>
