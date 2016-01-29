@@ -17,7 +17,6 @@ class Yothalot\Connection
 }
 ```
 
-
 ## Constructor
 
 The constructor takes one parameter, an associative array holding the
@@ -62,7 +61,11 @@ to the empty exchange and set the routing keys to "mapreduce", "races", and
 "jobs" respectively. Because the default values are good for most use cases, you often see that
 connections are created by passing only two parameters. However, if you
 happen to have a different RabbitMQ  setup, you can set the `"exchange"`
-and routing keys accordingly.
+and routing keys accordingly. The keys have default values that can
+be set in the yothalot.ini file (located in `/etc/php5/mods-available/`).
+A standard yothalot.ini file has the defaults listed above.
+
+
 
 ```php
 /**
