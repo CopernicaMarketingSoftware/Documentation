@@ -17,7 +17,7 @@ All available properties of this block type are mentioned in the table below.
 | [src](copernica-docs:ResponsiveEmail/json/property-src) | _string_ | The url of the image.                                                                                     |
 | [alt](copernica-docs:ResponsiveEmail/json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email.                     |
 | [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the image be aligned? default is left.                                           |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _string_ | The background settings for the video block.                                                |
+| [background](copernica-docs:ResponsiveEmail/json/property-background) | _string_ | The background settings for the image block.                                                |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the image.                                                                            |
 | [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                                |
 | [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _block_ | Visibility based on device, client and/or receiver.                                          |

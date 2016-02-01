@@ -20,7 +20,6 @@ All available properties of this block type are mentioned in the table below.
 | [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                               |
 | [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container.                                                |
 | [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | The alignment of the social media icons of this block and their label text.                 |
-| [size](copernica-docs:ResponsiveEmail/json/property-follow-size) | _number_ | The size of the displayed icons.                                                       |
 
 
 ## Example usage
