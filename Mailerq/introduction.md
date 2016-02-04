@@ -4,7 +4,7 @@ MailerQ is a Mail Transfer Agent (MTA) that uses [RabbitMQ](https://www.rabbitmq
 for its message queues. Before you install and configure MailerQ you will need to download 
 and set-up RabbitMQ. Once you have installed RabbitMQ and have access to a running and 
 up-to-date RabbitMQ server, you can proceed with installing MailerQ. For tips on 
-how to install RabbitMQ, read our [RabbitMQ installation article](http://www.mailerq.io/rabbitmq-install "RabbitMQ installation").
+how to install RabbitMQ, read our [RabbitMQ installation article](rabbitmq-install "RabbitMQ installation").
 
 **Note: MailerQ requires RabbitMQ version 3.3.1+**
 
