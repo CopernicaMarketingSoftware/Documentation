@@ -12,7 +12,7 @@
 * [Management console](management-console "Management console")
 * [Database access](database-access "Database access")
 * [Message store options](message-store-options "Message Store options")
-* [Logging](logging "Logging")
+* [Logging](logging "Logging!")
 * [Advanced configuration](configuration "Configure MailerQ")
 * [Responsive-email](responsive-email "Responsive e-mail")
 * [Examples](mailerq-examples "MailerQ examples")
