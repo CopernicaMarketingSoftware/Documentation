@@ -56,7 +56,7 @@ specified page and custom-queues does not pop up anywhere in the docs
 
 As we explained above, the queues that are used to publish the results to are 
 configured in the global configuration file. However, if you want to use 
-different queues for specific emails, you can do so by [setting a property "queues"](copernica-docs:Mailerq/send-email#custom-queues "Curstom queues") in the JSON object.
+different queues for specific emails, you can do so by [setting a property "queues"](send-email#custom-queues "Curstom queues") in the JSON object.
 
 If the JSON object loaded from the outbox queue holds this "queues" property, MailerQ ignores the queues set in the configuration file, and uses those custom result queues instead.
 -->
@@ -130,7 +130,7 @@ will not throw away the message data.
 As we mentioned above, the message bodies are removed from the JSON object 
 unless you set the `keepmime` property in the original JSON object.
 
-However, if you have enabled the [message store](copernica-docs:Mailerq/delivery-properties),
+However, if you have enabled the [message store](delivery-properties),
 MailerQ will still remove the mime from the JSON object, even if you included 
 the `keepmime` property. Instead, a `key` property is added to the JSON object 
 that can be used to retrieve the mime from the message store.

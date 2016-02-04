@@ -4,7 +4,7 @@ MailerQ can be configured, using the config file that can be found at
 `/etc/mailerq/config.txt`.  The `config.txt` file holds configuration options 
 for the connection to RabbitMQ, storage engine (Couchbase, MongoDB, MySQL, 
 SQLite or PostgreSQL) and database (MySQL, SQLite or PostgreSQL) and other 
-options for [MailerQ itself](copernica-docs:Mailerq/database-access "The MailerQ database").
+options for [MailerQ itself](database-access "The MailerQ database").
 
 ## License
 

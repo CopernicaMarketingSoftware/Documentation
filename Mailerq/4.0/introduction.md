@@ -4,7 +4,7 @@ MailerQ is a Mail Transfer Agent (MTA) that uses [RabbitMQ](https://www.rabbitmq
 for its message queues. Before you install and configure MailerQ, you will need to download 
 and set up RabbitMQ (version 3.3.1+). Once RabbitMQ is installed and you have access to a running and 
 up-to-date RabbitMQ server, you can proceed with installing MailerQ. For tips on 
-how to install RabbitMQ, read our [RabbitMQ installation article](copernica-docs:Mailerq/rabbitmq-install "RabbitMQ installation").
+how to install RabbitMQ, read our [RabbitMQ installation article](rabbitmq-install "RabbitMQ installation").
 
 ## Installing MailerQ
 
@@ -43,8 +43,8 @@ set before you can start MailerQ. The most important options are the address
 and login credentials of your RabbitMQ message broker and your license key
 location. The configuration of these options is discussed below. A complete 
 list of all options on how MailerQ interacts with RabbitMQ can be found 
-[here](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ").
-A list of other configurable options is given [here](copernica-docs:Mailerq/configuration "MailerQ configuration").
+[here](rabbitmq-config "Connect MailerQ with RabbitMQ").
+A list of other configurable options is given [here](configuration "MailerQ configuration").
 
 ### Configuring MailerQ to connect with RabbitMQ
 
@@ -73,7 +73,7 @@ logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://
 
 These basic settings enable MailerQ to connect to RabbitMQ. A complete list of all
 configurable options on how MailerQ interacts with RabbitMQ can be found
-[here](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ").
+[here](rabbitmq-config "Connect MailerQ with RabbitMQ").
 
 ### License file
 
@@ -90,7 +90,7 @@ as config.txt (i.e. `/etc/mailerq/license.txt`). If you have questions about you
 feel free to send an email to [info@mailerq.com](mailto:info@mailerq.com).
 
 With these configuration steps you are ready to start. However, we do recommend 
-reading the [page](copernica-docs:Mailerq/rabbitmq-config "Connect MailerQ with RabbitMQ") 
+reading the [page](rabbitmq-config "Connect MailerQ with RabbitMQ") 
 on how MailerQ interacts with RabbitMQ and checking all other configuration 
 options, so you can adjust your configuration accordingly.
 
@@ -103,13 +103,13 @@ $ mailerq
 ```
 
 MailerQ comes with a web based
-[management console](copernica-docs:Mailerq/management-console "An MTA with a management console")
+[management console](management-console "An MTA with a management console")
 that you can use to monitor exactly what is happening. This MTA console can be opened
 from your browser. The port number and password can be set in
-the config file (for more information see [Management Console](copernica-docs:Mailerq/management-console "Management console"). 
+the config file (for more information see [Management Console](management-console "Management console"). 
 The default location is `http://your-server-name:8485`.
 
 To start sending mails with MailerQ, you need to
-[publish an e-mail to the appropriate message queue](copernica-docs:Mailerq/send-email "Send emails with MailerQ")
-in RabbitMQ or use one of our [examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples").
+[publish an e-mail to the appropriate message queue](send-email "Send emails with MailerQ")
+in RabbitMQ or use one of our [examples](mailerq-examples "MailerQ examples").
 

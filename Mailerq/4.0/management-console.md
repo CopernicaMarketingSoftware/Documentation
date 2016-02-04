@@ -131,7 +131,7 @@ of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
 Read more about setting up flood patterns and other delivery settings in our
-[delivery throttling documentation](copernica-docs:Mailerq/delivery-limits).
+[delivery throttling documentation](delivery-limits).
 
 ## DKIM keys
 
@@ -139,7 +139,7 @@ MailerQ supports DKIM, Domain Key Identified Mail, a method for email
 authentication. Adding DKIM keys can be easily done in the management 
 console.
 
-[Read more about signing email with DKIM](copernica-docs:Mailerq/dkim "MailerQ DKIM documentation")
+[Read more about signing email with DKIM](dkim "MailerQ DKIM documentation")
 
 ## Paused deliveries
 

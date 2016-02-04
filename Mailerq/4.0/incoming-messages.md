@@ -153,7 +153,7 @@ get emptied, and can fill up fast in case of an attack. MailerQ only
 adds messages to it, and it is up to you to periodically check the
 contents of the queue and empty it, or to set a max length and/or max
 age for messages in the queue (you can use [RabbitMQ's web based 
-management console](copernica-docs:Mailerq/rabbitmq-config) to set such limits).
+management console](rabbitmq-config) to set such limits).
 
 
 ## Collecting bounces and notifications
@@ -188,7 +188,7 @@ successfully authorized to send messages. In some cases you need to be
 able to accept messages to a specific (local) email address without having 
 to authenticate first. 
 
-These can be set in the [MailerQ management console](copernica-docs:Mailerq/management-console).
+These can be set in the [MailerQ management console](management-console).
 All emails sent to specific addresses in the local email address list, will not 
 have to authenticate before sending and will be entered directly into the `rabbitmq-local`-queue. 
 

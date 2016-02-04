@@ -103,7 +103,7 @@ max-deliver-time:         <seconds>
 
 This setting is time in seconds from first delivery attempt and is a default 
 setting that is set in the configuration file. it is also possible to set a maximum 
-delivery time on a per email level. [Read more about setting per message maximum delivery time](copernica-docs:Mailerq/delivery-properties).
+delivery time on a per email level. [Read more about setting per message maximum delivery time](delivery-properties).
 
 ### Maximum delivery attempts
 
@@ -117,7 +117,7 @@ max-attempts:            <number of attempts>
 ```
 
 This setting is a default setting that is set in the configuration file.  It is 
-also possible to set the maximum delivery attempts on a per email. [Read more about setting per message maximum delivery attempts](copernica-docs:Mailerq/delivery-properties).
+also possible to set the maximum delivery attempts on a per email. [Read more about setting per message maximum delivery attempts](delivery-properties).
 
 ### Total number of connections
 
@@ -137,8 +137,8 @@ This is a limit set for a single instance of MailerQ and can not be set per doma
 ## Domain specific limits
 
 MailerQ allows you to set specific limits for each domain by settings these in the 
-[management console](copernica-docs:Mailerq/management-console) or by adding them 
-directly into the [database](copernica-docs:Mailerq/database-access). This makes it 
+[management console](management-console) or by adding them 
+directly into the [database](database-access). This makes it 
 possible to have different limits for mails sent to, for example gmail.com and hotmail.com. 
 
 To add them using the management console, all you have to do is go the the 'Email throttling' 
@@ -187,7 +187,7 @@ doesn't grow indefinitely.
 
 You can also insert these limits per domain and ip directly into your database. Our database 
 access documentation shows exactly which tables and which fields and field types MailerQ creates.  
-[Read more about database access](copernica-docs:Mailerq/database-access).
+[Read more about database access](database-access).
 
 
 ## Flood patterns
@@ -201,7 +201,7 @@ pause or slow down your email delivery.
 
 ### Creating flood patterns
 
-To set up a flood pattern you can either insert them directly into the [database](copernica-docs:Mailerq/database-access) 
+To set up a flood pattern you can either insert them directly into the [database](database-access) 
 or add them using the management console. The database access documentation shows you 
 all you need to know about which tables are available, to add them using the management 
 console you have to go to the Flood Patterns tab and press 'create new pattern'. This will 

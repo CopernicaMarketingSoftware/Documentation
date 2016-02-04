@@ -93,7 +93,7 @@ outbox queue; you can:
 *   send files to the built-in MailerQ SMTP server;
 *   send JSON-encoded email directly to RabbitMQ.
 
-[Read our separate article to learn more about sending email](copernica-docs:Mailerq/send-email).
+[Read our separate article to learn more about sending email](send-email).
 
 ### Delivery report queues
 
@@ -113,7 +113,7 @@ retried are posted there (as well as to the outbox queue).
 If you're not interested in the results, or when you're only interested in
 specific results (like failures), you can leave these values empty.
 
-[Read our separate article about the result queues](copernica-docs:Mailerq/result-queue)
+[Read our separate article about the result queues](result-queue)
 
 ### Incoming messages
 
@@ -141,12 +141,12 @@ Normally when you send an email to MailerQ using SMTP, you will first have to
 authenticate before MailerQ accepts the message. However, sometimes you will 
 want emails sent to certain (local) email addresses to be accepted without 
 authenticationbefore placing them into the `rabbitmq-local` queue. These can be 
-set in the [MailerQ management console](copernica-docs:Mailerq/management-console).
+set in the [MailerQ management console](management-console).
 
 When MailerQ recognizes these messages, it will move them to the `rabbitmq-local` 
 queue, which you can specify in the configuration file. 
 
-[Read more about incoming messages](copernica-docs:Mailerq/incoming-messages)
+[Read more about incoming messages](incoming-messages)
 
 ### Bounces & RabbitMQ
 
@@ -159,7 +159,7 @@ these messages before you move them to the outbox queue), you can set the
 `rabbitmq-dsn` variable. It holds the name of the queue to which bounces are
 published.
 
-[Read more about how MailerQ handles bounces](copernica-docs:Mailerq/sending-bounces)
+[Read more about how MailerQ handles bounces](sending-bounces)
 
 ## Cluster configuration options
 

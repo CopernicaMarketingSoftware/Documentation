@@ -1,6 +1,6 @@
 # Additional properties for delivery control
 
-In the examples given in the [Send email documentation](copernica-docs:Mailerq/send-email),
+In the examples given in the [Send email documentation](send-email),
 we only demonstrated the elementary properties `envelope`, `recipient`, and 
 `mime`. However, MailerQ allows you to fine-tune delivery by setting additional 
 properties as well. Using these properties you can set the maximum number of 
@@ -78,7 +78,7 @@ right formatting (YYYY-MM-DD HH:MM:SS).
 If you do not specify an explicit max delivery time, MailerQ will attempt to 
 deliver the mail within 24 hours (default) after the mail was first picked up from the outbox. 
 You can change the defaults in the configuration file.  
-[Read more about delivery limits](copernica-docs:Mailerq/delivery-limits)
+[Read more about delivery limits](delivery-limits)
 
 ### Max number of attempts
 
@@ -88,7 +88,7 @@ server is unreachable or does not immediately accept the message, MailerQ will
 make a new attempt a little later.
 
 By default, MailerQ tries to send out the mail six times. You can change the default 
-in the [Configuration file](copernica-docs:Mailerq/delivery-limits). 
+in the [Configuration file](delivery-limits). 
 
 If you want more or less attempts for a specific email, you can specify maxattempts propery:
 
@@ -243,7 +243,7 @@ can be found.
 
 If you use the external message store, you must make sure that you store either 
 valid MIME messages in this message store, or valid JSON messages according to 
-the specification of the [responsive email specification](copernica-docs:Mailerq/responsive-email).
+the specification of the [responsive email specification](responsive-email).
 
 Even when you have configured MailerQ to use an external message store, you may 
 still decide to publish full MIME messages to RabbitMQ, and not use the message 

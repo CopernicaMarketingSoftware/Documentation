@@ -9,11 +9,11 @@ MailerQ's database (with a direct query or by using the management console to st
 or you can add the keys to the JSON encoded messages. In this article we will explain 
 how the management console works, and how you can add the keys to the JSON, if you want 
 to find out how you can insert DKIM keys directly into MailerQ's database check our 
-[database access documentation](copernica-docs:Mailerq/database-access).
+[database access documentation](database-access).
 
 ## Adding DKIM keys using the management console
 
-To add a new DKIM key in the [management console](copernica-docs:Mailerq/management-console), 
+To add a new DKIM key in the [management console](management-console), 
 simply go the DKIM keys tab in the interface and press add new DKIM key. Here you will see a 
 form with the following options: 
 
