@@ -14,4 +14,4 @@ MQ_EXPORT void mq_initialize() {
 }
 ````
 
-The counterpart of the mq_initialize() function is the [mq_cleanup()](mq_cleanup) function.
+The counterpart of the mq_initialize() function is the [mq_cleanup()](copernica-docs:Mailerq/mq_cleanup) function.

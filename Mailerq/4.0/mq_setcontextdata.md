@@ -1,6 +1,6 @@
 # Function MQ_SetContextData
 
-This function can be called to store data which can then be retrieved later using the [MQ_ContextData()](mq_contextdata) function. The data is segmented per plugin, so data stored will not overwrite data stored by other plugins, or in different contexts.
+This function can be called to store data which can then be retrieved later using the [MQ_ContextData()](copernica-docs:Mailerq/mq_contextdata) function. The data is segmented per plugin, so data stored will not overwrite data stored by other plugins, or in different contexts.
 
 ````c
 /**

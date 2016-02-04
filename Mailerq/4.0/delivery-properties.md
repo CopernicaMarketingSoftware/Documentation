@@ -1,26 +1,27 @@
 # Additional properties for delivery control
 
-In the examples given in the [Send email documentation](send-email)
-, we only demonstrated the elementary properties "envelope", "recipient", and "mime". 
-However, MailerQ allows you to fine-tune delivery by setting additional properties as well. 
-Using these properties you can set the maximum number of send attempts, the maximum delivery time, 
-the IP addresses to use, et cetera. These properties can either be set in the JSON object when 
-publishing messages directly into the outbox message queue or as extra `x-mq-*` header in 
-the MIME message when you inject email messages using SMTP. 
+In the examples given in the [Send email documentation](copernica-docs:Mailerq/send-email),
+we only demonstrated the elementary properties `envelope`, `recipient`, and 
+`mime`. However, MailerQ allows you to fine-tune delivery by setting additional 
+properties as well. Using these properties you can set the maximum number of 
+send attempts, the maximum delivery time, the IP addresses to use, et cetera. 
+These properties can either be set in the JSON object when publishing messages 
+directly into the outbox message queue or as extra `x-mq-*` header in the MIME 
+message when you inject email messages using SMTP. 
 
-Note that the x-mq-\* header fields are only processed when you send the mail 
+Note that the `x-mq-*` header fields are only processed when you send the mail 
 over SMTP to MailerQ or when you use MailerQ as a command line utility. If you 
-publish mails directly to the AMQP message queue, the x-mq-\* headers will not 
+publish mails directly to the AMQP message queue, the `x-mq-*` headers will not 
 be processed. The headers are stripped from the message when the mail is converted 
 into a JSON object, and will thus no longer be included when the message reaches 
 the final recipient.
 
 ### Envelope address
 
-The envelope address is the address that is used in the 'MAIL FROM' communication. 
-It is a required property in the JSON object. You can set it using the `"envelope"` 
-property in the JSON object. If you submit a message as MIME 
-(via SMTP or command line), you can set it with the x-mq-envelope header.
+The envelope address is the address that is used in the 'MAIL FROM' 
+communication.  It is a required property in the JSON object. You can set it 
+using the `envelope` property in the JSON object. If you submit a message as 
+MIME (via SMTP or command line), you can set it with the `x-mq-envelope` header.
 
 #### MIME header
 
@@ -48,8 +49,8 @@ for later delivery. This can result in emails that are sent much later than the
 time that you first added them to the message queue.
 
 If you do not want an email to be delivered after a certain time, all you need to do is 
- add the `maxdelivertime` property. You can do so by adding an `x-mq-maxdelivertime` header 
- or by adding the `maxdelivertime` property to the message JSON:
+add the `maxdelivertime` property. You can do so by adding an `x-mq-maxdelivertime` header 
+or by adding the `maxdelivertime` property to the message JSON:
 
 #### MIME header
 
@@ -77,7 +78,7 @@ right formatting (YYYY-MM-DD HH:MM:SS).
 If you do not specify an explicit max delivery time, MailerQ will attempt to 
 deliver the mail within 24 hours (default) after the mail was first picked up from the outbox. 
 You can change the defaults in the configuration file.  
-[Read more about delivery limits](delivery-limits)
+[Read more about delivery limits](copernica-docs:Mailerq/delivery-limits)
 
 ### Max number of attempts
 
@@ -87,7 +88,7 @@ server is unreachable or does not immediately accept the message, MailerQ will
 make a new attempt a little later.
 
 By default, MailerQ tries to send out the mail six times. You can change the default 
-in the [Configuration file](delivery-limits). 
+in the [Configuration file](copernica-docs:Mailerq/delivery-limits). 
 
 If you want more or less attempts for a specific email, you can specify maxattempts propery:
 
@@ -116,12 +117,12 @@ When you send out HTML emails, you face the problem that not all email clients
 support stylesheets that are set in the header. Some email clients (especially 
 web based clients) strip out the CSS code from the HTML header. This often messes 
 up the layout and look of your messages. To overcome this, it is better not to set 
-CSS settings in the header in the first place, but use 'style="..."' attributes 
+CSS settings in the header in the first place, but use `style="..."` attributes 
 in the HTML code instead.
 
-MailerQ can do this automatically. If you set the "inlinecss" property to true, 
+MailerQ can do this automatically. If you set the `inlinecss` property to true, 
 MailerQ parses the HTML email, and converts the CSS code from the HTML header 
-into inline 'style="..."' attributes in the HTML body.
+into inline `style="..."` attributes in the HTML body.
 
 #### MIME header
 
@@ -144,10 +145,10 @@ x-mq-inlinecss: 1
 
 ### Normalize line endings
 
-All lines of the email must be terminated with a linefeed/newline combination: \r\n. 
-If you use other line endings (for example only newlines and no linefeeds) 
+All lines of the email must be terminated with a linefeed/newline combination: 
+`\r\n`. If you use other line endings (for example only newlines and no linefeeds) 
 the email might not get delivered, and DKIM signing might fail. However, if you 
-set the property "normalize" to 1, MailerQ will automatically convert all line 
+set the property `normalize` to 1, MailerQ will automatically convert all line 
 endings to valid linefeed/newline endings.
 
 #### MIME header
@@ -225,8 +226,9 @@ This is probably the best thing to do, as most messages are delivered right away
 and there would be more overhead in storing messages in an external message store. 
 However, if an email has to be rescheduled, and is going to be stored in RabbitMQ 
 for a longer period of time, it is better to store the MIME message in an external 
-message store. In the JSON message you will not need a "mime" property, 
-but a "key" property instead. This "key" property refers to the key where the message can be found.
+message store. In the JSON message you will not need a `mime` property, but a 
+`key` property instead. This `key` property refers to the key where the message 
+can be found.
 
 #### JSON property
 
@@ -241,7 +243,7 @@ but a "key" property instead. This "key" property refers to the key where the me
 
 If you use the external message store, you must make sure that you store either 
 valid MIME messages in this message store, or valid JSON messages according to 
-the specification of the [responsive email specification](responsive-email).
+the specification of the [responsive email specification](copernica-docs:Mailerq/responsive-email).
 
 Even when you have configured MailerQ to use an external message store, you may 
 still decide to publish full MIME messages to RabbitMQ, and not use the message 
@@ -255,7 +257,7 @@ pick it up for further processing.
 
 By default, MailerQ throws away the mime data to make room in the JSON object and 
 in the message store. If you do not want the message data to be removed, you can 
-tell so by adding the "keepmime" option:
+tell so by adding the `keepmime` option:
 
 #### MIME header
 
@@ -308,24 +310,23 @@ x-mq-retry-queue: name-of-retry-queue
 
 ````
 
-All properties of the "queues" object are optional. If you leave an option out, 
+All properties of the `queues` object are optional. If you leave an option out, 
 MailerQ will not use that queue. Thus, if you for example want to process only 
-the errors for a certain e-mail, you can only set the "failure" queue. When the 
+the errors for a certain e-mail, you can only set the `failure` queue. When the 
 delivery succeeds, MailerQ will silently discard the mail, without adding it to 
 any result queue.
 
-When the "queues" property is used, the queues mentioned in the global configuration 
+When the `queues` property is used, the queues mentioned in the global configuration 
 file are completely ignored. This is even so if you have not even specified all 
 possible queues in the MIME header or JSON object.
-
-
 
 ## Setting custom message properties
 
 To have better control over your message queue, you can set additional properties 
-that are included into RabbitMQ message, but will not be send to recipient.
+that are included into RabbitMQ message, but will not be sent to recipient.
 
-Those properties don't affect sent email at all, they are just for monitoring and debuging purpose.
+Those properties don't affect sent email at all, they are just for monitoring 
+and debuging purposes.
 
 #### MIME header
 

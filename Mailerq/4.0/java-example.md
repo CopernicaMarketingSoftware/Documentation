@@ -4,18 +4,18 @@ This example assumes that MailerQ is running and configured. It uses the
 [Java client library](http://www.rabbitmq.com/java-client.html) provided 
 by RabbitMQ.
 
-The Java example consists of two files; Send.java and Result.Java. If you want 
+The Java example consists of two files; `Send.java` and `Result.java`. If you want 
 to use these scripts, save the two files inside the same directory.
 
-### Send
+## `Send`
 
 This class connects to RabbitMQ and places a JSON encoded message on the outbox 
 message queue. To connect to RabbitMQ and to create the JSON encoded message, 
 the program uses the private variables defined inside the class. If you want 
 to use the Java example to test your MailerQ configuration, you will have to run 
-the Send class before running the Result class.
+the `Send` class before running the `Result` class.
 
-#### Send.java
+### `Send.java`
 
 ```java
 // import the rabbitmq libraries that are needed to connect to RabbitMQ
@@ -115,17 +115,17 @@ public class Send {
 }
 ```
 
-### Result
+## Result
 
-This class connects to the RabbitMQ server and gets the messages, that were 
-placed on the outbox message queue, by the Send class, back from the result 
+This class connects to the RabbitMQ server and gets the messages that were 
+placed on the outbox message queue by the `Send` class back from the result 
 message queue. The result messages from the result queue are shown to the user. 
-The Result class can only output any relevant information, if it is executed 
-after the Send class was run. The Result program will keep running, waiting for 
-new messages till it is terminated (use `Ctrl-c`). You could run the Send class 
-from an other terminal, to test the effect.
+The `Result` class can only output any relevant information when it is executed 
+after the Send class was run. The `Result` program will keep running, waiting for 
+new messages until it is terminated (use `Ctrl-C`). You could run the `Send` class 
+from another terminal, to test the effect.
 
-#### Result.java
+### `Result.java`
 
 ```java
 // import IOException
@@ -227,14 +227,14 @@ $ javac -cp rabbitmq-client.jar Send.java Result.java
 
 ```
 
-To run the the Sender class
+To run the the `Sender` class
 
 ```bash
 $ java -cp .:commons-io-1.2.jar:commons-cli-1.1.jar:rabbitmq-client.jar Send
 
 ```
 
-To run the the Result class
+To run the the `Result` class
 
 ```bash
 $ java -cp .:commons-io-1.2.jar:commons-cli-1.1.jar:rabbitmq-client.jar Result

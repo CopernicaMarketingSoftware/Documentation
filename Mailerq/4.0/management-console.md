@@ -7,7 +7,6 @@ settings to maximize deliverability on the fly. If you have multiple
 instances of MailerQ running in a cluster you can easily switch between 
 them.
 
-
 ## View the Management Console demo
 
 If you want to see the MailerQ management console in action without 
@@ -15,7 +14,6 @@ setting up a MailerQ environment, you can take a look at our
 [Management Console Demo](http://demo.mailerq.com "MailerQ Demo environment").
 The data in this environment is fictional, but all settings are available. 
 Feel free to play around with the settings and explore the options available.
-
 
 ## Activate the management console
 
@@ -32,9 +30,9 @@ www-dir:            /usr/share/mailerq/www
 The `www-port` variable holds the port number for the management console.
 80 is the default. If you use port 8485, you do
 not have to include the port number in the URL and you can access the
-management console with using a browser via address "http://hostname.of.your.server". 
+management console with using a browser via address `http://hostname.of.your.server`. 
 If you assign a different port number (like 8080), you have to include
-the port number in the URL: "http://hostname.of.your.server:8080".
+the port number in the URL: `http://hostname.of.your.server:8080`.
 
 By default, the management console is accessible via all IP addresses that are 
 assigned to the server on which MailerQ runs. If you only want to make
@@ -48,10 +46,9 @@ management console behind a firewall so that you will not have to worry
 about people breaking into it.
 
 All HTML, CSS and Javascripts that are necessary for the management 
-console are automatically installed into the "/usr/share/mailerq/www"
+console are automatically installed into the `/usr/share/mailerq/www`
 directory. If you want to run the console from out of a different
 location, you can change this dir with the `www-dir` variable.
-
 
 ## Setting up a secure management console
 
@@ -80,47 +77,42 @@ certifate and key files, and the supported ciphers can be set using
 the `www-certificate`, `www-privatekey` and `www-ciphers` variables.
 
 Once enabled, the encrypted management console can be accessed using
-the address "https://hostname.of.your.server" if you use default port 443,
-or "https://hostname.of.your.server:port" for any other port.
-
+the address `https://hostname.of.your.server` if you use default port 443,
+or `https://hostname.of.your.server:port` for any other port.
 
 ## Status overview
 
-Once you open the management console. you first get access to the status
-over view page. This shows a summary of the email messages passing through
+Once you open the management console, you first get access to the status
+Overview interface. This shows a summary of the email messages passing through
 MailerQ. Here you can see how many messages have been processed, delivered,
 retried, failed and more. It also shows the number of SMTP connections 
 that are currently active and how many are being attempted.
 
 ![MailerQ status](copernica-docs:Mailerq/Images/mailerq-overview.png)
 
-
 ### AMQP monitor
 
 The Overview interface also shows a summery of the messages going through 
 your RabbitMQ queues. It shows exactly how many messages RabbitMQ has 
-received, the amount of rescheduled messages, the messages in memory and 
-the results (success, failure, retries). It also shows the amount of 
+received, the number of rescheduled messages, the messages in memory and 
+the results (success, failure, retries). It also shows the number of 
 active temporary queues.
 
-
-## MTA IPs
+## MTA IP's
 
 To get a more detailed picture, the MailerQ MTA management console allows 
 you to zoom in on per-IP performance. This list is updated in real time.
 
 ![MailerQ IP's](copernica-docs:Mailerq/Images/mailerq-mta-ips.png)
 
-
 ## Domains
 
 Not every domain likes to receive email at high rates. The domains view 
-provides real-time information on per-domain performance e.g. queues or 
+provides real-time information on per-domain performance, e.g. queues or 
 failed deliveries. Use this info to make adjustments on the fly for 
 example modify email throttle settings.
 
 ![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-domains.png)
-
 
 ## Email throttling
 
@@ -132,7 +124,6 @@ IP addresses.
 
 ![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-email-throttling.png)
 
-
 ## Flood patterns
 
 Flood patterns are rules that override the default throttling settings 
@@ -140,15 +131,15 @@ of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
 Read more about setting up flood patterns and other delivery settings in our
-[delivery throttling documentation](delivery-limits).
+[delivery throttling documentation](copernica-docs:Mailerq/delivery-limits).
 
 ## DKIM keys
 
-MailerQ supports DKIM, Domain Key Identified Mail, a mehtod for email 
+MailerQ supports DKIM, Domain Key Identified Mail, a method for email 
 authentication. Adding DKIM keys can be easily done in the management 
 console.
 
-[Read more about signing email with DKIM](dkim "MailerQ DKIM documentation")
+[Read more about signing email with DKIM](copernica-docs:Mailerq/dkim "MailerQ DKIM documentation")
 
 ## Paused deliveries
 

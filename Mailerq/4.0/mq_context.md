@@ -11,8 +11,8 @@ to be notified when a new context is created, or when a context is destroyed, yo
 
 | Implementable function                                          | Description                                         |
 |-----------------------------------------------------------------|-----------------------------------------------------|
-| [mq_context_initialize()](mq_context_initialize) | Called by MailerQ when a worker thread is created   |
-| [mq_context_cleanup()](mq_context_cleanup)       | Called by MailerQ when a worker thread is destroyed |
+| [mq_context_initialize()](copernica-docs:Mailerq/mq_context_initialize) | Called by MailerQ when a worker thread is created   |
+| [mq_context_cleanup()](copernica-docs:Mailerq/mq_context_cleanup)       | Called by MailerQ when a worker thread is destroyed |
 
 Both of the listed functions are optional. It is not necessary for your plugin to export them, but you can for example use these functions to initialize plugin specific data, and to deallocate that data when the worker thread exits.
 
@@ -22,8 +22,8 @@ Your plugin may store a pointer to plugin specific data in a context. This is a 
 
 | Callable function                                       | Description                                       |
 |---------------------------------------------------------|---------------------------------------------------|
-| [MQ_ContextData()](mq_contextdata)       | Retrieve the plugin managed data from the context |
-| [MQ_SetContextData()](mq_setcontextdata) | Assign plugin managed data to the context         |
+| [MQ_ContextData()](copernica-docs:Mailerq/mq_contextdata)       | Retrieve the plugin managed data from the context |
+| [MQ_SetContextData()](copernica-docs:Mailerq/mq_setcontextdata) | Assign plugin managed data to the context         |
 
 The plugin data is _not_ shared between plugins. Every plugin can therefore associate its own data with a context, and you do not have to worry about other plugins that overwrite your data.
 
@@ -33,9 +33,9 @@ The main feature that a MQ_Context offers, is access to the event loop. There ar
 
 | Callable function                               | Description                                 |
 |-------------------------------------------------|---------------------------------------------|
-| [MQ_ev()](mq_ev)                 | Access to the underlying libev instance     |
-| [MQ_IOWatch()](mq_iowatch)       | Watch a filedescriptor for activity         |
-| [MQ_IOUnwatch()](mq_iounwatch)   | Stop watching a filedescriptor for activity |
-| [MQ_TimerStart()](mq_timerstart) | Start a timer                               |
-| [MQ_TimerStop()](mq_timerstop)   | Stop a timer                                |
-| [MQ_TimerReset()](mq_timerreset) | Reset a timer to a new timeout              |
+| [MQ_ev()](copernica-docs:Mailerq/mq_ev)                 | Access to the underlying libev instance     |
+| [MQ_IOWatch()](copernica-docs:Mailerq/mq_iowatch)       | Watch a filedescriptor for activity         |
+| [MQ_IOUnwatch()](copernica-docs:Mailerq/mq_iounwatch)   | Stop watching a filedescriptor for activity |
+| [MQ_TimerStart()](copernica-docs:Mailerq/mq_timerstart) | Start a timer                               |
+| [MQ_TimerStop()](copernica-docs:Mailerq/mq_timerstop)   | Stop a timer                                |
+| [MQ_TimerReset()](copernica-docs:Mailerq/mq_timerreset) | Reset a timer to a new timeout              |

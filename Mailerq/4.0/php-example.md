@@ -4,15 +4,15 @@ This example assumes that MailerQ is running and configured and that PHP
 is working on the server with the [PECL AMQP package](http://pecl.php.net/package/amqp) 
 installed.
 
-The PHP example consists of three files; settings.php, send.php and result.php. 
+The PHP example consists of three files; `settings.php`, `send.php` and `result.php`. 
 If you want to use these scripts, save the three files inside the same folder.
 
-### settings.php
+### `settings.php`
 
-The settings.php file, defines the settings that are needed to connect to 
+The `settings.php` file defines the settings that are needed to connect to 
 RabbitMQ and it also contains the settings that are being used for sending 
 an email. If you want to use the PHP example to test your MailerQ configuration, 
-you will have to adjust the values inside the settings.php file to match your 
+you will have to adjust the values inside the `settings.php` file to match your 
 configuration of MailerQ.
 
 ```php
@@ -30,12 +30,9 @@ configuration of MailerQ.
  * config.txt file  
  */
 
-$hostname  = 'localhost';    // same as the rabbitmq-host option in the config file
-$username  = 'guest';        // same as the rabbitmq-user option in the config file
-$password  = 'guest';        // same as the rabbitmq-password option in the config file
-$vhost     = '/';            // same as the rabbitmq-vhost option in the config file
-$outbox    = 'outbox_test';  // same as the rabbitmq-outbox option in the config file
-$resultbox = 'results_test'; // same as the rabbitmq-results option in the config file
+$address   = 'amqp://guest:guest@localhost';    // same as the rabbitmq-address option in the config file
+$outbox    = 'outbox_test';                     // same as the rabbitmq-outbox option in the config file
+$resultbox = 'results_test';                    // same as the rabbitmq-results option in the config file
 
 // email message settings
 $recipientDomain = 'example.org';      // domain where the test message should be delivered
@@ -46,14 +43,15 @@ $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
 
 ```
 
-### send.php
+### `send.php`
 
-This php script connects to RabbitMQ and places a JSON encoded message on 
+This PHP script connects to RabbitMQ and places a JSON encoded message on 
 the outbox message queue. To connect to RabbitMQ and to create the JSON encoded 
-message, the script uses the values from the settings.php file. If you want 
+message, the script uses the values from the `settings.php` file. If you want 
 to use this script to test your MailerQ configuration, you will have to run 
-the send.php script before running the result.php script.
+the `send.php` script before running the `result.php` script.
 
+<!-- TODO: this is not MailerQ 4.0-ready! -->
 ```php
 <?php
 
@@ -168,14 +166,15 @@ $connection->disconnect();
 
 ```
 
-### result.php
+### `result.php`
 
-This php script connects to the RabbitMQ server and gets the message, that was 
-placed on the outbox message queue by the send.php script, back from the result 
+This PHP script connects to the RabbitMQ server, and gets the message that was 
+placed on the outbox message queue by the `send.php` script back from the result 
 message queue. The result message from the result queue is shown to the user. 
-The result.php can only output any relevant information, if it is executed after 
-the send.php script was executed.
+The `result.php` can only output any relevant information when it is executed after 
+the `send.php` script was executed.
 
+<!-- TODO: this is not MailerQ 4.0-ready! -->
 ```php
 <?php
 

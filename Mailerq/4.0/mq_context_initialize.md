@@ -2,9 +2,9 @@
 
 The mq_context_initialize() is an optional function that you can add to your plugin. It is called by MailerQ during startup for each worker thread that is created. This is useful if, for example, you want to set up a database connection per thread, or want to do other initialization.
 
-This function can be implemented _by the plugin_ and is called by MailerQ when a worker thread starts. If it returns true, MailerQ hands over control to your plugin, and your plugin must call one of the functions [MQ_Continue()](mq_continue), [MQ_Complete()](mq_complete) or [MQ_Retry()](mq_retry) when it is ready to hand back control to MailerQ.
+This function can be implemented _by the plugin_ and is called by MailerQ when a worker thread starts. If it returns true, MailerQ hands over control to your plugin, and your plugin must call one of the functions [MQ_Continue()](copernica-docs:Mailerq/mq_continue), [MQ_Complete()](copernica-docs:Mailerq/mq_complete) or [MQ_Retry()](copernica-docs:Mailerq/mq_retry) when it is ready to hand back control to MailerQ.
 
-For more information on how MailerQ plugins can interact with the event loop, and how control is passed to and from plugins, see [the article about the MailerQ event loop](eventloop).
+For more information on how MailerQ plugins can interact with the event loop, and how control is passed to and from plugins, see [the article about the MailerQ event loop](copernica-docs:Mailerq/eventloop).
 
 ````c
 #include <mailerq.h>
@@ -27,4 +27,4 @@ MQ_EXPORT bool mq_context_initialize(MQ_Context *context) {
 }
 ````
 
-If you allocate memory in this function, you probably also have to add a [mq_context_cleanup](mq_context_cleanup) to your plugin.
+If you allocate memory in this function, you probably also have to add a [mq_context_cleanup](copernica-docs:Mailerq/mq_context_cleanup) to your plugin.

@@ -1,13 +1,16 @@
-<h1>MailerQ Transport Plugin for Swift Mailer</h1>
-<p>
-    If you use Swift Mailer as your main mail engine in your project you can <a href="/Resources/MailerQTransportPlugin/mailerqtransport_plugin.zip" title="download MailerQ Transport Plugin">download MailerQ Transport Plugin</a>
-    to extend functionality of the Swift Mailer. Below you can find an example showing how to combine those two projects
-    together.
-</p>
-<h4>example.php</h4>
-<p>
-    <pre class="language-php"><code class="language-php">
-&#60;?php
+# MailerQ Transport Plugin for Swift Mailer
+
+<!-- TODO: href? -->
+If you use Swift Mailer as your main mail engine in your project you can 
+<a href="/Resources/MailerQTransportPlugin/mailerqtransport_plugin.zip" title="download MailerQ Transport Plugin">download MailerQ Transport Plugin</a>
+to extend functionality of the Swift Mailer. Below you can find an example 
+showing how to combine those two projects together.
+
+<!-- TODO this is not MailerQ 4.0-ready! -->
+## `example.php`
+
+```php
+<?php
 // load required dependencies
 require_once 'swiftmailer/lib/swift_required.php';
 require_once 'MailerQPlugin/MailerQConnection.php';
@@ -39,5 +42,7 @@ $mailer = Swift_Mailer::newInstance($transport);
 
 // send the actual message using the MailerQTransporter
 $mailer->send($message);
-    </pre></code>
-</p>
+
+?>
+
+```

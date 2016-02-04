@@ -7,15 +7,15 @@ by RabbitMQ.
 The .NET/C# example consists of two files; one that takes care of placing 
 messages on the outbox queue and one that takes sent messages from the result queue.
 
-### Send
+## `Send`
 
 This class connects to RabbitMQ and places a JSON encoded message on the outbox 
 message queue. To connect to RabbitMQ and to create the JSON encoded message, 
 the program uses the private variables defined inside the class. If you want to 
 use the .NET/C# example to test your MailerQ configuration, you will have to run 
-the Send class before running the Result class.
+the `Send` class before running the Result class.
 
-#### Send.cs
+### `Send.cs`
 
 ```csharp
 // declare the namespaces
@@ -105,17 +105,17 @@ class Send {
 }
 ```
 
-### Result
+## `Result`
 
-This class connects to the RabbitMQ server and gets the messages, that were 
-placed on the outbox message queue, by the Send class, back from the result 
+This class connects to the RabbitMQ server and gets the messages that were 
+placed on the outbox message queue by the `Send` class back from the result 
 message queue. The result messages from the result queue are shown to the user. 
-The Result class can only output any relevant information, if it is executed 
-after the Send class was run. The Result program will keep running, waiting for 
-new messages till it is terminated (use `Ctrl-c`). You could run the Send class 
+The `Result` class can only output any relevant information, if it is executed 
+after the Send class was run. The `Result` program will keep running, waiting for 
+new messages until it is terminated (use `Ctrl-C`). You could run the `Send` program 
 from an other terminal, to test the effect.
 
-#### Result.cs
+### `Result.cs`
 
 ```csharp
 // declare the namespaces
@@ -202,9 +202,9 @@ class Result {
 ## Putting it all together
 
 Provided .NET/C# is working and you installed the .NET/C# AMPQ library in the 
-"/lib/" directory, you can test your configuration as follows
+`/lib/` directory, you can test your configuration as follows
 
-#### Compile the code
+### Compile the code
 
 ```bash
 $ gmcs -r:/lib/bin/RabbitMQ.Client.dll Send.cs
@@ -212,14 +212,14 @@ $ gmcs -r:/lib/bin/RabbitMQ.Client.dll Result.cs
 
 ```
 
-#### Run the Send.exe file, to put a message on the queue.
+Run the `Send.exe` file to put a message on the queue.
 
 ```bash
 $ MONO_PATH=/lib/bin mono Send.exe
 
 ```
 
-#### Run the Result.exe file, to get the result messages from the result message queue.
+Run the `Result.exe` file to get the result messages from the result message queue.
 
 ```bash
 $ MONO_PATH=/lib/bin mono Result.exe

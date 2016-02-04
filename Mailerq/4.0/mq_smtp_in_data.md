@@ -7,4 +7,4 @@ bool mq_smtp_in_data(MQ_Context *context, MQ_SmtpConnection *connection, const c
 
 ```
 
-If your plugin returns true, MailerQ hands over control to your plugin, and you should also hand control back. For more information on how MailerQ plugins can interact with the event loop, and how control is passed to and from plugins, see [the article about the MailerQ event loop](eventloop).
+If your plugin returns true, MailerQ hands over control to your plugin, and you should also hand control back. For more information on how MailerQ plugins can interact with the event loop, and how control is passed to and from plugins, see [the article about the MailerQ event loop](copernica-docs:Mailerq/eventloop).

@@ -4,7 +4,7 @@ Below you will find a short list of our most frequently asked questions about ou
 
 ## Technical Questions
 
-Before you download and install MailerQ, make sure you have a working [RabbitMQ](https://www.rabbitmq.com "RabbitMQ website") message broker (version 3.3.1+) . There are [three ways to send email](send-email "Send email") with MailerQ. However, posting messages directly to the AMQP message queue is the fastest way. Below you will find the 'technical' questions that are asked most frequent.
+Before you download and install MailerQ, make sure you have a working [RabbitMQ](https://www.rabbitmq.com "RabbitMQ website") message broker (version 3.3.1+) . There are [three ways to send email](copernica-docs:Mailerq/send-email "Send email") with MailerQ. However, posting messages directly to the AMQP message queue is the fastest way. Below you will find the 'technical' questions that are asked most frequent.
 
 ### Does MailerQ support IPv6?
 
