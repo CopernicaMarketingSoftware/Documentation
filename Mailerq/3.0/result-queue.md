@@ -27,7 +27,7 @@ It is important to realize that MailerQ only consumes messages from the outbox q
 
 ## Custom result queues
 
-As we explained above, the queues that are used to publish the results to are configured in the global configuration file. However, if you want to use different queues for specific emails, you can do so by [setting a property "queues"](copernica-docs:Mailerq/send-email#custom-queues "Curstom queues") in the JSON object.
+As we explained above, the queues that are used to publish the results to are configured in the global configuration file. However, if you want to use different queues for specific emails, you can do so by [setting a property "queues"](send-email#custom-queues "Curstom queues") in the JSON object.
 
 If the JSON object loaded from the outbox queue holds this "queues" property, MailerQ ignores the queues set in the configuration file, and uses those custom result queues instead.
 

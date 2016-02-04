@@ -23,7 +23,7 @@ password for your RabbitMQ server, as set in your RabbitMQ configuration. The de
 username is guest/guest, however this only works when connecting to localhost. If you 
 run RabbitMQ on a separate server, you will need to set your own username and password,
 or configure the RabbitMQ server to allow guest/guest logins from remote hosts. See 
-[RabbitMQ installation documentation](copernica-docs:Mailerq/rabbitmq-install) for more details
+[RabbitMQ installation documentation](rabbitmq-install) for more details
 
 If you have created a specific RabbitMQ vhost environment you can add the specific vhost
 to the `rabbitmq-vhost` variable. The default vhost is "/".
@@ -101,7 +101,7 @@ outbox queue: You can write a script that uses the AMQP protocol to publish mess
 straight into the outbox queue, you can use MailerQ's built-in SMTP server or use 
 MailerQ in CLI mode to read messages from standard input. 
 
-[Read our separate article to learn more about sending email](copernica-docs:Mailerq/send-email)
+[Read our separate article to learn more about sending email](send-email)
 
 
 ### Delivery report queues
@@ -122,7 +122,7 @@ be retried are posted there (as well as to the 'outbox' queue).
 If you're not interested in the results, or when you're only interested in
 specific results (like failures), you can leave these values empty.
 
-[Read our separate article about the result queues](copernica-docs:Mailerq/result-queue)
+[Read our separate article about the result queues](result-queue)
 
 
 ### Incoming messages
@@ -150,12 +150,12 @@ Another queue that deals with incoming messages is the `rabbitmq-local` queue. N
 an email to MailerQ using SMTP you will first have to authenticate before MailerQ 
 accepts the message. However, sometimes you will want emails sent to certain (local) 
 email addresses to be accepted without authentication and placed into the `rabbitmq-local`-queue. These can be set in the 
-[MailerQ management console](copernica-docs:Mailerq/management-console).
+[MailerQ management console](management-console).
 
 When MailerQ recognizes these messages it will move them to the `rabbitmq-local` queue, 
 which you can specify in the configuration file. 
 
-[Read more about incoming messages](copernica-docs:Mailerq/incoming-messages)
+[Read more about incoming messages](incoming-messages)
 
 
 ### Bounces & RabbitMQ
@@ -172,7 +172,7 @@ published.
 If you do not explicitly set the `mailerq-bounces` variable, it will be set
 to the outbox queue, so that DSN's are normally sent.
 
-[Read more about how MailerQ handles bounces](copernica-docs:Mailerq/sending-bounces)
+[Read more about how MailerQ handles bounces](sending-bounces)
 
 
 ## Cluster configuration options

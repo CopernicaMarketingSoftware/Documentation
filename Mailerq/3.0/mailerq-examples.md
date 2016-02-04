@@ -6,7 +6,7 @@ For the examples below, it is asumed that MailerQ will be able to communicate wi
 
 ## At this moment, the following examples are available
 
-*   [.NET/C# example](copernica-docs:Mailerq/dotnet-example ".NET/C# example")
-*   [Java example](copernica-docs:Mailerq/java-example "Java example")
-*   [PHP example](copernica-docs:Mailerq/php-example "PHP example")
-*   [Swift mailer (PHP) example](copernica-docs:Mailerq/swiftmailer-example "Swift mailer example")
+*   [.NET/C# example](dotnet-example ".NET/C# example")
+*   [Java example](java-example "Java example")
+*   [PHP example](php-example "PHP example")
+*   [Swift mailer (PHP) example](swiftmailer-example "Swift mailer example")

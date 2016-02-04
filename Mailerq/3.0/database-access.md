@@ -76,7 +76,7 @@ minutes) available in the other instances as well.
 
 ## Reading and writing to the database directly
 
-MailerQ has a powerful [web based MTA management console](copernica-docs:Mailerq/management-console "Management console"). 
+MailerQ has a powerful [web based MTA management console](management-console "Management console"). 
 This console gives you access to the database driven MailerQ configuration forms. 
 It is therefore in normal operations not at all necessary to run any 
 queries on the database by yourself. But if you do like to access the data

@@ -14,4 +14,4 @@ void MQ_TimerReset(MQ_Timer *timer, float timeout);
 
 ```
 
-For a detailed example, see [MQ_TimerStart](copernica-docs:Mailerq/mq_timerstart)
+For a detailed example, see [MQ_TimerStart](mq_timerstart)

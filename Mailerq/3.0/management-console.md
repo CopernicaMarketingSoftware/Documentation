@@ -92,7 +92,7 @@ MailerQ. Here you can see how many messages have been processed, delivered,
 retried, failed and more. It also shows the number of SMTP connections 
 that are currently active and how many are being attempted.
 
-![MailerQ status](copernica-docs:Mailerq/Images/mailerq-overview.png)
+![MailerQ status](Images/mailerq-overview.png)
 
 
 ### AMQP monitor
@@ -109,7 +109,7 @@ active temporary queues.
 To get a more detailed picture, the MailerQ MTA management console allows 
 you to zoom in on per-IP performance. This list is updated in real time.
 
-![MailerQ IP's](copernica-docs:Mailerq/Images/mailerq-mta-ips.png)
+![MailerQ IP's](Images/mailerq-mta-ips.png)
 
 
 ## Domains
@@ -119,7 +119,7 @@ provides real-time information on per-domain performance e.g. queues or
 failed deliveries. Use this info to make adjustments on the fly for 
 example modify email throttle settings.
 
-![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-domains.png)
+![MailerQ domains](Images/mailerq-domains.png)
 
 
 ## Email throttling
@@ -130,7 +130,7 @@ improve your email delivery when needed. You can choose to set up
 throttling settings for a single domain for all IP addresses or for all 
 IP addresses.
 
-![MailerQ domains](copernica-docs:Mailerq/Images/mailerq-email-throttling.png)
+![MailerQ domains](Images/mailerq-email-throttling.png)
 
 
 ## Flood patterns
@@ -140,7 +140,7 @@ of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
 Read more about setting up flood patterns and other delivery settings in our
-[delivery throttling documentation](copernica-docs:Mailerq/delivery-limits).
+[delivery throttling documentation](delivery-limits).
 
 ## DKIM keys
 
@@ -148,7 +148,7 @@ MailerQ supports DKIM, Domain Key Identified Mail, a mehtod for email
 authentication. Adding DKIM keys can be easily done in the management 
 console.
 
-[Read more about signing email with DKIM](copernica-docs:Mailerq/dkim "MailerQ DKIM documentation")
+[Read more about signing email with DKIM](dkim "MailerQ DKIM documentation")
 
 ## Paused deliveries
 
@@ -182,5 +182,5 @@ MailerQ process. All SMTP traffic received and sent out by MailerQ is
 also sent to this websocket, so you can exactly keep an eye on what is 
 happening to your mailings.
 
-![MailerQ SMTP monitor with websockets](copernica-docs:Mailerq/Images/mailerq-websocket.png)
+![MailerQ SMTP monitor with websockets](Images/mailerq-websocket.png)
 

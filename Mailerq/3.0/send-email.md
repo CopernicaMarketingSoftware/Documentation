@@ -6,7 +6,7 @@ queue. This queue holds all messages that are waiting to be sent. MailerQ picks 
 the messages from this queue (which are [JSON encoded](http://www.json.org "JSON website")) and sends the out over an SMTP 
 connection. 
 
-After sending the email MailerQ publishes a JSON encoded copy to the [result queue](copernica-docs:Mailerq/result-queue "MailerQ result queue") 
+After sending the email MailerQ publishes a JSON encoded copy to the [result queue](result-queue "MailerQ result queue") 
 and, depending on whether the delivery was successful, into the success or failure queue. 
 Here your own application or script can pick them up for further processing. 
 
@@ -21,7 +21,7 @@ There are three ways to send email with MailerQ, you can either:
 
 ## Post email directly to the outbox queue
 
-MailerQ fetches all messages from the [RabbitMQ outbox queue](copernica-docs:Mailerq/rabbitmq-config "RabbitmQ configuration"). 
+MailerQ fetches all messages from the [RabbitMQ outbox queue](rabbitmq-config "RabbitmQ configuration"). 
 This makes using an application or script to directly publish messages to the outbox queue 
 the fastest way to inject your emails into MailerQ. These messages should be JSON encoded, 
 which makes it very easy because it is a [widely known data format](http://www.json.org)  that 
@@ -29,10 +29,10 @@ can be easily created and processed by almost every program language out there.
 
 The message queues can be easily accessed (add messages, remove messages) using the AMQP protocol, 
 for which [many plugins and libraries](http://www.rabbitmq.com/devtools.html) are available. 
-To help you out, we have [created a few examples](copernica-docs:Mailerq/mailerq-examples "MailerQ examples") 
+To help you out, we have [created a few examples](mailerq-examples "MailerQ examples") 
 for commonly used languages.
 
-![MailerQ put it in RabbitMQ](copernica-docs:Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
+![MailerQ put it in RabbitMQ](Images/mailerq-put-it-in-rabbitmq.png)
 
 Besides being faster, publishing messages directly into the outbox queue also makes it 
 possible to use special features that are not natively available when you use SMTP. When 
@@ -75,19 +75,19 @@ Note that for ease of reading we added some spaces to the message mime in the
 above example.
 
 If you have a MailerQ license that includes the responsive email feature, you have 
-several other options. You can read about them in the [responsive email documentation](copernica-docs:Mailerq/responsiveemail)
+several other options. You can read about them in the [responsive email documentation](responsiveemail)
 
 ## Using the built-in SMTP server
 
 If you do not want to inject mails directly into the RabbitMQ message queue, you 
 can send emails to the SMTP port that is opened by MailerQ. All messages 
 sent to this port are received by MailerQ and are automatically published to the 
-inbox queue as set in your [config file](copernica-docs:Mailerq/configuration "MailerQ configuration"). 
+inbox queue as set in your [config file](configuration "MailerQ configuration"). 
 Most users set this to the same value as the outbox queue, so that all received emails are 
 automatically published to the outbox queue, from which they are then directly 
 picked up again and scheduled for immediate forwarding.
 
-![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](Images/mailerq-shared-inbox-outbox-queue.png)
 
 MailerQ stores all incoming messages in the inbox queue first. You can add 
 intermediate scripts that process these messages before they are forwarded to 
@@ -100,7 +100,7 @@ queue where MailerQ picks them up to deliver them. You might be interested in
 reads messages as fast as it can from a RabbitMQ message queue, runs your scripts 
 to process these messages, and publishes the results back to RabbitMQ.
 
-![MailerQ seperate inbox outbox queues](copernica-docs:Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
+![MailerQ seperate inbox outbox queues](Images/mailerq-seperate-inbox-outbox-queues.png)
 
 ### SMTP and multiple IP addresses
 
@@ -114,7 +114,7 @@ deliver your email to an IP address from which no external connections can be
 made (like [127.0.0.1](http://en.wikipedia.org/wiki/Localhost)).
 
 If you want MailerQ to send out the mail from a different IP address than that 
-you originally sent it to, you can include [an extra mime header field](copernica-docs:Mailerq/delivery-properties) 
+you originally sent it to, you can include [an extra mime header field](delivery-properties) 
 that instructs MailerQ to use a different IP instead.
 
 ## MailerQ as command line utility
@@ -126,7 +126,7 @@ queue. As a command line utility, MailerQ does not attempt to send out the mail
 - it only puts the message in the RabbitMQ message queue. You need a seperate 
 running MailerQ daemon process that takes care of the delivery.
 
-![MailerQ mime output](copernica-docs:Mailerq/Images/mailerq-mime-output-stdout.png)
+![MailerQ mime output](Images/mailerq-mime-output-stdout.png)
 
 When you normally start up MailerQ, it operates as a daemon process. To start 
 it as a command line utility for reading a message from standard input, you need 
