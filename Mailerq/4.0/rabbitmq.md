@@ -155,7 +155,7 @@ rabbitmq-reports:       <Name of your reports queue>
 
 The `rabbitmq-exchange` variable holds the name of the exchange in RabbitMQ 
 that MailerQ uses to publish all messages to. If not explicitly set, MailerQ 
-uses an exchange with the name "mailerq". You do not have to craete the 
+uses an exchange with an empty name. You do not have to create the 
 exchange yourself. If the exchange does not exist MailerQ at startup, RabbitMQ 
 automatically creates the exchange.
 

@@ -63,7 +63,7 @@ is basically the same as using the `*` wildcard.
 ## Adding DKIM keys to the message JSON
 
 It is also possible to add DKIM keys to your email using the message JSON. It works just 
-like all other [message properties](http://www.mailerq.io/documentation/delivery-properties). 
+like all other [message properties](json-message-properties). 
 A JSON message holding a DKIM key will look something like this: 
 
 ````json

@@ -102,8 +102,8 @@ max-deliver-time:         <seconds>
 ```
 
 This setting is time in seconds from first delivery attempt and is a default 
-setting that is set in the configuration file. it is also possible to set a maximum 
-delivery time on a per email level. [Read more about setting per message maximum delivery time](delivery-properties).
+setting that is set in the configuration file. It is also possible to set a maximum 
+delivery time on a per email level. [Read more about setting per message maximum delivery time](mime-message-properties).
 
 ### Maximum delivery attempts
 
@@ -117,7 +117,7 @@ max-attempts:            <number of attempts>
 ```
 
 This setting is a default setting that is set in the configuration file.  It is 
-also possible to set the maximum delivery attempts on a per email. [Read more about setting per message maximum delivery attempts](delivery-properties).
+also possible to set the maximum delivery attempts on a per email. [Read more about setting per message maximum delivery attempts](mime-message-properties).
 
 ### Total number of connections
 

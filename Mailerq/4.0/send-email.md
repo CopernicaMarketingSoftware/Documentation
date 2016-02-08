@@ -15,17 +15,27 @@ queue. Here your own application or script can pick them up for further processi
 ## MailerQ spool directory
 
 MailerQ is capable of continuously watching a specified directory -- a spool 
-directory -- for new files. When a new file is closed, it is then interpreted as 
-MIME and processed after a specified delay (allowing the user to e.g. make 
-changes after saving for the first time). It is possible to automatically remove
-files that have been processed, but files without a valid recipient will always
-be left alone.
+directory -- for new files. If the `spool-directory` variable is empty or does 
+not point to a valid directory, no spooling is used.
+
+When a new file is placed in spool directory, it is interpreted as MIME and 
+processed by MailerQ. The mail recipients will be taken from 
+the MIME headers `To`, `Cc`, and `Bcc`; the envelope will either be taken from the
+`x-mq-envelope` header, or if not specified, from the `From` header.
+
+Files in this spool directory are by default processed immediately. If the user
+wants some time to preprocess this file, for instance to make additional changes,
+one can specify a delay in the `spool-delay` property.
+
+It is possible to automatically remove files that have been processed, but files 
+without a valid recipient will always be left alone. If you want to remove these
+files, set the `spool-remove` option to a nonempty value, like `1`.
 
 Subdirectories of the spool directory are not watched. When MailerQ is started 
 with a valid spool directory, all files present in this directory at runtime are 
 processed after the specified delay.
 
-The configuration options related to spooling are:
+In summary, the configuration options related to spooling are:
 
 ```
 spool-directory:        <directory>
@@ -33,14 +43,11 @@ spool-delay:            <seconds>
 spool-remove:           <0 or 1>
 ```
 
-If the `spool-directory` variable is empty or does not point to a valid directory,
-no spooling is used.
-
 ### Message format
 
 Messages that are found inside the spool directory should be in MIME format. The 
 headers should be seperated from the message data by a newline, and lines should 
-end with either a newline character, or a linefeed+newline character.
+end with either `\n` or `\r\n`.
 
 ````
 From: sender@example.com
@@ -183,7 +190,7 @@ deliver your email to an IP address from which no external connections can be
 made (like [127.0.0.1](http://en.wikipedia.org/wiki/Localhost)).
 
 If you want MailerQ to send out the mail from a different IP address than that 
-you originally sent it to, you can include [an extra MIME header field](delivery-properties) 
+you originally sent it to, you can include [an extra MIME header field](mime-message-properties#local-ip-addresses) 
 that instructs MailerQ to use a different IP instead.
 
 ## Pushing directly to RabbitMQ
@@ -206,7 +213,7 @@ for commonly used languages.
 Besides being faster, publishing messages directly into the outbox queue also 
 makes it possible to use special features that are not natively available when 
 you use SMTP. When using SMTP you can add most of these features by adding 
-[special `x-mq-*` headers](delivery-properties).
+[special `x-mq-*` headers](mime-message-properties).
 
 This means that when you cannot easily change or add e-mail headers, publishing 
 messages directly into the outbox queue is nessecary when you want to make use 

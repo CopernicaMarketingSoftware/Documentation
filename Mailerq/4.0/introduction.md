@@ -57,7 +57,9 @@ rabbitmq-address:          <URL of RabbitMQ server>
 ```
 
 The `rabbitmq-address` variable holds the URL of your RabbitMQ server, in 
-`amqp://<username>:<password>@<hostname>` format. If you have 
+`amqp://username:password@hostname/vhost` format.
+
+If you have 
 a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they have to 
 be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
 will have highly available queues.
@@ -70,6 +72,9 @@ configuration. The default is `guest/guest`, which only works when connecting to
 localhost. If you run RabbitMQ on a separate server, you will need to set your
 own username and password, or configure the RabbitMQ server to allow `guest/guest`
 logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html "RabbitMQ's Access Control Configuration")).
+
+The `vhost` field is, by default, empty. If you created a specific RabbitMQ vhost
+environment, you can set this.
 
 These basic settings enable MailerQ to connect to RabbitMQ. A complete list of all
 configurable options on how MailerQ interacts with RabbitMQ can be found

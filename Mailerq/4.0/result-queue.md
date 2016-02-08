@@ -130,7 +130,7 @@ will not throw away the message data.
 As we mentioned above, the message bodies are removed from the JSON object 
 unless you set the `keepmime` property in the original JSON object.
 
-However, if you have enabled the [message store](delivery-properties),
+However, if you have enabled the [message store](json-message-properties#keep-messages-after-delivery),
 MailerQ will still remove the mime from the JSON object, even if you included 
 the `keepmime` property. Instead, a `key` property is added to the JSON object 
 that can be used to retrieve the mime from the message store.
