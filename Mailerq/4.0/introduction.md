@@ -53,17 +53,17 @@ from its config file. Make sure you include the following variables
 in the MailerQ configuration file (/etc/mailerq/config.txt):
 
 ```
-rabbitmq-address:          <URL of RabbitMQ server>
+rabbitmq-address:          <URL of RabbitMQ server> (default: amqp://guest:guest@localhost/)
 ```
 
 The `rabbitmq-address` variable holds the URL of your RabbitMQ server, in 
 `amqp://username:password@hostname/vhost` format.
 
 If you have 
-a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they have to 
+a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), they have to 
 be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
-will have highly available queues.
-
+will have highly available queues. Since MailerQ 4.0, even setting up a single
+node will create a cluster.
 [Read more about highly available queues](https://www.rabbitmq.com/ha.html)
 
 The `username` and `password` fields inside the `rabbitmq-address` variable hold
@@ -87,7 +87,7 @@ MailerQ should be aware of the location of this license. This location can be
 set in the configuration file via:
 
 ```
-license:		<Path to your license>
+license:		<Path to your license> (empty by default)
 ```
 
 On a clean installation, the path to the license is set to the same directory 

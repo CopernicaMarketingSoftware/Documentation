@@ -20,10 +20,10 @@ or you can use a command-line switch when you start MailerQ. The following
 variables can be used for it:
 
 ```
-smarthost:          <hostname>
-smarthost-port:     <port>
-smarthost-username: <username>
-smarthost-password: <password>
+smarthost:          <hostname>  (empty by default)
+smarthost-port:     <port>      (default: 25)
+smarthost-username: <username>  (empty by default)
+smarthost-password: <password>  (empty by default)
 ```
 
 The `smarthost` has to be set to enable the smarthost feature, and should
@@ -82,10 +82,10 @@ want to actually deliver the mails, but send them to a dummy destination:
 a sink. This is where the smtp-sink options comes in.
 
 ````
-smtp-sink-ip:           <ip address>
-smtp-sink-port:         <port>
-smtp-sink-username:     <username>
-smtp-sink-password:     <password>
+smtp-sink-ip:           <ip address>    (default: 0.0.0.0)
+smtp-sink-port:         <port>          (default: 25)
+smtp-sink-username:     <username>      (empty by default)
+smtp-sink-password:     <password>      (empty by default)
 ````
 
 If you include the `smtp-sink-ip` and `smtp-sink-port` options in the config

@@ -40,8 +40,7 @@ for later delivery. This can result in emails that are sent much later than the
 time that you first added them to the message queue.
 
 If you do not want an email to be delivered after a certain time, all you need 
-to do is add the `maxdelivertime` property. You can do so by adding an 
-`x-mq-maxdelivertime` header to the message:
+to do is add the `x-mq-maxdelivertime` header to the message:
 
 ````
 x-mq-maxdelivertime: 2016-02-10 00:00:00
@@ -58,7 +57,7 @@ deliver the mail within 24 hours (default) after the mail was first picked up fr
 ## Maximum number of attempts
 
 Just like a maximum delivery time, you can control the maximum number of attempts
-MailerQ should make sending an email. IfIf a first attempt fails because a remote 
+MailerQ should make sending an email. If a first attempt fails because a remote 
 server is unreachable or does not immediately accept the message, MailerQ will 
 make a new attempt a little later.
 

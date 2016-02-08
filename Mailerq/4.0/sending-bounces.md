@@ -32,7 +32,7 @@ Note that all these settings are optional and can be left blank. Leaving them bl
 does mean MailerQ does not send Delivery Status Notifications. 
 
 ```
-dsn-notify:         <NEVER, FAILURE, DELAY or SUCCESS>
+dsn-notify:         <NEVER, FAILURE, DELAY or SUCCESS> (default: NEVER)
 ```
 The `dsn-notify` setting, determines under which circumstances MailerQ sends 
 a DSN. It can contain the following values: NEVER, SUCCESS, FAILURE and DELAY. When 
@@ -43,8 +43,8 @@ notifications when a delivery is temporarily delayed. This can be a comma separa
 (e.g. FAILURE,DELAY).
 
 ```
-dsn-envelope:       mailer-daemon@mailerq.com
-dsn-mta:            MailerQ
+dsn-envelope:       mailer-daemon@mailerq.com (default: mailer@localhost)
+dsn-mta:            MailerQ (default: MailerQ)
 ```
 
 The `dsn-envelope` address is the envelope address from which all delivery status 
@@ -53,7 +53,7 @@ this to your own address. The variable `dsn-mta` holds the name of the reporting
 that is also included in the bounce emails.
 
 ```
-dsn-ret:            <FULL or HDRS>
+dsn-ret:            <FULL or HDRS> (default: HDRS)
 ```
 
 The `dsn-ret` setting determines whether a Delivery Status Notification holds the 
@@ -288,7 +288,7 @@ the DSN's to the normal outbox queue, but to this alternative queue instead. The
 config file variable `rabbitmq-dsn` can be used for this:
 
 ````
-rabbitmq-dsn:           special_dsn_queue
+rabbitmq-dsn:           special_dsn_queue (empty by default)
 ````
 
 If you assign a special DSN queue, it is up to you to make sure these messages are sent 

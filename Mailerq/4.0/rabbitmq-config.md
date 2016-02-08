@@ -5,22 +5,22 @@ from its config file. Make sure you include the following variables
 in the MailerQ configuration file (`/etc/mailerq/config.txt`):
 
 ```
-rabbitmq-address:          <URL of RabbitMQ server>
+rabbitmq-address:          <URL of RabbitMQ server> (default: amqp://guest:guest@localhost/)
 ```
 
 The `rabbitmq-address` variable holds the URL of your RabbitMQ server, in 
 `amqp://username:password@hostname/vhost` format. 
 
 If you have 
-a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html) they have to 
+a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), they have to 
 be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
-will have highly available queues.
-
+will have highly available queues. Since MailerQ 4.0, even setting up a single
+node will create a cluster.
 [Read more about highly available queues](https://www.rabbitmq.com/ha.html)
 
 The `username` and `password` fields inside the `rabbitmq-address` variable hold
 the username and password of the RabbitMQ server, as set in the RabbitMQ
-configuration. The default is `guest/guest`, which only works when connecting to
+configuration. The default only works when connecting to
 localhost. If you run RabbitMQ on a separate server, you will need to set your
 own username and password, or configure the RabbitMQ server to allow `guest/guest`
 logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html "RabbitMQ's Access Control Configuration")).
@@ -34,8 +34,8 @@ In the MailerQ configuration you can set queues to be durable and messages to be
 persistent using the following options:
 
 ```
-rabbitmq-durable:       <1 or 0>
-rabbitmq-persistent:    <1 or 0>
+rabbitmq-durable:       <1 or 0> (default: 1)
+rabbitmq-persistent:    <1 or 0> (default: 0)
 ```
 
 MailerQ creates several queues and exchanges in RabbitMQ. When MailerQ starts, it 
@@ -69,17 +69,17 @@ MailerQ outbox is mandatory; if you want to disable the other queues, the field 
  can be simply be left empty. 
 
 ```
-rabbitmq-exchange:      <Name of your rabbitmq exchange> 
-rabbitmq-outbox:        <Name of your outbox message queue>
-rabbitmq-results:       <Name of your result queue>
-rabbitmq-success:       <Name of your success queue>
-rabbitmq-failure:       <Name of your failure queue>
-rabbitmq-retry:         <Name of your retry queue>
-rabbitmq-dsn:           <Name of your delivery status notification queue>
-rabbitmq-inbox:         <Name of your inbox queue>
-rabbitmq-refused:       <Name of your refused queue>
-rabbitmq-reports:       <Name of your reports queue>
-rabbitmq-local:         <Name of your local queue>
+rabbitmq-exchange:      <Name of your rabbitmq exchange> (empty by default)
+rabbitmq-outbox:        <Name of your outbox message queue> (default: outbox)
+rabbitmq-results:       <Name of your result queue> (empty by default)
+rabbitmq-success:       <Name of your success queue> (empty by default)
+rabbitmq-failure:       <Name of your failure queue> (empty by default)
+rabbitmq-retry:         <Name of your retry queue> (empty by default)
+rabbitmq-dsn:           <Name of your delivery status notification queue> (value of rabbitmq-outbox by default)
+rabbitmq-inbox:         <Name of your inbox queue> (value of rabbitmq-outbox by default)
+rabbitmq-refused:       <Name of your refused queue> (empty by default)
+rabbitmq-reports:       <Name of your reports queue> (empty by default)
+rabbitmq-local:         <Name of your local queue> (default: inbox)
 ```
 
 The `rabbitmq-exchange` variable holds the name of the exchange in RabbitMQ 
@@ -196,7 +196,7 @@ special cluster exchange on RabbitMQ. The `cluster-*` variables below identify
 an exchange in a RabbitMQ instance.
 
 ```
-cluster-address:        <URL of the RabbitmQ server used for the cluster>
-cluster-exchange:       <Name of the exchange in RabbitMQ used for cluster communication>
+cluster-address:        <RabbitMQ cluster server URL> (value of rabbitmq-address by default)
+cluster-exchange:       <RabbitMQ cluster exchange name> (default: cluster)
 ```
 

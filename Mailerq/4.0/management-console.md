@@ -21,10 +21,10 @@ The management console can be enabled in MailerQ's configuration file.
 The following variables should be used:
 
 ````
-www-port:           8485
-www-ip:             1.2.3.4
-www-password:       admin
-www-dir:            /usr/share/mailerq/www
+www-port:           8485 (default: 8485)
+www-ip:             1.2.3.4 (default: 0.0.0.0)
+www-password:       admin (empty by default)
+www-dir:            /usr/share/mailerq/www (default: /usr/share/mailerq/www)
 ````
 
 The `www-port` variable holds the port number for the management console.
@@ -62,10 +62,10 @@ HTTPS support:
 
 ````
 www-port:                   0
-www-secure-port:            443
-www-certificate:            /path/to/certificate.crt
-www-privatekey:             /path/to/privatekey.key
-www-ciphers:                !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH
+www-secure-port:            443 (empty by default)
+www-certificate:            /path/to/certificate.crt (empty by default)
+www-privatekey:             /path/to/privatekey.key (empty by default)
+www-ciphers:                !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH (empty by default)
 ````
 
 If you enable HTTPS, you can also better switch off the regular HTTP

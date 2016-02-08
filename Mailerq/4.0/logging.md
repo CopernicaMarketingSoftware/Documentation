@@ -7,7 +7,7 @@ All abnormal events, downloads and deliveries are logged by MailerQ in different
 All abnormal events are logged to the error logfile. This includes failures like databases that are suddenly offline, or RabbitMQ connections that are lost. The name and error of the error log file can be set with the error-log setting.
 
 ```txt
-error-log:      <location of file>
+error-log:      <location of file> (default: /var/log/mailerq/errors.log)
 ```
 
 The filename to which which errors are logged. The file must of course be writable for MailerQ.

@@ -46,7 +46,7 @@ and press the button to add a sign pattern. Each pattern can use one of the foll
 signing patterns:
 
 * **Exact match**: the input must be an exact match;
-* **Regular expression**: the input is treated as a ECMA regular expression; 
+* **Regular expression**: the input is treated as a [Perl-style regular expression](http://perldoc.perl.org/perlre.html); 
 * **Substring**: the input must be a substring of the answer from the server: `'bar'` will match `'foobar'`; <!-- TODO are quotes around bar and foobar necessary? -->
 * **Global**: will be used for all emails sent using MailerQ; 
 * **Wildcard**: you can use wildcards just like the shell patterns for file matching.

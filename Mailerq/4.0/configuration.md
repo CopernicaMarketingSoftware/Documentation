@@ -14,20 +14,18 @@ MailerQ website. You can store the file anywhere on the file system. The path to
 the license file can be configured by setting 
 
 ```
-license: `<path to license.txt>`
+license:		<Path to your license> (empty by default)
 ```
-
-The default path is `/etc/mailerq/license.txt`.
 
 ## User
 
 If you have configured MailerQ to use ports lower than 1024 (like port 25 for 
 SMTP and/or port 80 for the management console), the MTA must be started as user 
-root. Once the ports have been opened, MailerQ changes its identity to the user 
+`root`. Once the ports have been opened, MailerQ changes its identity to the user 
 set in the config file.
 
 ```
-user: `<user name>`
+user:           <user name> (empty by default)
 ```
 
 The user name to change identify to after the SMTP and HTTP ports have been opened.
@@ -41,17 +39,16 @@ from which to load the plugins. Beware, MailerQ will silently continue when the
 specified directory can not be found, possibly causing plugins not to be loaded 
 without a warning.
 
-#### The path to the directory where the plugins are located.
+The path to the directory where the plugins are located:
+
 ```
-plugin-directory: <path>
+plugin-directory: <path>    (default: /usr/share/mailerq/plugins)
 ```
 
 ## DNS settings
 
 You can override the settings that MailerQ uses to communicate with DNS 
-settings. By default, MailerQ does 4 attempts to resolve a domain, and uses a 
-timeout of 5 seconds to wait for an answer before it proceeds to the next server 
-to resolve the domain. These settings can be changed.
+settings.
 
 The first lookup is done using UDP. If the response from the DNS server is 
 truncated because it does not fit in a UDP datagram, MailerQ opens a TCP 
@@ -68,6 +65,11 @@ DNS query).
 If you want to override this with different values you can add a helo map file 
 in which you provide your own HELO hostnames.
 
+Location of the file containing HELO map.
+```
+dns-helofile: <filename>    (empty by default)
+```
+
 The file should contain IPs and hostnames in following format:
 
 ```
@@ -76,24 +78,9 @@ The file should contain IPs and hostnames in following format:
 [...]
 ```
 
-#### Timeout in milliseconds before MailerQ proceeds to next DNS server. Default is 5000 milliseconds.
-```
-dns-timeout: <timeout>
-```
-
-#### Number of attempts before giving up, defaults to 4.
-```
-dns-attempts: <attempts>
-```
-
 #### The communication channel to use, either `udp` or `tcp`. The default value is to use both.
 ```
-dns-force: <udp|tcp>
-```
-
-Location of the file containing HELO map.
-```
-dns-helofile: <filename>
+dns-force:      <*|udp|tcp> (default: *)
 ```
 
 ## Lockfile
@@ -102,7 +89,7 @@ To prevent that MailerQ starts more than once, MailerQ stores its process ID
 (pid) in a lockfile. The name and location of the lockfile can be set in the 
 configuration file.
 
-#### Location of the lock file. Default is `/tmp/mailerq.pid`.
+#### Location of the lock file.
 ```
-lock: <filename>
+lock: <filename>            (default: /tmp/mailerq.pid)
 ```

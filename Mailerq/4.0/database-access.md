@@ -23,7 +23,7 @@ Only one variable has to be set in the config file to connect to a
 database: the `database` variable:
 
 ````
-database:           sqlite://path/to/database/file
+database:           sqlite://path/to/database/file (empty by default)
 ````
 ````
 database:           mysql://user:password@hostname/databasename
@@ -57,10 +57,10 @@ database schema.
 
 If you want to enforce that all tables in the database are dropped and
 replaced by brand new empty tables, you can start MailerQ with the 
-`--purge-tables` command line option:
+`--purge-database` command line option:
 
 ````
-mailerq --purge-tables
+mailerq --purge-database
 ````
 
 This option tells MailerQ not to check and repair tables, but to drop

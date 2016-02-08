@@ -13,8 +13,8 @@ to set the ports on which MailerQ should listen, and from which ips MailerQ shou
 accept incoming SMTP connections:
 
 ````
-smtp-port:          25,2525,1024-1026
-smtp-ip:            1.2.3.4
+smtp-port:          <25,2525,1024-1026> (default: 25)
+smtp-ip:            <1.2.3.4> (default: 0.0.0.0)
 ````
 
 The `smtp-port` variable holds the port or ports that MailerQ opens and
@@ -46,9 +46,9 @@ no key at all, as most SMTP clients will still accept the self-signed
 key.
 
 ````
-smtp-certificate:       /path/to/certificate.crt
-smtp-privatekey:        /path/to/privatekey.key
-smtp-ciphers:           !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH
+smtp-certificate:       </path/to/certificate.crt> (empty by default)
+smtp-privatekey:        </path/to/privatekey.key> (empty by default)
+smtp-ciphers:           !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH (empty by default)
 ````
 
 If you have enabled secure connections, it still is up to the SMTP 
@@ -62,7 +62,7 @@ allows you to open up a socket that is in an encrypted state right away,
 without sending the "STARTTLS" command:
 
 ````
-smtp-secure-port:       465
+smtp-secure-port:       <465> (empty by default)
 ````
 
 The port assigned to the `smtp-secure-port` variable is in an encrypted 
@@ -84,9 +84,9 @@ to restrict access, or configure MailerQ so that only connections from
 trusted sources or trusted users are allowed.
 
 ````
-smtp-ranges:            1.2.3.4/31;4.5.6.7/30
-smtp-username:          username
-smtp-password:          password
+smtp-ranges:            1.2.3.4/31;4.5.6.7/30 (empty by default)
+smtp-username:          <username> (empty by default)
+smtp-password:          <password> (empty by default)
 ````
 
 The `smtp-ranges` setting in the config file can be used to limit the
@@ -112,7 +112,7 @@ proxy server in which the TCP details (remote IP address and remote port
 for example) of the incoming connection are transfered.
 
 ````
-smtp-proxy:             1
+smtp-proxy:             <1 or 0> (default: 0)
 ````
 
 If you run MailerQ behind a proxy server, you should also enable this 
@@ -128,8 +128,8 @@ set the names of the message queues to which these messages are
 published.
 
 ````txt
-rabbitmq-inbox:         name-of-queue-for-valid-messages
-rabbitmq-refused:       name-of-queue-for-rejected-messages
+rabbitmq-inbox:         <name-of-queue-for-valid-messages> (value of rabbitmq-outbox by default)
+rabbitmq-refused:       <name-of-queue-for-rejected-messages> (empty by default)
 ````
 
 Every valid incoming message is published to the inbox queue. Many users
@@ -159,7 +159,7 @@ management console](rabbitmq-config) to set such limits).
 ## Collecting bounces and notifications
 
 ```txt
-rabbitmq-reports:       name-of-queue-for-delivery-reports
+rabbitmq-reports:       <Name of your report queue> (empty by default)
 ``` 
 
 Every incoming message is checked by MailerQ to see if it is a Delivery 

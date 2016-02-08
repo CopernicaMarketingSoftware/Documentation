@@ -32,7 +32,7 @@ used for domains that have no specific limits set:
 domain-maxmessages:     <messages>
 domain-maxconnects:     <connection attempts>
 domain-maxconnections:  <connections>
-domain-maxqueue:        <queue length>
+domain-maxqueue:        <queue length> (default: -1)
 ```
 
 The `domain-maxmessages` setting sets a limit to the number of messages to be sent 
@@ -76,9 +76,9 @@ The following options are available in your config file. These settings are only
 for domains that have no specific limits set:
 
 ```
-connection-maxmessages:     <messages>
-connection-maxidle:         <miliseconds>
-connection-secure:          <0 or 1>
+connection-maxmessages:     <messages> (default: -1)
+connection-maxidle:         <miliseconds> (default: 1)
+connection-secure:          <0 or 1> (default: 1)
 ```
 
 The `connection-maxmessages` states the maximum number of messages per minute 
@@ -98,7 +98,7 @@ later than the time that you first added them to the message queue.
 
 
 ```
-max-deliver-time:         <seconds>
+max-delivertime:         <seconds> (default: 86400)
 ```
 
 This setting is time in seconds from first delivery attempt and is a default 
@@ -113,7 +113,7 @@ remote server is unreachable or does not immediately accept the message, MailerQ
 will make a new attempt a later.
 
 ```
-max-attempts:            <number of attempts>
+max-attempts:            <number of attempts> (default: 10)
 ```
 
 This setting is a default setting that is set in the configuration file.  It is 
@@ -222,7 +222,7 @@ Here you can add a pattern for MailerQ to check. If this pattern matches the ans
 that is received from a mail server, e.g. "Too many connections to this host". 
 You can use three types of pattern matching methods:
 
-* **Regular expression:** The pattern is treated as a ECMA regular expression;
+* **Regular expression**: the input is treated as a [Perl-style regular expression](http://perldoc.perl.org/perlre.html); 
 * **Wildcard:** In the pattern wildcards can be used similar to the ones used for file matching in the shell: 
 For example:
     - Asterisk (`*`) matches everything: `*@mailerq.com` will match `foo@mailerq.com`, `bar@mailerq.com`, etc.;

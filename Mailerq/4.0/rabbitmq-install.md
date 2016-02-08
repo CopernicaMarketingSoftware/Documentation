@@ -4,7 +4,7 @@ MailerQ depends on RabbitMQ for all its queueing. This means you need a running
 RabbitmQ instance or cluster of instances before you can start MailerQ.  We do not 
 intend to write a full installation guide for RabbitMQ here, on the 
 [www.rabbitmq.com](https://www.rabbitmq.com) website you will find any information 
-you  need about RabbitmQ. However, we do have some tips, tricks and recommendations 
+you need about RabbitmQ. However, we do have some tips, tricks and recommendations 
 for setting up RabbitMQ with MailerQ. 
 
 ## Make sure you use the right RabbitMQ version
@@ -19,7 +19,6 @@ website instead of using the version that comes with your OS.
 
 The RabbitMQ installation has to be **at least version 3.3.1+** for MailerQ to be 
 able to connect to it.
-
 
 ## Check your login and password
 
