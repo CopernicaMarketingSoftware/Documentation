@@ -12,7 +12,7 @@ The target of an emailing can be an entire database, a selection, a collection,
 a miniselection or, if you have a Magento webshop, a Magento target.
 
 These targets are not created in the template editor, but in the old Publisher 
-environment. [Creating mailinglists using selections in the old Publisher environment](https://www.copernica.com/en/blog/selections-and-miniselections).
+environment. [Creating mailing lists using selections in the old Publisher environment](https://www.copernica.com/en/blog/selections-and-miniselections).
 
 Targets created in Publisher are automatically available in the template editor 
 when setting up a mailing.
