@@ -89,7 +89,8 @@ address without the name of the recipient or angle brackets ('<' and '>')
 Note that you can specify in what cases you would like to receive a delivery
 status notification and what that notification should contain via the `dsn`
 variable. You can also let SMTPeter take care of it by setting variable
-"bouncetracking".
+[bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking). If you use
+"bouncetracking" you do not have to specify an envelope.
 
 
 ## mime
