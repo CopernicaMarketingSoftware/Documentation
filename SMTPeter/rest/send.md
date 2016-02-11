@@ -19,6 +19,7 @@ contain one or more of the following variables:
 * [cc](copernica-docs:SMTPeter/rest/send#cc)
 * [text](copernica-docs:SMTPeter/rest/send#text)
 * [html](copernica-docs:SMTPeter/rest/send#html)
+* [attachments](copernica-docs:SMTPeter/rest/send#attachments)
 * [inlinecss](copernica-docs:SMTPeter/rest/send#inlinecss)
 * [dsn](copernica-docs:SMTPeter/rest/send#dsn)
 * [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
@@ -150,6 +151,28 @@ With "text" you can set the text version of your email.
 ## html
 
 With "html" you can set the HTML version of the email.
+
+
+## attachments
+
+With attachments you can attach files to your mailing. Attachments
+expects an array with JSON objects. There are two types of objects that are
+supported. For one you provide a link to the attachment that you want
+to send and for the other you provide the data in the JSON object itself.
+For both types you have to specify the name of the attachment.
+If you provide the data in the JSON, you also have to specify the type of
+the data. Here is an example of specifying attachments:
+
+```json
+"attachments": [ {
+        "url": "https://www.example.com/attachment1.pdf",
+        "name": "example-1.pdf"
+    }, {
+        "data": "Some text.",
+        "name": "test.txt",
+        "type": "text/plain"
+    } ],
+```
 
 
 ## inlinecss
