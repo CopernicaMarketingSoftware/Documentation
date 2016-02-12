@@ -160,19 +160,20 @@ With attachments you can attach files to your mailing. Attachments
 expects an array with JSON objects. There are two types of objects that are
 supported. For one you provide a link to the attachment that you want
 to send and for the other you provide the data in the JSON object itself.
-For both types you have to specify the name of the attachment.
-If you provide the data in the JSON, you also have to specify the type of
-the data. Here is an example of specifying attachments:
+If you provide the data in the JSON, this data has to be base64 encoded.
+Moreover, you can optionally specify the type of data that you send.
+
 
 ```json
+{
 "attachments": [ {
-        "url": "https://www.example.com/attachment1.pdf",
-        "name": "example-1.pdf"
+        "url": "https://www.example.com/attachment1.pdf"
     }, {
-        "data": "Some text.",
+        "data": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUgdGV4dCBmaWxlLi4=",
         "name": "test.txt",
         "type": "text/plain"
-    } ],
+    } ]
+}
 ```
 
 
