@@ -24,13 +24,13 @@ accepted and will result in a '400 Bad Request' response.
 
 ## Available methods
 
-| Method                                                                                | Type  | Description                                       |
-| ------------------------------------------------------------------------------------- | ----- | ------------------------------------------------- |
-| [/v1/send](copernica-docs:SMTPeter/rest/send "REST command send")                     | POST  | Send one or more new messages                     |
-| [/v1/recent-tags](copernica-docs:SMTPeter/rest/recent-tags "REST command recent-tags" | GET   | Get an overview of recently active tags           |
-| [/v1/tag](copernica-docs:SMTPeter/rest/tag "REST command tag"                         | GET   | Get overview for a specific tag                   |
-| [/v1/text](copernica-docs:SMTPeter/rest/text "REST command text")                     | GET   | Retrieve the text version as sent out by SMTPeter |
-| [/v1/html](copernica-docs:SMTPeter/rest/html "REST command html")                     | GET   | Retrieve the HTML version as sent out by SMTPeter |
+| Method                                                                                    | Type  | Description                                       |
+| ----------------------------------------------------------------------------------------- | ----- | ------------------------------------------------- |
+| [/v1/send](copernica-docs:SMTPeter/rest/send "REST command send")                         | POST  | Send one or more new messages                     |
+| [/v1/recent-tags](copernica-docs:SMTPeter/rest/recent-tags "REST command recent-tags")    | GET   | Get an overview of recently active tags           |
+| [/v1/tag](copernica-docs:SMTPeter/rest/tag "REST command tag")                            | GET   | Get overview for a specific tag                   |
+| [/v1/text](copernica-docs:SMTPeter/rest/text "REST command text")                         | GET   | Retrieve the text version as sent out by SMTPeter |
+| [/v1/html](copernica-docs:SMTPeter/rest/html "REST command html")                         | GET   | Retrieve the HTML version as sent out by SMTPeter |
 
 
 ## Sending and retrieving data
