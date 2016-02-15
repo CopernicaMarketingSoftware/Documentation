@@ -23,18 +23,12 @@ after receiving the message.
 >> Date: Tue, 12 Jan 2016 13:29:57 GMT
 >> Server: Apache/2.4.7 (Ubuntu)
 >> X-Powered-By: PHP/5.5.9-copernica1
->> Content-Length: 184
->> Content-Type: application/json
+>> Content-Length: 124
+>> Content-Type: text/html
 >>
->> {"id":"XXXXXXXX","received":"2016-01-06 20:01:34","html":"<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD XHTML 1.0 Strict\/\/EN http:\/\/www.w3.org\/TR\/xhtml1\/DTD\/xhtml1-strict.dtd\">..."}
+>> <!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD XHTML 1.0 Strict\/\/EN http:\/\/www.w3.org\/TR\/xhtml1\/DTD\/xhtml1-strict.dtd\">...
 ```
 
 ## return value
 
-A json object with the following keys
-
-| Key        | Description                                    |
-| ---------- | ---------------------------------------------- |
-| id:        | The message ID for which the text is retrieved |
-| received:  | The date and time the message was received     |
-| html:      | The actual content of the message              |
+The HTML content inside the message

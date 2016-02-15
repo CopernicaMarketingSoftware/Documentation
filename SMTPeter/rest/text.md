@@ -22,18 +22,12 @@ after receiving the message.
 >> Date: Tue, 12 Jan 2016 13:29:57 GMT
 >> Server: Apache/2.4.7 (Ubuntu)
 >> X-Powered-By: PHP/5.5.9-copernica1
->> Content-Length: 151
->> Content-Type: application/json
+>> Content-Length: 84
+>> Content-Type: text/plain
 >>
->> {"id":"XXXXXXXX","received":"2016-01-06 20:01:34","text":"Your email client does not support HTML messages. View the mail online at webversion\r\n"}
+>> Your email client does not support HTML messages. View the mail online at webversion
 ```
 
 ## return value
 
-A json object with the following keys
-
-| Key        | Description                                    |
-| ---------- | ---------------------------------------------- |
-| id:        | The message ID for which the text is retrieved |
-| received:  | The date and time the message was received     |
-| text:      | The actual content of the message              |
+The text version of the sent message
