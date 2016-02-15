@@ -1,4 +1,4 @@
-# REST API method: recent_tags
+# REST API method: recent-tags
 
 To get an overview of the ten most recently active tags, use the recent_tags
 method. This method will return basic information as recorded by SMTPeter for
