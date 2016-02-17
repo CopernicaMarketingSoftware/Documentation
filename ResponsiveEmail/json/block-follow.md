@@ -11,7 +11,7 @@ All available properties of this block type are mentioned in the table below.
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "follow" | Property to identify the block as a follow block.                                                                                                  |
 | [label](copernica-docs:ResponsiveEmail/json/property-label) | _string_ | The label to show above all the social icons.                                               |
-| [platforms](copernica-docs:ResponsiveEmail/json/property-follow-platforms) | _object_ | The platforms which we should be displaying in this follow block and their corresponding urls/usernames.   |
+| [platforms](copernica-docs:ResponsiveEmail/json/property-follow-platforms) | _object_ | The platforms which we should be displaying in this follow block and the corresponding usernames/urls to follow for these platforms.   |
 | [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each social icon.                                                        |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties to style the label property.               |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the follow block.                                     |
@@ -30,7 +30,7 @@ the basic usage, showing a set of follow buttons.
 ```javascript
 {
     "from" : "info@example.com",
-    "subject" : "Email with a follow block",
+    "subject" : "Email with follow blocks",
     "content" : {
         "blocks" : [ {
             "type"      : "follow",
@@ -40,18 +40,10 @@ the basic usage, showing a set of follow buttons.
                 "type"      : "rounded",
                 "size"      : 32
             },
-            "platforms" : [ {
-                "name"  :   "facebook",
-                "link"      : {
-                    "url"       : "https://facebook.com/copernica"
-                }
+            "platforms" :  {
+                "facebook" : "copernica",
+                "twitter"  : "https://twitter.com/copernica"
             },
-            {
-                "name"  :   "twitter",
-                "link"      : {
-                    "url"       : "https://twitter.com/copernica"
-                }
-            } ]
         } ]
     }
 }
