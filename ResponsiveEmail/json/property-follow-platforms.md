@@ -1,9 +1,11 @@
 # Property `platforms`
 
-The property `platforms` is used in the `follow` block and accepts a JSON object, which contains the platform name 
-as key and the username/url to follow as value. Please note that you can provide username or url only for the 
-facebook, twitter, linkedin and googleplus platforms. For all other platforms you can provide only a url.
-
+The property `platforms` is used in the `follow` block and accepts a JSON object,  
+which contains the platform name as key and the username/url to follow as value. 
+If you provide a username, we will create a url from it. Please note that you can provide
+username or url only for the facebook, twitter, linkedin and googleplus platforms. 
+For all other platforms you can provide only a url.
+ 
 ### Supported platform names:
 
 |          |         |         |         |         |         |         |         |         |
