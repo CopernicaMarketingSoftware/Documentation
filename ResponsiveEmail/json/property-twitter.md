@@ -18,7 +18,7 @@ The following input JSON shows a twitter basic usage in a share block:
 ```javascript
 {
     "from" : "info@example.com",
-    "subject" : "Email with share blocks",
+    "subject" : "Email with a share block",
     "content" : {
         "blocks" : [ {
             "type"      : "share",
