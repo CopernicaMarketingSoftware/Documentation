@@ -4,7 +4,7 @@ The property `facebook` allows you to set the required facebook app's properties
 The property value should be a nested JSON object. 
 The following table lists all its sub-properties:
 
-## Facebook properties
+## Facebook sub-properties
 
 | Property | Value | Description                                     |
 |:---------|-------|-------------------------------------------------|
