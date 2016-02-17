@@ -30,7 +30,7 @@ the basic usage, showing a set of follow buttons.
 ```javascript
 {
     "from" : "info@example.com",
-    "subject" : "Email with follow blocks",
+    "subject" : "Email with a follow block",
     "content" : {
         "blocks" : [ {
             "type"      : "follow",
