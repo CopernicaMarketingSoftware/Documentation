@@ -4,7 +4,7 @@ The property `twitter` allows you to set the optional twitter app's properties `
 The property value should be a nested JSON object. 
 The following table lists all its sub-properties:
 
-## Twitter properties
+## Twitter sub-properties
 
 | Property | Value | Description                                     |
 |:---------|-------|-------------------------------------------------|
