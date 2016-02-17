@@ -8,7 +8,7 @@ The following table lists all its sub-properties:
 
 | Property | Value | Description                                     |
 |:---------|-------|-------------------------------------------------|
-| appid | _string_ | The required ID of an application registered in Facebook.  |
+| [appid](https://developers.facebook.com/apps/) | _string_ | The required ID of a Facebook app. If not specified, this field automatically gets the value of the Copernica appid.  |
 | redirect_uri | _string_ | The URL to redirect to after a person clicks a button on the dialog. Required when using URL redirection.    |
  
 ## Example
