@@ -35,7 +35,7 @@ The following input JSON shows a facebook basic usage in a share block:
             "description"   : "Optional prefilled text to share",
             "platforms" : ["facebook"],
             "facebook"  : {
-                "appid"        :   "123456789101112",
+                "appid"        :   "0123456789",
                 "redirect_uri" :   "https://www.copernica.com"
             }
         } ]
