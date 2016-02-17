@@ -1,16 +1,8 @@
 # Property `platforms`
 
-The property `platforms` accepts a JSON array, with a comma seperated list with 
-JSON objects, containing the actual `platforms` inside the `follow` block.
-Each platform json block inside the `platforms` can have the following sub-properties:
-
-
-## Platform json block sub-properties
-
-| Property | Value | Description                                                                                                                                       |
-|:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| name | _string_ | The name of the platform.  See the table below for all supported names. |
-| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the `url` to follow for this platform.                                            |
+The property `platforms` is used in the `follow` block and accepts a JSON object, which contains the platform name 
+as key and the username/url to follow as value. Please note that you can provide username or url only for the 
+facebook, twitter, linkedin and googleplus platforms. For all other platforms you can provide only a url.
 
 ### Supported platform names:
 
@@ -45,19 +37,14 @@ the basic usage, showing a set of follow buttons.
                 "type"      : "rounded",
                 "size"      : 32
             },
-            "platforms" : [ {
-                "name"  :   "facebook",
-                "link"      : {
-                    "url"       : "https://facebook.com/copernica"
-                },
+            "platforms" : {
+                "facebook" :  "copernica",
+                "twitter"  :  "https://twitter.com/copernica",
+                "reddit"   :  "https://twitter.com/copernica"
             },
-            {
-                "name"  :   "twitter",
-                "link"      : {
-                    "url"       : "https://twitter.com/copernica"
-                },
-            } ]
         } ]
     }
 }
 ```
+
+For more information and more examples, please check the documentation of the `follow` block.
