@@ -11,7 +11,7 @@ the basic usage, showing a set of share buttons.
 ```javascript
 {
     "from" : "info@example.com",
-    "subject" : "Email with share blocks",
+    "subject" : "Email with a share block",
     "content" : {
         "blocks" : [ {
             "type"      : "share",
