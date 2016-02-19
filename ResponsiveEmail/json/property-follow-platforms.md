@@ -1,10 +1,6 @@
 # Property `platforms`
 
-The property `platforms` is used in the `follow` block and accepts a JSON object,  
-which contains the platform name as key and the username/url to follow as value. 
-If you provide a username, we will create a url from it. Please note that you can provide
-username or url only for the facebook, twitter, linkedin and googleplus platforms. 
-For all other platforms you can provide only a url.
+The property `platforms` is a JSON object, which contains the names of all platforms we should be displaying in the `follow` block and their corresponding values. This values are the urls to follow. In case of facebook, twitter, linkedin and googleplus you can also provide a username instead of url, and we will create a url from it.
  
 ### Supported platform names:
 
@@ -42,7 +38,7 @@ the basic usage, showing a set of follow buttons.
             "platforms" : {
                 "facebook" :  "copernica",
                 "twitter"  :  "https://twitter.com/copernica",
-                "reddit"   :  "https://twitter.com/copernica"
+                "reddit"   :  "https://reddit.com/user/reddit"
             },
         } ]
     }
