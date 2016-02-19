@@ -1,6 +1,6 @@
 # Property `description`
 
-The property `description` accepts a JSON string, representing the optional text 
+The property `description` is a JSON string, representing the optional text 
 of the share link inside the `share` block.
 
 ## Example usage
