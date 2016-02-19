@@ -1,8 +1,7 @@
 # Property `twitter`
 
-The property `twitter` allows you to set the optional twitter app's properties `hashtags` and `via`. 
-The property value should be a nested JSON object. 
-The following table lists all its sub-properties:
+The `twitter` property is optional and is created only if twitter is selected as platform in the share block
+and a `hashtags` or `via` value is added to twitter. The property value should be a nested JSON object. The following table lists all its sub-properties:
 
 ## Twitter sub-properties
 
@@ -35,7 +34,7 @@ The following input JSON shows a twitter basic usage in a share block:
             "description"   : "Optional prefilled text to share",
             "platforms" : ["twitter"],
             "twitter"  : {
-                "hashtags"     :   ["responsive","email","copernica"],
+                "hashtags"     :   ["responsive", "email", "copernica"],
                 "via"          :   "ResponsiveEmail",
             }
         } ]
