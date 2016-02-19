@@ -26,12 +26,9 @@ The following input JSON shows an icon basic usage in a follow block:
                 "type"      : "rounded",
                 "size"      : 32
             },
-            "platforms" : [ {
-                "name"  :   "facebook",
-                "link"      : {
-                    "url"       : "https://facebook.com/copernica"
-                }
-            } ]
+            "platforms" :  {
+                "facebook" :  "https://facebook.com/copernica"
+            } 
         } ]
     }
 }
