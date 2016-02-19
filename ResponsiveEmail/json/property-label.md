@@ -6,6 +6,8 @@ and should hold the text that is displayed above your follow or share buttons.
 
 ## Example usage
 
+The following input JSON shows how to show a label in a follow block. This is the basic usage, showing a follow button.
+
 ```javascript
 {
     "from" : "info@example.com",
