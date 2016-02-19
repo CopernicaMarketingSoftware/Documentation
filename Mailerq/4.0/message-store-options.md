@@ -1,7 +1,7 @@
 # Message store options
 
 To reduce the load on the message queues in RabbitMQ, MailerQ can be set 
-up an to use an external message store. If you do this, only the email meta
+up to use an external message store. If you do this, only the email meta
 data (like the recipient, the envelope address, et cetera) has to be 
 stored in the JSON object that is published to RabbitMQ, while the full 
 MIME data can be stored in the message store.
@@ -96,4 +96,11 @@ the throughput of storage operations gets better too.
 
 ## Time-to-live
 
-@todo write this
+When you store messages, you probably don't want to keep them forever. 
+A message for which the "ttl" (time to live) has expired will 
+automatically be removed from the message store by the NoSQL environment.
+The ttl (in seconds) of a message in the message store is defined as its 
+maximum delivery time added to the `storage-ttl` value. In other words,
+a message will be kept in the message store `storage-ttl` seconds after
+its maximum delivery time.
+[Read more about maximum delivery times here.](delivery-limits#maximum-delivery-time)
