@@ -15,8 +15,8 @@ All available properties of this block type are mentioned in the table below.
 | [icon](copernica-docs:ResponsiveEmail/json/property-icon) | _object_ | The type and size of each social icon.                       |
 | [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Contains the required link `url` and the optional link `title` to share on the timeline/wall of the user on the external social platform.                                            |
 | [description](copernica-docs:ResponsiveEmail/json/property-share-description) | _string_ | Contains the optional link `description` to share on the timeline/wall of the user on the external social platform.                                            |
-| [facebook](copernica-docs:ResponsiveEmail/json/property-facebook) | _object_ | Contains the facebook properties `appid` and `redirect_uri` required for the facebook sharing.                                         |
-| [twitter](copernica-docs:ResponsiveEmail/json/property-twitter) | _object_ | Contains the twitter properties `hashtags` and `via` which are optional for the twitter sharing.                                         |
+| [facebook](copernica-docs:ResponsiveEmail/json/property-facebook) | _object_ | Optional and used only if facebook is added as property in platforms. Contains the facebook properties `appid` and `redirect_uri`.                                         |
+| [twitter](copernica-docs:ResponsiveEmail/json/property-twitter) | _object_ | Optional and used only if twitter is added as property in platforms. Contains the twitter properties `hashtags` and `via`.                                         |
 | [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties to style the label property.                      |                                              |
 | [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background settings for the share block.                                      |
 | [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the share block.                                                            |
@@ -54,7 +54,7 @@ the basic usage, showing a set of share buttons.
                 "redirect_uri" :   "https://www.copernica.com"
             },
             "twitter"  : {
-                "hashtags"     :   ["responsive","email","copernica"],
+                "hashtags"     :   ["responsive", "email", "copernica"],
                 "via"          :   "ResponsiveEmail",
             } 
         } ]
