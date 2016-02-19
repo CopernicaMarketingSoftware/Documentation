@@ -4,6 +4,8 @@ The `label` property is used inside [follow blocks](copernica-docs:ResponsiveEma
 or [share blocks](copernica-docs:ResponsiveEmail/json/block-share)
 and should hold the text that is displayed above your follow or share buttons.
 
+## Example usage
+
 ```javascript
 {
     "from" : "info@example.com",
