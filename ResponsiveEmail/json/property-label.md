@@ -17,12 +17,9 @@ and should hold the text that is displayed above your follow or share buttons.
                 "type"      : "rounded",
                 "size"      : 32
             },
-            "platforms" : [ {
-                "name"  :   "twitter",
-                "link"      : {
-                    "url"       : "https://twitter.com/copernica"
-                }
-            } ]
+            "platforms" : {
+                "twitter" : "https://twitter.com/copernica"
+            }
         } ]
     }
 }
