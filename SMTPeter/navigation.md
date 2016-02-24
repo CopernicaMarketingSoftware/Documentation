@@ -1,5 +1,6 @@
 * [Introduction](copernica-docs:SMTPeter/introduction "Introduction")
 * [Features](copernica-docs:SMTPeter/features "SMTPeter Features")
+  * [Bounce management](copernica-docs:SMTPeter/features/bounce-tracking "Bounce management")
 * [Security](copernica-docs:SMTPeter/secure "Security")
 * [SMTP API](copernica-docs:SMTPeter/smtp-api "SMTP API")
 * [REST API](copernica-docs:SMTPeter/rest-api "REST API")
