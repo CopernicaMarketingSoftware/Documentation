@@ -8,7 +8,7 @@ here.
 ## Consistent layout
 
 It is of great value that the user will see the email in the way you have
-designed it. Unfortunately, some email clients will strip out part the header
+designed it. Unfortunately, some email clients will strip out the header 
 of the HTML document that holds the style (CSS). This will ruin your
 carefully designed layout.
 
@@ -17,7 +17,7 @@ Example of a deleted style:
 
 With SMTPeter you can inline this style into your HTML and thus your layout
 will be preserved if the header is stripped. This transformation is optional, so if you prefer not to use it you
-can switch it of.
+can switch it off.
 
 
 ## Increased security with ease
@@ -48,10 +48,9 @@ out of the information you provide.
 
 ## Detailed Statistics
 
-When you send out an email you are likely interested in getting the best
-response from the sent messages. To help you with this you can track the
-openings of your emails with our openings statistics. You also can track
-on which links are clicked within the email with our click statistics.
+When you send out commercial emails you are likely interested in getting insight into
+how your campaigns scored. SMTPeter automcatically keeps track on 
+who opened your emails and who clicked the hyperlinks and how many times. 
 
 
 ## Email Throttling
