@@ -6,7 +6,7 @@ To maintain a good deliverabily (sender reputation score) it is generally a good
 
 It is currently not possible to manage selections from the MarketingSuite. Also, the MarketingSuite uses a different method on registering those bounces. As a result, previously made bounce selections (in Publisher) didn't have any effect on mailings sent with the MarketingSuite. 
 
-To overcome this problem, we added a new selection condition to the existing list. The selection condition is pretty much the same as the current bounce condition. 
+To overcome this problem, we added a new selection condition to the existing list in Publisher. The selection condition is pretty much the same as the current bounce condition. 
 
 ### Add MS bounce condition to your selection. 
 
