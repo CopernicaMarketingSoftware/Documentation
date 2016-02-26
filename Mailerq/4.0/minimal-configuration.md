@@ -31,10 +31,11 @@ This license file should be copied to "/etc/mailerq/license.txt".
 
 ## Software dependencies
 
-MailerQ is almost fully statically linked and has hardly any dependencies to 
-be able to start. However, it does dynamically load libraries at runtime when 
-it needs specific features. The following libraries are nice to have installed 
-on your system, because MailerQ uses its features when they're available.
+MailerQ is almost fully statically linked and has hardly any dependencies on
+external libraries. However, when it discovers that certain libraries are
+available on your system, it does dynamically load them to make use of
+specific features. The following libraries are nice to have installed, 
+because MailerQ can use their features:
 
 <table>
     <tr>
