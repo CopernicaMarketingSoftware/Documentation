@@ -1,7 +1,7 @@
 # Setting up RabbitMQ
 
-MailerQ depends on RabbitMQ for all its queueing. This means you need a running
-RabbitmQ instance or cluster of instances before you can start MailerQ.  We do not 
+MailerQ depends on RabbitMQ for all its queueing. This means that before you
+can even start MailerQ, you first need a running RabbitmQ instance.  We do not 
 intend to write a full installation guide for RabbitMQ here, on the 
 [www.rabbitmq.com](https://www.rabbitmq.com) website you will find any information 
 you need about RabbitmQ. However, we do have some tips, tricks and recommendations 
@@ -22,19 +22,22 @@ able to connect to it.
 
 ## Check your login and password
 
-By default, when you install RabbitMQ, it creates the first user with login 
-`guest` and password `guest`. You can only use this default login if you connect 
-to RabbitMQ locally (from localhost). If you connect from a remote host, the `guest/guest` 
-login does not work. Therefore, if you install RabbitMQ and MailerQ on different machines, 
-you either need to add a user with a different name and password, or you should configure 
-RabbitMQ to allow `guest/guest` logins from remote hosts as well.
+By default, when you install RabbitMQ, it creates a user with login 
+`guest` and password `guest`. These are the login credentials that you have
+to include in the configuration file of MailerQ to allow MailerQ to connect
+to RabbitMQ. However, this guest/guest login only works for clients that connect 
+to RabbitMQ locally (from the same machine). If you run MailerQ and RabbitMQ on 
+different servers, the `guest/guest` login does not work. Therefore, if you install 
+RabbitMQ and MailerQ on different machines, you either need to add a user with a 
+different name and password, or you should configure RabbitMQ to allow `guest/guest` 
+logins from remote hosts as well.
 
-The `loopback_users` setting in the RabbitMQ config file can be used for that. 
-By including this option in the RabbitMQ config file, you tell RabbitMQ that it is ok to 
-login with `guest/guest`, even if the user comes from a remote location. If you do 
-include this setting, please make sure that you also have a firewall running, 
-because you do not want everyone from all over the internet to connect to your 
-RabbitMQ instance!
+To allow remote guest/guest logins, you can use the `loopback_users` setting in the 
+RabbitMQ config file. By including this option in the RabbitMQ config file, you tell 
+RabbitMQ that it is ok for clients to login with `guest/guest`, even if the connection 
+comes from a remote location. If you do include this setting, please make sure that 
+you also have a firewall running, because you do not want everyone from all over the 
+internet to connect to your RabbitMQ instance!
 
 [Read more about setting up loopback_users](https://www.rabbitmq.com/access-control.html).
 

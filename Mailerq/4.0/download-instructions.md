@@ -11,8 +11,8 @@ latest version of MailerQ.
 ## Installing on Debian/Ubuntu based systems
 
 We have two repositories, one for newer Ubuntu and Debian versions (Ubuntu
-12.04 and up, and Debian version 8 and higher), and a repository for Debian
-6 and Debian 7.
+12.04 and up, and Debian version 8 and higher), and a repository for the
+older Debian 6 and Debian 7 versions.
 
 <table>
     <tr>
@@ -68,17 +68,17 @@ sudo yum install mailerq
 ```
 
 Of course, if you're on an older system (CentOS 7, Red Hat 6 or Fedora 21),
-you should modify the repository URL.
+you should modify the repository URL to contain "rpm-legacy" instead of "rpm".
 
 
-## Multiple versions
+## Specific versions
 
 Once you've added the MailerQ repository to the list of software sources,
 you can always get the latest stable version of MailerQ with the instructions
 `sudo apt-get install mailerq` for Debian/Ubuntu based systems or
-`sudo yum install mailerq` for Red Hat based systems. If you prefer a previous
-version, or when you want to try the bleeding edge development version,
-you can also append a version name.
+`sudo yum install mailerq` for Red Hat based systems. If you prefer an older
+version over the current stable one, or when you want to try the bleeding edge 
+development version, you should append a version number.
 
 ```
 sudo apt-get install mailerq-4.0
@@ -90,17 +90,17 @@ sudo yum install mailerq-dev
 ```
 
 The development version has a "-dev" postfix. This dev version is automatically
-recompiled every 24 hours and contains the latest fixes and changes. However,
-it is often not recommended to use it in production environments.
+recompiled every 24 hours and contains the latest fixes and changes. 
+It is often not recommended to use it in production environments.
 
 
 ## Additional repositories
 
-All binary distributions are statically linked, which means that MailerQ hardly
-needs any libraries to be available on your system. However, due to licensing
+All repositories mentioned above contain MailerQ versions that are statically 
+linked, which means that there are hardly any dependencies. However, due to licensing
 conditions, we are required to supply dynamically linked versions of MailerQ too.
 If you prefer using a dynamically linked version, use one of the following
-repositories:
+repositories instead of the repositories mentioned above.
 
 <table>
     <tr>
