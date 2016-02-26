@@ -1,5 +1,5 @@
 * [Getting started](introduction "Getting started")
-    * [Download instructions](download "Download instructions")
+    * [Download instructions](download-instructions "Download instructions")
     * [Setting up RabbitMQ](rabbitmq-install "Settup up RabbitMQ")
     * [Minimal configuration](minimal-configuration "A minimal configuration")
     * [License file](license-file "Obtaining a license file")
