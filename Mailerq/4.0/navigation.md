@@ -3,7 +3,7 @@
     * [Setting up RabbitMQ](rabbitmq-install "Settup up RabbitMQ")
     * [Minimal configuration](minimal-configuration "A minimal configuration")
     * [License file](license-file "Obtaining a license file")
-* [Configuration](changing the config file)
+* [Configuration](configuration "Changing the config file")
     * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
     * [Database access](database-access "Database access")
     * [Message store options](message-store-options "Message Store options")
