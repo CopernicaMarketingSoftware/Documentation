@@ -15,6 +15,7 @@
      * [Video block](copernica-docs:MarketingSuite/template-editor/blocks/video)
      * [Webversion block](copernica-docs:MarketingSuite/template-editor/blocks/webversion)
 * [Sending Email](copernica-docs:MarketingSuite/send-app/introduction)
+     * [Bounce management](copernica-docs:MarketingSuite/send-app/bounce-management)
      * [Repeat Emailings](copernica-docs:MarketingSuite/send-app/repeat-mailings)
 * [Statistics](copernica-docs:MarketingSuite/statistics/introduction)
 * [Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
