@@ -3,7 +3,7 @@
 * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
 * [Injecting email](inject-email "Send email with MailerQ")
     * [Using the spool directory](spool-directory "Using the spool directory")
-    * [MailerQ as command-line utility)(command-line-utility "MailerQ as command-line utility")
+    * [MailerQ as command-line utility](command-line-utility "MailerQ as command-line utility")
     * [Inject mail using SMTP](smtp-server "Inject mail using SMTP")
     * [Publish raw JSON to RabbitMQ](publish-to-rabbitmq "Publish raw JSON to RabbitMQ")
 * [Send email](send-email "Send email with MailerQ")
