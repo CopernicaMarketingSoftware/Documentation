@@ -21,7 +21,7 @@ of the server that on which RabbitQ runs, and the optional vhost is the name
 of the "virtual host" inside RabbitMQ that you have reserved for all MailerQ
 related data. 
 
-If you leave the setting empty, MailerQ uses the "amqp://guest:guest@localhost/"
+If you leave the `rabbitmq-setting` setting empty, MailerQ uses the "amqp://guest:guest@localhost/"
 default value. This default only works if you run RabbitMQ and MailerQ on
 the same server, and when you do not use a special vhost. 
 
@@ -33,11 +33,9 @@ Running a cluster allows you to use [highly available queues](https://www.rabbit
 ## RabbitMQ queues
 
 MailerQ uses several queues to manage email messages. On startup, MailerQ 
-reads the config file and automatically tells RabbitMQ to create the listed 
-queues.
-
-Only the outbox queue is mandatory; if you want to disable the other queues, 
-the field behind them can be simply be left empty. 
+reads the configuration and tells RabbitMQ to create all queues listed in
+the config file. This means that you do not have to ensure that the queues exists 
+before you start up MailerQ: the queues are automatically created.
 
 ```
 rabbitmq-outbox:        <Name of your outbox message queue>
@@ -61,40 +59,43 @@ config file. The default value is "outbox".
 
 The outbox queue is the only queue from which messages are being read by 
 MailerQ. All other queues are only used to publishing messages to. If you 
-want to inject messages directly into RabbitMQ, you should therefore publish 
+want to inject messages directly into RabbitMQ, you should publish 
 your message to the outbox queue so that MailerQ automatically picks them up
 
 
 ### Queues for incoming messages
 
-Besides sending email, MailerQ also opens up SMTP ports to which email can be 
-delivered. This allows you to inject email into MailerQ using the SMTP protocol.
-Besides SMTP, mails can be injected by dropping them in a spool directory, or by
-using MailerQ as command line utility.
+Besides sending email, MailerQ also opens up SMTP ports and spool directories
+to which email can be delivered. This allows you to inject email into MailerQ.
+Besides SMTP and the spool directory, mails can also be injected by using 
+MailerQ as command line utility.
 
 Messages that are received via one of these mechanisms are published to message queues.
-The `rabbitmq-inbox` setting specifies the queue to which all correctly received
-messages are delivered, and `rabbitmq-refused` holds the messages that were delivered
+The "rabbitmq-inbox" setting specifies the queue to which all correctly received
+messages are delivered, and "rabbitmq-refused" holds the messages that were delivered
 to the SMTP port, but that were not accepted (e.g., because the client
 did not correctly authenticate). 
 
 ```
 rabbitmq-inbox:     inbox
+rabbitmq-refused:   refused
 rabbitmq-reports:   reports
 rabbitmq-local:     local
-rabbitmq-refused:   refused
 ```
 
-When MailerQ receives a message, the received message is analyzed and 
-sent to one of the four message queues. If the received message 
-contains a delivery report (or some other kind of report), it is placed in 
-the "reports" queue and when the message was sent to an email
-address marked as "local", the message is added to the "local" queue. 
+We mentioned that all accepted messages are published to the "inbox" queue.
+However, it is slightly more complicated. When MailerQ receives a message, 
+the received message is analyzed first. If it contains a delivery report (or
+some other kind of report), the message is placed in the "reports" queue instead
+of the "inbox" queue and when the message was sent to an email address marked as 
+"local", the message is published to the "local" queue. 
 You can use the web based management console to manage the addresses that 
 you consider to be local.
 
 Messages that do not contain a report and that are also not local (this
-normally is the majority of all messages) are sent to the "inbox" queue:
+normally is the majority of all messages) are sent to the "inbox" queue.
+To summerize, incoming messages are published to one of the following four
+queues:
 
 * inbox queue: regular incoming messages
 * local queue: incoming messages for local recipient addresses
@@ -104,10 +105,9 @@ normally is the majority of all messages) are sent to the "inbox" queue:
 The names of all these queues are optional and you may leave them blank. If
 you do not set an explicit "inbox" queue, all incoming messages are 
 automatically published to the "outbox" queue. This means that all 
-incoming messages are automatically directly being sent out again, because
-MailerQ also consumes from this outbox queue, so the incoming message
-is directly sent out again. Leaving this "inbox" queue empty is a very 
-common thing to do, especially if you set up MailerQ as a retransmitter.
+incoming messages are automatically being sent out again. Leaving this 
+"inbox" queue empty is a very common thing to do, especially if you set up 
+MailerQ as a retransmitter.
 
 You can also leave the "local" and "reports" queue settings empty. If you 
 do this MailerQ will not explicitly check whether an email was sent to a 
@@ -119,15 +119,15 @@ When you configure MailerQ to listen to one or more SMTP ports, and you
 also require incoming connections to use authentication, you might receive
 messages over unauthenticated connections. These messages are rejected and
 will not end up in the "inbox" queue. However, for debugging and/or 
-security reasons you might still be interested in these messages. If you
-assign a value to the "rabbitmq-refused" config file setting, you can
-instruct MailerQ to send refused messages to a special queue where you
-can inspect these refused messages.
+security reasons you might still be interested in finding out who is
+flooding your SMTP server with rejected messages. By assigning a value to 
+the "rabbitmq-refused" config file setting, you can instruct MailerQ to send 
+refused messages to a special queue where you can inspect these refused messages.
 
 
 ### Delivery status notifications
 
-In the above sections we have described the queue from which MailerQ
+In the above sections we described the queue from which MailerQ
 reads its outgoing messages (the outbox queue) and the queues to which
 all incoming messages are published. However, besides handling incoming and 
 outgoing messages, MailerQ can also construct and send email messages all 
@@ -141,7 +141,7 @@ notifcations). If you explicitly configure a message to trigger such
 status notifications on failure, MailerQ will create a status notification 
 when the message could not be delivered.
 
-A delivery status notification is just a regular email message, that is sent
+A delivery status notification is just a regular email message that is sent
 back to the original envelope over the SMTP protocol. By default MailerQ
 adds such notifications to the normal "outbox" queue so that they get
 delivered just like all other messages. However, you can include a 
@@ -155,7 +155,7 @@ rabbitmq-dsn: alternative_dsn_queue
 The "rabbitmq-dsn" setting is normally used to preprocess
 delivery reports before they are sent. By setting the "rabbitmq-dsn" value
 to a custom queue, a custom script can pick up the notifications, preprocess
-them and put them in the "outbox" queue.
+them and put them in the "outbox" queue. 
 
 
 ### Result queues
@@ -169,7 +169,7 @@ rabbitmq-results: completed_deliveries
 rabbitmq-success: successful_deliveries
 rabbitmq-failure: failed_deliveries
 rabbitmq-retry: delayed_deliveries
-
+```
 
 The `rabbitmq-results`, `rabbitmq-success` and `rabbitmq-failure` settings hold 
 the names of the RabbitMQ result queues. MailerQ posts a JSON result object for
@@ -305,7 +305,7 @@ Another queue that deals with incoming messages is the `rabbitmq-local` queue.
 Normally when you send an email to MailerQ using SMTP, you will first have to 
 authenticate before MailerQ accepts the message. However, sometimes you will 
 want emails sent to certain (local) email addresses to be accepted without 
-authenticationbefore placing them into the `rabbitmq-local` queue. These can be 
+authentication before placing them into the `rabbitmq-local` queue. These can be 
 set in the [MailerQ management console](management-console).
 
 When MailerQ recognizes these messages, it will move them to the `rabbitmq-local` 
