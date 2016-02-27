@@ -37,7 +37,7 @@ This file does not even have to exist as it will be automatically created by
 MailerQ when it is missing.
 
 ```
-database: sqlite///path/to/database/file.sql
+database: sqlite:///path/to/database/file.sql
 ```
 
 When MailerQ first connects to a database (or first opens the database file),
