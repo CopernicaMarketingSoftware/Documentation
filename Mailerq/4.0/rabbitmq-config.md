@@ -17,7 +17,7 @@ rabbitmq-address: amqp://login:passwd@hostname/vhost
 
 The format of the address is obvious: the "login" and "passwd" hold
 the username and password of the RabbitMQ server, the hostname is the name
-of the server on which RabbitQ runs, and the optional vhost is the name
+of the server on which RabbitMQ runs, and the optional vhost is the name
 of the "virtual host" inside RabbitMQ that you have reserved for all MailerQ
 related data. 
 
@@ -54,7 +54,7 @@ rabbitmq-retry:         <Name of your retry queue>
 
 The messages published to these queues are always in JSON format, and
 hold the meta information for each delivery: the envelope, recipient and other
-message-specific settings.
+message specific settings.
 
 
 ### Queue for outgoing messages
@@ -131,7 +131,7 @@ and are sent to the inbox queue.
 When you configure MailerQ to listen to one or more SMTP ports, and you
 also require incoming connections to authenticate, you might receive
 messages over unauthenticated connections. These messages are rejected and
-will not end up in the "inbox" queue. However, for debugging and/or 
+do not end up in the "inbox" queue. However, for debugging and/or 
 security reasons you might still want to find out who is flooding your SMTP 
 server. By assigning a value to "rabbitmq-refused", you instruct MailerQ to send 
 rejected messages to a special queue where you can inspect these 
