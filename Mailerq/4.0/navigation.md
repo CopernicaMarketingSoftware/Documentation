@@ -5,6 +5,7 @@
     * [Minimal configuration](minimal-configuration "A minimal configuration")
 * [Configuration file](configuration "The RabbitMQ config file")
     * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
+    * [Cluster settings](cluster "MailerQ clustering")
     * [Database access](database-access "Database access")
     * [Message store options](message-store-options "Message Store options")
     * [Delivery throttling](delivery-limits "Delivery Throttling")

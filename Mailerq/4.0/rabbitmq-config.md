@@ -1,32 +1,209 @@
-# Configuring MailerQ to connect with RabbitMQ
+# RabbitMQ configuration
 
-MailerQ reads the location and authentication information to connect to RabbitMQ
-from its config file. Make sure you include the following variables
-in the MailerQ configuration file (`/etc/mailerq/config.txt`):
+All config file settings that start with rabbitmq-* control how MailerQ
+interacts with RabbitMQ. Among these settings are the address of the
+RabbitMQ server, the queue from which outgoing messages are read, and the
+queues to which incoming messages are delivered.
+
+
+## RabbitMQ address
+
+MailerQ reads the location and authentication information to connect to 
+RabbitMQ from its config file. 
 
 ```
-rabbitmq-address:          <URL of RabbitMQ server> (default: amqp://guest:guest@localhost/)
+rabbitmq-address: amqp://login:passwd@hostname/vhost
 ```
 
-The `rabbitmq-address` variable holds the URL of your RabbitMQ server, in 
-`amqp://username:password@hostname/vhost` format. 
+The format of the address is probably obvious: the "login" and "passwd" hold
+the username and password of the RabbitMQ server, the hostname is the name
+of the server that on which RabbitQ runs, and the optional vhost is the name
+of the "virtual host" inside RabbitMQ that you have reserved for all MailerQ
+related data. 
 
-If you have 
-a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), they have to 
-be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
-will have highly available queues. Since MailerQ 4.0, even setting up a single
-node will create a cluster.
-[Read more about highly available queues](https://www.rabbitmq.com/ha.html)
+If you leave the setting empty, MailerQ uses the "amqp://guest:guest@localhost/"
+default value. This default only works if you run RabbitMQ and MailerQ on
+the same server, and when you do not use a special vhost. 
 
-The `username` and `password` fields inside the `rabbitmq-address` variable hold
-the username and password of the RabbitMQ server, as set in the RabbitMQ
-configuration. The default only works when connecting to
-localhost. If you run RabbitMQ on a separate server, you will need to set your
-own username and password, or configure the RabbitMQ server to allow `guest/guest`
-logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html "RabbitMQ's Access Control Configuration")).
+If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
+you can use colons to seperate the hostnames: amqp://guest:guest@host1;host2;host3/vhost.
+Running a cluster allows you to use [highly available queues](https://www.rabbitmq.com/ha.html).
 
-The `vhost` field is, by default, empty. If you created a specific RabbitMQ vhost
-environment, you can set this.
+
+## RabbitMQ queues
+
+MailerQ uses several queues to manage email messages. On startup, MailerQ 
+reads the config file and automatically tells RabbitMQ to create the listed 
+queues.
+
+Only the outbox queue is mandatory; if you want to disable the other queues, 
+the field behind them can be simply be left empty. 
+
+```
+rabbitmq-outbox:        <Name of your outbox message queue>
+rabbitmq-inbox:         <Name of your inbox queue>
+rabbitmq-reports:       <Name of your reports queue>
+rabbitmq-local:         <Name of your local queue>
+rabbitmq-refused:       <Name of your refused queue>
+rabbitmq-dsn:           <Name of your delivery status notification queue>
+rabbitmq-results:       <Name of your result queue>
+rabbitmq-success:       <Name of your success queue>
+rabbitmq-failure:       <Name of your failure queue>
+rabbitmq-retry:         <Name of your retry queue>
+```
+
+### Queue for outgoing messages
+
+All emails that MailerQ sends out are fetched from the outbox queue. This
+outbox queue feeds MailerQ with messages to be delivered. The
+name of this queue can be set with the "rabbitmq-outbox" setting in the
+config file. The default value is "outbox".
+
+The outbox queue is the only queue from which messages are being read by 
+MailerQ. All other queues are only used to publishing messages to. If you 
+want to inject messages directly into RabbitMQ, you should therefore publish 
+your message to the outbox queue so that MailerQ automatically picks them up
+
+
+### Queues for incoming messages
+
+Besides sending email, MailerQ also opens up SMTP ports to which email can be 
+delivered. This allows you to inject email into MailerQ using the SMTP protocol.
+Besides SMTP, mails can be injected by dropping them in a spool directory, or by
+using MailerQ as command line utility.
+
+Messages that are received via one of these mechanisms are published to message queues.
+The `rabbitmq-inbox` setting specifies the queue to which all correctly received
+messages are delivered, and `rabbitmq-refused` holds the messages that were delivered
+to the SMTP port, but that were not accepted (e.g., because the client
+did not correctly authenticate). 
+
+```
+rabbitmq-inbox:     inbox
+rabbitmq-reports:   reports
+rabbitmq-local:     local
+rabbitmq-refused:   refused
+```
+
+When MailerQ receives a message, the received message is analyzed and 
+sent to one of the four message queues. If the received message 
+contains a delivery report (or some other kind of report), it is placed in 
+the "reports" queue and when the message was sent to an email
+address marked as "local", the message is added to the "local" queue. 
+You can use the web based management console to manage the addresses that 
+you consider to be local.
+
+Messages that do not contain a report and that are also not local (this
+normally is the majority of all messages) are sent to the "inbox" queue:
+
+* inbox queue: regular incoming messages
+* local queue: incoming messages for local recipient addresses
+* reports queue: incoming messages that contain a delivery report
+* refused queue: incoming messages that were not accepted
+
+The names of all these queues are optional and you may leave them blank. If
+you do not set an explicit "inbox" queue, all incoming messages are 
+automatically published to the "outbox" queue. This means that all 
+incoming messages are automatically directly being sent out again, because
+MailerQ also consumes from this outbox queue, so the incoming message
+is directly sent out again. Leaving this "inbox" queue empty is a very 
+common thing to do, especially if you set up MailerQ as a retransmitter.
+
+You can also leave the "local" and "reports" queue settings empty. If you 
+do this MailerQ will not explicitly check whether an email was sent to a 
+local address and/or whether an incoming message contained a delivery report. 
+All incoming messages are treated as regular incoming messages 
+and are directly sent to the inbox queue.
+
+When you configure MailerQ to listen to one or more SMTP ports, and you
+also require incoming connections to use authentication, you might receive
+messages over unauthenticated connections. These messages are rejected and
+will not end up in the "inbox" queue. However, for debugging and/or 
+security reasons you might still be interested in these messages. If you
+assign a value to the "rabbitmq-refused" config file setting, you can
+instruct MailerQ to send refused messages to a special queue where you
+can inspect these refused messages.
+
+
+### Delivery status notifications
+
+In the above sections we have described the queue from which MailerQ
+reads its outgoing messages (the outbox queue) and the queues to which
+all incoming messages are published. However, besides handling incoming and 
+outgoing messages, MailerQ can also construct and send email messages all 
+by itself: delivery status notifications (DSN).
+
+A delivery status notification is an email message that is sent back to
+the original envelope address when a delivery fails (technically, it is 
+also possible to send such notifications on successful delivery and when
+a message gets delayed, but in practice it is mostly used for failure 
+notifcations). If you explicitly configure a message to trigger such
+status notifications on failure, MailerQ will create a status notification 
+when the message could not be delivered.
+
+A delivery status notification is just a regular email message, that is sent
+back to the original envelope over the SMTP protocol. By default MailerQ
+adds such notifications to the normal "outbox" queue so that they get
+delivered just like all other messages. However, you can include a 
+"rabbitmq-dsn" setting in the config file to instruct MailerQ to not publish
+these notifications to the outbox queue, but to a different queue instead.
+
+```
+rabbitmq-dsn: alternative_dsn_queue
+```
+
+The "rabbitmq-dsn" setting is normally used to preprocess
+delivery reports before they are sent. By setting the "rabbitmq-dsn" value
+to a custom queue, a custom script can pick up the notifications, preprocess
+them and put them in the "outbox" queue.
+
+
+### Result queues
+
+When a message gets delivered or when a delivery fails, the delivery result
+is published to one or more of the result queues, to allow external monitor 
+scripts to keep an eye on the deliveries.
+
+```
+rabbitmq-results: completed_deliveries
+rabbitmq-success: successful_deliveries
+rabbitmq-failure: failed_deliveries
+rabbitmq-retry: delayed_deliveries
+
+
+The `rabbitmq-results`, `rabbitmq-success` and `rabbitmq-failure` settings hold 
+the names of the RabbitMQ result queues. MailerQ posts a JSON result object for
+every successful delivery to the success queue, and for all failed deliveries to 
+the failure queue. This same result object is also sent to the results queue. 
+Every result object is indeed copied to two queues: failures are posted to the 
+results queue and the failure queue, while successes are published to the results 
+and success queues.
+
+MailerQ only considers a delivery to be a failure when it no longer schedules
+extra attempts. When a message cannot immediately be delivered, or when it is 
+greylisted and will be retried, it is published back to the outbox queue instead,
+and not message is published to the results and/or failure queues.
+
+If you want to process the intermediate results (like greylisting reports) too, 
+you can use a retry queue by setting the "rabbitmq-retry" config setting. All
+deliveries that failed, but that do trigger a retry, will trigger a message
+to be posted to this retry queue.
+
+If you're not interested in the results, or when you're only interested in
+specific results (like failures), you can set the result queues to empty
+strings. MailerQ will then not publish messages to them.
+
+
+
+
+
+
+
+
+rabbitmq-exchange:      <Name of your rabbitmq exchange> (empty by default)
+
+
+
 
 ## Persistent and durable settings
 
@@ -100,32 +277,15 @@ outbox queue; you can:
 
 [Read our separate article to learn more about sending email](send-email).
 
-### Delivery report queues
-
-The `rabbitmq-results`, `rabbitmq-success` and `rabbitmq-failure` variables hold 
-the names of the different RabbitMQ result queues. MailerQ posts a copy of messages
-that have successfully been delivered to the success queue, a copy of messages that 
-could not be delivered to the failure queue, and a copy of all messages, both failed 
-and successfully delivered to the results queue. 
-
-If a message cannot immediately be delivered, or when it it greylisted and will 
-be retried, it is published back to the outbox queue. MailerQ will automatically 
-pick it up from this outbox queue at a later time. If you want to process those 
-intermediate messages too, you can also use the retry queue by setting the 
-`rabbitmq-retry` variable. Copies of all failed deliveries that are going to be 
-retried are posted there (as well as to the outbox queue).
-
-If you're not interested in the results, or when you're only interested in
-specific results (like failures), you can leave these values empty.
-
-[Read our separate article about the result queues](result-queue)
 
 ### Incoming messages
 
 Besides sending email, MailerQ also opens up SMTP ports to which email can be 
 delivered. This allows you to inject email into MailerQ using the SMTP protocol.
+And mails can be injected by dropping them in a spool directory, or by
+using MailerQ as command line utility.
 
-Messages that are received on one of the SMTP ports are published to different queues.
+Messages that are received via one of these mechanisms are published to message queues.
 The `rabbitmq-inbox` setting specifies the queue to which all correctly received
 messages are delivered, and `rabbitmq-refused` holds the messages that were delivered
 to the SMTP port, but that were not accepted (e.g., because the client
@@ -165,38 +325,4 @@ these messages before you move them to the outbox queue), you can set the
 published.
 
 [Read more about how MailerQ handles bounces](sending-bounces)
-
-## Cluster configuration options
-
-If you run MailerQ on multiple servers, you can set up a cluster of MailerQ instances, 
-and connect each one of them to the same RabbitMQ exchange. The different instances
-periodically announce their existence on this shared queue, so that they are
-all aware of each other, and can forward messages to each other.
-
-If you do set up a cluster of MailerQ instances, it is important that each of the
-MailerQ instances connects _to the same RabbitMQ_ instance for the cluster
-communication. It is perfectly valid to use different RabbitMQ instances
-for queueing emails and results, but the cluster exchange must
-be located on the same RabbitMQ instance. That's why the config file allows you
-to set both a `rabbitmq-address` variable with the address of the RabbitMQ server 
-from which the emails are loaded, and a `cluster-address` variable to set the 
-RabbitMQ instance that is used by all MailerQ instances for their internal 
-communication.
-
-One of the advantages of setting up a cluster is that messages unable to
-be processed by one MailerQ instance are automatically handed over to another.
-If one of the MailerQ instances consumes a message from its outbox, but sees 
-that this message can only be sent from a MailerQ instance running on a 
-different server (because only that other server is configured with the 
-appropriate IP address), it will automatically forward the message to the outbox 
-queue of the appropriate MailerQ instance.
-
-To let the MailerQ servers communicate with each other, you need to specify a 
-special cluster exchange on RabbitMQ. The `cluster-*` variables below identify 
-an exchange in a RabbitMQ instance.
-
-```
-cluster-address:        <RabbitMQ cluster server URL> (value of rabbitmq-address by default)
-cluster-exchange:       <RabbitMQ cluster exchange name> (default: cluster)
-```
 
