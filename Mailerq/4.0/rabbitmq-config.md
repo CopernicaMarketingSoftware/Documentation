@@ -52,6 +52,11 @@ rabbitmq-failure:       <Name of your failure queue>
 rabbitmq-retry:         <Name of your retry queue>
 ```
 
+The messages that published to these queues are always in JSON format, and
+hold the meta information for each delivery: the envelope, recipient and other
+message-specific settings.
+
+
 ### Queue for outgoing messages
 
 All emails that MailerQ sends out are fetched from the outbox queue. This
@@ -59,8 +64,8 @@ outbox queue feeds MailerQ with messages to be delivered. The
 name of this queue can be set with the "rabbitmq-outbox" setting in the
 config file. The default value is "outbox".
 
-The outbox queue is the only queue from which messages are being read by 
-MailerQ. All other queues are only used to publishing messages to. If you 
+The outbox queue is the only queue from which messages are read. All other 
+queues are only used to publishing messages to. If you 
 want to inject messages directly into RabbitMQ, you should publish 
 your message to the outbox queue so that MailerQ automatically picks them up
 
@@ -71,7 +76,8 @@ Besides sending email, MailerQ also opens up SMTP ports and spool directories
 to which email can be delivered. This allows you to inject email into MailerQ.
 Mails can also be injected by using MailerQ as command line utility.
 
-Messages that are received via one of these mechanisms are published to message queues.
+Messages that are received via one of these mechanisms are converted to JSON and
+published to message queues.
 The "rabbitmq-inbox" setting specifies the queue to which all correctly received
 messages are delivered, and "rabbitmq-refused" holds the messages that were delivered
 to the SMTP port, but that were not accepted (e.g., because the client
@@ -120,10 +126,9 @@ When you configure MailerQ to listen to one or more SMTP ports, and you
 also require incoming connections to authenticate, you might receive
 messages over unauthenticated connections. These messages are rejected and
 will not end up in the "inbox" queue. However, for debugging and/or 
-security reasons you might still want to find out who is
-flooding your SMTP server. By assigning a value to 
-the "rabbitmq-refused" config file setting, you can instruct MailerQ to send 
-rejected messages to a special queue anyway where you can inspect these 
+security reasons you might still want to find out who is flooding your SMTP 
+server. By assigning a value to "rabbitmq-refused", you instruct MailerQ to send 
+rejected messages to a special queue where you can inspect these 
 refused messages. The default setting for "rabbitmq-refused" is empty,
 so that refused messages are not collected.
 
