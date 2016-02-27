@@ -1,7 +1,7 @@
 # RabbitMQ configuration
 
 All config file settings that start with rabbitmq-* control how MailerQ
-interacts with RabbitMQ. Among these settings are the address of the
+interacts with RabbitMQ. Amongst these settings are the address of the
 RabbitMQ server, the queue from which outgoing messages are read, and the
 queues to which incoming messages are delivered.
 
