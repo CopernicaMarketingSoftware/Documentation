@@ -3,7 +3,7 @@
     * [Setting up RabbitMQ](rabbitmq-install "Settup up RabbitMQ")
     * [License file](license-file "Obtaining a license file")
     * [Minimal configuration](minimal-configuration "A minimal configuration")
-* [Configuration](configuration "Changing the config file")
+* [Configuration file](configuration "The RabbitMQ config file")
     * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
     * [Database access](database-access "Database access")
     * [Message store options](message-store-options "Message Store options")
@@ -11,7 +11,7 @@
     * [Logging](logging "Logging")
     * [Incoming messages](incoming-messages "Incoming messages")
     * [Smarthost & debugging](smarthost "Smarthost & debugging")
-    * [Advanced configuration](configuration "Configure MailerQ")
+    * [Other options](other-configuration "Other configuration options")
 * [Injecting email](inject-email "Send email with MailerQ")
     * [Using the spool directory](spool-directory "Using the spool directory")
     * [MailerQ as command-line utility](command-line-utility "MailerQ as command-line utility")
@@ -27,3 +27,4 @@
 * [Responsive-email](responsive-email "Responsive e-mail")
 * [Examples](mailerq-examples "MailerQ examples")
 * [Plugins](plugins "MailerQ plugin development")
+ 

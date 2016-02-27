@@ -1,95 +1,29 @@
-# Advanced Configuration
+# Configuration file
 
-MailerQ can be configured, using the config file that can be found at 
-`/etc/mailerq/config.txt`.  The `config.txt` file holds configuration options 
-for the connection to RabbitMQ, storage engine (Couchbase, MongoDB, MySQL, 
-SQLite or PostgreSQL) and database (MySQL, SQLite or PostgreSQL) and other 
-options for [MailerQ itself](database-access "The MailerQ database").
+MailerQ reads its configuration from the `/etc/mailerq/config.txt` config 
+file.  This file holds configuration options for the connection to RabbitMQ, 
+NoSQL storage engine and database (MySQL, SQLite or PostgreSQL) and other 
+options for MailerQ itself.
 
-## License
+The config file, and the documentation, has been split up in different
+sections.
 
-To work properly, MailerQ needs a license file. The license file can be 
-[downloaded](http://mailerq.com/product/license "MailerQ license") from the 
-MailerQ website. You can store the file anywhere on the file system. The path to 
-the license file can be configured by setting 
+* [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
+* [Cluster settings](cluster-config "Cluster configuration")
+* [Database settings](database-access "Database access")
+* [Message store settings](message-store-options "Message Store options")
+* [Defauly delivery throttle](delivery-limits "Delivery Throttling")
+* [Logging](logging "Logging")
+* [Incoming messages](incoming-messages "Incoming messages")
+* [Smarthost & debugging](smarthost "Smarthost & debugging")
+* [Management console](management-console "Management console")
+* [Other options](other-configuration "Other configuration options")
 
-```
-license:		<Path to your license> (empty by default)
-```
 
-## User
+## Management console and database
 
-If you have configured MailerQ to use ports lower than 1024 (like port 25 for 
-SMTP and/or port 80 for the management console), the MTA must be started as user 
-`root`. Once the ports have been opened, MailerQ changes its identity to the user 
-set in the config file.
+The config file is not the only place where MailerQ gets its configuration
+from. Most of the settings relevant for deliveries are fetched from the
+database and can be set using the management console or can be directly
+written to the database.
 
-```
-user:           <user name> (empty by default)
-```
-
-The user name to change identify to after the SMTP and HTTP ports have been opened.
-
-## Plugins
-
-Normally, MailerQ tries to load plugins from the default plugin directory, which 
-is `/usr/share/mailerq/plugins`. However, if you want to load plugins from 
-another directory instead, you can use the option below to specify the directory 
-from which to load the plugins. Beware, MailerQ will silently continue when the 
-specified directory can not be found, possibly causing plugins not to be loaded 
-without a warning.
-
-The path to the directory where the plugins are located:
-
-```
-plugin-directory: <path>    (default: /usr/share/mailerq/plugins)
-```
-
-## DNS settings
-
-You can override the settings that MailerQ uses to communicate with DNS 
-settings.
-
-The first lookup is done using UDP. If the response from the DNS server is 
-truncated because it does not fit in a UDP datagram, MailerQ opens a TCP 
-connection to the same DNS server to repeat the request. You can also modify 
-this behavior and enforce that MailerQ only uses TCP, or only uses UDP.
-
-When MailerQ sets up an SMTP connection, it first sends out the `HELO` message 
-as is required by the SMTP protocol. (In fact, it first tries the more modern 
-`EHLO` command defined by the ESMTP protocol). With this `HELO` or `EHLO` message 
-a hostname is sent to the remote server that identifies the sender. Normally, 
-MailerQ automatically detects which hostname to use (it simply does a reverse 
-DNS query).
-
-If you want to override this with different values you can add a helo map file 
-in which you provide your own HELO hostnames.
-
-Location of the file containing HELO map.
-```
-dns-helofile: <filename>    (empty by default)
-```
-
-The file should contain IPs and hostnames in following format:
-
-```
-10.0.0.1 hostname1.example.com
-10.0.0.2 hostname2.example.com
-[...]
-```
-
-#### The communication channel to use, either `udp` or `tcp`. The default value is to use both.
-```
-dns-force:      <*|udp|tcp> (default: *)
-```
-
-## Lockfile
-
-To prevent that MailerQ starts more than once, MailerQ stores its process ID 
-(pid) in a lockfile. The name and location of the lockfile can be set in the 
-configuration file.
-
-#### Location of the lock file.
-```
-lock: <filename>            (default: /tmp/mailerq.pid)
-```
