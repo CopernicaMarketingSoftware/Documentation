@@ -1,10 +1,9 @@
 # A minimal configuration
 
-MailerQ is configured via one central configuration file `config.txt` that can 
-be found in the `/etc/mailerq` directory. It holds many options that you can
-set before you start MailerQ. The most important options are the address
-and login credentials of your RabbitMQ message broker, and the address of
-your database. You probably need to change this setting. All other config 
+MailerQ is configured via one central configuration file `/etc/mailerq/config.txt`. 
+It holds many options. The most important options are the address
+and login credentials of your RabbitMQ message broker and the address of
+your database. You probably need to change these settings. All other config 
 file settings have decent defaults that work directly (although you might
 want to take a look at them in a later stage).
 
@@ -34,6 +33,8 @@ MailerQ stores all runtime settings in a relational database. This can be a Mysq
 MariaDB, PostgreSql or Sqlite3 database. The Sqlite3 database is by far the
 easiest one to set up, because it does not require a running database server
 and contains just the path to a file where MailerQ can store its runtime settings.
+This files does not even have to exist as it will be automatically created by
+MailerQ when it is missing.
 
 ```
 database: sqlite///path/to/database/file.sql
@@ -42,4 +43,7 @@ database: sqlite///path/to/database/file.sql
 When MailerQ first connects to a database (or first opens the database file),
 it automatically creates all database tables and initializes everything.
 
+To be able to connect, you do have to ensure that the appropriate database
+client libraries are installed on your system. If you use the sqlite database 
+engine, you have to have libsqlite3 on your system.
 
