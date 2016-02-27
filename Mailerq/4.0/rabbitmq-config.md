@@ -21,7 +21,7 @@ of the server on which RabbitQ runs, and the optional vhost is the name
 of the "virtual host" inside RabbitMQ that you have reserved for all MailerQ
 related data. 
 
-If you leave the `rabbitmq-setting` setting empty, MailerQ uses the "amqp://guest:guest@localhost/"
+If you leave the "rabbitmq-setting" setting empty, MailerQ uses the "amqp://guest:guest@localhost/"
 default value. This default only works if you run RabbitMQ and MailerQ on
 the same server, and when you do not use a special vhost. 
 
@@ -275,7 +275,7 @@ the same time it makes things much slower. We therefore recommend leaving the
 
 ### Sending email
 
-The `rabbitmq-outbox` queue is the queue which hold all messages waiting to be 
+The "rabbitmq-outbox" queue is the queue which hold all messages waiting to be 
 picked up and delivered by MailerQ. There are four ways to get messages into this 
 outbox queue; you can:
 *   drop files into MailerQ's spool directory; 
@@ -294,29 +294,29 @@ And mails can be injected by dropping them in a spool directory, or by
 using MailerQ as command line utility.
 
 Messages that are received via one of these mechanisms are published to message queues.
-The `rabbitmq-inbox` setting specifies the queue to which all correctly received
-messages are delivered, and `rabbitmq-refused` holds the messages that were delivered
+The "rabbitmq-inbox" setting specifies the queue to which all correctly received
+messages are delivered, and "rabbitmq-refused" holds the messages that were delivered
 to the SMTP port, but that were not accepted (e.g., because the client
 did not correctly authenticate). 
 
-The `rabbitmq-reports` variable holds the queue to which all delivery status reports are
+The "rabbitmq-reports" variable holds the queue to which all delivery status reports are
 submitted. If, by accident or on purpose, a non-regular mail comes in on the
 SMTP port (for example a bounced email), it will not be published to the 
 regular inbox queue, but to the reports queue instead.
 
-A very common setup is to assign the same queue to the `rabbitmq-outbox` and
-the `rabbitmq-inbox` variables. By doing this, you ensure that all messages
+A very common setup is to assign the same queue to the "rabbitmq-outbox" and
+the "rabbitmq-inbox" variables. By doing this, you ensure that all messages
 that are sent to the SMTP port of MailerQ are automatically forwarded to
 the actual recipient.
 
-Another queue that deals with incoming messages is the `rabbitmq-local` queue. 
+Another queue that deals with incoming messages is the "rabbitmq-local" queue. 
 Normally when you send an email to MailerQ using SMTP, you will first have to 
 authenticate before MailerQ accepts the message. However, sometimes you will 
 want emails sent to certain (local) email addresses to be accepted without 
-authentication before placing them into the `rabbitmq-local` queue. These can be 
+authentication before placing them into the "rabbitmq-local" queue. These can be 
 set in the [MailerQ management console](management-console).
 
-When MailerQ recognizes these messages, it will move them to the `rabbitmq-local` 
+When MailerQ recognizes these messages, it will move them to the "rabbitmq-local" 
 queue, which you can specify in the configuration file. 
 
 [Read more about incoming messages](incoming-messages)
@@ -329,7 +329,7 @@ to the outbox queue so that they are sent using the normal mail algorithm. If yo
 want to publish these DSN messages to a different queue (for example because you 
 want to send them using a seperate MailerQ instance, or because you want to preprocess
 these messages before you move them to the outbox queue), you can set the
-`rabbitmq-dsn` variable. It holds the name of the queue to which bounces are
+"rabbitmq-dsn" variable. It holds the name of the queue to which bounces are
 published.
 
 [Read more about how MailerQ handles bounces](sending-bounces)
