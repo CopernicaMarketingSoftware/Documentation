@@ -69,8 +69,7 @@ your message to the outbox queue so that MailerQ automatically picks them up
 
 Besides sending email, MailerQ also opens up SMTP ports and spool directories
 to which email can be delivered. This allows you to inject email into MailerQ.
-Besides SMTP and the spool directory, mails can also be injected by using 
-MailerQ as command line utility.
+Mails can also be injected by using MailerQ as command line utility.
 
 Messages that are received via one of these mechanisms are published to message queues.
 The "rabbitmq-inbox" setting specifies the queue to which all correctly received
@@ -107,7 +106,7 @@ queues:
 The names of all these queues are optional and you may leave them blank. If
 you do not set an explicit "inbox" queue, all incoming messages are 
 automatically published to the "outbox" queue. This means that all 
-incoming messages are automatically being sent out again. Leaving this 
+incoming messages are automatically sent out again. Leaving this 
 "inbox" queue empty is a very common thing to do, especially if you set up 
 MailerQ as a retransmitter.
 
@@ -115,16 +114,18 @@ You can also leave the "local" and "reports" queue settings empty. If you
 do this MailerQ will not explicitly check whether an email was sent to a 
 local address and/or whether an incoming message contained a delivery report. 
 All incoming messages are treated as regular incoming messages 
-and are directly sent to the inbox queue.
+and are sent to the inbox queue.
 
 When you configure MailerQ to listen to one or more SMTP ports, and you
-also require incoming connections to use authentication, you might receive
+also require incoming connections to authenticate, you might receive
 messages over unauthenticated connections. These messages are rejected and
 will not end up in the "inbox" queue. However, for debugging and/or 
-security reasons you might still be interested in finding out who is
-flooding your SMTP server with rejected messages. By assigning a value to 
+security reasons you might still want to find out who is
+flooding your SMTP server. By assigning a value to 
 the "rabbitmq-refused" config file setting, you can instruct MailerQ to send 
-refused messages to a special queue where you can inspect these refused messages.
+rejected messages to a special queue anyway where you can inspect these 
+refused messages. The default setting for "rabbitmq-refused" is empty,
+so that refused messages are not collected.
 
 
 ### Delivery status notifications
@@ -173,7 +174,7 @@ rabbitmq-failure: failed_deliveries
 rabbitmq-retry: delayed_deliveries
 ```
 
-The `rabbitmq-results`, `rabbitmq-success` and `rabbitmq-failure` settings hold 
+The "rabbitmq-results", "rabbitmq-success" and "rabbitmq-failure" settings hold 
 the names of the RabbitMQ result queues. MailerQ posts a JSON result object for
 every successful delivery to the success queue, and for all failed deliveries to 
 the failure queue. This same result object is also sent to the results queue. 
@@ -181,36 +182,66 @@ Every result object is indeed copied to two queues: failures are posted to the
 results queue and the failure queue, while successes are published to the results 
 and success queues.
 
-MailerQ only considers a delivery to be a failure when it no longer schedules
-extra attempts. When a message cannot immediately be delivered, or when it is 
+MailerQ only considers a delivery to be a failure when no new delivery attempts 
+get scheduled. When a message cannot immediately be delivered, or when it is 
 greylisted and will be retried, it is published back to the outbox queue instead,
-and not message is published to the results and/or failure queues.
+and not to the results and/or failure queues.
 
 If you want to process the intermediate results (like greylisting reports) too, 
 you can use a retry queue by setting the "rabbitmq-retry" config setting. All
-deliveries that failed, but that do trigger a retry, will trigger a message
-to be posted to this retry queue.
+deliveries that failed, but that are published back to the outbox queue for
+a new attempt, will also be posted to this retry queue.
 
 If you're not interested in the results, or when you're only interested in
 specific results (like failures), you can set the result queues to empty
 strings. MailerQ will then not publish messages to them.
 
 
+## The exchange
 
+The "rabbitmq-exchange" variable holds the name of the exchange in RabbitMQ 
+that MailerQ uses to publish all messages to. If not explicitly set, MailerQ 
+uses the default exchange with an empty name. For most setups, this empty default
+exchange is good enough, because messages end up in the right queue anyway.
 
+However, if you want to use a custom exchange, the "rabbitmq-exchange"
+setting allows you to do so. The exchange that you assign to this variable
+does not have to be created by yourself, because MailerQ automatically creates it 
+on startup.
 
+```
+rabbitmq-exchange: your_exchange
+```
 
+To understand why you would need a custom exchange, you need a litte more
+insight knowledge of RabbitMQ. Although we constantly write that MailerQ publishes 
+message to specific queues, this is not exactly how RabbitMQ internally works. RabbitMQ 
+does not allow messages to be published directly to message queues. Instead, 
+it wants messages to be published to an exchange. The exchange then forwards the 
+messages to zero or more queues that are bound to it based on the routing key associated with the 
+message. Therefore, when we write that "MailerQ publishes a message to the inbox queue", 
+we actually mean that "MailerQ publishes a message to the exchange, and uses *the name 
+of the inbox queue* as the routing key so that the message *ends up in the inbox queue*." 
+In the end, the result is the same.
 
+To be fair, this exchange-routingkey-queue architecture can be pretty powerful. It 
+for example allows you to create your own (temporary) queue and bind it to 
+the same exchange as the outbox queue so that a *copy* of each message that goes
+to the outbox queue ends up in your private queue too. This allows you to monitor 
+exactly what is passing through RabbitMQ, without interfering with the message flow. 
+Great for monitoring and debugging!
 
-rabbitmq-exchange:      <Name of your rabbitmq exchange> (empty by default)
-
+To use the flexibility that RabbitMQ offers, you can use the "rabbitmq-exchange"
+setting to assign a custom exchange. If you leave the setting empty however,
+the messages still end up in the right queues.
 
 
 
 ## Persistent and durable settings
 
-In the MailerQ configuration you can set queues to be durable and messages to be 
-persistent using the following options:
+In the MailerQ configuration you can specify whether you want queues to be 
+durable and whether you want messages to be persistent using the following 
+two options:
 
 ```
 rabbitmq-durable:       <1 or 0> (default: 1)
@@ -224,48 +255,23 @@ create the required exchanges and queues. RabbitMQ allows you to mark your queue
 exchanges to be "durable". This means that the exchange or queue will continue to exist 
 even when RabbitMQ is restarted. 
 
-In theory it is a little bit better to enable durable queues (but you probably 
+In theory it is a slightly better to enable durable queues (but you probably 
 won't notice much of a difference). If you ever have to 
 restart RabbitMQ for whatever reason, all queues and exchanges will still exist and 
-your scripts will immediately be able to publish messages to these queues. If `rabbitmq-durable`
+your scripts will immediately be able to publish messages to these queues. If "rabbitmq-durable"
 is turned off, all exchanges and queues will be created once MailerQ starts. If you run a 
 script BEFORE you start MailerQ you could possibly lose messages.
 
-The `rabbitmq-persistent` setting toggles whether messages should be cached in 
-main memory or disk. With the default `0` setting, when a message is published 
-to a queue, RabbitMQ saves this message in main memory and not on disk.  This is 
-much, much faster than storing the messages to disk. Saving the message in main 
-memory however does bring a higher risk, because if RabbitMQ crashes, messages 
-in RabbitMQ will be lost. Turning on persistent will mean your messages are also 
-saved on disk, but at the same time it makes things much slower. We therefore 
-recommend leaving the `rabbitmq-persistent` option off (on 0). 
+The "rabbitmq-persistent" setting toggles whether messages published by MailerQ 
+should be cached in main memory or on disk. With the default "0" setting, RabbitMQ 
+keeps messages only in main memory and not on disk.  This is 
+much, much faster than storing the messages to disk. It does however bring a higher 
+risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistent will 
+mean your messages are also saved on disk, and can survive a RabbitMQ crash. But at 
+the same time it makes things much slower. We therefore recommend leaving the 
+"rabbitmq-persistent" option off (on 0). 
 
-## Setting up queues and exchanges
 
-MailerQ uses several queues and exchanges to manage email messages. MailerQ creates 
-these queues itself, in the MailerQ configuration you can name these queues. Only the 
-MailerQ outbox is mandatory; if you want to disable the other queues, the field behind them 
- can be simply be left empty. 
-
-```
-rabbitmq-exchange:      <Name of your rabbitmq exchange> (empty by default)
-rabbitmq-outbox:        <Name of your outbox message queue> (default: outbox)
-rabbitmq-results:       <Name of your result queue> (empty by default)
-rabbitmq-success:       <Name of your success queue> (empty by default)
-rabbitmq-failure:       <Name of your failure queue> (empty by default)
-rabbitmq-retry:         <Name of your retry queue> (empty by default)
-rabbitmq-dsn:           <Name of your delivery status notification queue> (value of rabbitmq-outbox by default)
-rabbitmq-inbox:         <Name of your inbox queue> (value of rabbitmq-outbox by default)
-rabbitmq-refused:       <Name of your refused queue> (empty by default)
-rabbitmq-reports:       <Name of your reports queue> (empty by default)
-rabbitmq-local:         <Name of your local queue> (default: inbox)
-```
-
-The `rabbitmq-exchange` variable holds the name of the exchange in RabbitMQ 
-that MailerQ uses to publish all messages to. If not explicitly set, MailerQ 
-uses an exchange with an empty name. You do not have to create the exchange yourself. 
-If the exchange does not exist at startup, RabbitMQ automatically creates 
-the exchange.
 
 ### Sending email
 
