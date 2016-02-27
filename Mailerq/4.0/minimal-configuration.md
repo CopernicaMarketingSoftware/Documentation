@@ -1,13 +1,12 @@
 # A minimal configuration
 
-After you've downloaded and installed MailerQ, and when you have a running 
-RabbitMQ server, you are ready to start MailerQ. However, you first have
-to make some small adjustments to the configuration file.
-
-The MailerQ configuration file is located in "/etc/mailerq/config.txt" and 
-contains all settings that are relevant for running MailerQ. Most default
-settings are good enough to get started, but you might want to take a look
-at it. Especially the `rabbitmq-address` option needs attention.
+MailerQ is configured via one central configuration file `config.txt` that can 
+be found in the `/etc/mailerq` directory. It holds many options that you can
+set before you start MailerQ. The most important options are the address
+and login credentials of your RabbitMQ message broker, and the address of
+your database. You probably need to change this setting. All other config 
+file settings have decent defaults that work directly (although you might
+want to take a look at them in a later stage).
 
 
 ## RabbitMQ address
@@ -19,71 +18,28 @@ format "amqp://user:password@hostname/vhost". The default value
 is running on the same machine as MailerQ, and when you've not altered
 the default guest/guest credentials.
 
+```
+rabbitq-address: amqp://user:password@hostname/vhost
+```
 
-## License file
-
-To start MailerQ, you need a license file that contains the IP addresses,
-features and signature that allows MailerQ to start. To get such a license
-file, go to [the license form on MailerQ.com](https://www-dev.mailerq.com/product/license).
-
-This license file should be copied to "/etc/mailerq/license.txt".
+If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
+the hostname can be separated by semi-colons (e.g. amqp://user:password@host1;host2;host3/vhost). 
+Setting up a RabbitMQ cluster means you're less likely to loose message when
+one RabbitMQ server fails.
 
 
-## Software dependencies
+## Database address
 
-MailerQ is almost fully statically linked and has hardly any dependencies on
-external libraries. However, when it discovers that certain libraries are
-available on your system, it does dynamically load them to make use of
-specific features. The following libraries are nice to have installed, 
-because MailerQ can use their features:
+MailerQ stores all runtime settings in a relational database. This can be a Mysql,
+MariaDB, PostgreSql or Sqlite3 database. The Sqlite3 database is by far the
+easiest one to set up, because it does not require a running database server
+and contains just the path to a file where MailerQ can store its runtime settings.
 
-<table>
-    <tr>
-        <td>libopenssl</td>
-        <td>library required for TLS encryption and license checking</td>
-    </tr>
-    <tr>
-        <td>libmagic</td>
-        <td>library for detecting the mime-type of files</td>
-    </tr>
-    <tr>
-        <td>libuuid1</td>
-        <td>library for generating unique identifiers</td>
-    </tr>
-    <tr>
-        <td>libxml</td>
-        <td>library for parsing and modifying XML/HTML code</td>
-    </tr>
-    <tr>
-        <td>libcurl</td>
-        <td>library for downloaded resources from the internet</td>
-    </tr>
-    <tr>
-        <td>libmysqlclient *</td>
-        <td>library for connecting to a mysql/mariadb database</td>
-    </tr>
-    <tr>
-        <td>libmariadbclient *</td>
-        <td>library for connecting to a mysql/mariadb database</td>
-    </tr>
-    <tr>
-        <td>libpq *</td>
-        <td>library for connecting to a postgresql database</td>
-    </tr>
-    <tr>
-        <td>libsqlite3 *</td>
-        <td>library for processing sqlite3 database files</td>
-    </tr>
-    <tr>
-        <td>libmongo-c-driver *</td>
-        <td>library for connecting to Mongo DB</td>
-    </tr>
-    <tr>
-        <td>libcouchbase *</td>
-        <td>library for connecting to Mongo DB</td>
-    </tr>
-</table>
+```
+database: sqlite///path/to/database/file.sql
+```
 
-The libraries marked with an asterisk are only required if you want MailerQ
-to connect to such a system.
+When MailerQ first connects to a database (or first opens the database file),
+it automatically creates all database tables and initializes everything.
+
 

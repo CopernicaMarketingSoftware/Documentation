@@ -1,84 +1,91 @@
 # Getting started with MailerQ
 
-MailerQ is a Mail Transfer Agent (MTA) that uses [RabbitMQ](https://www.rabbitmq.com) 
-for its message queues. Before you install and configure MailerQ, you will need to download 
-and set up RabbitMQ (version 3.3.1+). Once RabbitMQ is installed and you have access to a running and 
-up-to-date RabbitMQ server, you can proceed with installing MailerQ. For tips on 
-how to install RabbitMQ, read our [RabbitMQ installation article](rabbitmq-install "RabbitMQ installation").
+To get MailerQ up and running on your own computer or on a server you
+need to take four simple steps:
 
-## Installing MailerQ
+* [download-instructions](Download and install MailerQ)
+* [rabbitmq-install](Get access to a RabbitMQ message broker (or run one yourself))
+* [license-file](Obtain a valid "license.txt" file from the MailerQ website)
+* [minimal-configuration](Include the address of the RabbitMQ server in the MailerQ config file)
 
-After installing your RabbitMQ server, you can proceed with setting 
-up MailerQ. Installing the MailerQ Mail Transfer Agent (MTA) on a Linux 
-server is easy. We have [downloads](/product/download "Download MailerQ")
-for Debian based (Debian, Ubuntu, etc) and Red Hat based environments 
-(Red Hat, Fedora, CentOS, etc).
+That's all. After these steps you're ready to start MailerQ and inject emails.
 
-After [downloading](/product/download "Download MailerQ") the appropriate 
-MailerQ .deb or .rpm file, you can install it on your system. This can probably 
-be achieved by double-clicking on it if you have a desktop computer, or with 
-one of the following command line instructions:
 
-### Red Hat based environments:
+## System dependencies
 
-```bash
-$ sudo rpm -i /path/to/mailerq-version.rpm
-```
+MailerQ runs on Linux, so you need a Linux server or Linux computer to be
+able to start and run MailerQ. We distribute the software in binary form for
+Debian/Ubuntu based systems and for Red Hat based systems. Please drop us a 
+message if you need a version for a different type of system.
 
-### Debian based environments:
+The binary executable that you can download is statically linked against most 
+libraries. This means that all the libraries required by MailerQ are are embedded 
+into the binary code, so it normally runs straight out of the box and you do not 
+have to fix all kinds of dependencies before you can get going. However, when 
+MailerQ starts, it does a scan of your system to detect which libraries you have 
+installed. If MailerQ happens to see that one or more of the following libraries 
+are available, it does load them to use specific features from these libs:
 
-```bash
-$ sudo dpkg -i path/to/mailerq-version.deb
-```
+<table>
+    <tr>
+        <td>libopenssl</td>
+        <td>Used for TLS encryption, license checking and base64 encoding</td>
+    </tr>
+    <tr>
+        <td>libmagic</td>
+        <td>Used to detect the mime-type of files</td>
+    </tr>
+    <tr>
+        <td>libuuid1</td>
+        <td>Used for generating globally unique identifiers</td>
+    </tr>
+    <tr>
+        <td>libxml</td>
+        <td>Used for parsing and modifying XML/HTML code</td>
+    </tr>
+    <tr>
+        <td>libcurl</td>
+        <td>Used to download resources from the internet</td>
+    </tr>
+    <tr>
+        <td>libimagemagick</td>
+        <td>Used to find out the size of images</td> 
+    <tr>
+        <td>libmysqlclient</td>
+        <td>Used to connect to a mysql/mariadb database</td>
+    </tr>
+    <tr>
+        <td>libmariadbclient</td>
+        <td>Used to connect to a mysql/mariadb database</td>
+    </tr>
+    <tr>
+        <td>libpq</td>
+        <td>Used to to connect to a Postgresql database</td>
+    </tr>
+    <tr>
+        <td>libsqlite3</td>
+        <td>Used to process sqlite3 database files</td>
+    </tr>
+    <tr>
+        <td>libmongo-c-driver</td>
+        <td>Used to connect to a MongoDB NoSQL server</td>
+    </tr>
+    <tr>
+        <td>libcouchbase</td>
+        <td>Used to connect to a Couchbase server</td>
+    </tr>
+</table>
 
-Now that MailerQ is installed on your system, the MTA can be started by entering the
-"mailerq" command on the command line. But before you do this, you probably
-want to make some changes to the configuration file.
+From the above list, only the openssl library is required. All other libraries
+are optional, and MailerQ can run without them. If a library is missing,
+MailerQ will either fall back on its own implementation, or will run
+without the features from the specific library.
 
-## Configuration
-
-MailerQ is configured via one central configuration file `config.txt` that can 
-be found in the `/etc/mailerq` directory. It holds many options that you should
-set before you can start MailerQ. The most important options are the address
-and login credentials of your RabbitMQ message broker and your license key
-location. The configuration of these options is discussed below. A complete 
-list of all options on how MailerQ interacts with RabbitMQ can be found 
-[here](rabbitmq-config "Connect MailerQ with RabbitMQ").
-A list of other configurable options is given [here](configuration "MailerQ configuration").
-
-### Configuring MailerQ to connect with RabbitMQ
-
-MailerQ reads the location and authentication information to connect with RabbitMQ
-from its config file. Make sure you include the following variables
-in the MailerQ configuration file (/etc/mailerq/config.txt):
-
-```
-rabbitmq-address:          <URL of RabbitMQ server> (default: amqp://guest:guest@localhost/)
-```
-
-The `rabbitmq-address` variable holds the URL of your RabbitMQ server, in 
-`amqp://username:password@hostname/vhost` format.
-
-If you have 
-a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), they have to 
-be separated by a semi-colon (e.g. host1;host2;host3;). Setting up a cluster means you 
-will have highly available queues. Since MailerQ 4.0, even setting up a single
-node will create a cluster.
-[Read more about highly available queues](https://www.rabbitmq.com/ha.html)
-
-The `username` and `password` fields inside the `rabbitmq-address` variable hold
-the username and password of the RabbitMQ server, as set in the RabbitMQ
-configuration. The default is `guest/guest`, which only works when connecting to
-localhost. If you run RabbitMQ on a separate server, you will need to set your
-own username and password, or configure the RabbitMQ server to allow `guest/guest`
-logins from remote hosts (see [RabbitMQ's Access Control Configuration](https://www.rabbitmq.com/access-control.html "RabbitMQ's Access Control Configuration")).
-
-The `vhost` field is, by default, empty. If you created a specific RabbitMQ vhost
-environment, you can set this.
-
-These basic settings enable MailerQ to connect to RabbitMQ. A complete list of all
-configurable options on how MailerQ interacts with RabbitMQ can be found
-[here](rabbitmq-config "Connect MailerQ with RabbitMQ").
+Most of the MailerQ runtime settings are stored in a relational database.
+This means that you must have at least one of the mysql, mariadb, postgresql
+or sqlite3 libraries installed on your system.
+ 
+ 
 
 ### License file
 
