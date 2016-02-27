@@ -28,12 +28,13 @@ Debian/Ubuntu based systems and for Red Hat based systems. Please drop us a
 message if you need a version for a different type of system.
 
 The binary executable that you can download is statically linked against most 
-libraries. This means that all the libraries required by MailerQ are are embedded 
-into the binary code, so it normally runs straight out of the box and you do not 
-have to fix all kinds of dependencies before you can get going. However, when 
-MailerQ starts, it does a scan of your system to detect which libraries you have 
-installed. If MailerQ happens to see that one or more of the following libraries 
-are available, it does load them to use specific features from these libs:
+libraries. This means that all the libraries required by MailerQ are embedded 
+into the binary code, meaning that it runs straight out of the box with no need
+for you to fix all kinds of dependencies. However, when MailerQ starts, it does 
+do a scan of your system to detect which libraries are available. If MailerQ 
+happens to find out that one or more of the following libraries 
+are available on your system, it does load them to use specific features 
+from these libs:
 
 <table>
     <tr>
