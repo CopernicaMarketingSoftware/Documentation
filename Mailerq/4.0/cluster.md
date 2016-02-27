@@ -11,23 +11,22 @@ Setting up a cluster has many advantages:
 
 Each MailerQ server in the cluster communicates its configuration to the other
 instances. This allows the management consoles to link to each other, 
-but more importantly, if the setup for one instance is being changed via the 
-management console, all other instances automatically reset their cache and 
-reload the configuration from the database too.
+and more importantly, to trigger the other instance to reload cached data
+when settings change.
 
-Another advantages of setting up a cluster is that messages unable to
+Another advantage of setting up a cluster is that messages that can not
 be processed by one MailerQ instance are automatically handed over to another.
-If one of the MailerQ instances consumes a message from its outbox, but sees 
+If one of the MailerQ instances consumes a message from the outbox, but sees 
 that this message can only be sent from a MailerQ instance running on a 
 different server (because only that other server is configured with the 
 appropriate IP address), it will automatically forward the message to the outbox 
-queue of the appropriate MailerQ instance.
+queue of that MailerQ instance.
 
 
 ## Config file options
 
 There are two config file settings relevant for setting up a cluster: the
-"cluster-address" setting and the "cluster-exchange" setting.
+"cluster-address" and the "cluster-exchange" setting.
 
 ```
 cluster-address:        amqp://login:passwd@host/vhost
@@ -35,7 +34,7 @@ cluster-exchange:       cluster
 ```
 
 Both settings are optional. If you leave them empty, the exchange "cluster" is 
-used, and the same server address as set in the "rabbitmq-address" setting.
+used, and the same server address as is set in the "rabbitmq-address" setting.
 
 It is important that every instance _uses the same cluster settings_! Even when
 every instance has its own private RabbitMQ server, all instances must have the 
@@ -52,12 +51,14 @@ By doing this, you can use the same delivery throttles for all running servers.
 ## How does it work internally?
 
 All instances create a private message queue and bind it to the cluster exchange.
-By doing this, each server receives all messages that are published to the
+By doing this, each server receives all messages that are published to this
 exchange.
 
-Besides that, all instances periodically announce their existence, their local
-IP addresses and some other configuration options to the exchange. This message
-ends up in the private queue of each instance, so that everyone receives information
-about the other servers.
+Besides that, all instances periodically send their local IP addresses and some other 
+configuration settings to this exchange. This message ends up in the private queue 
+of each instance, so that everyone receives information about the other servers.
 
+When a form is submitted via the management console of one of the instances,
+this instance sends a message to the cluster, so that each server in the cluster
+can reset its cached data, and reload the delivery limits from the database.
 
