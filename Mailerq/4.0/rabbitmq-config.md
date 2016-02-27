@@ -15,9 +15,9 @@ RabbitMQ from its config file.
 rabbitmq-address: amqp://login:passwd@hostname/vhost
 ```
 
-The format of the address is probably obvious: the "login" and "passwd" hold
+The format of the address is obvious: the "login" and "passwd" hold
 the username and password of the RabbitMQ server, the hostname is the name
-of the server that on which RabbitQ runs, and the optional vhost is the name
+of the server on which RabbitQ runs, and the optional vhost is the name
 of the "virtual host" inside RabbitMQ that you have reserved for all MailerQ
 related data. 
 
@@ -32,8 +32,10 @@ Running a cluster allows you to use [highly available queues](https://www.rabbit
 
 ## RabbitMQ queues
 
-MailerQ uses several queues to manage email messages. On startup, MailerQ 
-reads the configuration and tells RabbitMQ to create all queues listed in
+MailerQ uses several queues to manage email messages. All mails that
+flow through MailerQ are picked up from and published back to specific queues
+in RabbitMQ. The names of these queues are set in the config file. On startup, MailerQ 
+reads this configuration and tells RabbitMQ to create the queues listed in
 the config file. This means that you do not have to ensure that the queues exists 
 before you start up MailerQ: the queues are automatically created.
 
