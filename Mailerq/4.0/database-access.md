@@ -1,46 +1,61 @@
 # The MailerQ database
 
-MailerQ can use a database to store configuration data. This is either a 
-MySQL, PostgreSQL or SQLite database. We recommend to set up such a 
-database before you run MailerQ, but this is not strictly necessary.
-The SQLite database is by far the simplest to configure - all you need 
-to do is ensure that the `sqlite3` library is installed on your system.
+Besides the config file, MailerQ also uses a relational database to store 
+configuration data and delivery settings. This can be a MySQL, PostgreSQL 
+or SQLite database. The SQLite database is by far the simplest to set up:
+all you need is ensure that the "sqlite3" library is installed on your system.
 
 The other two database systems, MySQL and PostgreSQL, take a little
-more time to set up, but are not too difficult to install either. You only 
+more effort, but are not too difficult to install either. You only 
 need to create the database and put the login and password in the 
 MailerQ configuration file. MailerQ does the rest and creates all
 tables.
 
-Using a database is *optional*. MailerQ can also run without having a 
-database connection. However, connecting to a database is simple 
-(especially a SQLite database), and performance is greatly enhanced, so using 
-one is recommended.
 
 ## Database settings in the config file
 
 Only one variable has to be set in the config file to connect to a
-database: the `database` variable:
+database: the "database" variable:
 
-````
-database:           sqlite://path/to/database/file (empty by default)
-````
-````
+```
+database:           sqlite:///path/to/database/file.sql
 database:           mysql://user:password@hostname/databasename
-````
-````
 database:           postgresql://user:password@hostname/databasename
-````
+```
 
 SQLite is the simplest database to set up, because you just specify the 
 path to a file on the MailerQ server (this file does not even have to 
-exist). However, SQLite is not the most powerful or fastest system, so 
-using a MySQL or PostgreSQL is better.
+exist). However, an SQLite database can not be used if you want to access
+the same database from multiple machines.
+
+If you do use SQLite, note that you need three (!) slashes in
+the address: the "sqlite://" prefix, followed by the "/path/to/database".
 
 MailerQ automatically creates or alters missing or incomplete tables. 
-If you use a MySQL or PostgreSQL database, you should ensure that the 
-database already exists, and that MailerQ has enough privileges to 
-create and modify tables.
+If you use a MySQL or PostgreSQL database, make sure that the 
+database exists, and that MailerQ not only gets enough privileges to read 
+and write from and to the database, but also to create and modify tables.
+
+
+## Choosing the right engine
+
+The database is not heavily used. MailerQ periodically (every ten minutes)
+copies all settings from the database to main memory, and uses this in-memory
+cache for lookups. No realtime queries occur, and no connections are kept
+open to the database in between these reloads. The speed of the database does
+therefore not have to be a factor in choosing the most appropriate engine. 
+It is better to choose a database that you feel most comfortoable with.
+Do you already use MySQL databases? Then it is best to use it for MailerQ
+too. Do you run a single MailerQ instance, and does data not have to be
+shared amongst multiple MailerQ instances? Then the SQLite database is sufficient.
+
+MailerQ makes use of client libraries to connect to the database. To
+connect to a MySQL database, you must make sure that either 
+libmysqlclient or libmariadbclient is installed on your system. For
+PostgreSql connections libpq has to be installed, and libsqlite3 is needed
+for SQLite3 databases. If these libraries are not available on the system,
+it is not possible to connect to the database.
+
 
 ## Rebuilding the database
 
@@ -52,37 +67,38 @@ that MailerQ starts up.
 
 Normally, the only time when tables are created is the very first
 time that you start MailerQ, and the only time when tables are altered 
-is after upgrading to a new version that uses a slightly different 
+is after upgrading to a new MailerQ version that uses a slightly different 
 database schema.
 
 If you want to enforce that all tables in the database are dropped and
 replaced by brand new empty tables, you can start MailerQ with the 
-`--purge-database` command line option:
+"--purge-database" command line option:
 
-````
-mailerq --purge-database
-````
+```bash
+$ mailerq --purge-database
+```
 
 This option tells MailerQ not to check and repair tables, but to drop
 them all and create new ones.
 
+
 ## Multiple MailerQ instances
 
 It is possible to run multiple MailerQ instances that all connect to the
-same database. The data in the database is periodically reloaded into main 
-memory by all MailerQ instances, meaning that updates that are made via 
-the management console of one MailerQ instance become (after a couple of 
-minutes) available in the other instances as well.
+same database. If you do this, we recommend setting up a [cluster](cluster)
+of MailerQ instances. The different MailerQ instances then notify each
+other every time the settings in the database are updated, so that each
+instance can update its cache.
+
 
 ## Reading and writing to the database directly
 
 MailerQ has a powerful [web based MTA management console](management-console "Management console"). 
-This console gives you access to the database driven MailerQ configuration forms. 
+This console gives you access to the database using simple web forms. 
 It is therefore in normal operations not at all necessary to run any 
-queries on the database by yourself (but if you do like to access the data
-you are free to do so). As mentioned above, MailerQ reloads data from the 
-database every couple of minutes, so any changes you make will automatically 
-come into effect without the need to restart MailerQ.
+queries on the database by yourself. But if you do like to access the data
+you are free to do so.
+
 
 ## Database structure
 
