@@ -1,8 +1,8 @@
 # How to inject email into MailerQ?
 
-Once you have a running MailerQ instance, you want to use it for sending
+Once you have a running MailerQ instance, you want to use it to send
 out mailings. But how do you get your mails into MailerQ? There are
-four ways to do this:
+many ways to do this:
 
 * [drop files into MailerQ's spool directory](spool-directory)
 * [use MailerQ as a Command Line utility to read messages from standard input](command-line-utility)
