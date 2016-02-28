@@ -61,3 +61,20 @@ When a form is submitted via one of the management consoles,
 a message is sent to the cluster exchange, so that each server in the cluster
 can reset its cached data, and reload the delivery limits from the database.
 
+
+## RabbitMQ clustering vs. MailerQ clustering
+
+Be aware that both RabbitMQ and MailerQ support clustering, but that from a 
+technical standpoint this clustering has a while different meaning. Clustering for 
+RabbitMQ means that queues are shared amongst different RabbitMQ instances, so that 
+no messages are lost when one of the RabbitMQ servers crash.
+
+For MailerQ clustering means something different: the individual servers communicate
+and share data with each other, but it does not necessarily mean that emails will
+still be delivered when one of the servers crash. If no other server has access
+to the same IP addresses as the crashed server, there is no way that any other
+server can take over the deliveries. If you do want to achieve this, you have
+to set up a [heartbeat daemon](http://www.linux-ha.org/wiki/Heartbeat) so that other 
+servers can automatically jump in and take over when one of the servers fails.
+
+
