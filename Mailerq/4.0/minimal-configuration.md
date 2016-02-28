@@ -22,7 +22,7 @@ rabbitq-address: amqp://user:password@hostname/vhost
 ```
 
 If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
-the hostname can be separated by semi-colons (e.g. amqp://user:password@host1;host2;host3/vhost). 
+the hostname can be separated by semicolons (e.g. amqp://user:password@host1;host2;host3/vhost). 
 Setting up a RabbitMQ cluster means you're less likely to loose message when
 one RabbitMQ server fails.
 

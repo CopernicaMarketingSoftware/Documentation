@@ -1,9 +1,15 @@
 # The MailerQ database
 
-Besides the config file, MailerQ also uses a relational database to store 
-configuration data and delivery settings. This can be a MySQL, PostgreSQL 
-or SQLite database. The SQLite database is by far the simplest to set up:
-all you need is ensure that the "sqlite3" library is installed on your system.
+MailerQ uses a relational database to store all sorts of configuration 
+data and delivery settings. The data stored in the database includes
+for example the delivery throttles and DKIM keys. The database is read
+and updated by MailerQ, but you are free to write your own scripts and
+programs that can also modify this data.
+
+MailerQ supports multiple database platforms. Currently, there is support
+for MySQL, PostgreSQL and SQLite databases. The SQLite database is by far 
+the simplest to set up because it does not require a server process to
+run. All you need is the "sqlite3" library to be installed on your system.
 
 The other two database systems, MySQL and PostgreSQL, take a little
 more effort, but are not too difficult to install either. You only 
@@ -39,12 +45,13 @@ and write from and to the database, but also to create and modify tables.
 
 ## Choosing the right engine
 
-The database is not heavily used. MailerQ periodically (every ten minutes)
+From a performance perspective it does not really matter which database
+engine you choose to use. MailerQ periodically (every ten minutes)
 copies all settings from the database to main memory, and uses this in-memory
-cache for lookups. No realtime queries occur, and no connections are kept
+cache for lookups. No realtime queries are executed, and no connections are kept
 open to the database in between these reloads. The speed of the database does
 therefore not have to be a factor in choosing the most appropriate engine. 
-It is better to choose a database that you feel most comfortoable with.
+It is better to choose a database that you feel most comfortable with.
 Do you already use MySQL databases? Then it is best to use it for MailerQ
 too. Do you run a single MailerQ instance, and does data not have to be
 shared amongst multiple MailerQ instances? Then the SQLite database is sufficient.
@@ -63,7 +70,7 @@ When MailerQ starts, it first connects to the database and checks whether
 all tables are in a valid state. Tables that do not exist are created,
 and tables that miss columns are automatically altered and the missing
 columns are added. This automatic table-checking is done every time
-that MailerQ starts up.
+MailerQ starts up.
 
 Normally, the only time when tables are created is the very first
 time that you start MailerQ, and the only time when tables are altered 

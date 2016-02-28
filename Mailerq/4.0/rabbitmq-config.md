@@ -26,7 +26,7 @@ default value. This default only works if you run RabbitMQ and MailerQ on
 the same server, and when you do not use a special vhost. 
 
 If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
-you can use colons to seperate the hostnames: amqp://guest:guest@host1;host2;host3/vhost.
+you can use semicolons to seperate the hostnames: amqp://guest:guest@host1;host2;host3/vhost.
 Running a cluster allows you to use [highly available queues](https://www.rabbitmq.com/ha.html).
 
 
