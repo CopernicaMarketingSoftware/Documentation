@@ -10,7 +10,7 @@ The files that you drop in the spool directory must be correctly formatted MIME
 messages. Invalid files will not be picked up. MailerQ opens the file, 
 and filters out all the recipients from the "to", "cc" and "bcc" header fields.
 For each recipient a JSON formatted message is copied to the queue that
-is configured to the "inbox" queue (this is the queue that has been 
+is configured to be the "inbox" queue (this is the queue that has been 
 assigned to the "rabbitmq-inbox" setting in the config file).
 
 The envelope address is also extracted from the message: the "x-mq-envelope"
@@ -40,9 +40,8 @@ an eye. If you need a small delay before messages are picked up, you
 can use the "spool-delay" variable. Set this to a numeric value holding
 the number of seconds to wait before files are picked up.
 
-After publishing the message to the inbox queue, MailerQ removed the the file. 
+After publishing the message to the inbox queue, MailerQ removes the input file. 
 If you do not want this, you can set "spool-remove" to 0. However, it is not 
-recommended to disable removing files, because your spool directory will 
-become full, and emails might get delivered more than once if MailerQ is
-being restarted and starts scanning the spool directory again.
+recommended to disable removing files, because emails might get redelivered 
+if MailerQ is restarted and starts scanning the spool directory again.
 
