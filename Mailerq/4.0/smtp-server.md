@@ -40,20 +40,21 @@ if you want to listen to one specific IP address, you should configure this
 in the config file (this IP address must of course be available on the server).
 
 The "smtp-port" setting contains the port number for the normal SMTP
-protocol. The normal SMTP protocol starts as a non-secure connection, but
+protocol. The SMTP protocol starts as a non-secure connection, but
 the client and server can start a STARTTLS handshake to secure the connection.
 
 Besides normal SMTP connections, you can also open already secured SMTP 
 connections. A secure connection uses TLS right from the start, and no
 STARTTLS handshake is necessary. This is slightly faster (the initial handshake
 can be skipped) and is also more secure (the initial EHLO message can not
-be intercepted).
+be intercepted). However, there is no official specification that describes
+this, so you can not be sure that clients support this.
 
 
 ### Secure connections
 
 MailerQ supports TLS on incoming connections. If you have a SSL certificate
-for your domain, you can use it for the SMTP connections as well. The following
+for your domain, you can use that for MailerQ as well. The following
 config file options can be used:
 
 ```
@@ -63,12 +64,12 @@ smtp-ciphers:       !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH
 ```
 
 The paths to the certificate and private keys for your domain should be added
-to the config file, as well as the list of ciphers that you'd like to support.
+to the config file, with the list of ciphers that you'd like to support.
 
 
 ### Controlling access
 
-By default, the whole world can connect to the inbound SMTP server. You may
+By default, the whole universe can connect to the inbound SMTP server. You may
 want to restrict this. If you set a username and password in the config file,
 all inbound connections must first authenticate before they can inject emails.
 With the "smtp-range" setting you can also limit the IP addresses from which
@@ -95,8 +96,8 @@ All incoming traffic is thus first passed through the proxy server. From
 the perspective of MailerQ, the remote IP address of each incoming TCP connection 
 is the IP address of the proxy, and not the (much more interesting) client address. 
 To allow MailerQ to see the client IP address too, the PROXY protocol can 
-be enabled on the HAProxy server. By enabling this protocol, a small header 
-is added in front of all forwarded TCP connections, with some meta 
+be enabled on the HAProxy server. By enabling this protocol, the proxy server adds
+a small header in front of all forwarded TCP connections, with some meta 
 information of the connection (most importantly, the client IP address).
 
 With the "smtp-proxy" setting you tell MailerQ that when a connection
@@ -129,7 +130,7 @@ smtp-hostname:      a.specific.hostname.com
 
 If you have not used the "smtp-ip" setting and you run MailerQ on a server 
 with multiple IP addresses, the SMTP server is available on all these addresses 
-too. A client connection can therefore choose to which IP address 
+too. A client can therefore choose to which IP address 
 to send your mail. MailerQ recognizes the IP address to which the mail was 
 originally submitted, stores that information in the JSON message, and when 
 the mail is finally forwarded to the internet, it will be sent out from _exactly 
