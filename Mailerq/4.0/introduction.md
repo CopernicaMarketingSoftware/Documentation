@@ -94,10 +94,10 @@ from these libs:
     </tr>
 </table>
 
-From the above list, only the openssl library is required. All other libraries
-are optional, and MailerQ can run without them. If a library is missing,
-MailerQ will either fall back on its own implementation, or will run
-without the features from the specific library.
+From the above list, only the openssl and libz libraries are required. All 
+other libraries are optional, and MailerQ can run without them. If a library 
+is missing, MailerQ will either fall back on its own implementation, or will 
+run without the features from the specific library.
 
 Most of the MailerQ runtime settings are stored in a relational database.
 This means that you must have at least one of the mysql, mariadb, postgresql
