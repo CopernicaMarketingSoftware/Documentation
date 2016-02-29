@@ -25,37 +25,57 @@ queue where MailerQ picks them up to deliver them.
 
 ## Config file settings
 
-To open the a SMTP port, you need to add a couple of settings to the config file:
+In the config file there are a number of variables that you can use
+to set the ports on which MailerQ should listen, and from which ips MailerQ should
+accept incoming SMTP connections:
 
-```
+````
 smtp-ip:            1.2.3.4
-smtp-port:          25
-smtp-secure-port:   465
-```
+smtp-port:          25,2525,1024-1026
+smtp-secure-port:   2526
+````
 
-The "smtp-ip" and "smtp-port" variables contain the IP address and port
-number to listen to. If you want MailerQ to listen to all IP addresses
-available on the server, you can leave the "smtp-ip" setting empty. Only 
-if you want to listen to one specific IP address, you should configure this
-in the config file (this IP address must of course be available on the server).
+The "smtp-port" variable holds the port or ports that MailerQ opens and
+on which incoming connections are accepted. You can assign a single port,
+but comma-seperated values and port-ranges are also accepted. The
+default SMTP port is 25, which is the one that you probably want to use.
+
+Normally, MailerQ opens this port on all IP address that are available on
+the server. This means that if a server has multiple IP addresses, it does
+not matter to which of its IP addresses you connect: MailerQ listens on
+all of them. If you want to limit this, you can assign an explicit IP
+address using the "smtp-ip" variable. If you set this, MailerQ will
+only accept incoming connections to that specific IP.
+
+The IP address to which you send a message to MailerQ, is the same as 
+the address *from* which it is forwarded. Thus, if you send an email to 
+MailerQ listening on IP address 5.6.7.8, the message will also be sent 
+out from this IP.
 
 The "smtp-port" setting contains the port number for the normal SMTP
 protocol. The SMTP protocol starts as a non-secure connection, but
 the client and server can start a STARTTLS handshake to secure the connection.
 
 Besides normal SMTP connections, you can also open already secured SMTP 
-connections. A secure connection uses TLS right from the start, and no
-STARTTLS handshake is necessary. This is slightly faster (the initial handshake
-can be skipped) and is also more secure (the initial EHLO message can not
-be intercepted). However, there is no official specification that describes
-this, so you can not be sure that clients support this.
+ports with the "smtp-secure-port" setting. A secure port uses TLS right from 
+the start, and no STARTTLS handshake is necessary. This is slightly faster 
+(the initial handshake can be skipped) and is also more secure (the initial 
+EHLO message can not be intercepted). However, such an encrypted 
+connection is not part of the SMTP standard, and regular SMTP clients do not 
+expect this. However, if you write your own SMTP handshake code, it sometimes 
+is simpler and faster to have access to a connection that is already 
+encrypted without using "STARTTLS".
 
 
 ### Secure connections
 
-MailerQ supports TLS on incoming connections. If you have a SSL certificate
-for your domain, you can use that for MailerQ as well. The following
-config file options can be used:
+You probably want to secure your SMTP traffic, and inject your emails
+using encrypted connections. To enable encryption, you need to assign
+a private key that is used for the encryption. You can use a self-signed
+private key, but it is much better to use a key from a certificate 
+authority. However, using a self-signed key is still better than using 
+no key at all, as most SMTP clients will still accept the self-signed 
+key.
 
 ```
 smtp-certificate:   /etc/mailerq/your.domain.com.crt
@@ -83,6 +103,11 @@ smtp-password:      secret_password
 
 You can assign a semicolon separated list of IP ranges to the "smtp-range"
 variable.
+
+Keep in mind that if you set a username and password, the SMTP handshake becomes 
+a little slower (incoming connections first have to authenticate before a message 
+can be delivered). If you do not have to, it is therefore ofter faster to set up 
+a firewall or an IP range to restrict access, than to require authentication.
 
 
 ### Running behind HAProxy

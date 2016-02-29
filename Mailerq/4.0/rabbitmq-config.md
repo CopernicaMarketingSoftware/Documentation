@@ -77,11 +77,10 @@ to which email can be delivered. This allows you to inject email into MailerQ.
 Mails can also be injected by using MailerQ as command line utility.
 
 Messages that are received via one of these mechanisms are converted to JSON and
-published to message queues.
-The "rabbitmq-inbox" setting specifies the queue to which all correctly received
-messages are delivered, and "rabbitmq-refused" holds the messages that were delivered
-to the SMTP port, but that were not accepted (e.g., because the client
-did not correctly authenticate). 
+published to message queues. The "rabbitmq-inbox" setting specifies the queue to 
+which all correctly received messages are delivered, and "rabbitmq-refused" holds 
+the messages that were delivered to the SMTP port, but that were not accepted 
+(e.g., because the client did not correctly authenticate). 
 
 ```
 rabbitmq-inbox:     inbox
@@ -137,6 +136,13 @@ server. By assigning a value to "rabbitmq-refused", you instruct MailerQ to send
 rejected messages to a special queue where you can inspect these 
 refused messages. The default setting for "rabbitmq-refused" is empty,
 so that refused messages are not collected.
+
+Be careful here: the queue with refused messages does not automatically
+get emptied, and can fill up fast in case of an attack. MailerQ only 
+adds messages to it, and it is up to you to periodically check the
+contents of the queue and empty it, or to set a max length and/or max
+age for messages in the queue (you can use RabbitMQ's web based 
+management console to set such limits).
 
 
 ### Delivery status notifications
