@@ -42,6 +42,10 @@ from these libs:
         <td>Used for TLS encryption, license checking and base64 encoding</td>
     </tr>
     <tr>
+        <td>libz</td>
+        <td>Used for compression algorithms</td>
+    </tr>
+    <tr>
         <td>libmagic</td>
         <td>Used to detect the mime-type of files</td>
     </tr>
@@ -50,7 +54,11 @@ from these libs:
         <td>Used for generating globally unique identifiers</td>
     </tr>
     <tr>
-        <td>libxml</td>
+        <td>libidn</td>
+        <td>Used for parsing international domain names</td>
+    </tr>
+    <tr>
+        <td>libxml2</td>
         <td>Used for parsing and modifying XML/HTML code</td>
     </tr>
     <tr>
