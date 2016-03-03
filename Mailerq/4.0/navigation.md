@@ -33,4 +33,6 @@
 * [Responsive-email](responsive-email "Responsive e-mail")
 * [Examples](mailerq-examples "MailerQ examples")
 * [Plugins](plugins "MailerQ plugin development")
- 
+    * [Event loop architecture](event loop "Event loop architecture")
+    * [Exportable functions](exportable-functions "Functions that you can write")
+    
