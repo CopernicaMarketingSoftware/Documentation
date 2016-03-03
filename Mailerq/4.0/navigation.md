@@ -33,6 +33,7 @@
 * [Responsive-email](responsive-email "Responsive e-mail")
 * [Examples](mailerq-examples "MailerQ examples")
 * [Plugins](plugins "MailerQ plugin development")
-    * [Event loop architecture](event loop "Event loop architecture")
+    * [Event loop architecture](eventloop "Event loop architecture")
     * [Exportable functions](exportable-functions "Functions that you can write")
-    
+    * [Struct MQ_Context reference](mq_context "struct MQ_Context reference")
+    * [Struct MQ_SmtpConnection reference](mq_smtpconnection "struct MQ_SmtpConnection reference")
