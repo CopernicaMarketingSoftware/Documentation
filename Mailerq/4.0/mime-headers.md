@@ -97,7 +97,7 @@ on the handling of your message.
         <td>x-mq-keepmime</td>
         <td>do not remove the full mime object after delivery</td>
     </tr>
-</tr>
+</table>
 
 
 ## Example message
@@ -105,7 +105,7 @@ on the handling of your message.
 The following message would be an example MIME message that holds
 some extra meta properties:
 
-```
+````
 from: info@example.com
 to: peter@smtpeter.com
 subject: example message
@@ -115,13 +115,13 @@ x-mq-inlinecss: 1
 x-mq-custom-identifier: my-id
 
 this is the body of the mail
-```
+````
 
 When the message above is injected into MailerQ, it will be transformed
 into a JSON object that is sent to the inbox queue. The JSON object will
 have the following properties:
 
-```
+````
 {
     "envelope": "info@example.com",
     "recipient": "peter@smtpeter.com",
@@ -131,7 +131,7 @@ have the following properties:
     "inlinecss": true,
     "custom-identifier": "my-id"
 }
-```
+````
 
 To ease readability, we have left out the mime data. The mime data would
 be identical to the injected mime, _without_ all the x-mq-* headers.
