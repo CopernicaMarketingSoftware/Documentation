@@ -98,7 +98,7 @@ sudo make install
 To install a versioned PHP-JS release, the following instructions can be used.
 
 ```bash
-wget https://github.com/CopernicaMarketingSoftware/PHP-CPP/archive/vX.Y.tar.gz
+wget https://github.com/CopernicaMarketingSoftware/PHP-JS/archive/vX.Y.tar.gz
 tar xfz vX.Y.tar.gz
 cd PHP-JS-X.Y
 make
