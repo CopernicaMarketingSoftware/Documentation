@@ -115,7 +115,7 @@ file by hand to the appropriate directory.
 After you've installed PHP-JS, you should tell PHP to enable the extension:
 
 ```bash
-sudo php5enmode php-js
+sudo php5enmod php-js
 ```
 
 And - if you're using an Apache web server - restart this webserver:
