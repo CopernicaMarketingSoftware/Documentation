@@ -1,13 +1,40 @@
 # PHP example
 
-This example assumes that MailerQ is running and configured and that PHP 
-is working on the server with the [PECL AMQP package](http://pecl.php.net/package/amqp) 
-installed.
+To integrate MailerQ into your PHP environment, you can either write
+PHP scripts that inject emails directly into RabbitMQ (using the AMQP
+protocol), send mails to MailerQ over SMTP, or change the php.ini 
+config file so that the builtin PHP "mail()" function automatically
+injects mail into MailerQ.
 
-The PHP example consists of three files; `settings.php`, `send.php` and `result.php`. 
+## Using MailerQ in PHP mail() function
+
+The PHP mail() function internally uses a command line utility (by default 
+"sendmail") to send out the mail. Every time that you make a call to this
+mail() function, the PHP engine starts up this command line utility and
+sends out the message. By modifying the "php.ini" file you can change the 
+command line utility into "mailerq" so that all mails sent from PHP are 
+automatically delivered to MailerQ.
+
+To use MailerQ for sending emails in PHP using mail() function, set the
+"sendmail_path" property in the php.ini config file to:
+
+````
+sendmail_path = mailerq --envelope my-sender-address@my-domain.com --extract-recipients --ignore-dot
+
+````
+
+## Accessing RabbitMQ directly
+
+Despite the simplicity of the above solution, it is more efficient to 
+inject mails directly into RabbitMQ. In the following example we will
+demonstrate you how to access RabbitMQ from PHP. This example assumes that 
+MailerQ is running and configured and that the [PECL AMQP package](http://pecl.php.net/package/amqp) 
+extension is installed.
+
+The example consists of three files; `settings.php`, `send.php` and `result.php`. 
 If you want to use these scripts, save the three files inside the same folder.
 
-### `settings.php`
+### settings.php
 
 The `settings.php` file defines the settings that are needed to connect to 
 RabbitMQ and it also contains the settings that are being used for sending 
@@ -43,7 +70,7 @@ $fromAddress     = 'me@my-domain.com'; // address where the email was sent from
 
 ```
 
-### `send.php`
+### send.php
 
 This PHP script connects to RabbitMQ and places a JSON encoded message on 
 the outbox message queue. To connect to RabbitMQ and to create the JSON encoded 
@@ -51,7 +78,7 @@ message, the script uses the values from the `settings.php` file. If you want
 to use this script to test your MailerQ configuration, you will have to run 
 the `send.php` script before running the `result.php` script.
 
-<!-- TODO: this is not MailerQ 4.0-ready! -->
+<!-- @todo this is not MailerQ 4.0-ready! -->
 ```php
 <?php
 
@@ -166,7 +193,7 @@ $connection->disconnect();
 
 ```
 
-### `result.php`
+### result.php
 
 This PHP script connects to the RabbitMQ server, and gets the message that was 
 placed on the outbox message queue by the `send.php` script back from the result 
@@ -174,7 +201,7 @@ message queue. The result message from the result queue is shown to the user.
 The `result.php` can only output any relevant information when it is executed after 
 the `send.php` script was executed.
 
-<!-- TODO: this is not MailerQ 4.0-ready! -->
+<!-- @todo this is not MailerQ 4.0-ready! -->
 ```php
 <?php
 
