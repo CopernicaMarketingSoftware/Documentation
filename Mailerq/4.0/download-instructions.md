@@ -33,6 +33,7 @@ You can enter the following instructions to add our repository to your
 software list, and to download and install MailerQ.
 
 ```
+wget -O- http://packages.copernica.com/copernica.key | sudo apt-key add -
 echo "deb http://packages.copernica.com/debian stable main" | sudo tee /etc/apt/sources.list.d/copernica.list
 sudo apt-get update
 sudo apt-get install mailerq
@@ -94,29 +95,20 @@ recompiled every 24 hours and contains the latest fixes and changes.
 It is often not recommended to use it in production environments.
 
 
-## Additional repositories
+## Dynamically linked versions
 
 All repositories mentioned above contain MailerQ versions that are statically 
 linked, which means that there are hardly any dependencies. However, due to licensing
 conditions, we are required to supply dynamically linked versions of MailerQ too.
-If you prefer using a dynamically linked version, use one of the following
-repositories instead of the repositories mentioned above.
+If you prefer using a dynamically linked version, add '-shared' to the package name.
 
-<table>
-    <tr>
-        <td>Debian/Ubuntu latest</td>
-        <td>deb http://packages.copernica.com/debian stable-shared main</td>
-    </tr>
-    <tr>
-        <td>Debian/Ubuntu legacy</td>
-        <td>deb http://packages.copernica.com/debian legacy-shared main</td>
-    </tr>
-    <tr>
-        <td>Red Hat latest</td>
-        <td>http://packages.copernica.com/rpm-shared/copernica.repo </td>
-    </tr>
-    <tr>
-        <td>Red Hat legacy</td>
-        <td>http://packages.copernica.com/rpm-shared-legacy/copernica.repo </td>
-    </tr>
-</table>
+
+```
+sudo apt-get install mailerq-4.0-shared
+sudo apt-get install mailerq-dev-shared
+```
+```
+sudo yum install mailerq-4.0-shared
+sudo yum install mailerq-dev-shared
+```
+
