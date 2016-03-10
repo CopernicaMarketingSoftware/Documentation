@@ -13,6 +13,7 @@ class Yothalot\Input
     public function __construct($filename);
     public function name();
     public function size();
+    public function valid();
 }
 ```
 Moreover, the class allows you to iterate over the records stored in the input file.
@@ -46,6 +47,17 @@ into smaller blocks.
  */
 $filesize = $input->size();
 ```
+
+## Method valid()
+Method valid() checks if the file is a valid input file and returns
+a boolean.
+```php
+/**
+ *  Is it a valid file?
+ */
+$valid = $input->file();
+```
+
 
 Iterating over the [records](copernica-docs:Yothalot/record) stored in
 the file works as follows:
