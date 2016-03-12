@@ -15,11 +15,10 @@ that to be sent.
 ````
 
 To make reading a little easier, we've removed the mime data from the 
-above example, and replaced it with "...". 
-
-Besides the three properties mentioned above, you can add all other 
-kind of other properties to the JSON object to  control the delivery 
-of the mail, see the following table for an overview.
+above example, and replaced it with "...". Besides the three properties 
+mentioned above, you can add all other kind of other properties to the JSON 
+object to  control the delivery of the mail, see the following table for 
+an overview.
 
 <table>
     <tr>
@@ -109,9 +108,9 @@ text and html versions, attachments, and so on:
 }
 ````
 
-However, the "mime" property may also be a nested JSON object, holding
+However, the "mime" property can also be a nested JSON object, holding
 all individual properties of the mime, which will then be turned into a
-valid mime object by MailerQ:
+valid mime string by MailerQ:
 
 ````
 {
@@ -129,7 +128,7 @@ valid mime object by MailerQ:
 The number of properties that are supported inside the nested "mime" property
 is pretty huge. It uses the very same algorithm as the [responsiveemail.com](https://www.responsiveemail.com) web
 service to convert JSON objects into valid MIME data. For more information 
-about the supported properties, check the [responsive email documentation](https://www.responsiveemail.com/support/documentation).
+about the supported properties, check the [responsive email documentation](https://www.responsiveemail.com/support/json/introduction).
 
 
 ## Storing messages in message store
@@ -144,8 +143,7 @@ MailerQ waits with loading the message from message store until the SMTP connect
 has been set up, so that no time and resources are wasted on fetching information 
 that is not needed.
 
-If you use an external message store, you do not have to include the "mime"
-property in the JSON, but can use the "key" property instead. This property
+With an external message store, you can use the "key" property. This property
 holds the key under which the mime data is stored in your external storage
 system.
 
@@ -157,17 +155,17 @@ system.
 }
 ````
 
-When you have set up an external message store, it still is possible to
-use the "mime" property. This is often the recommended, because most
-mails get delivered at the very first attempt, and storing-and-fetching
-the mail to and from external storage is then only a waste of time and
-resources. Rescheduled mails are automatically sent to the external
-storage.
+Even when you have a message store you can of course still use the "mime" 
+property and store the full mime in the JSON. This is often even the 
+recommended way of doing things, because most mails get delivered at the very 
+first attempt, and storing-and-fetching the mail to and from external storage
+is then only a waste of time and resources. The message store is in such a setup only
+used for messages that were delayed and that are published back to RabbitMQ.
 
 
 ## Keep messages after delivery
 
-When a message is completely processed - either because it was successfully 
+When a message has been completely processed - either because it was successfully 
 delivered, or the delivery failed - MailerQ publishes the delivery result to 
 the results queue, where you can pick it up for further processing.
 
@@ -179,6 +177,7 @@ tell so by adding the `keepmime` option:
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
+    "mime": "...",
     "keepmime": true
 }
 ````
