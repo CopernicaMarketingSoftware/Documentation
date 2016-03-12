@@ -2,10 +2,24 @@
 
 All messages that are published to RabbitMQ are JSON encoded. This means
 that if you inject email directly into RabbitMQ yourself, you also have 
-to use JSON. In the JSON you include the envelope address and the recipient 
-of you message, and the full mime data that to be sent. Besides these
-three properties, you can set all kind of other meta properties to
-control the delivery of the mail.
+to use JSON. In the JSON you include the envelope ("MAIL FROM") address
+and the recipient ("RCPT TO") of you message, as well as the full mime data 
+that to be sent. 
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "..."
+}
+````
+
+To make reading a little easier, we've removed the mime data from the 
+above example, and replaced it with "...". 
+
+Besides the three properties mentioned above, you can add all other 
+kind of other properties to the JSON object to  control the delivery 
+of the mail, see the following table for an overview.
 
 <table>
     <tr>
@@ -16,7 +30,7 @@ control the delivery of the mail.
         <td>recipient</td>
         <td>recipient ("RCPT TO") address</td>
     </tr>
-    <tr>do 
+    <tr>
         <td>mime</td>
         <td>full mime data to be sent</td>
     </tr>
@@ -81,22 +95,41 @@ control the delivery of the mail.
 
 ## The basics
 
-The envelope address is the address that is used in the "MAIL FROM" 
-communication, and the recipient that address used for "RCPT TO".  These 
-two properties have to be included to delivery your mail. The full
-message data should be stored in the "mime" property.
+The most simple JSON to send to RabbitMQ contains just an "envelope", 
+"recipient" and "mime" property as we demonstrated above. The "mime"
+property should be a string value, holding a valid MIME object. This 
+mime object holds the entire email, including all the headers and possible
+text and html versions, attachments, and so on:
 
 ````
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
-    "mime": "..."
+    "mime": "From: my-sender-address@my-domain.com\r\nTo: info@example.org\r\nSubject: ..."
 }
-
 ````
 
-To make reading a little easier, we've removed the mime data from the 
-above example, and replaced it with "...".
+However, the "mime" property may also be a nested JSON object, holding
+all individual properties of the mime, which will then be turned into a
+valid mime object by MailerQ:
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": {
+        "from": "my-sender-address@my-domain.com",
+        "to": "info@example.org",
+        "subject": "This is the subject line",
+        "text": "text version of the mail"
+    }
+}
+````
+
+The number of properties that are supported inside the nested "mime" property
+is pretty huge. It uses the very same algorithm as the [responsiveemail.com](https://www.responsiveemail.com) web
+service to convert JSON objects into valid MIME data. For more information 
+about the supported properties, check the [responsive email documentation](https://www.responsiveemail.com/support/documentation).
 
 
 ## Storing messages in message store
