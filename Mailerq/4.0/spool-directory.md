@@ -31,6 +31,7 @@ In the config file there are three options relevant for the spool directory:
 spool-directory:        /path/to/directory
 spool-delay:            0
 spool-remove:           1
+spool-extract:          1
 ```
 
 The "spool-directory" is the most important one. It contains the path to the
@@ -45,3 +46,7 @@ If you do not want this, you can set "spool-remove" to 0. However, it is not
 recommended to disable removing files, because emails might get redelivered 
 if MailerQ is restarted and starts scanning the spool directory again.
 
+All mails that you drop in the spool directory are scanned for headers that
+start with "x-mq-*". Such headers are filtered out and converted to JSON
+properties that control the delivery of the mail. If you do not want to
+scan for such headers, you can use the "spool-extract" variable to disable this.
