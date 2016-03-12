@@ -179,3 +179,15 @@ headers in the MIME message. Every header that starts with "x-mq-" is
 treated as a special MailerQ header, and will be turned into a JSON
 property that controls how the mail is going to be handled.
 
+This feature to automatically extract meta data from the MIME header
+can be disabled in the config file. If you use MailerQ as an internet 
+facing receiver, you probably do not want to allow users to control the 
+deliverability by adding "x-mq-*" these headers, so in that case you can 
+better disable this feature in the config file:
+
+```
+smtp-extract:       0
+```
+
+
+
