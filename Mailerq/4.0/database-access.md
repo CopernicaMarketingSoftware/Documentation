@@ -123,7 +123,7 @@ The following tables are created:
     </tr>
     <tr>
         <td>flood_responses</td>
-        <td>alternative capacity to use when certain response comes in</td>
+        <td>alternative delivery limits to use when certain responses come in</td>
     </tr>
     <tr>
         <td>ips</td>
@@ -135,7 +135,7 @@ The following tables are created:
     </tr>
     <tr>
         <td>dkim_patterns</td>
-        <td>rules that decide which DKIM key to use</td>
+        <td>rules that decide what DKIM keys to use</td>
     </tr>
     <tr>
         <td>locals</td>
@@ -146,12 +146,12 @@ The following tables are created:
         <td>rules to send mail from a different IP</td>
     </tr>
     <tr>
-        <td>mtanames</td>
-        <td>alternative "EHLO" names</td>
-    </tr>
-    <tr>
         <td>paused</td>
         <td>deliveries on pause</td>
+    </tr>
+    <tr>
+        <td>mtanames</td>
+        <td>alternative "EHLO" names</td>
     </tr>
     <tr>
         <td>dns</td>
@@ -177,13 +177,6 @@ the IP (and for which the other field is empty). If that record
 also does not exist, the record for which both the domain and the IP are
 empty is used.
 
-Values in the table that are set to "0" are treated as "unlimited". The
-"domain_" prefix is used for domain specific settings, and the "ip_" for
-IP specific settings. Example: if "domain_maxmessages" is set to 1000 and
-"ip_maxmessages" to 100 it means that no more than 1000 messages per minute
-may be sent to the domain, and no more than 100 messages per minute to 
-each of the IP addresses that are being used by the domain.
-
 The best way to get an understanding of the column in this table is to
 play around with the management console, and see what kind of data ends
 up in this table.
@@ -191,22 +184,20 @@ up in this table.
 
 ### The flood_responses table
 
-The "flood_responses" table has almost a similar layout as the capacity table,
+The "flood_responses" table has an almost similar layout as the capacity table,
 but with a "pattern" and a "type" column instead of an IP address and a domain.
 For each failed delivery, the answer message from the remote server is checked
-agains the patters in this table. If there is a match, MailerQ will start
-using the delivery capacity set in this table instead.
+agains the patterns in this table. If there is a match, MailerQ will start
+using the delivery capacity set in this table.
 
-Thus, if you insert a record in this table with pattern "*flood detected*"
-and type "fnmatch", and MailerQ receives an answer from a remote server
+For example, if you insert a record in this table with pattern "flood detected"
+and type "substr", and MailerQ receives an answer from a remote server
 which a message like "message rejected, flood detected from your IP address",
-MailerQ automatically switches its send capacity to the capacity stored
-in this "flood_responses" table. 
+MailerQ automatically switches the send capacity to the associated capacity. 
 
 Once again, the best way to get an idea of the meaning of the columns is
 to just experiment with the management console, and then look at the data
 in this table.
-
 
 
 ### The ips table
@@ -220,19 +211,76 @@ out emails.
 
 ### The dkim keys and patterns
 
-The last table to discuss is the `dkim_keys` table. This holds all DKIM keys 
-that are used by MailerQ for signing the outgoing messages. Each record holds a 
-domain name, DKIM selector, the algorithm to use and of course the private key. 
-MailerQ reloads all DKIM keys every 10 minutes so it is advised to wait at least 
-10 minutes before you send out an email if you have just updated the database. 
-DKIM keys stored via the management console are immediately active.
+All DKIM private keys that are used for signing outgoing mails are stored 
+in the "dkim_keys" table. Only the domain and the selector are stored;
+other properties are retrieved from DNS.
 
-| Field name | Type            | Description                                                             |
-|------------|-----------------|-------------------------------------------------------------------------|
-| id         | int PRIMARY_KEY | Usual auto_increment id field                                           |
-| domain     | varchar UNIQUE  | The domain for which this record holds the DKIM key. Must be lower case |
-| selector   | varchar         | The selector for DKIM signing                                           |
-| privatekey | mediumtext      | Private key used for encryption. It should be kept secret at all times  |
-| algorithm  | varchar         | An algorithm used for data encryption ( accepts SHA-1 or SHA-256 )      |
+To decide what keys should be used for outgoing emails, there is a separate
+"dkim_patterns" table. The from address of every outgoing mail is compared
+to the records in this table, and whenever there is a match, the associated
+key is used for a DKIM signature.
 
-````
+The pattern type can be "regex", "fnmatch", "substr" or "exact", and decides
+whether the "sign" column holds a regular expression, or some other kind
+of pattern.
+
+
+### Local email addresses
+
+Incoming mails are compared with the addresses stored in the local email
+address table. When there is a match, the mail is not sent to the regular
+inbox RabbitMQ message queue, but to the locals queue instead. The "type"
+column can be set to "regex", "fnmatch", "substr" and "exact".
+
+
+### Delegates
+
+If you want to send mail from a different IP address than is stored in
+the message JSON, you can use the "delegates" table. For example, if you
+notice that "example.com" no longer accepts incoming connections from
+your "1.2.3.4" address, but that it does accept connections from "1.2.3.5",
+you can add a row to the "delegates" table. This row instructs MailerQ
+that it should send all mail that was originalle planned to be sent from
+"1.2.3.4" to "example.com" to be sent from address "1.2.3.5" instead.
+
+
+### Paused deliveries
+
+To pause deliveries from and/or to IP addresses or domains, you can insert
+records in the "paused" table. The "target" column in this table can hold
+IP addresses, domain names and empty values. The "localip" column is
+of course only used for IP addresses, but may also hold empty strings.
+
+If you want to pause all deliveries from your own IP address "1.2.3.4"
+to "example.com", you can simply insert such a record in the "paused"
+table. An empty value in one of the columns of the "paused" table means that 
+all deliveries are paused. For example, if you insert an empty domain and IP 
+address "1.2.3.4", MailerQ pauses all deliveries from "1.2.3.4", no matter to 
+what domain they should be sent. If you insert a record with an empty domain 
+and IP "5.6.7.8" as target, all deliveries to IP address "5.6.7.8" will be 
+put on hold.
+
+
+### The mtanames tables
+
+By default, MailerQ does a reverse DNS lookup to find the hostname of
+its local IP addresses. This hostname is the name used in the "HELO/EHLO"
+SMTP handshake. If you want to use a different hostname instead, you can
+insert a row into this table.
+
+
+### Custom DNS lookups
+
+To override the DNS resolver, you can add records to the "dns" table. MailerQ
+normally uses normal DNS queries to find out to which IP addresses mail should
+be sent. First it does a MX query to find the MX records, and then for each
+MX record MailerQ looks for the associated A or AAAA records to find the
+IP addresses.
+
+However, in case you want to bypass these lookups for specific IP addresses,
+you can add records to the "dns" table. If matching records are available,
+MailerQ uses the IP addresses in these records instead of doing the DNS
+queries. This feature can for example be useful if you know that certain
+domains (like the ones that you own yourself) have special IP addresses on 
+which they receive email, besides the ones that are announced in DNS.
+
