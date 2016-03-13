@@ -14,7 +14,7 @@ storage-ttl:            3600
 ```
 
 The message store is completely optional: if you set the "storage-address"
-variable to an empty string, MailerQ will work just as well (even faster 
+variable to an empty string, MailerQ works just as well (even faster 
 because no extra communication with the storage server is necessary), but 
 the load on RabbitMQ and the network will be much higher.
 
@@ -56,14 +56,20 @@ is needed to connect to MongoDB.
 
 ## Storage policy
 
-The "storage-policy" config file setting allows you to instruct MailerQ what
+The "storage-policy" config file setting tells MailerQ what
 type of messages should be stored in the message store. Valid values are "all", 
 "out", "in" and "none". The "none" setting is meaningful if you only want
 MailerQ to *retrieve* mime data from external storage, without ever 
 storing it.
 
+Before MailerQ publishes a message to RabbitMQ (for example, before it
+sends a received message to the inbox queue, or before it send a delayed 
+message back to the outbox queue) it checks the storage policy to see
+whether the mime data should be sent to RabbitMQ too, or that the mime
+data should be stored in a different storage system, 
+
 If you want all messages to be stored in the message store, use the "all"
-policy. If this policy is enabled, MailerQ filters each JSON object
+policy. If this policy is enabled, MailerQ checks each JSON object
 before it gets published to RabbitMQ. If it still contains mime data,
 it will be removed from the JSON and stored in the message store. The "all"
 policy matches incoming messages that go to one of the incoming queues, as
@@ -82,8 +88,13 @@ very first attempt, and it is therefore often a waste of resources
 to store the message in a NoSQL environment: the message is expected to be removed 
 only a fraction of a second later. By using the "out" storage policy, the 
 initial injected emails are completely sent to RabbitMQ. Only if the initial
-delivery fails and the message is rescheduled for later delivery, the 
-full MIME data is stripped from the JSON and stored in the separate storage.
+delivery fails and the message is rescheduled for later delivery, the full 
+MIME data is stripped from the JSON and stored in the separate storage.
+
+The "out" policy especially makes sense because in most setups the majority of
+all deliveries succeed, and rescheduled attempts are likely to be
+rescheduled a number of times, and will be pumped around between MailerQ and
+RabbitMQ for a number of times. 
 
 Only "all", "out" and "none" are meaningful policies. For completeness however,
 we also support the "in" property which does exactly the opposite as the "out"

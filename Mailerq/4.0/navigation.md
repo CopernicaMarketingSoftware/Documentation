@@ -9,7 +9,6 @@
     * [Database access](database-access "Database access")
     * [Message store options](message-store-options "Message Store options")
     * [Logging](logging "Logging")
-    * [Incoming messages](incoming-messages "Incoming messages")
     * [Smarthost & debugging](smarthost "Smarthost & debugging")
     * [Other options](other-configuration "Other configuration options")
 * [Injecting email](inject-email "Send email with MailerQ")

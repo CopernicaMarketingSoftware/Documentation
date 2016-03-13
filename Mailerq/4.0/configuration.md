@@ -13,7 +13,6 @@ sections. Please select the section that you're interested in.
 * [Database settings](database-access "Database access")
 * [Message store settings](message-store-options "Message Store options")
 * [Logging](logging "Logging")
-* [Incoming messages](incoming-messages "Incoming messages")
 * [Smarthost & debugging](smarthost "Smarthost & debugging")
 * [Management console](management-console "Management console")
 * [Other options](other-configuration "Other configuration options")
