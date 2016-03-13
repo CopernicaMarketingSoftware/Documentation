@@ -65,22 +65,24 @@ name of this queue can be set with the "rabbitmq-outbox" setting in the
 config file. The default value is "outbox".
 
 The outbox queue is the only queue from which messages are read. All other 
-queues are only used to publishing messages to. If you 
-want to inject messages directly into RabbitMQ, you should publish 
-your message to the outbox queue so that MailerQ automatically picks them up
+queues are just used to publish messages to. If you want to inject outgoing
+email messages directly into RabbitMQ, you should publish your messages to 
+this outbox queue so that MailerQ automatically picks them up and delivers
+them.
 
 
 ### Queues for incoming messages
 
-Besides sending email, MailerQ also opens up SMTP ports and spool directories
-to which email can be delivered. This allows you to inject email into MailerQ.
-Mails can also be injected by using MailerQ as command line utility.
+All queues other than the outbox queue are used by MailerQ to write data to.
+These are for example queues to which the results are written, and queues for
+incoming messages. Incoming messages are messages that are being received
+by MailerQ, for example on its SMTP port or in its spool directory.
 
-Messages that are received via one of these mechanisms are converted to JSON and
-published to message queues. The "rabbitmq-inbox" setting specifies the queue to 
-which all correctly received messages are delivered, and "rabbitmq-refused" holds 
-the messages that were delivered to the SMTP port, but that were not accepted 
-(e.g., because the client did not correctly authenticate). 
+Messages that are received by MailerQ via one of the injection mechanisms are converted 
+into JSON and published to message queues. The "rabbitmq-inbox" setting specifies 
+the queue to which all these correctly received messages are delivered, and 
+"rabbitmq-refused" holds the messages that were delivered to the SMTP port, 
+but that were not accepted (e.g., because the client did not correctly authenticate). 
 
 ```
 rabbitmq-inbox:     inbox
@@ -89,19 +91,19 @@ rabbitmq-reports:   reports
 rabbitmq-local:     local
 ```
 
-We mentioned that all accepted messages are published to the "inbox" queue.
-However, it is slightly more complicated than that. When MailerQ receives a message, 
-the received message is analyzed first. If it contains a delivery report (or
+The "inbox" queue is not the only queue to which incoming messages are published, 
+it is slightly more complicated than that. When MailerQ receives a message, 
+the message is analyzed first. If it contains a delivery report (or
 some other kind of report), the message is not placed in the "inbox" queue but
-the "reports" queue instead. If by accident or on purpose a 
-non-regular mail comes in on the SMTP port (for example a bounced email). Such
-mails will not be published to the regular inbox queue, but to the much safer
+in the "reports" queue instead. If by accident or on purpose a 
+non-regular mail comes in on the SMTP port (for example a bounced email or a DMARC
+report). Such mails will not be published to the regular inbox queue, but to the 
 reports queue where you can further inspect them.
 
-For each incoming mail it is also checked whether it was sent to a recipient that 
+Each incoming mail is also checked to see whether the recipient 
 appears on the list of "local" email addresses that can be managed via the
-management console. If the recipient appears on this list, the email is accepted
-anyway (even when it came in over an unauthenticated SMTP connection) and is
+management console. If the recipient appears on this list, the email is accepted 
+(even when it came in over an unauthenticated SMTP connection) and is
 stored in the "local" message queue.
 
 Messages that do not contain a report and that are also not local (this

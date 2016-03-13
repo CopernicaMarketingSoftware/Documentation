@@ -2,7 +2,7 @@
 
 MailerQ is distributed in binary form for a number of Linux distributions.
 The best way to download MailerQ is to add the Copernica repository (Copernica 
-is the company that develops MailerQ) to the list of sources that are
+is the company that develops MailerQ) to the list of sources 
 used by your "apt-get" or "yum" package manager. After doing this, you
 can use the regular software update tools to stay up to date with the
 latest version of MailerQ.
@@ -76,8 +76,8 @@ you should modify the repository URL to contain "rpm-legacy" instead of "rpm".
 
 Once you've added the MailerQ repository to the list of software sources,
 you can always get the latest stable version of MailerQ with the instructions
-`sudo apt-get install mailerq` for Debian/Ubuntu based systems or
-`sudo yum install mailerq` for Red Hat based systems. If you prefer an older
+"sudo apt-get install mailerq" for Debian/Ubuntu based systems or
+"sudo yum install mailerq" for Red Hat based systems. If you prefer an older
 version over the current stable one, or when you want to try the bleeding edge 
 development version, you should append a version number.
 
@@ -92,7 +92,14 @@ sudo yum install mailerq-dev
 
 The development version has a "-dev" postfix. This dev version is automatically
 recompiled every 24 hours and contains the latest fixes and changes. 
-It is often not recommended to use it in production environments.
+Although it is often not recommended to use it in production environments, it's
+a great way to keep an eye on MailerQ improvements.
+
+Note that if you run a specific version of MailerQ, the location of the config
+file changes too. By default, MailerQ loads it configuration from "/etc/mailerq/config.txt",
+but if you install an explicit version the version number if included in the 
+filename of the config file (for example "/etc/mailerq/version-4.0.txt" or 
+"/etc/mailerq/version-dev.txt").
 
 
 ## Dynamically linked versions

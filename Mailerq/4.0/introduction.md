@@ -6,7 +6,7 @@ need to take four simple steps:
 - [Download and install MailerQ](download-instructions)
 - [Get access to a RabbitMQ message broker (or run one yourself)](rabbitmq-install)
 - [Obtain a valid "license.txt" file from the MailerQ website](license-file)
-- [Include the address of the RabbitMQ server in the MailerQ config file](minimal-configuration)
+- [Modify your local MailerQ config file](minimal-configuration)
 
 That's all. After these steps you're ready to start MailerQ and inject emails.
 To start MailerQ, just enter `mailerq` on the command line and your MTA is running.
@@ -16,8 +16,8 @@ $ mailerq
 ```
 
 MailerQ comes with a web based [management console](management-console)
-that you can use to monitor exactly what is happening. The default location 
-is `http://your-server-name:8485`.
+that you can use to monitor exactly what is happening, and to adjust all
+your delivery settings. The default location is `http://your-server-name:8485`.
 
 
 ## System dependencies
@@ -29,7 +29,7 @@ message if you need a version for a different type of system.
 
 The binary executable that you can download is statically linked against most 
 libraries. This means that all the libraries required by MailerQ are embedded 
-into the binary code, meaning that it runs straight out of the box with no need
+into the binary code, and that MailerQ runs straight out of the box with no need
 for you to fix all kinds of dependencies. However, when MailerQ starts, it does 
 do a scan of your system to detect which libraries are available. If MailerQ 
 happens to find out that one or more of the following libraries 

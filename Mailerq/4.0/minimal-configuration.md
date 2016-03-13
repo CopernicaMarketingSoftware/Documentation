@@ -1,6 +1,6 @@
 # A minimal configuration
 
-MailerQ is configured via one central configuration file `/etc/mailerq/config.txt`. 
+MailerQ is configured via one central configuration file: "/etc/mailerq/config.txt". 
 It holds many options. The most important ones are the address
 and login credentials of your RabbitMQ message broker and the address of
 your database. You probably need to change these settings. All other config 
@@ -10,10 +10,10 @@ want to take a look at them later).
 
 ## RabbitMQ address
 
-The `rabbitmq-address` setting in the config file holds the address of the
+The "rabbitmq-address" setting in the config file holds the address of the
 RabbitMQ server that you want to use for message queueing. It has the
 format "amqp://user:password@hostname/vhost". The default value 
-("amqp://guest:guest@localhost/") only works if your RabbitMQ server
+("amqp://guest:guest@localhost/") works if your RabbitMQ server
 is running on the same machine as MailerQ, and when you've not altered
 the default guest/guest credentials.
 
@@ -31,10 +31,10 @@ one RabbitMQ server fails.
 
 MailerQ stores all runtime settings in a relational database. This can be a Mysql,
 MariaDB, PostgreSql or Sqlite3 database. The Sqlite3 database is by far the
-easiest one to set up, because it does not require a running database server
-and contains just the path to a file where MailerQ can store its runtime settings.
-This file does not even have to exist as it will be automatically created by
-MailerQ when it is missing.
+easiest one to set up, because it does not require a database server
+and all you have to do is just enter the path to a file on your server where 
+MailerQ can store its runtime settings. This file does not even have to exist 
+as it will be automatically created by MailerQ when it is missing.
 
 ```
 database: sqlite:///path/to/database/file.sql

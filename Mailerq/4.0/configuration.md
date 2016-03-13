@@ -6,7 +6,7 @@ NoSQL storage engine and database (MySql, Sqlite or PostgreSql) and other
 options for MailerQ itself.
 
 The config file, and the documentation, has been split up in different
-sections. Please choose the select the section that you're interested in.
+sections. Please select the section that you're interested in.
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
 * [Cluster settings](cluster "Cluster configuration")
