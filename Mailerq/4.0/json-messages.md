@@ -38,16 +38,16 @@ an overview.
         <td>key to the mime data in external storage</td>
     </tr>
     <tr>
+        <td>keepmime</td>
+        <td>do not remove mime data after delivery</td>
+    </tr>
+    <tr>
         <td>data</td>
         <td>personalization data</td>
     </tr>
     <tr>
         <td>ips</td>
         <td>ip addresses to send the message from</td>
-    </tr>
-    <tr>
-        <td>force</td>
-        <td>force delivery, even when errors occur or conversion is impossible</td>
     </tr>
     <tr>
         <td>delayed</td>
@@ -60,6 +60,10 @@ an overview.
     <tr>
         <td>maxattempts</td>
         <td>max number of delivery attempts</td>
+    </tr>
+    <tr>
+        <td>force</td>
+        <td>force delivery, even when errors occur or conversion is impossible</td>
     </tr>
     <tr>
         <td>inlinecss</td>
@@ -76,10 +80,6 @@ an overview.
     <tr>
         <td>queues</td>
         <td>alternative rabbitmq queues for results</td>
-    </tr>
-    <tr>
-        <td>keepmime</td>
-        <td>do not remove mime data after delivery</td>
     </tr>
     <tr>
         <td>smarthost</td>
@@ -181,7 +181,6 @@ to be removed, you can tell so by adding the "keepmime" option:
 }
 ````
 
-
 ## Personalization data
 
 It is possible to include personalization data in the JSON. If you do this,
@@ -209,6 +208,54 @@ you can use personalization data in almost all fields.
 
 For more information about using personalization, check our 
 [personalization documentation](personalization).
+
+
+## Local IP addresses
+
+If your MailerQ server has multiple IPs, MailerQ can send out mail from all 
+these IP addresses. This can be useful to increase the delivery rate, 
+because receivers often restrict deliveries per IP address.
+
+By default, MailerQ makes all connections to remote mail servers from the default 
+(first) available IP of the host server. If your server has multiple IPs assigned 
+to it, you can instruct MailerQ to use a different local IP for sending out the 
+mail.
+
+To try a different IP address for sending out the mail, you can add a list of 
+available IP addresses:
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "ips": ["231.34.13.156", "231.34.13.158"]
+}
+````
+
+MailerQ will pick one of the IPs to send out the mail. Be aware that you 
+can of course only use addresses that are actually bound to the host that MailerQ 
+runs on. Other IP addresses will result in failed deliveries.
+
+
+## Delivery time
+
+Messages loaded by MailerQ are delivered right away.
+If you want to delay a delivery, you can add a "delayed" property to the 
+JSON with the desired time of delivery.
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "delayed": "2017-01-10 00:00:00"
+}
+````
+
+The "delayed" propery is used by MailerQ internally. When a mail cannot
+be delivered because of greylisting, it is published back to the outbox queue 
+with a "delayed" property set to a couple of minutes after the initial attempt.
 
 
 ## Max delivery time and max attempts
@@ -247,34 +294,6 @@ default limit: the mail is just retried for 24 hours no matter how many
 attempts that takes.
 
 
-## Local IP addresses
-
-If your MailerQ server has multiple IPs, MailerQ can send out mail from all 
-these IP addresses. This can be useful to increase the delivery rate, 
-because receivers often restrict deliveries per IP address.
-
-By default, MailerQ makes all connections to remote mail servers from the default 
-(first) available IP of the host server. If your server has multiple IPs assigned 
-to it, you can instruct MailerQ to use a different local IP for sending out the 
-mail.
-
-To try a different IP address for sending out the mail, you can add a list of 
-available IP addresses:
-
-````
-{
-    "envelope": "my-sender-address@my-domain.com",
-    "recipient": "info@example.org",
-    "mime": "...",
-    "ips": ["231.34.13.156", "231.34.13.158"]
-}
-````
-
-MailerQ will pick one of the IPs to send out the mail. Be aware that you 
-can of course only use addresses that are actually bound to the host that MailerQ 
-runs on. Other IP addresses will result in failed deliveries.
-
-
 ## Inlinize CSS
 
 When you send out HTML emails, you face the problem that not all email clients 
@@ -296,6 +315,82 @@ into inline `style="..."` attributes in the HTML body.
     "inlinecss": true
 }           
 ````
+
+## DKIM keys
+
+You can include private DKIM keys in the JSON to let MailerQ sign the mail.
+
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dkim": {
+        "domain": "example.com",
+        "selector": "x",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
+    }
+}           
+
+Besides the private keys that you include in the JSON, MailerQ also keeps
+a set of private keys in its local database (and that can be edited using
+the management console). Both the keys from the JSON as well as the keys
+from this database are used. If there are multiple matching keys, they
+are all used for signing the mail.
+
+It is even possible to include multiple keys in the JSON. The "dkim" property
+supports arrays:
+
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dkim": [ {
+        "domain": "example.com",
+        "selector": "x",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
+    }, {
+        "domain": "example.com",
+        "selector": "y",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
+    } ]
+}           
+
+The message will end up having two extra "DKIM-signature" headers 
+(or even more if there were also matching DKIM keys in the database).
+
+
+## Delivery Status Notifications
+
+The "dsn" property can be added to control whether message MailerQ should 
+send back an email to the envelope address in case of a failed delivery. 
+MailerQ can send out such notification messages.
+
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dsn": {
+        "notify": "FAILURE",
+        "ret": "HDRS",
+        "orcpt": "info@example.org",
+        "envid": "my-identifier",
+        "envelope": "mailer-daemon@mailerq.com",
+        "mta": "MailerQ"
+    }
+}
+
+The above JSON contains a DSN setting that says that a delivery status
+notification should be sent back to the original envelope address in
+case of a failure (this is what the "notify" setting says). The notification
+should include the headers of the original mail (ret=HDRS). Inside the
+notification should be listed that the original recipient was "info@example.com",
+and the unique envelope identifier was "my-identifier". The notification
+should be sent out name of "mailer-daemo@mailerq.com", with name "MailerQ".
+
+For more information about delivery notifications, see the
+[Delivery Status Notification documtation](sending-bounces).
+
+
 
 ## Custom result queues
 
@@ -327,6 +422,28 @@ any result queue.
 When the "queues" property is set in the JSON, the queues mentioned in 
 the global configuration file are completely ignored. This is even so if you 
 have not even specified all possible queues in the JSON property.
+
+
+## Smarthost settings
+
+If you do not want to send the message right to the recipient right away,
+but to an alternative SMTP server on the internet, you can add a "smarthost"
+option.
+
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "smarthost": {
+        "name": "mail.smtpeter.com",
+        "port": 25,
+        "username": "my-username",
+        "password": "my-password"
+    }
+}
+
+The above message will not be sent to "my-domain.com", but to "mail.smtpeter.com"
+instead.
 
 
 ## Setting custom message properties
