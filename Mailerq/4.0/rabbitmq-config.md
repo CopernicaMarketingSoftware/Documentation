@@ -197,7 +197,7 @@ The "rabbitmq-results", "rabbitmq-success" and "rabbitmq-failure" settings hold
 the names of the RabbitMQ result queues. MailerQ posts a JSON result object for
 every successful delivery to the success queue, and for all failed deliveries to 
 the failure queue. This same result object is also sent to the results queue. 
-Every result object is indeed copied to two queues: failures are posted to the 
+Every result object is indeed published to two queues: failures are posted to the 
 results queue and the failure queue, while successes are published to the results 
 and success queues.
 
