@@ -15,9 +15,8 @@ the next instance.
 ## How to configure the smarthost feature
 
 By default, the smarthost feature is disabled. If you want to enable it,
-you either need to explicitly configure it in the configuration file,
-or you can use a command-line switch when you start MailerQ. The following
-variables can be used for it:
+you either need to explicitly configure it in the configuration file.
+The following variables can be used for it:
 
 ```
 smarthost:          <hostname>  (empty by default)
@@ -26,9 +25,9 @@ smarthost-username: <username>  (empty by default)
 smarthost-password: <password>  (empty by default)
 ```
 
-The `smarthost` has to be set to enable the smarthost feature, and should
+The "smarthost" has to be set to enable the smarthost feature, and should
 contain the hostname of the server that you want to redirect the email to.
-The other `smarthost-*` options are optional, and may be used if you the
+The other "smarthost-*" options are optional, and can be used if you the
 target smarthost uses a different port than the default one (default is 25),
 and if the smarthost requires authentication.
 
@@ -64,22 +63,22 @@ x-mq-smarthost-username: <example-user>
 x-mq-smarthost-password: <example-password>
 ```
 
-Only the `name` property is mandatory. The Port will default to 25, and not setting 
+Only the "name" property is mandatory. The port defaults to 25, and not setting 
 the username or password means MailerQ will not try to authenticate to the smarthost. 
 
 ## Using smarthost for debugging
 
-If you use the 'smarthost' option, mails are not delivered to the actual 
+If you use the "smarthost" option, mails are not delivered to the actual 
 recipient but to the smarthost server instead. As a consequence, MailerQ 
-only manages a single mail queue if the smarthost feature is activated: 
-the queue of messages to the smarthost. MailerQ will not maintain 
-seperate queues for mails per domain.
+internally queues all mails as if they were sent to the smarthost domain. If 
+you open the management console, the list of active domains will be one 
+item long: the smarthost domain.
 
 If you are debugging, you probably want to run MailerQ in (almost) 
-the same configuration as you normally would, with many queues for the domains to which
-messages are being delivered. The only difference is that you do not
+the same configuration as you normally would, with queues for all the domains 
+to which messages are being delivered. The only difference is that you do not
 want to actually deliver the mails, but send them to a dummy destination:
-a sink. This is where the smtp-sink options comes in.
+the "smarthost". This is where the smtp-sink options comes in.
 
 ````
 smtp-sink-ip:           <ip address>    (default: 0.0.0.0)
@@ -88,16 +87,16 @@ smtp-sink-username:     <username>      (empty by default)
 smtp-sink-password:     <password>      (empty by default)
 ````
 
-If you include the `smtp-sink-ip` and `smtp-sink-port` options in the config
+If you include the "smtp-sink-ip" and "smtp-sink-port" options in the config
 file, MailerQ runs normally, and all mails are routed through different
 internal queues with their own send capacities. However, when a TCP 
 connection is created, the connection will be set up to the sink instead
 of to the actual recipient mail server.
 
-The `smtp-sink-username` and `smtp-sink-password` options can be used
+The "smtp-sink-username" and "smtp-sink-password" options can be used
 if your sink requires authentication.
 
-If you are looking for a SMTP server that simply accepts and discards
+If you are looking for an SMTP server that simply accepts and discards
 incoming messages, you can use [Postfix' smtp-sink](http://www.postfix.org/smtp-sink.1.html).
 
 
