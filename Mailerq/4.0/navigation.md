@@ -3,6 +3,7 @@
     * [Setting up RabbitMQ](rabbitmq-install "Settup up RabbitMQ")
     * [License file](license-file "Obtaining a license file")
     * [Minimal configuration](minimal-configuration "A minimal configuration")
+    * [What is new in MailerQ 4.0](whats-new-for-4.0 "Wat is new in MailerQ 4.0?")
 * [Configuration file](configuration "The RabbitMQ config file")
     * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
     * [Cluster settings](cluster "MailerQ clustering")
