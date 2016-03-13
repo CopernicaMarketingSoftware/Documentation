@@ -1,10 +1,10 @@
 # JSON specification
 
-All messages that are published to RabbitMQ are JSON encoded. This means
-that if you want to inject email directly into RabbitMQ, you also have 
-to use JSON. In the JSON you should set the envelope ("MAIL FROM") address
-and the recipient ("RCPT TO") of your message, as well as the full mime data 
-to be sent. 
+MailerQ expects all messages that are loaded from the RabbitMQ outbox queue 
+to be JSON encoded. This means that if you want to inject email directly into 
+RabbitMQ, you must use JSON. In this JSON you should set the envelope 
+("MAIL FROM") address, the recipient ("RCPT TO") address and
+the full mime data to be sent. 
 
 ````
 {
@@ -17,8 +17,8 @@ to be sent.
 To make reading a little easier, we've removed the mime data from the 
 above example, and replaced it with "...". Besides the three properties 
 mentioned above, you can add all other kind of other properties to the JSON 
-object to  control the delivery of the mail, see the following table for 
-an overview.
+object to  control the delivery of the mail. The following properties 
+are recognized by MailerQ:
 
 <table>
     <tr>
