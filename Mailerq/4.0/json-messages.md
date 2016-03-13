@@ -1,10 +1,10 @@
 # JSON specification
 
 All messages that are published to RabbitMQ are JSON encoded. This means
-that if you inject email directly into RabbitMQ yourself, you also have 
-to use JSON. In the JSON you include the envelope ("MAIL FROM") address
-and the recipient ("RCPT TO") of you message, as well as the full mime data 
-that to be sent. 
+that if you want to inject email directly into RabbitMQ, you also have 
+to use JSON. In the JSON you should set the envelope ("MAIL FROM") address
+and the recipient ("RCPT TO") of your message, as well as the full mime data 
+to be sent. 
 
 ````
 {
@@ -42,16 +42,12 @@ an overview.
         <td>personalization data</td>
     </tr>
     <tr>
-        <td>message-id</td>
-        <td>unique message id</td>
-    </tr>
-    <tr>
         <td>ips</td>
         <td>ip addresses to send the message from</td>
     </tr>
     <tr>
         <td>force</td>
-        <td>force delivery</td>
+        <td>force delivery, even when errors occur or conversion is impossible</td>
     </tr>
     <tr>
         <td>delayed</td>
@@ -67,7 +63,7 @@ an overview.
     </tr>
     <tr>
         <td>inlinecss</td>
-        <td>turn css code in html mails into inline css</td>
+        <td>turn style blocks in html mails into inline style attributes</td>
     </tr>
     <tr>
         <td>dkim</td>
@@ -131,21 +127,21 @@ service to convert JSON objects into valid MIME data. For more information
 about the supported properties, check the [responsive email documentation](https://www.responsiveemail.com/support/json/introduction).
 
 
-## Storing messages in message store
+## Storing messages in a message store
 
-MIME bodies can become very large, especially if your emails contain attachments 
+MIME bodies can become large, especially if your emails contain attachments 
 or embedded content. To prevent that such big messages have to be processed by 
 RabbitMQ, MailerQ can be configured to use an external message store (for example:
-MongoDB) for the message bodies instead. You can then publish much smaller JSON objects 
-to RabbitMQ, and keep the full MIME messages in an external message store.
+MongoDB). You can then publish much smaller JSON objects 
+to RabbitMQ, and keep the full MIME messages in the external message store.
 
 MailerQ waits with loading the message from message store until the SMTP connection 
-has been set up, so that no time and resources are wasted on fetching information 
-that is not needed.
+has been set up, so no time and resources are wasted on fetching information 
+that is not needed. The mime data is only loaded when it is really needed.
 
-With an external message store, you can use the "key" property. This property
-holds the key under which the mime data is stored in your external storage
-system.
+With an external message store, you can use the "key" property instead of the "mime"
+property. This property holds the key under which the mime data is stored in your 
+external storage system.
 
 ````
 {
@@ -160,7 +156,9 @@ property and store the full mime in the JSON. This is often even the
 recommended way of doing things, because most mails get delivered at the very 
 first attempt, and storing-and-fetching the mail to and from external storage
 is then only a waste of time and resources. The message store is in such a setup only
-used for messages that were delayed and that are published back to RabbitMQ.
+used for messages that were delayed and that are published back to RabbitMQ. MailerQ
+takes care of removing the mime from the JSON, and stores it in the message
+store when delayed messages are published back to RabbitMQ.
 
 
 ## Keep messages after delivery
@@ -170,8 +168,9 @@ delivered, or the delivery failed - MailerQ publishes the delivery result to
 the results queue, where you can pick it up for further processing.
 
 By default, MailerQ throws away the mime data to make room in the JSON object and 
-in the message store. If you do not want the message data to be removed, you can 
-tell so by adding the `keepmime` option:
+in the message store. The result queues only hold the meta data for each
+sent message, but not the full mime data. If you do not want the message data 
+to be removed, you can tell so by adding the "keepmime" option:
 
 ````
 {
@@ -181,6 +180,36 @@ tell so by adding the `keepmime` option:
     "keepmime": true
 }
 ````
+
+
+## Personalization data
+
+It is possible to include personalization data in the JSON. If you do this,
+MailerQ will treat the subject, html and text version of your email as
+templates, and replace variables in it with the values loaded from the JSON.
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "From: ...\r\nTo: ...\r\nSubject: Message from {$firstname}\r\n...",
+    "data": {
+        "firstname": "Emiel",
+        "lastname": "Bruijntjes",
+        "email": "emiel.bruijntjes@copernica.com"
+    }
+}
+````
+
+Personalization variables can currently only be used for the subject and
+the text and HTML versions of the mail. However, if you assign a nested object 
+to the "mime" property using the 
+[responsive email specification](https://www.responsiveemail.com/support/json/introduction), 
+you can use personalization data in almost all fields.
+
+For more information about using personalization, check our 
+[personalization documentation](personalization).
+
 
 ## Max delivery time and max attempts
 
@@ -253,7 +282,7 @@ support stylesheets that are set in the header. Some email clients (especially
 web based clients) strip out the CSS code from the HTML header. This often messes 
 up the layout and look of your messages. To overcome this, it is better not to set 
 CSS settings in the header in the first place, but use `style="..."` attributes 
-in the HTML code instead.
+in the HTML code.
 
 MailerQ can do this automatically. If you set "inlinecss" propety to true, 
 MailerQ parses the HTML email, and converts the CSS code from the HTML header 

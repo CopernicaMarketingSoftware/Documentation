@@ -1,10 +1,8 @@
 # Spool directory
 
 MailerQ can monitor a directory on the file system for new
-files. This directory is called the spool directory and can be configured
-in the config file. When MailerQ has been configured to use such a spool
-directory, you can simply inject email into MailerQ by copy'ing files to
-this directory.
+files: the spool directory. You can simply inject email into MailerQ 
+by copy'ing files to this directory.
 
 The files that you drop in the spool directory must be correctly formatted MIME 
 messages. Invalid files will not be picked up. MailerQ opens the file, 
@@ -25,7 +23,7 @@ immediately delivered to the recipient(s).
 
 ## Config file options
 
-In the config file there are three options relevant for the spool directory:
+In the config file there are four options relevant for the spool directory:
 
 ```
 spool-directory:        /path/to/directory

@@ -10,7 +10,6 @@ many ways to do this:
 * [send JSON-encoded email directly to RabbitMQ](publish-to-rabbitmq)
 
 After sending the email, MailerQ publishes a JSON-encoded copy to the 
-[result queue](result-queue "MailerQ result queue"), and,
-depending on whether the delivery was successful, into the success or failure 
-queues. Your own application or script can read these results up for 
-further processing. 
+result queue, and, depending on whether the delivery was successful, into 
+the success or failure  queues. Your own application or script can read 
+these results up for further processing. 
