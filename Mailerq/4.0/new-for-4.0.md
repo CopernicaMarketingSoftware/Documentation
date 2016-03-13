@@ -127,4 +127,4 @@ directory to RabbitMQ) of course all still work.
 - smtp-proxy setting
 - geen helo file
 - personalization
-
+- incoming json update
