@@ -5,7 +5,7 @@ object and published to the inbox queue. This happens to messages that
 are received on the SMTP port, but also to messages that come in via
 the spool directory or that were injected via the command line interface.
 
-The JSON messages that are created by MailerQ exactly follow the 
+The JSON messages that are created by MailerQ follow exactly the 
 [JSON specification for outgoing messages](json-messages). It is therefore
 possible to let MailerQ publish these incoming messages directly to
 the outbox queue to deliver them to the final recipient.
@@ -40,7 +40,7 @@ spool directory or that it came from the command line interface.
         <td>spool info (only used when received from spool dir)</td>
     </tr>
     <tr>
-        <td>command</td>
+        <td>cli</td>
         <td>command info (only used when received from cli)</td>
     </tr>
 </table>

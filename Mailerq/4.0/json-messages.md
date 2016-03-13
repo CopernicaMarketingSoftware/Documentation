@@ -123,8 +123,50 @@ valid mime string by MailerQ:
 
 The number of properties that are supported inside the nested "mime" property
 is pretty huge. It uses the very same algorithm as the [responsiveemail.com](https://www.responsiveemail.com) web
-service to convert JSON objects into valid MIME data. For more information 
-about the supported properties, check the [responsive email documentation](https://www.responsiveemail.com/support/json/introduction).
+service to convert JSON objects into valid MIME data. To give you
+an idea of a possible valid JSON input, consider this:
+
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": {
+        "from": "my-sender-address@my-domain.com",
+        "to": "info@example.org",
+        "subject": "Example subject",
+        "textVersion": "This is the example message text",
+        "headers": {
+            "x-my-special-header": "special-value"
+        },
+        "content": {
+            "blocks": [ {
+                "type": "image",
+                "src": "http://www.example.com/logo.png"
+            }, {
+                "type": "feed",
+                "source": "http://rss.cnn.com/rss/edition.rss"
+            }, {
+                "type": "button",
+                "label": "Click the button!",
+                "link": {
+                    "url": "http://www.mailerq.com"
+                }
+            } ]
+        },
+        "attachments": [ {
+            "url": "http://www.example.com/a-special-file.pdf",
+            "name": "brochure.pdf"
+        } ]
+    }
+}
+````
+
+The number of options is huge. You can construct responsive emails using
+images, HTML text, RSS feeds, social media, et cetera. MailerQ downloads
+all the resources and converts the JSON code into a valid MIME strings.
+
+For more information about the supported JSON properties nested under the 
+"mime" property, check the [responsive email documentation](https://www.responsiveemail.com/support/json/introduction).
 
 
 ## Storing messages in a message store
