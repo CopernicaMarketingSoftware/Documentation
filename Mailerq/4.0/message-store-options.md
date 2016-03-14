@@ -54,6 +54,28 @@ installed if you want to use the Couchbase storage engine, and the Mongo C Drive
 is needed to connect to MongoDB.
 
 
+## MongoDB specifics
+
+The address string to connect to MongoDB is directly passed to the MongoDB
+driver. All the options that are supported by this driver can be used in
+the address string.
+
+[Click here for the MongoDB documentation](https://docs.mongodb.org/manual/reference/connection-string/)
+
+We discovered that MongoDB sometimes has strange hickups and that it does
+not always succeeds in fetching data, even when it is available. We've added
+a quick and dirty fix for this by simply repeating the fetch operation
+a couple of times in case of a failure. To enable this feature, you can
+add a special option to the address:
+
+````
+storage-address:        mongodb://hostname/database/collection?readAttempts=3
+````
+
+The default number of attempts is 1. If you want to repeat failed lookups
+a couple of times, you can pass in a higher value.
+
+
 ## Storage policy
 
 The "storage-policy" config file setting tells MailerQ what
