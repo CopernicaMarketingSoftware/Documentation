@@ -57,15 +57,14 @@ this behavior and enforce that MailerQ only uses TCP, or only uses UDP.
 
 When MailerQ sets up an SMTP connection, it first sends out the `HELO` message 
 as is required by the SMTP protocol. (In fact, it first tries the more modern 
-`EHLO` command defined by the ESMTP protocol). With this `HELO` or `EHLO` message 
-a hostname is sent to the remote server that identifies the sender. Normally, 
-MailerQ automatically detects which hostname to use (it simply does a reverse 
-DNS query).
+`EHLO` command defined by the ESMTP protocol). With this `HELO` or `EHLO` message,
+a hostname is sent to the remote server that identifies the sender.
 
-If you want to override this with different values you can add a helo map file 
-in which you provide your own HELO hostnames.
+Normally, MailerQ automatically detects which hostname to use (by doing a reverse 
+DNS query).  If you want to override this with different values you can add a 
+helo map file in which you provide your own `HELO` hostnames.
 
-Location of the file containing HELO map.
+Location of the file containing `HELO` map.
 ```
 dns-helofile: <filename>    (empty by default)
 ```
