@@ -12,17 +12,11 @@ the outbox queue to deliver them to the final recipient.
 
 ![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
  
-However, besides the regular JSON properties that are needed for the 
-delivery, MailerQ adds some extra properties to the JSON that are not
-at all needed to deliver the mail, but that allow you to find out
-when the mail was received, and whether it was injected using SMTP, the 
-spool directory or that it came from the command line interface.
+Besides the regular necessary JSON properties, MailerQ adds some extra properties 
+to the JSON. These aren't needed for delivery, but rather allow you to gather
+additional information. The following properties are available.
 
 <table>
-    <tr>
-        <td>message-id</td>
-        <td>unique message id generated for the mail</td>
-    </tr>
     <tr>
         <td>hostname</td>
         <td>server name that received the message</td>
@@ -30,6 +24,10 @@ spool directory or that it came from the command line interface.
     <tr>
         <td>received</td>
         <td>time when the mail was received</td>
+    </tr>
+    <tr>
+        <td>message-id</td>
+        <td>unique message id generated for the mail (only used when received via smtp)</td>
     </tr>
     <tr>
         <td>connection</td>
@@ -61,7 +59,7 @@ email.
 ````
 
 Every recipient gets a unique identifier. This unique identifier is stored
-in the "message-id" property.
+in the `message-id` property.
 
 ````
 {
@@ -74,9 +72,9 @@ in the "message-id" property.
 }
 ````
 
-The "received" and "hostname" properties hold the time when the email was 
-received and the name of the server that received the message. These two
-properties are used for all injection mechanisms: smtp, cli and spool.
+The `received` property holds the time when the email was received, while 
+`hostname` holds the name of the server that received the message. These two
+properties are included for all injection mechanisms: SMTP, CLI, and spool.
 
 
 ## TCP connection data
@@ -97,13 +95,17 @@ holds properties about the TCP connection.
         "local-port": 25,
         "remote-ip": "5.6.7.8",
         "remote-port": 25324,
-        "secure": true
+        "secure": true,
+        "user": mailerq
     }
 }
 ````
 
 If MailerQ runs behind a HAProxy server, the connection data is extracted
 from the PROXY header that is sent by the HAProxy server. 
+
+If the TCP connection is secure, and the user is authenticated, the `user`
+property will contain this username.
 
 ## Spool directory data
 
