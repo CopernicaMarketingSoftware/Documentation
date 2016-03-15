@@ -12,7 +12,7 @@ encoded.
 
 MailerQ uses four different queues to which results are published. Based
 on the type of result (success, failure or retry) a message is published
-to one of these queues:
+to one or more of these queues:
 
 - The results queue
 - The success queue
@@ -96,8 +96,8 @@ like this:
 }
 ```
 
-The "results" property holds an array of all the delivery results that
-were encountered. It can have the following properties:
+The "results" property holds an array of JSON objects. Each object contains the 
+result of one delivery attempt. Every result object can have the following properties:
 
 <table>
     <tr>
@@ -139,8 +139,8 @@ were encountered. It can have the following properties:
 </table>
 
 Note that some properties are optional. For example, the properties "to", 
-"from" and "messages" are only used if an actual TCP connection was set up. 
-These properties are of course not present if the mail fails because of a DNS
+"from" and "messages" are only used if an actual TCP connection was set up 
+and are not present if the mail fails because of a DNS
 lookup failure. The "code", "status" and "description" properties are only
 used when a message from a remote server was received.
 
@@ -162,11 +162,11 @@ goes through the following states:
     </tr>
     <tr>
         <td>responsive</td>
-        <td>the json message is converted into responsive mime using the [responsiveemail.com algorithm](https://www.responsiveemail.com)</td>
+        <td>the json message is converted into a responsive email</td>
     </tr>
     <tr>
         <td>dns</td>
-        <td>the domain to which the mail should be sent is looked up in DNS</td>
+        <td>the hostname to which the mail should be sent is looked up in DNS</td>
     </tr>
     <tr>
         <td>bind</td>
@@ -234,14 +234,15 @@ goes through the following states:
     </tr>
 </table>
 
-During all of the above states errors could occur, and the type of error is set 
-in the result JSON. A successful delivery has gone through all the states, and is 
-published with the property "state" set to "message" and "result" set to "accepted".
-For all other errors
+During all of the above states errors might occur. If this happens, the state
+of the delivery and the type of error is set added to the result JSON. A 
+successful delivery has gone through all the states, and is published 
+to the result queue with the property "state" set to "message" and "result" 
+set to "accepted".
 
 ## Result types
 
-During all the above states an error can occur. The type of error is logged
+During all the above states errors can occur. The type of error is logged
 in the "result" property. It always has one of the following values:
 
 <table>
@@ -276,11 +277,11 @@ If the answer is not received in time, the "timeout" result is used. It is also
 possible that the receiver *did* sent back an answer, but that the answer could not
 be recognized as a valid SMTP response message. In such a case we use the "invalid" 
 result type. When the TCP connection was lost while waiting for an answer the "lost" 
-type is result, and the "error" type is used in case the receiver server just
-rejected our instruction.
+type is result, and the "error" type is used in case the receiver server sent
+back a valid SMTP answer, but the answer was that the message was rejected.
 
-If a valid answer was received, and the instruction from MailerQ was accepted,
-the delivery moves to the next state, and no result is logged in the JSON object.
+If MailerQ's instruction was accepted, the delivery moves to the next state, and 
+no result is logged in the JSON object.
 
 
 ## Special combinations
@@ -290,43 +291,48 @@ combinations can also occur:
 
 <table>
     <tr>
-        <td>state: amqp</td>
-        <td>result: invalid</td>
+        <td><strong>state</strong></td>
+        <td><strong>result</strong></td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>amqp</td>
+        <td>invalid</td>
         <td>incoming message was not a valid JSON formatted message</td>
     </tr>
     <tr>
-        <td>state: amqp</td>
-        <td>result: timeout</td>
+        <td>amqp</td>
+        <td>timeout</td>
         <td>incoming message was expired (maxdelivertime or maxattempts exceeded)</td>
     </tr>
     <tr>
-        <td>state: storage</td>
-        <td>result: lost</td>
+        <td>storage</td>
+        <td>lost</td>
         <td>smtp connection was lost while loading data</td>
     </tr>
     <tr>
-        <td>state: storage</td>
-        <td>result: invalid</td>
+        <td>storage</td>
+        <td>invalid</td>
         <td>smtp response was received while loading data</td>
     </tr>
     <tr>
-        <td>state: storage</td>
-        <td>result: error</td>
+        <td>storage</td>
+        <td>error</td>
         <td>no data was found</td>
     </tr>
     <tr>
-        <td>state: responsive</td>
-        <td>result: error</td>
+        <td>responsive</td>
+        <td>error</td>
         <td>responsiveemail.com algorithm could not turn json into mime</td>
     </tr>
     <tr>
-        <td>state: dns</td>
-        <td>result: error</td>
+        <td>dns</td>
+        <td>error</td>
         <td>dns lookup failure (domain does not exist / no ip addresses available for accepting mail)</td>
     </tr>
     <tr>
-        <td>state: bind</td>
-        <td>result: error</td>
+        <td>bind</td>
+        <td>error</td>
         <td>no local ip addresses available for sending mail</td>
     </tr>
 </table>
