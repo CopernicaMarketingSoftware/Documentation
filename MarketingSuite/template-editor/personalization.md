@@ -75,7 +75,7 @@ examples.
 |---------------|--------------------------------------------------------------------------------------------------|
 | {$foo}        | Displaying a simple variable (non array/object).                                                 |
 | {$foo[4]} *   | Display the 5th element of a zero-indexed array.                                                 |
-| {$foo.bar} *  | Display the "bar" key value of an array. You'll most likely use this to access profile data.     |
+| {$foo.bar}    | Display the "bar" key value of an array. You'll most likely use this to access profile data.     |
 
 Many other combinations are allowed
 
