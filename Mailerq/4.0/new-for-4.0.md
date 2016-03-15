@@ -55,6 +55,22 @@ no longer supported because the data from multiple tables have been merged into
 a single table.
 
 
+## Result objects
+
+Just like MailerQ 3.0, MailerQ 4.0 also publishes the delivery results to
+success, failure and result queues. However, the format of the message has
+changed significantly. Where a single "state" property was used in 3.0, we now use
+a "state" and "result" property to set both the state in the SMTP protocol
+where the error occured, and the type of result in that state.
+
+This gives you a better insight in the reason why a delivery failed, but
+it also means that you will have to update your scripts to handle these
+new type of errors.
+
+For a full explanation of the new error format, see our
+[documentation about the result queues](json-results).
+
+
 ## RabbitMQ connection
 
 The RabbitMQ connection in the config file now uses a single `amqp-address`
@@ -111,6 +127,18 @@ These settings can now be set in the system wide `/etc/resolv.conf` setting.
 MailerQ 3.0 used a helo-file in which you could list all HELO/EHLO names
 for the local IP addresses. This file is no longer used, the EHLO/EHLO names
 can now be managed via the management console.
+
+
+## Log files
+
+The format of the log files have been changed. With every new release we
+added more columns to the log file, and it became more and more difficult
+to maintain compatible files (MailerQ also reads its own log files to show
+them via the management console, and therefor does not only write to logs,
+but also has recognize them). 
+
+We've decided to introduce a whole new log file format for MailerQ 4.0 that
+is easier to read, both for humans as well as for management console.
 
 
 ## Spool directories
