@@ -2,10 +2,8 @@
 
 With the **Yothalot\Job** class you can create, tune and control
 jobs. A job holds the [connection](copernica-docs:Yothalot/php-connection "Connection"),
-the [mapreduce](copernica-docs:Yothalot/php-mapreduce) or
-[race](copernica-docs:Yothalot/php-race) algorithm, the input data and
-several performance settings. For an example of creating a complete job you can see our
-[hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
+the algorithm, the input data and several performance settings. For an example of
+creating a complete job you can see our [hello world!](copernica-docs:Yothalot/helloworld "Hello world!") example.
 
 The most important member functions of Yothalot\Job are the
 ones with which you add input data to the job, and the method to start the
@@ -46,8 +44,9 @@ class Yothalot\Job
 The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection)
 and an instance of your own object in which your algorithm is implemented.
 The algorithm sbould either be an instance of [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
-for map/reduce jobs, or an instance of [Yothalot\Race](copernica-docs:Yothalot/php-race)
-for race jobs. Creating a job looks like:
+or [Yothalot\MapReduce2](copernica-docs:Yothalot/php-mapreduce2) for map/reduce jobs, or an instance of
+[Yothalot\Race](copernica-docs:Yothalot/php-race) for race jobs. Or an instance of
+[Yothalot\Task](copernica-docs:Yothalot/php-task) for a normal job. Creating a job looks like:
 
 ```php
 // create a connection
@@ -191,7 +190,7 @@ is already detached.
 ## Getting information from your job
 
 Besides that the `wait()` method blocks your script while it waits for the
-job to complete, the method also return a [Yothalot\Results](copernica-docs:Yothalot/php-result "Result")
+job to complete, the method also return a [Yothalot\Result](copernica-docs:Yothalot/php-result "Result")
 object with all kind of information about the performance and behavior of
 the job.
 

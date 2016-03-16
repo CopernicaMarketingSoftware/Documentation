@@ -55,7 +55,7 @@ echo($output->name());
 ```
 
 ##Member size()
-Yothalot::Output::size() returns the size (in bytes) of the output file. You
+Yothalot\Output::size() returns the size (in bytes) of the output file. You
 may use it e.g. to determine if the file has become to large, so
 you can close it and create a new output file. However, note that
 the Yothalot formated files are splittable.
@@ -67,7 +67,7 @@ echo($output->size());
 ```
 
 ##Member flush()
-Yothalot::Output::flush() flushes the object to the file. In general
+Yothalot\Output::flush() flushes the object to the file. In general
 you do not need this, only if your code can crash you may use it to be
 sure that your data is stored. Although it is better to fix the code.
 ```php

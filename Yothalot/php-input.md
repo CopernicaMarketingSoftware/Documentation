@@ -64,7 +64,7 @@ the file works as follows:
 ```php
 $input = new Yothalot\input("/path/to/file.log");
 foreach ($input as $record){
-    echo("record id": ".$record->identifier()."\n");
+    echo("record id: ".$record->identifier()."\n");
 }
 ```
 

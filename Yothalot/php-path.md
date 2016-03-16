@@ -5,7 +5,7 @@ and absolute paths on the Yothalot cluster (see
 [Files and paths](copernica-docs:Yothalot/files "Files and paths") for some background).
 
 Its member functions are:
-- __construct() (constructo)
+- __construct() (constructor)
 - absolute() (absolute path)
 - relative() (relative path)
 
