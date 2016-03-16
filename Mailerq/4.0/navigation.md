@@ -12,6 +12,7 @@
     * [Logging](logging "Logging")
     * [Smarthost & debugging](smarthost "Smarthost & debugging")
     * [Delivery Status Notifications](sending-bounces "Delivery Status Notifications")
+    * [Responsive Email integration](responsiveemail "ResponsiveEmail integration")
     * [Other options](other-configuration "Other configuration options")
 * [Injecting email](inject-email "Send email with MailerQ")
     * [Using the spool directory](spool-directory "Using the spool directory")
