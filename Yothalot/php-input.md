@@ -14,6 +14,7 @@ class Yothalot\Input
     public function name();
     public function size();
     public function valid();
+    public function next();
 }
 ```
 Moreover, the class allows you to iterate over the records stored in the input file.
@@ -55,19 +56,29 @@ a boolean.
 /**
  *  Is it a valid file?
  */
-$valid = $input->file();
+$valid = $input->valid();
 ```
 
+## Method next()
+With method next() you access the [records](copernica-docs:Yothalot/record)
+in the input file. The first time you call method(), it will give you the
+first record. Each next call gives you the next record. It gives you null
+if there is no record available.
+```php
+/**
+ *  Get a record from a file
+ */
+$record = $input->next();
+```
 
-Iterating over the [records](copernica-docs:Yothalot/record) stored in
-the file works as follows:
+Besides using next(), you can iterate over the [records](copernica-docs:Yothalot/record)
+stored in the file works using foreach. 
 ```php
 $input = new Yothalot\input("/path/to/file.log");
 foreach ($input as $record){
-    echo("record id": ".$record->identifier()."\n");
+    echo("record id: ".$record->identifier()."\n");
 }
 ```
 
 The documentation on [records](copernica-docs:Yothalot/record) gives
 more information on the methods that can be applied to a record.
-

@@ -8,7 +8,7 @@ is the slightly different signature of the map method. The complete interface of
 MapReduce2 is shown below.
 
 ```php
-interface Yothalot\MapReduce
+interface Yothalot\MapReduce2
 {
     public function includes();
     public function map($key, $value, Yothalot\Reducer $reducer);
