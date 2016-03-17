@@ -8,16 +8,21 @@ If you write your own class, you have to implement this interface, and you are
 thus also required to implement all these methods. The interface looks as
 follows:
 
-
 ```php
 interface Yothalot\MapReduce
 {
     public function includes();
-    public function map($value, Yothalot\Reducer $reducer);
+    public function map($key, $value, Yothalot\Reducer $reducer);
     public function reduce($key, Yothalot\Values $values, Yothalot\Writer $writer);
     public function write($key, $value);
 }
 ```
+
+As you can see the map method accepts a key and a value now instead of just a value.
+Because of this you'll have to add the data to the jobs in a slightly different way.
+Instead of calling the [Yothalot\Job](copernica-docs:Yothalot/php-job "Job") add
+method with only a value you should call it with both a key and a value. To this
+the same rules apply, only scalar values.
 
 When you write your own mapreduce classes, keep in mind that the Yothalot framework
 distributes a job over multiple servers, and runs it in parallel. It is
@@ -25,7 +30,6 @@ therefore possible that your object gets serialized and is moved to a different
 server, and that multiple calls to map(), reduce() and write() happen at the
 same time, which could lead to race conditions if they all try to access the
 same resource.
-
 
 ## Serializing and unserializing
 
@@ -48,7 +52,7 @@ class MyMapReduce implements Yothalot\MapReduce
     {
         return array(__FILE__);
     }
-    
+
     // @todo implement the other methods
 }
 ```
@@ -77,7 +81,7 @@ class MyMapReduce implements Yothalot\MapReduce, Serializable
     {
         // @todo add your implementation
     }
-    
+
     /**
      *  Counter part of the resize() method: turn a string back into an object
      *  @param  string
@@ -86,20 +90,20 @@ class MyMapReduce implements Yothalot\MapReduce, Serializable
     {
         // @todo add your implementation
     }
-    
-    // @todo implement other methods from the 
+
+    // @todo implement other methods from the
 }
 ```
 
 ## Mapping
 The first step in a mapreduce algorithm is the map step in which you map data
 to key value pairs. This step should be implemented in the `map()` method of your class.
-The method receives two parameters. The first parameter contains the input data
+The method receives three parameters. The first 2 parameters contain the input data
 that you have to map. The content of this parameter is what you pass to the
 `Yothalot\Job` `add()` method, which is discussed in [Yothalot\Job](copernica-docs:Yothalot/php-job "Yothalot\Job")
-The second argument provides `map()` the information what to do with the mapped results.
+The third argument provides `map()` the information what to do with the mapped results.
 This is a [Yothalot\Reducer](copernica-docs:Yothalot/php-reducer "Yothalot\Reducer") object, which is a very simple
-object with only one method: `emit()`. With this `emit()` method you can 
+object with only one method: `emit()`. With this `emit()` method you can
 emit key/value pairs to the reducer. The `emit()` method takes two parameters: a
 key and a value. You can only use scalars or arrays of scalars for keys
 and values. It is not possible to emit objects or deeply nested data
@@ -110,12 +114,13 @@ class MyMapReduce implements Yothalot\MapReduce
 {
     /**
      *  Implementation for a mapper function
+     *  @param  mixed       Key of the item that is being mapped
      *  @param  mixed       Value that is being mapped
      *  @param  Reducer     Reducer object to which we may emit key/value pairs
      */
-    public function map($value, Yothalot\Reducer $reducer)
+    public function map($key, $value, Yothalot\Reducer $reducer)
     {
-        // imagine that the to-be-mapped data is a string, and we want to 
+        // imagine that the to-be-mapped data is a string, and we want to
         // emit key/value pairs for all the words found in the string
         foreach (explode(" ", $value) as $word)
         {
@@ -123,7 +128,7 @@ class MyMapReduce implements Yothalot\MapReduce
             if (strlen($word) > 0) $reducer->emit($word, 1);
         }
     }
-    
+
     // @todo implement other methods
 }
 ```
@@ -154,21 +159,21 @@ class MyMapReduce implements Yothalot\MapReduce
     {
         // total of all values
         $total = 0;
-        
+
         // iterate over the values
         foreach ($values as $value) $total += $value;
-        
+
         // emit the result to the writer
         $writer->emit($total);
     }
-    
+
     // @todo implement other methods
 }
 ```
 
-Keep in mind that it is very well possible that the reduce() method gets called 
-more than once for the same key. This for example happens when so many keys were 
-found that multiple chained reducers are started. The value that you emit might 
+Keep in mind that it is very well possible that the reduce() method gets called
+more than once for the same key. This for example happens when so many keys were
+found that multiple chained reducers are started. The value that you emit might
 therefore be an intermediate value that is going to be reduced for a second or
 third time. It is also possible that the reducer is never called for a key. This
 happens if the key never has to be reduced since it only has one single value.

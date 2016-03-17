@@ -44,8 +44,7 @@ class Yothalot\Job
 The constructor takes two parameters, a [Yothalot\Connection](copernica-docs:Yothalot/php-connection)
 and an instance of your own object in which your algorithm is implemented.
 The algorithm sbould either be an instance of [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
-or [Yothalot\MapReduce2](copernica-docs:Yothalot/php-mapreduce2) for map/reduce jobs, or an instance of
-[Yothalot\Race](copernica-docs:Yothalot/php-race) for race jobs. Or an instance of
+for map/reduce jobs, or an instance of [Yothalot\Race](copernica-docs:Yothalot/php-race) for race jobs. Or an instance of
 [Yothalot\Task](copernica-docs:Yothalot/php-task) for a normal job. Creating a job looks like:
 
 ```php

@@ -40,7 +40,6 @@ Besides that it is also possible to run a single task on the Yothalot cluster. Y
 do this by implementing the [Yothalot\Task](copernica-docs:Yothalot/php-task "Task") interface.
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
-* [Interface Yothalot\MapReduce2](copernica-docs:Yothalot/php-mapreduce2 "MapReduce2")
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
 * [Interface Yothalot\Task](copernica-docs:Yothalot/php-task "Task")
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
@@ -73,7 +72,6 @@ used internally by the Yothalot framework for intermediate result files.
 ## Overview of all interfaces and classes
 
 * [Interface Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce "MapReduce")
-* [Interface Yothalot\MapReduce2](copernica-docs:Yothalot/php-mapreduce2 "MapReduce2")
 * [Interface Yothalot\Race](copernica-docs:Yothalot/php-race "Race")
 * [Interface Yothalot\Task](copernica-docs:Yothalot/php-task "Task")
 * [Class Yothalot\Connection](copernica-docs:Yothalot/php-connection "Connection")
