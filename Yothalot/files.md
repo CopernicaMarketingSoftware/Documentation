@@ -10,8 +10,8 @@ that in your environment you have 10 servers that all have a lot of disk
 space. These 10 servers can be grouped together in a GlusterFS cluster to 
 bundle their disks into one big distributed file system. Besides
 these 10 storage servers however, you also have 20 servers that do not have 
-disk space to share, but that do have to write log files. You can mount 
-these 20 servers to the GlusterFS file system too, so that all of your 30
+disk space to share, but that do have to write data that you want to process later.
+You can mount these 20 servers to the GlusterFS file system too, so that all of your 30
 servers have access to the GlusterFS system: 10 of them are actually sharing
 disk space, while the other 20 do not share disk space, but have access via
 a network mount.

@@ -114,9 +114,9 @@ you can also limit the number of mappers or writers that are started. For exampl
 if your writer make a connection to a database, you probably don't want a full
 Yothalot cluster of 1000 CPU's all connect to the same database at the same time.
 In such a setup you can set the *maxwriter* setting to four, ensuring that
-there will at most be four writers running at the same time, and your database
-does not get overloaded. The *maxmappers* can be used in a similar fashion to
-limit the number of mappers that may run.
+there will at most be four writers running at the same time during the writer phase,
+and your database does not get overloaded. The *maxmappers* can be used in a similar
+fashion to limit the number of mappers that may run.
 
 A special word of warning about the *maxreducer* setting. During all phases of 
 the mapreduce algorithm (the mapping, the reducing and the writing) values are 
