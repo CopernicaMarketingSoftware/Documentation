@@ -27,12 +27,12 @@ be opened.
 /**
  * Create or open an output file
  */
-$output = new Yothalot\Output("/path/to/file.log");
+$output = new Yothalot\Output("/path/to/file.yot");
 ```
-where `"/path/to/file.log"` is the path to the file you want to write to.
+where `"/path/to/file.yot"` is the path to the file you want to write to.
 
 ## Member add()
-add() is a member that adds a record to the output file. A record exists
+add() is a member function that adds a record to the output file. A record exists
 of an identifier and fields. The identifier has to be numeric. The field
 can be an array of basic types.
 ```php

@@ -6,7 +6,7 @@ In general you do not need this class. However, it is useful if you want
 to read files in this format, which has the cool property of being compressed
 but still splittable. 
 
-There are only two methods available:
+There are only a few methods available:
 ```php
 class Yothalot\Input
 {
@@ -25,9 +25,9 @@ The constructor takes one parameter, the name of the input file.
 /**
  * Create an input object to read a file that has the Yothalot format
  */
-$input = new Yothalot\Input("/path/to/inputFile.log");
+$input = new Yothalot\Input("/path/to/inputFile.yot");
 ```
-Where `"/path/to/inputFile.log"` is the input file you want to read from.
+Where `"/path/to/inputFile.yot"` is the input file you want to read from.
 
 ## Method name()
 The member name() returns the full name of the input file.
@@ -39,7 +39,7 @@ $name = $input->name();
 ```
 
 ## Method size()
-method size() returns the size (in bytes) of the input file.
+Method size() returns the size (in bytes) of the input file.
 This information may be useful to decide if the file should be split
 into smaller blocks.
 ```php

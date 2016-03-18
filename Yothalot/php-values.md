@@ -7,7 +7,7 @@ all your values by using foreach.
 ## Using the Yothalot\Values class
 
 The Yothalot\Values class is only used as an argument in the `reduce()` member
-of the Yothalot\MapReduce interface, and therefore you cannot cunstruct it
+of the Yothalot\MapReduce interface, and therefore you cannot construct it
 yourself. Using the Yothalot\Values class is easy, you just use foreach.
 
 ```php
