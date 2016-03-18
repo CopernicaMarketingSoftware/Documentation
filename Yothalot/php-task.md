@@ -90,9 +90,9 @@ class MyTask implements Yothalot\Task, Serializable
 ## Processing
 
 The final method that should be implemented is the `process()` method. In this
-method you implement your data processing algorithm. The method receives
-one parameter, the data, and should return NULL if the algorithm was not completed
-(the job did not win the race), or a non NULL value if the algorithm is won.
+method you implement your actual task. This method receives no input. You can
+however return values from this method to receive them later on. This output
+has to be serializable for this in order to work.
 
 ```php
 <?php
@@ -100,10 +100,9 @@ class MyTask implements Yothalot\Task
 {
     /**
      *  Implementation for a process function
-     *  @param  mixed       Value that is being mapped
      *  @return mixed       Your return value
      */
-    public function process($value)
+    public function process()
     {
         // long processing job that runs on the yothalot cluster
 
