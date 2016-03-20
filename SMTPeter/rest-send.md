@@ -43,16 +43,17 @@ the mail will be delivered.
 }
 ```
 
-With these ids you can obtain information using other methods of the
+The returned ids can be used to obtain information using other methods of the
 REST API.
 
 
 ## Minimal properties
 
 The following example shows the minimal properties that you should send
-to the REST API for an email delivery. You need to send at least
-the envelope and recipient address for the SMTP protocol, and the full 
-MIME data to be sent. 
+to the REST API to deliver an email. You need to send at least
+the envelope and recipient address that are going to be used in the
+"MAIL FROM" and "RCPT TO" parts of the SMTP protocol, and the full 
+MIME data. 
 
 ````json
 {
@@ -64,19 +65,19 @@ MIME data to be sent.
 
 To ease readability, we've removed the majority of the MIME code from
 the example above. If you do not want to create the entire MIME message
-yourself, you can leave out the "mime" property, and 
-[add special MIME properties](smtp-mime) so that SMTPeter can construct 
+yourself, you can leave out the property "mime", and 
+[use special MIME properties](smtp-mime) so that SMTPeter can construct 
 the mime for you.
 
 Strictly speaking, the envelope address is _optional_. If you instruct 
-SMTPeter to process bounces, no envelope address is necessary because no
+SMTPeter to process bounces for you, no envelope address is needed because no
 [Delivery Status Notifications (dsn)](mime-dsn) messages have to be
-sent back to the envelope address.
+sent back to you.
 
 
 ## Multiple recipients
 
-To send a single message to multiple recipient, remove the "recipient"
+To send a single message to multiple recipients, remove the "recipient"
 propery, and replace it with a "recipients" property holding an array
 of email addresses:
 
@@ -88,10 +89,9 @@ of email addresses:
 }
 ````
 
-SMTPeter does its best to parse the supplied email addresses as good
-as it can. But only pure email addresses are supported for the envelope
-address and the recipients. It is not permitted to use display names or 
-to put the addresses inside <brackets>.
+Only pure email addresses are supported for the envelope
+address and for the recipients. It is not permitted to use display names or 
+to put the addresses inside angle brackets.
 
 
 
@@ -268,7 +268,8 @@ property is the recipient of the message. The JSON looks like:
     ...
 }
 ```
-With these ids you can obtain information using the GET methods [text](copernica-docs:SMTPeter/rest/text "REST command text")
+
+The returned ids can be used obtain information using the GET methods [text](copernica-docs:SMTPeter/rest/text "REST command text")
 and [html](copernica-docs:SMTPeter/rest/html "REST command html")
 
 If your post resulted in an error SMTPeter will also return a JSON encoded

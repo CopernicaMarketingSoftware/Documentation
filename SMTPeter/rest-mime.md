@@ -47,14 +47,15 @@ will be converted into a mime object.
 The "from", "to" and "cc" fields decide which email addresses are going
 to appear in the MIME object. The "from" variable must be a **single** email 
 address, but there is no limit for the number of addresses that you use
-for the "to" and "cc" fields.
+for the "to" and the "cc" fields.
 
-The notation for the email addresses is much more flexible than for the
-"envelope" and "recipient" fields. You may include display names or 
-angle brackets, and for the "to" and "cc" fields you can use comma separated 
-lists. Note that the address set in the "from", "to" and "cc" fields
-just decide what addresses are included in the MIME data, and do not have
-to be identical to the "envelope" and "recipient" addresses (although it
+The notation for the email addresses in the "from", "to" and "cc" fields
+is much more flexible than for the "envelope" and "recipient" fields. 
+You can include display names or use angle brackets, and for the "to" and 
+"cc" fields you can also use comma separated lists. Note that the address 
+set in these "from", "to" and "cc" fields just decide what addresses are 
+included in the MIME data, and do not have to be identical to the 
+addresses used in the "envelope" and "recipient" fields (although it
 is good practice to send email to the addresses mentioned in "to").
 
 ````json
