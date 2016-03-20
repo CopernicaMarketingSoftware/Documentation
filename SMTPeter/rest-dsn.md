@@ -14,6 +14,11 @@ be sent.
 }
 ````
 
+By adding the envelope address, you instruct SMTPeter not to track bounces,
+and delivery the delivery status notification messages to your envelope
+address.
+
+
 ## Custom DSN properties
 
 With the "dsn" variable you can set when and what kind of delivery 
