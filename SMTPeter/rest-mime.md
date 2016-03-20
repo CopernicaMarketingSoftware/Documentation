@@ -1,98 +1,180 @@
 # REST API method: send
 
+To send email using the REST API you use the `send` method. This method
+can be called by using the following URL
+
 ```text
 https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
 ```
 
-To send email using the REST API you use the "send" method. The method
-is only accessible via HTTP POST, and the body should contain all data
-of the mail, plus the features.
+The method is only available as POST call, and your body data should
+contain one or more of the following variables:
 
-```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
-Host: www.smtpeter.com
-Content-Type: application/json
-Content-Length: 246
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
+* [attachments](copernica-docs:SMTPeter/rest/send#attachments)
+* [inlinecss](copernica-docs:SMTPeter/rest/send#inlinecss)
+* [dsn](copernica-docs:SMTPeter/rest/send#dsn)
+* [bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking)
+* [clicktracking](copernica-docs:SMTPeter/rest/send#clicktracking)
+* [openstracking](copernica-docs:SMTPeter/rest/send#openstracking)
+* [tags](copernica-docs:SMTPeter/rest/send#tags)
 
-{
-    "envelope":     "info@example.com",
-    "recipient":    "john@doe.com",
-    "subject":      "This is the subject",
-    "html":         "This is example content",
-    "from":         "info@example.com",
-    "to":           "john@doe.com"
-}
-```
+## Sending MIME data
 
-The above example call can be used to send an email to john@doe.com.
-We've used a JSON example, but it is also possible to submit the mail
-using normal url encoded HTTP POST data. In all subsequent examples on 
-this page, we will just show the JSON code and omit the headers.
+The "send" method can both be used to send fully formatted MIME messages,
+or to send many different fields so that SMTPeter can generate the MIME
+message for you. If you create the MIME message yourself, you need to
+provide the following two fields at least:
+
+* [recipient(s)](copernica-docs:SMTPeter/rest/send#recipient-or-recipients)
+* [mime](copernica-docs:SMTPeter/rest/send#mime)
+
+The "recipient"/ "recipients" should hold the email address(es) of the actual recipient, and
+"mime" the full MIME encoded message. The following additional fields may
+also be included:
+
+* [envelope](copernica-docs:SMTPeter/rest/send#envelope)
 
 
-## Return value
+## Sending non-MIME data
 
-After successfully posting your request SMTPeter sends back a result 
-JSON object holding a unique identifier for each recipient to which
-the mail will be delivered.
+If the "mime" field is not included in the call to the REST API, SMTPeter
+will generate an email based on the settings of the variables:
+
+* [subject](copernica-docs:SMTPeter/rest/send#subject)
+* [from](copernica-docs:SMTPeter/rest/send#from)
+* [to](copernica-docs:SMTPeter/rest/send#to)
+* [cc](copernica-docs:SMTPeter/rest/send#cc)
+* [text](copernica-docs:SMTPeter/rest/send#text)
+* [html](copernica-docs:SMTPeter/rest/send#html)
+
+
+## recipient or recipients
+
+This variable controls where the email is delivered and is mandatory in all
+send calls. The variable should be set to an email address and this address
+should be **pure**. Pure means that it should just contain the email
+address without the name of the recipient or angle brackets ('<' and '>')
+(i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
+
+If you want to send the same email to multiple email addresses you can do so by
+setting the "recipients" variable instead of the "recipient". The "recipients" variable should
+be an array of email addresses.
 
 ```json
 {
-    "id1" : "recipient1@example.com",
-    "id2" : "recipient2@example.com"
+    "recipients": [
+        "one@example.com",
+        "two@example.com, three@example.com",
+        "..."
+    ]
 }
 ```
 
-With these ids you can obtain information using other methods of the
-REST API.
+## envelope
+
+The "envelope" variable determines where delivery status notifications will
+be send to. This variable can contain only one email address and this address
+should be **pure**. Pure means that it should just contain the email
+address without the name of the recipient or angle brackets ('<' and '>')
+(i.e. it should state `richard@copernica.com` and not `"Richard" <richard@copernica.com>`).
+Note that you can specify in what cases you would like to receive a delivery
+status notification and what that notification should contain via the `dsn`
+variable. You can also let SMTPeter take care of it by setting variable
+[bouncetracking](copernica-docs:SMTPeter/rest/send#bouncetracking). If you use
+"bouncetracking" you do not have to specify an envelope.
 
 
-## Minimal properties
+## mime
 
-The following example shows the minimal properties that you should send
-to the REST API for an email delivery. You need to send at least
-the envelope and recipient address for the SMTP protocol, and the full 
-MIME data to be sent. 
+Via this variable you can add your full MIME encoded message as a string.
+You can also let SMTPeter generate the MIME message for you be setting,
+"subject", "from", "to", "cc", "text", and "html" separately.
 
-````json
+
+## subject
+
+With this variable you can set the subject of your email via a string if
+you do not provide a MIME message.
+
+
+## from
+
+The "from" variable has to contain a **single** email address, just like the
+variable "envelope". However, the notation here is more flexible than in
+"envelope". The "from" variable may contain a name in front of the address
+as well as angle brackets ('<' and '>'). Note that the address set in "from"
+is only used for creating the MIME message and does not affect the destination
+of delivery status notifications.
+
+## to
+
+The "to" variable can contain one ore more email addresses. These addresses may contain
+a name in front of the address as well as angle brackets ('<' and '>').
+You can set multiple email addresses by using an array, a comma separated list,
+or a combination of both.
+Example:
+
+```json
 {
-    "envelope":     "info@example.com",
-    "recipient":    "john@doe.com",
-    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
+  "to": [
+    "one@example.com",
+    "two@example.com",
+    " \"Number three\" <three@example.com>, info@example.com"
+  ]
 }
-````
+```
 
-To ease readability, we've removed the majority of the MIME code from
-the example above. If you do not want to create the entire MIME message
-yourself, you can leave out the "mime" property, and 
-[add special MIME properties](smtp-mime) so that SMTPeter can construct 
-the mime for you.
+Note that "to" does not affect the "recipient" variable. It is only used to
+create the MIME message.
 
-Strictly speaking, the envelope address is _optional_. If you instruct 
-SMTPeter to process bounces, no envelope address is necessary because no
-[Delivery Status Notifications (dsn)](mime-dsn) messages have to be
-sent back to the envelope address.
+## cc
+
+The "cc" variable behaves similar to the "to" variable. It can contain one
+or more email addresses with names in front and angle brackets. Multiple
+addresses can be set via an array, a comma separated list, or a combination.
+The "cc" variable does not affect the "recipient" variable
 
 
-## Multiple recipients
+## text
 
-To send a single message to multiple recipient, remove the "recipient"
-propery, and replace it with a "recipients" property holding an array
-of email addresses:
+With "text" you can set the text version of your email.
 
-````json
+
+## html
+
+With "html" you can set the HTML version of the email.
+
+
+## attachments
+
+With attachments you can attach files to your mailing. Attachments
+expects an array with JSON objects. There are two types of objects that are
+supported. For one you provide a link to the attachment that you want
+to send and for the other you provide the data in the JSON object itself.
+If you provide the data in the JSON, this data has to be base64 encoded.
+Moreover, you can optionally specify the type of data that you send.
+
+
+```json
 {
-    "envelope":     "info@example.com",
-    "recipients":   [ "john@doe.com", "someone@else.com" ],
-    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
+"attachments": [ {
+        "url": "https://www.example.com/attachment1.pdf"
+    }, {
+        "data": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUgdGV4dCBmaWxlLi4=",
+        "name": "test.txt",
+        "type": "text/plain"
+    } ]
 }
-````
-
-SMTPeter does its best to parse the supplied email addresses as good
-as it can. But only pure email addresses are supported for the envelope
-address and the recipients. It is not permitted to use display names or 
-to put the addresses inside <brackets>.
-
+```
 
 
 ## inlinecss

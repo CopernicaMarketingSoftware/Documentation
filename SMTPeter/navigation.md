@@ -19,6 +19,7 @@
     * [Endpoint and access token](rest-endpoint)
     * [JSON vs POST data](json-vs-post)
     * [Sending mail](rest-send)
+    * [Construct MIME](rest-mime)
     * [Log files](rest-logfiles)
     * [Retrieve messages](rest-messages)
 * [Warming up IP addresses](copernica-docs:SMTPeter/warming-up-ip-address "Warming up IP addresses")
