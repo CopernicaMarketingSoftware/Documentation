@@ -71,7 +71,7 @@ the mime for you.
 
 Strictly speaking, the envelope address is _optional_. If you instruct 
 SMTPeter to process bounces for you, no envelope address is needed because no
-[Delivery Status Notifications (dsn)](mime-dsn) messages have to be
+[Delivery Status Notifications (dsn)](rest-dsn) messages have to be
 sent back to you.
 
 

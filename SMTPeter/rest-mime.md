@@ -5,10 +5,8 @@ you normally include a "mime" property holding the full MIME object
 that you want to send. However, you can also let SMTPeter create the
 MIME string for you. If you do not include a "mime" property in your
 request, but use separate "subject", "text", "html" and so properties,
-the MIME is created by SMTPeter.
-
-The following table lists all propreties that are supported, and that
-will be converted into a mime object.
+the MIME is created by SMTPeter. The following table lists all 
+supported propreties:
 
 <table>
     <tr>
