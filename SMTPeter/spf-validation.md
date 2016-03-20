@@ -9,8 +9,12 @@ to help you with your configuration.
 
 ## What is SPF?
 
-In theory, it is possible to send out email from every computer on the
-internet. Your personal computer or even your telephone can deliver mail 
+Let's start with some background information first. SPF is a technology
+to specify which servers on the internet may send out email messages
+out of your name.
+
+without SPF it is possible to send out email from every 
+computer on the internet. Your personal computer or even your telephone can deliver mail 
 directly to Gmail or directly to Hotmail, and it is not at all necessary to 
 use intermediate gateways like SMTPeter to reach your recipients. 
 
