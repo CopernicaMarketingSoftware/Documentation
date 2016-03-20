@@ -21,9 +21,9 @@ there is for this receiver no way to find out whether this mail was sent
 by a malicious phisher, or by the employee who simply forgot
 to update. The simple fact that a DKIM signature is missing, or that there
 was no matching SPF record _could_ be an indication that something is
-terribly wrong, but it could also be harmless, and the email must be
-accepted. So even though we have DKIM and SPF, there is still no good
-way to distingues valid mails from abuse. DMARC is a technology to solve this.
+terribly wrong, but it could also be harmless. So even though we have DKIM 
+and SPF, there was still no good way to distinguish valid mails from abuse. 
+DMARC is a technology to solve this.
 
 
 ## DMARC and DNS
@@ -37,7 +37,7 @@ that you throw away, so that I can check internally if someone on the team
 forgot to update her computer".
 
 That's essentially what DMARC is. It allows receivers to query the DNS, so
-that they know what to do when a DKIM signature is missing, or when SPF
+that they know what to do when a DKIM signature is missing, or what to do when SPF
 records seem to be incorrectly configured. The receiver can check the DMARC
 record to find out whether this is a real indication that someone is trying
 to abuse the domain, or that the company has just not completely rolled out
@@ -53,8 +53,8 @@ DMARC slowly, and get notifications if anything is wrong.
 Setting up DMARC is not always easy. The SPF and DKIM records already allow
 many different parameters, and DMARC makes it only more complicated. The
 SMTPeter dashboard helps you with the concept of "sender domains".
-A sender domain is a domain from which you intend to send out mail, and
-if you use the dashboard to configure such a domain, SMTPeter automatically
+A sender domain is a domain from which you intend to send out mail. 
+If you use the dashboard to configure a sender domain, SMTPeter automatically
 creates all the appropriate DNS records and private keys so that you can
 start sending mail using that domain. You just have to copy the DNS records 
 that were created by SMTPeter to your own DNS server (or give them to your 
@@ -72,12 +72,13 @@ through SMTPeter.com. But be careful!
 The moment that you update the DNS records for your domain, all mails that
 you do not send through SMTPeter.com are invalid. Although this does not
 necessarily mean that these mails are going to be rejected (in the DMARC record
-you can specify that invalid mails should initially not be rejected), but
-it is better to update your entire email architecture so that all mails
-are correctly signed and sent from the right servers.
+you can specify that invalid mails should initially be accepted anyway), but
+it is better to eventually update your entire email architecture so that all mails
+are passed through SMTPeter.com and are correctly signed and sent from the 
+right servers.
 
 If changing your entire mail architecture is too much of a hassle (for now), 
-you can take an alternative approach: you can use a (new) _subdomain_ for 
+you can take an alternative approach: you can use a _subdomain_ for 
 your email deliveries. For example, if your normal mail is sent out from the
 "yourcompany.com" domain name, you can use SMTPeter.com to set up a sender
 domain for a subdomain e.g. "newsletter.yourcompany.com". After this setup
@@ -99,10 +100,8 @@ a smaller percentage.
 
 These settings allow you to deploy DMARC slowly. You can first install 
 DMARC with an "accept" policy, so that messages are accepted anyway
-and slowly move to 100% rejection.
-
-SMTPeter, being a careful guy, would recommend you a safe deployment cycle 
-which resembles something like this:
+and slowly move to 100% rejection. SMTPeter, being a careful guy, would 
+recommend you a safe deployment cycle which resembles something like this:
 
 | Domain policy | Percentage |
 | ----   | ---        |
@@ -120,7 +119,6 @@ which resembles something like this:
 | Reject | 50% |
 | Reject | 100% |
 
-If you do a slow rollout, do not forget to update your DNS records yourself.
 
 
 ## Processing reports
@@ -128,6 +126,6 @@ If you do a slow rollout, do not forget to update your DNS records yourself.
 Receiving parties send back daily reports to SMTPeter in which they tell
 how many emails failed the DKIM, SPF or DMARC checks. These daily reports
 are processed by SMTPeter and presented to you via the dashboard. It allows
-you to monitor whether your configuration is valid, and whether your
-domain is tried to be abused.
+you to monitor whether your configuration is valid, and/or whether your
+domain is being abused.
 
