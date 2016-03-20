@@ -1,11 +1,17 @@
 # SMTP API
 
 The SMTPeter service can of course be accessed using the traditional SMTP
-API. SMTP (this stands for Simple Mail Transfer Protocol) is the "language" that email programs
-use to transfer mail from one computer to the other. Because SMTPeter comes
-with such a SMTP API, you can easily integrate SMTPeter in your existing
-mail infrastructure, and you can even set up traditional email clients like
-Outlook, Thunderbird or your mobile devices to send all messages through SMTPeter.
+API. SMTP is the "language" that email programs use to transfer mail from 
+one computer to the other. Because SMTPeter comes with a SMTP API, you can 
+easily integrate SMTPeter in your existing mail infrastructure, and you can 
+even set up traditional email clients like Outlook, Thunderbird or your 
+mobile devices to send all messages through SMTPeter.
+
+
+
+
+
+
 
 To use the SMTP API there are a few things you need to do. First you need to
 create an SMTP login via the dashboard. Make sure to write down your password
@@ -20,38 +26,6 @@ authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_
 **Note:** If you see a message you do not have permission to send email please
 [contact us](mailto:peter@smtpeter.com "send us email") so we can authenticate your account.
 
-
-## Connecting to SMTPeter
-
-After you have set up your login credentials it is time to connect to SMTPeter. As
-we have said before, connecting using SMTP is really easy. You can simply set your mail
-server/application to forward email to SMTPeter's server. SMTPeter can be reached
-on the "mail.smtpeter.com" domain, using port 25 and 587:
-
-````
-Host:       mail.smtpeter.com
-Port:       25, 587, or 465
-Encryption: STARTTLS
-````
-
-Only authenticated and encrypted connections using "STARTTLS" are supported.
-Non-authenticed email and email that is not sent over a secure connection are
-rejected.
-
-### What is the difference between port 25 and port 587?
-
-You can use both port 25 and port 587 to send mail to SMTPeter. There is no
-difference between these two ports. We have opened port 587 because some providers
-block access to port 25.
-
-
-### Why use port 465
-As an alternative to ports 25 and 587, you can also connect to port 465.
-This opens up a TCP connection in a secure state right away, and skips
-the STARTTLS handshake. Although sending mail over port 465 was never
-standardized and is even deprecated in favor of the STARTTLS encryption
-(in fact, port 465 has even been reassigned to a new service), communication
-over port 465 is faster and SMTPeter supports its usage.
 
 
 ## Examples
