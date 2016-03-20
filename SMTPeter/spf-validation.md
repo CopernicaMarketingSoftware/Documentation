@@ -11,14 +11,12 @@ to help you with your configuration.
 
 Let's start with some background information first. SPF is a technology
 to specify which servers on the internet may send out email messages
-out of your name.
-
-without SPF it is possible to send out email from every 
-computer on the internet. Your personal computer or even your telephone can deliver mail 
-directly to Gmail or directly to Hotmail, and it is not at all necessary to 
+out of your name. Without SPF it is possible to send out email from every 
+computer on the internet: your personal computer or even your telephone can deliver mail 
+directly to Gmail or directly to Hotmail, and it is not necessary to 
 use intermediate gateways like SMTPeter to reach your recipients. 
 
-However, it is highly unlikely that a laptop from a village that you 
+However, it is highly unlikely that a laptop in a village that you 
 never heard of directly connects to Gmail to send an email using your 
 domain name. If that happens, you can be pretty sure that someone is 
 trying to do something nasty, and is abusing your domain. You can 
@@ -27,7 +25,7 @@ prevent this with SPF records.
 An SPF record is a setting in DNS. If you have a domain name, you can not
 only use DNS to store the IP address of your website, but also to
 advertise a list of IP addresses from which you send out email. When
-a receiver then gets an email message from a server or computer who claims
+a receiver gets an email message from a server or computer who claims
 to represent you, it can check this DNS record. If the IP address of this
 server or computer is indeed in this list, it knows for sure that the mail 
 came from a valid source. When the IP is on the other hand not listed in 
@@ -55,7 +53,7 @@ v=spf1 include:smtpeter.com ?all
 
 This is an SPF record that basically says: "all SMTPeter IP addresses
 can be used to send email out of my name." If you use other servers too, 
-then your SPF has to be a little longer, but it should at least contain
+then your SPF record has to be a little longer, but it should at least contain
 the "include:smtpeter.com" part, so that your mails can flow through 
 SMTPeter.
 
