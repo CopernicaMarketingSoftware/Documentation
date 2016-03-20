@@ -1,4 +1,4 @@
-# REST and Delivery Status Notifications
+# REST and DSN messages
 
 If you use the REST API to send email, you're probably doing this to 
 send out email from your website or app, and you do not want to process 
