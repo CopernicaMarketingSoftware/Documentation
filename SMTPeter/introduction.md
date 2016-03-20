@@ -1,7 +1,7 @@
 # Getting started with SMTPeter
 
 SMTPeter is a cloud-based email gateway for fast and secure email 
-delivery. All mail that you send through SMTPeter, is preprocessed,
+delivery. All mail that you send through SMTPeter is preprocessed,
 archived, signed and gets forwarded to the actual recipient.
 
 By sending your mail through SMTPeter you ensure that all your messages

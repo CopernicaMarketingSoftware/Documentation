@@ -6,7 +6,7 @@ the mail passes through SMTPeter in a fraction of a second.
 
 However, sometimes we delay your mail a little. If 
 you send too much email in too little time, your address might get blocked.
-SMTPeter can prevent that. The big email receivers (Google, Microsoft, Yahoo,
+SMTPeter prevents this. The big email receivers (Google, Microsoft, Yahoo,
 et cetera) use special algorithms to detect strange behavior from senders. 
 If such an algorithm notices that someone starts sending large volumes 
 of email, they block further deliveries because this unexpected behavior
