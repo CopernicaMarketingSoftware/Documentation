@@ -17,7 +17,8 @@ are rejected.
 
 Note that we can reject mail during the "RCPT TO" phase of the SMTP
 protocol, or until after you've sent all message data. Sometimes we process 
-the entire mail message to find out who is trying to abuse our systems.
+the entire mail message to find out who is trying to abuse our systems,
+and reject the mail only after we've seen the full message.
 
 ## What is the difference between port 25 and port 587?
 
@@ -33,7 +34,9 @@ This opens up a TCP connection in a secure state right away, and skips
 the STARTTLS handshake. Although sending mail over port 465 was never
 standardized and is even deprecated in favor of the STARTTLS encryption
 (in fact, port 465 has even been reassigned to a new service), communication
-over port 465 is faster because the STARTTLS handshake is skipped.
+over port 465 is faster because the STARTTLS handshake is skipped. It
+is also more secure because it is impossible to intercept the "EHLO/HELO"
+handshake.
 
 ````
 Host:       mail.smtpeter.com
