@@ -1,10 +1,10 @@
 # JSON to MIME conversion
 
-Email messages use a special format: MIME. If you send an email message,
-you have to collect the subject of your mail, the text and HTML versions, 
-the sender and recipient addresses, DKIM signatures, attachments and all 
-other kinds of settings and combine them all into a single 
-nested multipart MIME string.
+Email messages use a special format: MIME. If you want to create email message,
+you will therefore have to collect the subject of your mail, the text and 
+HTML versions, the sender and recipient addresses, DKIM signatures, 
+attachments and all other kinds of settings and combine them all into a 
+single nested multipart MIME string.
 
 ````
 From: Peter <peter@smtpeter.com>

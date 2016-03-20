@@ -7,7 +7,7 @@ archived, signed and gets forwarded to the actual recipient.
 By sending your mail through SMTPeter you ensure that all your messages
 comply to the latest SPF, DKIM and DMARC rules, and that the delivery
 rate of your email stream is optimized for the receiving servers. You 
-can also obtain statistics from everything that was sent through
+can also obtain statistics for everything that was sent through
 SMTPeter, increase the consistency of the layout of your emails and use
 other nice features of SMTPeter.
 
