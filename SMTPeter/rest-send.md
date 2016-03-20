@@ -15,7 +15,6 @@ Content-Type: application/json
 Content-Length: 246
 
 {
-    "envelope":     "info@example.com",
     "recipient":    "john@doe.com",
     "subject":      "This is the subject",
     "html":         "This is example content",
@@ -24,7 +23,7 @@ Content-Length: 246
 }
 ```
 
-The above example call can be used to send an email to john@doe.com.
+The above example call demonstrates how to send an email to john@doe.com.
 We've used a JSON example, but it is also possible to submit the mail
 using normal url encoded HTTP POST data. In all subsequent examples on 
 this page, we will just show the JSON code and omit the headers.
@@ -36,12 +35,12 @@ After successfully posting your request SMTPeter sends back a result
 JSON object holding a unique identifier for each recipient to which
 the mail will be delivered.
 
-```json
+````json
 {
     "id1" : "recipient1@example.com",
     "id2" : "recipient2@example.com"
 }
-```
+````
 
 The returned ids can be used to obtain information using other methods of the
 REST API.
@@ -49,30 +48,28 @@ REST API.
 
 ## Minimal properties
 
-The following example shows the minimal properties that you should send
-to the REST API to deliver an email. You need to send at least
-the envelope and recipient address that are going to be used in the
-"MAIL FROM" and "RCPT TO" parts of the SMTP protocol, and the full 
-MIME data. 
+The following example shows the minimal properties to deliver an email: 
+the recipient address that is going to be used in the "RCPT TO" part of 
+the SMTP protocol, and the full MIME data. 
 
 ````json
 {
-    "envelope":     "info@example.com",
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
 ````
 
-To ease readability, we've removed the majority of the MIME code from
-the example above. If you do not want to create the entire MIME message
-yourself, you can leave out the property "mime", and 
-[use special MIME properties](smtp-mime) so that SMTPeter can construct 
-the mime for you.
+To ease readability, we've removed the majority of the MIME code from the 
+example. If you do not want to create the entire MIME message yourself, you 
+can leave out the property "mime", and 
+[use special MIME properties](smtp-mime) like "subject", "text" and "html"
+so that SMTPeter can construct the mime data.
 
-Strictly speaking, the envelope address is _optional_. If you instruct 
-SMTPeter to process bounces for you, no envelope address is needed because no
-[Delivery Status Notifications (dsn)](rest-dsn) messages have to be
-sent back to you.
+You only have to supply a recipient address, and no envelope. The envelope
+will be filled in by SMTPeter to track the bounces. But if you want to 
+receive the bounces yourself, you must also add an envelope address. Besides
+the envelope address, you can even add a ["dsn" property](rest-dsn) to
+specify the type of bounce messages you want to receive.
 
 
 ## Multiple recipients
@@ -83,15 +80,15 @@ of email addresses:
 
 ````json
 {
-    "envelope":     "info@example.com",
     "recipients":   [ "john@doe.com", "someone@else.com" ],
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
 ````
 
-Only pure email addresses are supported for the envelope
-address and for the recipients. It is not permitted to use display names or 
-to put the addresses inside angle brackets.
+Only pure email addresses are supported. It is not permitted to use display 
+names or to put the addresses inside angle brackets.
+
+
 
 
 
@@ -252,36 +249,4 @@ could be something like this:
 
 For more information about statistics and how to retrieve them, see the
 [documentation on the stats method](copernica-docs:SMTPeter/rest/stats "documentation on the stats method").
-
-
-## Result
-
-After successfully posting your request SMTPeter will send out your message or messages.
-Each sent message will get a unique ID to identify it. These unique IDs will
-be returned to you as properties in a JSON encoded string. The value of each
-property is the recipient of the message. The JSON looks like:
-
-```json
-{
-    "id1" : "recipient1",
-    "id2" : "recipient2",
-    ...
-}
-```
-
-The returned ids can be used obtain information using the GET methods [text](copernica-docs:SMTPeter/rest/text "REST command text")
-and [html](copernica-docs:SMTPeter/rest/html "REST command html")
-
-If your post resulted in an error SMTPeter will also return a JSON encoded
-string. This JSON has a property "error" that holds another JSON object.
-This object has the property "message", that holds the error message. E.g.:
-
-```json
-{
-    "error": {
-        "message": "Invalid access token"
-    }
-}
-```
-
 
