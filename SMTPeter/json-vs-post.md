@@ -1,47 +1,19 @@
-# REST API Overview
+# JSON vs POST data
 
-SMTPeter provides a powerful REST API using the HTTPS protocol. The 
-REST API can be used as an alternative to the SMTP API to inject email,
-but also supports many methods and options that are not possible
-with SMTP (like retrieving statistics, or submitting email in JSON
-format).
-
-You can only use HTTPS connections. Unsecure HTTP requests are not
-accepted and will result in a '400 Bad Request' response. To access 
-the REST API you need an API access token, which can be created using 
-the SMTPeter dashboard.
-
-
-## REST vs SMTP
-
-To send mail to SMTPeter, you can use both the REST and the SMTP API.
-However, if you have the choice, we recommend the REST API, because
-it is much more powerful than SMTP, supports way more features, and
-the REST protocol is also much less chatty than SMTP: you don't have to
-go through the entire SMTP handshake before a message is passed from
-one server to the other.
-
-
-## Examples
-
-For many programming languages we have example scripts and classes 
-that you can use to connect to the REST API, so that you do not have to 
-program the low-level API calls yourself, and can use our examples 
-instead.
-
-* [PHP example](php-example)
-* [Python example](python-example)
-
-
-
+With the REST API you use HTTP POST requests to send data to SMTPeter.
+The posted data can either be in JSON format, or url-encoded format.
 Sending data in JSON format is slightly more powerful than sending
 traditional POST data, because JSON allows you to send deeper nested
-data. The results that are sent back by SMTPeter are always JSON formatted, except when retrieving the text
-or HTML from a message and no error occurs (when an error occurs, a JSON document is always sent back, with
-the error property indicating the cause of the problem).
+data. 
+
+The results that are sent back by SMTPeter are most of the times JSON 
+formatted, unless it makes more sense to use a different formatting (for
+example, if you use the REST API to download an jpeg image, or a HTML
+string). The "content-type" should be inspected to find out what kind
+of data is returned. 
 
 
-### Example API call
+## Example API call with POST data
 
 The following code shows an example communication between a client
 application and SMTPeter. For this example, we have truncated the
@@ -57,18 +29,7 @@ Content-Length: 1484
 envelope=info%40example.com&recipient=....
 ```
 
-You will receive and answer somewhat similer to the following output.
-The `send` instruction results in a simple integer telling you that
-the mail was correctly sent:
-
-```
-@todo include other headers
-Content-Type: application/json
-Content-Length: 1
-
-1
-```
-
+## Example with JSON data
 
 The other way to send data to the REST API is to JSON-encode your input.
 This works essentially the same as sending traditional form data, but
@@ -89,3 +50,4 @@ Content-Length: 246
     "to":           "john@doe.com"
 }
 ```
+
