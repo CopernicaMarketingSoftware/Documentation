@@ -33,19 +33,18 @@ a positive influence on the placement of your message in the users' inbox.
 Your SPF record should hold a list of all the IP addresses from servers that
 send your email. Thus, if you send *all* your email through SMTPeter,
 you only have to include SMTPeter's IP addresses. But if you also use other
-servers to send email, you have to include these other addresses too.
-
-If you use SMTPeter exclusively to send out email, you can use the following
-SPF record:
+servers to send email, you have to include these other addresses too. If you 
+use SMTPeter exclusively to send out email, you can use the following SPF record:
 
 ````
 v=spf1 include:smtpeter.com ?all
 ````
 
-This is an SPF record that basically says: all of the SMTPeter IP addresses
-may send email out of my name. If you use other servers too, then you should
-make sure that the "include:smtpeter.com" is listed besides the other IP
-addresses.
+This is an SPF record that basically says: "all SMTPeter IP addresses
+can be used to send email out of my name." If you use other servers too, 
+then your SPF has to be a little longer, but it should at least contain
+the "include:smtpeter.com" part, so that your mails can flow through 
+SMTPeter.
 
 
 ## Using the dashboard 
@@ -59,5 +58,5 @@ copy these records to your DNS configuration.
 SMTPeter also automatically checks whether you have correctly copied this. 
 It checks your DNS records and if it indeed contains the IP addresses of 
 SMTPeter it compliments you. If something is wrong with your configuration,
-it shows an error which allows you to repair your setup.
+it shows an error that allows you to repair your setup.
 
