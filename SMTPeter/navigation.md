@@ -21,8 +21,6 @@
     * [Sending mail](rest-send)
     * [Log files](rest-logfiles)
     * [Retrieve messages](rest-messages)
-
-
 * [Warming up IP addresses](copernica-docs:SMTPeter/warming-up-ip-address "Warming up IP addresses")
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
 * [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
