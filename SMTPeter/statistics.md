@@ -1,10 +1,7 @@
 # Click and open tracking
 
-When you send out email you are of course interested in getting the best
-response. One aspect is figuring out what attracts users' eyes.
-
-You can use SMTPeter's click tracking for this. With click
-tracking enabled, all links in emails sent through SMTPeter are 
+You can use SMTPeter's click tracking to figure out what attracts users' eyes. 
+With click tracking enabled, all links in emails sent through SMTPeter are 
 rewritten. When a receiver clicks on such a rewritten link, 
 he or she will not open the original hyperlink, but a link to one of 
 SMTPeter's web servers instead. SMTPeter intercepts the click, and logs
