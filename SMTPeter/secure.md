@@ -1,4 +1,4 @@
-# Secure email by using DMARC, DKIM, and SPF
+# What do DMARC, DKIM, and SPF do?
 
 With SMTPeter you can set up sender domains and private security keys to
 enable receiving servers and mailbox providers (like Gmail, Yahoo, Hotmail,
@@ -25,9 +25,28 @@ and fishers to send out email, but it makes it more difficult for legitimate
 senders (like you!) to send email as well. SMTPeter can help you out.
 
 
-## Update your DNS records to use DMARC, DKIM, and SPF
+## What do these technologies do?
 
-The DKIM, SPF, and DMARC technologies use the domain name system (DNS) to
+DKIM, SPF and DMARC are three technologies that have the same object (prevent
+spam and fishing), but that all do slightly different things. In a nutshell, 
+it comes down to the following:
+
+<table>
+    <tr>
+        <td>SPF</td>
+        <td>Public info that tells the world from which servers you send out mail</td>
+    </tr>
+    <tr>
+        <td>DKIM</td>
+        <td>Signature added to email so that others can see that the mail indeed came from the "from" address</td>
+    </tr>
+    <tr>
+        <td>DMARC</td>
+        <td>Public info that tells the world whether you use DKIM and SPF</td>
+    </tr>
+</table>
+
+The DKIM, SPF, and DMARC technologies all use the domain name system (DNS) to
 secure email. DNS is traditionally the technology to convert human readable
 domain names (like yourcompany.com) into numeric IP addresses that are
 understood by computers. This system has been enhanced to not only convert
