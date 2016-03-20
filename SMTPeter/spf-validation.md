@@ -1,5 +1,14 @@
 # SPF validation
 
+If you send email through SMTPeter, you must make sure that you've
+configured your SPF records correctly. You must make sure that the IP
+addresses from which SMTPeter is going to send mail are included in
+your SPF record. Luckily, the SMTPeter dashboard has the right tools
+to help you with your configuration.
+
+
+## What is SPF?
+
 In theory, it is possible to send out email from every computer on the
 internet. Your personal computer or even your telephone can deliver mail 
 directly to Gmail or directly to Hotmail, and it is not at all necessary to 
