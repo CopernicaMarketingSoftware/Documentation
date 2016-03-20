@@ -1,37 +1,48 @@
 # Getting started with SMTPeter
 
-SMTPeter is a cloud-based SMTP service for fast and secure email delivery. Instead 
-of directly sending your email to the recipient, it gets relayed through an intermediary: SMTPeter. 
-SMTPeter offers a bunch of features that will ultimately help you get the best delivery results, 
-and provide you with extended reports about delivered emails afterwards. 
-Whether you send transactional, mass or even your own Outlook/Thunderbird emails through SMTPeter is up to you. 
+SMTPeter is a cloud-based email gateway for fast and secure email 
+delivery. All mail that you send through SMTPeter, is preprocessed,
+archived, signed and gets forwarded to the actual recipient.
 
-## Why do you want to use SMTPeter?
+By sending your mail through SMTPeter you ensure that all your messages
+comply to the latest SPF, DKIM and DMARC rules, and that the delivery
+rate of your email stream is optimized for the receiving servers. You 
+can also obtain statistics from everything that was sent through
+SMTPeter, increase the consistency of the layout of your emails and use
+other nice features of SMTPeter.
 
-There are many reasons why you would want to use SMTPeter. For example with
-SMTPeter's features you can increase the deliverability and security of
-your emails. You can easily obtain statistics from your mailings and
-add bounce tracking. Or you can increase the consistency of the layout of
-your emails. Or you can have it all and even more. Curious?
-[Read more about SMTPeter's features](copernica-docs:SMTPeter/features).
 
-## Connecting to SMTPeter
+## Bulk, transactional and personal mail
 
-SMTPeter is incredibly easy to use. There are two ways to connect to SMTPeter: 
-you can connect through the SMTP API or the REST
-API. Connecting to the SMTP API is simple: all you have to do is configure
-your application or mail server to forward email to SMTPeter. You can find more details
-about our SMTP API in our [SMTP API documentation](copernica-docs:SMTPeter/smtp-api "SMTP API").
+SMTPeter can be used for all your outgoing mail. Whether you're sending
+bulk mailings, transactional mails from out of your website or personal
+mails from your own computer or telephone, if you send your messages 
+through SMTPeter (instead of to the recipient directly) you improve
+your delivery, and enhance your mail. Check our features:
 
-The other option is to use the REST API to send your emails through SMTPeter. This makes
-it possible to send email using regular HTTPS POST calls. The REST API is the recommended
-way to connect to SMTPeter because the REST protocol is faster and more flexible than the
-SMTP protocol. Our [REST API documentation](copernica-docs:SMTPeter/rest-api "REST API")
-tells you how to connect to SMTPeter and what the different options are.
+* [Email throttling](email-throttling)
+* [JSON to MIME conversion](json-to-mime)
+* [Open and click statistics](statistics)
+* [Bounce handling](bounce-handling)
+* [Inlinize CSS code](inlinize-css)
+* [DKIM signing](dkim-signing)
+* [DMARC and SPF validation](dmarc-and-spf-validation)
+* [Email archiving](archiving)
+* [Web version hosting](web-version)
+* [Follow up actions and scripting](scripting)
+* [Unsubscribe handling](unsubscribe-handling)
 
-Although there are two APIs, both APIs fully support all of SMTPeter's options. 
+SMTPeter has a [standard SMTP API](smtp-api), so you can simply configure 
+your personal user agent (like Microsoft Outlook, Thunderbird or the email
+program on your tablet or telephone) to connect to SMTPeter. 
+
+To connect your website or newsletter to SMTPeter you can use this
+[SMTP API](smtp-api) too, but we have a [REST API](rest-api) as well, that 
+allows you to pass in all kinds of additional parameters and marketing tags. 
+
 
 ## Want to use SMTPeter?
 
-Are you just as excited about SMTPeter as we are and cannot wait to start using it?
-You can read how you can get a license over [here](copernica-docs:SMTPeter/license-and-billing "License & Billing").
+Are you just as excited about SMTPeter as we are and cannot wait to start 
+using it? Take a look at our [license and pricing options](license-and-billing),
+[register](/register) and get started.
