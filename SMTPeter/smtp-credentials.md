@@ -56,11 +56,11 @@ can select the features to use for that login.
 ## Delivery Status Notifications
 
 If you use the [bounce-tracking feature](bounce-handling), SMTPeter
-replaces the envelope address and delivers the mail with its own 
-envelope address. In that case you will not receive Delivery Status
-Notification (DSN) messages in case the email delivery failed. You can use
-the REST API, the dashboard or the feedback loops to be informed
-about these errors.
+replaces the envelope address and delivers the mail using its own 
+envelope address. In that case all bounces end up at SMTPeter, and you 
+will not receive any Delivery Status Notification (DSN) messages. You 
+should use the REST API, the dashboard or the feedback loops to be 
+informed about these errors.
 
 However, if you do not hand over the bounce handling to SMTPeter, 
 SMTPeter behaves as a normal MTA and als sends back DSN messages to your
