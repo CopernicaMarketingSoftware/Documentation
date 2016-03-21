@@ -1,66 +1,81 @@
 # Fetching log files
 
-We store all type of events in our log files. To check which log files are
-available you can use the logfiles method. This method can also be used to
-download a logfile in csv format.
+Everything that passes through SMTPeter gets logged: deliveries, bounces,
+clicks, opens - all these events are written to log files. These log
+files are accessible through the REST API with the following methods:
 
-The logfile method uses the following URIs.
 ```text
-https://www.smtpeter.com/v1/logfiles?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/logfiles/DATE?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/logfiles/FILENAME?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/logfiles?access_token=YOUR_API_TOKEN
+(2) https://www.smtpeter.com/v1/logfiles/DATE?access_token=YOUR_API_TOKEN
+(3) https://www.smtpeter.com/v1/logfiles/FILENAME?access_token=YOUR_API_TOKEN
 ```
 
-## Get dates
+The above methods can be used to (1) see for which dates log files are 
+available, to (2) see the log files kept for one specific date, and to 
+(3) download a single log file.
 
-We group our log files per date. To see for which dates we have log files
-available for you, you can call the logfile method by using the following
-URI:
-```text
-https://www.smtpeter.com/v1/logfiles?access_token=YOUR_API_TOKEN
-```
-This call will return a JSON array with all the dates for which log files
-are available. The dates are in the format YYYY-MM-DD.
 
-## Get file names per date
+## Available dates
 
-To check which log files are available for a certain date you use the following
-URI:
-```text
-https://www.smtpeter.com/v1/logfiles/DATE?access_token=YOUR_API_TOKEN
-```
-where DATE has the form YYYY-MM-DD.
-This call we return a JSON array with the names of all the logfiles for the
-particular day. The name of the log file has the form `<prifix>.<dateTime>.<id>.log`.
-The `<prefix>` indicates what type of log file it is. We have the following type
-of log files:
-<!--- @todo add links from table to the log file type --->
+We store all log files in directories grouped per date. To get an overview 
+of all available dates, you can call the "logfiles" method without a
+date or filename parameter (the first method shown above). This returns a 
+JSON array holding dates.
+
+````json
+[ "2016-03-20", "2016-03-21", "2016-03-22" ]
+````
+
+The returned dates are UTC dates.
+
+
+## Log files per date
+
+To get a list of all log files available for one date, you can use the 
+second method. The date must be in "YYYY-MM-DD" format. This method
+returns a list of all available log files.
+
+````json
+[
+    "attempts.20160320082244.0.log",
+    "attempts.20160320121703.0.log",
+    "clicks.20160320113322.0.log",
+    "opens.20160320113503.0.log",
+    "dmarc.20160320030255.0.log"
+]
+````
+
+The names of the log files have the form "PREFIX.DATETIME.ID.log". The 
+"ID" part in each log file is used to prevent naming conflicts. If multiple 
+SMTPeter servers need to write to the log simultaneously, they use different 
+ids. The consequence is that it is possible that an event that happened on 
+time X does not show up in the log file that was started right before X, 
+but in an older one. Keep this in mind if you search through the logs.
+
+The "PREFIX" tells you what sort of events get logged. The following 
+prefixes exist:
 
 | Prefix     | Description
-| ---------- | ----------------------------------------------------------------- |
-| attempts   | logs that contain information about all messages send to SMTPeter |
-| bounces    | logs that contain information about messages that bounced         |
-| clicks     | logs that contain information about the clicks generated          |
-| deliveries | logs that contain information about the messages delivered        |
-| dmarc      | logs that contain information about dmarc reports                 |
-| failures   | logs that contain information about failed deliveries             |
-| opens      | logs that contain information about when messages are opened      |
-
-The `<dateTime>` has the form YYYYMMDDhhmmss, without any spaces or other characters.
-The `<id>` is an identifier that runs from 0 to N. The reason for this extra identifier
-is that we can write to multiple files on different servers, to spread the load,
-without worrying about name conflicts. Because we use different servers
-to generate your log files it is possible that an event
-on time x does not show up in the log file with the time stamp just before x
-but in an older one. This is something you should keep in mind if you search
-for a particular event.
+| ---------- | ---------------------------------------------------- |
+| attempts   | information about all messages sent through SMTPeter |
+| bounces    | information about messages that bounced              |
+| clicks     | information about the clicks generated               |
+| deliveries | information about the messages delivered             |
+| dmarc      | information about received dmarc reports             |
+| failures   | information about failed deliveries                  |
+| opens      | information about when messages are opened           |
 
 
-## Downloading log files
+## Downloading files
 
-If you want to download a logfile, you can use the following URI:
+To download a log file, append the name of a log file to the REST API
+url. You should use a HTTP GET call to get the log file
 
-```text
-https://www.smtpeter.com/v1/logfiles/FILENAME?access_token=YOUR_API_TOKEN
-```
-This URI will give you a csv file from the log file with name "FILENAME".
+````text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log?access_token=YOUR_API_TOKEN
+````
+
+This returns a CSV file. Some fields in the returned CSV file contain
+newlines, so a script that processes the CSV file needs to be a little
+smarter than just look for the next newlines to find the next record.
+
