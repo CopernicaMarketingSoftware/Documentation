@@ -22,6 +22,14 @@ go through the entire SMTP handshake before a message is passed from
 one server to the other.
 
 
+## Error handling
+
+If you submit invalid data, or in case of other errors, the REST API
+returns a regular [HTTP error code](https://nl.wikipedia.org/wiki/Lijst_van_HTTP-statuscodes)
+and a textual description of what went wrong. Successful calls always
+return a status code in the "200" range ("200" up to "202").
+
+
 ## Examples
 
 For many programming languages we have example scripts and classes 
