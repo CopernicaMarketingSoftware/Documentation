@@ -124,8 +124,8 @@ properties will also be included in the output JSON.
 Besides regular jobs, you can publish so called "race" jobs to
 the special race queue. A race job is a special kind of job that runs
 many processes in parallel, until one of these processes returns a
-result. We at Copernica use this to locate information in log files:
-when we want to locate a record in a group of log files, we start up a
+result. We at Copernica use this to locate information in log files.
+When we want to locate a record in a group of log files, we start up a
 race of many processes that all process a part of all the log files, the
 first one that locates the right record, reports the result and wins the
 race.

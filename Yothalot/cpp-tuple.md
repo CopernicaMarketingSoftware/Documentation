@@ -9,7 +9,7 @@ class Tuple
 {
 public:
     Tuple();
-    Tuple(const std::initializer_list<Element> &elements);
+    Tuple(const std::initializer_list<Scalar> &elements);
     template<typename Iterator>
     Tuple(Iterator begin, Iterator end);
     Tuple(const Record &record, size_t start = 0, size_t size = std::numeric_limits<size_t>::max());
@@ -44,6 +44,7 @@ public:
     bool operator==(const Tuple &that) const;
     bool operator!=(const Tuple &that) const;
     bool operator<(const Tuple &that) const;
+    bool operator>(const Tuple &that) const;
     
     void write(Record &record) const;
     
@@ -60,24 +61,24 @@ with fields of type int32_t, int64_t and strings, a constructor that takes
 an iterator pair and a constructor that reads [Yothalot::Records](copernica-docs:Yothalot/cpp-record). 
 You can use it like:
 ```cpp
-/** 
- *  create an empty tuple with the default constructor
- */ 
+/**
+ *  Create an empty tuple with the default constructor
+ */
 Yothalot::Tuple myTuple1();
 
 /**
- *  create a tuple that holds 1, 2, and 12 with the 
+ *  Create a tuple that holds 1, 2, and 12 with the 
  *  constructor that takes a initializer list
  */
 Yothalot::Tuple myTuple2 = {1, 2, 12};
 
 /**
- *  Creat a std::vector with some values
+ *  Create a std::vector with some values
  */
 std::vector<int> myVec = {1,2,3,4,5};
 
 /**
- *  Creat a Tuple with the values in myVec
+ *  Create a Tuple with the values in myVec
  *  using the constructor with the iterator pair
  */
 Yothalot::Tuple myTuple3(myVec.begin(), myVec.end());
@@ -87,7 +88,7 @@ Yothalot::Record myRecord(1);
 
 /**
  *  Create a tuple from a record using the
- *  constructo that takes a record.
+ *  constructor that takes a record.
  */
 Yothalot::Tuple myTuple4(myRecord);
 ```
@@ -165,7 +166,7 @@ Yothalot::Tuple myTuple = {12.14, 23.008};
 /**
  *  get the first field from the tuple
  */
-double a = myTuple.int32(0);
+double a = myTuple.doubleValue(0);
 // a is 12.14
 ```
 

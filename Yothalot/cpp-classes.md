@@ -82,7 +82,7 @@ With prefix `++` you can increment the iterator. You can use it like:
  */
 for(auto idx = values.begin(); idx != values.end(); ++idx)
     // do something that uses idx
-   
+
 /**
  *  yet you can also use the new type of loops
  */
@@ -93,7 +93,7 @@ for(auto a :values)
 ### Member &operator*()
 With `*` you dereference where the iterator is pointing to, so in this case
 a value (i.e. a Tuple). You can use it like:
-```c++
+```cpp
 /**
  *  set an iterator to the begin of values
  */

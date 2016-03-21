@@ -11,7 +11,7 @@ public:
     Fullname(const Base &base, const char *filename);
     Fullname(const Base &base, const std::string &filename);
     Fullname(const Fullname &that);
-    Fullname(const Fullname &&that);
+    Fullname(Fullname &&that);
     virtual ~Fullname()
     operator bool () const;
     bool operator! () const;
@@ -220,5 +220,5 @@ and tries to find the GlusterFS mountpoint by itself.
 ### Other member functions
 
 Yothalot::Base does not define other member functions. Yet, since it publicly
-inherits from std::string, you can use these.
+inherits from std::string, you can use those.
 
