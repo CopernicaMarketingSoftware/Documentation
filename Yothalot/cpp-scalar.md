@@ -22,6 +22,7 @@ public:
     bool operator==(const Scalar &that) const;
     bool operator!=(const Scalar &that) const;
     bool operator<(const Scalar &that) const;
+    bool operator>(const Scalar &that) const;
     std::size_t hash() const;
     size_t bytes() const;
     uint8_t type() const;
@@ -35,24 +36,24 @@ public:
     operator int64_t() const;
     std::string string() const;
     operator std::string() const;
+    double doubleValue() const;
+    operator double() const;
     friend std::ostream &operator<<(std::ostream &stream, const Scalar &scalar);
 };
-}
 ```
 
 ## Constructors
 The Yothalot::Scalar class has numerous constructors that take as an argument a type
-that is supported by the Scalar class, i.e. you can construct from int32_t, int64_t,
-char *, and doubles. Besides these constructors there a couple of others
-that are noteworthy. Besides having the possibility to construct from char * you
+that is supported by the Scalar class, i.e. you can construct from `int32_t`, `int64_t`,
+`std::string`, `const char*`, and `double`. Besides these constructors there a couple of others
+that are noteworthy. Besides having the possibility to construct from `const char*` you
 can construct from a buffer by adding a second argument -the bufer size-, and
-you can construct from std::string. Moreover, you can also construct from a nullptr.
+you can construct from `std::string`. Moreover, you can also construct from a nullptr.
 Finally there are a copy and move constructor.
 
 ## Destructor
 The destructor is virtual, so, if you want to derive from Yothalot::Scalar
 and use some manual memory management this can safely be done.
-
 
 ## Member operator==()
 With `==` you can test for equality between two Scalars. Note that the Scalars
@@ -79,8 +80,8 @@ With `!=` you can test for inequality. Note that it is the negation of
 Using `<` first checks if the types of the two Scalars that are compared
 are the same. If they are different the inequality of the types is checked.
 Note that types are ordered from small to larger by: int32_t, int64_t,
-char *, std::nullptr_t, double. If the types are equal the values are compared.
-The char* are compared via memcmp and a true is returned if memcmp is smaller
+const char \*, std::nullptr_t, double. If the types are equal the values are compared.
+The const char\* are compared via memcmp and a true is returned if memcmp is smaller
 than one or if memcmp is zero and the size of the string of the first scalar
 is smaller than the size of the string of the second scalar. You can use it like:
 ```cpp
@@ -128,7 +129,7 @@ std::cout << "the size of the type used is: " << myScalar.bytes() << " bytes\n";
 With `type()` you get the type identifier used. These identifiers are:
 int32_t             : 0
 int64_t             : 1
-char*               : 2
+const char\*         : 2
 std::nullptr_t      : 3
 double              : 4
 
@@ -141,6 +142,7 @@ it like:
  *  Create a Scalar
  */
 Yothalot::Scalar myScalar(1);
+
 /**
  *  Create a buffer
  */
@@ -154,7 +156,8 @@ myScalar.write(buffer);
 
 /**
  *  Free the buffer when you're done
- */ 
+ */
+delete[] buffer;
 ```
 
 ## Member isXxx()
@@ -166,6 +169,7 @@ or double respectively. You can use it like:
  *  Create scalar
  */
 Yothalot::Scalar myScalar(1.0);
+
 /**
  *  Check type
  */
@@ -183,6 +187,7 @@ can use it like:
  *  Create scalar
  */
 Yothalot::Scalar myScalar(32);
+
 /**
  *  get the numeric value
  */
@@ -200,6 +205,14 @@ to a std::string using `std::to_string()`.
 ## Member operator std::string()
 This member is the cast operator to type std::string. It will use member
 `string()` to do the conversion to a std::string.
+
+## Member doubleValue()
+Returns the double value of the scalar object. In case of a numeric type it'll
+simply cast it. In case of a string it'll try to convert it using `std::stod()`.
+
+## Member operator double()
+This member is the cast operator to type double. It will simply use the `doubleValue()`
+member to do the conversion.
 
 ## Member operator<<()
 Using `<<` you can insert the value in a stream. The output has the format:

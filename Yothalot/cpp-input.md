@@ -21,7 +21,6 @@ public:
     Input(const char *filename, size_t seek = 0, size_t bytes = 0);
     bool valid();
     size_t size();
-    InputIterator getIterator();
 }
 ```
 ## Constructor
@@ -143,7 +142,7 @@ myInputs.add("myFile2.log");
 /**
  *  Get the number of files in myInputs
  */
-std::cout << "The number of files in myInputs is: " << myInputs.files << std::endl;
+std::cout << "The number of files in myInputs is: " << myInputs.files() << std::endl;
 ```
 
 ## Member operator bool()
@@ -183,7 +182,7 @@ Yothalot::Inputs myInputs;
 /**
  *  Add a file
  */
-myInputs.add("file.log";
+myInputs.add("file.log");
 
 /**
  *  Swap first record with myRecord

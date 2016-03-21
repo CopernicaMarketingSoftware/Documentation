@@ -22,7 +22,6 @@ public:
         void compress(bool compress);
     };
 
-public:
     Output(std::string filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
     Output(const char *filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
     Output(const Options &options, std::string filename, size_t splitsize = 10 * 1024 * 1024, bool truncate = false);
@@ -30,9 +29,9 @@ public:
     Output &add(const Record &record);
     Output &operator<<(const Record &record);
     const char *name() const;
-    size_t size();
+    size_t size() const;
     size_t splitsize() const;
-    size_t splits() const;    
+    size_t splits() const;
     void flush();
 };
 }
@@ -40,7 +39,7 @@ public:
 ```
 ## Constructor
 Yothalot::Output has three constructors the first two take as a first argument
-the file name of type  `std::string` and `const char \*` that is used for
+the file name of type  `std::string` and `const char *` that is used for
 output. With the second argument you can set the size (in bytes) at which the file
 can be split into smaller files (see  [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format"))
 The size at which these splits can happen has the default of 10MB but you can

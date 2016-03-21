@@ -85,7 +85,7 @@ The `map()` method is used to map the keys and values, the first part of
 the mapreduce process. The keys and values for the mapper process are passed to `map()` via its
 first argument, of type `Yothalot::Key`, and its second argument, of type
 Yothalot::Value. The Yothalot::Key and Yothalot::Value types are tuples
-whose fields can be of type `int32_t`, `int64_t`, and string types.
+whose fields can be of type `int32_t`, `int64_t`, `double` and string types.
 More information on these types is given in the [Yothalot Classes](copernica-docs:Yothalot/cpp-classes)
 documentation 
  
