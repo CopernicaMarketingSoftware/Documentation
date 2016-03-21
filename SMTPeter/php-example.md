@@ -62,30 +62,72 @@ class SMTPeter
         // execute and get result
         $result = curl_exec($curl);
         
+        // get the content type
+        $type = curl_getinfo($curl, CURLINFO_CONTENT_TYPE);
+        
         // close the curl handle
         curl_close($curl);
         
+        // leap out on failure
+        if ($result === false) return false;
+        
+        // if the answer from the server was json-decoded, we decode the json data
+        if ($type == "application/json") return json_decode($result, true);
+        
+        // expose raw output
+        return $result;
+        
+        
         // output is in json format - parse this to turn it into an actual array
-        return json_decode($result, true);
+        // return json_decode($result, true);
     }
     
     /**
      *  Set a HTTP GET call to the rest API
-     *  @param  string      The method to call
-     *  @param  array       Array with data to include
-     *  @return array       The returned data
+     *  @param  string      The method to call (for example "stats/2016-03-03")
+     *  @param  mixed       Optional parameters
+     *  @return mixed       The returned data
      */
-    public function get($method, array $fields)
+    public function get($method, array $params = array())
     {
-        // @todo implement when we actually support GET methods
+        // include access token in parameters
+        $params["access_token"] = $this->token;
         
+        // construct the curl
+        $curl = curl_init($url = "https://www.smtpeter.com/v1/$method?".http_build_query($params));
+        
+        // url options to set
+        curl_setopt_array($curl, array(
+            CURLOPT_RETURNTRANSFER  =>  true,                   // let curl_exec return the result
+            CURLOPT_FOLLOWLOCATION  =>  true,                   // follow 'location:' headers
+            CURLOPT_MAXREDIRS       =>  10,                     // max number of redirects to follow
+            CURLOPT_SSL_VERIFYPEER  =>  false                   // Enables HTTPS connections - even if wrongly configured
+        ));
+
+        // execute and get the result
+        $result = curl_exec($curl);
+        
+        // get the content type
+        $type = curl_getinfo($curl, CURLINFO_CONTENT_TYPE);
+
+        // close the curl handle
+        curl_close($curl);
+        
+        // leap out on failure
+        if ($result === false) return false;
+      
+        // if the answer from the server was json-decoded, we decode the json data
+        if ($type == "application/json") return json_decode($result, true);
+
+        // expose raw output
+        return $result;
     }
 }
 ```
 
 Using this class is easy:
 ```php
-// Your token token
+// Your token
 $token = "00000";
 
 // construct SMTPeter object with your token
@@ -104,4 +146,7 @@ $output = $object->post("send", array(
 						  "ret"     =>  "FULL"
 )));
 
-
+// run the HTTP GET call for the "text" method
+$messageID = "your message id";
+$dates = object->get("text/$messageID");
+print_r($dates);
