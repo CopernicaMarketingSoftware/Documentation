@@ -55,15 +55,15 @@ but in an older one. Keep this in mind if you search through the logs.
 The "PREFIX" tells you what sort of events get logged. The following 
 prefixes exist:
 
-| Prefix                                                     | Description
-| ---------------------------------------------------------- | ---------------------------------------------------- |
-| attempts                                                   | information about all messages sent through SMTPeter |
-| bounces                                                    | information about messages that bounced              |
-| [clicks](copernica-docs:SMTPeter/clicks "clicks log file") | information about the clicks generated               |
-| deliveries                                                 | information about the messages delivered             |
-| dmarc                                                      | information about received dmarc reports             |
-| failures                                                   | information about failed deliveries                  |
-| [opens](copernica-docs:SMTPeter/opens "opens log file")    | information about when messages are opened           |
+| Prefix                                                         | Description
+| -------------------------------------------------------------- | ---------------------------------------------------- |
+| attempts                                                       | information about all messages sent through SMTPeter |
+| bounces                                                        | information about messages that bounced              |
+| [clicks](copernica-docs:SMTPeter/log-clicks "clicks log file") | information about the clicks generated               |
+| deliveries                                                     | information about the messages delivered             |
+| dmarc                                                          | information about received dmarc reports             |
+| failures                                                       | information about failed deliveries                  |
+| [opens](copernica-docs:SMTPeter/log-opens "opens log file")    | information about when messages are opened           |
 
 
 ## Downloading files
