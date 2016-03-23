@@ -74,6 +74,7 @@ like this:
             "state": "intro",
             "result": "error",
             "time": "2016-02-04 13:45:15",
+            "mta": "mta1.example.com",
             "from": "1.2.3.4",
             "to": "10.11.12.13",
             "messages": 1,
@@ -85,8 +86,9 @@ like this:
             "state": "message",
             "result": "accepted",
             "time": "2016-02-04 14:01:25",
+            "mta": "mta2.example.com",
             "from": "1.2.3.4",
-            "to": "10.11.12.13",
+            "to": "10.11.12.14",
             "messages": 4,
             "code": 250,
             "status": "2.0.0",
@@ -112,6 +114,11 @@ result of one delivery attempt. Every result object can have the following prope
         <td>time</td>
         <td>time of the result</td>
     </tr>
+    <tr>
+        <td>mta</td>
+        <td>name of the receiving mta (this is a reverse DNS lookup)</td>
+    </tr>
+
     <tr>
         <td>from</td>
         <td>ip *from* which the mail was sent</td>
@@ -139,10 +146,15 @@ result of one delivery attempt. Every result object can have the following prope
 </table>
 
 Note that some properties are optional. For example, the properties "to", 
-"from" and "messages" are only used if an actual TCP connection was set up 
-and are not present if the mail fails because of a DNS
+"from", "mta" and "messages" are only used if an actual TCP connection was 
+set up and are not present if the mail fails because of a DNS
 lookup failure. The "code", "status" and "description" properties are only
 used when a message from a remote server was received.
+
+The "mta" property holds the name of the MTA that accepted the message.
+To get this mta name, MailerQ performs a reverse DNS lookup. If this
+lookup fails, the mta name is identical to the "to" IP address, enclosed
+in square brackets ("[10.11.12.13]");
 
 
 ## Delivery states
