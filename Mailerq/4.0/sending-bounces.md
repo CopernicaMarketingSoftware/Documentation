@@ -1,42 +1,155 @@
-# Sending bounces with MailerQ
+# Sending and receiving bounces with MailerQ
 
-Besides the delivery of regular email messages, MailerQ can also send out
-bounce message, or, to be more precise: send Delivery Status Notifications (DSN).
+Some mail servers initially seem to accept a message, but send back
+a bounce email later. Such bounces are sometimes called asynchronous
+bounces and they are sent to the envelope address of the initially 
+accepted message. The format for these bounce messages has been 
+standardized: the Delivery Status Notification (DSN) format. There is 
+also an extension to the SMTP protocol that allows mail servers to exchange 
+with each other whether they like to receive such bounce messages, and 
+what kind of information they want to receive back.
 
-A Delivery Status Notification is an email message that contains meta
-information about the delivery of an email. Mail servers send such DSN
-messages to each other when the delivery of an email is delayed, or when the
-delivery completely failed. You can even instruct MailerQ to send DSN messages
-on successful delivery, although in practice success-notifications are seldomly
-used.
+MailerQ supports all these things: when communicating with a receiving
+server, MailerQ passes DSN parameters to tell the receiver what kind
+of bounces it likes to receive, and if MailerQ is used to receive mail
+it understands these kind of parameters. MailerQ can also be configured to
+send out, receive and recognize DSN messages.
+
+
+## Passing DSN settings
+
+Delivery Status Notifications are sent back to the envelope address of
+your messages. This is the address that is used in the "MAIL FROM" command
+of the SMTP handshake, and that is stored in the "envelope" property
+of the [input JSON](json-messages). If you want to receive DSN messages, 
+you therefore first have to make sure that your envelope address is valid,
+and that it indeed points back to your server.
+
+Besides the envelope address that is used to send back DSN messages, some 
+mail servers (but not all!) have implemented the SMTP DSN extension, and 
+allow extra parameters to be passed to instruct them what kind of DSN messages 
+you would like to receive back. You can for example specify that you want
+to see the full original mail message in the notification, or just the 
+headers. You can also specify whether you want to receive notifications
+on failure, or also when a message was delayed or successfully delivered.
+
+````json
+{
+    "envelope": "youraddress@yourdomain.com",
+    "recipient": "info@example.com",
+    "mime": "....",
+    "dsn": {
+        "notify": "FAILURE",
+        "ret": "HDRS",
+        "envid": "unique-identifier",
+        "orcpt": "info@example.com"
+    }
+}
+````
+
+The above JSON sets "youraddress@yourdomain.com" to be the envelope address,
+and if DSN messages are going to be sent, they will be sent to this address.
+*If* the receiving mail server supports the DSN SMTP extension, and
+allows extra parameters to be passed to specify what type of DSN messages
+you like to receive back, MailerQ uses the "dsn" property to pass such
+parameters to the receiver. Inside the "dsn" property you can specify
+four things:
+
+<table>
+    <tr>
+        <td>notify</td>
+        <td>comma separated events that should trigger a notification (FAILURE, DELAY, SUCCESS, NEVER)</td>
+    </tr>
+    <tr>
+        <td>ret</td>
+        <td>should the notification hold the full original mail or just the headers (FULL, HDRS)</td>
+    </tr>
+    <tr>
+        <td>envid</td>
+        <td>unique identifier to be included in the notification as "original-envelope-id"</td>
+    </tr>
+    <tr>
+        <td>orcpt</td>
+        <td>the address to be included in the notification as "original-recipient"</td>
+    </tr>
+</table>
+
+Keep in mind that not every server supports the DSN extension, and that
+even if they do support it, they may not always respect your parameters. For
+example, if you specified that you wanted to have the full original mail
+in the bounce (you set "ret" to "FULL"), you may not receive a bounce at
+all, or a bounce with just the headers. 
+
+
+## Mime headers and config file settings
+
+
+
+
+
+
 
 
 ## Enable DSN messages
 
-In its default configuration, MailerQ does not send DSN messages. Normally,
-results are published in JSON format to the appropriate result queues, where you
-can pick them up and process them. Most users find it more convenient to collect
-results in JSON format from a message queue than setting up a special incoming
-mail servers to receive and parse incoming delivery status notifications.
+If you want to receive delivery status notifications, you can enable
+this in the JSON input of each message. Besides the envelope and the
+recipient, you can add an extra option with the DSN settings.
 
-However, if you do want to receive bounces and notifications by mail,
-you can configure MailerQ to send out delivery status notifications. This can
+````json
+{
+    "envelope": "youraddress@yourdomain.com",
+    "recipient": "info@example.com",
+    "mime": "....",
+    "dsn": {
+        "notify": "FAILURE",
+        "ret": "HDRS",
+        "generate": true
+    }
+}
+````
+
+To receive DSN messages, you _must_ include a valid envelope address,
+because this is the address to which these DSN messages are going to
+be delivered. The nested "dsn" properties can be used to further configure
+the bounce.
+
+The "notify" setting specifies whether you want to receive a DSN in case
+of a failure, a successful delivery or when a delivery gets delayed.
+
+
+Normally, results are published in JSON format to the appropriate result queues
+where you can pick them up and process them. Most users find it more convenient if
+to collect results in JSON format from a message queue than setting up a special
+incoming mail servers to receive and parse incoming delivery status notifications.
+
+However, if you want to receive bounces and notifications by mail, you can 
+configure MailerQ to send out delivery status notifications. This can
 either be configured in the configuration file, so that DSN messages are sent
 for every failed delivery, or on a per-message basis.
 
 
 ## Configuration file options
 
-There are several DSN options that can be set in the MailerQ configuration file.
-Note that all these settings are optional and can be left blank. Leaving them blank
-does mean MailerQ does not send Delivery Status Notifications.
+There are several DSN options that can be set in the MailerQ configuration
+file. These settings control whether MailerQ should send DSN messages or 
+not, and under which circumstances.
 
 ```
-dsn-generate:       <1 or 0> (default: 0)
+dsn-generate:       <1 or 0> (default: 1)
+dsn-advertise:      <1 or 0> (default: 1)
+dsn-notify:         <NEVER|FAILURE|DELAY|SUCCESS> (default: NEVER)
+dsn-ret:            <FULL|HDRS> (default: HDRS)
+dsn-from:           <email address> (default: mailerq@yourhostname)
 ```
 
-This setting controls whether MailerQ is allowed to generate DSN messages. If it is
-set to 0 (the default), MailerQ will never generate a DSN. This does not mean that
+The email protocol 
+
+
+This setting controls whether MailerQ should generate DSN messages or not. If it 
+is set to 0 (the default), no notifications are sent by MailerQ. 
+
+This does not mean that
 this setting will completely stop incoming DSN.
 
 It is possible that a remote server does not manage to deliver a message
