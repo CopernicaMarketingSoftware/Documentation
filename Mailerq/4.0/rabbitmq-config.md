@@ -163,12 +163,18 @@ notifcations). If you explicitly configure a message to trigger such
 status notifications on failure, MailerQ will create a status notification 
 when the message could not be delivered.
 
-A delivery status notification is just a regular email message that is sent
-back to the original envelope over the SMTP protocol. By default MailerQ
-adds such notifications to the normal "outbox" queue so that they get
-delivered just like all other messages. However, you can include a 
-"rabbitmq-dsn" setting in the config file to instruct MailerQ to not publish
-these notifications to the outbox queue, but to a different queue instead.
+A [delivery status notification](sending-bounces) (DSN) is just a regular email 
+message that is sent back to the original envelope over the SMTP protocol. 
+By default MailerQ does not send such notifications because MailerQ uses
+result queues and JSON to report back the delivery results. However, if
+you want MailerQ to send out DSN messages too, you can set up a message queue
+for these DSN messages. The "rabbitmq-dsn" setting can be used for this. If
+you set it to an empty value, MailerQ does not send out bounces, but if you
+set it to a queue name, MailerQ publishes DSN messages to this queue. If you
+assign the same name as the "rabbit-outbox" queue, the DSN messages are 
+published to the outbox, where they are immediately picked up to be delivered.
+If you use a different queue than the outbox queue, you must add your own
+scripts that processes the messages in this queue.
 
 ```
 rabbitmq-dsn: alternative_dsn_queue
