@@ -47,10 +47,10 @@ on failure, on success and/or on a delayed delivery.
 ````
 
 The above JSON sets "youraddress@yourdomain.com" to be the envelope address.
-They DSN message will be sent to this address. If the receiving mail server 
-supports the DSN SMTP extension, MailerQ uses the "dsn" property to pass 
-DSN parameters to the receiver. Inside the "dsn" property you can specify
-four things:
+If something goes wrong, the notification will be sent to this address. 
+If the receiving mail server also supports the DSN SMTP extension, MailerQ 
+uses the "dsn" property in the input JSON to pass additional
+DSN parameters to the receiver. You can use the following four DSN settings:
 
 <table>
     <tr>
@@ -71,9 +71,9 @@ four things:
     </tr>
 </table>
 
-The "notify" variable specifies what sort of events should trigger the delivery
-status notification. Possible values are "NEVER", "SUCCESS", "FAILURE" and
-"DELAY". If you set it to "FAILURE", you will only receive bounce back on
+The "notify" variable specifies what sort of events trigger the Delivery
+Status Notification. Possible values are "NEVER", "SUCCESS", "FAILURE" and
+"DELAY". If you set it to "FAILURE", you will only receive bounces on
 failure. It is also allowed to set this to a comma seperated list of
 values. If you set the "notify" property to "SUCCESS,FAILURE", a bounce message
 will be sent on successful delivery as well as on failure.
@@ -91,8 +91,9 @@ different "original-recipient" value than the actual recipient.
 
 The last property that you can include in the "dsn" object, is "envid".
 This is a message specific message identifier, and you can set it to
-whatever you like. It will be included in the bounce message, so
-that you can match the bounces with the sent messages.
+whatever you like. It will be included in the bounce message as 
+"original-envelope-id", and you can use it to match the bounces with 
+a sent message.
 
 Keep in mind that not every mail server supports the DSN extension, and that
 even if they do support it, they may not always respect your parameters. 
@@ -119,7 +120,7 @@ x-mq-dsn-orcpt: email@example.com
 
 If one or more of the DSN settings are missing, the default values from the
 global config file are used. These defaults can be set with the following 
-variables:
+config file variables:
 
 ````text
 dsn-notify: FAILURE
@@ -128,7 +129,7 @@ dsn-ret: HDRS
 
 You can only set defaults for the "notify" and "ret"
 settings, because the "envid" and "orcpt" are normally only used on a 
-per-message setting, and it is not meaningful to have default values
+per-message setting and it is not meaningful to have default values
 that apply to all emails.
 
 
