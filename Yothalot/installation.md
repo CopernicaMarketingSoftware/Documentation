@@ -144,24 +144,11 @@ do this:
 ## Installation of Yothalot
 
 After GlusterFS and RabbitMQ have been installed and configured, you're ready to
-install Yothatlot. You can download packages of the latest version of Yothalot
+install Yothatlot. You can fetch packages of the latest version of Yothalot
 for Debian based (Debian, Ubuntu, etc) and Red Hat based environments
-(Red Hat, Fedora, CentOS, etc) from our [Download page](/download "Download Page").
-These packages should be installed on the nodes that will form your Yothalot cluster.
-Just like the RabbitMQ packages mentioned above, you need to `rpm` or `dpkg` tools
-to install the packages:
+(Red Hat, Fedora, CentOS, etc) from our repository.
 
-```bash
-$ sudo rpm -i /path/to/yothalot-version.rpm
-```
-
-```bash
-$ sudo dpkg -i path/to/yothalot-version.deb
-```
-
-This installs the Yothalot server and the yothalot library that you need for
-writing mapreduce jobs. However, the Yothalot daemon application only works if
-the curl library is available on your system too.
+[Click here for the download instructions](download-instructions)
 
 ### Installation of libcurl
 
