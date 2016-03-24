@@ -99,5 +99,5 @@ Note that if you run a specific version of Yothalot, the location of the config
 file changes too. By default, Yothalot loads it configuration from "/etc/yothalot/config.txt",
 but if you install an explicit version the version number is included in the 
 filename of the config file (for example "/etc/yothalot/config-2.0.txt" or 
-"/etc/mailerq/config-dev.txt").
+"/etc/yothalot/config-dev.txt").
 
