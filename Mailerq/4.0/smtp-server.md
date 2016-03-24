@@ -23,6 +23,17 @@ queue where MailerQ picks them up to deliver them.
 
 ![MailerQ seperate inbox outbox queues](copernica-docs:Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
 
+
+## Local email addresses
+
+MailerQ maintains a list of "local" email address patterns. When an email is
+received on the SMTP port, the recipient address is compared with these patterns.
+If there is a match, the incoming message is not sent to the inbox queue for
+further delivery, but to the "rabbitmq-local" address instead.
+
+This local 
+
+
 ## Config file settings
 
 In the config file there are a number of variables that you can use
@@ -108,6 +119,23 @@ Keep in mind that if you set a username and password, the SMTP handshake becomes
 a little slower (incoming connections first have to authenticate before a message 
 can be delivered). If you do not have to, it is therefore ofter faster to set up 
 a firewall or an IP range to restrict access, than to require authentication.
+
+
+### Local email addresses
+
+If you have a username and password installed, messages from unauthenticated 
+connections are normally rejected. However, if an incoming message is sent to 
+an address that is marked as a local address, the message is accepted anyway.
+These local messages are not sent to the inbox queue, but to the locals queue
+instead. The name of this queue can be configured with the "rabbitmq-local"
+config file variable.
+
+If you have also set a "rabbitmq-reports" queue in the config file, MailerQ 
+parses all incoming local messages, and if it detects that it holds a report
+message (for example a Delivery Status Notification or a DMARC report), it will
+post the message to this reports queue.
+
+The local email addresses can be configured via MailerQ's management console.
 
 
 ### Running behind HAProxy

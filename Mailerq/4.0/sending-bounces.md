@@ -194,5 +194,22 @@ set it to 0, no DSN parameters can be passed to "MAIL FROM" and "RCPT TO".
 
 ## Receiving DSN messages
 
-@todo add documentation
+MailerQ can also be used to recognize incoming DSN messages. If you submit
+a DSN message to the SMTP port of MailerQ, and MailerQ detects that both the 
+recipient address is on the list of local email addresses **and** that the message
+holds a report message, it publishes this report to the queue for incoming
+reports. The name for this queue can be set in the config file with the 
+"rabbitmq-reports" variable.
+
+This means that you can not only use MailerQ to send out mass mailings, but
+that you can also run a MailerQ instance to process the delivery reports that
+come back. If you use "reports@yourdomain.com" as envelope address, you 
+can run a MailerQ instance to process all mails for the yourdomain.com
+domain. Via the management console you add the "reports@yourdomain.com" local 
+email address, so that all these incoming messages are accepted and sent to
+either the "local" message queue for normal email messages, and the "reports"
+message queue for emails that were recognized as reports.
+
+MailerQ does not only recognize DSN messages, but also other types of reports
+like DMARC reports and disposition notifications.
 
