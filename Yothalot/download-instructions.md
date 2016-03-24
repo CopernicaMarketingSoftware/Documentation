@@ -101,3 +101,13 @@ but if you install an explicit version the version number is included in the
 filename of the config file (for example "/etc/yothalot/config-2.0.txt" or 
 "/etc/yothalot/config-dev.txt").
 
+
+## PHP extension
+
+If you want to use Yothalot within your PHP application, you need download and 
+install the Yothalot-PHP extension. You can fork the bleeding edge version via
+[github](https://github.com/CopernicaMarketingSoftware/Yothalot-PHP), or you
+can download a stable version.
+
+**[Get the latest release from GitHub](https://github.com/CopernicaMarketingSoftware/Yothalot-PHP/releases)**
+
