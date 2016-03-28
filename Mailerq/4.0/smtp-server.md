@@ -142,13 +142,12 @@ and not as SMTP traffic.
 
 ### Other settings
 
-In the initial SMTP handshake the client advertises its hostname and its
-capabilities (like the max message size to accept). The following config 
+In the initial SMTP handshake the client advertises its capabilities 
+(like the max message size to accept). The following config 
 file settings can be used to override the defaults:
 
 ```
 smtp-maxsize:       100MB
-smtp-hostname:      a.specific.hostname.com
 ```
 
 ## Multiple IP addresses

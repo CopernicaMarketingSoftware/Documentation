@@ -11,8 +11,8 @@ what kind of information they want to receive back.
 
 MailerQ supports all these things: when communicating with a receiving
 server, MailerQ passes DSN parameters to tell the receiver what kind
-of bounces it likes to receive, and if MailerQ is used to receive mail
-it understands these kind of parameters. MailerQ can also be configured to
+of bounces you like to receive, and if MailerQ is used to receive mail
+it understands these kind of parameters too. MailerQ can also be configured to
 send out, receive and recognize DSN messages.
 
 
