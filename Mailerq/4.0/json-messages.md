@@ -450,7 +450,8 @@ MailerQ to use other result queues.
         "results": "name-of-results-queue",
         "failure": "name-of-failure-queue",
         "success": "name-of-success-queue",
-        "retry": "name-of-retry-queue"
+        "retry": "name-of-retry-queue",
+        "dsn": "name-of-dsn-queue"
     }
 }
 ````
