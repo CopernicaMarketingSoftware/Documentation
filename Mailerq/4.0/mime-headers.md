@@ -70,14 +70,6 @@ on the handling of your message.
         <td>password to access the smarthost</td>
     </tr>
     <tr>
-        <td>x-mq-dsn-envelope</td>
-        <td>to be documented</td>
-    </tr>
-    <tr>
-        <td>x-mq-dsn-mta</td>
-        <td>to be documented</td>
-    </tr>
-    <tr>
         <td>x-mq-dsn-notify</td>
         <td>to be documented</td>
     </tr>

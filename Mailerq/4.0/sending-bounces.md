@@ -137,35 +137,32 @@ that apply to all emails.
 
 MailerQ has its own ways to report the results: it publishes 
 [JSON result objects](json-results) to the result queues, and it writes
-results to [log files](logging). These methods are more powerful,
-and easier to integrate than sending and processing Delivery Status 
-Notifications. Most of the MailerQ users therefore do no let MailerQ send 
-out its own DSN messages. The only DSN messages that you receive come from
-remote MTA's that initially accepted the mail.
+results to [log files](logging). These reporting methods are powerful,
+and easy to integrate. Most of the MailerQ users therefore do no let 
+MailerQ send out its own DSN messages back to the envelope address. The 
+only DSN messages that are normally sent back to your envelope address 
+are notifications from MTA's that initially accepted the mail.
 
 However, MailerQ can be configured to send out DSN messages too. If you set
 up a RabbitMQ DSN queue (using the "rabbitmq-dsn" config file property),
-MailerQ starts sending out DSN messages. Every time that a message specific "dsn.notify"
-setting matches (this setting is normally set to "FAILURE" so in practice this means
-on every failed delivery), MailerQ publishes a message to this
-"rabbitmq-dsn" message queue. If you assign the same value as the outbox
-queue, this mail is automatically picked up and sent.
+MailerQ starts sending out DSN messages. Every time that a message cannot
+be delivered, an outgoing bounce mail is constructed and published to this
+DSN queue. If you assign the outbox to this "rabbitmq-dsn" setting,
+the bounces are even automatically picked up and delivered.
+
+We write that a bounce is sent on every failed delivery. This is
+technically not completely correct. To be precise, a bounce is created 
+everytime that the message specific "dsn.notify" setting matches. Thus,
+if "notify" is set to "SUCCESS", MailerQ sends out a bounce message on
+successful delivery, and when it is set to "FAILURE", bounces are sent
+on failure. The "notify" setting is however normally set to "FAILURE" so 
+in normal circumstances bounces are sent on failure.
 
 If you set the "rabbitmq-dsn" setting to an empty string (which is the
-default), no Delivery Status Notifications are sent (but MailerQ does forward 
-the DSN settings to the receiving MTA, so you could still receive DSN's).
+default), no Delivery Status Notifications are sent by MailerQ. But MailerQ 
+does forward the DSN settings to the receiving MTA, so you could still 
+receive DSN's.
 
-Every DSN message that is sent by MailerQ has a fixed from address. The
-default from address can be set in the MailerQ config file:
-
-````
-dsn-from:       "MailerQ" <noreply@mailerq.com>
-````
-
-The setting is directly copied to the "from" field of the mail message,
-and it may contain a display name and angle brackets. DSN messages are
-sent _without_ an envelope address to prevent email loops (no bounces 
-should be sent back to DSN messages).
 
 
 ## Receiving DSN settings
