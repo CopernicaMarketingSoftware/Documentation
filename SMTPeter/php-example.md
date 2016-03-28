@@ -142,9 +142,7 @@ $output = $object->post("send", array(
     'to'        =>  'receiver@example.com',         // MIME's receiving email addres
     'text'      =>  'This is the text version',     // Text and HTML bodies
     'html'      =>  '<html><head><style>body { font-weight: 600; }</style></head><body>This is the html version.</body></html>'
-    'dsn'	    =>  array("notify"  =>  "SUCCESS",  // DSN settings
-						  "ret"     =>  "FULL"
-)));
+));
 
 // run the HTTP GET call for the "text" method
 $messageID = "your message id";

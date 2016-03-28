@@ -1,5 +1,6 @@
 * [Introduction](copernica-docs:Yothalot/introduction "Introduction")
 * [Why?](copernica-docs:Yothalot/why "Why Yothalot")
+* [Download instruction](copernica-docs:Yothalot/download-instructions "Download instructions")
 * [Installation](copernica-docs:Yothalot/installation "Installation")
 * [Hello world!](copernica-docs:Yothalot/helloworld "Hello world!")
 * [PHP API](copernica-docs:Yothalot/phpapi "PHP API")
