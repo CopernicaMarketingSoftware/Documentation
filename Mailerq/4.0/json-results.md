@@ -92,6 +92,7 @@ like this:
             "messages": 4,
             "code": 250,
             "status": "2.0.0",
+            "dsn": true,
             "description": "Requested mail action okay, completed",
         }
     ]
@@ -143,18 +144,29 @@ result of one delivery attempt. Every result object can have the following prope
         <td>description</td>
         <td>answer received from receiving server</td>
     </tr>
+    <tr>
+        <td>dsn</td>
+        <td>did the remote server implement the dsn protocol?<?td>
+    </tr>
 </table>
 
 Note that some properties are optional. For example, the properties "to", 
 "from", "mta" and "messages" are only used if an actual TCP connection was 
-set up and are not present if the mail fails because of a DNS
+set up and are not present if the mail failed because of a DNS
 lookup failure. The "code", "status" and "description" properties are only
-used when a message from a remote server was received.
+used when the remote server returned an error code and/or human readable
+description to explain why the message was or was not accepted. 
 
 The "mta" property holds the name of the MTA that accepted the message.
 To get this mta name, MailerQ performs a reverse DNS lookup. If this
 lookup fails, the mta name is identical to the "to" IP address, enclosed
 in square brackets ("[10.11.12.13]");
+
+The "dsn" property is only used for succesful deliveries and tells you whether
+the incoming server supports the DSN extension. If this is set to true,
+and you had also included a DSN setting in your input JSON to request a
+success notification, you can expect a notification from the server that
+accepted the message.
 
 
 ## Delivery states
