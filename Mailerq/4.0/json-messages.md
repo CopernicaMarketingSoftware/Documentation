@@ -6,7 +6,7 @@ RabbitMQ, you must use JSON. In this JSON you should set the envelope
 ("MAIL FROM") address, the recipient ("RCPT TO") address and
 the full mime data to be sent. 
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -96,7 +96,7 @@ property should be a string value, holding a valid MIME object. This
 mime object holds the entire email, including all the headers and possible
 text and html versions, attachments, and so on:
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -108,7 +108,7 @@ However, the "mime" property can also be a nested JSON object, holding
 all individual properties of the mime, which will then be turned into a
 valid mime string by MailerQ:
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -126,7 +126,7 @@ is pretty huge. It uses the very same algorithm as the [responsiveemail.com](htt
 service to convert JSON objects into valid MIME data. To give you
 an idea of a possible valid JSON input, consider this:
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -185,7 +185,7 @@ With an external message store, you can use the "key" property instead of the "m
 property. This property holds the key under which the mime data is stored in your 
 external storage system.
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -214,7 +214,7 @@ in the message store. The result queues only hold the meta data for each
 sent message, but not the full mime data. If you do not want the message data 
 to be removed, you can tell so by adding the "keepmime" option:
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -229,7 +229,7 @@ It is possible to include personalization data in the JSON. If you do this,
 MailerQ will treat the subject, html and text version of your email as
 templates, and replace variables in it with the values loaded from the JSON.
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -362,6 +362,7 @@ into inline `style="..."` attributes in the HTML body.
 
 You can include private DKIM keys in the JSON to let MailerQ sign the mail.
 
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -372,6 +373,7 @@ You can include private DKIM keys in the JSON to let MailerQ sign the mail.
         "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
     }
 }           
+````
 
 Besides the private keys that you include in the JSON, MailerQ also keeps
 a set of private keys in its local database (and that can be edited using
@@ -382,6 +384,7 @@ are all used for signing the mail.
 It is even possible to include multiple keys in the JSON. The "dkim" property
 supports arrays:
 
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -396,6 +399,7 @@ supports arrays:
         "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
     } ]
 }           
+````
 
 The message will end up having two extra "DKIM-signature" headers 
 (or even more if there were also matching DKIM keys in the database).
@@ -407,6 +411,7 @@ The "dsn" property can be added to control whether message MailerQ should
 send back an email to the envelope address in case of a failed delivery. 
 MailerQ can send out such notification messages.
 
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -416,18 +421,16 @@ MailerQ can send out such notification messages.
         "ret": "HDRS",
         "orcpt": "info@example.org",
         "envid": "my-identifier",
-        "envelope": "mailer-daemon@mailerq.com",
-        "mta": "MailerQ"
     }
 }
+````
 
 The above JSON contains a DSN setting that says that a delivery status
 notification should be sent back to the original envelope address in
 case of a failure (this is what the "notify" setting says). The notification
-should include the headers of the original mail (ret=HDRS). Inside the
-notification should be listed that the original recipient was "info@example.com",
-and the unique envelope identifier was "my-identifier". The notification
-should be sent out name of "mailer-daemo@mailerq.com", with name "MailerQ".
+should include the headers of the original mail (ret=HDRS). The
+notification should specify that the original recipient was "info@example.com",
+and the unique envelope identifier was "my-identifier".
 
 For more information about delivery notifications, see the
 [Delivery Status Notification documtation](sending-bounces).
@@ -441,7 +444,7 @@ queues. The default queues to use for this are configured in the global
 configuration file, but you can set other queue names to tell 
 MailerQ to use other result queues.
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -463,7 +466,7 @@ example want to process only the errors for a certain e-mail, you can only set
 the "failure" queue, and set all other queues to null. When the delivery succeeds, 
 MailerQ will silently discard the mail, without adding it to any result queue:
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -491,6 +494,7 @@ If you do not want to send the message right to the recipient right away,
 but to an alternative SMTP server on the internet, you can add a "smarthost"
 option.
 
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
@@ -502,6 +506,7 @@ option.
         "password": "my-password"
     }
 }
+````
 
 The above message will not be sent to "my-domain.com", but to "mail.smtpeter.com"
 instead.
@@ -514,7 +519,7 @@ properties in the JSON. These properties are ignored by MailerQ, but they
 will end up in the result queue, and allows you to link result data
 with the original mail.
 
-````
+````json
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
