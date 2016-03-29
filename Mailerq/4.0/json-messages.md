@@ -457,14 +457,32 @@ MailerQ to use other result queues.
 ````
 
 All properties of the "queues" object are optional. If you leave an option out, 
-MailerQ will not use that queue. Thus, if you for example want to process only 
-the errors for a certain e-mail, you can only set the "failure" queue. When the 
-delivery succeeds, MailerQ will silently discard the mail, without adding it to 
-any result queue.
+MailerQ will use the default queue from the config file. If you include a
+queue but set it to a null value, the queue will not be used. Thus, if you for 
+example want to process only the errors for a certain e-mail, you can only set 
+the "failure" queue, and set all other queues to null. When the delivery succeeds, 
+MailerQ will silently discard the mail, without adding it to any result queue:
 
-When the "queues" property is set in the JSON, the queues mentioned in 
-the global configuration file are completely ignored. This is even so if you 
-have not even specified all possible queues in the JSON property.
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "queues": {
+        "results": null,
+        "failure": "name-of-failure-queue",
+        "success": null
+    }
+}
+````
+
+There is an important difference between not mentioning a queue in the "queues" 
+object, and setting it to null. In the above example, the "dsn" and "retry" queues 
+are missing from the "queues" object. This means that for these two queues the
+setting from the config file will be used (set with the "rabbitmq-dsn" and
+"rabbitmq-retry" options). For the "results" and "success" queues a null
+parameter was used, so that the settings from the config file are ignored,
+and no messages are ever published to the results or success queues.
 
 
 ## Smarthost settings

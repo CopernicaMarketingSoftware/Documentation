@@ -43,7 +43,7 @@ interpreted differently.
 
 The JSON data that you inject in MailerQ is not fully compatible with
 the old data format, although it has not changed significantly. If you're 
-not using anything fancy, but just the `envelope`, `recipient` and `mime`
+not using anything fancy, but just the "envelope", "recipient" and "mime"
 properties, there is nothing to worry about. The results that are published
 back to the result queues on the other hand, have changed. The JSON 
 result objects contain more data than they did before.
@@ -53,6 +53,34 @@ database, and less settings come from the config file, allowing the user to
 make more changes on the fly without having to restart MailerQ.  Some tables are 
 no longer supported because the data from multiple tables have been merged into 
 a single table.
+
+
+## JSON data
+
+The "queues" property in the input JSON is now treated differently. Previously,
+if you added a "queues" property to the JSON, _all_ defaults from the config
+file were ignored, and the settings inside the "queues" property were used
+instead. With the new MailerQ 4.0 setup, the config file defaults are no
+longer ignored. Only for queues that are present inside the JSON, the config
+file setting is discarded and the value from the JSON is used.
+
+````json
+{
+    "recipient": "info@example.com",
+    "mime": "....",
+    "queues": {
+        "results": "custom-result-queue",
+        "failure": null
+    }
+}
+````
+
+Previously (up to MailerQ version 3), all result queues set in the config file
+were ignored, simply because a "queues" property was set in the JSON. With
+MailerQ 4.0, the config file settings for the success, retry and dsn queues 
+are still respected because they are missing in the JSON. The settings in
+the config file for the results and failure queues are overridden by the
+JSON values.
 
 
 ## Result objects
@@ -67,27 +95,30 @@ This gives you a better insight in the reason why a delivery failed, but
 it also means that you will have to update your scripts to handle these
 new type of errors.
 
+We have also add more data and more fields to the result objects, so that
+you can better find out what went wrong in your email delivery.
+
 For a full explanation of the new error format, see our
 [documentation about the result queues](json-results).
 
 
 ## RabbitMQ connection
 
-The RabbitMQ connection in the config file now uses a single `amqp-address`
+The RabbitMQ connection in the config file now uses a single "amqp-address"
 setting. Instead of seperately setting the username, password, hostname and 
 vhost in the config file, you can now assign it a single string formatted by 
-`amqp://user:password@hostname/vhost`.
+"amqp://user:password@hostname/vhost".
 
 
 ## Storage engine
 
 The format for storage addresses has changed slightly. MongoDB
-connections now use a `mongodb://` prefix, and also the address for
-Couchbase connection has changed a little (to `couchbase://password@hostname/bucket?options`).
+connections now use a "mongodb://" prefix, and also the address for
+Couchbase connection has changed a little (to "couchbase://password@hostname/bucket?options").
 
 MailerQ has been updated to use the very latest versions of the MongoDB 
 and Couchbase client libraries. For MongoDB, we had to switch to a complete 
-new client library because MongoDB ceased developing the old `mongoc` driver. 
+new client library because MongoDB ceased developing the old "mongoc" driver. 
 If you want to connect with MongoDB, make sure you have the latest version
 of the [MongoDB C driver](https://github.com/mongodb/mongo-c-driver) on 
 your system.
@@ -101,7 +132,7 @@ these storage operations. If you notice a lot of hiccups in storage operations,
 you can increment this value.
 
 Besides these traditional NoSQL engines, we now also support a filesystem-based 
-storage engine: setting the `storage-address` variable to `dir:///path/to/dir` 
+storage engine: setting the "storage-address" variable to "dir:///path/to/dir" 
 stores all data in files in a directory. This is ideal for testing purposes!
 
 
@@ -109,8 +140,8 @@ stores all data in files in a directory. This is ideal for testing purposes!
 
 The previous versions of MailerQ used its own non-blocking resolver
 for DNS lookups. A consequence of this setup was that the system wide
-resolver settings (like settings found in the `etc/resolv.conf` and 
-`/etc/gai.conf` files) were not (always) respected. You could thus end up 
+resolver settings (like settings found in the "etc/resolv.conf" and 
+"/etc/gai.conf" files) were not (always) respected. You could thus end up 
 in a situation where MailerQ used different DNS data and IP addresses than 
 you would expect after changing your system-wide resolver settings.
 
@@ -122,7 +153,7 @@ slow DNS servers interrupt mail deliveries. The number of threads to start
 is a config file option.
 
 Other DNS related options in the config file are no longer supported.
-These settings can now be set in the system wide `/etc/resolv.conf` setting.
+These settings can now be set in the system wide "/etc/resolv.conf" setting.
 
 MailerQ 3.0 used a helo-file in which you could list all HELO/EHLO names
 for the local IP addresses. This file is no longer used, the EHLO/EHLO names
@@ -154,14 +185,27 @@ directory to RabbitMQ) of course all still work.
 
 ## Running behind a proxy
 
-You can now run MailerQ behind a HAProxy server. The `smtp-proxy` setting
-can be used to instruct MailerQ to use this.
+You can now run MailerQ behind a HAProxy server. The "smtp-proxy" setting
+can be used to instruct MailerQ which connections come from the proxy
+server, and which are raw connections that came directly from the internet.
+
+Connections that came in via a HAProxy proxy server are treated differently.
+The first couple of bytes on these incoming connections are interpreted as
+the special PROXY header, and the remote IP address of the client is
+extracted from that header.
 
 
-- smtp-proxy setting
-- personalization
-- incoming json update
-- result json
+## Delivery Status Notifications
 
-- improve on documentation regarding DNS options; these are out of date.
+MailerQ 4.0 now fully supports DSN. Although the majority of our users
+only use MailerQ to send out email, and not to deliver or receive bounce
+emails, we have implemented this extension to the SMTP protocol as well.
+
+
+## DMARC processing
+
+MailerQ can automatically recognize DMARC report messages, and publishes
+them to the "reports" queue. If you use MailerQ as an incoming server to
+process delivery status notifications and disposition notifications, you
+can also set it up to collect dmarc reports.
 
