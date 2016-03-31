@@ -9,7 +9,7 @@ MailerQ's database (with a direct query or by using the management console to st
 or you can add the keys to the JSON encoded messages. In this article we will explain 
 how the management console works, and how you can add the keys to the JSON, if you want 
 to find out how you can insert DKIM keys directly into MailerQ's database check our 
-[database access documentation](database-access).
+[database access documentation](database-access#the-dkim-keys-and-patterns).
 
 ## Adding DKIM keys using the management console
 

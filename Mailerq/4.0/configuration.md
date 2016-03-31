@@ -10,6 +10,7 @@ sections. Please select the section that you're interested in.
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
 * [Cluster settings](cluster "Cluster configuration")
+* [Delivery throttling](delivery-limits "Delivery Throttling")
 * [Database settings](database-access "Database access")
 * [Message store settings](message-store-options "Message Store options")
 * [Logging](logging "Logging")
