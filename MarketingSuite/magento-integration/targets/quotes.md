@@ -10,9 +10,9 @@ have access to an email address are synchronized.
 
 Variables available for email personalization.
 
-- [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento) `$magento` 
-- [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer) `$customer`
-- [Quote](copernica-docs:MarketingSuite/magento-integration/object/customer) `$quote`
+- [Magento](MarketingSuite/magento-integration/object/magento) `$magento` 
+- [Customer](MarketingSuite/magento-integration/object/customer) `$customer`
+- [Quote](MarketingSuite/magento-integration/object/customer) `$quote`
 
 ## Filter options
 

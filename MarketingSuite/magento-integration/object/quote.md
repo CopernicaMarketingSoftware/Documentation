@@ -65,7 +65,7 @@ Yet another product x 2
 
 ```
 
-[quote-item-object]: copernica-docs:MarketingSuite/magento-integration/object/quote-item
-[customer-object]: copernica-docs:MarketingSuite/magento-integration/object/customer
-[address-object]: copernica-docs:MarketingSuite/magento-integration/object/address
-[webstore-object]: copernica-docs:MarketingSuite/magento-integration/object/webstore
+[quote-item-object]: MarketingSuite/magento-integration/object/quote-item
+[customer-object]: MarketingSuite/magento-integration/object/customer
+[address-object]: MarketingSuite/magento-integration/object/address
+[webstore-object]: MarketingSuite/magento-integration/object/webstore

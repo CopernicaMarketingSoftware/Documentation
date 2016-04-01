@@ -15,4 +15,4 @@ messages inside magento.
 | shared          | _string_                                                                                             | Is wish list shared?                                      |
 | sharingCode     | _string_                                                                                             | Sharing code.                                             |
 | updatedAt       | _string_                                                                                             | Last time wish list was updated.                          |
-| items           | _collection of [WishlistItem](copernica-docs:MarketingSuite/magento-integration/object/wislist-item) | List of items assigned to wish list                       |
+| items           | _collection of [WishlistItem](MarketingSuite/magento-integration/object/wislist-item)		 | List of items assigned to wish list                       |

@@ -18,17 +18,17 @@ Orders can have various _states_ and _statuses_.
 **Status** is a user defined (of Magento predefined) value that can be modified inside the 
 Magento admin panel. 
 
-Read more about order _state_ and _status_ on [order object](copernica-docs:MarketingSuite/magento-integration/object/order) page.
+Read more about order _state_ and _status_ on [order object](MarketingSuite/magento-integration/object/order) page.
 
 ## Personalization variables
 
 | Variable name | Variable type                                                                    | Description                                    |
 |---------------|----------------------------------------------------------------------------------|------------------------------------------------| 
-| $magento      | _[Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)_    | Overall Magento installation.                  |
-| $customer     | _[Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)_  | Instance of customer that placed the order.    |
-| $quote        | _[Quote](coperncia-docs:MarketingSuite/magento-integration/object/quote)_        | Instance of quote that order was created from. |
-| $order        | _[Order](copernica-docs:MarketingSuite/magento-integration/object/order)_        | Instance of the actual order.                  |
-| $person       | _[Person](copernica-docs:MarketingSuite/magento-integration/object/person)_      | Instance of person that placed the order.      |
+| $magento      | _[Magento](MarketingSuite/magento-integration/object/magento)_    		   | Overall Magento installation.                  |
+| $customer     | _[Customer](MarketingSuite/magento-integration/object/customer)_  		   | Instance of customer that placed the order.    |
+| $quote        | _[Quote](MarketingSuite/magento-integration/object/quote)_        		   | Instance of quote that order was created from. |
+| $order        | _[Order](MarketingSuite/magento-integration/object/order)_        		   | Instance of the actual order.                  |
+| $person       | _[Person](MarketingSuite/magento-integration/object/person)_      	           | Instance of person that placed the order.      |
 
 ## Limiting orders list
 
@@ -36,11 +36,11 @@ It is possible to limit the results of the orders list by applying filters.
 
 *  **Quote Id**
 
-   Limits orders list to orders that were created using the [quote](coperncia-docs:MarketingSuite/magento-integration/object/quote) with given ID.
+   Limits orders list to orders that were created using the [quote](MarketingSuite/magento-integration/object/quote) with given ID.
 
 *  **Customer Id**
 
-   Limits orders list to orders that were placed by [customer](coperncia-docs:MarketingSuite/magento-integration/object/customer) with given ID.
+   Limits orders list to orders that were placed by [customer](MarketingSuite/magento-integration/object/customer) with given ID.
 
 *  **State**
 
@@ -60,19 +60,19 @@ It is possible to limit the results of the orders list by applying filters.
 
 *  **Products**
 
-   Limits orders list to orders that contain the  given [product](coperncia-docs:MarketingSuite/magento-integration/object/product).
+   Limits orders list to orders that contain the  given [product](MarketingSuite/magento-integration/object/product).
 
 *  **Product's category**
 
-   Limits orders list to orders that contain product from given [category](coperncia-docs:MarketingSuite/magento-integration/object/category).
+   Limits orders list to orders that contain product from given [category](MarketingSuite/magento-integration/object/category).
 
 *  **Web store**
 
-   Limits the list to orders that were placed in the given [webstore](coperncia-docs:MarketingSuite/magento-integration/object/webstore).
+   Limits the list to orders that were placed in the given [webstore](MarketingSuite/magento-integration/object/webstore).
 
 *  **Currency**
 
-   Limits orders list to orders that were placed with use of a given [currency](coperncia-docs:MarketingSuite/magento-integration/object/currency).
+   Limits orders list to orders that were placed with use of a given [currency](MarketingSuite/magento-integration/object/currency).
 
 *  **IP address**
 

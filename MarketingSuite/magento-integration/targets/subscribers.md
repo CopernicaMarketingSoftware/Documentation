@@ -108,6 +108,6 @@ to it. It's possible to apply following filter options:
    Limits subscribers list to subscribers that are attached to one of registered customers.
 
 
-[magento-object]: copernica-docs:MarketingSuite/magento-integration/object/magento
-[subscriber-object]: copernica-docs:MarketingSuite/magento-integration/object/subscriber
-[person-object]: copernica-docs:MarketingSuite/magento-integration/object/person
+[magento-object]: MarketingSuite/magento-integration/object/magento
+[subscriber-object]: MarketingSuite/magento-integration/object/subscriber
+[person-object]: MarketingSuite/magento-integration/object/person

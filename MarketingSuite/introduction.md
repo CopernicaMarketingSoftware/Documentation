@@ -11,7 +11,7 @@ drag-and-drop editor, meaning that you no longer need specific skills to
 create emails: it is just a matter of dragging and dropping content onto
 the template canvas. 
 
-[Read more about Template Editor](copernica-docs:MarketingSuite/template-editor/introduction)
+[Read more about Template Editor](MarketingSuite/template-editor/introduction)
 
 ## Sending a mailing
 
@@ -20,7 +20,7 @@ to set up your email campaign. Pick any target selection from your
 database and start sending right away, or schedule your campaigns for 
 another time. 
 
-[Read more about Sending Email](copernica-docs:MarketingSuite/send-app/introduction)
+[Read more about Sending Email](MarketingSuite/send-app/introduction)
 
 ## Email reports
 
@@ -29,7 +29,7 @@ opens, clicks and see your open- and click-through rate. Detailed graphs
 show you exactly when and on what device your subscribers opened or 
 clicked in your emails. 
 
-[Read more about Email Statistics](copernica-docs:MarketingSuite/statistics/introduction)
+[Read more about Email Statistics](MarketingSuite/statistics/introduction)
 
 ## Magento integration
 
@@ -39,7 +39,7 @@ the data in your Magento webshop with a Copernica database that is
 specially designed for Magento. This makes it easy to set up email 
 campaigns based on data from your Magento webshop. 
 
-[Read more about Magento Integration](copernica-docs:MarketingSuite/magento-integration/introduction)
+[Read more about Magento Integration](MarketingSuite/magento-integration/introduction)
 
 ### Things you still have to do in the old Publisher environment 
 

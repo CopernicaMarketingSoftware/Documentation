@@ -86,11 +86,11 @@ filter options to it. It's possible to apply following filter options:
    from given [category][category-object] inside theirs [wishlist][wishlist-object].
    [Wishlists][wishlist-object] are available only for [customers][customer-object].
    
-[webstore-object]: copernica-docs:MarketingSuite/magento-integration/object/webstore
-[product-object]: copernica-docs:MarketingSuite/magento-integration/object/product
-[category-object]: copernica-docs:MarketingSuite/magento-integration/object/category
-[wishlist-object]: copernica-docs:MarketingSuite/magento-integration/object/wishlist
-[customer-object]: copernica-docs:MarketingSuite/magento-integration/object/customer
-[person-object]: copernica-docs:MarketingSuite/magento-integration/object/person
-[magento-object]: copernica-docs:MarketingSuite/magento-integration/object/magento
-[subscribers-target]: copernica-docs:MarketingSuite/magento-integration/targets/subscribers
+[webstore-object]: MarketingSuite/magento-integration/object/webstore
+[product-object]: MarketingSuite/magento-integration/object/product
+[category-object]: MarketingSuite/magento-integration/object/category
+[wishlist-object]: MarketingSuite/magento-integration/object/wishlist
+[customer-object]: MarketingSuite/magento-integration/object/customer
+[person-object]: MarketingSuite/magento-integration/object/person
+[magento-object]: MarketingSuite/magento-integration/object/magento
+[subscribers-target]: MarketingSuite/magento-integration/targets/subscribers

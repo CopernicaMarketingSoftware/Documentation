@@ -534,4 +534,4 @@ back to their initial value in between the pageviews. The Php::GLOBALS variable
 however, is always re-initialized at the beginning of every new pageview.
 
 You can read more about this in the article about
-the [the extension callbacks](copernica-docs:PHPCPP/extension-callbacks).
+the [the extension callbacks](PHPCPP/extension-callbacks).

@@ -19,6 +19,6 @@ The OrderItem object holds the following properties
 | product         | _[Product][product-object]_      | The actual product.                                     | 
 | quoteItem       | _[QuoteItem][quote-item-object]_ | The quote item that was used to create this order item. |
 
-[order-object]: copernica-docs:MarketingSuite/magento-integration/object/order
-[product-object]: copernica-docs:MarketingSuite/magento-integration/object/product
-[quote-item-object]: copernica-docs:MarketingSuite/magento-integration/object/quote-item
+[order-object]: MarketingSuite/magento-integration/object/order
+[product-object]: MarketingSuite/magento-integration/object/product
+[quote-item-object]: MarketingSuite/magento-integration/object/quote-item

@@ -1,6 +1,6 @@
 # Extension callbacks
 
-As we [explained before](copernica-docs:PHPCPP/loading-extension), the get_module()
+As we [explained before](PHPCPP/loading-extension), the get_module()
 function is called when your extension is started. It returns a memory address
 where the Zend engine can find all relevant information about your extension.
 

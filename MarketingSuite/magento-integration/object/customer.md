@@ -65,10 +65,10 @@ This could output the following:
 
 ```
 
-[subscriber-object]: copernica-docs:MarketingSuite/magento-integration/object/subscriber
-[order-object]: copernica-docs:MarketingSuite/magento-integration/object/order
-[webstore-object]: copernica-docs:MarketingSuite/magento-integration/object/webstore
-[address-object]: copernica-docs:MarketingSuite/magento-integration/object/address
-[quote-object]: copernica-docs:MarketingSuite/magento-integration/object/quote
-[person-object]: copernica-docs:MarketingSuite/magento-integration/object/person
-[wishlist-object]: copernica-docs:MarketingSuite/magento-integration/object/wishlist
+[subscriber-object]: MarketingSuite/magento-integration/object/subscriber
+[order-object]: MarketingSuite/magento-integration/object/order
+[webstore-object]: MarketingSuite/magento-integration/object/webstore
+[address-object]: MarketingSuite/magento-integration/object/address
+[quote-object]: MarketingSuite/magento-integration/object/quote
+[person-object]: MarketingSuite/magento-integration/object/person
+[wishlist-object]: MarketingSuite/magento-integration/object/wishlist

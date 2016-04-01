@@ -10,7 +10,7 @@ The JSON messages that are created by MailerQ follow exactly the
 possible to let MailerQ publish these incoming messages directly to
 the outbox queue to deliver them to the final recipient.
 
-![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
  
 Besides the regular necessary JSON properties, MailerQ adds some extra properties 
 to the JSON. These aren't needed for delivery, but rather allow you to gather
