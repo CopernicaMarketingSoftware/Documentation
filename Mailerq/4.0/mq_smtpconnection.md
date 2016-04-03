@@ -15,36 +15,36 @@ initialization or cleanup code, it can do so by implementing these functions.
 
 <table>
     <tr>
-        <td> [mq_smtp_in_connect()](mq_smtp_in_connect) ! </td>
-        <td>Called after an incoming TCP connection is established. This is the first time that the [MQ_SmtpConnection](mq_smtpconnection) is passed to the plugin, and a good place for per-connection initialization code.</td>
+        <td><a href="mq_smtp_in_connect">mq_smtp_in_connect()</a></td>
+        <td>Called after an incoming TCP connection is established. This is the first time that the <a href="mq_smtpconnection">MQ_SmtpConnection</a> is passed to the plugin, and a good place for per-connection initialization code.</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_secure()](mq_smtp_in_secure)</td>
+        <td><a href="mq_smtp_in_secure">mq_smtp_in_secure()</a></td>
         <td>Called when the STARTTLS instruction is received and the connection is turned into a secure connection</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_authenticate()](mq_smtp_in_authenticate)</td>
+        <td><a href="mq_smtp_in_authenticate">mq_smtp_in_authenticate()</a></td>
         <td>Called when the SMTP client sends the login+password credentials. Allows you to run your own authentication checks.</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_mailfrom()](mq_smtp_in_mailfrom)</td>
+        <td><a href="mq_smtp_in_mailfrom">mq_smtp_in_mailfrom()</a></td>
         <td>Called when the "MAIL FROM" command is received</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_rcptto()](mq_smtp_in_rcptto)</td>
+        <td><a href="mq_smtp_in_rcptto">mq_smtp_in_rcptto()</a></td>
         <td>Called when the "RCPT TO" command is received</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_data()](mq_smtp_in_data)</td>
+        <td><a href="mq_smtp_in_data">mq_smtp_in_data()</a></td>
         <td>Called when the "DATA" command is received</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_message()](mq_smtp_in_message)</td>
+        <td><a href="mq_smtp_in_message">mq_smtp_in_message()</a></td>
         <td>Called when a message is received. When multiple "RCPT TO" addresses were given, this function is called once for each address.</td>
     </tr>
     <tr>
-        <td>[mq_smtp_in_close()](mq_smtp_in_close)</td>
-        <td>Called after an incoming SMTP connection is closed. This is the last time that the [MQ_SmtpConnection](mq_smtpconnection) is passed to the plugin. You can use this function for cleanup code.</td>
+        <td><a href="mq_smtp_in_close">mq_smtp_in_close()</a></td>
+        <td>Called after an incoming SMTP connection is closed. This is the last time that the <a href="mq_smtpconnection">MQ_SmtpConnection</a> is passed to the plugin. You can use this function for cleanup code.</td>
     </tr>
 </table>
 
