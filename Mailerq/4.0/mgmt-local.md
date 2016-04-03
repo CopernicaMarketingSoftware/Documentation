@@ -2,7 +2,7 @@
 
 MailerQ features a [built in SMTP server](smtp-server).
 This SMTP server allows you to use SMTP to inject email into MailerQ. 
-The emails that you submit to the SMTP server, will be published to one of the 
+The emails that you submit to the SMTP server will be published to one of the 
 following queues:
 
 * The inbox queue (config variable "rabbitmq-inbox")
@@ -14,10 +14,9 @@ To decide whether an incoming message should be sent to the normal
 inbox queue, or to one of the other queues, you can use the management
 console the edit the list of local email addresses.
 
-All email addresses that are specified in the "RCPT TO" command sent to
-MailerQ are compared with this list of local addresses. If there is a
-match, the message will be published to local queue instead of the inbox
-queue.
+All email addresses that are passed to the "RCPT TO" command are compared 
+with this list. If there is a match, the message will be published to 
+the local queue instead of the inbox queue.
 
 
 ## Authentication
@@ -36,7 +35,7 @@ always succeed in injecting their mail.
 
 ## Report messages
 
-If you've assigned a special "reports" queue, MailerQ will preprocess all
+If you've assigned a special "reports" queue, MailerQ preprocesses all
 local deliveries to detect whether the message contains some sort of
 delivery or disposition report. DMARC reports and non-standardized reports
 are also automatically recognized and placed in this reports queue.
