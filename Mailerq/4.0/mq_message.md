@@ -27,11 +27,14 @@ Your plugin can get access to the JSON data, and make modifications to it.
 
 When a message is being sent, MailerQ copies data from the JSON into specific envelope, recipient and mime properties. If you write a plugin, you can call any of the following functions to retrieve this data, or to overwrite this data.
 
-| Function name                                       | Description                         |
-|-----------------------------------------------------|-------------------------------------|
-| [MQ_Envelope()](mq_envelope)         | Get access to the envelope address  |
-| [MQ_SetEnvelope()](mq_setenvelope)   | Set the envelope address            |
-| [MQ_Recipient()](mq_recipient)       | Get access to the recipient address |
-| [MQ_SetRecipient()](mq_setrecipient) | Set the recipient address           |
-| [MQ_Mime()](mq_mime)                 | Get access to the MIME data         |
-| [MQ_SetMime()](mq_setmime)           | Get the MIME data                   |
+| Function name                                       | Description                                                 |
+|-----------------------------------------------------|-------------------------------------------------------------|
+| [MQ_Envelope()](mq_envelope)                        | Get access to the envelope address                          |
+| [MQ_SetEnvelope()](mq_setenvelope)                  | Set the envelope address                                    |
+| [MQ_Recipient()](mq_recipient)                      | Get access to the recipient address                         |
+| [MQ_SetRecipient()](mq_setrecipient)                | Set the recipient address                                   |
+| [MQ_Mime()](mq_mime)                                | Get access to the MIME data                                 |
+| [MQ_SetMime()](mq_setmime)                          | Get the MIME data                                           |
+| [MQ_Local()](mq_local)                              | Check whether a message is sent to a local email address    |
+| [MQ_SetLocal()](mq_setlocal)                        | Update the local property                                   |
+
