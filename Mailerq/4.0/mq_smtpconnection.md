@@ -15,7 +15,7 @@ initialization or cleanup code, it can do so by implementing these functions.
 
 <table>
     <tr>
-        <td>[mq_smtp_in_connect()](mq_smtp_in_connect)</td>
+        <td> [mq_smtp_in_connect()](mq_smtp_in_connect) ! </td>
         <td>Called after an incoming TCP connection is established. This is the first time that the [MQ_SmtpConnection](mq_smtpconnection) is passed to the plugin, and a good place for per-connection initialization code.</td>
     </tr>
     <tr>
