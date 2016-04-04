@@ -11,15 +11,21 @@ keys, although it is allowed.
 
 ## DKIM properties
 
-| Property | Value | Description                                      |
-|:---------|-------|--------------------------------------------------|
-| domain | _string_ | The signing domain                              |
-| selector | _string_ | The domain selector                           |
-| key | _string_ | Base64 encoded private key                         |
-| algorithm | _string_ | The hashing algorithm to use, sha1 or sha256 |
+| Property  | Value    | Description                                      |
+|:----------|----------|--------------------------------------------------|
+| domain    | _string_ | The signing domain                               |
+| selector  | _string_ | The domain selector                              |
+| key       | _string_ | Base64 encoded private key                       |
+| algorithm | _string_ | The hashing algorithm to use, sha1 or sha256     |
+| headers   | _array_  | Custom headers to include in the signature       |
 
 For a valid signature, you need to specify a domain, selector and private key. 
 The hashing algorithm is optional. If it is not set, the "sha256" algorithm is used. 
+
+By default, all the regular MIME header fields are used to sign the email: "from", 
+"to", "message-id", "subject" et cetera. If you have custom fields that you want 
+to include in the signature too, you can add an extra "headers" property holding 
+an array of the headers that you also want to be signed.
 
 When a receiving party receives a signed email, it will use the domain and selector 
 to do a DNS lookup to retrieve the _public_ key. With this public key it can verify 
@@ -31,10 +37,14 @@ whether the email was correctly signed.
 {
     "from" : "info@example.com",
     "subject" : "A signed email",
+    "headers" : {
+        "feedback-id": "a:b:c:d"
+    },
     "dkim": {
         "domain": "example.com",
         "selector": "dkim1",
-        "key": "MIIBOwIBAAJ....MbXHLl/QHFg=="
+        "key": "MIIBOwIBAAJ....MbXHLl/QHFg==",
+        "headers": [ "feedback-id" ]
     },
     "content": {
         "blocks": [ {
@@ -47,6 +57,10 @@ whether the email was correctly signed.
     }
 }
 ```
+
+The above example demonstrates how you can add a DKIM signature to your email.
+It is an advanced signature, because it will also sign the custom "feedback-id"
+header.
 
 If you want to add multiple signatures to an email, you can specify multiple 
 DKIM signatures:
