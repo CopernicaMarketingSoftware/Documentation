@@ -1,6 +1,6 @@
 #Yothalot\Path
 
-The *Path* class is a utility class that helps with dealing with relative
+The *Path* class is a utility class that helps to deal with relative
 and absolute paths on the Yothalot cluster (see
 [Files and paths](copernica-docs:Yothalot/files "Files and paths") for some background).
 
@@ -10,7 +10,7 @@ Its member functions are:
 - relative() (relative path)
 
 ## Constructor. 
-The constructor takes one argument, a string that holds the relative or absolute path to
+The constructor takes a string that holds the relative or absolute path to
 a file.
 
 ```php
