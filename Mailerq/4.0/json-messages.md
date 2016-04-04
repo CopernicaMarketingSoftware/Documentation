@@ -404,6 +404,30 @@ supports arrays:
 The message will end up having two extra "DKIM-signature" headers 
 (or even more if there were also matching DKIM keys in the database).
 
+By default, only regular headers are used for the signature: the "from"
+and "to" address, the "subject" and so on. If you want to include your
+own custom headers in the signature too, you can pass in an extra 
+"headers" option:
+
+````json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dkim": {
+        "domain": "example.com",
+        "selector": "x",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "headers": [ "x-custom-header", "x-other-header" ]
+    }
+}           
+````
+
+The headers that you included in the "headers" option are also signed.
+This is especially useful if you want to include the "feedback-id" header
+in a signature. This "feedback-id" header is required to be signed for
+Google/Gmail feedback loops.
+
 
 ## Delivery Status Notifications
 
