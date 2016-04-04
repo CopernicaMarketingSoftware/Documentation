@@ -46,7 +46,7 @@ and a content section with a yellow background.
 
 ## Example output
 
-![](copernica-docs:ResponsiveEmail/images/example-output-content.png)
+![](ResponsiveEmail/images/example-output-content.png)
 
 ## Sub properties
 

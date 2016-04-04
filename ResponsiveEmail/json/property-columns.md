@@ -1,7 +1,7 @@
 # Property `columns`
 
 The property `columns` is a nested property that is used inside a 
-[columns block](copernica-docs:ResponsiveEmail/json/block-columns). It expects
+[columns block](ResponsiveEmail/json/block-columns). It expects
 a JSON array as value, with a list of JSON objects. Each object in this array 
 describes the contents of a single column.
 
@@ -48,12 +48,12 @@ that can be set for each column.
 
 | Property | Value | Desc.                                                                                                                                                         |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [blocks](copernica-docs:ResponsiveEmail/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as `button` and `text` blocks. |
-| [size](copernica-docs:ResponsiveEmail/json/property-size) | _integer_ | The size of the column. Supported values are 1 up to 12.                                                 |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Get access to the container element                                                             |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the column.                                                                 |
+| [blocks](ResponsiveEmail/json/property-blocks) | _array_ | An array with objects, each one representing any other block type, such as `button` and `text` blocks. |
+| [size](ResponsiveEmail/json/property-size) | _integer_ | The size of the column. Supported values are 1 up to 12.                                                 |
+| [container](ResponsiveEmail/json/property-container) | _object_ | Get access to the container element                                                             |
+| [background](ResponsiveEmail/json/property-background) | _object_ | The background of the column.                                                                 |
 
-The most important property is the [`blocks`](copernica-docs:ResponsiveEmail/json/property-blocks)
+The most important property is the [`blocks`](ResponsiveEmail/json/property-blocks)
 property. You can use it to assign an array of other blocks that are placed inside 
 the column. To keep the examples readable, we normally show this property with 
 only a single block in it (in the example on this page, we show it twice with 

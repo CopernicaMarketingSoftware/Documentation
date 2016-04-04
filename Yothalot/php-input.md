@@ -1,7 +1,7 @@
 #Yothalot\Input
 
 Yothalot\Input is a utility class that helps you to read files that have
-the internal Yothalot [format](copernica-docs:Yothalot/internalfiles "Internal Files").
+the internal Yothalot [format](Yothalot/internalfiles "Internal Files").
 In general you do not need this class. However, it is useful if you want
 to read files in this format, which has the cool property of being compressed
 but still splittable. 
@@ -60,7 +60,7 @@ $valid = $input->valid();
 ```
 
 ## Method next()
-With method next() you access the [records](copernica-docs:Yothalot/record)
+With method next() you access the [records](Yothalot/record)
 in the input file. The first time you call method(), it will give you the
 first record. Each next call gives you the next record. It gives you null
 if there is no record available.
@@ -71,7 +71,7 @@ if there is no record available.
 $record = $input->next();
 ```
 
-Besides using next(), you can iterate over the [records](copernica-docs:Yothalot/record)
+Besides using next(), you can iterate over the [records](Yothalot/record)
 stored in the file works using foreach. 
 ```php
 $input = new Yothalot\input("/path/to/file.log");
@@ -80,5 +80,5 @@ foreach ($input as $record){
 }
 ```
 
-The documentation on [records](copernica-docs:Yothalot/record) gives
+The documentation on [records](Yothalot/record) gives
 more information on the methods that can be applied to a record.

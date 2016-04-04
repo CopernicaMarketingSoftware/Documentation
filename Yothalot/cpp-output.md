@@ -2,7 +2,7 @@
 
 
 Yothalot\Output is a utility class that helps you to create files in the same 
-[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot 
+[format](Yothalot/internalfiles "Internal Files") as Yothalot 
 uses internally. In general you do not need to create a file like this since
 Yothalot can handle all types of files (with a little bit of your help). However, the 
 Yothalot format has the cool property of being compressed while still being
@@ -41,7 +41,7 @@ public:
 Yothalot::Output has three constructors the first two take as a first argument
 the file name of type  `std::string` and `const char *` that is used for
 output. With the second argument you can set the size (in bytes) at which the file
-can be split into smaller files (see  [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format"))
+can be split into smaller files (see  [Yothalot files](Yothalot/internalfiles "Internal File Format"))
 The size at which these splits can happen has the default of 10MB but you can
 change this. With the last argument you can change the behavior when an 
 existing file is used as output. You can choose to append (default) or truncate the
@@ -86,7 +86,7 @@ Yothalot::Output output(options, "/home/aljar/file.log");
 ## Member add()
 add() is a member that adds a record to the output file. A record exists
 of an identifier and fields. The identifier has to be a type that fits in
-a int64_t. The fields are of type [Yothalot::Tuple](copernica-docs:Yothalot/cpp-classes "Internal Files")
+a int64_t. The fields are of type [Yothalot::Tuple](Yothalot/cpp-classes "Internal Files")
 
 ```cpp
 /**

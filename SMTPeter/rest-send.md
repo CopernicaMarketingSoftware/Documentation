@@ -155,7 +155,7 @@ you. An email bounces when SMTPeter fails to deliver the message to the
 receiving mail server. This can happen for various reasons such as a full
 mailbox or an incorrect email address. What SMTPeter does with the bounce
 message depends on your bounce management settings. You can set up your
-bounce management in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
+bounce management in your [SMTPeter dashboard](SMTPeter/dashboard/bounce-management).
 
 If you choose to set up a forward address, SMTPeter will forward all bounces after they have been
 processed. You can then process the bounces further in your own application. Do note that if you
@@ -248,5 +248,5 @@ could be something like this:
 ```
 
 For more information about statistics and how to retrieve them, see the
-[documentation on the stats method](copernica-docs:SMTPeter/rest/stats "documentation on the stats method").
+[documentation on the stats method](SMTPeter/rest/stats "documentation on the stats method").
 

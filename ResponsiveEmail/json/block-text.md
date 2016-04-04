@@ -22,7 +22,7 @@ demonstrated in the example, `content` and `type`, but there are many more.
 The following tables lists all supported properties.
 
 Please keep in mind that you can only use pure text in text blocks. If you want 
-some sort of formatting, you can use a [HTML block](copernica-docs:ResponsiveEmail/json/block-html) 
+some sort of formatting, you can use a [HTML block](ResponsiveEmail/json/block-html) 
 instead.
 
 ## Text block properties
@@ -30,14 +30,14 @@ instead.
 | Property | Value | Description                                                                                                                  |
 |:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "text" | Identifies the block as a text block.                                                                                           |
-| [content](copernica-docs:ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may include HTML.      |
-| [url](copernica-docs:ResponsiveEmail/json/property-url) | _string_ | A url to fetch the textual content from.                                   |
-| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block.                            |
-| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text.                                              |
-| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.          |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container                            |
+| [content](ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may include HTML.      |
+| [url](ResponsiveEmail/json/property-url) | _string_ | A url to fetch the textual content from.                                   |
+| [font](ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |
+| [background](ResponsiveEmail/json/property-background) | _object_ | The background of the text block.                            |
+| [margin](ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text.                                              |
+| [padding](ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [visibility](ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.          |
+| [container](ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container                            |
 
 ## Example
 

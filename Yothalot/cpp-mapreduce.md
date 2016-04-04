@@ -2,7 +2,7 @@
 
 To run your mapreduce algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::MapReduce. This class
-should then be called from an [executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot executable")
+should then be called from an [executable](Yothalot/cpp-program "Create a Yothalot executable")
 
 ## The MapReduce Class
 
@@ -86,7 +86,7 @@ the mapreduce process. The keys and values for the mapper process are passed to 
 first argument, of type `Yothalot::Key`, and its second argument, of type
 Yothalot::Value. The Yothalot::Key and Yothalot::Value types are tuples
 whose fields can be of type `int32_t`, `int64_t`, `double` and string types.
-More information on these types is given in the [Yothalot Classes](copernica-docs:Yothalot/cpp-classes)
+More information on these types is given in the [Yothalot Classes](Yothalot/cpp-classes)
 documentation 
  
 The third argument that `map()` receives is used to provide `map()` the
@@ -237,10 +237,10 @@ data that you pass to it. These mappers may run in parallel. Yothalot starts a
 in parallel as well. So, the mapreduce process is nicely parallelizable.
 The only part that is not parallelizable on default is the writer task.
 If you want to use multiple writers as well, you can do so by using some
-tuning parameters about which you can read in [tune your job](copernica-docs:Yothalot/tuning).
+tuning parameters about which you can read in [tune your job](Yothalot/tuning).
 However, you should be aware that if you want to write with multiple writers
 to the same resource you should use some kind of locking mechanism.
 
 After having created your mapreduce algorithm in the above described way
 you can call your algorithm from a little
-[executable](copernica-docs:Yothalot/cpp-program "Create a Yothalot program").
+[executable](Yothalot/cpp-program "Create a Yothalot program").

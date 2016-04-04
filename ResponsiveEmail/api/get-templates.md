@@ -29,4 +29,4 @@ Content-Length: 145
 ## Related information
 
 You can only retrieve the templates which you have already stored with POST calls 
-to the [/v1/template](copernica-docs:ResponsiveEmail/api/post-template) method.
+to the [/v1/template](ResponsiveEmail/api/post-template) method.

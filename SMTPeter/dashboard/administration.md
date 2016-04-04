@@ -28,7 +28,7 @@ you need to do is add their email address and they will receive a link to create
 
 In the license overview you can view the details of your license. It shows the type of license, which 
 states whether you are using just SMTPeter, or SMTPeter is combination with 
-[ResponsiveEmail](copernica-docs:SMTPeter/responsive-email "ResponsiveEmail Documentation"). 
+[ResponsiveEmail](SMTPeter/responsive-email "ResponsiveEmail Documentation"). 
 
 
  > Having a license does not cost anything, however it is necessary to have a license, because it shows 
@@ -39,4 +39,4 @@ you have agreed with the SMTPeter terms and conditions.
 This overview shows your invoices from the past 12 months. You can click on an individual invoice
 to see more details about that specific invoice. 
 
-[Read more about license and billing](copernica-docs:SMTPeter/license-and-billing "License and Billing")
+[Read more about license and billing](SMTPeter/license-and-billing "License and Billing")

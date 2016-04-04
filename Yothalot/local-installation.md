@@ -8,11 +8,11 @@ file system.
 That is the most important difference, all the other tools are necessary too for
 a local setup: a RabbitMQ message broker, the JSON-C library and, of course,
 the Yothalot process. For more information on how to set up all these tools
-and libries, see the [installation guide](copernica-docs:Yothalot/installation).
+and libries, see the [installation guide](Yothalot/installation).
 
 ## Installation of RabbitMQ locally
 
-Unlike what is being described in the [installation guide](copernica-docs:Yothalot/installation),
+Unlike what is being described in the [installation guide](Yothalot/installation),
 it is not at all a problem that RabbitMQ only allows "guest/guest" logins if you
 run it locally. You do not have to change any RabbitMQ configuration files, when
 both Yothalot and RabbitMQ run on the same machine.
@@ -38,7 +38,7 @@ system-wide temp directory:
 base-directory:         /tmp
 ```
 
-If you use the [PHP API](copernica-docs:Yothalot/phpapi "PHP API") locally too, you 
+If you use the [PHP API](Yothalot/phpapi "PHP API") locally too, you 
 also have to adjust the pathname in the PHP yothalot.ini file. This file is often stored
 in `/etc/php5/mods-available/` and is called `yothalot.ini`. You should add
 the following line
@@ -59,7 +59,7 @@ one machine, you can get a license via the [License Page](/license).
 ## Using Yothalot
 
 After having installed and configured Yothalot you can start the Yothalot sever
-and send jobs to it by using the [C++ API](copernica-docs:Yothalot/cppapi).
-You can also use the [PHP API](copernica-docs:Yothalot/phpapi), yet, if you want
-to use the PHP API you need to [install](copernica-docs:Yothalot/php-install "PHP Extension Installation")
+and send jobs to it by using the [C++ API](Yothalot/cppapi).
+You can also use the [PHP API](Yothalot/phpapi), yet, if you want
+to use the PHP API you need to [install](Yothalot/php-install "PHP Extension Installation")
 our Yothalot PHP extension first.

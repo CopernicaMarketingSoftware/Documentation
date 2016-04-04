@@ -1,7 +1,7 @@
 # The Yothalot::Tuple class
 
 The `Yothalot::Tuple` class is the actual type of `Yothalot::Key` and `Yothalot::Value`.
-It is a container that can hold fields of type [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar).
+It is a container that can hold fields of type [Yothalot::Scalar](Yothalot/cpp-scalar).
 Its public interface looks like:
 ```cpp
 namespace Yothalot {
@@ -58,7 +58,7 @@ public:
 The class has four constructors, a default constructor that constructs an
 empty object, a constructor to which you can pas a std::initializer_list
 with fields of type int32_t, int64_t and strings, a constructor that takes
-an iterator pair and a constructor that reads [Yothalot::Records](copernica-docs:Yothalot/cpp-record). 
+an iterator pair and a constructor that reads [Yothalot::Records](Yothalot/cpp-record). 
 You can use it like:
 ```cpp
 /**
@@ -294,7 +294,7 @@ if (tup1 < tup2)
 
 ## Member write()
 
-With `write()` you can write the tuple to a [Yothalot::Record](copernica-docs:Yothalot/cpp-record).
+With `write()` you can write the tuple to a [Yothalot::Record](Yothalot/cpp-record).
 You can use it like:
 ```cpp
 /**

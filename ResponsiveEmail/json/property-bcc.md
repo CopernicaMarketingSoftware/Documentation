@@ -1,8 +1,8 @@
 # Properties `to`, `cc` and `bcc`
 
-All addressees of an email are set in the [`to`](copernica-docs:ResponsiveEmail/json/property-to), 
-[`cc`](copernica-docs:ResponsiveEmail/json/property-cc) and 
-[`bcc`](copernica-docs:ResponsiveEmail/json/property-bcc) fields of the MIME 
+All addressees of an email are set in the [`to`](ResponsiveEmail/json/property-to), 
+[`cc`](ResponsiveEmail/json/property-cc) and 
+[`bcc`](ResponsiveEmail/json/property-bcc) fields of the MIME 
 header. In the input JSON object, you can use the JSON properties with similar 
 names to specify the addresses to which the email should be sent.
 
@@ -82,11 +82,11 @@ the input format that you specify.
 ## Related information
 
 The destination addresses are stored in the header of the email. Other 
-[top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) 
+[top level properties](ResponsiveEmail/json/top-level-properties) 
 to change the mime header of the generated mime are for example The destination 
-addresses are stored in the header of the email. Other [top level properties](copernica-docs:ResponsiveEmail/json/top-level-properties) 
+addresses are stored in the header of the email. Other [top level properties](ResponsiveEmail/json/top-level-properties) 
 to change the mime header of the generated mime are for example 
-[`subject`](copernica-docs:ResponsiveEmail/json/property-subject), 
-[`from`](copernica-docs:ResponsiveEmail/json/property-from), 
-[`replyTo`](copernica-docs:ResponsiveEmail/json/property-reply-to) and 
-the property [`headers`](copernica-docs:ResponsiveEmail/json/property-headers).
+[`subject`](ResponsiveEmail/json/property-subject), 
+[`from`](ResponsiveEmail/json/property-from), 
+[`replyTo`](ResponsiveEmail/json/property-reply-to) and 
+the property [`headers`](ResponsiveEmail/json/property-headers).

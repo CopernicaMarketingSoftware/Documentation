@@ -39,4 +39,4 @@ Authentication is done using your login credentials. Make sure to use either
 
 And that's it! You are now ready to send using our SMTP API. If you want more 
 information about our SMTP API and its features, please read our 
-[SMTP API documentation](copernica-docs:SMTPeter/api-documentation/smtp-api).
+[SMTP API documentation](SMTPeter/api-documentation/smtp-api).

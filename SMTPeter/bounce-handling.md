@@ -108,7 +108,7 @@ statistics.
 When sending an email through SMTPeter using SMTP with bounce tracking enabled, SMTPeter will
 override the envelope address and DSN options. It does not matter in the slightest what envelope
 address or DSN options you specify in this case, because it will simply be ignored. What happens
-next is up to your bounce management settings in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
+next is up to your bounce management settings in your [SMTPeter dashboard](SMTPeter/dashboard/bounce-management).
 
 If you choose to set up a forward address, SMTPeter will forward all bounces after they have been
 processed. You can then process the bounces further in your own application. Do note that if you
@@ -175,7 +175,7 @@ Any envelope address - if specified - will simply be ignored.
 ```
 
 What SMTPeter does with the bounce message depends on your bounce management settings. You
-can set up your bounce management in your [SMTPeter dashboard](copernica-docs:SMTPeter/dashboard/bounce-management).
+can set up your bounce management in your [SMTPeter dashboard](SMTPeter/dashboard/bounce-management).
 
 If you choose to set up a forward address, SMTPeter will forward all bounces after they have been
 processed. You can then process the bounces further in your own application. Do note that if you

@@ -1,7 +1,7 @@
 #Yothalot::Fullname
 
 The *Fullname* class is a utility class that helps with dealing with relative
-and absolute paths on the Yothalot cluster (see [Files and paths](copernica-docs:Yothalot/files "Files and paths")
+and absolute paths on the Yothalot cluster (see [Files and paths](Yothalot/files "Files and paths")
 for some background). The public interface of this class looks as follows:
 ```cpp
 class Fullname

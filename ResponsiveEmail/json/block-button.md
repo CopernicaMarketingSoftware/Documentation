@@ -9,19 +9,19 @@ Email API, because it renders better on different email clients.
 | Property | Value | Desc.                                                                                                                        |
 |:---------|-------|--------------------------------------------------------------------------------------------------------------------------------|
 | type | "button" | Property to identify block as button                                                                                          |
-| [label](copernica-docs:ResponsiveEmail/json/property-button-label) | _string_ | Label of the button                                             |
-| [link](copernica-docs:ResponsiveEmail/json/property-link) | _mixed_ | Link that is opened when the button is clicked                            |
-| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Font properties for the button label                                     |
-| [color](copernica-docs:ResponsiveEmail/json/property-button-color) | _string_ | Color of a button                                               |
-| [size](copernica-docs:ResponsiveEmail/json/property-button-size) | _mixed_ | Size of a button                                                   |
-| [corners](copernica-docs:ResponsiveEmail/json/property-button-corners) | _string_ | Button (rounded) corners                                    |
-| [css](copernica-docs:ResponsiveEmail/json/property-css) | _object_ | Add custom css to the button                                               |
-| [attributes](copernica-docs:ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the button                     |
-| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver           |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell that houses this block            |
-| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                           |
-| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the block                                  |
+| [label](ResponsiveEmail/json/property-button-label) | _string_ | Label of the button                                             |
+| [link](ResponsiveEmail/json/property-link) | _mixed_ | Link that is opened when the button is clicked                            |
+| [font](ResponsiveEmail/json/property-font) | _object_ | Font properties for the button label                                     |
+| [color](ResponsiveEmail/json/property-button-color) | _string_ | Color of a button                                               |
+| [size](ResponsiveEmail/json/property-button-size) | _mixed_ | Size of a button                                                   |
+| [corners](ResponsiveEmail/json/property-button-corners) | _string_ | Button (rounded) corners                                    |
+| [css](ResponsiveEmail/json/property-css) | _object_ | Add custom css to the button                                               |
+| [attributes](ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the button                     |
+| [visibility](ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver           |
+| [container](ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell that houses this block            |
+| [margin](ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                           |
+| [padding](ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [background](ResponsiveEmail/json/property-background) | _object_ | The background of the block                                  |
 
 ## Example
 

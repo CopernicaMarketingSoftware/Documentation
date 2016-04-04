@@ -96,8 +96,8 @@ according to their common English names (e.g., 'red', 'PaleGoldenrod').
 
 ## See also
 
-The `font` property can be set as a [top level property](copernica-docs:ResponsiveEmail/json/top-level-properties), 
-but can also be used in various content blocks, like [text blocks](copernica-docs:ResponsiveEmail/json/block-text), 
-[link blocks](copernica-docs:ResponsiveEmail/json/block-link) and [button blocks](copernica-docs:ResponsiveEmail/json/block-button). 
-Other style related properties are for example the [property `background`](copernica-docs:ResponsiveEmail/json/property-background) 
-and the [`css` property](copernica-docs:ResponsiveEmail/json/property-css).
+The `font` property can be set as a [top level property](ResponsiveEmail/json/top-level-properties), 
+but can also be used in various content blocks, like [text blocks](ResponsiveEmail/json/block-text), 
+[link blocks](ResponsiveEmail/json/block-link) and [button blocks](ResponsiveEmail/json/block-button). 
+Other style related properties are for example the [property `background`](ResponsiveEmail/json/property-background) 
+and the [`css` property](ResponsiveEmail/json/property-css).

@@ -5,12 +5,12 @@ result of the job. However, mapreduce jobs may take a long time and it may
 be useful for you to get some information on where this time is spend, how
 many processes were used, how many temporary files were created, etc. You can
 use this information to tweak your mapreduce algorithm or to fine tune the
-behavior of the job by using its [tuning settings](copernica-docs:Yothalot/tuning).
+behavior of the job by using its [tuning settings](Yothalot/tuning).
 
 We provide you all the information about a finished job in the **Yothalot::Result** class. 
 This **Yothalot::Result** class holds results on the behavior of a job.
 An instance of this class that holds all the information of the job 
-is returned by the `wait()` method of the [Yothalot::Job class](copernica-docs:Yothalot/cpp-job "Yothalot::Job").
+is returned by the `wait()` method of the [Yothalot::Job class](Yothalot/cpp-job "Yothalot::Job").
 The class provides you all the information on the behaviour of the job you
 want and probably some extra. However, if there is relevant information
 that you would like to have but is currently not provided, please contact
@@ -153,7 +153,7 @@ std::cout << "The runtime of the fastest reducer was: " result.reducers().fastes
 ```
 As you can see you can get quite some details about the job. You can e.g. see
 which step is spending the most time. This information may help you to adjust
-your algorithm for the job or [fine tune](copernica-docs:Yothalot/tuning) the 
+your algorithm for the job or [fine tune](Yothalot/tuning) the 
 job behavior.
 
 
@@ -195,5 +195,5 @@ std::cout << "The number of temporary bytes produced by the mapper is:  " << res
 std::cout << "The number of temporary files consumed by the reducer is: " << result.reducers().input().files()." << std::endl;
 ```
 The information on the number of files and their sizes may again help you 
-to adjust your algorithm and use the [tuning settings](copernica-docs:Yothalot/tuning)
+to adjust your algorithm and use the [tuning settings](Yothalot/tuning)
 to increase the performance of your mapreduce job.

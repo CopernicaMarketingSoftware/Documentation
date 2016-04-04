@@ -1,6 +1,6 @@
 # Yothalot usage
 
-This page explains how to use Yothalot. If you better learn by example, see our [hello world](copernica-docs:Yothalot/hellowordl) for map reduce.
+This page explains how to use Yothalot. If you better learn by example, see our [hello world](Yothalot/hellowordl) for map reduce.
 
 
 ## Creating a serializable class
@@ -66,7 +66,7 @@ class MinimalMapReduceClass implements Yothalot\MapReduce
 While the above class is the bare minimum that you need to implement,
 there is nothing that stops you to expand the class in all possible ways.
 
-##[Set up a Yothalot\Connection](copernica-docs:Yothalot/connection)
+##[Set up a Yothalot\Connection](Yothalot/connection)
 
 After you have created a MapReduce class with your map reduce algorithm, you have to create an instance of the connect object that connects Yothalot to RabbitMQ.
 
@@ -80,9 +80,9 @@ After a master object has been created we can tell the master to create a new Ma
 $myMapRed = new MinimalMapReduceClass(); 
 $job = $master->create($myMapRd);
 ```
-More information on the Connection object can be found [here](copernica-docs:Yothalot/connection)
+More information on the Connection object can be found [here](Yothalot/connection)
 
-##[Use the Yothalot\Job](copernica-docs:Yothalot/job)
+##[Use the Yothalot\Job](Yothalot/job)
 As shown above, jobs can be added to the master object. After the creation 
 of a job we can add data, a file, or a information on a server to the job with 
 *add*, *file*, and *server*. After 
@@ -123,4 +123,4 @@ Before you can use the results of the map reduce job, you have to be sure that a
 $job-wait();
 ```
 
-This is the most basic scenario for running a MapReduce job. For a complete overview of all the options of **job** we refere to the page with the description of [Yothalot\Job](copernica-docs:Yothalot/job).
+This is the most basic scenario for running a MapReduce job. For a complete overview of all the options of **job** we refere to the page with the description of [Yothalot\Job](Yothalot/job).

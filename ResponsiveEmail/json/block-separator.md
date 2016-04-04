@@ -11,16 +11,16 @@ like an `<hr>` tag.
 | Property | Value | Desc.                                                                                                                        |
 |:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "separator" | Identifies the block as a separator                                                                                        |
-| [color](copernica-docs:ResponsiveEmail/json/property-separator-color) | _string_ | The color of the seperator. Default #cccccc                  |
-| [style](copernica-docs:ResponsiveEmail/json/property-separator-style) | _string_ | The style of the seperator.                                  |
-| [height](copernica-docs:ResponsiveEmail/json/property-separator-height) | _integer_ | The height of the seperator in pixels. Defaults to 4.     |
-| [css](copernica-docs:ResponsiveEmail/json/property-css) | _object_ | Add custom css to the generated HTML element                               |
-| [attributes](copernica-docs:ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to HTML element                   |
-| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.          |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell that houses this block            |
-| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                           |
-| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the block.                                 |
+| [color](ResponsiveEmail/json/property-separator-color) | _string_ | The color of the seperator. Default #cccccc                  |
+| [style](ResponsiveEmail/json/property-separator-style) | _string_ | The style of the seperator.                                  |
+| [height](ResponsiveEmail/json/property-separator-height) | _integer_ | The height of the seperator in pixels. Defaults to 4.     |
+| [css](ResponsiveEmail/json/property-css) | _object_ | Add custom css to the generated HTML element                               |
+| [attributes](ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to HTML element                   |
+| [visibility](ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.          |
+| [container](ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell that houses this block            |
+| [margin](ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                           |
+| [padding](ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [background](ResponsiveEmail/json/property-background) | _object_ | The background of the block.                                 |
 
 ## Example
 

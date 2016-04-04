@@ -1,7 +1,7 @@
 # Property `label`
 
-The `label` property is used inside [follow blocks](copernica-docs:ResponsiveEmail/json/block-follow)
-or [share blocks](copernica-docs:ResponsiveEmail/json/block-share)
+The `label` property is used inside [follow blocks](ResponsiveEmail/json/block-follow)
+or [share blocks](ResponsiveEmail/json/block-share)
 and should hold the text that is displayed above your follow or share buttons.
 
 ## Example usage
@@ -30,5 +30,5 @@ The following input JSON shows how to show a label in a follow block. This is th
 ```
 
 For more information and more examples, please check the documentation
-of [follow blocks](copernica-docs:ResponsiveEmail/json/block-follow)
-or [share blocks](copernica-docs:ResponsiveEmail/json/block-share).
+of [follow blocks](ResponsiveEmail/json/block-follow)
+or [share blocks](ResponsiveEmail/json/block-share).

@@ -1,7 +1,7 @@
 # The Yothalot\Reducer class
 
 The Yothalot\Reducer class is used to emit key value pairs from the mapper
-step. Therefore, the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce)
+step. Therefore, the [Yothalot\MapReduce](Yothalot/php-mapreduce)
 interface requires that the map function takes the Yothalot\Reducer class
 as its second argument. This is the only place where you need the Yothalot\Reducer
 class.
@@ -15,7 +15,7 @@ class Yothalot\Reducer
 }
 ```
 As you can see the public interface does not have a constructor. Since you only use the class in
-the map function of your implementation of the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface,
+the map function of your implementation of the [Yothalot\MapReduce](Yothalot/php-mapreduce) interface,
 where it is passed as an argument, you do not need one. The only member function
 of Yothalot\Reducer is emit.
 

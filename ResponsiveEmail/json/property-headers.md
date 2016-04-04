@@ -1,8 +1,8 @@
 # Property `headers`
 
 The ResponsiveEmail API supports many predefined properties to set MIME headers. 
-These include properties like [`subject`](copernica-docs:ResponsiveEmail/json/property-subject), 
-[`to`](copernica-docs:ResponsiveEmail/json/property-to) and [`reply-to`](copernica-docs:ResponsiveEmail/json/property-reply-to). 
+These include properties like [`subject`](ResponsiveEmail/json/property-subject), 
+[`to`](ResponsiveEmail/json/property-to) and [`reply-to`](ResponsiveEmail/json/property-reply-to). 
 But if you want to set other headers in the header too, maybe even unofficial 
 headers, you can do so by using the `headers` property.
 
@@ -34,9 +34,9 @@ email headers.
 ## Related information
 
 The `headers` property should be used for setting custom headers. For the normal 
-headers, better use one of the predefined properties, like [`subject`](copernica-docs:ResponsiveEmail/json/property-subject), 
-[`from`](copernica-docs:ResponsiveEmail/json/property-from), 
-[`replyTo`](copernica-docs:ResponsiveEmail/json/property-reply-to), 
-[`to`](copernica-docs:ResponsiveEmail/json/property-to), 
-[`cc`](copernica-docs:ResponsiveEmail/json/property-cc) 
-and [`bcc`](copernica-docs:ResponsiveEmail/json/property-bcc).
+headers, better use one of the predefined properties, like [`subject`](ResponsiveEmail/json/property-subject), 
+[`from`](ResponsiveEmail/json/property-from), 
+[`replyTo`](ResponsiveEmail/json/property-reply-to), 
+[`to`](ResponsiveEmail/json/property-to), 
+[`cc`](ResponsiveEmail/json/property-cc) 
+and [`bcc`](ResponsiveEmail/json/property-bcc).

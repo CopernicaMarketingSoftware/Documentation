@@ -24,8 +24,8 @@ Content-Type: application/json
 ## Related information
 
 After you've created the template, you can use GET methods to retrieve the 
-[MIME](copernica-docs:ResponsiveEmail/api/get-template-mime),
-[HTML](copernica-docs:ResponsiveEmail/api/get-template-html), 
-[webversion](copernica-docs:ResponsiveEmail/api/get-template-webversion) and
-[text](copernica-docs:ResponsiveEmail/api/get-template-text) 
+[MIME](ResponsiveEmail/api/get-template-mime),
+[HTML](ResponsiveEmail/api/get-template-html), 
+[webversion](ResponsiveEmail/api/get-template-webversion) and
+[text](ResponsiveEmail/api/get-template-text) 
 representation of the mail.

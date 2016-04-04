@@ -2,8 +2,8 @@
 
 This document provides some background on how Yothalot passes its information
 around in the background. You do not need to know this information to use Yothalot effectively.
-It is probably always better to use the [PHP](copernica-docs:Yothalot/phpapi "PHP API")
-or [C++](copernica-docs:Yothalot/cppapi "C++ API") APIs instead. Yet,
+It is probably always better to use the [PHP](Yothalot/phpapi "PHP API")
+or [C++](Yothalot/cppapi "C++ API") APIs instead. Yet,
 if you are curious you can read this document.
 
 The Yothalot master server loads its instructions from three different
@@ -195,8 +195,8 @@ holding the input files.
 ```
 
 The files in this directory should be regular Yothalot files (you can
-create such files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
-or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output").
+create such files using the PHP class [Yothalot\Output](Yothalot/php-output "Output")
+or the C++ class [Yothalot::Output](Yothalot/cpp-output "Output").
 Every record in these files will result in one race subprocess to be started.
 In other words: if you store 10 files in the temporary directory, and each
 of these ten files hold 100 records, a total of 1000 individual processes
@@ -342,8 +342,8 @@ processes. Unlike regular and race jobs the input that can be used has some
 requirements but still it is quite flexible. If you give the input property a string value,
 Yothalot will treat this string as a directory. The files in this directory should be regular Yothalot files,
 just like specifying a directory for the race job (you can create such
-files using the PHP class [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
-or the C++ class [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output").
+files using the PHP class [Yothalot\Output](Yothalot/php-output "Output")
+or the C++ class [Yothalot::Output](Yothalot/cpp-output "Output").
 Yothalot will process these files and provide all stored key-value pairs
 in the files to your mapper. You can also pass an array to the input. This
 array can contain multiple directory names, yet, you can also provide
@@ -380,7 +380,7 @@ be removed.
 The "modulo" setting (default value is 1) is a setting that allows you
 to split up the intermediate data deterministically into multiple groups, so that more
 processes can run in parallel (for a discussion on the modulo setting you
-can read our [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") page).
+can read our [tuning jobs](Yothalot/tuning "Tuning jobs") page).
 The global "processes" setting holds
 the total max number of processes that can run in parallel (you can
 thus set a maximum for the max number of parallel mappers/reducers/finalizers,
@@ -411,8 +411,8 @@ since this will be passed on to the finalizer.
 
 Mapper processes receive key-value pairs that are obtained from the json
 or via files or directories, as discussed above. The output however, should be a list of filenames,
-each written using the [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
-class if you are using C++ or [Yothalot\Output](copernica-docs:Yothalot/php-output "Output")
+each written using the [Yothalot::Output](Yothalot/cpp-output "Output")
+class if you are using C++ or [Yothalot\Output](Yothalot/php-output "Output")
 class if you are using PHP. When the mapper process
 is started, the Yothalot framework inserts one command line argument to
 the list of already defined arguments in the JSON, holding the modulo setting,
@@ -538,10 +538,10 @@ when the process that caused the error was "started" and when it "finished".
 
 Yothalot uses an internal file format that has some unique properties, e.g.
 it is compressible and splittable at the same time. You can use this format with
-the [Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input") and
-[Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output") classes
-if you are using C++ or [Yothalot\Input](copernica-docs:Yothalot/php-input "Input")
-and [Yothalot\Output](copernica-docs:Yothalot/php-output "Output") if you
+the [Yothalot::Input](Yothalot/cpp-input "Input") and
+[Yothalot::Output](Yothalot/cpp-output "Output") classes
+if you are using C++ or [Yothalot\Input](Yothalot/php-input "Input")
+and [Yothalot\Output](Yothalot/php-output "Output") if you
 are using PHP. Yet, here is some extra background on how to use them storing
 keys and values. 
 The internal files are organized around records. Each record contains an

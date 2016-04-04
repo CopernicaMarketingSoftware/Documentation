@@ -1,7 +1,7 @@
 # Property `align`
 
-The `align` property is used inside [image blocks](copernica-docs:ResponsiveEmail/json/block-image),
-[video blocks](copernica-docs:ResponsiveEmail/json/block-video) and various other blocks. With this
+The `align` property is used inside [image blocks](ResponsiveEmail/json/block-image),
+[video blocks](ResponsiveEmail/json/block-video) and various other blocks. With this
 property you can align the image, video or link to the left (this is the default), to
 the center or to the right.
 
