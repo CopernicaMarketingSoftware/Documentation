@@ -37,7 +37,6 @@
     * [Delivery Status Notifications](sending-bounces "Delivery Status Notifications")
     * [Personalization](personalization "Personalization variables")
     * [MIME headers](mime-headers "Additional message properties for MIME format")
-* [DKIM signing](dkim "Signing email with DKIM")
 * [Examples](examples "MailerQ examples")
     *   [.NET/C# example](dotnet-example ".NET/C# example")
     *   [Java example](java-example "Java example")

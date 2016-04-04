@@ -508,7 +508,7 @@ option.
 }
 ````
 
-The above message will not be sent to "my-domain.com", but to "mail.smtpeter.com"
+The above message will not be sent to "example.org", but to "mail.smtpeter.com"
 instead.
 
 
@@ -516,7 +516,7 @@ instead.
 
 To have better control over your message queue, you can add additional 
 properties in the JSON. These properties are ignored by MailerQ, but they
-will end up in the result queue, and allows you to link result data
+will end up in the result queue, and allow you to link result data
 with the original mail.
 
 ````json
