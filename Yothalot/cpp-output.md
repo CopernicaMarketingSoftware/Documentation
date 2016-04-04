@@ -1,10 +1,10 @@
 #Yothalot::Output
 
 
-Yothalot\Output is a utility class that helps you to create files in the same 
-[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot 
+Yothalot\Output is a utility class that helps you to create files in the same
+[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot
 uses internally. In general you do not need to create a file like this since
-Yothalot can handle all types of files (with a little bit of your help). However, the 
+Yothalot can handle all types of files (with a little bit of your help). However, the
 Yothalot format has the cool property of being compressed while still being
 splittable. Therefore you may want to use this format for your own files as well.
 
@@ -32,7 +32,7 @@ public:
     size_t size() const;
     size_t splitsize() const;
     size_t splits() const;
-    void flush();
+    void flush(bool recompress = false);
 };
 }
 
@@ -43,10 +43,10 @@ the file name of type  `std::string` and `const char *` that is used for
 output. With the second argument you can set the size (in bytes) at which the file
 can be split into smaller files (see  [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format"))
 The size at which these splits can happen has the default of 10MB but you can
-change this. With the last argument you can change the behavior when an 
+change this. With the last argument you can change the behavior when an
 existing file is used as output. You can choose to append (default) or truncate the
 existing file by passing false or true. The third constructor behaves
-similar to the first two, yet it takes Yothalot::Output::Options as a first 
+similar to the first two, yet it takes Yothalot::Output::Options as a first
 argument. The options are discussed below.
 
 ```cpp
@@ -150,7 +150,7 @@ split is returned. You can use it like:
 /**
  * Create or open an output file
  */
-Yothalot::Output output("/path/to/file.log"); 
+Yothalot::Output output("/path/to/file.log");
 
 /**
  *  Get the size at which the file can be split
@@ -165,7 +165,7 @@ Member `splits()` returns how many splits are possible with the current file
 /**
  * Create or open an output file
  */
-Yothalot::Output output("/path/to/file.log"); 
+Yothalot::Output output("/path/to/file.log");
 
 // add data
 
@@ -177,12 +177,22 @@ std::cout << "Number of splits possible is: " << output.splits() << std::endl;
 ```
 
 ##Member flush()
-flushes the object to the file. In general you do not need this, only if 
+
+flushes the object to the file. In general you do not need this, only if
 your code can crash you may use it to be sure that your data is stored.
 Although it is better to fix the code.
+
+This method accepts an optional (boolean) parameter, controlling whether
+to completely recompress the data in the output file. This is only useful
+in case you have done manual flushes earlier since many small flushes can
+reduce the effectiveness of the compression (and even make the compressed
+file bigger than the uncompressed version).
+
+Recompressing the file is an intensive operation, both in terms of CPU as
+in terms of I/O (the whole file is rewritten!). Use it sparingly!
 ```cpp
 /**
  * flush the data to the output file
  */
-output.flush();
+output.flush(false);
 ```

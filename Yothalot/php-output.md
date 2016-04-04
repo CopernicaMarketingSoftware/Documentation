@@ -1,9 +1,9 @@
 #Yothalot\Output
 
-Yothalot\Output is a utility class that helps you to create files in the same 
-[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot 
+Yothalot\Output is a utility class that helps you to create files in the same
+[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot
 uses internally. In general you do not need to create a file like this since
-Yothalot can handle all types of files (with a little bit of your help). However, the 
+Yothalot can handle all types of files (with a little bit of your help). However, the
 Yothalot format has the cool property of being compressed while still being
 splittable. Therefore you may want to use this format for your own files as well.
 
@@ -15,13 +15,13 @@ class Yothalot\Output
     public function add($identifier, $fields);
     public function name();
     public function size();
-    public function flush();
+    public function flush($recompress = false);
 }
 ```
 ## Constructor
-The constructor takes one parameter, the file name. A file with this 
-file name will be created if it does not exist. Otherwise the file will 
-be opened. 
+The constructor takes one parameter, the file name. A file with this
+file name will be created if it does not exist. Otherwise the file will
+be opened.
 
 ```php
 /**
@@ -70,9 +70,22 @@ echo($output->size());
 Yothalot\Output::flush() flushes the object to the file. In general
 you do not need this, only if your code can crash you may use it to be
 sure that your data is stored. Although it is better to fix the code.
+
+This method accepts an optional (boolean) parameter, controlling whether
+to completely recompress the data in the output file. This is only useful
+in case you have done manual flushes earlier since many small flushes can
+reduce the effectiveness of the compression (and even make the compressed
+file bigger than the uncompressed version).
+
+Recompressing the file is an intensive operation, both in terms of CPU as
+in terms of I/O (the whole file is rewritten!). Use it sparingly!
+
 ```php
 /**
  * flush the data to the output file
+ *
+ *  Not recompressing is the default, so it's not strictly necessary
+ *  to provide the parameter in this case, it is only done for clarity
  */
-$output->flush();
+$output->flush(false);
 ```
