@@ -3,7 +3,7 @@
 Function that can be added to a plugin that is called every time a "MAIL FROM" instruction is received by MailerQ.
 
 ```
-bool mq_smtp_in_mailfrom(MQ_Context *context, MQ_SmtpConnection *connection, const char *mailfrom, size_t size);
+bool mq_smtp_in_mailfrom(MQ_Context *context, MQ_Connection *connection, const char *mailfrom, size_t size);
 
 ```
 

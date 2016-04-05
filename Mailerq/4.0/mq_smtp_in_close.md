@@ -3,7 +3,7 @@
 Function that can be implemented by a plugin, and that is called by MailerQ when an incoming SMTP connection is closed. This is the perfect moment for a plugin to run cleanup code, for example to deallocate memory that is assigned to the connection with the [MQ_SetSmtpData()](mq_setsmtpdata) function.
 
 ```
-bool mq_smtp_in_close(MQ_Context *context, MQ_SmtpConnection *connection);
+bool mq_smtp_in_close(MQ_Context *context, MQ_Connection *connection);
 
 ```
 

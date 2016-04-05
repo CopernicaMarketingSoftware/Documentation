@@ -19,7 +19,7 @@ This method is designed to run asynchronously. You should not execute any blocki
  *  @param  message     Access to the JSON message
  *  @return boolean     Do we accept control from here?
  */
-MQ_EXPORT bool mq_smtp_out_data(MQ_Context *context, MQ_SmtpConnection *connection, MQ_Message *message) {
+MQ_EXPORT bool mq_smtp_out_data(MQ_Context *context, MQ_Connection *connection, MQ_Message *message) {
     // in most cases, plugins implementing this function will alter the
     // message contents before it is sent. for this, you can use the
     // MQ_SetMime() function. other message properties can of

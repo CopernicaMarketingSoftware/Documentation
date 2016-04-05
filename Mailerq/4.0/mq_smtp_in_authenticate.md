@@ -7,7 +7,7 @@ Most plugins implement this function to add their own login administration syste
 This function should return false if MailerQ can stay in control, or true if the plugin takes over control (for example because it starts a non-blocking database lookup). If the plugin takes over control, it should of course give back control to MailerQ when the credentials lookup has been completed.
 
 ```
-bool mq_smtp_in_authenticate(MQ_Context *context, MQ_SmtpConnection *connection, const char *login, size_t loginsize, const char *passwd, size_t passwdsize);
+bool mq_smtp_in_authenticate(MQ_Context *context, MQ_Connection *connection, const char *login, size_t loginsize, const char *passwd, size_t passwdsize);
 
 ```
 

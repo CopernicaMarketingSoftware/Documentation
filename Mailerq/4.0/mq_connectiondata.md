@@ -12,7 +12,7 @@ The data pointer is segmented per plugin, so this function will not return data 
  *  @param  connection  the connection in which the data was stored
  *  @return void*
  */
-void *MQ_SmtpData(MQ_SmtpConnection *connection);
+void *MQ_SmtpData(MQ_Connection *connection);
 
 ```
 

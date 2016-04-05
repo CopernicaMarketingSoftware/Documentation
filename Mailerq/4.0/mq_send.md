@@ -14,6 +14,6 @@ MailerQ takes care of its own output buffering, so you can be sure that all data
  *  @param  size        size of the buffer
  *  @return size_t      number of bytes sent
  */
-size_t MQ_SmtpSend(MQ_SmtpConnection *connection, const void *buffer, size_t size);
+size_t MQ_SmtpSend(MQ_Connection *connection, const void *buffer, size_t size);
 
 ```

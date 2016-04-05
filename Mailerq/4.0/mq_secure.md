@@ -9,6 +9,6 @@ Returns whether the connection is secure or not. A connection is secure if it ha
  *  @param  connection  the connection that we want to know the status of
  *  @return bool
  */
-bool MQ_SmtpSecure(MQ_SmtpConnection *connection);
+bool MQ_SmtpSecure(MQ_Connection *connection);
 
 ```

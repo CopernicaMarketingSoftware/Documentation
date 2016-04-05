@@ -9,5 +9,5 @@ Set whether this connection should be considered authenticated. Note that if a p
  *  @param  connection  the connection that authentication should be set for
  *  @param  bool        should the credentials be considered valid
  */
-void MQ_SetSmtpAuthenticated(MQ_SmtpConnection *connection, bool authenticated);
+void MQ_SetSmtpAuthenticated(MQ_Connection *connection, bool authenticated);
 ````

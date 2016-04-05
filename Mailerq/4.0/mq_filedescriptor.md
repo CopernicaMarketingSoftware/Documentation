@@ -10,6 +10,6 @@ Get access to the socket filedescriptor that represents the underlying TCP conne
  *  @param  connection  the connection in which the data was stored
  *  @return int
  */
-int MQ_SmtpFileDescriptor(MQ_SmtpConnection *connection);
+int MQ_SmtpFileDescriptor(MQ_Connection *connection);
 
 ```

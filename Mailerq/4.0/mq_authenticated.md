@@ -9,5 +9,5 @@ Returns whether the connection is considered authenticated. If this is the first
  *  @param  connection  the connection that we want to know the status of
  *  @return bool
  */
-bool MQ_SmtpAuthenticated(MQ_SmtpConnection *connection);
+bool MQ_SmtpAuthenticated(MQ_Connection *connection);
 ````

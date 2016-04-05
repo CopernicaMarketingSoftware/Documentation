@@ -13,5 +13,5 @@ If the data is allocated by yourself, you will also have to make sure that the d
  *  @param  connection  the connection in which to store the data
  *  @param  void*       the data to store
  */
-void MQ_SetSmtpData(MQ_SmtpConnection *connection, void *data);
+void MQ_SetSmtpData(MQ_Connection *connection, void *data);
 ````
