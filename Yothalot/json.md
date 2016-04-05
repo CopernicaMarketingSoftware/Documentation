@@ -264,7 +264,9 @@ parallel.
         "executable": "path/to/executable",
         "arguments" : ["extra", "command", "line", "arguments"],
         "limits" : {
-            "processes": 100
+            "processes": 100,
+            "bytes": 10240,
+            "records": 5
         }
     },
     "reducer": {
@@ -325,6 +327,19 @@ process about the amount of data that the executable can process. Each
 "mapper", "reducer" and "finalizer" is going to be started in parallel,
 and with the "limits.processes" option, you can limit the max number
 of mappers/reducers/finalizers that are going to run at the same time.
+
+Besides being limited in the maximum number of started processes, mappers
+can also be limited in the number of bytes they process and the maximum number
+of records they process each. This is useful in those cases where you have very
+large files that would take long to process. If a file is, e.g., 10 GB, it might
+take some while for a single mapper to churn through it. Setting the maximum number
+of bytes to 10240 (10 MB) would allow up to 1024 different mapper processes.
+
+Similarly, if individual records take a long time to process - meaning that even
+splitting on say 10 MB would still be too slow, a limit can be set on the maximum
+number of records processed for each mapper. Please be aware that this setting in
+particular will increase I/O tremendously, making this feature only useful in a
+(mostly) CPU-bound scenario.
 
 The reducer and finalizer take a set of temporary files as input, and
 it is their job to reduce and finalize (write) this data. The
