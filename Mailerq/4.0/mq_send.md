@@ -1,10 +1,9 @@
-# Function MQ_SmtpSend
+# Function MQ_send
 
 Send raw data directly to the SMTP connection.
 
-MailerQ takes care of its own output buffering, so you can be sure that all data is always delivered, unless the connection is suddenly closed by the peer.
-
-**Watch out!** MailerQ normally takes care of performing all steps in the SMTP protocol. If you start sending data yourself, the SMTP connection may end up in an invalid state.
+MailerQ takes care of its own output buffering, so you can be sure that all 
+data is always delivered, unless the connection is suddenly closed by the peer.
 
 ```c
 /**
@@ -14,6 +13,6 @@ MailerQ takes care of its own output buffering, so you can be sure that all data
  *  @param  size        size of the buffer
  *  @return size_t      number of bytes sent
  */
-size_t MQ_SmtpSend(MQ_Connection *connection, const void *buffer, size_t size);
+size_t MQ_send(MQ_Connection *connection, const void *buffer, size_t size);
 
 ```
