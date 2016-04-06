@@ -1,6 +1,6 @@
 # Property `label`
 
-The `label` property is used inside [link blocks](ResponsiveEmail/json/block-link)
+The `label` property is used inside [link blocks](json/block-link)
 and should hold the text you have to click to be redirected to the configured link.
 
 ```javascript
@@ -18,4 +18,4 @@ and should hold the text you have to click to be redirected to the configured li
 ```
 
 For more information and more examples, please check the documentation
-of [link blocks](ResponsiveEmail/json/block-link).
+of [link blocks](json/block-link).

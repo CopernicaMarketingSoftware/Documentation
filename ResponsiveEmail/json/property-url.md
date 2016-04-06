@@ -1,10 +1,10 @@
 # Property `url`
 
-The `url` property is used inside [video blocks](ResponsiveEmail/json/block-video),
-[import blocks](ResponsiveEmail/json/block-import),
-[html blocks](ResponsiveEmail/json/block-html),
-[text blocks](ResponsiveEmail/json/block-text)
-and [feed blocks](ResponsiveEmail/json/block-feed) and should
+The `url` property is used inside [video blocks](json/block-video),
+[import blocks](json/block-import),
+[html blocks](json/block-html),
+[text blocks](json/block-text)
+and [feed blocks](json/block-feed) and should
 hold the location of the video, feed or any content depending on the block you want to add to your email.
 
 When it comes to recognizing video URI's we are pretty tolerant, you can simply
@@ -31,8 +31,8 @@ filter out the video identifier.
 ```
 
 For more information and more examples, please check the documentation of
-[video blocks](ResponsiveEmail/json/block-video),
-[import blocks](ResponsiveEmail/json/block-import),
-[html blocks](ResponsiveEmail/json/block-html),
-[text blocks](ResponsiveEmail/json/block-text)
-and [feed blocks](ResponsiveEmail/json/block-feed).
+[video blocks](json/block-video),
+[import blocks](json/block-import),
+[html blocks](json/block-html),
+[text blocks](json/block-text)
+and [feed blocks](json/block-feed).

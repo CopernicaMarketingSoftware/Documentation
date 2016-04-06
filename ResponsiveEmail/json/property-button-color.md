@@ -1,6 +1,6 @@
 # Property `color`
 
-The `color` property is a simple property inside [button blocks](ResponsiveEmail/json/block-button) 
+The `color` property is a simple property inside [button blocks](json/block-button) 
 used to set the color of the button. You can assign color names, as well as 
 hexadecimal color values.
 

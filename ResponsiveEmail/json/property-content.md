@@ -46,7 +46,7 @@ and a content section with a yellow background.
 
 ## Example output
 
-![](ResponsiveEmail/images/example-output-content.png)
+![](json/example-output-content.png)
 
 ## Sub properties
 

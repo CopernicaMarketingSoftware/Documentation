@@ -9,17 +9,17 @@ In this block you can set `label`, `title` and `link` properties.
 | Property | Value | Desc.                                                                                                                                                             |
 |:---------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "link" | Identifies the block as a link block                                                                                                                                 |
-| [label](ResponsiveEmail/json/property-link-label) | _string_ | The link text of the link                                                                              |
-| [link](ResponsiveEmail/json/property-link) | _object_ | Same as `url` except that the link property accepts another JSON block with extra options: `title`, `params`. |
-| [font](ResponsiveEmail/json/property-font) | _object_ | Font properties for the hyperlink                                                                             |
-| [margin](ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                                                                |
-| [padding](ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                                      |
-| [background](ResponsiveEmail/json/property-background) | _object_ | The background of the block.                                                                      |
-| [align](ResponsiveEmail/json/property-align) | _string_ | The alignment of the link.                                                                                  |
-| [css](ResponsiveEmail/json/property-css) | _object_ | Add custom css to the link                                                                                      |
-| [attributes](ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the link                                                            |
-| [rewrite](ResponsiveEmail/json/property-rewrite) | _object_ | Rewrite rules for the link                                                                              |
-| [container](ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell in which this block is wrapped                                         |
+| [label](json/property-link-label) | _string_ | The link text of the link                                                                              |
+| [link](json/property-link) | _object_ | Same as `url` except that the link property accepts another JSON block with extra options: `title`, `params`. |
+| [font](json/property-font) | _object_ | Font properties for the hyperlink                                                                             |
+| [margin](json/property-margin) | _mixed_ | Whitespace around the block                                                                                |
+| [padding](json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                                      |
+| [background](json/property-background) | _object_ | The background of the block.                                                                      |
+| [align](json/property-align) | _string_ | The alignment of the link.                                                                                  |
+| [css](json/property-css) | _object_ | Add custom css to the link                                                                                      |
+| [attributes](json/property-attributes) | _object_ | Add custom HTML attributes to the link                                                            |
+| [rewrite](json/property-rewrite) | _object_ | Rewrite rules for the link                                                                              |
+| [container](json/property-container) | _object_ | Get access to the table cell in which this block is wrapped                                         |
 
 ## Example
 

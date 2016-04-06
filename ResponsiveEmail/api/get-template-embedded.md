@@ -6,14 +6,14 @@ into a MIME object, including both the HTML and text version, and all
 attachments.
 
 All the images that you've included images in your email, either via 
-[`image blocks`](ResponsiveEmail/json/block-image)
-or via `<img>` tags inside [`html blocks`](ResponsiveEmail/json/block-html),
+[`image blocks`](json/block-image)
+or via `<img>` tags inside [`html blocks`](json/block-html),
 will be downloaded by `responsiveemail.com`, and will be embedded in the output mime.
 
 In general, it is considered not to be a good practice to use embedded images. 
 It makes the MIME output much larger, and your email will be more vulnerable 
 to be blocked by spam and/or virus filters. For this reason it's better use the 
-[mime api call](ResponsiveEmail/api/get-template-mime) to retrieve
+[mime api call](api/get-template-mime) to retrieve
 the MIME with the original image url's still intact.
 
 ## Example request
@@ -47,4 +47,4 @@ first header is the HTTP header, and the second header is part of the returned e
 ## Related information
 
 You can only retrieve the MIME code of templates that you created earlier with
-a POST call to the [/v1/template](ResponsiveEmail/api/post-template) method.
+a POST call to the [/v1/template](api/post-template) method.

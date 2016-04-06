@@ -27,4 +27,4 @@ The following properties are supported:
 | Property | Value | Description                                                                                  |
 |:---------|-------|----------------------------------------------------------------------------------------------|
 | type | "import" | Identifies the block as a import block.                                                       |
-| [url](ResponsiveEmail/json/property-url) | _string_ | The source URI of the JSON to import       |
+| [url](json/property-url) | _string_ | The source URI of the JSON to import       |

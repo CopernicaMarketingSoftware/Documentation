@@ -24,15 +24,15 @@ above example.
 
 ## Personalization
 
-In order to [personalize](ResponsiveEmail/personalization) the output it's possible to
+In order to [personalize](personalization) the output it's possible to
 provide additional key-value pairs containing personalization data as parameters
 to the GET request. Without these parameters an unpersonalized output will be returned.
 
 ## Related information
 
 Note that the returned HTML code is optimized for *web browsers*. If the template 
-JSON contains [visibility properties](ResponsiveEmail/json/property-visibility) 
+JSON contains [visibility properties](json/property-visibility) 
 that limit certain blocks to only be visible in an email, then these blocks will 
 not be included in the returned HTML code. If you want to fetch the HTML version 
-of an email optimized to use in email messages, use the [/v1/template/{ID}/html](ResponsiveEmail/api/get-template-html) 
+of an email optimized to use in email messages, use the [/v1/template/{ID}/html](api/get-template-html) 
 method instead.

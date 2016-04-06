@@ -54,7 +54,7 @@ and a text about _banana's_ written in Arial.
 } 
 ```
 
-[Read more about font properties](ResponsiveEmail/json/property-font)
+[Read more about font properties](json/property-font)
 
 ### Property background
 
@@ -179,4 +179,4 @@ properties or element attributes you would like to add to the container element.
 }
 ```
 
-[Read more about the container property](ResponsiveEmail/json/property-container)
+[Read more about the container property](json/property-container)

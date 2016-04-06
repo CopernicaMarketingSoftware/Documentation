@@ -1,9 +1,9 @@
 # Property `size`
 
 The `size` property is a simple property inside
-[button blocks](ResponsiveEmail/json/block-button) used to set
-the size of the button. This works just like the [`padding`](ResponsiveEmail/json/property-padding)
-and [`margin`](ResponsiveEmail/json/property-margin) blocks. As
+[button blocks](json/block-button) used to set
+the size of the button. This works just like the [`padding`](json/property-padding)
+and [`margin`](json/property-margin) blocks. As
 in you can specify the top, bottom, left and right size.
 
 ## Example use

@@ -84,9 +84,9 @@ values:
 ## Related information
 
 The sender addresses are stored in the header of the email. Other 
-[top level properties](ResponsiveEmail/json/top-level-properties) 
+[top level properties](json/top-level-properties) 
 to change the mime header of the generated mime are for example 
-[`subject`](ResponsiveEmail/json/property-subject), 
-[`to`](ResponsiveEmail/json/property-to), 
-[`cc`](ResponsiveEmail/json/property-cc) and the property 
-[`headers`](ResponsiveEmail/json/property-headers).
+[`subject`](json/property-subject), 
+[`to`](json/property-to), 
+[`cc`](json/property-cc) and the property 
+[`headers`](json/property-headers).

@@ -1,6 +1,6 @@
 # Property `height`
 
-The `height` property is used inside [separator blocks](ResponsiveEmail/json/block-separator)
+The `height` property is used inside [separator blocks](json/block-separator)
 to configure how much whitespace it should represent, this will default to 4px.
 
 ```javascript
@@ -27,4 +27,4 @@ to configure how much whitespace it should represent, this will default to 4px.
 ```
 
 For more information and more examples, please check the documentation
-of [separator blocks](ResponsiveEmail/json/block-separator).
+of [separator blocks](json/block-separator).

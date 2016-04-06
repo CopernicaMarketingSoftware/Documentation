@@ -3,7 +3,7 @@
 One of the ideas behind responsive email is that you can include or exclude 
 content based on the device on which the email is opened. That is exactly
 what the `device` property is for. This is a properted nested inside the
-[`visibility`](ResponsiveEmail/json/property-visibility) property, 
+[`visibility`](json/property-visibility) property, 
 and that accepts a string value to specify whether the content should be
 visible when the email is opened on a mobile device and/or on a desktop computer.
 

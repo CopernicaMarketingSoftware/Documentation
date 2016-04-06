@@ -1,7 +1,7 @@
 # Property `ouput`
 
 The `output` property is a deeply nested property that can be used inside
-the [`visibility`](ResponsiveEmail/json/property-visibility) 
+the [`visibility`](json/property-visibility) 
 property to specify under which circumstances a block should be included in the mail.
 
 The responsive email API can generate two versions of an email message based
