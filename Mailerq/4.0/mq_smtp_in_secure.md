@@ -5,7 +5,7 @@ When an incoming SMTP connection is turned into a secure SMTP connection, Mailer
 Your function should return true if you want your plugin to take over control from MailerQ, or false if control should stay with MailerQ.
 
 ```
-bool mq_smtp_in_secure(MQ_Context *context, MQ_SmtpConnection *connection);
+bool mq_smtp_in_secure(MQ_Context *context, MQ_Connection *connection);
 
 ```
 
