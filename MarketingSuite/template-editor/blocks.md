@@ -5,16 +5,16 @@ The drag and drop editor enables you to create email designs from smaller fragme
 
 There are couple of different types of blocks available:
 
-- [Button block](MarketingSuite/template-editor/blocks/button)
-- [Column block](MarketingSuite/template-editor/blocks/column)
-- [Heading block](MarketingSuite/template-editor/blocks/heading)
-- [Image block](MarketingSuite/template-editor/blocks/image)
-- [Separator block](MarketingSuite/template-editor/blocks/separator)
-- [Spacer block](MarketingSuite/template-editor/blocks/spacer)
-- [Text block](MarketingSuite/template-editor/blocks/text)
-- [Video block](MarketingSuite/template-editor/blocks/video)
-- [Webversion block](MarketingSuite/template-editor/blocks/webversion)
-- [Follow us block](MarketingSuite/template-editor/blocks/follow-us)
+- [Button block](blocks/button)
+- [Column block](blocks/column)
+- [Heading block](blocks/heading)
+- [Image block](blocks/image)
+- [Separator block](blocks/separator)
+- [Spacer block](blocks/spacer)
+- [Text block](blocks/text)
+- [Video block](blocks/video)
+- [Webversion block](blocks/webversion)
+- [Follow us block](blocks/follow-us)
 
 ## Adding blocks
 

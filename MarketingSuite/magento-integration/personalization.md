@@ -10,7 +10,7 @@ All variables are personalized for each destination. Simply put, when sending an
 to a target that contains customers with addresses 'john.doe@example.com' and
 'tim.smith@example.com', Tim Smith will see his own email address in the email. 
 
-Email personalization for Magento targets follows the same rules as [personalization](MarketingSuite/template-editor/personalization) for targets based on selections and miniselections. However, there are some differences which we'll describe below. 
+Email personalization for Magento targets follows the same rules as [personalization](../template-editor/personalization) for targets based on selections and miniselections. However, there are some differences which we'll describe below. 
 
 ### No need to specify $profile and $subprofile 
 
@@ -38,13 +38,13 @@ available for given the different Magento targets.
 
 | Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  | Guests list |
 |:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|:-----------:|
-| $magento \*     | [magento](MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           | Yes         |
-| $customer       | [customer](MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     | No          |
-| $guest          | [guest](MarketingSuite/magento-integration/object/guest)            | No             | No          | No          | No               | No            | Yes         |
-| $quote          | [quote](MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
-| $order          | [order](MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            | Yes         |
-| $person         | [person](MarketingSuite/magento-integration/object/person)          | No             | Yes         | No          | No               | Yes           | No          |
-| $subscriber     | [subscriber](MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
+| $magento \*     | [magento](object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           | Yes         |
+| $customer       | [customer](object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     | No          |
+| $guest          | [guest](object/guest)            | No             | No          | No          | No               | No            | Yes         |
+| $quote          | [quote](object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
+| $order          | [order](object/order)            | No             | Yes         | No          | No               | No            | Yes         |
+| $person         | [person](object/person)          | No             | Yes         | No          | No               | Yes           | No          |
+| $subscriber     | [subscriber](object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
 
 _\* As you can see in the table, the variable `$magento` is the only one variable available
 in all list types._ 
@@ -65,18 +65,18 @@ and a subscriber can also be a customer.
 
 Below is a list of object types that can be returned from various properties:
 
-* [Address](MarketingSuite/magento-integration/object/address)
-* [Category](MarketingSuite/magento-integration/object/category)
-* [Customer](MarketingSuite/magento-integration/object/customer)
-* [Guest](MarketingSuite/magento-integration/object/guest)
-* [Magento](MarketingSuite/magento-integration/object/magento)
-* [Order](MarketingSuite/magento-integration/object/order)
-* [OrderItem](MarketingSuite/magento-integration/object/order-item)
-* [Person](MarketingSuite/magento-integration/object/person)
-* [Product](MarketingSuite/magento-integration/object/product)
-* [Quote](MarketingSuite/magento-integration/object/quote)
-* [QuoteItem](MarketingSuite/magento-integration/object/quote-item)
-* [Subscriber](MarketingSuite/magento-integration/object/subscriber)
-* [Webstore](MarketingSuite/magento-integration/object/webstore)
-* [Wishlist](MarketingSuite/magento-integration/object/wishlist)
-* [WishlistItem](MarketingSuite/magento-integration/object/wishlist-item)
+* [Address](object/address)
+* [Category](object/category)
+* [Customer](object/customer)
+* [Guest](object/guest)
+* [Magento](object/magento)
+* [Order](object/order)
+* [OrderItem](object/order-item)
+* [Person](object/person)
+* [Product](object/product)
+* [Quote](object/quote)
+* [QuoteItem](object/quote-item)
+* [Subscriber](object/subscriber)
+* [Webstore](object/webstore)
+* [Wishlist](object/wishlist)
+* [WishlistItem](object/wishlist-item)

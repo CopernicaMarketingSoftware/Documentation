@@ -5,11 +5,11 @@ Those are considered the basic building blocks used to setup a Magento installat
 
 The **Magento website** represents the actual website that can be found under given
 URL. Each of **Magento websites** can have one or more **Magento stores**. Each 
-[Magento product](MarketingSuite/magento-integration/object/product)
+[Magento product](product)
 has to be assigned to website to be visible on that website.
 
 **Magento store** should represent an actual store. Instead it represents a part
-of a Magento website with the given [category](MarketingSuite/magento-integration/object/category) or categories. 
+of a Magento website with the given [category](category) or categories. 
 
 To limit amount of products available inside given store. **Magento store** can
 have one or more **Magento views**.
@@ -20,10 +20,10 @@ a product category.
 
 The `Webstore` object aggregates this data into one object. 
 
-[Customer](MarketingSuite/magento-integration/object/customer),
-[order](MarketingSuite/magento-integration/object/order), 
-[quote](MarketingSuite/magento-integration/object/quote)
-and [subscriber](MarketingSuite/magento-integration/object/subscriber) 
+[Customer](customer),
+[order](order), 
+[quote](quote)
+and [subscriber](subscriber) 
 are linked to **Magento view**
 
 ## Personalization properties
@@ -34,11 +34,11 @@ are linked to **Magento view**
 | name          | _string_                                                                       | Name of **Magento view** associated with webstore object.                                                                      |
 | group         | _string_                                                                       | Name of **Magento store** associated with webstore object.                                                                     |
 | website       | _string_                                                                       | Name of **Magento website** associated with webstore object.                                                                   |
-| rootCategory  | _[Category](MarketingSuite/magento-integration/object/category)		 | The root category of a webstore. It's possible that webstore doesn't have a root category. If so, NULL value will be returned. | 
+| rootCategory  | _[Category](category)		 | The root category of a webstore. It's possible that webstore doesn't have a root category. If so, NULL value will be returned. | 
 
 ## Examples
 
-Using a [customers target](MarketingSuite/magento-integration/targets/customers) 
+Using a [customers target](../targets/customers) 
 to send simple confirmation email:
 
 ```

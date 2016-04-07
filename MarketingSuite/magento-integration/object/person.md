@@ -36,8 +36,8 @@ Of course, the individual guest orders remain in tact and can still be accessed 
 | middlename      | _string_                                                                                             | Person's middle name.                                                                        |
 | lastname        | _string_                                                                                             | Person's last name.                                                                          | 
 | gender          | _string_                                                                                             | Person's gender. 'male' or 'female' are expected. When unknown FALSE value will be returned. |
-| customer        | _[Customer](MarketingSuite/magento-integration/object/customer)_           		                 | Customer object assigned to person.                                                        | 
-| webstore        | _[Webstore](MarketingSuite/magento-integration/object/webstore)_                        		 | Webstore object assigned to person.                                                        |
-| orders          | _collection of [Order](MarketingSuite/magento-integration/object/order)_ 		                 | Collection of all person's orders. Placed as customer or guest likewise.                     |
-| quotes          | _collection of [Quote](MarketingSuite/magento-integration/object/quote)_             	 	 | Collection of all person's quotes.                                                           |
-| guests          | _collection of [Guest](MarketingSuite/magento-integration/object/guest)_             		 | Collection of all guest objects assigned to person.                                        |
+| customer        | _[Customer](customer)_           		                 | Customer object assigned to person.                                                        | 
+| webstore        | _[Webstore](webstore)_                        		 | Webstore object assigned to person.                                                        |
+| orders          | _collection of [Order](order)_ 		                 | Collection of all person's orders. Placed as customer or guest likewise.                     |
+| quotes          | _collection of [Quote](quote)_             	 	 | Collection of all person's quotes.                                                           |
+| guests          | _collection of [Guest](guest)_             		 | Collection of all guest objects assigned to person.                                        |

@@ -1,5 +1,5 @@
 # Unsubscribe link block
-The **unsubscribe link** is similar to the [webversion link](MarketingSuite/template-editor/blocks/webversion), 
+The **unsubscribe link** is similar to the [webversion link](webversion), 
 the only difference being that by clicking on this link the subscriber will 
 remove himself from the mailing list. 
 

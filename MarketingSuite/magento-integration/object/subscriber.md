@@ -1,7 +1,7 @@
 # Subscriber object
 
 A subscriber is a someone that subscribed to a newsletter. Optionally, he can be 
-linked to a registered [customer](MarketingSuite/magento-integration/object/customer). 
+linked to a registered [customer](customer). 
 
 Magento offers two different newsletter subscription procedures: the single opt-in and the 
 double opt-in. In a single opt-in procedure, the user is subscribed directly after he entered his
@@ -58,13 +58,13 @@ The status of a subscriber changes in response to subscriber's actions.
 | Property name | Property type                                                                    | Description                                              |
 |---------------|----------------------------------------------------------------------------------|----------------------------------------------------------|
 | ID            | _number_                                                                         | The original subscriber ID from Magento                  |
-| webstore      | _[Webstore](MarketingSuite/magento-integration/object/webstore)_ 		   | Webstore in which subscriber subscribed                  |
-| customer      | _[Customer](MarketingSuite/magento-integration/object/customer)_ 		   | Optional customer linked to subscriber                   |
+| webstore      | _[Webstore](webstore)_ 		   | Webstore in which subscriber subscribed                  |
+| customer      | _[Customer](customer)_ 		   | Optional customer linked to subscriber                   |
 | modified      | _string_                                                                         | Last date that subscription status was changed.          |
 | status        | _string_                                                                         | Subscription status. More detailed explanation is above. |
 | email         | _string_                                                                         | Subscriber's email                                       |
 | isSubscribed  | _boolean_                                                                        | Is subscriber subscribed?                                |
-| person        | _[Person](MarketingSuite/magento-integration/object/person)_     		   | Person assigned to this subscriber.                      |
+| person        | _[Person](person)_     		   | Person assigned to this subscriber.                      |
 
 ## Examples
 

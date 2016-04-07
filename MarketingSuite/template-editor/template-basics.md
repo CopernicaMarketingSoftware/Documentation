@@ -41,4 +41,4 @@ sizes.
 There's also a print button, in case you want to send your newsletter by
 postal service. Don't forget to stamp the envelope sufficient before sending.
 
-[Next personalization](MarketingSuite/template-editor/personalization)
+[Next personalization](personalization)
