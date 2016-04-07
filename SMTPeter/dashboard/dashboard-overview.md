@@ -10,25 +10,25 @@ access and manage your configuration.
 In the administration tab you can edit your company details, see the users 
 tied to your company and view your license and billing information. 
 
-[Administration overview](dashboard/administration "The Administration dashboard")
+[Administration overview](administration "The Administration dashboard")
 
 ## API access
 
 In the API access you can create and manage your REST API token and
 SMTP credentials, which are needed to connect with SMTPeter. 
 
-[Creating a REST API token](dashboard/rest-api-token "Creating REST API tokens")
+[Creating a REST API token](rest-api-token "Creating REST API tokens")
 
-[Setting up SMTP credentials](dashboard/smtp-credentials "Setting up SMTP credentials")
+[Setting up SMTP credentials](smtp-credentials "Setting up SMTP credentials")
 
 ## Configuration
 
 In the configuration tab you can set your configuration options for SMTPeter. Here you can 
 view and update your DKIM keys and configure your bounce management. 
 
-[Configuring DKIM keys](dashboard/dkim-keys "Configuring DKIM keys")
+[Configuring DKIM keys](dkim-keys "Configuring DKIM keys")
 
-[Bounce Management](dashboard/bounce-management "Configuring bounce management")
+[Bounce Management](bounce-management "Configuring bounce management")
 
 
 <!---

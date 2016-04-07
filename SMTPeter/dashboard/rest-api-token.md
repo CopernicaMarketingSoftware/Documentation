@@ -15,4 +15,4 @@ that specific can not be restored and a new token will have to be generated.
 old API token and revoke its access. Afterwards you will have to use your new token to access
 our API. 
 
-[Read our REST API Documentation](api-documentation/rest-api "REST API Documentation")
+[Read our REST API Documentation](../rest-api "REST API Documentation")

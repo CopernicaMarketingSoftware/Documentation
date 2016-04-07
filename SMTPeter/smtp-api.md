@@ -18,7 +18,7 @@ create an SMTP login via the dashboard. Make sure to write down your password
 somewhere safe, it is only shown once.
 
 The SMTP login is used to authenticate with SMTPeter and allows you to enable
-[SMTPeter's features](features). You can have multiple logins
+[SMTPeter's features](rest-features). You can have multiple logins
 with different features enabled. The login has to be included whenever you send
 email via SMTPeter. In order to login you should configure your application to
 authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
