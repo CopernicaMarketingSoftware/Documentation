@@ -7,10 +7,10 @@
     * [DKIM signing](dkim-signing)
     * [SPF validation](spf-validation)
     * [DMARC deployment](dmarc-deployment)
-    * [Email archiving](archiving)
+<!---    * [Email archiving](archiving)
     * [Web version hosting](webversion)
     * [Follow up actions and scripting](scripting)
-    * [Unsubscribe handling](unsubscribe-handling)
+    * [Unsubscribe handling](unsubscribe-handling) --->
 * [SMTP API](smtp-api)
     * [Credentials](smtp-credentials)
     * [Hostname and port numbers](smtp-ports)
@@ -22,8 +22,10 @@
     * [Construct MIME](rest-mime)
     * [Configuration via REST](rest-configuration)
     * [Log files](rest-logfiles)
+    * [DMARC reports](rest-dmarc)
     * [Retrieve messages](rest-messages)
-* [Warming up IP addresses](copernica-docs:SMTPeter/warming-up-ip-address "Warming up IP addresses")
+<!---    
+* [Warming up IP addresses](copernica-docs:SMTPeter/warming-up-ip-address "Warming up IP addresses") --->
 * [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
 * [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
 

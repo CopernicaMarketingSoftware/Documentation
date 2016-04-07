@@ -1,12 +1,14 @@
 # Retrieving sent messages
 
 All emails that you send through SMTPeter are [archived](copernica-docs:SMTPeter/archiving "Email archiving").
-With the "text" and "html" REST methods you can retrieve the text and html
-from these messages. The URIs that belong to these methods are:
+With the "text", "html", and "header" REST GET methods you can retrieve
+the text, html, and headers from these messages. The URIs that belong to
+these methods are:
 
 ```text
 https://www.smtpeter.com/v1/text/MESSAGEID?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/html/MESSAGEID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/header/MESSAGEID?access_token=YOUR_API_TOKEN
 ```
 
 ## Get the text of a stored message
@@ -32,5 +34,17 @@ https://www.smtpeter.com/v1/html/MESSAGEID?access_token=YOUR_API_TOKEN
 where MESSAGEID is the the id of the message. You receive the html of the
 message as text/html.
 
+
+## Get the header of a stored message
+
+You can access the header of each message you have sent via the header method
+together with the id of the message for which you want the header. The URI
+of this call is:
+
+```text
+https://www.smtpeter.com/v1/header/MESSAGEID?access_token=YOUR_API_TOKEN
+```
+where MESSAGEID is the unique id of the message for which you want to get
+the header. The header is send as plain text.
 
 <!--- @todo get messageIDs for a particular date --->

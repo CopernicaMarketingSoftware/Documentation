@@ -1,32 +1,41 @@
 # DMARC logfiles
 
-The clicks logfiles have information about the clicks that are generated
-by your mailings. The available information is:
+The dmarc logfiles have information about which dmarc reports are available
+for your account. The available information in the log files is:
 
-* Message that generated the click
-* The time of the click
-* All server headers
-* The url that was clicked
-* The original url
+* time
+* organization name
+* email
+* report id
+* begin
+* end
+* domain
+* sending domain
+* filename
+
+This information can be obtained by [downloading](rest-logfiles) a DMARC
+log file. With this information you can [download](rest-dmarc) the actual
+DMARC report.
 
 
-This information can be obtained by [downloading](rest-logfiles) a clicks log file.
-<!--- @todo add clicks method  when available --->
-
-## The clicks csv logfile
-
-A [downloaded](rest-logfiles) clicks log file has the CSV format and contains the following data
+## the dmarc csv log file
+A [downloaded](rest-logfiles) dmarc log file has the CSV format and contains the following data
 in the respective order:
 
-| Data                | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
-| MessageID           | The id of the message that generated the click                      |
-| Time stamp          | The time of the click in the form YYYY-MM-DD hh:mm:ss               |
-| The server headers  | The headers that where used to make the call, separated by newlines |
-| The IP adress       | The IP address of the system where the link was clicked             |
-| The message URL     | The URL in the message that was clicked                             |
-| The destination URL | The URL to which the clicker was directed to                        |
+| Data                | Description                                           |
+| ------------------- | ----------------------------------------------------- |
+| time                | The time when we have received the dmarc report       |
+| organization name   | The name of the organization who has sent the report  |
+| email               | The email address from which we received the report   |
+| report id           | The unique (for that domain) report ID                |
+| begin               | The begin time of the period covered by the report    |
+| end                 | The end time of the period covered by the report      |
+| domain              | The domain that is covered by the report              |
+| sending domain      | The domain that has sent the report (1)               |
+| filename            | The filename of the report                            |
 
-Some fields in the returned CSV file contain newlines, so a script that
-processes the CSV file needs to be a little smarter than just look for
-the next newlines to find the next record.
+(1): For some old files the sending domain is determined on the domain of
+the address that has send the report. It turned out that some reports are
+send via a different address that the domain that is covered by the report
+(an example is microsoft.com who also sends reports for hotmail.com). This
+is solved in new records.
