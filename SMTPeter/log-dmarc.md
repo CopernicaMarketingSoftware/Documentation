@@ -22,17 +22,16 @@ DMARC report.
 A [downloaded](rest-logfiles) dmarc log file has the CSV format and contains the following data
 in the respective order:
 
-| Data                | Description                                           |
-| ------------------- | ----------------------------------------------------- |
-| time                | The time when we have received the dmarc report       |
-| organization name   | The name of the organization who has sent the report  |
-| email               | The email address from which we received the report   |
-| report id           | The unique (for that domain) report ID                |
-| begin               | The begin time of the period covered by the report    |
-| end                 | The end time of the period covered by the report      |
-| domain              | The domain that is covered by the report              |
-| sending domain      | The domain that has sent the report (1)               |
-| filename            | The filename of the report                            |
+| Data                | Description                                                          |
+| ------------------- | -------------------------------------------------------------------- |
+| time                | The time when we have received the dmarc report (YYYY-MM-DD hh:mm:ss |
+| organization name   | The name of the organization who has sent the report                 |
+| email               | The email address from which we received the report                  |
+| report id           | The unique (for that domain) report ID                               |
+| begin               | The begin time of the period covered by the report                   |
+| end                 | The end time of the period covered by the report                     |
+| domain              | The domain that is covered by the report                             |
+| sending domain      | The domain that has sent the report (1)                              |
 
 (1): For some old files the sending domain is determined on the domain of
 the address that has send the report. It turned out that some reports are

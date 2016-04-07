@@ -78,4 +78,6 @@ https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log?access_token=
 This returns a CSV file. Some fields in the returned CSV file contain
 newlines, so a script that processes the CSV file needs to be a little
 smarter than just look for the next newlines to find the next record.
+To get more information about the content of the CSV files you can click
+the links in the table above.
 
