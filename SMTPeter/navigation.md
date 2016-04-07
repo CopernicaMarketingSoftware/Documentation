@@ -22,7 +22,7 @@
     * [Construct MIME](rest-mime)
     * [Log files](rest-logfiles)
     * [Retrieve messages](rest-messages)
-* [Warming up IP addresses](SMTPeter/warming-up-ip-address "Warming up IP addresses")
-* [License and Billing](SMTPeter/license-and-billing "License & Billing")
-* [Responsive Email](SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
+* [Warming up IP addresses](warming-up-ip-address "Warming up IP addresses")
+* [License and Billing](license-and-billing "License & Billing")
+* [Responsive Email](responsive-email "Using SMTPeter with ResponsiveEmail")
 

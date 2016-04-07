@@ -8,7 +8,7 @@ guide to quickly start sending your email through SMTPeter.
 First things first: before you start using SMTPeter, you first need to 
 [create an account](https://www.smtpeter.com/app/#/menu/register "create an account"). 
 Creating an account gives you access to your 
-[SMTPeter Dashboard](SMTPeter/dashboard/dashboard-overview "Dashboard Documentation"). 
+[SMTPeter Dashboard](dashboard/dashboard-overview "Dashboard Documentation"). 
 In this dashboard you can access and edit all your administrative, 
 SMTP/REST api access and configuration information. 
 
@@ -76,10 +76,10 @@ in a single "call", the SMTP protocol was not designed to do so. Our REST API ac
 on its endpoint. 
 
 If you want to use SMTPeter with Postfix, please follow our 
-[Using SMTPeter with Postfix guide](SMTPeter/quick-start/postfix "Using SMTPeter with Postfix").
+[Using SMTPeter with Postfix guide](quick-start/postfix "Using SMTPeter with Postfix").
 
 If you are already sending through SMTP or want to send through SMTP you should 
-read our [SMTP API quick start guide](SMTPeter/quick-start/smtp-api)
+read our [SMTP API quick start guide](quick-start/smtp-api)
 
 If you want to use our REST API go to our 
-[REST API quick start guide](SMTPeter/quick-start/rest-api)
+[REST API quick start guide](quick-start/rest-api)

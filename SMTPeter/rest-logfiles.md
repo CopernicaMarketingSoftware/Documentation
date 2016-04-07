@@ -59,11 +59,11 @@ prefixes exist:
 | -------------------------------------------------------------- | ---------------------------------------------------- |
 | attempts                                                       | information about all messages sent through SMTPeter |
 | bounces                                                        | information about messages that bounced              |
-| [clicks](SMTPeter/log-clicks "clicks log file") | information about the clicks generated               |
+| [clicks](log-clicks "clicks log file") | information about the clicks generated               |
 | deliveries                                                     | information about the messages delivered             |
 | dmarc                                                          | information about received dmarc reports             |
 | failures                                                       | information about failed deliveries                  |
-| [opens](SMTPeter/log-opens "opens log file")    | information about when messages are opened           |
+| [opens](log-opens "opens log file")    | information about when messages are opened           |
 
 
 ## Downloading files
