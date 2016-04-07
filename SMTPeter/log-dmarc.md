@@ -1,26 +1,9 @@
 # DMARC logfiles
 
-The dmarc logfiles have information about which dmarc reports are available
-for your account. The available information in the log files is:
-
-* time
-* organization name
-* email
-* report id
-* begin
-* end
-* domain
-* sending domain
-* filename
-
-This information can be obtained by [downloading](rest-logfiles) a DMARC
-log file. With this information you can [download](rest-dmarc) the actual
-DMARC report.
-
-
-## the dmarc csv log file
-A [downloaded](rest-logfiles) dmarc log file has the CSV format and contains the following data
-in the respective order:
+Log files with the prefix "dmarc" hold information about which dmarc reports
+are available for your account. You can download the content of these files
+in CSV format using the [REST logfiles API](rest-logfiles). These log files
+contain the following data in the respective order:
 
 | Data                | Description                                                          |
 | ------------------- | -------------------------------------------------------------------- |

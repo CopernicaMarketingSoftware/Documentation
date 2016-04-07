@@ -1,20 +1,8 @@
 # Attempts log files
 
-Every message that is sent to SMTPeter shows up in the attempts log files.
-The available information in theses log files is:
-
-* id
-* receive
-* envelope
-* recipient
-* properties
-* tags
-
-
-## The attempts CSV log file
-
-A [downloaded](rest-logfiles) attempts log file has the CSV format and
-contains the following data in the respective order:
+Every message that is sent to SMTPeter is logged in log files with the prefix
+"attempts". You can download the content of these files in CSV format using the [REST logfiles API](rest-logfiles).
+These log files contain the following data in the respective order:
 
 | Data       | Description                                                                                                             |
 | -----------| ----------------------------------------------------------------------------------------------------------------------- |
