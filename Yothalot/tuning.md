@@ -11,11 +11,23 @@ algorithm.
 
 ## Limiting the amount of data processed per mapper
 
-By default, Yothalot will assign an input file to be mapped to a single mapper.
-This means that if you are mapping three (3) input files, you can expect at
-most three (3) mapper processes to be started. If processing a single file
-takes a long time, you may wish to start multiple mapper processes for a single
-file. This is controlled by the *limits* property inside the mapper JSON.
+When you add key/value pairs to a mapper job, Yothalot stores this input in
+temporary input files. These files are then opened by the mapper processes
+and the records in them extracted to be processed.
+
+If you do not any do any tuning, yothalot will write all the input for the
+mappers to a single file, which, by default, will be processed by a single
+mapper, which means the mapping part will not use any kind of parallellism.
+
+There are a few ways to deal with this, depending on the kind of workload
+you have. One way is to manually call flush() on the job after every few
+records. This will close the file and start a new one. The maximum number
+of mappers is then the number of times that flush() is called + 1.
+
+Another option is to limit the number of bytes and/or the number of records
+that each mapper is allowed. If you do this, you need not manually call
+flush, Yothalot will split up the task on its own. Controlling this is
+done through the *limits* property inside the mapper JSON.
 There are two interesting properties that can be set here:
 
 * **bytes**     - max number of bytes to be processed by a single mapper
@@ -39,13 +51,6 @@ will be parsed (but not used!). To mitigate this problem, it is advised to set
 the *bytes* limit to the smallest possible option (the split size of the file,
 which defaults to 10 MB). This way, the mapper only has to search from the start
 of the split, and not the start of the entire file.
-
-The only reason to use the *records* property and not use the *bytes* property
-at the same time might be when you need each mapper to process a very specific
-amount of records. Setting the *bytes* property might cause the final mapper of
-a split to not reach the maximum number of records. This should not be an issue
-for a normal workload, so in practically all cases you'll want to use these
-options together.
 
 ## Setting the modulo
 
