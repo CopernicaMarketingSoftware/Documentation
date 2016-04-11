@@ -86,10 +86,10 @@ GitHub](https://github.com/CopernicaMarketingSoftware/PHP-JS), or one
 of the [versioned releases](https://github.com/CopernicaMarketingSoftware/PHP-JS/releases).
 
 Before installing PHP-JS you'll have to copy 2 files from the v8 installation directory.
-You'll have to copy out/native/natives_blob.bin and out/native/snapshot_blob.bin into the
+You'll have to copy `out/native/natives_blob.bin` and `out/native/snapshot_blob.bin` into the
 PHP-JS directory. We can't ship these files as they depend on your local v8 build.
-After you've done this you can simply compile PHP-JS using `make`. To then install
-it systemwide using `sudo make install`.
+After you've done this you can simply compile PHP-JS using ```make```. To then install
+it systemwide using ```sudo make install```.
 
 *Watch out*! Although the "sudo make install" instruction mentioned above works on 
 most systems, on some environments you will have to do some things manually.
