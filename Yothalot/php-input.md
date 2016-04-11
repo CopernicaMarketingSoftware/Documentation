@@ -74,7 +74,7 @@ $record = $input->next();
 Besides using next(), you can iterate over the [records](copernica-docs:Yothalot/record)
 stored in the file works using foreach. 
 ```php
-$input = new Yothalot\input("/path/to/file.log");
+$input = new Yothalot\Input("/path/to/file.log");
 foreach ($input as $record){
     echo("record id: ".$record->identifier()."\n");
 }
