@@ -70,7 +70,7 @@ export PATH=`pwd`/depot_tools:"$PATH"
 gclient
 fetch v8
 cd v8
-git checkout 4.4.9.1
+git checkout 5.1.299
 make library=shared i18nsupport=off native
 sudo cp include/*.h /usr/include
 sudo cp out/native/lib.target/libv8.so /usr/lib 
@@ -85,25 +85,11 @@ between installing the latest [bleeding edge unstable version from
 GitHub](https://github.com/CopernicaMarketingSoftware/PHP-JS), or one
 of the [versioned releases](https://github.com/CopernicaMarketingSoftware/PHP-JS/releases).
 
-To download and install the unstable version, just copy-and-paste the following
-instructions to your terminal:
-
-```bash
-git clone https://github.com/CopernicaMarketingSoftware/PHP-JS
-cd PHP-JS
-make
-sudo make install
-```
-
-To install a versioned PHP-JS release, the following instructions can be used.
-
-```bash
-wget https://github.com/CopernicaMarketingSoftware/PHP-JS/archive/vX.Y.tar.gz
-tar xfz vX.Y.tar.gz
-cd PHP-JS-X.Y
-make
-sudo make install
-```
+Before installing PHP-JS you'll have to copy 2 files from the v8 installation directory.
+You'll have to copy out/native/natives_blob.bin and out/native/snapshot_blob.bin into the
+PHP-JS directory. We can't ship these files as they depend on your local v8 build.
+After you've done this you can simply compile PHP-JS using `make`. To then install
+it systemwide using `sudo make install`.
 
 *Watch out*! Although the "sudo make install" instruction mentioned above works on 
 most systems, on some environments you will have to do some things manually.
