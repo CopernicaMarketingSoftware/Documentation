@@ -2,7 +2,7 @@
 
 Allmost all types of PHP variables can be assigned to a JS\Context object,
 and used inside the JavaScript code. Scalar variables are trivial, as we 
-had seen in the [hello world](PHPJS/helloworld) example:
+had seen in the [hello world](helloworld) example:
 
 ```php
 <?php

@@ -15,7 +15,7 @@ AMQPipe reads its messages, and to which exchange the results are
 published back. You can also set the location of the scripts and programs
 in the message queue, and other configurable options.
 
-[Read more about the config file](AMQPipe/configuration)
+[Read more about the config file](configuration)
 
 
 ## Script input
@@ -27,7 +27,7 @@ have access to the meta data of each AMQP message (this is the
 information stored in the envelope) you can instruct AMQPipe to 
 feed your scripts with JSON input.
 
-[Read more about the JSON format](AMQPipe/json)
+[Read more about the JSON format](json)
 
 
 ## Script output
@@ -38,7 +38,7 @@ message in the AMQP envelope. In this meta data AMQPipe adds for
 example the result code of the script, the output sent to stderr (if
 there was such output), and/or the signal that killed the script.
 
-[Read more about the meta result data](AMQPipe/results)
+[Read more about the meta result data](results)
 
 
 ## C++ API
@@ -46,4 +46,4 @@ there was such output), and/or the signal that killed the script.
 Besides running scripts and applications, AMQPipe comes with a C++
 API that allows you to write your own plugins that process messages.
 
-[Read more about C++ API](AMQPipe/shared-objects)
+[Read more about C++ API](shared-objects)
