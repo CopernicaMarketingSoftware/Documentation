@@ -14,10 +14,10 @@ To keep things simple, Yothalot relies heavily on existing and proven open
 source technologies: [GlusterFS](http://www.gluster.org/) for the distributed 
 file system, [RabbitMQ](http://www.rabbitmq.com) for robust inter process 
 communication, and [PHP](http://www.php.net) as the simple script language that 
-you can use for [writing the jobs](Yothalot/phpapi "PHP API")
-(although there is a [C++ API](Yothalot/cppapi "C++ API") too).
+you can use for [writing the jobs](phpapi "PHP API")
+(although there is a [C++ API](cppapi "C++ API") too).
 To see how easy it is to use Yothalot you can have a look at our mapreduce
-counterpart of [Hello world!](Yothalot/helloworld "Hello world!").
+counterpart of [Hello world!](helloworld "Hello world!").
 
 
 ## Clustered file system
@@ -56,7 +56,7 @@ one of the RabbitMQ nodes goes offline.
 
 ## Scripting
 
-Yothalot comes with a straightforward and powerful [PHP API](Yothalot/phpapi "PHP API")
+Yothalot comes with a straightforward and powerful [PHP API](phpapi "PHP API")
 that allows you to write and deploy your map/reduce jobs. Because PHP is
 crazy simple and at the same time hugely popular, you can easily write 
 map/reduce jobs - or find people who can do that for you.
@@ -69,12 +69,12 @@ schedule your job. Writing map/reduce algorithms has never been easier.
 ## Native API
 
 If, however, you prefer speed over simplicity, Yothalot also comes with a 
-[C++ API](Yothalot/cppapi "C++ API"). With this API you
+[C++ API](cppapi "C++ API"). With this API you
 can write super fast C++ applications that run map/reduce jobs.
 
-Interested? You can go to the [installation page](Yothalot/installation "Installation")
+Interested? You can go to the [installation page](installation "Installation")
 to read how Yothalot can be obtained and installed, you can read 
-[why](Yothalot/why "Why Yothalot") we have created Yothalot
-and are not using Hadoop, or look or mapreduce [Hello world!](Yothalot/helloworld "Hello world!")
+[why](why "Why Yothalot") we have created Yothalot
+and are not using Hadoop, or look or mapreduce [Hello world!](helloworld "Hello world!")
 example.
 

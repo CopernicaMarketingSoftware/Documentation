@@ -1,9 +1,9 @@
 # Yothalot\Job
 
 With the **Yothalot\Job** class you can create, tune and control
-jobs. A job holds the [connection](Yothalot/php-connection "Connection"),
+jobs. A job holds the [connection](php-connection "Connection"),
 the algorithm, the input data and several performance settings. For an example of
-creating a complete job you can see our [hello world!](Yothalot/helloworld "Hello world!") example.
+creating a complete job you can see our [hello world!](helloworld "Hello world!") example.
 
 The most important member functions of Yothalot\Job are the
 ones with which you add input data to the job, and the method to start the
@@ -41,11 +41,11 @@ class Yothalot\Job
 
 ## Constructor
 
-The constructor takes two parameters, a [Yothalot\Connection](Yothalot/php-connection)
+The constructor takes two parameters, a [Yothalot\Connection](php-connection)
 and an instance of your own object in which your algorithm is implemented.
-The algorithm sbould either be an instance of [Yothalot\MapReduce](Yothalot/php-mapreduce)
-for map/reduce jobs, or an instance of [Yothalot\Race](Yothalot/php-race) for race jobs. Or an instance of
-[Yothalot\Task](Yothalot/php-task) for a normal job. Creating a job looks like:
+The algorithm sbould either be an instance of [Yothalot\MapReduce](php-mapreduce)
+for map/reduce jobs, or an instance of [Yothalot\Race](php-race) for race jobs. Or an instance of
+[Yothalot\Task](php-task) for a normal job. Creating a job looks like:
 
 ```php
 // create a connection
@@ -189,7 +189,7 @@ is already detached.
 ## Getting information from your job
 
 Besides that the `wait()` method blocks your script while it waits for the
-job to complete, the method also return a [Yothalot\Result](Yothalot/php-result "Result")
+job to complete, the method also return a [Yothalot\Result](php-result "Result")
 object with all kind of information about the performance and behavior of
 the job.
 
@@ -222,4 +222,4 @@ class Yothalot\Job
 All of the above methods but local accept one parameter: an integer value with the
 setting. The local method accepts a boolean. You must set these tuning parameters *before* you start the job.
 For an explanation of the  meaning of all the tuning parameters, see the special in-depth
-[article about tuning mapreduce jobs](Yothalot/tuning).
+[article about tuning mapreduce jobs](tuning).

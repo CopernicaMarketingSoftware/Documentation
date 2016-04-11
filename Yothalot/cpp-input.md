@@ -1,13 +1,13 @@
 # Yothalot::Input and Yothalot::Inputs
 
 Yothalot::Input is a utility class that helps you to read files that have
-the internal Yothalot [format](Yothalot/internalfiles "Internal Files").
+the internal Yothalot [format](internalfiles "Internal Files").
 In general you do not need this class. However, it is useful if you want
 to read files in this format, which has the cool property of being compressed
 but still splittable. The `Yothalot::Input` class can be used to construct
-a [Yothalot::Record](Yothalot/cpp-record "record").
+a [Yothalot::Record](cpp-record "record").
 If you have multiple input files, you can group them in a single `Yothalot::Inputs`
-object a [Yothalot::Record](Yothalot/cpp-record "record") can
+object a [Yothalot::Record](cpp-record "record") can
 also be constructed on these.
 
 ## Yothalot::Input

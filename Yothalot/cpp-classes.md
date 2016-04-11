@@ -34,8 +34,8 @@ has type `Yothalot::Value`.
 ## The Yothalot::Key and Yothalot::Value classes
 
 The `Yothalot::Key` and `Yothalot::Value` type definitions of 
-[Yothalot::Tuple](Yothalot/cpp-tuple). These tuples can hold
-fields of type [Yothalot::Scalar](Yothalot/cpp-scalar).
+[Yothalot::Tuple](cpp-tuple). These tuples can hold
+fields of type [Yothalot::Scalar](cpp-scalar).
 
 
 ## The Values class

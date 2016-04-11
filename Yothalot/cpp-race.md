@@ -7,7 +7,7 @@ the work for you.
 
 To run your racer algorithm on a Yothalot cluster you have to implement
 the algorithm in a class that inherits form Yothalot::Racer. This class
-should then be called from an [executable](Yothalot/cpp-program "Create a Yothalot executable")
+should then be called from an [executable](cpp-program "Create a Yothalot executable")
 
 
 ## The Racer Class
@@ -86,23 +86,23 @@ enough data in that single argument to keep it busy for a while. E.g. you can
 pass strings that contain the name of a file that contains some data that you want to 
 process. If you pass some file names, processes can nicely run in parallel and the
 overhead is not to large. Passing data can be done in multiple ways and is
-described in the [using a Yothalot::Job](Yothalot/cpp-job) 
-and [starting up a job manually](Yothalot/cpp-manual) articles.
+described in the [using a Yothalot::Job](cpp-job) 
+and [starting up a job manually](cpp-manual) articles.
 
 The `process()` method returns a std::unique_ptr to Result. The std::uniqe_ptr
 ensures that memory management is taken care of. As can be seen above, the Result
 type is defined in the base class `Yothalot::Racer` and acts as a wrapper around
 a std::map<std::string, Yothalot::Tuple>. So, in the Result class you can save
-string keys and Yothalot::Tuple values. The [Yothalot::Tuple](Yothalot/cpp-tuple "Tuple")
+string keys and Yothalot::Tuple values. The [Yothalot::Tuple](cpp-tuple "Tuple")
 type is very useful as it can store multiple numeric and string values at
 the same time. Saving a std::string Yothalot::Tuple key-value pair is easy, you call
 the put method with the first argument a string that you want to add and 
 in the rest of the arguments the rest of the values that you want to return.
 These values can be numerical and strings. The returned Yothalot::Result is
 finally returned as a JSON object that can be displayed in the terminal where your application is started
-if you started the job [manually](Yothalot/cpp-manual) and
+if you started the job [manually](cpp-manual) and
 provided the option --wait, or can be obtained when the job is started 
-[programmatically](Yothalot/cpp-job "Yothalot::Job"). If there
+[programmatically](cpp-job "Yothalot::Job"). If there
 is nothing to return from the data that was passed to the process or, 
 if you want to be sure that all data is processed, you can return a `nullptr`.
 As long as a `nullptr` is returned, Yothalot will keep on processing data.
@@ -138,4 +138,4 @@ to `process()` may happen at the same time, therefore, you can have race
 conditions if the objects try to access the same resource at the same time.
 
 After having created your racer algorithm in the above described way
-you can call your algorithm from a little [executable](Yothalot/cpp-program "Create a Yothalot program")
+you can call your algorithm from a little [executable](cpp-program "Create a Yothalot program")

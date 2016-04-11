@@ -5,10 +5,10 @@ result of the job. However, mapreduce jobs may take a long time and it may
 be useful for you to get some information on where this time is spend, how
 many processes were used, how many temporary files were created, etc. You can
 use this information to tweak your mapreduce algorithm or to fine tune the
-behavior of the job by using its [tuning settings](Yothalot/tuning).
+behavior of the job by using its [tuning settings](tuning).
 
 We provide you with information about the ran job by returning an object from the
-```wait()``` method of the [Yothalot\Job](Yothalot/php-job). The
+```wait()``` method of the [Yothalot\Job](php-job). The
 object you'll get from here depends on what kind of algorithm you passed and the result of this.
 In case of any errors you'll get a ```Yothalot\ErrorResult``` object, regardless of
 the algorithm. Otherwise you'll get a ```Yothalot\MapReduceResult```, ```Yothalot\RaceResult``` or
@@ -271,7 +271,7 @@ echo("The runtime of the fastest reducer was: ".$result->reducers()->fastest()."
 ```
 As you can see you can get quite some details about the job. You can e.g. see
 which step is spending the most time. This information may help you to adjust
-your algorithm for the job or [fine tune](Yothalot/tuning) the
+your algorithm for the job or [fine tune](tuning) the
 job behavior.
 
 ## The Yothalot\DataStats class
@@ -313,7 +313,7 @@ echo("The number of temporary files consumed by the reducer is: ".$result->reduc
 ```
 
 The information on the number of files and their sizes may again help you
-to adjust your algorithm and use the [tuning settings](Yothalot/tuning)
+to adjust your algorithm and use the [tuning settings](tuning)
 to increase the performance of your mapreduce job.
 
 ## The Yothalot\Winner class

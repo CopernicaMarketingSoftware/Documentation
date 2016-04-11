@@ -1,7 +1,7 @@
 # Yothalot\Writer
 
 The Yothalot\Writer class is used to emit values from the reducer step.
-Therefore, the [Yothalot\MapReduce](Yothalot/php-mapreduce)
+Therefore, the [Yothalot\MapReduce](php-mapreduce)
 interface requires that the reduce function takes the Yothalot\Writer class
 as its third argument. This is the only place where you need the Yothalot\Writer
 class.
@@ -16,7 +16,7 @@ class Yothalot\Writer
 
 As you can see the public interface does not have a constructor. Since
 you only use the class in the reduce function of your implementation of
-the [Yothalot\MapReduce](Yothalot/php-mapreduce) interface,
+the [Yothalot\MapReduce](php-mapreduce) interface,
 where it is passed as an argument, you do not need one. The only member
 function of Yothalot\Writer is emit.
 
