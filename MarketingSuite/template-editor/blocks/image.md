@@ -31,4 +31,4 @@ sure to resize large images before uploading it, as it is not yet possible to
 edit, scale, crop or adjust images in the editor (we are working on this of 
 course).
 
-[ResponsiveEmail Image block](ResponsiveEmail/json/block-image)
+[ResponsiveEmail Image block](https://ms.copernica.com/#/documentation/ResponsiveEmail/json/block-image)
