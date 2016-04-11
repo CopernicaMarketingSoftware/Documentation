@@ -11,7 +11,7 @@ find [many plugins and libraries](http://www.rabbitmq.com/devtools.html)
 for this.  To help you out, we have [created a few examples](mailerq-examples "MailerQ examples") 
 for commonly used languages.
 
-![MailerQ put it in RabbitMQ](Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
+![MailerQ put it in RabbitMQ](mailerq-put-it-in-rabbitmq.png)
 
 Besides being faster, publishing messages directly into the outbox queue also 
 makes it possible to use special features, and to add special properties

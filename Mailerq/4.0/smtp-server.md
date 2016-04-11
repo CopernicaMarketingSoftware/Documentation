@@ -10,7 +10,7 @@ setting, so that all incoming emails are automatically published to the outbox
 queue, from which they are then directly picked up again and scheduled for 
 immediate forwarding.
 
-![MailerQ shared inbox outbox queue](Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](mailerq-shared-inbox-outbox-queue.png)
 
 However, you can also configure MailerQ to use different inbox and outbox queues.
 MailerQ will then store all incoming messages in the inbox queue first. You can add 
@@ -21,7 +21,7 @@ messages in an inbox queue and let your scripts read these messages from this
 inbox queue. After processing, post the message to the outbox 
 queue where MailerQ picks them up to deliver them.
 
-![MailerQ seperate inbox outbox queues](Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
+![MailerQ seperate inbox outbox queues](mailerq-seperate-inbox-outbox-queues.png)
 
 
 ## Local email addresses

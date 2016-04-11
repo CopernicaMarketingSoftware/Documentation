@@ -32,7 +32,7 @@ for which [many plugins and libraries](http://www.rabbitmq.com/devtools.html) ar
 To help you out, we have [created a few examples](mailerq-examples "MailerQ examples") 
 for commonly used languages.
 
-![MailerQ put it in RabbitMQ](Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
+![MailerQ put it in RabbitMQ](mailerq-put-it-in-rabbitmq.png)
 
 Besides being faster, publishing messages directly into the outbox queue also makes it 
 possible to use special features that are not natively available when you use SMTP. When 
@@ -87,7 +87,7 @@ Most users set this to the same value as the outbox queue, so that all received 
 automatically published to the outbox queue, from which they are then directly 
 picked up again and scheduled for immediate forwarding.
 
-![MailerQ shared inbox outbox queue](Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](mailerq-shared-inbox-outbox-queue.png)
 
 MailerQ stores all incoming messages in the inbox queue first. You can add 
 intermediate scripts that process these messages before they are forwarded to 
@@ -100,7 +100,7 @@ queue where MailerQ picks them up to deliver them. You might be interested in
 reads messages as fast as it can from a RabbitMQ message queue, runs your scripts 
 to process these messages, and publishes the results back to RabbitMQ.
 
-![MailerQ seperate inbox outbox queues](Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
+![MailerQ seperate inbox outbox queues](mailerq-seperate-inbox-outbox-queues.png)
 
 ### SMTP and multiple IP addresses
 
@@ -126,7 +126,7 @@ queue. As a command line utility, MailerQ does not attempt to send out the mail
 - it only puts the message in the RabbitMQ message queue. You need a seperate 
 running MailerQ daemon process that takes care of the delivery.
 
-![MailerQ mime output](Mailerq/Images/mailerq-mime-output-stdout.png)
+![MailerQ mime output](mailerq-mime-output-stdout.png)
 
 When you normally start up MailerQ, it operates as a daemon process. To start 
 it as a command line utility for reading a message from standard input, you need 
