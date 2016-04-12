@@ -18,7 +18,7 @@ Orders can have various _states_ and _statuses_.
 **Status** is a user defined (of Magento predefined) value that can be modified inside the 
 Magento admin panel. 
 
-Read more about order _state_ and _status_ on [order object](../object/order) page.
+Read more about order _state_ and _status_ on [order object](magento-integration/object/order) page.
 
 ## Personalization variables
 
@@ -36,11 +36,11 @@ It is possible to limit the results of the orders list by applying filters.
 
 *  **Quote Id**
 
-   Limits orders list to orders that were created using the [quote](../object/quote) with given ID.
+   Limits orders list to orders that were created using the [quote](magento-integration/object/quote) with given ID.
 
 *  **Customer Id**
 
-   Limits orders list to orders that were placed by [customer](../object/customer) with given ID.
+   Limits orders list to orders that were placed by [customer](magento-integration/object/customer) with given ID.
 
 *  **State**
 
@@ -60,19 +60,19 @@ It is possible to limit the results of the orders list by applying filters.
 
 *  **Products**
 
-   Limits orders list to orders that contain the  given [product](../object/product).
+   Limits orders list to orders that contain the  given [product](magento-integration/object/product).
 
 *  **Product's category**
 
-   Limits orders list to orders that contain product from given [category](../object/category).
+   Limits orders list to orders that contain product from given [category](magento-integration/object/category).
 
 *  **Web store**
 
-   Limits the list to orders that were placed in the given [webstore](../object/webstore).
+   Limits the list to orders that were placed in the given [webstore](magento-integration/object/webstore).
 
 *  **Currency**
 
-   Limits orders list to orders that were placed with use of a given [currency](../object/currency).
+   Limits orders list to orders that were placed with use of a given [currency](magento-integration/object/currency).
 
 *  **IP address**
 
