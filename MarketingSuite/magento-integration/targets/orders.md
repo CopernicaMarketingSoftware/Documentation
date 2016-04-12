@@ -24,11 +24,11 @@ Read more about order _state_ and _status_ on [order object](../object/order) pa
 
 | Variable name | Variable type                                                                    | Description                                    |
 |---------------|----------------------------------------------------------------------------------|------------------------------------------------| 
-| $magento      | _[Magento](../object/magento)_    		   | Overall Magento installation.                  |
-| $customer     | _[Customer](../object/customer)_  		   | Instance of customer that placed the order.    |
-| $quote        | _[Quote](../object/quote)_        		   | Instance of quote that order was created from. |
-| $order        | _[Order](../object/order)_        		   | Instance of the actual order.                  |
-| $person       | _[Person](../object/person)_      	           | Instance of person that placed the order.      |
+| $magento      | _[Magento](magento-integration/object/magento)_    		                       | Overall Magento installation.                  |
+| $customer     | _[Customer](magento-integration/object/customer)_  		                       | Instance of customer that placed the order.    |
+| $quote        | _[Quote](magento-integration/object/quote)_        		                       | Instance of quote that order was created from. |
+| $order        | _[Order](magento-integration/object/order)_        		                       | Instance of the actual order.                  |
+| $person       | _[Person](magento-integration/object/person)_      	                           | Instance of person that placed the order.      |
 
 ## Limiting orders list
 

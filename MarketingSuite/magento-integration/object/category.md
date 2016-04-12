@@ -80,6 +80,6 @@ Magento and then iterate that category inside email template:
 [Magento knowledge base category entry](http://www.magentocommerce.com/knowledge-base/categories/category/product-categories/)
 
 
-[webstore-object]: MarketingSuite/magento-integration/object/webstore
-[category-object]: MarketingSuite/magento-integration/object/category
-[product-object]: MarketingSuite/magento-integration/object/product
+[webstore-object]: magento-integration/object/webstore
+[category-object]: magento-integration/object/category
+[product-object]: magento-integration/object/product

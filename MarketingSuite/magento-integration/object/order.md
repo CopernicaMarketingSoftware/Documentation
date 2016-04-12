@@ -85,10 +85,10 @@ The `state` property can hold one of following values:
 [Magento user guide order page](http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#section-sales-orders.html%3FTocPath%3DSales%2520%2526%2520Orders%7C_____0)
 [Order management entry in Magento knowledge base](http://www.magentocommerce.com/wiki/2_-_magento_concepts_and_architecture/order_management#xmind_source_file)
 
-[quote-object]: MarketingSuite/magento-integration/object/quote
-[orderitem-object]: MarketingSuite/magento-integration/object/order-item
-[customer-object]: MarketingSuite/magento-integration/object/customer
-[guest-object]: MarketingSuite/magento-integration/object/guest
-[person-object]: MarketingSuite/magento-integration/object/person
-[address-object]: MarketingSuite/magento-integration/object/address
-[webstore-object]: MarketingSuite/magento-integration/object/webstore
+[quote-object]: magento-integration/object/quote
+[orderitem-object]: magento-integration/object/order-item
+[customer-object]: magento-integration/object/customer
+[guest-object]: magento-integration/object/guest
+[person-object]: magento-integration/object/person
+[address-object]: magento-integration/object/address
+[webstore-object]: magento-integration/object/webstore

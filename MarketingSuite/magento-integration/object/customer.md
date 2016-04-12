@@ -65,10 +65,10 @@ This could output the following:
 
 ```
 
-[subscriber-object]: MarketingSuite/magento-integration/object/subscriber
-[order-object]: MarketingSuite/magento-integration/object/order
-[webstore-object]: MarketingSuite/magento-integration/object/webstore
-[address-object]: MarketingSuite/magento-integration/object/address
-[quote-object]: MarketingSuite/magento-integration/object/quote
-[person-object]: MarketingSuite/magento-integration/object/person
-[wishlist-object]: MarketingSuite/magento-integration/object/wishlist
+[subscriber-object]: magento-integration/object/subscriber
+[order-object]: magento-integration/object/order
+[webstore-object]: magento-integration/object/webstore
+[address-object]: magento-integration/object/address
+[quote-object]: magento-integration/object/quote
+[person-object]: magento-integration/object/person
+[wishlist-object]: magento-integration/object/wishlist

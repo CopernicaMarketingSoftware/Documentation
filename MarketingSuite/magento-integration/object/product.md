@@ -87,6 +87,6 @@ Our new offers:
 [eav-wiki]: https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model#Representing_substructure:_EAV_with_classes_and_relationships_.28EAV.2FCR.29
 
 
-[category-object]: MarketingSuite/magento-integration/object/category
-[option-object]: MarketingSuite/magento-integration/object/product-option
-[attribute-object]: MarketingSuite/magento-integration/object/product-attribute
+[category-object]: magento-integration/object/category
+[option-object]: magento-integration/object/product-option
+[attribute-object]: magento-integration/object/product-attribute

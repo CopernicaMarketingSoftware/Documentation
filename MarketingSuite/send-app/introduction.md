@@ -22,7 +22,7 @@ when setting up a mailing.
 By default, a mailing will be sent immediately after you hit the **confirm and 
 send** button in the final step. Alternatively you can choose to schedule 
 the mailing on a future date or/and to automatically repeat the mailing with 
-a [specific interval](repeat-mailings).
+a [specific interval](send-app/repeat-mailings).
 
 To schedule and/or repeat the mailing, click the link at the **Date and Time** 
 section when settings up a new mailing. 

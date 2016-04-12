@@ -15,9 +15,9 @@ be done by referring to the ID of a specific instance within brackets `[]`.
 
 | Property name   | Property type                                                                                 | Description                                            |
 |-----------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| products        | _collection of [Product](product)_   | Collection of all products available inside Magento.   |
-| categories      | _collection of [Category](category)_ | Collection of all categories available inside Magento. |
-| webstores       | _collection of [Webstore](webstore)_ | Collection of all webstores available inside Magento.  |
+| products        | _collection of [Product](magento-integration/object/product)_                                 | Collection of all products available inside Magento.   |
+| categories      | _collection of [Category](magento-integration/object/category)_                               | Collection of all categories available inside Magento. |
+| webstores       | _collection of [Webstore](magento-integration/object/webstore)_                               | Collection of all webstores available inside Magento.  |
 
 ## Examples
 

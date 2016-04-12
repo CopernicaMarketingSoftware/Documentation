@@ -75,9 +75,9 @@ In this screen you can fine tune mailing target options. Each target type has
 specific set of options that can be applied. For example, 'orders' can be filtered 
 by purchased products, but 'subscribers' cannot.
 
-[customers-target]: MarketingSuite/magento-integration/targets/customers
-[orders-target]: MarketingSuite/magento-integration/targets/orders
-[quotes-target]: MarketingSuite/magento-integration/targets/quotes
-[subscribers-target]: MarketingSuite/magento-integration/targets/subscribers
-[persons-target]: MarketingSuite/magento-integration/targets/persons
-[guests-target]: MarketingSuite/magento-integration/targets/guests
+[customers-target]: magento-integration/targets/customers
+[orders-target]: magento-integration/targets/orders
+[quotes-target]: magento-integration/targets/quotes
+[subscribers-target]: magento-integration/targets/subscribers
+[persons-target]: magento-integration/targets/persons
+[guests-target]: magento-integration/targets/guests

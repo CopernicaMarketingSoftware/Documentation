@@ -5,16 +5,16 @@ The drag and drop editor enables you to create email designs from smaller fragme
 
 There are couple of different types of blocks available:
 
-- [Button block](blocks/button)
-- [Column block](blocks/column)
-- [Heading block](blocks/heading)
-- [Image block](blocks/image)
-- [Separator block](blocks/separator)
-- [Spacer block](blocks/spacer)
-- [Text block](blocks/text)
-- [Video block](blocks/video)
-- [Webversion block](blocks/webversion)
-- [Follow us block](blocks/follow-us)
+- [Button block](template-editor/blocks/button)
+- [Column block](template-editor/blocks/column)
+- [Heading block](template-editor/blocks/heading)
+- [Image block](template-editor/blocks/image)
+- [Separator block](template-editor/blocks/separator)
+- [Spacer block](template-editor/blocks/spacer)
+- [Text block](template-editor/blocks/text)
+- [Video block](template-editor/blocks/video)
+- [Webversion block](template-editor/blocks/webversion)
+- [Follow us block](template-editor/blocks/follow-us)
 
 ## Adding blocks
 

@@ -14,4 +14,4 @@ it's content. In some cases this could save you allot of time. To clone a templa
 
 Just like cloning, if you already have a template JSON, you can open the editor (new blank template), in the top menu go to Template -> Source to open the JSON Editor and paste your JSON. Don't forget to hit the save button.
 
-[Next template basics](template-basics)
+[Next template basics](template-editor/template-basics)
