@@ -10,9 +10,12 @@ behavior of the job by using its [tuning settings](copernica-docs:Yothalot/tunin
 We provide you with information about the ran job by returning an object from the
 ```wait()``` method of the [Yothalot\Job](copernica-docs:Yothalot/php-job). The
 object you'll get from here depends on what kind of algorithm you passed and the result of this.
-In case of any errors you'll get a ```Yothalot\ErrorResult``` object, regardless of
-the algorithm. Otherwise you'll get a ```Yothalot\MapReduceResult```, ```Yothalot\RaceResult``` or
-```Yothalot\TaskResult``` depending on algorithm.
+Map/Reduce, Race and regular tasks yield a ```Yothalot\MapReduceResult```, ```Yothalot\RaceResult```
+or ```Yothalot\TaskResult```, respectively.
+
+In case of any errors, you will receive an error objec that extends the regular result object.
+Thus, the same tasks would - in case of failure - yield a ```Yothalot\MapReduceError```,
+```Yothalot\RaceError``` or ```Yothalot\TaskError```.
 
 Using any of these result classes is simple. You can call `wait()` from your job and
 retrieve the results and call the members that you are interested in.
@@ -146,26 +149,23 @@ class Yothalot\TaskResult
 }
 ```
 
-## The Yothalot\ErrorResult class
+## Error results
 
-The **Yothalot\ErrorResult** class can be returned by the `wait()` method at all times,
-regardless of algorithm. As you may be able to guess from the name, this object is returned
-in the case of errors. You'll mostly be able to retrieve information about the failed job so
-you'll hopefully be able to reproduce it.
+As mentioned before, the errors returned extend from the results normally returned
+when an operation finishes successfully. They also evaluate to false when used in a
+boolean context - making it easy to check for errors.
+
+The error result objects also contain some extra properties to debug the failed task,
+like the executable that was started, the arguments, the input, output and errors
+generated.
+
+The example shows the ```Yothalot\MapReduceError```, but the ```Yothalot\RaceError```
+and the ```Yothalot\TaskError``` have exactly the same extra methods and extend from
+their respective result classes.
 
 ```php
-class Yothalot\ErrorResult
+class Yothalot\MapReduceError extends Yothalot\MapReduceResult
 {
-    /**
-     *  Get the time when the job was started (in Unix time)
-     */
-    public function started();
-
-    /**
-     *  Get the time the last job was finished (in Unix time)
-     */
-    public function finished();
-
     /**
      *  The executable that failed
      */
@@ -191,6 +191,12 @@ class Yothalot\ErrorResult
      *  The stdout of the failed job.
      */
     public function stdout();
+
+    /**
+     *  The complete command that was executed. This includes
+     *  the input piped into the program  as well as the arguments
+     */
+    public function command();
 }
 ```
 
