@@ -30,4 +30,4 @@ Content-Length: 192
 ## Related information
 
 You can only retrieve the JSON of template resources that you created with an 
-earlier POST call to the [/v1/template](api/post-template) method.
+earlier POST call to the [/v1/template](../api/post-template) method.

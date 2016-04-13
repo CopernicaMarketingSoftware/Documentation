@@ -96,8 +96,8 @@ according to their common English names (e.g., 'red', 'PaleGoldenrod').
 
 ## See also
 
-The `font` property can be set as a [top level property](json/top-level-properties), 
-but can also be used in various content blocks, like [text blocks](json/block-text), 
-[link blocks](json/block-link) and [button blocks](json/block-button). 
-Other style related properties are for example the [property `background`](json/property-background) 
-and the [`css` property](json/property-css).
+The `font` property can be set as a [top level property](../json/top-level-properties), 
+but can also be used in various content blocks, like [text blocks](../json/block-text), 
+[link blocks](../json/block-link) and [button blocks](../json/block-button). 
+Other style related properties are for example the [property `background`](../json/property-background) 
+and the [`css` property](../json/property-css).

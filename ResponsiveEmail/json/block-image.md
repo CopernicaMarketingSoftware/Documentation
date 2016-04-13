@@ -2,9 +2,9 @@
 
 The image block provides the ability to add images to your emails.
 Aside from all the regular block properties there are some properties specific 
-for images, such as the [src](json/property-src) 
+for images, such as the [src](../json/property-src) 
 property, that should be set to the url to the image you would like to show.
-Another image specific property is [alt](json/property-alt),
+Another image specific property is [alt](../json/property-alt),
 which is used to set the alternative text when for some reason the image is not displayed.
 
 All available properties of this block type are mentioned in the table below.
@@ -14,19 +14,19 @@ All available properties of this block type are mentioned in the table below.
 | Property | Value | Description                                                                                                                                                 |
 |:---------|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "image" | Property to identify the block as an image block.                                                                                                             |
-| [src](json/property-src) | _string_ | The url of the image.                                                                                     |
-| [alt](json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email.                     |
-| [align](json/property-align) | _string_ | To which side should the image be aligned? default is left.                                           |
-| [background](json/property-background) | _string_ | The background settings for the image block.                                                |
-| [margin](json/property-margin) | _mixed_ | Margins around the image.                                                                            |
-| [padding](json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                                |
-| [visibility](json/property-visibility) | _block_ | Visibility based on device, client and/or receiver.                                          |
-| [link](json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`.                                            |
-| [width](json/property-image-width) | _string_ | Optional width of the image, default is 100%                                                    |
-| [height](json/property-image-height) | _string_ | Optional height of the image, default is not set (image is automatically scaled)              |
-| [img](json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes`                                      |
-| [a](json/property-a) | _object_ | When the image is clickable, you can use this property to specify `css` and `attributes` for the HTML anchor. |
-| [container](json/property-container) | _object_ | Access to the parent element.                                                                 |
+| [src](../json/property-src) | _string_ | The url of the image.                                                                                     |
+| [alt](../json/property-alt) | _string_ | Alt description of image. Usually only visible when image is not loaded in the email.                     |
+| [align](../json/property-align) | _string_ | To which side should the image be aligned? default is left.                                           |
+| [background](../json/property-background) | _string_ | The background settings for the image block.                                                |
+| [margin](../json/property-margin) | _mixed_ | Margins around the image.                                                                            |
+| [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                                |
+| [visibility](../json/property-visibility) | _block_ | Visibility based on device, client and/or receiver.                                          |
+| [link](../json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`.                                            |
+| [width](../json/property-image-width) | _string_ | Optional width of the image, default is 100%                                                    |
+| [height](../json/property-image-height) | _string_ | Optional height of the image, default is not set (image is automatically scaled)              |
+| [img](../json/property-img) | _object_ | Direct access to the `img` tag, useful to set `css` and `attributes`                                      |
+| [a](../json/property-a) | _object_ | When the image is clickable, you can use this property to specify `css` and `attributes` for the HTML anchor. |
+| [container](../json/property-container) | _object_ | Access to the parent element.                                                                 |
 
 ## Example use
 
@@ -50,7 +50,7 @@ the basic usage, to only include an image with an extra "alt" tag:
 ## Clickable images
 
 It is possible to make the image clickable. You do this by providing the
-[link](json/property-link) property. This can 
+[link](../json/property-link) property. This can 
 either be a string holding a URL, or an object with link properties. 
 The following example shows the input for an email with the two ways to add a link.
 
@@ -82,7 +82,7 @@ The following example shows the input for an email with the two ways to add a li
 All the properties in the input JSON are turned into a HTML `<img>` tag, and, 
 if you add a link, also into a HTML `<a>` tag. If you want to set custom 
 attributes or custom CSS properties to these tags, you can do so by using the 
-[img](json/property-img) and [a](json/property-a) properties:
+[img](../json/property-img) and [a](../json/property-a) properties:
 
 ```javascript
 {
@@ -117,6 +117,6 @@ attributes or custom CSS properties to these tags, you can do so by using the
 
 The `img` and `a` properties are of course fully optional, and you normally do 
 not need them when working with images. Please also keep in mind that the property
-[attributes](json/property-attributes) and 
-the property [css](json/property-css) are 
+[attributes](../json/property-attributes) and 
+the property [css](../json/property-css) are 
 advanced properties and their use is not recommended.

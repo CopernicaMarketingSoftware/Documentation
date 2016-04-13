@@ -46,7 +46,7 @@ and a content section with a yellow background.
 
 ## Example output
 
-![](json/example-output-content.png)
+![](example-output-content.png)
 
 ## Sub properties
 
@@ -59,10 +59,10 @@ section.
 
 | Property | Value | Description                                                                                         |
 |:---------|-------|-----------------------------------------------------------------------------------------------------|
-| [background](/support/json/property-background) | _object_ | Background properties for the 580px wide center column.   |
-| [blocks](/support/json/property-blocks) | _array_ | List of the actual content blocks inside the center column.        |
-| [css](/support/json/property-css) | _object_ | Optional additional CSS properties to be added to the column.           |
-| [attributes](/support/json/property-attributes) | _object_ | Optional additional attributes to be added to the column. |
+| [background](../json/property-background) | _object_ | Background properties for the 580px wide center column.   |
+| [blocks](../json/property-blocks) | _array_ | List of the actual content blocks inside the center column.        |
+| [css](../json/property-css) | _object_ | Optional additional CSS properties to be added to the column.           |
+| [attributes](../json/property-attributes) | _object_ | Optional additional attributes to be added to the column. |
 
 ## A word of warning about setting attributes and css
 

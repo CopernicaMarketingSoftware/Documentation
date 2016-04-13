@@ -1,7 +1,7 @@
 # Properties `to`, `cc` and `bcc`
 
-All addressees of an email are set in the [`to`](json/property-to), 
-[`cc`](json/property-cc) and [`bcc`](json/property-bcc)
+All addressees of an email are set in the [`to`](../json/property-to), 
+[`cc`](../json/property-cc) and [`bcc`](../json/property-bcc)
 fields of the MIME header. In the input JSON object, you can use the JSON properties
 with similar names to specify the addresses to which the email should be sent.
 
@@ -80,9 +80,9 @@ recognize the input format that you specify.
 
 ## Related information
 
-The destination addresses are stored in the header of the email. Other [top level properties](json/top-level-properties) 
+The destination addresses are stored in the header of the email. Other [top level properties](../json/top-level-properties) 
 to change the mime header of the generated mime are for example The destination 
-addresses are stored in the header of the email. Other [top level properties](json/top-level-properties) 
-to change the mime header of the generated mime are for example [`subject`](json/property-subject), 
-[`from`](json/property-from), [`replyTo`](json/property-reply-to) 
-and the property [`headers`](json/property-headers).
+addresses are stored in the header of the email. Other [top level properties](../json/top-level-properties) 
+to change the mime header of the generated mime are for example [`subject`](../json/property-subject), 
+[`from`](../json/property-from), [`replyTo`](../json/property-reply-to) 
+and the property [`headers`](../json/property-headers).

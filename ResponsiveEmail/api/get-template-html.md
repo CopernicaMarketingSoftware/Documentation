@@ -24,7 +24,7 @@ above example.
 
 ## Personalization
 
-In order to [personalize](json/personalization) the output it's possible to
+In order to [personalize](../json/personalization) the output it's possible to
 provide additional key-value pairs containing personalization data as parameters
 to the GET request. Without these parameters an unpersonalized output
 will be returned.
@@ -32,11 +32,11 @@ will be returned.
 ## Related information
 
 You can only retrieve the HTML code of templates that you created earlier with a 
-POST call to the [/v1/template](api/post-template) method.
+POST call to the [/v1/template](../api/post-template) method.
 
 Note that the returned HTML code is optimized for *email clients*. If the template 
-JSON contains [visibility properties](json/property-visibility) 
+JSON contains [visibility properties](../json/property-visibility) 
 that limit certain blocks to only be visible in the web version of the email, 
 then these blocks will not be included in the returned HTML code. If you want to 
-fetch the web version of an email, use the [/v1/template/{ID}/webversion](api/get-template-webversion) 
+fetch the web version of an email, use the [/v1/template/{ID}/webversion](../api/get-template-webversion) 
 method instead.

@@ -58,7 +58,7 @@ example, on a normal/big device you'd like to show the logo in the left
 top corner of your mail, taking up one third of the available width, 
 but on small devices you'd like to use the full device width. This is
 possible, but you should not use the image width property for it, 
-but use [columns](json/block-columns) instead. 
+but use [columns](../json/block-columns) instead. 
 Columns are automatically placed under each  other when a device is too 
 small to display them next to each other:
 
@@ -158,5 +158,5 @@ so that no download is necessary.
 An image is automatically scaled so that the ratio between the width and
 height always stays the same. In normal circumstances there is no need
 to set the image height. If you set the 
-[height property](json/property-image-height) your
+[height property](../json/property-image-height) your
 images may be stretched, and the width to height ratio may change.

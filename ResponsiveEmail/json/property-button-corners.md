@@ -1,6 +1,6 @@
 # Property `corners`   
 
-The `corners` property is a property inside [button blocks](json/block-button) 
+The `corners` property is a property inside [button blocks](../json/block-button) 
 that adds rounded corners to a button. Currently you can choose from 3 values.
 
 ## Property values
@@ -31,4 +31,4 @@ Add rounded corners to a button
 
 ## Output
 
-![](json/example-output-button.png)
+![](example-output-button.png)

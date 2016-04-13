@@ -12,8 +12,8 @@ templates). This is an optional property.
 ## Example
 
 The following input JSON contains a very simple example template the top two 
-properties are its `name` and `description`. Both the [`name`](json/property-name) 
-and [`description`](json/property-description) 
+properties are its `name` and `description`. Both the [`name`](../json/property-name) 
+and [`description`](../json/property-description) 
 properties are meta properties that are not used by the API to generate the 
 email, but that may be helpful to identify and/or describe the template.
 
@@ -42,7 +42,7 @@ email, but that may be helpful to identify and/or describe the template.
 
 ## Related information
 
-The property [`name`](json/property-name) can 
-be used to give the template a name. Both the [`name`](json/property-name) 
-and the [`description`](json/property-description) 
-are [top level properties](json/top-level-properties).
+The property [`name`](../json/property-name) can 
+be used to give the template a name. Both the [`name`](../json/property-name) 
+and the [`description`](../json/property-description) 
+are [top level properties](../json/top-level-properties).

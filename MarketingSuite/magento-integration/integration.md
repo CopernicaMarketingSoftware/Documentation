@@ -86,7 +86,7 @@ Inside Magento Connect platform users can find two extensions. [The most recent 
 The second is created and maintained by partner company [Cream](http://www.cream.nl/). This 
 extension was developed with Publisher software in mind. That means it will use product databases and selections instead of the special Magento targets.
 
-[Read more about differences between new and old extension](magento-integration/integrations-differences)
+[Read more about differences between new and old extension](../magento-integration/integrations-differences)
 
 ### Compatibility
 

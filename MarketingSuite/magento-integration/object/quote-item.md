@@ -22,6 +22,6 @@ The following properties are available for personalization in the `QuoteItem` ob
 | product         | _[Product][product-object]_                               | The actual product linked to quote.    |
 | options         | _collection of [QuoteItemOption][quoteitemoption-object]_ | Collection of options set by customer. |
 
-[quote-object]: magento-integration/object/quote
-[product-object]: magento-integration/object/product
-[quoteitemoption-object]: magento-integration/object/quote-item-option
+[quote-object]: ../../magento-integration/object/quote
+[product-object]: ../../magento-integration/object/product
+[quoteitemoption-object]: ../../magento-integration/object/quote-item-option

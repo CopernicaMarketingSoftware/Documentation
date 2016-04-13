@@ -11,7 +11,7 @@ will be downloaded by ResponsiveEmail.com, and will be embedded in the output mi
 In general, it is considered not to be a good practive to use embedded images. 
 It makes the MIME output much larger, and your email will be more vulnerable to 
 be blocked by spam and/or virus filters. You can therefore better use the 
-[mime api call](api/get-template-mime) to retrieve 
+[mime api call](../api/get-template-mime) to retrieve 
 the MIME with the original image url's still intact.
 
 ## Example request

@@ -42,4 +42,4 @@ to the GET request. Without these parameters an unpersonalized output will be re
 ## Related information
 
 You can only retrieve the MIME code of templates that you created earlier with 
-a POST call to the [/v1/template](api/post-template) method.
+a POST call to the [/v1/template](../api/post-template) method.

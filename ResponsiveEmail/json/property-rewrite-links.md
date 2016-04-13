@@ -1,6 +1,6 @@
 # Property `links`
 
-Inside the [`rewrite`](json/property-rewrite)
+Inside the [`rewrite`](../json/property-rewrite)
 property, you can set the nested `links` property to tell the
 Responsive Email API how you would like to rewrite hyperlinks
 that appear in the mail.

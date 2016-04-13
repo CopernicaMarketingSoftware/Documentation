@@ -1,4 +1,4 @@
-* [Introduction](introduction "Introduction")
+* [Introduction](main/introduction "Introduction")
   * [API reference](api/introduction "API reference")
   * [Example code](api/examples "Example code")
   * [API version numbers](api/versions "API version numbers")
@@ -20,5 +20,5 @@
      * [Spacer blocks](json/block-spacer "Spacer blocks")
      * [Text blocks](json/block-text "Text blocks")  
      * [Video blocks](json/block-video "Video blocks")
-* [JSON editor](http://www.responsiveemail.com/support/json-editor "JSON editor")
+* [JSON editor](main/json-editor "JSON editor")
 * [Tips & Tricks](tips-and-tricks/overview "Tips & Tricks")

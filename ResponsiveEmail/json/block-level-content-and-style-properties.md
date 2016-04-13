@@ -19,7 +19,7 @@ properties available on block level.
 
 ### Property font
 
-At the [top level](/support/json) of the input JSON you can set the font that is 
+At the [top level](../json/top-level-properties) of the input JSON you can set the font that is 
 used for the mailing. This is a template wide setting, that is used for all texts, 
 unless overridden for a specific text. 
 
@@ -54,12 +54,12 @@ and a text about _banana's_ written in Arial.
 } 
 ```
 
-[Read more about font properties](json/property-font)
+[Read more about font properties](../json/property-font)
 
 ### Property background
 
 The property `background` lets you specify background related properties. 
-The property exists as a [toplevel property](/support/json), inside the property 
+The property exists as a [toplevel property](../json/top-level-properties), inside the property 
 `content` and as a property inside a block.
 
  * When specified on toplevel, the rules will be applied on the outer wrapper 
@@ -179,4 +179,4 @@ properties or element attributes you would like to add to the container element.
 }
 ```
 
-[Read more about the container property](json/property-container)
+[Read more about the container property](../json/property-container)

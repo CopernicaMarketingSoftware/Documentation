@@ -11,9 +11,9 @@ that different guest users point to the same real world person.
 
 | Variable name | Variable type                                                                 | Description                              |
 |---------------|-------------------------------------------------------------------------------|------------------------------------------| 
-| $magento      | _[Magento](magento-integration/object/magento)_ 		                        | Overall Magento installation.            |
-| $guest        | _[Guest](magento-integration/object/guest)_     		                        | Instance of guest that email is sent to. |
-| $order        | _[Order](magento-integration/object/order)_     		                        | Instance of order that guest placed.     |
+| $magento      | _[Magento](../../magento-integration/object/magento)_ 		                        | Overall Magento installation.            |
+| $guest        | _[Guest](../../magento-integration/object/guest)_     		                        | Instance of guest that email is sent to. |
+| $order        | _[Order](../../magento-integration/object/order)_     		                        | Instance of order that guest placed.     |
 
 ## Limiting guests list
 
@@ -46,8 +46,8 @@ filter options to it. It's possible to apply following filter options:
 
 *  **bought product**
 
-   Limits guests list to guests that bought certain [product](magento-integration/object/product).
+   Limits guests list to guests that bought certain [product](../../magento-integration/object/product).
 
 *  **bought product from category**
 
-   Limits guests list to guests that bought [product](magento-integration/object/product) from a certain [category](magento-integration/object/category)
+   Limits guests list to guests that bought [product](../../magento-integration/object/product) from a certain [category](../../magento-integration/object/category)

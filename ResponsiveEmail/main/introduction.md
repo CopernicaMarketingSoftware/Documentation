@@ -10,14 +10,14 @@ desktop, tablet and mobile devices. Are you ready to start this awesome journey?
 
 ## Getting started
 
-1. ### [Register your app](/app)
+1. ### [Register your app](https://www.responsiveemail.com/app/#/admin/api)
 
 Tell us what your app will do and get your API key
 
-2. ### [Learn the API basics](api/introduction)
+2. ### [Learn the API basics](../api/introduction)
 
 The ins and outs of the API
 
-3. ### [Create a JSON document](json/introduction)
+3. ### [Create a JSON document](../json/introduction)
 
 Learn more about the JSON properties

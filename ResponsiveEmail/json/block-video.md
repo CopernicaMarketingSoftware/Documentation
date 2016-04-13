@@ -14,15 +14,15 @@ All available properties of this block type are mentioned in the table below.
 | Property | Value | Description                                                                                                                                               |
 |:---------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type | "video" | Property to identify the block as a video block.                                                                                                            |
-| [url](json/property-url) | _string_ | The video source URI                                                                                    |
-| [link](json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`.           |
-| [embed](json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
-| [align](json/property-align) | _string_ | To which side should the video be aligned? default is left.                                         |
-| [background](json/property-background) | _object_ | The background settings for the video block.                                              |
-| [margin](json/property-margin) | _mixed_ | Margins around the video.                                                                          |
-| [padding](json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                              |
-| [visibility](json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                                       |
-| [container](json/property-container) | _object_ | Access to the surrounding container                                                         |
+| [url](../json/property-url) | _string_ | The video source URI                                                                                    |
+| [link](../json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`.           |
+| [embed](../json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
+| [align](../json/property-align) | _string_ | To which side should the video be aligned? default is left.                                         |
+| [background](../json/property-background) | _object_ | The background settings for the video block.                                              |
+| [margin](../json/property-margin) | _mixed_ | Margins around the video.                                                                          |
+| [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                              |
+| [visibility](../json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                                       |
+| [container](../json/property-container) | _object_ | Access to the surrounding container                                                         |
 
 ## Example usage
 

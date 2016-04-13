@@ -19,6 +19,6 @@ The OrderItem object holds the following properties
 | product         | _[Product][product-object]_      | The actual product.                                     | 
 | quoteItem       | _[QuoteItem][quote-item-object]_ | The quote item that was used to create this order item. |
 
-[order-object]: magento-integration/object/order
-[product-object]: magento-integration/object/product
-[quote-item-object]: magento-integration/object/quote-item
+[order-object]: ../../magento-integration/object/order
+[product-object]: ../../magento-integration/object/product
+[quote-item-object]: ../../magento-integration/object/quote-item

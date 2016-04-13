@@ -1,6 +1,6 @@
 # Property `embed`
 
-The `embed` property is used inside [video blocks](json/block-video)
+The `embed` property is used inside [video blocks](../json/block-video)
 to indicate whether the video should be embedded in the webversion of the document.
 
 It is important to realize that the majority of the email clients do not support 
@@ -25,4 +25,4 @@ is opened in a browser, and not in an email client.
 ```
 
 For more information and more examples, please check the documentation
-of [video blocks](json/block-video).
+of [video blocks](../json/block-video).

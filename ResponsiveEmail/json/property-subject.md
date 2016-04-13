@@ -31,10 +31,10 @@ clients, it is recommended keep your subject line to 50 characters or less.
 
 ## Related information
 
-The subject line is stored in the header of the email. Other [top level properties](json/top-level-properties) 
+The subject line is stored in the header of the email. Other [top level properties](../json/top-level-properties) 
 to change the mime header of the generated mime are for example 
-[`from`](json/property-from), 
-[`to`](json/property-to), 
-[`replyTo`](json/property-reply-to), 
-[`cc`](json/property-cc) and the property 
-[`headers`](json/property-headers).
+[`from`](../json/property-from), 
+[`to`](../json/property-to), 
+[`replyTo`](../json/property-reply-to), 
+[`cc`](../json/property-cc) and the property 
+[`headers`](../json/property-headers).

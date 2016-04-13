@@ -2,7 +2,7 @@
 
 The ResponsiveEmail.com API allows you to add attachments to your emails. Attachments
 are defined in the MIME properties and will therefore only show when the
-[MIME version](/support/api/get-template-mime "API method to get MIME version")
+[MIME version](../api/get-template-mime "API method to get MIME version")
 of your email is retrieved. Attachments are stored in an array, which makes
 it possible to add as many attachments to an email as you want. You can either place
 the data of your attachment directly in the json (base64 encoded) or you provide an url

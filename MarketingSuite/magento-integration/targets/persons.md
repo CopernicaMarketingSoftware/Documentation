@@ -86,11 +86,11 @@ filter options to it. It's possible to apply following filter options:
    from given [category][category-object] inside theirs [wishlist][wishlist-object].
    [Wishlists][wishlist-object] are available only for [customers][customer-object].
    
-[webstore-object]: magento-integration/object/webstore
-[product-object]: magento-integration/object/product
-[category-object]: magento-integration/object/category
-[wishlist-object]: magento-integration/object/wishlist
-[customer-object]: magento-integration/object/customer
-[person-object]: magento-integration/object/person
-[magento-object]: magento-integration/object/magento
-[subscribers-target]: magento-integration/targets/subscribers
+[webstore-object]: ../../magento-integration/object/webstore
+[product-object]: ../../magento-integration/object/product
+[category-object]: ../../magento-integration/object/category
+[wishlist-object]: ../../magento-integration/object/wishlist
+[customer-object]: ../../magento-integration/object/customer
+[person-object]: ../../magento-integration/object/person
+[magento-object]: ../../magento-integration/object/magento
+[subscribers-target]: ../../magento-integration/targets/subscribers

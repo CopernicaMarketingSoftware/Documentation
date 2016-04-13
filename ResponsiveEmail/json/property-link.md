@@ -8,9 +8,9 @@ a full JSON object, containing the properties of the links. See table below.
 
 | Property | Value | Desc.                                                                                                                          |
 |:---------|-------|--------------------------------------------------------------------------------------------------------------------------------|
-| [url](json/property-link-url) | _string_ | The online location where user is redirected to.                        |
-| [title](json/property-link-title) | _string_ | The link title / description.                                       |
-| [params](json/property-link-params) | _object_ | Add or overwrite URL query strings, presented as a key-value pair |
+| [url](../json/property-link-url) | _string_ | The online location where user is redirected to.                        |
+| [title](../json/property-link-title) | _string_ | The link title / description.                                       |
+| [params](../json/property-link-params) | _object_ | Add or overwrite URL query strings, presented as a key-value pair |
 
 ## Example
 

@@ -67,7 +67,7 @@ to enter your password (if you use Thunderbird) and after that you're all set!
 ## Passing parameters for SMTPeter's options
 
 The SMTP protocol was never meant to pass parameters with each message. If you want to
-enable or disable specific SMTPeter [features](features "SMTPeter Features")
+enable or disable specific SMTPeter [features](rest-features "SMTPeter Features")
 for specific messages, you will have to either use SMTP credentials or use different MIME header fields.
 
 In the SMTPeter dashboard you can create multiple SMTP logins. You can for example

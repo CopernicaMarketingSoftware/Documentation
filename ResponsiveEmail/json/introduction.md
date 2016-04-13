@@ -40,7 +40,7 @@ As you can probably guess from the first example, there are many different
 properties, e.g. `subject`, `text`, `from`, that can be set. These objects can 
 even hold arrays and nested data.
 
-[Learn more about top level properties](json/top-level-properties "Learn more about top level properties")
+[Learn more about top level properties](../json/top-level-properties "Learn more about top level properties")
 
 ## The `content` property
 
@@ -48,7 +48,7 @@ The structure and design of emails generated with the API is defined inside the
 property `content`. Here you can add the blocks that will form your responsive 
 email, based on a 12 columns grid system.
 
-[Learn more about the content property](json/property-content "Learn more about the content property")
+[Learn more about the content property](../json/property-content "Learn more about the content property")
 
 ## The content block types
 
@@ -81,4 +81,4 @@ Add an image
 
 ![](//placekitten.com/200/140)
 
-[Learn more about content block types](json/property-blocks "Learn more about content block types")
+[Learn more about content block types](../json/property-blocks "Learn more about content block types")

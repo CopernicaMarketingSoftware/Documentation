@@ -27,8 +27,8 @@ above example.
 ## Related information
 
 Note that the returned HTML code is optimized for *email clients*. If the template 
-JSON contains [visibility properties](json/property-visibility) 
+JSON contains [visibility properties](../json/property-visibility) 
 that limit certain blocks to only be visible in the web version of the mail, 
 then these blocks will not be included in the returned HTML code. If you want to 
-fetch the web version of an email, use the [/v1/webversion](api/post-webversion) 
+fetch the web version of an email, use the [/v1/webversion](../api/post-webversion) 
 method instead.

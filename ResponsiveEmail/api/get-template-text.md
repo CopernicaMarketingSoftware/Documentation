@@ -2,7 +2,7 @@
 
 After storing a template on the ResponsiveEmail.com servers, you can retrieve 
 the plain text representation using this method. This will simply return the 
-[text property](json/property-text).
+[text property](../json/property-text).
 
 ## Example request
 
@@ -27,4 +27,4 @@ Without these parameters an unpersonalized output will be returned.
 ## Related information
 
 You can only retrieve the text version of templates that you created earlier 
-with a POST call to the [/v1/template](api/post-template) method.
+with a POST call to the [/v1/template](../api/post-template) method.

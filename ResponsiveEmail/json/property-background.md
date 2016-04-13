@@ -24,9 +24,9 @@ also be specified according to their common English names (e.g., 'red',
 ## Where to use?
 
 The `background` property can be used at almost every level in the input JSON. 
-If you use it as a [top level property](json/top-level-properties), 
+If you use it as a [top level property](../json/top-level-properties), 
 its value will be used as the background for the entire template. Inside the 
-[content section](json/property-content) it holds 
+[content section](../json/property-content) it holds 
 the background of the centered content, and inside a block you can use it to set 
 the background color for just a single block.
 
