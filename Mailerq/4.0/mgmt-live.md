@@ -7,4 +7,4 @@ MailerQ process. All SMTP traffic received and sent out by MailerQ is
 also sent to this websocket, so you can exactly keep an eye on what is 
 happening to your mailings.
 
-![MailerQ SMTP monitor with websockets](mailerq-websocket.png)
+![MailerQ SMTP monitor with websockets](../Images/mailerq-websocket.png)
