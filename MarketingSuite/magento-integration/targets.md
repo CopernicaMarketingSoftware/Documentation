@@ -69,7 +69,7 @@ To do so, navigate to **Magento Sync** inside Marketing Suite, then pick a targe
 type inside "Manage lists". A new page with list of targets and form should 
 pop up.
 
-![](magento-filter-page.png)
+![](../images/magento-filter-page.png)
 
 In this screen you can fine tune mailing target options. Each target type has 
 specific set of options that can be applied. For example, 'orders' can be filtered 
