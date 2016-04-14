@@ -46,7 +46,7 @@ and a content section with a yellow background.
 
 ## Example output
 
-![](example-output-content.png)
+![](../images/example-output-content.png)
 
 ## Sub properties
 

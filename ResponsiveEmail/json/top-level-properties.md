@@ -82,4 +82,4 @@ Just an idea of how a JSON document could look like.
 
 ## Output
 
-![](example-output.png)
+![](../images/example-output.png)

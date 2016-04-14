@@ -4,7 +4,7 @@ The `style` property is a simple property inside [separator blocks](../json/bloc
 used to set the style of the separator. You can for example create dashed, 
 dotted, or solid separators. The default is "solid".
 
-![](separator-style-options.png)
+![](../images/separator-style-options.png)
 
 ## Example
 

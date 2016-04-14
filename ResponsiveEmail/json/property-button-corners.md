@@ -31,4 +31,4 @@ Add rounded corners to a button
 
 ## Output
 
-![](example-output-button.png)
+![](../images/example-output-button.png)
