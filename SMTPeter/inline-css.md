@@ -5,7 +5,7 @@ with your mail. The CSS style sheet in the HTML header of your carefully
 constructed message might for example be removed or replaced, so that the
 layout of your mail is ruined when it ends up in your recipient's inbox:
 
-![Inlinize CSS](../Images/inlinecss.png "Inlinize CSS")
+![Inlinize CSS](Images/inlinecss.png "Inlinize CSS")
 
 Many email programmers prevent this by using inline style
 attributes in their HTML code instead of style blocks on top of the message.
