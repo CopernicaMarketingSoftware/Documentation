@@ -60,15 +60,15 @@ the SMTP protocol, and the full MIME data.
 ````
 
 To ease readability, we've removed the majority of the MIME code from the 
-example. If you do not want to create the entire MIME message yourself, you 
+example. If you do not want to create the MIME message yourself, you 
 can leave out the property "mime", and 
-[use special MIME properties](smtp-mime) like "subject", "text" and "html"
+[use special MIME properties](rest-mime) like "subject", "text" and "html"
 so that SMTPeter can construct the mime data.
 
-You only have to supply a recipient address, and no envelope. The envelope
-will be filled in by SMTPeter to track the bounces. But if you want to 
+You only have to supply a recipient address. An envelope address is not necessary.
+The envelope will be filled in by SMTPeter to track the bounces. However, if you want to 
 receive the bounces yourself, you must also add an envelope address. Besides
-the envelope address, you can even add a ["dsn" property](rest-dsn) to
+the envelope address, you can also add a ["dsn" property](rest-dsn) to
 specify the type of bounce messages you want to receive.
 
 
@@ -119,7 +119,7 @@ attribytes in the HTML code.
 
 SMTPeter automatically replaces all hyperlinks in your messages with its
 own URLs so that you can track clicks and opens. The envelope address
-of the mailing will also be set to a SMTPeter address, so that all
+of the mailing will be set to a SMTPeter address, so that all
 bounces and out-of-office replies can be tracked by SMTPeter. If you
 want to disable these tracking settings, you can include the 
 "trackclicks", "trackopens" and "trackbounces" options, and set them 

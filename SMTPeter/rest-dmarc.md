@@ -27,7 +27,7 @@ You will receive an array with JSON objects of the form:
 }
 ```
 The "name" property in the JSON holds the name of the sender domain. The
-policy is the sender domain's DMARC policy ('none', 'quarantine', or 'reject').
+policy holds the sender domain's DMARC policy ('none', 'quarantine', or 'reject').
 The percentage holds the percentage of mails for which the policy should
 be applied.
 
@@ -36,6 +36,10 @@ be applied.
 
 If you use [DMARC](dmarc-deployment) for your SMTPeter account, ISPs and
 email providers periodically send reports with SPF and DKIM statistics.
+
+svn st
+
+
 These reports are accessible via the REST GET API with the following methods:
 
 ```text
