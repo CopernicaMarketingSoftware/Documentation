@@ -158,4 +158,51 @@ echo("The winner started on: ".$result->winner()->started()."\n");
 echo("The runtime of the winner was: ".$result->winner()->runtime()."\n");
 ```
 
+Should the race job - for whichever reason - fail to complete successfully, a
+Yothalot\RaceError is returned.
 
+```php
+class Yothalot\RaceError extends Yothalot\RaceResult
+{
+    /**
+     *  The executable that failed
+     */
+    public function executable();
+
+    /**
+     *  The arguments that were passed to the executable that failed
+     */
+    public function arguments();
+
+    /**
+     *  The input that was send to this job
+     */
+    public function stdin();
+
+    /**
+     *  The stderr of the failed job, you'll probably want to expect this as
+     *  it could very well contain PHP fatal errors etc.
+     */
+    public function stderr();
+
+    /**
+     *  The stdout of the failed job.
+     */
+    public function stdout();
+
+    /**
+     *  The complete command that was executed. This includes
+     *  the input piped into the program  as well as the arguments
+     */
+    public function command();
+}
+```
+
+As you can see, the error result extends from the regular result. It also
+evaluates to false when used in boolean context, which makes it easy to
+check whether a race job executed successfully.
+
+All the relevant information, the executable, arguments and the input is
+available in this object to debug the error by running the task standalone.
+The complete command to do this is returned by the Yothalot\RaceError::command()
+method.
