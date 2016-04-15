@@ -37,9 +37,6 @@ be applied.
 If you use [DMARC](dmarc-deployment) for your SMTPeter account, ISPs and
 email providers periodically send reports with SPF and DKIM statistics.
 
-svn st
-
-
 These reports are accessible via the REST GET API with the following methods:
 
 ```text
