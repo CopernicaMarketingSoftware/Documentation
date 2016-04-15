@@ -70,7 +70,7 @@ export PATH=`pwd`/depot_tools:"$PATH"
 gclient
 fetch v8
 cd v8
-git checkout 5.1.299
+git checkout 5.2
 make library=shared i18nsupport=off native
 sudo cp include/*.h /usr/include
 sudo cp out/native/lib.target/libv8.so /usr/lib 
