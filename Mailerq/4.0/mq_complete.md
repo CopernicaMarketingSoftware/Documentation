@@ -12,9 +12,9 @@ The [MQ_Continue()](mq_complete) implements the second behavior. If you call it,
 /**
  *  Finish plugin processing
  *
- *  @param  context the context that may move on to the next plugin
+ *  @param  connection  the connection that may move on to the next plugin
  */
-void MQ_Continue(MQ_Context *context);
+void MQ_Continue([MQ_Connection](mq_connection) *connection);
 ````
 
 See also [MQ_Continue()](mq_continue) and [MQ_Retry()](mq_retry) for the other ways of handing back control.
