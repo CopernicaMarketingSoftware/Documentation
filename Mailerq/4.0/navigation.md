@@ -7,7 +7,6 @@
 * [Configuration file](configuration "The RabbitMQ config file")
     * [RabbitMQ connection](rabbitmq-config "RabbitmQ connection")
     * [Cluster settings](cluster "MailerQ clustering")
-    * [Delivery throttling](delivery-limits "Delivery Throttling")
     * [Database access](database-access "Database access")
     * [Message store options](message-store-options "Message Store options")
     * [Logging](logging "Logging")

@@ -6,7 +6,7 @@ and share information and hand over undeliverable messages.
 Setting up a cluster has many advantages:
 
 - the management console of each MailerQ instance has links to the other instances
-- cached data gets reset by all instances the entire cluster
+- cached data gets reset by all instances in the entire cluster
 - messages are handed over between instances
 
 Every MailerQ server in the cluster shares its configuration with the other
@@ -40,11 +40,7 @@ used, and the same server address as is set in the "rabbitmq-address" setting.
 
 It is important that every instance _uses the same cluster settings_. Even when
 every instance has its own private RabbitMQ server, all instances must have the 
-same values for "cluster-address" and "cluster-exchange". That is 
-exactly why the config file allows you to set both a "rabbitmq-address" variable 
-with the address of the RabbitMQ server from which the emails are loaded, and a 
-"cluster-address" variable to set the RabbitMQ instance that is used by all MailerQ 
-instances for their internal communication.
+same values for "cluster-address" and "cluster-exchange".
 
 It is also recommended to use the same relational database for each instance.
 By doing this, the instances use the same delivery throttles and DKIM keys.
@@ -67,7 +63,7 @@ can reload the delivery limits from the database.
 ## RabbitMQ clustering vs. MailerQ clustering
 
 Be aware that both RabbitMQ and MailerQ support clustering, but that from a 
-technical standpoint this clustering has a while different meaning. Clustering for 
+technical standpoint this clustering has a whole different meaning. Clustering for 
 RabbitMQ means that queues are shared amongst different RabbitMQ instances, so that 
 no messages are lost when one of the RabbitMQ servers crash.
 

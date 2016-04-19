@@ -35,8 +35,8 @@ Running a cluster allows you to use [highly available queues](https://www.rabbit
 MailerQ uses several queues to manage email messages. All mails that
 flow through MailerQ are picked up from and published back to specific queues
 in RabbitMQ. The names of these queues are set in the config file. On startup, MailerQ 
-reads this configuration and tells RabbitMQ to create the queues listed in
-the config file. This means that you do not have to ensure that the queues exists 
+reads this configuration and tells RabbitMQ to create the listed queues. This 
+means that you do not have to ensure that the queues exists 
 before you start up MailerQ: the queues are automatically created.
 
 ```
@@ -59,79 +59,67 @@ message specific settings.
 
 ### Queue for outgoing messages
 
-All emails that MailerQ sends out are fetched from the outbox queue. This
-outbox queue feeds MailerQ with messages to be delivered. The
+All emails that MailerQ is going to send out are fetched from the outbox queue. 
+The outbox queue feeds MailerQ with messages to be delivered. The
 name of this queue can be set with the "rabbitmq-outbox" setting in the
 config file. The default value is "outbox".
 
-The outbox queue is the only queue from which messages are read. All other 
-queues are just used to publish messages to. If you want to inject outgoing
-email messages directly into RabbitMQ, you should publish your messages to 
-this outbox queue so that MailerQ automatically picks them up and delivers
-them.
+The outbox queue is the only queue from which messages are read. If you want 
+to inject outgoing email messages directly into RabbitMQ, you should 
+therefore publish your messages to this outbox queue so that MailerQ 
+automatically picks them up and delivers them.
 
 
 ### Queues for incoming messages
 
-All queues other than the outbox queue are used by MailerQ to write data to.
-These are for example queues to which the results are written, and queues for
-incoming messages. Incoming messages are messages that are being received
-by MailerQ, for example on its SMTP port or in its spool directory.
+The queues other than the outbox queue are used by MailerQ to write data to.
+These are for example queues to which the results are written, and queues that
+are used for incoming messages. Incoming messages for example come from
+the MailerQ SMTP port or are the messages that are dropped in the spool directory.
 
-Messages that are received by MailerQ via one of the injection mechanisms are converted 
-into JSON and published to message queues. The "rabbitmq-inbox" setting specifies 
-the queue to which all these correctly received messages are delivered, and 
-"rabbitmq-refused" holds the messages that were delivered to the SMTP port, 
-but that were not accepted (e.g., because the client did not correctly authenticate). 
+Messages that are received by MailerQ via one of the injection mechanisms are 
+converted into JSON format and published to message queues. The "rabbitmq-inbox" 
+setting specifies the default queue for these incoming messages, but there other 
+queues that are used as well.
 
 ```
 rabbitmq-inbox:     inbox
-rabbitmq-refused:   refused
-rabbitmq-reports:   reports
 rabbitmq-local:     local
+rabbitmq-reports:   reports
+rabbitmq-refused:   refused
 ```
 
-The "inbox" queue is not the only queue to which incoming messages are published, 
-it is slightly more complicated than that. When MailerQ receives a message, 
-the message is analyzed first. If it contains a delivery report (or
-some other kind of report), the message is not placed in the "inbox" queue but
-in the "reports" queue instead. If by accident or on purpose a 
-non-regular mail comes in on the SMTP port (for example a bounced email or a DMARC
-report). Such mails will not be published to the regular inbox queue, but to the 
-reports queue where you can further inspect them.
-
-Each incoming mail is also checked to see whether the recipient 
-appears on the list of "local" email addresses that can be managed via the
-management console. If the recipient appears on this list, the email is accepted 
-(even when it came in over an unauthenticated SMTP connection) and is
-stored in the "local" message queue.
-
-Messages that do not contain a report and that are also not local (this
-normally is the majority of all messages) are sent to the "inbox" queue.
-To summerize, incoming messages are published to one of the following four
-queues:
-
-* inbox queue: regular incoming messages
-* local queue: incoming messages for local recipient addresses
-* reports queue: incoming messages that contain a delivery report
-* refused queue: incoming messages that were not accepted
-
-The names of all these queues are optional and you may set them all to empty 
-strings. If you do not set an explicit "inbox" queue, all incoming messages 
+If you do not set an explicit "inbox" queue, all incoming messages 
 are automatically published to the "outbox" queue. This means that all 
 incoming messages are automatically sent out again. Leaving this "inbox" queue 
 empty is a very common thing to do, especially if you set up MailerQ as a 
 retransmitter.
 
-You can also leave the "local" and "reports" queue settings empty. If you 
-do this MailerQ will not explicitly check whether an email was sent to a 
-local address and/or whether an incoming message contained a delivery report. 
-All incoming messages are treated as regular incoming messages 
-and are sent to the inbox queue.
+The "refused", "reports" and "local" settings are optional too. If you leave
+them empty, MailerQ simply publishes all incoming message to the inbox queue
+(or to the outbox queue if no inbox was set). But if you do configure one or 
+more of these queues, MailerQ analyzes each incoming
+message to see if it should be published to the normal inbox, or to
+one of the other queues instead.
 
-When you configure MailerQ to listen to one or more SMTP ports, and you
-also require incoming connections to authenticate, you might receive
-messages over unauthenticated connections. These messages are rejected and
+MailerQ internally keeps a list of "local" email addresses. This list can be
+edited via the management console. If you have configured a "local" message 
+queue, and a mail comes in for an address that is on that list, the message 
+will not be dropped in a the "inbox" queue, but in the "local" queue instead.
+
+And if the local email turns out to be not a normal type of email, but some kind 
+of delivery report (or some other kind of report), the message is not even placed 
+in the "inbox" queue but goes to the "reports" queue instead:
+
+* inbox queue: regular incoming messages
+* local queue: incoming messages for local recipient addresses
+* reports queue: incoming messages for local recipients that contain a delivery report
+* refused queue: incoming messages that were not accepted
+
+The last queue to mention is the "refused" queue. It is used for message that
+were not accepted. For example, when you configure MailerQ to listen to one or 
+more SMTP ports, and you require incoming connections to authenticate, you might 
+receive messages over unauthenticated connections. These messages are rejected and
 do not end up in the "inbox" queue. However, for debugging and/or 
 security reasons you might still want to find out who is flooding your SMTP 
 server. By assigning a value to "rabbitmq-refused", you instruct MailerQ to send 
@@ -160,7 +148,7 @@ the original envelope address when a delivery fails (technically, it is
 also possible to send such notifications on successful delivery and when
 a message gets delayed, but in practice it is mostly used for failure 
 notifcations). If you explicitly configure a message to trigger such
-status notifications on failure, MailerQ will create a status notification 
+status notifications on failure, MailerQ sends a status notification 
 when the message could not be delivered.
 
 A [delivery status notification](sending-bounces) (DSN) is just a regular email 
@@ -203,23 +191,23 @@ The "rabbitmq-results", "rabbitmq-success" and "rabbitmq-failure" settings hold
 the names of the RabbitMQ result queues. MailerQ posts a JSON result object for
 every successful delivery to the success queue, and for all failed deliveries to 
 the failure queue. This same result object is also sent to the results queue. 
-Every result object is indeed published to two queues: failures are posted to the 
+Every result object is thus published to two queues: failures are posted to the 
 results queue and the failure queue, while successes are published to the results 
 and success queues.
 
 MailerQ only considers a delivery to be a failure when no new delivery attempts 
 get scheduled. When a message cannot immediately be delivered, or when it is 
-greylisted and will be retried, it is published back to the outbox queue instead,
+greylisted and will be retried, it is published back to the outbox queue,
 and not to the results and/or failure queues.
 
 If you want to process the intermediate results (like greylisting reports) too, 
 you can use a retry queue by setting the "rabbitmq-retry" config setting. All
-deliveries that failed, but that are published back to the outbox queue for
-a new attempt, will also be posted to this retry queue.
+deliveries that failed, but that are published back to the outbox, are also 
+posted to this retry queue.
 
 If you're not interested in the results, or when you're only interested in
-specific results (like failures), you can set the result queues to empty
-strings. MailerQ will then not publish messages to them.
+specific results (like failures), you can set one or more of the result queues 
+to empty strings. MailerQ will then not publish messages to them.
 
 
 ## The exchange
@@ -269,8 +257,8 @@ durable and whether you want messages to be persistent using the following
 two options:
 
 ```
-rabbitmq-durable:       <1 or 0> (default: 1)
-rabbitmq-persistent:    <1 or 0> (default: 0)
+rabbitmq-durable:       true    (default: true)
+rabbitmq-persistent:    false   (default: false)
 ```
 
 MailerQ creates several queues and exchanges in RabbitMQ. When MailerQ starts, it 
@@ -288,12 +276,12 @@ is turned off, all exchanges and queues will be created once MailerQ starts. If 
 script BEFORE you start MailerQ you could possibly lose messages.
 
 The "rabbitmq-persistent" setting toggles whether messages published by MailerQ 
-should be cached in main memory or on disk. With the default "0" setting, RabbitMQ 
+should be cached in main memory or on disk. With the default "false" setting, RabbitMQ 
 keeps messages only in main memory and not on disk.  This is 
 much, much faster than storing the messages to disk. It does however bring a higher 
 risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistency will 
-mean your messages are also saved on disk, and can survive a RabbitMQ crash. But at 
+mean your messages are also saved to disk, and can survive a RabbitMQ crash. But at 
 the same time it makes things much slower. We therefore recommend leaving the 
-"rabbitmq-persistent" option off (set to "0"). 
+"rabbitmq-persistent" option off (set to "false"). 
 
 
