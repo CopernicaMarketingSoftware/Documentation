@@ -93,7 +93,7 @@ them all and create new ones.
 
 It is possible to run multiple MailerQ instances that all connect to the
 same database. If you do this, we recommend setting up a [cluster](cluster)
-of MailerQ instances. The different MailerQ instances then notify each
+of MailerQ instances too. The different MailerQ instances then notify each
 other every time the settings in the database are updated, so that each
 instance can update its cache.
 
@@ -106,7 +106,7 @@ It is therefore in normal operations not at all necessary to run any
 queries on the database by yourself. But if you do like to access the data
 you are free to do so.
 
-All created tables in the database have a very straight forward structure. 
+All tables in the database have a very straight forward structure. 
 Because MailerQ is compatible with many different database systems, we have
 decided not to use vendor specific SQL features and keep all tables as simple
 as possible. The tables use well known data types, and no foreign 
@@ -164,11 +164,11 @@ using the management console. We'll give a short explanation of each table here.
 
 ### The capacity table
 
-All send capacities are stored in this "capacity" table. It for example
-holds the max number of connections that may set set up to a certain
-domain name, or the max number of messages to send within a minute.
+All delivery capacities are stored in this "capacity" table. It for example
+holds the max number of connections that may be set up to a certain
+domain, or the max number of messages to send within a minute.
 
-The "localip" and "domain" columns may be empty. If they are empty, the
+The "localip" and "domain" columns  in this table can both be empty. If they are empty, the
 setting applies to all local ips and/or all domains. Only the most specific
 record is used. Thus, if a mail is sent from IP 1.2.3.4 to domain example.com,
 the record with the same localip and same domain is used. If no such 

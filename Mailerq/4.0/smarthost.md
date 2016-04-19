@@ -2,7 +2,7 @@
 
 You can instruct MailerQ to use a "smart host". When you enable this feature,
 MailerQ does not send the messages directly to the final recipient, but
-to an alternative mailserver instead - the so-called smarthost.
+to an alternative mailserver instead: the smarthost.
 
 This feature could for example be useful if you use MailerQ for sending
 mails from your own server to the internet, but you want to use an external
@@ -15,8 +15,10 @@ the next instance.
 ## How to configure the smarthost feature
 
 By default, the smarthost feature is disabled. If you want to enable it,
-you either need to explicitly configure it in the configuration file.
-The following variables can be used for it:
+you either need to explicitly configure it in the configuration file,
+or you can enable it on a per-message level. The following config file
+variables can be used to enable the smarthost for all messages that
+flow through MailerQ:
 
 ```
 smarthost:          <hostname>  (empty by default)
@@ -54,7 +56,11 @@ configuration file.
 }
 ```
 
-#### MIME header
+### MIME header
+
+You can use MIME headers too to enable the smarthost on a per-message level.
+The following header variables have the same meaning as the JSON settings
+mentioned above:
 
 ```
 x-mq-smarthost-name:    <hostname-smarthost>
@@ -69,12 +75,13 @@ the username or password means MailerQ will not try to authenticate to the smart
 ## Using smarthost for debugging
 
 If you use the "smarthost" option, mails are not delivered to the actual 
-recipient but to the smarthost server instead. As a consequence, MailerQ 
+recipient but to the smarthost server. As a consequence, MailerQ 
 internally queues all mails as if they were sent to the smarthost domain. If 
 you open the management console, the list of active domains will be one 
-item long: the smarthost domain.
+item long: the smarthost domain because that's where all emails are going
+to be sent to.
 
-If you are debugging, you probably want to run MailerQ in (almost) 
+If you are debugging, you often want to run MailerQ in (almost) 
 the same configuration as you normally would, with queues for all the domains 
 to which messages are being delivered. The only difference is that you do not
 want to actually deliver the mails, but send them to a dummy destination:
@@ -102,7 +109,7 @@ incoming messages, you can use [Postfix' smtp-sink](http://www.postfix.org/smtp-
 
 ## What happens if you configure both the smarthost and the smtp-sink?
 
-It is very well possible to configure both the smtp-sink option and
+It is possible to configure both the smtp-sink option and
 the smarthost at the very same time. If you do this, MailerQ will keep
 a single queue of messages to the smarthost (and thus not seperate queues
 for hotmail, gmail, yahoo, et cetera) - but when the TCP connection is

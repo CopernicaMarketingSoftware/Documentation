@@ -30,57 +30,6 @@ user:           <user name> (empty by default)
 
 The user name to change identify to after the SMTP and HTTP ports have been opened.
 
-## Plugins
-
-Normally, MailerQ tries to load plugins from the default plugin directory, which 
-is `/usr/share/mailerq/plugins`. However, if you want to load plugins from 
-another directory instead, you can use the option below to specify the directory 
-from which to load the plugins. Beware, MailerQ will silently continue when the 
-specified directory can not be found, possibly causing plugins not to be loaded 
-without a warning.
-
-The path to the directory where the plugins are located:
-
-```
-plugin-directory: <path>    (default: /usr/share/mailerq/plugins)
-```
-
-## DNS settings
-
-You can override the settings that MailerQ uses to communicate with DNS 
-settings.
-
-The first lookup is done using UDP. If the response from the DNS server is 
-truncated because it does not fit in a UDP datagram, MailerQ opens a TCP 
-connection to the same DNS server to repeat the request. You can also modify 
-this behavior and enforce that MailerQ only uses TCP, or only uses UDP.
-
-When MailerQ sets up an SMTP connection, it first sends out the `HELO` message 
-as is required by the SMTP protocol. (In fact, it first tries the more modern 
-`EHLO` command defined by the ESMTP protocol). With this `HELO` or `EHLO` message,
-a hostname is sent to the remote server that identifies the sender.
-
-Normally, MailerQ automatically detects which hostname to use (by doing a reverse 
-DNS query).  If you want to override this with different values you can add a 
-helo map file in which you provide your own `HELO` hostnames.
-
-Location of the file containing `HELO` map.
-```
-dns-helofile: <filename>    (empty by default)
-```
-
-The file should contain IPs and hostnames in following format:
-
-```
-10.0.0.1 hostname1.example.com
-10.0.0.2 hostname2.example.com
-[...]
-```
-
-#### The communication channel to use, either `udp` or `tcp`. The default value is to use both.
-```
-dns-force:      <*|udp|tcp> (default: *)
-```
 
 ## Lockfile
 
