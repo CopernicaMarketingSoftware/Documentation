@@ -17,7 +17,7 @@ if no other plugins are available.
  *
  *  @param  connection  the connection that may move on to the next plugin
  */
-void MQ_Continue([MQ_Connection](mq_continue) *connection);
+void MQ_Continue(MQ_Connection *connection);
 ```
 
 See also [MQ_Complete()](mq_complete) and [MQ_Retry()](mq_retry) for the other ways of handing back control.

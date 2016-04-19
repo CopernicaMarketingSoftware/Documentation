@@ -15,7 +15,7 @@ to take control by returning boolean true here, but since this function is calle
  */
 MQ_EXPORT void mq_context_cleanup(MQ_Context *context) {
     // get the mysql connection resource that we stored in the context
-    MYSQL *connection = (MYSQL *)[MQ_ContextData](mq_contextdata)(context);
+    MYSQL *connection = (MYSQL *)MQ_ContextData(context);
 
     // close the connection
     mysql_close(connection);
