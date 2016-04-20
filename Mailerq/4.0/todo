@@ -6,19 +6,16 @@ config options to add to documentation:
     "max-queues",
     "max-memory",
     "www-host",
-    "smtp-privatekey", < is this the privatekey from mgmt-dkim?
+    "smtp-privatekey",
     "dns-threads",
     "config-file",
     "envelope"
 
 
-how many attempts?  
-unlimited in json-messages   maxattempts
-6         in mime-headers    x-mq-maxattempts
+Two pages use a different default amount of times a message is re-sent:
+unlimited in json-messages.md   maxattempts
+6         in mime-headers.md    x-mq-maxattempts
 
 
-possibly missing from config file: 
-a default value for x-mq-delayed
-because how formulated in text, but does that even make sense contextwise
-
-nieuwe opdracht
+mime-headers.md in Delivery time section seems to hint at a default value
+for x-mq-delayed, but this isn't available in the config file
