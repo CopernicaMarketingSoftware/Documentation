@@ -29,4 +29,8 @@ want. If there are multiple reports and ID is not provided, the first report
 is returned. The DMARC reports are gzip encoded XML documents.
 
 If you call dmarc without any extra arguments (i.e. method 1), you receive
-an array with dates for which we possibly have DMARC reports for you.
+an array with dates for which we possibly have DMARC reports for you. However,
+we advise you to use the [logfiles method](rest-logfiles) to see for which
+dates you have [DMARC log files](log-dmarc). The content in these DMARC
+logfiles gives you the information you need, like FROM and FOR, to get the
+DMARC reports.
