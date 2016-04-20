@@ -12,24 +12,29 @@ records and the status of the DNS records:
 (4) https://www.smtpeter.com/v1/dnsstatus/ID?access_token=YOUR_API_TOKEN
 ```
 
-## DNS record adjustments
+## DNS recommendations
 
-To get information on how to adjust your DNS records of your sender domain
-you can make a GET call to:
+SMTPeter cannot update your DNS records. This is something that you have
+to do yourself. However, we can give you a recommendation. The following
+methods are useful.
 
 ```txt
 (1) https://www.smtpeter.com/v1/dns/NAME?access_token=YOUR_API_TOKEN
 (2) https://www.smtpeter.com/v1/dns/ID?access_token=YOUR_API_TOKEN
 ```
+
 where "NAME" and "ID" are the name and the id of the sender domain.
-Calls to these methods return a JSON of the form:
+SMTpeter can only give recommendations for domains that you have
+configured first (for example with the [sender domain REST API calls](rest-sender-domains).
+
+The calls to the above methods return a JSON of the following form:
 
 ```json
 [
     {
         "name": "_dmarc.example.com",
         "type": "TXT",
-        "value": "v=DMARC1;p=none;aspf=s;adkim=s;rua=mailto:dmarc@smtpeter.com;pct=10"
+        "value": "v=DMARC1;p=reject;aspf=s;adkim=s;rua=mailto:dmarc@smtpeter.com;pct=100"
     },
     {
         "name": "example.com",
@@ -53,33 +58,45 @@ The "name" property holds the name of the DNS record that needs to be adjusted.
 The "type" holds the type of the DNS record (e.g. TXT or MX). The "value"
 property holds the suggested value".
 
+Keep in mind that SMTPeter's recommendation for DMARC is to use p=reject and a
+percentage of 100%. If you want to rollout DMARC slowly, you could adjust
+the record and use a smaller percentage, and/or a more permissive policy,
+
+
 ## DNS status
 
-If you want to check the status of the DNS records of your sender domain
-you can make GET calls to:
+If you want to check the status of your current DNS records you can make GET
+calls to:
 
 ```txt
 (1) https://www.smtpeter.com/v1/dnsstatus/NAME?access_token=YOUR_API_TOKEN
 (2) https://www.smtpeter.com/v1/dnsstatus/ID?access_token=YOUR_API_TOKEN
 ```
-where "NAME" and "ID" are the name and the id of the sender domain for which
-you want to check the DNS records. These calls return a JSON object of the
-form:
+
+where "NAME" and "ID" are once again the name and the id of the sender domain.
+When you call these methods, SMTPeter will query your DNS records and compare
+the settings in it with the recommended settings. If there is anything wrong
+with your DNS records, it is reported. The output for these REST calls
+typically looks like this:
 
 ```json
 {
-    "DMARC":    "ok",
-    "DKIM":     "ok",
-    "SPF":      "ok",
-    "Bounces":  "error",
-    "Tracking": "ok",
-    "errors":
-    {
-        "Bounces": "Bounce domain is not pointing to SMTPeter"
+    "dmarc":    "ok",
+    "dkim":     "ok",
+    "spf":      "ok",
+    "mx":       "error",
+    "a":        "ok",
+    "errors": {
+        "mx": "Bounce domain is not pointing to mail.smtpeter.com"
     }
 }
 ```
-The properties "DMARC", "DKIM", "SPF", "Bounces", and "Tracking" give the
-status on the DMARC, DKIM, SPF, Bounces, and Tracking records respectively.
-The status can be "ok", or "error". If there are any errors, property "errors"
-is set that holds an object with the human readable errors per record.
+
+The properties "dmarc", "dkim" and "spf" give the status of your DMARC,
+DKIM and SPF records in DNS. Possible values are "ok" and "error". The
+"mx" and "a" records tell you whether you have correctly set up MX and
+A records in your DNS that are needed to process bounces and to track
+opens and clicks.
+
+If there are any errors, an extra property "errors" is added that holds
+human readable error messages.

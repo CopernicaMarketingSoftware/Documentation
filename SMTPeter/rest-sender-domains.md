@@ -1,11 +1,11 @@
 # Sender domains
 
 All email that flows through SMTPeter is processed based on the sender
-domain settings stored in SMTPeter. When SMTPeter processes an email 
+domain settings stored in SMTPeter. When SMTPeter processes an email
 message, it extracts the hostname from the "from" address, and looks
 up the domain settings to decide how to handle the message.
 
-You can create a different configuration for each domain that you use in 
+You can create a different configuration for each domain that you use in
 the "from" header of your mail. Besides the dashboard to do this manually,
 you can use the REST API for this too. The following methods
 are available:
@@ -35,7 +35,7 @@ You will receive an array with JSON objects holding the following information:
         'bounces':     "bounces.yoursenderdomain.com",
         'tracking':    "tracking.yoursenderdomain.com",
         'ips':         ["1.2.3.4", "2.3.4.5"]
-    }, 
+    },
     {
         'name':        "example.com",
         'id':          124,
@@ -48,10 +48,10 @@ You will receive an array with JSON objects holding the following information:
 ```
 
 In this JSON, the "name" property holds the name of your sender domain and the
-"id" holds the id of the domain. The "bounces" and  "tracking"
+"id" the unique identifier of the domain. The "bounces" and "tracking"
 properties hold the names of the bounces and tracking domains for the
-sender domain. The "ips" property holds a vector with the ip addresses
-used for the sender domain. Where the ip addresses are listed as strings.
+sender domain. The property "ips" contains an array with the ip addresses
+used for the sender domain.
 
 If you want to have the information for one domain only you can make a GET
 call to:
@@ -74,44 +74,36 @@ of the form:
 POST /v1/domain?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
-Content-Length: 
+Content-Length:
 
 {
-    "name":         "example.com",
+    "name":         "yourdomain.com",
     "bounces":      "bounces.example.com",
     "tracking":     "clicks.example.com"
-    "selector":     "dkim_selector",
-    "privatekey":   "KJLDIVWEkjsadfjlie...KDIFEIji=="
 }
 ```
 The "name" property is mandatory and should contain the sender domain name
 that you want to create or update. The "bounces" and "tracking" properties are optional.
-With these properties you can set the domain that handles the bounces that
-your mails generate or that domain that handles your tracking. If you do
-not set these properties while creating the sender domain, the domains
-are set to the name of the sender domain and "clicks.smtpeter.com" respectively.
-If the sender domain already exists and you do not specify the "bounces", 
-or "tracking" property, they will be untouched and preserve the old value.
+With these properties you can set the domain that handles the bounces and the
+domain that handles your tracking of clicks and opens. If you do
+not include these properties while creating a sender domain, the domains
+are set to "bounce.yourdomain.com" and "clicks.smtpeter.com" respectively.
 
-The "selector" and "privatekey" properties are also optional. With these
-properties you can control the [DKIM signing](dkim-signing) of the domain.
-With the property "selector" you can set your own selector that is used
-for the DKIM key. If you do not specify this property SMTPeter will use
-"dkim". With the "privatekey" property you can set the key with which
-SMTPeter has to sign the mails for the sender domain. This private key
-has to be SHA256 base64 encoded key. If you don't set this property SMTPeter
-will generate a key for you. Note that you can only set a private key if
-you also provide a selector.
+After setting up a sender domain, you normally also want to make a subsequent
+call to the REST API to [create a DKIM key](rest-dkim) for the sender domain.
+This DKIM key will be used for signing all messages that flow through SMTPeter.
+
+After setting up a sender domain and the DKIM keys, it is your own responsibility
+to update your DNS records. The REST API has a [couple of methods](rest-dns) to
+help you with this.
 
 
 ## Deleting a sender domain
 
-To delete a sender domain you do a DELETE call to
+To delete a sender domain you can make a DELETE call to
+
 ```txt
 https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
 ```
-where NAME is the name of the sender domain you want to delete. If you delete
-a sender domain, the DKIM keys that share the same name will **not** be deleted.
-So, these keys can still be used if you use relaxed DKIM alignment in your
-DMARC settings. If you want to delete the DKIM keys for the domain as well
-you can use the DELETE call on the [dkim key method](rest-dkim).
+
+where NAME is the name of the sender domain you want to delete.
