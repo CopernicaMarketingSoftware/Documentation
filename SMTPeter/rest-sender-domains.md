@@ -81,7 +81,7 @@ Content-Length:
     "bounces":      "bounces.example.com",
     "tracking":     "clicks.example.com"
     "selector":     "dkim_selector",
-    "privatekey":   "-----BEGIN PRIVATE KEY-----...-----END PRIVATE KEY-----"
+    "privatekey":   "KJLDIVWEkjsadfjlie...KDIFEIji=="
 }
 ```
 The "name" property is mandatory and should contain the sender domain name
@@ -98,8 +98,10 @@ properties you can control the [DKIM signing](dkim-signing) of the domain.
 With the property "selector" you can set your own selector that is used
 for the DKIM key. If you do not specify this property SMTPeter will use
 "dkim". With the "privatekey" property you can set the key with which
-SMTPeter has to sign the mails for the sender domain. If you don't set
-this property SMTPeter will generate a key for you.
+SMTPeter has to sign the mails for the sender domain. This private key
+has to be SHA256 base64 encoded key. If you don't set this property SMTPeter
+will generate a key for you. Note that you can only set a private key if
+you also provide a selector.
 
 
 ## Deleting a sender domain
@@ -108,4 +110,8 @@ To delete a sender domain you do a DELETE call to
 ```txt
 https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
 ```
-where NAME is the name of the sender domain you want to delete.
+where NAME is the name of the sender domain you want to delete. If you delete
+a sender domain, the DKIM keys that share the same name will **not** be deleted.
+So, these keys can still be used if you use relaxed DKIM alignment in your
+DMARC settings. If you want to delete the DKIM keys for the domain as well
+you can use the DELETE call on the [dkim key method](rest-dkim).

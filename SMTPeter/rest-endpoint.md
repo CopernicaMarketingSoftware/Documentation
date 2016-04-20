@@ -17,7 +17,6 @@ in the URL allows us to break compatibility in future versions of the API.
 
 ## HTTP methods
 
-SMTPeter supports both HTTP POST as well as HTTP GET requests. POST
+SMTPeter supports HTTP POST, HTTP GET, and HTTP DELETE requests. POST
 requests are used for submitting data, and GET requests for calls
-that just retrieve data. 
-
+that just retrieve data, DELETE requests delete data permanently. 

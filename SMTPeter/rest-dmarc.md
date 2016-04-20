@@ -1,36 +1,13 @@
 # DMARC settings and reports
 
-SMTPeter supports DMARC. Via the rest API you can get your DMARC settings
-and the sent DMARC reports. The supported methods with respect to dmarc
-are:
+SMTPeter supports DMARC. Via the rest API you can get the sent DMARC
+reports. The supported methods with respect to DMARC are:
 
 ```text
 (1) https://www.smtpeter.com/v1/dmarc?access_token=YOUR_API_TOKEN
 (2) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR?access_token=YOUR_API_TOKEN
 (3) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR/ID?access_token=YOUR_API_TOKEN
 ```
-
-## Get DMARC settings
-
-To obtain your DMARC settings for your sender domains you can post a GET
-call to:
-
-```text
-(1) https://www.smtpeter.com/v1/dmarc?access_token=YOUR_API_TOKEN
-```
-You will receive an array with JSON objects of the form:
-```json
-{
-    "name": "senderdomain.com",
-    "policy": "none",
-    "percentage": 100
-}
-```
-The "name" property in the JSON holds the name of the sender domain. The
-policy holds the sender domain's DMARC policy ('none', 'quarantine', or 'reject').
-The percentage holds the percentage of mails for which the policy should
-be applied.
-
 
 ## Get DMARC reports
 
@@ -40,14 +17,20 @@ email providers periodically send reports with SPF and DKIM statistics.
 These reports are accessible via the REST GET API with the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR/ID?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/dmarc?access_token=YOUR_API_TOKEN
+(2) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR?access_token=YOUR_API_TOKEN
+(3) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR/ID?access_token=YOUR_API_TOKEN
 ```
 where DATE is the date of the report in the form YYYY-MM-DD, FROM is the
 domain who has sent the report, and FOR is the domain for which the report
 is send. If there are multiple reports for a FROM-FOR combination at a
 particular date, you can use ID (starting from zero) to retrieve the one you
 want. If there are multiple reports and ID is not provided, the first report
-is returned.
+is returned. The DMARC reports are gzip encoded XML documents.
 
-The DMARC reports are gzip encoded XML documents.
+If you call dmarc without any extra arguments (i.e. method 1), you receive
+an array with dates for which we possibly have DMARC reports for you. However,
+we advise you to use the [logfiles method](rest-logfiles) to see for which
+dates you have [DMARC log files](log-dmarc). The content in these DMARC
+logfiles gives you the information you need, like FROM and FOR, to get the
+DMARC reports.

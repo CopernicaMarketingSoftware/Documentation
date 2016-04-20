@@ -1,4 +1,4 @@
-* [Introduction](copernica-docs:ResponsiveEmail/introduction "Introduction")
+* [Introduction](copernica-docs:ResponsiveEmail/support/introduction "Introduction")
   * [API reference](copernica-docs:ResponsiveEmail/api/introduction "API reference")
   * [Example code](copernica-docs:ResponsiveEmail/api/examples "Example code")
   * [API version numbers](copernica-docs:ResponsiveEmail/api/versions "API version numbers")

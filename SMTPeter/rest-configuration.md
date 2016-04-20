@@ -1,7 +1,7 @@
 # Configuration via REST
 
-Most users use the dashboard to manually set up an SMTPeter environment.
-However, all configuration settings can also be set and queries using
+Most users use the dashboard to manually set up an SMTPeter account.
+However, all configuration settings can also be set and queried using
 the REST API. There are for example methods to create or modify DKIM keys, 
 set up sender domains, and query your DMARC settings.
 
