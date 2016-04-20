@@ -55,7 +55,7 @@ existing private keys too.
 
 SMTPeter will automatically sign sent mails that have a from address that
 is identical to one of your set up sender domains. You should of course
-not sending out mails with different from addresses than your sender domains.
+not be sending out mails with different from addresses than your sender domains.
 However, if you happen to send out mails with a different from address
 SMTPeter will see if it can use one of your sender domain keys and still
 fulfill the DMARC requirements, this is possible if the from address uses
