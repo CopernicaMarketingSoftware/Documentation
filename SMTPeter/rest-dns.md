@@ -48,9 +48,9 @@ Calls to these methods return a JSON of the form:
     }
 ]
 ```
-The JSON holds a array with JSON objects that have properties "name", "type", and "value.
+The JSON holds an array with JSON objects that have properties "name", "type", and "value.
 The "name" property holds the name of the DNS record that needs to be adjusted.
-The "type" holds the type of the DNS record (e.g. TXT of MX). The "value"
+The "type" holds the type of the DNS record (e.g. TXT or MX). The "value"
 property holds the suggested value".
 
 ## DNS status

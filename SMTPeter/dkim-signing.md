@@ -51,10 +51,22 @@ SMTPeter to use these? No problem, you can use the dashboard to install
 existing private keys too.
 
 
+## Signing of messages
+
+SMTPeter will automatically sign sent mails that have a from address that
+is identical to one of your set up sender domains. You should of course
+not sending out mails with different from addresses than your sender domains.
+However, if you happen to send out mails with a different from address
+SMTPeter will see if it can use one of your sender domain keys and still
+fulfill the DMARC requirements, this is possible if the from address uses
+relaxed DKIM alignment in its DMARC configuration.
+It is also possible to let SMTPeter know that it should always add a signature
+of a certain key, even if the from address of the sent mail is different.
+
+
 ## Important: automatic DKIM keys rotation!
 
 The private keys are stored on the SMTPeter servers and are never exposed.
 The technology behind the public and private keys is very secure, yet, if
 someone spends a lot of time on it, keys can be broken. Therefore, you
 do want to update your keys every now and then.
-
