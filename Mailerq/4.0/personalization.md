@@ -57,7 +57,7 @@ use the {$name} syntax, and you can even use simple programming statements:
     Text visible for others
 {/if}
 
-{foreach $childres as $child}
+{foreach $children as $child}
     One of your children is named {$child}.
 {/foreach}
 ````
@@ -92,27 +92,27 @@ The following table lists all supported modifiers:
         <td>base64 decoder</td>
     </tr>
     <tr>
-        <td>cat</td>
-        <td>concatenate data</td>
-    </tr>
-    <tr>
-        <td>count_characters</td>
-        <td>count number of characters in a string</td>
+        <td>cat:"string"</td>
+        <td>concatenates string to variable</td>
     </tr>
     <tr>
         <td>count</td>
         <td>count number of elements in variable</td>
     </tr>
     <tr>
+        <td>count_characters</td>
+        <td>count number of characters in a string</td>
+    </tr>
+    <tr>
         <td>count_paragraphs</td>
-        <td>count number of paragraphs in a text</td>
+        <td>count number of paragraphs in a text (by counting newlines)</td>
     </tr>
     <tr>
         <td>count_words</td>
         <td>count number of words in a text</td>
     </tr>
     <tr>
-        <td>default</td>
+        <td>default:default value</td>
         <td>use default value if variable is not set</td>
     </tr>
     <tr>
@@ -120,32 +120,88 @@ The following table lists all supported modifiers:
         <td>check whether a variable is empty</td>
     </tr>
     <tr>
-        <td>escape</td>
+        <td>escape:"string"</td>
         <td>escape html characters (or other chars) inside a string</td>
     </tr>
     <tr>
-        <td>indent</td>
-        <td>put whitespace in front of every line</td>
+        <td>indent:num = 1:char = " "</td>
+        <td>put num whitespaces in front of every line</td>
     </tr>
     <tr>
         <td>md5</td>
-        <td>md5 encoding</td>
+        <td>perform md5 hashing</td>
     </tr>
     <tr>
         <td>nl2br</td>
         <td>replace newlines with html br tags</td>
     </tr>
     <tr>
-        <td>range</td>
-        <td>????</td>
+        <td>range:start = 0:end</td>
+        <td>truncate list to get the items between positions start and end</td>
     </tr>
     <tr>
-        <td>regex_replace</td>
+        <td>regex_replace:regex:replace_text</td>
         <td>replace substrings using regular expression</td>
     </tr>
     <tr>
-        <td>replace</td>
-        <td>replace strings</td>
+        <td>replace:"string1":"string2"</td>
+        <td>replace occurrences of string1 with string2</td>
+    </tr>
+    <tr>
+        <td>sha1</td>
+        <td>perform sha1 hashing</td>
+    </tr>
+    <tr>
+        <td>sha256</td>
+        <td>perform sha256 hashing</td>
+    </tr>
+    <tr>
+        <td>sha512</td>
+        <td>sha512 hashing</td>
+    </tr>
+    <tr>
+        <td>spacify:separator = " "</td>
+        <td>place a separator between every input character</td>
+    </tr>
+    <tr>
+        <td>strlen</td>
+        <td>count the characters in a string</td>
+    </tr>
+    <tr>
+        <td>strstr:"substring":before = false</td>
+        <td>return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence.</td>
+    </tr>
+    <tr>
+        <td>substr:start position:length</td>
+        <td>return the substring from start position onward, optionally truncated after length characters</td>
+    </tr>
+    <tr>
+        <td>tolower</td>
+        <td>convert all characters to lower case</td>
+    </tr>
+    <tr>
+        <td>toupper</td>
+        <td>convert all characters to upper case</td>
+    </tr>
+    <tr>
+        <td>trim:characters = " \t\n\r\0\x0B"</td>
+        <td>trim the specified characters off both sides of the input</td>
+    </tr>
+    <tr>
+        <td>truncate:length = 80:etc = "...":break_words = false</td>
+        <td>truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words</td>
+    </tr>
+    <tr>
+        <td>ucfirst</td>
+        <td>replace first character with an upper case character</td>
+    </tr>
+    <tr>
+        <td>urlencode</td>
+        <td>encode input for use in an url</td>
+    </tr>
+    <tr>
+        <td>urldecode</td>
+        <td>decode input for use in an url</td>
     </tr>
 </table>
 
