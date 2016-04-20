@@ -18,7 +18,7 @@ is running on the same machine as MailerQ, and when you've not altered
 the default guest/guest credentials.
 
 ```
-rabbitq-address: amqp://user:password@hostname/vhost
+rabbitmq-address: amqp://user:password@hostname/vhost
 ```
 
 If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 

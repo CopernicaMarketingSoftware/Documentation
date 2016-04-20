@@ -109,7 +109,7 @@ file you can limit the size of this cache.
 
 ````
 cache-size:         100MB
-cache-dimension:    100000
+cache-dimensions:    100000
 ````
 
 The "cache-size" property holds the maximum size of the cache,

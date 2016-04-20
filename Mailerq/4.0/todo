@@ -1,0 +1,16 @@
+config options to add to documentation:
+    "server-id",
+    "max-threads",
+    "max-connections",
+    "max-messages",
+    "max-queues",
+    "max-memory",
+    "www-host",
+    "smtp-privatekey",
+    "dns-threads",
+    "config-file",
+    "envelope"
+
+
+possibly missing from config file: 
+a default value for x-mq-delayed
