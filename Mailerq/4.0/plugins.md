@@ -91,5 +91,5 @@ keep the DSO small.
 ## Do you find the API too limited?
 
 If you have the idea that vital functionality is missing in the plugin API,
-or if you need other callbacks you can always get in context with us. We can 
+or if you need other callbacks you can always get in contact with us. We can 
 accomodate your needs, extend the API and implement your request!

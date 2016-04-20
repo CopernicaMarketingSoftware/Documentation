@@ -11,7 +11,7 @@ our [delivery throttling documentation](delivery-limits).
 
 ## Domain specific limits
 
-To add domain-specifif limits using the management console, all you have to do 
+To add domain-specific limits using the management console, all you have to do 
 is go the the Email throttling view, and press the 'Add domain' button. Enter 
 a domain name (e.g. `hotmail.com`) and press the 'Add domain' button again.
 This will take you to a form where you can add limits for the domain. You can 
