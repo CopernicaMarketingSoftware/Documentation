@@ -242,12 +242,33 @@ have not even specified all possible queues in the MIME header.
 
 ## Smarthost settings
 
-To be documented
+Instead of having MailerQ sending messages directly to the final recipient, it can be sent to an alternative mailserver instead: the smarthost.
+The default credentials can be set in the config file, or they can be provided the following properties:
+
+````
+x-mq-smarthost-name
+x-mq-smarthost-port
+x-mq-smarthost-username
+x-mq-smarthost-password
+````
+
+[Read more about using a smarthost](smarthost "Smarthost & debugging")
 
 
 ## DSN settings
 
-To be documented
+Some mail servers initially seem to accept a message, but send back a bounce email later.
+Delivery Status Notification (DSN) messages help you keep track of what happened to your mails. 
+The following options specify which Delivery Status Notifications you want to receive:
+
+````
+x-mq-dsn-notify
+x-mq-dsn-orcpt
+x-mq-dsn-ret
+x-mq-dsn-envid
+````
+
+[Read more about Delivery Status Notifications](sending-bounces "Delivery Status Notifications")
 
 
 ## Keep messages after delivery

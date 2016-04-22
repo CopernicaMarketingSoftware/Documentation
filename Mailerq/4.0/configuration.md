@@ -14,7 +14,7 @@ sections. Please select the section that you're interested in.
 * [Message store settings](message-store-options "Message Store options")
 * [Logging](logging "Logging")
 * [Smarthost & debugging](smarthost "Smarthost & debugging")
-* [Management console](management-console "Management console")\
+* [Management console](management-console "Management console")
 * [Resource limits](resource "Resource limits")
 * [Responsive Email](responsiveemail "ResponsiveEmail.com integration")
 * [Other options](other-configuration "Other configuration options")
