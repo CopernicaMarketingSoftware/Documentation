@@ -213,7 +213,7 @@ deliverability by adding "x-mq-*" these headers, so in that case you can
 better disable this feature in the config file:
 
 ```
-smtp-extract:       0
+smtp-extract:       true    (default: true)
 ```
 
 

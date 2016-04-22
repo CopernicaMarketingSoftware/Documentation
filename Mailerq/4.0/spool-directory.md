@@ -29,7 +29,7 @@ In the config file there are four options relevant for the spool directory:
 spool-directory:        /path/to/directory
 spool-delay:            0
 spool-remove:           1
-spool-extract:          1
+spool-extract:          true    (default: true)
 ```
 
 The "spool-directory" is the most important one. It contains the path to the
