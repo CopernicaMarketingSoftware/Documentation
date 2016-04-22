@@ -14,7 +14,7 @@ With Copernica you can deliver relevant and timely communications using email, s
  
 # Working with documentation
 
-Each top-level directory in this repository hold documentation for one specific
+Each top-level directory in this repository holds documentation for one specific
 product. 
 
 ## Documentation pages
