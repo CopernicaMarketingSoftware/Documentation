@@ -4,5 +4,4 @@ Not found in config.txt:
     "dns-threads",          how many threads for dns lookups/resolving an hostname to an ip address
     "envelope"
 
-mime-headers.md not done
 smtp-server Local email addresses section not done

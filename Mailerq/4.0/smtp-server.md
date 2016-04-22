@@ -29,9 +29,10 @@ queue where MailerQ picks them up to deliver them.
 MailerQ maintains a list of "local" email address patterns. When an email is
 received on the SMTP port, the recipient address is compared with these patterns.
 If there is a match, the incoming message is not sent to the inbox queue for
-further delivery, but to the "rabbitmq-local" address instead.
-
-This local 
+further delivery, but to the "rabbitmq-local" address instead. Although usually 
+emails are only accepted over secure connections (using the SMTP
+login and password in the config file, or a plugin), mailings to local recipients
+do not require this: emails that are incoming are never rejected by default.
 
 
 ## Config file settings
