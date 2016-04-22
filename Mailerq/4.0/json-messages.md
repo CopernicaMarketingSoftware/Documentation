@@ -331,9 +331,7 @@ parsing timestamps, so make sure that you use the right formatting
 
 If you do not specify an explicit max delivery time or max attempts, MailerQ 
 will attempt to deliver the mail within 24 hours (default) after the mail 
-was first picked up from the outbox. The max attempts setting has no 
-default limit: the mail is just retried for 24 hours no matter how many
-attempts that takes.
+was first picked up from the outbox. The max attempts setting defaults at six attempts.
 
 
 ## Inlinize CSS

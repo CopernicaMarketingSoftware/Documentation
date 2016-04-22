@@ -1,21 +1,12 @@
-config options to add to documentation:
-    "server-id",
-    "max-threads",
-    "max-connections",
-    "max-messages",
-    "max-queues",
-    "max-memory",
-    "www-host",
-    "smtp-privatekey",
-    "dns-threads",
-    "config-file",
-    "envelope"
-
-
-Two pages use a different default amount of times a message is re-sent:
-unlimited in json-messages.md   maxattempts
-6         in mime-headers.md    x-mq-maxattempts
-
+Not found in config.txt:
+    "smtp-privatekey",      
+    "config-file",          path to config file
+    "dns-threads",          how many threads for dns lookups/resolving an hostname to an ip address
+    "envelope"              
 
 mime-headers.md in Delivery time section seems to hint at a default value
 for x-mq-delayed, but this isn't available in the config file
+
+
+mime-headers.md not done
+smtp-server Local email addresses section not done

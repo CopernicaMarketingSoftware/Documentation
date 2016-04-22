@@ -184,7 +184,7 @@ formatting (YYYY-MM-DD HH:MM:SS).
 
 If you do not specify an explicit max delivery time, MailerQ will attempt to 
 deliver the mail within 24 hours (default) after the mail was first picked up 
-from the outbox. You can change the defaults in the configuration file.  
+from the outbox. You can change the default in the configuration file.  
 
 
 ## Maximum number of attempts

@@ -6,6 +6,14 @@ for the connection to RabbitMQ, storage engine (Couchbase, MongoDB, MySQL,
 SQLite or PostgreSQL) and database (MySQL, SQLite or PostgreSQL) and other 
 options for [MailerQ itself](database-access "The MailerQ database").
 
+## Multiple MailerQ servers
+
+Unique server ID needed for generating message ids.
+
+```
+server-id:      1
+```
+
 ## License
 
 To work properly, MailerQ needs a license file. The license file can be 
@@ -14,7 +22,7 @@ MailerQ website. You can store the file anywhere on the file system. The path to
 the license file can be configured by setting 
 
 ```
-license:		<Path to your license> (empty by default)
+license:        <Path to your license> (empty by default)
 ```
 
 ## User
