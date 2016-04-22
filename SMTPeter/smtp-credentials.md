@@ -63,7 +63,7 @@ should use the REST API, the dashboard or the feedback loops to be
 informed about these errors.
 
 However, if you do not hand over the bounce handling to SMTPeter, 
-SMTPeter behaves as a normal MTA and als sends back DSN messages to your
+SMTPeter behaves as a normal MTA and sends back DSN messages to your
 envelope address when anything goes wrong. If you inject mails using
 a traditional email client like Thunderbird or Outlook, we recommend
 not to enable bounce handling, because you probably want to receive
