@@ -7,6 +7,7 @@
     * [DKIM signing](dkim-signing)
     * [SPF validation](spf-validation)
     * [DMARC deployment](dmarc-deployment)
+    * [Email archiving](archiving)
 * [SMTP API](smtp-api)
     * [Credentials](smtp-credentials)
     * [Hostname and port numbers](smtp-ports)

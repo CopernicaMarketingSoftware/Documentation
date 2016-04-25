@@ -1,0 +1,11 @@
+unsubscribe-handling.md
+scripting.md
+webversion.md
+
+sometimes when navigating to documentation page after documentation page URLs are not 
+smtpeter.com/documentation/file (href=json-tomime)
+but rather 
+smtpeter.com/file (href=../json-tomime)
+could only replicate friday evening / monday morning
+
+~/PHP5/Websites/Copernica/SMTPeter/dev/DocumentationProtocolReplacer

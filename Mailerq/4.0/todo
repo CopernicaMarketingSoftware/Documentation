@@ -1,7 +1,7 @@
+php-example.md is not mailerq 4.0 ready
+
 Not found in config.txt:
     "smtp-privatekey",      
     "config-file",          path to config file
     "dns-threads",          how many threads for dns lookups/resolving an hostname to an ip address
     "envelope"
-
-smtp-server Local email addresses section not done

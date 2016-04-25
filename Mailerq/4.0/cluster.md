@@ -43,7 +43,7 @@ It is important that every instance _uses the same cluster settings_. Even when
 every instance has its own private RabbitMQ server, all instances must have the 
 same values for "cluster-address" and "cluster-exchange". Every individual MailerQ 
 instance should also have unique "www-host" and "server-id" values set. If left empty 
-MailerQ identifies the hostname by reverse DNS lookup.
+MailerQ identifies the hostname by reverse DNS lookup. The server-id defaults to 1.
 
 It is also recommended to use the same relational database for each instance.
 By doing this, the instances use the same delivery throttles and DKIM keys.

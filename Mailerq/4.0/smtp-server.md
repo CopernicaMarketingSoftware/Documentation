@@ -32,7 +32,7 @@ If there is a match, the incoming message is not sent to the inbox queue for
 further delivery, but to the "rabbitmq-local" address instead. Although usually 
 emails are only accepted over secure connections (using the SMTP
 login and password in the config file, or a plugin), mailings to local recipients
-do not require this: emails that are incoming are never rejected by default.
+do not require this: emails that are incoming are not rejected by default. 
 
 
 ## Config file settings
