@@ -24,16 +24,6 @@ queue where MailerQ picks them up to deliver them.
 ![MailerQ seperate inbox outbox queues](copernica-docs:Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
 
 
-## Local email addresses
-
-MailerQ maintains a list of "local" email address patterns. When an email is
-received on the SMTP port, the recipient address is compared with these patterns.
-If there is a match, the incoming message is not sent to the inbox queue for
-further delivery, but to the "rabbitmq-local" address instead. Although usually 
-emails are only accepted over secure connections (using the SMTP
-login and password in the config file, or a plugin), mailings to local recipients
-do not require this: emails that are incoming are never rejected by default.
-
 
 ## Config file settings
 
@@ -60,20 +50,19 @@ address using the "smtp-ip" variable. If you set this, MailerQ will
 only accept incoming connections to that specific IP.
 
 The IP address to which you send a message to MailerQ, is the same as 
-the address *from* which it is forwarded. Thus, if you send an email to 
-MailerQ listening on IP address 5.6.7.8, the message will also be sent 
-out from this IP.
+the address *from* which the mail is going to be forwarded. Thus, if you 
+send an email to MailerQ listening on IP address 5.6.7.8, the message will 
+also be sent out from this IP.
 
 The "smtp-port" setting contains the port number for the normal SMTP
 protocol. The SMTP protocol starts as a non-secure connection, but
 the client and server can start a STARTTLS handshake to secure the connection.
-
-Besides normal SMTP connections, you can also open already secured SMTP 
+However, besides normal SMTP connections, you can also open already secured SMTP 
 ports with the "smtp-secure-port" setting. A secure port uses TLS right from 
 the start, and no STARTTLS handshake is necessary. This is slightly faster 
 (the initial handshake can be skipped) and is also more secure (the initial 
-EHLO message can not be intercepted). However, such an encrypted 
-connection is not part of the SMTP standard, and regular SMTP clients do not 
+EHLO message can not be intercepted). However, such encrypted 
+connections are not part of the SMTP standard, and regular SMTP clients do not 
 expect this. However, if you write your own SMTP handshake code, it sometimes 
 is simpler and faster to have access to a connection that is already 
 encrypted without using "STARTTLS".
@@ -81,8 +70,7 @@ encrypted without using "STARTTLS".
 
 ### Secure connections
 
-You probably want to secure your SMTP traffic, and inject your emails
-using encrypted connections. To enable encryption, you need to assign
+To be able to secure your SMTP traffic, you need to assign
 a private key that is used for the encryption. You can use a self-signed
 private key, but it is much better to use a key from a certificate 
 authority. However, using a self-signed key is still better than using 
@@ -104,8 +92,8 @@ to the config file, with the list of ciphers that you'd like to support.
 By default, the whole universe can connect to the inbound SMTP server. You may
 want to restrict this. If you set a username and password in the config file,
 all inbound connections must first authenticate before they can inject emails.
-With the "smtp-range" setting you can also limit the IP addresses from which
-you want to accept incoming email.
+With the "smtp-range" setting you can also restrict the IP addresses from which
+you want to allow incoming email.
 
 ```
 smtp-range:         192.168.0.0/16
@@ -127,16 +115,20 @@ a firewall or an IP range to restrict access, than to require authentication.
 If you have a username and password installed, messages from unauthenticated 
 connections are normally rejected. However, if an incoming message is sent to 
 an address that is marked as a local address, the message is accepted anyway.
-These local messages are not sent to the inbox queue, but to the locals queue
-instead. The name of this queue can be configured with the "rabbitmq-local"
-config file variable.
+MailerQ checks each incoming message and compares the email address with 
+the addresses listed on the "local address list". This list can be managed
+from the [management console](management-console).
 
-If you have also set a "rabbitmq-reports" queue in the config file, MailerQ 
+In the config file you can also assign a special message queue for such
+local email messages. Every time a message is accepted that is meant for
+a local address, it will be published to the queue that is assigned to the
+"rabbitmq-local" config file variable.
+
+If you have also set a "rabbitmq-reports" variable in the config file, MailerQ 
 parses all incoming local messages, and if it detects that it holds a report
 message (for example a Delivery Status Notification or a DMARC report), it will
 post the message to this reports queue.
 
-The local email addresses can be configured via MailerQ's management console.
 
 
 ### Running behind HAProxy
@@ -171,13 +163,26 @@ and not as SMTP traffic.
 
 ### Other settings
 
-In the initial SMTP handshake the client advertises its capabilities 
-(like the max message size to accept). The following config 
-file settings can be used to override the defaults:
+The following variables may also be useful when you set up an SMTP server:
 
 ```
 smtp-maxsize:       100MB
+smtp-connections:   100
+smtp-threads:       1
 ```
+
+In the initial SMTP handshake the client advertises its capabilities 
+(like the max message size to accept). The config file setting "smtp-maxsize" 
+contains the maximum allowed input size for message.
+
+To prevent that MailerQ exhausts the max number of open TCP connections
+that is allowed by the OS, you can set a "smtp-maxsize" setting. There will
+never be more than this number of total incoming and outgoing connections.
+
+All SMTP traffic is handled in one or more separate threads. The number of
+threads that are started for SMTP traffic can be set with the "smtp-threads"
+setting.
+
 
 ## Multiple IP addresses
 
