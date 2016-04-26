@@ -11,7 +11,6 @@
     * [Message store options](message-store-options "Message Store options")
     * [Logging](logging "Logging")
     * [Smarthost & debugging](smarthost "Smarthost & debugging")
-    * [Resource limits](resource "Resource limits")
     * [Responsive Email integration](responsiveemail "ResponsiveEmail integration")
     * [Other options](other-configuration "Other configuration options")
 * [Injecting email](inject-email "Send email with MailerQ")

@@ -2,7 +2,7 @@
 
 MailerQ can monitor a directory on the file system for new
 files: the spool directory. You can simply inject email into MailerQ 
-by copy'ing files to this directory.
+by copying files to this directory.
 
 The files that you drop in the spool directory must be correctly formatted MIME 
 messages. Invalid files will not be picked up. MailerQ opens the file, 

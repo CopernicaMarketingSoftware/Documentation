@@ -8,7 +8,7 @@ to use JSON encoded messages.
 If you want to publish messages directly to RabbitMQ, you need a client 
 library to communicate with RabbitMQ. On the RabbitMQ website you can
 find [many plugins and libraries](http://www.rabbitmq.com/devtools.html) 
-for this.  To help you out, we have [created a few examples](mailerq-examples "MailerQ examples") 
+for this.  To help you out, we have [created a few examples](inject-mail "MailerQ examples") 
 for commonly used languages.
 
 ![MailerQ put it in RabbitMQ](copernica-docs:Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
