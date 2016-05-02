@@ -1,4 +1,4 @@
-# Bounce tracking
+# Bounce handling
 
 When you send out email, you normally also have to take care of failed deliveries
 and bounce messages that are sent back to the email's envelope address. However,
@@ -18,8 +18,8 @@ you use and whether you have bounce tracking enabled or disabled.
 The SMTP protocol is the standard protocol mail servers use to communicate with each
 other. When you correctly send a message to SMTPeter using the SMTP API, SMTPeter will
 always receive the message. It then attempts to deliver the message to the receiving
-mail server. If the message cannot be delivered, which can happen for various reasons -
-such as a full mailbox or an incorrect email address - what happens next depends on whether
+mail server. What happens if the message cannot be delivered, which can happen for various reasons -
+such as a full mailbox or an incorrect email address - depends on whether
 or not you have bounce tracking enabled.
 
 ### Bounce tracking disabled

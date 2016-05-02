@@ -69,4 +69,7 @@ of a certain key, even if the from address of the sent mail is different.
 The private keys are stored on the SMTPeter servers and are never exposed.
 The technology behind the public and private keys is very secure, yet, if
 someone spends a lot of time on it, keys can be broken. Therefore, you
-do want to update your keys every now and then.
+do want to use new keys every now and then. If you use SMTPeter's standard
+suggestions, you will get this behavior automatically. If you want to use
+SMTPeter with your own generated keys, updating the keys is left to you.
+
