@@ -1,9 +1,21 @@
 # REST DKIM API
 
-SMTPeter gives you the possibility to sign your mails using DKIM. For
-this to work, SMTPeter needs access to your private DKIM keys. The
-REST API can be used to query and update the list of DKIM keys that
-SMTPeter has.
+SMTPeter gives you the possibility to sign your mails using DKIM. When you
+create a sender domain SMTPeter will automatically create three DKIM keys
+with selectors "zero", "one", and "two". These keys are used to sign your
+email and rotate. If you set up your DNS records according to our [standard suggestions](rest-dns)
+you don't have to do anything with these keys. SMTPeter will handle everything for
+you. If you want to configure your own DKIM records instead of redirecting them to
+ours, you need to include the public DKIM keys to your DKIM records. You
+can use the suggestions via the [dns suggestions](rest-dns) with extra
+flag "nocname" for this. However, you can also use this API if you just
+want to obtain these public keys.
+
+It is also possible to add your own keys with your own selectors to SMTPeter.
+For this to work, SMTPeter needs access to your private DKIM keys. The
+REST API can be used to query and update these keys as well. Note that this
+is an advanced feature. If you follow our standard suggestions, you do not
+need this part of the REST API.
 
 ```txt
 (1) https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
@@ -12,7 +24,6 @@ SMTPeter has.
 (4) https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
 (5) https://www.smtpeter.com/v1/dkimkey/SELECTOR/DOMAIN?access_token=YOUR_API_TOKEN
 ```
-
 
 ## Obtaining DKIM keys
 
@@ -33,6 +44,14 @@ From those calls you receive an array with JSON objects of the following form:
 ```json
 [
     {
+        "domain":   "example.com",
+        "selector": "zero",
+        "start":    "2016-05-01 00:00:00"
+        "end":      "2016-06-01 00:00:00"
+        "algorithm": "sha256"
+        "public":    "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+    },
+    {
         "id":           1,
         "domain":       "example.com",
         "selector":     "myselector",
@@ -48,11 +67,18 @@ From those calls you receive an array with JSON objects of the following form:
     ...
 ]
 ```
+As you can see, there are two types of JSON objects in the array. The first
+type is a JSON object holding information about the standard keys. The
+second type is a JSON object holding user provided keys. The properties
+of these objects are different. 
 
-The property "id" holds the unique identifier for the DKIM key, and
-"domain" and "selector" the selector and hostname for the DKIM record.
-The "hostname" property is available too, and holds the DNS name under
-which the record must be published.
+The property "id" holds the unique identifier for user provided DKIM keys.
+The standard DKIM keys do not have an identifier.
+The "domain" and "selector" provide the information about the hostname and
+selector for the DKIM record. The "hostname" property is available for user
+provided keys and holds the DNS name under which the record must be
+published. Standard keys do not have this property either, since they are
+stored in our DNS records.
 
 By default, DKIM keys are only used to sign emails that have a matching
 "from" address: the domain name of the from address must be identical to
@@ -67,6 +93,7 @@ holds the time stamp when the keys were created in the database.
 
 Property "algorithm" holds the encryption algorithm used (sha1 or sha256),
 and the properties "public" and "private" hold the public and private keys.
+For the default keys you only get the public key.
 
 
 ## Obtaining a specific DKIM key
@@ -79,7 +106,7 @@ If you want to obtain a specific DKIM key you can make a GET call to:
 ```
 where "ID" is the dkim key id and "SELECTOR" and "DOMAIN" are the selector
 and domain name respectively. You will receive the JSON object, identical
-to the one discussed above, with the information about the requested DKIM
+to the ones discussed above, with the information about the requested DKIM
 key.
 
 
@@ -95,7 +122,7 @@ If you want to delete a specific DKIM key you can make a DELETE call to:
 where "ID" is the dkim key id and "SELECTOR" and "DOMAIN" are the selector
 and domain name respectively. A DELETE call will delete the keys from our
 servers. Emails that have sender domains that would have matched with a deleted
-key will no longer be signed.
+key will no longer be signed. Note that the standard keys cannot be deleted.
 
 
 ## Adding a DKIM key
@@ -121,6 +148,8 @@ Content-Length:
 "domain" holds the domain name for which you want to create a key (this is
 generally identical to one of your sender domains) and "selector" holds
 the selector of the key. The "domain and "selector" properties are mandatory.
+Note that the selectors "zero", "one", and "two" are reserved for the default
+keys.
 
 With "privatekey" you can optionally provide a private SHA256 base64 encoded
 key with which you want to sign the mails. If you do not specify a privatekey,
@@ -136,4 +165,5 @@ keys with the always option set.
 
 The above method can also be used to update existing records. If there already
 is a DKIM key with the same domain and selector, the settings of that key
-are updated.
+are updated. The standard keys do not have to be updated. They are updated
+by SMTPeter.

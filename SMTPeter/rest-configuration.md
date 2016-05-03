@@ -2,12 +2,12 @@
 
 Most users use the dashboard to manually set up an SMTPeter account.
 However, all configuration settings can also be set and queried using
-the REST API. There are for example methods to create or modify DKIM keys, 
-set up sender domains, and query your DMARC settings.
+the REST API. There are for example methods to set up sender domains,
+query your DMARC settings ot to check whether your DNS records are valid.
 
 * [Sender domains configuration](rest-sender-domains)
-* [DKIM settings](rest-dkim)
 * [DNS settings](rest-dns)
+* [DKIM settings](rest-dkim)
 
 
 ## Cheat sheet

@@ -64,7 +64,7 @@ It is also possible to let SMTPeter know that it should always add a signature
 of a certain key, even if the from address of the sent mail is different.
 
 
-## Important: automatic DKIM keys rotation!
+## Automatic DKIM keys rotation
 
 The private keys are stored on the SMTPeter servers and are never exposed.
 The technology behind the public and private keys is very secure, yet, if

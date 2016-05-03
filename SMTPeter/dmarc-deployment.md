@@ -87,21 +87,31 @@ ends with "@newsletter.example.com". You still can use your current setup
 to send mails from example.com.
 
 
-## Slow deployment
+## DMARC deployment
 
-The sender domain wizard gives you the option to specify what receivers
-should do with invalid emails. You can choose the reject policy (meaning:
-invalid emails are not even accepted), to accept invalid emails but put 
-them in a special quarantine folder, or to accept them as if the mails 
-were valid. If you choose to reject them (which is the setting that you 
-should eventually install if domain safety matters to you), you can further 
-specify whether you want to reject 100% of the invalid messages, or only 
-a smaller percentage.
+DMARC gives you the option to specify what receivers should do with invalid
+emails. There are three options, called policies you can choose from. The
+most relaxed policy is none, this means that the outcome of the SPF and DKIM
+check is just ignored and the mail is delivered as if SPF and DKIM checks
+would be successful. A bit more strict is the quarantine policy. Under this
+policy a failing SPF or DKIM check will result in a delivered mail, but the
+mail will be put in a special folder, generally the spam folder. The last
+policy, reject, is the most strict, and will result in that the message will
+not be delivered at all. Besides the policy a percentage for the number of
+mails the policy should be applied can be specified. Say, you set your policy
+to reject and the percentage to 25. There is only a 25 percent change that
+the mail is treated under the reject policy. For the remaining 75 percent
+the mail is treated as if the quarantine option were set.
 
-These settings allow you to deploy DMARC slowly. You can first install 
-DMARC with an "accept" policy, so that messages are accepted anyway
-and slowly move to 100% rejection. SMTPeter, being a careful guy, would 
-recommend you a safe deployment cycle which resembles something like this:
+Given these settings, using DMARC is not an all or nothing decision. You
+can start with a very relaxed DMARC setting, e.g. using policy quarantine for only 1 percent.
+If things go well this can be increased to finally end up in policy reject
+for 100 percent, i.e. the most secure setting. SMTPeter can help you with
+this slow deployment. You can set a policy and an end date and SMTPeter will
+increase the DMARC settings for you over time. You can of course overwrite
+this behavior if you want and deploy DMARC yourself. If you want to do so
+you can use the schedule below.
+
 
 | Domain policy | Percentage |
 | ----   | ---        |
@@ -118,7 +128,6 @@ recommend you a safe deployment cycle which resembles something like this:
 | Reject | 25% |
 | Reject | 50% |
 | Reject | 100% |
-
 
 
 ## Processing reports
