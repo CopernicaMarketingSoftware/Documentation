@@ -1,21 +1,10 @@
 # REST DKIM API
 
-SMTPeter gives you the possibility to sign your mails using DKIM. When you
-create a sender domain SMTPeter will automatically create three DKIM keys
-with selectors "zero", "one", and "two". These keys are used to sign your
-email and rotate. If you set up your DNS records according to our [standard suggestions](rest-dns)
-you don't have to do anything with these keys. SMTPeter will handle everything for
-you. If you want to configure your own DKIM records instead of redirecting them to
-ours, you need to include the public DKIM keys to your DKIM records. You
-can use the suggestions via the [dns suggestions](rest-dns) with extra
-flag "nocname" for this. However, you can also use this API if you just
-want to obtain these public keys.
+SMTPeter gives you the possibility to sign your mails using [DKIM](dkim-signing). SMTPeter
+can do this automatically once you set up your DNS records according to our
+[standard suggestions](rest-dns), which is what we recommend. Nonetheless,
+if you want to control everything yourself you can use this API to do so.
 
-It is also possible to add your own keys with your own selectors to SMTPeter.
-For this to work, SMTPeter needs access to your private DKIM keys. The
-REST API can be used to query and update these keys as well. Note that this
-is an advanced feature. If you follow our standard suggestions, you do not
-need this part of the REST API.
 
 ```txt
 (1) https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
@@ -68,9 +57,10 @@ From those calls you receive an array with JSON objects of the following form:
 ]
 ```
 As you can see, there are two types of JSON objects in the array. The first
-type is a JSON object holding information about the standard keys. The
-second type is a JSON object holding user provided keys. The properties
-of these objects are different. 
+type is a JSON object holding information about keys that SMTPeter
+creates automatically for each sender domain. The second type is a JSON
+object holding the information about user provided keys. The properties of
+these objects are different.
 
 The property "id" holds the unique identifier for user provided DKIM keys.
 The standard DKIM keys do not have an identifier.

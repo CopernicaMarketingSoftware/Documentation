@@ -29,39 +29,32 @@ else to use your domain as from address and sign mails out of your name,
 simply because they do not have access to your private key.
 
 
-## Generating DKIM keys
+## Singing of messages
 
-You can let SMTPeter sign your mails for you. If SMTPeter knows your private
-key, it can add a valid DKIM signature to every mail that is sent through 
-SMTPeter. It is in general a good idea to leave the signing of your emails
-to SMTPeter, because SMTPeter normally also modifies your email (for example
-to [track clicks and opens](statistics), or to [inlinize CSS code](inline-css))
-and this invalidates signatures that were added before.
- 
-The SMTPeter dashboard allows you to set up sender domains. A sender domain
-is a domain from which you intend to send email. When you set up such
-a sender domain, SMTPeter automatically creates a private DKIM key for
-this domain too, and a DNS record that you can copy to your DNS server 
-configuration, or that you can give to your provider. SMTPeter automatically 
-queries your public DKIM record to find out whether you have indeed copied 
-the public key to DNS.
+SMTPeter can sign your mails with DKIM. For this SMTPeter needs to know
+which from addresses you use with SMTPeter. You can configure
+these, what we call sender domains, via SMTPeter's dashboard. If you create
+a sender domain, SMTPeter creates DKIM keys and informs you how to update
+the DNS records. This is a one time procedure. Once a sender domain is
+configured SMTPeter automatically signs mails with from addresses identical
+to the sender domain.
 
-Do you already have private and public key pairs, and do you now want
+Do you already have private and public key pairs, and do you want
 SMTPeter to use these? No problem, you can use the dashboard to install
-existing private keys too.
+your own private keys too. It is also possible to let SMTPeter know that
+it should always add a signature of a certain key, even if the from address
+of the sent mail is different from the sender domain.
 
+Mind you, even if you have your own keys, it is in general still a good
+idea to leave the signing of email to SMTPeter. SMTPeter normally also
+modifies your email (for example to [track clicks and opens](statistics),
+or to [inlinize CSS code](inline-css)) and this invalidates signatures
+that were added before.
 
-## Signing of messages
-
-SMTPeter will automatically sign sent mails that have a from address that
-is identical to one of your set up sender domains. You should of course
-not be sending out mails with different from addresses than your sender domains.
-However, if you happen to send out mails with a different from address
-SMTPeter will see if it can use one of your sender domain keys and still
-fulfill the DMARC requirements, this is possible if the from address uses
-relaxed DKIM alignment in its DMARC configuration.
-It is also possible to let SMTPeter know that it should always add a signature
-of a certain key, even if the from address of the sent mail is different.
+You should of course not be sending out mails with different from addresses
+than your sender domains. However, if you happen to send out mails with a
+different from address SMTPeter will see if it can use one of your sender
+domain keys and still fulfill all necessary requirements.
 
 
 ## Automatic DKIM keys rotation
@@ -72,4 +65,3 @@ someone spends a lot of time on it, keys can be broken. Therefore, you
 do want to use new keys every now and then. If you use SMTPeter's standard
 suggestions, you will get this behavior automatically. If you want to use
 SMTPeter with your own generated keys, updating the keys is left to you.
-
