@@ -168,21 +168,30 @@ typically looks like this:
 ```json
 {
     "dmarc":    "ok",
-    "dkim":     "ok",
-    "spf":      "ok",
+    "dkim":     "perfect",
+    "spf":      "perfect",
     "mx":       "error",
-    "a":        "ok",
-    "errors": {
-        "mx": "Bounce domain is not pointing to mail.smtpeter.com"
+    "a":        "perfect",
+    "remarks": {
+        "dmarc": "DMARC record not redirected to ours",
+        "mx":    "Bounce domain is not pointing to mail.smtpeter.com"
     }
 }
 ```
 
 The properties "dmarc", "dkim" and "spf" give the status of your DMARC,
-DKIM and SPF records in DNS. Possible values are "ok" and "error". The
-"mx" and "a" records tell you whether you have correctly set up MX and
-A records in your DNS that are needed to process bounces and to track
-opens and clicks.
+DKIM and SPF records in DNS. The "mx" and "a" records tell you whether
+you have correctly set up MX and A records in your DNS that are needed
+to process bounces and to track opens and clicks.
 
-If there are any errors, an extra property "errors" is added that holds
-human readable error messages.
+The possible status values for the records are "perfect", "ok" and "error". 
+The status is perfect if you exactly follow our suggestions. In general, records
+that score a perfect never have to be adjusted again. We can control that
+things will work in the future as well. The "ok" status is received if the
+records allow you to use SMTPeter flawlessly at the moment. Yet, things may change
+in the future, e.g. your DKIM keys may expire. Therefore, you may need to update your records
+at a later time. The "error", status indicates that the current configuration
+of your DNS records prohibit a perfect SMTPeter experience.
+
+If things are not perfect, an extra property "remarks" is added that holds
+human readable messages with improvement suggestions per record.
