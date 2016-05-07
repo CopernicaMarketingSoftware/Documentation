@@ -176,18 +176,23 @@ contains the maximum allowed input size for message.
 
 To prevent that MailerQ exhausts the max number of open TCP connections
 that is allowed by the OS, you can set a "smtp-maxsize" setting. There will
-never be more than this number of total incoming and outgoing connections.
+never be more than this number of total _incoming_ and _outgoing_ connections.
 
-All SMTP traffic is handled in one or more separate threads. The number of
-threads that are started for SMTP traffic can be set with the "smtp-threads"
-setting.
+All SMTP traffic is handled by separate threads. The number of threads that 
+are started for SMTP traffic can be set with the "smtp-threads" setting. 
+Increasing this value can give a real boost to MailerQ's performance and
+we recommend to set it close to the number of CPU's that you have in your
+machine. 
+
+**Important!** The "smtp-connections" and "smtp-threads" variables are 
+meaningful for _outgoing_ connections as well!
 
 
 ## Multiple IP addresses
 
 If you have not used the "smtp-ip" setting and you run MailerQ on a server 
-with multiple IP addresses, the SMTP server is available on all these addresses 
-too. A client can therefore choose to which IP address 
+with multiple IP addresses, the SMTP server is available on all the server's 
+IP addresses. A client can therefore choose to which IP address 
 to send your mail. MailerQ recognizes the IP address to which the mail was 
 originally submitted, stores that information in the JSON message, and when 
 the mail is finally forwarded to the internet, it will be sent out from _exactly 
@@ -221,5 +226,19 @@ better disable this feature in the config file:
 smtp-extract:       true    (default: true)
 ```
 
+### DKIM and SPF authentication
 
+MailerQ can check whether incoming messages have valid DKIM signatures and
+whether the were sent from an IP address that is listed in SPF. You can
+enable this feature for _all_ incoming messages, or just for messages sent
+to local email addresses.
+
+```
+smtp-check-spf:                 all
+smtp-check-dkim:                all
+smtp-check-dmarc:               all
+smtp-authentication-results:    true
+```
+
+@todo add documentation and implementation
 
