@@ -107,8 +107,8 @@ queries on the database by yourself. But if you do like to access the data
 you are free to do so.
 
 All tables in the database have a very straight forward structure. 
-Because MailerQ is compatible with many different database systems, we have
-decided not to use vendor specific SQL features and keep all tables as simple
+Because MailerQ is compatible with many different database systems, we do 
+not use vendor specific SQL features and we've kept all tables as simple
 as possible. The tables use well known data types, and no foreign 
 keys or constraints. Booleans are stored as integers and "NULL" and "0" values 
 have the same semantics. The value "0" is often used to set something to 

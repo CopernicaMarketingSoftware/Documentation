@@ -79,8 +79,8 @@ the MailerQ SMTP port or are the messages that are dropped in the spool director
 
 Messages that are received by MailerQ via one of the injection mechanisms are 
 converted into JSON format and published to message queues. The "rabbitmq-inbox" 
-setting specifies the default queue for these incoming messages, but there other 
-queues that are used as well.
+setting specifies the default queue for these incoming messages, but other 
+queues are used as well.
 
 ```
 rabbitmq-inbox:     inbox
@@ -107,9 +107,9 @@ edited via the management console. If you have configured a "local" message
 queue, and a mail comes in for an address that is on that list, the message 
 will not be dropped in a the "inbox" queue, but in the "local" queue instead.
 
-And if the local email turns out to be not a normal type of email, but some kind 
+If the local email turns out to be not a normal type of email, but some kind 
 of delivery report (or some other kind of report), the message is not even placed 
-in the "inbox" queue but goes to the "reports" queue instead:
+in the "inbox" queue but goes to the "reports" queue instead. To summarize:
 
 * inbox queue: regular incoming messages
 * local queue: incoming messages for local recipient addresses
@@ -117,7 +117,7 @@ in the "inbox" queue but goes to the "reports" queue instead:
 * refused queue: incoming messages that were not accepted
 
 The last queue to mention is the "refused" queue. It is used for message that
-were not accepted. For example, when you configure MailerQ to listen to one or 
+were not accepted. For example, if you configure MailerQ to listen to one or 
 more SMTP ports, and you require incoming connections to authenticate, you might 
 receive messages over unauthenticated connections. These messages are rejected and
 do not end up in the "inbox" queue. However, for debugging and/or 
@@ -147,28 +147,21 @@ A delivery status notification is an email message that is sent back to
 the original envelope address when a delivery fails (technically, it is 
 also possible to send such notifications on successful delivery and when
 a message gets delayed, but in practice it is mostly used for failure 
-notifcations). If you explicitly configure a message to trigger such
-status notifications on failure, MailerQ sends a status notification 
-when the message could not be delivered.
+notifcations). By default MailerQ does not send such notifications because 
+MailerQ uses result queues and JSON to report back the delivery results.
+However, if you add a "dsn" property to the JSON of an outgoing message, 
+you can instruct MailerQ to send delivery status notifications too.
 
-A [delivery status notification](sending-bounces) (DSN) is just a regular email 
-message that is sent back to the original envelope over the SMTP protocol. 
-By default MailerQ does not send such notifications because MailerQ uses
-result queues and JSON to report back the delivery results. However, if
-you want MailerQ to send out DSN messages too, you can set up a message queue
-for these DSN messages. The "rabbitmq-dsn" setting can be used for this. If
-you set it to an empty value, MailerQ does not send out bounces, but if you
-set it to a queue name, MailerQ publishes DSN messages to this queue. If you
-assign the same name as the "rabbit-outbox" queue, the DSN messages are 
-published to the outbox, where they are immediately picked up to be delivered.
-If you use a different queue than the outbox queue, you must add your own
-scripts that processes the messages in this queue.
+Technically, a delivery status notification is a regular email, and MailerQ
+simply posts a message to the outbox queue when such an email has to be
+delivered. If you want to use a different queue than the outbox queue, you
+can use the "rabbitmq-dsn" property.
 
 ```
 rabbitmq-dsn: alternative_dsn_queue
 ```
 
-The "rabbitmq-dsn" setting is normally used to preprocess
+The "rabbitmq-dsn" setting is normally used if you want to preprocess
 delivery reports before they are sent. By setting the "rabbitmq-dsn" value
 to a custom queue, a custom script can pick up the notifications, preprocess
 them and put them in the "outbox" queue. 
@@ -212,7 +205,7 @@ to empty strings. MailerQ will then not publish messages to them.
 
 ## The exchange
 
-The "rabbitmq-exchange" variable holds the name of the exchange in RabbitMQ 
+The "rabbitmq-exchange" variable holds the name of the RabbitMQ exchange  
 that MailerQ uses to publish all messages to. If not explicitly set, MailerQ 
 uses the default exchange with an empty name. For most setups, this empty default
 exchange is good enough, because messages end up in the right queue anyway.
@@ -266,18 +259,13 @@ first checks if the queues and exchanges that you have configured in the MailerQ
 config file exist. If they do not, MailerQ sends instructions to RabbitMQ to
 create the required exchanges and queues. RabbitMQ allows you to mark your queues and 
 exchanges to be "durable". This means that the exchange or queue will continue to exist 
-even when RabbitMQ is restarted. 
+even when RabbitMQ is restarted. In theory it is a slightly better to enable 
+durable queues (but you probably won't notice much of a difference because
+the queues and exchanges are automatically re-created on startup anyway).
 
-In theory it is a slightly better to enable durable queues (but you probably 
-won't notice much of a difference). If you ever have to 
-restart RabbitMQ for whatever reason, all queues and exchanges will still exist and 
-your scripts will immediately be able to publish messages to these queues. If "rabbitmq-durable"
-is turned off, all exchanges and queues will be created once MailerQ starts. If you run a 
-script BEFORE you start MailerQ you could possibly lose messages.
-
-The "rabbitmq-persistent" setting toggles whether messages published by MailerQ 
-should be cached in main memory or on disk. With the default "false" setting, RabbitMQ 
-keeps messages only in main memory and not on disk.  This is 
+The "rabbitmq-persistent" setting toggles whether messages published to RabbitMQ 
+should be cached in main memory or on disk. With the default "false" setting, 
+RabbitMQ keeps messages only in main memory and not on disk.  This is 
 much, much faster than storing the messages to disk. It does however bring a higher 
 risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistency will 
 mean your messages are also saved to disk, and can survive a RabbitMQ crash. But at 

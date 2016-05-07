@@ -62,7 +62,7 @@ the address string.
 
 [Click here for the MongoDB documentation](https://docs.mongodb.org/manual/reference/connection-string/)
 
-We discovered that MongoDB sometimes has strange hickups and that it does
+We discovered that MongoDB sometimes has strange hiccups and that it does
 not always succeed in fetching data, even when it is available. We've added
 a quick and dirty fix for this by simply repeating the fetch operation
 a couple of times in case of a failure. To enable this feature, you can
@@ -76,13 +76,27 @@ The default number of attempts is 1. If you want to repeat failed lookups
 a couple of times, you can pass in a higher value.
 
 
+## Threads
+
+Strangely enough, most storage drivers only offer a synchronous and blocking 
+API. This means that storage operations can only be started after previous 
+operations were completed. To prevent that the entire MailerQ process gets 
+blocked while a storage operation is in progress, MailerQ maintains multiple 
+connections to the storage servers, and starts seperate threads in which the 
+storage operations are being executed.
+
+The number of threads (and the number of storage connections) can be set
+using the "storage-threads" variable. If you set this to a higher value,
+the throughput of storage operations gets better too.
+
+
 ## Storage policy
 
 The "storage-policy" config file setting tells MailerQ what
 type of messages should be stored in the message store. Valid values are "all", 
 "out", "in" and "none". The "none" setting is meaningful if you only want
 MailerQ to *retrieve* mime data from external storage, without ever 
-storing it.
+storing them.
 
 Before MailerQ publishes a message to RabbitMQ (for example, before it
 sends a received message to the inbox queue, or before it send a delayed 
@@ -92,52 +106,37 @@ data should be stored in a different storage system.
 
 If you want all messages to be stored in the message store, use the "all"
 policy. If this policy is enabled, MailerQ checks each JSON object
-before it gets published to RabbitMQ. If it still contains mime data,
-it will be removed from the JSON and stored in the message store. The "all"
-policy matches incoming messages that go to one of the incoming queues, as
-well as delayed messages that are published back to the outbox.
+before it gets published to RabbitMQ. If the JSON still contains mime data,
+MailerQ removes this data from the JSON and stores it in the message 
+store instead. The JSON data will be updated with a "key" property that
+refers to the data in the message store.
 
 The "in" and "out" policies are more complex. The "out" policy instructs 
-MailerQ to use the message store to store outgoing messages only. If a 
+MailerQ to use the message store for outgoing messages only. If a 
 message is greylisted or delayed and is published back to the outbox, 
 MailerQ first strips the mime data from the JSON, and stores that in 
 the message store. Incoming messages (like the ones that come in on the
-SMTP port, or the messages dropped in the spool filter) are not stored
-in NoSQL storage but the full mime data is published to RabbitMQ.
+SMTP port, or the messages dropped in the spool directory) are not checked
+and the full mime data is published to RabbitMQ.
 
 The "out" policy is often used, because most emails get delivered at the 
 very first attempt, and it is therefore often a waste of resources 
-to store an incoming message first in a NoSQL environment: the message will
+to store incoming messages first in a NoSQL environment: the messages will
 probably be retransmitted a fraction of a second later. By using the "out" 
 storage policy, initial injected emails are completely sent to RabbitMQ. Only 
-if the initial delivery fails and the message is put in the outbox for later 
+if the initial delivery fails and the message is sent back to the outbox for later 
 delivery, the full MIME data is stripped from the JSON and stored in the 
 separate storage.
 
-The "out" policy especially makes sense because in most setups the majority of
-all deliveries succeed, and rescheduled attempts are likely to be
-rescheduled a number of times, and will be pumped around between MailerQ and
-RabbitMQ for a number of times. 
+The "out" policy especially makes sense in setups where the majority of
+all deliveries succeed at the first attempt, and rescheduled attempts are 
+likely to be pumped around between MailerQ and RabbitMQ for a number of times. 
 
 Only "all", "out" and "none" are meaningful policies. For completeness however,
 we also support the "in" property which does exactly the opposite as the "out"
 policy: all incoming messages are stored in the message store, and only
 meta data is published to RabbitMQ. However, when a mail is delayed and
 has to be published back to the outbox, the mime data is kept inside RabbitMQ.
-
-
-## Threads
-
-Strangely enough, most storage drivers only offer a synchronous and blocking API. This means 
-that storage operations can only be started after previous operations were 
-completed. To prevent that the entire MailerQ process gets blocked while
-a storage operation is in progress, MailerQ maintains multiple connections
-to the storage, and starts seperate threads in which the storage operations 
-are being executed.
-
-The number of threads (and the number of storage connections) can be set
-using the "storage-threads" variable. If you set this to a higher value,
-the throughput of storage operations gets better too.
 
 
 ## Time-to-live

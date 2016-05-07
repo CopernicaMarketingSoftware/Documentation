@@ -27,23 +27,21 @@ queue of that MailerQ instance.
 
 ## Config file options
 
-There are four config file settings relevant for setting up a cluster:
+There are two config file settings relevant for setting up a cluster:
 
 ```
 cluster-address:        amqp://login:passwd@host/vhost
 cluster-exchange:       cluster
-www-host:               
-server-id:              1
 ```
 
-Both cluster settings are optional. If you leave them empty, the exchange "cluster" is 
-used, and the same server address as is set in the "rabbitmq-address" setting.
+Both cluster settings are optional. If you leave them empty, the exchange 
+"cluster" is used, and the same server address as is set in the 
+"rabbitmq-address" setting.
 
-It is important that every instance _uses the same cluster settings_. Even when
-every instance has its own private RabbitMQ server, all instances must have the 
-same values for "cluster-address" and "cluster-exchange". Every individual MailerQ 
-instance should also have unique "www-host" and "server-id" values set. If left empty 
-MailerQ identifies the hostname by reverse DNS lookup. The server-id defaults to 1.
+It is important that every running MailerQ instance _uses the same cluster settings_. 
+Even when your instances all have their own private RabbitMQ server, the instances 
+must still share the same values for the "cluster-address" and "cluster-exchange"
+settings.
 
 It is also recommended to use the same relational database for each instance.
 By doing this, the instances use the same delivery throttles and DKIM keys.
