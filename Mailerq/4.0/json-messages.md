@@ -14,11 +14,17 @@ the full mime data to be sent.
 }
 ````
 
-To make reading a little easier, we've removed the mime data from the 
-above example, and replaced it with "...". Besides the three properties 
-mentioned above, you can add all other kind of other properties to the JSON 
-object to  control the delivery of the mail. The following properties 
-are recognized by MailerQ:
+Strictly speaking, the "envelope" property is not even required, because
+the SMTP protocol also permits deliveries without an envelope address 
+("MAIL FROM:<>"). However, without an envelope you cannot receive bounces, 
+delivery status notifications and/or out-of-office replies.
+
+To make the examples a little easier to read, we often remove the mime data 
+from the example JSON, and replace it with "...". 
+
+Besides the three properties demonstrated above, you can add all other 
+kind of other properties to the JSON object to control the delivery of the 
+mail. The following properties are recognized by MailerQ:
 
 <table>
     <tr>
@@ -227,7 +233,7 @@ to be removed, you can tell so by adding the "keepmime" option:
 
 It is possible to include personalization data in the JSON. If you do this,
 MailerQ will treat the subject, html and text version of your email as
-templates, and replace variables in it with the values loaded from the JSON.
+templates, and replaces variables in it with the values loaded from the JSON.
 
 ````json
 {
@@ -254,17 +260,16 @@ For more information about using personalization, check our
 
 ## Local IP addresses
 
-If your MailerQ server has multiple IPs, MailerQ can send out mail from all 
-these IP addresses. This can be useful to increase the delivery rate, 
+MailerQ can send out mail from all IP addresses available on the server. Inside
+the JSON message you can specify which IP address you want to use to
+send out the email from. This can be useful to increase the delivery rate, 
 because receivers often restrict deliveries per IP address.
 
 By default, MailerQ makes all connections to remote mail servers from the default 
 (first) available IP of the host server. If your server has multiple IPs assigned 
 to it, you can instruct MailerQ to use a different local IP for sending out the 
-mail.
-
-To try a different IP address for sending out the mail, you can add a list of 
-available IP addresses:
+mail. You can even assign a list of IP addresses, so that MailerQ can pick one
+these addresses randomly:
 
 ````
 {
@@ -275,16 +280,16 @@ available IP addresses:
 }
 ````
 
-MailerQ will pick one of the IPs to send out the mail. Be aware that you 
-can of course only use addresses that are actually bound to the host that MailerQ 
+MailerQ picks one of the IPs to send out the mail. Be aware that you can of 
+course only use addresses that are actually bound to the host that MailerQ 
 runs on. Other IP addresses will result in failed deliveries.
 
 
 ## Delivery time
 
-Messages loaded by MailerQ are delivered right away.
-If you want to delay a delivery, you can add a "delayed" property to the 
-JSON with the desired time of delivery.
+Messages loaded by MailerQ are delivered right away. If you want to delay a 
+delivery, you can add a "delayed" property to the JSON with the desired time 
+of delivery.
 
 ````
 {
@@ -295,8 +300,10 @@ JSON with the desired time of delivery.
 }
 ````
 
-The "delayed" propery is used by MailerQ internally. When a mail cannot
-be delivered because of greylisting, it is published back to the outbox queue 
+In normal circumstances you want messages to be delivered right away, 
+so you do not need this "delayed" property. However, under the hood, MailerQ
+uses this "delayed" property when a mail cannot be delivered because of 
+greylisting. The message is then published back to the outbox queue 
 with a "delayed" property set to a couple of minutes after the initial attempt.
 
 
@@ -331,7 +338,7 @@ parsing timestamps, so make sure that you use the right formatting
 
 If you do not specify an explicit max delivery time or max attempts, MailerQ 
 will attempt to deliver the mail within 24 hours (default) after the mail 
-was first picked up from the outbox. The max attempts setting defaults at six attempts.
+was first picked up from the outbox.
 
 
 ## Inlinize CSS
@@ -340,12 +347,12 @@ When you send out HTML emails, you face the problem that not all email clients
 support stylesheets that are set in the header. Some email clients (especially 
 web based clients) strip out the CSS code from the HTML header. This often messes 
 up the layout and look of your messages. To overcome this, it is better not to set 
-CSS settings in the header in the first place, but use `style="..."` attributes 
+CSS settings in the header in the first place, but use "style=..." attributes 
 in the HTML code.
 
 MailerQ can do this automatically. If you set "inlinecss" propety to true, 
 MailerQ parses the HTML email, and converts the CSS code from the HTML header 
-into inline `style="..."` attributes in the HTML body.
+into inline "style=..." attributes in the HTML body.
 
 ````
 {
@@ -373,14 +380,8 @@ You can include private DKIM keys in the JSON to let MailerQ sign the mail.
 }           
 ````
 
-Besides the private keys that you include in the JSON, MailerQ also keeps
-a set of private keys in its local database (and that can be edited using
-the management console). Both the keys from the JSON as well as the keys
-from this database are used. If there are multiple matching keys, they
-are all used for signing the mail.
-
-It is even possible to include multiple keys in the JSON. The "dkim" property
-supports arrays:
+It is also possible to include multiple keys in the JSON. The "dkim" 
+property supports arrays:
 
 ````json
 {
@@ -399,8 +400,10 @@ supports arrays:
 }           
 ````
 
-The message will end up having two extra "DKIM-signature" headers 
-(or even more if there were also matching DKIM keys in the database).
+Besides the private keys that you include in the JSON, MailerQ also keeps
+a set of private keys in its local database (and that can be edited using
+the management console). If there are multiple matching keys, they
+are all used for signing the mail.
 
 By default, only regular headers are used for the signature: the "from"
 and "to" address, the "subject" and so on. If you want to include your
@@ -429,9 +432,8 @@ Google/Gmail feedback loops.
 
 ## Delivery Status Notifications
 
-The "dsn" property can be added to control whether message MailerQ should 
+The "dsn" property can be added to control whether MailerQ should 
 send back an email to the envelope address in case of a failed delivery. 
-MailerQ can send out such notification messages.
 
 ````json
 {
@@ -455,7 +457,7 @@ notification should specify that the original recipient was "info@example.com",
 and the unique envelope identifier was "my-identifier".
 
 For more information about delivery notifications, see the
-[Delivery Status Notification documtation](sending-bounces).
+[Delivery Status Notification documentation](sending-bounces).
 
 
 
@@ -481,7 +483,7 @@ MailerQ to use other result queues.
 }
 ````
 
-All properties of the "queues" object are optional. If you leave an option out, 
+All properties inside the "queues" object are optional. If you leave an option out, 
 MailerQ will use the default queue from the config file. If you include a
 queue but set it to a null value, the queue will not be used. Thus, if you for 
 example want to process only the errors for a certain e-mail, you can only set 

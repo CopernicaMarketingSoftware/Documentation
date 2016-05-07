@@ -1,6 +1,6 @@
 # Message specifications
 
-MailerQ relies on external RabbitMQ message queues for all its message
+MailerQ relies on external RabbitMQ message queues for message
 queueing. All incoming and outgoing emails are read from and published to 
 these queues, and all results are published to such queues as well.
 
