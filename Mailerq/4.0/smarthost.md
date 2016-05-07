@@ -8,7 +8,7 @@ This feature could for example be useful if you use MailerQ for sending
 mails from your own server to the internet, but you want to use an external
 service (like [smtpeter.com](www.smtpeter.com)) to track the clicks and opens for your mailings.
 Other use cases for smarthosts are when you want to create a chain of
-MailerQ instances, and have the mails from one instance be forwarded to
+MailerQ instances, and have the mails from one instance forwarded to
 the next instance.
 
 
@@ -29,7 +29,7 @@ smarthost-password: <password>  (empty by default)
 
 The "smarthost" has to be set to enable the smarthost feature, and should
 contain the hostname of the server that you want to redirect the email to.
-The other "smarthost-*" options are optional, and can be used if you the
+The other "smarthost-*" options are optional, and can be used if the
 target smarthost uses a different port than the default one (default is 25),
 and if the smarthost requires authentication.
 
@@ -74,7 +74,7 @@ the username or password means MailerQ will not try to authenticate to the smart
 
 ## Using smarthost for debugging
 
-If you use the "smarthost" option, mails are not delivered to the actual 
+If you use the "smarthost" option mails are not delivered to the actual 
 recipient but to the smarthost server. As a consequence, MailerQ 
 internally queues all mails as if they were sent to the smarthost domain. If 
 you open the management console, the list of active domains will be one 

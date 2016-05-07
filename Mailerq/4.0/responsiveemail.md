@@ -2,7 +2,7 @@
 
 Copernica, the company that develops MailerQ, also operates an online
 service to create responsive emails based on JSON input: 
-[responsiveemail.com](https://www.responsiveemail.com). This algorithm
+[responsiveemail.com](https://www.responsiveemail.com). The  algorithm
 to transform JSON data into responsive emails has also been embedded in 
 MailerQ. If you feed MailerQ JSON data (instead of MIME), it will 
 automotically be converted into valid email messages.
