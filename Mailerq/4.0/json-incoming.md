@@ -5,16 +5,17 @@ object and published to the inbox queue. This happens to messages that
 are received on the SMTP port, but also to messages that come in via
 the spool directory or that were injected via the command line interface.
 
-The JSON messages that are created by MailerQ follow exactly the 
+The JSON messages that are published by MailerQ follow exactly the 
 [JSON specification for outgoing messages](json-messages). It is therefore
 possible to let MailerQ publish these incoming messages directly to
 the outbox queue to deliver them to the final recipient.
 
 ![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
  
-Besides the regular necessary JSON properties, MailerQ adds some extra properties 
-to the JSON. These aren't needed for delivery, but rather allow you to gather
-additional information. The following properties are available.
+MailerQ also adds some extra properties to the JSON of incoming messages
+that are not needed for the delivery of the email, but that are useful
+in case you write scripts or programs that process incoming messages.
+The following properties can be found on incoming messages:
 
 <table>
     <tr>
@@ -59,7 +60,7 @@ email.
 ````
 
 Every recipient gets a unique identifier. This unique identifier is stored
-in the `message-id` property.
+in the "message-id" property.
 
 ````
 {
@@ -72,8 +73,8 @@ in the `message-id` property.
 }
 ````
 
-The `received` property holds the time when the email was received, while 
-`hostname` holds the name of the server that received the message. These two
+The "received" property holds the time when the email was received, while 
+"hostname" holds the name of the server that received the message. These two
 properties are included for all injection mechanisms: SMTP, CLI, and spool.
 
 
@@ -104,8 +105,9 @@ holds properties about the TCP connection.
 If MailerQ runs behind a HAProxy server, the connection data is extracted
 from the PROXY header that is sent by the HAProxy server. 
 
-If the TCP connection is secure, and the user is authenticated, the `user`
-property will contain this username.
+If the TCP connection is secure and some sort of SMTP authentication mechanism
+was used, the "user" property holds the username of the user who submitted
+the message.
 
 ## Spool directory data
 
@@ -120,7 +122,7 @@ identify the file from which the message was loaded.
     "recipient": "info@example.com",
     "mime": "...",
     "spool": {
-        "directory": "/path/to/filename",
+        "directory": "/path/to/directory",
         "file": "filename.mime",
         "user": "owner",
         "size": 23299
