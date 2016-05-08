@@ -21,6 +21,6 @@
     * [Log files](rest-logfiles)
     * [DMARC reports](rest-dmarc)
     * [Retrieve messages](rest-messages)
-* [License and Billing](copernica-docs:SMTPeter/license-and-billing "License & Billing")
-* [Responsive Email](copernica-docs:SMTPeter/responsive-email "Using SMTPeter with ResponsiveEmail")
+* [License and Billing](license-and-billing "License & Billing")
+* [Responsive Email](responsive-email "Using SMTPeter with ResponsiveEmail")
 

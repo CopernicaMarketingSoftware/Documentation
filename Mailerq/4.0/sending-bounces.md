@@ -158,18 +158,18 @@ be delivered, an outgoing bounce mail is constructed and published to this
 DSN queue. If you assign the outbox to this "rabbitmq-dsn" setting,
 the bounces are even automatically picked up and delivered.
 
-We write that a bounce is sent on every failed delivery. This is
+We wrote that a bounce is sent on every failed delivery. This is
 technically not completely correct. To be precise, a bounce is created 
 everytime that the message specific "dsn.notify" setting matches. Thus,
 if "notify" is set to "SUCCESS", MailerQ sends out a bounce message on
 successful delivery, and when it is set to "FAILURE", bounces are sent
-on failure. The "notify" setting is however normally set to "FAILURE" so 
+on failure. The "notify" setting is normally set to "FAILURE" so 
 in normal circumstances bounces are sent on failure.
 
 If you set the "rabbitmq-dsn" setting to an empty string (which is the
 default), no Delivery Status Notifications are sent by MailerQ. But MailerQ 
 does forward the DSN settings to the receiving MTA, so you could still 
-receive DSN's.
+receive DSN's from MTA's further up the chain.
 
 
 
