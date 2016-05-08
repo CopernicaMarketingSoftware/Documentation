@@ -3,12 +3,12 @@
 With the REST API you use HTTP POST requests to send data to SMTPeter.
 The posted data can either be in JSON format, or url-encoded format.
 Sending data in JSON format is slightly more powerful than sending
-traditional POST data, because JSON allows you to send deeper nested
+traditional POST data, because JSON allows you to send nested
 data. 
 
 The results that are sent back by SMTPeter are most of the times JSON 
 formatted, unless it makes more sense to use a different formatting (for
-example, if you use the REST API to download an jpeg image, or a HTML
+example, if you use the REST API to download a jpeg image, or a HTML
 string). The "content-type" should be inspected to find out what kind
 of data is returned. 
 
@@ -17,8 +17,7 @@ of data is returned.
 
 The following code shows an example communication between a client
 application and SMTPeter. For this example, we have truncated the
-data that is actually sent. If you send the following data to the REST API of
-SMTPeter:
+data that is actually sent.
 
 ```text
 POST /v1/send?access_token=YOUR_API_TOKEN HTTP/1.0

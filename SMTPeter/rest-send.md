@@ -48,9 +48,9 @@ REST API.
 
 ## Minimal properties
 
-The following example shows the minimal properties to deliver an email: 
-the recipient address that is going to be used in the "RCPT TO" part of 
-the SMTP protocol, and the full MIME data. 
+You need at least two properties to deliver an email: the recipient address 
+that is going to be used in the "RCPT TO" part of the SMTP protocol, and 
+the full MIME data. 
 
 ````json
 {
@@ -139,7 +139,7 @@ When click-tracking is enabled (which is the default), *all* hyperlinks in
 your email are modified to track the clicks. However, some email programs
 show a warning to the user when links are modified. This is especially the
 case if a link is modified in such a way that the clickable text does
-not match the actual hyperlink. You can add a "preventscam" hyperlink to
+not match the actual hyperlink. You can add a "preventscam" property to
 tell SMTPeter not to modify these type of links:
 
 ````json
