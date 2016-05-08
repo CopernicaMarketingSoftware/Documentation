@@ -5,7 +5,7 @@ a bounce email later on in which they inform you that the mail could not
 be delivered after all. Such asynchronous bounces are sent back to the 
 envelope address of the initial message. There is sadly often no way 
 to find out whether a server is going to send back notifications, and 
-if they do: what these messages are going to look like. 
+what these messages are going to look like. 
 
 However, there is a formal standard for these bounce messages: the 
 Delivery Status Notification (DSN) format. And there is an extension 
@@ -15,7 +15,7 @@ the original sender would like to receive such bounce messages, and
 what kind of information he or she wants to receive. This standard
 make it much easier to link incoming bounces to the original sent email.
 
-MailerQ supports these standards and SMTP extensions: when communicating 
+MailerQ supports this standard and SMTP extension: when communicating 
 with a receiving server, MailerQ can passes DSN parameters to tell the 
 receiver what kind of bounces you like to receive, and if MailerQ is 
 configured to receive mail on a SMTP port, it understands these kind of 
