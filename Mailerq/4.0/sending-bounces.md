@@ -1,18 +1,26 @@
 # Sending and receiving bounces with MailerQ
 
 Some mail servers initially seem to accept a message, but send back
-a bounce email later. Such asynchronous bounces are sent to the envelope 
-address of the initially accepted message. The format for these bounce messages has been 
-standardized: the Delivery Status Notification (DSN) format. There is 
-also an extension to the SMTP protocol that allows mail servers to exchange 
-with each other whether they like to receive such bounce messages, and 
-what kind of information they want to receive back.
+a bounce email later on in which they inform you that the mail could not
+be delivered after all. Such asynchronous bounces are sent back to the 
+envelope address of the initial message. There is sadly often no way 
+to find out whether a server is going to send back notifications, and 
+if they do: what these messages are going to look like. 
 
-MailerQ supports all these things: when communicating with a receiving
-server, MailerQ passes DSN parameters to tell the receiver what kind
-of bounces you like to receive, and if MailerQ is used to receive mail
-it understands these kind of parameters too. MailerQ can also be configured to
-send out, receive and recognize DSN messages.
+However, there is a formal standard for these bounce messages: the 
+Delivery Status Notification (DSN) format. And there is an extension 
+to the SMTP protocol that allows mail servers to exchange 
+with each other whether they respect this standardized format, if
+the original sender would like to receive such bounce messages, and 
+what kind of information he or she wants to receive. This standard
+make it much easier to link incoming bounces to the original sent email.
+
+MailerQ supports these standards and SMTP extensions: when communicating 
+with a receiving server, MailerQ can passes DSN parameters to tell the 
+receiver what kind of bounces you like to receive, and if MailerQ is 
+configured to receive mail on a SMTP port, it understands these kind of 
+parameters too. MailerQ can also be configured to send out, receive and 
+recognize DSN messages.
 
 
 ## Passing DSN settings
