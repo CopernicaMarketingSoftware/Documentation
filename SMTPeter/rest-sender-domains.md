@@ -100,7 +100,7 @@ and that will be used to send out your messages from.
 
 ### DMARC settings
 
-SMTPeter hosts your DMARC, DKIM and SPF settings to ensure that all mails
+SMTPeter hosts your DMARC, DKIM and SPF settings in DNS to ensure that all mails
 are sent from valid IP addresses and have valid DKIM signatures. However, if 
 you also send out mails yourself that do not pass through SMTPeter, you run 
 the risk that some mails are sent from IP addresses that are not listed in 
@@ -108,7 +108,7 @@ DNS, or that some of your messages do not have valid DKIM signatures.
 
 With the "policy" parameter you instruct email receivers (like gmail.com and 
 yahoo.com) how to handle such invalid messages. This policy is published in
-a DNS record, so that all email receivers can look up your policy and
+a DNS record, so that all email receivers can lookup your policy and
 apply it to invalid messages that were sent out of your name.
 
 The "reject" property tells receivers that all invalid messages should 
@@ -126,10 +126,10 @@ email receivers to only reject 1 percent of the invalid messages.
 
 You can slowly increment this percentage. SMTPeter automatically updates
 your percentage in DNS, starting with 0% on "startdate" all the way up
-to the percentage you want on "enddata". Thus, if the property "percentage"
+to the percentage you want it to be on "enddata". Thus, if the property "percentage"
 is set to "100%", and the "begindate" to the first of january and "enddate" 
 to the first day of february, SMTPeter will make sure that the percentage
-in your DNS record slowly goes up from 0% percent to 100% during the month
+in your DNS record slowly goes up from 0% up to 100% during the month
 of january.
 
 
