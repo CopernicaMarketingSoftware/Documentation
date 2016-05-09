@@ -10,7 +10,7 @@ DNS records. The "/dns" API call can be used to get a list of all
 recommended DNS records that you should copy to your own DNS server.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dns/yourdomain.com/recommendation?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/dns/yourdomain.com/recommended?access_token=YOUR_API_TOKEN
 (2) https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted?access_token=YOUR_API_TOKEN
 (3) https://www.smtpeter.com/v1/dns/yourdomain.com/status?access_token=YOUR_API_TOKEN
 ```
@@ -55,12 +55,12 @@ following form:
     {
         "name": "clicks.example.com",
         "type": "CNAME",
-        "value": "clicks.smtpeter.com
+        "value": "clicks.smtpeter.com"
     },
     {
         "name": "example.com",
         "type": "TXT",
-        "value": "v=spf1 include:spfX.smtpeter.com -all
+        "value": "v=spf1 include:spfX.smtpeter.com -all"
     },
     {
         "name": "_dmarc.example.com",
