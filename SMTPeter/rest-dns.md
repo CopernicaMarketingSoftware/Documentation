@@ -25,10 +25,8 @@ DNS records.
 
 SMTPeter cannot update your DNS records because we do not have access to your
 DNS server. However, we can give you a recommendation on how to set up your
-domain.
-
-The calls to the above mentioned methods (1) and (2) return a JSON of the 
-following form:
+domain. The calls to the above mentioned methods (1) and (2) return these
+recommendations in the following format:
 
 ```json
 [
