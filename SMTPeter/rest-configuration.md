@@ -11,30 +11,19 @@ query your DMARC settings ot to check whether your DNS records are valid.
 
 ## Advanced settings
 
-Normally, you just have to set up sender domains and follow up the DNS 
-recommendations with the methods mentioned above. However, advanced users
-can also manually configure DKIM and SPF.
+If you use SMTPeter to route all your outgoing email, you just have to 
+set up sender domains and follow up the DNS recommendations with the 
+methods mentioned above. This fixes all your outgoing messages. However,
+if you also send out mail from other IP addresses, you have to set up
+extra SPF settings, and you might need the private key that is currently
+in use.
 
 * [DKIM settings](rest-dkim)
 * [SPF settings](rest-spf)
-* [Custom DKIM keys](rest-custom-dkim)
 
+SMTPeter automatically rotates DKIM keys, so that you never have to worry
+about updating your own DKIM keys or DNS records. However, the REST API
+supports seting up your own custom DKIM keys.
 
-## Cheat sheet
-
-The following API calls are available to retrieve and update the
-configuration:
-
-````text
-https://www.smtpeter.com/v1/domains?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/domain/yourdomain.com?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dns/yourdomain.com/recommended?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dns/yourdomain.com/status?access_token=YOUR_API_TOKEN
-
-https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
-````
+* [Custom DKIM keys](rest-custom-dkim) (for advanced users only)
 
