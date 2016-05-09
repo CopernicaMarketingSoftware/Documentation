@@ -1,159 +1,115 @@
-# REST DKIM API
+# REST API for custom DKIM keys
 
-SMTPeter gives you the possibility to sign your mails using [DKIM](dkim-signing). SMTPeter
-can do this automatically once you set up your DNS records according to our
-[standard suggestions](rest-dns), which is what we recommend. Nonetheless,
-if you want to control everything yourself you can use this API to do so.
+**Important!** In normal circumstances, you do not have to install custom DKIM
+keys. If you just [set up a sender domain](rest-sender-domains) and implement 
+the [recommended DNS settings](rest-dns), all your email messages will
+automatically be sent with valid DKIM signatures.
 
+However, if you want to add additional custom DKIM signatures to your email, 
+you can upload your own custom private keys to SMTPeter. The following POST 
+API calls is available to install a custom DKIM key.
+
+````txt
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+````
+
+To retrieve all available custom DKIM keys, use one of the following methods:
+
+````txt
+https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+````
+
+
+## Installing custom DKIM keys
+
+To install a new custom DKIM key, you can use the following POST call. This
+call can also be used to update an existing key.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dkimkeys/NAME?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/dkimkeys/ID?access_token=YOUR_API_TOKEN
-(4) https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
-(5) https://www.smtpeter.com/v1/dkimkey/SELECTOR/DOMAIN?access_token=YOUR_API_TOKEN
+POST /v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN HTTP/1.0
+Host: www.smtpeter.com
+Content-Type: application/json
+Content-Length:
+
+{
+    "privatekey":   "KDJ2I5EUjm5hnsd...KdiekID8",
+    "always":       true,
+    "start":        "2016-05-01 00:00:00",
+    "end":          "2016-06-01 00:00:00"
+}
 ```
 
-## Obtaining DKIM keys
+The domain name and selector are listed in the URL. It is your responsibility
+to set up a matching "selector._domainkey.yourdomain.com" DNS record for
+the added key.
 
-If you want to obtain information about the DKIM keys that match one of
-your sender domains you do a GET call to:
+The "privatekey" property provides a private SHA256 base64 encoded
+key. This property is optional, if you do not specify a private key, 
+SMTPeter will generate one for you.
 
-```txt
-(1) https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dkimkeys/NAME?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/dkimkeys/ID?access_token=YOUR_API_TOKEN
-```
+All other properties are optional too. The "always" property can be used
+to specify whether you want this key to be used for _all_ mails that flow
+through SMTPeter, or just for the emails that have a matching "from" domain.
+The "start" and "end" properties hold the timestamps when the key should
+be used.
 
-"NAME" and "ID" are the name and id of the sender domain for which you want
-to obtain the DKIM keys. If you don't specify a name or ID you will receive
-all know DKIM keys for your account.
 
-From those calls you receive an array with JSON objects of the following form:
+## Retrieving custom keys
+
+To retrieve the list of custom DKIM keys, you can use one of the following
+HTTP GET methods:
+
+````txt
+https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+````
+
+These methods return respectively _all_ keys, or just the keys for a specific
+domain and selector. The output of all these methods is the same: a JSON
+array holding DKIM keys:
+
 ```json
 [
     {
-        "domain":   "example.com",
-        "selector": "zero",
-        "start":    "2016-05-01 00:00:00"
-        "end":      "2016-06-01 00:00:00"
-        "algorithm": "sha256"
-        "public":    "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+        "domain":       "example.com",
+        "selector":     "zero",
+        "hostname":     "zero._domainkey.example.com",
+        "always":       false,
+        "created":      "2016-01-01 13:55:22",
+        "start":        "2016-05-01 00:00:00"
+        "end":          "2016-06-01 00:00:00"
+        "algorithm":    "sha256"
+        "public":       "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+        "private":      "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
     },
     {
-        "id":           1,
         "domain":       "example.com",
         "selector":     "myselector",
         "hostname":     "myselector._domainkey.example.com",
-        "always":       true|false,
+        "always":       true,
         "created":      "2016-01-01 13:55:22",
         "start":        "2016-01-01 13:55:22",
         "end":          "2016-04-01 00:00:00",
         "algorithm":    "sha256",
         "public":       "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
         "private":      "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
-    },
-    ...
+    }
 ]
 ```
-As you can see, there are two types of JSON objects in the array. The first
-type is a JSON object holding information about keys that SMTPeter
-creates automatically for each sender domain. The second type is a JSON
-object holding the information about user provided keys. The properties of
-these objects are different.
-
-The property "id" holds the unique identifier for user provided DKIM keys.
-The standard DKIM keys do not have an identifier.
-The "domain" and "selector" provide the information about the hostname and
-selector for the DKIM record. The "hostname" property is available for user
-provided keys and holds the DNS name under which the record must be
-published. Standard keys do not have this property either, since they are
-stored in our DNS records.
-
-By default, DKIM keys are only used to sign emails that have a matching
-"from" address: the domain name of the from address must be identical to
-the domain name of the DKIM key. However, if the "always" property is
-set to true, the DKIM key will be used to sign all your messages, even
-when the domains do not match.
-
-To allow key rotation, all DKIM keys have a start and end date. Emails
-are only signed using active keys. The "start" and "end" date hold the
-timestamps in between which the key is active. The "created" property
-holds the time stamp when the keys were created in the database.
-
-Property "algorithm" holds the encryption algorithm used (sha1 or sha256),
-and the properties "public" and "private" hold the public and private keys.
-For the default keys you only get the public key.
-
-
-## Obtaining a specific DKIM key
-
-If you want to obtain a specific DKIM key you can make a GET call to:
-
-```txt
-(1) https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dkimkey/SELECTOR/DOMAIN?access_token=YOUR_API_TOKEN
-```
-where "ID" is the dkim key id and "SELECTOR" and "DOMAIN" are the selector
-and domain name respectively. You will receive the JSON object, identical
-to the ones discussed above, with the information about the requested DKIM
-key.
 
 
 ## Deleting a specific DKIM key
 
-If you want to delete a specific DKIM key you can make a DELETE call to:
+If you want to delete a specific DKIM key you can make a DELETE call.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dkimkey/SELECTOR/DOMAIN?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
 ```
 
-where "ID" is the dkim key id and "SELECTOR" and "DOMAIN" are the selector
-and domain name respectively. A DELETE call will delete the keys from our
-servers. Emails that have sender domains that would have matched with a deleted
-key will no longer be signed. Note that the standard keys cannot be deleted.
+A DELETE call removes the key from our servers. After the call the key can
+no longer be used for signing emails.
 
 
-## Adding a DKIM key
-
-You can add DKIM keys to your account by a POST call of the form:
-
-```txt
-POST /v1/dkimkey?access_token=YOUR_API_TOKEN HTTP/1.0
-Host: www.smtpeter.com
-Content-Type: application/json
-Content-Length:
-
-{
-    "domain":       "example.com",
-    "selector":     "selector",
-    "privatekey":   "KDJ2I5EUjm5hnsd...KdiekID8",
-    "always":       true|false,
-    "start":        "2016-05-01 00:00:00",
-    "end":          "2016-06-01 00:00:00"
-}
-```
-
-"domain" holds the domain name for which you want to create a key (this is
-generally identical to one of your sender domains) and "selector" holds
-the selector of the key. The "domain and "selector" properties are mandatory.
-Note that the selectors "zero", "one", and "two" are reserved for the default
-keys.
-
-With "privatekey" you can optionally provide a private SHA256 base64 encoded
-key with which you want to sign the mails. If you do not specify a privatekey,
-SMTPeter will generate one for you. With the "always" property you can optionally indicate
-that the key should always be used to sign emails, even if the sender
-domain from the from-address does not match the "domain" property of the
-key. Note that if you set the always option to "true" your emails are also still signed
-with a matching sender domain key. Moreover, it is possible to have multiple
-keys with the always option set.
-
-
-## Updating DKIM keys
-
-The above method can also be used to update existing records. If there already
-is a DKIM key with the same domain and selector, the settings of that key
-are updated. The standard keys do not have to be updated. They are updated
-by SMTPeter.
