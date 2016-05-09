@@ -17,6 +17,7 @@ can also manually configure DKIM and SPF.
 
 * [DKIM settings](rest-dkim)
 * [SPF settings](rest-spf)
+* [Custom DKIM keys](rest-custom-dkim)
 
 
 ## Cheat sheet
@@ -31,11 +32,9 @@ https://www.smtpeter.com/v1/dns/yourdomain.com/recommended?access_token=YOUR_API
 https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/dns/yourdomain.com/status?access_token=YOUR_API_TOKEN
 
-https://www.smtpeter.com/v1/dkimkeys/NAME?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/ID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/SELECTOR/DOMAIN?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dnsstatus/NAME?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dnsstatus/ID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
 ````
 
