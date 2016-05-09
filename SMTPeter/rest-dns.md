@@ -71,10 +71,11 @@ recommendations in the following format:
 
 The JSON holds an array with the DNS records that you should copy to your
 DNS server. You can see that most of the recommended records are CNAME's
-records that point to the smtpeter.com domain. This means that in your DNS
-you just refer to our DNS records, and that we can periodically rotate 
-your DKIM keys and slowly deploy your DMARC policy without you ever having
-to change your DNS again.
+records that point to the smtpeter.com domain. This means that if you
+follow our recommendation, your DNS records just refer to our records.
+The advantage of this approach is that we can periodically rotate your 
+DKIM keys and slowly deploy your DMARC policy without you ever having to 
+change your DNS again.
 
 However, if you do want to stay in full control yourself, you can also
 use API call (2) to get the records without using CNAME's.
@@ -82,7 +83,7 @@ use API call (2) to get the records without using CNAME's.
 
 ## DNS status
 
-Once you've installed the commended DNS records, you can let us check
+Once you've installed the recommended DNS records, you can let us check
 whether you've done this correctly with the following API call:
 
 ```txt
