@@ -1,37 +1,34 @@
 # Obtaining DNS information
 
-If you use SMTPeter to send out your mails and you use SPF, DKIM, and DMARC
-to improve your security, you have to adjust your DNS records. You can use
-the following REST API methods to get information on how to adjust these
-records and the status of the DNS records:
+If you've set up one or more sender domains, you must update your DNS records 
+to ensure that public keys for DKIM signatures, and your SPF and DMARC settings
+can all be queried by email receivers.
+
+SMTPeter hosts all required DNS records under its DNS domain, so that you
+only have to create a number of CNAME records that refer to SMTPeter's
+DNS records. The "/dns" API call can be used to get a list of all 
+recommended DNS records that you should copy to your own DNS server.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dns/NAME?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dns/ID?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/dns/NAME/nocname?access_token=YOUR_API_TOKEN
-(4) https://www.smtpeter.com/v1/dns/ID/nocname?access_token=YOUR_API_TOKEN
-(5) https://www.smtpeter.com/v1/dnsstatus/NAME?access_token=YOUR_API_TOKEN
-(6) https://www.smtpeter.com/v1/dnsstatus/ID?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/dns/yourdomain.com/recommendation?access_token=YOUR_API_TOKEN
+(2) https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted?access_token=YOUR_API_TOKEN
+(3) https://www.smtpeter.com/v1/dns/yourdomain.com/status?access_token=YOUR_API_TOKEN
 ```
+
+We support three API calls: one to get the recommended DNS configuration
+that you should copy to the DNS servers, one to get the DNS configuration
+if you do not want to make use of CNAME records but want to do all the hosting
+yourself, and one API call to check whether you've correctly set up your
+DNS records.
 
 ## DNS recommendations
 
-SMTPeter cannot update your DNS records. This is something that you have
-to do yourself. However, we can give you a recommendation. The following
-methods are useful.
+SMTPeter cannot update your DNS records because we do not have access to your
+DNS server. However, we can give you a recommendation on how to set up your
+domain.
 
-```txt
-(1) https://www.smtpeter.com/v1/dns/NAME?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dns/ID?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/dns/NAME/nocname?access_token=YOUR_API_TOKEN
-(4) https://www.smtpeter.com/v1/dns/ID/nocname?access_token=YOUR_API_TOKEN
-```
-
-where "NAME" and "ID" are the name and the id of the sender domain.
-SMTpeter can only give recommendations for domains that you have
-configured first (for example with the [sender domain REST API calls](rest-sender-domains).
-
-The calls to the methods (1) and (2) return a JSON of the following form:
+The calls to the above mentioned methods (1) and (2) return a JSON of the 
+following form:
 
 ```json
 [
@@ -53,7 +50,7 @@ The calls to the methods (1) and (2) return a JSON of the following form:
     {
         "name": "example.com",
         "type": "MX",
-        "value": "0 mail.smtpeter.com
+        "value": "0 mail.smtpeter.com"
     },
     {
         "name": "clicks.example.com",
@@ -73,95 +70,29 @@ The calls to the methods (1) and (2) return a JSON of the following form:
 ]
 
 ```
-The JSON holds an array with JSON objects that have properties "name", "type", and "value.
-The "name" property holds the name of the DNS record that needs to be adjusted.
-The "type" holds the type of the DNS record (e.g. TXT, MX, CNAME). The "value"
-property holds the suggested value. With the suggestions listed above, you
-have to update your DNS records only once. Yet, you still have the benefit of
-rotating DKIM keys and slow [DMARC deployment](dmarc-deployment). This
-guarantees that your mails are always signed with secure keys and your DMARC
-settings will not cause rejected mails. This is possible since with the
-suggestions listed above, you redirect lookups to DNS records that we control
-for you.
 
-We advise you to use the suggestions listed above. However, if you want
-to be in full control of the DKIM and DMARC setting but still want to
-have some guidance on how the DNS records should look like you can make
-calls (3) and (4). These calls are identical to calls (1) and (2)
-but have as extra argument the "nocname" flag. After this call you will
-receive a JSON object of the following format:
+The JSON holds an array with the DNS records that you should copy to your
+DNS server. You can see that most of the recommended records are CNAME's
+records that point to the smtpeter.com domain. This means that in your DNS
+you just refer to our DNS records, and that we can periodically rotate 
+your DKIM keys and slowly deploy your DMARC policy without you ever having
+to change your DNS again.
 
-```json
-[
-    {
-        "name": "zero._domainkey.example.com",
-        "type": "TXT",
-        "value": "v=DKIM1;p=MIICIj...=="
-    },
-    {
-        "name": "one._domainkey.example.com",
-        "type": "TXT",
-        "value": "v=DKIM1;p=MIICIj...=="
-    },
-    {
-        "name": "two._domainkey.example.com",
-        "type": "TXT",
-        "value": "v=DKIM1;p=MIICIj...=="
-    },
-    {
-        "name": "example.com",
-        "type": "MX",
-        "value": "0 mail.smtpeter.com",
-    },
-    {
-        "name": "clicks.example.com",
-        "type": "CNAME",
-        "value": "clicks.smtpeter.com",
-    },
-    {
-        "name": "example.com",
-        "type": "TXT",
-        "value": "v=spf1 include:smtpeter.com -all",
-    },
-    {
-        "name": "_dmarc.example.com",
-        "type": "TXT",
-        "value": "v=DMARC1;pct=100;p=none;rua=mailto:dmarc@smtpeter.com",
-    }
-]
-
-```
-The content of this JSON object is comparable to the previous JSON object.
-Yet, as you can see, the records with the names, zero-, one-, and two._domainkey.example.com
-and _dmarc.example.com are now "TXT" records instead of "CNAME" records.
-So, you are responsible for the settings in these records. The records with
-the names, zero-, one-, and two._domainkey.example.com hold the DKIM settings
-and keys. There are always three DKIM keys "active" for a sender domain.
-One record holds the public key that is currently used for checking email,
-one key that will be used next period (so the DNS servers can already store it) and one that was used the previous
-period (so late deliveries can still be checked). At the first of each
-month the keys will rotate and the record that held the old previous key
-will hold the new next key. It is your responsibility to update the key in
-this record.
-
-The record with the name _dmarc.example.com hold the DMARC settings. Again,
-if you control this information yourself, it is your responsibility to deploy
-the DMARC correctly. 
+However, if you do want to stay in full control yourself, you can also
+use API call (2) to get the records without using CNAME's.
 
 
 ## DNS status
 
-If you want to check the status of your current DNS records you can make GET
-calls to:
+Once you've installed the commended DNS records, you can let us check
+whether you've done this correctly with the following API call:
 
 ```txt
-(1) https://www.smtpeter.com/v1/dnsstatus/NAME?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/dnsstatus/ID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dns/yourdomain.com/status?access_token=YOUR_API_TOKEN
 ```
 
-where "NAME" and "ID" are once again the name and the id of the sender domain.
-When you call these methods, SMTPeter will query your DNS records and compare
-the settings in it with the recommended settings. If there is anything wrong
+When you call this method, SMTPeter will query your DNS records and compare
+your settings with the recommended settings. If there is anything wrong
 with your DNS records, it is reported. The output for these REST calls
 typically looks like this:
 
@@ -181,17 +112,15 @@ typically looks like this:
 
 The properties "dmarc", "dkim" and "spf" give the status of your DMARC,
 DKIM and SPF records in DNS. The "mx" and "a" records tell you whether
-you have correctly set up MX and A records in your DNS that are needed
-to process bounces and to track opens and clicks.
+you have correctly set up MX and A records.
 
-The possible status values for the records are "perfect", "ok" and "error". 
-The status is perfect if you exactly follow our suggestions. In general, records
-that score a perfect never have to be adjusted again. We can control that
-things will work in the future as well. The "ok" status is received if the
-records allow you to use SMTPeter flawlessly at the moment. Yet, things may change
-in the future, e.g. your DKIM keys may expire. Therefore, you may need to update your records
-at a later time. The "error", status indicates that the current configuration
-of your DNS records prohibit a perfect SMTPeter experience.
+The possible status values for the records are "perfect", "ok" and 
+"error". The status is perfect if you exactly followed our suggestions. 
+In general, records that score a perfect will never have to be adjusted 
+again. The "ok" status is set if you did not follow our recommended setting,
+but you did set up valid DNS records (for example, if you did not use
+CNAME records for the clicks domain, but you did install the right IP
+address).
 
 If things are not perfect, an extra property "remarks" is added that holds
 human readable messages with improvement suggestions per record.
