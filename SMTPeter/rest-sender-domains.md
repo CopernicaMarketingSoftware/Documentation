@@ -86,7 +86,7 @@ The "bounces" and "tracking" properties hold the names of the bounces and
 tracking hostnames for the sender domain. Email messages that flow through
 SMTPeter are rewritten: all hyperlinks are modified to track the clicks,
 and the envelope address is changed to track bounces and out-of-office
-replies. The "bounces" amd "tracking" properties define the domain names
+replies. The "bounces" and "tracking" properties define the domain names
 that are used for the modified addresses. The "https" property specifies
 whether the rewritten URLS should use HTTPS connections or not.
 
