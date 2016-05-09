@@ -13,7 +13,6 @@ are available:
 ````text
 (1) https://www.smtpeter.com/v1/domains?access_token=YOUR_API_TOKEN
 (2) https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/domain/ID?access_token=YOUR_API_TOKEN
 ````
 
 ## Obtain sender domain information
@@ -30,86 +29,143 @@ You will receive an array with JSON objects holding the following information:
 ```JSON
 [
     {
-        'name':        "yoursenderdomain.com",
-        'id':          123,
-        'bounces':     "bounces.yoursenderdomain.com",
-        'tracking':    "tracking.yoursenderdomain.com",
-        'ips':         ["1.2.3.4", "2.3.4.5"]
-        'policy':      "none|quarantine|reject"
-        'percentage':  100,
-        'enddate':     "2016-01-18"
+        "name":         "yoursenderdomain.com",
+        "bounces":      "bounces.yoursenderdomain.com",
+        "tracking":     "tracking.yoursenderdomain.com",
+        "https":        true,
+        "ips":          ["1.2.3.4", "2.3.4.5"]
+        "policy":       "none|quarantine|reject"
+        "percentage":   100,
+        "startdate":    "2016-01-01",
+        "enddate':      "2016-01-18"
     },
     {
-        'name':        "example.com",
-        'id':          124,
-        'bounces':     "bounces.example.com",
-        'tracking':    "tracking.example.com",
-        'ips':         ["1.2.3.4", "2.3.4.5"]
-        'policy':      "none|quarantine|reject"
-        'percentage':  50,
-        'enddate':     "2016-06-14" 
+        "name":         "example.com",
+        "bounces":      "bounces.example.com",
+        "tracking":     "tracking.example.com",
+        "https":        false,
+        "ips":          ["1.2.3.4", "2.3.4.5"]
+        "policy":       "none|quarantine|reject"
+        "percentage":   50,
+        "startdate":    "2016-06-14",
+        "enddate":      "2016-06-14"
     }
 ]
 ```
 
-In this JSON, the "name" property holds the name of your sender domain and the
-"id" the unique identifier of the domain. The "bounces" and "tracking"
-properties hold the names of the bounces and tracking domains for the
-sender domain. The property "ips" contains an array with the ip addresses
-used for the sender domain. The properties 'policy' and 'percentage' are
-your current DMARC settings that are used if you use our standard DNS
-configuration suggestions. The 'enddate' property holds the information
-at which date the percentage of your DMARC will reach 100.
-
-If you want to have the information for one domain only you can make a GET
-call to:
+You can also get the information from one specific domain. This can be
+done with the single "/domain" API call:
 
 ```txt
-(1) https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/domain/ID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/domain/example.com?access_token=YOUR_API_TOKEN
 ```
-where "NAME" and "ID are the name and the "ID" of the account you for
-which you want the information. The information you receive is identical
-to the JSON discussed above.
+
+You will then receive a single JSON object:
+
+```JSON
+{
+    "name":         "example.com",
+    "bounces":      "bounces.example.com",
+    "tracking":     "tracking.example.com",
+    "https":        false,
+    "ips":          ["1.2.3.4", "2.3.4.5"]
+    "policy":       "none|quarantine|reject"
+    "percentage":   50,
+    "startdate":    "2016-06-14",
+    "enddate":      "2016-06-14"
+}
+```
+
+The "name" property holds the name of the sender-domain. This must match
+the domain in the "from" address of your emails.
 
 
-## Creating or updating a sender domain
+### Tracking and bounce domains
 
-To create or update a sender domain via the REST API you do a POST call
-of the form:
+The "bounces" and "tracking" properties hold the names of the bounces and 
+tracking hostnames for the sender domain. Email messages that flow through
+SMTPeter are rewritten: all hyperlinks are modified to track the clicks,
+and the envelope address is changed to track bounces and out-of-office
+replies. The "bounces" amd "tracking" properties define the domain names
+that are used for the modified addresses. The "https" property specifies
+whether the rewritten URLS should use HTTPS connections or not.
+
+
+### IP addresses
+
+The property "ips" contains an array with the ip addresses used for the 
+sender domain. These are addresseses that SMTPeter assigned to your domain
+and that will be used to send out your messages from.
+
+
+### DMARC settings
+
+SMTPeter hosts your DMARC, DKIM and SPF settings to ensure that all mails
+are sent from valid IP addresses and have valid DKIM signatures. However, if 
+you also send out mails yourself that do not pass through SMTPeter, you run 
+the risk that some mails are sent from IP addresses that are not listed in 
+DNS, or that some of your messages do not have valid DKIM signatures. 
+
+With the "policy" parameter you instruct email receivers (like gmail.com and 
+yahoo.com) how to handle such invalid messages. This policy is published in
+a DNS record, so that all email receivers can look up your policy and
+apply it to invalid messages that were sent out of your name.
+
+The "reject" property tells receivers that all invalid messages should 
+be rejected, and "quarantine" that invalid messages should be stored in 
+some special kind of mailbox or folder (for example the spam box). The
+"none" policy means that you want receivers to accept invalid mails anyway.
+
+You can also set a "percentage" property to specify for how many messages
+you would like the policy to be applied. For example, if you set the 
+policy to "reject", invalid emails are rejected by receivers. If you find
+this too scary to start with (it is after all possible that one of your
+colleagues is still using a wrong email configuration), you can decide to
+start with a "reject" policy, and set the percentage to 1. This instructs
+email receivers to only reject 1 percent of the invalid messages.
+
+You can slowly increment this percentage. SMTPeter automatically updates
+your percentage in DNS, starting with 0% on "startdate" all the way up
+to the percentage you want on "enddata". Thus, if the property "percentage"
+is set to "100%", and the "begindate" to the first of january and "enddate" 
+to the first day of february, SMTPeter will make sure that the percentage
+in your DNS record slowly goes up from 0% percent to 100% during the month
+of january.
+
+
+## Creating and updating sender domains
+
+To create or update a sender domain via the REST API you do a POST call.
 
 ```text
-POST /v1/domain?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v1/domain/yourdomain.com?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length:
 
 {
-    "name":         "yourdomain.com",
-    "bounces":      "bounces.example.com",
-    "tracking":     "clicks.example.com",
-    "policy":       "none|quarantine|reject",
-    "enddate":      "2016-05-21"
+    "bounces":      "bounces.yourdomain.com",
+    "tracking":     "clicks.yourdomain.com",
+    "https":        true,
+    "policy":       "reject",
+    "percentage":   100,
+    "startdate":    "2016-07-01",
+    "enddate":      "2016-08-01"
 }
 ```
-The "name" property is mandatory and should contain the sender domain name
-that you want to create or update. The "bounces" and "tracking" properties are optional.
-With these properties you can set the domain that handles the bounces and the
-domain that handles your tracking of clicks and opens. If you do
-not include these properties while creating a sender domain, the domains
-are set to "bounce.yourdomain.com" and "clicks.smtpeter.com" respectively.
-With properties "policy" and "enddate" you can control your [DMARC deployment](dmarc-deployment).
-With the "policy" property you can set the DMARC policy that you want to use.
-With the "enddate" property you specify the date after which you want to
-have a percentage of 100. SMTPeter will increase the percentage over time
-to reach this percentage at the given date. Both fields are optional and
-if not provided they are set to "none" and today. 
+
+All the properties that you can retrieve with the "GET" calls can also 
+be set with the "POST" calls. The exceptions to this rule are the 
+"name" and "ips" properties. The list of IP addresses is automatically 
+assigned by SMTPeter and can not be modified, and the sender domain
+name is set in the URL, and not via one of the POST properties.
+
+All properties are optional. Properties that you do not explicitly set
+will get reasonable defaults.
 
 After setting up a sender domain, it is your own responsibility to update
 your DNS records. The REST API has a [couple of methods](rest-dns) to
-help you with this. Note that properties "policy" and "enddate" only have
-an effect if you use our standard suggested DNS settings. If you chose to
-use custom DNS settings, you have to set the policy and percentage yourself.
+help you with this. 
 
 
 ## Deleting a sender domain
@@ -117,7 +173,6 @@ use custom DNS settings, you have to set the policy and percentage yourself.
 To delete a sender domain you can make a DELETE call to
 
 ```txt
-https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/domain/yourdomain.com?access_token=YOUR_API_TOKEN
 ```
 
-where NAME is the name of the sender domain you want to delete.

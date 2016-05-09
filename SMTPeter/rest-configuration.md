@@ -18,7 +18,6 @@ configuration:
 ````text
 https://www.smtpeter.com/v1/domains?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/domain/ID?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/dkimkeys/NAME?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/dkimkeys/ID?access_token=YOUR_API_TOKEN
 https://www.smtpeter.com/v1/dkimkey/ID?access_token=YOUR_API_TOKEN
