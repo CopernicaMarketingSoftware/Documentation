@@ -161,11 +161,9 @@ assigned by SMTPeter and can not be modified, and the sender domain
 name is set in the URL, and not via one of the POST properties.
 
 All properties are optional. Properties that you do not explicitly set
-will get reasonable defaults.
-
-After setting up a sender domain, it is your own responsibility to update
-your DNS records. The REST API has a [couple of methods](rest-dns) to
-help you with this. 
+will get reasonable defaults. After setting up a sender domain, it is your 
+own responsibility to update your DNS records. The REST API has a 
+[couple of methods](rest-dns) to help you with this. 
 
 
 ## Deleting a sender domain

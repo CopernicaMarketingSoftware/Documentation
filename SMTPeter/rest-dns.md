@@ -1,8 +1,8 @@
 # Obtaining DNS information
 
-If you've set up one or more sender domains, you must update your DNS records 
-to ensure that public keys for DKIM signatures, and your SPF and DMARC settings
-can all be queried by email receivers.
+After you've set up one or more sender domains, you must update your DNS records 
+to ensure that the public keys for the DKIM signatures, and your SPF and DMARC 
+settings can all be queried by email receivers.
 
 SMTPeter hosts all required DNS records under its DNS domain, so that you
 only have to create a number of CNAME records that refer to SMTPeter's
@@ -17,9 +17,8 @@ recommended DNS records that you should copy to your own DNS server.
 
 We support three API calls: one to get the recommended DNS configuration
 that you should copy to the DNS servers, one to get the DNS configuration
-if you do not want to make use of CNAME records but want to do all the hosting
-yourself, and one API call to check whether you've correctly set up your
-DNS records.
+if you do not want to make use of CNAME records, and one API call to check 
+whether you've correctly set up your DNS records.
 
 ## DNS recommendations
 
