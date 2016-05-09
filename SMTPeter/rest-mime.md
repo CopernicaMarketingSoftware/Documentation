@@ -34,6 +34,10 @@ supported propreties:
         <td>HTML version of the mail</td>
     </tr>
     <tr>
+        <td>unsubscribe</td>
+        <td>The "list-unsubscribe" header</td>
+    </tr>
+    <tr>
         <td>attachments</td>
         <td>Attachments to be added to the mail</td>
     </tr>
@@ -79,6 +83,43 @@ are self-explanatory.
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the email"
+}
+````
+
+## Unsubscribe header
+
+If you want to add a "list-unsubscribe" header to your email, you can 
+add the JSON "unsubscribe" option. You can set it to a string holding
+either a URL or an email address, or an array holding both:
+
+````json
+{
+    "subject": "this is the subject line",
+    "html": "<html> .... </html>",
+    "text": "text version of the email",
+    "unsubscribe": "unsubscribe@example.com"
+}
+````
+
+You can also set it to a URL:
+
+````json
+{
+    "subject": "this is the subject line",
+    "html": "<html> .... </html>",
+    "text": "text version of the email",
+    "unsubscribe": "http://www.example.com"
+}
+````
+
+Or to both an email address and a URL:
+
+````json
+{
+    "subject": "this is the subject line",
+    "html": "<html> .... </html>",
+    "text": "text version of the email",
+    "unsubscribe": [ "http://www.example.com", "unsubscribe@example.com" ]
 }
 ````
 
