@@ -126,7 +126,7 @@ email receivers to only reject 1 percent of the invalid messages.
 
 You can slowly increment this percentage. SMTPeter automatically updates
 your percentage in DNS, starting with 0% on "startdate" all the way up
-to the percentage you want it to be on "enddata". Thus, if the property "percentage"
+to the percentage you want it to be on "enddate". Thus, if the property "percentage"
 is set to "100%", and the "begindate" to the first of january and "enddate" 
 to the first day of february, SMTPeter will make sure that the percentage
 in your DNS record slowly goes up from 0% up to 100% during the month
