@@ -35,7 +35,7 @@ current mechanisms, and to add or remove mechanisms. The GET call returns
 a list of custom mechanisms:
 
 ````json
-[ "a:1.2.3.4/24", "mx:mail.example.com" ]
+[ "ip4:1.2.3.4/24", "mx:mail.example.com" ]
 ````
 
 ## Adding SPF rules
