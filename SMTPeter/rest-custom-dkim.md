@@ -79,8 +79,8 @@ array holding DKIM keys:
 [
     {
         "domain":       "example.com",
-        "selector":     "zero",
-        "hostname":     "zero._domainkey.example.com",
+        "selector":     "myselector",
+        "hostname":     "myselector._domainkey.example.com",
         "always":       false,
         "created":      "2016-01-01 13:55:22",
         "start":        "2016-05-01 00:00:00"
@@ -90,9 +90,9 @@ array holding DKIM keys:
         "private":      "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
     },
     {
-        "domain":       "example.com",
+        "domain":       "example2.com",
         "selector":     "myselector",
-        "hostname":     "myselector._domainkey.example.com",
+        "hostname":     "myselector._domainkey.example2.com",
         "always":       true,
         "created":      "2016-01-01 13:55:22",
         "start":        "2016-01-01 13:55:22",
