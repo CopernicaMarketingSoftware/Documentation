@@ -83,9 +83,9 @@ array holding DKIM keys:
         "hostname":     "myselector._domainkey.example.com",
         "always":       false,
         "created":      "2016-01-01 13:55:22",
-        "start":        "2016-05-01 00:00:00"
-        "end":          "2016-06-01 00:00:00"
-        "algorithm":    "sha256"
+        "start":        "2016-05-01 00:00:00",
+        "end":          "2016-06-01 00:00:00",
+        "algorithm":    "sha256",
         "public":       "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
         "private":      "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
     },
