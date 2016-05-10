@@ -38,7 +38,9 @@ a list of custom mechanisms:
 [ "a:1.2.3.4/24", "mx:mail.example.com" ]
 ````
 
-The POST and DELETE calls can be used to add or remove mechanisms:
+## Adding SPF rules
+
+The POST call can be used to add mechanisms:
 
 ````txt
 POST /v1/spf/yourdomain.com?access_token=YOUR_API_TOKEN HTTP/1.0
@@ -47,6 +49,20 @@ Content-Type: application/json
 Content-Length:
 
 {
-    "mechanism":    "a:4.5.6.7/24"
+    "ip":       "4.5.6.7/"
+    "include":  "example2.com"
 }
 ````
+The keys are the names of the mechanism. The supported mechanisms are:
+"include", "a", "mx", "ip4", "ip6", "exists", "ptr". The values are the
+associated value for the specific mechanism.
+
+
+## Reseting SPF rules
+
+The delete call can be used to reset all added mechanisms and start with
+a clean sheet.
+
+```txt
+https://www.smtpeter.com/v1/spf/yourdomain.com?access_token=YOUR_API_TOKEN
+```
