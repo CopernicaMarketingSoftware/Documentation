@@ -1,26 +1,25 @@
 # SPF validation
 
 If you send email through SMTPeter, you must make sure that you've
-configured your SPF records correctly. You must make sure that the IP
-addresses from which SMTPeter is going to send mail are included in
-your SPF record. Luckily, the SMTPeter dashboard has the right tools
-to help you with your configuration.
+configured your SPF records correctly. Luckily, the SMTPeter dashboard 
+has the right tools to help you with your configuration.
 
 
 ## What is SPF?
 
 Let's start with some background information first. SPF is a technology
 to specify which servers on the internet may send out email messages
-out of your name. Without SPF it is possible to send out email from every 
-computer on the internet: your personal computer or even your telephone can deliver mail 
-directly to Gmail or directly to Hotmail, and it is not necessary to 
-use intermediate gateways like SMTPeter to reach your recipients. 
+out of your name. Although in reality people normally use an intermediate 
+server offered by their provider to send out emails - it is from a 
+technical perspective possible to deliver email directly to the recipient.
+This can be done from every computer on the internet: a personal computer 
+or even a smartphone can deliver mail. 
 
 However, it is highly unlikely that a laptop in a village that you 
 never heard of directly connects to Gmail to send an email using your 
 domain name. If that happens, you can be pretty sure that someone is 
-trying to do something nasty, and is abusing your domain. You can 
-prevent this with SPF records.
+trying to do something nasty and is abusing your domain. This can be
+prevented with SPF records.
 
 An SPF record is a setting in DNS. If you have a domain name, you can not
 only use DNS to store the IP address of your website, but also to
