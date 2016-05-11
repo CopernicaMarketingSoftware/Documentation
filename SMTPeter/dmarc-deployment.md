@@ -43,7 +43,7 @@ record to find out whether this is a real indication that someone is trying
 to abuse the domain, or that the company has just not completely rolled out
 DKIM and SPF and that some mails might still be valid despite the mismatch.
 
-On the other hand, DMARC also allows senders to receive periodic notifications
+Besides that, DMARC allows senders to receive periodic notifications
 from receivers about failed checks, so that they can roll out
 DMARC slowly, and get notifications if anything is wrong.
 
@@ -89,50 +89,37 @@ to send mails from example.com.
 
 ## DMARC deployment
 
-DMARC gives you the option to specify what receivers should do with invalid
-emails. There are three options, called policies you can choose from. The
-most relaxed policy is none, this means that the outcome of the SPF and DKIM
-check is just ignored and the mail is delivered as if SPF and DKIM checks
-would be successful. A bit more strict is the quarantine policy. Under this
-policy a failing SPF or DKIM check will result in a delivered mail, but the
-mail will be put in a special folder, generally the spam folder. The last
-policy, reject, is the most strict, and will result in that the message will
-not be delivered at all. Besides the policy a percentage for the number of
-mails the policy should be applied can be specified. Say, you set your policy
-to reject and the percentage to 25. There is only a 25 percent change that
-the mail is treated under the reject policy. For the remaining 75 percent
-the mail is treated as if the quarantine option were set.
+The DMARC technology allows you to specify what receivers like gmail.com and
+hotmail.com should do with invalid emails that seem to come from you. There are 
+three policies to choose from. The most relaxed policy is "none", which means 
+that you want receivers to ignore the outcome of the SPF and DKIM checks and 
+just put your messages in the inbox. A bit more strict is the policy "quarantine". 
+With this policy a failed SPF or DKIM check results in a delivered mail, but the
+mail is put in a special folder, generally the spam folder. The last
+policy, reject, is the most strict, and blocks the delivery for messages
+with wrong DKIM signatures or that were sent from IP addresses not listed in SPF.
 
-Given these settings, using DMARC is not an all or nothing decision. You
-can start with a very relaxed DMARC setting, e.g. using policy quarantine for only 1 percent.
-If things go well this can be increased to finally end up in policy reject
-for 100 percent, i.e. the most secure setting. SMTPeter can help you with
-this slow deployment. You can set a policy and an end date and SMTPeter will
-increase the DMARC settings for you over time. You can of course overwrite
-this behavior if you want and deploy DMARC yourself. If you want to do so
-you can use the schedule below.
+Besides setting the policy, DMARC also allows you to set a percentage. Say, 
+you set your policy to "reject" and the percentage to "25". This means that
+only 25% of the mails that fail the DKIM and/or SPF checks are blocked,
+and that the remaining 75 percent is still accepted. This percentage setting allows
+you to experiment with deploying DMARC without having to worry that suddenly
+all your mail is going to be rejected.
 
+Given these settings, deploying DMARC is safe: you can start with a very relaxed 
+DMARC setting, using policy "quarantine" for only 1 percent. If things go 
+well you can increase this percentage up to 100 percent, and then move to
+policy "reject" and start again with 1 percent that you slowly move up to 100.
 
-| Domain policy | Percentage |
-| ----   | ---        |
-| Accept | 100% |
-| Quarantine | 1% |
-| Quarantine | 5% |
-| Quarantine | 10% |
-| Quarantine | 25% |
-| Quarantine | 50% |
-| Quarantine | 100% |
-| Reject | 1% |
-| Reject | 5% |
-| Reject | 10% |
-| Reject | 25% |
-| Reject | 50% |
-| Reject | 100% |
+The SMTPeter dashboard allows you to do this deployment automatically. You
+can enter the percentage that you would like to have, and the date when you
+want to have it deployed, and SMTPeter will every day automatically update your
+DNS records to get to this percentage.
 
 
 ## Processing reports
 
-Receiving parties send back daily reports to SMTPeter in which they tell
+Email receivers send back daily reports to SMTPeter in which they tell
 how many emails failed the DKIM, SPF or DMARC checks. These daily reports
 are processed by SMTPeter and presented to you via the dashboard. It allows
 you to monitor whether your configuration is valid, and/or whether your
