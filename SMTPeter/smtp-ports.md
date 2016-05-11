@@ -24,7 +24,8 @@ and reject the mail only after we've seen the full message.
 
 You can use port 25, 587, and 2525 to send mail to SMTPeter. There is no
 difference between these ports. We have opened ports 587 and 2525 because some 
-providers block access to port 25.
+providers block access to port 25. Port 2525 is especially useful for Google
+Cloud users since Google Cloud does neither support 25 nor 587.
 
 
 ## Port 465
