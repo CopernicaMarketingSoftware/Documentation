@@ -1,6 +1,6 @@
 # Configuration of Yothalot
 
-When you have [installed Yothalot](copernica-docs:Yothalot/installation "Installation")
+When you have [installed Yothalot](installation "Installation")
 you can configure it by changing settings in the configuration file `config.txt`
 located in `/etc/yothalot`. This will change the default behavior of Yothalot.
 The configuration file should be self explanatory. Its content is listed

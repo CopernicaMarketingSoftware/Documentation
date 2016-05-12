@@ -41,8 +41,8 @@ take care of path resolution. However, it may be that you are generating interme
 files yourself. In such a case you may want to have full control over path
 names and may want to switch between absolute and relative paths.  
 To help you in situations like this we have created
-[Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path") for PHP users
-and [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Yothalot::Fullname") for
+[Yothalot\Path](php-path "Yothalot\Path") for PHP users
+and [Yothalot::Fullname](cpp-fullname "Yothalot::Fullname") for
 C++ users. With these helper classes switching between absolute and relative
 paths becomes a trivial task.
 

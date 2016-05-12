@@ -38,7 +38,7 @@ by Yothalot.
 ### mapreduce
 
 With this option you start your mapreduce task. After the option you provide
-the name of the program that you have [created](copernica-docs:Yothalot/cpp-program "Writing a program").
+the name of the program that you have [created](cpp-program "Writing a program").
 
 
 ### stdin
@@ -83,12 +83,12 @@ cannot deal with data. For race jobs a program is started up by Yothalot for
 each piece of data. This piece of data is passed to the standard input of
 the program. For mapreduce jobs it depends whether only one or multiple
 extra arguments are passed. If only one argument is added, this argument
-is treated as the name of the directory that holds [Yothalot files](copernica-docs:Yothalot/internalfiles "Internal File Format")
+is treated as the name of the directory that holds [Yothalot files](internalfiles "Internal File Format")
 These files will be read and the key-value pairs that are stored in them
 will be passed to your mapper function. If multiple arguments are passed,
 the arguments are treated as file names. Again, Yothalot will read these
 files and will pass the stored key-value pairs to your map function.
-You can create these files using the [Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+You can create these files using the [Yothalot::Output](cpp-output "Output")
 class. 
 
 
@@ -97,7 +97,7 @@ class.
 When you start up a mapreduce job you have some extra options with which you
 can tune your job. You can use these options to affect the underlying behavior
 of the Yothalot framework. For more information on how to tune your job you
-are referred to our [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+are referred to our [tuning jobs](tuning "Tuning jobs")
 documentation page. The options for tuning your mapreduce job are:
 
 * --local,
@@ -112,7 +112,7 @@ documentation page. The options for tuning your mapreduce job are:
 ### local
 
 With this option you can specify if temporary files should be stored locally
-(1) or on the GlusterFS (0) (see [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+(1) or on the GlusterFS (0) (see [tuning jobs](tuning "Tuning jobs")
 for more information).
 
 ### maxprocesses
@@ -145,7 +145,7 @@ may run at the same time.
 
 With this option you can limit the input that is used in the write phase
 of the mapreduce algothm based on the number of files. For an elaborate
-discussion on this issue you are referred to the [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+discussion on this issue you are referred to the [tuning jobs](tuning "Tuning jobs")
 page.
 
 
@@ -153,7 +153,7 @@ page.
 
 With this option you can limit the input that is used in the write phase
 of the mapreduce algothm based on the number of bytes. For an elaborate
-discussion on this issue you are referred to the [tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs")
+discussion on this issue you are referred to the [tuning jobs](tuning "Tuning jobs")
 page.
 
 
@@ -162,11 +162,11 @@ page.
 Normally the `write()` member function in your mapreduce implementation is
 called only once. You can change this with the modulo option. For a discussion
 on how this works exactly and why this is useful you are referred to the 
-[tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") documentation.
+[tuning jobs](tuning "Tuning jobs") documentation.
 
 
 ## Other options
 
 If you are using Yothalot to start up a job you still can use the command
-line options as discussed in the [configuration file](copernica-docs:Yothalot/configuration)
+line options as discussed in the [configuration file](configuration)
 section. E.g. you can determine in which queue your job should be placed.

@@ -18,7 +18,7 @@ create an SMTP login via the dashboard. Make sure to write down your password
 somewhere safe, it is only shown once.
 
 The SMTP login is used to authenticate with SMTPeter and allows you to enable
-[SMTPeter's features](copernica-docs:SMTPeter/features). You can have multiple logins
+[SMTPeter's features](rest-features). You can have multiple logins
 with different features enabled. The login has to be included whenever you send
 email via SMTPeter. In order to login you should configure your application to
 authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
@@ -52,9 +52,9 @@ entering the password.
 The configuration is of course application dependent. Here we give examples
 for:
 
-* [Mozilla Thunderbird](copernica-docs:SMTPeter/thunderbird "Example of setting up Mozilla Thunderbird")
-* [Android email app](copernica-docs:SMTPeter/android "Example of setting up Android email app")
-* [Postfix](copernica-docs:SMTPeter/quick-start/postfix "Example of setting up Postfix")
+* [Mozilla Thunderbird](thunderbird "Example of setting up Mozilla Thunderbird")
+* [Android email app](android "Example of setting up Android email app")
+* [Postfix](quick-start/postfix "Example of setting up Postfix")
 
 
 ### 3: send email!
@@ -67,7 +67,7 @@ to enter your password (if you use Thunderbird) and after that you're all set!
 ## Passing parameters for SMTPeter's options
 
 The SMTP protocol was never meant to pass parameters with each message. If you want to
-enable or disable specific SMTPeter [features](copernica-docs:SMTPeter/features "SMTPeter Features")
+enable or disable specific SMTPeter [features](rest-features "SMTPeter Features")
 for specific messages, you will have to either use SMTP credentials or use different MIME header fields.
 
 In the SMTPeter dashboard you can create multiple SMTP logins. You can for example
@@ -76,4 +76,4 @@ is disabled. When you connect to the SMTP API, you simply pick a login/password
 combination that has the features you need.
 
 The alternative method to enable or disable features is by adding special
-[MIME-headers](copernica-docs:SMTPeter/mime "MIME headers") to your email.
+[MIME-headers](mime "MIME headers") to your email.

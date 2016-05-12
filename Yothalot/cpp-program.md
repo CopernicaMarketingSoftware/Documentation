@@ -1,6 +1,6 @@
 # Create a Yothalot program
 
-After having implemented your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
+After having implemented your [mapreduce](cpp-mapreduce "MapReduce")
 algorithm you have to create a little program that uses your implementation. The program should look as follows:
 
 
@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
    return myYothalotProgram.run();
 }
 ```
-You first initialize the class with your [mapreduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
+You first initialize the class with your [mapreduce](cpp-mapreduce "MapReduce")
 algorithm. Here we used a default
 initialization of a MapReduce class, but you can of course add other
 functionality to your class with other constructors as well that you 
@@ -87,13 +87,13 @@ Yothalot is running on the master node. If you are running locally this means
 that the Yothalot application should be started. 
 
 You can start a MapReduce job by calling Yothalot with the command line option `--mapreduce`, the name of your
-program, and some data. In case of the example [MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce") this yields:
+program, and some data. In case of the example [MapReduce](cpp-mapreduce "MapReduce") this yields:
 ```bash
 ./yothalot --mapreduce /path/to/myMapReduce word1 word2 word3 word1
 ```
 After executing correctly, the output file on GlusterFS should contain three different word counts.
 
-See [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job") for more detailed information on running jobs.
+See [Starting a Yothalot job](cpp-start "Start up a job") for more detailed information on running jobs.
 
 
 ## Access and paths
@@ -101,12 +101,12 @@ See [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job"
 Yothalot needs to know where files and other resources are located on the GlusterFS file system.
 Therefore, it is important that you provide the absolute paths to these resources.
 To solve help you with this issue we have created a utility class
-[Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
+[Yothalot::Fullname](cpp-fullname "Fullname")
 that makes switching between relative and absolute paths easy. By using this
 class in your program you can pass either relative or absolute paths to your program and use
 absolute paths if you want to access a file or other resource.
 
-Yet, there is one issue that [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
+Yet, there is one issue that [Yothalot::Fullname](cpp-fullname "Fullname")
 does not solve, the path to your program. Your program is started up to perform
 mapper, reducer, and writer tasks. Therefore Yothalot needs to have access
 to your program. You can achieve this by putting your program on the Yothalot cluster.

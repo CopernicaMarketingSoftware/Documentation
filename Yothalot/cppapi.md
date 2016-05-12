@@ -24,7 +24,7 @@ that Yothalot is also installed on the machine where you build your mapreduce
 programs since building the program requires the yothalot library that comes
 with the Yothalot installation.
 
-* [How to install Yothalot](copernica-docs:Yothalot/installation "Installation")
+* [How to install Yothalot](installation "Installation")
  
 
 ## Mapreduce algorithms
@@ -32,7 +32,7 @@ with the Yothalot installation.
 You can run a mapreduce task on the Yothalot cluster by extending a virtual
 base class that is supplied by the Yothalot framework:
 
-* [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
+* [Class Yothalot::MapReduce](cpp-mapreduce "MapReduce")
 
 
 ## Creating your program
@@ -43,12 +43,12 @@ command line arguments that are passed to it by Yothalot. The C++ API
 offers a very useful utility class for parsing these arguments, so that 
 your main() function normally does not need more than 3 lines of code:
 
-* [Creating a mapreduce program](copernica-docs:Yothalot/cpp-program "Writing a program")
+* [Creating a mapreduce program](cpp-program "Writing a program")
 
 It is also possible to use Yothalot to run programs that do not hold a mapreduce 
 algorithm. The requirements of these programs and there use is discussed in:
 
-* [Creating non mapreduce programs](copernica-docs:Yothalot/cpp-other "Writing non mapreduce programs")
+* [Creating non mapreduce programs](cpp-other "Writing non mapreduce programs")
 
 
 ## Starting a Yothalot job
@@ -56,7 +56,7 @@ algorithm. The requirements of these programs and there use is discussed in:
 You start up a job by calling the Yothalot program and the appropriate
 command line arguments. The options are discussed on this page:
 
-* [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
+* [Starting a Yothalot job](cpp-start "Start up a job")
 
 
 ## Utility classes
@@ -65,17 +65,17 @@ The classes mentioned above are sufficient for writing and running mapreduce
 jobs. As an extra service however, the Yothalot C++ API also allows comes with
 a couple of extra utility classes.
 
-* [Class Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
-* [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
-* [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
+* [Class Yothalot::Fullname](cpp-fullname "Fullname")
+* [Class Yothalot::Input](cpp-input "Input")
+* [Class Yothalot::Output](cpp-output "Output")
 
-The [Yothalot::Fullname](copernica-docs:Yothalot/cpp-fulname "Fullname") class can be used
+The [Yothalot::Fullname](cpp-fulname "Fullname") class can be used
 for converting absolute pathnames into pathnames that are relative to the
 GlusterFS mount point, and the other way around. This is especial useful if
 you use different mount points on different servers.
 
-The [Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input") and 
-[Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output") classes allow you
+The [Yothalot::Input](cpp-input "Input") and 
+[Yothalot::Output](cpp-output "Output") classes allow you
 to read and write files in the same compressed format used by the Yothalot 
 framework internally for intermediate result files.
 
@@ -83,17 +83,17 @@ framework internally for intermediate result files.
 ## Full class reference
 
 The following classes are offered by the Yothalot framework:
-* [Class Yothalot::Input](copernica-docs:Yothalot/cpp-input "Input")
-* [Class Yothalot::Inputs](copernica-docs:Yothalot/cpp-input "Inputs")
-* [Class Yothalot::Fullname](copernica-docs:Yothalot/cpp-fullname "Fullname")
-* [Class Yothalot::Key](copernica-docs:Yothalot/cpp-classes "Classes")
-* [Class Yothalot::MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce")
-* [Class Yothalot::Output](copernica-docs:Yothalot/cpp-output "Output")
-* [Class Yothalot::Record](copernica-docs:Yothalot/cpp-record "Record")
-* [Class Yothalot::Reducer](copernica-docs:Yothalot/cpp-classes "Classes")
-* [Class Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
-* [Class Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar "Scalar")
-* [Class Yothalot::Tuple](copernica-docs:Yothalot/cpp-tuple "Tuple")
-* [Class Yothalot::Value](copernica-docs:Yothalot/cpp-classes "Classes")
-* [Class Yothalot::Values](copernica-docs:Yothalot/cpp-classes "Classes")
-* [Class Yothalot::Writer](copernica-docs:Yothalot/cpp-classes "Classes")
+* [Class Yothalot::Input](cpp-input "Input")
+* [Class Yothalot::Inputs](cpp-input "Inputs")
+* [Class Yothalot::Fullname](cpp-fullname "Fullname")
+* [Class Yothalot::Key](cpp-classes "Classes")
+* [Class Yothalot::MapReduce](cpp-mapreduce "MapReduce")
+* [Class Yothalot::Output](cpp-output "Output")
+* [Class Yothalot::Record](cpp-record "Record")
+* [Class Yothalot::Reducer](cpp-classes "Classes")
+* [Class Yothalot::Result](cpp-result "Result")
+* [Class Yothalot::Scalar](cpp-scalar "Scalar")
+* [Class Yothalot::Tuple](cpp-tuple "Tuple")
+* [Class Yothalot::Value](cpp-classes "Classes")
+* [Class Yothalot::Values](cpp-classes "Classes")
+* [Class Yothalot::Writer](cpp-classes "Classes")

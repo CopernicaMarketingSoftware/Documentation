@@ -117,7 +117,7 @@ And exactly the same algorithm in C++:
 
 You may be surprised how simple the C++ function looks. It is almost identical to the PHP code. That's true indeed, writing native extensions with PHP-CPP is simple, and you can easily port your PHP functions to C++.
 
-You also see an additional get_module() function in the source code. This is the [startup function](copernica-docs:PHPCPP/loading-extensions) that is called by the Zend engine when PHP starts up. It is supposed to return information to the Zend engine about the extension, so that the `"native_bubblesort"` function is accessible for PHP scripts.
+You also see an additional get_module() function in the source code. This is the [startup function](loading-extensions) that is called by the Zend engine when PHP starts up. It is supposed to return information to the Zend engine about the extension, so that the `"native_bubblesort"` function is accessible for PHP scripts.
 
 ## We start with a silly question
 

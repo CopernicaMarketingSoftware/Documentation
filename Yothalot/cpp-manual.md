@@ -1,8 +1,8 @@
 # Start a Job Manually 
 
-You can start a Yothalot job by running the [program](copernica-docs:Yothalot/cpp-program "Program")
-that uses your [MapReduce](copernica-docs:Yothalot/cpp-mapreduce "MapReduce algorithm")
-or [racer](copernica-docs:Yothalot/cpp-race "Racer algorithm") algorithm and add some
+You can start a Yothalot job by running the [program](cpp-program "Program")
+that uses your [MapReduce](cpp-mapreduce "MapReduce algorithm")
+or [racer](cpp-race "Racer algorithm") algorithm and add some
 command line parameters to it. 
 
 When you start your program manually it does not matter where this program
@@ -23,7 +23,7 @@ You can provide this information via several command line options, which
 are discussed below. Passing the command line options with the information
 can be a bit tedious, so there is another way to provide the information
 to your program. The program tries to read a configuration file in
-`/etc/yothalot/config.txt`, the same [configuration file](copernica-docs:Yothalot/configuration)
+`/etc/yothalot/config.txt`, the same [configuration file](configuration)
 that the nodes are also using. In order to read this file from your program
 it has to be available on the system where you start up the program. If
 this file is not available and there are no command line arguments passed,
@@ -93,7 +93,7 @@ behavior of how Yothalot standardly runs the mapreduce tasks. You can e.g.
 use these options to reduce the amount of resources that Yothalot uses, so 
 you can use the cluster for other tasks, or possibly speed up some slow steps.
 For some tips on how to speed up these steps you can read our 
-[Tuning jobs](copernica-docs:Yothalot/tuning "Tuning jobs") documentation.
+[Tuning jobs](tuning "Tuning jobs") documentation.
 
 The tuning tuning options that are provided are:
 *   --maxfiles,
@@ -146,12 +146,12 @@ Yothalot needs to know where files and other resources are located on the Gluste
 Therefore, it is important that you provide the absolute paths to these resources.
 Providing these paths via the command line is cumbersome and it requires 
 that all nodes have the same mounting point. To solve this issue we have created 
-a utility class [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+a utility class [Yothalot::Path](cpp-path "Path")
 that makes switching between relative and absolute paths easy. By using this
 class in your program you can pass relative paths as arguments to your
 program and use absolute paths if you want to access a file or other resource.
 
-Yet, there is one issue that [Yothalot::Path](copernica-docs:Yothalot/cpp-path "Path")
+Yet, there is one issue that [Yothalot::Path](cpp-path "Path")
 does not solve, the path to your program. You run your program to start up
 a job, this job later on starts up your program with a couple of extra arguments
 to run your `map()`, `reduce()`, or `write()` method. In order to do this, 

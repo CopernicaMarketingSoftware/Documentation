@@ -17,7 +17,7 @@ The extend link option only works when your template has links. Link parameters
 are set per website domain. This makes it possible to add different parameters 
 for different domains. 
 
-All fields within the link extension menu allow for [personalization using smarty-code](copernica-docs:MarketingSuite/template-editor/personalization "Personalization documentation").
+All fields within the link extension menu allow for [personalization using smarty-code](../template-editor/personalization "Personalization documentation").
 
 
 
