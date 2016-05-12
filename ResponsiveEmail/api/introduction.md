@@ -3,7 +3,7 @@ The Responsive Email API provides a simple RESTful interface. This means that
 your application can access the API using the HTTP protocol. With simple (secure) 
 HTTP calls you can create, store and modify email messages (in HTML or MIME  
 format) and retrieve email statistics. All you need is an 
-[access-token](https://www.responsiveemail.com/app/#/admin/api/rest-token) and you are ready to go. 
+[access-token](https://www.responsiveemail.com/app/#/admin/configuration/api/rest-token) and you are ready to go. 
 
 The API is accessible via the www.responsiveemail.com domain. Every request 
 starts with a [version number](../api/versions), 
