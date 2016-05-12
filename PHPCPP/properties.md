@@ -191,11 +191,11 @@ and the static properties with `Example::$my_property`.
 
 Besides using the property() method, you can also create class constants using
 the constant() method, or using the Php::Constant class. More information about
-this can be found in our [article about constants](copernica-docs:PHPCPP/constants).
+this can be found in our [article about constants](constants).
 
 ## Smart properties
 
-With the [magic methods __get() and __set()](copernica-docs:PHPCPP/magic-methods)
+With the [magic methods __get() and __set()](magic-methods)
 you can make more advanced properties that are directly mapped to C++ variables,
 and that allow you to perform additional checks when a property is overwritten,
 so that an object always remains in a valid state.

@@ -10,11 +10,11 @@ property `height`, which should be set to the height of your spacer in pixels.
 | Property | Value | Desc.                                                                                                                        |
 |:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "spacer" | Property to identify the spacer block                                                                                         |
-| [height](copernica-docs:ResponsiveEmail/json/property-spacer-height) | _integer_ | The height of the spacer in pixels. Default is 50 pixels     |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Get access to the table cell that houses this block            |
-| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Whitespace around the block                                           |
-| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the block.                                 |
+| [height](../json/property-spacer-height) | _integer_ | The height of the spacer in pixels. Default is 50 pixels     |
+| [container](../json/property-container) | _object_ | Get access to the table cell that houses this block            |
+| [margin](../json/property-margin) | _mixed_ | Whitespace around the block                                           |
+| [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
+| [background](../json/property-background) | _object_ | The background of the block.                                 |
 
 ## Example
 

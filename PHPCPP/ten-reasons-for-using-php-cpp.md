@@ -52,4 +52,4 @@ C++ is a great language that allows you to write brilliant object oriented code 
 
 PHP-CPP is an open source technology and free for you to use. You would be crazy not to try it.
 
-What are you waiting for? [Download](/download) the library, [install it on your system](copernica-docs:PHPCPP/install) and get started with [your first extension](copernica-docs:PHPCPP/your-first-extension).
+What are you waiting for? [Download](/download) the library, [install it on your system](install) and get started with [your first extension](your-first-extension).

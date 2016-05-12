@@ -6,7 +6,7 @@ a width in percentages or pixels, the width of an image can never exceed the
 size of the container it is placed in. If the width of an image is not set, 
 the image will always scale to the container it is placed in.
 
-[Check the image width documentation](support/json/property-image-width)
+[Check the image width documentation](../json/property-image-width)
 
 In email design there are many ways to make an image responsive. You could, 
 for example, design an email in such a way that an image covers 50% of your 
@@ -23,7 +23,7 @@ width. However, this means that even in the mobile client the image will only
 cover half of the screen. Often you'll want images to behave differently 
 depending on the device the email is viewed on. 
 
-If you want an image to scale differently it can easily be done with [columns](support/json/property-columns). 
+If you want an image to scale differently it can easily be done with [columns](../json/property-columns). 
 Let's say you want an image to cover half of the email width on desktop clients 
 and 100% on mobile clients. All you have to do is place the image in a column:
 
@@ -68,7 +68,7 @@ given a size of '8'. An image will never exceed the width of the container
 its placed in. 
 
 The block next to the image can be left empty or, if you want to add some extra 
-padding on the mobile client, filled with a [spacer](/support/json/block-spacer "spacer documentation"). 
+padding on the mobile client, filled with a [spacer](../json/block-spacer "spacer documentation"). 
 It is of course possible to add text or any of the other content-blocks to 
 the column next to the image. If you have any questions about this article or 
 ResponsiveEmail.com, feel free to send us a message on [info@responsiveemail.com](mailto:info@responsiveemail.com "send us an email!")

@@ -1,7 +1,7 @@
 #Yothalot\Output
 
 Yothalot\Output is a utility class that helps you to create files in the same
-[format](copernica-docs:Yothalot/internalfiles "Internal Files") as Yothalot
+[format](internalfiles "Internal Files") as Yothalot
 uses internally. In general you do not need to create a file like this since
 Yothalot can handle all types of files (with a little bit of your help). However, the
 Yothalot format has the cool property of being compressed while still being

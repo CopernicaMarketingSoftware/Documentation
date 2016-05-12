@@ -59,7 +59,7 @@ If you run into problems downloading or installing PHP-CPP, please check the
 
 Next stop is to install the V8 Javascript engine that is made by Google. We had 
 some problems understanding the official installation guide, so we wrote [a much 
-simpler installation guide](copernica-docs:PHPJS/v8) instead.
+simpler installation guide](v8) instead.
 
 If you don't feel like reading this full installation tutorial, you can also directly
 enter the following instructions in your terminal to install V8:

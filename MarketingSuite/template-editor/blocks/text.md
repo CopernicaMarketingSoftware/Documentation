@@ -12,4 +12,4 @@ Although you are allowed to add any HTML inside the *source* box, we advice to
 only use basic HTML as advanced HTML may break the email layout in some email 
 clients.
 
-[ResponsiveEmail Text block](copernica-docs:ResponsiveEmail/json/block-text)
+[ResponsiveEmail Text block](https://ms.copernica.com/#/documentation/ResponsiveEmail/json/block-text)

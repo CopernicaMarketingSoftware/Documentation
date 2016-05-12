@@ -5,7 +5,7 @@ that script writers can implement to add special features to a class. These are
 interfaces with names like 'Countable', 'ArrayAccess' and 'Serializable'.
 The features that these interfaces bring, can also be implemented using PHP-CPP.
 
-You may wonder why PHP sometimes uses [magic methods](copernica-docs:PHPCPP/magic-methods)
+You may wonder why PHP sometimes uses [magic methods](magic-methods)
 (for example `__set` and `__unset)` and sometimes uses interfaces to change
 the behavior of a class. There does not seem to be any uniformity in this choice.
 To us it is unclear why some special features are implemented with magic methods,

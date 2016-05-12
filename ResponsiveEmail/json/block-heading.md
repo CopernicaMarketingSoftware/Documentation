@@ -29,16 +29,16 @@ Please keep in mind that you can only use pure text in heading blocks.
 | Property | Value | Description                                                                                                                  |
 |:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
 | type | "heading" | Identifies the block as a heading block.                                                                                     |
-| [size](copernica-docs:ResponsiveEmail/json/property-link) | _integer_ | The level of the heading, supported range: 1 - 6\. Defaults to 1.       |
-| [content](copernica-docs:ResponsiveEmail/json/property-text-content) | _string_ | The textual content of the block. This may not include HTML.  |
-| [align](copernica-docs:ResponsiveEmail/json/property-align) | _string_ | To which side should the text be aligned? default is left.             |
-| [font](copernica-docs:ResponsiveEmail/json/property-font) | _object_ | Override the template wide default font properties.                      |
-| [link](copernica-docs:ResponsiveEmail/json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`.             |
-| [background](copernica-docs:ResponsiveEmail/json/property-background) | _object_ | The background of the text block.                            |
-| [margin](copernica-docs:ResponsiveEmail/json/property-margin) | _mixed_ | Margins around the text.                                              |
-| [padding](copernica-docs:ResponsiveEmail/json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background |
-| [visibility](copernica-docs:ResponsiveEmail/json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.          |
-| [container](copernica-docs:ResponsiveEmail/json/property-container) | _object_ | Access to the surrounding container                            |
+| [size](../json/property-link) | _integer_ | The level of the heading, supported range: 1 - 6\. Defaults to 1.                                   |
+| [content](../json/property-text-content) | _string_ | The textual content of the block. This may not include HTML.                              |
+| [align](../json/property-align) | _string_ | To which side should the text be aligned? default is left.                                         |
+| [font](../json/property-font) | _object_ | Override the template wide default font properties.                                                  |
+| [link](../json/property-link) | _object_ | Object with the link properties `url`, `title` and `params`.                                         |
+| [background](../json/property-background) | _object_ | The background of the text block.                                                        |
+| [margin](../json/property-margin) | _mixed_ | Margins around the text.                                                                          |
+| [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                             |
+| [visibility](../json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                                      |
+| [container](../json/property-container) | _object_ | Access to the surrounding container                                                        |
 
 ## Example
 

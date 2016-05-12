@@ -4,8 +4,8 @@ One of the questions we had to ask ourselves when we developed the PHP-CPP
 library was whether we should follow PHP conventions or follow C++ conventions
 for many of the library features.
 
-In PHP scripts you can use [magic methods](copernica-docs:PHPCPP/magic-methods)
-and [magic interfaces](copernica-docs:PHPCPP/magic-interfaces) to add special
+In PHP scripts you can use [magic methods](magic-methods)
+and [magic interfaces](magic-interfaces) to add special
 behavior to classes. With C++ classes you can achieve the same, but by using
 technologies like operator overloading, implicit constructors and casting
 operators. The PHP `__invoke()` method for example, is more or less identical to

@@ -1,8 +1,8 @@
 # Yothalot::Job
 
 With the **Yothalot::Job** class you can create, tune and control mapreduce
-and racer jobs. A job holds the name of the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [racer](copernica-docs:Yothalot/cpp-race "Racer") program, the
+and racer jobs. A job holds the name of the [mapreduce](cpp-program)
+or [racer](cpp-race "Racer") program, the
 input data and several performance settings.
 
 The most important member functions of Yothalot::Job are the 
@@ -42,9 +42,9 @@ public:
 
 ## Constructor
 
-The constructor takes two parameters, a [Yothalot::Connection](copernica-docs:Yothalot/cpp-connection) 
-and the filename of your program that holds the [mapreduce](copernica-docs:Yothalot/cpp-program)
-or [racer](copernica-docs:Yothalot/cpp-race "Racer") algorithm.
+The constructor takes two parameters, a [Yothalot::Connection](cpp-connection) 
+and the filename of your program that holds the [mapreduce](cpp-program)
+or [racer](cpp-race "Racer") algorithm.
 
 ```cpp
 // create a connection
@@ -166,7 +166,7 @@ is already detached.
 ## Getting information from your job
 
 Besides that the `wait()` method blocks your program while it waits for the
-job to complete, the method also return a [Yothalot::Result](copernica-docs:Yothalot/cpp-result "Result")
+job to complete, the method also return a [Yothalot::Result](cpp-result "Result")
 object with all kind of information about the performance and behavior of
 the job.
 
@@ -198,5 +198,5 @@ public:
 All of the above methods accept one parameter: an integer value with the
 max setting. You must set these tuning parameters *before* you start the job.
 For an explanation of the  meaning of all the tuning parameters, see the special in-depth
-[article about tuning mapreduce jobs](copernica-docs:Yothalot/tuning).
+[article about tuning mapreduce jobs](tuning).
 

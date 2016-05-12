@@ -69,15 +69,15 @@ To do so, navigate to **Magento Sync** inside Marketing Suite, then pick a targe
 type inside "Manage lists". A new page with list of targets and form should 
 pop up.
 
-![](copernica-docs:MarketingSuite/images/magento-filter-page.png)
+![](../images/magento-filter-page.png)
 
 In this screen you can fine tune mailing target options. Each target type has 
 specific set of options that can be applied. For example, 'orders' can be filtered 
 by purchased products, but 'subscribers' cannot.
 
-[customers-target]: copernica-docs:MarketingSuite/magento-integration/targets/customers
-[orders-target]: copernica-docs:MarketingSuite/magento-integration/targets/orders
-[quotes-target]: copernica-docs:MarketingSuite/magento-integration/targets/quotes
-[subscribers-target]: copernica-docs:MarketingSuite/magento-integration/targets/subscribers
-[persons-target]: copernica-docs:MarketingSuite/magento-integration/targets/persons
-[guests-target]: copernica-docs:MarketingSuite/magento-integration/targets/guests
+[customers-target]: ../magento-integration/targets/customers
+[orders-target]: ../magento-integration/targets/orders
+[quotes-target]: ../magento-integration/targets/quotes
+[subscribers-target]: ../magento-integration/targets/subscribers
+[persons-target]: ../magento-integration/targets/persons
+[guests-target]: ../magento-integration/targets/guests

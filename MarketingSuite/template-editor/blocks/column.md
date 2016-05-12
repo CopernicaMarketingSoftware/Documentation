@@ -34,4 +34,4 @@ two columns together that already has content, it works best to drag a new
 **columns block** underneath it, and then move the content of the first block 
 to the one below.
 
-[ResponsiveEmail Columns block](copernica-docs:ResponsiveEmail/json/block-columns)
+[ResponsiveEmail Columns block](https://ms.copernica.com/#/documentation/ResponsiveEmail/json/block-columns)

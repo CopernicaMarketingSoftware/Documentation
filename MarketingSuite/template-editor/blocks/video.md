@@ -12,4 +12,4 @@ page or the thumbnail of the video can be shown.
 At the moment, only videos hosted on Youtube.com and Vimeo.com are supported, 
 but more video sites will be included in the near future. 
 
-[ResponsiveEmail Video block](copernica-docs:ResponsiveEmail/json/block-video)
+[ResponsiveEmail Video block](https://ms.copernica.com/#/documentation/ResponsiveEmail/json/block-video)

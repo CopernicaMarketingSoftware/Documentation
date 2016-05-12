@@ -42,6 +42,7 @@ Examples:
 
 etc...
 ```
+Update: Implementation without `copernica-docs`
 
 ### Internal links
 

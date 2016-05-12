@@ -10,7 +10,7 @@ library to communicate with RabbitMQ. On the RabbitMQ website you can
 find [many plugins and libraries](http://www.rabbitmq.com/devtools.html) 
 for this.
 
-![MailerQ put it in RabbitMQ](copernica-docs:Mailerq/Images/mailerq-put-it-in-rabbitmq.png)
+![MailerQ put it in RabbitMQ](../Images/mailerq-put-it-in-rabbitmq.png)
 
 Besides being faster, publishing messages directly into the outbox queue 
 has the advantage that you can set all sorts of special properties

@@ -6,4 +6,4 @@ As a bonus, the generated emails are responsive out of the box! No more cursing 
 
 The editor renders templates under the hood using [ResponsiveEmail.com](https://www.responsiveemail.com) which is based on JSON input. For advanced users the editor includes a JSON editor to take full control of the generated template. The json templates render multiple times faster than the Publisher templates making large emailings to be send out faster. 
 
-[Next Creating a template](copernica-docs:MarketingSuite/template-editor/create-template)
+[Next Creating a template](../template-editor/create-template)

@@ -10,7 +10,7 @@ All variables are personalized for each destination. Simply put, when sending an
 to a target that contains customers with addresses 'john.doe@example.com' and
 'tim.smith@example.com', Tim Smith will see his own email address in the email. 
 
-Email personalization for Magento targets follows the same rules as [personalization](copernica-docs:MarketingSuite/template-editor/personalization) for targets based on selections and miniselections. However, there are some differences which we'll describe below. 
+Email personalization for Magento targets follows the same rules as [personalization](../template-editor/personalization) for targets based on selections and miniselections. However, there are some differences which we'll describe below. 
 
 ### No need to specify $profile and $subprofile 
 
@@ -38,13 +38,13 @@ available for given the different Magento targets.
 
 | Variable/Target | Variable type                                                                      | Customers list | Orders list | Quotes list | Subscribers list | Persons list  | Guests list |
 |:----------------|:-----------------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:----------------:|:-------------:|:-----------:|
-| $magento \*     | [magento](copernica-docs:MarketingSuite/magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           | Yes         |
-| $customer       | [customer](copernica-docs:MarketingSuite/magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     | No          |
-| $guest          | [guest](copernica-docs:MarketingSuite/magento-integration/object/guest)            | No             | No          | No          | No               | No            | Yes         |
-| $quote          | [quote](copernica-docs:MarketingSuite/magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
-| $order          | [order](copernica-docs:MarketingSuite/magento-integration/object/order)            | No             | Yes         | No          | No               | No            | Yes         |
-| $person         | [person](copernica-docs:MarketingSuite/magento-integration/object/person)          | No             | Yes         | No          | No               | Yes           | No          |
-| $subscriber     | [subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
+| $magento \*     | [magento](../magento-integration/object/magento)        | Yes            | Yes         | Yes         | Yes              | Yes           | Yes         |
+| $customer       | [customer](../magento-integration/object/customer)      | Yes            | Yes         | Yes         | No               | Vary \*\*     | No          |
+| $guest          | [guest](../magento-integration/object/guest)            | No             | No          | No          | No               | No            | Yes         |
+| $quote          | [quote](../magento-integration/object/quote)            | No             | Yes         | Yes         | No               | No            | No          |
+| $order          | [order](../magento-integration/object/order)            | No             | Yes         | No          | No               | No            | Yes         |
+| $person         | [person](../magento-integration/object/person)          | No             | Yes         | No          | No               | Yes           | No          |
+| $subscriber     | [subscriber](../magento-integration/object/subscriber)  | No             | No          | No          | Yes              | No            | No          |
 
 _\* As you can see in the table, the variable `$magento` is the only one variable available
 in all list types._ 
@@ -65,18 +65,18 @@ and a subscriber can also be a customer.
 
 Below is a list of object types that can be returned from various properties:
 
-* [Address](copernica-docs:MarketingSuite/magento-integration/object/address)
-* [Category](copernica-docs:MarketingSuite/magento-integration/object/category)
-* [Customer](copernica-docs:MarketingSuite/magento-integration/object/customer)
-* [Guest](copernica-docs:MarketingSuite/magento-integration/object/guest)
-* [Magento](copernica-docs:MarketingSuite/magento-integration/object/magento)
-* [Order](copernica-docs:MarketingSuite/magento-integration/object/order)
-* [OrderItem](copernica-docs:MarketingSuite/magento-integration/object/order-item)
-* [Person](copernica-docs:MarketingSuite/magento-integration/object/person)
-* [Product](copernica-docs:MarketingSuite/magento-integration/object/product)
-* [Quote](copernica-docs:MarketingSuite/magento-integration/object/quote)
-* [QuoteItem](copernica-docs:MarketingSuite/magento-integration/object/quote-item)
-* [Subscriber](copernica-docs:MarketingSuite/magento-integration/object/subscriber)
-* [Webstore](copernica-docs:MarketingSuite/magento-integration/object/webstore)
-* [Wishlist](copernica-docs:MarketingSuite/magento-integration/object/wishlist)
-* [WishlistItem](copernica-docs:MarketingSuite/magento-integration/object/wishlist-item)
+* [Address](../magento-integration/object/address)
+* [Category](../magento-integration/object/category)
+* [Customer](../magento-integration/object/customer)
+* [Guest](../magento-integration/object/guest)
+* [Magento](../magento-integration/object/magento)
+* [Order](../magento-integration/object/order)
+* [OrderItem](../magento-integration/object/order-item)
+* [Person](../magento-integration/object/person)
+* [Product](../magento-integration/object/product)
+* [Quote](../magento-integration/object/quote)
+* [QuoteItem](../magento-integration/object/quote-item)
+* [Subscriber](../magento-integration/object/subscriber)
+* [Webstore](../magento-integration/object/webstore)
+* [Wishlist](../magento-integration/object/wishlist)
+* [WishlistItem](../magento-integration/object/wishlist-item)
