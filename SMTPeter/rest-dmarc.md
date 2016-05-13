@@ -26,7 +26,7 @@ domain who has sent the report, and FOR is the domain for which the report
 is send. If there are multiple reports for a FROM-FOR combination at a
 particular date, you can use ID (starting from zero) to retrieve the one you
 want. If there are multiple reports and ID is not provided, the first report
-is returned. The DMARC reports are gzip encoded XML documents.
+is returned. The DMARC reports are XML documents.
 
 If you call dmarc without any extra arguments (i.e. method 1), you receive
 an array with dates for which we possibly have DMARC reports for you. However,
