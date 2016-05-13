@@ -1,6 +1,6 @@
 # Retrieving sent messages
 
-All emails that you send through SMTPeter are [archived](copernica-docs:SMTPeter/archiving "Email archiving").
+All emails that you send through SMTPeter are [archived](archiving "Email archiving").
 With the "text", "html", and "header" REST GET methods you can retrieve
 the text, html, and headers from these messages. It is also possible to
 get the attachments or embedded content from the messages. The URIs that
