@@ -14,6 +14,7 @@ www-port:           8485 (default: 8485)
 www-ip:             1.2.3.4 (default: 0.0.0.0)
 www-password:       admin (empty by default)
 www-dir:            /usr/share/mailerq/www (default: /usr/share/mailerq/www)
+www-connections:    10
 ````
 
 The `www-port` variable holds the port number for the management console;
@@ -38,6 +39,11 @@ All HTML, CSS and Javascripts that are necessary for the management
 console are automatically installed into the `/usr/share/mailerq/www`
 directory. If you want to run the console from out of a different
 location, you can change this directory with the `www-dir` variable.
+
+To limit the number of resources that can be used by the built-in HTTP
+server, you can use the "www-connections" variable to limit the number
+of simultaneous HTTP connections that can be handled. This number
+includes active web sockets.
 
 
 ## Setting up a secure management console
