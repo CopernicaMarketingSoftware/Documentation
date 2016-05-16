@@ -10,15 +10,15 @@ you can upload your own custom private keys to SMTPeter. The following POST
 API call is available to install a custom DKIM key.
 
 ````txt
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector
 ````
 
 To retrieve all available custom DKIM keys, use one of the following methods:
 
 ````txt
-https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector
 ````
 
 Once again, these methods are only needed by advanced users. If you do not
@@ -66,9 +66,9 @@ To retrieve the list of custom DKIM keys, you can use one of the following
 HTTP GET methods:
 
 ````txt
-https://www.smtpeter.com/v1/dkimkeys?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkeys
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com
+https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector
 ````
 
 These methods return respectively all keys, or just the keys for a specific
@@ -110,7 +110,7 @@ array holding DKIM keys:
 If you want to delete a specific DKIM key you can make a DELETE call.
 
 ```txt
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector
 ```
 
 A DELETE call removes the key from our servers. After the call the key can

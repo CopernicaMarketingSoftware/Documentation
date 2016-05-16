@@ -27,7 +27,7 @@ There is one API call that can be used to list and update the SPF
 mechanisms that are in use for a sender domain:
 
 ```txt
-https://www.smtpeter.com/v1/spf/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/spf/yourdomain.com
 ````
 
 This API method is available as GET, POST and DELETE method to list the
@@ -64,5 +64,5 @@ The delete call can be used to reset all added mechanisms and start with
 a clean sheet.
 
 ```txt
-https://www.smtpeter.com/v1/spf/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/spf/yourdomain.com
 ```

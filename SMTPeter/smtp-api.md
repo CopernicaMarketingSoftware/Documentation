@@ -18,7 +18,7 @@ create an SMTP login via the dashboard. Make sure to write down your password
 somewhere safe, it is only shown once.
 
 The SMTP login is used to authenticate with SMTPeter and allows you to enable
-[SMTPeter's features](rest-features). You can have multiple logins
+specific features. You can have multiple logins
 with different features enabled. The login has to be included whenever you send
 email via SMTPeter. In order to login you should configure your application to
 authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
@@ -67,8 +67,8 @@ to enter your password (if you use Thunderbird) and after that you're all set!
 ## Passing parameters for SMTPeter's options
 
 The SMTP protocol was never meant to pass parameters with each message. If you want to
-enable or disable specific SMTPeter [features](rest-features "SMTPeter Features")
-for specific messages, you will have to either use SMTP credentials or use different MIME header fields.
+enable or disable specific SMTPeter features for specific messages, you will have 
+to either use SMTP credentials or use different MIME header fields.
 
 In the SMTPeter dashboard you can create multiple SMTP logins. You can for example
 create a login for which the "inlinecss" feature is enabled, and one for which it

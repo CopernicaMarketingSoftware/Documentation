@@ -5,9 +5,9 @@ clicks, opens - all these events are written to log files. These log
 files are accessible through the REST API with the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/logfiles?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/logfiles/DATE?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/logfiles/FILENAME?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/logfiles
+(2) https://www.smtpeter.com/v1/logfiles/DATE
+(3) https://www.smtpeter.com/v1/logfiles/FILENAME
 ```
 
 The above methods can be used to (1) see for which dates log files are 
@@ -73,7 +73,7 @@ To download a log file, append the name of a log file to the REST API
 url. You should use a HTTP GET call to get the log file
 
 ````text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log
 ````
 
 This returns a CSV file. Some fields in the returned CSV file contain

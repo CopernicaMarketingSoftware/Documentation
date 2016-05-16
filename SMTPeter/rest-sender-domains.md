@@ -11,8 +11,8 @@ you can use the REST API for this too. The following methods
 are available:
 
 ````text
-(1) https://www.smtpeter.com/v1/domains?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/domain/NAME?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/domains
+(2) https://www.smtpeter.com/v1/domain/NAME
 ````
 
 ## Obtain sender domain information
@@ -21,7 +21,7 @@ If you want to get a list of all domains for which SMTPeter has configuration
 settings, use the following API GET call:
 
 ```txt
-https://www.smtpeter.com/v1/domains?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/domains
 ```
 
 You will receive an array with JSON objects holding the following information:
@@ -57,7 +57,7 @@ You can also get the information from one specific domain. This can be
 done with the single "/domain" API call:
 
 ```txt
-https://www.smtpeter.com/v1/domain/example.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/domain/example.com
 ```
 
 You will then receive a single JSON object:
@@ -171,6 +171,6 @@ own responsibility to update your DNS records. The REST API has a
 To delete a sender domain you can make a DELETE call to
 
 ```txt
-https://www.smtpeter.com/v1/domain/yourdomain.com?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/domain/yourdomain.com
 ```
 

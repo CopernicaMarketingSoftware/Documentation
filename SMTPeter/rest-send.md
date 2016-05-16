@@ -1,7 +1,7 @@
 # REST API method: send
 
 ```text
-https://www.smtpeter.com/v1/send?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/send
 ```
 
 To send email using the REST API you use the "send" method. The method

@@ -17,11 +17,11 @@ use one of the following REST API calls. These calls return the private key
 and selector that is currently in use by SMTPeter.com:
 
 ````txt
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/privatekey?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/publickey?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/algorithm?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/privatekey
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/publickey
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/algorithm
+https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector
 ````
 
 The first method returns a JSON object holding the current key that is in use:

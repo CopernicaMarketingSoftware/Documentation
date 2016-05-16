@@ -1,21 +1,25 @@
 # Retrieving sent messages
 
 All emails that you send through SMTPeter are [archived](archiving "Email archiving").
-With the "text", "html", and "header" REST GET methods you can retrieve
-the text, html, and headers from these messages. It is also possible to
-get the attachments or embedded content from the messages. The URIs that
-belong to these methods are:
+The REST API can be used to retrieve (almost) all the properties from
+emails that have passed through SMTPeter. For example, the "text" and "html" 
+methods allow yout to retrieve the text and html version of the mail.
+
+The following methods can be used to retrieve properties of an already
+sent email:
 
 ```text
-https://www.smtpeter.com/v1/text/MESSAGEID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/html/MESSAGEID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/header/MESSAGEID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/attachments/MESSAGEID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/embeds/MESSAGEID?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME?access_token=YOUR_API_TOKEN
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/recipient/MESSAGEID
+https://www.smtpeter.com/v1/envelope/MESSAGEID
+https://www.smtpeter.com/v1/text/MESSAGEID
+https://www.smtpeter.com/v1/html/MESSAGEID
+https://www.smtpeter.com/v1/header/MESSAGEID
+https://www.smtpeter.com/v1/attachments/MESSAGEID
+https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
+https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
+https://www.smtpeter.com/v1/embeds/MESSAGEID
+https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
+https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ```
 
 ## Get the text of a sent message
@@ -23,8 +27,9 @@ https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER?access_token=YOUR_API_TOKEN
 To get the text of a sent message you call the text method together with
 the id of the message for which you want the text. The URI of this call
 is:
+
 ```text
-https://www.smtpeter.com/v1/text/MESSAGEID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/text/MESSAGEID
 ```
 where "MESSAGEID" is the id of the message. You receive the text of the
 message as text/plain.
@@ -36,7 +41,7 @@ the id of the message for which you want the html. The URI of this call
 is:
 
 ```text
-https://www.smtpeter.com/v1/html/MESSAGEID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/html/MESSAGEID
 ```
 where MESSAGEID is the the id of the message. You receive the html of the
 message as text/html.
@@ -49,7 +54,7 @@ together with the id of the message for which you want the header. The URI
 of this call is:
 
 ```text
-https://www.smtpeter.com/v1/header/MESSAGEID?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/header/MESSAGEID
 ```
 where MESSAGEID is the unique id of the message for which you want to get
 the header. The header is send as plain text.
@@ -60,9 +65,9 @@ the header. The header is send as plain text.
 To get the attachments of a message you can use the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/attachments/MESSAGEID?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/attachments/MESSAGEID
+(2) https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
 ```
 where MESSAGEID is the message id for which you want to retrieve the attachments,
 NAME the name of the attachment and NUMBER, the rank of the attachment (starting
@@ -77,9 +82,9 @@ the name or rank respectively.
 To get the embedded content of a sent message you can use the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/embeds/MESSAGEID?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/embeds/MESSAGEID
+(2) https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ```
 where MESSAGEID is the message id for which you want to retrieve the embedded
 content, NAME the name of the embedded content, and NUMBER the rank of the
