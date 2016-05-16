@@ -1,7 +1,7 @@
 # Feedback loops
 
-SMTPeter allows you to set up feedback loops. These feedback loops allow
-you to receive realtime event notifications. Every time when something happens
+SMTPeter allows you to set up feedback loops. These feedback loops can be 
+used to receive realtime event notifications. Every time when something happens
 on the SMTPeter servers (like an incoming bounce, a failed  delivery or 
 when someone clicks on a link), SMTPeter makes a call to your server to 
 notify you about this event.
@@ -16,7 +16,7 @@ Once your URL has been validated, SMTPeter starts making calls to it.
 
 Before you set up a feedback loop, please do make sure that your server
 is capable of handling the load. Especially the feedback loop that is
-called [feedback-opens](when someone opens a mail) receives huge
+called [when someone opens a mail](feedback-opens) receives huge
 numbers of calls.
 
 If you're not sure whether your server can handle the load, or when you do
