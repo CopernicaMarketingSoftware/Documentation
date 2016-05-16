@@ -16,25 +16,26 @@ application to authenticate with
 
 It is possible to create multiple logins. You can for example make different
 logins for different users, and/or to enable or disable specific features per
-login. You can for example make a login that with the features to track
-clicks enabled, and a second login for which this feature is disabled. Based
+login. You can for example set up a login that with click tracking enabled,
+and a second login for which this feature is disabled. Based
 on your needs, you can then use one of these logins to inject mail.
  
 
 ## Examples
 
-To demonstrate how easy connecting to SMTPeter is we will give you three 
-simple steps showing how to set up SMTPeter, with descriptions of the 
-configuration of various programs.
+To demonstrate how easy it is to connect with SMTPeter, we have three 
+examples of how to set SMTPeter for different email clients.
 
-First you have to login into SMTPeter's dashboard and create a SMTP login.
-Please remember the password or copy it to your application. Internally,
-all passwords are encrypted by SMTPeter, so if you lose it, you will have
-to create a new password.
+Before you set up your client, you first have to open SMTPeter's dashboard
+and create a SMTP login. Remember the password or copy it immediately to 
+your application, because this is the only time that you are going to 
+see it. Internally, all passwords are encrypted by SMTPeter, so if you lose 
+it, you will have to create a new password.
+
 
 ### Configure your application
 
-The SMTP configuration is of course application dependent. We have examples 
+The SMTP configuration is application dependent. We have examples 
 for a couple of well known email programs:
 
 * [Mozilla Thunderbird](thunderbird "Example of setting up Mozilla Thunderbird")
