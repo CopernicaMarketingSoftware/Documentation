@@ -7,7 +7,7 @@ automatically be sent with valid DKIM signatures.
 
 However, if you want to add additional custom DKIM signatures to your email, 
 you can upload your own custom private keys to SMTPeter. The following POST 
-API calls is available to install a custom DKIM key.
+API call is available to install a custom DKIM key.
 
 ````txt
 https://www.smtpeter.com/v1/dkimkey/yourdomain.com/selector?access_token=YOUR_API_TOKEN
@@ -23,7 +23,7 @@ https://www.smtpeter.com/v1/dkimkeys/yourdomain.com/selector?access_token=YOUR_A
 
 Once again, these methods are only needed by advanced users. If you do not
 have your own DKIM keys, you can better use the DKIM keys that are linked
-to your [sender domain](rest-senderd-domains).
+to your [sender domain](rest-sender-domains).
 
 
 ## Installing custom DKIM keys

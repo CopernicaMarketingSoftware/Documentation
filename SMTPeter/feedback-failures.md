@@ -41,7 +41,7 @@ calls:
 <table>
     <tr>
         <td>id</td>
-        <td>unique id of the message for which this is a reported failure</td>
+        <td>unique id of the message for which this is a failure report</td>
     </tr>
     <tr>
         <td>recipient</td>
