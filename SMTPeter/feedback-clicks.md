@@ -42,5 +42,5 @@ With each POST call the following variables are sent over:
     </tr>
 </table>
 
-The "id" and "recipient" headers allow you to link the click to the 
+The "id" and "recipient" variables allow you to link the click to the 
 originally sent email message.
