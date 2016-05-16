@@ -1,67 +1,50 @@
 # SMTP API
 
-The SMTPeter service can of course be accessed using the traditional SMTP
-API. SMTP is the "language" that email programs use to transfer mail from 
+The SMTPeter service can be accessed using a traditional SMTP API. SMTP is 
+the language or protocol that email programs use to transfer mail from 
 one computer to the other. Because SMTPeter comes with a SMTP API, you can 
 easily integrate SMTPeter in your existing mail infrastructure, and you can 
 even set up traditional email clients like Outlook, Thunderbird or your 
 mobile devices to send all messages through SMTPeter.
 
-
-
-
-
-
-
 To use the SMTP API there are a few things you need to do. First you need to
-create an SMTP login via the dashboard. Make sure to write down your password
-somewhere safe, it is only shown once.
+create an SMTP login via the dashboard. This SMTP login is used to authenticate 
+with SMTPeter. The login has to be included in the SMTP handshake whenever 
+you send email via SMTPeter. In order to login you should configure your 
+application to authenticate with 
+[AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
 
-The SMTP login is used to authenticate with SMTPeter and allows you to enable
-specific features. You can have multiple logins
-with different features enabled. The login has to be included whenever you send
-email via SMTPeter. In order to login you should configure your application to
-authenticate with [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
-
-**Note:** If you see a message you do not have permission to send email please
-[contact us](mailto:peter@smtpeter.com "send us email") so we can authenticate your account.
-
-
+It is possible to create multiple logins. You can for example make different
+logins for different users, and/or to enable or disable specific features per
+login. You can for example make a login that with the features to track
+clicks enabled, and a second login for which this feature is disabled. Based
+on your needs, you can then use one of these logins to inject mail.
+ 
 
 ## Examples
 
-To demonstrate how easy connecting to SMTPeter is we will give you three simple
-steps showing how to set up SMTPeter, with detailed descriptions of the configuration
-of various programs.
+To demonstrate how easy connecting to SMTPeter is we will give you three 
+simple steps showing how to set up SMTPeter, with descriptions of the 
+configuration of various programs.
 
+First you have to login into SMTPeter's dashboard and create a SMTP login.
+Please remember the password or copy it to your application. Internally,
+all passwords are encrypted by SMTPeter, so if you lose it, you will have
+to create a new password.
 
-### 1: Create your SMTP login
+### Configure your application
 
-Log into your account and go to the api settings menu. Here you can manage your
-REST and SMTP credentials. Go to 'manage SMTP credentials' and create a new SMTP
-login. Choose the options you want to enable with this login and create the
-credentials.
-
-You will now see your generated username and password. Save this password somewhere
-safe, you only get to see it once. Note that you have to include the spaces when
-entering the password.
-
-
-### 2: Configure your application to use SMTPeter
-
-The configuration is of course application dependent. Here we give examples
-for:
+The SMTP configuration is of course application dependent. We have examples 
+for a couple of well known email programs:
 
 * [Mozilla Thunderbird](thunderbird "Example of setting up Mozilla Thunderbird")
 * [Android email app](android "Example of setting up Android email app")
 * [Postfix](quick-start/postfix "Example of setting up Postfix")
 
-
-### 3: send email!
-
-Now your emails will use SMTPeter as your default smtp server and will apply any
-options and keys to your email. The first time you send an email you are prompted
-to enter your password (if you use Thunderbird) and after that you're all set!
+After setting up your email program to use SMTPeter, all your emails will 
+pass through SMTPeter as your default SMTP gateway. The first time you send 
+an email you are prompted to enter your password (if you use Thunderbird) 
+and after that you're all set!
 
 
 ## Passing parameters for SMTPeter's options
