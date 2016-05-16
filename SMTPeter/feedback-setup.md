@@ -15,7 +15,7 @@ us to send confidential information to a wrong server. In the validation
 procedure you are asked to copy a small text file to your webserver, so
 that we can see that the server really belongs to you.
 
-The name and contents of the txt file is unique for each feedback loop,
+The name and contents of the text file is unique for each feedback loop,
 and can be fetched from the SMTPeter dashboard. You must copy it to one of
 two possible locations: to the root of your webserver, or to the same directory 
 where your feedback script is located. Thus: if you've set up "https://domain.com/dir/script.php"
@@ -23,8 +23,8 @@ as your feedback script, you must copy the "smtpeter-xxxxx.txt" file
 to your webserver so that it becomes accessible via either 
 "https://domain.com/dir/smtpeter-xxxxx.txt" or "https://domain.com/smtpeter-xxxxx.txt".
 
-You can remove the txt file from your server after the address has been 
-evaluated.
+You can remove the text file from your server after the address has been 
+validated.
  
 
 ## Testing the feedback loop
