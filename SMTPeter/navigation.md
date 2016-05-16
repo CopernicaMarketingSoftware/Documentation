@@ -21,6 +21,12 @@
     * [Log files](rest-logfiles)
     * [DMARC reports](rest-dmarc)
     * [Retrieve messages](rest-messages)
+* [Feedback loops](feedback-loops)
+    * [Setting up a feedback loop](feedback-setup)
+    * [Bounce feedback](feedback-bounces)
+    * [Failure feedback](feedback-failures)
+    * [Clicks feedback](feedback-clicks)
+    * [Opens feedback](feedback-opens)
 * [License and Billing](license-and-billing "License & Billing")
 * [Responsive Email](responsive-email "Using SMTPeter with ResponsiveEmail")
 
