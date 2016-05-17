@@ -31,7 +31,7 @@ you need.
 * change envelope address to collect bounces
 * modify html code to contain inline css attributes
 
-The above table holds all the properties that can be associated with a
+The above list holds the properties that can be associated with a
 login/password pair. When you use the dashboard to create a login, you
 can select the features to use for that login.
 
