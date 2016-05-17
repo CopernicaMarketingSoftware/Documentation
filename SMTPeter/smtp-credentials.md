@@ -25,28 +25,11 @@ install a different feature set for each login. When you send out mail,
 you use login/password combination that supports the features that 
 you need.
 
-<table>
-    <tr>
-        <td>clicktracking</td>
-        <td>modify hyperlinks to track clicks</td>
-    </tr>
-    <tr>
-        <td>openstracking</td>
-        <td>modify image urls to track opens</td>
-    </tr>
-    <tr>
-        <td>preventscam</td>
-        <td>do not modify links that would trigger scam warnings</td>
-    </tr>
-    <tr>
-        <td>bouncetracking</td>
-        <td>change envelope address to collect bounces</td>
-    </tr>
-    <tr>
-        <td>inlinecss</td>
-        <td>modify html code to contain inline css attributes</td>
-    </tr>
-</table>
+* modify hyperlinks to track clicks
+* modify image urls to track opens
+* do not modify links that would trigger scam warnings
+* change envelope address to collect bounces
+* modify html code to contain inline css attributes
 
 The above table holds all the properties that can be associated with a
 login/password pair. When you use the dashboard to create a login, you
