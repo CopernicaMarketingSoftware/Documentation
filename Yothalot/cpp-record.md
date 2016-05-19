@@ -75,7 +75,7 @@ Yothalot::Record myRecord(input);
 Moreover you can construct a record from a set of inputs
 where the smallest record is used first.
 ```cpp
-Yothalot::Record myRecord(inputs); /
+Yothalot::Record myRecord(inputs);
 ```
 Finally there is a copy and move constructor to create records.
 
