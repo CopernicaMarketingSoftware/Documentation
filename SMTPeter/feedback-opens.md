@@ -1,7 +1,7 @@
 # Feedback loops for opens
 
-All image links in emails that flow through SMTPeter are rewritten. When
-an email is opened, the image will therefore not be downloaded from your
+SMTPeter can rewrite image links in emails to track opens. When an email
+is opened for which this option was set, the image will not be downloaded from your
 own server, but from the cache on SMTPeter web servers in stead. This
 allows us to track all opens, and to use that for statistics.
 

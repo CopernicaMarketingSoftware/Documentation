@@ -1,6 +1,6 @@
 # Feedback loops for clicks
 
-SMTPeter can rewrite hyperlinks in emails to track clicks. When someone
+SMTPeter rewrite hyperlinks in emails to track clicks if you enable click-tracking. When someone
 clicks on one of these rewritten links, the click is redirected over the
 SMTPeter webservers before it is forwarded to the actual website, so that
 we can log the click and use it for statistics.
