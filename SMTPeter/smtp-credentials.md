@@ -4,7 +4,7 @@ You need a valid login/password combination to access the SMTP API.
 These credentials have to be included in the SMTP handshake before
 you send the first message over the connection. SMTPeter supports both
 the "AUTH PLAIN" as well as the "AUTH LOGIN" authentication mechanism.
-The credentials must be sent over a secured connections, either
+The credentials must be sent over a secure connection, either
 because you set up a connection using [port 465](smtp-ports) or
 after you've secured the connection with "STARTTLS".
 
