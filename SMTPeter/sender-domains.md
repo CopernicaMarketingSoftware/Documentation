@@ -53,6 +53,6 @@ have a copy of the private key so that we can add a DKIM signature to
 each mail that flows through the SMTPeter servers.
 
 To decide which keys to use, we extract the "from" address from all
-emails that we process. Only the emails for which you've set up a  
-sender domain are signed.
+emails that we process. Only the emails for which you've set up a sender
+domain are signed.
 
