@@ -163,7 +163,7 @@ with the following JSON REST data.
 {
     "envelope": "bounce@yourdomain.com",
     "recipient": "info@example.com",
-    "mime': "...",
+    "mime": "...",
     "trackbounces": true,
     "dsn": {
         "notify": "NEVER"
@@ -186,7 +186,7 @@ envelope address:
 ````
 {
     "recipient": "info@example.com",
-    "mime': "...",
+    "mime": "...",
     "trackbounces": true
 }
 ````
@@ -199,7 +199,7 @@ following JSON data:
 {
     "envelope": "bounce@yourdomain.com",
     "recipient": "info@example.com",
-    "mime': "...",
+    "mime": "...",
     "trackbounces": true,
     "dsn": {
         "notify": "NEVER"
