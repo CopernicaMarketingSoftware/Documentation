@@ -1,28 +1,81 @@
 # Bounce handling
 
-When you send out email, you normally also have to take care of failed deliveries
-and bounce messages that are sent back to the email's envelope address. However,
-if you do not want to set up an infrastructure to take care of bounces yourself,
-you can let SMTPeter do this for you.
+When you send out email, you receive all sorts of bounce messages too.
+Amonst these messages are delivery status notifications for addresses that
+no longer exists, out-of-office replies from people who are on holiday and
+all sort of other automaticly generated replies too.
 
-SMTPeter can process all bounces and present the results in a clear overview. It
-can also automatically send them to you using SMTP or webhooks. You can also use
-our API to download bounces at periodic intervals.
-
-There are multiple ways SMTPeter's bounce processing works depending on which API
-you use and whether you have bounce tracking enabled or disabled.
+You can configure SMTPeter to take over the handling of these bounces, so
+that you do not have to process these messages yourself. There are a couple
+of configuration options that you can use for this.
 
 
-## SMTP API
+## The envelope address
 
-The SMTP protocol is the standard protocol mail servers use to communicate with each
-other. When you correctly send a message to SMTPeter using the SMTP API, SMTPeter will
-always receive the message. It then attempts to deliver the message to the receiving
-mail server. What happens if the message cannot be delivered, which can happen for various reasons -
-such as a full mailbox or an incorrect email address - depends on whether
-or not you have bounce tracking enabled.
+When you submit email - either via the [SMTP API](smtp-api) or the 
+[REST API](rest-api) - you can optionally supply an envelope address. This
+is the address to which all bounce messages are going to be delivered. If 
+you're not interested in bounce messages, life is very simple: just don't 
+supply an envelope address. If you send your messages without an envelope 
+address, there is no way how bounce messages could ever end up back in
+your mailbox.
 
-### Bounce tracking disabled
+To send mail without an envelope address with the REST API is simple: just 
+don't add the "envelope" parameter to the POST data. With the SMTP API it
+is simple too. The SMTP protocol allows submitting email without an 
+envelope address:
+
+````
+MAIL FROM:<>
+250 2.1.0 Sender OK
+RCPT TO:<info@smtpeter.com>
+250 2.1.5 Recipient OK
+DATA
+354 End data with <CR><LF>.<CR><LF>
+````
+
+As you see in the above example, submitting an empty envelope address 
+("MAIL FROM:<>") is valid.
+
+
+## Bounce tracking
+
+If you _do_ supply an envelope address, you apparently are interested
+in receiving bounces. But even then you can instruct SMTPeter how to
+intercept and handle your bounces.
+
+When you submit email through the REST API, you can add a "trackbounces"
+variable to your POST data. If you set this to true (which is the default), 
+you instruct SMTPeter to _intercept_ all bounces, process them, and  
+forward them to your envelope address. This is a nice feature, because it
+allows SMTPeter to log and report wrong email addresses.
+
+To intercept bounces, SMTPeter changes the envelope address of your
+messages. The original envelope address, the one that you supplied, is
+removed and changed into a "@smtpeter.com" address. By doing this, 
+bounces are not directly sent to your address, but to SMTPeter first, 
+before they are forwarded to your original envelope address.
+
+If you set the variable to false on the other hand, SMTPeter will not 
+change the envelope address, and will not intercept bounces. However, we 
+strongly advise to always set the "trackbounces" variable to true. All 
+emails will then be delivered with an "@smtpeter.com" envelope address, 
+and will therefore pass all SPF tests. If you set the "trackbounces" 
+variable to false, the envelope address is not changed, and it is your 
+own responsibility to ensure that you use a valid envelope address with 
+a valid SPF record in DNS.
+
+The [SMTP API](smtp-api) does not allow setting a "trackbounces" parameter.
+However, you can associate this bounce-tracking feature with SMTP logins.
+If you create new SMTP credentials on SMTPeter's dashboard, you can
+enable the trackbounces options. All email messages that you submit
+with these credentials will then have this feature turned on.
+
+
+## Delivery Status Notifications
+
+
+
 
 When sending a message through SMTPeter without bounce tracking enabled any bounce messages
 will - by default - automatically be sent to the email address specified as the envelope
