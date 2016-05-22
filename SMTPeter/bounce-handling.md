@@ -14,17 +14,25 @@ of configuration options that you can use for this.
 ## The envelope address
 
 When you submit email - either via the [SMTP API](smtp-api) or the 
-[REST API](rest-api) - you can optionally supply an envelope address. This
-is the address to which all bounce messages are going to be delivered. If 
-you're not interested in bounce messages, life is very simple: just don't 
-supply an envelope address. If you send your messages without an envelope 
-address, there is no way how bounce messages could ever end up back in
-your mailbox.
+[REST API](rest-api) - you optionally supply an "envelope" address. This
+is the address to which all bounce messages are going to be delivered. Note
+that this envelope address is not the same as the "from" address! The 
+from address is the visible sender address of the user, that is used 
+when someone hits the reply button. The "envelope" address on the other
+hand, is normally not visible, and is used by mail servers for bounces 
+and other types of _automated_ replies.
 
-To send mail without an envelope address with the REST API is simple: just 
-don't add the "envelope" parameter to the POST data. With the SMTP API it
-is simple too. The SMTP protocol allows submitting email without an 
-envelope address:
+If you're not interested in bounce messages and other automatic replies, 
+life is easy: just don't supply an envelope address when you submit email
+to SMTPeter. If you send your messages without an envelope address, there 
+is no way how bounce messages could ever end up back in your mailbox. 
+Manual replies (when someone actively presses the reply button) are of 
+course still possible, because your mail will still have a valid "from" address.
+
+To send mail without an envelope address with the REST API is straight 
+forward: just don't add the "envelope" parameter to the POST data. With 
+the SMTP API it is simple too. The SMTP protocol allows submitting email 
+without an envelope address:
 
 ````
 MAIL FROM:<>
@@ -33,18 +41,11 @@ RCPT TO:<info@smtpeter.com>
 250 2.1.5 Recipient OK
 DATA
 354 End data with <CR><LF>.<CR><LF>
+(your full mime body here)
 ````
 
 As you see in the above example, submitting an empty envelope address 
 ("MAIL FROM:<>") is valid.
-
-Please note that there is a big difference between the envelope address
-and the "from" address! The "envelope" address is the hidden address
-that is used in the SMTP handshake, and to which automatically generated
-bounces are sent. The "from" address on the other hand is listed in the
-email header, and is visible to the end-user. It is also the address to
-which replies are sent when a user hits the "reply" button.
-
 
 
 ## Bounce tracking
@@ -55,7 +56,7 @@ and handle them.
 
 When you submit email through the REST API, you can add a "trackbounces"
 variable to your POST data. If you set this to true (which is the default), 
-you instruct SMTPeter to _intercept_ all bounces, process them, and  
+you instruct SMTPeter to _intercept_ all bounces, process them, and 
 forward them to your envelope address. This is a nice feature, because it
 allows SMTPeter to log and report wrong email addresses.
 
