@@ -86,20 +86,22 @@ with these credentials will then have this feature turned on.
 
 A special type of bounce messages are Delivery Status Notifications,
 (in short: DSN's). Unlike many out-of-office replies and other type of
-bounces, DNS's are standardized automatically generated notifications
-that can be automatically processed by mail servers. SMTPeter recognizes
-these type of bounces too and logs the reported errors.
+bounces (that are difficult to recognize for computers), DNS's are 
+standardized automatically generated notifications that can be processed 
+by mail servers. SMTPeter recognizes these type of bounces too and logs 
+the reported errors. Because SMTPeter already recognizes such messages, 
+you may instruct SMTPeter to not forward these DNS's, and only pass on 
+the bounces that could not be recognized. 
 
-But the fact that these bounces can be automatically processed is not
-the only thing that is so nice about them. The SMTP protocol also has an
-extension that allows mail servers to tell each other what kind of DSN
-messages they like to receive: only error notifications, or also notification
-for successful deliveries or delays? SMTPeter supports this extension too.
+The SMTP protocol has a special DSN extension that allows just this. When
+you submit a mail using the SMTP protocol, you can specify what kind of DSN
+messages you like to receive: only error notifications, or also notifications
+for successful deliveries? Or no DSN notifications at all?
 
 Thus, if you submit an email to SMTPeter and you're interested in bounces,
-you can not only pass the envelope address to which the bounces are going
-to be delivered, but also extra parameters to inform the type of 
-notification you want to receive.
+and/or DSN messages, you can not only pass the envelope address to which 
+the bounces are going to be delivered, but also extra parameters to inform 
+what type of notification you want to receive.
 
 
 ## Passing DSN parameters
@@ -108,7 +110,7 @@ As explained above, SMTPeter supports the DSN extension, so you can pass
 additional parameters to instruct us what type of bounces you like
 to receive. With these DSN parameters the following things can be configured:
 
-- When to send a notification (only in case of failure, when the message is delayed, on success or never)
+- When to send a notification (never, or in case of failure and/or success)
 - What to return in case of a notification (full message or just the headers)
 - An optional unique envelope identifier to be included in the DSN message
 - The original recipient address
@@ -130,35 +132,33 @@ API. For the REST API you need to supply a nested JSON object:
 }
 ````
 
-If you submit mai via the SMTP API you can pass extra parameters to
+If you submit mail via the SMTP API you can pass extra parameters to
 the "MAIL FROM" and "RCPT TO" instructions:
 
 ````
-MAIL FROM:<alice@example.org> RET=HDRS ENVID=QQ314159
+MAIL FROM:<alice@example.org> RET=HDRS ENVID=yourid
 250 sender ok
 RCPT TO:<bob@example.com> NOTIFY=SUCCESS ORCPT=rfc822;bob@example.com
 250 recipient ok
 ````
 
 The "notify" parameter can have the following values: "NEVER", "FAILURE",
-"DELAY" or "SUCCESS". A comma seperated list is possible too. It specifies
-for what kind of events you want to receive bounce messages.
+"DELAY" or "SUCCESS". A comma seperated list of these values is possible 
+too. It specifies for what kind of events you want to receive bounce messages.
 
 The "ret" settings can be set to either "FULL" or "HDRS" and controls
 whether the bounced message contains the full original submitted email,
-or just the email headers.
-
-The "envid" and "orcpt" settings are fields that are going to be included
-in the bounces message, and can be used to link the received DSN to the
-original submitted mail.
+or just the email headers. The "envid" and "orcpt" settings are fields 
+that are going to be included in the bounces message, and can be used to 
+link the received DSN to the original submitted mail.
 
 
 ## Some examples
 
 Imagine that you do want to receive out-of-office replies, and other type
-of manually edited bounces, but you have no interest in DSN messages
-because they are picked up by SMTPeter. You can then inject your email
-with the following JSON REST data.
+of bounces, but you have no interest in DSN messages because you know that 
+SMTPeter already processes these automated replies and logs and reports 
+these errors. You can then inject your email with the following JSON REST data.
 
 ````
 {
@@ -172,7 +172,7 @@ with the following JSON REST data.
 }
 ````
 
-In the above example you do supply an envelope address, so you could receive
+In the above example you do supply an envelope address, so you will receive
 out-of-office replies and other types of bounces. The "trackbounces"
 setting is also set to true, which means that SMTPeter is going to intercept,
 process and log all bounces and forward them to you. However, the DSN
@@ -192,6 +192,11 @@ envelope address:
 }
 ````
 
+No envelope address is set in the above example, so you will not receive
+any errors. However, the "trackbounces" property is set, so SMTPeter 
+will add its own envelope address to the mail, and intercept, process
+and log all bounces.
+
 If you want to receive all out-of-office replies, unrecognized errors 
 AND error messages when a delivery fails, you can inject email with the
 following JSON data:
@@ -203,8 +208,13 @@ following JSON data:
     "mime": "...",
     "trackbounces": true,
     "dsn": {
-        "notify": "NEVER"
+        "notify": "FAILURE"
     }
 }
 ````
+
+With the above input, SMTPeter is going to forward the mail using its
+own envelope address (because "trackbounces" is set to true). All bounces
+will be intercepted because of this, but they will all also be forwarded
+to you, even the Delivery Status Notifications.
 
