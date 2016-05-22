@@ -49,10 +49,33 @@ to these records.
 ## The "from" address
 
 For each sender domain we host the public DKIM keys in our DNS. We also
-have a copy of the private key so that we can add a DKIM signature to
-each mail that flows through the SMTPeter servers.
+have a copy of the private key on our servers so that we can add a DKIM 
+signature to each mail that flows through the SMTPeter servers.
 
 To decide which keys to use, we extract the "from" address from all
-emails that we process. Only the emails for which you've set up a sender
-domain are signed.
+emails that we process. That's why it is important that you always use
+the same domain names in the from addresses of your emails. Only the 
+emails for which you've set up a sender domain can be signed.
+
+
+## The tracking and bounce domains
+
+If you set up a sender domain you are asked to configure your tracking and
+bounce domains. These are the hostnames that we use to track clicks,
+opens and errors. The suggested defaults, "clicks.yourdomain.com" and 
+"bounce.yourdomain.com" are for most users sufficient. 
+
+But be aware that if you configure SMTPeter to track clicks, all hyperlinks 
+in your emails are going to be rewritten to use the click domain. The default
+"clicks.yourdomain.com" might look like a tracking domain to your users (which 
+is not that strange, given the fact that it actually _is_ a tracking domain).
+If you rather have urls that look more neutral (for example "specialoffers.yourdomain.com",
+or "www2.yourdomain.com") you can change the click domain in the
+sender domain configuration.
+
+The same applies to the bounce domain, although the bounce domain is less 
+visible for the receivers of your email. It is only used for the envelope
+domain, and the envelope domain is normally not shown to users, unless they
+are going to inspect the original email source.
+
 
