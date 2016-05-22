@@ -5,7 +5,7 @@ technology that receivers use to verify whether an email was legitimate
 or whether it was faked: DMARC. DMARC was invented to solve some shortcomings
 of DKIM and SPF.
 
-To understand this, one must realize that new features in email are alway 
+To understand DMARC, one must realize that new features in email are alway 
 _optional_. Email has been around for ages, and new technologies may not 
 break existing email software. This means that even though DKIM and SPF 
 were invented to make email more secure, it still is perfectly legal to 
@@ -21,20 +21,21 @@ there is for this receiver no way to find out whether this mail was sent
 by a malicious phisher, or by the employee who simply forgot
 to update. The simple fact that a DKIM signature is missing, or that there
 was no matching SPF record _could_ be an indication that something is
-terribly wrong, but it could also be harmless. So even though we have DKIM 
-and SPF, there was still no good way to distinguish valid mails from abuse. 
-DMARC is a technology to solve this.
+terribly wrong, but it could also be a small mistake. So even though we 
+DKIM and SPF were introducted, there was still no good way to 
+distinguish valid mails from abuse. DMARC is a technology to solve this.
 
 
 ## DMARC and DNS
 
 Just like DKIM and SPF, DMARC also relies on the DNS. DMARC allows you
 to add an extra record to your DNS server, and in that record you can
-specify things like "yes, all of my colleagues always send DKIM signed emails,
-and if you ever receive an email from my company without a DKIM signature, 
-just throw it away. By the way, please keep me informed about the messages
-that you throw away, so that I can check internally if someone on the team
-forgot to update her computer".
+specify things like "yes, all of my colleagues always send DKIM signed emails
+and we all send email from servers with valid SPF records, and if you ever 
+receive an email from my company without a DKIM signature or from a server
+without SPF, just throw it away. And by the way, please keep me informed 
+about the messages that you throw away, so that I can check internally if 
+someone on the team forgot to update her computer".
 
 That's essentially what DMARC is. It allows receivers to query the DNS, so
 that they know what to do when a DKIM signature is missing, or what to do when SPF
