@@ -90,8 +90,8 @@ to send mails from example.com.
 
 ## DMARC deployment
 
-The DMARC technology allows you to specify what receivers like gmail.com and
-hotmail.com should do with invalid emails that seem to come from you. There are 
+The DMARC technology allows you to specify what receivers (companies like Google,
+Yahoo and Microsoft) should do with invalid emails that (seem to) come from you. There are 
 three policies to choose from. The most relaxed policy is "none", which means 
 that you want receivers to ignore the outcome of the SPF and DKIM checks and 
 just put your messages in the inbox. A bit more strict is the policy "quarantine". 
