@@ -16,8 +16,8 @@ what kind of information he or she wants to receive. This standard
 make it much easier to link incoming bounces to the original sent email.
 
 MailerQ supports this standard and SMTP extension: when communicating 
-with a receiving server, MailerQ can passes DSN parameters to tell the 
-receiver what kind of bounces you like to receive, and if MailerQ is 
+with a receiving server, DSN parameters can be passed to tell the 
+receiver what kind of bounces should be returned. If MailerQ is 
 configured to receive mail on a SMTP port, it understands these kind of 
 parameters too. MailerQ can also be configured to send out, receive and 
 recognize DSN messages.
