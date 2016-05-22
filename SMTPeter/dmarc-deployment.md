@@ -73,7 +73,7 @@ through SMTPeter.com. But be careful!
 The moment that you update the DNS records for your domain, all mails that
 you do not send through SMTPeter.com are invalid. Although this does not
 necessarily mean that these mails are going to be rejected (in the DMARC record
-you can specify that invalid mails should initially be accepted anyway), but
+you can specify that invalid mails should initially be accepted anyway), 
 it is better to eventually update your entire email architecture so that all mails
 are passed through SMTPeter.com and are correctly signed and sent from the 
 right servers.
