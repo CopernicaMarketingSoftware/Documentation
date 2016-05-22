@@ -115,7 +115,7 @@ policy "reject" and start again with 1 percent that you slowly move up to 100.
 The SMTPeter dashboard allows you to do this deployment automatically. You
 can enter the percentage that you would like to have, and the date when you
 want to have it deployed, and SMTPeter will every day automatically update your
-DNS records to get to this percentage.
+DNS records to slowly advance to this percentage.
 
 
 ## Processing reports
