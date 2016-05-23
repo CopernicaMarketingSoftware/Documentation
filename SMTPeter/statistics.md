@@ -45,8 +45,12 @@ email programs, because the link appears to go to "www.example.com", but
 in reality the "clicks.smtpeter.com" website is opened.
 
 If you want to prevent such scam warnings, you can instruct SMTPeter to
-skip rewriting these type of hyperlinks. 
+skip rewriting these type of hyperlinks. Alternatively you can also of 
+course change the link text.
 
+````html
+<a href="http://clicks.smtpeter.com/path/to/file">my website</a>
+````
 
 ## API and dashboard
 
@@ -67,7 +71,7 @@ only add a small identifier to the URL. We also change the original hostname
 in the URL to a hostname that points to the SMTPeter web servers. By 
 default, we use "clicks.smtpeter.com" for this. 
 
-However, we recommend that you go to the dashboard and configure a different
+However, we recommend that you go to your dashboard and configure a different
 click domain instead. To make your email campaigns more successful, you
 can better use a click domain like "specialoffers.yourcompanyname.com". The
 receivers of your messages will then already see your domain when they
