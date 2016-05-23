@@ -51,7 +51,7 @@ SMTP logins, each one with different features enabled. If you
 want to automatically inlinize CSS, you just have to create a login with
 this feature enabled, and use that login for your messages.
 
-If you are in a position to change the MIME header of the email messages,
+Alternatively, if you are in a position to change the MIME header of the email messages,
 you can also enable the CSS inlinizer by adding a special MIME
 header variable. If this header line is present in the mail, SMTPeter will
 also transform the CSS code into style attributes.
