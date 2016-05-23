@@ -8,7 +8,7 @@ use forged sender addresses to make it look like a legit email, for instance
 from your credit card company. To prevent that these emails actually reach your inbox, 
 various tools have been developed over the years. SPF is one of them. 
 
-This aricle is intended for users who want to have background
+This article is intended for users who want to have background
 information about SPF, or who want to control the SPF records that are 
 created by us. If you want to set up SPF with your sender domain, please follow 
 the instructions on our article about [setting up sender domains with SMTPeter](sender-domains).
