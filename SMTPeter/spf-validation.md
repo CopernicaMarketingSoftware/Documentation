@@ -1,15 +1,17 @@
-# SPF validation
+# SPF email validation - a brief introduction
 
-If you send email through SMTPeter, you must make sure that you set up 
-SPF records in your DNS. Luckily, the SMTPeter dashboard has tools to help 
-you. You can simply follow the recommendations that come with 
-[sender domains](sender-domains). If you set up a sender domain, the
-dashboard give you precise instructions on how to set up your DNS records,
-including the SPF records.
+Ever since email became commonplace for everyday communication, spammers and
+crooks have taken advantage of the medium to try to lure people into buying
+certain pills or to kindly ask if they can stash millions on behalve of a 
+deceased Nigerian princess. Especially with phishing emails, these culprits
+use forged sender addresses to make it look like a legit email, for instance
+from your credit card company. To prevent that these emails actually reach your inbox, 
+various tools have been developed over the years. SPF is one of them. 
 
-This article is intended for advanced users who want to have background
+This aricle is intended for users who want to have background
 information about SPF, or who want to control the SPF records that are 
-created by us.
+created by us. If you want to set up SPF with your sender domain, please follow 
+the instructions on our article about [setting up sender domains with SMTPeter](sender-domains).
 
 
 ## What is SPF?
