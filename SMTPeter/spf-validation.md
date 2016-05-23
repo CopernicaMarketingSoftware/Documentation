@@ -1,8 +1,8 @@
 # SPF email validation - a brief introduction
 
 Ever since email became commonplace for everyday communication, spammers and
-crooks have taken advantage of the medium to try to lure people into buying
-certain pills or to kindly ask if they can stash millions on behalve of a 
+other crooks have taken advantage of the medium to try to lure people into buying
+certain pills or to kindly ask if they can help stash millions on behalve of a 
 deceased Nigerian princess. Especially with phishing emails, these culprits
 use forged sender addresses to make it look like a legit email, for instance
 from your credit card company. To prevent that these emails actually reach your inbox, 
