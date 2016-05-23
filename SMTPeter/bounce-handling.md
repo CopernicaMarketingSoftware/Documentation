@@ -1,7 +1,7 @@
 # Bounce handling
 
 When you send out email, you receive all sorts of bounce messages too.
-Amonst these messages are delivery status notifications for addresses that
+Amongst these messages are delivery status notifications for addresses that
 no longer exists, out-of-office replies from people who are on holiday,
 confirmation messages ("thank you for your email") and all sort of 
 other automaticly generated replies.
@@ -9,7 +9,6 @@ other automaticly generated replies.
 You can configure SMTPeter to take over the handling of these bounces, so
 that you do not have to process these messages yourself. There are a couple
 of configuration options that you can use for this.
-
 
 ## The envelope address
 
@@ -51,7 +50,7 @@ As you see in the above example, submitting an empty envelope address
 ## Bounce tracking
 
 If you _do_ supply an envelope address, you apparently are interested
-in bounces. But even then you can instruct SMTPeter how to intercept 
+in getting bounce information. But even then you can instruct SMTPeter how to intercept 
 and handle them.
 
 When you submit email through the REST API, you can add a "trackbounces"
