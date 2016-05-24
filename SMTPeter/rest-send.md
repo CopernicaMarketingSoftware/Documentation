@@ -88,7 +88,36 @@ of email addresses:
 Only pure email addresses are supported. It is not permitted to use display 
 names or to put the addresses inside angle brackets.
 
+## Add data to recipient or recipients
 
+You can add personal data to the recipient or recipients. This data can be
+used later to personalize the mail. If you have one recipient, you can add the
+personal data with property "data".
+
+```json
+{
+    "recipient": "john@doe.com",
+    "data"     : {
+        "firstname"  : "John",
+        "familyname" : "Doe"
+    }
+}
+```
+If you have multiple recipients, the data can be passed as follows:
+```json
+{   
+    "recipients" : [
+        "jane@doe.com": {
+            "firsname": "Jane",
+            "familyname": "Doe"
+        },
+        "john@doe.com": {
+            "firstname": "John",
+            "familyname": "Doe"
+        }
+    ]
+}
+```
 
 ## Special features
 
