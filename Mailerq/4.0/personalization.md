@@ -11,6 +11,7 @@ property.
     "recipient": "info@example.com",
     "mime": "....",
     "data": {
+        "ourname": "The MailerQ test team",
         "name": "John Doe",
         "age": 33,
         "job": "programmer",
@@ -26,8 +27,8 @@ subject line, and inside the text and HTML versions of your email these
 variables.
 
 ````mime
-From: Email Tester <info@example.org>
-To: John Doe <john@example.org>
+From: {$ourname} <info@example.org>
+To: {$name} <john@example.org>
 Subject: Hello {$name}!
 Content-Type: text/plain
 
@@ -37,11 +38,13 @@ Your age is {$age}, and your job is {$job}.
 
 Cheers,
 
-The MailerQ test team
+{$ourname}
 ````
 
 If you had used the above MIME as input, MailerQ would replace the variables
-in the subject line and the text and HTML versions.
+in the subject line and the text and HTML versions. For ease of use the 
+"envelope" and "recipient" are already extracted from the mail for you.
+You can use these without specifying a data property.
 
 
 ## Simple programming
