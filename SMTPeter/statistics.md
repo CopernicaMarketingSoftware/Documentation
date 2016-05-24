@@ -62,6 +62,21 @@ extracts relevant data from it, and puts this data on the dashboard.
 When you open the dashboard, you get direct insight into the best 
 performing links.
 
+An overview of all types of log files that we have is given in the table
+below. You can visit the individual log file page to see what content they
+hold.
+
+| Log file                                              | Description                                           |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| [attempts log file](log-attempts "attempts log file") | information about all messages sent through SMTPeter  |
+| [bounces log file](log-bounces "bounces log file")    | information about messages that bounced               |
+| [clicks log file](log-clicks "clicks log file")       | information about the clicks generated                |
+| [deliveries log file](log-deliveries)                 | information about the messages delivered              |
+| [dmarc log file](log-dmarc)                           | information about received dmarc reports              |
+| [failures log file](log-failures)                     | information about failed deliveries                   |
+| [opens log file](log-opens "opens log file")          | information about when messages are opened            |
+| [responses log file](log-responses)                   | information about response mails received by SMTPeter |
+
 
 ## Click tracking domain
 

@@ -58,16 +58,16 @@ but in an older one. Keep this in mind if you search through the logs.
 The "PREFIX" tells you what sort of events get logged. The following 
 prefixes exist:
 
-| Prefix                                                         | Description
-| -------------------------------------------------------------- | ----------------------------------------------------- |
-| [attempts](log-attempts "attempts log file")                   | information about all messages sent through SMTPeter  |
-| [bounces](log-bounces "bounces log file")                      | information about messages that bounced               |
-| [clicks](log-clicks "clicks log file")                         | information about the clicks generated                |
-| [deliveries](log-deliveries)                                   | information about the messages delivered              |
-| [dmarc](log-dmarc)                                             | information about received dmarc reports              |
-| [failures](log-failures)                                       | information about failed deliveries                   |
-| [opens](log-opens "opens log file")                            | information about when messages are opened            |
-| [responses](log-responses)                                     | information about response mails received by SMTPeter |
+| Prefix                                                | Description                                           |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| [attempts log file](log-attempts "attempts log file") | information about all messages sent through SMTPeter  |
+| [bounces log file](log-bounces "bounces log file")    | information about messages that bounced               |
+| [clicks log file](log-clicks "clicks log file")       | information about the clicks generated                |
+| [deliveries log file](log-deliveries)                 | information about the messages delivered              |
+| [dmarc log file](log-dmarc)                           | information about received dmarc reports              |
+| [failures log file](log-failures)                     | information about failed deliveries                   |
+| [opens log file](log-opens "opens log file")          | information about when messages are opened            |
+| [responses log file](log-responses)                   | information about response mails received by SMTPeter |
 
 
 ## Downloading files
