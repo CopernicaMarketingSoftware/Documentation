@@ -8,11 +8,14 @@ files are accessible through the REST API with the following methods:
 (1) https://www.smtpeter.com/v1/logfiles
 (2) https://www.smtpeter.com/v1/logfiles/DATE
 (3) https://www.smtpeter.com/v1/logfiles/FILENAME
+(4) https://www.smtpeter.com/v1/logfiles/FILENAME/header
+(5) https://www.smtpeter.com/v1/logfiles/FILENAME/json
+(6) https://www.smtpeter.com/v1/logfiles/FILENAME/xml
 ```
 
 The above methods can be used to (1) see for which dates log files are 
 available, to (2) see the log files kept for one specific date, and to 
-(3) download a single log file.
+(3-6) download a single log file.
 
 
 ## Available dates
@@ -69,16 +72,63 @@ prefixes exist:
 
 ## Downloading files
 
-To download a log file, append the name of a log file to the REST API
-url. You should use a HTTP GET call to get the log file
+Log files can be downloaded in CSV, JSON, and XML format, so you can use
+the tools you are accustomed to, to process the log files. 
+To download a log file in the CSV format you, append the name of a log
+file to the REST API url. You should use a HTTP GET call to get the log file
 
 ````text
 https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log
 ````
 
-This returns a CSV file. Some fields in the returned CSV file contain
-newlines, so a script that processes the CSV file needs to be a little
-smarter than just look for the next newlines to find the next record.
-To get more information about the content of the CSV files you can click
-the links in the table above.
+This returns a CSV file without any variable names. If you want to have
+variable names on the first line of your CSV file, you append header to the
+call.
 
+````text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/header
+````
+The exact names are given in the articles on the specific logfile (see the
+table above). Note that Some fields in the returned CSV file contain
+newlines, if this is a setting that your CSV processing tool has.
+
+To download the file in JSON format you add "/json" to the filename you
+want to download.
+
+````text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/json
+````
+You JSON that you receive is an array containing JSON objects that have
+as properties the names of the variables. These names are given in the
+articles on the specific log file (see the table above).
+
+Finally if you want to download the files in XML format you add "/xml" to
+the file name you want to download.
+
+```text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/xml
+```
+
+The format of the xml file is as follows
+```xml
+<records>
+  <record>
+    <NAME1>
+      value1
+    </NAME1>
+    <NAME2>
+      value2
+    </NAME2>
+  </record>
+  <record>
+    <NAME1>
+      value1
+    </NAME1>
+    <NAME2>
+      value2
+    </NAME2>
+  </record>
+</records>
+```
+The NAMEs can be found in the articles on the specific log file articles
+(see table above).
