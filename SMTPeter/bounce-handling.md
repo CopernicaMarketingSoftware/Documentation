@@ -85,7 +85,7 @@ with these credentials will then have this feature turned on.
 
 A special type of bounce messages are Delivery Status Notifications,
 (in short: DSN's). Unlike many out-of-office replies and other type of
-bounces (that are difficult to recognize for computers), DSN's are 
+bounces that are difficult to recognize for computers, DSN's are 
 standardized automatically generated notifications that can be processed 
 by mail servers. SMTPeter recognizes these type of bounces too and logs 
 the reported errors. Because SMTPeter already recognizes such messages, 
