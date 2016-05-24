@@ -14,19 +14,19 @@ of configuration options that you can use for this.
 
 When you submit email - either via the [SMTP API](smtp-api) or the 
 [REST API](rest-api) - you optionally supply an "envelope" address. This
-is the address to which all bounce messages are going to be delivered. Note
-that this envelope address is not the same as the "from" address! The 
+is the address to which all bounce messages are going to be delivered. 
+This envelope address is not the same as the "from" address. The 
 from address is the visible sender address of the user, that is used 
 when someone hits the reply button. The "envelope" address on the other
 hand, is normally not visible, and is used by mail servers for bounces 
 and other types of _automated_ replies.
 
 If you're not interested in bounce messages and other automatic replies, 
-life is easy: just don't supply an envelope address when you submit email
-to SMTPeter. If you send your messages without an envelope address, there 
-is no way how bounce messages could ever end up back in your mailbox. 
-Manual replies (when someone actively presses the reply button) are of 
-course still possible, because your mail will still have a valid "from" address.
+life is easy: just don't supply an envelope address. If you send your 
+messages without an envelope address, there is no way how bounce messages 
+could ever end up back in your mailbox. Manual replies (when someone actively 
+presses the reply button) are of course still possible, because your mail 
+will still have a valid "from" address.
 
 To send mail without an envelope address with the REST API is straight 
 forward: just don't add the "envelope" parameter to the POST data. With 
@@ -44,7 +44,7 @@ DATA
 ````
 
 As you see in the above example, submitting an empty envelope address 
-("MAIL FROM:<>") is valid.
+("MAIL FROM: with no address") is valid.
 
 
 ## Bounce tracking
@@ -85,7 +85,7 @@ with these credentials will then have this feature turned on.
 
 A special type of bounce messages are Delivery Status Notifications,
 (in short: DSN's). Unlike many out-of-office replies and other type of
-bounces (that are difficult to recognize for computers), DNS's are 
+bounces (that are difficult to recognize for computers), DSN's are 
 standardized automatically generated notifications that can be processed 
 by mail servers. SMTPeter recognizes these type of bounces too and logs 
 the reported errors. Because SMTPeter already recognizes such messages, 
