@@ -2,10 +2,11 @@
 
 Log files with the prefix "failures" hold information about the messages
 for which delivery failed. You can download the content of these files
-in CSV format using the [REST logfiles API](rest-logfiles). These log files
-contain the following data in the respective order:
+in CSV, JSON, and XML format using the [REST logfiles API](rest-logfiles)
+or the dashboard. These log files contain the following data in the respective
+order:
 
-| Data        | Description                                                                             |
+| Name        | Description                                                                             |
 | ----------- | --------------------------------------------------------------------------------------- |
 | id          | The unique id of the message for which delivery failed                                  |
 | time        | The time when we received the failed delivery notification (YY-MM-DD hh:mm:ss formatted)|
