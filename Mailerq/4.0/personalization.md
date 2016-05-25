@@ -4,7 +4,7 @@ MailerQ can personalize email messages on the fly. If you add an extra
 "data" property to the input JSON, MailerQ treats the subject line
 and the text and HTML versions of your mime messages as templates, and
 replaces all variables in them with the values from the JSON "data" 
-property.
+property. You can use these values in the "from" and "to" address too.
 
 ````json
 {
@@ -22,12 +22,12 @@ property.
 }
 ````
 
-If you use the above JSON data for your mail, you can use inside the
-subject line, and inside the text and HTML versions of your email these
-variables.
+If you use the above JSON data for your mail, you can use inside the "from"
+and "to" address, the subject line, and inside the text and HTML versions
+of your email these variables.
 
 ````mime
-From: {$ourname} <info@example.org>
+From: {$ourname} <{$recipient}>
 To: {$name} <john@example.org>
 Subject: Hello {$name}!
 Content-Type: text/plain
@@ -42,9 +42,10 @@ Cheers,
 ````
 
 If you had used the above MIME as input, MailerQ would replace the variables
-in the subject line and the text and HTML versions. For ease of use the 
-"envelope" and "recipient" are already extracted from the mail for you.
-You can use these without specifying a data property.
+in the "from", and "to" address, the subject line and the text and HTML
+versions. For ease of use the "envelope" and "recipient" are already
+extracted from the mail for you. You can use these without specifying them
+as a data property.
 
 
 ## Simple programming
