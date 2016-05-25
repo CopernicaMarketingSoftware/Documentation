@@ -8,7 +8,7 @@ property. You can use these values in the "from" and "to" address too.
 
 ````json
 {
-    "recipient": "info@example.com",
+    "recipient": "john@example.com",
     "mime": "....",
     "data": {
         "ourname": "The MailerQ test team",
@@ -27,8 +27,8 @@ and "to" address, the subject line, and inside the text and HTML versions
 of your email these variables.
 
 ````mime
-From: {$ourname} <{$recipient}>
-To: {$name} <john@example.org>
+From: {$ourname} <info@example.org>
+To: {$name} <{$recipient}>
 Subject: Hello {$name}!
 Content-Type: text/plain
 
