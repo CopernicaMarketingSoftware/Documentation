@@ -21,13 +21,16 @@ SMTPeter, and if you set up a feedback loop, are also delivered to you.
 SMTPeter sends out messages using the SMTP protocol. This protocol allows
 remote servers to either accept a message, or to refuse it. Refused mails
 are written to the failure logfile, and are sent to the failure feedback
-loops. However, even when a message is initially accepted (and thus not 
+loops (see diagram 1). However, even when a message is initially accepted (and thus not 
 considered a failure), it still is possible for the other server
 to send back a bounce email later on in which we're told that the message
 is rejected after all. These bounce messages are Delivery Status Notifications
 and have a special format. SMTPeter recognizes these bounces, and adds
 these errors to the log file too, and calls your 
-[failure feedback loop](feedback-failures).
+[failure feedback loop](feedback-failures) (see diagram 2).
+
+![Diagram 1](Images/smtpeter-diagram-send-email.svg "Sending email")
+![Diagram 2](Images/smtpeter-diagram-bounce.svg "Bounces")
 
 However, besides these standardized Delivery Status Notifications, there 
 are many more messages that are sent back to the envelope address. These 
