@@ -582,9 +582,9 @@
 		</g>
 	</g>
 </g>
-<rect x="376.3" y="881.7" style="fill:none;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
-<rect x="376.3" y="980.4" style="fill:none;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
-<rect x="376.3" y="931.3" style="fill:none;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
+<rect x="376.3" y="881.7" style="fill:#ffffff;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
+<rect x="376.3" y="980.4" style="fill:#ffffff;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
+<rect x="376.3" y="931.3" style="fill:#ffffff;stroke:#4F5858;stroke-width:0.9681;stroke-linejoin:round;stroke-miterlimit:10;" width="266.9" height="43.1"/>
 <text transform="matrix(1 0 0 1 434.2798 908.5582)" style="fill:#4F5858; font-family:'Lato'; font-size:16px;">Logged in failure log files</text>
 <text transform="matrix(1 0 0 1 434.7989 951.0978)" style="fill:#4F5858; font-family:'Lato'; font-size:16px;">Trigger failure feedback loop</text>
 <text transform="matrix(1 0 0 1 434.7989 967.8978)" style="fill:#4F5858; font-family:'Lato'; font-size:14px;">(if it is configured)</text>
