@@ -1,36 +1,24 @@
 # Sender domains
 
-The sender domain is the domain that is visible to the receiver as the sender 
-of the message. Although emails are relayed through SMTPeter, receiving mail clients
-and your subscibers will still see that the message is coming from you. 
+SMTPeter uses the concept of "Sender Domains" to simplify email. This allows 
+you to send your email through our servers without having to worry about 
+complicated things like SPF, DKIM and DMARC. You focus on your business, 
+while we take care of your messages.
 
-Also, by setting up SMTPeter with your own sender domain or domains, you 
-can send your emails through our servers, without having to worry 
-about complicated things like SPF, DKIM and DMARC. You focus 
-on your business, while we take care of your messages.
-
-SMTPeter cannot just send emails on behalve of your domain. It needs your
-permission first, so that receiving email clients know that the mails 
-are legit and actually sent by you. You give permission to SMTPeter 
-by adding specific information to the DNS of your sender domain.
-
-By following a small wizard, we will provide you with the exact information.
-All you have to do is copy and paste this into your domain DNS, and you're
-good to go. 
-
-To start setting up your sender domain(s), go to 
-[sender domains](//smtpeter.com/app/#/admin/configuration/senderdomains) 
-on your SMTPeter dashboard. There you'll find a wizard that will guide you
-through the process. 
+But what exactly do we mean with a sender domain? It works pretty neat: 
+you open the SMTPeter dashboard to specify from which domains you intend 
+to send email, and we tell you how you should configure your DNS. The
+"sender domain" is the domain name that you are going to use for your
+mails.
 
 For example, if you want to send out emails using addresses that end with 
-"@yourdomain.com" or with "@yourotherdomain.org", you simply use the 
-dashboard to set up two sender domains: "yourdomain.com" and 
-"yourotherdomain.org". After you've set up these sender domains, SMTPeter 
-gives you a list of recommended DNS records. You copy these records 
-to your DNS server (or give them to your DNS provider) and that's basically 
-all there is to it: after you've followed our recommendations you can use 
-SMTPeter to send email.
+"@yourdomain.com" or with "@yourotherdomain.org", you simply use the dashboard 
+to set up two sender domains: "yourdomain.com" and "yourotherdomain.org". After 
+you've set up these sender domains, SMTPeter gives you a list of recommended 
+DNS records. You copy these records to your DNS server (or give them to your 
+DNS provider) and that's basically all there is to it: after you've followed 
+our recommendations you can use SMTPeter to send email.
+
 
 ## A little more details
 
