@@ -29,8 +29,8 @@ and have a special format. SMTPeter recognizes these bounces, and adds
 these errors to the log file too, and calls your 
 [failure feedback loop](feedback-failures) (see diagram 2).
 
-![Diagram 1](Images/smtpeter-diagram-send-email.svg "Sending email")
-![Diagram 2](Images/smtpeter-diagram-bounce.svg "Bounces")
+[Diagram 1](Images/smtpeter-diagram-send-email.svg "Sending email")
+[Diagram 2](Images/smtpeter-diagram-bounce.svg "Bounces")
 
 However, besides these standardized Delivery Status Notifications, there 
 are many more messages that are sent back to the envelope address. These 
