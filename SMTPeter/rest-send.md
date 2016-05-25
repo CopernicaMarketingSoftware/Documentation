@@ -91,8 +91,8 @@ names or to put the addresses inside angle brackets.
 ## Add data to recipient or recipients
 
 You can add personal data to the recipient or recipients. This data can be
-used later to personalize the mail. If you have one recipient, you can add the
-personal data with property "data".
+used later to [personalize the mail](personalization). If you have one
+recipient, you can add the personal data with property "data".
 
 ```json
 {
