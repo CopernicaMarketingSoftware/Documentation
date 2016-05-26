@@ -37,3 +37,8 @@ Coming soon
 *   [Column behavior on mobile devices](../tips-and-tricks/column-behavior)
 
 ***
+
+## Personalization
+*   [Personalize your mailings](../tips-and-tricks/personalization)
+
+***

@@ -133,3 +133,35 @@ property is the recipient of the message. The JSON looks like:
 }
 ```
 
+## Personalizing emails
+
+It is possible to add data to your JSON that later on is used to [personalize
+the your email](../tips-and-tricks/personalization). If you send a JSON with only one recipient, you can add
+a property "data" to your JSON holding a JSON object:
+
+```json
+{
+    "data" :{
+        "firstname": "John",
+        "lastname": "Doe"
+    }
+}
+```
+
+If you send a mail with multiple recipients, the data can be passed in
+the recipients property as follows:
+
+```json
+{
+    "recipients" : [
+        "jane@doe.com": {
+            "firsname": "Jane",
+            "familyname": "Doe"
+        },
+        "john@doe.com": {
+            "firstname": "John",
+            "familyname": "Doe"
+        }
+    ]
+}
+```
