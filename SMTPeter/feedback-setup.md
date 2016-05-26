@@ -4,14 +4,14 @@ Feedback loops can be set up via the SMTPeter dashboard. The interface
 is very straight forward: you enter a feedback URL (for example:
 "https://www.yourwebsite.com/path/to/your/script.php") and the type
 of feedback loop that you want to set up (clicks, bounces, and so on). 
-That's all that it takes.
+That's all it takes.
 
 
 ## URL validation
 
 Before SMTPeter starts making calls to your URL, the web address first has
-to be validated. We do this to prevent that users accidentally instruct
-us to send confidential information to a wrong server. In the validation
+to be validated. SMTPeter does this to prevent that users accidentally instruct
+us to send confidential information to a wrong server. During the validation
 procedure you are asked to copy a small text file to your webserver, so
 that we can see that the server really belongs to you.
 
@@ -25,7 +25,7 @@ to your webserver so that it becomes accessible via either
 
 You can remove the text file from your server after the address has been 
 validated.
- 
+
 
 ## Testing the feedback loop
 
