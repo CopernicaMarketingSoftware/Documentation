@@ -136,7 +136,7 @@ property is the recipient of the message. The JSON looks like:
 ## Personalizing emails
 
 It is possible to add data to your JSON that later on is used to [personalize
-the your email](../tips-and-tricks/personalization). If you send a JSON with only one recipient, you can add
+your email](../tips-and-tricks/personalization). If you send a JSON with only one recipient, you can add
 a property "data" to your JSON holding a JSON object:
 
 ```json
