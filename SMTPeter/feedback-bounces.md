@@ -77,7 +77,7 @@ variables are submitted:
         <td>"RCPT TO" address that was used for delivering the incoming bounce</td>
     </tr>
     <tr>
-        <td>data</td>
+        <td>mime</td>
         <td>The MIME data that was sent during, this is the actual received bounce message</td>
     </tr>
 </table>
