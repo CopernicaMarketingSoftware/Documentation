@@ -54,8 +54,8 @@ public:
     /**
      *  C++ constructor and C++ destructpr
      */
-    MyClass() {}
-    virtual ~MyClass() {}
+    MyClass() = default;
+    virtual ~MyClass() = default;
 
     /**
      *  Cast to a string
@@ -178,7 +178,7 @@ public:
     /**
      *  C++ destructor
      */
-    virtual ~MyClass() {}
+    virtual ~MyClass() = default;
 
     /**
      *  Cast the object to a string

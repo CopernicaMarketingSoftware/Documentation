@@ -582,8 +582,8 @@ public:
     /**
      *  C++ constructor and destructor
      */
-    Counter() {}
-    virtual ~Counter() {}
+    Counter() = default;
+    virtual ~Counter() = default;
 
     /**
      *  Update methods to increment or decrement the counter
@@ -615,7 +615,7 @@ public:
      */
     virtual void unserialize(const char *buffer, size_t size) override
     {
-        _value = ::atoi(buffer);
+        _value = std::atoi(buffer);
     }
 };
 
@@ -635,9 +635,9 @@ extern "C" {
 
         // description of the class so that PHP knows which methods are accessible
         Php::Class<Counter> counter("Counter");
-        counter.method("increment", &Counter::increment);
-        counter.method("decrement", &Counter::decrement);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::increment>("increment");
+        counter.method<&Counter::decrement>("decrement");
+        counter.method<&Counter::value>("value");
 
         // add the class to the extension
         myExtension.add(std::move(counter));

@@ -80,12 +80,12 @@ public:
     /**
      *  c++ constructor
      */
-    Counter() {}
+    Counter() = default;
     
     /**
      *  c++ destructor
      */
-    virtual ~Counter() {}
+    virtual ~Counter() = default;
     
     /**
      *  php "constructor"
@@ -94,7 +94,7 @@ public:
     void __construct(Php::Parameters &params)
     {
         // copy first parameter (if available)
-        if (params.size() > 0) _value = params[0];
+        if (!params.empty()) _value = params[0];
     }
 
     /**
@@ -119,10 +119,10 @@ extern "C" {
         
         // description of the class so that PHP knows which methods are accessible
         Php::Class<Counter> counter("Counter");
-        counter.method("__construct", &Counter::__construct);
-        counter.method("increment", &Counter::increment);
-        counter.method("decrement", &Counter::decrement);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::__construct>("__construct");
+        counter.method<&Counter::increment>("increment");
+        counter.method<&Counter::decrement>("decrement");
+        counter.method<&Counter::value>("value");
         
         // add the class to the extension
         myExtension.add(std::move(counter));
@@ -189,7 +189,7 @@ extern "C" {
         // not be constructed from PHP scripts. Be aware that the C++ constructer 
         // does get called - it will be the call to the first __construct() 
         // function that will fail, and not the actual object construction.
-        counter.method("__construct", &Counter::__construct, Php::Private);
+        counter.method<&Counter::__construct>("__construct", Php::Private);
         
         ...
     }
@@ -223,7 +223,7 @@ public:
     /**
      *  c++ constructor
      */
-    Counter() {}
+    Counter() = default;
     
     /**
      *  Remove the copy constructor
@@ -239,7 +239,7 @@ public:
     /**
      *  c++ destructor
      */
-    virtual ~Counter() {}
+    virtual ~Counter() = default;
     
     /**
      *  php "constructor"
@@ -248,7 +248,7 @@ public:
     void __construct(Php::Parameters &params)
     {
         // copy first parameter (if available)
-        if (params.size() > 0) _value = params[0];
+        if (!params.empty()) _value = params[0];
     }
 
     /**
@@ -273,10 +273,10 @@ extern "C" {
         
         // description of the class so that PHP knows which methods are accessible
         Php::Class<Counter> counter("Counter");
-        counter.method("__construct", &Counter::__construct);
-        counter.method("increment", &Counter::increment);
-        counter.method("decrement", &Counter::decrement);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::__construct>("__construct");
+        counter.method<&Counter::increment>("increment");
+        counter.method<&Counter::decrement>("decrement");
+        counter.method<&Counter::value>("value");
         
         // alternative way to make an object unclonable
         counter.method("__clone", Php::Private);
@@ -349,7 +349,7 @@ public:
     Counter(int value) : _value(value) {}
     
     // c++ destructor
-    virtual ~Counter() {}
+    virtual ~Counter() = default;
     
     // php "constructor"
     void __construct() {}
@@ -372,8 +372,8 @@ extern "C" {
         // the __construct method is private because PHP scripts are not allowed
         // to create Counter instances
         Php::Class<Counter> counter("Counter");
-        counter.method("__construct", &Counter::__construct, Php::Private);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::__construct>("__construct", Php::Private);
+        counter.method<&Counter::value>("value");
         
         // add the class to the extension
         myExtension.add(std::move(counter));

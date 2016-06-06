@@ -36,7 +36,7 @@ void myFunction()
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
         static Php::Extension extension("my_extension", "1.0");
-        extension.add("myFunction", myFunction);
+        extension.add<myFunction>("myFunction");
         return extension;
     }
 }
@@ -69,7 +69,7 @@ Php::Value myFunction()
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
         static Php::Extension extension("my_extension", "1.0");
-        extension.add("myFunction", myFunction);
+        extension.add<myFunction>("myFunction");
         return extension;
     }
 }
@@ -122,13 +122,13 @@ Php::Value sum_everything(Php::Parameters &parameters)
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
         static Php::Extension extension("my_extension", "1.0");
-        extension.add("sum_everything", sum_everything);
+        extension.add<sum_everything>("sum_everything");
         return extension;
     }
 }
 ```
 It looks so simple, doesn't it? 
-The Php::Parameters class is in reality nothing less than a std::vector 
+The Php::Parameters class is in reality nothing less than an std::vector 
 filled with Php::Value objects - and you can thus iterate over it. 
 We use the new C++11 way of doing this, and we use the new-for-C++11 
 "auto" keyword to ask the compiler to find out what type of variables are 

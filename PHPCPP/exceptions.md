@@ -28,7 +28,7 @@ Php::Value myDiv(Php::Parameters &params)
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
         static Php::Extension extension("my_extension", "1.0");
-        extension.add("myDiv", myDiv, {
+        extension.add<myDiv>("myDiv", {
             Php::ByVal("a", Php::Type::Numeric, true),
             Php::ByVal("b", Php::Type::Numeric, true)
         });
@@ -98,7 +98,7 @@ Php::Value callMe(Php::Parameters &params)
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
         static Php::Extension extension("my_extension", "1.0");
-        extension.add("callMe", callMe, {
+        extension.add<callMe>("callMe", {
             Php::ByVal("callback", Php::Type::Callable, true)
         });
         return extension;
