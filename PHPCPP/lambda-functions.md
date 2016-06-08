@@ -85,7 +85,7 @@ extern "C" {
         static Php::Extension extension("my_extension", "1.0");
         
         // add the example function so that it can be called from PHP scripts
-        extension.add("other_function", other_function);
+        extension.add<other_function>("other_function");
         
         // return the extension details
         return extension;
@@ -134,7 +134,7 @@ void run_test()
     Php::Function multiply_by_two([](Php::Parameters &params) -> Php::Value {
         
         // make sure the function was really called with at least one parameter
-        if (params.size() == 0) return nullptr;
+        if (params.empty()) return nullptr;
         
         // one parameter is passed to the function
         Php::Value param = params[0];
@@ -184,7 +184,7 @@ extern "C" {
         static Php::Extension extension("my_extension", "1.0");
         
         // add the example function so that it can be called from PHP scripts
-        extension.add("run_test", run_test);
+        extension.add<run_test>("run_test");
         
         // return the extension details
         return extension;

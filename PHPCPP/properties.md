@@ -71,12 +71,12 @@ public:
     /**
      *  c++ constructor
      */
-    Example() {}
+    Example() = default;
 
     /**
      *  c++ destructor
      */
-    virtual ~Example() {}
+    virtual ~Example() = default;
 
     /**
      *  php "constructor"
@@ -121,8 +121,8 @@ extern "C" {
         Php::Class<Example> example("Example");
 
         // register the methods
-        example.method("__construct", &Example::__construct);
-        example.method("method", &Example::method);
+        example.method<&Example::__construct>("__construct");
+        example.method<&Example::method>("method");
 
         // the Example class has one public property
         example.property("property1", "xyz", Php::Public);
@@ -153,7 +153,7 @@ or Php::Protected access modifiers.
 ```cpp
     #include <phpcpp.h>
 
-    // @todo you class definition
+    // @todo your class definition
 
     /**
      *  Switch to C context so that the get_module() function can be
@@ -223,12 +223,12 @@ public:
     /**
      *  c++ constructor
      */
-    Example() {}
+    Example() = default;
 
     /**
      *  c++ destructor
      */
-    virtual ~Example() {}
+    virtual ~Example() = default;
 
     /**
      *  Method to get access to the property

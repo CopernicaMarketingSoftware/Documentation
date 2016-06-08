@@ -15,7 +15,7 @@ In case you want your extension to *define* an interface, so that the
 interface can be implemented from PHP user space scripts, you can do that
 almost in a similar way to how you would define a class. The only 
 difference is that you do not use `Php::Class<YourClass>`, but a 
-`Php::Interface instance`.
+`Php::Interface` instance.
 
 
 ```cpp
@@ -103,7 +103,7 @@ extern "C" {
         myClass.implements(myInterface);
         
         // the interface requires that the myMethod method is implemented
-        myClass.method("myMethod", &MyClass::myMethod, {
+        myClass.method<&MyClass::myMethod>("myMethod", {
             Php::ByVal("value", Php::Type::String, true) 
         });
         
