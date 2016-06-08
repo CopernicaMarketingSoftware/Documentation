@@ -26,10 +26,10 @@ The following table lists all supported modifiers:
 
 | Modifier                                                          | description |
 | ----------------------------------------------------------------- | ------------ |
-| [base64_encode](modifiers#base64encode)                           | base64 encoder                                              |
-| [base64_decode](modifiers#base64decode)                           | base64 decoder                                              | 
-| [cat](modifiers#cat):"string"                                     | concatenates a string to variable                           | 
-| [count](modifiers#count)                                          | count number of elements in variable                        | 
+| [base64_encode](personalization/modifiers#base64encode)                           | base64 encoder                                              |
+| [base64_decode](personalization/modifiers#base64decode)                           | base64 decoder                                              | 
+| [cat](personalization/modifiers#cat):"string"                                     | concatenates a string to variable                           | 
+| [count](personalization/modifiers#count)                                          | count number of elements in variable                        | 
 | [count_characters](modifiers#count_characters)                    | count number of characters in a string                      | 
 | [count_paragraphs](modifiers#count_paragraphs)                    | count number of paragraphs in a text (by counting newlines) | 
 | [count_words](modifiers#count_words)                              | count number of words in a text                             | 
