@@ -10,9 +10,9 @@ The rules for a variable are:
 * Starts with a dollar sign
 * surrounded by curly braces
 * may contain alphanumeric characters. May not start with a number.
-* may contain dash (-) and underscore (_) symbols. May not start with
-(* dash or underscore. variables are case sensitive, meaning that
-{$NAME} is different from {$name}
+* may contain dash (-) and underscore (_) symbols. 
+* May not start with dash or underscore. 
+* variables are case sensitive, meaning that {$NAME} is different from {$name}
 
 The next table gives all variable notations:
 
@@ -30,29 +30,45 @@ are:
 | {$foo.bar.baz}    | Display the value behind the key "baz" inside the array "bar" which is a part of $foo. |
 | {$foo[4].baz}     | Display the value behind the key "baz" inside the 5th element of $foo.                 |
 | {$foo.bar.baz[4]} | Display the 5th element of baz, which is in bar which is in $foo.                      |
+<!---
 | {"foo"}           | Static values are allowed.                                                             |
+@todo they don't work on modifiers.
+--->
+
+The last example in the table is not a standard variable as discussed above.
+You basically create a variable on the fly that holds the value you specify,
+in this case the string "foo".
+
+
+## Modifying your variables
+
+When you have variables you can alter their content by applying modifiers
+on them. E.g. you can capitalize the content, calculate the length of a
+string, or calculating a hash sum. A list of all modifiers and an explanation
+about their usage can be found [here](modifiers).
 
 
 ## Simple calculations
 
-When you have a variable, or multiple variables, containing a numerical
-value you can do some simple math. Just like with normal variables, all
-math should be done within the {} brackets. So you can do for example the
-following: 
+Variables containing a numerical values can be used to do some simple math.
+Just like with normal variables, all math should be done within the {}
+brackets. So you can do for example the following: 
 ```text
 {$var + 10}
 ```
-Besides the surrounding of curly braces, all standard math rules apply. 
-Besides the standard math operators (+, -, *, /) the modulo operator (%)
-is available.
-<!--- @todo, do we need to describe this?--->
+Besides the surrounding of curly braces, all standard math rules apply.
+The standard math operators (+, -, *, /)  and the modulo operator (%)
+are available. Note that if a value does not exists or does not contain a
+numeric value, it will get the value of zero. 
+
 
 ## Conditional statements
 
 One of the key concepts of any programming language are conditional statements.
 A conditional block always starts with the {if} keyword (always with the
 curly braces) followed by the statement that is tested. A conditional
-block always ends with the if closing tag {/if}.
+block always ends with the if closing tag {/if}. A conditional block is only
+executed if the statement in the {if} part is true.
 
 In the next example, the text 'Hello John' is only displayed when the value
 of the variable $name is equal to 'john'. 
@@ -62,7 +78,7 @@ of the variable $name is equal to 'john'.
 ```
 
 But what if there's also a Sarah in your mailing list. You wouldn't want
-to display nothing to her, wouldn't you? That's where the {elseif} becomes
+to display nothing to her, would you? That's where the {elseif} becomes
 the protagonist.
 
 ```text
@@ -102,12 +118,12 @@ subscriber', otherwhise, show Dear John (or Sarah, or what is in the {$name}
 variable).
 
 In the preceeding example, the operator == was used. This operator means 'is equal to'.
-It will evaluate to true if the left hand side of the "==" is exactly equal
-to the right hand side. Operator == is just one of the many operators that
+It will evaluate to true if the left hand side of the `==` is exactly equal
+to the right hand side. Operator `==` is just one of the many operators that
 you can use to test the statements.
 Here's the complete list:
 
-| Syntax example | Meaning |
+| Syntax example | Meaning                                       |
 | -------------- | --------------------------------------------- |
 | $a == $b       | $a and $b are equal                           |
 | $a != $b       | $a and $b are not equal                       |
@@ -115,30 +131,54 @@ Here's the complete list:
 | $a >= $b       | $a is greather than or equal to $b            |
 | $a < $b        | $a is less than $b                            |
 | $a <= $b       | $a is less than or equal to $b                |
-| not $a         | Negation, will invert the boolean value of $a |
 | $a AND $b      | $a and $b are true                            |
 | $a OR $b       | $a or $b (or both) are true                   |
+| not $a         | Negation, will invert the boolean value of $a |
 
 
-With the first six operators (from "==" to "<=") you compare the the values
+With the first six operators ("==" to "<=") you compare the the values
 of variables $a and $b. If the comparison holds, a true will be returned.
-If the comparison does not hold, you will get a false. With the last three 
-operators ("not" to "OR") you can combine these.
+If the comparison does not hold, you will get a false. With the next two
+operators in the table above (`AND` and `OR`) you can combine statements.
 If you are writing conditional blocks, you will sometimes find yourself
 ending up with blocks that become too long or complex. To shorten long or
 more complex conditional blocks, you can put multiple statements in one
-single {if} block using the AND and/or OR operators:
+single {if} block using the AND and/or OR operators. The AND and/or OR
+operators combine the value of $a and $b into a true or a false. The
+following tables give the rules.
+
+The truth table for AND is:
+| $a    | $b    | result |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | false  |
+| false | true  | false  |
+| false | false | false  |
+
+The truth table for OR is:
+| $a    | $b    | result |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | true   |
+| false | true  | true   |
+| false | false | false  |
+
+E.g. you can use AND like:
 
 ```text
 {if $a >= $b AND $b <= $c}true{else}false{/if}
-Syntax example 	Meaning
-AND (&&) 	Both statements must be true
-OR (||) 	One of both statements must be true
 ```
 
 In the above snippet first $a >= $b will be tested. Only if this is true,
-$b <= $c will be tested. If this happens to be true as well, "true" will
-be printed, else, "false" will be printed.
+$b <= $c will be tested. If this happens to be true as well, `true` will
+be printed, else, `false` will be printed.
+
+Subsequently there is the `not` operator. This operator will invert the value
+that is given. So true becomes false and false becomes true. 
+Finally it is good to know that a variable itself will be converted to a
+boolean when used in an if statement. If the variable contains an empty string
+or the value 0, it will be evaluated as false. If it is not an empty string
+or not zero, it will be evaluated as true.
 
 
 ## Foreach
@@ -167,6 +207,7 @@ Note that if you want to display text in the foreach loop, the formatting
 of your foreach loop will affect the formatting of your output. If you
 want to display the players names without any space in between them,
 the above example becomes:
+
 ```text
     {foreach $player in $soccerTeam}{$player.name}{/foreach}
 ```
@@ -197,6 +238,7 @@ at all, this is done using the {foreachelse} statement.
 This foreachelse statement is only executed in case of no data. It is
 completely ignored otherwise.
 
+
 ## Assigning variables
 
 It is possible to assign values on runtime. You can for example use this
@@ -226,8 +268,11 @@ Which will eventually have the most expensive item in the $topitem variable.
 And the total price in $total. Variable modifiers
 
 
-## Using modifiers
+## Using curly braces in your text
 
-Besides control flow and assignment you can modify your variables using
-modifiers. A list of all modifiers and an explanation about their usage
-can be found [here](@todo).
+As you can see above the syntax heavily depends on the curly braces `{}`.
+Therefore, these braces cannot appear in the text without leading to a
+valid syntax. If you do need these braces in you text, you can use: `{ldelim}`
+to get a `{` and `{rdelim}` to get a `}`. If you have a large text with
+these bracelets you can enclose the text in `{literal}` and `{/literal}`.
+This text will then not be processed.
