@@ -273,3 +273,21 @@ the same time it makes things much slower. We therefore recommend leaving the
 "rabbitmq-persistent" option off (set to "false"). 
 
 
+## Multiple threads
+
+MailerQ opens a number of different connections to RabbitMQ, and each connection
+is running in its own thread. There is a seperate thread for consuming from the 
+inbox queue and a thread for publishing messages to the result queue and/or
+back to the outbox queue.
+
+You can specify in the config file that you want to start up multiple consumer
+threads in case this single consumer thread appears to be the bottleneck of
+the application.
+
+```
+rabbitmq-consumers:     1 (default: 1)
+```
+
+By adding the "rabbitmq-consumers" variable to the config file, you instruct
+MailerQ to start up more consumer threads.
+
