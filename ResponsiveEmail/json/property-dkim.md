@@ -18,18 +18,25 @@ keys, although it is allowed.
 | key       | _string_ | Base64 encoded private key                       |
 | algorithm | _string_ | The hashing algorithm to use, sha1 or sha256     |
 | headers   | _array_  | Custom headers to include in the signature       |
+| expire    | _string_ | Expiration timestamp for the signature           |
 
 For a valid signature, you need to specify a domain, selector and private key. 
 The hashing algorithm is optional. If it is not set, the "sha256" algorithm is used. 
 
-By default, all the regular MIME header fields are used to sign the email: "from", 
-"to", "message-id", "subject" et cetera. If you have custom fields that you want 
-to include in the signature too, you can add an extra "headers" property holding 
-an array of the headers that you also want to be signed.
-
 When a receiving party receives a signed email, it will use the domain and selector 
 to do a DNS lookup to retrieve the _public_ key. With this public key it can verify 
 whether the email was correctly signed.
+
+By default, all the regular MIME header fields are used to sign the email: "from", 
+"to", "message-id", "subject" et cetera. If you have custom fields that you want 
+to include in the signature too, you can add an extra "headers" property holding 
+an array of the headers that you also want to be signed. This is often used
+to sign the "feedback-id" header that required for Gmail feedback loops.
+
+A DKIM signature can have an expire time. By adding the "expire" property
+to your JSON, you can include this expiration time in the signature. The
+expire time is optional however.
+
 
 ## Example Code
 
@@ -44,7 +51,8 @@ whether the email was correctly signed.
         "domain": "example.com",
         "selector": "dkim1",
         "key": "MIIBOwIBAAJ....MbXHLl/QHFg==",
-        "headers": [ "feedback-id" ]
+        "headers": [ "feedback-id" ],
+        "expire": "2016-10-01 00:00:00"
     },
     "content": {
         "blocks": [ {
@@ -63,7 +71,8 @@ It is an advanced signature, because it will also sign the custom "feedback-id"
 header.
 
 If you want to add multiple signatures to an email, you can specify multiple 
-DKIM signatures:
+DKIM signatures. In the next example two signatures are going to be added
+to the mail, one with an expire time, and one without:
 
 ```json
 {
@@ -72,7 +81,8 @@ DKIM signatures:
     "dkim": [ {
         "domain": "example.com",
         "selector": "dkim1",
-        "key": "MIIBOwIBAAJ....MbXHLl/QHFg=="
+        "key": "MIIBOwIBAAJ....MbXHLl/QHFg==",
+        "expire": "2016-10-01 00:00:00"
     }, {
         "domain": "example.com",
         "selector": "dkim2",
