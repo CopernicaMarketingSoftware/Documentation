@@ -51,7 +51,7 @@ The following table lists all supported modifiers:
 | [substr](modifiers#substr):start position:length                  | return the substring from start position onward, optionally truncated after length characters | 
 | [tolower](modifiers#tolower)                                      | convert all characters to lower case                           | 
 | [toupper](modifiers#toupper)                                      | convert all characters to upper case                           | 
-| [trim](modifiers#trim):characters = " \t\n\r\0\x0B"               | trim the specified characters off both sides of the input      | 
+| [trim](modifiers)                                                 | trim the white space and endline characters off both sides of the input | 
 | [truncate](modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words | 
 | [ucfirst](modifiers#ucfirst)                                      | replace first character with an upper case character           | 
 | [urlencode](modifiers#urlencode)                                  | encode input for use in an url                                 | 
@@ -64,7 +64,7 @@ With this modifier you encode the data into base64. Note that this
 modifier does not have an effect on arrays.
 Usage:
 ```text
-The base64 encoding of {$name} is {$name|base64encode}.
+The base64 encoding of {$name} is {$name|base64_encode}.
 ```
 
 ## base64_decode
@@ -73,7 +73,7 @@ With this modifier you can decode base64 encoded information.
 Usage:
 
 ```text
-The decoded information is {$base64encoded|base64decode}
+The decoded information is {$base64encoded|base64_decode}
 ```
 
 ## cat
@@ -107,11 +107,11 @@ Usage:
 
 ## count_paragraphs
 
-With this modifier you can count the number of paragraphs in your text,
-defined by newlines. If this modifier is applied on an array a 0 is returned.
+With this modifier you can count the number of paragraphs in your text.
+If this modifier is applied on an array a 0 is returned.
 Usage:
 ```text
-The following text has {$text|count_paragraphs}
+The following text has {$text|count_paragraphs} paragraph.
 Text:
 {$text}
 ```
@@ -158,7 +158,7 @@ Usage:
 ```text
 {$text|escape:"html"}
 is equal to:
-{$text|escape}.
+{$text|escape}
 ```
 
 ## indent
@@ -192,7 +192,7 @@ This enables you to write plain text that will be truncated in html mode.
 On an array this value is ignored.
 Usage:
 ```text
-{$text|nlbr}
+{$text|nl2br}
 ```
 
 
@@ -201,7 +201,7 @@ Usage:
 With this modifier you can take a range form your input if your input is
 an array. The form is range:start:end, where start is the start position
 and end is the exclusive end position. If the variable is not an array, the
-modifier will be ignored.
+value will be ignored.
 Usage:
 ```text
 {$array|range:2:5}
@@ -210,11 +210,11 @@ Usage:
 ## regex_replace
 
 With this modifier you can replace parts of your text, base on a [regular expression](@todo),
-with other text. If the variable is an array this modifier will be ignored.
+with other text. If the variable is an array this value will be ignored.
 Usage
 ```text
 This will replace each number in the variable string with the string " a number "
-{$var|regex_replace:"\d":" a number "}
+{$text|regex_replace:"\d":" a number "}
 ```
 
 ## replace
@@ -291,8 +291,8 @@ modifier is ignored.
 Usage:
 ```text
 If the variable holds "Hello world!", this will print Hello, {$variable|strstr:" ":true}
-and this will print World!, {$variable|strstr:"W":false}, just like this
-{$variable|strstr:"W"}
+and this will print world!, {$variable|strstr:"w":false}, just like this
+{$variable|strstr:"w"}
 ```
 
 ## substr
@@ -324,17 +324,17 @@ With this modifier you can change all characters in your text to uppercase
 characters.
 Usage:
 ```text
-The next part looks like it is shouted {$text|touuper}
+The next part looks like it is shouted {$text|toupper}
 ```
 
 ## trim
 
-With this modifier you can trim certain trailing characters from your text.
-The syntax is trim:characters. The characters contain the characters that
-you want to trim. The default of the charcters is " \t\n\r\0\x0B".
+With this modifier you can trim trailing white space and new line characters
+from your text. The characters that are trimmed are: spaces, tabs, newlines,
+carriage returns, vertical tabs, and end of strings.
 Usage:
 ```text
-trim:characters = " \t\n\r\0\x0B"
+{$text}
 ```
 
 ## truncate
@@ -358,7 +358,7 @@ With this modifier you replace the first character of your text with an
 uppercase character.
 Usage:
 ```text
-{$name|upercase}
+{$name|ucfirst}
 ```
 
 ## urlencode
