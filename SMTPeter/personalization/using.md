@@ -43,7 +43,7 @@ Besides replacing text the you can even use simple programming statements:
 ````
 
 For an in-depth discussion about the syntax we refer to our 
-[programming page](@todo).
+[programming page](programming).
 
 
 <!--- @todo write that mail ends up in failure if mistakes are made with syntax --->

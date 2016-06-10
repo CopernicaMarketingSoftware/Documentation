@@ -20,7 +20,7 @@ be sure that a name starts with a capital and the rest of the name is in
 lower case. Doing this is easy. You use `{$name|tolower|ucfirst}`. The first
 modifier `tolower`, will make sure that the name is all in lower case. Then
 modifier `ucfirst` is applied, which will capitalize the first character.
-Note that if you call a modifier that does not exist, no effect takes place. 
+Note that if you call a modifier that does not exist, no effect takes place.
 
 The following table lists all supported modifiers:
 
