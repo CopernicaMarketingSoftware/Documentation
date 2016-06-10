@@ -10,6 +10,6 @@ number of children that one has. It is up to you.
 
 Curious? Read how you can:
 
-* [Add personal data to your mails](data)
-* [Completely program your template](programming)
-* [Using modifiers on your data](modifiers)
+* [Add personal data to your mails](personalization/data)
+* [Completely program your template](personalization/programming)
+* [Using modifiers on your data](personalization/modifiers)
