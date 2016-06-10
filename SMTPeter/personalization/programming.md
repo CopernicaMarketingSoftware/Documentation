@@ -1,4 +1,4 @@
-# Syntax
+# Programming
 
 This page gives a syntax overview for writing a template that can be used
 to personalize your mail. Note that although the syntax is quite easy, you
