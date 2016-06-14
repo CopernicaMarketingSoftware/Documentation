@@ -1,6 +1,6 @@
 # Using personal data in your mail
 
-You can easily use the personal date you have [added to your mail](@todo).
+You can easily use the personal date you have [added to your mail](data).
 The syntax for the personalization variables are loosely based on the 
 Smarty template engine that is used in many PHP projects. So, each variable
 you have added to the personal data can be accessed by its name prefixed
@@ -43,7 +43,4 @@ Besides replacing text the you can even use simple programming statements:
 ````
 
 For an in-depth discussion about the syntax we refer to our 
-[programming page](@todo).
-
-
-<!--- @todo write that mail ends up in failure if mistakes are made with syntax --->
+[programming page](programming).

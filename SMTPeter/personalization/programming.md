@@ -1,12 +1,18 @@
-# Syntax
+# Programming
 
-This page gives a syntax overview of the programming possibilities for
-personalizing your mail.
+This page gives a syntax overview for writing a template that can be used
+to personalize your mail. Note that although the syntax is quite easy, you
+can build complicated concepts, which brings the danger of bugs (heck, even
+simple stuff can have bugs). Therefore, you should always test if the personalization
+template is doing what you think it should do.
 
 
 ## Variables
 
-The rules for a variable are:
+Data that you have [passed](data) together with your message can be accessed
+as a variable in the template. You can access it like `{$variable}`
+
+Formally the rules for a variable are:
 * Starts with a dollar sign
 * surrounded by curly braces
 * may contain alphanumeric characters. May not start with a number.
@@ -33,33 +39,36 @@ are:
 <!---
 | {"foo"}           | Static values are allowed.                                                             |
 @todo they don't work on modifiers.
---->
 
 The last example in the table is not a standard variable as discussed above.
 You basically create a variable on the fly that holds the value you specify,
 in this case the string "foo".
+--->
+If a variable happens to be an (associative)array where the index are keys,
+you can still access elements in the array with an index number (starting
+from 0).
 
 
 ## Modifying your variables
 
-When you have variables you can alter their content by applying modifiers
-on them. E.g. you can capitalize the content, calculate the length of a
-string, or calculating a hash sum. A list of all modifiers and an explanation
-about their usage can be found [here](modifiers).
+You can alter the content of your variables by applying modifiers to them.
+E.g. you can capitalize the content, calculate the length of a string, or
+calculating a hash sum. A list of all modifiers and an explanation about
+their usage can be found [here](modifiers).
 
 
 ## Simple calculations
 
-Variables containing a numerical values can be used to do some simple math.
+Variables containing a numerical value can be used to do some simple math.
 Just like with normal variables, all math should be done within the {}
 brackets. So you can do for example the following: 
 ```text
 {$var + 10}
 ```
 Besides the surrounding of curly braces, all standard math rules apply.
-The standard math operators (+, -, *, /)  and the modulo operator (%)
+The standard math operators (`+`, `-`, `*`, `/`)  and the modulo operator (`%`)
 are available. Note that if a value does not exists or does not contain a
-numeric value, it will get the value of zero. 
+numeric value, it will behave as the value zero. 
 
 
 ## Conditional statements
@@ -148,6 +157,7 @@ operators combine the value of $a and $b into a true or a false. The
 following tables give the rules.
 
 The truth table for AND is:
+
 | $a    | $b    | result |
 | ----- | ----- | ------ |
 | true  | true  | true   |
@@ -156,6 +166,7 @@ The truth table for AND is:
 | false | false | false  |
 
 The truth table for OR is:
+
 | $a    | $b    | result |
 | ----- | ----- | ------ |
 | true  | true  | true   |
@@ -194,23 +205,15 @@ To get the members of the team, the foreach statement is used. Its syntax
 is fairly straight forward:
 
 ```text
-    {foreach $player in $soccerTeam}
-       {$player.name}
-    {/foreach}
+{foreach $player in $soccerTeam}
+    {$player.name}
+{/foreach}
 ```
 
 This will loop over the items (team members) in $soccerTeam and assign
 each player to the variable $player in each iteration. Inside this foreach
 block you can do whatever you want with the outputted information. You can
 for example generate a HTML list with soccer players from that team.
-Note that if you want to display text in the foreach loop, the formatting
-of your foreach loop will affect the formatting of your output. If you
-want to display the players names without any space in between them,
-the above example becomes:
-
-```text
-    {foreach $player in $soccerTeam}{$player.name}{/foreach}
-```
 
 It becomes a little bit more technical now...
 
@@ -276,3 +279,44 @@ valid syntax. If you do need these braces in you text, you can use: `{ldelim}`
 to get a `{` and `{rdelim}` to get a `}`. If you have a large text with
 these bracelets you can enclose the text in `{literal}` and `{/literal}`.
 This text will then not be processed.
+
+
+## Layout issues
+
+The code snippets above our formatted in a way to make them readable, we
+used new lines, indentation, etc. When you are generating text for the html
+part of your mail this is advisable since it is easier to capture mistakes. 
+However, if you are generating content for the text part of your mail,
+you should be aware that the formatting of your template code affects the
+format of your text.
+
+E.g. above we gave a snippet that prints out names of players in a soccer
+team
+```text
+
+If the soccerTeam array looks like: `["Ronaldo", "Messi", "Ibrahimovic"]`
+
+The output that we get in the text section will be:
+```text
+
+    Ronaldo
+
+    Messi
+
+    Ibrahimovic
+    
+```
+This is probably not what you had in mind while typing the foreach loop.
+But this is what you get since there is a new line before and after the
+variable and there are some spaces in front of it used as indentation.
+To get a list of the names without the extra whitespace you should write:
+```text
+{foreach $player in $soccerTeam}{$player}
+{/foreach}
+```
+This is less readable but gives what you want
+```text
+Ronaldo
+Messi
+Ibrahimovic
+```
