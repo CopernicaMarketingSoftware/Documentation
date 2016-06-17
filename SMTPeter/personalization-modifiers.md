@@ -26,36 +26,36 @@ The following table lists all supported modifiers:
 
 | Modifier                                                          | description                                                    |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- |
-| [base64_encode](modifiers#base64_encode)                          | base64 encoder                                                 |
-| [base64_decode](modifiers#base64_decode)                          | base64 decoder                                                 | 
-| [cat](modifiers#cat):"string"                                     | concatenates a string to variable                              | 
-| [count](modifiers#count)                                          | count number of elements in variable                           | 
-| [count_characters](modifiers#count_characters)                    | count number of characters in a string                         | 
-| [count_paragraphs](modifiers#count_paragraphs)                    | count number of paragraphs in a text (by counting newlines)    | 
-| [count_words](modifiers#count_words)                              | count number of words in a text                                | 
-| [default](modifiers#default):default value                        | use default value if variable is not set                       | 
-| [empty](modifiers#empty)                                          | check whether a variable is empty                              | 
-| [escape](modifiers#escape):"string"                               | escape html characters (or other chars) inside a string        | 
-| [indent](modifiers#indent):num = 1:char = " "                     | put num whitespaces in front of every line                     | 
-| [md5](modifiers#md5)                                              | perform md5 hashing                                            | 
-| [nl2br](modifiers#nl2br)                                          | replace newlines with html br tags                             | 
-| [range](modifiers#range):start = 0:end                            | truncate list to get the items between positions start and end | 
-| [regex_replace](modifiers#regex_replace):regex:replace_text       | replace substrings using regular expression                    | 
-| [replace](modifiers#replace):"string1":"string2"                  | replace occurrences of string1 with string2                    | 
-| [sha1](modifiers#sha1)                                            | perform sha1 hashing                                           | 
-| [sha256](modifiers#sha256)                                        | perform sha256 hashing                                         | 
-| [sha512](modifiers#sha512)                                        | sha512 hashing                                                 | 
-| [spacify](modifiers#spacify):separator = " "                      | place a separator between every input character                | 
-| [strlen](modifiers#strlen)                                        | count the characters in a string                               | 
-| [strstr](modifiers#strstr):"substring":before = false             | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. | 
-| [substr](modifiers#substr):start position:length                  | return the substring from start position onward, optionally truncated after length characters | 
-| [tolower](modifiers#tolower)                                      | convert all characters to lower case                           | 
-| [toupper](modifiers#toupper)                                      | convert all characters to upper case                           | 
-| [trim](modifiers)                                                 | trim the white space and endline characters off both sides of the input | 
-| [truncate](modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words | 
-| [ucfirst](modifiers#ucfirst)                                      | replace first character with an upper case character           | 
-| [urlencode](modifiers#urlencode)                                  | encode input for use in an url                                 | 
-| [urldecode](modifiers#urldecode)                                  | decode input for use in an url                                 | 
+| [base64_encode](personalization-modifiers#base64_encode)                          | base64 encoder                                                 |
+| [base64_decode](personalization-modifiers#base64_decode)                          | base64 decoder                                                 | 
+| [cat](personalization-modifiers#cat):"string"                                     | concatenates a string to variable                              | 
+| [count](personalization-modifiers#count)                                          | count number of elements in variable                           | 
+| [count_characters](personalization-modifiers#count_characters)                    | count number of characters in a string                         | 
+| [count_paragraphs](personalization-modifiers#count_paragraphs)                    | count number of paragraphs in a text (by counting newlines)    | 
+| [count_words](personalization-modifiers#count_words)                              | count number of words in a text                                | 
+| [default](personalization-modifiers#default):default value                        | use default value if variable is not set                       | 
+| [empty](personalization-modifiers#empty)                                          | check whether a variable is empty                              | 
+| [escape](personalization-modifiers#escape):"string"                               | escape html characters (or other chars) inside a string        | 
+| [indent](personalization-modifiers#indent):num = 1:char = " "                     | put num whitespaces in front of every line                     | 
+| [md5](personalization-modifiers#md5)                                              | perform md5 hashing                                            | 
+| [nl2br](personalization-modifiers#nl2br)                                          | replace newlines with html br tags                             | 
+| [range](personalization-modifiers#range):start = 0:end                            | truncate list to get the items between positions start and end | 
+| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text       | replace substrings using regular expression                    | 
+| [replace](personalization-modifiers#replace):"string1":"string2"                  | replace occurrences of string1 with string2                    | 
+| [sha1](personalization-modifiers#sha1)                                            | perform sha1 hashing                                           | 
+| [sha256](personalization-modifiers#sha256)                                        | perform sha256 hashing                                         | 
+| [sha512](personalization-modifiers#sha512)                                        | sha512 hashing                                                 | 
+| [spacify](personalization-modifiers#spacify):separator = " "                      | place a separator between every input character                | 
+| [strlen](personalization-modifiers#strlen)                                        | count the characters in a string                               | 
+| [strstr](personalization-modifiers#strstr):"substring":before = false             | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. | 
+| [substr](personalization-modifiers#substr):start position:length                  | return the substring from start position onward, optionally truncated after length characters | 
+| [tolower](personalization-modifiers#tolower)                                      | convert all characters to lower case                           | 
+| [toupper](personalization-modifiers#toupper)                                      | convert all characters to upper case                           | 
+| [trim](personalization-modifiers#trim)                                                 | trim the white space and endline characters off both sides of the input | 
+| [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words | 
+| [ucfirst](personalization-modifiers#ucfirst)                                      | replace first character with an upper case character           | 
+| [urlencode](personalization-modifiers#urlencode)                                  | encode input for use in an url                                 | 
+| [urldecode](personalization-modifiers#urldecode)                                  | decode input for use in an url                                 | 
 
 
 ## base64_encode

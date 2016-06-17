@@ -10,7 +10,7 @@ template is doing what you think it should do.
 ## Variables
 
 Let's just start with the basics of printing a user supplied variable. This is
-simply done by putting your [passed variables](data) in the source. A variable
+simply done by putting your [passed variables](personalization-data) in the source. A variable
 starts with a `{$` than your variable name and is closes with a `}`
 Formally the rules for a variable are:
 
@@ -55,7 +55,7 @@ from 0).
 You can alter the content of your variables by applying modifiers to them.
 E.g. you can capitalize the content, calculate the length of a string, or
 calculating a hash sum. A list of all modifiers and an explanation about
-their usage can be found [here](modifiers).
+their usage can be found [here](personalization-modifiers).
 
 
 ## Simple calculations
