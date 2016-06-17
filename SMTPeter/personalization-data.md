@@ -1,7 +1,7 @@
 # Add personal data to a mail
 
 This page describes how you can add data to your mail that can be used for
-[personalization](personalization). Adding data for personalization is only possible
+personalization.  Adding data for personalization is only possible
 if you are sending your mail using the [REST-API](rest-send). 
 
 <!--- @todo make this uniform with responsive --->

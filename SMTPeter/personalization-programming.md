@@ -9,10 +9,11 @@ template is doing what you think it should do.
 
 ## Variables
 
-Data that you have [passed](data) together with your message can be accessed
-as a variable in the template. You can access it like `{$variable}`
-
+Let's just start with the basics of printing a user supplied variable. This is
+simply done by putting your [passed variables](data) in the source. A variable
+starts with a `{$` than your variable name and is closes with a `}`
 Formally the rules for a variable are:
+
 * Starts with a dollar sign
 * surrounded by curly braces
 * may contain alphanumeric characters. May not start with a number.
