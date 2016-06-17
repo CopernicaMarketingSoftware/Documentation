@@ -375,7 +375,8 @@ You can include private DKIM keys in the JSON to let MailerQ sign the mail.
     "dkim": {
         "domain": "example.com",
         "selector": "x",
-        "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "expire"   : "2017-01-01 00:00:00"
     }
 }           
 ````
@@ -395,7 +396,8 @@ property supports arrays:
     }, {
         "domain": "example.com",
         "selector": "y",
-        "key": "-----BEGIN RSA PRIVATE KEY-----\n....."
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "expire"   : "2017-01-01 00:00:00"
     } ]
 }           
 ````

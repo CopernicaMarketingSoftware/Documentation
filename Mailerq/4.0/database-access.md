@@ -212,8 +212,8 @@ out emails.
 ### The dkim keys and patterns
 
 All DKIM private keys that are used for signing outgoing mails are stored 
-in the "dkim_keys" table. Only the domain and the selector are stored;
-other properties are retrieved from DNS.
+in the "dkim_keys" table. Only the domain, the selector and the expire time for
+the signature are stored; other properties are retrieved from DNS.
 
 To decide what keys should be used for outgoing emails, there is a separate
 "dkim_patterns" table. The from address of every outgoing mail is compared
