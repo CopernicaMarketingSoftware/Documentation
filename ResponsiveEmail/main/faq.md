@@ -53,9 +53,9 @@ soon.
 We are a company ([Copernica](https://www.copernica.com/en "Copernica Marketing Software")) 
 with more than 10 years of experience in building high standard email marketing 
 software. For the email template editor we are currently working on, we needed 
-a library that can parse the JSON spit by our editor, to genuine HTML code suitable 
-for emails. And so we created it. And then we thought: 'Hey, now that we have 
-created that software, why not build an API around it, so anyone can use it! 
+a library that can parse the JSON spit out by our editor, to genuine HTML code suitable 
+for emails. And so we created it. And then we thought: "Hey, now that we have 
+created that software, why not build an API around it, so anyone can use it!".
 And so we did...
 
 ## Can you also send the emails for me?
