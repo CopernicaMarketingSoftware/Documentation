@@ -23,3 +23,9 @@ Content-Length: 239872
 
 To improve readability, we have left out most of the returned HTML code in
 above example.
+
+## Use personalization data
+
+If your template uses [personalization](../json/personalization) data, you
+can get an HTML representation for certain data by passing this data as a
+JSON object in the `data` property of your JSON.

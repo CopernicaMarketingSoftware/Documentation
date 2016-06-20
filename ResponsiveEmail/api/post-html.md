@@ -32,3 +32,9 @@ that limit certain blocks to only be visible in the web version of the mail,
 then these blocks will not be included in the returned HTML code. If you want to 
 fetch the web version of an email, use the [/v1/webversion](../api/post-webversion) 
 method instead.
+
+## Use personalization data
+
+If your template uses [personalization](../json/personalization) data, you
+can get an HTML representation for certain data by passing this data as a
+JSON object in the `data` property of your JSON.
