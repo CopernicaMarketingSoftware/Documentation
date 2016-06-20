@@ -23,4 +23,4 @@ A complete list of these modifiers and their properties can be found below.
 
 If you want to bring your personalization to a next level you can read our
 [programming page](../documentation/personalization-programming) or read how you can
-easily can [modify](./documentation/personalization-modifiers) your variables. 
+easily can [modify](../documentation/personalization-modifiers) your variables. 
