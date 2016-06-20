@@ -119,7 +119,6 @@ result of one delivery attempt. Every result object can have the following prope
         <td>mta</td>
         <td>name of the receiving mta (this is a reverse DNS lookup)</td>
     </tr>
-
     <tr>
         <td>from</td>
         <td>ip *from* which the mail was sent</td>
@@ -187,6 +186,10 @@ goes through the following states:
     <tr>
         <td>responsive</td>
         <td>the json message is converted into a responsive email</td>
+    </tr>
+    <tr>
+        <td>personalize</td>
+        <td>the message is personalized if personalization data is available</td>
     </tr>
     <tr>
         <td>dns</td>
