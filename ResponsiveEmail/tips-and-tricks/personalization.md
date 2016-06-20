@@ -108,4 +108,4 @@ programming constructs are relatively simple and are more or less restricted
 to {if} and {foreach} statements. 
 
 If you want to know more about programming a Smarty template you can visit
-our [programming page](documentation/personalization-programming)
+our [programming page](../documentation/personalization-programming)
