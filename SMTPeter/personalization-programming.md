@@ -3,23 +3,22 @@
 This page gives a syntax overview for writing a template that can be used
 to personalize your mail. Note that although the syntax is quite easy, you
 can build complicated concepts, which brings the danger of bugs (heck, even
-simple stuff can have bugs). Therefore, you should always test if the personalization
-template is doing what you think it should do.
+simple stuff can have bugs).
 
 
 ## Variables
 
-Let's just start with the basics of printing a user supplied variable. This is
-simply done by putting your [passed variables](personalization-data) in the source. A variable
-starts with a `{$` than your variable name and is closes with a `}`
-Formally the rules for a variable are:
+Let's just start with the basics of printing a user supplied variable. A variable
+starts with a `{$` than your variable name and is closes with a `}`. Valid
+variables for example are "{$firstname}", "{$age}" and "{$city}".
+Formally, a variable is required to:
 
-* Starts with a dollar sign
-* surrounded by curly braces
-* may contain alphanumeric characters. May not start with a number.
-* may contain dash (-) and underscore (_) symbols. 
-* May not start with dash or underscore. 
-* variables are case sensitive, meaning that {$NAME} is different from {$name}
+* start with a dollar sign,
+* is surrounded by curly braces
+* may contain alphanumeric characters. May not start with a number,
+* may contain dash (-) and underscore (_) symbols,
+* may not start with dash or underscore,
+* is case sensitive, meaning that {$NAME} is different from {$name}.
 
 The next table gives all variable notations:
 
@@ -27,7 +26,7 @@ The next table gives all variable notations:
 | ---------- | ------------------------------------------------ |
 | {$foo}     | Displaying a simple variable (non array/object). |
 | {$foo[4]}  | Display the 5th element of a zero-indexed array. |
-| {$foo.bar} | Display the "bar" key value of an array.         |
+| {$foo.bar} | Display the "bar" key value of an object.        |
 
 With these notaitions you may make combinations. Examples of combinations
 are:
@@ -37,15 +36,8 @@ are:
 | {$foo.bar.baz}    | Display the value behind the key "baz" inside the array "bar" which is a part of $foo. |
 | {$foo[4].baz}     | Display the value behind the key "baz" inside the 5th element of $foo.                 |
 | {$foo.bar.baz[4]} | Display the 5th element of baz, which is in bar which is in $foo.                      |
-<!---
-| {"foo"}           | Static values are allowed.                                                             |
-@todo they don't work on modifiers.
 
-The last example in the table is not a standard variable as discussed above.
-You basically create a variable on the fly that holds the value you specify,
-in this case the string "foo".
---->
-If a variable happens to be an (associative)array where the index are keys,
+If a variable happens to be an object where the index are keys,
 you can still access elements in the array with an index number (starting
 from 0).
 
