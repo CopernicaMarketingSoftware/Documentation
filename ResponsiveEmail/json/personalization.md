@@ -22,5 +22,5 @@ can also take some parameters, for example `{$key|truncate:13:"...":true}`.
 A complete list of these modifiers and their properties can be found below.
 
 If you want to bring your personalization to a next level you can read our
-[programming page](personalization-programming) or read how you can
-easily can [modify](personalization-modifiers) your variables. 
+[programming page](../documentation/personalization-programming) or read how you can
+easily can [modify](./documentation/personalization-modifiers) your variables. 
