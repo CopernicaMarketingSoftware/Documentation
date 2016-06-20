@@ -121,11 +121,15 @@ result of one delivery attempt. Every result object can have the following prope
     </tr>
     <tr>
         <td>from</td>
-        <td>ip *from* which the mail was sent</td>
+        <td>ip <i>from</i> which the mail was sent</td>
     </tr>
     <tr>
         <td>to</td>
-        <td>ip *to* which the mail was sent</td>
+        <td>ip <i>to</i> which the mail was sent</td>
+    </tr>
+    <tr>
+        <td>authentication</td>
+        <td>if authentication/login was necessary for access, the authentication protocol used</td>
     </tr>
     <tr>
         <td>messages</td>
