@@ -18,3 +18,10 @@ Some quick facts about collection
 * Mailings sent to a collection can be personalized with data from the database 
 * In any database you can add as many collections as you need.
 * There is no limit to the number of subprofiles added to a collection.
+
+### Example 
+
+The database in the image below shows two customers and their orders and addresses. 
+The orders and addresses are stored in collections at the profile.  
+
+![Schematic example of a database with collection in the MarketingSuite](ProfileCollection.png)

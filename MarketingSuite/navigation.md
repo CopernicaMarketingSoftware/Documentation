@@ -17,6 +17,7 @@
 * [Sending Email](send-app/introduction)
      * [Bounce management](send-app/bounce-management)
      * [Repeat emailings](send-app/repeat-mailings)
+* [Databases and segments](database-app/introduction)
 * [Statistics](statistics/introduction)
 * [Magento Integration](magento-integration/introduction)
   * [Introduction](magento-integration/introduction)
