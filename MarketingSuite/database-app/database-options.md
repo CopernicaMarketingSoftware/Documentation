@@ -1,7 +1,7 @@
 #Database options
 
 Each database and selection in the database management tool has a tab Options, with 
-options for that database or selection. 
+options for specifically that database or selection. 
 
 ###Archiving databases
 
@@ -38,12 +38,12 @@ Note: A database has one structure and knows nothing about selections.
 
 ###Edit name and description
 
-Allows you to edit the name and desciption of a database or selection. Changing the name and description 
-has no effects on running campaigns and will not break linked selections or subselections. 
+Allows you to edit the name and description of a database or selection. Changing the name and description 
+has no effect on running campaigns and will not break linked selections or child selections. 
 
 ###Manage privileges
 
-Users with administrator rights are able to set per database or target how is allowed 
+Users with administrator rights are able to set per database or target who is allowed 
 to perform certain actions on a database or selection, such as editing, removing and creating. 
 
 ###Remove database
