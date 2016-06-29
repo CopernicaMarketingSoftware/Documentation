@@ -22,5 +22,5 @@ The dialog will close and the overview page for the new database will be opened.
 The newly created database is of course empty. It has no structure yet and no information 
 has been stored in it.
 
-[Lets create the database field structure](database-field-structure)
+[Lets create the database field structure](database-field-structure.md)
 
