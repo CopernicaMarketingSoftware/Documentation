@@ -57,5 +57,5 @@ $ sudo dpkg -i path/to/yothalot-cpp-api-version.deb
 for debian based systems.
 
 After you have installed the necessary libraries you can create your 
-Yothalot [mapreduce](copernica-docs:Yothalot/cpp-program "MapReduce program")
-and [regular and race](copernica-docs:Yothalot/cpp-other "Regualar and race program") programs.
+Yothalot [mapreduce](cpp-program "MapReduce program")
+and [regular and race](cpp-other "Regualar and race program") programs.

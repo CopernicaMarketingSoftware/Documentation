@@ -5,7 +5,7 @@ with your mail. The CSS style sheet in the HTML header of your carefully
 constructed message might for example be removed or replaced, so that the
 layout of your mail is ruined when it ends up in your recipient's inbox:
 
-![Inlinize CSS](copernica-docs:SMTPeter/Images/inlinecss.png "Inlinize CSS")
+![Inlinize CSS](Images/inlinecss.png "Inlinize CSS")
 
 Many email programmers prevent this by using inline style
 attributes in their HTML code instead of style blocks on top of the message.
@@ -51,7 +51,7 @@ SMTP logins, each one with different features enabled. If you
 want to automatically inlinize CSS, you just have to create a login with
 this feature enabled, and use that login for your messages.
 
-If you are in a position to change the MIME header of the email messages,
+Alternatively, if you are in a position to change the MIME header of the email messages,
 you can also enable the CSS inlinizer by adding a special MIME
 header variable. If this header line is present in the mail, SMTPeter will
 also transform the CSS code into style attributes.

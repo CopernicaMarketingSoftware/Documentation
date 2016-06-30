@@ -1,6 +1,6 @@
 # Property `label`
 
-The `label` property is used inside [button blocks](copernica-docs:ResponsiveEmail/json/block-button)
+The `label` property is used inside [button blocks](../json/block-button)
 and should hold the visible text for the button.
 
 ```javascript
@@ -17,4 +17,4 @@ and should hold the visible text for the button.
 ```
 
 For more information and more examples, please check the documentation
-of [button blocks](copernica-docs:ResponsiveEmail/json/block-button).
+of [button blocks](../json/block-button).

@@ -21,8 +21,8 @@ MailerQ when certain events occur -- these are functions like the ones listed in
 the table above. For these type of functions we use all lowercase characters. 
 The other type of functions are functions that are offered by the MailerQ API, 
 and that can be called _by your plugin_. These functions all have the uppercase 
-`MQ_` prefix, and use CamelCase notation. The declarations of this second group 
-of functions can be found in the `<mailerq.h>` header file.
+"MQ_" prefix, and use CamelCase notation. The declarations of this second group 
+of functions can be found in the "mailerq.h" header file.
 
 ## Multi-threading functions
 
@@ -30,7 +30,7 @@ MailerQ is a multi-threading application, with multiple worker threads that are
 all busy sending and receiving emails. If you write a plugin, it is important to 
 realize this, because you cannot always safely access the same global data from 
 your plugin functions. Locking might be necessary if you access global data from 
-these multiple threads, and it could be useful to user per-thread data.
+these multiple threads, and it could be useful to use per-thread data.
 
 For every worker thread, MailerQ creates a [MQ_Context](mq_context) 
 structure that is passed to most of the plugin callback functions. For every 

@@ -51,6 +51,26 @@ To reduce disk utilization, you can turn on log file compression with
 the "send-log-compression" setting. Only gzip compression is supported.
 
 
+## Received messages
+
+Incoming messages - messages sent to the SMTP port of MailerQ - are logged
+to the received log file. These settings work exactly like the send log
+settings:
+
+```txt
+received-log-directory:     /var/log/mailerq
+received-log-prefix:        received-messages
+received-log-maxsize:       100MB
+received-log-maxage:        3600
+received-log-compression:   gzip
+received-log-history:       100
+```
+
+The log file only holds messages that are received over the SMTP port.
+Messages dropped in the spool directory or that are injected using the
+command line interface are not logged.
+
+
 ## Download logs 
 
 MailerQ can create MIME message itself. To do this, MailerQ sometimes
@@ -69,4 +89,32 @@ download-log-maxage:        3600
 download-log-compression:   gzip
 download-log-history:       100
 ```
+
+
+## A word about logging
+
+MailerQ writes all events to RabbitMQ message queues. The recommended
+way of handling events is therefore to write scripts or applications that process 
+the data from these message queues. This is much more powerful than periodically 
+processing log files:
+
+- the message queues receive more events than the log files
+- the per-event data published to message queues can be much richer than the log file data
+- consuming from messages queues allows real time event handling 
+- handling data from message queues is more scalable (by adding consumers)
+- no blocking and slow disk operations are necessary
+
+For all of the above reasons, the first MailerQ versions did not even have
+logging capabilites. We did not want to slow down our high performance MTA
+by having it write data to disk - it was up to other scripts and applications to 
+read the results from the message queues, react to them and write data to
+appropriate log files. With this architecture, hiccups in disk IO could not slow
+down email deliveries.
+
+However, although this worked (and works!) perfectly for us, we found out 
+that many users still want to have log files to monitor what is going
+on. So we've added the logging feature, and we use threads to prevent that
+IO hiccups can be a problem. But keep in mind that once you find yourself
+writing cron jobs to process log files, you would probably be better of 
+writing a script that processes data from the message queues.
 

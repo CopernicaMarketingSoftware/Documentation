@@ -5,14 +5,17 @@ result of the job. However, mapreduce jobs may take a long time and it may
 be useful for you to get some information on where this time is spend, how
 many processes were used, how many temporary files were created, etc. You can
 use this information to tweak your mapreduce algorithm or to fine tune the
-behavior of the job by using its [tuning settings](copernica-docs:Yothalot/tuning).
+behavior of the job by using its [tuning settings](tuning).
 
 We provide you with information about the ran job by returning an object from the
-```wait()``` method of the [Yothalot\Job](copernica-docs:Yothalot/php-job). The
+```wait()``` method of the [Yothalot\Job](php-job). The
 object you'll get from here depends on what kind of algorithm you passed and the result of this.
-In case of any errors you'll get a ```Yothalot\ErrorResult``` object, regardless of
-the algorithm. Otherwise you'll get a ```Yothalot\MapReduceResult```, ```Yothalot\RaceResult``` or
-```Yothalot\TaskResult``` depending on algorithm.
+Map/Reduce, Race and regular tasks yield a ```Yothalot\MapReduceResult```, ```Yothalot\RaceResult```
+or ```Yothalot\TaskResult```, respectively.
+
+In case of any errors, you will receive an error objec that extends the regular result object.
+Thus, the same tasks would - in case of failure - yield a ```Yothalot\MapReduceError```,
+```Yothalot\RaceError``` or ```Yothalot\TaskError```.
 
 Using any of these result classes is simple. You can call `wait()` from your job and
 retrieve the results and call the members that you are interested in.
@@ -146,26 +149,23 @@ class Yothalot\TaskResult
 }
 ```
 
-## The Yothalot\ErrorResult class
+## Error results
 
-The **Yothalot\ErrorResult** class can be returned by the `wait()` method at all times,
-regardless of algorithm. As you may be able to guess from the name, this object is returned
-in the case of errors. You'll mostly be able to retrieve information about the failed job so
-you'll hopefully be able to reproduce it.
+As mentioned before, the errors returned extend from the results normally returned
+when an operation finishes successfully. They also evaluate to false when used in a
+boolean context - making it easy to check for errors.
+
+The error result objects also contain some extra properties to debug the failed task,
+like the executable that was started, the arguments, the input, output and errors
+generated.
+
+The example shows the ```Yothalot\MapReduceError```, but the ```Yothalot\RaceError```
+and the ```Yothalot\TaskError``` have exactly the same extra methods and extend from
+their respective result classes.
 
 ```php
-class Yothalot\ErrorResult
+class Yothalot\MapReduceError extends Yothalot\MapReduceResult
 {
-    /**
-     *  Get the time when the job was started (in Unix time)
-     */
-    public function started();
-
-    /**
-     *  Get the time the last job was finished (in Unix time)
-     */
-    public function finished();
-
     /**
      *  The executable that failed
      */
@@ -191,6 +191,12 @@ class Yothalot\ErrorResult
      *  The stdout of the failed job.
      */
     public function stdout();
+
+    /**
+     *  The complete command that was executed. This includes
+     *  the input piped into the program  as well as the arguments
+     */
+    public function command();
 }
 ```
 
@@ -271,7 +277,7 @@ echo("The runtime of the fastest reducer was: ".$result->reducers()->fastest()."
 ```
 As you can see you can get quite some details about the job. You can e.g. see
 which step is spending the most time. This information may help you to adjust
-your algorithm for the job or [fine tune](copernica-docs:Yothalot/tuning) the
+your algorithm for the job or [fine tune](tuning) the
 job behavior.
 
 ## The Yothalot\DataStats class
@@ -313,7 +319,7 @@ echo("The number of temporary files consumed by the reducer is: ".$result->reduc
 ```
 
 The information on the number of files and their sizes may again help you
-to adjust your algorithm and use the [tuning settings](copernica-docs:Yothalot/tuning)
+to adjust your algorithm and use the [tuning settings](tuning)
 to increase the performance of your mapreduce job.
 
 ## The Yothalot\Winner class

@@ -19,9 +19,8 @@ setting "recipients" to an array of email addresses instead of one single addres
 Another important variable, although not mandatory, is the "envelope" variable. 
 If delivery fails, the email address given here will receive a delivery
 status notification indicating the failure and the reason why. If this variable
-is not included, it will be automatically set to 'noreply@smtpeter.com'. Note that 
-just like the recipient variable the email address in the "envelope" should be 
-**pure** as well. It is not possible to specify multiple "envelope" addresses.
+is not included, the bounces are not sent back to you, but are processed by
+ResponsiveEmail.com and used for statistics.
 
 The recipient and envelope variables control where the email is delivered ('recipient')
 and where delivery failure notifications are sent to ('envelope'). They are like the
@@ -36,23 +35,26 @@ certain features. This makes it possible to use different settings for individua
 
 ```text
 "inlinecss":           When set to true, all CSS will be inlined inside the HTML
-"clicktracking":       When set to true, links will be redirected and tracked
-"bouncetracking":      When set to true, bounces will be tracked
-"openstracking":       When set to true, opens will be tracked
+"trackclicks":         When set to true, links will be redirected and tracked
+"trackbounces":        When set to true, bounces will be tracked
+"trackopens":          When set to true, opens will be tracked
 ```
 
 These variables are optional and enabled by default, omitting a variable means it
 will automatically be set to 'true'.
 
+
 ### DSN
 
-You can specify in what cases you would like to receive a delivery status notification 
-and what that notification should contain. It should be provided as an object with the following keys:
+If you have included an envelope address, you can further finetune what kind of
+status notifications you like to receive with the "dsn" property. It supports
+the following properties:
 
 ```text
 "notify":           either "NEVER" or one or more of "FAILURE", "SUCCESS" and "DELAY", comma-separated
 "orcpt":            The original recipient (defaults to the recipient address)
 "ret":              Either "FULL" to receive the full message back or "HDRS" to receive just the headers
+"envid":            Original-envelope-id to be included in the bounce message
 ```
 
 
@@ -69,6 +71,7 @@ provide at least "recipient" and "mime" variables.
 If the "mime" field is not included in the call to the REST API, ResponsiveEmail
 will generate an email based on the settings of the following variables:
 
+
 ### From, to and cc
 
 You may have noticed that we specify variables, such as "from" and "to" here. These might seem redundant, because
@@ -78,13 +81,11 @@ Whereas "envelope" and "recipient" can be seen as the outside of an envelope,
 "from" and "to" can be seen as the address details that are put on the letter itself. 
 The "cc" variable has to be a string or array containing the cc email addresses.
 
-### Subject
 
-You could specify the "subject". If not set, the email will be delivered without any subject.
+### Subject, text and HTML
 
-### Text and HTML
-
-You have to specify the "html" and "text" variables, too. These are the html and the text versions of the email.
+You can usespecify the "subject", "text" and "html" properties to set the subject,
+and the HTML and text version of the mail.
 
 
 ## Example request
@@ -107,9 +108,9 @@ Content-Type: application/json
     "to": "john@doe.com",
     "cc": "john@doedoe.com",
     "inlinecss": true,
-    "clicktracking": false,
-    "bouncetracking": true,
-    "openstracking": false,
+    "trackclicks": false,
+    "trackbounces": true,
+    "trackopens": false,
     "dsn": {
         "notify": "SUCCESS",
         "orcpt": "john@doe.com",
@@ -132,14 +133,35 @@ property is the recipient of the message. The JSON looks like:
 }
 ```
 
-If your post resulted in an error another JSON encoded string will be returned.
-This JSON has a property "error" that holds another JSON object.
-This object has the property "message", that holds the error message. E.g.:
+## Personalizing emails
+
+It is possible to add data to your JSON that later on is used to [personalize
+your email](../tips-and-tricks/personalization). If you send a JSON with only one recipient, you can add
+a property "data" to your JSON holding a JSON object:
 
 ```json
 {
-    "error": {
-        "message": "Decide: recipient or recipients. Can't have both"
+    "data" :{
+        "firstname": "John",
+        "lastname": "Doe"
     }
+}
+```
+
+If you send a mail with multiple recipients, the data can be passed in
+the recipients property as follows:
+
+```json
+{
+    "recipients" : [
+        "jane@doe.com": {
+            "firsname": "Jane",
+            "familyname": "Doe"
+        },
+        "john@doe.com": {
+            "firstname": "John",
+            "familyname": "Doe"
+        }
+    ]
 }
 ```

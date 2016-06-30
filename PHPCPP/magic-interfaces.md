@@ -5,7 +5,7 @@ that script writers can implement to add special features to a class. These are
 interfaces with names like 'Countable', 'ArrayAccess' and 'Serializable'.
 The features that these interfaces bring, can also be implemented using PHP-CPP.
 
-You may wonder why PHP sometimes uses [magic methods](copernica-docs:PHPCPP/magic-methods)
+You may wonder why PHP sometimes uses [magic methods](magic-methods)
 (for example `__set` and `__unset)` and sometimes uses interfaces to change
 the behavior of a class. There does not seem to be any uniformity in this choice.
 To us it is unclear why some special features are implemented with magic methods,
@@ -582,8 +582,8 @@ public:
     /**
      *  C++ constructor and destructor
      */
-    Counter() {}
-    virtual ~Counter() {}
+    Counter() = default;
+    virtual ~Counter() = default;
 
     /**
      *  Update methods to increment or decrement the counter
@@ -615,7 +615,7 @@ public:
      */
     virtual void unserialize(const char *buffer, size_t size) override
     {
-        _value = ::atoi(buffer);
+        _value = std::atoi(buffer);
     }
 };
 
@@ -635,9 +635,9 @@ extern "C" {
 
         // description of the class so that PHP knows which methods are accessible
         Php::Class<Counter> counter("Counter");
-        counter.method("increment", &Counter::increment);
-        counter.method("decrement", &Counter::decrement);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::increment>("increment");
+        counter.method<&Counter::decrement>("decrement");
+        counter.method<&Counter::value>("value");
 
         // add the class to the extension
         myExtension.add(std::move(counter));

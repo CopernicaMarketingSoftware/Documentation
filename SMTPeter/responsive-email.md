@@ -21,7 +21,7 @@ we have built an easy-to-use drag & drop template editor.
 
 ## Use your SMTPeter login details. 
 
-All Coperncia's products can be accessed with the same login credentials. 
+All Copernica's products can be accessed with the same login credentials. 
 So if you already have an SMTPeter account, you can simply use your SMTPeter 
 website details to log into ResponsiveEmail. 
 

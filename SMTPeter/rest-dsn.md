@@ -15,7 +15,7 @@ be sent.
 ````
 
 By adding the envelope address, you instruct SMTPeter not to track bounces,
-and delivery the delivery status notification messages to your envelope
+and deliver the delivery status notification messages to your envelope
 address.
 
 

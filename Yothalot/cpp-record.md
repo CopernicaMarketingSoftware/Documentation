@@ -2,13 +2,13 @@
 
 Internally the Yothalot framework uses records to store mapped and/or 
 reduced information in temporary files. You can access these files yourself
-with [input](copernica-docs:Yothalot/cpp-input). Note that for working 
+with [input](cpp-input). Note that for working 
 with Yothalot you do not need this functionality. This functionality is
 only necessary if you want to store information in the Yothalot format
 yourself. 
 
 A record exist out of an identifier and some fields. The identifier is of
-type uint32_t. The fields are all of type [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar "Scalar")
+type uint32_t. The fields are all of type [Yothalot::Scalar](cpp-scalar "Scalar")
 and thus can contain an `int32_t`, `int64_t`, a string value, or be a `nullptr`.
 The public interface of record looks like:
 
@@ -62,7 +62,7 @@ whether it is an old or a new record.
 Yothalot::Record myRecord(1);
 ```
 Another way to construct a Record is to create it via an 
-[Yothalot::Input object](copernica-docs:Yothalot/cpp-input "Input"). The
+[Yothalot::Input object](cpp-input "Input"). The
 constructor will read the data from the given input log and parse the
 stored fields back into a proper Record. This process can of cours fail,
 in which case it will throw a std::runtime_error.
@@ -75,7 +75,7 @@ Yothalot::Record myRecord(input);
 Moreover you can construct a record from a set of inputs
 where the smallest record is used first.
 ```cpp
-Yothalot::Record myRecord(inputs); /
+Yothalot::Record myRecord(inputs);
 ```
 Finally there is a copy and move constructor to create records.
 
@@ -102,7 +102,7 @@ std::cout << "The Id of the record is: " << myRecord.identifier() << std::endl;
 ```
 
 ## Member add()
-With the add member it is possible to add a [Yothalot::Scalar](copernica-docs:Yothalot/cpp-scalar) to
+With the add member it is possible to add a [Yothalot::Scalar](cpp-scalar) to
 the record. The object itself is returned, so chaining is possible.
 You can use it like:
 ```cpp

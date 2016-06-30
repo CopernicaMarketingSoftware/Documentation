@@ -77,8 +77,9 @@ A JSON message holding a DKIM key will look something like this:
     "mime": "...",
     "dkim": {
         "selector": "your selector, e.g. 'dkim'",
-        "domain"  : "the domain that holds the DKIM key, e.g. example.com",  
-        "key"     : "your private key" 
+        "domain"  : "the domain that holds the DKIM key, e.g. example.com",
+        "key"     : "your private key",
+        "expire"  : "2017-01-01 00:00:00"
     }
 }
 
@@ -106,7 +107,8 @@ in the JSON data. A JSON message with mulitple DKIM keys will look something lik
         {
             "selector" : "dkim",
             "domain"   : "example.com", 
-            "key"      : "key"
+            "key"      : "key",
+            "expire"   : "2017-01-01 00:00:00"
         }, {
             "selector" : "dkim",
             "domain"   : "example.com", 

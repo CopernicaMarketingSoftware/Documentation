@@ -29,8 +29,8 @@ public:
     /**
      *  C++ constructor and destructor
      */
-    Counter() {}
-    virtual ~Counter() {}
+    Counter() = default;
+    virtual ~Counter() = default;
     
     /**
      *  Update methods to increment or decrement the counter
@@ -63,9 +63,9 @@ extern "C" {
         
         // description of the class so that PHP knows which methods are accessible
         Php::Class<Counter> counter("Counter");
-        counter.method("increment", &Counter::increment);
-        counter.method("decrement", &Counter::decrement);
-        counter.method("value", &Counter::value);
+        counter.method<&Counter::increment> ("increment");
+        counter.method<&Counter::decrement> ("decrement");
+        counter.method<&Counter::value>     ("value");
         
         // add the class to the extension
         myExtension.add(std::move(counter));
@@ -156,7 +156,7 @@ public:
      */
     Php::Value increment(Php::Parameters &params) 
     { 
-        return _value += params.size() > 0 ? (int)params[0] : 1; 
+        return _value += params.empty() ? 1 : (int)params[0];
     }
 
     /**
@@ -167,7 +167,7 @@ public:
      */
     Php::Value decrement(Php::Parameters &params) 
     { 
-        return _value -= params.size() > 0 ? (int)params[0] : 1; 
+        return _value -= params.empty() ? 1 : (int)params[0]; 
     }
     
     /**
@@ -198,17 +198,17 @@ extern "C" {
         Php::Class<Counter> counter("Counter");
         
         // register the increment method, and specify its parameters
-        counter.method("increment", &Counter::increment, { 
+        counter.method<&Counter::increment>("increment", { 
             Php::ByVal("change", Php::Type::Numeric, false) 
         });
         
         // register the decrement, and specify its parameters
-        counter.method("decrement", &Counter::decrement, { 
+        counter.method<&Counter::decrement>("decrement", { 
             Php::ByVal("change", Php::Type::Numeric, false) 
         });
         
         // register the value method
-        counter.method("value", &Counter::value, {});
+        counter.method<&Counter::value>("value", {});
         
         // add the class to the extension
         myExtension.add(std::move(counter));
@@ -286,8 +286,8 @@ public:
     /**
      *  C++ constructor and destructor
      */
-    PrivateClass() {}
-    virtual ~PrivateClass() {}
+    PrivateClass() = default;
+    virtual ~PrivateClass() = default;
 
     /** 
      *  Static method
@@ -312,8 +312,8 @@ public:
     /**
      *  C++ constructor and destructor
      */
-    PublicClass() {}
-    virtual ~PublicClass() {}
+    PublicClass() = default;
+    virtual ~PublicClass() = default;
 
     /** 
      *  Another static method
@@ -349,17 +349,17 @@ extern "C" {
         
         // register the PublicClass::staticMethod to be a
         // static method callable from PHP
-        myClass.method("static1", &PublicClass::staticMethod);
+        myClass.method<&PublicClass::staticMethod>("static1");
         
         // regular functions have the same signatures as 
         // static methods. So nothing forbids you to register
         // a normal function as static method too
-        myClass.method("static2", regularFunction);
+        myClass.method<regularFunction>("static2");
         
         // and even static methods from completely different
         // classes have the same function signature and can
         // thus be registered
-        myClass.method("static3", &PrivateClass::staticMethod);
+        myClass.method<&PrivateClass::staticMethod>("static3");
         
         // add the class to the extension
         myExtension.add(std::move(myClass));
@@ -424,17 +424,17 @@ extern "C" {
         Php::Class<Counter> counter("Counter");
         
         // register the increment method, and specify its parameters
-        counter.method("increment", &Counter::increment, Php::Protected, { 
+        counter.method<&Counter::increment>("increment", Php::Protected, { 
             Php::ByVal("change", Php::Type::Numeric, false) 
         });
         
         // register the decrement, and specify its parameters
-        counter.method("decrement", &Counter::decrement, Php::Protected, { 
+        counter.method<&Counter::decrement>("decrement", Php::Protected, { 
             Php::ByVal("change", Php::Type::Numeric, false) 
         });
         
         // register the value method
-        counter.method("value", &Counter::value, Php::Public | Php::Final);
+        counter.method<&Counter::value>("value", Php::Public | Php::Final);
         
         // add the class to the extension
         myExtension.add(std::move(counter));
@@ -456,7 +456,7 @@ derived class.
 Remember that the exported methods in your C++ class must always be public - even
 when you've marked them as private or protected in PHP. This makes sense,
 because after all, your methods are called by the PHP-CPP library, and if you make
-them private, they becomes invisible for the library.
+them private, they become invisible to the library.
 
 ## Abstract and final
 

@@ -21,7 +21,7 @@ The simplest job that you can start is the regular job. For a regular job
 Yothalot will execute your program or script somewhere on the server and 
 passes it the command line options you have told it to use. Extra data can
 be passed to the program via standard input if you instruct Yothalot to do
-so (see [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")).
+so (see [Starting a Yothalot job](cpp-start "Start up a job")).
 For a regular job there are no extra requirements on the type of input
 or output. So, the only thing you have to do is to create a program or script
 that uses standard input to read the data it should process.
@@ -38,5 +38,5 @@ or error no new programs will be started and the running programs will be
 stopped. The race has won be the program that returns as first a non-zero
 value or writes to stander output or error.
 
-The [Starting a Yothalot job](copernica-docs:Yothalot/cpp-start "Start up a job")
+The [Starting a Yothalot job](cpp-start "Start up a job")
 documentation page discusses how the jobs can be started.

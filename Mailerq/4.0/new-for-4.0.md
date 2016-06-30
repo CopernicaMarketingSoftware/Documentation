@@ -12,15 +12,15 @@ CPU utilization of the master thread. MailerQ 4.0 therefore has a whole
 different architecture.
 
 Internally, MailerQ starts many different threads, each one managing SMTP
-traffic, communication with RabbitMQ, disk IO for log files, among other things.
+traffic, communication with RabbitMQ, disk IO for log files, and other things.
 These threads need to synchronize once in a while to exchange 
 data, access the application-wide counters such as number of deliveries per 
-domain, and to fetch the latest errors. These global settings are managed by 
+domain, and to fetch the latest errors. This global data is managed by 
 the master thread.
 
-In MailerQ 3.0, the majority of all CPU time was spent by this master
+In MailerQ 3.0, the majority of all CPU time was utilized by this master
 thread; other threads spent a lot of time waiting for the
-master thread get synchronize. We've changed the architecture of MailerQ so that 
+master thread to synchronize. We've changed the architecture of MailerQ so that 
 worker threads
 - depend less on the master thread; 
 - can access more data asynchronously;
@@ -35,21 +35,24 @@ less cluttered.
 
 ## Incompatibilities
 
-MailerQ 4.0 is not completely compatible with version 3.0. 
+MailerQ 4.0 is not fully compatible with version 3.0. Before you upgrade
+to 4.0 you therefore need to check the documentation closely to see whether
+you use 3.0 features that work differently in 4.0.
 
-Firstly, the configuration file has different settings: some settings are no 
-longer supported, others have been added, and the values of some settings are 
-interpreted differently.
+In MailerQ 4.0 the configuration file has different settings: some old 
+settings are no longer supported, others have been added, and the values of 
+some variables are interpreted differently.
 
-The JSON data that you inject in MailerQ is not fully compatible with
-the old data format, although it has not changed significantly. If you're 
-not using anything fancy, but just the "envelope", "recipient" and "mime"
-properties, there is nothing to worry about. The results that are published
-back to the result queues on the other hand, have changed. The JSON 
-result objects contain more data than they did before.
+As you know, MailerQ loads email data in JSON format from a RabbitMQ message 
+queue, and writes the results back in JSON format too. However, The format 
+of these JSON messages has been changed. For outgoing mails (the messages that
+are loaded from the outbox queue) the changes are not so significant. But the
+the JSON message with the the results that are published back to the result 
+queues use different and more properties than before. The result objects 
+contain much more data than they did before.
 
 The tables in the SQL database have changed too. More data is kept in the 
-database, and less settings come from the config file, allowing the user to
+database, and less settings come from the config file, which allows you to
 make more changes on the fly without having to restart MailerQ.  Some tables are 
 no longer supported because the data from multiple tables have been merged into 
 a single table.
@@ -57,12 +60,16 @@ a single table.
 
 ## JSON data
 
-The "queues" property in the input JSON is now treated differently. Previously,
-if you added a "queues" property to the JSON, _all_ defaults from the config
-file were ignored, and the settings inside the "queues" property were used
-instead. With the new MailerQ 4.0 setup, the config file defaults are no
-longer ignored. Only for queues that are present inside the JSON, the config
-file setting is discarded and the value from the JSON is used.
+Messages that are loaded from the outbox queue and that are going to be
+sent out by MailerQ can have an optional "queues" property. This property
+holds the names of the queues to which results should be written. This was 
+already supported by MailerQ 3.0, but in 4.0 we treat this property differently.
+
+Previously, if you added a "queues" property to the JSON, _all_ the default
+result queues from the config file were ignored, and the settings inside 
+the "queues" property were used instead. With the new MailerQ 4.0 setup, 
+the config file defaults are no longer ignored. You have to explicitly 
+override the queues inside the JSON to override config file defaults.
 
 ````json
 {
@@ -76,27 +83,29 @@ file setting is discarded and the value from the JSON is used.
 ````
 
 Previously (up to MailerQ version 3), all result queues set in the config file
-were ignored, simply because a "queues" property was set in the JSON. With
-MailerQ 4.0, the config file settings for the success, retry and dsn queues 
-are still respected because they are missing in the JSON. The settings in
-the config file for the results and failure queues are overridden by the
-JSON values.
+were ignored, simply because a "queues" property was set in the JSON. Even
+when an explicit "success" queue was listed in the config file, it was still 
+not used simply because the JSON contained a "queues" setting.
+
+With MailerQ 4.0 and the above example, the config file settings for 
+the "success", "retry" and "dsn" queues are still respected. These queues are not
+specified in the JSON so MailerQ falls back to the config file defaults. 
+The settings in the config file for the "results" and "failure" queues are 
+not used because they are overridden by the JSON values.
 
 
 ## Result objects
 
 Just like MailerQ 3.0, MailerQ 4.0 also publishes the delivery results to
-success, failure and result queues. However, the format of the message has
-changed significantly. Where a single "state" property was used in 3.0, we now use
-a "state" and "result" property to set both the state in the SMTP protocol
-where the error occured, and the type of result in that state.
+"success", "failure", "retry" and "result" queues. However, the format of 
+these messages has changed significantly. Where a single "state" property was 
+used in 3.0, we now use both a "state" and a "result" property to the state 
+in the SMTP handshake (like "rcptto", "mailfrom", et cetera) where the error 
+occured, and the type of result in that state (like "error", "timeout", and so on).
 
-This gives you a better insight in the reason why a delivery failed, but
-it also means that you will have to update your scripts to handle these
-new type of errors.
-
-We have also add more data and more fields to the result objects, so that
-you can better find out what went wrong in your email delivery.
+This gives you a much better insight in the reason why a delivery failed. 
+However, it also means that you have to update your result processing scripts 
+to handle these new type of errors.
 
 For a full explanation of the new error format, see our
 [documentation about the result queues](json-results).
@@ -124,8 +133,8 @@ of the [MongoDB C driver](https://github.com/mongodb/mongo-c-driver) on
 your system.
 
 Many NoSQL client libraries sadly only offer a blocking API. 
-To prevent storage operations blocking deliveries, MailerQ therefore starts up 
-seperate threads that execute such operations. Possible hiccups in fetching or 
+To prevent blocking calls MailerQ therefore starts up 
+different threads that execute storage operations. Possible hiccups in fetching or 
 storing MIME data no longer interfere with mail deliveries. MailerQ 4.0 has a 
 special config file option that you can use to set the number of threads for 
 these storage operations. If you notice a lot of hiccups in storage operations, 
@@ -134,6 +143,12 @@ you can increment this value.
 Besides these traditional NoSQL engines, we now also support a filesystem-based 
 storage engine: setting the "storage-address" variable to "dir:///path/to/dir" 
 stores all data in files in a directory. This is ideal for testing purposes!
+
+The "storage-policy" config file variable can be used to control what kind
+of messages you want to store in the external storage system. Do you want 
+MailerQ to only fetch data from NoSQL, or do you want it to store data too?
+And should the storage be used for all incoming messages, or only for 
+greylisted or delayed messages that are temporarily pushed back to RabbitMQ?
 
 
 ## DNS lookups
@@ -145,9 +160,9 @@ resolver settings (like settings found in the "etc/resolv.conf" and
 in a situation where MailerQ used different DNS data and IP addresses than 
 you would expect after changing your system-wide resolver settings.
 
-To fix this, we chose to remove MailerQ's own non-blocking resolver, and now
+To fix this, we chose to remove MailerQ's own non-blocking resolver, and
 use the normal resolver functions from the system wide C library. The downside
-of this approach is that DNS lookups can now be blocking again. To solve
+of this approach is that DNS lookups can now be blocking again. To overcome
 this, MailerQ starts up a number of threads for DNS lookups to prevent that 
 slow DNS servers interrupt mail deliveries. The number of threads to start 
 is a config file option.
@@ -162,25 +177,26 @@ can now be managed via the management console.
 
 ## Log files
 
-The format of the log files have been changed. With every new release we
+The format of the log files has been changed. With every new release we
 added more columns to the log file, and it became more and more difficult
 to maintain compatible files (MailerQ also reads its own log files to show
-them via the management console, and therefor does not only write to logs,
+them via the management console, and therefore does not only write to logs,
 but also has recognize them). 
 
 We've decided to introduce a whole new log file format for MailerQ 4.0 that
-is easier to read, both for humans as well as for management console.
+is easier to read, both for humans as well as for the management console.
 
 
 ## Spool directories
 
-MailerQ can be configured to use a spool directory. This spool directory
-is being monitored by MailerQ and every valid MIME formatted file that
-you drop into this directory is automatically picked up, processed and delivered.
+We've added a new way to inject mails into MailerQ: a spool directory. This 
+is a directory that is continuously being monitored by MailerQ and every valid 
+MIME formatted file that you drop into this directory is automatically picked 
+up, processed and delivered.
 
 This spool directory allows you to inject email more easily into MailerQ.
 The old injection methods (SMTP, command line utility, and sending mail
-directory to RabbitMQ) of course all still work.
+directory to RabbitMQ) all still work as well.
 
 
 ## Running behind a proxy
@@ -207,5 +223,12 @@ emails, we have implemented this extension to the SMTP protocol as well.
 MailerQ can automatically recognize DMARC report messages, and publishes
 them to the "reports" queue. If you use MailerQ as an incoming server to
 process delivery status notifications and disposition notifications, you
-can also set it up to collect dmarc reports.
+can also set it up to collect DMARC reports.
+
+
+## Plugins
+
+The API for plugins has been changed. The names and signatures of methods
+have been changed, so pay close attention to the plugin documentation to
+update your plugins.
 

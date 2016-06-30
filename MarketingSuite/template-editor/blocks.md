@@ -5,16 +5,16 @@ The drag and drop editor enables you to create email designs from smaller fragme
 
 There are couple of different types of blocks available:
 
-- [Button block](copernica-docs:MarketingSuite/template-editor/blocks/button)
-- [Column block](copernica-docs:MarketingSuite/template-editor/blocks/column)
-- [Heading block](copernica-docs:MarketingSuite/template-editor/blocks/heading)
-- [Image block](copernica-docs:MarketingSuite/template-editor/blocks/image)
-- [Separator block](copernica-docs:MarketingSuite/template-editor/blocks/separator)
-- [Spacer block](copernica-docs:MarketingSuite/template-editor/blocks/spacer)
-- [Text block](copernica-docs:MarketingSuite/template-editor/blocks/text)
-- [Video block](copernica-docs:MarketingSuite/template-editor/blocks/video)
-- [Webversion block](copernica-docs:MarketingSuite/template-editor/blocks/webversion)
-- [Follow us block](copernica-docs:MarketingSuite/template-editor/blocks/follow-us)
+- [Button block](../template-editor/blocks/button)
+- [Column block](../template-editor/blocks/column)
+- [Heading block](../template-editor/blocks/heading)
+- [Image block](../template-editor/blocks/image)
+- [Separator block](../template-editor/blocks/separator)
+- [Spacer block](../template-editor/blocks/spacer)
+- [Text block](../template-editor/blocks/text)
+- [Video block](../template-editor/blocks/video)
+- [Webversion block](../template-editor/blocks/webversion)
+- [Follow us block](../template-editor/blocks/follow-us)
 
 ## Adding blocks
 

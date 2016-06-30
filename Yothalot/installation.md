@@ -30,7 +30,7 @@ Below you can find installation guidelines on how to create a GlusterFS
 cluster, how to set up RabbitMQ and links to various resources. After GlusterFS
 and RabbitMQ are installed, setting up Yothalot just comes down to starting the
 "yothalot" daemon process on each of your servers. If you want to have extra
-information you can read the [Files on the Yothalot cluster](copernica-docs:Yothalot/files "Files and paths")
+information you can read the [Files on the Yothalot cluster](files "Files and paths")
 documentation.
 
 
@@ -186,14 +186,14 @@ server in the cluster if you want to use the compression functionality.
 You are almost ready to start. Before you start the Yothalot process on each of
 your nodes, you first have to manually edit the `/etc/yothalot/config.txt` config
 file. In this configuration file you can configure your Yothalot process.
-We have a special [configuration section](copernica-docs:Yothalot/configuration)
+We have a special [configuration section](configuration)
 on this website that explains all the settings from this config file.
 
 The Yothalot process automatically detects the GlusterFS mount point, and will
 read and write the intermediate files to this mount point. If you run Yothalot
 locally, without access to a GlusterFS mount point, you must include an extra
 option in the config file to tell Yothalot where its "virtual" distributed
-file system can be found. See our special article about [setting up a local Yothalot environment](copernica-docs:Yothalot/local-installation)
+file system can be found. See our special article about [setting up a local Yothalot environment](local-installation)
 for more information.
 
 
@@ -226,13 +226,13 @@ on each server. You do not have to add extra command line arguments, just run
 Now it is time to start writing and running mapreduce jobs. You can use one of
 our API's for that:
 
-* [C++ API](copernica-docs:Yothalot/cppapi)
-* [PHP API](copernica-docs:Yothalot/phpapi)
+* [C++ API](cppapi)
+* [PHP API](phpapi)
 
-(Note that in order to use the PHP API you need to [install](copernica-docs:Yothalot/php-install "PHP Extension Installation")
+(Note that in order to use the PHP API you need to [install](php-install "PHP Extension Installation")
 the Yothalot PHP extension first)
 
 That is all there is. Your Yothalot cluster is ready to go. If you are curious on how
-to use it you can have a look at our MapReduce [Hello world!](copernica-docs:Yothalot/helloworld)
+to use it you can have a look at our MapReduce [Hello world!](helloworld)
 example, or read the documentation of the API of that language that you are using.
 

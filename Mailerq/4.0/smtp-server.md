@@ -10,7 +10,7 @@ setting, so that all incoming emails are automatically published to the outbox
 queue, from which they are then directly picked up again and scheduled for 
 immediate forwarding.
 
-![MailerQ shared inbox outbox queue](copernica-docs:Mailerq/Images/mailerq-shared-inbox-outbox-queue.png)
+![MailerQ shared inbox outbox queue](../Images/mailerq-shared-inbox-outbox-queue.png)
 
 However, you can also configure MailerQ to use different inbox and outbox queues.
 MailerQ will then store all incoming messages in the inbox queue first. You can add 
@@ -21,17 +21,7 @@ messages in an inbox queue and let your scripts read these messages from this
 inbox queue. After processing, post the message to the outbox 
 queue where MailerQ picks them up to deliver them.
 
-![MailerQ seperate inbox outbox queues](copernica-docs:Mailerq/Images/mailerq-seperate-inbox-outbox-queues.png)
-
-
-## Local email addresses
-
-MailerQ maintains a list of "local" email address patterns. When an email is
-received on the SMTP port, the recipient address is compared with these patterns.
-If there is a match, the incoming message is not sent to the inbox queue for
-further delivery, but to the "rabbitmq-local" address instead.
-
-This local 
+![MailerQ seperate inbox outbox queues](../Images/mailerq-seperate-inbox-outbox-queues.png)
 
 
 ## Config file settings
@@ -59,20 +49,19 @@ address using the "smtp-ip" variable. If you set this, MailerQ will
 only accept incoming connections to that specific IP.
 
 The IP address to which you send a message to MailerQ, is the same as 
-the address *from* which it is forwarded. Thus, if you send an email to 
-MailerQ listening on IP address 5.6.7.8, the message will also be sent 
-out from this IP.
+the address *from* which the mail is going to be forwarded. Thus, if you 
+send an email to MailerQ listening on IP address 5.6.7.8, the message will 
+also be sent out from this IP.
 
 The "smtp-port" setting contains the port number for the normal SMTP
 protocol. The SMTP protocol starts as a non-secure connection, but
 the client and server can start a STARTTLS handshake to secure the connection.
-
-Besides normal SMTP connections, you can also open already secured SMTP 
+However, besides normal SMTP connections, you can also open already secured SMTP 
 ports with the "smtp-secure-port" setting. A secure port uses TLS right from 
 the start, and no STARTTLS handshake is necessary. This is slightly faster 
 (the initial handshake can be skipped) and is also more secure (the initial 
-EHLO message can not be intercepted). However, such an encrypted 
-connection is not part of the SMTP standard, and regular SMTP clients do not 
+EHLO message can not be intercepted). However, such encrypted 
+connections are not part of the SMTP standard, and regular SMTP clients do not 
 expect this. However, if you write your own SMTP handshake code, it sometimes 
 is simpler and faster to have access to a connection that is already 
 encrypted without using "STARTTLS".
@@ -80,8 +69,7 @@ encrypted without using "STARTTLS".
 
 ### Secure connections
 
-You probably want to secure your SMTP traffic, and inject your emails
-using encrypted connections. To enable encryption, you need to assign
+To be able to secure your SMTP traffic, you need to assign
 a private key that is used for the encryption. You can use a self-signed
 private key, but it is much better to use a key from a certificate 
 authority. However, using a self-signed key is still better than using 
@@ -103,8 +91,8 @@ to the config file, with the list of ciphers that you'd like to support.
 By default, the whole universe can connect to the inbound SMTP server. You may
 want to restrict this. If you set a username and password in the config file,
 all inbound connections must first authenticate before they can inject emails.
-With the "smtp-range" setting you can also limit the IP addresses from which
-you want to accept incoming email.
+With the "smtp-range" setting you can also restrict the IP addresses from which
+you want to allow incoming email.
 
 ```
 smtp-range:         192.168.0.0/16
@@ -126,16 +114,20 @@ a firewall or an IP range to restrict access, than to require authentication.
 If you have a username and password installed, messages from unauthenticated 
 connections are normally rejected. However, if an incoming message is sent to 
 an address that is marked as a local address, the message is accepted anyway.
-These local messages are not sent to the inbox queue, but to the locals queue
-instead. The name of this queue can be configured with the "rabbitmq-local"
-config file variable.
+MailerQ checks each incoming message and compares the email address with 
+the addresses listed on the "local address list". This list can be managed
+from the [management console](management-console).
 
-If you have also set a "rabbitmq-reports" queue in the config file, MailerQ 
+In the config file you can also assign a special message queue for such
+local email messages. Every time a message is accepted that is meant for
+a local address, it will be published to the queue that is assigned to the
+"rabbitmq-local" config file variable.
+
+If you have also set a "rabbitmq-reports" variable in the config file, MailerQ 
 parses all incoming local messages, and if it detects that it holds a report
 message (for example a Delivery Status Notification or a DMARC report), it will
 post the message to this reports queue.
 
-The local email addresses can be configured via MailerQ's management console.
 
 
 ### Running behind HAProxy
@@ -170,19 +162,37 @@ and not as SMTP traffic.
 
 ### Other settings
 
-In the initial SMTP handshake the client advertises its capabilities 
-(like the max message size to accept). The following config 
-file settings can be used to override the defaults:
+The following variables may also be useful when you set up an SMTP server:
 
 ```
 smtp-maxsize:       100MB
+smtp-connections:   100
+smtp-threads:       1
 ```
+
+In the initial SMTP handshake the client advertises its capabilities 
+(like the max message size to accept). The config file setting "smtp-maxsize" 
+contains the maximum allowed input size for message.
+
+To prevent that MailerQ exhausts the max number of open TCP connections
+that is allowed by the OS, you can set a "smtp-maxsize" setting. There will
+never be more than this number of total _incoming_ and _outgoing_ connections.
+
+All SMTP traffic is handled by separate threads. The number of threads that 
+are started for SMTP traffic can be set with the "smtp-threads" setting. 
+Increasing this value can give a real boost to MailerQ's performance and
+we recommend to set it close to the number of CPU's that you have in your
+machine. 
+
+**Important!** The "smtp-connections" and "smtp-threads" variables are 
+meaningful for _outgoing_ connections as well!
+
 
 ## Multiple IP addresses
 
 If you have not used the "smtp-ip" setting and you run MailerQ on a server 
-with multiple IP addresses, the SMTP server is available on all these addresses 
-too. A client can therefore choose to which IP address 
+with multiple IP addresses, the SMTP server is available on all the server's 
+IP addresses. A client can therefore choose to which IP address 
 to send your mail. MailerQ recognizes the IP address to which the mail was 
 originally submitted, stores that information in the JSON message, and when 
 the mail is finally forwarded to the internet, it will be sent out from _exactly 
@@ -213,8 +223,22 @@ deliverability by adding "x-mq-*" these headers, so in that case you can
 better disable this feature in the config file:
 
 ```
-smtp-extract:       0
+smtp-extract:       true    (default: true)
 ```
 
+### DKIM and SPF authentication
 
+MailerQ can check whether incoming messages have valid DKIM signatures and
+whether the were sent from an IP address that is listed in SPF. You can
+enable this feature for _all_ incoming messages, or just for messages sent
+to local email addresses.
+
+```
+smtp-check-spf:                 all
+smtp-check-dkim:                all
+smtp-check-dmarc:               all
+smtp-authentication-results:    true
+```
+
+@todo add documentation and implementation
 

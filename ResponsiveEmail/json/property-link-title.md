@@ -1,6 +1,6 @@
 # Property `title`
 
-The `title` property nested inside a [`link`](copernica-docs:ResponsiveEmail/json/property-link)
+The `title` property nested inside a [`link`](../json/property-link)
 object allows you to provide a description of the link. Usually the link title 
 appears when the user hovers the link. 
 

@@ -3,7 +3,7 @@
 Function that can be implemented by a plugin and that is called by MailerQ every time a MIME message is received over a SMTP connection
 
 ```
-bool mq_smtp_in_data(MQ_Context *context, MQ_SmtpConnection *connection, const char *mime, size_t size);
+bool mq_smtp_in_data(MQ_Context *context, MQ_Connection *connection, const char *mime, size_t size);
 
 ```
 

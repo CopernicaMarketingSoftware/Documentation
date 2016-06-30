@@ -4,7 +4,7 @@ You need a valid login/password combination to access the SMTP API.
 These credentials have to be included in the SMTP handshake before
 you send the first message over the connection. SMTPeter supports both
 the "AUTH PLAIN" as well as the "AUTH LOGIN" authentication mechanism.
-The credentials must be sent over a secured connections, either
+The credentials must be sent over a secure connection, either
 because you set up a connection using [port 465](smtp-ports) or
 after you've secured the connection with "STARTTLS".
 
@@ -25,30 +25,13 @@ install a different feature set for each login. When you send out mail,
 you use login/password combination that supports the features that 
 you need.
 
-<table>
-    <tr>
-        <td>clicktracking</td>
-        <td>modify hyperlinks to track clicks</td>
-    </tr>
-    <tr>
-        <td>openstracking</td>
-        <td>modify image urls to track opens</td>
-    </tr>
-    <tr>
-        <td>preventscam</td>
-        <td>do not modify links that would trigger scam warnings</td>
-    </tr>
-    <tr>
-        <td>bouncetracking</td>
-        <td>change envelope address to collect bounces</td>
-    </tr>
-    <tr>
-        <td>inlinecss</td>
-        <td>modify html code to contain inline css attributes</td>
-    </tr>
-</table>
+* modify hyperlinks to track clicks
+* modify image urls to track opens
+* do not modify links that would trigger scam warnings
+* change envelope address to collect bounces
+* modify html code to contain inline css attributes
 
-The above table holds all the properties that can be associated with a
+The above list holds the properties that can be associated with a
 login/password pair. When you use the dashboard to create a login, you
 can select the features to use for that login.
 
@@ -63,7 +46,7 @@ should use the REST API, the dashboard or the feedback loops to be
 informed about these errors.
 
 However, if you do not hand over the bounce handling to SMTPeter, 
-SMTPeter behaves as a normal MTA and als sends back DSN messages to your
+SMTPeter behaves as a normal MTA and sends back DSN messages to your
 envelope address when anything goes wrong. If you inject mails using
 a traditional email client like Thunderbird or Outlook, we recommend
 not to enable bounce handling, because you probably want to receive

@@ -9,7 +9,7 @@ looking email templates.
 
 ## Images
 
-*   [Scaling images for mobile devices](/support/tips-and-tricks/image-scaling)
+*   [Scaling images for mobile devices](../tips-and-tricks/image-scaling)
 
 ***
 
@@ -34,6 +34,11 @@ Coming soon
 ***
 
 ## Columns
-*   [Column behavior on mobile devices](/support/tips-and-tricks/column-behavior)
+*   [Column behavior on mobile devices](../tips-and-tricks/column-behavior)
+
+***
+
+## Personalization
+*   [Personalize your mailings](../tips-and-tricks/personalization)
 
 ***

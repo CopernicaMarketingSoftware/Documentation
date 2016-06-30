@@ -16,9 +16,9 @@ This is a very odd way of handing back control, and you normally should not use 
 /**
  *  Finish plugin processing
  *
- *  @param  context the context that may move on to the next plugin
+ *  @param  connection  the connection that may move on to the next plugin
  */
-void MQ_Retry(MQ_Context *context);
+void MQ_Retry(MQ_Connection *connection);
 ````
 
 See also [MQ_Continue()](mq_continue) and [MQ_Complete()](mq_complete) for the other (and probably more useful) ways of handing back control.

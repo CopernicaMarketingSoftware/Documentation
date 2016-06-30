@@ -1,26 +1,33 @@
-# SPF validation
+# SPF email validation - a brief introduction
 
-If you send email through SMTPeter, you must make sure that you've
-configured your SPF records correctly. You must make sure that the IP
-addresses from which SMTPeter is going to send mail are included in
-your SPF record. Luckily, the SMTPeter dashboard has the right tools
-to help you with your configuration.
+Ever since email became commonplace for everyday communication, spammers and
+other crooks have taken advantage of the medium to try to lure people into buying
+certain pills or to kindly ask if they can help stash millions on behalve of a 
+deceased Nigerian princess. Especially with phishing emails, these culprits
+use forged sender addresses to make it look like a legit email, for instance
+from your credit card company. To prevent that these emails actually reach your inbox, 
+various tools have been developed over the years. SPF is one of them. 
+
+This article is intended for users who want to have background
+information about SPF, or who want to control the SPF records that are 
+created by us. If you want to set up SPF with your sender domain, please follow 
+the instructions on our article about [setting up sender domains with SMTPeter](sender-domains).
 
 
 ## What is SPF?
 
 Let's start with some background information first. SPF is a technology
 to specify which servers on the internet may send out email messages
-out of your name. Without SPF it is possible to send out email from every 
-computer on the internet: your personal computer or even your telephone can deliver mail 
-directly to Gmail or directly to Hotmail, and it is not necessary to 
-use intermediate gateways like SMTPeter to reach your recipients. 
+out of your name. In reality people normally use an intermediate 
+server offered by their provider to send out emails. However, from a 
+technical perspective it is perfectly possible for every computer to deliver 
+email directly without such an intermediate server.
 
 However, it is highly unlikely that a laptop in a village that you 
 never heard of directly connects to Gmail to send an email using your 
 domain name. If that happens, you can be pretty sure that someone is 
-trying to do something nasty, and is abusing your domain. You can 
-prevent this with SPF records.
+trying to do something nasty and is abusing your domain. This can be
+prevented with SPF records.
 
 An SPF record is a setting in DNS. If you have a domain name, you can not
 only use DNS to store the IP address of your website, but also to
@@ -32,23 +39,48 @@ came from a valid source. When the IP is on the other hand not listed in
 the SPF record, it handles the mail with much more care, or even rejects
 the message.
 
-
-## Configuring your SPF records
-
-If you do not yet have a SPF record for your domain, we strongly advise you 
-to install it. With such a record you prevent that random computers on the 
+With SPF records in your DNS you prevent that random computers on the 
 internet can claim to send out mail from your domain. Besides that, with
-a valid SPF record your mails seems more professional and that might have
+a valid SPF record you look more professional and that might also have
 a positive influence on the placement of your message in the users' inbox.
 
-Your SPF record should hold a list of all the IP addresses from servers that
-send your email. Thus, if you send *all* your email through SMTPeter,
-you only have to include SMTPeter's IP addresses. But if you also use other
-servers to send email, you have to include these other addresses too. If you 
-use SMTPeter exclusively to send out email, you can use the following SPF record:
+
+## The sender domain recommendations
+
+If you use SMTPeter's dashboard to set up a [sender domain](sender-domains), 
+we take care of hosting your SPF records. This means that you do not have
+to set up SPF records yourself, but that we do that for you. In your
+DNS you just have to add a very simple SPF record that refers (using an
+"include" mechanism) to the SPF record that we created for you. The exact 
+record that you should copy can be found on the dashboard.
+
+However, the SPF record that we host for you only contains SMTPeter's own 
+IP addresses. If you also send out email from other places, you need to
+add these other IP addresses too. You can do this in two different ways: you
+can either not refer to the SPF record that we host for you at all and do 
+everything yourself, or you go to the dashboard to instruct us from
+which IP addresses you also send out mail.
+
+This second approach is easier. The dashboard contains easy tools that allow
+you to add IP addresses or other rules to your hosted-by-us SPF
+records. In fact, if you've followed our recommendations closely, we
+probably even receive DMARC reports from various parties over the world, 
+so we already know from which places you are sending out your email.
+
+
+## Setting up your own SPF records
+
+If you do not want to use our recommended SPF records, you should do 
+everything yourself. Your SPF record should hold a list of all the IP 
+addresses from which you send out email. Make sure you also include
+SMTPeter's IP addresses. You can do this by adding "include:smtpeter.com"
+to your record.
+
+If you use SMTPeter exclusively to send out email, you can use the 
+following SPF record:
 
 ````
-v=spf1 include:smtpeter.com ?all
+v=spf1 include:smtpeter.com -all
 ````
 
 This is an SPF record that basically says: "all SMTPeter IP addresses
@@ -57,17 +89,4 @@ then your SPF record has to be a little longer, but it should at least contain
 the "include:smtpeter.com" part, so that your mails can flow through 
 SMTPeter.
 
-
-## Using the dashboard 
-
-When you go to the SMTPeter dashboard, you can register sender domains.
-A sender domain is a domain name from which you intend to send out
-email. If you add a sender domain to your dashboard, SMTPeter automatically
-generates the appropriate DNS records for you, so that you only have to
-copy these records to your DNS configuration.
-
-SMTPeter also automatically checks whether you have correctly copied this. 
-It checks your DNS records and if it indeed contains the IP addresses of 
-SMTPeter it compliments you. If something is wrong with your configuration,
-it shows an error that allows you to repair your setup.
 

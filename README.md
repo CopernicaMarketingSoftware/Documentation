@@ -14,7 +14,7 @@ With Copernica you can deliver relevant and timely communications using email, s
  
 # Working with documentation
 
-Each top-level directory in this repository hold documentation for one specific
+Each top-level directory in this repository holds documentation for one specific
 product. 
 
 ## Documentation pages
@@ -24,24 +24,7 @@ with Markdown will have priority over ones written with HTML.
 
 ## Links and files
 
-Since documentation pages can be presented in various environments (websites, apps)
-we utilize `copernica-docs` protocol for linking resources or pointing to files 
-inside this repository.
-
-Clients serving content from this repository should implement a way of rewriting
-such links (or hijacking clicks on such) to localized form
-
-Examples:
-
-```
-[Page on MailerQ](copernica-docs:Mailerq/page)
-
-[Page on SMTPeter](copernica-docs:SMTPeter/page)
-
-[Page on AMQPipe](copernica-docs:AMQPipe/page)
-
-etc...
-```
+All links should be relative ones.
 
 ### Internal links
 
@@ -50,7 +33,7 @@ fashion by adding hash part to the link.
 
 Examples:
 ```
-[Page on MailerQ](copernica-docs:Mailerq/page#segment)
+[Page on MailerQ](page#segment)
 ```
 
 Internal links can reference headers. Identifiers to use inside such links 

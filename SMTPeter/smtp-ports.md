@@ -7,7 +7,7 @@ we handle port 25 versus port 587.
 
 ````
 Host:       mail.smtpeter.com
-Port:       25 or 587
+Port:       25, 587, 2525
 Encryption: STARTTLS
 ````
 
@@ -20,11 +20,12 @@ protocol, or until after you've sent all message data. Sometimes we process
 the entire mail message to find out who is trying to abuse our systems,
 and reject the mail only after we've seen the full message.
 
-## What is the difference between port 25 and port 587?
+## What is the difference between port 25, 587, and 2525?
 
-You can use both port 25 and port 587 to send mail to SMTPeter. There is no
-difference between these two ports. We have opened port 587 because some 
-providers block access to port 25.
+You can use port 25, 587, and 2525 to send mail to SMTPeter. There is no
+difference between these ports. We have opened ports 587 and 2525 because some 
+providers block access to port 25. Port 2525 is especially useful for Google
+Cloud users since Google Cloud does neither support 25 nor 587.
 
 
 ## Port 465

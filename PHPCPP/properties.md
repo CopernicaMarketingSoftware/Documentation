@@ -71,12 +71,12 @@ public:
     /**
      *  c++ constructor
      */
-    Example() {}
+    Example() = default;
 
     /**
      *  c++ destructor
      */
-    virtual ~Example() {}
+    virtual ~Example() = default;
 
     /**
      *  php "constructor"
@@ -121,8 +121,8 @@ extern "C" {
         Php::Class<Example> example("Example");
 
         // register the methods
-        example.method("__construct", &Example::__construct);
-        example.method("method", &Example::method);
+        example.method<&Example::__construct>("__construct");
+        example.method<&Example::method>("method");
 
         // the Example class has one public property
         example.property("property1", "xyz", Php::Public);
@@ -153,7 +153,7 @@ or Php::Protected access modifiers.
 ```cpp
     #include <phpcpp.h>
 
-    // @todo you class definition
+    // @todo your class definition
 
     /**
      *  Switch to C context so that the get_module() function can be
@@ -191,11 +191,11 @@ and the static properties with `Example::$my_property`.
 
 Besides using the property() method, you can also create class constants using
 the constant() method, or using the Php::Constant class. More information about
-this can be found in our [article about constants](copernica-docs:PHPCPP/constants).
+this can be found in our [article about constants](constants).
 
 ## Smart properties
 
-With the [magic methods __get() and __set()](copernica-docs:PHPCPP/magic-methods)
+With the [magic methods __get() and __set()](magic-methods)
 you can make more advanced properties that are directly mapped to C++ variables,
 and that allow you to perform additional checks when a property is overwritten,
 so that an object always remains in a valid state.
@@ -223,12 +223,12 @@ public:
     /**
      *  c++ constructor
      */
-    Example() {}
+    Example() = default;
 
     /**
      *  c++ destructor
      */
-    virtual ~Example() {}
+    virtual ~Example() = default;
 
     /**
      *  Method to get access to the property

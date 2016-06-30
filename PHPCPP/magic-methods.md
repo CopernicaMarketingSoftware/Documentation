@@ -21,7 +21,7 @@ somewhat flexible. The return values of many magic methods are assigned to
 Php::Value objects, which means that as long as you make sure
 that your magic method returns a type that is assignable to a Php::Value,
 you can use it in your class. Your `__toString()` method may thus return a
-char*, a std::string, Php::Value (and even an integer!), because all these
+char*, an std::string, Php::Value (and even an integer!), because all these
 types can be assigned to a Php::Value.
 
 The nice thing about magic methods implemented with PHP-CPP is that they
@@ -117,8 +117,8 @@ public:
     /**
      *  C++ constructor and C++ destructpr
      */
-    User() {}
-    virtual ~User() {}
+    User() = default;
+    virtual ~User() = default;
 
     /**
      *  Get access to a property
@@ -223,7 +223,7 @@ extern "C" {
         
         // description of the class so that PHP knows 
         // which methods are accessible
-        Php::Class&lt;User&gt; user("User");
+        Php::Class<User> user("User");
         
         // add the class to the extension
         myExtension.add(std::move(user));
@@ -287,8 +287,8 @@ public:
     /**
      *  C++ constructor and C++ destructpr
      */
-    MyClass() {}
-    virtual ~MyClass() {}
+    MyClass() = default;
+    virtual ~MyClass() = default;
 
     /**
      *  Regular method
@@ -387,7 +387,7 @@ extern "C" {
         Php::Class<MyClass> myClass("MyClass");
         
         // register the regular method
-        myClass.method("regular", &MyClass::regular);
+        myClass.method<&MyClass::regular>("regular");
         
         // add the class to the extension
         myExtension.add(std::move(myClass));
@@ -452,8 +452,8 @@ public:
     /**
      *  C++ constructor and C++ destructpr
      */
-    MyClass() {}
-    virtual ~MyClass() {}
+    MyClass() = default;
+    virtual ~MyClass() = default;
 
     /**
      *  Cast to a string

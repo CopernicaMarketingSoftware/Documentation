@@ -1,10 +1,10 @@
 # Message specifications
 
-MailerQ relies on external RabbitMQ message queues for all its message
+MailerQ relies on external RabbitMQ message queues for message
 queueing. All incoming and outgoing emails are read from and published to 
-these queues, and all results are published to such queues as well.
+RabbitMQ queues, and all results are published to such queues as well.
 
-The messages in these queues are JSON formatted. This means that if you 
+The messages in the queues all are JSON formatted. This means that if you 
 develop scripts or programs that inject emails directly into a message 
 queue, your messages must be JSON encoded as well, and must use 
 properties that are understood by MailerQ. Scripts or programs that 

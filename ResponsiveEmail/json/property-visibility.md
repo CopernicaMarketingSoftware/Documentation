@@ -18,8 +18,8 @@ on which sort of screen size the block should be visible.
 
 | Property | Value | Desc.                                                                                                                                        |
 |:---------|-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [output](copernica-docs:ResponsiveEmail/json/property-output) | _string_ | Should the block be included in the webversion and/or in the email version?          |
-| [device](copernica-docs:ResponsiveEmail/json/property-device) | _string_ | Should the block be visible when the mail is opened on a device with a certain size? |
+| [output](../json/property-output) | _string_ | Should the block be included in the webversion and/or in the email version?          |
+| [device](../json/property-device) | _string_ | Should the block be visible when the mail is opened on a device with a certain size? |
 
 ## Server-side evaluation
 
@@ -38,10 +38,10 @@ link should of course only be included in the actual delivered email, and not
 in the version that is hosted on the web, because that web hosted message is 
 exactly the page that the links leads to.
 
-The sub property [`output`](copernica-docs:ResponsiveEmail/json/property-output) 
+The sub property [`output`](../json/property-output) 
 does this. You can assign the value "webonly" or "mailonly" to tell the responsive 
 API to only output the content when either the web hosted version or the mail 
-version of the message is generated. For an example, see the [documentation about the property](copernica-docs:ResponsiveEmail/json/property-output).
+version of the message is generated. For an example, see the [documentation about the property](../json/property-output).
 
 
 ## Client-side evaluation
@@ -55,6 +55,6 @@ opened on a mobile device or not. The email client however, will now show
 the content if it does not match the constraint.
 
 This feature is enabled by setting the 
-[device](copernica-docs:ResponsiveEmail/json/property-device) sub property. 
-For more information, and example code, see [the documentation](copernica-docs:ResponsiveEmail/json/property-device) 
+[device](../json/property-device) sub property. 
+For more information, and example code, see [the documentation](../json/property-device) 
 of that property.

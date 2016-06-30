@@ -9,7 +9,7 @@ via the `container` property.
 The `container` property is an advanced nested property inside each block, and can be
 used to change the styling or even the attributes of the `<td>`. The `container` 
 property accepts a JSON object with optional nested
-[`css`](copernica-docs:ResponsiveEmail/json/property-css) and [`attributes`](copernica-docs:ResponsiveEmail/json/property-attributes)
+[`css`](../json/property-css) and [`attributes`](../json/property-attributes)
 sub properties. The `css` and `attributes` in turn also accept JSON blocks containing the 
 CSS properties or element attributes you want to add to the container. 
 
@@ -17,8 +17,8 @@ CSS properties or element attributes you want to add to the container.
 
 | Property | Value | Description                                                                                                         |
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------|
-| [css](copernica-docs:ResponsiveEmail/json/property-css) | _object_ | Add custom css to the container element                           |
-| [attributes](copernica-docs:ResponsiveEmail/json/property-attributes) | _object_ | Add custom HTML attributes to the container element |
+| [css](../json/property-css) | _object_ | Add custom css to the container element                           |
+| [attributes](../json/property-attributes) | _object_ | Add custom HTML attributes to the container element |
 
 ## Example
 

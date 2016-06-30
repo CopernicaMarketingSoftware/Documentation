@@ -1,8 +1,8 @@
 # MailerQ plugin development
 
 If the default behavior of MailerQ is not up to your standards, you can extend 
-MailerQ with your own plugins. MailerQ allows you to develop such plugins, 
-exactly to add such features or functionality to MailerQ. A plugin is a shared 
+MailerQ with your own plugins. MailerQ allows you to develop plugins to add
+features or functionality to MailerQ. A plugin is a shared 
 object file (like "example.so"), and normally developed in C or C++. The plugins 
 are loaded by MailerQ when the application starts. Every plugin can implement a 
 number of functions that are called by MailerQ to hand control over to the plugin.
@@ -90,7 +90,6 @@ keep the DSO small.
 
 ## Do you find the API too limited?
 
-Because our plugin interface was only recently added to MailerQ, if may feel 
-that vital functionality is missing or that you need other callbacks to your 
-plugin. In such a situation you can best get in context with us, so that we can 
-accomodate your needs and implement your request!
+If you have the idea that vital functionality is missing in the plugin API,
+or if you need other callbacks you can always get in contact with us. We can 
+accomodate your needs, extend the API and implement your request!

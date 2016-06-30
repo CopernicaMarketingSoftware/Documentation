@@ -16,7 +16,7 @@ To target users that actually put items into their baskets, you can use the
 [quotes list target][quotes-target]. It will provide a list of users that have a basket, either open or finalized (transformed into order). This list will be also useful for targeting **abandoned
 shopping carts**.
 
-* [quotes-target]: copernica-docs:MarketingSuite/magento-integration/targets/quotes
+* [quotes-target]: ../../magento-integration/targets/quotes
 
 ### Orders list target
 
@@ -25,7 +25,7 @@ To target actual, real world customers, that placed an order you can use the
 This list will contain all customers (ones that ordered) that opted 
 for anonymous checkout.
 
-[orders-target]: copernica-docs:MarketingSuite/magento-integration/targets/orders
+[orders-target]: ../../magento-integration/targets/orders
 
 ### Subscribers list target
  
@@ -34,7 +34,7 @@ To target **users/visitors** that subscribed to a newsletter you can use the
 This list will provide users that subscribed to newsletter regardless if they are
 customers, guests or just visitors.
 
-* [subscribers-target]: copernica-docs:MarketingSuite/magento-integration/targets/subscribers
+* [subscribers-target]: ../../magento-integration/targets/subscribers
 
 ### Guest list target
 
@@ -42,14 +42,14 @@ Aside from registered customers, there are also customers that didn't want to
 register and finalized their order using an anonymous checkout (has to be enabled inside 
 the Magento configuration). For targeting such guest customers use the [guest list target][guests-target].
 
-* [guests-target]: copernica-docs:MarketingSuite/magento-integration/targets/guests
+* [guests-target]: ../../magento-integration/targets/guests
 
 ### Person list target
 
 Finally, there is the [persons list target][persons-target]
 that will build a profile of a customer by aggregating the the latest information associated with the same email address.
 
-* [persons-target]: copernica-docs:MarketingSuite/magento-integration/targets/persons
+* [persons-target]: ../../magento-integration/targets/persons
 
 ## Personalization variables
 
@@ -120,15 +120,15 @@ filter options to it. It's possible to apply following filter options:
    Limits customers list to customers that placed a [product][product-object] from certain [category][category-object] on theirs [wish list][wishlist-object].
 
 
-[webstore-object]: copernica-docs:MarketingSuite/magento-integration/object/webstore
-[product-object]: copernica-docs:MarketingSuite/magento-integration/object/product
-[category-object]: copernica-docs:MarketingSuite/magento-integration/object/category
-[wishlist-object]: copernica-docs:MarketingSuite/magento-integration/object/wishlist
-[customer-object]: copernica-docs:MarketingSuite/magento-integration/object/customer
-[person-object]: copernica-docs:MarketingSuite/magento-integration/object/person
-[magento-object]: copernica-docs:MarketingSuite/magento-integration/object/magento
-[subscribers-target]: copernica-docs:MarketingSuite/magento-integration/targets/subscribers
-[guests-target]: copernica-docs:MarketingSuite/magento-integration/targets/guests
-[persons-target]: copernica-docs:MarketingSuite/magento-integration/targets/persons
-[orders-target]: copernica-docs:MarketingSuite/magento-integration/targets/orders
-[quotes-target]: copernica-docs:MarketingSuite/magento-integration/targets/quotes
+[webstore-object]: ../../magento-integration/object/webstore
+[product-object]: ../../magento-integration/object/product
+[category-object]: ../../magento-integration/object/category
+[wishlist-object]: ../../magento-integration/object/wishlist
+[customer-object]: ../../magento-integration/object/customer
+[person-object]: ../../magento-integration/object/person
+[magento-object]: ../../magento-integration/object/magento
+[subscribers-target]: ../../magento-integration/targets/subscribers
+[guests-target]: ../../magento-integration/targets/guests
+[persons-target]: ../../magento-integration/targets/persons
+[orders-target]: ../../magento-integration/targets/orders
+[quotes-target]: ../../magento-integration/targets/quotes

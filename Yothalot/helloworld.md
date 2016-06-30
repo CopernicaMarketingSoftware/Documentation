@@ -6,9 +6,9 @@ counts all words in them. The mapper processes create the initial key/value
 pairs for each found word, and the reducers sum up these values to get to the
 total number of words.
 
-Because Yothalot comes with a very simple [PHP API](copernica-docs:Yothalot/phpapi),
+Because Yothalot comes with a very simple [PHP API](phpapi),
 we show how you can implement the WordCount map/reduce job in PHP. You simply start
-by writing your own WordCount class that implements the [Yothalot\MapReduce](copernica-docs:Yothalot/php-mapreduce) interface.
+by writing your own WordCount class that implements the [Yothalot\MapReduce](php-mapreduce) interface.
 This MapReduce interface prescribes that you implement the methods `map()`,
 `reduce()`, and `write()`: the three common steps of the map-reduce algorithm.
 
@@ -139,11 +139,11 @@ class WordCount implements Yothalot\MapReduce
 ?>
 ````
 
-To send this [job](copernica-docs:Yothalot/php-job "Job") to the Yothalot cluster,
+To send this [job](php-job "Job") to the Yothalot cluster,
 you can write a second script that creates a "WordCount" instance, creates a
-[connection](copernica-docs:Yothalot/php-connection "Connection") to Yothalot, sends
+[connection](php-connection "Connection") to Yothalot, sends
 this instance to the Yothalot master node, and specify on which data the
-[job](copernica-docs:Yothalot/php-job "Job") should run. This master node will send
+[job](php-job "Job") should run. This master node will send
 your object to one or more nodes in cluster where the actual algorithm will run.
 
 ````php
@@ -226,10 +226,10 @@ echo(file_get_contents($path->absolute()));
 ?>
 ````
 
-Maybe you have noticed that we have used the [Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path")
+Maybe you have noticed that we have used the [Yothalot\Path](php-path "Yothalot\Path")
 class to find the full path name to the output file. Since you work with
-[files on a distributed cluster](copernica-docs:Yothalot/files "Files on the Yothalot cluster"),
+[files on a distributed cluster](files "Files on the Yothalot cluster"),
 it is possible that similar files have other names on other servers 
 (if the servers use different mount points). Relative and absolute paths
-can be a bit cumbersome then. The [Yothalot\Path](copernica-docs:Yothalot/php-path "Yothalot\Path")
+can be a bit cumbersome then. The [Yothalot\Path](php-path "Yothalot\Path")
 class is a solution for this.

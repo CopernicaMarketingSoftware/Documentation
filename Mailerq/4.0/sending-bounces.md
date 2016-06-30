@@ -1,18 +1,26 @@
 # Sending and receiving bounces with MailerQ
 
 Some mail servers initially seem to accept a message, but send back
-a bounce email later. Such asynchronous bounces are sent to the envelope 
-address of the initially accepted message. The format for these bounce messages has been 
-standardized: the Delivery Status Notification (DSN) format. There is 
-also an extension to the SMTP protocol that allows mail servers to exchange 
-with each other whether they like to receive such bounce messages, and 
-what kind of information they want to receive back.
+a bounce email later on in which they inform you that the mail could not
+be delivered after all. Such asynchronous bounces are sent back to the 
+envelope address of the initial message. There is sadly often no way 
+to find out whether a server is going to send back notifications, and 
+what these messages are going to look like. 
 
-MailerQ supports all these things: when communicating with a receiving
-server, MailerQ passes DSN parameters to tell the receiver what kind
-of bounces you like to receive, and if MailerQ is used to receive mail
-it understands these kind of parameters too. MailerQ can also be configured to
-send out, receive and recognize DSN messages.
+However, there is a formal standard for these bounce messages: the 
+Delivery Status Notification (DSN) format. And there is an extension 
+to the SMTP protocol that allows mail servers to exchange 
+with each other whether they respect this standardized format, if
+the original sender would like to receive such bounce messages, and 
+what kind of information he or she wants to receive. This standard
+make it much easier to link incoming bounces to the original sent email.
+
+MailerQ supports this standard and SMTP extension: when communicating 
+with a receiving server, DSN parameters can be passed to tell the 
+receiver what kind of bounces should be returned. If MailerQ is 
+configured to receive mail on a SMTP port, it understands these kind of 
+parameters too. MailerQ can also be configured to send out, receive and 
+recognize DSN messages.
 
 
 ## Passing DSN settings
@@ -150,18 +158,18 @@ be delivered, an outgoing bounce mail is constructed and published to this
 DSN queue. If you assign the outbox to this "rabbitmq-dsn" setting,
 the bounces are even automatically picked up and delivered.
 
-We write that a bounce is sent on every failed delivery. This is
+We wrote that a bounce is sent on every failed delivery. This is
 technically not completely correct. To be precise, a bounce is created 
 everytime that the message specific "dsn.notify" setting matches. Thus,
 if "notify" is set to "SUCCESS", MailerQ sends out a bounce message on
 successful delivery, and when it is set to "FAILURE", bounces are sent
-on failure. The "notify" setting is however normally set to "FAILURE" so 
+on failure. The "notify" setting is normally set to "FAILURE" so 
 in normal circumstances bounces are sent on failure.
 
 If you set the "rabbitmq-dsn" setting to an empty string (which is the
 default), no Delivery Status Notifications are sent by MailerQ. But MailerQ 
 does forward the DSN settings to the receiving MTA, so you could still 
-receive DSN's.
+receive DSN's from MTA's further up the chain.
 
 
 

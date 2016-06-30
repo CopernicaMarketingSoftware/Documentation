@@ -5,14 +5,17 @@ clicks, opens - all these events are written to log files. These log
 files are accessible through the REST API with the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/logfiles?access_token=YOUR_API_TOKEN
-(2) https://www.smtpeter.com/v1/logfiles/DATE?access_token=YOUR_API_TOKEN
-(3) https://www.smtpeter.com/v1/logfiles/FILENAME?access_token=YOUR_API_TOKEN
+(1) https://www.smtpeter.com/v1/logfiles
+(2) https://www.smtpeter.com/v1/logfiles/DATE
+(3) https://www.smtpeter.com/v1/logfiles/FILENAME
+(4) https://www.smtpeter.com/v1/logfiles/FILENAME/header
+(5) https://www.smtpeter.com/v1/logfiles/FILENAME/json
+(6) https://www.smtpeter.com/v1/logfiles/FILENAME/xml
 ```
 
 The above methods can be used to (1) see for which dates log files are 
 available, to (2) see the log files kept for one specific date, and to 
-(3) download a single log file.
+(3-6) download a single log file.
 
 
 ## Available dates
@@ -55,27 +58,77 @@ but in an older one. Keep this in mind if you search through the logs.
 The "PREFIX" tells you what sort of events get logged. The following 
 prefixes exist:
 
-| Prefix                                                         | Description
-| -------------------------------------------------------------- | ---------------------------------------------------- |
-| attempts                                                       | information about all messages sent through SMTPeter |
-| bounces                                                        | information about messages that bounced              |
-| [clicks](copernica-docs:SMTPeter/log-clicks "clicks log file") | information about the clicks generated               |
-| deliveries                                                     | information about the messages delivered             |
-| dmarc                                                          | information about received dmarc reports             |
-| failures                                                       | information about failed deliveries                  |
-| [opens](copernica-docs:SMTPeter/log-opens "opens log file")    | information about when messages are opened           |
+| Prefix                                                | Description                                           |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| [attempts log file](log-attempts "attempts log file") | information about all messages sent through SMTPeter  |
+| [bounces log file](log-bounces "bounces log file")    | information about messages that bounced               |
+| [clicks log file](log-clicks "clicks log file")       | information about the clicks generated                |
+| [deliveries log file](log-deliveries)                 | information about the messages delivered              |
+| [dmarc log file](log-dmarc)                           | information about received dmarc reports              |
+| [failures log file](log-failures)                     | information about failed deliveries                   |
+| [opens log file](log-opens "opens log file")          | information about when messages are opened            |
+| [responses log file](log-responses)                   | information about response mails received by SMTPeter |
 
 
 ## Downloading files
 
-To download a log file, append the name of a log file to the REST API
-url. You should use a HTTP GET call to get the log file
+Log files can be downloaded in CSV, JSON, and XML format, so you can use
+the tools you are accustomed to, to process the log files. 
+To download a log file in the CSV format you, append the name of a log
+file to the REST API url. You should use a HTTP GET call to get the log file
 
 ````text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log
 ````
 
-This returns a CSV file. Some fields in the returned CSV file contain
-newlines, so a script that processes the CSV file needs to be a little
-smarter than just look for the next newlines to find the next record.
+This returns a CSV file without any variable names. If you want to have
+variable names on the first line of your CSV file, you append header to the
+call.
 
+````text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/header
+````
+The exact names are given in the articles on the specific logfile (see the
+table above). Note that Some fields in the returned CSV file contain
+newlines, if this is a setting that your CSV processing tool has.
+
+To download the file in JSON format you add "/json" to the filename you
+want to download.
+
+````text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/json
+````
+You JSON that you receive is an array containing JSON objects that have
+as properties the names of the variables. These names are given in the
+articles on the specific log file (see the table above).
+
+Finally if you want to download the files in XML format you add "/xml" to
+the file name you want to download.
+
+```text
+https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/xml
+```
+
+The format of the xml file is as follows
+```xml
+<records>
+  <record>
+    <NAME1>
+      value1
+    </NAME1>
+    <NAME2>
+      value2
+    </NAME2>
+  </record>
+  <record>
+    <NAME1>
+      value1
+    </NAME1>
+    <NAME2>
+      value2
+    </NAME2>
+  </record>
+</records>
+```
+The NAMEs can be found in the articles on the specific log file articles
+(see table above).

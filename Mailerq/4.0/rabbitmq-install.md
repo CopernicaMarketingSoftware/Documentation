@@ -47,10 +47,9 @@ internet to connect to your RabbitMQ instance!
 Just like MailerQ, RabbitMQ comes with a very nice web interface. However, this 
 web interface is not enabled by default, and must be explicitly configured. We 
 recommend doing this, because it is much easier to control RabbitMQ via a web 
-browser, than with command line tools. You can find an article on the RabbitMQ 
-website that explains how to do this:
+browser, than with command line tools.
 
-[https://www.rabbitmq.com/management.html](https://www.rabbitmq.com/management.html)
+[Read more about setting up the browser interface.](https://www.rabbitmq.com/management.html).
 
 
 ## Don't run out of resources
@@ -59,10 +58,10 @@ MailerQ not only uses RabbitMQ to fetch the messages that it is going to send,
 but also publish back the delivery results (if you have this configured). If 
 you do not process these delivery results in time, the queues in RabbitMQ will
 get fuller and fuller and you run the risk that your RabbitMQ server runs out of 
-resources (memory or disk space). This can especially happen in a production  
-environment, where many messages are published and consumed.
+resources (memory or disk space), which might crash the server. This can especially
+happen in a production environment, where many messages are published and consumed.
 
 So, when you run MailerQ in production, do make sure that you have set up cronjobs 
 or other scripts that periodically or continuously process the messages from the 
-result queues. If you do not do this.
+result queues.
 

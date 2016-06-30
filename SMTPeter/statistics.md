@@ -45,8 +45,12 @@ email programs, because the link appears to go to "www.example.com", but
 in reality the "clicks.smtpeter.com" website is opened.
 
 If you want to prevent such scam warnings, you can instruct SMTPeter to
-skip rewriting these type of hyperlinks. 
+skip rewriting these type of hyperlinks. Alternatively you can also of 
+course change the link text.
 
+````html
+<a href="http://clicks.smtpeter.com/path/to/file">my website</a>
+````
 
 ## API and dashboard
 
@@ -58,6 +62,21 @@ extracts relevant data from it, and puts this data on the dashboard.
 When you open the dashboard, you get direct insight into the best 
 performing links.
 
+An overview of all types of log files that we have is given in the table
+below. You can visit the individual log file page to see what content they
+hold.
+
+| Log file                                              | Description                                           |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| [attempts log file](log-attempts "attempts log file") | information about all messages sent through SMTPeter  |
+| [bounces log file](log-bounces "bounces log file")    | information about messages that bounced               |
+| [clicks log file](log-clicks "clicks log file")       | information about the clicks generated                |
+| [deliveries log file](log-deliveries)                 | information about the messages delivered              |
+| [dmarc log file](log-dmarc)                           | information about received dmarc reports              |
+| [failures log file](log-failures)                     | information about failed deliveries                   |
+| [opens log file](log-opens "opens log file")          | information about when messages are opened            |
+| [responses log file](log-responses)                   | information about response mails received by SMTPeter |
+
 
 ## Click tracking domain
 
@@ -67,7 +86,7 @@ only add a small identifier to the URL. We also change the original hostname
 in the URL to a hostname that points to the SMTPeter web servers. By 
 default, we use "clicks.smtpeter.com" for this. 
 
-However, we recommend that you go to the dashboard and configure a different
+However, we recommend that you go to your dashboard and configure a different
 click domain instead. To make your email campaigns more successful, you
 can better use a click domain like "specialoffers.yourcompanyname.com". The
 receivers of your messages will then already see your domain when they

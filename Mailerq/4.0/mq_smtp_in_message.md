@@ -9,7 +9,7 @@ After all the plugins are ready with processing (and optionally modifying) the m
 Note that the SMTP protocol allows one to use multiple "RCPT TO" instructions to send a single MIME message to multiple addressees. If this is being used, the [mq_smtp_in_message()](mq_smtp_in_message) function will also be called multiple times, _once for every addressee_.
 
 ```
-bool mq_smtp_in_message(MQ_Context *context, MQ_SmtpConnection *connection, MQ_Message *message);
+bool mq_smtp_in_message(MQ_Context *context, MQ_Connection *connection, MQ_Message *message);
 
 ```
 

@@ -71,6 +71,6 @@ The following example code will check if a quote has an address with street and 
 | isBilling       | _boolean_                     | Is address a billing address?             |
 | isShipping      | _boolean_                     | Is address a shipping address?            |
 
-[customer-object]: copernica-docs:MarketingSuite/magento-integration/object/customer
-[order-object]: copernica-docs:MarketingSuite/magento-integration/object/order
-[quote-object]: copernica-docs:MarketingSuite/magento-integration/object/quote
+[customer-object]: ../../magento-integration/object/customer
+[order-object]: ../../magento-integration/object/order
+[quote-object]: ../../magento-integration/object/quote

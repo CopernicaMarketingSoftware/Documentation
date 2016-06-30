@@ -12,6 +12,6 @@ messages are pushed into a domain-specific RabbitMQ queue, allowing later
 retrieval.
 -->
 
-Not every domain lines to receive email at high rates.  To throttle the number of
+Not every domain likes to receive email at high rates.  To throttle the number of
 emails sent to a specific domain, refer to the [Email throttling](mgmt-throttling) 
 view.

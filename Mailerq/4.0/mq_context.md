@@ -22,8 +22,8 @@ Your plugin may store a pointer to plugin specific data in a context. This is a 
 
 | Callable function                                       | Description                                       |
 |---------------------------------------------------------|---------------------------------------------------|
-| [MQ_ContextData()](mq_contextdata)       | Retrieve the plugin managed data from the context |
-| [MQ_SetContextData()](mq_setcontextdata) | Assign plugin managed data to the context         |
+| [MQ_contextData()](mq_contextdata)       | Retrieve the plugin managed data from the context |
+| [MQ_setContextData()](mq_setcontextdata) | Assign plugin managed data to the context         |
 
 The plugin data is _not_ shared between plugins. Every plugin can therefore associate its own data with a context, and you do not have to worry about other plugins that overwrite your data.
 
@@ -34,8 +34,8 @@ The main feature that a MQ_Context offers, is access to the event loop. There ar
 | Callable function                               | Description                                 |
 |-------------------------------------------------|---------------------------------------------|
 | [MQ_ev()](mq_ev)                 | Access to the underlying libev instance     |
-| [MQ_IOWatch()](mq_iowatch)       | Watch a filedescriptor for activity         |
-| [MQ_IOUnwatch()](mq_iounwatch)   | Stop watching a filedescriptor for activity |
-| [MQ_TimerStart()](mq_timerstart) | Start a timer                               |
-| [MQ_TimerStop()](mq_timerstop)   | Stop a timer                                |
-| [MQ_TimerReset()](mq_timerreset) | Reset a timer to a new timeout              |
+| [MQ_ioWatch()](mq_iowatch)       | Watch a filedescriptor for activity         |
+| [MQ_ioUnwatch()](mq_iounwatch)   | Stop watching a filedescriptor for activity |
+| [MQ_startTimer()](mq_starttimer) | Start a timer                               |
+| [MQ_stopTimer()](mq_stoptimer)   | Stop a timer                                |
+| [MQ_resetTimer()](mq_resettimer) | Reset a timer to a new timeout              |

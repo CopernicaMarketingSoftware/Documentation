@@ -1,32 +1,28 @@
 # DMARC logfiles
 
-The clicks logfiles have information about the clicks that are generated
-by your mailings. The available information is:
+Log files with the prefix "dmarc" hold information about which dmarc reports
+are available for your account. You can download the content of these files
+in CSV, JSON, and XML format using the [REST logfiles API](rest-logfiles) or
+the dashboard. These log files contain the following data in the respective
+order:
 
-* Message that generated the click
-* The time of the click
-* All server headers
-* The url that was clicked
-* The original url
+| Name               | Description                                                                       |
+| ------------------ | --------------------------------------------------------------------------------- |
+| time               | The time when we have received the dmarc report (YYYY-MM-DD hh:mm:ss              |
+| organizationName   | The name of the organization who has sent the report                              |
+| email              | The email address from which we received the report                               |
+| reportId           | The unique (for that domain) report ID                                            |
+| begin              | The begin time of the period covered by the report                                |
+| end                | The end time of the period covered by the report                                  |
+| domain             | The domain that is covered by the report                                          |
+| sendingDomain      | The domain that has sent the report (1)                                           |
+| messages           | The number of messages received by the domain (2)                                 |
+| failedSpf          | The number of messages that failed the DMARC check because of an invalid SPF  (2) |
+| failedDkim         | The number of messages that failed the DMARC check because of an invalid DKIM (2) |
 
-
-This information can be obtained by [downloading](rest-logfiles) a clicks log file.
-<!--- @todo add clicks method  when available --->
-
-## The clicks csv logfile
-
-A [downloaded](rest-logfiles) clicks log file has the CSV format and contains the following data
-in the respective order:
-
-| Data                | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
-| MessageID           | The id of the message that generated the click                      |
-| Time stamp          | The time of the click in the form YYYY-MM-DD hh:mm:ss               |
-| The server headers  | The headers that where used to make the call, separated by newlines |
-| The IP adress       | The IP address of the system where the link was clicked             |
-| The message URL     | The URL in the message that was clicked                             |
-| The destination URL | The URL to which the clicker was directed to                        |
-
-Some fields in the returned CSV file contain newlines, so a script that
-processes the CSV file needs to be a little smarter than just look for
-the next newlines to find the next record.
+(1): For some old files the sending domain is determined on the domain of
+the address that has send the report. It turned out that some reports are
+send via a different address that the domain that is covered by the report
+(an example is microsoft.com who also sends reports for hotmail.com). This
+is solved in new records.
+(2): Old records do not have this information

@@ -43,4 +43,4 @@ The ProductOption object holds the following properties
 | imageSizeX      | _int_                            | Max width of image. It's applicable for file option only.                                |
 | fileExtension   | _collection of string_           | Collection of allowed file types for this option. It's applicable for file options only. |
 
-[product-object]: copernica-docs:MarketingSuite/magento-integration/object/product
+[product-object]: ../../magento-integration/object/product
