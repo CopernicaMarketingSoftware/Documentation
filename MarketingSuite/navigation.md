@@ -20,7 +20,7 @@
 * [Databases and segments](database-app/introduction)
   * [Introduction](database-app/introduction)
   * [Databases](database-app/databases)
-  * [Database field structure](database-field-structure)
+  * [Database field structure](database-app/database-field-structure)
   * [Database fields](database-app/database-fields)
   * [Database options](database-app/database-options)
   * [Database selections](database-app/selections/introduction)
