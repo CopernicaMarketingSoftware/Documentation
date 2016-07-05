@@ -13,4 +13,4 @@ field by clicking **Add field** under the newly created field in the overview.
 
 Tip: To subsequently add fields, just hit the Enter button when the first is created. 
 
-![The Edit Database Structure tool](../images/database-app/MovieDatabaseSMALL.png.png)
+![The Edit Database Structure tool](../images/database-app/MovieDatabaseSMALL.png)
