@@ -37,4 +37,4 @@ Some quick facts about collections
 The database in the image below shows two customers and their orders and addresses. 
 The orders and addresses (shipping and billing) are stored in collections at the profile.  
 
-![Schematic example of a database with collection in the MarketingSuite](../../images/ProfileCollection.png)
+![Schematic example of a database with collection in the MarketingSuite](../images/ProfileCollection.png)
