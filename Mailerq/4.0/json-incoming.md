@@ -42,6 +42,10 @@ The following properties can be found on incoming messages:
         <td>cli</td>
         <td>command info (only used when received from cli)</td>
     </tr>
+    <tr>
+        <td>checks</td>
+        <td>array with the results of the SPF, DKIM and DMARC checks</td>
+    </tr>
 </table>
 
 The above properties are never used by MailerQ when the email is sent, 
@@ -152,3 +156,44 @@ about the started program:
     }
 }
 ````
+
+## Check results
+
+If you enable checks for incoming messages, MailerQ runs SPF, DKIM and
+DMARC checks on each incoming message. The result of these checks are
+added to the JSON.
+
+````
+{
+    "message-id": "gdsfu232",
+    "received": "2016-03-22 17:23:12",
+    "hostname": "sender1.mailerq.com",
+    "envelope": "whatever@example.com",
+    "recipient": "info@example.com",
+    "mime": "...",
+    "connection": {
+        "local-ip": "1.2.3.4",
+        "local-port": 25,
+        "remote-ip": "5.6.7.8",
+        "remote-port": 25324,
+        "secure": true,
+        "user": mailerq
+    },
+    "checks": [ {
+        "spf": "pass",
+        "smtp.mailfrom": "whatever@example.com"
+    }, {
+        "dkim": "pass",
+        "domain": "example.com",
+        "selector": "dkim",
+        "header.i": "fsjfksjfslkdf",
+        "header.b", "sodfidjsfdsjfsfjs"
+    }, {
+        "dmarc": "pass",
+        "header.from": "whatever@example.com"
+    } ]
+}
+````
+
+The properties for each test depend on the type of test, and hold the
+input parameters that were used to execute the test.

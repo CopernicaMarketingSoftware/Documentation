@@ -129,6 +129,30 @@ message (for example a Delivery Status Notification or a DMARC report), it will
 post the message to this reports queue.
 
 
+### Testing incoming messages
+
+MailerQ can run SPF, DKIM and DMARC authentication checks on incoming messages. 
+The results of these checks are added to the JSON that is published to the 
+inbox queue. You can also instruct MailerQ to modify the incoming messages 
+and add an extra "authentication-results" header to the mail.
+
+```
+smtp-check:         spf,dkim,dmarc
+smtp-auth-results:  local,nonlocal
+```
+
+The "smtp-check" variable in the config file can be set to a comma separated
+list of checks that have to be performed on incoming messages. Supported
+values are "spf", "dkim" and "dmarc". The results of these checks are added
+to the JSON.
+
+If you also want to add the check results to the "authentication-results"
+field in the MIME header, you should use the "smtp-auth-results" config
+file variable. This variable can be set to a comma separated list holding 
+the possible values "local" and "nonlocal". If you set it to "local", the 
+authentication-results header will only be added to incoming emails that were 
+sent to a local email address. The "nonlocal" value does exactly the opposite.
+
 
 ### Running behind HAProxy
 
