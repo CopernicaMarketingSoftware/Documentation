@@ -152,7 +152,7 @@ about the started program:
     "cli": {
         "command": "/usr/bin/mailerq",
         "arguments": [ "--extract-recipients", "--ignore-dot" ],
-        "user": "john",
+        "user": "john"
     }
 }
 ````
