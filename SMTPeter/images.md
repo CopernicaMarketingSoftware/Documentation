@@ -57,7 +57,8 @@ If you send your mails using SMTP you can add:
 ```txt
 x-smtpeter-embedded: hosted
 ```
-to your mime header to activate this feature.
+to your mime header to activate this feature. Or enable this feature for
+an SMTP login in the dashboard.
 
 If you use the REST API, you can add the following to your JSON:
 ```json
@@ -66,7 +67,3 @@ If you use the REST API, you can add the following to your JSON:
     "images": "hosted"
 }
 ```
-
-<!---
-@todo add support in dashboard
---->
