@@ -157,6 +157,11 @@ about the started program:
 }
 ````
 
+In the above example, the email was injected using MailerQ as command
+line utility. The program was started by user "john", and two
+options were passed: "--extract-recipients" and "--ignore-dot".
+
+
 ## Check results
 
 If you enable checks for incoming messages, MailerQ runs SPF, DKIM and
@@ -197,3 +202,7 @@ added to the JSON.
 
 The properties for each test depend on the type of test, and hold the
 input parameters that were used to execute the test.
+
+The checks are only executed for messages that are injected via SMTP,
+and only if checks are enabled in the config file using the "smtp-check"
+variable.
