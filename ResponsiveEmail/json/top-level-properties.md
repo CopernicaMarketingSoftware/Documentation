@@ -52,6 +52,7 @@ The API also offers some advanced properties, such as the `rewrite` property.
 |:---------|-------|---------------------------------------------------------------------------------------------------------------------------------|
 | [rewrite](../json/property-rewrite) | _object_ | Define specific rules to overwrite information specified in the JSON. |
 | [tracking](../json/property-tracking) | _object_ | Supply email tracking information.                                  |
+| [data](../json/personalization) | _object_ | Supply data used for personalization                                      | 
 
 ## Example input
 

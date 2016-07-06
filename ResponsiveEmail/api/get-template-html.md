@@ -22,12 +22,6 @@ Content-Length: 239872
 To improve readability, we have left out most of the returned HTML code in
 above example.
 
-## Personalization
-
-In order to [personalize](../json/personalization) the output it's possible to
-provide additional key-value pairs containing personalization data as parameters
-to the GET request. Without these parameters an unpersonalized output
-will be returned.
 
 ## Related information
 

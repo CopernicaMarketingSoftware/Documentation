@@ -291,3 +291,13 @@ rabbitmq-consumers:     1 (default: 1)
 By adding the "rabbitmq-consumers" variable to the config file, you instruct
 MailerQ to start up more consumer threads.
 
+## Communication threads
+
+MailerQ provides an option to configure the number of threads that communicate with RabbitMQ. 
+The number of consumers and the number of publishers can be configured separately. 
+```
+rabbitmq-publishers: `<number>`
+rabbitmq-consumers: `<number>`
+```
+By default, MailerQ uses one publisher thread and one consumer thread.
+

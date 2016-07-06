@@ -1,7 +1,7 @@
 # Add personal data to a mail
 
 This page describes how you can add data to your mail that can be used for
-[personalization](personalization). Adding data for personalization is only possible
+personalization.  Adding data for personalization is only possible
 if you are sending your mail using the [REST-API](rest-send). 
 
 <!--- @todo make this uniform with responsive --->
@@ -26,7 +26,7 @@ use for personalizing your mail. An example of this is:
 ```
 You can use {$firstname} to access "John", {$familyname} to access "Doe",
 and with {$children} you get an array containing "Jane", "Joe", "Jacky",
-and "Josef" (see our [programming page](programming) to for a complete
+and "Josef" (see our [programming page](personalization-programming) to for a complete
 discussion about using variables and programming). You can use these variables
 in the "from" and "to" address, the header, the text, and the html fields or
 in the "mime". For ease of use you get automatically the "envelope" and
@@ -85,7 +85,7 @@ about the property names you can pass as data. The requirements are:
 
 Here is a simple example of using personal data into a mail. If you are
 looking for an extensive discussion about what is possible you should
-read our [programming page](programming)
+read our [programming page](personalization-programming)
 
 Let's say you have the following JSON:
 ```json

@@ -231,3 +231,18 @@ be included in the "original-envelope-id" property of the returned status
 message, and the "orcpt" value is copied to the "original-recipient" 
 property.
 
+## Setting for embedded images
+
+Having embedded images in your mime may give some [issues](images). SMTPeter
+can subtract the embedded images from your mime, host them, and rewrite
+the links in the HTML part of the mime to the remote location.
+The option can be enabled to set the "images" property in the JSON to
+"hosted". The default is "default", which simply does nothing.
+
+```json
+{
+    ...,
+    "images": "hosted"|"default"
+}
+
+```

@@ -32,3 +32,9 @@ To help readability, we have left out most of the returned MIME code in
 above example. Also note that the HTTP protocol also returns data
 in MIME format, so although it looks like you receive two headers, the
 first header is the HTTP header and the second header is part of the returned email.
+
+## Use personalization data
+
+If your template uses [personalization](../json/personalization) data, you
+can get a MIME for certain data by passing this data as a JSON object in
+the `data` property of your JSON.

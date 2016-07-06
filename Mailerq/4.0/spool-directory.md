@@ -19,6 +19,11 @@ The mail is published to the "inbox" queue. If you've assigned the outbox
 queue to the "rabbitmq-inbox" setting, the email is immediately delivered to 
 the recipient(s).
 
+Although using the spool directory is very convenient for sending out mails
+it is also very slow. This is caused byt the fact the every mail needs to
+be written to and read from disk. We therefore encourage you to use the
+other methods to send mails to MailerQ.
+
 
 ## Config file options
 
