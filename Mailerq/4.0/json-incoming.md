@@ -101,7 +101,7 @@ holds properties about the TCP connection.
         "remote-ip": "5.6.7.8",
         "remote-port": 25324,
         "secure": true,
-        "user": mailerq
+        "user": "mailerq"
     }
 }
 ````
@@ -177,7 +177,7 @@ added to the JSON.
         "remote-ip": "5.6.7.8",
         "remote-port": 25324,
         "secure": true,
-        "user": mailerq
+        "user": "mailerq"
     },
     "checks": [ {
         "spf": "pass",
