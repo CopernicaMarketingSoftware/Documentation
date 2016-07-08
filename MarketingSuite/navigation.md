@@ -20,10 +20,10 @@
 * [Databases and segments](database-app/introduction)
   * [Introduction](database-app/introduction)
   * [Databases](database-app/databases)
+  * [Database options](database-app/database-options)
   * [Database field structure](database-app/database-field-structure)
   * [Database fields](database-app/database-fields)
-  * [Database options](database-app/database-options)
-  * [Database selections](database-app/selections/introduction)
+<!--   * [Database selections](database-app/selections/introduction) -->
   * [Collections](database-app/database-collections)
 * [Statistics](statistics/introduction)
 * [Magento Integration](magento-integration/introduction)
