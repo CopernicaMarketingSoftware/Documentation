@@ -211,7 +211,8 @@ there is something to show in the results queue, for example by executing the `s
  * result.php
  * Script that connects to RabbitMQ, and takes all messages from
  * the result message queue. This could be useful when you want to 
- * parse messages from a custom queue and later re-post them to a queue.
+ * parse messages from a custom queue and later re-post them, for example
+ * to the outbox queue.
  */
 
 // include the settings

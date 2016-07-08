@@ -32,7 +32,7 @@ you are the only one who uses your domain to send mail.
 With "sender domains" the Marketing Suite takes all these responsibilities out of your 
 hands. We create your SPF, DKIM and DMARC records and store them 
 on _our_ DNS servers. All that you have to do is create a couple of records 
-in _your_ DNS record (or ask/instruct your DNS provider to do so) that point 
+in _your_ DNS record (or ask/instruct your DNS provider to do so) that points 
 to our records. If we make a change to the DNS (for example, because we rotate 
 one of your private DKIM keys), it gets automatically propagated over the 
 internet, because your DNS records just point to our records.
@@ -64,7 +64,7 @@ bounce domains. These are the hostnames that we use to track clicks,
 opens and errors. The suggested defaults, "clicks.yourdomain.com" and 
 "bounce.yourdomain.com" are for most users sufficient. 
 
-But be aware that if you configure SMTPeter to track clicks, all hyperlinks 
+But be aware that if you configure the Marketing Suite to track clicks, all hyperlinks 
 in your emails are going to be rewritten to use the click domain. The default
 "clicks.yourdomain.com" might look like a tracking domain to your users (which 
 is not that strange, given the fact that it actually _is_ a tracking domain).
