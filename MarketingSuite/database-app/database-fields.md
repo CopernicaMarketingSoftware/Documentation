@@ -1,19 +1,4 @@
-#Database field structure
-
-A database is built with fields to store pieces of information about the profiles inside the database. Typical fields in a database used for mailings are fields to store *email*, *first name*, *last name* and so forth. 
-
-The way how a database is built with fields we call the Database Structure. To start adding fields to your database:
-
-- In the overview of the database, go to the tab **Options**
-- Click the button **Edit structure** to go to the Edit Structure tool.
-- Click on **Create field** to create the first field. 
-
-After storing the new field, it will appear in the main overview. You can add a second
-field by clicking **Add field** under the newly created field in the overview.
-
-Tip: To subsequently add fields, just hit the Enter button when the first is created. 
-
-## Field types
+# Database fields
 
 The fields of a database are always of a specific type. Each field type are best suited, or constraint
 to store specific kind of information.  
@@ -21,7 +6,7 @@ to store specific kind of information.
 To store email addresses there is the field of type *email*.  To store a total amount of purchased 
 products at a profile, a *numeric* field would be most suitable. 
 
-Although it is perfectly allowed to store a numeric value inside a text field, it is best
+Although it is possible to store a numeric value inside a text field, it is best
 practice to use the numeric field instead. This way you maintain a clean and fast database.
 
 In the Marketing Suite you can use the following field types:
@@ -40,16 +25,16 @@ Choose this subtype if the field may only contain full numbers [0-9].
 Choose this subtype if the field may only contain full numbers and decimal numbers (e.g, 10.40) 
 
 ###Date field 
-Date fields are used to store dates or dates and time. Date fields must contain a valid formatted date in the system format (yyyy-mm-dd). Fields with no date specified are automatically filled with zero’s (0000-00-00) if you have checked the option 'may not be empty'.  The date field has two subtypes. One for storing normal dates and the the other for storing date and time. 
+Date fields are used to store dates or dates and time. Date fields must contain a valid formatted date in the system format (yyyy-mm-dd). Fields with no date specified can remain empty if you have checked the option 'The field may be empty'. The date field has two subtypes. One for storing normal dates and the the other for storing date and time. 
 Datetime field are normal date fields but extended with 24h time notation (hh:mm). Example: 1980-09-20 08:56
 
 ###Text field
 
-Text fields, as the name suggests, are fields used for textual content. Text fields can contain all sorts characters including text, numbers, and special characters. The default length of a text field is 50 characters. You can enhance this number up to 255. If you want to use more than 255 characters rather use a ‘big field’ (see below).
+Text fields, as the name suggests, are fields used for textual content. Text fields can contain all sorts characters including text, numbers, and special characters. The default length of a text field is 50 characters. You can enhance this number up to 255. If you want to use more than 255 characters rather use a ‘Big text field’ (see below).
 
-### Big field
+### Big text field
 
-Big fields are basically the same as text fields, with the only difference that it has no limit in the number of characters it can hold.  Use this field only when a normal text field doesn't suffice. Selections based on big fields are significantly slower than other fields. 
+Big text fields are basically the same as text fields, with the only difference that it has no limit in the number of characters it can hold.  Use this field only when a normal text field doesn't suffice. Selections based on big text fields are significantly slower than other fields. 
 
 ### Email field
 E-mail fields can only be used to store legitimate e-mail addresses. When sending an emailing to a database or selection, the application will use the addresses stored in this field to send the emails to.
@@ -72,13 +57,13 @@ Use the select field to allow a limited number of values only. Add multiple valu
 
 This field type is useful in situations if you want to allow predefined values only. For example, a field holding newsletter preference, that may only contain the values 'subscribed', 'unsubcribed' and 'not_set'.
 
-###Interest field
+### Interest group
+
+An interest group is meant to contain several interest fields that all refer to interests within a certain catergory specified by the group name. For example an interest group 'sports' with the interest fields 'chess', 'poker', 'darts' and  'fierljeppen'.
+
+### Interest field
 
 An interest field is a special kind of field that allows only two values: 'yes' or 'no'. It is used mainly for listing interests and preferences of contacts, hence the name. For example an interest field could be 'newsletter'.
-
-###Group name
-
-An interest field is always tied to an interest group. For example an interest group 'sports' with the interest fields 'chess', 'poker', 'darts' and  'fierljeppen'
 
 Note: interest fields are only available inside databases, NOT inside collections.
 

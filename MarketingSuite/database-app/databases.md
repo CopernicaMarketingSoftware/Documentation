@@ -9,7 +9,7 @@ Creating a database is done in a few simple steps.
 - Go to the database management tool by clicking **Databases** in the side menu.
 - Click on **Add database** in the top-right corner. 
 - Choose a name for your database and optionally enter a description for your new database. 
-- Click the **Create** button to create the database. 
+- Click the **Confirm** button to create the database. 
 
 The dialog will close and the overview page for the new database will be opened. 
 

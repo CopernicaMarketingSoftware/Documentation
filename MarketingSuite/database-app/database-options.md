@@ -5,7 +5,7 @@ options for specifically that database or selection.
 
 ###Archiving databases
 
-Databases can be archived. An archived database will not show op in the list with databases, unless you 
+Databases can be archived. An archived database will not show up in the list of databases, unless you 
 choose to do so in the filter options. 
 
 Archiving non-used databases has some advantages. 
@@ -16,15 +16,14 @@ updated, leaving all the priority to the selections in the active databases.
 
 An archived database cannot send mailings. If any, mailings scheduled to a database that gets archived, will automatically be aborted. 
 
-A database can be made active again at any time. From that moment, the database is allowed to send mailing again, 
+A database can be made active again at any time. From that moment, the database is allowed to send mailings again, 
 and selections will start rebuilding again at the usual frequency.
 
 ###Database intentions
 
-To prevent accidental mailings to the wrong groups of people, we added an extra safety switch at each database 
-and selection, which must be enabled first to allow mailings to be sent to it.
+To prevent accidental mailings to the wrong groups of people, we added an extra safety switch at each database, which must be enabled first to allow mailings to be sent to its selection.
 
-You can find this switch in the tab **Options**, at the database or selection. 
+You can find this switch in the tab **Options**, at the database overview. 
 
 When it's disabled, no mailings can be sent to it. Possible upcoming mailings will not be sent
 with mailing intentions disabled. 

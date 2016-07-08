@@ -19,7 +19,7 @@ Say, you're sending newsletters to companies (B2B), and you have multiple contac
 structure would then be a database with companies, with a collection containing the company employees as subprofiles. 
 In a mailing you could target the company employees individually, because they all are stored inside a subprofile with their own details and email preferences. 
 
-This way a company only has to be in the database once, without having to have a complicated and diffused profile. By using collections, you are able to keep a clear overview in your database.
+This way a company only has to be in the database once, without needing to have a complicated and diffused profile. By using collections, you are able to keep a clear overview in your database.
 
 Some quick facts about collections
 
