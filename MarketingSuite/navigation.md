@@ -15,7 +15,7 @@
      * [Video block](template-editor/blocks/video)
      * [Webversion block](template-editor/blocks/webversion)
 * [Sending Email](send-app/introduction)
-     * [Sender Domains] (sender-domains)
+     * [Sender Domains](send-app/sender-domains)
      * [Bounce management](send-app/bounce-management)
      * [Repeat emailings](send-app/repeat-mailings)
 * [Databases and segments](database-app/introduction)
