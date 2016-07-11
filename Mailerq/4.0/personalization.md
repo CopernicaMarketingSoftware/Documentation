@@ -44,8 +44,9 @@ Cheers,
 If you had used the above MIME as input, MailerQ would replace the variables
 in the "from", and "to" address, the subject line and the text and HTML
 versions. For ease of use the "envelope" and "recipient" are already
-extracted from the mail for you. You can use these without specifying them
-as a data property.
+extracted from the mail for you. In case you don't want to personalize at all
+because your body has to contain {$name} for example, you can disable personalizing
+by omitting the data property entirely.
 
 Read our [programming page](personalization-programming) if you want to
 know more about how to use the personalization capabilities.
