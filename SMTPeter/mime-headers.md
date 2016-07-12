@@ -23,4 +23,4 @@ The headers in the table below can be used to affect SMTPeter's behavior.
 | x-smtpeter-trackopens:   | When set to true, opens will be tracked   |
 | x-smtpeter-preventscam:  | When set to true, links with labels equal to the link will not be tracked |
 | x-smtpeter-tags:         | Comma-separated list of message tags      |
-| x-smtpeter-embedded:     | When set to hosted, [embedded images](images) will be hosted by us |
+| x-smtpeter-images:       | When set to hosted, [embedded images](images) will be hosted by us |
