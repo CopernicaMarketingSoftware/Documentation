@@ -1,14 +1,15 @@
 # Feedback loops for clicks
 
-SMTPeter rewrite hyperlinks in emails to track clicks if you enable click-tracking. When someone
-clicks on one of these rewritten links, the click is redirected over the
-SMTPeter webservers before it is forwarded to the actual website, so that
-we can log the click and use it for statistics.
+If you enable click-tracking, SMTPeter rewrites all hyperlinks in your emails.
+If someone clicks on one of these rewritten links, that user first goes to
+the SMTPeter website, where the click is registered, and is then immediately
+redirected to the original URL. This all happens automatically and very fast, 
+and is most of the time unnoticable for your receiver. This technology
+allows SMTPeter to track all clicks on your mails.
 
-If you set up a click feedback loop, we will notify you in realtime
-about each click that we registered. For each click we send a HTTP POST
-call (HTTPS is possible too) to your server with the relevant information
-about the click.
+If you set up a click feedback loop, SMTPeter also notifies you in realtime
+about these clicks. For each click we send a HTTP POST call (HTTPS is possible 
+too) to your server with the relevant information about the click.
 
 
 ## Variables
@@ -30,7 +31,11 @@ With each POST call the following variables are sent over:
     </tr>
     <tr>
         <td>url</td>
-        <td>the clicked url (the link <i>before</i> it was rewritten)</td>
+        <td>the clicked url (this is the link to the SMTPeter server)</td>
+    </tr>
+    <tr>
+        <td>original</td>
+        <td>the original url (this is the link to which the user was redirected)</td>
     </tr>
     <tr>
         <td>useragent</td>
@@ -40,7 +45,11 @@ With each POST call the following variables are sent over:
         <td>referer</td>
         <td>optional referer (extracted from http request header)</td>
     </tr>
+    <tr>
+        <td>tags</td>
+        <td>the tags that you associated with the mail</td>
+    </tr>
 </table>
 
-The "id" and "recipient" variables allow you to link the click to the 
+The "id", "recipient" and "tags" variables allow you to link the click to the 
 originally sent email message.
