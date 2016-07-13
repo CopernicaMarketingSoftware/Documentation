@@ -15,10 +15,10 @@ will see the webversion tailored with his of her details.
 ## Include webversion link inside a text block
 
 A link to the webversion can also be added inside a text / HTML block, 
-by creating a link, and point it to `{webversion}`. 
+by creating a link, and point it to `{$webversion}`. 
 
 Example:
 
 ```
-<a href="{webversion}">Click here to view the webversion</a>
+<a href="{$webversion}">Click here to view the webversion</a>
 ```
