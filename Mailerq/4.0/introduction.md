@@ -24,16 +24,16 @@ your delivery settings. The default location is `http://your-server-name:8485`.
 
 MailerQ runs on Linux, so you need a Linux server or Linux computer to be
 able to start and run MailerQ. We distribute the software in binary form for
-Debian/Ubuntu based systems and for Red Hat based systems. Please drop us a 
+Debian/Ubuntu based systems and for Red Hat based systems. Please drop us a
 message if you need a version for a different type of system.
 
-The binary executable that you can download is statically linked against most 
-libraries. This means that all the libraries required by MailerQ are embedded 
+The binary executable that you can download is statically linked against most
+libraries. This means that all the libraries required by MailerQ are embedded
 into the binary code, and that MailerQ runs straight out of the box with no need
-for you to fix all kinds of dependencies. However, when MailerQ starts, it does 
-do a scan of your system to detect which libraries are available. If MailerQ 
-happens to find out that one or more of the following libraries 
-are available on your system, it does load them to use specific features 
+for you to fix all kinds of dependencies. However, when MailerQ starts, it does
+do a scan of your system to detect which libraries are available. If MailerQ
+happens to find out that one or more of the following libraries
+are available on your system, it does load them to use specific features
 from these libs:
 
 <table>
@@ -67,7 +67,7 @@ from these libs:
     </tr>
     <tr>
         <td>libimagemagick</td>
-        <td>Used to find out the size of images</td> 
+        <td>Used to find out the dimensions of images</td>
     <tr>
         <td>libmysqlclient</td>
         <td>Used to connect to a mysql/mariadb database</td>
@@ -94,12 +94,11 @@ from these libs:
     </tr>
 </table>
 
-From the above list, only the openssl and libz libraries are required. All 
-other libraries are optional, and MailerQ can run without them. If a library 
-is missing, MailerQ will either fall back on its own implementation, or will 
+From the above list, only the openssl and libz libraries are required. All
+other libraries are optional, and MailerQ can run without them. If a library
+is missing, MailerQ will either fall back on its own implementation, or will
 run without the features from the specific library.
 
 Most of the MailerQ runtime settings are stored in a relational database.
 This means that you must have at least one of the mysql, mariadb, postgresql
 or sqlite3 libraries installed on your system.
- 

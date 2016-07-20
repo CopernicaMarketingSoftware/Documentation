@@ -1,9 +1,9 @@
 # Message store options
 
-To reduce the load on RabbitMQ, MailerQ can be set 
+To reduce the load on RabbitMQ, MailerQ can be set
 up to use an external message store. If you do this, only the email meta
-data (like the recipient, the envelope address, et cetera) has to be 
-stored in the JSON object that is published to RabbitMQ, while the full 
+data (like the recipient, the envelope address, et cetera) has to be
+stored in the JSON object that is published to RabbitMQ, while the full
 MIME data can be stored in the message store.
 
 ```
@@ -14,16 +14,16 @@ storage-ttl:            3600
 ```
 
 The message store is completely optional: if you set the "storage-address"
-variable to an empty string, MailerQ works just as well (even faster 
-because no extra communication with the storage server is necessary), but 
+variable to an empty string, MailerQ works just as well (even faster
+because no extra communication with the storage server is necessary), but
 the load on RabbitMQ and the network will be much higher.
 
 
 ## Supported storage engines
 
-A number of different storage systems are supported: Couchbase, MongoDB 
-or plain files stored on the local file system. In theory it is also 
-possible to use MySQL, SQLite or PostgreSQL, but it is better 
+A number of different storage systems are supported: Couchbase, MongoDB
+or plain files stored on the local file system. In theory it is also
+possible to use MySQL, SQLite or PostgreSQL, but it is better
 not to use a relational database, because such systems are not optimized
 for document storage.
 
@@ -39,8 +39,8 @@ storage-address:        postgresql://user:password@hostname/databasename
 storage-address:        dir:///path/to/directory
 ```
 
-If you have a cluster of Couchbase or MongoDB servers, you can split the 
-hostnames with semicolons (`;`). For MongoDB you can also specify 
+If you have a cluster of Couchbase or MongoDB servers, you can split the
+hostnames with semicolons (`;`). For MongoDB you can also specify
 the name of the replica set in the address if you have more than one server.
 
 ```
@@ -75,14 +75,28 @@ storage-address:        mongodb://hostname/database/collection?readAttempts=3
 The default number of attempts is 1. If you want to repeat failed lookups
 a couple of times, you can pass in a higher value.
 
+MongoDB has a limitation of around 16 MB per document (there is some overhead
+due to the usage of their internal BSON representation). We work around this
+by splitting larger messages into different keys. Assuming the message ID is
+"abc" (without the quotes) and has a size of 20 MB, we will store it under
+the following keys:
+
+abc\00\02
+abc\01\02
+
+This is the original key, followed by a NULL character, followed by the
+sequence, another NULL character and then the number of parts. If you wish
+to add messages to mongo yourself and have MailerQ read them you should use
+the same scheme for messages that don't fit into a single document.
+
 
 ## Threads
 
-Strangely enough, most storage drivers only offer a synchronous and blocking 
-API. This means that storage operations can only be started after previous 
-operations were completed. To prevent that the entire MailerQ process gets 
-blocked while a storage operation is in progress, MailerQ maintains multiple 
-connections to the storage servers, and starts seperate threads in which the 
+Strangely enough, most storage drivers only offer a synchronous and blocking
+API. This means that storage operations can only be started after previous
+operations were completed. To prevent that the entire MailerQ process gets
+blocked while a storage operation is in progress, MailerQ maintains multiple
+connections to the storage servers, and starts seperate threads in which the
 storage operations are being executed.
 
 The number of threads (and the number of storage connections) can be set
@@ -93,13 +107,13 @@ the throughput of storage operations gets better too.
 ## Storage policy
 
 The "storage-policy" config file setting tells MailerQ what
-type of messages should be stored in the message store. Valid values are "all", 
+type of messages should be stored in the message store. Valid values are "all",
 "out", "in" and "none". The "none" setting is meaningful if you only want
-MailerQ to *retrieve* mime data from external storage, without ever 
+MailerQ to *retrieve* mime data from external storage, without ever
 storing them.
 
 Before MailerQ publishes a message to RabbitMQ (for example, before it
-sends a received message to the inbox queue, or before it send a delayed 
+sends a received message to the inbox queue, or before it send a delayed
 message back to the outbox queue) it checks the storage policy to see
 whether the mime data should be sent to RabbitMQ too, or that the mime
 data should be stored in a different storage system.
@@ -107,30 +121,30 @@ data should be stored in a different storage system.
 If you want all messages to be stored in the message store, use the "all"
 policy. If this policy is enabled, MailerQ checks each JSON object
 before it gets published to RabbitMQ. If the JSON still contains mime data,
-MailerQ removes this data from the JSON and stores it in the message 
+MailerQ removes this data from the JSON and stores it in the message
 store instead. The JSON data will be updated with a "key" property that
 refers to the data in the message store.
 
-The "in" and "out" policies are more complex. The "out" policy instructs 
-MailerQ to use the message store for outgoing messages only. If a 
-message is greylisted or delayed and is published back to the outbox, 
-MailerQ first strips the mime data from the JSON, and stores that in 
+The "in" and "out" policies are more complex. The "out" policy instructs
+MailerQ to use the message store for outgoing messages only. If a
+message is greylisted or delayed and is published back to the outbox,
+MailerQ first strips the mime data from the JSON, and stores that in
 the message store. Incoming messages (like the ones that come in on the
 SMTP port, or the messages dropped in the spool directory) are not checked
 and the full mime data is published to RabbitMQ.
 
-The "out" policy is often used, because most emails get delivered at the 
-very first attempt, and it is therefore often a waste of resources 
+The "out" policy is often used, because most emails get delivered at the
+very first attempt, and it is therefore often a waste of resources
 to store incoming messages first in a NoSQL environment: the messages will
-probably be retransmitted a fraction of a second later. By using the "out" 
-storage policy, initial injected emails are completely sent to RabbitMQ. Only 
-if the initial delivery fails and the message is sent back to the outbox for later 
-delivery, the full MIME data is stripped from the JSON and stored in the 
+probably be retransmitted a fraction of a second later. By using the "out"
+storage policy, initial injected emails are completely sent to RabbitMQ. Only
+if the initial delivery fails and the message is sent back to the outbox for later
+delivery, the full MIME data is stripped from the JSON and stored in the
 separate storage.
 
 The "out" policy especially makes sense in setups where the majority of
-all deliveries succeed at the first attempt, and rescheduled attempts are 
-likely to be pumped around between MailerQ and RabbitMQ for a number of times. 
+all deliveries succeed at the first attempt, and rescheduled attempts are
+likely to be pumped around between MailerQ and RabbitMQ for a number of times.
 
 Only "all", "out" and "none" are meaningful policies. For completeness however,
 we also support the "in" property which does exactly the opposite as the "out"
@@ -144,11 +158,11 @@ has to be published back to the outbox, the mime data is kept inside RabbitMQ.
 When you store messages, you probably don't want to keep them forever in
 your message store. To overcome this, every message has a time-to-live value,
 and expired message are automatically removed from storage. The "storage-ttl"
-config option specifies the default time-to-live that is used for message 
+config option specifies the default time-to-live that is used for message
 that are stored in the document store.
 
 Note that the time-to-live is added _to the mail max delivery time_. If you try
-to send out an email using MailerQ, and that email has to be delivered within 
+to send out an email using MailerQ, and that email has to be delivered within
 24 hours, and your "storage-ttl" is set to 3600 seconds (one hour), the
 mime data will be stored in NoSQL for at most 25 hours.
 

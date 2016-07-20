@@ -9,7 +9,7 @@ advantages and disadvantages. This article discusses these.
 
 Embedding an image in an mail can be seen as adding it as an attachment
 to the mail. Yet, in contrast to an attachment you can link within the html
-part of the mail to the image. Morevoer, the image should not show up in
+part of the mail to the image. Moreover, the image should not show up in
 the attachments list. Since the data of the image is embedded within the
 mail message, the data is theoretically available when a mail is received.
 Therefore, the receiver does not have to accept images in order to see
@@ -55,7 +55,7 @@ the links in the html part of your mime.
 
 If you send your mails using SMTP you can add:
 ```txt
-x-smtpeter-embedded: hosted
+x-smtpeter-images: hosted
 ```
 to your mime header to activate this feature. Or enable this feature for
 an SMTP login in the dashboard.
