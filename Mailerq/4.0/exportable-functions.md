@@ -73,4 +73,5 @@ call them every time a message is being sent.
 
 | Function name                                                 | Description                                             |
 |---------------------------------------------------------------|---------------------------------------------------------|
-| [mq_smtp_out_data()](mq_smtp_out_data) | Called by MailerQ when the connection enters data state |
+| [mq_smtp_out_data()](mq_smtp_out_data) | Called by MailerQ when the connection enters data state  |
+| [mq_smtp_out_sent()](mq_smtp_out_sent) | Called by MailerQ after all mime data has been sent      |
