@@ -77,17 +77,19 @@ a couple of times, you can pass in a higher value.
 
 MongoDB has a limitation of around 16 MB per document (there is some overhead
 due to the usage of their internal BSON representation). We work around this
-by splitting larger messages into different keys. Assuming the message ID is
-"abc" (without the quotes) and has a size of 20 MB, we will store it under
-the following keys:
+by splitting larger messages into smaller messages. Assume a message has a
+size of 20 MB and has to be stored with ID "abc" (without the quotes). This
+is impossible because the message is too big for MongoDB. We will therefore
+split the message, and store it using the following keys:
 
-abc\00\02
-abc\01\02
+* abc\00\02
+* abc\01\02
 
-This is the original key, followed by a NULL character, followed by the
-sequence, another NULL character and then the number of parts. If you wish
-to add messages to mongo yourself and have MailerQ read them you should use
-the same scheme for messages that don't fit into a single document.
+This is the original key ("abc"), followed by a NULL character to mark it
+as a message that was split up ("\0"), followed by the sequence number
+(ascii "0"), another NULL character ("\0") and then the total number of parts
+(ascii "2"). If you wish to add messages to mongo yourself you should use the 
+same scheme for message that are too large.
 
 
 ## Threads
@@ -110,7 +112,7 @@ The "storage-policy" config file setting tells MailerQ what
 type of messages should be stored in the message store. Valid values are "all",
 "out", "in" and "none". The "none" setting is meaningful if you only want
 MailerQ to *retrieve* mime data from external storage, without ever
-storing them.
+staring storage operations.
 
 Before MailerQ publishes a message to RabbitMQ (for example, before it
 sends a received message to the inbox queue, or before it send a delayed
