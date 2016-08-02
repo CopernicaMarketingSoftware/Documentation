@@ -77,19 +77,19 @@ a couple of times, you can pass in a higher value.
 
 MongoDB has a limitation of around 16 MB per document (there is some overhead
 due to the usage of their internal BSON representation). We work around this
-by splitting larger messages into smaller messages. Assume a message has a
-size of 20 MB and has to be stored with ID "abc" (without the quotes). This
-is impossible because the message is too big for MongoDB. We will therefore
-split the message, and store it using the following keys:
+by splitting up large messages into smaller parts. Assume a message has a
+size of 20 MB and should be stored with ID "abc" (without the quotes). This
+is impossible because the message would be too big for MongoDB. We therefore
+split up the message, and store it using keys:
 
-* abc\00\02
-* abc\01\02
+* "abc\00\02"
+* "abc\01\02"
 
 This is the original key ("abc"), followed by a NULL character to mark it
 as a message that was split up ("\0"), followed by the sequence number
 (ascii "0"), another NULL character ("\0") and then the total number of parts
 (ascii "2"). If you wish to add messages to mongo yourself you should use the 
-same scheme for message that are too large.
+same scheme for large messages.
 
 
 ## Threads
