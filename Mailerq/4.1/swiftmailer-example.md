@@ -6,7 +6,7 @@ If you use Swift Mailer as your main mail engine in your project you can
 to extend functionality of the Swift Mailer. Below you can find an example 
 showing how to combine those two projects together.
 
-<!-- TODO this is not MailerQ 4.0-ready! -->
+<!-- TODO this is not MailerQ 4.1-ready! -->
 ## `example.php`
 
 ```php
