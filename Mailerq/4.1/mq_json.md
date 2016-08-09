@@ -1,10 +1,10 @@
-<h1>Function MQ_Json</h1>
+<h1>Function MQ_json</h1>
 <p>
     If you want to get access to the JSON data that was loaded from RabbitMQ
     (for plugins that interact with messages that are going to be sent)
     and/or with the JSON data that is going to be published to RabbitMQ
     (for plugins that want to modify incoming messages), you can call
-    the <a href="mq_json">MQ_Json()</a> function.
+    the <a href="mq_json">MQ_json()</a> function.
 </p>
 <p>
     This function returns a 
@@ -20,7 +20,7 @@
  *  @param  message the message to retrieve the JSON from
  *  @return json    pointer to the JSON object
  */
-struct json_object *<a href="mq_json">MQ_Json</a>(<a href="mq_message">MQ_Message</a> *message);
+struct json_object *<a href="mq_json">MQ_json</a>(<a href="mq_message">MQ_Message</a> *message);
 </code></pre>
 <p>
     For more information on how to work with the JSON structure,
