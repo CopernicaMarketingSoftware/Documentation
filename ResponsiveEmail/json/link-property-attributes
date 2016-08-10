@@ -1,0 +1,24 @@
+# Property `attributes`
+
+The `attributes` property nested inside a [`link`](../json/property-link) object allows you to add custom attributes to be applied to the generated link. You must thus be aware that it might break the email lay-out or responsiveness in some clients.
+
+
+```javascript
+{
+    "subject" : "link example",
+    "from" : "info@example.com",
+    "content" : {
+        "blocks" : [ {
+            "type" : "button",
+            "label" : "Click me",
+            "link" : {
+                "url" : "http://www.dustsckr2000.com/models/P2000",
+                "title": "Yes, you can click me",
+                "attributes" : {
+                    "data-test" : "Hello world"
+                }
+            }
+        } ]
+    }
+}
+```
