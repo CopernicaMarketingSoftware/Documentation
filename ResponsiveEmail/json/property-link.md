@@ -11,6 +11,7 @@ a full JSON object, containing the properties of the links. See table below.
 | [url](../json/property-link-url) | _string_ | The online location where user is redirected to.                        |
 | [title](../json/property-link-title) | _string_ | The link title / description.                                       |
 | [params](../json/property-link-params) | _object_ | Add or overwrite URL query strings, presented as a key-value pair |
+| [attributes](../json/property-link-attributes) | _object_ | Add attributes to the anchor tag, presented as a key-value pair |
 
 ## Example
 
@@ -33,6 +34,9 @@ email has exactly the same link, but here the `link` property is given a string 
                     "title" : "Proof that it doesn't exist",
                     "params" : {
                         "type" : "nonbelieber"
+                    },
+                    "attributes" : {
+                        "data-test": "It works!"
                     }
                 }
             }, 
