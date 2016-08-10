@@ -1,12 +1,12 @@
 # DKIM signatures
 
 Almost every email message has a "from" address. This is the email
-address from which the email _appears_ to come from, and that is displayed
+address the email _appears_ to come from, and which is displayed
 above the message body in the user agent. If you hit the reply button,
 this is also the address to which the reply is going to be sent (unless
 the mail also contains a "reply-to" header).
 
-We intentionally write that it is the address from which the "_appears_" 
+We intentionally say it is the address the message "_appears_" 
 to come from. If you send mail, you can use every possible email address 
 as the from address, even addresses that do not even belong to you. This
 freedom can be used for harmless practical jokes ("see, you just got an email
@@ -24,19 +24,19 @@ is published in a DNS record of your domain, so that everyone can _check_
 whether a signature really came from you. This technology ensures that mails 
 can only be signed by you, and that they can be verified by
 everyone else (because everyone has access to the public key to check
-the signatures). This makes it impossible for spammers, fishers, or anyone
+the signatures). This makes it impossible for spammers, phishers, or anyone
 else to use your domain as from address and sign mails out of your name, 
 simply because they do not have access to your private key.
 
 
 ## Singing of messages
 
-SMTPeter can sign your mails with DKIM. For this SMTPeter needs to know
-which from addresses you use with SMTPeter. You can configure
-these, what we call sender domains, via SMTPeter's dashboard. If you create
+SMTPeter can sign your mails with DKIM. In order to do this SMTPeter needs to know
+which from addresses you use with SMTPeter. You can configure something called
+sender domains via SMTPeter's dashboard. If you create
 a sender domain, SMTPeter creates DKIM keys and informs you how to update
 the DNS records. This is a one time procedure. Once a sender domain is
-configured SMTPeter automatically signs mails with from addresses identical
+configured, SMTPeter automatically signs mails with from addresses identical
 to the sender domain.
 
 Do you already have private and public key pairs, and do you want
@@ -57,11 +57,11 @@ different from address SMTPeter will see if it can use one of your sender
 domain keys and still fulfill all necessary requirements.
 
 
-## Automatic DKIM keys rotation
+## Automatic DKIM key rotation
 
 The private keys are stored on the SMTPeter servers and are never exposed.
 The technology behind the public and private keys is very secure, yet, if
 someone spends a lot of time on it, keys can be broken. Therefore, you
-do want to use new keys every now and then. If you use SMTPeter's standard
-suggestions, you will get this behavior automatically. If you want to use
-SMTPeter with your own generated keys, updating the keys is left to you.
+want to generate new keys every now and then. If you use SMTPeter's standard
+suggestions, it will rotate your keys automatically. If you want to use
+SMTPeter with your own generated keys, updating the keys is your own responsibility.
