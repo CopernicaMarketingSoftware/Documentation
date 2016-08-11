@@ -20,9 +20,9 @@ DNS provider) and that's basically all there is to it: after you've followed
 our recommendations you can use the Marketing Suite to send email.
 
 
-## A little more details
+## A little more detail
 
-Lets be honest here. Sending email is getting more and more complicated. 
+Let's be honest here. Sending email is getting more and more complicated. 
 There are a lot of things to care about: you have to set up SPF records in 
 your DNS in which you list all IP addresses from which you send out email, 
 you need rotating public/private key pairs for DKIM signatures, and you 
@@ -31,10 +31,10 @@ you are the only one who uses your domain to send mail.
 
 With "sender domains" the Marketing Suite takes all these responsibilities out of your 
 hands. We create your SPF, DKIM and DMARC records and store them 
-on _our_ DNS servers. All that you have to do is create a couple of records 
-in _your_ DNS record (or ask/instruct your DNS provider to do so) that points 
+on _our_ DNS servers. All you have to do is create a couple of records 
+in _your_ DNS record (or ask/instruct your DNS provider to do so) that point 
 to our records. If we make a change to the DNS (for example, because we rotate 
-one of your private DKIM keys), it gets automatically propagated over the 
+one of your private DKIM keys), it automatically gets propagated over the 
 internet, because your DNS records just point to our records.
 
 In our DNS (using *.smtpeter.com subdomains) we set up the following records:
@@ -62,19 +62,19 @@ emails for which you've set up a sender domain can be signed.
 If you set up a sender domain you are asked to configure your tracking and
 bounce domains. These are the hostnames that we use to track clicks,
 opens and errors. The suggested defaults, "clicks.yourdomain.com" and 
-"bounce.yourdomain.com" are for most users sufficient. 
+"bounce.yourdomain.com" are sufficient for most users. 
 
-But be aware that if you configure the Marketing Suite to track clicks, all hyperlinks 
+Be aware, though, that if you configure the Marketing Suite to track clicks, all hyperlinks 
 in your emails are going to be rewritten to use the click domain. The default
 "clicks.yourdomain.com" might look like a tracking domain to your users (which 
 is not that strange, given the fact that it actually _is_ a tracking domain).
-If you rather have urls that look more neutral (for example "specialoffers.yourdomain.com",
+If you'd rather have urls that look more neutral (for example "specialoffers.yourdomain.com",
 or "www2.yourdomain.com") you can change the click domain in the
 sender domain configuration.
 
 The same applies to the bounce domain, although the bounce domain is less 
 visible for the receivers of your email. It is only used for the envelope
 domain, and the envelope domain is normally not shown to users, unless they
-are going to inspect the original email source.
+want to inspect the original email source.
 
 
