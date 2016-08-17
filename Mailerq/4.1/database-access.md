@@ -112,7 +112,11 @@ not use vendor specific SQL features and we've kept all tables as simple
 as possible. The tables use well known data types, and no foreign 
 keys or constraints. Booleans are stored as integers and "NULL" and "0" values 
 have the same semantics. The value "0" is often used to set something to 
-"unlimited"
+"unlimited", while "-1" values are used to fall back on the default setting.
+
+All data is stored in the tables in UTF8 encoding. If you use international
+domain names and/or international email address, you should store them in UTF8
+format in the database.
 
 The following tables are created:
 
