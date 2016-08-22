@@ -5,10 +5,13 @@ All these incoming messages are published to RabbitMQ. The incoming
 messages are published the the inbox queue, set with the "rabbitmq-inbox"
 setting in the config file. 
 
-Most users give the "rabbitmq-inbox" setting the same value as the "rabbitmq-outbox" 
-setting, so that all incoming emails are automatically published to the outbox 
-queue, from which they are then directly picked up again and scheduled for 
-immediate forwarding.
+Remember that MailerQ sends out message from the _outbox_ queue - which is
+a different queue that the inbox queue to which incoming messages are published. 
+By default, incoming message are therefore not immediately sent out again. To
+overcome this, most MailerQ users give the "rabbitmq-inbox" setting the same 
+value as the "rabbitmq-outbox" setting. All incoming emails are then automatically 
+published to the outbox queue, from which they are then directly picked up again 
+and scheduled for immediate forwarding.
 
 ![MailerQ shared inbox outbox queue](../Images/mailerq-shared-inbox-outbox-queue.png)
 
@@ -48,23 +51,34 @@ all of them. If you want to limit this, you can assign an explicit IP
 address using the "smtp-ip" variable. If you set this, MailerQ will
 only accept incoming connections to that specific IP.
 
-The IP address to which you send a message to MailerQ, is the same as 
-the address *from* which the mail is going to be forwarded. Thus, if you 
-send an email to MailerQ listening on IP address 5.6.7.8, the message will 
-also be sent out from this IP.
-
 The "smtp-port" setting contains the port number for the normal SMTP
 protocol. The SMTP protocol starts as a non-secure connection, but
 the client and server can start a STARTTLS handshake to secure the connection.
-However, besides normal SMTP connections, you can also open already secured SMTP 
+Besides normal SMTP connections, you can also open already secured SMTP 
 ports with the "smtp-secure-port" setting. A secure port uses TLS right from 
 the start, and no STARTTLS handshake is necessary. This is slightly faster 
 (the initial handshake can be skipped) and is also more secure (the initial 
-EHLO message can not be intercepted). However, such encrypted 
-connections are not part of the SMTP standard, and regular SMTP clients do not 
-expect this. However, if you write your own SMTP handshake code, it sometimes 
-is simpler and faster to have access to a connection that is already 
-encrypted without using "STARTTLS".
+EHLO message can not be intercepted). However, such encrypted connections are 
+not part of the SMTP standard, and regular SMTP clients do not expect this. 
+However, if you write your own SMTP handshake code, it sometimes is simpler 
+and faster to have access to a connection that is already encrypted without 
+using "STARTTLS".
+
+The IP address to which you send a message to MailerQ, is the same as 
+the address *from* which the mail is going to be forwarded. Thus, if you 
+send an email to MailerQ listening on IP address 5.6.7.8, the message will 
+also be sent out from this IP. If you want to send out the message from a
+different IP instead, you should either add a special MIME header to your
+mail ("x-mq-ip"), or you can use the "smtp-defaultip" config file variable.
+
+````
+smtp-defaultip:     5.6.7.8
+````
+
+The above config file setting tells MailerQ to send out incoming mail from
+IP address 5.6.7.8 -- even when it was originally received on a different IP
+address. You should leave this option out of the config file if you want to 
+send out incoming mails from the same IP address as to which you submitted them.
 
 
 ### Secure connections
