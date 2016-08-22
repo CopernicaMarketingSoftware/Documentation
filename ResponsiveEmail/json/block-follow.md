@@ -21,6 +21,13 @@ All available properties of this block type are mentioned in the table below.
 | [container](../json/property-container) | _object_ | Access to the surrounding container.                                                                                       |
 | [align](../json/property-align) | _string_ | The alignment of the social media icons of this block and their label text.                                                        |
 
+## Attributes
+
+Just like any other block we do support custom attributes. But as a follow block
+is essentially a collection we support custom attributes for each element. Because
+of this attributes are applied slightly differently. Simply create a element with the
+name of the platform in the root of the follow block. Within there you create a regular
+[attributes](../json/property-attributes) block as seen in the example.
 
 ## Example usage
 
@@ -44,6 +51,11 @@ the basic usage, showing a set of follow buttons.
                 "facebook" : "copernica",
                 "twitter"  : "https://twitter.com/copernica"
             },
+            "facebook" : {
+                "attributes" : {
+                    "data-tag" : "facebook click"
+                }
+            }
         } ]
     }
 }

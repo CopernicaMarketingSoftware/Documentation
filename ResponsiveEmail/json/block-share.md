@@ -25,6 +25,14 @@ All available properties of this block type are mentioned in the table below.
 | [container](../json/property-container) | _object_ | Access to the surrounding container.                                                 |
 | [align](../json/property-align) | _string_ | The alignment of the social media icons of this block and their label text.                                               |
 
+## Attributes
+
+Just like any other block we do support custom attributes. But as a share block
+is essentially a collection we support custom attributes for each element. We
+support [attributes](../json/property-attributes) in the same way that we support
+the custom platform settings. Meaning you can simply add the
+[attributes](../json/property-attributes) object to the platform object.
+
 ## Example usage
 
 The following input JSON shows how to show a share block in a document. This is
@@ -48,14 +56,17 @@ the basic usage, showing a set of share buttons.
                 "title"     : "Post title"
             },
             "description"   : "Optional prefilled text to share",
-            "platforms" : ["facebook", "twitter", "linkedin", "googleplus"],
+            "platforms" : [ "facebook", "twitter", "linkedin", "googleplus" ],
             "facebook"  : {
                 "appid"        :   "123456789101112",
                 "redirect_uri" :   "https://www.copernica.com"
             },
             "twitter"  : {
-                "hashtags"     :   ["responsive", "email", "copernica"],
+                "hashtags"     :   [ "responsive", "email", "copernica" ],
                 "via"          :   "ResponsiveEmail",
+                "attributes"   :   {
+                    "tag"      :   "twitter click"
+                }
             } 
         } ]
     }
