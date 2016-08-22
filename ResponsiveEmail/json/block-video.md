@@ -38,7 +38,7 @@ the video on youtube when clicked:
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo"
+            "url"    : "https://www.youtube.com/watch?v=zSQCH1qyIDo"
         } ]
     }
 }
@@ -58,7 +58,7 @@ webpage. To do this, set the 'embed' property to true (it is false by default).
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
+            "url"    : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
             "embed"  : true
         } ]
     }
@@ -84,10 +84,13 @@ the video will still be embedded directly into the webversion.
     "content" : {
         "blocks" : [ {
             "type"   : "video",
-            "url" : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
+            "url"    : "https://www.youtube.com/watch?v=zSQCH1qyIDo",
             "link"   : {
-                "url"   : "http://www.example.com/video",
-                "title" : "Watch the video"
+                "url"        : "http://www.example.com/video",
+                "title"      : "Watch the video",
+                "attributes" : {
+                    "tag"    : "video click"
+                }
             }
         } ]
     }
