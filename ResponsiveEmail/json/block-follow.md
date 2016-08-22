@@ -23,7 +23,7 @@ All available properties of this block type are mentioned in the table below.
 
 ## Attributes
 
-Just like any other block we do support custom attributes. But as a follow block
+Just like some other blocks we support to apply custom attributes on the links. But as a follow block
 is essentially a collection we support custom attributes for each element. Because
 of this attributes are applied slightly differently. Simply create a element with the
 name of the platform in the root of the follow block. Within there you create a regular

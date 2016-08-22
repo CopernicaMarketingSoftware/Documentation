@@ -27,7 +27,7 @@ All available properties of this block type are mentioned in the table below.
 
 ## Attributes
 
-Just like any other block we do support custom attributes. But as a share block
+Just like some other blocks we support to apply custom attributes on the links. But as a share block
 is essentially a collection we support custom attributes for each element. We
 support [attributes](../json/property-attributes) in the same way that we support
 the custom platform settings. Meaning you can simply add the
