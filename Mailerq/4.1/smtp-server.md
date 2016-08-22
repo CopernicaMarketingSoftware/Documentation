@@ -6,7 +6,7 @@ messages are published the the inbox queue, set with the "rabbitmq-inbox"
 setting in the config file. 
 
 Remember that MailerQ sends out message from the _outbox_ queue - which is
-a different queue that the inbox queue to which incoming messages are published. 
+a different queue than the inbox queue to which incoming messages are published. 
 By default, incoming message are therefore not immediately sent out again. To
 overcome this, most MailerQ users give the "rabbitmq-inbox" setting the same 
 value as the "rabbitmq-outbox" setting. All incoming emails are then automatically 
