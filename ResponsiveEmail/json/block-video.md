@@ -11,9 +11,9 @@ All available properties of this block type are mentioned in the table below.
 
 ##  Video block properties
 
-| Property | Value | Description                                                                                                                                               |
-|:---------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type | "video" | Property to identify the block as a video block.                                                                                                            |
+| Property | Value | Description                                                                                                                   |
+|:---------|-------|-------------------------------------------------------------------------------------------------------------------------------|
+| type | "video" | Property to identify the block as a video block.                                                                                |
 | [url](../json/property-url) | _string_ | The video source URI                                                                                    |
 | [link](../json/property-link) | _mixed_ | A string with the link target, or an object with the properties `url`, `title` and `params`.           |
 | [embed](../json/property-embed) | _boolean_ | A boolean indicating whether or not the full video should be embedded when displaying a webversion |
@@ -23,6 +23,7 @@ All available properties of this block type are mentioned in the table below.
 | [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                              |
 | [visibility](../json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                                       |
 | [container](../json/property-container) | _object_ | Access to the surrounding container                                                         |
+| [attributes](../json/property-attributes) | _object_ | Attributes that will be applied on the href tag                                           |
 
 ## Example usage
 
