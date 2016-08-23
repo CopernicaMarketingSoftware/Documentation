@@ -5,7 +5,7 @@ rich and powerful email campaigns.
 
 ## New to MS?
 If you're just starting out with Copernica Marketing Software, you might benefit from our 
-[Marketing Suite starter guide](starter-guide.md).
+[Marketing Suite starter guide](starter-guide.).
 
 ## Drag and drop Template Editor
 
