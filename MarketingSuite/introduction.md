@@ -3,6 +3,10 @@
 The Copernica Marketing Suite is Copernica's application for building 
 rich and powerful email campaigns.
 
+## New to MS?
+If you're just starting out with Copernica Marketing Software, you might benefit from our 
+[Marketing Suite starter guide](starter-guide.md).
+
 ## Drag and drop Template Editor
 
 Composing rich email messages in the Marketing Suite does not require 
