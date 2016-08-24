@@ -12,3 +12,4 @@ data in the respective order:
 | envelope    | The envelope of the message                                   |
 | recipient   | The recipient of the message                                  |
 | mime        | The mime content                                              |
+| tags        | The tags of the message that bounced, separated by semicolons |
