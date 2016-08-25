@@ -16,7 +16,7 @@ The dialog from which you can export the results of a survey
 ### **Opening results with Excel**
 
 Open a an empty Excel file. Choose **'import external data**' from the
-Data menu.\
- These steps are usually processed automatically, so just go through
+Data menu. \
+These steps are usually processed automatically, so just go through
 them to the end. Complete the import to display the results of each
 participant in Excel.

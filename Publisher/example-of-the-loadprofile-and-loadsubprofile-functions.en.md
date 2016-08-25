@@ -32,9 +32,8 @@ Now you could of course store all these data in each database profile
 seperately, however this is not very convenient and certainly not very
 manageable. Suppose that one office moves to a different physical
 location. This would require you to change all of the profiles
-affiliated with this office.\
-\
- An easy way to eliminate this problem is by storing the office and
+affiliated with this office. \
+An easy way to eliminate this problem is by storing the office and
 account manager information into a seperate database and then link this
 to the individual clients. You can accomplish this with the
 *loadprofile* and *loadsubprofile* functions.

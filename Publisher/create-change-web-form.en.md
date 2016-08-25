@@ -26,9 +26,8 @@ and link it to the database containing your subscribers.
 
 **Tip.** You can write a value to the database that is different from
 the value that is shown in the web form by placing two colons (::)
-in-between the two values, as follows:\
-\
- Yes::Yeah, I would like to receive your news letter!
+in-between the two values, as follows: \
+Yes::Yeah, I would like to receive your news letter!
 
 ![](1.png)
 

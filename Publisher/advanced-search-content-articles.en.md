@@ -53,11 +53,10 @@ they begin with the word preceding the \* operator.
 “ (double quote)
 
 A phrase that is enclosed within double quote (“"”) characters matches
-only rows that contain the phrase literally, as it was typed.\
- Non-word characters do not have to match exactly. For example,
-"marketing software" matches "marketing, software".\
-\
- The following examples demonstrate some search strings that use
+only rows that contain the phrase literally, as it was typed. \
+Non-word characters do not have to match exactly. For example,
+"marketing software" matches "marketing, software". \
+The following examples demonstrate some search strings that use
 full-text operators:
 
 -   *apple banana*

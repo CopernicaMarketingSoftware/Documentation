@@ -15,8 +15,8 @@ A removed question is irretrievable from the application.
 
 ### To add or edit a question
 
-To add or edit questions in a survey, first select the survey.\
- Then choose new question or edit question from the Survey menu.
+To add or edit questions in a survey, first select the survey. \
+Then choose new question or edit question from the Survey menu.
 
 The dialogue window for editing will show the current question in an
 overview on the left. On the right are the text and settings of the
@@ -40,6 +40,5 @@ account.
 ### To move a question
 
 Select the question that you would like to move to a different
-position.\
- Choose Move question from the bottom toolbar.\
- Enter a new position for this question.
+position. Choose Move question from the bottom toolbar. \
+Enter a new position for this question.

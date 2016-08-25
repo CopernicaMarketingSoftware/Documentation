@@ -14,8 +14,7 @@ name*, *family name*and *title*.
 You may add as much fields to a database or collections as needed. 
 
 **Note:** This article is covers both database and collection fields
-unless stated otherwise. \
-\
+unless stated otherwise.
 
 ![](edit_database_fields.png "edit_database_fields.png")
 
@@ -109,9 +108,9 @@ should be default, you can use an asterisk (\*) in the database field
 settings to mark it. In the next example, the city Hamburg is the
 default value:
 
-> Berlin\
->  Bonn\
->  Hamburg\
+> Berlin
+>  Bonn
+>  Hamburg
 >  Frankfurt\*
 
 Note, a multiple choice field is not automatically depicted as a drop
@@ -154,7 +153,6 @@ The edit fields dialog comes with some additional options.
 ### This field is a hidden field that will not show when editing profiles
 
 The field is not shown when editing a profile or subprofile. \
-\
 Use this option for passwords fields or fields which should only be
 editable by profiles themselves (via web forms).
 

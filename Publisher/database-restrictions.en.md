@@ -32,7 +32,7 @@ A database restriction is created in a few steps
 ### Block values or block duplicates
 
 Database restrictions can be (separately) configured for databases and
-collections.\
+collections. \
  We differentiate between two restriction types:
 
 -   **Block certain field values:** Choose this restriction type if you
@@ -67,8 +67,8 @@ if there's already a profile with the e-mail address
 same e-mail address. Or check both 'street' & 'city', if the combination
 of those field values should be unique.
 
-**When adding a rule, please note:**\
- Like with selections and miniselections, rules to restrictions can be
+**When adding a rule, please note:** \
+Like with selections and miniselections, rules to restrictions can be
 combined. If you add a condition AND another condition in the same rule
 - the profile can only be valid if it adheres to both conditions. If you
 add a conditions to two different rules (OR) - the profile is valid if
@@ -86,7 +86,7 @@ To disable a restriction : select ‘**This restriction is not in use**’
 which can be found in the Name and description tab.
 
 To disable a restriction rule, select ‘**This condition is disabled**’
-in the conditions tab.\
+in the conditions tab.
 
 **Important note:** If a restriction has one single ‘OR’ rule which is
 completely disabled, no (sub)profile fields will match the restriction

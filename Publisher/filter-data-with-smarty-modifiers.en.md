@@ -1,8 +1,8 @@
 Your database may contain typing errors or style errors. Especially if
 some of it is added through web forms (user input). For example some
 people will type their last name all in capitals, others will forget to
-capitalize at all.\
- To ensure that your data looks neat in mailings you can style the
+capitalize at all. \
+To ensure that your data looks neat in mailings you can style the
 variables in a document using smarty variable modifiers.
 
 Variable modifiers can be applied to variables, custom functions (smarty
@@ -12,8 +12,7 @@ parameters that affect its behaviour. These parameters follow the
 modifier name and are separated by a : (colon).
 
 More information and a complete list of available smarty modifiers can
-be found at the [Smarty
-website](http://www.smarty.net/docsv2/en/language.modifiers "Smarty modifiers")
+be found at the [Smarty website](http://www.smarty.net/docsv2/en/language.modifiers "Smarty modifiers")
 
 ### Capitals
 
@@ -21,16 +20,15 @@ website](http://www.smarty.net/docsv2/en/language.modifiers "Smarty modifiers")
 
 The Capitalize filter capitalizes the first letter of each word in a
 text. For example {\$Name} with value 'johan van der sloot' would become
-{\$Name|capitalize} and become 'Johan Van Der Sloot'.\
- \
- Words with numbers in them are not capitalised, unless the parameter
-'true' is added: {\$Model|capitalize} will be 'z3',\
- {\$Model|capitalize:true} will be 'Z3'.\
+{\$Name|capitalize} and become 'Johan Van Der Sloot'. \
+Words with numbers in them are not capitalised, unless the parameter
+'true' is added: {\$Model|capitalize} will be 'z3', \
+ {\$Model|capitalize:true} will be 'Z3'.
 
 #### Filter: lower
 
 **This filter is used to remove all capitals, similar to the PHP
-strtolower() function.**\
+strtolower() function.**
 
 -   The variable {\$Name} with value: 'Karel APPEL'
 -   Will become {\$Name|lower} and 'karel appel'

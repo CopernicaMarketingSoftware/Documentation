@@ -7,8 +7,8 @@ explains their differences
 
 **Miniselections** are filters on subprofiles in a collection
 
-![](Documentation/createselectionminiselection.png)\
- *Both selections and miniselections are created from the Edit
+![](Documentation/createselectionminiselection.png) \
+*Both selections and miniselections are created from the Edit
 selections dialog (Found under Database management menu)*
 
 ### Other differences
@@ -25,7 +25,7 @@ miniselection.
 
 Example, your customers are stored in profiles, and their purchased
 products in a collection that you named *Products*. \
- Say, you want to send a customer satisfaction survey to all customers
+Say, you want to send a customer satisfaction survey to all customers
 who purchased a product at your web store in the past two weeks. This is
 accomplished by first making a miniselection (*HasProducts*) that
 collects all products (subprofiles) bought in a specified period of
@@ -48,5 +48,4 @@ miniselection
 ### Show the subprofiles from a miniselection
 
 Go to *Current view \> Show subprofiles \> Select the miniselection* or
-a combination of selections and miniselection.\
-
+a combination of selections and miniselection.

@@ -1,7 +1,7 @@
 Follow-up actions are automatic responses to a certain event. This can
 be for instance a click on a specific hyperlink, or a web from that is
-submitted.\
-\
+submitted.
+
  Follow-up actions are used to automate campaigns. Some examples of
 campaign types where follow-ups are used:
 
@@ -57,8 +57,8 @@ Characteristic of a follow-up action is that it always has a **cause**
 e-mail document). We call the effect the *action*. It is possible to set
 a delay before the action to take into effect. Set the delay to zero if
 the action should be executed immediately. \
- \
- The options you get after setting the cause and action, depends on the
+
+The options you get after setting the cause and action, depends on the
 type of action that you have chosen. If a document must be sent, you
 will see a form allowing you to select the document that must be sent.
 If profile data must be changed, an different form will be shown,

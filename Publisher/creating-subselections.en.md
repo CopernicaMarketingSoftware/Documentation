@@ -1,7 +1,7 @@
 To keep your database segments orderly and clean, you can create new
 selections under a parent selection. A selection on a second level we
 call a subselection. \
- Profiles in a subselection comply to both the subselection and its
+Profiles in a subselection comply to both the subselection and its
 parent selection(s).
 
 A subselection is created in the same way as a normal selection. When
