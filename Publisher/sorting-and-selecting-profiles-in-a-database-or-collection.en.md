@@ -14,252 +14,149 @@ on numeric fields.
 To see which profiles are selected with different settings, see the
 examples below
 
-Numeric field
-
 -   Numeric field is ordered **ascending**
 -   Selected from position 0
--   Number to select: 2 \
-    \
+-   Number to select: 2
 
-**100**
-
-**200**
-
-300
-
-400
-
-500
-
-600
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| **100**       |
+| **200**       |
+| 300           |
+| 400           |
+| 500           |
+| 600           |
 
 -   Numeric field is ordered **ascending**
 -   Selected from position 1
--   Number to select: 3 \
-    \
+-   Number to select: 3
 
-100
-
-**200**
-
-**300**
-
-**400**
-
-500
-
-600
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| 100           |
+| **200**       |
+| **300**       |
+| **400**       |
+| 500           |
+| 600           |
 
 -   Numeric field is ordered **descending**
 -   Selected from position 1
--   Number to select: 3 \
-    \
+-   Number to select: 3
 
-100
-
-200
-
-**300**
-
-**400**
-
-**500**
-
-600
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| 100           |
+| 200           |
+| **300**       |
+| **400**       |
+| **500**       |
+| 600           |
 
 -   Numeric field is ordered **ascending**
 -   Selected from position 1
--   Number to select: 50% \
-    \
+-   Number to select: 50%
 
-100
-
-200
-
-**300**
-
-**400**
-
-**500**
-
-600
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| 100           |
+| 200           |
+| **300**       |
+| **400**       |
+| **500**       |
+| 600           |
 
 -   Numeric field is ordered **ascending**
 -   Selected from position -3
--   Number to select: 2 \
-    \
+-   Number to select: 2
 
-100
-
-200
-
-**300**
-
-**400**
-
-**500**
-
-**600**
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| 100           |
+| 200           |
+| **300**       |
+| **400**       |
+| **500**       |
+| **600**       |
 
 -   Numeric field is ordered **descending**
 -   Selected from position -3
--   Number to select: 2 \
-    \
+-   Number to select: 2
 
-100
-
-200
-
-**300**
-
-400
-
-500
-
-600
-
-\
-
-Numeric field
+| Numeric field |
+|---------------|
+| 100           |
+| 200           |
+| **300**       |
+| 400           |
+| 500           |
+| 600           |
 
 -   Numeric field is ordered **descending**
 -   Selected from position 0
--   Number to select: 40% \
-    \
+-   Number to select: 40%
 
-100
-
-200
-
-300
-
-400
-
-**500**
-
-**600**
-
-\
-
-Textfield
+| Numeric field |
+|---------------|
+| 100           |
+| 200           |
+| 300           |
+| 400           |
+| **500**       |
+| **600**       |
 
 -   Text field is ordered **alphabetical descending**
 -   Selected from position 0
--   Number to select: 50% \
-    \
+-   Number to select: 50%
 
-Avacado
-
-Banana
-
-Cherimoya
-
-**Durian**
-
-**Eggfruit**
-
-**Fig**
-
-\
-
-Textfield
+| Textfield    |
+|--------------|
+| Avacado      |
+| Banana       |
+| Cherimoya    |
+| **Durian**   |
+| **Eggfruit** |
+| **Fig**      |
 
 -   Text field is ordered **alphabetical ascending**
 -   Selected from position 1
--   Number to select: 3 \
-    \
-    \
+-   Number to select: 3
 
-Avacado
-
-**Banana**
-
-Cherimoya
-
-**Durian**
-
-Eggfruit
-
-Fig
-
-\
-
-Textfield
+| Textfield  |
+|------------|
+| Avacado    |
+| **Banana** |
+| Cherimoya  |
+| **Durian** |
+| Eggfruit   |
+| Fig        |
 
 -   Text field is ordered **alphabetical descending**
 -   Selected from position 1
--   Number to select: 3 \
-    \
-    \
+-   Number to select: 3
 
-Avacado
-
-**Banana**
-
-Cherimoya
-
-**Durian**
-
-Eggfruit
-
-Fig
-
- 
+| Textfield  |
+|------------|
+| Avacado    |
+| **Banana** |
+| Cherimoya  |
+| **Durian** |
+| Eggfruit   |
+| Fig        | 
 
 Multiple profiles have same value in numeric field different values in
 text field
 
-Numeric field
-
-Textfield
-
 -   Numeric field is set to prior
 -   Profiles with 100 will be selected and sorted alphabetically
 -   Profiles with 200 will be selected and sorted alphabetically
--   Profiles with 300... \
-    \
-    \
+-   Profiles with 300...
 
-100
-
-Avacado
-
-100
-
-**Banana**
-
-100
-
-Watermelon
-
-200
-
-**Avacado**
-
-200
-
-Banana
-
-300
-
-Avacado
+| Numeric field | Text field  |
+|---------------|-------------|
+| 100           | Avacado     |
+| 100           | **Banana**  |
+| 100           | Watermelon  |
+| 200           | **Avacado** |
+| 200           | Banana      |
+| 300           | Avacado     |
