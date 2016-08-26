@@ -9,7 +9,7 @@ enforce this by setting the version number. If you omit the version number,
 the API will assume that your JSON input is formatted according to the latest 
 version of the API.
 
-Currently, the API runs on version ***20***.
+Currently, the API runs on version ***23***.
 
 ## Example input
 
@@ -20,7 +20,7 @@ and version number, and a simple textual content.
 {
     "name" : "my-template",
     "description" : "Description of my-template",
-    "version" : 20,
+    "version" : 23,
     "content" : {
         "blocks" : [{
             "type" : "text",
