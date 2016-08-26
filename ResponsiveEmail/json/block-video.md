@@ -23,7 +23,6 @@ All available properties of this block type are mentioned in the table below.
 | [padding](../json/property-padding) | _mixed_ | Whitespace around the block, this whitespace will have a background                              |
 | [visibility](../json/property-visibility) | _object_ | Visibility based on device, client and/or receiver.                                       |
 | [container](../json/property-container) | _object_ | Access to the surrounding container                                                         |
-| [attributes](../json/property-attributes) | _object_ | Attributes that will be applied on the href tag                                           |
 
 ## Example usage
 
@@ -48,7 +47,7 @@ the video on youtube when clicked:
 ## Embedding videos
 
 Inside mail clients, it is unfortunately not possible to directly embed videos.
-On webversions, however, it is possible to embed the video directly into the
+On webversions however, it is possible to embed the video directly into the
 webpage. To do this, set the 'embed' property to true (it is false by default).
 
 
@@ -70,13 +69,11 @@ webpage. To do this, set the 'embed' property to true (it is false by default).
 ## Custom link target
 
 By default, if no link target is specified, when the video thumbnail is clicked,
-the user will be redirected to original source of the video. To change the URI
-the user will be redirected to, the link property can be used. It is up to you
-to make sure this URI is valid, and that it contains the video in questions.
-
-If embed is set to true, only users using their mail client will get redirected,
-the video will still be embedded directly into the webversion.
-
+the user will be redirected to original source of the video, for example
+the youtube.com website. If you have embedded the youtube video on your own
+website too, you can also link to your own website. To change the redirect URI, 
+add a link property to the JSON. It is up to you to make sure this URI is valid, 
+and that it indeed contains the right video.
 
 ```javascript
 {
@@ -89,11 +86,22 @@ the video will still be embedded directly into the webversion.
             "link"   : {
                 "url"        : "http://www.example.com/video",
                 "title"      : "Watch the video",
-                "attributes" : {
-                    "tag"    : "video click"
-                }
             }
         } ]
     }
 }
 ```
+
+In the above example we've both included the youtube address as well as the 
+URL of the website where the video is embedded. Both addresses are necessary,
+because we need to fetch a _still_ from the video to include in the mail. We
+can only fetch this image snapshot if we know the full youtube address of
+the video.
+
+
+## Other platforms
+
+All examples on this page use youtube.com examples. However, you can also
+use links to vimeo videos. If you need support for other video platforms too,
+feel free to send us an email.
+
