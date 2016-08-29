@@ -4,7 +4,7 @@ displayed. These mainly refer to the overview on your data.
 So see an overview of the available field types, [go
 here](https://www.copernica.com/en/support/database-and-collection-field-types)
 
-![EN\_databasefields.png](Documentation/field-properties-dialog.png)
+![EN\_databasefields.png](images/field-properties-dialog.png)
 
 ### **This field is a hidden field that will not show when editing profiles**
 

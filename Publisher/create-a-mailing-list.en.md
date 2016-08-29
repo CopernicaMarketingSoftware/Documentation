@@ -24,7 +24,7 @@ database, more precisely, in a field specially created for that.
 
 To make such a field, go to *Database Management* \> *Edit database
 fields* and choose **Add field**. \
-![](Documentation/newsletter-preference-field.png "Documentation/newsletter-preference-field.png")
+![](images/newsletter-preference-field.png "Documentation/newsletter-preference-field.png")
 
 -   Select your database from the list, choose a name for the field
     (e.g., Mailinglist)
@@ -44,7 +44,7 @@ newly imported subscribers.
 -   At ‘*Value*’ enter ‘*YES*’
 -   Click **edit** to add the value ‘*YES*’ to all imported profiles.
 
-![](Documentation/edit-multiple-profiles.png "Documentation/edit-multiple-profiles.png") \
+![](images/edit-multiple-profiles.png "Documentation/edit-multiple-profiles.png") \
 You’re done. All profiles now have the value ‘Yes’ in the field
 ‘newsletter’ (it may take a few minutes for the application to update
 your database)
@@ -65,13 +65,13 @@ omitted from the selection.
 -   Click «store»
 -   Create the condition by clicking ‘*Add a new 'AND' condition to the
     current 'OR' rule*’\
-    ![](Documentation/add-new-and-to-new-or.png "Documentation/add-new-and-to-new-or.png")
+    ![](images/add-new-and-to-new-or.png "Documentation/add-new-and-to-new-or.png")
 -   From the list choose type ‘*Check on field*’ and then ‘*Continue*’
 -   Select the field holding the newsletter preference
 -   Choose ‘*is equal to*’ –compare with value- ‘*YES*’
 -   Click on **store**.
 
-![](Documentation/newsletter-preference-selection-condition.png "Documentation/newsletter-preference-selection-condition.png") \
+![](images/newsletter-preference-selection-condition.png "Documentation/newsletter-preference-selection-condition.png") \
 Your selection is now created. Only profiles with the value ‘*YES*’ in
 the newsletter field will be included in the selection.
 

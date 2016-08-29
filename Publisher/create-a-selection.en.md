@@ -7,7 +7,7 @@ explains their differences
 
 **Miniselections** are filters on subprofiles in a collection
 
-![](Documentation/createselectionminiselection.png) \
+![](images/createselectionminiselection.png) \
 *Both selections and miniselections are created from the Edit
 selections dialog (Found under Database management menu)*
 
@@ -38,12 +38,12 @@ You can now send a mail to the survey selection to ask your clients how
 they experienced your web shop or to ask them to review the product on
 your website.
 
-![](Documentation/miniselection-referral.png)
+![](images/miniselection-referral.png)
 
 The image below shows a database with both selections and a
 miniselection
 
-![](Documentation/selectionandminiselectionoverview.png)
+![](images/selectionandminiselectionoverview.png)
 
 ### Show the subprofiles from a miniselection
 

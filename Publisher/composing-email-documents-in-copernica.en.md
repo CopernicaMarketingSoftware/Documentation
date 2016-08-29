@@ -15,7 +15,7 @@ document using those blocks.
 Super! You have now created a new email document. The document is still
 empty. So why not start adding some content to it...
 
-![](Documentation/copernica_default_template.png "Documentation/copernica_default_template.png")
+![](images/copernica_default_template.png "Documentation/copernica_default_template.png")
 
 \*Image: the Copernica default template: the left is shown in preview
 mode. The other is in Edit mode. You can edit the content of each block
@@ -34,7 +34,7 @@ All available dynamic blocks will now be highlighted and clickable.
 
 -   Click a block to start adding content.
 
-![](Documentation/edit_document_content.png "Documentation/edit_document_content.png")
+![](images/edit_document_content.png "Documentation/edit_document_content.png")
 
 ### **Adding textual content**
 

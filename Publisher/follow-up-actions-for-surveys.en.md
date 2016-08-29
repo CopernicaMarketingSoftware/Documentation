@@ -2,7 +2,7 @@ Survey follow-ups are the response to the submission of a survey. You
 can automate campaigns by adding follow-up actions this way, just like
 with e-mailings. The function is found in Content under the survey menu.
 
-![](Documentation/addnewfollowup.png)
+![](images/addnewfollowup.png)
 
 ### Cause and action
 
@@ -17,7 +17,7 @@ You can choose from 2 different causes for the survey follow-up action:
 -   **A specific answer has been given:** the participant completed the
     survey and gave specific answer(s)
 
-![](Documentation/survey-followup.png "Documentation/survey-followup.png")
+![](images/survey-followup.png "Documentation/survey-followup.png")
 
 -   **Delay**: the follow-up action can be executed directly (set: 0
     minutes) or after the period you specify here (for example, one week

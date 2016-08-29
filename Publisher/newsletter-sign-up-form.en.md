@@ -27,20 +27,20 @@ Use the setting '*Login as profile from database [database]*'
 Choose the text for the form submit button and the landing page of the
 form.
 
-![](Documentation/webformssettings1.png)
+![](images/webformssettings1.png)
 
 Open the tab *Edit profiles*to edit the web form behaviour, and use the
 following settings:
 
-![](Documentation/formssettings2x.png)
+![](images/formssettings2x.png)
 
 continue
 
-![](Documentation/formssettings3x.png)
+![](images/formssettings3x.png)
 
 continue x 2
 
-![](Documentation/formssettings4x.png)
+![](images/formssettings4x.png)
 
 You have reached the end of the webform behaviour wizard. Click finish
 to save changes.

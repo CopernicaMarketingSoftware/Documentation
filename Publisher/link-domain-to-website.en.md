@@ -24,7 +24,7 @@ linked to the domain. This is done in **Websites**. Select the website
 you wish to link up to the domain and choose **domain** from the Website
 menu.
 
-![](Documentation/websites-link-domain-dialog.png)
+![](images/websites-link-domain-dialog.png)
 
 Choose **new domain **and enter the domain name (without *http://*).
 Click store.

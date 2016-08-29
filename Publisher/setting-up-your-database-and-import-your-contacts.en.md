@@ -74,7 +74,7 @@ want to import the data. \
 -   Use the button to locate the import file on your computer and click
     to proceed to the next step. 
 
-![](Documentation/import-dialog-tab1.png "Documentation/import-dialog-tab1.png")\
+![](images/import-dialog-tab1.png "Documentation/import-dialog-tab1.png")\
 
 You will now see the column names from your import file. Click *find and
 create field* for each column you want to import. Non-linked fields will

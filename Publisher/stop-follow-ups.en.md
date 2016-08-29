@@ -5,7 +5,7 @@ results.
 First choose the mailing in question from the **Statistics** overview.
 Then use this option from the **Mailings menu.**
 
-![](Documentation/stop-followup.png)
+![](images/stop-followup.png)
 
 ### Remove follow-ups
 

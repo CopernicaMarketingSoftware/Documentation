@@ -20,7 +20,7 @@ history information. If you copy a profile or database, you only copy
 the profile information. The profile and campaign history will not be
 copied to the new profile.
 
-![](Documentation/profilehistory.png)
+![](images/profilehistory.png)
 
 ### Individual campaign results
 
@@ -47,4 +47,4 @@ On the right side you see the personalized email, as it is sent to the
 profile or subprofile. At each hyperlink you see how many clicks were
 recorded.
 
-![](Documentation/campaignstab.jpg)
+![](images/campaignstab.jpg)

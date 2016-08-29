@@ -11,9 +11,9 @@ create the subselection.
 In the image below, the subselection is created under **Mailinglist**.
 There already are two subselections under Mailinglist: Female and Male.
 
-![](Documentation/selections-create-subselection.png)
+![](images/selections-create-subselection.png)
 
 In the overview of databases and selections, you can expand the
 subselections of a selection by clicking on the plus sign.
 
-![](Documentation/selections-subselection-overview.png)
+![](images/selections-subselection-overview.png)

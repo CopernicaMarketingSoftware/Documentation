@@ -16,7 +16,7 @@ Overwrite existing template
 -   Select the template you want to overwrite, and then choose **'Import
     template**' in the *Template menu*.
 
-![](Documentation/importdocument.png)
+![](images/importdocument.png)
 
 ### Create the document
 
@@ -37,14 +37,14 @@ pages you want to include in the final document.
 You do this by selecting the page in the list on the left side, and then
 click **'to document**'.
 
-![](Documentation/naardocument.png)
+![](images/naardocument.png)
 
 Dynamic text or image blocks that you created with with the PDF-lib
 plugin are now red bordered, indicating that it can be clicked to edit.
 Click the bordered area to edit the contents of the block or
 alternatively click "**Edit blocks**" in the bottom of the screen.
 
-![](Documentation/inhoudblokbewerken.png)
+![](images/inhoudblokbewerken.png)
 
 Note, after saving the content of a block your changes are usually not
 directly visible. This is because the document preview is processed on a

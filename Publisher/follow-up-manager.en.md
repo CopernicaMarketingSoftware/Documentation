@@ -3,14 +3,14 @@ are linked to a database, document, form or survey. Also, from here you
 manage all follow-ups. You can create new follow-ups and edit or remove
 existing follow-ups.
 
-![](Documentation/overview1.png)
+![](images/overview1.png)
 
 ***Image:** database with multiple collections and their follow-ups.*
 
 The follow-up manager is located behind an additional tab at the
 database, form, document, or survey.
 
-![](Documentation/follow-up-tab.png)
+![](images/follow-up-tab.png)
 
 ***Image:** This database has two follow-ups. When a new profile is
 created, an email will be sent to the profile. The other follow-up
@@ -33,6 +33,6 @@ or edit existing follow-up actions.
 -   To edit the action, click the action of the follow-up (eg: Remove
     the profile or subprofile).
 
-![](Documentation/edit-follow-up.png)
+![](images/edit-follow-up.png)
 
 ***Image:** editing the settings of the follow-up*

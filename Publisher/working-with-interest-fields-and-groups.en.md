@@ -20,17 +20,17 @@ or editing a profile, a user can check or uncheck the interest.
 
 ​1. Find 'n click the button **Add interest**in the *Edit field dialog*.
 
-![](Documentation/database-fields-create-interest.png)
+![](images/database-fields-create-interest.png)
 
 ​2. Enter the name of the new interest field, and optionally create a
 new group (or select an existing group if available). Then click store.
 
-![](Documentation/database-fields-make-interest.png)
+![](images/database-fields-make-interest.png)
 
 ​3. The interest is now created (note: the image below shows two
 interest fields in the group Color: Red and Blue.
 
-![](Documentation/database-fields-list-interest.png)
+![](images/database-fields-list-interest.png)
 
 ### Web forms
 

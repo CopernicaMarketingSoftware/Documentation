@@ -10,7 +10,7 @@ story below. Caution: both actions can not be undone
     profiles to open the dialog window
 -   Click 'remove'
 
-![](Documentation/removeprofiles.png)
+![](images/removeprofiles.png)
 
 ### You want to modify the value in a field for all profiles in a database or selection
 
@@ -21,7 +21,7 @@ story below. Caution: both actions can not be undone
 -   Enter the new value
 -   Click 'Edit'
 
-![](Documentation/editprofiles.png)
+![](images/editprofiles.png)
 
 It may take a few minutes before all profiles have been modified in
 large quantities.

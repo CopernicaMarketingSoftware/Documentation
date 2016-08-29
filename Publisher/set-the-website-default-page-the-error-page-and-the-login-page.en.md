@@ -17,4 +17,4 @@ pages...**
     in users. On this page you can for example place a login form so the
     user is still able to login (or sign up).
 
-![](Documentation/website-default-pages.png)
+![](images/website-default-pages.png)

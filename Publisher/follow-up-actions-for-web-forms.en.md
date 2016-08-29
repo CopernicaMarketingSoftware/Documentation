@@ -26,7 +26,7 @@ action:
     scheduled only if an existing user from your database is able to
     identify himself (through the key field(s) in your web form)
 
-![](Documentation/webform-followup.png)
+![](images/webform-followup.png)
 
 -   **Extra check:** the follow-up action is performed only if the user
     has given certain answers in the form. First select the field and

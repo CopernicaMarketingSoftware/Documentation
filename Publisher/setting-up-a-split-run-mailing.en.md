@@ -41,7 +41,7 @@ Sending a split run mailing does not differ from sending a regular mass
 mailing. It however has an extra step.
 
 ![Setting up a split run
-mailing](Documentation/setup-splitrun-mailing.png)   \
+mailing](images/setup-splitrun-mailing.png)   \
  \
 
 Select one of the documents from the mailing, go to the mass mailing
@@ -73,7 +73,7 @@ the winning document. \
 sent to the test group 1 hour in advance to the final mailing.
 
 ![Setting up a group size and
-interval](Documentation/setup-splitrun-mailing2.png)   \
+interval](images/setup-splitrun-mailing2.png)   \
  \
 
 Please note: If a mailing with split run is scheduled to send at a later

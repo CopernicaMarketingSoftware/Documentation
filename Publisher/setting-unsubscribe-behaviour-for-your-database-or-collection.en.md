@@ -33,7 +33,7 @@ Choose a response:
     as *newsletter* from 'yes' to 'no'.
 
 ![unsubscribe
-behaviour.png](Documentation/dialog_unsubscribe_options.png)
+behaviour.png](images/dialog_unsubscribe_options.png)
 
 Once you have finished configuring the unsubscribe options, you will be
 asked if these new settings should also be applied to past spam

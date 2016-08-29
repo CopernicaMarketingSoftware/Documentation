@@ -25,7 +25,7 @@ can be used within one single website.
 If you are already familiar with creating email documents, you will find
 it easy to create a web page. Both processes work more or less the same
 
-![](Documentation/websites-overview.png)
+![](images/websites-overview.png)
 
 **Image:***Website with web pages. In the top left overview the
 available templates are enlisted. Below that, the different websites

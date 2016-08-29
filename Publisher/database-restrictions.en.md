@@ -27,7 +27,7 @@ A database restriction is created in a few steps
     description.
 -   Click on the link to **add a condition** for the restriction.
 
-![](Documentation/databases-add-restriction.png)
+![](images/databases-add-restriction.png)
 
 ### Block values or block duplicates
 

@@ -16,11 +16,11 @@ Getting started
 Create a new webform, where you just add a field for the email address.
 Make this field NOT a key field.
 
-![](Documentation/code1.png)
+![](images/code1.png)
 
 Form will look something like this:
 
-![](Documentation/code5.png)
+![](images/code5.png)
 
 Go to the webform settings to adjust its behaviour (Webform menu \>
 **Settings...**):
@@ -29,7 +29,7 @@ Choose *'Login as a profile*', fill in a button text and define the next
 page where you tell the subscriber that an e-mail will be sent to him or
 her with this unique code.
 
-![](Documentation/code6.png)
+![](images/code6.png)
 
 Adjust the behaviour of the form (*Edit profiles*tab at the web form
 settings)
@@ -41,7 +41,7 @@ settings)
      `  profile.email ==''`\
      (change the name of the field to the field name in which you want
     to store the email addresses).\
-     ![](Documentation/code3.png)
+     ![](images/code3.png)
 
 \
 
@@ -69,7 +69,7 @@ email is sent to the profile when the profile is changed.\
 Include a hyperlink to a web page with a login form in which both the
 email address as the unique code act as a key field.
 
-![](Documentation/code4.png)
+![](images/code4.png)
 
 On the landing page of this login form you can then indicate where the
 subscriber can collect his or her brand new toaster.

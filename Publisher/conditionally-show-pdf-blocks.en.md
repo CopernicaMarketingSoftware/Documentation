@@ -7,7 +7,7 @@ female customers or subscribers (assuming that you know their gender).
 These conditions are created in the tab Conditions, at any text or image
 block of the PDF document.
 
-![](Documentation/PDFcondities.jpg)
+![](images/PDFcondities.jpg)
 
 ### Using the easy script editor
 

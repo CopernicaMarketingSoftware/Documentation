@@ -52,7 +52,7 @@ and move around the answers. Use *'add additional text box'*for the
 *'Other...'*option, so that the participant can fill out a textual
 answer.
 
-![Multiple choice question](Documentation/multipleoptions.png)
+![Multiple choice question](images/multipleoptions.png)
 
 Multiple choice question with two option. The second one has an
 additional text box for an open answer.
@@ -77,6 +77,6 @@ options are displayed.
     Add rows and columns. You may also change their order and/or
     position in the options.
 
-![Creating a grid question](Documentation/gridquestion.png)
+![Creating a grid question](images/gridquestion.png)
 
 This grid question has 3 columns with options

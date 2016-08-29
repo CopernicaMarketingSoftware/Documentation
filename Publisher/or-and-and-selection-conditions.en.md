@@ -11,7 +11,7 @@ from Amsterdam.
 -   Selection conditions can be made to apply simultaneously or
     independently.
 
-![](Documentation/selections-and-or-conditions.png)
+![](images/selections-and-or-conditions.png)
 
 \*\**Image: \*\*Arrow 1 points to the link to add a AND condition (both
 rules must comply). The other link adds a new OR condition (one of the
@@ -28,7 +28,7 @@ the AND condition This means that you make first condition, and for the
 next condition choose the line that says '*Add a new AND condition to
 the current OR rule*'.
 
-![](Documentation/selections-create-and-condition.png)
+![](images/selections-create-and-condition.png)
 
 \*\* Example:\*\* You have a database with consumers and wish to make a
 selection on 'football' lovers of 'London'.\
@@ -49,7 +49,7 @@ apply, then choose '*Add a new AND condition to a new OR rule*'.
 
 Profiles will appear in the selection if they apply to one of the rules.
 
-![](Documentation/selections-create-new-OR-condition.png)
+![](images/selections-create-new-OR-condition.png)
 
 **Example:** You have a database with consumers on which to make a
 selection on, those who live in London or Amsterdam.
@@ -75,7 +75,7 @@ included. Though the usual **AND** and **OR** rules also foresee in this
 need, some cases such as selections on survey results require this
 method of ruling to exclude profiles.
 
-![](Documentation/selection-OR-NOT.png)
+![](images/selection-OR-NOT.png)
 
 Combinations
 ------------

@@ -26,4 +26,4 @@ If you do not want to add this code manually, you can also use the
 function Prepare Hyperlinks in the Document or Template menu under
 Emailings.
 
-![](Documentation/prepare-hyperlink-login-code.png)
+![](images/prepare-hyperlink-login-code.png)

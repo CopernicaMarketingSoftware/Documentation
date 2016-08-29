@@ -6,7 +6,7 @@ are the sender address, sender name and the email subject line
 You can enter the header information directly above the template or
 document. Smarty personalization is allowed in all headers.
 
-![](Documentation/edit-email-headers.png "Documentation/edit-email-headers.png")
+![](images/edit-email-headers.png "Documentation/edit-email-headers.png")
 
 The most common and known headers are:
 --------------------------------------

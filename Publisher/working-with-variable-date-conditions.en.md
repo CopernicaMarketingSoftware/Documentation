@@ -3,7 +3,7 @@ a variable date. Selections based on a variable date can contain
 different profiles every day. This article provides examples of commonly
 used settings.
 
-![](Documentation/untitled.png)
+![](images/untitled.png)
 
 ### What is flooring?
 

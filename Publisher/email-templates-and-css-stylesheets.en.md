@@ -18,7 +18,7 @@ You can compose each style sheet with example coding, or create an empty
 stylesheet to start from scratch. The example CSS files comes with lots
 of comments about the classes and how they can be manipulated.
 
-![](Documentation/newstylesheet.png)
+![](images/newstylesheet.png)
 
 *The image shows a stylesheet created under style. The stylesheet is
 easily linked to your template or document.*
@@ -32,7 +32,7 @@ here you can instantly edit its rules. Note that the changes that you
 make from here also affect other templates and documents that work with
 this stylesheet.
 
-![](Documentation/linkstyle-setconverting.png)
+![](images/linkstyle-setconverting.png)
 
 Convert CSS blocks to inline CSS
 --------------------------------
@@ -56,12 +56,12 @@ After having done this, the software will do the conversion when the
 email is being compiled (just before sending). So you will keep having
 the advantages of working with a separate style sheet..
 
-![](Documentation/style-template-source-code.png)
+![](images/style-template-source-code.png)
 
 The template in the image has some styling added to the header. Is also
 has a style sheet attached (hence the Style tab).
 
-![](Documentation/css-is-converted.png)
+![](images/css-is-converted.png)
 
 In the sent email, the style rules have been converted to inline style
 attributes.

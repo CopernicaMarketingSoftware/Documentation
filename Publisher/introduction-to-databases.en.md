@@ -16,7 +16,7 @@ You can create new databases, and manage databases under **Profiles**.
 All functions related to databases are found in the *Database
 management*menu.
 
-![](Documentation/database-management-menu.png)
+![](images/database-management-menu.png)
 
 When you add a new profile to your *database*, you enter information in
 the *fields* that are in the *database*. These *fields* can be in a

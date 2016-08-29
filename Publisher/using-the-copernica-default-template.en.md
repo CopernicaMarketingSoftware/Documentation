@@ -57,7 +57,7 @@ this option the lower tool bar). In Edit mode, the blocks are clickable.
 
 Click on a block to edit its content.
 
-![](Documentation/switch_edit_mode_preview_mode.png)
+![](images/switch_edit_mode_preview_mode.png)
 
 ### Webversion and unsubscribe link
 

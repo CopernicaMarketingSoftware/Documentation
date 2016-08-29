@@ -29,7 +29,7 @@ action:
 -   **The registration of an error**- the follow-up action is activated
     only if the delivery of the email resulted in a (specific) error
 
-![](Documentation/emailfollowup.png)
+![](images/emailfollowup.png)
 
 -   **Delay**: the follow-up action can be executed directly (set: 0
     minutes) or after the period you specify here (for example, one week

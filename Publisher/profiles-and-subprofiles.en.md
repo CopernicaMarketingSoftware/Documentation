@@ -22,7 +22,7 @@ Managing profiles
 Profiles and subprofiles are managed from the *Profile* menu
 under *Profiles*
 
-![](Documentation/manageprofilesmenu.png)
+![](images/manageprofilesmenu.png)
 
 Select the database, and then find the profile that you wish to edit.
 
@@ -45,7 +45,7 @@ Select the database, and then find the profile that you wish to edit.
 -   You can also edit the profile directly from the overview
     using *inline editing*. Click on a value to edit it.
 
-![](Documentation/profileinlineedit.png)
+![](images/profileinlineedit.png)
 
 ### **Remove a profile**
 
@@ -75,4 +75,4 @@ Click on the tab to see the subprofiles of the profile. Each row in the
 list represents a subprofile. Click on a subprofile, to see its details
 or to make changes to it.
 
-![](Documentation/edit-suprofiles.png)
+![](images/edit-suprofiles.png)

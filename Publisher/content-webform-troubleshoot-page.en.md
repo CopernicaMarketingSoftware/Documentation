@@ -18,7 +18,7 @@ Content web forms can only be published within Copernica hosted websites
      Go to Content \> Select the web form \> Click the field that you
     would like to edit \> Click **Edit field**from the lower toolbar.
 
-![Webform behave yourself!](Documentation/webform-behaviour-wizard.png)
+![Webform behave yourself!](images/webform-behaviour-wizard.png)
 
 ### Your web form does not redirect to landing page. When the form is submitted, the form is reloaded.
 
@@ -73,7 +73,7 @@ field**. Add key field choose the desired setting (strict key field or
 loose key field). You can designate multiple key fields (needed in login
 forms, to check for instance both on username and password).
 
-![Key field](Documentation/webforms-make-form-key-field.png)
+![Key field](images/webforms-make-form-key-field.png)
 
 ### Key fields have been made in the web form, but these are not being used to search with in database 'yourdatabase'.
 
@@ -92,7 +92,7 @@ fields*' to only create a new profile when the profile is not known. If
 the profile is known, the profile should be updated with the entered
 data.
 
-![](Documentation/webform-set-behaviour-key-fields.png)
+![](images/webform-set-behaviour-key-fields.png)
 
 ### You get the warning 'All rules have been set to ignore the profile. The form will not perform any action.'
 

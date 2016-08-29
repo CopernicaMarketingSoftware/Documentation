@@ -18,7 +18,7 @@ are able to keep a clear overview in your database.
 -   Just like with normal profiles and selections, you can segment data
     in collections using mini-selections.
 
-![](Documentation/databases-collection-tab.png)
+![](images/databases-collection-tab.png)
 
 #### Advantages of collections
 
@@ -43,7 +43,7 @@ under *Database management*.
 New collection fields can be added the same way as database fields: use
 *Edit fields*and then choose the collection.
 
-![](Documentation/databases-add-collection.png)
+![](images/databases-add-collection.png)
 
 Filter subprofiles with mini selections
 ---------------------------------------

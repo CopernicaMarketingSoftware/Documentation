@@ -43,7 +43,7 @@ you can select profiles that have been created or modified in the last
 two weeks (check on change). You can add as many conditions as you like
 and in endless combinations.
 
-![](Documentation/selection-conditiontypes.png)
+![](images/selection-conditiontypes.png)
 
 Common selections
 -----------------
@@ -75,7 +75,7 @@ selections* overview under Profiles. You may also use the *Show
 subprofiles* function from the Current view menu to show the subprofiles
 from a miniselection.
 
-![](Documentation/selections-subselection-overview.png)
+![](images/selections-subselection-overview.png)
 
 ### Can I remove a selection without losing data?
 

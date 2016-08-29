@@ -13,7 +13,7 @@ instance created in **Excel** and meets the following requirements.
     together later in the import process. For instance the column in
     which email addresses are stored can be named 'email'.
 
-![Import file ](Documentation/excelimportfile.png)
+![Import file ](images/excelimportfile.png)
 
 ### Import file with subprofiles
 
@@ -36,7 +36,7 @@ following:
     profile, use seperate rows for the different subprofiles, following
     the same requirements as mentioned above.
 
-![](Documentation/importer12.png)
+![](images/importer12.png)
 
 Convert the spreadsheet file to a delimited txt file before uploading
 ---------------------------------------------------------------------
