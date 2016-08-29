@@ -19,7 +19,7 @@ means NOT illustrate how a nice looking template is created :)
     prefilled document in the language of your choosing.
 -   Click **store**to create the template
 
-![](New_template_dialog.png "New_template_dialog.png")\
+![](images/New_template_dialog.png "New_template_dialog.png")\
 \
 The template is now created and available in the list with templates and
 documents in the left overview. Click on the plus-sign to the left of

@@ -16,7 +16,7 @@ You may add as much fields to a database or collections as needed. 
 **Note:** This article is covers both database and collection fields
 unless stated otherwise.
 
-![](edit_database_fields.png "edit_database_fields.png")
+![](images/edit_database_fields.png "edit_database_fields.png")
 
 Types of fields
 ---------------
@@ -174,7 +174,7 @@ option can only apply to one field at the same time. The value of this
 field is shown in the database tab in the profileoverview page. See
 image below.
 
-![](ordering_database_fields.png "ordering_database_fields.png")
+![](images/ordering_database_fields.png "ordering_database_fields.png")
 
 *The field ‘Company’ is ordered.*
 

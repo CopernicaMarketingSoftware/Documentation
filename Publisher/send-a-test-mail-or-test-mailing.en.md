@@ -22,7 +22,7 @@ Not possible to send the test mail? Please check the following:
 [Did your test mail not
 arrive?](https://www.copernica.com/en/support/did-your-test-mail-not-arrive)
 
-![](send_test_mailing_dialog.png "send_test_mailing_dialog.png")
+![](images/send_test_mailing_dialog.png "send_test_mailing_dialog.png")
 
 ### **What is the test destination?**
 
@@ -49,7 +49,7 @@ It’s also possible to change the Test destination from your personal
 menu in the top right corner. Click *Choose test destination...*to see
 your current test destination and to modify it if wanted.\
 \
-![](setting_test_dest_from_profile.png "setting_test_dest_from_profile.png")
+![](images/setting_test_dest_from_profile.png "setting_test_dest_from_profile.png")
 
 **Is it possible to send a test mail to multiple persons at once?**
 -------------------------------------------------------------------

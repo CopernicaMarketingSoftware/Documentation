@@ -25,12 +25,12 @@ The marketing software can distinguish database and collection fields
 through a dot between the collection name and the field name:
 *Collectionname.fieldname*
 
-![](importer1.png)
+![](images/importer1.png)
 
 -   **Locate the import file** on your computer, and **proceed to the
     next step.**
 
-![](importer2.png)
+![](images/importer2.png)
 
 Step two: linking the fields, choosing the key field
 ----------------------------------------------------
@@ -74,7 +74,7 @@ fields have been set yet.
 In the example below, the database field *Email* and the field
 *ProductID*from the collection *Products*will be used as the key fields.
 
-![](importer9.png)
+![](images/importer9.png)
 
 The fields are now linked, the default field *ID* and the collection
 field *OrderID* have been chosen to function as the key identifiers.
@@ -91,7 +91,7 @@ the key fields, you need to tell the application the application what to
 do when a match is found based on the key field(s). This is done in the
 tab *Settings*.
 
-![](importer10.png)
+![](images/importer10.png)
 
 Proceed to the Settings tab to configure the further import.
 
@@ -140,7 +140,7 @@ Click **Start Import** to start importing. Once the import is completed,
 click on the database to make sure you see it with the new and updated
 data.
 
-![](importer11.png)
+![](images/importer11.png)
 
 *Image: the subprofiles are added to the profiles. This profile received
 two new subprofiles in the collection Products.*

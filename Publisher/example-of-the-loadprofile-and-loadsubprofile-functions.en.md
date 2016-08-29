@@ -65,7 +65,7 @@ database field *AM* of the customer profile.
 In this database, create a profile and use this as your **test
 destination**.
 
-![](customersdatabase.png)
+![](images/customersdatabase.png)
 
 #### The Offices database
 
@@ -75,7 +75,7 @@ and has a database field *Area* which will hold a unique code assigned
 to that office. This code will later be used to connect each profile
 from the *Customers* database to an office.
 
-![](officesdatabase.png)
+![](images/officesdatabase.png)
 
 #### The collection Account
 
@@ -84,7 +84,7 @@ is used to store contact details and other information about the account
 managers working at that office. Each account manager is classified with
 a unique code in the collection field *AM*.
 
-![](collection.png)
+![](images/collection.png)
 
 So far the organization of the database. Add some test data to the
 databases and collection. Make sure you test different situations, so

@@ -8,7 +8,7 @@ how you import data to your database.
 Under Profiles, choose ‘Create database’ from the Database Management
 menu. \
 \
-![](New-database-dialog.png "New-database-dialog.png")\
+![](images/New-database-dialog.png "New-database-dialog.png")\
 \
  In the dialog that appears, choose a clear and distinctive name for
 your database, e.g., ‘Subscribers’ or ‘Contacts’. You may also add a
