@@ -38,7 +38,7 @@ code from the Template source tab.
 3.  **Click on the Template source tab**. Type something and click on
     store. Hooray, your template is created.
 
-![](http://pic.vicinity.nl/1931/templatesource.png)
+![](images/templatesource.png)
 
 #### Adding the template content blocks
 
@@ -70,6 +70,6 @@ include in the document, without changing the HTML.
 > `[loop name="LOOPNAME"]         Source code that should be repeated     [/loop]`
 
 ![Template blocks in the source
-code](http://pic.vicinity.nl/1933/exampleblockuse.png)
+code](images/exampleblockuse.png)
 
 A loop and text block used in the template HTML source

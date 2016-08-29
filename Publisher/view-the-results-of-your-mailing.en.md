@@ -31,7 +31,7 @@ The mailing key figures provides you a quick overview of the results of
 your mailing. This article explains you the figures presented in this
 overview.
 
-![Key figures](https://pic.vicinity.nl/1942/key_figures.png)
+![Key figures](images/key_figures.png)
 
 **Emailings sent:**These are the total number of emailings that have
 been sent  with the account, template or document, in the set period of

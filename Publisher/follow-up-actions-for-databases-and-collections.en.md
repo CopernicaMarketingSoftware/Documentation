@@ -21,7 +21,7 @@ You can choose from 2 different causes for the survey follow-up action:
 -   **A profile has been created**
 -   **A profile has been modified**
 
-![](https://pic.vicinity.nl/127/0/116275/database-opvolgacties.png)
+![](images/database-opvolgacties.png)
 
 -   **Extra checks**: the follow-up action is scheduled only if the
     value of the field of the profile changed to the value you specified

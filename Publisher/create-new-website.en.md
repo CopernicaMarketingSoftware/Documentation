@@ -11,7 +11,7 @@ on the same domain. For example all pages of *newsletter.mycompany.com*.
 
 From the *Website *menu, choose *New website*
 
-![](http://pic.vicinity.nl/105/newwebsite.png)
+![](images/newwebsite.png)
 
 -   **Choose a name** for the website. This name is used in the software
     only, it is not your domain name.

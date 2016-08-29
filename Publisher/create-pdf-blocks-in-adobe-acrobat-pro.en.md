@@ -8,13 +8,13 @@ Note: the plugin is **not**available for Acrobat reader.
 After you have installed the Acrobat plugin, an additional menu called
 **PDFlib blocks**appears in Acrobat.
 
-![](https://pic.vicinity.nl/127/0/116596/acrobat-menu.png)
+![](images/acrobat-menu.png)
 
 To activate the tool, click the item **PDFlib block tool** in the new
 menu. Draw a block where you want it. The exact size and position of the
 block can be adjusted later if desired.
 
-![](https://pic.vicinity.nl/127/0/116599/maakpdfblok.png)
+![](images/maakpdfblok.png)
 
 The dialog box for setting the block options will reveal itself...
 
@@ -39,7 +39,7 @@ taste. Click the **Text** button, for example to change the*font size*,
 **Note 2**: all the fonts you want to use within the PDF blocks, need to
 be uploaded to Copernica.
 
-![](https://pic.vicinity.nl/127/0/116603/textflowd.png)
+![](images/textflowd.png)
 
 ### Copying blocks
 

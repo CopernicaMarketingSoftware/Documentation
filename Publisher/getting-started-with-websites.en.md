@@ -63,7 +63,7 @@ Important to know:
 
 From the *Website*menu, choose *New website*
 
-![](newwebsite.png)
+![](images/newwebsite.png)
 
 -   **Choose a name** for the website. This name is used in the software
     only, it is not your domain name.
@@ -105,7 +105,7 @@ code from the *Template source* tab.
 3.  **Click on the Template source tab**. Type something and click on
     store. Hooray, your template is created.
 
-![](templatesource.png)
+![](images/templatesource.png)
 
 #### Adding the template content blocks
 
