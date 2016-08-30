@@ -1,7 +1,7 @@
 Survey questions can be edited, removed, copied and moved. To do so, you
 can use the so-called functions in the toolbar below the survey.
 
-![Survey toolbar](surveytoolbar.png)
+![Survey toolbar](images/surveytoolbar.png)
 
 A survey question and the available options related to the question
 

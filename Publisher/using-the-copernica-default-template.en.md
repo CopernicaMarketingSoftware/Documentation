@@ -27,7 +27,7 @@ the template name to expand all documents under this template. There
 should be at least one document \<*example*\> available. Click on its
 name to open the example document (if it's not already).\
 \
-![](copernica_default_template.png "copernica_default_template.png")\
+![](images/copernica_default_template.png "copernica_default_template.png")\
 \
 **Image: The default template -** left is displayed *Preview mode*, the
 other is in *Edit mode*. 

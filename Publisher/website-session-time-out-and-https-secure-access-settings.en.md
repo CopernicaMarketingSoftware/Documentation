@@ -5,7 +5,7 @@ specify here (in minutes).
 
 Website settings can be found in the **Website menu**.
 
-![website settings](wbsitesettings.png)
+![website settings](images/wbsitesettings.png)
 
 ### Session time-out settings
 

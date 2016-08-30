@@ -8,7 +8,7 @@ click is counted on this view. Thus, the green box represents the number
 of destinations where a click was registered as the dominant result, not
 the total number of clicks.
 
-![](sjabloon_clip_image001.png)
+![](images/sjabloon_clip_image001.png)
 
 #### \
 **Error (bounces)**

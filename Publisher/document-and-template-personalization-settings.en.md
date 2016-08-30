@@ -6,7 +6,7 @@ You can modify the personalization settings directly from an active
 document or template. If you have opened a template or a document, you
 will find the **Personalization settings menu**in the lower toolbar.
 
-![Personalization settings](personalizationsettings.png)
+![Personalization settings](images/personalizationsettings.png)
 
 ### Document inherits template setting
 

@@ -18,4 +18,4 @@ include inlog code to your link. The login form already is taking care
 of that. A user automatically gets logged in or out after submitting the
 form (if you have an inlog form).
 
-![Redirect page](redirectpage.png)
+![Redirect page](images/redirectpage.png)

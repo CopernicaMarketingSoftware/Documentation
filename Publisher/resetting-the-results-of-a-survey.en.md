@@ -2,7 +2,7 @@ Once you've created and tested a survey, you'll want to reset the
 results to zero before it goes live. You may also have other reasons to
 want to reset the results to none.
 
-![](resetsurveyresults.png)
+![](images/resetsurveyresults.png)
 
 You can find the option to do so in the **Survey**menu.
 

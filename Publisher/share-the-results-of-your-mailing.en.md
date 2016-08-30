@@ -79,4 +79,4 @@ once. That is, even if someone registered two impressions.
 When a destination also clicks on a hyperlink, he will move from
 destinations to the clicks in the waterfall chart.
 
-![Shared report](sharedreport.png)
+![Shared report](images/sharedreport.png)

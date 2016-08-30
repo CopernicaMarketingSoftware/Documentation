@@ -17,7 +17,7 @@ profile that uploaded the file.
 Also read: [Manage files uploaded to profiles in your
 database](https://www.copernica.com/en/support/manage-files-uploaded-to-profiles-in-your-database)\
 
-![add upload field](adduploadfield.png)
+![add upload field](images/adduploadfield.png)
 
 ### Edit the properties of the upload field
 
@@ -50,4 +50,4 @@ each individual profile at the tab '**File'** at the profile. ****.
     form/database? Set up if it should overwrite the file, rename the
     new uploaded file (name\_1) or display an error to the submitter.
 
-![Edit the properties of the upload field](edituploadfield.png)
+![Edit the properties of the upload field](images/edituploadfield.png)

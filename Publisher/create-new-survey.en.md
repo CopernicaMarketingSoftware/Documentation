@@ -12,7 +12,7 @@ under the **Survey menu**of **Content**.
 Choose a descriptive name and an optional description. Once your survey
 is created, you can start adding questions.
 
-![New survey dialog](createnewsurvey.png)
+![New survey dialog](images/createnewsurvey.png)
 
 ### Adding questions to the survey
 
@@ -23,7 +23,7 @@ is created, you can start adding questions.
     The text editor allows you to place 'underwriting' to your question,
     such as 'please check only one box'.
 
-![New question](newquestion.png)
+![New question](images/newquestion.png)
 
 *Image: a new question is added: What... is the Airspeed Velocity of an
 Unladen Swallow?*
@@ -43,7 +43,7 @@ options:
 -   **Display** - Choose checkboxes if multiple answers are allowed for
     this question. Choose select box to allow only one answer.
 
-![Extra options](extraoptions.png)
+![Extra options](images/extraoptions.png)
 
 ### Survey question types
 

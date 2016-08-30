@@ -4,4 +4,4 @@ settings**in the *web form menu*.
 
 Smarty personalization code is allowed in this field
 
-![Web form button text](buttontext.png)
+![Web form button text](images/buttontext.png)

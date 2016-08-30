@@ -172,7 +172,7 @@ profile="\$offices.id"}
 
 The result:
 
-![](result.png)
+![](images/result.png)
 
 Use as much databases and collections as you want. You can combine
 loadprofile with smarty conditions (if we do not find what we are

@@ -1,7 +1,7 @@
 An image tag is the code to add a variable image block to e-mail
 documents. It is placed in the source code of an HTML template as:
 
-![](imageblocktag.png)
+![](images/imageblocktag.png)
 
 You can edit and add special formatting to the image block in both the
 template source code and via the *template menu \>***Block structure**.
@@ -18,7 +18,7 @@ Additional options can be set either from the **Edit template
 block**dialog (Template menu) or by adding parameters to the image tag
 itself.
 
-![](blockoptions.png)
+![](images/blockoptions.png)
 
 template block settings. This dialog can be found in the template menu
 
@@ -70,7 +70,7 @@ loaded in the document. This allows you to add special formatting to the
 image without affecting the lay-out if the (optional) image block is
 left empty in the document.
 
-![](leadingtrailinghtml.png)
+![](images/leadingtrailinghtml.png)
 
 The same is accomplished in the image tag in the template source code
 using the begin and end parameters. It is advised to enclose HTML

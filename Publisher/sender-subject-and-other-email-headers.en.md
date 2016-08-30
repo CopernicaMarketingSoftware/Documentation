@@ -70,7 +70,7 @@ Read more about adding the list unsubscribe header and the necessary
 [unsubscribe options](#) that should be set on the target database or
 collection.
 
-![unsubscribe header](unsubscribe.png)
+![unsubscribe header](images/unsubscribe.png)
 
 set the priority header. To the right of it a similar menu to configure
 the unsubscribe header.

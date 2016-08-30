@@ -13,7 +13,7 @@ Use the form in the *Prepare hyperlinks…* dialog screen in the document
 or template menu to add new variables, or change or delete existing
 campaign variables.
 
-![](preparelinks.png)
+![](images/preparelinks.png)
 
 Select '*also apply to the template source code*’ to add the variables
 to the hyperlinks in the template source code. Please note that

@@ -6,7 +6,7 @@ the other system will automatically be informed of the change.
 This functionality can be found at *Profiles \> Database Management \>
 **Callback URLs***
 
-*![Callback dialog sceen](callbackdialog.png)\
+*![Callback dialog sceen](images/callbackdialog.png)\
 *A **HTTP POST** request will be sent to the callback URL. This request
 contains a package with **XML** or **JSON** data on the changes in the
 (sub)profile.

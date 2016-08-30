@@ -3,14 +3,14 @@ possible email client such as Outlook, Hotmail, Gmail and Lotus Notes.
 Particularly the testing for these clients on different platforms can be
 a very time consuming process.
 
-![](navemailpreview.png)
+![](images/navemailpreview.png)
 
 Not anymore. The Litmus email preview shows you screenshots of your
 email newsletter as it looks across all major email clients including
 Hotmail, Yahoo and Outlook Express and in the most common internet
 browsers, such as Firefox and Internet Explorer.
 
-![Litmus preview](logo-shadow.png)
+![Litmus preview](images/logo-shadow.png)
 
 ### A Litmus test can be started
 
@@ -45,7 +45,7 @@ generate the screenshot.
 The static testing results will remain available for future reference.
 Even after you’ve made changes to your email document.
 
-![Email preview](index.png)\#\#\# Charge per test
+![Email preview](images/index.png)\#\#\# Charge per test
 
 We advice that you use this tool for final testing when the document or
 template is completely ready for sending, because there is a (small)
@@ -60,7 +60,7 @@ Question and answer
 \*\*Q. Some images appear with a black background color in the tests.
 See image: \*\*
 
-![](imagetransparancy.png)
+![](images/imagetransparancy.png)
 
 \*\*A. \*\*The image in question is most likely a GIF with transparancy.
 It's the transparent part of the image that's appearing black in the

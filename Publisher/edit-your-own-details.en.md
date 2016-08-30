@@ -6,7 +6,7 @@ notified about software updates and maintanance.
 The personal data is visible to all users of the accounts to which you
 have access. Account administrators cannot change the data of others.
 
-![](edityourdetails.png)
+![](images/edityourdetails.png)
 
 ### Set preferred language
 

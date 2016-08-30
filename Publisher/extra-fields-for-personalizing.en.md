@@ -5,7 +5,7 @@ documents based on the template.
 This function is found under *emailings \> Template* \> **Extra
 personalization fields**...
 
-![add personalization fields](extrapersonalizationfields.png)
+![add personalization fields](images/extrapersonalizationfields.png)
 
 The extra fields for personalization can be added to the template HTML
 source code as follows:
@@ -34,6 +34,6 @@ fields via the [Personalization Settings](#) menu, which can be found in
 the bottom left corner of the document work space. See image below,
 where the extra personalization field 'background' is set to black.
 
-![Personalization settings](personalizationsettings.png)
+![Personalization settings](images/personalizationsettings.png)
 
 Personalization settings.

@@ -11,7 +11,7 @@ could solve it. \
 corner to validate the personalized document using the [test
 destination](http://www.copernica.com/en/support/what-is-the-test-destination).
 
-![](htmlerrors.png)
+![](images/htmlerrors.png)
 
 Document check dialog window. Click on the **errors and warnings
 button** below the document to open the dialog window.

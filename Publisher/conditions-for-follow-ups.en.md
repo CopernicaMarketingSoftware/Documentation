@@ -12,7 +12,7 @@ We distinguish two types of follow-up conditions:
 1.  Scheduling condition (A)
 2.  Execution condition (B)
 
-![](followupsconditions.png)
+![](images/followupsconditions.png)
 
 ### A. Scheduling condition
 

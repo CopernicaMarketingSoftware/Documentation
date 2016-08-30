@@ -9,7 +9,7 @@ It is advised to create an index on the field that you use for sorting.
 For the best performance, it is recommended to sort on the field ID or
 on numeric fields.
 
-![](soritiongselecting.png)
+![](images/soritiongselecting.png)
 
 To see which profiles are selected with different settings, see the
 examples below

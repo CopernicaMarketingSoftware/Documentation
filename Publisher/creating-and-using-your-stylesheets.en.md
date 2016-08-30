@@ -14,7 +14,7 @@ To test your stylesheet under Content, select the web form, survey or
 feed. Then go to the **Preview tab** and select the stylesheet from the
 list.
 
-![Preview style or xslt](previewstyleorxslt.jpg)
+![Preview style or xslt](images/previewstyleorxslt.jpg)
 
 the preview tab alows you to preview an xslt or css with your webform,
 feed or survey.

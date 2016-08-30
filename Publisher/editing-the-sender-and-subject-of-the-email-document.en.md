@@ -5,7 +5,7 @@ information that you send along with emails we call the email headers.
 The sender address, name and subject of the email are edited directly
 above the document. Click on a header to start editing.
 
-![](edit-email-headers.png "edit-email-headers.png")
+![](images/edit-email-headers.png "edit-email-headers.png")
 
 Click **Add header** to use additional headers, such as the Bcc or
 Reply-to headers.

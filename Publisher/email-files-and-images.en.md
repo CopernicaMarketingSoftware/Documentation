@@ -10,7 +10,7 @@ server elsewhere.
 -   Files and images uploaded to a **media library** can be used in all
     publications (templates, documents, webforms, surveys, feeds)
 
-![Files and images folder](filesandimages.png)
+![Files and images folder](images/filesandimages.png)
 
 The files and images folder. Files and images stored in this folder or
 in the linked media library can be used in the document, template,
@@ -41,7 +41,7 @@ image to the document as follows:
 5.  The tabs **Settings, Hyperlink** and **Conditions**allow you to
     configure additional options for the image.
 
-![](imageblock.png)
+![](images/imageblock.png)
 
 ### Add image to a text block, using the *Rich Text Editor*.
 

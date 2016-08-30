@@ -29,7 +29,7 @@ the value that is shown in the web form by placing two colons (::)
 in-between the two values, as follows: \
 Yes::Yeah, I would like to receive your news letter!
 
-![](1.png)
+![](images/1.png)
 
 -   **Hit the store button.**
 
@@ -52,14 +52,14 @@ mentioned here can be ignored in the wizard).
 -   In the overview, click on finish to store the new web form
     behaviour.
 
-![](2.png)
+![](images/2.png)
 
 The web form is now ready to do the job. [Publish the web form on a
 webpage](#) and [test it in your browser](#).Your new web form will look
 something like this (probably not in Dutch and with those ugly grey
 Windows XP design form elements, but you get the idea).
 
-![](3.png)
+![](images/3.png)
 
 You may also add a web form follow up to send a confirmation via e-mail.
 

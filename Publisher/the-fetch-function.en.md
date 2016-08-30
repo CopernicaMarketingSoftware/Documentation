@@ -5,4 +5,4 @@ The (only) correct syntax is as follows:
 
 **{fetch url="http://domain.com/currentheadlines.txt"}**
 
-![Fetch tag](fetchtag.png)
+![Fetch tag](images/fetchtag.png)

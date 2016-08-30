@@ -48,7 +48,7 @@ are of course different actions to choose from).
 To create a new follow-up, click on '**Create new follow-up action**' in
 the bottom left of the dialog window.
 
-![New follow up action](newfollowup.png)
+![New follow up action](images/newfollowup.png)
 
 ### The cause, the action and the delay
 
@@ -66,7 +66,7 @@ enabling you to select the field(s) that must be updated with new data
 when the action is executed. It is all working very straight forward, so
 you will hopefully manage to succeed with this pretty easily.
 
-![The database follow up editor](databasefollowup.png)
+![The database follow up editor](images/databasefollowup.png)
 
 *Screenshot of the database follow-up editor*
 

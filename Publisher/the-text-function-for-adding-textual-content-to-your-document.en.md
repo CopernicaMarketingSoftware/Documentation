@@ -4,12 +4,12 @@ can easily be maintained and re-used over and over again.
 
 A text tag is placed in the source code of the template and looks like:
 
-![](textblockcode.png)
+![](images/textblockcode.png)
 
 Layout and formatting of tags influences the content of all underlying
 documents.
 
-![](documentloop.png)
+![](images/documentloop.png)
 
 view a document in **edit mode**, to make the blocks clickable. Click on
 a block to edit its content.
@@ -33,4 +33,4 @@ Make sure to open and close elements in block structure, for example to
 make all text in a block bold use '\<strong\>' in Leading and
 '\</strong\>' in Trailing.
 
-![](leadingtrailing.png)
+![](images/leadingtrailing.png)

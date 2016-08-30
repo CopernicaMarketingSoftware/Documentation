@@ -4,7 +4,7 @@ subprofile. It is possible to rollback to the data set of a specific
 date and time. But you can only perform rollbacks per individual
 profile.
 
-![Rollback profile](rollback.png)
+![Rollback profile](images/rollback.png)
 
 the rollback function is found in the lower toolbar in the History tab
 of the profile.

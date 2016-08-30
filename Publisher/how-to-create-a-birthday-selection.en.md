@@ -17,4 +17,4 @@ we must use the variable date.
 [Schedule a daily mailing](#) to this selection. Make sure you test the
 mailing before you reveal the final campaign.
 
-![cake](cake.png)
+![cake](images/cake.png)

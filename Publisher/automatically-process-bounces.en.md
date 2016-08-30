@@ -23,7 +23,7 @@ mailings, with the use of selections.
     when the mailing is sent a second time*”.
 -   Save the selection condition.
 
-![The condition editor](dialog1.png)
+![The condition editor](images/dialog1.png)
 
 ### Step 2. Exclude the bouncers from the newsletter selection
 

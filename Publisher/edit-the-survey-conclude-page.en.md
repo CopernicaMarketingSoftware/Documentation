@@ -8,7 +8,7 @@ The conclude page is displayed with the same lay out as the survey.
 
 Unfortunately, personalization does not work in the conclude page.
 
-![Editing the conclude page](editconcludepage.png)
+![Editing the conclude page](images/editconcludepage.png)
 
 Both the rich and the HTML editor can be used to edit the content of the
 conclude page.

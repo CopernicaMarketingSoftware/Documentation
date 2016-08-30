@@ -26,7 +26,7 @@ Your key is now generated. The next step is to paste this key into the
 TXT record subdomain. You may close the DKIM dialog. The key remains
 available in the software.
 
-![Enter the information](generatekey.png)
+![Enter the information](images/generatekey.png)
 
 ### Step 2. Paste the key into the TXT record on your subdomain
 

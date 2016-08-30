@@ -44,7 +44,7 @@ always should look something like this.
 -   Each column contains individual characteristics of each subscriber
     e.g., email address or his or her name.  
 
-![](excelimportfile.png "excelimportfile.png")\
+![](images/excelimportfile.png "excelimportfile.png")\
 
 **Convert the excel file to a tab-delimited file**
 --------------------------------------------------

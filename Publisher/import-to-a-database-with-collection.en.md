@@ -17,7 +17,7 @@ Step one: creating and uploading the file
 -   Choose **Import / Export files**from the **Current view**menu. Then,
     click **Import**
 
-![](excel.png)
+![](images/excel.png)
 
 ### Database and collection fields {.image_caption}
 

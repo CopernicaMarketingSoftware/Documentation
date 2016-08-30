@@ -2,7 +2,7 @@ The CSS style sheets that you use within your campaigns, are managed in
 the Style section. Select the CSS stylesheet and then choose the desired
 action from the Stylesheet context menu.
 
-![Manage stylesheet ](Stylesheet.png)
+![Manage stylesheet ](images/Stylesheet.png)
 
 New stylesheet
 --------------

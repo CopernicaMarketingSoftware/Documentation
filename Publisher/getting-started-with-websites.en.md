@@ -27,7 +27,7 @@ Copernica.
 
 ### Overview of the Website section
 
-![Website with web pages](websitesoverview.png)
+![Website with web pages](images/websitesoverview.png)
 
 In the top left overview you see the available templates and below that,
 the different websites created in the account. Click on a website to
@@ -135,7 +135,7 @@ changing the underlying HTML code.
 
     [loop name="LOOPNAME"]Source code that should be repeated[/loop]
 
-![Template blocks in the source code](exampleblockuse.png)
+![Template blocks in the source code](images/exampleblockuse.png)
 
 A loop and text block used in the template HTML source
 
@@ -250,7 +250,7 @@ In the same window, you can (temporarily) deactivate a web page. The
 page is then no longer available and visitors of this page will be
 redirected to the specified *error page*.
 
-![Setting the access](pageaccess.png)
+![Setting the access](images/pageaccess.png)
 
 ### Manage files and images
 
