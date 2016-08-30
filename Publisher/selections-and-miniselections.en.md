@@ -22,7 +22,7 @@ of the software. Make a new selection via *Database Management* \>
 -   [Working with variable date
     conditions](./working-with-variable-date-conditions.en.md)
 -   [Rebuilding of
-    (mini)selections](./how-are-selections-re-built.en.md)
+    (mini)selections](./how-are-selections-rebuilt.en.md)
 -   [Refer from one selection to another
     (mini)selection](./refer-from-one-selection-to-another-mini-selection.en.md)
 -   [Copy and move
