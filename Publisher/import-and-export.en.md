@@ -9,25 +9,25 @@ The import and export functionalities can be found in the **Profiles**
 section in the menu **Current View**.
 
 -   [Requirements of an import
-    file](./the-requirements-for-a-well-formatted-import-file)
+    file](./the-requirements-for-a-well-formatted-import-file.en.md)
 -   [Import data to new
-    database](./setting-up-your-database-and-import-your-contacts)
+    database](./setting-up-your-database-and-import-your-contacts.en.md)
 -   [Update a database through an
-    import](./updating-a-database-through-an-import)
+    import](./updating-a-database-through-an-import.en.md)
 -   [Schedule import (from online
-    location)](./schedule-import-from-online-location)
+    location)](./schedule-import-from-online-location.en.md)
     (once or periodically)
 -   [Import data to database and
-    collection](./import-to-a-database-with-collection)
+    collection](./import-to-a-database-with-collection.en.md)
 
 ### Frequently asked importing questions
 
 -   [Can I undo an
-    import?](./can-i-undo-an-import)
+    import?](./can-i-undo-an-import.en.md)
 -   [I have many duplicate profiles after an import. How do I fix
-    that?](./how-do-i-remove-duplicate-contacts-profiles)
+    that?](./how-do-i-remove-duplicate-contacts-profiles.en.md)
 -   [Troubles with your import?
-    Shoot!](./importing-troubleshooting-and-faq)
+    Shoot!](./importing-troubleshooting-and-faq.en.md)
 
 Exporting profile data
 ----------------------
@@ -37,9 +37,9 @@ miniselection or a combination of those. Then click Import / export in
 the menu in the Current view menu.
 
 -   [Export profiles and / or
-    subprofiles](./export-profiles-and-or-subprofiles)
+    subprofiles](./export-profiles-and-or-subprofiles.en.md)
 -   [Additional options for your export
-    file](./additional-options-for-your-export-file)
+    file](./additional-options-for-your-export-file.en.md)
 -   [Export the results of your
-    mailing](./export-the-results-of-your-mailing)
+    mailing](./export-the-results-of-your-mailing.en.md)
 

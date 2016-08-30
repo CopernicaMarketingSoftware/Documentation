@@ -194,6 +194,6 @@ section of the marketing software.
 ### Sending the abandoned cart mailing
 
 Send the abandoned cart email as a [weekly scheduled
-mailing](./schedule-a-mass-mailing-for-later-or-send-periodically).
+mailing](./schedule-a-mass-mailing-for-later-or-send-periodically.en.md).
 If you want to use a different interval (e.g., once a month), do not
 forget to adjust the miniselection *RecentAbandonedProducts* as well.

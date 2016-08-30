@@ -30,11 +30,11 @@ address.
 ### Test destination
 
 If you use [Smarty
-personalisation](./personalize-campaigns)
+personalisation](./personalize-campaigns.en.md)
 and / or javascript conditions in your publications than it is previewed
 in the application with the data from the profile or subprofile set as
 [test
-destination](./what-is-the-test-destination).
+destination](./what-is-the-test-destination.en.md).
 
 Also test mails are sent to the test destination. Each user within an
 account has his or her own test destination, which can be set from your

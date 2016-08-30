@@ -17,7 +17,7 @@ The wizard to generate web forms is found under Websites \> Web page \>
 Form wizard
 
 [Read how you quickly generate a
-webform](./generate-a-web-form-without-a-hassle/)
+webform](./generate-a-web-form-without-a-hassle.en.md)
 
 2. The Content web form
 -----------------------

@@ -15,7 +15,7 @@ Files uploaded through the webform are automatically stored at the
 profile that uploaded the file.
 
 Also read: [Manage files uploaded to profiles in your
-database](./manage-files-uploaded-to-profiles-in-your-database)\
+database](./manage-files-uploaded-to-profiles-in-your-database.en.md)
 
 ![add upload field](images/adduploadfield.png)
 

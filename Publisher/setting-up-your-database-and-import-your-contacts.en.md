@@ -89,9 +89,9 @@ fields](./database-and-collection-field-types).
 -   For each field that you want to be displayed on the overview pages,
     check ‘ Show this field on overview pages’
 -   Read more about the [available field
-    types](./database-and-collection-field-types)
+    types](./database-and-collection-field-types.en.md)
     and [field
-    properties](./database-field-settings-and-options)
+    properties](./database-field-settings-and-options.en.md)
 -   You can alter the field properties at any time
 
 ### Advanced settings
@@ -103,10 +103,10 @@ following points into account.
 -   In Copernica, dates can only be stored in database notation
     (YYYY-MM-DD hh-mm-ss). If your import file contains dates, read the
     article on [importing
-    dates](./importing-dates-with-format-conversion)
+    dates](./importing-dates-with-format-conversion.en.md)
 -   If you want to update (synchronize) your database with new data from
     a import file, make sure that you make use of [key
-    fields](./what-are-key-fields).
+    fields](./what-are-key-fields.en.md).
 -   If your database has one or more collections with sub data, make
     sure you make use of key fields. 
 
@@ -126,5 +126,5 @@ When you have closed the dialog, you can view the imported data by
 clicking on the database. Imported data is shown in the list view.  
 
 -   [Create a mailing list from which unsubscribes are automatically
-    exluded](./create-a-mailing-list)
+    exluded](./create-a-mailing-list.en.md)
 

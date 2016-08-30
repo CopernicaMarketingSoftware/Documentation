@@ -80,6 +80,6 @@ obfuscation**
 **HTML**
 
 -   Remove any unneeded HTML. [Remove HTML
-    errors](./reducing-html-errors) as
+    errors](./reducing-html-errors.en.md) as
     much as possible. Keep your HTML code clean.
 

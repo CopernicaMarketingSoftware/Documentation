@@ -25,7 +25,7 @@ Even more date\_format conversion specifiers can be found here:
 
 To output the date in a different language or timezone, you can use the
 [personalization
-settings](./document-and-template-personalization-settings)
+settings](./document-and-template-personalization-settings.en.md)
 of the document or template. This setting is found in the toolbar below
 the template / document you are editing.
 

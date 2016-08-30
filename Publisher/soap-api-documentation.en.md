@@ -1,5 +1,5 @@
 Besides the existing
-[integrations](./integrations "Integrations")
+[integrations](./integrations.en.md "Integrations")
 for different systems, with our powerful SOAP API you are able to create
 an integration with your own software. Synchronize all data from
 Copernica with the data from your own software to keep all information
@@ -16,7 +16,7 @@ invoked from every standard programming language and development
 environment.
 
 To view the full object reference, go to
-[https://www.copernica.com/en/support/apireference](./apireference).
+[https://www.copernica.com/en/support/apireference](./apireference.en.md).
 
 [Download SOAP API example script for
 PHP](Copernica_library/soaptest_php_1-5.zip "SOAP API example script for PHP")

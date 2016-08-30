@@ -87,11 +87,11 @@ contacts to edit their own data.
 ### Example web forms
 
 -   [Newsletter subscribe
-    form](./newsletter-sign-up-form)
+    form](./newsletter-sign-up-form.en.md)
 -   [Unsubscribe form - profile will be removed entirely from the
-    database](./unsubscribe-form-remove-profile-entirely)
+    database](./unsubscribe-form-remove-profile-entirely.en.md)
 -   [Change web
-    form](./create-change-web-form)
+    form](./create-change-web-form.en.md)
 -   [Login
-    form](./login-logout-and-forgot-password-form)
+    form](./login-logout-and-forgot-password-form.en.md)
 

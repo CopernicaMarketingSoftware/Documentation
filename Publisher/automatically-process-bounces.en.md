@@ -35,7 +35,7 @@ selection.
     click to *Database management*-\>**Edit selection** to edit the
     newsletter selection.
 -   In the condition overview, create a new ['AND'
-    condition](./or-and-and-selection-conditions).
+    condition](./or-and-and-selection-conditions.en.md).
     Add it to the existing 'OR' rule.
 -   Now choose '**Check content other selection**'. Choose the bounce
     selection and select '**All profiles are not in the above
@@ -47,6 +47,6 @@ newsletter selection.
 -   Tip: Remove the profiles from your database automatically by using
     follow-up actions
 -   Another tip: Use [double
-    opt-in](./create-a-double-optin-for-new-subscribers)
+    opt-in](./create-a-double-optin-for-new-subscribers.en.md)
     to keep your database clean in the first place
 

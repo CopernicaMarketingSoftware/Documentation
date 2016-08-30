@@ -62,12 +62,12 @@ under **Style**. The default style sheets come with lots of comments
 that will help you modifying it. Note that a stylesheet is not linked to
 a web form, but to the web page or template whereon you have published
 it. You can [link a style
-sheet](./email-templates-and-css-stylesheets) to
+sheet](./email-templates-and-css-stylesheets.en.md) to
 the page, document or template through its context menu. The same
 applies to stylesheets for surveys and feeds.
 
 Further reading: [Manage CSS stylesheet
-files](./manage-css-stylesheet-files)
+files](./manage-css-stylesheet-files.en.md)
 
 ### Link your stylesheet to a template, document or web page
 
@@ -116,7 +116,7 @@ internet browser: HTML. So, what can you do with XSLT?
 -   The publish date of an article should not appear in the HTML
     document. The author of the article must appear below the article.
 -   [Remove the
-    \#-sign ](./working-with-css-and-xslt-a-brief-introduction#)that
+    \#-sign ](./working-with-css-and-xslt-a-brief-introduction.en.md)that
     is placed before each survey question.
 -   Et cetera….
 

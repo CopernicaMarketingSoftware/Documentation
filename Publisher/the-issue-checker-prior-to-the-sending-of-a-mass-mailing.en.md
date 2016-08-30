@@ -65,7 +65,7 @@ come?**
 
 ​1. If you have used Smarty personalization in the 'from' address field,
 check if the[test
-destination](./what-is-the-test-destination)
+destination](./what-is-the-test-destination.en.md)
 has a valid 'from' address.
 
 ​2. The SMTP server connected to the email address is temporarily
@@ -104,7 +104,7 @@ correct, it is most likely that you use a different envelope domain
 Delivery settings \>***Envelope domain** to see your current settings,
 and how the envelope domain should be configured. [Learn how the SPF
 should be further configured if you use your own envelope
-domain](./envelope-address-mx-record-settings-and-spf).
+domain](./envelope-address-mx-record-settings-and-spf.en.md).
 
 #### Sender ID is not correctly configured
 
@@ -114,7 +114,7 @@ used as the 'from' address. Check whether the Sender ID settings are
 correct on this domain.
 
 [Learn how you can use Sender ID for your
-mailings](./setup-sender-id)
+mailings](./setup-sender-id.en.md)
 
 Blacklists
 ----------
@@ -147,7 +147,7 @@ will definitely help you set up the DKIM. You find this validator under
 *Emailings \> Extra \>***DKIM keys**.
 
 [Read how you set up DKIM for your
-emailings](./signing-your-emails-with-dkim)
+emailings](./signing-your-emails-with-dkim.en.md)
 
 If you cannot resolve this issue immediately, but you still want to send
 the mailing, it is advised to entirely remove the DKIM.
@@ -167,7 +167,7 @@ their own envelope (bounce) domain.
 
 [More information on how you should configure your DNS with a custom
 envelope
-domain](./envelope-address-mx-record-settings-and-spf)
+domain](./envelope-address-mx-record-settings-and-spf.en.md)
 
 #### MX record does not refer to a host that refers to the correct IP address.
 
@@ -216,7 +216,7 @@ try again later. If the problem persists, contact your hosting provider.
 If you use your own envelope domain, you must include Copernica in the
 SPF record. It's a setting in the DNS to prevent your emails getting
 marked as spam. [Click here for more
-info](./envelope-address-mx-record-settings-and-spf).
+info](./envelope-address-mx-record-settings-and-spf.en.md).
 
 #### **Pic-register domain settings are not correct**
 
@@ -244,7 +244,7 @@ of the spam check of your document, click on the warnings button in the
 lower toolbar of the active document.
 
 [This article provides some useful tips to help you lowering the spam
-score.](./some-tips-to-lower-your-email-spam-score)
+score.](./some-tips-to-lower-your-email-spam-score.en.md)
 
 Destination check
 -----------------
@@ -275,7 +275,7 @@ marks your email as spam.
 
 To set the unsubscribe behaviour: *Go to Profiles \> Database management
 \>* [Set unsubscribe
-options…](./setting-unsubscribe-behaviour-for-your-database-or-collection)
+options…](./setting-unsubscribe-behaviour-for-your-database-or-collection.en.md)
 
 #### **Unsubscribe header not activated**
 
@@ -316,7 +316,7 @@ so-called tab, which is found directly above the active template of
 document.
 
 [Including a text version to your template or
-document](./add-email-text-version)
+document](./add-email-text-version.en.md)
 
 #### Document size checks
 

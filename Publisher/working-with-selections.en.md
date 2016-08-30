@@ -13,9 +13,9 @@ A selection is a filter on the information in your database. It filters
 focus groups for insight in your database or to send targeted mailings.
 A selection can be made on profiles (selection), subprofiles
 (mini-selection) or on another selection
-([subselection](./creating-subselections)).
+([subselection](./creating-subselections.en.md)).
 It can contain several filters that apply together ([AND
-conditions](./or-and-and-selection-conditions))
+conditions](./or-and-and-selection-conditions.en.md))
 or look at separate conditions including both (OR conditions).\
  \
  Others call it *segments*, *lists*, *queries*. We however use the terms
@@ -31,7 +31,7 @@ A selection is always current. Each time the rules are edited and
 several times a day the selection is rebuilt. So if you change the
 address of a contact, it will be added or removed from the selection
 within a few hours. [Read more about selection
-rebuilding](./how-are-selections-re-built)
+rebuilding](./how-are-selections-re-built.en.md)
 
 Selection condition types
 -------------------------
@@ -52,19 +52,19 @@ The possibilities with selections are endless. Here are a few common
 applications:
 
 -   [A mailinglist
-    selection](./create-a-mailing-list)
+    selection](./create-a-mailing-list.en.md)
     - unsubscribes are automatically filtered from your newsletter
     selection
 -   [Automatically process
-    bounces](./automatically-process-bounces)
+    bounces](./automatically-process-bounces.en.md)
     - profiles with a recurring delivery error are automatically
     filtered from your mailing list(s)
 -   [Filter duplicate
-    addresses](./how-do-i-remove-duplicate-contacts-profiles)
+    addresses](./how-do-i-remove-duplicate-contacts-profiles.en.md)
     - Email addresses that appear double in your database, can be
     automatically excluded from your mailing list
 -   [Birthday
-    selection](./how-to-create-a-birthday-selection)
+    selection](./how-to-create-a-birthday-selection.en.md)
     - See who's birthday it is today (and send them a nice greeting)
 
 View the profiles in a selection
@@ -83,7 +83,7 @@ A selection is just a filter on your data. Removing a selection will not
 remove the profiles from the selection.
 
 To remove the profiles from a selection, you can [edit/remove multiple
-profiles](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+profiles](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.en.md)
 from the Current view menu.
 
 In short

@@ -12,27 +12,27 @@ supports both Smarty verion 2 and 3 (though we recommend using version
 3).
 
 -   [What is
-    personalization](./what-is-personalization)
+    personalization](./what-is-personalization.en.md)
 -   [Smarty 2 versus smarty
-    3](./smarty-2-vs-smarty-3)
+    3](./smarty-2-vs-smarty-3.en.md)
 -   [Start your email with a personalized
-    salutation](./personalized-salutation-in-email-using-smarty-code)
+    salutation](./personalized-salutation-in-email-using-smarty-code.en.md)
 -   [Personalizing from profile or
-    subprofile](./personalizing-from-a-profile-or-subprofile)
+    subprofile](./personalizing-from-a-profile-or-subprofile.en.md)
 -   [Using the smarty date function (plus some
-    examples)](./using-the-smarty-date-function)
+    examples)](./using-the-smarty-date-function.en.md)
 -   [Filter data with smarty
-    modifiers](./filter-data-with-smarty-modifiers)
+    modifiers](./filter-data-with-smarty-modifiers.en.md)
 -   [Personalizing
-    hyperlinks](./personalizing-hyperlinks)
+    hyperlinks](./personalizing-hyperlinks.en.md)
 -   [Personalizing using multidimensional
-    databases](./personalizing-using-multi-dimensional-databases)
+    databases](./personalizing-using-multi-dimensional-databases.en.md)
 -   [Get URL parameters within Smarty
-    personalization](./get-url-parameters-within-smarty-personalization)
+    personalization](./get-url-parameters-within-smarty-personalization.en.md)
 -   [Errors in
-    personalization](./errors-in-personalization)
+    personalization](./errors-in-personalization.en.md)
 -   [Example of the loadprofile and loadsubprofile
-    functions](./example-of-the-loadprofile-and-loadsubprofile-functions)
+    functions](./example-of-the-loadprofile-and-loadsubprofile-functions.en.md)
 
 ### Complete Smarty documentation
 
@@ -54,9 +54,9 @@ Copernica has many special features for personalization and tags for
 publishing special content.
 
 -   [View all functions and
-    tags](./special-functions-and-tags)
+    tags](./special-functions-and-tags.en.md)
 -   [Trigger variables in follow up
-    actions](./extra-variables-for-follow-ups)
+    actions](./extra-variables-for-follow-ups.en.md)
     (get access to information about the trigger event)
 
 ### Smarty Reference
@@ -64,6 +64,6 @@ publishing special content.
 On the smarty reference page we list all variables that are assigned by
 Copernica and that can be used in your mailings and documents.
 
--   [View Smarty reference](./smarty)
+-   [View Smarty reference](./smarty.en.md)
     (requires logging in to the software)
 

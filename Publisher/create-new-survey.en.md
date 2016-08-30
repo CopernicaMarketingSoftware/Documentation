@@ -3,7 +3,7 @@ company, your service, products or whatever you like to know about them.
 
 Surveys are easily created and can be published on your website in a
 wink. If you [link to this website from an
-emailing](./linking-to-your-website-from-an-emailing),
+emailing](./linking-to-your-website-from-an-emailing.en.md),
 individual answers given are even automatically linked to the profile.
 
 To add a new survey to the application, use the function labelled so
@@ -19,7 +19,7 @@ is created, you can start adding questions.
 1.  In the survey menu, find the **New question**option.
 2.  You can immediately start creating the first question. Enter the
     name of the question, and [choose the type of the
-    question](./survey-question-types-and-their-options).
+    question](./survey-question-types-and-their-options.en.md).
     The text editor allows you to place 'underwriting' to your question,
     such as 'please check only one box'.
 
@@ -49,4 +49,4 @@ options:
 
 You can use different types of questions within your survey. [Learn more
 about those survey question types
-here](./survey-question-types-and-their-options).
+here](./survey-question-types-and-their-options.en.md).

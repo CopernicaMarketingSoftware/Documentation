@@ -24,7 +24,7 @@ currently selected or new question. Use 'Add question' from the lower
 part of the screen to add questions.
 
 [See all the available question
-types](./survey-question-types-and-their-options)
+types](./survey-question-types-and-their-options.en.md)
 
 ### To copy a question
 

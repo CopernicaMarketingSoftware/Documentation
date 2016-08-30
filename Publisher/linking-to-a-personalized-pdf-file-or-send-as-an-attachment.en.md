@@ -36,7 +36,7 @@ Each document and template has its own files and images folder whereto
 you can upload your PDF file (you can access this folder from the
 template and document menus). Alternatively you can upload you file to a
 [media
-library](./using-media-libraries-to-centrally-store-files-and-images).
+library](./using-media-libraries-to-centrally-store-files-and-images.en.md).
 Upload your PDF file to the files folder and then link to the file as
 follows:
 

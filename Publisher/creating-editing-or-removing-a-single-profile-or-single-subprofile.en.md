@@ -12,7 +12,7 @@ Select the database, and then find the profile that you wish to edit.
 -   Choose ‘**Create profile**’ from the Profile menu.
 
 [Importing
-profiles](./setting-up-your-database-and-import-your-contacts)
+profiles](./setting-up-your-database-and-import-your-contacts.en.md)
 
 ### **To create a subprofile**
 
@@ -21,7 +21,7 @@ profiles](./setting-up-your-database-and-import-your-contacts)
     collection to which you want to add the subprofile.
 
 [Create multiple subprofiles at
-once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.en.md)
 
 ### **Edit profile / edit subprofile**
 
@@ -32,7 +32,7 @@ once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
     *inline editing*. Click on a value to edit it.
 
 [Edit multiple profiles or subprofiles at
-once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.en.md)
 
 ### **Remove a profile**
 
@@ -41,4 +41,4 @@ once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
     be undone.
 
 [Remove multiple profiles or subprofiles at
-once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.en.md)

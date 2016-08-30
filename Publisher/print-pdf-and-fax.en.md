@@ -9,7 +9,7 @@ Note: The plugin doesn’t work with Acrobat Elements or any version of
 Adobe Reader.
 
 Fonts you use in your blocks must be [uploaded to
-Copernica](./uploading-fonts).
+Copernica](./uploading-fonts.en.md).
 Otherwise, text is not displayed at all.
 
 ### Download and Install Plugin
@@ -28,19 +28,19 @@ PDF](http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-blocks-E.pdf)
 ### Other topics
 
 -   [Create PDF blocks in Adobe Acrobat
-    PRO](./create-pdf-blocks-in-adobe-acrobat-pro)
+    PRO](./create-pdf-blocks-in-adobe-acrobat-pro.en.md)
 -   [Importing PDF document and edit its
-    content](./import-pdf-document-and-editing-its-content)
+    content](./import-pdf-document-and-editing-its-content.en.md)
 -   [Uploading fonts (manage
-    fonts)](./uploading-fonts)
+    fonts)](./uploading-fonts.en.md)
 -   [PDF blocks formatting - what should you take into
-    account](./pdf-blocks-formatting-what-should-you-take-into-account)
+    account](./pdf-blocks-formatting-what-should-you-take-into-account.en.md)
 -   [Linking to a personalized PDF file or send along as an email
-    attachment](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment)
+    attachment](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.en.md)
 -   [(Bulk) download of PDF
-    files](./bulk-download-of-personalized-pdf-files)
+    files](./bulk-download-of-personalized-pdf-files.en.md)
 -   [PDF block
-    conditions](./conditionally-show-pdf-blocks)
+    conditions](./conditionally-show-pdf-blocks.en.md)
 -   [Sending
-    fax-mailing](./sending-a-fax-mass-mailing)
+    fax-mailing](./sending-a-fax-mass-mailing.en.md)
 

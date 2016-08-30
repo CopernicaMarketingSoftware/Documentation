@@ -49,7 +49,7 @@ files and images as follows:
 `<img src="name-of-the-medialib/someimage.png" alt="Imagine an image here" />`
 
 -   [Read more about images and files in
-    Copernica](./email-files-and-images)
+    Copernica](./email-files-and-images.en.md)
 
 Using images in image blocks
 ----------------------------
@@ -70,7 +70,7 @@ To set these conditions, go to the settings of the image block and then
 click to the **Conditions tab**.
 
 -   [Read more about setting block
-    conditions](./the-easy-script-editor)
+    conditions](./the-easy-script-editor.en.md)
 
 ### Resize and crop images
 
@@ -102,7 +102,7 @@ More topics
 -   [Remove unwanted gaps in
     Outlook](https://www.copernica.com/en/blog/remove-unwanted-gaps-in-microsoft-outlook)
 -   [Images not aligned as intented in email
-    client](./images-or-text-not-aligned-properly-in-outlook-gmail)
+    client](./images-or-text-not-aligned-properly-in-outlook-gmail.en.md)
 
 ### Include images from a remote location in your publications
 
@@ -122,7 +122,7 @@ sending images (as an attachment) along with your emailings.
 Read more:
 
 -   [Images attached with e-mails: whether or not a good
-    idea](./embedding-images-in-emailings-the-pros-and-cons)
+    idea](./embedding-images-in-emailings-the-pros-and-cons.en.md)
 
 ### Store files and images at the profile
 
@@ -136,9 +136,9 @@ profile. In the Files tab, you can find all the files of the profile.
 Read more:
 
 -   [Storing files at a profile in your Copernica
-    database](./manage-files-uploaded-to-profiles-in-your-database)
+    database](./manage-files-uploaded-to-profiles-in-your-database.en.md)
 -   [Add upload field to Content web
-    form](./add-upload-field-to-content-web-form)
+    form](./add-upload-field-to-content-web-form.en.md)
 
 Include files and images of the profile in your (personalized)
 publications
@@ -163,6 +163,6 @@ described earlier on this page.
 Read more about this subject:
 
 -   [Print, PDF and Fax
-    Copernica](./print-pdf-and-fax)
+    Copernica](./print-pdf-and-fax.en.md)
 
 Linking to a personalized PDF file or enclose as attachment.

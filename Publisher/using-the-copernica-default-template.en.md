@@ -39,13 +39,13 @@ again. To add content (text and images) to the documents under that
 template, three types of content blocks are available:
 
 -   [Text
-    blocks](./the-text-function-for-adding-textual-content-to-your-document)
+    blocks](./the-text-function-for-adding-textual-content-to-your-document.en.md)
     – Used to add textual content to your document
 -   [Image
-    blocks](./the-image-function-for-adding-images-to-your-document)
+    blocks](./the-image-function-for-adding-images-to-your-document.en.md)
     – Used to add images to your document
 -   [Loop
-    blocks](./the-loop-function-to-iterate-content-in-your-email)
+    blocks](./the-loop-function-to-iterate-content-in-your-email.en.md)
     – Used to iterate text and image blocks in your document
 
 The default template / document makes use of all three block types. The
@@ -68,10 +68,10 @@ above the document.
 
 In the template footer you'll find the unsubscribe link. Note that this
 unsubscribe will not work until you configured the [unsubscribe
-behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection)
+behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection.en.md)
 on the database of your[test
-destination](./help-documentation).
+destination](./help-documentation.en.md).
 
 -   Next step: [Add the from address, sender name and the subject of the
-    email](./editing-the-sender-and-subject-of-the-email-document)
+    email](./editing-the-sender-and-subject-of-the-email-document.en.md)
 

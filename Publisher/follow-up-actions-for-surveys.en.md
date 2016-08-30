@@ -81,9 +81,9 @@ This will output the answers given by the submitter.
 #### Further reading
 
 -   [Conditions for follow-up
-    actions](./automate-campaigns-with-follow-up-actions)
+    actions](./automate-campaigns-with-follow-up-actions.en.md)
 -   [More information on follow-up
-    actions](./conditions-for-follow-ups)
+    actions](./conditions-for-follow-ups.en.md)
 -   [Follow-up
-    manager](./follow-up-manager)
+    manager](./follow-up-manager.en.md)
 

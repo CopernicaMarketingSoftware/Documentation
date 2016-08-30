@@ -14,7 +14,7 @@ person or product makes up for one subprofile, but you can add multiple
 subprofiles to one profile.
 
 See also: [working with database
-collections](./working-with-database-collections)
+collections](./working-with-database-collections.en.md)
 
 Managing profiles
 -----------------

@@ -53,7 +53,7 @@ In the conditions tab, choose the field and how it should be compared
 with the given value. The options here are very descriptive and
 straightforward and therefore should not raise any questions if you are
 already familiar with [creating
-selections](./working-with-selections).
+selections](./working-with-selections.en.md).
 
 A restriction can be enforced on the value of a field, or on a
 combination of fields
@@ -75,7 +75,7 @@ add a conditions to two different rules (OR) - the profile is valid if
 it adheres to one of these rules.
 
 -   [Read more about OR and AND
-    rules](./or-and-and-selection-conditions)
+    rules](./or-and-and-selection-conditions.en.md)
 
 ### (Temporarily) disabling database restrictions and restriction rules
 

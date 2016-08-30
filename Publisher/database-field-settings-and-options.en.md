@@ -2,7 +2,7 @@ When adding a field to your database, there are several checkbox options
 displayed. These mainly refer to the overview on your data.
 
 So see an overview of the available field types, [go
-here](./database-and-collection-field-types)
+here](./database-and-collection-field-types.en.md)
 
 ![EN\_databasefields.png](images/field-properties-dialog.png)
 

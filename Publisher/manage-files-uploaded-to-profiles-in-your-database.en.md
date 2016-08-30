@@ -36,4 +36,4 @@ Using the loadfile and linkfile functions, you can easily link to files
 that are uploaded to the profile/
 
 [Meer lezen over linkfile en
-loadfile](./the-loadfile-and-linkfile-functions "Linken naar bestanden van het profiel met loadfile en linkfile")
+loadfile](./the-loadfile-and-linkfile-functions.en.md "Linken naar bestanden van het profiel met loadfile en linkfile")

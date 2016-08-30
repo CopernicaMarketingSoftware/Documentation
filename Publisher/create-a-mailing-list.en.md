@@ -4,7 +4,7 @@ automatically exclude those unsubscribes from your active mailing list. 
 
 *For this tutorial you need a database. [Create a new database if you
 don't have one
-already](./setting-up-your-database-and-import-your-contacts)*
+already](./setting-up-your-database-and-import-your-contacts.en.md)*
 
 A mailing list is created in two steps:
 
@@ -89,5 +89,5 @@ How about sending your first emailing, huh? Not so fast. We need a
 document to send in the first place.
 
 -   [Import the Copernica default
-    template](./using-the-copernica-default-template)
+    template](./using-the-copernica-default-template.en.md)
 

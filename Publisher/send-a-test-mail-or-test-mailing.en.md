@@ -9,18 +9,18 @@ This is fairly easy
 -   Select the document that you'd like to send.
 -   In the menu Mailings, click **Send test mail**
 -   The email is now sent to your [test
-    destination](./what-is-the-test-destination)
+    destination](./what-is-the-test-destination.en.md)
 
 Not possible to send the test mail? Please check the following:
 
 -   Make sure you have set a test destination (see below this page)
 -   Make sure you have [designated a database field for
-    e-mail](./video-tutorials/profiles-adding-database-fields)
+    e-mail](./video-tutorials/profiles-adding-database-fields.en.md)
 -   Make sure the document has a [subject line and sender
-    address](./sender-subject-and-other-email-headers)
+    address](./sender-subject-and-other-email-headers.en.md)
 
 [Did your test mail not
-arrive?](./did-your-test-mail-not-arrive)
+arrive?](./did-your-test-mail-not-arrive.en.md)
 
 ![](images/send_test_mailing_dialog.png "send_test_mailing_dialog.png")
 

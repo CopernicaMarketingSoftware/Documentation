@@ -3,7 +3,7 @@ an email document or template with data from any database and/or
 collection. \
 The syntax and the working of these functions are explained in detail in
 the [loadprofile and
-loadsubprofile](./loadprofile-and-loadsubprofile)
+loadsubprofile](./loadprofile-and-loadsubprofile.en.md)
 article. In this article, these two functions will be further clarified
 using a practical example.
 
@@ -180,5 +180,5 @@ looking for in database X, look for a profile in database Y).
 
 -   [More information and extra options about the loadprofile and
     loadprofile
-    functions](./loadprofile-and-loadsubprofile)
+    functions](./loadprofile-and-loadsubprofile.en.md)
 

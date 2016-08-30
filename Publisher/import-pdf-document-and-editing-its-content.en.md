@@ -58,4 +58,4 @@ menu*.
 If you still don't see any results, there might be something wrong with
 your block configuration, or you haven't uploaded the used font yet to
 Copernica. [Read how you can solve issues with your personalized PDF
-document](./pdf-blocks-formatting-what-should-you-take-into-account).
+document](./pdf-blocks-formatting-what-should-you-take-into-account.en.md).

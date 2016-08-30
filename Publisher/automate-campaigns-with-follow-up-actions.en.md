@@ -6,9 +6,9 @@ submitted.
 campaign types where follow-ups are used:
 
 -   [Double opt in for newsletter
-    subscribers](./create-a-double-optin-for-new-subscribers)
+    subscribers](./create-a-double-optin-for-new-subscribers.en.md)
 -   [Whitepaper
-    downloads](./how-to-make-a-white-paper-marketing-campaign)
+    downloads](./how-to-make-a-white-paper-marketing-campaign.en.md)
     (to generate new leads)
 -   And many more...
 
@@ -86,4 +86,4 @@ We distinguish two types of follow-up conditions:
     follow-up (the can be weeks or years later).
 
 [Read more about conditions for
-follow-ups](./conditions-for-follow-ups)
+follow-ups](./conditions-for-follow-ups.en.md)
