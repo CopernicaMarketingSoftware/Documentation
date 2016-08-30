@@ -10,7 +10,7 @@ selections**)
 Copying or moving (mini)selections has no effect on the actual content
 of the database, no profiles or subprofiles can be harmed.
 
-![](Documentation/copyormoveselection.png)
+![](images/copyormoveselection.png)
 
 Copy selection
 --------------
@@ -20,7 +20,7 @@ you've made the copy, you can directly start editing the copy. This does
 not affect the original.
 
 -   Optionally, you can choose to also copy the
-    [subselections](http://www.copernica.com/en/support/creating-subselections)
+    [subselections](./creating-subselections.en.md)
     under the original.
 -   The name of the copy must be unique.
 -   The selection can be copied to any location within the same

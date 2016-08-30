@@ -32,11 +32,11 @@ under Style. The default style sheets come with lots of comments that
 will help you modifying it. Note that a stylesheet is not linked to a
 web form, but to the web page or template whereon you have published it.
 You can [link a style
-sheet](http://www.copernica.com/en/support/email-templates-and-css-stylesheets)
+sheet](./email-templates-and-css-stylesheets.en.md)
 to the page, document or template through its context menu. The same
 applies to stylesheets for surveys and feeds.
 
-![](Documentation/new-css.png)
+![](images/new-css.png)
 
 ### What can you do with XSLT?
 
@@ -54,7 +54,7 @@ internet browser: HTML. So, what can you do with XSLT?
 -   [Remove the \#-sign](#)that is placed before each survey question.
 -   Et cetera….
 
-![](Documentation/xslt-image.png)
+![](images/xslt-image.png)
 
 The software adds a default XSLT to all content feeds, surveys and web
 forms. Therefore making your own XSLT is not required to publish Content
@@ -80,7 +80,7 @@ to develop one.
 
 To create your XSLT, go to the **Style** section in the software.
 
-![](Documentation/new-xslt.png)
+![](images//new-xslt.png)
 
 Once you have created your own XSLT it can easily be attached to the
 item where you have created the XSLT for. This is done by adding the

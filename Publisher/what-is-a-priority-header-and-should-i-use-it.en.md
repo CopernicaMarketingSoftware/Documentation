@@ -2,7 +2,7 @@ Copernica allows you to set the message priority when you compose a
 document. You can use it to indicate if an email is of extraordinary
 importance to you.
 
-![Priority header](priorityheader.png)
+![Priority header](images/priorityheader.png)
 
 The priority header is set direcly above the document
 

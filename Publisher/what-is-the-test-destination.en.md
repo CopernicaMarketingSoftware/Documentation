@@ -31,4 +31,4 @@ To see what profile or subprofile is currently set as your test
 destination, go to your personal menu at the top right corner of the
 application, then click **Choose test destination**.
 
-![Test destination dialog](createtestdestination.png)
+![Test destination dialog](images/createtestdestination.png)

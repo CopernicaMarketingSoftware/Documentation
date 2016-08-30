@@ -17,12 +17,12 @@ before you start importing.
 -   Choose **Import / Export files**from the **Current view**menu. In
     the dialog screen, click **Import**.
 
-![](importer1.png)
+![](images/importer1.png)
 
 -   **Locate the import file** on your computer, and **proceed to the
     next step.**
 
-![](importer2.png)
+![](images/importer2.png)
 
 ### Step 2: linking the fields, choosing the key field
 
@@ -36,7 +36,7 @@ can link them manually.
 
 You can create missing database fields directly by clicking on the
 '**find or create field**’ button. A [text
-field](http://www.copernica.com/en/support/database-and-collection-field-types)
+field](./database-and-collection-field-types.en.md)
 will be created in the database. Click **Properties** to make the field
 with the desired settings. You may of course alter these settings at a
 later time from the*Database Management menu \> **Edit fields**.*
@@ -50,7 +50,7 @@ on **Create all fields**.
 #### Key fields
 
 To synchronize data, you need to set [key
-fields](http://www.copernica.com/en/support/what-are-key-fields). The
+fields](./what-are-key-fields.en.md). The
 key field must contain a unique value, needed by the application to link
 the import rule with an existing profile. If you do not have a field
 with unique values, it is possible to use more key fields which are
@@ -62,7 +62,7 @@ fields have been set yet.
 
 In the example below, the field ID is designated as key field.
 
-![](importer5.png)
+![](images/importer5.png)
 
 the fields are now linked, the system field ID is set as key field.
 Continue with the settings.
@@ -72,7 +72,7 @@ Continue with the settings.
 Proceed to the *Settings tab*to tell the application what to do when a
 match is found based on the key field(s).
 
-![](importer6.png)
+![](images/importer6.png)
 
 -   At type choose '**search for matches based on key fields**'
 
@@ -101,7 +101,7 @@ data, without the risk of losing data.
 
 If you get a warning about non-compatible dates in your import file,
 refer to the article about [importing dates with format
-conversion](http://www.copernica.com/en/support/importing-dates-with-format-conversion).
+conversion](./importing-dates-with-format-conversion.en.md).
 
 #### Notification
 
@@ -119,7 +119,7 @@ Click **Start Import** to start importing. Once the import is completed,
 click on the database to make sure you see it with the new and updated
 data.
 
-![](imported6.png)
+![](images/imported6.png)
 
 New contacts with avarage names are now added to the database
 AvaragePeople. James Smith changed his name to James Hetfield. This

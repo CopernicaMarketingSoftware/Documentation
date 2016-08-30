@@ -16,7 +16,7 @@ ftp*and the *ftps*protocol.
 -   http://www.yourdomain.com/directory/file.txt
 -   ftps://username:password@hostname/directory/file.txt
 
-![](Documentation/import-from-online-location.png)
+![](images/import-from-online-location.png)
 
 Please specify if the columns of the import file are recognized by tab,
 comma or semicolon. Click Upload file and proceed to the next step
@@ -34,4 +34,4 @@ Make sure to also follow the process of *Setting columns*and *Editing
 import settings*before starting the import!
 
 ![The interval tab enables you to set an interval for a scheduled
-import](scheduledimport.png)
+import](images/scheduledimport.png)

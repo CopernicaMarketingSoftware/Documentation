@@ -7,7 +7,7 @@ unsubscribe form that erases the profile entirely.
 **Note:** if you use the {unsubscribe} tag in your emailings, then you
 do not need to create a web form. You only need to adjust the [database
 unsubscribe
-behaviour](http://www.copernica.com/en/support/setting-unsubscribe-behaviour-for-your-database-or-collection).
+behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection.en.md).
 
 Creating the webform
 --------------------
@@ -22,29 +22,29 @@ key field.
 -   When you're finished the **setting the General**, open the **Edit
     profiles** tab to adjust the webform behaviour wizard.
 
-![](Documentation/remove1.png)
+![](images/remove1.png)
 
 -   Who will be modified by this form?...each profile that matches the
     key fields (the e-mail address)
 
-![](Documentation/remove2.png)
+![](images/remove2.png)
 
 -   If there are multiple matches (ig. you have duplicate email
     addresses in your database), they should all be removed. Otherwise
     someone that appears double in your database would keep receiving
     your emails until he unsubscribed 2 times. Set it to 5 or higher.
 
-![](Documentation/remove3.png)
+![](images/remove3.png)
 
 -   Here is where the magic takes place. Choose to **remove**the
     profile.
 -   Walk through the rest of the wizard. These settings are optional.
 
-![](Documentation/remove4.png)
+![](images/remove4.png)
 
 -   When you completed the wizard, it should look something like this.
 
-![](Documentation/remove6.png)
+![](images/remove6.png)
 
 The web form should work now. Publish it on your webpage using the tag
 `{webform name="name of your form"}` and test it out!

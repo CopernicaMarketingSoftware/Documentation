@@ -45,12 +45,12 @@ purchased products as subprofiles in a collection under the profile.
 
 -   On the collection with the products, make a miniselection 'toaster'
     with which you filter subprofiles by the product toaster. \
-     ![](Documentation/toaster3.png)
+     ![](images/toaster3.png)
 -   Then you make a selection that says that the profile has at least 1
     and up to 999 subprofiles that appear in the miniselection
     'toaster'\
-     ![](Documentation/toaster2.png) \
-     ![](Documentation/toaster1.png)
+     ![](images/toaster2.png) \
+     ![](images/toaster1.png)
 -   Store the selection. You can now schedule a mailing to this
     selection.
 
@@ -73,11 +73,11 @@ have bought a bread knive.
     that the profile has at least 1 and up to 999 subprofiles in the
     mini selection 'bread knife'
 -   Add an new
-    [AND](http://www.copernica.com/en/support/or-and-and-selection-conditions)
+    [AND](./or-and-and-selection-conditions.en.md)
     condition to the selection "bought toaster, no knife" to exclude all
     profiles from the selection 'purchased bread knive'.
 
-![](Documentation/toaster5.png)
+![](images/toaster5.png)
 
 -   Save the selection. You can now send a mailing to customers who have
     bought a toaster, but no knife. Customers who already have a set of

@@ -18,7 +18,7 @@ files used on a regular base in different templates or different content
 types, such as RSS feeds and web pages. Think of a company logo or a
 privacy statement in PDF format.
 
-![New media library](Documentation/new-media-library.png)
+![New media library](images/new-media-library.png)
 
 Creating a new library is fairly easy. Go to the content module and
 click on ‘New media library’ from the Media library menu. Give your
@@ -27,7 +27,7 @@ library a nice name and a (optional) description. Click on store.
 Your newly made empty library is displayed immediately. Click on ‘Edit
 files and images’ to start adding your first images and files.
 
-![Image library dialog screen](Documentation/upload-image.png)
+![Image library dialog screen](images/upload-image.png)
 
 Use 'add image' to add one image or multiple images from a zip archive
 to your image library. Image types suitable for usage in online

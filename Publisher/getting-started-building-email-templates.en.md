@@ -22,7 +22,7 @@ Most email templates have a header, two columns (one for a table of
 contents and for the articles), and a footer (often with contact data,
 and the unsubscribe link).
 
-![](differentlayouts.png)
+![](images/differentlayouts.png)
 
 ### Take into account the following
 
@@ -55,10 +55,10 @@ Within the HTML source code you can use special tags to indicate where
 the end user can add content to the documents based on the template.
 
 -   **[Text
-    blocks](http://www.copernica.com/en/support/the-text-function-for-adding-textual-content-to-your-document)** are
+    blocks](./the-text-function-for-adding-textual-content-to-your-document.en.md)** are
     used to add textual content to the document.
 -   **[Image
-    blocks](http://www.copernica.com/en/support/the-image-function-for-adding-images-to-your-document)** are
+    blocks](./the-image-function-for-adding-images-to-your-document.en.md)** are
     used to add images to the document.
 -   **[Loop
     blocks](http://www.copernica.com/en/support/the-loop-function-to-iterate-content-in-your-email)** are
@@ -67,7 +67,7 @@ the end user can add content to the documents based on the template.
 \
 **Img:***Code snippet of the Copernica newsletter, with image, text and
 (nested) loop blocks. *\
-![](Documentation/codeexample_template_blocks.png "Documentation/codeexample_template_blocks.png")\
+![](images/codeexample_template_blocks.png "Documentation/codeexample_template_blocks.png")\
 
 #### Additional options for content blocks
 
@@ -100,12 +100,12 @@ can specify how the date is diplayed.
 day.
 
 [More examples of
-smarty.now](http://www.copernica.com/en/support/using-the-smarty-date-function "Smarty.now modifier")
+smarty.now](./using-the-smarty-date-function.en.md "Smarty.now modifier")
 
 ### Including a webversion of your email
 
 The
-[webversion](https://www.copernica.com/en/support/link-to-the-webversion-of-your-email) offers
+[webversion](./link-to-the-webversion-of-your-email.en.md) offers
 a solution for the recipient who cannot read HTML newsletter in
 their email program. \
 \
@@ -131,12 +131,12 @@ requests are properly processed.
 -   [Read more about the unsubscribe
     link](https://www.copernica.com/en/support/the-unsubscribe-function)
 -   [Read more about setting the unsubscribe
-    behaviour](https://www.copernica.com/en/support/setting-unsubscribe-behaviour-for-your-database-or-collection)
+    behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection.en.md)
 
 ### Using Smarty personalization
 
 Templates and documents can
-be [personalized](https://www.copernica.com/en/support/personalize-campaigns)
+be [personalized](./personalize-campaigns.en.md)
 with information from the (sub)profile (the recipient). This makes
 it possible, -for example- to start an email with a personal opening.\
 \
@@ -167,7 +167,7 @@ under *Emailings*.
 ### Template text version
 
 Once you imported the template into the software, you can add a [text
-version](http://www.copernica.com/en/support/add-email-text-version) in
+version](./add-email-text-version.en.md) in
 the text version tab. It is however advised to create a text version for
 the individual documents based on the template, not the template itself.
 
@@ -186,4 +186,4 @@ click on *Preview mode* in the bottom of the document .
 
 At the top of the document you can enter the [sender data and subject of
 the
-document](http://www.copernica.com/en/support/sender-subject-and-other-email-headers "Email headers").
+document](./sender-subject-and-other-email-headers.en.md "Email headers").

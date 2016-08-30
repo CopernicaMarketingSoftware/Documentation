@@ -14,7 +14,7 @@ Javascript.
 You'll find this feature under **Websites**in the **Web page menu**(at
 the very bottom of it)
 
-![](https://vicinity.picsrv.net/4394/webformuliergenereren.png)
+![](images/webformuliergenereren.png)
 
 Select the type of form that you want to generate
 

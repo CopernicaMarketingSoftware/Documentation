@@ -17,7 +17,7 @@ The domain name cannot be a CNAME.
 **Warning:** changing the envelope domain affects all accounts under the
 given license.
 
-![Envelope settings](emaildeliverysettings.png)
+![Envelope settings](images/emaildeliverysettings.png)
 
 Picserver domain
 ----------------
@@ -101,4 +101,4 @@ the two servers are encrypted, protecting them from prying eyes. TLS is
 however not widely supported and can slow down email delivery a little
 bit. It does not harm deliverability to ESP's that do not support TLS.
 
-![](emaildeliverysettings2.png)
+![](images/emaildeliverysettings2.png)

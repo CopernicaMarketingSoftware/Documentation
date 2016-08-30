@@ -41,16 +41,16 @@ manual provided by PDFlib.
 
 **Image 1.** To make your text formatting changes take effect, set the
 text flow to 'on' and overide this setting from the template.
-![](pdf1.jpg)
+![](images/pdf1.jpg)
 
 **Image 2.**Some simple text formatting. The output is shown in image 3.
 
-![](pdf2.jpg)
+![](images/pdf2.jpg)
 
 **Image 3.**Output of text block above
 
-![](pdf3.png)
+![](images/pdf3.png)
 
 **Image 4.**Some more text formatting
 
-![](pdf4.png)
+![](images/pdf4.png)

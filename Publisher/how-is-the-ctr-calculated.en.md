@@ -1,4 +1,4 @@
-![Click through rate](CTR.png)\
+![Click through rate](images/CTR.png)\
  CTR = clicks / (impressions + clicks) \* 100
 
 For example, the click through rate on a **120-impression** e-mail

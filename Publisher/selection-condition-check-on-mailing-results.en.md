@@ -7,7 +7,7 @@ We distinguish between three condition types for
 -   SMS mailings
 -   fax mailings
 
-![](Documentation/EN-condition-emailresults.png)
+![](images/EN-condition-emailresults.png)
 
 Sent mailings include bulk mailings, transactional mails (individual
 mails) and test mails. You use this selection condition, for example,

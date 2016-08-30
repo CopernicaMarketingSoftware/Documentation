@@ -9,10 +9,10 @@ For storing mobile phone numbers you use a database or collection field
 of type **Phone -\> SMS**
 
 Go to *Profiles \> Database Management \>* [Edit
-fields](https://www.copernica.com/en/support/database-and-collection-field-types)
+fields](./database-and-collection-field-types.en.md)
 to configure the field settings of your database or collections
 
-![](https://pic.vicinity.nl/127/0/116581/telefoonveld-sms.png)
+![](images/telefoonveld-sms.png)
 
 ### 2. Authorize selection for mass mailings with SMS
 
@@ -23,7 +23,7 @@ thus to the wrong people).
 
 To authorize the selection of mini selection go to *Profiles -\>
 Database management -\>* [Set
-intentions](https://www.copernica.com/en/support/database-intentions-enabling-the-target-for-mass-mailings).
+intentions](./database-intentions-enabling-the-target-for-mass-mailings.en.md).
 Choose the selection that you want to use, and then **check the box**for
 **SMS mailings**.
 

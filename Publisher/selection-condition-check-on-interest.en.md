@@ -8,8 +8,8 @@ to be bothered with the latest news concerning the pop music charts.
 This selection below only selects profiles with the interest
 ‘Avant-garde Jazz’
 
-![](Documentation/conditioninterestfield.png)
+![](images/conditioninterestfield.png)
 
 -   [Read more about interest database
-    fields](http://www.copernica.com/en/support/working-with-interest-fields-and-groups)
+    fields](./working-with-interest-fields-and-groups.en.md)
 

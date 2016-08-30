@@ -9,7 +9,7 @@ that you specify. When the condition evaluates to 'true', the linked
 action will be executed. To be more specific, this can be executing or
 triggering out the follow-up action, or displaying a specific image or
 other content in your newsletter.
-![](Documentation/eenvoudigeeditor.png)
+![](images/eenvoudigeeditor.png)
 
 ### Using the easy script editor
 
@@ -24,7 +24,7 @@ to edit its content and settings).
 For **follow-up actions**you will find the editor in the final step of
 the follow-up action configuration settings dialog. [More info on
 conditions for follow
-ups](https://www.copernica.com/en/support/conditions-for-follow-ups).
+ups](./conditions-for-follow-ups.en.md).
 
 The behaviour of your **Content webforms**can also be extended with
 conditionial statements. You will find the editor for web form

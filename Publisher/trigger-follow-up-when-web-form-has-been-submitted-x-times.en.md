@@ -46,7 +46,7 @@ each time the webform is submitted.
 
 We first initialize the variable **'highest'** by assigning 0 to it.
 Then we use the
-[loadprofile](http://www.copernica.com/en/support/loadprofile-and-loadsubprofile)
+[loadprofile](./loadprofile-and-loadsubprofile.en.md)
 function to get (an array of) all profiles in the database. We use the
 smarty foreach function to loop through the profiles from the loaded
 database. Then we check if the value of the field **index** is greater
@@ -55,12 +55,12 @@ add 1 to the highest value, which is the value we write to the profile.
 
 (do not forget to change the source to the name of your database)
 
-![](followupcode.png)
+![](images/followupcode.png)
 
 You created a webform and linked a follow up action to it. Publish the
 web form on a webpage.
 
-![](website.png)
+![](images/website.png)
 
 ### Step 3 - Create the database follow-up
 
@@ -83,7 +83,7 @@ the condition for the triggering of the follow-up. Choose the
 (what is does: it checks if the value in the field **index** can be
 devided by 1000).
 
-![](profilevolgnummer.png)
+![](images/profilevolgnummer.png)
 
 The number \<**1000**\> represents the 1000th subscriber. You may of
 course alter this number to something else. To test the follow-up, set
@@ -94,4 +94,4 @@ You're finished. Test the campaign.
 To test the follow-up, submit the web form a few times, to see if
 desired action is executed.
 
-![](databaseview.png)
+![](images/databaseview.png)
