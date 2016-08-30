@@ -13,7 +13,7 @@ dialog.*
 Click to the **Edit profiles** tab. Hit the Change behaviour button to
 start the wizard.
 
-![Web form behaviour wizard](webformbehaviour.png)\
+![Web form behaviour wizard](images/webformbehaviour.png)\
 **\
  Let’s take a closer look at the behaviour wizard.** **The first step in
 the wizard lets you determine to whom the web form should apply. Four
@@ -54,7 +54,7 @@ profile is created.
 Depending to whom the web from should apply, you will be presented with
 different options in the next steps in the wizard.
 
-![Webform behaviour](behaviour2.png)
+![Webform behaviour](images/behaviour2.png)
 
 ### Multiple matches are found
 

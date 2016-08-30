@@ -11,7 +11,7 @@ This functionality can be found at *Profiles \> Database Management \>
 contains a package with **XML** or **JSON** data on the changes in the
 (sub)profile.
 
-*![XML](callbackXML.png)*
+*![XML](images/callbackXML.png)*
 
 *example of XML data with old and updated information about a profile.*
 
