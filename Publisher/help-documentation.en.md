@@ -12,7 +12,7 @@ tool](./tickets.en.md "Support tool").
 For the Copernica SOAP API object refererence, please refer
 to [https://www.copernica.com/en/support/apireference](./apireference.en.md).
 The reference for the REST API can be found at
-[https://www.copernica.com/nl/support/rest/the-copernica-rest-api](./rest/the-copernica-rest-api.en.md)
+[./the-copernica-rest-api.en.md](./rest/the-copernica-rest-api.en.md)
 
 Getting started with Copernica
 ------------------------------

@@ -5,7 +5,7 @@ newsletter subscribers that you wish to target with marketing actions.
 --------------------
 
 ![Create a new
-database](Copernicacom/create-new-database.png "Create a new database")
+database](images/create-new-database.png "Create a new database")
 
 To create a new database, choose the so named function in Profiles under
 'Database management'. Give the database a distinguishable name and
@@ -18,7 +18,7 @@ description without special characters.
 --------------------
 
 ![Manage database fields in Copernica Marketing
-Software](Copernicacom/manage-fields.png "Manage database fields in Copernica Marketing Software")
+Software](images/manage-fields.png "Manage database fields in Copernica Marketing Software")
 
 Once you have created your database, you can start adding fields to the
 database.

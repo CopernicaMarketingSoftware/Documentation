@@ -6,7 +6,7 @@ your database/collection and/or selections/miniselections from Profiles.
 ----------------------------
 
 ![Prepare your mass
-mailing](Copernicacom/en-massmailing.png "Prepare your mass mailing")
+mailing](images/en-massmailing.png "Prepare your mass mailing")
 
 Select the document you would like to send in E-mailings and choose the
 '*Send mass mailing*' function in under '*Mailings*'. \
@@ -16,7 +16,7 @@ Select the document you would like to send in E-mailings and choose the
 ----------------------------------------
 
 ![Choose the target of the
-mailing](Copernicacom/en-target-massmailing.png "Choose the target of the mass mailing")
+mailing](images/en-target-massmailing.png "Choose the target of the mass mailing")
 
 Select to which database/selection and possibly mini-selection you wish
 to send the mailing. Check the box to exclude double mail addresses,
@@ -30,7 +30,7 @@ description is meant as a reference to yourself for later.
 ---------------------------------
 
 ![Schedule your mass
-mailing](Copernicacom/en-schedule-massmailing.png "Schedule your mass mailing")
+mailing](images/en-schedule-massmailing.png "Schedule your mass mailing")
 
 The email can be sent immediately, set for later or to repeat several
 times (schedule for later processing). The scheduling option allows you
@@ -49,7 +49,7 @@ The modified version will be sent at the scheduled time.
 -----------------------
 
 ![Mass mailing
-options](Copernicacom/en-options-massmailing.png "Mass mailing options")
+options](images/en-options-massmailing.png "Mass mailing options")
 
 The default options are recommended for most users.
 
