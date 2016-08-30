@@ -4,7 +4,7 @@ of course not really a question).
 
 This article is about the question types. [Were you looking for
 information on how to create a survey
-instead?](http://www.copernica.com/en/support/create-new-survey)
+instead?](./create-new-survey)
 
 **Each question has at least two options**
 

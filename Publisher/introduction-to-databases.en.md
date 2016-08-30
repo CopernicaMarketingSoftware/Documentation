@@ -7,7 +7,7 @@ any location.
 
 You are free to structure your database any way you like in
 Copernica. There is no limit on the number of [database
-fields](http://www.copernica.com/en/support/database-and-collection-field-types)
+fields](./database-and-collection-field-types)
 that you can add. 
 
 ### Create and manage your database(s)
@@ -32,19 +32,19 @@ use within Copernica:
 -   Email field
 -   Large text field
 -   [Interest
-    field](http://www.copernica.com/en/support/working-with-interest-fields-and-groups)
+    field](./working-with-interest-fields-and-groups)
 -   Reference field
 
 ### Further reading
 
 -   [Set up your first
-    databases](http://www.copernica.com/en/support/help-documentation/how-do-i-set-up-my-database)
+    databases](./help-documentation/how-do-i-set-up-my-database)
 -   [More information database field
-    types](http://www.copernica.com/en/support/working-with-interest-fields-and-groups)
+    types](./working-with-interest-fields-and-groups)
 -   [Import data to your
-    database](http://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts)
+    database](./setting-up-your-database-and-import-your-contacts)
 -   [Database
-    selections](http://www.copernica.com/en/support/working-with-selections)
+    selections](./working-with-selections)
 -   [Archiving
-    databases](http://www.copernica.com/en/support/archiving-databases-and-selections)
+    databases](./archiving-databases-and-selections)
 

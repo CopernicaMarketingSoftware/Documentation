@@ -43,9 +43,9 @@ code from the Template source tab.
 #### Adding the template content blocks
 
 In the template source code you can use special code to create [text
-blocks](http://www.copernica.com/en/support/the-text-function-for-adding-textual-content-to-your-document), [image
-blocks](http://www.copernica.com/en/support/the-image-function-for-adding-images-to-your-document) and [loop
-blocks](http://www.copernica.com/en/support/the-loop-function-to-iterate-content-in-your-email).
+blocks](./the-text-function-for-adding-textual-content-to-your-document), [image
+blocks](./the-image-function-for-adding-images-to-your-document) and [loop
+blocks](./the-loop-function-to-iterate-content-in-your-email).
 You can add as many blocks as you want to your template, as long as they
 have different names.
 

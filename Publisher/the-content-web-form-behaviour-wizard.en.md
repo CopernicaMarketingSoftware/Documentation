@@ -87,11 +87,11 @@ contacts to edit their own data.
 ### Example web forms
 
 -   [Newsletter subscribe
-    form](http://www.copernica.com/en/support/newsletter-sign-up-form)
+    form](./newsletter-sign-up-form)
 -   [Unsubscribe form - profile will be removed entirely from the
-    database](http://www.copernica.com/en/support/unsubscribe-form-remove-profile-entirely)
+    database](./unsubscribe-form-remove-profile-entirely)
 -   [Change web
-    form](http://www.copernica.com/en/support/create-change-web-form)
+    form](./create-change-web-form)
 -   [Login
-    form](http://www.copernica.com/en/support/login-logout-and-forgot-password-form)
+    form](./login-logout-and-forgot-password-form)
 

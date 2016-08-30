@@ -35,4 +35,4 @@ redirected to the secure version.
 
 If you use your own domain (host name), some [extra steps are required
 for using
-SSL](https://www.copernica.com/en/support/your-website-in-copernica-through-secure-https).
+SSL](./your-website-in-copernica-through-secure-https).

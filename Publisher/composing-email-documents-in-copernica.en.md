@@ -1,7 +1,7 @@
 Once you have created a template, you can compose your first email
 document. A document is always based on a template. If you
 added [dynamic
-blocks](https://www.copernica.com/en/support/glossary/dynamic-content)
+blocks](./glossary/dynamic-content)
 to your template HTML source, you can start adding content to your
 document using those blocks.
 
@@ -46,7 +46,7 @@ the *Rich text editor*. Type something, and then click **Store and
 close** to see how it looks like in your email document.
 
 [Learn more about adding textual content through text
-blocks](http://www.copernica.com/en/support/the-text-function-for-adding-textual-content-to-your-document)
+blocks](./the-text-function-for-adding-textual-content-to-your-document)
 
 ### **Add images**
 
@@ -60,7 +60,7 @@ image**’.
 -   Make the image a hyperlink in the tab *Hyperlink*.
 
 [Learn more about adding images through images
-blocks](http://www.copernica.com/en/support/the-image-function-for-adding-images-to-your-document)
+blocks](./the-image-function-for-adding-images-to-your-document)
 
 ### **Looping content blocks**
 
@@ -74,7 +74,7 @@ In the left overview with blocks, you will now see each iteration with
 its text and image blocks.
 
 [Learn more about iterating content with loop
-blocks](http://www.copernica.com/en/support/the-loop-function-to-iterate-content-in-your-email)
+blocks](./the-loop-function-to-iterate-content-in-your-email)
 
 **Previewing the document**
 ---------------------------
@@ -96,7 +96,7 @@ Click **Add header** to use additional headers, such as the Bcc or
 Reply-to headers.
 
 [Read more about email
-headers](http://www.copernica.com/en/support/sender-subject-and-other-email-headers)
+headers](./sender-subject-and-other-email-headers)
 
 **Testing the email document**
 ------------------------------
@@ -106,7 +106,7 @@ to see how it looks like in your inbox.
 
 In the menu **Mailings**, click ‘Send test mailing’. This will open a
 dialog from where you can send a test email to your [test
-destination](https://www.copernica.com/en/support/what-is-the-test-destination)
+destination](./what-is-the-test-destination)
 
 [Read more about sending test
-mails](http://www.copernica.com/en/support/send-a-test-mail-or-test-mailing)
+mails](./send-a-test-mail-or-test-mailing)

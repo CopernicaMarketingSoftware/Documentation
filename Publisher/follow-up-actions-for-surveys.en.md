@@ -81,9 +81,9 @@ This will output the answers given by the submitter.
 #### Further reading
 
 -   [Conditions for follow-up
-    actions](http://www.copernica.com/en/support/automate-campaigns-with-follow-up-actions)
+    actions](./automate-campaigns-with-follow-up-actions)
 -   [More information on follow-up
-    actions](http://www.copernica.com/en/support/conditions-for-follow-ups)
+    actions](./conditions-for-follow-ups)
 -   [Follow-up
-    manager](http://www.copernica.com/en/support/follow-up-manager)
+    manager](./follow-up-manager)
 

@@ -8,53 +8,53 @@ You manage databases, collections and (sub) profile data in the section
 **Profiles**.
 
 -   [Introduction to
-    databases](http://www.copernica.com/en/support/introduction-to-databases)
+    databases](./introduction-to-databases)
 -   [Setting up your database and import
-    contacts](http://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts)
+    contacts](./setting-up-your-database-and-import-your-contacts)
 -   [Database selections and
-    miniselections](https://www.copernica.com/en/support/selections-and-miniselections)
+    miniselections](./selections-and-miniselections)
 -   [Create a
-    mailinglist](http://www.copernica.com/en/support/create-a-mailing-list)
+    mailinglist](./create-a-mailing-list)
 -   [Setting unsubscribe behaviour for your database or
-    collection](http://www.copernica.com/en/support/setting-unsubscribe-behaviour-for-your-database-or-collection)
+    collection](./setting-unsubscribe-behaviour-for-your-database-or-collection)
 -   [Database field
-    types](http://www.copernica.com/en/support/database-and-collection-field-types)
+    types](./database-and-collection-field-types)
 -   [Database interest
-    fields](http://www.copernica.com/en/support/working-with-interest-fields-and-groups)
+    fields](./working-with-interest-fields-and-groups)
 -   [Working with database
-    collections](http://www.copernica.com/en/support/working-with-database-collections)
+    collections](./working-with-database-collections)
 -   [Bounce
-    management](http://www.copernica.com/en/support/automatically-process-bounces)
+    management](./automatically-process-bounces)
 -   [Database unsubscribe
-    behaviour](http://www.copernica.com/en/support/setting-unsubscribe-behaviour-for-your-database-or-collection)
+    behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection)
 -   [Database restrictions (to keep your database
-    clean)](http://www.copernica.com/en/support/database-restrictions)
+    clean)](./database-restrictions)
 -   [View profile history and
-    campaigns](http://www.copernica.com/en/support/view-profile-history-and-campaigns)
+    campaigns](./view-profile-history-and-campaigns)
 -   [Profile survey
-    results](http://www.copernica.com/en/support/view-the-given-answers-in-a-survey)
+    results](./view-the-given-answers-in-a-survey)
 -   [Database and collection
-    follow-ups](http://www.copernica.com/en/support/follow-up-actions-for-databases-and-collections)
+    follow-ups](./follow-up-actions-for-databases-and-collections)
 -   [Notify other systems through Callback
-    URLs](http://www.copernica.com/en/support/callback-urls)
+    URLs](./callback-urls)
 
 Profiles and subprofiles
 
 -   [Profiles and
-    subprofiles](http://www.copernica.com/en/support/profiles-and-subprofiles)
+    subprofiles](./profiles-and-subprofiles)
 -   [Manage and edit individual
-    profiles](http://www.copernica.com/en/support/creating-editing-or-removing-a-single-profile-or-single-subprofile)
+    profiles](./creating-editing-or-removing-a-single-profile-or-single-subprofile)
 -   [**Import / export
-    profiles**](https://www.copernica.com/en/support/import-and-export)
+    profiles**](./import-and-export)
 -   [Edit or remove multiple
-    profiles](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+    profiles](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
 -   [How do I remove duplicate
-    profiles?](http://www.copernica.com/en/support/how-do-i-remove-duplicate-contacts-profiles)
+    profiles?](./how-do-i-remove-duplicate-contacts-profiles)
 -   [Rollback (sub)profile to previous
-    state](http://www.copernica.com/en/support/rollback-profile-to-previous-state)
+    state](./rollback-profile-to-previous-state)
 
-[](https://www.copernica.com/en/support/import-and-export)
+[](./import-and-export)
 
-[](https://www.copernica.com/en/support/selections-and-miniselections)
+[](./selections-and-miniselections)
 
  

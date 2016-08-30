@@ -6,9 +6,9 @@ submitted.
 campaign types where follow-ups are used:
 
 -   [Double opt in for newsletter
-    subscribers](https://www.copernica.com/en/support/create-a-double-optin-for-new-subscribers)
+    subscribers](./create-a-double-optin-for-new-subscribers)
 -   [Whitepaper
-    downloads](https://www.copernica.com/en/support/how-to-make-a-white-paper-marketing-campaign)
+    downloads](./how-to-make-a-white-paper-marketing-campaign)
     (to generate new leads)
 -   And many more...
 
@@ -86,4 +86,4 @@ We distinguish two types of follow-up conditions:
     follow-up (the can be weeks or years later).
 
 [Read more about conditions for
-follow-ups](https://www.copernica.com/en/support/conditions-for-follow-ups)
+follow-ups](./conditions-for-follow-ups)

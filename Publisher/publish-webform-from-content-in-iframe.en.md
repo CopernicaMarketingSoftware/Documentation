@@ -5,14 +5,14 @@ Publish sign-up form
 --------------------
 
 The [registration
-form](http://www.copernica.com/en/support/newsletter-sign-up-form)
+form](./newsletter-sign-up-form)
 always creates a new profile or modifies an existing profile based on
 the key fields designated in the form.
 
 -   Place the web form on a web page Copernica. You use the webform tag
     *{webform name = "name of your web form"}*
 -   Make sure you have a (sub) [domain linked to your
-    website](http://www.copernica.com/en/support/link-domain-to-website).
+    website](./link-domain-to-website).
 -   You can load the web page with the form in an iframe on any external
     site. Use the code:
 
@@ -25,7 +25,7 @@ Publish change form
 -------------------
 
 A [change
-form](http://www.copernica.com/en/support/create-change-web-form) works
+form](./create-change-web-form) works
 with a user already logged in. The user gets logged in as he clicks from
 your emailing to your page. This is possible by the information that you
 send along in the referring link. To ensure that the form in the iframe
@@ -35,10 +35,10 @@ code ensures that the *profile={\$profile.id}&code={\$profile.code}*
 information is also passed to the page with the form.
 
 -   [Place the
-    form](http://www.copernica.com/en/support/publish-your-web-form) on
+    form](./publish-your-web-form) on
     a web page in Copernica
 -   Make sure you have a (sub) [domain linked to your
-    website](http://www.copernica.com/en/support/link-domain-to-website)
+    website](./link-domain-to-website)
 -   Add the following code to the web page where you want to place the
     iframe
 -   Replace *http://newsletter.yourcompany.com/page* with the address of

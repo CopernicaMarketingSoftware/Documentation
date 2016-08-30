@@ -9,7 +9,7 @@ could solve it. \
  Some HTML errors may only come up when the document is
 **personalized**. Select the *personalized checkbox* in the lower left
 corner to validate the personalized document using the [test
-destination](http://www.copernica.com/en/support/what-is-the-test-destination).
+destination](./what-is-the-test-destination).
 
 ![](images/htmlerrors.png)
 

@@ -11,7 +11,7 @@ Step one: creating and uploading the file
 -----------------------------------------
 
 -   Create your import file, and [convert it to a tab delimited txt
-    file](http://www.copernica.com/en/support/the-requirements-for-a-well-formatted-import-file).
+    file](./the-requirements-for-a-well-formatted-import-file).
 -   Under Profiles, **click on the database** that you want to update
     with the new data
 -   Choose **Import / Export files**from the **Current view**menu. Then,
@@ -45,7 +45,7 @@ can link them manually.
 
 You can create missing database fields directly by clicking on the
 '**find or create field**’ button. A [text
-field](http://www.copernica.com/en/support/database-and-collection-field-types)
+field](./database-and-collection-field-types)
 will be created in the database. Click **Properties** to make the field
 with the desired settings. You may of course alter these settings at a
 later time from the*Database Management menu \> **Edit fields**.*
@@ -60,7 +60,7 @@ on **Create all fields**.
 
 To synchronize data, or when importing data to a collection, you need to
 set [key
-fields](http://www.copernica.com/en/support/what-are-key-fields). The
+fields](./what-are-key-fields). The
 key field must contain a unique value for each profile and subprofile,
 needed by the application to link the import rule with an existing
 profile and to link a profile to a subprofile. If you do not have a

@@ -82,16 +82,16 @@ not be imported.
 
 You may specify the properties of each field. Newly created fields are
 by default normal [text
-fields](https://www.copernica.com/en/support/database-and-collection-field-types).
+fields](./database-and-collection-field-types).
 
 -   Make sure that the field holding the email addresses is from the
     type *Email field*
 -   For each field that you want to be displayed on the overview pages,
     check ‘ Show this field on overview pages’
 -   Read more about the [available field
-    types](http://www.copernica.com/en/support/database-and-collection-field-types)
+    types](./database-and-collection-field-types)
     and [field
-    properties](http://www.copernica.com/en/support/database-field-settings-and-options)
+    properties](./database-field-settings-and-options)
 -   You can alter the field properties at any time
 
 ### Advanced settings
@@ -103,10 +103,10 @@ following points into account.
 -   In Copernica, dates can only be stored in database notation
     (YYYY-MM-DD hh-mm-ss). If your import file contains dates, read the
     article on [importing
-    dates](http://www.copernica.com/en/support/importing-dates-with-format-conversion)
+    dates](./importing-dates-with-format-conversion)
 -   If you want to update (synchronize) your database with new data from
     a import file, make sure that you make use of [key
-    fields](http://www.copernica.com/en/support/what-are-key-fields).
+    fields](./what-are-key-fields).
 -   If your database has one or more collections with sub data, make
     sure you make use of key fields. 
 
@@ -126,5 +126,5 @@ When you have closed the dialog, you can view the imported data by
 clicking on the database. Imported data is shown in the list view.  
 
 -   [Create a mailing list from which unsubscribes are automatically
-    exluded](http://www.copernica.com/en/support/create-a-mailing-list)
+    exluded](./create-a-mailing-list)
 

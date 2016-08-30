@@ -52,13 +52,13 @@ Find the duplicate addresses in your database by clicking the selection.
 As you will see, there are 2 duplicate addresses.
 
 [Read how you create a selection to filter
-duplicates](https://www.copernica.com/en/support/how-do-i-remove-duplicate-contacts-profiles)
+duplicates](./how-do-i-remove-duplicate-contacts-profiles)
 
 ### Selection B\_Erroneous addresses
 
 Although the presence of faulty email addresses in a database should not
 occur if you utilize [double
-optin](https://www.copernica.com/en/support/create-a-double-optin-for-new-subscribers),
+optin](./create-a-double-optin-for-new-subscribers),
 it does of course not harm to have such a selection for your own
 administration.
 
@@ -101,7 +101,7 @@ a persistent error, include the profile in hardbounce selection.
 You are free to alter these settings of course.
 
 -   [Learn how to make a hardbounces
-    selection](https://www.copernica.com/en/support/automatically-process-bounces)
+    selection](./automatically-process-bounces)
 -   [Read more about bounce management with
     Copernica](https://www.copernica.com/en/blog/bounce-management-with-copernica)
 
@@ -119,7 +119,7 @@ This is the selection where you finally send a mailing to. To this
 selection we added various conditions and for a profile to be included
 in the selection, it must meet all conditions. This is accomplished with
 [AND
-conditions.](https://www.copernica.com/en/support/or-and-and-selection-conditions)
+conditions.](./or-and-and-selection-conditions)
 
 The conditions of the selection are:
 
@@ -156,5 +156,5 @@ If you have any additional questions or just want to learn more about
 segementing your data, please check out our [further
 documentation](https://www.copernica.com/en/blog/selections-and-miniselections)
 on this subject, or watch our [video
-tutorials](https://www.copernica.com/en/support/video-tutorials) to
+tutorials](./video-tutorials) to
 easily get started.

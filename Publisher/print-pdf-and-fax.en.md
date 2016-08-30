@@ -9,7 +9,7 @@ Note: The plugin doesn’t work with Acrobat Elements or any version of
 Adobe Reader.
 
 Fonts you use in your blocks must be [uploaded to
-Copernica](http://www.copernica.com/en/support/uploading-fonts).
+Copernica](./uploading-fonts).
 Otherwise, text is not displayed at all.
 
 ### Download and Install Plugin
@@ -28,19 +28,19 @@ PDF](http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-blocks-E.pdf)
 ### Other topics
 
 -   [Create PDF blocks in Adobe Acrobat
-    PRO](http://www.copernica.com/en/support/create-pdf-blocks-in-adobe-acrobat-pro)
+    PRO](./create-pdf-blocks-in-adobe-acrobat-pro)
 -   [Importing PDF document and edit its
-    content](http://www.copernica.com/en/support/import-pdf-document-and-editing-its-content)
+    content](./import-pdf-document-and-editing-its-content)
 -   [Uploading fonts (manage
-    fonts)](http://www.copernica.com/en/support/uploading-fonts)
+    fonts)](./uploading-fonts)
 -   [PDF blocks formatting - what should you take into
-    account](https://www.copernica.com/en/support/pdf-blocks-formatting-what-should-you-take-into-account)
+    account](./pdf-blocks-formatting-what-should-you-take-into-account)
 -   [Linking to a personalized PDF file or send along as an email
-    attachment](http://www.copernica.com/en/support/linking-to-a-personalized-pdf-file-or-send-as-an-attachment)
+    attachment](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment)
 -   [(Bulk) download of PDF
-    files](http://www.copernica.com/en/support/bulk-download-of-personalized-pdf-files)
+    files](./bulk-download-of-personalized-pdf-files)
 -   [PDF block
-    conditions](http://www.copernica.com/en/support/conditionally-show-pdf-blocks)
+    conditions](./conditionally-show-pdf-blocks)
 -   [Sending
-    fax-mailing](http://www.copernica.com/en/support/sending-a-fax-mass-mailing)
+    fax-mailing](./sending-a-fax-mass-mailing)
 

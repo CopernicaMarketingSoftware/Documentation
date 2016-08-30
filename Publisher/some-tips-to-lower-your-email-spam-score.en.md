@@ -80,6 +80,6 @@ obfuscation**
 **HTML**
 
 -   Remove any unneeded HTML. [Remove HTML
-    errors](http://www.copernica.com/en/support/reducing-html-errors) as
+    errors](./reducing-html-errors) as
     much as possible. Keep your HTML code clean.
 

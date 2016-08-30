@@ -24,7 +24,7 @@ currently selected or new question. Use 'Add question' from the lower
 part of the screen to add questions.
 
 [See all the available question
-types](https://www.copernica.com/en/support/survey-question-types-and-their-options)
+types](./survey-question-types-and-their-options)
 
 ### To copy a question
 

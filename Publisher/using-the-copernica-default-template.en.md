@@ -39,13 +39,13 @@ again. To add content (text and images) to the documents under that
 template, three types of content blocks are available:
 
 -   [Text
-    blocks](https://www.copernica.com/en/support/the-text-function-for-adding-textual-content-to-your-document)
+    blocks](./the-text-function-for-adding-textual-content-to-your-document)
     – Used to add textual content to your document
 -   [Image
-    blocks](http://www.copernica.com/en/support/the-image-function-for-adding-images-to-your-document)
+    blocks](./the-image-function-for-adding-images-to-your-document)
     – Used to add images to your document
 -   [Loop
-    blocks](http://www.copernica.com/en/support/the-loop-function-to-iterate-content-in-your-email)
+    blocks](./the-loop-function-to-iterate-content-in-your-email)
     – Used to iterate text and image blocks in your document
 
 The default template / document makes use of all three block types. The
@@ -68,10 +68,10 @@ above the document.
 
 In the template footer you'll find the unsubscribe link. Note that this
 unsubscribe will not work until you configured the [unsubscribe
-behaviour](http://www.copernica.com/en/support/setting-unsubscribe-behaviour-for-your-database-or-collection)
+behaviour](./setting-unsubscribe-behaviour-for-your-database-or-collection)
 on the database of your[test
-destination](http://www.copernica.com/en/support/help-documentation).
+destination](./help-documentation).
 
 -   Next step: [Add the from address, sender name and the subject of the
-    email](http://www.copernica.com/en/support/editing-the-sender-and-subject-of-the-email-document)
+    email](./editing-the-sender-and-subject-of-the-email-document)
 

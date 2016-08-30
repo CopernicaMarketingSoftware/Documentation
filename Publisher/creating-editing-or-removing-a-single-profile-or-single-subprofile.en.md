@@ -12,7 +12,7 @@ Select the database, and then find the profile that you wish to edit.
 -   Choose ‘**Create profile**’ from the Profile menu.
 
 [Importing
-profiles](http://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts)
+profiles](./setting-up-your-database-and-import-your-contacts)
 
 ### **To create a subprofile**
 
@@ -21,7 +21,7 @@ profiles](http://www.copernica.com/en/support/setting-up-your-database-and-impor
     collection to which you want to add the subprofile.
 
 [Create multiple subprofiles at
-once](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
 
 ### **Edit profile / edit subprofile**
 
@@ -32,7 +32,7 @@ once](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-dat
     *inline editing*. Click on a value to edit it.
 
 [Edit multiple profiles or subprofiles at
-once](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
 
 ### **Remove a profile**
 
@@ -41,4 +41,4 @@ once](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-dat
     be undone.
 
 [Remove multiple profiles or subprofiles at
-once](http://www.copernica.com/en/support/edit-or-remove-all-profiles-from-a-database-or-selection-at-once)
+once](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once)

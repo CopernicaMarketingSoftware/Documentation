@@ -13,14 +13,14 @@ document text block (switch ot the HTML editor).
 `{webform name='name webform'}`
 
 [More information and options to include
-webform](http://www.copernica.com/en/support/publish-your-web-form)
+webform](./publish-your-web-form)
 
 ### Code to include a web survey
 
 `{survey name='name of the survey'}`
 
 [More information and options to include a
-survey](https://www.copernica.com/en/support/publish-a-survey)
+survey](./publish-a-survey)
 
 ### Code to include a feed
 
@@ -31,4 +31,4 @@ or
 `{loadfeed feed='http://address.of.the.feed'}`
 
 [More information and options to include
-feeds](http://www.copernica.com/en/support/the-loadfeed-function)
+feeds](./the-loadfeed-function)

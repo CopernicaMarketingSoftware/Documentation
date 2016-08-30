@@ -11,7 +11,7 @@ You can find the export data dialog under Profiles \> Current view \>
 
 You may have forgotten to set key fields for the import. The system
 needs [key
-fields](https://www.copernica.com/en/support/what-are-key-fields) in
+fields](./what-are-key-fields) in
 order to match profiles and subprofiles from an import file with the
 current records in your database, and to link subprofiles to its parent
 profile. If you have duplicate profiles, you may want to remove the
@@ -26,7 +26,7 @@ fields on both database and collection level.
 
 Your data is imported, but the fields are not yet shown in the overview.
 To make the fields visible, go to Database management \> [Edit
-fields](https://www.copernica.com/en/support/database-and-collection-field-types)
+fields](./database-and-collection-field-types)
 
 Click a field to edit its properties and check the option ‘**Show this
 field on overview pages**’. Repeat this for every field you want to see
@@ -166,7 +166,7 @@ all sorts of dates and non-dates, you can use a normal text field to
 store the dates.
 
 [Learn more about converting
-dates](http://www.copernica.com/en/support/importing-dates-with-format-conversion)
+dates](./importing-dates-with-format-conversion)
 
 ### What happens if I ignore the invalid date warning
 

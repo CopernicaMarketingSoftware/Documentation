@@ -23,7 +23,7 @@ The website has no pages yet. To make a web page, you need a web
 template first.
 
 [Read how you can make a web
-template](http://www.copernica.com/en/support/create-web-template)
+template](./create-web-template)
 
 ### Charging of websites
 

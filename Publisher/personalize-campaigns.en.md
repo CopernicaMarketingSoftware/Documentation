@@ -12,27 +12,27 @@ supports both Smarty verion 2 and 3 (though we recommend using version
 3).
 
 -   [What is
-    personalization](http://www.copernica.com/en/support/what-is-personalization)
+    personalization](./what-is-personalization)
 -   [Smarty 2 versus smarty
-    3](http://www.copernica.com/en/support/smarty-2-vs-smarty-3)
+    3](./smarty-2-vs-smarty-3)
 -   [Start your email with a personalized
-    salutation](http://www.copernica.com/en/support/personalized-salutation-in-email-using-smarty-code)
+    salutation](./personalized-salutation-in-email-using-smarty-code)
 -   [Personalizing from profile or
-    subprofile](http://www.copernica.com/en/support/personalizing-from-a-profile-or-subprofile)
+    subprofile](./personalizing-from-a-profile-or-subprofile)
 -   [Using the smarty date function (plus some
-    examples)](http://www.copernica.com/en/support/using-the-smarty-date-function)
+    examples)](./using-the-smarty-date-function)
 -   [Filter data with smarty
-    modifiers](http://www.copernica.com/en/support/filter-data-with-smarty-modifiers)
+    modifiers](./filter-data-with-smarty-modifiers)
 -   [Personalizing
-    hyperlinks](http://www.copernica.com/en/support/personalizing-hyperlinks)
+    hyperlinks](./personalizing-hyperlinks)
 -   [Personalizing using multidimensional
-    databases](http://www.copernica.com/en/support/personalizing-using-multi-dimensional-databases)
+    databases](./personalizing-using-multi-dimensional-databases)
 -   [Get URL parameters within Smarty
-    personalization](http://www.copernica.com/en/support/get-url-parameters-within-smarty-personalization)
+    personalization](./get-url-parameters-within-smarty-personalization)
 -   [Errors in
-    personalization](http://www.copernica.com/en/support/errors-in-personalization)
+    personalization](./errors-in-personalization)
 -   [Example of the loadprofile and loadsubprofile
-    functions](http://www.copernica.com/en/support/example-of-the-loadprofile-and-loadsubprofile-functions)
+    functions](./example-of-the-loadprofile-and-loadsubprofile-functions)
 
 ### Complete Smarty documentation
 
@@ -54,9 +54,9 @@ Copernica has many special features for personalization and tags for
 publishing special content.
 
 -   [View all functions and
-    tags](http://www.copernica.com/en/support/special-functions-and-tags)
+    tags](./special-functions-and-tags)
 -   [Trigger variables in follow up
-    actions](https://www.copernica.com/en/support/extra-variables-for-follow-ups)
+    actions](./extra-variables-for-follow-ups)
     (get access to information about the trigger event)
 
 ### Smarty Reference
@@ -64,6 +64,6 @@ publishing special content.
 On the smarty reference page we list all variables that are assigned by
 Copernica and that can be used in your mailings and documents.
 
--   [View Smarty reference](https://www.copernica.com/en/support/smarty)
+-   [View Smarty reference](./smarty)
     (requires logging in to the software)
 

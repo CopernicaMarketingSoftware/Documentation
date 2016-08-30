@@ -46,7 +46,7 @@ in. See previous solution.
 Your form might be not linked to a database or to the wrong database. A
 web form is linked to one database at a time. Make sure that the web
 form is linked to the database it should interact with (your [test
-destination](http://www.copernica.com/en/support/send-a-test-mail-or-test-mailing)
+destination](./send-a-test-mail-or-test-mailing)
 should be in this database, and you target your mailing to this
 database).
 

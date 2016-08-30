@@ -4,7 +4,7 @@ data. In this tutorial you need a database, a web page to publish the
 web form, and a webpage used as the landing page for your web form.
 
 In order to create such a web form, you designate use [key
-fields](http://www.copernica.com/en/support/what-are-key-fields) in your
+fields](./what-are-key-fields) in your
 web form. A key field is a unique field used to link the data of the
 submitter with his profile in your database. Fields containing the email
 address or a client number are ideal for this. A key field is not set in

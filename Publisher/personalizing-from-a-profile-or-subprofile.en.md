@@ -2,10 +2,10 @@ Personalization added to publications have to be focused on the group
 it’ll be sent to. Simply put: you can only use data from the database
 and/or collection you’re sending the mailing to. If you want to use data
 from another database and/or collection, you can use [Loadprofile and/or
-subprofile](http://www.copernica.com/en/support/loadprofile-and-loadsubprofile).
+subprofile](./loadprofile-and-loadsubprofile).
 
 When personalizing from a collection, the [test
-destination](http://www.copernica.com/en/support/what-is-the-test-destination)
+destination](./what-is-the-test-destination)
 should be a subprofile in this collection as well to be able to test the
 personalization in the application.
 
@@ -56,7 +56,7 @@ If the destination of a document is a profile, and you want to load the
 data from the subprofiles belonging to this profile (purchased items
 from a customer, for example), use the Smarty *foreach*function.
 Possibly in combination with the
-[loadsubprofile](http://www.copernica.com/en/support/loadprofile-and-loadsubprofile)
+[loadsubprofile](./loadprofile-and-loadsubprofile)
 function.
 
 You can loop through subprofiles using the smarty foreach function:
@@ -71,7 +71,7 @@ The variable {\$contact.id} will then return all IDs of the subprofiles.
 **Note:** the foreach example mentioned above can only be used in
 templates that are rendered with smarty 3. Older smarty versions have a
 different syntax, but we advise to use [smarty
-3](http://www.copernica.com/en/support/smarty-2-vs-smarty-3) anyway.
+3](./smarty-2-vs-smarty-3) anyway.
 
 **Note 2:** If you want to print somekind of hyperlink from the
 (sub)profiles within the foreach-loop, it is necessary to use
@@ -88,7 +88,7 @@ information from Database B. To get access to this data, you use the
 function **loadprofile**.
 
 -   [Read more about the load(sub)profile
-    function](http://www.copernica.com/en/support/loadprofile-and-loadsubprofile)
+    function](./loadprofile-and-loadsubprofile)
 
 ### Retrieve data from any data collection in your account
 
@@ -97,5 +97,5 @@ load information from a collection in the same database A and any other
 collection. To achieve this, use the function **loadsubprofile**.
 
 -   [Read more about the loadsubprofile
-    function](http://www.copernica.com/en/support/loadprofile-and-loadsubprofile)
+    function](./loadprofile-and-loadsubprofile)
 

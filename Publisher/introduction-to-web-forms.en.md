@@ -17,7 +17,7 @@ The wizard to generate web forms is found under Websites \> Web page \>
 Form wizard
 
 [Read how you quickly generate a
-webform](http://www.copernica.com/en/support/generate-a-web-form-without-a-hassle/)
+webform](./generate-a-web-form-without-a-hassle/)
 
 2. The Content web form
 -----------------------

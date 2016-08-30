@@ -30,11 +30,11 @@ address.
 ### Test destination
 
 If you use [Smarty
-personalisation](http://www.copernica.com/en/support/personalize-campaigns)
+personalisation](./personalize-campaigns)
 and / or javascript conditions in your publications than it is previewed
 in the application with the data from the profile or subprofile set as
 [test
-destination](http://www.copernica.com/en/support/what-is-the-test-destination).
+destination](./what-is-the-test-destination).
 
 Also test mails are sent to the test destination. Each user within an
 account has his or her own test destination, which can be set from your
