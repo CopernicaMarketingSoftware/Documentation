@@ -1,7 +1,7 @@
 # Function MQ_Local
 
 If you want to check whether a received incoming message was marked as a
-local message for local delivery, you can cal this function. It returns 
+local message for local delivery, you can call this function. It returns
 boolean.
 
 ````c
