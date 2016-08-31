@@ -38,7 +38,7 @@ use within Copernica:
 ### Further reading
 
 -   [Set up your first
-    databases](./help-documentation/how-do-i-set-up-my-database.en.md)
+    databases](./how-do-i-set-up-my-database.en.md)
 -   [More information database field
     types](./working-with-interest-fields-and-groups.en.md)
 -   [Import data to your
