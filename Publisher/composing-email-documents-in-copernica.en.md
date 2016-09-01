@@ -1,7 +1,6 @@
 Once you have created a template, you can compose your first email
 document. A document is always based on a template. If you
-added [dynamic
-blocks](./glossary/dynamic-content.en.md)
+added [dynamic blocks](./dynamic-content.en.md)
 to your template HTML source, you can start adding content to your
 document using those blocks.
 

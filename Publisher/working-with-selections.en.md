@@ -31,7 +31,7 @@ A selection is always current. Each time the rules are edited and
 several times a day the selection is rebuilt. So if you change the
 address of a contact, it will be added or removed from the selection
 within a few hours. [Read more about selection
-rebuilding](./how-are-selections-re-built.en.md)
+rebuilding](./how-are-selections-rebuilt.en.md)
 
 Selection condition types
 -------------------------

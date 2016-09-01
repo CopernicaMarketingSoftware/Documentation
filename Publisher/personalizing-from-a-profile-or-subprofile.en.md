@@ -71,7 +71,7 @@ The variable {\$contact.id} will then return all IDs of the subprofiles.
 **Note:** the foreach example mentioned above can only be used in
 templates that are rendered with smarty 3. Older smarty versions have a
 different syntax, but we advise to use [smarty
-3](./smarty-2-vs-smarty-3) anyway.
+3](./smarty-2-vs-smarty-3.en.md) anyway.
 
 **Note 2:** If you want to print somekind of hyperlink from the
 (sub)profiles within the foreach-loop, it is necessary to use

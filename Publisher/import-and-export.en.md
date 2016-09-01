@@ -13,7 +13,7 @@ section in the menu **Current View**.
 -   [Import data to new
     database](./setting-up-your-database-and-import-your-contacts.en.md)
 -   [Update a database through an
-    import](./updating-a-database-through-an-import.en.md)
+    import](./updating-a-database-using-an-import.en.md)
 -   [Schedule import (from online
     location)](./schedule-import-from-online-location.en.md)
     (once or periodically)

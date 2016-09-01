@@ -30,7 +30,7 @@ Dutch King Song
 -   [Sending to profiles or
     subprofiles](./sending-to-profiles-or-subprofiles.en.md)
 -   [Send mass mailing
-    immediately](./help-documentation/how-do-i-send-a-mass-mailing.en.md)
+    immediately](./how-do-i-send-a-mass-mailing.en.md)
 -   [Schedule a mass mailing for later or send
     periodically](./schedule-a-mass-mailing-for-later-or-send-periodically.en.md)
 -   [Test various documents in a split-run

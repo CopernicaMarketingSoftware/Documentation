@@ -5,7 +5,7 @@ automatically. For example, they will always contain the profiles,
 subprofiles,that meet the rules of the (mini) selection at that time.
 
 -   [Watch our instruction video on creating
-    selections](./video-tutorials/profiles-selections.en.md)
+    selections](./profiles-selections.en.md)
 
 You create and manage your (mini) selections in the **Profiles** section
 of the software. Make a new selection via *Database Management* \>
@@ -22,7 +22,7 @@ of the software. Make a new selection via *Database Management* \>
 -   [Working with variable date
     conditions](./working-with-variable-date-conditions.en.md)
 -   [Rebuilding of
-    (mini)selections](./how-are-selections-re-built.en.md)
+    (mini)selections](./how-are-selections-rebuilt.en.md)
 -   [Refer from one selection to another
     (mini)selection](./refer-from-one-selection-to-another-mini-selection.en.md)
 -   [Copy and move

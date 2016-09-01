@@ -82,7 +82,7 @@ not be imported.
 
 You may specify the properties of each field. Newly created fields are
 by default normal [text
-fields](./database-and-collection-field-types).
+fields](./database-and-collection-field-types.en.md).
 
 -   Make sure that the field holding the email addresses is from the
     type *Email field*

@@ -12,14 +12,14 @@ tool](./tickets.en.md "Support tool").
 For the Copernica SOAP API object refererence, please refer
 to [https://www.copernica.com/en/support/apireference](./apireference.en.md).
 The reference for the REST API can be found at
-[https://www.copernica.com/nl/support/rest/the-copernica-rest-api](./rest/the-copernica-rest-api.en.md)
+[./the-copernica-rest-api.en.md](./the-copernica-rest-api.en.md)
 
 Getting started with Copernica
 ------------------------------
 
 When you first start working with Copernica it might be helpful to get
 [a brief introduction of the components of our
-software](./getting-started-a-brief-overview-of-the-software).
+software](./getting-started-a-brief-overview-of-the-software.en.md).
 If you want more specific information about all these components then
 you can find them in the topics below.
 
@@ -45,7 +45,7 @@ Summary
 -   [Campaign results and
     statistics](./campaign-results-and-statistics.en.md)
 -   [Print, PDF and
-    fax](http://www.copernica.com/en/blog/print-pdf-and-fax.en.md)
+    fax](./print-pdf-and-fax.en.md)
 -   [Automate
     campaigns](./automate-campaigns.en.md)
 -   [Personalize
