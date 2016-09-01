@@ -2,17 +2,9 @@ A profile is a single record in a database. Using this method you can
 request or update the data stored in a specific profile, namely the
 profile with identifier \$profileID.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/profile/\$profileID/fields
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/profile/\$profileID/fields | GET, POST | none |
 
 GET profile field values
 ------------------------

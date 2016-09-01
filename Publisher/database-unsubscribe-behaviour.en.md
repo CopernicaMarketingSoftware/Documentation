@@ -12,17 +12,9 @@ This method lets you retrieve information about the currently set
 unsubscribe behaviour on a database or set the unsubscribe behaviour
 using a POST request.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/unsubscribe
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/unsubscribe | GET, POST | none |
 
 GET Request
 -----------

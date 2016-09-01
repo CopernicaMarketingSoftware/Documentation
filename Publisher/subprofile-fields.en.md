@@ -2,17 +2,9 @@ A subprofile is a single record in a collection. Using this method you
 can request or update the data stored in a specific subprofile, namely
 the subprofile with identifier \$subprofileID.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/subprofile/\$subprofileID/fields
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/subprofile/\$subprofileID/fields | GET, POST | none |
 
 GET subprofile fields
 ---------------------

@@ -4,17 +4,9 @@ either retrieve the current databases within a Copernica account or to
 create a new database using a POST request. It is not yet possible to
 delete databases using the API.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/databases
-
-GET, POST
-
-limit, start
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/databases | GET, POST | limit, start |
 
 Properties of a database
 ------------------------

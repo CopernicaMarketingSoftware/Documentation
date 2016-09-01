@@ -3,17 +3,9 @@ The errors of an emailing can be retrieved with the
 returned errors with the field
 [parameter](./rest-api-parameters.en.md).
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailing/\$emailingID/errors
-
-GET
-
-limit, start, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailing/\$emailingID/errors | GET | limit, start, fields[] |
 
 Properties of emailing errors
 -----------------------------

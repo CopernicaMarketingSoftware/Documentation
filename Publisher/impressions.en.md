@@ -1,17 +1,9 @@
 All impressions in an account can be retrieved with the /impressions
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/impressions
-
-GET
-
-fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/impressions | GET | fields[] |
 
 Properties of an impression
 ---------------------------

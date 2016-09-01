@@ -2,17 +2,9 @@ Information about the abuse reports of a destination of an emailing can
 be retrieved with the /emailingdestination/\$destinationID/abuses
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID/abuses
-
-GET
-
-fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID/abuses | GET | fields[] |
 
 Properties of an abuse report of an emailing destination
 --------------------------------------------------------

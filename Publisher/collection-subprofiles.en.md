@@ -2,17 +2,9 @@ A subprofile is a record in a collection that exists in a database.
 Using this method you can retreive all subprofiles of a given
 collection.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/collection/\$collectionID/subprofiles
-
-GET
-
-limit, start
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/collection/\$collectionID/subprofiles | GET | limit, start |
 
 GET Request
 -----------

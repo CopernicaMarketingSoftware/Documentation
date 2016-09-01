@@ -7,17 +7,9 @@ deleted or created. \
 associated with databaseID. Using the POST request, you can create a new
 database callback URL.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/callbacks
-
-GET, POST
-
-limit, start
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/callbacks | GET, POST | limit, start |
 
 Callback data
 -------------

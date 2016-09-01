@@ -7,17 +7,9 @@ employees in subprofiles under its company profile.
 This method gives you access to all collections associated with the
 given databaseID.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/collections
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/collections | GET, POST | none |
 
 ### GET request
 

@@ -7,17 +7,9 @@ deleted or created. \
 URL associated with callbackID. Multiple callbacks can be configured on
 a single database.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/callback/\$callbackID
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/callback/\$callbackID | GET, POST | none |
 
 Callback data
 -------------

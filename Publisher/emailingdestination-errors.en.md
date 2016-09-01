@@ -1,17 +1,9 @@
 Information about the errors of a destination of an emailing retrieved
 with the /emailingdestination/\$destinationID/errors method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID/errors
-
-GET
-
-start, limit, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID/errors | GET | start, limit, fields[] |
 
 Properties of an error of an emailing destination
 -------------------------------------------------

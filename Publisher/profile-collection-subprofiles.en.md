@@ -2,17 +2,9 @@ A subprofile is a single record in a collection of a profile. Using this
 method you can request and create new subprofiles in the collection
 collectionID, associated with profile \$profileID
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/profile/\$profileID/subprofiles/\$collectionID
-
-GET, POST
-
-limit, start, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/profile/\$profileID/subprofiles/\$collectionID | GET, POST | limit, start, fields[] |
 
 GET Request
 -----------

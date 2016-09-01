@@ -1,17 +1,9 @@
 All unsubscribes in an account can be retrieved with the /unsubscribes
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/unsubscribes
-
-GET
-
-fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/unsubscribes | GET | fields[] |
 
 Properties of an unsubscribe
 ----------------------------

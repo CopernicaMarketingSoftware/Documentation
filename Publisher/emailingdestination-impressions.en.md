@@ -2,17 +2,9 @@ Information about the impressions of a destination of an emailing can be
 retrieved with the /emailingdestination/\$destinationID/impressions
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID/impressions
-
-GET
-
-start, limit, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID/impressions | GET | start, limit, fields[] |
 
 Properties of an impression of an emailing destination
 ------------------------------------------------------

@@ -2,17 +2,9 @@ Information about the unsubscribes of a destination of an emailing can
 be retrieved with the /emailingdestination/\$destinationID/unsubscribes
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID/unsubscribes
-
-GET
-
-start, limit, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID/unsubscribes | GET | start, limit, fields[] |
 
 Properties of an unsubscribe of an emailing destination
 -------------------------------------------------------

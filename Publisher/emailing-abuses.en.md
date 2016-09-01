@@ -3,17 +3,9 @@ The abuses of an emailing can be retrieved with the
 returned abuses with the field
 [parameter](./rest-api-parameters.en.md).
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailing/\$emailingID/abuses
-
-GET
-
-limit, start, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailing/\$emailingID/abuses | GET | limit, start, fields[] |
 
 Properties of emailing errors
 -----------------------------

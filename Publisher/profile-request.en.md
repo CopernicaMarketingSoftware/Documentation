@@ -5,17 +5,9 @@ profile with identifier \$profileID.
 The definition of each field can be found using
 [api.copernica.com/database/\$databaseID/fields](./database-fields.en.md).
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/profile/\$profileID
-
-GET, DELETE
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/profile/\$profileID | GET, DELETE | none |
 
 GET request
 -----------

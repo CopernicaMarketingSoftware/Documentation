@@ -4,17 +4,9 @@ existing profiles with new information. With the field-parameter it is
 also possible to search for profiles through the database. This method
 gives you access to all profiles associated with a given database.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/profiles
-
-GET, POST, DELETE
-
-fields[], start, limit
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/profiles | GET, POST, DELETE | fields[], start, limit |
 
 GET request
 -----------

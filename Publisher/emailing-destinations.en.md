@@ -3,17 +3,9 @@ The destinations of an emailing can be retrieved with the
 returned destinations with the field
 [parameter](./rest-api-parameters.en.md).
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailing/\$emailingID/destinations
-
-GET
-
-limit, start, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailing/\$emailingID/destinations | GET | limit, start, fields[] |
 
 Properties of emailing destinations
 -----------------------------------

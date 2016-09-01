@@ -2,17 +2,9 @@ This method can be used to retrieve all fields associated with the given
 \$collectionID. Each field is returned as an object with its respective
 properties.
 
-Request url:
-
-Methods
-
-Parameters
-
-https://api.copernica.com/collection/\$collectionid/fields
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/collection/\$collectionid/fields | GET, POST | none |
 
 ### Collection field properties
 

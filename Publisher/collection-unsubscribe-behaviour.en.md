@@ -12,17 +12,9 @@ This request URL lets you retrieve information about the currently set
 unsubscribe behaviour on a collection or set the unsubscribe behaviour
 using a POST request.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/collection/\$collectionID/unsubscribe
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/collection/\$collectionID/unsubscribe | GET, POST | none |
 
 GET Request
 -----------

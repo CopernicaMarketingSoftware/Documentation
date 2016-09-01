@@ -1,17 +1,9 @@
 Information about the clicks of a destination of an emailing retrieved
 with the /emailingdestination/\$destinationID/clicks method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID/clicks
-
-GET
-
-start, limit, fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID/clicks | GET | start, limit, fields[] |
 
 Properties of an click of an emailing destination
 -------------------------------------------------

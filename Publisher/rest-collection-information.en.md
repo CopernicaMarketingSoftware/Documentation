@@ -7,17 +7,9 @@ collection name, the database associated with the colledction and an
 array of fields with the field name and its data type in a key-value
 pair.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/collection/\$collectionid
-
-GET
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/collection/\$collectionid | GET | none |
 
 ### Collection field properties
 

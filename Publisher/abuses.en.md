@@ -1,16 +1,8 @@
 All abuses in an account can be retrieved with the /abuses method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/abuses
-
-GET
-
-fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/abuses | GET | fields[] |
 
 Properties of an abuse
 ----------------------

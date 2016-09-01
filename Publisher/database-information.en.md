@@ -6,7 +6,11 @@ returns whether the database is archived and when it was created. The
 fields, interests and collections fields each contain a
 `start/limit/total/data`, along with their respective values.
 
-Request urlMethodsParameters /database/\$databaseID GET none Example output
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| /database/\$databaseID | GET | none |
+
+Example output
 ---------------------------------------------------------------------------
 
     HTTP / 1.1 200 OK

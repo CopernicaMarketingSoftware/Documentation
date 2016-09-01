@@ -1,17 +1,9 @@
 All deliveries in an account can be retrieved with the /deliveries
 method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/deliveries
-
-GET
-
-fields[]
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/deliveries | GET | fields[] |
 
 Properties of a delivery
 ------------------------

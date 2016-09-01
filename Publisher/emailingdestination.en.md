@@ -1,17 +1,10 @@
 Information about a destination of an emailing retrieved with the
 /emailingdestination/\$destinationID method.
 
-Request url
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailingdestination/\$destinationID | GET | Properties of an emailing destination |
 
-Methods
-
-Parameters
-
-https://api.copernica.com/emailingdestination/\$destinationID
-
-GET
-
-Properties of an emailing destination
 -------------------------------------
 
 An emailing destination can contain the following information:

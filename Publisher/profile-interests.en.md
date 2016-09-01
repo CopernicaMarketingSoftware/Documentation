@@ -13,7 +13,10 @@ Interest fields can be grouped. You can have for example a group called
 'Favorite\_color' that houses the interest fields 'Red', 'Green' and
 'Pink'.
 
-Request urlMethodsParameters [https://api.copernica.com/profile/\$profileID/interests](https://api.copernica.com/profile/$profileID/interests) GET, POST none GET request {#request-urlmethodsparameters-https://api.copernica.com/profile/$profileid/interests-get,-post-none-get-request}
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| [https://api.copernica.com/profile/\$profileID/interests](https://api.copernica.com/profile/$profileID/interests) | GET, POST | none |
+| | GET | request {#request-urlmethodsparameters-https://api.copernica.com/profile/$profileid/interests-get,-post-none-get-request} |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Retrieve the interests of the profile with identifier \$profileID. An

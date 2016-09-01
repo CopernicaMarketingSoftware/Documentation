@@ -7,17 +7,9 @@ deleted or created. \
 collection associated with collectionID. Using the POST request, you can
 add a new callback URL to the collection.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/collection/\$collectionID/callbacks
-
-GET, POST
-
-limit, start
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/collection/\$collectionID/callbacks | GET, POST | limit, start |
 
 Callback data
 -------------

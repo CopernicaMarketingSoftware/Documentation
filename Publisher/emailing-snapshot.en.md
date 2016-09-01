@@ -3,15 +3,9 @@ The snapshot of an emailing can be retrieved with the
 returned snapshot with the field
 [parameter](./rest-api-parameters.en.md).
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailing/\$emailingID/snapshot
-
-GET
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailing/\$emailingID/snapshot | GET | none |
 
 Properties of the emailing snapshot
 -----------------------------------

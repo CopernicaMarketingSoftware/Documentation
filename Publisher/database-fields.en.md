@@ -2,17 +2,9 @@ Databases are built with fields. This method gives you access to the
 fields associated with the given \$databaseID. Each field is returned as
 an object with its respective properties.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/fields
-
-GET, POST
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/fields | GET, POST | none |
 
 ### Database field properties
 

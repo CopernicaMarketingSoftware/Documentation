@@ -3,17 +3,9 @@ can request or delete the data stored in a specific subprofile, namely
 the subprofile with identifier \$subprofileID. Using the DELETE request,
 you can remove the subprofile entirely.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/subprofile/\$subprofileID
-
-GET, DELETE
-
-none
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/subprofile/\$subprofileID | GET, DELETE | none |
 
 GET request
 -----------

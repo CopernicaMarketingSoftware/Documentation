@@ -1,15 +1,9 @@
 The overall statistics of an emailing can be retrieved with the
 /emailing/\$emailingID/statistics method.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/emailing/\$emailingID/statistics
-
-GET
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/emailing/\$emailingID/statistics | GET | none |
 
 Properties of the emailing statistics
 -------------------------------------

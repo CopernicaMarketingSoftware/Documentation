@@ -14,17 +14,9 @@ Interest fields can be grouped. You can have for example a group called
 'Favorite\_color' that houses the interest fields 'Red', 'Green' and
 'Pink'.
 
-Request url
-
-Methods
-
-Parameters
-
-https://api.copernica.com/database/\$databaseID/interests
-
-GET, POST
-
-limit, start
+| Request url | Methods | Parameters |
+| --- | --- | --- |
+| https://api.copernica.com/database/\$databaseID/interests | GET, POST | limit, start |
 
 GET request
 -----------
