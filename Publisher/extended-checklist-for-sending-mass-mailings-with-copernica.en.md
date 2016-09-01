@@ -15,15 +15,14 @@ as the e-mail address, gender and name.
 
 1.  First you need to have a database and import contacts, if you
     haven't done this already.
-2.  [](https://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts)Create
+2.  [](./setting-up-your-database-and-import-your-contacts.en.md) Create
     a database and import contacts
 3.  **Create fields**. You can create database fields in multiple ways
 4.  Through an import. When setting up an import, you can instantly
     create new database fields and edit their [data type and
-    properties](https://www.copernica.com/en/support/database-and-collection-field-types).
+    properties](./database-and-collection-field-types.en.md).
 5.  Create fields manually. [Check our instruction video on creating
-    database
-    fields](https://www.copernica.com/en/support/video-tutorials/profiles-adding-database-fields)
+    database fields](./profiles-adding-database-fields.en.md)
 
 ### Storing email addresses
 
@@ -48,11 +47,9 @@ selection is determined by the conditions of the selection. The
 selection can for example have a condition added to filter out
 unsubscribes.
 
-[Watch the instruction video on making
-selections](https://www.copernica.com/en/support/video-tutorials/profiles-selections)
+[Watch the instruction video on making selections](./profiles-selections.en.md)
 
--   [Newsletter
-    selection](https://www.copernica.com/en/support/create-a-mailing-list)
+-   [Newsletter selection](./create-a-mailing-list.en.md)
     - create a selection that only contains profiles that opted in a
     your newsletter, and filters out all unsubscribes
 -   Test group selection - usually you want to test a mailing before you
@@ -60,8 +57,7 @@ selections](https://www.copernica.com/en/support/video-tutorials/profiles-select
     once, you need to make a selection. You can for example make a
     selection that checks if the value of the field 'TEST' is equal to
     'YES' (you might need to create an extra field for this).
--   [Bounce
-    management](https://www.copernica.com/en/support/automatically-process-bounces)
+-   [Bounce management](./automatically-process-bounces.en.md)
     - Create a selection to manage email bounces in a proper way. This
     will help you maintain a good sender reputation.
 
@@ -93,15 +89,14 @@ tools for that.
 Open your document. In the lower toolbar you'll find a button to check
 your document for errors. Click on it to open the dialog box.
 
-1.  Have you set up [Sender
-    ID](https://www.copernica.com/en/support/setup-sender-id) and
-    [DKIM](https://www.copernica.com/en/support/signing-your-emails-with-dkim)?
+1.  Have you set up [Sender ID](./setup-sender-id.en.md) and
+    [DKIM](.signing-your-emails-with-dkim.en.md)?
     Using these email authentication methods is not mandatory, but it
     surely is recommended. You only need to configure it once and it
     will help you maintain your sender reputation across all your future
     email marketing campaigns.
 2.  **HTML Check**- [check your document and template for erroneous
-    HTML](https://www.copernica.com/en/support/reducing-html-errors).
+    HTML](./reducing-html-errors.en.md).
     Errors in your HTML can give unexpected results in the display of
     your newsletter in various email programs
 3.  **Spam Check.** In the same dialog box you can check a document for
@@ -138,6 +133,5 @@ mailing.
 
 -   [Check the instruction video on sending mass
     mailings](https://www.copernica.com/en/support/video-tutorials/emailings-sending-an-emailing)
--   [Check all articles related to sending mass
-    mailings](https://www.copernica.com/en/blog/sending-mailings)
+-   [Check all articles related to sending mass mailings](./sending-mailings.en.md)
 

@@ -70,6 +70,5 @@ this).
 
 `"v=spf1  include:_senderspf.otherdomain.com include:_senderspf.copernica.com a mx  ~all"`
 
-Now you're at it, also [use a DKIM
-key](https://www.copernica.com/en/blog/signing-your-emails-with-dkim)
+Now you're at it, also [use a DKIM key](./signing-your-emails-with-dkim.en.md)
 for better deliverability!
