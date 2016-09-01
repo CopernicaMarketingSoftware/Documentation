@@ -48,7 +48,7 @@ your contacts.
     [Learn more about
     surveys](./create-your-own-survey.en.md "Easily create online surveys")
 
--   [Adding an RSS or Atom feed](./rss-or-atom-feeds.en.md "Adding an RSS or Atom feed")
+-   [Adding an RSS or Atom feed](./rss-and-atom-feeds.en.md "Adding an RSS or Atom feed")
     --------------------------------------------------------------------------------------------------------------------------
 
     [![Adding an RSS or Atom

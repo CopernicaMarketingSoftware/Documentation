@@ -54,4 +54,4 @@ either! Copernica will give you a clear overview of the results and a
 list with the names of all respondents. Want to redirect respondents to
 a thank you page after they fill in the survey? Simply set it up using
 our handy [follow up
-manager](./automate-your-campaigns.en.md "follow up manager").
+manager](./automate-campaigns.en.md "follow up manager").

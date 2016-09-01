@@ -11,7 +11,7 @@ contains the following information:
 
 -   **ID** (int, system field, cannot be edited)
 -   **type** (string, type of condition, see [views
-    explained](views-explained) for all types)
+    explained](./views-explained.en.md) for all types)
 -   **rule** (int, id of the rule)
 -   **comparison** (array, contains the way of comparing)
 -   **field** (array, points to a field (if the type of condition is
