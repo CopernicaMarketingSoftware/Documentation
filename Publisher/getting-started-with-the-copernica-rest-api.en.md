@@ -9,7 +9,7 @@ The REST service is accessible on: **https://api.copernica.com**
 
 Let's say, you need all information of a specific profile identified by
 it's id 1234. The call to the REST API to retrieve this data would be:
-[https://api.copernica.com/profile/1234?access\_token=abc123](profile-request)
+[https://api.copernica.com/profile/1234?access\_token=abc123](./profile-request.en.md)
 
 Each call to the REST API requires an access token to be supplied as
 extra parameter. The `access_token` is used to authorize your request.
@@ -21,7 +21,7 @@ and other information you are not allowed to access.
 There are two different ways to obtain an access token. You can request
 a token in your [application
 dashboard](https://www.copernica.com/en/applications) or you can [use
-OAuth 2.0 authentication](setting-up-copernica-rest-service) to obtain a
+OAuth 2.0 authentication](./setting-up-copernica-rest-service.en.md) to obtain a
 token. To maintain readability throughout the documentation we will
 construct the URLs without access\_tokens. Keep in mind, it is essential
 for you to add this access token to each API call; without a token you

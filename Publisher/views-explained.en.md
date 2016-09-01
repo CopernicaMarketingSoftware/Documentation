@@ -47,4 +47,4 @@ logically complete selection.
 If you take a look at the selection editor in the publisher, you can see
 the difference between rules and conditions:
 
-![](copernica-views.png)
+![](images/copernica-views.png)

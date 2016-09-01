@@ -9,7 +9,7 @@ Working with selections
 -----------------------
 
 ![Working with
-selections](Copernicacom/en-database-selections-thumb.png "Working with selections")
+selections](images/en-database-selections-thumb.png "Working with selections")
 All the contact data you save in Copernica can be used as rules for your
 selections. For example, use them to filter contacts that opted in for
 your newsletter.

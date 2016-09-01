@@ -90,7 +90,7 @@ Open your document. In the lower toolbar you'll find a button to check
 your document for errors. Click on it to open the dialog box.
 
 1.  Have you set up [Sender ID](./setup-sender-id.en.md) and
-    [DKIM](.signing-your-emails-with-dkim.en.md)?
+    [DKIM](./signing-your-emails-with-dkim.en.md)?
     Using these email authentication methods is not mandatory, but it
     surely is recommended. You only need to configure it once and it
     will help you maintain your sender reputation across all your future

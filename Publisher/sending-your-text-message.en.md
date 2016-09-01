@@ -28,7 +28,7 @@ Automatically send a text message
 
 Target your contacts even more effectively by scheduling text messages.
 Or would you like send a text message after they've purchased an item
-from your website? With Copernica's [follow up manager](./automate-your-campaigns.en.md "Automate your campaigns")
+from your website? With Copernica's [follow up manager](./automate-campaigns.en.md "Automate your campaigns")
 you can set up a text message that a contact will automatically receive
 after purchasing an item. Do you want to send it directly after the
 purchase? Or a day after? Maybe even later? Whatever you choose, you'll

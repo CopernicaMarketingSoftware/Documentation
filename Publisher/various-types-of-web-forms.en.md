@@ -9,7 +9,7 @@ What type of web form do you want to create?
 --------------------------------------------
 
 ![What type of web form do you want to
-create?](Copernicacom/create-web-forms-thumb.png "What type of web form do you want to create?")
+create?](images/create-web-forms-thumb.png "What type of web form do you want to create?")
 
 The type of web form you need to create, depends on the goals you want
 to achieve. In Copernica you can create various types of web forms to
