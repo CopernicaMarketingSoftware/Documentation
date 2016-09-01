@@ -15,7 +15,7 @@ now.
 
 ![This graph depicts the procedure to link an external application to
 Copernica using the OAuth 2.0
-protocol](oauth-copernica.png "This graph depicts the procedure to link an external application to Copernica using the OAuth 2.0 protocol")
+protocol](images/oauth-copernica.png "This graph depicts the procedure to link an external application to Copernica using the OAuth 2.0 protocol")
 
 This graph depicts the procedure to link an external application to
 Copernica using the OAuth 2.0 protocol

@@ -9,7 +9,7 @@ Send targeted messages
 ----------------------
 
 ![Send targeted
-messages](Copernicacom/send-mobile-text-message-thumb.png "Send targeted messages")
+messages](images/send-mobile-text-message-thumb.png "Send targeted messages")
 
 With the selections you create in your Copernica
 [database](./creating-your-own-databases.en.md "Creating your own database"),

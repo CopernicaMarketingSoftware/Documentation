@@ -11,7 +11,7 @@ Copernica offers the solution!
 Creating a text message in Copernica
 ------------------------------------
 
-![](Copernicacom/en-send-text-messages-copernica.gif)
+![](images/en-send-text-messages-copernica.gif)
 
 Using the WYSIWYG editor in Copernica to create mobile text messages,
 you can compose a text as long as you want. When a message contains more

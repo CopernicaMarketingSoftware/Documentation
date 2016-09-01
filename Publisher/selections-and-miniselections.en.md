@@ -5,7 +5,7 @@ automatically. For example, they will always contain the profiles,
 subprofiles,that meet the rules of the (mini) selection at that time.
 
 -   [Watch our instruction video on creating
-    selections](./video-tutorials/profiles-selections.en.md)
+    selections](./profiles-selections.en.md)
 
 You create and manage your (mini) selections in the **Profiles** section
 of the software. Make a new selection via *Database Management* \>

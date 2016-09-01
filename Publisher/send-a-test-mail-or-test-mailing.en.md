@@ -15,7 +15,7 @@ Not possible to send the test mail? Please check the following:
 
 -   Make sure you have set a test destination (see below this page)
 -   Make sure you have [designated a database field for
-    e-mail](./video-tutorials/profiles-adding-database-fields.en.md)
+    e-mail](./profiles-adding-database-fields.en.md)
 -   Make sure the document has a [subject line and sender
     address](./sender-subject-and-other-email-headers.en.md)
 
