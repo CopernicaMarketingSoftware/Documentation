@@ -9,7 +9,7 @@ Testen kan vanuit het menu *Mailings* \> **Testmail verzenden**.
 -   Ook kies je zelf of de verzending zichtbaar moet zijn in de
     geschiedenis van verzonden berichten.
 -   De testmail wordt verzonden naar het mobiel nummer uit de
-    [standaardbestemming](http://www.copernica.com/nl/ondersteuning/standaardbestemming-instellen-of-wijzigen).
+    [standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md).
     In de database heb je aangegeven welk (sub)profielveld het mobiele
     nummer voor sms-berichten bevat.
 

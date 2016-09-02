@@ -7,23 +7,23 @@ uitgevoerd. Je kan oneindig veel opvolgacties gebruiken en aan elkaar
 koppelen binnen je campagnes.
 
 -   [Follow-up
-    manager](http://www.copernica.com/nl/ondersteuning/de-follow-up-manager)
+    manager](./de-follow-up-manager.md)
 -   [Opvolgacties voor
-    e-maildocumenten](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-e-maildocumenten)
+    e-maildocumenten](./opvolgacties-voor-e-maildocumenten.md)
 -   [Opvolgacties voor
-    webformulieren](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-webformulieren)
+    webformulieren](./opvolgacties-voor-webformulieren.md)
 -   [Opvolgacties voor
-    enquetes](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-enquetes)
+    enquetes](./opvolgacties-voor-enquetes.md)
 -   [Opvolgacties voor databases en
-    collecties](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-databases-en-collecties)
+    collecties](./opvolgacties-voor-databases-en-collecties.md)
 -   [Condities voor opvolgacties - beperk het activeren of uitvoeren van
     een
-    opvolgactie](http://www.copernica.com/nl/ondersteuning/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie)
+    opvolgactie](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md)
 -   [Opvolgacties stoppen (in geval van
-    nood)](http://www.copernica.com/nl/ondersteuning/opvolgacties-van-een-mailing-stoppen)
+    nood)](./opvolgacties-van-een-mailing-stoppen.md)
 
 ### Veelgestelde vragen
 
 -   [Kan ik de antwoorden uit een enquete opgestuurd krijgen in een
-    opvolgactie](http://www.copernica.com/nl/ondersteuning/antwoorden-enquete-mailen-in-opvolgactie)
+    opvolgactie](./antwoorden-enquete-mailen-in-opvolgactie.md)
 

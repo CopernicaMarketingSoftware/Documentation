@@ -10,4 +10,4 @@ Je kan de huidige status van de (mini)selectie bekijken.
 In het tabblad Opbouwstatus zie je of de selectie is opgebouwd.
 
 Lees ook: [Hoe worden selecties
-opgebouwd?](http://www.copernica.com/nl/ondersteuning/hoe-en-wanneer-worden-selecties-opgebouwd "Hoe en wanneer worden selecties opgebouwd")
+opgebouwd?](./hoe-en-wanneer-worden-selecties-opgebouwd.md "Hoe en wanneer worden selecties opgebouwd")

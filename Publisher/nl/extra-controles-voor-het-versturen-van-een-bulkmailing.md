@@ -64,7 +64,7 @@ van het bericht.
 volledige artikel over het instellen van de e-mail headers.
 
 -   [Het onderwerp en afzenderadres
-    instellen](http://www.copernica.com/nl/ondersteuning/het-onderwerp-en-afzenderadres-instellen)
+    instellen](./het-onderwerp-en-afzenderadres-instellen.md)
 
 ### Het afzenderadres bestaat niet
 
@@ -104,7 +104,7 @@ van een eigen envelope domain. U kunt dit controleren onder Beheer \>
 Account \> **Envelope domain**.
 
 -   [Eigen envelope domein gebruiken en instellen SPF voor dit
-    domein](http://www.copernica.com/nl/ondersteuning/eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein)
+    domein](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
 
 ### Sender ID is niet correct
 
@@ -114,7 +114,7 @@ Sender ID instelling op dit domein correct is. U kunt hiervoor het
 artikel over Sender ID raadplegen.
 
 -   [Sender ID instellen op je
-    afzenderdomein](http://www.copernica.com/nl/ondersteuning/sender-id-instellen-op-je-afzenderdomein)
+    afzenderdomein](./sender-id-instellen-op-je-afzenderdomein.md)
 
 Blacklists
 ----------
@@ -142,7 +142,7 @@ niet Copernica BV.
 
 Mocht u de melding krijgen dat DKIM niet goed is ingesteld, raadpleeg
 dan het [volledige artikel over
-DKIM](http://www.copernica.com/nl/ondersteuning/e-mails-versleutelen-met-dkim).
+DKIM](./e-mails-versleutelen-met-dkim.md).
 In de software kunt u onder E-mailings \> Extra \> DKIM keys een
 uitgebreide validatie vinden van de DKIM dat is ingesteld via deze
 applicatie.
@@ -177,7 +177,7 @@ IP-adressen die door de applicatie gebruikt worden om e-mails mee te
 versturen.
 
 [Eigen envelope domein gebruiken en instellen SPF voor dit
-domein](http://www.copernica.com/nl/ondersteuning/eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein)
+domein](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
 
 ### Syntax error in SPF-record
 
@@ -199,7 +199,7 @@ versturen vanaf [domeinnaam], maar er is geen expliciete
 verzendtoestemming gegeven door het SPF-record.
 
 [Meer informatie over het instellen van een SPF
-record](http://www.copernica.com/nl/ondersteuning/eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein)
+record](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
 
 ### Picserver domein
 
@@ -223,7 +223,7 @@ niet meer verstuurd worden. De spamscore vindt u rechts onderaan het
 geopende document, door op de knop met waarschuwingen te klikken.
 
 We hebben ook een
-[artikel](http://www.copernica.com/nl/ondersteuning/verlaag-je-spamrating-enkele-aandachtspunten)
+[artikel](./verlaag-je-spamrating-enkele-aandachtspunten.md)
 met tips hoe u uw spamscore kunt verlagen.
 
 Controle op bestemming

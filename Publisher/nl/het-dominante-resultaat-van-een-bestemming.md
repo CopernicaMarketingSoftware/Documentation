@@ -18,7 +18,7 @@ impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks. \
 [\
  Meer lezen over de
-kerncijfers](http://www.copernica.com/nl/ondersteuning/de-kerncijfers-bij-de-resultaten-van-een-e-mailing)
+kerncijfers](./de-kerncijfers-bij-de-resultaten-van-een-e-mailing.md)
 
 ![](sjabloon_clip_image001.png)
 

@@ -7,7 +7,7 @@ selecties. Je kan alleen subselecties maken op profiel niveau. Het maken
 van sub-miniselecties is niet mogelijk.
 
 Je maakt een subselectie op dezelfde manier als een [normale
-selectie](http://www.copernica.com/nl/ondersteuning/nieuwe-selectie-maken).
+selectie](./nieuwe-selectie-maken.md).
 Wanneer je de selectie maakt, kies je de selectie waaronder je de
 subselectie wil aanbrengen.
 

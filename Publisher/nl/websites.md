@@ -5,36 +5,36 @@ voor bezoekers niet zichtbaar is dat de website is gemaakt met
 Copernica.
 
 -   [Beginnen met websites en
-    webpagina's](http://www.copernica.com/nl/ondersteuning/beginnen-met-websites-en-webpaginas)
+    webpagina's](./beginnen-met-websites-en-webpaginas.md)
 -   [Een template maken voor
-    webpagina's](http://www.copernica.com/nl/ondersteuning/een-template-maken-voor-webpaginas)
+    webpagina's](./een-template-maken-voor-webpaginas.md)
 -   [Een nieuwe webpagina
-    aanmaken](http://www.copernica.com/nl/ondersteuning/een-nieuwe-webpagina-aanmaken)
+    aanmaken](./een-nieuwe-webpagina-aanmaken.md)
 -   [Een domeinnaam koppelen aan een
-    website](http://www.copernica.com/nl/ondersteuning/een-domeinnaam-koppelen-aan-een-website)
+    website](./een-domeinnaam-koppelen-aan-een-website.md)
 -   [Personaliseren van
-    hyperlinks](http://www.copernica.com/nl/ondersteuning/personaliseren-van-hyperlinks)
+    hyperlinks](./personaliseren-van-hyperlinks.md)
 -   [Hoe kan ik mijn website testen in de
-    browser](http://www.copernica.com/nl/ondersteuning/hoe-kan-ik-mijn-website-testen-in-de-browser)
+    browser](./hoe-kan-ik-mijn-website-testen-in-de-browser.md)
 -   [Google Analytics gebruiken voor je Copernica
-    website](http://www.copernica.com/nl/ondersteuning/google-analytics-gebruiken-voor-je-copernica-website)
+    website](./google-analytics-gebruiken-voor-je-copernica-website.md)
 -   [Webpagina afschermen voor anonieme
-    bezoekers](http://www.copernica.com/nl/ondersteuning/webpagina-afschermen-voor-anonieme-bezoekers)
+    bezoekers](./webpagina-afschermen-voor-anonieme-bezoekers.md)
 -   [Landingspagina van webformulier
-    instellen](http://www.copernica.com/nl/ondersteuning/de-landingspagina-van-een-webformulier-instellen)
+    instellen](./de-landingspagina-van-een-webformulier-instellen.md)
 -   [Hoe stel ik een 404-foutpagina
-    in](http://www.copernica.com/nl/ondersteuning/hoe-stel-ik-een-404-foutpagina-in)
+    in](./hoe-stel-ik-een-404-foutpagina-in.md)
 -   [Informatie uit een URL gebruiken voor
-    personalisatie](http://www.copernica.com/nl/ondersteuning/informatie-uit-een-url-gebruiken-voor-personalisatie)
+    personalisatie](./informatie-uit-een-url-gebruiken-voor-personalisatie.md)
 -   Stijlsheet koppelen aan webpagina
 -   [Eigen SSL-domeincertificaat gebruiken voor
-    website](http://www.copernica.com/nl/ondersteuning/eigen-ssl-domeincertificaat-gebruiken-voor-website)
+    website](./eigen-ssl-domeincertificaat-gebruiken-voor-website.md)
 -   [E-mailtemplate als webtemplate gebruiken en vice
-    versa](http://www.copernica.com/nl/ondersteuning/e-mailtemplate-als-webtemplate-gebruiken-en-vice-versa)
+    versa](./e-mailtemplate-als-webtemplate-gebruiken-en-vice-versa.md)
 -   [Naar webpagina linken vanuit
-    emailing](http://www.copernica.com/nl/ondersteuning/naar-webpagina-linken-vanuit-emailing)
+    emailing](./naar-webpagina-linken-vanuit-emailing.md)
 -   [Hyperlinks uitbreiden met Google Analytics tracking
-    variabelen](http://www.copernica.com/nl/ondersteuning/hyperlinks-uitbreiden-met-google-analytics-variabelen)
+    variabelen](./hyperlinks-uitbreiden-met-google-analytics-variabelen.md)
 
 ### Formulier, enquête of feed publiceren
 
@@ -43,11 +43,11 @@ snel en eenvoudig met behulp van speciale tags. Ook kan je deze speciale
 content direct toevoegen vanuit een tekstblok in het webdocument.
 
 -   [RSS en Atom feeds
-    publiceren](http://www.copernica.com/nl/ondersteuning/de-loadfeed-functie)
+    publiceren](./de-loadfeed-functie.md)
 -   [Webformulier op webpagina plaatsen met {webform}
-    tag](http://www.copernica.com/nl/ondersteuning/webformulier-op-webpagina-plaatsen)
+    tag](./webformulier-op-webpagina-plaatsen.md)
 -   [Enquete publiceren met {survey}
-    tag](http://www.copernica.com/nl/ondersteuning/enquete-in-webpagina-invoegen)
+    tag](./enquete-in-webpagina-invoegen.md)
 -   [Content webformulier in iframe
-    laden](http://www.copernica.com/nl/ondersteuning/content-webformulier-in-iframe-laden)
+    laden](./content-webformulier-in-iframe-laden.md)
 

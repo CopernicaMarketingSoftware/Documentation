@@ -125,7 +125,7 @@ Wanneer een ontvanger zich uitschrijft, ontvangt ons systeem een
 uitschrijfverzoek van bijvoorbeeld Hotmail. Dit uitschrijfverzoek wordt
 verwerkt op de manier zoals u dit heeft ingesteld op de database ([lees
 meer over het instellen van
-uitschrijfopties](http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie)).
+uitschrijfopties](./uitschrijfgedrag-instellen-op-database-of-collectie.md)).
 Er kan bijvoorbeeld een veldwaarde worden veranderd van ‘ja’ naar ‘nee’.
 Dit uitschrijfgedrag stelt u in bij *Profielen* \> *Databasebeheer*
 \> **Uitschrijfgedrag…**

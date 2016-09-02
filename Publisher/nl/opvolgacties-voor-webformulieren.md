@@ -45,7 +45,7 @@ weken, soms jaren zitten. We maken hierom onderscheid tussen een
     voorwaarden
 
 -   [Meer informatie over condities voor
-    opvolgacties](http://www.copernica.com/nl/ondersteuning/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie)
+    opvolgacties](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md)
 -   [Follow-up
-    manager](http://www.copernica.com/nl/ondersteuning/de-follow-up-manager)
+    manager](./de-follow-up-manager.md)
 

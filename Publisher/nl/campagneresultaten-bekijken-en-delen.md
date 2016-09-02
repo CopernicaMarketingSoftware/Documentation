@@ -11,26 +11,26 @@ Van alle mailings die je verstuurt met Copernica worden de resultaten
 geregistreerd.
 
 -   [De resultaten van je e-mailing
-    bekijken](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-je-e-mailing-bekijken)
+    bekijken](./de-resultaten-van-je-e-mailing-bekijken.md)
 -   [De kerncijfers bij de resultaten van een
-    e-mailing](http://www.copernica.com/nl/ondersteuning/de-kerncijfers-bij-de-resultaten-van-een-e-mailing)
+    e-mailing](./de-kerncijfers-bij-de-resultaten-van-een-e-mailing.md)
 -   [Het dominante resultaat van een
-    bestemming](http://www.copernica.com/nl/ondersteuning/het-dominante-resultaat-van-een-bestemming)
+    bestemming](./het-dominante-resultaat-van-een-bestemming.md)
 -   [Rapport met e-mailresultaten online
-    delen](http://www.copernica.com/nl/ondersteuning/e-mailstatistieken-rapport-maken-en-delen)
+    delen](./e-mailstatistieken-rapport-maken-en-delen.md)
 -   [De resultaten van een mailing exporteren naar een spreadsheet
-    bestand](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand)
+    bestand](./de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand.md)
 -   [Resultaten van verschillende mailings
-    vergelijken](http://www.copernica.com/nl/ondersteuning/resultaten-van-verschillende-mailings-vergelijken)
+    vergelijken](./resultaten-van-verschillende-mailings-vergelijken.md)
 -   [Profielgeschiedenis en campagnes
-    bekijken](http://www.copernica.com/nl/ondersteuning/profielgeschiedenis-en-campagnes-bekijken)
+    bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
 -   [Hoe wordt de click through rate (CTR)
-    berekend?](http://www.copernica.com/nl/ondersteuning/hoe-wordt-de-click-through-rate-berekend)
+    berekend?](./hoe-wordt-de-click-through-rate-berekend.md)
 
 ### E-mail afleverfouten
 
 -   [Tijdelijke en permanente fouten, en wat betekenen de
-    foutcodes](http://www.copernica.com/nl/ondersteuning/soft-en-hard-bounces)
+    foutcodes](./soft-en-hard-bounces.md)
 
 Database statistieken
 ---------------------
@@ -45,19 +45,19 @@ Resultaten van sms-campagnes
 ----------------------------
 
 -   [De resultaten van een sms-mailing
-    exporteren](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-een-sms-mailing-exporteren)
+    exporteren](./de-resultaten-van-een-sms-mailing-exporteren.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](http://www.copernica.com/nl/ondersteuning/selectie-op-basis-van-de-resultaten-van-sms-campagnes)
+    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 
 Enquete resultaten
 ------------------
 
 -   [Enqueteresultaten
-    wissen](http://www.copernica.com/nl/ondersteuning/enqueteresultaten-wissen)
+    wissen](./enqueteresultaten-wissen.md)
 
 Website statistieken
 --------------------
 
 -   [Website en webpagina statistieken
-    bekijken](http://www.copernica.com/nl/ondersteuning/website-en-webpagina-statistieken)
+    bekijken](./website-en-webpagina-statistieken.md)
 

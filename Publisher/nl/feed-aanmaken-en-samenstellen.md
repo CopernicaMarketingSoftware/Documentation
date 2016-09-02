@@ -38,10 +38,10 @@ feed](../images/feed-filters.png)
 Alleen gerubriceerde artikelen kunnen worden opgenomen in een feed.
 
 1.  Kies daarom eerst de
-    [rubriek(en)](http://www.copernica.com/nl/ondersteuning/het-maken-van-artikel-rubrieken)
+    [rubriek(en)](./het-maken-van-artikel-rubrieken.md)
     met de artikelen die je wilt opnemen.
 2.  Kies van welke auteurs je de
-    [atikelen](http://www.copernica.com/nl/ondersteuning/het-maken-van-artikelen-voor-in-een-feed)
+    [atikelen](./het-maken-van-artikelen-voor-in-een-feed.md)
     wil toevoegen
 3.  Kies de taal van de artikelen
 4.  Kies het aantal artikelen dat maximaal in de feed wordt getoond.

@@ -64,9 +64,9 @@ worden.
 de eenvoudige script editor*
 
 Voor het maken van de condities kan je zowel de [Eenvoudige script
-editor](http://www.copernica.com/nl/ondersteuning/de-eenvoudige-script-editor)
+editor](./de-eenvoudige-script-editor.md)
 en de [JavaScript
-editor](http://www.copernica.com/nl/ondersteuning/geavanceerde-javascript-condities)
+editor](./geavanceerde-javascript-condities.md)
 gebruik maken.
 
 ### Extra (geavanceerde) opties voor loop blokken

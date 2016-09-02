@@ -48,6 +48,6 @@ die je kunt meesturen in een e-mail, zoals BCC en Reply-to headers. Deze
 headers zijn optioneel en worden verder toegelicht in een ander artikel.
 
 [Meer lezen over het instellen van e-mail headers, zoals BCC, CC, en
-reply-to](http://www.copernica.com/nl/ondersteuning/afzender-cc-bcc-onderwerp-reply-to-instellen-bij-een-e-maildocument "Afzender, CC, BCC, onderwerp, reply-to instellen bij een e-maildocument")
+reply-to](./afzender-cc-bcc-onderwerp-reply-to-instellen-bij-een-e-maildocument.md "Afzender, CC, BCC, onderwerp, reply-to instellen bij een e-maildocument")
 
 ![header](header.png)

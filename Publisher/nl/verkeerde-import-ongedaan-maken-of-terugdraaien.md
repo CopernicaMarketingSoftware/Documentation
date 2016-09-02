@@ -32,7 +32,7 @@ Profielen naar eerdere staat terugdraaien
 Heb je door de import bestaande profielen abusievelijk gewijzigd? Het
 terughalen van profieldata kan namelijk alleen per individueel profiel
 met de [Rollback
-functie](http://www.copernica.com/nl/ondersteuning/een-profiel-herstellen-naar-oude-staat).
+functie](./een-profiel-herstellen-naar-oude-staat.md).
 
 Eventueel kan je Copernica verzoeken een back-up van de database terug
 te zetten. Hieraan zijn meestal wel kosten verbonden. Neem contact op

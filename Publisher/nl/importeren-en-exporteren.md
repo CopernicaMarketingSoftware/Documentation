@@ -10,34 +10,34 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 **Huidige weergave**.
 
 -   [Importbestand
-    voorbereiden](http://www.copernica.com/nl/ondersteuning/een-importbestand-voorbereiden)
+    voorbereiden](./een-importbestand-voorbereiden.md)
 -   [Gegevens importeren naar nieuwe
-    database](http://www.copernica.com/nl/ondersteuning/database-maken-en-gegevens-importeren)
+    database](./database-maken-en-gegevens-importeren.md)
 -   [Gegevens importeren vanaf een online
-    locatie](http://www.copernica.com/nl/ondersteuning/gegevens-importeren-vanaf-een-online-locatie)
+    locatie](./gegevens-importeren-vanaf-een-online-locatie.md)
 -   [Import naar een database met
-    collectie](http://www.copernica.com/nl/ondersteuning/import-naar-database-met-collectie)
+    collectie](./import-naar-database-met-collectie.md)
 -   [Een periodieke import van (sub)profielen
-    inroosteren](http://www.copernica.com/nl/ondersteuning/een-import-van-sub-profielen-periodiek-inroosteren)
+    inroosteren](./een-import-van-sub-profielen-periodiek-inroosteren.md)
 -   [Bestaande gegevens bijwerken met een
-    import](http://www.copernica.com/nl/ondersteuning/bestaande-gegevens-bijwerken-met-een-import)
+    import](./bestaande-gegevens-bijwerken-met-een-import.md)
 -   [Importeren: kolommen koppelen en sleutelvelden
-    aanwijzen](http://www.copernica.com/nl/ondersteuning/importeren-kolommen-koppelen-en-sleutelvelden-aanwijzen)
+    aanwijzen](./importeren-kolommen-koppelen-en-sleutelvelden-aanwijzen.md)
 -   [Datums importeren - omzetten van de
-    datumnotatie](http://www.copernica.com/nl/ondersteuning/datums-importeren-omzetten-van-de-datumnotatie)
+    datumnotatie](./datums-importeren-omzetten-van-de-datumnotatie.md)
 -   [Verkeerde import ongedaan maken of
-    terugdraaien](http://www.copernica.com/nl/ondersteuning/verkeerde-import-ongedaan-maken-of-terugdraaien)
+    terugdraaien](./verkeerde-import-ongedaan-maken-of-terugdraaien.md)
 
 ### Veelgestelde vragen
 
 -   [Het aantal geimporteerde profielen klopt
-    niet](http://www.copernica.com/nl/ondersteuning/het-aantal-geimporteerde-profielen-klopt-niet)
+    niet](./het-aantal-geimporteerde-profielen-klopt-niet.md)
 -   [Ik krijg een melding over niet-passende
-    datums](http://www.copernica.com/nl/ondersteuning/ik-krijg-een-melding-over-niet-passende-datums)
+    datums](./ik-krijg-een-melding-over-niet-passende-datums.md)
 -   [Na een import zie ik alleen het veld ID in de
-    database](http://www.copernica.com/nl/ondersteuning/na-een-import-zie-ik-alleen-het-veld-id-in-de-database)
+    database](./na-een-import-zie-ik-alleen-het-veld-id-in-de-database.md)
 -   [Meer veelgestelde vragen en het oplossen van problemen bij het
-    importeren](http://www.copernica.com/nl/ondersteuning/problemen-oplossen-bij-het-importeren-van-profielgegevens)
+    importeren](./problemen-oplossen-bij-het-importeren-van-profielgegevens.md)
 
 Exporteren van profielgegevens
 ------------------------------
@@ -46,14 +46,14 @@ De exportfunctionaliteit vind je onder **Profielen**, in het menu
 **Huidige weergave**.
 
 -   [Profielen en/of subprofielen
-    exporteren](http://www.copernica.com/nl/ondersteuning/profiel-en-of-subprofielen-exporteren)
+    exporteren](./profiel-en-of-subprofielen-exporteren.md)
 -   [Extra opties bij export van
-    profielgegevens](http://www.copernica.com/nl/ondersteuning/extra-opties-bij-export-van-profielgegevens)
+    profielgegevens](./extra-opties-bij-export-van-profielgegevens.md)
 -   [De resultaten van een mailing exporteren naar een spreadsheet
-    bestand](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand)
+    bestand](./de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand.md)
 
 ### Veelgestelde vragen
 
 -   [Veelgestelde vragen bij het
-    exporteren](http://www.copernica.com/nl/ondersteuning/veelgestelde-vragen-bij-het-exporteren)
+    exporteren](./veelgestelde-vragen-bij-het-exporteren.md)
 

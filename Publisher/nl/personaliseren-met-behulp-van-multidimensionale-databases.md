@@ -1,5 +1,5 @@
 Als je extra gegevens aan een
-[profiel](http://www.copernica.com/nl/ondersteuning/databases-in-copernica-een-korte-introductie "Personaliseren met behulp van multidimensionale databases")
+[profiel](./databases-in-copernica-een-korte-introductie.md "Personaliseren met behulp van multidimensionale databases")
 wilt koppelen, welke aankopen iemand heeft gedaan in je webshop
 bijvoorbeeld, kun je dat het makkelijkst doen door gebruik te maken van
 een [multidimensionale

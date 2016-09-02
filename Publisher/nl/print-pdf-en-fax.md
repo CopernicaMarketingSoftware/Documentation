@@ -21,19 +21,19 @@ Overige onderwerpen
 -------------------
 
 -   [PDF-blokken maken in Adobe Acrobat
-    PRO](http://www.copernica.com/nl/ondersteuning/pdf-blokken-maken-in-adobe-acrobat-pro)
+    PRO](./pdf-blokken-maken-in-adobe-acrobat-pro.md)
 -   [PDF-document importeren en de inhoud
-    bewerken](http://www.copernica.com/nl/ondersteuning/pdf-document-importeren-en-de-inhoud-bewerken)
+    bewerken](./pdf-document-importeren-en-de-inhoud-bewerken.md)
 -   [Lettertype uploaden (fonts
-    beheren)](http://www.copernica.com/nl/ondersteuning/lettertype-uploaden-fonts-beheren)
+    beheren)](./lettertype-uploaden-fonts-beheren.md)
 -   [PDF-blokken opmaak veranderen - waar dien je rekening mee te
-    houden](http://www.copernica.com/nl/ondersteuning/pdf-blokken-opmaak-veranderen-waar-dien-je-rekening-mee-te-houden)
+    houden](./pdf-blokken-opmaak-veranderen-waar-dien-je-rekening-mee-te-houden.md)
 -   [Linken naar een gepersonaliseerd PDF-bestand of meesturen als
-    bijlage](http://www.copernica.com/nl/ondersteuning/linken-naar-een-pdf-bestand)
+    bijlage](./linken-naar-een-pdf-bestand.md)
 -   [(Bulk)download van
-    PDF-bestanden](http://www.copernica.com/nl/ondersteuning/bulk-download-van-pdf-bestanden)
+    PDF-bestanden](./bulk-download-van-pdf-bestanden.md)
 -   [PDF blokken conditioneel
-    tonen](http://www.copernica.com/nl/ondersteuning/pdf-blokken-conditioneel-tonen)
+    tonen](./pdf-blokken-conditioneel-tonen.md)
 -   [Fax-mailing
-    verzenden](http://www.copernica.com/nl/ondersteuning/een-fax-mailing-verzenden)
+    verzenden](./een-fax-mailing-verzenden.md)
 

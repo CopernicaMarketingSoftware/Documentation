@@ -87,9 +87,9 @@ E-mailings verzenden via SOAP API
 
 Beschik je over een externe webshop, CMS- of ander CRM-systeem?
 Copernica beschikt over een krachtige [SOAP
-API](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie "Copernica SOAP API")
+API](./soap-api-documentatie.md "Copernica SOAP API")
 en verschillende
-[integraties](http://www.copernica.com/nl/ondersteuning/integraties "Copernica integraties")
+[integraties](./integraties.md "Copernica integraties")
 waarmee je gemakkelijk een koppeling legt tussen jouw systeem en
 Copernica. Dankzij de automatische synchronisatie tussen Copernica en
 jouw systeem kunnen wijzigingen in het externe systeem ook als trigger

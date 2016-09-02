@@ -1,7 +1,7 @@
 Bij ieder document en / of template kan je de
 personalisatie-instellingen wijzigen. Met de personalisatie-instellingen
 bepaal je ondermeer in welke taal [Smarty
-personalisatie](http://www.copernica.com/nl/ondersteuning/de-basisbeginselen-van-smarty-personalisatie)
+personalisatie](./de-basisbeginselen-van-smarty-personalisatie.md)
 wordt weergegeven. Je vindt deze instelling linksonder het geopende
 template of document.
 
@@ -46,6 +46,6 @@ Extra personalisatie velden
 ---------------------------
 
 Je kan bij het template [extra velden voor
-personalisatie](http://www.copernica.com/nl/ondersteuning/extra-velden-voor-document-personalisatie)
+personalisatie](./extra-velden-voor-document-personalisatie.md)
 opgeven. Vanuit het personalisatie-instellingen menu kan je deze velden
 van een waarde voorzien.

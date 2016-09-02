@@ -7,7 +7,7 @@ Database telefoonveld
 
 Voor het opslaan van mobiele telefoonnummers gebruik je een [database-
 of
-collectieveld](http://www.copernica.com/nl/ondersteuning/database-en-collectie-veldtypes)
+collectieveld](./database-en-collectie-veldtypes.md)
 van het type telefoonnummer -\> **SMS**
 
 ![](Documentation/telefoonveld-sms.png)
@@ -22,6 +22,6 @@ worden. Zo voorkom je dat een mailing per ongeluk aan een verkeerde
 
 Om de selectie of miniselectie te authoriseren, ga je in het onderdeel
 **Profielen** naar **Databasebeheer -\>
-[Gebruiksmogelijkheden](http://www.copernica.com/nl/ondersteuning/gebruiksmogelijkheden-instellen-voor-databases-en-selecties)**.
+[Gebruiksmogelijkheden](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md)**.
 Kies de selectie die je wilt gebruiken, en vink het vakje bij **SMS
 mailings** aan.

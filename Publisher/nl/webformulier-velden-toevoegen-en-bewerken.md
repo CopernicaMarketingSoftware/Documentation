@@ -77,7 +77,7 @@ Bijvoorbeeld als zowel iemands e-mailadres als zijn achternaam
 overeenkomen met een bestaand profiel.
 
 Dit geldt voor formulieren waarbij de instelling '[controleer op
-sleutelvelden](http://www.copernica.com/nl/ondersteuning/de-werking-van-een-webformulier-instellen)'
+sleutelvelden](./de-werking-van-een-webformulier-instellen.md)'
 geactiveerd is. Bij inlogformulieren moeten inlognaam en wachtwoord
 altijd als sleutelvelden worden aangemerkt.
 
@@ -186,4 +186,4 @@ Werking formulier wijzigen
 Nadat je de webformuliervelden hebt toegevoegd, is het formulier nog
 niet functioneel. Om te bepalen wat met de ingevoerde gegevens moet
 gebeuren, stel je in bij de
-[formulierinstellingen](http://www.copernica.com/nl/ondersteuning/de-werking-van-een-webformulier-instellen).
+[formulierinstellingen](./de-werking-van-een-webformulier-instellen.md).

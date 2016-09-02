@@ -32,7 +32,7 @@ voegen. Bezoekers van je website kunnen op deze wijze zelf bestanden
 uploaden naar hun profiel.
 
 [Bestanden uploaden met
-webformulier](http://www.copernica.com/nl/ondersteuning/uploadveld-toevoegen-aan-een-webformulier "Uploadveld toevoegen aan een webformulier")
+webformulier](./uploadveld-toevoegen-aan-een-webformulier.md "Uploadveld toevoegen aan een webformulier")
 
 Vanuit een e-mail of webpagina linken naar een profielbestand
 -------------------------------------------------------------
@@ -42,4 +42,4 @@ een webpagina eenvoudig linken naar bestanden die zijn geupload naar het
 profiel.
 
 [Meer lezen over linkfile en
-loadfile](http://www.copernica.com/nl/ondersteuning/linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile "Linken naar bestanden van het profiel met loadfile en linkfile")
+loadfile](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md "Linken naar bestanden van het profiel met loadfile en linkfile")

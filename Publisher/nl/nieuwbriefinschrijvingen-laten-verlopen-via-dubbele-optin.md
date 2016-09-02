@@ -61,7 +61,7 @@ e-mailadres in op te slaan en een veld om de nieuwsbriefvoorkeur van de
 abonnee op te slaan.
 
 Het veld voor e-mailadres dient uiteraard een veld van het type
-[e-mailveld](http://www.copernica.com/nl/ondersteuning/database-en-collectie-veldtypes)
+[e-mailveld](./database-en-collectie-veldtypes.md)
 te zijn (zodat het systeem weet dat dit veld de adressen bevat).
 
 Van het veld voor nieuwbriefvoorkeur maak je een meerkeuzeveld met de
@@ -139,7 +139,7 @@ Maak een nieuwsbriefselectie
 ----------------------------
 
 Maak tot slot in de database een
-[nieuwsbriefselectie](http://www.copernica.com/nl/ondersteuning/nieuwsbrief-selectie-maken)
+[nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
 (Selectietype: *Check op veldwaarde*) aan waarin alleen mensen worden
 opgenomen waarbij de waarde in het nieuwbriefveld gelijk is aan ‘Ja,
 bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.

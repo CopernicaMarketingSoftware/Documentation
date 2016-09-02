@@ -34,7 +34,7 @@ het *template*menu.
 Wanneer je de stylsheet gebruikt binnen het onderdeel **Emailings**, kan
 je bij het koppelen het beste kiezen voor de optie om stijlblokken te
 [converteren naar inline
-attributen](http://www.copernica.com/nl/ondersteuning/css-style-blokken-automatisch-omzetten-naar-inline-css "CSS omzetten naar inline ").
+attributen](./css-style-blokken-automatisch-omzetten-naar-inline-css.md "CSS omzetten naar inline ").
 
 Nadat je de stylesheet hebt gekoppeld, wordt direct boven het
 betreffende document een nieuw tabblad **Stijl** toegevoegd. Vanuit dit

@@ -7,17 +7,17 @@ Templates en HTML
 -----------------
 
 -   [Een eigen template maken voor gebruik in
-    e-mailings](http://www.copernica.com/nl/ondersteuning/een-eigen-template-maken-voor-gebruik-in-e-mailings)
+    e-mailings](./een-eigen-template-maken-voor-gebruik-in-e-mailings.md)
 -   [E-mail template of webtemplate importeren of
-    exporteren](http://www.copernica.com/nl/ondersteuning/e-mail-template-of-webtemplate-importeren-of-exporteren)
+    exporteren](./e-mail-template-of-webtemplate-importeren-of-exporteren.md)
 -   [Je eigen stylesheet maken en
-    gebruiken](http://www.copernica.com/nl/ondersteuning/je-eigen-stylesheet-maken-en-gebruiken)
+    gebruiken](./je-eigen-stylesheet-maken-en-gebruiken.md)
 -   [Veelvoorkomende HTML-fouten (Document HTML
-    check)](http://www.copernica.com/nl/ondersteuning/veelvoorkomende-html-fouten)
+    check)](./veelvoorkomende-html-fouten.md)
 -   [HTML-richtlijnen voor e-mail template
-    design](http://www.copernica.com/nl/ondersteuning/html-richtlijnen-voor-e-mail-template-design)
+    design](./html-richtlijnen-voor-e-mail-template-design.md)
 -   [Extra velden voor document
-    personalisatie](http://www.copernica.com/nl/ondersteuning/extra-velden-voor-document-personalisatie)
+    personalisatie](./extra-velden-voor-document-personalisatie.md)
 
 Dynamische template blokken
 ---------------------------
@@ -26,12 +26,12 @@ Met template blokken zorg je dat je een template eindeloos kan
 hergebruiken met andere content. In Copernica kan je gebruik maken van 3
 soorten template blokken.
 
--   [Tekstblok](http://www.copernica.com/nl/ondersteuning/template-blokken-het-tekstblok) -
+-   [Tekstblok](./template-blokken-het-tekstblok.md) -
     voeg tekstuele content toe
--   [Afbeeldingblok](http://www.copernica.com/nl/ondersteuning/template-blokken-de-afbeelding-tag) -
+-   [Afbeeldingblok](./template-blokken-de-afbeelding-tag.md) -
     definieer waar afbeeldingen worden toegevoegd
 -   [Loop
-    blok](http://www.copernica.com/nl/ondersteuning/template-blokken-de-loop-tag) -
+    blok](./template-blokken-de-loop-tag.md) -
     herhaal HTML, afbeelding en tekstblokken
 
 Responsive voorbeeld templates
@@ -54,47 +54,47 @@ blokken hebt toegevoegd, kan je starten met het opmaken van je eerste
 document.
 
 -   [Opmaken van een
-    e-maildocument](http://www.copernica.com/nl/ondersteuning/opmaken-van-een-e-maildocument)
+    e-maildocument](./opmaken-van-een-e-maildocument.md)
 -   [Afzender, CC, BCC, onderwerp, reply-to instellen bij een
-    e-maildocument](http://www.copernica.com/nl/ondersteuning/afzender-cc-bcc-onderwerp-reply-to-instellen-bij-een-e-maildocument)
+    e-maildocument](./afzender-cc-bcc-onderwerp-reply-to-instellen-bij-een-e-maildocument.md)
 -   [Persoonlijke aanhef
-    maken](http://www.copernica.com/nl/ondersteuning/persoonlijke-aanhef-maken)
+    maken](./persoonlijke-aanhef-maken.md)
 -   [De grootte van een afbeelding
-    beperken](http://www.copernica.com/nl/ondersteuning/de-grootte-van-een-afbeelding-beperken)
+    beperken](./de-grootte-van-een-afbeelding-beperken.md)
 -   [Document uit ingeroosterde mailing
-    bewerken](http://www.copernica.com/nl/ondersteuning/document-uit-ingeroosterde-mailing-bewerken)
+    bewerken](./document-uit-ingeroosterde-mailing-bewerken.md)
 -   [Weergave e-maildocument testen met de Litmus Email
-    Preview](http://www.copernica.com/nl/ondersteuning/weergave-e-maildocument-testen-met-de-litmus-email-preview)
+    Preview](./weergave-e-maildocument-testen-met-de-litmus-email-preview.md)
 -   [CSS style blokken automatisch omzetten naar inline
-    CSS](http://www.copernica.com/nl/ondersteuning/css-style-blokken-automatisch-omzetten-naar-inline-css)
+    CSS](./css-style-blokken-automatisch-omzetten-naar-inline-css.md)
 -   [Inhoudsopgave in een
-    e-maildocument](http://www.copernica.com/nl/ondersteuning/inhoudsopgave-in-een-e-maildocument)
+    e-maildocument](./inhoudsopgave-in-een-e-maildocument.md)
 
 Hyperlinks en dergelijke
 ------------------------
 
 -   [De **uitschrijflink** (unsubscribe
-    tag)](http://www.copernica.com/nl/ondersteuning/de-uitschrijflink-unsubscribe-tag)
+    tag)](./de-uitschrijflink-unsubscribe-tag.md)
 -   [Link toevoegen naar de **webversie** van een
-    e-mail](http://www.copernica.com/nl/ondersteuning/linken-naar-de-webversie-van-een-e-mail)
+    e-mail](./linken-naar-de-webversie-van-een-e-mail.md)
 -   [Hyperlinks uitbreiden met Google Analytics
-    variabelen](http://www.copernica.com/nl/ondersteuning/hyperlinks-uitbreiden-met-google-analytics-variabelen)
+    variabelen](./hyperlinks-uitbreiden-met-google-analytics-variabelen.md)
 -   [Hyperlinks uitbreiden met inlogcode (profielen automatisch
-    inloggen)](http://www.copernica.com/nl/ondersteuning/hyperlinks-uitbreiden-met-inlogcode)
+    inloggen)](./hyperlinks-uitbreiden-met-inlogcode.md)
 -   [Linken naar een (gepersonaliseerd)
-    PDF-bestand](http://www.copernica.com/nl/ondersteuning/linken-naar-een-pdf-bestand)
+    PDF-bestand](./linken-naar-een-pdf-bestand.md)
 -   [Personaliseren van
-    hyperlinks](http://www.copernica.com/nl/ondersteuning/personaliseren-van-hyperlinks)
+    hyperlinks](./personaliseren-van-hyperlinks.md)
 -   [Linken naar bestanden van het profiel met loadfile en
-    linkfile](http://www.copernica.com/nl/ondersteuning/linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile)
+    linkfile](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md)
 
 En verder nog
 -------------
 
 -   [Personalisatie-instellingen van het template of
-    document](http://www.copernica.com/nl/ondersteuning/personalisatie-instellingen-van-het-template-of-document)
+    document](./personalisatie-instellingen-van-het-template-of-document.md)
 -   [Template blokken conditioneel
-    tonen](http://www.copernica.com/nl/ondersteuning/content-blokken-conditioneel-tonen)
+    tonen](./content-blokken-conditioneel-tonen.md)
 -   [Kan ik gebruik maken van image maps in mijn
-    e-maildocument?](http://www.copernica.com/nl/ondersteuning/kan-ik-gebruik-maken-van-html-image-maps-in-mijn-e-maildocument)
+    e-maildocument?](./kan-ik-gebruik-maken-van-html-image-maps-in-mijn-e-maildocument.md)
 

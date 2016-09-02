@@ -16,12 +16,12 @@ Gebruik van smarty personalisatie
 ---------------------------------
 
 Je kan in het bericht gebruik maken van [smarty
-personalisatie](http://www.copernica.com/nl/ondersteuning/campagnes-personaliseren).
+personalisatie](./campagnes-personaliseren.md).
 Houdt hierbij wel rekening met het maximum van 160 tekens. Met namen als
 Pieter-Cornelis de Roy van Zuiderwijn zit je zo op het maximale aantal
 tekens. Klik onderin beeld op 'gepersonaliseerd' om het bericht weer te
 geven met gegevens uit de
-[standaardbestemming](http://www.copernica.com/nl/ondersteuning/standaardbestemming-instellen-of-wijzigen).
+[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md).
 
 Grote berichten opsplitsen
 --------------------------

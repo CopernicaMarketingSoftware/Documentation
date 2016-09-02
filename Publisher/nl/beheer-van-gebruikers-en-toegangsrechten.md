@@ -72,7 +72,7 @@ de onderste werkbalk.
 ### Partnergebruiker
 
 Indien je gebruik maakt van de diensten van een van de [geregistreerde
-partners](http://www.copernica.com/nl/ondersteuning/vind-een-partner "Vind een partner"),
+partners](./vind-een-partner.md "Vind een partner"),
 dan kan je de gekoppelde partner gratis toegang geven tot jouw account.
 Hiervoor doorloop je dezelfde stappen als voor het toevoegen van normale
 gebruikers.

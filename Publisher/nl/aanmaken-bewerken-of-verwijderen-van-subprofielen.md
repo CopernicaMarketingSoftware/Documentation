@@ -53,4 +53,4 @@ Het is mogelijk om alle profielen uit een selectie in een keer te
 verwijderen of te wijzigen. Hierover hebben we een apart artikel.
 
 [Meerdere profielen ineens
-verwijderen](http://www.copernica.com/nl/ondersteuning/meerdere-sub-profielen-ineens-wijzigen-of-verwijderen)
+verwijderen](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md)

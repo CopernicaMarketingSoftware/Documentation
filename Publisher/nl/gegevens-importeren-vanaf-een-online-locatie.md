@@ -29,5 +29,5 @@ Elke dag, week, maand of jaar of zo vaak als je bij *interval* ingesteld
 hebt.
 
 Zorg ervoor dat je kolommen en de import instellingen [goed hebt
-ingesteld](http://www.copernica.com/nl/ondersteuning/een-importbestand-voorbereiden "Een importbestand voorbereiden")
+ingesteld](./een-importbestand-voorbereiden.md "Een importbestand voorbereiden")
 voor aanvang van de import!

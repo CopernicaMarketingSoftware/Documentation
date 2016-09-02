@@ -118,7 +118,7 @@ Meer informatie
 ---------------
 
 -   [Follow-up
-    manager](http://www.copernica.com/nl/ondersteuning/de-follow-up-manager "De follow-up manager")
+    manager](./de-follow-up-manager.md "De follow-up manager")
 -   [Condities voor
-    opvolgacties](http://www.copernica.com/nl/ondersteuning/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie "Condities voor opvolgacties - beperk het activeren of uitvoeren van een opvolgactie")
+    opvolgacties](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md "Condities voor opvolgacties - beperk het activeren of uitvoeren van een opvolgactie")
 

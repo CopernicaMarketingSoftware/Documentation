@@ -9,50 +9,50 @@ Je beheert je databases, collecties en (sub)profielgegevens in het
 onderdeel **Profielen**.
 
 -   [Databases in Copernica - een korte
-    introductie](http://www.copernica.com/nl/ondersteuning/databases-in-copernica-een-korte-introductie)
+    introductie](./databases-in-copernica-een-korte-introductie.md)
 -   [Databases aanmaken en gegevens
-    importeren](http://www.copernica.com/nl/ondersteuning/database-maken-en-gegevens-importeren)
+    importeren](./database-maken-en-gegevens-importeren.md)
 -   [Werken met database
-    collecties](http://www.copernica.com/nl/ondersteuning/werken-met-database-collecties)
+    collecties](./werken-met-database-collecties.md)
 -   [Database en collectie
-    veldtypes](http://www.copernica.com/nl/ondersteuning/database-en-collectie-veldtypes)
+    veldtypes](./database-en-collectie-veldtypes.md)
 -   [Werken met database
-    interessevelden](http://www.copernica.com/nl/ondersteuning/bewaren-van-interesses-in-database-interessevelden)
+    interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
 -   [Uitschrijfgedrag instellen op de
-    database](http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie)
+    database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
 -   [Database en collectie
-    opvolgacties](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-databases-en-collecties)
+    opvolgacties](./opvolgacties-voor-databases-en-collecties.md)
 -   **[Selecties en
-    miniselecties](http://www.copernica.com/nl/ondersteuning/selecties-en-miniselecties)**
+    miniselecties](./selecties-en-miniselecties.md)**
 -   [**Importeren en
-    exporteren**](http://www.copernica.com/nl/ondersteuning/importeren-en-exporteren)
+    exporteren**](./importeren-en-exporteren.md)
 -   [Database restricties
-    maken](http://www.copernica.com/nl/ondersteuning/database-restricties-maken)
+    maken](./database-restricties-maken.md)
 -   [Indexeren van
-    databasevelden](http://www.copernica.com/nl/ondersteuning/indexeren-van-databasevelden)
+    databasevelden](./indexeren-van-databasevelden.md)
 -   [Automatisch verwerken van
-    spamklachten](http://www.copernica.com/nl/ondersteuning/automatisch-verwerken-van-spamklachten)
--   [](http://www.copernica.com/nl/ondersteuning/is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases)
+    spamklachten](./automatisch-verwerken-van-spamklachten.md)
+-   [](./is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases.md)
     [Database callback
-    URLs](http://www.copernica.com/nl/ondersteuning/database-callback-urls)
+    URLs](./database-callback-urls.md)
 
 ### Profielen en subprofielen
 
 -   [Aanmaken, bewerken of verwijderen van
-    (sub)profielen](http://www.copernica.com/nl/ondersteuning/aanmaken-bewerken-of-verwijderen-van-sub-profielen)
+    (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-sub-profielen.md)
 -   [Profielgeschiedenis en campagnes
-    bekijken](http://www.copernica.com/nl/ondersteuning/profielgeschiedenis-en-campagnes-bekijken)
+    bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
 -   [Enquete antwoorden van een profiel
-    bekijken](http://www.copernica.com/nl/ondersteuning/enquete-antwoorden-van-een-profiel-opzoeken)
+    bekijken](./enquete-antwoorden-van-een-profiel-opzoeken.md)
 -   [Meerdere (sub)profielen ineens wijzigen of
-    verwijderen](http://www.copernica.com/nl/ondersteuning/meerdere-sub-profielen-ineens-wijzigen-of-verwijderen)
+    verwijderen](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md)
 -   [Campagne tab - bekijk per profiel de
-    campagneresultaten](http://www.copernica.com/nl/ondersteuning/campagne-tab-bekijk-per-profiel-de-campagneresultaten)
+    campagneresultaten](./campagne-tab-bekijk-per-profiel-de-campagneresultaten.md)
 -   [Een profiel herstellen naar oude
-    staat](http://www.copernica.com/nl/ondersteuning/een-profiel-herstellen-naar-oude-staat)
+    staat](./een-profiel-herstellen-naar-oude-staat.md)
 
 ### Veelgestelde vragen
 
 -   [Is er een limiet op het aantal databases en de grootte van de
-    databases](http://www.copernica.com/nl/ondersteuning/is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases)
+    databases](./is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases.md)
 

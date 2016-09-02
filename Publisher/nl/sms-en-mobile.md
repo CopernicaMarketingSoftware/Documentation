@@ -6,27 +6,27 @@ van Smarty code.
 Je beheert je sms campagnes in het onderdeel Mobile.
 
 -   [Database gereed maken voor
-    sms-mailing](http://www.copernica.com/nl/ondersteuning/database-gereed-maken-voor-sms-mailing)
+    sms-mailing](./database-gereed-maken-voor-sms-mailing.md)
 -   [Sms-bericht
-    opstellen](http://www.copernica.com/nl/ondersteuning/sms-bericht-opstellen)
+    opstellen](./sms-bericht-opstellen.md)
 -   [Sms testbericht sturen naar
-    standaardbestemming](http://www.copernica.com/nl/ondersteuning/sms-testbericht-sturen-naar-standaardbestemming)
+    standaardbestemming](./sms-testbericht-sturen-naar-standaardbestemming.md)
 -   [Sms-bulkmailing
-    versturen](http://www.copernica.com/nl/ondersteuning/bulk-sms-mailing-versturen)
+    versturen](./bulk-sms-mailing-versturen.md)
 -   [Een ingeroostere sms-mailing annuleren of
-    bewerken](http://www.copernica.com/nl/ondersteuning/een-ingeroostere-sms-mailing-annuleren-of-bewerken)
+    bewerken](./een-ingeroostere-sms-mailing-annuleren-of-bewerken.md)
 -   [Waarom komen mijn sms'jes niet aan in
-    Belgie?](http://www.copernica.com/nl/ondersteuning/waarom-komen-mijn-smsjes-niet-aan-in-belgie)
+    Belgie?](./waarom-komen-mijn-smsjes-niet-aan-in-belgie.md)
 -   [Wat kost het om een sms-bericht te
-    versturen?](http://www.copernica.com/nl/ondersteuning/wat-kost-het-om-een-sms-bericht-te-versturen)
+    versturen?](./wat-kost-het-om-een-sms-bericht-te-versturen.md)
 -   [Toegestane
-    sms-telefoonnummers](http://www.copernica.com/nl/ondersteuning/toegestane-sms-telefoonnummers)
+    sms-telefoonnummers](./toegestane-sms-telefoonnummers.md)
 -   [Tijdzone en taalinstellingen instellen van
-    sms-document](http://www.copernica.com/nl/ondersteuning/tijdzone-en-taalinstellingen-instellen-van-sms-document)
+    sms-document](./tijdzone-en-taalinstellingen-instellen-van-sms-document.md)
 -   [De resultaten van een sms-mailing
-    bekijken](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-een-sms-mailing-bekijken)
+    bekijken](./de-resultaten-van-een-sms-mailing-bekijken.md)
 -   [Resultaten sms-mailing
-    exporteren](http://www.copernica.com/nl/ondersteuning/de-resultaten-van-een-sms-mailing-exporteren)
+    exporteren](./de-resultaten-van-een-sms-mailing-exporteren.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](http://www.copernica.com/nl/ondersteuning/selectie-op-basis-van-de-resultaten-van-sms-campagnes)
+    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 

@@ -9,5 +9,5 @@ blokhaken uit de Gooogle code dan met [ldelim] (linkerhaken) en [rdelim]
 
 Voor het toevoegen van tracking code aan je hyperlinks, kan je gebruik
 maken van de [Hyperlinks
-uitbreiden](http://www.copernica.com/nl/ondersteuning/hyperlinks-uitbreiden-met-google-analytics-variabelen)
+uitbreiden](./hyperlinks-uitbreiden-met-google-analytics-variabelen.md)
 functionaliteit

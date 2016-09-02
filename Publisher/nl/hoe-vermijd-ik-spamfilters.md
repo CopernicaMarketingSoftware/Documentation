@@ -25,7 +25,7 @@ Copernica je e-mail in die inbox te krijgen.
     Wanneer je deze in het template opneemt, zal je het nooit per
     ongeluk vergeten mee te sturen. Daarnaast is een duidelijke
     afmeldmogelijkheid ook verplicht volgens de
-    [wetgeving](http://www.copernica.com/nl/ondersteuning/wetgeving).
+    [wetgeving](./wetgeving.md).
 -   Stuur altijd een tekstversie mee de HTML-mail. Ontvangers die geen
     HTML-mail willen of kunnen ontvangen (omdat de e-mail bijvoorbeeld
     op een GSM wordt geopend), krijgen deze tekstversie te zien. Met

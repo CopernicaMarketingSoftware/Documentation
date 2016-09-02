@@ -21,20 +21,20 @@ bijvoorbeeld alle gegevens over een enkele relatie, zoals het
 e-mailadres, het geslacht en de naam.
 
 [Aanmaken database en adressen
-importeren](http://www.copernica.com/nl/ondersteuning/database-maken-en-gegevens-importeren)
+importeren](./database-maken-en-gegevens-importeren.md)
 (lees ook hoe je een [importbestand kan
-maken](http://www.copernica.com/nl/ondersteuning/een-importbestand-voorbereiden))
+maken](./een-importbestand-voorbereiden.md))
 
 **Aanmaken velden.** Het aanmaken van databasevelden kan via twee
 routes.
 
 1.  **Via import.** Bij het instellen van een import, kan je direct
     nieuwe velden aanmaken en hun
-    [eigenschappen](http://www.copernica.com/nl/ondersteuning/database-en-collectie-veldtypes)
+    [eigenschappen](./database-en-collectie-veldtypes.md)
     bewerken.
 2.  **Handmatig in de interface.** [Bekijk de video over het aanmaken
     van velden\
-    ](http://www.copernica.com/nl/ondersteuning/videos/profielen-velden-aanmaken)
+    ](./videos/profielen-velden-aanmaken.md)
 
 Voor het opslaan van e-mailadressen, gebruik je een specifiek veld: het
 **e-mailveld**.
@@ -46,20 +46,20 @@ van selecties. Je verstuurt een mailing bijvoorbeeld aan een selectie
 waar de uitschrijvers van een nieuwsbrief zijn uitgefilterd.
 
 [Bekijk ook onze instructievideo over profielen en
-selecties](http://www.copernica.com/nl/ondersteuning/videos/profielen-selecties)
+selecties](./videos/profielen-selecties.md)
 
--   [Nieuwsbriefselectie](http://www.copernica.com/nl/ondersteuning/nieuwsbrief-selectie-maken)
+-   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
     - maak in je database een selectie waarin je alleen profielen
     opneemt die zich hebben ingeschreven voor de nieuwbrief.
 -   [Testgroep
-    selectie](http://www.copernica.com/nl/ondersteuning/een-test-e-mail-versturen)
+    selectie](./een-test-e-mail-versturen.md)
     - maak in je database een selectie over mensen die jouw mailing
     willen controleren, voordat je deze daadwerkelijk gaat versturen. Je
     kan bijvoorbeeld een extra databaseveld aanmaken, waarmee je een
     profiel kan opnemen in een selectie (bijvoorbeeld een veld TESTGROEP
     die de waarde JA moet bevatten).
 -   [Het filteren van
-    hardbounces](http://www.copernica.com/nl/ondersteuning/automatisch-verwerken-bounces)
+    hardbounces](./automatisch-verwerken-bounces.md)
     - Om je verzendreputatie hoog te houden, is het belangrijk om
     adressen die persistente fouten opleveren, uit te sluiten van je
     verzendselectie.
@@ -70,13 +70,13 @@ Voordat je een mailing gaat versturen, heb je het uitschrijfgedrag en de
 gebruiksmogelijkheden ingesteld.
 
 1.  [Uitschrijfgedrag
-    instellen.](http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie)
+    instellen.](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
     Wanneer iemand klikt op de {unsubscribe} link, wordt het
     uitschrijfgedrag geactiveerd. [Bekijk ook de
-    video](http://www.copernica.com/nl/ondersteuning/videos/e-mailings-uitschrijfgedrag-instellen)
+    video](./videos/e-mailings-uitschrijfgedrag-instellen.md)
     over dit onderwerp.
 2.  [Gebruiksmogelijkheden voor selectie
-    instellen](http://www.copernica.com/nl/ondersteuning/gebruiksmogelijkheden-instellen-voor-databases-en-selecties).
+    instellen](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md).
     Om te voorkomen dat mailings abusievelijk aan een verkeerde selectie
     wordt gericht, dien je per selectie aan te geven of deze mag worden
     gebruikt voor het versturen van een bulkmailing.
@@ -96,14 +96,14 @@ Voordat je een mailing verstuurt, controleer je goed of het document en
 de instellingen voldoen aan de juiste eisen.
 
 1.  [Sender
-    ID](http://www.copernica.com/nl/ondersteuning/sender-id-instellen-op-je-afzenderdomein)
+    ID](./sender-id-instellen-op-je-afzenderdomein.md)
     en
-    [DKIM](http://www.copernica.com/nl/ondersteuning/e-mails-versleutelen-met-dkim)
+    [DKIM](./e-mails-versleutelen-met-dkim.md)
     ingesteld? Dit is niet verplicht, maar wordt wel aangeraden. Het
     instellen van DKIM en Sender ID doe je eenmalig. Doe dit wel ruim
     voordat je een mailing gaat versturen (24 uur).
 2.  HTML Check - [controleer je document en template op foutieve
-    HTML](http://www.copernica.com/nl/ondersteuning/veelvoorkomende-html-fouten).
+    HTML](./veelvoorkomende-html-fouten.md).
     Fouten in je HTML kunnen onverwachte resultaten geven bij de
     weergave van je nieuwbrief in verschillende e-mailprogramma's
 3.  Spamcheck. In hetzelfde dialoogvenster kan je een document
@@ -125,9 +125,9 @@ standaardbestemming, of een testmailing sturen naar een groep
 ontvangers.
 
 1.  Bekijk de video over het [instellen van de
-    standaardbestemming](http://www.copernica.com/nl/ondersteuning/videos/e-mailings-standaardbestemming)
+    standaardbestemming](./videos/e-mailings-standaardbestemming.md)
 2.  Of lees het artikel over [het versturen van test
-    emails](http://www.copernica.com/nl/ondersteuning/een-test-e-mail-versturen)
+    emails](./een-test-e-mail-versturen.md)
 
 [Testmail niet
 ontvangen?](http://www.copernica.com/nl/articles/heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan)
@@ -137,7 +137,7 @@ ontvangen?](http://www.copernica.com/nl/articles/heb-je-de-testmail-nog-niet-ont
 De uiteindelijke stap: het verzenden van de bulkmailing
 
 -   Bekijk onze video over het [instellen en verzenden van een
-    bulkmailing](http://www.copernica.com/nl/ondersteuning/videos/e-mailings-verzending)
+    bulkmailing](./videos/e-mailings-verzending.md)
 -   [Bekijk alle artikelen over het versturen van een
-    bulkmailing](http://www.copernica.com/nl/ondersteuning/mailings-verzenden)
+    bulkmailing](./mailings-verzenden.md)
 

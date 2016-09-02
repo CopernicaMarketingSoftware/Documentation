@@ -35,7 +35,7 @@ Waar moet je op letten
 Houd bij de ontwikkeling van je HTML template er rekening dat je
 e-maildocumenten in de laatste plaats pas worden bekeken in een moderne
 internet browser (middels de
-[webversie](http://www.copernica.com/nl/ondersteuning/linken-naar-de-webversie-van-een-e-mail)).
+[webversie](./linken-naar-de-webversie-van-een-e-mail.md)).
 Het vaakst zullen ze worden bekeken met e-mailprogramma's zoals Outlook
 Express, Gmail, Hotmail, maar ook steeds vaker op de smartphone.
 
@@ -56,7 +56,7 @@ Express, Gmail, Hotmail, maar ook steeds vaker op de smartphone.
     in het voordeel van de afbeeldingen.
 
 We hebben een speciaal artikel voor de [HTML richtlijnen in
-e-mailmarketing](http://www.copernica.com/nl/ondersteuning/html-richtlijnen-voor-e-mail-template-design).
+e-mailmarketing](./html-richtlijnen-voor-e-mail-template-design.md).
 
 Toevoegen van inhoudsblokken
 ----------------------------
@@ -78,7 +78,7 @@ beknopte HTML editor.
 De tag: **[text name="artikel"]**
 
 [Volledige artikel over tekstblokken en de extra
-opties](http://www.copernica.com/nl/ondersteuning/template-blokken-het-tekstblok)
+opties](./template-blokken-het-tekstblok.md)
 
 ### Afbeeldingblok
 
@@ -89,7 +89,7 @@ plek een afbeelding uploaden, en deze bijvoorbeeld aanklikbaar maken.
 de tag: **[image name="foto"]**
 
 [Volledige artikel over afbeeldingblokken en de extra
-opties](http://www.copernica.com/nl/ondersteuning/template-blokken-de-afbeelding-tag)
+opties](./template-blokken-de-afbeelding-tag.md)
 
 ### Loop blok
 
@@ -104,7 +104,7 @@ contentblokken plaatsen. Dit kan door de eindgebruiker een X-aantal keer
 herhaald worden* **[/loop]**
 
 [Volledige artikel over loopblokken en de extra
-opties](http://www.copernica.com/nl/ondersteuning/template-blokken-de-loop-tag)
+opties](./template-blokken-de-loop-tag.md)
 
 Extra eigenschappen en beperkingen voor template blokken definiëren
 -------------------------------------------------------------------
@@ -238,4 +238,4 @@ Andere zaken van bijzonder groot nut
 
 Toon bepaalde content alleen in de email of in de webversie met de
 [{mailonly} en
-{webonly}](http://www.copernica.com/nl/ondersteuning/de-webonly-en-mailonly-functies)tags.
+{webonly}](./de-webonly-en-mailonly-functies.md)tags.

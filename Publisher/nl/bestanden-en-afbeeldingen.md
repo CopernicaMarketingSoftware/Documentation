@@ -53,7 +53,7 @@ template
 ### Afbeeldingen gebruiken in afbeeldingblokken
 
 Indien er
-[afbeeldingblokken](http://www.copernica.com/nl/ondersteuning/template-blokken-de-afbeelding-tag)
+[afbeeldingblokken](./template-blokken-de-afbeelding-tag.md)
 zijn opgenomen in je HTML template, dan kan je op documentniveau direct
 afbeeldingen uploaden naar dit blok. Vanzelfsprekend is het ook mogelijk
 om een afbeelding uit een afbeeldingenmap of media library te selecteren
@@ -118,7 +118,7 @@ server linken.
 
 Wil je er zeker van zijn dat je afbeelding altijd goed wordt getoond in
 je e-mailing? Kies dan bij het [instellen van een
-bulkmailing](http://www.copernica.com/nl/ondersteuning/bulkmailing-verzenden)
+bulkmailing](./bulkmailing-verzenden.md)
 voor de optie '**Externe afbeeldingen opslaan op onze servers**'. De
 afbeelding blijft dan voor altijd beschikbaar. Ook nadat de originele
 locatie is opgeheven.

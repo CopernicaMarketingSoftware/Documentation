@@ -9,33 +9,33 @@ Je maakt en beheert je (mini)selecties in het onderdeel Profielen. Een
 nieuwe selectie maak je via *Databasebeheer \>* **Selecties beheren...**
 
 -   [Nieuwe selectie
-    maken](http://www.copernica.com/nl/ondersteuning/nieuwe-selectie-maken)
+    maken](./nieuwe-selectie-maken.md)
 -   [Selecties kopieren en
-    verplaatsen](http://www.copernica.com/nl/ondersteuning/selecties-kopieren-en-verplaatsen)
+    verplaatsen](./selecties-kopieren-en-verplaatsen.md)
 -   [Selectie verwijderen, deactiveren of
-    archiveren](http://www.copernica.com/nl/ondersteuning/selectie-verwijderen-deactiveren-of-archiveren)
+    archiveren](./selectie-verwijderen-deactiveren-of-archiveren.md)
 -   [De profielen uit een selectie
-    weergeven](http://www.copernica.com/nl/ondersteuning/de-profielen-uit-een-selectie-tonen)
+    weergeven](./de-profielen-uit-een-selectie-tonen.md)
 -   [De subprofielen uit een miniselectie
-    weergeven](http://www.copernica.com/nl/ondersteuning/de-subprofielen-uit-een-miniselectie-weergeven)
+    weergeven](./de-subprofielen-uit-een-miniselectie-weergeven.md)
 -   [Subselecties (selecties onder
-    elkaar)](http://www.copernica.com/nl/ondersteuning/subselecties)
+    elkaar)](./subselecties.md)
 -   [Selecties versus
-    miniselecties](http://www.copernica.com/nl/ondersteuning/selecties-versus-miniselecties)
+    miniselecties](./selecties-versus-miniselecties.md)
 -   [Selectie
-    conditietypes](http://www.copernica.com/nl/ondersteuning/selectie-conditietypes)
+    conditietypes](./selectie-conditietypes.md)
 -   [Selecties met OF en EN
-    regels](http://www.copernica.com/nl/ondersteuning/selecties-met-of-en-en-regels)
+    regels](./selecties-met-of-en-en-regels.md)
 -   [Hoe en wanneer worden selecties
-    opgebouwd?](http://www.copernica.com/nl/ondersteuning/hoe-en-wanneer-worden-selecties-opgebouwd)
+    opgebouwd?](./hoe-en-wanneer-worden-selecties-opgebouwd.md)
 -   [Tips voor het optimaliseren van je selecties en
-    miniselecties](http://www.copernica.com/nl/ondersteuning/tips-voor-het-optimaliseren-van-je-selecties-en-miniselecties)
+    miniselecties](./tips-voor-het-optimaliseren-van-je-selecties-en-miniselecties.md)
 -   [Gebruiksmogelijkheden: selectie authoriseren voor
-    bulkmailings](http://www.copernica.com/nl/ondersteuning/gebruiksmogelijkheden-instellen-voor-databases-en-selecties)
+    bulkmailings](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md)
 -   [(Mini)selecties gebruiken binnen Smarty
-    personalisatie](http://www.copernica.com/nl/ondersteuning/mini-selecties-gebruiken-binnen-smarty-personalisatie)
+    personalisatie](./mini-selecties-gebruiken-binnen-smarty-personalisatie.md)
 -   [Is mijn (mini)selectie
-    up-to-date?](http://www.copernica.com/nl/ondersteuning/is-mijn-selectie-miniselectie-up-to-date)
+    up-to-date?](./is-mijn-selectie-miniselectie-up-to-date.md)
 
 ### Selectie condities
 
@@ -44,31 +44,31 @@ zijn voor zowel selecties als miniselecties beschikbaar, tenzij anders
 vermeld.
 
 -   [Sorteren en selecteren van
-    (sub)profielen](http://www.copernica.com/nl/ondersteuning/selectieconditie-sorteren-en-selecteren-van-sub-profielen)
+    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](http://www.copernica.com/nl/ondersteuning/selectie-op-basis-van-de-resultaten-van-sms-campagnes)
+    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 -   [Check op resultaten
     campagnes](https://www.copernica.com/nl/ondersteuning/selectie-condities-check-op-resultaten-campagnes)
 -   [Check op enquete
-    resultaten](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-enquete)
+    resultaten](./selectieconditie-check-op-enquete.md)
 -   [Check op
-    datum](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-datum)
+    datum](./selectieconditie-check-op-datum.md)
 -   [Check op dubbele of unieke
-    profielen](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-dubbele-of-unieke-profielen)
+    profielen](./selectieconditie-check-op-dubbele-of-unieke-profielen.md)
 -   [Check op
-    interessegebied](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-interessegebied)
+    interessegebied](./selectieconditie-check-op-interessegebied.md)
     (alleen selecties)
 -   [Check op basis eerdere
-    exports](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-basis-eerdere-exports)
+    exports](./selectieconditie-check-op-basis-eerdere-exports.md)
 -   [Check op
-    wijziging](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-wijziging)
+    wijziging](./selectieconditie-check-op-wijziging.md)
 -   [Check op andere selectie of
-    miniselectie](http://www.copernica.com/nl/ondersteuning/selectieconditie-check-op-andere-selectie-of-miniselectie)
+    miniselectie](./selectieconditie-check-op-andere-selectie-of-miniselectie.md)
 
 ### Veelgemaakte selecties
 
--   [Verjaardagsselectie](http://www.copernica.com/nl/ondersteuning/een-verjaardagselectie-maken)
--   [Nieuwsbriefselectie](http://www.copernica.com/nl/ondersteuning/nieuwsbrief-selectie-maken)
+-   [Verjaardagsselectie](./een-verjaardagselectie-maken.md)
+-   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
 -   [Automatisch verwerken van e-mail
-    bounces](http://www.copernica.com/nl/ondersteuning/automatisch-verwerken-bounces)
+    bounces](./automatisch-verwerken-bounces.md)
 

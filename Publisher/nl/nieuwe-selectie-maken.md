@@ -36,7 +36,7 @@ Ook kan je een nieuwe **OF conditie** aanmaken. Het profiel moet dan aan
 zoveel condities toevoegen als je zelf wilt (of nodig hebt).
 
 [Meer lezen over OF en EN
-condities](http://www.copernica.com/nl/ondersteuning/selecties-met-of-en-en-regels)
+condities](./selecties-met-of-en-en-regels.md)
 
 Nadat je alle condities hebt toegevoegd aan de selectie, kan het venster
 sluiten. Klik in het linkeroverzicht om de profielen uit de selectie

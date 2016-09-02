@@ -5,13 +5,13 @@ gebruiker. Je kan jezelf eenvoudig inloggen door de inloggegevens van je
 testprofiel aan je webpagina URL toe te voegen.
 
 [Lees onze Getting started over het maken van websites en
-webpaginas](http://www.copernica.com/nl/ondersteuning/beginnen-met-websites-en-webpaginas)
+webpaginas](./beginnen-met-websites-en-webpaginas.md)
 
 Als je al een website met webpagina's hebt aangemaakt in de applicatie,
 dan dien je de website te koppelen aan een geldige domeinnaam.
 
 [Lees hoe je een domein koppelt aan een
-website](http://www.copernica.com/nl/ondersteuning/een-domeinnaam-koppelen-aan-een-website)
+website](./een-domeinnaam-koppelen-aan-een-website.md)
 
 Wanneer je website is gekoppeld aan een geldige domeinnaam, kan je de
 website met je webbrowser openen, zoals je ook naar iedere andere

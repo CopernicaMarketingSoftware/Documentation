@@ -13,7 +13,7 @@ beschikken
     opgeslagen.
 -   Je hebt een selectie aangemaakt met hierin de relaties waaraan je de
     mailing wilt richten. Voor deze (mini)selectie heb je de juiste
-    [gebruiksmogelijkheden](http://www.copernica.com/nl/ondersteuning/database-gereed-maken-voor-sms-mailing "Database gereed maken voor sms-mailing")
+    [gebruiksmogelijkheden](./database-gereed-maken-voor-sms-mailing.md "Database gereed maken voor sms-mailing")
     ingesteld.
 -   De nummers zijn op een geldige manier opgeslagen. Als je naar het
     buitenland verstuurd, heb je ook de landcodes voor de nummers. De
@@ -41,7 +41,7 @@ applicatie
 
 **Tip:** selecteer Personaliseren onderaan het sms-document om het
 bericht te bekijken met gegevens van de
-[standaardbestemming](http://www.copernica.com/nl/ondersteuning/sms-testbericht-sturen-naar-standaardbestemming)
+[standaardbestemming](./sms-testbericht-sturen-naar-standaardbestemming.md)
 
 Bulk sms-mailing versturen
 --------------------------

@@ -79,7 +79,7 @@ template importeren vanaf je computer.
     heeft geen invloed op de originele e-mailtemplate.
 
 [Meer lezen over het maken van
-templates](http://www.copernica.com/nl/ondersteuning/templates-en-documenten)
+templates](./templates-en-documenten.md)
 
 Webpagina maken
 ---------------
@@ -108,13 +108,13 @@ je voor de optie **Invoegen speciale content** die je kan vinden in het
 dialoogvenster voor het bewerken van een **Tekstblok**.
 
 -   De tag voor het [publiceren van een
-    webformulier](http://www.copernica.com/nl/ondersteuning/webformulier-op-webpagina-plaatsen)
+    webformulier](./webformulier-op-webpagina-plaatsen.md)
     is **{webform name="naamformulier"}**
 -   De tag voor het [publiceren van een
-    enquete](http://www.copernica.com/nl/ondersteuning/enquete-in-webpagina-invoegen)
+    enquete](./enquete-in-webpagina-invoegen.md)
     is**{survey name="naamvanenquete"}**
 -   De tag voor het [publiceren van een RSS of Atom
-    feed](http://www.copernica.com/nl/ondersteuning/de-loadfeed-functie)
+    feed](./de-loadfeed-functie.md)
     is **{loadfeed feed="naam van feed"}**
 
 Om de webpagina te bekijken met de gepubliceerde content klik je
@@ -145,7 +145,7 @@ van je bedrijfsdomein. Het kan dus zijn dat je hiervoor even de
 netwerk/systeembeheerder moet lastigvallen.
 
 -   [Meer lezen over het koppelen van een
-    domeinnaam](http://www.copernica.com/nl/ondersteuning/een-domeinnaam-koppelen-aan-een-website)
+    domeinnaam](./een-domeinnaam-koppelen-aan-een-website.md)
 -   [Meer lezen over het maken een van CNAME
     record](http://support.google.com/blogger/bin/answer.py?hl=nl&answer=58317)
 
@@ -176,7 +176,7 @@ gebruik maken van de functie **Hyperlinks uitbreiden...** in het
 e-maildocument menu.
 
 -   [Meer lezen over het uitbreiden van hyperlinks met
-    inlogcode](http://www.copernica.com/nl/ondersteuning/hyperlinks-uitbreiden-met-inlogcode)
+    inlogcode](./hyperlinks-uitbreiden-met-inlogcode.md)
 
 Standaardpagina, foutpagina en loginpagina instellen
 ----------------------------------------------------
@@ -228,5 +228,5 @@ geuploade afbeelding aan een document toevoegen middels een
 afbeeldingblok.
 
 -   [Meer lezen over het beheren van bestanden een
-    afbeeldingen](http://www.copernica.com/nl/ondersteuning/beheren-van-afbeeldingen-en-bestanden)
+    afbeeldingen](./beheren-van-afbeeldingen-en-bestanden.md)
 

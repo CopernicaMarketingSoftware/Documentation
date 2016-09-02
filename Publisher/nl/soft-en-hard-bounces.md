@@ -42,7 +42,7 @@ Als een e-mailadres blijft bouncen, dan kan het e-mailadres beter
 verwijderd worden. Voor het selecteren van e-mailadressen op basis van
 afleverfouten kan je gebruik maken van het selectietype [check op
 resultaten
-e-mailcampagnes](http://www.copernica.com/nl/ondersteuning/selectie-condities-check-op-resultaten-campagnes)
+e-mailcampagnes](./selectie-condities-check-op-resultaten-campagnes.md)
 .
 
 E-mail foutcodes

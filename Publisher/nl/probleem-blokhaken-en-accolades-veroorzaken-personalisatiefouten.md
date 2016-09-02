@@ -38,7 +38,7 @@ Dit kan door middel van **ldelim** en **rdelim**
     accolades{rdelim}
 
 **Tip**: Als je een nieuwe template aanmaakt, gebruik dan [smarty
-3](http://www.copernica.com/nl/ondersteuning/smarty-2-vs-smarty-3 "Smarty 2 vs Smarty 3").
+3](./smarty-2-vs-smarty-3.md "Smarty 2 vs Smarty 3").
 In deze versie kan je accolades en blokhaken gebruiken zonder gebruik
 van ldelim en rdelim. Er moet dan wel een spatie voor en achter de
 blokhaak geplaatst zijn.

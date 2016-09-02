@@ -9,26 +9,26 @@ Alle marketingsuccessen die worden behaald met Copernica, zijn ten
 eerste te danken aan de gebruikers.
 
 -   [Beheer van gebruikers en
-    toegangsrechten](http://www.copernica.com/nl/ondersteuning/beheer-van-gebruikers-en-toegangsrechten)
+    toegangsrechten](./beheer-van-gebruikers-en-toegangsrechten.md)
 -   [Je eigen gebruikersinformatie- en
-    instellingen](http://www.copernica.com/nl/ondersteuning/je-eigen-gegevens-wijzigen)
+    instellingen](./je-eigen-gegevens-wijzigen.md)
 -   [Wachtwoord wijzigen of
-    opvragen](http://www.copernica.com/nl/ondersteuning/wachtwoord-wijzigen-of-opvragen)
+    opvragen](./wachtwoord-wijzigen-of-opvragen.md)
 
 ### Account management
 
 -   [Account
-    instellingen](http://www.copernica.com/nl/ondersteuning/account-instellingen-wijzigen)
+    instellingen](./account-instellingen-wijzigen.md)
 -   [Account e-mail
-    verzendinstellingen](http://www.copernica.com/nl/ondersteuning/e-mail-verzendinstellingen)
+    verzendinstellingen](./e-mail-verzendinstellingen.md)
 -   [Applicatie tonen in eigen
-    lay-out](http://www.copernica.com/nl/ondersteuning/applicatie-tonen-in-eigen-layout)
+    lay-out](./applicatie-tonen-in-eigen-layout.md)
 -   [Account
-    verwijderen](http://www.copernica.com/nl/ondersteuning/account-verwijderen)
+    verwijderen](./account-verwijderen.md)
 -   [Standaard
-    afzenderadressen](http://www.copernica.com/nl/ondersteuning/standaard-afzenderadressen)
+    afzenderadressen](./standaard-afzenderadressen.md)
 -   [Accountverbruik
-    bekijken](http://www.copernica.com/nl/ondersteuning/accountverbruik-bekijken)
+    bekijken](./accountverbruik-bekijken.md)
 -   [Accounttoegang tot bepaalde ip-adressen
-    beperken](http://www.copernica.com/nl/ondersteuning/accounttoegang-tot-bepaalde-ip-adressen-beperken)
+    beperken](./accounttoegang-tot-bepaalde-ip-adressen-beperken.md)
 

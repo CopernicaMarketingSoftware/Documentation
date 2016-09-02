@@ -140,7 +140,7 @@ functie deze transformeren naar de normale database-indeling. Je kunt
 ook een normaal tekstveld gebruiken om de data in op te slaan.
 
 [Lees meer over het omzetten van de
-datumnotatie](http://www.copernica.com/nl/ondersteuning/datums-importeren-omzetten-van-de-datumnotatie)
+datumnotatie](./datums-importeren-omzetten-van-de-datumnotatie.md)
 
 ### Wat gebeurt er als ik de ongeldige datum waarschuwing negeer?
 

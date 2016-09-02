@@ -15,46 +15,46 @@ Beginnen met Copernica
 
 Als je voor het eerst met Copernica begint te werken is het misschien
 handig om een [korte inleiding bij de onderdelen van
-Copernica](http://www.copernica.com/nl/ondersteuning/beginnen-met-copernica-een-kort-overzicht-van-de-onderdelen)
+Copernica](./beginnen-met-copernica-een-kort-overzicht-van-de-onderdelen.md)
 te krijgen. Wil je meer informatie over deze onderdelen dan kun je deze
 vinden in de onderstaande onderwerpen.
 
 Onderwerpen
 -----------
 
--   [Databasebeheer](http://www.copernica.com/nl/ondersteuning/databasebeheer)
+-   [Databasebeheer](./databasebeheer.md)
 -   [Importeren en
-    exporteren](http://www.copernica.com/nl/ondersteuning/importeren-en-exporteren)
+    exporteren](./importeren-en-exporteren.md)
 -   [Selecties en
-    miniselecties](http://www.copernica.com/nl/ondersteuning/selecties-en-miniselecties)
--   [Webformulieren](http://www.copernica.com/nl/ondersteuning/webformulieren "webformulieren maken en publiceren")
+    miniselecties](./selecties-en-miniselecties.md)
+-   [Webformulieren](./webformulieren.md "webformulieren maken en publiceren")
 -   [Templates en
-    documenten](http://www.copernica.com/nl/ondersteuning/templates-en-documenten "Templates en documenten")
+    documenten](./templates-en-documenten.md "Templates en documenten")
 -   [Mailings
-    verzenden](http://www.copernica.com/nl/ondersteuning/mailings-verzenden)
--   [Websites](http://www.copernica.com/nl/ondersteuning/websites "websites")
+    verzenden](./mailings-verzenden.md)
+-   [Websites](./websites.md "websites")
 -   [Deliverability
-    optimaliseren](http://www.copernica.com/nl/ondersteuning/deliverability-optimaliseren)
--   [Enquêtes](http://www.copernica.com/nl/ondersteuning/enquetes-maken)
+    optimaliseren](./deliverability-optimaliseren.md)
+-   [Enquêtes](./enquetes-maken.md)
 -   [RSS en Atom feed maken en
-    publiceren](http://www.copernica.com/nl/ondersteuning/rss-en-atom-feeds-maken-en-publiceren)
+    publiceren](./rss-en-atom-feeds-maken-en-publiceren.md)
 -   [Overzicht van beschikbare functies en
-    invoegcodes](http://www.copernica.com/nl/ondersteuning/overzicht-van-beschikbare-functies-en-invoegcodes)
+    invoegcodes](./overzicht-van-beschikbare-functies-en-invoegcodes.md)
 -   [Campagneresultaten bekijken en delen
-    (statistieken)](http://www.copernica.com/nl/ondersteuning/campagneresultaten-bekijken-en-delen)
+    (statistieken)](./campagneresultaten-bekijken-en-delen.md)
 -   [Print, PDF en
-    fax](http://www.copernica.com/nl/ondersteuning/print-pdf-en-fax)
+    fax](./print-pdf-en-fax.md)
 -   [Campagnes automatiseren met
-    opvolgacties](http://www.copernica.com/nl/ondersteuning/campagnes-automatiseren-met-opvolgacties)
+    opvolgacties](./campagnes-automatiseren-met-opvolgacties.md)
 -   [Campagnes
-    personaliseren](http://www.copernica.com/nl/ondersteuning/campagnes-personaliseren)
+    personaliseren](./campagnes-personaliseren.md)
 -   [Sms en
-    mobile](http://www.copernica.com/nl/ondersteuning/sms-en-mobile)
+    mobile](./sms-en-mobile.md)
 -   [Gebruikers en
-    accountbeheer](http://www.copernica.com/nl/ondersteuning/gebruikers-en-accountbeheer)
--   [CSS en XSLT](http://www.copernica.com/nl/ondersteuning/css-en-xslt)
+    accountbeheer](./gebruikers-en-accountbeheer.md)
+-   [CSS en XSLT](./css-en-xslt.md)
 -   [Bestanden en
-    afbeeldingen](http://www.copernica.com/nl/ondersteuning/bestanden-en-afbeeldingen)
+    afbeeldingen](./bestanden-en-afbeeldingen.md)
 -   [Standaard
     e-mailcampagnes](https://www.copernica.com/nl/blog/standaard-email-campagnes)
 
@@ -63,5 +63,5 @@ zitten, neem dan gerust contact op met onze supportafdeling op:
 [support@copernica.com](mailto:support@copernica.com "support@copernica.com").
 Ben je al gebruiker van Copernica? Dan kan je je vraag ook indienen in
 de
-[ondersteuningstool](http://www.copernica.com/nl/ondersteuning/tickets "Ondersteuningstool")
+[ondersteuningstool](./tickets.md "Ondersteuningstool")
 van Copernica.

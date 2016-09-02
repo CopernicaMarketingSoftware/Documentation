@@ -14,22 +14,22 @@ Het maken en gebruiken van een Atom of RSS feed verloopt in een aantal
 stappen.
 
 1.  [Het maken van een (eerste)
-    rubriek](http://www.copernica.com/nl/ondersteuning/het-maken-van-artikel-rubrieken)
+    rubriek](./het-maken-van-artikel-rubrieken.md)
 2.  [Het aanmaken van
-    artikelen](http://www.copernica.com/nl/ondersteuning/het-maken-van-artikelen-voor-in-een-feed)
+    artikelen](./het-maken-van-artikelen-voor-in-een-feed.md)
 3.  [Het maken en samenstellen van een RSS of Atom
-    feed](http://www.copernica.com/nl/ondersteuning/feed-aanmaken-en-samenstellen)
+    feed](./feed-aanmaken-en-samenstellen.md)
 4.  [Feed publiceren in e-mailings of
-    webpagina](http://www.copernica.com/nl/ondersteuning/de-loadfeed-functie)
+    webpagina](./de-loadfeed-functie.md)
 
 ### Overige artikelen
 
 -   [Externe RSS of Atom feed in document
-    laden](http://www.copernica.com/nl/ondersteuning/externe-rss-of-atom-feed-in-document-laden)
+    laden](./externe-rss-of-atom-feed-in-document-laden.md)
 -   [Feed als speciale content invoegen in een
-    tekstblok](http://www.copernica.com/nl/ondersteuning/speciale-content-invoegen-in-een-tekstblok)
+    tekstblok](./speciale-content-invoegen-in-een-tekstblok.md)
 -   [Uitgebreid zoeken binnen Content feed
-    artikelen](http://www.copernica.com/nl/ondersteuning/zoeken-binnen-content-artikelen)
+    artikelen](./zoeken-binnen-content-artikelen.md)
 -   Eigen CSS stylesheet of XSLT gebruiken voor je feed
 -   [Hoe je markdown gebruikt in
     Copernica](https://www.copernica.com/nl/ondersteuning/hoe-je-markdown-gebruikt-in-copernica "Hoe je markdown gebruikt in Copernica")

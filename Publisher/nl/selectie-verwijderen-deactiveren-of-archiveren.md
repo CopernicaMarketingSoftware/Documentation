@@ -19,7 +19,7 @@ Het verwijderen van selecties heeft totaal geen invloed op de profielen
 in je database. Deze blijven vanzelfsprekend ongemoeid. Voor het
 verwijderen of bewerken van alle profielen uit een selectie bestaat al
 een [andere
-functie](http://www.copernica.com/nl/ondersteuning/meerdere-sub-profielen-ineens-wijzigen-of-verwijderen).
+functie](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md).
 
 ### Selectiecondities deactiveren
 

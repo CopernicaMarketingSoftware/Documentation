@@ -13,4 +13,4 @@ Voorbeeld 2 - Content alleen tonen aan bestemmingen uit miniselectie
 > `{in_miniselection miniselection=50}     Deze tekst is alleen zichtbaar voor personen uit de miniselectie met ID 50     {/in_miniselection}`
 
 [Ga naar het volledige artikel over deze
-functies](http://www.copernica.com/nl/ondersteuning/de-in-selection-en-in-miniselection-functie "Opmaak van smarty personalisatie (Smarty filters)")
+functies](./de-in-selection-en-in-miniselection-functie.md "Opmaak van smarty personalisatie (Smarty filters)")

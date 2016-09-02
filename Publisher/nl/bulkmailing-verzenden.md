@@ -59,7 +59,7 @@ moet worden en met welke interval.
 ![](Documentation/NL-bulk-inroosteren.png)
 
 [Meer lezen over het inroosteren van
-mailings](http://www.copernica.com/nl/ondersteuning/de-verzending-van-een-mailing-periodiek-inroosteren-voor-later)
+mailings](./de-verzending-van-een-mailing-periodiek-inroosteren-voor-later.md)
 
 Extra instellingen voor bulkmailings
 ------------------------------------
@@ -79,13 +79,13 @@ geen HTML kan weergeven.
     het profiel van de ontvanger.
 -   Stuur afbeeldingen mee, of download deze vanaf de server.
     [Afbeeldingen wel of niet
-    embedden?](http://www.copernica.com/nl/ondersteuning/afbeeldingen-meesturen-met-e-mails-wel-of-geen-goed-idee)
+    embedden?](./afbeeldingen-meesturen-met-e-mails-wel-of-geen-goed-idee.md)
 -   Externe afbeeldingen kunnen automatisch worden opgeslagen op onze
     servers. Zo blijft de afbeelding altijd beschikbaar. Ook als de
     originele locatie later wordt opgeheven of de afbeeldingen van de
     externe server worden verwijderd.
 -   Vertraag eventueel de aflevering van de e-mail door de
-    [verzendsnelheid](http://www.copernica.com/nl/ondersteuning/e-mail-verzendinstellingen)
+    [verzendsnelheid](./e-mail-verzendinstellingen.md)
     te beperken. Hiermee kan je tegengaan dat de server van jouw website
     overbelast raakt omdat te veel ontvangers naar uw website klikken.
     De verzendsnelheid is van toepassing op de gehele bulkmailing. Voor
@@ -103,7 +103,7 @@ de resultaten van deze testgroepen, stuurt de applicatie vervolgens de
 hoogst scorende versie naar de overige contacten.
 
 [Ga naar het volledige artikel over split-run
-mailings](http://www.copernica.com/nl/ondersteuning/split-run-mailing-versturen)
+mailings](./split-run-mailing-versturen.md)
 
 Controle van de mailing
 -----------------------
