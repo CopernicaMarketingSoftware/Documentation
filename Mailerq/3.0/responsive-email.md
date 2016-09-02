@@ -7,7 +7,7 @@ Every JSON message should at least have the following three properties:
 *   recipient
 *   mime
 
-The "mime" property in the JSON can either be a full valid MIME string, or (if your license allows you to use this feature) a nested JSON object that contains the email content. If it is a string, MailerQ will just send the MIME message "as is" to the recipient. But when it is a nested object, MailerQ uses the "Responsive Email" algorithm to create a fully responsive email on the fly.
+The "mime" property in the JSON can either be a full valid MIME string or a nested JSON object that contains the email content. If it is a string, MailerQ will just send the MIME message "as is" to the recipient. But when it is a nested object, MailerQ uses the "Responsive Email" algorithm to create a fully responsive email on the fly.
 
 ## Example content
 
