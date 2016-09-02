@@ -92,13 +92,6 @@ ResponsiveEmail algorithm gets by-passed, and MailerQ creates a MIME
 property with exactly the text and HTML that you've set in the JSON. 
 
 
-## Special license
-
-To enable the ResponsiveEmail algorithm, you need a special license file.
-If you already have an existing license, you can upgrade this license to
-also allow the creation of responsive emails.
-
-
 ## Config file variables
 
 When responsive emails are being generated, MailerQ downloads resources 
