@@ -40,7 +40,7 @@ for a couple of well known email programs:
 
 * [Mozilla Thunderbird](thunderbird "Example of setting up Mozilla Thunderbird")
 * [Android email app](android "Example of setting up Android email app")
-* [Postfix](quick-start/postfix "Example of setting up Postfix")
+* [Postfix](postfix "Example of setting up Postfix")
 
 After setting up your email program to use SMTPeter, all your emails will 
 pass through SMTPeter as your default SMTP gateway. The first time you send 
