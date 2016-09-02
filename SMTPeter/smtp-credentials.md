@@ -40,18 +40,14 @@ can select the features to use for that login.
 
 If you use the [bounce-tracking feature](bounce-handling), SMTPeter
 replaces the envelope address and delivers the mail using its own 
-envelope address. In that case all bounces end up at SMTPeter, and you 
-will not receive any Delivery Status Notification (DSN) messages. You 
-should use the REST API, the dashboard or the feedback loops to be 
-informed about these errors.
+envelope address. The envelope address that the recipient sees will
+therefore be different than the envelope that you supplied. All bounces 
+first end up at SMTPeter, before they are optionally forwarded to
+the envelope address that you supplied.
 
 However, if you do not hand over the bounce handling to SMTPeter, 
 SMTPeter behaves as a normal MTA and sends back DSN messages to your
-envelope address when anything goes wrong. If you inject mails using
-a traditional email client like Thunderbird or Outlook, we recommend
-not to enable bounce handling, because you probably want to receive
-the bounces for these individual emails in your own inbox right after
-you've submitted the mail.
+envelope address when anything goes wrong.
 
 SMTPeter also supports the SMTP DSN extension, meaning that you can
 pass parameters to the "MAIL FROM" and "RCPT TO" commands that control
