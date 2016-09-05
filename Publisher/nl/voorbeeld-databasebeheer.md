@@ -107,7 +107,7 @@ Related topics
 -   [Meerdere (sub)profielen ineens wijzigen of
     verwijderen](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md)
 -   [Campagne tab - bekijk per profiel de
-    campagneresultaten](campagne-tab-bekijk-per-profiel-campagneresultaten)
+    campagneresultaten](./campagne-tab-bekijk-per-profiel-campagneresultaten.md)
 -   [Een profiel herstellen naar oude
     staat](./een-profiel-herstellen-naar-oude-staat.md)
 
