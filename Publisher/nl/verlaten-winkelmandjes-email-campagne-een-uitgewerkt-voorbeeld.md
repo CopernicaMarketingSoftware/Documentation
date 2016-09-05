@@ -1,12 +1,12 @@
 Een van de meest gevraagde functies voor gebruik met onze [Magento
-integratie](https://www.copernica.com/nl/ondersteuning/integraties/magento-webshop-integratie-voor-email-marketing "Magento webshop integratie voor email marketing")
+integratie](./magento-webshop-integratie-voor-email-marketing.md "Magento webshop integratie voor email marketing")
 is de abandoned shopping cart, het [verlaten
-winkelmandje](https://www.copernica.com/nl/blog/verloren-winkelwagens "Verlaten winkelwagens").
+winkelmandje](./verloren-winkelwagens.md "Verlaten winkelwagens").
 Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
 plaatsen, loont het om [verlaten
-winkelmandjes](https://www.copernica.com/nl/blog/3-ways-that-web-shops-are-missing-out-on-business) beter
+winkelmandjes](./3-ways-that-web-shops-are-missing-out-on-business.md) beter
 onder de aandacht te brengen. Een email campagne die hierbij past is een
 campagne voor verlaten winkelmandjes. Daarmee stuur je een email zodra
 een klant een winkelmandje in je webshop achterlaat.
@@ -38,7 +38,7 @@ Het document
 
 Nu we de basis van de email campagne hebben gebouwd, is het tijd om het
 document op te gaan bouwen. De motor achter het document is de
-[loadsubprofile](https://www.copernica.com/nl/blog/de-loadprofile-en-loadsubprofile-functies "loadsubprofile")-functie,
+[loadsubprofile](./de-loadprofile-en-loadsubprofile-functies.md "loadsubprofile")-functie,
 waarmee subprofielen uit de database opgehaald kunnen worden (en ook uit
 andere databases dan die waar het geadresseerde profiel in zit).
 

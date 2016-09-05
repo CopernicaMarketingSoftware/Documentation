@@ -109,7 +109,7 @@ Gebruik deze selectie conditie om een opgegeven aantal profielen
 alfanumeriek te selecteren.
 
 [Uitgebreide uitleg bij dit type
-conditie](https://www.copernica.com/nl/ondersteuning/selectieconditie-sorteren-en-selecteren-van-sub-profielen)
+conditie](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md)
 
 ### Check op wijziging
 

@@ -48,7 +48,7 @@ vermeld.
 -   [Selectie op basis van de resultaten van
     sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 -   [Check op resultaten
-    campagnes](https://www.copernica.com/nl/ondersteuning/selectie-condities-check-op-resultaten-campagnes)
+    campagnes](./selectie-condities-check-op-resultaten-campagnes.md)
 -   [Check op enquete
     resultaten](./selectieconditie-check-op-enquete.md)
 -   [Check op

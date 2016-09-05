@@ -32,19 +32,19 @@ pas komt:
 -   Een relatie toont interesse voor een product door te klikken op een
     link in een e-mailing: gebruik de follow-up manager om de interesse
     automatisch in te vullen bij het profiel in je Copernica
-    [database](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database "Het maken en beheren van je eigen databases").
+    [database](./maak-je-eigen-database.md "Het maken en beheren van je eigen databases").
 -   Een relatie koopt een product in jouw webshop: gebruik de follow-up
     manager om automatisch een gepersonaliseerde productbrochure in
-    [PDF](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document "PDF-documenten opmaken")
+    [PDF](./maak-een-gepersonaliseerd-pdf-document.md "PDF-documenten opmaken")
     te sturen een week na aankoop.
 -   Een relatie heeft zijn persoonlijke gegevens gewijzigd: geef via de
     follow-up aan dat de relatie na de wijziging een
-    [e-mail](http://www.copernica.com/nl/functies/e-mailings "E-mailings")
+    [e-mail](./e-mailings.md "E-mailings")
     moet ontvangen met daarin zijn gewijzigde gegevens.
 -   Een relatie heeft zich net aangemeld voor je seminar van volgende
     maand: stel de follow-up manager in zodat de relatie een dag voor je
     seminar automatisch een reminder krijgt per
-    [sms](http://www.copernica.com/nl/functies/mobile/sms-bericht-verzenden "SMS bericht verzenden").
+    [sms](./sms-bericht-verzenden.md "SMS bericht verzenden").
 
 Campagnes inroosteren voor latere verzending
 --------------------------------------------
@@ -59,9 +59,8 @@ zelf gewoon om 17 uur naar huis kunt.
 
 Of stuur automatisch een mailing naar een selectie die dagelijks andere
 profielen bevat. Bijvoorbeeld in een
-[verjaardagsmailing](https://www.copernica.com/nl/ondersteuning/helpdocumentatie/een-verjaardagselectie-maken).
-Of een [abandoned shopping card
-mailing](https://www.copernica.com/nl/ondersteuning/helpdocumentatie/werken-met-de-magento-abandoned-shopping-cart-e-mail).
+[verjaardagsmailing](./een-verjaardagselectie-maken.md).
+Of een [abandoned shopping card mailing](./werken-met-de-magento-abandoned-shopping-cart-e-mail.md).
 Je stelt het een keer in, en hebt er de rest van je professionele
 carriere profijt van.
 
@@ -73,7 +72,7 @@ dat deze pas over een week, of zelfs 5 jaar na activatie worden
 uitgevoerd. In de tussentijd kan er natuurlijk van alles gebeuren.
 Iemand kan zich bijvoorbeeld uitschrijven van een mailinglijst, of nog
 iets veel ernstigers. Met behulp van [condities voor
-opvolgacties](https://www.copernica.com/nl/ondersteuning/helpdocumentatie/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie)
+opvolgacties](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md)
 zorg je ervoor dat een opvolgacties alleen wordt uitgevoerd (of
 ingeroosterd) als de relatie (nog steeds) aan de gestelde voorwaarden
 voldoet.

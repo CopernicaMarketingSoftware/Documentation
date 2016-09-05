@@ -20,7 +20,7 @@ zien of de e-mail echt door jou is verstuurd en niet vervalst of
 geforward door een andere partij. 
 
 -   [E-mails versleutelen met
-    DKIM](https://www.copernica.com/nl/blog/e-mails-versleutelen-met-dkim)
+    DKIM](./e-mails-versleutelen-met-dkim.md)
 
 ### SPF1
 
@@ -35,7 +35,7 @@ adres. Bij de meeste gebruikers is dit **niet** het geval, en staat de
 SPF automatisch goed ingesteld.
 
 -   [Eigen envelope domein gebruiken en instellen SPF voor dit
-    domein](https://www.copernica.com/nl/blog/eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein)
+    domein](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
 
 ### Versterk je e-mail authenticatie verder met DMARC
 
@@ -50,7 +50,7 @@ over de e-mails die wegens een niet-geaccepteerde DKIM en/of SPF zijn
 geweigerd.
 
 -   [Zorg dat je e-mails niet in de spambox terecht komen met
-    DMARC!](https://www.copernica.com/nl/blog/zorg-dat-je-e-mails-niet-in-de-spambox-terecht-komen-met-dmarc)
+    DMARC!](./zorg-dat-je-e-mails-niet-in-de-spambox-terecht-komen-met-dmarc.md)
 -   [Bij de bron zelf: dmarc.org](https://dmarc.org/)
 -   [Google handleiding voor het opmaken van een DMARC entry in je
     DNS](https://support.google.com/a/answer/2466563?hl=en)
@@ -70,7 +70,7 @@ database blijft dus schoon van grappenmakers die een niet-bestaand
 e-mailadres of dat van een ander invullen.
 
 -   [Nieuwbriefinschrijvingen laten verlopen via dubbele
-    optin](https://www.copernica.com/nl/blog/single-opt-in-of-double-opt-in-wat-is-het-en-hoe-werkt-het)
+    optin](./single-opt-in-of-double-opt-in-wat-is-het-en-hoe-werkt-het.md)
 
 Houd je database schoon, verwerk bounces Het kan altijd gebeuren dat een
 e-mailadres wordt opgeheven, of om een andere reden ophoudt te bestaan.
@@ -79,7 +79,7 @@ jou door Copernica geregistreerd. Hierop kan je selecties maken en
 verdere actie ondernemen.
 
 -   [Automatisch verwerken van e-mail
-    bounces](https://www.copernica.com/nl/blog/automatisch-verwerken-bounces)
+    bounces](./automatisch-verwerken-bounces.md)
 
 3. Optimaliseer je e-maildocumenten {#3.-optimaliseer-je-e-maildocumenten}
 -----------------------------------
@@ -90,9 +90,9 @@ over een aantal tools om jouw document te controleren op spamgevoelige
 materie en eigenschappen. - Document controleren op spamgevoeligheid
 
 -   [Verlaag je spamrating: enkele
-    aandachtspunten](https://www.copernica.com/nl/blog/verlaag-je-spamrating-enkele-aandachtspunten)
+    aandachtspunten](./verlaag-je-spamrating-enkele-aandachtspunten.md)
 -   [Veelvoorkomende HTML-fouten
-    oplossen](https://www.copernica.com/nl/blog/veelvoorkomende-html-fouten)
+    oplossen](./veelvoorkomende-html-fouten.md)
 
 4. Ontvangers kunnen zich uitschrijven {#4.-ontvangers-kunnen-zich-uitschrijven}
 --------------------------------------
@@ -103,7 +103,7 @@ Copernica biedt verschillende methodes aan om zo'n uitschrijving te
 faciliteren.
 
 -   [Afmeldingen automatisch
-    verwerken](https://www.copernica.com/nl/blog/afmeldingen-automatisch-verwerken)
+    verwerken](./afmeldingen-automatisch-verwerken.md)
 
 5. Controleer alles nog eens voordat je een bulkmailing verstuurt {#5.-controleer-alles-nog-eens-voordat-je-een-bulkmailing-verstuurt}
 -----------------------------------------------------------------
@@ -113,5 +113,5 @@ vlak voordat je een document gaat versturen alles nog even na. Mocht je
 onverhoopt een melding krijgen, dan vind je hier mogelijk de oplossing.
 
 -   [Extra controles voor het versturen van een
-    bulkmailing](https://www.copernica.com/nl/blog/extra-controles-voor-het-versturen-van-een-bulkmailing)
+    bulkmailing](./extra-controles-voor-het-versturen-van-een-bulkmailing.md)
 

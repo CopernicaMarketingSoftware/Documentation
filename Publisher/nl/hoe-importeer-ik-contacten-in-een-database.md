@@ -38,9 +38,6 @@ vervolgens voor Importeren / exporteren in het *Huidige* weergave menu.
 Lokaliseer het bestand op je computer of voer de online locatie van het
 bestand in. Kies voor de in het importbestand gebruikte scheidingsteken.
 
-\
- \
-
 3. Koppelen van kolommen aan databasevelden
 -------------------------------------------
 
@@ -81,8 +78,7 @@ Veel gestelde vragen
 
 Mocht je ergens tegenaanlopen tijdens het importeren, kijk dan even of
 je vraag hieronder beantwoord is. Mocht dit niet het geval zijn, kan je
-altijd contact opnemen met onze
-[hulpdiensten](http://www.copernica.com/nl/articles/ondersteuning).
+altijd contact opnemen met onze [hulpdiensten](./ondersteuning.md).
 
 ***Ik krijg bij het instellen van de veldeigenschappen een
 'niet-passende data' waarschuwing.***\

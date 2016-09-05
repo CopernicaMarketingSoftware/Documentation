@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-3)
+stap](./beginnen-met-copernica-stappenplan-stap-3.md)
 
 Stap 4: Aanmaken emailtemplate en emaildocument
 -----------------------------------------------
@@ -39,15 +39,15 @@ Content blokken kan je in je template zetten zodat je later op document
 niveau makkelijk de tekst en de afbeeldingen in je nieuwsbrief kan
 zetten. Er zijn drie soorten content-blokken:
 
--   [Tekst-blokken](https://www.copernica.com/nl/blog/template-blokken-het-tekstblok)
+-   [Tekst-blokken](./template-blokken-het-tekstblok.md)
     In tekstblokken zet je straks de stukken tekst die je in je
     nieuwsbrief wilt hebben, dus de artikeltekst, titels, subtitels en
     dergelijken.
--   [Afbeelding-blokken](https://www.copernica.com/nl/blog/template-blokken-de-afbeelding-tag)
+-   [Afbeelding-blokken](./template-blokken-de-afbeelding-tag.md)
     In een afbeeldingsblok zet je de afbeeldingen die je in je
     nieuwsbrief wilt hebben, zoals de plaatjes naast artikelen en
     logo's.
--   [Loop-blokken](https://www.copernica.com/nl/blog/template-blokken-de-loop-tag)
+-   [Loop-blokken](./template-blokken-de-loop-tag.md)
     Een loopblok gebruik je om een bepaald stuk HTML te herhalen. Op
     document niveau kan je instellen hoe vaak. Zo kan je dus een artikel
     uit je nieuwsbrief, bijvoorbeeld een afbeelding en een stuk tekst,
@@ -109,4 +109,4 @@ Na deze stap heb je een emailtemplate en een emaildocument gemaakt en
 gepersonaliseerd, en is de inhoud van je email af.
 
 [Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-5)
+stap](./beginnen-met-copernica-stappenplan-stap-5.md)

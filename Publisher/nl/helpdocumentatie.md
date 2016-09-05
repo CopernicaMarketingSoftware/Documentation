@@ -4,9 +4,9 @@ helpdocumentatie om snel de nodige informatie te vinden.
 
 Naast de standaard helpdocumentatie beschikt Copernica nog over de
 speciale [**SOAP API
-documentatie**](https://www.copernica.com/nl/support/apireference "SOAP API Documentatie")
+documentatie**](./apireference.md "SOAP API Documentatie")
 en [**REST API
-documentatie**](https://www.copernica.com/nl/support/rest/the-copernica-rest-api "REST API Documentatie").
+documentatie**](./the-copernica-rest-api.md "REST API Documentatie").
 Hierin vind je alle informatie die je nodig hebt, voor het koppelen van
 Copernica aan je eigen software via onze SOAP API en REST API.
 
@@ -56,7 +56,7 @@ Onderwerpen
 -   [Bestanden en
     afbeeldingen](./bestanden-en-afbeeldingen.md)
 -   [Standaard
-    e-mailcampagnes](https://www.copernica.com/nl/blog/standaard-email-campagnes)
+    e-mailcampagnes](./standaard-email-campagnes.md)
 
 Mocht je na raadpleging van de documentatie toch nog met een vraag
 zitten, neem dan gerust contact op met onze supportafdeling op:

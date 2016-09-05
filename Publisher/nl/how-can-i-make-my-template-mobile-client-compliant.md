@@ -12,7 +12,7 @@ van mobiele e-mail (
 smartphones](http://www.emerce.nl/nieuws/helft-nieuwe-europese-smartphones-heeft-mobiel-internet?utm_source=rss&utm_medium=rss&utm_campaign=helft-nieuwe-europese-smartphones-heeft-mobiel-internet)
  ondertussen beschikt over mobiel internet, kan je de conclusie wel
 trekken: Als je 
-[e-mailmarketing](http://www.copernica.com/nl/functies/emailmarketing "e-mailmarketing")
+[e-mailmarketing](./emailmarketing.md "e-mailmarketing")
  inzet, moet je rekening houden met je mobiele gebruikers. \
  \
  Maar hoe doe je dat dan? In eerste instantie moet je ervoor zorgen dat
@@ -31,7 +31,7 @@ opt-in hoe zij jouw e-mail liever lezen. \
  \
  Indien je gebruik maakt van een ESP (e-mail service provider), kijk je
 voor dit inzicht je 
-[e-mailstatistieken](http://www.copernica.com/nl/functies/emailmarketing/emailstatistieken "e-mailstatistieken")
+[e-mailstatistieken](./emailstatistieken.md "e-mailstatistieken")
  na. Een goede e-mailmarketing oplossing geeft je een duidelijk beeld
 over de meest gebruikte mobiele apparaten. Daar kan je dan rekening mee
 houden bij het opstellen van je e-mailcampagnes. \
@@ -41,7 +41,7 @@ houden bij het opstellen van je e-mailcampagnes. \
 -----------------------------------
 
 Het is aangeraden een tekstversie toe te voegen aan je 
-[HTML-nieuwsbrieven](http://www.copernica.com/nl/kennis/html-nieuwsbrieven-opmaken-voor-mobiel "HTML nieuwsbrieven voor mobiel")
+[HTML-nieuwsbrieven](./html-nieuwsbrieven-opmaken-voor-mobiel.md "HTML nieuwsbrieven voor mobiel")
 . Hiermee speel je namelijk in op je mobiele ontvangers die een apparaat
 hebben dat geen HTML ondersteunt. \
  \
@@ -105,7 +105,7 @@ ook binnen de e-mail kort en bondig. Door vooraf te bepalen wat je
 precies wenst te bereiken met de e-mail kan je jezelf beperken tot
 relevante content en een goede call-to-action. Bijvoorbeeld bij 
 [event-driven
-e-mailcampagnes](http://www.copernica.com/nl/kennis/event-driven-emailcampagnes "event-driven e-mailcampagnes")
+e-mailcampagnes](./event-driven-emailcampagnes.md "event-driven e-mailcampagnes")
 . Deze verstuur je met 1 specifiek doel. Zorg dan ook dat je content
 hierop is afgestemd. Een lezer heeft bijvoorbeeld geen boodschap aan een
 productbeschrijving of de laatste nieuwtjes in een verjaardagsmailing. \

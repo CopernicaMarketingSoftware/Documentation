@@ -44,7 +44,7 @@ responsive gemaakt. Dus ze worden goed weergegeven op smartphones,
 tablets en normale desktop pc's.
 
 -   [Gratis templates bekijken en
-    downloaden](https://www.copernica.com/nl/blog/gratis-responsive-html-e-mailtemplates)
+    downloaden](./gratis-responsive-html-e-mailtemplates.md)
 
 E-maildocumenten
 ----------------

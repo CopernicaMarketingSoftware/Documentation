@@ -222,14 +222,10 @@ Je kan de huidige selecties bewerken en nieuwe toevoegen in het
 dialoogvenster Selecties bewerken, welke je vindt in het *Database
 management* menu in het onderdeel *Profielen*.
 
-[Meer over selecties in
-Copernica](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.article&article=examples.abandonedcarttemplate&language=nl_NL&article=profiles.dialogs.editviews)
-
 ### **De abandoned cart e-mail versturen**
 
 De mailing rooster je in als een wekelijkse
-periodieke [bulkmailing](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.article&article=examples.abandonedcarttemplate&language=nl_NL&article=emailings.dialogs.mailing) (interval
-is 7 dagen) en richt je aan de selectie *RecentAbandonedCarts*. Er
+periodieke bulkmailing (interval is 7 dagen) en richt je aan de selectie *RecentAbandonedCarts*. Er
 zitten dan elke week klanten in die in de afgelopen 7 dagen een product
 in het mandje hebben gegooid, maar nog niet hebben afgerekend.
 

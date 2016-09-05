@@ -10,4 +10,4 @@ bezoekers**
 De webpagina zal vervolgens alleen beschikbaar zijn voor ingelogde
 gebruikers. Anonieme gebruikers worden automatisch doorverwezen naar de
 pagina die is ingesteld als [Standaard
-inlogpagina](https://www.copernica.com/nl/ondersteuning/inlog-uitlog-en-wachtwoord-vergeten-formulier).
+inlogpagina](./inlog-uitlog-en-wachtwoord-vergeten-formulier.md).

@@ -3,10 +3,10 @@ gegevens natuurlijk niet te bewaren. Dit artikel laat stap voor stap
 zien hoe je een dergelijk afmeldformulier maakt.
 
 Let op: wanneer je de
-[{unsubscribe}](<http://www.copernica.com/nl/ondersteuning/de-uitschrijflink-unsubscribe-tag>)
+[{unsubscribe}](./de-uitschrijflink-unsubscribe-tag.md)
 link gebruikt in je emailings, dan hoef je hiervoor geen webformulier te
 gebruiken, maar stel je dit in bij het
-[uitschrijfgedrag](<http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie>)
+[uitschrijfgedrag](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
 op de database of collectie.
 
 Het webformulier maken

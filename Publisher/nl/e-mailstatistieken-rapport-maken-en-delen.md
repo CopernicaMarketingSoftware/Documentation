@@ -68,9 +68,7 @@ oorspronkelijke vorm weergegeven. 
 Wat betekenen de fouten
 -----------------------
 
-\<
-ahref="http://www.copernica.com/nl/ondersteuning/soft-en-hard-bounces"\>Meer
-lezen over afleverfouten
+[Meer lezen over afleverfouten](./soft-en-hard-bounces.md)
 
 Veel gestelde vragen
 --------------------

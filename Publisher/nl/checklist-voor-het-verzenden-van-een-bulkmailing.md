@@ -88,7 +88,7 @@ Van het onderdeel Profielen gaan we naar het onderdeel E-mailings. In
 dit onderdeel maak en beheer je e-mailings, en kan je ze uiteindelijk
 verzenden. We gaan er vanuit dat je al een document hebt. Heb je nog
 geen document, dan kan je desgewenst onze [standaardtemplate en document
-inladen](https://www.copernica.com/nl/ondersteuning/werken-met-de-standaard-template-van-copernica).
+inladen](./werken-met-de-standaard-template-van-copernica.md).
 
 ### Controleren van je document en instellingen
 
@@ -113,7 +113,7 @@ de instellingen voldoen aan de juiste eisen.
 4.  Geldig afzendadres? Gebruik altijd een afzendadres dat daadwerkelijk
     bestaat (je kunt dus e-mails ontvangen op dit adres).
 5.  [Weergavecontrole met
-    Litmus.](http://www.copernica.com/nl/over-ons/nieuws/litmus-previews-van-e-mail-wat-stuur-ik-uit)
+    Litmus.](./litmus-previews-van-e-mail-wat-stuur-ik-uit.md)
     De weergave van HTML e-mails kan per e-mailprogramma wezenlijk
     verschillen. Met de Litmus test kan je screenshots ontvangen van
     jouw e-maildocument in talloze e-mailprogramma's en browsers.
@@ -130,7 +130,7 @@ ontvangers.
     emails](./een-test-e-mail-versturen.md)
 
 [Testmail niet
-ontvangen?](http://www.copernica.com/nl/articles/heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan)
+ontvangen?](./heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan.md)
 
 ### Verzenden
 

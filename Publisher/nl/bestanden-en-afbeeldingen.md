@@ -48,7 +48,7 @@ template
 `<img src="naam_van_medialib/naam_van_afbeelding.png" alt="skoftig mooi plaatje" />`
 
 -   [Meer lezen over het beheren en gebruiken van afbeeldingen in
-    Copernica](https://www.copernica.com/nl/ondersteuning/beheren-van-afbeeldingen-en-bestanden)
+    Copernica](./beheren-van-afbeeldingen-en-bestanden.md)
 
 ### Afbeeldingen gebruiken in afbeeldingblokken
 
@@ -71,7 +71,7 @@ Voor het instellen van deze condities ga je bij de instellingen van het
 afbeeldingblok naar het tabblad **Condities**.
 
 -   [Meer lezen over het instellen van
-    condities](https://www.copernica.com/nl/ondersteuning/de-eenvoudige-script-editor)
+    condities](./de-eenvoudige-script-editor.md)
 
 ### Verkleinen en uitsnijden van afbeeldingen
 
@@ -102,13 +102,13 @@ het volgende:
 Verder lezen:
 
 -   [Afbeeldingen niet zichtbaar in je e-mailings? Zes
-    tips](https://www.copernica.com/nl/blog/afbeeldingen-niet-zichtbaar-in-je-e-mailings-zes-tips)
+    tips](./afbeeldingen-niet-zichtbaar-in-je-e-mailings-zes-tips.md)
 -   [Afbeeldingen helemaal niet ingeladen? Lees onze hulp
-    pagina](https://www.copernica.com/nl/support/image-troubleshooting)
+    pagina](./image-troubleshooting.md)
 -   [Remove unwanted gaps in
-    Outlook](https://www.copernica.com/en/blog/remove-unwanted-gaps-in-microsoft-outlook)
+    Outlook](./remove-unwanted-gaps-in-microsoft-outlook.md)
 -   [Hulppagina: Afbeeldingen worden niet goed
-    weergegeven](https://www.copernica.com/nl/ondersteuning/afbeeldingen-worden-niet-goed-uitgelijnd-in-outlook-gmail-hotmail)
+    weergegeven](./afbeeldingen-worden-niet-goed-uitgelijnd-in-outlook-gmail-hotmail.md)
 
 ### Afbeeldingen vanaf een externe locatie opnemen in je publicaties
 
@@ -146,9 +146,9 @@ profiel.
 Meer lezen:
 
 -   [Bestanden opslaan bij een
-    profiel](https://www.copernica.com/nl/ondersteuning/bestanden-opslaan-bij-een-profiel)
+    profiel](./bestanden-opslaan-bij-een-profiel.md)
 -   [Uploadveld toevoegen aan
-    webformulier](https://www.copernica.com/nl/ondersteuning/uploadveld-toevoegen-aan-een-webformulier)
+    webformulier](./uploadveld-toevoegen-aan-een-webformulier.md)
 
 ### Bestanden of afbeeldingen uit het profiel opnemen in je publicaties
 
@@ -156,7 +156,7 @@ Bestanden of afbeeldingen die zijn ge-upload naar het profiel, kunnen
 worden opgenomen in je emailings en webpagina's. Voor het opnemen van
 die bestanden zijn twee speciale functies beschikbaar: [de loadfile an
 linkfile
-functies](https://www.copernica.com/nl/ondersteuning/linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile).
+functies](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md).
 
 PDF-bestanden
 -------------
@@ -165,7 +165,7 @@ Copernica biedt de mogelijkheid om (gepersonaliseerde) PDF-bestanden te
 versturen of te linken vanuit een emailing of webpagina.
 
 -   PDF-bestanden kunnen worden [gepersonaliseerd met smarty
-    code](https://www.copernica.com/nl/ondersteuning/campagnes-personaliseren)
+    code](./campagnes-personaliseren.md)
 -   Bestanden die je als bijlage meestuurt, of linkt via de speciale
     {linkpdf} tag worden automatisch gepersonaliseerd.
 -   Je kunt natuurlijk ook PDF-bestanden opslaan in de eerder op deze
@@ -174,7 +174,7 @@ versturen of te linken vanuit een emailing of webpagina.
 Meer lezen over dit onderwerp:
 
 -   [Print, PDF en Fax in
-    Copernica](https://www.copernica.com/nl/ondersteuning/print-pdf-en-fax)
+    Copernica](./print-pdf-en-fax.md)
 -   [Linken naar een gepersonaliseerd PDF-bestand of meesturen als
-    bijlage](https://www.copernica.com/nl/ondersteuning/linken-naar-een-pdf-bestand)
+    bijlage](./linken-naar-een-pdf-bestand.md)
 

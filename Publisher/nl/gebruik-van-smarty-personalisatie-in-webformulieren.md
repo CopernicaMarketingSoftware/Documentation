@@ -17,5 +17,5 @@ nog steeds gebruik maken van bepaalde smarty functies, zoals
 wilt opslaan in het profiel.
 
 **Let op:**De functies [linkfile en
-loadfile](https://www.copernica.com/nl/ondersteuning/linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile "Linken naar bestanden van het profiel met loadfile en linkfile")
+loadfile](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile "Linken naar bestanden van het profiel met loadfile en linkfile")
 kunnen niet worden gebruikt in een webformulier.

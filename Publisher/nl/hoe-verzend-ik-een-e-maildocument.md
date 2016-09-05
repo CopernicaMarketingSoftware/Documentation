@@ -5,7 +5,7 @@ checklist.
     je ten eerste een bestand nodig met relaties die hebben aangegeven
     dat zij e-mail van jou willen ontvangen. [Wanneer mag ik iemand wel
     en niet
-    mailen](http://www.copernica.com/nl/over-ons/nieuws/opt-in-double-opt-in-vraagt-u-om-toestemming)?
+    mailen](./opt-in-double-opt-in-vraagt-u-om-toestemming.md)?
 -   In de database heb je een meerkeuzeveld toegevoegd waarin wordt
     geregistreerd of iemand de nieuwsbrief wil ontvangen of niet.
 -   Op basis van dit veld heb je een selectie gemaakt waaraan je de
@@ -14,7 +14,7 @@ checklist.
 -   Je hebt de (eventuele personalisatie in de) nieuwsbrief uitgebreid
     getest.
 -   Deze nieuwsbrief heeft een werkende (en wettelijk verplichte)
-    [afmeldmogelijkheid](http://www.copernica.com/nl/over-ons/nieuws/opt-out-hou-je-klant-niet-tegen).
+    [afmeldmogelijkheid](./opt-out-hou-je-klant-niet-tegen.md).
 
 1. Bulkmailing voorbereiden
 ---------------------------

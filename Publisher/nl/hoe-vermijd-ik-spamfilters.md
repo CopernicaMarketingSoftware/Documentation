@@ -49,7 +49,7 @@ Copernica je e-mail in die inbox te krijgen.
     mensen terecht komt. Maak dus indien mogelijk gebruik van
     doelgroepsegmentatie, en pas hier je boodschap op aan. Met Copernica
     Marketing Software kan je gebruik maken van [dynamische
-    content](http://www.copernica.com/nl/over-ons/nieuws/dynamische-content-varieer-de-inhoud-van-je-campagnes)
+    content](./dynamische-content-varieer-de-inhoud-van-je-campagnes.md)
     in je e-mails waardoor je de content koppelt aan je doelgroep. Een
     simpel voorbeeld hiervan is mannen een blauwe achtergrond tonen en
     vrouwen een roze achtergrond.
@@ -72,7 +72,7 @@ Copernica je e-mail in die inbox te krijgen.
     E-mailprogramma’s en spamfilters kijken ook naar het gedrag van de
     ontvangers van jouw e-mail. Wordt je e-mail weinig geopend en vaak
     direct weggegooid, dan gaat dit uiteindelijk ten koste van je
-    [e-mailreputatie](http://www.copernica.com/nl/over-ons/nieuws/e-mailreputatie-hoe-bouw-je-dit-op).
+    [e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md).
 -   Maak gebruik van dubbele opt-in. Wanneer iemand zich aanmeldt voor
     je nieuwbrief, ontvangt hij eerst een e-mail met daarin een
     bevestigingslink. Zo voorkom je dat er niet-werkende e-mailadressen
@@ -93,21 +93,20 @@ Copernica je e-mail in die inbox te krijgen.
 
 ### Verbeteringen van technische aard
 
--   Stel een [Sender
-    ID](http://www.copernica.com/nl/over-ons/nieuws/sender-id-hoe-werkt-het-precies)
+-   Stel een [Sender ID](./sender-id-hoe-werkt-het-precies.md)
     in. Dit is een regel in het txt-record van het domein waarmee u
     verstuurt. De Sender ID verifieert dat een e-mail die is verzonden
     vanaf jouwdomein.nl ook daadwerkelijk afkomstig is van
     jouwdomein.nl. Dit helpt e-mailprogramma’s jouw email te
     onderscheiden van SPAM.
 -   Maak gebruik van een
-    [DKIM](http://www.copernica.com/nl/over-ons/nieuws/dkim-domainkey-identified-mail)
+    [DKIM](./dkim-domainkey-identified-mail.md)
     signature. Door een DKIM signature heeft de ontvanger de garantie
     dat de e-mail echt van jou afkomstig is.
 -   Controleer regelmatig of je op blacklists voorkomt, en zorg dat je
     er vanaf wordt gehaald indien je bent geblacklist.
 -   Stuur een [list-unsubscribe
-    header](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader)
+    header](./list-unsubscribe-header-een-reputatieverbeterende-e-mailheader.md)
     mee, die de dit-is-spam-knop in grote e-mailprogramma’s zoals
     Hotmail vervangt door een schrijf-mij-uit-knop. Ontvangers kunnen
     jouw e-mail dan niet meer als spam noteren.
@@ -121,7 +120,7 @@ Copernica je e-mail in die inbox te krijgen.
 -   Met Copernica Marketing Software kan je in de applicatie ook
     bekijken hoe spamgevoelig je e-mail is. Hier wordt je spamscore
     oftewel
-    [spamrating](http://www.copernica.com/nl/over-ons/nieuws/verlaag-je-spamrating-enkele-aandachtspunten)
+    [spamrating](./verlaag-je-spamrating-enkele-aandachtspunten.md)
     al gecontroleerd. Dit bekijk je door rechtsonder in de applicatie op
     \#waarschuwingen te klikken en vervolgens naar Spam check te gaan.
 

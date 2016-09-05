@@ -70,8 +70,7 @@ alle profielen die de nieuwsbrief willen ontvangen.
 
 Om je database geordend te houden heeft Copernica een standaard
 selectiestructuur ontwikkeld die je handig kan instellen. Volg de
-stappen uit
-[deze](https://www.copernica.com/nl/blog/haal-de-bezem-door-je-email-marketing-verzendlijst)
+stappen uit [deze](./haal-de-bezem-door-je-email-marketing-verzendlijst.md)
 blog om een goede indeling van je selecties te maken. Bij de stap 'Maak
 een verzendselectie aan voor je email marketing' kan je je bestaande
 selectie *Verzendselectie* bijwerken door vanuit het **Selecties

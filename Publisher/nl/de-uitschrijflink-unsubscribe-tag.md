@@ -7,7 +7,7 @@ laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 
 **Belangrijke noot:** Wanneer je gebruik maakt van de {unsubscribe},
 dien je tevens het
-[uitschrijfgedrag](https://www.copernica.com/nl/blog/uitschrijfgedrag-instellen-op-database-of-collectie) in
+[uitschrijfgedrag](./uitschrijfgedrag-instellen-op-database-of-collectie.md) in
 te stellen op de database of collectie waaraan je de e-mailing richt!
 
 De uitschrijflink toevoegen

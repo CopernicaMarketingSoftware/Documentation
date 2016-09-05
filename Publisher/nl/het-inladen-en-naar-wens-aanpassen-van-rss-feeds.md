@@ -39,7 +39,7 @@ Handmatig instellen van een RSS
 -------------------------------
 
 Het handmatig inladen van een RSS-feed gebeurt met de
-[{loadfeed}-functie](https://www.copernica.com/nl/blog/de-loadfeed-functie).
+[{loadfeed}-functie](./de-loadfeed-functie.md).
 Deze kan in de broncode van een template geplaatst worden of in een
 tekstblok. Je kunt hierbij de XSLT meegeven, welke je in Copernica onder
 'Stijl' kunt aanmaken. Doe je dat niet, dan wordt de standaard XSLT
