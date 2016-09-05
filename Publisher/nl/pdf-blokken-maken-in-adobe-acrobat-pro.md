@@ -9,17 +9,17 @@ PDFlib](http://www.pdflib.com/download/pdflib-family/block-plugin-50/).
 Zodra je de plugin hebt geinstalleerd, zal Acrobat zijn uitgerust een
 extra menu met de naam **PDFlib blocks**
 
-![](Documentation/acrobat-menu.png)
+![](../images/acrobat-menu.png)
 
 Klik in het menu op**PDFlib block tool** om de tool te activeren. Trek
 een blok daar waar je het ongeveer in het document wilt hebben. De
 grootte en positie van het blok kan je later nog aanpassen.
 
-![](Documentation/maakpdfblok.png)
+![](../images/maakpdfblok.png)
 
 Het dialoogvenster voor de blok opties zal zich openbaren...
 
-![](Documentation/blockeditro.png)
+![](../images/blockeditro.png)
 
 Belangrijke instellingen
 ------------------------
@@ -44,7 +44,7 @@ instelling **Text flow** op **'true'** staat. \
  **Let op 2:** alle fonts die je wilt gebruiken, dien je apart te
 uploaden naar Copernica.
 
-![](Documentation/textflowd.png)
+![](../images/textflowd.png)
 
 Blokken kopieren
 ----------------

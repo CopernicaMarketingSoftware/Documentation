@@ -9,7 +9,7 @@ Een interessegroep is bijvoorbeeld ‘*bomen*’ welke de interessevelden
 Profielen kunnen worden geselecteerd op basis van de **interesses** die
 ze hebben of op de **groep** waarin het interesseveld is opgenomen.
 
-![](Documentation/selectieconditiecheckoninterest.png)
+![](../images/selectieconditiecheckoninterest.png)
 
 Afb. Ontvangers van de bovenstaande muzikale nieuwsbrief hebben niet
 veel geluk; zij konden alleen kiezen tussen vier kwaden toen hen de

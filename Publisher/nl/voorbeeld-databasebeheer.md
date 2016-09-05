@@ -28,7 +28,7 @@ Gegevens opslaan in verschillende veldtypes
 -------------------------------------------
 
 ![Gegevens opslaan in verschillende
-veldtypes](Copernicacom/nl-gegevens.png "Gegevens opslaan in verschillende veldtypes")
+veldtypes](../images/nl-gegevens.png "Gegevens opslaan in verschillende veldtypes")
 
 De databasestructuur binnen Copernica kan je geheel opmaken en inrichten
 naar eigen wens. Je hebt de mogelijkheid een oneindig aantal
@@ -45,7 +45,7 @@ Multidimensionale database
 --------------------------
 
 ![Aan de slag met
-selectiess](Copernicacom/nl-selecties.png "Aan de slag met selecties")
+selectiess](../images/nl-selecties.png "Aan de slag met selecties")
 
 Een multidimensionale database is een database die bestaat uit meerdere
 niveaus. Met een multidimensionale database kun je nóg gerichter en

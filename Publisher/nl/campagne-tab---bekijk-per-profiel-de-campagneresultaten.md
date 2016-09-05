@@ -4,7 +4,7 @@ tabblad Campagnes, bij het profiel. Hier vind je een overzicht van alle
 mailings die zijn gericht aan dit profiel en de onderliggende
 subprofielen.
 
-![](campaignstab.jpg)
+![](../images/campaignstab.jpg)
 
 -   Filter de mailings op hun type (e-mail, sms, fax)
 -   Filter op het soort mailing (normale mailings, of mailings verstuurd

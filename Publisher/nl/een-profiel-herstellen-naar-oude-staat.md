@@ -3,7 +3,7 @@ gemaakt en je wilt dit terugdraaien, dan kan je gebruik maken van de
 functie '**(sub)profiel terughalen**'. Deze vind je bij het betreffende
 profiel, achter het tabblad '**Geschiedenis'**.
 
-![Rollback profile](rollback.png)
+![Rollback profile](../images/rollback.png)
 
 het dialoogvenster om een profiel terug te zetten vind je in het
 Geschiedenis tabblad van een profiel.

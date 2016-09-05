@@ -10,7 +10,7 @@ De gegevens uit niet-gekoppelde kolommen worden niet geimporteerd. 
 [Meer informatie over databasevelden](#)
 
 ![Link fields and set key fields. Adjust the properties of individual
-database and collection fields](importcontacts.png)
+database and collection fields](../images/importcontacts.png)
 
 Sleutelvelden
 -------------

@@ -24,7 +24,7 @@ Voer het domein vervolgens in zonder*http://*
 
 Het kan enkele minuten duren voordat de koppeling is doorgevoerd.
 
-![](Documentation/websites-link-domain-dialog.png)
+![](../images/websites-link-domain-dialog.png)
 
 De website in je browser bekijken
 ---------------------------------

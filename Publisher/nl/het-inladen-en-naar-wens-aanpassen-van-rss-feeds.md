@@ -93,7 +93,7 @@ we het volgende:
 
 Om de nieuwsberichten geordend in de mailing te plaatsen, zetten we
 alles in een html tabel. Gezien de feed uit meerdere nieuwsartikelen
-(items) bestaat en we natuurlijk niet voor elk artikel aparte XSLT
+(../images/items) bestaat en we natuurlijk niet voor elk artikel aparte XSLT
 willen schrijven, gebruiken we een *for-each*-loop. Voor elk artikel
 vullen we een deel van de tabel. Na de loop sluiten we de tabel weer
 netjes af. Een eenvoudig voorbeeld:

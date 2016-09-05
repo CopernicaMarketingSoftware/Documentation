@@ -28,7 +28,7 @@ Je kunt kiezen uit drie verschillende aanleidingen:
     is om zichzelf te identificeren (door het sleutelveld in het
     webformulier).
 
-![](Documentation/opvolgactie.png)
+![](../images/opvolgactie.png)
 
 ### Extra controle
 

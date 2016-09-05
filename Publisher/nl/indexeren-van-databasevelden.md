@@ -21,6 +21,6 @@ negatief beinvloeden.
 -   Klik het veld aan dat je wilt indexeren
 -   Selecteer de optie 'Dit veld is geindexeerd' en klik op opslaan
 
-![Index database fields](indexingfields.png)
+![Index database fields](../images/indexingfields.png)
 
  

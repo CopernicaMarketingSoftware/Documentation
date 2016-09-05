@@ -19,7 +19,7 @@ accepteert.
 Om het veld te maken ga je naar **Databasebeheer**\>*Databasevelden
 wijzigen*
 
-![../images/newsletter-preference-field.png](Documentation/newsletter-preference-field.png "https://pic.vicinity.nl/127/0/112849/newsletter-preference-field.png")
+![../images/newsletter-preference-field.png](../images/Documentation/newsletter-preference-field.png "https://pic.vicinity.nl/127/0/112849/newsletter-preference-field.png")
 
 -   Kies **Veld toevoegen**
 -   Kies een naam voor het nieuwe veld (bijvoorbeeld *Nieuwsbrief*)
@@ -41,7 +41,7 @@ aangemaakte veld.
 -   Selecteer het nieuwe veld, en kies bij Waarde **'Ja**'
 -   Klik op **wijzigen** om alle profielen in de database te wijzigen.
 
-![../images/edit-multiple-profiles.png](Documentation/edit-multiple-profiles.png "https://pic.vicinity.nl/127/0/112847/edit-multiple-profiles.png")
+![../images/edit-multiple-profiles.png](../images/Documentation/edit-multiple-profiles.png "https://pic.vicinity.nl/127/0/112847/edit-multiple-profiles.png")
 
 ### De selectie maken
 

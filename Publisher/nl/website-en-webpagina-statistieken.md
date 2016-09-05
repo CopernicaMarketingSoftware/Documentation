@@ -6,4 +6,4 @@ De resultaten vind je terug bij de tabbladen *Pagina statistieken*en
 *Website statistieken*bij de desbetreffende pagina/website in het
 onderdeel *Websites*.
 
-![](Documentation/websitestatistieken.png)
+![](../images/websitestatistieken.png)

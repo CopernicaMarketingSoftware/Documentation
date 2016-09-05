@@ -7,4 +7,4 @@ wijzigen in het tabblad *Algemene instellingen*.
 
 **Tip:**smarty personalisatie is toegestaan in dit veld.
 
-![Web form button text](buttontext.png)
+![Web form button text](../images/buttontext.png)

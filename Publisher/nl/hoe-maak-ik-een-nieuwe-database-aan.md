@@ -9,7 +9,7 @@ een enkele database te werken.\
 -----------------
 
 ![Een nieuwe database
-aanmaken](Copernicacom/nieuwe-database-aanmaken.png "Een nieuwe database aanmaken")
+aanmaken](../images/nieuwe-database-aanmaken.png "Een nieuwe database aanmaken")
 
 ### Opmaken en inrichten naar eigen wens
 
@@ -27,7 +27,7 @@ bijvoorbeeld je
 --------------------------
 
 ![Databasevelden beheren in Copernica Marketing
-Software](Copernicacom/velden-beheren.png "Databasevelden beheren in Copernica Marketing Software")
+Software](../images/velden-beheren.png "Databasevelden beheren in Copernica Marketing Software")
 
 ### Databasevelden
 
@@ -42,7 +42,7 @@ een numeriek veld gebruiken.
 \
  \
  ![Veldtypes in Copernica Marketing
-Software](Copernicacom/veld-types.png "Veldtypes in Copernica Marketing Software")
+Software](../images/veld-types.png "Veldtypes in Copernica Marketing Software")
 
 ### Beschikbare veldtypen
 

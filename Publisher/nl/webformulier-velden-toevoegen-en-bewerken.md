@@ -2,7 +2,7 @@ Webformulieren zijn opgebouwd uit velden. Om een veld toe te voegen,
 klik je bij het webformulier op **Veld toevoegen**. Een webformulierveld
 is altijd gekoppeld aan een database- of collectieveld.
 
-![](Documentation/formuliervelden.png)
+![](../images/formuliervelden.png)
 
 Type veld kiezen
 ----------------
@@ -10,7 +10,7 @@ Type veld kiezen
 Bij het aanmaken van een nieuw webformulier veld kan je kiezen uit vier
 verschillende type velden.
 
-![](Documentation/selecteerveldtype.png)
+![](../images/selecteerveldtype.png)
 
 ### Normaal veld
 
@@ -55,7 +55,7 @@ wilt hebben. Positie 1 is helemaal bovenin het formulier.
 Webformulierveld opties
 -----------------------
 
-![](Documentation/formulierveldopties.png)
+![](../images/formulierveldopties.png)
 
 ### Label
 
@@ -132,7 +132,7 @@ je wilt de waardes 1 tot 5 opslaan in de database, plaats dan 2 dubbele
 punten (::) tussen de twee waardes bij de standaard waarde van het
 webformulier. Dit doet je alsvolgt:
 
-![](Documentation/meerkeuzeveld.png)
+![](../images/meerkeuzeveld.png)
 
 #### Keuzerondjes (radio buttons)
 

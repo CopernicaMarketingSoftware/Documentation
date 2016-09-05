@@ -11,7 +11,7 @@ naar (individuele) **enquetes**, **feeds**, **CSS** stylesheets,
 **XSLT**-bestanden. De map kan je altijd benaderen via het menu dat
 hoort bij het item.
 
-![Files and images folder](filesandimages.png)
+![Files and images folder](../images/filesandimages.png)
 
 De bestanden- en afbeeldingenmap biedt een overzicht van de afbeeldingen
 en bestanden die zijn geupload en kunnen worden gebruikt. Daarbij
@@ -73,7 +73,7 @@ het document een afbeelding inladen.
 -   Vanuit de tabbladen **Instellingen**, **Hyperlink**en
     **Condities**kan je de afbeelding verder instellen.
 
-![](imageblock.png)
+![](../images/imageblock.png)
 
 Een afbeelding inladen vanuit de uitgebreide editor
 ---------------------------------------------------
@@ -82,7 +82,7 @@ Het is toegestaan en mogelijk om binnen een tekstblok afbeeldingen in te
 laden.
 
 Klik hiervoor op het afbeeldingicoon ![click this icon to select an
-image](imageicon.png) . Er verschijnt een pop-upvenster waarin je een
+image](../images/imageicon.png) . Er verschijnt een pop-upvenster waarin je een
 afbeelding kan selecteren en extra instellingen kan doen. Zorg er wel
 voor dat je de pop-up blocker van je favoriete browser uitschakelt,
 anders verschijnt de pop-up niet :)

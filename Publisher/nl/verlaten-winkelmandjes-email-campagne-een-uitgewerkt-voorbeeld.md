@@ -24,14 +24,14 @@ de losse producten staan in collectie 'BasketProducts'. Deze scheiding
 wordt gemaakt om de losse producten te kunnen groeperen op basis van het
 ID van de mand in 'BasketProducts'.
 
-![](articlesblog/database-tandenborstel.png)
+![](../images/articlesblog/database-tandenborstel.png)
 
 Dit is collectie 'BasketProducts', waarin de losse producten staan. In
 veld 'BasketID' staat het ID van de mand zoals we die in 'Baskets'
 vinden. Verder staat de prijs en een locatie van een afbeelding van het
 product in het subprofiel.
 
-![](articlesblog/database-tandenborstel-2.png)
+![](../images/articlesblog/database-tandenborstel-2.png)
 
 Het document
 ------------
@@ -180,4 +180,4 @@ te zetten ontstaat de volgende code:
 
 ### Het resultaat
 
-![](articlesblog/abandoned-shopping-cart-tandenborstel.png)
+![](../images/articlesblog/abandoned-shopping-cart-tandenborstel.png)

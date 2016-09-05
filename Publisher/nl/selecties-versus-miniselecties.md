@@ -10,12 +10,12 @@ Zowel je selecties en miniselecties beheer je in het onderdeel
 **Profielen**. In het menu **Databasebeheer**vind je de optie
 **Selecties beheren**
 
-![](Documentation/createselectionminiselection.png)
+![](../images/createselectionminiselection.png)
 
 *Linkonder in het venster vind je de opties om een nieuwe selectie of
 miniselectie te maken.*
 
-![](Documentation/selectionandminiselectionoverview.png)
+![](../images/selectionandminiselectionoverview.png)
 
 *Als er al selecties en miniselecties bestaan, worden deze in dit
 venster weergegeven. Klik op een selectie of miniselectie om deze te
@@ -56,6 +56,4 @@ e-mail sturen.
 Je kan nu een e-mail sturen naar het profiel, en bijvoorbeeld vragen hoe
 het aankoopproces hem of haar bevallen is.
 
-![](Documentation/miniselection-referral.png)
-
-###  
+![](../images/miniselection-referral.png)

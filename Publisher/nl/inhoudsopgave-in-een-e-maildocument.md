@@ -40,7 +40,7 @@ de individuele artikelen te verwijzen.
 
 `<a href="#article0">Ga naar eerste artikel</a> <br/> <a href="#article1">Ga naar tweede artikel</a>`
 
-![](loopblock.png)
+![](../images/loopblock.png)
 
  
 

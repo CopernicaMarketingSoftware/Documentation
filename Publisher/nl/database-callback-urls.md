@@ -14,7 +14,7 @@ met bestaande en nieuwe gegevens over het gewijzigde (sub)profiel.
 Callbacks worden op dezelfde wijze in rekening gebracht als SOAP API
 calls.
 
-![](callbackdialog.png)
+![](../images/callbackdialog.png)
 
 **Een callback URL toevoegen**
 ------------------------------
@@ -25,7 +25,7 @@ calls.
 
 Onderstaand een voorbeeld van XML data van een gewijzigd profiel.
 
-![](callbackXML.png)
+![](../images/callbackXML.png)
 
 Je kan desgewenst meerdere callback URL’s invoeren door in het callback
 URL overzicht voor **toevoegen** te kiezen.

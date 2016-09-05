@@ -18,7 +18,7 @@ stylesheet wilt gebruiken, en klik vervolgens op het tabblad
 **Voorvertoning**. Selecteer de gewenste stylesheet. Deze zal direct
 toegepast worden op het het formulier, de enquête of feed.
 
-![Preview style or xslt](previewstyleorxslt.jpg)
+![Preview style or xslt](../images/previewstyleorxslt.jpg)
 
 De stylesheet koppelen aan een template of document
 ---------------------------------------------------

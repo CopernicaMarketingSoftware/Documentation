@@ -10,7 +10,7 @@ provide all multiple choice questions of a survey with drop-down menu's,
 leave out headers from all RSS articles or break off all articles after
 4 sentences, etcetera.
 
-![XSLT section](XSLTsection.png)
+![XSLT section](../images/XSLTsection.png)
 
 you can find the actions from this article in the XSLT menu under Style
 

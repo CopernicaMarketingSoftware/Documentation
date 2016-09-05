@@ -62,11 +62,11 @@ De sleutel genereer je in de Publisher. Ga naar het onderdeel
 -   Voer bij domein de domeinnaam (uwdomeinnaam.nl) in
 -   Als subdomein gebruik je het gedeelte zonder .*\_domainkey* (dkim).
     Zie afbeelding\
-     ![](generatekey.png)
+     ![](../images/generatekey.png)
 -   Sla de instellingen op. De DKIM sleutel wordt direct aangemaakt.
 -   Plak de sleutel in het TXT record op het subdomein dat je hiervoor
     hebt aangemaakt. Zie stap twee.\
-     ![](DKIM_keyisgenerated.png)
+     ![](../images/DKIM_keyisgenerated.png)
 
 Je kan het dialoogvenster sluiten. De sleutel blijft beschikbaar wanneer
 je op een later tijdstip terugkeert naar dit venster.
@@ -85,7 +85,7 @@ stap kopieer je de sleutel naar het TXT record op je subdomein.
     Bijvoorbeeld als je bij domein *uwdomeinnaam.nl* hebt ingevuld en
     bij subdomein *dkim*, dan maak je op het domein uwdomeinnaam.nl een
     TXT record aan: *dkim.\_domainkey*.uwdomeinnaam.nl\
-     ![](DKIM-DNS.png)
+     ![](../images/DKIM-DNS.png)
 
 -   Plak in het TXT record de sleutel die je hebt gekopieerd vanuit de
     Publisher (zie stap 1).

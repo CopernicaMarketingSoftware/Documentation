@@ -8,7 +8,7 @@ dezelfde stappen als voor het versturen van een normale bulkmailing. In
 de tweede stap ga je naar het tabblad 'Wanneer' om aan te geven wanneer
 de mail verstuurd moet worden, met welke interval en hoevaak.
 
-![](nlsettingsschedule.png)
+![](../images/nlsettingsschedule.png)
 
 Je voert de datum en het tijdstip in waarop je de eerste mailing wilt
 versturen, en vervolgens hoevaak je de mailing wilt herhalen en met

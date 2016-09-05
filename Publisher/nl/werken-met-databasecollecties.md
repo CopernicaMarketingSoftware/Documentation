@@ -14,7 +14,7 @@ kan je deze gemakkelijk onderhouden.
     noemen wij miniselecties.
 -   Een collectie wordt getoond als een extra tabblad bij het profiel.
 
-![](Documentation/databases-collection-tab.png)\#\#\# Voordelen
+![](../images/databases-collection-tab.png)\#\#\# Voordelen
 
 -   Het toevoegen van collecties maakt je database beter onderhoudbaar
     en meer flexibel.
@@ -34,7 +34,7 @@ Collectie toevoegen aan database
 -   In het venster dat verschijnt vind je vanzelf de optie om een
     collectie toe te voegen.
 
-![](Documentation/databases-add-collection.png)Collectie velden
+![](../images/databases-add-collection.png)Collectie velden
 ---------------------------------------------------------------
 
 Collecties kunnen worden opgebouwd met dezelfde veldtypes die ook

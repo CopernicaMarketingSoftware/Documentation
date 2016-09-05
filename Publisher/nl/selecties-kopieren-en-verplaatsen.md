@@ -12,7 +12,7 @@ Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de
 daadwerkelijk inhoud van de database; er gaan geen (sub)profielen
 verloren.
 
-![](Documentation/copyormoveselection.png)
+![](../images/copyormoveselection.png)
 
 Kies welke actie je wilt uitvoeren
 

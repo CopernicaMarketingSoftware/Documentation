@@ -28,7 +28,7 @@ documenten publiceren:
 Vervang *http://www.eendomein.nl/feed/feed.xml*  met het adres (url) van
 de feed die elders is gepubliceerd.
 
-![](loadfeed1.png)
+![](../images/loadfeed1.png)
 
 *Afbeelding: Load feed tag in the text block rich text editor*
 
@@ -61,4 +61,4 @@ of Atom feeds. Klik vanuit het tekstblok op het type publicatie en
 selecteer in de lijst het gewenste item en eventueel een XLST. Let op,
 de publicatie vervangt de reeds aanwezige content in het tekstblok.
 
-![](loadfeedfunction.png)
+![](../images/loadfeedfunction.png)

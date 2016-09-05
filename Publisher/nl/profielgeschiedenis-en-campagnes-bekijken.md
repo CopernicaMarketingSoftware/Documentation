@@ -23,7 +23,7 @@ geschiedenisinformatie. Als je een profiel of database kopieert, kopieer
 je alleen de profielinformatie. De profiel- en campagnegeschiedenis zal
 niet worden meegekopieerd.
 
-![](Documentation/profilehistory.png)
+![](../images/profilehistory.png)
 
 Individuele campagneresultaten
 ------------------------------

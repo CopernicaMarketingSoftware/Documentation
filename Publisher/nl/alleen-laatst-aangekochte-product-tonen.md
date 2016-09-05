@@ -14,11 +14,11 @@ Maak in de collectie Products een nieuwe miniselectie aan. Noem deze
 SortNewest. Maak een nieuwe regel aan van het conditietype Selecteer en
 sorteer subprofielen.
 
-![](Documentation/kiesconditie.png)
+![](../images/kiesconditie.png)
 
 Gebruik de volgende instellingen:
 
-![](Documentation/miniselectieconditie.png)
+![](../images/miniselectieconditie.png)
 
 **Context**: Je selecteert alleen subprofielen binnen het profiel
 
@@ -39,7 +39,7 @@ collectie bij het profiel te selecteren. Je ziet nu alleen het laatst
 toegevoegde subprofiel. Mocht dit niet het geval zijn, controleer dan of
 de miniselectie al is opgebouwd.
 
-![](Documentation/showsubprofiles.png)
+![](../images/showsubprofiles.png)
 
 ### Stap 2. Email document personaliseren
 

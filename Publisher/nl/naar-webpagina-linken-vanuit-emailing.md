@@ -30,4 +30,4 @@ Als je deze code niet handmatig wilt toevoegen, kun je ook gebruik maken
 van de functie **Hyperlinks uitbreiden** in het **Template** menu onder
 **Emailings**.
 
-![Hyperlink uitbreiden](Documentation/hyperlink-uitbreiden.png)
+![Hyperlink uitbreiden](../images/hyperlink-uitbreiden.png)

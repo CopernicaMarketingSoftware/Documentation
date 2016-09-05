@@ -11,7 +11,7 @@ kunt filteren.
     of meerdere velden die gecombineerd uniek zijn (bijvoorbeeld
     postcode en huisnummer).
 
-![](Documentation/checkonduplicateprofiles.png)
+![](../images/checkonduplicateprofiles.png)
 
 Lage en hoge id's
 -----------------

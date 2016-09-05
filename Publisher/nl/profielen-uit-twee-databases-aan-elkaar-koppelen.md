@@ -40,7 +40,7 @@ verschillende databases.
     een naam (bijvoorbeeld *Referentieveld*) en selecteer de database
     die je wilt koppelen. Laat de standaardwaarde leeg. Klik op
     *Opslaan*. \
-    ![Het referentieveld maken](referentieveld_maken.png)
+    ![Het referentieveld maken](../images/referentieveld_maken.png)
 
 Ieder profiel in de database met bedrijven heeft nu een extra tabblad
 vernoemd naar de database waarin je het referentieveld hebt aangemaakt.
@@ -53,7 +53,7 @@ hebt aangebracht. In dit voorbeeld is dit de database met de bedrijven.
 Exporteer alleen de velden die je nodig hebt bij de import: het veld met
 hierin de bedrijfsnaam, én het ID.
 
-![Exporteren van de bedrijven](multidim_export.png)
+![Exporteren van de bedrijven](../images/multidim_export.png)
 
 **Importeren van de bedrijfsgegevens naar de database met medewerkers**
 -----------------------------------------------------------------------
@@ -66,12 +66,12 @@ en selecteer het exportbestand uit de bedrijfsdatabase.
 -   Koppel het veld *ID* van het importbestand aan het referentieveld in
     de medewerkersdatabase. Dit is geen sleutelveld.\
     ![Velden koppelen, sleutelvelden
-    aanwijzen](import_linking_fields.png)
+    aanwijzen](../images/import_linking_fields.png)
 -   Ga naar het tabblad *Instellingen*. Kies bij type: *zoek naar
     matches op basis van de sleutelvelden. Gevonden profielen moeten
     worden bijgewerkt met een maximum van 999 profielen*. \
     \
-    ![Import instellingen ](import_settings_multidim.png)\
+    ![Import instellingen ](../images/import_settings_multidim.png)\
     \
      Zo zorg je ervoor dat *alle* 999 eventueel bij een bedrijf werkzame
     medewerkers aan hetzelfde bedrijf worden gekoppeld (in plaats van
@@ -90,4 +90,4 @@ medewerkers database; het referentieveld krijgt automatisch de juiste
 gegevens.
 
 ![De medewerkers uit de medewerkersdatabase zijn nu gekoppeld aan het
-bedrijf in de bedrijfsdatabase](multidim_resultaat.png)
+bedrijf in de bedrijfsdatabase](../images/multidim_resultaat.png)

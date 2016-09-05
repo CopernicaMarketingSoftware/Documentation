@@ -42,7 +42,7 @@ datumnotaties bevat, dan kan je overwegen de datums automatisch om te
 zetten. Dit is echter wel foutgevoelig: de datum 03-09-1980 kan immers
 zowel worden geïnterpreteerd als 9 maart 1980 en als 3 september 1980.
 
-![Incompatible data warning](incompatible_data.png)
+![Incompatible data warning](../images/incompatible_data.png)
 
 ### Het importbestand bevat ongeldige datums
 

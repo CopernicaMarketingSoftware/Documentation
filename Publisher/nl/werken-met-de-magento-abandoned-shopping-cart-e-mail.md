@@ -10,7 +10,7 @@ met de namen van de velden in je database en de naam van de collectie.
 De gebruikte velden en selecties worden verderop in dit artikel
 uitgebreid toegelicht.
 
-![abandoned\_email.png](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.image&article=examples.abandonedcarttemplate&language=nl_NL&id=1482)
+![abandoned\_email.png](../images/abandoned_email.png)
 
 Het inladen van de demo data
 ----------------------------
@@ -203,7 +203,7 @@ Zoals je al eerder hebt kunnen lezen, wordt aan de hand van een selectie
 en een miniselectie bepaald of een klant een e-mail zal ontvangen of
 niet.
 
-![selecites.png](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.image&article=examples.abandonedcarttemplate&language=nl_NL&id=1483)
+![selecites.png](../images/selecites.png)
 
 De miniselectie (*RecentAbandonedProducts*) checkt of er in
 de collectie producten aanwezig zijn die in de afgelopen zeven dagen  in

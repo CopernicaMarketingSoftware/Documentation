@@ -6,4 +6,4 @@ De correcte syntax is:
 
 **{fetch url="http://domain.com/currentheadlines.txt"}**
 
-![Fetch tagh](fetchtag.png)
+![Fetch tagh](../images/fetchtag.png)

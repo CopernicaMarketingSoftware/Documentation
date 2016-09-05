@@ -10,7 +10,7 @@ als voor het *document*instellen. Het document neemt automatisch de
 template instellingen over, tenzij je het op documentniveau
 overschrijft.
 
-![](Documentation/personalisatieinstellingen.png)
+![](../images/personalisatieinstellingen.png)
 
 **Taal:**selecteer in welke taal de publicatie is. De taal wordt
 gebruikt voor het weergeven van sommige Smarty functies. Wanneer je

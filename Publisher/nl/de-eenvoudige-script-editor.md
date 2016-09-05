@@ -8,7 +8,7 @@ Met behulp van deze editor vergelijk je gegevens van het
 uitgevoerd. Dit kan dus het uitvoeren van een opvolgactie zijn, maar ook
 het tonen van bepaalde inhoud in een nieuwsbrief.
 
-![](Documentation/eenvoudigeeditor.png)
+![](../images/eenvoudigeeditor.png)
 
 Werken met de eenvoudige script editor
 --------------------------------------

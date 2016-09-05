@@ -17,4 +17,4 @@ Het is niet nodig om inlogcode toe te voegen aan de naam van de
 webpagina. De bedanktpagina wordt automatisch gepersonaliseerd met
 gegevens van de invuller van het webformulier.
 
-![Redirect page](redirectpage.png)
+![Redirect page](../images/redirectpage.png)

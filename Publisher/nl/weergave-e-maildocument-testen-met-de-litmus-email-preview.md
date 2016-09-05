@@ -10,11 +10,11 @@ op eenvoudige wijze screenshots kan ontvangen met de weergave van jouw
 nieuwsbrief in de meest voorkomende e-mailprogramma’s en internet
 browsers.
 
-![Litmus preview](logo-shadow.png) Je vindt deze tool door in een
+![Litmus preview](../images/logo-shadow.png) Je vindt deze tool door in een
 document rechts onderin op de knop 'Toon in verschillende
 e-mailprogramma's' te drukken.
 
-![](navemailpreview.png)\*\*Let op: \*\*er zijn enige kosten verbonden
+![](../images/navemailpreview.png)\*\*Let op: \*\*er zijn enige kosten verbonden
 aan de preview.
 
 Test starten
@@ -44,7 +44,7 @@ volgende programma's en browsers:\*\*
 -   Thunderbird (3.0, 2.0)
 -   Yahoo! mail (3.0, 2.0)
 
-![Email preview](index.png)
+![Email preview](../images/index.png)
 
 Kosten per test
 ---------------
@@ -59,7 +59,7 @@ Vraag en antwoord
 **Afbeelding heeft in het screenshot ineens een zwarte achtergrond. Hoe
 kan dit?**
 
-![](imagetransparancy.png)De betreffende afbeelding is waarschijnlijk
+![](../images/imagetransparancy.png)De betreffende afbeelding is waarschijnlijk
 een GIF afbeelding met transparantie. De transparante delen worden zwart
 weergegeven. Wat je ziet is een exacte vertoning van wat ontvangers die
 van outlook gebruik maken zullen zien.

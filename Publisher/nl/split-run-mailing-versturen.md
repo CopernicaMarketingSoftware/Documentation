@@ -57,7 +57,7 @@ In de bovenste helft van het split-run dialoogvenster staan de
 documenten die worden gebruikt voor de split-run mailing. Klik op
 *'toevoegen'* om documenten toe te voegen. \
 \
-![](splitrun-document-toevoegen.jpg)
+![](../images/splitrun-document-toevoegen.jpg)
 
 Selecteer een document en kies de omvang van de testgroep en de interval
 van versturen van het document.
@@ -67,7 +67,7 @@ van versturen van het document.
 **Interval:**hiermee geef je aan na hoeveel tijd er moet worden
 overgegaan tot de definitieve verzending.
 
-![](splitrun-instellingen.jpg)
+![](../images/splitrun-instellingen.jpg)
 
 -   Als je een document A instelt met een interval van 1 uur, dan wordt
     het document 1 uur voor de definitieve verzending verstuurd.

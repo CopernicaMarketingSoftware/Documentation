@@ -4,7 +4,7 @@ het template, en kan alleen daar worden toegevoegd.
 
 Dit ziet eruit als volgt:
 
-![](imageblocktag.png)
+![](../images/imageblocktag.png)
 
 Gebruik een unieke naam voor ieder afzonderlijk afbeeldingblok dat je
 aan je template toevoegt.

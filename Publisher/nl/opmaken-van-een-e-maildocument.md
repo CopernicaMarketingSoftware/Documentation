@@ -98,7 +98,7 @@ naar het afbeeldingblok.
     voor vrouwelijke nieuwsbriefabonnees (als je het geslacht van je
     ontvangers weet).
 
-![](Documentation/afbeeldingblock.png)
+![](../images/afbeeldingblock.png)
 
 ### Content herhalen met loopblokken
 

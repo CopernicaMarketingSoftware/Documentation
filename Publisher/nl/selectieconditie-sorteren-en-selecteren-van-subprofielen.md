@@ -16,7 +16,7 @@ dan nodig is. Sorteer het beste op numerieke waardes en maak een index
 op het veld waarop je sorteert (je kan het veld indexeren bij de
 veldeigenschappen).
 
-![](soritiongselecting.png)
+![](../images/soritiongselecting.png)
 
 Numeric field
 

@@ -11,7 +11,7 @@ document eerst naar niet-gepersonaliseerde weergave. Klik vervolgens op
 Header toevoegen (direct boven het document). Kies een naam voor de
 header en een waarde.
 
-![customheader](custom_header.png)
+![customheader](../images/custom_header.png)
 
 **Naamgeving custom headers**: om te voorkomen dat de extra headers
 conflicteren met de standaard headers, dienen deze te beginnen met 'X-'.

@@ -34,16 +34,16 @@ Raadpleeg voor meer informatie eventueel de
 [tutorial/documentatie](https://dlvr-me.net/f/10803/PDFlib-blocks-E.pdf)
 van PDF lib (in PDF uiteraard).
 
-![](pdf1.jpg)
+![](../images/pdf1.jpg)
 
 **Image 2.**Some simple text formatting. The output is shown in image 3.
 
-![](pdf2.jpg)
+![](../images/pdf2.jpg)
 
 **Image 3.**Output of text block above
 
-![](pdf3.png)
+![](../images/pdf3.png)
 
 **Image 4.**Some more text formatting
 
-![](pdf4.png)
+![](../images/pdf4.png)

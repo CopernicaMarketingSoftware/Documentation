@@ -31,7 +31,7 @@ de collectie **contactpersonen**, dan wordt deze door de applicatie
 automatisch als zijnde een veld behorende tot deze collectie herkend als
 de column in het importbestand **contactpersonen.voornaam** is geheten.
 
-![Excel bestand opslaan](Documentation/excel-bestand.png)
+![Excel bestand opslaan](../images/excel-bestand.png)
 
 -   Sla de Excel map als tab gescheiden TXT of als CSV bestand op en
     upload het bestand naar Copernica.
@@ -50,7 +50,7 @@ aangemaakt. Wijs daarom altijd (minstens een) sleutelveld aan op
 zowel profiel- als op subprofielniveau.
 
 ![Kolommen linken en sleutelvelden
-kiezen](Documentation/import-dialog-tab1.png)
+kiezen](../images/import-dialog-tab1.png)
 
 Stap 3 - Import instellingen
 ----------------------------

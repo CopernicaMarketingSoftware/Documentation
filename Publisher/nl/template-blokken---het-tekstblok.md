@@ -7,14 +7,14 @@ Voor het toevoegen van een tekstblok gebruik je de tag [text name="naam
 van tekstblok"]. Dit ziet er in de HTML broncode van de template als
 volgt uit:
 
-![](textblockcode.png)
+![](../images/textblockcode.png)
 
 In de blokstructuur worden alle tags uit een template weergegeven.
 Binnen dit venster kan HTML code aan de tag worden toegevoegd om het
 blok een vaste opmaak te geven die doorwerkt op alle onderliggende
 documenten. Ook kan je de naam van de tag aanpassen.
 
-![](documentloop.png)
+![](../images/documentloop.png)
 
 Om de inhoud van de tekstblokken in het document te bewerken, klik je op
 **Bewerkmodus** in de werkbalk onderaan het document. Alle aanwezige

@@ -7,7 +7,7 @@ e-mailtemplate.
 
 Kies vervolgens **Websites**als bestemming
 
-![Copy template](copytemplate.png)
+![Copy template](../images/copytemplate.png)
 
 De andere kant op
 -----------------

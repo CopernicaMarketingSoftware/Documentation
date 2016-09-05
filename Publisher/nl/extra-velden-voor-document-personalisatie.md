@@ -14,7 +14,7 @@ personalisatievelden...**
 -   Vul bij *standaardwaarde*de waarde in die standaard moet worden
     gegeven aan het personalisatieveld.
 
-![add personalization fields](extrapersonalizationfields.png)
+![add personalization fields](../images/extrapersonalizationfields.png)
 
 Het extra personalisatieveld toevoegen aan de HTML broncode
 
@@ -54,7 +54,7 @@ via de de *personalisatie-instellingen*van het document.
     *black*
 -   Ververs het document en aanschouw het resultaat.
 
-![Personalization settings](personalizationsettings.png)
+![Personalization settings](../images/personalizationsettings.png)
 
 Afbeelding - de personalisatieinstellingen van het document, waar je
 extra personalisatievelden kunt vullen met een nieuwe waarde

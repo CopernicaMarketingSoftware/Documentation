@@ -48,7 +48,7 @@ profiel.
 **Creeer**in deze database een **nieuw profiel**en stel deze in als
 **standaardbestemming**.
 
-![](Documentation/customersdatabase.png)
+![](../images/customersdatabase.png)
 
 ### De Offices database
 
@@ -57,7 +57,7 @@ kantoor heeft een eigen profiel met een databaseveld *Area*met hierin de
 unieke code voor het kantoor. Deze code is straks nodig om het profiel
 uit de database *Customers* te koppelen aan het juiste kantoor.
 
-![](Documentation/officesdatabase.png)
+![](../images/officesdatabase.png)
 
 ### De collectie Account
 
@@ -66,7 +66,7 @@ worden per kantoor in een individueel subprofiel de aldaar werkzame
 accountmanagers en hun contactgegevens opgeslagen. Iedere accountmanager
 heeft een unieke code in het collectieveld *AM*.
 
-![](Documentation/collection.png)
+![](../images/collection.png)
 
 Tot zover de inrichting van de databases. Vul de databases en de
 collectie met enige test data. Zorg ervoor dat je straks verschillende
@@ -159,4 +159,4 @@ profile="\$offices.id"}
 
 En het resultaat:
 
-![](result.png)
+![](../images/result.png)

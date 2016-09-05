@@ -5,7 +5,7 @@ onderdeel Stijl.
 Nadat je een bestaande stylesheet hebt geselecteerd in de lijst, worden
 diverse beheerfuncties geactiveerd in het Stijlsheet menu.
 
-![Manage stylesheet ](Stylesheet.png)
+![Manage stylesheet ](../images/Stylesheet.png)
 
 Nieuwe stylesheet aanmaken
 --------------------------

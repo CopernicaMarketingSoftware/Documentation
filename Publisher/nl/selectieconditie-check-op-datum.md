@@ -23,7 +23,7 @@ de selectie dagelijks andere relaties bevatten.
 
 ### Een geautomatiseerde verjaardagsmail.
 
-![](Documentation/datecondition.png)
+![](../images/datecondition.png)
 
 Voor een verjaardagsmail wil je alleen de huidige dag (**vandaag**)
 selecteren.

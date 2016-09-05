@@ -16,7 +16,7 @@ kan worden. Enkele voorbeelden van online locaties:
 
 Kies het scheidingsteken en ga door naar de volgende stap.
 
-![](Documentation/import-from-online-location.png)
+![](../images/import-from-online-location.png)
 
 ### Import instellen
 
@@ -28,7 +28,7 @@ instellen wanneer de import moet starten, en met welke interval je deze
 wilt uitvoeren.
 
 ![The interval tab enables you to set an interval for a scheduled
-import](scheduledimport.png)
+import](../images/scheduledimport.png)
 
 ### Een lopende periodieke import afbreken
 

@@ -13,7 +13,7 @@ Kies eerst de betreffende mailing vanuit de lijst bij mailing
 Statistieken. Gebruik vervolgens de optie **Opvolgacties stoppen...** in
 het menu **Mailings**.
 
-![](Documentation/stop-followup.png)
+![](../images/stop-followup.png)
 
 ### Opvolgacties stoppen door ze te verwijderen
 

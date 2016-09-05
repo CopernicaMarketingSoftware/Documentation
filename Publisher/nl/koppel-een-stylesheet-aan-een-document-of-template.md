@@ -9,7 +9,7 @@ je een stylesheet hebt gekoppeld verschijnt er een extra tabblad
 regels bewerken. **Let op: als je de stijl verandert, heeft dit gevolgen
 voor alle documenten die op basis van deze stylesheet zijn gemaakt.**
 
-![Stijlblokken](Documentation/nl-stylesheet.png)
+![Stijlblokken](../images/nl-stylesheet.png)
 
 Stijlblokken
 ------------

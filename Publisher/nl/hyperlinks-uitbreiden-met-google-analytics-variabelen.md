@@ -16,7 +16,7 @@ Gebruik het formulier in het *Hyperlinks uitbreiden...* dialoogvenster
 vanuit het document of templatemenu om nieuwe variabelen toe te voegen,
 of om bestaande campagnevariabelen te wijzigen/verwijderen.
 
-![](preparelinks.png)
+![](../images/preparelinks.png)
 
 Selecteer '*ook toepassen op de template broncode*’ om de variabelen toe
 te voegen aan hyperlinks uit de template broncode. Let op dat

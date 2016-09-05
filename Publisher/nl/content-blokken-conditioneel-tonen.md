@@ -58,7 +58,7 @@ worden.
 
 `profile.stad == 'Amsterdam' || profile.stad == 'Haarlem';`
 
-![](blockconditioneditor.png)
+![](../images/blockconditioneditor.png)
 
 *Afbeelding - condities instellen bij een content blok, met behulp van
 de eenvoudige script editor*

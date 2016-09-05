@@ -32,18 +32,18 @@ houd dan met de volgende punten rekening.**
     een syntaxfout in staat (TekstSize in plaats van TextSize) zal de
     inhoud van het blok niet worden getoond (je ziet een leeg blok). 
 
-![](Documentation/PDF-edit-textblock.png)
+![](../images/PDF-edit-textblock.png)
 
 Afbeelding: De opmaak van een tekst veranderen
 
-![](Documentation/PDF-edit-text.png)
+![](../images/PDF-edit-text.png)
 
 De cursieve letter is tevens op documentniveau ingesteld, maar als
 standaardwaarde ingesteld in het opties tabblad; alle tekst in het
 contentblok is cursief.
 
-![](Documentation/font-cursief.png)
+![](../images/font-cursief.png)
 
 **Dit komt er uiteindelijk als volgt uit te zien:**
 
-![](Documentation/PDF-resulataat.png)
+![](../images/PDF-resulataat.png)

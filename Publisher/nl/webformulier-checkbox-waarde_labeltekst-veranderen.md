@@ -8,6 +8,6 @@ database, dan kan dit door 2 dubbele punten (::) tussen de twee waardes
 bij de standaardwaarde van het webformulier te plaatsen. Dit doet je
 alsvolgt:
 
-![Show a different value](showdiffferentvalue.png)
+![Show a different value](../images/showdiffferentvalue.png)
 
-![Display a different value](editfieldmpg.png)
+![Display a different value](../images/editfieldmpg.png)

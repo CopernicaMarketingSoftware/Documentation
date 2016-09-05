@@ -10,7 +10,7 @@ Om er zeker van te zijn dat een afbeelding altijd beschikbaar blijft in
 je mailing, kan je er voor kiezen om de externe afbeeldingen op te slaan
 op onze server zonder dat je deze zelf hoeft te uploaden naar Copernica.
 
-![](Documentation/googleimages.png) *Afbeelding: de bestands-URL van een
+![](../images/googleimages.png) *Afbeelding: de bestands-URL van een
 afbeelding gevonden met Google images is zo gekopieerd. Maar bestaat
 deze afbeelding nog over 2 weken?*
 

@@ -8,7 +8,7 @@ op welke datum.
 Kies '**verborgen veld**' bij de veldeigenschappen van het
 formulierveld.
 
-![Creating a hidden field](hiddenfield2.png)
+![Creating a hidden field](../images/hiddenfield2.png)
 ============================================
 
 -   Kies**onzichtbaar veld**om verborgen data mee te sturen in een

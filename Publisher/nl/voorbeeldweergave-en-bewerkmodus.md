@@ -9,7 +9,7 @@ gebruikt.
 -   Klik opnieuw op deze knop om terug te gaan naar *Bewerkmodus*
 -   Blijf een tel zweven over dit menu om extra opties te tonen.
 
-![Edit and preview mode](preview.png)
+![Edit and preview mode](../images/preview.png)
 
 Note: om de documentpersonalisatie te testen, dien je wel een
 [standaardbestemming](https://www.copernica.com/nl/ondersteuning/standaardbestemming-instellen-of-wijzigen)

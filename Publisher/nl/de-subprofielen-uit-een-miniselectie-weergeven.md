@@ -5,4 +5,4 @@ Om de regels en condities van de miniselectie zelf te bekijken of
 wijzigen ga je naar *Database management \>***Selecties beheren**. Klik
 vervolgens op de miniselectie in de lijst.
 
-![View the subprofiles from a miniselection](showsubprofiles.png)
+![View the subprofiles from a miniselection](../images/showsubprofiles.png)

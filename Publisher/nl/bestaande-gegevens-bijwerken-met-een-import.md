@@ -23,7 +23,7 @@ database.
 
 Het import dialoogvenster heeft 4 tabbladen.
 
-![](importer5.png)
+![](../images/importer5.png)
 
 -   In het tabblad **Kolommen** koppel je de importkolommen aan de
     velden in de database.
@@ -71,7 +71,7 @@ een unieke koppeling van gegevens.
 In het onderstaande voorbeeld is het veld *ID* aangewezen als
 sleutelveld.
 
-![](importer5.png)
+![](../images/importer5.png)
 
 ### Instellingen voor de import
 
@@ -81,7 +81,7 @@ tabblad *Instellingen* om de applicatie te vertellen wat deze moet doen
 wanneer op basis van de aangewezen sleutelvelden een overeenkomstig
 profiel is gevonden.
 
-![](importer6.png)
+![](../images/importer6.png)
 
 Kies bij type voor **‘zoek naar matches op basis van de sleutelvelden’**
 

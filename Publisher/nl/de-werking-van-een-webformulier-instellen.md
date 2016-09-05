@@ -13,7 +13,7 @@ De webformulierinstellingen vind je in het *Webformulier* menu.
 -   Ga naar het tabblad *Profielen bewerken*. Kies *Werking wijzigen*om
     de wizard te starten.
 
-![Web form behaviour wizard](webformbehaviour.png)
+![Web form behaviour wizard](../images/webformbehaviour.png)
 
 In de eerste stap van de wizard stel je op wie het formulier betrekking
 heeft. Je hebt hier keuze uit vier opties.
@@ -62,7 +62,7 @@ jou aangegeven sleutelvelden of de invuller al in de database voorkomt.
 Zo ja, dan worden zijn gegevens bijgewerkt. Zo nee, wordt desgewenst een
 profiel nieuw aangemaakt.
 
-![Webform behaviour](behaviour2.png)
+![Webform behaviour](../images/behaviour2.png)
 
 Er zijn meerdere matches gevonden
 ---------------------------------

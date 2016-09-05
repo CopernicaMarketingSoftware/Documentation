@@ -20,7 +20,7 @@ checklist.
 ---------------------------
 
 ![Bulk e-mailing
-verzenden](Copernicacom/nl-massmailing.png "Bulk e-mailing verzenden")
+verzenden](../images/nl-massmailing.png "Bulk e-mailing verzenden")
 
 Je hebt inmiddels een schitterend e-maildocument gemaakt. Het document
 heeft een onderwerp, afzender en afzendadres. Dan kan deze verzonden
@@ -33,7 +33,7 @@ worden. Ga naar '*Mailings*' \> '*Bulkmailing verzenden*'.
 --------------------------
 
 ![Selecteer de
-bestemming](Copernicacom/nl-target-massmailing.png "Selecteer de bestemming")
+bestemming](../images/nl-target-massmailing.png "Selecteer de bestemming")
 
 -   Selecteer de selectie of miniselectie waarin de inschrijvers van de
     nieuwsbrief zijn opgenomen.
@@ -47,7 +47,7 @@ bestemming](Copernicacom/nl-target-massmailing.png "Selecteer de bestemming")
 ------------------------------------------------------------
 
 ![Mailing inroosteren en/of periodiek
-versturen](Copernicacom/nl-schedule-massmailing.png "Mailing inroosteren en/of periodiek versturen")
+versturen](../images/nl-schedule-massmailing.png "Mailing inroosteren en/of periodiek versturen")
 
 Als je de mailing in wilt roosteren voor latere verzending, ga je naar
 het '*Wanneer*' tabblad.

@@ -13,7 +13,7 @@ Linksboven vind je de reguliere headers. Klik op de bestaande invoer om
 deze direct te bewerken. Als er nog geen invoer is, klik je op dezelfde
 plaats om nieuwe invoer toe te voegen.
 
-![headers](Documentation/edit-the-header.png)
+![headers](../images/edit-the-header.png)
 
 E-mail headers personaliseren
 -----------------------------
@@ -133,7 +133,7 @@ Dit uitschrijfgedrag stelt u in bij *Profielen* \> *Databasebeheer*
 We adviseren om altijd een volledige uitschrijfheader mee te sturen.
 Standaard is deze geactiveerd voor nieuwe documenten en templates.
 
-![unsubscribe header](unsubscribe.png)
+![unsubscribe header](../images/unsubscribe.png)
 
 *Afbeelding: het instellen van de prioriteitsheader, met daarnaast de
 uitschrijfheader.*

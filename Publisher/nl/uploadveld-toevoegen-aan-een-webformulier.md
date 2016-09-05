@@ -23,7 +23,7 @@ Geuploade bestanden worden bij het profiel opgeslagen in het tabblad
 Open het webformulier in het onderdeel **Content**. Kies **veld
 toevoegen**en daarna**Bestand uploaden**.
 
-![add upload field](adduploadfield.png)
+![add upload field](../images/adduploadfield.png)
 
 #### Label
 
@@ -59,6 +59,6 @@ tabblad **Bestanden** onder Profielen.
     1 erachter, of de invuller ziet een foutmelding en moet zelf het
     bestand hernoemen voordat hij kan verdergaan.
 
-![Edit the properties of the upload field](edituploadfield.png)
+![Edit the properties of the upload field](../images/edituploadfield.png)
 
 *Afbeelding: de uitgebreide instellingen van het uploadveld*

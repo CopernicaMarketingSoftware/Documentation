@@ -9,7 +9,7 @@ enqueteresultaten'
 
 Dit type conditie is ook beschikbaar voor miniselecties.
 
-![Survey selection](surveyselection.png)
+![Survey selection](../images/surveyselection.png)
 
 Use the condition type **Check on survey results** to create a selection
 based on whether a profile or subprofile has submitted a survey or not.

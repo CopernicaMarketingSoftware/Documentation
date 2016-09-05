@@ -30,7 +30,7 @@ aangepast zodat een gebruiker automatisch wordt ingelogd.\
  Deze functie kan worden gevonden in de template, het document of
 webpagina-menu, onder de noemer **Hyperlinks uitbreiden**...
 
-![Add personalization code](prepareurl.png)
+![Add personalization code](../images/prepareurl.png)
 
 ### Inlogcode weer verwijderen
 

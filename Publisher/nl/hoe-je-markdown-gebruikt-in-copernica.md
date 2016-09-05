@@ -12,7 +12,7 @@ het pop-up-scherm met de editor zie je zowel in de *Beknopte* als de
 *Uitgebreide editor* dit drop-down-menu staan:
 
 ![Maak gebruik van markdown in
-Copernica](Documentation/markdown.png "Maak gebruik van markdown in Copernica")
+Copernica](../images/markdown.png "Maak gebruik van markdown in Copernica")
 Selecteer hier *markdown* om het artikel te bewerken in markdown.
 
 Hoe werkt markdown?

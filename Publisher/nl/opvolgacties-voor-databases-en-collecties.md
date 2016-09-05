@@ -42,7 +42,7 @@ veldwaarden die je hier opgeeft.
 Hier stel je in hoe lang na de Oorzaak, de opvolgactie in werking moet
 treden. Bij een directe actie is dat uiteraard 0 minuten.
 
-![Database opvolgacties](Documentation/database-opvolgacties.png)
+![Database opvolgacties](../images/database-opvolgacties.png)
 
 Actie
 -----

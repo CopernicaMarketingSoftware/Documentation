@@ -17,7 +17,7 @@ Het is aldus mogelijk om
 -   Een kopie te maken van een selectie in dezelfde database
 -   Een selectie te kopieren naar een andere database
 
-![ENcopydatabase.png](http://development.copernica.nl/index.php?pxc=113251&current=help&pxd=.p.help.image&article=profiles.dialogs.copy&language=english&id=1132)
+![ENcopydatabase.png](../images/ENcopydatabase.png)
 
 ### Een selectie kopieren
 

@@ -14,7 +14,7 @@ afbeeldingen naartoe kunt uploaden.
 
 Ook gekoppelde CSS bestanden hebben een eigen bestandenmap.
 
-![Web form text block](webformtextblock.png)
+![Web form text block](../images/webformtextblock.png)
 
 Afbeelding - *Het webformulierveld 'Teksblok' maakt het mogelijk
 afbeeldingen en andere content te tonen onder of boven andere

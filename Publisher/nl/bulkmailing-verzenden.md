@@ -42,7 +42,7 @@ De bestemming van de mailing instellen
 
 Voer optioneel een omschrijving in.
 
-![](Documentation/NL-bulk-inroosteren.png)
+![](../images/NL-bulk-inroosteren.png)
 
 Tijdstip van verzenden
 ----------------------
@@ -56,7 +56,7 @@ Ga naar het tabblad **Wanneer** om de datum en tijd van de verzending te
 bepalen. Ook kan je in dit tabblad bepalen hoevaak de mailing herhaald
 moet worden en met welke interval.
 
-![](Documentation/NL-bulk-inroosteren.png)
+![](../images/NL-bulk-inroosteren.png)
 
 [Meer lezen over het inroosteren van
 mailings](./de-verzending-van-een-mailing-periodiek-inroosteren-voor-later.md)
@@ -67,7 +67,7 @@ Extra instellingen voor bulkmailings
 Bepaal de instellingen voor de verzending. Deze zijn standaard zo
 ingesteld dat ze volstaan voor de meeste gebruikers.
 
-![](Documentation/NL-bulk-opties.png)
+![](../images/NL-bulk-opties.png)
 
 **Types**: Verzend alleen de HTML versie, alleen platte tekst of beiden.
 In het laatste geval wordt de platte tekst getoond wanneer een ontvanger
@@ -114,7 +114,7 @@ resultaten, is het beter dat je volledig schoon door de controle komt.
 Krijg je een waarschuwing, maar weet je niet hoe je deze kan verhelpen?
 Raadpleeg dan het artikel over de issue checker.
 
-![](Documentation/NL-bulk-issuechecker.png)
+![](../images/NL-bulk-issuechecker.png)
 
 Overzicht van de instellingen
 -----------------------------
@@ -124,4 +124,4 @@ even te doorlopen. Nadat je dit hebt gedaan kan je de mailing gaan
 versturen. Zodra je de opdracht hebt gegeven en bevestigd, zal de
 mailing direct beginnen met versturen.
 
-![](Documentation/NL-bulk-overzicht.png)
+![](../images/NL-bulk-overzicht.png)

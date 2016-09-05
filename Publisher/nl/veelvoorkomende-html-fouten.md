@@ -15,7 +15,7 @@ gepersonaliseerd. Selecteer de checkbox onderin het venster om het
 document in zowel gepersonaliseerde als niet-gepersonaliseerde modus te
 controleren.
 
-![](htmlerrors.png)
+![](../images/htmlerrors.png)
 
 Document check dialog window. Click on the **errors and warnings
 button** below the document to open the dialog window.

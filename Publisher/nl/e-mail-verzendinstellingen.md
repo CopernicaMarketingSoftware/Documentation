@@ -17,7 +17,7 @@ domein een geldig *MX record*bestaan dat verwijst naar *mailservers*met
 het *IP adres*dat wordt getoond in het dialoogvenster. De ingevoerde
 domeinnaam mag geen *CNAME*zijn.
 
-![Envelope settings](emaildeliverysettings.png)
+![Envelope settings](../images/emaildeliverysettings.png)
 
 Picserver domain
 ----------------
@@ -119,4 +119,4 @@ Verder kan het geen kwaad om TLS te gebruiken. Het zal de deliverability
 naar partijen die de techniek niet ondersteunen ook niet verslechteren.
 Maar voor normale gebruikers is het de facto een overbodige instelling.
 
-![](emaildeliverysettings2.png)
+![](../images/emaildeliverysettings2.png)

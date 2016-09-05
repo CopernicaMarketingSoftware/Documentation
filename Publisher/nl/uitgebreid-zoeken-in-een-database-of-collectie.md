@@ -3,7 +3,7 @@ gebruiken die altijd zichbaar is boven de geopende database. Om meer
 gedetailleerd te zoeken gebruik je de uitgebreide zoekfunctionaliteit in
 het **Huidige weergave** menu.
 
-![Advanced search](Advanced%20search.png)
+![Advanced search](../images/Advanced%20search.png)
 
 **Selectie:** Kies de database/selectie/collectie/miniselectie
 waarbinnen je wilt zoeken.**\

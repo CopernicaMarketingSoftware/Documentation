@@ -15,7 +15,7 @@ Het bestand is opgebouwd uit regels en kolommen.
 Onderstaand een schermafbeelding van een correct opgemaakt importbestand
 in Excel.
 
-![Import file ](excelimportfile.png)
+![Import file ](../images/excelimportfile.png)
 
 Importbestand met profielen en subprofielen
 -------------------------------------------
@@ -43,7 +43,7 @@ Wanneer het onderstaande bestand wordt geimporteerd, met het veld
 *Email*als sleutelveld, dan zal bij john.johnson@something.com twee
 subprofielen worden toegevoegd aan de collectie *Products*
 
-![](Documentation/importer12.png)
+![](../images/importer12.png)
 
 ### Bestand omzetten naar een tabgescheiden bestand
 

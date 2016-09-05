@@ -7,7 +7,7 @@ We onderscheiden hierbinnen
 -   sms-mailings
 -   fax-mailings
 
-![](Documentation/condition-emailresults.png)
+![](../images/condition-emailresults.png)
 
 Een verstuurde mailing betreft zowel bulkmailings, als transactionele
 (individuele mails) en test mails.

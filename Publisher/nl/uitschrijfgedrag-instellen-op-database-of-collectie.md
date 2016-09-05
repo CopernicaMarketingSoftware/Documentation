@@ -15,7 +15,7 @@ Het uitschrijfgedrag kan op een aantal manieren geactiveerd worden:
 -   Wij ontvangen een e-mail op ons abuse adres.
 
 ![unsubscribe
-behaviour.png](Documentation/dialog_unsubscribe_options.png)
+behaviour.png](../images/dialog_unsubscribe_options.png)
 
 Kies welke reactie gepast is:
 

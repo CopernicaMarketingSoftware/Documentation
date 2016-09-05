@@ -12,7 +12,7 @@ kun je kiezen uit *http, https, ftp* en het *ftps* protocol.
 -   http://www.domein.nl/map/bestand.txt
 -   ftps://gebruikersnaam:wachtwoord@hostnaam/map/bestand.txt
 
-![](Documentation/online-locatie.png)
+![](../images/online-locatie.png)
 
 Geef aan hoe de kolommen van het importbestand moeten worden herkend
 (tab, komma of puntkomma). Klik op *Bestand uploaden* en ga verder met

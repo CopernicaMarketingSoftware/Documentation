@@ -24,7 +24,7 @@ opvolgacties die aan elkaar gekoppeld zijn. Vanuithieruit kan je
 vanzelfsprekend ook opvolgacties toevoegen of bewerken.
 
 ![Stel opvolgacties in met de follow-up
-manager](Copernicacom/nl-opvolgacties.png "Stel opvolgacties in met de follow-up manager")
+manager](../images/nl-opvolgacties.png "Stel opvolgacties in met de follow-up manager")
 
 Enkele voorbeelden waarbij de follow-up manager wel héél erg goed van
 pas komt:
@@ -50,7 +50,7 @@ Campagnes inroosteren voor latere verzending
 --------------------------------------------
 
 ![Automatisch je e-mailcampagnes
-verzenden](Copernicacom/nl-automatisch.png "Automatisch je e-mailcampagnes verzenden")
+verzenden](../images/nl-automatisch.png "Automatisch je e-mailcampagnes verzenden")
 
 E-mailings kan je direct versturen, maar je kan ze ook inroosteren voor
 latere verzending. Zo kan je bij een e-mailing bijvoorbeeld rekening

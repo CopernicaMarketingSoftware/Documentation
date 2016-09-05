@@ -14,7 +14,7 @@ Je vindt deze functionaliteit in het onderdeel Websites.
 
 Je vindt deze functionaliteit in het menu *Webpagina*(helemaal onderin)
 
-![Webformulier genereren](webformuliergenereren.png)
+![Webformulier genereren](../images/webformuliergenereren.png)
 
 Kies het type formulier dat je wilt genereren
 

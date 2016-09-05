@@ -14,13 +14,13 @@ Tabellen worden het beste ondersteund door de meeste e-mail programma’s
 dus is het aan te raden om de layout volledig uit tabellen te laten
 bestaan in plaats van gepositioneerde ‘divs’.
 
-![tables1.png](htmltemplatetable.png)
+![tables1.png](../images/htmltemplatetable.png)
 
 **Tip:**Gebruik altijd een aparte tabel om de boel bij elkaar te houden.
 Zo voorkom je dat er onwenselijke ruimte ontstaat tussen de overige
 tabellen.
 
-![htmltabelopbouw.png](htmltemplatetable2.png)
+![htmltabelopbouw.png](../images/htmltemplatetable2.png)
 
 Voeg CSS altijd direct toe aan het HTML element
 -----------------------------------------------
@@ -38,14 +38,14 @@ attributen](http://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.h
 **Niet juist:** de CSS block element stijlregels zijn in de header
 opgenomen. Dit wordt genegeerd door veel e-mailprogramma's
 
-![cssblockstyle.png](donotuseblock.png)
+![cssblockstyle.png](../images/donotuseblock.png)
 
 **Zeer zeker wel juist:** De stijlregels zijn direct aan de HTML tags
 toegevoegd (inline style). De meeste inline style regels kunnen worden
 omgezet, behalve de zogenoemde pseudo elementen (herkenbaar aan de naam
 van het element, gevolgd door een dubbele punt teken, zoals *a:link*).
 
-![css-blocktoinline.png](useattibutes.png)
+![css-blocktoinline.png](../images/useattibutes.png)
 
 De software beschikt over een functie om alle CSS uit een header, of een
 gekoppeld stylesheet, automatisch om te zetten naar inline CSS. Zo
@@ -74,11 +74,11 @@ Een andere manier om margins en padding te simuleren is het gebruik van
 
 Onderstaande HTML laat zien hoe je met borders een padding kan simuleren
 
-![paddingalternative.png](borderright.png)
+![paddingalternative.png](../images/borderright.png)
 
 Zal resulteren in het volgende:
 
-![paddignalternative2.png](cssproperties2.png)
+![paddignalternative2.png](../images/cssproperties2.png)
 
 ### Vermijd het gebruik van achtergrondafbeeldingen
 
@@ -114,7 +114,7 @@ hyperlinks manipuleren. Met het gebruik van pseudo classes kun je in dit
 voorbeeld bijvoorbeeld de onderstreping van een hyperlink verwijderen.
 Dit is alleen niet mogelijk in e-mail templates.
 
-![linkstylinginline.png](pseudoclasses.png)
+![linkstylinginline.png](../images/pseudoclasses.png)
 
 ### Gebruik websafe lettertypen
 
@@ -126,7 +126,7 @@ houden, raden wij het gebruik van Arial, Verdana, Georgia of Trebuchet
 MS aan. Gebruik alsjeblieft niet (of eigenlijk nooit) Comic Sans, tenzij
 je natuurlijk limonade verkoopt.
 
-![do not use comic sans.jpg](lemonadestand.jpg)
+![do not use comic sans.jpg](../images/lemonadestand.jpg)
 
 Een lijst met web save lettertypes kan hier gevonden worden:
 http://dustinbrewer.com/fonts-on-the-web-and-a-list-of-web-safe-fonts/
@@ -142,14 +142,14 @@ helaas ook niks aan doen.
 Normaal zouden we een border direct aan een afbeelding koppelen.
 Bijvoorbeeld zo:
 
-![](knownproblem1.png)
+![](../images/knownproblem1.png)
 
 Dit is een bekend probleem. Het kan opgelost worden door de afbeelding
 in een container te zetten, en dan deze container een border te geven.
 In het onderstaande voorbeeld wordt er gebruik gemaakt van een
 container, maar dit kan natuurlijk ook in een div element.
 
-![](knownproblem2.png)
+![](../images/knownproblem2.png)
 
 ### Witruimte onder elke afbeelding in Hotmail
 
@@ -158,7 +158,7 @@ te voegen. Dit kan worden opgelost door het toevoegen van de volgende
 styling aan de header van de e-mail (Hotmail verwijderd nooit de header
 uit je HTML-template).
 
-![Witruimte onder elke afbeelding in Hotmail](whitespace.png)
+![Witruimte onder elke afbeelding in Hotmail](../images/whitespace.png)
 
 ### Als er problemen zijn met de manier waarop dit bericht wordt weergegeven...
 
@@ -177,7 +177,7 @@ natuurlijk graag helpen, komt hier deze geheime code:
 
 en hier is het resultaat!
 
-![](outlookpic.png)
+![](../images/outlookpic.png)
 
 Extra tips:
 -----------

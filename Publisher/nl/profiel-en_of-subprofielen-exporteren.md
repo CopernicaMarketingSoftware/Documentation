@@ -6,7 +6,7 @@ downloaden of laten e-mailen.
 
 Je vindt de exporteerfunctie in het menu *Huidige weergave*
 
-![](exportdiallog.png)
+![](../images/exportdiallog.png)
 
 -   Kies de database/collectie/selectie/miniselectie die je wilt
     exporteren

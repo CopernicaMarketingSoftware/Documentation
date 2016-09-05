@@ -30,7 +30,7 @@ gemaakt en voldoet aan de volgende eisen:
 ---------------------------------
 
 ![Database
-importeren](Copernicacom/database-importeren.png "Database importeren")
+importeren](../images/database-importeren.png "Database importeren")
 
 Selecteer de database waarnaartoe je de gegevens wilt importeren. Kies
 vervolgens voor Importeren / exporteren in het *Huidige* weergave menu.
@@ -58,9 +58,7 @@ kolommen uit het importbestand koppelen aan de databasevelden.
     **ontbind**
 
 ![Koppelen van kolommen aan
-databasevelden](Copernicacom/velden-koppelen.png "Koppelen van kolommen aan databasevelden")
-\
-\
+databasevelden](../images/velden-koppelen.png "Koppelen van kolommen aan databasevelden")
 
 Ontbrekende databasevelden kunnen direct worden gecreëerd door op ‘zoek
 of creëer veld’ te drukken. Standaard is een databaseveld van het type

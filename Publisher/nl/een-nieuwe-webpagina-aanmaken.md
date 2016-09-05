@@ -4,7 +4,7 @@ menu een nieuwe pagina aanmaken.
 
 Er is geen limiet aan het aantal webpagina's dat je kan aanmaken.
 
-![Add a page](Addpage.png)
+![Add a page](../images/Addpage.png)
 
 Selecteer in het rechteroverzicht de website waaronder je de nieuwe
 pagina wilt aanmaken
@@ -21,4 +21,4 @@ pagina wilt aanmaken
 6.  Klik onder de geopende pagina op *Bewerkmodus* om de pagina te
     bewerken
 
-![](documentview.png)
+![](../images/documentview.png)

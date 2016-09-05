@@ -12,7 +12,7 @@ selectie). \
  Je kan bij het maken van selecties kiezen uit een groot aantal
 conditietypen. Onderstaand worden deze beknopt toegelicht.
 
-![](selectionstypes.png)
+![](../images/selectionstypes.png)
 
 Afbeelding: bij het maken van een selectiecondities kies je het
 conditietype

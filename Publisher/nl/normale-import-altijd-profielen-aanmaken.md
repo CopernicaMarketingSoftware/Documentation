@@ -23,7 +23,7 @@ het importbestand koppelen aan de kolommen in de database.
 -   Om een verkeerd gekoppelde kolom weer te ontkoppelen, drukt u op
     ontbind
 
-![Columns tab](importer3.png)
+![Columns tab](../images/importer3.png)
 
 als er geen corresponderende velden worden gevonden, dan kunnen deze
 automatisch worden gekoppeld
@@ -41,7 +41,7 @@ kunne uiteraard ook op een later moment worden gewijzigd vanuit
 In een tekstveld kunnen alle soorten waardes worden opgeslagen, dus ook
 alphanumerieke, datums, Chinese tekens en wiskundige formules.
 
-![](importer4.png)
+![](../images/importer4.png)
 
 de velden zijn gekoppeld. De import kan gestart worden
 
@@ -75,7 +75,7 @@ verdere import.
 
 Klik op **Start import**om de import te starten.
 
-### ![](fimishedimport.png)
+### ![](../images/fimishedimport.png)
 
 wanneer de import is voltooid zijn de geimporteerde profielen
 beschikbaar in de database

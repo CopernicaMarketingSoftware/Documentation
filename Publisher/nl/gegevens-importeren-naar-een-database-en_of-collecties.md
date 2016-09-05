@@ -31,7 +31,7 @@ database aanmaken.
     importeren/exporteren**’
 -   Kies **Importeren.**
 
-![](afb1.png)
+![](../images/afb1.png)
 
 **Je belandt nu in het venster waar je gevraagd wordt het
 gegevensbestand te uploaden (of een online locatie op te geven waar het
@@ -44,7 +44,7 @@ bestand staat)**.
     applicatie hiermee klaar is verschijnt het scherm waar je de import
     verder kunt instellen.
 
-![](afb2.png)
+![](../images/afb2.png)
 
 ### **Importeren van gegevens**
 

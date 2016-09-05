@@ -52,13 +52,13 @@ profiel.
 Je maakt in de collectie eerst een miniselectie 'broodrooster' waarmee
 je de subprofielen filtert op product 'broodrooster'
 
-![](Documentation/toaster3.png)
+![](../images/toaster3.png)
 
 Vervolgens maak je een selectie die stelt dat het profiel minstens 1 en
 maximaal 999 subprofielen moet hebben in de miniselectie 'kocht
 broodrooster'
 
-![](Documentation/toaster2.png)
+![](../images/toaster2.png)
 
 Sla de selectie op. Je kan nu een mailing inroosteren naar deze
 selectie.
@@ -85,7 +85,7 @@ Zij hebben dikwijls al een messenset.
     regel aan, waarmee je alle profielen niet in selectie 'kocht
     messenset' toevoegt.
 
-### ![](Documentation/toaster5.png)
+### ![](../images/toaster5.png)
 
 Sla de selectie op. Je kan nu een mailing sturen naar klanten die wel
 een broodrooster kochten, maar nog geen messenset. Klanten die al een

@@ -10,4 +10,4 @@ ZIP-archief](http://www.pepermunt.net/software/zip-bestand-maken.html "ZIP-archi
 met het HTML bestand en de gebruikte afbeeldingen. Het HTML-bestand en
 de afbeeldingen moeten zich in dezelfde map bevinden. Importeer het
 bestand via *Template* menu *\> Template importeren/exporteren\
-*![Exporting a template](importexporttemplate.png)
+*![Exporting a template](../images/importexporttemplate.png)

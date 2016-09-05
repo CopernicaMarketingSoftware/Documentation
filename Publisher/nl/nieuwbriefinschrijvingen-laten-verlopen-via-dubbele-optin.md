@@ -72,7 +72,7 @@ volgende opties voorgedefinieerd:
 -   Ja, niet bevestigd
 -   Ja, bevestigd
 
-![](afbeelding.png)
+![](../images/afbeelding.png)
 
 Stap 2. Reserveer een drietal webpagina’s
 -----------------------------------------
@@ -99,7 +99,7 @@ Plaats het webformulier op webpagina 1, en zorg dat de vervolgpagina van
 het webform een webpagina is waarop je vermeldt dat een bevestigingsmail
 is verstuurd naar {\$emailadres}.
 
-![](afbeelding2.png)
+![](../images/afbeelding2.png)
 
 Stap 4. Koppel een opvolgactie aan het webformulier
 ---------------------------------------------------
@@ -115,7 +115,7 @@ het e-maildocument met hierin (straks) de bevestigingslink.
 Stap 5. Het e-maildocument met bevestigingslink
 -----------------------------------------------
 
-![](afbeelding3.png)
+![](../images/afbeelding3.png)
 
 Creëer een nieuw e-maildocument (of bewerk een bestaande). De
 belangrijkste voorwaarde is dat dit document een hyperlink heeft die

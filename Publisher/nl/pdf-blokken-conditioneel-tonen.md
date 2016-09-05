@@ -12,7 +12,7 @@ valideert. Je kunt zoveel conditieregels toevoegen als je wilt. De
 totale conditie evalueert alleen naar ‘waar’ wanneer alle ingestelde
 condities naar 'waar' evalueren.
 
-![](Documentation/PDFcondities.jpg)
+![](../images/PDFcondities.jpg)
 
 ### JavaScript condities
 

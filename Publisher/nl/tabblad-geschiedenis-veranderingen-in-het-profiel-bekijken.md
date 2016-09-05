@@ -9,4 +9,4 @@ wijzigingen, of om selecties te maken op basis van wijzigingen.
 Let op, bij het kopieren van een profiel, wordt de profielgeschiedenis
 niet meegekopieerd.
 
-![Profile history](historyprofile.png)
+![Profile history](../images/historyprofile.png)

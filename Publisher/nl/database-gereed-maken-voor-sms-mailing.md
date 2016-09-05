@@ -10,7 +10,7 @@ of
 collectieveld](./database-en-collectie-veldtypes.md)
 van het type telefoonnummer -\> **SMS**
 
-![](Documentation/telefoonveld-sms.png)
+![](../images/telefoonveld-sms.png)
 
 Selectie authoriseren voor sms-bulkmailings
 -------------------------------------------

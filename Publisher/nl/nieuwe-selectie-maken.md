@@ -15,7 +15,7 @@ selectie heeft altijd minstens een conditie.
 Klik op *Voeg een nieuwe 'EN' conditie toe aan een nieuwe 'OF' regel*om
 een conditie toe te voegen.
 
-![](Documentation/selectionaddcondition.png)
+![](../images/selectionaddcondition.png)
 
 Je krijgt nu een lijst met conditietypes te zien, waaruit je er eenje
 mag kiezen.
@@ -25,7 +25,7 @@ mag kiezen.
 -   Nadat je de conditie hebt opgeslagen wordt de conditie weergegeven
     in het overzicht van condities.
 
-![](Documentation/selectieconditiesoverzicht.png)
+![](../images/selectieconditiesoverzicht.png)
 
 Van hieruit kan je een nieuwe **EN conditie** toevoegen aan de conditie
 die je zojuist hebt gemaakt. Het profiel moet dan aan beide condities

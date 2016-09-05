@@ -35,7 +35,7 @@ contactgeschiedenis, en enquêteresultaten).
 Bij het maken van de selectie ziet je handige icoontjes om te
 verduidelijken welke profielen in uw selectie komen.
 
-![Select single or duplicate profiles](removedoublesselections.png)
+![Select single or duplicate profiles](../images/removedoublesselections.png)
 
 Wees altijd voorzichtig met weggooien. Maak bijvoorbeeld eerst een
 export van de gegevens en bewaar deze een tijdje

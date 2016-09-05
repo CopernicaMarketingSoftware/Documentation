@@ -36,7 +36,7 @@ Ter voorbereiding heb je nodig:
     ‘Stijl’ en koppelt u aan de template via het template menu \>
     **Stijl koppelen.**\
 
-![](1.png)
+![](../images/1.png)
 
 Open het e-maildocument waaraan je de stijlregels wilt koppelen.\
  We beginnen in het bovenliggende template (klik op het tabblad
@@ -45,7 +45,7 @@ HTML-element dat de tekstblok bevat (met een class attribuut verwijst je
 naar een regel uit een stylesheet). In het voorbeeld geven we de
 tabel-cel (td) de class ‘header’.
 
-![](2.png)
+![](../images/2.png)
 
 Vervolgens kan je in een extern stylesheet de class ‘header’ de
 eigenschap geven dat de lettergrootte altijd 16 pixels moet zijn. Koppel
@@ -69,23 +69,23 @@ op**Bewerkmodus**linksonder het document)
 
 Typ een header, en kies **Kop 1** uit het opmaak menu.
 
-![](4.png)
+![](../images/4.png)
 
 Sla de wijzigingen op en sluit het dialoogvenster.
 
 Ga terug naar **voorbeeldweergave**. De header zal nu 16 pixels zijn en
 een mooie blauwe letter hebben.
 
-![](5.png)
+![](../images/5.png)
 
 Op dezelfde wijze kan je bijvoorbeeld alle hyperlinks in een paragraaf
 opmaken:
 
-![](6.png)
+![](../images/6.png)
 
 En zo ziet de broncode eruit van het document als u deze als e-mail
 heeft verzonden. De titel heeft de eigenschappen gekregen die u aan de
 class header heeft gegeven. De hyperlink in de paragraaf is vetgedrukt
 en is niet onderstreept.
 
-![](7.png)
+![](../images/7.png)

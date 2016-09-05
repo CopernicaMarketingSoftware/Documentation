@@ -30,7 +30,7 @@ template importeren vanaf je computer.
     e-mailtemplate kan zonder problemen worden bewerkt / aangepast. Dit
     heeft geen invloed op de originele e-mailtemplate.
 
-![](newtemplate.png)
+![](../images/newtemplate.png)
 
 Template broncode bewerken
 --------------------------

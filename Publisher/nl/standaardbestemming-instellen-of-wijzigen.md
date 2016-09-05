@@ -30,4 +30,4 @@ Vanuit het *Welkom gebruikersnaam*\> Standaardbestemming menu
 rechtsboven, kan je te allen tijde zien welk profiel of subprofiel als
 standaardbestemming wordt gebruikt.
 
-![Test destination dialog](createtestdestination.png)
+![Test destination dialog](../images/createtestdestination.png)

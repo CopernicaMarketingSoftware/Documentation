@@ -12,7 +12,7 @@ document ook individueel verstuurd mag worden.
 
 Kies het document dat je wilt versturen, en klik op**Volgende**
 
-![Individual mail](individual_mail.png)
+![Individual mail](../images/individual_mail.png)
 
 -   Kies de bestemming. Dit kan het profiel zijn, maar eventueel ook een
     onderliggend subprofiel.

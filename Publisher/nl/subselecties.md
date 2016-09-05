@@ -14,7 +14,7 @@ subselectie wil aanbrengen.
 In de afbeelding hieronder zie je een selectie **Mailinglist**, met
 hieronder twee subselecties: **Female** en **Male**.
 
-![](Documentation/selections-create-subselection.png)
+![](../images/selections-create-subselection.png)
 
 ### Subselecties tonen
 
@@ -23,4 +23,4 @@ door op het plusje bij de selectie te klikken.
 
 Klik op de subselectie om de profielen uit de subselectie weer te geven.
 
-![](Documentation/selections-subselection-overview.png)
+![](../images/selections-subselection-overview.png)

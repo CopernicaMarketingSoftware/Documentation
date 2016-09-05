@@ -6,7 +6,7 @@ is geklikt.
 De formule die Copernica hanteert voor het berekenen van de CTR ziet er
 alsvolgt uit:
 
-![Click through rate](CTR.png)
+![Click through rate](../images/CTR.png)
 
 **Let op**: voor het berekenen van de click through rate worden de
 dominante resultaten van een e-mail campagne gebruikt.

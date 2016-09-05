@@ -56,7 +56,7 @@ Kies het veld en hoe deze moet worden vergeleken met de waarde. De
 vergelijkingen behoeven geen uitleg. Scroll naar beneden voor meer
 informatie over reguliere expressies.
 
-![NL\_databaserestrictioviolatie.png](https://beta.copernica.nl/index.php?pxc=113251&current=help&pxd=.p.help.image&article=profiles.dialogs.editfields.constraints&language=dutch&id=1148)
+![NL\_databaserestrictioviolatie.png](../images/NL_databaserestrictioviolatie.png)
 
 Afb. Waarschuwing in profieloverzicht wanneer veldwaarde wordt gewijzigd
 naar een waarde die niet is toegestaan door een databaseresrictie\
@@ -70,7 +70,7 @@ de waarde in het veld *emailadres*mag maar een keer voorkomen. Selecteer
 twee velden wanneer de combinatie van deze velden uniek moet zijn
 (bijvoorbeeld Straat en Adres).
 
-![nl-restricties-dubbel.png](https://beta.copernica.nl/index.php?pxc=113251&current=help&pxd=.p.help.image&article=profiles.dialogs.editfields.constraints&language=dutch&id=1149)
+![nl-restricties-dubbel.png](../images/nl-restricties-dubbel.png)
 
 **Het tijdelijk uitschakelen van databaserestricies of restrictieregels**
 -------------------------------------------------------------------------

@@ -11,7 +11,7 @@ PDF document importeren
 -   Selecteer de template die je wilt gebruiken, en kies vervolgens voor
     de importeerfunctie in het menu *Template*.
 
-![](Documentation/importdocument.png)
+![](../images/importdocument.png)
 
 Document maken
 --------------
@@ -20,7 +20,7 @@ Je importeert het PDF-bestand als template. Je dient dus nog een
 document aan te maken onder de template. Dit doe je vanuit het menu
 *Document*.
 
-![](Documentation/PDFmakedocument.png)
+![](../images/PDFmakedocument.png)
 
 Pagina's toevoegen
 ------------------
@@ -31,13 +31,13 @@ welke pagina's je wilt opnemen in het uiteindelijke document.
 Je doet dit door de pagina te selecteren in de lijst, en vervolgens op
 '*naar document*' te drukken.
 
-![](Documentation/naardocument.png)
+![](../images/naardocument.png)
 
 Het PDFlib block zal nu rood gearceerd zijn. Klik op het gearceerde deel
 om de inhoud van het blok te bewerken, of klik op '*blokken bewerken*'
 onderin beeld.
 
-![](Documentation/inhoudblokbewerken.png)
+![](../images/inhoudblokbewerken.png)
 
 Let op, na opslaan zijn je wijzigingen meestal niet direct zichtbaar.
 Dit komt omdat het document op een externe server van PDFlib wordt

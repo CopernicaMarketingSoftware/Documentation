@@ -21,7 +21,7 @@ Het webformulier maken
 -   Kies bij **algemene instellingen**de instellingen zoals hieronder
     weergegeven. Ga vervolgens naar het tabblad **Profielen bewerken**
 
-![](Documentation/remove1.png)
+![](../images/remove1.png)
 
 -   Kies in de eerste stap dat het formulier werkt met alle profielen
     die overeenkomen met de sleutelvelden.
@@ -30,7 +30,7 @@ Het webformulier maken
     verwijderd.\
      Vul daarom bijvoorbeeld een 5 in (lijkt ons een veilige marge).
 
-![](Documentation/remove3.png)
+![](../images/remove3.png)
 
 -   Ga verder naar de volgende stap, en kies hier dat het profiel moet
     worden **verwijderd**.

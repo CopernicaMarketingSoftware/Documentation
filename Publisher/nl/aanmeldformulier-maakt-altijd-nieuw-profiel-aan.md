@@ -27,7 +27,7 @@ Ga naar het webformulier menu, en kies **Instellingen...**
 In het tabblad **Algemene instellingen** kies je voor de volgende
 instellingen:
 
-![](Documentation/webformssettings1.png)
+![](../images/webformssettings1.png)
 
 -   **Database**: de database waarmee het formulier moet werken. Hier is
     automatisch de database geselecteerd die je bij het aanmaken van het
@@ -46,15 +46,15 @@ instellingen:
 Ga naar het tabblad **Profielen bewerken...**doorloop de wizard met de
 volgende instellingen:
 
-![](Documentation/formssettings2x.png)
+![](../images/formssettings2x.png)
 
 Verder..
 
-![](Documentation/formssettings3x.png)
+![](../images/formssettings3x.png)
 
 2 keer verder klikken...
 
-![](Documentation/formssettings4x.png)
+![](../images/formssettings4x.png)
 
 Je hebt nu het einde van de wizard bereikt. Klik op **Afronden** om de
 instellingen op te slaan.
