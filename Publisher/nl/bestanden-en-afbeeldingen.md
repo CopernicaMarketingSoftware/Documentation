@@ -131,7 +131,7 @@ afbeeldingen (als bijlage) mee te sturen met je emailings.
 Meer lezen:
 
 -   [Afbeeldingen meesturen met e-mails: wel of geen goed
-    idee](https://www.copernica.com/nl/ondersteuning/afbeeldingen-meesturen-met-e-mails-wel-of-geen-goed-ideee)
+    idee](./afbeeldingen-meesturen-met-e-mails-wel-of-geen-goed-idee.md)
 
 Bestanden en afbeeldingen bij het profiel opslaan
 -------------------------------------------------

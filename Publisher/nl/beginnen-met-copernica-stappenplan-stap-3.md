@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-2)
+stap](./beginnen-met-copernica-stappenplan-stap-2.md)
 
 Stap 3: Database verder instellen
 ---------------------------------
@@ -94,5 +94,4 @@ Na het volgen van deze stap heb je de nodige instellingen voor je
 database ingesteld en selecties aangemaakt zodat je naar de juiste
 profielen kan gaan mailen.
 
-[Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-4)
+[Ga door naar de volgende stap](./beginnen-met-copernica-stappenplan-stap-4.md)

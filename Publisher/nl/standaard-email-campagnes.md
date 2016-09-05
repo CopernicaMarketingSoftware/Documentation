@@ -4,10 +4,10 @@ accounts in Copernica. Per campagne vind je een eenvoudig stappenplan om
 het te implementeren.
 
 -   [Verlaten winkelmandje
-    campagne](verlaten-winkelmandjes-email-campagne-een-uitgewerkt-voorbeeld)
--   [Win-back campagne](win-back-terugwin-campagne-in-copernica)
--   [Lead scoring campagne](lead-scoring-campagne-in-copernica)
+    campagne](./verlaten-winkelmandjes-email-campagne-een-uitgewerkt-voorbeeld.md)
+-   [Win-back campagne](./win-back-terugwin-campagne-in-copernica.md)
+-   [Lead scoring campagne](./lead-scoring-campagne-in-copernica.md)
 -   [Opvolgactie wanneer een formulier is X keer
-    ingevuld](trigger-follow-up-when-web-form-has-been-submitted-x-times)
--   [Verjaardagsmail](een-verjaardagselectie-maken)
+    ingevuld](./trigger-follow-up-when-web-form-has-been-submitted-x-times.md)
+-   [Verjaardagsmail](./een-verjaardagselectie-maken.md)
 

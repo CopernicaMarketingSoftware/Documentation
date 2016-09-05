@@ -64,4 +64,4 @@ Na deze stap heb je een database aangemaakt en de juiste velden
 ingesteld.
 
 [Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-2)
+stap](./beginnen-met-copernica-stappenplan-stap-2.md)

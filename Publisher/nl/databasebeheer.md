@@ -11,9 +11,9 @@ onderdeel **Profielen**.
 -   [Databases in Copernica - een korte
     introductie](./databases-in-copernica-een-korte-introductie.md)
 -   [Databases aanmaken en gegevens
-    importeren](./database-maken-en-gegevens-importeren.md)
+    importeren](./databases-maken-en-gegevens-importeren.md)
 -   [Werken met database
-    collecties](./werken-met-database-collecties.md)
+    collecties](./werken-met-databasecollecties.md)
 -   [Database en collectie
     veldtypes](./database-en-collectie-veldtypes.md)
 -   [Werken met database
@@ -27,7 +27,7 @@ onderdeel **Profielen**.
 -   [**Importeren en
     exporteren**](./importeren-en-exporteren.md)
 -   [Database restricties
-    maken](./database-restricties-maken.md)
+    maken](./databaserestricties-maken.md)
 -   [Indexeren van
     databasevelden](./indexeren-van-databasevelden.md)
 -   [Automatisch verwerken van
@@ -39,13 +39,13 @@ onderdeel **Profielen**.
 ### Profielen en subprofielen
 
 -   [Aanmaken, bewerken of verwijderen van
-    (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-sub-profielen.md)
+    (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-subprofielen.md)
 -   [Profielgeschiedenis en campagnes
     bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
 -   [Enquete antwoorden van een profiel
     bekijken](./enquete-antwoorden-van-een-profiel-opzoeken.md)
 -   [Meerdere (sub)profielen ineens wijzigen of
-    verwijderen](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md)
+    verwijderen](./meerdere-subprofielen-ineens-wijzigen-of-verwijderen.md)
 -   [Campagne tab - bekijk per profiel de
     campagneresultaten](./campagne-tab-bekijk-per-profiel-de-campagneresultaten.md)
 -   [Een profiel herstellen naar oude
