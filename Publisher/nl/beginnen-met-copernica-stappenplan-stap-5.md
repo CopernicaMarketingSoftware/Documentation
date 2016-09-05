@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-4)
+stap](./beginnen-met-copernica-stappenplan-stap-4.md)
 
 Stap 5: Email klaarmaken om te versturen
 ----------------------------------------
@@ -84,4 +84,4 @@ waarschuwingen staan is dat niet heel erg, zo lang er maar geen fouten
 staan.
 
 [Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-6)
+stap](./beginnen-met-copernica-stappenplan-stap-6.md)

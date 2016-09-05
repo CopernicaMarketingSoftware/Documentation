@@ -37,9 +37,9 @@ databasevelden aan te maken.
 Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
-[webformulier](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings "Maak zelf slimme e-mailings")
+[webformulier](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings")
 of
-[enquête](http://www.copernica.com/nl/functies/webpaginas/enquetes "Maak je eigen enquêtes").
+[enquête](./enquetes.md "Maak je eigen enquêtes").
 
 Multidimensionale database
 --------------------------
@@ -77,7 +77,7 @@ Meer infomatie over databases
 -   **[Selecties en
     miniselecties](./selecties-en-miniselecties.md)**
 -   [**Gegevens importeren /
-    exporteren**](gegevens-importeren-exporteren)
+    exporteren**](./gegevens-importeren-exporteren.en.md)
 -   [Database restricties
     maken](./database-restricties-maken.md)
 -   [Foutieve e-mailadressen

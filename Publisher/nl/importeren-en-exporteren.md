@@ -12,13 +12,13 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 -   [Importbestand
     voorbereiden](./een-importbestand-voorbereiden.md)
 -   [Gegevens importeren naar nieuwe
-    database](./database-maken-en-gegevens-importeren.md)
+    database](./databases-maken-en-gegevens-importeren.md)
 -   [Gegevens importeren vanaf een online
     locatie](./gegevens-importeren-vanaf-een-online-locatie.md)
 -   [Import naar een database met
     collectie](./import-naar-database-met-collectie.md)
 -   [Een periodieke import van (sub)profielen
-    inroosteren](./een-import-van-sub-profielen-periodiek-inroosteren.md)
+    inroosteren](./een-import-van-subprofielen-periodiek-inroosteren.md)
 -   [Bestaande gegevens bijwerken met een
     import](./bestaande-gegevens-bijwerken-met-een-import.md)
 -   [Importeren: kolommen koppelen en sleutelvelden

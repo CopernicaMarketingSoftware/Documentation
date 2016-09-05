@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-1)
+stap](./beginnen-met-copernica-stappenplan-stap-1.md)
 
 Stap 2: gegevens importeren
 ---------------------------
@@ -61,4 +61,4 @@ het venster nu wegklikken, de import draait op de achtergrond door.
 Na deze stap heb je een database gevuld met je eigen data.
 
 [Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-3)
+stap](./beginnen-met-copernica-stappenplan-stap-3.md)

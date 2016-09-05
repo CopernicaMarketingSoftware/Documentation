@@ -17,7 +17,7 @@ verzendselectie. In de afbeelding zie je een voorbeeld van een
 standaardselectie.
 
 ![Standaard selectie opbouw email
-marketing](../images/articlesNL/databasebeheer.png "Standaard selectie opbouw email marketing")\
+marketing](../images/databasebeheer.png "Standaard selectie opbouw email marketing")\
  Om deze selectieboom te maken, maken we eerst de selecties aan voor het
 Databasebeheer.
 
