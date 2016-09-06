@@ -157,7 +157,7 @@ ondersteund worden door e-mailclients.
     </table>
 
 ![Een afbeelding uitlijnen met behulp van
-cellen](articlesblog/img-float-alternative-html-email-1.jpg)
+cellen](../images/img-float-alternative-html-email-1.jpg)
 
 Een afbeelding uitlijnen (2):
 
@@ -171,7 +171,7 @@ Een afbeelding uitlijnen (2):
     </table>
 
 ![Een afbeelding uitlijnen met behulp align op de img
-tag](articlesblog/img-float-alternative-html-email-2.jpg)
+tag](../images/img-float-alternative-html-email-2.jpg)
 
 **Alternatief voor margin (1)** Als alternatief voor `margin` kun je
 `padding` gebruiken. Simpel toch? Helaas werkt `padding` alleen niet op
