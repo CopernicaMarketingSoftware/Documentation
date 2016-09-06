@@ -71,7 +71,7 @@ Certified Fundamental User noemen. Het examen voor een Fundamental
 certificaat kun je direct afleggen via je dashboard door [in te loggen
 op copernica.com](https://www.copernica.com/nl/dashboard).
 
-![](Copernicacom/certified-fundamental-user.png)
+![](../images/certified-fundamental-user.png)
 
 ### Data van de Fundamental training
 
@@ -103,7 +103,7 @@ certificering.
 Aan het eind van de training kan je direct een examen afnemen. Behaal je
 het examen, dan ontvang je het certificaat voor Certified Advanced User.
 
-![](Copernicacom/certified-advanced-user.png)
+![](../images/certified-advanced-user.png)
 
 ### Data van de Advanced training
 

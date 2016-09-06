@@ -27,7 +27,7 @@ van het gemiddelde ordervolume:
 -   50-150 orders per dag: € 60
 -   150+ orders per dag: € 90
 
-![](lightspeed-logo1.png)
+![](../images/lightspeed-logo1.png)
 
 ### Aanvragen
 

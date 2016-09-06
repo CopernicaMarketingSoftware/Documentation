@@ -1,7 +1,7 @@
 Als een relatie geen berichten per e-mail of sms wil ontvangen, is dat
 moeilijk te voorkomen. Maak daarom de opt-out functie zo toegankelijk
 mogelijk, bied een alternatief en leer van het vertrek. Binnen
-[e-mailmarketing](./e-mailmarketing.md "e-mailmarketing")
+[e-mailmarketing](./email-marketing-functionaliteiten.md "e-mailmarketing")
 en mobile marketing is het volgens de Nederlandse wetgeving zelfs
 verplicht de relatie te allen tijde dit recht van verzet, oftewel de
 opt-out, te bieden.

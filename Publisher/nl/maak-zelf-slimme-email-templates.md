@@ -25,7 +25,7 @@ template, voeg je eigen content en stijl toe en je bent klaar voor
 verzenden.
 
 Ben je een HTML-expert of ben je thuis in het [opmaken van eigen
-templates](./ontwerp-je-eigen-templates.md "Opmaken van eigen templates"),
+templates](./ontwerp-je-eigen-email-templates.md "Opmaken van eigen templates"),
 dan kan je zo aan de slag met onze template-editor. Begin bij het begin
 en ontwerp of importeer je eigen op maat gemaakte templates in
 Copernica.

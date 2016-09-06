@@ -1,4 +1,4 @@
-[![](EventsNL/headersummit2015.jpg)](https://www.copernica.com/nl/copernica-summit)
+[![](../images/headersummit2015.jpg)](https://www.copernica.com/nl/copernica-summit)
 
 [Programma](https://www.copernica.com/nl/copernica-summit/programma-copernica-summit "Copernica Summit programma")
 
@@ -53,10 +53,10 @@ mogelijk bekend bij Ralph van den Broeck per mail
 
   Platinum sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Pleisty](summit2014/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](summit2014/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
+  [![Pleisty](../images/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](../images/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
 
   Gold sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Guapa Media](summit2015/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
+  [![Guapa Media](../images/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
 
 

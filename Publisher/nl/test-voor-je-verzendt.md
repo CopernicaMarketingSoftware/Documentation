@@ -20,11 +20,11 @@ daadwerkelijk test. En met Copernica kan je nagenoeg alles testen:
 -   De inhoud van je e-mailing zoals hyperlinks of [RSS
     feeds](./gebruik-van-rss-of-atom-feed.md "RSS Feeds")
 -   Het [ontwerp van je
-    e-mailing](./ontwerp-je-eigen-templates.md "Ontwerp je eigen template"):
+    e-mailing](./ontwerp-je-eigen-email-templates.md "Ontwerp je eigen template"):
     layout, afbeeldingen, positionering
 -   De call-to-action: de vorm en grootte van je call-to-action
 -   De
-    [personalisatie](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings"):
+    [personalisatie](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings"):
     gebruik je goede personalisering richting je doelgroep
 
 Je bepaalt zelf het aantal e-mails dat Copernica verzendt en de grootte
