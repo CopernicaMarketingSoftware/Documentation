@@ -67,7 +67,7 @@ bijvoorbeeld:
     weer in je product
 
 Net als alle andere e-mailings binnen Copernica,
-[personaliseer](./maak-zelf-slimme-e-mailings.md "Zelf slimme e-mailings opmaken met Smarty personalisatie")
+[personaliseer](./maak-zelf-slimme-email-templates.md "Zelf slimme e-mailings opmaken met Smarty personalisatie")
 je gemakkelijk event-driven e-mailcampagnes. Zo maak je jouw boodschap
 nog persoonlijker en relevanter.
 
