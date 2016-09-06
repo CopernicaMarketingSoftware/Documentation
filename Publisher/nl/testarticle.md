@@ -39,7 +39,7 @@ pas komt:
     te sturen een week na aankoop.
 -   Een relatie heeft zijn persoonlijke gegevens gewijzigd: geef via de
     follow-up aan dat de relatie na de wijziging een
-    [e-mail](./e-mailings.md "E-mailings")
+    [e-mail](./email-marketing-functionaliteiten.md "E-mailings")
     moet ontvangen met daarin zijn gewijzigde gegevens.
 -   Een relatie heeft zich net aangemeld voor je seminar van volgende
     maand: stel de follow-up manager in zodat de relatie een dag voor je

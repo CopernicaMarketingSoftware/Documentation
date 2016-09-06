@@ -20,7 +20,7 @@ aan relaties:
 
 -   Die zich zojuist hebben ingeschreven voor je wedstrijdactie
 -   Die hebben geklikt op een actielink in je
-    [e-mailing](./e-mailings.md "E-mailings")
+    [e-mailing](./email-marketing-functionaliteiten.md "E-mailings")
 -   Ter herinnering van je seminar een uur voor aanvang
 -   Om ze een gelukkige verjaardag te wensen
 -   Om ze te wijzen op een speciale actie die bijna verloopt

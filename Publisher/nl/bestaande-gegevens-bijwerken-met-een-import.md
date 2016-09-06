@@ -7,7 +7,7 @@ collectie(s).
 
 -   Als je een normale import wilt uitvoeren in een nieuwe database,
     [raadpleeg dan dit
-    artikel](./database-maken-en-gegevens-importeren.md).
+    artikel](./databases-maken-en-gegevens-importeren.md).
 -   Als je een of meerdere collecties met subprofielen wilt importeren,
     [raadpleeg dan dit
     artikel](./import-naar-database-met-collectie.md).

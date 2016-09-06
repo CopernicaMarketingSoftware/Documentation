@@ -136,7 +136,7 @@ Publiceer gezamenlijke content
 
 Partners kunnen op Copernica.com en op externe blogsites inhoudelijke
 artikelen publiceren, over succesvolle cases rondom de inzet van
-bijvoorbeeld [email marketing](./e-mailings.md "Email marketing"),
+bijvoorbeeld [email marketing](./email-marketing-functionaliteiten.md "Email marketing"),
 [mobile](./mobile.md "Mobile") en
 [social](./social.md "Social").
 

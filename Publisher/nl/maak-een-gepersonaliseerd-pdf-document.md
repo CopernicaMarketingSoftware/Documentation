@@ -34,7 +34,7 @@ Gebruik je gepersonaliseerde PDF-document bijvoorbeeld als:
 
 -   Speciale kortingsbon voor je nieuwste producten die je meestuurt als
     bijlage van een
-    [e-mailing](./e-mailings.md "E-mailings").
+    [e-mailing](./email-marketing-functionaliteiten.md "E-mailings").
 -   Gepersonaliseerde brochure die je relaties kunnen downloaden vanaf
     je website.
 -   Een persoonlijke brief waar je een gepersonaliseerde QR-code in
