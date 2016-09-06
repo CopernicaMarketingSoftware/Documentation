@@ -33,8 +33,7 @@ routes.
     [eigenschappen](./database-en-collectie-veldtypes.md)
     bewerken.
 2.  **Handmatig in de interface.** [Bekijk de video over het aanmaken
-    van velden\
-    ](./videos/profielen-velden-aanmaken.md)
+    van velden](./profielen-velden-aanmaken.md)
 
 Voor het opslaan van e-mailadressen, gebruik je een specifiek veld: het
 **e-mailveld**.
@@ -46,7 +45,7 @@ van selecties. Je verstuurt een mailing bijvoorbeeld aan een selectie
 waar de uitschrijvers van een nieuwsbrief zijn uitgefilterd.
 
 [Bekijk ook onze instructievideo over profielen en
-selecties](./videos/profielen-selecties.md)
+selecties](./profielen-selecties.md)
 
 -   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
     - maak in je database een selectie waarin je alleen profielen
@@ -73,7 +72,7 @@ gebruiksmogelijkheden ingesteld.
     instellen.](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
     Wanneer iemand klikt op de {unsubscribe} link, wordt het
     uitschrijfgedrag geactiveerd. [Bekijk ook de
-    video](./videos/e-mailings-uitschrijfgedrag-instellen.md)
+    video](./e-mailings-uitschrijfgedrag-instellen.md)
     over dit onderwerp.
 2.  [Gebruiksmogelijkheden voor selectie
     instellen](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md).
@@ -95,9 +94,7 @@ inladen](./werken-met-de-standaard-template-van-copernica.md).
 Voordat je een mailing verstuurt, controleer je goed of het document en
 de instellingen voldoen aan de juiste eisen.
 
-1.  [Sender
-    ID](./sender-id-instellen-op-je-afzenderdomein.md)
-    en
+1.  [Sender ID](./sender-id-instellen-op-je-afzenderdomein.md) en
     [DKIM](./e-mails-versleutelen-met-dkim.md)
     ingesteld? Dit is niet verplicht, maar wordt wel aangeraden. Het
     instellen van DKIM en Sender ID doe je eenmalig. Doe dit wel ruim
@@ -125,7 +122,7 @@ standaardbestemming, of een testmailing sturen naar een groep
 ontvangers.
 
 1.  Bekijk de video over het [instellen van de
-    standaardbestemming](./videos/e-mailings-standaardbestemming.md)
+    standaardbestemming](./e-mailings-standaardbestemming.md)
 2.  Of lees het artikel over [het versturen van test
     emails](./een-test-e-mail-versturen.md)
 
@@ -137,7 +134,7 @@ ontvangen?](./heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan.md)
 De uiteindelijke stap: het verzenden van de bulkmailing
 
 -   Bekijk onze video over het [instellen en verzenden van een
-    bulkmailing](./videos/e-mailings-verzending.md)
+    bulkmailing](./e-mailings-verzending.md)
 -   [Bekijk alle artikelen over het versturen van een
     bulkmailing](./mailings-verzenden.md)
 

@@ -44,7 +44,7 @@ object is opgebouwd uit kleinere deelobjecten. Zo is een object dat een
 [database](./maak-je-eigen-database.md "Maak en beheer je eigen database(s)")
 representeert bijvoorbeeld opgebouwd uit objecten die de profielen
 representeren. Een object dat een
-[template](./ontwerp-je-eigen-templates.md "Ontwikkel je eigen dynamische templates")
+[template](./ontwerp-je-eigen-email-templates.md "Ontwikkel je eigen dynamische templates")
 omvat, heeft een methode waarmee je alle documenten opvraagt die op
 basis van dit template zijn aangemaakt.
 
