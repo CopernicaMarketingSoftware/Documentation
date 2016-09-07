@@ -65,5 +65,5 @@ aansluiten bij jouw huisstijl of dat van een klant.
 -   [Eigen CSS of XSLT gebruiken voor
     enquête](./je-eigen-stylesheet-maken-en-gebruiken.md)
 -   [Het hekje (\#) bij elke vraag
-    verwijderen](https://www.copernica.com/nl/ondersteuning/het-hekje-bij-elke-vraag-verwijderen.md)
+    verwijderen](./het-hekje-bij-elke-vraag-verwijderen.md)
 
