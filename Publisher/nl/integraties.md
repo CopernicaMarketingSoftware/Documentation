@@ -180,7 +180,7 @@ Ontwikkelplatform
 -   ### Microsoft .Net \#
 
     [![Microsoft .Net
-    \#](../images/net-logo2.jpg "Microsoft .Net #")](./microsoft-net-c.md)
+    \#](../images/net-logo2.jpg "Microsoft .Net #")](../en/microsoft-net-c.md)
 
     Gebruik de Microsoft .Net \#-integratie om maatwerkapplicaties te
     koppelen aan Copernica.

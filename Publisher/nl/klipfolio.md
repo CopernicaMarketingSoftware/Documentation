@@ -4,9 +4,8 @@ eenvoudiger. Omdat het dashboard zeer snel en overzichtelijk is en meer
 mogelijkheden biedt (zoals trends, benchmarking, groeperen en
 vergelijken van meerdere e-mails, alerts) bespaart het dashboard veel
 tijd en geeft het een rijk inzicht in de effectiviteit van een e-mail of
-een campagne. Bekijk de voorbeelden en mogelijkheden hieronder.\
-\
- Een snel groeiend aantal partners en eindgebruikers maken met veel
+een campagne. Bekijk de voorbeelden en mogelijkheden hieronder.
+Een snel groeiend aantal partners en eindgebruikers maken met veel
 enthousiasme gebruik van dit handige dashboard dat waarde toevoegt aan
 de krachtige campagnemanagementsoftware van Copernica.
 
@@ -39,28 +38,28 @@ Voorbeelden van het Copernica dashboard
 *Figuur 1: Inzicht in je e-mailresultaten uit Copernica*
 
 [![Inzicht in je e-mailresultaten uit
-Copernica](screenshot-klipfolio-copernica-campagnes.png "Inzicht in je e-mailresultaten uit Copernica")](../images/screenshot-klipfolio-copernica-campagnes.png)
+Copernica](../images/screenshot-klipfolio-copernica-campagnes.png "Inzicht in je e-mailresultaten uit Copernica")](../images/screenshot-klipfolio-copernica-campagnes.png)
 
 *Figuur 2: Meerdere e-mails gemakkelijk vergelijken door e-mails te
 groeperen*
 
 [![Meerdere e-mails gemakkelijk vergelijken door e-mails te
-groeperen](klipfolio-vergelijken-emails.png "Meerdere e-mails gemakkelijk vergelijken door e-mails te groeperen")](../images/klipfolio-vergelijken-emails.png)
+groeperen](../images/klipfolio-vergelijken-emails.png "Meerdere e-mails gemakkelijk vergelijken door e-mails te groeperen")](../images/klipfolio-vergelijken-emails.png)
 
 *Figuur 3: Trends in e-mails signaleren*
 
 [![Trends in e-mails
-signaleren](Klipfolio-email-trends.png "Trends in e-mails signaleren")](../images/Klipfolio-email-trends.png)
+signaleren](../images/Klipfolio-email-trends.png "Trends in e-mails signaleren")](../images/Klipfolio-email-trends.png)
 
 *Figuur 4: E-mails groeperen via ControlCenter*
 
 [![E-mails groeperen via
-ControlCenter](Klipfolio-emails-groeperen.png "E-mails groeperen via ControlCenter")](../images/Klipfolio-emails-groeperen.png)
+ControlCenter](../images/Klipfolio-emails-groeperen.png "E-mails groeperen via ControlCenter")](../images/Klipfolio-emails-groeperen.png)
 
 *Figuur 5: snel inzicht in een e-mailflow*
 
 [![snel inzicht in een
-e-mailflow](Klipfolio-snel-inzicht.png "snel inzicht in een e-mailflow")](../images/Klipfolio-snel-inzicht.png)
+e-mailflow](../images/Klipfolio-snel-inzicht.png "snel inzicht in een e-mailflow")](../images/Klipfolio-snel-inzicht.png)
 
 Mogelijke toepassingen en vormen
 --------------------------------

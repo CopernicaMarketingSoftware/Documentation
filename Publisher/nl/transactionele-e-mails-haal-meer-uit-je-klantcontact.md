@@ -73,15 +73,13 @@ producten zelf, maar ook de standaardgegevens als naam en aanhef van de
 klant.
 
 Om te zorgen dat de juiste personen deze e-mail ontvangen wordt gebruik
-gemaakt van een [dynamische
-selectie](../images/definieer-doelgroepen-met-selecties "Dynamische selecties").
-Deze selectie 'ziet' dat na 1 dag bepaalde producten nog steeds een
-bepaalde status hebben (bv. 'in shopping cart' of 'niet besteld'). De
-abandoned shopcart mailing staat ingeroosterd in de e-mailmarketing
-software en wordt automatisch verzonden naar alle klanten die in de
-selectie staan. En dat werkt, ruim 60% van deze mails wordt geopend door
-de doelgroep van Agradi in tegenstelling tot 30% van de reguliere
-bulkmailings.
+gemaakt van een dynamische selectie. Deze selectie 'ziet' dat na 1 dag
+bepaalde producten nog steeds een bepaalde status hebben
+(bv. 'in shopping cart' of 'niet besteld'). De abandoned shopcart
+mailing staat ingeroosterd in de e-mailmarketing software en wordt
+automatisch verzonden naar alle klanten die in de selectie staan.
+En dat werkt, ruim 60% van deze mails wordt geopend door de doelgroep
+van Agradi in tegenstelling tot 30% van de reguliere bulkmailings.
 
 Ga zelf aan de slag
 -------------------

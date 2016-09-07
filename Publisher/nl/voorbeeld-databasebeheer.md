@@ -63,7 +63,7 @@ Meer infomatie over databases
 
 -   [Databases in Copernica - een korte introductie](./databases-in-copernica-een-korte-introductie.md)
 -   [Database aanmaken en gegevens importeren](./databases-maken-en-gegevens-importeren.md)
--   [Werken met database collecties](./werken-met-database-collecties.md)
+-   [Werken met database collecties](./werken-met-databasecollecties.md)
 -   [Database en collectie veldtypes](./database-en-collectie-veldtypes.md)
 -   [Werken met database interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
 -   [Uitschrijfgedrag instellen op de database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)

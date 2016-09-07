@@ -5,7 +5,7 @@ je moet er ook alles aan doen om de open rate van je
 te verhogen. Deze acht tips helpen je daarbij: 
 
 ![Acht tips om de open rate van je e-mailings te
-verhogen](Copernicacom/email-open-rate.png "Acht tips om de open rate van je e-mailings te verhogen")
+verhogen](../images/email-open-rate.png "Acht tips om de open rate van je e-mailings te verhogen")
 
 **Tip 1: Maak duidelijk wie de afzender is**
 Nog voordat een ontvanger kijkt waar een nieuwsbrief over gaat, bekijkt
