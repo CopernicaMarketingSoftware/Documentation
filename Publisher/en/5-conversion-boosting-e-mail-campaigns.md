@@ -8,14 +8,14 @@ through the roof. Forget birthday campaigns – it’s time for some real
 conversion stars!
 
 ![5 conversion boosting email campaigns (and what you need to get
-started)](Copernica_library/conversion-copernica.jpg "5 conversion boosting email campaigns (and what you need to get started)")\
+started)](../images/conversion-copernica.jpg "5 conversion boosting email campaigns (and what you need to get started)")\
 Sure, first impressions are important. A good first impression is what
 makes a satisfied customer come back to your online store. But it
 doesn’t stop there. Or at least it shouldn’t. If your database is set up
 correctly, an online shop automatically collects a lot of data about
 your existing customers with every transaction they make. And there is a
 huge potential for online shops that actually use this data for targeted
-loyalty/[marketing campaigns](./automate-your-campaigns.md).
+loyalty/[marketing campaigns](./automate-campaigns.md).
 
 The following generic type of campaigns can be very useful in your
 marketing strategy:

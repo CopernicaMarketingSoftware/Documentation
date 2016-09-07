@@ -1,5 +1,5 @@
 ![responsive design: email for
-mobile](Copernicacom/email-marketing-mobile.jpg "responsive design: email for mobile")In
+mobile](../images/email-marketing-mobile.jpg "responsive design: email for mobile")In
 the last three years the use of smartphones has skyrocketed. That is why
 email marketers need to pay extra attention to optimizing their emails
 for mobile use and to monitor the use of smartphones within your target

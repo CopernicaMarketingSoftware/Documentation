@@ -2,8 +2,7 @@ Dynamic content is content that varies within your marketing campaigns
 based on information from a database like specific client data.
 
 Copernica offers you several ways to use dynamic content within your
-marketing campaigns. For example, you can use [Smarty
-tags](http://www.copernica.com/en/support/glossary/smarty) to adjust
+marketing campaigns. For example, you can use [Smarty tags](./smarty.md) to adjust
 conditional content blocks within your emailings.
 
 Set conditional content blocks

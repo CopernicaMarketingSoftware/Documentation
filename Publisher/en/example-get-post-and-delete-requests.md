@@ -301,5 +301,5 @@ The script below demonstrates how you make a PUT request.
 -   [Copernica REST with OAuth 2.0
     authentication](./setting-up-copernica-rest-service.md)
 -   [Register your app and obtain your access token](./register-your-app-on-copernica-com.md)
--   [REST API resources / methods](requests-index)
+-   [REST API resources / methods](./the-copernica-rest-api.md)
 
