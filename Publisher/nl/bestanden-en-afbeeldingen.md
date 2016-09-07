@@ -104,9 +104,9 @@ Verder lezen:
 -   [Afbeeldingen niet zichtbaar in je e-mailings? Zes
     tips](./afbeeldingen-niet-zichtbaar-in-je-e-mailings-zes-tips.md)
 -   [Afbeeldingen helemaal niet ingeladen? Lees onze hulp
-    pagina](./image-troubleshooting.md)
+    pagina](../en/image-troubleshooting.md)
 -   [Remove unwanted gaps in
-    Outlook](./remove-unwanted-gaps-in-microsoft-outlook.md)
+    Outlook](../en/remove-unwanted-gaps-in-microsoft-outlook.md)
 -   [Hulppagina: Afbeeldingen worden niet goed
     weergegeven](./afbeeldingen-worden-niet-goed-uitgelijnd-in-outlook-gmail-hotmail.md)
 

@@ -52,7 +52,7 @@ Onderwerpen
     mobile](./sms-en-mobile.md)
 -   [Gebruikers en
     accountbeheer](./gebruikers-en-accountbeheer.md)
--   [CSS en XSLT](./css-en-xslt.md)
+-   [CSS en XSLT](../en/css-and-xslt.md)
 -   [Bestanden en
     afbeeldingen](./bestanden-en-afbeeldingen.md)
 -   [Standaard
