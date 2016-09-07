@@ -26,7 +26,7 @@ de marge.
 
 Ben je benieuwd naar de tarieven van een partnerlicentie en extra
 accounts en gebruikers? [Vraag direct de partnertarieven
-aan](./vraag-partnerprijzen-aan.md "Partnertarieven aanvragen").
+aan](http://www.copernica.com/nl/partners/vraag-partnerprijzen-aan "Partnertarieven aanvragen").
 
 Variabelen
 ----------

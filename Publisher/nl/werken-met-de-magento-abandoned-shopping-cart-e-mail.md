@@ -10,8 +10,6 @@ met de namen van de velden in je database en de naam van de collectie.
 De gebruikte velden en selecties worden verderop in dit artikel
 uitgebreid toegelicht.
 
-![abandoned\_email.png](../images/abandoned_email.png)
-
 Het inladen van de demo data
 ----------------------------
 
@@ -202,8 +200,6 @@ website [http://www.w3schools.com/xsl/](http://www.w3schools.com/xsl/)
 Zoals je al eerder hebt kunnen lezen, wordt aan de hand van een selectie
 en een miniselectie bepaald of een klant een e-mail zal ontvangen of
 niet.
-
-![selecites.png](../images/selecites.png)
 
 De miniselectie (*RecentAbandonedProducts*) checkt of er in
 de collectie producten aanwezig zijn die in de afgelopen zeven dagen  in

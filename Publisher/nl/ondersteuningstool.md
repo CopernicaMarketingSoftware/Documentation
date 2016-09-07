@@ -7,7 +7,7 @@ meteen aandacht nodig heeft van onze supportafdeling? Geen nood,
 Copernica's supportafdeling staat 24 uur per dag, 7 dagen per week voor
 je klaar.\
 \
-[Test Copernica nu gratis!](./copernica-30-dagen-proberen.md "Test Copernica nu gratis!")
+[Test Copernica nu gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")
 
 Maar de ondersteuningstool is er ook voor het indienen van suggesties.
 Heb jij een idee of suggestie ter verbetering van Copernica? Dien het in
@@ -24,6 +24,6 @@ partner](./vind-een-partner.md "Overzicht van Copernica partners")
 voor bijvoorbeeld het [maken van je eigen
 website](./maak-en-publiceer-je-eigen-webpaginas.md "Eigen website maken"),
 het geven van een training over Copernica of de ontwikkeling van een
-[integratie](./home.md "Copernica integraties")
+[integratie](./integraties.md "Copernica integraties")
 tussen Copernica en je webshop. Onze partners staan je graag met raad en
 daad te woord.

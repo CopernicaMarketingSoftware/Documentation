@@ -44,7 +44,7 @@ zijn voor zowel selecties als miniselecties beschikbaar, tenzij anders
 vermeld.
 
 -   [Sorteren en selecteren van
-    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md)
+    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md)
 -   [Selectie op basis van de resultaten van
     sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 -   [Check op resultaten

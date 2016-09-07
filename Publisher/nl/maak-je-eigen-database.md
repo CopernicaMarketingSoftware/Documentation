@@ -29,7 +29,7 @@ Copernica aanmaakt en gebruikt:
 Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
-[webformulier](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings")
+[webformulier](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings")
 of [enquête](./enquetes.md "Maak je eigen enquêtes").
 
 ![Meer gegevens opslaan met een multidimensionale

@@ -18,7 +18,7 @@ allemaal.
     [Meer over het maken van persoonlijke email
     campagnes](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings")
 
--   [Ontwerp je eigen templates](./ontwerp-je-eigen-templates.md "E-mailtemplates ontwerpen")
+-   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "E-mailtemplates ontwerpen")
     ------------------------------------------------------------------------------------------------------------------------------------
 
     [![E-mailtemplates

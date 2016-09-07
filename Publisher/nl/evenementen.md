@@ -1,14 +1,14 @@
 Copernica organiseert zelf of samen met
-[partners](./overview.md "Copernica's partners")
+[partners](https://www.copernica.com/nl/partners/overview "Copernica's partners")
 interessante evenementen over e-mailmarketing. Zo zijn er regelmatig
 gratis [seminars en
-webinars](./seminars-webinars.md "Seminars/Webinars")
+webinars](https://www.copernica.com/nl/ondersteuning/seminars-webinars "Seminars/Webinars")
 die gaan over thema's als [marketing
-automation](./marketing-automation-met-manchester-united.md "Marketing Automation met Manchester United"),
+automation](https://www.copernica.com/nl/blog/marketing-automation-met-manchester-united "Marketing Automation met Manchester United"),
 [customer
-lifecycle](./hoe-maak-je-succesvol-gebruik-van-je-customer-lifecycle-met-e-mailmarketing.md "Hoe maak je succesvol gebruik van je customer lifecycle met e-mailmarketing?")
+lifecycle](https://www.copernica.com/nl/blog/hoe-maak-je-succesvol-gebruik-van-je-customer-lifecycle-met-e-mailmarketing "Hoe maak je succesvol gebruik van je customer lifecycle met e-mailmarketing?")
 en [lead
-nurturing](./lead-nurturing-in-de-praktijk-case-exact-software.md "Lead nurturing in de praktijk: case Exact Software").
+nurturing](https://www.copernica.com/nl/blog/lead-nurturing-in-de-praktijk-case-exact-software "Lead nurturing in de praktijk: case Exact Software").
 Daarnaast is Copernica regelmatig te vinden op interessante beurzen die
 gaan over eCommerce, multichannel-marketing en marketingcommunicatie. In
 het onderstaande overzicht kan je zien welke evenementen we zelf
@@ -133,7 +133,7 @@ In 3 uur leer je de quickwins die jij kunt toepassen om marketing
 automation te implementeren. Het seminar marketing automation wordt
 georganiseerd door Copernica in samenwerking met Qamel.
 
-[Meer info](./seminar-marketing-automation-de-perfecte-aanpak-in-3-uur.md)
+[Meer info](https://www.copernica.com/nl/blog/seminar-marketing-automation-de-perfecte-aanpak-in-3-uur)
 
 ### Online webinar: Advanced training
 

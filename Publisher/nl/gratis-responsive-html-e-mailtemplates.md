@@ -26,7 +26,7 @@ dropdownmenu van een template of document.
 
 Geen nood, je kunt deze templates ook zonder Copernica gebruiken (of
 gebruik deze kans om [gratis aan de slag te
-gaan](./copernica-proberen.md "Probeer Copernica gratis")
+gaan](https://www.copernica.com/nl/copernica-proberen "Probeer Copernica gratis")
 met Copernica).
 
 E-mailtemplates

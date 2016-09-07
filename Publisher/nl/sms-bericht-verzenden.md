@@ -9,7 +9,7 @@ Gericht verzenden naar je relaties
 ----------------------------------
 
 ![Gericht verzenden naar je
-relaties](Copernicacom/nl-sms-bericht-verzenden-01-thumb.png "Gericht verzenden naar je relaties")
+relaties](../images/nl-sms-bericht-verzenden-01-thumb.png "Gericht verzenden naar je relaties")
 
 Gebruik de selecties die je aanmaakt in je Copernica
 [database](./maak-je-eigen-database.md "Databases")

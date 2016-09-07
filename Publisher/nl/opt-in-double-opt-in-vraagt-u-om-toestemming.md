@@ -1,5 +1,4 @@
-Aan de slag met
-[e-mailmarketing](./e-mailings.md "E-mailings")
+Aan de slag met [e-mailmarketing](./email-marketing-functionaliteiten.md "E-mailings")
 of [mobile marketing](./sms-bericht-verzenden.md "Sms-berichten verzenden")?
 Maak dan gebruik van opt-in. Het is belangrijk dat klanten
 'ondubbelzinnige' toestemming geven voor verdere verwerking van hun

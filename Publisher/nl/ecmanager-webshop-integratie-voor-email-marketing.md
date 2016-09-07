@@ -34,7 +34,7 @@ De kracht van de Copernica-ecManager webshop integratie
 -------------------------------------------------------
 
 -   Verzend [persoonlijke email marketing
-    campagnes](./maak-zelf-slimme-e-mailings.md "Maak en personaliseer zelf e-mailings")
+    campagnes](./maak-zelf-slimme-email-templates.md "Maak en personaliseer zelf e-mailings")
     op basis van aankoopgedrag
 -   Volg [verlaten
     winkelwagentjes](./automatiseer-je-campagnes.md "Automatiseer je campagnes")

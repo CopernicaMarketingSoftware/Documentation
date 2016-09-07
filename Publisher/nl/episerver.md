@@ -62,11 +62,11 @@ content:
     letten](./haal-meer-omzet-uit-je-bezoekers-3-valkuilen-om-op-te-letten.md)
 
 Naast artikelen organiseren we ook op regelmatige basis interessante
-[productdemonstraties](./productdemonstraties.md)
+[productdemonstraties](http://www.copernica.com/nl/ondersteuning/productdemonstraties)
 en seminars voor de Ecommerce branche. Hieronder vind je de komende data
 waarop deze evenementen plaatsvinden. Wil je hier graag bij zijn?
 Schrijf je dan in via [de
-aanmeldpagina](./aanmelden-productdemonstratie.md).
+aanmeldpagina](http://www.copernica.com/nl/ondersteuning/aanmelden-productdemonstratie).
 
 -   Dinsdag 25 maart: Seminar EPiServer & Copernica, Amsterdam
 

@@ -1,5 +1,5 @@
 Met Copernica maak je eenvoudig en snel de best converterende
-[webpagina's](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings").
+[webpagina's](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings").
 Zorg voor een sterke groei van het aantal nieuwsbriefabonnees met
 prachtige
 [webformulieren](./verschillende-soorten-webformulieren.md "Verschillende soorten webformulieren").
