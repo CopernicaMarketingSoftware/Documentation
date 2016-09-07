@@ -1,6 +1,5 @@
 Iedereen kan op zijn eigen manier leren werken met Copernica. Gebruik
-bijvoorbeeld onze
-[helpdocumentatie](http://www.copernica.com/nl/ondersteuning/helpdocumentatie)
+bijvoorbeeld onze [helpdocumentatie](./helpdocumentatie.md)
 of [ga meteen aan de slag met
 Copernica](http://www.copernica.com/nl/copernica-proberen). Daarnaast
 hebben we ook verschillende video's waarmee je stap voor stap met
@@ -27,8 +26,8 @@ Profielen
 
 **Veelvoorkomende selecties in Copernica**
 
-1.  [Een verjaardagsselectie maken binnen Copernica (2:07)](http://www.copernica.com/nl/ondersteuning/een-verjaardagselectie-maken.md)
-2.  [Een nieuwsbriefselectie maken binnen Copernica (3:35)](http://www.copernica.com/nl/ondersteuning/nieuwsbrief-selectie-maken.md)
+1.  [Een verjaardagsselectie maken binnen Copernica (2:07)](./een-verjaardagselectie-maken.md)
+2.  [Een nieuwsbriefselectie maken binnen Copernica (3:35)](./nieuwsbrief-selectie-maken.md)
 
 E-mailings
 
