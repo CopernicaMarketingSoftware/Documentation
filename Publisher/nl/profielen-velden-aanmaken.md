@@ -1,8 +1,7 @@
 In deze Copernica-tutorial over het inrichten van een database, leer je
 hoe je velden aanmaakt in je database.
 
--   [Terug naar de
-    video's](./videos.md "Video's")
+-   [Terug naar de video's](./videos.md "Video's")
 
 Aanmaken van velden
 -------------------
@@ -66,7 +65,7 @@ overzichtspagina binnen ‘Profielen’.
 
 Gebruik deze selectieregel om een opgegeven [aantal profielen
 alfanumeriek te
-selecteren](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md).
+selecteren](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md).
 
 ### Dit veld wordt geïndexeerd
 

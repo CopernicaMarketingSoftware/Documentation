@@ -13,7 +13,7 @@ De databasestructuur binnen Copernica kan je geheel opmaken en inrichten
 naar eigen wens. Je hebt de mogelijkheid een oneindig aantal
 databasevelden aan te maken. Deze data gebruik je vervolgens gemakkelijk
 in bijvoorbeeld je
-[e-mailings](./maak-zelf-slimme-e-mailings.md "E-mailings").
+[e-mailings](./maak-zelf-slimme-email-templates.md "E-mailings").
 
 Hieronder vind je een overzicht van databasevelden die je binnen
 Copernica aanmaakt en gebruikt:

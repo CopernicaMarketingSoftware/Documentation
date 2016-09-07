@@ -19,7 +19,7 @@ E-commerce platformen
 
 -   ### Magento
 
-    [![Magento](Copernicacom/magento-integration.png "Magento")](./magento.md)
+    [![Magento](../images/magento-integration.png "Magento")](./magento.md)
 
     Gebruik Copernica om alle contact-, order-, en winkelwagengegevens
     van Magento automatisch te synchroniseren en op te slaan.
@@ -29,7 +29,7 @@ E-commerce platformen
 
 -   ### Magento 2.0
 
-    [![Magento](articlesNL/magento2.png "Magento")](./magento-2-0-webshop-integratie-voor-email-marketing.md)
+    [![Magento](../images/magento2.png "Magento")](./magento-2-0-webshop-integratie-voor-email-marketing.md)
 
     Gebruik Copernica om alle contact-, order-, en winkelwagengegevens
     van Magento 2.0 automatisch te synchroniseren en op te slaan.
@@ -39,7 +39,7 @@ E-commerce platformen
 
 -   ### ecManager
 
-    [![ecManager](integrations/ecmanager.jpg "ecManager")](./ecmanager-webshop-integratie-voor-email-marketing.md)
+    [![ecManager](../images/ecmanager.jpg "ecManager")](./ecmanager-webshop-integratie-voor-email-marketing.md)
 
     Zet Copernica in voor slimme en automatische e-mailcampagnes door
     alle contact-, order-, en winkelwagengegevens uit ecManager te
@@ -50,7 +50,7 @@ E-commerce platformen
 
 -   ### Shopware
 
-    ![Shopware](Copernicacom/shopware-integration.png "Shopware")
+    ![Shopware](../images/shopware-integration.png "Shopware")
 
     Deze integratie maakt het mogelijk alle klantendata tussen Shopware
     en Copernica te synchroniseren.
@@ -60,7 +60,7 @@ E-commerce platformen
 
 -   ### Lightspeed
 
-    ![Lightspeed](lightspeed-logo1.png "Lightspeed")
+    ![Lightspeed](../images/lightspeed-logo1.png "Lightspeed")
 
     Zet slimme en automatische e-mailcampagnes op met Copernica voor je
     Lightspeed webshop en verrijk je profielen continue voor nog meer
@@ -71,7 +71,7 @@ E-commerce platformen
 
 -   ### Hybris
 
-    [![Hybris](Copernicacom/hybris-integration.png "Hybris")](./hybris.md)
+    [![Hybris](../images/hybris-integration.png "Hybris")](./hybris.md)
 
     Zorg ervoor dat je campagnes en relatiegegevens te allen tijde
     up-to-date zijn.
@@ -80,7 +80,7 @@ E-commerce platformen
 
 -   ### EPiServer
 
-    ![EPiServer](Copernicacom/episerver-integration.png "EPiServer")
+    ![EPiServer](../images/episerver-integration.png "EPiServer")
 
     Hou alle data binnen je profielendatabase altijd up-to-date dankzij
     de integratie tussen Copernica en EPiServer.
@@ -90,7 +90,7 @@ E-commerce platformen
 
 -   ### OXID
 
-    ![OXID](Copernicacom/oxid-integration.png "OXID")
+    ![OXID](../images/oxid-integration.png "OXID")
 
     Het automatiseren van je marketingcampagnes was nog nooit zo
     makkelijk! Met de integratie tussen OXID en Copernica gaat dit bijna
@@ -101,7 +101,7 @@ E-commerce platformen
 
 -   ### Sana Commerce
 
-    ![Sana Commerce](Copernicacom/sana-integration.png "Sana Commerce")
+    ![Sana Commerce](../images/sana-integration.png "Sana Commerce")
 
     Koppel je Sana Commerce webshop naadloos met Copernica Marketing
     Software met behulp van de Sana Commerce integratie.
@@ -114,7 +114,7 @@ CMS platformen
 
 -   ### Umbraco
 
-    ![Umbraco](Copernicacom/umbraco-integration.png "Umbraco")
+    ![Umbraco](../images/umbraco-integration.png "Umbraco")
 
     Met de integratie tussen Copernica en Umbraco zorg je voor een
     continue verrijking van je databases in beide systemen.
@@ -123,7 +123,7 @@ CMS platformen
 
 -   ### WordPress
 
-    [![WordPress](Copernicacom/wordpress-integration.png "WordPress")](./wordpress.md)
+    [![WordPress](../images/wordpress-integration.png "WordPress")](./wordpress.md)
 
     De integratie met WordPress stelt de gebruiker in staat om naadloos
     en snel alle gegevens tussen WordPress en Copernica te
@@ -133,7 +133,7 @@ CMS platformen
 
 -   ### Drupal
 
-    [![Drupal](Copernicacom/drupal-integration.png "Drupal")](./drupal.md)
+    [![Drupal](../images/drupal-integration.png "Drupal")](./drupal.md)
 
     Er zijn vier verschillende modules voor Drupal gebruikers
     beschikbaar die je kunt combineren met je Copernica database.
@@ -142,7 +142,7 @@ CMS platformen
 
 -   ### Joomla
 
-    [![Joomla](Copernicacom/joomla-integration.png "Joomla")](./joomla.md)
+    [![Joomla](../images/joomla-integration.png "Joomla")](./joomla.md)
 
     In Copernica is het mogelijk om je database automatisch aan te
     vullen met gegevens uit Joomla-formulieren.
@@ -154,7 +154,7 @@ CRM systemen
 
 -   ### Exact
 
-    [![Exact](Copernicacom/exact-integration.png "Exact")](./exact.md)
+    [![Exact](../images/exact-integration.png "Exact")](./exact.md)
 
     Verbeter het beheer van je campagnes en workflow met de Exact –
     Copernica connector. De perfecte integratie tussen Copernica en
@@ -166,7 +166,7 @@ CRM systemen
 -   ### Microsoft Dynamics CRM
 
     [![Microsoft Dynamics
-    CRM](Copernicacom/ms-dynamics-integration.png "Microsoft Dynamics CRM")](./microsoft-dynamics-crm.md)
+    CRM](../images/ms-dynamics-integration.png "Microsoft Dynamics CRM")](./microsoft-dynamics-crm.md)
 
     Zorg voor een intensiever en directer contact met je gebruikers met
     de integratie voor Microsoft Dynamics CRM.
@@ -180,7 +180,7 @@ Ontwikkelplatform
 -   ### Microsoft .Net \#
 
     [![Microsoft .Net
-    \#](integrations/net-logo2.jpg "Microsoft .Net #")](./microsoft-net-c.md)
+    \#](../images/net-logo2.jpg "Microsoft .Net #")](./microsoft-net-c.md)
 
     Gebruik de Microsoft .Net \#-integratie om maatwerkapplicaties te
     koppelen aan Copernica.
@@ -194,7 +194,7 @@ Personalisatie tools
 -   WiQhit
     ------
 
-    [![WiqQit](integrations/wiqhit.png "WiqQit")](./wiqhit-voor-e-mailmarketingpersonalisatie.md)
+    [![WiqQit](../images/wiqhit.png "WiqQit")](./wiqhit-voor-e-mailmarketingpersonalisatie.md)
 
     Met de WiQhit-integratie voor Copernica is het mogelijk om in
     real-time de website aan te passen aan de individuele bezoeker en om
@@ -206,7 +206,7 @@ Personalisatie tools
 -   IQNOMY
     ------
 
-    [![IQNOMY](integrations/iqnomy.jpg "IQNOMY")](./iqnomy.md)
+    [![IQNOMY](../images/iqnomy.jpg "IQNOMY")](./iqnomy.md)
 
     Met IQNOMY kun je alle on- en offline kanalen waarmee jouw bedrijf
     in contact staat met (potentiële) klanten koppelen en bundelen zodat
@@ -221,7 +221,7 @@ Analytics
 -   ### Google Analytics
 
     [![Google
-    Analytics](Copernicacom/google-analytics-integration.png "Google Analytics")](./google-analytics.md)
+    Analytics](../images/google-analytics-integration.png "Google Analytics")](./google-analytics.md)
 
     Copernica beschikt over een integratie met Google Analytics waarmee
     je nog beter de prestaties van je marketingcampagnes volgt.
@@ -231,7 +231,7 @@ Analytics
 
 -   ### Klipfolio
 
-    ![Klipfolio](Copernicacom/klipfolio-integration.png "Klipfolio")
+    ![Klipfolio](../images/klipfolio-integration.png "Klipfolio")
 
     Klipfolio zorgt ervoor dat je real-time inzicht krijgt in de
     resultaten van marketingcampagnes zoals die in Copernica zijn
@@ -242,7 +242,7 @@ Analytics
 
 -   ### CloseAlert
 
-    ![CloseAlert](integrations/closealert.png "CloseAlert")
+    ![CloseAlert](../images/closealert.png "CloseAlert")
 
     Voeg gemakkelijk feedback buttons toe aan nieuwsbrieven, actie- en
     loyaltie e-mails, en verstuur de verkregen (negatieve) feedback
@@ -256,7 +256,7 @@ E-mail deliverability
 
 -   ### Litmus
 
-    [![Litmus](Copernicacom/litmus-integration.png "Litmus")](./litmus.md)
+    [![Litmus](../images/litmus-integration.png "Litmus")](./litmus.md)
 
     Controleer de weergave van je e-mailings in de meest populaire
     e-mailprogramma’s.
@@ -266,7 +266,7 @@ E-mail deliverability
 -   ### Return Path
 
     [![Return
-    Path](Copernicacom/return-path-integration.png "Return Path")](./return-path.md)
+    Path](../images/return-path-integration.png "Return Path")](./return-path.md)
 
     Optimaliseer de aflevering van je e-mailings met een Return Path
     Certificering.

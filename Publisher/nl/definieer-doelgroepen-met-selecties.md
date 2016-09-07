@@ -7,7 +7,7 @@ Aan de slag met selecties
 -------------------------
 
 ![Aan de slag met
-selectiess](Copernicacom/nl-selecties.png "Aan de slag met selecties")
+selectiess](../images/nl-selecties.png "Aan de slag met selecties")
 Alle relatiegegevens die je opslaat in Copernica zijn te gebruiken als
 regels voor je selecties. Maak bijvoorbeeld eenvoudig onderscheid tussen
 relaties die wel of niet nieuwsbriefabonnee zijn door middel van

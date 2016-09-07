@@ -1,5 +1,5 @@
 ![responsive design: email for
-mobile](Copernicacom/email-marketing-mobile.jpg "responsive design: email for mobile")
+mobile](../images/email-marketing-mobile.jpg "responsive design: email for mobile")
 In de afgelopen drie jaar is het gebruik van smartphones geëxplodeerd.
 Het wordt voor e-mailmarketers dan ook steeds belangrijker hun [e-mails
 te optimaliseren voor mobiel

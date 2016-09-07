@@ -109,7 +109,7 @@ Gebruik deze selectie conditie om een opgegeven aantal profielen
 alfanumeriek te selecteren.
 
 [Uitgebreide uitleg bij dit type
-conditie](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md)
+conditie](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md)
 
 ### Check op wijziging
 

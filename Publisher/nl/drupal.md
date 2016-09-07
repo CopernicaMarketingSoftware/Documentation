@@ -32,22 +32,19 @@ Voorbeelden van Drupal webshops
 De modules tussen Copernica en Drupal worden o.a. door de volgende
 bekende webshops gebruikt:
 
-+--------------------------------------------------------------------------+
-| ### Coals2U                                                              |
-+--------------------------------------------------------------------------+
-| [![Coals2U](../images/Coals2U-screenshot.PNG)](http://www.coals2u.co.    |
-| uk/)                                                                     |
-+--------------------------------------------------------------------------+
-| Manchester United Soccer Schools                                         |
-+--------------------------------------------------------------------------+
-| [![Manchester United Soccer                                              |
-| Schools](../images/MUSS.PNG)](http://www.manutdsoccerschools.com/)       |
-+--------------------------------------------------------------------------+
-| \                                                                        |
-| [Download de                                                             |
-| modules](#download-drupal-modules "Download de Drupal modules")          |
-| \                                                                        |
-+--------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+| ### Coals2U                                                                |
++----------------------------------------------------------------------------+
+| [![Coals2U](../images/Coals2U-screenshot.PNG)](https://www.coals2u.co.uk/) |
++----------------------------------------------------------------------------+
+| Manchester United Soccer Schools                                           |
++----------------------------------------------------------------------------+
+| [![Manchester United Soccer                                                |
+| Schools](../images/MUSS.PNG)](http://www.manutdsoccerschools.com/)         |
++----------------------------------------------------------------------------+
+| [Download de                                                               |
+| modules](#download-drupal-modules "Download de Drupal modules")            |
++----------------------------------------------------------------------------+
 
 Over de Drupal modules
 ----------------------
