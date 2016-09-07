@@ -151,21 +151,44 @@ inbox queue. You can also instruct MailerQ to modify the incoming messages
 and add an extra "authentication-results" header to the mail.
 
 ```
-smtp-check:         spf,dkim,dmarc
+smtp-check:         spf,dkim,dmarc,spam
 smtp-auth-results:  local,nonlocal
 ```
 
 The "smtp-check" variable in the config file can be set to a comma separated
 list of checks that have to be performed on incoming messages. Supported
-values are "spf", "dkim" and "dmarc". The results of these checks are added
-to the JSON.
+values are "spf", "dkim", "dmarc" and "spam". The results of the checks are 
+added to the JSON.
 
 If you also want to add the check results to the "authentication-results"
-field in the MIME header, you should use the "smtp-auth-results" config
+field in the MIME header, you can use the "smtp-auth-results" config
 file variable. This variable can be set to a comma separated list holding 
 the possible values "local" and "nonlocal". If you set it to "local", the 
 authentication-results header will only be added to incoming emails that were 
 sent to a local email address. The "nonlocal" value does exactly the opposite.
+
+The DKIM, DMARC and SPF checks are all performed by MailerQ ifself. MailerQ has 
+its own embedded algorithms to test whether incoming messages are valid. In 
+practice, it comes down to extracting information from the e-mail, and doing a 
+couple of DNS lookups to check whether the information in the mail matches the
+settings published in DNS.
+
+Besides comparing mails with settings in DNS, MailerQ can also run a spam-check
+on incoming messages. For this, MailerQ uses the open source "SpamAssassin" 
+application. Each incoming message is sent to SpamAssassin to test whether
+it is spam or ham. If you add the "spam" option to the "smtp-check" config 
+file variable, you therefore also need a running SpamAssassin daemon (which
+is normally called "spamd"). The address where this daemon can be reached must
+be set in the config file.
+
+```
+spamassassin-host:  localhost
+spamassassin-port:  783
+```
+
+The above config file settings tell MailerQ that the the SpamAssassin daemon
+is running on the same machine as MailerQ, and that it can be reached on port
+783 (which is SpamAssassin's default port).
 
 
 ### Running behind HAProxy
@@ -263,20 +286,4 @@ better disable this feature in the config file:
 ```
 smtp-extract:       true    (default: true)
 ```
-
-### DKIM and SPF authentication
-
-MailerQ can check whether incoming messages have valid DKIM signatures and
-whether the were sent from an IP address that is listed in SPF. You can
-enable this feature for _all_ incoming messages, or just for messages sent
-to local email addresses.
-
-```
-smtp-check-spf:                 all
-smtp-check-dkim:                all
-smtp-check-dmarc:               all
-smtp-authentication-results:    true
-```
-
-@todo add documentation and implementation
 
