@@ -8,7 +8,7 @@ Hou alles automatisch bij binnen Copernica
 ------------------------------------------
 
 ![Hou alles automatisch bij binnen
-Copernica](Copernicacom/nl-opvolgactie.png "Hou alles automatisch bij binnen Copernica")
+Copernica](../images/nl-opvolgactie.png "Hou alles automatisch bij binnen Copernica")
 
 Geef binnen Copernica zelf aan wat er moet gebeuren met afmeldingen voor
 je nieuwsbrief, foutmeldingen of nieuwe inschrijvingen. Copernica kan
@@ -23,7 +23,7 @@ manieren je profielen verrijken:
     Stel bijvoorbeeld in dat bij registratie van een gekocht product, de
     relatie 1 dag later een e-mail met productinformatie ontvangt.
 -   Met behulp van [webformulieren](./verschillende-soorten-webformulieren.md "Webformulieren maken") en
-    [enquêtes](.//enquetes.md "Enquêtes")
+    [enquêtes](./enquetes.md "Enquêtes")
     gekoppeld aan je database: de wat meer bekende manier van
     profielverrijking. Ingevulde gegevens die nog niet in je database
     stonden, worden zo automatisch opgeslagen.

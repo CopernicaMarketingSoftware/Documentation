@@ -28,6 +28,5 @@ linkerkolom.
 
 Gefeliciteerd! Je heb een nieuw e-mailtemplate aangemaakt!
 
--   **Volgende:** [Document
-    aanmaken](./e-mailings-document-aanmaken "E-mailings: Document aanmaken")
+-   **Volgende:** [Document aanmaken](./e-mailings-document-aanmaken.md "E-mailings: Document aanmaken")
 

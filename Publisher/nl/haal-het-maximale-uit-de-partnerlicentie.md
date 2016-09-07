@@ -37,9 +37,9 @@ templates en formulieren, trainingen en overige diensten.
 partner](../images/register-as-copernica-partner-nl.png)
 
 Ook aan de slag met een partnerlicentie? [Vraag de partnertarieven
-aan](./vraag-partnerprijzen-aan.md "Vraag de partnertarieven aan")
+aan](http://www.copernica.com/nl/partners/vraag-partnerprijzen-aan "Vraag de partnertarieven aan")
 of bezoek één van de [speciale bijeenkomsten voor potentiële
-partners](./productdemonstraties.md).
+partners](http://www.copernica.com/nl/ondersteuning/productdemonstraties).
 
 ### Geef de Registered partner reward een prominente plek
 
@@ -176,7 +176,7 @@ mogelijkheden en toepassingen van Copernica Marketing Software.
 
 Copernica zorgt via het overzicht van
 [evenementen](./evenementen.md "evenementenkalender")
-en [nieuwsbrieven](./aanmelden-nieuwsbrief.md "meld je aan voor onze nieuwsbrief")
+en [nieuwsbrieven](http://www.copernica.com/nl/nieuwsbrief/aanmelden-nieuwsbrief "meld je aan voor onze nieuwsbrief")
 voor de nodige aandacht rondom het seminar.
 
 Neem deel aan een beurs

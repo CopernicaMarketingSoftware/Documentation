@@ -16,7 +16,7 @@ De kracht van de EPiServer integraties
 
 -   Gebruik al je klant - en ordergegevens vanuit EPiServer Commerce om
     je [e-mailings te
-    personaliseren](./maak-zelf-slimme-e-mailings.md "Maak en personaliseer zelf e-mailings")
+    personaliseren](./maak-zelf-slimme-email-templates.md "Maak en personaliseer zelf e-mailings")
 -   Automatische synchronisatie tussen de EPiServer en Copernica
     Marketing Software
 -   Volg [verlaten
@@ -32,24 +32,19 @@ Enkele voorbeelden van EPiServer webwinkels
 Diverse bekende webwinkels maken gebruik van EPiServer en Copernica
 Marketing Software, zoals:
 
-+--------------------------------------------------------------------------+
-| ### Keymusic                                                             |
-+--------------------------------------------------------------------------+
-| [![Keymusic](../images/Keymusic-homepage.jpg)](http://www.keymusic.co    |
-| m/nl/)                                                                   |
-+--------------------------------------------------------------------------+
-| ### Nationale Apotheek                                                   |
-+--------------------------------------------------------------------------+
-| [![Nationale                                                             |
-| Apotheek](../images/nationale-apotheek-homepage.jpg)](https://www.nat    |
-| ionale-apotheek.nl/)                                                     |
-+--------------------------------------------------------------------------+
-| \                                                                        |
-| [Download de                                                             |
-| integraties](#episerver-integrations "Download de EPiServer integraties" |
-| )                                                                        |
-| \                                                                        |
-+--------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+| ### Keymusic                                                                              |
++-------------------------------------------------------------------------------------------+
+| [![Keymusic](../images/Keymusic-homepage.jpg)](http://www.keymusic.com/nl/)               |
++-------------------------------------------------------------------------------------------+
+| ### Nationale Apotheek                                                                    |
++-------------------------------------------------------------------------------------------+
+| [![Nationale                                                                              |
+| Apotheek](../images/nationale-apotheek-homepage.jpg)](https://www.nationale-apotheek.nl/) |
++-------------------------------------------------------------------------------------------+
+| [Download de                                                                              |
+| integraties](#episerver-integrations "Download de EPiServer integraties")                 |
++-------------------------------------------------------------------------------------------+
 
 Inspiratie voor jouw EPiServer webwinkel
 ----------------------------------------
