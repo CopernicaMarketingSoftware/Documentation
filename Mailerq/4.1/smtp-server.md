@@ -145,7 +145,7 @@ post the message to this reports queue.
 
 ### Testing incoming messages
 
-MailerQ can run SPF, DKIM and DMARC authentication checks on incoming messages. 
+MailerQ can run SPF, DKIM, DMARC and spam checks on incoming messages. 
 The results of these checks are added to the JSON that is published to the 
 inbox queue. You can also instruct MailerQ to modify the incoming messages 
 and add an extra "authentication-results" header to the mail.
@@ -186,7 +186,7 @@ spamassassin-host:  localhost
 spamassassin-port:  783
 ```
 
-The above config file settings tell MailerQ that the the SpamAssassin daemon
+The above config file settings tells MailerQ that the the SpamAssassin daemon
 is running on the same machine as MailerQ, and that it can be reached on port
 783 (which is SpamAssassin's default port).
 
