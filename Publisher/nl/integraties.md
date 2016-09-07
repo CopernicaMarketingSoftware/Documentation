@@ -186,7 +186,7 @@ Ontwikkelplatform
     koppelen aan Copernica.
 
     [Meer over Microsoft .Net
-    \#](./microsoft-net-c.md "Microsoft .Net #")
+    \#](../en/microsoft-net-c.md "Microsoft .Net #")
 
 Personalisatie tools
 --------------------
