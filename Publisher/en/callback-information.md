@@ -91,5 +91,5 @@ with callbackID
 -   [Register your app and obtain your access
     token](./register-your-app-on-copernica-com.md)
 -   [PHP example scripts for POST, GET and DELETE requests](./example-get-post-and-delete-requests.md)
--   [REST API resources / methods](requests-index.html)
+-   [REST API resources / methods](./the-copernica-rest-api.md)
 
