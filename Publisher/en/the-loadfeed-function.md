@@ -29,7 +29,7 @@ Load feed tag in the text block rich text editor
 The loadfeed function has one optional parameter: **xslt=**
 
 Without this parameter, the system will automatically fallback on the
-[default XSLT](#) provided by the marketing software.
+default XSLT provided by the marketing software.
 
 `{loadfeed feed='name' xslt='namexslt'}`
 

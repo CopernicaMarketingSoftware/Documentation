@@ -122,8 +122,8 @@ data, without the risk of losing data.
 ### Extra options:
 
 **Date Format**: If you get a warning about non-compatible dates in your
-import file, refer to the article about [importing data to date
-fields](#).
+import file, refer to the article about importing data to date
+fields.
 
 **Notification:**If desired, you can get set that an email notification
 should be sent once the import is finished.

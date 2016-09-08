@@ -1,5 +1,5 @@
 Gebruik dit selectietype om profielen te selecteren die zijn
-[geëxporteerd](#) gedurende een bepaalde periode.
+geëxporteerd gedurende een bepaalde periode.
 
 Gebruik de twee kalenders om aan te geven wanneer de export moet hebben
 plaatsgevonden. Wanneer je kiest voor een [variabele datum](#), zal de

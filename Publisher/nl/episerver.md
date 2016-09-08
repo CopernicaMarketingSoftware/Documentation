@@ -7,23 +7,19 @@ momenteel over twee verschillende EpiServer integraties, de EpiServer
 CMS6 integratie en de EpiServer CMS7 + Commerce integratie.
 
 [![EPiServer Copernica
-integration](../images/episerver-copernica-integration-nl.png "EPiServer en Copernica")](#episerver-integrations)\
+integration](../images/episerver-copernica-integration-nl.png "EPiServer en Copernica")](#download)
 
-[Download de integraties](#episerver-integrations "Download de EPiServer integraties")
+[Download de integraties](#download "Download de EPiServer integraties")
 
 De kracht van de EPiServer integraties
 --------------------------------------
 
 -   Gebruik al je klant - en ordergegevens vanuit EPiServer Commerce om
-    je [e-mailings te
-    personaliseren](./maak-zelf-slimme-email-templates.md "Maak en personaliseer zelf e-mailings")
--   Automatische synchronisatie tussen de EPiServer en Copernica
-    Marketing Software
--   Volg [verlaten
-    winkelwagentjes](./automatiseer-je-campagnes.md "Automatiseer je campagnes")
+    je [e-mailings te personaliseren](./maak-zelf-slimme-email-templates.md "Maak en personaliseer zelf e-mailings")
+-   Automatische synchronisatie tussen de EPiServer en Copernica Marketing Software
+-   Volg [verlaten winkelwagentjes](./automatiseer-je-campagnes.md "Automatiseer je campagnes")
     automatisch op per e-mail
--   Stuur je trouwste klanten een persoonlijke kortingscode die ze
-    kunnen gebruiken in je webshop
+-   Stuur je trouwste klanten een persoonlijke kortingscode die ze kunnen gebruiken in je webshop
 -   Geschikt voor zowel CMS6 als CMS7
 
 Enkele voorbeelden van EPiServer webwinkels
@@ -43,7 +39,7 @@ Marketing Software, zoals:
 | Apotheek](../images/nationale-apotheek-homepage.jpg)](https://www.nationale-apotheek.nl/) |
 +-------------------------------------------------------------------------------------------+
 | [Download de                                                                              |
-| integraties](#episerver-integrations "Download de EPiServer integraties")                 |
+| integraties](#download "Download de EPiServer integraties")                 |
 +-------------------------------------------------------------------------------------------+
 
 Inspiratie voor jouw EPiServer webwinkel

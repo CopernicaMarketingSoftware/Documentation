@@ -7,19 +7,17 @@ Haal het maximale uit de partnerlicentie door toepassing van het
 volgende:
 
 -   [Registreer je als partner](#registreer-je-als-partner)
--   [Vermeld het partnership op je website](#vermeld-het-partnership)
--   [Word een Copernica expert](#Copernica-expert)
+-   [Vermeld het partnership op je website](#vermeld-het-partnership-op-je-website)
+-   [Word een Copernica expert](#word-een-copernica-expert)
 -   [Leer relaties te overtuigen](#leer-relaties-te-overtuigen)
--   [Profileer je als expert op het gebruikersforum](#forum)
--   [Zet Copernica in voor eigen
-    marketingactiviteiten](#zet-Copernica-in)
--   [Vraag tevreden klanten om een review](#reviews)
--   [Publiceer gezamenlijke content](#gezamenlijke-content)
--   [Organiseer een gezamenlijk seminar](#seminar-organiseren)
--   [Neem deel aan een beurs](#beurzen)
+-   [Profileer je als expert op het gebruikersforum](#profileer-je-als-expert-op-het-gebruikersforum)
+-   [Zet Copernica in voor eigen marketingactiviteiten](#zet-Copernica-in-voor-je-eigen-marketingactiviteiten)
+-   [Vraag tevreden klanten om een review](#vraag-tevreden-klanten-om-een-review)
+-   [Publiceer gezamenlijke content](#publiceer-gezamenlijke-content)
+-   [Organiseer een gezamenlijk seminar](#organiseer-een-gezamenlijk-seminar)
+-   [Neem deel aan een beurs](#neem-deel-aan-een-beurs)
 
-Registreer je als partner
--------------------------
+### Registreer je als partner
 
 Profileer je bureau richting de ruim 5.000 Copernica gebruikers.
 Registreren als partner gaat snel en eenvoudig. [Log daarvoor in op je
@@ -33,8 +31,7 @@ Hierdoor kan een gebruiker van Copernica contact met je opnemen voor
 ondersteuning bij het opzetten van integraties, ontwikkelen van
 templates en formulieren, trainingen en overige diensten.
 
-![Registreer je als
-partner](../images/register-as-copernica-partner-nl.png)
+![Registreer je als partner](../images/register-as-copernica-partner-nl.png)
 
 Ook aan de slag met een partnerlicentie? [Vraag de partnertarieven
 aan](http://www.copernica.com/nl/partners/vraag-partnerprijzen-aan "Vraag de partnertarieven aan")
@@ -53,8 +50,7 @@ geregistreerd als partner en heb je nog geen Registered partner reward
 ontvangen? [Neem dan contact met ons
 op.](./neem-contact-met-ons-op.md "Neem contact met ons op")
 
-Vermeld het partnership op je website
--------------------------------------
+### Vermeld het partnership op je website
 
 [![Registered partner
 logo](../images/Copernica-registered-partner-logo.png "Registered partner logo")](./mediabronnen.md)
@@ -69,8 +65,7 @@ Plaats daarnaast op je website informatie [over Copernica Marketing
 Software](./mediabronnen.md "Over Copernica Marketing Software")
 en de toegevoegde waarde van je bureau.
 
-Word een Copernica expert
--------------------------
+### Word een Copernica expert
 
 Een eerste vereiste om Copernica Marketing Software succesvol in te
 zetten, is bekend raken met [de functies van de
@@ -84,8 +79,7 @@ organiseert Copernica, op het hoofdkantoor in Amsterdam, maandelijks
 [basistrainingen](./copernica-training.md)
 en [gevorderdentrainingen](./copernica-training.md).
 
-Leer relaties te overtuigen
----------------------------
+### Leer relaties te overtuigen
 
 Om relaties te overtuigen van de beste oplossing, is het belangrijk om,
 naast productkennis, ook te beschikken over verkoopkennis. Ieder
@@ -104,16 +98,14 @@ Bekijk een overzicht van [ingeplande
 partnerdagen](./evenementen.md "evenementen")
 en meld je aan.
 
-Profileer je als expert op het gebruikersforum
-----------------------------------------------
+### Profileer je als expert op het gebruikersforum
 
 Op het [gebruikersforum](https://www.copernica.com/nl/forum/) wordt er
 door Copernica-gebruikers dagelijks gediscussieerd over de software en
 e-mail marketing. Ben jij een email marketing expert? Deel dan jouw
 kennis en kom in contact met potentiele klanten.
 
-Zet Copernica in voor eigen marketingactiviteiten
--------------------------------------------------
+### Zet Copernica in voor eigen marketingactiviteiten
 
 Natuurlijk zet je Copernica Marketing Software ook in voor de
 marketingactiviteiten van je eigen bureau. Zo doe je belangrijke
@@ -122,17 +114,14 @@ krachtige mogelijkheden van Copernica aan je eigen relaties. Stuur
 bijvoorbeeld regelmatig een nieuwsbrief met je meest recente cases of
 zet een uitnodigingstraject op voor een seminar.
 
-Vraag tevreden klanten om een review
-------------------------------------
+### Vraag tevreden klanten om een review
 
 Zorg jij ervoor dat je klanten tevreden over je zijn? En durf je dat te
 bewijzen? Vraag je klanten dan een review op het partneroverzicht achter
 te laten. Weinig is zo krachtig als een positieve beoordeling,
-[beoordeel het
-zelf](https://www.copernica.com/nl/partners/profile/4541127 "reviews").
+[beoordeel het zelf](https://www.copernica.com/nl/partners/profile/4541127 "reviews").
 
-Publiceer gezamenlijke content
-------------------------------
+### Publiceer gezamenlijke content
 
 Partners kunnen op Copernica.com en op externe blogsites inhoudelijke
 artikelen publiceren, over succesvolle cases rondom de inzet van
@@ -164,8 +153,7 @@ die eerder door Copernica zijn geschreven, mag je als partner op je
 website plaatsen. We vragen je dan wel duidelijk te vermelden dat de
 content afkomstig is van Copernica via de juiste links.
 
-Organiseer een gezamenlijk seminar
-----------------------------------
+### Organiseer een gezamenlijk seminar
 
 Een seminar is een ideale manier om een groot aantal relaties in één
 keer te bereiken. Tijdens een seminar deel je als partner je unieke
@@ -179,8 +167,7 @@ Copernica zorgt via het overzicht van
 en [nieuwsbrieven](http://www.copernica.com/nl/nieuwsbrief/aanmelden-nieuwsbrief "meld je aan voor onze nieuwsbrief")
 voor de nodige aandacht rondom het seminar.
 
-Neem deel aan een beurs
------------------------
+### Neem deel aan een beurs
 
 Copernica neemt regelmatig samen met partners deel aan prominente
 vakbeurzen. Als deelnemende partner krijg je een eigen desk op de
@@ -189,8 +176,7 @@ de kosten neemt Copernica de gehele organisatie voor haar rekening en
 biedt rondom de beurs professionele begeleiding. Door gezamenlijke
 deelname aan een vakbeurs doe je een groot aantal nieuwe contacten op.
 
-Kijk op de
-[evenementenpagina](./evenementen.md "evenementen")
+Kijk op de [evenementenpagina](./evenementen.md "evenementen")
 voor een overzicht van beschikbare plaatsen.
 
 Naast deelname aan vakbeurzen, organiseert Copernica jaarlijks samen met

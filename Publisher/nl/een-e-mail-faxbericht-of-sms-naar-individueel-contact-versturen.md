@@ -7,7 +7,7 @@ wilt versturen (e-mail, sms of fax)
 
 Je krijgt vervolgens een lijst van documenten te zien die hiervoor in
 aanmerking komen. Staat je document er niet tussen? Ga dan naar het
-document zelf, en selecteer bij de [toegangsrechten](#) de optie dat het
+document zelf, en selecteer bij de toegangsrechten de optie dat het
 document ook individueel verstuurd mag worden.
 
 Kies het document dat je wilt versturen, en klik op**Volgende**

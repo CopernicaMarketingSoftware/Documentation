@@ -22,10 +22,9 @@ From the *Website *menu, choose *New website*
 The website has no pages yet. To make a web page, you need a web
 template first.
 
-[Read how you can make a web
-template](./create-web-template.md)
+[Read how you can make a web template](./create-web-template.md)
 
 ### Charging of websites
 
-A website and its web pages are only charged when a [valid domain is
-linked to the website](#).
+A website and its web pages are only charged when a valid domain is
+linked to the website.

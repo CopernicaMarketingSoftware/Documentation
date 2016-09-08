@@ -2,13 +2,12 @@ Ben je van plan Copernica te vermelden in je media uitingen? Op deze
 pagina vind je verschillende mediabronnen en de richtlijnen voor het
 vermelden van Copernica in je media uitingen.
 
--   [Content van Copernica.com gebruiken](#content-gebruiken)
--   [Copernica logo](#Copernica-logo)
--   [Registered partner logo](#Registered-partner-logo)
--   [Powered by Copernica logo](#Powered-by-Copernica-logo)
--   [Over Copernica Marketing
-    Software](#Over-Copernica-Marketing-Software)
--   [Copernica productvideo](#Copernica-productvideo)
+-   [Content van Copernica.com gebruiken](#content-van-copernica-com-gebruiken)
+-   [Copernica logo](#copernica-marketing-software-media-logo)
+-   [Registered partner logo](#copernica-marketing-software-registered-partner-logo)
+-   [Powered by Copernica logo](#powered-by-copernica-logo)
+-   [Over Copernica Marketing Software](#over-copernica-marketing-software)
+-   [Copernica productvideo](#copernica-productvideo)
 
 Content van Copernica.com gebruiken
 -----------------------------------

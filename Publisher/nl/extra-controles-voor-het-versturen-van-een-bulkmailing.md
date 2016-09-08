@@ -9,45 +9,42 @@ de beste afleverresultaten.
 
 ### Controle op afzenderadres en afzender
 
--   [Geen afzenderadres ingesteld](#afzender1)
--   [Het afzenderadres bestaat niet](#afzender2)
--   [Het SPF is niet correct](#afzender3)
--   [Sender ID is niet correct](#afzender4)
+-   [Geen afzenderadres ingesteld](#geen-afzenderadres-ingesteld)
+-   [Het afzenderadres bestaat niet](#het-afzenderadres-bestaat-niet)
+-   [Het SPF is niet correct](#het-spf-is-niet-correct)
+-   [Sender ID is niet correct](#sender-id-is-niet-correct)
 
 ### Blacklists
 
--   [Het IP-adres is geblacklist](#blacklists1)
+-   [Het IP-adres is geblacklist](#het-ip-adres-is-geblacklist)
 
 ### DKIM Check
 
--   [Controle op correcte configuratie van DKIM](#DKIM1)
+-   [Controle op correcte configuratie van DKIM](#we-controleren-of-de-dkim-sleutel-correct-geconfigureerd-is)
 
 ### Server settings check
 
--   [MX-record verwijst naar het verkeerde IP adres](#server1)
--   [Het MX record verwijst niet naar een host die refereert aan het
-    IP-adres van de applicatie](#server2)
--   [Het verzend-IP is niet geregistreerd in het SPF-record van uw
-    domein](#server3)
--   [Syntax error in SPF-record](#server4)
--   [Tijdelijke DNS fout bij SPF check](#server5)
--   [Er is geen SPF-record voor het domein](#server6)
--   [Picserver domein](#server7)
+-   [MX-record verwijst naar het verkeerde IP adres](#mx-record-verwijst-naar-het-verkeerde-IP-adres)
+-   [Het MX record verwijst niet naar een host die refereert aan het IP-adres van de applicatie](#het-mx-record-verwijst-niet-naar-een-host-die-refereert-aan-het-ip-adres-van-de-applicatie)
+-   [Het verzend-IP is niet geregistreerd in het SPF-record van uw domein](#het-verzend-ip-is-niet-geregistreerd-in-het-spf-record-van-uw-domein)
+-   [Syntax error in SPF-record](#syntax-error-in-spf-record)
+-   [Tijdelijke DNS fout bij SPF check](#tijdelijke-dns-fout-bij-spf-check)
+-   [Er is geen SPF-record voor het domein](#er-is-geen-spf-record-voor-het-domein)
+-   [Picserver domein](#picserver-domein)
 
 ### Spamscore check
 
--   [Controle op de spamscore van het document](#spamscore1)
+-   [Controle op de spamscore van het document](#spamscore-checken)
 
 ### Controle op bestemming
 
--   [Geen uitschrijfgedrag ingesteld](#bestemming1)
--   [Geen uitschrijfheader geactiveerd](#bestemming2)
+-   [Geen uitschrijfgedrag ingesteld](#controle-op-bestemming)
+-   [Geen uitschrijfheader geactiveerd](#geen-uitschrijfgedrag-ingesteld)
 
 ### Controle op de inhoud van het document
 
--   [Gebruik van technieken die niet of nauwelijks worden ondersteund in
-    e-maildocumenten](#inhoud1)
--   [Geen tekstversie](#inhoud2)
+-   [Gebruik van technieken die niet of nauwelijks worden ondersteund in e-maildocumenten](#controle-op-de-inhoud-van-het-document)
+-   [Geen tekstversie](#geen-tekstversie)
 
 Afzenderadres check
 -------------------
@@ -59,12 +56,11 @@ zijn voorzien van een geldig afzenderadres (het ‘from’ adres). Dit is
 het adres dat voor de ontvanger van de e-mail zichtbaar is als afzender
 van het bericht.
 
-**Afzenderadres instellen**\
- Het afzenderadres stelt u in direct boven het document. Bekijk het
+**Afzenderadres instellen**
+Het afzenderadres stelt u in direct boven het document. Bekijk het
 volledige artikel over het instellen van de e-mail headers.
 
--   [Het onderwerp en afzenderadres
-    instellen](./het-onderwerp-en-afzenderadres-instellen.md)
+-   [Het onderwerp en afzenderadres instellen](./het-onderwerp-en-afzenderadres-instellen.md)
 
 ### Het afzenderadres bestaat niet
 
@@ -75,8 +71,7 @@ afzenderadres. Gebruik dus te allen tijde een bestaand e-mailadres. Ook
 als u gebruik maakt van een no-reply@uwbedrijf.nl zorgt u ervoor dat op
 dit adres e-mails kunnen worden afgeleverd.
 
-**Ik krijg deze melding, terwijl ik zeker weet dat het adres wel
-bestaat**
+**Ik krijg deze melding, terwijl ik zeker weet dat het adres wel bestaat**
 
 1.  Het e-mailadres kan tijdelijk niet bereikbaar zijn. Controleer of
     andere e-mails normaal worden afgeleverd op dit adres.

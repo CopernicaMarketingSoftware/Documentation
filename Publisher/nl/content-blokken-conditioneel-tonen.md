@@ -27,8 +27,6 @@ hebt, en je wilt Amsterdammers niet tegen het zere been schoppen.
 
 > `{if $profile.plaats != "Amsterdam"} [text name="artikel"] {/if} `
 
--   [Meer lezen over smarty if en else constructies](#)
-
 ### Met behulp van de content block conditie editor
 
 Met de content block conditie editor kan je blokken tonen of juist
@@ -63,11 +61,8 @@ worden.
 *Afbeelding - condities instellen bij een content blok, met behulp van
 de eenvoudige script editor*
 
-Voor het maken van de condities kan je zowel de [Eenvoudige script
-editor](./de-eenvoudige-script-editor.md)
-en de [JavaScript
-editor](./geavanceerde-javascript-condities.md)
-gebruik maken.
+Voor het maken van de condities kan je zowel de [Eenvoudige script editor](./de-eenvoudige-script-editor.md)
+en de [JavaScript editor](./geavanceerde-javascript-condities.md) gebruik maken.
 
 ### Extra (geavanceerde) opties voor loop blokken
 

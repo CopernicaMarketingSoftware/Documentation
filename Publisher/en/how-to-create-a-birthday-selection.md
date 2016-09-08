@@ -14,7 +14,7 @@ we must use the variable date.
     people who are literally born today. Not a big chance that you'll
     have any of such in your database.
 
-[Schedule a daily mailing](#) to this selection. Make sure you test the
+Schedule a daily mailing to this selection. Make sure you test the
 mailing before you reveal the final campaign.
 
 ![cake](../images/cake.png)

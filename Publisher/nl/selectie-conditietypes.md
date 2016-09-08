@@ -7,9 +7,8 @@ verschillende conditietypes beschikbaar.
 Een selectie maak je op profielen, subprofielen (miniselectie) of een
 andere selectie (subselectie). Een selectie kan meerdere voorwaarden
 bevatten (EN selectie) of kijken naar losse voorwaarden gelijktijdig (OF
-selectie). \
-\
- Je kan bij het maken van selecties kiezen uit een groot aantal
+selectie).
+Je kan bij het maken van selecties kiezen uit een groot aantal
 conditietypen. Onderstaand worden deze beknopt toegelicht.
 
 ![](../images/selectionstypes.png)
@@ -61,8 +60,8 @@ conditie niet meer nodig hebt, verwijder of deactiveer deze dan.
 
 Met dit selectietype kan je profielen selecteren die meerdere keren
 voorkomen, of profielen die juist een enkele keer voorkomen in de
-database.\
- Er zijn verschillende wijzen waarop je deze dubbele en enkele profielen
+database.
+Er zijn verschillende wijzen waarop je deze dubbele en enkele profielen
 kunt filteren.
 
 -   Kies eerst welke profielen je wilt opnemen in de selectie.
@@ -75,7 +74,7 @@ dubbele profielen actief uit te sluiten van je nieuwsbriefselectie.
 
 ### Check op interesse
 
-Selecteer profielen die een bepaalde [interesse](#) hebben. Bijvoorbeeld
+Selecteer profielen die een bepaalde interesse hebben. Bijvoorbeeld
 'patat' of 'pannekoeken'.
 
 ### Check op resultaten enquetes

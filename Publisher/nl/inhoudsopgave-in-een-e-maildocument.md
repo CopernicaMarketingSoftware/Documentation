@@ -2,9 +2,6 @@ Dit artikel laat zien hoe je een gemakkelijk onderhoudbare inhoudsopgave
 kan maken in een e-maildocument waarin verschillende artikelen worden
 herhaald middels een loopblok.
 
-[Dit is een voorbeeldanker, klik op mij om naar een artikel te
-gaan ](#art1)
-
 ### Het gebruik van HTML ankers
 
 HTML ankers worden veelal gebruikt voor het maken van een inhoudsopgave.
@@ -41,27 +38,3 @@ de individuele artikelen te verwijzen.
 `<a href="#article0">Ga naar eerste artikel</a> <br/> <a href="#article1">Ga naar tweede artikel</a>`
 
 ![](../images/loopblock.png)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- Hallo!

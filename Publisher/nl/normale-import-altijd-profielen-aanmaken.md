@@ -3,7 +3,7 @@ Normale import (altijd profielen aanmaken)
 
 Deze handleiding helpt je bij het importeren van profielen naar een
 database in de marketing software. Raadpleeg voor de eerste stappen het
-[bovenliggende artikel](#).
+bovenliggende artikel.
 
 **Let op:**met deze import worden profielen ALTIJD AANGEMAAKT. Wanneer u
 de gegevens in uw database wilt bijwerken gegevens uit het

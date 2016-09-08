@@ -6,7 +6,7 @@ want to reset the results to none.
 
 You can find the option to do so in the **Survey**menu.
 
-Make sure to [export](#) the existing results first before you reset, if
+Make sure to export the existing results first before you reset, if
 you wish to save them for later.
 
 The software will always double check with you if you really want to

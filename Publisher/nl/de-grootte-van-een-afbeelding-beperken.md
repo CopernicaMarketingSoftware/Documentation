@@ -9,4 +9,4 @@ Een afbeelding die later in wordt geladen in dit blok zal niet groter
 worden getoond dan 100 x 100 pixels.
 
 Hetzelfde kan worden bewerkstelligd via het Template menu \>
-[Blokstructuur inzien...](#)
+Blokstructuur inzien...

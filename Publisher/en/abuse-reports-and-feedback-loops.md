@@ -26,11 +26,10 @@ your sender reputation and the deliverability of your emails. Abuse
 reports will be reported back to you as part of the email statistics
 with each mailing and on a general overview in emailings.
 
--   [Yahoo](http://feedbackloop.yahoo.net/) (requires use of [DKIM](#))
+-   [Yahoo](http://feedbackloop.yahoo.net/) (requires use of DKIM)
 -   [AOL.com](http://postmaster.aol.com/cgi-bin/fbl.pl)
 -   [OpenSRS / Tucows](http://fbl.hostedemail.com/)
--   [MSN / Live
-    email](https://support.msn.com/eform.aspx?productKey=edfsjmrpp&ct=eformts)
+-   [MSN / Live email](https://support.msn.com/eform.aspx?productKey=edfsjmrpp&ct=eformts)
     (already done by us)
 -   [Comcast](http://feedback.comcast.net/)
 -   [United

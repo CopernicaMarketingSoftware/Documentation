@@ -1,6 +1,6 @@
 Wanneer een ontvanger van een e-mail het bericht als spam noteert, dan
 kan de applicatie hierover worden geinformeerd (zie artikel over
-[Feedback Loops](#)). In ieder geval worden alle spamklachten die zijn
+Feedback Loops). In ieder geval worden alle spamklachten die zijn
 ingediend vanaf een Microsoft adres (o.a. Hotmail en Live) automatisch
 geregistreerd door Copernica.
 

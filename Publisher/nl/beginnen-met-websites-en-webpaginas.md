@@ -7,17 +7,16 @@ van een eerste website.
 Inhoudsopgave
 -------------
 
--   [Templates en webpagina's](#1)
--   [Nieuwe website maken](#2)
--   [Nieuwe webtemplate maken](#3)
--   [Webpagina maken](#4)
--   [Formulier of enquete publiceren](#5)
--   [Domein koppelen aan website](#6)
--   [Naar webpagina linken vanuit een emailing](#7)
--   [Standaardpagina, foutpagina en loginpagina instellen](#8)
--   [Webpagina afschermen voor niet-ingelogde gebruikers of alle
-    gebruikers](#9)
--   [Bestanden en afbeeldingen beheren](#10)
+-   [Templates en webpagina's](#templates-en-webpaginas)
+-   [Nieuwe website maken](#nieuwe-website-maken)
+-   [Nieuwe webtemplate maken](#webtemplate-maken)
+-   [Webpagina maken](#webpagina-maken)
+-   [Formulier of enquete publiceren](#formulier-feed-of-enquete-publiceren)
+-   [Domein koppelen aan website](#domein-koppelen-aan-website)
+-   [Naar webpagina linken vanuit een emailing](#naar-webpagina-linken-vanuit-e-mailing)
+-   [Standaardpagina, foutpagina en loginpagina instellen](#standaardpagina-foutpagina-en-loginpagina-instellen)
+-   [Webpagina afschermen voor niet-ingelogde gebruikers of alle gebruikers](#webpagina-afschermen-voor-niet-ingelogde-gebruikers-of-alle-gebruikers)
+-   [Bestanden en afbeeldingen beheren](#bestanden-en-afbeeldingen-beheren)
 
 Templates en webpagina's
 ------------------------
@@ -78,8 +77,7 @@ template importeren vanaf je computer.
     e-mailtemplate kan zonder problemen worden bewerkt / aangepast. Dit
     heeft geen invloed op de originele e-mailtemplate.
 
-[Meer lezen over het maken van
-templates](./templates-en-documenten.md)
+[Meer lezen over het maken van templates](./templates-en-documenten.md)
 
 Webpagina maken
 ---------------
@@ -144,10 +142,8 @@ Om een CNAME aan te maken heb je dus toegang nodig tot het domeinbeheer
 van je bedrijfsdomein. Het kan dus zijn dat je hiervoor even de
 netwerk/systeembeheerder moet lastigvallen.
 
--   [Meer lezen over het koppelen van een
-    domeinnaam](./een-domeinnaam-koppelen-aan-een-website.md)
--   [Meer lezen over het maken een van CNAME
-    record](http://support.google.com/blogger/bin/answer.py?hl=nl&answer=58317)
+-   [Meer lezen over het koppelen van een domeinnaam](./een-domeinnaam-koppelen-aan-een-website.md)
+-   [Meer lezen over het maken een van CNAME record](http://support.google.com/blogger/bin/answer.py?hl=nl&answer=58317)
 
 Naar webpagina linken vanuit een e-mailing
 ------------------------------------------
@@ -227,6 +223,4 @@ bestand, bijvoorbeeld \<img src="afbeelding.png"\>, of je kan de
 geuploade afbeelding aan een document toevoegen middels een
 afbeeldingblok.
 
--   [Meer lezen over het beheren van bestanden een
-    afbeeldingen](./beheren-van-afbeeldingen-en-bestanden.md)
-
+-   [Meer lezen over het beheren van bestanden een afbeeldingen](./beheren-van-afbeeldingen-en-bestanden.md)

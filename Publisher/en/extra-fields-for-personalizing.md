@@ -30,7 +30,7 @@ settings. You can access the field and change the value to 'blue' or
 changing the set-up of the template.
 
 When editing the document, you can adjust the extra personalization
-fields via the [Personalization Settings](#) menu, which can be found in
+fields via the Personalization Settings menu, which can be found in
 the bottom left corner of the document work space. See image below,
 where the extra personalization field 'background' is set to black.
 

@@ -26,7 +26,7 @@ and link it to the database containing your subscribers.
 
 **Tip.** You can write a value to the database that is different from
 the value that is shown in the web form by placing two colons (::)
-in-between the two values, as follows: \
+in-between the two values, as follows:
 Yes::Yeah, I would like to receive your news letter!
 
 ![](../images/1.png)
@@ -54,8 +54,8 @@ mentioned here can be ignored in the wizard).
 
 ![](../images/2.png)
 
-The web form is now ready to do the job. [Publish the web form on a
-webpage](#) and [test it in your browser](#).Your new web form will look
+The web form is now ready to do the job. Publish the web form on a
+webpage and test it in your browser.Your new web form will look
 something like this (probably not in Dutch and with those ugly grey
 Windows XP design form elements, but you get the idea).
 

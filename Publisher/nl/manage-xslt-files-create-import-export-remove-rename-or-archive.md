@@ -14,10 +14,10 @@ leave out headers from all RSS articles or break off all articles after
 
 you can find the actions from this article in the XSLT menu under Style
 
-Custom XSLTs can be easily **previewed** from the [Preview tab](#) under
-content.\
-**Assign a XSLT to a Content item** (e.g., a web form) as follows: \
-\
+Custom XSLTs can be easily **previewed** from the Preview tab under
+content.
+**Assign a XSLT to a Content item** (e.g., a web form) as follows:
+
 `{webform xslt="yourcustomxslt"}`
 
 Creating an XSLT
@@ -45,9 +45,9 @@ Removing an XSLT
 ----------------
 
 An XSLT which is removed from Style is irretrievable. Publications
-making use of it will no longer function.\
-\
- You may remove the file through the XSLT menu, but you may wish to
+making use of it will no longer function.
+
+You may remove the file through the XSLT menu, but you may wish to
 archive instead to preserve a copy of the file.
 
 Exporting an XSLT
@@ -74,7 +74,5 @@ Further reading
 -   [A great reference on
     XSLT](http://www.zvon.org/xxl/XSLTreference/Output/index.html)
 -   [W3C XSL Tutorial](http://www.w3schools.com/xsl/)
--   Please read about [choosing between an XSLT and CSS](#)
--   Creating XSLT files requires knowledge of
-    [XML](http://w3schools.com/xsl/default.asp).
+-   Creating XSLT files requires knowledge of [XML](http://w3schools.com/xsl/default.asp).
 

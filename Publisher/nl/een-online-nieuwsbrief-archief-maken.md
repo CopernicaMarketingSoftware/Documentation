@@ -13,5 +13,3 @@ vermelden, als volgt:
 #### **Voorbeeld van linkemail tag in een webpagina**
 
 `<a  href="{linkemail template='name of template' document='newsletter  jan'}>Read our January edition</a><br/> <a  href="{linkemail template='name of template' document='newsletter  feb'}>Read our February edition</a>`
-
-[Meer lezen over de Link Email tag](#)

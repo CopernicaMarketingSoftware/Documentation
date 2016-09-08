@@ -6,7 +6,7 @@ Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
 plaatsen, loont het om [verlaten
-winkelmandjes](./3-ways-that-web-shops-are-missing-out-on-business.md) beter
+winkelmandjes](../en/3-ways-that-web-shops-are-missing-out-on-business.md) beter
 onder de aandacht te brengen. Een email campagne die hierbij past is een
 campagne voor verlaten winkelmandjes. Daarmee stuur je een email zodra
 een klant een winkelmandje in je webshop achterlaat.

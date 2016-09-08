@@ -7,11 +7,11 @@ Hoe genereer je inkomsten met een Copernica partnerlicentie?
 Op de volgende manieren zorg je ervoor dat je als bureau het maximale
 haalt uit de partnerlicentie:
 
--   [Accounts en gebruikers](#AccountsGebruikers)
--   [Variabelen](#Variabelen)
--   [Commissie](#Commissie)
--   [Diensten](#Diensten)
--   [Integraties](#Integraties)
+-   [Accounts en gebruikers](#accounts-en-gebruikers)
+-   [Variabelen](#variabelen)
+-   [Commissie](#ontvang-commissie-van-copernicagebruikers)
+-   [Diensten](#diensten)
+-   [Integraties](#integraties)
 
 Accounts en gebruikers
 ----------------------

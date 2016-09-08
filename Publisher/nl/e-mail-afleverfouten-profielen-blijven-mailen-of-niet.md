@@ -20,7 +20,7 @@ je vervolgens uitsluiten van je [nieuwsbrief selectie](#).
 **Wat te doen met de hardbouncende profielen?**
 
 Je kan ze in ieder geval niet e-mailen. Je kan allereerst proberen de
-[adressen te repareren](#). Als dat niet is gelukt voor een aantal
+adressen te repareren. Als dat niet is gelukt voor een aantal
 adressen, dan zul je ze op een andere wijze moeten benaderen
 (briefkaart, telefoon, morse) om een correct adres te verkrijgen. Als je
 geen verdere gegevens bezit over het profiel, dan kan je deze het beste

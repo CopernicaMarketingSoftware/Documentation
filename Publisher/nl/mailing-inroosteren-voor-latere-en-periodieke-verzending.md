@@ -37,8 +37,6 @@ op dat moment in de doelselectie of miniselectie zitten.
     te herhalen.
 -   Klik op *volgende*om naar de volgende stap te gaan.
 
-Je kan van een ingeroostere mailing achteraf de [verzendinstellingen
-bewerken](#) en het is uiteraard ook mogelijk om de mailing te
-[annuleren](#).
-
- 
+Je kan van een ingeroostere mailing achteraf de verzendinstellingen
+bewerken en het is uiteraard ook mogelijk om de mailing te
+annuleren.

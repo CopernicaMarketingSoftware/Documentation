@@ -10,7 +10,7 @@ speciale tag.
 [Meer informatie over deze tag](#)
 
 Een enquete kan je alleen op een webpagina publiceren. [Een webpagina
-maken](#)
+maken](./maak-en-publiceer-je-eigen-webpaginas.md)
 
 Let op: het is niet mogelijk om een enquete direct in een email document
 te publiceren. Wel kan je vanuit een emailing naar een enquete

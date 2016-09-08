@@ -4,5 +4,3 @@ hebt geopend, dan vind je onderin beeld de optie **Statistieken delen**.
 Middels deze functionaliteit kan je een rapport van de statistieken
 creëren en delen met anderen, zonder hen toegang te hoeven geven tot de
 applicatie.
-
-[Read more about sharing statistics](#)

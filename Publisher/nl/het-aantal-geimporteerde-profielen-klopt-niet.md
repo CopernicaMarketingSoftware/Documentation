@@ -3,9 +3,6 @@ importeren zijn er slechts 400 profielen toegevoegd in de database. Dit
 kan diverse oorzaken hebben. In dit artikel worden deze oorzaken
 uitgelicht en wordt een oplossing geboden.
 
-Zie ook: [hoe maak ik een correct opgemaakt tabgescheiden
-importbestand](#)
-
 ### De waarde van het sleutelveld is niet uniek
 
 Het veld dat je hebt gebruikt als sleutelveld, bevat niet voor alle

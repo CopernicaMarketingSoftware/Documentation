@@ -6,16 +6,15 @@ updaten van de integraties. Heb je dus een integratie gedownload? Hou
 onze website dan goed in de gaten voor mogelijke updates.\
  Voor Copernica zijn de volgende type integraties beschikbaar:
 
--   [E-commerce platformen](#ecommerce)
--   [CMS platformen](#cms)
--   [CRM systemen](#crm)
--   [Ontwikkelplatform](#ontwikkel)
--   [Personalisatie](#personalisatie)
--   [Analytics](#analytic)
--   [E-mail deliverability](#deliverability)
+-   [E-commerce platformen](#e-commerce-platformen)
+-   [CMS platformen](#cms-platformen)
+-   [CRM systemen](#crm-systemen)
+-   [Ontwikkelplatform](#ontwikkelplatform)
+-   [Personalisatie](#personalisatie-tools)
+-   [Analytics](#analytics)
+-   [E-mail deliverability](#e-mail-deliverability)
 
-E-commerce platformen
----------------------
+### E-commerce platformen
 
 -   ### Magento
 
@@ -109,8 +108,7 @@ E-commerce platformen
     [Meer over Sana Commerce
     integratie](./sana-commerce.md "Sana Commerce")
 
-CMS platformen
---------------
+### CMS platformen
 
 -   ### Umbraco
 
@@ -149,8 +147,7 @@ CMS platformen
 
     [Meer over Joomla integratie](./joomla.md "Joomla")
 
-CRM systemen
-------------
+### CRM systemen
 
 -   ### Exact
 
@@ -174,8 +171,7 @@ CRM systemen
     [Meer over Microsoft Dynamics CRM
     integratie](./microsoft-dynamics-crm.md "Microsoft Dynamics CRM")
 
-Ontwikkelplatform
------------------
+### Ontwikkelplatform
 
 -   ### Microsoft .Net \#
 
@@ -188,8 +184,7 @@ Ontwikkelplatform
     [Meer over Microsoft .Net
     \#](../en/microsoft-net-c.md "Microsoft .Net #")
 
-Personalisatie tools
---------------------
+### Personalisatie tools
 
 -   WiQhit
     ------
@@ -215,8 +210,7 @@ Personalisatie tools
     [Meer over de IQNOMY
     integratie](./iqnomy.md "IQNOMY")
 
-Analytics
----------
+### Analytics
 
 -   ### Google Analytics
 
@@ -251,8 +245,7 @@ Analytics
     [Meer over de CloseAlert Email Marketing Feedback
     integratie](./closealert-email-marketing-feedback-tool.md "CloseAlert Email Marketing Feedback integratie")
 
-E-mail deliverability
----------------------
+### E-mail deliverability
 
 -   ### Litmus
 
@@ -274,8 +267,7 @@ E-mail deliverability
     [Meer over Return Path
     Certification](./return-path.md "Return Path")
 
-Zelf een integratie ontwikkeld?
--------------------------------
+### Zelf een integratie ontwikkeld?
 
 Ben je [partner van
 Copernica](./registreer-je-als-partner-van-copernica.md "Copernica-partner")

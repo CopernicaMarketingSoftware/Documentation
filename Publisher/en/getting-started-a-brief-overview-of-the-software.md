@@ -32,8 +32,7 @@ groups and their options yourself.
 
 ### Collections
 
-A
-[collection](<https://www.copernica.com/en/blog/working-with-database-collections>)
+A [collection](./working-with-database-collections.md)
 can be seen as a deeper layer of the main database, like a sub-database.
 For example, a profile can have a collection of orders they placed. The
 collection 'orders' then holds subprofiles with fields, and possibly
@@ -41,8 +40,7 @@ selections, for every product that person has bought.
 
 ### Selections and miniselections: {#selections-and-miniselections:}
 
-[Selections and
-miniselections](<https://www.copernica.com/en/blog/selections-and-miniselections>)
+[Selections and miniselections](./selections-and-miniselections.md)
 are, well, selections of profiles or subprofiles based on certain
 conditions. Their position in the database is on the same level as the
 section the profiles are selected from: selections are on profile level
@@ -52,10 +50,9 @@ numerical values, alphabetical values, bounces, etc. You use these to
 determine which users should recieve which mailings, and , more
 importantly, if they even should receive mailings. Learn how to create a
 mailing list
-[here.](<https://www.copernica.com/en/blog/create-a-mailing-list>)
+[here.](./create-a-mailing-list.md)
 
-1.  [Learn how to set up a database](<http://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts>) Templates and the editor {#[learn-how-to-set-up-a-database](<http://www.copernica.com/en/support/setting-up-your-database-and-import-your-contacts>)
-    templates-and-the-editor}
+1.  [Learn how to set up a database](./setting-up-your-database-and-import-your-contacts.md) Templates and the editor
     --------------------------------------------------------------------------------------------------------------------------------------------------
 
 After you've got your database and sender domain set up, it's time to
@@ -63,20 +60,19 @@ start sending email. You do, however, need to have something to send. We
 do so using templates and documents.
 
 Every email made in Copernica is based on an [HTML
-template](<https://www.copernica.com/en/blog/getting-started-building-email-templates>)
+template](./getting-started-building-email-templates.md)
 . In the template, the layout of the email is determined, but the
 content is not yet there. You use special blocks to specify where which
 sort of content is going to fill the space. This way, it's possible to
 use a template as many times as you want.
 
-Copernica offers a [default
-template](<https://www.copernica.com/en/blog/using-the-copernica-default-template>)
+Copernica offers a [default template](./using-the-copernica-default-template.md)
 that's quick and easy to load. It contains text, image and loop blocks.
 You can use it to play around with and discover the possibilities HTML
 templates and documents have to offer.
 
 After you've created a template you're content with, you can [compose a
-document](<https://www.copernica.com/en/blog/composing-email-documents-in-copernica>)
+document](./composing-email-documents-in-copernica.md)
 in which you actually fill the email with images and text. The document
 is what you 're going to end up sending eventually.
 
@@ -85,7 +81,7 @@ Personalizing emails using Smarty
 
 Smarty is a well documented, easy to use template engine for PHP that
 allows you to use data from subprofiles to [personalize your
-emails](<https://www.copernica.com/en/blog/personalize-campaigns>) .
+emails](./personalize-campaigns.md).
 
 In normal-human language: for example, if you type in a variable, such
 as 'Hello {\$First\_name}!' , Smarty will look into the database, find
@@ -104,7 +100,7 @@ actual mass mailings, there are a couple of things to keep in mind.
 ### Authentication and sender domains
 
 If you value your
-[deliverability](<https://www.copernica.com/en/blog/the-key-ingredients-for-a-good-deliverability>)
+[deliverability](./the-key-ingredients-for-a-good-deliverability.md)
 (the ability to deliver emails in recipients' inboxes instead of their
 spamboxes) you should authenticate your emails. Email authentication
 methods exist to make sure the IP address that sent the mailing was
@@ -115,7 +111,7 @@ two is not in order.
 
 Setting these up can be tricky, so we do it for you. If you configure
 your domain as a sender domain and follow our
-[instructions](<https://www.copernica.com/en/blog/new-feature-sender-domains>)
+[instructions](./new-feature-sender-domains.md)
 , all of your outgoing mail will be properly authenticated.
 
 ### Sending a test email
@@ -123,8 +119,7 @@ your domain as a sender domain and follow our
 What's worse than sending a mailing to thousands of customers, only to
 realize it's ugly and not working properly? OK, plenty of things, but
 you still want to prevent it from happening. That's why it's a good idea
-to send [a test
-mailing](<https://www.copernica.com/en/blog/send-a-test-mail-or-test-mailing>)
+to send [a test mailing](./send-a-test-mail-or-test-mailing.md)
 before actually sending the mailing. That way, it's possible to check if
 everything stays as pretty as you intended it to be after delivery. You
 could send it to yourself, or your colleagues, for example.
@@ -132,23 +127,21 @@ could send it to yourself, or your colleagues, for example.
 ### Processing opt-outs
 
 Something very important (legally compulsory, even) is to include an
-[opt-out
-link](<https://www.copernica.com/en/blog/the-unsubscribe-function>) . If
+[opt-out link](./the-unsubscribe-function.md) . If
 readers decide they don't want to receive mailings any more, they have
 to be able to unsubscribe via a link in the email, usually placed at the
-bottom of the document. [Unsubscribe
-settings](<https://www.copernica.com/en/blog/setting-unsubscribe-behaviour-for-your-database-or-collection>)
+bottom of the document. [Unsubscribe settings](./setting-unsubscribe-behaviour-for-your-database-or-collection.md)
 can be managed in the Publisher environment.
 
 Once you've got all of this covered, you can send your first [mass
-mailing.](<https://www.copernica.com/en/blog/sending-a-mass-mailing>)
+mailing.](./sending-a-mass-mailing.md)
 
 Campaign results
 ----------------
 
 In Copernica, it's possible to see how your mails are doing on the other
 side of the line. The software automatically makes you an overview of
-[statistics](<https://www.copernica.com/en/blog/campaign-results-and-statistics>)
+[statistics](./campaign-results-and-statistics.md)
 like clicks, destinations, devices, opens and way more. This way, you
 know exactly what went right in your email, or what needs extra
 attention.
@@ -161,26 +154,26 @@ of Copernica Marketing Software. However, the software offers a number
 of other features to enrich your experience. You'll find them in the
 main menu header. Here's a quick overview.
 
--   [Websites](<https://www.copernica.com/en/blog/websites>) : once you
+-   [Websites](./websites.md) : once you
     have created your first email document with Copernica Marketing
     software, you will find it pretty easy to create an interactive
     website as well. Use this section to develop personalized landing
     pages, to publish online surveys, to set up RSS feeds and much more.
     Best of all: apart from HTML and CSS, no knowledge of computer
     programming is needed for any of it.
--   [Mobile](<https://www.copernica.com/en/blog/sms-and-mobile>) : send
+-   [Mobile](./sms-and-mobile.md) : send
     personalized SMS messages to all your relations at once or messages
     to individual subscribers. For instance as a reminder for an event
     they have subscribed for, or a mass message to all your relations to
     announce something important (like your birthday).
--   [PDF](<https://www.copernica.com/en/blog/print-pdf-and-fax>) : send
+-   [PDF](./print-pdf-and-fax.md) : send
     personalized coupons, tickets, whitepapers, leaflets or anything
     else along with your email that is meant to be printed on paper.
 -   Content: within the Content module you create and manage your own
     web forms, RSS and Atom feeds, surveys and [Media Libraries](<a>)
     that you can quickly and easily use in both your Copernica projects
-    and anywhere outside Copernica.\
-     Media Libraries enable you to centrally manage your images and
+    and anywhere outside Copernica.
+    Media Libraries enable you to centrally manage your images and
     files, making them automatically available for use in templates and
     documents, forms, et cetera. You are allowed to create as many
     forms, surveys, feeds, and libraries as you want. There's no extra

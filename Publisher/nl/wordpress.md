@@ -3,11 +3,10 @@ CMS. Maak jij voor corporate site, campagne pagina’s of webshop gebruik
 van het WordPress CMS? Integreer dan eenvoudig WordPress met Copernica!
 Er zijn twee koppelingen beschikbaar:
 
--   [Koppeling ontwikkeld door Van Ons](#VanOns)
--   [Koppeling ontwikkeld door Invent4U](#Invent4u)
+-   [Koppeling ontwikkeld door Van Ons](#over-de-wordpress-integratie-van-van-ons)
+-   [Koppeling ontwikkeld door Invent4U](#over-de-wordpress-integratie-van-invent4u)
 
-Over de WordPress Integratie van Van Ons
-----------------------------------------
+### Over de WordPress Integratie van Van Ons
 
 De integratie met WordPress van Van Ons stelt de gebruiker in staat om
 naadloos en snel alle gegevens tussen WordPress en Copernica te
@@ -45,8 +44,7 @@ Ons](mailto:info@van-ons.nl?SUBJECT=Aanvraag%20Wordpress-Copernica%20integratie)
 -   **Licentietype:**Commercieel
 -   [Aanvragen](mailto:info@van-ons.nl?SUBJECT=Aanvraag%20Wordpress-Copernica%20integratie)
 
-Over de WordPress Integratie van Invent4U
------------------------------------------
+### Over de WordPress Integratie van Invent4U
 
 Met de WordPress-integratie van Invent4U koppel je een WordPress website
 eenvoudig aan een Copernica database. Zo verwerk je

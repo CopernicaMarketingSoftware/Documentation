@@ -6,37 +6,32 @@ In this way you are assured of the best email delivery and help us
 maintain a healthy sender reputation.
 
 -   **Check on 'from' address and sender**
-    -   [Check on the 'from' address](#afzender1)
-    -   [The 'from' address does not exist](#afzender2)
-    -   [The SPF is not correct](#afzender3)
-    -   [Sender ID is not correctly configured](#afzender4)
+    -   [Check on the 'from' address](#check-on-the-from-address)
+    -   [The 'from' address does not exist](#the-from-address-does-not-exist)
+    -   [The SPF is not correct](#the-spf-is-not-correct)
+    -   [Sender ID is not correctly configured](#sender-id-is-not-correctly-configured)
 -   **Blacklists**
-    -   [The IP address has been blacklisted](#blacklists1)
+    -   [The IP address has been blacklisted](#the-ip-address-has-been-blacklisted)
 -   **DKIM Check**
-    -   [We check whether a DKIM key is configured correctly](#DKIM1)
+    -   [We check whether a DKIM key is configured correctly](#we-check-whether-a-dkim-key-is-configured-correctly)
 -   **Server settings check**
-    -   [MX record does not refer to a host that refers to the correct
-        IP address](#server1)
-    -   [The MX record does not refer to a host that refers to the IP
-        address of the application](#server2)
-    -   [The sender IP is not listed in the SPF record on your
-        domain](#server3)
-    -   [SPF record has syntax error](#server4)
-    -   [SPF check resulted in a temporary DNS error](#server5)
-    -   [There is no SPF record for the domain](#server6)
-    -   [Picserver domain settings are not correct](#server7)
+    -   [MX record does not refer to a host that refers to the correct IP address](#mx-record-does-not-refer-to-a-host-that-refers-to-the-correct-ip-address)
+    -   [The MX record does not refer to a host that refers to the IP address of the application](#the-mx-record-does-not-refer-to-a-host-that-refers-to-the-ip-address-of-the-application)
+    -   [The sender IP is not listed in the SPF record on your domain](#the-sender-ip-is-not-listed-in-the-spf-record-on-your-domain)
+    -   [SPF record has syntax error](#spf-record-has-syntax-error)
+    -   [SPF check resulted in a temporary DNS error](#spf-check-resulted-in-a-temporary-dns-error)
+    -   [There is no SPF record for the domain](#there-is-no-spf-record-for-the-domain)
+    -   [Picserver domain settings are not correct](#pic-register-domain-settings-are-not-correct)
 -   **Spamscore check**
-    -   [Check on the spam score of the document](#spamscore1)
+    -   [Check on the spam score of the document](#we-check-whether-the-document-has-a-high-spam-score)
 -   **Check on the target of the mailing**
-    -   [No unsubscribe behaviour has been set on the target database or
-        collection](#bestemming1)
-    -   [Unsubscribe header not activated](#bestemming2)
+    -   [No unsubscribe behaviour has been set on the target database or collection](#no-unsubscribe-behaviour-has-been-set)
+    -   [Unsubscribe header not activated](#unsubscribe-header-not-activated)
 -   **Check on the content of your document**
-    -   [Unsupported content has been detected in your
-        document](#inhoud1)
-    -   [Document has no text version](#inhoud2)
-    -   [Check on the size of your document](#inhoud3)
-    -   [Check on the size of email attachments](#inhoud4)
+    -   [Unsupported content has been detected in your document](#unsupported-content-has-been-detected-in-your-document)
+    -   [Document has no text version](#no-text-version)
+    -   [Check on the size of your document](#document-size-checks)
+    -   [Check on the size of email attachments](#the-total-size-of-the-attachments-is-too-big)
 
 'From' address check
 --------------------
@@ -47,8 +42,8 @@ Each email message sent with Copernica Marketing Software must be
 included with a valid *'from'* address. This is the address visible to
 each recipient of the email as the sender of the message.
 
-**Setting the *from* address**\
- You can configure the *'from'*address and other header values (such as
+**Setting the *from* address**
+You can configure the *'from'*address and other header values (such as
 reply-to and BCC) directly above the document..
 
 #### The 'from' address does not exist
@@ -60,8 +55,7 @@ thus to always use a valid address. Also when you use a noreply address
 (no-reply@mydomain.com), make certain that emails can be delivered to
 this address's mailbox.
 
-**I get this warning, but I am sure that the address is valid. How
-come?**
+**I get this warning, but I am sure that the address is valid. How come?**
 
 ​1. If you have used Smarty personalization in the 'from' address field,
 check if the[test

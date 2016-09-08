@@ -2,8 +2,8 @@ Om te voorkomen dat dubbele waardes in een database of collectie terecht
 komen, kan je een databaserestrictie instellen voor het betreffende
 veld.
 
-Lees ook hoe je [dubbele adressen of profielen kan verwijderen uit je
-database](#)
+Lees ook hoe je dubbele adressen of profielen kan verwijderen uit je
+database.
 
 Databaserestricties zijn regels die je kan instellen op een database of
 collectie. Wanneer iemand gegevens wil toevoegen of wijzigen in een
@@ -30,5 +30,3 @@ database.
 -   Selecteer het veld dat altijd uniek moet zijn, of selecteer meerdere
     velden als de combinatie van die velden altijd uniek zijn.
 -   Klik op *opslaan*
-
-[Meer lezen over Database restricties](#)

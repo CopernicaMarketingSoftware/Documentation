@@ -13,19 +13,19 @@ Table of contents
 
 ### CSS stylesheets
 
--   [What can i do with CSS](#1)
--   [Create and manage new and existing stylesheets](#2)
--   [Easily test your stylesheet on a webform, survey or web feed](#3)
--   [Link your stylesheet to a template, document or web page](#4)
--   [Using CSS in your emailings](#5)
+-   [What can i do with CSS](#what-can-i-do-with-css)
+-   [Create and manage new and existing stylesheets](#use-a-css-stylesheet-to)
+-   [Easily test your stylesheet on a webform, survey or web feed](#create-and-manage-your-own-stylesheets)
+-   [Link your stylesheet to a template, document or web page](#link-your-stylesheet-to-a-template-document-or-web-page)
+-   [Using CSS in your emailings](#using-css-in-your-emailings)
 
 ### XSLT in Copernica
 
--   [What is XSLT](#6)
--   [How does XSLT work](#7)
--   [Create your own XSLT](#7-1)
--   [XSLT resources](#8)
--   [Link your XSLT to a webform, feed or survey](#9)
+-   [What is XSLT](#what-is-xslt)
+-   [How does XSLT work](#xslt-in-practice)
+-   [Create your own XSLT](#create-your-own-xslt)
+-   [XSLT resources](#xslt-resources)
+-   [Link your XSLT to a webform, feed or survey](#link-your-xslt-to-a-webform-feed-or-survey)
 
 Using stylesheets in Copernica
 ------------------------------

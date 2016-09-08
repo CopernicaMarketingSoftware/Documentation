@@ -13,7 +13,7 @@ onafhankelijk van een eventueel al bestaande groep, kan je hiervoor een
 nieuwe database aanmaken. Je mag in principe zoveel databases aanmaken
 als je wilt. Al is het in het algemeen gemakkelijker om alle relaties in
 een enkele database te te bewaren, en het onderscheid tussen relaties
-met [selecties](#) te beheren.
+met selecties te beheren.
 
 Een nieuwe database aanmaken
 ----------------------------
@@ -22,4 +22,4 @@ Om een nieuwe database aan te maken, kies je de zogenaamde functie in
 het menu Database Management. Geef de database een duidelijke naam, en
 eventueel een omschrijving.
 
-De volgende stap zal zijn: het aanmaken van [databasevelden](#).
+De volgende stap zal zijn: het aanmaken van databasevelden.

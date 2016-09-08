@@ -51,7 +51,7 @@ internet browser: HTML. So, what can you do with XSLT?
 -   Give an image a CSS class
 -   The publish date of an article should not appear in the HTML
     document. The author of the article must appear below the article.
--   [Remove the \#-sign](#)that is placed before each survey question.
+-   Remove the \#-sign that is placed before each survey question.
 -   Et cetera….
 
 ![](../images/xslt-image.png)

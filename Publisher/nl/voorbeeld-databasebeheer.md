@@ -8,21 +8,12 @@ producten.
 Summary
 -------
 
-[Gegevens opslaan in verschillende veldtypes](#1)
-
-[Database aanmaken en gegevens importeren](#2)
-
-[Werken met database
-collecties](./werken-met-databasecollecties.md)
-
-[Database en collectie
-veldtypes](./database-en-collectie-veldtypes.md)
-
-[Werken met database
-interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
-
-[Uitschrijfgedrag instellen op de
-database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
+[Gegevens opslaan in verschillende veldtypes](#gegevens-opslaan-in-verschillende-veldtypes)
+[Database aanmaken en gegevens importeren](#multidimensionale-database)
+[Werken met database collecties](./werken-met-databasecollecties.md)
+[Database en collectie veldtypes](./database-en-collectie-veldtypes.md)
+[Werken met database interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
+[Uitschrijfgedrag instellen op de database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
 
 Gegevens opslaan in verschillende veldtypes
 -------------------------------------------
@@ -38,14 +29,12 @@ Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
 [webformulier](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings")
-of
-[enquête](./enquetes.md "Maak je eigen enquêtes").
+of [enquête](./enquetes.md "Maak je eigen enquêtes").
 
 Multidimensionale database
 --------------------------
 
-![Aan de slag met
-selectiess](../images/nl-selecties.png "Aan de slag met selecties")
+![Aan de slag met selectiess](../images/nl-selecties.png "Aan de slag met selecties")
 
 Een multidimensionale database is een database die bestaat uit meerdere
 niveaus. Met een multidimensionale database kun je nóg gerichter en

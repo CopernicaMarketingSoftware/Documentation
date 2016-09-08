@@ -1,9 +1,6 @@
 Web forms and surveys created under *Content* can only be published on
 web pages within a website.
 
-You need a web template to create your first web pages. [Read how to
-create one]()
-
 Select the website from the overview, and then select **new page** from
 the page menu. In the appearing dialog window, select the template you'd
 like to use for the page, and the name of the web page.

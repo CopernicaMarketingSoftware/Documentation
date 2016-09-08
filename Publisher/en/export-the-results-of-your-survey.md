@@ -6,7 +6,7 @@ The results of a survey can be downloaded through the **Survey**menu.
     the answers given by each participant, if that participant is
     registered it will include profile data.
 
-Exports can be generated as XML files or [tab delimited](#). The latter
+Exports can be generated as XML files or tab delimited. The latter
 of which is the custom format for Excel.
 
 ![Survey results dialog](../images/surveyresultes.png)

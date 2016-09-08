@@ -1,14 +1,12 @@
--   [Automatisch inladen van een feed](#auto)
--   [Handmatig inladen van een feed](#manual)
--   [De feed afstemmen op de doelgroep (conditioneel
-    tonen)](#conditional)
+-   [Automatisch inladen van een feed](#automatisch-inladen-van-een-feed)
+-   [Handmatig inladen van een feed](#handmatig-instellen-van-rss)
+-   [De feed afstemmen op de doelgroep (conditioneel tonen)](#conditioneel-inladen-van-een-feed)
 -   [De opmaak van de feed bewerken in XSLT](#xslt)
--   [Een call-to-action button toevoegen](#cta)
--   [Afbeeldingen inladen](#image)
--   [Het aantal getoonde items limiteren](#limitItems)
--   [De lengte van items automatisch limiteren](#limitItemLength)
--   [Links uit de feed uitbreiden met Google Analytics
-    UTM-tags](#GoogleUTM)
+-   [Een call-to-action button toevoegen](#call-to-action)
+-   [Afbeeldingen inladen](#afbeelding-uit-de-feed-inladen)
+-   [Het aantal getoonde items limiteren](#aantal-items-limiteren)
+-   [De lengte van items automatisch limiteren](#lengte-van-item-limiteren)
+-   [Links uit de feed uitbreiden met Google Analytics UTM-tags](#google-analytics-utm-codes-meesturen)
 
 Het gebruik van RSS-feeds kan het leven van een marketeer
 vergemakkelijken doordat er minder tekst en afbeeldingen handmatig

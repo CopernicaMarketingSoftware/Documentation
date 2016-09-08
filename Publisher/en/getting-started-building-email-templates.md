@@ -3,13 +3,13 @@ to have more control over the code, we advise you to use a text editor
 to create a template, rather than using a WYSIWYG editor
 
 [Notepad ++](http://notepad-plus-plus.org/) is a free open source text
-editor and perfect for creating HTML files. \
- The best email templates are still built with tables. New techniques
-can better be avoided completely. Please refer to our [HTML email
-template guidelines](#) article for more information.
+editor and perfect for creating HTML files.
+The best email templates are still built with tables. New techniques
+can better be avoided completely. Please refer to our HTML email
+template guidelines article for more information.
 
-**No HTML knowledge or design skills, still want a great template?**\
- Refer to our [Partner
+**No HTML knowledge or design skills, still want a great template?**
+Refer to our [Partner
 Program](https://www.copernica.com/en/support/find-a-partner) to search
 for a partner suitable for this job.
 

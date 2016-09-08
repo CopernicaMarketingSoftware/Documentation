@@ -8,22 +8,18 @@ website is hosted by Copernica.
 This article will help you get started with creating a first website in
 Copernica.
 
--   [Overview op the Websites section](#websitesoverview)
--   [Web templates and web pages](#Web%20templates%20and%20web%20pages)
--   [Create a new website](#Create%20a%20new%20website)
--   [Create a web template](#Create%20a%20web%20template)
-    -   [Editing the template source code](#edittemplatesourcecode)
-    -   [Add text, image and loop blocks](#addtextimageandloopblocks)
--   [Publish web form or survey](#Publish%20web%20form%20or%20survey)
--   [Link a domain to your
-    website](#Link%20a%20domain%20to%20your%20website)
--   [Linking to a web page from an
-    emailing](#Linking%20to%20a%20web%20page%20from%20an%20emailing)
--   [Set the website default page, the error page and the login
-    page](#Set%20the%20website%20default%20page%20the%20error%20page%20and%20the%20login%20page)
--   [Hide pages to unknown
-    visitors](#Hide%20pages%20to%20unknown%20visitors)
--   [Manage files and images](#Manage%20files%20and%20images)
+-   [Overview op the Websites section](#overview-of-the-website-section)
+-   [Web templates and web pages](#web-templates-and-web-pages)
+-   [Create a new website](#create-a-new-website)
+-   [Create a web template](#create-a-web-template)
+    -   [Editing the template source code](#editing-the-template-source-code)
+    -   [Add text, image and loop blocks](#adding-the-template-content-blocks)
+-   [Publish web form or survey](#publish-web-form-or-survey)
+-   [Link a domain to your website](#link-a-domain-to-your-website)
+-   [Linking to a web page from an emailing](#linking-from-an-email-to-a-web-page)
+-   [Set the website default page, the error page and the login page](#set-the-website-default-page-the-error-page-and-the-login-page)
+-   [Hide pages to unknown visitors](#hide-pages-to-unknown-visitors)
+-   [Manage files and images](#manage-files-and-images)
 
 ### Overview of the Website section
 
@@ -109,8 +105,8 @@ code from the *Template source* tab.
 
 #### Adding the template content blocks
 
-In the template source code you can use special code to create [text
-blocks](#), [image blocks](#) and [loop blocks](#). You can add as many
+In the template source code you can use special code to create text
+blocks, image blocks and loop blocks. You can add as many
 blocks as you want to your template, as long as they have different
 names.
 

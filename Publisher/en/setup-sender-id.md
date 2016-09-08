@@ -48,7 +48,7 @@ correctly. This check is performed in the background.
 
 It is also possible to perform a document check to see Sender ID and
 related errors. The check can of course only be performed if you have
-configured a [from address](#) for the document.
+configured a from address for the document.
 
 Go to Document menu \> **Document check** to see if your Sender ID is
 configured correctly.

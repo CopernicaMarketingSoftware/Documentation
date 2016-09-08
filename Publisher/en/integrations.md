@@ -2,12 +2,12 @@ Would you like to integrate Copernica with your CMS, ecommerce platform or CRM s
   
  We have the following types of integrations available for download:
 
-- [E-commerce platforms](#ecommerce)
-- [CMS platforms](#cms)
-- [CRM systems](#crm)
-- [Personalization tools](#personalization)
-- [Analytics](#analytic)
-- [Email deliverability](#deliverability)
+- [E-commerce platforms](#e-commerce)
+- [CMS platforms](#cms-platforms)
+- [CRM systems](#crm-systems)
+- [Personalization tools](#personalization-tools)
+- [Analytics](#analytics)
+- [Email deliverability](#email-deliverability)
  
 E-commerce platforms
 --------------------
@@ -60,7 +60,8 @@ E-commerce platforms
  ![Sana Commerce](../images/sana-integration.png "Sana Commerce")Use the Sana Commerce integration to seamlessly connect your Sana Commerce webshop to Copernica Marketing Software.
 
  [Learn more about the Sana Commerce integration](http://www.copernica.com/en/support/integrations/sana-commerce "Sana Commerce")
-CMS platforms
+
+ CMS platforms
 -------------
 
 - Umbraco
@@ -81,7 +82,7 @@ CMS platforms
  [ ![Joomla](../images/joomla-integration.png "Joomla")](http://www.copernica.com/en/support/integrations/joomla)With the Joomla plugin for Copernica, you have the option to automatically complement your database with data from Joomla forms.
 
  [Learn more the about Joomla integration](http://www.copernica.com/en/support/integrations/joomla "Joomla")
- 
+
 CRM systems
 -----------
 
@@ -97,7 +98,7 @@ CRM systems
  [ ![Microsoft Dynamics CRM](../images/ms-dynamics-integration.png "Microsoft Dynamics CRM")](http://www.copernica.com/en/support/integrations/microsoft-dynamics-crm)Maintain a more intensive contact with your customers with the Microsoft Dynamics CRM integration.
 
  [Learn more about the Microsoft Dynamics CRM integration](http://www.copernica.com/en/support/integrations/microsoft-dynamics-crm "Microsoft Dynamics CRM")
- 
+
 Personalization tools
 ---------------------
 
@@ -116,7 +117,7 @@ Analytics
  ![Klipfolio](../images/klipfolio-integration.png "Klipfolio")By integrating Copernica and Klipfolio, you ensure real-time insight into the overview and statistic results of your marketing campaigns.
 
  [Learn more about the Klipfolio integration](https://www.copernica.com/en/support/integrations/klipfolio "Klipfolio")
- 
+
 Email deliverability
 --------------------
 
