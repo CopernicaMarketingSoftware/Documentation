@@ -82,7 +82,7 @@ Software](https://www.copernica.com/en/blog/copernicatv-lead-scoring-in-b2b-case
 on December 10th at 3:30 gmt (16:30 PM CET).
 
 [![An infographic by Copernica about what is lead
-scoring](../images/What-is-lead-scoring-Copernica.png "What is leadscoring")](./What-is-lead-scoring-Copernica.png "What is lead scoring")
+scoring](../images/What-is-lead-scoring-Copernica.png "What is leadscoring")](../images/What-is-lead-scoring-Copernica.png "What is lead scoring")
 
 Learn more about lead scoring during [a LIVE episode of CopernicaTV with
 Exact

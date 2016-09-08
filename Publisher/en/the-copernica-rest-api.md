@@ -100,4 +100,4 @@ not yet been documented.
 | [/collection/$collectionID/miniviews](./collection-miniviews.md) | GET |
 | [/miniview/$miniviewID](./miniview.md) | GET, PUT |
 | [/miniview/$miniviewID/rules](./minirules.md) | GET, POST\* |
-| [/minirule/$miniruleID](./%20minirule.md) | GET, PUT |
+| [/minirule/$miniruleID](./minirule.md) | GET, PUT |
