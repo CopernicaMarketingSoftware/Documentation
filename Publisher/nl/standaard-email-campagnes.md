@@ -8,6 +8,6 @@ het te implementeren.
 -   [Win-back campagne](./win-back-terugwin-campagne-in-copernica.md)
 -   [Lead scoring campagne](./lead-scoring-campagne-in-copernica.md)
 -   [Opvolgactie wanneer een formulier is X keer
-    ingevuld](./trigger-follow-up-when-web-form-has-been-submitted-x-times.md)
+    ingevuld](../en/trigger-follow-up-when-web-form-has-been-submitted-x-times.md)
 -   [Verjaardagsmail](./een-verjaardagselectie-maken.md)
 

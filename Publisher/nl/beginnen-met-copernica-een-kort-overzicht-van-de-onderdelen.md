@@ -30,13 +30,13 @@ je in een handomdraai.
 
 Databases in Copernica kunnen worden uitgebreid met extra lagen met
 gegevens genaamd
-[collecties](./werken-met-database-collecties.md).
+[collecties](./werken-met-databasecollecties.md).
 Een collectie kan bijvoorbeeld informatie bevatten over producten die
 zijn aangekocht door een profiel. Elk aangekocht product wordt dan
 opgeslagen als subprofiel in de collectie.
 
 -   [Database aanmaken en gegevens
-    importeren](./database-maken-en-gegevens-importeren.md)
+    importeren](./databases-maken-en-gegevens-importeren.md)
 
 Selecties en miniselecties
 --------------------------

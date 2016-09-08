@@ -7,10 +7,10 @@ collectie(s).
 
 -   Als je een normale import wilt uitvoeren in een nieuwe database,
     [raadpleeg dan dit
-    artikel](https://www.copernica.com/nl/ondersteuning/database-maken-en-gegevens-importeren).
+    artikel](./databases-maken-en-gegevens-importeren.md).
 -   Als je een of meerdere collecties met subprofielen wilt importeren,
     [raadpleeg dan dit
-    artikel](https://www.copernica.com/nl/ondersteuning/import-naar-database-met-collectie).
+    artikel](./import-naar-database-met-collectie.md).
 
 LET OP: Met behulp van deze importfunctionaliteit kan je in een klap de
 gegevens van meerdere, zo niet alle, profielen in uw database wijzigen.

@@ -24,7 +24,7 @@ En dan nu versturen...
 -   [Het onderwerp en afzenderadres
     instellen](./het-onderwerp-en-afzenderadres-instellen.md)
 -   [Afzenderadres
-    personaliseren](https://www.copernica.com/nl/blog/afzendadres-personaliseren "Afzenderadres personaliseren")
+    personaliseren](./afzendadres-personaliseren.md "Afzenderadres personaliseren")
 -   [Een testmail
     versturen](./een-test-e-mail-versturen.md)
 -   [Bulkmailing
@@ -36,7 +36,7 @@ En dan nu versturen...
 -   [Een ingeroosterde mailing bewerken of
     annuleren](./een-ingeroosterde-mailing-bewerken-of-annuleren.md)
 -   [Versturen aan profielen of
-    subprofielen](http://www.copernica.com/nl/blog/versturen-aan-profielen-of-aan-subprofielen)
+    subprofielen](./versturen-aan-profielen-of-aan-subprofielen.md)
 -   [Geavanceerde e-mail
     verzendinstellingen](./e-mail-verzendinstellingen.md)
 
@@ -78,7 +78,7 @@ A. Dit verschilt per mailing. Een mailing wordt in principe direct nadat
 je op verzenden klikt verstuurd.
 
 -   [Hoe lang duurt het proces van verzenden en ontvangen van een
-    e-mailing?](http://www.copernica.com/nl/articles/hoe-lang-duurt-het-proces-van-verzenden-en-ontvangen-van-een-mail-campagne)
+    e-mailing?](./hoe-lang-duurt-het-proces-van-verzenden-en-ontvangen-van-een-mail-campagne.md)
 
 #### Q. Ik heb een mailing ingeroosterd voor latere verzending. Als ik het e-maildocument nu aanpas, wordt deze versie dan verstuurd?
 

@@ -15,9 +15,6 @@ quickly be able to start working with Copernica. Also, the API can be
 invoked from every standard programming language and development
 environment.
 
-To view the full object reference, go to
-[https://www.copernica.com/en/support/apireference](./apireference.md).
-
 [Download SOAP API example script for
 PHP](Copernica_library/soaptest_php_1-5.zip "SOAP API example script for PHP")
 

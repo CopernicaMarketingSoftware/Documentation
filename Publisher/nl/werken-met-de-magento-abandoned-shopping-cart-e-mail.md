@@ -10,8 +10,6 @@ met de namen van de velden in je database en de naam van de collectie.
 De gebruikte velden en selecties worden verderop in dit artikel
 uitgebreid toegelicht.
 
-![abandoned\_email.png](../images/abandoned_email.png)
-
 Het inladen van de demo data
 ----------------------------
 
@@ -203,8 +201,6 @@ Zoals je al eerder hebt kunnen lezen, wordt aan de hand van een selectie
 en een miniselectie bepaald of een klant een e-mail zal ontvangen of
 niet.
 
-![selecites.png](../images/selecites.png)
-
 De miniselectie (*RecentAbandonedProducts*) checkt of er in
 de collectie producten aanwezig zijn die in de afgelopen zeven dagen  in
 het winkelmandje zijn toegevoegd, maar nog niet zijn afgerekend.
@@ -222,14 +218,10 @@ Je kan de huidige selecties bewerken en nieuwe toevoegen in het
 dialoogvenster Selecties bewerken, welke je vindt in het *Database
 management* menu in het onderdeel *Profielen*.
 
-[Meer over selecties in
-Copernica](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.article&article=examples.abandonedcarttemplate&language=nl_NL&article=profiles.dialogs.editviews)
-
 ### **De abandoned cart e-mail versturen**
 
 De mailing rooster je in als een wekelijkse
-periodieke [bulkmailing](https://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.article&article=examples.abandonedcarttemplate&language=nl_NL&article=emailings.dialogs.mailing) (interval
-is 7 dagen) en richt je aan de selectie *RecentAbandonedCarts*. Er
+periodieke bulkmailing (interval is 7 dagen) en richt je aan de selectie *RecentAbandonedCarts*. Er
 zitten dan elke week klanten in die in de afgelopen 7 dagen een product
 in het mandje hebben gegooid, maar nog niet hebben afgerekend.
 

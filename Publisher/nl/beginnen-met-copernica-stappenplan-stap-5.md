@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-4)
+stap](./beginnen-met-copernica-stappenplan-stap-4.md)
 
 Stap 5: Email klaarmaken om te versturen
 ----------------------------------------
@@ -51,8 +51,7 @@ uiteraard onderaan op **opslaan** klikken.
 Om er voor te zorgen dat spamfilters je email goedkeuren is het
 belangrijk om je emailauthenticatie in te stellen. Er zijn een aantal
 zaken die je hiervoor moet instellen. Als eerste is er het Sender ID.
-Dit kan je instellen met
-[deze](https://www.copernica.com/nl/blog/sender-id-hoe-werkt-het-precies)
+Dit kan je instellen met [deze](./sender-id-hoe-werkt-het-precies.md)
 stappen. Hiervoor heb je toegang nodig tot de DNS-instellingen van je
 domein. Mocht je dat niet hebben dan heeft de systemmbeheerder of
 webmaster dat. Hij kan dan ook het beste het Sender ID instellen.\
@@ -84,4 +83,4 @@ waarschuwingen staan is dat niet heel erg, zo lang er maar geen fouten
 staan.
 
 [Ga door naar de volgende
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-6)
+stap](./beginnen-met-copernica-stappenplan-stap-6.md)

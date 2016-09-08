@@ -6,8 +6,6 @@ notified about software updates and maintanance.
 The personal data is visible to all users of the accounts to which you
 have access. Account administrators cannot change the data of others.
 
-![](../images/edityourdetails.png)
-
 ### Set preferred language
 
 The application is available in French, Dutch, English and German. The

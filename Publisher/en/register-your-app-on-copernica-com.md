@@ -36,8 +36,7 @@ your token into the address bar of your favorite browser:
 `https://api.copernica.com/databases?access_token=your-token-here`
 
 If everything is fine (and of course it is!), you will receive
-information about the databases in your account. \
-You can now [start building your app](./introduction.md)!
+information about the databases in your account.
 
 ### Further reading
 

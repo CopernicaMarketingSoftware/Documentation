@@ -44,8 +44,6 @@ Zijn favoriete collega's zijn:
 
 Hij gaat elke dag —met plezier— naar zijn werk.
 
-\
-
 Dat kan in markdown op de volgende manier:
 
     E-mailmarketing

@@ -12,7 +12,7 @@ De instellingen voor de mailing
 
 Om een mailing in te roosteren en/of periodiek te herhalen, volg je
 dezelfde stappen als bij het [instellen van een normale
-bulkmailing](https://www.copernica.com/nl/ondersteuning/bulkmailing-verzenden).
+bulkmailing](./bulkmailing-verzenden.md).
 
 In stap 2 vind je achter het tabblad *Wanneer* de instellingen voor het
 inroosteren van de mailing.

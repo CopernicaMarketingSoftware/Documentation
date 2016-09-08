@@ -44,11 +44,11 @@ zijn voor zowel selecties als miniselecties beschikbaar, tenzij anders
 vermeld.
 
 -   [Sorteren en selecteren van
-    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-sub-profielen.md)
+    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md)
 -   [Selectie op basis van de resultaten van
     sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
 -   [Check op resultaten
-    campagnes](https://www.copernica.com/nl/ondersteuning/selectie-condities-check-op-resultaten-campagnes)
+    campagnes](./selectie-condities-check-op-resultaten-campagnes.md)
 -   [Check op enquete
     resultaten](./selectieconditie-check-op-enquete.md)
 -   [Check op

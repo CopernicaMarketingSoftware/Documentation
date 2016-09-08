@@ -3,7 +3,7 @@ Als je extra gegevens aan een
 wilt koppelen, welke aankopen iemand heeft gedaan in je webshop
 bijvoorbeeld, kun je dat het makkelijkst doen door gebruik te maken van
 een [multidimensionale
-database](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database).
+database](./maak-je-eigen-database.md).
 
 In Copernica hoeven profielgegevens daarom niet perse in een platte
 structuur te worden opgeslagen (bijvoorbeeld naam, e-mailadres,

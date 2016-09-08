@@ -10,9 +10,9 @@ dat je kan openen met spreadheet software zoals Excel.
 
 Als je profielen of subprofielen wilt exporteren gebaseerd op
 e-mailresultaten, maak dan een
-[selectie](https://www.copernica.com/nl/ondersteuning/nieuwe-selectie-maken)
+[selectie](./nieuwe-selectie-maken.md)
 aan met de conditietype *Check op resultaten e-mailcampagnes*. Gebruik
 vervolgens de
-[exportfunctie](https://www.copernica.com/nl/ondersteuning/profiel-en-of-subprofielen-exporteren)
+[exportfunctie](./profiel-en-of-subprofielen-exporteren.md)
 in het menu *Huidige weergave*in het onderdeel *Profielen* om de
 profielgegevens uit de selectie te downloaden.

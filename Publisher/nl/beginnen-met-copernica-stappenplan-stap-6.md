@@ -11,7 +11,7 @@ en schuine woorden zijn namen die eerder in het stappenplan zijn
 ingesteld.
 
 [Ga terug naar de vorige
-stap](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-5)
+stap](./beginnen-met-copernica-stappenplan-stap-5.md)
 
 Stap 6: Het versturen van je eerste nieuwsbrief
 -----------------------------------------------
@@ -52,17 +52,12 @@ stappen.
 Mocht je nog iets willen teruglezen dan kan je terug naar een van de
 eerdere stappen:
 
-[Stap
-1](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-1)
+[Stap 1](./beginnen-met-copernica-stappenplan-stap-1.md)
 
-[Stap
-2](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-2)
+[Stap 2](./beginnen-met-copernica-stappenplan-stap-2.md)
 
-[Stap
-3](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-3)
+[Stap 3](./beginnen-met-copernica-stappenplan-stap-3.md)
 
-[Stap
-4](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-4)
+[Stap 4](./beginnen-met-copernica-stappenplan-stap-4.md)
 
-[Stap
-5](www.copernica.com/nl/blog/beginnen-met-copernica-stappenplan-stap-5)
+[Stap 5](./beginnen-met-copernica-stappenplan-stap-5.md)

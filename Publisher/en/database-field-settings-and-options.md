@@ -4,8 +4,6 @@ displayed. These mainly refer to the overview on your data.
 So see an overview of the available field types, [go
 here](./database-and-collection-field-types.md)
 
-![EN\_databasefields.png](../images/field-properties-dialog.png)
-
 ### **This field is a hidden field that will not show when editing profiles**
 
 -   Hidden fields are not visible in the Edit profiles dialog.

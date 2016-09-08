@@ -18,10 +18,7 @@ naar eigen wens. Je hebt de mogelijkheid een oneindig aantal
 databasevelden aan te maken. Sla in Copernica alles op over je relaties
 wat je maar wil. Deze data gebruik je vervolgens gemakkelijk in
 bijvoorbeeld je
-[e-mailings](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings "e-mailings").
-
-\
- \
+[e-mailings](./maak-zelf-slimme-email-templates.md "e-mailings").
 
 2. Velden aanmaken/beheren
 --------------------------
@@ -39,8 +36,6 @@ verschillende veldtypen. Om een e-mailadres op te slaan gebruik je een
 e-mailveld. Voor numerieke waardes (zoals leeftijd of gewicht) kan je
 een numeriek veld gebruiken.
 
-\
- \
  ![Veldtypes in Copernica Marketing
 Software](../images/veld-types.png "Veldtypes in Copernica Marketing Software")
 
@@ -59,10 +54,7 @@ alle soorten tekens bevatten, inclusief cijfers en speciale tekens
 uu:mm Gebruik een datumveld bijvoorbeeld om de geboortedatum van
 relaties op te slaan
 
-[Meer informatie over databasegebruik binnen
-Copernica](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database)
-
-\
+[Meer informatie over databasegebruik binnen Copernica](./maak-je-eigen-database.md)
 
 Database checklist voordat je hiernaartoe gaat versturen
 --------------------------------------------------------

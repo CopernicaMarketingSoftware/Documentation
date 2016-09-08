@@ -70,8 +70,6 @@ Dit zijn gestandaardiseerde formaten die door vrijwel iedere feedreader
 worden ondersteund.
 
 Vanzelfsprekend kan je de feeds ook in je e-mailings en webpagina's
-opnemen. Gebruik hiervoor de
-[loadfeed](https://www.copernica.com/nl/ondersteuning/de-loadfeed-functie)
-tag.
+opnemen. Gebruik hiervoor de [loadfeed](./de-loadfeed-functie.md) tag.
 
 `{loadfeed feed="http://vicinity.picsrv.net/feed/rss/000/"}`

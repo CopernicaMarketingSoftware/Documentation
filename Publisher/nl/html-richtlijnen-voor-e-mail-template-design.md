@@ -31,10 +31,6 @@ die je in de HTML header meestuurt. Eventuele CSS code die je binnen de
 manier om toch CSS te gebruiken in een HTML e-mailing is om deze inline
 op te nemen.
 
-[Toch met een los stylesheet werken, en deze automatisch omzetten naar
-inline
-attributen](http://beta.copernica.com/index.php?pxc=113251&current=help&pxd=.p.help.article&article=emailings.dialogs.newtemplate.convertingstyles&language=english&article=emailings.dialogs.newtemplate.convertingstyles)
-
 **Niet juist:** de CSS block element stijlregels zijn in de header
 opgenomen. Dit wordt genegeerd door veel e-mailprogramma's
 
@@ -51,8 +47,7 @@ De software beschikt over een functie om alle CSS uit een header, of een
 gekoppeld stylesheet, automatisch om te zetten naar inline CSS. Zo
 behoud je het gemak van een extern stylesheet en wordt het document toch
 correct weergegeven in de inbox.  [Lees meer over het automatisch
-converteren van
-CSS](https://www.copernica.com/nl/ondersteuning/css-style-blokken-automatisch-omzetten-naar-inline-css)
+converteren van CSS](./css-style-blokken-automatisch-omzetten-naar-inline-css.md)
 
 **CSS styleregels die niet (goed) worden ondersteund**
 ------------------------------------------------------

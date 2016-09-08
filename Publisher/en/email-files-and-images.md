@@ -48,7 +48,7 @@ image to the document as follows:
 The rich editor allows you to use images inside a text block.
 
 To add an image, click on the **image icon** ![click this icon to select
-an image](imageicon.png) in the editor toolbar. A new window will pop
+an image](../images/imageicon.png) in the editor toolbar. A new window will pop
 up, allowing you to add an image and edit its properties. To use this
 function, make sure to disable your browser pop-up blocker first.
 

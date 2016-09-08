@@ -12,5 +12,5 @@ gebruikt.
 ![Edit and preview mode](../images/preview.png)
 
 Note: om de documentpersonalisatie te testen, dien je wel een
-[standaardbestemming](https://www.copernica.com/nl/ondersteuning/standaardbestemming-instellen-of-wijzigen)
+[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md)
 in te stellen in de database waaraan je de e-mail gaat richten.

@@ -13,7 +13,7 @@ Summary
 [Database aanmaken en gegevens importeren](#2)
 
 [Werken met database
-collecties](./werken-met-database-collecties.md)
+collecties](./werken-met-databasecollecties.md)
 
 [Database en collectie
 veldtypes](./database-en-collectie-veldtypes.md)
@@ -37,9 +37,9 @@ databasevelden aan te maken.
 Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
-[webformulier](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings "Maak zelf slimme e-mailings")
+[webformulier](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings")
 of
-[enquête](http://www.copernica.com/nl/functies/webpaginas/enquetes "Maak je eigen enquêtes").
+[enquête](./enquetes.md "Maak je eigen enquêtes").
 
 Multidimensionale database
 --------------------------
@@ -61,34 +61,21 @@ waardoor je Copernica naadloos kunt koppelen met andere systemen.
 Meer infomatie over databases
 -----------------------------
 
--   [Databases in Copernica - een korte
-    introductie](./databases-in-copernica-een-korte-introductie.md)
--   [Database aanmaken en gegevens
-    importeren](./database-maken-en-gegevens-importeren.md)
--   [Werken met database
-    collecties](./werken-met-database-collecties.md)
--   [Database en collectie
-    veldtypes](./database-en-collectie-veldtypes.md)
--   [Werken met database
-    interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
--   [Uitschrijfgedrag instellen op de
-    database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
+-   [Databases in Copernica - een korte introductie](./databases-in-copernica-een-korte-introductie.md)
+-   [Database aanmaken en gegevens importeren](./databases-maken-en-gegevens-importeren.md)
+-   [Werken met database collecties](./werken-met-databasecollecties.md)
+-   [Database en collectie veldtypes](./database-en-collectie-veldtypes.md)
+-   [Werken met database interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
+-   [Uitschrijfgedrag instellen op de database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
 -   Database en collectie opvolgacties
--   **[Selecties en
-    miniselecties](./selecties-en-miniselecties.md)**
--   [**Gegevens importeren /
-    exporteren**](gegevens-importeren-exporteren)
--   [Database restricties
-    maken](./database-restricties-maken.md)
--   [Foutieve e-mailadressen
-    repareren](./foutieve-e-mailadressen-automatisch-repareren.md)
--   [Indexeren van
-    databasevelden](./indexeren-van-databasevelden.md)
--   [Automatisch verwerken van
-    spamklachten](./automatisch-verwerken-van-spamklachten.md)
+-   **[Selecties en miniselecties](./selecties-en-miniselecties.md)**
+-   [**Gegevens importeren exporteren**](./importeren-en-exporteren.md)
+-   [Database restricties maken](./databaserestricties-maken.md)
+-   [Foutieve e-mailadressen repareren](./foutieve-e-mailadressen-automatisch-repareren.md)
+-   [Indexeren van databasevelden](./indexeren-van-databasevelden.md)
+-   [Automatisch verwerken van spamklachten](./automatisch-verwerken-van-spamklachten.md)
 -   [](./is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases.md)[Database
-    callback
-    URLs](./database-callback-urls.md)
+    callback URLs](./database-callback-urls.md)
 
 ### Veelgestelde vragen
 
@@ -98,16 +85,10 @@ Meer infomatie over databases
 Related topics
 --------------
 
--   [Aanmaken, bewerken of verwijderen van
-    (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-sub-profielen.md)
--   [Profielgeschiedenis en campagnes
-    bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
--   [Enquete antwoorden van een profiel
-    bekijken](./enquete-antwoorden-van-een-profiel-opzoeken.md)
--   [Meerdere (sub)profielen ineens wijzigen of
-    verwijderen](./meerdere-sub-profielen-ineens-wijzigen-of-verwijderen.md)
--   [Campagne tab - bekijk per profiel de
-    campagneresultaten](campagne-tab-bekijk-per-profiel-campagneresultaten)
--   [Een profiel herstellen naar oude
-    staat](./een-profiel-herstellen-naar-oude-staat.md)
+-   [Aanmaken, bewerken of verwijderen van (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-subprofielen.md)
+-   [Profielgeschiedenis en campagnes bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
+-   [Enquete antwoorden van een profiel bekijken](./enquete-antwoorden-van-een-profiel-opzoeken.md)
+-   [Meerdere (sub)profielen ineens wijzigen of verwijderen](./meerdere-subprofielen-ineens-wijzigen-of-verwijderen.md)
+-   [Campagne tab - bekijk per profiel de campagneresultaten](./campagne-tab-bekijk-per-profiel-de-campagneresultaten.md)
+-   [Een profiel herstellen naar oude staat](./een-profiel-herstellen-naar-oude-staat.md)
 

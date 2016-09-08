@@ -17,7 +17,7 @@ verzendselectie. In de afbeelding zie je een voorbeeld van een
 standaardselectie.
 
 ![Standaard selectie opbouw email
-marketing](../images/articlesNL/databasebeheer.png "Standaard selectie opbouw email marketing")\
+marketing](../images/databasebeheer.png "Standaard selectie opbouw email marketing")\
  Om deze selectieboom te maken, maken we eerst de selecties aan voor het
 Databasebeheer.
 
@@ -87,11 +87,11 @@ van de soft bounces en inactieve te agressief zijn.
     waarde je dit veld wilt aanpassen (bijvoorbeeld 'nee'). Geen
     terugkoppeling moet je namelijk accepteren als een uitschrijving.
     Daarnaast voorkom je dat je mailt naar [een
-    spamtrap](<http://education.returnpath.com/questions/spam-traps-full-content-page/> "Spam Trap Best Practices")
+    spamtrap](http://education.returnpath.com/questions/spam-traps-full-content-page/ "Spam Trap Best Practices")
     .
 -   Hoewel Copernica automatisch indieners van een spamklacht
     uitschrijft als je dit [juist hebt
-    ingesteld](<https://www.copernica.com/nl/blog/uitschrijfgedrag-instellen-op-database-of-collectie> "Uitschrijfgedrag instellen op database of collectie")
+    ingesteld](./uitschrijfgedrag-instellen-op-database-of-collectie.md "Uitschrijfgedrag instellen op database of collectie")
     , is het advies om ook een selectie te maken van de klagers. Deze
     selectie kan jou namelijk informatie geven of je wel op een juiste
     manier je opt-ins hebt gegenereerd of dat je jouw inschrijvers op

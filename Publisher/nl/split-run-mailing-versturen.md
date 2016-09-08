@@ -19,7 +19,7 @@ Test bijvoorbeeld eens:
 -   Vul hier een eigen creatief idee in…\
 
 [Enkele praktische tips voor het versturen van Split Run
-mailings](http://www.copernica.com/nl/blog/split-run-test-enkele-praktische-tips)
+mailings](./split-run-test-enkele-praktische-tips.md)
 
 Je kan het winnende document laten bepalen aan de hand van kliks,
 impressies of fouten. Ook is het mogelijk zelf een script te schrijven

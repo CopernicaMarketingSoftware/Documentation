@@ -17,8 +17,6 @@ Het is aldus mogelijk om
 -   Een kopie te maken van een selectie in dezelfde database
 -   Een selectie te kopieren naar een andere database
 
-![ENcopydatabase.png](../images/ENcopydatabase.png)
-
 ### Een selectie kopieren
 
 -   Kies in het menu Dabasebeheer voor *Database of collectie kopieren*

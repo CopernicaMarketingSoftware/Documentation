@@ -9,7 +9,7 @@ evenement, of een afmeldformulier voor je e-mailcampagnes.
 -   [De werking van een webformulier
     instellen](./de-werking-van-een-webformulier-instellen.md)
 -   [Veelgemaakte fout bij het instellen van een
-    webformulier](https://www.copernica.com/nl/blog/veelgemaakte-fout-bij-instellen-webformulier "Veelgemaakte fout bij instellen webformulier")
+    webformulier](./veelgemaakte-fout-bij-instellen-webformulier.md "Veelgemaakte fout bij instellen webformulier")
 -   [Webformulier verzendknop tekst
     aanpassen](./webformulier-verzendknop-tekst-aanpassen.md)
 -   [Gebruik van smarty personalisatie in

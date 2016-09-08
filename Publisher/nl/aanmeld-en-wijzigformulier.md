@@ -61,7 +61,7 @@ Doorloop de wizard en kies hierbij voor de de volgende instellingen:
 -   Klik in het overzicht op ‘*opslaan*’ om de instellingen te bewaren.
 
 Tot slot [plaatst u het formulier in uw
-webpagina](https://www.copernica.com/nl/ondersteuning/webformulier-op-webpagina-plaatsen "Webformulier op webpagina plaatsen").
+webpagina](./webformulier-op-webpagina-plaatsen.md "Webformulier op webpagina plaatsen").
 
 En zo ziet het gepubliceerde formulier er uit.
 

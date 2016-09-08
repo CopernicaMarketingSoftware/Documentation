@@ -21,7 +21,7 @@ bijvoorbeeld alle gegevens over een enkele relatie, zoals het
 e-mailadres, het geslacht en de naam.
 
 [Aanmaken database en adressen
-importeren](./database-maken-en-gegevens-importeren.md)
+importeren](./databases-maken-en-gegevens-importeren.md)
 (lees ook hoe je een [importbestand kan
 maken](./een-importbestand-voorbereiden.md))
 
@@ -33,8 +33,7 @@ routes.
     [eigenschappen](./database-en-collectie-veldtypes.md)
     bewerken.
 2.  **Handmatig in de interface.** [Bekijk de video over het aanmaken
-    van velden\
-    ](./videos/profielen-velden-aanmaken.md)
+    van velden](./profielen-velden-aanmaken.md)
 
 Voor het opslaan van e-mailadressen, gebruik je een specifiek veld: het
 **e-mailveld**.
@@ -46,7 +45,7 @@ van selecties. Je verstuurt een mailing bijvoorbeeld aan een selectie
 waar de uitschrijvers van een nieuwsbrief zijn uitgefilterd.
 
 [Bekijk ook onze instructievideo over profielen en
-selecties](./videos/profielen-selecties.md)
+selecties](./profielen-selecties.md)
 
 -   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
     - maak in je database een selectie waarin je alleen profielen
@@ -73,7 +72,7 @@ gebruiksmogelijkheden ingesteld.
     instellen.](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
     Wanneer iemand klikt op de {unsubscribe} link, wordt het
     uitschrijfgedrag geactiveerd. [Bekijk ook de
-    video](./videos/e-mailings-uitschrijfgedrag-instellen.md)
+    video](./e-mailings-uitschrijfgedrag-instellen.md)
     over dit onderwerp.
 2.  [Gebruiksmogelijkheden voor selectie
     instellen](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md).
@@ -88,16 +87,14 @@ Van het onderdeel Profielen gaan we naar het onderdeel E-mailings. In
 dit onderdeel maak en beheer je e-mailings, en kan je ze uiteindelijk
 verzenden. We gaan er vanuit dat je al een document hebt. Heb je nog
 geen document, dan kan je desgewenst onze [standaardtemplate en document
-inladen](https://www.copernica.com/nl/ondersteuning/werken-met-de-standaard-template-van-copernica).
+inladen](./werken-met-de-standaard-template-van-copernica.md).
 
 ### Controleren van je document en instellingen
 
 Voordat je een mailing verstuurt, controleer je goed of het document en
 de instellingen voldoen aan de juiste eisen.
 
-1.  [Sender
-    ID](./sender-id-instellen-op-je-afzenderdomein.md)
-    en
+1.  [Sender ID](./sender-id-instellen-op-je-afzenderdomein.md) en
     [DKIM](./e-mails-versleutelen-met-dkim.md)
     ingesteld? Dit is niet verplicht, maar wordt wel aangeraden. Het
     instellen van DKIM en Sender ID doe je eenmalig. Doe dit wel ruim
@@ -113,7 +110,7 @@ de instellingen voldoen aan de juiste eisen.
 4.  Geldig afzendadres? Gebruik altijd een afzendadres dat daadwerkelijk
     bestaat (je kunt dus e-mails ontvangen op dit adres).
 5.  [Weergavecontrole met
-    Litmus.](http://www.copernica.com/nl/over-ons/nieuws/litmus-previews-van-e-mail-wat-stuur-ik-uit)
+    Litmus.](./litmus-previews-van-e-mail-wat-stuur-ik-uit.md)
     De weergave van HTML e-mails kan per e-mailprogramma wezenlijk
     verschillen. Met de Litmus test kan je screenshots ontvangen van
     jouw e-maildocument in talloze e-mailprogramma's en browsers.
@@ -125,19 +122,19 @@ standaardbestemming, of een testmailing sturen naar een groep
 ontvangers.
 
 1.  Bekijk de video over het [instellen van de
-    standaardbestemming](./videos/e-mailings-standaardbestemming.md)
+    standaardbestemming](./e-mailings-standaardbestemming.md)
 2.  Of lees het artikel over [het versturen van test
     emails](./een-test-e-mail-versturen.md)
 
 [Testmail niet
-ontvangen?](http://www.copernica.com/nl/articles/heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan)
+ontvangen?](./heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan.md)
 
 ### Verzenden
 
 De uiteindelijke stap: het verzenden van de bulkmailing
 
 -   Bekijk onze video over het [instellen en verzenden van een
-    bulkmailing](./videos/e-mailings-verzending.md)
+    bulkmailing](./e-mailings-verzending.md)
 -   [Bekijk alle artikelen over het versturen van een
     bulkmailing](./mailings-verzenden.md)
 

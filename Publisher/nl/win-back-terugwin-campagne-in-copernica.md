@@ -1,5 +1,5 @@
 We schreven het al eens
-[eerder](https://www.copernica.com/nl/blog/5-conversion-boosting-e-mail-campaigns),
+[eerder](../en/5-conversion-boosting-e-mail-campaigns.md),
 gemiddeld verliezen bedrijven per 5 jaar ongeveer de helft van hun
 klanten. Daarnaast is het terugwinnen van een oude klant meestal
 eenvoudiger dan het binnenhalen van een nieuwe. Alle reden om een

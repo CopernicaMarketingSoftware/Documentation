@@ -142,8 +142,7 @@ weer.
 Webversie toevoegen
 -------------------
 
-Met behulp van de [webversie
-tag](https://www.copernica.com/nl/ondersteuning/linken-naar-de-webversie-van-een-e-mail)
+Met behulp van de [webversie tag](./linken-naar-de-webversie-van-een-e-mail.md)
 stuur je snel en gemakkelijk een webversie mee van de nieuwsbrief. De
 webversie biedt uitkomst voor ontvanger die de HTML nieuwsbrief niet
 goed kan lezen in zijn of haar e-mailprogramma.
@@ -197,9 +196,9 @@ verschillende opmaak te tonen.
 `{if $Geslacht == "man"}Iets van HTML code{else}Andere HTML code{/if}`
 
 -   [Meer over
-    personalisatie](https://www.copernica.com/nl/ondersteuning/de-basisbeginselen-van-smarty-personalisatie)
+    personalisatie](./de-basisbeginselen-van-smarty-personalisatie.md)
 -   [Slimme persoonlijke aanhef met
-    smarty](https://www.copernica.com/nl/ondersteuning/persoonlijke-aanhef-maken)
+    smarty](./persoonlijke-aanhef-maken.md)
 
 Template importeren
 -------------------

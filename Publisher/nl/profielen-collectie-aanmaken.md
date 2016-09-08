@@ -1,0 +1,45 @@
+In deze Copernica-tutorial leer je hoe je een collectie aanmaakt in je
+database.
+
+-   [Terug naar de
+    video's](./videos.md "Video's")
+
+Wat zijn collecties?
+--------------------
+
+Als je in je
+[database](./profielen-database-aanmaken.md)
+niet alleen ‘platte’ informatie als contactgegevens wilt opslaan, maar
+ook andere informatie als iemands aankopen of de contactpersonen van een
+bedrijf, maak je daarvoor gebruik van een collectie.
+
+Een collectie is dus eigenlijk een extra laag gegevens die je toevoegt
+aan een database. Door gebruik te maken van collecties kun je veel
+verschillende gegevens opslaan, zonder het overzicht kwijt te raken.
+
+**Hoe maak je een collectie aan?**
+
+-   Ga in Copernica naar ‘Profielen’
+-   Selecteer de database waaraan je een collectie wilt toevoegen
+-   Klik op ‘Databasebeheer’ en vervolgens op ‘Databasevelden wijzigen’
+-   Kies onderin het popup-scherm ‘Collectie toevoegen’.
+-   Voorzie de collectie van een naam en sla deze op
+
+Gefeliciteerd! Je hebt nu een collectie aangemaakt.
+
+**Velden aanmaken binnen een collectie**
+
+Natuurlijk heb je niets aan een collectie zonder gegevens, dus gaan we
+velden aanmaken waarin je informatie kunt opslaan:
+
+-   Klik op ‘Velden toevoegen’
+-   Kies bij ‘Aanmaken in’ de collectie die je zojuist hebt gecreëerd
+-   Volg de stappen voor het [aanmaken van
+    velden](./profielen-velden-aanmaken.md),
+    zoals beschreven in de vorige tutorial
+
+-   **Vorige:** [Velden
+    aanmaken](./profielen-velden-aanmaken.md "Profielen: Velden aanmaken")
+-   **Volgende:** [Profielen en subprofielen
+    aanmaken](./profielen-profielen-en-subprofielen-aanmaken.md "Profielen: Profielen en subprofielen aanmaken")
+
