@@ -7,7 +7,7 @@ bovenliggende artikel.
 
 **Let op:**met deze import worden profielen ALTIJD AANGEMAAKT. Wanneer u
 de gegevens in uw database wilt bijwerken gegevens uit het
-importbestand, raadpleegt dan dit [artikel](#).
+importbestand, raadpleegt dan dit artikel.
 
 ### De import instellingen
 
@@ -48,7 +48,7 @@ de velden zijn gekoppeld. De import kan gestart worden
 Let op, met deze tutorial maakt je altijd nieuwe profielen aan. Wanneer
 je estaande gegevens wilt bijwerken met gegevens uit het importbestand,
 dan dien je een of meerdere sleutelvelden aan te wijzen en nog enkele
-[extra instellingen](#).
+extra instellingen.
 
 ### Instellingen tabblad
 

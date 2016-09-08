@@ -18,8 +18,7 @@ statistics under the tab 'Complaints'.
 
 To handle the abuse reports properly, make sure to tell the database how
 to deal with the reporting profiles under **Profiles** (*do nothing,
-remove them, change a field value from their profile*). [Configure the
-unsubscribe behaviour](#)
+remove them, change a field value from their profile*).
 
 Registering and unsubscribing recipients who make complaints, improves
 your sender reputation and the deliverability of your emails. Abuse

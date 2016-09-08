@@ -80,7 +80,7 @@ je zag in het allereerste voorbeeld.**
 **Maar welke variabelen kun je nu eigenlijk in de conditie uitlezen?
 Hieronder volgt een kort overzicht.**
 
-### []()Profielgegevens
+### Profielgegevens
 
 Indien een profiel beschikbaar is - en dit is bijna altijd het geval -
 zitten in de globale variabel 'profile' al deze gegevens. In
@@ -92,14 +92,14 @@ die collectie heeft weer waardes voor de velden van het subprofiel. 
 Speciale velden zijn 'profile.id' en 'profile.code'. Deze velden
 bevatten het ID en de geheime toegangscode van het profiel.
 
-### []()Subprofielgegevens
+### Subprofielgegevens
 
 Indien een subprofiel beschikbaar is, zitten in de variabele subprofile
 al deze gegevens. Ze zijn beschikbaar via de variabele
 'subprofile.veldnaam'. Ook hier zijn, net als bij een profiel, de
 variabelen 'subprofile.id' en 'subprofile.code' beschikbaar.
 
-### []()Collecties
+### Collecties
 
 Collecties kunnen worden benaderd middels de profiel variabele. In de
 onderstaande praktijkvoorbeelden is te zien hoe dit in zijn werk gaat.
@@ -160,7 +160,7 @@ subprofiel gegevens worden gebruikt in de conditie.
 
     paid(subprofile);
 
-### []()Enquetes
+### Enquetes
 
 In opvolgacties naar aanleiding van een enquête, en ook in de e-mails
 die naar aanleiding van deze opvolgacties worden opgestart, zijn
@@ -206,7 +206,7 @@ welke vragen zijn ingevoerd:
 
 Op vraag 2 heb je geantwoord: `{$survey.questions.2.answer.1|escape}`
 
-### []()Formulieren
+### Formulieren
 
 Indien een opvolgactie plaatsvindt naar aanleiding van een ingevuld
 webformulier, dan zijn naast de profiel- en subprofielgegevens ook de
@@ -230,7 +230,7 @@ Smarty engine. Je kunt ze dus ook gebruiken in mailings die als
 opvolgactie naar aanleiding van een ingevuld formulier worden verstuurd.
 De gegevens kun je uitlezen via {\$webform.fields.veldnaam}.
 
-### []()Splitrun mailings
+### Splitrun mailings
 
 Naast de standaardopties die worden aangeboden in de applicatie is het
 mogelijk zelf condities op te stellen om te (laten) bepalen welk

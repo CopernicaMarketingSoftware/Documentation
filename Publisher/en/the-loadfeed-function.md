@@ -17,7 +17,7 @@ of the marketing software.
 
 `{loadfeed feed='address'}`
 
-Where address is the ([constructed](#)) address of the feed created
+Where address is the (constructed) address of the feed created
 under content, or the address of a feed hosted on a different server.
 
 ![](../images/loadfeed1.png)

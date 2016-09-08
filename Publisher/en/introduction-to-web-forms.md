@@ -33,8 +33,8 @@ website lay-out.
 
 These are the steps to create a content web form
 
-1.  [Compose the web form, by adding fields, interest fields, and text
-    blocks](#)
+1.  Compose the web form, by adding fields, interest fields, and text
+    blocks
 2.  Configure the web form behaviour (the working of the web form).
 3.  Publish the web form onto your web page
 4.  You may also edit its stylesheet or xslt for a different lay-out or
@@ -48,8 +48,6 @@ A subscription form creates a new profile in your database. It is used
 to gather new contacts through your website or from another location
 where you do not know who the person filling out the form is beforehand.
 
-[How to create a subscription web form](#)
-
 ### Unsubscribe form (profile will be entirely removed from database)
 
 An unsubscribe form is used to delete a contact from your database. The
@@ -59,8 +57,6 @@ your database to find his profile. That profile is then deleted.
 An unsubscribe form deletes the entire profile from your database. Their
 contact information is irretrievable!
 
-[How to create an unsubscribe web form](#)
-
 ### Change form (also used as a less definitive unsubscribe form)
 
 A change form only works for contacts you already know. It is used to
@@ -68,8 +64,8 @@ alter data of existing profiles. It has to be reached with a special
 hyperlink that lets the form know who is filling it out, or the profile
 is recognized through the submitted information (using key fields). It
 is usually linked to an emailing or a web page that has to be logged in
-to.\
- This type of form can be prefilled with the contact's current profile
+to.
+This type of form can be prefilled with the contact's current profile
 information, so that he only has to change values of choice.
 
 We recommend using this type of form for unsubscribing contacts from
@@ -82,8 +78,6 @@ How to create a change form
 ### Login / logout form
 
 A login form lets visitors of your website login to their profile of
-subprofile and thus give them access to [restricted/protected pages](#).
+subprofile and thus give them access to restricted/protected pages.
 For example to see and edit their own details. To state the obvious: a
 log out form does exactly the opposite.
-
-[How to create a login or logout form](#)
