@@ -10,12 +10,12 @@ opgeheven).
 E-mails blijven sturen naar deze adressen is niet alleen zonde van het
 geld (je betaalt immers per verstuurde e-mail, niet per afgeleverde
 e-mail), maar het is uiteindelijk ook slecht voor je verzendreputatie.
-Wij raden daarom sterk aan om iets aan [bounce management](#) te gaan
+Wij raden daarom sterk aan om iets aan bounce management te gaan
 doen.
 
 Dit houdt in dat je een selectie maakt op basis van de fouten die zijn
 opgetreden bij individuele profielen. De profielen uit deze selectie kan
-je vervolgens uitsluiten van je [nieuwsbrief selectie](#).
+je vervolgens uitsluiten van je nieuwsbrief selectie.
 
 **Wat te doen met de hardbouncende profielen?**
 
