@@ -59,4 +59,4 @@ Marketing](http://www.bosmadmc.nl "Bosma Direct Marketing")\
 [Lees de
 installatiegids](./joomla-installatiegids.md)
 (in het Engels)\
-[Download](Copernicacom/plg_copernica.zip "Download Joomla-plugin voor Copernica Marketing Software")
+[Download](../downloads/plg_copernica.zip "Download Joomla-plugin voor Copernica Marketing Software")

@@ -27,7 +27,7 @@ computer and a mobile (smart)phone like an iPhone. See below.
 Copernica](../images/responsive-email-copernica-screenshot.jpg)\
 
 [Download the source
-files](Copernicacom/responsive-email-copernica-source.zip "Download the source files")
+files](../downloads/responsive-email-copernica-source.zip "Download the source files")
 
 The Basics
 ----------

@@ -49,7 +49,7 @@ Certificering aanvragen
 -----------------------
 
 Return Path hanteert zelf [het volgende
-aanvraagformulier](Copernicacom/application-form-returnpath.pdf) om te
+aanvraagformulier](../downloads/application-form-returnpath.pdf) om te
 controleren of een partij klaar is voor de certificering. Zo kijkt
 Return Path naar het gebruik van je dedicated IP adres (minimaal 90
 dagen) en de verzenddomeinnamen die je hanteert. Wil je certificering

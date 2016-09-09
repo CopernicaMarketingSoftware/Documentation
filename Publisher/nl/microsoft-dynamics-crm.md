@@ -40,7 +40,7 @@ Dynamics CRM.\
 -   **Versie:** Copernica Connector CRM2011
 -   **Licentie:**testlicentie
 -   [User/Installation guide
-    (English)](Copernicacom/Copernica-Connector-CRM-Beta-English.pdf "User/Installation guide (English)")
+    (English)](../downloads/Copernica-Connector-CRM-Beta-English.pdf "User/Installation guide (English)")
 -   Hosting per maand: €75
 -   **Aanvragen:**info@triomis.de
 

@@ -14,11 +14,9 @@ marketing.
 
 **Filesize**: 19MB
 
-**[Installation
-manual](integrations/CopernicaNETLibraryManualv100.pdf)**
+**[Installation manual](../downloads/CopernicaNETLibraryManualv100.pdf)**
 
-[Download Microsoft .Net integration
-plugin](integrations/microsoft_net_integration.zip "Download this plugin")
+[Download Microsoft .Net integration plugin](../downloads/microsoft_net_integration.zip "Download this plugin")
 
 This .NET library can be used for integrating Copernica into a .NET
 application. It enables to easily transfer data from an application to a

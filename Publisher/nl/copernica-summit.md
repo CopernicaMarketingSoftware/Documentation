@@ -38,7 +38,7 @@ het gebied van email marketing. Genoeg redenen om de vijfde editie van
 het Copernica Summit te sponsoren.
 
 De sponsorpakketten zijn nu bekend en [bekijk je
-hier](EventsNL/SponsorpakkettenSummit2015.pdf "Sponsorpakketten Copernica Summit").
+hier](../downloads/SponsorpakkettenSummit2015.pdf "Sponsorpakketten Copernica Summit").
 We raden aan om zo snel mogelijk je deelname aan het Summit kenbaar te
 maken. Hoe eerder, hoe meer marketingmogelijkheden we je voorafgaand aan
 het Summit kunnen bieden en hoe meer je er ook uit kan halen. Daarnaast

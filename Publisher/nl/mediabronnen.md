@@ -24,7 +24,7 @@ Copernica Marketing Software media logo
 [Download media logo als
 .png-formaat](../images/copernica-marketingsoftware-logo.png "Download logo als .png-formaat")\
 [Download media logo als hoge resolutie
-PDF](Copernicacom/Copernica-emailmarketing-Software.pdf "Download media logo als hoge resolutie PDF")
+PDF](../downloads/Copernica-emailmarketing-Software.pdf "Download media logo als hoge resolutie PDF")
 
 We willen je vragen bij plaatsing online, het logo door te laten linken
 naar [www.copernica.com](http://www.copernica.com "www.copernica.com")
@@ -51,7 +51,7 @@ logo](../images/Copernica-registered-partner-logo.png "Het Copernica partner log
 [Download partner logo als
 .png-formaat](../images/Copernica-registered-partner-logo.png "Download partner logo als .png-formaat")\
 [Download partner logo als hoge resolutie
-formaat](Copernicacom/Copernica-emailmarketing-Software-registered-partner-logo.pdf "Download partner logo als hoge resolutie formaat")
+formaat](../downloads/Copernica-emailmarketing-Software-registered-partner-logo.pdf "Download partner logo als hoge resolutie formaat")
 
 Powered by Copernica logo
 -------------------------

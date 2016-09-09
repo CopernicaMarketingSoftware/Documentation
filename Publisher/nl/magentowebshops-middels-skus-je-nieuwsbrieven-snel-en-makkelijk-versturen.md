@@ -22,7 +22,7 @@ hebt geinstalleerd. Om dit makkelijk te maken voor je heb ik de
 bronbestanden ter download beschikbaar gesteld:
 
 -   1. [Download de
-    bronbestanden](Copernicacom/sku_resources.zip "Download bronbestanden")
+    bronbestanden](../downloads/sku_resources.zip "Download bronbestanden")
 -   2. Pak bovenstaand zipbestand uit en importeer de zipfile
     "Template.zip" in Copernica (onder E-mailings). Kopieer en plak de
     code uit "example\_xslt.txt" in Copernica onder stijl in een XSLT
