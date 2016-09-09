@@ -22,15 +22,15 @@ Ga voor de volledige SOAP API object reference naar
 [https://www.copernica.com/en/support/apireference](https://www.copernica.com/en/support/apireference)
 
 [Download SOAP API voorbeeldscript voor
-PHP](soaptest_php_1-5.zip "Download SOAP API voorbeeldscript voor PHP")
+PHP](../downloads/soaptest_php_1-5.zip "Download SOAP API voorbeeldscript voor PHP")
 *(zip)*
 
 [Download SOAP API voorbeeldscript voor
-Java](Copernicacom/soaptest_java.zip "Download SOAP API voorbeeldscript voor Java")
+Java](../downloads/soaptest_java.zip "Download SOAP API voorbeeldscript voor Java")
 *(zip)*
 
 [Download SOAP API voorbeeldscript voor
-C\#](Copernicacom/soaptest_cs.zip "Download SOAP API voorbeeldscript voor C#")
+C\#](../downloads/soaptest_cs.zip "Download SOAP API voorbeeldscript voor C#")
 *(zip)*
 
 Volledige controle dankzij Copernica object model

@@ -36,9 +36,9 @@ E-mailtemplates
 Copernica](../images/html-email-template-copernica-1.jpg)
 
 [Download met Copernica
-tags](articlesblog/template-1-with-copernica-tags.zip) \
+tags](../downloads/template-1-with-copernica-tags.zip) \
  of [download zonder Copernica
-tags](articlesblog/template-1-without-copernica-tags.zip)
+tags](../downloads/template-1-without-copernica-tags.zip)
 
 * * * * *
 
@@ -46,9 +46,9 @@ tags](articlesblog/template-1-without-copernica-tags.zip)
 Copernica](../images/html-email-template-copernica-2.jpg)
 
 [Download met Copernica
-tags](articlesblog/template-2-with-copernica-tags.zip) \
+tags](../downloads/template-2-with-copernica-tags.zip) \
  of [download zonder Copernica
-tags](articlesblog/template-2-without-copernica-tags.zip)
+tags](../downloads/template-2-without-copernica-tags.zip)
 
 * * * * *
 
@@ -56,9 +56,9 @@ tags](articlesblog/template-2-without-copernica-tags.zip)
 Copernica](../images/html-email-template-copernica-3.jpg)
 
 [Download met Copernica
-tags](articlesblog/template-3-with-copernica-tags.zip) \
+tags](../downloads/template-3-with-copernica-tags.zip) \
  of [download zonder Copernica
-tags](articlesblog/template-3-without-copernica-tags.zip)
+tags](../downloads/template-3-without-copernica-tags.zip)
 
 * * * * *
 
@@ -66,9 +66,9 @@ tags](articlesblog/template-3-without-copernica-tags.zip)
 Copernica](../images/html-email-template-copernica-4.jpg)
 
 [Download met Copernica
-tags](articlesblog/template-4-with-copernica-tags.zip) \
+tags](../downloads/template-4-with-copernica-tags.zip) \
  of [download zonder Copernica
-tags](articlesblog/template-4-without-copernica-tags.zip)
+tags](../downloads/template-4-without-copernica-tags.zip)
 
 * * * * *
 
@@ -76,6 +76,6 @@ tags](articlesblog/template-4-without-copernica-tags.zip)
 Copernica](../images/html-email-template-copernica-5.jpg)
 
 [Download met Copernica
-tags](articlesblog/template-5-with-copernica-tags.zip) \
+tags](../downloads/template-5-with-copernica-tags.zip) \
  of [download zonder Copernica
-tags](articlesblog/template-5-without-copernica-tags.zip)
+tags](../downloads/template-5-without-copernica-tags.zip)

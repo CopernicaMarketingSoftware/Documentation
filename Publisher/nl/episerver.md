@@ -99,9 +99,9 @@ Download
 **Versie:** 1.0.0\
 **Licentie:** OSL\
 **Bestandsgrootte:** 13,3 MB\
-[Handleiding](Copernicacom/Copernica-Episerver-Manual.pdf "Handleiding EPiServer")\
+[Handleiding](../downloads/Copernica-Episerver-Manual.pdf "Handleiding EPiServer")\
 \
-[Download](Copernicacom/EpiServerCopernicaPlugin.rar.rar "Download EPiServer plugin")
+[Download](../downloads/EpiServerCopernicaPlugin.rar.rar "Download EPiServer plugin")
 
 Over EPiServer CMS7 + Commerce
 ------------------------------
@@ -128,6 +128,6 @@ Download
 **Versie:** 1.0.0\
 **Licentie:** OSL\
 **Bestandsgrootte:** 6,24 MB\
-[Handleiding](Copernicacom/Episerver-commerce-handleiding.pdf "Handleiding EPiServer")\
+[Handleiding](../downloads/Episerver-commerce-handleiding.pdf "Handleiding EPiServer")\
 \
-[Download](Copernicacom/EPiServer-Commerce-koppeling.zip "Download EPiServer plugin")
+[Download](../downloads/EPiServer-Commerce-koppeling.zip "Download EPiServer plugin")

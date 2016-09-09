@@ -5,7 +5,7 @@ Joomla-plugin for Copernica installation guide
 ----------------------------------------------
 
 1.  [Download the zip
-    file](Copernicacom/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
+    file](../downloads/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
 2.  Log into your Joomla backend
 3.  Go to "Extensions" -\> "Install/Uninstall"
 4.  Upload the zipfile you just downloaded

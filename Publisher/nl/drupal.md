@@ -79,7 +79,7 @@ uitwisseling van gegevens mogelijk tussen beide systemen. Als developer
 heb je via deze module toegang tot een reeks aan Drupal-functies.
 
 **Bestandsgrootte:**12 kB \
-[Download](Copernicacom/copernica_connector_v2.zip "Download Drupal connector integratie voor Copernica Marketing Software")
+[Download](../downloads/copernica_connector_v2.zip "Download Drupal connector integratie voor Copernica Marketing Software")
 
 Copernica User
 --------------
@@ -93,7 +93,7 @@ persoonlijke interesses.
 
 **Bestandsgrootte:**3 kB\
 
-[Download](Copernicacom/copernica_basic_user.zip "Download Drupal user integratie voor Copernica Marketing Software")
+[Download](../downloads/copernica_basic_user.zip "Download Drupal user integratie voor Copernica Marketing Software")
 
 Copernica Webform
 -----------------
@@ -105,7 +105,7 @@ marketingcampagnes.
 
 **Bestandsgrootte:**13 kB\
 
-[Download](Copernicacom/copernica_webform.zip "Download Drupal webform integratie voor Copernica Marketing Software")
+[Download](../downloads/copernica_webform.zip "Download Drupal webform integratie voor Copernica Marketing Software")
 
 Copernica Drupal Commerce
 -------------------------
@@ -118,7 +118,7 @@ verlaten winkelmandjes campagnes.
 
 **Bestandsgrootte:**20 kB\
 
-[Download](Copernicacom/copernica_commerce.zip "Download Copernica Drupal Commerce integratie voor Copernica Marketing Software")
+[Download](../downloads/copernica_commerce.zip "Download Copernica Drupal Commerce integratie voor Copernica Marketing Software")
 
 Copernica Queue
 ---------------
@@ -131,7 +131,7 @@ snelheid en user experience van de site niet vertraagd.
 
 **Bestandsgrootte:**12 kB\
 
-[Download](Copernicacom/copernica_queue.zip "Download Copernica Drupal queue integratie voor Copernica Marketing Software")
+[Download](../downloads/copernica_queue.zip "Download Copernica Drupal queue integratie voor Copernica Marketing Software")
 
 Copernica Entity
 ----------------
@@ -146,7 +146,7 @@ met deze module te werken heb je ook de Copernica Queue module nodig.
 
 **Bestandsgrootte:**21 kB\
 
-[Download](Copernicacom/copernica_entity.zip "Download Copernica Drupal Entity voor Copernica Marketing Software")
+[Download](../downloads/copernica_entity.zip "Download Copernica Drupal Entity voor Copernica Marketing Software")
 
 *Deze Copernica modules zijn ontwikkeld door een derde partij. Copernica
 is daarom niet verantwoordelijk voor de goede werking van de modules.*

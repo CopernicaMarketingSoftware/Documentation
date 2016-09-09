@@ -9,7 +9,7 @@ met gegevens uit Joomla-formulieren. Gebruik hiervoor de Joomla-plugin.
 -   **Licentietype:**Open source
 -   **[Installatiehandleiding](./joomla-installatiegids.md)**
     (PDF)
--   [Downloaden](Copernicacom/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
+-   [Downloaden](../downloads/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
 
 Koppel gegevens uit Joomla-formulieren automatisch aan Copernica
 ----------------------------------------------------------------
