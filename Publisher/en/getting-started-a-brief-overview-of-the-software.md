@@ -168,7 +168,7 @@ main menu header. Here's a quick overview.
     personalized coupons, tickets, whitepapers, leaflets or anything
     else along with your email that is meant to be printed on paper.
 -   Content: within the Content module you create and manage your own
-    web forms, RSS and Atom feeds, surveys and [Media Libraries](<a>)
+    web forms, RSS and Atom feeds, surveys and Media Libraries
     that you can quickly and easily use in both your Copernica projects
     and anywhere outside Copernica.
     Media Libraries enable you to centrally manage your images and
