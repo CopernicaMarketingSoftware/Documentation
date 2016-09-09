@@ -2,7 +2,7 @@ Je kan vanuit een emailing of een webpagina op twee verschillende
 manieren naar een PDF-bestand linken. Het is ook mogelijk om een
 PDF-bestand als bijlage mee te sturen per elektronische post.
 
-Mogelijkheid 1. De speciale {linkpdf} tag {#mogelijkheid-1.-de-speciale-{linkpdf}-tag}
+Mogelijkheid 1. De speciale {linkpdf} tag
 -----------------------------------------
 
 Als je een PDF bestand hebt geimporteerd naar het onderdeel PDF, dan kan

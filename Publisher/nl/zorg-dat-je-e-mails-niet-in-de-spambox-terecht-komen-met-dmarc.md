@@ -31,7 +31,7 @@ ondersteunt.
 Waarom is DMARC zo belangrijk?
 ------------------------------
 
-Zoals de ontwikkelaars van [DMARC](http://dmarc.org/index.html) aangeven
+Zoals de ontwikkelaars van [DMARC](https://dmarc.org) aangeven
 en grotere partijen als
 [Linkedin](http://engineering.linkedin.com/email/dmarc-new-tool-detect-genuine-emails)
 ook ondervinden, zijn de authenticatiemethoden SPF en DKIM krachtig,

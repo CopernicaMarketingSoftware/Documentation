@@ -103,7 +103,7 @@ ours. So, when you use our servers for your settings, we can do stuff
 for you, such as rotating your DKIM keys and generally managing all of
 your settings.
 
-How do I set up Sender Domains? {#how-do-i-set-up-sender-domains?}
+How do I set up Sender Domains?
 -------------------------------
 
 To configure a Sender Domain in Copernica Marketing Suite, click

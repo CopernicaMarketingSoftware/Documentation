@@ -38,7 +38,7 @@ naar dit formaat (vergroot of verkleind).
 Afbeeldingen ingeladen met het bovenstaande blok worden teruggeschaald
 naar 200x200 pixels.
 
-#### **Minimale en maximale hoogte** {#**minimale-en-maximale-hoogte**}
+#### **Minimale en maximale hoogte**
 
 Stel een minimale en maximale hoogte in voor de afbeelding. Afbeeldingen
 met een afwijkend formaat worden geschaald naar naar de opgegeven
@@ -47,7 +47,7 @@ proporties.
 
 `[image name="header"  maxheight="600" minheight="300"]`
 
-#### **Max and min width** {#**max-and-min-width**}
+#### **Max and min width**
 
 Stel een minimale en maximale breedte in voor de afbeelding.
 Afbeeldingen met een afwijkend formaat worden geschaald naar naar de
@@ -56,7 +56,7 @@ de proporties..
 
 `[image name="header"  maxwidth="600" minwidth="300"]`
 
-#### **Inleidende en afsluitende HTML** {#**inleidende-en-afsluitende-html**}
+#### **Inleidende en afsluitende HTML**
 
 Voeg HTML toe aan het afbeeldingblok. Deze code alleen wordt ingeladen
 als op documentniveau ook daadwerkelijk een afbeelding wordt gebruikt.

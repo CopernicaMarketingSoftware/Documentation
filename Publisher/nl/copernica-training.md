@@ -21,7 +21,7 @@ toegang gekregen? Vraag dan eerst de beheerder van het hoofdaccount een
 [gebruikersaccount voor je aan te maken](./beheer-van-gebruikers-en-toegangsrechten.md).
 Deze heb je nodig om jezelf te kunnen aanmelden.
 
-### Training op hoofdkantoor van Copernica {#<a-name=hoofdkantoor></a>training-op-hoofdkantoor-van-copernica}
+### Training op hoofdkantoor van Copernica
 
 Twee keer per maand geeft Copernica je de mogelijkheid om op het
 hoofdkantoor te Amsterdam je in één dag te trainen en te certificeren

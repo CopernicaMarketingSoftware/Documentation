@@ -17,8 +17,7 @@ The process is as follows:
 ### Step 1. Prepare your database
 
 In the database where your relationships are stored create a new
-[interest
-group](<http://www.copernica.com/en/support/working-with-interest-fields-and-groups>)
+[interest group](./working-with-interest-fields-and-groups.md)
 . Give this group a descriptive name, e.g., *whitepapers*, and make an
 interest field for each whitepaper that can be downloaded.
 
@@ -27,8 +26,7 @@ normal database fields if you prefer so.
 
 ### Step 2. Make the web form
 
--   In *Content*, create a new [web
-    form](<http://www.copernica.com/en/support/introduction-to-web-forms>)
+-   In *Content*, create a new [web form](./introduction-to-web-forms.md)
 -   Add the required fields (at least name, email, phone)
 -   Include the interest fields
 -   It is nice to inform the submitter that he may be called by your
@@ -42,8 +40,7 @@ normal database fields if you prefer so.
 This document will be sent to the profile as a follow-up action on the
 web form. In the e-mail document place a hyperlink that points to the
 web page from which the white papers can be downloaded. The link must be
-expanded to [include personalization
-code](<http://www.copernica.com/en/support/linking-to-your-website-from-an-emailing>)
+expanded to [include personalization code](./linking-to-your-website-from-an-emailing.md)
 , to ensure that the profile is automatically logged in when he visits
 the secure download page (see step 5).
 
@@ -78,5 +75,3 @@ The web page with the download links should be made a secure page.
 Go to **Websites**, open the download page and then choose *Set
 access*from the web page menu. Tick ​​the option in the dialog box which
 says *This page is only available for logged in visitors*
-
- 

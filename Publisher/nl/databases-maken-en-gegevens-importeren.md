@@ -24,7 +24,7 @@ linker overzicht onder *Databases en selecties*. Deze database is nog
 helemaal leeg; er is geen data en er zijn nog geen databasevelden. Hier
 gaan we nu verandering in brengen.
 
-Stap twee: Gegevens importeren {#stap-twee:-gegevens-importeren}
+Stap twee: Gegevens importeren
 ------------------------------
 
 Je kunt eerst je databasevelden aanmaken, maar het is gemakkelijker (en
@@ -71,7 +71,7 @@ Een tabgescheiden bestand maakt je met Excel.
 
     -   In plaats van een tab, kan je desgewenst ook een komma of
         puntkomma als scheidingsteken gebruiken. Zie
-        ook: [](<http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/>)[http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/](http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/)
+        ook: [](http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/)[http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/](http://www.howtogeek.com/79991/convert-an-excel-spreadsheet-to-a-tab-delimited-text-file/)
 
 ### Importbestand uploaden naar Copernica
 

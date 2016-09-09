@@ -3,7 +3,7 @@ afgeleverd, en niet ergens in een spambox eindigen. Copernica biedt een
 groot aantal hulpmiddelen om de afleverkwaliteit te optimaliseren. Ook
 vind je hier algemene tips voor het verbeteren van je deliverability.
 
-1. E-mail authenticatie {#1.-e-mail-authenticatie}
+1. E-mail authenticatie
 -----------------------
 
 Om de niet-aflatende stroom van spamberichten te kunnen onderscheiden
@@ -11,7 +11,7 @@ van bonafiede e-mails hebben grote e-mail service providers (ESP's),
 waaronder Google, Microsoft en Yahoo technische hulpmiddelen ontwikkeld
 waarmee jij je kunt identificeren als een betrouwbare verzender.
 
-### DKIM (DomainKey Identified Mail) {#dkim-(domainkey-identified-mail)}
+### DKIM (DomainKey Identified Mail)
 
 DKIM staat voor DomainKey Identified Mail en is een stukje code in de
 DNS. Hiermee zet je een unieke digitale handtekening in de header van je
@@ -55,7 +55,7 @@ geweigerd.
 -   [Google handleiding voor het opmaken van een DMARC entry in je
     DNS](https://support.google.com/a/answer/2466563?hl=en)
 
-2. Optimaliseer je database {#2.-optimaliseer-je-database}
+2. Optimaliseer je database
 ---------------------------
 
 ESP's houden er niet van als je e-mails blijft sturen naar adressen
@@ -81,7 +81,7 @@ verdere actie ondernemen.
 -   [Automatisch verwerken van e-mail
     bounces](./automatisch-verwerken-bounces.md)
 
-3. Optimaliseer je e-maildocumenten {#3.-optimaliseer-je-e-maildocumenten}
+3. Optimaliseer je e-maildocumenten
 -----------------------------------
 
 Iedereen die wel eens spam heeft ontvangen weet dat spam meestal ook de
@@ -94,7 +94,7 @@ materie en eigenschappen. - Document controleren op spamgevoeligheid
 -   [Veelvoorkomende HTML-fouten
     oplossen](./veelvoorkomende-html-fouten.md)
 
-4. Ontvangers kunnen zich uitschrijven {#4.-ontvangers-kunnen-zich-uitschrijven}
+4. Ontvangers kunnen zich uitschrijven
 --------------------------------------
 
 Je bent volgens Nederlandse wet verplicht een duidelijke
@@ -105,7 +105,7 @@ faciliteren.
 -   [Afmeldingen automatisch
     verwerken](./afmeldingen-automatisch-verwerken.md)
 
-5. Controleer alles nog eens voordat je een bulkmailing verstuurt {#5.-controleer-alles-nog-eens-voordat-je-een-bulkmailing-verstuurt}
+5. Controleer alles nog eens voordat je een bulkmailing verstuurt
 -----------------------------------------------------------------
 
 Staat alles goed ingesteld? Is er geen hoge spamscore? Copernica loopt

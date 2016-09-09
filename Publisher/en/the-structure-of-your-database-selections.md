@@ -113,7 +113,7 @@ be temporarily not accessible due to maintenance or interruption.
 The softbounce selection is configured the same way as the hardbounce
 selection. The only difference it the type of error that occured.
 
-### E\_Softbounces {#e_softbounces}
+### E\_Softbounces
 
 This is the selection where you finally send a mailing to. To this
 selection we added various conditions and for a profile to be included

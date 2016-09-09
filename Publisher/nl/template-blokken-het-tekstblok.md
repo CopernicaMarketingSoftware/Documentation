@@ -32,7 +32,7 @@ broncode:
 Let wel, hiermee wordt de uitgebreide editor niet volledig
 uitgeschakeld. De eindgebruiker kan deze blijven gebruiken.
 
-#### **Inleidende en afsluitende HTML** {#**inleidende-en-afsluitende-html**}
+#### **Inleidende en afsluitende HTML**
 
 Voeg HTML toe aan het tekstblok. Deze code alleen wordt ingeladen als op
 documentniveau ook daadwerkelijk tekst is ingevoerd. Op deze wijze kan

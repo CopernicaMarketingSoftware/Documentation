@@ -19,8 +19,7 @@ Typen velden
 Binnen Copernica kan gebruik worden gemaakt van verschillende types
 velden voor het opslaan van gegevens.
 
-![Typen velden](../images/edit_database_fields.png)\#\#\#
-**Numerieke velden**
+![Typen velden](../images/edit_database_fields.png)
 
 Dit veld kan alleen numerieke waarden [0-9] bevatten. Gebruik dit
 veldtype om informatie zoals leeftijd of gewicht op te slaan. Numerieke
@@ -64,15 +63,13 @@ Datumvelden worden (uiteraard) gebruikt voor het opslaan van
 datumgegevens. Een datumveld moet een geldig opgemaakte datum bevatten
 (yyyy-mm-dd). Een datumveld wordt automatisch gevuld met nullen indien
 deze niet leeg mag zijn (0000-00-00).\
- **\
- Voorbeeld datumnotatie**: 1980-09-03
+ **Voorbeeld datumnotatie**: 1980-09-03
 
 ### **Datum + tijdveld**
 
 Datum + tijdvelden zijn normale datumvelden, maar uitgebreid met uren,
 minuten en seconden (uu:mm:ss).\
- **\
- Voorbeeld:** 1980-09-03 08:56:36
+ **Voorbeeld:** 1980-09-03 08:56:36
 
 ### **E-mailveld**
 
@@ -80,7 +77,7 @@ Dit veld wordt door de applicatie gebruikt voor het versturen van
 mailings, testmailings, enzovoort.\
  E-mailvelden kunnen in principe alleen legitieme e-mailadressen
 bevatten. Dat wil zeggen: het e-mailadres is correct opgemaakt
-([naam@bedrijf.nl](<mailto:naam@bedrijf.nl>) , a.bcdfg@bedrijf.co.uk).
+([naam@bedrijf.nl](mailto:naam@bedrijf.nl) , a.bcdfg@bedrijf.co.uk).
 
 **Als er in een database of collectie geen e-mailveld is aangewezen,
 kunnen er ook geen e-mailings worden verstuurd naar deze database of
@@ -136,7 +133,7 @@ volgende voorbeeld, is de stad Haarlem de standaardwaarde:
 Deze asterisk wordt niet getoond in webformulieren of tijdens het
 bewerken van profielen.
 
-**Lege optie:**Een meerkeuzeveld kan een lege optie krijgen. Gebruik
+**Lege optie:** Een meerkeuzeveld kan een lege optie krijgen. Gebruik
 hiervoor gewoon een lege regel (enter).
 
 Let wel, een meerkeuzeveld wordt niet automatisch getoond als een
@@ -187,8 +184,7 @@ afbeelding is het veld ‘Company’ gesorteerd.
 -   De naam van het bedrijf wordt nu getoond in het profiel tabblad.
 -   De profielen zijn alfanumeriek gesorteerd in de lijst met profielen.
 
-![Gesorteerde database
-velden](../images/ordering_database_fields.png)
+![Gesorteerde database velden](../images/ordering_database_fields.png)
 
 ### **Dit veld wordt geïndexeerd**
 

@@ -13,11 +13,11 @@ Interest fields can be grouped. You can have for example a group called
 'Favorite\_color' that houses the interest fields 'Red', 'Green' and
 'Pink'.
 
-| Request url | Methods | Parameters |
-| --- | --- | --- |
-| [https://api.copernica.com/profile/\$profileID/interests](https://api.copernica.com/profile/$profileID/interests) | GET, POST | none |
-| | GET | request {#request-urlmethodsparameters-https://api.copernica.com/profile/$profileid/interests-get,-post-none-get-request} |
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Request url                                                                                                               | Methods     | Parameters |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| [https://api.copernica.com/profile/\$profileID/interests](https://api.copernica.com/profile/$profileID/interests)         | GET, POST   | none       |
+| [https://api.copernica.com/profile/\$profileid/interests-get](https://api.copernica.com/profile/$profileid/interests-get) | GET         | none       |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
 
 Retrieve the interests of the profile with identifier \$profileID. An
 array with its interests will be returned.
@@ -73,7 +73,7 @@ Use this URL to overwrite the interests of the profile with identifier
 \$profileID. A message containting the location of the profile will be
 returned.
 
-### Sample post message {#sample-post-message}
+### Sample post message
 
 The example message below will replace all interests of the profile with
 the interest with ID 13. It is not needed to include the profile in the

@@ -18,7 +18,7 @@ opt in.
 -   As a result it is less likely that your emails get trapped in spam
     filters.
 
-#### This is how it works: {#this-is-how-it-works:}
+#### This is how it works:
 
 1.  A new subscriber asks to be subscribed to the mailing list and uses
     a web form to fill out his or her email address.
@@ -32,7 +32,7 @@ opt in.
 
 Now let’s create a double opt in.
 
-#### You will need the following: {#you-will-need-the-following:}
+#### You will need the following:
 
 -   A database with a multiple choice field about newsletter preferences
     and a field holding the email address.
@@ -41,7 +41,7 @@ Now let’s create a double opt in.
     a landing page after confirmation.
 -   One email document with the confirmation link.
 
-### **First step: setting up the database** {#**first-step:-setting-up-the-database**}
+### **First step: setting up the database**
 
 Start with setting up the database. This database should at least
 contain a field to store the subscribers email address and a field to
@@ -55,7 +55,7 @@ value) it with the following options:
 -   Yes, not confirmed
 -   Yes, confirmed
 
-### **Second step: create webpages** {#**second-step:-create-webpages**}
+### **Second step: create webpages**
 
 -   Create three web pages.
 -   The first one will hold the subscription form
@@ -114,7 +114,7 @@ Choose the following options:
 -   Choose the error text (e.g., You are already receiving our emails).
 -   In the end of the wizard **click on finish**.
 
-### **Fourth step** – Create the document with confirmation link {#**fourth-step**---create-the-document-with-confirmation-link}
+### **Fourth step** – Create the document with confirmation link
 
 In the Emailings section create a new document (if you haven't got one
 already). This is the document new subscribers will receive after they
@@ -138,16 +138,14 @@ Store the follow-up. When the subscriber clicks on the link, the
 follow-up will be triggered and tthe value of the newsletter field will
 update itself to **Yes, confirmed**.
 
-### **Fifth step – send the confirmation mail** {#**fifth-step---send-the-confirmation-mail**}
+### **Fifth step – send the confirmation mail**
 
 You are now nearly finished. Go back to the section Content and select
 the webform that you created in the third step.
 
 After the new subscriber has submitted the webform, you want to send him
 or her an email to confirm the subscription. We are going to use a
-[follow up
-action](<https://www.copernica.com/en/support/automate-campaigns-with-follow-up-actions>)
-for that.
+[follow up action](./automate-campaigns-with-follow-up-actions.md) for that.
 
 -   Go to Webform menu \> **Follow-ups…**
 -   Create a new follow up.
@@ -159,7 +157,6 @@ for that.
 
 Add the web form to the first web page and test if it all works!
 
-Ow, and don't forget to make a [Newsletter database
-selection](<https://www.copernica.com/en/support/selections-and-miniselections>)
+Ow, and don't forget to make a [Newsletter database selection](./selections-and-miniselections.md)
 (check on field, the field newsletter must be equal to Yes, confirmed)
 and use this selection to send your newsletters to.

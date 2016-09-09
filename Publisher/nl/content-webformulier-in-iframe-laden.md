@@ -17,7 +17,7 @@ hiervoor de code:
 `<iframe src="http://www.webpagina-met-formulier.nl" width="500" height="500"></iframe>`
 
 Kijk voor meer opties voor het iframe HTML element op
-http://www.w3schools.com/tags/tag\_iframe.asp
+(http://www.w3schools.com/tags/tag_iframe.asp)[http://www.w3schools.com/tags/tag_iframe.asp]
 
 Wijzigformulier publiceren
 --------------------------

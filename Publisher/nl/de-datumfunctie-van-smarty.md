@@ -40,7 +40,7 @@ template of document. Om de weergavetaal van personalisatie te bekijken,
 kies je linksonderaan de template of document
 **Personalisatie-instellingen**.
 
-### Morgen, overmorgen en de dag daar weer na {#morgen,-overmorgen-en-de-dag-daar-weer-na}
+### Morgen, overmorgen en de dag daar weer na
 
 Is je actie slechts een dag geldig? Smarty voorziet hierin.
 

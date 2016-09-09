@@ -98,16 +98,13 @@ domeinnaam zoals: abuse@ of postmaster@. Hieronder een aantal ISP's die
 feedbackloopprogramma's aanbieden. Het aanmelden kan middels formulieren
 op de websites.
 
--   [Yahoo Feedback
-    Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
+-   [Yahoo Feedback Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
 -   [MSN/Hotmail Feedback
     Loop](https://support.msn.com/eform.aspx?productKey=edfsjmrpp&ct=eformts "MSN/Hotmail Feedback Loop")
--   [AOL Feedback
-    Loop](http://postmaster.aol.com/Postmaster.FeedbackLoop.php "AOL Feedback Loop")
+-   [AOL Feedback Loop](https://postmaster.aol.com/fbl-request "AOL Feedback Loop")
 -   [OpenSRS/ Tucows](http://fbl.hostedemail.com/ "OpenSRS/ Tucows")
 -   [Comcast](http://feedback.comcast.net "Comcast")
--   [United
-    Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
+-   [United Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
 -   Gmail: biedt helaas geen feedbacklooppprogramma aan partijen die
     bulkmailings versturen. Zij maken gebruik van ingewikkelde
     filtertechnieken om zelf te bepalen wat spam is en wat niet. Wel

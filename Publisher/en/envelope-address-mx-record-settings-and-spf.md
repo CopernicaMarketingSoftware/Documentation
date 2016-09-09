@@ -43,7 +43,7 @@ Please take note of the following when configuring the DNS
 for the envelope domain: the email protocol that does allow you to use a
 CNAME record for the envelope domain. Use an A record instead.
 
-### SPF (Sender Policy Framework) {#spf-(sender-policy-framework)}
+### SPF (Sender Policy Framework)
 
 To optimize the delivery, it is advised to create an SPF record for the
 envelope domain as well. An SPF record is a setting in the DNS to

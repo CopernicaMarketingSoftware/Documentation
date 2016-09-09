@@ -52,5 +52,4 @@ Selections created on collections are called mini selections. They can
 be added in the *Edit selections* dialog and work the same as
 selections.
 
-Read more about [selections and
-miniselections](<http://www.copernica.com/en/support/working-with-selections>)
+Read more about [selections and miniselections](./working-with-selections.md)

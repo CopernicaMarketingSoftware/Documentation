@@ -9,18 +9,17 @@ Nederland BV.
 De Ruyterkade 112\
  1011 AB Amsterdam
 
-Tel:[+31 20 520 61 90](<tel:0031-205-206-190>)\
- Fax: +31 20 622 25 36\
- E-mail: [info@copernica.com](mailto:info@copernica.com "Email ons")\
- BTW nummer: NL 8151.01.922.B.01\
+Tel:[+31 20 520 61 90](tel:0031-205-206-190) \
+ Fax: +31 20 622 25 36 \
+ E-mail: [info@copernica.com](mailto:info@copernica.com "Email ons") \
+ BTW nummer: NL 8151.01.922.B.01 \
  Kamer van Koophandel-nummer: 34129493
 
 Routebeschrijving
 -----------------
 
-![route naar
-Copernica](../images/copernica-route.jpg "Route naar hoofdkantoor Copernica")**Komende
-vanaf de A2:**
+![route naar Copernica](../images/copernica-route.jpg "Route naar hoofdkantoor Copernica")
+**Komende vanaf de A2:**
 
 -   Neem de afslag Zaanstad naar de A10/E35
 -   Neem vervolgens afrit Zeeburg naar de s114 richting Centrum
@@ -104,12 +103,10 @@ Kaiserswerther Str. 228 \
  40474 Düsseldorf \
  Deutschland
 
-Tel: [+49 211 / 417414-0](<tel:0049-211-417-4140>)\
- Fax: +49 211 / 417414-11\
- Website:
-[www.copernica.de](https://www.copernica.com/de "Bekijk onze Duitse website")\
- E-mail:
-[info@copernica.de](mailto:info@copernica.de "E-mail onze Duitse collega's")
+Tel: [+49 211 / 417414-0](tel:0049-211-417-4140) \
+ Fax: +49 211 / 417414-11 \
+ Website: [www.copernica.de](https://www.copernica.com/de "Bekijk onze Duitse website") \
+ E-mail: [info@copernica.de](mailto:info@copernica.de "E-mail onze Duitse collega's")
 
 [Copernica DE op Google
 Maps](https://maps.google.nl/maps?ie=UTF8&cid=8641035882841265648&q=Copernica+Deutschland+GmbH&gl=NL&hl=nl&t=m&iwloc=A&ll=51.249762,6.765&spn=0.006295,0.006295&source=embed "Grotere kaart weergeven")

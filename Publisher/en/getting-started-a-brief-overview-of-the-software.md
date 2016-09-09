@@ -11,7 +11,7 @@ them to. In Copernica, this is done by making databases consisting of
 profiles, subprofiles, collections, selections and miniselections.
 Below, we'll explain them briefly.
 
-### Profiles, subprofiles and interest groups {#profiles,-subprofiles-and-interest-groups}
+### Profiles, subprofiles and interest groups
 
 Profiles are probably the most important section for every online
 marketing campaign you're going to unfold with Copernica. Therefore, it
@@ -19,8 +19,7 @@ is recommended to keep this section complete and organized right from
 the start. Profiles are database entries that have fields holding
 information. For example, a profile about a relation can have the
 properties 'name', 'email', 'birthday', et cetera. Each profile also has
-its own [campaign
-history](<https://www.copernica.com/en/blog/view-profile-history-and-campaigns>)
+its own [campaign history](./view-profile-history-and-campaigns.md)
 , in which you can see all results a profile has had since it was
 created. Subprofiles are basically the same as profiles, only not on
 profile level, but in a collection.
@@ -38,7 +37,7 @@ For example, a profile can have a collection of orders they placed. The
 collection 'orders' then holds subprofiles with fields, and possibly
 selections, for every product that person has bought.
 
-### Selections and miniselections: {#selections-and-miniselections:}
+### Selections and miniselections:
 
 [Selections and miniselections](./selections-and-miniselections.md)
 are, well, selections of profiles or subprofiles based on certain
@@ -49,8 +48,7 @@ things you can check for in conditions such as dates, spam issues,
 numerical values, alphabetical values, bounces, etc. You use these to
 determine which users should recieve which mailings, and , more
 importantly, if they even should receive mailings. Learn how to create a
-mailing list
-[here.](./create-a-mailing-list.md)
+mailing list [here.](./create-a-mailing-list.md)
 
 1.  [Learn how to set up a database](./setting-up-your-database-and-import-your-contacts.md) Templates and the editor
     --------------------------------------------------------------------------------------------------------------------------------------------------
