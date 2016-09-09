@@ -44,7 +44,7 @@ maken. Hoe eerder, hoe meer marketingmogelijkheden we je voorafgaand aan
 het Summit kunnen bieden en hoe meer je er ook uit kan halen. Daarnaast
 zijn de pakketten beperkt - op is op.
 
-[Bekijk de sponsorpakketten](EventsNL/SponsorpakkettenSummit2015.pdf)
+[Bekijk de sponsorpakketten](../downloads/SponsorpakkettenSummit2015.pdf)
 
 Maak je sponsordeelname aan het Copernica Summit dan ook zo snel
 mogelijk bekend bij Ralph van den Broeck per mail
