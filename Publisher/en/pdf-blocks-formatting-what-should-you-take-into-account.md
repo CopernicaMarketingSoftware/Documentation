@@ -37,7 +37,7 @@ Below you see some examples of text formatting in action. If you want to
 learn more about the plugin and text formatting, please refer to the
 manual provided by PDFlib.
 
-[Download manual in PDF](PDFlib-blocks-E.pdf)
+[Download manual in PDF](http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-blocks-E.pdf)
 
 **Image 1.** To make your text formatting changes take effect, set the
 text flow to 'on' and overide this setting from the template.

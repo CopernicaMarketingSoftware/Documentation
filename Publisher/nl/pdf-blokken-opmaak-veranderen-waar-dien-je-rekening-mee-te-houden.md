@@ -2,7 +2,7 @@ PDFlib biedt vele mogelijkheden om de lay-out van een PDF tekst blok op
 documentniveau aan te passen. De gebruikte syntax lijkt erg op die van
 HTML, maar verschilt tegelijkertijd ook wezenlijk. Raadpleeg voor meer
 informatie hoofdstuk 7 uit de [tutorial/documentatie van PDF
-lib](http://www.pdflib.com/fileadmin/pdflib/products/pdflib/info/PDFlib-blocks-E.pdf).
+lib](http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-blocks-E.pdf).
 
 **Wanneer je besluit de opmaak van een tekstblok aan te gaan passen,
 houd dan met de volgende punten rekening.**

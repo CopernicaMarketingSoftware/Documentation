@@ -5,11 +5,9 @@ according to the law. Below you'll find some tips you can use to collect
 and process personal details in a legal way (Dutch legislation) during
 your marketing activities.
 
- 
-
 For a more extensive explanation around the Data Protection Act, please
 visit the website of the
-[CBP](http://www.cbpweb.nl/pages/ind_wetten_wbp.aspx "CBP") or
+[CBP](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/persoonsgegevens "CBP") or
 [OPTA](http://www.opta.nl/nl/ "OPTA").
 
 As of the 1st of January, the new Code Email is enforced in the

@@ -24,8 +24,8 @@ binnen jouw organisatie die hierover gaat (bijvoorbeeld de
 systeembeheerder).
 
 **Tip:** je op [deze webpagina
-(www.xwhois.nl)](http://www.xwhois.nl "Domeingegevens opvragen")
- eenvoudig opvragen welke partij jouw domein beheert. Doorgaans worden
+(https://whois.domaintools.com)](https://whois.domaintools.com "Domeingegevens opvragen")
+eenvoudig opvragen welke partij jouw domein beheert. Doorgaans worden
 er ook contactgegevens bij vermeld.
 
 Stel DKIM ruim op tijd in

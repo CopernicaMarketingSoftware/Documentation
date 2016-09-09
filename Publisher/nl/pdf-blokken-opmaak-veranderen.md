@@ -31,7 +31,7 @@ dien je met de volgende punten rekening te houden.**
     inhoud van het blok niet worden getoond (je ziet een leeg blok). 
 
 Raadpleeg voor meer informatie eventueel de
-[tutorial/documentatie](https://dlvr-me.net/f/10803/PDFlib-blocks-E.pdf)
+[tutorial/documentatie](http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-blocks-E.pdf)
 van PDF lib (in PDF uiteraard).
 
 ![](../images/pdf1.jpg)

@@ -9,7 +9,7 @@ Uitgebreide toelichting
 
 Voor een meer uitgebreide toelichting omtrent de Wet bescherming
 persoonsgegevens kan je terecht bij het
-[CBP](http://www.cbpweb.nl/pages/ind_wetten_wbp.aspx "Meer informatie over de Wet bescherming persoonsgegevens")
+[CBP](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/persoonsgegevens "Meer informatie over de Wet bescherming persoonsgegevens")
 (College Bescherming Persoonsgegevens) of bij de
 [OPTA](http://www.opta.nl/nl/ "Website van OPTA") (Onafhankelijke Post
 en Telecommunicatie Autoriteit).
