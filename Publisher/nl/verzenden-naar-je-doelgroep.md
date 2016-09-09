@@ -84,15 +84,11 @@ ingeschreven voor het feedbackloop-programma van Hotmail. Voor andere
 programma's moet je je nog inschrijven maar dat kan vrij snel. Hieronder
 enkele feedbackloop-programma's:
 
--   [Yahoo Feedback
-    Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
--   [AOL Feedback
-    Loop](http://postmaster.aol.com/Postmaster.FeedbackLoop.php "AOL Feedback Loop")
--   [OpenSRS/
-    Tucows](http://fbl.hostedemail.com/ "OpenSRS/ Tucows feedback loop programma")
+-   [Yahoo Feedback Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
+-   [AOL Feedback Loop](https://postmaster.aol.com/fbl-request "AOL Feedback Loop")
+-   [OpenSRS/Tucows](http://fbl.hostedemail.com/ "OpenSRS/ Tucows feedback loop programma")
 -   [Comcast](http://feedback.comcast.net/ "Comcast")
--   [United
-    Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
+-   [United Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
 
 ### List-unsubscribe header
 

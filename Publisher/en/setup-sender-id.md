@@ -36,9 +36,6 @@ contact your ISP.\
 
     If you are interested in reading more about the SPF record syntax,
     please refer to the [OpenSPF website](http://www.openspf.net/) .
-    Microsoft also [provides some
-    information](http://www.microsoft.com/mscorp/safety/content/technologies/senderid/wizard/)
-    .
 
 ### How do I know if my Sender ID is configured correctly?
 

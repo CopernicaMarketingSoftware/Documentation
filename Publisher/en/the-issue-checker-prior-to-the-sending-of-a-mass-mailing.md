@@ -284,9 +284,6 @@ spam filters.
 The unsubscribe header can be activated right above the document or
 template that you are editing.
 
-[Read more about email
-headers](Read%20more%20about%20email%20headers%20in%20Copernica)
-
 Check on the content of your document
 -------------------------------------
 

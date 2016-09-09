@@ -28,7 +28,7 @@ in your contact database.
 ### Method 1. The {unsubscribe} link and the unsubscribe header
 
 Users can unsubscribe themselves by clicking on
-the [{unsubscribe}](./the-unsubscribe-function.m) link.
+the [{unsubscribe}](./the-unsubscribe-function.md) link.
 The unsubscribe behaviour configured on the database or collection will
 then be performed. The unsubscribe request is also triggered when a
 subscriber marks your email as spam or when the software receives an

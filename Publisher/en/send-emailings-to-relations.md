@@ -78,14 +78,11 @@ loop program is automatically included. For other programs you can
 easily sign up yourself. Below are a few examples of other feedback loop
 programs:
 
--   [Yahoo Feedback
-    Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
--   [AOL Feedback
-    Loop](http://www.postmaster.aol.com/Postmaster.FeedbackLoop.php "AOL Feedback Loop")
+-   [Yahoo Feedback Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
+-   [AOL Feedback Loop](https://postmaster.aol.com/fbl-request "AOL Feedback Loop")
 -   [OpenSRS/ Tucows](http://fbl.hostedemail.com/ "OpenSRS/Tucows")
 -   [Comcast](http://feedback.comcast.net/ "Comcast")
--   [United
-    Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
+-   [United Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
 
 ### List-unsubscribe header
 
@@ -96,6 +93,5 @@ the *report spam* button with an unsubscribe button.
 We advise you to use this header with all you emails. Not only will it
 make your life easier, it will also help you maintain a good sender
 reputation. \
-\
 At Copernica we are proud to help you achieve optimal delivery of your
 emails.

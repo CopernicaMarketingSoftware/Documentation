@@ -76,9 +76,7 @@ Now we're done setting up our database, it is time to point your browser
 to the Emailings section of the software. In this section, you create
 and manage your mailings, and finaly send them. We assume that you
 already have a document. If you do not have a document already, you can
-[load our standard template and
-document](https://www.copernica.com/en/support/video-tutorials/emailings-setting-a-test-destination)
-to get started.
+load our standard template and document to get started.
 
 ### Checking the document's settings and possible errors
 
@@ -123,7 +121,7 @@ database.
     mails](https://www.copernica.com/en/support/video-tutorials/emailings-sending-a-test-mail)
 
 Did your test mail not arrive? There might be a [reason for
-that](https://www.copernica.com/en/support/did-your-test-mail-not-arrive).
+that](./did-your-test-mail-not-arrive.md).
 
 Sending a mass mailing
 ----------------------
