@@ -28,7 +28,7 @@ call you receive a JSON of the form:
 
 ```json
 {
-    "name": "smtpeter-sadfszmnzdhnz.example.com,
+    "name": "smtpeter-sadfszmnzdhnz.example.com",
     "type": "TXT",
     "value:" "asdfwer598459sdFiOTIzYzY5YjVmNDFkYmZlYzBkYjkyYjMzZGRhMDcyMTcxNjAxYwxx"
 }
@@ -59,7 +59,8 @@ Content-Length:
     "policy":       "none|quarantine|reject",
     "percentage":   100,
     "startdate":    "2016-07-01",
-    "enddate":      "2016-08-01"
+    "enddate":      "2016-08-01",
+    "address":      "dmarc@yourdomain.com"
 }
 ```
 the different properties that you can POST are discussed below. It is not
@@ -117,6 +118,17 @@ in your DNS record slowly goes up from 0% up to 100% during the month
 of january.
 
 
+### Adding an extra email address
+
+SMTPeter handles dmarc reporting for you. Yet, if you want to, you can use
+a third party that processes dmarc reports as well. This third party probably
+provides you with an email address that is used for DMARC reporting. You
+can attach this email address to your sender domain by adding an "address"
+property to the JSON in your post call, in which you provide the email address.
+We support multiple addresses, so you can use multiple parties. Note that
+you can only add an address if your sender domain is validated.
+
+
 ## Obtain sender domain information
 
 All the properties that you can set for a sender domain can also be requested
@@ -139,13 +151,18 @@ You will then receive a single JSON object:
     "policy":       "none|quarantine|reject"
     "percentage":   50,
     "startdate":    "2016-06-14",
-    "enddate":      "2016-06-14"
+    "enddate":      "2016-06-14",
+    "addresses":    ["dmarc@smtpeter.com"]
 }
 ```
 The properties in the JSON object are identical as the one discussed above
-plus one extra "ips". This property contains an array with the ip addresses used for the 
+plus two extra "ips" and "addresses". The "ips" property contains an array with the ip addresses used for the 
 sender domain. These are addresseses that SMTPeter assigned to your domain
-and that will be used to send out your messages from.
+and that will be used to send out your messages from. The "addresses" property
+holds an array with all the email addresses to which dmarc reports are sent
+to. This always include "dmarc@smtpeter.com" since we handle the dmarc reports
+for you. Yet, if you have added one or more third party addresses that handle
+dmarc reports, they are shown here as well.
 
 If you want to get a list of all domains for which SMTPeter has configuration
 settings, use the following API GET call:
@@ -168,7 +185,8 @@ You will receive an array with JSON objects holding the following information:
         "policy":       "none|quarantine|reject"
         "percentage":   100,
         "startdate":    "2016-01-01",
-        "enddate':      "2016-01-18"
+        "enddate":      "2016-01-18",
+        "addresses":    ["dmarc@smtpeter.com"]
     },
     {
         "approved":     true,
@@ -180,7 +198,8 @@ You will receive an array with JSON objects holding the following information:
         "policy":       "none|quarantine|reject"
         "percentage":   50,
         "startdate":    "2016-06-14",
-        "enddate":      "2016-06-14"
+        "enddate":      "2016-06-14",
+        "addresses":    ["dmarc@smtpeter.com"]
     }
 ]
 ```
@@ -193,3 +212,11 @@ To delete a sender domain you can make a DELETE call to
 https://www.smtpeter.com/v1/domain/yourdomain.com
 ```
 
+## Deleting an reporting address
+
+If you want to delete an added email address where dmarc reports are sent
+to, you can make a deleta call to:
+
+```txt
+https://www.smtpeter.com/v1/domain/yourdomain.com/addded@email.com
+```
