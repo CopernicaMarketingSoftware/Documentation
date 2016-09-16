@@ -118,15 +118,16 @@ in your DNS record slowly goes up from 0% up to 100% during the month
 of january.
 
 
-### Adding an extra email address
+### Adding an extra reporting address
 
 SMTPeter handles dmarc reporting for you. Yet, if you want to, you can use
 a third party that processes dmarc reports as well. This third party probably
 provides you with an email address that is used for DMARC reporting. You
-can attach this email address to your sender domain by adding an "address"
+can attach this reporting address to your sender domain by adding an "address"
 property to the JSON in your post call, in which you provide the email address.
-We support multiple addresses, so you can use multiple parties. Note that
-you can only add an address if your sender domain is validated.
+We adjust your DMARC settings so parties who receive your mails know whom
+to report to. We support multiple addresses, so you can use multiple parties.
+Note that you can only add an address if your sender domain is validated.
 
 
 ## Obtain sender domain information
