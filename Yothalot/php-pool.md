@@ -15,7 +15,10 @@ class Yothalot\Pool
     // adding jobs to the pool
     public function add(Yothalot\Job $job);
 
-    // waiting for the first job to complete
+    // fetch a job that is ready
+    public function fetch();
+
+    // wait for a job to complete, and return that job
     public function wait();
     
     // pool size
