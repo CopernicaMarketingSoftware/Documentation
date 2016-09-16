@@ -15,7 +15,7 @@ class Yothalot\Pool
     // adding jobs to the pool
     public function add(Yothalot\Job $job);
 
-    // fetch a job that is ready
+    // fetch and remove a job that is ready (returns null if all jobs are still running)
     public function fetch();
 
     // wait for a job to complete, and return that job
@@ -53,6 +53,6 @@ while ($pool->size() > 0)
 ```
 
 The wait method returns a Yothalot\Job object. The returned object is guaranteed
-to have been finished, so you can immediately fetch the result from it. The
-returned job is automatically removed from the pool.
+to be ready, so you can immediately fetch the result from it. The returned job 
+is automatically removed from the pool.
 
