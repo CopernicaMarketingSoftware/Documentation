@@ -1,10 +1,9 @@
 # Yothalot\Pool
 
 If you want to run multiple jobs at the same time, you can make use of the 
-Yothalot\Pool class.
-
-The pool class allows you to group multiple jobs into a pool, and wait for
-the first job to complete.
+Yothalot\Pool class. This Pool class allows you to group multiple jobs, and 
+wait for the first one to complete. The Pool class makes sure all jobs are
+started at the same time.
 
 ```php
 class Yothalot\Pool
