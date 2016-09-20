@@ -17,7 +17,7 @@ verrijken. Verzamel met de Facebook integratie nieuwe leads, relevante
 productinformatie van fans en verzend persoonlijke e-mails vanuit
 Copernica als follow-up van de campagne.
 
-Meer weten? [Lees meer op de integratie-pagina](./facebook-testpanel.md)
+Meer weten? [Lees meer op de integratie-pagina](./facebook-test-panel.md)
 
 Copernica Facebook App
 ----------------------

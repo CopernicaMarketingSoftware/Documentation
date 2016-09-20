@@ -5,7 +5,7 @@ kwantificeerbaar te maken.
 In het onderdeel *Content* vind je een uitgebreide enquêtemodule waarmee
 je in korte tijd professionele enquêtes kan maken. De enquête publiceer
 je met een [speciale
-tag](https://www.copernica.com/nl/ondersteuning/enquete-in-webpagina-invoegen)
+tag](./enquete-in-webpagina-invoegen.md)
 op je webpagina. Wanneer je naar deze pagina linkt vanuit een emailing,
 dan worden de gegeven antwoorden automatisch gekoppeld aan de
 individuele invuller.
