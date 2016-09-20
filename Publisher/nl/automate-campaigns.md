@@ -7,7 +7,7 @@ uitgevoerd. Je kan oneindig veel opvolgacties gebruiken en aan elkaar
 koppelen binnen je campagnes.
 
 -   [Follow-up
-    manager](./de-follow-up-manager.md)
+    manager](./follow-up-manager.md)
 -   [Opvolgacties voor
     e-maildocumenten](./opvolgacties-voor-e-maildocumenten.md)
 -   [Opvolgacties voor

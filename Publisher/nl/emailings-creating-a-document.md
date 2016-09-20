@@ -4,7 +4,7 @@ aanmaakt.
 -   [Terug naar de video's](./videos.md "Video's")
 
 *Voordat je aan de slag gaat met het opstellen van een e-maildocument,
-moet je eerst een [e-mailtemplate aanmaken](./e-mailings-template-aanmaken.md).*
+moet je eerst een [e-mailtemplate aanmaken](./emailings-creating-a-new-template.md).*
 
 Hoe maak je een e-maildocument aan?
 -----------------------------------
@@ -33,6 +33,6 @@ Afzender en onderwerp instellen
 
 Je hebt nu een onderwerp en afzender ingesteld.
 
--   **Vorige:** [Template aanmaken](./e-mailings-template-aanmaken.md "Profielen: Template aanmaken")
+-   **Vorige:** [Template aanmaken](./emailings-creating-a-new-template.md "Profielen: Template aanmaken")
 -   **Volgende:** [Werken met contentblokken](./e-mailings-werken-met-contentblokken.md "Profielen: Werken met contentblokken")
 

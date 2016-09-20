@@ -6,7 +6,7 @@ hoe je er een aanmaakt.
 Wat is een miniselectie?
 ------------------------
 
-In Copernica kan je naast [selecties op profielniveau](./profielen-selecties.md),
+In Copernica kan je naast [selecties op profielniveau](./profiles-selections.md),
 ook selecties maken op subprofielniveau. Een miniselectie is dus een
 filter op een
 [collectie](./profielen-collectie-aanmaken.md).
@@ -44,7 +44,7 @@ aanmaken voordat je er wat mee kunt:
 Je hebt nu een miniselectie met condities aangemaakt!
 
 -   **Vorige:**
-    [Selecties](./profielen-selecties.md "Profielen: Selecties")
+    [Selecties](./profiles-selections.md "Profielen: Selecties")
 -   **Volgende:** [Miniselectie op
     selectieniveau](./profielen-miniselectie-op-selectieniveau.md "Profielen: Miniselectie op selectieniveau")
 

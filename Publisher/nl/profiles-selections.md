@@ -7,7 +7,7 @@ aanmaakt.
 Wat is een selectie?
 --------------------
 
-In je [database](./profielen-database-aanmaken.md) in
+In je [database](./profiles-creating-a-database.md) in
 Copernica kan je allerlei selecties aanmaken. Met selecties kan je
 profielen selecteren die aan een bepaalde voorwaarde voldoen. Alle
 bedrijven die gevestigd zijn in Haarlem bijvoorbeeld. Of alle

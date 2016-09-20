@@ -5,7 +5,7 @@ profiel.
 
 Profielen in een database in Copernica bevatten allerlei gegevens. Naast
 de
-[databasevelden](./profielen-velden-aanmaken.md)
+[databasevelden](./profiles-adding-database-fields.md)
 op profielniveau en subprofielen in een
 [collectie](./profielen-collectie-aanmaken.md),
 vind je per profiel nog een aantal tabbladen met informatie:

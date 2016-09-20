@@ -17,7 +17,7 @@ Databases zijn opgebouwd met profielen. Een profiel kan bijvoorbeeld
 verschillende gegevens bevatten over één enkele relatie. Van elk profiel
 wordt automatisch bijgehouden wanneer deze is aangemaakt en welke
 mutaties er sindsdien zijn geweest. Ook kan per profiel de volledige
-[campagnegeschiedenis](./profielgeschiedenis-en-campagnes-bekijken.md)
+[campagnegeschiedenis](./view-profile-history-and-campaigns.md)
 worden bekeken. Je ziet dus exact welke mailings aan een relatie zijn
 verstuurd en welk resultaat er is geweest (impressie, klik, of misschien
 wel een afleverfout?).

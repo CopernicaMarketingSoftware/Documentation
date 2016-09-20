@@ -19,7 +19,7 @@ Test bijvoorbeeld eens:
 -   Vul hier een eigen creatief idee in…\
 
 [Enkele praktische tips voor het versturen van Split Run
-mailings](./split-run-test-enkele-praktische-tips.md)
+mailings](./split-run-test-some-practical-advice.md)
 
 Je kan het winnende document laten bepalen aan de hand van kliks,
 impressies of fouten. Ook is het mogelijk zelf een script te schrijven

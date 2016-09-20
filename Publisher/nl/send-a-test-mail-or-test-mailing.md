@@ -48,4 +48,4 @@ testen in deze programma's. De software biedt de mogelijkheid dit met
 een druk op de knop te doen. Je ontvangt dan screenshots van de weergave
 van het document in de meest voorkomende e-mailprogramma's en browsers.
 [Lees
-meer...](./weergave-e-maildocument-testen-met-de-litmus-email-preview.md)
+meer...](./using-litmus-email-preview-to-test-your-email-newsletter.md)

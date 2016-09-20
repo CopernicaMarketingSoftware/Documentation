@@ -1,5 +1,5 @@
 Vervuilde lijsten zijn het grootste gevaar dat op de loer ligt bij
-[database-marketing](./database-marketing-je-eigen-pot-met-goud.md).
+[database-marketing](./database-marketing-&-e-commerce-your-very-own-pot-of-gold.md).
 Niet alleen moeten je gegevens zoveel mogelijk up-to-date zijn, je wilt
 ook dat je vooral over relevante en kwalitatieve informatie beschikt.
 Want hoe meer gegevens in je database, hoe groter de kans op vervuiling.
@@ -88,6 +88,6 @@ schoon, en geef ze de optie een vraag over te slaan.
 ### Bekijk ook
 
 -   [Database marketing: je eigen pot met
-    goud?](./database-marketing-je-eigen-pot-met-goud.md "Database marketing: je eigen pot met goud?")
+    goud?](./database-marketing-&-e-commerce-your-very-own-pot-of-gold.md "Database marketing: je eigen pot met goud?")
 -   [Enquêtes](./enquetes.md "Enquêtes")
 

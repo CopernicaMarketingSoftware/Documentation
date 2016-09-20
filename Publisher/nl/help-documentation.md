@@ -13,7 +13,7 @@ Beginnen met Copernica
 
 Als je voor het eerst met Copernica begint te werken is het misschien
 handig om een [korte inleiding bij de onderdelen van
-Copernica](./beginnen-met-copernica-een-kort-overzicht-van-de-onderdelen.md)
+Copernica](./getting-started---a-brief-overview-of-the-software.md)
 te krijgen. Wil je meer informatie over deze onderdelen dan kun je deze
 vinden in de onderstaande onderwerpen.
 

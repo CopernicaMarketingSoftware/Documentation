@@ -17,7 +17,7 @@ webformulier. Het is echter wel gemakkelijker om het webformulier te
 publiceren op een externe website.
 
 [Snel een webformuliertje
-genereren](./snel-een-webformuliertje-genereren.md)
+genereren](./generate-a-web-form-without-a-hassle.md)
 
 2. Het Content webformulier
 ---------------------------

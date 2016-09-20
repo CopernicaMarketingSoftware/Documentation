@@ -5,7 +5,7 @@ Standaard is Copernica uitgerust met een aantal voorbeeldtemplates, die
 je ook mag gebruiken voor je eigen mailings.
 
 Heb je nog geen template? [Lees ons helpartikel over dit
-onderwerp](./een-eigen-template-maken-voor-gebruik-in-e-mailings.md)
+onderwerp](./getting-started---building-email-templates.md)
 
 Zoals je inmiddels weet vormt de e-mailtemplate de blauwdruk voor de
 documenten die je onder het template aanmaakt. Met behulp van tekst-,

@@ -14,7 +14,7 @@ je als e-mail bijlage of drukwerk wilt gebruiken.
 Vink 'personaliseren' aan wanneer je gebruik hebt gemaakt
 van personalisatie en deze ook in de download terug wilt zien. De
 personalisatie wordt dan toegepast op de
-[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md).
+[standaardbestemming](./what-is-the-test-destination.md).
 
 PDF-bestand in bulk downloaden
 ------------------------------

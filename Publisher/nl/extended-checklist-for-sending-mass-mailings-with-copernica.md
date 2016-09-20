@@ -21,7 +21,7 @@ bijvoorbeeld alle gegevens over een enkele relatie, zoals het
 e-mailadres, het geslacht en de naam.
 
 [Aanmaken database en adressen
-importeren](./databases-maken-en-gegevens-importeren.md)
+importeren](./setting-up-your-database-and-import-your-contacts.md)
 (lees ook hoe je een [importbestand kan
 maken](./een-importbestand-voorbereiden.md))
 

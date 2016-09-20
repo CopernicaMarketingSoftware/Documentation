@@ -3,7 +3,7 @@ e-mailings. De redenen hiervoor variëren van ‘Er is toch niemand die
 mijn e-mails beantwoordt’ tot ‘Ik wil geen out-of-office-mails
 ontvangen’.
 
-Maar als het om [e-mailmarketing](./email-marketing-functionaliteiten.md)
+Maar als het om [e-mailmarketing](./emailings.md)
 gaat, is er geen geldig excuus voor het gebruik van no-reply-adressen.
 Niet alleen geef je er een signaal mee af aan je ontvangers dat je niets
 geeft om hun mening, no-reply-adressen zijn ook nog eens schadelijk voor

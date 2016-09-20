@@ -12,7 +12,7 @@ De instellingen voor de mailing
 
 Om een mailing in te roosteren en/of periodiek te herhalen, volg je
 dezelfde stappen als bij het [instellen van een normale
-bulkmailing](./bulkmailing-verzenden.md).
+bulkmailing](./sending-a-mass-mailing.md).
 
 In stap 2 vind je achter het tabblad *Wanneer* de instellingen voor het
 inroosteren van de mailing.

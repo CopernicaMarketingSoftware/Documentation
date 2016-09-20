@@ -1,7 +1,7 @@
 Wie per e-mail nieuwsbrieven verstuurt, wil natuurlijk wel dat de
 ontvanger ze opent en leest. Niet alleen heb je dus goede content nodig,
 je moet er ook alles aan doen om de open rate van je
-[e-mail-nieuwsbrief](./bruikbare-nieuwsbrieven-samenstellen-hoe-ga-je-te-werk.md)
+[e-mail-nieuwsbrief](./how-to-compose-usable-newsletters.md)
 te verhogen. Deze acht tips helpen je daarbij: 
 
 ![Acht tips om de open rate van je e-mailings te

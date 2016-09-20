@@ -4,7 +4,7 @@ aanmaakt.
 -   [Terug naar de video's](./videos.md "Video's")
 
 Templates vormen de basis voor e-mailings die je maakt met Copernica.
-Een [template](./een-eigen-template-maken-voor-gebruik-in-e-mailings.md)
+Een [template](./getting-started---building-email-templates.md)
 is een sjabloon, dat je kan gebruiken voor het opstellen van meerdere
 e-mails.
 

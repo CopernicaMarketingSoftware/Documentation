@@ -16,7 +16,7 @@ Gebruik van smarty personalisatie
 ---------------------------------
 
 Je kan in het bericht gebruik maken van [smarty
-personalisatie](./campagnes-personaliseren.md).
+personalisatie](./personalize-campaigns.md).
 Houdt hierbij wel rekening met het maximum van 160 tekens. Met namen als
 Pieter-Cornelis de Roy van Zuiderwijn zit je zo op het maximale aantal
 tekens. Klik onderin beeld op 'gepersonaliseerd' om het bericht weer te

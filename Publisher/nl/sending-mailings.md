@@ -1,5 +1,5 @@
 Je kunt met Copernica bulkmailings versturen voor e-mail,
-[fax](./print-pdf-en-fax.md), en
+[fax](./print-pdf-and-fax.md), en
 [sms](./sms-en-mobile.md). Het
 instellen van zo'n mailing werkt voor de drie types ongeveer hetzelfde.
 Deze pagina gaat voornamelijk over het versturen van **E-mailings**.

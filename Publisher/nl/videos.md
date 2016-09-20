@@ -1,5 +1,5 @@
 Iedereen kan op zijn eigen manier leren werken met Copernica. Gebruik
-bijvoorbeeld onze [helpdocumentatie](./helpdocumentatie.md)
+bijvoorbeeld onze [helpdocumentatie](./help-documentation.md)
 of [ga meteen aan de slag met
 Copernica](http://www.copernica.com/nl/copernica-proberen). Daarnaast
 hebben we ook verschillende video's waarmee je stap voor stap met

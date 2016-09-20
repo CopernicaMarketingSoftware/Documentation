@@ -19,7 +19,7 @@ Het verwijderen van selecties heeft totaal geen invloed op de profielen
 in je database. Deze blijven vanzelfsprekend ongemoeid. Voor het
 verwijderen of bewerken van alle profielen uit een selectie bestaat al
 een [andere
-functie](./meerdere-subprofielen-ineens-wijzigen-of-verwijderen.md).
+functie](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.md).
 
 ### Selectiecondities deactiveren
 

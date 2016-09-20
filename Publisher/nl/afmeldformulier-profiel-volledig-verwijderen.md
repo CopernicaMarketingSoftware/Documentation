@@ -3,7 +3,7 @@ gegevens natuurlijk niet te bewaren. Dit artikel laat stap voor stap
 zien hoe je een dergelijk afmeldformulier maakt.
 
 Let op: wanneer je de
-[{unsubscribe}](./de-uitschrijflink-unsubscribe-tag.md)
+[{unsubscribe}](./the-{unsubscribe}-function.md)
 link gebruikt in je emailings, dan hoef je hiervoor geen webformulier te
 gebruiken, maar stel je dit in bij het
 [uitschrijfgedrag](./uitschrijfgedrag-instellen-op-database-of-collectie.md)

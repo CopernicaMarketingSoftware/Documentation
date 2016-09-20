@@ -43,7 +43,7 @@ De kracht van de Copernica-ecManager webshop integratie
 -   Stimuleer je herhaalaankopen met behulp van [marketing
     automation](./automatiseer-je-campagnes.md "automatiseer")
 -   Vul je nieuwsbrieven snel en gemakkelijk [met je verschillende
-    producten](./magentowebshops-middels-skus-je-nieuwsbrieven-snel-en-makkelijk-versturen.md)
+    producten](./magento-webshops-sending-your-newsletters-with-skus.md)
 -   [Alle data uit je webshop
     gecentraliseerd](./maak-je-eigen-database.md),
     gesynchroniseerd en beschikbaar voor marketing doeleinden

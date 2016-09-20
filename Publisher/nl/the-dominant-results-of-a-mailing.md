@@ -18,7 +18,7 @@ impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks. \
 [\
  Meer lezen over de
-kerncijfers](./de-kerncijfers-bij-de-resultaten-van-een-e-mailing.md)
+kerncijfers](./statistics-key-figures.md)
 
 ![](../images/sjabloon_clip_image001.png)
 

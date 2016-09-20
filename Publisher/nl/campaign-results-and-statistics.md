@@ -11,7 +11,7 @@ Van alle mailings die je verstuurt met Copernica worden de resultaten
 geregistreerd.
 
 -   [De resultaten van je e-mailing
-    bekijken](./de-resultaten-van-je-e-mailing-bekijken.md)
+    bekijken](./view-the-results-of-your-mailing.md)
 -   [De kerncijfers bij de resultaten van een
     e-mailing](./de-kerncijfers-bij-de-resultaten-van-een-e-mailing.md)
 -   [Het dominante resultaat van een

@@ -6,7 +6,7 @@ selectieniveau.
 Wat is een miniselectie op selectieniveau?
 ------------------------------------------
 
-Als je een [miniselectie aanmaakt](./profielen-miniselectie-aanmaken.md),
+Als je een [miniselectie aanmaakt](./profiles-creating-a-miniselection.md),
 wil je die gegevens over het algemeen ook beschikbaar hebben op
 [profielniveau](./versturen-aan-profielen-of-aan-subprofielen.md).
 
@@ -50,5 +50,5 @@ Hoe maak ik een miniselectie op selectieniveau?
 
 Goed gedaan! Je hebt nu een miniselectie op selectieniveau aangemaakt.
 
--   **Vorige:** [Miniselectie aanmaken](./profielen-miniselectie-aanmaken.md "Profielen: Miniselectie aanmaken")
+-   **Vorige:** [Miniselectie aanmaken](./profiles-creating-a-miniselection.md "Profielen: Miniselectie aanmaken")
 

@@ -4,7 +4,7 @@ accounts in Copernica. Per campagne vind je een eenvoudig stappenplan om
 het te implementeren.
 
 -   [Verlaten winkelmandje
-    campagne](./verlaten-winkelmandjes-email-campagne-een-uitgewerkt-voorbeeld.md)
+    campagne](./abandoned-shopping-carts-the-template.md)
 -   [Win-back campagne](./win-back-terugwin-campagne-in-copernica.md)
 -   [Lead scoring campagne](./lead-scoring-campagne-in-copernica.md)
 -   [Opvolgactie wanneer een formulier is X keer

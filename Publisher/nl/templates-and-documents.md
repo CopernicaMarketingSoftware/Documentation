@@ -7,7 +7,7 @@ Templates en HTML
 -----------------
 
 -   [Een eigen template maken voor gebruik in
-    e-mailings](./een-eigen-template-maken-voor-gebruik-in-e-mailings.md)
+    e-mailings](./getting-started---building-email-templates.md)
 -   [E-mail template of webtemplate importeren of
     exporteren](./e-mail-template-of-webtemplate-importeren-of-exporteren.md)
 -   [Je eigen stylesheet maken en

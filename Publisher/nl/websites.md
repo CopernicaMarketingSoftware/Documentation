@@ -5,7 +5,7 @@ voor bezoekers niet zichtbaar is dat de website is gemaakt met
 Copernica.
 
 -   [Beginnen met websites en
-    webpagina's](./beginnen-met-websites-en-webpaginas.md)
+    webpagina's](./getting-started-with-websites.md)
 -   [Een template maken voor
     webpagina's](./een-template-maken-voor-webpaginas.md)
 -   [Een nieuwe webpagina

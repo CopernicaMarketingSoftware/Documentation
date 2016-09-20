@@ -1,5 +1,5 @@
 Spamtraps in je verzendlijst zijn een probleem. Ze schaden je
-[e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md)
+[e-mailreputatie](./how-to-build-up-your-email-reputation.md)
 en zorgen er voor dat je e-mailings vaker in spamfilters blijven hangen.
 Doe er daarom alles aan om te voorkomen dat spamtraps in je database
 terecht komen.
@@ -78,7 +78,7 @@ schoon](./database-marketing-en-enquetes-voorkom-vervuiling.md).
 ### Bekijk ook
 
 -   [E-mailreputatie: hoe bouw je dit
-    op?](./e-mailreputatie-hoe-bouw-je-dit-op.md "E-mailreputatie: hoe bouw je dit op?")
+    op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")
 -   [Het verschil tussen hard bounce en soft
     bounces](./het-verschil-tussen-hard-bounce-en-soft-bounces.md "Het verschil tussen hard bounce en soft bounces")
 -   [Database-marketing en enquêtes, voorkom

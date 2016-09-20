@@ -8,9 +8,9 @@ Bereik relaties via email en SMS {style="text-align: center;"}
 --------------------------------
 
 -   [![Email
-    marketing](../images/emailmarketing-with-copernica.png "E-mailmarketing")](./email-marketing-functionaliteiten.md)
+    marketing](../images/emailmarketing-with-copernica.png "E-mailmarketing")](./emailings.md)
 
-    [Email marketing](./email-marketing-functionaliteiten.md)
+    [Email marketing](./emailings.md)
     -------------------------------------------------------------------
 
     Verstuur email campagnes naar al je relaties, of alleen een selectie
@@ -18,7 +18,7 @@ Bereik relaties via email en SMS {style="text-align: center;"}
     Van iedere verzonden email campagne is een uitgebreid
     resultaatoverzicht beschikbaar.
 
-    [Meer over email marketing](./email-marketing-functionaliteiten.md "Meer over e-mailmarketing")
+    [Meer over email marketing](./emailings.md "Meer over e-mailmarketing")
 
 -   [![SMS
     marketing](../images/sms-marketing-with-copernica.png "SMS marketing")](./mobile.md)

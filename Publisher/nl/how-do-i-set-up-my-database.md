@@ -54,7 +54,7 @@ alle soorten tekens bevatten, inclusief cijfers en speciale tekens
 uu:mm Gebruik een datumveld bijvoorbeeld om de geboortedatum van
 relaties op te slaan
 
-[Meer informatie over databasegebruik binnen Copernica](./maak-je-eigen-database.md)
+[Meer informatie over databasegebruik binnen Copernica](./creating-your-own-databases.md)
 
 Database checklist voordat je hiernaartoe gaat versturen
 --------------------------------------------------------

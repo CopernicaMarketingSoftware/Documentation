@@ -36,4 +36,4 @@ Hoe versleutel ik mijn berichten met DKIM in Copernica
 Het versleutelen van e-mails met DKIM is niet ingewikkeld, maar vereist
 wel enige systeemkennis en tenminste toegang tot het beheergedeelte van
 je domein. Handleiding: [E-mails vanuit Copernica versleutelen met
-DKIM](./e-mails-versleutelen-met-dkim.md)
+DKIM](./signing-your-emails-with-dkim.md)

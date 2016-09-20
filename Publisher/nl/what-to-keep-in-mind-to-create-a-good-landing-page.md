@@ -26,7 +26,7 @@ bezoeker moet voelen dat de pagina waar hij landt bij de campagne hoort.
 Richt je op een enkel doel per landingspagina:
 
 -   Het geven meer informatie
--   Het aanmelden voor een [nieuwsbrief](./opmaak-van-html-nieuwsbrief-enkele-belangrijke-richtlijnen.md)
+-   Het aanmelden voor een [nieuwsbrief](./html-newsletter-design-some-important-guidelines.md)
 -   Het verkopen van een product
 -   Enzovoort
 

@@ -8,7 +8,7 @@ Wat zijn collecties?
 --------------------
 
 Als je in je
-[database](./profielen-database-aanmaken.md)
+[database](./profiles-creating-a-database.md)
 niet alleen ‘platte’ informatie als contactgegevens wilt opslaan, maar
 ook andere informatie als iemands aankopen of de contactpersonen van een
 bedrijf, maak je daarvoor gebruik van een collectie.

@@ -3,7 +3,7 @@ Copernica.
 
 -   [Terug naar de video's](./videos.md "Video's")
 
-[E-maildocumenten](./e-mailings-document-aanmaken.md)
+[E-maildocumenten](./emailings-creating-a-document.md)
 in Copernica voorzie je van eigen content door gebruik te maken van
 contentblokken.
 
@@ -64,6 +64,6 @@ binnen Copernica. Ook hier heb je weer de keuze tussen om je
 zichtbaar te laten zijn (‘Toon variabelen’) of het document
 gepersonaliseerd te tonen (‘Gepersonaliseerd’).
 
--   **Vorige:** [Document aanmaken](./e-mailings-document-aanmaken.md "E-mailings: Document aanmaken")
+-   **Vorige:** [Document aanmaken](./emailings-creating-a-document.md "E-mailings: Document aanmaken")
 -   **Volgende:** [Personalisatie](./e-mailings-personalisatie.md "E-mailings: Personalisatie")
 

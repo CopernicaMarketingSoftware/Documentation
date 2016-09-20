@@ -1,4 +1,4 @@
-- [Databasebeheer](databasebeheer)
+- [Databasebeheer](./database-management.md)
 - [Importeren en exporteren](importeren-en-exporteren)
 - [Selecties en miniselecties](selecties-en-miniselecties)
 - [Webformulieren](webformulieren)

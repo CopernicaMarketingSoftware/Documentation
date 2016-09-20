@@ -4,7 +4,7 @@ personalisatie en invoegcodes voor het publiceren van speciale content.
 Speciale functies voor e-mailings
 ---------------------------------
 
--   [Webversion and linkemail](./linken-naar-de-webversie-van-een-e-mail.md)
+-   [Webversion and linkemail](./link-to-the-webversion-of-your-email.md)
     - Voegt een link in naar een aparte versie de e-mail die in de
     webbrowser kan worden bekeken. Of link vanuit een website naar een
     e-maildocument.

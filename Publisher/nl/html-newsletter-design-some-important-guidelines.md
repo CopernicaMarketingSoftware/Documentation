@@ -3,8 +3,8 @@ Moderne XHTML/CSS technieken worden helaas niet ondersteund door de
 meeste e-mailprogramma's zoals Microsoft Outlook 2007, Lotus Notes,
 Apple mail of populaire e-maildiensten zoals Gmail, Hotmail en Yahoo.
 
-**Lees het vernieuwde artikel:** [HTML-richtlijnen voor e-mail
-(herzien)](./html-richtlijnen-voor-e-mail-herzien.md)
+**Lees het vernieuwde artikel:** [HTML-richtlijnen voor e-mail herzien]
+(./html-email-guidelines-revisited.md)
 
 HTML tabellen zijn de nieuwe divs
 ---------------------------------
@@ -69,7 +69,7 @@ nieuwsbrief bovenaan te plaatsen.
 
 ### Bekijk ook
 
--   [HTML-richtlijnen voor e-mail (herzien)](./html-richtlijnen-voor-e-mail-herzien.md)
+-   [HTML-richtlijnen voor e-mail herzien] (./html-email-guidelines-revisited.md)
 -   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "Ontwerp je eigen templates")
 -   [Responsive design: je e-mails klaarstomen voor
     mobile](./responsive-design-je-e-mails-klaarstomen-voor-mobile.md "Responsive design: je e-mails klaarstomen voor mobile")

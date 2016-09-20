@@ -6,7 +6,7 @@ hoe je velden aanmaakt in je database.
 Aanmaken van velden
 -------------------
 
-Om je [database](./profielen-database-aanmaken.md)
+Om je [database](./profiles-creating-a-database.md)
 te vullen, maak je eerst velden aan waarin je de gegevens van
 contactpersonen opslaat.
 
@@ -79,7 +79,7 @@ geboortedatums.
 Selecteer het veld dat je nodig hebt en klik ‘Opslaan’.
 
 -   **Vorige:** [Database
-    aanmaken](./profielen-database-aanmaken.md "Profielen: Databasebase aanmaken")
+    aanmaken](./profiles-creating-a-database.md "Profielen: Databasebase aanmaken")
 -   **Volgende:** [Collectie
     aanmaken](./profielen-collectie-aanmaken.md "Profielen: Collectie aanmaken")
 

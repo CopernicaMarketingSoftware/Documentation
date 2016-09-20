@@ -3,7 +3,7 @@ webformulieren. Maak bijvoorbeeld een inschrijfformulier voor een
 evenement, of een afmeldformulier voor je e-mailcampagnes.
 
 -   [Hoe maak ik een
-    webformulier?](./hoe-maak-ik-een-webformulier.md)
+    webformulier?](./introduction-to-web-forms.md)
 -   [Webformulier velden toevoegen en/of
     wijzigen](./webformulier-velden-toevoegen-en-bewerken.md)
 -   [De werking van een webformulier

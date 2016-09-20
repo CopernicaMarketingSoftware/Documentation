@@ -5,7 +5,7 @@ gebruiker. Je kan jezelf eenvoudig inloggen door de inloggegevens van je
 testprofiel aan je webpagina URL toe te voegen.
 
 [Lees onze Getting started over het maken van websites en
-webpaginas](./beginnen-met-websites-en-webpaginas.md)
+webpaginas](./getting-started-with-websites.md)
 
 Als je al een website met webpagina's hebt aangemaakt in de applicatie,
 dan dien je de website te koppelen aan een geldige domeinnaam.

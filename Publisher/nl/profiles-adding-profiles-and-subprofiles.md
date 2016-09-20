@@ -4,7 +4,7 @@ aanmaakt.
 -   [Terug naar de video's](./videos.md "Video's")
 
 *Om een profiel aan te maken moet je eerst de stappen uit de tutorial
-‘[Velden aanmaken](./profielen-velden-aanmaken.md)’
+‘[Velden aanmaken](./profiles-adding-database-fields.md)’
 hebben doorlopen. Om een subprofiel aan te maken moet je eerst [een
 collectie creëren](./profielen-collectie-aanmaken.md).*
 

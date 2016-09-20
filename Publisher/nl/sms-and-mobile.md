@@ -6,7 +6,7 @@ van Smarty code.
 Je beheert je sms campagnes in het onderdeel Mobile.
 
 -   [Database gereed maken voor
-    sms-mailing](./database-gereed-maken-voor-sms-mailing.md)
+    sms-mailing](./prepare-your-database-for-mailings-with-sms.md)
 -   [Sms-bericht
     opstellen](./sms-bericht-opstellen.md)
 -   [Sms testbericht sturen naar
