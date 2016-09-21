@@ -37,12 +37,12 @@ The Copernica-Drupal integrations are used by several webshops such as:
 +-----------------------------------------------------------------------------+
 | ### Coals2U                                                                 |
 +-----------------------------------------------------------------------------+
-| [![Coals2U](Copernicacom/Coals2U-screenshot.PNG)](http://www.coals2u.co.uk) |
+| [![Coals2U](../images/Coals2U-screenshot.PNG)](http://www.coals2u.co.uk)    |
 +-----------------------------------------------------------------------------+
 | Manchester United Soccer Schools                                            |
 +-----------------------------------------------------------------------------+
 | [![Manchester United Soccer                                                 |
-| Schools](Copernicacom/MUSS.PNG)](http://www.manutdsoccerschools.com/)       |
+| Schools](../images/MUSS.PNG)](http://www.manutdsoccerschools.com/)          |
 +-----------------------------------------------------------------------------+
 | [Download the                                                               |
 | integrations](#download-drupal-modules "Download the Drupal integrations")  |
