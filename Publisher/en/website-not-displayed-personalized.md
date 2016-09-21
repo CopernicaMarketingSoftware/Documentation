@@ -8,7 +8,7 @@ You can let your visitors login through a login form. When the user
 filled in his details and a match is found in the database, the page
 will be personalized with data from the profile. [Read how you create a
 login
-form](http://www.copernica.com/en/support/login-logout-and-forgot-password-form).
+form](./login-logout-and-forgot-password-form.md).
 
 ### Add login code to referring links
 

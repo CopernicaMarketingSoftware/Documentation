@@ -37,7 +37,7 @@ Registering your application
 
 Before you can even start implementing the OAuth protocol, you need to
 [register your
-application](https://www.copernica.com/en/support/rest/register-your-app-on-copernica-com)
+application](./register-your-app-on-copernica-com.md)
 on the Copernica.com dashboard. By registering your application you will
 obtain the **client key** and **secret key**. This basically is the
 login and password of your application. Both are needed for your

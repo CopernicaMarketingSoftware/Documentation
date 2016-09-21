@@ -9,7 +9,7 @@ You can create a new template, copy an existing template or import a
 template from your computer. Creating your own web template requires
 HTML knowledge. If your organization does not have an HTML expert you
 may use one of the [default
-templates](http://www.copernica.com/en/features/emailings), import a
+templates](./emailings.md), import a
 template from an external source or have one of [Copernica's
 partners](http://www.copernica.com/en/get-started-with-copernica/partners-overview) create
 a template for you.

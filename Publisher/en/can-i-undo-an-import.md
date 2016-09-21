@@ -1,7 +1,7 @@
 If you used the import to create new profiles only, the answer is yes.
 If you updated existing profiles as well, the affected profiles can only
 be reverted separately using the [Rollback profile
-function](http://www.copernica.com/en/support/rollback-profile-to-previous-state).
+function](./rollback-profile-to-previous-state.md).
 
 ### Remove profiles that were imported
 

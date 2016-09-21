@@ -1,4 +1,4 @@
-* [Introduction](introduction)
+* [Introduction](./introduction.md)
 * [Database management](database-management)
 * [Import and export](import-and-export)
 * [Selections and miniselections](selections-and-miniselections)

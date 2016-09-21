@@ -4,8 +4,7 @@ sample data provided in the marketing software is used, and no
 connection between Magento and Copenica is further required (except for
 the XML feed, which is loaded from a demo Magento account of us).
 
-\
- ![The magento template](../images/thetemplate.png)
+![The magento template](../images/thetemplate.png)
 
 **Note:**if you already have your own database, make sure that the field
 and collection names used in the template refer to the field and

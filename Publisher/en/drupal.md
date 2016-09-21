@@ -16,7 +16,7 @@ The power of the Drupal integrations
     emailings](https://www.copernica.com/en/features/emailings/create-clever-emailings "Create clever mailings")
     based on purchasing behaviour
 -   Send [abandoned basket
-    campaigns](https://www.copernica.com/en/blog/5-conversion-boosting-e-mail-campaigns)
+    campaigns](./5-conversion-boosting-e-mail-campaigns.md)
     to capture users when they are likely to buy
 -   [Automate your sales
     process](https://www.copernica.com/en/features/emailings/automate-your-campaigns)

@@ -8,7 +8,7 @@ To create a new SMS message, find the so called option in the menu
     The first character can not be a digit.
 -   Choose the version of smarty you want to use for personalization in
     the message. We recommend to use [Smarty
-    3](https://www.copernica.com/en/support/smarty-2-vs-smarty-3).
+    3](./smarty-2-vs-smarty-3.md).
 
 Immediately after you have created the document you can start writing
 its content.

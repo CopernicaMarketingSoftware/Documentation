@@ -9,18 +9,18 @@ your new product? Create an online
 in just a few simple steps to find out what’s happening in the world of
 your contacts.
 
--   [Create and publish your own web pages](./create-and-publish-your-own-web-pages.md "Create and publish your own web pages")
+-   [Create and publish your own web pages](./create-and-publish-your-own-web-pages.md.md "Create and publish your own web pages")
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Create and publish your own web
-    pages](../images/en-websites-01-thumb.png "Create and publish your own web pages")](./create-and-publish-your-own-web-pages)
+    pages](../images/en-websites-01-thumb.png "Create and publish your own web pages")](./create-and-publish-your-own-web-pages.md)
 
     With our software you will be able to easily build your own web
     pages. You can also import an existing template and use it for your
     other web pages.
 
     [Learn more about creating your own web
-    pages](./create-and-publish-your-own-web-pages.md "Create and publish your own web pages")
+    pages](./create-and-publish-your-own-web-pages.md.md "Create and publish your own web pages")
 
 -   [Various types of web forms](./various-types-of-web-forms.md "Different types of web forms")
     --------------------------------------------------------------------------------------------------------------------------------------
