@@ -29,7 +29,7 @@ as these can be tracked to a certain individual).
 
 Information about companies or organizations generally aren't personal
 details. So if your
-[database](./creating-your-own-databases.md "Create your own databases")
+[database](./creating-your-own-databases "Create your own databases")
 only contains data on companies, these details aren't personal details.
 Data on contact persons at these companies however, should be considered
 as personal details.
