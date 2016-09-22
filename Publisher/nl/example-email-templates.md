@@ -6,7 +6,7 @@ voor de creatie van uw eigen e-mail campagnes binnen Copernica.
 Twee kolommen lay-out met een zijbalk aan de linkerkant
 -------------------------------------------------------
 
-![](Copernicacom/preview-template-left-col-nl.jpg)
+![](../images/preview-template-left-col-nl.jpg)
 
 Download
 --------

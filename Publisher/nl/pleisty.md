@@ -1,5 +1,5 @@
 [![Pleisty
-website](pleisty.png)](https://www.pleisty.com "Pleisty Website") *Stuur
+website](../images/pleisty.png)](https://www.pleisty.com "Pleisty Website") *Stuur
 altijd relevante content naar elke individuele ontvanger"*
 
 Automatisch - Dynamisch - Relevant - Persoonlijk

@@ -9,4 +9,4 @@ getoond in de lijst met profielen in het onderdeel *Profielen*.
 Herhaal deze stappen voor elk veld dat je wilt tonen in de applicatie.
 
 ![Check the option in the Edit Field dialog to show the field in the
-overview pages](showonoverviewpages.png)
+overview pages](../images/showonoverviewpages.png)

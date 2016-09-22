@@ -10,4 +10,4 @@ Op eenzelfde wijze wijzig je de 'Volgende' en 'Vorige' knop waarmee de
 invuller tussen de verschillende pagina's navigeert in enquêtes die
 meerdere pagina's heeft.
 
-![Edit survey buttons](Documentation/editbuttons.png)
+![Edit survey buttons](../images/editbuttons.png)

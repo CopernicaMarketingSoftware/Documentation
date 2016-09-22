@@ -6,7 +6,7 @@ created a whole section for it in Copernica.
 The **Style** component in Copernica is fully equipped for creating and
 managing your own style sheets and XSLT files.
 
-![](https://pic.vicinity.nl/127/0/113219/new-xslt.png)
+![](../images/new-xslt.png)
 
 Table of contents
 -----------------

@@ -30,7 +30,7 @@ Hoevaak een loopblok wordt herhaald, bepaal je in het document.
 Als je binnen je loopblok ook andere blokken hebt geplaatst, dan kan je
 vanuit hetzelde scherm direct de inhoud hiervan bewerken.
 
-![](https://vicinity.picsrv.net/91/edittemplateblocks.png)
+![](../images/edittemplateblocks.png)
 
 ### Volgorde van iteraties wijzigen
 

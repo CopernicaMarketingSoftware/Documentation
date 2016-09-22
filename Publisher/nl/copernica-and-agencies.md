@@ -2,7 +2,7 @@ Ontwerp zelf marketingcampagnes in je eigen huisstijl of die van je
 klant. Maak daarnaast gebruik van Copernica’s follow-up manager om
 communicatieprocessen te automatiseren.
 
-![](Copernicacom/communication-copernica.jpg)
+![](../images/communication-copernica.jpg)
 
 Krachtige functionaliteiten voor Bureaus
 ----------------------------------------

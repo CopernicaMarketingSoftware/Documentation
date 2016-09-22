@@ -9,7 +9,7 @@ aan een e-mailing? Met Copernica kan het allemaal.
     ------------------------------------------------------------------------------------------------------------------------------
 
     [![Maak je eigen
-    SMS-bericht](Copernicacom/nl-mobile-01-thumb.png)](./maak-je-eigen-sms-bericht.md "Maak je eigen SMS-bericht")
+    SMS-bericht](../images/nl-mobile-01-thumb.png)](./maak-je-eigen-sms-bericht.md "Maak je eigen SMS-bericht")
 
     Net als op je eigen mobiele telefoon, maak je in Copernica eenvoudig
     en snel je eigen SMS-bericht. Met Copernica personaliseer je naar

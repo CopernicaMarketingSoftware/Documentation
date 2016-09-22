@@ -1,5 +1,5 @@
 [![Uniek aanbod: Gebruik Copernica gratis voor maximaal 3
-maanden](Copernicacom/Copernica-endofyearoffer-nl.jpg)](https://www.copernica.com/nl/trial "Trial Copernica")
+maanden](../images/Copernica-endofyearoffer-nl.jpg)](https://www.copernica.com/nl/trial "Trial Copernica")
 
 Voor de meeste professionals is dit de drukste en meest uitdagende tijd
 van het jaar. Bij Copernica begrijpen we dat terwijl je hard werkt om de

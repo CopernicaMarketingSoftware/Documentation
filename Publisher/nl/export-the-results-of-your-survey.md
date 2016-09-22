@@ -15,6 +15,6 @@ Je hebt hier de volgende twee opties:
 Beide exports kan je doen naar een XML of een tabgescheiden bestand.
 Tabgescheiden is het meest geschikt voor bijvoorbeeld Excel.
 
-![Survey results dialog](surveyresultes.png)
+![Survey results dialog](../images/surveyresultes.png)
 
 *Afbeelding: het exporteervenster met de exporteer opties*

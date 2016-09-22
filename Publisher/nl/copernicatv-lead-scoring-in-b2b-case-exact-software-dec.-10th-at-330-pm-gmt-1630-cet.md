@@ -1,4 +1,4 @@
-![CopernicaTV](Copernicacom/CopernicaTV.png)Ben je benieuwd naar de
+![CopernicaTV](../images/CopernicaTV.png)Ben je benieuwd naar de
 mogelijkheden van **lead scoring** voor jouw bedrijf?\
 \
  Begrijp je waarom **marketing-automatisering** belangrijk is, maar weet

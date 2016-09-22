@@ -13,7 +13,7 @@ van PDF documenten & direct mails.
     ---------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Maak een gepersonaliseerd
-    PDF-document](Copernicacom/nl-print-01-thumb.png)](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document "Maak een gepersonaliseerd PDF-document")
+    PDF-document](../images/nl-print-01-thumb.png)](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document "Maak een gepersonaliseerd PDF-document")
 
     Maak in slechts enkele stappen een gepersonaliseerd PDF-document
     voor fax-mailings, brochures of ander print-en drukwerk aan binnen

@@ -4,7 +4,7 @@ of verlaten winkelmandjes, dankzij de integratie kan je verschillende
 gesegmenteerde e-mailcampagnes opzetten. Van welkomstmailings tot
 geautomatiseerde abandoned shopcart e-mails.
 
-![OpenCart](Copernicacom/opencart-logo.png)
+![OpenCart](../images/opencart-logo.png)
 
 Download
 --------

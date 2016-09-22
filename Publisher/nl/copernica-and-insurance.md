@@ -3,7 +3,7 @@ e-mails wanneer voor specifieke klanten financiële voordelen ontstaan.
 Nieuwe leads binnenhalen? Met Copernica zet je makkelijk eigen
 formulieren en actiepagina’s op.
 
-![](Copernicacom/finance-copernica.jpg)
+![](../images/finance-copernica.jpg)
 
 Krachtige functionaliteiten voor Verzekeringen
 ----------------------------------------------

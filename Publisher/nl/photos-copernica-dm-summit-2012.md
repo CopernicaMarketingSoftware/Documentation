@@ -16,7 +16,7 @@ e-commerce en nog veel meer.
 
 ### Internationaal programma
 
-![Copernica DM Summit Polar](Copernicacom/DMSummit01.JPG)
+![Copernica DM Summit Polar](../images/DMSummit01.JPG)
 
 Het keynoteprogramma van het DM Summit bestond dit jaar uit
 verschillende internationale sprekers. Online marketing-visionair

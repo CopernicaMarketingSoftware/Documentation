@@ -1,4 +1,4 @@
-![Copernica Summit](Copernicacom/copernica-summit-248x165.jpg)Een hele
+![Copernica Summit](../images/copernica-summit-248x165.jpg)Een hele
 dag gevuld met inspiratie, tips, tricks, trends en topsprekers uit de
 online marketingwereld!
 

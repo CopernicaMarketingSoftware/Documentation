@@ -2,7 +2,7 @@ Wanneer je een nieuwe enquête hebt geprepareerd en getest, wil je de
 testresultaten meestal wissen, voordat je de enquête daadwerkelijk in
 gebruik gaat nemen.
 
-![](resetsurveyresults.png)
+![](../images/resetsurveyresults.png)
 
 Om de resultaten te wissen ga je naar het zogenoemde dialoogvenster via
 het **Enquête menu**. Als je de resultaten wilt bewaren en de enquête

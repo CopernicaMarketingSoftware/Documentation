@@ -27,7 +27,7 @@ van het gemiddelde ordervolume:
 -   50-150 orders per dag: € 60
 -   150+ orders per dag: € 90
 
-![](Copernicacom/SEOshop.png)
+![](../images/SEOshop.png)
 
 ### Aanvragen
 

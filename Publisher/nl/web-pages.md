@@ -12,7 +12,7 @@ en ontdek wat er speelt bij je relaties.
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Maak & publiceer je eigen
-    webpagina's](Copernicacom/nl-webpages-01-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas "Maak en publiceer je eigen webpagina's")
+    webpagina's](../images/nl-webpages-01-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas "Maak en publiceer je eigen webpagina's")
 
     Met onze software bouw je gemakkelijk een eigen webpagina op. Maak
     zo bijvoorbeeld een leuke landingspagina ter ondersteuning van je

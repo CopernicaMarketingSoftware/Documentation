@@ -1,4 +1,4 @@
-![iam11.gif](http://www.iamevent.nl/wp-content/themes/iamevent2/i/iam11.gif)
+![iam11.gif](../images/iam11.gif)
 
 Het [*Interactive Advertising & Marketing
 Even*t](http://www.iamevent.nl/ "IAM2011") focust zich op online

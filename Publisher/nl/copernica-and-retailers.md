@@ -1,4 +1,4 @@
-![Retailers](Copernicacom/retailers-copernica.jpg)Verhoog het bezoek aan
+![Retailers](../images/retailers-copernica.jpg)Verhoog het bezoek aan
 je fysieke winkel en creëer een online dialoog met je klanten dankzij
 Copernica. Zet professionele e-mailcampagnes in, webpagina’s en mobile
 voor de optimale mix tussen online en offline.

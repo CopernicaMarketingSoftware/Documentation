@@ -7,7 +7,7 @@ bedanktpagina. Deze kan je natuurlijk zelf van inhoud voorzien.
 -   Let op, er kan in dit veld geen Smarty personalisatie worden
     gebruikt.
 
-![Editing the conclude page](editconcludepage.png)
+![Editing the conclude page](../images/editconcludepage.png)
 
 Je kan zowel de HTML en de uitgebreide editor gebruiken
 

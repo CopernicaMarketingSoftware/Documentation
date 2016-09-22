@@ -12,7 +12,7 @@ extra inkomsten.
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Haal het maximale uit de
-    partnerlicentie](Copernicacom/nl-partners-partner-support.png)](http://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie "Haal het maximale uit de partnerlicentie")
+    partnerlicentie](../images/nl-partners-partner-support.png)](http://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie "Haal het maximale uit de partnerlicentie")
 
     Naast de mogelijkheden van de software zelf, biedt de
     partnerlicentie ook unieke mogelijkheden om het maximale te halen

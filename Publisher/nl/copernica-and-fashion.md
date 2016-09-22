@@ -1,4 +1,4 @@
-![Travel newsletters](Copernicacom/fashion-copernica.jpg)Met de
+![Travel newsletters](../images/fashion-copernica.jpg)Met de
 e-mailmarketingsoftware van Copernica hou je jouw klanten nog beter op
 de hoogte van de laatste fashiontrends en aanbiedingen die bij hen
 passen. Stel uitgebreide klantprofielen op en verzend professionele

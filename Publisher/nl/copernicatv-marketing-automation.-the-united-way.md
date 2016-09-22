@@ -1,7 +1,7 @@
 Opname van CopernicaTV van 21 November 2013: Marketing automation - The
 United way met Edoardo Abis - Nike.
 
-![CopernicaTV](Copernicacom/CopernicaTV.png)
+![CopernicaTV](../images/CopernicaTV.png)
 
 In deze aflevering:
 

@@ -30,7 +30,7 @@ Er zijn twee manieren om de content in te laden:
 **Let op**, met deze optie vervang je reeds in het tekstblok aanwezige
 content.
 
-![Include special content](includespecialcontent.png)
+![Include special content](../images/includespecialcontent.png)
 
 *Afbeelding - in het bewerkvenster van het tekstblok kan je direct
 speciale content toevoegen*

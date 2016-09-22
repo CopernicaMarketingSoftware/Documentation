@@ -4,7 +4,7 @@ actuele klantgegevens. Door de actieve synchronisatie tussen Facebook en
 Copernica worden profielgegevens en nieuwsbriefvoorkeuren real-time
 geüpdatet in je database.
 
-![Facebook App](Copernicacom/facebook-testpanel-integration.png)
+![Facebook App](../images/facebook-testpanel-integration.png)
 
 -   **Ontwikkeld door:**
     [Anchormen](http://www.anchormen.nl/diensten/producten/copernica-facebook-app/ "Anchormen")

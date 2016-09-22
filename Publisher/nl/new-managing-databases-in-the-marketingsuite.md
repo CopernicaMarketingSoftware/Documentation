@@ -28,7 +28,7 @@ nieuwe databasevelden (dit kunnen er tientallen of meer zijn) kan nu in
 een ruk, zonder de muis verder te hoeven aanraken.
 
 ![The Edit Database Structure
-tool](//vicinity.picsrv.net/63334/MovieDatabaseSMALL.png)
+tool](../images/MovieDatabaseSMALL.png)
 
 ### Database collecties
 

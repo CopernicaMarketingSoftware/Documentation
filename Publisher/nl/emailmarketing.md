@@ -16,7 +16,7 @@ Zo heb je altijd een actueel overzicht van je laatste relatiegegevens
 die je kunt gebruiken bij het opstellen van een email marketing
 strategie.
 
-![Maak je eigen database](Copernicacom/nl-database-list.png)
+![Maak je eigen database](../images/nl-database-list.png)
 
 Creëer je eigen email campagnes
 -------------------------------

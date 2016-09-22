@@ -1,4 +1,4 @@
-![Travel newsletters](Copernicacom/travel-copernica.jpg)Zet Copernica in
+![Travel newsletters](../images/travel-copernica.jpg)Zet Copernica in
 om je klant te voorzien van alle relevante informatie omtrent zijn reis.
 Stuur uitgebreide bevestigingsmails van reservatie met dynamische
 content op basis van de bestemming of breng hem op de hoogte van

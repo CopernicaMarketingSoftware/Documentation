@@ -5,7 +5,7 @@ Neem dan snel een kijkje in onze
 -   [Helpdocumentatie](./helpdocumentatie.md "Helpdocumentatie")
     -------------------------------------------------------------------------------------------------
 
-    [![Helpdocumentatie](Copernicacom/nl-support-helpdocumentation.png)](./helpdocumentatie.md "Helpdocumentatie")
+    [![Helpdocumentatie](../images/nl-support-helpdocumentation.png)](./helpdocumentatie.md "Helpdocumentatie")
 
     Het kan gebeuren dat je tegen een vraag aanloopt waar je zelf niet
     uitkomt. Gebruik de helpdocumentatie om snel per functie de nodige

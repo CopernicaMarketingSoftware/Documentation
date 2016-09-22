@@ -3,7 +3,7 @@ verzenden van een enquete. Je vindt het dialoogvenster om
 enquete-opvolgacties in te stellen in het Enquete menu in het onderdeel
 Content.
 
-![](Documentation/addnewfollowup.png)
+![](../images/addnewfollowup.png)
 
 Aanleiding en actie
 -------------------

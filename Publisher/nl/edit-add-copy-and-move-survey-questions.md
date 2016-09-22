@@ -1,7 +1,7 @@
 Enquêtevragen beheer je vanuit de werkbalk direct onder de geopende
 vraag.
 
-![Survey toolbar](surveytoolbar.png)
+![Survey toolbar](../images/surveytoolbar.png)
 
 A survey question and the available options related to the question
 

@@ -13,7 +13,7 @@ er een foutmelding moet zijn geregistreerd. Hierbij kunt u selecteren of
 u de selectie instelt op een specifieke foutmelding of op een
 foutmelding die opnieuw zal optreden bij het verzenden van een volgende
 mailing.  Bijvoorbeeld: ![Selectie aan op basis van foutmelding
-aanmaken](Copernicacom/hardbounce.png)
+aanmaken](../images/hardbounce.png)
 
 -   Als gevolg van de e-mailing is de volgende fout geregistreerd: *Fout
     die waarschijnlijk opnieuw zal optreden bij het verzenden van een

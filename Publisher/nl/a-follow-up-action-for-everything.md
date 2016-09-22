@@ -7,7 +7,7 @@ beetje bijstellen, tweaken. En de baas maar denken dat je hard werkt.
 ### Follow-up manager
 
 ![Follow-up
-manager](https://pic.vicinity.nl/127/0/113946/nl-opvolgacties.png)
+manager](../images/nl-opvolgacties.png)
 
 Voor het automatiseren van campagnes gebruik je opvolgacties. Dit kan
 één enkele opvolgactie zijn, zoals het versturen van een bevestiging per

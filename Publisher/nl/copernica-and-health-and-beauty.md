@@ -3,7 +3,7 @@ doelgroepen op basis van leeftijd, geslacht of levensstijl (bv. zwangere
 vrouwen). Stuur vervolgens gerichte en persoonlijke e-mailings op basis
 van de opgeslagen klantgegevens.
 
-![](Copernicacom/health-copernica.jpg)
+![](../images/health-copernica.jpg)
 
 Wat kan je zoal met Copernica?
 ------------------------------

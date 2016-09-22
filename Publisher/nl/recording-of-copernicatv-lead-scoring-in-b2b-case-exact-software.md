@@ -1,7 +1,7 @@
 Opname van Copernica TV aflevering "Lead scoring in B2b; case study
 Exact Software", 10 december 2012.
 
-![CopernicaTV](Copernicacom/CopernicaTV.png)
+![CopernicaTV](../images/CopernicaTV.png)
 
 In deze aflevering van CopernicaTV:
 

@@ -24,4 +24,4 @@ functies met betrekking tot de database zijn te vinden in het menu
 **Databasebeheer**. In dit menu staat ook de optie om een nieuwe
 database aan te maken.
 
-![](Documentation/database-management-menu.png)
+![](../images/database-management-menu.png)

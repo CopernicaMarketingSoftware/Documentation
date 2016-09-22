@@ -30,7 +30,7 @@ Wat onze gebruikers zeggen
 --------------------------
 
 > "Met Copernica kunnen wij al onze vastgoedprojecten in één centrale
-> database overzichtelijk opslaan en beheren." ![](testimonials/asr.png)
+> database overzichtelijk opslaan en beheren." ![](../images/asr.png)
 >
 > \
 > **ASR Vastgoed**\

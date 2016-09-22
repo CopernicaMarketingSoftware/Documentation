@@ -19,7 +19,7 @@ Typen velden
 Binnen Copernica kan gebruik worden gemaakt van verschillende types
 velden voor het opslaan van gegevens.
 
-![Typen velden](Documentation/edit_database_fields.png)\#\#\#
+![Typen velden](../images/edit_database_fields.png)\#\#\#
 **Numerieke velden**
 
 Dit veld kan alleen numerieke waarden [0-9] bevatten. Gebruik dit
