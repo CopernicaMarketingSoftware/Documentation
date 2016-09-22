@@ -99,10 +99,10 @@ naar Digitalbits BV. De winnaar van de Copernica Partner of the Year
 Wil je de dag herbeleven? Lees dan zeker [het
 liveverslag](https://www.copernica.com/nl/blog/liveverslag-copernica-summit-2013)
 van de dag, bekijk [de
-foto’s](http://copernica.com/nl/ondersteuning/copernica-summit/impressie-copernica-summit-2013)
+foto’s](./impression-copernica-summit-2013.md)
 of [een
 videoverslag](http://www.youtube.com/watch?v=pBtPp6N7LBw&feature=youtu.be)
 van het event. Heb je een presentatie gemist of kon je er niet bij zijn?
 Dan kan je de [sheets van alle
-presentaties](http://www.copernica.com/nl/ondersteuning/copernica-summit/sprekers-copernica-summit)
+presentaties](./speakers-copernica-summit.md)
 nog eens rustig doornemen.

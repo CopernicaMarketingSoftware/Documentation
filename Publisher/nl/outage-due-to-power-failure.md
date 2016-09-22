@@ -26,4 +26,4 @@ Leaseweb lees je op het
 [liveblog](https://www.copernica.com/nl/blog/liveblog-storing-datacentrum-achter-de-schermen-bij-copernica).
 
 **Update, 1 november:** [De applicatie draait weer als
-gebruikelijk](http://www.copernica.com/nl/blog/gevolgen-stroomstoring-leaseweb-verholpen).
+gebruikelijk](./issues-caused-by-power-outage-leaseweb-solved.md).

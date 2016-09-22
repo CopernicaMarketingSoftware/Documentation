@@ -21,4 +21,4 @@ API-gebruikers is een update niet nodig. 
  Als je hulp nodig hebt met bovenstaande, of als je andere vragen hebt
 over het gebruik van Copernica kun je natuurlijk ook contact opnemen met
 onze [afdeling
-ondersteuning](http://www.copernica.com/nl/articles/ondersteuning).
+ondersteuning](./support.md).

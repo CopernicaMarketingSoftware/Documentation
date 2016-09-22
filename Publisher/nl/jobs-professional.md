@@ -32,16 +32,16 @@ Sales
 **New business managers**
 
 -   [Netherlands](https://www.copernica.com/en/about-us/jobs/new-business-manager-the-netherlands)
--   [Germany](https://www.copernica.com/en/about-us/jobs/new-business-manager-germany)
--   [France](https://www.copernica.com/en/about-us/jobs/new-business-manager-france)
--   [UK](https://www.copernica.com/en/about-us/jobs/new-business-manager-uk)
--   [Spain](https://www.copernica.com/en/about-us/jobs/new-business-manager-spain)
+-   [Germany](./new-business-manager-germany.md)
+-   [France](./new-business-manager-france.md)
+-   [UK](./business-development-manager-uk.md)
+-   [Spain](./new-business-manager-spain.md)
 
 **Account managers**
 
 -   Netherlands, Germany, France, UK and Spain
 
-[More info](https://www.copernica.com/en/about-us/jobs/account-manager)
+[More info](./account-manager.md)
 
 Marketing
 ---------
@@ -58,7 +58,7 @@ department.
 The Netherlands, Germany, France, UK, Spain
 
 [More
-info](https://www.copernica.com/nl/about-us/jobs/marketing-executive)
+info](./marketing-executive.md)
 
 People operations
 -----------------

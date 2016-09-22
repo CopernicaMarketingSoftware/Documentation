@@ -9,17 +9,17 @@ Krachtige functionaliteiten voor Leisure
     te
     [beoordelen](http://www.copernica.com/nl/functies/webpaginas/enquetes)
 -   Stuur je klanten [automatisch een
-    e-mailing](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    e-mailing](./automate-your-campaigns.md)
     wanneer ze jarig zijn en nodig ze uit te komen eten met 4 personen
 -   Stel je klanten in staat online te reserveren via zelf gemaakte
-    [webformulieren](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren)
+    [webformulieren](./various-types-of-web-forms.md)
 -   Herinner je klanten aan een event door een week, dag of paar uur van
     tevoren automatisch een e-mail of
-    [SMS](http://www.copernica.com/nl/functies/mobile/sms-bericht-verzenden)
+    [SMS](./sending-your-text-message.md)
     te sturen
 -   Stimuleer het aantal hotelovernachtingen en stuur je
     nieuwsbriefabonnees [persoonlijke
-    overnachtingsvouchers](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document)
+    overnachtingsvouchers](./create-your-personalized-pdf.md)
 
 Copernica is krachtige marketingsoftware voor\
 
@@ -27,7 +27,7 @@ Copernica is krachtige marketingsoftware voor\
 [webpagina's](http://www.copernica.com/nl/functies/webpaginas "webpagina's"),
 [mobile](http://www.copernica.com/nl/functies/mobile "mobile") &
 [automatische
-campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes "automatische campagnes").\
+campagnes](./automate-your-campaigns.md "automatische campagnes").\
 \
 [Test Copernica nu
 gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")

@@ -36,7 +36,7 @@ e-mailstatistieken. Gebruik deze data bij het optimaliseren van de
 van volgende e-mailings.\
 \
  Foutmeldingen kan je ook verwerken met behulp van een
-[opvolgactie](http://www.copernica.com/nl/ondersteuning/begrippenlijst/opvolgacties).
+[opvolgactie](./follow-up-actions.md).
 Stel bijvoorbeeld in dat een ontvanger niet langer e-mailings ontvangt
 indien er sprake is van een foutmelding.
 
@@ -46,7 +46,7 @@ Topdomeinen en e-mailprogramma’s
 Weten welk e-mailprogramma je ontvangers het meest gebruiken? In de
 e-mailstatistieken wordt getoond of een e-mailing is ontvangen in
 Outlook, Gmail, Live mail of een andere
-[e-mailclient](http://www.copernica.com/nl/ondersteuning/begrippenlijst/e-mailclient).
+[e-mailclient](./email-client.md).
 Daarnaast geven de statistieken ook aan wat de meest voorkomende
 domeinen zijn binnen de database. Bekijk bijvoorbeeld of het meerendeel
 van de relaties een e-mailaccount heeft bij Hotmail.
@@ -64,7 +64,7 @@ Google Analytics in de e-mailcampagne
 -------------------------------------
 
 Voeg in één keer de [Google
-Analytics](http://www.copernica.com/nl/ondersteuning/integraties/google-analytics)
+Analytics](./google-analytics.md)
 UTM codes toe aan de hyperlinks in e-mails. Koppel de bron, het medium
 en de naam van een campagne aan de hyperlink en controleer eenvoudig
 welke links de meeste kliks genereren binnen je database. In combinatie

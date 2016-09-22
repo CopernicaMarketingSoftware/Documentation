@@ -24,7 +24,7 @@ Gebruik content feeds als dynamische content
 
 Hou de content op je webpagina's of binnen je e-mailings dynamisch door
 gebruik te maken van
-[contentfeeds](http://www.copernica.com/nl/functies/webpaginas/gebruik-van-rss-of-atom-feed).
+[contentfeeds](./rss-or-atom-feed.md).
 Binnen Copernica kan je zelf je eigen feeds samenstellen, maar je kan
 ook gebruik maken van externe feeds ter aanvulling van je
 marketingcampagnes.

@@ -56,7 +56,7 @@ open-rates te verhogen, maar zorgen ze ook voor een boost in je
 conversie.
 
 Neem de
-[abandoned-shopping-cart-e-mail](http://www.copernica.com/nl/over-ons/nieuws/verloren-winkelwagens),
+[abandoned-shopping-cart-e-mail](./abandonded-shopcarts.md),
 waarin je klanten herinnert aan een aankoop die ze niet afrondden. Uit
 [onderzoek](http://seewhy.com/blog/2011/02/04/cart-abandoners-spend-155-more/)
 van SeeWhy blijkt dat 50 tot 75 procent van de online shoppers zijn

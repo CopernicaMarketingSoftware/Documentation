@@ -41,7 +41,7 @@ voor opvolgacties. Je kan zo bijvoorbeeld voorkomen dat een e-mail wordt
 verstuurd terwijl de ontvanger zich reeds heeft uitgeschreven.
 
 [Lees meer over condities voor
-opvolgacties](http://www.copernica.com/nl/ondersteuning/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie)
+opvolgacties](./conditions-for-follow-ups.md)
 
 Beschikbare variabelen in opvolgacties voor enquetes
 ----------------------------------------------------

@@ -5,9 +5,7 @@ zien hoe je de output van je GET calls kunt verwerken om zo op een
 gedetailleerde, overzichtelijke manier je mailingstatistieken op te
 slaan. Om je geheugen even op te frissen, vind je
 [hier](https://www.copernica.com/en/blog/dont-fear-the-api-an-introduction-to-copernicas-rest)
-het eerste en
-[hier](https://www.copernica.com/nl/blog/api-calls-voor-beginners) het
-tweede artikel.
+het eerste en [hier](./api-calls-for-dummies.md) het tweede artikel.
 
 Exporteren van JSON naar csv
 ----------------------------

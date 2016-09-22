@@ -18,8 +18,7 @@ verwijzen.\
  In één e-mailing zou je dan zowel kunnen personaliseren op basis van de
 informatie in de bedrijvendatabase, als uit de werknemersdatabase. \
 \
-[Lees
-verder](http://www.copernica.com/nl/ondersteuning/personaliseren-met-behulp-van-multidimensionale-databases)\
+[Lees verder](./personalizing-using-multi-dimensional-databases.md)\
  \
  **Vinden er verder nog updates plaats?\
 **Ja, donderdag vindt er een aantal updates en verbeteringen plaats die

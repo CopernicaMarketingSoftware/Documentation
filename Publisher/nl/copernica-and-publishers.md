@@ -12,18 +12,18 @@ Krachtige functionaliteiten voor Uitgevers
 
 -   Hou je abonnees op de hoogte van de nieuwste en meest gelezen
     artikelen met behulp van [dynamische
-    contentfeeds](http://www.copernica.com/nl/functies/webpaginas/gebruik-van-rss-of-atom-feed)
+    contentfeeds](./rss-or-atom-feed.md)
 -   Stuur je lezers twee weken voor het aflopen van het abonnement
     automatisch een reminder om deze te verlengen
 -   Stem de advertenties in je nieuwsbrief af op de [interesses van je
-    lezers](http://www.copernica.com/nl/functies/profielen/definieer-doelgroepen-met-selecties)
+    lezers](./define-target-groups-with-selections.md)
 -   Koppel je CRM- of CMS-systeem naadloos aan Copernica dankzij onze
     krachtige [SOAP
-    API](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie)
+    API](./soap-api-documentation.md)
 -   Bouw krachtige
-    [webformulieren](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren)
+    [webformulieren](./various-types-of-web-forms.md)
     gekoppeld met automatische
-    [follow-upcampagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    [follow-upcampagnes](./automate-your-campaigns.md)
 
 Maak gratis gebruik van Copernica
 ---------------------------------

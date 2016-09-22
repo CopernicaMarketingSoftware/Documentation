@@ -48,10 +48,10 @@ niets aan hebt. Microdata en Schema.org lijken vooral gericht op seo, en
 dat heeft niets te maken met het versturen van e-mails. Toch?
 
 Nou, dat klopt niet helemaal. De scheidslijn tussen [seo en
-e-mailmarketing](https://www.copernica.com/nl/blog/zes-deliverability-lessen-die-je-kan-leren-van-seo)
+e-mailmarketing](./six-email-deliverability-lessons-that-you-can-learn-from-seo.md)
 wordt steeds vager nu Google tests uitvoert met het opnemen van iemands
 [Gmail inbox in de
-zoekresultaten](https://www.copernica.com/nl/blog/gmail-in-de-zoekresultaten-zijn-jouw-e-mails-al-seo-proof).
+zoekresultaten](./how-to-optimize-your-emails-for-search.md).
 
 Maar los van het verbeteren van je zichtbaarheid in Google, zijn er nog
 veel meer mogelijkheden voor e-mailmarketing met microdata.
@@ -171,7 +171,7 @@ Developers](https://developers.google.com/gmail/actions/).
 manieren aan om Schema.org-opmaak toe te voegen aan een e-mail. Ik raad
 je echter aan niet voor de variant te kiezen waarbij je gebruik maakt
 van scripts, aangezien dat bij andere e-mailproviders voor
-[deliverability](https://www.copernica.com/nl/blog/tips-voor-een-optimale-deliverability-met-copernica)-problemen
+[deliverability](./tips-for-an-optimal-deliverability-using-copernica.md)-problemen
 kan leiden. Kies dus altijd voor de versie met alleen html.
 
 Hulp nodig?

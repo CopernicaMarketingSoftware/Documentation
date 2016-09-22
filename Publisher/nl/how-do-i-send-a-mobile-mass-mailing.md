@@ -41,7 +41,7 @@ applicatie
 
 **Tip:** selecteer Personaliseren onderaan het sms-document om het
 bericht te bekijken met gegevens van de
-[standaardbestemming](http://www.copernica.com/nl/ondersteuning/sms-testbericht-sturen-naar-standaardbestemming)
+[standaardbestemming](./send-sms-test-message-to-test-destination.md)
 
 Bulk sms-mailing versturen
 --------------------------

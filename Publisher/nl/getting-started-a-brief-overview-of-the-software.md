@@ -42,7 +42,7 @@ Selecties en miniselecties
 --------------------------
 
 Je gebruikt
-[selecties](http://www.copernica.com/nl/ondersteuning/selecties-en-miniselecties)
+[selecties](./selections-and-miniselections.md)
 om segmenten te maken binnen een database. Hierbij kan je denken aan een
 selectie van mannen die zijn geboren na 1970, of een selectie van
 profielen die in een e-mailing op een specifieke link hebben geklikt. De
@@ -51,13 +51,13 @@ afmeldingen actief worden gefilterd uit een mailinglijst: de
 nieuwsbriefselectie.
 
 Selecties zijn
-[dynamisch](http://www.copernica.com/nl/ondersteuning/hoe-en-wanneer-worden-selecties-opgebouwd).
+[dynamisch](./how-are-selections-rebuilt.md).
 Dat wil zeggen dat bij elke wijziging in een profiel of in de selectie
 zelf automatisch wordt bekeken welke profielen in de selectie
 thuishoren.
 
 -   [Een nieuwsbriefselectie
-    maken](http://www.copernica.com/nl/ondersteuning/nieuwsbrief-selectie-maken)
+    maken](./create-a-mailing-list.md)
 
 Templates en documenten
 -----------------------
@@ -70,7 +70,7 @@ kunnen worden toegevoegd en kunnen worden herhaald. Op deze wijze kan
 een enkele template oneindig vaak gebruikt worden.
 
 Copernica beschikt over een
-[standaardtemplate](http://www.copernica.com/nl/ondersteuning/werken-met-de-standaard-template-van-copernica)
+[standaardtemplate](./using-the-copernica-default-template.md)
 die je snel en eenvoudig inlaadt. De template bevat tekst, afbeelding en
 loopblokken en is prima geschikt om de mogelijkheden van templates en
 documenten te onderzoeken.
@@ -81,9 +81,9 @@ document de dynamische template blokken gebruiken voor het toevoegen van
 teksten en afbeeldingen.
 
 -   [Een eigen template maken voor gebruik in
-    e-mailings](http://www.copernica.com/nl/ondersteuning/een-eigen-template-maken-voor-gebruik-in-e-mailings)
+    e-mailings](./getting-started-building-email-templates.md)
 -   [Een e-maildocument
-    opmaken](http://www.copernica.com/nl/ondersteuning/opmaken-van-een-e-maildocument)
+    opmaken](./composing-email-documents-in-copernica.md)
 
 Webversie
 ---------
@@ -94,7 +94,7 @@ Dit is een versie van je e-mail die je in een internetbrowser kan
 openen.
 
 -   [Een eigen template maken voor gebruik in
-    e-mailings](http://www.copernica.com/nl/ondersteuning/een-eigen-template-maken-voor-gebruik-in-e-mailings)
+    e-mailings](./getting-started-building-email-templates.md)
 
 Onderwerp en afzenderadres van een e-mail
 -----------------------------------------
@@ -105,7 +105,7 @@ ontvanger immers duidelijk zijn van wie de e-mail afkomstig is en waar
 het over gaat.
 
 -   [Het onderwerp en de afzender
-    instellen](http://www.copernica.com/nl/ondersteuning/het-onderwerp-en-afzenderadres-instellen)
+    instellen](./editing-the-sender-and-subject-of-the-email-document.md)
 
 Uitschrijvers verwerken
 -----------------------
@@ -115,20 +115,20 @@ die je verstuurt te voorzien van een goed zichtbare en werkende
 uitschrijflink. Copernica beschikt over verschillende methodes voor het
 toevoegen van deze links. De meest gebruikte en eenvoudige methode is de
 speciale
-[uitschrijftag](http://www.copernica.com/nl/ondersteuning/de-uitschrijflink-unsubscribe-tag),
+[uitschrijftag](./the-unsubscribe-function.md),
 die een voor iedere ontvanger unieke uitschrijflink maakt.
 
 Wanneer iemand een mailing niet langer wenst te ontvangen en zich
 uitschrijft via deze link, wordt het profiel van de ontvanger
 automatisch gewijzigd of verwijderd. Wat er precies moet gebeuren
 (wijzigen of verwijderen) bepaal je zelf bij de
-[uitschrijfopties](http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie)
+[uitschrijfopties](./setting-unsubscribe-behaviour-for-your-database-or-collection.md)
 in de database.
 
 -   [Een uitschrijflink toevoegen aan een e-mailtemplate of
-    document](http://www.copernica.com/nl/ondersteuning/de-uitschrijflink-unsubscribe-tag)
+    document](./the-unsubscribe-function.md)
 -   [Het uitschrijfgedrag instellen in de database of
-    collectie](http://www.copernica.com/nl/ondersteuning/uitschrijfgedrag-instellen-op-database-of-collectie)
+    collectie](./setting-unsubscribe-behaviour-for-your-database-or-collection.md)
 
 Testmail versturen
 ------------------
@@ -139,26 +139,26 @@ in? Wordt de e-mail goed weergegeven? Werken alle afbeeldingen?
 
 Copernica heeft een speciale test mail functionaliteit waarmee je direct
 een testmail verstuurt naar de
-[standaardbestemming](http://www.copernica.com/nl/ondersteuning/standaardbestemming-instellen-of-wijzigen).
+[standaardbestemming](./what-is-the-test-destination.md).
 Het is vanzelfsprekend ook mogelijk om een testmail te versturen naar
 een select gezelschap (collega's, opdrachtgevers).
 
 -   [Een testmail versturen naar de standaardbestemming of naar een
     groep
-    ontvangers](http://www.copernica.com/nl/ondersteuning/een-test-e-mail-versturen)
+    ontvangers](./send-a-test-mail-or-test-mailing.md)
 
 Bulkmailing verzenden
 ---------------------
 
 Heb je de mailing goed getest? Kijk dan voordat je deze verstuurt naar
 deze [deliverability optimalisatie
-tips](http://www.copernica.com/nl/ondersteuning/deliverability-optimaliseren).
+tips](./the-key-ingredients-for-a-good-deliverability.md).
 Is dit ook allemaal kloppend, dan kan je de e-mailing gaan versturen
 naar je meerdere relaties in de database of selectie. Dit noemen wij een
 **bulkmailing**.
 
 -   [Een bulkmailing
-    verzenden](http://www.copernica.com/nl/ondersteuning/bulkmailing-verzenden)
+    verzenden](./sending-a-mass-mailing.md)
 
 Campagneresultaten
 ------------------
@@ -172,7 +172,7 @@ erg interessante statistiek omdat het precies bijhoudt door wie en hoe
 vaak er op de hyperlinks in de e-mail is geklikt.
 
 -   [Campagneresultaten bekijken en
-    delen](http://www.copernica.com/nl/ondersteuning/campagneresultaten-bekijken-en-delen)
+    delen](./campaign-results-and-statistics.md)
 
 Andere mogelijkheden
 --------------------
@@ -185,7 +185,7 @@ Omdat Copernica multimediaal is het net zo eenvoudig om een sms
 bulkmailing te versturen of een pdf document aan te maken.
 
 -   [Een landingspagina of webformulier
-    maken](http://www.copernica.com/nl/ondersteuning/websites)
+    maken](./websites.md)
 -   [Enquêtes
     maken](http://www.copernica.com/nl/ondersteuning/enquetes-maken)
 

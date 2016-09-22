@@ -7,7 +7,7 @@ gemaakt in webpagina's die door Copernica worden gehost. Door een
 verkeerde instelling zijn deze niet geregistreerd. 
 
 Voor iedereen die gebruik maakt van [Google
-Analytics](http://www.copernica.com/nl/ondersteuning/integraties/google-analytics)
+Analytics](./google-analytics.md)
 zijn deze overigens wel in deze applicatie te zien. \
  \
  De klikgegevens zijn door Copernica ook niet meer te achterhalen.

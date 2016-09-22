@@ -10,7 +10,7 @@ voldoet](http://www.copernica.com/nl/over-ons/nieuws/de-nieuwe-code-e-mail-wat-b
 is dit niet genoeg om te voorkomen dat je op een gegeven moment als
 spammer wordt gemarkeerd. Een opt-in is namelijk niet onbeperkt
 houdbaar. Denk daarom aan je
-[e-mailreputatie](http://www.copernica.com/nl/over-ons/nieuws/e-mailreputatie-hoe-bouw-je-dit-op)
+[e-mailreputatie](./how-to-build-up-your-email-reputation.md)
 en vraag je abonnees na verloop van tijd hun opt-in te verlengen.
 
 Interesses veranderen
@@ -39,14 +39,14 @@ al niet goed voor je
 [zendreputatie](http://www.marketingfacts.nl/berichten/20091007_ontvangers_bepalen_verzendreputatie),
 maar het kan nog erger: dat ontvangers je e-mails op een gegeven moment
 markeren als
-[spam](http://www.copernica.com/nl/over-ons/nieuws/verlaag-je-spamrating-enkele-aandachtspunten).
+[spam](./reduce-your-spam-rating-some-focus-points.md).
 
 Een opt-in vandaag is de spamtrap van morgen
 --------------------------------------------
 
 Om spammers te identificeren maken veel e-mailproviders bovendien
 gebruik van zogenaamde
-[spamtraps](http://www.copernica.com/nl/over-ons/nieuws/denk-aan-je-e-mailreputatie-pas-op-voor-spamtraps).
+[spamtraps](./mind-your-email-reputation-watch-out-for-spam-traps.md).
 Dit zijn e-mailadressen die worden aangemaakt, puur en alleen om te
 kijken of ze worden gebruikt voor
 [harvesting](http://en.wikipedia.org/wiki/Email_address_harvesting).
@@ -64,7 +64,7 @@ Er zijn verschillende manieren op een verlopen opt-in te herkennen.
 Waarschijnlijk monitor je jouw e-mailstatistieken al op zaken als:
 
 -   [Bounces](http://www.copernica.com/nl/over-ons/nieuws/het-verschil-tussen-hard-bounce-en-soft-bounces)
--   [Spamklachten](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader)
+-   [Spamklachten](./list-unsubscribe-header-a-reputation-improving-email-header.md)
 -   En de meest voor de hand liggende:
     [opt-outs](http://www.copernica.com/nl/over-ons/nieuws/opt-out-hou-je-klant-niet-tegen)
 
@@ -100,15 +100,15 @@ twee die hem ongeopend weggooien. Of ze markeren als spam.
 -   [Opt-in & double opt-in: vraagt u om
     toestemming?](http://www.copernica.com/nl/over-ons/nieuws/opt-in-double-opt-in-vraagt-u-om-toestemming "Opt-in & double opt-in: vraagt u om toestemming?")
 -   [E-mailreputatie: hoe bouw je dit
-    op?](http://www.copernica.com/nl/over-ons/nieuws/e-mailreputatie-hoe-bouw-je-dit-op "E-mailreputatie: hoe bouw je dit op?")
+    op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")
 -   [De nieuwe Code E-mail: wat betekent dit voor
     mij?](http://www.copernica.com/nl/over-ons/nieuws/de-nieuwe-code-e-mail-wat-betekent-dit-voor-mij "De nieuwe Code E-mail: wat betekent dit voor mij?")
 -   [Verlaag je spamrating: enkele
-    aandachtspunten](http://www.copernica.com/nl/over-ons/nieuws/verlaag-je-spamrating-enkele-aandachtspunten "Verlaag je spamrating: enkele aandachtspunten")
+    aandachtspunten](./reduce-your-spam-rating-some-focus-points.md "Verlaag je spamrating: enkele aandachtspunten")
 -   [Het verschil tussen hard bounce en soft
     bounces](http://www.copernica.com/nl/over-ons/nieuws/het-verschil-tussen-hard-bounce-en-soft-bounces "Het verschil tussen hard bounce en soft bounces")
 -   [List-unsubscribe header: een reputatieverbeterende
-    e-mailheader](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader "List-unsubscribe header: een reputatieverbeterende e-mailheader")
+    e-mailheader](./list-unsubscribe-header-a-reputation-improving-email-header.md "List-unsubscribe header: een reputatieverbeterende e-mailheader")
 -   [Opt-out: Hou je klant niet
     tegen!](http://www.copernica.com/nl/over-ons/nieuws/opt-out-hou-je-klant-niet-tegen "Opt-out: Hou je klant niet tegen!")
 

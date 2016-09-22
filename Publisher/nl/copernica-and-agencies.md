@@ -12,14 +12,14 @@ Krachtige functionaliteiten voor Bureaus
     voor eigen gebruik of voor je klanten
 -   Zet Copernica in als marketingoplossing voor eigen klanten
 -   Neem deel aan het
-    [partnernetwerk](http://www.copernica.com/nl/partners/registreer-je-als-partner-van-copernica "Ontdek ons partnerprogramma")
+    [partnernetwerk](./register-as-copernica-partner.md "Ontdek ons partnerprogramma")
     en kom in contact met de eindgebruikers van Copernica
 -   Beheer meerdere accounts vanuit één omgeving, maak net zoveel aan
     als je klanten hebt
 -   Breid je productportfolio uit met Copernica en genereer extra omzet
     dankzij het [Copernica\
 
-    partnermodel](http://www.copernica.com/nl/partners/registreer-je-als-partner-van-copernica)
+    partnermodel](./register-as-copernica-partner.md)
 
 Copernica is krachtige marketingsoftware voor\
 

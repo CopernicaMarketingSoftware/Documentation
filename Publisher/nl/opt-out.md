@@ -19,7 +19,7 @@ kan je op verschillende aanbieden
     verwerken en het helpt enorm bij dat onderhouden van je database.
 -   Verwerk je afmeldingen door gebruik te maken van van een
     [list-unsubscribe
-    header](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader).
+    header](./list-unsubscribe-header-a-reputation-improving-email-header.md).
 -   Maak gebruik van een double opt –out. Een e-mail waarin je om
     bevestiging vraagt dat iemand zich wel degelijk wilt uitschrijven.
     Deze mails kan je altijd nog gebruiken om te vragen of iemand

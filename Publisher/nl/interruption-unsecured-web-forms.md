@@ -27,7 +27,7 @@ de onderbreking. \
 **Met de release van [versie
 12.43](http://www.copernica.com/nl/over-ons/nieuws/copernica-versie-12-43-gelanceerd)
 van de applicatie, [stapte Copernica over op het beveiligde
-https](http://www.copernica.com/nl/over-ons/nieuws/copernica-stapt-over-naar-https-en-adviseert-jou-hetzelfde-te-doen)
+https](./copernica-switches-to-https-and-advises-you-to-do-the-same.md)
 in plaats van http. Het grote verschil tussen https en http is dat die
 eerste ons in staat stelt gegevens versleuteld te versturen, zonder dat
 derden deze kunnen monitoren of stelen. Eerder had een gebruiker de

@@ -64,7 +64,7 @@ bijwerken:
 
 Overigens is het nog makkelijker om het synchroniseren automatisch te
 laten verlopen door gebruik te maken van onze [SOAP
-API](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie).
+API](./soap-api-documentation.md).
 
 We verzoeken om grote im- en exports in te roosteren voor buiten
 kantoortijden.
@@ -73,7 +73,7 @@ Selecties op basis van ongeldige e-mailadressen
 -----------------------------------------------
 
 In het belang van je
-[deliverability](http://www.copernica.com/nl/over-ons/nieuws/deliverability-hogere-e-mailaflevering-met-copernica)is
+[deliverability](./deliverability-better-email-delivery-with-copernica.md)is
 het essentieel dat je ongeldige e-mailadressen die bounces opleveren
 geen e-mailings meer stuurt.
 
@@ -92,7 +92,7 @@ is namelijk veel minder zwaar dan een selectie op basis van een
 resultaat uit het verleden.
 
 [Lees meer over
-opvolgacties](http://www.copernica.com/nl/over-ons/nieuws/opvolgacties-de-sleutel-tot-succes)
+opvolgacties](./follow-up-actions-the-key-to-success.md)
 
 Selecties verfijnen
 -------------------
@@ -145,7 +145,7 @@ om grote velden (tekstvelden die een groot aantal tekens kunnen
 bevatten) te indexeren.
 
 [Lees meer over
-databasevelden](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database)
+databasevelden](./creating-your-own-databases.md)
 
 Trage statistieken?
 -------------------
@@ -153,7 +153,7 @@ Trage statistieken?
 Verzend jij op regelmatige basis grote e-mailings en merk je dat het
 langer duurt tot je statistieken beschikbaar zijn? Neem dan contact op
 met onze
-[supportafdeling](http://www.copernica.com/nl/ondersteuning/telefonische-helpdesk).
+[supportafdeling](./telephone-helpdesk.md).
 Onze medewerkers helpen je dan je database op te schonen door de
 emaildestinationtabel te herordenen. Hierdoor verdwijnen verouderde
 statistieken en is je account weer een stuk sneller.

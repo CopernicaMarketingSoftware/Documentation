@@ -83,7 +83,7 @@ Year 2012 is Redhotminute.
 ### Foto's, liveverslag, video en sheets
 
 Wil je de dag herbeleven? Bekijk [de
-foto’s](https://www.copernica.com/nl/ondersteuning/copernica-dm-summit/fotos-copernica-dm-summit-2012)
+foto’s](./photos-copernica-dm-summit-2012.md)
 of [een videoverslag](http://www.youtube.com/watch?v=QJVbjtnHt5Y) van
 het event.
 

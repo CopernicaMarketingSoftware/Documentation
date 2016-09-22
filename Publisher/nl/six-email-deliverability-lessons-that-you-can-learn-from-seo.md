@@ -36,7 +36,7 @@ weer voor problemen met het afleveren van e-mails.
 
 Daarom moet je het zo simpel mogelijk houden bij het opbouwen van je
 e-mailtemplates. Stel je nieuwsbrieven en andere e-mailings samen
-met [HTML](http://www.copernica.com/nl/over-ons/nieuws/opmaak-van-html-nieuwsbrief-enkele-belangrijke-richtlijnen) in
+met [HTML](./html-newsletter-design-some-important-guidelines.md) in
 plaats van JavaScript.
 
 Als je e-mails personaliseert, let er dan wel op dat ze volledig in HTML
@@ -58,7 +58,7 @@ belangrijke rol in de toename van de click through rate vanaf de
 zoekmachine naar je webpagina’s.
 
 Binnen je e-mails is deze rol weggelegd voor de [preheader of
-snippet](http://www.copernica.com/nl/over-ons/nieuws/preheader-of-snippet-de-versterking-van-je-onderwerpregel).
+snippet](./pre-header-or-snippet-the-reinforcement-of-your-subject-line.md).
 Je kan wel stellen dat dit de meta description van je e-mail is oftewel
 de tekst die men te zien krijgt in de inbox, onder of naast de
 onderwerpregel. Hier vind je meestal standaard tekst als:
@@ -69,7 +69,7 @@ onderwerpregel. Hier vind je meestal standaard tekst als:
 Zo’n tekst draagt natuurlijk niet bij aan de open ratio van je e-mails.
 Maak je gebruik van vanzelf bij aan een verbeterde open ratio en
 verbeter je tevens
-je [e-mailreputatie](http://www.copernica.com/nl/over-ons/nieuws/e-mailreputatie-hoe-bouw-je-dit-op) en
+je [e-mailreputatie](./how-to-build-up-your-email-reputation.md) en
 deliverability.
 
 De juiste balans tussen tekst en afbeeldingen

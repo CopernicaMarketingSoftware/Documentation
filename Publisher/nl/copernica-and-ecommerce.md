@@ -1,6 +1,6 @@
 Met de email marketing software van Copernica haal jij meer omzet uit je
 webshop! Koppel je webwinkel, met behulp van een van de vele
-[integraties](https://www.copernica.com/nl/ondersteuning/integraties),
+[integraties](./integrations.md),
 naadloos met Copernica en verstuur zeer persoonlijke en professionele
 email marketing campagnes voor je webshop. Verzamel waardevolle data,
 verzend email marketing campagnes op basis van interesses en gedrag,
@@ -60,13 +60,13 @@ artikelen.
 Of lees een van onze inspirerende cases:
 
 -   [Lead nurturing in de praktijk: case Exact
-    Software](https://www.copernica.com/nl/blog/lead-nurturing-in-de-praktijk-case-exact-software)
+    Software](./lead-nurturing-in-real-life-business-case-exact-software.md)
 -   [Case TodoTipo: efficiënter communiceren met Track en
     Trace](https://www.copernica.com/nl/blog/case-todotipo-effcienter-communiceren-met-track-trace)
 -   [Case Agradi.nl: Optimaal gebruik maken van je
     klantenbestand](https://www.copernica.com/nl/blog/case-agradi-nl-optimaal-gebruik-maken-van-je-klantenbestand)
 -   [Marketing automation met Manchester
-    United](https://www.copernica.com/nl/blog/marketing-automation-met-manchester-united)
+    United](./case-study-manchester-united.md)
 
 > "Het inrichten van multidimensionale databases en de krachtige
 > Magento-koppeling gaf voor ons de doorslag te kiezen voor Copernica

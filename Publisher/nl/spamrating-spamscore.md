@@ -14,8 +14,8 @@ punten:
     gebruik je best de verhouding; een paragraaf tekst per afbeelding
 -   Gebruik correcte authenticatiegegevens
     ([SPF](http://www.copernica.com/nl/ondersteuning/begrippenlijst/spf),
-    [SenderID](http://www.copernica.com/nl/ondersteuning/begrippenlijst/senderid),
-    [DKIM](http://www.copernica.com/nl/over-ons/nieuws/dkim-domainkey-identified-mail)
+    [SenderID](./senderid.md),
+    [DKIM](./dkim-domainkey-identified-mail.md)
     en afzendadres)
 -   Let op het gebruik van hyperlinks in je e-mails. Maak je gebruik van
     een hyperlink als call-to-action en gebruik je marketingsoftware om

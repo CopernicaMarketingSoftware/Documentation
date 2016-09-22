@@ -139,8 +139,7 @@ partnernetwerk](https://www.copernica.com/nl/tickets).
 Wil je je kennis van Copernica op papier vereeuwigd hebben? Volg dan
 geheel gratis een live-sessie bij ons op kantoor of bij een van onze
 partners en ga naar huis met je vers-behaalde certificaat voor de
-[fundamental of advanced
-test](https://www.copernica.com/nl/ondersteuning/copernica-training). Op
+[fundamental of advanced test](./copernica-training.md). Op
 het dashboard zie je wie van jouw collega’s het felbegeerde certificaat
 al op zak hebben.
 

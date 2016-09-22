@@ -43,7 +43,7 @@ dat deze pas over een week, of zelfs 5 jaar na activatie worden
 uitgevoerd. In de tussentijd kan er natuurlijk van alles gebeuren.
 Iemand kan zich bijvoorbeeld hebben afgemeld voor een nieuwsbrief. Met
 behulp van [condities voor
-opvolgacties](https://www.copernica.com/nl/ondersteuning/helpdocumentatie/condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie) zorg
+opvolgacties](./conditions-for-follow-ups.md) zorg
 je ervoor dat een opvolgactie alleen wordt uitgevoerd (of ingeroosterd)
 als de relatie (nog steeds) aan de gestelde voorwaarden voldoet.
 

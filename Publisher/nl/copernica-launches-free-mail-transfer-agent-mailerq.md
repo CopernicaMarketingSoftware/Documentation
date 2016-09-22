@@ -55,7 +55,7 @@ Over Copernica Marketing Software:
 Copernica is krachtige marketing software voor
 [e-mailmarketing](http://www.copernica.com/nl/functies/e-mailings) ,
 [websites](http://www.copernica.com/nl/functies/webpaginas) en
-[mobile](http://www.copernica.com/nl/functies/mobile) en [automatische
-campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+[mobile](./mobile.md) en [automatische
+campagnes](./automate-your-campaigns.md)
 . Kijk voor meer informatie
 op [www.copernica.com](http://www.copernica.com/) .

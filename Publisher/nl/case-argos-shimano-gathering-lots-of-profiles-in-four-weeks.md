@@ -20,21 +20,21 @@ verzorgde de koppeling met Copernica.\
 \
 
 -   Gesegmenteerde
-    [database](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database)
+    [database](./creating-your-own-databases.md)
     binnen Copernica
 -   [Gepersonaliseerde
-    actiemail](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings)
+    actiemail](./create-clever-emailings.md)
     om uit te nodigen voor inschrijving nieuwsbrief
 -   [Geautomatiseerde
-    mail](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    mail](./automate-your-campaigns.md)
     om winnaars en verliezers op de hoogte te stellen
 -   Op maat gemaakte
     [actiesite](http://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas)
 -   Op maat gemaakt
-    [actieformulier](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren)
+    [actieformulier](./various-types-of-web-forms.md)
     gekoppeld aan database Copernica
 -   Koppeling tussen Copernica en externe MySQL database via [SOAP
-    API](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie)
+    API](./soap-api-documentation.md)
 
 \
 **Hoe werd de actie opgezet?\

@@ -19,4 +19,4 @@ Leaseweb op jouw taken en e-mailings? Neem dan contact op met onze
 supportafdeling: [support@copernica.com](mailto:support@copernica.com).
 
 Meer informatie over de storing vind je ook op ons
-[liveblog](http://www.copernica.com/nl/blog/liveblog-gevolgen-storing-datacentrum-voor-copernica-en-gebruikers). 
+[liveblog](./live-blog-datacenter-power-outages-effects-on-copernicas-performance.md). 

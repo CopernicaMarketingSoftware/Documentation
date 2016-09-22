@@ -9,8 +9,7 @@ onafhankelijk adviseur helpt hij merken verder bij het verbeteren van
 hun e-mailstrategie. In Nederland doet hij dat onder andere voor
 Unilever en de Bijenkorf.
 
-Van Rijn zijn sessie op het [Copernica
-Summit](https://www.copernica.com/nl/copernica-summit/copernica-summit)
+Van Rijn zijn sessie op het [Copernica Summit](./copernica-summit.md)
 vindt plaats in het Engels, en gaat over lessen die e-mailmarketeers
 kunnen leren van bedrijven in het buitenland. ‘De meest succesvolle
 internationale verzenders gebruiken het e-mailkanaal als een vliegwiel,’
@@ -53,8 +52,7 @@ uiteindelijke doel mist.’
 Consistente boodschap
 ---------------------
 
-In zijn sessie op het [Copernica
-Summit](https://www.copernica.com/nl/copernica-summit/copernica-summit)
+In zijn sessie op het [Copernica Summit](./copernica-summit.md)
 gaat Van Rijn ook in op e-mailmarketing in combinatie met andere
 kanalen. ‘Het is een algemeen misverstand om te denken dat je op alle
 kanalen, bijvoorbeeld tv, social en e-mail, dezelfde boodschap moet

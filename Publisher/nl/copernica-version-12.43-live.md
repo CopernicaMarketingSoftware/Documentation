@@ -18,7 +18,7 @@ Dit geldt alleen voor gebruikers die gebruikmaken van de domeinnaam
 publisher.copernica.com. Wij adviseren partners en bureaus die Copernica
 aanbieden via hun eigen domeinnaam (publisher.bureanaam.com
 bijvoorbeeld) een [SSL-certificaat aan te
-vragen](http://www.copernica.com/nl/over-ons/nieuws/copernica-stapt-over-naar-https-en-adviseert-jou-hetzelfde-te-doen) en
+vragen](./copernica-switches-to-https-and-advises-you-to-do-the-same.md) en
 het ons toe te zenden om hun verbinding met de applicatie te
 beveiligen.\
 \
@@ -29,7 +29,7 @@ een [favicon.ico](http://nl.wikipedia.org/wiki/Favicon) toe te voegen. \
 \
 **Scripting\
 **Vanaf versie 12.43 [stapt Copernica
-over](http://www.copernica.com/nl/over-ons/nieuws/belangrijk-nieuws-over-geavanceerde-javascript-condities) van
+over](./important-news-for-everyone-that-uses-advanced-javascript-conditions.md) van
 de javascript-engine Spidermonkey naar Chrome  V8. Dit is alleen van
 invloed op gebruiker die geavanceerde javascripts toe te passen. Onze
 support-afdeling neemt contact met hen op.

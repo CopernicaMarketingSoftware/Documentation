@@ -24,11 +24,11 @@ Openstaande Vacatures
 -   [HR IT
     Recruiter](https://www.copernica.com/nl/about-us/jobs/vacature-hr-it-recruiter)
 -   [Backend
-    developers](https://www.copernica.com/nl/vacatures/vacature-back-end-developer-in-amsterdam)
+    developers](./vacancy-back-end-developers-in-amsterdam.md)
 -   [Frontend design and
-    development](https://www.copernica.com/nl/vacatures/vacature-front-end-designer-developer-in-amsterdam)
+    development](./vacancy-front-end-designer-developer-in-amsterdam.md)
 -   [Product
-    Marketeer](https://www.copernica.com/nl/about-us/jobs/vacature-product-marketeer)
+    Marketeer](./vacancy-technical-product-manager-amsterdam.md)
 -   [Junior
     controller](https://www.copernica.com/nl/vacatures/vacature-junior-controller-in-amsterdam)
 -   [IT Sales

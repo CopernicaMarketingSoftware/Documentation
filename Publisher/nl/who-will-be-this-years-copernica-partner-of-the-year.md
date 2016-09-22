@@ -57,11 +57,11 @@ Duitsland, Belgie, Engeland en Frankrijk.
 
 Deze groei vertaalt zich ook in een sterkere inzet voor Copernica door
 onze partners. Er worden diverse
-[artikelen](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#gezamenlijke-content)
+[artikelen](./get-the-most-out-of-the-partner-license.md#gezamenlijke-content)
 geschreven samen met partners, [beurzen
-bezocht](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#beurzen)
+bezocht](./get-the-most-out-of-the-partner-license.md#beurzen)
 en [succesvolle
-seminars](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#seminar-organiseren)
+seminars](./get-the-most-out-of-the-partner-license.md#seminar-organiseren)
 georganiseerd. Allemaal initiatieven waarmee de partners hun
 betrokkenheid bij Copernica tonen en de passie om de software
 (inter)nationaal bekend te maken.
@@ -79,12 +79,12 @@ Deze top 50 van partners die in aanmerking komen voor de Partner of the
 Year award is een voorlopige lijst. De titel van Partner of the Year
 wordt namelijk bepaald aan de hand van verschillende factoren die ook
 staan [opgesomd op
-copernica.com](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie).
+copernica.com](./get-the-most-out-of-the-partner-license.md).
 Aan deze factoren zijn punten verbonden waarmee de uiteindelijke
 totaalscore wordt bepaald. Hoe hoger je scoort, hoe meer kans je maakt
 om uiteindelijk genomineerd te worden voor Partner of the Year.
 Daarnaast wordt ook gekeken of je je [als partner hebt
-geregistreerd](https://www.copernica.com/nl/partners/registreer-je-als-partner-van-copernica)
+geregistreerd](./register-as-copernica-partner.md)
 en voorkomt in het Copernica partnernetwerk.
 
 De factoren waarop we de Partner of the Year beoordelen zijn:
@@ -94,13 +94,13 @@ De factoren waarop we de Partner of the Year beoordelen zijn:
 -   Eigen inzet van Copernica
 -   Gezamenlijke marketingactiviteiten:
     -   [Deelname aan
-        beurzen](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#beurzen)
+        beurzen](./get-the-most-out-of-the-partner-license.md#beurzen)
     -   [Organiseren gezamenlijk
-        seminar](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#seminar-organiseren)
+        seminar](./get-the-most-out-of-the-partner-license.md#seminar-organiseren)
     -   [Schrijven gezamenlijke
-        artikelen](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#gezamenlijke-content)
+        artikelen](./get-the-most-out-of-the-partner-license.md#gezamenlijke-content)
     -   [Linkbuilding richting
-        copernica.com](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie#vermeld-het-partnership)
+        copernica.com](./get-the-most-out-of-the-partner-license.md#vermeld-het-partnership)
 -   Aantal gecertificeerde Copernica-gebruikers
 
 Op dit moment liggen de scores binnen de top 50 en zelfs tot de 70^e^

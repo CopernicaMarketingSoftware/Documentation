@@ -9,12 +9,12 @@ Krachtige functionaliteiten voor Verzekeringen
 ----------------------------------------------
 
 -   Informeer klanten via [automatische
-    e-mails](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    e-mails](./automate-your-campaigns.md)
     bij een wijziging van hun polis
 -   Stel klanten in staat schade te melden via zelf gemaakte
-    [webformulieren](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren)
+    [webformulieren](./various-types-of-web-forms.md)
 -   Herinner klanten via
-    [SMS](http://www.copernica.com/nl/functies/mobile/sms-bericht-verzenden)
+    [SMS](./sending-your-text-message.md)
     hoe lang ze nog hebben om hun verzekering aan te passen
 -   Zet krachtige
     [winbackcampagnes](http://www.copernica.com/nl/over-ons/nieuws/event-driven-e-mailcampagnes-gebruik-jij-ze-al)
@@ -29,7 +29,7 @@ Copernica is krachtige marketingsoftware voor\
 [webpagina's](http://www.copernica.com/nl/functies/webpaginas "webpagina's"),
 [mobile](http://www.copernica.com/nl/functies/mobile "mobile") &
 [automatische
-campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes "automatische campagnes").\
+campagnes](./automate-your-campaigns.md "automatische campagnes").\
 \
 [Test Copernica nu
 gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")

@@ -64,7 +64,7 @@ the page, document or template through its context menu. The same
 applies to stylesheets for surveys and feeds.
 
 Further reading: [Manage CSS stylesheet
-files](http://www.copernica.com/en/support/manage-css-stylesheet-files)
+files](./manage-css-stylesheet-files.md)
 
 ### Link your stylesheet to a template, document or web page
 

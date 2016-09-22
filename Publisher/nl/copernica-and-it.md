@@ -7,18 +7,18 @@ Krachtige functionaliteiten voor IT
 -----------------------------------
 
 -   Volg de aanvraag van je online
-    [PDF-brochures](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document)
+    [PDF-brochures](./create-your-personalized-pdf.md)
     op met gepersonaliseerde e-mailings
 -   Ontwikkel en beheer met Copernica eenvoudig je eigen
     [webpagina's](http://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas "webpagina's")
 -   Roep alle data en gegevens van klanten op via de [SOAP
     API](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie "SOAP API")
 -   Stel krachtige
-    [webformulieren](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren)
+    [webformulieren](./various-types-of-web-forms.md)
     op voor brochure-aanvragen en genereer nieuwe B2B leads
 -   Stel klanten in staat een online offerte aan te vragen en koppel
     hier direct een [automatische
-    opvolgcampagne](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    opvolgcampagne](./automate-your-campaigns.md)
     aan
 
 Wat onze gebruikers zeggen

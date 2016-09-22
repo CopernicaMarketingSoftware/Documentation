@@ -21,9 +21,9 @@ Krachtige functionaliteiten voor Fashion
 
 -   Stel eenvoudig up- en cross-sell campagnes op
 -   Stem je productaanbod af op [historische
-    aankoopdata](http://www.copernica.com/nl/functies/profielen/definieer-doelgroepen-met-selecties)
+    aankoopdata](./define-target-groups-with-selections.md)
 -   Volg
-    [automatisch](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    [automatisch](./automate-your-campaigns.md)
     online achtergelaten winkelwagentjes op met één of meerdere e-mails
 -   [Personaliseer je
     landingspagina's](http://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas)

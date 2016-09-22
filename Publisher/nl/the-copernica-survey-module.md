@@ -10,7 +10,7 @@ zijn terug te vinden in het linkeroverzicht.
 -   [Een nieuwe enquête
     maken](http://www.copernica.com/nl/ondersteuning/een-nieuwe-enquete-maken)
 -   [Vraag toevoegen: open vragen, meerkeuzevragen, gridvragen en
-    tussenteksten](http://www.copernica.com/nl/ondersteuning/enquetevraag-toevoegen-vraagtypes-en-extra-opties)
+    tussenteksten](./survey-question-types-and-their-options.md)
 -   [Enquêtevragen verwijderen, bewerken of
     verplaatsen](http://www.copernica.com/nl/ondersteuning/enquetevragen-verwijderen-bewerken-of-verplaatsen)
 -   [De enquête bedanktpagina
@@ -40,7 +40,7 @@ niet mogelijk om een enquête te e-mailen.
 -   Enquête weer offline halen
 -   Aantal keer invullen per gebruiker beperken
 -   [Vanuit e-mailing naar enquête
-    linken](http://www.copernica.com/nl/ondersteuning/naar-webpagina-linken-vanuit-emailing)
+    linken](./linking-to-your-website-from-an-emailing.md)
 
 ### Enquête resultaten
 
@@ -63,7 +63,7 @@ enquêtes. Je bent vrij om deze aan te passen, zodat ze naadloos
 aansluiten bij jouw huisstijl of dat van een klant.
 
 -   [Eigen CSS of XSLT gebruiken voor
-    enquête](http://www.copernica.com/nl/ondersteuning/je-eigen-stylesheet-maken-en-gebruiken)
+    enquête](./creating-and-using-your-stylesheets.md)
 -   [Het hekje (\#) bij elke vraag
     verwijderen](https://www.copernica.com/nl/ondersteuning/het-hekje-bij-elke-vraag-verwijderen)
 

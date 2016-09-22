@@ -1,7 +1,7 @@
 [ISM eCompany](http://www.copernica.com/nl/partners/profile/4533916) is
 de nieuwe Copernica Partner of the Year 2013! Tijdens de vierde editie
 van het [Copernica
-Summit](http://www.copernica.com/nl/ondersteuning/copernica-summit) werd
+Summit](./copernica-summit.md) werd
 de tweede Copernica Partner of the Year award uitgereikt aan het full
 service ecommerce bureau uit Rotterdam.
 

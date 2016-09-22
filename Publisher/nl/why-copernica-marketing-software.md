@@ -95,22 +95,21 @@ systemen](Copernicacom/copernica-integrations-thumb.png)
 Copernica Marketing Software beschikt over een krachtige API op basis
 van het gestandaardiseerde communicatieprotocol SOAP. Hierdoor is het
 eenvoudig een
-[integratie](http://www.copernica.com/nl/ondersteuning/integraties) te
+[integratie](./integrations.md) te
 maken met diverse online systemen. Voor gebruikers van Copernica
 Marketing Software is standaard de integratie met
-[Litmus](http://www.copernica.com/nl/ondersteuning/integraties/litmus)
+[Litmus](./litmus.md)
 en Google Analytics beschikbaar in de software. Daarnaast zijn er
 verschillende integraties met populaire e-commerce platforms en
 CRM-systemen zoals
-[Magento](http://www.copernica.com/nl/ondersteuning/integraties/magento),
-[Hybris](http://www.copernica.com/nl/ondersteuning/integraties/hybris),
-[Drupal](http://www.copernica.com/nl/ondersteuning/integraties/drupal),
-[Exact](http://www.copernica.com/nl/ondersteuning/integraties/exact) en
-[Microsoft
-Dynamics](http://www.copernica.com/nl/ondersteuning/integraties/microsoft-dynamics-crm).
+[Magento](./magento.md),
+[Hybris](./hybris.md),
+[Drupal](./drupal.md),
+[Exact](./exact.md) en
+[Microsoft Dynamics](./microsoft-dynamics-crm.md).
 
 [Meer informatie over onze
-integraties](http://www.copernica.com/en/support/integrations "Meer informatie over onze integraties")
+integraties](./integrations.md "Meer informatie over onze integraties")
 
 \
 
@@ -127,7 +126,7 @@ dat moment bevat de selectie altijd de juiste gegevens.
 
 Copernica maakt gebruik van een 100% uniek datamodel. Binnen Copernica
 is het mogelijk [multidimensionale
-databases](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database)
+databases](./creating-your-own-databases.md)
 op te bouwen. Het voordeel van dit datamodel houdt in dat je met
 uitgebreide klantprofielen kan werken in plaats van losse adreslijsten.
 
@@ -181,7 +180,7 @@ deze gegevens in orde zijn. Binnen Copernica wordt nagekeken of je SPF,
 SenderID en DKIM in orde zijn.
 
 [Meer informatie over deliverability met
-Copernica](http://www.copernica.com/nl/over-ons/nieuws/deliverability-hogere-e-mailaflevering-met-copernica "Meer informatie over deliverability met Copernica")
+Copernica](./deliverability-better-email-delivery-with-copernica.md "Meer informatie over deliverability met Copernica")
 
 \
  [![Test Copernica nu
@@ -216,7 +215,7 @@ de gebruiker helpt om te acteren op gebeurtenissen. Vanzelfsprekend is
 Copernica support altijd aanwezig en monitort proactief de activiteiten
 vanuit de applicatie, met als doel de software en service op generieke
 wijze te verbeteren. Denk bijvoorbeeld aan de manier hoe Copernica
-[deliverability](http://www.copernica.com/nl/over-ons/nieuws/deliverability-hogere-e-mailaflevering-met-copernica)
+[deliverability](./deliverability-better-email-delivery-with-copernica.md)
 inzichtelijk maakt in de software.
 
 ### Wij ontwikkelen door!

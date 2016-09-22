@@ -139,8 +139,7 @@ contact op met [support@copernica.com.\
 ----------
 
 **9.30 uur - **Ingeroosterde mailings zijn vannacht op tijd verzonden.
-Taken zijn [volgens
-planning](http://www.copernica.com/nl/blog/gevolgen-stroomstoring-leaseweb-verholpen)
+Taken zijn [volgens planning](./issues-caused-by-power-outage-leaseweb-solved.md)
 uitgevoerd.
 
 **11.50 uur - **Wat ging er woensdagavond precies mis?

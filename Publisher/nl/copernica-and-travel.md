@@ -9,17 +9,17 @@ Krachtige functionaliteiten voor Travel
 ---------------------------------------
 
 -   Stem de inhoud van de
-    [e-mailing](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings)
+    [e-mailing](./create-clever-emailings.md)
     af op basis van interesses of eerdere vakanties
 -   Volg brochure-aanvragen
-    [automatisch](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    [automatisch](./automate-your-campaigns.md)
     op en verwijs naar de dichtstbijzijnde reisagent
 -   Stuur een week na terugkomst reizigers automatisch een e-mail waarin
     je vraagt hun vakantie te
     [beoordelen](http://www.copernica.com/nl/functies/webpaginas/enquetes)
 -   Hou reizigers op de hoogte van het weer, uitgaanstips of nuttige
     informatie op de plek van bestemming via e-mail of
-    [SMS](http://www.copernica.com/nl/functies/mobile/maak-je-eigen-sms-bericht)
+    [SMS](./create-your-text-message.md)
 -   Gebruik eerdere vakanties, vakantievoorkeuren (zomer, winter,
     strand, actief, etc.) om je klanten een nieuw relevant aanbod te
     bieden
@@ -42,7 +42,7 @@ Copernica is krachtige marketingsoftware voor
 [webpagina's](http://www.copernica.com/nl/functies/webpaginas "webpagina's"),
 [mobile](http://www.copernica.com/nl/functies/mobile "mobile") &
 [automatische
-campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes "automatische campagnes").\
+campagnes](./automate-your-campaigns.md "automatische campagnes").\
 \
 [Test Copernica nu
 gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")

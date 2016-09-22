@@ -17,7 +17,7 @@ voor marketing doeleinden. Ook reeds eigen opgezette member-structuren
 eenvoudig worden meegenomen, waarna de nieuwe toevoegingen direct naar
 Copernica zullen worden gesynchroniseerd. De koppeling is eenvoudig te
 installeren en als package beschikbaar op onder andere
-[www.copernica.com](http://www.copernica.com/nl/ondersteuning/integraties/umbraco).
+[www.copernica.com](./umbraco.md).
  
 
 **Over Umbraco:**

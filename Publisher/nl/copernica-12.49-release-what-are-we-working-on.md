@@ -44,7 +44,7 @@ dus veel voordelen. **\
 ** Die speelt op bij het repareren van de html. Veel gebruikers van
 Copernica hebben fouten in hun html-documenten staan, vooral bij
 ingewikkelde
-[personalisaties](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-mailings)
+[personalisaties](./create-clever-emailings.md)
 . Hoewel het repareren van deze fouten in de meeste gevallen grote
 voordelen oplevert, zorgt het er bij een klein aantal mailings voor dat
 de documenten er anders uit komen te zien. Dat is natuurlijk niet de

@@ -56,7 +56,7 @@ Express, Gmail, Hotmail, maar ook steeds vaker op de smartphone.
     in het voordeel van de afbeeldingen.
 
 We hebben een speciaal artikel voor de [HTML richtlijnen in
-e-mailmarketing](http://www.copernica.com/nl/ondersteuning/html-richtlijnen-voor-e-mail-template-design).
+e-mailmarketing](./html-email-template-design-guidelines.md).
 
 Toevoegen van inhoudsblokken
 ----------------------------
@@ -78,7 +78,7 @@ beknopte HTML editor.
 De tag: **[text name="artikel"]**
 
 [Volledige artikel over tekstblokken en de extra
-opties](http://www.copernica.com/nl/ondersteuning/template-blokken-het-tekstblok)
+opties](./the-text-function-for-adding-textual-content-to-your-document.md)
 
 ### Afbeeldingblok
 
@@ -89,7 +89,7 @@ plek een afbeelding uploaden, en deze bijvoorbeeld aanklikbaar maken.
 de tag: **[image name="foto"]**
 
 [Volledige artikel over afbeeldingblokken en de extra
-opties](http://www.copernica.com/nl/ondersteuning/template-blokken-de-afbeelding-tag)
+opties](./the-image-function-for-adding-images-to-your-document.md)
 
 ### Loop blok
 
@@ -143,7 +143,7 @@ Webversie toevoegen
 -------------------
 
 Met behulp van de [webversie
-tag](https://www.copernica.com/nl/ondersteuning/linken-naar-de-webversie-van-een-e-mail)
+tag](./link-to-the-webversion-of-your-email.md)
 stuur je snel en gemakkelijk een webversie mee van de nieuwsbrief. De
 webversie biedt uitkomst voor ontvanger die de HTML nieuwsbrief niet
 goed kan lezen in zijn of haar e-mailprogramma.
@@ -197,9 +197,9 @@ verschillende opmaak te tonen.
 `{if $Geslacht == "man"}Iets van HTML code{else}Andere HTML code{/if}`
 
 -   [Meer over
-    personalisatie](https://www.copernica.com/nl/ondersteuning/de-basisbeginselen-van-smarty-personalisatie)
+    personalisatie](./what-is-personalization.md)
 -   [Slimme persoonlijke aanhef met
-    smarty](https://www.copernica.com/nl/ondersteuning/persoonlijke-aanhef-maken)
+    smarty](./personalized-salutation-in-email-using-smarty-code.md)
 
 Template importeren
 -------------------
@@ -238,4 +238,4 @@ Andere zaken van bijzonder groot nut
 
 Toon bepaalde content alleen in de email of in de webversie met de
 [{mailonly} en
-{webonly}](http://www.copernica.com/nl/ondersteuning/de-webonly-en-mailonly-functies)tags.
+{webonly}](./the-webonly-and-mailonly-functions.md)tags.

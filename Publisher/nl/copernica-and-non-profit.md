@@ -22,7 +22,7 @@ Krachtige functionaliteiten voor Non-profit
     met Copernica voor je inzamelacties
 -   Genereer extra aandacht voor je goede doel en verstuur naast
     e-mailings ook [gepersonaliseerde
-    brieven](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document)
+    brieven](./create-your-personalized-pdf.md)
     per post
 
 > "Met Copernica hebben we een grote stap vooruit genomen wat betreft

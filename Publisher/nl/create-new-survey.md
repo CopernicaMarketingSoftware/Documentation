@@ -26,7 +26,7 @@ Vragen toevoegen aan de enquête
 
 Je kan binnen de enquête gebruik maken van [open vragen,
 meerkeuzevragen, gridvragen en
-tussenteksten](http://www.copernica.com/nl/ondersteuning/enquetevraag-toevoegen-vraagtypes-en-extra-opties)
+tussenteksten](./survey-question-types-and-their-options.md)
 (wat niet echt een vraag is natuurlijk).
 
 1.  Kies in het enquête menu voor *Vraag toevoegen...*

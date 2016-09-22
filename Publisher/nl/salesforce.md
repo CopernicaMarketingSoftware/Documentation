@@ -19,14 +19,14 @@ De kracht van de Copernica-Salesforce integratie
     vanuit Salesforce
 -   Maak slim gebruik van je campagneresultaten: verrijk je profielen en
     [baken je
-    doelgroepen](https://www.copernica.com/nl/functies/definieer-doelgroepen-met-selecties)
+    doelgroepen](./define-target-groups-with-selections.md)
     nog beter af
 -   Maak gebruik van relevante en gepersonaliseerde
     [e-mailcampagnes](https://www.copernica.com/nl/blog/event-driven-e-mailcampagnes-gebruik-jij-ze-al)
     om een betere betrokkenheid met je klanten op te bouwen
 -   Bespaar tijd, geld en verhoog je ROI door gebruik te maken van
     [marketing
-    automation](https://www.copernica.com/nl/blog/marketing-automation-met-manchester-united)
+    automation](./case-study-manchester-united.md)
     en [lead
     nurturing](https://www.copernica.com/nl/blog/4-redenen-waarom-lead-nurturing-in-2014-doorbreekt)
 -   Leer je klant nog beter kennen met behulp van persoonlijke en
@@ -43,7 +43,7 @@ en lead nurturing. Hieronder vind je een greep uit deze content:
 -   [4 redenen waarom lead nurturing in 2014
     doorbreekt](https://www.copernica.com/nl/blog/4-redenen-waarom-lead-nurturing-in-2014-doorbreekt)
 -   [Lead nurturing in de praktijk: Case Exact
-    Software](https://www.copernica.com/nl/blog/lead-nurturing-in-de-praktijk-case-exact-software)
+    Software](./lead-nurturing-in-real-life-business-case-exact-software.md)
 -   [2014; the year of marketing
     automation?](https://www.copernica.com/nl/blog/2014-the-year-of-marketing-automation)
 

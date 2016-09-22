@@ -46,12 +46,10 @@ invoegen.
 Volg onderstaande links voor de invoegcode voor het type content dat je
 wilt invoegen.
 
--   [Webformulieren](http://www.copernica.com/nl/ondersteuning/webformulier-op-webpagina-plaatsen)
+-   [Webformulieren](./publish-your-web-form.md)
 -   [Enquetes](http://www.copernica.com/nl/ondersteuning/enquete-in-webpagina-invoegen)
--   [Externe
-    HTML](http://www.copernica.com/nl/ondersteuning/the-fetch-tag-externe-html-invoegen)
--   [RSS or Atom
-    Feed](http://www.copernica.com/nl/ondersteuning/de-loadfeed-functie)
+-   [Externe HTML](./the-fetch-function.md)
+-   [RSS or Atom Feed](./the-loadfeed-function.md)
 
 **Let op:**webformulieren en enquetes kunnen niet worden ingevoegd in
 e-maildocumenten

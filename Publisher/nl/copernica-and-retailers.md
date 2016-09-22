@@ -7,17 +7,17 @@ Krachtige functionaliteiten voor Retailers
 ------------------------------------------
 
 -   Stimuleer je winkelbezoek en stuur je klanten een
-    [persoonlijke](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document "Personaliseer PDF-documenten")
+    [persoonlijke](./create-your-personalized-pdf.md "Personaliseer PDF-documenten")
     kortingsbon
 -   Nodig je [vaste
-    klanten](http://www.copernica.com/nl/functies/profielen/definieer-doelgroepen-met-selecties)
+    klanten](./define-target-groups-with-selections.md)
     uit voor een speciale verkoopavond alleen voor A-klanten
 -   Stem je aanbod af op basis van het koopgedrag van je klanten
 -   Stuur [gepersonaliseerde
-    PDF/E-coupons](http://www.copernica.com/nl/functies/print/maak-een-gepersonaliseerd-pdf-document)
+    PDF/E-coupons](./create-your-personalized-pdf.md)
     en nodig mensen uit in de winkel (scannen met kassasysteem)
 -   Creëer een loyaliteitsprogramma voor je winkel en [trigger de juiste
-    klanten](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes)
+    klanten](./automate-your-campaigns.md)
     op het juiste moment
 
 \
@@ -27,7 +27,7 @@ Copernica is krachtige marketingsoftware voor
 [webpagina's](http://www.copernica.com/nl/functies/webpaginas "webpagina's"),
 [mobile](http://www.copernica.com/nl/functies/mobile "mobile") &
 [automatische
-campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes "automatische campagnes").\
+campagnes](./automate-your-campaigns.md "automatische campagnes").\
 \
 [Test Copernica nu
 gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")

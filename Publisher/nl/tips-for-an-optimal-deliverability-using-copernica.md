@@ -24,10 +24,9 @@ Zorg dus voor een correcte instelling van je:
 
 -   Geldig afzenderadres: gebruik hier altijd een werkend e-mailadres.
     Vermijd het gebruik van een no-reply@adres.
--   [SPF](http://www.copernica.com/nl/over-ons/nieuws/spam-verminderen-met-behulp-van-spf)
--   [Sender
-    ID](http://www.copernica.com/nl/over-ons/nieuws/sender-id-hoe-werkt-het-precies)
--   [DKIM](http://www.copernica.com/nl/over-ons/nieuws/dkim-domainkey-identified-mail)
+-   [SPF](./what-is-sender-policy-framework-spf.md)
+-   [Sender ID](./sender-id-how-does-it-work.md)
+-   [DKIM](./dkim-domainkey-identified-mail.md)
 
 Reputatiemanagement
 -------------------
@@ -127,7 +126,7 @@ Andere mogelijkheden om de kwaliteit van je database op te bouwen, zijn:
     Hiermee ben je onder andere verzekerd van een optimale
     deliverability in meer dan 1,8 miljard inboxen wereldwijd. Je moet
     hiervoor wel aan enkele voorwaarden voldoen. [Lees ze
-    hier](http://www.copernica.com/nl/over-ons/nieuws/return-path-verbeterde-aflevering-en-vertrouwen).
+    hier](./return-path-improved-deliverability-and-trust.md).
 
 Contentmanagement
 -----------------
@@ -149,7 +148,7 @@ Copernica heeft verschillende checks ter beschikking waarmee je ziet:
 
 *Tools voor uitschrijfgedrag en abusemeldingen*
 
--   [Feedbackloops](http://www.copernica.com/nl/over-ons/nieuws/bouncemanagement-met-copernica)
+-   [Feedbackloops](./bounce-management-with-copernica.md)
     activeren: Veel ISP's zoals Yahoo, Hotmail of AOL bieden dit aan als
     dienst voor partijen die bulkmailings versturen. Via deze
     programma's is het mogelijk om te achterhalen wie de e-mailings als
@@ -159,7 +158,7 @@ Copernica heeft verschillende checks ter beschikking waarmee je ziet:
     schoon blijft en je e-mailreputatie geen schade oploopt.
 -   Unsubscribe header activeren: binnen Copernica kan je ook voor
     iedere e-mailing die je stuurt een [list-unsubscribe
-    header](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader)
+    header](./list-unsubscribe-header-a-reputation-improving-email-header.md)
     activeren. Deze tool maakt het voor je ontvanger makkelijker zich
     uit te schrijven voor je e-mailing. En verhoogt de deliverability
     van je mailing bij ISP’s die deze techniek ondersteunen.
@@ -183,7 +182,7 @@ Copernica heeft verschillende checks ter beschikking waarmee je ziet:
     adreslijst. Zo ben je zeker dat je e-mails altijd aankomen in de
     inbox.
 -   Goede
-    [preheader](http://www.copernica.com/nl/over-ons/nieuws/preheader-of-snippet-de-versterking-van-je-onderwerpregel)
+    [preheader](./pre-header-or-snippet-the-reinforcement-of-your-subject-line.md)
     toepassen: Maak gebruik van de preheader om je onderwerpregel kracht
     bij te zetten en de ontvanger te overtuigen jouw e-mail te openen.
 
