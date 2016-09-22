@@ -7,7 +7,7 @@ Database telefoonveld
 
 Voor het opslaan van mobiele telefoonnummers gebruik je een [database-
 of
-collectieveld](./database-en-collectie-veldtypes.md)
+collectieveld](./database-and-collection-field-types.md)
 van het type telefoonnummer -\> **SMS**
 
 ![](../images/telefoonveld-sms.png)
