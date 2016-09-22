@@ -1,5 +1,5 @@
 Door de vele enthousiaste reacties op de
-[aankondiging](https://www.copernica.com/nl/blog/copernica-werkt-aan-drag-and-drop-editor)
+[aankondiging](./copernica-working-on-drag-and-drop-editor.md)
 van de drag-and-drop editor hebben wij besloten om de testversie
 beschikbaar te stellen voor alle Copernica gebruikers. Zo kan iedereen
 die straks gemakkelijk e-mails in elkaar wil slepen, alvast oefenen met

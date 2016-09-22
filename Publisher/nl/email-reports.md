@@ -32,7 +32,7 @@ Foutmeldingen
 Copernica registreert ook alle foutmeldingen die tijdens het opstellen
 en verzenden van een e-mailing optreden. Dit is terug te zien binnen de
 e-mailstatistieken. Gebruik deze data bij het optimaliseren van de
-[deliverability](http://www.copernica.com/nl/ondersteuning/begrippenlijst/deliverability)
+[deliverability](./deliverability.md)
 van volgende e-mailings.\
 \
  Foutmeldingen kan je ook verwerken met behulp van een

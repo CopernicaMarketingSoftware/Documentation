@@ -1,6 +1,6 @@
 Copernica verzorgt regelmatig kennissessies en presentaties op diverse
 evenementen. Hierbij spreken [talentvolle sprekers van
-Copernica](https://www.copernica.com/nl/over-ons/onze-sprekers),
+Copernica](./our-speakers.md),
 [partners van
 Copernica](https://www.copernica.com/nl/ondersteuning/vind-een-partner)
 of enthousiaste gebruikers van Copernica Marketing Software. Hieronder

@@ -3,8 +3,7 @@ zijn niet meer merkbaar voor gebruikers van Copernica. Alle e-mailings
 worden weer volgens schema verstuurd en taken worden weer uitgevoerd als
 gebruikelijk.
 
-Een [technische
-fout](http://www.copernica.com/en/blog/outage-due-to-power-failure) bij
+Een [technische fout](./outage-due-to-power-failure.md) bij
 Leaseweb zorgde er woensdagavond om 23.45 uur voor dat ongeveer honderd
 van onze servers gisteravond zonder stroom zijn komen te zitten. Als
 gevolg hiervan zijn veel taken in Copernica niet uitgevoerd.

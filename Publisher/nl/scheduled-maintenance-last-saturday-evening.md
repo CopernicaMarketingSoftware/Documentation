@@ -14,7 +14,7 @@ die avond vanaf 18.00 uur geen e-mailings in te plannen.
 **Waarom dit onderhoud?**
 
 Vorige week vond er een
-[stroomstoring](http://www.copernica.com/nl/blog/liveblog-gevolgen-storing-datacentrum-voor-copernica-en-gebruikers)
+[stroomstoring](./live-blog-datacenter-power-outages-effects-on-copernicas-performance.md)
 plaats in ons datacentrum Leaseweb, die er voor zorgde dat Copernica
 Marketing Software de hele volgende dag niet goed werkte.
 

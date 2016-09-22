@@ -21,7 +21,7 @@ De kracht van de Copernica-Prestashop integratie
 -   Stimuleer je herhaalaankopen met behulp van
     [automatisering](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campagnes "automatiseer")
 -   [Alle data uit je webshop
-    gecentraliseerd](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database),
+    gecentraliseerd](./creating-your-own-databases.md),
     gesynchroniseerd en beschikbaar voor marketing doeleinden
 -   Automatiseer je gehele klantlevenscyclus
 

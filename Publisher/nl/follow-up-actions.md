@@ -1,5 +1,5 @@
 Binnen Copernica beschik je als gebruiker over de [follow-up
-manager](http://www.copernica.com/nl/ondersteuning/begrippenlijst/follow-up-manager),
+manager](./follow-up-manager.md),
 een handige tool waarmee je in slechts enkele stappen opvolgacties
 instelt. Binnen Copernica kan je binnen verschillende functies
 opvolgacties instellen. Namelijk:

@@ -1,7 +1,7 @@
 Foutieve e-mailadressen in je verzendlijst zijn funest voor je
 verzendreputatie. Ongeldige e-mailadressen zorgen immers voor een hoge
 bounce-rate, en worden in sommige gevallen gebruikt als
-[spamtrap](http://www.copernica.com/nl/over-ons/nieuws/denk-aan-je-e-mailreputatie-pas-op-voor-spamtraps).
+[spamtrap](./mind-your-email-reputation-watch-out-for-spam-traps.md).
 \
  \
  Neem daarom altijd maatregelen om te voorkomen dat deze in jouw
@@ -35,7 +35,7 @@ eindigen vaak op een verzendlijst als gevolg van
 Natuurlijk is dit lang niet altijd het geval, maar het kan geen kwaad de
 statistieken van deze adressen goed te monitoren, of te vragen hun
 [opt-in te
-bevestigen](http://www.copernica.com/nl/over-ons/nieuws/denk-aan-je-e-mailreputatie-pas-op-voor-spamtraps). 
+bevestigen](./mind-your-email-reputation-watch-out-for-spam-traps.md). 
 \
  \
  **Hoe te voorkomen:**Koop nooit lijsten met e-mailadressen van derde
@@ -88,7 +88,7 @@ bovenstaande zaken?
 ### Bekijk ook
 
 -   [Denk aan je e-mailreputatie, pas op voor
-    spamtraps](http://www.copernica.com/nl/over-ons/nieuws/denk-aan-je-e-mailreputatie-pas-op-voor-spamtraps "Denk aan je e-mailreputatie, pas op voor spamtraps")
+    spamtraps](./mind-your-email-reputation-watch-out-for-spam-traps.md "Denk aan je e-mailreputatie, pas op voor spamtraps")
 -   [De nieuwe Code E-mail: wat betekent dit voor
     mij?](http://www.copernica.com/nl/over-ons/nieuws/de-nieuwe-code-e-mail-wat-betekent-dit-voor-mij)
 -   [Opt-in & double opt-in: vraagt u om

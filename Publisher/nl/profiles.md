@@ -2,18 +2,18 @@ Copernica Marketing Software beschikt over dé oplossing voor het
 zelfstandig beheren van je eigen relaties. Maak je eigen databases en
 definieer zelf doelgroepen met behulp van selecties binnen Copernica.
 
--   [Maak je eigen database](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database "Maak je eigen database")
+-   [Maak je eigen database](./creating-your-own-databases.md "Maak je eigen database")
     ------------------------------------------------------------------------------------------------------------------------
 
     [![Maak je eigen
-    database](Copernicacom/nl-profiles-01-thumb.png "Maak je eigen database")](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database)
+    database](Copernicacom/nl-profiles-01-thumb.png "Maak je eigen database")](./creating-your-own-databases.md)
 
     Jij bepaalt welke gegevens je van je relaties opslaat en gebruikt
     voor je marketingcampagnes. Je bewaart het allemaal in je Copernica
     database.
 
     [Meer over het maken van je eigen
-    database](http://www.copernica.com/nl/functies/profielen/maak-je-eigen-database "Maak je eigen database")
+    database](./creating-your-own-databases.md "Maak je eigen database")
 
 -   [Definieer doelgroepen met selecties](http://www.copernica.com/nl/functies/definieer-doelgroepen-met-selecties "Definieer doelgroepen met selecties")
     -----------------------------------------------------------------------------------------------------------------------------------------------------

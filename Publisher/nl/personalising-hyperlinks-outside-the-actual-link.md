@@ -1,5 +1,4 @@
-In een [recente
-blogpost](https://www.copernica.com/nl/blog/nieuwe-tracking-links) heb
+In een [recente blogpost](./new-tracking-links.md) heb
 je kunnen lezen dat hyperlinks in e-mails niet langer worden vervangen
 met het *pic.vicinity* domein, en voortaan veel sterker lijken op het
 originele webadres.

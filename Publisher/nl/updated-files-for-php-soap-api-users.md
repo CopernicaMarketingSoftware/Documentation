@@ -1,7 +1,7 @@
 De PHP SOAP API-bestanden die we beschikbaar stellen voor gebruikers,
 zijn bijgewerkt nadat we in de vorige versie een fout ontdekten. Veel
 gebruikers zetten deze bestanden in om een [SOAP
-API-verbinding](http://www.copernica.com/nl/ondersteuning/soap-api-documentatie)
+API-verbinding](./soap-api-documentation.md)
 via PHP te maken met Copernica.
 
 De bijgewerkte bestanden met bugfix:

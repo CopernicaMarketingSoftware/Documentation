@@ -100,6 +100,6 @@ Artikel 10 {.title}
 
 Op deze Overeenkomst zijn de algemene voorwaarden van Copernica van
 toepassing. Deze voorwaarden kan je bekijken op het internetadres
-[www.copernica.com/nl/over-ons/algemene-voorwaarden](https://www-dev.copernica.com/nl/over-ons/algemene-voorwaarden)
+[www.copernica.com/nl/over-ons/algemene-voorwaarden](./terms-of-service.md)
 . Opdrachtgever kan Copernica BV verzoeken deze algemene voorwaarden
 schriftelijk te verstrekken.

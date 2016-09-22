@@ -6,7 +6,7 @@ volgorde ophalen, aan de hand van de waarde in een specifiek database of
 collectieveld.
 
 Je doet dit door de optie als parameter toe te voegen aan de
-[loadprofile](https://www.copernica.com/nl/ondersteuning/de-loadprofile-en-loadsubprofile-functies)
+[loadprofile](./loadprofile-and-loadsubprofile.md)
 of loadsubprofile tag
 
 **{loadprofile orderby='\<veldnaam\> asc/desc'}**
@@ -45,7 +45,7 @@ automatisch oplopend gesorteerd op het veld ID.
 ### Meer lezen
 
 -   Meer lezen over de functies [loadprofile en
-    loadsubprofile](https://www.copernica.com/nl/ondersteuning/de-loadprofile-en-loadsubprofile-functies)
+    loadsubprofile](./loadprofile-and-loadsubprofile.md)
 -   Meer informatie over fruit:
     [http://nl.wikipedia.org/wiki/Fruit](http://nl.wikipedia.org/wiki/Fruit)
 

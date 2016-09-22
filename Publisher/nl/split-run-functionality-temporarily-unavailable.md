@@ -5,7 +5,7 @@ functionaliteit waarmee gebruikers split-run-tests kunnen uitvoeren.
 Deze nieuwe versie zal vele malen beter werken dan zijn voorganger.
 
 **Update:** De splitrunfunctionaliteit is [weer
-beschikbaar](https://www.copernica.com/nl/blog/splitrunfunctionaliteit-weer-beschikbaar).
+beschikbaar](./split-run-functionality-available-again.md).
 
 Het is nog niet bekend wanneer de nieuwe splitrunfunctie wordt
 gelanceerd. Tot die tijd is het echter niet mogelijk splitrunmailings in

@@ -4,7 +4,7 @@ dat een
 Een goede manier om je deliverability te onderhouden is het correct
 afhandelen van afmeldingen. Dit draagt trouwens niet alleen bij aan een
 goede
-[deliverability](http://www.copernica.com/nl/ondersteuning/begrippenlijst/deliverability),
+[deliverability](./deliverability.md),
 maar door je afmeldingen goed af te handelen onderhoud je ook de
 kwaliteit van je database en verzendlijst.
 

@@ -14,5 +14,5 @@ als normaal.
 
 Merk dat je selecties aan het begin van de middag nog steeds trager
 opbouwen? Neem dan contact op met onze medewerkers van
-[support-afdeling](http://www.copernica.com/nl/articles/ondersteuning) ,
+[support-afdeling](./support.md) ,
 zij helpen je graag verder.

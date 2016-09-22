@@ -31,8 +31,7 @@ Sender Domains
 --------------
 
 Om optimaal gebruik te kunnen maken van deze nieuwe tracking links,
-raden we aan om [“Sender
-Domains”](https://www.copernica.com/nl/blog/nieuwe-feature-sender-domains)
+raden we aan om [“Sender Domains”](./new-feature-sender-domains.md)
 te configureren. Voor elke hyperlink wordt namelijk gezocht naar een zo
 bijpassend mogelijk Sender Domain. Als er links in de mail verwijzen
 naar “www.example.com” en er is een “example.com” Sender Domain

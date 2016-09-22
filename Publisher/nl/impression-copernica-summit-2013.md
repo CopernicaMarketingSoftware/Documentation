@@ -2,7 +2,7 @@ Het Copernica Summit 2013 was een succes! Ruim 600 bezoekers waren op 17
 september 2013 aanwezig in het Media Plaza te Utrecht voor een
 inspirerende en interactieve dag. Bekijk hier vast de foto's van de dag.
 Wil je graag de dag herbeleven? Alle [presentaties staan
-online](http://www.copernica.com/nl/ondersteuning/copernica-summit/sprekers-copernica-summit)
+online](./speakers-copernica-summit.md)
 en daarnaast is er ook nog [het liveverslag van de
 dag](https://www.copernica.com/nl/blog/liveverslag-copernica-summit-2013).
 

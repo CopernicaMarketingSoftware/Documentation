@@ -3,7 +3,7 @@ tips worden aangedragen om optimale resultaten te halen uit je
 e-mailmarketing. Daar geef ik eens graag een andere draai aan. In deze
 blogpost benoem ik graag 5 dingen die je absoluut niet moet doen wanneer
 je aan de slag gaat met
-[e-mailmarketing](http://www.copernica.com/nl/over-ons/nieuws/drie-e-mailmarketingtips-voor-2013)!
+[e-mailmarketing](./three-crucial-email-marketing-tips-for-2013.md)!
 
 1. E-mails versturen met een onduidelijk afzendadres
 ----------------------------------------------------

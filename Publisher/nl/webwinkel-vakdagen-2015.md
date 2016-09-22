@@ -1,5 +1,5 @@
 [![Webwinkel
-Vakdagen](EventsNL/copernica-wwv2016.jpg)](https://www.copernica.com/nl/webwinkel-vakdagen/webwinkel-vakdagen-2016)
+Vakdagen](./webwinkel-vakdagen-2015.md)
 
 [Programma Webwinkel
 Vakdagen](https://www.copernica.com/nl/webwinkel-vakdagen/programma-webwinkel-vakdagen "Programma Webwinkel Vakdagen")

@@ -1,5 +1,5 @@
 Met [multidimensionale
-databases](http://www.copernica.com/nl/ondersteuning/personaliseren-met-behulp-van-multidimensionale-databases)
+databases](./personalizing-using-multi-dimensional-databases.md)
 kan je twee of meer databases aan elkaar koppelen. Voor de
 totstandbrenging van deze koppeling maak je een referentieveld aan in de
 database die je onderliggend wilt maken van de andere database.

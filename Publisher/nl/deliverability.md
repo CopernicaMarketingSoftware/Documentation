@@ -1,5 +1,5 @@
 Binnen Copernica beschik je over verschillende manieren om je
-[deliverability](http://www.copernica.com/nl/over-ons/nieuws/tips-voor-een-optimale-deliverability-met-copernica)
+[deliverability](./tips-for-an-optimal-deliverability-using-copernica.md)
 te optimaliseren. Zo ben je in staat je eigen authenticatiegegevens in
 te stellen voor een goede aflevering van je e-mails. Maar ook je
 [verzendinstellingen](http://www.copernica.com/nl/over-ons/nieuws/bouncemanagement-met-copernica)

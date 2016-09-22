@@ -3,7 +3,7 @@ er al een integratie voor is gemaakt die je gratis kan en mag gebruiken.
 
 Er zijn onder andere plugins voor integraties met Magento, Hybris,
 Facebook, Exact Software en nog veel meer. Bekijk onze volledige [lijst
-met integraties](https://www.copernica.com/nl/ondersteuning/integraties)
+met integraties](./integrations.md)
 
 ### Krachtige en uitgebreide SOAP API
 

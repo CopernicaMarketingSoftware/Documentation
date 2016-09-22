@@ -6,7 +6,7 @@ Dit zijn onder andere:
 -   Het aantal e-mails dat je verstuurt naar onbekenden
 -   Hoe relevant je bent oftewel het aantal geopende e-mails
 -   In hoeverre je e-mails naar
-    [spamtraps](http://www.copernica.com/nl/ondersteuning/begrippenlijst/spamtraps)
+    [spamtraps](./spam-traps.md)
     stuurt
 
 Wil je zelf je e-mailreputatie onderhouden? Dat kan. Via verschillende

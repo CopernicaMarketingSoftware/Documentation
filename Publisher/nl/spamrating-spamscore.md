@@ -10,7 +10,7 @@ punten:
     woorden in je e-mails
 -   Beperk het gebruik van afbeeldingen in je e-mails. Tenzij je
     beschikt over een goede
-    [e-mailreputatie](http://www.copernica.com/nl/over-ons/nieuws/e-mailreputatie-hoe-bouw-je-dit-op),
+    [e-mailreputatie](./how-to-build-up-your-email-reputation.md),
     gebruik je best de verhouding; een paragraaf tekst per afbeelding
 -   Gebruik correcte authenticatiegegevens
     ([SPF](http://www.copernica.com/nl/ondersteuning/begrippenlijst/spf),

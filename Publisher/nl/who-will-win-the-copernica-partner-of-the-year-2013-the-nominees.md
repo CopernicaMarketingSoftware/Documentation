@@ -2,7 +2,7 @@ Voor het tweede jaar op rij reikt Copernica Marketing Software met trots
 de Copernica Partner of the Year Award uit. Deze award is in het leven
 geroepen als extra erkenning voor bureaus die zich actief inzetten in
 hun rol als geregistreerd [partner van
-Copernica](https://www.copernica.com/nl/partners/haal-het-maximale-uit-de-partnerlicentie).
+Copernica](./get-the-most-out-of-the-partner-license.md).
 Bij de uitreiking van deze award wordt gekeken naar de inzet en omzet
 van Copernica partners gedurende het afgelopen jaar.
 
