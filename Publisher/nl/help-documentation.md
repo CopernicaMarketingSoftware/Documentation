@@ -3,7 +3,7 @@ informatie over de werking van een van onze functies? Gebruik dan onze
 helpdocumentatie om snel de nodige informatie te vinden.
 
 Naast de standaard helpdocumentatie beschikt Copernica nog over de
-speciale [**SOAP API documentatie**](./soap-api-documentatie.md "SOAP API Documentatie")
+speciale [**SOAP API documentatie**](./soap-api-documentation.md "SOAP API Documentatie")
 en [**REST API documentatie**](../en/the-copernica-rest-api.md "REST API Documentatie").
 Hierin vind je alle informatie die je nodig hebt, voor het koppelen van
 Copernica aan je eigen software via onze SOAP API en REST API.
@@ -23,8 +23,8 @@ Onderwerpen
 -   [Databasebeheer](./database-management.md)
 -   [Importeren en exporteren](./import-and-export.md)
 -   [Selecties en miniselecties](./selections-and-miniselections.md)
--   [Webformulieren](./webformulieren.md "webformulieren maken en publiceren")
--   [Templates en documenten](./templates-en-documenten.md "Templates en documenten")
+-   [Webformulieren](./web-forms.md "webformulieren maken en publiceren")
+-   [Templates en documenten](./templates-and-documents.md "Templates en documenten")
 -   [Mailings verzenden](./sending-mailings.md)
 -   [Websites](./websites.md "websites")
 -   [Deliverability optimaliseren](./the-key-ingredients-for-a-good-deliverability.md)

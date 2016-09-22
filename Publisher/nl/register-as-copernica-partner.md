@@ -32,7 +32,7 @@ aanspreekpunt voor vragen en ondersteuning. Zolang deze koppeling actief
 is, ontvang je vanuit Copernica maar liefst 10% over alle omzet van deze
 gebruiker. Dit is nog maar één van [de vijf verdienmodellen van de
 Copernica
-partnerlicentie](./5-manieren-om-inkomsten-te-genereren.md "5 Verdienmodellen van de partnerlicentie")
+partnerlicentie](./5-ways-of-generating-turnover.md "5 Verdienmodellen van de partnerlicentie")
 .
 
 Vermeld het partnership op je website
@@ -40,7 +40,7 @@ Vermeld het partnership op je website
 
 Nadat je bent geregistreerd als Copernica partner heb je het recht om
 [het Copernica Registered partner
-logo](./mediabronnen.md "Mediabronnen")
+logo](./media-resources.md "Mediabronnen")
  op je website te plaatsen. Dit is niet enkel een kwaliteitskeurmerk,
 het linken van het logo naar je partnerprofiel op Copernica helpt je ook
 het meeste te halen uit ons partnership.

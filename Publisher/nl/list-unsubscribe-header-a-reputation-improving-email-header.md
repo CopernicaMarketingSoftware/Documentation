@@ -5,8 +5,8 @@ e-mailprogramma. Om als commerciële verzender deze functie in werking te
 zetten, voegt u een speciale header toe aan uw e-mailings, de zogenaamde
 list-unsubscribe header. Het voordeel als verzender is dat u minder
 spamklachten ontvangt en uw
-[deliverability](./deliverability-hogere-e-mailaflevering-met-copernica.md "Deliverability")
-en [e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md "E-mail reputatie")
+[deliverability](./deliverability-better-email-delivery-with-copernica.md "Deliverability")
+en [e-mailreputatie](./how-to-build-up-your-email-reputation.md "E-mail reputatie")
 verbetert.
 
 E-mail headers
@@ -73,7 +73,7 @@ list-unsubscribe header bij uw e-mail zien, waardoor zij eenvoudiger uw
 e-mail doorlaten naar de inbox. Het is een soort garantie dat u een
 legitieme verzender bent. En het maakt het eenvoudiger om uw reputatie
 te monitoren voor de waakhonden van het e-mailverkeer ([Return
-Path](./return-path-verbeterde-aflevering-en-vertrouwen.md "Return Path"),
+Path](./return-path-improved-deliverability-and-trust.md "Return Path"),
 Lashback, Listbox, e.a.).
 
 Vervanger van de afmeldlink
@@ -98,9 +98,9 @@ in al uw e-mailtemplates!
 ### Bekijk ook
 
 -   [Deliverability: hogere e-mailaflevering met
-    Copernica](./deliverability-hogere-e-mailaflevering-met-copernica.md "Deliverability: hogere e-mailaflevering met Copernica")
+    Copernica](./deliverability-better-email-delivery-with-copernica.md "Deliverability: hogere e-mailaflevering met Copernica")
 -   [E-mailreputatie: hoe bouw je dit
-    op?](./e-mailreputatie-hoe-bouw-je-dit-op.md "E-mailreputatie: hoe bouw je dit op?")
+    op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")
 -   [DKIM: DomainKey Identified
     Mail](./dkim-domainkey-identified-mail.md "DKIM: DomainKey Identified Mail")
 -   [Opt-out: Hou je klant niet

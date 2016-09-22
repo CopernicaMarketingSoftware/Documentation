@@ -15,9 +15,9 @@ De kracht van de EPiServer integraties
 --------------------------------------
 
 -   Gebruik al je klant - en ordergegevens vanuit EPiServer Commerce om
-    je [e-mailings te personaliseren](./maak-zelf-slimme-email-templates.md "Maak en personaliseer zelf e-mailings")
+    je [e-mailings te personaliseren](./create-clever-emailings.md "Maak en personaliseer zelf e-mailings")
 -   Automatische synchronisatie tussen de EPiServer en Copernica Marketing Software
--   Volg [verlaten winkelwagentjes](./automatiseer-je-campagnes.md "Automatiseer je campagnes")
+-   Volg [verlaten winkelwagentjes](./automate-your-campaigns.md "Automatiseer je campagnes")
     automatisch op per e-mail
 -   Stuur je trouwste klanten een persoonlijke kortingscode die ze kunnen gebruiken in je webshop
 -   Geschikt voor zowel CMS6 als CMS7

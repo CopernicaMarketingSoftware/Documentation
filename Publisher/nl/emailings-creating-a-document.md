@@ -34,5 +34,5 @@ Afzender en onderwerp instellen
 Je hebt nu een onderwerp en afzender ingesteld.
 
 -   **Vorige:** [Template aanmaken](./emailings-creating-a-new-template.md "Profielen: Template aanmaken")
--   **Volgende:** [Werken met contentblokken](./e-mailings-werken-met-contentblokken.md "Profielen: Werken met contentblokken")
+-   **Volgende:** [Werken met contentblokken](./emailings-using-content-blocks.md "Profielen: Werken met contentblokken")
 

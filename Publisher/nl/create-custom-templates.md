@@ -16,7 +16,7 @@ Met de template editor van Copernica ontwerp je eenvoudig je eigen
 templates of pas je bestaande email templates aan. Zodra je klaar bent
 met het ontwerp in HTML, voeg je één of meerdere contentblokken toe aan
 je e-mailing. Dit zijn blokken waarin je een tekst, afbeelding,
-[contentfeed](./gebruik-van-rss-of-atom-feed.md "RSS of ATOM feeds laden in template of document")
+[contentfeed](./rss-or-atom-feed.md "RSS of ATOM feeds laden in template of document")
 of externe HTML plaatst.
 
 Beschik je over wat HTML-kennis en wil je wat in de HTML-code van een

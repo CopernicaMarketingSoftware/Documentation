@@ -1,5 +1,5 @@
 Behalve de bestaande
-[integraties](./integraties.md "Integraties")
+[integraties](./integrations.md "Integraties")
 voor verschillende systemen, is het dankzij onze krachtige SOAP API ook
 mogelijk zelf een integratie met je eigen software te maken.
 Synchroniseer zo de gegevens vanuit Copernica met de gegevens uit jouw
@@ -41,10 +41,10 @@ objectmodel. Alle gegevens in de software worden door objecten
 gerepresenteerd. Lees de eigenschappen van deze objecten uit met behulp
 van de SOAP API en werk ze bij. De methodes zijn ook aan te roepen. Elk
 object is opgebouwd uit kleinere deelobjecten. Zo is een object dat een
-[database](./maak-je-eigen-database.md "Maak en beheer je eigen database(s)")
+[database](./creating-your-own-databases.md "Maak en beheer je eigen database(s)")
 representeert bijvoorbeeld opgebouwd uit objecten die de profielen
 representeren. Een object dat een
-[template](./ontwerp-je-eigen-email-templates.md "Ontwikkel je eigen dynamische templates")
+[template](./create-custom-templates.md "Ontwikkel je eigen dynamische templates")
 omvat, heeft een methode waarmee je alle documenten opvraagt die op
 basis van dit template zijn aangemaakt.
 
@@ -62,7 +62,7 @@ Vernieuwd callback-systeem
 
 Door het synchroniseren van gegevens tussen Copernica en de externe
 applicatie, hoef je niet telkens handmatig nieuwe data te
-[importeren](./importeer-en-exporteer-data.md "Importeer en exporteer gegevens")
+[importeren](./import-and-export-data.md "Importeer en exporteer gegevens")
 in Copernica en vice versa. De beide systemen lopen automatisch
 synchroon. Stel met Copernica gemakkelijk callback URL's in. Hierdoor
 houdt Copernica de externe applicatie op de hoogte van wijzigingen in de

@@ -65,5 +65,5 @@ zichtbaar te laten zijn (‘Toon variabelen’) of het document
 gepersonaliseerd te tonen (‘Gepersonaliseerd’).
 
 -   **Vorige:** [Document aanmaken](./emailings-creating-a-document.md "E-mailings: Document aanmaken")
--   **Volgende:** [Personalisatie](./e-mailings-personalisatie.md "E-mailings: Personalisatie")
+-   **Volgende:** [Personalisatie](./emailings-adding-personalization.md "E-mailings: Personalisatie")
 

@@ -24,7 +24,7 @@ En dan nu versturen...
 -   [Het onderwerp en afzenderadres
     instellen](./editing-the-sender-and-subject-of-the-email-document.md)
 -   [Afzenderadres
-    personaliseren](./afzendadres-personaliseren.md "Afzenderadres personaliseren")
+    personaliseren](./personalise-sender-and-from-address.md "Afzenderadres personaliseren")
 -   [Een testmail
     versturen](./send-a-test-mail-or-test-mailing.md)
 -   [Bulkmailing

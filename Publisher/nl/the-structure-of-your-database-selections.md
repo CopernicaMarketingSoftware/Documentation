@@ -91,7 +91,7 @@ van de soft bounces en inactieve te agressief zijn.
     .
 -   Hoewel Copernica automatisch indieners van een spamklacht
     uitschrijft als je dit [juist hebt
-    ingesteld](./uitschrijfgedrag-instellen-op-database-of-collectie.md "Uitschrijfgedrag instellen op database of collectie")
+    ingesteld](./setting-unsubscribe-behaviour-for-your-database-or-collection.md "Uitschrijfgedrag instellen op database of collectie")
     , is het advies om ook een selectie te maken van de klagers. Deze
     selectie kan jou namelijk informatie geven of je wel op een juiste
     manier je opt-ins hebt gegenereerd of dat je jouw inschrijvers op

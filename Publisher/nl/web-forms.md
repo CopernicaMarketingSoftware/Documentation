@@ -9,7 +9,7 @@ evenement, of een afmeldformulier voor je e-mailcampagnes.
 -   [De werking van een webformulier
     instellen](./the-content-web-form-behaviour-wizard.md)
 -   [Veelgemaakte fout bij het instellen van een
-    webformulier](./veelgemaakte-fout-bij-instellen-webformulier.md "Veelgemaakte fout bij instellen webformulier")
+    webformulier](./frequently-made-errors-in-configuration-of-webforms.md "Veelgemaakte fout bij instellen webformulier")
 -   [Webformulier verzendknop tekst
     aanpassen](./specify-web-form-submit-button-text.md)
 -   [Gebruik van smarty personalisatie in

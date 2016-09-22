@@ -6,7 +6,7 @@ nieuwsbrief tot automatische email opvolgtrajecten met marketing
 automation; met de email marketing software van Copernica kan het
 allemaal.
 
--   [Maak zelf slimme email templates](./maak-zelf-slimme-email-templates.md "Maak zelf slimme email templates")
+-   [Maak zelf slimme email templates](./create-clever-emailings.md "Maak zelf slimme email templates")
     --------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Maak zelf email
@@ -18,7 +18,7 @@ allemaal.
     [Meer over het maken van persoonlijke email
     campagnes](./create-clever-emailings.md "Maak zelf slimme e-mailings")
 
--   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "E-mailtemplates ontwerpen")
+-   [Ontwerp je eigen templates](./create-custom-templates.md "E-mailtemplates ontwerpen")
     ------------------------------------------------------------------------------------------------------------------------------------
 
     [![E-mailtemplates

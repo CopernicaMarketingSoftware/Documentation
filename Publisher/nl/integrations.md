@@ -55,7 +55,7 @@ onze website dan goed in de gaten voor mogelijke updates.\
     en Copernica te synchroniseren.
 
     [Meer over de
-    Shopware-integratie](./shopware-integratie.md "Shopware-integratie")
+    Shopware-integratie](./shopware.md "Shopware-integratie")
 
 -   ### Lightspeed
 
@@ -270,7 +270,7 @@ onze website dan goed in de gaten voor mogelijke updates.\
 ### Zelf een integratie ontwikkeld?
 
 Ben je [partner van
-Copernica](./registreer-je-als-partner-van-copernica.md "Copernica-partner")
+Copernica](./register-as-copernica-partner.md "Copernica-partner")
 en heb je een eigen integratie ontwikkeld of wil je dit graag doen?
 Breng ons zeker op de hoogte zodat we jouw integratie ook in onze lijst
 kunnen opnemen.

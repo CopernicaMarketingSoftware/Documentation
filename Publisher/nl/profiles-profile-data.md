@@ -43,6 +43,6 @@ Enquêtes
 Alle resultaten van enquêtes die zijn ingevuld door dit profiel.
 
 -   **Vorige:** [Profielen en subprofielen
-    aanmaken](./profielen-profielen-en-subprofielen-aanmaken.md "Profielen: Profielen en subprofielen aanmaken")
--   **Volgende:** [Selecties](./profielen-selecties.md "Profielen: Selecties")
+    aanmaken](./profiles-adding-profiles-and-subprofiles.md "Profielen: Profielen en subprofielen aanmaken")
+-   **Volgende:** [Selecties](./profiles-selections.md "Profielen: Selecties")
 

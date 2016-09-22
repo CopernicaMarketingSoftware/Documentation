@@ -41,5 +41,5 @@ velden aanmaken waarin je informatie kunt opslaan:
 -   **Vorige:** [Velden
     aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
 -   **Volgende:** [Profielen en subprofielen
-    aanmaken](./profielen-profielen-en-subprofielen-aanmaken.md "Profielen: Profielen en subprofielen aanmaken")
+    aanmaken](./profiles-adding-profiles-and-subprofiles.md "Profielen: Profielen en subprofielen aanmaken")
 

@@ -78,9 +78,9 @@ al te lang geleden zou ik een maximumbreedte van 590 tot 600px aanraden
 maar tijden veranderen, monitors worden steeds groter en men gebruikt
 steeds vaker de mobiele telefoon om een e-mail te lezen. Daarom is het
 ook belangrijk om je [e-mails klaar te stomen voor
-mobiel](./responsive-design-je-e-mails-klaarstomen-voor-mobile.md "e-mails klaar te stomen voor mobiel")
+mobiel](./responsive-design-preparing-your-emails-for-mobile.md "e-mails klaar te stomen voor mobiel")
 met behulp van responsive design. En altijd je [e-mail
-testen](./weergave-e-maildocument-testen-met-de-litmus-email-preview.md "e-mail testen")
+testen](./using-litmus-email-preview-to-test-your-email-newsletter.md "e-mail testen")
 als je niet zeker van je zaak bent.
 
 **Tip:** [Maak je eigen responsive HTML

@@ -18,12 +18,12 @@ Copernica partners helpen ook graag
 -----------------------------------
 
 Naast de ondersteuningstool beschikt Copernica ook over een uitgebreid
-[partnernetwerk](./haal-het-maximale-uit-de-partnerlicentie.md "Ondersteuning door onze partners").
+[partnernetwerk](./get-the-most-out-of-the-partner-license.md "Ondersteuning door onze partners").
 Vind de geschikte [Copernica
 partner](./vind-een-partner.md "Overzicht van Copernica partners")
 voor bijvoorbeeld het [maken van je eigen
 website](./maak-en-publiceer-je-eigen-webpaginas.md "Eigen website maken"),
 het geven van een training over Copernica of de ontwikkeling van een
-[integratie](./integraties.md "Copernica integraties")
+[integratie](./integrations.md "Copernica integraties")
 tussen Copernica en je webshop. Onze partners staan je graag met raad en
 daad te woord.

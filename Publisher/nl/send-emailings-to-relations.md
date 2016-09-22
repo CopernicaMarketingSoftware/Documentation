@@ -13,8 +13,8 @@ database](../images/nl-send-to-target-groups-copernica.gif)
 
 Bepaal allereerst naar wie je een e-mailing verzendt. Richt je de
 boodschap tot je volledige doelgroep of tot een
-[selectie](./definieer-doelgroepen-met-selecties.md "Definieer doelgroepen met selecties")
-uit je [database](./maak-je-eigen-database.md "Maak je eigen database")?
+[selectie](./define-target-groups-with-selections.md "Definieer doelgroepen met selecties")
+uit je [database](./creating-your-own-databases.md "Maak je eigen database")?
 Binnen Copernica pas je makkelijk segmentatie toe met behulp van
 selecties. Deel je verzendlijst op in kleinere relevante doelgroepen om
 een hogere respons uit je e-mailcampagnes te halen.
@@ -31,12 +31,12 @@ Verzend bijvoorbeeld dagelijks een verjaardagsmail of een wekelijkse
 nieuwsbrief met het laatste nieuws. Jij stelt het tijdstip van verzenden
 in plus de relaties die de e-mailing moeten ontvangen, Copernica doet de
 rest. Wist je dat je met Copernica ook [e-mailcampagnes automatisch kan
-verzenden](./automatiseer-je-campagnes.md "Automatiseer je campagnes")?
+verzenden](./automate-your-campaigns.md "Automatiseer je campagnes")?
 
 ### Een bijlage toevoegen?
 
 Voeg eenvoudig een bijlage toe aan je e-mailing. Dat kan om een
-[PDF-document](./maak-een-gepersonaliseerd-pdf-document.md "Maak een gepersonaliseerd PDF-document")
+[PDF-document](./create-your-personalized-pdf.md "Maak een gepersonaliseerd PDF-document")
 gaan dat je opmaakt in Copernica. Maar ook bestanden die niet in
 Copernica zijn aangemaakt, voeg je met één klik toe aan je e-mailings.
 
@@ -56,15 +56,15 @@ door de strenge spamfilters heen te komen. Zo kijkt de software of:
 -   Je als verzender niet voorkomt op een blacklist
 -   Je HTML broncode klopt
 -   Je authenticatiegegevens
-    ([SPF](./spam-verminderen-met-behulp-van-spf.md "SPF"),
-    [SenderID](./sender-id-hoe-werkt-het-precies.md "SenderID") &
+    (./what-is-sender-policy-framework-spf.md "SPF"),
+    [SenderID](./sender-id-how-does-it-work.md "SenderID") &
     [DKIM](./dkim-domainkey-identified-mail.md "DKIM")) correct zijn ingesteld
 
 Eén voor één hulpmiddelen die ervoor zorgen dat je e-mailing zijn
 eindbestemming bereikt.
 
 Helemaal zeker zijn van een goede aflevering? Vraag dan een [Return
-Path](./return-path-verbeterde-aflevering-en-vertrouwen.md "Return Path")
+Path](./return-path-improved-deliverability-and-trust.md "Return Path")
 Sender certificaat aan. Hiermee kom je op s'werelds grootste whitelist
 terecht en verbeter je de aflevering van je e-mailings in meer dan 1,8
 miljard inboxen wereldwijd.
@@ -93,7 +93,7 @@ enkele feedbackloop-programma's:
 ### List-unsubscribe header
 
 Met behulp van de [List-unsubscribe
-header](./list-unsubscribe-header-een-reputatieverbeterende-e-mailheader.md "List-unsubscribe header")
+header](./list-unsubscribe-header-a-reputation-improving-email-header.md "List-unsubscribe header")
 voeg je gemakkelijk een speciale uitschrijfknop toe aan je e-mailings.
 In geval van Windows Live vervangt deze functie zelfs de spamknop
 automatisch door een 'schrijf-mij-uit-knop'.

@@ -9,7 +9,7 @@ Relevante e-mails genereren de minste afmeldingen en de meeste respons,
 daarom wilt u weten welke content, vormgeving en presentatievorm uw
 doelgroep het beste waardeert. Hiervoor kunt u e-mailings testen met
 behulp van een
-[split-run](./split-run-test-enkele-praktische-tips.md "Split run test")
+[split-run](./split-run-test-some-practical-advice.md "Split run test")
 (A|B) test. Verstuur verschillende versies van uw e-mailing naar een
 beperkte doelgroepselectie, de e-mailing die het meeste succes boekt,
 verstuurt u dan in bulk naar de rest van de database.\
@@ -64,13 +64,13 @@ Een belangrijk hulpmiddel bij het optimaliseren van uw deliverability.
 Daarnaast controleren de Copernica mailservers continu of zij ervan
 verdacht worden spam uit te sturen. Voor deze controle staan de
 mailservers van Copernica in verbinding met een aantal organisaties die
-hierover waken [(Return Path](./return-path-verbeterde-aflevering-en-vertrouwen.md "Return Path"),
+hierover waken [(Return Path](./return-path-improved-deliverability-and-trust.md "Return Path"),
 Lashback, Listbox,e.a.).
 
 Verbeteren van e-mailreputatie
 ------------------------------
 
-Uw [e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md "Kennisartikel over e-mailreputatie")
+Uw [e-mailreputatie](./how-to-build-up-your-email-reputation.md "Kennisartikel over e-mailreputatie")
 is in hoge mate medebepalend voor de deliverability van uw
 e-mailcampagnes bij ontvangende mailservers. Wanneer u een e-mail
 verzendt, kunnen twee situaties zich voordoen:
@@ -120,7 +120,7 @@ Een andere methode die u kunt toepassen op uw commerciële e-mails is de
 list-unsubscribe header. Deze functie biedt de ontvanger de mogelijkheid
 in de header van de e-mail zich af te melden voor de ontvangen e-mail.
 
-De [list-unsubscribe header](./list-unsubscribe-header-een-reputatieverbeterende-e-mailheader.md "list-unsubscribe header")
+De [list-unsubscribe header](./list-unsubscribe-header-a-reputation-improving-email-header.md "list-unsubscribe header")
 bestaat uit extra informatie die wordt meegenomen in de e-mail. Dankzij
 deze informatie wordt er door de e-mailclient een uitschrijfknop getoond
 die in contact staat met de marketing software. Wanneer men op de knop
@@ -146,7 +146,7 @@ authentiek bent. Authenticatiegegevens die niet kloppen zullen daarom
 voor problematische aflevering van uw e-mailings zorgen. Via Copernica
 kunt u de volgende gegevens gemakkelijk aanmaken en controleren:
 
--   [SPF](./spam-verminderen-met-behulp-van-spf.md "SPF (Sender Framework Policy)")
--   [SenderID](./sender-id-hoe-werkt-het-precies.md "Sender ID")
+-   [SPF](./what-is-sender-policy-framework-spf.md "SPF (Sender Framework Policy)")
+-   [SenderID](./sender-id-how-does-it-work.md "Sender ID")
 -   [DKIM](./dkim-domainkey-identified-mail.md "DKIM")
 

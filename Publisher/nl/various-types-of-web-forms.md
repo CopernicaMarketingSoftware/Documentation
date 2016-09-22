@@ -3,7 +3,7 @@ ze meteen op je website. Met behulp van webformulieren maak je het
 relaties makkelijk om zich bijvoorbeeld snel in te schrijven voor je
 nieuwsbrief of webshop. Koppel je webformulier aan Copernica en sla
 ingevulde relatiegegevens direct op in je eigen Copernica
-[database](./maak-je-eigen-database.md "Je eigen database maken en beheren").
+[database](./creating-your-own-databases.md "Je eigen database maken en beheren").
 
 Welk type webformulier wil ik maken?
 ------------------------------------
@@ -14,7 +14,7 @@ maken?](../images/nl-verschillende-soorten-webformulieren-thumb.png "Welk type w
 Welk type webformulier je maakt, hangt af van je doelstelling. Met
 Copernica maak je verschillende webformulieren waarmee je snel en
 eenvoudig je eigen
-[database](./maak-je-eigen-database.md "Je eigen database maken en beheren")
+[database](./creating-your-own-databases.md "Je eigen database maken en beheren")
 aanvult.
 
 Denk daarbij bijvoorbeeld aan:
@@ -35,10 +35,10 @@ onder andere interesses, voorkeuren en andere gegevens te verzamelen.
 ### Afmeldformulier
 
 Een afmeldmogelijkheid voor je e-mailings is verplicht volgens de
-[wetgeving](./wetgeving.md "E-mail wetgeving").
+[wetgeving](./legislation.md "E-mail wetgeving").
 Een afmeldformulier is een vorm van double opt-out. Dat betekent dat een
 relatie de keuze heeft: direct uitschrijven of minder vaak je
-[e-mailings](./email-marketing-functionaliteiten.md "E-mailings")
+[e-mailings](./emailings.md "E-mailings")
 ontvangen.
 
 In enkele stappen naar een werkend webformulier

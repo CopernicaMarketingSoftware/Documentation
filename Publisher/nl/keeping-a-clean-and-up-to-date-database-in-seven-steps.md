@@ -2,8 +2,8 @@ Een schone en actuele database is de basis van een goede
 marketingcampagne. Het is belangrijk om te weten wie je wil benaderen en
 hoe. Bij het opmaken en personaliseren van bijvoorbeeld e-mailcampagnes
 wil je zeker zijn dat de gegevens die je gebruikt kloppen. Mede om je
-[deliverability](./deliverability-hogere-e-mailaflevering-met-copernica.md "Deliverability")
-en [e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md "E-mailreputatie")
+[deliverability](./deliverability-better-email-delivery-with-copernica.md "Deliverability")
+en [e-mailreputatie](./how-to-build-up-your-email-reputation.md "E-mailreputatie")
 hoog te houden.
 
 Hoe onderhoud je de database?
@@ -13,7 +13,7 @@ Hoe onderhoud je de database?
     hoef je ook maar op een plek te zoeken en updaten. Beschik je over
     een externe applicatie (bv. CRM)? Koppel deze dan aan je marketing
     software. Dan zijn je geüpdate gegevens ook makkelijker te
-    synchroniseren (m.b.v. [SOAP API](./soap-api-documentatie.md "Copernica SOAP API"))
+    synchroniseren (m.b.v. [SOAP API](./soap-api-documentation.md "Copernica SOAP API"))
     als deze op een centrale plek zijn opgeslagen.
 2.  Breng overzicht in je bestand door middel van duidelijke benamingen,
     tabbladen en definities van gegevens.\

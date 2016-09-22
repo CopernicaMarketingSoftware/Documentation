@@ -17,5 +17,5 @@ nog steeds gebruik maken van bepaalde smarty functies, zoals
 wilt opslaan in het profiel.
 
 **Let op:**De functies [linkfile en
-loadfile](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md "Linken naar bestanden van het profiel met loadfile en linkfile")
+loadfile](./the-loadfile-and-linkfile-functions.md "Linken naar bestanden van het profiel met loadfile en linkfile")
 kunnen niet worden gebruikt in een webformulier.

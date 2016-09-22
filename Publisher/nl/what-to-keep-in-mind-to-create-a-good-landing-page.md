@@ -111,7 +111,7 @@ variëren en bekijk de resultaten. Blijf op die manier continu
 optimaliseren.
 
 Houd met behulp van
-[websitestatistieken](./resultaten-van-je-webpagina.md "websitestatistieken")
+[websitestatistieken](./your-web-page-results.md "websitestatistieken")
 (via Google Analytics of je marketingsoftware) bij op welke pagina's
 binnen je website de meeste bezoekers binnen komen. Gebruik deze
 gegevens om je pagina's nog beter te optimaliseren.
@@ -121,5 +121,5 @@ Vond je dit interessant? Lees dan ook:
 
 -   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
 -   [Maak en publiceer je eigen webpagina’s](./maak-en-publiceer-je-eigen-webpaginas.md "Maak en publiceer je eigen webpagina’s")
--   [Resultaten van je webpagina](./resultaten-van-je-webpagina.md "Resultaten van je webpagina")
+-   [Resultaten van je webpagina](./your-web-page-results.md "Resultaten van je webpagina")
 

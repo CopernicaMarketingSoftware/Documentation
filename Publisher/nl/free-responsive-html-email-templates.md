@@ -1,7 +1,7 @@
 Op zoek naar design-inspiratie voor je volgende e-mailcampagnes? Bekijk
 deze prachtige HTML-e-mailtemplates, gemaakt door het team van Copernica
 Marketing Software. Deze jongens weten het een en ander over [HTML voor
-email (in het Engels)](./html-richtlijnen-voor-e-mail-herzien.md "html voor email").
+email (in het Engels)](./html-email-guidelines-revisited.md "html voor email").
 Maak je dus geen zorgen, deze e-mails werken in de populaire
 e-mailclients zoals Apple Mail, Gmail, Thunderbird en Outlook. O, en had
 ik al verteld dat deze templates geoptimaliseerd zijn voor mobiele

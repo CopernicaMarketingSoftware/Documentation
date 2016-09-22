@@ -13,23 +13,23 @@ Copernica](../images/nl-opvolgactie.png "Hou alles automatisch bij binnen Copern
 Geef binnen Copernica zelf aan wat er moet gebeuren met afmeldingen voor
 je nieuwsbrief, foutmeldingen of nieuwe inschrijvingen. Copernica kan
 alle wijzigingen automatisch voor je verwerken. Dat levert de nodige
-tijdswinst op en je [database](./maak-je-eigen-database.md "Maak je eigen databases")
+tijdswinst op en je [database](./creating-your-own-databases.md "Maak je eigen databases")
 blijft continu up-to-date. Met Copernica kan je daarom op verschillende
 manieren je profielen verrijken:
 
 -   Automatisch: Koppel de wijziging van een relatie in je database aan
-    een [opvolgactie](./automatiseer-je-campagnes.md "Automatiseer je campagnes met opvolgacties").
-    Hiervoor gebruik je de [follow-up manager](./automatiseer-je-campagnes.md "Followupmanager").
+    een [opvolgactie](./automate-your-campaigns.md "Automatiseer je campagnes met opvolgacties").
+    Hiervoor gebruik je de [follow-up manager](./automate-your-campaigns.md "Followupmanager").
     Stel bijvoorbeeld in dat bij registratie van een gekocht product, de
     relatie 1 dag later een e-mail met productinformatie ontvangt.
--   Met behulp van [webformulieren](./verschillende-soorten-webformulieren.md "Webformulieren maken") en
+-   Met behulp van [webformulieren](./various-types-of-web-forms.md "Webformulieren maken") en
     [enquêtes](./enquetes.md "Enquêtes")
     gekoppeld aan je database: de wat meer bekende manier van
     profielverrijking. Ingevulde gegevens die nog niet in je database
     stonden, worden zo automatisch opgeslagen.
 -   Aan de hand van e-mailcampagnes: ook resultaten van je
     e-mailcampagnes zoals een [event-driven
-    e-mailing](.//automatiseer-je-campagnes.md "Automatiseer je e-mailcampagnes")
+    e-mailing](./automate-your-campaigns.md "Automatiseer je e-mailcampagnes")
     sla je met Copernica op in je database.
 
 Profielverrijking via je externe applicatie
@@ -41,20 +41,20 @@ binnen Copernica te verrijken.
 
 ### Hoe?
 
--   [Exporteer](./importeer-en-exporteer-data.md "Importeer en exporteer gegevens")
+-   [Exporteer](./import-and-export-data.md "Importeer en exporteer gegevens")
     je relatiegegevens uit je externe applicatie naar een vaste locatie.
     Bijvoorbeeld een FTP-server. In Copernica kan in je instellen dat je
     op vaste tijdstippen automatische import uitvoert van deze gegevens.
     Zo hou je ook je relatiegegevens continue up-to-date.
 -   Gebruik één van onze vele
-    [integraties](./integraties.md "Integraties").
+    [integraties](./integrations.md "Integraties").
     Copernica heeft bijvoorbeeld generieke integraties voor
     [Magento](./magento.md "Magento integratie"),
     [Drupal](./drupal.md "Drupal integratie"),
     [Exact](./exact.md "Exact integratie")
     en nog veel meer.
 -   Door gebruik te maken van de [SOAP
-    API](./soap-api-documentatie.md "SOAP API documentatie")
+    API](./soap-api-documentation.md "SOAP API documentatie")
     van Copernica. Door beide systemen via de SOAP API te koppelen
     verloopt de uitwisseling van gegevens automatisch. Beide systemen
     houden elkaar op de hoogte en je bent verzekerd van continue

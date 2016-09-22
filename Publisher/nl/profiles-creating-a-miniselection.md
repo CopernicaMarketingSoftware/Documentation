@@ -46,5 +46,5 @@ Je hebt nu een miniselectie met condities aangemaakt!
 -   **Vorige:**
     [Selecties](./profiles-selections.md "Profielen: Selecties")
 -   **Volgende:** [Miniselectie op
-    selectieniveau](./profielen-miniselectie-op-selectieniveau.md "Profielen: Miniselectie op selectieniveau")
+    selectieniveau](./profiles-miniselection-on-selection-level.md "Profielen: Miniselectie op selectieniveau")
 

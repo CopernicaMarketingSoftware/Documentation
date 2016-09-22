@@ -34,5 +34,5 @@ Per collectie kan je meerdere subprofielen aanmaken.
 Hoppa! Je hebt succesvol een subprofiel aangemaakt.
 
 -   **Vorige:** [Collectie aanmaken](./profiles-adding-collections.md "Profielen: Collectie aanmaken")
--   **Volgende:** [Profielgegevens](./profielen-profielgegevens.md "Profielen: Profielgegevens")
+-   **Volgende:** [Profielgegevens](./profiles-profile-data.md "Profielen: Profielgegevens")
 

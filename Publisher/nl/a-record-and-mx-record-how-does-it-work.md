@@ -1,5 +1,5 @@
 Een MX-record (Mail exchange-record) is een type verwijzing in een
-Domain Name System ([DNS](./dns-gegevens-wat-zijn-dat.md "DNS")).
+Domain Name System (./dns-data-what-does-it-do.md "DNS")).
 Dit is het systeem dat onder andere aangeeft naar welk specifiek
 IP-adres e-mails moeten verzonden worden.
 

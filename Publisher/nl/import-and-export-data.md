@@ -1,10 +1,10 @@
 Gebruik je al een extern CRM-systeem of een ander pakket om je
 relatiegegevens op te slaan? Met de verschillende [integraties van
-Copernica](./integraties.md "integraties")
-of onze [SOAP API](./soap-api-documentatie.md "SOAP API")
+Copernica](./integrations.md "integraties")
+of onze [SOAP API](./soap-api-documentation.md "SOAP API")
 zet je gegevens van je huidige systeem makkelijk over naar Copernica. Of
 wil je graag aan je collega’s laten zien welke relaties hebben
-doorgeklikt in je laatste [e-mailing](./bekijk-gedetailleerde-e-mailstatistieken.md "e-mailing")?
+doorgeklikt in je laatste [e-mailing](./view-detailed-reports.md "e-mailing")?
 Exporteer dan de gewenste gegevens uit Copernica naar een overzichtelijk
 bestand voor verdere analyse.
 
@@ -44,7 +44,7 @@ Automatisch gegevens uitwisselen met SOAP API
 ---------------------------------------------
 
 Wist je dat je met de [SOAP
-API](./soap-api-documentatie.md "SOAP API")
+API](./soap-api-documentation.md "SOAP API")
 van Copernica automatisch de uitwisseling van gegevens laat verlopen
 tussen Copernica en je eigen CMS-, CRM-systeem of webshopplatform?
 Copernica beschikt over een krachtige SOAP API waarmee je vanuit je
@@ -55,4 +55,4 @@ Met de SOAP API synchroniseer je namelijk de gegevens tussen Copernica
 en je externe applicatie(s). Dat bespaart je de moeite van elke keer
 weer je data handmatig te importeren in Copernica en vice versa.
 [Meer weten over de SOAP API van
-Copernica?](./soap-api-documentatie.md "Meer weten over de SOAP API")
+Copernica?](./soap-api-documentation.md "Meer weten over de SOAP API")

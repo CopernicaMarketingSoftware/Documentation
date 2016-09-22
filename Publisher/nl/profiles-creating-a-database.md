@@ -15,5 +15,5 @@ Hey presto! In het linkeroverzicht is je zojuist gecreëerde database nu
 zichtbaar.
 
 -   **Volgende:** [Velden
-    aanmaken](./profielen-velden-aanmaken.md "Profielen: Velden aanmaken")
+    aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
 

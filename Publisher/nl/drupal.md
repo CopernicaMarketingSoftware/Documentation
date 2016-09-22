@@ -12,7 +12,7 @@ opzetten binnen Copernica.
 De kracht van de Drupal modules
 -------------------------------
 
--   Verzend [persoonlijke e-mailings](./maak-zelf-slimme-email-templates.md "Verzend slimme e-mailings")
+-   Verzend [persoonlijke e-mailings](./create-clever-emailings.md "Verzend slimme e-mailings")
     op basis van aankoopgedrag
 -   Stuur [abandoned shopcart
     campagnes](./5-tips-voor-extra-omzet-via-je-verlaten-winkelwagen-e-mail.md)

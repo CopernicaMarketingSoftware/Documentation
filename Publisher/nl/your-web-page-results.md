@@ -44,7 +44,7 @@ Integratie van Google Analytics
 Analytics](../images/nl-resultaten-van-je-webpagina-02-thumb.png "Integratie van Google Analytics")
 
 Copernica biedt zijn gebruikers gratis gebruik van de [integratie met
-Google Analytics](./hyperlinks-coderen-voor-google-analytics.md "Integratie met Google Analytics").
+Google Analytics](./encode-hyperlinks-for-google-analytics.md "Integratie met Google Analytics").
 Met behulp van deze integratie ben je in staat hyperlinks op je
 webpagina uit te breiden met extra gegevens voor gebruik in Google
 Analytics en Google Adwords.

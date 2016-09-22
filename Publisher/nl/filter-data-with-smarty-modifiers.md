@@ -21,7 +21,7 @@ Weergave van datums
 Dit filter biedt opmaak aan datumvelden in het document.
 
 Let op dat je de [taal van het
-document](./personalisatie-instellingen-van-het-template-of-document.md "Personalisatie-instellingen van het template of document")
+document](./document-and-template-personalization-settings.md "Personalisatie-instellingen van het template of document")
 instelt bij het gebruik van datum\_format, voor een juiste weergave van
 bijvoorbeeld de maand (deziembre vs. december).
 
@@ -280,7 +280,7 @@ zodat de adressering toch gewoon 'Pieter' zal zijn.
 Let op: Dubbel escapen kan tot ongewenste situaties leiden. Smarty
 personalisatie wordt door de applicatie automatisch gefilterd, tenzij je
 dit zelf hebt
-[uitgeschakeld](./personalisatie-instellingen-van-het-template-of-document.md "Personalisatie-instellingen van het template of document").
+[uitgeschakeld](./document-and-template-personalization-settings.md "Personalisatie-instellingen van het template of document").
 Gebruik het escape filter alleen als je het automatisch filteren hebt
 uitgeschakeld.
 

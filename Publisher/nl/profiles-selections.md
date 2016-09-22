@@ -71,5 +71,5 @@ profielen zichtbaar zijn.
 -   **Vorige:**
     [Profielgegevens](./profiles-profile-data.md "Profielen: Profielgegevens")
 -   **Volgende:** [Miniselectie
-    aanmaken](./profielen-miniselectie-aanmaken.md "Profielen: Miniselectie aanmaken")
+    aanmaken](./profiles-creating-a-miniselection.md "Profielen: Miniselectie aanmaken")
 

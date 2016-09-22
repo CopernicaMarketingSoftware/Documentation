@@ -81,5 +81,5 @@ Selecteer het veld dat je nodig hebt en klik ‘Opslaan’.
 -   **Vorige:** [Database
     aanmaken](./profiles-creating-a-database.md "Profielen: Databasebase aanmaken")
 -   **Volgende:** [Collectie
-    aanmaken](./profielen-collectie-aanmaken.md "Profielen: Collectie aanmaken")
+    aanmaken](./profiles-adding-collections.md "Profielen: Collectie aanmaken")
 

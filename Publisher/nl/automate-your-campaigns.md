@@ -1,9 +1,9 @@
 Copernica stelt je in staat volledig automatische campagnes te
-[verzenden](./verzenden-naar-je-doelgroep.md "E-mailings verzenden").
-Naast [e-mailings](./email-marketing-functionaliteiten.md "E-mailings versturen")
+[verzenden](./send-emailings-to-relations.md "E-mailings verzenden").
+Naast [e-mailings](./emailings.md "E-mailings versturen")
 stuur je ook automatisch en snel
-[SMS-berichten](./sms-bericht-verzenden.md "SMS berichten versturen")
-of [PDF-documenten](./maak-een-gepersonaliseerd-pdf-document.md "Gepersonaliseerde PDF-documenten")
+[SMS-berichten](./sending-your-text-message.md "SMS berichten versturen")
+of [PDF-documenten](./create-your-personalized-pdf.md "Gepersonaliseerde PDF-documenten")
 met Copernica. Met onze handige follow-up manager rooster je eenvoudig
 e-mailings in voor latere verzending. Benader iedere relatie zo met de
 juiste boodschap, op het juiste tijdstip via het juiste kanaal.
@@ -25,19 +25,19 @@ manager om te bepalen wat Copernica moet doen:
 -   Een relatie toont interesse voor een product door te klikken op een
     link in je e-mailing: gebruik de follow-up manager om de interesse
     automatisch in te vullen bij de relatie in je Copernica
-    [database](./maak-je-eigen-database.md "Het maken en beheren van je eigen databases").
+    [database](./creating-your-own-databases.md "Het maken en beheren van je eigen databases").
 -   Een relatie koopt een product in je webwinkel: gebruik de follow-up
     manager om automatisch een gepersonaliseerde productbrochure in
-    [PDF](./maak-een-gepersonaliseerd-pdf-document.md "PDF-documenten opmaken")
+    [PDF](./create-your-personalized-pdf.md "PDF-documenten opmaken")
     te sturen een week na aankoop.
 -   Een relatie heeft zijn persoonlijke gegevens gewijzigd: geef via de
     follow-up aan dat de relatie na de wijziging een
-    [e-mailing](./email-marketing-functionaliteiten.md "E-mailings")
+    [e-mailing](./emailings.md "E-mailings")
     moet krijgen met daarin zijn gewijzigde gegevens.
 -   Een relatie heeft zich net aangemeld voor je seminar van volgende
     maand: stel de follow-up manager in zodat de relatie een dag voor je
     seminar automatisch een reminder krijgt per
-    [SMS](./sms-bericht-verzenden.md "SMS bericht verzenden").
+    [SMS](./sending-your-text-message.md "SMS bericht verzenden").
 
 Automatisch je e-mailcampagnes verzenden
 ----------------------------------------
@@ -45,7 +45,7 @@ Automatisch je e-mailcampagnes verzenden
 ![Automatisch je e-mailcampagnes
 verzenden](../images/nl-automatisch.png "Automatisch je e-mailcampagnes verzenden")
 
-Alle [e-mailings](./email-marketing-functionaliteiten.md "E-mailings")
+Alle [e-mailings](./emailings.md "E-mailings")
 die je in Copernica maakt, kan je inroosteren voor latere verzending. En
 alle relatiegegevens die je opslaat in Copernica zijn te gebruiken als
 trigger voor je e-mailcampagne. Een recente aankoop, een nieuwe
@@ -67,7 +67,7 @@ bijvoorbeeld:
     weer in je product
 
 Net als alle andere e-mailings binnen Copernica,
-[personaliseer](./maak-zelf-slimme-email-templates.md "Zelf slimme e-mailings opmaken met Smarty personalisatie")
+[personaliseer](./create-clever-emailings.md "Zelf slimme e-mailings opmaken met Smarty personalisatie")
 je gemakkelijk event-driven e-mailcampagnes. Zo maak je jouw boodschap
 nog persoonlijker en relevanter.
 
@@ -75,8 +75,8 @@ E-mailings verzenden via SOAP API
 ---------------------------------
 
 Beschik je over een externe webshop, CMS- of ander CRM-systeem?
-Copernica beschikt over een krachtige [SOAP API](./soap-api-documentatie.md "Copernica SOAP API")
-en verschillende [integraties](./integraties.md "Copernica integraties")
+Copernica beschikt over een krachtige [SOAP API](./soap-api-documentation.md "Copernica SOAP API")
+en verschillende [integraties](./integrations.md "Copernica integraties")
 waarmee je gemakkelijk een koppeling legt tussen jouw systeem en
 Copernica. Dankzij de automatische synchronisatie tussen Copernica en
 jouw systeem kunnen wijzigingen in het externe systeem ook als trigger

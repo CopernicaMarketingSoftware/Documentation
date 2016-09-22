@@ -32,5 +32,5 @@ stappen.
     artikelen](./advanced-search-content-articles.md)
 -   Eigen CSS stylesheet of XSLT gebruiken voor je feed
 -   [Hoe je markdown gebruikt in
-    Copernica](./hoe-je-markdown-gebruikt-in-copernica.md "Hoe je markdown gebruikt in Copernica")
+    Copernica](./how-to-use-markdown-in-copernica.md "Hoe je markdown gebruikt in Copernica")
 

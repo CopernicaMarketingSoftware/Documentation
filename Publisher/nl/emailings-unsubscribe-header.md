@@ -1,7 +1,7 @@
 -   [Terug naar de video's](./videos.md "Video's")
 
 -   **Vorige:** [Document
-    controleren](./e-mailings-document-controleren.md "E-mailings: Document controleren")
+    controleren](./emailings-checking-your-document.md "E-mailings: Document controleren")
 -   **Volgende:**
-    [Testverzending](./e-mailings-testverzending.md "E-mailings: Testverzending")
+    [Testverzending](./emailings-sending-a-test-mail.md "E-mailings: Testverzending")
 

@@ -57,7 +57,7 @@ gebruikers en tarieven. Zodra een gebruiker jou als partner selecteert,
 ben je het eerste aanspreekpunt voor vragen en ondersteuning. Je
 ontvangt vanuit Copernica maar liefst 10% over alle omzet van deze
 gebruiker, zolang deze koppeling actief is. [Registreer je direct als
-partner van Copernica](./haal-het-maximale-uit-de-partnerlicentie.md "Registreer je als Copernica partner")
+partner van Copernica](./get-the-most-out-of-the-partner-license.md "Registreer je als Copernica partner")
 
 Diensten
 --------
@@ -85,14 +85,14 @@ bieden aanvullende diensten ook een aantrekkelijke manier om inkomsten
 te genereren. Start met werkzaamheden rondom de integratie en breid deze
 in de loop van de tijd uit naar andere projecten.
 
-Ontwikkel met de krachtige [SOAP API](./soap-api-documentatie.md "SOAP API")
+Ontwikkel met de krachtige [SOAP API](./soap-api-documentation.md "SOAP API")
 een integratie en profileer je op de speciale
-[integratiepagina](./integraties.md "Integraties").
+[integratiepagina](./integrations.md "Integraties").
 Profileer je vervolgens samen met Copernica binnen een specifieke
 doelgroep, bijvoorbeeld door het publiceren van [gezamenlijke
-artikelen](./haal-het-maximale-uit-de-partnerlicentie.md "Gezamenlijke artikelen publiceren")
+artikelen](./get-the-most-out-of-the-partner-license.md "Gezamenlijke artikelen publiceren")
 of het organiseren van een [gezamenlijk
-seminar](./haal-het-maximale-uit-de-partnerlicentie.md "Gezamenlijk seminar organiseren").
+seminar](./get-the-most-out-of-the-partner-license.md "Gezamenlijk seminar organiseren").
 
 De vijf manieren om inkomsten te genereren gevisualiseerd
 ---------------------------------------------------------

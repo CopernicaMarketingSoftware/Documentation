@@ -1,18 +1,18 @@
 Heb je een vraag over Copernica waar je meteen antwoord op wilt krijgen?
 Neem dan snel een kijkje in onze
-[helpdocumentatie](./helpdocumentatie.md "Helpdocumentatie").
+[helpdocumentatie](./help-documentation.md "Helpdocumentatie").
 
--   [Helpdocumentatie](./helpdocumentatie.md "Helpdocumentatie")
+-   [Helpdocumentatie](./help-documentation.md "Helpdocumentatie")
     -------------------------------------------------------------------------------------------------
 
-    [![Helpdocumentatie](../images/nl-support-helpdocumentation.png)](./helpdocumentatie.md "Helpdocumentatie")
+    [![Helpdocumentatie](../images/nl-support-helpdocumentation.png)](./help-documentation.md "Helpdocumentatie")
 
     Het kan gebeuren dat je tegen een vraag aanloopt waar je zelf niet
     uitkomt. Gebruik de helpdocumentatie om snel per functie de nodige
     informatie te vinden.
 
     [Bekijk onze
-    helpdocumentatie](./helpdocumentatie.md "Helpdocumentatie")
+    helpdocumentatie](./help-documentation.md "Helpdocumentatie")
 
 -   [Vind een partner](./vind-een-partner.md "Vind een partner")
     -------------------------------------------------------------------------------------------------
@@ -26,17 +26,17 @@ Neem dan snel een kijkje in onze
     [Meer over het vinden van een
     partner](./vind-een-partner.md "Vind een partner")
 
--   [Integraties](./integraties.md "Integraties")
+-   [Integraties](./integrations.md "Integraties")
     ----------------------------------------------------------------------------------
 
-    [![Integraties](../images/nl-support-integrations.png)](./integraties.md "Integraties")
+    [![Integraties](../images/nl-support-integrations.png)](./integrations.md "Integraties")
 
     Op zoek naar een integratie om jouw CMS, e-commerce of CRM software
     met Copernica te koppelen? Ontdek dan snel de verschillende
     integraties met Copernica.
 
     [Meer over integraties met
-    Copernica](./integraties.md "Integraties")
+    Copernica](./integrations.md "Integraties")
 
 -   [Video-tutorials](./videos.md "Videos")
     ----------------------------------------------------------------------------
@@ -50,28 +50,28 @@ Neem dan snel een kijkje in onze
     [Meer over
     video's](./videos.md "Videos")
 
--   [Evenementen](./evenementen.md "Evenementen")
+-   [Evenementen](./events.md "Evenementen")
     ----------------------------------------------------------------------------------
 
-    [![Evenementen](../images/nl-support-events.png)](./evenementen.md "Evenementen")
+    [![Evenementen](../images/nl-support-events.png)](./events.md "Evenementen")
 
     Wil je de marketingsoftware eens live ervaren? Neem een kijkje op
     onze kalender om te zien waar Copernica en zijn partners de komende
     tijd te zien zijn.
 
     [Meer over
-    evenementen](./evenementen.md "Evenementen")
+    evenementen](./events.md "Evenementen")
 
--   [Wetgeving](./wetgeving.md "Wetgeving")
+-   [Wetgeving](./legislation.md "Wetgeving")
     ----------------------------------------------------------------------------
 
-    [![Wetgeving](../images/nl-support-legislation.png)](./wetgeving.md "Wetgeving")
+    [![Wetgeving](../images/nl-support-legislation.png)](./legislation.md "Wetgeving")
 
     Leer hier meer over de huidige wetgeving en de code e-mail en ontdek
     wat wel en wat niet mag wanneer je aan de slag gaat met
     e-mailmarketing.
 
     [Meer over
-    wetgeving](./wetgeving.md "Wetgeving")
+    wetgeving](./legislation.md "Wetgeving")
 
 

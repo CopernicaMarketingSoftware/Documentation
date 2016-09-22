@@ -11,7 +11,7 @@ En met de wetenschap dat de helft van nieuwe  [Europese
 smartphones](http://www.emerce.nl/nieuws/helft-nieuwe-europese-smartphones-heeft-mobiel-internet?utm_source=rss&utm_medium=rss&utm_campaign=helft-nieuwe-europese-smartphones-heeft-mobiel-internet)
  ondertussen beschikt over mobiel internet, kan je de conclusie wel
 trekken: Als je 
-[e-mailmarketing](./email-marketing-functionaliteiten.md "e-mailmarketing")
+[e-mailmarketing](./emailings.md "e-mailmarketing")
  inzet, moet je rekening houden met je mobiele gebruikers.
  Maar hoe doe je dat dan? In eerste instantie moet je ervoor zorgen dat
 je e-mailcampagnes ook leesbaar zijn op mobiele apparaten. Enkele tips:

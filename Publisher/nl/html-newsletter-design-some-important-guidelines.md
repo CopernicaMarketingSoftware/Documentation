@@ -31,7 +31,7 @@ bevatten een eigen inline stijl moeten krijgen.
 
 Om het werk van de HTML designer makkelijker te maken, biedt Copernica
 Marketing Software een zeer [handige CSS
-inline-functie](./ontwerp-je-eigen-email-templates.md "handige CSS inline-functie").
+inline-functie](./create-custom-templates.md "handige CSS inline-functie").
 
 ![Inline CSS style voor e-mailnieuwsbrieven](../images/code-inline-style.png)
 
@@ -70,8 +70,8 @@ nieuwsbrief bovenaan te plaatsen.
 ### Bekijk ook
 
 -   [HTML-richtlijnen voor e-mail herzien] (./html-email-guidelines-revisited.md)
--   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "Ontwerp je eigen templates")
+-   [Ontwerp je eigen templates](./create-custom-templates.md "Ontwerp je eigen templates")
 -   [Responsive design: je e-mails klaarstomen voor
-    mobile](./responsive-design-je-e-mails-klaarstomen-voor-mobile.md "Responsive design: je e-mails klaarstomen voor mobile")
+    mobile](./responsive-design-preparing-your-emails-for-mobile.md "Responsive design: je e-mails klaarstomen voor mobile")
 -   [Gratis responsive HTML-e-mailtemplates](./free-responsive-html-email-templates.md)
 

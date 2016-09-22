@@ -23,7 +23,7 @@ e-mailadres, het geslacht en de naam.
 [Aanmaken database en adressen
 importeren](./setting-up-your-database-and-import-your-contacts.md)
 (lees ook hoe je een [importbestand kan
-maken](./een-importbestand-voorbereiden.md))
+maken](./the-requirements-for-a-well-formatted-import-file.md))
 
 **Aanmaken velden.** Het aanmaken van databasevelden kan via twee
 routes.

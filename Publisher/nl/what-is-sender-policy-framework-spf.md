@@ -1,7 +1,7 @@
 Een SPF (Sender Policy Framework) record (gedefinieerd in [RFC
 4408](http://www.openspf.org/Specifications "Open SPF specificaties"))
 is een record (meerbepaald een TXT-record) binnen de
-[DNS](./dns-gegevens-wat-zijn-dat.md "Kennisartikel over DNS")
+[DNS](./dns-data-what-does-it-do.md "Kennisartikel over DNS")
 gegevens van een domein. SPF heeft tot doel te helpen spam te
 verminderen. Het valideert het HELO-commando en het MAIL FROM adres van
 de verzendende mailserver (client).
