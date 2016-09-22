@@ -25,7 +25,7 @@ extra inkomsten.
     --------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![5 manieren om inkomsten te
-    genereren](Copernicacom/nl-partners-partner-license.png)](http://www.copernica.com/nl/partners/5-manieren-om-inkomsten-te-genereren "5 manieren om inkomsten te genereren")
+    genereren](../images/nl-partners-partner-license.png)](http://www.copernica.com/nl/partners/5-manieren-om-inkomsten-te-genereren "5 manieren om inkomsten te genereren")
 
     Met een Copernica partnerlicentie beschik je als bureau over vijf
     manieren om je omzet structureel te vergroten.\
@@ -38,7 +38,7 @@ extra inkomsten.
     --------------------------------------------------------------------------------------------------------------------
 
     [![Aanvragen van
-    partnertarieven](Copernicacom/nl-partners-partner-pricing.png)](http://www.copernica.com/nl/partners/vraag-partnerprijzen-aan "Aanvraag partnertarieven")
+    partnertarieven](../images/nl-partners-partner-pricing.png)](http://www.copernica.com/nl/partners/vraag-partnerprijzen-aan "Aanvraag partnertarieven")
 
     Wil je graag Copernica toevoegen aan jouw diensten? Vraag
     Copernica's partnertarieven aan door het achterliggende formulier in
@@ -51,7 +51,7 @@ extra inkomsten.
     -------------------------------------------------------------------------------------------------
 
     [![Vind een
-    partner](Copernicacom/en-support-find-a-partner.png)](http://www.copernica.com/nl/ondersteuning/vind-een-partner "Vind een partner")
+    partner](../images/en-support-find-a-partner.png)](http://www.copernica.com/nl/ondersteuning/vind-een-partner "Vind een partner")
 
     Als registered partner van Copernica krijg je een pagina op
     Copernica.com waar je jezelf kunt profileren richting Copernica

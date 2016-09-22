@@ -27,7 +27,7 @@ Wat onze gebruikers zeggen
 > "Wij zetten Copernica met succes in om continue in contact te blijven
 > met onze leden. Zo maken we graag gebruik van de handige enquêtetool
 > om de tevredenheid onder de restauranthouders te polsen."
-> ![](testimonials/rhiem.png)
+> ![](../images/rhiem.png)
 >
 > \
 > **RHIEM**\
@@ -35,7 +35,7 @@ Wat onze gebruikers zeggen
 
 > "Copernica stelt ons in staat om geavanceerde crossmediale direct
 > marketingcampagnes te definiëren, uit te voeren en te monitoren."
-> ![](testimonials/exact.png)
+> ![](../images/exact.png)
 >
 > \
 > **Exact**\

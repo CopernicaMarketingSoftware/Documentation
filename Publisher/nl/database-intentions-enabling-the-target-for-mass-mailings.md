@@ -6,7 +6,7 @@ dat mailings per ongeluk naar de verkeerde groep mensen wordt verstuurd.
 Je vindt deze functie in het *Databasebeheer*\>
 **Gebruiksmogelijkheden**
 
-![Database intentions](databaseintentions.png)
+![Database intentions](../images/databaseintentions.png)
 
 ### Opties zijn uitgeschakeld
 

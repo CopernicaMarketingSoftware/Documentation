@@ -44,7 +44,7 @@ Wat onze gebruikers zeggen
 > "Wij zetten Copernica met succes in om continue in contact te blijven
 > met onze leden. Zo maken we graag gebruik van de handige enquêtetool
 > om de tevredenheid onder de restauranthouders te polsen."
-> ![](testimonials/khn.png)
+> ![](../images/khn.png)
 >
 > \
 > **Koninklijke Horeca Nederland**\

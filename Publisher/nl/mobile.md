@@ -22,7 +22,7 @@ aan een e-mailing? Met Copernica kan het allemaal.
     ------------------------------------------------------------------------------------------------------------------
 
     [![SMS-bericht
-    verzenden](Copernicacom/nl-mobile-02-thumb.png)](./sms-bericht-verzenden.md "SMS-bericht verzenden")
+    verzenden](../images/nl-mobile-02-thumb.png)](./sms-bericht-verzenden.md "SMS-bericht verzenden")
 
     Met Copernica verzend je eenvoudig een SMS-bericht. Rooster het
     bericht in als je liever op een later tijdstip verzendt of maak er

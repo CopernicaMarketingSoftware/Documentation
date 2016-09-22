@@ -45,7 +45,7 @@ Wat onze gebruikers zeggen
 
 > "Via Copernica kunnen wij onze klanten en partners op de hoogte houden
 > over ontwikkelingen op ons betaalplatform en over algemene trends
-> binnen het betaallandschap." ![](testimonials/docdata.png)
+> binnen het betaallandschap." ![](../images/docdata.png)
 >
 > \
 > **Docdata Payments**\
@@ -54,7 +54,7 @@ Wat onze gebruikers zeggen
 > Via Copernica segmenteren wij onze klanten bijvoorbeeld op basis van
 > polis- en/of klantgegevens. En aan de hand van de selecties verzenden
 > wij gericht e-mails en digitale nieuwsbrieven.
-> ![](testimonials/unive.png)
+> ![](../images/unive.png)
 >
 > \
 > **Univé Regio+**\

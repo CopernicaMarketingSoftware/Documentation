@@ -10,7 +10,7 @@ Selecties maak en beheer je in het onderdeel **Profielen**.
 -   Aan de linkerzijde zie je een lijst met bestaande selecties
 -   Klik op een selectie om de profielen uit de selectie te tonen.
 
-![](https://pic.vicinity.nl/127/0/112887/selections-subselection-overview.png)
+![](../images/selections-subselection-overview.png)
 
 ### Nieuwe selectie maken
 
@@ -41,7 +41,7 @@ Wanneer je een nieuwe selectie maakt, kan je kiezen uit verschillende
 conditietypes. Elk conditietype kan profielen filteren op zijn eigen
 manier.
 
-![](https://pic.vicinity.nl/127/0/112903/selection-conditiontypes.png)
+![](../images/selection-conditiontypes.png)
 
 Je kan bijvoorbeeld profielen filteren op basis van een waarde in een
 databaseveld (Check op veldwaarde). Maar je kan ook alle profielen

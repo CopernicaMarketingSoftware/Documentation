@@ -10,7 +10,7 @@ proeflicentie](https://www.copernica.com/nl/copernica-proberen "Probeer Copernic
 
 > "Momenteel behalen we ontzettend mooie resultaten met de software te
 > denken aan een click through rate van meer dan 20% uit onze
-> e-mailings!" ![](testimonials/suitable.png)
+> e-mailings!" ![](../images/suitable.png)
 >
 > \
 > **Suitable**\
@@ -34,7 +34,7 @@ Krachtige functionaliteiten voor Fashion
 -   Pas campagnes aan op basis van de locatie van je klant
 
 [![Test Copernica nu
-gratis!](Copernicacom/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
+gratis!](../images/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
 
 Interessante artikelen
 ----------------------
@@ -68,7 +68,7 @@ ingezet. Hieronder een greep uit enkele bekende klanten uit de
 mode-industrie die gebruikmaken van Copernica Marketing Software.
 
 ![Mode organisaties die reeds gebruik maken van
-Copernica](Copernicacom/fashion-brands.png)
+Copernica](../images/fashion-brands.png)
 
 [![Test Copernica nu
-gratis!](Copernicacom/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
+gratis!](../images/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")

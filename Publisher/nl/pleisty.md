@@ -79,7 +79,7 @@ artikelen naar Copernica die verantwoordelijk is voor het versturen,
 afleveren en voor subscription management.
 
 [Bekijk grotere
-afbeelding](https://vicinity.picsrv.net/127/0/129497/Pleisty-Features-Email.jpg)![Pleisty's
+afbeelding](../images/Pleisty-Features-Email.jpg)![Pleisty's
 features voor
 e-mail](integrations/Pleisty-Features-Email.jpg "Pleisty en e-mailmarketing")
 

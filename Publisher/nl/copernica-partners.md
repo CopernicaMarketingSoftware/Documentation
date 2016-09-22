@@ -29,7 +29,7 @@ maak een afspraak met ze op de stand.
 E-commerce partners
 -------------------
 
-[![Yellowgrape](EventsNL/yellowgrape.jpg)](http://www.yellowgrape.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Yellowgrape")
+[![Yellowgrape](../images/yellowgrape.jpg)](http://www.yellowgrape.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Yellowgrape")
 
 ### Yellowgrape
 
@@ -44,7 +44,7 @@ succesverhaal.
  [Maak een afspraak met
 Yellowgrape](mailto:info@yellowgrape.nl?SUBJECT=Afspraak%20Webwinkel%20Vakdagen "Yellowgrape")
 
-[![Bookerz](summit2014/bookerz.png)](http://bookerz.nl/ "Bookerz")
+[![Bookerz](../images/bookerz.png)](http://bookerz.nl/ "Bookerz")
 
 ### Bookerz
 
@@ -61,7 +61,7 @@ ander met u meedenken.
  [Maak een afspraak met
 Bookerz](mailto:info@bookerz.nl?SUBJECT=Afspraak%20Webwinkel%20Vakdagen "Bookerz")
 
-[![F19](EventsNL/logof19.png)](http://www.f19.nl/ "F19")
+[![F19](../images/logof19.png)](http://www.f19.nl/ "F19")
 
 ### F19
 
@@ -76,7 +76,7 @@ en verhogen conversie.
 F19](mailto:info@f19.nl?SUBJECT=Afspraak%20Webwinkel%20Vakdagen "F19")
 
 [![IQ
-Leads](EventsNL/iqleads.jpg)](http://www.redhotminute.com/ "IQ Leads")
+Leads](../images/iqleads.jpg)](http://www.redhotminute.com/ "IQ Leads")
 
 ### IQ Leads
 

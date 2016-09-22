@@ -28,8 +28,8 @@ Amsterdam, en periodiek ook op andere locaties. Stuur een email naar
 [training@copernica.com](mailto:training@copernica.com) om je voor een
 examen aan te melden.
 
-![](Copernicacom/certified-fundamental-user.png)
-![](Copernicacom/certified-advanced-user.png)
+![](../images/certified-fundamental-user.png)
+![](../images/certified-advanced-user.png)
 
 De inhoud van beide testen is gebaseerd op de inhoud van onze
 [trainingsessies](https://www.copernica.com/nl/ondersteuning/copernica-training "Copernica trainingen")

@@ -22,10 +22,10 @@ campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campa
 -   [E-mail and API bundels](#bundles)
 -   [Wij zijn transparant](#transparent)
 
-![Copernica Marketing Software](Copernicacom/copernica-icons-nl.jpg)
+![Copernica Marketing Software](../images/copernica-icons-nl.jpg)
 
   ----------------------------------------------------------------------------- --------------------------------------------------------------------------- ------------------------------------------------------------------------------
-  ![Copernica Marketing Software](Copernicacom/copernica-screenshot-left.jpg)   ![Copernica Marketing Software](Copernicacom/copernica-screenshot-nl.jpg)   ![Copernica Marketing Software](Copernicacom/copernica-screenshot-right.jpg)
+  ![Copernica Marketing Software](../images/copernica-screenshot-left.jpg)   ![Copernica Marketing Software](../images/copernica-screenshot-nl.jpg)   ![Copernica Marketing Software](../images/copernica-screenshot-right.jpg)
   ----------------------------------------------------------------------------- --------------------------------------------------------------------------- ------------------------------------------------------------------------------
 
 [](#marketingsuite)
@@ -69,10 +69,10 @@ drag & drop-editor.
 
 \
  [![Test Copernica nu
-gratis!](Copernicacom/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
+gratis!](../images/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
 \
  ![Automatiseer je campagnes met
-opvolgacties](Copernicacom/nl-follow-up-action-thumb.png)
+opvolgacties](../images/nl-follow-up-action-thumb.png)
 
 2. Met Copernica automatiseer je je marketingcampagnes
 ------------------------------------------------------
@@ -87,7 +87,7 @@ campagnes](http://www.copernica.com/nl/functies/e-mailings/automatiseer-je-campa
 
 \
  ![Integreert goed met andere
-systemen](Copernicacom/copernica-integrations-thumb.png)
+systemen](../images/copernica-integrations-thumb.png)
 
 3. Integreert naadloos met andere systemen
 ------------------------------------------
@@ -117,7 +117,7 @@ integraties](./integrations.md "Meer informatie over onze integraties")
 ---------------------------------------------------------
 
 ![Geavanceerde selecties met multidimensionele
-databases](Copernicacom/en-field-conditions-thumb.png)
+databases](../images/en-field-conditions-thumb.png)
 
 Selecties binnen Copernica worden te allen tijde automatisch geüpdatet.
 Dit komt omdat deze selecties dynamisch zijn. Dit maakt Copernica zo
@@ -135,10 +135,10 @@ selecties](http://www.copernica.com/nl/functies/profielen/definieer-doelgroepen-
 
 \
  [![Test Copernica nu
-gratis!](Copernicacom/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
+gratis!](../images/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
 \
  ![Krachtige
-personalisatiemogelijkheden](Copernicacom/nl-powerful-personalization-thumb.png)
+personalisatiemogelijkheden](../images/nl-powerful-personalization-thumb.png)
 
 5. Krachtige personalisatiemogelijkheden
 ----------------------------------------
@@ -159,7 +159,7 @@ Copernica](http://www.copernica.com/nl/functies/e-mailings/maak-zelf-slimme-e-ma
 -------------------------------------------
 
 ![Uitstekende e-maildeliverability met
-Copernica](Copernicacom/nl-deliverability-checker-thumb.png)
+Copernica](../images/nl-deliverability-checker-thumb.png)
 
 Copernica zorgt er te allen tijde voor dat je geniet van een optimale
 deliverability. Copernica controleert automatisch e-mailings op
@@ -184,7 +184,7 @@ Copernica](./deliverability-better-email-delivery-with-copernica.md "Meer inform
 
 \
  [![Test Copernica nu
-gratis!](Copernicacom/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
+gratis!](../images/nl-wide-layout-call-to-action.png)](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica nu gratis!")\
 \
 
 -   8. Uitstekende online support
@@ -229,36 +229,36 @@ Naast Copernica Marketing Software, ontwikkelt het Copernica R&D team
 on-premise, hybride en SaaS oplossingen voor
 e-mailmarketingactiviteiten.
 
-[![AMQPipe](articlesblog/box-amqpipe.png)](https://www.amqpipe.com "AMQPipe")
+[![AMQPipe](../images/box-amqpipe.png)](https://www.amqpipe.com "AMQPipe")
 
 [www.amqpipe.com](https://www.amqpipe.com "AMQPipe")
 
-[![MailerQ](articlesblog/box-mailerq.png)](https://www.mailerq.com "MailerQ")
+[![MailerQ](../images/box-mailerq.png)](https://www.mailerq.com "MailerQ")
 
 [www.mailerq.com](https://www.mailerq.com "MailerQ")
 
-[![PHPCPP](articlesblog/box-phpcpp.png)](http://www.phpcpp.com "PHPCPP")
+[![PHPCPP](../images/box-phpcpp.png)](http://www.phpcpp.com "PHPCPP")
 
 [www.phpcpp.com](http://www.phpcpp.com "PHPCPP")
 
-[![PHPJS](articlesblog/box-phpjs.png)](http://www.php-js.com "PHPJS")
+[![PHPJS](../images/box-phpjs.png)](http://www.php-js.com "PHPJS")
 
 www.phpjs.com
 
-[![ResponsiveEmail.com](articlesblog/box-responsive-email.png)](https://www.responsiveemail.com "ResponsiveEmail.com")
+[![ResponsiveEmail.com](../images/box-responsive-email.png)](https://www.responsiveemail.com "ResponsiveEmail.com")
 
 [www.responsiveemail.com](https://www.responsiveemail.com "ResponsiveEmail.com")
 
-[![SMTPeter](articlesblog/box-smtpeter.png)](https://www.smtpeter.com "SMTPeter")
+[![SMTPeter](../images/box-smtpeter.png)](https://www.smtpeter.com "SMTPeter")
 
 [www.smtpeter.com](https://www.smtpeter.com "SMTPeter")
 
 [![Video
-thumbnail](articlesblog/box-videothumbnail.png)](https://www.video-thumbnail.com "Video thumbnail")
+thumbnail](../images/box-videothumbnail.png)](https://www.video-thumbnail.com "Video thumbnail")
 
 [www.video-thumbnail.com](https://www.video-thumbnail.com/ "Video thumbnail")
 
-[![Yothalot](articlesblog/box-yothalot.png)](http://www.yothalot.com "Yothalot")
+[![Yothalot](../images/box-yothalot.png)](http://www.yothalot.com "Yothalot")
 
 www.yothalot.com
 

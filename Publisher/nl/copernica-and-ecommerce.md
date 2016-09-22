@@ -10,7 +10,7 @@ Marketing Software met een [gratis
 proeflicentie](https://www.copernica.com/nl/copernica-proberen "Probeer Copernica gratis").
 
 ![Meer conversie door integratie webshop met
-Copernica](testimonials/webshop-copernica-conversion.png)
+Copernica](../images/webshop-copernica-conversion.png)
 
 Krachtige email marketing functionaliteiten voor webshops
 ---------------------------------------------------------
@@ -29,7 +29,7 @@ Krachtige email marketing functionaliteiten voor webshops
     van je e-mails
 
 [![Test Copernica nu
-gratis!](Copernicacom/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
+gratis!](../images/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
 
 Deze webshops gingen je voor
 ----------------------------
@@ -39,7 +39,7 @@ Hieronder een greep uit enkele bekende webwinkels die reeds gebruikmaken
 van Copernica Marketing Software.
 
 ![Webshops die reeds gebruik maken van
-Copernica](testimonials/webshops-copernica.png)
+Copernica](../images/webshops-copernica.png)
 
 Interessante artikelen voor webshops
 ------------------------------------
@@ -70,14 +70,14 @@ Of lees een van onze inspirerende cases:
 
 > "Het inrichten van multidimensionale databases en de krachtige
 > Magento-koppeling gaf voor ons de doorslag te kiezen voor Copernica
-> Marketing Software." ![](testimonials/babypark.png)
+> Marketing Software." ![](../images/babypark.png)
 >
 > \
 > **Babypark**\
 > [www.babypark.nl/](http://www.babypark.nl)
 
 [![Test Copernica nu
-gratis!](Copernicacom/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
+gratis!](../images/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
 
 ![Copernica is Thuiswinkel Business
-Partner](Copernicacom/TW-businesspartner.png)
+Partner](../images/TW-businesspartner.png)

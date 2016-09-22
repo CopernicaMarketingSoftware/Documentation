@@ -11,7 +11,7 @@ proeflicentie](https://www.copernica.com/nl/copernica-proberen "Probeer Copernic
 > "Voor het opzetten, verzenden en monitoren van onze campagnes werken
 > wij al jaren prettig met Copernica. Redenen hiervoor zijn de
 > gebruiksvriendelijkheid en volledigheid van de software."
-> ![](testimonials/mitsubishimotors.png)
+> ![](../images/mitsubishimotors.png)
 >
 > \
 > **Mitsubishi Motors, Nederland**\
@@ -35,4 +35,4 @@ Krachtige functionaliteiten voor de Automotive
     na een servicebeurt
 
 [![Test Copernica nu
-gratis!](Copernicacom/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")
+gratis!](../images/nl-cta-try-copernica-small.png)](http://www.copernica.com/nl/copernica-proberen "Test Copernica nu gratis!")

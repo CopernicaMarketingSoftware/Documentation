@@ -138,7 +138,7 @@ In de Copernica Marketing Suite gaat dat als volgt: Nadat je bent
 ingelogd, klik je in het linkermenu op 'configuration' en vervolgens op
 'Setup sender domains'.
 
-![List of sender domains](list-klein.jpg)
+![List of sender domains](../images/list-klein.jpg)
 
 Op bovenstaande afbeelding zie je het overzicht van jouw Sender Domains
 en welke aspecten ervan goed geconfigureerd zijn en welke niet.
@@ -146,7 +146,7 @@ Rechtsbovenin staat 'Add sender domain'. Dit is de wizard om je domein
 toe te voegen. Klik je op 'Manage domain', dan kom je op het volgende
 scherm:
 
-![Sender domain management dashboard](manage-klein.jpg)
+![Sender domain management dashboard](../images/manage-klein.jpg)
 
 Hier kun je je domein beheren. Je kunt hier bijvoorbeeld je deployment
 rate en je subdomeinen aanpassen. Ook kun je hier je reccomended DNS

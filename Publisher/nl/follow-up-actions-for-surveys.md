@@ -18,7 +18,7 @@ aanleidingen:
     geactiveerd als door de invuller een specifiek antwoord is gegeven
     in de enquete.
 
-![opvolgactie](Documentation/survey-followup.png)
+![opvolgactie](../images/survey-followup.png)
 
 Wachttijd
 ---------

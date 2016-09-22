@@ -5,7 +5,7 @@ Dat vindt plaats wanneer een bezoeker voor de eerste keer de nieuwsbrief
 bekijkt op Facebook.
 
 ![Facebook
-Hotwire](http://vicinity.picsrv.net/127/0/111259/facebook-testpanel-integration.png)
+Hotwire](../images/facebook-testpanel-integration.png)
 
 Ontwikkeld door: [Admix
 Connect](https://www.copernica.com/nl/partners/profile/2210/admix-connect "Admix Connect")

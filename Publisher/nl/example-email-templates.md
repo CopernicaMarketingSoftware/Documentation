@@ -21,7 +21,7 @@ Download
 Twee kolommen lay-out met een zijbalk aan de rechterkant
 --------------------------------------------------------
 
-![](Copernicacom/preview-template-right-col-nl.jpg)
+![](../images/preview-template-right-col-nl.jpg)
 
 Download
 --------

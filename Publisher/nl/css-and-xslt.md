@@ -117,7 +117,7 @@ internet browser: HTML. So, what can you do with XSLT?
     is placed before each survey question.
 -   Et cetera….
 
-![](https://pic.vicinity.nl/127/0/113220/xslt-image.png)
+![](../images/xslt-image.png)
 
 ### XSLT in practice
 

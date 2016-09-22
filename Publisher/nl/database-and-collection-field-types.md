@@ -188,7 +188,7 @@ afbeelding is het veld ‘Company’ gesorteerd.
 -   De profielen zijn alfanumeriek gesorteerd in de lijst met profielen.
 
 ![Gesorteerde database
-velden](Documentation/ordering_database_fields.png)
+velden](../images/ordering_database_fields.png)
 
 ### **Dit veld wordt geïndexeerd**
 

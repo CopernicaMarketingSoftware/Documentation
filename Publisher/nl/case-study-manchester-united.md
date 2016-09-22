@@ -26,7 +26,7 @@ ondersteuning kregen bij het aankoop- en boekingsproces. Die oplossing
 moest er ook voor zorgen dat de betrokkenheid van klanten en potentiële
 klanten toenam.
 
-![](Copernicacom/manchester-united-soccer-schools-website.png)
+![](../images/manchester-united-soccer-schools-website.png)
 
 MUSS zette een opdracht uit om een meertalig e-commerceplatform op te
 zetten om zo de wereldwijde verkoop te stimuleren en ook de regionale
@@ -81,7 +81,7 @@ en uiteindelijk omzet naar een loyale klant.
 MUSS bracht daarbij het hele traject in kaart om ook voor zichzelf
 duidelijk te hebben, wanneer welke e-mail wordt verzonden.
 
-![](Copernicacom/muss-automated-email-campaigns.png)
+![](../images/muss-automated-email-campaigns.png)
 
 Afhankelijk van de betaling, of een ouder nu een volledige aankoop heeft
 verricht of nog maar een deel van het kamp heeft betaald, gaan ze een
@@ -97,7 +97,7 @@ uitstaande bedragen en een serie e-mails met daarin de meest gestelde
 vragen door ouders werd verzonden om zowel de ouders als de kinderen de
 nodige informatie over hun kamp te sturen.
 
-![](Copernicacom/muss-abandoned-shopcart-email.png)
+![](../images/muss-abandoned-shopcart-email.png)
 
 Geweldige resultaten
 --------------------

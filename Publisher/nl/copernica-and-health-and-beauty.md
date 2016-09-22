@@ -30,7 +30,7 @@ Wat onze gebruikers zeggen
 
 > "Dankzij de koppeling van Copernica met onze webwinkel zijn wij in
 > staat automatisch relevante en gerichte e-mailcampagnes te verzenden."
-> ![](testimonials/fitforme.png)
+> ![](../images/fitforme.png)
 >
 > \
 > **FitForMe**\
@@ -38,7 +38,7 @@ Wat onze gebruikers zeggen
 
 > "Met behulp van de software kan PRA gepersonaliseerde e-mailings
 > verzenden naar onze vrijwilligers die willen deelnemen aan een
-> geneesmiddelenonderzoek." ![](testimonials/praintl.png)
+> geneesmiddelenonderzoek." ![](../images/praintl.png)
 >
 > \
 > **PRA International**\

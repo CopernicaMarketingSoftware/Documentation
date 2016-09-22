@@ -26,7 +26,7 @@ en ontdek wat er speelt bij je relaties.
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Verschillende soorten
-    webformulieren](Copernicacom/nl-webpages-02-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren "Verschillende soorten webformulieren")
+    webformulieren](../images/nl-webpages-02-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/verschillende-soorten-webformulieren "Verschillende soorten webformulieren")
 
     Maak met Copernica Marketing Software je eigen webformulieren en
     boost je conversie naar ongekende hoogtes.
@@ -38,7 +38,7 @@ en ontdek wat er speelt bij je relaties.
     ----------------------------------------------------------------------------------------------------
 
     [![Eenvoudig enquêtes
-    publiceren](Copernicacom/nl-webpages-03-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/enquetes "Enquêtes")
+    publiceren](../images/nl-webpages-03-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/enquetes "Enquêtes")
 
     Gebruik de enquêtetool van Copernica om je relaties om waardevolle
     input te vragen. Binnen enkele stappen stel je de juiste vragen en
@@ -51,7 +51,7 @@ en ontdek wat er speelt bij je relaties.
     -------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Toevoegen van een RSS of Atom
-    feed](Copernicacom/nl-webpages-04-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/gebruik-van-rss-of-atom-feed "Toevoegen van een RSS of Atom feed")
+    feed](../images/nl-webpages-04-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/gebruik-van-rss-of-atom-feed "Toevoegen van een RSS of Atom feed")
 
     Wil je graag je website voorzien van het laatste nieuws of je
     nieuwste producten tonen op de homepage van je webshop? Voeg dan een
@@ -64,7 +64,7 @@ en ontdek wat er speelt bij je relaties.
     ----------------------------------------------------------------------------------------------------------------------------------------
 
     [![Resultaten van je
-    webpagina](Copernicacom/nl-webpages-05-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/resultaten-van-je-webpagina "Resultaten van je webpagina")
+    webpagina](../images/nl-webpages-05-thumb.png)](http://www.copernica.com/nl/functies/webpaginas/resultaten-van-je-webpagina "Resultaten van je webpagina")
 
     Wanneer je webpagina online staat, wil je natuurlijk graag weten of
     hij in de smaak valt bij je relaties. Bekijk met Copernica de

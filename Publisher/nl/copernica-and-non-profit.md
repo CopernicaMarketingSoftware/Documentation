@@ -28,7 +28,7 @@ Krachtige functionaliteiten voor Non-profit
 > "Met Copernica hebben we een grote stap vooruit genomen wat betreft
 > onze communicatie richting leden. We zijn nu in staat om persoonlijke
 > en relevante boodschappen via e-mail of sms te versturen."
-> ![](testimonials/nl-brandwonden-stichting.png)
+> ![](../images/nl-brandwonden-stichting.png)
 >
 > \
 > **Nederlandse Brandwonden Stichting**\

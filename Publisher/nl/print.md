@@ -26,7 +26,7 @@ van PDF documenten & direct mails.
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Verzend je document via e-mail, fax of direct
-    mail](Copernicacom/nl-print-02-thumb.png)](http://www.copernica.com/nl/functies/print/verzend-je-document-via-e-mail-fax-of-direct-mail "Verzend je document via e-mail, fax of direct mail")
+    mail](../images/nl-print-02-thumb.png)](http://www.copernica.com/nl/functies/print/verzend-je-document-via-e-mail-fax-of-direct-mail "Verzend je document via e-mail, fax of direct mail")
 
     Wil je graag een gepersonaliseerde verzenden? Kies de
     [selectie](http://www.copernica.com/nl/functies/profielen/definieer-doelgroepen-met-selecties "Definieer doelgroepen met selecties")

@@ -12,7 +12,7 @@ We onderscheiden hierbinnen twee soorten condities:
 1.  Activeringsconditie (A)
 2.  Uitvoeringsconditie (B)
 
-![](followupsconditions.png)
+![](../images/followupsconditions.png)
 
 A. Activatie conditie
 ---------------------

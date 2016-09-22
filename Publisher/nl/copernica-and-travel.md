@@ -52,7 +52,7 @@ Wat onze gebruikers zeggen
 
 > "Met de marketingsoftware van Copernica tillen wij onze
 > e-mailmarketing naar\
->  een hoger niveau!" ![](testimonials/vliegtickets.png)
+>  een hoger niveau!" ![](../images/vliegtickets.png)
 >
 > \
 > **Vliegtickets.nl**\

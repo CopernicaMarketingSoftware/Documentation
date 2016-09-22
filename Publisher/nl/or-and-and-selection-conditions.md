@@ -10,7 +10,7 @@ eigenschappen van het profiel.
 -   We maken hierbij onderscheid tussen EN condities en OF condities.
 -   Een OF conditie kan bestaan uit meerdere EN condities.
 
-![](Documentation/selections-and-or-conditions.png)
+![](../images/selections-and-or-conditions.png)
 
 Afbeelding: de eerste pijl wijst naar de link om een nieuwe EN conditie
 toe te voegen. De tweede pijl wijst naar de link voor het toevoegen van
@@ -25,7 +25,7 @@ dat je meerdere condities opstelt binnen één selectieregel. Profielen
 vallen alleen binnen de selectie als ze aan **alle
 gestelde voorwaarden** binnen die ene regel voldoen.
 
-![](Documentation/selections-create-and-condition.png)
+![](../images/selections-create-and-condition.png)
 
 ### Voorbeeld EN-conditie
 
@@ -53,7 +53,7 @@ wil zeggen dat je iedere conditie in een eigen regel plaatst. Profielen
 vallen binnen de selectie als ze aan **een van
 de** **selectieregels** voldoen.
 
-![](Documentation/selections-create-new-OR-condition.png)
+![](../images/selections-create-new-OR-condition.png)
 
 ### Voorbeeld OF-selectie
 
@@ -80,7 +80,7 @@ selectie zien'. Bijvoorbeeld een selectieregel voor de plaats 'Haarlem',
 maar dan juist niet. Het gevolg is dat in de selectie alle profielen
 BEHALVE de uit Haarlem worden opgenomen.
 
-![](Documentation/selection-OR-NOT.png)
+![](../images/selection-OR-NOT.png)
 
 In de meeste gevallen is dit niet nodig en kan je een reguliere en/of
 selectie maken. Er zijn uitzonderingen waarbij de reguliere regels niet

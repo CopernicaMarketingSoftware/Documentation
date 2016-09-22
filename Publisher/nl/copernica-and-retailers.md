@@ -34,7 +34,7 @@ gratis!](http://www.copernica.com/nl/copernica-30-dagen-proberen "Test Copernica
 
 > "Copernica biedt alle mogelijkheden, voor ons als (r)etailer, om
 > succesvol e-mailmarketing te bedrijven."
-> ![](testimonials/basgroup.png)
+> ![](../images/basgroup.png)
 >
 > \
 > **BAS Group**\

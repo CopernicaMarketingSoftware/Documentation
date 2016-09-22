@@ -32,7 +32,7 @@ bouwde Bobshop.nl uit niets op en realiseerde binnen 7 jaar een omzet
 van circa 25Mio. Nu is hij aangesteld om neckermann.com naar grote
 hoogte te tillen.
 
-![](EventsNL/neckermann.jpg)
+![](../images/neckermann.jpg)
 
 ### Leadmarketing voor neckermann.com; de toekomst van e-commerce?\
  Donderdag 21 januari 14:00 uur - 14:30 uur Marketingzaal A
@@ -59,7 +59,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 |                                      | de webwinkels. Daarnaast is hij      |
 |                                      | eigenaar van meerdere webwinkels.    |
 +--------------------------------------+--------------------------------------+
-| ![](EventsNL/oilvinegar.jpg)         | ### E-mailmarketing automation bij O |
+| ![](../images/oilvinegar.jpg)         | ### E-mailmarketing automation bij O |
 |                                      | il & Vinegar\                        |
 |                                      |  Woensdag 20 januari 11:15 uur - 11: |
 |                                      | 45 uur Marketingzaal B               |
@@ -93,7 +93,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 |                                      | Prentu.be, Prentu.fr en              |
 |                                      | Prentu.co.uk.                        |
 +--------------------------------------+--------------------------------------+
-| ![](EventsNL/webprint.jpg)           | ### Automatische e-mailmarketingcamp |
+| ![](../images/webprint.jpg)           | ### Automatische e-mailmarketingcamp |
 |                                      | agnes bij Webprint\                  |
 |                                      |  Woensdag 20 januari 15:30 uur - 16: |
 |                                      | 00 uur Keynotezaal B                 |
@@ -126,7 +126,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 |                                      | maatregelen: de kracht zit in de     |
 |                                      | synergie.                            |
 +--------------------------------------+--------------------------------------+
-| ![](EventsNL/neckermann.jpg)         | ### Leadmarketing voor neckermann.co |
+| ![](../images/neckermann.jpg)         | ### Leadmarketing voor neckermann.co |
 |                                      | m; de toekomst van e-commerce?\      |
 |                                      |  Donderdag 21 januari 14:00 uur - 14 |
 |                                      | :30 uur Marketingzaal A              |
@@ -155,6 +155,6 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 
   E-commerce Partners
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Yellowgrape](EventsNL/yellowgrape.jpg)](http://www.yellowgrape.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Yellow Grape") [![F19](EventsNL/logof19.png)](http://www.f19.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "F19") [![IQleads](EventsNL/iqleads.jpg)](http://www.iq-leads.nl/?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "IQleads") [![Bookerz](summit2014/bookerz.png)](http://bookerz.nl/?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Bookerz")
+  [![Yellowgrape](../images/yellowgrape.jpg)](http://www.yellowgrape.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Yellow Grape") [![F19](../images/logof19.png)](http://www.f19.nl?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "F19") [![IQleads](../images/iqleads.jpg)](http://www.iq-leads.nl/?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "IQleads") [![Bookerz](../images/bookerz.png)](http://bookerz.nl/?utm_source=copernica&utm_medium=banner&utm_campaign=wwv16 "Bookerz")
 
 

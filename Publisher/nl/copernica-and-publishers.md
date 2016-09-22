@@ -59,7 +59,7 @@ Wat onze gebruikers zeggen
 
 > "Copernica biedt gebruikers de mogelijkheid tot een grote mate van
 > zelfwerkzaamheid. Daarnaast speelt Copernica goed in op vragen en
-> suggesties uit de klantcommunity." ![](testimonials/dezaak.png)
+> suggesties uit de klantcommunity." ![](../images/dezaak.png)
 >
 > \
 > **DeZaak**\
@@ -67,7 +67,7 @@ Wat onze gebruikers zeggen
 
 > "Copernica biedt vele mogelijkheden op het gebied van e-mailings,
 > CRM-functionaliteiten en het bouwen van webformulieren met
-> automatische follow-upcampagnes." ![](testimonials/mtmediagroep.png)
+> automatische follow-upcampagnes." ![](../images/mtmediagroep.png)
 >
 > \
 > **MT Mediagroep**\

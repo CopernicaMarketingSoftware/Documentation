@@ -24,7 +24,7 @@ Copernica Marketing Software, Ralph van den Broeck\
     weergeven](http://maps.google.nl/maps?f=q&source=embed&hl=nl&geocode=&q=Media+Plaza,+Croeselaan+6,+Utrecht&aq=0&oq=Media+Plaza,+Croeselaan+6,+Utrecht&sll=52.084886,5.102806&sspn=0.044251,0.077162&ie=UTF8&hq=Media+Plaza,+Croeselaan+6,+Utrecht&ll=52.084965,5.102806&spn=0.013713,0.032015&t=m "Grotere kaart weergeven")
 
 -   [![Media
-    Plaza](Copernicacom/logo-MP.gif)](http://www.mediaplaza.nl "Media Plaza")
+    Plaza](../images/logo-MP.gif)](http://www.mediaplaza.nl "Media Plaza")
     **Media Plaza**\
      Croeselaan 6 (Ingang Oost)\
      3521 CA Utrecht\
@@ -109,10 +109,10 @@ komen.
 
   Platinum sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Pleisty](summit2014/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](summit2014/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
+  [![Pleisty](../images/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](../images/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
 
   Gold sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Guapa Media](summit2015/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
+  [![Guapa Media](../images/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
 
 

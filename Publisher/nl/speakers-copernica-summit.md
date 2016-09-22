@@ -27,10 +27,10 @@ bekend.
 
   Platinum sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Pleisty](summit2014/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](summit2014/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
+  [![Pleisty](../images/copernica-summit-partner-pleisty.png)](https://www.pleisty.com/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Pleisty") [![Shopware](../images/copernica-summit-partner-shopware.png)](http://www.shopware.com?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Shopware")
 
   Gold sponsors
   -----------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![Guapa Media](summit2015/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
+  [![Guapa Media](../images/guapamedia.jpg)](https://www.guapamedia.nl/?utm_source=copernica&utm_medium=sponsorlogo&utm_campaign=summit2015 "Guapa Media")
 
 

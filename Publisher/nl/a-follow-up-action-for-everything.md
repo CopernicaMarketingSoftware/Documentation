@@ -58,7 +58,7 @@ het tijdstip in, en wij zorgen voor de aflevering.
 ### Opvolgactie als trigger voor latere verzending
 
 ![Opvolgactie als trigger voor latere
-verzending](https://pic.vicinity.nl/127/0/113947/nl-automatisch.png)
+verzending](../images/nl-automatisch.png)
 
 Alle e-mailings kan je inroosteren voor latere verzending. En alle
 relatiegegevens die je opslaat in Copernica zijn te gebruiken als

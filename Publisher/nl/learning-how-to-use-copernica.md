@@ -20,7 +20,7 @@ dat je in een korte tijd alles te weten komt van Copernica Marketing
 Software. Zo vind je op Copernica.com een scala aan
 [videotutorials](https://www.copernica.com/nl/ondersteuning/videos "Videotutorials").
 
-[![](Copernicacom/AandeslagVideotutorials.png)](https://www.copernica.com/nl/ondersteuning/videos "Videotutorials")
+[![](../images/AandeslagVideotutorials.png)](https://www.copernica.com/nl/ondersteuning/videos "Videotutorials")
 
 Trainingen
 ----------
@@ -41,7 +41,7 @@ beschikbaar. In de Fundamental training krijg je inzicht in de algemene
 opbouw en begrippen in de software, en leer je hoe je makkelijk een
 eerste mailing verstuurt. De Advanced training is onontbeerlijk voor
 elke ambitieuze marketeer die geavanceerde campagnes wil opzetten.
-[![](Copernicacom/AandeslagTrainingOpHQ.jpg)](https://www.copernica.com/nl/ondersteuning/copernica-training "Kosteloze trainingen")
+[![](../images/AandeslagTrainingOpHQ.jpg)](https://www.copernica.com/nl/ondersteuning/copernica-training "Kosteloze trainingen")
 
 Certificeringen
 ---------------

@@ -40,7 +40,7 @@ Software, zoals:
 | ### Creed Boutique                                                       |
 +--------------------------------------------------------------------------+
 | [![Creed                                                                 |
-| Boutique](Copernicacom/creedboutique-screenshot.png)](http://www.creedbo |
+| Boutique](../images/creedboutique-screenshot.png)](http://www.creedbo |
 | utique.com/)                                                             |
 +--------------------------------------------------------------------------+
 | \                                                                        |
@@ -90,7 +90,7 @@ Mocht je vragen hebben of suggesties over de integratie, stuur dan
 gerust een e-mail (in het Engels) naar *[Ben,
 Nokeweb](http://www.nokeweb.fr/contact.html)*.
 
-![prestashop logo](Copernicacom/prestashop-logo.png)
+![prestashop logo](../images/prestashop-logo.png)
 
 -   **Ontwikkeld door:**[Nokéweb](http://www.nokeweb.com/ "Nokeweb")
 -   **Versie:** 1.5

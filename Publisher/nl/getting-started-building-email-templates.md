@@ -27,7 +27,7 @@ De meeste e-mailtemplates hebben een header, twee kolommen (een voor
 inhoudsopgave en een voor de artikelen), en een footer (met hierin vaak
 adresgegevens, en de uitschrijflink).
 
-![](differentlayouts.png)
+![](../images/differentlayouts.png)
 
 Waar moet je op letten
 ----------------------

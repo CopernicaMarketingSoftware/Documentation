@@ -42,7 +42,7 @@ aanbieding alleen te tonen aan klanten die al zes maanden niets meer
 hebben gekocht in je webwinkel.
 
 ![Personaliseer email marketing
-campagnes](Copernicacom/nl-personalize-content-copernica.gif)
+campagnes](../images/nl-personalize-content-copernica.gif)
 
 Test je email campagnes
 -----------------------
@@ -53,7 +53,7 @@ bepaal je eenvoudig en snel welke email campagne het beste bij je
 doelgroep past.
 
 ![Test je email marketing
-campagnes](Copernicacom/nl-a-b-split-test-copernica.gif)
+campagnes](../images/nl-a-b-split-test-copernica.gif)
 
 Verstuur automatisch emails met marketing automation
 ----------------------------------------------------
@@ -69,7 +69,7 @@ voorbeelden van de vele mogelijkheden die Copernica biedt om meer uit je
 e-commerce te halen met marketing automation.
 
 ![Verstuur automatische email marketing
-campagnes](Copernicacom/nl-send-automated-campaigns.png)
+campagnes](../images/nl-send-automated-campaigns.png)
 
 Bekijk uitgebreide email statistieken
 -------------------------------------
@@ -82,7 +82,7 @@ geklikt? Welke inhoud levert de meeste traffic naar je website op? Meet
 het allemaal met Copernica.
 
 ![Bekijk uitgebreide email marketing
-statistieken](Copernicacom/nl-emailcampaign-statistics.png)
+statistieken](../images/nl-emailcampaign-statistics.png)
 
 Maak gebruik van integraties
 ----------------------------
@@ -95,4 +95,4 @@ die je kunt gebruiken om verschillende systemen aan Copernica te
 koppelen en zo het beste uit meerdere werelden te halen.
 
 ![Maak gebruik van
-integraties](Copernicacom/nl-choose-from-various-integrations.png)
+integraties](../images/nl-choose-from-various-integrations.png)

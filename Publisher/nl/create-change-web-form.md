@@ -32,7 +32,7 @@ wegschrijven naar de database dan de waarde die in het formulier bij een
 **checkbox**of **keuzelijst**wordt getoond (bijboorbeeld ja::Ja, ik wil
 de nieuwbrief ontvangen)
 
-![](1.png)
+![](../images/1.png)
 
 -   Klik op *opslaan*.
 
@@ -47,7 +47,7 @@ naar *Webformuliermenu \>***Instellingen**
 -   **Klik op opslaan**en ga naar het tabblad ‘*Profielen bewerken*’ en
     kies daar voor *‘werking wijzigen’*
 
-![](2.png)
+![](../images/2.png)
 
 Doorloop de wizard en kies hierbij voor de de volgende instellingen:
 
@@ -65,7 +65,7 @@ webpagina](https://www.copernica.com/nl/ondersteuning/webformulier-op-webpagina-
 
 En zo ziet het gepubliceerde formulier er uit.
 
-![](3.png)
+![](../images/3.png)
 
 Of stuur een e-mail ter bevestiging met behulp van een formulier
 opvolgactie\

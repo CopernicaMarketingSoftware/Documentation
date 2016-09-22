@@ -43,7 +43,7 @@ Wat onze gebruikers zeggen
 
 > "Copernica is toegevoegd aan ons leveringsgamma vanwege de uitstekende
 > integratiemogelijkheden, gebruiksvriendelijkheid en betrouwbaarheid."
-> ![](testimonials/bookerz.png)
+> ![](../images/bookerz.png)
 >
 > \
 > **Bookerz**\
@@ -52,7 +52,7 @@ Wat onze gebruikers zeggen
 > "Met Copernica hebben wij krachtige software in handen om opdrachten
 > voor klanten uit te voeren. Combinaties met e-mail, mobile en PDF zijn
 > te eenvoudig bedienen vanuit één omgeving."
-> ![](testimonials/redhotminute.png)
+> ![](../images/redhotminute.png)
 >
 > \
 > **Redhotminute**\

@@ -27,7 +27,7 @@ strategie, maar is die lang niet zo effectief als zou moeten en niet
 schaalbaar. Ik adviseer mensen altijd hun doel eens vijf keer zo hoog te
 zetten als het nu is. Hoever komen ze dan met hun huidige strategie?’
 
-![Jordie van Rijn](articlesblog/jordie-van-rijn.jpg)
+![Jordie van Rijn](../images/jordie-van-rijn.jpg)
 
 ‘Ook op andere vlakken kan het geen kwaad nog een kritisch naar de
 e-mailstrategie te kijken. Neem het testen. Vaak zetten e-mailmarketeers

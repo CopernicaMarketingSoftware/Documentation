@@ -21,7 +21,7 @@ tijdens het [Copernica
 Summit](http://www.copernica.com/nl/ondersteuning/copernica-summit "Copernica Summit 2013")
 op 17 september.
 
-![Uitreiking Partner of the Year](Copernicacom/DMSummit03.JPG)
+![Uitreiking Partner of the Year](../images/DMSummit03.JPG)
 
 -   [22 Times](https://www.copernica.com/nl/partners/profile/454681)
 -   [Aride](https://www.copernica.com/nl/partners/profile/2157)

@@ -35,7 +35,7 @@ verhoogt, JWB creatieve communicatie over het geheim van succesvolle
 multichannel marketing of Redhotminute met hun visie over hoe online in
 een one-on-one medium verandert.
 
-![Copernica DM Summit sessie ISM](Copernicacom/DMSummit02.JPG)
+![Copernica DM Summit sessie ISM](../images/DMSummit02.JPG)
 
 Bij andere sessies gingen de sprekers nog wat dieper in op de materie.
 Onderwerpen zoals leadgeneratie via social media (ConnectSB),
@@ -64,7 +64,7 @@ interactie met de Copernica partners en medewerkers. Veel gebruikers
 gaven daarbij aan dat ze het fijn vonden meer over de mogelijkheden van
 de software te weten te komen.
 
-![Uitreiking Partner of the Year](Copernicacom/DMSummit03.JPG)
+![Uitreiking Partner of the Year](../images/DMSummit03.JPG)
 
 ### Copernica Partner of the Year Award
 
@@ -90,36 +90,36 @@ het event.
 Foto's
 ------
 
--   ![](dmsummit2012_photos/DSC04530.jpg)
--   ![](dmsummit2012_photos/DSC04531.jpg)
--   ![](dmsummit2012_photos/DSC04551.jpg)
--   ![](dmsummit2012_photos/DSC04555.jpg)
--   ![](dmsummit2012_photos/DSC04653.jpg)
--   ![](dmsummit2012_photos/DSC04654.jpg)
--   ![](dmsummit2012_photos/DSC04664.jpg)
--   ![](dmsummit2012_photos/DSC04870.jpg)
--   ![](dmsummit2012_photos/DSC04666.jpg)
--   ![](dmsummit2012_photos/DSC04668.jpg)
--   ![](dmsummit2012_photos/DSC04670.jpg)
--   ![](dmsummit2012_photos/DSC04680.jpg)
--   ![](dmsummit2012_photos/DSC04682.jpg)
--   ![](dmsummit2012_photos/DSC04683.jpg)
--   ![](dmsummit2012_photos/DSC04698.jpg)
--   ![](dmsummit2012_photos/DSC04699.jpg)
--   ![](dmsummit2012_photos/DSC04709.jpg)
--   ![](dmsummit2012_photos/DSC04711.jpg)
--   ![](dmsummit2012_photos/DSC04713.jpg)
--   ![](dmsummit2012_photos/DSC04714.jpg)
--   ![](dmsummit2012_photos/DSC04715.jpg)
--   ![](dmsummit2012_photos/DSC04716.jpg)
--   ![](dmsummit2012_photos/DSC04724.jpg)
--   ![](dmsummit2012_photos/DSC04487.jpg)
--   ![](dmsummit2012_photos/DSC04741.jpg)
--   ![](dmsummit2012_photos/DSC04744.jpg)
--   ![](dmsummit2012_photos/DSC04757.jpg)
--   ![](dmsummit2012_photos/DSC04759.jpg)
--   ![](dmsummit2012_photos/DSC04838.jpg)
--   ![](dmsummit2012_photos/DSC04842.jpg)
+-   ![](../images/DSC04530.jpg)
+-   ![](../images/DSC04531.jpg)
+-   ![](../images/DSC04551.jpg)
+-   ![](../images/DSC04555.jpg)
+-   ![](../images/DSC04653.jpg)
+-   ![](../images/DSC04654.jpg)
+-   ![](../images/DSC04664.jpg)
+-   ![](../images/DSC04870.jpg)
+-   ![](../images/DSC04666.jpg)
+-   ![](../images/DSC04668.jpg)
+-   ![](../images/DSC04670.jpg)
+-   ![](../images/DSC04680.jpg)
+-   ![](../images/DSC04682.jpg)
+-   ![](../images/DSC04683.jpg)
+-   ![](../images/DSC04698.jpg)
+-   ![](../images/DSC04699.jpg)
+-   ![](../images/DSC04709.jpg)
+-   ![](../images/DSC04711.jpg)
+-   ![](../images/DSC04713.jpg)
+-   ![](../images/DSC04714.jpg)
+-   ![](../images/DSC04715.jpg)
+-   ![](../images/DSC04716.jpg)
+-   ![](../images/DSC04724.jpg)
+-   ![](../images/DSC04487.jpg)
+-   ![](../images/DSC04741.jpg)
+-   ![](../images/DSC04744.jpg)
+-   ![](../images/DSC04757.jpg)
+-   ![](../images/DSC04759.jpg)
+-   ![](../images/DSC04838.jpg)
+-   ![](../images/DSC04842.jpg)
 
 Copernica Summit
 ----------------

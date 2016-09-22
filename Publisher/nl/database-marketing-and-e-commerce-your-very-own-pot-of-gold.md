@@ -82,7 +82,7 @@ bijbehorende doelstellingen. De content en daarmee het aanbod is
 cruciaal voor het (her)activeren van je inactieve doelgroep.
 
 ![Vliegtickets reactivatie
-e-mail](Copernicacom/vliegtickets-reactivatie.jpg)
+e-mail](../images/vliegtickets-reactivatie.jpg)
 
 Een voorbeeld van een goede reactivatiemailing is de 15 euro korting
 voor klanten

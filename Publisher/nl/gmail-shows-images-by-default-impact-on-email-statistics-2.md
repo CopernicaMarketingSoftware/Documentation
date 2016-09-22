@@ -36,7 +36,7 @@ dezelfde computer werd geopend. Een keer verstuurde ik de mail naar een
 de mail nog een keer naar een @gmail.com-adres, en opende het document
 met de bijhorende webapplicatie.
 
-[![](articlesblog/geo-copernica.png)](articlesblog/geo-locatie-groot.png "Klik voor grotere versie (opent in nieuw scherm")
+[![](../images/geo-copernica.png)](articlesblog/geo-locatie-groot.png "Klik voor grotere versie (opent in nieuw scherm")
 
 Zoals je ziet geven de statistieken nu twee verschillende locaties aan.
 Hoewel de e-mail beide malen vanuit Amsterdam werd geopend, is dit door

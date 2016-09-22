@@ -19,7 +19,7 @@ Om een nieuwe enquête te maken kies je voor de zogenoemde functie in het
 Voer een *naam* in voor de enquête op optioneel een *omschrijving*. Sla
 de enquête op. Je kan nu vragen toevoegen aan de enquête.
 
-![New survey dialog](createnewsurvey.png)
+![New survey dialog](../images/createnewsurvey.png)
 
 Vragen toevoegen aan de enquête
 -------------------------------
@@ -36,7 +36,7 @@ tussenteksten](./survey-question-types-and-their-options.md)
     'maximaal één antwoord mogelijk)
 5.  Klik vervolgens op *opslaan*
 
-![New question](newquestion.png)
+![New question](../images/newquestion.png)
 
 Extra opties
 ------------
@@ -53,4 +53,4 @@ nieuwe pagina moet verschijnen.
 voor deze vraag. Kies Keuzelijst als slechts 1 antwoord gegeven mag
 worden door de participant.
 
-![Extra options](extraoptions.png)
+![Extra options](../images/extraoptions.png)

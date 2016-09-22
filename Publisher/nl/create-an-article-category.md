@@ -20,7 +20,7 @@ De nieuwe rubriek is nu terug te vinden in het linkeroverzicht met
 Volgende stap: [artikelen toevoegen aan de
 rubriek](artikelen-toevoegen-aan-de-rubriek)
 
-![](Documentation/article_categories.png)
+![](../images/article_categories.png)
 
 **Niet-gerubriceerd artikel plaatsen in rubriek**
 

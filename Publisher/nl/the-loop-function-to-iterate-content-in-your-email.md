@@ -50,7 +50,7 @@ Er zijn diverse extra opties beschikbaar voor loopblokken.
 Kies in het menu Template voor **Blokstructuur aanpassen.**Het
 onderstaande dialoogvenster zal zich openen.
 
-![](https://vicinity.picsrv.net/90/leading_and_trailing.png)
+![](../images/leading_and_trailing.png)
 
 Tip: alle extra opties kan je ook direct in je HTML template toevoegen
 en aanpassen.
@@ -83,7 +83,7 @@ In het onderstaande voorbeeld krijgt elke iteratie een roze border. Deze
 roze border wordt alleen getoond indien het loopblok ook daadwerkelijk
 wordt getoond.
 
-![](https://vicinity.picsrv.net/90/leading_and_trailing.png)
+![](../images/leading_and_trailing.png)
 
 Extra (geavanceerde) opties voor loop blokken
 ---------------------------------------------
