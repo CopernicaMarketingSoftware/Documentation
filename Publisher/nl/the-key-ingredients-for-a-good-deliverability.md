@@ -20,7 +20,7 @@ zien of de e-mail echt door jou is verstuurd en niet vervalst of
 geforward door een andere partij. 
 
 -   [E-mails versleutelen met
-    DKIM](./e-mails-versleutelen-met-dkim.md)
+    DKIM](./signing-your-emails-with-dkim.md)
 
 ### SPF1
 
@@ -79,7 +79,7 @@ jou door Copernica geregistreerd. Hierop kan je selecties maken en
 verdere actie ondernemen.
 
 -   [Automatisch verwerken van e-mail
-    bounces](./automatisch-verwerken-bounces.md)
+    bounces](./automatically-process-bounces.md)
 
 3. Optimaliseer je e-maildocumenten
 -----------------------------------
@@ -90,9 +90,9 @@ over een aantal tools om jouw document te controleren op spamgevoelige
 materie en eigenschappen. - Document controleren op spamgevoeligheid
 
 -   [Verlaag je spamrating: enkele
-    aandachtspunten](./verlaag-je-spamrating-enkele-aandachtspunten.md)
+    aandachtspunten](./reduce-your-spam-rating-some-focus-points.md)
 -   [Veelvoorkomende HTML-fouten
-    oplossen](./veelvoorkomende-html-fouten.md)
+    oplossen](./reducing-html-errors.md)
 
 4. Ontvangers kunnen zich uitschrijven
 --------------------------------------
@@ -103,7 +103,7 @@ Copernica biedt verschillende methodes aan om zo'n uitschrijving te
 faciliteren.
 
 -   [Afmeldingen automatisch
-    verwerken](./afmeldingen-automatisch-verwerken.md)
+    verwerken](./3-methods-to-facilitate-and-process-unsubscribes.md)
 
 5. Controleer alles nog eens voordat je een bulkmailing verstuurt
 -----------------------------------------------------------------
@@ -113,5 +113,5 @@ vlak voordat je een document gaat versturen alles nog even na. Mocht je
 onverhoopt een melding krijgen, dan vind je hier mogelijk de oplossing.
 
 -   [Extra controles voor het versturen van een
-    bulkmailing](./extra-controles-voor-het-versturen-van-een-bulkmailing.md)
+    bulkmailing](./the-issue-checker-prior-to-the-sending-of-a-mass-mailing.md)
 

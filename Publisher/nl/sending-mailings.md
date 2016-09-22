@@ -1,6 +1,6 @@
 Je kunt met Copernica bulkmailings versturen voor e-mail,
 [fax](./print-pdf-and-fax.md), en
-[sms](./sms-en-mobile.md). Het
+[sms](./sms-and-mobile.md). Het
 instellen van zo'n mailing werkt voor de drie types ongeveer hetzelfde.
 Deze pagina gaat voornamelijk over het versturen van **E-mailings**.
 
@@ -17,28 +17,28 @@ bijvoorbeeld geen onnodige typfouten in het e-maildocument staan.
 Zorg dat je niks vergeet, raadpleeg onze checklist.
 
 -   [Checklist voor het versturen van een
-    bulkmailing](./bulkmailing-versturen-een-snelle-checklist.md)
+    bulkmailing](./required-for-sending-mass-mailings.md)
 
 En dan nu versturen...
 
 -   [Het onderwerp en afzenderadres
-    instellen](./het-onderwerp-en-afzenderadres-instellen.md)
+    instellen](./editing-the-sender-and-subject-of-the-email-document.md)
 -   [Afzenderadres
     personaliseren](./afzendadres-personaliseren.md "Afzenderadres personaliseren")
 -   [Een testmail
-    versturen](./een-test-e-mail-versturen.md)
+    versturen](./send-a-test-mail-or-test-mailing.md)
 -   [Bulkmailing
-    verzenden](./bulkmailing-verzenden.md)
+    verzenden](./sending-a-mass-mailing.md)
 -   [Het instellen en verzenden van een split-run
-    mailing](./split-run-mailing-versturen.md)
+    mailing](./setting-up-a-split-run-mailing.md)
 -   [De verzending van een mailing (periodiek) inroosteren voor
-    later](./de-verzending-van-een-mailing-periodiek-inroosteren-voor-later.md)
+    later](./schedule-a-mass-mailing-for-later-or-send-periodically.md)
 -   [Een ingeroosterde mailing bewerken of
-    annuleren](./een-ingeroosterde-mailing-bewerken-of-annuleren.md)
+    annuleren](./how-do-i-edit-a-scheduled-mailing.md)
 -   [Versturen aan profielen of
-    subprofielen](./versturen-aan-profielen-of-aan-subprofielen.md)
+    subprofielen](./sending-to-profiles-or-subprofiles.md)
 -   [Geavanceerde e-mail
-    verzendinstellingen](./e-mail-verzendinstellingen.md)
+    verzendinstellingen](./advanced-email-delivery-settings.md)
 
 ### Controle op het e-maildocument en instellingen
 
@@ -52,11 +52,11 @@ niet hoe je deze kunt oplossen? Raadpleeg dan de onderstaande
 hulppaginas.
 
 -   [Extra controles voor het versturen van een bulkmailing (issue
-    checker)](./extra-controles-voor-het-versturen-van-een-bulkmailing.md)
+    checker)](./the-issue-checker-prior-to-the-sending-of-a-mass-mailing.md)
 -   [Verlaag je spamrating: enkele
-    aandachtspunten](./verlaag-je-spamrating-enkele-aandachtspunten.md)
+    aandachtspunten](./reduce-your-spam-rating-some-focus-points.md)
 -   [Alles over het optimaliseren van je
-    deliverability](./deliverability-optimaliseren.md)
+    deliverability](./the-key-ingredients-for-a-good-deliverability.md)
 
 ### Resultaten van een e-mailing bekijken
 
@@ -68,7 +68,7 @@ de e-mail is geopend. De resultaten van een mailing kan je opvragen via
 vervolgens **'Uitgebreid rapport weergeven**'
 
 -   [Meer informatie over e-mailresultaten en de betekenis van de
-    getallen](./campagneresultaten-bekijken-en-delen.md)
+    getallen](./campaign-results-and-statistics.md)
 
 ### Veelgestelde vragen
 
@@ -78,7 +78,7 @@ A. Dit verschilt per mailing. Een mailing wordt in principe direct nadat
 je op verzenden klikt verstuurd.
 
 -   [Hoe lang duurt het proces van verzenden en ontvangen van een
-    e-mailing?](./hoe-lang-duurt-het-proces-van-verzenden-en-ontvangen-van-een-mail-campagne.md)
+    e-mailing?](./how-long-will-it-take-for-my-mailing-to-start-sending.md)
 
 #### Q. Ik heb een mailing ingeroosterd voor latere verzending. Als ik het e-maildocument nu aanpas, wordt deze versie dan verstuurd?
 
@@ -98,14 +98,14 @@ support afdeling. Zij kunnen verdere verzending eventueel annuleren.
 Een mailing die je (periodiek) hebt ingeroosterd kan achteraf nog worden
 bewerkt of geannuleerd. Meer informatie hierover vind je op de
 [hulppagina over dit
-onderwerp](./een-ingeroosterde-mailing-bewerken-of-annuleren.md).
+onderwerp](./how-do-i-edit-a-scheduled-mailing.md).
 
 #### Q. Hoe koppel ik een opvolgactie aan mijn mailing?
 
 Opvolgacties koppel je niet aan een mailing. Je kunt wel opvolgacties
 instellen op je e-maildocument of op je database. Meer weten over
 opvolgacties? [Bekijk onze hulppagina's over
-opvolgacties](./campagnes-automatiseren-met-opvolgacties.md)
+opvolgacties](./automate-campaigns.md)
 
 **Heb je nog een vraag, maar staat deze niet hier?** [Stel je vraag op
 het Copernica gebruikersforum](http://www.copernica.com/nl/forum)

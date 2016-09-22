@@ -35,11 +35,11 @@ velden aanmaken waarin je informatie kunt opslaan:
 -   Klik op ‘Velden toevoegen’
 -   Kies bij ‘Aanmaken in’ de collectie die je zojuist hebt gecreëerd
 -   Volg de stappen voor het [aanmaken van
-    velden](./profielen-velden-aanmaken.md),
+    velden](./profiles-adding-database-fields.md),
     zoals beschreven in de vorige tutorial
 
 -   **Vorige:** [Velden
-    aanmaken](./profielen-velden-aanmaken.md "Profielen: Velden aanmaken")
+    aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
 -   **Volgende:** [Profielen en subprofielen
     aanmaken](./profielen-profielen-en-subprofielen-aanmaken.md "Profielen: Profielen en subprofielen aanmaken")
 

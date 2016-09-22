@@ -9,18 +9,18 @@ koppelen binnen je campagnes.
 -   [Follow-up
     manager](./follow-up-manager.md)
 -   [Opvolgacties voor
-    e-maildocumenten](./opvolgacties-voor-e-maildocumenten.md)
+    e-maildocumenten](./follow-up-actions-for-email-documents.md)
 -   [Opvolgacties voor
     webformulieren](./opvolgacties-voor-webformulieren.md)
 -   [Opvolgacties voor
     enquetes](./opvolgacties-voor-enquetes.md)
 -   [Opvolgacties voor databases en
-    collecties](./opvolgacties-voor-databases-en-collecties.md)
+    collecties](./follow-up-actions-for-databases-and-collections.md)
 -   [Condities voor opvolgacties - beperk het activeren of uitvoeren van
     een
-    opvolgactie](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md)
+    opvolgactie](./conditions-for-follow-ups.md)
 -   [Opvolgacties stoppen (in geval van
-    nood)](./opvolgacties-van-een-mailing-stoppen.md)
+    nood)](./stop-follow-ups.md)
 
 ### Veelgestelde vragen
 

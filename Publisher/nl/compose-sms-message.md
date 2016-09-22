@@ -21,7 +21,7 @@ Houdt hierbij wel rekening met het maximum van 160 tekens. Met namen als
 Pieter-Cornelis de Roy van Zuiderwijn zit je zo op het maximale aantal
 tekens. Klik onderin beeld op 'gepersonaliseerd' om het bericht weer te
 geven met gegevens uit de
-[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md).
+[standaardbestemming](./what-is-the-test-destination.md).
 
 Grote berichten opsplitsen
 --------------------------

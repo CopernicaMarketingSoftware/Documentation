@@ -9,7 +9,7 @@ Wat is een miniselectie?
 In Copernica kan je naast [selecties op profielniveau](./profiles-selections.md),
 ook selecties maken op subprofielniveau. Een miniselectie is dus een
 filter op een
-[collectie](./profielen-collectie-aanmaken.md).
+[collectie](./profiles-adding-collections.md).
 
 Hoe maak ik een miniselectie aan?
 ---------------------------------
@@ -33,7 +33,7 @@ Net zoals bij selecties, moet je ook bij miniselecties condities
 aanmaken voordat je er wat mee kunt:
 
 -   Klik op ‘[Voeg een nieuwe ‘EN’-conditie toe aan een nieuwe
-    ‘OF’-regel](./selecties-met-of-en-en-regels.md)’
+    ‘OF’-regel](./or-and-and-selection-conditions.md)’
 -   Selecteer het [type conditie](./selectie-conditietypes.md)
     dat je wilt toepassen
 -   Vul een beschrijving in voor je conditie

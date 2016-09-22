@@ -12,5 +12,5 @@ gebruikt.
 ![Edit and preview mode](../images/preview.png)
 
 Note: om de documentpersonalisatie te testen, dien je wel een
-[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md)
+[standaardbestemming](./what-is-the-test-destination.md)
 in te stellen in de database waaraan je de e-mail gaat richten.

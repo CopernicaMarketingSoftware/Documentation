@@ -8,11 +8,11 @@ Wat is een miniselectie op selectieniveau?
 
 Als je een [miniselectie aanmaakt](./profiles-creating-a-miniselection.md),
 wil je die gegevens over het algemeen ook beschikbaar hebben op
-[profielniveau](./versturen-aan-profielen-of-aan-subprofielen.md).
+[profielniveau](./sending-to-profiles-or-subprofiles.md).
 
 Een voorbeeld:
 
--   De profielen in je [database](./profielen-database-aanmaken.md)
+-   De profielen in je [database](./profiles-creating-a-database.md)
     bestaan uit bedrijven.
 -   Je subprofielen uit werknemers van die bedrijven.
 -   Per werknemer heb je in een databaseveld aangegeven of ze met
@@ -37,7 +37,7 @@ Hoe maak ik een miniselectie op selectieniveau?
 -   Klik nu linksonderin op ‘Selectie aanmaken’
 -   Vul een naam en omschrijving in kies ‘opslaan’
 -   Voeg een nieuwe [‘EN’-conditie toe aan een nieuwe
-    ‘OF’-regel](./selecties-met-of-en-en-regels.md)
+    ‘OF’-regel](./or-and-and-selection-conditions.md)
 -   Selecteer bij
     ‘[Type](./selectie-conditietypes.md)’: ‘Check op inhoud van miniselectie’
 -   Klik op ‘volgende’

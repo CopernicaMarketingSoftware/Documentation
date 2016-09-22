@@ -46,8 +46,8 @@ de (nieuwe) gebruiker hebben we daarom voor enkele van deze selecties
 tutorials gemaakt. Zo zie je hoe je deze selecties in slechts enkele
 stappen binnen Copernica maakt.
 
--   [Een verjaardagsselectie maken binnen Copernica (2:07)](./een-verjaardagselectie-maken.md)
--   [Een nieuwsbriefselectie maken binnen Copernica (3:35)](./nieuwsbrief-selectie-maken.md)
+-   [Een verjaardagsselectie maken binnen Copernica (2:07)](./how-to-create-a-birthday-selection.md)
+-   [Een nieuwsbriefselectie maken binnen Copernica (3:35)](./create-a-mailing-list.md)
 
 Altijd relevant dankzij dynamische selecties
 --------------------------------------------

@@ -68,7 +68,7 @@ oorspronkelijke vorm weergegeven. 
 Wat betekenen de fouten
 -----------------------
 
-[Meer lezen over afleverfouten](./soft-en-hard-bounces.md)
+[Meer lezen over afleverfouten](./soft-and-hard-bounces-error-types-and-delivery-codes.md)
 
 Veel gestelde vragen
 --------------------

@@ -8,25 +8,25 @@ Je beheert je sms campagnes in het onderdeel Mobile.
 -   [Database gereed maken voor
     sms-mailing](./prepare-your-database-for-mailings-with-sms.md)
 -   [Sms-bericht
-    opstellen](./sms-bericht-opstellen.md)
+    opstellen](./compose-sms-message.md)
 -   [Sms testbericht sturen naar
-    standaardbestemming](./sms-testbericht-sturen-naar-standaardbestemming.md)
+    standaardbestemming](./send-sms-test-message-to-test-destination.md)
 -   [Sms-bulkmailing
-    versturen](./bulk-sms-mailing-versturen.md)
+    versturen](./how-do-i-send-a-mobile-mass-mailing.md)
 -   [Een ingeroostere sms-mailing annuleren of
-    bewerken](./een-ingeroostere-sms-mailing-annuleren-of-bewerken.md)
+    bewerken](./how-to-edit-or-cancel-a-scheduled-mobile-mailing.md)
 -   [Waarom komen mijn sms'jes niet aan in
-    Belgie?](./waarom-komen-mijn-smsjes-niet-aan-in-belgie.md)
+    Belgie?](./why-wont-my-mobile-messages-arrive.md)
 -   [Wat kost het om een sms-bericht te
-    versturen?](./wat-kost-het-om-een-sms-bericht-te-versturen.md)
+    versturen?](./invoicing-of-mobile-messages.md)
 -   [Toegestane
-    sms-telefoonnummers](./toegestane-sms-telefoonnummers.md)
+    sms-telefoonnummers](./what-is-a-valid-mobile-number.md)
 -   [Tijdzone en taalinstellingen instellen van
-    sms-document](./tijdzone-en-taalinstellingen-instellen-van-sms-document.md)
+    sms-document](./how-to-change-the-language-and-time-zone-settings-of-a-mobile-document.md)
 -   [De resultaten van een sms-mailing
-    bekijken](./de-resultaten-van-een-sms-mailing-bekijken.md)
+    bekijken](./viewing-the-results-of-a-mobile-mailing.md)
 -   [Resultaten sms-mailing
-    exporteren](./de-resultaten-van-een-sms-mailing-exporteren.md)
+    exporteren](./exporting-the-results-of-a-mobile-mailing.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
+    sms-campagnes](./create-selections-based-on-the-results-of-mobile-mailings.md)
 

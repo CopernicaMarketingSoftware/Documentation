@@ -19,38 +19,38 @@ smarty versie 2 of 3 wilt gebruiken. [Kies versie
 3.](./smarty-2-vs-smarty-3.md)
 
 -   [De basisbeginselen van smarty
-    personalisatie](./de-basisbeginselen-van-smarty-personalisatie.md)
+    personalisatie](./what-is-personalization.md)
 -   [Personalisatie-instellingen van het template of
-    document](./personalisatie-instellingen-van-het-template-of-document.md)
+    document](./document-and-template-personalization-settings.md)
 -   [Persoonlijke aanhef
-    maken](./persoonlijke-aanhef-maken.md)
+    maken](./personalized-salutation-in-email-using-smarty-code.md)
 -   [Personalisatie uit een profiel of uit een
-    subprofiel](./personalisatie-uit-een-profiel-of-subprofiel.md)
+    subprofiel](./personalizing-from-a-profile-or-subprofile.md)
 -   [Voorbeeldweergave en
-    bewerkmodus](./voorbeeldweergave-en-bewerkmodus.md)
+    bewerkmodus](./view-document-in-edit-mode-or-in-preview-mode.md)
 -   [Opmaak van smarty personalisatie (Smarty
-    filters)](./opmaak-van-smarty-personalisatie-smarty-filters.md)
+    filters)](./filter-data-with-smarty-modifiers.md)
 -   [Personaliseren van
-    hyperlinks](./personaliseren-van-hyperlinks.md)
+    hyperlinks](./personalizing-hyperlinks.md)
 -   [Gebruik van smarty personalisatie in
-    webformulieren](./gebruik-van-smarty-personalisatie-in-webformulieren.md)
+    webformulieren](./smarty-personalization-in-web-forms.md)
 -   [Loadprofile en loadsubprofile toegepast in een praktisch
-    voorbeeld](./loadprofile-en-loadsubprofile-toegepast-in-een-praktisch-voorbeeld.md)
+    voorbeeld](./example-of-the-loadprofile-and-loadsubprofile-functions.md)
 -   [Linken naar een (gepersonaliseerd)
-    PDF-bestand](./linken-naar-een-pdf-bestand.md)
+    PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Interessevelden gebruiken binnen smarty
     personalisatie](./interessevelden-gebruiken-in-smarty-personalisatie.md)
 -   [Extra velden voor document
-    personalisatie](./extra-velden-voor-document-personalisatie.md)
+    personalisatie](./extra-fields-for-personalizing.md)
 -   [Informatie uit een URL gebruiken voor
-    personalisatie](./informatie-uit-een-url-gebruiken-voor-personalisatie.md)
+    personalisatie](./get-url-parameters-within-smarty-personalization.md)
 -   [(Mini)selecties gebruiken binnen Smarty
-    personalisatie](./mini-selecties-gebruiken-binnen-smarty-personalisatie.md)
+    personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
 -   [Datums en tijden met
-    Smarty](./de-datumfunctie-van-smarty.md)
+    Smarty](./using-the-smarty-date-function.md)
 
 Bekijk ook [ons overzicht van beschikbare extra functies en speciale
-invoegcodes](./overzicht-van-beschikbare-functies-en-invoegcodes.md)
+invoegcodes](./special-functions-and-tags.md)
 
 Smarty reference
 ----------------
@@ -68,7 +68,7 @@ Veel gestelde vragen en problemen
 -   [Hoe kan ik de enquete bedanktpagina
     personaliseren?](./hoe-kan-ik-de-enquete-bedanktpagina-personaliseren.md)
 -   [Probleem: Blokhaken en accolades veroorzaken
-    personalisatiefouten](./probleem-blokhaken-en-accolades-veroorzaken-personalisatiefouten.md)
+    personalisatiefouten](./how-to-solve-errors-in-personalization.md)
 
 Smarty variabelen voor opvolgacties
 -----------------------------------
@@ -81,7 +81,7 @@ wilt versturen, waarin je de gegeven antwoorden van een ingevuld
 formulier wilt tonen.
 
 -   [Beschikbare variabelen in
-    opvolgacties](./beschikbare-variabelen-in-opvolgacties.md)
+    opvolgacties](./extra-variables-for-follow-ups.md)
 
 Javascript condities
 --------------------
@@ -92,12 +92,12 @@ script editor. Je gebruikt JavaScript condities onder andere voor het
 wel/niet tonen van content blokken aan een doelgroep. Maar ook aan
 bijvoorbeeld opvolgacties kunnen condities worden gehangen.
 
--   [Werken met de eenvoudige script editor](./de-eenvoudige-script-editor.md)
+-   [Werken met de eenvoudige script editor](./the-easy-script-editor.md)
 -   [Geavanceerde JavaScript condities](./geavanceerde-javascript-condities.md)
 
 Overig
 ------
 
 -   [Personaliseren met behulp van multidimensionale
-    databases](./personaliseren-met-behulp-van-multidimensionale-databases.md)
+    databases](./personalizing-using-multi-dimensional-databases.md)
 

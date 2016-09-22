@@ -5,47 +5,47 @@ evenement, of een afmeldformulier voor je e-mailcampagnes.
 -   [Hoe maak ik een
     webformulier?](./introduction-to-web-forms.md)
 -   [Webformulier velden toevoegen en/of
-    wijzigen](./webformulier-velden-toevoegen-en-bewerken.md)
+    wijzigen](./web-form-fields-and-field-settings.md)
 -   [De werking van een webformulier
-    instellen](./de-werking-van-een-webformulier-instellen.md)
+    instellen](./the-content-web-form-behaviour-wizard.md)
 -   [Veelgemaakte fout bij het instellen van een
     webformulier](./veelgemaakte-fout-bij-instellen-webformulier.md "Veelgemaakte fout bij instellen webformulier")
 -   [Webformulier verzendknop tekst
-    aanpassen](./webformulier-verzendknop-tekst-aanpassen.md)
+    aanpassen](./specify-web-form-submit-button-text.md)
 -   [Gebruik van smarty personalisatie in
-    webformulieren](./gebruik-van-smarty-personalisatie-in-webformulieren.md)
+    webformulieren](./smarty-personalization-in-web-forms.md)
 -   [Verborgen informatie meesturen in een
-    webformulier](./verborgen-informatie-meesturen-in-een-webformulier.md)
+    webformulier](./can-i-use-hidden-fields-in-my-web-form.md)
 -   [Webformulier checkbox waarde/labeltekst
-    veranderen](./webformulier-checkbox-waarde-labeltekst-veranderen.md)
+    veranderen](./how-do-i-display-a-different-value-in-my-multiple-choice-web-form-field.md)
 -   [Afbeeldingen gebruiken in een
-    webformulier](./afbeeldingen-gebruiken-in-een-webformulier.md)
+    webformulier](./can-i-use-images-in-web-forms.md)
 -   [Uploadveld toevoegen aan een Content
-    webformulier](./uploadveld-toevoegen-aan-een-webformulier.md)
+    webformulier](./add-upload-field-to-content-web-form.md)
 -   [Limiteer het aantal keer dat iemand een webformulier kan
-    verzenden](./limiteer-het-aantal-keer-dat-iemand-een-webformulier-kan-verzenden.md)
+    verzenden](./limit-the-number-of-times-a-web-form-can-be-submitted.md)
 -   [Landingspagina van webformulier
-    instellen](./de-landingspagina-van-een-webformulier-instellen.md)
+    instellen](./specify-web-form-landing-page.md)
 -   [Webformulier
-    opvolgacties](./webformulier-opvolgacties.md)
+    opvolgacties](./follow-up-actions-for-web-forms.md)
 -   [Vanuit emailing linken naar
-    webformulier](./personaliseren-van-hyperlinks.md)
+    webformulier](./personalizing-hyperlinks.md)
 
 ### Verschillende soorten webformulieren
 
 -   [Afmeldformulier (afmelder wordt verwijderd uit
-    database)](./afmeldformulier-profiel-volledig-verwijderen.md)
+    database)](./unsubscribe-form-remove-profile-entirely.md)
 -   [Aanmeldformulier (profiel wordt altijd
-    aangemaakt)](./aanmeldformulier-maakt-altijd-nieuw-profiel-aan.md)
+    aangemaakt)](./newsletter-sign-up-form.md)
 -   [Aanmeld- en
-    wijzigformulier](./aanmeld-en-wijzigformulier.md)
+    wijzigformulier](./create-change-web-form.md)
 -   [Inlog / uitlog en vergeten
-    wachtwoordformulier](./inlog-uitlog-en-wachtwoord-vergeten-formulier.md)
+    wachtwoordformulier](./login-logout-and-forgot-password-form.md)
 
 ### Webformulier publiceren
 
 -   [Webformulier op webpagina plaatsen met {webform}
-    tag](./webformulier-op-webpagina-plaatsen.md)
+    tag](./publish-your-web-form.md)
 -   [Content webformulier in iframe
     laden](./content-webformulier-in-iframe-laden.md)
 

@@ -62,4 +62,4 @@ impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks. \
 [\
  Meer lezen over het dominante resultaat per
-bestemming](./het-dominante-resultaat-van-een-bestemming.md)
+bestemming](./the-dominant-results-of-a-mailing.md)

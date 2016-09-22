@@ -78,7 +78,7 @@ Veel gestelde vragen
 
 Mocht je ergens tegenaanlopen tijdens het importeren, kijk dan even of
 je vraag hieronder beantwoord is. Mocht dit niet het geval zijn, kan je
-altijd contact opnemen met onze [hulpdiensten](./ondersteuning.md).
+altijd contact opnemen met onze [hulpdiensten](./support.md).
 
 ***Ik krijg bij het instellen van de veldeigenschappen een
 'niet-passende data' waarschuwing.***\

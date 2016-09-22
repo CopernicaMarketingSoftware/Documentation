@@ -76,7 +76,7 @@ website naar de betreffende landingspagina).
 Waarschijnlijk de grootste fout die je vandaag de dag kan maken.
 Tegenwoordig wordt tussen de 15 tot 65% van alle e-mails mobiel gelezen.
 Zorg er dus voor dat je [responsive
-design](http://www.marketingfacts.nl/berichten/responsive-design-je-e-mails-klaarstomen-voor-mobile)
+design](./responsive-design-preparing-your-emails-for-mobile.md)
 toepast op jouw e-mails. Met andere woorden, geschikt voor ieder
 apparaat (smartphone, tablet, laptop of desktop). Waar je daarbij zeker
 op moet letten: mensen klikken met hun vingers! Zorg er dus voor dat je

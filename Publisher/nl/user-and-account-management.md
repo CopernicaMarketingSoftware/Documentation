@@ -9,26 +9,26 @@ Alle marketingsuccessen die worden behaald met Copernica, zijn ten
 eerste te danken aan de gebruikers.
 
 -   [Beheer van gebruikers en
-    toegangsrechten](./beheer-van-gebruikers-en-toegangsrechten.md)
+    toegangsrechten](./manage-users-and-their-roles.md)
 -   [Je eigen gebruikersinformatie- en
-    instellingen](./je-eigen-gegevens-wijzigen.md)
+    instellingen](./edit-your-own-details.md)
 -   [Wachtwoord wijzigen of
-    opvragen](./wachtwoord-wijzigen-of-opvragen.md)
+    opvragen](./change-password-or-request-a-new-one.md)
 
 ### Account management
 
 -   [Account
-    instellingen](./account-instellingen-wijzigen.md)
+    instellingen](./account-settings.md)
 -   [Account e-mail
-    verzendinstellingen](./e-mail-verzendinstellingen.md)
+    verzendinstellingen](./advanced-email-delivery-settings.md)
 -   [Applicatie tonen in eigen
-    lay-out](./applicatie-tonen-in-eigen-layout.md)
+    lay-out](./change-application-layout.md)
 -   [Account
-    verwijderen](./account-verwijderen.md)
+    verwijderen](./remove-account.md)
 -   [Standaard
-    afzenderadressen](./standaard-afzenderadressen.md)
+    afzenderadressen](./default-account-from-addresses.md)
 -   [Accountverbruik
-    bekijken](./accountverbruik-bekijken.md)
+    bekijken](./view-account-consumption.md)
 -   [Accounttoegang tot bepaalde ip-adressen
-    beperken](./accounttoegang-tot-bepaalde-ip-adressen-beperken.md)
+    beperken](./limiting-your-account-access-to-certain-ip-addresses.md)
 

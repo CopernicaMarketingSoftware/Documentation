@@ -18,7 +18,7 @@ trainingen](http://training.copernica.com/aanmelden_training)
 Om deel te nemen aan de training is toegang tot de software met een
 eigen persoonlijke gebruikersnaam en wachtwoord vereist. Heb je nog geen
 toegang gekregen? Vraag dan eerst de beheerder van het hoofdaccount een
-[gebruikersaccount voor je aan te maken](./beheer-van-gebruikers-en-toegangsrechten.md).
+[gebruikersaccount voor je aan te maken](./manage-users-and-their-roles.md).
 Deze heb je nodig om jezelf te kunnen aanmelden.
 
 ### Training op hoofdkantoor van Copernica
@@ -33,7 +33,7 @@ als Fundamental en Advanced gebruiker:
 Neem je deel aan beide trainingen, dan zorgen wij voor een lunch. Het is
 ook mogelijk om je voor een van beide trainingen in te schrijven. De
 trainingen vinden plaats op de tweede dinsdag en de vierde donderdag van
-de maand. Zie de [evenementenkalender](./evenementen.md)
+de maand. Zie de [evenementenkalender](./events.md)
 voor de data van de trainingen.
 
 Aanmelden doe je via het [aanmeldformulier voor de
@@ -47,7 +47,7 @@ worden gegeven met behulp van een webinar. Omdat deze trainingen met
 name zijn bedoeld voor onze internationale gebruikers, maken we je er op
 attent dat zowel de [Fundamental Training](#inhoud-fundamental-training) als de
 [Advanced Training](#advanced-training) in het Engels worden gegeven.
-Zie de [evenementenkalender](./evenementen.md) voor de data van de trainingen.
+Zie de [evenementenkalender](./events.md) voor de data van de trainingen.
 
 Aanmelden doe je via het [aanmeldformulier voor de
 trainingen](http://training.copernica.com/aanmelden_training)
@@ -72,7 +72,7 @@ op copernica.com](https://www.copernica.com/nl/dashboard).
 
 ### Data van de Fundamental training
 
-Zie de [evenementenkalender](./evenementen.md) voor de data van de trainingen.
+Zie de [evenementenkalender](./events.md) voor de data van de trainingen.
 
 ### Aanmelden
 
@@ -82,7 +82,7 @@ training](http://training.copernica.com/aanmelden_training).
 Om deel te nemen aan de training is toegang tot de software vereist. Heb
 je nog geen toegang gekregen? Vraag dan eerst de beheerder van het
 hoofdaccount een [gebruikersaccount voor je aan te
-maken](./beheer-van-gebruikers-en-toegangsrechten.md).
+maken](./manage-users-and-their-roles.md).
 
 ### Advanced training
 
@@ -103,7 +103,7 @@ het examen, dan ontvang je het certificaat voor Certified Advanced User.
 
 ### Data van de Advanced training
 
-Zie de [evenementenkalender](./evenementen.md) voor de data van de trainingen.
+Zie de [evenementenkalender](./events.md) voor de data van de trainingen.
 
 ### Aanmelden
 
@@ -113,4 +113,4 @@ training](http://training.copernica.com/aanmelden_training).
 Om deel te nemen aan de training is toegang tot de software vereist. Heb
 je nog geen toegang gekregen? Vraag dan eerst de beheerder van het
 hoofdaccount een [gebruikersaccount voor je aan te
-maken](./beheer-van-gebruikers-en-toegangsrechten.md).
+maken](./manage-users-and-their-roles.md).

@@ -57,6 +57,6 @@ Marketing](http://www.bosmadmc.nl "Bosma Direct Marketing")\
 **Datum:** 1 augustus, 2012\
 **License:** Open source\
 [Lees de
-installatiegids](./joomla-installatiegids.md)
+installatiegids](./joomla-installation-guide.md)
 (in het Engels)\
 [Download](../downloads/plg_copernica.zip "Download Joomla-plugin voor Copernica Marketing Software")

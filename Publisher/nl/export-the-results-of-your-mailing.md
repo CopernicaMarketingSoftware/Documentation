@@ -13,6 +13,6 @@ e-mailresultaten, maak dan een
 [selectie](./nieuwe-selectie-maken.md)
 aan met de conditietype *Check op resultaten e-mailcampagnes*. Gebruik
 vervolgens de
-[exportfunctie](./profiel-en-of-subprofielen-exporteren.md)
+[exportfunctie](./export-profiles-and-or-subprofiles.md)
 in het menu *Huidige weergave*in het onderdeel *Profielen* om de
 profielgegevens uit de selectie te downloaden.

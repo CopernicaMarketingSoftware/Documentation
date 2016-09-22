@@ -47,7 +47,7 @@ De software beschikt over een functie om alle CSS uit een header, of een
 gekoppeld stylesheet, automatisch om te zetten naar inline CSS. Zo
 behoud je het gemak van een extern stylesheet en wordt het document toch
 correct weergegeven in de inbox.  [Lees meer over het automatisch
-converteren van CSS](./css-style-blokken-automatisch-omzetten-naar-inline-css.md)
+converteren van CSS](./automatically-convert-block-style-elements-to-inline-style-attributes.md)
 
 **CSS styleregels die niet (goed) worden ondersteund**
 ------------------------------------------------------

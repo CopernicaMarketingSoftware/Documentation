@@ -29,10 +29,10 @@ webformulier publiceer je op je webpagina met een [eenvoudige
 tag](./webformulier-op-webpagina-plaatsen.md "Webformulier op webpagina plaatsen").
 
 De webformulieren werken met een [standaard
-stylesheet](./css-en-xslt-een-korte-introductie.md)
+stylesheet](./working-with-css-and-xslt-a-brief-introduction.md)
 dat je volledig naar wens kan bewerken. De meer technische gebruiker kan
 tevens helemaal los gaan met de geleverde [standaard
-XSLT](./css-en-xslt-een-korte-introductie.md),
+XSLT](./working-with-css-and-xslt-a-brief-introduction.md),
 waarmee je volledige controle krijgt over de weergave van het formulier.
 
 Om een content webformulier te bouwen, volg je de volgende stappen.
@@ -44,7 +44,7 @@ Om een content webformulier te bouwen, volg je de volgende stappen.
 3.  [Webformulier publiceren op je
     webpagina](./webformulier-op-webpagina-plaatsen.md "Webformulier op webpagina plaatsen")
 4.  [Optioneel kan je de CSS en of XSLT van het webformulier
-    aanpassen](./css-en-xslt-een-korte-introductie.md "CSS en XSLT - een korte introductie")
+    aanpassen](./working-with-css-and-xslt-a-brief-introduction.md "CSS en XSLT - een korte introductie")
 
 Onderstaand enkele van de meest gebruikte formuliertypen:
 

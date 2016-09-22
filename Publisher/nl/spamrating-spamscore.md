@@ -13,7 +13,7 @@ punten:
     [e-mailreputatie](./how-to-build-up-your-email-reputation.md),
     gebruik je best de verhouding; een paragraaf tekst per afbeelding
 -   Gebruik correcte authenticatiegegevens
-    ([SPF](http://www.copernica.com/nl/ondersteuning/begrippenlijst/spf),
+    ([SPF](./spf.md),
     [SenderID](./senderid.md),
     [DKIM](./dkim-domainkey-identified-mail.md)
     en afzendadres)

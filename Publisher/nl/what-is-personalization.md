@@ -27,7 +27,7 @@ naam van het veld exact overneemt in de code.
 -   Smarty is **hooflettergevoelig**. {\$name} is dus wat anders dan
     {\$NAME}
 -   het moet duidelijk zijn of het
-    een [profiel of subprofiel](./personalisatie-uit-een-profiel-of-subprofiel.md) veld
+    een [profiel of subprofiel](./personalizing-from-a-profile-or-subprofile.md) veld
     betreft.
 
 Voorbeeld: je hebt een databasevelden met de namen
@@ -60,7 +60,7 @@ code die vervangen moet worden door gegevens uit jouw database.
     toevoegen aan je webtemplate.
 
 Zie ook: [Probleem: Blokhaken en accolades veroorzaken
-personalisatiefouten](./probleem-blokhaken-en-accolades-veroorzaken-personalisatiefouten.md)
+personalisatiefouten](./how-to-solve-errors-in-personalization.md)
 
 ### **Dollarteken**
 
@@ -74,7 +74,7 @@ personalisatievariabelen en hebben dus **nooit** een dollarteken.
 
 Je kan in Copernica direct de uitvoer van je personalisatie testen.
 Hiervoor worden de gegevens uit de
-[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md)
+[standaardbestemming](./what-is-the-test-destination.md)
 gebruikt. Deze kan je zelf instellen. Zorg er altijd voor dat de
 standaardbestemming zich bevindt in dezelfde database waaraan je je
 mailing of andere uiting wilt richten.

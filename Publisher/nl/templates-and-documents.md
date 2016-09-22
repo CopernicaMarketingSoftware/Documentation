@@ -9,15 +9,15 @@ Templates en HTML
 -   [Een eigen template maken voor gebruik in
     e-mailings](./getting-started---building-email-templates.md)
 -   [E-mail template of webtemplate importeren of
-    exporteren](./e-mail-template-of-webtemplate-importeren-of-exporteren.md)
+    exporteren](./importing-and-exporting-templates-how-is-it-done.md)
 -   [Je eigen stylesheet maken en
-    gebruiken](./je-eigen-stylesheet-maken-en-gebruiken.md)
+    gebruiken](./creating-and-using-your-stylesheets.md)
 -   [Veelvoorkomende HTML-fouten (Document HTML
-    check)](./veelvoorkomende-html-fouten.md)
+    check)](./reducing-html-errors.md)
 -   [HTML-richtlijnen voor e-mail template
-    design](./html-richtlijnen-voor-e-mail-template-design.md)
+    design](./html-email-template-design-guidelines.md)
 -   [Extra velden voor document
-    personalisatie](./extra-velden-voor-document-personalisatie.md)
+    personalisatie](./extra-fields-for-personalizing.md)
 
 Dynamische template blokken
 ---------------------------
@@ -26,9 +26,9 @@ Met template blokken zorg je dat je een template eindeloos kan
 hergebruiken met andere content. In Copernica kan je gebruik maken van 3
 soorten template blokken.
 
--   [Tekstblok](./template-blokken-het-tekstblok.md) -
+-   [Tekstblok](./the-text-function-for-adding-textual-content-to-your-document.md) -
     voeg tekstuele content toe
--   [Afbeeldingblok](./template-blokken-de-afbeelding-tag.md) -
+-   [Afbeeldingblok](./the-image-function-for-adding-images-to-your-document.md) -
     definieer waar afbeeldingen worden toegevoegd
 -   [Loop
     blok](./template-blokken-de-loop-tag.md) -
@@ -44,7 +44,7 @@ responsive gemaakt. Dus ze worden goed weergegeven op smartphones,
 tablets en normale desktop pc's.
 
 -   [Gratis templates bekijken en
-    downloaden](./gratis-responsive-html-e-mailtemplates.md)
+    downloaden](./free-responsive-html-email-templates.md)
 
 E-maildocumenten
 ----------------
@@ -54,47 +54,47 @@ blokken hebt toegevoegd, kan je starten met het opmaken van je eerste
 document.
 
 -   [Opmaken van een
-    e-maildocument](./opmaken-van-een-e-maildocument.md)
+    e-maildocument](./composing-email-documents-in-copernica.md)
 -   [Afzender, CC, BCC, onderwerp, reply-to instellen bij een
-    e-maildocument](./afzender-cc-bcc-onderwerp-reply-to-instellen-bij-een-e-maildocument.md)
+    e-maildocument](./sender-subject-and-other-email-headers.md)
 -   [Persoonlijke aanhef
-    maken](./persoonlijke-aanhef-maken.md)
+    maken](./personalized-salutation-in-email-using-smarty-code.md)
 -   [De grootte van een afbeelding
-    beperken](./de-grootte-van-een-afbeelding-beperken.md)
+    beperken](./is-it-possible-to-limit-the-size-of-an-image-in-an-image-block.md)
 -   [Document uit ingeroosterde mailing
-    bewerken](./document-uit-ingeroosterde-mailing-bewerken.md)
+    bewerken](./can-i-edit-the-content-of-a-mailing-after-is-has-been-scheduled.md)
 -   [Weergave e-maildocument testen met de Litmus Email
-    Preview](./weergave-e-maildocument-testen-met-de-litmus-email-preview.md)
+    Preview](./using-litmus-email-preview-to-test-your-email-newsletter.md)
 -   [CSS style blokken automatisch omzetten naar inline
-    CSS](./css-style-blokken-automatisch-omzetten-naar-inline-css.md)
+    CSS](./automatically-convert-block-style-elements-to-inline-style-attributes.md)
 -   [Inhoudsopgave in een
-    e-maildocument](./inhoudsopgave-in-een-e-maildocument.md)
+    e-maildocument](./how-to-table-of-contents-in-email-document.md)
 
 Hyperlinks en dergelijke
 ------------------------
 
 -   [De **uitschrijflink** (unsubscribe
-    tag)](./de-uitschrijflink-unsubscribe-tag.md)
+    tag)](./the-unsubscribe-function.md)
 -   [Link toevoegen naar de **webversie** van een
-    e-mail](./linken-naar-de-webversie-van-een-e-mail.md)
+    e-mail](./link-to-the-webversion-of-your-email.md)
 -   [Hyperlinks uitbreiden met Google Analytics
-    variabelen](./hyperlinks-uitbreiden-met-google-analytics-variabelen.md)
+    variabelen](./prepare-your-links-for-google-analytics.md)
 -   [Hyperlinks uitbreiden met inlogcode (profielen automatisch
-    inloggen)](./hyperlinks-uitbreiden-met-inlogcode.md)
+    inloggen)](./how-do-i-add-personalization-login-code-to-my-links.md)
 -   [Linken naar een (gepersonaliseerd)
-    PDF-bestand](./linken-naar-een-pdf-bestand.md)
+    PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Personaliseren van
-    hyperlinks](./personaliseren-van-hyperlinks.md)
+    hyperlinks](./personalizing-hyperlinks.md)
 -   [Linken naar bestanden van het profiel met loadfile en
-    linkfile](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md)
+    linkfile](./the-loadfile-and-linkfile-functions.md)
 
 En verder nog
 -------------
 
 -   [Personalisatie-instellingen van het template of
-    document](./personalisatie-instellingen-van-het-template-of-document.md)
+    document](./document-and-template-personalization-settings.md)
 -   [Template blokken conditioneel
-    tonen](./content-blokken-conditioneel-tonen.md)
+    tonen](./how-do-i-make-content-blocks-conditional.md)
 -   [Kan ik gebruik maken van image maps in mijn
-    e-maildocument?](./kan-ik-gebruik-maken-van-html-image-maps-in-mijn-e-maildocument.md)
+    e-maildocument?](./can-i-use-image-maps-in-email-templates.md)
 

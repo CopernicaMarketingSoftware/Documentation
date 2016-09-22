@@ -20,7 +20,7 @@ worden opgenomen in een rubriek. De beschikbare rubrieken worden getoond
 in het linker overzicht, onder *Artikel rubrieken.*
 
 -   Wanneer je nog geen rubriek(en) hebt, kan je deze
-    [aanmaken](artikel-rubrieken) via het *Artikel* menu.
+    [aanmaken](./create-an-article-category.md) via het *Artikel* menu.
 
 Een artikel kan aan meerdere rubrieken worden toegevoegd. Wanneer je een
 rubriek verwijdert, verwijder je niet de artikelen uit de rubriek.

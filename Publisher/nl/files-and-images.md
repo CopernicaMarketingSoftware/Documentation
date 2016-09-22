@@ -48,12 +48,12 @@ template
 `<img src="naam_van_medialib/naam_van_afbeelding.png" alt="skoftig mooi plaatje" />`
 
 -   [Meer lezen over het beheren en gebruiken van afbeeldingen in
-    Copernica](./beheren-van-afbeeldingen-en-bestanden.md)
+    Copernica](./email-files-and-images.md)
 
 ### Afbeeldingen gebruiken in afbeeldingblokken
 
 Indien er
-[afbeeldingblokken](./template-blokken-de-afbeelding-tag.md)
+[afbeeldingblokken](./the-image-function-for-adding-images-to-your-document.md)
 zijn opgenomen in je HTML template, dan kan je op documentniveau direct
 afbeeldingen uploaden naar dit blok. Vanzelfsprekend is het ook mogelijk
 om een afbeelding uit een afbeeldingenmap of media library te selecteren
@@ -71,7 +71,7 @@ Voor het instellen van deze condities ga je bij de instellingen van het
 afbeeldingblok naar het tabblad **Condities**.
 
 -   [Meer lezen over het instellen van
-    condities](./de-eenvoudige-script-editor.md)
+    condities](./the-easy-script-editor.md)
 
 ### Verkleinen en uitsnijden van afbeeldingen
 
@@ -118,7 +118,7 @@ server linken.
 
 Wil je er zeker van zijn dat je afbeelding altijd goed wordt getoond in
 je e-mailing? Kies dan bij het [instellen van een
-bulkmailing](./bulkmailing-verzenden.md)
+bulkmailing](./sending-a-mass-mailing.md)
 voor de optie '**Externe afbeeldingen opslaan op onze servers**'. De
 afbeelding blijft dan voor altijd beschikbaar. Ook nadat de originele
 locatie is opgeheven.
@@ -131,7 +131,7 @@ afbeeldingen (als bijlage) mee te sturen met je emailings.
 Meer lezen:
 
 -   [Afbeeldingen meesturen met e-mails: wel of geen goed
-    idee](./afbeeldingen-meesturen-met-e-mails-wel-of-geen-goed-idee.md)
+    idee](./embedding-images-in-emailings-the-pros-and-cons.md)
 
 Bestanden en afbeeldingen bij het profiel opslaan
 -------------------------------------------------
@@ -146,9 +146,9 @@ profiel.
 Meer lezen:
 
 -   [Bestanden opslaan bij een
-    profiel](./bestanden-opslaan-bij-een-profiel.md)
+    profiel](./manage-files-uploaded-to-profiles-in-your-database.md)
 -   [Uploadveld toevoegen aan
-    webformulier](./uploadveld-toevoegen-aan-een-webformulier.md)
+    webformulier](./add-upload-field-to-content-web-form.md)
 
 ### Bestanden of afbeeldingen uit het profiel opnemen in je publicaties
 
@@ -156,7 +156,7 @@ Bestanden of afbeeldingen die zijn ge-upload naar het profiel, kunnen
 worden opgenomen in je emailings en webpagina's. Voor het opnemen van
 die bestanden zijn twee speciale functies beschikbaar: [de loadfile an
 linkfile
-functies](./linken-naar-bestanden-van-het-profiel-met-loadfile-en-linkfile.md).
+functies](./the-loadfile-and-linkfile-functions.md).
 
 PDF-bestanden
 -------------
@@ -165,7 +165,7 @@ Copernica biedt de mogelijkheid om (gepersonaliseerde) PDF-bestanden te
 versturen of te linken vanuit een emailing of webpagina.
 
 -   PDF-bestanden kunnen worden [gepersonaliseerd met smarty
-    code](./campagnes-personaliseren.md)
+    code](./personalize-campaigns.md)
 -   Bestanden die je als bijlage meestuurt, of linkt via de speciale
     {linkpdf} tag worden automatisch gepersonaliseerd.
 -   Je kunt natuurlijk ook PDF-bestanden opslaan in de eerder op deze
@@ -174,7 +174,7 @@ versturen of te linken vanuit een emailing of webpagina.
 Meer lezen over dit onderwerp:
 
 -   [Print, PDF en Fax in
-    Copernica](./print-pdf-en-fax.md)
+    Copernica](./print-pdf-and-fax.md)
 -   [Linken naar een gepersonaliseerd PDF-bestand of meesturen als
-    bijlage](./linken-naar-een-pdf-bestand.md)
+    bijlage](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 

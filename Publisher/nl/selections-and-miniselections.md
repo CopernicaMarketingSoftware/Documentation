@@ -11,31 +11,31 @@ nieuwe selectie maak je via *Databasebeheer \>* **Selecties beheren...**
 -   [Nieuwe selectie
     maken](./nieuwe-selectie-maken.md)
 -   [Selecties kopieren en
-    verplaatsen](./selecties-kopieren-en-verplaatsen.md)
+    verplaatsen](./copy-and-move-miniselections.md)
 -   [Selectie verwijderen, deactiveren of
-    archiveren](./selectie-verwijderen-deactiveren-of-archiveren.md)
+    archiveren](./remove-deactivate-or-archive-selections.md)
 -   [De profielen uit een selectie
-    weergeven](./de-profielen-uit-een-selectie-tonen.md)
+    weergeven](./how-do-i-view-the-profiles-from-a-selection.md)
 -   [De subprofielen uit een miniselectie
-    weergeven](./de-subprofielen-uit-een-miniselectie-weergeven.md)
+    weergeven](./how-can-i-view-the-subprofiles-from-a-miniselection.md)
 -   [Subselecties (selecties onder
-    elkaar)](./subselecties.md)
+    elkaar)](./creating-subselections.md)
 -   [Selecties versus
     miniselecties](./selecties-versus-miniselecties.md)
 -   [Selectie
     conditietypes](./selectie-conditietypes.md)
 -   [Selecties met OF en EN
-    regels](./selecties-met-of-en-en-regels.md)
+    regels](./or-and-and-selection-conditions.md)
 -   [Hoe en wanneer worden selecties
-    opgebouwd?](./hoe-en-wanneer-worden-selecties-opgebouwd.md)
+    opgebouwd?](./how-are-selections-rebuilt.md)
 -   [Tips voor het optimaliseren van je selecties en
-    miniselecties](./tips-voor-het-optimaliseren-van-je-selecties-en-miniselecties.md)
+    miniselecties](./tips-for-optimizing-selections-and-mini-selections.md)
 -   [Gebruiksmogelijkheden: selectie authoriseren voor
-    bulkmailings](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md)
+    bulkmailings](./database-intentions-enabling-the-target-for-mass-mailings.md)
 -   [(Mini)selecties gebruiken binnen Smarty
-    personalisatie](./mini-selecties-gebruiken-binnen-smarty-personalisatie.md)
+    personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
 -   [Is mijn (mini)selectie
-    up-to-date?](./is-mijn-selectie-miniselectie-up-to-date.md)
+    up-to-date?](./is-my-selection-miniselection-up-to-date.md)
 
 ### Selectie condities
 
@@ -44,31 +44,31 @@ zijn voor zowel selecties als miniselecties beschikbaar, tenzij anders
 vermeld.
 
 -   [Sorteren en selecteren van
-    (sub)profielen](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md)
+    (./sorting-and-selecting-profiles-in-a-database-or-collection.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
+    sms-campagnes](./create-selections-based-on-the-results-of-mobile-mailings.md)
 -   [Check op resultaten
     campagnes](./selectie-condities-check-op-resultaten-campagnes.md)
 -   [Check op enquete
-    resultaten](./selectieconditie-check-op-enquete.md)
+    resultaten](./selection-condition-check-on-survey.md)
 -   [Check op
     datum](./selectieconditie-check-op-datum.md)
 -   [Check op dubbele of unieke
     profielen](./selectieconditie-check-op-dubbele-of-unieke-profielen.md)
 -   [Check op
-    interessegebied](./selectieconditie-check-op-interessegebied.md)
+    interessegebied](./selection-condition-check-on-interest.md)
     (alleen selecties)
 -   [Check op basis eerdere
-    exports](./selectieconditie-check-op-basis-eerdere-exports.md)
+    exports](./selection-condition-check-on-previous-exports.md)
 -   [Check op
-    wijziging](./selectieconditie-check-op-wijziging.md)
+    wijziging](./selection-condition-check-on-change.md)
 -   [Check op andere selectie of
     miniselectie](./selectieconditie-check-op-andere-selectie-of-miniselectie.md)
 
 ### Veelgemaakte selecties
 
--   [Verjaardagsselectie](./een-verjaardagselectie-maken.md)
--   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
+-   [Verjaardagsselectie](./how-to-create-a-birthday-selection.md)
+-   [Nieuwsbriefselectie](./create-a-mailing-list.md)
 -   [Automatisch verwerken van e-mail
-    bounces](./automatisch-verwerken-bounces.md)
+    bounces](./automatically-process-bounces.md)
 

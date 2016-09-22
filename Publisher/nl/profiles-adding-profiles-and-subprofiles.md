@@ -6,7 +6,7 @@ aanmaakt.
 *Om een profiel aan te maken moet je eerst de stappen uit de tutorial
 ‘[Velden aanmaken](./profiles-adding-database-fields.md)’
 hebben doorlopen. Om een subprofiel aan te maken moet je eerst [een
-collectie creëren](./profielen-collectie-aanmaken.md).*
+collectie creëren](./profiles-adding-collections.md).*
 
 Hoe maak je een profiel aan?
 ----------------------------
@@ -33,6 +33,6 @@ Per collectie kan je meerdere subprofielen aanmaken.
 
 Hoppa! Je hebt succesvol een subprofiel aangemaakt.
 
--   **Vorige:** [Collectie aanmaken](./profielen-collectie-aanmaken.md "Profielen: Collectie aanmaken")
+-   **Vorige:** [Collectie aanmaken](./profiles-adding-collections.md "Profielen: Collectie aanmaken")
 -   **Volgende:** [Profielgegevens](./profielen-profielgegevens.md "Profielen: Profielgegevens")
 

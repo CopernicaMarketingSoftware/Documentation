@@ -7,34 +7,34 @@ Copernica.
 -   [Beginnen met websites en
     webpagina's](./getting-started-with-websites.md)
 -   [Een template maken voor
-    webpagina's](./een-template-maken-voor-webpaginas.md)
+    webpagina's](./how-do-i-create-a-web-template.md)
 -   [Een nieuwe webpagina
-    aanmaken](./een-nieuwe-webpagina-aanmaken.md)
+    aanmaken](./how-do-i-create-a-web-page.md)
 -   [Een domeinnaam koppelen aan een
-    website](./een-domeinnaam-koppelen-aan-een-website.md)
+    website](./link-domain-to-website.md)
 -   [Personaliseren van
-    hyperlinks](./personaliseren-van-hyperlinks.md)
+    hyperlinks](./personalizing-hyperlinks.md)
 -   [Hoe kan ik mijn website testen in de
-    browser](./hoe-kan-ik-mijn-website-testen-in-de-browser.md)
+    browser](./how-do-i-view-my-website-in-my-browser.md)
 -   [Google Analytics gebruiken voor je Copernica
-    website](./google-analytics-gebruiken-voor-je-copernica-website.md)
+    website](./how-do-i-add-google-analytics-tracking-code-to-my-web-pages.md)
 -   [Webpagina afschermen voor anonieme
-    bezoekers](./webpagina-afschermen-voor-anonieme-bezoekers.md)
+    bezoekers](./how-do-i-make-a-webpage-accessible-only-for-logged-on-users.md)
 -   [Landingspagina van webformulier
-    instellen](./de-landingspagina-van-een-webformulier-instellen.md)
+    instellen](./specify-web-form-landing-page.md)
 -   [Hoe stel ik een 404-foutpagina
-    in](./hoe-stel-ik-een-404-foutpagina-in.md)
+    in](./how-do-i-set-up-a-404-error-page.md)
 -   [Informatie uit een URL gebruiken voor
-    personalisatie](./informatie-uit-een-url-gebruiken-voor-personalisatie.md)
+    personalisatie](./get-url-parameters-within-smarty-personalization.md)
 -   Stijlsheet koppelen aan webpagina
 -   [Eigen SSL-domeincertificaat gebruiken voor
-    website](./eigen-ssl-domeincertificaat-gebruiken-voor-website.md)
+    website](./your-website-in-copernica-through-secure-https.md)
 -   [E-mailtemplate als webtemplate gebruiken en vice
-    versa](./e-mailtemplate-als-webtemplate-gebruiken-en-vice-versa.md)
+    versa](./can-i-use-my-email-template-as-a-web-template-and-the-other-way-around.md)
 -   [Naar webpagina linken vanuit
-    emailing](./naar-webpagina-linken-vanuit-emailing.md)
+    emailing](./linking-to-your-website-from-an-emailing.md)
 -   [Hyperlinks uitbreiden met Google Analytics tracking
-    variabelen](./hyperlinks-uitbreiden-met-google-analytics-variabelen.md)
+    variabelen](./prepare-your-links-for-google-analytics.md)
 
 ### Formulier, enquête of feed publiceren
 
@@ -43,9 +43,9 @@ snel en eenvoudig met behulp van speciale tags. Ook kan je deze speciale
 content direct toevoegen vanuit een tekstblok in het webdocument.
 
 -   [RSS en Atom feeds
-    publiceren](./de-loadfeed-functie.md)
+    publiceren](./the-loadfeed-function.md)
 -   [Webformulier op webpagina plaatsen met {webform}
-    tag](./webformulier-op-webpagina-plaatsen.md)
+    tag](./publish-your-web-form.md)
 -   [Enquete publiceren met {survey}
     tag](./enquete-in-webpagina-invoegen.md)
 -   [Content webformulier in iframe

@@ -73,5 +73,5 @@ nieuwsbrief bovenaan te plaatsen.
 -   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "Ontwerp je eigen templates")
 -   [Responsive design: je e-mails klaarstomen voor
     mobile](./responsive-design-je-e-mails-klaarstomen-voor-mobile.md "Responsive design: je e-mails klaarstomen voor mobile")
--   [Gratis responsive HTML-e-mailtemplates](./gratis-responsive-html-e-mailtemplates.md)
+-   [Gratis responsive HTML-e-mailtemplates](./free-responsive-html-email-templates.md)
 

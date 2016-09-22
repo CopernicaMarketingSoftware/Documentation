@@ -10,13 +10,13 @@ allemaal.
     --------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Maak zelf email
-    templates](../images/nl-emailings-01-thumb.png "Maak zelf slimme email templates")](./maak-zelf-slimme-e-mailings.md)
+    templates](../images/nl-emailings-01-thumb.png "Maak zelf slimme email templates")](./create-clever-emailings.md)
 
     Maak je email marketing campagnes persoonlijk met slimme email
     templates.
 
     [Meer over het maken van persoonlijke email
-    campagnes](./maak-zelf-slimme-e-mailings.md "Maak zelf slimme e-mailings")
+    campagnes](./create-clever-emailings.md "Maak zelf slimme e-mailings")
 
 -   [Ontwerp je eigen templates](./ontwerp-je-eigen-email-templates.md "E-mailtemplates ontwerpen")
     ------------------------------------------------------------------------------------------------------------------------------------
@@ -30,54 +30,54 @@ allemaal.
     [Meer over het ontwerpen van eigen
     templates](./ontwerp-je-eigen-templates.md "Ontwerp je eigen templates")
 
--   [Test voor je verzendt](./test-voor-je-verzendt.md "E-mailings testen")
+-   [Test voor je verzendt](./testing-before-sending.md "E-mailings testen")
     ------------------------------------------------------------------------------------------------------------------
 
     [![E-mailings
-    testen](../images/nl-emailings-03-thumb.png "E-mailings testen")](./test-voor-je-verzendt.md)
+    testen](../images/nl-emailings-03-thumb.png "E-mailings testen")](./testing-before-sending.md)
 
     Optimaliseer je email marketing campagnes door ze te testen voor je
     ze verzend. Met Copernica beschik je over verschillende
     testmogelijkheden en controles.
 
     [Meer over het testen van email
-    campagnes](./test-voor-je-verzendt.md "Test voor je verzendt")
+    campagnes](./testing-before-sending.md "Test voor je verzendt")
 
--   [Marketing Automation](./automatiseer-je-campagnes.md "Campagnes automatiseren")
+-   [Marketing Automation](./automate-your-campaigns.md "Campagnes automatiseren")
     ---------------------------------------------------------------------------------------------------------------------------
 
     [![Campagnes
-    automatiseren](../images/nl-emailings-04-thumb.png "Campagnes automatiseren")](./automatiseer-je-campagnes.md)
+    automatiseren](../images/nl-emailings-04-thumb.png "Campagnes automatiseren")](./automate-your-campaigns.md)
 
     Stel marketing automation-trajecten op met onze handige follow-up
     manager. Automatiseer zo je email marketing campagnes.
 
     [Meer over het automatiseren van
-    campagnes](./automatiseer-je-campagnes.md "Automatiseer je campagnes")
+    campagnes](./automate-your-campaigns.md "Automatiseer je campagnes")
 
--   [Verzenden naar je doelgroep](./verzenden-naar-je-doelgroep.md "Verzenden naar je doelgroep")
+-   [Verzenden naar je doelgroep](./send-emailings-to-relations.md "Verzenden naar je doelgroep")
     ----------------------------------------------------------------------------------------------------------------------------------------
 
     [![Verzenden naar je
-    doelgroep](../images/nl-emailings-05-thumb.png "Verzenden naar je doelgroep")](./verzenden-naar-je-doelgroep.md)
+    doelgroep](../images/nl-emailings-05-thumb.png "Verzenden naar je doelgroep")](./send-emailings-to-relations.md)
 
     Kies zelf of je een email verzendt naar al je relaties of naar een
     specifieke selectie uit je database. Zorg ervoor dat je email
     campagne volledig voldoet aan de actuele wetgeving.
 
     [Meer over verzenden naar je
-    doelgroep](./verzenden-naar-je-doelgroep.md "Verzenden naar je doelgroep")
+    doelgroep](./send-emailings-to-relations.md "Verzenden naar je doelgroep")
 
--   [Uitgebreide e-mailstatistieken](./bekijk-gedetailleerde-e-mailstatistieken.md "Uitgebreide e-mailstatistieken")
+-   [Uitgebreide e-mailstatistieken](./view-detailed-reports.md "Uitgebreide e-mailstatistieken")
     -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Uitgebreide
-    e-mailstatistieken](../images/nl-emailings-06-thumb.png "Uitgebreide e-mailstatistieken")](./bekijk-gedetailleerde-e-mailstatistieken.md)
+    e-mailstatistieken](../images/nl-emailings-06-thumb.png "Uitgebreide e-mailstatistieken")](./view-detailed-reports.md)
 
     Bekijk de resultaten van je email marketing campagne in uitgebreide
     statistieken met een eventuele integratie met Google Analytics.
 
     [Meer over uitgebreide email
-    statistieken](./bekijk-gedetailleerde-e-mailstatistieken.md "Uitgebreide e-mailstatistieken")
+    statistieken](./view-detailed-reports.md "Uitgebreide e-mailstatistieken")
 
 

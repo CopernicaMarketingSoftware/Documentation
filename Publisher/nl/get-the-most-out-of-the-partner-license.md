@@ -53,23 +53,23 @@ op.](./neem-contact-met-ons-op.md "Neem contact met ons op")
 ### Vermeld het partnership op je website
 
 [![Registered partner
-logo](../images/Copernica-registered-partner-logo.png "Registered partner logo")](./mediabronnen.md)
+logo](../images/Copernica-registered-partner-logo.png "Registered partner logo")](./media-resources.md)
 
 Als registered partner mag je het [Copernica Registered partner
-logo](./mediabronnen.md "Registered partner logo") op
+logo](./media-resources.md "Registered partner logo") op
 je website plaatsen. Dit is niet enkel een kwaliteitskeurmerk, het
 linken van het logo naar je partnerprofiel op Copernica.com zorgt ook
 voor herkenning bij je websitebezoekers.
 
 Plaats daarnaast op je website informatie [over Copernica Marketing
-Software](./mediabronnen.md "Over Copernica Marketing Software")
+Software](./media-resources.md "Over Copernica Marketing Software")
 en de toegevoegde waarde van je bureau.
 
 ### Word een Copernica expert
 
 Een eerste vereiste om Copernica Marketing Software succesvol in te
 zetten, is bekend raken met [de functies van de
-software](./functies.md). Als onderdeel
+software](./features.md). Als onderdeel
 van de partnerlicentie biedt Copernica uitgebreide mogelijkheden om je
 productkennis te vergroten. Naast de
 [videotutorials](./videos.md "Videotutorials"),

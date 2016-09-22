@@ -7,7 +7,7 @@ met gegevens uit Joomla-formulieren. Gebruik hiervoor de Joomla-plugin.
     Marketing](http://www.bosmadmc.nl "Bosma Direct Marketing")
 -   **Datum:**1 august, 2012
 -   **Licentietype:**Open source
--   **[Installatiehandleiding](./joomla-installatiegids.md)**
+-   **[Installatiehandleiding](./joomla-installation-guide.md)**
     (PDF)
 -   [Downloaden](../downloads/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
 

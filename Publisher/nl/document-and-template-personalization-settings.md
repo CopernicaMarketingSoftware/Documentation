@@ -46,6 +46,6 @@ Extra personalisatie velden
 ---------------------------
 
 Je kan bij het template [extra velden voor
-personalisatie](./extra-velden-voor-document-personalisatie.md)
+personalisatie](./extra-fields-for-personalizing.md)
 opgeven. Vanuit het personalisatie-instellingen menu kan je deze velden
 van een waarde voorzien.

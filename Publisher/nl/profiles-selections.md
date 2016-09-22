@@ -11,7 +11,7 @@ In je [database](./profiles-creating-a-database.md) in
 Copernica kan je allerlei selecties aanmaken. Met selecties kan je
 profielen selecteren die aan een bepaalde voorwaarde voldoen. Alle
 bedrijven die gevestigd zijn in Haarlem bijvoorbeeld. Of alle
-[profielen](./profielen-profielgegevens.md) die
+[profielen](./profiles-profile-data.md) die
 zijn ingeschreven voor je nieuwsbrief. Een selectie is dus eigenlijk een
 filter op je database.
 
@@ -37,7 +37,7 @@ selectie bijvoorbeeld te laten checken of iemand je nieuwsbrief wilt
 ontvangen. Condities aan je selectie toevoegen doe je zo:
 
 -   Klik op ‘[Voeg een nieuwe ‘EN’-conditie toe aan een nieuwe
-    ‘OF’-regel](./selecties-met-of-en-en-regels.md)’
+    ‘OF’-regel](./or-and-and-selection-conditions.md)’
 -   Selecteer het [type
     conditie](./selectie-conditietypes.md)
     dat je wilt toepassen
@@ -51,7 +51,7 @@ Je hebt nu een selectie met condities aangemaakt!
 Opbouwstatus
 ------------
 
-In het tabblad [opbouwstatus](./is-mijn-selectie-miniselectie-up-to-date.md)
+In het tabblad [opbouwstatus](./is-my-selection-miniselection-up-to-date.md)
 kan je zien in hoeverre je selectie al is opgebouwd. Je kan dit scherm
 gewoon wegklikken, zonder dat dit van invloed is op het opbouwen.
 
@@ -69,7 +69,7 @@ gemaakt, het even kan duren voordat de selectie is opgebouwd en alle
 profielen zichtbaar zijn.
 
 -   **Vorige:**
-    [Profielgegevens](./profielen-profielgegevens.md "Profielen: Profielgegevens")
+    [Profielgegevens](./profiles-profile-data.md "Profielen: Profielgegevens")
 -   **Volgende:** [Miniselectie
     aanmaken](./profielen-miniselectie-aanmaken.md "Profielen: Miniselectie aanmaken")
 

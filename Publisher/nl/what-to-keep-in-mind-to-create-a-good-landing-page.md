@@ -57,7 +57,7 @@ Een landingspagina bevat niet veel links. Links naar andere onderdelen
 van de site leiden de bezoeker af van het doel waarvoor hij op de pagina
 komt en het doel wat je zelf voor ogen hebt.
 
-Bied daarom een prominente [call-to-action](./verbeter-je-call-to-action-in-e-mailcampagnes.md)
+Bied daarom een prominente [call-to-action](./how-to-improve-your-email-call-to-actions.md)
 aan op de landingspagina. De landingspagina heeft namelijk één doel voor
 ogen en dat doel moet duidelijk naar voren komen op de pagina. Zorg
 bijvoorbeeld dat de call-to-action boven de vouw van de pagina staat en

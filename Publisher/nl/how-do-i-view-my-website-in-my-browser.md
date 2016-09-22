@@ -11,7 +11,7 @@ Als je al een website met webpagina's hebt aangemaakt in de applicatie,
 dan dien je de website te koppelen aan een geldige domeinnaam.
 
 [Lees hoe je een domein koppelt aan een
-website](./een-domeinnaam-koppelen-aan-een-website.md)
+website](./link-domain-to-website.md)
 
 Wanneer je website is gekoppeld aan een geldige domeinnaam, kan je de
 website met je webbrowser openen, zoals je ook naar iedere andere
