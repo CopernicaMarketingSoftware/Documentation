@@ -13,7 +13,7 @@ Beginnen met Copernica
 
 Als je voor het eerst met Copernica begint te werken is het misschien
 handig om een [korte inleiding bij de onderdelen van
-Copernica](./getting-started---a-brief-overview-of-the-software.md)
+Copernica](./getting-started-a-brief-overview-of-the-software.md)
 te krijgen. Wil je meer informatie over deze onderdelen dan kun je deze
 vinden in de onderstaande onderwerpen.
 
@@ -26,9 +26,9 @@ Onderwerpen
 -   [Webformulieren](./web-forms.md "webformulieren maken en publiceren")
 -   [Templates en documenten](./templates-and-documents.md "Templates en documenten")
 -   [Mailings verzenden](./sending-mailings.md)
--   [Websites](./websites.md "websites")
+-   [Websites](./web-pages.md "websites")
 -   [Deliverability optimaliseren](./the-key-ingredients-for-a-good-deliverability.md)
--   [Enquêtes](./enquetes-maken.md)
+-   [Enquêtes](./create-new-survey.md)
 -   [RSS en Atom feed maken en publiceren](./create-and-publish-rss-and-atom-feeds.md)
 -   [Overzicht van beschikbare functies en invoegcodes](./special-functions-and-tags.md)
 -   [Campagneresultaten bekijken en delen (./campaign-results-and-statistics.md)

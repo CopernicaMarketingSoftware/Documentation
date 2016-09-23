@@ -33,7 +33,7 @@ Hoe onderhoud je de database?
 6.  Verrijk je relatiegegevens met de resultaten van elke campagne die
     je voert. Goede marketing software doet dat automatisch voor je.\
 7.  Controleer bij aanmeldingen dat je
-    [opt-in](./opt-in-double-opt-in-vraagt-u-om-toestemming.md "Opt-in kennisartikel")
+    [opt-in](./opt-in-and-double-opt-in-do-you-ask-for-permission.md "Opt-in kennisartikel")
     toestemming hebt voor elke relatie, dat voorkomt spamklachten.\
 8.  Benut je database om je relaties te onderhouden. Via bijvoorbeeld
     geautomatiseerde verjaardagsmailings en onderhoudswaarschuwingen

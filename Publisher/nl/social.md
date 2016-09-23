@@ -3,7 +3,7 @@ Voeg social media toe aan je eigen
 en behaal nog meer conversie uit je marketingcampagnes. Dankzij de
 integratie van social media bereikt de inhoud van je e-mailings een veel
 groter publiek. Voeg social share-buttons toe aan je e-mailings of
-[webpagina's](./webpaginas.md "Webpagina's")
+[webpagina's](./web-pages.md "Webpagina's")
 en laat je bestaande relaties doorvertellen over jouw laatste nieuws of
 nieuwste producten.
 

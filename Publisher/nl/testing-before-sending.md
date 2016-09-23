@@ -15,8 +15,7 @@ Met een splitrun-test verzend je twee of meerdere versies van één
 e-mailing. Hoeveel versies je gebruikt, hangt af van wat je
 daadwerkelijk test. En met Copernica kan je nagenoeg alles testen:
 
--   De onderwerpregel, de tekst in je pre-header, header, "Van"-veld,
-    etc.
+-   De onderwerpregel, de tekst in je pre-header, header, "Van"-veld, etc.
 -   De inhoud van je e-mailing zoals hyperlinks of [RSS
     feeds](./rss-or-atom-feed.md "RSS Feeds")
 -   Het [ontwerp van je

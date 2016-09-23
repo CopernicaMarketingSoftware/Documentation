@@ -25,7 +25,7 @@ e-mailproviders hoge eisen stellen aan e-mails die ze doorlaten naar hun
 gebruikers.
 
 Als e-mailmarketeer moet je daarom werken aan een [goede
-e-mailreputatie](http://www.copernica.com/nl/blog/e-mailreputatie-hoe-bouw-je-dit-op "Hoe bnouw je e-mailreputatie op")
+e-mailreputatie](./email-reputation.md "Hoe bnouw je e-mailreputatie op")
 om te voorkomen dat je berichten worden geblokkeerd aan de poort. En dat
 is nog maar het halve werk.
 
@@ -106,7 +106,7 @@ handtekening is. De minimumlengte van DKIM-sleutels waar Gmail om vraagt
 is [1024 bits](https://support.google.com/a/answer/174124) lang.
 
 [Lees hoe je DKIM
-instelt](https://www.copernica.com/nl/ondersteuning/e-mails-versleutelen-met-dkim "Lees hoe je DKIM instelt")
+instelt](./signing-your-emails-with-dkim.md "Lees hoe je DKIM instelt")
 
 ### SPF
 
@@ -137,7 +137,7 @@ betreffende domeinnaam te versturen. In je Sender ID stel je in welke
 ip-adressen namens jouw domeinnaam mogen verzenden.
 
 [Lees hoe je Sender ID
-instelt](https://www.copernica.com/en/support/setup-sender-id "Lees hoe je Sender ID instelt")
+instelt](./setup-sender-id.md "Lees hoe je Sender ID instelt")
 
 ### DMARC
 

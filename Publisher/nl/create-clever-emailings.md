@@ -86,8 +86,7 @@ e-mailing](../images/load-rss-in-email-copernica.gif "Dynamische content in je e
 Wil je graag je relaties op de hoogte houden van jouw nieuwste producten
 of je laatste nieuws (bijvoorbeeld van je website)? Copernica biedt
 hiervoor een prima oplossing in de vorm van contentfeeds oftewel [RSS of
-Atom
-feeds](./rss-or-atom-feed.md "RSS of Atom feeds").
+Atom feeds](./rss-or-atom-feed.md "RSS of Atom feeds").
 Maak je eigen feed(s) eenvoudig aan binnen Copernica. Gebruik deze in je
 e-mailings om zo, volledig automatisch, de inhoud actueel te houden.
 
