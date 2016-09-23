@@ -21,7 +21,7 @@ kracht van Copernica nog beter kennen en ben je in staat gecertificeerd
 Copernica-gebruiker te worden.\
 \
 ![Copernica Summit keynote
-ochtend](Copernicacom/copernica-summit-spreker.png "Copernica Summit keynote ochtend")
+ochtend](../images/copernica-summit-spreker.png "Copernica Summit keynote ochtend")
 
 Daarnaast is er een [exclusief
 ochtendprogramma](https://www.copernica.com/nl/ondersteuning/copernica-summit/programma-copernica-summit#partnerochtend)
@@ -50,7 +50,7 @@ Tijdens deze sessies komen praktijkvoorbeelden, tips, tricks en trends
 aan bod waarmee je zelf meteen mee aan de slag kunt.\
 \
 ![Copernica Summit middag
-keynote](Copernicacom/copernica-summit-zaal.png "Copernica Summit middag keynote")
+keynote](../images/copernica-summit-zaal.png "Copernica Summit middag keynote")
 
 Als bezoeker van het Copernica Summit beschik je over een persoonlijk
 programma. Je kan ruim van tevoren aangeven welke sessies je wilt

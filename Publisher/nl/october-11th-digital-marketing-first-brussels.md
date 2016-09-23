@@ -1,5 +1,5 @@
 ![Digital Marketing
-First](Copernicacom/logo-DMF.png "Digital Marketing First")Op donderdag
+First](../images/logo-DMF.png "Digital Marketing First")Op donderdag
 11 oktober vind de 7^e^ editie van het [Digital Marketing
 First](http://www.digitalmarketingfirst.be/) in Brussel plaats.
 Copernica is ondertussen een vaste waarde op deze beurs en zal tijdens
@@ -26,7 +26,7 @@ achtergelaten winkelwagentjes.
 
 ***Bookerz***
 
-![Bookerz](Copernicacom/bookerz-large.png "Bookerz")Bookerz is
+![Bookerz](../images/bookerz-large.png "Bookerz")Bookerz is
 specialist in emotiemarketing. Bookerz ondersteunt u bij het overbrengen
 van uw boodschap en zorgt voor een creatieve invalshoek. Zowel online
 als offline. U focust zich op de praktijk, terwijl Bookerz zich richt op
@@ -37,7 +37,7 @@ Bookerz bouwen aan uw onderneming. Meer informatie over Bookerz:
 
 ***Xplore Group***
 
-![Xplore Group](Copernicacom/xploregroup-large.png "Xplore Group")Xplore
+![Xplore Group](../images/xploregroup-large.png "Xplore Group")Xplore
 Group is het meest succesvolle Java (JEE) & PHP competence center van de
 Benelux. Het 300 personen sterk team levert kwalitatieve en performante
 webapplicaties en e-commerce oplossingen met de nadruk op on- time
@@ -50,7 +50,7 @@ geen geheimen meer kennen voor ons. Meer informatie over XploreGroup:
 
 ***aYaline***
 
-![aYaline](Copernicacom/ayaline-large.png "aYaline")As an experienced
+![aYaline](../images/ayaline-large.png "aYaline")As an experienced
 provider of E-Commerce and an open source pioneer, aYaline builds high
 added-value business solutions devoted to E-Commerce which are designed
 with its clients according to their needs. aYaline has gained real

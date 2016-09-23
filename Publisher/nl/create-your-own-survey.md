@@ -12,7 +12,7 @@ Zet enquêtes in om:
 -   Marktonderzoek uit te voeren onder je eigen relaties;
 
 ![Stel de juiste
-vraag](Copernicacom/nl-enquetes-thumb.png "Stel de juiste vraag")
+vraag](../images/nl-enquetes-thumb.png "Stel de juiste vraag")
 
 Stel de juiste vraag
 --------------------

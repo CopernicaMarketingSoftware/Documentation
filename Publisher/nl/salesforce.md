@@ -6,7 +6,7 @@ opzetten.
 
 \
  ![Integratie Copernica en
-Salesforce](Copernicacom/salesforce-copernica-integration-nl.png "Salesforce en Copernica")\
+Salesforce](../images/salesforce-copernica-integration-nl.png "Salesforce en Copernica")\
 \
  [Vraag de gratis integratie
 aan](http://www.taurosmedia.com/producten/copernica-salesforce-koppeling?utm_source=copernica&utm_medium=button&utm_campaign=salesforce "Aanvragen download Salesforce integratie")

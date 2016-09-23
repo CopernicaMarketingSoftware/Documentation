@@ -51,7 +51,7 @@ tijdschriften men leest, in wat voor huis men woont, wat de leeftijd is,
 waar men zoal naartoe reist, etcetera.
 
 ![Mosaic-model van
-Experian](Copernicacom/mosaic-model.png "Mosaic-model van Experian")
+Experian](../images/mosaic-model.png "Mosaic-model van Experian")
 
 Dit helpt te bepalen of je met de juiste persoon communiceert en je ziet
 ook meteen welk kanaal of middel je het beste inzet met het oog op
@@ -72,7 +72,7 @@ reizigers te inspireren en te informeren. Ze weten dat ze ooit willen
 reizen, maar misschien nog niet waar naartoe en met wie of wanneer.
 
 ![Mail verstuurd nav rustfase
-Travelworld](Copernicacom/rustfase-travelworld-mail.png "Mail verstuurd nav rustfase Travelworld")
+Travelworld](../images/rustfase-travelworld-mail.png "Mail verstuurd nav rustfase Travelworld")
 
 Daarom gaat er vanuit Travelworld wekelijks een e-mailing uit met een
 top 3 van wereldwijde bestemmingen. De content van deze mailing is
@@ -179,7 +179,7 @@ welke potentie een dergelijke implementatie heeft. Hieronder zie je nog
 eens het hele schema:
 
 ![Customer lifecycle schema van
-Travelworld](Copernicacom/CLC-travelworld-schema.png "Customer lifecycle schema van Travelworld")
+Travelworld](../images/CLC-travelworld-schema.png "Customer lifecycle schema van Travelworld")
 
 Waar moet je nog voor opletten? – Learnings van ITG
 ---------------------------------------------------

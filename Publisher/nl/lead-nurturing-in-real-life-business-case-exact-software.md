@@ -30,7 +30,7 @@ traffic wordt gegenereerd naar de website van Exact Software zoals je
 hieronder ook kunt zien:\
 \
 ![Traffic naar website
-Exact](Copernicacom/traffic-naar-exact.png "Traffic naar website Exact")
+Exact](../images/traffic-naar-exact.png "Traffic naar website Exact")
 
 Zodra een prospect op de website van Exact belandt, zijn er
 verschillende vervolgstappen mogelijk. Afhankelijk van deze stappen,
@@ -41,12 +41,12 @@ lead:
 *Voor Sales Qualified Leads:*
 
 ![Kwalificatie voor Sales Qualified
-lead](Copernicacom/salesqualifiedlead.png "Kwalificatie voor Sales Qualified lead") 
+lead](../images/salesqualifiedlead.png "Kwalificatie voor Sales Qualified lead") 
 
 *Voor Marketing Qualified Leads:*
 
 * ![Kwalificatie naar marketing qualified
-lead](Copernicacom/marketingqualifiedlead.png "Kwalificatie naar marketing qualified lead")*
+lead](../images/marketingqualifiedlead.png "Kwalificatie naar marketing qualified lead")*
 
 Wat is lead nurturing?
 ----------------------
@@ -108,7 +108,7 @@ Copernica Marketing Software. De prospect ontvangt vervolgens direct een
 bevestigingsmail:\
 \
 ![Bevestigingsmail Exact
-Software](Copernicacom/bevestigingsmail.jpg "Bevestigingsmail Exact Software")
+Software](../images/bevestigingsmail.jpg "Bevestigingsmail Exact Software")
 
 In de bevestigingsmail worden prospects gevraagd of zij hun interesses
 aan willen vullen. Zo is Exact in staat om meer te leren over hun
@@ -118,7 +118,7 @@ persoonlijke e-mailings versturen op basis van de opgeslagen
 profieldata.\
 \
 ![Content op maat van
-Exact](Copernicacom/content-op-maat-exact.jpg "Content op maat van Exact")
+Exact](../images/content-op-maat-exact.jpg "Content op maat van Exact")
 
 De content van deze mailings hoeft het bedrijf niet handmatig te
 produceren, maar wordt automatisch samengesteld. Gebaseerd op de
@@ -141,14 +141,14 @@ klikken op de call-to-action “Call back” in de e-mail levert meteen 8
 punten op.\
 \
 ![Leadscoring systeem
-Exact](Copernicacom/leadscoring-systeem-exact.png "Leadscoring systeem Exact")
+Exact](../images/leadscoring-systeem-exact.png "Leadscoring systeem Exact")
 
 Op het moment dat iemand twaalf punten scoort, betekent dat die persoon
 een Sales Qualified lead (SQL) is en gaat er automatisch een interne
 mail naar salessupport.
 
 ![Interne mail naar Sales
-afdeling](Copernicacom/interne-mail-sales-exact.jpg "Interne mail naar Sales afdeling")
+afdeling](../images/interne-mail-sales-exact.jpg "Interne mail naar Sales afdeling")
 
 Deze mail bevat een link naar de profielgegevens van de prospect, zodat
 een accountmanager alle benodigde informatie beschikbaar heeft om de

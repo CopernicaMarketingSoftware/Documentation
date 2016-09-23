@@ -17,7 +17,7 @@ In de wereld van e-mailmarketing worden splitrun- en A/B-tests vaak in
 een adem genoemd. Wat veel mensen niet weten is dat er weldegelijk een
 verschil bestaat tussen de twee:
 
-![A/B-test](Copernicacom/splitrun-example.png "A/B-testing")
+![A/B-test](../images/splitrun-example.png "A/B-testing")
 
 -   Bij een splitrunmailing verstuur je twee versies van dezelfde
     mailing aan een klein deel van je verzendlijst, waarna je de best

@@ -15,7 +15,7 @@ krijgt na het akkoord gaan met de voorwaarden nu het volgende scherm te
 zien:
 
 ![Wil je de mailing direct verzenden of inroosteren voor latere
-verzending?](articlesblog/inroosteren-direct-verzenden.png "Wil je de mailing direct verzenden of inroosteren voor latere verzending?")
+verzending?](../images/inroosteren-direct-verzenden.png "Wil je de mailing direct verzenden of inroosteren voor latere verzending?")
 
 E-mailing direct verzenden
 --------------------------
@@ -31,4 +31,4 @@ Wil je de e-mailing inroosteren voor latere verzending? Kies voor
 verzenddatum en –frequentie kiezen.
 
 ![Rooster e-mailing in voor latere
-verzending](articlesblog/mailing-inroosteren-copernica.png "Rooster e-mailing in voor latere verzending")
+verzending](../images/mailing-inroosteren-copernica.png "Rooster e-mailing in voor latere verzending")

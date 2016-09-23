@@ -6,7 +6,7 @@ de tweede Copernica Partner of the Year award uitgereikt aan het full
 service ecommerce bureau uit Rotterdam.
 
 ![ISM eCompany partner of the year
-2013](Copernicacom/ISM-partner-of-the-year.jpg "ISM eCompany Partner of the Year 2013")
+2013](../images/ISM-partner-of-the-year.jpg "ISM eCompany Partner of the Year 2013")
 
 \
 \
@@ -42,4 +42,4 @@ mocht dit jaar de prijs voor beste nieuwkomer 2013 in ontvangst nemen.\
 \
 
 ![Digitalbits Best Newcomer
-2013](Summit2013/best-newcomer-3.jpg "Digitalbits Best Newcomer 2013")
+2013](../images/best-newcomer-3.jpg "Digitalbits Best Newcomer 2013")

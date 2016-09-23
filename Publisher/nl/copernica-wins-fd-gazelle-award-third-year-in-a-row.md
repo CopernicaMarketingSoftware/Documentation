@@ -1,5 +1,5 @@
 ![FD Gazelle
-2012.jpg](Copernicacom/fd-2012.jpg "FD Gazelle 2012.jpg")Copernica is
+2012.jpg](../images/fd-2012.jpg "FD Gazelle 2012.jpg")Copernica is
 ook in 2012 weer FD Gazelle en bevindt zich hiermee wederom tussen de
 snelst groeiende ondernemingen van Nederland.
 

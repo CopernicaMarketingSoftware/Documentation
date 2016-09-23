@@ -5,7 +5,7 @@ Het bedrijf voert momenteel proeven uit met het opnemen van de 
 Gmail-inbox in de zoekresultaten. Wat betekent dit voor e-mailmarketing?
 
 ![Gmail in de zoekresultaten, zijn jouw e-mails al
-SEO-proof?](Copernicacom/seo-proof-email-copernica.jpg "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
+SEO-proof?](../images/seo-proof-email-copernica.jpg "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
 
 [\
 Gmail Field
@@ -19,7 +19,7 @@ mail met tips van een vriend voorgeschoteld als je zoekt naar
 \
 
 ![Gmail in de zoekresultaten, zijn jouw e-mails al
-SEO-proof?](Copernicacom/google-email-zoekresultaten.png "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
+SEO-proof?](../images/google-email-zoekresultaten.png "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
 
 \
 
@@ -40,7 +40,7 @@ in de zoekresultaten.\
 \
 
 ![Gmail in de zoekresultaten, zijn jouw e-mails al
-SEO-proof?](Copernicacom/google-email-zoekresultaten-2.png "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
+SEO-proof?](../images/google-email-zoekresultaten-2.png "Gmail in de zoekresultaten, zijn jouw e-mails al SEO-proof?")
 
 Als e-mailmarketeer doe je er dus verstandig aan om op veilig te spelen
 en ervoor te zorgen dat jouw e-mails in deze priority-inbox belanden.

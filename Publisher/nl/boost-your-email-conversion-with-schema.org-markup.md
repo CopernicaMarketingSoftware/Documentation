@@ -3,7 +3,7 @@ je call-to-action kon klikken zonder de e-mail te openen? Wat zou dat
 voor conversieboost opleveren? Kom er zelf achter door gebruik te maken
 van microdata en Schema.org.
 
-![](Copernica_cases/conversion-copernica.jpg "Meer conversie met Schema.org-opmaak voor e-mails")
+![](../images/conversion-copernica.jpg "Meer conversie met Schema.org-opmaak voor e-mails")
 
 Wat is Schema.org?
 ------------------
@@ -65,7 +65,7 @@ een evenement? Met microdata maak je dat duidelijk aan de ontvangende
 e-mailclient, waardoor je call-to-action al in de onderwerpregel
 zichtbaar kan zijn:
 
-![](Copernica_cases/schema-org-microdata.png "Meer conversie met Schema.org-opmaak voor e-mails")
+![](../images/schema-org-microdata.png "Meer conversie met Schema.org-opmaak voor e-mails")
 
 Hetzelfde kan je doen om:
 

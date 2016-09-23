@@ -15,7 +15,7 @@ je boodschap naar minder mensen te sturen, maar maak je geen zorgen; de
 kans is groot dat je verrast zult zijn door de goede resultaten!
 
 ![Reken af met
-non-respondenten](articlesblog/Copernica-RekenAfMetNon-Respondenten.jpg "Reken af met non-respondenten")
+non-respondenten](../images/Copernica-RekenAfMetNon-Respondenten.jpg "Reken af met non-respondenten")
 
 Vergelijk een actief beleid om non-respondenten te verwijderen met het
 snoeien van een boom. Je doet dit om hem beter in bloei te laten komen

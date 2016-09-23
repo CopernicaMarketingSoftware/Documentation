@@ -61,7 +61,7 @@ Helpdocumentatie
 ----------------
 
 ![Online
-documentatie](Copernicacom/AandeslagOnlineDocumentatie.png "Online documentatie")Tijdens
+documentatie](../images/AandeslagOnlineDocumentatie.png "Online documentatie")Tijdens
 het werken met Copernica kan je gebruik maken van de [handige
 helpdocumentatie](https://www.copernica.com/nl/ondersteuning/helpdocumentatie "Handige helpdocumentatie").
 Hier vind je antwoord op de meest gestelde vragen en een uitleg van de

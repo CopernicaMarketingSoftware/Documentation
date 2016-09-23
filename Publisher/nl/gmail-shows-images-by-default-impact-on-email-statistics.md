@@ -28,7 +28,7 @@ omdat niet alle gebruikers afbeeldingen in e-mails laden.
 
 ![Een gebruiker opent zijn e-mail en laadt afbeeldingen via de servers
 van
-Gmail](Copernica_cases/afbeeldingen-email-copernica.png "Een gebruiker opent zijn e-mail en laadt afbeeldingen")
+Gmail](../images/afbeeldingen-email-copernica.png "Een gebruiker opent zijn e-mail en laadt afbeeldingen")
 
 Zelfs als je geen afbeeldingen in je e-mail opneemt, plaatst Copernica
 een onzichtbare
@@ -52,7 +52,7 @@ Wat Gmail nu echter doet is:
 
 ![Een gebruiker opent zijn e-mail en laadt afbeeldingen via de servers
 van
-Gmail](Copernica_cases/afbeeldingen-email-copernica-google.png "Een gebruiker opent zijn e-mail en laadt afbeeldingen via de servers van Gmail")
+Gmail](../images/afbeeldingen-email-copernica-google.png "Een gebruiker opent zijn e-mail en laadt afbeeldingen via de servers van Gmail")
 
 Op [zijn
 blog](http://gmailblog.blogspot.nl/2013/12/images-now-showing.html)

@@ -23,7 +23,7 @@ reserveren dan een plek voor je bij een van de sessies.\
 Sprekers
 --------
 
-![Bob Nijk](EventsNL/bobnijk.jpg "Bob Nijk")
+![Bob Nijk](../images/bobnijk.jpg "Bob Nijk")
 
 ### Bob Nijk
 
@@ -48,7 +48,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 
 +--------------------------------------+--------------------------------------+
 | ![Sylvano                            | ### Sylvano Buskens                  |
-| Buskens](EventsNL/sylvanobuskens.jpg |                                      |
+| Buskens](../images/sylvanobuskens.jpg |                                      |
 |  "Sylvano Buskens")                  | Sylvano Buskens is e-commerce        |
 |                                      | manager bij de geschenkenwinkel Oil  |
 |                                      | & Vinegar. Hij heeft al ruim tien    |
@@ -81,7 +81,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 
 +--------------------------------------+--------------------------------------+
 | ![Jacco van der                      | ### Jacco van der Zee                |
-| Zee](EventsNL/jaccovanderzee.jpg "Ja |                                      |
+| Zee](../images/jaccovanderzee.jpg "Ja |                                      |
 | cco van der Zee")                    | Jacco van der Zee is sinds 2010      |
 |                                      | commercieel directeur bij Webprint,  |
 |                                      | de meest complete online fotoservice |
@@ -116,7 +116,7 @@ een van de eerste grote partijen in Nederland die lead marketing omarmt.
 
 +--------------------------------------+--------------------------------------+
 | ![Johan                              | ### Johan Smits                      |
-| Smits](EventsNL/johansmits.jpg "Joha |                                      |
+| Smits](../images/johansmits.jpg "Joha |                                      |
 | n Smits")                            | Johan Smits is partner bij           |
 |                                      | Yellowgrape. Smits is fervent        |
 |                                      | voorvechter van de strategische      |

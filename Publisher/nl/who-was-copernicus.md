@@ -8,7 +8,7 @@ Theorie van Copernicus
 ----------------------
 
 ![Wie was
-Copernicus?](Copernicacom/copernicus.png "Wie was Copernicus?")
+Copernicus?](../images/copernicus.png "Wie was Copernicus?")
 
 In de theorie van Copernicus staat de zon nabij het centrum van het
 universum en draaien de aarde en alle andere planeten rond de zon.

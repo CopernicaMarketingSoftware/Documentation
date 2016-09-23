@@ -8,7 +8,7 @@ Webpagina's maken met templates
 -------------------------------
 
 ![Webpagina's maken met
-templates](Copernicacom/nl-webpaginas-templates.png "Webpagina's maken met templates")
+templates](../images/nl-webpaginas-templates.png "Webpagina's maken met templates")
 
 De creatie van je eigen webpagina begint bij het maken van een template.
 Die vormt de basis van je webpagina. Met de WYSIWYG-editor van Copernica
@@ -27,7 +27,7 @@ Webpagina's personaliseren met Copernica
 ----------------------------------------
 
 ![Webpagina's personaliseren met
-Copernica](Copernicacom/nl-webpaginas-personalisatie.png "Webpagina's personaliseren met Copernica")
+Copernica](../images/nl-webpaginas-personalisatie.png "Webpagina's personaliseren met Copernica")
 
 Wist je dat de relatiegegevens die je binnen Copernica opslaat,
 inzetbaar zijn voor personalisatie van je webpagina? Daarvoor gebruikt

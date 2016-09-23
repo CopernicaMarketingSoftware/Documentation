@@ -21,7 +21,7 @@ naar[ communication@copernica.com](mailto:communication@copernica.com?Subject=R
 we reserveren een plek voor je. Let op: het aantal plekken is
 gelimiteerd, dus registreer direct!
 
-[![](Copernicacom/Exact-webinar-header.png "Copernica - Exact webinar")](mailto:communication@copernica.com?Subject=Register%20for%20Exact%20webinar&Body=I%20'd%20like%20to%20sign-up%20for%20the%20webinar%20on%20December%2010th%20at%203:30gmt%20(16:30%20CET))
+[![](../images/Exact-webinar-header.png "Copernica - Exact webinar")](mailto:communication@copernica.com?Subject=Register%20for%20Exact%20webinar&Body=I%20'd%20like%20to%20sign-up%20for%20the%20webinar%20on%20December%2010th%20at%203:30gmt%20(16:30%20CET))
 
 Exact gelooft in de kracht van verbinding. Het verbinden van personen
 onderling, en het verbinden van bedrijven met personen. Dat is waarom
@@ -42,7 +42,7 @@ Deze aflevering van CopernicaTV is Engelstalig.
 
 **Over Exact**
 
-![Exact Logo](Copernicacom/exact-logo.png "Exact Logo")
+![Exact Logo](../images/exact-logo.png "Exact Logo")
 
 Al sinds 1984 ontwikkelt Exact bedrijfssoftware, varierend van
 oplossingen voor ERP, CRM, bedrijfsadministratie en payrolling. Het

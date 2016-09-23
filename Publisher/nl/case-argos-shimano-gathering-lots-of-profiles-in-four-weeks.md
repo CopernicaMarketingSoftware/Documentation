@@ -1,4 +1,4 @@
-![Argos](Copernicacom/logo-argos.png "Argos")[Argos](http://argosenergies.com/nl/ "Argos")
+![Argos](../images/logo-argos.png "Argos")[Argos](http://argosenergies.com/nl/ "Argos")
 is sinds maart 2012 hoofdsponsor van de wielerploeg Team Argos-Shimano.
 Hiermee wil het bedrijf zijn Europese groei-ambities versterken en de
 merknaam steviger op de Europese kaart zetten.\
@@ -40,7 +40,7 @@ verzorgde de koppeling met Copernica.\
 **Hoe werd de actie opgezet?\
 \
 **![Tour Weken
-landingspagina](Copernicacom/tourweken-landingspagina.png "Tour Weken landingspagina")Bezoekers
+landingspagina](../images/tourweken-landingspagina.png "Tour Weken landingspagina")Bezoekers
 van deelnemende Argos tankstations ontvingen tijdens de vier Tourweken
 een actiecode voor iedere tankbeurt van Euro 25,-. Met deze actiecode
 maakte men kans op diverse prijzen zoals onder meer een tankpas met een
@@ -67,5 +67,5 @@ Daarbij schreven 26% van de deelnemers aan de Tourweken zich ook in voor
 de nieuwsbrief.\
 \
 ![Actiemail Tour
-Weken](Copernicacom/tourweken-mail.png "Actiemail Tour Weken")**\
+Weken](../images/tourweken-mail.png "Actiemail Tour Weken")**\
 **

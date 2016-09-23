@@ -3,7 +3,7 @@ kernwaarden 'innovatief, gepassioneerd en ondernemend' heeft Copernica
 de voorbije jaren verschillende awards in ontvangst mogen nemen.
 Hieronder vind je een greep uit onze prijzenkast:
 
-![Red Herring Award](Copernicacom/redherring.png "Red Herring Award")
+![Red Herring Award](../images/redherring.png "Red Herring Award")
 
 Red Herring Award
 -----------------
@@ -17,7 +17,7 @@ als bedrijven die onze manier van leven en werken zouden veranderen. \
 \
 \
 
-![FD Gazellen Awards](Copernicacom/fd-2014.png "FD Gazellen Awards")
+![FD Gazellen Awards](../images/fd-2014.png "FD Gazellen Awards")
 
 FD Gazellen Awards
 ------------------
@@ -31,7 +31,7 @@ positief te zijn en in de voorgaande twee jaar maximaal één jaar
 verlieslatend.
 
 \
- ![Emerce Top 100](Copernicacom/emerce.png "Emerce Top 100")
+ ![Emerce Top 100](../images/emerce.png "Emerce Top 100")
 
 Emerce Top 100
 --------------

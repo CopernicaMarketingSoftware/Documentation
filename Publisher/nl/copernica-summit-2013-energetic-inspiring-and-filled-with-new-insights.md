@@ -20,7 +20,7 @@ behalen valt met slechts enkele kleine veranderingen.\
 \
 
 ![Copernica Summit
-keynote](Copernicacom/copernica-summit-polar.jpg "Copernica Summit keynote")
+keynote](../images/copernica-summit-polar.jpg "Copernica Summit keynote")
 
 Naast Turner waren er tijdens het middagprogramma nog 4 andere
 keynotepresentaties. Onder andere Zakaria Amlal van Gracious Studios
@@ -42,7 +42,7 @@ allemaal bij komen kijken.\
 \
 
 ![Copernica Summit session
-full](Copernicacom/copernica-summit-session.jpg "Copernica Summit session full")
+full](../images/copernica-summit-session.jpg "Copernica Summit session full")
 
 Ten slotte werd de dag afgesloten met twee inspirerende sessies. Emiel
 Bruijntjes, CTO van Copernica Marketing Software presenteerde
@@ -68,7 +68,7 @@ vernieuwende verdienmodellen en innovaties voor internetbureaus.\
 \
 
 ![Copernica Summit certification in the
-morning](Copernicacom/copernica-summit-morning.jpg "Copernica Summit certification in the morning")
+morning](../images/copernica-summit-morning.jpg "Copernica Summit certification in the morning")
 
 Tijdens de gebruikersochtend was er voor gebruikers van Copernica
 Marketing Software de gelegenheid om verschillende trainingen bij te
@@ -86,7 +86,7 @@ bewezen binnen het partner netwerk van Copernica.\
 \
 
 ![ISM Copernica Partner of the
-Year](Copernicacom/ISM-partner-of-the-year.jpg "ISM Copernica Partner of the Year")
+Year](../images/ISM-partner-of-the-year.jpg "ISM Copernica Partner of the Year")
 
 Bij de selectie voor Partner of the Year wordt onder andere gekeken naar
 omzetstijging, deelname aan beurzen en gezamenlijke initiatieven zoals

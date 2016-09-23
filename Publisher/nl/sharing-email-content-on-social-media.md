@@ -5,7 +5,7 @@ gebruik van javascript, wat ze ongeschikt maakt voor e-mails. Maar geen
 nood, er is ook een manier om share-buttons in te zetten door alleen
 gebruik te maken van html (en een beetje Smarty).
 
-![](Copernicacom/share.png "Copernicacom/share.png")
+![](../images/share.png "../images/share.png")
 
 Webpagina’s delen vanuit je nieuwsbrief
 ---------------------------------------

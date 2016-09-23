@@ -23,7 +23,7 @@ makkelijk kunt gebruiken om een nieuwe klant aan te zetten tot een
 aankoop.
 
 ![Welkomstmail Suitable met
-kortingscode](Copernicacom/Suitable-mail-2.png "Welkomstmail Suitable met kortingscode")Zo
+kortingscode](../images/Suitable-mail-2.png "Welkomstmail Suitable met kortingscode")Zo
 ontvangt iedere nieuwe nieuwsbriefabonnee van
 [Suitableshop.nl](http://www.suitableshop.nl/) een kortingscode goed
 voor 10 EUR korting bij een minimale besteding van 99 EUR in de
@@ -43,7 +43,7 @@ meer uitgeven als ze kopen na het ontvangen van een abandoned shop cart
 mail (bron: SeeWhy Research, 2011).
 
 [![bax-shop
-mail](Copernicacom/bax-shop-mail.png "bax-shop mail")Bax-shop](http://www.bax-shop.nl/)
+mail](../images/bax-shop-mail.png "bax-shop mail")Bax-shop](http://www.bax-shop.nl/)
 maakt gebruik van een abandoned shopping cart mail die zij versturen
 naar aanleiding van een ‘vergeten’ aankoop. Deze mails halen een open
 rate van gemiddeld 60% en een click-through rate van 34%. Dat ligt voor
@@ -75,7 +75,7 @@ winbackmails. E-mails die je verstuurt wanneer een klant al een tijdje
 nieuwsbrief niet meer heeft geopend.
 
 [![FitForMe
-mail](Copernicacom/fitforme-mail.png "FitForMe mail")FitForMe](http://www.fitforme.nl/)
+mail](../images/fitforme-mail.png "FitForMe mail")FitForMe](http://www.fitforme.nl/)
 heeft met behulp van
 [segmentatie](http://www.copernica.com/nl/over-ons/nieuws/webwinkeliers-7-segmentatietips-voor-e-mailmarketing)
 verschillende contactmomenten gedefinieerd voor hun webshop in
@@ -110,7 +110,7 @@ persoonlijker te maken. Anders is het zonde van al die
 als je er niks mee doet.
 
 ![FitForMe mail op basis van
-behoeften](Copernicacom/fitforme-mail2.png "FitForMe mail op basis van behoeften")Nog
+behoeften](../images/fitforme-mail2.png "FitForMe mail op basis van behoeften")Nog
 even voortbordurend op het voorbeeld van FitForMe: deze webshop past
 gerichte communicatie toe op basis van geslacht. Maar ook op basis van
 leeftijd, behoeftes en aankoopdata. Binnen die gerichte e-mailcampagnes

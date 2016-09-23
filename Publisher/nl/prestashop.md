@@ -3,7 +3,7 @@ professionele e-mailmarketing te bedrijven voor je Prestashop webwinkel.
 Zet zelf in enkele stappen persoonlijke en geautomatiseerde e-mailings
 op met behulp van deze integratie.
 
-![prestashop-copernica-integration](Copernicacom/prestashop-copernica-integration-nl.png "Prestashop&Copernica")\
+![prestashop-copernica-integration](../images/prestashop-copernica-integration-nl.png "Prestashop&Copernica")\
 
 [Download de
 integratie](Copernicacom/copernica-prestashop.zip "Download de Prestashop integratie")

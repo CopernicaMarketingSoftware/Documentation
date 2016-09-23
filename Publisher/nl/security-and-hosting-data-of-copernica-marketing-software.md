@@ -142,7 +142,7 @@ niet goed wordt ge-escaped. Denk aan het verhaal van ‘little bobby drop
 tables’\
 \
 ![Little Bobby Drop
-Tables](Copernicacom/droptables.jpg "Little Johnny Drop Tables")
+Tables](../images/droptables.jpg "Little Johnny Drop Tables")
 
 Het onderliggend framework van Copernica Marketing Software vangt dit af
 doordat Copernica alle queries schrijft met zogenaamde placeholders, die

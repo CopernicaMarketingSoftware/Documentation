@@ -13,7 +13,7 @@ een manier om ervoor te zorgen dat jouw e-mails daar niet tussen zitten:
 door relevant te zijn.
 
 ![Email open
-rates](Copernicacom/email-open-rates-copernica.png "Increase your email open rates")
+rates](../images/email-open-rates-copernica.png "Increase your email open rates")
 
 Het bepalen van relevantie
 --------------------------

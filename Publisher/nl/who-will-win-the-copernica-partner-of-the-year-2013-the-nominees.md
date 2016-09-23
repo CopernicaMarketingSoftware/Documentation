@@ -7,7 +7,7 @@ Bij de uitreiking van deze award wordt gekeken naar de inzet en omzet
 van Copernica partners gedurende het afgelopen jaar.
 
 ![Copernica Partner of the Year
-2013](Copernicacom/copernica-partner-of-the-year-2013.png "Copernica Partner of the Year")
+2013](../images/copernica-partner-of-the-year-2013.png "Copernica Partner of the Year")
 
 Wie volgt Redhotminute op?
 --------------------------

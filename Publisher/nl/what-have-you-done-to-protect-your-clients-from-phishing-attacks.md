@@ -12,7 +12,7 @@ heb jij gedaan om de strijd tegen spammers te winnen en je klanten te
 beschermen tegen phishing-aanvallen?
 
 ![91,4% of all emails received by Gmail were signed with DKIM or
-SPF](articlesblog/dkim-spf-signing.jpg "91,4% of all emails received by Gmail were signed with DKIM or SPF")
+SPF](../images/dkim-spf-signing.jpg "91,4% of all emails received by Gmail were signed with DKIM or SPF")
 
 70 procent alle e-mails is spam
 -------------------------------
@@ -35,7 +35,7 @@ praktijk staat bekend als phishing, en ook jij kan er slachtoffer van
 worden.
 
 ![SPF, DKIM and
-SenderID](articlesblog/deliverability-copernica.jpg "SPF, DKIM and SenderID")
+SenderID](../images/deliverability-copernica.jpg "SPF, DKIM and SenderID")
 
 Phishing
 --------
@@ -87,7 +87,7 @@ het niets. Dus om te voorkomen dat jouw bedrijf wordt gespooft door
 phishers, zal je zelf voorzorgsmaatregelen moeten nemen.
 
 ![SPF, DKIM and
-SenderID](articlesblog/senderid-spf-dkim-email-copernica.jpg "SPF, DKIM and SenderID")
+SenderID](../images/senderid-spf-dkim-email-copernica.jpg "SPF, DKIM and SenderID")
 
 Autheniticatiedata instellen
 ----------------------------

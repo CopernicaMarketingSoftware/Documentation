@@ -82,11 +82,11 @@ het bericht wel of niet belangrijk is.
 
 *Gmail:*
 
-![Gmail-relevantie.jpg](Copernicacom/gmail.jpg "Gmail-relevantie.jpg")
+![Gmail-relevantie.jpg](../images/gmail.jpg "Gmail-relevantie.jpg")
 
 *Hotmail:*
 
-![hotmail-relevantie.jpg](Copernicacom/hotmail-aangepast.jpg "hotmail-relevantie.jpg")
+![hotmail-relevantie.jpg](../images/hotmail-aangepast.jpg "hotmail-relevantie.jpg")
 
 Daarom is het belangrijk te allen tijde je database up-to-date te houden
 en de kwaliteit ervan te waarborgen. Dit doe je door je database te

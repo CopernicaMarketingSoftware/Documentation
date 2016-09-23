@@ -8,7 +8,7 @@ we nu dat we voor het tweede jaar op rij door het Nederlandse
 bedrijfsleven als beste ESP zijn verkozen!
 
 ![Copernica nummer 1 ESP
-Nederland](Copernicacom/top100-notering.jpg "Copernica nummer 1 ESP Nederland")
+Nederland](../images/top100-notering.jpg "Copernica nummer 1 ESP Nederland")
 
 Inzet loont!
 ------------

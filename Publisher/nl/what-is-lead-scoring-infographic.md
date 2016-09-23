@@ -1,5 +1,5 @@
 [Download de volledige
-infographic](https://pic.vicinity.nl/127/0/121241/What-is-lead-scoring-Copernica.png "Wat is lead scoring")
+infographic](../images/What-is-lead-scoring-Copernica.png "Wat is lead scoring")
 
 Lead scoring komt voort uit de behoefte zo relevant mogelijk te zijn.
 Tot nu toe richtten de meeste organisaties zich enkel op het verzamelen
@@ -64,7 +64,7 @@ volgende lead scoring toe:
 -   Etcetera
 
 [![Een Copernica infographic over het effect van lead
-scoring](Copernicacom/What-is-lead-scoring-Copernica.png "Wat is lead scoring")](https://pic.vicinity.nl/127/0/121241/What-is-lead-scoring-Copernica.png'%20title='Wat%20is%20lead%20scoring)
+scoring](../images/What-is-lead-scoring-Copernica.png "Wat is lead scoring")](../images/What-is-lead-scoring-Copernica.png'%20title='Wat%20is%20lead%20scoring)
 
 Iedereen die een positieve score haalt, is betrokken. Waarbij je de
 relaties of klanten die een hogere score dan 45 behalen kan bestempelen

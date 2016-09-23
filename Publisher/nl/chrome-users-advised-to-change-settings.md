@@ -18,14 +18,14 @@ Instellingen aanpassen
     nog niet zichtbaar zijn
 
 ![Show advanced settings in
-Chrome](articlesblog/advanced-settings-chrome.png "Show advanced settings in Chrome")
+Chrome](../images/advanced-settings-chrome.png "Show advanced settings in Chrome")
 
 -   Scroll naar *Privacy*
 -   Vink de volgende optie uit: *Predict network actions to improve load
     performance*
 
 ![Predict network actions to improve load
-performance](articlesblog/privacy-chrome.png "Predict network actions to improve load performance")
+performance](../images/privacy-chrome.png "Predict network actions to improve load performance")
 
 Zoals gezegd gaat het hier om een bug die in alleen in Chrome voorkomt.
 Gebruikers van andere browsers zoals Firefox hoeven deze instellingen

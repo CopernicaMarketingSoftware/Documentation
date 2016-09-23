@@ -32,7 +32,7 @@ Marketingzaal B
 
 **Sylvano Buskens - E-mailmarketing automation bij Oil & Vinegar**\
  ![Sylvano Buskens - Oil &
-Vinegar](EventsNL/sylvanobuskens.jpg "Sylvano Buskens - Oil & Vinegar ")Oil
+Vinegar](../images/sylvanobuskens.jpg "Sylvano Buskens - Oil & Vinegar ")Oil
 & Vinegar is een typisch on- en offline speler. Door een compleet
 klantprofiel in een centrale database vast te leggen, is Oil & Vinegar
 in staat om de e-mailmarketing nog relevanter te maken. Dat draagt bij
@@ -49,7 +49,7 @@ Buskens](https://www.copernica.com/nl/webwinkel-vakdagen/sprekers-webwinkel-vakd
 
 **Automatische e-mailmarketingcampagnes bij Webprint**\
  ![Jacco van der Zee -
-Webprint](EventsNL/jaccovanderzee.jpg "Jacco van der Zee - Automatische e-mailmarketingcampagnes bij Webprint")De
+Webprint](../images/jaccovanderzee.jpg "Jacco van der Zee - Automatische e-mailmarketingcampagnes bij Webprint")De
 online fotoservice Webprint helpt mensen herinneringen tastbaar te
 maken. Om Europees door te groeien is een sterke online strategie nodig.
 Het real-time en geautomatiseerd inspelen op gebeurtenissen van een
@@ -74,7 +74,7 @@ Programma
 
 **Bob Nijk - Leadmarketing voor neckermann.com; de toekomst van
 e-commerce?**\
- ![Bob Nijk](EventsNL/bobnijk.jpg "Bob Nijk")Het is nog een groot
+ ![Bob Nijk](../images/bobnijk.jpg "Bob Nijk")Het is nog een groot
 onontgonnen terrein binnen e-commerce: de inzet van lead marketing. Met
 lead marketing analyseer en waardeer je het gedrag van klanten. De
 scores (lead scoring) die hieruit voortvloeien, leiden tot klant- en/of

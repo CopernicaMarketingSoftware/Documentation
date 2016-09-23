@@ -24,7 +24,7 @@ kaartje in de statistieken zien dat de provincie Noord-Holland groen
 gekleurd wordt.
 
 ![Screenshot uit statistieken
-Copernica](articlesblog/copernica-gmail.png "Screenshot uit statistieken Copernica")
+Copernica](../images/copernica-gmail.png "Screenshot uit statistieken Copernica")
 
 Nu dat downloaden bij Gmail-gebruikers echter in veel gevallen door de
 servers van Google wordt gedaan, wordt de locatie van die proxy’s

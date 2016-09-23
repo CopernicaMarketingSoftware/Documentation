@@ -81,7 +81,7 @@ afleveren en voor subscription management.
 [Bekijk grotere
 afbeelding](../images/Pleisty-Features-Email.jpg)![Pleisty's
 features voor
-e-mail](integrations/Pleisty-Features-Email.jpg "Pleisty en e-mailmarketing")
+e-mail](../images/Pleisty-Features-Email.jpg "Pleisty en e-mailmarketing")
 
 Contact
 -------

@@ -6,7 +6,7 @@ definieer zelf doelgroepen met behulp van selecties binnen Copernica.
     ------------------------------------------------------------------------------------------------------------------------
 
     [![Maak je eigen
-    database](Copernicacom/nl-profiles-01-thumb.png "Maak je eigen database")](./creating-your-own-databases.md)
+    database](../images/nl-profiles-01-thumb.png "Maak je eigen database")](./creating-your-own-databases.md)
 
     Jij bepaalt welke gegevens je van je relaties opslaat en gebruikt
     voor je marketingcampagnes. Je bewaart het allemaal in je Copernica
@@ -19,7 +19,7 @@ definieer zelf doelgroepen met behulp van selecties binnen Copernica.
     -----------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Definieer doelgroepen met
-    selecties](Copernicacom/nl-profiles-02-thumb.png "Definieer doelgroepen met selecties")](./define-target-groups-with-selections.md)
+    selecties](../images/nl-profiles-02-thumb.png "Definieer doelgroepen met selecties")](./define-target-groups-with-selections.md)
 
     Met behulp van de selecties die je binnen Copernica aanmaakt, maak
     je jouw database overzichtelijk en verzend je gemakkelijk gerichte
@@ -32,7 +32,7 @@ definieer zelf doelgroepen met behulp van selecties binnen Copernica.
     ------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Beheer automatisch je
-    relaties](Copernicacom/nl-profiles-03-thumb.png "Beheer automatisch je relaties")](./manage-your-relations-automatically.md)
+    relaties](../images/nl-profiles-03-thumb.png "Beheer automatisch je relaties")](./manage-your-relations-automatically.md)
 
     Met Copernica kan je alle wijzigingen automatisch verwerken. Dat
     levert tijdswinst op en je database blijft continu up-to-date.
@@ -44,7 +44,7 @@ definieer zelf doelgroepen met behulp van selecties binnen Copernica.
     ---------------------------------------------------------------------------------------------------------------------------------------
 
     [![Importeer en exporteer
-    data](Copernicacom/nl-profiles-04-thumb.png "Importeer en exporteer data")](./import-and-export-data.md)
+    data](../images/nl-profiles-04-thumb.png "Importeer en exporteer data")](./import-and-export-data.md)
 
     Importeer je huidige relaties eenvoudig vanuit Excel of andere
     software naar Copernica. Of wil je liever relatiegegevens exporteren

@@ -1,4 +1,4 @@
-![Umbraco](Copernicacom/umbraco.png "Umbraco")Sinds kort is het mogelijk
+![Umbraco](../images/umbraco.png "Umbraco")Sinds kort is het mogelijk
 het open source CMS systeem Umbraco te koppelen met Copernica Marketing
 Software. De integratie is ontwikkeld door
 [Arlanet](http://www.arlanet.nl/), registered partner van Copernica
