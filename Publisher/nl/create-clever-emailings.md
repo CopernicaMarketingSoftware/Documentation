@@ -18,14 +18,14 @@ een eigen stijl en vul deze met de gewenste inhoud.
 
 Zit je zonder inspiratie of heb je simpelweg geen tijd om zelf een email
 te ontwerpen? Geen nood. Copernica heeft samen met zijn
-[partners](./registreer-je-als-partner-van-copernica.md "Ontdek ons partnerprogramma")
+[partners](./register-as-copernica-partner.md "Ontdek ons partnerprogramma")
 een breed aanbod aan verschillende email templates opgemaakt. Deze
 gebruik je als basis voor je eigen email marketing campagne. Kies een
 template, voeg je eigen content en stijl toe en je bent klaar voor
 verzenden.
 
 Ben je een HTML-expert of ben je thuis in het [opmaken van eigen
-templates](./ontwerp-je-eigen-email-templates.md "Opmaken van eigen templates"),
+templates](./create-custom-templates.md "Opmaken van eigen templates"),
 dan kan je zo aan de slag met onze template-editor. Begin bij het begin
 en ontwerp of importeer je eigen op maat gemaakte templates in
 Copernica.
@@ -39,7 +39,7 @@ e-mailings](../images/nl-personalize-content-copernica.gif "Personaliseer je e-m
 Verbeter de resultaten van je email campagnes door ze te personaliseren.
 Copernica stelt je in staat je emails volledig te personaliseren
 gebaseerd op al de opgeslagen gegevens uit je Copernica
-[database](./maak-je-eigen-database.md "Maak je eigen database").
+[database](./creating-your-own-databases.md "Maak je eigen database").
 Personaliseer niet alleen op basis van relatiegegevens maar bijvoorbeeld
 ook aan de hand van historische gegevens, campagneresultaten,
 enquêteresultaten en nog veel meer.
@@ -62,9 +62,9 @@ Eens je aan de gang gaat met deze personalisatiecode, merk je al gauw
 dat het makkelijk en leuk werkt. Jij bepaalt zelf welke gegevens
 terugkomen in je emails. Copernica vult de velden met Smarty-tags aan
 met de persoonlijke relatiegegevens voor je de [emails
-verzendt](./verzenden-naar-je-doelgroep.md "Verzenden naar je doelgroep").
+verzendt](./send-emailings-to-relations.md "Verzenden naar je doelgroep").
 Alle gegevens die je opslaat in je
-[database](./maak-je-eigen-database.md "Maak je eigen database"),
+[database](./creating-your-own-databases.md "Maak je eigen database"),
 gebruik je eenvoudig voor het personaliseren van je emails. Hieronder
 een voorbeeld om aan te tonen hoe het werkt:
 
@@ -86,8 +86,7 @@ e-mailing](../images/load-rss-in-email-copernica.gif "Dynamische content in je e
 Wil je graag je relaties op de hoogte houden van jouw nieuwste producten
 of je laatste nieuws (bijvoorbeeld van je website)? Copernica biedt
 hiervoor een prima oplossing in de vorm van contentfeeds oftewel [RSS of
-Atom
-feeds](./gebruik-van-rss-of-atom-feed.md "RSS of Atom feeds").
+Atom feeds](./rss-or-atom-feed.md "RSS of Atom feeds").
 Maak je eigen feed(s) eenvoudig aan binnen Copernica. Gebruik deze in je
 e-mailings om zo, volledig automatisch, de inhoud actueel te houden.
 
@@ -108,7 +107,7 @@ Emails opmaken met de SOAP API
 
 Copernica beschikt over een krachtige SOAP API. Deze stelt je in staat
 eenvoudig een koppeling te maken tussen jouw externe softwarepakket en
-Copernica. Via de [SOAP API](./soap-api-documentatie.md "SOAP API")
+Copernica. Via de [SOAP API](./soap-api-documentation.md "SOAP API")
 is het ook mogelijk om email documenten samen te stellen, externe
 content in je emails te laden en uiteindelijk je email campagnes te
 verzenden.

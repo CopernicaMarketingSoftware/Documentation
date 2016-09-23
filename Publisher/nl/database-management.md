@@ -9,50 +9,50 @@ Je beheert je databases, collecties en (sub)profielgegevens in het
 onderdeel **Profielen**.
 
 -   [Databases in Copernica - een korte
-    introductie](./databases-in-copernica-een-korte-introductie.md)
+    introductie](./introduction-to-databases.md)
 -   [Databases aanmaken en gegevens
-    importeren](./databases-maken-en-gegevens-importeren.md)
+    importeren](./setting-up-your-database-and-import-your-contacts.md)
 -   [Werken met database
-    collecties](./werken-met-databasecollecties.md)
+    collecties](./working-with-database-collections.md)
 -   [Database en collectie
-    veldtypes](./database-en-collectie-veldtypes.md)
+    veldtypes](./database-and-collection-field-types.md)
 -   [Werken met database
-    interessevelden](./bewaren-van-interesses-in-database-interessevelden.md)
+    interessevelden](./working-with-interest-fields-and-groups.md)
 -   [Uitschrijfgedrag instellen op de
-    database](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
+    database](./setting-unsubscribe-behaviour-for-your-database-or-collection.md)
 -   [Database en collectie
-    opvolgacties](./opvolgacties-voor-databases-en-collecties.md)
+    opvolgacties](./follow-up-actions-for-databases-and-collections.md)
 -   **[Selecties en
-    miniselecties](./selecties-en-miniselecties.md)**
+    miniselecties](./selections-and-miniselections.md)**
 -   [**Importeren en
-    exporteren**](./importeren-en-exporteren.md)
+    exporteren**](./import-and-export.md)
 -   [Database restricties
-    maken](./databaserestricties-maken.md)
+    maken](./database-restrictions.md)
 -   [Indexeren van
-    databasevelden](./indexeren-van-databasevelden.md)
+    databasevelden](./should-i-index-my-database-field.md)
 -   [Automatisch verwerken van
-    spamklachten](./automatisch-verwerken-van-spamklachten.md)
--   [](./is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases.md)
+    spamklachten](./how-do-i-automatically-process-complaints.md)
+-   [](./is-there-a-maximum-limit-on-the-amount-and-size-of-databases.md)
     [Database callback
-    URLs](./database-callback-urls.md)
+    URLs](./callback-urls.md)
 
 ### Profielen en subprofielen
 
 -   [Aanmaken, bewerken of verwijderen van
-    (sub)profielen](./aanmaken-bewerken-of-verwijderen-van-subprofielen.md)
+    (sub)profielen](./creating-editing-or-removing-a-single-profile-or-single-subprofile.md)
 -   [Profielgeschiedenis en campagnes
-    bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
+    bekijken](./view-profile-history-and-campaigns.md)
 -   [Enquete antwoorden van een profiel
-    bekijken](./enquete-antwoorden-van-een-profiel-opzoeken.md)
+    bekijken](./view-the-given-answers-in-a-survey.md)
 -   [Meerdere (sub)profielen ineens wijzigen of
-    verwijderen](./meerdere-subprofielen-ineens-wijzigen-of-verwijderen.md)
+    verwijderen](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.md)
 -   [Campagne tab - bekijk per profiel de
-    campagneresultaten](./campagne-tab-bekijk-per-profiel-de-campagneresultaten.md)
+    campagneresultaten](./campaigns-tab-view-the-sent-campaigns-per-individual-profile.md)
 -   [Een profiel herstellen naar oude
-    staat](./een-profiel-herstellen-naar-oude-staat.md)
+    staat](./rollback-profile-to-previous-state.md)
 
 ### Veelgestelde vragen
 
 -   [Is er een limiet op het aantal databases en de grootte van de
-    databases](./is-er-een-limiet-op-het-aantal-databases-en-de-grootte-van-de-databases.md)
+    databases](./is-there-a-maximum-limit-on-the-amount-and-size-of-databases.md)
 

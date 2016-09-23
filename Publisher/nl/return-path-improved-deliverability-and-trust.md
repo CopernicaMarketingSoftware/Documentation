@@ -1,6 +1,6 @@
 Bij het verzenden van uw e-mailings wilt u dat zij landen in de inbox
 van uw klanten. De
-[deliverability](./deliverability-hogere-e-mailaflevering-met-copernica.md "Deliverability kennisartikel")
+[deliverability](./deliverability-better-email-delivery-with-copernica.md "Deliverability kennisartikel")
 van uw e-mailing hangt echter sterk af van uw betrouwbaarheid als
 verzender. Return Path en Copernica Marketing Software zorgen ervoor dat
 dit onderwerp van begin tot einde van uw e-mailcampagne wordt aangepakt.

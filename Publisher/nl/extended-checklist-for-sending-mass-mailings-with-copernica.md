@@ -23,17 +23,17 @@ e-mailadres, het geslacht en de naam.
 [Aanmaken database en adressen
 importeren](./setting-up-your-database-and-import-your-contacts.md)
 (lees ook hoe je een [importbestand kan
-maken](./een-importbestand-voorbereiden.md))
+maken](./the-requirements-for-a-well-formatted-import-file.md))
 
 **Aanmaken velden.** Het aanmaken van databasevelden kan via twee
 routes.
 
 1.  **Via import.** Bij het instellen van een import, kan je direct
     nieuwe velden aanmaken en hun
-    [eigenschappen](./database-en-collectie-veldtypes.md)
+    [eigenschappen](./database-and-collection-field-types.md)
     bewerken.
 2.  **Handmatig in de interface.** [Bekijk de video over het aanmaken
-    van velden](./profielen-velden-aanmaken.md)
+    van velden](./profiles-adding-database-fields.md)
 
 Voor het opslaan van e-mailadressen, gebruik je een specifiek veld: het
 **e-mailveld**.
@@ -45,20 +45,20 @@ van selecties. Je verstuurt een mailing bijvoorbeeld aan een selectie
 waar de uitschrijvers van een nieuwsbrief zijn uitgefilterd.
 
 [Bekijk ook onze instructievideo over profielen en
-selecties](./profielen-selecties.md)
+selecties](./profiles-selections.md)
 
--   [Nieuwsbriefselectie](./nieuwsbrief-selectie-maken.md)
+-   [Nieuwsbriefselectie](./create-a-mailing-list.md)
     - maak in je database een selectie waarin je alleen profielen
     opneemt die zich hebben ingeschreven voor de nieuwbrief.
 -   [Testgroep
-    selectie](./een-test-e-mail-versturen.md)
+    selectie](./send-a-test-mail-or-test-mailing.md)
     - maak in je database een selectie over mensen die jouw mailing
     willen controleren, voordat je deze daadwerkelijk gaat versturen. Je
     kan bijvoorbeeld een extra databaseveld aanmaken, waarmee je een
     profiel kan opnemen in een selectie (bijvoorbeeld een veld TESTGROEP
     die de waarde JA moet bevatten).
 -   [Het filteren van
-    hardbounces](./automatisch-verwerken-bounces.md)
+    hardbounces](./automatically-process-bounces.md)
     - Om je verzendreputatie hoog te houden, is het belangrijk om
     adressen die persistente fouten opleveren, uit te sluiten van je
     verzendselectie.
@@ -69,13 +69,13 @@ Voordat je een mailing gaat versturen, heb je het uitschrijfgedrag en de
 gebruiksmogelijkheden ingesteld.
 
 1.  [Uitschrijfgedrag
-    instellen.](./uitschrijfgedrag-instellen-op-database-of-collectie.md)
+    instellen.](./setting-unsubscribe-behaviour-for-your-database-or-collection.md)
     Wanneer iemand klikt op de {unsubscribe} link, wordt het
     uitschrijfgedrag geactiveerd. [Bekijk ook de
-    video](./e-mailings-uitschrijfgedrag-instellen.md)
+    video](./emailings-unsubscribe-header.md)
     over dit onderwerp.
 2.  [Gebruiksmogelijkheden voor selectie
-    instellen](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md).
+    instellen](./database-intentions-enabling-the-target-for-mass-mailings.md).
     Om te voorkomen dat mailings abusievelijk aan een verkeerde selectie
     wordt gericht, dien je per selectie aan te geven of deze mag worden
     gebruikt voor het versturen van een bulkmailing.
@@ -87,20 +87,20 @@ Van het onderdeel Profielen gaan we naar het onderdeel E-mailings. In
 dit onderdeel maak en beheer je e-mailings, en kan je ze uiteindelijk
 verzenden. We gaan er vanuit dat je al een document hebt. Heb je nog
 geen document, dan kan je desgewenst onze [standaardtemplate en document
-inladen](./werken-met-de-standaard-template-van-copernica.md).
+inladen](./using-the-copernica-default-template.md).
 
 ### Controleren van je document en instellingen
 
 Voordat je een mailing verstuurt, controleer je goed of het document en
 de instellingen voldoen aan de juiste eisen.
 
-1.  [Sender ID](./sender-id-instellen-op-je-afzenderdomein.md) en
-    [DKIM](./e-mails-versleutelen-met-dkim.md)
+1.  [Sender ID](./setup-sender-id.md) en
+    [DKIM](./signing-your-emails-with-dkim.md)
     ingesteld? Dit is niet verplicht, maar wordt wel aangeraden. Het
     instellen van DKIM en Sender ID doe je eenmalig. Doe dit wel ruim
     voordat je een mailing gaat versturen (24 uur).
 2.  HTML Check - [controleer je document en template op foutieve
-    HTML](./veelvoorkomende-html-fouten.md).
+    HTML](./reducing-html-errors.md).
     Fouten in je HTML kunnen onverwachte resultaten geven bij de
     weergave van je nieuwbrief in verschillende e-mailprogramma's
 3.  Spamcheck. In hetzelfde dialoogvenster kan je een document
@@ -110,7 +110,7 @@ de instellingen voldoen aan de juiste eisen.
 4.  Geldig afzendadres? Gebruik altijd een afzendadres dat daadwerkelijk
     bestaat (je kunt dus e-mails ontvangen op dit adres).
 5.  [Weergavecontrole met
-    Litmus.](./litmus-previews-van-e-mail-wat-stuur-ik-uit.md)
+    Litmus.](./using-litmus-email-preview-to-test-your-email-newsletter.md)
     De weergave van HTML e-mails kan per e-mailprogramma wezenlijk
     verschillen. Met de Litmus test kan je screenshots ontvangen van
     jouw e-maildocument in talloze e-mailprogramma's en browsers.
@@ -122,19 +122,19 @@ standaardbestemming, of een testmailing sturen naar een groep
 ontvangers.
 
 1.  Bekijk de video over het [instellen van de
-    standaardbestemming](./e-mailings-standaardbestemming.md)
+    standaardbestemming](./emailings-setting-a-test-destination.md)
 2.  Of lees het artikel over [het versturen van test
-    emails](./een-test-e-mail-versturen.md)
+    emails](./send-a-test-mail-or-test-mailing.md)
 
 [Testmail niet
-ontvangen?](./heb-je-de-testmail-nog-niet-ontvangen-lees-dit-artikel-dan.md)
+ontvangen?](./did-your-test-mail-not-arrive.md)
 
 ### Verzenden
 
 De uiteindelijke stap: het verzenden van de bulkmailing
 
 -   Bekijk onze video over het [instellen en verzenden van een
-    bulkmailing](./e-mailings-verzending.md)
+    bulkmailing](./emailings-sending-an-emailing.md)
 -   [Bekijk alle artikelen over het versturen van een
-    bulkmailing](./mailings-verzenden.md)
+    bulkmailing](./sending-mailings.md)
 

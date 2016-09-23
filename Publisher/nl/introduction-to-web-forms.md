@@ -26,25 +26,25 @@ Met de webformuliermodule onder Content kan je zeer krachtige
 webformulieren maken die tot op het bot configurabel zijn. De wizard
 loodst je door de instellingen on oneindig veel mogelijkheden. Het
 webformulier publiceer je op je webpagina met een [eenvoudige
-tag](./webformulier-op-webpagina-plaatsen.md "Webformulier op webpagina plaatsen").
+tag](./publish-your-web-form.md "Webformulier op webpagina plaatsen").
 
 De webformulieren werken met een [standaard
-stylesheet](./css-en-xslt-een-korte-introductie.md)
+stylesheet](./working-with-css-and-xslt-a-brief-introduction.md)
 dat je volledig naar wens kan bewerken. De meer technische gebruiker kan
 tevens helemaal los gaan met de geleverde [standaard
-XSLT](./css-en-xslt-een-korte-introductie.md),
+XSLT](./working-with-css-and-xslt-a-brief-introduction.md),
 waarmee je volledige controle krijgt over de weergave van het formulier.
 
 Om een content webformulier te bouwen, volg je de volgende stappen.
 
 1.  [Webformulier samenstellen (velden
-    toevoegen)](./webformulier-velden-toevoegen-en-bewerken.md "Webformulier velden toevoegen en bewerken")
+    toevoegen)](./web-form-fields-and-field-settings.md "Webformulier velden toevoegen en bewerken")
 2.  [Webformulier werking
-    instellen](./de-werking-van-een-webformulier-instellen.md "De werking van een webformulier instellen")
+    instellen](./the-content-web-form-behaviour-wizard.md "De werking van een webformulier instellen")
 3.  [Webformulier publiceren op je
-    webpagina](./webformulier-op-webpagina-plaatsen.md "Webformulier op webpagina plaatsen")
+    webpagina](./publish-your-web-form.md "Webformulier op webpagina plaatsen")
 4.  [Optioneel kan je de CSS en of XSLT van het webformulier
-    aanpassen](./css-en-xslt-een-korte-introductie.md "CSS en XSLT - een korte introductie")
+    aanpassen](./working-with-css-and-xslt-a-brief-introduction.md "CSS en XSLT - een korte introductie")
 
 Onderstaand enkele van de meest gebruikte formuliertypen:
 
@@ -55,7 +55,7 @@ veel ingezet voor nieuwsbriefaanmeldingen (optin), aanmelden voor events
 en dergelijke.
 
 [Een aanmeldformulier
-maken](./aanmeld-en-wijzigformulier.md "Aanmeld- en wijzigformulier")
+maken](./create-change-web-form.md "Aanmeld- en wijzigformulier")
 
 ### Uitschrijfformulier
 
@@ -64,7 +64,7 @@ database. Een bekend persoon (via inlog of link in mailing) komt op de
 pagina en meldt zich af van uw database.
 
 [Een afmeldformulier
-maken](./afmeldformulier-profiel-volledig-verwijderen.md "Afmeldformulier - profiel volledig verwijderen")
+maken](./unsubscribe-form-remove-profile-entirely.md "Afmeldformulier - profiel volledig verwijderen")
 
 ### Wijzigformulier (kan ook als uitschrijfformulier worden gebruikt)
 
@@ -76,7 +76,7 @@ identificatie van de invuller. Dan kan het formulier 'vooringevuld'
 worden met de gegevens van de relatie.
 
 [Een wijzigformulier
-maken](./aanmeld-en-wijzigformulier.md "Aanmeld- en wijzigformulier")
+maken](./create-change-web-form.md "Aanmeld- en wijzigformulier")
 
 Login / logout form
 -------------------
@@ -85,4 +85,4 @@ Met een dergelijk formulier kunnen bezoekers van jouw website inloggen
 of uitloggen.
 
 [Inlog en uitlogformulier
-maken](./inlog-uitlog-en-wachtwoord-vergeten-formulier.md "Inlog, uitlog, en wachtwoord vergeten formulier")
+maken](./login-logout-and-forgot-password-form.md "Inlog, uitlog, en wachtwoord vergeten formulier")

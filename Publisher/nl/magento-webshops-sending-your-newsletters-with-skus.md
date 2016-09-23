@@ -9,9 +9,9 @@ Inladen van producten in je nieuwsbrief uit je Magentoshop middels SKU's
 ------------------------------------------------------------------------
 
 Wat ik je ga leren is hoe je met behulp van [extra
-personalisatievelden](./extra-velden-voor-document-personalisatie.md "Extra personalisatievelden"),
+personalisatievelden](./extra-fields-for-personalizing.md "Extra personalisatievelden"),
 [Smarty](./smarty.md "Smarty begrip")
-en [XSLT](./css-en-xslt-een-korte-introductie.md "XSLT introductie")
+en [XSLT](./working-with-css-and-xslt-a-brief-introduction.md "XSLT introductie")
 middels de SKU's uit je shop zelf kunt kiezen welke producten je in je
 nieuwsbrief wilt opnemen. Het doel is dat je uiteindelijk enkel nog het
 SKU-nummer hoeft in te vullen in je document waarna je nieuwsbrief

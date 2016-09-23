@@ -41,40 +41,40 @@ partners](http://www.copernica.com/nl/ondersteuning/productdemonstraties).
 ### Geef de Registered partner reward een prominente plek
 
 [![Registered partner
-reward](../images/RegisteredPartner.JPG "Registered partner reward")](./neem-contact-met-ons-op.md "Neem contact met ons op")
+reward](../images/RegisteredPartner.JPG "Registered partner reward")](./contact-us.md "Neem contact met ons op")
 
 Als Registered partner heb je recht op een Registered partner reward.
 Natuurlijk ben je trots op deze blijk van waardering, geef de reward dus
 een prominente plek in bijv. de presentatieruimte op je kantoor. Ben je
 geregistreerd als partner en heb je nog geen Registered partner reward
 ontvangen? [Neem dan contact met ons
-op.](./neem-contact-met-ons-op.md "Neem contact met ons op")
+op.](./contact-us.md "Neem contact met ons op")
 
 ### Vermeld het partnership op je website
 
 [![Registered partner
-logo](../images/Copernica-registered-partner-logo.png "Registered partner logo")](./mediabronnen.md)
+logo](../images/Copernica-registered-partner-logo.png "Registered partner logo")](./media-resources.md)
 
 Als registered partner mag je het [Copernica Registered partner
-logo](./mediabronnen.md "Registered partner logo") op
+logo](./media-resources.md "Registered partner logo") op
 je website plaatsen. Dit is niet enkel een kwaliteitskeurmerk, het
 linken van het logo naar je partnerprofiel op Copernica.com zorgt ook
 voor herkenning bij je websitebezoekers.
 
 Plaats daarnaast op je website informatie [over Copernica Marketing
-Software](./mediabronnen.md "Over Copernica Marketing Software")
+Software](./media-resources.md "Over Copernica Marketing Software")
 en de toegevoegde waarde van je bureau.
 
 ### Word een Copernica expert
 
 Een eerste vereiste om Copernica Marketing Software succesvol in te
 zetten, is bekend raken met [de functies van de
-software](./functies.md). Als onderdeel
+software](./features.md). Als onderdeel
 van de partnerlicentie biedt Copernica uitgebreide mogelijkheden om je
 productkennis te vergroten. Naast de
-[videotutorials](./videos.md "Videotutorials"),
-[helpdocumentatie](./helpdocumentatie.md "helpdocumentatie")
-en [ondersteuningstool](./ondersteuningstool.md "Ondersteuningstool")
+[videotutorials](./video-tutorials.md "Videotutorials"),
+[helpdocumentatie](./help-documentation.md "helpdocumentatie")
+en [ondersteuningstool](./support-tool.md "Ondersteuningstool")
 organiseert Copernica, op het hoofdkantoor in Amsterdam, maandelijks
 [basistrainingen](./copernica-training.md)
 en [gevorderdentrainingen](./copernica-training.md).
@@ -95,7 +95,7 @@ volgende onderwerpen aan bod komen:
 
 Deelname aan een partnerdag is kosteloos voor geregistreerde partners.
 Bekijk een overzicht van [ingeplande
-partnerdagen](./evenementen.md "evenementen")
+partnerdagen](./events.md "evenementen")
 en meld je aan.
 
 ### Profileer je als expert op het gebruikersforum
@@ -125,7 +125,7 @@ te laten. Weinig is zo krachtig als een positieve beoordeling,
 
 Partners kunnen op Copernica.com en op externe blogsites inhoudelijke
 artikelen publiceren, over succesvolle cases rondom de inzet van
-bijvoorbeeld [email marketing](./email-marketing-functionaliteiten.md "Email marketing"),
+bijvoorbeeld [email marketing](./emailings.md "Email marketing"),
 [mobile](./mobile.md "Mobile") en
 [social](./social.md "Social").
 
@@ -148,7 +148,7 @@ uitgevers, ervoor zorgen dat de gezamenlijke content online wordt
 gepubliceerd op blogsites.
 
 Ook
-[artikelen](./nieuws.md "Kennis artikelen door Copernica")
+[artikelen](./latest-news.md "Kennis artikelen door Copernica")
 die eerder door Copernica zijn geschreven, mag je als partner op je
 website plaatsen. We vragen je dan wel duidelijk te vermelden dat de
 content afkomstig is van Copernica via de juiste links.
@@ -158,12 +158,12 @@ content afkomstig is van Copernica via de juiste links.
 Een seminar is een ideale manier om een groot aantal relaties in één
 keer te bereiken. Tijdens een seminar deel je als partner je unieke
 visie, ervaring, expertise en onderscheidende waarde. De [sprekers van
-Copernica](./onze-sprekers.md "onze sprekers")
+Copernica](./our-speakers.md "onze sprekers")
 presenteren tijdens een seminar naast de marktontwikkelingen graag de
 mogelijkheden en toepassingen van Copernica Marketing Software.
 
 Copernica zorgt via het overzicht van
-[evenementen](./evenementen.md "evenementenkalender")
+[evenementen](./events.md "evenementenkalender")
 en [nieuwsbrieven](http://www.copernica.com/nl/nieuwsbrief/aanmelden-nieuwsbrief "meld je aan voor onze nieuwsbrief")
 voor de nodige aandacht rondom het seminar.
 
@@ -176,7 +176,7 @@ de kosten neemt Copernica de gehele organisatie voor haar rekening en
 biedt rondom de beurs professionele begeleiding. Door gezamenlijke
 deelname aan een vakbeurs doe je een groot aantal nieuwe contacten op.
 
-Kijk op de [evenementenpagina](./evenementen.md "evenementen")
+Kijk op de [evenementenpagina](./events.md "evenementen")
 voor een overzicht van beschikbare plaatsen.
 
 Naast deelname aan vakbeurzen, organiseert Copernica jaarlijks samen met

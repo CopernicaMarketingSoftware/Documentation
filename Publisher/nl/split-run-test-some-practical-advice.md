@@ -1,7 +1,7 @@
 Splitrun- en A/B-tests zijn een effectieve methode om e-mailmarketing te
 optimaliseren. Deze tests stellen je in staat om de doelgroep te
 verkennen, ROI te verhogen en effectievere [e-mailings te
-verzenden](./verzenden-naar-je-doelgroep.md "E-mailings verzenden").
+verzenden](./send-emailings-to-relations.md "E-mailings verzenden").
 Zolang de open en clickrate dus niet op 100% staat en je onderbuik zegt
 dat er meer in zit, kun je uit elke nieuwe campagne een verbetering
 halen door een grotere of kleinere split-run test te doen.
@@ -34,7 +34,7 @@ optimaliseren:
 -   Er moet meer geklikt worden op de hyperlinks
 -   Er moet meer geklikt worden op een specifieke hyperlink
 -   Er moet meer gedeeld worden via [social
-    media](./integratie-met-social-media.md "Integratie met social media")
+    media](./integration-with-social-media.md "Integratie met social media")
 -   Minder afmeldingen
 -   Etc.
 

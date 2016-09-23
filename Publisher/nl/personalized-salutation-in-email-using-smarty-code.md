@@ -52,7 +52,7 @@ helemaal geen achternaam beschikbaar is, wordt niet verder
 gepersonaliseerd, en *Geachte relatie* als aanhef getoond.
 
 [Meer over voorwaarden in
-personalisatie](./personalisatie-uit-een-profiel-of-subprofiel.md "Personalisatie uit een profiel of subprofiel")
+personalisatie](./personalizing-from-a-profile-or-subprofile.md "Personalisatie uit een profiel of subprofiel")
 
 Opmaak van personalisatie
 -------------------------
@@ -85,7 +85,7 @@ door het toevoegen van de twee filters {\$Tussenvoegsel|lower|ucfirst}
 de waarde ‘Van der’ in het document komen te staan.
 
 [Meer smarty filters en
-toepassingen](./opmaak-van-smarty-personalisatie-smarty-filters.md "Opmaak van smarty personalisatie (Smarty filters)")
+toepassingen](./filter-data-with-smarty-modifiers.md "Opmaak van smarty personalisatie (Smarty filters)")
 
 ### Initialen afvangen
 

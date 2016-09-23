@@ -16,7 +16,7 @@ Consistentie
 ------------
 
 Voor een consistente look and feel bevat een
-[landingspagina](./maak-en-publiceer-je-eigen-webpaginas.md "landingspagina")
+[landingspagina](./create-and-publish-your-own-web-pages.md "landingspagina")
 dezelfde stijlelementen als de rest van de website en campagne. De
 bezoeker moet voelen dat de pagina waar hij landt bij de campagne hoort.
 
@@ -57,7 +57,7 @@ Een landingspagina bevat niet veel links. Links naar andere onderdelen
 van de site leiden de bezoeker af van het doel waarvoor hij op de pagina
 komt en het doel wat je zelf voor ogen hebt.
 
-Bied daarom een prominente [call-to-action](./verbeter-je-call-to-action-in-e-mailcampagnes.md)
+Bied daarom een prominente [call-to-action](./how-to-improve-your-email-call-to-actions.md)
 aan op de landingspagina. De landingspagina heeft namelijk één doel voor
 ogen en dat doel moet duidelijk naar voren komen op de pagina. Zorg
 bijvoorbeeld dat de call-to-action boven de vouw van de pagina staat en
@@ -90,7 +90,7 @@ is hij meteen weer weg.
 Personaliseren
 --------------
 
-[Personaliseer](./maak-en-publiceer-je-eigen-webpaginas.md "personaliseer")
+[Personaliseer](./create-and-publish-your-own-web-pages.md "personaliseer")
 de landingspagina indien mogelijk. Klikt een nieuwsbrieflezer
 bijvoorbeeld op een link om zich aan te melden voor een evenement? Vul
 dan alvast zijn gegevens in het formulier in. Of klikt een vaste klant
@@ -111,7 +111,7 @@ variëren en bekijk de resultaten. Blijf op die manier continu
 optimaliseren.
 
 Houd met behulp van
-[websitestatistieken](./resultaten-van-je-webpagina.md "websitestatistieken")
+[websitestatistieken](./your-web-page-results.md "websitestatistieken")
 (via Google Analytics of je marketingsoftware) bij op welke pagina's
 binnen je website de meeste bezoekers binnen komen. Gebruik deze
 gegevens om je pagina's nog beter te optimaliseren.
@@ -119,7 +119,7 @@ gegevens om je pagina's nog beter te optimaliseren.
 Vond je dit interessant? Lees dan ook:
 --------------------------------------
 
--   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
--   [Maak en publiceer je eigen webpagina’s](./maak-en-publiceer-je-eigen-webpaginas.md "Maak en publiceer je eigen webpagina’s")
--   [Resultaten van je webpagina](./resultaten-van-je-webpagina.md "Resultaten van je webpagina")
+-   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./creating-html-newsletters-for-mobile-use.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
+-   [Maak en publiceer je eigen webpagina’s](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina’s")
+-   [Resultaten van je webpagina](./your-web-page-results.md "Resultaten van je webpagina")
 

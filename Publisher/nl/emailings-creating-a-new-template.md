@@ -1,10 +1,10 @@
 In deze Copernica-tutorial leer hoe je een nieuwe e-mailtemplate
 aanmaakt.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Templates vormen de basis voor e-mailings die je maakt met Copernica.
-Een [template](./getting-started---building-email-templates.md)
+Een [template](./getting-started-building-email-templates.md)
 is een sjabloon, dat je kan gebruiken voor het opstellen van meerdere
 e-mails.
 
@@ -28,5 +28,5 @@ linkerkolom.
 
 Gefeliciteerd! Je heb een nieuw e-mailtemplate aangemaakt!
 
--   **Volgende:** [Document aanmaken](./e-mailings-document-aanmaken.md "E-mailings: Document aanmaken")
+-   **Volgende:** [Document aanmaken](./emailings-creating-a-document.md "E-mailings: Document aanmaken")
 

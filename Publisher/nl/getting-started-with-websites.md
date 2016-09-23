@@ -77,7 +77,7 @@ template importeren vanaf je computer.
     e-mailtemplate kan zonder problemen worden bewerkt / aangepast. Dit
     heeft geen invloed op de originele e-mailtemplate.
 
-[Meer lezen over het maken van templates](./templates-en-documenten.md)
+[Meer lezen over het maken van templates](./templates-and-documents.md)
 
 Webpagina maken
 ---------------
@@ -106,13 +106,13 @@ je voor de optie **Invoegen speciale content** die je kan vinden in het
 dialoogvenster voor het bewerken van een **Tekstblok**.
 
 -   De tag voor het [publiceren van een
-    webformulier](./webformulier-op-webpagina-plaatsen.md)
+    webformulier](./publish-your-web-form.md)
     is **{webform name="naamformulier"}**
 -   De tag voor het [publiceren van een
-    enquete](./enquete-in-webpagina-invoegen.md)
+    enquete](./publish-a-survey.md)
     is**{survey name="naamvanenquete"}**
 -   De tag voor het [publiceren van een RSS of Atom
-    feed](./de-loadfeed-functie.md)
+    feed](./the-loadfeed-function.md)
     is **{loadfeed feed="naam van feed"}**
 
 Om de webpagina te bekijken met de gepubliceerde content klik je
@@ -142,7 +142,7 @@ Om een CNAME aan te maken heb je dus toegang nodig tot het domeinbeheer
 van je bedrijfsdomein. Het kan dus zijn dat je hiervoor even de
 netwerk/systeembeheerder moet lastigvallen.
 
--   [Meer lezen over het koppelen van een domeinnaam](./een-domeinnaam-koppelen-aan-een-website.md)
+-   [Meer lezen over het koppelen van een domeinnaam](./link-domain-to-website.md)
 -   [Meer lezen over het maken een van CNAME record](http://support.google.com/blogger/bin/answer.py?hl=nl&answer=58317)
 
 Naar webpagina linken vanuit een e-mailing
@@ -172,7 +172,7 @@ gebruik maken van de functie **Hyperlinks uitbreiden...** in het
 e-maildocument menu.
 
 -   [Meer lezen over het uitbreiden van hyperlinks met
-    inlogcode](./hyperlinks-uitbreiden-met-inlogcode.md)
+    inlogcode](./how-do-i-add-personalization-login-code-to-my-links.md)
 
 Standaardpagina, foutpagina en loginpagina instellen
 ----------------------------------------------------
@@ -223,4 +223,4 @@ bestand, bijvoorbeeld \<img src="afbeelding.png"\>, of je kan de
 geuploade afbeelding aan een document toevoegen middels een
 afbeeldingblok.
 
--   [Meer lezen over het beheren van bestanden een afbeeldingen](./beheren-van-afbeeldingen-en-bestanden.md)
+-   [Meer lezen over het beheren van bestanden een afbeeldingen](./email-files-and-images.md)

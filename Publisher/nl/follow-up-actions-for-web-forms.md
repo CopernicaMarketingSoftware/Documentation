@@ -118,7 +118,7 @@ Meer informatie
 ---------------
 
 -   [Follow-up
-    manager](./de-follow-up-manager.md "De follow-up manager")
+    manager](./follow-up-manager.md "De follow-up manager")
 -   [Condities voor
-    opvolgacties](./condities-voor-opvolgacties-beperk-het-activeren-of-uitvoeren-van-een-opvolgactie.md "Condities voor opvolgacties - beperk het activeren of uitvoeren van een opvolgactie")
+    opvolgacties](./conditions-for-follow-ups.md "Condities voor opvolgacties - beperk het activeren of uitvoeren van een opvolgactie")
 

@@ -63,7 +63,7 @@ hier op een andere manier op te reageren.
 
 Zorg ervoor dat je een actuele database hebt. Verwerk niet alleen
 opt-outs, maar controleer ook op [hard en soft
-bounces](./het-verschil-tussen-hard-bounce-en-soft-bounces.md) bij
+bounces](./the-difference-between-hard-bounce-and-soft-bounce...doesnt-exist.md) bij
 ongeldige of verlopen e-mailadressen.
 
 In het kort
@@ -73,14 +73,14 @@ Uiteindelijk komt het er op neer dat spamtraps niet de oorzaak, maar een
 symptoom van het probleem zijn. Een verzendlijst vol spamvallen is
 namelijk niet meer dan een teken van een vervuilde database. Wees dus
 zorgvuldig bij het verzamelen van informatie en [houd je database
-schoon](./database-marketing-en-enquetes-voorkom-vervuiling.md).
+schoon](./database-marketing-and-web-surveys-avoid-corruption.md).
 
 ### Bekijk ook
 
 -   [E-mailreputatie: hoe bouw je dit
     op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")
 -   [Het verschil tussen hard bounce en soft
-    bounces](./het-verschil-tussen-hard-bounce-en-soft-bounces.md "Het verschil tussen hard bounce en soft bounces")
+    bounces](./the-difference-between-hard-bounce-and-soft-bounce...doesnt-exist.md "Het verschil tussen hard bounce en soft bounces")
 -   [Database-marketing en enquêtes, voorkom
-    vervuiling](./database-marketing-en-enquetes-voorkom-vervuiling.md "Database-marketing en enquêtes, voorkom vervuiling")
+    vervuiling](./database-marketing-and-web-surveys-avoid-corruption.md "Database-marketing en enquêtes, voorkom vervuiling")
 

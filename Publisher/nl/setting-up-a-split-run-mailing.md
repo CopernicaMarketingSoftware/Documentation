@@ -91,7 +91,7 @@ Versturen van de split-run
 Om het document te versturen, klik je in het dialoogvenster op
 **volgende**. Is deze knop nog gedeactiveerd? Kijk alle instellingen nog
 even na. Is er een doelselectie geselecteerd, en heeft deze de juiste
-[gebruikersmogelijkheden](./bulkmailing-verzenden.md)?
+[gebruikersmogelijkheden](./sending-a-mass-mailing.md)?
 
 Controleer voordat je gaat versturen de gegevens en instellingen in het
 overzicht, en als je zeker van je zaak bent, geef je een tedere aai over

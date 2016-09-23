@@ -49,7 +49,7 @@ beiden schakelen middels de zogenoemde knop rechtsonderin het
 dialoogvenster.
 
 -   [Lees hoe je tekstblokken maakt in je
-    template](./template-blokken-het-tekstblok.md)
+    template](./the-text-function-for-adding-textual-content-to-your-document.md)
 
 Klik vanuit bewerkmodus op de naam van het blok om de inhoud ervan te
 bewerken.In het scherm dat verschijnt kun je direct teksten invoeren.
@@ -67,12 +67,12 @@ Als je in de template broncode afbeeldingblokken hebt toegevoegd, kan je
 hier op documentniveau afbeeldingen in laden.
 
 -   [Lees hoe je afbeeldingblokken maakt in je
-    template](./template-blokken-de-afbeelding-tag.md)
+    template](./the-image-function-for-adding-images-to-your-document.md)
 
 Om een afbeelding toe te voegen, klik vanuit je **bewerkmodus** op het
 desbetreffende blok. In het scherm dat verschijnt kun je een afbeelding
 selecteren die je hebt ge-upload naar de afbeeldingenmap van het
-template of document, of uit een [Media Library](./beheren-van-afbeeldingen-en-bestanden.md)
+template of document, of uit een [Media Library](./email-files-and-images.md)
 als je die hebt (deze kun je aanmaken in het onderdeel Content).
 
 Zit je afbeelding er nog niet tussen? Dan kun je deze direct uploaden
@@ -91,7 +91,7 @@ naar het afbeeldingblok.
 -   In het tabblad **Uitsnijden** kun je een deel van de afbeelding
     uitsnijden.
 -   In het tabblad **Condities** kan je de [condities
-    instellen](./de-eenvoudige-script-editor.md)
+    instellen](./the-easy-script-editor.md)
     voor het wel of niet tonen van de afbeelding, op basis van gegevens
     van de ontvanger. Je kunt bijvoorbeeld een andere afbeelding laden
     voor vrouwelijke nieuwsbriefabonnees (als je het geslacht van je
@@ -109,7 +109,7 @@ geef je vervolgens aan hoevaak je de content binnen het loopblok in het
 document wilt herhalen.
 
 -   [Lees hoe je loopblokken maakt in je
-    template](./template-blokken-de-loop-tag.md)
+    template](./the-loop-function-to-iterate-content-in-your-email.md)
 
 -   Klik vanuit **Bewerkmodus** op een loop-blok.
 
@@ -132,7 +132,7 @@ Om het document gepersonaliseerd weer te geven, schakel je vanuit
 **bewerkmodus** over naar **voorbeeldweergave**. Je ziet het document nu
 zoals het verstuurd zou worden. Als je gebruik maakt van Smarty
 personalisatie, dan zie je de voorvertoning met gegevens uit jouw
-[standaardbestemming](./standaardbestemming-instellen-of-wijzigen.md).
+[standaardbestemming](./what-is-the-test-destination.md).
 
 Om weer terug te keren naar bewerkmodus, klik je op **Bewerkmodus**.
 
@@ -155,4 +155,4 @@ De testmail wordt nadat je op verzenden hebt geklikt direct verstuurd
 naar het e-mailadres uit je standaardbestemming.
 
 [Meer lezen over het versturen van
-testmails](./een-test-e-mail-versturen.md)
+testmails](./send-a-test-mail-or-test-mailing.md)

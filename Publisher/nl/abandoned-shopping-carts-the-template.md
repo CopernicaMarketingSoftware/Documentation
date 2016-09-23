@@ -1,7 +1,7 @@
 Een van de meest gevraagde functies voor gebruik met onze [Magento
-integratie](./magento-webshop-integratie-voor-email-marketing.md "Magento webshop integratie voor email marketing")
+integratie](./magento.md "Magento webshop integratie voor email marketing")
 is de abandoned shopping cart, het [verlaten
-winkelmandje](./verloren-winkelwagens.md "Verlaten winkelwagens").
+winkelmandje](./abandonded-shopcarts.md "Verlaten winkelwagens").
 Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
@@ -38,7 +38,7 @@ Het document
 
 Nu we de basis van de email campagne hebben gebouwd, is het tijd om het
 document op te gaan bouwen. De motor achter het document is de
-[loadsubprofile](./de-loadprofile-en-loadsubprofile-functies.md "loadsubprofile")-functie,
+[loadsubprofile](./loadprofile-and-loadsubprofile.md "loadsubprofile")-functie,
 waarmee subprofielen uit de database opgehaald kunnen worden (en ook uit
 andere databases dan die waar het geadresseerde profiel in zit).
 

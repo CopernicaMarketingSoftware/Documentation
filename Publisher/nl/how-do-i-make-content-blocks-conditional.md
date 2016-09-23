@@ -61,7 +61,7 @@ worden.
 *Afbeelding - condities instellen bij een content blok, met behulp van
 de eenvoudige script editor*
 
-Voor het maken van de condities kan je zowel de [Eenvoudige script editor](./de-eenvoudige-script-editor.md)
+Voor het maken van de condities kan je zowel de [Eenvoudige script editor](./the-easy-script-editor.md)
 en de [JavaScript editor](./geavanceerde-javascript-condities.md) gebruik maken.
 
 ### Extra (geavanceerde) opties voor loop blokken

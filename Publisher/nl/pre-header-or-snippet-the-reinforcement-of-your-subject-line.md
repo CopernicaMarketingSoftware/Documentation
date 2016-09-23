@@ -10,7 +10,7 @@ Snippet: Wat is dat?
 
 De snippet of preheader is de benaming voor de eerste paar regels van je
 `<body>`-tag in
-je [HTML](./opmaak-van-html-nieuwsbrief-enkele-belangrijke-richtlijnen.md "HTML Broncode") broncode.
+je [HTML](./html-newsletter-design-some-important-guidelines.md "HTML Broncode") broncode.
 Deze bevat meestal standaard zinnetjes zoals:
 
 -   Is deze mail niet goed leesbaar? Klik hier voor de webversie
@@ -105,7 +105,7 @@ tekst bovenin je e-mail te zien is.
 Deze methode raden wij af. Spamfilters zijn namelijk gevoelig voor tekst
 die geen contrast met zijn achtergrond heeft. Door gebruik te maken van
 deze methode kan
-je [spamrating](./verlaag-je-spamrating-enkele-aandachtspunten.md "Spamrating") omhoog
+je [spamrating](./reduce-your-spam-rating-some-focus-points.md "Spamrating") omhoog
 schieten waardoor je e-mail terecht komt in de spambox of erger, niet
 meer wordt toegelaten tot de inbox.
 
@@ -114,7 +114,7 @@ Vergeet je preheader niet te testen
 
 Test verschillende uitvoeringen van je snippet. Zo kom je te weten welke
 het beste werkt in jouw e-mails. Maak hierbij gebruik van  [split-run
-tests](./split-run-test-enkele-praktische-tips.md "Split run test").
+tests](./split-run-test-some-practical-advice.md "Split run test").
 Vergeet ook niet geregeld je snippet te veranderen. Iemand die al
 meerdere malen jouw e-mail heeft geopend, hoeft na 10 keer niet meer te
 lezen dat hij “deze mail ontvangt omdat hij is ingeschreven op die en

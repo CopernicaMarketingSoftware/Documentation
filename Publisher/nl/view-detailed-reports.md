@@ -46,7 +46,7 @@ Benieuwd of je relaties gebruik maken van Hotmail, Gmail of een ander
 e-mailprogramma? Copernica toont je in welke e-mailprogramma's jouw
 e-mailing zoal wordt geopend. Zo weet je precies waar je op moet letten
 wanneer je e-mailings gaat
-[testen](./test-voor-je-verzendt.md "test-voor-je-verzendt").
+[testen](./testing-before-sending.md "test-voor-je-verzendt").
 
 Leer van je fouten
 ------------------
@@ -55,8 +55,8 @@ Foutmeldingen en spamklachten hou je liefst zo laag mogelijk. Maar deze
 resultaten zijn net zo belangrijk als je kliks en opens. Gebruik deze
 resultaten om je e-mailings verder te optimaliseren. Leer van je fouten,
 verwijder verkeerde e-mailadressen
-[automatisch](./beheer-automatisch-je-relaties.md "Beheer automatisch je relaties")
-uit je [selecties](./definieer-doelgroepen-met-selecties.md "Doelgroepen definiëren met selecties")
+[automatisch](./manage-your-relations-automatically.md "Beheer automatisch je relaties")
+uit je [selecties](./define-target-groups-with-selections.md "Doelgroepen definiëren met selecties")
 en zorg zo voor nog betere resultaten bij een volgende e-mailing.
 
 Copernica e-mailstatistieken en Google Analytics

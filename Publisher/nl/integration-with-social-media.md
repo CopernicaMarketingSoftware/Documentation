@@ -1,9 +1,9 @@
 Copernica beschikt over verschillende
-[integraties](./integraties.md "Integraties met Copernica")
+[integraties](./integrations.md "Integraties met Copernica")
 met social media als Facebook. Zo kan je met behulp van een van deze
 integraties rechtstreeks gegevens vanuit Facebook opslaan in je
 Copernica database. Deze integraties zijn ontwikkeld door [onze
-partners](./haal-het-maximale-uit-de-partnerlicentie.md "Partnerprogramma").
+partners](./get-the-most-out-of-the-partner-license.md "Partnerprogramma").
 
 Facebook testpanel integratie
 -----------------------------

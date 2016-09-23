@@ -13,7 +13,7 @@ bereiken is namelijk een stuk kleiner. Dit heeft ook als voordeel dat
 domeinen die door DKIM beschermd worden, minder vaak worden misbruikt.
 Copernica raadt daarom aan de DKIM in te stellen als vorm van e-mail
 authenticatie en als hulpmiddel bij het optimaliseren van je
-[deliverability](./deliverability-hogere-e-mailaflevering-met-copernica.md "Kennisartikel over deliverability").
+[deliverability](./deliverability-better-email-delivery-with-copernica.md "Kennisartikel over deliverability").
 
 Hoe werkt DKIM?
 ---------------

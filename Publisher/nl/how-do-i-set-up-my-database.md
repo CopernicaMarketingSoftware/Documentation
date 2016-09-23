@@ -18,7 +18,7 @@ naar eigen wens. Je hebt de mogelijkheid een oneindig aantal
 databasevelden aan te maken. Sla in Copernica alles op over je relaties
 wat je maar wil. Deze data gebruik je vervolgens gemakkelijk in
 bijvoorbeeld je
-[e-mailings](./maak-zelf-slimme-email-templates.md "e-mailings").
+[e-mailings](./create-clever-emailings.md "e-mailings").
 
 2. Velden aanmaken/beheren
 --------------------------

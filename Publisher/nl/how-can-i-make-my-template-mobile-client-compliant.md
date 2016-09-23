@@ -11,7 +11,7 @@ En met de wetenschap dat de helft van nieuwe  [Europese
 smartphones](http://www.emerce.nl/nieuws/helft-nieuwe-europese-smartphones-heeft-mobiel-internet?utm_source=rss&utm_medium=rss&utm_campaign=helft-nieuwe-europese-smartphones-heeft-mobiel-internet)
  ondertussen beschikt over mobiel internet, kan je de conclusie wel
 trekken: Als je 
-[e-mailmarketing](./email-marketing-functionaliteiten.md "e-mailmarketing")
+[e-mailmarketing](./emailings.md "e-mailmarketing")
  inzet, moet je rekening houden met je mobiele gebruikers.
  Maar hoe doe je dat dan? In eerste instantie moet je ervoor zorgen dat
 je e-mailcampagnes ook leesbaar zijn op mobiele apparaten. Enkele tips:
@@ -35,7 +35,7 @@ houden bij het opstellen van je e-mailcampagnes.
 -----------------------------------
 
 Het is aangeraden een tekstversie toe te voegen aan je 
-[HTML-nieuwsbrieven](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md "HTML nieuwsbrieven voor mobiel").
+[HTML-nieuwsbrieven](./creating-html-newsletters-for-mobile-use.md "HTML nieuwsbrieven voor mobiel").
 Hiermee speel je namelijk in op je mobiele ontvangers die een apparaat
 hebben dat geen HTML ondersteunt.
 Of je kan een volledige online mobiele versie van je e-mail opmaken.
@@ -94,7 +94,7 @@ ook binnen de e-mail kort en bondig. Door vooraf te bepalen wat je
 precies wenst te bereiken met de e-mail kan je jezelf beperken tot
 relevante content en een goede call-to-action. Bijvoorbeeld bij 
 [event-driven
-e-mailcampagnes](./event-driven-e-mailcampagnes-gebruik-jij-ze-al.md "event-driven e-mailcampagnes")
+e-mailcampagnes](./event-driven-email-campaigns.md "event-driven e-mailcampagnes")
 . Deze verstuur je met 1 specifiek doel. Zorg dan ook dat je content
 hierop is afgestemd. Een lezer heeft bijvoorbeeld geen boodschap aan een
 productbeschrijving of de laatste nieuwtjes in een verjaardagsmailing.

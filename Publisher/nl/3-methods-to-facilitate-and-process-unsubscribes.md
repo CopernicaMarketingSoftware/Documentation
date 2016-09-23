@@ -43,7 +43,7 @@ gekoppeld aan jouw database en laat het profiel verwijderen
 lezer is uitgeschreven.
 
 [Lees hier hoe je deze webformulieren kunt
-fabrieken](./webformulieren.md)
+fabrieken](./web-forms.md)
 
 ### Mogelijkheid 3. Opvolgactie
 

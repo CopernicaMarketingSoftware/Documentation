@@ -21,19 +21,19 @@ Overige onderwerpen
 -------------------
 
 -   [PDF-blokken maken in Adobe Acrobat
-    PRO](./pdf-blokken-maken-in-adobe-acrobat-pro.md)
+    PRO](./create-pdf-blocks-in-adobe-acrobat-pro.md)
 -   [PDF-document importeren en de inhoud
-    bewerken](./pdf-document-importeren-en-de-inhoud-bewerken.md)
+    bewerken](./import-pdf-document-and-editing-its-content.md)
 -   [Lettertype uploaden (fonts
-    beheren)](./lettertype-uploaden-fonts-beheren.md)
+    beheren)](./uploading-fonts.md)
 -   [PDF-blokken opmaak veranderen - waar dien je rekening mee te
-    houden](./pdf-blokken-opmaak-veranderen-waar-dien-je-rekening-mee-te-houden.md)
+    houden](./pdf-blocks-formatting-what-should-you-take-into-account.md)
 -   [Linken naar een gepersonaliseerd PDF-bestand of meesturen als
-    bijlage](./linken-naar-een-pdf-bestand.md)
+    bijlage](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [(Bulk)download van
-    PDF-bestanden](./bulk-download-van-pdf-bestanden.md)
+    PDF-bestanden](./bulk-download-of-personalized-pdf-files.md)
 -   [PDF blokken conditioneel
-    tonen](./pdf-blokken-conditioneel-tonen.md)
+    tonen](./conditionally-show-pdf-blocks.md)
 -   [Fax-mailing
-    verzenden](./een-fax-mailing-verzenden.md)
+    verzenden](./sending-a-fax-mass-mailing.md)
 

@@ -140,7 +140,7 @@ functie deze transformeren naar de normale database-indeling. Je kunt
 ook een normaal tekstveld gebruiken om de data in op te slaan.
 
 [Lees meer over het omzetten van de
-datumnotatie](./datums-importeren-omzetten-van-de-datumnotatie.md)
+datumnotatie](./importing-dates-with-format-conversion.md)
 
 ### Wat gebeurt er als ik de ongeldige datum waarschuwing negeer?
 

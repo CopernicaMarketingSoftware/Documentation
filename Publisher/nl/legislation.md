@@ -33,7 +33,7 @@ herleidbaar zijn naar een individu).
 
 Gegevens over ondernemingen of organisaties zijn in de regel geen
 persoonsgegevens. Komen in je
-[database](./maak-je-eigen-database.md "Je eigen database(s) maken en beheren")
+[database](./creating-your-own-databases.md "Je eigen database(s) maken en beheren")
 alleen ondernemingen voor, dan zijn de desbetreffende gegevens dus geen
 persoonsgegevens. Vastgelegde gegevens over contactpersonen bij deze
 ondernemingen zijn wel persoonsgegevens.

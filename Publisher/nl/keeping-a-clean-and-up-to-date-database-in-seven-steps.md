@@ -2,8 +2,8 @@ Een schone en actuele database is de basis van een goede
 marketingcampagne. Het is belangrijk om te weten wie je wil benaderen en
 hoe. Bij het opmaken en personaliseren van bijvoorbeeld e-mailcampagnes
 wil je zeker zijn dat de gegevens die je gebruikt kloppen. Mede om je
-[deliverability](./deliverability-hogere-e-mailaflevering-met-copernica.md "Deliverability")
-en [e-mailreputatie](./e-mailreputatie-hoe-bouw-je-dit-op.md "E-mailreputatie")
+[deliverability](./deliverability-better-email-delivery-with-copernica.md "Deliverability")
+en [e-mailreputatie](./how-to-build-up-your-email-reputation.md "E-mailreputatie")
 hoog te houden.
 
 Hoe onderhoud je de database?
@@ -13,7 +13,7 @@ Hoe onderhoud je de database?
     hoef je ook maar op een plek te zoeken en updaten. Beschik je over
     een externe applicatie (bv. CRM)? Koppel deze dan aan je marketing
     software. Dan zijn je geüpdate gegevens ook makkelijker te
-    synchroniseren (m.b.v. [SOAP API](./soap-api-documentatie.md "Copernica SOAP API"))
+    synchroniseren (m.b.v. [SOAP API](./soap-api-documentation.md "Copernica SOAP API"))
     als deze op een centrale plek zijn opgeslagen.
 2.  Breng overzicht in je bestand door middel van duidelijke benamingen,
     tabbladen en definities van gegevens.\
@@ -33,7 +33,7 @@ Hoe onderhoud je de database?
 6.  Verrijk je relatiegegevens met de resultaten van elke campagne die
     je voert. Goede marketing software doet dat automatisch voor je.\
 7.  Controleer bij aanmeldingen dat je
-    [opt-in](./opt-in-double-opt-in-vraagt-u-om-toestemming.md "Opt-in kennisartikel")
+    [opt-in](./opt-in-and-double-opt-in-do-you-ask-for-permission.md "Opt-in kennisartikel")
     toestemming hebt voor elke relatie, dat voorkomt spamklachten.\
 8.  Benut je database om je relaties te onderhouden. Via bijvoorbeeld
     geautomatiseerde verjaardagsmailings en onderhoudswaarschuwingen

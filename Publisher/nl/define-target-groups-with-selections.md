@@ -46,8 +46,8 @@ de (nieuwe) gebruiker hebben we daarom voor enkele van deze selecties
 tutorials gemaakt. Zo zie je hoe je deze selecties in slechts enkele
 stappen binnen Copernica maakt.
 
--   [Een verjaardagsselectie maken binnen Copernica (2:07)](./een-verjaardagselectie-maken.md)
--   [Een nieuwsbriefselectie maken binnen Copernica (3:35)](./nieuwsbrief-selectie-maken.md)
+-   [Een verjaardagsselectie maken binnen Copernica (./how-to-create-a-birthday-selection.md)
+-   [Een nieuwsbriefselectie maken binnen Copernica (./create-a-mailing-list.md)
 
 Altijd relevant dankzij dynamische selecties
 --------------------------------------------
@@ -73,7 +73,7 @@ OF-voorwaarden voor.
 
 -   Met de **EN**-voorwaarde moet een selectie aan alle opgegeven regels
     voldoen. Bijvoorbeeld een relatie moet al ingeschreven staan in je
-    [database](./maak-je-eigen-database.md "Maak je eigen database")
+    [database](./creating-your-own-databases.md "Maak je eigen database")
     als bestaande relatie EN woonachtig zijn in Nederland.
 -   Met de **OF**-voorwaarde moet een selectie aan minstens één
     selectieregel voldoen.

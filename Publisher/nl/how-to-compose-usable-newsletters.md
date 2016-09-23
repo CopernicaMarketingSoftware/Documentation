@@ -2,7 +2,7 @@ Je nieuwsbrieven zijn eindelijk bezorgd en worden goed op het scherm
 weergegeven. Maar worden ze eigenlijk wel helemaal gelezen? Heb je niet
 al die moeite voor niets gedaan? Wat geldt voor de
 gebruiksvriendelijkheid en dus leesbaarheid van
-[landingspagina's](./een-goede-landingspagina-waar-moet-je-op-letten.md "Landingspagina's")
+[landingspagina's](./what-to-keep-in-mind-to-create-a-good-landing-page.md "Landingspagina's")
 geldt net zo voor nieuwsbrieven. Een nieuwsbrief die niet prettig leest
 zal minder conversie opleveren. Hoe kun je het beste een nieuwsbrief
 samenstellen?
@@ -45,13 +45,13 @@ Standaardelementen waar je op moet letten
 -   Vergeet de standaardelementen niet toe te voegen. De belangrijkste
     hiervan is: Maak een hyperlink naar een afmeldformulier. Dit kan je
     doen door bijvoorbeeld standaard een [list-unsubscribe
-    header](./list-unsubscribe-header-een-reputatieverbeterende-e-mailheader.md "List-unsubscribe header")
+    header](./list-unsubscribe-header-a-reputation-improving-email-header.md "List-unsubscribe header")
     op te nemen in je nieuwsbrieven.
 -   Vermeld ook duidelijk wie je bent. E-mail van onduidelijke afzenders
     wordt minder snel geopend. Vergeet niet te controleren of je
     authenticatiegegevens
-    ([SPF](./spam-verminderen-met-behulp-van-spf.md "Sender Framework Policy"),
-    [Sender ID](./sender-id-hoe-werkt-het-precies.md "Sender ID"),
+    (./what-is-sender-policy-framework-spf.md "Sender Framework Policy"),
+    [Sender ID](./sender-id-how-does-it-work.md "Sender ID"),
     [DKIM](./dkim-domainkey-identified-mail.md "DKIM versleuteling"))
     correct zijn ingesteld.
 -   Mobiel internetgebruik neemt steeds meer toe. Denk daarom aan

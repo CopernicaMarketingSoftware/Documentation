@@ -3,7 +3,7 @@ de bestemming van jouw publicatie. Oftewel, je kan alleen variabelen
 gebruiken uit de database en/of collectie waaraan je de uiting richt.
 Wanneer je wel wilt personaliseren met gegevens uit een andere database
 en/of collectie, kan je gebruik maken van [loadprofile en/of
-loadsubprofile](./de-loadprofile-en-loadsubprofile-functies.md "De {loadprofile} en {loadsubprofile} functies").
+loadsubprofile](./loadprofile-and-loadsubprofile.md "De {loadprofile} en {loadsubprofile} functies").
 
 Vanuit het profiel personaliseren met profielgegevens
 -----------------------------------------------------
@@ -91,7 +91,7 @@ Als de bestemming van je publicatie Database A is, kan je ook gegevens
 ophalen uit Database B. Hiervoor is de functie loadprofile beschikbaar.
 
 [Meer informatie over de loadprofile
-functie](./de-loadprofile-en-loadsubprofile-functies.md "De {loadprofile} en {loadsubprofile} functies")
+functie](./loadprofile-and-loadsubprofile.md "De {loadprofile} en {loadsubprofile} functies")
 
 Personaliseren vanuit een collectie in een ander database
 ---------------------------------------------------------
@@ -101,4 +101,4 @@ om gegevens op te halen uit een collectie in Database B. Hiervoor hebben
 we de functie loadsubprofile in het leven geroepen.
 
 [Meer informatie over de loadsubprofile
-functie](./de-loadprofile-en-loadsubprofile-functies.md "De {loadprofile} en {loadsubprofile} functies")
+functie](./loadprofile-and-loadsubprofile.md "De {loadprofile} en {loadsubprofile} functies")

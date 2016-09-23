@@ -13,24 +13,24 @@ geregistreerd.
 -   [De resultaten van je e-mailing
     bekijken](./view-the-results-of-your-mailing.md)
 -   [De kerncijfers bij de resultaten van een
-    e-mailing](./de-kerncijfers-bij-de-resultaten-van-een-e-mailing.md)
+    e-mailing](./statistics-key-figures.md)
 -   [Het dominante resultaat van een
-    bestemming](./het-dominante-resultaat-van-een-bestemming.md)
+    bestemming](./the-dominant-results-of-a-mailing.md)
 -   [Rapport met e-mailresultaten online
-    delen](./e-mailstatistieken-rapport-maken-en-delen.md)
+    delen](./share-the-results-of-your-mailing.md)
 -   [De resultaten van een mailing exporteren naar een spreadsheet
-    bestand](./de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand.md)
+    bestand](./export-the-results-of-your-mailing.md)
 -   [Resultaten van verschillende mailings
-    vergelijken](./resultaten-van-verschillende-mailings-vergelijken.md)
+    vergelijken](./is-it-possible-to-compare-the-results-of-multiple-mailings.md)
 -   [Profielgeschiedenis en campagnes
-    bekijken](./profielgeschiedenis-en-campagnes-bekijken.md)
--   [Hoe wordt de click through rate (CTR)
-    berekend?](./hoe-wordt-de-click-through-rate-berekend.md)
+    bekijken](./view-profile-history-and-campaigns.md)
+-   [Hoe wordt de click through rate (./ctr.md)
+    berekend?](./how-is-the-ctr-calculated.md)
 
 ### E-mail afleverfouten
 
 -   [Tijdelijke en permanente fouten, en wat betekenen de
-    foutcodes](./soft-en-hard-bounces.md)
+    foutcodes](./soft-and-hard-bounces-error-types-and-delivery-codes.md)
 
 Database statistieken
 ---------------------
@@ -45,19 +45,19 @@ Resultaten van sms-campagnes
 ----------------------------
 
 -   [De resultaten van een sms-mailing
-    exporteren](./de-resultaten-van-een-sms-mailing-exporteren.md)
+    exporteren](./exporting-the-results-of-a-mobile-mailing.md)
 -   [Selectie op basis van de resultaten van
-    sms-campagnes](./selectie-op-basis-van-de-resultaten-van-sms-campagnes.md)
+    sms-campagnes](./create-selections-based-on-the-results-of-mobile-mailings.md)
 
 Enquete resultaten
 ------------------
 
 -   [Enqueteresultaten
-    wissen](./enqueteresultaten-wissen.md)
+    wissen](./resetting-the-results-of-a-survey.md)
 
 Website statistieken
 --------------------
 
 -   [Website en webpagina statistieken
-    bekijken](./website-en-webpagina-statistieken.md)
+    bekijken](./website-and-web-page-statistics.md)
 

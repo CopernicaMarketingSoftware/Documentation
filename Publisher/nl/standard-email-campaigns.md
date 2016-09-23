@@ -5,9 +5,9 @@ het te implementeren.
 
 -   [Verlaten winkelmandje
     campagne](./abandoned-shopping-carts-the-template.md)
--   [Win-back campagne](./win-back-terugwin-campagne-in-copernica.md)
--   [Lead scoring campagne](./lead-scoring-campagne-in-copernica.md)
+-   [Win-back campagne](./win-back-campaign-in-copernica.md)
+-   [Lead scoring campagne](./lead-scoring-campaign-in-copernica.md)
 -   [Opvolgactie wanneer een formulier is X keer
     ingevuld](../en/trigger-follow-up-when-web-form-has-been-submitted-x-times.md)
--   [Verjaardagsmail](./een-verjaardagselectie-maken.md)
+-   [Verjaardagsmail](./how-to-create-a-birthday-selection.md)
 

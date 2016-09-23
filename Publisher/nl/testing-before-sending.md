@@ -15,16 +15,15 @@ Met een splitrun-test verzend je twee of meerdere versies van één
 e-mailing. Hoeveel versies je gebruikt, hangt af van wat je
 daadwerkelijk test. En met Copernica kan je nagenoeg alles testen:
 
--   De onderwerpregel, de tekst in je pre-header, header, "Van"-veld,
-    etc.
+-   De onderwerpregel, de tekst in je pre-header, header, "Van"-veld, etc.
 -   De inhoud van je e-mailing zoals hyperlinks of [RSS
-    feeds](./gebruik-van-rss-of-atom-feed.md "RSS Feeds")
+    feeds](./rss-or-atom-feed.md "RSS Feeds")
 -   Het [ontwerp van je
-    e-mailing](./ontwerp-je-eigen-email-templates.md "Ontwerp je eigen template"):
+    e-mailing](./create-custom-templates.md "Ontwerp je eigen template"):
     layout, afbeeldingen, positionering
 -   De call-to-action: de vorm en grootte van je call-to-action
 -   De
-    [personalisatie](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings"):
+    [personalisatie](./create-clever-emailings.md "Maak zelf slimme e-mailings"):
     gebruik je goede personalisering richting je doelgroep
 
 Je bepaalt zelf het aantal e-mails dat Copernica verzendt en de grootte
@@ -39,7 +38,7 @@ e-mailings](../images/email-design-testing-copernica.png "Test de weergave van j
 
 Wil je graag de weergave van je e-mailing in de meest populaire
 e-mailprogramma's bekijken voor verzending? Wanneer je jouw [e-mailing
-verzendt](./verzenden-naar-je-doelgroep.md "E-mailings verzenden"),
+verzendt](./send-emailings-to-relations.md "E-mailings verzenden"),
 wil je zeker zijn dat deze er goed uitziet in zowel Hotmail, Gmail,
 Yahoo!, Outlook en alle andere e-mailprogramma's. Dat kan met Copernica!
 

@@ -39,7 +39,7 @@ Copernica Marketing Software Registered Partner logo
 ----------------------------------------------------
 
 Ben je [geregistreerd als partner van
-Copernica](./registreer-je-als-partner-van-copernica.md "Het Copernica partnerprogramma")?
+Copernica](./register-as-copernica-partner.md "Het Copernica partnerprogramma")?
 Dan kan je hieronder het Copernica Registered Partner label downloaden
 voor gebruik op je eigen site. Bij gebruik van dit label willen we je
 vragen een van onze standaard teksten te gebruiken ter verwijzing naar

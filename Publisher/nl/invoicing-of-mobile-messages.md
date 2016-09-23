@@ -8,7 +8,7 @@ waarde aanwezig is, zal er een poging worden ondernomen.
 Veronderstel dat je een sms-mailing verstuurt naar een selectie met 2000
 profielen. 1500 profielen uit deze selectie hebben een geldig of
 ongeldig sms-nummer in het [aangewezen
-sms-veld](./database-gereed-maken-voor-sms-mailing.md "Database gereed maken voor sms-mailing").
+sms-veld](./prepare-your-database-for-mailings-with-sms.md "Database gereed maken voor sms-mailing").
 Er zullen dan 1500 pogingen worden gedaan om de sms af te leveren, en
 dus 1500 berichten gefactureerd a 10 eurocent per bericht.
 

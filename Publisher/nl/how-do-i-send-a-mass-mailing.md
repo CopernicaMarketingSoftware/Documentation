@@ -5,7 +5,7 @@ checklist.
     je ten eerste een bestand nodig met relaties die hebben aangegeven
     dat zij e-mail van jou willen ontvangen. [Wanneer mag ik iemand wel
     en niet
-    mailen](./opt-in-double-opt-in-vraagt-u-om-toestemming.md)?
+    mailen](./opt-in-and-double-opt-in-do-you-ask-for-permission.md)?
 -   In de database heb je een meerkeuzeveld toegevoegd waarin wordt
     geregistreerd of iemand de nieuwsbrief wil ontvangen of niet.
 -   Op basis van dit veld heb je een selectie gemaakt waaraan je de
@@ -14,7 +14,7 @@ checklist.
 -   Je hebt de (eventuele personalisatie in de) nieuwsbrief uitgebreid
     getest.
 -   Deze nieuwsbrief heeft een werkende (en wettelijk verplichte)
-    [afmeldmogelijkheid](./opt-out-hou-je-klant-niet-tegen.md).
+    [afmeldmogelijkheid](./opt-out-do-not-stop-your-client.md).
 
 1. Bulkmailing voorbereiden
 ---------------------------

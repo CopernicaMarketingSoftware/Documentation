@@ -1,7 +1,7 @@
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 -   **Vorige:**
-    [Testverzending](./e-mailings-testverzending.md "E-mailings: Testverzending")
+    [Testverzending](./emailings-sending-a-test-mail.md "E-mailings: Testverzending")
 -   **Volgende:**
-    [Statistieken](./e-mailings-statistieken.md "E-mailings: Statistieken")
+    [Statistieken](./emailings-statistics.md "E-mailings: Statistieken")
 

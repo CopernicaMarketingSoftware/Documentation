@@ -10,9 +10,9 @@ dat je kan openen met spreadheet software zoals Excel.
 
 Als je profielen of subprofielen wilt exporteren gebaseerd op
 e-mailresultaten, maak dan een
-[selectie](./nieuwe-selectie-maken.md)
+[selectie](./creating-subselections.md)
 aan met de conditietype *Check op resultaten e-mailcampagnes*. Gebruik
 vervolgens de
-[exportfunctie](./profiel-en-of-subprofielen-exporteren.md)
+[exportfunctie](./export-profiles-and-or-subprofiles.md)
 in het menu *Huidige weergave*in het onderdeel *Profielen* om de
 profielgegevens uit de selectie te downloaden.

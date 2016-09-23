@@ -1,13 +1,13 @@
 In deze Copernica-tutorial leer je welke informatie je terugvindt in een
 profiel.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Profielen in een database in Copernica bevatten allerlei gegevens. Naast
 de
 [databasevelden](./profiles-adding-database-fields.md)
 op profielniveau en subprofielen in een
-[collectie](./profielen-collectie-aanmaken.md),
+[collectie](./profiles-adding-collections.md),
 vind je per profiel nog een aantal tabbladen met informatie:
 
 Bestanden
@@ -43,6 +43,6 @@ Enquêtes
 Alle resultaten van enquêtes die zijn ingevuld door dit profiel.
 
 -   **Vorige:** [Profielen en subprofielen
-    aanmaken](./profielen-profielen-en-subprofielen-aanmaken.md "Profielen: Profielen en subprofielen aanmaken")
--   **Volgende:** [Selecties](./profielen-selecties.md "Profielen: Selecties")
+    aanmaken](./profiles-adding-profiles-and-subprofiles.md "Profielen: Profielen en subprofielen aanmaken")
+-   **Volgende:** [Selecties](./profiles-selections.md "Profielen: Selecties")
 

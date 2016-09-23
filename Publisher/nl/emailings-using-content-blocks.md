@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leer je hoe je werkt met contentblokken in
 Copernica.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 [E-maildocumenten](./emailings-creating-a-document.md)
 in Copernica voorzie je van eigen content door gebruik te maken van
@@ -12,9 +12,9 @@ Een contentblok aanmaken: de bewerkmodus
 
 -   Navigeer in Copernica naar ‘E-mailings’ en selecteer het document
     dat je wilt bewerken
--   Klik onderin op ‘[Bewerkmodus](./voorbeeldweergave-en-bewerkmodus.md)’
+-   Klik onderin op ‘[Bewerkmodus](./view-document-in-edit-mode-or-in-preview-mode.md)’
 -   Kies ‘Gepersonaliseerd’ om een contentblog
-    [gepersonaliseerd](./e-mailings-werken-met-contentblokken.md)
+    [gepersonaliseerd](./emailings-using-content-blocks.md)
     te tonen. Of juist ‘Toon variabelen’ als je jouw
     [Smarty-code](./smarty.md) wilt zien.
 -   Selecteer een van de blokken om daar content in toe te voegen
@@ -58,12 +58,12 @@ Voorbeeldweergave
 -----------------
 
 Het resultaat van je ingevoerde gegevens is direct te zien in de
-[voorbeeldweergave](./voorbeeldweergave-en-bewerkmodus.md)
+[voorbeeldweergave](./view-document-in-edit-mode-or-in-preview-mode.md)
 binnen Copernica. Ook hier heb je weer de keuze tussen om je
 [Smarty-variabelen](./smarty.md)
 zichtbaar te laten zijn (‘Toon variabelen’) of het document
 gepersonaliseerd te tonen (‘Gepersonaliseerd’).
 
 -   **Vorige:** [Document aanmaken](./emailings-creating-a-document.md "E-mailings: Document aanmaken")
--   **Volgende:** [Personalisatie](./e-mailings-personalisatie.md "E-mailings: Personalisatie")
+-   **Volgende:** [Personalisatie](./emailings-adding-personalization.md "E-mailings: Personalisatie")
 

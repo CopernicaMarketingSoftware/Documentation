@@ -1,7 +1,7 @@
 In deze Copernica-tutorial over het inrichten van een database, leer je
 hoe je velden aanmaakt in je database.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Aanmaken van velden
 -------------------
@@ -65,12 +65,12 @@ overzichtspagina binnen ‘Profielen’.
 
 Gebruik deze selectieregel om een opgegeven [aantal profielen
 alfanumeriek te
-selecteren](./selectieconditie-sorteren-en-selecteren-van-subprofielen.md).
+selecteren](./sorting-and-selecting-profiles-in-a-database-or-collection.md).
 
 ### Dit veld wordt geïndexeerd
 
 Vink dit veld aan als het gaat om een waarde waarop je later
-[selecties](./profielen-selecties.md)
+[selecties](./profiles-selections.md)
 wilt maken. Als je bijvoorbeeld van plan bent
 [verjaardagsmails](./selectieconditie-check-op-datum.md)
 te versturen, vink je dit aan als je een veld aanmaakt voor
@@ -81,5 +81,5 @@ Selecteer het veld dat je nodig hebt en klik ‘Opslaan’.
 -   **Vorige:** [Database
     aanmaken](./profiles-creating-a-database.md "Profielen: Databasebase aanmaken")
 -   **Volgende:** [Collectie
-    aanmaken](./profielen-collectie-aanmaken.md "Profielen: Collectie aanmaken")
+    aanmaken](./profiles-adding-collections.md "Profielen: Collectie aanmaken")
 

@@ -10,34 +10,30 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 **Huidige weergave**.
 
 -   [Importbestand
-    voorbereiden](./een-importbestand-voorbereiden.md)
+    voorbereiden](./the-requirements-for-a-well-formatted-import-file.md)
 -   [Gegevens importeren naar nieuwe
-    database](./databases-maken-en-gegevens-importeren.md)
--   [Gegevens importeren vanaf een online
-    locatie](./gegevens-importeren-vanaf-een-online-locatie.md)
+    database](./setting-up-your-database-and-import-your-contacts.md)
 -   [Import naar een database met
-    collectie](./import-naar-database-met-collectie.md)
+    collectie](./import-to-a-database-with-collection.md)
 -   [Een periodieke import van (sub)profielen
-    inroosteren](./een-import-van-subprofielen-periodiek-inroosteren.md)
+    inroosteren](./schedule-import-from-online-location.md)
 -   [Bestaande gegevens bijwerken met een
-    import](./bestaande-gegevens-bijwerken-met-een-import.md)
+    import](./updating-a-database-using-an-import.md)
 -   [Importeren: kolommen koppelen en sleutelvelden
-    aanwijzen](./importeren-kolommen-koppelen-en-sleutelvelden-aanwijzen.md)
+    aanwijzen](./set-columns-and-choose-the-key-fields.md)
 -   [Datums importeren - omzetten van de
-    datumnotatie](./datums-importeren-omzetten-van-de-datumnotatie.md)
+    datumnotatie](./importing-dates-with-format-conversion.md)
 -   [Verkeerde import ongedaan maken of
-    terugdraaien](./verkeerde-import-ongedaan-maken-of-terugdraaien.md)
+    terugdraaien](./can-i-undo-an-import.md)
 
 ### Veelgestelde vragen
 
--   [Het aantal geimporteerde profielen klopt
-    niet](./het-aantal-geimporteerde-profielen-klopt-niet.md)
 -   [Ik krijg een melding over niet-passende
-    datums](./ik-krijg-een-melding-over-niet-passende-datums.md)
+    datums](./i-get-a-non-compatible-date-warning.-how-can-i-prevent-this.md)
 -   [Na een import zie ik alleen het veld ID in de
-    database](./na-een-import-zie-ik-alleen-het-veld-id-in-de-database.md)
+    database](./i-created-a-database-imported-contacts-but-all-i-see-is-the-id.md)
 -   [Meer veelgestelde vragen en het oplossen van problemen bij het
-    importeren](./problemen-oplossen-bij-het-importeren-van-profielgegevens.md)
+    importeren](./importing-troubleshooting-and-faq.md)
 
 Exporteren van profielgegevens
 ------------------------------
@@ -46,14 +42,8 @@ De exportfunctionaliteit vind je onder **Profielen**, in het menu
 **Huidige weergave**.
 
 -   [Profielen en/of subprofielen
-    exporteren](./profiel-en-of-subprofielen-exporteren.md)
+    exporteren](./export-profiles-and-or-subprofiles.md)
 -   [Extra opties bij export van
-    profielgegevens](./extra-opties-bij-export-van-profielgegevens.md)
+    profielgegevens](./additional-options-for-your-export-file.md)
 -   [De resultaten van een mailing exporteren naar een spreadsheet
-    bestand](./de-resultaten-van-een-mailing-exporteren-naar-een-spreadsheet-bestand.md)
-
-### Veelgestelde vragen
-
--   [Veelgestelde vragen bij het
-    exporteren](./veelgestelde-vragen-bij-het-exporteren.md)
-
+    bestand](./export-the-results-of-your-mailing.md)

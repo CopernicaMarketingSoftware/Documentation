@@ -1,5 +1,5 @@
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
--   **Vorige:** [Standaardbestemming](./e-mailings-standaardbestemming.md "E-mailings: Standaardbestemming")
--   **Volgende:** [Document controleren](./e-mailings-document-controleren.md "E-mailings: Document controleren")
+-   **Vorige:** [Standaardbestemming](./emailings-setting-a-test-destination.md "E-mailings: Standaardbestemming")
+-   **Volgende:** [Document controleren](./emailings-checking-your-document.md "E-mailings: Document controleren")
 

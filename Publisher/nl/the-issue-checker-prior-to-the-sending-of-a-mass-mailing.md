@@ -60,7 +60,7 @@ van het bericht.
 Het afzenderadres stelt u in direct boven het document. Bekijk het
 volledige artikel over het instellen van de e-mail headers.
 
--   [Het onderwerp en afzenderadres instellen](./het-onderwerp-en-afzenderadres-instellen.md)
+-   [Het onderwerp en afzenderadres instellen](./editing-the-sender-and-subject-of-the-email-document.md)
 
 ### Het afzenderadres bestaat niet
 
@@ -109,7 +109,7 @@ Sender ID instelling op dit domein correct is. U kunt hiervoor het
 artikel over Sender ID raadplegen.
 
 -   [Sender ID instellen op je
-    afzenderdomein](./sender-id-instellen-op-je-afzenderdomein.md)
+    afzenderdomein](./setup-sender-id.md)
 
 Blacklists
 ----------
@@ -137,7 +137,7 @@ niet Copernica BV.
 
 Mocht u de melding krijgen dat DKIM niet goed is ingesteld, raadpleeg
 dan het [volledige artikel over
-DKIM](./e-mails-versleutelen-met-dkim.md).
+DKIM](./signing-your-emails-with-dkim.md).
 In de software kunt u onder E-mailings \> Extra \> DKIM keys een
 uitgebreide validatie vinden van de DKIM dat is ingesteld via deze
 applicatie.
@@ -218,7 +218,7 @@ niet meer verstuurd worden. De spamscore vindt u rechts onderaan het
 geopende document, door op de knop met waarschuwingen te klikken.
 
 We hebben ook een
-[artikel](./verlaag-je-spamrating-enkele-aandachtspunten.md)
+[artikel](./reduce-your-spam-rating-some-focus-points.md)
 met tips hoe u uw spamscore kunt verlagen.
 
 Controle op bestemming

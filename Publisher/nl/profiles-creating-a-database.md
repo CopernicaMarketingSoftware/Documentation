@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leer je hoe je binnen het onderdeel
 'Profielen' een nieuwe database creëert.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Hoe creëer je een nieuwe database?
 ----------------------------------
@@ -15,5 +15,5 @@ Hey presto! In het linkeroverzicht is je zojuist gecreëerde database nu
 zichtbaar.
 
 -   **Volgende:** [Velden
-    aanmaken](./profielen-velden-aanmaken.md "Profielen: Velden aanmaken")
+    aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
 

@@ -13,7 +13,7 @@ De databasestructuur binnen Copernica kan je geheel opmaken en inrichten
 naar eigen wens. Je hebt de mogelijkheid een oneindig aantal
 databasevelden aan te maken. Deze data gebruik je vervolgens gemakkelijk
 in bijvoorbeeld je
-[e-mailings](./maak-zelf-slimme-email-templates.md "E-mailings").
+[e-mailings](./create-clever-emailings.md "E-mailings").
 
 Hieronder vind je een overzicht van databasevelden die je binnen
 Copernica aanmaakt en gebruikt:
@@ -29,8 +29,8 @@ Copernica aanmaakt en gebruikt:
 Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
-[webformulier](./maak-zelf-slimme-email-templates.md "Maak zelf slimme e-mailings")
-of [enquête](./enquetes.md "Maak je eigen enquêtes").
+[webformulier](./create-clever-emailings.md "Maak zelf slimme e-mailings")
+of [enquête](./create-your-own-survey.md "Maak je eigen enquêtes").
 
 ![Meer gegevens opslaan met een multidimensionale
 database](../images/multidimensionale-database-copernica.jpg "Meer gegevens opslaan met een multidimensionale database")

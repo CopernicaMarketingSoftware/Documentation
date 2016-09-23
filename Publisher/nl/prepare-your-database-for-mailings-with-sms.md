@@ -7,7 +7,7 @@ Database telefoonveld
 
 Voor het opslaan van mobiele telefoonnummers gebruik je een [database-
 of
-collectieveld](./database-en-collectie-veldtypes.md)
+collectieveld](./database-and-collection-field-types.md)
 van het type telefoonnummer -\> **SMS**
 
 ![](../images/telefoonveld-sms.png)
@@ -22,6 +22,6 @@ worden. Zo voorkom je dat een mailing per ongeluk aan een verkeerde
 
 Om de selectie of miniselectie te authoriseren, ga je in het onderdeel
 **Profielen** naar **Databasebeheer -\>
-[Gebruiksmogelijkheden](./gebruiksmogelijkheden-instellen-voor-databases-en-selecties.md)**.
+[Gebruiksmogelijkheden](./database-intentions-enabling-the-target-for-mass-mailings.md)**.
 Kies de selectie die je wilt gebruiken, en vink het vakje bij **SMS
 mailings** aan.

@@ -53,4 +53,4 @@ Het is mogelijk om alle profielen uit een selectie in een keer te
 verwijderen of te wijzigen. Hierover hebben we een apart artikel.
 
 [Meerdere profielen ineens
-verwijderen](./meerdere-subprofielen-ineens-wijzigen-of-verwijderen.md)
+verwijderen](./edit-or-remove-all-profiles-from-a-database-or-selection-at-once.md)

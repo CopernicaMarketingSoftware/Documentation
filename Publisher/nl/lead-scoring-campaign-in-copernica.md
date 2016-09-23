@@ -8,8 +8,7 @@ meer iets van gehoord? Het is een enorm karwei om dit voor alle klanten
 bij te houden, maar door een lead scoring campagne in te richten kan
 Copernica je hier mee helpen.
 
-[Lead
-scoring](./wat-is-lead-scoring-infographic.md)
+[Lead scoring](./what-is-lead-scoring-infographic.md)
 is het bijhouden van de betrokkenheid van een klant. Hierbij wordt het
 complexe begrip betrokkenheid teruggebracht tot een cijfer, dat wordt
 aangepast naar aanleiding van activiteiten van de klant. Zo wordt

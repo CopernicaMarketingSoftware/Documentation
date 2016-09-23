@@ -18,19 +18,19 @@ stappen.
 2.  [Het aanmaken van
     artikelen](./het-maken-van-artikelen-voor-in-een-feed.md)
 3.  [Het maken en samenstellen van een RSS of Atom
-    feed](./feed-aanmaken-en-samenstellen.md)
+    feed](./compose-rss-or-atom-feed-using-filters.md)
 4.  [Feed publiceren in e-mailings of
-    webpagina](./de-loadfeed-functie.md)
+    webpagina](./the-loadfeed-function.md)
 
 ### Overige artikelen
 
 -   [Externe RSS of Atom feed in document
-    laden](./externe-rss-of-atom-feed-in-document-laden.md)
+    laden](./can-i-load-an-external-feed-in-my-document.md)
 -   [Feed als speciale content invoegen in een
-    tekstblok](./speciale-content-invoegen-in-een-tekstblok.md)
+    tekstblok](./publishing-special-content-web-forms-surveys-feeds-external-html-flash.md)
 -   [Uitgebreid zoeken binnen Content feed
-    artikelen](./zoeken-binnen-content-artikelen.md)
+    artikelen](./advanced-search-content-articles.md)
 -   Eigen CSS stylesheet of XSLT gebruiken voor je feed
 -   [Hoe je markdown gebruikt in
-    Copernica](./hoe-je-markdown-gebruikt-in-copernica.md "Hoe je markdown gebruikt in Copernica")
+    Copernica](./how-to-use-markdown-in-copernica.md "Hoe je markdown gebruikt in Copernica")
 
