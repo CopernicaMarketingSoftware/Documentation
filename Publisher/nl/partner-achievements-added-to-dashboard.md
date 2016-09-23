@@ -57,8 +57,7 @@ Wat is jouw score?
 dashboard](https://www.copernica.com/nl/dashboard "Copernica dashboard"),
 bekijk je eigen prestaties en bepaal wat je nog kunt doen om de perfecte
 score van 100% te behalen. We zien ernaar uit om je in september tijdens
-de [Partner of the Year awards
-show](https://www.copernica.com/nl/support/copernica-summit/copernica-partners "Copernica dashboard")
+de [Partner of the Year awards show](./copernica-partners.md "Copernica dashboard")
 op het podium te kunnen feliciteren!
 
 ![Dashboard](Copernicamarketingsoftware-behaaldeprestaties2.png "Copernica Dashboard")

@@ -23,12 +23,10 @@ Afzender en onderwerp instellen
 
 -   Selecteer in het linker overzicht je e-maildocument
 -   Klik achter ‘Afzender’ op de tekst ‘Naam afzender, Afzenderadres’
--   Vul een afzendernaam in (gebruik hier een [herkenbare
-    naam](./acht-tips-om-de-open-rate-van-je-e-mail-nieuwsbrief-te-verhogen.md))
--   Vul een [werkend e-mailadres](./vijf-redenen-om-geen-no-reply-adressen-meer-te-gebruiken.md) in
+-   Vul een afzendernaam in (gebruik hier een herkenbare naam)
+-   Vul een werkend e-mailadres in
 -   Klik naast ‘Onderwerp’ op ‘Het onderwerp van de e-mail’
--   Vul een [pakkende
-    onderwerpsregel](./acht-tips-om-de-open-rate-van-je-e-mail-nieuwsbrief-te-verhogen.md) in
+-   Vul een pakkende onderwerpsregel in
 -   Klik buiten het venster om op te slaan
 
 Je hebt nu een onderwerp en afzender ingesteld.

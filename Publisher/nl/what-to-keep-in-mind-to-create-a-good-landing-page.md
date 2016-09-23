@@ -119,7 +119,7 @@ gegevens om je pagina's nog beter te optimaliseren.
 Vond je dit interessant? Lees dan ook:
 --------------------------------------
 
--   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
+-   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./creating-html-newsletters-for-mobile-use.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
 -   [Maak en publiceer je eigen webpagina’s](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina’s")
 -   [Resultaten van je webpagina](./your-web-page-results.md "Resultaten van je webpagina")
 

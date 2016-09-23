@@ -38,8 +38,6 @@ smarty versie 2 of 3 wilt gebruiken. [Kies versie
     voorbeeld](./example-of-the-loadprofile-and-loadsubprofile-functions.md)
 -   [Linken naar een (gepersonaliseerd)
     PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
--   [Interessevelden gebruiken binnen smarty
-    personalisatie](./interessevelden-gebruiken-in-smarty-personalisatie.md)
 -   [Extra velden voor document
     personalisatie](./extra-fields-for-personalizing.md)
 -   [Informatie uit een URL gebruiken voor
@@ -93,7 +91,6 @@ wel/niet tonen van content blokken aan een doelgroep. Maar ook aan
 bijvoorbeeld opvolgacties kunnen condities worden gehangen.
 
 -   [Werken met de eenvoudige script editor](./the-easy-script-editor.md)
--   [Geavanceerde JavaScript condities](./geavanceerde-javascript-condities.md)
 
 Overig
 ------

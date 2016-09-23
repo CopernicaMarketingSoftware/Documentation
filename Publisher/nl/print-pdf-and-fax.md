@@ -27,11 +27,11 @@ Overige onderwerpen
 -   [Lettertype uploaden (fonts
     beheren)](./uploading-fonts.md)
 -   [PDF-blokken opmaak veranderen - waar dien je rekening mee te
-    houden](./pdf-blokken-opmaak-veranderen-waar-dien-je-rekening-mee-te-houden.md)
+    houden](./pdf-blocks-formatting-what-should-you-take-into-account.md)
 -   [Linken naar een gepersonaliseerd PDF-bestand of meesturen als
     bijlage](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [(Bulk)download van
-    PDF-bestanden](./bulk-download-van-pdf-bestanden.md)
+    PDF-bestanden](./bulk-download-of-personalized-pdf-files.md)
 -   [PDF blokken conditioneel
     tonen](./conditionally-show-pdf-blocks.md)
 -   [Fax-mailing

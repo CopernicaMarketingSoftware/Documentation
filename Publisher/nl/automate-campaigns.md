@@ -11,7 +11,7 @@ koppelen binnen je campagnes.
 -   [Opvolgacties voor
     e-maildocumenten](./follow-up-actions-for-email-documents.md)
 -   [Opvolgacties voor
-    webformulieren](./opvolgacties-voor-webformulieren.md)
+    webformulieren](./follow-up-actions-for-web-forms.md)
 -   [Opvolgacties voor
     enquetes](./follow-up-actions-for-surveys.md)
 -   [Opvolgacties voor databases en

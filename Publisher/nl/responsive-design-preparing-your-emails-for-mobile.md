@@ -3,7 +3,7 @@ mobile](../images/email-marketing-mobile.jpg "responsive design: email for mobil
 In de afgelopen drie jaar is het gebruik van smartphones geëxplodeerd.
 Het wordt voor e-mailmarketers dan ook steeds belangrijker hun [e-mails
 te optimaliseren voor mobiel
-gebruik](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md).
+gebruik](./creating-html-newsletters-for-mobile-use.md).
 Daarbij is het belangrijk goed te letten op het gebruik van smartphones
 binnen je eigen doelgroep(en). Maar de cijfers spreken voor zich: steeds
 meer mensen hebben een of meerdere mobiele apparaten waarmee zij online

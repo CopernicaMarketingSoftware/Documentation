@@ -47,7 +47,7 @@ Personalisatie en linken naar bestanden
     - Personaliseer e-mailings en websites met gegevens uit een tweede
     database of collectie
 -   [In\_selection en
-    in\_miniselection](./de-in-selection-en-in-miniselection-functie.md)
+    in\_miniselection](./in-selection-and-in-miniselection.md)
     - Gebruik selecties en miniselecties om content te tonen of
     verbergen in e-mailings en webpagina's
 -   [Loadfile en
