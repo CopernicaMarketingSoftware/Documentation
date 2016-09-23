@@ -13,21 +13,21 @@ Table of contents
 
 ### CSS stylesheets
 
--   [What can i do with CSS](css-en-xslt#1)
--   [Create and manage new and existing stylesheets](css-en-xslt#2)
+-   [What can i do with CSS](#1)
+-   [Create and manage new and existing stylesheets](#2)
 -   [Easily test your stylesheet on a webform, survey or web
-    feed](css-en-xslt#3)
+    feed](#3)
 -   [Link your stylesheet to a template, document or web
-    page](css-en-xslt#4)
--   [Using CSS in your emailings](css-en-xslt#5)
+    page](#4)
+-   [Using CSS in your emailings](#5)
 
 ### XSLT in Copernica
 
--   [What is XSLT](css-en-xslt#6)
--   [How does XSLT work](css-en-xslt#7)
--   [Create your own XSLT](css-en-xslt#7-1)
--   [XSLT resources](css-en-xslt#8)
--   [Link your XSLT to a webform, feed or survey](css-en-xslt#9)
+-   [What is XSLT](#6)
+-   [How does XSLT work](#7)
+-   [Create your own XSLT](#7-1)
+-   [XSLT resources](#8)
+-   [Link your XSLT to a webform, feed or survey](#9)
 
 Using stylesheets in Copernica
 ------------------------------
