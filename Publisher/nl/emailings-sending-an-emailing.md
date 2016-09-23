@@ -1,4 +1,4 @@
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 -   **Vorige:**
     [Testverzending](./emailings-sending-a-test-mail.md "E-mailings: Testverzending")

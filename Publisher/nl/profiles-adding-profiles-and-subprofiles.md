@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leer je hoe je profielen en subprofielen
 aanmaakt.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 *Om een profiel aan te maken moet je eerst de stappen uit de tutorial
 ‘[Velden aanmaken](./profiles-adding-database-fields.md)’

@@ -56,6 +56,6 @@ stappen met behulp van onze editor. Wat moet je doen?
 -   Voeg eventueel een stijl toe aan het webformulier. Dat doe je door
     een CSS of XSLT document te koppelen aan het formulier.
 -   Publiceer je webformulier online. Koppel het formulier aan een
-    [webpagina](./maak-en-publiceer-je-eigen-webpaginas.md "Je eigen webpagina's maken en beheren")
+    [webpagina](./create-and-publish-your-own-web-pages.md "Je eigen webpagina's maken en beheren")
     die je aanmaakt in Copernica.
 

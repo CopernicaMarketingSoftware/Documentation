@@ -16,7 +16,7 @@ Consistentie
 ------------
 
 Voor een consistente look and feel bevat een
-[landingspagina](./maak-en-publiceer-je-eigen-webpaginas.md "landingspagina")
+[landingspagina](./create-and-publish-your-own-web-pages.md "landingspagina")
 dezelfde stijlelementen als de rest van de website en campagne. De
 bezoeker moet voelen dat de pagina waar hij landt bij de campagne hoort.
 
@@ -90,7 +90,7 @@ is hij meteen weer weg.
 Personaliseren
 --------------
 
-[Personaliseer](./maak-en-publiceer-je-eigen-webpaginas.md "personaliseer")
+[Personaliseer](./create-and-publish-your-own-web-pages.md "personaliseer")
 de landingspagina indien mogelijk. Klikt een nieuwsbrieflezer
 bijvoorbeeld op een link om zich aan te melden voor een evenement? Vul
 dan alvast zijn gegevens in het formulier in. Of klikt een vaste klant
@@ -120,6 +120,6 @@ Vond je dit interessant? Lees dan ook:
 --------------------------------------
 
 -   [HTML-nieuwsbrieven opmaken voor mobiel gebruik](./html-nieuwsbrieven-opmaken-voor-mobiel-gebruik.md "HTML-nieuwsbrieven opmaken voor mobiel gebruik")
--   [Maak en publiceer je eigen webpagina’s](./maak-en-publiceer-je-eigen-webpaginas.md "Maak en publiceer je eigen webpagina’s")
+-   [Maak en publiceer je eigen webpagina’s](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina’s")
 -   [Resultaten van je webpagina](./your-web-page-results.md "Resultaten van je webpagina")
 

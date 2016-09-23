@@ -1,4 +1,4 @@
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 -   **Vorige:** [Document
     controleren](./emailings-checking-your-document.md "E-mailings: Document controleren")

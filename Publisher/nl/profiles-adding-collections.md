@@ -2,7 +2,7 @@ In deze Copernica-tutorial leer je hoe je een collectie aanmaakt in je
 database.
 
 -   [Terug naar de
-    video's](./videos.md "Video's")
+    video's](./video-tutorials.md "Video's")
 
 Wat zijn collecties?
 --------------------

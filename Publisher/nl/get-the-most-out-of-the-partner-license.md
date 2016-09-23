@@ -72,7 +72,7 @@ zetten, is bekend raken met [de functies van de
 software](./features.md). Als onderdeel
 van de partnerlicentie biedt Copernica uitgebreide mogelijkheden om je
 productkennis te vergroten. Naast de
-[videotutorials](./videos.md "Videotutorials"),
+[videotutorials](./video-tutorials.md "Videotutorials"),
 [helpdocumentatie](./help-documentation.md "helpdocumentatie")
 en [ondersteuningstool](./support-tool.md "Ondersteuningstool")
 organiseert Copernica, op het hoofdkantoor in Amsterdam, maandelijks

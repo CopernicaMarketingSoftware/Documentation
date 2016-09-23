@@ -1,5 +1,5 @@
 Ontdek met behulp van Copernica hoe jouw
-[webpagina's](./maak-en-publiceer-je-eigen-webpaginas.md "Maak en publiceer je eigen webpaginas")
+[webpagina's](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpaginas")
 online presteren. Bekijk de statistieken van je gehele website of van
 elke individuele webpagina. Zo weet je ook meteen welke pagina's goed
 converteren en welke je nog kan verbeteren.

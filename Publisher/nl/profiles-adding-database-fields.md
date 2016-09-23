@@ -1,7 +1,7 @@
 In deze Copernica-tutorial over het inrichten van een database, leer je
 hoe je velden aanmaakt in je database.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Aanmaken van velden
 -------------------

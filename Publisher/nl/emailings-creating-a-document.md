@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leer hoe je een nieuw e-maildocument
 aanmaakt.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 *Voordat je aan de slag gaat met het opstellen van een e-maildocument,
 moet je eerst een [e-mailtemplate aanmaken](./emailings-creating-a-new-template.md).*

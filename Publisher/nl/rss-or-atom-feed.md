@@ -1,5 +1,5 @@
 Weet je even niet welke content te plaatsen op je
-[webpagina](./maak-en-publiceer-je-eigen-webpaginas.md "Maak en publiceer je eigen webpagina's")
+[webpagina](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina's")
 of in je
 [e-mailing](./emailings.md "E-mailings")?
 Had je al eens gedacht aan een contentfeed? Daarbij heb je zelf in de

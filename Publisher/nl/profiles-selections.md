@@ -2,7 +2,7 @@ In deze Copernica-tutorial leer je wat een selectie is en hoe je er een
 aanmaakt.
 
 -   [Terug naar de
-    video's](./videos.md "Video's")
+    video's](./video-tutorials.md "Video's")
 
 Wat is een selectie?
 --------------------

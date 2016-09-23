@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leer je hoe je een miniselectie maakt op
 selectieniveau.
 
--   [Terug naar de video's](./videos.md "Video's")
+-   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Wat is een miniselectie op selectieniveau?
 ------------------------------------------

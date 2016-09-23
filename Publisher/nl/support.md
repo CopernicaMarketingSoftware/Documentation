@@ -38,17 +38,17 @@ Neem dan snel een kijkje in onze
     [Meer over integraties met
     Copernica](./integrations.md "Integraties")
 
--   [Video-tutorials](./videos.md "Videos")
+-   [Video-tutorials](./video-tutorials.md "Videos")
     ----------------------------------------------------------------------------
 
-    [![Video-tutorials](../images/nl-support-video-tutorials.png)](./videos.md "Videos")
+    [![Video-tutorials](../images/nl-support-video-tutorials.png)](./video-tutorials.md "Videos")
 
     Word een ware Copernica expert en volg onze verschillende
     instructievideo's. Leer zo sneller hoe je met Copernica Marketing
     Software werkt.
 
     [Meer over
-    video's](./videos.md "Videos")
+    video's](./video-tutorials.md "Videos")
 
 -   [Evenementen](./events.md "Evenementen")
     ----------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 Vergroot het bereik van je marketingcampagnes door social media toe te
 voegen. Combineer je
 [e-mailings](./emailings.md "E-mailings")
-of [webpagina's](./maak-en-publiceer-je-eigen-webpaginas.md "Webpaginas maken")
+of [webpagina's](./create-and-publish-your-own-web-pages.md "Webpaginas maken")
 met bijvoorbeeld Facebook, Twitter of LinkedIn. Laat zo je relaties jouw
 boodschap verder verspreiden naar hun eigen netwerk.
 

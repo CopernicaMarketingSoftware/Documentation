@@ -22,7 +22,7 @@ Naast de ondersteuningstool beschikt Copernica ook over een uitgebreid
 Vind de geschikte [Copernica
 partner](./vind-een-partner.md "Overzicht van Copernica partners")
 voor bijvoorbeeld het [maken van je eigen
-website](./maak-en-publiceer-je-eigen-webpaginas.md "Eigen website maken"),
+website](./create-and-publish-your-own-web-pages.md "Eigen website maken"),
 het geven van een training over Copernica of de ontwikkeling van een
 [integratie](./integrations.md "Copernica integraties")
 tussen Copernica en je webshop. Onze partners staan je graag met raad en

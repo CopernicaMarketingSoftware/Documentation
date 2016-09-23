@@ -8,7 +8,7 @@ speciale tag.
 `[survey name='surveyname']`
 
 Een enquete kan je alleen op een webpagina publiceren. [Een webpagina
-maken](./maak-en-publiceer-je-eigen-webpaginas.md)
+maken](./create-and-publish-your-own-web-pages.md)
 
 Let op: het is niet mogelijk om een enquete direct in een email document
 te publiceren. Wel kan je vanuit een emailing naar een enquete
