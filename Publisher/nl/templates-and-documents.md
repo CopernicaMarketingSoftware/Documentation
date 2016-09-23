@@ -31,7 +31,7 @@ soorten template blokken.
 -   [Afbeeldingblok](./the-image-function-for-adding-images-to-your-document.md) -
     definieer waar afbeeldingen worden toegevoegd
 -   [Loop
-    blok](./template-blokken-de-loop-tag.md) -
+    blok](./the-loop-function-to-iterate-content-in-your-email.md) -
     herhaal HTML, afbeelding en tekstblokken
 
 Responsive voorbeeld templates

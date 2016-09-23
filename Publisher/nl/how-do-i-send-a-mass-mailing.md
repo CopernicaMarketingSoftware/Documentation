@@ -14,7 +14,7 @@ checklist.
 -   Je hebt de (eventuele personalisatie in de) nieuwsbrief uitgebreid
     getest.
 -   Deze nieuwsbrief heeft een werkende (en wettelijk verplichte)
-    [afmeldmogelijkheid](./opt-out-hou-je-klant-niet-tegen.md).
+    [afmeldmogelijkheid](./opt-out-do-not-stop-your-client.md).
 
 1. Bulkmailing voorbereiden
 ---------------------------

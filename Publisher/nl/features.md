@@ -93,16 +93,16 @@ Verzamel informatie over je relaties {style="text-align: center;"}
     [Meer over webformulieren](./various-types-of-web-forms.md "Meer over webformulieren")
 
 -   [![Online
-    enquêtes](../images/online-surveys-with-copernica.png "Online enquêtes")](./enquetes.md)
+    enquêtes](../images/online-surveys-with-copernica.png "Online enquêtes")](./create-your-own-survey.md)
 
-    [Online enquêtes](./enquetes.md)
+    [Online enquêtes](./create-your-own-survey.md)
     ----------------------------------------------------------------------------
 
     Gebruik de enquêtetool van Copernica om je relaties om waardevolle
     input te vragen. Binnen enkele stappen publiceer je jouw enquête
     online.
 
-    [Meer over online enquête](./enquetes.md "Learn more about online surveys")
+    [Meer over online enquête](./create-your-own-survey.md "Learn more about online surveys")
 
 * * * * *
 

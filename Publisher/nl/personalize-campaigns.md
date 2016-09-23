@@ -66,7 +66,7 @@ Veel gestelde vragen en problemen
 ---------------------------------
 
 -   [Hoe kan ik de enquete bedanktpagina
-    personaliseren?](./hoe-kan-ik-de-enquete-bedanktpagina-personaliseren.md)
+    personaliseren?](./personalized-survey-conclude-page.md)
 -   [Probleem: Blokhaken en accolades veroorzaken
     personalisatiefouten](./how-to-solve-errors-in-personalization.md)
 

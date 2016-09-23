@@ -30,7 +30,7 @@ Met het veldtype interesse voeg je gemakkelijk interesses of voorkeuren
 toe aan het profiel van je relatie. Dit veld wordt vaak gebruikt in
 combinatie met een
 [webformulier](./create-clever-emailings.md "Maak zelf slimme e-mailings")
-of [enquête](./enquetes.md "Maak je eigen enquêtes").
+of [enquête](./create-your-own-survey.md "Maak je eigen enquêtes").
 
 ![Meer gegevens opslaan met een multidimensionale
 database](../images/multidimensionale-database-copernica.jpg "Meer gegevens opslaan met een multidimensionale database")

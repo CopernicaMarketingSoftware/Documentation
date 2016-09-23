@@ -13,8 +13,6 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
     voorbereiden](./the-requirements-for-a-well-formatted-import-file.md)
 -   [Gegevens importeren naar nieuwe
     database](./setting-up-your-database-and-import-your-contacts.md)
--   [Gegevens importeren vanaf een online
-    locatie](./gegevens-importeren-vanaf-een-online-locatie.md)
 -   [Import naar een database met
     collectie](./import-to-a-database-with-collection.md)
 -   [Een periodieke import van (sub)profielen
@@ -30,8 +28,6 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 
 ### Veelgestelde vragen
 
--   [Het aantal geimporteerde profielen klopt
-    niet](./het-aantal-geimporteerde-profielen-klopt-niet.md)
 -   [Ik krijg een melding over niet-passende
     datums](./i-get-a-non-compatible-date-warning.-how-can-i-prevent-this.md)
 -   [Na een import zie ik alleen het veld ID in de
@@ -51,9 +47,3 @@ De exportfunctionaliteit vind je onder **Profielen**, in het menu
     profielgegevens](./additional-options-for-your-export-file.md)
 -   [De resultaten van een mailing exporteren naar een spreadsheet
     bestand](./export-the-results-of-your-mailing.md)
-
-### Veelgestelde vragen
-
--   [Veelgestelde vragen bij het
-    exporteren](./veelgestelde-vragen-bij-het-exporteren.md)
-

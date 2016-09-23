@@ -13,7 +13,7 @@ koppelen binnen je campagnes.
 -   [Opvolgacties voor
     webformulieren](./opvolgacties-voor-webformulieren.md)
 -   [Opvolgacties voor
-    enquetes](./opvolgacties-voor-enquetes.md)
+    enquetes](./follow-up-actions-for-surveys.md)
 -   [Opvolgacties voor databases en
     collecties](./follow-up-actions-for-databases-and-collections.md)
 -   [Condities voor opvolgacties - beperk het activeren of uitvoeren van
@@ -25,5 +25,5 @@ koppelen binnen je campagnes.
 ### Veelgestelde vragen
 
 -   [Kan ik de antwoorden uit een enquete opgestuurd krijgen in een
-    opvolgactie](./antwoorden-enquete-mailen-in-opvolgactie.md)
+    opvolgactie](./how-to-receive-the-answers-given-in-a-survey-by-email.md)
 

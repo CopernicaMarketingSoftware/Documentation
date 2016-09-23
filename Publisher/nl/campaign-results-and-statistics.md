@@ -53,7 +53,7 @@ Enquete resultaten
 ------------------
 
 -   [Enqueteresultaten
-    wissen](./enqueteresultaten-wissen.md)
+    wissen](./resetting-the-results-of-a-survey.md)
 
 Website statistieken
 --------------------

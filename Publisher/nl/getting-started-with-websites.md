@@ -109,7 +109,7 @@ dialoogvenster voor het bewerken van een **Tekstblok**.
     webformulier](./publish-your-web-form.md)
     is **{webform name="naamformulier"}**
 -   De tag voor het [publiceren van een
-    enquete](./enquete-in-webpagina-invoegen.md)
+    enquete](./publish-a-survey.md)
     is**{survey name="naamvanenquete"}**
 -   De tag voor het [publiceren van een RSS of Atom
     feed](./the-loadfeed-function.md)

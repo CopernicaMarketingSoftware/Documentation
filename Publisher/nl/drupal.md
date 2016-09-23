@@ -14,17 +14,12 @@ De kracht van de Drupal modules
 
 -   Verzend [persoonlijke e-mailings](./create-clever-emailings.md "Verzend slimme e-mailings")
     op basis van aankoopgedrag
--   Stuur [abandoned shopcart
-    campagnes](./5-tips-voor-extra-omzet-via-je-verlaten-winkelwagen-e-mail.md)
-    om klanten te binden wanneer ze een koopintentie vertonen
 -   [Automatiseer je salesproces](./automate-your-campaigns.md)
     zoals onder andere orderbevestigigen of track & trace e-mails
 -   Maak gebruik van [lead nurturing en lead
-    scoring](./wat-is-lead-scoring-infographic.md)
+    scoring](./what-is-lead-scoring-infographic.md)
     om zo slim in te spelen op de lifecycle van je klant
 -   [React to form fills](./various-types-of-web-forms.md) and downloads on your B2B website
--   Stimuleer je verkoop met behulp van [cross- en
-    upsellcampagnes](./kleertjes-com-over-het-effect-van-cross-selling-en-up-selling.md)
 
 Voorbeelden van Drupal webshops
 -------------------------------

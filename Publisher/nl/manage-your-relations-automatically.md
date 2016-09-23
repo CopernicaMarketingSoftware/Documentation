@@ -23,7 +23,7 @@ manieren je profielen verrijken:
     Stel bijvoorbeeld in dat bij registratie van een gekocht product, de
     relatie 1 dag later een e-mail met productinformatie ontvangt.
 -   Met behulp van [webformulieren](./various-types-of-web-forms.md "Webformulieren maken") en
-    [enquêtes](./enquetes.md "Enquêtes")
+    [enquêtes](./create-your-own-survey.md "Enquêtes")
     gekoppeld aan je database: de wat meer bekende manier van
     profielverrijking. Ingevulde gegevens die nog niet in je database
     stonden, worden zo automatisch opgeslagen.

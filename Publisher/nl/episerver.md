@@ -47,15 +47,7 @@ Inspiratie voor jouw EPiServer webwinkel
 
 Wil je nog meer leren over de mogelijkheden van Copernica en EPiServer?
 Wij schrijven op regelmatige basis ook artikelen over de inzet van
-e-mailmarketing door webwinkeliers. Hieronder vind je een greep uit deze
-content:
-
--   [5 tips voor extra omzet uit je verlaten
-    winkelwagen](./5-tips-voor-extra-omzet-via-je-verlaten-winkelwagen-e-mail.md)
--   [Hoe versterkt e-mailmarketing je eCommerce
-    activiteiten?](./hoe-versterkt-e-mailmarketing-je-e-commerce-activiteiten.md)
--   [Haal meer omzet uit je bezoekers: 3 valkuilen om op te
-    letten](./haal-meer-omzet-uit-je-bezoekers-3-valkuilen-om-op-te-letten.md)
+e-mailmarketing door webwinkeliers.
 
 Naast artikelen organiseren we ook op regelmatige basis interessante
 [productdemonstraties](http://www.copernica.com/nl/ondersteuning/productdemonstraties)

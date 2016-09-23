@@ -21,7 +21,7 @@ Invoegen speciale content
     - Publiceer een RSS of Atom feed in een document of template
 -   [Webform functie](./publish-your-web-form.md)
     - Plaats een webformulier in een webdocument of template
--   [Enquete functie](./enquete-in-webpagina-invoegen.md)
+-   [Enquete functie](./publish-a-survey.md)
     - Plaats een enquete in een webdocument of template
 -   [Fetch functie](./the-fetch-function.md)
     - Voeg externe HTML of tekst toe aan een document of template
@@ -35,7 +35,7 @@ Invoegen van dynamische templateblokken
 -   [Image tag](./the-image-function-for-adding-images-to-your-document.md)
     - Specificeer waar in het document een afbeelding kan worden
     toegevoegd
--   [Loop tag](./template-blokken-de-loop-tag.md)
+-   [Loop tag](./the-loop-function-to-iterate-content-in-your-email.md)
     - Specificeer hoe tekstblokken, afbeeldingblokken en HTML kunnen
     worden herhaald in het document
 

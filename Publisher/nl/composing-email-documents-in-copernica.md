@@ -109,7 +109,7 @@ geef je vervolgens aan hoevaak je de content binnen het loopblok in het
 document wilt herhalen.
 
 -   [Lees hoe je loopblokken maakt in je
-    template](./template-blokken-de-loop-tag.md)
+    template](./the-loop-function-to-iterate-content-in-your-email.md)
 
 -   Klik vanuit **Bewerkmodus** op een loop-blok.
 

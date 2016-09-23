@@ -38,7 +38,7 @@ afmeldingen verwerken.
 Wanneer een ontvanger zich uitschrijft, ontvangt de marketing software
 een uitschrijfverzoek van bijvoorbeeld Hotmail. Als iemand van deze
 uitschrijf-optie (vorm van
-[opt-out](./opt-out-hou-je-klant-niet-tegen.md "Opt-out"))
+[opt-out](./opt-out-do-not-stop-your-client.md "Opt-out"))
 gebruik maakt, gaat er een bericht terug naar het systeem zodat u de
 afmelding kunt verwerken. De list-unsubcribe header ondersteunt zowel
 uitschrijving per e-mail of via een hyperlink.
@@ -104,5 +104,5 @@ in al uw e-mailtemplates!
 -   [DKIM: DomainKey Identified
     Mail](./dkim-domainkey-identified-mail.md "DKIM: DomainKey Identified Mail")
 -   [Opt-out: Hou je klant niet
-    tegen!](./opt-out-hou-je-klant-niet-tegen.md "Opt-out: Hou je klant niet tegen!")
+    tegen!](./opt-out-do-not-stop-your-client.md "Opt-out: Hou je klant niet tegen!")
 

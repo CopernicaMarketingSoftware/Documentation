@@ -38,9 +38,6 @@ ontvangen. Condities aan je selectie toevoegen doe je zo:
 
 -   Klik op ‘[Voeg een nieuwe ‘EN’-conditie toe aan een nieuwe
     ‘OF’-regel](./or-and-and-selection-conditions.md)’
--   Selecteer het [type
-    conditie](./selectie-conditietypes.md)
-    dat je wilt toepassen
 -   Vul een beschrijving in voor je conditie
 -   Kies ‘Volgende’
 -   Volg de stappen die je, afhankelijk van het type conditie, krijgt

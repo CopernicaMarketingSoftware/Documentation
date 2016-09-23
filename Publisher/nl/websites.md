@@ -47,7 +47,7 @@ content direct toevoegen vanuit een tekstblok in het webdocument.
 -   [Webformulier op webpagina plaatsen met {webform}
     tag](./publish-your-web-form.md)
 -   [Enquete publiceren met {survey}
-    tag](./enquete-in-webpagina-invoegen.md)
+    tag](./publish-a-survey.md)
 -   [Content webformulier in iframe
     laden](./content-webformulier-in-iframe-laden.md)
 
