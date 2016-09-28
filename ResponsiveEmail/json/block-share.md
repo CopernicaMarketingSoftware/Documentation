@@ -56,6 +56,35 @@ the basic usage, showing a set of share buttons.
                 "title"     : "Post title"
             },
             "description"   : "Optional prefilled text to share",
+            "platforms" : [ "facebook", "twitter", "linkedin", "googleplus" ]
+        } ]
+    }
+}
+```
+
+The example above shows the simple way of creating a "share this on XXXX" link
+in your email. However, many platforms require/allow you to pass in additional 
+parameters. Therefore, you often also have to pass in extra properties with 
+platform-specific settings:
+
+```javascript
+{
+    "from" : "info@example.com",
+    "subject" : "Email with a share block",
+    "content" : {
+        "blocks" : [ {
+            "type"      : "share",
+            "label"     : "Tell your friends about us!",
+            "align"     : "left",
+            "icon"      : {
+                "type"      : "rounded",
+                "size"      : 32
+            },
+            "link"      : {
+                "url"       : "https://responsiveemail.com/",
+                "title"     : "Post title"
+            },
+            "description"   : "Optional prefilled text to share",
             "platforms" : [ "facebook", "twitter", "linkedin", "googleplus" ],
             "facebook"  : {
                 "appid"        :   "123456789101112",
