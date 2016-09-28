@@ -60,3 +60,44 @@ the basic usage, showing a set of follow buttons.
     }
 }
 ```
+
+As you can see in above example, for many platforms (like Twitter and Facebook) you can 
+both specify the full URL of the user to be followed, as well as just the username.
+
+If you want to include additional properties, you can also pass in objects instead
+of usernames/urls. The following example demonstrates how you can pass custom
+link attributes for each platform:
+
+```javascript
+{
+    "from" : "info@example.com",
+    "subject" : "Email with a follow block",
+    "content" : {
+        "blocks" : [ {
+            "type"      : "follow",
+            "label"     : "Follow us!",
+            "align"     : "left",
+            "icon"      : {
+                "type"      : "rounded",
+                "size"      : 32
+            },
+            "platforms" : {
+                "facebook" : {
+                    "identifier": "copernica",
+                    "attributes": {
+                        "class": "my-custom-class"
+                    }
+                },
+                "twitter" : {
+                    "identifier": "@twitterhandle",
+                    "attributes": {
+                        "class": "my-custom-class"
+                    }
+                }
+            }
+        } ]
+    }
+}
+```
+
+
