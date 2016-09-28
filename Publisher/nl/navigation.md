@@ -3,7 +3,7 @@
 * [Importeren en exporteren](import-and-export)
 * [Selecties en miniselecties](selections-and-miniselections)
 * [Webformulieren](web-forms)
-* Templates en documenten](templates-and-documents)
+* [Templates en documenten](templates-and-documents)
 * [Mailings verzenden](sending-mailings)
 * [Deliverability optimaliseren](deliverability)
 * [Enquêtes](surveys)
