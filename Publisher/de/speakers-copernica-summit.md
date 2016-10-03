@@ -565,7 +565,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Sander                             | ### Sander Bosch                     |
-| Bosch](Copernicacom/sander-bosch.png |                                      |
+| Bosch](../images/sander-bosch.png |                                      |
 | )                                    | I have been working as an email      |
 |                                      | marketeer at Invest Online since     |
 |                                      | 2012 and I am responsible for the    |

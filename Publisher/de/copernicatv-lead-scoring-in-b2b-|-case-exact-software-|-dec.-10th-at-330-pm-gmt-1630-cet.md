@@ -23,7 +23,7 @@ eine E-Mail an
 und wir registrieren Sie. Plätze sind begrenzt, also seien Sie schnell
 dabei!
 
-[![](Copernicacom/Exact-webinar-header.png "Copernica - Exact webinar")](mailto:communication@copernica.com?Subject=Register%20for%20Exact%20webinar&Body=I%20'd%20like%20to%20sign-up%20for%20the%20webinar%20on%20December%2010th%20at%203:30gmt%20(16:30%20CET))
+[![](../images/Exact-webinar-header.png "Copernica - Exact webinar")](mailto:communication@copernica.com?Subject=Register%20for%20Exact%20webinar&Body=I%20'd%20like%20to%20sign-up%20for%20the%20webinar%20on%20December%2010th%20at%203:30gmt%20(16:30%20CET))
 
 Exact hat einen Traum zu verbinden. Anderen miteinander und Sie zu Ihrem
 Geschäft. Darum stellt Exact Software her, die verbindet.
@@ -39,7 +39,7 @@ Leads transformiert\
 
 **Über Exact**
 
-![Exact Logo](Copernicacom/exact-logo.png "Exact Logo")Seit 1984
+![Exact Logo](../images/exact-logo.png "Exact Logo")Seit 1984
 unterstützt Exact Unternehmen mit Informationstechnologie. Dabei
 entwickelte sich Exact von einem studentischen Start-Up-Unternehmen zu
 einem globalen Anbieter von Software-Lösungen und Services für CRM, ERP,

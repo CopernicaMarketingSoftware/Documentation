@@ -55,7 +55,7 @@ werden verwendet, um jeden Kunden individuell betrachten zu können.
 Das Mosaic Modell gibt darüber hinaus Informationen darüber, auf welchen
 Kanälen die Kunden kontaktiert werden sollten.
 
-![Mosaik Modell](Copernicacom/mosaic-model-UK.png "Mosaik Modell")
+![Mosaik Modell](../images/mosaic-model-UK.png "Mosaik Modell")
 
 Der richtige Moment: Sieben Phasen im Customer Lifecycle
 --------------------------------------------------------
@@ -72,7 +72,7 @@ mehr. Die gesamte Kommunikation zielt darauf ab, den Kunden zu
 inspirieren und zu informieren.
 
 ![Copernica
-Screenshot](articlesblog/ITG-CopernicaScreenshot.png "Screenshot E-Mails")
+Screenshot](../images/ITG-CopernicaScreenshot.png "Screenshot E-Mails")
 
 Travelworld schickt wöchentliche Inspirations E-Mails mit drei Top
 Reisezielen irgendwo auf dem Globus. Da der Inhalt der E-Mails dynamisch
@@ -134,7 +134,7 @@ Dringlichkeit kann Travelworld den Entscheidungsprozess in Hinblick auf
 die Buchung beschleunigen.
 
 ![Copernica
-Followups](articlesblog/ITG-CopernicaScreenshot2.png "Copernica Follow up")
+Followups](../images/ITG-CopernicaScreenshot2.png "Copernica Follow up")
 
 5. Vorbereitungsphase
 ---------------------
@@ -191,7 +191,7 @@ kommen.
 Hier nochmals eine Visualisierung der Kampagne
 
 ![visualisierte
-Kampagne](articlesblog/clc-travelworld.jpg "Visualisierte Kampagne")
+Kampagne](../images/clc-travelworld.jpg "Visualisierte Kampagne")
 
 Bevor Sie loslegen! Was ITG gelernt hat
 ---------------------------------------

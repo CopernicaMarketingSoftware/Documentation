@@ -38,7 +38,7 @@ Zusammenarbeit zu besprechen.
 
 **Profilieren Sie sich mit Ihrer Registered Partner-Auszeichnung**\
  [![Registered
-Partner-Auszeichnung](Copernicacom/RegisteredPartner.JPG "Registered Partner-Auszeichnung")](http://www.copernica.com/en/about-us/contact-us "Kontakt aufnehmen")
+Partner-Auszeichnung](../images/RegisteredPartner.JPG "Registered Partner-Auszeichnung")](http://www.copernica.com/en/about-us/contact-us "Kontakt aufnehmen")
 Als registrierter Copernica-Partner erhalten Sie von uns eine Registered
 Partner-Auszeichnung. Natürlich sind Sie stolz auf dieses Zeichen der
 Anerkennung, also präsentieren Sie es Ihren Kunden am besten an
@@ -51,7 +51,7 @@ auf!](http://www.copernica.com/en/about-us/contact-us "Kontakt aufnehmen")
 ---------------------------------------------------
 
 [![Registered
-Partner-Logo](Copernicacom/copernica-partner-logo.png "Registered Partner-Logo")](http://www.copernica.com/nl/over-ons/mediabronnen#Registered-partner-logo)
+Partner-Logo](../images/copernica-partner-logo.png "Registered Partner-Logo")](http://www.copernica.com/nl/over-ons/mediabronnen#Registered-partner-logo)
 Registrierte Partner können das [Copernica Registered
 Partner-Logo](http://www.copernica.com/en/about-us/media-resources#Registered-partner-logo "Registered Partner-Logo")
 auf ihrer Website aufnehmen. Wenn es mit Ihrem Partner-Profil auf

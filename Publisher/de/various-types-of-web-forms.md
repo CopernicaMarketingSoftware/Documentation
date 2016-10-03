@@ -11,7 +11,7 @@ Welche Art von Webformular will ich erstellen?
 ----------------------------------------------
 
 ![Welche Art von Webformular will ich
-erstellen?](Copernicacom/de-verschiedene-sorten-webformularen-thumb.png "Welche Art von Webformular will ich erstellen?")
+erstellen?](../images/de-verschiedene-sorten-webformularen-thumb.png "Welche Art von Webformular will ich erstellen?")
 
 Welche Art von Webformular Sie erstellen, hängt von Ihrem Ziel ab. Mit
 Copernica erstellen Sie verschiedene Webformulare, mit welchen Sie

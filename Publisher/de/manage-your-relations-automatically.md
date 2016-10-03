@@ -5,7 +5,7 @@ Beziehungsdaten über Ihre externe Anwendung in Copernica verarbeiten?
 Benutzen Sie dann bitte eine unserer
 
 ![Verwalten Sie alles automatisch innerhalb
-Copernica](Copernicacom/de-verwalten-automatisch-ihre-beziehungen-01-thumb.png "Verwalten Sie alles automatisch innerhalb Copernica")
+Copernica](../images/de-verwalten-automatisch-ihre-beziehungen-01-thumb.png "Verwalten Sie alles automatisch innerhalb Copernica")
 
 Verwalten Sie alles automatisch innerhalb Copernica
 ---------------------------------------------------
@@ -37,7 +37,7 @@ unterschiedlichste Weise bereichern:
     speichern Sie mit Copernica in Ihrer Datenbank.
 
 ![Profilbereicherung über Ihre externe
-Applikation](Copernicacom/de-verwalten-automatisch-ihre-beziehungen-02-thumb.png "Profilbereicherung über Ihre externe Applikation")
+Applikation](../images/de-verwalten-automatisch-ihre-beziehungen-02-thumb.png "Profilbereicherung über Ihre externe Applikation")
 
 Profilbereicherung über Ihre externe Applikation
 ------------------------------------------------

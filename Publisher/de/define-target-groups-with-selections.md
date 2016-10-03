@@ -7,7 +7,7 @@ alle Änderungen in Ihrer Datenbank verfolgt, bleibt diese immer aktuell.
 ---------------------------------
 
 ![Schritt für Schritt
-selektieren](Copernicacom/de-definieren-zielgruppen-mit-selektionen-thumb.png "Schritt für Schritt selektieren")
+selektieren](../images/de-definieren-zielgruppen-mit-selektionen-thumb.png "Schritt für Schritt selektieren")
 
 Alle Kontaktdaten, die Sie in Copernica speichern, sind als Grundlage
 für Ihre Auswahl zu benutzen. Unterscheiden Sie beispielsweise ganz

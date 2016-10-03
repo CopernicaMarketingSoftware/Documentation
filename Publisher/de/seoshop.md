@@ -3,7 +3,7 @@ Mit der Copernica App werden Kunden-Daten aus Ihrem
 synchronisiert mit Ihrer Datenbank in Copernica. Dadurch sind keine
 Export/Imports mehr notwendig.
 
-![](http://vicinity.picsrv.net/127/0/119886/SEOshop.png "SEO Shop")
+![](../images/SEOshop.png "SEO Shop")
 
 **Entwickelt durch:** [eFusion](http://www.efusion.eu/)
 

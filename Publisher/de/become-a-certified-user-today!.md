@@ -14,18 +14,18 @@ es noch weitere Vorteile:
 -   Nach erfolgreicher Durchführung erhalten Sie ein offizielles
     Zertifikat und ein Siegel für Ihre Webseite
 
-[![](Copernicacom/Certificate.png)](https://pic.vicinity.nl/127/0/116687/certified-fundamental-user.png "Certify!")
+[![](../images/certified-fundamental-user.png "Certify!")
 
 -   Eine Zertifizierung ist eine großartige Bereicherung für Ihren
     (Online) Lebenslauf, z.B. auf Xing oder LinkedIn
 
 [![Certification
-Linkedin](Copernicacom/LinkedinCertification.jpg)](https://pic.vicinity.nl/127/0/121269/LinkedinCertification.jpg "Linkedin Copernica")
+Linkedin](../images/LinkedinCertification.jpg "Linkedin Copernica")
 
 -   Sie erhalten die Auszeichnung auch auf Twitter, unter
     [\#Certifriday](https://twitter.com/search?q=certifriday "Certifriday")
 
-[![Certifriday](articlesblog/Twitter_DE.png)](https://vicinity.picsrv.net/127/0/124419/Twitter_DE.png "Certifriday")
+[![Certifriday](../images/Twitter_DE.png "Certifriday")
 
 Die Teilnahme am Test ist kostenlos. Bereits mehr als 500 Benutzer haben
 diesen Test bestanden, jetzt sind Sie dran!

@@ -5,7 +5,7 @@ anzuschauen. Gibt es Kontaktmomente, die einfach zu automatisieren sind?
 Bestimmt! In dieser Fallstudie zeigen wir wie Manchester United damit
 umgeht.
 
-![](Copernicacom/MUSS_Bild1.jpg "Copernicacom/MUSS_Bild1.jpg") Für die
+![](../images/MUSS_Bild1.jpg "../images/MUSS_Bild1.jpg") Für die
 Manchester United Soccer Schools (MUSS) wollte Manchester United die
 internationale Reichweite vergrößern und die Sales-Aktivitäten ihrer
 Fußball-Lager steigern. Durch die Verbindung von Marketing Automation

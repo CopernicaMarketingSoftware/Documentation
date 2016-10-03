@@ -9,7 +9,7 @@ Theorie von Copernicus
 ----------------------
 
 ![Wer war
-Copernicus?](Copernicacom/copernicus.png "Wer war Copernicus?")
+Copernicus?](../images/copernicus.png "Wer war Copernicus?")
 
 In der Theorie von Copernicus steht die Sonne in der Mitte des
 Universums und die Erde und alle anderen Planeten umkreisen die Sonne.

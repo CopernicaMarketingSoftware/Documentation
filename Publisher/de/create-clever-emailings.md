@@ -10,7 +10,7 @@ Erstellen Sie Ihre eigenen Kampagnen mit Hilfe von Vorlagen
 -----------------------------------------------------------
 
 ![Personalisieren Sie Ihre
-E-Mailings](Copernicacom/create-email-content-copernica.gif "Personalisieren Sie Ihre E-Mailings")
+E-Mailings](../images/create-email-content-copernica.gif "Personalisieren Sie Ihre E-Mailings")
 
 Sie möchten Ihre E-Mailings selber formatieren und erneuern? Das können
 Sie mit dem zugänglichen WYSIWYG-Editor von Copernica. Hiermit machen
@@ -35,7 +35,7 @@ Personalisieren Sie Ihre E-Mailings
 -----------------------------------
 
 ![Personalisieren Sie Ihre
-E-Mailings](Copernicacom/de-personalize-content-copernica.gif "Personalisieren Sie Ihre E-Mailings")
+E-Mailings](../images/de-personalize-content-copernica.gif "Personalisieren Sie Ihre E-Mailings")
 
 Durch das Personalisieren, verbessern Sie die Ergebnisse im E-Mail
 Marketing. Copernica ermöglicht es Ihnen, auf der Grundlage aller
@@ -91,7 +91,7 @@ Dynamischer Content in Ihren E-Mailings
 ---------------------------------------
 
 ![Dynamischen Content in Ihr
-E-Mailing](Copernicacom/load-rss-in-email-copernica.gif "Dynamischen Content in Ihr E-Mailing")
+E-Mailing](../images/load-rss-in-email-copernica.gif "Dynamischen Content in Ihr E-Mailing")
 
 Möchten Sie Ihre Kunden über Ihre neuesten Produkte oder Ihre letzten
 Nachrichten (z. B. von Ihrer Website) regelmäßig informieren? Copernica

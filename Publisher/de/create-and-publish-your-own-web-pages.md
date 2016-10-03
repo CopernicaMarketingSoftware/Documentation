@@ -9,7 +9,7 @@ Webseiten mit Vorlagen erstellen
 --------------------------------
 
 ![Webseiten erstellen mit
-Vorlagen](Copernicacom/de-erstellen-ihre-eigenen-webseiten-01-thumb.png "Webseiten erstellen mit Vorlagen")
+Vorlagen](../images/de-erstellen-ihre-eigenen-webseiten-01-thumb.png "Webseiten erstellen mit Vorlagen")
 
 Die Erstellung Ihrer eigenen Webseite beginnt mit dem Erstellen einer
 Vorlage. Diese ist die Grundlage Ihrer Webseite. Mit dem WYSIWYG-Editor
@@ -29,7 +29,7 @@ Webseiten mit Copernica personalisieren
 ---------------------------------------
 
 ![Personalizing web pages in
-Copernica](Copernicacom/de-erstellen-ihre-eigenen-webseiten-02-thumb.png "Personalizing web pages in Copernica")
+Copernica](../images/de-erstellen-ihre-eigenen-webseiten-02-thumb.png "Personalizing web pages in Copernica")
 
 Wussten Sie, dass Sie die Kundendaten, die Sie in Copernica speichern,
 für die Personalisierung Ihrer Webseite gebrauchen können? Copernica
@@ -47,7 +47,7 @@ Geben Sie Ihrer Webseite einen eigenen Stil mit CSS
 ---------------------------------------------------
 
 ![Add style to your web page with
-CSS](Copernicacom/de-erstellen-ihre-eigenen-webseiten-03-thumb.png "Add style to your web page with CSS")
+CSS](../images/de-erstellen-ihre-eigenen-webseiten-03-thumb.png "Add style to your web page with CSS")
 
 Mit CSS oder XSLT geben Sie Ihren Webseiten einen professionellen Stil.
 In Copernica erstellen Sie ganz einfach Ihr eigenes XSLT-Dokument oder
@@ -71,7 +71,7 @@ Webseiten online veröffentlichen
 --------------------------------
 
 ![Webseiten Online
-veröffentlichen](Copernicacom/de-erstellen-ihre-eigenen-webseiten-04-thumb.png "Webseiten Online veröffentlichen")
+veröffentlichen](../images/de-erstellen-ihre-eigenen-webseiten-04-thumb.png "Webseiten Online veröffentlichen")
 
 Möchten Sie eine einzelne Landingpage online veröffentlichen oder eine
 vollständige Webseite? Haben Sie mehrere Landingpages errichtet, stellen

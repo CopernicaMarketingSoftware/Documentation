@@ -21,7 +21,7 @@ heruntergeladen wurden. Wenn zum Beispiel jemand in Miami eine E-Mail
 öffnet, wird der Bundesstaat Florida grün markiert.
 
 ![Screenshot from Copernica
-statistics](articlesblog/copernica-gmail-en.png "Screenshot from Copernica statistics")
+statistics](../images/copernica-gmail-en.png "Screenshot from Copernica statistics")
 
 Wenn nun aber die Bilder von Googles Servern heruntergeladen werden,
 wird in der Karte der Standort von Googles Proxy-Servern angezeigt.

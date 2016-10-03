@@ -7,7 +7,7 @@ Massen-Mailing genannt. Die „Massen-Mailing senden“-Funktion in dem
 --------------------------------------
 
 ![ Bereiten Sie Ihr Massen-Mailing
-vor](Copernicacom/de-massmailing.png " Bereiten Sie Ihr Massen-Mailing vor")
+vor](../images/de-massmailing.png " Bereiten Sie Ihr Massen-Mailing vor")
 
 Wählen Sie das Dokument, das Sie gerne in "E-Mailings" versenden würden
 und wählen Sie die "Massen-Mailing senden"-Funktion unter "Mailings". \
@@ -17,7 +17,7 @@ und wählen Sie die "Massen-Mailing senden"-Funktion unter "Mailings". \
 ----------------------------------
 
 ![ Das Ziel des Mailings
-auswählen](Copernicacom/de-target-massmailing.png " Das Ziel des Mailings auswählen")
+auswählen](../images/de-target-massmailing.png " Das Ziel des Mailings auswählen")
 
 Wählen Sie aus, aus welcher Datenbank/ Auswahl und möglicherweise
 Mini-Auswahl Sie das Mailing senden möchten. Aktivieren Sie das
@@ -32,7 +32,7 @@ ist für Sie als Hinweis für später gedacht.
 ---------------------------------
 
 ![Das Mailing zeitlich
-einplanen](Copernicacom/de-schedule-massmailing.png "Das Mailing zeitlich einplanen")
+einplanen](../images/de-schedule-massmailing.png "Das Mailing zeitlich einplanen")
 
 Die E-Mail kann nur einmal gesendet werden, sofort (sofort senden), für
 später eingeplant oder einige Male wiederholt werden (für einen späteren
@@ -52,7 +52,7 @@ modifizierte Version wird dann gesendet.
 -------------------------------
 
 ![Optionen für
-Massen-Mailings](Copernicacom/de-options-massmailing.png "Optionen für Massen-Mailings")
+Massen-Mailings](../images/de-options-massmailing.png "Optionen für Massen-Mailings")
 
 Die Standardoptionen sind für die meisten Nutzer geeignet.
 

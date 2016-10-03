@@ -4,7 +4,7 @@ gezielte und professionelle E-Mail-Kampagnen zu erstellen. Versenden Sie
 z.B. persönliche E-Mails als Folgeaktion eines verlassenen
 Einkaufswagens oder senden Sie Ihren treuesten Kunden ein spezielles
 Angebot. ![Magento und
-Copernica](https://vicinity.picsrv.net/4390/magento-copernica-integration.png "Magento und Copernica")
+Copernica](../images/magento-copernica-integration.png "Magento und Copernica")
 
 Die Stärke der Copernica-Magento Integration
 --------------------------------------------

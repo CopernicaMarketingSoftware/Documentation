@@ -32,7 +32,7 @@ erstellt werden und benötigt die folgenden Anforderungen:
 ------------------------------
 
 ![Eine Import-Datei
-hochladen](Copernicacom/de-import-database.png "Eine Import-Datei hochladen")
+hochladen](../images/de-import-database.png "Eine Import-Datei hochladen")
 
 Wählen Sie die Datenbank zu der Sie ihre Datei hinzufügen möchten.
 Wählen Sie dann „Import/Export Datei…” in dem „Aktuelle Ansicht“-Menü.
@@ -61,7 +61,7 @@ Datenbankfeldern. 
     Sie einfach **unlink**
 
 ![ Linking columns to database
-fields](Copernicacom/link-fields.png " Linking columns to database fields")
+fields](../images/link-fields.png " Linking columns to database fields")
 \
 \
 

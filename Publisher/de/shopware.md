@@ -5,7 +5,7 @@ erstellen Sie eine Kampagne via Mobile, Social Media oder Print.
 Copernica macht dies alles möglich. Entdecken Sie hier unsere
 unterschiedlichen Funktionen, um ein noch deutlicheres Bild von der
 Software zu erhalten. ![Shopware und
-Copernica](Copernicacom/shopware-copernica-integration.png "Shopware und Copernica")
+Copernica](../images/shopware-copernica-integration.png "Shopware und Copernica")
 
 Mit diesem Shopware Copernica Plugin sind Sie in der Lage in einem
 kurzen Intervall (Bsp. alle 15 min) alle Newsletter relevanten

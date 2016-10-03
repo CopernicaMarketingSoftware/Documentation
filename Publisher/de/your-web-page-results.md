@@ -8,7 +8,7 @@ Die Statistiken Ihrer Webseite
 ------------------------------
 
 ![Die Statistiken Ihrer
-Webseite](Copernicacom/de-ergebnisse-ihrer-webseite-thumb.png "Die Statistiken Ihrer Webseite")
+Webseite](../images/de-ergebnisse-ihrer-webseite-thumb.png "Die Statistiken Ihrer Webseite")
 
 Copernica liefert präzise und zuverlässige Statistiken über die Leistung
 Ihrer Webseiten. In einer deutlichen Übersicht sehen Sie:

@@ -10,7 +10,7 @@ durchgeklickt haben? Exportieren Sie dann die gewünschten Daten aus
 Copernica zu einer übersichtlichen Datei für eine weitere Analyse.
 
 ![Ihre Daten importieren in
-Copernica](Copernicacom/de-importieren-exportieren-daten-01-thumb.png "Ihre Daten importieren in Copernica")
+Copernica](../images/de-importieren-exportieren-daten-01-thumb.png "Ihre Daten importieren in Copernica")
 
 Ihre Daten importieren in Copernica
 -----------------------------------
@@ -28,7 +28,7 @@ gängigen Dateiformate importieren Sie problemlos in Copernica. Von
 Excel-Dateien bis Tab-getrennten Textdateien.
 
 ![Aus Software
-exportieren](Copernicacom/de-importieren-exportieren-daten-02-thumb.png "Aus Software exportieren")
+exportieren](../images/de-importieren-exportieren-daten-02-thumb.png "Aus Software exportieren")
 
 Aus Software exportieren
 ------------------------

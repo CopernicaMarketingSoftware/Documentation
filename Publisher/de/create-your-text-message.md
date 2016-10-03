@@ -12,7 +12,7 @@ SMS-Nachrichten mit Copernica schreiben
 ---------------------------------------
 
 ![SMS-Nachricht machen mit
-Copernica](Copernicacom/en-send-text-messages-copernica.gif "SMS-Nachricht machen mit Copernica")
+Copernica](../images/en-send-text-messages-copernica.gif "SMS-Nachricht machen mit Copernica")
 
 Eine SMS-Nachricht zu schreiben heißt, einen Text innerhalb des
 WYSIWYG-Editors von Copernica zu tippen. Diesen Text kann so lang sein,

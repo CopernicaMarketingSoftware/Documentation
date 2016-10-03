@@ -49,7 +49,7 @@ Automatisch Ihre E-Mail Kampagnen versenden
 -------------------------------------------
 
 ![Automatisch Ihre E-Mail Kampagnen
-versenden](Copernicacom/de-automatisieren-sie-ihre-kampagnen-02-thumb.png "Automatisch Ihre E-Mail Kampagnen versenden")
+versenden](../images/de-automatisieren-sie-ihre-kampagnen-02-thumb.png "Automatisch Ihre E-Mail Kampagnen versenden")
 
 Alle
 [E-Mailings](http://www.copernica.com/de/funktionen/e-mailings "E-Mailings"),

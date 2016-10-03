@@ -7,7 +7,7 @@ von Copernica, um ein besseres Bild von unserer Software zu erhalten.
 Erreichen Sie Ihre Kunden per E-Mail und SMS {style="text-align: center;"}
 --------------------------------------------
 
--   [![E-Mail-Marketing](copernicaicons/emailmarketing-with-copernica.png "E-Mail-Marketing")](./create-custom-templates.md)
+-   [![E-Mail-Marketing](../images/emailmarketing-with-copernica.png "E-Mail-Marketing")](./create-custom-templates.md)
 
     [E-Mail-Marketing](./create-custom-templates.md)
     ----------------------------------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Erreichen Sie Ihre Kunden per E-Mail und SMS {style="text-align: center;"}
     Marketing](./create-custom-templates.md "Lesen Sie weiter")
 
 -   [![SMS
-    marketing](copernicaicons/sms-marketing-with-copernica.png "SMS marketing")](https://www.copernica.com/de/funktionen/handy)
+    marketing](../images/sms-marketing-with-copernica.png "SMS marketing")](https://www.copernica.com/de/funktionen/handy)
 
     [Handy](https://www.copernica.com/de/funktionen/handy)
     ------------------------------------------------------
@@ -39,7 +39,7 @@ Verwalten Sie Ihre Kontakte in einer zentralen Datenbank {style="text-align: cen
 --------------------------------------------------------
 
 -   [![Datenbank
-    Management](copernicaicons/databasemanagement-with-copernica.png "Datenbank Management")](https://www.copernica.com/de/funktionen/profile/erstellen-sie-ihre-eigene-datenbank)
+    Management](../images/databasemanagement-with-copernica.png "Datenbank Management")](https://www.copernica.com/de/funktionen/profile/erstellen-sie-ihre-eigene-datenbank)
 
     [Datenbank Management](https://www.copernica.com/de/funktionen/profile/erstellen-sie-ihre-eigene-datenbank)
     -----------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ Verwalten Sie Ihre Kontakte in einer zentralen Datenbank {style="text-align: cen
     Management](https://www.copernica.com/de/funktionen/profile/erstellen-sie-ihre-eigene-datenbank "Lernen Sie mehr über Datenbank Management")
 
 -   [![Database
-    segments](copernicaicons/segmented-users-copernica.png "Database segments")](https://www.copernica.com/de/funktionen/definieren-sie-zielgruppen-mit-auswahlverfahren)
+    segments](../images/segmented-users-copernica.png "Database segments")](https://www.copernica.com/de/funktionen/definieren-sie-zielgruppen-mit-auswahlverfahren)
 
     [Datenbanken segmentieren](https://www.copernica.com/de/funktionen/definieren-sie-zielgruppen-mit-auswahlverfahren)
     -------------------------------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ Sparen Sie Zeit! Automatisieren Sie Ihre Prozesse {style="text-align: center;"}
 -------------------------------------------------
 
 -   [![Automatisierte
-    Follow-Up-Aktionen](copernicaicons/marketing-automation-with-copernica.png "Automatisierte Follow-Up-Aktionen")](https://www.copernica.com/de/funktionen/e-mailings/automatisieren-sie-ihre-kampagnen)
+    Follow-Up-Aktionen](../images/marketing-automation-with-copernica.png "Automatisierte Follow-Up-Aktionen")](https://www.copernica.com/de/funktionen/e-mailings/automatisieren-sie-ihre-kampagnen)
 
     [Automatisierte Follow-Up-Aktionen](https://www.copernica.com/de/funktionen/e-mailings/automatisieren-sie-ihre-kampagnen)
     -------------------------------------------------------------------------------------------------------------------------
@@ -87,7 +87,7 @@ Sparen Sie Zeit! Automatisieren Sie Ihre Prozesse {style="text-align: center;"}
 Sammeln Sie Daten über Ihre Kontakte {style="text-align: center;"}
 ------------------------------------
 
--   [![Webformulare](copernicaicons/webforms-with-copernica.png "Webformulare")](https://www.copernica.com/de/funktionen/webseiten/verschiedene-webformulare)
+-   [![Webformulare](../images/webforms-with-copernica.png "Webformulare")](https://www.copernica.com/de/funktionen/webseiten/verschiedene-webformulare)
 
     [Webformulare](https://www.copernica.com/de/funktionen/webseiten/verschiedene-webformulare)
     -------------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ Sammeln Sie Daten über Ihre Kontakte {style="text-align: center;"}
     [Lernen Sie mehr über
     Webformulare](https://www.copernica.com/de/funktionen/webseiten/verschiedene-webformulare "Lernen Sie mehr über Webformulare")
 
--   [![Onlineumfragen](copernicaicons/online-surveys-with-copernica.png "Onlineumfragen")](https://www.copernica.com/de/funktionen/webseiten/umfragen)
+-   [![Onlineumfragen](../images/online-surveys-with-copernica.png "Onlineumfragen")](https://www.copernica.com/de/funktionen/webseiten/umfragen)
 
     [Onlineumfragen](https://www.copernica.com/de/funktionen/webseiten/umfragen)
     ----------------------------------------------------------------------------
@@ -116,7 +116,7 @@ Sammeln Sie Daten über Ihre Kontakte {style="text-align: center;"}
 Schließen Sie Copernica an andere Systeme an {style="text-align: center;"}
 --------------------------------------------
 
--   [![Integrationen](copernicaicons/integrate-with-copernica.png "Integrationen")](https://www.copernica.com/de/support/integrationen)
+-   [![Integrationen](../images/integrate-with-copernica.png "Integrationen")](https://www.copernica.com/de/support/integrationen)
 
     [Integrationen](https://www.copernica.com/de/support/integrationen)
     -------------------------------------------------------------------
@@ -129,7 +129,7 @@ Schließen Sie Copernica an andere Systeme an {style="text-align: center;"}
     Integrationen](https://www.copernica.com/de/support/integrationen "Lernen Sie mehr über Integrationen")
 
 -   [![SOAP
-    API](copernicaicons/copernica-soap-api.png "SOAP API")](https://www.copernica.com/de/support/integrationen)
+    API](../images/copernica-soap-api.png "SOAP API")](https://www.copernica.com/de/support/integrationen)
 
     [SOAP API](https://www.copernica.com/de/support/integrationen)
     --------------------------------------------------------------

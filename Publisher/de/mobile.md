@@ -10,7 +10,7 @@ tun.
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Machen Sie Ihre eigene
-    SMS-Nachricht](Copernicacom/de-mobile-01-thumb.png "Machen Sie Ihre eigene SMS-Nachricht")](./create-your-text-message.md)
+    SMS-Nachricht](../images/de-mobile-01-thumb.png "Machen Sie Ihre eigene SMS-Nachricht")](./create-your-text-message.md)
 
     Genauso wie auf Ihrem eigenen Handy, schreiben Sie in Copernica
     einfach und schnell Ihre eigene SMS-Nachricht. Mit Copernica
@@ -23,7 +23,7 @@ tun.
     -------------------------------------------------------------------------------------------------------------------------
 
     [![SMS-Nachricht
-    versenden](Copernicacom/de-mobile-02-thumb.png "SMS-Nachricht versenden")](http://www.copernica.com/de/funktionen/handy/sms-nachricht-versenden)
+    versenden](../images/de-mobile-02-thumb.png "SMS-Nachricht versenden")](http://www.copernica.com/de/funktionen/handy/sms-nachricht-versenden)
 
     Mit Copernica versenden Sie einfach eine SMS-Nachricht. Planen Sie
     die SMS-Nachricht für später, wenn Sie diese lieber zu einem anderen

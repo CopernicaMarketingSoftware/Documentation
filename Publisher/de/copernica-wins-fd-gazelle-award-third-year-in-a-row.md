@@ -1,4 +1,4 @@
-![FD Gazelle 2012.jpg](Copernicacom/fd-2012.jpg "FD Gazelle 2012.jpg")
+![FD Gazelle 2012.jpg](../images/fd-2012.jpg "FD Gazelle 2012.jpg")
 
 Copernica wurde dieses Jahr mit dem FD Gazelle Award ausgezeichnet, der
 Copernica ebenfalls 2011 und 2010 verliehen wurde. Mit dieser

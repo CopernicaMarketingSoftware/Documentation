@@ -36,10 +36,10 @@ Copernica Marketing Software-Medienlogo
 ---------------------------------------
 
 ![Copernica
-logo](Copernicacom/copernica-logo.png "Copernica Marketing Software Medien Logo")
+logo](../images/copernica-logo.png "Copernica Marketing Software Medien Logo")
 
 [Laden Sie das Logo herunter
-als.png-Format](http://vicinity.picsrv.net/127/0/110452/copernica-marketingsoftware-logo.png "Laden Logo als.png-Format")\
+als.png-Format](../images/copernica-marketingsoftware-logo.png "Laden Logo als.png-Format")\
 [Laden Sie Medien Logo herunter als High Resolution
 PDF](http://vicinity.picsrv.net/f/127/0/5068/Copernica-emailmarketing-Software.pdf "Laden Medien Logo High Resolution PDF")
 
@@ -57,10 +57,10 @@ unserer Standardtexte unter dem Logo zu erwähnen. Diese Standardtexte
 finden Sie untenstehend.
 
 ![Copernica Registered Partner
-Logo](Copernicacom/copernica-partner-logo.png "Copernica Registered Partner Logo")
+Logo](../images/copernica-partner-logo.png "Copernica Registered Partner Logo")
 
 [Laden Sie Logo herunter als .png
-formaat](http://vicinity.picsrv.net/127/0/111383/Copernica-registered-partner-logo.png "Laden Sie Logo herunter als .png formaat")\
+formaat](../images/Copernica-registered-partner-logo.png "Laden Sie Logo herunter als .png formaat")\
 [Laden Sie Logo herunter als High Resolution
 Format](http://vicinity.picsrv.net/f/127/0/5070/Copernica-emailmarketing-Software-registered-partner-logo.pdf "Laden Sie Logo herunter als High Resolution Format")
 
@@ -72,10 +72,10 @@ Netzwerk dies auch mitteilen? Dann verwenden sie einfach das „Powered by
 Copernica“-Logo in ihren E-Mails, Webseiten, Formularen und Umfragen.
 
 ![Powered by Copernica
-logo](Copernicacom/powered-by-copernica.png "Powered by Copernica logo")
+logo](../images/powered-by-copernica.png "Powered by Copernica logo")
 
 [Laden Sie das 'Powered by Copernica'-Logo herunter als
-.png-Format](Copernicacom/powered-by-copernica.png "Laden Sie das 'Powered by Copernica'-Logo herunter als .png-Format")
+.png-Format](../images/powered-by-copernica.png "Laden Sie das 'Powered by Copernica'-Logo herunter als .png-Format")
 
 **Über Copernica Marketing Software**
 

@@ -10,7 +10,7 @@ kostenlos!](http://www.copernica.com/de/copernica-30-tage-testen "Testen Sie Cop
  
 
 ![Walter van der
-Scheer](Copernicacom/walter-vds.png "Walter van der Scheer")
+Scheer](../images/walter-vds.png "Walter van der Scheer")
 
 **Walter van der Scheer**
 
@@ -39,7 +39,7 @@ wenn Sie Walter auf Ihrer Veranstaltung sprechen wollen lassen.
 
  
 
-![Dennis de Koning](Copernicacom/dennis-dekoning.png "Dennis de Koning")
+![Dennis de Koning](../images/dennis-dekoning.png "Dennis de Koning")
 
 Dennis de Koning
 ----------------

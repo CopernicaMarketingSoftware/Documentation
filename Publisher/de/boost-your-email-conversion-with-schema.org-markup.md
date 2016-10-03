@@ -3,7 +3,7 @@ reagieren könnten, ohne Ihre E-Mails erst öffnen zu müssen? Wie würde
 sich das auf Ihre Konversionsraten auswirken? Finden Sie es selber
 heraus, indem Sie Microdata und Schema.org einsetzen!
 
-![](Copernica_cases/conversion-copernica.jpg "More conversion with Schema.org markup for emails")
+![](../images/conversion-copernica.jpg "More conversion with Schema.org markup for emails")
 
 Was ist Schema.org?
 -------------------
@@ -72,7 +72,7 @@ verbirgt. Wenn Sie beispielsweise eine Event-Einladung verschicken,
 können Sie den dazugehörigen Call-to-Action direkt in die Betreffzeile
 integrieren:
 
-![](Copernica_cases/schema-org-microdata.png "Steigern Sie ihre E-Mail-Conversion mit dem Schema.org-Markup ")
+![](../images/schema-org-microdata.png "Steigern Sie ihre E-Mail-Conversion mit dem Schema.org-Markup ")
 
 Dasselbe können Sie tun, wenn Sie...
 

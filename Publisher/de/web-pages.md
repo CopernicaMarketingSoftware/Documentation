@@ -13,7 +13,7 @@ und finden Sie heraus, was Ihre Kunden wollen.
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Erstellen Sie Ihre eigenen
-    Webseiten](http://vicinity.picsrv.net/127/0/110345/de-webseiten-01-thumb.png "Erstellen Sie Ihre eigenen Webseiten")](./create-and-publish-your-own-web-pages.md)
+    Webseiten](../images/de-webseiten-01-thumb.png "Erstellen Sie Ihre eigenen Webseiten")](./create-and-publish-your-own-web-pages.md)
     Mit unserer Software können Sie problemlos Ihre eigene Webseite
     aufbauen. Erstellen Sie so zum Beispiel eine schöne Zielseite zur
     Unterstützung Ihres letzten
@@ -26,7 +26,7 @@ und finden Sie heraus, was Ihre Kunden wollen.
     -------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Verschiedene Sorten
-    Webformularen](Copernicacom/de-webseiten-02-thumb.png "Verschiedene Sorten Webformularen")](./various-types-of-web-forms.md)Erstellen
+    Webformularen](../images/de-webseiten-02-thumb.png "Verschiedene Sorten Webformularen")](./various-types-of-web-forms.md)Erstellen
     Sie Ihre eigenen Webformulare mit der Copernica Marketing Software
     und steigern Sie Ihre Konversion auf noch nie da gewesene Höhen.
 
@@ -36,7 +36,7 @@ und finden Sie heraus, was Ihre Kunden wollen.
 -   [Umfragen](./create-your-own-survey.md "Umfragen")
     --------------------------------------------------------------------------------
 
-    [![Umfragen](Copernicacom/de-webseiten-03-thumb.png "Umfragen")](./create-your-own-survey.md)Benutzen
+    [![Umfragen](../images/de-webseiten-03-thumb.png "Umfragen")](./create-your-own-survey.md)Benutzen
     Sie das Umfrage-Tool von Copernica, um Ihre Kunden nach wertvollem
     Input zu fragen. In wenigen Schritten stellen die richtigen Fragen
     und veröffentlichen Sie Ihre Umfrage online.
@@ -48,7 +48,7 @@ und finden Sie heraus, was Ihre Kunden wollen.
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Hinzufügen von einem RSS oder Atom
-    Feed](http://vicinity.picsrv.net/127/0/110348/de-webseiten-04-thumb.png "Hinzufügen von einem RSS oder Atom Feed")](./rss-or-atom-feed.md)Möchten
+    Feed](../images/de-webseiten-04-thumb.png "Hinzufügen von einem RSS oder Atom Feed")](./rss-or-atom-feed.md)Möchten
     Sie Ihre Webseite mit den neuesten Nachrichten ergänzen oder die
     neuesten Produkte Ihres Webshops zeigen? Fügen Sie mit Copernica ein
     RSS oder Atom-Feed hinzu.
@@ -59,7 +59,7 @@ und finden Sie heraus, was Ihre Kunden wollen.
     ---------------------------------------------------------------------------------------------------------------------------------------
 
     [![Was leisten Ihre
-    Webseiten?](http://vicinity.picsrv.net/127/0/110349/de-webseiten-05-thumb.png "Was leisten Ihre Webseiten?")](./your-web-page-results.md)Wenn
+    Webseiten?](../images/de-webseiten-05-thumb.png "Was leisten Ihre Webseiten?")](./your-web-page-results.md)Wenn
     Ihre Webseite online ist, möchten Sie natürlich gerne wissen, ob sie
     Ihren Kunden gefällt. Sehen Sie sich mit Copernica die Ergebnisse
     Ihrer Landingpages und Webseiten an.

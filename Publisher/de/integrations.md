@@ -31,7 +31,7 @@ Integration?? Informieren Sie uns auf
     -------
 
     [![Magento
-    integration](Copernicacom/magento-integration.png "Magento Integration")](./magento.md)
+    integration](../images/magento-integration.png "Magento Integration")](./magento.md)
 
     Nutzen Sie Copernica, um alle Kontakt-, Auftrags- und
     Warenkorbinformationen von Magento automatisch synchronisieren und
@@ -44,7 +44,7 @@ Integration?? Informieren Sie uns auf
     ------
 
     [![Hybris
-    integration](Copernicacom/hybris-integration.png "Hybris Integration")](http://www.copernica.com/de/support/integrationen/hybris)
+    integration](../images/hybris-integration.png "Hybris Integration")](http://www.copernica.com/de/support/integrationen/hybris)
 
     Regeln Sie mit Hybris stetig aktualisierte Kampagnen und
     Kundendateien.\
@@ -57,7 +57,7 @@ Integration?? Informieren Sie uns auf
     ----------
 
     [![Prestashop
-    Integration](Copernicacom/prestashop-integration.png "Prestashop Integration")](http://www.copernica.com/de/support/integrationen/prestashop)
+    Integration](../images/prestashop-integration.png "Prestashop Integration")](http://www.copernica.com/de/support/integrationen/prestashop)
 
     Nutzen Sie Prestashop und sind Sie auf der Suche nach einem
     praktischen Weg, um all Ihre Kundenbestände in Ihre Dateien zu
@@ -70,7 +70,7 @@ Integration?? Informieren Sie uns auf
     -----------
 
     ![XT-Commerce
-    Integration](Copernicacom/xt-commerce.png "XT-Commerce")
+    Integration](../images/xt-commerce.png "XT-Commerce")
 
     Mit der Integration von XT-Commerce werden alle Kunden Stamm-Daten,
     abgebrochene Warenkörbe, bestellte Produkte und die notwendigen
@@ -82,7 +82,7 @@ Integration?? Informieren Sie uns auf
 -   SEOshop
     -------
 
-    ![SEOshop](Copernicacom/seoshop-integration.png "SEOshop")
+    ![SEOshop](../images/seoshop-integration.png "SEOshop")
 
     Setzen Sie automatisierte E-Mail-Kampagnen für Ihren SEOshop-Webshop
     mit Hilfe von Copernica auf.\
@@ -94,7 +94,7 @@ Integration?? Informieren Sie uns auf
 -   One Stop Webshop
     ----------------
 
-    ![Onestopwebshop](Copernicacom/onestopwebshop-integration.png "Onestopwebshop")
+    ![Onestopwebshop](../images/onestopwebshop-integration.png "Onestopwebshop")
 
     Durch die Integration zu dem One Stop Webshop wird es den Usern
     ermöglicht relevante und persönliche E-Mail-Kampagnen mit Copernica
@@ -105,7 +105,7 @@ Integration?? Informieren Sie uns auf
 -   Shopware
     --------
 
-    ![Shopware](Copernicacom/shopware-integration.png "Shopware")
+    ![Shopware](../images/shopware-integration.png "Shopware")
 
     Diese Integration macht es möglich, Daten zwischen beiden Systemen
     zu synchronisieren, um leistungsstarke E-Mail-Kampagnen
@@ -117,7 +117,7 @@ Integration?? Informieren Sie uns auf
 -   OXID
     ----
 
-    ![OXID](Copernicacom/oxid-integration.png "OXID")
+    ![OXID](../images/oxid-integration.png "OXID")
 
     Das Automatisieren Ihrer Kampagnen war noch nie so einfach. Lassen
     Sie sich von der Flexibilität des OXID Plug-Ins überraschen.
@@ -129,7 +129,7 @@ Integration?? Informieren Sie uns auf
     --------
 
     ![Opencart
-    Integration](Copernicacom/opencart-integration.png "Opencart Integration")
+    Integration](../images/opencart-integration.png "Opencart Integration")
 
     Holen Sie die besten Ergebnisse aus Ihrem Opencart-Shop mit dieser
     Integration und der Copernica Marketing Software. Unser Ziel ist es
@@ -141,7 +141,7 @@ Integration?? Informieren Sie uns auf
     ------
 
     [![Drupal
-    integration](Copernicacom/drupal-integration.png "Drupal Integration")](http://www.copernica.com/de/support/integrationen/drupal)
+    integration](../images/drupal-integration.png "Drupal Integration")](http://www.copernica.com/de/support/integrationen/drupal)
 
     Benutzern von Drupal stehen vier verschiedene Module zur Verfügung,
     welche Sie mit Ihren Datenbeständen kombinieren können.
@@ -152,7 +152,7 @@ Integration?? Informieren Sie uns auf
 -   EPiServer
     ---------
 
-    ![EPiServer](Copernicacom/episerver-integration.png "EPiServer")
+    ![EPiServer](../images/episerver-integration.png "EPiServer")
 
     Halten Sie alle Daten in Ihrer Profil-Datenbank mit Hilfe der
     Integration zwischen Copernica und EPiServer aktuell.\
@@ -164,7 +164,7 @@ Integration?? Informieren Sie uns auf
 -   Umbraco
     -------
 
-    ![Umbraco](Copernicacom/umbraco-integration.png "Umbraco")
+    ![Umbraco](../images/umbraco-integration.png "Umbraco")
 
     Nutzen Sie die Schnittstelle zwischen Copernica und Umbraco um
     kontinuierlich Ihre Datenbank in beiden Systemen anzureichern.
@@ -175,7 +175,7 @@ Integration?? Informieren Sie uns auf
 -   Wordpress
     ---------
 
-    [![Joomla](Copernicacom/wordpress-integration.png "Wordpress")](http://www.copernica.com/de/support/integrationen/wordpress)
+    [![Joomla](../images/wordpress-integration.png "Wordpress")](http://www.copernica.com/de/support/integrationen/wordpress)
 
     Mithilfe der Wordpress-Integration können Sie alle Daten Ihrer
     Abonnenten in Copernica Marketing Software speichern!
@@ -185,7 +185,7 @@ Integration?? Informieren Sie uns auf
 -   Joomla
     ------
 
-    [![Joomla](Copernicacom/joomla-integration.png "Joomla")](http://www.copernica.com/de/support/integrationen/joomla)
+    [![Joomla](../images/joomla-integration.png "Joomla")](http://www.copernica.com/de/support/integrationen/joomla)
 
     Mehr Informationen erhalten Sie in Kürze.\
     \
@@ -197,7 +197,7 @@ Integration?? Informieren Sie uns auf
     --------
 
     ![SugarCRM
-    integration](Copernicacom/sugarcrm-integration.png "SugarCRM integration")
+    integration](../images/sugarcrm-integration.png "SugarCRM integration")
 
     Mit dem Copernica-Connector können in SugarCRM angelegte
     Email-Kampagnen nach Copernica übertragen und weiter bearbeitet
@@ -208,7 +208,7 @@ Integration?? Informieren Sie uns auf
 -   Salesforce
     ----------
 
-    ![Salesforce](Copernicacom/salesforce-integration.png "Salesforce")
+    ![Salesforce](../images/salesforce-integration.png "Salesforce")
 
     Mit dieser Integration werden innerhalb wenigen Schritten,
     automatisierte Kampagnen erstellt mit den Personenberzogenen Daten
@@ -221,7 +221,7 @@ Integration?? Informieren Sie uns auf
     ----------------------
 
     [![Microsoft Dynamics CRM
-    integration](Copernicacom/ms-dynamics-integration.png "Microsoft Dynamics CRM Integration")](http://www.copernica.com/de/support/integrationen/microsoft-dynamics-crm)
+    integration](../images/ms-dynamics-integration.png "Microsoft Dynamics CRM Integration")](http://www.copernica.com/de/support/integrationen/microsoft-dynamics-crm)
 
     Mit der Integration für Microsoft Dynamics CRM sorgen Sie für einen
     intensiveren  und direkteren Kontakt mit Ihren Nutzern.\
@@ -234,7 +234,7 @@ Integration?? Informieren Sie uns auf
     ------
 
     [![Litmus
-    Integration](Copernicacom/litmus-integration.png "Litmus Integration")](http://www.copernica.com/de/support/integrationen/litmus)
+    Integration](../images/litmus-integration.png "Litmus Integration")](http://www.copernica.com/de/support/integrationen/litmus)
 
     Kontrollieren Sie, wie Ihre E-Mailings in den bekanntesten
     E-Mail-Programmen landen.
@@ -246,7 +246,7 @@ Integration?? Informieren Sie uns auf
     -----------
 
     [![Return Path
-    Integration](Copernicacom/return-path-integration.png "Return Path")](http://www.copernica.com/de/support/integrationen/return-path)
+    Integration](../images/return-path-integration.png "Return Path")](http://www.copernica.com/de/support/integrationen/return-path)
 
     Optimieren Sie die Versendung Ihrer E-Mailings mit dem Return Path
     Zertifikat.
@@ -258,7 +258,7 @@ Integration?? Informieren Sie uns auf
     -----
 
     [![Exact
-    integration](Copernicacom/exact-integration.png "Exact Integration")](http://www.copernica.com/de/support/integrationen/exact)
+    integration](../images/exact-integration.png "Exact Integration")](http://www.copernica.com/de/support/integrationen/exact)
 
     Verbessern Sie die Verwaltung und den Arbeitsablauf  Ihrer Kampagnen
     mit dem Exact © Copernica Connector. Die perfekte Verbindung
@@ -271,7 +271,7 @@ Integration?? Informieren Sie uns auf
     ----------------
 
     [![Google
-    Analytics](Copernicacom/google-analytics-integration.png "Google Analytics")](http://www.copernica.com/en/support/integrations/google-analytics)
+    Analytics](../images/google-analytics-integration.png "Google Analytics")](http://www.copernica.com/en/support/integrations/google-analytics)
 
     Copernica verfügt über eine Integration von Google-Analytics, mit
     der Sie die Leistung Ihrer Marketingkampagnen noch verbessern
@@ -283,7 +283,7 @@ Integration?? Informieren Sie uns auf
 -   Klipfolio
     ---------
 
-    ![Klipfolio](Copernicacom/klipfolio-integration.png "Klipfolio")
+    ![Klipfolio](../images/klipfolio-integration.png "Klipfolio")
 
     Klipfolio sorgt für eine Real-Time Übersicht aller Resultate der
     Marketing-Kampagnen die in Copernica eingerichtet sind - und darüber

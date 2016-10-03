@@ -10,7 +10,7 @@ Einfaches Entwerfen mit dem Vorlagen-Editor
 -------------------------------------------
 
 ![Einfach entwerfen mit dem
-Vorlagen-Editor](Copernicacom/de-entwerfen-sie-ihre-eigenen-vorlagen-01-thumb.png "Einfach entwerfen mit dem Vorlagen-Editor")
+Vorlagen-Editor](../images/de-entwerfen-sie-ihre-eigenen-vorlagen-01-thumb.png "Einfach entwerfen mit dem Vorlagen-Editor")
 
 Mit dem Vorlagen-Editor von Copernica entwerfen Sie einfach Ihre eigenen
 Vorlagen oder passen Sie Ihre jetzigen Vorlagen an. Wenn Sie mit dem
@@ -36,7 +36,7 @@ Benutzen Sie Image Hosting für all Ihre Abbildungen
 ---------------------------------------------------
 
 ![Benutzen Sie Image Hosting für all Ihre
-Abbildungen](Copernicacom/de-entwerfen-sie-ihre-eigenen-vorlagen-02-thumb.png "Benutzen Sie Image Hosting für all Ihre Abbildungen")
+Abbildungen](../images/de-entwerfen-sie-ihre-eigenen-vorlagen-02-thumb.png "Benutzen Sie Image Hosting für all Ihre Abbildungen")
 
 Möchten Sie noch eine zusätzliche Abbildung an Ihr E-Mailing hinzufügen?
 Dann erfordert dass keine zusätzliche Codierungsarbeit. Laden Sie eigene
@@ -54,7 +54,7 @@ Geben Sie Ihren E-Mailings Ihren eigenen Stil
 ---------------------------------------------
 
 ![Eigenen Stil geben an Ihre
-E-Mailing](Copernicacom/de-entwerfen-sie-ihre-eigenen-vorlagen-03-thumb.png "Eigenen Stil geben an Ihre E-Mailing")
+E-Mailing](../images/de-entwerfen-sie-ihre-eigenen-vorlagen-03-thumb.png "Eigenen Stil geben an Ihre E-Mailing")
 
 Sie möchten das Design Ihres E-Mailings verbessern? Copernica bietet
 Ihnen dazu praktische Tools, mit denen Sie Ihre eigenen CSS-Stylesheets
