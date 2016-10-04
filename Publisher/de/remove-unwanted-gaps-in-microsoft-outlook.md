@@ -12,7 +12,7 @@ Screenshot, sind Sie wahrscheinlich Opfer des Renderings von Outlook
 2007 und 2010 geworden.
 
 ![Unwanted gaps in
-Outlook](Copernicacom/unwanted-gap-in-outlook-copernica.jpg)
+Outlook](../images/unwanted-gap-in-outlook-copernica.jpg)
 
 Die Ursache
 -----------

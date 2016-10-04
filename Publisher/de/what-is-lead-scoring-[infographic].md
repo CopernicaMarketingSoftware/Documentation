@@ -23,7 +23,7 @@ Lösung liegt darin, auf die weichen Daten des potenziellen Kunden
 Methoden des Lead Scoring anzuwenden.
 
 Mehr über Lead Scoring erfahren Sie auch in dieser [Exact Software Case
-Study](./lead-nurturing-in-real-life-business-case-extract-software.md)
+Study](./lead-nurturing-in-real-life-business-case-exact-software.md)
 
 Lead Scoring ist eine Methode zur Klassifizierung potenzieller Kunden
 anhand einer Skala, die die Wertigkeit eines Leads für das Unternehmen

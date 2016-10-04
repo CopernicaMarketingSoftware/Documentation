@@ -111,4 +111,4 @@ hervorragenden Möglichkeiten der Umsatzsteigerung mit einer
 zu erfahren.
 
 [![Copernica
-Partner-Modell](Copernicacom/en-partner-model-video.png)](http://www.youtube.com/watch?v=sMiGq-CKXSc "Video zu unserem Partner-Modell anschauen")
+Partner-Modell](../images/en-partner-model-video.png)](http://www.youtube.com/watch?v=sMiGq-CKXSc "Video zu unserem Partner-Modell anschauen")

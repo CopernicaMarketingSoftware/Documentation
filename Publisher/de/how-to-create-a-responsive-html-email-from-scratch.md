@@ -17,9 +17,9 @@ Wir werden eine E-Mail erstellen, die sowohl am Rechner als auch mobile
 hervorragend aussehen wird (s.u.).
 
 ![Responsive email design by
-Copernica](Copernicacom/responsive-email-copernica-screenshot.jpg)\
+Copernica](../images/responsive-email-copernica-screenshot.jpg)\
  [Download the source
-files](Copernicacom/responsive-email-copernica-source.zip "Download the source files")
+files](../downloads/responsive-email-copernica-source.zip "Download the source files")
 
 Die Basics
 ----------
@@ -70,7 +70,7 @@ den Verlauf verfolgen können.\
 Ihre HTML-Seite sollte jetzt so aussehen:
 
 ![Responsive email document:
-header](Copernicacom/responsive-email-copernica-1.jpg)
+header](../images/responsive-email-copernica-1.jpg)
 
 Struktur des Layouts
 --------------------
@@ -101,7 +101,7 @@ losgehen mit dem restlichen Code.\
 \
 Achten Sie darauf, dass Sie den Code innerhalb des Hauptcontainers
 platziert haben.![Responsive email document:
-basic](Copernicacom/responsive-email-copernica-2.jpg)
+basic](../images/responsive-email-copernica-2.jpg)
 
 ****Layout -**Einleitung:**
 
@@ -121,7 +121,7 @@ Header. Fügen Sie diesen einfach unterhalb des Codes für den Header ein.
 Status quo:
 
 ![Responsive email document:
-introduction](Copernicacom/responsive-email-copernica-3.jpg)
+introduction](../images/responsive-email-copernica-3.jpg)
 
 ****Layout - **Spalten:**
 
@@ -161,7 +161,7 @@ einmal den folgenden Code an:
 Platzieren Sie den Code direkt unter jenen für die Einführung:
 
 ![Responsive email document:
-columns](Copernicacom/responsive-email-copernica-4.jpg)
+columns](../images/responsive-email-copernica-4.jpg)
 
 ****Layout -**Footer**
 
@@ -181,7 +181,7 @@ Anwendung – einfach unter den zuletzt eingefügten Code einfügen.
 Im Browser sollte jetzt das zu sehen sein:
 
 ![Responsive email document:
-footer](Copernicacom/responsive-email-copernica-5.jpg)
+footer](../images/responsive-email-copernica-5.jpg)
 
 Content und Style
 -----------------
@@ -283,7 +283,7 @@ Ihr Code sollte jetzt so aussehen:
 Und im Browser sollte das Ganze so aussehen:
 
 ![Responsive email document:
-introduction](Copernicacom/responsive-email-copernica-7.jpg)
+introduction](../images/responsive-email-copernica-7.jpg)
 
 **Content und Style: Spalten**
 
@@ -403,7 +403,7 @@ Sie einfach den folgenden Code in den Headbereich:
 \
 \
  ![Responsive email document:
-columns](Copernicacom/responsive-email-copernica-8.jpg)
+columns](../images/responsive-email-copernica-8.jpg)
 
 **Content und Style: Footer**
 
@@ -423,7 +423,7 @@ Keine „Rocket Science“ hier.
 Im Browser sollte das Ganze nun so aussehen:
 
 ![Responsive email document:
-footer](Copernicacom/responsive-email-copernica-9.jpg)
+footer](../images/responsive-email-copernica-9.jpg)
 
 Add some responsiveness
 -----------------------

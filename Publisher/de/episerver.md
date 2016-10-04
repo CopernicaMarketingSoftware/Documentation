@@ -18,7 +18,7 @@ community functionality and personalization options.
 *This Copernica integration is developed by a third party. Copernica is
 not responsible for the proper working of this integration.*
 
-![EpiServer logo](Copernicacom/episerver-logo.png)
+![EpiServer logo](../images/episerver-logo.png)
 
 Download
 --------
@@ -30,4 +30,4 @@ Download
 **File size:** 13,3 MB\
 [Manual](https://pic.vicinity.nl/f/127/0/5838/Copernica-Episerver-Manual-ENG.pdf "Manual EPiServer")\
 \
-[Download](Copernicacom/EpiServerCopernicaPlugin.rar.rar "Download EPiServer plugin")
+[Download](../downloads/EpiServerCopernicaPlugin.rar.rar "Download EPiServer plugin")

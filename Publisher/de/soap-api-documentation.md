@@ -25,10 +25,10 @@ Index finden Sie das Kapitel 'POM SOAP API'.
 PHP](soap-1-5.zip "SOAP API Beispieltext für PHP")
 
 [Download SOAP API Beispieltext für
-Java](Copernicacom/soaptest_java.zip "SOAP API Beispieltext für Java")
+Java](../downloads/soaptest_java.zip "SOAP API Beispieltext für Java")
 
 [Download SOAP API Beispieltext für
-C\#](Copernicacom/soaptest_cs.zip "SOAP API Beispieltext für C#")
+C\#](../downloads/soaptest_cs.zip "SOAP API Beispieltext für C#")
 
 Totale Kontrolle dank Copernica-Objektmodell
 --------------------------------------------

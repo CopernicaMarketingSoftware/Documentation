@@ -1,5 +1,5 @@
 ![Einmaliges Angebot: Verwenden Sie Copernica bis zu drei Monate lang
-lizenzkostenfrei!](Copernicacom/Copernica-endofyearoffer-de.jpg)
+lizenzkostenfrei!](../images/Copernica-endofyearoffer-de.jpg)
 
 Wir wissen von unseren Kunden, dass gegen Jahresende einiges zu tun ist.
 Während Sie derzeit versuchen, die Vorjahresergebnisse zu übertreffen,

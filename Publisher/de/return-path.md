@@ -9,7 +9,7 @@ vorzeitig Fehler anzeigen lassen und das Mailing optimieren. Return Path
 kontrolliert u.a. für Sie, ob Sie als Absender auf bestimmten schwarzen
 Listen (SPAM) vorkommen.
 
-![returnpath logo](Copernicacom/returnpath-logo.png)Sobald Ihre
+![returnpath logo](../images/returnpath-logo.png) Sobald Ihre
 E-Mailings zugestellt sind, können Sie über Copernica ein Return Path
 Certification anfragen. Mit diesem Zertifikat kommen Sie auf die
 weltweit größte Whitelist. Dadurch  wird das Online-Vertrauen in Sie

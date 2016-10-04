@@ -14,7 +14,6 @@ employees. You could then, for example, state which employee works for
 what company by referring the two databases to each other.
 This would give you the possibility to personalize based on both the
 company as the employee database, in one emailing.
-[Learn more](./personalizing-using-multi-dimensional-databases.md)
 
 **Any other updates?**
 Yes, Thursday we’ll make various updates that improve the overall

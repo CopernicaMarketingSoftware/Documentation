@@ -3,7 +3,7 @@ auf Ihrer Joomla-Website eingegeben werden, in Ihre Copernica-Datenbank.
 Hierdurch können Sie Folgemaßnahmen einfach planen, nachdem eine Maske
 ausgefüllt wurde, ohne dabei die Daten manuell in Copernica einzugeben.
 
-![Joomla](Copernicacom/joomla-integration.png)
+![Joomla](../images/joomla-integration.png)
 
 -   **Entwickelt von:** [Bosma Direct
     Marketing](http://www.bosmadmc.nl "Bosma Direct Marketing")
@@ -11,7 +11,7 @@ ausgefüllt wurde, ohne dabei die Daten manuell in Copernica einzugeben.
 -   **Lizenz:**Open source
 -   **[Installationsanleitung](http://www.copernica.com/en/support/integrations/joomla-installation-guide)**
     (PDF)
--   [Download](Copernicacom/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
+-   [Download](../downloads/plg_copernica.zip "Download Joomla-plugin for Copernica Marketing Software")
 
 Daten aus Joomla-Masken automatisch mit Copernica verbinden
 -----------------------------------------------------------

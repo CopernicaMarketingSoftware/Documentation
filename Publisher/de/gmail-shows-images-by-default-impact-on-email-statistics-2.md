@@ -33,7 +33,7 @@ habe ich dieselbe E-Mail an eine @gmail.com-Adresse gesendet und sie mit
 dem Gmail-Webmailer geöffnet.
 
 ![Click for larger version (opens in a new
-window)](articlesblog/copernica-gmail-en2.png)
+window)](../images/copernica-gmail-en2.png)
 
 Wie Sie sehen können, zeigt die Statistik nun zwei verschiedene
 Standorte an. Obwohl die E-Mail beide Male in Miami geöffnet wurde,

@@ -59,7 +59,7 @@ partners](./get-the-most-out-of-the-partner-license.md#joint-content),
 [trade shows are
 attended](./get-the-most-out-of-the-partner-license.md#trade-shows)
 and [succesful seminars are
-organized](//get-the-most-out-of-the-partner-license.md#organize-a-seminar).
+organized](./get-the-most-out-of-the-partner-license.md#organize-a-seminar).
 All different initiatives showing the involvement and passion the
 partners have to spread Copernica's reputation (inter)nationally.
 
@@ -92,7 +92,7 @@ Selection for Copernica's Partner of the Year is based on:
 -   Joint marketing activities:
     -   [Participating at trade shows](./get-the-most-out-of-the-partner-license.md#trade-shows)
     -   [Organizing joint seminars](./get-the-most-out-of-the-partner-license.md#organize-a-seminar)
-    -   [Publishing joint content](./get-the-most-out-of-the-partner-licens.mde#joint-content)
+    -   [Publishing joint content](./get-the-most-out-of-the-partner-licens.md#joint-content)
     -   [Linkbuilding towards copernica.com](./get-the-most-out-of-the-partner-license.md#mention-the-partnership)
 -   Number of [certified Copernica users](./get-the-most-out-of-the-partner-license.md#become-an-expert)
 

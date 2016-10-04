@@ -17,7 +17,7 @@ werden übertragen:
 -   Alle bestellten Produkte
 -   Alle Bestellabbrüche
 
-![Shopware Logo](Copernicacom/shopware.png)
+![Shopware Logo](../images/shopware.png)
 
 -   **Entwickelt durch:**
     [Eliomedia](http://www.copernica.com/de/support/partner/ "Eliomedia")

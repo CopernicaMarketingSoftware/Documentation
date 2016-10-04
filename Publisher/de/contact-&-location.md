@@ -17,7 +17,7 @@ Copernica BV, Michael Heering\
     map](http://maps.google.nl/maps?f=q&source=embed&hl=nl&geocode=&q=Media+Plaza,+Croeselaan+6,+Utrecht&aq=0&oq=Media+Plaza,+Croeselaan+6,+Utrecht&sll=52.084886,5.102806&sspn=0.044251,0.077162&ie=UTF8&hq=Media+Plaza,+Croeselaan+6,+Utrecht&ll=52.084965,5.102806&spn=0.013713,0.032015&t=m "Display bigger map")
 
 -   [![Media
-    Plaza](Copernicacom/logo-MP.gif)](http://www.mediaplaza.nl "Media Plaza")
+    Plaza](../images/logo-MP.gif)](http://www.mediaplaza.nl "Media Plaza")
     **Media Plaza**\
      Croeselaan 6 (East entrance)\
      3521 CA Utrecht\
@@ -30,51 +30,51 @@ Copernica BV, Michael Heering\
     12:00 AM - 17:00 PM\
 
 -   Mediapartners
-    [![Marketingtribune](Copernicacom/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")
+    [![Marketingtribune](../images/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")
     [![E-shop
-    Expo](Copernicacom/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")
-    [![MarketingFacts](Copernicacom/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")
+    Expo](../images/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")
+    [![MarketingFacts](../images/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")
     [![Management
-    Team](Copernicacom/mediapartner-mt.png)](http://www.mt.nl "Management Team")
-    [![Sprout](Copernicacom/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")
+    Team](../images/mediapartner-mt.png)](http://www.mt.nl "Management Team")
+    [![Sprout](../images/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")
     [![Webwinkel
-    Vakdagen](Copernicacom/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")
+    Vakdagen](../images/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")
     [![Twinkle
-    Magazine](Copernicacom/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")
-    [![Thuiswinkel.org](Copernicacom/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
-    [![Retailtrends](Copernicacom/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")
-    [![Etailtrends](Copernicacom/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")
-    [![Karelgeenen.nl](Copernicacom/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")
+    Magazine](../images/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")
+    [![Thuiswinkel.org](../images/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
+    [![Retailtrends](../images/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")
+    [![Etailtrends](../images/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")
+    [![Karelgeenen.nl](../images/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")
     [![Adformatie
-    Groep](Copernicacom/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
+    Groep](../images/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
 -   Copernica partners
-    [![Redhotminute](Copernicacom/redhotminute.png)](http://www.redhotminute.com "Redhotminute")
+    [![Redhotminute](../images/redhotminute.png)](http://www.redhotminute.com "Redhotminute")
     [![JWB Creatieve
-    Communicatie](Copernicacom/jwb-creative-communicatie.png)](http://www.jwbcom.nl "JWB Creatieve Communicatie")
-    [![Arlanet](Copernicacom/arlanet.png)](http://www.arlanet.com "Arlanet")
-    [![Anchormen](Copernicacom/anchormen.png)](http://www.anchormen.nl "Anchormen")
-    [![eFusion](Copernicacom/efusion.png)](http://www.efusion.eu "eFusion")
+    Communicatie](../images/jwb-creative-communicatie.png)](http://www.jwbcom.nl "JWB Creatieve Communicatie")
+    [![Arlanet](../images/arlanet.png)](http://www.arlanet.com "Arlanet")
+    [![Anchormen](../images/anchormen.png)](http://www.anchormen.nl "Anchormen")
+    [![eFusion](../images/efusion.png)](http://www.efusion.eu "eFusion")
     [![Gracious
-    Studios](Copernicacom/gracious.png)](http://www.graciousstudios.nl "Gracious Studios")
+    Studios](../images/gracious.png)](http://www.graciousstudios.nl "Gracious Studios")
     [![ISM
-    eCompany](Copernicacom/ism-ecompany.png)](http://www.ism.nl/Eng/About-ISM "ISM eCompany")
-    [![Cream](Copernicacom/cream.png)](http://www.cream.nl "Cream")
-    [![Bookerz](Copernicacom/bookerz.png)](http://www.bookerz.nl "Bookerz")
+    eCompany](../images/ism-ecompany.png)](http://www.ism.nl/Eng/About-ISM "ISM eCompany")
+    [![Cream](../images/cream.png)](http://www.cream.nl "Cream")
+    [![Bookerz](../images/bookerz.png)](http://www.bookerz.nl "Bookerz")
     [![Perfect
-    Groep](Copernicacom/perfectgroep.png)](http://www.perfectgroep.nl "Perfect Groep")
+    Groep](../images/perfectgroep.png)](http://www.perfectgroep.nl "Perfect Groep")
     [![Aan
-    Zee](Copernicacom/aan-zee.png)](http://www.aanzee.nl "Aan Zee")
+    Zee](../images/aan-zee.png)](http://www.aanzee.nl "Aan Zee")
     [![Invest
-    Online](Copernicacom/invest-online.png)](http://www.investonline.nl "Invest Online")
+    Online](../images/invest-online.png)](http://www.investonline.nl "Invest Online")
     [![Easy Internet
-    Marketing](Copernicacom/easy-internet.png)](http://www.easy.nl "Easy Internet Marketing")
+    Marketing](../images/easy-internet.png)](http://www.easy.nl "Easy Internet Marketing")
     [![Email
-    Enzo](Copernicacom/emailenzo.png)](http://www.emailenzo.com "Email Enzo")
-    [![Leaseweb](Copernicacom/leaseweb.png)](http://www.leaseweb.com "Leaseweb")
-    [![Qamel](Copernicacom/qamel.png)](http://www.qamel.nl/english "Qamel")
-    [![TriMM](Copernicacom/trimm.png)](http://www.trimm.nl "TriMM")
+    Enzo](../images/emailenzo.png)](http://www.emailenzo.com "Email Enzo")
+    [![Leaseweb](../images/leaseweb.png)](http://www.leaseweb.com "Leaseweb")
+    [![Qamel](../images/qamel.png)](http://www.qamel.nl/english "Qamel")
+    [![TriMM](../images/trimm.png)](http://www.trimm.nl "TriMM")
     [![Xplore
-    Group](Copernicacom/xplore-group.png)](http://www.xploregroup.be "Xplore Group")
+    Group](../images/xplore-group.png)](http://www.xploregroup.be "Xplore Group")
     [Do you want to
     sponsor?](http://www.copernica.com/de/support/copernica-summit/copernica-partners "Do you want to sponsor?")
 

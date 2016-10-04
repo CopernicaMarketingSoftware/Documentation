@@ -1,54 +1,54 @@
 Below you will find an overview of the speakers presenting at the
 Copernica Summit 2013.
 [Impression Copernica Summit
-2013](./impression-copernica-summit-2013 "Impression Copernica Summit 2013")
+2013](./impression-copernica-summit-2013.md "Impression Copernica Summit 2013")
 
 -   Mediapartners
-    [![Marketingtribune](Copernicacom/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")
+    [![Marketingtribune](../images/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")
     [![E-shop
-    Expo](Copernicacom/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")
-    [![MarketingFacts](Copernicacom/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")
+    Expo](../images/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")
+    [![MarketingFacts](../images/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")
     [![Management
-    Team](Copernicacom/mediapartner-mt.png)](http://www.mt.nl "Management Team")
-    [![Sprout](Copernicacom/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")
+    Team](../images/mediapartner-mt.png)](http://www.mt.nl "Management Team")
+    [![Sprout](../images/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")
     [![Webwinkel
-    Vakdagen](Copernicacom/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")
+    Vakdagen](../images/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")
     [![Twinkle
-    Magazine](Copernicacom/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")
-    [![Thuiswinkel.org](Copernicacom/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
-    [![Retailtrends](Copernicacom/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")
-    [![Etailtrends](Copernicacom/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")
-    [![Karelgeenen.nl](Copernicacom/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")
+    Magazine](../images/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")
+    [![Thuiswinkel.org](../images/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
+    [![Retailtrends](../images/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")
+    [![Etailtrends](../images/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")
+    [![Karelgeenen.nl](../images/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")
     [![Adformatie
-    Groep](Copernicacom/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
+    Groep](../images/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
 -   Copernica partners
-    [![Redhotminute](Copernicacom/redhotminute.png)](http://www.redhotminute.com "Redhotminute")
+    [![Redhotminute](../images/redhotminute.png)](http://www.redhotminute.com "Redhotminute")
     [![JWB Creatieve
-    Communicatie](Copernicacom/jwb-creative-communicatie.png)](http://www.jwbcom.nl "JWB Creatieve Communicatie")
-    [![Arlanet](Copernicacom/arlanet.png)](http://www.arlanet.com "Arlanet")
-    [![Anchormen](Copernicacom/anchormen.png)](http://www.anchormen.nl "Anchormen")
-    [![eFusion](Copernicacom/efusion.png)](http://www.efusion.eu "eFusion")
+    Communicatie](../images/jwb-creative-communicatie.png)](http://www.jwbcom.nl "JWB Creatieve Communicatie")
+    [![Arlanet](../images/arlanet.png)](http://www.arlanet.com "Arlanet")
+    [![Anchormen](../images/anchormen.png)](http://www.anchormen.nl "Anchormen")
+    [![eFusion](../images/efusion.png)](http://www.efusion.eu "eFusion")
     [![Gracious
-    Studios](Copernicacom/gracious.png)](http://www.graciousstudios.nl "Gracious Studios")
+    Studios](../images/gracious.png)](http://www.graciousstudios.nl "Gracious Studios")
     [![ISM
-    eCompany](Copernicacom/ism-ecompany.png)](http://www.ism.nl "ISM eCompany")
-    [![Cream](Copernicacom/cream.png)](http://www.cream.nl "Cream")
-    [![Bookerz](Copernicacom/bookerz.png)](http://www.bookerz.nl "Bookerz")
+    eCompany](../images/ism-ecompany.png)](http://www.ism.nl "ISM eCompany")
+    [![Cream](../images/cream.png)](http://www.cream.nl "Cream")
+    [![Bookerz](../images/bookerz.png)](http://www.bookerz.nl "Bookerz")
     [![Perfect
-    Groep](Copernicacom/perfectgroep.png)](http://www.perfectgroep.nl "Perfect Groep")
+    Groep](../images/perfectgroep.png)](http://www.perfectgroep.nl "Perfect Groep")
     [![Aan
-    Zee](Copernicacom/aan-zee.png)](http://www.aanzee.nl "Aan Zee")
+    Zee](../images/aan-zee.png)](http://www.aanzee.nl "Aan Zee")
     [![Invest
-    Online](Copernicacom/invest-online.png)](http://www.investonline.nl "Invest Online")
+    Online](../images/invest-online.png)](http://www.investonline.nl "Invest Online")
     [![Easy Internet
-    Marketing](Copernicacom/easy-internet.png)](http://www.easy.nl "Easy Internet Marketing")
+    Marketing](../images/easy-internet.png)](http://www.easy.nl "Easy Internet Marketing")
     [![Email
-    Enzo](Copernicacom/emailenzo.png)](http://www.emailenzo.com "Email Enzo")
-    [![Leaseweb](Copernicacom/leaseweb.png)](http://www.leaseweb.com "Leaseweb")
-    [![Qamel](Copernicacom/qamel.png)](http://www.qamel.nl/english "Qamel")
-    [![TriMM](Copernicacom/trimm.png)](http://www.trimm.nl "TriMM")
+    Enzo](../images/emailenzo.png)](http://www.emailenzo.com "Email Enzo")
+    [![Leaseweb](../images/leaseweb.png)](http://www.leaseweb.com "Leaseweb")
+    [![Qamel](../images/qamel.png)](http://www.qamel.nl/english "Qamel")
+    [![TriMM](../images/trimm.png)](http://www.trimm.nl "TriMM")
     [![Xplore
-    Group](Copernicacom/xplore-group.png)](http://www.xploregroup.be "Xplore Group")
+    Group](../images/xplore-group.png)](http://www.xploregroup.be "Xplore Group")
     [Ook sponsor
     worden?](http://www.copernica.com/nl/ondersteuning/copernica-summit/copernica-partners "Ook sponsor worden?")
 
@@ -57,7 +57,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Emiel                              | ### Emiel Bruijntjes                 |
-| Bruijntjes](Copernicacom/emiel-bruij |                                      |
+| Bruijntjes](../images/emiel-bruij |                                      |
 | ntjes-summit.png)                    | Emiel Bruijntjes is co-founder and   |
 |                                      | owner of Copernica Marketing         |
 |                                      | Software. Before he co-founded       |
@@ -91,7 +91,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Jamie                              | ### Jamie Turner                     |
-| Turner](Copernicacom/jamie-turner.pn |                                      |
+| Turner](../images/jamie-turner.pn |                                      |
 | g)                                   | Jamie Turner is an author, speaker   |
 |                                      | and the CEO of 60 Second             |
 |                                      | Communications, a full-service       |
@@ -131,7 +131,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Tamar van de                       | ### Tamar van de Paal                |
-| Paal](Copernicacom/tamar-van-de-paal |                                      |
+| Paal](../images/tamar-van-de-paal |                                      |
 | .png)                                | Tamar van de Paal is the current     |
 |                                      | Country Marketing Manager Benelux at |
 |                                      | Google. He is an international       |
@@ -158,7 +158,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Jorij                              | ### Jorij Abraham                    |
-| Abraham](Copernicacom/jorij-abraham. |                                      |
+| Abraham](../images/jorij-abraham. |                                      |
 | png)                                 | Jorij Abraham was eCommerce manager  |
 |                                      | at the Bijenkorf, TUI and online     |
 |                                      | publisher Sanoma Media. From 2010    |
@@ -189,7 +189,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Bart van de                        | ### Bart van de Biezen               |
-| Biezen](Copernicacom/bart-van-de-bie |                                      |
+| Biezen](../images/bart-van-de-bie |                                      |
 | zen.png)                             | Bart van de Biezen is very           |
 |                                      | passionate about design and user     |
 |                                      | friendliness. We are becoming        |
@@ -216,7 +216,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Zakaria                            | ### Zakaria Amlal                    |
-| Amlal](Copernicacom/zakaria-amlal.pn |                                      |
+| Amlal](../images/zakaria-amlal.pn |                                      |
 | g)                                   | Zakaria Amlal is a passionate        |
 |                                      | entrepreneur. His will, drive and    |
 |                                      | passion for the trade provide him    |
@@ -241,7 +241,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Jurjen                             | ### Jurjen Jongejan                  |
-| Jongejan](Copernicacom/jurjen-jongej |                                      |
+| Jongejan](../images/jurjen-jongej |                                      |
 | an.png)                              | Jurjen is an online marketing        |
 |                                      | professional and has over 10 years   |
 |                                      | of experience in the field of        |
@@ -268,7 +268,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Oskar van                          | ### Oskar van Straaten               |
-| Straaten](Copernicacom/oskar-van-str |                                      |
+| Straaten](../images/oskar-van-str |                                      |
 | aaten.png)                           | After finishing his study of         |
 |                                      | Agricultural Marketing at the Van    |
 |                                      | Hall Larenstein University, Oskar    |
@@ -300,7 +300,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Jeroen                             | ### Jeroen Ederveen                  |
-| Ederveen](Copernicacom/jeroen-ederve |                                      |
+| Ederveen](../images/jeroen-ederve |                                      |
 | en.png)                              | Jeroen Ederveen works as a Senior    |
 |                                      | Online Marketing Specialist at Exact |
 |                                      | International. He focuses primarily  |
@@ -320,7 +320,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![PK                                 | ### PK Vaish                         |
-| Vaish](Copernicacom/pk-vaish-large.p |                                      |
+| Vaish](../images/pk-vaish-large.p |                                      |
 | ng)                                  | With over 20 years retail            |
 |                                      | experience, PK sought to combine his |
 |                                      | knowledge and expertise with an      |
@@ -352,7 +352,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Edoardo                            | ### Edoardo Abis                     |
-| Abis](Copernicacom/edoardo-abis.png) |                                      |
+| Abis](../images/edoardo-abis.png) |                                      |
 |                                      | I'm the Head of Manchester United    |
 |                                      | Soccer Schools which is operated     |
 |                                      | under license by Nike. MUSS delivers |
@@ -384,7 +384,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Hans Anton                         | ### Hans Anton Verschoor             |
-| Verschoor](Copernicacom/hans-anton-v |                                      |
+| Verschoor](../images/hans-anton-v |                                      |
 | erschoor.png)                        | Hans Anton is co-founder of full     |
 |                                      | service internet agency Redhotminute |
 |                                      | and has an extensive knowledge on    |
@@ -407,7 +407,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Frank                              | ### Frank Damshuiser                 |
-| Damshuiser](Copernicacom/frank-damsh |                                      |
+| Damshuiser](../images/frank-damsh |                                      |
 | uiser.png)                           | Frank Damshuiser is a Senior Online  |
 |                                      | Marketing Consultant at eCommerce    |
 |                                      | agency ISM eCompany. His work        |
@@ -428,7 +428,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Michiel van                        | ### Michiel van Delden               |
-| Delden](Copernicacom/michiel-van-del |                                      |
+| Delden](../images/michiel-van-del |                                      |
 | den.png)                             | After finishing his study at the     |
 |                                      | Erasmus University of Rotterdam,     |
 |                                      | Michiel started working at Perfect   |
@@ -453,7 +453,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Tim                                | ### Tim Bijvank                      |
-| Bijvank](Copernicacom/tim-bijvank.pn |                                      |
+| Bijvank](../images/tim-bijvank.pn |                                      |
 | g)                                   | Tim Bijvank graduated as a           |
 |                                      | commmunication expert in the field   |
 |                                      | of New Media & Digital Culture. He   |
@@ -476,7 +476,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Laurens-Jan                        | ### Laurens-Jan Derijks              |
-| Derijks](Copernicacom/laurens-jan-de |                                      |
+| Derijks](../images/laurens-jan-de |                                      |
 | rijks.png)                           | Laurens-Jan Derijks or Enzo Postino; |
 |                                      | a thoroughbred email marketeer,      |
 |                                      | advises, devises, designs, develops  |
@@ -498,7 +498,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Josine                             | ### Josine Vos                       |
-| Vos](Copernicacom/josine-vos.png)    |                                      |
+| Vos](../images/josine-vos.png)    |                                      |
 |                                      | Josine Vos is an email marketing     |
 |                                      | specialist at full service internet  |
 |                                      | agency Redhotminute. In this role    |
@@ -522,7 +522,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Ruben van                          | ### Ruben van Eijk                   |
-| Eijk](Copernicacom/ruben-van-eijk.pn |                                      |
+| Eijk](../images/ruben-van-eijk.pn |                                      |
 | g)                                   | Ruben van Eijk is a Digital          |
 |                                      | Marketing Strategist at full service |
 |                                      | internet agency Redhotminute. Ruben  |
@@ -542,7 +542,7 @@ Speakers
 |                                      | dhotminute.com)                      |
 +--------------------------------------+--------------------------------------+
 | ![José de                            | ### José de Kroon                    |
-| Kroon](Copernicacom/jose-de-kroon.pn |                                      |
+| Kroon](../images/jose-de-kroon.pn |                                      |
 | g)                                   | José de Kroon is a Visual Designer   |
 |                                      | at full service internet agency      |
 |                                      | Redhotminute. José knows how to      |
@@ -590,7 +590,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Wim                                | ### Wim Nomen                        |
-| Nomen](Copernicacom/wim-nomen.png)   |                                      |
+| Nomen](../images/wim-nomen.png)   |                                      |
 |                                      | Wim Nomen has been working at Easy   |
 |                                      | Internet Marketing for over 5 years  |
 |                                      | and got addicted to the world of     |
@@ -612,7 +612,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Paula                              | ### Paula Heesbeen                   |
-| Heesbeen](Copernicacom/paula-heesbee |                                      |
+| Heesbeen](../images/paula-heesbee |                                      |
 | n.png)                               | From content marketing to data       |
 |                                      | analysis and search engine           |
 |                                      | marketing, Paula loves spending her  |
@@ -637,7 +637,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Patrick                            | ### Patrick Helmer                   |
-| Helmer](Copernicacom/patrick-helmer. |                                      |
+| Helmer](../images/patrick-helmer. |                                      |
 | png)                                 | Patrick graduated as a business      |
 |                                      | theorist at the Vrije Universiteit   |
 |                                      | of Amsterdam. He has been an         |
@@ -655,7 +655,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Paul de                            | ### Paul de Metter                   |
-| Metter](Copernicacom/paul-de-metter. |                                      |
+| Metter](../images/paul-de-metter. |                                      |
 | png)                                 | Paul de Metter is director and owner |
 |                                      | of Arlanet, a fast growing software  |
 |                                      | organization that focuses on the     |
@@ -677,7 +677,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Rutger                             | ### Rutger Wetzels                   |
-| Wetzels](Copernicacom/rutger-wetzels |                                      |
+| Wetzels](../images/rutger-wetzels |                                      |
 | .png)                                | Rutger Wetzels is managing partner   |
 |                                      | at Anchormen and responsible for     |
 |                                      | Marketing and Sales. He coordinates  |
@@ -702,7 +702,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Jurgen                             | ### Jurgen Wesel                     |
-| Wesel](Copernicacom/jurgen-wesel-boo |                                      |
+| Wesel](../images/jurgen-wesel-boo |                                      |
 | kerz.png)                            | After working within the IT-sector   |
 |                                      | for over 15 years, Jurgen decided to |
 |                                      | step over to marketing communication |
@@ -726,7 +726,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Bert-Jan van                       | ### Bert-Jan van Rein                |
-| Rein](Copernicacom/bert-jan-van-rijn |                                      |
+| Rein](../images/bert-jan-van-rijn |                                      |
 | .png)                                | Bert-Jan van Rein is considered by   |
 |                                      | many as an email marketing guru.     |
 |                                      | After his study of business          |
@@ -752,7 +752,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Edward                             | ### Edward Touw                      |
-| Touw](Copernicacom/edward-touw.png)  |                                      |
+| Touw](../images/edward-touw.png)  |                                      |
 |                                      | As an online marketer at Copernica,  |
 |                                      | one of Edward’s responsibilities is  |
 |                                      | to inform users about the            |
@@ -776,7 +776,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Wouter                             | ### Wouter Wensing                   |
-| Wensing](Copernicacom/wouter-wensing |                                      |
+| Wensing](../images/wouter-wensing |                                      |
 | .png)                                | Wouter Wensing is an online marketer |
 |                                      | at the ecommerce agency ISM          |
 |                                      | eCompany. He is primarily focused on |
@@ -796,7 +796,7 @@ Speakers
 
 +--------------------------------------+--------------------------------------+
 | ![Suraj                              | ### Suraj Sanchit                    |
-| Sanchit](Copernicacom/suraj-sanchit. |                                      |
+| Sanchit](../images/suraj-sanchit. |                                      |
 | png)                                 | Suraj Sanchit is Creative Director   |
 |                                      | at Gracious Studios. Suraj is a      |
 |                                      | genuine generalist. At Gracious      |
@@ -821,7 +821,7 @@ Moderator
 
 +--------------------------------------+--------------------------------------+
 | ![Michael                            | ### Michael Straathof                |
-| Straathof](Copernicacom/michael-stra |                                      |
+| Straathof](../images/michael-stra |                                      |
 | athof.png)                           | Michael Straathof, Sr. Consultant    |
 |                                      | and partner at                       |
 |                                      | [Borgers&Straathof](http://www.borge |

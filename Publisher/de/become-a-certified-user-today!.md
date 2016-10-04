@@ -3,7 +3,7 @@ erhalten dafür die Auszeichnung “Zertifizierter Benutzer”! Es gibt zwei
 Tests zur Auswahl: Fundamental und Advanced.
 
 [![Congratulations
-Certification](Copernicacom/CongratulationsFundamental.png)](https://www.copernica.com/de/support/copernica-training "Training Copernica")
+Certification](../images/CongratulationsFundamental.png)](https://www.copernica.com/de/support/copernica-training "Training Copernica")
 
 Vorteile einer Zertifizierung
 -----------------------------
@@ -36,8 +36,8 @@ Wie werde ich zertifizierter Benutzer?
 Sie erhalten das Zertifikat, indem Sie den Test bestehen. Um daran
 teilzunehmen, klicken Sie einfach auf eines der beiden Bilder.
 
-[![](Copernicacom/certified-fundamental-user.png)](https://training.copernica.com/AnmeldungTest_DE "participate in a test")
-![](Copernicacom/certified-advanced-user.png)
+[![](../images/certified-fundamental-user.png)](https://training.copernica.com/AnmeldungTest_DE "participate in a test")
+![](../images/certified-advanced-user.png)
 
 Der Inhalt der beiden Tests basiert auf unseren
 [Schulungen](https://www.copernica.com/de/support/copernica-training "Schulungen")

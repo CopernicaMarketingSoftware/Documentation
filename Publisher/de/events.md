@@ -20,113 +20,94 @@ Copernica Event Kalender 2015
 
 September
 
-  ------------------------ ------------------------ ------------------------
-  SEP                      ![](DE/scd_logo.png)     **Shopware Community
-  04                                                Day**\
-                                                     Messe\
-                                                    [Mehr
-                                                    Informationen](https://s
-                                                    cd.shopware.com/#scd--1)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  SEP                      ![](../images/scd_logo.png)           **Shopware Community
+  04                                                             Day**\
+                                                                  Messe\
+                                                                 [Mehr
+                                                                 Informationen](https://scd.shopware.com/#scd--1)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  SEP                      ![](Copernicacom/event-w **Fundamental
-  11                       ebinar.jpg)              Training**\
-                                                     Webinar\
-                                                    [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  SEP                      ![](../images/event-webinar.jpg)      **Fundamental
+  11                                                             Training**\
+                                                                  Webinar\
+                                                                 [Mehr
+                                                                 Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  SEP                      ![](Copernicacom/dm-exco **dmexco**\
-  16                       -event.jpg)               Messe\
-                                                    [Mehr
-                                                    Informationen](http://dm
-                                                    exco.de/)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  SEP                      ![](../images/dm-exco-event.jpg)     **dmexco**\
+  16                                                             Messe\
+                                                                 [Mehr
+                                                                 Informationen](http://dmexco.de/)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  SEP                      ![](Copernicacom/dm-exco **dmexco**\
-  17                       -event.jpg)               Messe\
-                                                    [Mehr
-                                                    Informationen](http://dm
-                                                    exco.de/)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  SEP                      ![](../images/dm-exco-event.jpg)     **dmexco**\
+  17                                                             Messe\
+                                                                 [Mehr
+                                                                 Informationen](http://dmexco.de/)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  SEP                      ![](Copernicacom/event-w **Advanced Training**\
-  25                       ebinar.jpg)               Webinar\
-                                                    [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  SEP                      ![](../images/event-webinar.jpg)      **Advanced Training**\
+  25                                                             Webinar\
+                                                                 [Mehr
+                                                                 Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
  
 
 OKTOBER
 
-  ------------------------ ------------------------ ------------------------
-  OKT                      ![](Copernicacom/event-t **Fundamental
-  8                        raining.jpg)             training**\
-                                                     Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  OKT                      ![](../images/event-training.jpg)    **Fundamental
+  8                                                             training**\
+                                                                Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  OKT                      ![](Copernicacom/event-t **Advanced training**\
-  15                       raining.jpg)              Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  OKT                      ![](../images/event-training.jpg)    **Advanced training**\
+  15                                                            Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
 NOVEMBER
 
-  ------------------------ ------------------------ ------------------------
-  NOV                      ![](Copernicacom/event-t **Fundamental
-  12                       raining.jpg)             training**\
-                                                     Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  NOV                      ![](../images/event-training.jpg)    **Fundamental
+  12                                                            training**\
+                                                                Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  NOV                      ![](Copernicacom/event-t **Advanced training**\
-  19                       raining.jpg)              Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  NOV                      ![](../images/event-training.jpg)    **Advanced training**\
+  19                                                            Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
 DEZEMBER
 
-  ------------------------ ------------------------ ------------------------
-  DEZ                      ![](Copernicacom/event-t **Fundamental
-  10                       raining.jpg)             training**\
-                                                     Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  DEZ                      ![](../images/event-training.jpg)    **Fundamental
+  10                                                            training**\
+                                                                Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
-  ------------------------ ------------------------ ------------------------
-  DEZ                      ![](Copernicacom/event-t **Advanced training**\
-  17                       raining.jpg)              Online Webinar\
-                                                     [Mehr
-                                                    Informationen](https://w
-                                                    ww.copernica.com/de/supp
-                                                    ort/copernica-training)
-  ------------------------ ------------------------ ------------------------
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
+  DEZ                      ![](../images/event-training.jpg)    **Advanced training**\
+  17                                                            Online Webinar\
+                                                                 [Mehr
+                                                                Informationen](https://www.copernica.com/de/support/copernica-training)
+  ------------------------ ------------------------------------ -----------------------------------------------------------------------
 
 

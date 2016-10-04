@@ -20,4 +20,4 @@ verschiedenen E-Mail-Programmen. So sehen Sie Previews unter anderem in:
 Die Litmus-Integration ist innerhalb Copernica einfach zu bedienen. Mit
 nur einem einzigen Klick erhalten Sie diese verschiedenen Previews.
 
-![litmus logo](Copernicacom/litmus-logo.png)
+![litmus logo](../images/litmus-logo.png)

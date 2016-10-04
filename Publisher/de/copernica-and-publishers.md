@@ -46,7 +46,7 @@ Einige unserer Kunden
 
 > "Copernica bietet dem Anwender ein hohes Maß an Selbständigkeit.
 > Daneben ist Copernica stehts offen für Fragen und Vorschläge aus dem
-> Kundenkreis." ![](testimonials/dezaak.png)
+> Kundenkreis." ![](../images/dezaak.png)
 >
 > \
 > **De Zaak**\
@@ -54,7 +54,7 @@ Einige unserer Kunden
 
 > "Copernica bietet viele Möglichkeiten im Bereich E-Mailings,
 > CRM-Funktionalitäten und dem Aufbau von Webformularen mit
-> automatischen Follow-Up-Kampagnen." ![](testimonials/mtmediagroep.png)
+> automatischen Follow-Up-Kampagnen." ![](../images/mtmediagroep.png)
 >
 > \
 > **MT MediaGroep**\

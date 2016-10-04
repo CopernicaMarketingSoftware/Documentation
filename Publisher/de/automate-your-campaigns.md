@@ -20,7 +20,7 @@ ein Kunde ein Produkt in Ihrem Webshop kauft, schicken Sie ihm dann
 automatisch z. B. einen Tag später eine Produktbeschreibung per E-Mail.
 
 ![Regeln Sie Folgeaktionen mit dem
-Follow-up-Manager](Copernicacom/de-follow-up-actions-email.png)
+Follow-up-Manager](../images/de-follow-up-actions-email.png)
 
 Verwenden Sie den Follow-up-Manager, um zu entscheiden was Copernica tun
 soll:

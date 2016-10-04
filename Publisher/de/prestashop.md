@@ -8,12 +8,12 @@ sein. Nachdem Sie die Prestashop-Integration installiert haben, können
 Sie automatisch alle Daten aus Ihrem Prestashop-Webshop mit Copernica
 synchronisieren.
 
-![prestashop logo](Copernicacom/prestashop-logo.png)
+![prestashop logo](../images/prestashop-logo.png)
 
 -   **Developed by:**[Nokéweb](http://www.nokeweb.com/ "Nokeweb")
 -   **Version:** 1.5
 -   **License:** OSL
--   [Download](Copernicacom/copernica-prestashop.zip "Download Prestashop integratie voor Copernica Marketing Software")
+-   [Download](../downloads/copernica-prestashop.zip "Download Prestashop integratie voor Copernica Marketing Software")
 
 ### Konfiguration:
 

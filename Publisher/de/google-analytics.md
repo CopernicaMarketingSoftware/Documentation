@@ -10,7 +10,7 @@ E-Mail-Kampagne am besten zu Ihren Beziehungen passt.
 Warum sollte ich Hyperlinks für Google Analytics verschlüsseln?
 ---------------------------------------------------------------
 
-![google analytics logo](Copernicacom/google-analytics-logo.png)Viele
+![google analytics logo](../images/google-analytics-logo.png)Viele
 Händler nutzen Google Analytics als Statistikpaket für ihre Webseite.
 Google Analytics ist kostenlos, bietet jedoch eine große Menge an
 Informationen und eine Vielzahl von Funktionen. Durch die Ergänzung von
@@ -33,7 +33,7 @@ Inhaltselement wird Ihnen dabei helfen festzustellen, was am besten
 funktioniert.
 
 ![Google UTM tags toevoegen in
-Copernica](Copernicacom/nl-google-analytics-tagging.png)
+Copernica](../images/nl-google-analytics-tagging.png)
 
 Wo kann ich meine Ergebnisse finden?
 ------------------------------------
@@ -44,7 +44,7 @@ finden Sie den Namen der im Hyperlink genutzten Kampagne (in diesem
 Beispiel „Newsletter-apr-2011“). Es ist möglich, die Ergebnisse von dort
 nach Quelle, Medium und Inhaltselement zu spezifizieren.
 
-![google analytics logo](Copernicacom/google-analytics-logo.png)
+![google analytics logo](../images/google-analytics-logo.png)
 
 Die Integration Google Analytics kann nicht heruntergeladen werden, ist
 jedoch kostenlos für alle Benutzer der Copernica Marketing Software.
