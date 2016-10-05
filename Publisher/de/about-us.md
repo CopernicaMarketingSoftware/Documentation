@@ -18,7 +18,7 @@ Copernica BV
     [Webseiten](http://www.copernica.com/de/funktionen/webseiten "Webseiten"),
     [mobile](http://www.copernica.com/de/funktionen/handy "Mobilen") und
     [automatisierte
-    Kampagnen](./emailings.md/automatisieren-sie-ihre-kampagnen "automatisierte Kampagnen")
+    Kampagnen](./automate-your-campaigns.md "automatisierte Kampagnen")
 -   2001 gegründet
 -   Inhabergeführtes Unternehmen
 -   Hauptsitz in den

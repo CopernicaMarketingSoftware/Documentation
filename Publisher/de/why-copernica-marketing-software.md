@@ -20,10 +20,10 @@ Copernica ist die leistungsstarke Software für
 -   [Prepaid-Pakete](#bundles)
 -   [Wir stehen für Transparenz](#transparent)
 
-![Copernica Marketing Software](Copernicacom/copernica-icons-de.jpg)
+![Copernica Marketing Software](../images/copernica-icons-de.jpg)
 
   ----------------------------------------------------------------------------- --------------------------------------------------------------------------- ------------------------------------------------------------------------------
-  ![Copernica Marketing Software](Copernicacom/copernica-screenshot-left.jpg)   ![Copernica Marketing Software](Copernicacom/copernica-screenshot-de.jpg)   ![Copernica Marketing Software](Copernicacom/copernica-screenshot-right.jpg)
+  ![Copernica Marketing Software](../images/copernica-screenshot-left.jpg)   ![Copernica Marketing Software](../images/copernica-screenshot-de.jpg)   ![Copernica Marketing Software](../images/copernica-screenshot-right.jpg)
   ----------------------------------------------------------------------------- --------------------------------------------------------------------------- ------------------------------------------------------------------------------
 
 [](#marketingsuite)
@@ -66,9 +66,9 @@ editor.
     eigenen Konten innerhalb der Software.
 
 [![Probieren Sie es aus. Gratis!
-](Copernicacom/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
+](../images/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
 ![Automate your campaigns with the follow up
-manager](Copernicacom/de-follow-up-manager-thumb.png)
+manager](../images/de-follow-up-manager-thumb.png)
 
 2. Erlaubt Ihnen Kampagnen zu automatisieren
 --------------------------------------------
@@ -83,7 +83,7 @@ in Ihrem Shop.
 Kampagnen](./automate-your-campaigns.md "Lesen Sie mehr über die Automation Ihrer Kampagnen")
 
 ![Copernica integrates well with other
-systems](Copernicacom/copernica-integrations-thumb.png)
+systems](../images/copernica-integrations-thumb.png)
 
 3. Lässt sich leicht an andere Systeme anbinden
 -----------------------------------------------
@@ -108,7 +108,7 @@ Integrationen](./integrations.md "Lesen Sie mehr über unsere Integrationen")
 -----------------------------------------
 
 ![Advanced selections with multidimensional
-databases](Copernicacom/de-field-conditions-thumb.png)
+databases](../images/de-field-conditions-thumb.png)
 
 Mit Copernicas Auswahlen strukturieren Sie Ihre Datenbank leichter den
 je. Nutzen Sie die Auswahlen, um die Qualität Ihrer Datenbank zu
@@ -127,10 +127,10 @@ arbeiten.
 [Lesen Sie mehr über Auswahlen](./define-target-groups-with-selections.md "Lesen Sie mehr über Auswahlen")
 
 [![Probieren Sie es aus. Gratis!
-](Copernicacom/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
+](../images/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
 
 ![Powerful personalization
-options](Copernicacom/en-powerful-personalization-thumb.png)
+options](../images/en-powerful-personalization-thumb.png)
 
 5. Leistungsstarke Personalisierungsmöglichkeiten mit Copernica
 ---------------------------------------------------------------
@@ -150,7 +150,7 @@ Copernica](./create-clever-emailings.md "Lesen Sie mehr über die Personalisieru
 ---------------------------------
 
 ![Excellent email deliverability with
-Copernica](Copernicacom/de-deliverability-checker-thumb.png)
+Copernica](../images/de-deliverability-checker-thumb.png)
 
 Copernica gewährleistet Ihnen zu jederzeit eine optimale Zustellung. Die
 Software kontrolliert Ihre E-Mailings bereits beim Erstellen automatisch
@@ -175,7 +175,7 @@ richtig eingestellt sind.
 Copernica](./deliverability-better-email-delivery-with-copernica.md "Lesen Sie mehr über die Zustellbarkeit mit Copernica")
 
 [![Probieren Sie es aus. Gratis!
-](Copernicacom/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
+](../images/de-wide-layout-call-to-action.png)](http://www.copernica.com/de/copernica-testen "Probieren Sie es aus. Gratis! ")
 
 -   8. Wir bieten Ihnen exzellenten Support
     ---------------------------------------
@@ -225,36 +225,36 @@ Sie sich unsere Produkt-Updates an.
 Besides the Copernica Marketing Software, the Copernica R&D team also
 develops ready-made on-premise, hybride and SaaS solutions.
 
-[![AMQPipe](articlesblog/box-amqpipe.png)](https://www.amqpipe.com "AMQPipe")
+[![AMQPipe](../images/box-amqpipe.png)](https://www.amqpipe.com "AMQPipe")
 
 [www.amqpipe.com](https://www.amqpipe.com "AMQPipe")
 
-[![MailerQ](articlesblog/box-mailerq.png)](https://www.mailerq.com "MailerQ")
+[![MailerQ](../images/box-mailerq.png)](https://www.mailerq.com "MailerQ")
 
 [www.mailerq.com](https://www.mailerq.com "MailerQ")
 
-[![PHPCPP](articlesblog/box-phpcpp.png)](http://www.phpcpp.com "PHPCPP")
+[![PHPCPP](../images/box-phpcpp.png)](http://www.phpcpp.com "PHPCPP")
 
 [www.phpcpp.com](http://www.phpcpp.com "PHPCPP")
 
-[![PHPJS](articlesblog/box-phpjs.png)](http://www.php-js.com "PHPJS")
+[![PHPJS](../images/box-phpjs.png)](http://www.php-js.com "PHPJS")
 
 www.phpjs.com
 
-[![ResponsiveEmail.com](articlesblog/box-responsive-email.png)](https://www.responsiveemail.com "ResponsiveEmail.com")
+[![ResponsiveEmail.com](../images/box-responsive-email.png)](https://www.responsiveemail.com "ResponsiveEmail.com")
 
 [www.responsiveemail.com](https://www.responsiveemail.com "ResponsiveEmail.com")
 
-[![SMTPeter](articlesblog/box-smtpeter.png)](https://www.smtpeter.com "SMTPeter")
+[![SMTPeter](../images/box-smtpeter.png)](https://www.smtpeter.com "SMTPeter")
 
 [www.smtpeter.com](https://www.smtpeter.com "SMTPeter")
 
 [![Video
-thumbnail](articlesblog/box-videothumbnail.png)](https://www.video-thumbnail.com "Video thumbnail")
+thumbnail](../images/box-videothumbnail.png)](https://www.video-thumbnail.com "Video thumbnail")
 
 [www.video-thumbnail.com](https://www.video-thumbnail.com/ "Video thumbnail")
 
-[![Yothalot](articlesblog/box-yothalot.png)](http://www.yothalot.com "Yothalot")
+[![Yothalot](../images/box-yothalot.png)](http://www.yothalot.com "Yothalot")
 
 www.yothalot.com
 

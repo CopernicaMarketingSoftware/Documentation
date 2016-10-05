@@ -1,4 +1,4 @@
-[![](EventsNL/headersummit2015.jpg)](./copernica-summit.md)
+[![](../images/headersummit2015.jpg)](./copernica-summit.md)
 
 [Programma](https://www.copernica.com/nl/copernica-summit/programma-copernica-summit "Copernica Summit programma")
 
