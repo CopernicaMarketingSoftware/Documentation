@@ -41,7 +41,7 @@ Einige unserer Kunden
 
 > "Mit Copernica können wir alle unsere Immobilienprojekte in einer
 > zentralen Datenbank übersichtlich speichern und verwalten."
-> ![](testimonials/asr.png)
+> ![](../images/asr.png)
 >
 > \
 > **ASR Vastgoed**\

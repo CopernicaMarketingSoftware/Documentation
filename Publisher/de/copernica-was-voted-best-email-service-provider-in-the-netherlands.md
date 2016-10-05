@@ -9,7 +9,7 @@ Niederlanden platziert ist. Natürlich sind wir dieses Jahr sehr stolz,
 den Preis als bester ESP bereits zum zweiten Mal zu gewinnen!
 
 ![Copernica gewinnt den Preis als bester E-Mail Service Provider in den
-Niederlanden](Copernicacom/top100-notering.jpg "Copernica gewinnt den Preis als bester E-Mail Service Provider in den Niederlanden")
+Niederlanden](../images/top100-notering.jpg "Copernica gewinnt den Preis als bester E-Mail Service Provider in den Niederlanden")
 
 Belohnung für harte Arbeit
 --------------------------

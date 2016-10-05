@@ -13,23 +13,23 @@ inspiring and great day! Want to join too? http://bit.ly/QhFXHy
 
 Share
 
-![Share on Twitter](Copernicacom/twitter_16.png) Twitter ![Share on
-LinkedIn](Copernicacom/linkedin_16.png)LinkedIn ![Share on
-FaceBook](Copernicacom/facebook_16.png) Facebook
+![Share on Twitter](../images/twitter_16.png) Twitter ![Share on
+LinkedIn](../images/linkedin_16.png)LinkedIn ![Share on
+FaceBook](../images/facebook_16.png) Facebook
 
 Mediapartners
 -------------
 
   -------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------
-  [![Marketingtribune](Copernicacom/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")   [![E-shop Expo](Copernicacom/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")   [![MarketingFacts](Copernicacom/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")   [![Management Team](Copernicacom/mediapartner-mt.png)](http://www.mt.nl "Management Team")
+  [![Marketingtribune](../images/mediapartner-marketingtribune.png)](http://www.marketingtribune.nl "Marketingtribune")   [![E-shop Expo](../images/mediapartner-eshop.png)](http://www.eshopexpo.eu/nl "E-shop Expo")   [![MarketingFacts](../images/mediapartner-marketingfacts.png)](http://www.marketingfacts.nl "MarketingFacts")   [![Management Team](../images/mediapartner-mt.png)](http://www.mt.nl "Management Team")
   -------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------
 
   ----------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------------
-  [![Sprout](Copernicacom/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")   [![Webwinkel Vakdagen](Copernicacom/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")   [![Twinkle Magazine](Copernicacom/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")   [![Thuiswinkel.org](Copernicacom/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
+  [![Sprout](../images/mediapartner-sprout.png)](http://www.sprout.nl/ "Sprout")   [![Webwinkel Vakdagen](../images/mediapartner-wwv.png)](http://www.webwinkelvakdagen.nl/nl "Webwinkel Vakdagen")   [![Twinkle Magazine](../images/mediapartner-twinkle.png)](http://twinklemagazine.nl "Twinkle Magazine")   [![Thuiswinkel.org](../images/mediapartner-thuiswinkel.png)](http://thuiswinkel.org "Thuiswinkel.org")
   ----------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------
-  [![Retailtrends](Copernicacom/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")   [![Etailtrends](Copernicacom/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")   [![Karelgeenen.nl](Copernicacom/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")   [![Adformatie Groep](Copernicacom/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
+  [![Retailtrends](../images/retailtrends.png)](http://www.retailnews.nl/retailtrends/ "Retailtrends")   [![Etailtrends](../images/etailtrends.png)](http://www.retailnews.nl/etailtrends/ "Etailtrends")   [![Karelgeenen.nl](../images/karel-geenen.png)](http://www.karelgeenen.nl "Karelgeenen.nl")   [![Adformatie Groep](../images/adfo-groep.png)](http://www.adformatie.nl "Adformatie Groep")
   --------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------
 
 Copernica Summit

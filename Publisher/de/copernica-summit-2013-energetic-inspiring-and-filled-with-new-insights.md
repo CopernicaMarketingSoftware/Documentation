@@ -20,7 +20,7 @@ just a few small changes is already enough to become succesful. \
 \
 
 ![Copernica Summit
-keynote](Copernicacom/copernica-summit-polar.jpg "Copernica Summit keynote")
+keynote](../images/copernica-summit-polar.jpg "Copernica Summit keynote")
 
 Next to Turner, there were four other keynote sessions during the
 afternoon. Zakaria Amlal of Gracious Studios presented the success case
@@ -40,7 +40,7 @@ email for mobile use and what steps you need to take and mind.\
 \
 
 ![Copernica Summit session
-full](Copernicacom/copernica-summit-session.jpg "Copernica Summit session full")
+full](../images/copernica-summit-session.jpg "Copernica Summit session full")
 
 The Copernica Summit was finally concluded with two inspiring sessions.
 Emiel Bruijntjes, CTO of Copernica Marketing Software presenterd
@@ -66,7 +66,7 @@ and innovations important for internet agencies.\
 \
 
 ![Copernica Summit certification in the
-morning](Copernicacom/copernica-summit-morning.jpg "Copernica Summit certification in the morning")
+morning](../images/copernica-summit-morning.jpg "Copernica Summit certification in the morning")
 
 During the user morning, Copernica users were able to attend several
 training sessions. In these sessions they got to see how they could get
@@ -84,7 +84,7 @@ partner network last year.\
 \
 
 ![ISM Copernica Partner of the
-Year](Copernicacom/ISM-partner-of-the-year.jpg "ISM Copernica Partner of the Year")
+Year](../images/ISM-partner-of-the-year.jpg "ISM Copernica Partner of the Year")
 
 When selecting the nominees and winner for the Copernica partner of the
 Year award, these are some of the factors that determine the nominees:

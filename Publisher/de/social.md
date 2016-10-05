@@ -10,7 +10,7 @@ Ihre neuesten Nachrichten oder Produkte an andere weiterleiten.
     --------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Social Media und Ihre
-    Kampagnen](Copernicacom/de-social-01-thumb.png "Social Media und Ihre Kampagnen")](./social-media-and-your-campaigns.md)
+    Kampagnen](../images/de-social-01-thumb.png "Social Media und Ihre Kampagnen")](./social-media-and-your-campaigns.md)
 
     Ermöglichen Sie es Ihren Kontakten, den Inhalt Ihrer E-Mailings oder
     Websites über Facebook, Twitter, Hyves oder ein anderes soziales
@@ -22,7 +22,7 @@ Ihre neuesten Nachrichten oder Produkte an andere weiterleiten.
     -----------------------------------------------------------------------------------------------------------------------------------------
 
     [![Integration mit social
-    Media](Copernicacom/de-social-02-thumb.png "Integration mit social Media")](./integration-with-social-media.md)
+    Media](../images/de-social-02-thumb.png "Integration mit social Media")](./integration-with-social-media.md)
 
     Copernica verfügt über verschiedene Integrationen von Social Media.
     So können Sie mit Hilfe dieser Integrationen, Daten von Facebook

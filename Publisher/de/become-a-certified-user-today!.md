@@ -3,7 +3,7 @@ erhalten dafür die Auszeichnung “Zertifizierter Benutzer”! Es gibt zwei
 Tests zur Auswahl: Fundamental und Advanced.
 
 [![Congratulations
-Certification](Copernicacom/CongratulationsFundamental.png)](https://www.copernica.com/de/support/copernica-training "Training Copernica")
+Certification](../images/CongratulationsFundamental.png)](https://www.copernica.com/de/support/copernica-training "Training Copernica")
 
 Vorteile einer Zertifizierung
 -----------------------------
@@ -14,18 +14,18 @@ es noch weitere Vorteile:
 -   Nach erfolgreicher Durchführung erhalten Sie ein offizielles
     Zertifikat und ein Siegel für Ihre Webseite
 
-[![](Copernicacom/Certificate.png)](https://pic.vicinity.nl/127/0/116687/certified-fundamental-user.png "Certify!")
+[![](../images/certified-fundamental-user.png "Certify!")
 
 -   Eine Zertifizierung ist eine großartige Bereicherung für Ihren
     (Online) Lebenslauf, z.B. auf Xing oder LinkedIn
 
 [![Certification
-Linkedin](Copernicacom/LinkedinCertification.jpg)](https://pic.vicinity.nl/127/0/121269/LinkedinCertification.jpg "Linkedin Copernica")
+Linkedin](../images/LinkedinCertification.jpg "Linkedin Copernica")
 
 -   Sie erhalten die Auszeichnung auch auf Twitter, unter
     [\#Certifriday](https://twitter.com/search?q=certifriday "Certifriday")
 
-[![Certifriday](articlesblog/Twitter_DE.png)](https://vicinity.picsrv.net/127/0/124419/Twitter_DE.png "Certifriday")
+[![Certifriday](../images/Twitter_DE.png "Certifriday")
 
 Die Teilnahme am Test ist kostenlos. Bereits mehr als 500 Benutzer haben
 diesen Test bestanden, jetzt sind Sie dran!
@@ -36,8 +36,8 @@ Wie werde ich zertifizierter Benutzer?
 Sie erhalten das Zertifikat, indem Sie den Test bestehen. Um daran
 teilzunehmen, klicken Sie einfach auf eines der beiden Bilder.
 
-[![](Copernicacom/certified-fundamental-user.png)](https://training.copernica.com/AnmeldungTest_DE "participate in a test")
-![](Copernicacom/certified-advanced-user.png)
+[![](../images/certified-fundamental-user.png)](https://training.copernica.com/AnmeldungTest_DE "participate in a test")
+![](../images/certified-advanced-user.png)
 
 Der Inhalt der beiden Tests basiert auf unseren
 [Schulungen](https://www.copernica.com/de/support/copernica-training "Schulungen")

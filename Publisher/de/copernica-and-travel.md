@@ -46,7 +46,7 @@ Einige unserer Kunden
 
 > "Mit der Marketing-Software von Copernica heben wir unser
 > E-Mail-Marketing auf ein höheres Niveau!
-> ![](testimonials/vliegtickets.png)
+> ![](../images/vliegtickets.png)
 >
 > \
 > **Vliegtickets.nl**\
@@ -55,7 +55,7 @@ Einige unserer Kunden
 > "Copernica bietet uns mehr Möglichkeiten im Bereich der
 > E-Mail-Marketingkampagnen und trägt zur Verbesserung unserer
 > Kundenkontakte und der Kundenzufriedenheit bei."
-> ![](testimonials/prijsvrij.png)
+> ![](../images/prijsvrij.png)
 >
 > \
 > **Prijsvrij.nl**\

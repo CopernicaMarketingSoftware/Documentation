@@ -9,7 +9,7 @@ Gezielt an Ihre Kontakte versenden
 ----------------------------------
 
 ![Zugespitzt versenden an Ihre
-Beziehungen](Copernicacom/de-sms-nachricht-versenden-01-thumb.png "Zugespitzt versenden an Ihre Beziehungen")
+Beziehungen](../images/de-sms-nachricht-versenden-01-thumb.png "Zugespitzt versenden an Ihre Beziehungen")
 
 Benutzen Sie die Auswahlmöglichkeiten, die Sie einfach in der
 Copernica-[Datenbank](./creating-your-own-databases.md "Erstellen Sie Ihre eigene Datenbank")
@@ -43,7 +43,7 @@ Sehen Sie sich die Resultate Ihres SMS-Mailings an
 --------------------------------------------------
 
 ![Sehen Sie sich die Resultaten Ihrer SMS-Mailing
-an](Copernicacom/de-sms-nachricht-versenden-02-thumb.png "Sehen Sie sich die Resultaten Ihrer SMS-Mailing an")
+an](../images/de-sms-nachricht-versenden-02-thumb.png "Sehen Sie sich die Resultaten Ihrer SMS-Mailing an")
 
 Nach dem Versand Ihrer SMS-Nachricht, erhalten Sie von Copernica einen
 geordneten Überblick über die Ergebnisse. Möchten Sie diese Ergebnisse

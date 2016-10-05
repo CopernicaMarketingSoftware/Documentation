@@ -37,7 +37,7 @@ Trainings werden Sie zudem Insider-Tipps und Best Practices lernen.
 
 +--------------------------------------+--------------------------------------+
 | ![Indyco                             | Das Fundamental Training gab einen   |
-| GmbH](Copernicacom/indyco.jpg "Indyc | wirklich guten Einblick in die Logik |
+| GmbH](../images/indyco.jpg "Indyc | wirklich guten Einblick in die Logik |
 | o GmbH")                             | der Software und die Potentiale der  |
 |                                      | abbildbaren Komplexität. Die oftmals |
 |                                      | bei Präsentationen anzutreffende     |
@@ -68,7 +68,7 @@ Um den Test zum zertifizierten Copernica Fundamental User abzulegen,
 müssen Sie sich nur hier auf der Website einloggen und ins Dashboard
 gehen. \
 [![Certified Fundamental
-User](Copernicacom/certified-fundamental-user.png "Certified Fundamental User")](https://www.copernica.com/de/dashboard)
+User](../images/certified-fundamental-user.png "Certified Fundamental User")](https://www.copernica.com/de/dashboard)
 
 Advanced Training
 -----------------
@@ -102,7 +102,7 @@ anpassen, viele weitere Themen.
 Um den Test zum zertifizierten Copernica Advanced User abzulegen, müssen
 Sie sich nur hier auf der Website einloggen und ins Dashboard gehen.\
 [![Certified Advanced
-User](Copernicacom/certified-advanced-user.png "Certified Advanced User")](https://www.copernica.com/de/dashboard)
+User](../images/certified-advanced-user.png "Certified Advanced User")](https://www.copernica.com/de/dashboard)
 
 Training in Ihrem Unternehmen
 -----------------------------

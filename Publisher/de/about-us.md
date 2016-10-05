@@ -4,7 +4,7 @@ Marketing](./emailings.md),
 [Webseiten](http://www.copernica.com/de/funktionen/webseiten "Webseiten"),
 [mobile](http://www.copernica.com/de/funktionen/handy "Mobile") und
 [automatisierte
-Kampagnen](./emailings.md/automatisieren-sie-ihre-kampagnen "automatisierte Kampagnen").
+Kampagnen](./automate-your-campaigns.md "automatisierte Kampagnen").
 Immer mehr Unternehmen nutzen die Copernica Marketing Software zur
 Generierung neuer Leads und um Kontakte und das Netzwerk zu informieren.
 Über 3500 Benutzer vertrauen täglich der Stärke und dem Erfolg der
@@ -18,7 +18,7 @@ Copernica BV
     [Webseiten](http://www.copernica.com/de/funktionen/webseiten "Webseiten"),
     [mobile](http://www.copernica.com/de/funktionen/handy "Mobilen") und
     [automatisierte
-    Kampagnen](./emailings.md/automatisieren-sie-ihre-kampagnen "automatisierte Kampagnen")
+    Kampagnen](./automate-your-campaigns.md "automatisierte Kampagnen")
 -   2001 gegründet
 -   Inhabergeführtes Unternehmen
 -   Hauptsitz in den

@@ -4,7 +4,7 @@ Hybris mit Copernica durch die Verwendung von Copernicas SOAP-API.
 Hierdurch halten Sie unter anderem Ihre Kundendaten auf dem neuesten
 Stand und können gezielte E-Mail-Kampagnen versenden.
 
-![hybris logo](Copernicacom/hybris-logo.png)
+![hybris logo](../images/hybris-logo.png)
 
 -   **Präsentiert von:**[Softlution Nederland
     BV](http://www.copernica.com/nl/partners/profile/4536494), [Bluedesk

@@ -9,7 +9,7 @@ Versenden Sie Ihre E-Mailing an eine Auswahl oder Ihre ganze Datenbank
 ----------------------------------------------------------------------
 
 ![Versenden Sie Ihre E-Mailing an eine Auswahl oder Ihre ganze
-Datenbank](Copernicacom/nl-send-to-target-groups-copernica.gif "Versenden Sie Ihre E-Mailing an eine Auswahl oder Ihre ganze Datenbank")
+Datenbank](../images/nl-send-to-target-groups-copernica.gif "Versenden Sie Ihre E-Mailing an eine Auswahl oder Ihre ganze Datenbank")
 
 Bestimmen Sie zuerst an wen Sie ein E-Mailing versenden. Richten Sie die
 Nachricht an Ihre gesamte Zielgruppe oder an eine Auswahl aus Ihrer

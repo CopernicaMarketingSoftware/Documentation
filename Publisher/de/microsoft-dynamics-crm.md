@@ -6,13 +6,13 @@ Marketingkampagnen in Copernica durchzuführen. Dank der Kombination
 zwischen Microsoft Dynamics und Copernica automatisieren und
 personalisieren Sie ganz einfach Ihre eigenen Marketingkampagnen.
 
-![ms dynamics logo](Copernicacom/ms-dynamics-logo.png)
+![ms dynamics logo](../images/ms-dynamics-logo.png)
 
 -   **Datum:** 23. Februar, 2012
 -   **Version:** Copernica Connector CRM2011
 -   **Lizenz:** €75 / Monat
 -   [User/Installation guide
-    (English)](Copernicacom/Copernica-Connector-CRM-Beta-English.pdf "User/Installation guide (English)")
+    (English)](../downloads/Copernica-Connector-CRM-Beta-English.pdf "User/Installation guide (English)")
 -   -   **Testlizenz beantragen:**info@triomis.de
 
 Über Microsoft Dynamics CRM

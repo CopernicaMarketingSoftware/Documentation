@@ -23,7 +23,7 @@ better than you do now. Furthermore, you will be able to become a
 certified Copernica user.\
 \
 ![Copernica Summit keynote
-morning](Copernicacom/copernica-summit-spreker.png "Copernica Summit keynote morning")
+morning](../images/copernica-summit-spreker.png "Copernica Summit keynote morning")
 
 Parallel to the user morning, there will be an [exclusive morning
 program](https://www.copernica.com/en/support/copernica-summit/program-copernica-summit#partnermorning)
@@ -53,7 +53,7 @@ tricks and trends that you can use and apply yourself the very next
 day.\
 \
 ![Copernica Summit afternoon
-keynote](Copernicacom/copernica-summit-zaal.png "Copernica Summit afternoon keynote")
+keynote](../images/copernica-summit-zaal.png "Copernica Summit afternoon keynote")
 
 When visiting the Copernica Summit you will have your own personal
 program. You can select the sessions you would like to attend well in

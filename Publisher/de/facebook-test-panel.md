@@ -7,7 +7,7 @@ Facebook-Integration, um neue Hinweise und relevante
 Produktinformationen Ihrer Fans zu sammeln und personalisierte E-Mails
 als Follow-up Ihrer Kampagne mithilfe von Copernica zu versenden.
 
-![Facebook testpanel](Copernicacom/facebook-testpanel-integration.png)
+![Facebook testpanel](../images/facebook-testpanel-integration.png)
 
 -   **Datum:** 8 juni, 2012
 -   **Versie:** 1.0

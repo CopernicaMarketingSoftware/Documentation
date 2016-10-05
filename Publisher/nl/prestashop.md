@@ -35,7 +35,7 @@ Software, zoals:
 | ### Ethos Paris                                                          |
 +--------------------------------------------------------------------------+
 | [![Ethos                                                                 |
-| Paris](Copernicacom/ethosbio-screenshot.png)](http://ethosparis.com/fr/) |
+| Paris](../images/ethosbio-screenshot.png)](http://ethosparis.com/fr/)    |
 +--------------------------------------------------------------------------+
 | ### Creed Boutique                                                       |
 +--------------------------------------------------------------------------+

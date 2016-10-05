@@ -45,7 +45,7 @@ Einige unserer Kunden
 > "Wir setzen Copernica erfolgreich ein, um fortwährend mit unseren
 > Mitgliedern in Kontakt zu bleiben. So benutzen wir gerne die
 > praktischen Umfrage-Tools, um die Zufriedenheit unter den
-> Gaststätteninhabern nachzufragen."![](testimonials/khn.png)
+> Gaststätteninhabern nachzufragen."![](../images/khn.png)
 >
 > \
 > **Royal Hospitality Netherlands**\

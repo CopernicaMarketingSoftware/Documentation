@@ -4,7 +4,7 @@ einrichten. Oder möchten Sie eine Umfrage zum Wohlwollen Ihrer
 Mitglieder durchführen? Dies ist ebenfalls mithilfe des Umfrage-Tools
 von Copernica möglich.
 
-![](Copernicacom/non-profit-copernica.jpg)
+![](../images/non-profit-copernica.jpg)
 
 Ausgezeichnete Möglichkeiten für Gemeinnützige Organisationen
 -------------------------------------------------------------
@@ -50,7 +50,7 @@ Einige unserer Kunden
 > ""Mit Copernica haben wir einen wichtigen Schritt vorwärts in Bezug
 > auf unsere Kommunikation mit Mitgliedern gemacht. Wir sind jetzt in
 > der Lage, persönliche und relevante Nachrichten per E-Mail oder SMS zu
-> senden." ![](testimonials/nl-brandwonden-stichting.png)
+> senden." ![](../images/nl-brandwonden-stichting.png)
 >
 > \
 > **Dutch Burns Foundation**\
@@ -58,7 +58,7 @@ Einige unserer Kunden
 
 > "Copernica wurde erfolgreich für unsere Fondswerbung eingesetzt und um
 > die Kontakte mit unseren jetzigen Mitgliedern zu unterhalten."
-> ![](testimonials/leger-des-heils.png)
+> ![](../images/leger-des-heils.png)
 >
 > \
 > **Salvation Army**\

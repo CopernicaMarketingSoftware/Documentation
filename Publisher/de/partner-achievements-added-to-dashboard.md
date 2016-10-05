@@ -6,7 +6,7 @@ weitere Übersicht hinzugefügt: Die Leistungen, die Partner für ihre
 Kunden erbracht haben. Hier können  Sie als Partner Ihre erbrachten
 Leistungen direkt einsehen und bearbeiten.
 
-![](DE/partner-erfolge.PNG)
+![](../images/partner-erfolge.PNG)
 
 Diese Ergebnisse spielen bereits aus zwei Gründen eine wichtige Rolle:
 Einerseits wegen des Rankings auf Copernica.com und wegen des Partner of
@@ -55,4 +55,4 @@ perfekten Score von 100 Punkten erreichen können. Wir hoffen, Sie bei
 den nächsten Partner of the Year Awards im September auf die Bühne holen
 zu können.
 
-![](DE/partner-erfolge-dashboard.PNG)
+![](../images/partner-erfolge-dashboard.PNG)

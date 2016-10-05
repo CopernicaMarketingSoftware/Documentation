@@ -7,7 +7,7 @@ benutzt werden.
 **Zweispaltiges Layout mit einer Sidebar links**
 ------------------------------------------------
 
-![](Copernicacom/preview-template-left-col-de.jpg)
+![](../images/preview-template-left-col-de.jpg)
 
 Download
 --------
@@ -15,14 +15,14 @@ Download
 ****Entwickelt von**:** Copernica BV\
 **Layout:** Zweispaltig\
 \
-[Download](Copernicacom/two-col-left-sidebar-blue-de.zip "Download")
+[Download](../downloads/two-col-left-sidebar-blue-de.zip "Download")
 
 * * * * *
 
 **Zweispaltiges Layout mit einer Sidebar rechts **
 --------------------------------------------------
 
-![](Copernicacom/preview-template-right-col-de.jpg)
+![](../images/preview-template-right-col-de.jpg)
 
 Download
 --------
@@ -30,4 +30,4 @@ Download
 **Entwickelt von:** Copernica BV\
 **Layout:** Zweispaltig\
 \
-[Download](Copernicacom/two-col-right-sidebar-blue-de.zip "Download")
+[Download](../downloads/two-col-right-sidebar-blue-de.zip "Download")

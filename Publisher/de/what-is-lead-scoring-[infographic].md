@@ -1,5 +1,5 @@
 [Vollständige Infografik
-herunterladen](https://pic.vicinity.nl/127/0/121241/What-is-lead-scoring-Copernica.png "Was ist Lead Scoring?")
+herunterladen](../images/What-is-lead-scoring-Copernica.png "Was ist Lead Scoring?")
 
 Das Konzept des Lead Scoring liegt in der Notwendigkeit begründet, so
 relevant wie möglich zu sein. Bisher haben die meisten Unternehmen sich
@@ -23,7 +23,7 @@ Lösung liegt darin, auf die weichen Daten des potenziellen Kunden
 Methoden des Lead Scoring anzuwenden.
 
 Mehr über Lead Scoring erfahren Sie auch in dieser [Exact Software Case
-Study](./lead-nurturing-in-real-life-business-case-extract-software.md)
+Study](./lead-nurturing-in-real-life-business-case-exact-software.md)
 
 Lead Scoring ist eine Methode zur Klassifizierung potenzieller Kunden
 anhand einer Skala, die die Wertigkeit eines Leads für das Unternehmen
@@ -86,4 +86,4 @@ Beispiel hierfür ist der Einsatz der Personalisierungsfunktion Math
 Equation.
 
 [![Was ist Lead
-Scoring?](articlesblog/what-is-lead-scoring-de.png "Was ist Lead Scoring?")](https://vicinity.picsrv.net/127/0/124863/what-is-lead-scoring-de.png'%20title='Was%20ist%20Lead%20Scoring?)
+Scoring?](../images/what-is-lead-scoring-de.png "Was ist Lead Scoring?")](https://vicinity.picsrv.net/127/0/124863/what-is-lead-scoring-de.png'%20title='Was%20ist%20Lead%20Scoring?)

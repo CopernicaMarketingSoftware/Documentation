@@ -21,7 +21,7 @@ heruntergeladen wurden. Wenn zum Beispiel jemand in Miami eine E-Mail
 öffnet, wird der Bundesstaat Florida grün markiert.
 
 ![Screenshot from Copernica
-statistics](articlesblog/copernica-gmail-en.png "Screenshot from Copernica statistics")
+statistics](../images/copernica-gmail-en.png "Screenshot from Copernica statistics")
 
 Wenn nun aber die Bilder von Googles Servern heruntergeladen werden,
 wird in der Karte der Standort von Googles Proxy-Servern angezeigt.
@@ -33,7 +33,7 @@ habe ich dieselbe E-Mail an eine @gmail.com-Adresse gesendet und sie mit
 dem Gmail-Webmailer geöffnet.
 
 ![Click for larger version (opens in a new
-window)](articlesblog/copernica-gmail-en2.png)
+window)](../images/copernica-gmail-en2.png)
 
 Wie Sie sehen können, zeigt die Statistik nun zwei verschiedene
 Standorte an. Obwohl die E-Mail beide Male in Miami geöffnet wurde,

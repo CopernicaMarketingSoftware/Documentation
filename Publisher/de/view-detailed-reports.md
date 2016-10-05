@@ -12,7 +12,7 @@ Mit Copernica analysieren und sehen Sie unter anderem:
 -   Und vieles mehr.
 
 ![Klicks, Opens und
-mehr](Copernicacom/de-ausfuhrliche-e-mail-statistiken-04-thumb.png "Klicks, Opens und mehr")
+mehr](../images/de-ausfuhrliche-e-mail-statistiken-04-thumb.png "Klicks, Opens und mehr")
 
 Klicks, Öffnungsraten und mehr
 ------------------------------
@@ -38,7 +38,7 @@ Wie ist die geografische Verteilung Ihrer E-Mails?
 --------------------------------------------------
 
 ![Was ist die geografische Verteilung Ihrer
-E-Mailing?](Copernicacom/de-ausfuhrliche-e-mail-statistiken-02-thumb.png "Was ist die geografische Verteilung Ihrer E-Mailing?")
+E-Mailing?](../images/de-ausfuhrliche-e-mail-statistiken-02-thumb.png "Was ist die geografische Verteilung Ihrer E-Mailing?")
 
 Wollten Sie schon immer wissen, ob Kunden in China Ihre E-Mailing lesen?
 Entdecken Sie über Copernica in welchen Ländern Ihre E-Mailings am
@@ -49,7 +49,7 @@ Welches E-Mail-Programm verwendet Ihr Kunde?
 --------------------------------------------
 
 ![Welches E-Mail Programm verwendet Ihr
-Kunde?](Copernicacom/de-ausfuhrliche-e-mail-statistiken-03-thumb.png "Welches E-Mail Programm verwendet Ihr Kunde?")
+Kunde?](../images/de-ausfuhrliche-e-mail-statistiken-03-thumb.png "Welches E-Mail Programm verwendet Ihr Kunde?")
 
 Sind Sie neugierig, ob Ihre Kunden Hotmail, Gmail oder ein anderes
 E-Mail-Programm verwenden? Copernica zeigt Ihnen, in welchen
@@ -61,7 +61,7 @@ Lernen Sie aus Ihren Fehlern
 ----------------------------
 
 ![Lernen Sie von Ihren
-Fehlern](Copernicacom/de-ausfuhrliche-e-mail-statistiken-05-thumb.png "Lernen Sie von Ihren Fehlern")
+Fehlern](../images/de-ausfuhrliche-e-mail-statistiken-05-thumb.png "Lernen Sie von Ihren Fehlern")
 
 Fehlermeldungen und Spambeschwerden sind immer unerwünscht. Aber diese
 Ergebnisse sind genauso wichtig, wie Ihre Klicks und Öffnungsraten.
@@ -77,7 +77,7 @@ Copernica E-Mail-Statistiken und Google Analytics
 -------------------------------------------------
 
 ![Copernica E-Mailstatistiken und Google
-Analytics](Copernicacom/google-analytics-tagging-copernica-thumb.png "Copernica E-Mailstatistiken und Google Analytics")
+Analytics](../images/google-analytics-tagging-copernica-thumb.png "Copernica E-Mailstatistiken und Google Analytics")
 
 Möchten Sie noch tiefer in den Ergebnissen Ihrer E-Mailing graben? Mit
 Copernica fügen Sie mit ein paar Klicks verschiedene UTM-Codes zu den

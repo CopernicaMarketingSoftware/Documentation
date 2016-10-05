@@ -9,7 +9,7 @@ A/B Testen: Testen Sie jeden Bestandteil
 ----------------------------------------
 
 ![A/B Testen: Testen Sie jeden
-Bestandteil](Copernicacom/nl-a-b-split-test-copernica.gif "A/B Testen: Testen Sie jeden Bestandteil")
+Bestandteil](../images/nl-a-b-split-test-copernica.gif "A/B Testen: Testen Sie jeden Bestandteil")
 
 Mit einem A/B-Test versenden Sie zwei oder mehrere Versionen einer
 E-Mailing. Wie viele Versionen Sie verwenden, hängt davon ab was Sie
@@ -19,7 +19,7 @@ testen:
 -   Die Betreffzeile, den Text in Ihrem Pre-Header oder Header, das
     "von"-Feld, ..
 -   Den Inhalt Ihrer E-Mailing so wie z. B. Hyperlinks oder [RSS
-    Feeds](./rss-of-atom-feeds.md "Benutzung von RSS oder Atom-Feeds")
+    Feeds](./rss-or-atom-feeds.md "Benutzung von RSS oder Atom-Feeds")
 -   Die [Gestaltung Ihrer
     E-Mailing](./create-custom-templates.md "Entwerfen Sie ihre eigenen Vorlagen")
     (Layout, Bilder, Positionierung)
@@ -36,7 +36,7 @@ Testen Sie die Wiedergabe Ihrer E-Mailings
 ------------------------------------------
 
 ![Testen Sie die Wiedergabe Ihrer
-E-Mailings](Copernicacom/email-design-testing-copernica.png "Testen Sie die Wiedergabe Ihrer E-Mailings")
+E-Mailings](../images/email-design-testing-copernica.png "Testen Sie die Wiedergabe Ihrer E-Mailings")
 
 Möchten Sie sich gerne die Wiedergabe Ihres E-Mailings in den
 beliebtesten E-Mail-Programmen vor dem Versand anschauen? Wenn Sie Ihr

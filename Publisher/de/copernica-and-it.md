@@ -44,7 +44,7 @@ Einige unserer Kunden
 > "Copernica hat viele Möglichkeiten die man selbstständig nutzen kann.
 > Die festen Kosten und die hervorragende Unterstützung sind einige
 > zusätzliche Vorteile dieser Marketing-Software."
-> ![](testimonials/transfer-solutions.png)
+> ![](../images/transfer-solutions.png)
 >
 > \
 > **Transfer Solutions**\
@@ -52,7 +52,7 @@ Einige unserer Kunden
 
 > "Copernica ermöglicht es uns anspruchsvolle crossmediale
 > Direktmarketing-Kampagnen zu definieren, auszuführen und zu
-> beobachten." ![](testimonials/exact.png)
+> beobachten." ![](../images/exact.png)
 >
 > \
 > **Exact**\

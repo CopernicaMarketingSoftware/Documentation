@@ -9,7 +9,7 @@ Erste Schritte mit PDF-Dokumenten
 ---------------------------------
 
 ![Erste Schritte mit
-PDF-Dokumenten](Copernicacom/de-erstellen-von-pdf-dokument-thumb.png "Erste Schritte mit PDF-Dokumenten")
+PDF-Dokumenten](../images/de-erstellen-von-pdf-dokument-thumb.png "Erste Schritte mit PDF-Dokumenten")
 
 Die Erstellung Ihres eigenen maßgeschneiderten PDF-Dokuments beginnt mit
 einer Vorlage. Entwerfen Sie Ihre eigene Kreation außerhalb von

@@ -9,7 +9,7 @@ Daten  in verschiedenen Feldtypen speichern
 -------------------------------------------
 
 ![Daten speichern in verschiedenen
-Feldtypen](Copernicacom/de-erstellen-sie-ihre-eigene-datenbank-thumb.png "Daten speichern in verschiedenen Feldtypen")
+Feldtypen](../images/de-erstellen-sie-ihre-eigene-datenbank-thumb.png "Daten speichern in verschiedenen Feldtypen")
 
 Die gesamte Datenbankstruktur innerhalb Copernica können Sie nach
 eigenem Ermessen einrichten und formatieren. Sie haben die Möglichkeit,
@@ -38,7 +38,7 @@ oder einer
 benutzt.
 
 ![Mehr Daten in einer multidimensionalen Datenbank
-speichern](Copernicacom/multidimensional-database.jpg "Mehr Daten in einer multidimensionalen Datenbank speichern")
+speichern](../images/multidimensional-database.jpg "Mehr Daten in einer multidimensionalen Datenbank speichern")
 
 Mehr Daten in einer multidimensionalen Datenbank speichern
 ----------------------------------------------------------

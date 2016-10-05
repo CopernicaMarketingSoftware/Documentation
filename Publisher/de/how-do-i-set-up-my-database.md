@@ -6,7 +6,7 @@ erreichen möchten. 
 ---------------------------
 
 ![Neue Datenbank
-erstellen](Copernicacom/de-create-new-database.png "Neue Datenbank erstellen")
+erstellen](../images/de-create-new-database.png "Neue Datenbank erstellen")
 
 Um eine neue Datenbank hinzuzufügen, wählen Sie die angegebene Funktion
 in „Profile“ unter „Datenbank-Management“. Geben Sie der Datenbank einen
@@ -19,7 +19,7 @@ unterscheidbaren Namen und eine Beschreibung ohne Sonderzeichen. 
 -----------------------------
 
 ![Fügen Sie die Felder hinzu in Copernica Marketing
-Software](Copernicacom/de-manage-fields.png "Fügen Sie die Felder hinzu in Copernica Marketing Software")
+Software](../images/de-manage-fields.png "Fügen Sie die Felder hinzu in Copernica Marketing Software")
 
 Nachdem Sie Ihre Datenbank erstellt haben, können Sie Felder in der
 Datenbank hinzufügen.

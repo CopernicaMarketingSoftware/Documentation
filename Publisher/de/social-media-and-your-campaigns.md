@@ -10,7 +10,7 @@ Share to social: Lassen Sie Ihre Nachrichten teilen
 ---------------------------------------------------
 
 ![Share to social: Teilen Sie Ihre
-Nachricht](Copernicacom/de-social-media-und-ihre-kampagnen-thumb.png "Share to social: Teilen Sie Ihre Nachricht")
+Nachricht](../images/de-social-media-und-ihre-kampagnen-thumb.png "Share to social: Teilen Sie Ihre Nachricht")
 
 Mit Copernica können Sie leicht unterschiedliche Social Share-Buttons zu
 Ihren [E-Mailings](./emailings.md "E-Mailings")

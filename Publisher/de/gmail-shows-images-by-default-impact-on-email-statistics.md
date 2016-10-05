@@ -31,7 +31,7 @@ sich in ihren E-Mails die Bilder anzeigen lassen, ist dies allerdings
 keine exakte Angabe.
 
 ![Ein Empfänger öffnet seine E-Mail und gibt die Erlaubnis, Bilder
-herunterzuladen](Copernica_cases/afbeeldingen-email-copernica.png "Ein Empfänger öffnet seine E-Mail und gibt die Erlaubnis, Bilder herunterzuladen")
+herunterzuladen](../images/afbeeldingen-email-copernica.png "Ein Empfänger öffnet seine E-Mail und gibt die Erlaubnis, Bilder herunterzuladen")
 
 Auch wenn Sie keine Bilder in Ihre E-Mails integrieren, fügt Copernica
 eine unsichtbare [1x1
@@ -55,7 +55,7 @@ Was Gmail nun aber tut, ist folgendes:
 -   Die gecachte Version an seine Benutzer ausliefern.
 
 ![Ein Empfänger öffnet eine E-Mail und lädt die Bilder über den Gmail
-Server](Copernica_cases/afbeeldingen-email-copernica-google.png "Ein Empfänger öffnet eine E-Mail und lädt die Bilder über den Gmail Server")
+Server](../images/afbeeldingen-email-copernica-google.png "Ein Empfänger öffnet eine E-Mail und lädt die Bilder über den Gmail Server")
 
 Seinem
 [blog](http://gmailblog.blogspot.nl/2013/12/images-now-showing.html)

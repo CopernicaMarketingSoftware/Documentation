@@ -5,7 +5,7 @@ anzuschauen. Gibt es Kontaktmomente, die einfach zu automatisieren sind?
 Bestimmt! In dieser Fallstudie zeigen wir wie Manchester United damit
 umgeht.
 
-![](Copernicacom/MUSS_Bild1.jpg "Copernicacom/MUSS_Bild1.jpg") Für die
+![](../images/MUSS_Bild1.jpg "../images/MUSS_Bild1.jpg") Für die
 Manchester United Soccer Schools (MUSS) wollte Manchester United die
 internationale Reichweite vergrößern und die Sales-Aktivitäten ihrer
 Fußball-Lager steigern. Durch die Verbindung von Marketing Automation
@@ -23,7 +23,7 @@ Fußball-Fanatikern) jede denkbare Unterstützung bekommen beim Kauf- und
 Buchungsprozess. Die Lösung sollte auch dazu beitragen die Bindung von
 Kunden und potenziellen Kunden zu erhöhen.
 
-![](Copernicacom/MUSS_Bild2.png)
+![](../images/MUSS_Bild2.png)
 
 MUSS schrieb daraufhin ein Projekt aus, eine mehrsprachige E-Commerce
 Plattform aufzubauen um den internationalen Vertrieb zu stimulieren. 
@@ -74,7 +74,7 @@ treuen Fans und Kunden. Dazu nahm die MUSS den gesamten Prozess in einer
 deutlichen Visualisierung auf um somit besser zu bestimmen wann genau,
 welche E-Mail Kampagne versendet wird.
 
-![](Copernicacom/MUSS_Bild3.png)
+![](../images/MUSS_Bild3.png)
 
 Abhängig von der Zahlungsart oder ob ein Elternteil den vollständigen
 Kauf verrichtet hat oder nur ein Teil des Lagers gezahlt hat, kommen sie

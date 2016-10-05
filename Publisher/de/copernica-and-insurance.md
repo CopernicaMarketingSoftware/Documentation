@@ -44,7 +44,7 @@ Einige unserer Kunden
 
 > "Via Copernica können wir unsere Kunden und Partner über Entwicklungen
 > auf unserer Zahlungs-Plattform und über allgemeine Tendenzen innerhalb
-> der Zahlungs-Landschaft informieren." ![](testimonials/docdata.png)
+> der Zahlungs-Landschaft informieren." ![](../images/docdata.png)
 >
 > \
 > **docdata**\

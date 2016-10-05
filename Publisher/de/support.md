@@ -23,7 +23,7 @@ zu sprechen. \
 -   [Hilfe-Dokumentation](./help-documentation.md "Hilfe-Dokumentation")
     ----------------------------------------------------------------------------------------------------
 
-    [![Hilfe-Dokumentation](Copernicacom/en-support-helpdocumentation.png "Hilfe-Dokumentation")](./help-documentation.md)
+    [![Hilfe-Dokumentation](../images/en-support-helpdocumentation.png "Hilfe-Dokumentation")](./help-documentation.md)
 
     Benutzen Sie die Hilfe-Dokumentation von Copernica, um für ihr
     Problem schnell die passende Lösung zu finden.
@@ -35,7 +35,7 @@ zu sprechen. \
     -----------------------------------------------------------------------------------------------------------------
 
     [![Finden Sie ein
-    Partner](Copernicacom/en-support-find-a-partner.png "Finden Sie ein Partner")](http://www.copernica.com/de/support/finden-sie-einen-partner)
+    Partner](../images/en-support-find-a-partner.png "Finden Sie ein Partner")](http://www.copernica.com/de/support/finden-sie-einen-partner)
 
     Schauen Sie sich unser Partner-Netzwerk an und finden Sie einen
     Partner, der Ihnen mit den Funktionen von Copernica und Ihren
@@ -47,7 +47,7 @@ zu sprechen. \
 -   [Integrationen](./integrations.md "Integrationen")
     ----------------------------------------------------------------------------------
 
-    [![Integrationen](Copernicacom/nl-support-integrations.png "Integrationen")](./integrations.md)
+    [![Integrationen](../images/nl-support-integrations.png "Integrationen")](./integrations.md)
 
     Sind Sie auf der Suche nach einer Integration, um Ihre CMS-,
     E-Commerce- oder CRM-Software mit Copernica zu verbinden? Wir bieten
@@ -58,7 +58,7 @@ zu sprechen. \
 -   [Videos](./video-tutorials.md "Videos")
     -------------------------------------------------------------
 
-    [![Videos](Copernicacom/nl-support-video-tutorials.png "Videos")](./video-tutorials.md)
+    [![Videos](../images/nl-support-video-tutorials.png "Videos")](./video-tutorials.md)
 
     Werden Sie ein echter Copernica-Experte und folgen Sie unseren
     Anleitungsvideos, um die Arbeit mit der Copernica Marketing Software
@@ -69,7 +69,7 @@ zu sprechen. \
 -   [Veranstaltungen](./events.md "Veranstaltungen")
     ----------------------------------------------------------------------------------------
 
-    [![Veranstaltungen](Copernicacom/nl-support-events.png "Veranstaltungen")](./events.md)
+    [![Veranstaltungen](../images/nl-support-events.png "Veranstaltungen")](./events.md)
 
     Schauen Sie sich unseren Kalender an, um zu sehen wo Copernica und
     seine Partner in der kommenden Zeit zu sehen sind.
@@ -79,7 +79,7 @@ zu sprechen. \
 -   [Gesetzgebung](./legislation.md "Gesetzgebung")
     -------------------------------------------------------------------------------
 
-    [![Gesetzgebung](Copernicacom/nl-support-legislation.png "Gesetzgebung")](./legislation.md)
+    [![Gesetzgebung](../images/nl-support-legislation.png "Gesetzgebung")](./legislation.md)
 
     Erfahren Sie hier mehr über die aktuelle Gesetzgebung und entdecken
     Sie, was erlaubt ist und was nicht, wenn Sie mit E-Mail-Marketing

@@ -1,5 +1,5 @@
 ![responsive design: email for
-mobile](Copernicacom/email-marketing-mobile.jpg "responsive design: email for mobile")In
+mobile](../images/email-marketing-mobile.jpg "responsive design: email for mobile")In
 den letzten drei Jahren hat die Nutzung von Smartphones stark
 zugenommen. Aus diesem Grund sollten E-Mail-Marketer besondere
 Aufmerksamkeit auf die Optimierung ihrer [E-Mails für den mobilen
@@ -109,7 +109,7 @@ Wann nutze ich Responsive Design?
 ---------------------------------
 
 ![wie leest e-mail op
-mobile?](Copernicacom/Hands_using_mobiles.png "wie leest e-mail op mobile?")Bevor
+mobile?](../images/Hands_using_mobiles.png "wie leest e-mail op mobile?")Bevor
 Sie zu viel Zeit und Mühe in die Optimierung Ihrer E-Mails (und
 Websites) stecken, ist es am besten zu wissen, für wen Sie das tun.
 Liest Ihre Zielgruppe E-Mails auf dem Smartphone oder Tablet? Deshalb

@@ -3,14 +3,14 @@ Ihren Abonnenten für eine gezieltere Kommunikation nutzen. Mithilfe der
 Wordpress-Integration für Copernica können Sie alle Daten Ihrer
 Abonnenten in Copernica Marketing Software speichern!
 
-![Wordpress](Copernicacom/wordpress-integration.png)
+![Wordpress](../images/wordpress-integration.png)
 
 -   **Entwickelt von:** [ESV Media
     GmbH](http://www.esv-media.de/en/ "ESV Media GmbH")
 -   Benötigte Wordpress-Version: 3.3.2
 -   **Lizenz:** [GPLv2 of
     later](http://www.gnu.org/licenses/gpl-2.0.html "GPLv2 of later")
--   [Download](Copernicacom/wordpress-copernica.zip "Download Wordpress-Integration für Copernica Marketing Software")
+-   [Download](../downloads/wordpress-copernica.zip "Download Wordpress-Integration für Copernica Marketing Software")
 
 Über die Wordpress-Integration
 ------------------------------

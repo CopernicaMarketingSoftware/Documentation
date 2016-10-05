@@ -5,7 +5,7 @@ Kaufverhalten, Suchverhalten und Conversionrates. Dank dieser
 Bereicherung an Daten, die Sie sammeln, können Sie einfach
 automatisierte Marketingkampagnen innerhalb Copernica aufstellen.
 
-![drupal logo](Copernicacom/drupal-logo.png)
+![drupal logo](../images/drupal-logo.png)
 
 -   **Developed by:**[Livelink New
     Media](http://www.livelinknewmedia.com/ "LiveLink New Media")
@@ -73,22 +73,22 @@ Download Drupal modules
 
 **File size:** 10 kB
 
-[Download](Copernicacom/copernica_connector.zip "Download Drupal connector integratie for Copernica Marketing Software")
+[Download](../downloads/copernica_connector.zip "Download Drupal connector integratie for Copernica Marketing Software")
 
 ### Copernica user
 
 **File size:** 3 kB
 
-[Download](Copernicacom/copernica_basic_user.zip "Download Drupal user integratie for Copernica Marketing Software")
+[Download](../downloads/copernica_basic_user.zip "Download Drupal user integratie for Copernica Marketing Software")
 
 ### Copernica webform
 
 **File size:** 13 kB
 
-[Download](Copernicacom/copernica_webform.zip "Download Drupal webform integratie for Copernica Marketing Software")
+[Download](../downloads/copernica_webform.zip "Download Drupal webform integratie for Copernica Marketing Software")
 
 ### Copernica Drupal Commerce
 
 **File size:** 20 kB
 
-[Download](Copernicacom/copernica_commerce.zip "Download Copernica Drupal Commerce integratie for Copernica Marketing Software")
+[Download](../downloads/copernica_commerce.zip "Download Copernica Drupal Commerce integratie for Copernica Marketing Software")

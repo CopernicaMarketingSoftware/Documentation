@@ -65,9 +65,9 @@ können.
     Dienstleistungen und Copernica als Zusatzleistung, an Ihrem eigenen
     Kundenkreis.
 
-![Copernica partner model](Copernicacom/en-partner-model-model.png)
+![Copernica partner model](../images/en-partner-model-model.png)
 
-![Copernica partner model](Copernicacom/en-partner-model-video.png)
+![Copernica partner model](../images/en-partner-model-video.png)
 
 ### Indirekt verdienen über das Copernica Partnerprogramm:
 

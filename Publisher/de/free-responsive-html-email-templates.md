@@ -29,49 +29,49 @@ E-Mail Templates
 ----------------
 
 ![Free email template by
-Copernica](articlesblog/html-email-template-copernica-1.jpg)
+Copernica](../images/html-email-template-copernica-1.jpg)
 
 [Download mit Copernica
-Tags](articlesblog/template-1-with-copernica-tags.zip) \
+Tags](../downloads/template-1-with-copernica-tags.zip) \
  oder [Download ohne Copernica
-Tags](articlesblog/template-1-without-copernica-tags.zip)
+Tags](../downloads/template-1-without-copernica-tags.zip)
 
 * * * * *
 
 ![Free email template by
-Copernica](articlesblog/html-email-template-copernica-2.jpg)
+Copernica](../images/html-email-template-copernica-2.jpg)
 
 [Download mit Copernica
-Tags](articlesblog/template-2-with-copernica-tags.zip) \
+Tags](../downloads/template-2-with-copernica-tags.zip) \
  oder [Download ohne Copernica
-Tags](articlesblog/template-2-without-copernica-tags.zip)
+Tags](../downloads/template-2-without-copernica-tags.zip)
 
 * * * * *
 
 ![Free email template by
-Copernica](articlesblog/html-email-template-copernica-3.jpg)
+Copernica](../images/html-email-template-copernica-3.jpg)
 
 [Download mit Copernica
-Tags](articlesblog/template-3-with-copernica-tags.zip) \
+Tags](../downloads/template-3-with-copernica-tags.zip) \
  or [Download ohne Copernica
-Tags](articlesblog/template-3-without-copernica-tags.zip)
+Tags](../downloads/template-3-without-copernica-tags.zip)
 
 * * * * *
 
 ![Free email template by
-Copernica](articlesblog/html-email-template-copernica-4.jpg)
+Copernica](../images/html-email-template-copernica-4.jpg)
 
 [Download mit Copernica
-Tags](articlesblog/template-4-with-copernica-tags.zip) \
+Tags](../downloads/template-4-with-copernica-tags.zip) \
  oder [Download ohne Copernica
-Tags](articlesblog/template-4-without-copernica-tags.zip)
+Tags](../downloads/template-4-without-copernica-tags.zip)
 
 * * * * *
 
 ![Free email template by
-Copernica](articlesblog/html-email-template-copernica-5.jpg)
+Copernica](../images/html-email-template-copernica-5.jpg)
 
 [Download mit Copernica
-Tags](articlesblog/template-5-with-copernica-tags.zip) \
+Tags](../downloads/template-5-with-copernica-tags.zip) \
  oder [Download ohne Copernica
-Tags](articlesblog/template-5-without-copernica-tags.zip)
+Tags](../downloads/template-5-without-copernica-tags.zip)

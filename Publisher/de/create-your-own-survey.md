@@ -12,7 +12,7 @@ Stellen Sie die richtigen Fragen
 --------------------------------
 
 ![Stellen Sie die richtige Frage
-](Copernicacom/de-umfragen-thumb.png "Stellen Sie die richtige Frage ")
+](../images/de-umfragen-thumb.png "Stellen Sie die richtige Frage ")
 
 Um die gewünschte Antwort Ihrer Kunden zu erhalten, müssen Sie die
 richtigen Fragen stellen. Mit Copernica benutzen Sie drei Arten von

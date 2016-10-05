@@ -11,7 +11,7 @@ von PDF-Dokumenten und Postwurfsendungen.
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Erstellen Sie ein personalisiertes
-    PDF-Dokument](Copernicacom/de-print-01-thumb.png "Erstellen Sie ein personalisiertes PDF-Dokument")](./create-your-personalized-pdf.md)
+    PDF-Dokument](../images/de-print-01-thumb.png "Erstellen Sie ein personalisiertes PDF-Dokument")](./create-your-personalized-pdf.md)
 
     MIt Copernica erstellen Sie in wenigen Schritten ein
     personalisiertes PDF-Dokument für Fax-Mailings, Broschüren,
@@ -23,7 +23,7 @@ von PDF-Dokumenten und Postwurfsendungen.
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     [![Versenden Sie Ihr Dokument per E-Mail, Telefax oder Direkt
-    Mail](Copernicacom/de-print-02-thumb.png "Versenden Sie Ihr Dokument per E-Mail, Telefax oder Direkt Mail")](./email-fax-or-send-by-direct-mail.md)
+    Mail](../images/de-print-02-thumb.png "Versenden Sie Ihr Dokument per E-Mail, Telefax oder Direkt Mail")](./email-fax-or-send-by-direct-mail.md)
 
     Möchten Sie ein personalisiertes Anschreiben per Telefax oder E-Mail
     oder doch als Anlage versenden? Treffen Sie in Copernica eine

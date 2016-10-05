@@ -3,7 +3,7 @@ Kernwerte "innovativ", "leidenschaftlich" und "unternehmerisch" hat
 Copernica in den vergangenen Jahren verschiedene Awards erhalten. Unten
 finden Sie eine Auswahl aus unserem Trophäenschrank.
 
-![Red Herring Award](Copernicacom/redherring.png "Red Herring Award")
+![Red Herring Award](../images/redherring.png "Red Herring Award")
 
 **Red Herring Award**
 
@@ -19,7 +19,7 @@ leben und zu arbeiten verändert haben. \
 \
 \
 
-![FD Gazellen Awards](Copernicacom/fd-2012.png "FD Gazellen Awards")
+![FD Gazellen Awards](../images/fd-2012.png "FD Gazellen Awards")
 
 **FD Gazellen Awards**
 
@@ -32,7 +32,7 @@ Jahr muss das Netto-Ergebnis positiv sein und in den beiden vorigen
 Jahren darf maximal in einem davon Verlust gemacht worden sein. \
  \
  \
- ![Emerce Top 100](Copernicacom/emerce.png "Emerce Top 100")
+ ![Emerce Top 100](../images/emerce.png "Emerce Top 100")
 
 **Emerce Top 100**
 

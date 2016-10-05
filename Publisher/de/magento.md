@@ -4,7 +4,7 @@ gezielte und professionelle E-Mail-Kampagnen zu erstellen. Versenden Sie
 z.B. persönliche E-Mails als Folgeaktion eines verlassenen
 Einkaufswagens oder senden Sie Ihren treuesten Kunden ein spezielles
 Angebot. ![Magento und
-Copernica](https://vicinity.picsrv.net/4390/magento-copernica-integration.png "Magento und Copernica")
+Copernica](../images/magento-copernica-integration.png "Magento und Copernica")
 
 Die Stärke der Copernica-Magento Integration
 --------------------------------------------
@@ -26,7 +26,7 @@ Die Stärke der Copernica-Magento Integration
 
 \
 
-![magento logo](Copernicacom/magento-logo.png)
+![magento logo](../images/magento-logo.png)
 
 -   **Entwickelt durch:**
     [Cream](http://www.copernica.com/de/support/partner/4536144 "Cream")
@@ -35,7 +35,7 @@ Die Stärke der Copernica-Magento Integration
 -   **Dateigröße:**61kb
 -   [Download](http://www.magentocommerce.com/magento-connect/copernica-marketing-software-8325.html?utm_source=Website%2BCopernica&utm_medium=integration-page&utm_campaign=download_integration)
 
-![](Copernicacom/magento-copernica-integration.png)
+![](../images/magento-copernica-integration.png)
 
 [Download](http://www.magentocommerce.com/magento-connect/copernica-marketing-software-8325.html?utm_source=Website%2BCopernica&utm_medium=integration-page&utm_campaign=download_integration "Download de Magento integratie")
 
@@ -59,18 +59,18 @@ Frage folgen.
 ### Video & screenshots
 
 ![Extra Optionen für die Copernica Marketing Software in
-Magento](Copernicacom/copernica-magento-plugin.png)
+Magento](../images/copernica-magento-plugin.png)
 
 Erweiterte Optionen für die Copernica Marketing Software in Magento
 
 ![Account settings to connect Magento to Copernica Marketing
-Software](Copernicacom/copernica-magento-account-settings.png)
+Software](../images/copernica-magento-account-settings.png)
 
 Konto Einstellungen, um Magento mit Copernica zu verbinden
 
 ![Link all contact, order and shopping cart information from Magento to
 a database in Copernica Marketing
-Software](Copernicacom/copernica-magento-fields.png)
+Software](../images/copernica-magento-fields.png)
 
 Fügen Sie alle Kontakt-, Auftrags- und Warenkorb-Informationen von
 Magento in einer Datenbank in der Copernica Marketing Software ein.

@@ -33,7 +33,7 @@ Marketing Kanäle sicher, dass Sie genug Traffic auf Ihrer Website
 generieren. Genauso verhielt es sich bei Exact Software:\
 \
 ![Traffic to website
-Exact](Copernicacom/traffic-naar-exact.png "Traffic zur Exact Website")
+Exact](../images/traffic-naar-exact.png "Traffic zur Exact Website")
 
 Sobald ein potentieller Kunde auf die Website gelangt, gibt es viele
 verschiedene nächste Schritte. Abhängig von diesen Schritten stellt
@@ -43,7 +43,7 @@ Marketing Qualified Lead? Um die Phase des Kunden festzustellen,
 verwendet Exact Software verschiedene Tools:
 
 * ![Marketing Qualified Lead
-qualifizieren](Copernicacom/conversion-to-mql-ENG.png "Marketing Qualified Lead qualifizieren")*
+qualifizieren](../images/conversion-to-mql-ENG.png "Marketing Qualified Lead qualifizieren")*
 
 Die grün markierten Kanäle führen zu einer Markierung als Marketing
 Qualified Lead. Die anderen drei: Kontaktformular, Rückrufbitte oder
@@ -110,7 +110,7 @@ Copernica Datenbank übertragen. Ein neu erstelltes Profil löst nebenbei
 eine Bestätigungs E-Mail aus:\
 \
 ![Confirmation email Exact
-Software](Copernicacom/bevestigingsmail.jpg "Confirmation email Exact Software")
+Software](../images/bevestigingsmail.jpg "Confirmation email Exact Software")
 
 In dieser Bestätigungsmail werden Interessenten dazu aufgefordert, mehr
 über ihre Interessen Preis zu geben. Das hilft Exact dabei, die Kunden
@@ -121,7 +121,7 @@ hochrelevante, personalisierte E-Mail-Kampagnen auf Basis der
 gespeicherten Daten aufsetzen.\
 \
 ![Personal content provided by
-Exact](Copernicacom/content-op-maat-exact-ENG.png "Personal content provided by Exact")
+Exact](../images/content-op-maat-exact-ENG.png "Personal content provided by Exact")
 
 TDer in den E-Mails verwendete Inhalt wird von Copernica automatisch
 zusammengestellt. Auf Basis der vom Kunden angegebenen Interessen und
@@ -144,14 +144,14 @@ das Anfragen eines Rückrufs sorgt für die Addition von acht Punkten zu
 einem Profil.\
 \
 ![Leadscoring Modell
-Exact](Copernicacom/leadscoring-systeem-exact.png "Leadscoring Modell Exact")
+Exact](../images/leadscoring-systeem-exact.png "Leadscoring Modell Exact")
 
 Sobald ein Interessent zwölf Punkte erreicht, wird dieser Kontakt zu
 einem Sales Qualified Lead und löst durch diesen Aufstieg eine
 automatisierte E-Mail an das Sales Team aus.
 
 ![Interne E-Mail zum Sales
-Team](Copernicacom/interne-mail-sales-exact.jpg "Interne E-Mail zum Sales Team")
+Team](../images/interne-mail-sales-exact.jpg "Interne E-Mail zum Sales Team")
 
 Diese E-Mail enthält einen Link zu den Profildaten des
 Kaufinteressenten. Auf diese Weise hat der Sales Mitarbeiter alle

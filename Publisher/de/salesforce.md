@@ -6,7 +6,7 @@ Copernica zu verwenden. Alle Daten werden in einer zentralisierten
 Datenbank gespeichert und mit den Resultaten Ihrer Kampagnen
 angereichert.
 
-![Salesforce](Copernicacom/salesforce-copernica-integration.png "Salesforce en Copernica")
+![Salesforce](../images/salesforce-copernica-integration.png "Salesforce en Copernica")
 
 [Integration anfragen](http://www.taurosmedia.com/en/producten/copernica-salesforce-koppeling?utm_source=copernica&utm_medium=button&utm_campaign=salesforce "Integration anfragen") Was kann die Salesforce Integration?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -73,7 +73,7 @@ Salesforce mehr verschwenden.
     Media](http://www.taurosmedia.com/?utm_source=copernica&utm_medium=link&utm_campaign=salesforce "Tauros Media")
 -   **Datum:** 23. Oktober 2013
 -   \*\*Version: \*\* 1.0.0 \*\*1. Kosten: \*\* Gratis-
-    [Installationsanleitung](Copernicacom/Copernica-Salesforce-app-manual.pdf)
+    [Installationsanleitung](../downloads/Copernica-Salesforce-app-manual.pdf)
 
 [Download
 anfragen](http://www.taurosmedia.com/en/producten/copernica-salesforce-koppeling?utm_source=copernica&utm_medium=button&utm_campaign=salesforce "Aanvragen download Salesforce integratie")

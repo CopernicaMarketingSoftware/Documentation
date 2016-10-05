@@ -39,7 +39,7 @@ Einige unserer Kunden
 
 > "Dank der Verbindung von Copernica mit unserem Webshop sind wir in der
 > Lage, automatisch relevante und gezielte E-Mail-Kampagnen zu senden."
-> ![](testimonials/fitforme.png)
+> ![](../images/fitforme.png)
 >
 > \
 > **FitForMe**\
@@ -47,7 +47,7 @@ Einige unserer Kunden
 
 > "Mit Hilfe der Software kann PRA personalisierte E-Mailings versenden
 > an unsere Freiwilligen, die an Arzneimittelforschung teilnehmen
-> möchten." ![](testimonials/praintl.png)
+> möchten." ![](../images/praintl.png)
 >
 > \
 > **PRA International**\

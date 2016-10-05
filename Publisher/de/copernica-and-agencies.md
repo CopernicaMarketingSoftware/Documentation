@@ -40,7 +40,7 @@ What our users say
 > "Mit Copernica haben wir eine leistungsfähige Software, um Aufträge
 > für Kunden auszuführen. Kombinationen mit E-Mail, Handy und PDF können
 > problemlos von einer einzigen Umgebung betrieben werden."
-> ![](testimonials/redhotminute.png)
+> ![](../images/redhotminute.png)
 >
 > \
 > **Redhotminute**\
@@ -48,7 +48,7 @@ What our users say
 
 > "Dank der Copernica Marketing Software sind wir in der Lage, unsere
 > Kunden besser zu bedienen und einen ausgezeichneten Service zu
-> bieten." ![](testimonials/cream.png)
+> bieten." ![](../images/cream.png)
 >
 > \
 > **Cream**\

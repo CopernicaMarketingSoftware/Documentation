@@ -152,7 +152,7 @@ Datenbank darstellen, wenn Sie sie nicht vernünftig maskieren. Denken
 Sie nur an die Geschichte von ‘little bobby drop tables’\
 \
 ![Little Bobby Drop
-Tables](Copernicacom/droptables.jpg "Little Johnny Drop Tables")
+Tables](../images/droptables.jpg "Little Johnny Drop Tables")
 
 Das Copernica zugrundeliegende Framework verhindert solche Fälle, da
 Copernica alle Datenbank-Anfragen mit sogenannten Platzhaltern

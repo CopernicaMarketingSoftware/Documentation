@@ -10,13 +10,13 @@ Einige E-Mail-Clients zeigen nur den ersten Frame eines animierten GIFs
 an. Nehmen wir zum Beispiel die folgende animierte Grafik: Wie Sie sehen
 können, erscheint der Call-to-Action am Ende der Animation.
 
-![](gif-animation-4frames.gif)
+![](../images/gif-animation-4frames.gif)
 
 Im folgenden Beispiel können Sie sehen, wie dieses animierte GIF in
 einem E-Mail-Client angezeigt wird, der keine animierten Grafiken
 unterstützt.
 
-![](gif-animation-make-first-frame-count.gif)
+![](../images/gif-animation-make-first-frame-count.gif)
 
 Wo ist der Call-to-Action-Button? Nicht im ersten Frame. Dieses Beispiel
 zeigt, warum Sie dem ersten Frame einer Animation besondere Bedeutung
@@ -77,11 +77,11 @@ möglich nutzen, können Sie die Dateigröße klein halten.
 
 Animierte GIFs
 
-![Fünf Frames, 64 Farben](gif-animation-4frames.gif)
+![Fünf Frames, 64 Farben](../images/gif-animation-4frames.gif)
 
-![Fünf Frames, 64 Farben](gif-animation-5frames.gif)
+![Fünf Frames, 64 Farben](../images/gif-animation-5frames.gif)
 
-![Fünf Frames, 64 Farben](gif-animation-6frames.gif)
+![Fünf Frames, 64 Farben](../images/gif-animation-6frames.gif)
 
 **1**
 Anzahl der Frames: 5
