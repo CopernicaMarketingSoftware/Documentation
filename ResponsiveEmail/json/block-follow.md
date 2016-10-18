@@ -50,11 +50,6 @@ the basic usage, showing a set of follow buttons.
             "platforms" :  {
                 "facebook" : "copernica",
                 "twitter"  : "https://twitter.com/copernica"
-            },
-            "facebook" : {
-                "attributes" : {
-                    "data-tag" : "facebook click"
-                }
             }
         } ]
     }
