@@ -13,7 +13,7 @@ Create your own emails with our templates
 emailings](../images/create-email-content-copernica.gif "Create your own emailings with the help of our templates")
 
 Want to create your own professionally designed email? Thats no problem
-with Copernica’s WYSIWYG editor. You can easily edit your own emails,
+with Copernica's WYSIWYG editor. You can easily edit your own emails,
 format your document just the way you want it and fill it with the
 content you want.
 
