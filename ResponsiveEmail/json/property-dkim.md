@@ -19,6 +19,7 @@ keys, although it is allowed.
 | algorithm | _string_ | The hashing algorithm to use, sha1 or sha256     |
 | headers   | _array_  | Custom headers to include in the signature       |
 | expire    | _string_ | Expiration timestamp for the signature           |
+| priority  | _integer_| The relative priority of this key                |
 
 For a valid signature, you need to specify a domain, selector and private key. 
 The hashing algorithm is optional. If it is not set, the "sha256" algorithm is used. 
@@ -31,12 +32,16 @@ By default, all the regular MIME header fields are used to sign the email: "from
 "to", "message-id", "subject" et cetera. If you have custom fields that you want 
 to include in the signature too, you can add an extra "headers" property holding 
 an array of the headers that you also want to be signed. This is often used
-to sign the "feedback-id" header that required for Gmail feedback loops.
+to sign the "feedback-id" header that is required for Gmail feedback loops.
 
 A DKIM signature can have an expire time. By adding the "expire" property
 to your JSON, you can include this expiration time in the signature. The
 expire time is optional however.
 
+If you add multiple DKIM keys to your message you can specify the order in
+which they are used to sign the MIME. This may be important for certain mail servers
+that only use the first few DKIM signatures to check the validity of a message.
+The signature of a DKIM key with *low* priority will appear at the *top* of your message.
 
 ## Example Code
 
@@ -52,7 +57,8 @@ expire time is optional however.
         "selector": "dkim1",
         "key": "MIIBOwIBAAJ....MbXHLl/QHFg==",
         "headers": [ "feedback-id" ],
-        "expire": "2016-10-01 00:00:00"
+        "expire": "2016-10-01 00:00:00",
+        "priority": 10
     },
     "content": {
         "blocks": [ {
@@ -82,11 +88,13 @@ to the mail, one with an expire time, and one without:
         "domain": "example.com",
         "selector": "dkim1",
         "key": "MIIBOwIBAAJ....MbXHLl/QHFg==",
-        "expire": "2016-10-01 00:00:00"
+        "expire": "2016-10-01 00:00:00",
+        "priority": 10
     }, {
         "domain": "example.com",
         "selector": "dkim2",
         "key": "MD8CAQACCQD....2AjNECBB0/WTE"
+        "priority": -2
     } ],
     "content": {
         "blocks": [ {
