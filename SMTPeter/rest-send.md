@@ -72,6 +72,19 @@ the envelope address, you can also add a ["dsn" property](rest-dsn) to
 specify the type of bounce messages you want to receive.
 
 
+## Send using a template
+
+It is also possible to send a mail using an existing template. To do this, you have
+to provide the identifier of the template using the "template" property. 
+
+````json
+{
+    "recipient":    "john@doe.com",
+    "template":     12
+}
+````
+
+
 ## Multiple recipients
 
 To send a single message to multiple recipients, remove the "recipient"

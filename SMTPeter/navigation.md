@@ -19,6 +19,7 @@
     * [JSON vs POST data](json-vs-post)
     * [Sending mail](rest-send)
     * [Construct MIME](rest-mime)
+    * [Templates](rest-templates)
     * [Configuration via REST](rest-configuration)
     * [Log files](rest-logfiles)
     * [DMARC reports](rest-dmarc)
