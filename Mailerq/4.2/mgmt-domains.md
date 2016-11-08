@@ -3,6 +3,7 @@
 The Domains view shows you live message statistics on a per-domain basis. 
 Clicking on a domain takes you to a domain-specific view that show the message statistics
 for the domain, in a similar format as the [the Overview page](mgmt-overview#filtering-the-graph).
+
 If there is something wrong with deliveries to a certain domain the domain page will warn you about
 all irregularities that occur. 
 
