@@ -75,19 +75,19 @@ on the handling of your message.
     </tr>
     <tr>
         <td>x-mq-dsn-notify</td>
-        <td>to be documented</td>
-    </tr>
-    <tr>
-        <td>x-mq-dsn-orcpt</td>
-        <td>to be documented</td>
+        <td>the events for which to receive a DSN</td>
     </tr>
     <tr>
         <td>x-mq-dsn-ret</td>
-        <td>to be documented</td>
+        <td>whether to send the full body or just the headers in DSN</td>
+    </tr>
+    <tr>
+        <td>x-mq-dsn-orcpt</td>
+        <td>the original recipient for the DSN</td>
     </tr>
     <tr>
         <td>x-mq-dsn-envid</td>
-        <td>to be documented</td>
+        <td>unique identifier for the DSN message</td>
     </tr>
     <tr>
         <td>x-mq-keepmime</td>
