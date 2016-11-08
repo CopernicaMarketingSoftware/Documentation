@@ -89,7 +89,7 @@ lock: <filename>            (default: /tmp/mailerq.pid)
 MailerQ sends a hourly message to Copernica. This message contains some use statistics
 for that hour, e.g. the number of errors that occured. This information is used
 to improve MailerQ. Users with a paid license can disable this message by adding
-the heartbeat-enabled to the config file:
+the heartbeat-enabled property to the config file:
 
 ````
 heartbeat-enabled:      false    (default: true)
