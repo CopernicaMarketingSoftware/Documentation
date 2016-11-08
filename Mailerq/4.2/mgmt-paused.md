@@ -1,11 +1,14 @@
 # Management Console: Paused deliveries
 
-The Paused deliveries view shows you exactly what email deliveries are currently 
-paused. It shows which MTA is paused to which remote IP/domain and until 
-when the delivery is paused, and allows you to resume them.  You can
-manually pause email deliveries if necessary.  Manually paused MTAs are shown 
-here as well.
+If there is an issue with some deliveries or if a domain does not respond well to your messages, you may want
+to temporarily stop MailerQ from sending them. You can do this either automatically, by configuring a 
+[flood-pattern](mgmt-throttling), or manually by specifying either an MTA-domain combination or a tag.
 
+The Paused deliveries view shows you exactly what email deliveries are currently paused and gives you the
+option to resume them. New paused deliveries can be added using the appropriate button in the overview.
+If you want to pause an MTA-domain combination, note that you can use a wildcard "*" to indicate that
+deliveries from (or to) all IPs should be paused. The entire application can be paused by setting both
+the source and target to a wildcard.
 
 # Management Console: Redirected deliveries
 

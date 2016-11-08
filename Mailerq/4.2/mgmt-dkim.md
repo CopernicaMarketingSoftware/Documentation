@@ -1,4 +1,4 @@
-# Management Console: DKIM keys
+# Management Console: DKIM keys and ARC signing
 
 MailerQ supports DKIM (Domain Key Identified Mail) and ARC (Authenticated Received Chain), methods for email 
 authentication. Internally, MailerQ stores a list of private keys that
@@ -6,25 +6,27 @@ are used for signing email messages. All messages that flow through
 MailerQ are matched with these keys, and get signed.
 
 The list of DKIM keys can be managed via the management console, or you
-can access the database directly to insert or update these private keys. 
+can access the database directly to insert or update the private keys. 
 Each of these keys can be used for DKIM and/or ARC signing.
 
 
 ## Adding DKIM keys using the management console
 
-To add a new DKIM key in the management console, simply go the DKIM keys 
+To add a new DKIM key in the management console, simply go to the DKIM keys 
 page and press the link to add a new DKIM key. Here you will see a 
 form to enter the domain name, selector and private key.
 
 The domain name and selector define the DNS record where the public key 
 for the DKIM should be published. If you install a key for domain "example.com" 
 using selector "myselector", all email receivers expect the public key for your 
-domain to be found in the DNS TXT record with the name "myselector._domainkey.example.com". 
+domain to be found in the DNS record with the name "myselector._domainkey.example.com".
+In the "DNS record" section at the bottom of the page you can find an auto-generated
+DNS entry for this DKIM key in most common formats.
+
 Be aware that it is your task to make sure that this DNS record exists, and 
 that it holds the public key that matches the private key installed in MailerQ.
-To prevent that you accidentally send out signed emails while you do not have
-published the public key in DNS, MailerQ checks your DNS records and refuses
-to sign messages without a valid DNS configuration.
+To prevent MailerQ from signing messages with such a key, you can check the option
+"Only use this key if it matches the public key found in DNS".
 
 The "privatekey" field holds your private key, and is needed by MailerQ to 
 sign the mails. The keys are called "private" for a very good reason:
@@ -33,6 +35,28 @@ If you use the management console for editing private keys, we therefore highly
 recommend to use HTTPS for the management console, otherwise man-in-the-middles
 could capture your private keys.
 
+MailerQ will include any headers specified in the "Additional headers" field in the 
+DKIM signature. Any changes in one of these headers will invalidate the DKIM signature,
+so it is wise to be somewhat conservative in the specification of additional headers.
+
+Finally, it is possible to specify an expiration date and a key priority.
+The expiration date is part of the DKIM specification and can be used to indicate
+how long you will be using the key. The key priority is a feature of MailerQ which
+allows you to specify the order in which DKIM signatures appear in the MIME body of a message.
+Some receiving servers only read the first few DKIM signatures in a message if they want to 
+determine the validity of a message, which means it can be useful to add your most important keys
+first.
+Note that a *lower* priority means that the DKIM signature appears *first* in the MIME body
+and that the default priority is 0. If you want to make sure that a DKIM key appears on top
+you should therefore set it to a large negative number.
+
+## ARC signatures
+
+Although the ARC standard is still in development, MailerQ can already sign messages with broken DKIM signatures with the necessary ARC headers.
+Behind the scenes the ARC specification is rather complicated, but borrows a lot of ideas from DKIM.
+It is therefore enough to simply set the "Signature type" of a DKIM key to "ARC" (or "Both" if you also want to add a DKIM signature)
+and MailerQ will decide when and how to add an ARC signature to your message.
+If you want to test the ARC algorithm first, you can visit our [ARC test page](http://arc.copernica.com).
 
 ## DKIM signing patterns
 
@@ -81,6 +105,7 @@ A JSON message holding a DKIM key will look something like this:
         "domain"  : "the domain that holds the DKIM key, e.g. example.com",
         "key"     : "your private key",
         "expire"  : "2017-01-01 00:00:00",
+        "priority": 5
         "protocols" : ["dkim", "arc"]
     }
 }
@@ -111,10 +136,12 @@ in the JSON data. A JSON message with mulitple DKIM keys will look something lik
             "domain"   : "example.com", 
             "key"      : "key",
             "expire"   : "2017-01-01 00:00:00"
+            "priority" : -2
         }, {
             "selector" : "dkim",
             "domain"   : "example.com", 
-            "key"      : "key"
+            "key"      : "other_key"
+            "priority" : 10
         } 
     ]
 }

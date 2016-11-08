@@ -22,6 +22,10 @@ on the handling of your message.
         <td>IP address to send mail from</td>
     </tr>
     <tr>
+        <td>x-mq-tag</td>
+        <td>adds a tag to the message</td>
+    </tr>
+    <tr>
         <td>x-mq-delayed</td>
         <td>time when message should be sent</td>
     </tr>
@@ -160,6 +164,21 @@ MailerQ will pick one of the IPs to send out the mail. Be aware that you
 can of course only use addresses that are actually bound to the host that MailerQ 
 runs on. Other IP addresses will result in failed deliveries.
 
+## Tags
+
+You may be injecting different types of messages into MailerQ, for example messages belonging to
+your various customers or campaigns. To help you get a better overview, MailerQ allows you to tag 
+your messages with one or more labels of your choosing. These tags will show up in the management 
+console, allowing you to monitor and control all deliveries belonging to a tag. 
+To add a tag in a MIME email you can add one or more "x-mq-tag" properties to the header:
+
+````
+x-mq-tag: Customer Name
+x-mq-tag: Example Campaign
+````
+
+MailerQ will track messages belonging to a tag and allow you to monitor them in the 
+management console. See the [tags page](mgmt-tags) for more information.
 
 ## Delivery time
 

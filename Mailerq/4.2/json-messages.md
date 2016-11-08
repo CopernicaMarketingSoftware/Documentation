@@ -91,6 +91,10 @@ mail. The following properties are recognized by MailerQ:
         <td>smarthost</td>
         <td>smarthost settings</td>
     </tr>
+    <tr>
+        <td>tags</td>
+        <td>the tags to add to the message</td>
+    </tr>
 </table>
 
 
@@ -208,6 +212,26 @@ used for messages that were delayed and that are published back to RabbitMQ. Mai
 takes care of removing the mime from the JSON, and stores it in the message
 store when delayed messages are published back to RabbitMQ.
 
+## Tagging messages
+
+You may be injecting different types of messages into MailerQ, for example messages belonging to
+your various customers or campaigns. To help you get a better overview, MailerQ allows you to tag 
+your messages with one or more labels of your choosing. These tags will show up in the management 
+console, allowing you to monitor and control all deliveries belonging to a tag. 
+To specify the tags in the JSON you can add a "tags" property with an array containing all the labels:
+
+````json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "tags": ["Customer Name", "Example Campaign"]
+    ...
+}
+````
+
+This is just an example, you are free to add any number of tags to your messages and interpret them
+as you wish. There are virtually no restrictions on the format of a tag; all characters including punctuation
+and international characters are accepted in the tag specification as long as the message is valid JSON.
 
 ## Keep messages after delivery
 
@@ -218,7 +242,7 @@ the results queue, where you can pick it up for further processing.
 By default, MailerQ throws away the mime data to make room in the JSON object and 
 in the message store. The result queues only hold the meta data for each
 sent message, but not the full mime data. If you do not want the message data 
-to be removed, you can tell so by adding the "keepmime" option:
+to be removed, you can indicate this by adding the "keepmime" option:
 
 ````json
 {
