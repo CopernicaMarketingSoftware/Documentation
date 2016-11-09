@@ -1,15 +1,14 @@
 # REST API method: templates
 
 The templates that can be managed via the dashboard, are also accessible
-through the REST API. You can for example use the API to down templates in 
-different formats, or you can edit or create templates using REST. It is also 
+through the REST API. The API offers methods to download templates, and
+methods to edit or create templates. It is also 
 possible to [send an email](rest-send) using these templates.
 
 ## Fetch templates
 
-To get a full list of all templates in your environment, you can simply
-make a HTTP GET call to the following URL (you of course need to add your
-API key to this URL):
+To get a full list of all templates in your environment, simply make a HTTP 
+GET call to the following URL (remember to to add your API key to the URL):
 
 ````text
 https://www.smtpeter.com/v1/templates/{start}/{length}
