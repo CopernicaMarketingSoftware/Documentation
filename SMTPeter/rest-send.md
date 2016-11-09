@@ -1,12 +1,16 @@
 # REST API method: send
 
+To instruct SMTPeter to send out a message, you simply have to HTTP POST
+the message that you like to delivery to the "send" method:
+
 ```text
 https://www.smtpeter.com/v1/send
 ```
 
-To send email using the REST API you use the "send" method. The method
-is only accessible via HTTP POST, and the body should contain all data
-of the mail, plus the features.
+The body should contain the email message that you want to send, plus the 
+SMTPeter features that you want to activate. The message can be supplied in
+many different formats: as a raw MIME string, or as individual properties
+to let SMTPeter construct the mime:
 
 ```text
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
@@ -24,14 +28,14 @@ Content-Length: 246
 ```
 
 The above example call demonstrates how to send an email to john@doe.com.
-We've used a JSON example, but it is also possible to submit the mail
+We've passed all data as JSON, but it is also possible to submit the mail
 using normal url encoded HTTP POST data. In all subsequent examples on 
 this page, we will just show the JSON code and omit the headers.
 
 
 ## Return value
 
-After successfully posting your request SMTPeter sends back a result 
+After successfully posting your request, SMTPeter sends back a result 
 JSON object holding a unique identifier for each recipient to which
 the mail will be delivered.
 
@@ -43,7 +47,9 @@ the mail will be delivered.
 ````
 
 The returned ids can be used to obtain information using other methods of the
-REST API.
+REST API. Because you can send a message to multiple recipients with a 
+single call, the returned value may contains multiple ids and recipients. 
+
 
 
 ## Minimal properties
@@ -116,7 +122,9 @@ recipient, you can add the personal data with property "data".
     }
 }
 ```
+
 If you have multiple recipients, the data can be passed as follows:
+
 ```json
 {   
     "recipients" : [
