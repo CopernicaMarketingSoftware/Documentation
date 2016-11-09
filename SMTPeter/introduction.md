@@ -29,6 +29,7 @@ your delivery, and enhance your mail. Check our features:
 * [SPF validation](spf-validation)
 * [DKIM signing](dkim-signing)
 * [DMARC deployment](dmarc-deployment)
+* [Email templates](templates)
 * [Email archiving](archiving)
 * [Web version hosting](webversion)
 * [Follow up actions and scripting](scripting)
