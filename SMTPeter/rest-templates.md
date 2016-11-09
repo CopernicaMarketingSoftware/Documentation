@@ -17,7 +17,7 @@ https://www.smtpeter.com/v1/templates/{start}/{length}
 The "templates" method is only available using the HTTP GET method. The url may 
 contain a start and length value to limit the list of templates that is returned. 
 If these limits are ommitted, the default values of 0 and 100 are
-used. This call returns a value in the following format:
+used. This call returns a JSON array in the following format:
 
 ````json
 [
@@ -56,14 +56,14 @@ format. But you can also ask SMTPeter to return the template in other formats:
 - embedded: return the template in MIME format, with embedded images;
 - text: return the text version of the template.
 
-You can provide extra personalization variables in the GET request, these will
-be use to personalize the template. If no variables are provided, the template
+You can provide extra personalization variables in the GET request, that are
+uses to personalize the template. If no variables are provided, the template
 will not be personalized.
 
 
 ## Creating templates
 
-To create a template you need to send a HTTP POST request to SMTPeter:
+To create a new template you can send a HTTP POST request to SMTPeter:
 
 ````text
 https://www.smtpeter.com/v1/template/{format}
@@ -73,12 +73,11 @@ Inside the body data, you must pass the JSON source of your template. The
 full specification of the supported properties can be found on the
 [ResponsiveEmail.com website](https://www.responsiveemail.com).
 
-The API returns a link to the new template in the "Location" header, and the 
-output JSON. You can optionally pass a format to the URL, to tell SMTPeter
-to redirect to an other URL instead. Note that this "format" option only 
-changes the "location" header in SMTPeter's answer. If you want to store a 
-new template, you must always send JSON data, no matter what formatting type
-you pass to the URL.
+The API returns a link to the new template in the "Location" header of the
+HTTP response, and a small JSON object holding the template ID. You can 
+optionally pass a format-name to the URL, to tell SMTPeter to redirect to an 
+other URL instead. Note that this "format" option only changes the "location"
+header in SMTPeter's answer; the body data of your POST call must be JSON.
 
 Example request:
 
