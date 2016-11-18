@@ -82,11 +82,11 @@ version over the current stable one, or when you want to try the bleeding edge
 development version, you should append a version number.
 
 ```
-sudo apt-get install mailerq-4.1
+sudo apt-get install mailerq-4.2
 sudo apt-get install mailerq-dev
 ```
 ```
-sudo yum install mailerq-4.1
+sudo yum install mailerq-4.2
 sudo yum install mailerq-dev
 ```
 
@@ -98,7 +98,7 @@ a great way to keep an eye on MailerQ improvements.
 Note that if you run a specific version of MailerQ, the location of the config
 file changes too. By default, MailerQ loads it configuration from "/etc/mailerq/config.txt",
 but if you install an explicit version the version number is included in the 
-filename of the config file (for example "/etc/mailerq/config-4.1.txt" or 
+filename of the config file (for example "/etc/mailerq/config-4.2.txt" or 
 "/etc/mailerq/config-dev.txt").
 
 
@@ -111,11 +111,11 @@ If you prefer using a dynamically linked version, add '-shared' to the package n
 
 
 ```
-sudo apt-get install mailerq-4.1-shared
+sudo apt-get install mailerq-4.2-shared
 sudo apt-get install mailerq-dev-shared
 ```
 ```
-sudo yum install mailerq-4.1-shared
+sudo yum install mailerq-4.2-shared
 sudo yum install mailerq-dev-shared
 ```
 
