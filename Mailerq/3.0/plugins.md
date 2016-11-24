@@ -112,4 +112,4 @@ When compiling your extension, we recommend using hidden visibility for all func
 
 ## Do you find the API too limited?
 
-Because our plugin interface was only recently added to MailerQ, if may feel that vital functionality is missing or that you need other callbacks to your plugin. In such a situation you can best post a [feature request](/forum/category/50) on our forum, so that we can accomodate your needs and implement your request!
+Because our plugin interface was only recently added to MailerQ, if may feel that vital functionality is missing or that you need other callbacks to your plugin. In such a situation you can best send us a message, so that we can accomodate your needs and implement your request!

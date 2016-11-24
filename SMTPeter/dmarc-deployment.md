@@ -21,7 +21,7 @@ there is for this receiver no way to find out whether this mail was sent
 by a malicious phisher, or by the employee who simply forgot
 to update. The simple fact that a DKIM signature is missing, or that there
 was no matching SPF record _could_ be an indication that something is
-terribly wrong, but it could also be a small mistake. So even though we 
+terribly wrong, but it could also be a small mistake. So even though 
 DKIM and SPF were introducted, there was still no good way to 
 distinguish valid mails from abuse. DMARC is a technology to solve this.
 
