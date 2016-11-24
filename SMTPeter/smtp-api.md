@@ -7,19 +7,16 @@ easily integrate SMTPeter in your existing mail infrastructure, and you can
 even set up traditional email clients like Outlook, Thunderbird or your 
 mobile devices to send all messages through SMTPeter.
 
-To use the SMTP API there are a few things you need to do. First you need to
-create an SMTP login via the dashboard. This SMTP login is used to authenticate 
-with SMTPeter. The login has to be included in the SMTP handshake whenever 
-you send email via SMTPeter. In order to login you should configure your 
-application to authenticate with 
+To use the SMTP API you need to authenticate yourself to our servers,
+so you should configure your application to authenticate with 
 [AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
+You can create different SMTP logins via the SMTPeter dashboard. 
+So you can for make different logins for different users, and/or enable or disable specific features such
+as click tracking, for different logins.
 
-It is possible to create multiple logins. You can for example make different
-logins for different users, and/or to enable or disable specific features per
-login. You can for example set up a login that with click tracking enabled,
-and a second login for which this feature is disabled. Based
-on your needs, you can then use one of these logins to inject mail.
- 
+If you do not want to bother with different accounts, you can instead use the 
+email/password combination of your SMTPeter account or Copernica account to login.
+Note however that most additional features, including tracking of clicks and opens, are disabled for this option.
 
 ## Examples
 
