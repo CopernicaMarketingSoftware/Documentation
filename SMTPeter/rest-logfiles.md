@@ -40,22 +40,15 @@ returns a list of all available log files.
 
 ````json
 [
-    "attempts.20160320082244.0.log",
-    "attempts.20160320121703.0.log",
-    "clicks.20160320113322.0.log",
-    "opens.20160320113503.0.log",
-    "dmarc.20160320030255.0.log"
+    "attempts.2016-03-20.log",
+    "clicks.2016-03-20.log",
+    "opens.2016-03-20.log",
+    "dmarc.2016-03-20.log"
 ]
 ````
 
-The names of the log files have the form "PREFIX.DATETIME.ID.log". The 
-"ID" part in each log file is used to prevent naming conflicts. If multiple 
-SMTPeter servers need to write to the log simultaneously, they use different 
-ids. The consequence is that it is possible that an event that happened on 
-time X does not show up in the log file that was started right before X, 
-but in an older one. Keep this in mind if you search through the logs.
-
-The "PREFIX" tells you what sort of events get logged. The following 
+The names of the log files have the form "PREFIX.DATE.log". The "PREFIX" 
+tells you what sort of events get logged. The following 
 prefixes exist:
 
 | Prefix                                                | Description                                           |
@@ -78,7 +71,7 @@ To download a log file in the CSV format you, append the name of a log
 file to the REST API url. You should use a HTTP GET call to get the log file
 
 ````text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log
+https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log
 ````
 
 This returns a CSV file without any variable names. If you want to have
@@ -86,7 +79,7 @@ variable names on the first line of your CSV file, you append header to the
 call.
 
 ````text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/header
+https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/header
 ````
 The exact names are given in the articles on the specific logfile (see the
 table above). Note that Some fields in the returned CSV file contain
@@ -96,7 +89,7 @@ To download the file in JSON format you add "/json" to the filename you
 want to download.
 
 ````text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/json
+https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/json
 ````
 You JSON that you receive is an array containing JSON objects that have
 as properties the names of the variables. These names are given in the
@@ -106,7 +99,7 @@ Finally if you want to download the files in XML format you add "/xml" to
 the file name you want to download.
 
 ```text
-https://www.smtpeter.com/v1/logfiles/attempts.20160320082244.0.log/xml
+https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/xml
 ```
 
 The format of the xml file is as follows
@@ -131,4 +124,4 @@ The format of the xml file is as follows
 </records>
 ```
 The NAMEs can be found in the articles on the specific log file articles
-(see table above).
+(see the table above).
