@@ -101,3 +101,12 @@ not yet been documented.
 | [/miniview/$miniviewID](./miniview.md) | GET, PUT |
 | [/miniview/$miniviewID/rules](./minirules.md) | GET, POST\* |
 | [/minirule/$miniruleID](./minirule.md) | GET, PUT |
+
+| Logfile mehtods | methods |
+| --------------- | ------- |
+| [/logfiles](./logfiles.md) | GET |
+| [/logfiles/$date](./logfiles-type.md) | GET |
+| [/logfiles/$filename](./logfiles-content.md) | GET |
+| [/logfiles/$filename/header](./logfiles-content.md) | GET |
+| [/logfiles/$filename/json](./logfiles-content.md) | GET |
+| [/logfiles/$filename/xml](./logfiles-content.md) | GET |
