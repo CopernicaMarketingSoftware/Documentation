@@ -3,6 +3,8 @@ In deze Copernica-tutorial leer je hoe je binnen het onderdeel
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SLNreijqv-Q?list=PLgCg-YR2FABZQ8gozmEye1X__x8_bFp1V" frameborder="0" allowfullscreen></iframe>
+
 Hoe creëer je een nieuwe database?
 ----------------------------------
 
