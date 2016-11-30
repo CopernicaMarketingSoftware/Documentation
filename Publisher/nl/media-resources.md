@@ -82,13 +82,12 @@ Wil je graag de productvideo van Copernica gebruiken op je eigen website
 of meenemen in een van je online campagnes? Kopieer en plak dan de
 volgende embed-code in de HTML-broncode van je webpagina of campagne:
 
-\<object width="560" height="315"\>\<param name="movie"
-value="http://www.youtube.com/v/\_1SG3qRvRDw?hl=en\_US&version=3"\>\</param\>\<param
-name="allowFullScreen" value="true"\>\</param\>\<param
-name="allowscriptaccess" value="always"\>\</param\>\<embed
-src="http://www.youtube.com/v/\_1SG3qRvRDw?hl=en\_US&version=3"
-type="application/x-shockwave-flash" width="560" height="315"
-allowscriptaccess="always" allowfullscreen="true"\>\</embed\>\</object\>
+<object width="560" height="315">
+    <param name="movie" value="http://www.youtube.com/v/_1SG3qRvRDw?hl=en_US&version=3"></param>
+    <param name="allowFullScreen" value="true"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed src="http://www.youtube.com/v/_1SG3qRvRDw?hl=en_US&version=3" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
 
 Meer weten?
 -----------
