@@ -3,6 +3,8 @@ Profil-Ebene nutzen können.
 
 -   [Zurück zu den Videos](./video-tutorials.md "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XHBx3-qCzJw?list=PLgCg-YR2FABYzqpQwqF3eQjlfCtyBikTA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Weiter:** [Miniauswahl](./profiles-creating-a-miniselection.md "Miniauswahl")
 
 In diesem Copernica-Tutorial zeigen wir Ihnen, wie Sie Miniauswahlen auf

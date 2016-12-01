@@ -3,6 +3,8 @@ hoe je velden aanmaakt in je database.
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SZOJXA9faDU?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 Aanmaken van velden
 -------------------
 

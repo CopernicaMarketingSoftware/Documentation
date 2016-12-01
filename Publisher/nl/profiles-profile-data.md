@@ -1,6 +1,8 @@
 In deze Copernica-tutorial leer je welke informatie je terugvindt in een
 profiel.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oJkHzPl_5Fs?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Profielen in een database in Copernica bevatten allerlei gegevens. Naast

@@ -1,6 +1,8 @@
 In deze Copernica-tutorial leer je hoe je een miniselectie maakt op
 selectieniveau.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w7NUxzMpfKY?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
 Wat is een miniselectie op selectieniveau?

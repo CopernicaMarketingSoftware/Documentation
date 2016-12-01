@@ -16,45 +16,26 @@ with Copernica.
 
 Profiles
 
-1.  [Creating a database
-    (0:51)](http://www.copernica.com/en/support/video-tutorials/profiles-creating-a-database)
-2.  [Adding database fields
-    (3:06)](http://www.copernica.com/en/support/video-tutorials/profiles-adding-database-fields)
-3.  [Adding Collections
-    (2:48)](http://www.copernica.com/en/support/video-tutorials/profiles-adding-collections)
-4.  [Adding profiles and subprofiles
-    (1:27)](http://www.copernica.com/en/support/video-tutorials/profiles-adding-profiles-and-subprofiles)
-5.  [Profile data
-    (1:01)](http://www.copernica.com/en/support/video-tutorials/profiles-profile-data)
-6.  [Selections
-    (2:15)](http://www.copernica.com/en/support/video-tutorials/profiles-selections)
-7.  [Creating a miniselection
-    (2:22)](http://www.copernica.com/en/support/video-tutorials/profiles-creating-a-miniselection)
-8.  [Miniselection on selection level
-    (2:29)](http://www.copernica.com/en/support/video-tutorials/profiles-miniselection-on-selection-level)
+1.  [Creating a database (0:51)](./profiles-creating-a-database.md)
+2.  [Adding database fields (3:06)](./profiles-adding-database-fields.md)
+3.  [Adding Collections (2:48)](./profiles-adding-collections.md)
+4.  [Adding profiles and subprofiles (1:27)](./profiles-adding-profiles-and-subprofiles.md)
+5.  [Profile data (1:01)](./profiles-profile-data.md)
+6.  [Selections (2:15)](./profiles-selections.md)
+7.  [Creating a miniselection (2:22)](./profiles-creating-a-miniselection.md)
+8.  [Miniselection on selection level (2:29)](./profiles-miniselection-on-selection-level.md)
 
 Emailings
 
-1.  [Creating a new template
-    (1:05)](http://www.copernica.com/en/support/video-tutorials/emailings-creating-a-new-template)
-2.  [Creating a document
-    (1:26)](http://www.copernica.com/en/support/video-tutorials/emailings-creating-a-document)
-3.  [Using content blocks
-    (2:29)](http://www.copernica.com/en/support/video-tutorials/emailings-using-content-blocks)
-4.  [Adding personalization
-    (1:18)](http://www.copernica.com/en/support/video-tutorials/emailings-adding-personalization)
-5.  [Setting a test destination
-    (1:53)](http://www.copernica.com/en/support/video-tutorials/emailings-setting-a-test-destination)
-6.  [Creating a text version
-    (1:10)](http://www.copernica.com/en/support/video-tutorials/emailings-creating-a-text-version)
-7.  [Checking your document
-    (1:38)](http://www.copernica.com/en/support/video-tutorials/emailings-checking-your-document)
-8.  [Unsubscribe header
-    (2:45)](http://www.copernica.com/en/support/video-tutorials/emailings-unsubscribe-header)
-9.  [Sending a test mail
-    (0:58)](http://www.copernica.com/en/support/video-tutorials/emailings-sending-a-test-mail)
-10. [Sending an emailing
-    (3:04)](http://www.copernica.com/en/support/video-tutorials/emailings-sending-an-emailing)
-11. [Statistics
-    (3:46)](http://www.copernica.com/en/support/video-tutorials/emailings-statistics)
+1.  [Creating a new template (1:05)](./emailings-creating-a-new-template.md)
+2.  [Creating a document (1:26)](./emailings-creating-a-document.md)
+3.  [Using content blocks (2:29)](./emailings-using-content-blocks.md)
+4.  [Adding personalization (1:18)](./emailings-adding-personalization.md)
+5.  [Setting a test destination (1:53)](./emailings-setting-a-test-destination.md)
+6.  [Creating a text version (1:10)](./emailings-creating-a-text-version.md)
+7.  [Checking your document (1:38)](./emailings-checking-your-document.md)
+8.  [Unsubscribe header (2:45)](./emailings-unsubscribe-header.md)
+9.  [Sending a test mail (0:58)](./emailings-sending-a-test-mail.md)
+10. [Sending an emailing (3:04)](./emailings-sending-an-emailing.md)
+11. [Statistics (3:46)](./emailings-statistics.md)
 

@@ -3,6 +3,8 @@ Ihrer Datenbank neue Datenbankfelder anlegen können.
 
 -   [Zurück zu den Videos](./video-tutorials.md "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/25JJwSbJN10?list=PLgCg-YR2FABYzqpQwqF3eQjlfCtyBikTA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Vorherige:** [Datenbank anlegen](./profiles-creating-a-database.md "Datenbank anlegen")
 -   **Weiter:** [Hinzufugen von Sammlungen](./profiles-adding-collections.md "Hinzufugen von Sammlungen")
 

@@ -4,6 +4,8 @@ your database.
 -   [Back to Copernica video
     tutorials](http://www.copernica.com/en/support/video-tutorials "Video tutorials")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_8glH_Cxe9M" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 Create fields
 -------------
 
