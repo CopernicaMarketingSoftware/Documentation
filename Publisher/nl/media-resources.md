@@ -85,7 +85,7 @@ volgende embed-code in de HTML-broncode van je webpagina of campagne:
 sdfsdg
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_1SG3qRvRDw" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_1SG3qRvRDw" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
 
 
 Meer weten?

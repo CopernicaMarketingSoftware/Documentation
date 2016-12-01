@@ -1,3 +1,5 @@
+Profielen: Miniselectie aanmaken
+
 In deze Copernica-tutorial leggen we je uit wat een miniselectie is en
 hoe je er een aanmaakt.
 
