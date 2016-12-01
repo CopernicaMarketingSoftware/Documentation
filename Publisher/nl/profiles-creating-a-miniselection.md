@@ -1,7 +1,7 @@
 In deze Copernica-tutorial leggen we je uit wat een miniselectie is en
 hoe je er een aanmaakt.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/et5ayYRYDIM?list=PLgCg-YR2FABYzqpQwqF3eQjlfCtyBikTA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/et5ayYRYDIM?list=PLgCg-YR2FABYzqpQwqF3eQjlfCtyBikTA" frameborder="0" allowfullscreen="allowfullscreen">text</iframe>
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
