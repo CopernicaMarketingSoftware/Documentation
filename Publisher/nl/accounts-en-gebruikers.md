@@ -12,7 +12,7 @@ Het account- en gebruikersbeheer van Copernica kan soms wat ingewikkeld
 overkomen. Dit komt doordat Copernica veel met [partners](https://www.copernica.com/nl/support/partners) 
 werkt. Dit zijn bijvoorbeeld reclamebureaus, tekstschrijvers en DM en IT bedrijven 
 die eindgebruikers ondersteunen bij het inzetten van Copernica. Al deze partners 
-hebben op een meedere manieren toegang nodig tot de software, omdat ze de software
+hebben op meedere manieren toegang nodig tot de software, omdat ze de software
 enerzijds gebruiken voor hun eigen marketingcampagne, maar ook toegang moeten
 hebben om mee te kunnen kijken met hun klanten. Om dit mogelijk te maken, maken we 
 in het gebruikersbeheer onderscheid tussen "gebruikers", "accounts" en "bedrijven".
