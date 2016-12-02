@@ -64,7 +64,7 @@ Accounts en bedrijven
 ---------------------
 
 Zoals beschreven onderscheiden we gebruikers en accounts, en bestaat er eigenlijk
-altijd een relatie tussen een account en een bedrijf. De meeste accounts hebben
+altijd een relatie tussen een account en een bedrijf-in-de-echte-wereld. De meeste accounts hebben
 daarom ook de naam van een bedrijf. Voor veel Copernicagebruikers is dit voldoende.
 Voor partnerbedrijven ligt het echter wat ingewikkelder.
 
