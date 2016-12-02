@@ -79,7 +79,7 @@ syntax.
 
 Let nogmaals op, als je hyperlinks uit de geladen (sub)profielen wilt
 printen in de foreach-loop, gebruik dan \<code\>-tags. Voorbeeld:
-<code>{$Contact.hyperlink}</code>
+\<code\>{$Contact.hyperlink}\</code\>
 
 Meer informatie over foreach op de website van
 [Smarty](http://www.smarty.net/)
