@@ -76,22 +76,22 @@ dit in het gebruikersbeheer mogelijk te maken hebben we een driehoeksverhouding
 van gebruikers, bedrijven en accounts geïntroduceerd:
 
 <pre>
-    +---------------+
-    |               |         heeft toegang tot
-    |   Gebruiker   |   --------------------------------+
-    |               |                                   |
-    +---------------+                                   |
-                                                        |
-            |                                           |
-      werkt | bij                                       |
-            |                                           |
-            V                                           V
-
-    +---------------+                           +---------------+
-    |               |          betaalt          |               |
-    |    Bedrijf    |    ------------------>    |    Account    |
-    |               |                           |               |
-    +---------------+                           +---------------+
+            +---------------+
+            |               |         heeft toegang tot
+            |   Gebruiker   |   --------------------------------+
+            |               |                                   |
+            +---------------+                                   |
+                                                                |
+                    |                                           |
+              werkt | bij                                       |
+                    |                                           |
+                    V                                           V
+        
+            +---------------+                           +---------------+
+            |               |          betaalt          |               |
+            |    Bedrijf    |    ------------------>    |    Account    |
+            |               |                           |               |
+            +---------------+                           +---------------+
 </pre>
 
 Bovenstaande driehoeksverhouding maakt het mogelijk om allerlei soorten toegang
@@ -102,6 +102,19 @@ partner-klant.
 
 Maar het is ook mogelijk dat een bedrijf betaalt voor zijn eigen account, en
 een medewerker van een partnerbedrijf toegang geeft tot zijn account. Ook zulke
-relaties kunnen met worden gelegd.
+relaties kunnen met worden gelegd. In het gebruikersbeheer kun je, afhankelijk
+van je toegangsrechten, allemaal van dit soort relaties aanmaken.
 
+
+Hoe werkt dit in de praktijk?
+-----------------------------
+
+Zowel de oude Publisher omgeving als de nieuwe Marketing Suite stellen je in
+staat om gebruikers, accounts en bedrijfsgegevens te beheren. In al deze omgevingen
+kun je gebruikers koppelen aan bedrijven en kun je gebruikers koppelen aan 
+accounts. Als je een "gewone gebruiker" bent (dat wil zeggen je hebt een enkel 
+account waar je samen met een paar collega's toegang toe hebt), dan lijkt het 
+nogal dubbelop. Je moet twee lijsten beheren, en die lijsten zijn precies 
+hetzelfde. Maar je weet nu waarom dat zo is: je kunt hierdoor ook allerlei 
+andere koppelingen leggen.
 
