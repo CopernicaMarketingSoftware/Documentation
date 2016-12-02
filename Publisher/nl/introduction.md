@@ -15,8 +15,9 @@ manier zoals veel van onze gebruikers dat ook doen: als productnaam. Je zult in 
 documentatie dus kunnen teruglezen hoe je een template "in Copernica" kunt plaatsen,
 en waar je "binnen Copernica" de statistieken kan terugvinden.
 
-Om toegang te krijgen tot een Copernica omgeving heb je een login en wachtwoord
-nodig. Deze krijg je automatisch wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
+Bij het lezen van de documentatie kan het van pas komen om ook toegang te hebben
+tot de software. Daarvoor heb je een login en wachtwoord nodig. Deze krijg je automatisch
+wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
 Met deze gegevens kun je inloggen en beginnen met het inrichten van marketing
 campagnes.
 
