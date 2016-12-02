@@ -1,4 +1,5 @@
-* [Introductie](introduction.md)
+* [Introductie](introduction)
+    * [Accounts en gebruikers](accounts-en-gebruikers)
 * [Databasebeheer](database-management)
 * [Importeren en exporteren](import-and-export)
 * [Selecties en miniselecties](selections-and-miniselections)

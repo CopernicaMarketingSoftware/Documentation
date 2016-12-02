@@ -46,7 +46,7 @@ Copernica is al meer dan tien jaar actief als leverancier van softwaretoepassing
 en in die periode hebben we verschillende tools ontwikkeld. Zo leveren we het
 "on-premise" product [MailerQ](https://www.mailerq.com), de cloud-service
 [SMTPeter](https://www.smtpeter.com), en natuurlijk de online marketing
-automation tools "Publisher" en "Marketing Suite".
+automation tools "Publisher" en "Marketing Suite" die we hier bespreken.
 
 De functionaliteiten van "Publisher" en "Marketing Suite" overlappen elkaar 
 grotendeels: zowel Publisher als Marketing Suite zijn tools om online marketingcampagnes
