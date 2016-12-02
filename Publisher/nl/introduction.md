@@ -10,8 +10,13 @@ en [SMTPeter](https://www.smtpeter.com). De documentatie die je nu voor ogen heb
 gaat echter enkel over de Copernica Marketing Software - zeg maar het "standaard" 
 Copernica product.
 
-Om toegang te krijgen tot een marketing omgeving heb je een login en wachtwoord
-nodig. Deze krijg je automatisch wanneer je je aanmeldt via (www.copernica.com)[https://www.copernica.com].
+In de documentatie gebruiken we onze bedrijfsnaam, Copernica, op precies dezelfde
+manier zoals veel van onze gebruikers dat ook doen: als productnaam. Je zult in de
+documentatie dus kunnen teruglezen hoe je een template "in Copernica" kunt plaatsen,
+en waar je "binnen Copernica" de statistieken kan terugvinden.
+
+Om toegang te krijgen tot een Copernica omgeving heb je een login en wachtwoord
+nodig. Deze krijg je automatisch wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
 Met deze gegevens kun je inloggen en beginnen met het inrichten van marketing
 campagnes.
 
