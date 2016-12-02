@@ -1,5 +1,9 @@
+Profiles: Selections
+
 In this Copernica tutorial you’ll learn what a selection is and how to
 create one.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4zbN5G3Uhno?list=PLgCg-YR2FABZQ8gozmEye1X__x8_bFp1V" frameborder="0" allowfullscreen="allowfullscreen">   </iframe>
 
 -   [Back to
     overview](http://www.copernica.com/en/support/video-tutorials "Video tutorials")

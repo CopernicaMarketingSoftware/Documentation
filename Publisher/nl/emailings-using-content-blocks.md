@@ -1,7 +1,11 @@
+E-mailings: Werken met contentblokken
+
 In deze Copernica-tutorial leer je hoe je werkt met contentblokken in
 Copernica.
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ar3qDcwZeUg?list=PLgCg-YR2FABYm7GqM8_ZLDH98-DAc0yoq" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
 
 [E-maildocumenten](./emailings-creating-a-document.md)
 in Copernica voorzie je van eigen content door gebruik te maken van

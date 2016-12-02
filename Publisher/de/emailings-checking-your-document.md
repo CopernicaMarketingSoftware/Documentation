@@ -4,6 +4,8 @@ E-Mail-Dokument vor dem Versand prüfen können.
 -   [Zurück zu den
     Videos](http://www.copernica.com/de/support/videos "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h0Syj9Eoll0?list=PLgCg-YR2FABZ228s8MFSdvMbpwBj7N3RW" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Vorherige:** [Eine Textversionen
     erstellen](https://www.copernica.com/de/support/videos/e-mailings-eine-textversionen-erstellen "Eine Textversionen erstellen")
 -   **Weiter:** [Abmelde

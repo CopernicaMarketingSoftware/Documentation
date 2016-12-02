@@ -4,6 +4,9 @@ Testziels personalisierte Angaben in Ihren E-Mailings testen können.
 -   [Zurück zu den
     Videos](http://www.copernica.com/de/support/videos "Video's")
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xSkt9-8UQyQ?list=PLgCg-YR2FABZ228s8MFSdvMbpwBj7N3RW" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Vorherige:**
     [Personalisierung](https://www.copernica.com/de/support/videos/e-mailings-personalisierung "Personalisierung")
 -   **Weiter:** [Eine Textversionen

@@ -4,6 +4,8 @@ In diesem Copernica-Tutorial zeigen wir Ihnen, wie Sie unter
 -   [Zurück zu den
     Videos](http://www.copernica.com/de/support/videos "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oTouhkpdnpI?list=PLgCg-YR2FABZ228s8MFSdvMbpwBj7N3RW" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Vorherige:** [Vorlage
     erstellen](https://www.copernica.com/de/support/videos/vorlage-erstellen "Vorlage erstellen")
 -   **Weiter:** [Content

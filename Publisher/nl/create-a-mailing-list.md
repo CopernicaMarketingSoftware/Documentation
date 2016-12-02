@@ -1,3 +1,5 @@
+Nieuwsbrief selectie maken
+
 Volgens de wet mag je geen ongevraagde commerciele e-mails versturen, en
 moeten ontvangers zich te allen tijde kunnen uitschrijven van je
 mailinglijst. Je kan mensen die zich hebben uitgeschreven direct
@@ -9,6 +11,8 @@ profielen filtert op basis van de waarde in dat nieuwsbriefveld. Dit
 artikel legt stap voor stap uit hoe je dit zelf maakt.
 
 ### Hoe maak ik een nieuwsbriefselectie?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qekOfDg9tAE" frameborder="0" allowfullscreen>  </iframe>
 
 ### Nieuw databaseveld
 

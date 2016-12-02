@@ -4,10 +4,11 @@ In diesem Copernica-Tutorial zeigen wir Ihnen, wie Sie unter
 -   [Zurück zu den
     Videos](http://www.copernica.com/de/support/videos "Video's")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6NwTAlo--Fw?list=PLgCg-YR2FABZ228s8MFSdvMbpwBj7N3RW" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 -   **Weiter:** [Dokument
     erstellen](https://www.copernica.com/de/support/videos/e-mailings-dokument-erstellen "Dokument erstellen")
 
-\
 
 In diesem Copernica-Tutorial zeigen wir Ihnen, wie Sie unter
 "E-Mailings" neue E-Mail-Vorlagen erstellen können.

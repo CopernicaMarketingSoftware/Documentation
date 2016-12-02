@@ -1,8 +1,12 @@
+Profielen: Collectie aanmaken
+
 In deze Copernica-tutorial leer je hoe je een collectie aanmaakt in je
 database.
 
 -   [Terug naar de
     video's](./video-tutorials.md "Video's")
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5bxY6SlVU2Y?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
 
 Wat zijn collecties?
 --------------------

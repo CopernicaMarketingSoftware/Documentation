@@ -11,7 +11,7 @@ Vanuit het profiel personaliseren met profielgegevens
 Je kan in een publicatie direct gegevens uit het profiel ophalen met de
 Smarty code te verwijzen naar het corresponderende veld.
 
-Hallo {\$voornaam},
+Hallo {$voornaam},
 
 Vanuit het subprofiel personaliseren met subprofielgegevens
 -----------------------------------------------------------
@@ -20,7 +20,7 @@ Net als met profielen kan je in een publicatie direct gegevens uit het
 subprofiel ophalen met de Smarty code te verwijzen naar het
 corresponderende veld.
 
-Hallo {\$voornaam},
+Hallo {$voornaam},
 
 Let op: Wanneer je vanuit een collectie personaliseert, dient
 de standaardbestemming ook in een collectie te staan om de
@@ -38,9 +38,9 @@ Wanneer je gegevens wilt ophalen uit zowel het profiel als uit het
 subprofiel, dan dien je de bestemming in de personalitie te
 specificeren.
 
-**Gegevens uit het subprofiel:**{\$subprofile.veldnaam}
+**Gegevens uit het subprofiel:**{$subprofile.veldnaam}
 
-**Gegevens uit het profiel:**{\$profile.veldnaam}
+**Gegevens uit het profiel:**{$profile.veldnaam}
 
 Het document wordt zowel verstuurd naar profielen als naar subprofielen
 -----------------------------------------------------------------------
@@ -50,7 +50,7 @@ laten bepalen waar de gegevens vandaan moeten worden gehaald, gebruik je
 een ander voorvoegsel:
 
 Laad gegevens uit het profiel of uit het subprofiel:
-**{\$destination.veldnaam}**
+**{$destination.veldnaam}**
 
 Wanneer de mail wordt verzonden aan profielen, zal het eerst in het
 profiel kijken. Wordt de mail verstuurd aan subprofielen, dan kijkt het
@@ -70,7 +70,7 @@ gebruikt smarty foreach om door de subprofielen heen te loopen.
 Met de bovenstaande code loop je door de collectie *Contacts* en dit
 wijs je toe aan de variabel *Contact*.
 
-De code {\$Contact.id} zal in het document alle ID's van de subprofielen
+De code {$Contact.id} zal in het document alle ID's van de subprofielen
 weergeven.
 
 Let op, het bovenstaande *foreach* voorbeeld kan alleen worden gebruikt
@@ -79,7 +79,7 @@ syntax.
 
 Let nogmaals op, als je hyperlinks uit de geladen (sub)profielen wilt
 printen in de foreach-loop, gebruik dan \<code\>-tags. Voorbeeld:
-\<code\>{\$Contact.hyperlink}\</code\>
+\<code\>{$Contact.hyperlink}\</code\>
 
 Meer informatie over foreach op de website van
 [Smarty](http://www.smarty.net/)

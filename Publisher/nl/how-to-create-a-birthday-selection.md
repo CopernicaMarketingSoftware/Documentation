@@ -1,3 +1,7 @@
+Een verjaardagselectie maken
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HJjtWGa7qtg" frameborder="0" allowfullscreen>  </iframe>
+
 Een verjaardagselectie bevat dagelijks nieuwe contacten. Deze contacten
 zijn jarig. Daarom zitten ze in de selectie. Neem de volgende stappen om
 ook zo'n selectie te maken.

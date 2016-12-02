@@ -1,7 +1,11 @@
+Profielen: Database aanmaken
+
 In deze Copernica-tutorial leer je hoe je binnen het onderdeel
 'Profielen' een nieuwe database creëert.
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Um2RrxKH3AM?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
 
 Hoe creëer je een nieuwe database?
 ----------------------------------
