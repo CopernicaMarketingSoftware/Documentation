@@ -21,7 +21,7 @@ are available.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+~~~
 HTTP/1.1 200 OK
 Date: Mon, 20 Nov 2016 12:25:37 GMT
 Server: Apache/2.2.22(Ubuntu)
@@ -37,7 +37,7 @@ Content-Type: application/json
     "2016-09-05",
     "2016-11-04"
 ]
-~~~~
+~~~
 
 ### Further reading
 
