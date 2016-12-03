@@ -48,8 +48,8 @@ en in die periode hebben we verschillende tools ontwikkeld. Zo leveren we het
 [SMTPeter](https://www.smtpeter.com), en de online marketing automation tools 
 "Publisher" en "Marketing Suite" die we hier bespreken.
 
-De functionaliteiten van ["Copernica Publisher"](https://publisher.copernica.nl) en 
-["Copernica Marketing Suite"](https://ms.copernica.com) overlappen elkaar 
+De functionaliteiten van [Copernica Publisher](https://publisher.copernica.nl) en 
+[Copernica Marketing Suite](https://ms.copernica.com) overlappen elkaar 
 grotendeels: zowel Copernica Publisher als Copernica Marketing Suite zijn tools om 
 online marketingcampagnes mee in te richten en uit te voeren, en een Copernica licentie 
 geeft je dan ook toegang tot beide omgevingen. Publisher is de "oude" omgeving die al 
