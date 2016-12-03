@@ -14,11 +14,11 @@ als veel van onze gebruikers: als productnaam. Je zult in de documentatie dus
 kunnen teruglezen hoe je een template "in Copernica" kunt plaatsen, en waar 
 je "binnen Copernica" de statistieken kan terugvinden.
 
-Bij het lezen van de documentatie is het handig om ook toegang te hebben
+Bij het lezen van de documentatie is het handig om toegang te hebben
 tot de software. Daarvoor heb je een login en wachtwoord nodig. Deze krijg je automatisch
 wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
-Met deze gegevens kun je inloggen en beginnen met het inrichten van marketing
-campagnes.
+Met deze gegevens kun je inloggen en beginnen met het inrichten van 
+marketingcampagnes.
 
 
 Meerdere plekken om in te loggen
