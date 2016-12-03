@@ -99,17 +99,17 @@ doorvoeren.
     aan het domein moeten worden                van Copernica, met instellingen
     toegevoegd:                                 van het sender domain:
 
-        +-------------------+                   +-------------------+
-        |   SPF alias       |       --->        |   TXT record      |
-        +-------------------+                   +-------------------+
-        |   DKIM alias      |       --->        |   TXT record      |
-        +-------------------+                   +-------------------+
-        |   DMARC alias     |       --->        |   TXT record      |
-        +-------------------+                   +-------------------+
-        |   Tracking alias  |       --->        |   A record(s)     |
-        +-------------------+                   +-------------------+
-        |   Bounce alias    |       --->        |   MX record(s)    |
-        +-------------------+                   +-------------------+
+    +-------------------+                       +-------------------+
+    |   SPF alias       |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DKIM alias      |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DMARC alias     |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   Tracking alias  |           --->        |   A record(s)     |
+    +-------------------+                       +-------------------+
+    |   Bounce alias    |           --->        |   MX record(s)    |
+    +-------------------+                       +-------------------+
 </pre>
 
 Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 
