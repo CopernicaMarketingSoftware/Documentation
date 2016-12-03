@@ -1,8 +1,8 @@
 Afzenderdomain instellen
 ========================
 
-De mailings die je verstuurt worden verstuurd vanuit een bepaald afzenderadres
-- bijvoorbeeld nieuwsbrief@bedrijfsnaam.nl. Dit afzenderadres kun je zelf in 
+De mailings die je verstuurt worden verstuurd vanuit een bepaald afzenderadres,
+bijvoorbeeld nieuwsbrief@bedrijfsnaam.nl. Dit afzenderadres kun je zelf in 
 Copernica instellen, maar om te zorgen dat alle ontvangers de mail ook goed 
 ontvangen adviseren we je om eerst de DNS records van je domeinnaam bij te werken. 
 Eenvoudig gezegd moet je zorgen dat in de DNS instellingen van jouw domeinnaam
@@ -27,7 +27,7 @@ Marketing Suite of Copernica Publisher?
 De sender-domain technologie is zowel toegankelijk via de nieuwe Marketing Suite
 als via de oude Copernica Publisher omgevingen. Echter, de interface in de 
 Marketing Suite is een stuk beter en uitgebreider dan de interface in 
-Copernica Publisher.
+Copernica Publisher. Je kunt dit daarom het beste regelen via de Marketing Suite.
 
 Als je een afzenderdomein hebt ingesteld, dan zorgt Copernica automatisch
 dat alle DNS instellingen goed staan, en hoef je wat domeinnamen betreft niks
@@ -39,7 +39,7 @@ gaat versturen met Publisher.
 
 Kortom, je kunt het beste gebruik maken van de Marketing Suite om je sender
 domain in te stellen. Je vindt de sender domain tool in het menu onder het  
-kopje "configuratie". De verschillende dialoogvensters in Copernica Publisher 
+kopje *configuratie*. De verschillende dialoogvensters in Copernica Publisher 
 om domeinnamen handmatig in te stellen zijn verouderd en heb je niet nodig.
 
 
@@ -65,8 +65,8 @@ wilt dan is dat de snelste manier om de configuratie goed te krijgen.
 Domeinnaam valideren
 --------------------
 
-Om misbruik te voorkomen, moet je bewijzen dat jij echt de eigenaar van het
-domein bent. Nadat je een sender domain hebt aangemaakt toont de Marketing Suite
+Om misbruik van sender domains te voorkomen, moet je bewijzen dat jij echt de 
+eigenaar bent van het domein. Nadat je een sender domain hebt aangemaakt toont de Marketing Suite
 daarom een waarschuwingsbericht. Je moet eerst een TXT record aan je domein
 toevoegen met daarin een speciale code die alleen door Copernica wordt begrepen. 
 Pas als Copernica ziet dat je dit record aan het domein hebt toegevoegd, geloven
@@ -84,7 +84,7 @@ van een domein wijzigen zonder dat de domeineigenaar daar expliciet toestemming
 voor geeft. Alleen de eigenaar van een domein kan subdomeinen aanmaken en DNS
 instellingen wijzigen. Hoe werkt dit dan?
 
-De DNS records die Copernica aanmaakt, maakt Copernica dan ook niet aan voor 
+De DNS records die Copernica aanmaakt, maakt Copernica dan ook niet aan bij 
 jouw domein, maar voor een subdomein van Copernica zelf. In de Marketing Suite 
 krijg je een lijstje te zien met door ons geadviseerde DNS records die je moet
 kopiëren naar jouw DNS server. Deze geadviseerde DNS records zijn *aliassen* (meestal CNAME 
@@ -114,7 +114,7 @@ doorvoeren.
 
 Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 
 Marketing Suite opvolgt, dan voeg je aan jouw domein een aantal aliassen toe 
-die verwijzen naar DNS records van Copernica. Dit stelt vervolgens in staat 
+die verwijzen naar DNS records van Copernica. Dit stelt ons vervolgens in staat 
 om de instellingen van jouw domein te beheren.
 
 
