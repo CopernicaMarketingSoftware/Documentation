@@ -39,8 +39,8 @@ en al je applicaties. Maar mocht je deze eerste stap willen overslaan, dan kun
 je ook inloggen via de andere bovengenoemde adressen.
 
 
-Het verschil tussen "Marketing Suite" en "Publisher"
-----------------------------------------------------
+Het verschil tussen "Copernica Marketing Suite" en "Copernica Publisher"
+------------------------------------------------------------------------
 
 Copernica is al meer dan tien jaar actief als leverancier van softwaretoepassingen,
 en in die periode hebben we verschillende tools ontwikkeld. Zo leveren we het
@@ -48,12 +48,12 @@ en in die periode hebben we verschillende tools ontwikkeld. Zo leveren we het
 [SMTPeter](https://www.smtpeter.com), en de online marketing automation tools 
 "Publisher" en "Marketing Suite" die we hier bespreken.
 
-De functionaliteiten van ["Publisher"](https://publisher.copernica.nl) en 
-["Marketing Suite"](https://ms.copernica.com) overlappen elkaar 
-grotendeels: zowel Publisher als Marketing Suite zijn tools om online marketingcampagnes
-mee in te richten en uit te voeren, en een Copernica licentie geeft je dan ook 
-toegang tot beide omgevingen. Publisher is de "oude" omgeving die al meer dan tien
-jaar bestaat, en die je op een vrij technische wijze in staat stelt om campagnes
+De functionaliteiten van ["Copernica Publisher"](https://publisher.copernica.nl) en 
+["Copernica Marketing Suite"](https://ms.copernica.com) overlappen elkaar 
+grotendeels: zowel Copernica Publisher als Copernica Marketing Suite zijn tools om 
+online marketingcampagnes mee in te richten en uit te voeren, en een Copernica licentie 
+geeft je dan ook toegang tot beide omgevingen. Publisher is de "oude" omgeving die al 
+meer dan tien jaar bestaat, en die je op een vrij technische wijze in staat stelt om campagnes
 in te richten. Marketing Suite is daarentegen een stuk nieuwer en daardoor makkelijker
 in het gebruik. Onder de motorkap zijn Publisher en Marketing Suite echter gelijk: 
 data die je in het ene systeem plaatst, kan in het andere systeem worden uitgelezen.
