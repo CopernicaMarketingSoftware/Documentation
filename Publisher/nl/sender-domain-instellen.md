@@ -52,7 +52,7 @@ gebruiken. Als je bijvoorbeeld wilt mailen vanuit "nieuwsbrief@bedrijfsnaam.nl",
 dan moet je voor "bedrijfsnaam.nl" een sender domain aanmaken. Vervolgens
 worden automatisch allerlei DNS records aangemaakt met de juiste instellingen.
 
-Maar let op. Als er al allerlei DNS records met SPF en DMARC instellingen
+Maar let op. Als er al DNS records met SPF en DMARC instellingen
 voor "bedrijfsnaam.nl" bestonden, dan moet je deze configuratie overzetten
 naar het sender domain. Als je dit niet wilt of niet kunt, of als je niet het risico
 wilt lopen dat er door een foutje een configuratieconflict onstaat, dan kun
