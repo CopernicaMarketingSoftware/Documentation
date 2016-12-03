@@ -119,4 +119,6 @@ Marketing Suite opvolgt, dan voeg je aan jouw domein een aantal aliassen toe
 die verwijzen naar DNS records van Copernica. Dit stelt ons vervolgens in staat 
 om de instellingen van jouw domein te beheren.
 
-
+Nadat je het sender domain hebt aangemaakt, je domein hebt gevalideerd, en
+de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een 
+afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
