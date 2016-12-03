@@ -59,9 +59,9 @@ in het gebruik. Onder de motorkap zijn Publisher en Marketing Suite echter gelij
 data die je in het ene systeem plaatst, kan in het andere systeem worden uitgelezen.
 
 Omdat Marketing Suite nog volop in ontwikkeling is, zijn nog niet alle mogelijkheden
-van "Publisher" ook toegankelijk via Marketing Suite. Hierdoor is het, als je alle
+van Copernica Publisher ook toegankelijk via Marketing Suite. Hierdoor is het, als je alle
 mogelijkheden van Copernica optimaal wilt benutten, soms nodig om te wisselen
 tussen de oude Publisher en de nieuwe Marketing Suite. Gaandeweg worden echter steeds
-meer functies omgezet van "Publisher" naar "Marketing Suite" zodat je op den duur 
-"Publisher" steeds minder vaak nodig zult hebben.
+meer functies omgezet van Publisher naar Marketing Suite zodat je op den duur 
+Publisher steeds minder vaak nodig zult hebben.
 
