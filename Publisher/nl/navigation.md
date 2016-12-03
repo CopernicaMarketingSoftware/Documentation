@@ -2,7 +2,7 @@
 * [Snel aan de slag](snel-aan-de-slag)
     * [Afzenderdomain instellen](sender-domain-instellen)
     * [Database inrichten](database-inrichten)
-    * [Je eerste mail met de drag-and-drop editor](eerste-drag-and-drop-mail)
+    * [Je eerste drag-n-drop mail](eerste-drag-and-drop-mail)
 * [Accounts en gebruikers](accounts-en-gebruikers)
 * [Werken met de Publisher](werken-met-de-publisher)
     * [Databasebeheer](database-management)
