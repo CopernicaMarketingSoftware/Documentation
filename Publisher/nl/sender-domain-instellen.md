@@ -6,7 +6,7 @@ bijvoorbeeld nieuwsbrief@bedrijfsnaam.nl. Dit afzenderadres kun je zelf in
 Copernica instellen, maar om te zorgen dat alle ontvangers de mail ook goed 
 ontvangen adviseren we je om eerst de DNS records van je domeinnaam bij te werken. 
 Eenvoudig gezegd moet je zorgen dat in de DNS instellingen van jouw domeinnaam
-staat dat Copernica gerechtigd is om mail vanuit jouw naam te verzenden. Als je 
+staat dat Copernica gerechtigd is om mail vanuit jouw domeinnaam te verzenden. Als je 
 dit niet doet is de kans groot dat veel van de berichten niet worden geaccepteerd.
 
 Normaal gesproken is het bijwerken van de DNS records een complexe klus. Je
@@ -38,7 +38,7 @@ De instellingen van het sender domain hebben prioriteit, zelfs als je mails
 gaat versturen met Publisher.
 
 Kortom, je kunt het beste gebruik maken van de Marketing Suite om je sender
-domain in te stellen. Je vindt de sender domain tool in het menu onder het  
+domain in te stellen. Je vindt de sender domain tool in het menu onder het
 kopje *configuratie*. De verschillende dialoogvensters in Copernica Publisher 
 om domeinnamen handmatig in te stellen zijn verouderd en heb je niet nodig.
 
