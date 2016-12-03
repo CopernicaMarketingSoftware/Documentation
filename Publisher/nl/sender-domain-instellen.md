@@ -31,11 +31,13 @@ Copernica Publisher. Je kunt dit daarom het beste regelen via de Marketing Suite
 
 Als je een afzenderdomein hebt ingesteld, dan zorgt Copernica automatisch
 dat alle DNS instellingen goed staan, en hoef je wat domeinnamen betreft niks
-anders meer te configuren. In de oude Copernica Publisher omgeving vind je
-nog wel formulieren om handmatig DKIM keys te beheren, en om handmatig het 
-picserver of envelope domein in te stellen, maar deze formulieren kun je negeren.
-De instellingen van het sender domain hebben prioriteit, zelfs als je mails
-gaat versturen met Publisher.
+anders meer te configuren. Je hoeft na het instellen van een sender domain dus 
+niet meer apart in te stellen welke domeinnaam moet worden gebruikt om kliks en 
+bounces te registreren, en wat de DKIM keys zijn. In de oude Copernica Publisher 
+omgeving vind je echter om historische redenen nog wel formulieren om handmatig 
+DKIM keys te beheren, en om handmatig het picserver of envelope domein in te stellen. 
+Deze formulieren kun je negeren. De instellingen van het sender domain hebben 
+prioriteit, zelfs als je mails gaat versturen met Publisher.
 
 Kortom, je kunt het beste gebruik maken van de Marketing Suite om je sender
 domain in te stellen. Je vindt de sender domain tool in het menu onder het
