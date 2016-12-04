@@ -20,8 +20,9 @@ Marketing Suite of Copernica Publisher?
 Op het moment van schrijven kun je alleen via de oude Copernica Publisher
 omgeving databases beheren. Onze ontwikkelaars zijn hard bezig om het
 databasebeheer ook in de nieuwe Marketing Suite in te bouwen, maar dit is nog 
-in ontwikkeling. We verwachten echter binnen enkele weken het databasebeheer
-in Marketing Suite beschikbaar te hebben.
+in ontwikkeling. Voorlopig zul je het dus nog even moeten doen met de wat
+ingewikkelder Publisher omgeving. We verwachten echter binnen enkele weken het
+databasebeheer in Marketing Suite beschikbaar te hebben.
 
 In Publisher kom je bij het databasebeheer via de optie "profiles". Hier
 kun je al je databases en selecties beheren, en profieldata inkijken en
@@ -30,5 +31,5 @@ nog leeg en moet je zelf een nieuwe database aanmaken.
 
 
 Terminologie
-~~~~~~~~~~~~
+------------
 
