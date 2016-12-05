@@ -122,3 +122,11 @@ om de instellingen van jouw domein te beheren.
 Nadat je het sender domain hebt aangemaakt, je domein hebt gevalideerd, en
 de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een 
 afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
+
+
+De volgende stap
+----------------
+
+Om de eerste mail te kunnen versturen, heb je natuurlijk 
+[een database met profielen](database-inrichten) nodig om die mailing naar
+toe te sturen.
