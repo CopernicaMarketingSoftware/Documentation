@@ -10,12 +10,23 @@ eenvoudigweg met de muis een mailing in elkaar kunt slepen.
 Het samenstellen van een mailings met Marketing Suite is veel eenvoudiger van
 het maken van mailings met Publisher. Toch gebruiken nog veel mensen de oude 
 Publisher omgeving. Dit komt doordat de oude omgeving meer mogelijkheden biedt.
-Doordat je zelf de HTML code kunt invoeren, kan werkelijk elke denkbare template 
-worden gemaakt, terwijl je in Marketing Suite vast zit aan de beperkingen die 
-de voorgedefinieerde template editor biedt. Ook biedt Publisher nog wat meer 
-mogelijkheden met het instellen van opvolgacties.
+In de oude omgeving moet je zelf de HTML code invoeren, wat lastig is, maar
+hierdoor kun je wel alles doen wat je wilt, terwijl je in Marketing Suite vast
+zit aan de beperkingen die de drag-and-drop editor biedt. En Publisher heeft
+nog wat meer mogelijkheden met het instellen van opvolgacties.
 
-Als eenvoud en gebruiksgemak belangrijk is, dan is de drag-and-drop editor
-in de Marketing Suite het makkelijkst om te gebruiken. In dit 
-snel-aan-de-slag-artikel gaan we daar van uit.
+Maar als eenvoud en gebruiksgemak belangrijk is, dan is de drag-and-drop editor
+in de Marketing Suite verreweg het makkelijkst om te gebruiken. In dit 
+snel-aan-de-slag-artikel gaan we er daarom van uit dat je met de drag-and-drop
+editor je eerste mail gaat versturen.
+
+
+Slepen van content
+------------------
+
+Eigenlijk behoeft de drag-and-drop editor nauwelijks uitleg. Je vindt de editor
+onder het item "email templates" in het menu in de zijbalk van de Marketing
+Suite. Je kunt blok voor blok content naar de template slepen: tekstblokken,
+afbeeldingen, filmpjes, enzovoort. Nadat je de mail hebt samengesteld, druk
+je op de verzendbutton en de rest wijst zich vanzelf.
 
