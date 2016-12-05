@@ -19,8 +19,9 @@ Typen velden
 Binnen Copernica kan gebruik worden gemaakt van verschillende types
 velden voor het opslaan van gegevens.
 
-![Typen velden](../images/edit_database_fields.png)\#\#\#
-**Numerieke velden**
+![Typen velden](../images/edit_database_fields.png)
+
+### **Numerieke velden**
 
 Dit veld kan alleen numerieke waarden [0-9] bevatten. Gebruik dit
 veldtype om informatie zoals leeftijd of gewicht op te slaan. Numerieke
@@ -35,8 +36,7 @@ met decimalen op te slaan.
 
 ### **Tekstveld**
 
-Tekstvelden zijn velden voor tekstuele inhoud en kunnen alle soorten
-tekens bevatten, inclusief cijfers en speciale tekens. Een tekstveld kan
+Tekstvelden zijn velden voor tekstuele inhoud en kunnen letters [A-Z], nummerieke waardes [0-9] of underscores bevatten. Een tekstveld kan
 tot 5 regels (multiline) hoog zijn. De standaardlengte van een tekstveld
 is 50 tekens. Je kunt dit aantal indien gewenst verhogen tot 255. Als je
 meer dan 255 karakters in een databaseveld kwijt wilt, gebruikt dan een
