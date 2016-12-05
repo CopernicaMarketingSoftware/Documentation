@@ -4,6 +4,7 @@
     * [Database inrichten](database-inrichten)
     * [Je eerste drag-n-drop mail](eerste-drag-and-drop-mail)
 * [Accounts en gebruikers](accounts-en-gebruikers)
+* [Databasebeheer](database-beheer)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
     * [Importeren en exporteren](import-and-export)
