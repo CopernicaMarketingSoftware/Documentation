@@ -42,9 +42,9 @@ geslacht (M/V) van je relaties te weten:
 -   Geachte mevrouw Putjes,
 -   Geachte heer Van der Sloot,
 
-Geachte {if \$Geslacht=="Man"}heer {elseif \$Geslacht=="Vrouw"}mevrouw
-{/if} {if \$Tussenvoegsel}{\$Tussenvoegsel|lower|ucfirst}{/if} {if
-\$Achternaam}{\$Achternaam}{else}relatie{/if},
+Geachte {if $Geslacht=="Man"}heer {elseif $Geslacht=="Vrouw"}mevrouw
+{/if} {if $Tussenvoegsel}{$Tussenvoegsel|lower|ucfirst}{/if} {if
+$Achternaam}{$Achternaam}{else}relatie{/if},
 
 Er wordt dus rekening gehouden met het geslacht van de relatie, en of
 deze persoon wel of geen tussenvoegsel heeft in de naam. Wanneer er
@@ -66,8 +66,8 @@ afwijkingen correct af te vangen.
 
 Dit filter wordt gebruikt om alle hoofdletters te verwijderen.
 
-Als de variabele {\$Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
-zorgt de code {\$Naam|lower} ervoor dat wordt weergegeven: **'karel
+Als de variabele {$Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
+zorgt de code {$Naam|lower} ervoor dat wordt weergegeven: **'karel
 appel'**
 
 ### ucfirst
@@ -75,13 +75,13 @@ appel'**
 Dit filter zorgt ervoor dat het eerste karakter uit een string
 (tekenreeks) een hoofdletter wordt.
 
-Als de variabele {\$Naam|ucfirst} de waarde heeft: '**hans**' dan zal
+Als de variabele {$Naam|ucfirst} de waarde heeft: '**hans**' dan zal
 het volgende in het document komen te staan: **Hans**
 
 De filters kunnen ook worden gecombineerd:
 
-Als de variabele {\$Tussenvoegsel} de waarde 'VAN dER' heeft, dan zal
-door het toevoegen van de twee filters {\$Tussenvoegsel|lower|ucfirst}
+Als de variabele {$Tussenvoegsel} de waarde 'VAN dER' heeft, dan zal
+door het toevoegen van de twee filters {$Tussenvoegsel|lower|ucfirst}
 de waarde ‘Van der’ in het document komen te staan.
 
 [Meer smarty filters en
