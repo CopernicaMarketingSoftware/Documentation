@@ -8,8 +8,8 @@ een extra laag in de database. Een collectie op zichzelf bestaat ook weer uit
 enkelvoudige velden.
 
 Er zijn verschillende veldtypes beschikbaar, geschikt voor het opslaan van 
-specifieke gegevens. Er zijn bijvoorbeeld datumvelden voor het opslaan van 
-tekst, getallen en datums (we schrijven en spreken altijd over *datums* in 
+specifieke gegevens. Er zijn bijvoorbeeld velden voor het opslaan van 
+tekst, en velden voor getallen en datums (we schrijven en spreken altijd over *datums* in 
 plaats van *data*, omdat *data* ook een andere, meer algemene, betekenis heeft).
 Als je je database aan het inrichten bent, dan spreekt het formulier om een
 veld toe te voegen grotendeels voor zich, maar voor de volledigheid zullen we 

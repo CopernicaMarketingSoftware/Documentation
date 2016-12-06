@@ -34,10 +34,10 @@ alleen kunt mailen naar de selectie "nieuwsbrief" en niet naar de hele database.
 
 Databaserestricties zijn regels die je kunt instellen op een database of
 collectie. Wanneer iemand data wilt toevoegen of wijzigen (via de applicatie of 
-via een webformulier), dan moet de ingevoerde waarde voldoen aan deze regels. 
-Anders kan het profiel niet opgeslagen of gewijzigd worden. Zo kun je bijvoorbeeld
+via een webformulier), dan moet de ingevoerde waarde voldoen aan deze regels 
+anders kan het profiel niet opgeslagen of gewijzigd worden. Zo kun je bijvoorbeeld
 instellen dat de waarde van het databaseveld "Leeftijd" niet lager mag zijn dan
-18’ het veld "emailadres" nooit leeg mag zijn en de waarde in het het
+18 het veld "emailadres" nooit leeg mag zijn en de waarde in het het
 veld "gebruikersnaam" uniek moet zijn.
 
 Als je een databaserestrictie toevoegt aan een database waar al profielen in 
@@ -71,7 +71,7 @@ of ongelijk moet zijn aan een string, of dat een bepaalde *substring* in een
 veld moet voorkomen. Het meest krachtig is het echter om gebruik te maken
 van reguliere expressies.
 
-Reguliere expressies (vaak afgekort naar ‘regex’) zijn een zeer krachtig middel 
+Reguliere expressies (vaak afgekort naar *regex*) zijn een zeer krachtig middel 
 om een patroon in tekst te beschrijven. Bijvoorbeeld: "alle woorden die beginnen 
 met de letter A" of "alle telefoonnummers bestaande uit 10 karakters" of "elke 
 zin met twee kommas en een hoofdletter Q". Het is zelfs mogelijk alleen 
