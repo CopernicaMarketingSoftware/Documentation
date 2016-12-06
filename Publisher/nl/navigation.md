@@ -5,6 +5,7 @@
     * [Je eerste drag-n-drop mail](eerste-drag-and-drop-mail)
 * [Accounts en gebruikers](accounts-en-gebruikers)
 * [Databasebeheer](database-beheer)
+    * [Velden en collecties](velden-en-collecties)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
     * [Importeren en exporteren](import-and-export)

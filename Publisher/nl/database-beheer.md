@@ -4,8 +4,8 @@ Databasebeheer
 Copernica werkt op basis van volledig configureerbare databases. Je kunt 
 zelf de structuur van databases bepalen, zodat jouw gegevens altijd in Copernica
 passen. De databases ondersteunen bovendien meerdere dimensies. Dit 
-stelt je in staat om een database te maken waarin per profiel bijvoorbeeld
-de volledige bestelgeschiedenis wordt opgeslagen.
+stelt je in staat om een database met meerdere lagen te maken waarin per 
+profiel bijvoorbeeld de volledige bestelgeschiedenis wordt opgeslagen.
 
 De database vormt het hart van je marketingcampagnes. In de database staat
 alle profieldata voor het maken van selecties en voor het personaliseren van 
@@ -13,9 +13,10 @@ mailings. De data wordt bovendien continu verrijkt naar aanleiding van
 acties van de geadresseerden, zodat je steeds nauwkeuriger campagnes kunt
 versturen. Hoewel sommige gebruikers er de voorkeur aan geven regelmatig een 
 nieuwe database aan te maken waarin opnieuw alle profielgegevens worden 
-geïmporteerd, adviseren wij om steeds dezelfde database te gebruiken. Door 
-middel van selecties kan deze database worden gesegmenteerd en gebruikt voor 
-doelgerichte campagnes.
+geïmporteerd, adviseren wij om steeds dezelfde database te gebruiken. Je 
+database wordt dan steeds rijker door de feedback van eerdere campagnes. Door 
+middel van selecties kan de database worden gesegmenteerd en gebruikt voor 
+doelgerichte campagnes, zonder dat je addressen opnieuw hoeft te importeren.
 
 
 Marketing Suite of Copernica Publisher?
@@ -52,6 +53,8 @@ een enkel voorbeeld hoe je multidimensionale databases kunt gebruiken. Maar
 je zou bijvoorbeeld ook een database met bedrijven kunnen aanmaken, inclusief
 een collectie met de medewerkers per bedrijf. Of een database met ouders, en
 een collectie voor de kinderen.
+
+[Lees meer over het maken van velden en collecties](velden-en-collecties)
 
 
 Verder lezen
