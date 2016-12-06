@@ -11,8 +11,6 @@ De oude documentatie is mogelijk niet altijd meer correct. Bijvoorbeeld als
 een functie nu makkelijker, sneller of beter met Marketing Suite kan worden
 uitgevoerd. In de oude documentatie wordt zoiets niet vermeld (die is immers
 geschreven *voordat* Markting Suite bestond). De nieuwe documentatie brengt 
-deze nuance wel aan.
-
-Onder dit kopje "oude Documentatie" hebben we alle artikelen gebundeld die
-nog niet zijn gecontroleerd en bijgewerkt.
+deze nuance wel aan. Onder dit kopje "oude Documentatie" hebben we alle 
+artikelen gebundeld die nog niet zijn gecontroleerd en bijgewerkt.
 

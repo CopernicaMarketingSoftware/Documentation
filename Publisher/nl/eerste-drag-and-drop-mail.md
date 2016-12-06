@@ -7,7 +7,7 @@ manier van Marketing Suite. Als je Publisher gebruikt voor mailings, dan moet
 je zelf de HTML code van templates maken, terwijl je met Marketing Suite
 eenvoudigweg met de muis een mailing in elkaar kunt slepen.
 
-Het samenstellen van een mailings met Marketing Suite is veel eenvoudiger van
+Het samenstellen van een mailings met Marketing Suite is veel eenvoudiger dan
 het maken van mailings met Publisher. Toch gebruiken nog veel mensen de oude 
 Publisher omgeving. Dit komt doordat de oude omgeving meer mogelijkheden biedt.
 In de oude omgeving moet je zelf de HTML code invoeren, wat lastig is, maar
