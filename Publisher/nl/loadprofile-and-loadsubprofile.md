@@ -125,15 +125,24 @@ medewerkers staan in collectie 'Medewerkers'. Ter demonstratie willen we
 die in omgekeerd alfabetisch volgorde van voornaam sturen. Ook sturen we
 maximaal 5. De code:
 
-~~~~ {.language-php}
-{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
 
 Geachte {$Bedrijfsleider},
-
 Van uw bedrijf, {$Bedrijf} zijn de volgende medewerkers bekend:
-{foreach $geladensubprofielen as $geladensubprofiel}
-- {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres};
-{/foreach}
+
+~~~~ {.language-php}
+
+{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc' }
+    
+    <ul>
+      {foreach $geladensubprofielen as $geladensubprofiel}
+        <li>
+            Voornaam: {$geladensubprofiel.Voornaam}, 
+            Achternaam: {$geladensubprofiel.Achternaam},
+            Email: {$geladensubprofiel.Emailadres}
+        </li>
+      {/foreach}
+    </ul>
+
 ~~~~
 
 Het resultaat:
