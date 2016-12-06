@@ -50,6 +50,10 @@ een laag dieper.
 
 ![Typen velden](../images/edit_database_fields.png)
 
+Als je een veld toevoegt moet je kiezen wat voor type veld het is. Teksten
+sla je op in tekstvelden, datums in datumvelden, enzovoort. De volgende 
+veldtypes worden ondersteund:
+
 ### Numerieke velden
 
 Dit veld kan alleen numerieke waarden [0-9] bevatten. Gebruik dit
@@ -74,11 +78,10 @@ meer dan 255 karakters in een databaseveld kwijt wilt, gebruikt dan een
 
 Het is het beste om een tekstveld niet groter te maken dan strict noodzakelijk.
 Beperk de standaardlengte van database velden tot wat nodig is. Dit
-komt ten goede van de performance van de database.
-
-Het aantal rijen dat je kunt instellen wordt alleen gebruikt in dialoogvensters
-om een profiel te bewerken en in het profieloverzicht. Het heeft geen invloed 
-op de weergave van webformulieren.
+komt ten goede van de performance van de database. Het aantal rijen dat je kunt 
+instellen wordt alleen gebruikt in dialoogvensters om een profiel te bewerken 
+en in het profieloverzicht. Het heeft geen invloed op de weergave van 
+webformulieren.
 
 
 ### Grote velden
@@ -107,7 +110,7 @@ minuten en seconden, bijvoorbeeld "1980-09-03 08:56:36"
 ### Emailveld
 
 Een emailveld is hetzelfde als een tekstveld, maar dan speciaal voor 
-emailadresses. Als je Copernica voor mailings gebruikt (dat is bijna altijd
+emailadressen. Als je Copernica voor mailings gebruikt (en dat is bijna altijd
 het geval), dan moet je zorgen dat je in ieder geval een dergelijk veld in je
 database opneemt, anders kunnen er geen mailings worden verstuurd.
 Een database kan maar één emailveld bevatten. Als een tweede emailveld wordt
@@ -197,7 +200,7 @@ Als een lijst van profielen wordt getoond, is deze lijst alvast gesorteerd
 op een specifiek veld. Met deze optie kun je invoeren welk veld dat is. Deze 
 optie kan slechts bij één veld tegelijkertijd worden geactiveerd.
 
-### Geindexeerde velden
+### Geïndexeerde velden
 
 Gebruik deze optie voor velden die je vaak gebruikt voor het zoeken van
 profielen, en waarmee je selecties hebt gemaakt. Het indexeren van deze velden

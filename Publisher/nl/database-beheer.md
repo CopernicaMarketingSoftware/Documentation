@@ -57,8 +57,14 @@ een collectie voor de kinderen.
 [Lees meer over het maken van velden en collecties](velden-en-collecties)
 
 
-Verder lezen
-------------
+Overige opties
+--------------
 
+Als je databases inricht, zijn er verschillende zaken die je kunt instellen.
+Voordat je kunt mailen moet je bijvoorbeeld aangeven dat een database geschikt
+is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
+dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
+door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
+[Lees meer over restricties en gebruikesmogelijkhedeh](restricties-en-gebruiksmogelijkheden)
 
