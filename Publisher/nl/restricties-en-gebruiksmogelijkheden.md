@@ -3,9 +3,9 @@
 Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
 dat ongeldige gegevens in je database belanden, en om te voorkomen dat je
 een mailing verstuurt naar een verkeerd adressenbestand. Je kunt met
-behulp van databaserestricties regels maken om inputdata te filteren en
+behulp van *databaserestricties* regels maken om inputdata te filteren en
 te voorkomen dat er ongeldige data in de database belandt. Met 
-gebruiksmogelijkheden kun je voorkomen dat een database of selectie ten
+*gebruiksmogelijkheden* kun je voorkomen dat een database of selectie ten
 onrechte wordt gebruikt voor mailings.
 
 Beide systemen zijn te vinden in het profielenbeheer van Copernica Publisher.
