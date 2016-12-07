@@ -1,9 +1,10 @@
 # JSON for incoming messages
 
-When an email is received by MailerQ, the mail is turned into a JSON
-object and published to the inbox queue. This happens to messages that
-are received on the SMTP port, but also to messages that come in via
-the spool directory or that were injected via the command line interface.
+When an email is received by MailerQ, the mail is turned into a JSON object 
+and published to the inbox queue. This happens to messages that are received 
+on the SMTP port, but also to messages that come in via the spool directory or
+that were injected via the command line interface: every message is turned 
+into a JSON object and published to the inbox queue.
 
 The JSON messages that are published by MailerQ follow exactly the 
 [JSON specification for outgoing messages](json-messages). It is therefore

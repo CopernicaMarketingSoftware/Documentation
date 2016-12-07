@@ -53,3 +53,11 @@ above examples. The above examples are very minimalistic, check the
 [JSON message specification](json-messages) for a full list of all
 supported properties.
 
+## Compression
+
+It is possible to compress the data that you send to MailerQ. The JSON
+message that you send to RabbitMQ can be gzip compressed. If you do this,
+you also have to add a "content-encoding" header to the AMQP envelope in
+which the message is wrapped, and set it to the value "gzip". Check the
+documentation of your AMQP library to find out how to set properties in
+the AMQP envelope.
