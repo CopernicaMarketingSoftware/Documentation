@@ -276,28 +276,52 @@ the same time it makes things much slower. We therefore recommend leaving the
 ## Multiple threads
 
 MailerQ opens a number of different connections to RabbitMQ, and each connection
-is running in its own thread. There is a seperate thread for consuming from the 
-inbox queue and a thread for publishing messages to the result queue and/or
+runs in its own thread. There are seperate threads for consuming from the 
+inbox queue and threads for publishing messages to the result queues and/or
 back to the outbox queue.
 
 You can specify in the config file that you want to start up multiple consumer
-threads in case this single consumer thread appears to be the bottleneck of
-the application.
+and or multiple publisher threads. If you notice that the consumer of publisher
+threads are CPU bound, you can configure MailerQ to start up more queues.
 
 ```
 rabbitmq-consumers:     1 (default: 1)
+rabbitmq-publishers:    1 (default: 1)
 ```
 
-By adding the "rabbitmq-consumers" variable to the config file, you instruct
-MailerQ to start up more consumer threads.
+By adding the "rabbitmq-consumers" and "rabbitmq-publishers" variables to the 
+config file, you instruct MailerQ to start up more consumer and/or publisher
+threads.
 
-## Communication threads
 
-MailerQ provides an option to configure the number of threads that communicate with RabbitMQ. 
-The number of consumers and the number of publishers can be configured separately. 
+## Compression
+
+The data stream between RabbitMQ and MailerQ can be large. It can even be that
+big that it takes up a significant portion of the capacity of your internal
+network. To reduce the load on the network, MailerQ supports gzip compression.
+
+MailerQ normally expects messages from RabbitMQ to be JSON encoded. However,
+if the AMQP envelope in which the message is wrapped has the "content-encoding" 
+property set to "gzip", MailerQ expects the message to be a gzip compressed 
+JSON object instead. It first decompresses the message, then it parses the JSON.
+This means that you can publish both normal JSON encoded messages to RabbitMQ,
+as well as gzip compressed data. If you compress your input JSON, you do have
+to make sure that you also set the "content-encoding" header in the AMQP 
+envelope that is published to RabbitMQ.
+
+MailerQ not only consumes messages from RabbitMQ, it also publishes messages
+back to it, like the results that are sent to the result queues or the 
+retries that are published back to the outbox queue. By default, MailerQ only
+sends pure JSON to RabbitMQ, without compressing it, even if you used
+compression yourself when you published the message to the outbox. If you want
+MailerQ to compress the data too, you can use a special setting in the config 
+file.
+
 ```
-rabbitmq-publishers: `<number>`
-rabbitmq-consumers: `<number>`
+rabbitmq-encoding:      gzip
 ```
-By default, MailerQ uses one publisher thread and one consumer thread.
+
+The above setting only affects how MailerQ *publishes* messages to RabbitMQ.
+Messages consumed from RabbitMQ can still both be compressed or not, because 
+MailerQ always inspects the "content-encoding" header from the AMQP envelope.
 
