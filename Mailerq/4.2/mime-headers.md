@@ -38,6 +38,10 @@ on the handling of your message.
         <td>max number of delivery attempts</td>
     </tr>
     <tr>
+        <td>x-mq-retries</td>
+        <td>interval in seconds between the attempts</td>
+    </tr>
+    <tr>
         <td>x-mq-inlinecss</td>
         <td>instruct MailerQ to inlinize the CSS code</td>
     </tr>
@@ -213,13 +217,25 @@ MailerQ should make sending an email. If a first attempt fails because a remote
 server is unreachable or does not immediately accept the message, MailerQ will 
 make a new attempt a little later.
 
-By default, MailerQ tries to send out the mail six times. You can change the 
-defaults in the [Configuration file](configuration). 
-
 ````
 x-mq-maxattempts: 3
 
 ````
+
+## Interval between attempts
+
+If a mail is retried, MailerQ waits a while before the next attempt is sent.
+You can set this dely in the headers of the message.
+
+````
+x-mq-retries: 300,600,3600
+````
+
+The above setting means that the second attempt is ent 300 seconds (5 minutes)
+after the first attempt failed. If the second attempt failed too, MailerQ
+waits another 600 seconds (10 minutes) for the next attempt. After that attempt,
+all further attempts will be sent with a one hour (3600 seconds) delay.
+
 
 ## Inlinize CSS
 

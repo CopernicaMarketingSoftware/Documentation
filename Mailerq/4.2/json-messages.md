@@ -68,6 +68,10 @@ mail. The following properties are recognized by MailerQ:
         <td>max number of delivery attempts</td>
     </tr>
     <tr>
+        <td>retries</td>
+        <td>the delays between the delivery attempts</td>
+    </tr>
+    <tr>
         <td>force</td>
         <td>force delivery, even when errors occur or conversion is impossible</td>
     </tr>
@@ -348,21 +352,30 @@ the mail after this time, and send a failure to the results queue.
     "recipient": "info@example.org",
     "mime": "...",
     "maxdelivertime": "2016-02-10 00:00:00",
-    "maxattempts": 3
+    "maxattempts": 3,
+    "retries": [ 600, 600, 1800, 3600 ]
 }
 ````
 
 The "maxattempts" is an alternative way to control after how many attempts
 MailerQ should give up trying. The "maxattempts" setting limits the number of 
-attempts MailerQ makes before it gives up.
+attempts MailerQ makes before it gives up. You normally should not use this
+setting because "maxdelivertime" is much more precise.
 
 Timestamps in MailerQ are always in UTC. MailerQ is not very tolerant in 
 parsing timestamps, so make sure that you use the right formatting 
-(YYYY-MM-DD HH:MM:SS).
+(YYYY-MM-DD HH:MM:SS). If you do not specify an explicit max delivery time or 
+max attempts setting in the JSON, and a default value has also not been set 
+in the config file, MailerQ will attempt to deliver the mail within 24 hours
+after the mail was first picked up from the outbox.
 
-If you do not specify an explicit max delivery time or max attempts, MailerQ 
-will attempt to deliver the mail within 24 hours (default) after the mail 
-was first picked up from the outbox.
+The "retries" property can be added to specify exactly how long MailerQ should 
+wait until the next delivery of the mail. This should be set to a JSON array
+holding the number of seconds between the attempts. In the above example,
+the first and second retry are started 10 minutes after the previous attempt.
+If the third attempt (which is the second retry) fails too, MailerQ will wait
+half an hour (1800 seconds). If that attempt fails too, all subsequent attempts
+will be sent with one hour intervals (3600 seconds).
 
 
 ## Inlinize CSS

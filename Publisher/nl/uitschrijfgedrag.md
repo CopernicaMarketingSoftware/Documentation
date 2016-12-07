@@ -17,8 +17,15 @@ aanwezig is.
 Maar er zijn meer manieren waarop afmeldtriggers binnenkomen. Bijvoorbeeld
 als er bij ons een klacht binnenkomt op ons *abuseadres*. Ook dan wordt de 
 afmeldprocedure opgestart. En sommige grote emailproviders hebben speciale 
-feedbackloops die ons melden als iemand op de button "dit is spam" klikt. Al
+feedbackloops die ons melden dat iemand op de button "dit is spam" klikt. Al
 dit soort terugkoppelingen worden door ons opgevangen, en verwerkt op de 
 manier zoals je bij het uitschrijfgedrag hebt ingesteld.
+
+
+## Waar kun je dit vinden?
+
+Het uitschrijfgedrag kun je per database instellen. In het profielenbeheer
+van Copernica Publisher is er een optie "uitschrijfopties instellen" onder 
+het menu database. Als je deze optie aanklikt spreekt de rest voor zich.
 
 

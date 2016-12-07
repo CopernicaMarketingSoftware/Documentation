@@ -8,6 +8,7 @@ anywhere else:
 ````
 max-delivertime:        86400
 max-attempts:           0
+retry-interval:         600,600,1800,1800,3600,3600,7200
 server-id:              1
 license:                /path/to/license.txt
 user:                   username
@@ -27,16 +28,36 @@ the message, and when it should give up trying.
 
 If you do not include these properties, MailerQ falls back to the 
 "max-delivertime" and "max-attempts" config file settings. The 
-"max-delivertime" variable holds the number of seconds it should try,
-and "max-attempts" the total number of attempts before giving up.
+"max-delivertime" variable holds the number of seconds MailerQ should keep
+on trying after the message was consumed for the first time. The "max-attempts" 
+setting holds the total number of attempts before giving up.
 
 You should normally set the "max-attempts" value to 0, meaning unlimited.
-MailerQ will then only give up after a certain amount of time, no matter
-how many attempts are made. In practice, the interval between attempts get
-longer after the number attempts. The first retry is only a couple of 
-minutes after the initial attempts, but later attempts follow after longer
-intervals.
+MailerQ will then only give up after the number of seconds set in the
+"max-delivertime" variable, no matter how many attempts are made. 
 
+
+## Retry interval
+
+If a mail is published back to the outbox queue to be tried again, MailerQ 
+uses the "retries" property in the JSON to find out how long it should wait 
+for the next attempt. Because this setting is JSON based, it is possible for
+each message to have its own retry interval. This could be useful if you send 
+both transactional as well as commercial mass mailings. For transactional 
+emails you normally want small intervals because these mails should be 
+delivered as soon as possible.
+
+If the "retries" property is not set in the input JSON, MailerQ falls back
+to the setting from the config file. The config file variable "retry-interval"
+is used for that. This setting should hold a comma separated list of the
+delays between the attempts. This should be set to a number of seconds.
+
+The default value is "600,600,1800,1800,3600,3600,7200". This means that the
+second and third attempt is sent 10 minutes after the previous attempt. The
+next two attemps use an interval of half an hour, then an interval of one
+hour for the next two attempts, and all subsequent attempts are sent after
+three hour intervals. You can change variable to anything you want.
+  
 
 ## Server ID
 
