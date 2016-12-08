@@ -46,10 +46,10 @@ and write from and to the database, but also to create and modify tables.
 ## Choosing the right engine
 
 From a performance perspective it does not really matter which database
-engine you choose to use. MailerQ periodically (every ten minutes)
-copies all settings from the database to main memory, and uses this in-memory
-cache for lookups. No realtime queries are executed, and no connections are kept
-open to the database in between these reloads. The speed of the database does
+engine you choose to use. MailerQ periodically copies all settings from the 
+database to main memory, and uses this in-memory cache for lookups. No 
+realtime queries are executed, and no connections are kept open to the 
+database in between these reloads. The speed of the database does
 therefore not have to be a factor in choosing the most appropriate engine. 
 It is better to choose a database that you feel most comfortable with.
 Do you already use MySQL databases? Then it is best to use it for MailerQ
@@ -62,6 +62,26 @@ libmysqlclient or libmariadbclient is installed on your system. For
 PostgreSql connections libpq has to be installed, and libsqlite3 is needed
 for SQLite3 databases. If these libraries are not available on the system,
 it is not possible to connect to the database.
+
+
+## Time to live
+
+As we wrote, the database is not used for real time queries. Instead, all data
+is periodically copied into main memory. This ensures that the speed of the
+database is never a limitting factor in your mail deliveries.
+
+MailerQ normally reloads the database every 10 minutes. However, this is 
+a configurable interval. In the config file you can set the "database-ttl"
+variable to any possible interval you like. This variable should be set to
+the number of seconds that the data loaded from the database is kept in 
+main memory. The default value is 600, which is 10 minutes.
+
+````
+database-ttl:           60
+````
+
+If the database-ttl is set to 60 seconds, like we did above, the data is reloaded
+every minute.
 
 
 ## Rebuilding the database
@@ -86,7 +106,7 @@ $ mailerq --purge-database
 ```
 
 This option tells MailerQ not to check and repair tables, but to drop
-them all and create new ones.
+them all and create new ones. If you do not want to wa
 
 
 ## Multiple MailerQ instances
