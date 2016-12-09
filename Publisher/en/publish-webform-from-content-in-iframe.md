@@ -54,5 +54,7 @@ information is also passed to the page with the form.
 
     document.getElementById('loadedform').src = src; } 
 
-</script>   <iframe id="loadedform" width="500" height="500"></iframe>
+</script>
+
+<iframe id="loadedform" width="500" height="500"></iframe>
 ```
