@@ -26,7 +26,7 @@ created.
 
 ### GET request example output
 
-~~~~ {.language-javascript}
+```
 {
     "ID": "4",
     "fields": {
@@ -46,7 +46,7 @@ created.
     "secret": "56312e5c5507b49a526990025175ffed",
     "created": "2014-02-10 10:33:29"
 }
-~~~~
+```
 
 DELETE request
 --------------

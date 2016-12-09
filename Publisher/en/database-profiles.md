@@ -26,7 +26,7 @@ created.
 
 ### Example output
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 8,
@@ -71,7 +71,7 @@ created.
         "created": "2014-02-10 14:39:29"
     }]
 }
-~~~~
+```
 
 ### Searching for profiles with the GET request
 
@@ -82,9 +82,9 @@ database with id=8, with 'Hank' as firstname (field Firstname="Hank")
 and which are not subscribed for the newsletter (field
 Newsletter!="Yes"), the request would look something like this:
 
-~~~~ {.language-javascript}
+```
 database/8/profiles?fields[]=Firstname%3D%3DHank&fields[]=Newsletter%21%3DYes&access_token=...
-~~~~
+```
 
 POST request
 ------------
@@ -95,14 +95,14 @@ it.
 
 ### Example message
 
-~~~~ {.language-javascript}
+```
 {
     "Company" : "Copernica",
     "Visit_Address" : "Copernicaplein 112",
     "Email" : "info@copernica.com",
     ...
 }
-~~~~
+```
 
 PUT request
 -----------

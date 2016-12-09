@@ -28,13 +28,13 @@ Use a PUT request to update the view with this \$viewID.
 
 ### Example PUT request
 
-~~~~ {.language-javascript}
+```
 {"name":"newView","description":"This view was created via the REST API", "parent-type": "database", "parent-id":"2", "has-children":"false", "has-referred":"false", "has-rules":"true"}
-~~~~
+```
 
 This can be send as payload with a PUT request to the following URL. As
 you can see, this will update the view with id 42:
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/view/42?access_token=ff96963...
-~~~~
+```

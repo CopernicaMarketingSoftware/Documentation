@@ -11,18 +11,18 @@ array te loopen.
 
 #### Bijvoorbeeld:
 
-~~~~ {.language-php}
+```
 <ul>
     {foreach from=$mailing.trigger.fields.interests key=k item=v}
       <li>$k}: $v}</li>
     {/foreach}
 </ul>
-~~~~
+```
 
 Beschikbare variabelen voor opvolgacties
 ----------------------------------------
 
-~~~~ {.language-php}
+```
 //always available
 
 $mailing // return NULL
@@ -114,4 +114,4 @@ $mailing.trigger.snapshot.created
 //  Subject of the document in the follow-up (string)
 
 $mailing.trigger.snapshot.subject
-~~~~
+```

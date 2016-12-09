@@ -24,7 +24,7 @@ first retrieved subprofile from a table.
 
 ### Example output GET request
 
-~~~~ {.language-javascript}
+```
 {
     "start" : 10,
     "limit" : 10,
@@ -43,4 +43,4 @@ first retrieved subprofile from a table.
         }
     ]
 }
-~~~~
+```

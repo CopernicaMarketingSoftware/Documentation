@@ -22,7 +22,7 @@ information that can be stored.
 Example output
 --------------
 
-~~~~ {.language-javascript}
+```
 "start" : 0, 
 "limit" : 100, 
 "total" : 100,
@@ -43,7 +43,7 @@ Example output
 }, 
 { ... }
 ] 
-~~~~
+```
 
 \
 \
@@ -60,22 +60,22 @@ The example JSON message below will POST a new collection in to the
 database associated with databaseID. You do not need to include the
 identifier in the message, as it is already present in the URL.
 
-~~~~ {.language-javascript}
+```
 {
     "name": "New_Collection_name",
 }
-~~~~
+```
 
 If the call succeeds, you will receive the following message (only
 containing a header):
 
-~~~~ {.language-javascript}
+```
 Date: Tue, 25 Mar 2014 14:01:23 GMT 
 Server: Apache 
 Location: https://api.copernica.com/collection/53
 Transfer-Encoding: chunked 
 Content-Type: application/json 
-~~~~
+```
 
 ### Further reading
 

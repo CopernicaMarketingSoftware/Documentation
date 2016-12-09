@@ -34,7 +34,7 @@ interests of the database associated with \$databaseID. Each interest is
 wrapped inside an object, with its identifier, name and the group to
 which it belongs.
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 3,
@@ -53,7 +53,7 @@ which it belongs.
         "group": "Transport"
     }]
 }
-~~~~
+```
 
 POST request
 ------------
@@ -67,23 +67,23 @@ group to which it should be added.
 This message created a new interest field 'Car', grouped under
 'Transport'
 
-~~~~ {.language-javascript}
+```
 {"name":"Car","group":"Transport"}
-~~~~
+```
 
 The group name functions as an identifier. This subsequent POST request
 will add another interest 'Yellow submarine' to the group 'Transport'
 
-~~~~ {.language-javascript}
+```
 {"name":"Yellow submarine","group":"Transport"}
-~~~~
+```
 
 ### Result message interest POST request
 
 A successful POST request is celebrated with a message with a link to
 the database interests.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 13:39:11 GMT
 Server: Apache/2.2.22 (Ubuntu)
@@ -91,7 +91,7 @@ X-Powered-By: PHP/5.3.10-1ubuntu3.9
 Location: https://api.copernica.com/database/756/interests/
 Content-Length: 0
 Content-Type: application/json
-~~~~
+```
 
 ### Further reading
 

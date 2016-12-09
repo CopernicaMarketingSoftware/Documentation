@@ -27,7 +27,7 @@ creation, the amount of destinations and the type.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:11:43 GMT 
 Server: Apache 
@@ -40,7 +40,7 @@ timestamp: "2014-08-11 12:14:31"
 destinations: "1"
 type: "individual"
 }
-~~~~
+```
 
 ### Further reading
 

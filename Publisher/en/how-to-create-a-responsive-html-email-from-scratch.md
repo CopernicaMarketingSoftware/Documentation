@@ -35,7 +35,7 @@ The Basics
 Every HTML document starts with a DOCTYPE, followed by the HEAD section,
 BODY and so on. Create a new HTML document and use the following code:
 
-~~~~ {.language-markup}
+```
 <!DOCTYPE html >
     <html>
         <head>
@@ -56,7 +56,7 @@ BODY and so on. Create a new HTML document and use the following code:
             </table>
         </body>
     </html>
-~~~~
+```
 
 Nothing extraordinary as you can see, except for the viewport meta tag.
 Basically this tag tells the email client (or browser) to assume that
@@ -93,7 +93,7 @@ The header will be wrapped inside of the main container table you saw
 earlier. The one that spans across the full width of the page. The code
 is as follows:
 
-~~~~ {.language-markup}
+```
 <table border="1" cellpadding="0" cellspacing="0" align="center" width="640">
     <tr>
         <td>
@@ -101,7 +101,7 @@ is as follows:
         </td>
     </tr>
 </table>
-~~~~
+```
 
 Make sure you've placed the code above inside the main container table.
 
@@ -112,13 +112,13 @@ Make sure you've placed the code above inside the main container table.
 The structure of the introduction is similar to the header, so go ahead
 and copy that code and paste it below the header code.
 
-~~~~ {.language-markup}
+```
 <tr>
     <td>
         Introduction
     </td>
 </tr>
-~~~~
+```
 
 Your HTML page should look like this:
 
@@ -136,7 +136,7 @@ instead. The table on the left will need to align to the left and the
 right table will of course need to align to the right. Take a look at
 the following code:
 
-~~~~ {.language-markup}
+```
 <tr>
     <td>
         <table border="1" cellpadding="0" cellspacing="0" align="left" width="49%">
@@ -155,7 +155,7 @@ the following code:
         </table>
     </td>
 </tr>
-~~~~
+```
 
 Place this code right below the 'introduction'. Your HTML page should
 look like this:
@@ -167,13 +167,13 @@ look like this:
 The footer looks a lot like the header structure doesn't it? Go ahead
 and copy the code of the header and paste it below the two columns.
 
-~~~~ {.language-markup}
+```
     <tr>
         <td>
             Footer
         </td>
     </tr>
-~~~~
+```
 
 Your HTML page should look like this:
 
@@ -193,13 +193,13 @@ The header only consists of a single image. So that's easy. Replace the
 text 'Header' with an image of your own or the one available in the
 source files you can download. Take a look a the code below:
 
-~~~~ {.language-markup}
+```
 <tr>
     <td bgcolor="#00A8C6" style="font-size: 0; line-height: 0; padding: 0 10px 0 10px;" height="140" align="center" class="responsive-image">
         <img src="logo.png" alt="" />
     </td>
 </tr>
-~~~~
+```
 
 Before you say anything, I'm aware that I'm using padding. Padding
 doesn't work well in email clients. But believe me, it's safe to use
@@ -225,9 +225,9 @@ for your design, you can always use
 create white-space. I use a slightly different technique that doesn't
 require an image as a spacer. Here is an example:
 
-~~~~ {.language-markup}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 Simply set the font-size and line-height of the container, in this case
 a TD tag, to zero and set the height of the container to the amount of
@@ -242,10 +242,10 @@ make it nice and thin.
 
 This is the code
 
-~~~~ {.language-markup}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="1" bgcolor="#F9F9F9">&nbsp;</td></tr>
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 Notice the extra 'spacer' code I've added below the gray line? This is
 because padding would not have worked. The padding would have added
@@ -253,7 +253,7 @@ extra pixels and make the line a bit thicker than it should.
 
 Your code should look like this:
 
-~~~~ {.language-markup}
+```
 <tr>
     <td style="padding: 10px 10px 20px 10px;">
         <div style="font-size: 20px;">Greetings friend!</div>
@@ -267,7 +267,7 @@ Your code should look like this:
 </tr>
 <tr><td style="font-size: 0; line-height: 0;" height="1" bgcolor="#F9F9F9">&nbsp;</td></tr>
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 And your HTML page should now look like this:
 
@@ -281,23 +281,23 @@ for extra white-space if you like.
 
 Add an image
 
-~~~~ {.language-markup}
+```
 <tr>
     <td style="padding: 0 10px;" align="center" class="responsive-image">
         <img src="ph1.png" width="240" alt="" />
     </td>
 </tr>
-~~~~
+```
 
 Add extra white-space below the image
 
-~~~~ {.language-markup}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td></tr>
-~~~~
+```
 
 Add a short summary. I'm using lorem ipsum.
 
-~~~~ {.language-markup}
+```
 <tr>
     <td>
         <div style="font-weight: bold; font-size: 16px;">Lorem ipsum</div>
@@ -308,17 +308,17 @@ Add a short summary. I'm using lorem ipsum.
         </div>
     </td>
 </tr>
-~~~~
+```
 
 Add extra white-space below the summary
 
-~~~~ {.language-markup}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td></tr>
-~~~~
+```
 
 Repeat above for the right column and your code should look like this:
 
-~~~~ {.language-markup}
+```
 <tr>
     <td>
         <table border="1" cellpadding="0" cellspacing="0" align="left" width="49%">
@@ -362,7 +362,7 @@ Repeat above for the right column and your code should look like this:
         </table>
     </td>
 </tr>
-~~~~
+```
 
 **Note:** Just like the image in the header, I've added a special CSS
 class 'responsive-image' to the container of the images.
@@ -372,13 +372,13 @@ off the borders of my tables in this screenshot and added a bit of basic
 CSS styling. Not to worry, update the CSS inside the HEAD with the
 following code:
 
-~~~~ {.language-markup}
+```
 <style type="text/css">
     body {margin: 10px 0; padding: 0 10px; background: #F9F2E7; font-size: 13px;}
     table {border-collapse: collapse;}
     td {font-family: arial, sans-serif; color: #333333;}
 </style>
-~~~~
+```
 
 ![Responsive email document: columns](../images/responsive-email-copernica-8.jpg)
 
@@ -387,13 +387,13 @@ following code:
 The footer will only need a name and a background color. No Rocket
 Science there.
 
-~~~~ {.language-markup}
+```
 <tr>
     <td bgcolor="#485465" style="padding: 10px 10px 10px 10px; color: #FFFFFF;">
         Copernica BV
     </td>
 </tr>
-~~~~
+```
 
 Your HTML page should now look like this. You're almost there!
 
@@ -411,7 +411,7 @@ Place the code below in HEAD section of your email HTML document. You
 can paste it right after the last CSS styles you've placed a few steps
 earlier. I'll break it down in the next paragraph.
 
-~~~~ {.language-markup}
+```
 <style type="text/css">
     @media only screen and (max-width: 480px) {
         body,table,td,p,a,li,blockquote {
@@ -425,7 +425,7 @@ earlier. I'll break it down in the next paragraph.
         }
     }
 </style>
-~~~~
+```
 
 What the media query code tells mobile email clients (and browsers) is
 that below the 480px threshold, a mobile-friendly layout should be

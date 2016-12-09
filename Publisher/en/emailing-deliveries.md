@@ -37,7 +37,7 @@ destination ID, profile ID and subprofile ID.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:40:40 GMT 
 Server: Apache 
@@ -61,7 +61,7 @@ Content-Type: application/json
         ...
     ]
 }
-~~~~
+```
 
 ### Searching for emailing deliveries with the GET request
 
@@ -71,6 +71,6 @@ the results can be controlled. You can also filter the results using the
 fields[] parameter. An example for retrieving only deliveries after a
 particular timestamp:
 
-~~~~ {.language-javascript}
+```
 emailing/$emailingID/deliveries?fields[]=timestamp<=2014-06-18%14:00:00&access_token=...
-~~~~
+```

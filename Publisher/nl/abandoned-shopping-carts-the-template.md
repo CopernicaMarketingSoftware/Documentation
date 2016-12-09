@@ -49,17 +49,17 @@ Hiervoor vragen we met behulp van *loadsubprofile* de subprofielen uit
 de collectie op, waarbij we de *limit* op 1 zetten en we (omgekeerd)
 sorteren op de veld 'Timestamp'. De code:
 
-~~~~ {.language-javascript}
+```
 {loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
-~~~~
+```
 
 Vervolgens halen we alle door dit profiel achtergelaten producten uit de
 collectie 'BasketProducts'. Nu gebruiken we parameter *multiple* om aan
 te geven dat we meerdere (alle!) subprofielen willen:
 
-~~~~ {.language-javascript}
+```
  {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
-~~~~
+```
 
 ### Een loop met foreach
 
@@ -74,13 +74,13 @@ met de ID van het opgehaalde mandje. De code om dit te controleren en om
 alleen bij de juiste subprofielen de naam van het product te laten zien
 is als volgt:
 
-~~~~ {.language-javascript}
+```
 {foreach from=$loadedProducts item=loadedProduct}                          
     {if $loadedProduct.BasketID == $loadedBasket.id}
         {$loadedProduct.Product}
     /if}
 {/foreach}
-~~~~
+```
 
 *N.B. Als je een link naar de pagina van het product wilt opnemen in je
 document, dan zul je die ook in de for-each moeten laten zien. Het is
@@ -95,7 +95,7 @@ product welk aantal ervan in het winkelmandje zijn achtergelaten. Ook
 staat de prijs per stuk in de database. We willen dat graag in het
 document laten zien, samen met de totaalprijs van het artikel:
 
-~~~~ {.language-javascript}
+```
 {foreach from=$loadedProducts item=loadedProduct}                          
     {if $loadedProduct.BasketID == $loadedBasket.id}
         {$loadedProduct.Product}
@@ -108,7 +108,7 @@ document laten zien, samen met de totaalprijs van het artikel:
                 {$productTotal}
     {/if}
 {/foreach}
-~~~~
+```
 
 ### Totaalprijs
 
@@ -119,15 +119,15 @@ totale prijs van het product.
 
 Buiten de *foreach-loop*:
 
-~~~~ {.language-javascript}
+```
 {capture assign="basketTotal"}0{/capture}
-~~~~
+```
 
 In de *foreach-loop* en het *if-statement*:
 
-~~~~ {.language-javascript}
+```
 {assign var="basketTotal" value=$basketTotal+$productTotal}
-~~~~
+```
 
 ### Het complete document
 
@@ -135,7 +135,7 @@ Voor de overzichtelijkheid is het verstandig om het mandje in een tabel
 weer te geven. Door al het bovenstaande samen te voegen en in een tabel
 te zetten ontstaat de volgende code:
 
-~~~~ {.language-javascript}
+```
 <table align="center" width="400px">
     <tr><th></th><th>Product</th><th>Amount</th><th>Price (1 pc.)</th><th>Total price</th></tr>
 
@@ -176,7 +176,7 @@ te zetten ontstaat de volgende code:
         <td><b>Total price:</b></td><td><b>{$basketTotal}</b>
     </td></tr>
 </table>
-~~~~
+```
 
 ### Het resultaat
 

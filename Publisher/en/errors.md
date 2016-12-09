@@ -33,7 +33,7 @@ the number of returned errors.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 10 Feb 2014 12:25:37 GMT
 Server: Apache/2.2.22(Ubuntu)
@@ -61,7 +61,7 @@ Content-Type: application/json
         ...
     ]
 }
-~~~~
+```
 
 ### Searching for errors with the GET request
 
@@ -70,9 +70,9 @@ The field on which can be filtered is `timestamp`. The datetime format
 we use is YYYY-MM-DD HH:MM:SS and can look like 2014-08-01 10:40:31.
 With these GET parameters the url of a call could look like this:
 
-~~~~ {.language-javascript}
+```
 /errors?fields[]=timestamp==2014-01-01 10:40:31&access_token=...
-~~~~
+```
 
 ### Further reading
 

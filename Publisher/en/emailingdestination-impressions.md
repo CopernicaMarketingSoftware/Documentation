@@ -40,7 +40,7 @@ the destination, the profile and the subprofile id.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:11:43 GMT 
 Server: Apache 
@@ -66,7 +66,7 @@ Content-Type: application/json
         ...
     ]
 }
-~~~~
+```
 
 ### Further reading
 
@@ -86,6 +86,6 @@ the results can be controlled. You can also filter the results using the
 fields[] parameter. An example for retrieving only the impressions of a
 destinations from after a particular timestamp:
 
-~~~~ {.language-javascript}
+```
 emailingdestinations/$destinationID/impressions?fields[]=timestampsent<=2014-06-18%14:00:00&access_token=...
-~~~~
+```

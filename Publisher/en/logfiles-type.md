@@ -46,7 +46,7 @@ logfiles.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 20 Nov 2016 12:25:37 GMT
 Server: Apache/2.2.22(Ubuntu)
@@ -58,7 +58,7 @@ Content-Type: application/json
     "cdm-impression.2016-09-02.log",
     "cdm-delivery.2016-09-02.log"
 ]
-~~~~
+```
 
 ### Further reading
 

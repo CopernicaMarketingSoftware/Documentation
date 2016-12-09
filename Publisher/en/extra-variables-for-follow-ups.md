@@ -9,18 +9,18 @@ This requires the oldschool foreach syntax to loop through the array.
 
 #### Example:
 
-~~~~ {.language-php}
+```
 <ul>
     {foreach from=$mailing.trigger.fields.interests key=k item=v}
       <li>$k}: $v}</li>
     {/foreach}
 </ul>
-~~~~
+```
 
 Variables available in follow-up actions
 ----------------------------------------
 
-~~~~ {.language-php}
+```
 //always available
 
 $mailing // return NULL
@@ -112,4 +112,4 @@ $mailing.trigger.snapshot.created
 //  Subject of the document in the follow-up (string)
 
 $mailing.trigger.snapshot.subject
-~~~~
+```

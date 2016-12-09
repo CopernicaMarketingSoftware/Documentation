@@ -15,7 +15,7 @@ object containing the actual values stored in the profile.
 
 ### Example output
 
-~~~~ {.language-javascript}
+```
 {
     "Company": "ABCWidgets",
     "Address": "666 Station Road",
@@ -28,7 +28,7 @@ object containing the actual values stored in the profile.
     "AccountManager": "Walter Williams",
     "Age": "0"
 }
-~~~~
+```
 
 POST profile field values
 -------------------------
@@ -42,16 +42,16 @@ it is not needed to include this in the message.
 This will set the value of the field 'Company' to 'Microsoft' at the
 profile associated with \$profileID.
 
-~~~~ {.language-javascript}
+```
 {"Company":"Microsoft"}
-~~~~
+```
 
 ### Return message
 
 Upon a successfull POST request, a message will be sent back, containing
 a link to the profile affected by the request.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 15:46:26 GMT
 Server: Apache/2.2.22 (Ubuntu)
@@ -59,7 +59,7 @@ X-Powered-By: PHP/5.3.10-1ubuntu3.9
 Location: https://api.copernica.com/profile/2
 Content-Length: 0
 Content-Type: application/json
-~~~~
+```
 
 ### Further reading
 

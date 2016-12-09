@@ -12,13 +12,13 @@ parameter to the call.
 
 Example result of a default call:
 
-~~~~ {.language-javascript}
+```
 {
     "start" = 5,
     "limit" = 2,
     "data"  = [ ... ]
 }
-~~~~
+```
 
 In the above example only 2 records will be retrieved, and the first 5
 records in the table will be ignored.
@@ -81,7 +81,7 @@ the request. In other words: how many items matched your request. So, a
 (respectively 0 and 100) to a database with 50 profiles will return the
 following:
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
    "limit": 100,
@@ -91,7 +91,7 @@ following:
     ]
     "total": 50
 }
-~~~~
+```
 
 Total parameter
 ---------------

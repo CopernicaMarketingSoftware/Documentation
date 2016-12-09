@@ -31,14 +31,14 @@ or multiple fields in the subprofile).
 In the example below the unsubscribe behaviour is set to 'update'. When
 the behaviour is triggered, the field Newsletter will be set to 'no'.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "update",
     "fields": {
         "Newsletter": "no",
     }
 }
-~~~~
+```
 
 POST request
 ------------
@@ -54,7 +54,7 @@ in the subprofile).
 
 The unsubscribing subprofile will be updated, two fields are affected.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "update",
     "fields": {
@@ -62,16 +62,16 @@ The unsubscribing subprofile will be updated, two fields are affected.
         "Loyal_customer" : "No"
     }
 }
-~~~~
+```
 
 Another example: the unsubscribing subprofile will immediately be
 deleted from existence.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "remove"
 }
-~~~~
+```
 
 DELETE request
 --------------

@@ -21,7 +21,7 @@ Je hebt een collectieveld *'fruit'* en een aantal subprofielen, die
 respectievelijk de waardes *Appel, Banaan, Citroen, Nectarine,
 Watermeloen* hebben in het veld '*fruit*'
 
-~~~~ {.language-php}
+```
 {loadsubprofile assign=loadedfruits multiple=true limit=2 orderby='fruit asc'}
 <ul>
   Ik heb in mijn fruitschaal een:
@@ -29,7 +29,7 @@ Watermeloen* hebben in het veld '*fruit*'
       <li>{$loadedfruit.fruit}</li>
     {/foreach}
 </ul>
-~~~~
+```
 
 **Resultaat (asc):**
 

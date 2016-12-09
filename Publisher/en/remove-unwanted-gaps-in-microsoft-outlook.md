@@ -31,7 +31,7 @@ The HTML code structure used in the example above is as follows:
 *By the way, I left out any styling because I just want to show you the
 structure of the email you saw in the screenshot earlier.*
 
-~~~~ {.language-markup}
+```
 <!-- Main (large) table: holds everything inside together -->
 <table border="0" cellpadding="0" cellspacing="0" width="500" summary="Main table">
     <tr>
@@ -61,7 +61,7 @@ structure of the email you saw in the screenshot earlier.*
         </td>
     </tr>
 </table>
-~~~~
+```
 
 Looks normal, doesn't it? Sadly the outcome is a bit different.
 
@@ -82,9 +82,9 @@ left with only one border. In some cases there is not enough room to
 align two columns next to each other, so one column pushes the other
 away.
 
-~~~~ {.language-markup}
+```
 table {border-collapse: collapse;}
-~~~~
+```
 
 ### Solution \#2: Don't nest tables and use TD instead of TABLE for columns
 
@@ -98,7 +98,7 @@ display block. This way you can still add a background color.
 
 So instead of using tables:
 
-~~~~ {.language-markup}
+```
 <table border="0" cellpadding="0" cellspacing="0" align="left" width="500" summary="Columns table">
     <tr>
         <!-- Column table: first column of this email -->
@@ -115,21 +115,21 @@ So instead of using tables:
         </table>
     </tr>
 </table>
-~~~~
+```
 
 You should use tds like this:
 
 *Don't forget to add *valign="top"*, otherwise the shortest column will
 start at the middle of the tallest column.*
 
-~~~~ {.language-markup}
+```
 <table border="0" cellpadding="0" cellspacing="0" align="left" width="500" summary="Columns table">
     <tr>
         <td valign="top">A lot of content</td>
         <td valign="top">A lot of content</td>
     </tr>
 </table>
-~~~~
+```
 
 ### Solution \#3: Use conditional statements to target Microsoft Outlook in general
 
@@ -146,13 +146,13 @@ Microsoft Office (Outlook).
 
 For example:
 
-~~~~ {.language-markup}
+```
 <!--[if gte mso 9]>
     <style type="text/css">
         Microsoft Office (Outlook) specific CSS goes here
     </style>
 <![endif]-->
-~~~~
+```
 
 The keyword 'mso' stands for Microsoft Office. Using 'gt' and 'lte' will
 target versions greater than, or less than or equal to, respectively.
@@ -179,7 +179,7 @@ Targeting non-Outlook clients is easy, just use '**!mso**' instead of
 '**gte mso 9**'. With '!mso' you are littererly saying '**not microsoft
 office**'.
 
-~~~~ {.language-markup}
+```
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="500" bgcolor="#FFFFFF" summary="">
     <tr>
         <!--[if !mso]><!---->
@@ -208,7 +208,7 @@ office**'.
     <!--<![endif]-->
     </tr>
 </table>
-~~~~
+```
 
 Have fun testing!
 -----------------

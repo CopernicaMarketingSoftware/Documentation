@@ -34,7 +34,7 @@ profile id, subprofile id and mailing id .
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon,
  11 Aug 2014 12:11:43 GMT 
@@ -50,7 +50,7 @@ Content-Type: application/json
     "subprofile":null,
     "mailing":"161511"
 }
-~~~~
+```
 
 ### Further reading
 

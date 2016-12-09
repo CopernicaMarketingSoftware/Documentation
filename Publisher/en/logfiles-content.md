@@ -25,7 +25,7 @@ the variable names you can use the method:
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 
 HTTP/1.1 200 OK
 Date: Tue, 29 Nov 2016 10:30:35 GMT
@@ -40,7 +40,7 @@ XXXXXXXXXX3,"2016-11-04 11:11:00",12345,1111111,2,133,0,copernica.com,1234,,empl
 XXXXXXXXXX4,"2016-11-04 11:22:00",12345,1111111,2,133,0,copernica.com,1234,,employee1237@copernica.com
 XXXXXXXXXX5,"2016-11-04 11:28:00",12345,1111111,2,133,0,copernica.com,1234,,employee1238@copernica.com
 
-~~~~
+```
 
 Get Request with parameter header
 --------
@@ -58,7 +58,7 @@ Upon a successful request, you will receive a message similar to the
 example below.
 
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Tue, 29 Nov 2016 10:30:08 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -72,7 +72,7 @@ XXXXXXXXXX2,"2016-11-04 11:06:00",12345,1111111,2,133,0,copernica.com,1234,,empl
 XXXXXXXXXX3,"2016-11-04 11:11:00",12345,1111111,2,133,0,copernica.com,1234,,employee1236@copernica.com
 XXXXXXXXXX4,"2016-11-04 11:22:00",12345,1111111,2,133,0,copernica.com,1234,,employee1237@copernica.com
 XXXXXXXXXX5,"2016-11-04 11:28:00",12345,1111111,2,133,0,copernica.com,1234,,employee1238@copernica.com
-~~~~
+```
 
 
 Get Request with parameter json
@@ -89,7 +89,7 @@ Request the JSON encoded content of a log file.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Tue, 29 Nov 2016 10:43:18 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -128,7 +128,7 @@ Content-Type: application/json
     },
         ...
 ]
-~~~~
+```
 
 Get Request with parameter xml
 ---------
@@ -143,7 +143,7 @@ Request the XML encoded content of a log file.
 
 Upon a successful request, you will receive a message similar to the
 example below.
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Tue, 29 Nov 2016 10:54:33 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -172,7 +172,7 @@ Content-Type: application/xml
     </record>
     ...
 </records>
-~~~~
+```
 
 ### Further reading
 

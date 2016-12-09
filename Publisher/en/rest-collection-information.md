@@ -47,7 +47,7 @@ similar to the example below.
 
 ### Example output
 
-~~~~ {.language-javascript}
+```
 {
     "ID" : "1",
     "name" : "collection_456",
@@ -65,7 +65,7 @@ similar to the example below.
         ]
     ]
 }
-~~~~
+```
 
 ### Further reading
 

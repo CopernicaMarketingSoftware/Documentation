@@ -29,11 +29,11 @@ De volgende regels code gebruiken we voor het instellen van de
 personalisatie. De bovenste is voor de afzender, de onderste voor het
 afzendadres.
 
-~~~~ {.language-javascript}
+```
 {if $Accountmanager =="Arends"}A.Arends | Bedrijf{elseif $Accountmanager=="Boer"}B.Boer | Bedrijf{elseif $Accountmanager=="Clinton"}C.Clinton | Bedrijf{else}Bedrijf{/if}
 
 {if $Accountmanager =="Arends"}arends@bedrijf.com{elseif $Accountmanager=="Boer"}boer@bedrijf.com{elseif $Accountmanager=="Clinton"}clinton@bedrijf.com{else}nieuwsbrief@bedrijf.com{/if}
-~~~~
+```
 
 Als er nu een nieuw document onder deze template wordt aangemaakt, zal
 deze optie in de keuzelijst verschijnen. De werking is direct te

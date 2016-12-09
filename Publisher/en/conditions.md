@@ -30,14 +30,14 @@ rule.
 
 ### Example GET request
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/rule/5/conditions?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "ID":"5"
     "name":"Rule 1"
@@ -82,7 +82,7 @@ following data:
     "inversed":"false"
     "disabled":"false"
     }
-~~~~
+```
 
 POST request
 ------------
@@ -96,6 +96,6 @@ condition.
 This will be the payload for a POST request, which creates an (empty)
 condition inside view 5. The type of the condition is case-sensitive!
 
-~~~~ {.language-javascript}
+```
 {"name": "Rule 4","view": "13"}
-~~~~
+```

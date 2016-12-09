@@ -39,7 +39,7 @@ retreived.
 Example output
 --------------
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": "1",
@@ -56,7 +56,7 @@ Example output
         }
     ]
 }
-~~~~
+```
 
 POST Request
 ------------
@@ -74,7 +74,7 @@ message, as this is already included in the URL
 The message below will create a new callback in the collection
 associated with callbackID.
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 1,
@@ -88,7 +88,7 @@ associated with callbackID.
         "database": "788"
     }]
 }
-~~~~
+```
 
 ### Further reading
 

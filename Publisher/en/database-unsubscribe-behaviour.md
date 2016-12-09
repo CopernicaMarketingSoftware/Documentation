@@ -31,14 +31,14 @@ fields in the profile).
 In the example below the unsubscribe behaviour is set to 'update'. When
 the behaviour is triggered, the field Newsletter will be set to 'no'.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "update",
     "fields": {
         "Newsletter": "no",
     }
 }
-~~~~
+```
 
 POST request
 ------------
@@ -54,7 +54,7 @@ profile).
 
 The unsubscribing profile will be updated, two fields are affected.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "update",
     "fields": {
@@ -62,16 +62,16 @@ The unsubscribing profile will be updated, two fields are affected.
         "Loyal_customer" : "No"
     }
 }
-~~~~
+```
 
 Another example: the unsubscribing profile will be removed from the
 database.
 
-~~~~ {.language-javascript}
+```
 {
     "behavior": "remove"
 }
-~~~~
+```
 
 DELETE request
 --------------

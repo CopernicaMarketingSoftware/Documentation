@@ -61,7 +61,7 @@ databases.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 10 Feb 2014 12:25:37 GMT
 Server: Apache/2.2.22(Ubuntu)
@@ -121,7 +121,7 @@ Content-Type: application/json
         }]
     }
 }
-~~~~
+```
 
 POST Request
 ------------
@@ -138,20 +138,20 @@ The example request below will create a new database. The fields `ID`
 and `created` do not need to be included, as they will be automatically
 assigned by the API.
 
-~~~~ {.language-javascript}
+```
 {
     "name": "MyFirstDatabase",
     "Description": "A wonderful database that was created with REST",
     "Archived": false
 }
-~~~~
+```
 
 ### Example response message
 
 Upon a successful POST request, you will receive a message containing a
 link to the newly created database.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 201 Created
 Date: Tue, 18 Feb 2014 14:52:30 GMT
 Server: Apache/2.2.22 (Ubuntu)
@@ -159,7 +159,7 @@ X-Powered-By: PHP/5.3.10-1ubuntu3.9
 Location: https://api.copernica.com/database/839
 Content-Length: 0
 Content-Type: application/json
-~~~~
+```
 
 ### Further reading
 

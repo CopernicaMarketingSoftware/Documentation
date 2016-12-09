@@ -15,14 +15,14 @@ an object containing the actual values stored in the subprofile.
 
 ### Example return message
 
-~~~~ {.language-javascript}
+```
 {
     "productid": 300,
     "name": "Yoko Multitouch Tablet",
     "price" : "4,40",
     "currency" : "EUR"
 }
-~~~~
+```
 
 POST subprofile fields
 ----------------------
@@ -36,22 +36,22 @@ in the request URL.
 
 The data is posted as a key-value JSON object.
 
-~~~~ {.language-javascript}
+```
 {"name":"walter","score":10}
-~~~~
+```
 
 ### Example return message
 
 A message with the location of the subprofile affected is returned.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 13:06:41 GMT
 Server: Apache
 Location: https://api.copernica.com/subprofile/969758
 Transfer-Encoding: chunked
 Content-Type: application/json
-~~~~
+```
 
 ### Further reading
 

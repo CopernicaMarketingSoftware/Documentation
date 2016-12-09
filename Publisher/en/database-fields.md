@@ -50,7 +50,7 @@ databaseID. Each field is represented as an object with its properties.
 Example output
 --------------
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 10,
@@ -80,7 +80,7 @@ Example output
         "index": false
     }]
 }
-~~~~
+```
 
 POST request
 ------------
@@ -93,14 +93,14 @@ automatically.
 
 ### Example request:
 
-~~~~ {.language-javascript}
+```
 {
     "name": "Favourite_beer",
     "type": "text",
     "length": 150,
     "index": true
 }
-~~~~
+```
 
 DELETE request
 --------------

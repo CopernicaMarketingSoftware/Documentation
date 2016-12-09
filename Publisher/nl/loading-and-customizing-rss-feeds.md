@@ -44,9 +44,9 @@ tekstblok. Je kunt hierbij de XSLT meegeven, welke je in Copernica onder
 gebruikt. Een voorbeeld om de feed van de 'Algemeen Nieuws' rubriek van
 de NOS website in te laden met de XSLT genaamd 'Test':
 
-~~~~ {.language-javascript}
+```
 {loadfeed feed="http://feeds.nos.nl/nosnieuwsalgemeen?format=xml" xslt="Test"}
-~~~~
+```
 
 ### Conditioneel inladen van een feed
 
@@ -55,7 +55,7 @@ andere categorie producten of nieuwsartikelen bevatten. Je kunt dan met
 behulp van smarty-personalisatie verschillende feeds conditioneel laten
 tonen. Een voorbeeld:
 
-~~~~ {.language-javascript}
+```
 {if $interest=="Sport"}
 {loadfeed feed="http://feeds.feedburner.com/nossportalgemeen?format=xml" xslt="Test"}
 {else if $interest=="Economie"}
@@ -63,7 +63,7 @@ tonen. Een voorbeeld:
 {else}
 {loadfeed feed="http://feeds.nos.nl/nosnieuwsalgemeen?format=xml" xslt="Test"}
 {/if}
-~~~~
+```
 
 XSLT
 ----
@@ -78,7 +78,7 @@ vinden op de website van [w3schools](http://www.w3schools.com/xsl/).
 Als we de XML bekijken van een nieuwsbericht uit de NOS feed, dan zien
 we het volgende:
 
-~~~~ {.language-javascript}
+```
 <item>
     <title><![CDATA[FIFA onderzoekt racisme Mexicanen]]></title>
     <link>http://nos.nl/wk2014/artikel/663371-fifa-onderzoekt-racisme-mexicanen.html</link>
@@ -87,7 +87,7 @@ we het volgende:
     <pubDate>Thu, 19 Jun 2014 11:00:46 +0200</pubDate>
     <guid isPermaLink="false">http://nos.nl/wk2014/artikel/663371-fifa-onderzoekt-racisme-mexicanen.html</guid>
 </item>
-~~~~
+```
 
 Om de nieuwsberichten geordend in de mailing te plaatsen, zetten we
 alles in een html tabel. Gezien de feed uit meerdere nieuwsartikelen
@@ -96,7 +96,7 @@ willen schrijven, gebruiken we een *for-each*-loop. Voor elk artikel
 vullen we een deel van de tabel. Na de loop sluiten we de tabel weer
 netjes af. Een eenvoudig voorbeeld:
 
-~~~~ {.language-javascript}
+```
 <xsl:template name="item">
     <table>
         <xsl:for-each select="item">
@@ -113,7 +113,7 @@ netjes af. Een eenvoudig voorbeeld:
         </xsl:for-each>
     </table>
 </xsl:template>
-~~~~
+```
 
 Met behulp van CSS kan de feed in de mailing worden opgemaakt. Je kunt
 inline CSS gebruiken, welke je in het XSLT-bestand plaatst, je kunt
@@ -132,13 +132,13 @@ product volledig te bekijken valt. Hiervoor kun je een mooie knop bij
 elk item van de feed plaatsen: een call-to-action button! Een
 voorbeeldcode om ook in de *foreach*-loop te plaatsen:
 
-~~~~ {.language-javascript}
+```
 <tr>
     <td>
         <a class="calltoaction" href="{link}">Lees meer!</a>
     </td>
 </tr>
-~~~~
+```
 
 ### Afbeelding uit de feed inladen
 
@@ -150,11 +150,11 @@ url="http://content.nos.nl/data/image/l/2014/06/19/663433.jpg"
 length="16566" /\> De manieren om beide manieren in te laden is als
 volgt (respectievelijk):
 
-~~~~ {.language-javascript}
+```
 <img src="{imageurl}"/>
 
 <img src="{enclosure/@url}"/> 
-~~~~
+```
 
 ### Aantal items limiteren
 
@@ -164,9 +164,9 @@ worden. De variabele *test* kan alles zijn, gezien het niet elders terug
 hoeft te komen in de XSLT. Onderstaande code moet als eerste in de
 *for-each* staan.
 
-~~~~ {.language-javascript}
+```
 <xsl:if test="position() < 3">
-~~~~
+```
 
 ### Lengte van item limiteren
 
@@ -181,7 +181,7 @@ item.
 Als de tekst niet langer is dan 200 karakters, wordt het gewoon
 geplaatst.
 
-~~~~ {.language-javascript}
+```
 <xsl:choose>
     <xsl:when test="string-length(description) > '200'">
         <xsl:value-of select="substring(description, 1, 200)" disable-output-escaping="yes"/>...
@@ -192,7 +192,7 @@ geplaatst.
         <xsl:value-of select="description" disable-output-escaping="yes"/>
     </xsl:otherwise>
 </xsl:choose>
-~~~~
+```
 
 ### Google Analytics UTM codes meesturen
 
@@ -202,13 +202,13 @@ je hyperlinks in de feed wil uitbreiden met UTM-tags, dan zal dat dus in
 de XSLT moeten gebeuren. Dit kan eenvoudig door de tags aan de *{link}*
 te plakken. (Let op, & moet worden geschreven als &amp;) Een voorbeeld:
 
-~~~~ {.language-javascript}
+```
 <a class="feedlink" href="{link}?utm_source=feed&amp;utm_medium=e-mail&amp;utm_campaign=sale">Tekst_van_link</a>
-~~~~
+```
 
 Indien gewenst is het mogelijk om de *{link}* uit te breiden met
 bijvoorbeeld de titel van het item. Dit gaat als volgt:
 
-~~~~ {.language-javascript}
+```
 <a class="feedlink" href="{link}?title={title}">Tekst_van_link</a>
-~~~~
+```

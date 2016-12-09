@@ -15,14 +15,14 @@ A miniview contains the following information:
 GET-request
 -----------
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/collection/51/miniviews?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "start":0
     "limit":3
@@ -38,4 +38,4 @@ following data:
         , ...
     ]
 }
-~~~~
+```

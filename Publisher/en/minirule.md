@@ -16,14 +16,14 @@ A minirule contains the following information:
 GET-request
 -----------
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/minirule/6?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "ID":"6"
     "name":"Rule 1"
@@ -65,7 +65,7 @@ following data:
     "inversed":false
     "disabled":false
 }
-~~~~
+```
 
 PUT request
 -----------
@@ -73,12 +73,12 @@ PUT request
 A minirule get be edited by a PUT request. You can send this to an URL
 like the one below:
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/minirule/6?access_token=ff96963b...
-~~~~
+```
 
 The following payload inverts the minirule:
 
-~~~~ {.language-javascript}
+```
 {"inversed":"true"}
-~~~~
+```

@@ -39,7 +39,7 @@ to specify the maximum or range of callbacks to be retreived.
 
 ### Example output
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": "1",
@@ -56,7 +56,7 @@ to specify the maximum or range of callbacks to be retreived.
         }
     ]
 }
-~~~~
+```
 
 POST Request
 ------------
@@ -75,7 +75,7 @@ The message below will create a new callback in the collection.
 
 ### Example message to post
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 1,
@@ -89,7 +89,7 @@ The message below will create a new callback in the collection.
         "database": "788"
     }]
 }
-~~~~
+```
 
 ### Further reading
 

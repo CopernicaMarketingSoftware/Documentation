@@ -20,7 +20,7 @@ your application dashboard on Copernica.com.
 
  
 
-~~~~ {.language-php}
+```
 <?php
 /**
  *  Example API call
@@ -53,14 +53,14 @@ echo($output) . PHP_EOL;
 // close curl resource to free up system resources
 
 curl_close($ch);
-~~~~
+```
 
 ### Example response of a GET request
 
 If your request is successful, you will receive the requested
 information. In this example the information of a single profile.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Fri, 14 Feb 2014 08:47:26 GMT
 Server: Apache
@@ -86,7 +86,7 @@ Content-Type: application/json
     "secret": "4686c108d52736fb85ca10975c6f0a5e",
     "created": "2014-02-10 10:33:29"
 }
-~~~~
+```
 
 ### Example of POST request in PHP with cURL
 
@@ -95,7 +95,7 @@ request to the database, telling him to add a profile. If you use this
 script, make sure to update it with the ID of your database and the
 token supplied on your application dashboard on Copernica.com.
 
-~~~~ {.language-php}
+```
 <?php
 /**
  *  Example API call
@@ -142,7 +142,7 @@ echo($output) . PHP_EOL;
 
 // close curl resource to free up system resources
 curl_close($ch);
-~~~~
+```
 
 The API call will return a header containing the location of the newly
 created profile. Currently you cannot create multiple profiles in a
@@ -167,7 +167,7 @@ To delete a profile, you send a DELETE request. Since PHP and cURL do
 not support CURLOPT\_PUT or CURLOPT\_DELETE, we use a
 CURLOPT\_CUSTOMREQUEST and set it to "DELETE".
 
-~~~~ {.language-php}
+```
 <?php
 /**
  *  Example API call
@@ -200,7 +200,7 @@ echo($output) . PHP_EOL;
 // close curl resource to free up system resources
 
 curl_close($ch);
-~~~~
+```
 
 Upon successful deletion a `X-Deleted` header will be sent, followed by
 what was deleted and the identifier of the deleted item, in the example

@@ -33,7 +33,7 @@ unsubsribes and abuses of an emailing.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:40:40 GMT 
 Server: Apache 
@@ -67,4 +67,4 @@ Content-Type: application/json
         "unique":"0"
     }
 }
-~~~~
+```

@@ -33,7 +33,7 @@ the document, it's from-address and subject.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:40:40 GMT 
 Server: Apache 
@@ -46,4 +46,4 @@ Content-Type: application/json
     "from_address":"\"Copernica Nieuwsbrief\" ",
     "subject":"Richard van Hooijdonk keynote-spreker Copernica Summit"
 }
-~~~~
+```

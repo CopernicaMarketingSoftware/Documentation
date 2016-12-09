@@ -16,14 +16,14 @@ A minirule contains the following information:
 GET-request
 -----------
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/miniview/7/rules?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "start":0
     "limit":1
@@ -72,4 +72,4 @@ following data:
         }
     ]
 }
-~~~~
+```

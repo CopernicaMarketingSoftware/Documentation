@@ -23,14 +23,14 @@ If you send a GET request, you will retrieve all rules of the given view
 
 ### Example GET request
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/view/13/rules?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "start":0
     "limit":2
@@ -86,7 +86,7 @@ following data:
         }
     ]
 }
-~~~~
+```
 
 POST request
 ------------
@@ -101,6 +101,6 @@ on.
 This will be the payload for a POST request, which creates a rule inside
 view 13. You can make up any name you want.
 
-~~~~ {.language-javascript}
+```
 {"name": "Rule 4","view": "13"}
-~~~~
+```

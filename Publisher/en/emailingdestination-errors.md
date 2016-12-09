@@ -42,7 +42,7 @@ subprofile id.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:11:43 GMT 
 Server: Apache 
@@ -68,7 +68,7 @@ Content-Type: application/json
         ...
     ]
 }
-~~~~
+```
 
 ### Searching for a error of an emailing destinations with the GET request
 
@@ -78,9 +78,9 @@ the results can be controlled. You can also filter the results using the
 fields[] parameter. An example for retrieving only the errors of a
 destinations from after a particular timestamp:
 
-~~~~ {.language-javascript}
+```
 emailingdestinations/$destinationID/errors?fields[]=timestampsent<=2014-06-18%14:00:00&access_token=...
-~~~~
+```
 
 ### Further reading
 

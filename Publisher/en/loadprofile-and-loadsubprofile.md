@@ -7,9 +7,9 @@ within your account.
 The code below provides an example how you can retreive profile data
 from a different database.
 
-~~~~ {.language-php}
+```
    {loadprofile source="nameofyourdatabase" assign=loadedprofile}
-~~~~
+```
 
 *Source*must contain the name of the database. Optionally you can also
 refer to a selection in the database. The name of the database and the
@@ -26,15 +26,15 @@ If you do not specifiy which profile you want to retreive, only the
 first in the database will be returned. You can select a particular
 profile by using the ID-parameter. For example:
 
-~~~~ {.language-php}
+```
 {loadprofile source="Databasename" id=1337 assign=loadedprofile}
-~~~~
+```
 
 The same applies for loading subprofiles from a **collection**
 
-~~~~ {.language-php}
+```
   {loadsubprofile source="Databasename:Collectionname" profile=$profile.id assign=loadedsubprofile}
-~~~~
+```
 
 ### **Options**
 
@@ -83,7 +83,7 @@ To create -for example- a list with the last 2 products purchased by a
 customer and show these in your template, your code can look something
 like this:
 
-~~~~ {.language-php}
+```
 
 {loadsubprofile source="Customers:Products" assign="orderedproducts" profile=$profile.id multiple=true limit=2 orderby='orderdate asc' }
 <ul>
@@ -95,7 +95,7 @@ like this:
     </li>
   {/foreach}
 </ul>
-~~~~
+```
 
 ### Brief explanation of above example
 

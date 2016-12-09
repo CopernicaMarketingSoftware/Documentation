@@ -36,7 +36,7 @@ mailing, destination, profile and the subprofile.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Mon, 11 Aug 2014 12:40:40 GMT 
 Server: Apache 
@@ -63,7 +63,7 @@ Content-Type: application/json
         ...
     ]
 }
-~~~~
+```
 
 ### Searching for emailing abuses with the GET request
 
@@ -73,6 +73,6 @@ the results can be controlled. You can also filter the results using the
 fields[] parameter. An example for retrieving only the abuses that
 occurred before a particular timestamp:
 
-~~~~ {.language-javascript}
+```
 emailing/$emailingID/abuses?fields[]=timestamp==2014-06-18%14:00:00&access_token=...
-~~~~
+```

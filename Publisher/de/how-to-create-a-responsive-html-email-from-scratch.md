@@ -30,7 +30,7 @@ folgenden Code:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html>
         <head>
@@ -51,7 +51,7 @@ folgenden Code:
             </table>
         </body>
     </html>
-~~~~
+```
 
 Nichts ungewöhnliches, wie Sie sehen können – abgesehen von dem Viewport
 Meta Tag. Dieser Tag erklärt dem Client, dass die E-Mail genau so breit
@@ -87,7 +87,7 @@ losgehen mit dem restlichen Code.\
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <table border="1" cellpadding="0" cellspacing="0" align="center" width="640">
     <tr>
         <td>
@@ -95,7 +95,7 @@ losgehen mit dem restlichen Code.\
         </td>
     </tr>
 </table>
-~~~~
+```
 
 \
 \
@@ -110,13 +110,13 @@ Header. Fügen Sie diesen einfach unterhalb des Codes für den Header ein.
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td>
         Introduction
     </td>
 </tr>
-~~~~
+```
 
 Status quo:
 
@@ -137,7 +137,7 @@ einmal den folgenden Code an:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td>
         <table border="1" cellpadding="0" cellspacing="0" align="left" width="49%">
@@ -156,7 +156,7 @@ einmal den folgenden Code an:
         </table>
     </td>
 </tr>
-~~~~
+```
 
 Platzieren Sie den Code direkt unter jenen für die Einführung:
 
@@ -170,13 +170,13 @@ Anwendung – einfach unter den zuletzt eingefügten Code einfügen.
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
     <tr>
         <td>
             Footer
         </td>
     </tr>
-~~~~
+```
 
 Im Browser sollte jetzt das zu sehen sein:
 
@@ -198,13 +198,13 @@ Wahl und schauen Sie sich den folgenden Code an:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td bgcolor="#00A8C6" style="font-size: 0; line-height: 0; padding: 0 10px 0 10px;" height="140" align="center" class="responsive-image">
         <img src="logo.png" alt="" />
     </td>
 </tr>
-~~~~
+```
 
 Bevor Sie etwas sagen: Ja, ich weiß, Padding in E-Mails ist ein heikles
 Thema. Aber vertrauen Sie mir, in TD-Tags ist es sicher, Padding zu
@@ -232,9 +232,9 @@ kein Bild benötigt. Hier ist ein Beispiel:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 Stellen Sie einfach die Schriftgröße und den Zeilenabstand im
 entsprechenden Element auf null und stellen Sie die Höhe auf den
@@ -250,10 +250,10 @@ Das ist der Code:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="1" bgcolor="#F9F9F9">&nbsp;</td></tr>
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 Beachten Sie bitte den Extraabstand unterhalb der grauen Linie. Diesen
 musste ich hinzufügen, da Padding nicht funktioniert hätte. Weil Padding
@@ -264,7 +264,7 @@ Ihr Code sollte jetzt so aussehen:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td style="padding: 10px 10px 20px 10px;">
         <div style="font-size: 20px;">Greetings friend!</div>
@@ -278,7 +278,7 @@ Ihr Code sollte jetzt so aussehen:
 </tr>
 <tr><td style="font-size: 0; line-height: 0;" height="1" bgcolor="#F9F9F9">&nbsp;</td></tr>
 <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
-~~~~
+```
 
 Und im Browser sollte das Ganze so aussehen:
 
@@ -295,23 +295,23 @@ Bild hinzufügen
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td style="padding: 0 10px;" align="center" class="responsive-image">
         <img src="ph1.png" width="240" alt="" />
     </td>
 </tr>
-~~~~
+```
 
 Extra White-Space ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td></tr>
-~~~~
+```
 
 Und ein wenig Blindtext
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td>
         <div style="font-weight: bold; font-size: 16px;">Lorem ipsum</div>
@@ -322,22 +322,22 @@ Und ein wenig Blindtext
         </div>
     </td>
 </tr>
-~~~~
+```
 
 Extra White-Space
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr><td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td></tr>
-~~~~
+```
 
 Das Ganze dann noch einmal für die rechte Spalte wiederholen. Damit
 dürfte der Code dann so aussehen:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td>
         <table border="1" cellpadding="0" cellspacing="0" align="left" width="49%">
@@ -381,7 +381,7 @@ dürfte der Code dann so aussehen:
         </table>
     </td>
 </tr>
-~~~~
+```
 
 **Hinweis:** Auch hier wurde den Zellen mit den Bildern die Klasse
 „responsive-image“ beigefügt.
@@ -392,13 +392,13 @@ Sie einfach den folgenden Code in den Headbereich:
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <style type="text/css">
     body {margin: 10px 0; padding: 0 10px; background: #F9F2E7; font-size: 13px;}
     table {border-collapse: collapse;}
     td {font-family: arial, sans-serif; color: #333333;}
 </style>
-~~~~
+```
 
 \
 \
@@ -412,13 +412,13 @@ Keine „Rocket Science“ hier.
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <tr>
     <td bgcolor="#485465" style="padding: 10px 10px 10px 10px; color: #FFFFFF;">
         Copernica BV
     </td>
 </tr>
-~~~~
+```
 
 Im Browser sollte das Ganze nun so aussehen:
 
@@ -438,7 +438,7 @@ unter den vorherigen CSS-Eintragungen.
 
 ``{style="font-size: 11px;"}
 
-~~~~ {style="word-wrap: break-word;"}
+```
 <style type="text/css">
     @media only screen and (max-width: 480px) {
         body,table,td,p,a,li,blockquote {
@@ -454,7 +454,7 @@ unter den vorherigen CSS-Eintragungen.
         }
     }
 </style>
-~~~~
+```
 
 Die Media Queries erklären dem Client das unterhalb einer Anzeigebreite
 von 480 Pixeln, ein mobilfreundliches Layout ausgegeben werden soll.

@@ -21,7 +21,7 @@ webpage.
 
 ### GET request example output
 
-~~~~ {.language-javascript}
+```
 {
     "ID": "969758",
     "secret": "e4106a5026542077056edece316215c6",
@@ -34,7 +34,7 @@ webpage.
     "profile": "4544477",
     "collection": "8552"
 }
-~~~~
+```
 
 DELETE request
 --------------
@@ -49,14 +49,14 @@ subprofile, as the subprofile identifier is already present in the URL.
 Upon a successful deletion, you will get a header in response with
 information about the deleted subprofile.
 
-~~~~ {.language-javascript}
+```
 HTTP/1.1 200 OK
 Date: Tue, 18 Feb 2014 16:34:34 GMT
 Server: Apache
 X-Deleted: subprofile 961580
 Transfer-Encoding: chunked
 Content-Type: application/json
-~~~~
+```
 
 ### Further reading
 

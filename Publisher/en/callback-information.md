@@ -37,7 +37,7 @@ with **\$callbackID**.
 Example output
 --------------
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 1,
@@ -52,7 +52,7 @@ Example output
         "database": "788"
     }]
 }
-~~~~
+```
 
 POST Request
 ------------
@@ -68,7 +68,7 @@ message, as this is already included in the URL
 The message below will update the properties of the callback associated
 with callbackID
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 1,
@@ -82,7 +82,7 @@ with callbackID
         "database": "788"
     }]
 }
-~~~~
+```
 
 ### Further reading
 

@@ -43,7 +43,7 @@ with the example message below.
 
 ### Example output
 
-~~~~ {.language-javascript}
+```
 {
     "start": 0,
     "limit": 8,
@@ -60,7 +60,7 @@ with the example message below.
         "type": "integer"
     }]
 }
-~~~~
+```
 
 POST Request
 ------------
@@ -74,13 +74,13 @@ The example JSON message below will POST a new field to the collection
 associated with colectionID. You do not need to include the identifier
 in the message, as it is already present in the URL.
 
-~~~~ {.language-javascript}
+```
 {
     "name": "Date_of_purchase",
     "type": "datetime",
     "index": false
 }
-~~~~
+```
 
 ### Further reading
 

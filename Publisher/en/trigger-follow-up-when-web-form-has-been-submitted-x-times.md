@@ -27,7 +27,7 @@ settings:
 
 Choose the field **index**, and paste the following code in the field:
 
-~~~~ {.language-php}
+```
 
 {capture assign="highest"}0{/capture}
 {loadprofile multiple="1" source="the name of your database" assign="lp"}
@@ -39,7 +39,7 @@ Choose the field **index**, and paste the following code in the field:
     {/if}
 {/foreach}
 {math equation="x+1" x=$highest}
-~~~~
+```
 
 This piece of code adds 1 to the current value in the field **index**
 each time the webform is submitted.

@@ -15,14 +15,14 @@ A miniview contains the following information:
 GET-request
 -----------
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/miniview/7?access_token=ff96963b...
-~~~~
+```
 
 Sending the GET request to the url above will result in receiving the
 following data:
 
-~~~~ {.language-javascript}
+```
 {
     "ID":"7"
     "name":"test_miniview"
@@ -30,7 +30,7 @@ following data:
     "parent-type":"collection"
     "parent-id":"51"
 }
-~~~~
+```
 
 PUT-request
 -----------
@@ -38,12 +38,12 @@ PUT-request
 A miniview get be edited by a PUT request. You can send this to an URL
 like the one below:
 
-~~~~ {.language-javascript}
+```
 https://api.copernica.com/miniview/7?access_token=ff96963b...
-~~~~
+```
 
 The following payload edits the description of the miniview:
 
-~~~~ {.language-javascript}
+```
 {"description":"Updated description"}
-~~~~
+```
