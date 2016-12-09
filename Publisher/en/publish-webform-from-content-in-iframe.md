@@ -46,12 +46,13 @@ information is also passed to the page with the form.
 -   If you send to subprofiles, replace *profile*with *subprofile*(a
     total of 5 times)
 
-`<script type="text/javascript">`
+```
+<script type="text/javascript">
+    window.onload = function ()   { <!-- parameters we will be passing to the frame --> var code = location.search.match(/code=([\d\w]+)/) ? RegExp.$1 : 0; var profile = location.search.match(/profile=([\d\w]+)/) ? RegExp.$1 : 0;
 
-` window.onload = function ()   { <!-- parameters we will be passing to the frame --> var code = location.search.match(/code=([\d\w]+)/) ? RegExp.$1 : 0; var profile = location.search.match(/profile=([\d\w]+)/) ? RegExp.$1 : 0;`
+    var src = "http://newsletter.yourcompany.com/page?";  if(code != 0) src += "code="+code+"&"; if(profile != 0) src += "profile="+profile;
 
-` var src = "http://newsletter.yourcompany.com/page?";  if(code != 0) src += "code="+code+"&"; if(profile != 0) src += "profile="+profile;`
+    document.getElementById('loadedform').src = src; } 
 
-` document.getElementById('loadedform').src = src; } `
-
-`</script>   <iframe id="loadedform" width="500" height="500"></iframe>`
+</script>   <iframe id="loadedform" width="500" height="500"></iframe>
+```
