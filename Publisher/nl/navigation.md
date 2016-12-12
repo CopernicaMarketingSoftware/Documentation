@@ -11,6 +11,7 @@
     * [Importeren van profielgegevens](importeren-van-profielgegevens)
     * [Exporteren van profielgegevens](exporteren-van-profielgegevens)
 * [Automatische koppelingen](automatische-koppelingen)
+    * [Feedback loop](feedback-loops)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
     * [Importeren en exporteren](import-and-export)
