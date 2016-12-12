@@ -1,5 +1,5 @@
 # Importeren van profielgegevens
-Er zijn in Copernica verschillende opties voor het importeren en exporteren van gegevens. Zo kun je profielen niet alleen toevoegen vanuit Copernica, maar ook direct vanuit een (al bestaand) spreadsheet, direct in een collectie importeren en is het ook mogelijk om automatisch periodiek profielen te laten importeren. 
+Er zijn in de Copernica Publisher verschillende opties voor het importeren en exporteren van gegevens. Zo kun je profielen niet alleen toevoegen vanuit Copernica, maar ook direct vanuit een (al bestaand) spreadsheet, direct in een collectie importeren en is het ook mogelijk om automatisch periodiek profielen te laten importeren. Het is voor nu nog niet mogelijk om dit in de MarketingSuite te doen.
 
 Je vindt de import- en exportinterface onder *Profielen*, in het menu *Huidige weergave*.
 
