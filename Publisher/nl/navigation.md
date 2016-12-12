@@ -8,6 +8,7 @@
     * [Velden en collecties](velden-en-collecties)
     * [Restricties](restricties-en-gebruiksmogelijkheden)
     * [Uitschrijfgedrag](uitschrijfgedrag)
+* [Automatische koppelingen](automatische-koppelingen)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
     * [Importeren en exporteren](import-and-export)
