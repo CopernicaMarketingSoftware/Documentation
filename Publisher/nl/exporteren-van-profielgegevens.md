@@ -1,5 +1,5 @@
 # Exporteren van profielgegevens
-Naast importeren is het in Copernica ook mogelijk om profielen en subprofielen te exporteren. Het is zowel mogelijk om een hele database te exporteren als een collectie. Heierbij wordt een bestand in een formaat naar keuze gegenereerd, dat je kunt downloaden of laten e-mailen.
+Naast importeren is het in de Copernica Publisherook mogelijk om profielen en subprofielen te exporteren. Evenals het importeren is het voor nu nog niet mogelijk om dit in de MarketingSuite te doen. Het is zowel mogelijk om een hele database te exporteren als een collectie. Heierbij wordt een bestand in een formaat naar keuze gegenereerd, dat je kunt downloaden of laten e-mailen.
 
 Je vindt de exporteerfunctie in het menu *Huidige weergave*.
 
