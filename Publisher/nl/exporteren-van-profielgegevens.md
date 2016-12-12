@@ -1,4 +1,4 @@
-Exporteren van profielgegevens
+# Exporteren van profielgegevens
 Naast importeren is het in Copernica ook mogelijk om profielen en subprofielen te exporteren. Het is zowel mogelijk om een hele database te exporteren als een collectie. Heierbij wordt een bestand in een formaat naar keuze gegenereerd, dat je kunt downloaden of laten e-mailen.
 
 Je vindt de exporteerfunctie in het menu *Huidige weergave*.
