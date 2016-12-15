@@ -8,6 +8,7 @@
     * [Fields and collections](fields-and-collections)
     * [Restrictions](restrictions-and-user-options)
 * [Automatic links](automatic-links.md)
+      *[Feedback loops](feedback-loops.md)
 * [Old documentation](old-documentation)
   * [Database management](database-management)
   * [Import and export](import-and-export)
