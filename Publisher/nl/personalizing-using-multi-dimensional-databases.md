@@ -68,15 +68,14 @@ Hoe kun je hier nu op personaliseren? Veronderstel dat je een mailing
 wilt sturen aan alle medewerkers. In de mailing wil je personaliseren op
 naam van de medewerker, en het bedrijf waar ze voor werken.
 
-*Beste {\$naam|escape},*\
+*Beste {$naam|escape},*\
 \
  *Volgens onze gegevens werk je bij bedrijf
-{\$werkgever.bedrijfsnaam|escape}.*\
-\
+{$werkgever.bedrijfsnaam|escape}.*\
 
 In bovenstaand voorbeeld maken we gebruik van de korte notatie, maar je
-zou ook kunnen personaliseren met {\$profile.naam} en
-{\$profile.werkgever.bedrijfsnaam}. Hoe dan ook: het is eenvoudig. Omdat
+zou ook kunnen personaliseren met {$profile.naam} en
+{$profile.werkgever.bedrijfsnaam}. Hoe dan ook: het is eenvoudig. Omdat
 is aangegeven dat *werkgever* een referentieveld is, worden automatisch
 alle gegevens van het profiel waarnaar wordt verwezen in die variabele
 ingeladen.
@@ -97,17 +96,17 @@ databases en welke andere profielen er naar een bedrijf verwijzen, heeft
 elk profiel voortaan standaard ook een referentieveld. Via dit veld kun
 je opvragen welke verwijzende profielen er zijn:
 
-*Mailing aan bedrijf {\$bedrijfsnaam|escape},*\
+*Mailing aan bedrijf {$bedrijfsnaam|escape},*\
  \
  *Dit zijn jullie medewerkers:*\
- *{foreach \$referrers.medewerkers as \$medewerker}*\
- *    {\$medewerker.naam|escape}*\
+ *{foreach $referrers.medewerkers as \$medewerker}*\
+ *    {$medewerker.naam|escape}*\
  *{/foreach}*
 
 Opnieuw gebruiken we de korte notatie. Het had ook met
-{\$profile.bedrijfsnaam} en {\$profile.referrers.medewerkers} gekund. De
-variabele {\$profile.referrers} bevat alle databases die verwijzen naar
-het profiel, en via {\$profile.referrers.*databasenaam*} kun je door die
+{$profile.bedrijfsnaam} en {$profile.referrers.medewerkers} gekund. De
+variabele {$profile.referrers} bevat alle databases die verwijzen naar
+het profiel, en via {$profile.referrers.*databasenaam*} kun je door die
 verwijzende profielen heen itereren.
 
 Nog een stap verder
@@ -121,27 +120,27 @@ zijn:
 *Beste {\$naam|escape},*\
  \
  *Volgens onze gegevens werk je bij bedrijf
-{\$werkgever.bedrijfsnaam|escape}.*\
+{$werkgever.bedrijfsnaam|escape}.*\
  \
- *{if \$werkgever.referrers.medewerkers|count \> 1}*\
+ *{if $werkgever.referrers.medewerkers|count \> 1}*\
  *    En dit zijn je collega's:*\
  *     {foreach from=\$werkgever.referrers.medewerkers item=collega}*\
- *        {if \$collega.id != \$id}*\
- *            {\$collega.naam|escape}*\
+ *        {if $collega.id != $id}*\
+ *            {$collega.naam|escape}*\
  *        {/if}*\
  *    {/foreach}*\
  *{/if}*
 
 Het begint makkelijk: we sturen de mailing naar de database
-*Werknemers*, dus de variabele {\$naam} bevat gewoon de naam van de
-medewerker. Ook redelijk simpel is de variabele {\$werkgever}, een veld
+*Werknemers*, dus de variabele {$naam} bevat gewoon de naam van de
+medewerker. Ook redelijk simpel is de variabele {$werkgever}, een veld
 dat verwijst naar het profiel uit de bedrijvendatabase, en waar dus weer
-de bedrijfsnaam van kan worden opgevraagd: {\$werkgever.bedrijfsnaam}.
+de bedrijfsnaam van kan worden opgevraagd: {$werkgever.bedrijfsnaam}.
 
 Als we nu willen weten welke profielen uit de database *Medewerkers*
 naar dat bedrijf verwijzen (met andere woorden: welke medewerkers dat
 bedrijf heeft), dan kunnen we dat opvragen via de 'referrers'-variabele:
-{\$werkgever.referrers.medewerkers}. Dan zie je in ons voorbeeld nog
+{$werkgever.referrers.medewerkers}. Dan zie je in ons voorbeeld nog
 twee {if} statements staan. Hiermee zorgen we dat we alleen maar de
 collega's van de desbetreffende medewerker opsommen en niet de naam van
 de medewerker zelf. Eerst controleren we of het bedrijf wel meer dan een
@@ -165,10 +164,10 @@ meerdere referentievelden zijn? Bijvoorbeeld niet alleen een veld
 *werkgever*, maar ook een veld *vorige\_werkgever* dat ook naar de
 database *Bedrijven* verwijst? In een mailing naar de medewerkers kun je
 beide velden natuurlijk gewoon gebruiken met {\$werkgever.bedrijfsnaam}
-en {\$vorige\_werkgever.bedrijfsnaam}. Maar wat gebeurt er als je
-{\$werkgever.referrers.medewerkers} aanroept?
+en {$vorige\_werkgever.bedrijfsnaam}. Maar wat gebeurt er als je
+{$werkgever.referrers.medewerkers} aanroept?
 
-De variabele {\$referrers.medewerkers} bevat alle verwijzingen vanuit de
+De variabele {$referrers.medewerkers} bevat alle verwijzingen vanuit de
 database *Medewerkers* - dus ongeacht welk referentieveld je gebruikt.
 We moeten dus ons volgende voorbeeld een beetje aanpassen, omdat we
 alleen de huidige collega's willen vermelden. Dat kan door precies aan
@@ -179,18 +178,18 @@ te geven op basis van welk referentieveld je wilt selecteren:
  *Volgens onze gegevens werk je bij bedrijf
 {\$werkgever.bedrijfsnaam|escape}.*\
 \
- *{if \$werkgever.referrers["werkgever@medewerkers"]|count \> 1}*\
+ *{if $werkgever.referrers["werkgever@medewerkers"]|count \> 1}*\
  *    En dit zijn je collega's:*\
- *     {foreach from=\$werkgever.referrers["werkgever@medewerkers"]
+ *     {foreach from=$werkgever.referrers["werkgever@medewerkers"]
 item=collega}*\
- *        {if \$collega.id != \$id}*\
- *            {\$collega.naam|escape}*\
+ *        {if $collega.id != \$id}*\
+ *            {$collega.naam|escape}*\
  *        {/if}*\
  *    {/foreach}*\
  *{/if}*
 
-Zo simpel is het. Normaal gesproken bevat {\$referrers.medewerkers} (of
-{\$referrers["medewerkers"] - je kunt dat in Smarty op meerdere manieren
+Zo simpel is het. Normaal gesproken bevat {$referrers.medewerkers} (of
+{$referrers["medewerkers"] - je kunt dat in Smarty op meerdere manieren
 schrijven, met een punt-notatie of met vierkante haakjes) alle
 verwijzingen vanuit de database *Medewerkers*. Met een @-teken kun je
 aangeven dat je alleen de verwijzingen door een specifiek referentieveld
@@ -214,19 +213,19 @@ bij opvolgacties of conditionele tekstblokken. Daar waar je in smarty
 variabele profile.naam. Een overzichtje:
 
 **Smarty**\
- *{\$profile.naam}   *
+ *{$profile.naam}   *
 
 **Javascript-alternatief**\
  *profile.naam*
 
 **Smarty**\
- *{\$profile.werkgever.bedrijfsnaam} *
+ *{$profile.werkgever.bedrijfsnaam} *
 
 **Javascript-alternatief**\
  *profile.werkgever.bedrijfsnaam*
 
 **Smarty**\
- *{foreach \$profile.werkgever.referrers.medewerkers as \$medewerker}*\
+ *{foreach $profile.werkgever.referrers.medewerkers as $medewerker}*\
  *{/foreach}*
 
 **Javascript-alternatief**\
@@ -236,7 +235,7 @@ variabele profile.naam. Een overzichtje:
  *}*
 
 **Smarty**\
- *{foreach \$profile.werkgever.referrers["werkgever@medewerkers"] as
+ *{foreach $profile.werkgever.referrers["werkgever@medewerkers"] as
 \$medewerker}*\
  *    ...*\
  *{/foreach}*
