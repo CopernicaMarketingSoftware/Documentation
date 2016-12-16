@@ -71,7 +71,7 @@ naam van de medewerker, en het bedrijf waar ze voor werken.
 *Beste {$naam|escape},*\
 \
  *Volgens onze gegevens werk je bij bedrijf
-{$werkgever.bedrijfsnaam|escape}.*\
+{$werkgever.bedrijfsnaam|escape}.*
 
 In bovenstaand voorbeeld maken we gebruik van de korte notatie, maar je
 zou ook kunnen personaliseren met {$profile.naam} en
@@ -99,7 +99,7 @@ je opvragen welke verwijzende profielen er zijn:
 *Mailing aan bedrijf {$bedrijfsnaam|escape},*\
  \
  *Dit zijn jullie medewerkers:*\
- *{foreach $referrers.medewerkers as \$medewerker}*\
+ *{foreach $referrers.medewerkers as $medewerker}*\
  *    {$medewerker.naam|escape}*\
  *{/foreach}*
 
@@ -124,7 +124,7 @@ zijn:
  \
  *{if $werkgever.referrers.medewerkers|count \> 1}*\
  *    En dit zijn je collega's:*\
- *     {foreach from=\$werkgever.referrers.medewerkers item=collega}*\
+ *     {foreach from=$werkgever.referrers.medewerkers item=collega}*\
  *        {if $collega.id != $id}*\
  *            {$collega.naam|escape}*\
  *        {/if}*\
@@ -176,13 +176,13 @@ te geven op basis van welk referentieveld je wilt selecteren:
 *Beste {\$naam|escape},*\
 \
  *Volgens onze gegevens werk je bij bedrijf
-{\$werkgever.bedrijfsnaam|escape}.*\
+{$werkgever.bedrijfsnaam|escape}.*\
 \
  *{if $werkgever.referrers["werkgever@medewerkers"]|count \> 1}*\
  *    En dit zijn je collega's:*\
  *     {foreach from=$werkgever.referrers["werkgever@medewerkers"]
 item=collega}*\
- *        {if $collega.id != \$id}*\
+ *        {if $collega.id != $id}*\
  *            {$collega.naam|escape}*\
  *        {/if}*\
  *    {/foreach}*\
