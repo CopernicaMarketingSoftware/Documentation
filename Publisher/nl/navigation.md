@@ -13,6 +13,7 @@
 * [Selecties en miniselecties](selecties-en-miniselecties)
     * [Beheeropties voor (mini)selecties](beheeropties-selecties)
     * [Selectiecondities](selectiecondities)
+    * [Optimaliseren van selecties](tips-selecties-optimaliseren)
 * [Automatische koppelingen](automatische-koppelingen)
     * [Feedback loops](feedback-loops)
 * [Oude documentatie](oude-documentatie)
