@@ -18,7 +18,7 @@ Voordat je kunt beginnen met mailen naar een selectie, dien je hem eerst te acti
 Selecties die je niet of amper gebruikt, kun je het beste (tijdelijk) uit je database halen om je performance te verhogen. Hier zijn verschillende opties voor: verwijderen, deactiveren of archiveren.
 Wanneer je een selectie helemaal niet meer gebruikt, kun je hem het beste verwijderen. Hoe minder selecties, hoe sneller de andere selecties worden opgebouwd. Het verwijderen van een selectie betekent echter niet dat je de profielen in de selectie ook verwijdert; deze blijven gewoon bestaan.
 
-Deactiveren is handig wanneer je een selectie tijdelijk niet gebruikt, maar dit in de toekomst wel weer gaat doen. Ook dit versnelt het opbouwen van je andere selecties. Wanneer je hem weer nodig hebt, kun je simpelweg de selectie weer activeren.
+Deactiveren is handig wanneer je een selectie tijdelijk niet gebruikt, maar dit in de toekomst wel weer gaat doen. Ook dit versnelt het opbouwen van je andere selecties. Wanneer je hem weer nodig hebt, kun je simpelweg de selectie weer activeren. Het is niet mogelijk om een hele selectie te deactiveren, maar het is wel mogelijk om in het beheermenu van de selectie de condities te deactiveren, wat hetzelfde effect oplevert.
 
 Selecties kunnen tevens worden gearchiveerd. Zodoende kan je overzicht bewaren. Let op: gearchiveerde selecties blijven actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties heeft dus geen invloed op de performance van je overige selecties; als performance je doel is, kun je ze beter verwijderen.
 
