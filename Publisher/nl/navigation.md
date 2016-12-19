@@ -10,6 +10,8 @@
     * [Uitschrijfgedrag](uitschrijfgedrag)
     * [Importeren van profielgegevens](importeren-van-profielgegevens)
     * [Exporteren van profielgegevens](exporteren-van-profielgegevens)
+* [Selecties en miniselecties](selecties-en-miniselecties)
+    * [Beheeropties voor (mini)selecties](beheeropties-selecties)
 * [Automatische koppelingen](automatische-koppelingen)
     * [Feedback loops](feedback-loops)
 * [Oude documentatie](oude-documentatie)
