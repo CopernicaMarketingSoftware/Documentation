@@ -1,10 +1,10 @@
-Selections and miniselections
+# Selections and miniselections
 Apart from fields and collections, Copernica also has selections and miniselections. Selections are used to make segments in your database based on one or multiple conditions. This makes it possible to create specific targets for mailings and gives the user more insight in what's going on in their databases. Examples of useful selections are the birthday selection, the newsletter mailing list and people that shouldn't receive mail from you. The contents of selections are automatically updated as databases and selections are rebuilt multiple times a day.
 
 Miniselections are similar to selections, only they exist at collection level and consist of subprofiles. (Mini)selections can be added, deleted and managed under *Profiles* >*Database management* > *Manage selections* in Publisher. In MarketingSuite, you find the *Create selection* button on the top right when viewing your database.
 
 ## Subselections
-A subselection is a selection within a selection, so it's on a deeper level than a selection. Profiles in subselections need to comply to the rules of the parent selection as well as those of the subselection. Creating subselections is only possible on profile level; making subminiselections is not possible. Subselections are created the same way selections are.
+A subselection is a selection within a selection; it's on a deeper level than a selection. Profiles in subselections need to comply to the rules of the parent selection as well as those of the subselection. Creating subselections is only possible on profile level; making subminiselections is not possible. Subselections are created the same way selections are.
 
 ## Selection rules
 All profile data you store in Copernica can be used as rules for your selections. Selection rules can be made based on:
