@@ -9,6 +9,7 @@
     * [Restrictions](restrictions-and-user-options)
 * [Automatic links](automatic-links.md)
     * [Feedback loops](feedback-loops.md)
+* [Selections and miniselections](selections-and-miniselections-new)
 * [Old documentation](old-documentation)
   * [Database management](database-management)
   * [Import and export](import-and-export)
