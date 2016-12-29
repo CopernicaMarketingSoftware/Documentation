@@ -10,7 +10,6 @@ mechanism. When you [set up a feedback loop](#feedback-setup), you register
 a web address and specify the type of events that you are interested in. 
 Once your URL has been validated, the Marketing Suite starts making calls to it.
 
-
 ## Watch out!
 
 Before you set up a feedback loop, please do make sure that your server
@@ -21,7 +20,6 @@ numbers of calls.
 If you're not sure whether your server can handle the load, or when you do
 not need realtime feedback, you better use the [general statistics](statistics).
 
-
 ## Feedback setup
 
 Feedback loops can be set up via the dashboard. The interface
@@ -31,12 +29,10 @@ that you want to set up (clicks, bounces, and so on).
 That's all it takes.
 
 The following feedback loops can be used:
-
 * [Feedback loops for bounces](feedback-bounces)
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
 * [Feedback loops for opens](feedback-opens)
-
 ## URL validation
 
 Before calls are made to your URL, the web address first has
@@ -56,7 +52,6 @@ to your webserver so that it becomes accessible via either
 
 You can remove the text file from your server after the address has been 
 validated.
-
 
 ## Testing the feedback loop
 
