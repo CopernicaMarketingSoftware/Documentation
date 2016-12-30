@@ -8,7 +8,7 @@ automatically replaced by SMTPeter with a unique URL for each recipient.
 To turn the resulting URL into a clickable link some HTML code is required:
 
 ```html
-<a href="{webversion}">View the web version</a>
+<a href="{$webversion}">View the web version</a>
 ```
 
 For emails sent in JSON format, the tag can be included in the `url` property
