@@ -18,5 +18,5 @@ All profile data you store in Copernica can be used as rules for your selections
 * **Profile changes**. There are many different options for profile changes. Example: Checking if the field 'city' changed in the past month gives you a selection of people who recently moved.
 * **Previous exports**. Use this to select profiles that have been exported between two points in time.
 
-It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here]() how to to this.
-More on conditions and rules can be found [here]().
+It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here](sorting-and-selecting-profiles-in-a-database-or-collection) how to to this.
+More on conditions and rules can be found [here](selection-conditions-new).
