@@ -93,9 +93,9 @@ You only have to supply a recipient address to deliver an email. However, if
 you're familiar with the SMTP protocol, you may be aware of the fact that you
 normally also need to supply an envelope address to deliver email. This
 envelope address is the address to which bounces or out-of-office replies get
-sent. But because SMTPeter takes care of processing your bounces, you do
+sent. Because SMTPeter takes care of processing your bounces, you do
 not have to supply such an envelope address. SMTPeter adds its own envelope
-address to your messages to collect the bounces.
+address to collect the bounces.
 
 If you to handle the bounces yourself, you can add an extra "envelope" address
 to the input data. Besides this envelope address, you might also be interested 
@@ -111,20 +111,34 @@ you want to receive.
 ````
 
 
-
-
-
 ## Using templates
 
-It is also possible to send a mail using an existing template. To do this, you have
-to provide the identifier of the template using the "template" property. 
+In all of the examples that we gave so far, we required you to send the full
+message to SMTPeter - either as a MIME string or as individual "text" and 
+"html" properties. But you can also make use of pre-stored templates so that
+you only have to send personalization data to the REST API. SMTPeter 
+constructs the email message based on the earlier created template and 
+personalizes it with the supplied data.
+
+Via the SMTPeter dashboard you have access to a powerful drag-and-drop editor
+to manage, edit and create responsive email templates. Every template has a 
+unique numeric identifier that you can use in the REST API to send out email.
 
 ````json
 {
     "recipient":    "john@doe.com",
-    "template":     12
+    "template":     12,
+    "data": {
+        "firstname":    "John",
+        "lastname":     "Doe"
+    }
 }
 ````
+
+You can pass [personalization data](personalization) to the REST call, so 
+that the mail gets personalized. The above example will send template #12 to
+john@doe.com, with the variables {$firstname} and {$lastname} replaced with 
+John Doe's name.
 
 
 ## Multiple recipients
@@ -142,6 +156,8 @@ of email addresses:
 
 Only pure email addresses are supported. It is not permitted to use display 
 names or to put the addresses inside angle brackets.
+
+
 
 ## Add data to recipient or recipients
 
@@ -194,14 +210,14 @@ or you can tell SMTPeter to inlinize your CSS code.
 }
 ````
 
-## Inlinize CSS code
+### Inlinize CSS code
 
 By setting the "inlinecss" variable to true you enable the feature that 
 CSS stylesheets in the header of your email are converted into inline style
 attribytes in the HTML code.
 
 
-## Tracking clicks, opens and bounces
+### Tracking clicks, opens and bounces
 
 SMTPeter automatically replaces all hyperlinks in your messages with its
 own URLs so that you can track clicks and opens. The envelope address
@@ -237,7 +253,7 @@ tell SMTPeter not to modify these type of links:
 }
 ````
 
-## Settings for Delivery Status Notifications
+### Settings for Delivery Status Notifications
 
 If you do not want SMTPeter to track bounces for you, all bounces are sent
 sent back to your envelope address. If you want this, you must add the
@@ -288,7 +304,7 @@ be included in the "original-envelope-id" property of the returned status
 message, and the "orcpt" value is copied to the "original-recipient" 
 property.
 
-## Setting for embedded images
+### Setting for embedded images
 
 Having embedded images in your mime may give some [issues](images). SMTPeter
 can subtract the embedded images from your mime, host them, and rewrite
