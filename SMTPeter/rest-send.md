@@ -1,7 +1,7 @@
 # REST API method: send
 
 To instruct SMTPeter to send out a message, you simply have to HTTP POST
-the message that you like to delivery to the "send" method:
+the message that you like to deliver to the "send" method:
 
 ```text
 https://www.smtpeter.com/v1/send
@@ -86,18 +86,18 @@ To ease readability, we've removed the majority of the MIME code from the
 example. If you do not want to create the MIME message yourself, you 
 can leave out the property "mime", and 
 [use special MIME properties](rest-mime) like "subject", "text" and "html"
-so that SMTPeter can construct the mime data - which is exactly what we did
-in the first example that we gave.
+so that SMTPeter can construct the mime data, which we demonstrated
+in the very first example on this page.
 
 You only have to supply a recipient address to deliver an email. However, if 
 you're familiar with the SMTP protocol, you may be aware of the fact that you
-normally also need to supply an envelope address to deliver email. This
-envelope address is the address to which bounces or out-of-office replies get
+normally also need to supply an envelope address. This envelope address is 
+the address to which bounces or out-of-office replies get
 sent. Because SMTPeter takes care of processing your bounces, you do
-not have to supply such an envelope address. SMTPeter adds its own envelope
+not have to supply an envelope address. SMTPeter adds its own envelope
 address to collect the bounces.
 
-If you to handle the bounces yourself, you can add an extra "envelope" address
+If you want to handle the bounces yourself, you can add an extra "envelope" address
 to the input data. Besides this envelope address, you might also be interested 
 in adding a ["dsn" property](rest-dsn) to specify the type of bounce messages 
 you want to receive.
