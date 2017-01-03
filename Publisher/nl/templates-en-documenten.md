@@ -3,10 +3,10 @@
 Om mailings te versturen maken we gebruik van templates en documenten. Maar
 let op: de oude Copernica Publisher omgeving maakt gebruik van een heel
 ander templatesysteem en mailingsysteem dan de nieuwe Copernica Marketing 
-Suite. Als je een mailing gaat opmaken, moet je dus van te voren bepalen welke 
-van deze twee systemen je wilt gebruiken. In tegenstelling tot veel andere 
-onderdelen van de software kun je ook niet zomaar een template van het ene 
-systeem benaderen vanuit het systeem van de andere.
+Suite. En in tegenstelling tot veel andere onderdelen van de software kun je 
+ook niet zomaar een template van het ene systeem benaderen vanuit het systeem 
+van de andere. Als je een mailing gaat opmaken, moet je dus van te voren 
+bepalen welke van deze twee systemen je wilt gebruiken. 
 
 Het oude systeem van Copernica Publisher vereist dat je zelf HTML code invoert
 om een template op te maken, terwijl de nieuwe Marketing Suite een eenvoudige
@@ -23,15 +23,14 @@ om opvolgacties in te stellen. Dit is nog niet goed mogelijk met de nieuwe
 Marketing Suite drag-and-drop editor.
 
 
-## Copernica Marketing Suite
+## Copernica Marketing Suiteintroduction
 
 De drag-and-drop editor van de nieuwe Copernica Marketing suite is 
 makkelijk in het gebruik. Sterker nog, eigenlijk werkt het zo eenvoudig
-dat je zonder een blik op de documentatie te werpen al een mailing in elkaar 
+dat je zonder een blik op deze documentatie te werpen al een mailing in elkaar 
 kunt zetten. De editor stelt je in staat om teksten, afbeeldingen en buttons 
-op te pakken en naar de juiste plaats in de template te slepen.
-
-Omdat de nieuwe editor zo eenvoudig is te gebruiken, beperken we ons daarom
+op te pakken en naar de juiste plaats in de template te slepen. Omdat de 
+nieuwe editor zo eenvoudig is te gebruiken, beperken we ons daarom
 tot het documenteren van de moeilijke onderdelen zoals personalisatie en
 het instellen van scripts. 
 
@@ -53,7 +52,7 @@ template invoeren en je moet zelf aangeven op welke plaatsen binnen de
 template variabele teksten en afbeeldingen kunnen worden geplaatst.
 
 Bovendien wordt er in de oude Publisher omgeving gebruik gemaakt van een 
-gelaagd systeem: we maken onderscheid gemaakt tussen *templates* en 
+gelaagd systeem: we maken onderscheid tussen *templates* en 
 *documenten*. Een template bepaalt de layout van de mail, zoals de plaats van 
 de logo's en de lege plekken waar later, op documentniveau, teksten en 
 afbeeldingen kunnen worden toegevoegd. Zo'n template wordt met HTML code 
