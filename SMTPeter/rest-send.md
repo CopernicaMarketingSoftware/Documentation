@@ -157,21 +157,25 @@ of email addresses:
 Only pure email addresses are supported. It is not permitted to use display 
 names or to put the addresses inside angle brackets.
 
+If you send a message to multiple recipients, SMTPeter will also return
+multiple identifiers.
 
 
-## Add data to recipient or recipients
+
+## Personalization
 
 You can add personal data to the recipient or recipients. This data can be
-used later to [personalize the mail](personalization). If you have one
+used to [personalize the mail](personalization). If you have one
 recipient, you can add the personal data with property "data".
 
 ```json
 {
     "recipient": "john@doe.com",
+    "mime": "....",
     "data"     : {
         "firstname"  : "John",
         "familyname" : "Doe"
-    }
+    },
 }
 ```
 
@@ -179,7 +183,7 @@ If you have multiple recipients, the data can be passed as follows:
 
 ```json
 {   
-    "recipients" : [
+    "recipients" : {
         "jane@doe.com": {
             "firsname": "Jane",
             "familyname": "Doe"
@@ -188,13 +192,20 @@ If you have multiple recipients, the data can be passed as follows:
             "firstname": "John",
             "familyname": "Doe"
         }
-    ]
+    },
+    "mime": "....",
 }
 ```
 
+Inside the MIME string, or inside the "text" or "html" properties, you can
+use [personalization variables](personalization) like {$firstname} and 
+{$lastname} that will be filled in by SMTPeter.
+
+
+
 ## Special features
 
-You can add special properties to the input JSON to enable or disable specific
+By adding special properties to the input JSON you can enable or disable specific
 SMTPeter features. You can for example enable click, open and bounce tracking,
 or you can tell SMTPeter to inlinize your CSS code.
 
@@ -214,15 +225,15 @@ or you can tell SMTPeter to inlinize your CSS code.
 
 By setting the "inlinecss" variable to true you enable the feature that 
 CSS stylesheets in the header of your email are converted into inline style
-attribytes in the HTML code.
+attributes in the HTML code.
 
 
 ### Tracking clicks, opens and bounces
 
 SMTPeter automatically replaces all hyperlinks in your messages with its
-own URLs so that you can track clicks and opens. The envelope address
-of the mailing will be set to a SMTPeter address, so that all
-bounces and out-of-office replies can be tracked by SMTPeter. If you
+own URLs so that it can track clicks and opens. The envelope address
+of the mailing will also be set to a SMTPeter address, so that all
+bounces and out-of-office replies are tracked by SMTPeter. If you
 want to disable these tracking settings, you can include the 
 "trackclicks", "trackopens" and "trackbounces" options, and set them 
 to false:
@@ -253,6 +264,10 @@ tell SMTPeter not to modify these type of links:
 }
 ````
 
+The preventscam option prevents that SMTPeter modified hyperlinks like
+&lt;a href="http://www.example.com"&gt;www.example.com&lt;/a&gt;.
+
+
 ### Settings for Delivery Status Notifications
 
 If you do not want SMTPeter to track bounces for you, all bounces are sent
@@ -270,7 +285,7 @@ sent back to your envelope address. If you want this, you must add the
 
 The above JSON instructs SMTPeter to not track bounces, but to use your
 envelope for messages that could not be delivered. Be aware that you must
-include an envelope address to receive bounces!
+add an envelope address to the JSON too to receive bounces!
 
 With the optional "dsn" property you can further finetune what kind of Delivery 
 Status Notification messages you want to receive. The "dsn" variable accepts a 
