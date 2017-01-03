@@ -27,10 +27,27 @@ Content-Length: 246
 }
 ```
 
-The above example call demonstrates how to send an email to john@doe.com.
-We've passed all data as JSON, but it is also possible to submit the mail
-using normal url encoded HTTP POST data. In all subsequent examples on 
-this page, we will just show the JSON code and omit the headers.
+The above example call demonstrates one of the many ways how you can send email 
+with the REST API. Just like all API other calls, you can pass data both as an
+"application/json" JSON string, or as regular "application/x-www-form-encoded"
+HTTP POST data. In the above example (and in all other example on this page) 
+we use JSON because that is much more readable.
+
+In the example we did not pass a raw MIME message to SMTPeter, but used 
+individual "subject", "html", "from" and "to" properties instead. SMTPeter 
+uses these properties to construct the mail message before it gets delivered
+to the recipient. This means that you can leave the complex task of building 
+a MIME message to SMTPeter. This, however, is of course optional. You can also
+pass a mime string to the REST API, we will demonstrate this further down in 
+this article.
+
+We used both a "recipient" and a "to" field. The "recipient" field contains
+the address to which the mail is going to be sent. The "to" field contains 
+the field that will be displayed inside the mail as the "to" address. For most
+messages, these two addresses are identical. However, it is also perfectly
+legal to send email to addresses that are not listed in the "to" field. This
+is exactly "BCC" works: the email is delivered to a recipient that is not
+mentioned in the "to" header of the email.
 
 
 ## Return value
