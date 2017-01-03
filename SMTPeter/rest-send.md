@@ -30,7 +30,7 @@ Content-Length: 246
 The above example call demonstrates one of the many ways how you can send email 
 with the REST API. Just like all API other calls, you can pass data both as an
 "application/json" JSON string, or as regular "application/x-www-form-encoded"
-HTTP POST data. In the above example (and in all other example on this page) 
+HTTP POST data. In the above example (and in all other examples on this page) 
 we use JSON because that is much more readable.
 
 In the example we did not pass a raw MIME message to SMTPeter, but used 
@@ -38,7 +38,7 @@ individual "subject", "html", "from" and "to" properties instead. SMTPeter
 uses these properties to construct the mail message before it gets delivered
 to the recipient. This means that you can leave the complex task of building 
 a MIME message to SMTPeter. This, however, is of course optional. You can also
-pass a mime string to the REST API, we will demonstrate this further down in 
+pass a mime string to the REST API, which we will demonstrate further down in 
 this article.
 
 We used both a "recipient" and a "to" field. The "recipient" field contains
@@ -46,8 +46,8 @@ the address to which the mail is going to be sent. The "to" field contains
 the field that will be displayed inside the mail as the "to" address. For most
 messages, these two addresses are identical. However, it is also perfectly
 legal to send email to addresses that are not listed in the "to" field. This
-is exactly "BCC" works: the email is delivered to a recipient that is not
-mentioned in the "to" header of the email.
+is exactly how "BCC" works: email is delivered to addresses that are not
+listed in the "to" header of the email.
 
 
 ## Return value
@@ -86,16 +86,35 @@ To ease readability, we've removed the majority of the MIME code from the
 example. If you do not want to create the MIME message yourself, you 
 can leave out the property "mime", and 
 [use special MIME properties](rest-mime) like "subject", "text" and "html"
-so that SMTPeter can construct the mime data.
+so that SMTPeter can construct the mime data - which is exactly what we did
+in the first example that we gave.
 
-You only have to supply a recipient address. An envelope address is not necessary.
-The envelope will be filled in by SMTPeter to track the bounces. However, if you want to 
-receive the bounces yourself, you must also add an envelope address. Besides
-the envelope address, you can also add a ["dsn" property](rest-dsn) to
-specify the type of bounce messages you want to receive.
+You only have to supply a recipient address to deliver an email. However, if 
+you're familiar with the SMTP protocol, you may be aware of the fact that you
+normally also need to supply an envelope address to deliver email. This
+envelope address is the address to which bounces or out-of-office replies get
+sent. But because SMTPeter takes care of processing your bounces, you do
+not have to supply such an envelope address. SMTPeter adds its own envelope
+address to your messages to collect the bounces.
+
+If you to handle the bounces yourself, you can add an extra "envelope" address
+to the input data. Besides this envelope address, you might also be interested 
+in adding a ["dsn" property](rest-dsn) to specify the type of bounce messages 
+you want to receive.
+
+````json
+{
+    "recipient":    "john@doe.com",
+    "envelope":     "myaddress@example.com",
+    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
+}
+````
 
 
-## Send using a template
+
+
+
+## Using templates
 
 It is also possible to send a mail using an existing template. To do this, you have
 to provide the identifier of the template using the "template" property. 
