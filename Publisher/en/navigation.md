@@ -10,8 +10,8 @@
 * [Automatic links](automatic-links.md)
     * [Feedback loops](feedback-loops.md)
 * [Selections and miniselections](selections-and-miniselections-new)
-  * [Management options](management-options-for-selections]
-  * [Selection conditions](selection-conditions-new]
+  * [Management options](management-options-for-selections)
+  * [Selection conditions](selection-conditions-new)
   * [Optimizing selections](optimizing-selections)
 * [Old documentation](old-documentation)
   * [Database management](database-management)
