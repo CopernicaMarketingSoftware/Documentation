@@ -3,6 +3,7 @@ In Copernica gebruik je opvolgacties om campagnes te automatiseren. Een opvolgac
 
 
 ![](../images/follow-up-tab.png)
+
 *Database met meerdere collecties en follow-ups*
 
 ## Opbouw van een opvolgactie
