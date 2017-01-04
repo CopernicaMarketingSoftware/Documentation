@@ -604,7 +604,7 @@ option.
 The above message will not be sent to "example.org", but to "mail.smtpeter.com"
 instead.
 
-
+<a name="headers"></a>
 ## Changing the MIME headers
 
 MailerQ can be used to alter the MIME headers. To do so, you can
