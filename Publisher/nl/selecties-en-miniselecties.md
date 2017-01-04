@@ -1,23 +1,12 @@
 # Selecties en miniselecties
-Naast velden en collecties, kun je in Copernica ook gebruik maken van selecties en miniselecties. Met een selectie maak je een soort subset van profielen in een database op basis van een of meerdere condities, die je zelf in kunt stellen. Hierdoor kun je je database nauwkeurig segmenteren, waardoor je gerichte mailings kunt sturen. Zo kun je bijvoorbeeld een selectie maken van mensen die toestemming hebben gegeven voor het ontvangen van je nieuwsbrief, mensen die jarig zijn of mensen die helemaal geen mails van jou mogen ontvangen. De inhoud van selecties wordt automatisch bijgewerkt, zodat je selecties altijd de profielen bevatten die aan de voorwaarden van de selectie voldoen. 
+Naast velden en collecties, kun je in Copernica ook gebruik maken van selecties en miniselecties. Met een selectie maak je een soort subset van profielen in een database, bijvoorbeeld van iedereen die zich heeft aangemeld voor een nieuwsbrief. Deze selecties maak je op basis van bepaalde eigenschappen die een profiel moet hebben. Hierdoor kun je je database nauwkeurig segmenteren, waardoor je gerichte mailings kunt sturen. De inhoud van selecties wordt automatisch bijgewerkt, zodat je selecties altijd de profielen bevatten die aan de voorwaarden van de selectie voldoen. 
 
-Een miniselectie is ongeveer hetzelfde als een selectie, alleen bevindt deze zich op collectieniveau en bevat dus subprofielen. Je kunt (mini)selecties maken, verwijderen en beheren onder *Profielen* > *Databasebeheer* > *Selecties beheren* in Publisher. In MarketingSuite Vind je rechtsboven een knop *Creëer (mini)selectie*. 
+Een miniselectie is ongeveer hetzelfde als een selectie, alleen bevindt deze zich op collectieniveau. Even terugblikken: een collectie is een sub-database die je aan een profiel kunt hangen. Denk bijvoorbeeld aan een collectie van aankopen die een klant (profiel) heeft gedaan. Zo kun je nog nauwkeuriger filteren. Denk bijvoorbeeld aan filteren op een kledingmerk, zodat je klanten een persoonlijke aanbieding kunt doen van een merk waar ze van houden. 
+
+Je kunt (mini)selecties maken, verwijderen en beheren onder *Profielen* > *Databasebeheer* > *Selecties beheren* in Publisher. In MarketingSuite Vind je rechtsboven een knop *Creëer (mini)selectie*. 
 
 ## Subselecties
-Een subselectie is een selectie binnen een selectie. Deze ligt dus op een niveau lager dan een selectie. De profielen in een subselectie moeten aan alle condities van de selectie voldoen, alsmede die van de subselectie. Het maken van subselecties is alleen mogelijk op profielniveau; subminiselecties maken is dus niet mogelijk. Subselecties maak je op dezelfde manier aan als selecties.
+Een subselectie is een selectie van profielen in een selectie. Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van vrouwen. De profielen in een subselectie moeten aan alle condities van de selectie voldoen, alsmede die van de subselectie. In ons voorbeeld betekent dat dus dat ze zowel vrouw als onder de 30 moeten zijn. Het maken van subselecties is alleen mogelijk op profielniveau; subminiselecties maken in een collectie is dus niet mogelijk. Subselecties maak je op dezelfde manier aan als selecties.
 
-## Selectieregels
-Alle relatiegegevens die je opslaat in Copernica zijn te gebruiken als regels voor je selecties. Maak bijvoorbeeld eenvoudig onderscheid tussen relaties die wel of niet nieuwsbriefabonnee zijn door middel van selecties binnen je database. En zo kan je binnen Copernica nog veel meer selecties instellen op basis van:
-
-* **Veldwaarde**. Voorbeeld: Stel een selectie op die kijkt of het veld ‘Woonplaats’ overeenkomt met Amsterdam. Alle relaties die in Amsterdam wonen, staan dan in je selectie.
-* **Interesse**. Voorbeeld: Je maakt een selectie van alle relaties die een voorkeur voor producten van ‘Apple’ hebben. Iedereen met een productvoorkeur van Apple komt dan in deze selectie terecht.
-* **Datum**. Voorbeeld: Stel een selectie samen van alle relaties voor wie een garantie afloopt. De selectie controleert dan bijvoorbeeld of de datum van vandaag x-aantal maanden na de aankoopdatum ligt.
-* **Campagneresultaat**. Er zijn verschillende opties om te controleren op e-mailcampagnes, sms-campagnes, faxcampagnes en enquetes. Voorbeeld: Maak een selectie van alle relaties die wel hebben geklikt op een hyperlink in je laatste e-mailing. Zo stuur je deze relaties makkelijk een opvolgactie.
-* **Contactgeschiedenis**. Voorbeeld: Selecteer alle relaties waarmee je geen contact hebt gehad tussen datum x en datum y.
-* **Inhoud van een andere (mini)selectie**. Voorbeeld: Stel een selectie op die gebruik maakt van de inhoud van een eerdere selectie die je hebt aangemaakt. Dit is een handige functie bij het combineren van selecties. Maak bijvoorbeeld een selectie van relaties die de afgelopen 6 maanden geen contact met je hebben gehad. En stel als extra regel in dat de relaties in de selectie met productvoorkeur “Apple” moeten voorkomen. Zo kan je deze relaties een speciale aanbodmail sturen met een korting op Apple-producten.
-* **Veldwijziging** Er zijn een hoop verschillende opties voor wijzigingen van profielen. Voorbeeld: Als je checkt op verandering van het  veld 'Woonplaats', kun je een selectie maken van mensen die onlangs verhuisd zijn.
-* **Eerdere exports**. Gebruik dit selectietype om profielen te selecteren die zijn geëxporteerd gedurende een bepaalde periode. 
-
-Je kunt selecties ook gebruiken om een opgegeven aantal profielen alfanumeriek te sorteren. Lees [hier](sorting-and-selecting-profiles-in-a-database-or-collection) hoe.
-
-Meer over condities en regels vind je [hier](selectiecondities).
+## Selectiecondities en selectieregels
+Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica in door middel van *selectieregels* en *condities*. Je kunt op van alles filteren, van een geboortedatum tot kliks in mailings in een bepaalde periode. Het is best een hoop informatie, vandaar dat we er een apart uitlegartikel voor hebben gemaakt. je vindt 'm [hier](selectiecondities).
