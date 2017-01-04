@@ -5,8 +5,11 @@ As stated before, selections filter profiles in a database based on selection ru
 Say, you've got a database of companies. You want create a selection that holds all companies that operate in IT and that are located in Seattle. To do this, you create a selection with one rule, consisting of two conditions:
 
 Rule 1:
+
 * Condition 1 - add all profiles where the field 'City' contains 'Seattle'.
+
     AND
+    
 * Condition 2 - add all profiles where the field 'Branch' contains 'IT'.
 
 ## OR-conditions
@@ -15,6 +18,7 @@ OR-conditions are used for selections where profiles need to comply to one of mu
 We take the same database we had in the previous example, only this time we want to select companies located in either Seattle or New York.
 
 Create two selection rules:
+
 * Rule 1 - select all profiles where the field 'City' contains 'Seattle'
 
     OR
@@ -34,6 +38,7 @@ Taking the same database, we now want a selection of companies located in Seattl
 
 The selection rules will look like this:
 Rule 1:
+
 * Condition 1 - select profiles where the field 'City' contains 'Seattle'
 
 AND
@@ -43,6 +48,7 @@ AND
 OR
 
 Rule 2:
+
 * Condition 1 - select profiles where the field 'City' contains 'New York'
 
 AND
@@ -52,6 +58,6 @@ AND
 ## Frequently used selections
 The possibilities for creating selections are really only limited by your own imagination. You can set them up in any way that works for your database. To give you some inspiration, we've created some tutorials on frequently used selections:
 
-* [Birthday selection]()
-* [Newsletter selection]()
-* [Automatically processing email bounces]()
+* [Birthday selection](how-to-create-a-birthday-selection)
+* [Newsletter selection](create-a-mailing-list)
+* [Automatically processing email bounces](automatically-process-bounces)
