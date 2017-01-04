@@ -21,4 +21,29 @@ naar de oorspronkelijke URL.
 <a href="http://www.example.com" data-script="profile.aantalkliks += 1;">klik hier</a>
 </pre>
 
-## 
+Bovenstaand code demonstreert hoe je gebruik kunt maken van het data-script
+attribuut. Als je een link in je mailing opneemt (zoals naar www.example.com
+in het voorbeeld), dan kun je daar een script aan toevoegen om per profiel
+bij te houden hoeveel kliks er in totaal zijn geweest. Dit script wordt
+uitgevoerd zodra iemand daadwerkelijk op de hyperlink klikt.
+
+
+## Publisher vs Marketing Suite
+
+Als je met Publisher werkt dan moet je zelf de HTML code templates bewerken,
+en kun je dus zelf naar hartelust data-script attributen toevoegen. Elke
+&lt;a&gt; tag (elke hyperlink dus) kan worden voorzien van een data-script
+attribuut met daarin het script dat je wilt uitvoeren als op de link wordt
+geklikt.
+
+Als je niet met de Publisher werkt, maar met de drag-and-drop editor van de 
+Marketing Suite, dan hoef je (meestal) niet zelf de HTML code te bewerken. 
+Toch kan je ook hier gebruik maken van data-script attributen. We hebben 
+namelijk in de editor een tekstveld opgenomen waarin je het script kan plaatsen. 
+Dit tekstveld is rechtstreeks gekoppeld met het onderliggende data-script 
+attribuut dat in de mail zal worden opgenomen.
+
+Voor beide systemen geldt: het attribuut werkt alleen als het script dat
+je plaatst geen fouten bevat. Je kunt niet vrijblijvend wat tekst opnemen,
+alleen geldige javascripts worden door onze server herkend en uitgevoerd.
+
