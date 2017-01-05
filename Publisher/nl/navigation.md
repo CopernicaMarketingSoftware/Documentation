@@ -16,6 +16,7 @@
     * [Optimaliseren van selecties](tips-selecties-optimaliseren)
 * [Sender domains](sender-domains)
     * [SPF records](spf)
+    * [DKIM keys](dkim)
     * [DMARC records](dmarc)
 * [Templates en documenten](templates-en-documenten)
 * [Automatische koppelingen](automatische-koppelingen)
