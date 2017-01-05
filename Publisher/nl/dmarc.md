@@ -135,12 +135,12 @@ is een door Copernica beheerd domain.
 
 ## Wat is de juiste policy instelling?
 
-Veel gebruikers vragen ons wat nou eigenlijk de beste instelling is. Dat is een
-lastige vraag, en het hangt nogal vanaf de aard van je organisatie. Zoek je de 
-beste instelling om te voorkomen dat anderen uit jouw naam kunnen mailen? Of wil 
-je weten wat de beste instelling is om je berichten bij zo veel mogelijk 
-mensen te laten aankomen? Ben je idealistisch en wil je internet zo veilig mogelijk
-maken of ben je wat pragmatischer? 
+Veel gebruikers vragen ons wat nou eigenlijk de beste instelling voor de DMARC
+policy is. Dat is een lastige vraag, en het hangt nogal vanaf de aard van je 
+organisatie. Zoek je de beste instelling om te voorkomen dat anderen uit jouw 
+naam kunnen mailen? Of wil je weten wat de beste instelling is om je berichten 
+bij zo veel mogelijk mensen te laten aankomen? Ben je idealistisch en wil je 
+internet zo veilig mogelijk maken of ben je wat pragmatischer? 
 
 Copernica is lid van de M3AAWG, een organisatie om misbruik van allerlei 
 internettoepassingen tegen te gaan. Daar is de algemene consensus dat hoe sneller 
