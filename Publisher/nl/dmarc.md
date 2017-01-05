@@ -28,8 +28,8 @@ toch een geldig bericht maar heeft de verzender gewoon zijn instellingen verkeer
 staan? Moet je een dergelijk bericht weggooien (want misbruik) of moet je het
 bericht toch netjes in de inbox plaatsen (want belangrijk bericht van oma die
 gewoon niet zo goed snapt hoe SPF en DKIM werkt)? Voor een ontvanger is het
-lastig om te beslissen of een ongeldig bericht echt fout is, of dat het gewoon
-een foutje is van de verzender. En berichten weigeren of weggooien, dat doe je 
+lastig om te beslissen of een ongeldig bericht echt misbruik is, of dat het gewoon
+een vergissing is van de verzender. En berichten weigeren of weggooien, dat doe je 
 als ontvanger liever niet, het zou wel eens belangrijk kunnen zijn.
 
 Het liefst zou je als ontvanger daarom even contact willen opnemen met bedrijfsnaam.nl.
