@@ -37,9 +37,33 @@ Het liefst zou je als ontvanger daarom even contact willen opnemen met bedrijfsn
 zie dat SPF en DKIM niet goed zijn. Heb jij je zaakjes wel op orde? En wat wil 
 je eigenlijk dat ik met dit bericht doe? Toch maar in de inbox plaatsen? Of 
 juist weggooien?" Dat is precies wat DMARC doet. Met DMARC kan een ontvanger een 
-DNS query uitvoeren om precies dit soort vragen te stellen.
+DNS query uitvoeren om precies dit soort vragen te stellen. En met DMARC kan een
+ontvanger verzenders op de hoogte brengen dat hij berichten ontvangt die niet
+matchen met SPF en/of DKIM.
 
 
 ## DMARC en DNS
 
-** Dit artikel wordt verder bijgewerkt **
+DMARC is een technologie die gebruik maakt van DNS en van e-mail. Als domeinnaameigenaar
+kun je in DNS bij je domeinnaam een DMARC record plaatsen, en in dat record kun 
+je vertellen wat er moet gebeuren met berichten die niet matchen met DKIM en SPF.
+Wil je dat ontvangers zulke berichten toch in de inbox plaatsen? Of moeten ze worden
+weggegooid? Of moeten dergelijke foutieve berichten in een aparte mailbox worden
+geplaatst, zoals de spam folder? Je kunt zelfs een percentage opgeven: ik wil dat
+van alle foutieve berichten 10% wordt weggegooid, maar de andere 90% moet toch
+in de inbox worden geplaatst.
+
+Ook kun je in je DMARC record een e-mailadres opnemen, zodat de ontvangende partijen
+weten dat je op de hoogte wilt worden gebracht als er mails binnenkomen die niet
+of niet geheel matchen met SPF en DKIM. Dat kan immers een indicatie zijn dat
+iemand misbruikt maakt van jouw domeinnaam, of dat één van je medewerkers zijn
+instellingen niet goed heeft staan. Als je een e-mailadres in je DNS record opneemt, 
+dan zul je opeens e-mails gaan onvangen met daarin DMARC rapportages.
+
+
+
+
+## Wat is de juiste instelling?
+
+
+**Dit artikel wordt verder bijgewerkt**
