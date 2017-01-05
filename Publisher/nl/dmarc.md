@@ -130,7 +130,7 @@ gebruiken, dan kun je het volgende statement toevoegen aan je DMARC record:
     
 Door dit aan je DMARC record toe te voegen vertel je aan ontvangers dat de DMARC
 rapportages ook naar Copernica moeten worden gestuurd. De domeinnaam smtpeter.com
-is ook een door Copernica beheerd domain.
+is een door Copernica beheerd domain.
 
 
 ## Wat is de juiste policy instelling?
