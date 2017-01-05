@@ -2,7 +2,7 @@
 
 DMARC (Domain-based Message Authentication, Reporting and Conformance) is een
 technologie om misbruik van e-mail (zoals phishing en spam) tegen te gaan. Om 
-goed te begrijpen waarom DMARC eigenlijk ontwikkeld is en hoe het werkt, kun je 
+goed te begrijpen waarom DMARC eigenlijk is ontwikkeld en hoe het werkt, kun je 
 het best even de wereld bekijken alsof je een professionele ontvanger bent. Stel 
 je voor dat je Gmail, Hotmail, Yahoo of een andere grote e-mailontvanger bent: 
 hoe zou je dan met e-mail omgaan?
@@ -14,7 +14,7 @@ je, eenvoudig gezegd, zien of het bericht inderdaad door de afzender geschreven 
 Elk binnenkomend bericht kun je dus op twee manieren checken: is het afkomstig 
 van een IP adres dat inderdaad van deze verzender is (en niet van een IP adres van 
 een malafide verzender), en is de mail inderdaad geschreven door de genoemde 
-afzender (en niet stiekem door iemand anders)? Het mooiste is het natuurlijk 
+afzender (en niet stiekem door iemand anders)? Het mooiste is natuurlijk 
 wanneer je als ontvanger berichten ontvangt waarvan beide checks in orde zijn.
 
 Maar ook als maar aan één van beide eisen is voldaan is het goed. Bijvoorbeeld
