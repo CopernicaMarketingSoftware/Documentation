@@ -124,7 +124,7 @@ Als je voor de andere optie kiest, en dus je eigen DMARC record handhaaft, dan
 heeft de policy instelling die je vindt in het dashboard geen effect. Je moet 
 dan zelf handmatig je eigen DMARC record beheren. Als je toch wilt dat de rapportages
 (ook) bij Copernica binnenkomen, zodat je alsnog onze DMARC analyzer kunt
-gebruiken, dan moet je het volgende statement toevoegen aan je DMARC record:
+gebruiken, dan kun je het volgende statement toevoegen aan je DMARC record:
 
     rua=mailto:dmarc@smtpeter.com
     
