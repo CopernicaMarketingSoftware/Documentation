@@ -36,7 +36,7 @@ een vergissing is van de verzender. En berichten weigeren of weggooien, dat doe 
 als ontvanger liever niet, omdat je wilt voorkomen dat je mails die voor je klanten
 belangrijk zijn achterhoudt.
 
-Het liefst zou je als ontvanger daarom even contact willen opnemen met bedrijfsnaam.nl.
+Het liefst zou je als ontvanger daarom even contact willen opnemen met de verzender.
 "Hé, ik ontvang hier een berichtje van een zogenaamde medewerker van je, maar ik 
 zie dat SPF en DKIM niet goed zijn. Heb jij je zaakjes wel op orde? En wat wil 
 je eigenlijk dat ik met dit bericht doe? Toch maar in de inbox plaatsen? Of 
