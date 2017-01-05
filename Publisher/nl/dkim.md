@@ -46,13 +46,28 @@ afzenderdomain, zoals gebruikelijk is bij DKIM signatures, maar op basis van
 onze eigen domeinnaam: copernica.com.
 
 Om gebruik te maken van de feedback loops van Gmail voegen we dus een tweede
-signature aan elk verzonden bericht toe. Want hoewel we schreven dat DKIM wordt
+signature aan elk bericht toe. Want hoewel we schreven dat DKIM wordt
 gebruikt om het afzenderadres te valideren, is het toegestaan om meerdere 
 signatures aan bericht te koppelen, ook van domeinnamen die niks met de afzender
 te maken hebben. Dat is ook wat gebeurt met het tweede signature dat aan de mail
 is toegevoegd. Gmail kan met deze twee signatures twee dingen valideren: door 
 de eerste handtekening te checken kan worden gecontroleerd of de mail daadwerkelijk
-afkomstig is van de afzender, en met de tweede signature kunnen ze zien of wij
-inderdaad de echte professionele verzender waren.
+afkomstig is van de afzender (de gewone DKIM check), en met de tweede signature 
+kunnen ze zien of wij inderdaad de echte professionele verzender waren.
 
 
+## DKIM keys beheren met Publisher
+
+Voor de introductie van Sender Domains moest je als Copernicagebruiker zelf je 
+DKIM keys beheren. Je moest zelf DNS records aanmaken waarin je de public
+key plaatste, en je moest bovendien, om te voorkomen dat de sleutels zouden
+worden gekraakt, periodiek deze keys verversen (hoewel bijna niemand dit 
+daadwerkelijk deed). Met de komst van Sender Domains is dit niet meer nodig.
+Copernica doet dit nu automatisch.
+
+Toch vind je her en der in de oude Publisher omgeving nog formulieren en 
+dialoogvensters om DKIM keys te beheren. Dit is een overblijfsel van vroeger
+en zit alleen nog maar in de software om gebruikers die nog niet zijn overgestapt
+op Sender Domains te ondersteunen. We raden het gebruik van deze formulieren 
+dan ook af. Als je een Sender Domain hebt ingesteld, hoef je geen DKIM keys
+meer in te stellen.
