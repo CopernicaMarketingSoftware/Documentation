@@ -35,8 +35,8 @@ deze instellingen te veranderen, dan kun je er voor kiezen om een subdomein
 (zoals nieuwsbrief.copernica.nl) te gebruiken voor de mail vanuit Copernica.
 
 Maar als je wel vanuit het hoofddomein wilt gaan versturen, dan moet je op een
-aantal zaken goed letten. Met name de SPF en wellicht DMARC records die je
-moet aanmaken of wijzigen behoeven speciale aandacht.
+aantal zaken goed letten. Met name de DMARC records die je moet aanmaken of 
+wijzigen behoeft speciale aandacht.
 
 
 ## De verschillende DNS records
@@ -67,22 +67,21 @@ records) aanmaken. De volgende records worden aangemaakt:
 De A, MX en DKIM records leveren meestal niet zo veel problemen op. Het is
 toegestaan om net zo veel van deze records aan te maken als je maar nodig hebt,
 en ze conflicteren niet met bestaande records. Je kunt de aliassen naar deze
-records dus zonder al te veel zorgen aanmaken.
+records dus zonder al te veel zorgen aanmaken. Ook [SPF](spf) gaat goed omdat 
+we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
 
 
-## Let op met SPF en DMARC
+## Let op met DMARC
 
-Het wordt wat ingewikkelder met SPF en DMARC records, met name als je wilt
-versturen vanuit het hoofddomain (vanuit @bedrijfsnaam.nl). Er kan namelijk
-maar één SPF en maar één DMARC record per (sub)domein worden aangemaakt, en
-er is een goede kans dat voor jouw hoofddomein dergelijke records al bestaan.
-Deze bestaande records kun je niet zomaar weghalen of overschrijven. De 
-simpele oplossing is om er dan toch maar voor te kiezen om vanuit een
-nieuw subdomein te gaan versturen. Als je echter wel vanuit het hoofddomein wilt
-mailen, dat is immers chiquer, dan moet je wat extra maatregelen treffen. Hoe 
-dat precies werkt leggen we in aparte artikelen uit:
+Het wordt wat ingewikkelder met DMARC records, met name als je wilt versturen 
+vanuit het hoofddomain (vanuit @bedrijfsnaam.nl). Er kan namelijk maar één DMARC 
+record per (sub)domein worden aangemaakt, en er is een goede kans dat voor jouw 
+hoofddomein een dergelijk record al bestaat. Dit bestaande record kun je niet 
+zomaar weghalen of overschrijven. De simpele oplossing is om er dan toch maar 
+voor te kiezen om vanuit een subdomein te versturen. Als je echter wel vanuit 
+het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra 
+maatregelen treffen. Hoe dat precies werkt leggen we in een apart artikelen uit:
 
-* [SPF records samenvoegen](spf)
 * [DMARC configureren](dmarc)
 
 Het instellen van sender domains, en de DNS records die je moet maken, kun
