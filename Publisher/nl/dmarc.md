@@ -7,7 +7,7 @@ hoe zou je dan met e-mail omgaan?
 
 Voordat DMARC werd uitgevonden waren er twee belangrijke technologieën om e-mail
 te beveiligen: [SPF](spf) en [DKIM](dkim). Met SPF kun je, als ontvanger, 
-controleren of een e-mail wel afkomstig is van een geldig IP adres, en met
+controleren of een e-mail wel afkomstig is van een geldig IP adres. Met
 DKIM kun je zien of het bericht inderdaad van de afzender afkomstig is. Het 
 mooiste voor een ontvanger is natuurlijk wanneer je berichten ontvangt waarvan 
 beide checks in orde zijn: een bericht van info@bedrijfsnaam.nl, afkomstig van 
@@ -27,14 +27,17 @@ Probeert iemand stiekem uit naam van een ander te mailen, of is het
 toch een geldig bericht maar heeft de verzender gewoon zijn instellingen verkeerd
 staan? Moet je een dergelijk bericht weggooien (want misbruik) of moet je het
 bericht toch netjes in de inbox plaatsen (want belangrijk bericht van oma die
-gewoon niet zo goed snapt hoe SPF en DKIM werkt)? Help!
+gewoon niet zo goed snapt hoe SPF en DKIM werkt)? Voor een ontvanger is het
+lastig om te beslissen of een ongeldig bericht echt fout is, of dat het gewoon
+een foutje is van de verzender. En berichten weigeren of weggooien, dat doe je 
+als ontvanger liever niet, het zou wel eens belangrijk kunnen zijn.
 
-Het liefst zou je als ontvanger even contact willen opnemen met bedrijfsnaam.nl.
-"Hé, ik ontvang hier een berichtje van je, en ik zie dat SPF en DKIM niet
-goed zijn. Heb jij je zaakjes wel op orde? En wat wil je eigenlijk dat
-ik met dit bericht doe? Toch maar in de inbox plaatsen? Of juist weggooien?"
-Eigenlijk is dit precies wat DMARC is. Met DMARC kan een ontvanger een DNS query
-uitvoeren om precies dit soort vragen te stellen.
+Het liefst zou je als ontvanger daarom even contact willen opnemen met bedrijfsnaam.nl.
+"Hé, ik ontvang hier een berichtje van een zogenaamde medewerker van je, maar ik 
+zie dat SPF en DKIM niet goed zijn. Heb jij je zaakjes wel op orde? En wat wil 
+je eigenlijk dat ik met dit bericht doe? Toch maar in de inbox plaatsen? Of 
+juist weggooien?" Dat is precies wat DMARC doet. Met DMARC kan een ontvanger een 
+DNS query uitvoeren om precies dit soort vragen te stellen.
 
 
 ## DMARC en DNS
