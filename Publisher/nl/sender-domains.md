@@ -46,7 +46,7 @@ Copernica, in onze DNS server allerlei records met de juiste DNS instellingen. I
 jouw DNS hoef je alleen nog maar aliassen te maken (door middel van CNAME records)
 die verwijzen naar de records in ons DNS. In het dashboard van Copernica kun je 
 precies zien welke records je moet aanmaken, en tonen we een waarschuwing als je
-je het niet (helemaal) goed hebt gedaan.
+het niet (helemaal) goed hebt gedaan.
 
 Omdat de aliassen die je aanmaakt naar onze servers verwijzen zijn wij in staat 
 om, als dat nodig is, wijzigingen aan te brengen aan jouw configuratie. Bijvoorbeeld 
