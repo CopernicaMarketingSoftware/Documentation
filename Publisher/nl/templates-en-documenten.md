@@ -23,7 +23,7 @@ om opvolgacties in te stellen. Dit is nog niet goed mogelijk met de nieuwe
 Marketing Suite drag-and-drop editor.
 
 
-## Copernica Marketing Suiteintroduction
+## Copernica Marketing Suite
 
 De drag-and-drop editor van de nieuwe Copernica Marketing suite is 
 makkelijk in het gebruik. Sterker nog, eigenlijk werkt het zo eenvoudig
