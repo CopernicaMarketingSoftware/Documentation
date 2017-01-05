@@ -34,7 +34,7 @@ gewoon niet zo goed snapt hoe SPF en DKIM werkt)? Voor een ontvanger is het
 lastig om te beslissen of een ongeldig bericht echt misbruik is, of dat het gewoon
 een vergissing is van de verzender. En berichten weigeren of weggooien, dat doe je 
 als ontvanger liever niet, omdat je wilt voorkomen dat je mails die voor je klanten
-belangrijk zijn achter houdt.
+belangrijk zijn achterhoudt.
 
 Het liefst zou je als ontvanger daarom even contact willen opnemen met bedrijfsnaam.nl.
 "Hé, ik ontvang hier een berichtje van een zogenaamde medewerker van je, maar ik 
