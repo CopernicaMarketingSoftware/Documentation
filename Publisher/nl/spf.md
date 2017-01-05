@@ -1,4 +1,4 @@
-# SPF records samenvoegen
+# SPF records
 
 Als je gebruik maakt van [sender domains](sender-domains), dan maakt Copernica
 alle relevante DNS records voor je aan en hoef je zelf alleen maar aliassen
