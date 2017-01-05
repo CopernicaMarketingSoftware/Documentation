@@ -56,7 +56,7 @@ weggegooid? Of moeten dergelijke foutieve berichten in een aparte mailbox worden
 geplaatst, zoals de spam folder? Je kunt zelfs een percentage opgeven: ik wil dat
 van alle foutieve berichten 10% wordt weggegooid, maar de andere 90% moet wel
 worden geaccepteerd. Overigens is een ontvanger natuurlijk niet verplicht om jouw 
-instellingen natuurlijk op te volgen: als een ontvanger besluit om de mail anders
+instellingen op te volgen: als een ontvanger besluit om de mail anders
 te verwerken dan je in het DMARC record opgeeft, dan kun je daar niks aan doen.
 
 Ook kun je in je DMARC record een e-mailadres opnemen, zodat ontvangende partijen
