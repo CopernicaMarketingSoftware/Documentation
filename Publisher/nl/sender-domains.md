@@ -3,10 +3,10 @@
 Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van email uit naam van een ander tegenwoordig lang
 zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
-versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en de domeinnaam, 
-eerst allerlei DNS instellingen goed zetten. Hierdoor kunnen ontvangers zien dat 
-wij inderdaad toestemming hebben om uit jouw naam te mailen. Als je dit niet
-doet, zal een groot deel van de berichten die je verstuurt niet goed aankomen.
+versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
+eerst allerlei DNS instellingen goed zetten. Dit stelt ontvangers in staat om 
+te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. Als je 
+dit niet doet, zal een groot deel van de berichten die je verstuurt niet goed aankomen.
 
 Het instellen van al deze DNS records kan ingewikkeld zijn, maar met behulp
 van een technologie die we "Sender Domains" hebben genoemd, maken we het 
@@ -27,7 +27,7 @@ onderdeel van de documentatie, alleen in op de ingewikkelder zaken.
 Als je een sender-domain instelt kun je kiezen of je dat doet voor je hoofddomein,
 zeg maar bedrijfsnaam.nl, of dat je dit doet voor een subdomein, zoals
 nieuwsbrief.bedrijfsnaam.nl. Natuurlijk is het een stuk chiquer wanneer alle
-e-mail, inclusief de transctionele e-mails en de nieuwsbrieven, worden verstuurd
+e-mail, inclusief de transactionele e-mails en de nieuwsbrieven, worden verstuurd
 vanuit het hoofdomein. Maar vermoedelijk worden er al allerlei berichten vanuit
 het hoofddomein verstuurd (zoals je reguliere mail!) en zijn er daarom al allerlei 
 instellingen in je DNS om dit mogelijk te maken. Als je het niet aandurft om
@@ -66,7 +66,7 @@ records) aanmaken. De volgende records worden aangemaakt:
 
 De A, MX en DKIM records leveren meestal niet zo veel problemen op. Het is
 toegestaan om net zo veel van deze records aan te maken als je maar nodig hebt,
-en ze conflicteren niet bestaande records. Je kunt de aliassen naar deze
+en ze conflicteren niet met bestaande records. Je kunt de aliassen naar deze
 records dus zonder al te veel zorgen aanmaken.
 
 
@@ -76,11 +76,27 @@ Het wordt wat ingewikkelder met SPF en DMARC records, met name als je wilt
 versturen vanuit het hoofddomain (vanuit @bedrijfsnaam.nl). Er kan namelijk
 maar één SPF en maar één DMARC record per (sub)domein worden aangemaakt, en
 er is een goede kans dat voor jouw hoofddomein dergelijke records al bestaan.
-De simpele oplossing is om er dan toch maar voor te kiezen om vanuit een
-nieuw subdomein te gaan versturen. Als je wel vanuit het hoofddomein wilt
-mailen dan moet je wat extra maatregelen treffen. Hoe dat precies werkt leggen
-we in aparte artikelen uit:
+Deze bestaande records kun je niet zomaar weghalen of overschrijven. De 
+simpele oplossing is om er dan toch maar voor te kiezen om vanuit een
+nieuw subdomein te gaan versturen. Als je echter wel vanuit het hoofddomein wilt
+mailen, dat is immers chiquer, dan moet je wat extra maatregelen treffen. Hoe 
+dat precies werkt leggen we in aparte artikelen uit:
 
 * [SPF records samenvoegen](spf)
 * [DMARC configureren](dmarc)
 
+Het instellen van sender domains, en de DNS records die je moet maken, kun
+je het beste doen via de Copernica Marketing Suite (en dus niet via de oude
+Publisher omgeving). De wizards in de Marketing Suite werken intuïtief en door
+middel van groene vinkjes of rode kruisjes kun je precies zien of je het goed
+hebt gedaan.
+
+
+## Handmatige instellingen in Publisher
+
+In de oude Copernica Publisher omgeving vind je nog allerlei formulieren om met
+de hand picserver en envelope domains aan te maken, en om met de hand DKIM
+keys in te stellen. Dit zijn verouderde formulieren die werden gebruikt voordat
+we Sender Domains hadden. Je hebt dit niet meer nodig, en je kunt het beste
+de Sender Domain wizard in de Marketing Suite gebruiken om dit allemaal in te
+stellen.
