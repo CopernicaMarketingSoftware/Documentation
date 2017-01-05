@@ -53,7 +53,7 @@ template variabele teksten en afbeeldingen kunnen worden geplaatst.
 
 Bovendien wordt er in de oude Publisher omgeving gebruik gemaakt van een 
 gelaagd systeem: we maken onderscheid tussen *templates* en 
-*documenten*. Een template bepaalt de layout van de mail, zoals de plaats van 
+*documenten*. De template bepaalt de layout van de mail, zoals de plaats van 
 de logo's en de lege plekken waar later, op documentniveau, teksten en 
 afbeeldingen kunnen worden toegevoegd. Zo'n template wordt met HTML code 
 opgemaakt, waarbij gebruik wordt gemaakt van speciale "text", "image" en 
