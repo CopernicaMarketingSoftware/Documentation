@@ -1,7 +1,7 @@
 # Sender domains
 
 Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
-*faken*, is het versturen van email uit naam van een ander tegenwoordig lang
+*faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
 zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
 versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
 eerst allerlei DNS instellingen goed zetten. Dit stelt ontvangers in staat om 
@@ -80,7 +80,7 @@ hoofddomein een dergelijk record al bestaat. Dit bestaande record kun je niet
 zomaar weghalen of overschrijven. De simpele oplossing is om er dan toch maar 
 voor te kiezen om vanuit een subdomein te versturen. Als je echter wel vanuit 
 het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra 
-maatregelen treffen. Hoe dat precies werkt leggen we in een apart artikelen uit:
+maatregelen treffen. Hoe dat precies werkt leggen we in een apart artikel uit:
 
 * [DMARC configureren](dmarc)
 
