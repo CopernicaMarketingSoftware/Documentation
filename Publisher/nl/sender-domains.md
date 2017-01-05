@@ -32,7 +32,7 @@ vanuit het hoofdomein. Maar vermoedelijk worden er al allerlei berichten vanuit
 het hoofddomein verstuurd (zoals je reguliere mail!) en zijn er daarom al allerlei 
 instellingen in je DNS om dit mogelijk te maken. Als je het niet aandurft om
 deze instellingen te veranderen, dan kun je er voor kiezen om een subdomein 
-(zoals nieuwsbrief.copernica.nl) te gebruiken voor de mail vanuit Copernica.
+(zoals nieuwsbrief.bedrijfsnaam.nl) te gebruiken voor de mail vanuit Copernica.
 
 Maar als je wel vanuit het hoofddomein wilt gaan versturen, dan moet je op een
 aantal zaken goed letten. Met name de DMARC records die je moet aanmaken of 
