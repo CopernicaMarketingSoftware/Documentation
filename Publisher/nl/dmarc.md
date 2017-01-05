@@ -70,7 +70,7 @@ opneemt, dan zul je opeens e-mails gaan onvangen met daarin DMARC rapportages.
 Als je gebruik maakt van een [sender domain](sender-domains) neemt Copernica al
 deze DNS-perikelen van je over. Dit geldt ook voor de rapportages. Als je een 
 sender domain configureert, dan maakt Copernica een DMARC record voor je aan en
-wij verwerken de rapportages. Deze binnenkomende rapportages worden gelogd, en 
+wij verwerken de rapportages. Deze binnenkomende rapportages worden gelogd en 
 via fancy grafieken kun je precies in de gaten houden hoe je verzendingen lopen. 
 Dit alles is via het dashboard in de Marketing Suite in te stellen en in te zien.
 
