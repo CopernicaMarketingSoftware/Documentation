@@ -102,7 +102,7 @@ iedereen zijn DMARC instelling op zijn strengst heeft staan (p=reject), hoe bete
 het is. Sommige mensen lopen er zelfs rond met "p=reject" t-shirts. De praktijk
 is echter weerbarstig. Natuurlijk is het voor financiële instellingen die erg 
 vatbaar zijn voor phishing (banken, overheden) het best om zo snel mogelijk de 
-strengst denkbare DMARC instelling te hebben, maar dit geldt lang niet voor alle 
+strengst denkbare DMARC instelling te hebben. Maar dit geldt lang niet voor alle 
 bedrijven. Ook veel grote leden van de M3AAWG gebruiken nog steeds een heel 
 soepele setting.
 
