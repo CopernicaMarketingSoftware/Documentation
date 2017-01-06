@@ -125,7 +125,7 @@ foutmeldingen opeens gegroeid of gaat alles goed? Meestal gaat alles gewoon goed
 kun je het percentage verder verhogen, bijvoorbeeld naar 25%. Op deze wijze kun
 je in een aantal etappes (bijvoorbeeld 10% - 25% - 50% - 75% - 100%) een Sender
 Domain implementeren. De grootte van de stappen hangt af van de omvang van je 
-database. Als er maar een paar honderd adressen in zitten kun je wat grotere
+database. Als er een paar honderd adressen in zitten kun je wat grotere
 stappen zetten. Bij een paar miljoen adressen moet je wat voorzichtiger zijn en
 in kleinere etappes uitrollen.
 
