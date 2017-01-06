@@ -9,7 +9,7 @@ voor opvolgacties en het bijwerken van statistieken.
 
 Hoe werkt dit, globaal gezien? Laten we beginnen bij begin: om een e-mail
 te versturen heb je een e-mailadres nodig, bijvoorbeeld info@bedrijfsnaam.nl. 
-Als er een bericht naar dit adres moet worden gestuurd, dan moet de server
+Als er een bericht naar dit adres wordt gestuurd, dan moet de server
 van de verzender opvragen welke mailserver er verantwoordelijk is voor het 
 verwerken van het mailverkeer naar @bedrijfsnaam.nl. Deze informatie is 
 opgeslagen in DNS, en wel in de genoemde MX records. Een verzender hoeft dus 
@@ -25,7 +25,7 @@ servers onderling berichten retourneren, bounces dus, dan gebruiken ze hiervoor
 niet het gewone afzenderadres, maar het envelope address. 
 
 Als je een mailing met Copernica verstuurt, dan gebruiken we zo'n afwijkend 
-envelope adres. De mailing heeft een gewoon gewoon *from* adres (bijvoorbeeld
+envelope adres. De mailing heeft een gewoon *from* adres (bijvoorbeeld
 info@bedrijfsnaam.nl), maar voor elke geadresseerde een speciaal *envelope*
 adres (zoals ui2ad8f9@feedback.bedrijfsnaam.nl). Voor het apenstaartje staat 
 een code die ons in staat stelt om te identificeren naar wie het bericht is 
@@ -39,12 +39,12 @@ De domeinnaam feedback.bedrijfsnaam.nl die we gebruiken voor het envelope adres
 moet worden gekoppeld aan de mailservers van Copernica. Hierdoor komen de bounces 
 bij ons terecht en kunnen we ze verwerken. Als je een Sender Domain aanmaakt,
 en de lijst van geadviseerde DNS records opvraagt, dan zie je in deze lijst
-dus een MX record staan. En dat is dus hiervoor.
+dus een MX record staan. Hier dus.
 
 
 ## Kun je geen MX records aanmaken?
 
-Sommige DNS providers, waaronder bepaalde Microsoftdiensten staan het niet toe 
+Sommige DNS providers, waaronder bepaalde Microsoftdiensten, staan het niet toe 
 om MX records aan te maken. Als je bij een dergelijke dienst je domeinnaam
 hebt ondergebracht, dan kun je dus niet zomaar de instructies van het Copernica
 dashboard opvolgen en de MX records aanmaken. Er is hier gelukkig een 
@@ -69,7 +69,10 @@ volgende schema:
     </tr>
 </table>
 
-In bovenstaande kolom kun je in de linkerkolom opzoeken welk advies het dashboard
+In bovenstaande tabel kun je in de linkerkolom opzoeken welk advies het dashboard
 je geeft, en in de rechterkolom welk CNAME record je daarvoor in de plaats ook
-zou kunnen gebruiken.
+zou kunnen gebruiken. Kortom, als het dashboard je adviseert om een MX record 
+voor "feedback.jouwdomein.nl" aan te maken met de waarde "0 publisher.copernica.nl",
+dan kun je dus ook een CNAME record aanmaken voor "feedback.jouwdomein.nl" met
+de waarde "feedback.copernica.com".
 
