@@ -7,6 +7,9 @@ replies van je mailings verwerkt moet je zo'n MX record aanmaken. Dit zorgt er
 voor dat de bounces bij Copernica terecht komen en kunnen worden gebruikt 
 voor opvolgacties en het bijwerken van statistieken.
 
+
+## Technische uitleg
+
 Hoe werkt dit, globaal gezien? Laten we beginnen bij begin: om een e-mail
 te versturen heb je een e-mailadres nodig, bijvoorbeeld info@bedrijfsnaam.nl. 
 Als er een bericht naar dit adres wordt gestuurd, dan moet de server
