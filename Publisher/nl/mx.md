@@ -56,7 +56,7 @@ volgende schema:
 
 <table>
     <tr>
-        <td><strong>Geadviseerde MX record</strong></td>
+        <td><strong>Geadviseerd MX record</strong></td>
         <td><strong>CNAME record dat ook werkt</strong></td>
     </tr>
     <tr>
