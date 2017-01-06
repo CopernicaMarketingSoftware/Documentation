@@ -94,8 +94,38 @@ hebt gedaan.
 ## Handmatige instellingen in Publisher
 
 In de oude Copernica Publisher omgeving vind je nog allerlei formulieren om met
-de hand picserver en envelope domains aan te maken, en om met de hand DKIM
-keys in te stellen. Dit zijn verouderde formulieren die werden gebruikt voordat
-we Sender Domains hadden. Je hebt dit niet meer nodig, en je kunt het beste
-de Sender Domain wizard in de Marketing Suite gebruiken om dit allemaal in te
-stellen.
+de hand picserver en envelope domains aan te maken, en om met de hand DKIM keys
+in te stellen. Dit zijn verouderde formulieren die werden gebruikt voordat we 
+Sender Domains hadden. Je hebt dit niet meer nodig, en je kunt het beste de 
+Sender Domain wizard in de Marketing Suite gebruiken om dit allemaal in te 
+stellen. Deze formulieren zijn alleen bedoeld voor mensen die al langere tijd
+gebruik maken van de Copernica software, en nog niet zijn overgestapt op
+Sender Domains.
+
+Als je zo'n gebruiker bent en nog de oude verzendinstellingen gebruikt, dan raden 
+we je aan om snel over te stappen op Sender Domains. Verzenden met behulp van 
+Sender Domains is veiliger en leidt uiteindelijk tot een betere aflevering van 
+je berichten. Maar doe het wel rustig aan. In het algemeen is het onverstandig
+om van de één op de andere dag met heel andere instellingen te gaan mailen. Dit 
+geldt ook voor de overstap naar Sender Domains. Versturen met Sender Domains is 
+beter, maar stap wel rustig over. In het Sender Domain dialoogvenster in Publisher
+hebben we daarom een tab geplaatst waarin je een percentage kunt invoeren. Hiermee
+kun je langzaam overstappen.
+
+Hoe kun je dit het beste doen? Als je een Sender Domain hebt geconfigureerd, kun
+je het deploymentpercentage in eerste instantie op, bijvoorbeeld, 10% zetten. Dit
+betekent dat 10% van jouw uitgaande berichten zal worden verstuurd met de Sender
+Domain instellingen, en 90% van de berichten met de oude settings. Eén op de tien
+berichten zal dus een envelope- en klikadress hebben dat via het Sender Domain is
+geconfigureerd, en gebruik maken van de DKIM keys van het Sender Domain. De overige
+90% van de berichten wordt nog gewoon op de oude manier samengesteld en verstuurd.
+
+Na een paar dagen mailen kun je een blik werpen op de statistieken. Is het aantal 
+foutmeldingen opeens gegroeid of gaat alles goed? Meestal gaat alles gewoon goed en 
+kun je het percentage verder verhogen, bijvoorbeeld naar 25%. Op deze wijze kun
+je in een aantal etappes (bijvoorbeeld 10% - 25% - 50% - 75% - 100%) een Sender
+Domain implementeren. De grootte van de stappen hangt af van de omvang van je 
+database. Als er maar een paar honderd adressen in zitten kun je wat grotere
+stappen zetten. Bij een paar miljoen adressen moet je wat voorzichtiger zijn en
+in kleinere etappes uitrollen.
+
