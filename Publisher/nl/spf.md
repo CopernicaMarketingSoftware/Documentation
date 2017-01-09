@@ -24,15 +24,16 @@ namelijk niet alleen IP adressen staan, maar ook andere elementen zoals domeinna
 verwijzingen en includes. Iemand die een SPF record opvraagt krijgt dus niet een 
 lijst van IP adressen terug, maar ook allerlei andere elementen. Voor deze andere 
 elementen moeten echter nieuwe DNS lookups worden gedaan, net zo lang (binnen 
-redelijke grenzen) tot alles is teruggebracht tot (toch) een lijst van IP adressen.
+redelijke grenzen) tot alles is teruggebracht tot (uiteindelijk toch) een lijst 
+van IP adressen.
 
 Copernica maakt gebruik van de mogelijkheid om ook andere elementen in SPF records 
 op te nemen. Als je het Copernicadashboard gebruikt om een [Sender Domain](sender-domains) 
 te configureren, zie je dat in het overzicht van geadviseerde DNS instelligen er 
 meestal CNAME records worden getoond. CNAME is het gangbare aliassysteem van DNS. 
-Voor SPF adviseren we echter een "include" statement. Uiteindelijk komt het op
-hetzelfde neer, en wordt er vanuit jouw DNS records (als je de geadviseerde
-instellingen overneemt) verwezen naar onze instellingen.
+Voor SPF adviseren we echter een "include" statement. In de praktijk komt het gebruik
+van een CNAME of een include op hetzelfde neer, en wordt er vanuit jouw DNS records 
+(als je de geadviseerde instellingen overneemt) verwezen naar onze instellingen.
 
 
 ## Wat moet er in SPF staan?
@@ -49,9 +50,9 @@ Wij versturen alle mailings vanuit een subdomain (zoals @feedback.bedrijfsnaam.n
 Dit doen we altijd, zelfs als je als afzenderadres gewoon een @bedrijfsnaam.nl
 adres gebruikt. Dit subdomainadres gebruiken we als *envelope*-adres. Dit 
 envelope-adres krijgt een ontvanger echter niet te zien (het is dus niet het *from* 
-adres) en wordt gebruikt om bounces en out-of-office replies naar terug te sturen.
-Voor een ontvanger lijkt het dus alsof het bericht afkomstig is vanaf het
-hoofddomein, maar in werkelijkheid komt het van een subdomein dat alleen door
+adres) en wordt door mailservers "onder de motorkap" gebruikt om bounces en 
+out-of-office replies naar terug te sturen. Voor iemand die de e-mail ontvangt 
+lijkt het dus alsof het bericht afkomstig is vanaf het gewone afzenderadres, maar in werkelijkheid komt het van een subdomein dat alleen door
 Copernica wordt gebruikt, zodat wij de bounces kunnen afvangen.
 
 De SPF technologie is alleen ontwerpen om envelope-adressen mee te controleren.

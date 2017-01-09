@@ -51,11 +51,11 @@ soorten records worden aangemaakt.
 ## Caching
 
 DNS is een gedistribuurd systeem en bestaat uit miljoenen nameservers wereldwijd.
-Elke server beheert een klein deel van de database, en er is daarom niet één DNS 
+Elke server beheert een klein deel van de database, en er is niet één DNS 
 server die alle gegevens van alle domeinnamen van de hele wereld heeft. Daarom 
 kan een DNS lookup soms enige tijd duren: sommige DNS lookups kunnen niet onmiddellijk 
 worden beantwoord en worden doorgestuurd naar een server op een hoger niveau, of, 
-als het hoogste niveau eenmaal is bereikt, weer  doorgestuurd naar een server op 
+als het hoogste niveau eenmaal is bereikt, weer doorgestuurd naar een server op 
 een lager niveau. 
 
 Omdat de meeste gegevens in DNS bijna nooit wijzigen, houden veel DNS servers
@@ -75,5 +75,21 @@ maar kan ook doorverwijzen: "nee, ik weet niet wat het ip adres van
 www.example.com is, maar vraag het eens bij server X, want die weet heel veel
 van *.com adressen". Voor sommige lookups, vooral die van weiniggebruikte
 domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig 
-voordat de DNS server van je provider een antwoord kan terugsturen.
+voordat de DNS server de juiste gegevens heeft achterhaald en je een antwoord 
+kan terugsturen.
  
+Dankzij caching zijn de meeste DNS lookups echter supersnel, omdat de gegevens van
+veelgebruikte domeinnamen eigenlijk altijd in de cache staan. Maar caching heeft
+ook een nadeel: je kunt niet even snel een wijziging doorvoeren. Want ook al wijzig 
+jij de instellingen van je domeinnaam in je eigen DNS server en lijkt alles goed
+te werken, dan is het nog steeds mogelijk dat andere nameservers de oude 
+gegevens nog in de cache hebben staan. Als er bij zo'n server een DNS lookup wordt 
+gedaan, worden deze verouderde gegevens uit de cache gebruikt, in plaats van de 
+nieuwe gegevens die jij net hebt ingevoerd. 
+
+Voor elk DNS record kun je zelf bepalen wat de maximale tijd is dat servers het 
+in de cache mogen opslaan. Vaak is deze timeout (TTL of time-to-live genoemd)
+ingesteld op een paar uur. Maar een TTL van 24 uur of meer is ook beslist niet 
+uitzonderlijk. Het gevolg is dat als je een wijziging in DNS plaatst, je voor de 
+zekerheid het beste een paar uur kunt wachten voordat je gebruik gaat maken van
+de nieuwe instelling.
