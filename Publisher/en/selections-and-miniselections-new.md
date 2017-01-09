@@ -1,22 +1,18 @@
 # Selections and miniselections
-Apart from fields and collections, Copernica also has selections and miniselections. Selections are used to make segments in your database based on one or multiple conditions. This makes it possible to create specific targets for mailings and gives the user more insight in what's going on in their databases. Examples of useful selections are the birthday selection, the newsletter mailing list and people that shouldn't receive mail from you. The contents of selections are automatically updated as databases and selections are rebuilt multiple times a day.
+## What's a selection?
+Apart from fields and collections, Copernica also has selections and miniselections. Selections are used to group parts of the profiles in your database, so you can use them as a destination for mailings or follow-up actions. These selections are made based on certain properties a profile has to have. Take for example a selection of everyone that has opted-in for your newsletter. You can set this selection as the destination of your newsletter, so you don't have to manually check who should receive it. 
 
-Miniselections are similar to selections, only they exist at collection level and consist of subprofiles. (Mini)selections can be added, deleted and managed under *Profiles* >*Database management* > *Manage selections* in Publisher. In MarketingSuite, you find the *Create selection* button on the top right when viewing your database.
+Selections make it possible to create specific targets for mailings and give the user more insight in what's going on in their databases. The contents of selections are automatically updated as databases and selections are rebuilt multiple times a day.
+
+## Miniselections
+It's also possible to make selections within collections; we call them miniselections. A collection is a sub-database attached to a profile, such as all products someone has bought in your shop. In this example, you could create a miniselection that contains all orders of products of a certain brand. If you see that someone has bought multiple products of that brand (so if the miniselection contains multiple subprofiles), you could make that person a personal offer that has to do with the brand. That way you can make your mailings even more targeted and personal.
 
 ## Subselections
-A subselection is a selection within a selection; it's on a deeper level than a selection. Profiles in subselections need to comply to the rules of the parent selection as well as those of the subselection. Creating subselections is only possible on profile level; making subminiselections is not possible. Subselections are created the same way selections are.
+A subselection is a selection within a selection, for example, a selection of people under 30 in the selection of females. Profiles in a subselection need to comply to the rules of the subselection, as well as those of the parent selection. Not only does this help you maintain a clear overview of your database, it can also make it perform faster. If you create a subselection *people under 30* within the *females*-selection, Copernica only has to go through the females to search for people under 30. In the case of a *females under 30*-selection, the software would have to go through all profiles in the database twice: once to check for gender, and once to check for age.
+Creating subselections is only possible on profile level; making "subminiselections" is not possible. 
 
-## Selection rules
-All profile data you store in Copernica can be used as rules for your selections. Selection rules can be made based on:
+## Creating selections, subselections and miniselections
+Selections, subselections and miniselections can be added, deleted and managed under *Profiles* >*Database management* > *Manage selections* in Publisher. A subselection is created by clicking *Create selection* and then assigning it to exist under the selection you want it to. In MarketingSuite, you'll find the *Create a first selection* button on the left side of your database, if you haven't got any yet, and the *create (mini)selection* button on the top right if you do.
 
-* **Field value**. Example: make a selection to check whether the field 'city' matches 'Amsterdam'. If it does, the profile will apear in the selection.
-* **Interest**. Example: make a selection and check whether the profile has the interest 'Apple'. Everyone who likes Apple products will appear in the selection.
-* **Date**. Example: Make a selection of all profiles whose warranty is expiring by setting the date to x months from the purchase date.
-* **Campaign results**. There are multiple options to filter on campaign results: e-mail, sms, fax and survey results. Example: make a selection of all profiles that clicked a hyperlink in your last mailing.
-* **Contact history**. Example: filter profiles based on whether or not you've had contact with them in the past x amount of time. 
-* **Contents of a different (mini)selection**. Example: make a selection of people you haven't had contact with in the past six months and set as a second condition that they exist in the collection of Apple-interested profiles. That way, you have a selection to send a special mailing offering them a discount on Apple products to win them back.
-* **Profile changes**. There are many different options for profile changes. Example: Checking if the field 'city' changed in the past month gives you a selection of people who recently moved.
-* **Previous exports**. Use this to select profiles that have been exported between two points in time.
-
-It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here](sorting-and-selecting-profiles-in-a-database-or-collection) how to to this.
-More on conditions and rules can be found [here](selection-conditions-new).
+## Selection rules and conditions
+As stated above, profiles in any kind of selection need to have certain properties in order to belong to a selection. These properties are set in Copernica using *selection rules* and *selection conditions*. There are many options for filtering, from a birthday to clicks in mailings during a certain period of time. It's quite a bit of information, so we've created a separate article explaining it all. You'll find it [here](selection-conditions-new).
