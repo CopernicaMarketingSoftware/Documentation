@@ -1,4 +1,4 @@
-## Selection rules
+# Selection rules
 As you may know, Copernica determines which profiles are added to a selection based on certain properties. All profile data you store in Copernica can be used for selection rules. There are many different filter options:
 
 * **Field value**. Example: make a selection to check whether the field 'city' matches 'Amsterdam'. If it does, the profile will apear in the selection.
@@ -13,7 +13,7 @@ As you may know, Copernica determines which profiles are added to a selection ba
 It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here](sorting-and-selecting-profiles-in-a-database-or-collection) how to to this.
 More on conditions and rules can be found [here](selection-conditions-new).
 
-# Rules and conditions
+## Rules and conditions
 Filtering profiles is done using selection rules and selection conditions. These are used to specify what properties the profile needs to have to be part of the selection. It's important to note that in this case, a rule and a condition are two different things. A condition is part of a rule; multiple conditions can make up a rule. A rule could be: a profile bust be female AND under 30. Females over 30 or men under 30 cannot be in this selection.
 
 You can also choose to create an OR-relation. A rule can only consist of AND-conditions, so in order to achieve this, you'll need to create multiple rules. A profile then only needs to comply to one of the rules. So, if you want a selection of all females and all people under 30, you can say you want someone to be female OR under 30.
