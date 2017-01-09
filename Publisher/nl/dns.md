@@ -51,11 +51,12 @@ soorten records worden aangemaakt.
 ## Caching
 
 DNS is een gedistribuurd systeem en bestaat uit miljoenen nameservers wereldwijd.
-Er is niet één DNS server die alle gegevens van alle domeinnamen van de hele
-wereld heeft. Daarom kan een DNS lookup soms enige tijd duren: sommige DNS lookups
-kunnen niet onmiddellijk worden beantwoord en worden doorgestuurd naar een server
-op een hoger niveau, of, als het hoogste niveau eenmaal is bereikt, weer 
-doorgestuurd naar een server op een lager niveau. 
+Elke server beheert een klein deel van de database, en er is daarom niet één DNS 
+server die alle gegevens van alle domeinnamen van de hele wereld heeft. Daarom 
+kan een DNS lookup soms enige tijd duren: sommige DNS lookups kunnen niet onmiddellijk 
+worden beantwoord en worden doorgestuurd naar een server op een hoger niveau, of, 
+als het hoogste niveau eenmaal is bereikt, weer  doorgestuurd naar een server op 
+een lager niveau. 
 
 Omdat de meeste gegevens in DNS bijna nooit wijzigen, houden veel DNS servers
 een *cache* bij. Ze slaan de antwoorden van eerdere doorverwezen DNS queries
@@ -70,7 +71,7 @@ ook onmiddellijk naar jou worden gestuurd.
 
 Als het adres niet in de cache staat, dan doet de provider een lookup bij een
 DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht wel,
-maar kan wel weer doorverwijzen: "nee, ik weet niet wat het ip adres van 
+maar kan ook doorverwijzen: "nee, ik weet niet wat het ip adres van 
 www.example.com is, maar vraag het eens bij server X, want die weet heel veel
 van *.com adressen". Voor sommige lookups, vooral die van weiniggebruikte
 domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig 

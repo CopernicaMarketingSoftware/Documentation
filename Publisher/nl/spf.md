@@ -1,43 +1,34 @@
 # SPF records
 
 Als je gebruik maakt van [sender domains](sender-domains), dan maakt Copernica
-alle relevante DNS records voor je aan en hoef je zelf alleen maar aliassen
+alle relevante [DNS records](dns) voor je aan en hoef je zelf alleen maar aliassen
 (meestal CNAME records) aan te maken die verwijzen naar de DNS records van Copernca.
-Dit werkt goed voor de meeste records (A, MX, DKIM), maar vergt heel soms wat 
+Dit werkt goed voor de meeste records (MX, DKIM, DMARC), maar vergt heel soms wat 
 extra aandacht bij SPF.
 
-Meestal gaat het echter ook bij SPF gewoon goed als je de instructies van het 
-dashboard opvolgt. In het gros van de gevallen, zelfs als je stuurt vanuit je 
-hoofddomain (zoals info@bedrijfsnaam.nl), zijn de standaardinstellingen prima. 
-Alleen in heel obscure, theoretische, situaties moet je met de hand nog wat 
-aanpassen.
-
-
-## Wat is SPF?
-
-Een SPF record is een record dat je plaatst in DNS, en waarin, heel simpel gezegd,
+Een SPF record is een record dat je plaatst in [DNS](dns) en waarin, heel simpel gezegd,
 een lijst met IP adressen staat vanuit waar je normaal gesproken e-mail 
 verstuurt. Met behulp van SPF records kun je dus, als domeineigenaar, aan de
 wereld laten weten vanuit welke IP addressen jouw e-mail wordt verzonden. Een
 ontvanger (zoals gmail.com of live.com) kan deze lijst opvragen. Als zo'n ontvanger 
-een bericht krijgt dat van jou afkomstig lijkt te zijn, maar is verstuurd vanaf 
+een e-mail ontvangt dat van jou afkomstig lijkt te zijn, maar is verstuurd vanaf 
 een IP adres dat niet op de lijst staat, dan weet hij dat er mogelijk iets met 
 de mail aan de hand is. Dit hoeft nog niet onmiddellijk een reden voor de ontvanger 
 te zijn om de mail te blokkeren, maar het is beter om er voor te zorgen dat je 
 SPF gewoon goed staat.
 
 We schreven dat in een SPF record een lijst met IP adressen staat. In essentie
-komt het daar inderdaad op neer, maar het is toch een iets te simpele voorstelling van 
-zaken. Er kunnen in een SPF record namelijk niet alleen IP adressen staan, maar 
-ook andere elementen zoals domeinnamen, verwijzingen en includes. Iemand die een
-SPF record opvraagt krijgt dus niet een lijst van IP adressen terug, maar ook 
-allerlei andere elementen. Voor deze andere elementen worden nieuwe DNS 
-lookups gedaan, net zo lang (binnen redelijke grenzen) tot alles is 
-teruggebracht tot een lijst van IP adressen.
+komt het daar inderdaad op neer, maar als je heel precies wilt zijn dan is dat
+toch een iets te simpele voorstelling van zaken. Er kunnen in een SPF record 
+namelijk niet alleen IP adressen staan, maar ook andere elementen zoals domeinnamen, 
+verwijzingen en includes. Iemand die een SPF record opvraagt krijgt dus niet een 
+lijst van IP adressen terug, maar ook allerlei andere elementen. Voor deze andere 
+elementen moeten echter nieuwe DNS lookups worden gedaan, net zo lang (binnen 
+redelijke grenzen) tot alles is teruggebracht tot (toch) een lijst van IP adressen.
 
 Copernica maakt gebruik van de mogelijkheid om ook andere elementen in SPF records 
-op te nemen. Als je het Copernicadashboard gebruikt om een Sender Domain te 
-configureren, zie je dat in het overzicht van geadviseerde DNS instelligen er 
+op te nemen. Als je het Copernicadashboard gebruikt om een [Sender Domain](sender-domains) 
+te configureren, zie je dat in het overzicht van geadviseerde DNS instelligen er 
 meestal CNAME records worden getoond. CNAME is het gangbare aliassysteem van DNS. 
 Voor SPF adviseren we echter een "include" statement. Uiteindelijk komt het op
 hetzelfde neer, en wordt er vanuit jouw DNS records (als je de geadviseerde
