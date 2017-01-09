@@ -17,7 +17,7 @@ zelf kunt doen, maar soms moet je ze een e-mail sturen met je wensen.
 
 Copernica controleert of je instellingen goed staan. Nadat je de wijzigingen
 hebt doorgevoerd, kun je terugkeren naar het configuratiescherm in het dashboard 
-van de Copernica Marketing Suite. Alle alle vinkjes op groen staan dan heb je 
+van de Copernica Marketing Suite. Als alle vinkjes op groen staan dan heb je 
 het goed gedaan. Rode kruisjes en oranje driehoekjes geven aan dat je instelling 
 niet (helemaal) goed is.
 
@@ -30,10 +30,10 @@ gegevens* over een domeinnaam op te vragen. Computers gebruiken DNS niet alleen
 om IP adressen op te halen, maar ook voor andere dingen. Een aantal instellingen 
 die in DNS kunnen worden opgeslagen zijn relevant voor e-mail:
 
-    * welke server verwerkt de inkomende mail voor een domeinnaam? ([MX](mx))
-    * vanaf welke IP adressen wordt uitgaande mail normaal gesproken verstuurd? ([SPF](spf))
-    * hoe kan de geldigheid van een digitale handtekening worden gecontroleerd? ([DKIM](dkim))
-    * hoe moet worden omgegaan met e-mail die niet correct (misschien vals) is? ([DMARC](dmarc))
+* welke server verwerkt de inkomende mail voor een domeinnaam? ([MX](mx))
+* vanaf welke IP adressen wordt uitgaande mail normaal gesproken verstuurd? ([SPF](spf))
+* hoe kan de geldigheid van een digitale handtekening worden gecontroleerd? ([DKIM](dkim))
+* hoe moet worden omgegaan met e-mail die niet correct (misschien vals) is? ([DMARC](dmarc))
     
 Al bovenstaande gegevens kunnen in DNS worden gezet. Elke keer dat een server
 een e-mail van jouw domein ontvangt worden er *DNS queries* (SPF, DKIM en DMARC) 
