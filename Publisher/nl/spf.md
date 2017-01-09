@@ -36,7 +36,7 @@ elementen. Voor deze andere elementen worden echter nieuwe DNS lookups gedaan,
 net zo lang tot (binnen redelijke grenzen) alles is teruggebracht tot (uiteindelijk
 toch) een lijst met IP adressen.
 
-Copernica maakt gebruik van de mogelijkheid om ook de hierboven genoemde elementen 
+Copernica maakt gebruik van de mogelijkheid om de hierboven genoemde elementen 
 in SPF records op te nemen. Als je het dashboard van de Marketing Suite gebruikt 
 om een [Sender Domain](sender-domains) te configureren, zie je dat in het overzicht
 van geadviseerde DNS instelligen er meestal CNAME records worden getoond. CNAME
@@ -70,8 +70,8 @@ als [sender domain](sender-domains) hebt ingesteld, dan wordt de mailing gestuur
 vanaf het via het dashboard in te stellen bijbehorende *bounce domain*, 
 bijvoorbeeld feedback.bedrijfsnaam.nl.
 
-Omdat Copernica de mail dus verstuurt vanaf dit bounce domain, moet je voor
-dit bounce domain een SPF record moet aanmaken. Omdat waarschijnlijk alleen wij, 
+Omdat Copernica de mail dus verstuurt vanaf een bounce *subdomain* moet je voor
+dit bounce domain een SPF record aanmaken. Omdat waarschijnlijk alleen wij, 
 Copernica, mail sturen vanaf het bounce domain is het door ons aangemaakte SPF
 record, dat dus alleen onze IP adressen bevat, goed genoeg. Echter, als je, om 
 wat voor reden dan ook, ook andere IP addressen (of andere elementen) in het SPF 
