@@ -37,4 +37,4 @@ een subprofiel is. Als de bestemming een profiel is, dan kan je door
 middel van een *smarty foreach* loop achterhalen of een van de
 subprofielen zich in de miniselectie bevindt:
 
-`{foreach from=$profile.collectienaam item=sub}   {in_miniselection miniselection=99 subprofile="$sub.id"}   This text is only visible to subprofiles from the miniselection with id 99 (hover the miniselection to see its ID).   {/in_miniselection}   {/foreach}`
+`{foreach from=$profile.collectienaam item=sub}   {in_miniselection miniselection=99 subprofile=$sub.id}   This text is only visible to subprofiles from the miniselection with id 99 (hover the miniselection to see its ID).   {/in_miniselection}   {/foreach}`

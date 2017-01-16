@@ -51,11 +51,12 @@ soorten records worden aangemaakt.
 ## Caching
 
 DNS is een gedistribuurd systeem en bestaat uit miljoenen nameservers wereldwijd.
-Er is niet één DNS server die alle gegevens van alle domeinnamen van de hele
-wereld heeft. Daarom kan een DNS lookup soms enige tijd duren: sommige DNS lookups
-kunnen niet onmiddellijk worden beantwoord en worden doorgestuurd naar een server
-op een hoger niveau, of, als het hoogste niveau eenmaal is bereikt, weer 
-doorgestuurd naar een server op een lager niveau. 
+Elke server beheert een klein deel van de database, en er is niet één DNS 
+server die alle gegevens van alle domeinnamen van de hele wereld heeft. Daarom 
+kan een DNS lookup soms enige tijd duren: sommige DNS lookups kunnen niet onmiddellijk 
+worden beantwoord en worden doorgestuurd naar een server op een hoger niveau, of, 
+als het hoogste niveau eenmaal is bereikt, weer doorgestuurd naar een server op 
+een lager niveau. 
 
 Omdat de meeste gegevens in DNS bijna nooit wijzigen, houden veel DNS servers
 een *cache* bij. Ze slaan de antwoorden van eerdere doorverwezen DNS queries
@@ -69,26 +70,26 @@ adres van www.example.com is? Als dat het geval is, dan kan hetzelfde antwoord
 ook onmiddellijk naar jou worden gestuurd.
 
 Als het adres niet in de cache staat, dan doet de provider een lookup bij een
-DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht ook niet,
-maar kan wel weer doorverwijzen: "nee, ik weet niet wat het ip adres van 
+DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht wel,
+maar kan ook doorverwijzen: "nee, ik weet niet wat het ip adres van 
 www.example.com is, maar vraag het eens bij server X, want die weet heel veel
 van *.com adressen". Voor sommige lookups, vooral die van weiniggebruikte
 domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig 
-voordat de DNS server van je provider de juiste gegevens heeft en naar jouw 
-device terugstuurt.
+voordat de DNS server de juiste gegevens heeft achterhaald en je een antwoord 
+kan terugsturen.
  
-Echter, de volgende keer dat jij (of heel iemand anders) het IP adres van 
-www.example.com opvraagt, staan de gegevens al in de cache en kan de provider
-het antwoord direct geven. Er zijn dan geen aanvullende lookups en doorverwijzingen
-nodig. Dankzij caching worden DNS lookups dus een stuk sneller.
+Dankzij caching zijn de meeste DNS lookups echter supersnel, doordat de gegevens van
+veelgebruikte domeinnamen eigenlijk altijd in de cache staan. Maar caching heeft
+ook een nadeel: je kunt niet even snel een wijziging doorvoeren. Want ook al wijzig 
+jij de instellingen van je domeinnaam in je eigen DNS server en lijkt alles goed
+te werken, dan is het nog steeds mogelijk dat andere nameservers de oude 
+gegevens nog in de cache hebben staan. Als er bij zo'n server een DNS lookup wordt 
+gedaan, worden deze verouderde gegevens uit de cache gebruikt, in plaats van de 
+nieuwe gegevens die jij net hebt ingevoerd. 
 
-Maar er zit ook een belangrijk nadeel aan caching. DNS lookups worden weliswaar
-sneller, maar het is danzij caching ook lastig om snel wijzigingen door te voeren.
-Als een DNS server ergens op het internet jouw gegevens in de cache heeft staan, 
-dan blijft hij gedurende enige tijd (soms wel een paar dagen) deze gegevens gebruiken, 
-zonder te controleren of de gegevens nog wel up-to-date zijn. Als je een 
-wijziging aanbrengt, dan weet je daarom pas na een paar dagen zeker dat deze 
-wijziging overal ter wereld is doorgekomen.
-
-Vanwege caching kan er daarom enige vertraging zitten tussen het moment dat je
-de wijzigingen 
+Voor elk DNS record kun je zelf bepalen wat de maximale tijd is dat servers het 
+in de cache mogen opslaan. Vaak is deze timeout (TTL of time-to-live genoemd)
+ingesteld op een paar uur. Maar een TTL van 24 uur of meer is ook beslist niet 
+uitzonderlijk. Het gevolg is dat als je een wijziging in DNS plaatst, je voor de 
+zekerheid het beste een paar uur kunt wachten voordat je gebruik gaat maken van
+de nieuwe instelling.

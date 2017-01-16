@@ -21,6 +21,7 @@
     * [DMARC records](dmarc)
 * [Templates en documenten](templates-en-documenten)
 * [Automatische koppelingen](automatische-koppelingen)
+    * [REST API](copernica-rest-api)
     * [Feedback loops](feedback-loops)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
