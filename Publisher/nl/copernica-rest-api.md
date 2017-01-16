@@ -1,5 +1,5 @@
 # De Copernica REST API
-Met de Copernica REST API kun je data in je Copernica-account ophalen, creeeren, updaten of verwijderen zonder daarvoor gebruik te maken van de Copernica applicaties REST staat voor Representational State Transfer en het belangrijkste kenmerk ervan is dat het HTTP requests gebruikt als communicatiemiddel tussen Copernica de API en jouw device. Copernica's API maakt alleen gebruik van HTTPS. Dit houdt in dat er gebruik wordt gemaakt van een vergrendelde HTTP-connectie zodat je zeker weet dat er niet met je data geknoeid wordt tijdens de overdracht.
+Met de Copernica REST API kun je data in je Copernica-account ophalen, creëren, updaten of verwijderen zonder daarvoor gebruik te maken van de Copernica applicaties REST staat voor Representational State Transfer en het belangrijkste kenmerk ervan is dat het HTTP requests gebruikt als communicatiemiddel tussen Copernica de API en jouw device. HTTP is het protocol voor communicatie tussen webservers en clients (browsers etc.). Copernica's API maakt alleen gebruik van HTTPS. Dit houdt in dat er gebruik wordt gemaakt van een vergrendelde HTTP-connectie zodat je zeker weet dat er niet met je data geknoeid wordt tijdens de overdracht.
 De REST-service is beschikbaar op [https://api.copernica.com](https://api.copernica.com).
 
 Je kunt de REST API bijvoorbeeld gebruiken om profielinformatie op te halen. Als je alle informatie van een bepaald profiel met ID 1234 wil ophalen, ziet je request er als volgt uit:
@@ -18,7 +18,11 @@ Wanneer je applicatie geregistreerd is en je jouw access token hebt verkregen, k
 
 ### Onderdelen van een call
 Een HTTP call bestaat uit de volgende onderdelen:
-**De URI**: een verwijzing naar de bron waar je de data vandaan wil halen met daarin tevens de query, de opdracht die je de server geeft. In de Copernica REST API heeft deze de volgende vorm: `https://api.copernica.com/$method/$ID?access_token=abc123`. Hierbij moeten $method en $ID natuurlijk vervangen worden door de method en ID die van toepassing zijn. Achter access_token komt jouw eigen access token te staan.
+
+**De URI**: een verwijzing naar de bron waar je de data vandaan wil halen met daarin tevens de query, de opdracht die je de server geeft. In de Copernica REST API heeft deze de volgende vorm:
+`https://api.copernica.com/$method/$ID?access_token=abc123`.
+
+Hierbij moeten $method en $ID natuurlijk vervangen worden door de method en ID die van toepassing zijn. Achter access_token komt jouw eigen access token te staan.
 
 **Header fields**: deze geven informatie over de request weer, zoals bijvoorbeeld het type content van de body, de datum, de server, et cetera.
 
@@ -28,13 +32,16 @@ Het is niet gebruikelijk om je requests helemaal zelf te schrijven. Het is makke
 
 ### Errors en succesberichten
 Wanneer je request niet lukt, krijg je vanzelfsprekend een error message terug in de vorm van een HTTP 400 (Bad request) header. Een succesvolle request stuurt ook een header terug, die verschilt per soort call. Bij een GET request krijg je geen headerinformatie, omdat je de data zelf terugkrijgt. Succesvolle POST en PUT requests geven een link naar de betreffende data in de vorm van een `X-location: https://api.copernica.com/profile/$profileID` wanneer je een profiel wijzigt of toevoegt.
-Een succesvolle DELETE request voor een profiel ziet er als volgt uit: `X-deleted: profile $profileID`.
+Een succesvolle DELETE request bevat `X-deleted: profile $profileID`.
 
 Het grootste deel van de data wordt teruggegeven in een key:value paar. De volgende syntax wordt gebruikt om te beschrijven welke vorm de teruggestuurde data heeft:
 
 `"key" : "value"` de key is een string, de value ook.
+
 `"key" : 1` de key is een string, de value een integer.
+
 `"key" : [...]` de key is een string, de value een indexed array.
+
 `"key" : {...}` de key is een string, de value een associative array.
 
 **Let op**: de keys en values in het bericht zijn hoofdlettergevoelig. {"Name": "Jeroen"} is dus niet hetzelfde als {"name": "jeroen"}.
