@@ -4,21 +4,21 @@ Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
 zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
 versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
-eerst allerlei DNS instellingen goed zetten. Dit stelt ontvangers in staat om 
+eerst allerlei [DNS instellingen](dns) goed zetten. Dit stelt ontvangers in staat om 
 te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. Als je 
 dit niet doet, zal een groot deel van de berichten die je verstuurt niet goed aankomen.
 
-Het instellen van al deze DNS records kan ingewikkeld zijn, maar met behulp
-van een technologie die we "Sender Domains" hebben genoemd, maken we het 
-makkelijk. Het werkt zo: om goed te kunnen mailen moet je DNS records aanmaken, 
-MX, SPF, DKIM en DMARC records. Om je te helpen hoef je dit echter niet zelf te 
-doen, maar maken wij deze records aan in *onze* DNS server. Het enige wat jij 
-hoeft te doen is het plaatsen van een aantal aliassen (CNAME records) die 
-verwijzen naar de instellingen bij ons.
+Het instellen van al deze [DNS records](dns) kan ingewikkeld zijn, maar met behulp
+van een technologie die we *Sender Domains* hebben genoemd, maken we het 
+makkelijk. Het werkt zo: om goed te kunnen mailen moet je [DNS records](dns) aanmaken, 
+[MX](mx), [SPF](spf), [DKIM](dkim) en [DMARC](dmarc) records. Om je te helpen 
+hoef je dit echter niet zelf te doen, maar maken wij deze records aan in *onze* 
+[DNS server](dns). Het enige wat jij hoeft te doen is het plaatsen van een aantal 
+aliassen (CNAME records) die verwijzen naar de instellingen bij ons.
 
 Zo simpel is het. In het 
 [snel-aan-de-slag artikel over het instellen van een afzenderdomein](sender-domain-instellen)
-leggen we het al heel goed uit. We gaan daarom hier, in dit wat diepgravender
+leggen we het uitgebreid uit. We gaan daarom hier, in dit wat diepgravender
 onderdeel van de documentatie, alleen in op de ingewikkelder zaken.
 
 

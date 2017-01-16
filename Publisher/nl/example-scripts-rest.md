@@ -1,21 +1,14 @@
-# Example scripts of GET, POST, PUT and DELETE calls
-As mentioned before, the API methods are called using HTTP Requests,
-where the type of request determines what to do. GET requests retrieve
-data, POST requests create new data, PUT requests update existing data and DELETE
-requests delete data. You can send these requests using whichever
-technique you prefer, in the following examples we use cURL and PHP.
+# Voorbeeldcode GET, POST, PUT en DELETE requests
+Zoals eerder vermeld roep je de REST API aan met HTTP requests, waarbij het type request bepaalt wat er gedaan moet worden. GET requests halen data op, POST requests creëren nieuwe data, PUT requests passen bestaande data aan en DELETE requests verwijderen data. Er zijn een hoop verschillende manieren om requests te versturen, maar in deze voorbeelden gebruiken we PHP met cURL.
 
-**Note that in each of these examples you'll need to replace the access keys and IDs with your own access keys and IDs.**
+Voor alle scripts geldt dat je ze moet aanpassen met de juiste ID's en jouw eigen access token voordat je ze kunt gebruiken.
 
-## A GET request
+## Een GET request
+Als je informatie over een database of andere data wil verkrijgen, gebruik je een GET-request.
 
-If you wish to retrieve information from a certain profile, or an entire
-database, you use the GET request.
+Het volgende script haalt informatie op over het profiel met `$profileID` 1. Je hoeft hiervoor geen Database ID in de URL op te geven, omdat ieder profiel in Copernica een uniek ID heeft, onafhankelijk van de database waar ze in zitten.
 
-The following example script returns the information of the profile with profile ID 1. It is not needed to include the databaseID in the URL, because each profile in a Copernica account has its own unique
-identifier. Database independently that is.
-
-```
+```PHP
 <?php
 /**
  *  Example API call
@@ -48,14 +41,12 @@ echo($output) . PHP_EOL;
 // close curl resource to free up system resources
 
 curl_close($ch);
-
 ?>
 ```
 
-### Example response of a GET request
+### Voorbeeldantwoord op een GET request
 
-If your request is successful, you will receive the requested
-information. In this example the information of a single profile.
+Als je request succesvol verloopt, krijg je de data terug die je opgevraagd had. Dit ziet er in het geval van een enkel profiel als volgt uit.
 
 ```
 HTTP/1.1 200 OK
@@ -85,12 +76,11 @@ Content-Type: application/json
 }
 ```
 
-## A POST request
+## Een POST request
 
-If you wish to add a new profile to the database, you send a POST
-request to the database, telling it to add a profile. In the `$data=` array, you  can specify all the fields you want to fill.
+Als je een nieuw profiel aan je database wil toevoegen, kun je dat doen met een POST request. In de `$data =` array kun je alle velden die moeten worden ingevuld aangeven met een key-value paar. Dat ziet er dan ongeveer zo uit:
 
-```
+```PHP
 <?php
 /**
  *  Example API call
@@ -141,27 +131,23 @@ curl_close($ch);
 ?>
 ```
 
-### Example response POST request
+### Voorbeeldantwoord op een POST request
 
-The API call will return a header containing the location of the newly
-created profile. Currently you cannot create multiple profiles in a
-single call.
-
-    HTTP/1.1 302 Found
+```
+ HTTP/1.1 302 Found
     Date: Thu, 30 Jan 2014 11:14:07 GMT
     Server: Apache/2.2.22 (Ubuntu)
     X-Powered-By: PHP/5.3.10-1ubuntu3.9
     Location: https://api.copernica.com/profile/157?access_token=123456
     Content-Length: 0
     Content-Type: application/json
-
-## A DELETE request
-
-To delete a profile, you send a DELETE request. Since PHP and cURL do
-not support CURLOPT_PUT or CURLOPT_DELETE, we use a
-CURLOPT_CUSTOMREQUEST and set it to "DELETE".
-
 ```
+Als het gelukt is om het profiel aan te maken, krijg je een header terug waarin de locatie van het nieuwe profiel staat.
+
+## Een DELETE-request
+Als je een profiel wil verwijderen, gebruik je een DELETE request. Aangezien PHP en cURL `CURLOPT_PUT` en `CURlOPT_DELETE` niet ondersteunen, gebruiken we hier een `CURLOPT_CUSTOMREQUEST`, waar we DELETE aan toewijzen.
+
+```PHP
 <?php
 /**
  *  Example API call
@@ -198,13 +184,11 @@ curl_close($ch);
 ?>
 ```
 
-### Example response DELETE request
+### Voorbeeldantwoord DELETE request
+Als de request succesvol is, wordt een header teruggegeven met een `X-deleted` met daarin het type item dat is verwijderd en het ID. In dit geval is dat dus een profiel met de ID 156.
 
-Upon successful deletion a `X-Deleted` header will be sent, followed by
-what was deleted and the identifier of the deleted item, in the example
-header below it's the profile with ID 156.
 ```
-    HTTP/1.1 200 OK
+ HTTP/1.1 200 OK
     Date: Thu, 30 Jan 2014 11:23:52 GMT
     Server: Apache/2.2.22 (Ubuntu)
     X-Powered-By: PHP/5.3.10-1ubuntu3.9
@@ -213,10 +197,10 @@ header below it's the profile with ID 156.
     Content-Type: application/json
 ```
 
-## Example PUT request with cUrl
+## Een PUT request
+De code hieronder demonstreert hoe je in een database alle Johns in Amsterdam de landcode 'nl_NL' kunt geven. Let ook hier weer op de `CURLOPT_CUSTOMREQUEST`.
 
-If you want to alter a profile, database or any other existing part of a database, use a PUT request. The request below finds all people named 'John' that live in Amsterdam, and gives them the country code 'nl_NL'. Note the `CURLOPT_CUSTOMREQUEST`.
-```
+```PHP
 <?php
 /**
  *  Example API call
@@ -228,7 +212,7 @@ If you want to alter a profile, database or any other existing part of a databas
 $databaseID = 756;
 
 // find all Johns living in Amsterdam
-
+ 
 $data = array(
             "name" => "John", 
             "city" => "Amsterdam" 
@@ -251,7 +235,7 @@ $url = array();
 foreach ($data as $key => $value)
 {
     // make the url encoded query string
-
+    
     $url[] = 'fields[]='.urlencode($key.'=='.$value);
 }
 
@@ -285,7 +269,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 $output = curl_exec($ch);
 
 // output the profile information - includes the header
-
+ 
 echo($output) . PHP_EOL;
 
 // close curl resource to free up system resources
@@ -293,4 +277,8 @@ echo($output) . PHP_EOL;
 curl_close($ch);
 ?>
 ```
+
+
+
+
 
