@@ -21,7 +21,7 @@ Once you've got yourself set up, it's time to start making calls.
 ### Parts of a request
 An HTTP request consists of the following parts:
 
-- The URI: a referral to the source you want to gather data from. It also holds the query, the order you've giving the receiving server. In the Copernica REST API, it looks something like this: `https://api.copernica/$method/$ID?access_token=123abc`. In this, you'll of course need to replace $method and $ID with the method and ID you need to fulfill your request. 
+- The URI: a reference to the source you want to gather data from. It also holds the query, the order you've giving the receiving server. In the Copernica REST API, it looks something like this: `https://api.copernica/$method/$ID?access_token=123abc`. In this, you'll of course need to replace $method and $ID with the method and ID you need to fulfill your request. 
 
 - Header fields: these hold information on the request, like the content type of the body, the date, the server, etc.
 
