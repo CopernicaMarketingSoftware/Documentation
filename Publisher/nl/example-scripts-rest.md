@@ -1,5 +1,5 @@
 # Voorbeeldcode GET, POST, PUT en DELETE requests
-Zoals eerder vermeld roep je de REST API aan met HTTP requests, waarbij het type request bepaalt wat er gedaan moet worden. GET requests halen data op, POST requests creeeren nieuwe data, PUT requests passen bestaande data aan en DELETE requests verwijderen data. Er zijn een hoop verschillende manieren om requests te versturen, maar in deze voorbeelden gebruiken we PHP met cURL.
+Zoals eerder vermeld roep je de REST API aan met HTTP requests, waarbij het type request bepaalt wat er gedaan moet worden. GET requests halen data op, POST requests creëren nieuwe data, PUT requests passen bestaande data aan en DELETE requests verwijderen data. Er zijn een hoop verschillende manieren om requests te versturen, maar in deze voorbeelden gebruiken we PHP met cURL.
 
 Voor alle scripts geldt dat je ze moet aanpassen met de juiste ID's en jouw eigen access token voordat je ze kunt gebruiken.
 
