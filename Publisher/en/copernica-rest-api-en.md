@@ -27,7 +27,7 @@ An HTTP request consists of the following parts:
 
 - The body: the body is optional for HTTP requests. It contains all data that is sent with the request. When you send a GET or DELETE call, you don't need to put anything in the body. However, when you send a POST or PUT request, you need to specify all data you want to add or update there. The body also holds the data you receive from the API. These are data you request through a GET request, reports of added or updated data and error/success messages.
 
-Writing requests entirely by hand is unusal. It's a lot easier and faster to do so using a library like Requests (Python) or cURl (other languages). [Here](), you'll find example scripts for all four requests written in PHP using cURL.
+Writing requests entirely by hand is unusal. It's a lot easier and faster to do so using a library like Requests (Python) or cURl (other languages). [Here](example-get-post-and-delete-requests), you'll find example scripts for all four requests written in PHP using cURL.
 
 ### Errors and success messages
 When your request fails, you'll naturally be notified of it. This happens in the form of a HTTP 400 (bad request) error header. A successful request also returns a header, which is different per type of request. A header request doesn't return any specific header information, because you are the receiver of data. Succesful POST and PUT requests return a link to the data in the form of an `X-location: https://api.copernica.com/profle/$profileID` when the request concerns a profile. A succesful DELETE request returns an `X-deleted: profile $profileID`.
