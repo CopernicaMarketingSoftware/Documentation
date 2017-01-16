@@ -28,7 +28,7 @@ Hierbij moeten $method en $ID natuurlijk vervangen worden door de method en ID d
 
 **De body**: de body is optioneel voor een HTTP-bericht. Het bevat alle data die meegestuurd wordt met het bericht. Wanneer je een GET of een DELETE request stuurt, hoef je niets in de body te zetten. Doe je echter een POST of PUT, dan zet je hierin welke data je wil toevoegen of veranderen aan je database. In de body staat ook de data die je terugkrijgt van de API. Dit zijn de data die je opvraagt, rapportages van toegevoegde of gewijzigde data en success en error messages.
 
-Het is niet gebruikelijk om je requests helemaal zelf te schrijven. Het is makkelijker en sneller om dit door middel van een library te doen, zoals Requests (Python) of cURL (andere talen). [Hier]() vind je van iedere soort call een voorbeeldscript in PHP met cURL. 
+Het is niet gebruikelijk om je requests helemaal zelf te schrijven. Het is makkelijker en sneller om dit door middel van een library te doen, zoals Requests (Python) of cURL (andere talen). [Hier](example-scripts-rest) vind je van iedere soort call een voorbeeldscript in PHP met cURL. 
 
 ### Errors en succesberichten
 Wanneer je request niet lukt, krijg je vanzelfsprekend een error message terug in de vorm van een HTTP 400 (Bad request) header. Een succesvolle request stuurt ook een header terug, die verschilt per soort call. Bij een GET request krijg je geen headerinformatie, omdat je de data zelf terugkrijgt. Succesvolle POST en PUT requests geven een link naar de betreffende data in de vorm van een `X-location: https://api.copernica.com/profile/$profileID` wanneer je een profiel wijzigt of toevoegt.
