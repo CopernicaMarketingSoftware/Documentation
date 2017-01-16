@@ -24,7 +24,7 @@ niet (helemaal) goed is.
 
 ## Achtergrondinformatie
 
-Zoals we schreven, is DNS het systeem om domeinnamen om te zetten naar IP adressen.
+Zoals we schreven is DNS het systeem om domeinnamen om te zetten naar IP adressen.
 Dat klopt, maar DNS is meer dan dat. Eigenlijk is het een systeem om *allerlei
 gegevens* over een domeinnaam op te vragen. Computers gebruiken DNS niet alleen
 om IP adressen op te halen, maar ook voor andere dingen. Een aantal instellingen 
@@ -69,10 +69,26 @@ adres van www.example.com is? Als dat het geval is, dan kan hetzelfde antwoord
 ook onmiddellijk naar jou worden gestuurd.
 
 Als het adres niet in de cache staat, dan doet de provider een lookup bij een
-DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht wel,
+DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht ook niet,
 maar kan wel weer doorverwijzen: "nee, ik weet niet wat het ip adres van 
 www.example.com is, maar vraag het eens bij server X, want die weet heel veel
 van *.com adressen". Voor sommige lookups, vooral die van weiniggebruikte
 domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig 
-voordat de DNS server van je provider een antwoord kan terugsturen.
+voordat de DNS server van je provider de juiste gegevens heeft en naar jouw 
+device terugstuurt.
  
+Echter, de volgende keer dat jij (of heel iemand anders) het IP adres van 
+www.example.com opvraagt, staan de gegevens al in de cache en kan de provider
+het antwoord direct geven. Er zijn dan geen aanvullende lookups en doorverwijzingen
+nodig. Dankzij caching worden DNS lookups dus een stuk sneller.
+
+Maar er zit ook een belangrijk nadeel aan caching. DNS lookups worden weliswaar
+sneller, maar het is danzij caching ook lastig om snel wijzigingen door te voeren.
+Als een DNS server ergens op het internet jouw gegevens in de cache heeft staan, 
+dan blijft hij gedurende enige tijd (soms wel een paar dagen) deze gegevens gebruiken, 
+zonder te controleren of de gegevens nog wel up-to-date zijn. Als je een 
+wijziging aanbrengt, dan weet je daarom pas na een paar dagen zeker dat deze 
+wijziging overal ter wereld is doorgekomen.
+
+Vanwege caching kan er daarom enige vertraging zitten tussen het moment dat je
+de wijzigingen 
