@@ -71,10 +71,12 @@ automatically picks them up and delivers them.
 
 Watch out if you run multiple MailerQ instances. If the individual instances
 all send out mail from different IP addresses (because they run on different
-servers), it is better to use different outbox queues for the instances to
-prevent that a MailerQ instance reads a message from the queue that should
-be sent from an IP address on a different machine. Read more about running
-multiple instances in our [MailerQ clustering] article.
+servers), it is better to use different outbox queues. Every MailerQ instance
+consumes messages from its own queue. You must then also ensure that you publish
+messages to the right queue to have them being sent from the right server.
+But don't worry for mistakes. If you've set up a [MailerQ cluster](cluster),
+messages are automatically moved to the correct queue if they end up in a
+wrong outbox queue.
 
 
 ### Queues for incoming messages
