@@ -24,7 +24,7 @@ niet (helemaal) goed is.
 
 ## Achtergrondinformatie
 
-Zoals we schreven, is DNS het systeem om domeinnamen om te zetten naar IP adressen.
+Zoals we schreven is DNS het systeem om domeinnamen om te zetten naar IP adressen.
 Dat klopt, maar DNS is meer dan dat. Eigenlijk is het een systeem om *allerlei
 gegevens* over een domeinnaam op te vragen. Computers gebruiken DNS niet alleen
 om IP adressen op te halen, maar ook voor andere dingen. Een aantal instellingen 
@@ -78,7 +78,7 @@ domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig
 voordat de DNS server de juiste gegevens heeft achterhaald en je een antwoord 
 kan terugsturen.
  
-Dankzij caching zijn de meeste DNS lookups echter supersnel, omdat de gegevens van
+Dankzij caching zijn de meeste DNS lookups echter supersnel, doordat de gegevens van
 veelgebruikte domeinnamen eigenlijk altijd in de cache staan. Maar caching heeft
 ook een nadeel: je kunt niet even snel een wijziging doorvoeren. Want ook al wijzig 
 jij de instellingen van je domeinnaam in je eigen DNS server en lijkt alles goed

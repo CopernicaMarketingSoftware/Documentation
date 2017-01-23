@@ -69,6 +69,15 @@ to inject outgoing email messages directly into RabbitMQ, you should
 therefore publish your messages to this outbox queue so that MailerQ 
 automatically picks them up and delivers them.
 
+Watch out if you run multiple MailerQ instances. If the individual instances
+all send out mail from different IP addresses (because they run on different
+servers), it is better to use different outbox queues. Every MailerQ instance
+consumes messages from its own queue. You must then also ensure that you publish
+messages to the right queue to have them being sent from the right server.
+But don't worry for mistakes. If you've set up a [MailerQ cluster](cluster),
+messages are automatically moved to the correct queue if they end up in a
+wrong outbox queue.
+
 
 ### Queues for incoming messages
 
