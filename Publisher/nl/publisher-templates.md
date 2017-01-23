@@ -85,3 +85,11 @@ maar verstandig is dit niet. Als je de afbeelding uploadt naar Copernica,
 verzorgt Copernica de hosting en kunnen we de afbeelding gebruiken om kliks
 en opens te tracken.
 
+Het dialoogvenster "Bestanden en afbeeldingen" kan ook worden gebruikt om
+afbeeldingen te beheren. Dit is een nogal theoretische toepassing. HTML kent
+naast de "<img>" tag ook allerlei andere tags opnemen die verwijzen
+naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;, 
+&lt;iframe&gt; en &lt;applet&gt;. Als je dit soort tags gebruikt (wat we *zeer
+sterk* afraden), dan kun je het bestand waar naar wordt verwezen via dit
+dialoogvenster koppelen.
+
