@@ -1,8 +1,8 @@
 # Image tags
 
 In een template kun je met behulp van [image] tags opgeven waar afbeeldingen 
-mogen worden geplaatst. Als de template wordt gebruik voor het samenstellen 
-van een document, kan op elke plek waar je [image] tag hebt gezet door de
+mogen worden geplaatst. Als de template wordt gebruikt voor het samenstellen 
+van een document, kan op elke plek waar je een [image] tag hebt gezet door de
 gebruiker een afbeelding worden ingevoerd.
 
 ![](../images/imageblocktag.png)
