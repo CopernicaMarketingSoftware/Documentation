@@ -4,7 +4,7 @@ In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
 voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
 template vooral blanco plekken die later nog kunnen worden ingevuld. Als je 
-een mailing wilt samenstellen, maak je op basis van een template eerst een 
+een mailing wilt samenstellen maak je op basis van een template een 
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
 
@@ -37,9 +37,10 @@ zoals tablets (met best een groot scherm), telefoons (klein scherm) of horloges
 daarvoor ontwikkelde e-mailprogramma's als Outlook of Thunderbird, of met
 webmail omgevingen als Gmail of Hotmail. Bovendien gebruiken veel mensen
 verouderde software en filteren e-mailprogramma's en providers berichten en 
-worden scripts en ingewikkelde CSS codes vaak uit mails verwijderd. Een 
-eenvoudige template is een stuk minder kwetsbaar dan een complexe template,
-en leidt tot minder problemen en een groter bereik.
+worden scripts en ingewikkelde CSS codes vaak uit mails verwijderd. Een
+template moet dus wel tegen een stootje kunnen. Een eenvoudige template is een 
+stuk minder kwetsbaar dan een complexe template, en leidt tot minder problemen 
+en een groter bereik.
 
 Maar uiteindelijk ben je, als gebruiker van Copernica, helemaal vrij om je
 template zo op te maken als je zelf wilt. Copernica verstuurt de HTML code
@@ -49,9 +50,10 @@ je maar wilt.
 
 ## Contentblokken
 
-In een template kun je blanco plekken opnemen die later op documentniveau
-worden voorzien van content. Je bepaalt hiermee waar later afbeeldingen en 
-teksten mogen worden geplaatst. Dit noemen we *contentblokken*.
+Zoals gezegd bestaat een template uit HTML code. Deze kun je zelf maken en je
+kunt er blanco plekken in opnemen die later op documentniveau worden voorzien 
+van content. Je bepaalt hiermee waar later afbeeldingen en teksten mogen 
+worden geplaatst. Deze blanco plekken noemen we *contentblokken*.
 
 Er zijn drie *tags* waarmee je contentblokken maakt: [text], [image] en [loop]. 
 Deze tags kun je in de broncode van de template opnemen om aan te geven
