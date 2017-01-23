@@ -20,6 +20,7 @@
     * [DKIM records](dkim)
     * [DMARC records](dmarc)
 * [Templates en documenten](templates-en-documenten)
+    * [Publisher Templates](publisher-templates)
 * [Automatische koppelingen](automatische-koppelingen)
     * [Feedback loops](feedback-loops)
 * [Oude documentatie](oude-documentatie)
