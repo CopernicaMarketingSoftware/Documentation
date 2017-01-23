@@ -66,32 +66,36 @@ in staat wilt stellen om mailings te maken met een variabel aantal paragrafen
 of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de 
 template op te nemen.
 
+* [[text] tags](text-tag)
+* [[image] tags](image-tag)
+* [[loop] tags](loop-tag)
+
 
 ## Vaste afbeeldingen
 
-Afbeeldingen worden meestal op documentniveau toegevoegd. Maar ook 
+Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook 
 in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo
-dat voor elke mailing immers hetzelfde is. Hier is niks bijzonders aan, en
-kun je met doodnormale HTML <&lt;img&gt>; tags doen. Maar let wel even op
+dat voor elke mailing immers hetzelfde is. Hier is niks moeilijks aan, en
+kun je met doodnormale HTML &lt;img&gt; tags doen. Maar let wel even op
 dat de afbeelding waar je naar verwijst, ook aan de template is gekoppeld.
 
 Via het dropdown menu van Publisher kun je het dialoogscherm "Bestanden en
 afbeeldingen" openen. In dit dialoogvenster kun je alle afbeeldingen en 
 bestanden beheren waarnaar in de template wordt verwezen. Als je hier
 een afbeelding uploadt, zoals *plaatje.gif*, dan kun je in de template de
-&lt;img src="plaatje.gif"&gt; tag plaatsen. Copernica zorgt dat de afbeelding
-wordt gehost zodat ontvangers van de e-mail de afbeelding ook krijgen te zien.
+&lt;img src="plaatje.gif"&gt; tag plaatsen. Wij zorgen dat de afbeelding
+wordt gehost op de servers van Copernica zodat ontvangers van de e-mail de 
+afbeelding krijgen te zien.
 
-Je kunt natuurlijk ook zelf de afbeeldingen hosten (&lt;img src="http://www.mijnbedrijf.nl/plaatje.gif"&gt;),
-maar verstandig is dit niet. Als je de afbeelding uploadt naar Copernica,
-verzorgt Copernica de hosting en kunnen we de afbeelding gebruiken om kliks
-en opens te tracken.
+Je kunt natuurlijk ook zelf de afbeeldingen hosten, maar verstandig is dit 
+niet. Als je de afbeelding uploadt naar Copernica, verzorgt Copernica de 
+hosting en kunnen we de afbeelding gebruiken om kliks en opens te tracken.
 
 Het dialoogvenster "Bestanden en afbeeldingen" kan ook worden gebruikt om
-afbeeldingen te beheren. Dit is een nogal theoretische toepassing. HTML kent
-naast de "<img>" tag ook allerlei andere tags opnemen die verwijzen
+bestanden te beheren. Dit is een nogal theoretische toepassing. HTML kent
+naast de &lt;img&tgt; tag ook allerlei andere tags opnemen die verwijzen
 naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;, 
 &lt;iframe&gt; en &lt;applet&gt;. Als je dit soort tags gebruikt (wat we *zeer
-sterk* afraden), dan kun je het bestand waar naar wordt verwezen via dit
-dialoogvenster koppelen.
+sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
+een afbeelding, via dit dialoogvenster koppelen.
 
