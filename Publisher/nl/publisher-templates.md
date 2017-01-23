@@ -2,8 +2,8 @@
 
 In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
-voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder staat een
-template vol met blanco plekken die later nog kunnen worden ingevuld. Als je 
+voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
+template vooral blanco plekken die later nog kunnen worden ingevuld. Als je 
 een mailing wilt samenstellen, maak je op basis van een template eerst een 
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
@@ -50,17 +50,38 @@ je maar wilt.
 ## Contentblokken
 
 In een template kun je blanco plekken opnemen die later op documentniveau
-worden voorzien van content. Je bepaalt dus zelf waar later afbeeldingen en 
-teksten mogen worden geplaatst. Dit doe je met behulp van *contentblokken*.
+worden voorzien van content. Je bepaalt hiermee waar later afbeeldingen en 
+teksten mogen worden geplaatst. Dit noemen we *contentblokken*.
 
-Er zijn drie tags waarmee je contentblokken maakt: "[text]", "[image]" en 
-"[loop]". De "[text]" en "[image]" tags spreken voor zich. Op elke plek 
-in de template waar je deze blokken plaatst, kunnen later op documentniveau
-teksten en afbeeldingen worden geplaatst. De loopblokken behoeven wat
-meer uitleg, en stellen je in staat om op documentniveau herhalingen in 
-te voeren. Als je bijvoorbeeld gebruikers in staat wilt stellen om mailings te 
-maken met een variabel aantal paragrafen of een variabel aantal artikelen, 
-dan kun en dit doen door loopblokken in de template op te nemen.
+Er zijn drie *tags* waarmee je contentblokken maakt: [text], [image] en [loop]. 
+Deze tags kun je in de broncode van de template opnemen om aan te geven
+dat daar op documentniveau content kan worden geplaatst. De werking van de 
+[text] en [image] tags spreekt voor zich: op elke plek in de template waar je 
+deze tags plaatst, kunnen later op documentniveau teksten en afbeeldingen 
+worden geplaatst. De looptags behoeven wat meer uitleg, en stellen je in staat 
+om op documentniveau herhalingen in te voeren. Als je bijvoorbeeld gebruikers 
+in staat wilt stellen om mailings te maken met een variabel aantal paragrafen 
+of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de 
+template op te nemen.
 
 
+## Vaste afbeeldingen
+
+Afbeeldingen worden meestal op documentniveau toegevoegd. Maar ook 
+in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo
+dat voor elke mailing immers hetzelfde is. Hier is niks bijzonders aan, en
+kun je met doodnormale HTML <&lt;img&gt>; tags doen. Maar let wel even op
+dat de afbeelding waar je naar verwijst, ook aan de template is gekoppeld.
+
+Via het dropdown menu van Publisher kun je het dialoogscherm "Bestanden en
+afbeeldingen" openen. In dit dialoogvenster kun je alle afbeeldingen en 
+bestanden beheren waarnaar in de template wordt verwezen. Als je hier
+een afbeelding uploadt, zoals *plaatje.gif*, dan kun je in de template de
+&lt;img src="plaatje.gif"&gt; tag plaatsen. Copernica zorgt dat de afbeelding
+wordt gehost zodat ontvangers van de e-mail de afbeelding ook krijgen te zien.
+
+Je kunt natuurlijk ook zelf de afbeeldingen hosten (&lt;img src="http://www.mijnbedrijf.nl/plaatje.gif"&gt;),
+maar verstandig is dit niet. Als je de afbeelding uploadt naar Copernica,
+verzorgt Copernica de hosting en kunnen we de afbeelding gebruiken om kliks
+en opens te tracken.
 
