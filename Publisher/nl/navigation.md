@@ -20,7 +20,7 @@
     * [DKIM records](dkim)
     * [DMARC records](dmarc)
 * [Templates en documenten](templates-en-documenten)
-    * [Publisher Templates](publisher-templates)
+    * [Publisher templates](publisher-templates)
 * [Automatische koppelingen](automatische-koppelingen)
     * [REST API](copernica-rest-api)
     * [Feedback loops](feedback-loops)
