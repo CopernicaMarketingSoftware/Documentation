@@ -3,12 +3,12 @@
 In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
 voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
-template vooral blanco plekken die later nog kunnen worden ingevuld. Als je 
+template vooral blanco plekken die later kunnen worden ingevuld. Als je 
 een mailing wilt samenstellen maak je op basis van een template een 
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
 
-Vaak (maar niet altijd!) is er een rolverdeling tussen de mensen die templates 
+Vaak (maar niet altijd!) is er een onderscheid tussen de mensen die templates 
 bouwen, en marketeers die mailings (documenten) samenstellen en versturen. 
 Templates worden gemaakt door webdesigners of programmeurs met verstand van HTML.
 Zij bepalen de opmaak van de mailing en wijzen de plaatsen aan waar teksten en 
@@ -76,7 +76,7 @@ template op te nemen.
 Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook 
 in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo
 dat voor elke mailing immers hetzelfde is. Hier is niks moeilijks aan, en
-kun je met doodnormale HTML &lt;img&gt; tags doen. Maar let wel even op
+kun je met doodnormale HTML &lt;img&gt; tags doen. Maar let wel op
 dat de afbeelding waar je naar verwijst, ook aan de template is gekoppeld.
 
 Via het dropdown menu van Publisher kun je het dialoogscherm "Bestanden en
@@ -93,7 +93,7 @@ hosting en kunnen we de afbeelding gebruiken om kliks en opens te tracken.
 
 Het dialoogvenster "Bestanden en afbeeldingen" kan ook worden gebruikt om
 bestanden te beheren. Dit is een nogal theoretische toepassing. HTML kent
-naast de &lt;img&tgt; tag ook allerlei andere tags opnemen die verwijzen
+naast de &lt;img&gt; tag ook allerlei andere tags opnemen die verwijzen
 naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;, 
 &lt;iframe&gt; en &lt;applet&gt;. Als je dit soort tags gebruikt (wat we *zeer
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
