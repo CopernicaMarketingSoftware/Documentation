@@ -11,36 +11,36 @@ Ook hier geldt weer, net als bij de andere *tags* die je in een template kunt
 plaatsen, dat het sterk is aan te raden om een attribuut *name* aan de tag
 toe te voegen. Hierdoor kunnen op documentniveau de afbeeldingen worden
 gekoppeld aan de juiste image tags, zelfs als je later de template wijzigt
-en de volgorde van de tags verandert.
-
-Als je *name* attributen gebruikt, moet elke afbeelding binnen de template een
-unieke naam hebben.
+en de volgorde van de tags verandert. Elke afbeelding binnen de template moet
+een unieke naam hebben.
 
 
 ## Formaat
 
 De afbeelding die op documentniveau door de gebruiker wordt ingevoerd, wordt
-normaal gesproken ongewijzigd overgenomen - zelfs als de afbeelding veel te
-groot is en daardoor de vormgeving uit zijn verband trekt. Maar dit kun je 
-voorkomen.
+normaal gesproken ongewijzigd overgenomen, zelfs als de afbeelding veel te
+groot is en daardoor de vormgeving uit zijn verband trekt. Maar er zijn allerlei 
+attributen om dit te voorkomen. Met deze attributen kun je het formaat van een 
+afbeelding afdwingen, of een minimum- en/of maximumgrootte opgeven. 
 
-Er zijn allerlei attributen om het formaat van een afbeelding af te dwingen,
-of om een minimum- en/of maximumgrootte op te geven. Als je er zeker van wilt 
-zijn dat een afbeelding altijd 100x100 pixels groot is, ook als een groter of 
-kleiner plaatje wordt geüpload, dan kun je dit doen door middel van de volgende
-code:
+Als je er bijvoorbeeld zeker van wilt zijn dat een afbeelding altijd 100x100 
+pixels groot is, ook als een groter of kleiner plaatje wordt geüpload, dan kun
+je dit doen door middel van de volgende code:
 
 `[image name="example" width="100" height="100"]`
 
-Je kunt ook een minumum- of maximumgrootte opgeven. Als de breedte van een
-afbeelding binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
+Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch 
+vergroot of verkleind zodat ze toch passen. Naast de precies afgedongen grootte
+die je met de *width* en *height* attributen instelt, kun je ook een minumum- 
+of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld
+binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
 
 `[image name="example" minwidth="100" maxwidth="150"]`
 
-Hetzelfde geldt voor de *minheight* en *maxheight* attributs. Afbeeldingen die
-niet voldoen aan de opgegeven limieten worden vergroot of verkleind, waarbij
-de verhoudig tussen breedte en hoogte zoveel mogelijk wordt behouden: een foto
-wordt dus niet uitgerekt.
+Er zijn ook *minheight* en *maxheight* attributen die hetzelfde doen voor de
+hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten
+worden vergroot of verkleind, waarbij de verhoudig tussen breedte en hoogte 
+zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
 
 
 ## Optionele afbeeldingen
