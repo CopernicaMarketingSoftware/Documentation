@@ -27,7 +27,7 @@ voor gebruikt, waarmee het makkelijk is om de ingevoerde tekst op te maken en
 van (eenvoudige) opmaak te voorzien. Deze editor is voor de meeste mensen die 
 op documentniveau werken, vaak marketeers, het prettigst in het gebruik.
 
-Indien gewenst kan de marketeer als hij een tekst bewerkt de handige editor 
+Indien gewenst kan de marketeer als hij of zij een tekst bewerkt de handige editor 
 uitschakelen en overstappen op een ruwe HTML editor. Hij of zij moet dan zelf 
 de HTML code invoeren die op de plek van de [text] tag wordt geplaatst.
 
