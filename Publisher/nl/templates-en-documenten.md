@@ -4,9 +4,9 @@ Om mailings te versturen maken we gebruik van templates en documenten. Maar
 let op: de oude Copernica Publisher omgeving maakt gebruik van een heel
 ander templatesysteem en mailingsysteem dan de nieuwe Copernica Marketing 
 Suite. En in tegenstelling tot veel andere onderdelen van de software kun je 
-ook niet zomaar een template van het ene systeem benaderen vanuit het systeem 
-van de andere. Als je een mailing gaat opmaken, moet je dus van te voren 
-bepalen welke van deze twee systemen je wilt gebruiken. 
+ook niet zomaar wisselen tussen het ene systeem en het andere. Als je een 
+mailing gaat opmaken, moet je dus van te voren bepalen welke van de twee 
+systemen je wilt gebruiken. 
 
 Het oude systeem van Copernica Publisher vereist dat je zelf HTML code invoert
 om een template op te maken, terwijl de nieuwe Marketing Suite een eenvoudige
