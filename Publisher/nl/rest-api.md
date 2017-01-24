@@ -28,13 +28,13 @@ tot de REST API gaat echter niet via Marketing Suite of Publisher, maar via
 aanmeldt, moet je deze applicatie een naam geven, hier kun je bijvoorbeeld het
 adres van je website voor gebruiken die de aanroepen gaat doen.
 
-Copernica maakt gebruik van het *OAuth* systeem voor API koppelingen. Dit is een
-krachtig gestandaardiseerd authenticatiesysteem waarin onderscheid wordt gemaakt
-tussen geregistreerde applicaties en koppelingen tussen applicaties en accounts. 
-Als je een applicatie bij Copernica aanmeldt, dan is die applicatie daarna
-nog niet in staat om calls naar Copernica te doen. De applicatie heeft weliswaar 
-toegang tot de REST API, maar nog niet tot specifieke accounts. Gelukkig kan je 
-echter ook deze accountkoppelingen via het Copernica dashboard aanmaken.
+Copernica maakt gebruik van het [*OAuth*](oauth) systeem voor API koppelingen. 
+Dit is een krachtig gestandaardiseerd authenticatiesysteem waarin onderscheid 
+wordt gemaakt tussen geregistreerde applicaties en koppelingen tussen applicaties 
+en accounts. Als je een applicatie bij Copernica aanmeldt, dan is die applicatie 
+daarna nog niet in staat om calls naar Copernica te doen. De applicatie heeft 
+weliswaar toegang tot de REST API, maar nog niet tot specifieke accounts. Gelukkig 
+kan je echter ook deze accountkoppelingen via het Copernica dashboard aanmaken.
 
 Nadat je een applicatie hebt aangemeld en daarna dus ook een koppeling tussen 
 de applicatie en een account hebt gemaakt, krijg je een API key. Dit is een 
