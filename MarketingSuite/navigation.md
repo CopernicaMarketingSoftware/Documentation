@@ -27,6 +27,12 @@
 <!--   * [Database selections](database-app/selections/introduction) -->
   * [Collections](database-app/database-collections)
 * [Statistics](statistics/introduction)
+  * [Report](statistics/introduction)
+  * [Feedback loops](feedback-loops)
+     * [Clicks](feedback-clicks)
+     * [Opens](feedback-opens)
+     * [Failures](feedback-failures)
+     * [Bounces](feedback-bounces)
 * [Magento Integration](magento-integration/introduction)
   * [Introduction](magento-integration/introduction)
   * [Integration](magento-integration/integration)

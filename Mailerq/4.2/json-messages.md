@@ -99,6 +99,10 @@ mail. The following properties are recognized by MailerQ:
         <td>tags</td>
         <td>the tags to add to the message</td>
     </tr>
+    <tr>
+        <td>headers</td>
+        <td>add or change the mime headers</td>
+    </tr>
 </table>
 
 
@@ -600,6 +604,41 @@ option.
 The above message will not be sent to "example.org", but to "mail.smtpeter.com"
 instead.
 
+<a name="headers"></a>
+## Changing the MIME headers
+
+MailerQ can be used to alter the MIME headers. To do so, you can
+add a "headers" option.
+
+
+````json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "From: ex@ex.com\r\nTo: info@ex.com\r\nDummy: xyz\r\nSubject: ...",
+    "headers": {
+        "remove" : ["dummy", "bcc"],
+        "prepend" : {
+            "cc" : "cc@ex.com",
+            "x-example" :  ["example 1", "example 2"]
+        },
+        "append"  : ...,
+        "replace" : {
+            "from" : "xe@xe.com"
+        }
+        "update"  : ...,
+    }
+}
+````
+
+The "remove" property can be a string or an array of the header fields that have
+to be removed from the mime. Using the "prepend" option one can prepend headers
+to the mime. Multiple headers with the same key can be prepended by supplying
+an array of values. The "append" (or "add") option holds the headers that have
+to appended (same syntax as prepend). The headers described in "replace" 
+will replace the first occurrence and remove the other headers with the same key.
+If no existing header is found, it will simply be appended. 
+The "update" option works similar, but it non-existing headers will not be appended.
 
 ## Setting custom message properties
 

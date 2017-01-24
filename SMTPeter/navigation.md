@@ -8,6 +8,7 @@
     * [SPF validation](spf-validation)
     * [DKIM signing](dkim-signing)
     * [DMARC deployment](dmarc-deployment)
+    * [Web version](webversion)
     * [Personalization](personalization)
     * [Templates](templates)
     * [Email archiving](archiving)

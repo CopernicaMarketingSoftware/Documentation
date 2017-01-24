@@ -88,6 +88,20 @@ call). Doing this gives the compiler much more freedom to inline functions
 (which it cannot do if a function is to be made available externally) and helps 
 keep the DSO small.
 
+## A real world example
+
+For our [SMTPeter cloud service](https://www.smtpeter.com) we use MailerQ
+for handling incoming messages via SMTP. For every incoming connection we check
+the SMTP login credentials, and compare them with the login data that we
+have on file. Only recognized users are given access.
+
+We use a MailerQ login to handle these incoming login requests. A simplified
+version of this plugin is available as example to see how such a plugin can
+be built.
+
+[Download the example plugin](https://www.mailerq.com/mailerq-example-plugin.tar.gz)
+
+
 ## Do you find the API too limited?
 
 If you have the idea that vital functionality is missing in the plugin API,

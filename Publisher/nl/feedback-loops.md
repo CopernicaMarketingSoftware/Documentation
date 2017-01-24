@@ -2,13 +2,12 @@
 
 Via het dashboard van de Marketing Suite kun je *feedback loops* configureren.
 Hiermee kun je instellen dat Copernica je real time notificaties via HTTP POST
-stuurt als er een event als een klik, open of error plaatsvindt. 
-
-Je kunt dit bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie 
-wilt bijwerken naar aanleiding van dergelijke events. Op je eigen server
-plaats je hiervoor een script dat de aanroepen van Copernica opvangt, en in het
-dashboard van de Marketing Suite stel je in wanneer het script moet worden
-aangeroepen. De rest gaat vanzelf.
+stuurt als er een event als een klik, open of error plaatsvindt. Je kunt dit 
+bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie wilt bijwerken
+naar aanleiding van dergelijke events. Op je eigen server plaats je hiervoor 
+een script dat de aanroepen van Copernica opvangt, en in het dashboard van de 
+Marketing Suite stel je in wanneer het script moet worden aangeroepen. De rest
+gaat vanzelf.
 
 Het aardige van de feedback loops is dat de data die Copernica naar jou
 stuurt veel rijker is dan de data die in eerste instantie bij Copernica 
