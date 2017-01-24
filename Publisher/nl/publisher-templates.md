@@ -71,6 +71,47 @@ template op te nemen.
 * [[loop] tags](loop-tag)
 
 
+## Let op met blokhaken!
+
+Binnen een template hebben blokhaken ('[' en ']') een speciale betekenis. Deze
+tekens worden gebruikt om de hierboven beschreven contentblokken mee te markeren, 
+en je kunt ze gebruiken voor [if] statements en templatevariabelen (een voorbeeld
+kun je zien in [het artikel over [loop] tags](loop-tag)). Doordat blokhaken een 
+speciale betekenis hebben, moet je opletten als je ergens "gewone" blokhaken plaatst, 
+zoals in de stylesheet bovenaan een template. Deze blokhaken worden namelijk door
+Copernica herkend als het begin van een speciaal onderdeel van de template en 
+vaak resulteert dit in een fout. Er zijn twee trucs om dit te voorkomen: door
+gebruik te maken van [ldelim] en [rdelim], of door [literal] en [/literal] te
+gebruiken.
+
+Als je een gewone blokhaak in een template wilt zetten kun je gebruik maken van 
+[ldelim] en [rdelim]. De [ldelim] en [rdelim] tags worden door Copernica 
+namelijk automatisch omgezet naar de echte '[' en ']' tekens. Dus als je ergens 
+een blokhaak wilt zetten, maar niet wilt dat Copernica deze blokhaak als 
+speciaal teken herkent, dan vervang je de blokhaken gewoon door 
+[ldelim] en [rdelim]:
+
+    <style type="text/css">
+        div[ldelim]class=x[rdelim] {
+            font-weight: bold;
+        }
+    </style>
+
+Als je een heel groot stuk CSS code hebt dat vol staat met blokhaken, en waar
+bovendien nergens gebruik wordt gemaakt van contentblokken (zodat alle blokhaken
+in dat stuk geen speciale templatebetekenis hebben), dan kun je ook [literal]
+en [/literal] gebruiken. Met deze tags kun je een deel van je broncode markeren
+waarbinnen alle blokhaken geen speciale betekenis hebben.
+
+    <style type="text/css">
+        [literal]
+            div[class=x] {
+                font-weight: bold;
+            }
+        [/literal]
+    </style>
+
+
 ## Vaste afbeeldingen
 
 Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook 
