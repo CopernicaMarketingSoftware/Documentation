@@ -67,7 +67,7 @@ kunnen maken voor jouw applicatie. De link moet verwijzen naar de volgende URL:
 
 `https://www.copernica.com/nl/authorize?client_id=XXX&redirect_uri=XXX&state=XXX&response_type=code`
 
-In de URL staan een aantal variabelen op de waarde XXX. Deze variabelen moet je
+In de URL staat een aantal variabelen op de waarde XXX. Deze variabelen moet je
 invullen met waardes die voor jou relevant zijn:
 
 * **client_id**: de waarde van de *client_key* van je applicatie
@@ -83,7 +83,7 @@ dan wordt sowieso geen toegang verleend.
 ## De terugkeerpagina
 
 Ook moet je een terugkeerpagina maken. Nadat iemand op de link op je website heeft
-geklikt en op de Copernica.com jouw applicatie toegang heeft gegeven tot zijn 
+geklikt en op copernica.com jouw applicatie toegang heeft gegeven tot zijn 
 accountgegevens, keert hij terug naar deze pagina. Copernica voegt twee variabelen
 toe aan de URL van de terugkeerpagina: de variabelen *state* en de variabele *code*.
 
