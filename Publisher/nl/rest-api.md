@@ -1,5 +1,61 @@
-# De Copernica REST API
-Met de Copernica REST API kun je data in je Copernica-account ophalen, creëren, updaten of verwijderen zonder daarvoor gebruik te maken van de Copernica applicaties REST staat voor Representational State Transfer en het belangrijkste kenmerk ervan is dat het HTTP requests gebruikt als communicatiemiddel tussen Copernica de API en jouw device. HTTP is het protocol voor communicatie tussen webservers en clients (browsers etc.). Copernica's API maakt alleen gebruik van HTTPS. Dit houdt in dat er gebruik wordt gemaakt van een vergrendelde HTTP-connectie zodat je zeker weet dat er niet met je data geknoeid wordt tijdens de overdracht.
+# De REST API
+
+Met de REST API kun je automatische koppelingen met Copernica maken. Je kunt
+bijvoorbeeld je website of app zo programmeren dat hij met behulp van de REST
+API gegevens in je Copernica-account ophaalt, creëert, updatet of verwijdert.
+Dit gaat automatisch, dus buiten de *user interface* om.
+
+De REST API werkt heel eenvoudig. In technisch opzicht komt het er simpelweg
+op neer dat jouw website of app HTTP requests op de servers van Copernica 
+afvuurt: HTTP GET requests om data op te halen en HTTP POST en HTTP PUT requests 
+om data te bewerken. De requests worden door onze API servers verwerkt, en de 
+opgehaalde of bewerkte data wordt in een formaat dat makkelijk door computers 
+is te verwerken (JSON) teruggestuurd.
+
+
+## Aanmelden voor de API
+
+Om te voorkomen dat onbevoegden toegang hebben tot de REST API, moet je eerst
+jouw website of app aanmelden bij Copernica. Pas nadat je de applicatie hebt
+aangemeld en een geldige API key hebt, kun je calls naar de REST API doen.
+
+Het aanmelden van een applicatie kun je doen via het dashboard van de Copernica
+website. Dit is wellicht wat anders dan je in eerste instantie zou verwachten,
+omdat je meestal gebruik maakt van de Marketing Suite of de Publisher om 
+instellingen te wijzigen. Het aanmelden van een applicatie om toegang te krijgen
+tot de REST API gaat echter niet via Marketing Suite of Publisher, maar via 
+[het dashboard](/nl/applications) op www.copernica.com. Als je een applicatie
+aanmeldt, moet je deze applicatie een naam geven, hier kun je bijvoorbeeld het
+adres van je website voor gebruiken die de aanroepen gaat doen.
+
+Copernica maakt gebruik van het *OAuth* systeem voor API koppelingen. Dit is een
+krachtig gestandaardiseerd authenticatiesysteem waarin onderscheid wordt gemaakt
+tussen geregistreerde applicaties en koppelingen tussen applicaties en accounts. 
+Als je een applicatie bij Copernica aanmeldt, dan is die applicatie daarna
+nog niet in staat om calls naar Copernica te doen. De applicatie heeft weliswaar 
+toegang tot de REST API, maar nog niet tot specifieke accounts. Gelukkig kan je 
+echter ook deze accountkoppelingen via het Copernica dashboard aanmaken.
+
+Nadat je een koppeling tussen de applicatie en een account hebt gemaakt, krijg
+je een API key. Dit is een lange string bestaande uit cijfers en letters die je
+met elke API call moet meesturen. Je kunt testen of alles goed is gegaan door
+in je browser een API adres in te voeren. Als je een JSON bestand terugkrijgt,
+weet je dat het maken van de API koppeling is gelukt. Gebruik bijvoorbeeld het
+volgende adres:
+
+`https://api.copernica.com/databases?access_token=jouwapikey`
+
+Natuurlijk moet je de tekst "jouwapikey" in bovenstaand voorbeeld vervangen
+door de string die je op het dashboard ziet. Als het goed is, krijg je JSON
+bestand terug terug met daarin alle databases in het account. Voor mensen is
+zo'n lijst niet zo makkelijk in het gebruik, maar je zult begrijpen dat 
+computerprogramma's hier goed mee uit de voeten kunnen.
+
+
+## Verschillende 
+
+
+ zonder daarvoor gebruik te maken van de Copernica applicaties REST staat voor Representational State Transfer en het belangrijkste kenmerk ervan is dat het HTTP requests gebruikt als communicatiemiddel tussen Copernica de API en jouw device. HTTP is het protocol voor communicatie tussen webservers en clients (browsers etc.). Copernica's API maakt alleen gebruik van HTTPS. Dit houdt in dat er gebruik wordt gemaakt van een vergrendelde HTTP-connectie zodat je zeker weet dat er niet met je data geknoeid wordt tijdens de overdracht.
 De REST-service is beschikbaar op [https://api.copernica.com](https://api.copernica.com).
 
 Je kunt de REST API bijvoorbeeld gebruiken om profielinformatie op te halen. Als je alle informatie van een bepaald profiel met ID 1234 wil ophalen, ziet je request er als volgt uit:
