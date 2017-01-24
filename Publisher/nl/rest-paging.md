@@ -61,8 +61,8 @@ te worden geretourneerd. Dit maakt de API call iets sneller.
 
 ## Voorbeeld in PHP
 
-Onderstaand voorbeeld demonstreert hoe je vanuit de lijst van databases allen
-de tweede vijf databases kunt opvragen.
+Onderstaand voorbeeld demonstreert hoe je van de complete lijst van databases 
+alleen de tweede vijf items kunt opvragen.
 
     // change this into your access token
     $access_token = "private-access-token";
