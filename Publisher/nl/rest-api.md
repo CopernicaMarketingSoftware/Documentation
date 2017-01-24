@@ -36,71 +36,95 @@ nog niet in staat om calls naar Copernica te doen. De applicatie heeft weliswaar
 toegang tot de REST API, maar nog niet tot specifieke accounts. Gelukkig kan je 
 echter ook deze accountkoppelingen via het Copernica dashboard aanmaken.
 
-Nadat je een koppeling tussen de applicatie en een account hebt gemaakt, krijg
-je een API key. Dit is een lange string bestaande uit cijfers en letters die je
-met elke API call moet meesturen. Je kunt testen of alles goed is gegaan door
-in je browser een API adres in te voeren. Als je een JSON bestand terugkrijgt,
-weet je dat het maken van de API koppeling is gelukt. Gebruik bijvoorbeeld het
-volgende adres:
+Nadat je een applicatie hebt aangemeld en daarna dus ook een koppeling tussen 
+de applicatie en een account hebt gemaakt, krijg je een API key. Dit is een 
+lange string bestaande uit cijfers en letters die je met elke API call moet 
+meesturen. Je kunt testen of alles goed is gegaan door in je browser een API 
+adres in te voeren. Als je een JSON bestand terugkrijgt, weet je dat het maken 
+van de API koppeling is gelukt. Gebruik bijvoorbeeld het volgende adres:
 
 `https://api.copernica.com/databases?access_token=jouwapikey`
 
 Natuurlijk moet je de tekst "jouwapikey" in bovenstaand voorbeeld vervangen
-door de string die je op het dashboard ziet. Als het goed is, krijg je JSON
-bestand terug terug met daarin alle databases in het account. Voor mensen is
+door de string die je op het dashboard ziet. Als het goed is, krijg je een JSON
+bestand terug met daarin alle databases van het account. Voor mensen is
 zo'n lijst niet zo makkelijk in het gebruik, maar je zult begrijpen dat 
 computerprogramma's hier goed mee uit de voeten kunnen.
 
 
-## Verschillende 
-
-
- zonder daarvoor gebruik te maken van de Copernica applicaties REST staat voor Representational State Transfer en het belangrijkste kenmerk ervan is dat het HTTP requests gebruikt als communicatiemiddel tussen Copernica de API en jouw device. HTTP is het protocol voor communicatie tussen webservers en clients (browsers etc.). Copernica's API maakt alleen gebruik van HTTPS. Dit houdt in dat er gebruik wordt gemaakt van een vergrendelde HTTP-connectie zodat je zeker weet dat er niet met je data geknoeid wordt tijdens de overdracht.
-De REST-service is beschikbaar op [https://api.copernica.com](https://api.copernica.com).
-
-Je kunt de REST API bijvoorbeeld gebruiken om profielinformatie op te halen. Als je alle informatie van een bepaald profiel met ID 1234 wil ophalen, ziet je request er als volgt uit:
-
-`https://api.copernica.com/profile/1234?access_token=abc123`
-
 ## HTTP requests
-Zoals gebruikelijk bij REST API's, maakt ook Copernica's API gebruik van HTTP requests om data op te halen of te bewerken. We gebruiken vier soorten requests: GET, POST, PUT en DELETE. GET geeft de server de opdracht om de data die jij opvraagt door te sturen. Met POST kun je data toevoegen, zoals bijvoorbeeld profielen of databases. PUT is het commando om bestaande data te updaten. DELETE wordt, zoals je misschien al geraden hebt, gebruikt om data te verwijderen. In de [lijst met resources]() kun je vinden welke soort requests iedere methode ondersteunt.
 
-## Beginnen met de REST API
-Voordat je kunt beginnen met API calls doen, moet je eerst toegang krijgen tot de API. Om die te verkrijgen, is het nodig dat je jouw applicatie registreert. Anders dan je misschien zou verwachten, gebeurt dit niet via het dashboard van de Publisher of MarketingSuite, maar via de Copernica-website. Je vindt de module onder ['applicaties'](https://www.copernica.com/nl/applications/create), waar je jouw applicatie toe te voegen. Daarna klik je op je applicatie in de [lijst](https://www.copernica.com/nl/applications) onderaan de pagina en voeg je jouw account toe door op 'account toevoegen' te klikken en je account te selecteren uit de lijst, waarna je jouw accountnaam en access key onderaan de pagina zult zien staan.
-Wanneer je je access key hebt, kun je beginnen met het doen van calls.
+De REST API maakt gebruik van het HTTP protocol voor het uitwisselen van data.
+Jouw website of applicatie kan simpelweg een HTTPS request naar onze server
+sturen om gegevens op te halen of bij te werken. Copernica ondersteunt vier
+verschillende soorten HTTP requests:
 
-## API calls doen
-Wanneer je applicatie geregistreerd is en je jouw access token hebt verkregen, kun je beginnen met het maken van calls.
+* HTTP GET voor het ophalen van data
+* HTTP POST voor het toevoegen van nieuwe data
+* HTTP PUT voor het bijwerken van bestaande data
+* HTTP DELETE om data te verwijderen
 
-### Onderdelen van een call
-Een HTTP call bestaat uit de volgende onderdelen:
+Let op dit onderscheid. Soms kun je naar een zelfde URL meerdere soorten HTTP
+requests sturen. Het maakt dan nogal uit of je een HTTP GET request stuurt om
+alleen maar data op te halen, of juist een HTTP POST om data toe te voegen.
 
-**De URI**: een verwijzing naar de bron waar je de data vandaan wil halen met daarin tevens de query, de opdracht die je de server geeft. In de Copernica REST API heeft deze de volgende vorm:
-`https://api.copernica.com/$method/$ID?access_token=abc123`.
+Het verschil tussen HTTP POST en HTTP PUT is in de praktijk niet zo scherp
+als dat we het hier stellen. Onze servers behandelen HTTP POST en HTTP PUT 
+requests op precies dezelfde wijze, en het maakt dus in werkelijk niet uit 
+welke van de twee je gebruikt om data toe te voegen of bij te werken. Maar om
+toekomstbestendig te zijn, raden we aan om toch een scherp onderscheid tussen
+die twee methodes aan te houden.
 
-Hierbij moeten $method en $ID natuurlijk vervangen worden door de method en ID die van toepassing zijn. Achter access_token komt jouw eigen access token te staan.
+Bij elk request moet je altijd een access_token variabele meesturen. Je kunt
+deze variabele toevoegen aan de URL als gewone get parameter.
 
-**Header fields**: deze geven informatie over de request weer, zoals bijvoorbeeld het type content van de body, de datum, de server, et cetera.
 
-**De body**: de body is optioneel voor een HTTP-bericht. Het bevat alle data die meegestuurd wordt met het bericht. Wanneer je een GET of een DELETE request stuurt, hoef je niets in de body te zetten. Doe je echter een POST of PUT, dan zet je hierin welke data je wil toevoegen of veranderen aan je database. In de body staat ook de data die je terugkrijgt van de API. Dit zijn de data die je opvraagt, rapportages van toegevoegde of gewijzigde data en success en error messages.
+## Data naar Copernica sturen
 
-Het is niet gebruikelijk om je requests helemaal zelf te schrijven. Het is makkelijker en sneller om dit door middel van een library te doen, zoals Requests (Python) of cURL (andere talen). [Hier](example-scripts-rest) vind je van iedere soort call een voorbeeldscript in PHP met cURL. 
+Als je HTTP POST of HTTP PUT requests doet om data naar Copernica te sturen,
+dan kun je de data op verschillende manieren insturen. De krachtigste manier 
+is om JSON te gebruiken, omdat je hiermee complexe datastructuren naar 
+Copernica kunt zenden. We ondersteunen echter ook de normale manier om 
+variabelen met HTTP POST requests mee te sturen.
 
-### Errors en succesberichten
-Wanneer je request niet lukt, krijg je vanzelfsprekend een error message terug in de vorm van een HTTP 400 (Bad request) header. Een succesvolle request stuurt ook een header terug, die verschilt per soort call. Bij een GET request krijg je geen headerinformatie, omdat je de data zelf terugkrijgt. Succesvolle POST en PUT requests geven een link naar de betreffende data in de vorm van een `X-location: https://api.copernica.com/profile/$profileID` wanneer je een profiel wijzigt of toevoegt.
-Een succesvolle DELETE request bevat `X-deleted: profile $profileID`.
+In de header van je request moet je een "content-type" header meesturen. Als
+je deze header op "application/json" hebt staan, dan kun je de data als JSON 
+insturen.
 
-Het grootste deel van de data wordt teruggegeven in een key:value paar. De volgende syntax wordt gebruikt om te beschrijven welke vorm de teruggestuurde data heeft:
+    POST /database/1234/profiles HTTP/1.1
+    Host: api.copernica.com
+    Content-Type: application/json
+    
+    {"email":"info@example.com"}
 
-`"key" : "value"` de key is een string, de value ook.
+Bovenstaand HTTP POST request kun je sturen naar Copernica om een profiel
+toe te voegen aan de database met ID 1234. Je had echter ook een "traditioneel"
+HTTP POST request kunnen sturen:
 
-`"key" : 1` de key is een string, de value een integer.
+    POST /database/1234/profiles HTTP/1.1
+    Host: api.copernica.com
+    Content-Type: application/x-www-form-urlencoded
+    
+    email=info@example.com
 
-`"key" : [...]` de key is een string, de value een indexed array.
+Voor HTTP GET en HTTP DELETE requests geldt dit onderscheid niet. Met zulke 
+requests kan geen body data worden meegestuurd en speelt dit dus ook niet.
 
-`"key" : {...}` de key is een string, de value een associative array.
 
-**Let op**: de keys en values in het bericht zijn hoofdlettergevoelig. {"Name": "Jeroen"} is dus niet hetzelfde als {"name": "jeroen"}.
+## Het antwoord verwerken
 
-## Copernica integreren met jouw applicatie
-Naast authorisatie via een access code, kun je Copernica ook integreren in je eigen applicatie door middel van een koppeling met OAuth 2.0. Hiermee kun je gebruikers van jouw applicatie toestemming laten geven hun Copernica-gegevens te delen met jouw applicatie, zodat ze hun data niet nogmaals handmatig hoeven in te vullen. Meer informatie over deze integratie vind je [hier]().
+Het antwoord dat Copernica terugstuurt is afhankelijk van de request methode.
+Op HTTP GET requests krijg je een "200 OK" bericht terug als de opgevraagde 
+data beschikbaar is, met de data als JSON string in de body van het bericht.
+
+De andere type requests (POST, PUT en DELETE) sturen geen data terug, maar 
+speciale HTTP headers om het resultaat van de actie te rapporteren. In de 
+resultaatheader van succesvolle POST en PUT requests staat een link naar de 
+aangepaste/toegevoegde data. Hiervoor gebruiken we een *X-location* header,
+bijvoorbeeld "X-location: https://api.copernica.com/profile/$profileID" als 
+je een profiel wijzigt of toevoegt. Een succesvolle DELETE request bevat een
+*X-deleted* header: "X-deleted: profile $profileID".
+
+Als er een fout optreedt, ontvang je een "400 Bad request" returncode. In de
+body staat vaak een JSON bericht met een foutmelding.
+
