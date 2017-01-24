@@ -2,8 +2,8 @@
 
 In een template kun je met behulp van [image] tags opgeven waar afbeeldingen 
 mogen worden geplaatst. Als de template wordt gebruikt voor het samenstellen 
-van een document, kan op elke plek waar je een [image] tag hebt gezet door de
-gebruiker een afbeelding worden ingevoerd.
+van een document, kan in het document op elke plek waar je een [image] tag 
+hebt gezet door de gebruiker een afbeelding worden ingevoerd.
 
 ![](../images/imageblocktag.png)
 
@@ -23,14 +23,14 @@ groot is en daardoor de vormgeving uit zijn verband trekt. Maar er zijn allerlei
 attributen om dit te voorkomen. Met deze attributen kun je het formaat van een 
 afbeelding afdwingen, of een minimum- en/of maximumgrootte opgeven. 
 
-Als je er bijvoorbeeld zeker van wilt zijn dat een afbeelding altijd 100x100 
+Als je er zeker van wilt zijn dat een afbeelding altijd 100x100 
 pixels groot is, ook als een groter of kleiner plaatje wordt geüpload, dan kun
 je dit doen door middel van de volgende code:
 
 `[image name="example" width="100" height="100"]`
 
 Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch 
-vergroot of verkleind zodat ze toch passen. Naast de precies afgedongen grootte
+vergroot of verkleind. Naast deze precies afgedongen grootte
 die je met de *width* en *height* attributen instelt, kun je ook een minumum- 
 of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld
 binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
@@ -67,8 +67,8 @@ een &lt;img&gt; tag geplaatst met deze afbeelding. Voor en na deze &lt;img&gt;
 tag wordt de HTML code geplaatst die je in de "begin" en "end" attributen
 hebt gezet:
 
-`[image name="example" begin="&lt;div class=x&gt;" end="&lt;/div&gt;"]`
+`[image name="example" begin="<div class=x>" end="</div>"]`
 
 Met bovenstaande code zorg je er voor dat er altijd een &lt;div&gt; element 
-rond de afbeelding wordt gezet. 
+rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 

@@ -4,7 +4,9 @@ Vermoedelijk de ingewikkeldste tag die je in templates kunt gebruiken, is de
 [loop] tag. Maar hij is wel erg handig! Je kunt met de [loop] tags code 
 markeren die op documentniveau herhaald kan worden. Hierdoor kun je bijvoorbeeld
 templates maken die net zo makkelijk kunnen worden gebruikt voor een nieuwsbrief 
-met één artikel, als voor een nieuwsbrief met tien artikelen.
+met één artikel, als voor een nieuwsbrief met tien artikelen. Je kunt zelfs 
+geneste loops maken, loops binnen loops dus, waardoor je een heel krachtig 
+templatesysteem krijgt. 
 
     [loop name="example"]
         Deel dat je wilt herhalen
@@ -26,23 +28,24 @@ tekst en afbeeldingen op te nemen:
         </div>
     [/loop]
     
-Je kunt zelfs geneste loops maken, loops binnen loops dus, waardoor je een 
-heel krachtig templatesysteem krijgt. Op documentniveau kan een gebruiker zelf
-kiezen hoeveel iteraties (herhalingen) van de loop er in de mailing moeten 
-worden geplaatst. Nul is ook een geldige waarde, waardoor je loop blocks ook
-kunt gebruiken voor conditionele content: als de gebruiker kiest voor nul
-iteraties verschijnt de HTML code niet in de mailing, en bij een waarde van
-1 of hoger verschijnt de code wel in de mailing (en misschien zelfs meerdere keren).
+Op documentniveau kan een gebruiker zelf kiezen hoeveel iteraties (herhalingen) 
+van de loop er in de mailing moeten worden geplaatst. Nul is ook een geldige 
+waarde, waardoor je loop blocks ook kunt gebruiken voor conditionele content: 
+als de gebruiker kiest voor nul iteraties verschijnt de HTML code niet in de 
+mailing, en bij een waarde van 1 of hoger verschijnt de code wel in de mailing 
+(en misschien zelfs meerdere keren).
 
 Ook voor loopblokken geldt, net als bij alle andere soorten blokken, dat het
-is aan te raden om elke blok een eigen unieke naam mee te geven.
+is aan te raden om elke blok een eigen unieke naam mee te geven. Bij loopblokken
+heeft de naam zelfs een extra functie, omdat je de naam kunt gebruiken voor
+scripting en *if* statements (hierover later meer).
 
 
 ## Minimum en maximum waardes
 
 De gebruiker is vrij om zelf te bepalen hoeveel iteraties hij op documentniveau
 wilt gebruiken. Nul is ook een geldige waarde is. Als je het aantal iteraties
-wilt beperken, of als je juis een minimum aantal iteraties wilt instellen, kun 
+wilt beperken, of als je juist een minimum aantal iteraties wilt instellen, kun 
 je hiervoor de *min* en *max* attributen gebruiken.
 
     [loop name="example" min="1" max="5"]
@@ -75,7 +78,7 @@ tags worden alleen gebruikt als het aantal iteraties groter is.
 
 Als je gebruik maakt van loop bloks, kun je ook templatevariabelen gebruiken.
 Templatevariabelen lijken erg op personalisatievariabelen, maar ze bevatten
-geen informatie over de geadresseerde, maar over de staat van de loopblokken.
+geen informatie over de geadresseerde, maar over de staat van de loop.
 Er zijn verschillende variabelen die je kunt gebruiken:
 
 * [$loop.naamvanloop.index] - het totaal aantal iteraties
@@ -94,9 +97,9 @@ Deze variabalen kun je gebruiken om de opmaak van de loops wat te verfraaien:
         [/if]
     [/loop]
 
-Hierboven zie je een loop van paragrafen, waarbij op documentniveau kan worden 
+Hierboven zie je een loop van paragrafen waarbij op documentniveau kan worden 
 ingesteld hoeveel paragrafen er in de mailing moeten worden opgenomen. Tussen
-elke twee paragrafen staan een horizontale lijn (dit is de &lt;hr&gt; tag). Het
+elke twee paragrafen staan een horizontale lijn (dit is de &lt;hr/&gt; tag). Het
 if-statement zorgt er voor dat de scheidingslijn alleen tussen de paragrafen
 komt te staan, en niet ook onder de laatste paragraaf.
 
@@ -109,9 +112,9 @@ moet dan de hele nesting van loops in de naam van de variabele zetten:
 Onder de motorkap gebruikt Copernica de Smarty engine van PHP voor het inlezen
 van templates. Alleen gebruiken we niet de standaard accolades om variabelen
 en functies mee aan te geven, maar vierkante haakjes. De [image], [text] en [loop]
-blokken zijn dus gewone Smarty functies, en de [$loop.naamvanloop.*] variabelen
-zijn gewone Smarty variabelen. Je kunt daarom binnen een template alle trucjes 
-en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt van vierkante
-haakjes in plaats van accolades. Meer informatie over Smarty kun je vinden op
-[www.smarty.net](http://www.smarty.net).
+blokken zijn dus eigenlijk gewone Smarty functies, en de [$loop.naamvanloop.*] 
+variabelen zijn gewone Smarty variabelen. Je kunt daarom binnen een template 
+alle trucjes en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt 
+van vierkante haakjes in plaats van accolades. Meer informatie over Smarty kun 
+je vinden op [www.smarty.net](http://www.smarty.net).
 
