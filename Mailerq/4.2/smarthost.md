@@ -48,7 +48,7 @@ configuration file.
     "recipient": "info@example.org",
     "mime": "...",
     "smarthost": {
-        "name": "hostname-smarthost",
+        "hostname": "hostname-smarthost",
         "port": "25",
         "username": "example-user",
         "password": "example-password"
@@ -63,13 +63,13 @@ The following header variables have the same meaning as the JSON settings
 mentioned above:
 
 ```
-x-mq-smarthost-name:    <hostname-smarthost>
-x-mq-smarthost-port:    <25>
+x-mq-smarthost-hostname: <hostname-smarthost>
+x-mq-smarthost-port:     <25>
 x-mq-smarthost-username: <example-user>
 x-mq-smarthost-password: <example-password>
 ```
 
-Only the "name" property is mandatory. The port defaults to 25, and not setting 
+Only the "hostname" property is mandatory. The port defaults to 25, and not setting 
 the username or password means MailerQ will not try to authenticate to the smarthost. 
 
 ## Using smarthost for debugging
