@@ -589,7 +589,7 @@ option.
     "recipient": "info@example.org",
     "mime": "...",
     "smarthost": {
-        "name": "mail.smtpeter.com",
+        "hostname": "mail.smtpeter.com",
         "port": 25,
         "username": "my-username",
         "password": "my-password"
