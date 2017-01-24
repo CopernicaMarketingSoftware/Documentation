@@ -6,8 +6,8 @@ API gegevens in je Copernica-account ophaalt, creëert, updatet of verwijdert.
 Dit gaat automatisch, dus buiten de *user interface* om.
 
 De REST API werkt heel eenvoudig. In technisch opzicht komt het er simpelweg
-op neer dat jouw website of app HTTP requests op de servers van Copernica 
-afvuurt: HTTP GET requests om data op te halen en HTTP POST en HTTP PUT requests 
+op neer dat jouw website of app HTTP requests naar de servers van Copernica 
+stuurt: HTTP GET requests om data op te halen en HTTP POST en HTTP PUT requests 
 om data te bewerken. De requests worden door onze API servers verwerkt, en de 
 opgehaalde of bewerkte data wordt in een formaat dat makkelijk door computers 
 is te verwerken (JSON) teruggestuurd.
@@ -57,21 +57,21 @@ computerprogramma's hier goed mee uit de voeten kunnen.
 De REST API maakt gebruik van het HTTP protocol voor het uitwisselen van data.
 Jouw website of applicatie kan simpelweg een HTTPS request naar onze server
 sturen om gegevens op te halen of bij te werken. Copernica ondersteunt vier
-verschillende soorten HTTP requests:
+verschillende soorten requests:
 
 * HTTP GET voor het ophalen van data
 * HTTP POST voor het toevoegen van nieuwe data
 * HTTP PUT voor het bijwerken van bestaande data
 * HTTP DELETE om data te verwijderen
 
-Let op dit onderscheid. Soms kun je naar een zelfde URL meerdere soorten HTTP
+Let op dit onderscheid. Soms kun je naar een zelfde URL meerdere soorten 
 requests sturen. Het maakt dan nogal uit of je een HTTP GET request stuurt om
 alleen maar data op te halen, of juist een HTTP POST om data toe te voegen.
 
 Het verschil tussen HTTP POST en HTTP PUT is in de praktijk niet zo scherp
-als dat we het hier stellen. Onze servers behandelen HTTP POST en HTTP PUT 
-requests op precies dezelfde wijze, en het maakt dus in werkelijk niet uit 
-welke van de twee je gebruikt om data toe te voegen of bij te werken. Maar om
+als dat we het hier stellen. Onze servers behandelen deze twee requests op 
+precies dezelfde wijze, en het maakt dus in werkelijk niet uit welke van de 
+twee je gebruikt om data toe te voegen of bij te werken. Maar om
 toekomstbestendig te zijn, raden we aan om toch een scherp onderscheid tussen
 die twee methodes aan te houden.
 
@@ -81,7 +81,7 @@ deze variabele toevoegen aan de URL als gewone get parameter.
 
 ## Data naar Copernica sturen
 
-Als je HTTP POST of HTTP PUT requests doet om data naar Copernica te sturen,
+Als je HTTP POST of HTTP PUT requests gebruikt om data naar Copernica te sturen,
 dan kun je de data op verschillende manieren insturen. De krachtigste manier 
 is om JSON te gebruiken, omdat je hiermee complexe datastructuren naar 
 Copernica kunt zenden. We ondersteunen echter ook de normale manier om 
@@ -117,8 +117,9 @@ Het antwoord dat Copernica terugstuurt is afhankelijk van de request methode.
 Op HTTP GET requests krijg je een "200 OK" bericht terug als de opgevraagde 
 data beschikbaar is, met de data als JSON string in de body van het bericht.
 
-De andere type requests (POST, PUT en DELETE) sturen geen data terug, maar 
-speciale HTTP headers om het resultaat van de actie te rapporteren. In de 
+De andere type requests (POST, PUT en DELETE) gebruiken ook de "200 OK"
+code als het request is gelukt, maar ze sturen geen data terug. Door middel van 
+speciale HTTP headers wordt het resultaat van de actie gerapporteerd. In de 
 resultaatheader van succesvolle POST en PUT requests staat een link naar de 
 aangepaste/toegevoegde data. Hiervoor gebruiken we een *X-location* header,
 bijvoorbeeld "X-location: https://api.copernica.com/profile/$profileID" als 
