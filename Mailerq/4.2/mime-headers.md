@@ -62,7 +62,7 @@ on the handling of your message.
         <td>alternative queue for the retries</td>
     </tr>
     <tr>
-        <td>x-mq-smarthost-name</td>
+        <td>x-mq-smarthost-hostname</td>
         <td>hostname of smarthost to send email to</td>
     </tr>
     <tr>
@@ -281,7 +281,7 @@ Instead of having MailerQ sending messages directly to the final recipient, it c
 The default credentials can be set in the config file, or they can be provided the following properties:
 
 ````
-x-mq-smarthost-name
+x-mq-smarthost-hostname
 x-mq-smarthost-port
 x-mq-smarthost-username
 x-mq-smarthost-password
