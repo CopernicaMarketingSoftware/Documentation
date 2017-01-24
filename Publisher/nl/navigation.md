@@ -22,7 +22,7 @@
 * [Templates en documenten](templates-en-documenten)
     * [Publisher templates](publisher-templates)
 * [Automatische koppelingen](automatische-koppelingen)
-    * [REST API](copernica-rest-api)
+    * [REST API](rest-api)
     * [Feedback loops](feedback-loops)
 * [Oude documentatie](oude-documentatie)
     * [Databasebeheer](database-management)
