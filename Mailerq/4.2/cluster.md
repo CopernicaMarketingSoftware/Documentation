@@ -6,8 +6,8 @@ and share information and hand over undeliverable messages.
 Setting up a cluster has many advantages:
 
 - the management console of each MailerQ instance has links to the other instances
-- cached data gets reset by all instances in the entire cluster
-- messages are handed over between instances
+- when one instance modifies settings, it automatically notifies the entire cluster
+- messages published to a wrong outbox queue are handed over to other instances
 
 Every MailerQ server in the cluster shares its configuration with the other
 instances. This allows the management consoles to link to each other, 
@@ -16,13 +16,15 @@ when settings change. For example, when you add a DKIM key via the management
 console of your first MailerQ server, the other MailerQ servers also have
 direct access to this new DKIM key.
 
-Another advantage of setting up a cluster is that email messages that can not
-be sent by one MailerQ instance are automatically handed over to other servers.
-If one of the MailerQ instances consumes a message from the outbox, but sees 
-that this message can only be sent from a MailerQ instance running on a 
-different server (because only that other server is configured with the 
-appropriate IP address), it will automatically forward the message to the outbox 
-queue of that MailerQ instance.
+Another advantage of setting up a cluster is that email messages automatically
+end up in the right outbox queue. In a normal cluster setup, you run multiple
+servers and on each server you run a single MailerQ instance. Each instance 
+reads from its own outbox queue (instead of having all instances consume from 
+the same queue, which is not recommended). If you want to send out an email from
+a specific IP address, you therefore must make sure that the message ends up 
+in the right outbox queue. However, if you do publish a message to a wrong queue,
+the MailerQ inter-cluster communication ensures that the message will be moved
+to the right outbox queue.
 
 
 ## Config file options
