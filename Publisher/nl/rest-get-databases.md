@@ -30,6 +30,7 @@ wordt een aantal velden teruggegeven:
 * **interests**: Array met de interesses in de database
 * **collections**: Array met de collecties in de database
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
