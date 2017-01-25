@@ -14,10 +14,7 @@ Methode om alle meta gegevens van een database op te vragen.
 * **collections**: Array met de collecties in de database
 
 De velden, interesses en collecties worden teruggegeven als arrays van
-objecten. Een omschrijving van de velden in deze arrays en hun betekenis
-kun je vinden in de artikelen over [het opvragen van veldgegevens](rest-get-field),
-[het opvragen van interessegegevens](rest-get-interest) en 
-[het opvragen van collectiegegevens](rest-get-collection).
+objecten.
 
 ## Voorbeeld in PHP
 
