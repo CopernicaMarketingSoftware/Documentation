@@ -4,9 +4,9 @@ Methode om de properties van een database bij te werken
 
 ## Beschikbare parameters
 
-* *name*: naam van de nieuw aan te maken database
-* *description*: optionele omschrijving van de database
-* *archived*: optionele boolean waarde om de database direct te archiveren
+* *name*: de optionele nieuwe naam van de database
+* *description*: de optionele nieuwe omschrijving van de database
+* *archived*: optionele boolean waarde om de database te archiveren
 
 ## Voorbeeld in PHP
 
@@ -15,7 +15,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // change this into your access token
     $access_token = "private-access-token";
     
-    // the database name or id that is being modified
+    // the name or id of the database that is being modified
     $id = urlencode(1234);
     
     // parameters to be passed to the url
