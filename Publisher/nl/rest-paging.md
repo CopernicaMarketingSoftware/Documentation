@@ -17,10 +17,10 @@ objecten wilt opvragen, zul je meerdere calls achter elkaar moeten doen.
 Als een methode een lijst teruggeeft is dat altijd verpakt in een JSON object.
 Dat JSON object heeft standaard een aantal *properties* waarmee je kunt
 achterhalen of de gehele lijst is teruggegeven, of dat de output is gelimiteerd
-en dat er meer entries beschikbaar zijn.
+en er meer entries beschikbaar zijn.
 
     {
-        "start":    0,
+        "start":    50,
         "limit":    100,
         "count":    100,
         "total":    335,
@@ -35,11 +35,12 @@ objecten er zijn teruggegeven en hoeveel objecten beschikbaar zijn.
 De property *count* bevat het totaal aantal geretourneerde objecten. *Start*
 en *limit* zijn interessant als niet alle objecten konden worden teruggegeven.
 De property *start* bevat het aantal overgeslagen objecten, en *limit* het
-aantal tot waar de output is beperkt. De property *total* tenslotte, bevat
-het totaal aantal beschikbare properties. Als de property *start* groter is
-dan 0, of als *count* kleiner is dan *total*, dan weet je dat de API niet
-alle beschikbare objecten heeft teruggegeven, en zul je een nieuwe call moeten
-doen om de volgende batch op te vragen.
+aantal tot waar de output is beperkt. In bovenstaand voorbeeld wordt dus een
+lijst van 100 objecten geretourneerd, waarbij de eerste 50 zijn overgeslagen.
+
+De property *total* bevat het totaal aantal beschikbare elementen. In bovenstaand
+voorbeeld staat het op 335, wat veel meer is dan de 100 objecten die zijn teruggegeven.
+Je weet dus dat je aanvullende calls moet doen om meer gegevens op te vragen.
 
 
 ## Paging parameters
@@ -48,7 +49,7 @@ Elke methode die een lijst van objecten retourneert ondersteunt standaard
 drie parameters die je aan de URL kan toevoegen: *start*, *limit* en *total*.
 De *start* en *limit* parameters zijn nummerieke parameters die je kunt gebruiken
 om op te geven welke deel je van de beschikbare objecten je wilt opvragen: waar 
-de lijst moet starten (hoeveel eerdere elementen worden overgeslagen), en hoe 
+de lijst moet starten (hoeveel eerdere elementen worden overgeslagen), en 
 hoeveel elementen moeten worden teruggegeven.
 
 De parameter *total* is een boolean parameter die je op false kunt zetten om
@@ -56,7 +57,7 @@ aan te geven dat je geen interesse hebt in het totaal aantal beschikbare objecte
 Het uitrekenen van het totaal aantal beschikbare objecten is een relatief zware
 operatie. Als jouw script de property *total* in de geretourneerde JSON negeert, 
 dan kun je net zo goed al van te voren aangeven dat deze property niet hoeft
-te worden geretourneerd. Dit maakt de API call iets sneller.
+te worden berekend. Dit maakt de API call iets sneller.
 
 
 ## Voorbeeld in PHP
@@ -71,7 +72,8 @@ alleen de tweede vijf items kunt opvragen.
     $parameters = array(
         'access_token'      =>  $access_token,
         'start'             =>  5,
-        'limit'             =>  5
+        'limit'             =>  5,
+        'total'             =>  false
     );
     
     // create a curl resource

@@ -20,7 +20,7 @@ methodes.
 | POST      | [api.copernica.com/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken nieuw profiel        |
 
 
-**Let op**: bovenstaande lijst is not niet compleet. De REST API kent veel meer methodes die gaandeweg worden gedocumenteerd.
+**Let op**: bovenstaande lijst is nog lang niet compleet. De REST API kent veel meer methodes die gaandeweg worden gedocumenteerd.
 
 
 
