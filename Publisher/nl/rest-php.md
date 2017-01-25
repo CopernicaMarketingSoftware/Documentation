@@ -179,3 +179,8 @@ vragen, kun je heel eenvoudig van de hierboven getoonde klasse gebruik maken.
     // print the result
     print_r($result);
 
+
+## Meer informatie
+
+* [Overzicht van alle API calls](rest-reference)
+
