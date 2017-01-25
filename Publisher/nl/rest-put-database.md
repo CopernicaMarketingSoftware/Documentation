@@ -1,6 +1,6 @@
-# REST API: aanmaken nieuwe database
+# REST API: bijwerken gegevens van een database
 
-Methode om een nieuwe database aan te maken.
+Methode om de properties van een database bij te werken
 
 ## Beschikbare parameters
 
@@ -15,6 +15,9 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // change this into your access token
     $access_token = "private-access-token";
     
+    // the database name or id that is being modified
+    $id = urlencode(1234);
+    
     // parameters to be passed to the url
     $parameters = array(
         'access_token'      =>  $access_token
@@ -27,12 +30,12 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     ));
     
     // create a curl resource
-    $curl = curl_init("https://api.copernica.com/databases?".http_build_query($parameters));
+    $curl = curl_init("https://api.copernica.com/database/$id?".http_build_query($parameters));
     
     // additional curl option
     curl_setopt_array($curl, array(
-        CURLOPT_POST            =>  true,
-        CURLOPT_HTTPHEADER      =>  array('content-type: application/json'),
+        CURLOPT_CUSTOMREQUEST   =>  'PUT',
+        CURLOPT_HTTPHEADER      =>  array('content-type: application/json', 'content-length: '.strlen($data)),
         CURLOPT_POSTFIELDS      =>  $data,
         CURLOPT_RETURNTRANSFER  =>  true
     ));
