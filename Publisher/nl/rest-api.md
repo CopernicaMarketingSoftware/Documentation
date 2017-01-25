@@ -79,53 +79,13 @@ Bij elk request moet je altijd een access_token variabele meesturen. Je kunt
 deze variabele toevoegen aan de URL als gewone get parameter.
 
 
-## Data naar Copernica sturen
+## Meer informatie
 
-Als je HTTP POST of HTTP PUT requests gebruikt om data naar Copernica te sturen,
-dan kun je de data op verschillende manieren insturen. De krachtigste manier 
-is om JSON te gebruiken, omdat je hiermee complexe datastructuren naar 
-Copernica kunt zenden. We ondersteunen echter ook de normale manier om 
-variabelen met HTTP POST requests mee te sturen.
+De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
 
-In de header van je request moet je een "content-type" header meesturen. Als
-je deze header op "application/json" hebt staan, dan kun je de data als JSON 
-insturen.
+* [OAuth koppeling maken met de REST API](rest-oauth)
+* [Requests naar de API sturen en antwoorden verwerken](rest-requests)
+* [Overzicht van de beschikbare API methodes](rest-reference)
+* [Veelgebruikte REST parameters bij het opvragen van lijsten](rest-paging)
 
-    POST /database/1234/profiles HTTP/1.1
-    Host: api.copernica.com
-    Content-Type: application/json
-    
-    {"email":"info@example.com"}
-
-Bovenstaand HTTP POST request kun je sturen naar Copernica om een profiel
-toe te voegen aan de database met ID 1234. Je had echter ook een "traditioneel"
-HTTP POST request kunnen sturen:
-
-    POST /database/1234/profiles HTTP/1.1
-    Host: api.copernica.com
-    Content-Type: application/x-www-form-urlencoded
-    
-    email=info@example.com
-
-Voor HTTP GET en HTTP DELETE requests geldt dit onderscheid niet. Met zulke 
-requests kan geen body data worden meegestuurd en speelt dit dus ook niet.
-
-
-## Het antwoord verwerken
-
-Het antwoord dat Copernica terugstuurt is afhankelijk van de request methode.
-Op HTTP GET requests krijg je een "200 OK" bericht terug als de opgevraagde 
-data beschikbaar is, met de data als JSON string in de body van het bericht.
-
-De andere type requests (POST, PUT en DELETE) gebruiken ook de "200 OK"
-code als het request is gelukt, maar ze sturen geen data terug. Door middel van 
-speciale HTTP headers wordt het resultaat van de actie gerapporteerd. In de 
-resultaatheader van succesvolle POST en PUT requests staat een link naar de 
-aangepaste/toegevoegde data. Hiervoor gebruiken we een *X-location* header,
-bijvoorbeeld "X-location: https://api.copernica.com/profile/$profileID" als 
-je een profiel wijzigt of toevoegt. Een succesvolle DELETE request bevat een
-*X-deleted* header: "X-deleted: profile $profileID".
-
-Als er een fout optreedt, ontvang je een "400 Bad request" returncode. In de
-body staat vaak een JSON bericht met een foutmelding.
 
