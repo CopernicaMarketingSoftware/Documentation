@@ -3,6 +3,13 @@
 Methode om een overzicht op te vragen van alle beschikbare databases. Op deze
 methode zijn de [paging parameters](rest-paging) van toepassing.
 
+## Geretourneerde velden
+
+De methode retourneert een lijst van databases. Van elke database in de lijst
+wordt een aantal velden teruggegeven. Meer informatie over de betekenis
+van deze velden kun je vinden in het artikel over het 
+[opvragen van een enkele database](rest-get-database).
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -33,7 +40,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     print_r(json_decode($answer));
     
 
-## Ondersteunde parameters
+## Meer informatie
 
-Naast de standaard [paging parameters](rest-paging) worden geen aanvullende
-parameters ondersteund.
+* [Opvragen van een enkele database](rest-get-database)
+* [Aanmaken van een database](rest-post-databases)
