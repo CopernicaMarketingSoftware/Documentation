@@ -19,10 +19,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     $api = new CopernicaRestApi("your-access-token");
     
     // data to be sent to the api
-    $data = json_encode(array(
+    $data = array(
         'name'          =>  'mijn-test-database',
         'description'   =>  'omschrijving van de database'
-    ));
+    );
     
     // do the call
     api->post("databases", $data);
