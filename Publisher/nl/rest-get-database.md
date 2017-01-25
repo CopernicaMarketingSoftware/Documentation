@@ -1,6 +1,7 @@
 # REST API: opvragen gegevens van een database
 
-Methode om alle meta gegevens van een database op te vragen.
+Methode om alle meta gegevens van een database op te vragen. De method 
+ondersteunt geen parameters.
 
 ## Geretourneerde velden
 
@@ -20,34 +21,14 @@ objecten.
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
+    // dependencies
+    require_once('copernica_rest_api.php');
+    
     // change this into your access token
-    $access_token = "private-access-token";
-    
-    // id or name of the database
-    $id = urlencode(1234);
-    
-    // parameters to be passed to the url
-    $parameters = array(
-        'access_token'      =>  $access_token
-    );
-    
-    // create a curl resource
-    $curl = curl_init("https://api.copernica.com/database/$id?".http_build_query($parameters));
-    
-    // additional curl option
-    curl_setopt_array($curl, array(
-        CURLOPT_RETURNTRANSFER      =>  true
-    ));
-    
-    // do the call
-    $answer = curl_exec($curl);
-    
-    // clean up curl resource
-    curl_close($curl);
-    
-    // output result
-    print_r(json_decode($answer));
-    
+    $api = new CopernicaRestApi("your-access-token");
+
+    // do the call, and print result
+    print_r($api->get("database/1234"));
 
 ## Meer informatie
 
