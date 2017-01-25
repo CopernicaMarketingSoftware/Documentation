@@ -12,6 +12,7 @@ methodes.
 | DELETE    | [api.copernica.com/database/$id](./rest-delete-database)                                  | Verwijderen database                          |
 | GET       | [api.copernica.com/database/$id/fields](./rest-get-database-fields)                       | Opvragen databasevelden                       |
 | POST      | [api.copernica.com/database/$id/fields](./rest-post-database-fields)                      | Aanmaken databaseveld                         |
+| DELETE    | [api.copernica.com/database/$id/field/$id](./rest-delete-database-field)                  | Veld uit database verwijderen                 |
 | GET       | [api.copernica.com/database/$id/interests](./rest-get-database-interests)                 | Opvragen interesses                           |
 | POST      | [api.copernica.com/database/$id/interests](./rest-post-database-interests)                | Aanmaken interesse                            |
 | GET       | [api.copernica.com/database/$id/collections](./rest-get-database-collections)             | Opvragen collecties                           |
