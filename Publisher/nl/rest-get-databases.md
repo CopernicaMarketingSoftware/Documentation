@@ -1,7 +1,9 @@
 # REST API: opvragen databases
 
-Methode om een overzicht op te vragen van alle beschikbare databases. Op deze
-methode zijn de [paging parameters](rest-paging) van toepassing.
+Methode om een overzicht op te vragen van alle beschikbare databases. Dit is
+een HTTP GET call naar het volgende adres:
+
+`GET https://api.copernica.com/databases?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -10,6 +12,9 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **start**: eerste database die wordt opgevraagd
 * **limit**: lengte van de batch die wordt opgevraagd
 * **total**: toon wel/niet het totaal aantal databases in de output
+
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
 
 ## Geretourneerde velden
 
