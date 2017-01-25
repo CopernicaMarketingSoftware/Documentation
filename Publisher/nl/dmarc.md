@@ -91,7 +91,7 @@ wordt verstuurd.
 Als je echter de software van Copernica wilt gebruiken om mailings te versturen 
 vanuit je hoofddomein moet je wat beter opletten. Het DMARC record dat Copernica
 dan aanmaakt bevat dan de instelling voor *alle* mail die je vanuit het hoofddomein
-verstuurt. Daar vallen waarschijnlijk ook de gewone berichten onder je verstuurt
+verstuurt. Daar vallen waarschijnlijk ook de gewone berichten onder die je verstuurt
 vanaf kantoor of vanaf je mobiele telefoon. Als je voor een strenge instelling
 kiest, dan kan het zomaar gebeuren dat je problemen krijgt met het afleveren van
 je reguliere mail.
