@@ -1,7 +1,12 @@
 # REST API: opvragen gegevens van een database
 
-Methode om alle meta gegevens van een database op te vragen. De method 
-ondersteunt geen parameters.
+Methode om alle meta gegevens van een database op te vragen. De methode
+ondersteunt geen parameters. De methode wordt aangeroepen via het volgende adres:
+
+`GET https://api.copernica.com/database/$id?access_token=xxxx`
+
+Als $id kun je de nummerieke identifier van een database opgeven, of de naam
+van een database.
 
 ## Geretourneerde velden
 
