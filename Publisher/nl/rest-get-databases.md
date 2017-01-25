@@ -42,5 +42,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ## Meer informatie
 
+* [Overzicht van alle API calls](rest-reference)
 * [Opvragen van een enkele database](rest-get-database)
 * [Aanmaken van een database](rest-post-databases)
