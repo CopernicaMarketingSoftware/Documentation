@@ -1,7 +1,7 @@
 # PHP voorbeeld voor de REST API
 
 Als je de REST API met PHP wilt aanspreken, dan kun je daar goed de *curl*
-functies van PHP voor gebruiken. Deze functies zijn in nagenoeg in elke PHP
+functies van PHP voor gebruiken. Deze functies zijn in nagenoeg elke PHP
 omgeving beschikbaar en stellen je in staat om HTTP requests te doen. Je
 kunt met curl zowel gewone HTTP GET calls doen, maar ook POST, PUT en DELETE.
 
@@ -40,7 +40,7 @@ gebruiken om de API aan te roepen.
          *  @param  array       Associative array with additional parameters
          *  @return array       Associative array with the result
          */
-        public function get($resource, array $parameters)
+        public function get($resource, array $parameters = array())
         {
             // the query string
             $query = http_build_query(array('access_token' => $this->token) + $parameters);
@@ -67,7 +67,7 @@ gebruiken om de API aan te roepen.
          *  @param  array       Associative array with data to post
          *  @return bool
          */
-        public function post($resource, array $data)
+        public function post($resource, array $data = array())
         {
             // the query string
             $query = http_build_query(array('access_token' => $this->token));
@@ -101,7 +101,7 @@ gebruiken om de API aan te roepen.
          *  @param  array       Associative array with data to post
          *  @return bool
          */
-        public function put($resource, array $data)
+        public function put($resource, array $data = array())
         {
             // the query string
             $query = http_build_query(array('access_token' => $this->token));
