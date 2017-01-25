@@ -118,3 +118,7 @@ doen, en de gegevens in het desbetreffende account op te vragen.
 
 `{ access_token : "ed430a95c58fd7d2830c9dc453396cf5" }`
 
+## Meer informatie
+
+* [Introductie tot de REST API](rest-api)
+* [Overzicht van alle API calls](rest-reference)

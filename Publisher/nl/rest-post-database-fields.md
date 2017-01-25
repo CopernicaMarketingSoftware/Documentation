@@ -57,7 +57,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     );
     
     // do the call
-    $api->post("database/1234/fields", $data));
+    $api->post("database/1234/fields", $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
