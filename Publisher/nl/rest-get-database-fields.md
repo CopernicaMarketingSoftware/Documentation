@@ -3,7 +3,7 @@
 Methode om een overzicht op te vragen van alle beschikbare velden in een database. 
 Dit is een HTTP GET call naar het volgende adres:
 
-`GET https://api.copernica.com/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/database/$id/fields?access_token=xxxx`
 
 De code $id moet je vervangen door de nummerieke identifier van de database
 waar je de velden van wilt opvragen, of de naam van de database.
