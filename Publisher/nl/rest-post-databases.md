@@ -12,13 +12,11 @@ Methode om een nieuwe database aan te maken.
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
+    // dependencies
+    require_once('copernica-rest-api.php');
+
     // change this into your access token
-    $access_token = "private-access-token";
-    
-    // parameters to be passed to the url
-    $parameters = array(
-        'access_token'      =>  $access_token
-    );
+    $api = new CopernicaRestApi("your-access-token");
     
     // data to be sent to the api
     $data = json_encode(array(
@@ -26,20 +24,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
         'description'   =>  'omschrijving van de database'
     ));
     
-    // create a curl resource
-    $curl = curl_init("https://api.copernica.com/databases?".http_build_query($parameters));
-    
-    // additional curl option
-    curl_setopt_array($curl, array(
-        CURLOPT_POST            =>  true,
-        CURLOPT_HTTPHEADER      =>  array('content-type: application/json'),
-        CURLOPT_POSTFIELDS      =>  $data,
-        CURLOPT_RETURNTRANSFER  =>  true
-    ));
-    
     // do the call
-    curl_exec($curl);
-    
-    // clean up curl resource
-    curl_close($curl);
+    api->post("databases", $data);
 
+Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
