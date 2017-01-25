@@ -3,7 +3,7 @@
 Methode om een veld toe te voegen aan een bestaande database. Dit is een HTTP 
 POST call naar het volgende adres:
 
-`GET https://api.copernica.com/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/database/$id/fields?access_token=xxxx`
 
 De code $id moet je vervangen door de nummerieke identifier of de naam van de 
 database waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele

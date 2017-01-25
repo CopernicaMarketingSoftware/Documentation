@@ -1,34 +1,27 @@
 # REST API: verwijderen van een database
 
-Methode om een database (en alle bijbehorende profielen!) te verwijderen
+Methode om een database (en dus ook alle bijbehorende profielen!) te verwijderen.
+Dit is een HTTP DELETE methode, naar het volgende adres:
 
-## Voorbeeld in PHP
+`https://api.copernica.com/database/$id?access_token=xxxx`
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+De variabele $id moet worden vervangen door de nummerieke identifier of de naam
+van de te verwijderen database.
 
+    // dependencies
+    require_once('copernica_rest_api.php');
+    
     // change this into your access token
-    $access_token = "private-access-token";
-    
-    // the database name or id that is being removed
-    $id = urlencode(1234);
-    
-    // parameters to be passed to the url
-    $parameters = array(
-        'access_token'      =>  $access_token
-    );
-    
-    // create a curl resource
-    $curl = curl_init("https://api.copernica.com/database/$id?".http_build_query($parameters));
-    
-    // additional curl option
-    curl_setopt_array($curl, array(
-        CURLOPT_CUSTOMREQUEST   =>  'DELETE',
-        CURLOPT_RETURNTRANSFER  =>  true
-    ));
-    
+    $api = new CopernicaRestApi("your-access-token");
+
     // do the call
-    curl_exec($curl);
-    
-    // clean up curl resource
-    curl_close($curl);
+    $api->delete("database/1234");
+
+Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+
+## Meer informatie
+
+* [Overzicht van alle API calls](rest-reference)
+* [Alle databases opvragen](rest-get-databases)
+* [Nieuwe database aanmaken](rest-post-databases)
 
