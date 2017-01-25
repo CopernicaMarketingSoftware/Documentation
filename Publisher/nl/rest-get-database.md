@@ -13,6 +13,12 @@ Methode om alle meta gegevens van een database op te vragen.
 * **interests**: Array met de interesses in de database
 * **collections**: Array met de collecties in de database
 
+De velden, interesses en collecties worden teruggegeven als arrays van
+objecten. Een omschrijving van de velden in deze arrays en hun betekenis
+kun je vinden in de artikelen over [het opvragen van veldgegevens](rest-get-field),
+[het opvragen van interessegegevens](rest-get-interest) en 
+[het opvragen van collectiegegevens](rest-get-collection).
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -46,3 +52,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     print_r(json_decode($answer));
     
 
+## Meer informatie
+
+* [Overzicht van alle API calls](rest-reference)
+* [Bewerken van een database](rest-put-database)
