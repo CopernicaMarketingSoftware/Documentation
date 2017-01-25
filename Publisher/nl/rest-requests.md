@@ -2,7 +2,7 @@
 
 Als je een website of app hebt gekoppeld aan [de REST API](rest-api) van Copernica,
 dan kan deze applicatie HTTP requests sturen naar het *endpoint* van de API
-op onze server. Het adres van dit endpoint is *https://api.copernica.com/path/to/resource*.
+op onze server. Het adres van dit endpoint is `*https://api.copernica.com/path/to/resource?access_token=yourtoken*`.
 Het "/path/to/resource" deel van de URL is voor elk request anders, en bepaalt
 welke data je opvraagt of wijzigt. Ook moet je aan de URL altijd een *access_token*
 parameter toevoegen om jouw applicatie te identificeren.

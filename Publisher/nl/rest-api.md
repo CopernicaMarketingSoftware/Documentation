@@ -83,7 +83,7 @@ deze variabele toevoegen aan de URL als gewone get parameter.
 
 De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
 
-* [OAuth koppeling maken met de REST API](rest-oauth)
+* [OAuth koppeling maken met de REST API](oauth)
 * [Requests naar de API sturen en antwoorden verwerken](rest-requests)
 * [Overzicht van de beschikbare API methodes](rest-reference)
 * [Veelgebruikte REST parameters bij het opvragen van lijsten](rest-paging)
