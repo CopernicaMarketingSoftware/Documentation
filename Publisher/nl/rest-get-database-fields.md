@@ -5,8 +5,8 @@ Dit is een HTTP GET call naar het volgende adres:
 
 `https://api.copernica.com/database/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van de database
-waar je de velden van wilt opvragen, of de naam van de database.
+De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+database waar je de velden van wilt opvragen.
 
 ## Beschikbare parameters
 
@@ -53,7 +53,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     );
     
     // do the call, and print result
-    print_r($api->get("database/1234/fields", $parameters));
+    print_r($api->get("database/1234/fields", $parameters);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
