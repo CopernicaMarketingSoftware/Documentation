@@ -11,7 +11,7 @@ andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 
 ## Beschikbare parameters
 
-De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
+De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
 * **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
 * **type**: Type van het nieuwe veld
