@@ -31,7 +31,7 @@ for the name and the email address. However, you can also set the `from` and
         "address" : "reply-to@example.org"
     },
     "subject": "I am the best example",
-        "background": {
+    "background": {
             "color": "#FC00CA"
     },
     "content": {
