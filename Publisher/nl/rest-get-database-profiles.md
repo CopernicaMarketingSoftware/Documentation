@@ -15,12 +15,18 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **start**: eerste profiel dat wordt opgevraagd
 * **limit**: lengte van de batch die wordt opgevraagd
 * **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
+* **fields**: optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden
 * **orderby**: naam of id van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel)
 * **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
-* **fields**: optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden
 
 Meer informatie over de betekenis van de *start*, *limit* en *total* parameters 
-vind je in het [artikel over paging](rest-paging).
+vind je in het [artikel over paging](rest-paging). 
+
+De parameter *fields* kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
+alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
+"Nederland", kun je dat opgeven in het veld "fields". Meer informatie over het
+gebruik van deze *fields* parameter kun je vinden in een 
+[artikel over de fields parameter](rest-fields-parameter).
 
 De variabele *order* kun je de naam of het ID van een veld geven. De profielen
 worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
@@ -30,36 +36,6 @@ parameter *order* geven:
 * **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID
 * **random**: de profielen worden in willekeurige volgorde teruggegeven
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
-
-De parameter *fields* kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
-alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
-"Nederland", kun je dat opgeven in het veld "fields". De parameter *fields* is
-een array-parameter. Dit wil zeggen dat je in de URL de variabele als *fields[]* (dus
-met blokhaken!) moet opnemen, en dat de parameter meerdere keren in de URL mag 
-voorkomen:
-
-`https://api.copernica.com/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
-
-Je kunt de *fields* parameters gebruiken voor verschillende soorten vergelijkingen.
-In bovenstaand voorbeeld staat bijvoorbeeld "land==nederland" en "leeftijd&gt;16" om
-profielen uit Nederland ouder dan 16 jaar te selecteren. In de URL zijn, zoals
-je kunt zien, het is-gelijk-teken en het groter-dan-teken vervangen door de
-hexadecimale codes %3D en %4E. Dit is nodig omdat deze tekens voor conflicten
-kunnen zorgen als je ze letterlijk in een URL opneemt.
-
-De waardes in het *fields* array hebben altijd de vorm "veld operator waarde", zoals
-"land==nederland". De volgende operators worden hierbij herkend:
-
-* **==**: gelijk aan
-* **!=** en **&lt;&gt;**: ongelijk aan
-* **&lt;**, **&gt;**, **&lt;=**, **&gt;=**: kleiner/groter en kleiner-of-gelijk/groter-of-gelijk
-* **=~** en **!~**: de *like* en *not like* operator
-
-De laatstgenoemde *like* en *not like* operators kun je gebruiken om profielen te 
-matchen. In de waarde waarmee je vergelijkt kun je gebruik maken van de % en \_ wildcards.
-Het teken % matcht met een willekeurige reeks tekens, en _ met precies één teken.
-Als je bijvoorbeeld alle profielen wilt opvragen waarvan de voornaam begint met de
-letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatsen.
 
 
 ## Geretourneerde velden

@@ -1,13 +1,19 @@
 # REST API: aanmaken van een profiel
 
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
-naar de volgende URL:
+naar de volgende URL.
 
 `https://api.copernica.com/database/$id/profiles?access_token=xxxx`
 
 De code $id moet je vervangen door de nummerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
+
+Let op de je een POST request stuurt. Hoewel er voor de meeste API methodes geen
+verschil is tussen POST en PUT, en je dus ongestraft POST en PUT door elkaar
+heen kunt gebruiken, geldt dit niet voor deze methode. Als je toch PUT zou
+gebruiken, roep je een andere methode aan: die om 
+[meerdere profielen te bewerken](rest-put-database-profiles).
 
 ## Beschikbare parameters
 

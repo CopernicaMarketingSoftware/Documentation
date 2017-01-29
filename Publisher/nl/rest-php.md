@@ -82,7 +82,7 @@ gebruiken om de API aan te roepen.
             curl_setopt_array($curl, array(
                 CURLOPT_POST            =>  true,
                 CURLOPT_HTTPHEADER      =>  array('content-type: application/json'),
-                CURLOPT_POSTFIELDS      =>  http_build_query($data)
+                CURLOPT_POSTFIELDS      =>  $data
             ));
             
             // do the call
@@ -98,13 +98,14 @@ gebruiken om de API aan te roepen.
         /**
          *  Do a PUT request
          *  @param  string      Resource name
+         *  @param  array       Associative array with additional parameters
          *  @param  array       Associative array with data to post
          *  @return bool
          */
-        public function put($resource, array $data = array())
+        public function put($resource, array $parameters = array(), array $data = array())
         {
             // the query string
-            $query = http_build_query(array('access_token' => $this->token));
+            $query = http_build_query(array('access_token' => $this->token) + $parameters);
         
             // construct curl resource
             $curl = curl_init("https://api.copernica.com/$resource?$query");
@@ -116,7 +117,7 @@ gebruiken om de API aan te roepen.
             curl_setopt_array($curl, array(
                 CURLOPT_CUSTOMREQUEST   =>  'PUT',
                 CURLOPT_HTTPHEADER      =>  array('content-type: application/json', 'content-length: '.strlen($data)),
-                CURLOPT_POSTFIELDS      =>  http_build_query($data)
+                CURLOPT_POSTFIELDS      =>  $data
             ));
             
             // do the call
