@@ -23,14 +23,15 @@ Meer informatie over de betekenis van de *start*, *limit* en *total* parameters
 vind je in het [artikel over paging](rest-paging).
 
 De variabele *order* kun je de naam of het ID van een veld geven. De profielen
-worden dan geretourneerd gesorteerd aan de hand van dit veld. Daarnaast kun je
-een aantal speciale waardes opgeven:
+worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
+veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
+parameter *order* geven:
 
 * **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID
 * **random**: de profielen worden in willekeurige volgorde teruggegeven
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
 
-Het veld *fields* kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
+De parameter *fields* kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
 alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
 "Nederland", kun je dat opgeven in het veld "fields". De parameter *fields* is
 een array-parameter. Dit wil zeggen dat je in de URL de variabele als *fields[]* (dus
