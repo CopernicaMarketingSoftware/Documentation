@@ -56,7 +56,7 @@ vanuit een PHP script:
     );
     
     // do the call, and print result
-    print_r($api->get("databases", $parameters);
+    print_r($api->get("databases", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     

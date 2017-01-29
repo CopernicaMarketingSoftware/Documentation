@@ -1,7 +1,7 @@
 # REST API: interesse toevoegen aan een database
 
 De HTTP POST methode om een interesse toe te voegen aan een bestaande database
-is beschikbaar vial het volgende adres:
+is beschikbaar via het volgende adres:
 
 `https://api.copernica.com/database/$id/interests?access_token=xxxx`
 
