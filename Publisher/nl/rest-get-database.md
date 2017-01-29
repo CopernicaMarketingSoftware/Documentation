@@ -20,7 +20,14 @@ van een database.
 * **collections**: Array met de collecties in de database
 
 De velden, interesses en collecties worden teruggegeven als arrays van
-objecten.
+objecten. Als je wilt weten hoe deze arrays zijn opgebouwd, kun je een blik 
+werpen op de documentatien van de volgende API methodes. Deze methodes 
+retourneren dezelfde soort gegevens:
+
+* [Opvragen van velden](rest-get-database-fields)
+* [Opvragen van interesses](rest-get-database-interests)
+* [Opvragen van collecties](rest-get-database-collections) 
+
 
 ## Voorbeeld in PHP
 

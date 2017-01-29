@@ -30,10 +30,19 @@ wordt een aantal velden teruggegeven:
 * **interests**: Array met de interesses in de database
 * **collections**: Array met de collecties in de database
 
+Als je wilt weten hoe de *fields*, *interests* en *collections* arrays zijn
+opgebouwd, kun je een blik werpen op de documentatien van de volgende API
+methodes. Deze methodes retourneren dezelfde soort gegevens:
+
+* [Opvragen van velden](rest-get-database-fields)
+* [Opvragen van interesses](rest-get-database-interests)
+* [Opvragen van collecties](rest-get-database-collections) 
+
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen 
+vanuit een PHP script:
 
     // dependencies
     require_once('copernica_rest_api.php');
@@ -47,7 +56,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     );
     
     // do the call, and print result
-    print_r($api->get("databases", $parameters));
+    print_r($api->get("databases", $parameters);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
