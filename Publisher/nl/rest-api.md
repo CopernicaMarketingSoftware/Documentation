@@ -69,8 +69,8 @@ requests sturen. Het maakt dan nogal uit of je een HTTP GET request stuurt om
 alleen maar data op te halen, of juist een HTTP POST om data toe te voegen.
 
 Het verschil tussen HTTP POST en HTTP PUT is in de praktijk niet zo scherp
-als dat we het hier stellen. Onze servers behandelen deze twee requests op 
-precies dezelfde wijze, en het maakt dus in werkelijk niet uit welke van de 
+als dat we het hier stellen. Onze servers behandelen deze twee requests meestal 
+op precies dezelfde wijze, en het maakt dus vaak niet uit welke van de 
 twee je gebruikt om data toe te voegen of bij te werken. Maar om
 toekomstbestendig te zijn, raden we aan om toch een scherp onderscheid tussen
 die twee methodes aan te houden.
