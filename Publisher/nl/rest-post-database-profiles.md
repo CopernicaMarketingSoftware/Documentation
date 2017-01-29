@@ -7,7 +7,7 @@ naar de volgende URL.
 
 De code $id moet je vervangen door de nummerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
-kun je in de body van het bericht plaatsen.
+kun je in de body van het HTTP request plaatsen.
 
 Let op de je een POST request stuurt. Hoewel er voor de meeste API methodes geen
 verschil is tussen POST en PUT, en je dus ongestraft POST en PUT door elkaar
