@@ -10,6 +10,8 @@ methodes.
 | GET       | [api.copernica.com/database/$id](./rest-get-database)                                     | Opvragen databasegegevens                     |
 | PUT       | [api.copernica.com/database/$id](./rest-put-database)                                     | Bijwerken databasegegevens                    |
 | DELETE    | [api.copernica.com/database/$id](./rest-delete-database)                                  | Verwijderen database                          |
+| GET       | [api.copernica.com/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Opvragen afmeldalgoritme                      |
+| PUT       | [api.copernica.com/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Instellen afmeldalgoritme                     |
 | GET       | [api.copernica.com/database/$id/fields](./rest-get-database-fields)                       | Opvragen databasevelden                       |
 | POST      | [api.copernica.com/database/$id/fields](./rest-post-database-fields)                      | Aanmaken databaseveld                         |
 | DELETE    | [api.copernica.com/database/$id/field/$id](./rest-delete-database-field)                  | Veld uit database verwijderen                 |
@@ -21,6 +23,7 @@ methodes.
 | POST      | [api.copernica.com/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken nieuw profiel                        |
 | PUT       | [api.copernica.com/database/$id/profiles](./rest-put-database-profiles)                   | Meerdere profielen tegelijk bewerken          |
 | GET       | [api.copernica.com/database/$id/profileids](./rest-get-database-profileids)               | Opvragen profiel identifiers                  |
+| GET       | [api.copernica.com/database/$id/views](./rest-get-database-views)                         | Opvragen selecties                            |
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Opvragen collectiegegevens                    |
 | GET       | [api.copernica.com/collection/$id/callbacks](./rest-get-collection-callbacks)             | Opvragen feedback loops van een collectie     |
 | GET       | [api.copernica.com/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen velden in een collectie              |
