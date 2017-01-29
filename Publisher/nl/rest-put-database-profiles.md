@@ -23,7 +23,7 @@ volgende parameters toevoegen:
 
 * **fields**: verplichte parameter om de profielen te selecten die worden aangepast
 * **create**: boolean parameter om aan te geven dat een nieuw profiel moet worden aangemaakt indien er geen matchende profielen zijn
-* **async**: boolean parameter om aan te geven dat de profiel asynchroon moeten worden aangemaakt. De API methode returns onmiddellijk, en gaat in de achtergrond verder met het bijwerken van profielen
+* **async**: boolean parameter om aan te geven dat de profiel asynchroon moeten worden aangemaakt. De API methode returnt dan onmiddellijk, en gaat in de achtergrond verder met het bijwerken van profielen
 
 De *fields* parameter is verplicht. Deze parameter voorkomt dat je met een
 enkele API call alle profielen in de database bijwerkt. Alleen de matchende

@@ -1,7 +1,7 @@
 # REST API: de fields parameter
 
 Er is een aantal API methodes waarbij je een *fields* parameter aan de URL
-kunt meegeven om profielen of subprofielen te selecteren. Met deze parameter 
+kunt (of moet) meegeven om profielen of subprofielen te selecteren. Met deze parameter 
 kun je bijvoorbeeld aangeven dat de desbetreffende API methode alleen betrekking 
 heeft op (sub)profielen waarvan het veld "land" op "nederland" staat, en/of dat het 
 veld "leeftijd" tussen 18 en 65 moet staan.
@@ -35,8 +35,8 @@ letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatse
 
 ## Escapen van variabelen
 
-Zoals gezegd kun je bij sommige API methodes één of meer *fields* parameters 
-toevoegen aan de URL. De waarde van een dergelijke variabele mag natuurlijk niet
+Zoals gezegd kunnen *fields* parameters worden toevoegd aan de URL. Maar de waarde 
+van dergelijke variabelen mag natuurlijk niet
 conflicteren met andere elementen van de URL. Hoewel dit evenzeer geldt voor
 andere parameters (zoals de *access_token* parameter) is dit met name voor de 
 *fields* parameter een punt van aandacht. In de waardes die je aan deze parameters 
@@ -44,7 +44,7 @@ geeft gebruik je namelijk altijd karakters die niet zonder meer in een URL
 mogen worden geplaatst (zoals "naam=~m%", "leeftijd>=18"). Daarom moet je deze
 variabelen altijd netjes *escapen*.
 
-In het hierboven gegeven voorbeeld hebben we dat ook gedaan. De URL bevat
+In het in dit artikel eerder gegeven voorbeeld hebben we dat ook gedaan. Die URL bevat
 twee fields parameters: "land==nederland" en "leeftijd>16". In de URL zijn ze
 echter vervangen door "land%3D%3Dnederland" en "leeftijd%3E16" zodat het
 is-gelijk-teken en het groter-dan-teken niet conflicteren met andere tekens
@@ -55,10 +55,10 @@ hoef je je hier overigens niet al te druk over te maken. Het escapen gebeurt
 dan automatisch.
 
 
-s## Toepasselijke methodes
+## Toepasselijke methodes
 
 De *fields* parameter kun je gebruiken bij de volgende API methodes:
 
-* [rest-get-database-profiles]Opvragen van profielen uit een database
-* [rest-put-database-profiles]Meerdere profielen bewerken in een database
+* [Opvragen van profielen uit een database](rest-get-database-profiles)
+* [Meerdere profielen bewerken in een database](rest-put-database-profiles)
 
