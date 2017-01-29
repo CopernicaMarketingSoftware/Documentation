@@ -1,9 +1,9 @@
 # REST API: afmeldalgoritme instellen
 
 Bij elke database kun je het afmeldalgoritme instellen. Als er op de servers
-van Copernica een afmelding binnenkomt, wordt deze instelling gebruikt om te
+van Copernica een afmelding binnenkomt wordt deze instelling gebruikt om te
 bepalen hoe we met de afmelding moeten omgaan: moet het profiel worden verwijderd,
-of moet het profiel worden aangepast.
+of moet het profiel worden aangepast?
 
 Om deze instelling door middel van een API call in te stellen, kun je een
 HTTP PUT request sturen naar de volgende URL:
@@ -45,7 +45,7 @@ op 'no' wordt gezet:
     );
     
     // do the call
-    api->put("database/1234", $data);
+    api->put("database/1234", array(), $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 

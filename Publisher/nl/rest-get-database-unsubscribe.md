@@ -1,9 +1,9 @@
 # REST API: opvragen instelling voor het afmeldalgoritme
 
 Bij elke database kun je het afmeldalgoritme instellen. Als er op de servers
-van Copernica een afmelding binnenkomt, wordt deze instelling gebruikt om te
+van Copernica een afmelding binnenkomt wordt deze instelling gebruikt om te
 bepalen hoe we met de afmelding moeten omgaan: moet het profiel worden verwijderd,
-of moet het profiel worden aangepast.
+of moet het profiel worden aangepast?
 
 Het opvragen van het afmeldalgoritme gaat met een HTTP GET request naar het
 volgende adres:
@@ -16,9 +16,9 @@ van een database.
 ## Geretourneerde velden
 
 * **behavior**: De daadwerkelijke instelling.
-* **fields**: De nieuwe profielinsteling (alleen van toepassing indien het veld behavior op 'update' staat.
+* **fields**: De nieuwe profielinsteling (alleen van toepassing indien het veld behavior op 'update' staat)
 
-Het veld `behavior` kan drie mogelijke waardes hebben, en bepaalt hoe Copernica
+Het veld "behavior" kan drie mogelijke waardes hebben en bepaalt hoe Copernica
 met afmeldingen omgaat. De ondersteunde waardes zijn "nothing", "remove" en "update".
 De waarde "nothing" is nogal onbeleefd: als deze instelling wordt gebruikt worden
 afmeldingen simpelweg genegeerd. Het profiel blijft ongewijzigd in de database.
