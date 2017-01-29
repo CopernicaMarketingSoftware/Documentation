@@ -53,10 +53,10 @@ De waardes in het *fields* array hebben altijd de vorm "veld operator waarde", z
 * **==**: gelijk aan
 * **!=** en **&lt;&gt;**: ongelijk aan
 * **&lt;**, **&gt;**, **&lt;=**, **&gt;=**: kleiner/groter en kleiner-of-gelijk/groter-of-gelijk
-* **=~** en **!~**: de `like` en `not like` operator
+* **=~** en **!~**: de *like* en *not like* operator
 
-De laatstgenoemde `like` en `not like` operators kun je gebruiken om profielen te 
-matchen. In de waarde waarmee je vergelijkt kun je gebruik maken van de % en _ wildcards.
+De laatstgenoemde *like* en *not like* operators kun je gebruiken om profielen te 
+matchen. In de waarde waarmee je vergelijkt kun je gebruik maken van de % en \_ wildcards.
 Het teken % matcht met een willekeurige reeks tekens, en _ met precies één teken.
 Als je bijvoorbeeld alle profielen wilt opvragen waarvan de voornaam begint met de
 letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatsen.
