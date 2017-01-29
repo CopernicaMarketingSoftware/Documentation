@@ -82,7 +82,7 @@ gebruiken om de API aan te roepen.
             curl_setopt_array($curl, array(
                 CURLOPT_POST            =>  true,
                 CURLOPT_HTTPHEADER      =>  array('content-type: application/json'),
-                CURLOPT_POSTFIELDS      =>  $data
+                CURLOPT_POSTFIELDS      =>  http_build_query($data)
             ));
             
             // do the call
@@ -116,7 +116,7 @@ gebruiken om de API aan te roepen.
             curl_setopt_array($curl, array(
                 CURLOPT_CUSTOMREQUEST   =>  'PUT',
                 CURLOPT_HTTPHEADER      =>  array('content-type: application/json', 'content-length: '.strlen($data)),
-                CURLOPT_POSTFIELDS      =>  $data
+                CURLOPT_POSTFIELDS      =>  http_build_query($data)
             ));
             
             // do the call
