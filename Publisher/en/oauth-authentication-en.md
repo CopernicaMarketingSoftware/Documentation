@@ -2,16 +2,16 @@
 
 Authorization for the Copernica REST API is done through the OAuth 2 authentication system. This is a powerful system where (1), applications that have access to the REST API, and (2), the accounts an application has access to, are treated differently.
 
-So, in order to obtain access to the REST API, you must do two things: you need to register your application at Copernica, and then grant the application access to your account. Once you've completed both steps (which can be done through the [Copernica dashboard]()) you'll get an *access key* that you can use for the Copernica REST API.
+So, in order to obtain access to the REST API, you must do two things: you need to register your application at Copernica, and then grant the application access to your account. Once you've completed both steps (which can be done through the [Copernica dashboard](https://www.copernica.com/nl/applications)) you'll get an *access key* that you can use for the Copernica REST API.
 
 However, there's much more to the OAuth2 protocol. Even if you have absolutely no clue of what it is, you've probably used it before. It's most widely known for the "log in with Facebook" buttons that appear everywhere on the internet. Clicking on one such buttons takes you to Facebook, which will show you something like "Application X wants access to your e-mail address, friend list, and so forth. Are you okay with that?". If you agree to that, you're redirected to the website you came from, which now has access to your Facebook data. You can do something like that with Copernica, too.
 
 ## When is this useful?
-Before continuing to read this article, you should ask yourself whether you really need this feature. If you only wish to use the REST API to gather or edit data from your own account, a complex connection with OAuth2 is not what you're looking for. The access key from the Copernica.com dashboard will suffice for most users.
+Before continuing to read this article, you should ask yourself whether you really need this feature. If you only wish to use the REST API to gather or edit data from your own account, a complex connection with OAuth2 is not what you're looking for. The access key from the [Copernica.com dashboard](https://www.copernica.com/nl/applications) will suffice for most users.
 
 OAuth2's features only come in handy when you make an application that needs to be connected to many Copernica accounts and also to accounts from other companies. Here's an example. Say, you've got a website that uses artificial intelligence to analyze Copernica databases and optimalise selections in them. This tool is useful for you, but also for others. You could create a button on your website saying "click here to analyze your Copernica database". When somebody clicks the button, they are automatically redirected to Copernica.com and asked "the database-analyzer would like access to your account to analyze your database. Are you okay with that?".
 
-<afbeelding>
+![](../images/oauth-copernica.png)
 
 ## Registering an application
 You can make the connection described above using OAuth. To start with, you must register your application via the Copernica.com dashboard. Here, you need to give your application a name and a description. Make these clear: this is the description people get to see when they reach the "Application X wants access to..." page.
