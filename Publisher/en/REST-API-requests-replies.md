@@ -10,11 +10,19 @@ When using POST or PUT to send data to Copernica, there are multiple ways to pla
 
 The most powerful way of submitting content is by using JSON in the body of your request. This is because JSON also supports complex, nested data structues. However, we also support the traditional way of sending variables along with HTTP POST calls. The following example demonstrates the request you can send to the REST API to add a new profile in the database with ID 1234. The body contains a JSON object with the properties of the new profile.
 
-<example>
+    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+    Host: api.copernica.com
+    Content-Type: application/json
+    
+    {"email":"info@example.com"}
 
 Instead of using the JSON, you could also send a traditional HTTP POST request:
 
-<example>
+    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+    Host: api.copernica.com
+    Content-Type: application/x-www-form-urlencoded
+    
+    email=info@example.com
 
 The content-type header is only applicable on POST and PUT requests. GET and DELETE requests dont support body content.
 
