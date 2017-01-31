@@ -70,5 +70,5 @@ body staat vaak een JSON bericht met een foutmelding.
 
 De volgende artikelen bevatten ook relevante informatie over de REST API:
 
-* [Overzicht van de beschikbare API methodes](rest-reference)
+* [Overzicht van de beschikbare API methodes](rest-api)
 * [Veelgebruikte REST parameters bij het opvragen van lijsten](rest-paging)

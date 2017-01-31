@@ -82,7 +82,7 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
 * [Opvragen van alle profielen](rest-get-database-profiles)
 * [Profiel bijwerken](rest-put-profile-fields)
 * [Profiel verwijderen](rest-delete-profile)
