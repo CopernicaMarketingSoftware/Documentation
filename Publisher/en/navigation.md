@@ -1,5 +1,5 @@
 * [Introduction](./introduction.md)
-* [Quick start](quick-start.)
+* [Quick start](quick-start)
     * [Setting up a sender domain](setup-sender-domain)
     * [Setting up a database](setup-database)
     * [Your first mailing](your-first-mailings)
