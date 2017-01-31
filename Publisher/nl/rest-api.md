@@ -36,6 +36,16 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/database/$id/profileids](./rest-get-database-profileids)               | Opvragen profiel identifiers                  |
 | GET       | [api.copernica.com/database/$id/views](./rest-get-database-views)                         | Opvragen selecties                            |
 | POST      | [api.copernica.com/database/$id/views](./rest-post-database-views)                        | Aanmaken nieuwe selectie                      |
+| GET       | [api.copernica.com/view/$id](./rest-get-view)                                             | Opvragen selectiegegevens                     |
+| PUT       | [api.copernica.com/view/$id](./rest-put-view)                                             | Bewerken selectiegegevens                     |
+| DELETE    | [api.copernica.com/view/$id](./rest-delete-view)                                          | Verwijderen selectie                          |
+| GET       | [api.copernica.com/view/$id/profiles](./rest-get-view-profiles)                           | Opvragen profielen in een selectie            |
+| GET       | [api.copernica.com/view/$id/profileids](./rest-get-view-profileids)                       | Opvragen profiel identifiers                  |
+| GET       | [api.copernica.com/view/$id/rules](./rest-get-view-rules)                                 | Opvragen selectieregels                       |
+| POST      | [api.copernica.com/view/$id/rules](./rest-post-view-rules)                                | Aanmaken nieuwe selectieregel                 |
+| GET       | [api.copernica.com/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen selectieregel                        |
+| GET       | [api.copernica.com/view/$id/views](./rest-get-view-views)                                 | Opvragen geneste selecties                    |
+| POST      | [api.copernica.com/view/$id/views](./rest-post-view-views)                                | Aanmaken geneste selectie                     |
 | GET       | [api.copernica.com/profile/$id](./rest-get-profile)                                       | Opvragen profielgegevens                      |
 | PUT       | [api.copernica.com/profile/$id](./rest-put-profile)                                       | Bijwerken profielgegevens                     |
 | DELETE    | [api.copernica.com/profile/$id](./rest-delete-profile)                                    | Verwijderen profiel                           |
@@ -59,5 +69,8 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen subprofileids in een collectie       |
 | GET       | [api.copernica.com/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen afmeldgedrag van een collectie       |
 | PUT       | [api.copernica.com/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Bijwerken afmeldgedrag van een collectie      |
+
+
+
 | GET       | [api.copernica.com/subprofile/$id](./rest-get-subprofile)                                 | Opvragen subprofielgegevens                   |
 | GET       | [api.copernica.com/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen subprofielvelden                     |
