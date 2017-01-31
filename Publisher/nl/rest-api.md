@@ -24,6 +24,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | PUT       | [api.copernica.com/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Instellen afmeldalgoritme                     |
 | GET       | [api.copernica.com/database/$id/fields](./rest-get-database-fields)                       | Opvragen databasevelden                       |
 | POST      | [api.copernica.com/database/$id/fields](./rest-post-database-fields)                      | Aanmaken databaseveld                         |
+| PUT       | [api.copernica.com/database/$id/field/$id](./rest-put-database-field)                     | Veld uit database bijwerken                   |
 | DELETE    | [api.copernica.com/database/$id/field/$id](./rest-delete-database-field)                  | Veld uit database verwijderen                 |
 | GET       | [api.copernica.com/database/$id/interests](./rest-get-database-interests)                 | Opvragen interesses                           |
 | POST      | [api.copernica.com/database/$id/interests](./rest-post-database-interests)                | Aanmaken interesse                            |
@@ -35,10 +36,21 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/database/$id/profileids](./rest-get-database-profileids)               | Opvragen profiel identifiers                  |
 | GET       | [api.copernica.com/database/$id/views](./rest-get-database-views)                         | Opvragen selecties                            |
 | POST      | [api.copernica.com/database/$id/views](./rest-post-database-views)                        | Aanmaken nieuwe selectie                      |
+| GET       | [api.copernica.com/profile/$id](./rest-get-profile)                                       | Opvragen profielgegevens                      |
+| GET       | [api.copernica.com/profile/$id/fields](./rest-get-profile-fields)                         | Opvragen profielvelden                        |
+| GET       | [api.copernica.com/profile/$id/interests](./rest-get-profile-interests)                   | Opvragen interesses van profiel               |
+| GET       | [api.copernica.com/profile/$id/subprofiles](./rest-get-profile-subprofiles)               | Opvragen subprofielen van een profiel         |
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Opvragen collectiegegevens                    |
 | PUT       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Bijwerken collectiegegevens                   |
 | GET       | [api.copernica.com/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen velden in een collectie              |
+| POST      | [api.copernica.com/collection/$id/fields](./rest-post-collection-fields)                  | Aanmaken veld in een collectie                |
+| PUT       | [api.copernica/com/collection/$id/field/$id](./rest-put-collection-field)                 | Bijwerken veld in colectie                    |
+| DELETE    | [api.copernica.com/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen veld in collectie                 |
 | GET       | [api.copernica.com/collection/$id/miniviews](./rest-get-collection-miniviews)             | Opvragen miniselecties onder een collectie    |
+| POST      | [api.copernica.com/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een miniselectie                 |
 | GET       | [api.copernica.com/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen subprofiles in een collectie         |
 | GET       | [api.copernica.com/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen subprofileids in een collectie       |
 | GET       | [api.copernica.com/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen afmeldgedrag van een collectie       |
+| PUT       | [api.copernica.com/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Bijwerken afmeldgedrag van een collectie      |
+| GET       | [api.copernica.com/subprofile/$id](./rest-get-subprofile)                                 | Opvragen subprofielgegevens                   |
+| GET       | [api.copernica.com/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen subprofielvelden                     |
