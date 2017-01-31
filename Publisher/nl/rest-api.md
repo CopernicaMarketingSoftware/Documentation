@@ -69,8 +69,13 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen subprofileids in een collectie       |
 | GET       | [api.copernica.com/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen afmeldgedrag van een collectie       |
 | PUT       | [api.copernica.com/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Bijwerken afmeldgedrag van een collectie      |
-
-
-
+| GET       | [api.copernica.com/miniview/$id](./rest-get-miniview)                                     | Opvragen miniselectiegegevens                     |
+| PUT       | [api.copernica.com/miniview/$id](./rest-put-miniview)                                     | Bewerken miniselectiegegevens                     |
+| DELETE    | [api.copernica.com/miniview/$id](./rest-delete-miniview)                                  | Verwijderen miniselectie                          |
+| GET       | [api.copernica.com/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Opvragen subprofielen in een miniselectie            |
+| GET       | [api.copernica.com/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Opvragen subprofiel identifiers                  |
+| GET       | [api.copernica.com/miniview/$id/rules](./rest-get-miniview-rules)                         | Opvragen selectieregels                       |
+| POST      | [api.copernica.com/miniview/$id/rules](./rest-post-miniview-rules)                        | Aanmaken nieuwe miniselectieregel                 |
+| GET       | [api.copernica.com/miniview/$id/rule/$id](./rest-get-miniview-rule)                       | Opvragen miniselectieregel                        |
 | GET       | [api.copernica.com/subprofile/$id](./rest-get-subprofile)                                 | Opvragen subprofielgegevens                   |
 | GET       | [api.copernica.com/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen subprofielvelden                     |
