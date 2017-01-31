@@ -9,7 +9,9 @@ Dit gaat automatisch, dus buiten de *user interface* om.
 * [HTTP requests sturen en antwoorden ontvangen](rest-requests)
 * [Fancy OAuth2 koppelingen](rest-oauth)
 
-# REST API: overzicht van methodes
+## REST API: overzicht van methodes
+
+De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 
 | Methode   | Adres                                                                                     | Omschrijving                                  |
 | --------- | ----------------------------------------------------------------------------------------- | --------------------------------------------- |
