@@ -27,6 +27,9 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // change this into your access token
     $api = new CopernicaRestApi("your-access-token");
     
+    // additional url based paramaters
+    $parameters = array();
+    
     // data to be sent to the api
     $data = array(
         'description'   =>  'een nieuwe omschrijving',
@@ -34,7 +37,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     );
     
     // do the call
-    api->put("database/1234", $data);
+    api->put("database/1234", $parameters, $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
