@@ -21,7 +21,7 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
 * [Alle databases opvragen](rest-get-databases)
 * [Nieuwe database aanmaken](rest-post-databases)
 

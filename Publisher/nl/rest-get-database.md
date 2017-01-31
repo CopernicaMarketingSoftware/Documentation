@@ -44,5 +44,5 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
 * [Bewerken van een database](rest-put-database)

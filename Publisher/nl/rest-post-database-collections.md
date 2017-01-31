@@ -38,7 +38,7 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
 * [Opvragen van alle collecties in een database](rest-get-database-collections)
 * [Opvragen van elle velden in een collectie](rest-get-collection-fields)
 * [Veld toevoegen aan een collectie](rest-post-collection-fields)

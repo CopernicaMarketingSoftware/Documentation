@@ -183,5 +183,5 @@ vragen, kun je heel eenvoudig van de hierboven getoonde klasse gebruik maken.
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
 

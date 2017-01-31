@@ -121,4 +121,4 @@ doen, en de gegevens in het desbetreffende account op te vragen.
 ## Meer informatie
 
 * [Introductie tot de REST API](rest-api)
-* [Overzicht van alle API calls](rest-reference)
+* [Overzicht van alle API calls](rest-api)
