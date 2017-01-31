@@ -25,9 +25,10 @@ adres van je website voor gebruiken die de aanroepen gaat doen.
 
 Copernica maakt gebruik van het [*OAuth*](rest-oauth) systeem voor API koppelingen. 
 Dit is een krachtig gestandaardiseerd authenticatiesysteem waarin onderscheid 
-wordt gemaakt tussen geregistreerde applicaties en koppelingen tussen applicaties 
-en accounts. Als je een applicatie bij Copernica aanmeldt, dan is die applicatie 
-daarna nog niet in staat om calls naar Copernica te doen. De applicatie heeft 
+wordt gemaakt tussen enerzijds geregistreerde applicaties en anderzijds de koppelingen 
+tussen die applicaties en accounts. Een applicatie kan dus toegang hebben tot
+meerdere accounts. Als je een applicatie bij Copernica aanmeldt, dan is die applicatie 
+daarna daarom nog niet in staat om calls naar Copernica te doen. De applicatie heeft 
 weliswaar toegang tot de REST API, maar nog niet tot specifieke accounts. Gelukkig 
 kan je echter ook deze accountkoppelingen via het Copernica dashboard aanmaken.
 
