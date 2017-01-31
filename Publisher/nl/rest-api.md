@@ -37,9 +37,16 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/database/$id/views](./rest-get-database-views)                         | Opvragen selecties                            |
 | POST      | [api.copernica.com/database/$id/views](./rest-post-database-views)                        | Aanmaken nieuwe selectie                      |
 | GET       | [api.copernica.com/profile/$id](./rest-get-profile)                                       | Opvragen profielgegevens                      |
+| PUT       | [api.copernica.com/profile/$id](./rest-put-profile)                                       | Bijwerken profielgegevens                     |
+| DELETE    | [api.copernica.com/profile/$id](./rest-delete-profile)                                    | Verwijderen profiel                           |
 | GET       | [api.copernica.com/profile/$id/fields](./rest-get-profile-fields)                         | Opvragen profielvelden                        |
+| PUT       | [api.copernica.com/profile/$id/fields](./rest-put-profile-fields)                         | Bijwerken profielvelden                       |
 | GET       | [api.copernica.com/profile/$id/interests](./rest-get-profile-interests)                   | Opvragen interesses van profiel               |
+| POST      | [api.copernica.com/profile/$id/interests](./rest-post-profile-interests)                  | Toevoegen interesses van profiel              |
+| PUT       | [api.copernica.com/profile/$id/interests](./rest-put-profile-interests)                   | Overschrijven interesses van profiel          |
+| PUT       | [api.copernica.com/profile/$id/changeinterests](./rest-put-profile-changeinterests)       | In- en uitschakelen interesses van profiel    |
 | GET       | [api.copernica.com/profile/$id/subprofiles](./rest-get-profile-subprofiles)               | Opvragen subprofielen van een profiel         |
+| POST      | [api.copernica.com/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Toevoegen van een subprofielen aan een profiel|
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Opvragen collectiegegevens                    |
 | PUT       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Bijwerken collectiegegevens                   |
 | GET       | [api.copernica.com/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen velden in een collectie              |
