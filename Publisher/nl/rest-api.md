@@ -34,6 +34,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | PUT       | [api.copernica.com/database/$id/profiles](./rest-put-database-profiles)                   | Meerdere profielen tegelijk bewerken          |
 | GET       | [api.copernica.com/database/$id/profileids](./rest-get-database-profileids)               | Opvragen profiel identifiers                  |
 | GET       | [api.copernica.com/database/$id/views](./rest-get-database-views)                         | Opvragen selecties                            |
+| POST      | [api.copernica.com/database/$id/views](./rest-post-database-views)                        | Aanmaken nieuwe selectie                      |
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection)                                 | Opvragen collectiegegevens                    |
 | GET       | [api.copernica.com/collection/$id/callbacks](./rest-get-collection-callbacks)             | Opvragen feedback loops van een collectie     |
 | GET       | [api.copernica.com/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen velden in een collectie              |
