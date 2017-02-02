@@ -55,10 +55,10 @@ gemaakt:
     U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email|escape}.
 
 Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
-niet zeker bent van de data in de database zijn omdat de gegevens door mensen 
-door middel van vrije tekstvelden is ingevoerd, dan moet je de |escape modifier 
-gebruiken om de data te neutraliseren. Dit geldt alleen voor Smarty code binnen
-HTML tekst, en dus niet voor variabelen binnen de tekstversie van een mail of 
+niet zeker bent van de data in de database omdat de gegevens door mensen 
+door middel van vrije tekstvelden zijn ingevoerd, dan moet je de |escape modifier 
+gebruiken om de data te neutraliseren. Dit geldt voor alle Smarty code binnen
+HTML tekst, maar niet voor variabelen binnen de tekstversie van een mail of 
 in de onderwerpsregel. De tekstversie en de onderwerpsregel bestaat niet uit HTML 
 code en daar hoef je dus geen gebruik te maken van de |escape modifier.
 
@@ -66,7 +66,7 @@ code en daar hoef je dus geen gebruik te maken van de |escape modifier.
 ## Accolades
 
 Als je accolades in een template of een document wilt opnemen die niet als Smarty 
-code mag worden herkend, dan kun je dit op twee manieren doen: door {ldelim} en
+code hoeven te worden herkend, dan kun je dit op twee manieren doen: door {ldelim} en
 {rdelim} te gebruiken, of door van {literal} en {/literal} gebruik te maken.
 
 De {ldelim} en {rdelim} (de namen zijn afgeleid *left delimiter* en *right delimiter*)
@@ -80,12 +80,11 @@ niet Smarty gecontroleerd op accolades. Alle accolades worden letterlijk overgen
 zelfs als het wel geldige Smarty variabelen lijken te zijn:
 
     {literal}
-        Hallo {$name|escape}!
+        Ik ben gek op {accolades}!
     {/literal}
 
-Als je bovenstaand code in een mailing opneemt, dan wordt de variabele {$name|escape}
-niet vervangen door de naam van de ontvanger, maar blijft de oorspronkelijke invoer
-gewoon in de mailing staan.
+Als je bovenstaand code in een mailing opneemt, dan wordt de code {accolades}
+niet gezien als Smarty code en blijft het gewoon in de mailing staan.
     
 Zie ook: [Probleem: Blokhaken en accolades veroorzaken
 personalisatiefouten](how-to-solve-errors-in-personalization)
