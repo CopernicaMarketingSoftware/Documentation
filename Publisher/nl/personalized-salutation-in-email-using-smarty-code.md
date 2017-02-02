@@ -1,39 +1,34 @@
+# Hoe maak je een gepersonaliseerde aanhef?
+
 Met behulp van smarty code kan je op vrij eenvoudige wijze je
 nieuwsbrief van een persoonlijke noot voorzien. In dit artikel leer je
-hoe je met behulp van smarty voorwaarden (if en else- statements) de
+hoe je met behulp van smarty voorwaarden (if en else-statements) de
 aanhef van het document voor iedere ontvanger passend kunt maken.
 
-Let op:** test de mailing grondig** voordat je deze definitief gaat
+Let op: **test de mailing grondig** voordat je deze definitief gaat
 versturen. Maak een selectie in de database met hierin verschillende
 testprofielen die alle situaties uit jouw database dekken. Dus
 man/vrouw, gebruik grote en kleine letters door elkaar, tussenvoegsels
 en dergelijke.
 
-Let op 2: Smarty variabelen zijn hoofdlettergevoelig. {\$voornaam} is
-dus wat anders dan {\$Voornaam}.
-
-Eenvoudige informele aanhef
----------------------------
+## Een eenvoudige informele aanhef
 
 Wanneer je van al je relaties de voornaam weet kan je de aanhef
 gemakkelijk personaliseren door te verwijzen naar het veld waarin de
 voornaam is opgeslagen. In dit voorbeeld het veld *Voornaam*
 
-`Beste {$Voornaam},`
+`Beste {$Voornaam|escape},`
 
-*Beste Henk,*\
- *Beste Klazien,*
+Echter, een ontvanger die zonder voornaam in de database staat moet natuurlijk
+ook goed worden aangesproken. Je wilt niet dat er beste-spatie-komma boven
+de mail komt te saan. Om dit te voorkomen, doet je het volgende:
 
-Echter, een ontvanger waarvan je geen voornaam weet, zal boven de mail
-de aanhef 'Beste ', lezen. Om dit te voorkomen, doet je het volgende:
-
-`{if $Voornaam != ""}Beste {$Voornaam}{else}Beste relatie{/if},`
+`{if $Voornaam != ""}Beste {$Voornaam|escape}{else}Beste relatie{/if},`
 
 Vrij vertaald: als in het veld *Voornaam* een waarde is gevonden, dan
 wordt deze waarde getoond. Toon anders de waarde *Beste relatie*.
 
-Formele aanhef
---------------
+## Formele aanhef
 
 Indien je geadresseerden formeel wilt aanspreken dien je ook het
 geslacht (M/V) van je relaties te weten:
@@ -42,65 +37,30 @@ geslacht (M/V) van je relaties te weten:
 -   Geachte mevrouw Putjes,
 -   Geachte heer Van der Sloot,
 
-Geachte {if $Geslacht=="Man"}heer {elseif $Geslacht=="Vrouw"}mevrouw
-{/if} {if $Tussenvoegsel}{$Tussenvoegsel|lower|ucfirst}{/if} {if
-$Achternaam}{$Achternaam}{else}relatie{/if},
+'Geachte {if $Achternaam == ""}relatie{else}{if $Geslacht=="Man"}heer {else}mevrouw {/if} {if $Tussenvoegsel}{$Tussenvoegsel|lower|ucfirst|escape}{/if} {$Achternaam|escape}{/if},'
 
-Er wordt dus rekening gehouden met het geslacht van de relatie, en of
-deze persoon wel of geen tussenvoegsel heeft in de naam. Wanneer er
-helemaal geen achternaam beschikbaar is, wordt niet verder
-gepersonaliseerd, en *Geachte relatie* als aanhef getoond.
+Er wordt dus rekening gehouden met het geslacht van de relatie en of deze persoon 
+wel of geen tussenvoegsel heeft in de naam. Wanneer er helemaal geen achternaam 
+beschikbaar is, wordt niet verder gepersonaliseerd, en *Geachte relatie* als 
+aanhef getoond.
 
-[Meer over voorwaarden in
-personalisatie](./personalizing-from-a-profile-or-subprofile.md "Personalisatie uit een profiel of subprofiel")
+Ook is het interessant om te zien hoe de [Smarty modifiers](./personalization-modifiers.md) 
+worden gebruikt. De |lower modifier wordt eerst gebruikt om alle letters van het 
+tussenvoegsel naar *lowercase* (kleine letters) om te zetten, en daarna wordt de 
+|ucfirst modifier gebruikt om de eerste letter weer om te zetten naar een hoofdletter.
+Natuurlijk worden alle variabelen door de |escape modifier gehaald om
+misbruik te voorkomen.
 
-Opmaak van personalisatie
--------------------------
 
-Het kan voorkomen dat gegevens in je database onderling qua hoofdletter
-gebruik van elkaar afwijken, of gegevens helemaal ontbreken. Gelukkig
-zijn er in Smarty speciale filterfuncties beschikbaar om deze
-afwijkingen correct af te vangen.
+## Initialen afvangen
 
-### lower
+Je wilt personaliseren met *Beste Voornaam*, Echter, voor sommige relaties staan
+alleen de voorletters in de database. Het resultaat zal dan zijn: Beste B.R., Dit
+staat natuurlijk een beetje slordig. Er is gelukkig een manier om dit af te vangen:
 
-Dit filter wordt gebruikt om alle hoofdletters te verwijderen.
+`Beste {if $Voornaam|count_sentences < 1}{$Voornaam|escape}{else}klant{/if},`
 
-Als de variabele {$Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
-zorgt de code {$Naam|lower} ervoor dat wordt weergegeven: **'karel
-appel'**
-
-### ucfirst
-
-Dit filter zorgt ervoor dat het eerste karakter uit een string
-(tekenreeks) een hoofdletter wordt.
-
-Als de variabele {$Naam|ucfirst} de waarde heeft: '**hans**' dan zal
-het volgende in het document komen te staan: **Hans**
-
-De filters kunnen ook worden gecombineerd:
-
-Als de variabele {$Tussenvoegsel} de waarde 'VAN dER' heeft, dan zal
-door het toevoegen van de twee filters {$Tussenvoegsel|lower|ucfirst}
-de waarde ‘Van der’ in het document komen te staan.
-
-[Meer smarty filters en
-toepassingen](./filter-data-with-smarty-modifiers.md "Opmaak van smarty personalisatie (Smarty filters)")
-
-### Initialen afvangen
-
-Je wilt personaliseren met *Beste Voornaam*,
-
-Echter, nu wil het geval dat je van sommige relaties alleen de
-voorletters hebt. Het resultaat zal dan zijn: Beste B.R.,
-
-Dit staat natuurlijk een beetje slordig. Er is gelukkig een manier om
-dit af te vangen:
-
-`Beste {if $Voornaam|count_sentences < 1}{$Voornaam}{else}klant{/if},`
-
-*count\_sentences* is een smarty functie die het aantal zinnen in een
-reeks tekens telt op basis van het aantal gevonden punten(.). De
-bovenstaande voorwaarde kijkt of het aantal punten in de waarde kleiner
-is dan 1 (dus nul). Indien dit het geval is wordt de voornaam getoond.
-Anders wordt *'klant'* getoond.
+*count_sentences* is een smarty modifier die het aantal zinnen in een reeks tekens
+telt op basis van het aantal gevonden punten(.). De bovenstaande voorwaarde kijkt 
+of het aantal punten in de waarde kleiner is dan 1 (dus nul). Indien dit het geval
+is wordt de voornaam getoond, anders "klant".
