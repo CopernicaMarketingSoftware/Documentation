@@ -12,7 +12,7 @@
     * [Exporting profiles](database-export)
 * [Selections and miniselections](selections-introduction)
     * [Management options](selections-settings)
-    * [Selection conditions](selection-conditions-new)
+    * [Selection conditions](selections-conditions)
     * [Optimizing selections](optimizing-selections)
 * [Sender domains](sender-domains)
     * [MX records](mx)
