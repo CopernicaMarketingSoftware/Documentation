@@ -2,7 +2,7 @@
 * [Quick start](quick-start-guide)
     * [Setting up a sender domain](quick-sender-domain-guide)
     * [Setting up a database](quick-database-guide)
-    * [Your first mailing](your-first-mailings)
+    * [Your first mailing](quick-mailing-guide)
 * [Accounts and users](accounts-and-users)
 * [Database management](database-management-new)
     * [Fields and collections](fields-and-collections)
