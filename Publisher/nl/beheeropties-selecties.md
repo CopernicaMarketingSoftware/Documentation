@@ -1,5 +1,5 @@
 # Beheeropties voor selecties
-Naast aanmaken en verwijderen ([hier](selecties-en-miniselecties.md) beschreven) kun je nog meer uithalen met selecties. Hieronder een overzicht van beheeropties voor selecties en miniselecties.
+Naast aanmaken en verwijderen ([hier](selections-introduction.md) beschreven) kun je nog meer uithalen met selecties. Hieronder een overzicht van beheeropties voor selecties en miniselecties.
 
 ## Selecties kopiëren of verplaatsen
 Het kan gebeuren dat je een selectie per ongeluk op de verkeerde plaats aanmaakt. Gelukkig kun je een selectie eenvoudig verplaatsen naar een andere locatie binnen je database. Daarnaast kun je selecties kopiëren. Dit is handig wanneer je meerdere selecties wilt aanmaken die onderling weinig van elkaar verschillen.

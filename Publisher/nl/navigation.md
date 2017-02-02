@@ -10,7 +10,7 @@
     * [Uitschrijfgedrag](database-unsubscribe-behavior)
     * [Importeren van profielgegevens](database-import)
     * [Exporteren van profielgegevens](database-export)
-* [Selecties en miniselecties](selecties-en-miniselecties)
+* [Selecties en miniselecties](selections-introduction)
     * [Beheeropties voor (mini)selecties](beheeropties-selecties)
     * [Selectiecondities](selectiecondities)
     * [Optimaliseren van selecties](tips-selecties-optimaliseren)
