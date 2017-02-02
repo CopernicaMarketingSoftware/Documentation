@@ -66,10 +66,10 @@ het bericht voor een subprofiel wordt gepersonaliseerd.
 ## Itereren over subprofielen
 
 Als je gebruik maakt van een gelaagde databasestructuur, dan kun je *itereren*
-over de subprofielen die aan een profiel zijn gelinkt. Als je, laten we eens
-een voorbeeld geven, eigenaar van een dierenwinkel bent en een database met 
-klantgegevens hebt met per klant een collecties met katten en een collectie 
-met honden, dan kun je dergelijke personalisaties maken:
+over de subprofielen die aan een profiel zijn gelinkt. Als je, bijvoorbeeld,
+eigenaar van een dierenwinkel bent en een database met klantgegevens hebt met 
+per klant een collecties met katten en een collectie met honden, dan kun je 
+dit soort personalisaties maken:
 
     Beste {$profile.voornaam|escape},
     
