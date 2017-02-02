@@ -5,7 +5,7 @@
     * [Your first mailing](quick-mailing-guide)
 * [Accounts and users](accounts-and-users)
 * [Database management](database-introduction)
-    * [Fields and collections](fields-and-collections)
+    * [Fields and collections](database-fields-and-collections)
     * [Restrictions](restrictions-and-user-options)
 * [Automatic links](automatic-links.md)
     * [REST API](copernica-rest-api-en)

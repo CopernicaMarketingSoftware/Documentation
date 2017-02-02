@@ -5,7 +5,7 @@
     * [Je eerste drag-n-drop mail](quick-mailing-guide)
 * [Accounts en gebruikers](accounts-and-users)
 * [Databasebeheer](database-introduction)
-    * [Velden en collecties](velden-en-collecties)
+    * [Velden en collecties](database-fields-and-collections)
     * [Restricties](restricties-en-gebruiksmogelijkheden)
     * [Uitschrijfgedrag](uitschrijfgedrag)
     * [Importeren van profielgegevens](importeren-van-profielgegevens)

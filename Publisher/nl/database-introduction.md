@@ -54,7 +54,7 @@ je zou bijvoorbeeld ook een database met bedrijven kunnen aanmaken, inclusief
 een collectie met de medewerkers per bedrijf. Of een database met ouders, en
 een collectie voor de kinderen.
 
-[Lees meer over het maken van velden en collecties](velden-en-collecties)
+[Lees meer over het maken van velden en collecties](database-fields-and-collections)
 
 
 Overige opties
