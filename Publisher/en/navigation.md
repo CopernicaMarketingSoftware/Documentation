@@ -7,6 +7,11 @@
 * [Database management](database-introduction)
     * [Fields and collections](database-fields-and-collections)
     * [Restrictions](database-restrictions-and-capabilities)
+    * [Handling unsubscribes](database-unsubscribe-behavior)
+    * [Importing profiles](database-import)
+    * [Exporting profiles](database-export)
+
+
 * [Automatic links](automatic-links.md)
     * [REST API](copernica-rest-api-en)
     * [Feedback loops](feedback-loops)
