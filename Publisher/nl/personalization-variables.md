@@ -117,7 +117,7 @@ Maar het kan ook andersom. Je kunt een mailing naar de dierenartsen sturen, en
 verwijzen naar de patienten van de dierenarts. Hiervoor is de {$profile.referrers}
 variabele. De variabele {$profile.referrers.klanten} bevat alle profielen in de
 database "klanten" die verwijzen naar het profiel. Je kunt zelfs specifiek
-opgeven welk foreign key veld je wilt gebruiken (handig als je meerdere foreign
+opgeven welk foreign key veld je wilt gebruiken, wat handig als je meerdere foreign
 key velden hebt: {$profile.referrers.dierenarts@klanten}.
 
 De foreign key velden zijn pas later toegevoegd aan Copernica. Voordat deze 
