@@ -4,7 +4,7 @@
     * [Setting up a database](quick-database-guide)
     * [Your first mailing](quick-mailing-guide)
 * [Accounts and users](accounts-and-users)
-* [Database management](database-management-new)
+* [Database management](database-introduction)
     * [Fields and collections](fields-and-collections)
     * [Restrictions](restrictions-and-user-options)
 * [Automatic links](automatic-links.md)

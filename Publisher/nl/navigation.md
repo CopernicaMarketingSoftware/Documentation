@@ -4,7 +4,7 @@
     * [Database inrichten](quick-database-guide)
     * [Je eerste drag-n-drop mail](quick-mailing-guide)
 * [Accounts en gebruikers](accounts-and-users)
-* [Databasebeheer](database-beheer)
+* [Databasebeheer](database-introduction)
     * [Velden en collecties](velden-en-collecties)
     * [Restricties](restricties-en-gebruiksmogelijkheden)
     * [Uitschrijfgedrag](uitschrijfgedrag)
