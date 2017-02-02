@@ -19,7 +19,7 @@ Het bestand hierboven is een voorbeeld van een tabgescheiden bestand. Gebruik je
 
 ## Je bestand importeren
 ### Kolommen koppelen
-We gaan er voor het gemak vanuit dat je al een database hebt aangemaakt. Is dit niet het geval, lees dan eerst [hier](https://www.copernica.com/nl/documentation/database-inrichten) hoe je dat doet. 
+We gaan er voor het gemak vanuit dat je al een database hebt aangemaakt. Is dit niet het geval, lees dan eerst [hier](quick-database-guide) hoe je dat doet. 
 Kies in het menu *Huidige weegave* voor *Importeren/Exporteren* en kies *Importeren*. Kies je bestand en je gebruikte scheidingsteken. Klik door naar de volgende stap.
 
 In het scherm dat je nu voor je hebt koppel je de kolommen uit je importbestand aan de velden van je database. Als je nog geen databasevelden hebt gemaakt, kun je op *Maak alle velden aan* klikken om velden aan te maken met dezelfde namen als je kolommen. Als je wel al velden hebt gemaakt, kun je het veld selecteren dat slaat op de kolom. Daarnaast geef je onder *Type* het veldtype aan. Ben je nog niet bekend met alle verschillende veldtypen? Je vindt ze [hier](https://www.copernica.com/nl/documentation/velden-en-collecties). Als je geen specifiek veldtype selecteert, wordt het veld een tekstveld. Je kunt het type achteraf altijd nog wijzigen.
