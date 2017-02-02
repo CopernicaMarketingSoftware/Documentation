@@ -11,7 +11,7 @@ As you may know, Copernica determines which profiles are added to a selection ba
 * **Previous exports**. Use this to select profiles that have been exported between two points in time.
 
 It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here](sorting-and-selecting-profiles-in-a-database-or-collection) how to to this.
-More on conditions and rules can be found [here](selection-conditions-new).
+More on conditions and rules can be found [here](selection-conditions).
 
 ## Rules and conditions
 Filtering profiles is done using selection rules and selection conditions. These are used to specify what properties the profile needs to have to be part of the selection. It's important to note that in this case, a rule and a condition are two different things. A condition is part of a rule; multiple conditions can make up a rule. A rule could be: a profile bust be female AND under 30. Females over 30 or men under 30 cannot be in this selection.

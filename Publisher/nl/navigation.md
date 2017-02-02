@@ -12,7 +12,7 @@
     * [Exporteren van profielgegevens](database-export)
 * [Selecties en miniselecties](selections-introduction)
     * [Beheeropties voor selecties](selections-settings)
-    * [Selectiecondities](selectiecondities)
+    * [Selectiecondities](selections-conditions)
     * [Optimaliseren van selecties](tips-selecties-optimaliseren)
 * [Sender domains](sender-domains)
     * [MX records](mx)
