@@ -11,7 +11,7 @@
     * [Importeren van profielgegevens](database-import)
     * [Exporteren van profielgegevens](database-export)
 * [Selecties en miniselecties](selections-introduction)
-    * [Beheeropties voor (mini)selecties](beheeropties-selecties)
+    * [Beheeropties voor selecties](selections-settings)
     * [Selectiecondities](selectiecondities)
     * [Optimaliseren van selecties](tips-selecties-optimaliseren)
 * [Sender domains](sender-domains)

@@ -11,7 +11,7 @@
     * [Importing profiles](database-import)
     * [Exporting profiles](database-export)
 * [Selections and miniselections](selections-introduction)
-    * [Management options](management-options-for-selections)
+    * [Management options](selections-settings)
     * [Selection conditions](selection-conditions-new)
     * [Optimizing selections](optimizing-selections)
 * [Sender domains](sender-domains)
