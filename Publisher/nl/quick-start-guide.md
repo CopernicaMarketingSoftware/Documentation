@@ -27,7 +27,7 @@ stappen zet, dan heb je genoeg gedaan om je eerste mailing te versturen.
 
 * [Afzenderdomain instellen](quick-sender-domain-guide)
 * [Database inrichten](quick-database-guide)
-* [Je eerste mail met de drag-and-drop editor](eerste-drag-and-drop-mail)
+* [Je eerste mail met de drag-and-drop editor](quick-mailing-guide)
 
 
 Aanvullende stappen

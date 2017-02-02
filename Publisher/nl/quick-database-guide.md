@@ -100,6 +100,6 @@ Volgende stap
 Als je een database hebt aangemaakt, daar een aantal velden in hebt aangemaakt 
 (waaronder natuurlijk een veld met een emailadres), en je eigen profiel aan
 die database hebt toegevoegd, kun je beginnen met het 
-[maken van een eerste mailing](eerste-drag-and-drop-mail) om verder te ontdekken 
+[maken van een eerste mailing](quick-mailing-guide) om verder te ontdekken 
 hoe Copernica werkt.
 
