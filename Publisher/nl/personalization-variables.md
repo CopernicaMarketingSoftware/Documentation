@@ -109,8 +109,9 @@ de dierenarts.
  
 Bij het personaliseren herkent Copernica dat *dierenarts* een foreign key veld
 is. Alle velden van de desbetreffende dierenarts zijn dan automatisch beschikbaar.
-{$profile.dierenarts} is een object, en heeft dezelfde soort properties als 
-het "gewone" {$profile} object. Je kun dus bijna eindeloos de diepte in.
+{$profile.dierenarts} is een object en heeft dezelfde soort properties als 
+het "gewone" {$profile} object, met ook weer collecties en foreign keys.
+Je kun dus eindeloos de diepte in.
 
 Maar het kan ook andersom. Je kunt een mailing naar de dierenartsen sturen, en
 verwijzen naar de patienten van de dierenarts. Hiervoor is de {$profile.referrers}
