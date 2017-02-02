@@ -93,7 +93,7 @@ personaliseren van je mailings.
 ## Foreign key velden
 
 Maar er kan meer. Je kunt in een database *foreign key* velden aanmaken. Dit zijn
-nummeriek velden met daarin het ID van een profiel in dezelfde of zelfs een heel
+nummerieke velden met daarin het ID van een profiel in dezelfde of zelfs een heel
 andere database. Dit type veld stelt je in staat om relationele objectmodellen te
 maken en te gebruiken bij het personaliseren.
 
