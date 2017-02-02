@@ -128,5 +128,5 @@ De volgende stap
 ----------------
 
 Om de eerste mail te kunnen versturen, heb je natuurlijk 
-[een database met profielen](database-inrichten) nodig om die mailing naar
+[een database met profielen](quick-database-guide) nodig om die mailing naar
 toe te sturen.
