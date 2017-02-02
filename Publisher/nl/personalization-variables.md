@@ -136,11 +136,11 @@ een {$account} en {$mailing} object met gegevens over de mailing. In het
 * **{$account.id}**: nummerieke identifier van je account
 * **{$account.name}**: naam van je account
 
-Het {$mailing} object is veel uitgebreider, en bevat allerlei instellingen
+Het {$mailing} object is wat uitgebreider, en bevat allerlei instellingen
 van de mailing waartoe het bericht behoort:
 
 * **{$mailing.sendtime}**: tijdstip waarop de mailing wordt verstuurd, in YYYY-MM-DD hh:mm:ss format
-* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 januari 1970)
+* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 jan 1970)
 * **{$mailing.trigger}**: optioneel object dat de mailing heeft opgestart
 * **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
 * **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
