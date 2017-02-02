@@ -22,7 +22,7 @@ De belangrijkste verschillen worden in dit artikel uiteengezet.
     smarty 2.
 -   Wanneer je twijfel heeft over de smarty versie waarvan jouw template
     gebruik maakt, dan kan je gemakkelijk (tijdelijk) de versie
-    achterhalen door de code {\$smarty.version} in de template of het
+    achterhalen door de code {$smarty.version} in de template of het
     document op te nemen. Wanneer je het document gepersonaliseerd
     weergeeft zal de gebruikte smarty versie worden weergegeven.
 
@@ -85,10 +85,7 @@ of
 
 ## Meer lezen over smarty 3
 
--   Meer informatie over Smarty 3 kan je vinden op de website van
-    Smarty[http://www.smarty.net/v3\_overview](http://www.smarty.net/v3_overview)
 -   Smarty 3 is uitgebreid gedocumenteerd. Kijk hiervoor alvast op
     [http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/)
--   Bekijk ook onze whiteboardsessie over smarty
-    3: [http://www.copernica.com/nl/kennis/smarty-3](./smarty-2-to-smarty-3-copernica-whiteboard.md)
+-   Bekijk ook onze [whiteboardsessie over smarty](./smarty-2-to-smarty-3-copernica-whiteboard.md)
 
