@@ -66,5 +66,5 @@ is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
 dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
 door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
-[Lees meer over restricties en gebruikesmogelijkhedeh](restricties-en-gebruiksmogelijkheden)
+[Lees meer over restricties en gebruikesmogelijkhedeh](database-restrictions-and-capabilities)
 
