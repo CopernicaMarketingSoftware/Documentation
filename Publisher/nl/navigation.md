@@ -1,6 +1,6 @@
 * [Introductie](introduction)
 * [Snel aan de slag](quick-start-guide)
-    * [Afzenderdomain instellen](sender-domain-instellen)
+    * [Afzenderdomain instellen](quick-sender-domain-guide)
     * [Database inrichten](database-inrichten)
     * [Je eerste drag-n-drop mail](eerste-drag-and-drop-mail)
 * [Accounts en gebruikers](accounts-en-gebruikers)

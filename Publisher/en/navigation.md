@@ -1,6 +1,6 @@
 * [Introduction](introduction.md)
 * [Quick start](quick-start-guide)
-    * [Setting up a sender domain](setup-sender-domain)
+    * [Setting up a sender domain](quick-sender-domain-guide)
     * [Setting up a database](setup-database)
     * [Your first mailing](your-first-mailings)
 * [Accounts and users](accounts-and-users)
