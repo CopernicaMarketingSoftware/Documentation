@@ -13,7 +13,7 @@
 * [Selections and miniselections](selections-introduction)
     * [Management options](selections-settings)
     * [Selection conditions](selections-conditions)
-    * [Optimizing selections](optimizing-selections)
+    * [Optimizing selections](selections-optimization)
 * [Sender domains](sender-domains)
     * [MX records](mx)
     * [SPF records](spf)
