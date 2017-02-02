@@ -87,5 +87,4 @@ of
 
 -   Smarty 3 is uitgebreid gedocumenteerd. Kijk hiervoor alvast op
     [http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/)
--   Bekijk ook onze [whiteboardsessie over smarty](./smarty-2-to-smarty-3-copernica-whiteboard.md)
 

@@ -1,31 +1,40 @@
+# Basisbeginselen van personaliseren
+
 Mailings, webpagina's, sms-berichten en PDF-bestanden kunnen worden
 gepersonaliseerd door gebruik te maken van speciale codes. Deze codes
-worden automatisch vervangen door de bijbehorende gegevens van de
-geadresseerde. De speciale codes komen uit een scripttaal genaamd
-*Smarty*. Ga naar
+worden automatisch vervangen door de bijbehorende gegevens van de geadresseerde. 
+De speciale codes komen uit een scripttaal genaamd *Smarty*. Ga naar
 [http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/) voor
 een complete handleiding van de mogelijkheden van Smarty.
 
-Formulering van personalisatie
-------------------------------
+## Formulering van personalisatie
 
-Personalisatie in Copernica werkt middels
-scripttaal [Smarty](http://www.smarty.net/). Je kan elk database- of
-collectieveld opnemen in je templates, documenten en teksten, waarbij
-deze wordt vervangen door de persoonsgegevens van de lezer of
-geadresseerde.
+Een personalisatievariabele bestaat uit dollarteken en een naam van een variabele,
+tussen twee accolades in. De volgende variabelen zou je bijvoorbeeld in een template
+of document kunnen gebruiken:
 
-De code wordt gekenmerkt door het gebruik van **accolades**, { en }, en
-het **dollarteken**, \$.
+* **{$naam}**
+* **{$email}**
+* **{$aanhef}**
 
-### **Veldnamen**
+De personalisatievariabelen werken natuurlijk alleen als er in de database ook
+velden met de "naam", "email" en "aanhef" voorkomen, en als je voor de 
+geadresseerden van de mailing deze gegevens ook hebt ingevuld. Maar als dat
+het geval is, dan kun je deze variabelen gewoon in de aanhef van je mailing
+gebruiken:
 
-Personalisatie op basis van relatiegegevens doe je middels de database
-en collectie veldnamen uit *'Profielen'*. Het werkt alleen wanneer je de
-naam van het veld exact overneemt in de code.
+    Geachte {$aanhef} {$naam},
+    
+    U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email}.
 
--   Smarty is **hooflettergevoelig**. {\$name} is dus wat anders dan
-    {\$NAME}
+Zo eenvoudig is het. Maar je moet wel op een paar dingen letten:
+
+* Smarty is *hooflettergevoelig*. {$name} is dus wat anders dan {$NAME}.
+* Als je 
+
+
+
+
 -   het moet duidelijk zijn of het
     een [profiel of subprofiel](./personalizing-from-a-profile-or-subprofile.md) veld
     betreft.
