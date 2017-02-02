@@ -3,7 +3,7 @@
     * [Afzenderdomain instellen](quick-sender-domain-guide)
     * [Database inrichten](quick-database-guide)
     * [Je eerste drag-n-drop mail](quick-mailing-guide)
-* [Accounts en gebruikers](accounts-en-gebruikers)
+* [Accounts en gebruikers](accounts-and-users)
 * [Databasebeheer](database-beheer)
     * [Velden en collecties](velden-en-collecties)
     * [Restricties](restricties-en-gebruiksmogelijkheden)
