@@ -14,15 +14,14 @@ personalisatievariabelen:
 
 Je kunt deze variabelen rechtstreeks in de template of het document zetten,
 maar je kunt de velden ook benaderen via de voorgedefinieerde objecten 
-{$profile}, {$subprofile} of {$destination}.
+{$profile}, {$subprofile} en {$destination}.
 
 
 ## Mailings naar profielen
 
 Omdat Copernica gelaagde databases ondersteunt, kunnen mailings worden verstuurd 
 naar profielen, maar ook naar de bij profielen horende subprofielen. Deze 
-gelaagde structuur heeft ook gevolgen voor de beschikbare personalisatievariabelen.
-
+gelaagde structuur heeft gevolgen voor de beschikbare personalisatievariabelen.
 Maar of je nu een mailing naar profielen of naar subprofielen verstuurt, er is 
 altijd een {$profile} object. In dit object staan de gegevens van het profiel
 waarnaar het bericht is gestuurd, of, in het geval van een mailing naar 
@@ -62,4 +61,38 @@ of je {$profile.veldnaam} of {$subprofile.veldnaam} moet gebruiken, dan kun je
 de {$destination} variabele gebruiken. De {$destination} variabele is een alias voor
 {$profile} bij mailings naar profielen, en een alias voor {$subprofile} als
 het bericht voor een subprofiel wordt gepersonaliseerd.
+
+
+## Itereren over subprofielen
+
+Als je gebruik maakt van een gelaagde databasestructuur, dan kun je *itereren*
+over de subprofielen die aan een profiel zijn gelinkt. Als je, laten we eens
+een voorbeeld geven, eigenaar van een dierenwinkel bent en een database met 
+klantgegevens hebt met per klant een collecties met katten en een collectie 
+met honden, dan kun je dergelijke personalisaties maken:
+
+    Beste {$profile.voornaam|escape},
+    
+    Volgens onze database heb je {$profile.katten|count} katten en 
+    {$profile.honden|count} honden. 
+    
+    De dieren in ons systeem:
+    
+    {foreach from=$profile.katten item=kat}
+        {$kat.naam|escape} (kat)
+    {/foreach}
+    {foreach from=$profile.honder item=hond}
+        {$hond.naam|escape} (hond)
+    {/foreach}
+
+Bovenstaand eenvoudige voorbeeld demonstreert hoe krachtig de personalisatiemogelijkheden
+zijn. Zowel de profielgegevens als de subprofieldata kun je gebruiken voor het
+personaliseren van je mailings. 
+
+
+## Foreign key velden
+
+
+
+
 
