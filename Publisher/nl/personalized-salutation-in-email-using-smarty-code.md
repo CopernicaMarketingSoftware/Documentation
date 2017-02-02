@@ -2,8 +2,8 @@
 
 Met behulp van smarty code kan je op vrij eenvoudige wijze je
 nieuwsbrief van een persoonlijke noot voorzien. In dit artikel leer je
-hoe je met behulp van smarty voorwaarden (if en else-statements) de
-aanhef van het document voor iedere ontvanger passend kunt maken.
+hoe je met behulp van Smarty de aanhef van het document voor iedere ontvanger 
+passend kunt maken.
 
 Let op: **test de mailing grondig** voordat je deze definitief gaat
 versturen. Maak een selectie in de database met hierin verschillende
@@ -41,14 +41,14 @@ geslacht (M/V) van je relaties te weten:
 
 Er wordt dus rekening gehouden met het geslacht van de relatie en of deze persoon 
 wel of geen tussenvoegsel heeft in de naam. Wanneer er helemaal geen achternaam 
-beschikbaar is, wordt niet verder gepersonaliseerd, en *Geachte relatie* als 
+beschikbaar is wordt er niet gepersonaliseerd en wordt *Geachte relatie* als 
 aanhef getoond.
 
 Ook is het interessant om te zien hoe de [Smarty modifiers](./personalization-modifiers.md) 
 worden gebruikt. De |lower modifier wordt eerst gebruikt om alle letters van het 
 tussenvoegsel naar *lowercase* (kleine letters) om te zetten, en daarna wordt de 
 |ucfirst modifier gebruikt om de eerste letter weer om te zetten naar een hoofdletter.
-Natuurlijk worden alle variabelen door de |escape modifier gehaald om
+Natuurlijk worden alle variabelen tenslotte door de |escape modifier gehaald om
 misbruik te voorkomen.
 
 
