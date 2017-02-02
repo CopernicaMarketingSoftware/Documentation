@@ -17,7 +17,7 @@ hoef je dit echter niet zelf te doen, maar maken wij deze records aan in *onze*
 aliassen (CNAME records) die verwijzen naar de instellingen bij ons.
 
 Zo simpel is het. In het 
-[snel-aan-de-slag artikel over het instellen van een afzenderdomein](sender-domain-instellen)
+[snel-aan-de-slag artikel over het instellen van een afzenderdomein](quick-sender-domain-guide)
 leggen we het uitgebreid uit. We gaan daarom hier, in dit wat diepgravender
 onderdeel van de documentatie, alleen in op de ingewikkelder zaken.
 
