@@ -119,3 +119,35 @@ variabele. De variabele {$profile.referrers.klanten} bevat alle profielen in de
 database "klanten" die verwijzen naar het profiel. Je kunt zelfs specifiek
 opgeven welk foreign key veld je wilt gebruiken (handig als je meerdere foreign
 key velden hebt: {$profile.referrers.dierenarts@klanten}.
+
+De foreign key velden zijn pas later toegevoegd aan Copernica. Voordat deze 
+velden werden ondersteund, diende je gebruik te maken van de 
+[{loadprofile} en {loadsubprofile} functies](./loadprofile-and-loadsubprofile.md)
+om (sub)profielen in te laden. Deze functies bestaan nog steeds, en kun je
+gebruiken als je ze nodig hebt.
+
+
+## Accounts en mailings
+
+Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
+een {$account} en {$mailing} object met gegevens over de mailing. In het
+{$account} object zitten de volgende members:
+
+* **{$account.id}**: nummerieke identifier van je account
+* **{$account.name}**: naam van je account
+
+Het {$mailing} object is veel uitgebreider, en bevat allerlei instellingen
+van de mailing waartoe het bericht behoort:
+
+* **{$mailing.sendtime}**: tijdstip waarop de mailing wordt verstuurd, in YYYY-MM-DD hh:mm:ss format
+* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 januari 1970)
+* **{$mailing.trigger}**: optioneel object dat de mailing heeft opgestart
+* **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
+* **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
+* **{$mailing.snapshot.subject}**: onderwerp van de mailing 
+
+Het *trigger* object is speciaal. Als een mailing automatisch wordt ingeroosterd
+naar aanleiding van een bepaalde gebeurtenis (zoals een ingevulde enquete of
+een gewijzigd profiel), dan bevat het trigger object allerlei gegevens over
+deze gebeurtenis.
+
