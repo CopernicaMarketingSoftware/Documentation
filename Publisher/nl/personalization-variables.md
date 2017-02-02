@@ -92,7 +92,29 @@ personaliseren van je mailings.
 
 ## Foreign key velden
 
+Maar er kan meer. Je kunt in een database *foreign key* velden aanmaken. Dit zijn
+nummeriek velden met daarin het ID van een profiel in dezelfde of zelfs een heel
+andere database. Dit type veld stelt je in staat om relationele objectmodellen te
+maken en te gebruiken bij het personaliseren.
 
+Om het eenvoudig te houden gaan we verder met het hiervoor gebruikte voorbeeld 
+van de dierenwinkel. Stel dat in de klantendatabase een foreign key veld *dierenarts* 
+is opgenomen dat verwijst naar een database met gegevens van dierenartsen.
+Je kunt dan in de mailing naar je klanten ook gebruik maken van gegevens van
+de dierenarts.
 
+    Beste {$profile.voornaam|escape},
+    
+    Volgens ons systeem is uw dierenarts {$profile.dierenarts.naam|escape}.
+ 
+Bij het personaliseren herkent Copernica dat *dierenarts* een foreign key veld
+is. Alle velden van de desbetreffende dierenarts zijn dan automatisch beschikbaar.
+{$profile.dierenarts} is een object, en heeft dezelfde soort properties als 
+het "gewone" {$profile} object. Je kun dus bijna eindeloos de diepte in.
 
-
+Maar het kan ook andersom. Je kunt een mailing naar de dierenartsen sturen, en
+verwijzen naar de patienten van de dierenarts. Hiervoor is de {$profile.referrers}
+variabele. De variabele {$profile.referrers.klanten} bevat alle profielen in de
+database "klanten" die verwijzen naar het profiel. Je kunt zelfs specifiek
+opgeven welk foreign key veld je wilt gebruiken (handig als je meerdere foreign
+key velden hebt: {$profile.referrers.dierenarts@klanten}.
