@@ -1,4 +1,13 @@
-Met behulp van de {\$smarty.now} functie van Smarty, kun je dynamisch
+# Werken met datums in Smarty
+
+Klinkt een beetje raar misschien, datums, en we weten zelf ook wel dat het
+meervoud van datum eigenlijk anders is. Maar voor programmeurs is *datums* wel 
+lekker duidelijk. Hoe kan je een personaliseren op basis van tijd?
+
+Als je personaliseert kun je altijd de {$smarty.now} variabele gebruiken. Dit
+is een variabele die altijd beschikbaar is, en het huidige tijdstip bevat. 
+
+ van Smarty, kun je dynamisch
 datums en tijden tonen in emailings, landingspagina's en dergelijke.
 
 **Enkele toepassingen:**
