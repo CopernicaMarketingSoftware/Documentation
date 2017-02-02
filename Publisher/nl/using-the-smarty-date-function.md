@@ -54,8 +54,7 @@ Bij de personalisatieinstellingen van een template of document (in de oude Publi
 omgeving staan die onderaan het scherm als je een template of document bewerkt)
 kun je instellen wat de taal en timezone is die bij de template of het document
 hoort. De |date_format modifier kijkt naar deze instelling om te bepalen of
-de variabele %A moet worden vervangen door monday, maandag of Montag. Voor de
-timezone geldt iets dergelijks. 
+de variabele %A moet worden vervangen door monday, maandag of Montag.
 
 Voor de timezone geldt iets soortgelijks. Als je het huidige tijdstip in een mailing
 of op een website wilt tonen, is maar net de vraag welke tijd je daarvoor wilt 
