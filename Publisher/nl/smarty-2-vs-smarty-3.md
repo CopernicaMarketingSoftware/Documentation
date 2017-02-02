@@ -1,3 +1,5 @@
+# Smart 2 of Smarty 3: wat is beter?
+
 Voor het personaliseren van templates en documenten maakt Copernica
 gebruik van de op PHP gebaseerde Smarty engine. Wanneer je een template
 aanmaakt kan je kiezen welke versie van Smarty je wilt gebruiken. Smarty
@@ -24,30 +26,36 @@ De belangrijkste verschillen worden in dit artikel uiteengezet.
     document op te nemen. Wanneer je het document gepersonaliseerd
     weergeeft zal de gebruikte smarty versie worden weergegeven.
 
-Voordelen van Smarty 3
-----------------------
+
+## Voordelen van Smarty 3
+
+Smarty 3 is beter dan Smarty 2. Het is sneller, krachtiger en makkelijker
+in het gebruik. Laten we een aantal voordelen op een rij zetten.
+
 
 ### Auto-escapen van "{" en "}"
 
-Smarty scheidingstekens zoals {} omgeven door spaties (witruimte) worden
-niet meer herkend als Smarty tags. Bijvoorbeeld: { abc } wordt genegeerd
-door Smarty en wordt gezien als een normale accolade. Maar {abc} wordt
-herkend als een Smarty tag. Vanaf Smarty versie 3 is het daarom niet
-meer nodig om gebruik te maken van {ldelim} en {rdelim} om accolades te
-escapen als de scheidingstekens zijn omgegeven door spaties.
+In Smarty 2 worden alle accolades (de tekens "{" en "}") als personalisatietekens
+herkend, dus ook als je ergens in een template of je document zo'n losstaand teken hebt
+geplaatst, zonder de bedoeling om er mee te personaliseren. Dit is erg onhandig, 
+omdat je deze tekens soms veel gebruikt. Vooral in JavaScript code heb je deze 
+karakters veel nodig. Als je Smarty 2 gebruikt moet je elke keer dat je ergens 
+een "{" of een "}" teken wilt neerzetten daarom gebruik maken van "{ldelim}" en 
+"{rdelim}" om aan te geven dat je een puur accoladeteken bedoelt, en niet een 
+personalisatievariabele.
+
+In Smarty 3 worden losse scheidingstekens, dus accolades omgeven door witruimte, 
+gelukkig niet meer herkend als personalisatievariabelen. Alleen aaneengesloten 
+variabelen, zoals {$voornaam} en {$achternaam} worden door Smarty omgezet, terwijl
+losse accolades ongemoeid worden gelaten.
 
 ### Het aanmaken van variabelen gaat sneller
 
-In Smarty 2 kan je in je template en document een variabel aanmaken door
-middel van {capture assign="variabelnaam"}Dit is een variabel
-{/capture}.\
-\
- In Smarty 3 gaat dit een stuk sneller en eenvoudiger. Namelijk:\
-\
- {\$variabelnaam="Dit is een variabel"}\
-\
- De output is precies het zelfde. In dit voorbeeld is de output: *Dit is
-een variabel*
+In Smarty 2 kan je in je template en document een variabele aanmaken door
+middel van {capture assign="naam"}Dit is een variabele{/capture}. In Smarty 3 gaat 
+dit een stuk sneller en eenvoudiger, namelijk {$naam="Dit is een variabele"}.
+Het resultaat is precies het zelfde: in beide gevallen wordt de waarde "Dit
+is een variabele" aan de variabele $naam toegekend.
 
 ### Functies
 
@@ -61,7 +69,7 @@ maakt de code beter beheersbaar.
 Meer informatie over [Smarty In-template
 functies](http://www.smarty.net/docs/en/language.function.function.tpl)
 
-### Strictere syntax parameters
+### Strictere syntax voor parameters
 
 Wanneer je een of meerdere parameters meegeeft aan een smarty 3 functie,
 dan dient deze gequote te worden wanneer hierin spaties of bijvoorbeeld
@@ -73,11 +81,9 @@ Bijvoorbeeld:
 
 of
 
-{in\_miniselection
-miniselection="database:myCollection:myMiniSelection"}
+{in_miniselection miniselection="database:myCollection:myMiniSelection"}
 
-Meer lezen over smarty 3
-------------------------
+## Meer lezen over smarty 3
 
 -   Meer informatie over Smarty 3 kan je vinden op de website van
     Smarty[http://www.smarty.net/v3\_overview](http://www.smarty.net/v3_overview)
