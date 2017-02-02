@@ -41,7 +41,7 @@ Mensen voeren hun eigen naam, woonplaats en e-mailadres in, en kunnen daarbij
 (opzettelijk!) foutieve gegevens invoeren. Je kunt de gegevens die in de database
 staan dus niet zonder meer vertrouwen of ongecontroleerd in je nieuwsbrief 
 plaatsen. Wat gebeurt er met de opmaak van je mailing als iemand heeft ingevoerd 
-dat zijn naam "</table>" is? En opmaak is niet eens het grootste probleem. Als 
+dat zijn naam "&lt;/table&gt;" is? En opmaak is niet eens het grootste probleem. Als 
 je de ongecontroleerde ruwe input van gebruikers ongefilterd in mailings en op 
 websites gebruikt ben je kwetsbaar voor allerlei vormen van misbruik en hacks.
 
