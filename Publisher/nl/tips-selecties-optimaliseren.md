@@ -3,7 +3,7 @@ Selecties worden in Copernica actief bijgehouden, wat betekent dat ze regelmatig
 
 ### Verwijder en heers
 Ook als je een selectie niet actief gebruikt, wordt hij meerdere malen per dag opnieuw opgebouwd en geupdatet. Gebruik je een selectie niet, dan is het dus beter om hem te verwijderen zodat je er geen rekenkracht aan verspilt. Heb je selecties die je niet gebruikt op het moment, maar wil je ze niet weggooien? Dan kun je de voorwaarden van de selectie deactiveren, zodat hij niet opnieuw wordt geactiveerd.
-Meer informatie over verwijderen en deactiveren vind je [hier](beheeropties-selecties).
+Meer informatie over verwijderen en deactiveren vind je [hier](selections-settings).
 
 Hetzelfde geldt voor databases: sommige gebruikers maken wekelijks een nieuwe database aan voor het versturen van een nieuwsbrief of zelfs een klein persbericht. Hoewel wij dit natuurlijk afraden (beter kan je alles binnen een enkele database organiseren) verbieden we het ook niet. Als je dan toch behoeftig bent om voor iedere mailing een nieuwe database te gebruiken, gooi ze dan na verloop van tijd ook weer weg.
 

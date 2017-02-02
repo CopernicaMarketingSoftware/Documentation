@@ -2,7 +2,7 @@
 In Copernica, selections are maintained actively, which means they are rebuilt multiple times a day to keep them updated. This is part of why Copernica is so powerful: all users have to to is specify the conditions for a selection, and Copernica sorts profiles automatically. Active filters do take up some computing power. If your filters are too heavy or you have too many, it can negatively affect your database performance. Organising a database well makes it perform better and faster. Below, we'll show you how to achieve that.
 
 ## Delete and conquer
-Even when you don't use a selection, it is kept active. Therefore, it's better to delete unused selections, as to not waste any computing power. Do you have selections that you don't use, but do plan on using again? Then it's a good idea to deactivate them until you start using them again. More information on deleting and deactivating selections can be found [here](management-options-for-selections).
+Even when you don't use a selection, it is kept active. Therefore, it's better to delete unused selections, as to not waste any computing power. Do you have selections that you don't use, but do plan on using again? Then it's a good idea to deactivate them until you start using them again. More information on deleting and deactivating selections can be found [here](selections-settings).
 
 The same goes for databases: some users make new databases for every mailing they send. Although we discourage this - it's better to do everything within one database - we don't prohibit it either. If you want to organize your profiles in such a way, make sure to delete the databases after a while.
 
