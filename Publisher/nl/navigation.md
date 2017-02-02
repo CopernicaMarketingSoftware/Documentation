@@ -6,7 +6,7 @@
 * [Accounts en gebruikers](accounts-and-users)
 * [Databasebeheer](database-introduction)
     * [Velden en collecties](database-fields-and-collections)
-    * [Restricties](restricties-en-gebruiksmogelijkheden)
+    * [Restricties](database-restrictions-and-capabilities)
     * [Uitschrijfgedrag](uitschrijfgedrag)
     * [Importeren van profielgegevens](importeren-van-profielgegevens)
     * [Exporteren van profielgegevens](exporteren-van-profielgegevens)

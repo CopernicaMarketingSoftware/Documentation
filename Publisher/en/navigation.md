@@ -6,7 +6,7 @@
 * [Accounts and users](accounts-and-users)
 * [Database management](database-introduction)
     * [Fields and collections](database-fields-and-collections)
-    * [Restrictions](restrictions-and-user-options)
+    * [Restrictions](database-restrictions-and-capabilities)
 * [Automatic links](automatic-links.md)
     * [REST API](copernica-rest-api-en)
     * [Feedback loops](feedback-loops)
