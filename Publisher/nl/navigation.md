@@ -13,7 +13,7 @@
 * [Selecties en miniselecties](selections-introduction)
     * [Beheeropties voor selecties](selections-settings)
     * [Selectiecondities](selections-conditions)
-    * [Optimaliseren van selecties](tips-selecties-optimaliseren)
+    * [Optimaliseren van selecties](selections-optimization)
 * [Sender domains](sender-domains)
     * [MX records](mx)
     * [SPF records](spf)
