@@ -2,13 +2,13 @@
 
 Bij elk document en template kun je de personalisatie-instellingen wijzigen. 
 Met deze instellingen bepaal je ondermeer in welke taal [datums](./using-the-smarty-date-function.md)
-worden weergegeven. Je vindt deze instelling linksonder het geopende
+worden weergegeven. Je vindt deze instelling linksonder de geopende
 template of document.
 
 ![](../images/personalisatieinstellingen.png)
 
 Het formulier voor de instellingen vind je zowel bij templates als bij documenten.
-Als je geen expliciete keuze voor deze instellingen op documentniveau, dan valt
+Als je geen expliciete keuze voor deze instellingen op documentniveau maakt, dan valt
 het document terug op de instellingen van de template. Je kunt de volgende
 vier settings veranderen:
 
@@ -37,12 +37,12 @@ altijd goed. De UTF-8 karakterset is namelijk een karakterset die eigenlijk alle
 letters en tekens ter wereld op een efficiente manier kan coderen.
 
 Hoe zit dat precies? Traditioneel kon e-mail alleen worden gebruikt voor ASCII 
-teksten: teksten die bestaan uit het gewone alfabet, cijfers en een kleine 
-verzameling leestekens. Zeg maar de tekens die op een gewoon toetsenbord staan. 
-Buitenlandse tekens, waaronder ook voor ons gewone karakters zoals letters met 
-een trema of een accent (bijvoorbeeld ë, ï of é) horen daar niet bij. Als je
-toch een mail met dergelijke tekens moet versturen, dan moet je expliciet in de
-header van het e-mailbericht opnemen in welke karakterset de mail is opgemaakt:
+teksten: teksten die bestaan uit letters van het gewone alfabet, cijfers en een 
+kleine verzameling leestekens. Zeg maar de tekens die op een gewoon toetsenbord 
+staan. Buitenlandse tekens, waaronder ook karakters die voor ons gewoon zijn, zoals
+letters met een trema of een accent (bijvoorbeeld ë, ï of é) horen daar niet bij. 
+Als je toch een mail met dergelijke tekens moet versturen, dan moet je expliciet 
+in de header van het e-mailbericht opnemen in welke karakterset de mail is opgemaakt:
 de West-Europese, de Oost-Europese, Russisch, Chinees, enzovoort.
 
 De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter 
@@ -64,9 +64,8 @@ voor zorgt dat je website of de accounts van je klanten worden gehackt.
 
 Daarom is ons advies: escape al je variabelen. De Smarty |escape modifier
 kun je gebruiken om alle variabelen te filteren en eventuele scripts of HTML
-code onschadelijk te maken. Gebruik dus "Beste {$naam|escape}".
-
-Met de personalisatieinstelling "HTML filteren" kun je dit automatisch doen.
-Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
+code onschadelijk te maken. Gebruik dus "Beste {$naam|escape}" om drama's te 
+voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisch 
+doen. Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
 hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
 
