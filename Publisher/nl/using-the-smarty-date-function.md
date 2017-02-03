@@ -50,11 +50,12 @@ achter de modifier staat. De variabele "%A" kun je gebruiken om de naam van
 de huidige dag te tonen, en %b voor de naam van de maand, enzovoort. Maar
 de maanden en dagen van de week hebben in elke taal andere namen. Hoe zit dat?
 
-Bij de personalisatieinstellingen van een template of document (in de oude Publisher
-omgeving staan die onderaan het scherm als je een template of document bewerkt)
-kun je instellen wat de taal en timezone is die bij de template of het document
-hoort. De |date_format modifier kijkt naar deze instelling om te bepalen of
-de variabele %A moet worden vervangen door monday, maandag of Montag.
+Bij de [personalisatieinstellingen](./personalization-settings.md) van een template 
+of document (in de oude Publisher omgeving staan die onderaan het scherm als je 
+een template of document bewerkt) kun je instellen wat de taal en timezone is die 
+bij de template of het document hoort. De |date_format modifier kijkt naar deze 
+instelling om te bepalen of de variabele %A moet worden vervangen door monday, 
+maandag of Montag.
 
 Voor de timezone geldt iets soortgelijks. Als je het huidige tijdstip in een mailing
 of op een website wilt tonen, is maar net de vraag welke tijd je daarvoor wilt 

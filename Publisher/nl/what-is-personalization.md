@@ -62,6 +62,11 @@ HTML tekst, maar niet voor variabelen binnen de tekstversie van een mail of
 in de onderwerpsregel. De tekstversie en de onderwerpsregel bestaat niet uit HTML 
 code en daar hoef je dus geen gebruik te maken van de |escape modifier.
 
+Als je alle variabelen automatisch wilt escapen, zodat je er niet steeds aan hoeft
+te denken om overal |escape achter te zetten, kun je dat onder de template of
+onder het document via het [formulier met personalisatieinstellingen](./personalization-settings.md)
+aangeven.
+
 
 ## Accolades
 
