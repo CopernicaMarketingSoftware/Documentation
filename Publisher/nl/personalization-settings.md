@@ -69,3 +69,10 @@ voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisc
 doen. Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
 hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
 
+
+## Bewerkmodus
+
+Als je een document bewerkt, zit naast het menu met de personalisatieopties 
+een button om de bewerkmodus in te stellen. Deze knop is handig bij het
+[testen van de personalisatie](./personalization-testing.md).
+
