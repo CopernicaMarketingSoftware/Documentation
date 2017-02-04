@@ -8,7 +8,7 @@ voor een complete handleiding van de mogelijkheden van Smarty.
 
 ## Gebruik van variabelen
 
-Een personalisatievariabele bestaat uit dollarteken en een naam van een variabele,
+Een personalisatievariabele bestaat uit een dollarteken en een naam van een variabele,
 geplaatst tussen accolades. De volgende variabelen zou je bijvoorbeeld in een template
 of document kunnen gebruiken:
 
@@ -18,8 +18,8 @@ of document kunnen gebruiken:
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
 velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 
-geadresseerden van de mailing deze gegevens ook hebt ingevuld. Maar als dat
-het geval is, dan kun je deze variabelen gewoon in de aanhef van je mailing
+geadresseerden van de mailing deze gegevens hebt ingevuld. Als dat
+het geval is, dan kun je deze variabelen gewoon in je mailing
 gebruiken:
 
     Geachte {$aanhef} {$naam},
@@ -34,12 +34,12 @@ Zo eenvoudig is het. Maar je moet wel op een paar dingen letten:
 
 ## Escapen van variabelen
 
-Hoewel het een ingewikkeld onderwerp is, behandelen we het escapen direct. Het
-is belangrijk. De variabele data die je in mailings en op websites gebruikt 
+Hoewel het best een ingewikkeld onderwerp is behandelen we het escapen direct. Het
+is erg belangrijk. De variabele data die je in mailings of websites gebruikt 
 is vaak door mensen zelf ingevoerd toen ze zich aanmeldden voor de nieuwsbrief. 
 Mensen voeren hun eigen naam, woonplaats en e-mailadres in, en kunnen daarbij 
-(opzettelijk!) foutieve gegevens invoeren. Je kunt de gegevens die in de database
-staan dus niet zonder meer vertrouwen of ongecontroleerd in je nieuwsbrief 
+(opzettelijk!) foutieve gegevens invoeren. Je kunt de gegevens in de database
+dus niet zonder meer vertrouwen en ongecontroleerd in je nieuwsbrief 
 plaatsen. Wat gebeurt er met de opmaak van je mailing als iemand heeft ingevoerd 
 dat zijn naam "&lt;/table&gt;" is? En opmaak is niet eens het grootste probleem. Als 
 je de ongecontroleerde ruwe input van gebruikers ongefilterd in mailings en op 
@@ -58,11 +58,11 @@ Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
 niet zeker bent van de data in de database omdat de gegevens door mensen 
 door middel van vrije tekstvelden zijn ingevoerd, dan moet je de |escape modifier 
 gebruiken om de data te neutraliseren. Dit geldt voor alle Smarty code binnen
-HTML tekst, maar niet voor variabelen binnen de tekstversie van een mail of 
-in de onderwerpsregel. De tekstversie en de onderwerpsregel bestaat niet uit HTML 
-code en daar hoef je dus geen gebruik te maken van de |escape modifier.
+HTML tekst. Variabelen binnen de tekstversie van een mail of in de 
+onderwerpsregel hoef je echter niet de escapen. De tekstversie en de onderwerpsregel 
+bestaat niet uit HTML code en daar is de |escape modifier dus niet nodig.
 
-Als je alle variabelen automatisch wilt escapen, zodat je er niet steeds aan hoeft
+Als je variabelen automatisch wilt escapen, zodat je er niet steeds aan hoeft
 te denken om overal |escape achter te zetten, kun je dat onder de template of
 onder het document via het [formulier met personalisatieinstellingen](./personalization-settings.md)
 aangeven.
@@ -96,10 +96,10 @@ personalisatiefouten](how-to-solve-errors-in-personalization)
 
 ## Personalisatie testen
 
-Je kan in Copernica direct de uitvoer van je personalisatie testen. Hiervoor worden 
-de gegevens uit de [standaardbestemming](what-is-the-test-destination) gebruikt. 
-Deze kan je zelf instellen. Zorg er altijd voor dat de standaardbestemming zich 
-bevindt in dezelfde database waaraan je je mailing of andere uiting wilt richten.
+Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personalization-testing.md). 
+Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf 
+instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
+database waaraan je je mailing of andere uiting wilt richten.
 
 ## Waar kan je Smarty personalisatie gebruiken?
 
