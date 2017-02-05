@@ -7,7 +7,8 @@ e-mail te maken:
 
     {webversion}
 
-Sommige functies hebben een bijbehorende sluittag, net als veel HTML elementen:
+Sommige functies bestaan uit een open- en een sluittag en hebben invloed op
+de tekst die door de tags wordt omsloten:
 
     {mailonly}
         Klik <a href="{webversion}">hier</a> voor de webversie
