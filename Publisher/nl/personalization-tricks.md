@@ -40,7 +40,7 @@ smarty versie 2 of 3 wilt gebruiken. [Kies versie
 3.](./smarty-2-vs-smarty-3.md)
 
 -   [De basisbeginselen van smarty
-    personalisatie](./what-is-personalization.md)
+    personalisatie](./personalization.md)
 -   [Personalisatie-instellingen van het template of
     document](./document-and-template-personalization-settings.md)
 -   [Persoonlijke aanhef
