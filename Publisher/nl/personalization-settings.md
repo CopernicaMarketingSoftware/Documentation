@@ -52,7 +52,7 @@ uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
 ## HTML filteren
 
-Zoals we [al eerder schreven](./what-is-personalization.md), is het escapen
+Zoals we [al eerder schreven](./personalization.md), is het escapen
 van variabelen van heel groot belang. De variabelen die je gebruikt bij het
 personaliseren zijn namelijk vaak door anonieme gebruikers van je website
 ingevoerd, bijvoorbeeld bij het aanmelden voor de nieuwsbrief. Deze gegevens
