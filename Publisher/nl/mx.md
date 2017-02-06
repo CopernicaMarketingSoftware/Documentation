@@ -1,48 +1,65 @@
 # MX records
 
-Eén van de DNS records die je moet aanmaken als je gebruikt maakt van een
-[Sender Domain](sender-domains), is een MX record. Een MX record koppelt een
-domeinnaam aan een mailserver. Omdat Copernica de bounces en out-of-office 
-replies van je mailings verwerkt moet je zo'n MX record aanmaken. Dit zorgt er
-voor dat de bounces bij Copernica terecht komen en kunnen worden gebruikt 
-voor opvolgacties en het bijwerken van statistieken.
+Als je een [Sender Domain](./sender-domains.md) configureert, dan toont het 
+dashboard een lijst van [DNS](./dns.md) records die je moet aanmaken. Dit zijn 
+meestal aliassen (CNAME records) die verwijzen naar records op de DNS servers 
+van Copernica. Eén van de deze records is echter geen CNAME record, maar een MX 
+record. Dit MX record moet je aanmaken zodat Copernica de bounces en out-of-office 
+replies van je mailings kan verwerken. Door het geadviseerde DNS record aan te 
+maken zorg je dat zulke bounces daadwerkelijk bij Copernica terecht komen.
 
 
-## Technische uitleg
+## Envelope adressen
 
-Hoe werkt dit, globaal gezien? Laten we beginnen bij begin: om een e-mail
-te versturen heb je een e-mailadres nodig, bijvoorbeeld info@bedrijfsnaam.nl. 
-Als er een bericht naar dit adres wordt gestuurd, dan moet de server
-van de verzender opvragen welke mailserver er verantwoordelijk is voor het 
-verwerken van het mailverkeer naar @bedrijfsnaam.nl. Deze informatie is 
-opgeslagen in DNS, en wel in de genoemde MX records. Een verzender hoeft dus 
-alleen maar de MX records op te vragen die horen bij bedrijfsnaam.nl en hij 
-weet naar welke server de mail moet worden gestuurd.
+Om te begrijpen waarom je een MX record moet aanmaken, moet we eigenlijk twee
+dingen uitleggen. Namelijk ten eerste wat een *envelope adres* is en wat dat te 
+maken heeft met bounces en out-of-office replies, en ten tweede hoe een MX
+record eigenlijk wordt gebruikt. We beginnen bij het begin: bij het envelope adress.
 
 Een e-mail heeft over het algemeen twee verschillende afzenderadressen: het 
 gewone *from* adres dat je ziet in je e-mailprogramma, en een apart *envelope 
 adres*. Dit envelope address is een soort "onzichtbaar" adres, dat kan afwijken 
-van het gewone afzenderadres. Dit envelope adres wordt normaal gesproken niet 
-getoond aan de ontvanger, maar wordt gebruikt door servers onderling. Als 
-servers onderling berichten retourneren, bounces dus, dan gebruiken ze hiervoor 
-niet het gewone afzenderadres, maar het envelope address. 
+van het gewone afzenderadres. Dit "onzichtbare" envelope adres wordt normaal 
+gesproken niet getoond aan ontvangers, maar wordt wel gebruikt door servers 
+onderling. Als servers onderling berichten naar elkaar versturen, zoals bij
+bounces en out-of-office replies gebeurt, dan gebruiken de servers daarvoor niet 
+het gewone afzenderadres, maar het envelope address. 
 
-Als je een mailing met Copernica verstuurt, dan gebruiken we zo'n afwijkend 
-envelope adres. De mailing heeft een gewoon *from* adres (bijvoorbeeld
-info@bedrijfsnaam.nl), maar voor elke geadresseerde een speciaal *envelope*
+Als je een mailing met Copernica verstuurt dan stellen we daarom een envelope 
+adres in. De mailing heeft weliswaar een gewoon *from* adres (bijvoorbeeld
+info@bedrijfsnaam.nl), maar voor elke geadresseerde ook een uniek *envelope*
 adres (zoals ui2ad8f9@feedback.bedrijfsnaam.nl). Voor het apenstaartje staat 
-een code die ons in staat stelt om te identificeren naar wie het bericht is 
-verstuurd, en de domeinnaam achter het apenstaartje verwijst naar een server
-van Copernica, zodat wij alle bounces ontvangen. Zodra wij een bericht ontvangen
-voor ui2ad8f9@feedback.bedrijfsnaam.nl weten we precies welk bericht niet
-goed kon worden afgeleverd.
+een code die voor elk bericht dat we versturen uniek is. Als iemand een bericht
+naar dit e-mailadres stuurt, dan kunnen wij deze bounce makkelijk linken aan
+het oorspronkelijke bericht.
 
-Als we al deze informatie samenvoegen begrijp je waarom je een MX moet aanmaken.
-De domeinnaam feedback.bedrijfsnaam.nl die we gebruiken voor het envelope adres
-moet worden gekoppeld aan de mailservers van Copernica. Hierdoor komen de bounces 
-bij ons terecht en kunnen we ze verwerken. Als je een Sender Domain aanmaakt,
-en de lijst van geadviseerde DNS records opvraagt, dan zie je in deze lijst
-dus een MX record staan. Hier dus.
+Kortom, elk bericht dat Copernica namens jou verstuurt krijgt een uniek envelope
+adres. Als er een bounce wordt gestuurd, komt die bounce bij dit unieke e-mailadres
+terecht en kunnen wij de bounce makkelijk linken aan het oorspronkelijk verstuurde
+bericht. Wij weten dan precies welk bericht niet goed kon worden afgeleverd. 
+
+
+## Werking van MX records
+
+Nu je bekend met de werking van het envelope adres kunnen we uitleggen waar een
+MX record voor bedoeld is. E-mailberichten (en dus ook bounces) worden verstuurd
+naar e-mailadressen. Maar computers werken onderling niet met e-mailadressen,
+maar met IP adressen. Om een e-mail te kunnen versturen moet het e-mailadres
+daarom op de een of andere wijze worden geconverteerd naar een IP adres. Pas als
+er een IP adres is, kan een e-mail worden afgeleverd. Om een e-mailadres
+te converteren naar een IP adres wordt gebruik gemaakt van MX records.
+
+Een MX record is een DNS instelling waarmee je opgeeft naar welke mailserver
+inkomende e-mailberichten moeten worden verstuurd. Een computerprogramma dat
+een mail probeert af te leveren vraagt dit MX record op om het e-mailadres
+om te zetten naar een IP adres en de mail kan worden verstuurd. 
+
+Het envelope adres dat we gebruiken voor mailings gebruikt een speciaal subdomain
+van je hoofddomain (zoals feedback.bedrijfsnaan.nl). Om de bounces te kunnen 
+afleveren moet voor dit subdomain een MX record bestaan. Als in dit MX record 
+bovendien staat dat de berichten naar Copernica moet worden verstuurd, dan komen 
+alle bounces bij ons terecht. En dat is precies de bedoeling, en daarom moet
+je een MX record aanmaken waarin het adres van onze mailserver staat.
 
 
 ## Kun je geen MX records aanmaken?
