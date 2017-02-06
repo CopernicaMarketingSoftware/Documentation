@@ -63,8 +63,8 @@ by users:
     We send you this email because your address {$email|escape} is listed in our database.
 
 Always keep this in mind when you are using Smarty code inside HTML texts.
-If you cannot be sure of the contents of your database because the data was
-entered by people using free text formfields you must neutralize the data before
+If you cannot be sure of the contents of your database because (which nobody 
+really can) you must neutralize the data before
 using it. Do this for all variables that you use inside HTML. Variables that you 
 use inside the text version of an email, or in the subject line do not have to 
 be escaped. These elements of an email do not contain HTML code and are less
@@ -104,11 +104,11 @@ not be recognized as Smarty code, but is literally included in the mailing.
 
 ## Testing personalization
 
-If you're creating a template or document, you can directory 
+If you're creating a template or document, you can immediately 
 [test the personalization](./personalization-testing.md). The data from the
-profile that you have assigned as test destination is used for this test/preview.
-Do make sure that you assign a profile as test destination that comes from the
-same database that you are going to use for your mailing, so that it uses the
+profile that you assigned as test destination is used for this test/preview.
+Do make sure that you assign a profile that comes from the
+same database that you will use for your mailing, so that it uses the
 same database field names.
 
 
