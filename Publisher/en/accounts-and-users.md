@@ -20,25 +20,7 @@ with an existing Copernica user that wants to use the service of an external spe
 the partner does not create a new account. To make this possible, we introduced the concept of
 users, accounts and companies:
 
-
-<pre>
-            +---------------+
-            |               |         has access to
-            |     User      |   --------------------------------+
-            |               |                                   |
-            +---------------+                                   |
-                                                                |
-                    |                                           |
-             works  | at                                        |
-                    |                                           |
-                    V                                           V
-        
-            +---------------+                           +---------------+
-            |               |          pays             |               |
-            |    Company    |    ------------------>    |    Account    |
-            |               |                           |               |
-            +---------------+                           +---------------+
-</pre>
+![Account-user relationship](../images/accounts-users.png)
 
 The triangular relationship as pictured above makes it possible to grant different sorts of access to accounts. A
 partner, for example, can create an account and grant access to their own employees, as well as
@@ -57,3 +39,4 @@ list.
 
 As described, this is because of the triangular structure, which you can use in the case of multiple
 accounts, or if you want to grant access to a non-colleague.
+
