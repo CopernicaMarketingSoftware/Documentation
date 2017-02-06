@@ -15,11 +15,12 @@ This is how it works: for us to be able to send your e-mail, you normally have t
 [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) and [DMARC](./dmarc.md) 
 records to your DNS settings. With Sender Domains however, you do not have to
 do create and maintain all these records yourself. Instead, *we* create the DNS 
-records for you, and store them
-in *our* DNS server. All that is left for you to do, is to create a couple of 
-aliases (CNAME records) that refer to the settings in our server.
+records for you, and store them on *our* DNS server. You just have to create a 
+couple of simple aliases (CNAME records) that refer to these settings on our server.
+The aliases that you have to create are listed in the sender domain section of
+the Marketing Suite dashboard.
 
-And that's it. In our special [quick-start guide to set up sender domains](./quick-sender-domain-guide.md)
+That's it. In our special [quick-start guide to set up sender domains](./quick-sender-domain-guide.md)
 we already explained all the aliases that you had to set up. In this article we
 will focus on the more advanced features of sender domains.
 
