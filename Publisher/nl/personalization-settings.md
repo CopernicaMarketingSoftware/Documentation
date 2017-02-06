@@ -52,7 +52,7 @@ uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
 ## HTML filteren
 
-Zoals we [al eerder schreven](./what-is-personalization.md), is het escapen
+Zoals we [al eerder schreven](./personalization.md), is het escapen
 van variabelen van heel groot belang. De variabelen die je gebruikt bij het
 personaliseren zijn namelijk vaak door anonieme gebruikers van je website
 ingevoerd, bijvoorbeeld bij het aanmelden voor de nieuwsbrief. Deze gegevens
@@ -68,4 +68,11 @@ code onschadelijk te maken. Gebruik dus "Beste {$naam|escape}" om drama's te
 voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisch 
 doen. Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
 hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
+
+
+## Bewerkmodus
+
+Als je een document bewerkt, zit naast het menu met de personalisatieopties 
+een button om de bewerkmodus in te stellen. Deze knop is handig bij het
+[testen van de personalisatie](./personalization-testing.md).
 

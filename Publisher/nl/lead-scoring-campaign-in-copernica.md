@@ -31,15 +31,15 @@ Een stappenplan om dit te realiseren:
     onderdeel uit gaan maken van je lead scoring campagne: 1.
     Aanleiding: verzenden van document, Actie: Wijzig gegevens van het
     profiel. De opvolgactie werkt op het veld 'Leadscore' van het
-    profiel zelf. De waarde wordt {math equation="x-y" x=\$Leadscore
+    profiel zelf. De waarde wordt {math equation="x-y" x=$Leadscore
     y=1}: met deze formule geven we aan dat bij het verzenden van het
     document 1 punt moet worden afgetrokken van de veldwaarde
-    \$Leadscore.
+    $Leadscore.
 3.  Aanleiding: registreren van een impressie. Wijzig gegevens profiel
-    met de volgende waarde: {math equation="x+y" x=\$Leadscore y=2}.
+    met de volgende waarde: {math equation="x+y" x=$Leadscore y=2}.
 4.  Aanleiding: registreren van een klik. We laten de linkwaarde leeg,
     zodat het op alle links werkt. Wijzig de Leadscore van het profiel
-    met de volgende waarde: {math equation="x+y" x=\$Leadscore y=2}. Een
+    met de volgende waarde: {math equation="x+y" x=$Leadscore y=2}. Een
     klik op een willekeurige link levert nu 2 punten op.
 5.  Ga naar profielen, de juiste database en dan naar de opvolgacties.
     Voeg een nieuwe opvolgactie toe op de collectie orders met als
@@ -48,7 +48,7 @@ Een stappenplan om dit te realiseren:
     zijn naar Copernica worden gestuurd. We gaan er nu van uit dat de
     order na 24 uur wel is afgerond. De actie van de opvolgactie is het
     wijzigen van veld Leadscore van het profiel: {math equation="x+y"
-    x=\$Leadscore y=20}. Sla de opvolgactie op
+    x=$Leadscore y=20}. Sla de opvolgactie op
 6.  Gezien we pas 20 punten willen toekennen als de order daadwerkelijk
     afgerond is, moeten we nog een conditie op het actie-deel van de
     opvolgactie instellen.. Klik op conditie bewerken onder ‘actie’ en

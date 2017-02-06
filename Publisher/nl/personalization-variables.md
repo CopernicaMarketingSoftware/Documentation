@@ -146,8 +146,18 @@ van de mailing waartoe het bericht behoort:
 * **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
 * **{$mailing.snapshot.subject}**: onderwerp van de mailing 
 
-Het *trigger* object is speciaal. Als een mailing automatisch wordt ingeroosterd
-naar aanleiding van een bepaalde gebeurtenis (zoals een ingevulde enquete of
-een gewijzigd profiel), dan bevat het trigger object allerlei gegevens over
-deze gebeurtenis.
+[Het *trigger* object](./personalization-triggers.md) is speciaal. Als een mailing 
+automatisch wordt ingeroosterd naar aanleiding van een bepaalde gebeurtenis (zoals 
+een ingevulde enquete of een gewijzigd profiel), dan bevat het trigger object 
+allerlei gegevens over deze gebeurtenis.
+
+
+## Extra personalisatievariabelen
+
+Op templateniveau kun je [extra personalisatievariabalen](./personalization-extra-variables.md)
+invoeren. Deze variabelen kun je gebruiken om op documentniveau de instellingen
+van de template te beïnvloeden. De extra personalizatievariabelen zijn benaderbaar
+via het {$property} object:
+
+* **{$property.*veldnaam*}**: de waarde van de extra personalisatievariabele *veldnaam*.
 
