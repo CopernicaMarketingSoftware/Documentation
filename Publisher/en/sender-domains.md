@@ -106,7 +106,7 @@ useful for customers who have not yet switched to Sender Domains.
 If you do still use these outdated forms, it is better to switch to Sender Domains.
 Configuring your DNS using Sender Domains is safer and easier, and will eventually
 lead to a better deliverability because with a Sender Domains based setup all hyperlinks 
-and addresses in your mailings are aligned. However, if you do switch from the old manually settings 
+and addresses in your mailings are aligned. However, if you do switch from the old manual settings 
 to Sender Domains we do recommend to do this slowly. Generally speaking, it is 
 better not to change all your mail settings at once, because receivers do not like 
 these sudden changes. If you've built up a good reputation with your current settings,
