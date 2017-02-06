@@ -18,7 +18,7 @@ holding the identifier of the resource that was created, updated or removed.
 
 There are two ways to encode the data that you send with POST and PUT requests: using 
 the traditional *application/x-www-form-urlencoded* content-type, or using the 
-*application/json* content-type. The Copernica API server inspect the content-type
+*application/json* content-type. The Copernica API server inspects the content-type
 header of your request to decide how the request body should be treated: as normal
 HTTP POST data, or as a JSON object.
 
@@ -45,7 +45,7 @@ De content-type header is only used for POST and PUT requests. For GET and
 DELETE requests we do not accept body data.
 
 
-## The answer sent by Copernica
+## The response from Copernica
 
 The reply that you receive from the API servers depends on the type of 
 request that you sent. For GET requests you normally receive a "200 OK" reply,
@@ -53,11 +53,11 @@ with the requested data encoded as JSON string in the response body.
 
 The other request types (POST, PUT and DELETE) also use a "200 OK" status code
 to report success, but they do not include data in the response body. These
-methods add a special HTTP header to the response that refer to the entity
+methods add a special HTTP header to the response that refers to the entity
 that was just modified or created. The header of a successful POST or PUT
-request contains a *X-location* header with the URL to the created or modified
+request contains a *X-location* header with the URL of the just created or modified
 resource, for example "X-location: https://api.copernica.com/profile/$profileID"
-if a new profile was created in your API call. The response to a successful 
+for calls that create or update profiles. The response to a successful 
 DELETE request holds an "X-deleted" header: "X-deleted: profile $profileID".
 
 For failed API calls a "400 Bad request" response is sent back. The body then
