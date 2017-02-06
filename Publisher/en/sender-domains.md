@@ -129,5 +129,5 @@ in the number of errors? Or does everything seem to be ok. Normally things are
 ok and you can grow the percentage, for example to 25%. In a number of steps
 (for example 10% - 25% - 50% - 75% - 100%) you can roll out a Sender Domain. 
 The actual size of the steps depends on the size of your database. If your database
-contains a couple of hunder addresses you can take bigger steps, but with
+contains a couple of hundred addresses you can take bigger steps, but with
 millions of addresses you want to roll it out more slowly.
