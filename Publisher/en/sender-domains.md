@@ -1,8 +1,8 @@
 # Sender domains
 
 In the old times it was very easy to *fake* the from address of an e-mail. However, 
-currently this no longer is as easy as it used to be. For Copernica it is therefore
-also not as simple to start out sending mails out of your name. To be able to send
+this is no longer as easy as it used to be. For Copernica it is therefore
+also not so easy to start out sending mails out of your name. To be able to send
 out messages out of your name, you (in your role as owner of the domain name) first
 have to add a bunch of records to your [DNS](./dns.md) configuration. By adding
 these records to your DNS, you enable receivers to check whether we were indeed 
