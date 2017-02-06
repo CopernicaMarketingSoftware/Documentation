@@ -61,7 +61,6 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | GET       | [api.copernica.com/profile/$id/interests](./rest-get-profile-interests)                               | Fetch profile interests                       |
 | POST      | [api.copernica.com/profile/$id/interests](./rest-post-profile-interests)                              | Add interests to profile                      |
 | PUT       | [api.copernica.com/profile/$id/interests](./rest-put-profile-interests)                               | Overwrite profile interests                   |
-| PUT       | [api.copernica.com/profile/$id/changeinterests](./rest-put-profile-changeinterests)                   | Enable/disable profile interests              |
 | GET       | [api.copernica.com/profile/$id/subprofiles](./rest-get-profile-subprofiles)                           | Fetch subprofiles of a profile                |
 | POST      | [api.copernica.com/profile/$id/subprofiles](./rest-post-profile-subprofiles)                          | Create subprofile                             |
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection)                                             | Fetch collection data                         |
