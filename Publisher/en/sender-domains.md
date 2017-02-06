@@ -11,10 +11,11 @@ of the mails that you send with our software will not be accepted.
 
 Setting up all these [DNS records](./dns.md) can be a complex task. To help you 
 out with this we have introduced a technology that we call *Sender Domains*.
-This is how it works: for us to be able to send your e-mail, you need to add
+This is how it works: for us to be able to send your e-mail, you normally have to add
 [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) and [DMARC](./dmarc.md) 
-records to your DNS settings. With Sender Domains however, you will not have to
-do this yourself. Instead, *we* create the DNS records for you, and store them
+records to your DNS settings. With Sender Domains however, you do not have to
+do create and maintain all these records yourself. Instead, *we* create the DNS 
+records for you, and store them
 in *our* DNS server. All that is left for you to do, is to create a couple of 
 aliases (CNAME records) that refer to the settings in our server.
 
