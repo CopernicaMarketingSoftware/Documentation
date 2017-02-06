@@ -74,24 +74,7 @@ van de diensten van een externe specialist gebruik wil maken. Om
 dit in het gebruikersbeheer mogelijk te maken hebben we een driehoeksverhouding 
 van gebruikers, bedrijven en accounts geïntroduceerd:
 
-<pre>
-            +---------------+
-            |               |         heeft toegang tot
-            |   Gebruiker   |   --------------------------------+
-            |               |                                   |
-            +---------------+                                   |
-                                                                |
-                    |                                           |
-              werkt | bij                                       |
-                    |                                           |
-                    V                                           V
-        
-            +---------------+                           +---------------+
-            |               |          betaalt          |               |
-            |    Bedrijf    |    ------------------>    |    Account    |
-            |               |                           |               |
-            +---------------+                           +---------------+
-</pre>
+![Accounts en bedrijven](../images/accounts-users-nl.png)
 
 Bovenstaande driehoeksverhouding maakt het mogelijk om allerlei soorten toegang
 tot accounts te verlenen. Een partner kan bijvoorbeeld een account aanmaken (en
