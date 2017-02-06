@@ -4,20 +4,21 @@ Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
 zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
 versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
-eerst allerlei [DNS instellingen](dns) goed zetten. Dit stelt ontvangers in staat om 
-te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. Als je 
-dit niet doet, zal een groot deel van de berichten die je verstuurt niet goed aankomen.
+eerst allerlei [DNS instellingen](./dns/md) goed zetten. Dit stelt ontvangers in 
+staat om te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. 
+Als je dit niet doet, zal een groot deel van de berichten die je verstuurt niet 
+goed aankomen.
 
-Het instellen van al deze [DNS records](dns) kan ingewikkeld zijn, maar met behulp
-van een technologie die we *Sender Domains* hebben genoemd, maken we het 
-makkelijk. Het werkt zo: om goed te kunnen mailen moet je [DNS records](dns) aanmaken, 
-[MX](mx), [SPF](spf), [DKIM](dkim) en [DMARC](dmarc) records. Om je te helpen 
-hoef je dit echter niet zelf te doen, maar maken wij deze records aan in *onze* 
-[DNS server](dns). Het enige wat jij hoeft te doen is het plaatsen van een aantal 
-aliassen (CNAME records) die verwijzen naar de instellingen bij ons.
+Het instellen van al deze [DNS records](./dns.md) kan ingewikkeld zijn, maar met 
+behulp van een technologie die we *Sender Domains* hebben genoemd, maken we het 
+makkelijk. Het werkt zo: om goed te kunnen mailen moet je [DNS records](./dns.md) 
+aanmaken, [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) en [DMARC](./dmarc.md) 
+records. Om je te helpen hoef je dit echter niet zelf te doen, maar maken wij deze 
+records aan in *onze* [DNS server](./dns.md). Het enige wat jij hoeft te doen is 
+het plaatsen van een aantal aliassen (CNAME records) die verwijzen naar de instellingen bij ons.
 
 Zo simpel is het. In het 
-[snel-aan-de-slag artikel over het instellen van een afzenderdomein](quick-sender-domain-guide)
+[snel-aan-de-slag artikel over het instellen van een afzenderdomein](./quick-sender-domain-guide.md)
 leggen we het uitgebreid uit. We gaan daarom hier, in dit wat diepgravender
 onderdeel van de documentatie, alleen in op de ingewikkelder zaken.
 
@@ -67,8 +68,8 @@ records) aanmaken. De volgende records worden aangemaakt:
 De A, MX en DKIM records leveren meestal niet zo veel problemen op. Het is
 toegestaan om net zo veel van deze records aan te maken als je maar nodig hebt,
 en ze conflicteren niet met bestaande records. Je kunt de aliassen naar deze
-records dus zonder al te veel zorgen aanmaken. Ook [SPF](spf) gaat goed omdat 
-we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
+records dus zonder al te veel zorgen aanmaken. Ook [SPF](./spf.md) gaat goed 
+omdat we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
 
 
 ## Let op met DMARC
@@ -82,7 +83,7 @@ voor te kiezen om vanuit een subdomein te versturen. Als je echter wel vanuit
 het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra 
 maatregelen treffen. Hoe dat precies werkt leggen we in een apart artikel uit:
 
-* [DMARC configureren](dmarc)
+* [DMARC configureren](./dmarc.md)
 
 Het instellen van sender domains, en de DNS records die je moet maken, kun
 je het beste doen via de Copernica Marketing Suite (en dus niet via de oude
