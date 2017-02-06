@@ -60,7 +60,6 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/profile/$id/interests](./rest-get-profile-interests.md)                                | Opvragen interesses van profiel               |
 | POST      | [api.copernica.com/profile/$id/interests](./rest-post-profile-interests.md)                               | Toevoegen interesses van profiel              |
 | PUT       | [api.copernica.com/profile/$id/interests](./rest-put-profile-interests.md)                                | Overschrijven interesses van profiel          |
-| PUT       | [api.copernica.com/profile/$id/changeinterests](./rest-put-profile-changeinterests.md)                    | In- en uitschakelen interesses van profiel    |
 | GET       | [api.copernica.com/profile/$id/subprofiles](./rest-get-profile-subprofiles.md)                            | Opvragen subprofielen van een profiel         |
 | POST      | [api.copernica.com/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                           | Toevoegen van een subprofielen aan een profiel|
 | GET       | [api.copernica.com/collection/$id](./rest-get-collection.md)                                              | Opvragen collectiegegevens                    |
