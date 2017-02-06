@@ -22,7 +22,7 @@
 * [Automated synchronization](automatic-links.md)
     * [REST API](copernica-rest-api-en)
     * [Feedback loops](feedback-loops)
-* [Personaliseren](personalization)
+* [Personalization](personalization)
     * [Available variables](personalization-variables)
     * [Variable modifiers](personalization-modifiers)
     * [Special functions](personalization-functions)
