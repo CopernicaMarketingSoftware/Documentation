@@ -11,13 +11,34 @@ jaartal toont. Maar er kan veel meer:
 * Sluit een enquete automatisch nadat de uiterste invuldatum is verstreken
 
 
+## {$smart.now} en {$timestamp}
+
+De {$smarty.now} variabele bevat altijd het huidige tijdstip. Hierdoor kun je
+altijd de juiste datum boven een nieuwsbrief kan zetten, of het juiste jaartal 
+in een afsluitende copyright-melding.
+
+Maar het heeft ook een nadeel. De {$smarty.now} variabele bevat het huidige 
+tijdstip en blijft dus gewoon doorlopen, zelfs als een mailing eenmaal is 
+verzonden. Als je bijvoorbeeld op maandag een nieuwsbrief verstuurt en je gebruikt 
+de {$smarty.now} variabele om bovenaan de tekst "nieuwsbrief van maandag 12 september" 
+te plaatsen, dan krijgen mensen die een dag later de webversie van de mail bekijken 
+een andere tekst te zien. De webversie van een mailing wordt namelijk live
+samengesteld en gebruikt de actuele waarde van {$smarty.now}. Boven de webversie
+komt hierdoor een "nieuwsbrief van dinsdag 13 september" titel te staan.
+
+Om dit op te lossen is er ook een {$timestamp} variabele. Deze variabele bevat
+het tijdstip van versturen. Meestal is er geen verschil tussen {$smarty.now}
+en {$timestamp}, maar in bepaalde gevallen, zoals bij een webversie die enige
+tijd later wordt geopend, is er wel een verschil.
+
+
 ## Smarty modifiers
 
-De variabele {$smarty.now} bevat het huidige tijdstip op een manier die voor
-computers erg handig is, maar die door mensen nooit wordt gebruikt: de tijd
-is opgeslagen als het aantal seconden sinds 1 januari 1970, Greenwich time. 
-Het heeft daarom niet zo veel zin om de variabele {$smarty.now} direct in een 
-mailing op te nemen: er zou dan een heel groot getal in je bericht staan.
+De {$smarty.now} en de {$timestamp} variabelen bevatten het huidige tijdstip op 
+een manier die voor computers erg handig is, maar die door mensen nooit wordt 
+gebruikt: de tijd is opgeslagen als het aantal seconden sinds 1 januari 1970, 
+Greenwich time. Het heeft daarom niet zo veel zin om deze variabelen direct in 
+een mailing op te nemen: er zou dan een heel groot getal in je bericht komen te staan.
 
 Mensen werken op een heel andere manier met tijd dan computers. Mensen werken
 met jaren, maanden en dagen. Als je wilt personaliseren op basis van de tijd
