@@ -1,13 +1,13 @@
 # MX records
 
 If you configure a [Sender Domain](./sender-domains.md), the Marketing Suite
-dashboard shows a list of recommended [DNS](./dns.md) record that you should
+dashboard shows a list of recommended [DNS](./dns.md) records that you should
 copy to your DNS servers. Most of these recommendations are aliases (CNAME
 records) that refer to records on the DNS servers of Copernica. However, there
 is also an MX record in this list. This MX record should be created so that 
 Copernica can process bounces and out-of-office replies. If you follow the
 recommendation and create the required MX record, all bounces and most 
-out-of-office are sent back to Copernica, where we can use the for statistics
+out-of-office are sent back to Copernica, where we can use them for statistics
 and follow-up actions.
 
 ## Envelope adresses
@@ -24,9 +24,9 @@ each other, like they do in case of a bounce, they use this special envelope add
 Mailings sent by Copernica use such a special envelope address. Besides the normal 
 *from* address (like info@yourcompany.com), each message gets a unique *envelope* 
 address (for example ui2ad8f9@feedback.yourcompany.com). The part in front of 
-the '@' is a code that is unique for each addressee. When a bounce is sent to 
-this address, we can easily link this bounce to the original message because of 
-this unique identifier. 
+the '@' is a code that is unique for each addressee. When we receive a bounce that
+is sent to such an address, we can easily link this bounce to the original message 
+because of this unique identifier. 
 
 
 ## MX records
@@ -46,8 +46,8 @@ The envelope address that we use in mailings uses a subdomain of the main domain
 like feedback.yourcompany.com. A server that tries to send a bounce to the
 bounce address does a MX lookup for this subdomain. If you've followed the
 recommendation from the dashboard and you've correctly configured the MX record,
-the MX lookup succeeds and contains the address of Copernica's mail servers, and
-the bounce will be sent to one of our servers where we can process it.
+the MX lookup succeeds and contains the address of Copernica's mail servers, so
+that the bounce is sent to one of our servers where we can process it.
 
 
 ## Are you unable to create MX records?
@@ -55,11 +55,12 @@ the bounce will be sent to one of our servers where we can process it.
 Some DNS providers, especially certain Microsoft services, do not permit users
 to create their own MX records. If you use such a service it is impossible to 
 follow the recommendations given on the dashboard. However, with a simple 
-workaround you can still create a DNS configuration in which the bounces will 
-eventually end up on our servers.
+workaround you can still create a DNS configuration in which the bounces end 
+up on our servers.
 
-If the Copernica dashboard recommends to create a MX record, you can create
-a CNAME record instead, according to the following scheme:
+If the Copernica dashboard recommends to create a MX record, while you are
+unable to create such records, you can create a CNAME record instead, 
+according to the following scheme:
 
 <table>
     <tr>
