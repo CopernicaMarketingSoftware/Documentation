@@ -10,9 +10,8 @@ for a complete guide and a list of all the features of Smarty.
 
 ## Using variables
 
-A personalization variable can be recognized because it is encapsulated inside
-accolades, and starts with a dollar sign. These are examples of such
-personalization variables:
+A personalization variable is encapsulated inside curly brackets, and starts with 
+a dollar sign. These are examples of such personalization variables:
 
 * **{$name}**
 * **{$email}**
