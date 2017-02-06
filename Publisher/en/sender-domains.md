@@ -7,7 +7,7 @@ to send out messages out of your name, you (in your role as owner of the domain 
 have to add a bunch of records to your [DNS](./dns.md) configuration. By adding
 these records to your DNS, you enable receivers to check whether we were indeed 
 given permission to send your e-mail. If you do not do this, a huge percentage 
-of the mails that you send with out software will not be accepted.
+of the mails that you send with our software will not be accepted.
 
 Setting up all these [DNS records](./dns.md) can be a complex task. To help you 
 out with this we have introduced a technology that we call *Sender Domains*.
