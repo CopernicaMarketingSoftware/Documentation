@@ -20,7 +20,7 @@ a dollar sign. These are examples of such personalization variables:
 Such personalization variables are of course only meaningful if the database
 also contains fields with these names, and if these fields have non-empty
 values for the profile for which the message is personalized. But if this is
-indeed true, you can create a personalized message in your mail:
+indeed true, you can create a personalized message:
 
     Dear {$salutation} {$name},
     
@@ -50,11 +50,11 @@ to your newsletter. People enter their own name, city and email address en can
 data in your database and use it directly in your mailings. What happens to
 the layout of your mail if someone has subscribed to the newsletter with the
 name "&lt;/table&gt;"? And layout is not even your biggest concern. If you allow
-the raw unfiltered input from users in your newsletters and websites, you are 
+raw unfiltered input from users in your newsletters and websites, you are 
 vulnerable for many types of abuse and hacks.
 
 Luckily, there is a simple Smarty *modifier* to prevent this. The *|escape*
-modifier. Every variable that you use in a mailing or website should first be passed
+modifier. Every variable that you use in a mailing or website should be passed
 through this modifier to neutralize possible harmful HTML code that was entered
 by users:
 
