@@ -15,7 +15,7 @@ formulierveld.
     webformulier
 -   Vul bij de standaardwaarde de waarde in die je naar het profiel wilt
     wegschrijven. Je mag in dit veld uiteraard gebruik maken van smarty
-    code. Bijvoorbeeld een {\$smarty.now|date\_format:"%Y-%m-%d"}  om de
+    code. Bijvoorbeeld een {$smarty.now|date\_format:"%Y-%m-%d"}  om de
     datum van aanmelding op te slaan in het profiel.
 -   De label tekst kan je in principe leeglaten, omdat deze toch niet
     wordt getoond in het formulier.
