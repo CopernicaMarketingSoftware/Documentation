@@ -28,9 +28,9 @@ will focus on the more advanced features of sender domains.
 ## Subdomain or the main domain?
 
 If you setup a sender domain you can choose whether you want to do this for the
-main domain, say yourcompany.com, or for a sub-domain, like newsletter.yourcompany.com.
-Of course, it is way more elegant if all your e-mail messages are sent from the
-main domain, including your newsletters and transactional e-mail. But your domain 
+main domain, say yourcompany.com, or for a subdomain, like newsletter.yourcompany.com.
+Of course, it is way more elegant if all your email messages are sent from the
+main domain, including your newsletters and transactional email. But your main domain 
 is probably already in use for sending out email and you therefore also have already 
 set up DNS records to enable this. If you do not want to risk breaking things by 
 modifying your existing DNS settings, you can opt for a subdomain instead, and use 
@@ -38,22 +38,23 @@ this subdomain for the mails that you send with Copernica. If you send with a
 subdomain you do not have to make changes to any existing DNS records, and only
 have to add completely new records.
 
-If you do choose to use the main domain, you must pay close attention to a couple
-of DNS settings. Especially the DMARC settings require attention.
+Setting up a subdomain is safer and easier than setting up a Sender Domain for
+a subdomain. If you do choose to use the main domain, you must pay close attention 
+to a couple of DNS settings. Especially the DMARC settings require attention.
 
 
 ## The DNS records
 
-If you create a Sender Domain in Copernica, we update our DNS server and add 
-all sorts of records holding settings that are relevant for you. In your DNS you 
+If you create a Sender Domain in Copernica, we update our DNS servers and add 
+records holding settings that are relevant for you. In your DNS you 
 then only have to add aliases (using CNAME records) to these records in our DNS. 
-The dashboard of the Marketing Suite exactly shows the records that you have to 
-add, and warns you if you make a mistake in setting up these aliases.
+The dashboard of the Marketing Suite exactly lists the records that you have to 
+add to your DNS, and warns you if you make a mistake in setting up these aliases.
 
 Because you create aliases to records that are hosted by us, we can at any time
 make changes to your DNS. If we discover that we need extra IP addresses
 to send out your messages, or when we want to rotate your DKIM keys, we can change
-the DNS without you having to do anything. Your alias just points to our DNS
+the DNS without contacting you. Your alias just points to our DNS
 server, where we can make all relevant changes.
 
 There are many different DNS records that we create to send out your messages,
@@ -67,7 +68,7 @@ following records are hosted by us:
 * A DMARC record to collect DMARC reports
 
 The A, MX and DKIM records are normally easy to set up. The DNS standard allows
-to create a many of these records as you need, and they cannot conflict with 
+to create as many of these records as one need, and they cannot conflict with 
 other records. SPF is also not an issue because we use a subdomain for collecting
 bounces. DMARC however, might require extra attention.
 
@@ -75,11 +76,11 @@ bounces. DMARC however, might require extra attention.
 ## Watch out with DMARC
 
 Things are more complex with DMARC, especially if you want to setup Copernica to
-send out mail using the main domain (from @yourcompany.nl). In DNS, you can only
+send out mail using the main domain. In DNS, you can only
 have one DMARC record per (sub)domain, and this DMARC record is probably already
 in use for your regular mail flow. You can not simply remove or overwrite this
 existing record because that might influence your existing mail flow. The simple
-solution would then be to setup Copernica to use a new subdomain anyway. However,
+solution would then be to setup Copernica to use a new subdomain instead. However,
 if you insist on using the main domain, which of course is way more elegant, you
 will have to take some extra steps, and merge your existing DMARC record with the
 one that we take care of. We've explained this in more detail in a seperate article:
@@ -102,10 +103,10 @@ technology was introduced. You no longer need these forms and you can better use
 the new Sender Domain dashboard from the Marketing Suite. These forms are only 
 useful for customers who have not yet switched to Sender Domains.
 
-If you do still use these outdated forms, it is best to switch to Sender Domains.
+If you do still use these outdated forms, it is better to switch to Sender Domains.
 Configuring your DNS using Sender Domains is safer and easier, and will eventually
-lead to a better deliverability because with Sender Domains all domains used in 
-your mailings are aligned. However, if you do switch from the old manually settings 
+lead to a better deliverability because with a Sender Domains based setup all hyperlinks 
+and addresses in your mailings are aligned. However, if you do switch from the old manually settings 
 to Sender Domains we do recommend to do this slowly. Generally speaking, it is 
 better not to change all your mail settings at once, because receivers do not like 
 these sudden changes. If you've built up a good reputation with your current settings,
