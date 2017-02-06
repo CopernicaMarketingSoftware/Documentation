@@ -1,13 +1,11 @@
-Het is mogelijk om de query string uit een URL te gebruiken in smarty
-personalisatie. Hiervoor gebruik je de {\$smarty.get.\<query name\>}.
+# Parameters van URL opvragen
 
-**Voorbeeld:** voeg de query *name=Sjon* toe aan de link URL van je
-webpagina
+Als je een webpagina personaliseert, dan is het mogelijk om de query string 
+uit een URL te gebruiken in smarty personalisatie. Hiervoor gebruik je de 
+{$smarty.get.*variabele*}. Als het adres van een webpagina bijvoorbeeld
+wordt bezocht via de url http://mywebsite.example.com*?name=Sjon*, dan kun
+je de variabele *name* gebruiken in de personalisatie:
 
-http://mywebsite.example.com*?name=Sjon*
+    Hallo {$smarty.get.name|escape}!
 
-Voeg vervolgens de volgende smarty code toe aan jouw
-webpagina**{\$smarty.get.name}**
-
-Toon de pagina gepersonaliseerd. De naam *Sjon* wordt weergegeven in je
-document.
+De naam *Sjon* wordt weergegeven op de webpagina.
