@@ -11,7 +11,7 @@ Just like every REST API, you use HTTP GET requests to retrieve data, POST
 and PUT requests to add or overwrite data, and HTTP DELETE to remove things.
 The HTTP GET requests normally return a JSON string as body data. The other
 requests (POST, PUT and DELETE) do not return body data, but do add a header
-to holding the identifier of the resource that was created, updated or removed.
+holding the identifier of the resource that was created, updated or removed.
 
 
 ## Sending data to the API
