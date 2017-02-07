@@ -39,18 +39,17 @@ restriction settings, an error message will be shown and the form will not be
 submitted. Nothing gets stored in the datbase. The restriction rules allow you 
 to for example set up a database that does not allow the field "age" to be 
 lower than 18, or that does not permit empty values in the "email" field. You 
-can also create restriction rules that prevent that double profiles from getting
-into the database.
+can also create restriction rules that keeps double profiles out of the database.
 
 If you change the restriction rules while the database already contains profiles, 
-you run the risk that one or more profiles in the database suddenly no longer 
+you run the risk that one or more existing profiles suddenly no longer 
 meet the new restriction criteria. This can happen and Copernica allows this.
-The "invalid" profiles are kept in the database and keep their old, illegal, 
-state. However, the next time you try to edit one these invalid profiles, you 
+The "invalid" profiles are kept in the database with their old, illegal, 
+fields. However, the next time you try to edit one these invalid profiles, you 
 will be forced to update the profile so that it matches the restriction rules. 
 
 Selections rules can be very advanced. A single restriction may consist
-of multiple rules that are combined with "AND" and "OR" operators: if you make 
+of multiple rules that are combined with "AND" and "OR" operators. If you make 
 a restruction with multiple "AND" rules, a profile must match all the rules to
 be allowed in the database. If you use the operator "OR" to combine rules, a 
 profile only has to match a single rule. 
@@ -59,20 +58,20 @@ You can also use the restrictions to prevent that identical profiles get into
 the database. The option "block doubles" should be used for that. Before a new
 profile is added to the database, the database is first checked to see if it 
 already contains a profile with the same combination of fields. Only unique 
-profiles will be allowed in.
+profiles are allowed in.
 
 
-### Regular expressions
+## Regular expressions
 
 When you create a field value restriction, you can choose from a list of operators
-to check the value. It is possible to require that a field equals a specific value,
-or that it should contain a certain *substring*. The most powerful field value
-check that you can use is the regular expression.
+It is possible to require that a field equals a specific value, or that contains 
+a certain *substring*. The most powerful field value check that you can use is 
+the regular expression.
 
-Regular expression (often abbreviated to *regex*) are very powerful patters to
-validate texts. Regular expressions can do things like "check whether the word
-begins with a capital", "the telephone number should contain exact 10 digits" or
-"the sentence should have two comma's and a single capital Q". If you spend some
+Regular expressions (often abbreviated to *regex*) are very powerful patterns to
+validate texts. Regular expressions can do things like "check whether the value
+begins with a capital", "the telephone number must contain exact 10 digits" or
+"the sentence must have two comma's and a single capital Q". If you spend some
 time on it you can even make a regular expression that recognizes prime numbers.
 
 The following regex can be used to check whether a value is a dutch postal code,
