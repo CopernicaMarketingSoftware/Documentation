@@ -46,7 +46,8 @@ volgende eigenschappen teruggegeven:
 * **ID**: nummeriek ID van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
 * **secret**: de "geheime" code die aan een profiel is gekoppeld
-* **created**: datum waarop het profiel is aangemaakt
+* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
 

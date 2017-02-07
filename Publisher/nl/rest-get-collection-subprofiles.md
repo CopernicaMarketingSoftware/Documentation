@@ -48,7 +48,8 @@ volgende eigenschappen teruggegeven:
 * **profile**: ID van het profiel waar het subprofiel bij hoort
 * **secret**: de "geheime" code die aan een subprofiel is gekoppeld
 * **fields**: associative array / object van veldnamen en veldwaardes
-
+* **created**: tijdstip waarop het subprofiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: tijdstip waarop het subprofiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 
 ## Voorbeeld in PHP
 
