@@ -302,8 +302,8 @@ The reputation of your IPs is important for getting your mailings delivered, so 
 want to risk that a single dubious campaign greylists all your IP addresses. (Especially if these
 messages are provided by third parties) Setting a predetermined range in the JSON can help prevent these sorts of problems.
 
-To limit the range of IP addresses that a mailing can use, you may specify an "ips" property
-in the JSON body:
+To limit the range of IP addresses that a specific mailing can use, you may specify an array of
+"ips" as a property in the JSON body:
 ````
 {
     "envelope": "my-sender-address@my-domain.com",
@@ -318,10 +318,9 @@ runs on. If the array provided is empty or if it only contains IP addresses that
 are not bound to your server, this will result in a failed delivery.
 
 If no property "ips" is set in the JSON or if it is set to something other than a JSON array, 
-MailerQ will fall back on a list of default IPs,
-which can be defined in the config file using the config property "smtp-defaultips":
+MailerQ will fall back on a list of default IPs, which can be defined in the config with the property "smtp-defaultips":
 ````
-    smtp-defaultips:    1.2.3.4; 1.2.3.5; 1.2.3.6
+smtp-defaultips:    1.2.3.4; 1.2.3.5; 1.2.3.6
 ````
 If this property is missing or left empty, MailerQ will instead opt to use ALL
 available IP addresses on the host server.
