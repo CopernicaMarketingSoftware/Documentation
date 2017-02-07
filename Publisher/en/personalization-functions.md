@@ -6,8 +6,8 @@ the function to create a link to the web version of en email:
 
     {webversion}
 
-Some are splitted up in an open and a close tag. These block functions modify
-the text that is encapsulated by the tags:
+Some functions have an open and a close tag. These block functions are used
+to modify or mark the text that is encapsulated inside the tags:
 
     {mailonly}
         Click <a href="{webversion}">here</a> to view this mail in your browser
