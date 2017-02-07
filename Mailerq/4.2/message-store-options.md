@@ -112,7 +112,7 @@ The "storage-policy" config file setting tells MailerQ what
 type of messages should be stored in the message store. Valid values are "all",
 "out", "in" and "none". The "none" setting is meaningful if you only want
 MailerQ to *retrieve* mime data from external storage, without ever
-staring storage operations.
+starting storage operations.
 
 Before MailerQ publishes a message to RabbitMQ (for example, before it
 sends a received message to the inbox queue, or before it send a delayed
@@ -168,3 +168,24 @@ to send out an email using MailerQ, and that email has to be delivered within
 24 hours, and your "storage-ttl" is set to 3600 seconds (one hour), the
 mime data will be stored in NoSQL for at most 25 hours.
 
+## Compression
+
+You may choose to compress the messages you store to reduce the load on your storage server
+and limit the amount of data you need to send.
+This feature can be turned on by specifying "compression=gzip" in the storage URL, e.g.:
+
+````
+storage-address:        mongodb://hostname/database/collection?compression=gzip
+````
+
+Our NoSQL library will then take care of compressing all data behind the scenes.
+Note that this does mean that the contents of your database are no longer human readable.
+
+The compression feature is currently enabled only for
+
+* MongoDB
+* Directory
+* MySQL
+* PostgreSQL
+
+Support for the couchbase and SQLite backends is still in an experimental state.
