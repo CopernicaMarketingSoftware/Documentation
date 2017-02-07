@@ -58,6 +58,15 @@ It is therefore enough to simply set the "Signature type" of a DKIM key to "ARC"
 and MailerQ will decide when and how to add an ARC signature to your message.
 If you want to test the ARC algorithm first, you can visit our [ARC test page](http://arc.copernica.com).
 
+## Failure reporting
+
+Although MailerQ has a powerful DKIM backend, the DKIM standards are quite complicated and signature
+verification may fail on a remote server for a variety of reasons.
+To get notified about these sorts of failures you may ask the target server to send failure reports for DKIM signatures that are not verifying properly. For DKIM keys specified in the management console this is done by ticking the corresponding box.
+
+Note that checking this box will only indicate to the remote server that you want to receive the reports.
+To specify on which address and how often you want to receive the reports, you should update your DNS records with the appropriate properties defined in [RFC 6651](https://tools.ietf.org/html/rfc6651).
+
 ## DKIM signing patterns
 
 Storing private keys in MailerQ is not enough to have your emails signed.
