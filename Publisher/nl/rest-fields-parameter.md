@@ -33,12 +33,29 @@ Als je bijvoorbeeld alle profielen wilt opvragen waarvan de voornaam begint met 
 letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatsen.
 
 
+## Speciale velden
+
+De velden waarmee je vergelijkingen kunnen maken zijn altijd velden uit de database.
+Als je vergelijkingen gebruikt als "woonplaats==amsterdam" of "geslacht==man",
+werken die dus alleen als er daadwerkelijk een veld woonplaats en een veld geslacht
+in de database bestaat.
+
+Je kunt echter ook een paar *speciale* velden gebruiken die altijd beschikbaar zijn,
+ook als je niet van dergelijke velden hebt aangemaakt. Dit zijn de volgende velden:
+
+* **id**: de nummerieke identifier van het (sub)profiel
+* **code**: de geheime code van het (sub)profiel
+* **modified**: tijdstip waarop het (sub)profiel voor het laatst is aangepast. Dit tijdstip is in YYYY-MM-DD hh:mm:ss notatie
+
+Je kunt dus ook vergelijkingen maken als "id>1000" en "modified<2017-01-01".
+
+
 ## Escapen van variabelen
 
-Zoals gezegd kunnen *fields* parameters worden toevoegd aan de URL. Maar de waarde 
-van dergelijke variabelen mag natuurlijk niet
+Zoals gezegd moet de *fields* parameters worden toevoegd aan de URL. Om echter een
+geldige URL te behouden, mag de waarde van deze fields parameter natuurlijk niet
 conflicteren met andere elementen van de URL. Hoewel dit evenzeer geldt voor
-andere parameters (zoals de *access_token* parameter) is dit met name voor de 
+alle overige parameters (zoals de *access_token* parameter) is dit met name voor de 
 *fields* parameter een punt van aandacht. In de waardes die je aan deze parameters 
 geeft gebruik je namelijk altijd karakters die niet zonder meer in een URL
 mogen worden geplaatst (zoals "naam=~m%", "leeftijd>=18"). Daarom moet je deze
@@ -60,5 +77,8 @@ dan automatisch.
 De *fields* parameter kun je gebruiken bij de volgende API methodes:
 
 * [Opvragen van profielen uit een database](rest-get-database-profiles)
+* [Opvragen van profielen uit een selectie](rest-get-view-profiles)
+* [Opvragen van subprofielen uit een collectie](rest-get-collection-subprofiles)
+* [Opvragen van subprofielen uit een miniselectie](rest-get-miniview-subprofiles)
 * [Meerdere profielen bewerken in een database](rest-put-database-profiles)
 
