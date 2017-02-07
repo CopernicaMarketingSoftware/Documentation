@@ -11,7 +11,6 @@ Other use cases for smarthosts are when you want to create a chain of
 MailerQ instances, and have the mails from one instance forwarded to
 the next instance.
 
-
 ## How to configure the smarthost feature
 
 By default, the smarthost feature is disabled. If you want to enable it,
@@ -77,8 +76,8 @@ the username or password means MailerQ will not try to authenticate to the smart
 If you use the "smarthost" option mails are not delivered to the actual 
 recipient but to the smarthost server. As a consequence, MailerQ 
 internally queues all mails as if they were sent to the smarthost domain. If 
-you open the management console, the list of active domains will be one 
-item long: the smarthost domain because that's where all emails are going
+you open the management console, the list of active domains will contain only
+one item: the smarthost domain indicated by "(smarthost)", which is where all emails are going
 to be sent to.
 
 If you are debugging, you often want to run MailerQ in (almost) 
