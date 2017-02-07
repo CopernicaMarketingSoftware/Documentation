@@ -292,17 +292,18 @@ For more information about using personalization, check our
 
 ## Local IP addresses
 
-MailerQ can send out mail from all IP addresses available on the server. Inside
-the JSON message you can specify which IP address you want to use to
-send out the email from. This can be useful to increase the delivery rate, 
-because receivers often restrict deliveries per IP address.
+MailerQ can send out mail from all IP addresses configured on your server and will allways try
+to make as many connections as it takes to send out your mailing.
+This can be useful to increase the delivery rate, because receivers often restrict deliveries per IP address.
 
-By default, MailerQ makes all connections to remote mail servers from the default 
-(first) available IP of the host server. If your server has multiple IPs assigned 
-to it, you can instruct MailerQ to use a different local IP for sending out the 
-mail. You can even assign a list of IP addresses, so that MailerQ can pick one
-these addresses randomly:
+It is however wise to limit the range of local IP addresses that a mailing can use,
+as you may not want to expose all your IPs to every campaign or group of mailings you send.
+The reputation of your IPs is important for getting your mailings delivered, so you may not
+want to risk that a single dubious campaign greylists all your IP addresses. (Especially if these
+messages are provided by third parties) Setting a predetermined range in the JSON can help prevent these sorts of problems.
 
+To limit the range of IP addresses that a mailing can use, you may specify an "ips" property
+in the JSON body:
 ````
 {
     "envelope": "my-sender-address@my-domain.com",
@@ -311,11 +312,20 @@ these addresses randomly:
     "ips": ["231.34.13.156", "231.34.13.158"]
 }
 ````
-
-MailerQ picks one of the IPs to send out the mail. Be aware that you can of 
+MailerQ will then only try to send the message from these IPs. Note that you can of 
 course only use addresses that are actually bound to the host that MailerQ 
-runs on. Other IP addresses will result in failed deliveries.
+runs on. If the array provided is empty or if it only contains IP addresses that 
+are not bound to your server, this will result in a failed delivery.
 
+If no property "ips" is set in the JSON or if it is set to something other than a JSON array, 
+MailerQ will fall back on a list of default IPs,
+which can be defined in the config file using the config property "smtp-defaultips":
+````
+    smtp-defaultips:    1.2.3.4; 1.2.3.5; 1.2.3.6
+````
+If this property is missing or left empty, MailerQ will instead opt to use ALL
+available IP addresses on the host server.
+However, we do recommend recommend that you set this property if you have many IPs configured on your server.
 
 ## Delivery time
 

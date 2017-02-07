@@ -66,17 +66,17 @@ using "STARTTLS".
 
 The IP address to which you send a message to MailerQ, is the same as 
 the address *from* which the mail is going to be forwarded. Thus, if you 
-send an email to MailerQ listening on IP address 5.6.7.8, the message will 
+send an email to MailerQ listening on IP address 5.6.6.5, the message will 
 also be sent out from this IP. If you want to send out the message from a
 different IP instead, you should either add a special MIME header to your
-mail ("x-mq-ip"), or you can use the "smtp-defaultip" config file variable.
+mail ("x-mq-ip"), or you can use the "smtp-defaultips" config file variable.
 
 ````
-smtp-defaultip:     5.6.7.8
+smtp-defaultips:     1.2.3.4; 5.6.7.8
 ````
 
-The above config file setting tells MailerQ to send out incoming mail from
-IP address 5.6.7.8 -- even when it was originally received on a different IP
+The above config file setting tells MailerQ to only send out incoming mail from
+the IP addresses 1.2.3.4 and 5.6.7.8 -- even when it was originally received on a different IP
 address. You should leave this option out of the config file if you want to 
 send out incoming mails from the same IP address as to which you submitted them.
 
