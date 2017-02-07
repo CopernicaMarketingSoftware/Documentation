@@ -13,10 +13,10 @@ to modify or mark the text that is encapsulated inside the tags:
         Click <a href="{webversion}">here</a> to view this mail in your browser
     {/mailonly}
 
-The {mailonly} block is used to mark a piece of code that is only visible in 
-the mail version of the message. If this template would be displayed via the
+The {mailonly} block is used to mark a piece of code to only be visible in 
+the mail version of the message. Would this template be displayed via the
 web (because someone clicks on the web version link), the code inside the 
-two tags will not be rendered. In the above example we cleverly use the {mailonly}
+tags will not be rendered. In the above example we cleverly use the {mailonly}
 block to hide the web version link if the user already views the mail in his
 or her browser.
     
