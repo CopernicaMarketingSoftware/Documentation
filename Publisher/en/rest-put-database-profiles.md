@@ -7,30 +7,30 @@ can send a HTTP PUT request to the following URL:
 
 The $id code should be replaced with the numeric identifier or the name
 of the database in which you want to modify profiles. The new field values
-for the profiles should be passed as body data to the PUT request.
+should be sent in the request body.
 
 Please keep in mind that this is a HTTP PUT requets. This method is an
 exception to the rule that the Copernica REST API makes no distinction between
 HTTP POST and HTTP GET calls. For this method you must use HTTP PUT. If you
-would send a POST request, you [would be making a brand new profile](./rest-post-database-profiles.md). 
+send a POST request, you [would be making a brand new profile](./rest-post-database-profiles.md). 
 
 
 ## Supported parameters
 
 You must use two different ways to pass data to this method: via the URL and
-via the posted body data. You can pass the following parameters to the URL:
+via the request body. You can pass the following parameters to the URL:
 
 * **fields**: required parameter to select the profiles that are going to be modified
-* **create**: boolean parameter that you can set to true if you want a new profile to be created if there are no matching profiles
-* **async**: boolean parameter to modify the profiles asynchronously. If you set this to true, the method immediately returns and proceeds in the background with updating profiles
+* **create**: boolean parameter that you can set to 1 if you want a new profile to be created if there are no matching profiles
+* **async**: boolean parameter to modify the profiles asynchronously. If you set this to 1, the method immediately returns and proceeds in the background with updating profiles
 
 The *fields* parameter is required. By passing this parameter to the the method
 you prevent that you overwrite all your profiles with a single API call. Only
 the profiles that match with the supplied fields are modified. You can find more
-information about this *fields* parameter in [the article about this parameter](./rest-fields-parameter.md).
+information about this parameter in [the article about this parameter](./rest-fields-parameter.md).
 
 If there are no profiles that match the supplied *fields*, and when you have set
-THE *create* parameter to 1, the REST API creates a brand new profile using
+*create* to 1, the REST API creates a brand new profile using
 the profile fields passed in the HTTP request body.
 
 Updating a large list of profiles can take a long time. If you do not want to
@@ -41,9 +41,8 @@ to immediately return, while it updates the profiles in the background.
 ## Body data
 
 Besided the parameters that you append to the URL, you must also include a
-request body in the PUT request. The body should contain the fields that should
-be assigned to matching profiles, or the new profile data if the method has
-to create a new profile in case of a no-match.
+request body in the PUT request. The body should contain the fields to
+assign to matching profiles.
 
 
 ## PHP example
