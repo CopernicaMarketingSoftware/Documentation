@@ -63,8 +63,8 @@ profiles are allowed in.
 
 ## Regular expressions
 
-When you create a field value restriction, you can choose from a list of operators
-It is possible to require that a field equals a specific value, or that contains 
+When you create a field value restriction, you can choose from a list of operators.
+It is for example possible to require that a field equals a specific value, or that contains 
 a certain *substring*. The most powerful field value check that you can use is 
 the regular expression.
 
@@ -79,7 +79,7 @@ which contains four digits and two letters (for example 1244XK):
 
 **/\^[0-9]4[a-z|A-Z]2\$/**
 
-If you want to learn more about regular expression, you best check the internet. 
+If you want to learn more about regular expressions, you best check the internet. 
 It is full of tutorials and websites that teach you to write regular expressions.
 
 -   [http://regexlib.com/](http://regexlib.com/)
