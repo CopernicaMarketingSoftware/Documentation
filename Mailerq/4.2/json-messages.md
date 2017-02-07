@@ -481,6 +481,27 @@ This is especially useful if you want to include the "feedback-id" header
 in a signature. This "feedback-id" header is required to be signed for
 Google/Gmail feedback loops.
 
+If you want to receive reports from remote servers whenever a DKIM signature
+fails to verify you can add a flag to the DKIM object to indicate this:
+
+````json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dkim": {
+        "domain": "example.com",
+        "selector": "x",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "report": true
+    }
+}
+````
+
+Note that you will have to update your DNS records with the options defined
+in [RFC 6651](https://tools.ietf.org/html/rfc6651) for the remote server
+to know where it should send their reports.
+
 ### ARC 
 A DKIM key can also be used for creation of ARC signatures. This is enabled
 by setting the "protocols" option.
