@@ -1,3 +1,5 @@
+# Uitschrijfgedrag instellen op je database of collectie
+
 Uitschrijfopties zijn een instelling op de database waarmee je de
 applicatie laat weten wat er moet gebeuren zodra iemand zich uitschrijft
 van jouw mailing. Dit wordt ook wel het uitschrijfgedrag genoemd.
