@@ -1,3 +1,5 @@
+# Document controleren voor het verzenden van een bulkmailing
+
 Voordat we uw bulkmailing definitief gaan versturen, doen we eerst een
 aantal controles op het document, de bestemming en de
 verzendinstellingen.
