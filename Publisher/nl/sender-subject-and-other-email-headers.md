@@ -1,3 +1,4 @@
+# Afzender, onderwerp en overige headers instellen
 Een e-mail header is informatie die aan uw e-mail wordt toegevoegd en
 kan worden uitgelezen door ontvangende mailservers. Sommige van deze
 informatie is niet zichtbaar voor de ontvangers. Enkele bekende headers
