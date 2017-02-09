@@ -31,7 +31,7 @@
     * [Tips en trucs](personalization-tricks)
 * [Scripting en opvolgacties](scripting-and-followups)
     * [Het data-script attribuut](data-script)
-* [Oude documentatie](oude-documentatie)
+* [Oude documentatie](old-documentation)
     * [Databasebeheer](database-management)
     * [Importeren en exporteren](import-and-export)
     * [Selecties en miniselecties](selections-and-miniselections)

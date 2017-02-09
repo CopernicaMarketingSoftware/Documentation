@@ -1,7 +1,6 @@
 # REST API: fetching profiles from a selection
 
-The method to retrieve all profiles that appear in a selection is a HTTP GET
-method that can be access through the following address:
+To retrieve all profiles in a selection, send a HTTP GET request to this address:
 
 `https://api.copernica.com/view/$id/profiles?access_token=xxxx`
 
@@ -27,8 +26,8 @@ use this parameter to only fetch profiles for which the field "country" equals
 "France". More information about using this parameter can be found in our
 [article about this fields parameter](./rest-fields-parameter.md).
 
-The name or numeric identifier of a field can be assigned to the parameter *order*.
-This will order the profiles that this API method returns on the given field.
+You can assign the name or numeric identifier of a field to the parameter *order*.
+This will order the profiles on the given field.
 Besides a name or ID, you can also pass a couple of special values to this parameter:
 
 * **id**: the default value, profiles are ordered based on their ID
