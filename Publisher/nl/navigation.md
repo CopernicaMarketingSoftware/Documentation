@@ -21,7 +21,7 @@
     * [DMARC records](dmarc)
 * [Templates en documenten](templates-en-documenten)
     * [Publisher templates](publisher-templates)
-* [Automatische koppelingen](automatische-koppelingen)
+* [API documentatie](apis)
     * [REST API](rest-api)
     * [Feedback loops](feedback-loops)
 * [Personaliseren](personalization)
