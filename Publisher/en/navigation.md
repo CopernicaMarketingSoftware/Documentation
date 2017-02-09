@@ -19,7 +19,7 @@
     * [SPF records](./spf.md)
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
-* [Automated synchronization](./automatic-links.md)
+* [API documentation](./apis.md)
     * [REST API](./rest-api.md)
     * [Feedback loops](./feedback-loops.md)
 * [Personalization](./personalization.md)
