@@ -2,7 +2,7 @@
 
 Als je een webpagina personaliseert, dan is het mogelijk om de query string 
 uit een URL te gebruiken in smarty personalisatie. Hiervoor gebruik je de 
-{$smarty.get.*variabele*}. Als het adres van een webpagina bijvoorbeeld
+{$smarty.get.*variabele*}. Als een webpagina bijvoorbeeld
 wordt bezocht via de url http://mywebsite.example.com*?name=Sjon*, dan kun
 je de variabele *name* gebruiken in de personalisatie:
 
