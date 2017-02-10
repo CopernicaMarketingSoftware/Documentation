@@ -1,3 +1,4 @@
+# Sender, subject and other email headers
 The e-mail header is the information that is sent with every e-mail,
 containing details about the sender, route and receiver. Most of this
 information is not visible to recipients. The most common email headers
