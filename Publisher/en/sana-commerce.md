@@ -1,3 +1,5 @@
+#Sana Commerce
+
 With the integration between Copernica and Sana Commerce you will be
 able to create professional email marketing campaigns for your Sana
 Commerce web shop. You can create, for example, personalized abandoned

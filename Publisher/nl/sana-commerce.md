@@ -1,3 +1,5 @@
+#Sana Commerce
+
 Met de integratie tussen Copernica en Sana Commerce ben je in staat
 professionele e-mailmarketingcampagnes op te zetten voor je Sana
 Commerce webshop. Zo maak je bijvoorbeeld eenvoudig gepersonaliseerde
