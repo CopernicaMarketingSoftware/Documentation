@@ -90,37 +90,6 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | POST      | [api.copernica.com/minirule/$id/conditions](./rest-post-minirule-conditions)                          | Create condition for a miniselection          |
 | GET       | [api.copernica.com/subprofile/$id](./rest-get-subprofile)                                             | Fetch subprofile data                         |
 | GET       | [api.copernica.com/subprofile/$id/fields](./rest-get-subprofile-fields)                               | Fetch subprofile fields                       |
-| GET       | [api.copernica.com/emailings](./rest-get-emailings)                                                   | Fetch emailings                               |
-| GET       | [api.copernica.com/emailing/$id](./rest-get-emailing)                                                 | Fetch emailing settings                       |
-| GET       | [api.copernica.com/emailing/$id/abuses](./rest-get-emailing-abuses)                                   | Fetch abuse reports per emailing              |
-| GET       | [api.copernica.com/emailing/$id/clicks](./rest-get-emailing-clicks)                                   | Fetch clicks per emailing                     |
-| GET       | [api.copernica.com/emailing/$id/deliveries](./rest-get-emailing-deliveries)                           | Fetch deliveries per emailing                 |
-| GET       | [api.copernica.com/emailing/$id/destinations](./rest-get-emailing-destinations)                       | Fetch addressees per emailing                 |
-| GET       | [api.copernica.com/emailing/$id/errors](./rest-get-emailing-errors)                                   | Fetch errors per emailing                     |
-| GET       | [api.copernica.com/emailing/$id/impressions](./rest-get-emailing-impressions)                         | Fetch impressions (opens) per emailing        |
-| GET       | [api.copernica.com/emailing/$id/snapshot](./rest-get-emailing-snapshot)                               | Fetch document snapshot of an emailing        |
-| GET       | [api.copernica.com/emailing/$id/statistics](./rest-get-emailing-statistics)                           | Fetch stats per emailing                      |
-| GET       | [api.copernica.com/emailing/$id/unsubscribes](./rest-get-emailing-unsubscribes)                       | Fetch unsubscribes per emailing               |
-| GET       | [api.copernica.com/emailingtemplates](./rest-get-emailingtemplates)                                   | Fetch email templates                         |
-| GET       | [api.copernica.com/emailingtemplate/$id](./rest-get-emailingtemplate)                                 | Fetch template data                           |
-| GET       | [api.copernica.com/emailingtemplate/$id/documents](./rest-get-emailingtemplate-documents)             | Fetch documents linked to a template          |
-| GET       | [api.copernica.com/emailingtemplate/$id/emailings](./rest-get-emailingtemplate-emailings)             | Fetch mailings based on a template            |
-| GET       | [api.copernica.com/emailnigdocument/$id](./rest-get-emailingdocument)                                 | Fetch document settings                       |
-| GET       | [api.copernica.com/emailingdocument/$id/emailings](./rest-get-emailingdocument-emailings)             | Fetch mailings based on a document            |
-| GET       | [api.copernica.com/emailingdestination/$id](./rest-get-emailingdestination)                           | Fetch addressee settings                      |
-| GET       | [api.copernica.com/emailingdestination/$id/abuses](./rest-get-emailingdestination-abuses)             | Fetch abuse reports per addressee             |
-| GET       | [api.copernica.com/emailingdestination/$id/clicks](./rest-get-emailingdestination-clicks)             | Fetch clicks per addressee                    |
-| GET       | [api.copernica.com/emailingdestination/$id/deliveries](./rest-get-emailingdestination-deliveries)     | Fetch deliveries per addressee                |
-| GET       | [api.copernica.com/emailingdestination/$id/errors](./rest-get-emailingdestination-errors)             | Fetch errors per addressee                    |
-| GET       | [api.copernica.com/emailingdestination/$id/fields](./rest-get-emailingdestination-fields)             | Fetch fields van een addressee                |
-| GET       | [api.copernica.com/emailingdestination/$id/impressions](./rest-get-emailingdestination-impressions)   | Fetch impressions per addressee               |
-| GET       | [api.copernica.com/emailingdestination/$id/unsubscribes](./rest-get-emailingdestination-unsubscribes) | Fetch unsubscribes per addressee              |
-| GET       | [api.copernica.com/abuses](./rest-get-abuses)                                                         | Fetch all abuse repotrs for the account       |
-| GET       | [api.copernica.com/clicks](./rest-get-clicks)                                                         | Fetch all clicks for the account              |
-| GET       | [api.copernica.com/deliveries](./rest-get-deliveries)                                                 | Fetch all deliveries for the account          |
-| GET       | [api.copernica.com/errors](./rest-get-errors)                                                         | Fetch all errors for the account              |
-| GET       | [api.copernica.com/impressions](./rest-get-impressions)                                               | Fetch all impressions for the account         |
-| GET       | [api.copernica.com/unsubscribes](./rest-get-unsubscribes)                                             | Fetch all unsubscribes for the account        |
 | GET       | [api.copernica.com/logfiles](./rest-get-logfiles)                                                     | Fetch all logfiles                            |
 | GET       | [api.copernica.com/logfiles/$name](./rest-get-logfiles-csv)                                           | Download logfile in CSV format                |
 | GET       | [api.copernica.com/logfiles/$name/json](./rest-get-logfiles-json)                                     | Download logfile in JSON format               |
