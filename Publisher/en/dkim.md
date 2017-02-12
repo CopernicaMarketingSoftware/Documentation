@@ -31,17 +31,19 @@ If you inspect the source code of a message that was sent with Copernica, you'll
 discover that we did not add one, but two *dkim-signature* headers. The first
 signature is a normal signature, based on your own private key and that refers to 
 the public key in your DNS. Receivers use this signature to verify that the 
-message was indeed sent out of your name. But besides this first signature, the
+message was indeed sent out of your name. But besides this first signature the
 message also contains a second signature that refers to the copernica.com domain.
 Why?
 
-Some ISP's (especially Gmail) use feedback loops to notify senders about the
-messages they processed. These ISP's periodically send a report to professional 
+Some inbox providers (especially Gmail) use feedback loops to notify senders. 
+These providers periodically send a report to professional 
 senders, like Copernica, with a brief summary of the number of messages they accepted,
 and the number of messages that were rejected and/or qualified as spam or abuse.
-To be absolutely sure that these reports only contain information about messages 
+To ensure that these reports only contain information about messages 
 sent by Copernica, Gmail requires us to add a second signature to each mail, 
-using our own private key, and that refers to the copernica.com domain.
+using our own private key, referring to the copernica.com domain. Gmail only 
+sends us reports about messages with this second signature, so that onbody ever
+gets a report about other people's messages. 
 
 The DKIM protocol is normally used to add signatures that match the from domain.
 This allows receivers to check if the email was really sent by the claimed sender. 
