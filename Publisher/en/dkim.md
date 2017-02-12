@@ -1,7 +1,7 @@
 # DKIM
 
 DomainKeys Identified Mail is, to explain it simply, a technology to add digital 
-signatures to emails. A program that receives a signed message, can use the
+signatures to emails. A program that receives a signed message can use the
 signature to check whether the message was indeed sent by the sender, and that it
 was not spoofed or modified in transit. Together with [SPF](./spf.md) and 
 [DMARC](./dmarc), DKIM is used to prevent email abuse.
@@ -17,9 +17,9 @@ valid signatures.
 
 If you use Copernica's [Sender Domain](./sender-domains.md) tools, you 
 automatically use DKIM. When you set up a Sender Domain, the Marketing Suite 
-dashboard shows you a list of recommended DNS settings. If you follow these
-settings and create the appropriate DKIM aliases (which are CNAME records), 
-you do not have to anything else. All emails that you send with Copernica then 
+dashboard shows you a list of recommended DNS settings. All you have to do is 
+follow these recommendations and create the appropriate DKIM aliases (which are 
+CNAME records). All emails that you send with Copernica then 
 get signed, and Copernica ensures that your public key is correctly
 published in DNS. We also refresh your keys once a month, to make it hard 
 for outsiders to crack your keys. 
