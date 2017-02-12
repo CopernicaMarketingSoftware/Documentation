@@ -50,7 +50,7 @@ This allows receivers to check if the email was really sent by the claimed sende
 But DKIM allows signatures from completely different domains too, which is what 
 happens here. Gmail uses both signatures: the normal one to check if the message 
 did indeed come from the sender, and the second one to check whether it is ok
-to send a report back to Copernica about this mail. 
+to send a report back to Copernica. 
 
 
 ## Managing DKIM keys with Copernica Publisher
