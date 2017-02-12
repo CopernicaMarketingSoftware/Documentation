@@ -57,7 +57,7 @@ to send a report back to Copernica.
 
 Before we introduced sender domains, Copernica users had to manage their own
 DKIM keys. Users had to manually store (copy-paste) the public keys in DNS, 
-and had they had to rotate their keys once in a while. The new sender domain
+and they had to rotate their keys once in a while. The new sender domain
 technology makes this manual editing obsolute: it all happens automatically.
 
 However, in the old Publisher environment you can still find some leftover forms
