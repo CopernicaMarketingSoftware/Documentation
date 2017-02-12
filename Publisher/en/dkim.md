@@ -61,7 +61,7 @@ and they had to rotate their keys once in a while. The new sender domain
 technology makes this manual editing obsolute: it all happens automatically.
 
 However, in the old Publisher environment you can still find some leftover forms
-and dialog windows to manage DKIM keys. These forms are still in use for users
+and dialog windows to manage DKIM keys. These forms are still used by users
 that have not you set up a sender domain. If you're using sender domains (which
 we stronly recommend) you can safely ignore these forms. With sender domains all
 your messages are automatically signed, and it is safe to keep the list of DKIM
