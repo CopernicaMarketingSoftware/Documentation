@@ -12,3 +12,6 @@ list-unsubscribe header is present in the email.
 However, there are other triggers besides those two. For example, when we receive a complaint at our abuse address. 
 Some email providers have feedback loops that give us a heads up when someone logs an email as spam. 
 These types of feedback are caught by Copernia and processed according to your unsubscribe options.
+
+## Where to find
+Unsubscribe behaviour can be set for each database individually. The profile management module has an option called 'set unsubscribe behaviour' under the database menu. Click this, and the rest speaks for itself.
