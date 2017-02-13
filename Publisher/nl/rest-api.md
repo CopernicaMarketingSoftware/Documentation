@@ -89,38 +89,8 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | POST      | [api.copernica.com/minirule/$id/conditions](./rest-post-minirule-conditions.md)                           | Aanmaken nieuwe conditie bij miniselectieregel|
 | GET       | [api.copernica.com/subprofile/$id](./rest-get-subprofile.md)                                              | Opvragen subprofielgegevens                   |
 | GET       | [api.copernica.com/subprofile/$id/fields](./rest-get-subprofile-fields.md)                                | Opvragen subprofielvelden                     |
-| GET       | [api.copernica.com/emailings](./rest-get-emailings.md)                                                    | Opvragen van (publisher)  emailings           |
-| GET       | [api.copernica.com/emailing/$id](./rest-get-emailing.md)                                                  | Opvragen gegevens van een emailing            |
-| GET       | [api.copernica.com/emailing/$id/abuses](./rest-get-emailing-abuses.md)                                    | Opvragen abusemeldingen per emailing          |
-| GET       | [api.copernica.com/emailing/$id/clicks](./rest-get-emailing-clicks.md)                                    | Opvragen kliks per emailing                   |
-| GET       | [api.copernica.com/emailing/$id/deliveries](./rest-get-emailing-deliveries.md)                            | Opvragen afleveringen per emailing            |
-| GET       | [api.copernica.com/emailing/$id/destinations](./rest-get-emailing-destinations.md)                        | Opvragen geadresseerden per emailing          |
-| GET       | [api.copernica.com/emailing/$id/errors](./rest-get-emailing-errors.md)                                    | Opvragen foutmeldingen per emailing           |
-| GET       | [api.copernica.com/emailing/$id/impressions](./rest-get-emailing-impressions.md)                          | Opvragen impressies (opens)  per emailing     |
-| GET       | [api.copernica.com/emailing/$id/snapshot](./rest-get-emailing-snapshot.md)                                | Opvragen document snapshot van een emailing   |
-| GET       | [api.copernica.com/emailing/$id/statistics](./rest-get-emailing-statistics.md)                            | Opvragen statistieken per emailing            |
-| GET       | [api.copernica.com/emailing/$id/unsubscribes](./rest-get-emailing-unsubscribes.md)                        | Opvragen afmeldingen per emailing             |
-| GET       | [api.copernica.com/emailingtemplates](./rest-get-emailingtemplates.md)                                    | Opvragen emailing templates                   |
-| GET       | [api.copernica.com/emailingtemplate/$id](./rest-get-emailingtemplate.md)                                  | Opvragen gegevens van een template            |
-| GET       | [api.copernica.com/emailingtemplate/$id/documents](./rest-get-emailingtemplate-documents.md)              | Opvragen documenten behorende bij een template|
-| GET       | [api.copernica.com/emailingtemplate/$id/emailings](./rest-get-emailingtemplate-emailings.md)              | Opvragen mailings op basis van een template   |
-| GET       | [api.copernica.com/emailnigdocument/$id](./rest-get-emailingdocument.md)                                  | Opvragen gegevens van een document            |
-| GET       | [api.copernica.com/emailingdocument/$id/emailings](./rest-get-emailingdocument-emailings.md)              | Opvragen mailings op basis van een document   |
-| GET       | [api.copernica.com/emailingdestination/$id](./rest-get-emailingdestination.md)                            | Opvragen gegevens van een geadresseerde       |
-| GET       | [api.copernica.com/emailingdestination/$id/abuses](./rest-get-emailingdestination-abuses.md)              | Opvragen abusemeldingen per geadresseerde     |
-| GET       | [api.copernica.com/emailingdestination/$id/clicks](./rest-get-emailingdestination-clicks.md)              | Opvragen kliks per geadresseerde              |
-| GET       | [api.copernica.com/emailingdestination/$id/deliveries](./rest-get-emailingdestination-deliveries.md)      | Opvragen afleveringen per geadresseerde       |
-| GET       | [api.copernica.com/emailingdestination/$id/errors](./rest-get-emailingdestination-errors.md)              | Opvragen foutmeldingen per geadresseerde      |
-| GET       | [api.copernica.com/emailingdestination/$id/fields](./rest-get-emailingdestination-fields.md)              | Opvragen velden van een geadresseerde         |
-| GET       | [api.copernica.com/emailingdestination/$id/impressions](./rest-get-emailingdestination-impressions.md)    | Opvragen impressies per geadresseerde         |
-| GET       | [api.copernica.com/emailingdestination/$id/unsubscribes](./rest-get-emailingdestination-unsubscribes.md)  | Opvragen afmeldingen per geadresseerde        |
-| GET       | [api.copernica.com/abuses](./rest-get-abuses.md)                                                          | Opvragen alle abusemeldingen voor het account |
-| GET       | [api.copernica.com/clicks](./rest-get-clicks.md)                                                          | Opvragen alle kliks voor het account          |
-| GET       | [api.copernica.com/deliveries](./rest-get-deliveries.md)                                                  | Opvragen alle afleveringen voor het account   |
-| GET       | [api.copernica.com/errors](./rest-get-errors.md)                                                          | Opvragen alle foutmeldingen voor het account  |
-| GET       | [api.copernica.com/impressions](./rest-get-impressions.md)                                                | Opvragen alle impressies voor het account     |
-| GET       | [api.copernica.com/unsubscribes](./rest-get-unsubscribes.md)                                              | Opvragen alle afmeldingen voor het account    |
 | GET       | [api.copernica.com/logfiles](./rest-get-logfiles.md)                                                      | Opvragen van alle logfiles                    |
 | GET       | [api.copernica.com/logfiles/$name](./rest-get-logfiles-csv.md)                                            | Downloaden van logfile in CSV formaat         |
 | GET       | [api.copernica.com/logfiles/$name/json](./rest-get-logfiles-json.md)                                      | Downloaden van logfile in JSON formaat        |
 | GET       | [api.copernica.com/logfiles/$name/xml](./rest-get-logfiles-xml.md)                                        | Downloaden van logfile in XML formaat         |
+
