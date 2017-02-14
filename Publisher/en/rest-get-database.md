@@ -1,22 +1,12 @@
-# REST API: fetching databases
+# REST API: fetching database properties
 
-To obtain an overview of all available databases, send a GET request to the following address:
+To retrieve all metadata about a database, send a GET request to the following address:
 
-`https://api.copernica.com/databases?access_token=xxxx`
+`GET https://api.copernica.com/database/$id?access_token=xxxx`
 
-## Supported parameters
-
-The following parameters can be added to the request:
-
-* **start**: first database to fetch
-* **limit**: maximum number of databases to fetch
-* **total**: show/hide the total number of databases
-
-For more information on the meaning of these parameters, see the [article on paging](rest-paging).
+Here $id can be either a unique numerical identifier of a database or the name of a database. This method does not support parameters.
 
 ## Returned data
-
-The method returns a list of databases. For each database the following fields are returned:
 
 * **ID**: unique numerical identifier
 * **name**: name of the database
@@ -33,7 +23,7 @@ For more information on the *fields*, *interests* and *collections* arrays, see 
 * [Fetching interests](rest-get-database-interests)
 * [Fetching collections](rest-get-database-collections)
 
-## PHP example
+# PHP example
 
 The following PHP script demonstrates how to call this API method using PHP:
 
@@ -43,18 +33,10 @@ The following PHP script demonstrates how to call this API method using PHP:
     // change this into your access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
     // do the call, and print result
-    print_r($api->get("databases", $parameters));
+    print_r($api->get("database/1234"));
 
-You need the [CopernicaRestApi class](rest-php) to run the example.
-
-## More information
+# More information
 
 * [Overview of all API calls](rest-api)
-* [Fetching a single database](rest-get-database)
-* [Creating a database](rest-post-databases)
+* [Editing a database](rest-put-database)
