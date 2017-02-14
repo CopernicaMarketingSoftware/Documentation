@@ -28,7 +28,7 @@ waarnaar het bericht is gestuurd, of, in het geval van een mailing naar
 subprofielen, van het bij het subprofiel behorende profiel. Dit profiel object
 heeft een aantal eigenschappen:
 
-* **{$profile.id}**: nummerieke identifier van het profiel
+* **{$profile.id}**: numerieke identifier van het profiel
 * **{$profile.extra}**: de extra data van het profiel die alleen met de api kan worden ingesteld
 * **{$profile.secret}**: de *geheime code* die bij het profiel is opgeslagen
 * **{$profile.code}**: alias voor {$profile.secret}, dus de geheime code
@@ -48,7 +48,7 @@ Als je een mailing naar subprofielen stuurt, dan is er naast het hierboven
 genoemde {$profile} object ook een {$subprofile} beschikbaar. Dit object heeft
 de volgende members:
 
-* **{$subprofile.id}**: nummerieke identifier van het subprofiel
+* **{$subprofile.id}**: numerieke identifier van het subprofiel
 * **{$subprofile.secret}**: de *geheime code* die bij het profiel is opgeslagen
 * **{$subprofile.code}**: alias voor {$subprofile.secret}, dus de geheime code
 * **{$subprofile.created}**: tijdstip waarop het subprofiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
@@ -93,7 +93,7 @@ personaliseren van je mailings.
 ## Foreign key velden
 
 Maar er kan meer. Je kunt in een database *foreign key* velden aanmaken. Dit zijn
-nummerieke velden met daarin het ID van een profiel in dezelfde of zelfs een heel
+numerieke velden met daarin het ID van een profiel in dezelfde of zelfs een heel
 andere database. Dit type veld stelt je in staat om relationele objectmodellen te
 maken en te gebruiken bij het personaliseren.
 
@@ -133,7 +133,7 @@ Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
 een {$account} en {$mailing} object met gegevens over de mailing. In het
 {$account} object zitten de volgende members:
 
-* **{$account.id}**: nummerieke identifier van je account
+* **{$account.id}**: numerieke identifier van je account
 * **{$account.name}**: naam van je account
 
 Het {$mailing} object is wat uitgebreider, en bevat allerlei instellingen

@@ -1,17 +1,17 @@
 # REST API: opvragen gegevens van een collectie
 
-Een collectie is een "tweede laag" binnen een database. Als je de nummerieke
+Een collectie is een "tweede laag" binnen een database. Als je de numerieke
 identifier van een collectie weet, dan kun je met een HTTP GET request de
 gegevens van de collectie ophalen:
 
 `GET https://api.copernica.com/collection/$id?access_token=xxxx`
 
-Als $id moet je de nummerieke identifier van de collectie opgeven.
+Als $id moet je de numerieke identifier van de collectie opgeven.
 
 
 ## Geretourneerde velden
 
-* **ID**: Unieke nummerieke identifier
+* **ID**: Unieke numerieke identifier
 * **name**: Naam van de collectie
 * **database**: ID van de database waartoe de collectie behoort
 * **fields**: Array met de velden in de collectie

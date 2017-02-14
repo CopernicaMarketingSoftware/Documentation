@@ -70,7 +70,7 @@ met decimalen op te slaan.
 ### Tekstveld
 
 Tekstvelden zijn velden voor tekstuele inhoud en kunnen letters [A-Z], 
-nummerieke waardes [0-9] of underscores bevatten. Een tekstveld kan
+numerieke waardes [0-9] of underscores bevatten. Een tekstveld kan
 tot 5 regels (multiline) hoog zijn. De standaardlengte van een tekstveld
 is 50 tekens. Je kunt dit aantal indien gewenst verhogen tot 255. Als je
 meer dan 255 karakters in een databaseveld kwijt wilt, gebruikt dan een

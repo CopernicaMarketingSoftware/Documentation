@@ -5,7 +5,7 @@ request sturen naar de volgende URL:
 
 `https://api.copernica.com/profile/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van het profiel
+De code $id moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
 
 

@@ -5,7 +5,7 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 
 `https://api.copernica.com/profile/$id?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van het profiel
+De code $id moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
 
 
@@ -14,7 +14,7 @@ dat je opvraagt.
 De methode retourneert gegevens van een profiel. De volgende eigenschappen 
 worden teruggegeven:
 
-* **ID**: nummeriek ID van het profiel
+* **ID**: numeriek ID van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
 * **secret**: de "geheime" code die aan een profiel is gekoppeld
 * **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
