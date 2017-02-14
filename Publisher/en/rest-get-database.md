@@ -32,9 +32,11 @@ The following PHP script demonstrates how to call this API method using PHP:
     
     // change this into your access token
     $api = new CopernicaRestApi("your-access-token");
-
+    
     // do the call, and print result
     print_r($api->get("database/1234"));
+
+You need the [CopernicaRestApi class](rest-php) to run the example.
 
 # More information
 
