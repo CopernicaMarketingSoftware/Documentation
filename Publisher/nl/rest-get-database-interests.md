@@ -5,7 +5,7 @@ met de volgende URL:
 
 `https://api.copernica.com/database/$id/interests?access_token=xxx`
 
-De variabele $id moet je vervangen door de nummerieke identifier of de naam
+De variabele $id moet je vervangen door de numerieke identifier of de naam
 van de database waar je de interesses van wilt opvragen.
 
 ## Beschikbare parameters
@@ -25,7 +25,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van interesses in de database. Voor elke interesse
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: nummeriek ID van de interesse
+* **ID**: numeriek ID van de interesse
 * **name**: naam van de interesse
 * **group**: naam van de interessegroep waar de interesse bij hoort
 

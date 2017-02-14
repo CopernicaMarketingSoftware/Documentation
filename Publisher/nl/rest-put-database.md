@@ -5,7 +5,7 @@ methode die toegankelijk is via het volgende adres:
 
 `https://api.copernica.com/database/$id?access_token=XXX`
 
-De variabele $id in de URL moet worden vervangen door de nummerieke identifier
+De variabele $id in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken.
 
 ## Beschikbare parameters

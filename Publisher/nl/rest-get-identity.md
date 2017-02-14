@@ -19,7 +19,7 @@ aanroepen van deze methode niet zo veel toegevoegde waarde.
 De methode retourneert een accountgegevens. De volgende eigenschappen worden
 teruggegeven:
 
-* **ID**: Unieke nummerieke identifier van het account
+* **ID**: Unieke numerieke identifier van het account
 * **name**: Naam van het account
 * **description**: Omschrijving van het account
 * **company**: Naam van het bedrijf dat betaalt voor het account

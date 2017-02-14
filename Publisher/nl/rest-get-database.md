@@ -5,12 +5,12 @@ ondersteunt geen parameters. De methode wordt aangeroepen via het volgende adres
 
 `GET https://api.copernica.com/database/$id?access_token=xxxx`
 
-Als $id kun je de nummerieke identifier van een database opgeven, of de naam
+Als $id kun je de numerieke identifier van een database opgeven, of de naam
 van een database.
 
 ## Geretourneerde velden
 
-* **ID**: Unieke nummerieke identifier
+* **ID**: Unieke numerieke identifier
 * **name**: Naam van de database
 * **description**: Omschrijving van de database
 * **archived**: Is de database gearchiveerd of niet?

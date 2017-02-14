@@ -5,7 +5,7 @@ POST call naar het volgende adres:
 
 `https://api.copernica.com/collection/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van de collectie
+De code $id moet je vervangen door de numerieke identifier van de collectie
 waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele
 andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 
@@ -25,8 +25,8 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
 Een veld kan de volgende types hebben:
 
-* **integer**: nummerieke waarde
-* **float**: nummeriek *floating point* nummer ("komma-getal")
+* **integer**: numerieke waarde
+* **float**: numeriek *floating point* nummer ("komma-getal")
 * **date**: datumveld dat verplicht moet zijn ingevuld
 * **empty_data**: datumveld dat ook leeg gelaten mag worden
 * **datetime**: veld met datum + tijdstip dat moet zijn ingevuld
@@ -38,7 +38,7 @@ Een veld kan de volgende types hebben:
 * **phone_gsm**: telefoonveld met mobiel nummer dat kan worden gebruikt voor sms berichten (maximaal 1 per database)
 * **select**: meerkeuzeveld
 * **big**: groot tekstveld
-* **foreign_key**: nummerieke waarde met verwijzing naar ander profiel
+* **foreign_key**: numerieke waarde met verwijzing naar ander profiel
 
 ## Voorbeeld in PHP
 

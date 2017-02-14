@@ -5,7 +5,7 @@ en beschikbaar via het volgende adres:
 
 `https://api.copernica.com/collection/$id/subprofiles?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van de 
+De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen.
 
 ## Beschikbare parameters
@@ -43,7 +43,7 @@ parameter *order* geven:
 De methode retourneert een lijst van subprofielen. Voor elk subprofiel worden de 
 volgende eigenschappen teruggegeven:
 
-* **ID**: nummeriek ID van het subprofiel
+* **ID**: numeriek ID van het subprofiel
 * **collection**: ID van de collectie waarin het subprofiel is opgeslagen
 * **profile**: ID van het profiel waar het subprofiel bij hoort
 * **secret**: de "geheime" code die aan een subprofiel is gekoppeld

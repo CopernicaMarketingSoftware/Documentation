@@ -6,7 +6,7 @@ naar het volgende adres:
 
 `https://api.copernica.com/view/$id/subprofileids?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van de 
+De code $id moet je vervangen door de numerieke identifier van de 
 miniselectie waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters
@@ -15,7 +15,7 @@ Deze methode ondersteunt geen parameters
 
 ## Geretourneerde velden
 
-De methode retourneert een JSON array bestaande uit nummerieke identifiers.
+De methode retourneert een JSON array bestaande uit numerieke identifiers.
 
 ## Voorbeeld in PHP
 
