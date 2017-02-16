@@ -2,7 +2,7 @@
 
 MailerQ can open one or more SMTP ports on which it accepts incoming mail.
 All these incoming messages are published to RabbitMQ. The incoming 
-messages are published the the inbox queue, set with the "rabbitmq-inbox"
+messages are published to the inbox queue, as set with the "rabbitmq-inbox"
 setting in the config file. 
 
 Remember that MailerQ sends out message from the _outbox_ queue - which is
@@ -10,13 +10,13 @@ a different queue than the inbox queue to which incoming messages are published.
 By default, incoming message are therefore not immediately sent out again. To
 overcome this, most MailerQ users give the "rabbitmq-inbox" setting the same 
 value as the "rabbitmq-outbox" setting. All incoming emails are then automatically 
-published to the outbox queue, from which they are then directly picked up again 
+published to the outbox queue, from which they are then immediately picked up again 
 and scheduled for immediate forwarding.
 
 ![MailerQ shared inbox outbox queue](../Images/mailerq-shared-inbox-outbox-queue.png)
 
 However, you can also configure MailerQ to use different inbox and outbox queues.
-MailerQ will then store all incoming messages in the inbox queue first. You can add 
+MailerQ then stores all incoming messages in the inbox queue first. You can add 
 your own scripts that process these messages and forwards them to 
 the outbox queue. Would you like to add a script that does additional processing 
 or filtering before an incoming message is forwarded? Configure MailerQ to publish received 
@@ -25,6 +25,9 @@ inbox queue. After processing, post the message to the outbox
 queue where MailerQ picks them up to deliver them.
 
 ![MailerQ seperate inbox outbox queues](../Images/mailerq-seperate-inbox-outbox-queues.png)
+
+If you use MailerQ to handle incoming email, you can also use scripts that pick
+up messages from the inbox queue, and store them in mailboxes or maildirs.
 
 
 ## Config file settings
@@ -48,14 +51,14 @@ Normally, MailerQ opens this port on all IP address that are available on
 the server. This means that if a server has multiple IP addresses, it does
 not matter to which of its IP addresses you connect: MailerQ listens on
 all of them. If you want to limit this, you can assign an explicit IP
-address using the "smtp-ip" variable. If you set this, MailerQ will
-only accept incoming connections to that specific IP.
+address using the "smtp-ip" variable. If you set this, MailerQ only accepts 
+incoming connections to that specific IP.
 
 The "smtp-port" setting contains the port number for the normal SMTP
-protocol. The SMTP protocol starts as a non-secure connection, but
-the client and server can start a STARTTLS handshake to secure the connection.
-Besides normal SMTP connections, you can also open already secured SMTP 
-ports with the "smtp-secure-port" setting. A secure port uses TLS right from 
+protocol. The SMTP protocol starts as a non-secure connection. The client 
+and server can start a STARTTLS handshake to secure the connection.
+Besides normal SMTP connections, it is also possible to open an already secured 
+SMTP socket. Use the "smtp-secure-port" setting for this. A secure port uses TLS right from 
 the start, and no STARTTLS handshake is necessary. This is slightly faster 
 (the initial handshake can be skipped) and is also more secure (the initial 
 EHLO message can not be intercepted). However, such encrypted connections are 
@@ -64,31 +67,40 @@ However, if you write your own SMTP handshake code, it sometimes is simpler
 and faster to have access to a connection that is already encrypted without 
 using "STARTTLS".
 
-The IP address to which you send a message to MailerQ, is the same as 
+The IP address to which you send a message to MailerQ, is normally the same as 
 the address *from* which the mail is going to be forwarded. Thus, if you 
 send an email to MailerQ listening on IP address 5.6.6.5, the message will 
 also be sent out from this IP. If you want to send out the message from a
 different IP instead, you should either add a special MIME header to your
-mail ("x-mq-ip"), or you can use the "smtp-defaultips" config file variable.
+mail ("x-mq-ip"), or you can use the following config file variables:
 
 ````
-smtp-defaultips:     1.2.3.4; 5.6.7.8
+smtp-default-ips:       1.2.3.4;4.5.6.7
+smtp-unmappable-ips:    1.2.3.28/32;1.2.3.5/32
+smtp-mappable-ips:      1.2.3.0/24;4.5.6.0/24
 ````
 
-The above config file setting tells MailerQ to only send out incoming mail from
-the IP addresses 1.2.3.4 and 5.6.7.8 -- even when it was originally received on a different IP
-address. You should leave this option out of the config file if you want to 
-send out incoming mails from the same IP address as to which you submitted them.
+The above config file settings tell MailerQ that the default outgoing IP addresses
+are 1.2.3.4 and 4.5.6.7. All messages that have not an explicit IP address from
+which they should be sent, will be sent from one of these two IP addresses.
+
+Messages that are submitted over SMTP, are sent out from the same IP address
+as to which they were submitted *if the IP address is mappable*. Thus, if you 
+send a message to 1.2.3.100, it will also be sent out from IP addresses 1.2.3.100.
+An IP address is considered to be mappable if it matches with the IP ranges
+inside the *smtp-mappable-ips* variable **and** does not match the ranges in the
+*smtp-unmappable-ips* variable. Thus, messages submitted to 1.2.3.100 are also
+sent out from 1.2.3.100 because that IP is mappable, while messages to 1.2.3.28
+get sent out from the default IP's, because this IP address is not mappable.
 
 
 ### Secure connections
 
-To be able to secure your SMTP traffic, you need to assign
-a private key that is used for the encryption. You can use a self-signed
-private key, but it is much better to use a key from a certificate 
-authority. However, using a self-signed key is still better than using 
-no key at all, as most SMTP clients will still accept the self-signed 
-key.
+To secure your SMTP traffic, you can assign a private key and certificate. You 
+can use a self-signed certificate, but it is much better to use a private key and
+a certificate from a certificate authority. However, using a self-signed key is 
+still better than using no key at all, as most SMTP clients will still accept 
+the self-signed key.
 
 ```
 smtp-certificate:   /etc/mailerq/your.domain.com.crt
