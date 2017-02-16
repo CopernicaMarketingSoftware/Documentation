@@ -6,7 +6,7 @@ kun je een HTTP GET requet naar het volgende adres sturen:
 
 `https://api.copernica.com/collection/$id/miniviews?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van de 
+De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
 
@@ -27,7 +27,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van miniselecties. Voor elke selectie
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: nummeriek ID van de miniselectie
+* **ID**: numeriek ID van de miniselectie
 * **name**: naam van de miniselectie
 * **description**: omschrijving van de miniselectie
 * **parent-type**: dit is altijd de string "collection"

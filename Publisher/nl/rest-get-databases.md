@@ -21,7 +21,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van databases. Van elke database in de lijst
 wordt een aantal velden teruggegeven:
 
-* **ID**: Unieke nummerieke identifier
+* **ID**: Unieke numerieke identifier
 * **name**: Naam van de database
 * **description**: Omschrijving van de database
 * **archived**: Is de database gearchiveerd of niet?

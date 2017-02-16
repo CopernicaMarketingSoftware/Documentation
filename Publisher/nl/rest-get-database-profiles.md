@@ -5,7 +5,7 @@ en beschikbaar via het volgende adres:
 
 `https://api.copernica.com/database/$id/profiles?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de profielen van wilt opvragen.
 
 ## Beschikbare parameters
@@ -43,7 +43,7 @@ parameter *order* geven:
 De methode retourneert een lijst van profielen. Voor elk profiel worden de 
 volgende eigenschappen teruggegeven:
 
-* **ID**: nummeriek ID van het profiel
+* **ID**: numeriek ID van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
 * **secret**: de "geheime" code die aan een profiel is gekoppeld
 * **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat

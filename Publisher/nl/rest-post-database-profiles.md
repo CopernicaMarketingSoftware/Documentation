@@ -5,7 +5,7 @@ naar de volgende URL.
 
 `https://api.copernica.com/database/$id/profiles?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
 kun je in de body van het HTTP request plaatsen.
 

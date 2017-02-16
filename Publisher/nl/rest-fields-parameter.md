@@ -43,7 +43,7 @@ in de database bestaat.
 Je kunt echter ook een paar *speciale* velden gebruiken die altijd beschikbaar zijn,
 ook als je niet van dergelijke velden hebt aangemaakt. Dit zijn de volgende velden:
 
-* **id**: de nummerieke identifier van het (sub)profiel
+* **id**: de numerieke identifier van het (sub)profiel
 * **code**: de geheime code van het (sub)profiel
 * **modified**: tijdstip waarop het (sub)profiel voor het laatst is aangepast. Dit tijdstip is in YYYY-MM-DD hh:mm:ss notatie
 

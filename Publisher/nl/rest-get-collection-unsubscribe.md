@@ -10,7 +10,7 @@ volgende adres:
 
 `GET https://api.copernica.com/collection/$id/unsubscribe?access_token=xxxx`
 
-Als $id moet je de nummerieke identifier van een collectie opgeven.
+Als $id moet je de numerieke identifier van een collectie opgeven.
 
 ## Geretourneerde velden
 
