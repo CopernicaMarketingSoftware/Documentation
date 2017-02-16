@@ -1,4 +1,4 @@
-# Database management
+# Setting up a database
 Copernica works with entirely configurable databases. It's up to you to decide on the structure of your databases, so your data always fits into Copernica. On top of that, Copernica databases are multidimensional. 
 This means your database can have multiple layers to support things like collections of webshop orders per profile.
 
@@ -32,15 +32,19 @@ containing their children.
 
 Read more on fields and collections
 
-## Other options
+## Database intentions
 There are various things to set up when designing databases. One is database intentions,
  in which you can specify whether a database is suitable for sending mailings. You can also set a variety of rules to which
  data must comply in order to be added to the databases. You'll find these settings under the 'database management' tab in
  Publisher.
  
-Read more on restrictions and user options.
+## Creating profiles
+After you've created the database and added fields to it, it is time to add data to it. We call these data *profiles* and they can be added through the profile module in Copernica. To test some things, it's best to start out with a test profile containing your own data.
 
+If you plan on using Copernica to design and send email, you can send test emails all through the process at any given time. These tests are sent to your *test destination*. It's logical to set your own profile as the test destination
 
+## The next step
+Once your database is ready and filled with your profile, you're ready to [make your first mailing](quick-mailing-guide) to further discover the magic of Copernica.
 
 
 

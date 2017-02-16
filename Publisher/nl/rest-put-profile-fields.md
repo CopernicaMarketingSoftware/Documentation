@@ -5,7 +5,7 @@ sturen naar de volgende URL:
 
 `https://api.copernica.com/profile/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier van het profiel 
+De code $id moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 

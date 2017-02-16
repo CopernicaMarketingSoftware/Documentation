@@ -5,7 +5,7 @@ Dit is een HTTP DELETE methode, naar het volgende adres:
 
 `https://api.copernica.com/database/$id?access_token=xxxx`
 
-De variabele $id moet worden vervangen door de nummerieke identifier of de naam
+De variabele $id moet worden vervangen door de numerieke identifier of de naam
 van de te verwijderen database.
 
     // dependencies

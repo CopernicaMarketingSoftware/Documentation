@@ -6,7 +6,7 @@ naar het volgende adres:
 
 `https://api.copernica.com/database/$id/profileids?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters
@@ -15,7 +15,7 @@ Deze methode ondersteunt geen parameters
 
 ## Geretourneerde velden
 
-De methode retourneert een JSON array bestaande uit nummerieke identifiers.
+De methode retourneert een JSON array bestaande uit numerieke identifiers.
 
 ## Voorbeeld in PHP
 

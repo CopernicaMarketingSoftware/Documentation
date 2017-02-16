@@ -5,7 +5,7 @@ veld uit een database:
 
 `https://api.copernica.com/database/$id/field/$id?access_token=xxxx`
 
-De eerste $id variabele moet je vervangen door de nummerieke identifier of de naam
+De eerste $id variabele moet je vervangen door de numerieke identifier of de naam
 van de database, en de tweede door het ID of de naam van het veld dat je wilt
 verwijderen.
 

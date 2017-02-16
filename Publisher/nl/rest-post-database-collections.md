@@ -5,7 +5,7 @@ je een HTTP POST request sturen naar het volgende adres:
 
 `https://api.copernica.com/database/$id/collections?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de collectie aan wilt toevoegen. De naam van de collectie
 moet als message body aan het HTTP request worden toegevoegd.
 

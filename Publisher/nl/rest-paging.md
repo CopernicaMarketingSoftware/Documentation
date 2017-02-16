@@ -29,7 +29,7 @@ en er meer entries beschikbaar zijn.
 
 Het belangrijkst is de property *data*. Hierin zit een array met de opgevraagde 
 gegevens. Bijvoorbeeld een array van databases of een array van profielen. De
-andere properties bevatten nummerieke waardes waar je aan kunt zien hoeveel
+andere properties bevatten numerieke waardes waar je aan kunt zien hoeveel
 objecten er zijn teruggegeven en hoeveel objecten beschikbaar zijn.
 
 De property *count* bevat het totaal aantal geretourneerde objecten. *Start*
@@ -47,7 +47,7 @@ Je weet dus dat je aanvullende calls moet doen om meer gegevens op te vragen.
 
 Elke methode die een lijst van objecten retourneert ondersteunt standaard
 drie parameters die je aan de URL kan toevoegen: *start*, *limit* en *total*.
-De *start* en *limit* parameters zijn nummerieke parameters die je kunt gebruiken
+De *start* en *limit* parameters zijn numerieke parameters die je kunt gebruiken
 om op te geven welke deel je van de beschikbare objecten je wilt opvragen: waar 
 de lijst moet starten (hoeveel eerdere elementen worden overgeslagen), en 
 hoeveel elementen moeten worden teruggegeven.

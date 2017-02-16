@@ -6,7 +6,7 @@ op te vragen.
 
 `https://api.copernica.com/database/$id/views?access_token=xxxx`
 
-De code $id moet je vervangen door de nummerieke identifier of de naam van de 
+De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
 
 
@@ -27,7 +27,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van selecties. Voor elke selectie
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: nummeriek ID van de selectie
+* **ID**: numeriek ID van de selectie
 * **name**: naam van de selectie
 * **description**: omschrijving van de selectie
 * **parent-type**: mogelijke waardes: "database" of "view", gebruikt om aan te geven
