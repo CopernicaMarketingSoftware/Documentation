@@ -1,3 +1,5 @@
+# Dedicated IP adres
+
 Klanten van Copernica kunnen een dedicated IP-adres huren voor gebruik
 binnen hun marketing campagnes. Je hebt een dedicated IP-adres nodig als
 je je website met een SSL certificaat wilt beveiligen en als je je wilt
