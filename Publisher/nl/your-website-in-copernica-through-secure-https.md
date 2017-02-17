@@ -1,3 +1,5 @@
+# Website via een beveiligde https-verbinding
+
 Het is mogelijk om je website in Copernica via een beveiligde
 https-verbinding aan te bieden. Als je een subdomein gebruikt onder
 Copernica.com (bijv. mijnbedrijf.copernica.com) dan hoef je hiervoor
