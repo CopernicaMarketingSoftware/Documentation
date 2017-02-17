@@ -18,7 +18,7 @@ De stappen:
 -   Als je nog niet over een certificaat beschikt, dien je deze eerst
     aan te vragen. Er zijn veel partijen die deze certificaten aanbieden
     (via Google te vinden). Alle types SSL-certificaten voldoen.
--   Als je nog geen dedicated IP adres bij Copernica, dien je ook deze
+-   Als je nog geen dedicated IP adres bij Copernica hebt, dien je ook deze
     eerst aan te vragen. Hiervoor rekent Copernica een klein bedrag per
     maand. Deze kan aangevraagd worden bij de Support-afdeling.
 -   Wanneer je het certificaat in je bezit hebt, neem dan contact op met
