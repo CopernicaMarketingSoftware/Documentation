@@ -1,3 +1,5 @@
+# Vijf manieren om je omzet te vergroten
+
 Met een Copernica partnerlicentie beschik je als bureau over vijf
 manieren om je omzet structureel te vergroten.
 
