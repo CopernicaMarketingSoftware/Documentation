@@ -1,3 +1,5 @@
+# 10 tips om af te rekenen met non-respondenten
+
 In het verleden zijn organisaties vooral druk geweest met het verzamelen
 van zoveel mogelijk opt-in adressen. Kwantiteit was belangrijker dan
 kwaliteit. Inboxen zitten tegenwoordig propvol en reputatiemanagement
