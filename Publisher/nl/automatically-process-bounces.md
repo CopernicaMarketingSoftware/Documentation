@@ -1,3 +1,5 @@
+# Het automatisch verwerken van bounces
+
 Bij het afleveren van een e-mail kunnen diverse fouten optreden. Het is
 bijvoorbeeld mogelijk dat een e-mailadres niet meer bestaat, of omdat
 het fout is geschreven (dus nooit bestaan heeft).
@@ -41,4 +43,3 @@ meer verstuurd zal worden .
 4.  Kies hier voor ‘**Check inhoud andere selectie**’. Kies voor de
     bounceselectie en voor ‘**Alle profielen niet in bovenstaande
     selectie**’.
-

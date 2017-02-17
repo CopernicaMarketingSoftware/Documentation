@@ -1,3 +1,5 @@
+# CSS automatisch omzetten naar inline HTML
+
 De meeste e-mailprogramma’s negeren de CSS styles die in de header of in
 een extern stylesheet zijn gedefinieerd. Het vervelende hiervan is dat
 je voor ieder HTML element apart de weergave zou moeten definiëren (door

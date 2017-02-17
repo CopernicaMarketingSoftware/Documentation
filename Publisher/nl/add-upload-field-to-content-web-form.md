@@ -1,3 +1,5 @@
+# Uploadveld van een webformulier
+
 Met een uploadveld kan de invuller van een webformulier een bestand
 toevoegen aan zijn profiel. Hiervoor kies je bij *veld toevoegen*
 (Content) voor een *bestand uploadveld*. Onder **Profielen**vind je bij

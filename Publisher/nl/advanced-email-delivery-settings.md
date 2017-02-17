@@ -1,3 +1,5 @@
+# Geavanceerde verzendinstellingen
+
 In het onderdeel *Beheer*, onder *Account \>***Verzendinstellingen**,
 vind je de instellingen voor het versturen van alle berichten vanuit dit
 account. Deze kunnen voor een deel verder geconfigureerd worden.

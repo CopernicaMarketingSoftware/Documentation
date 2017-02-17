@@ -1,3 +1,5 @@
+# Account instellingen
+
 Nadat een account is aangemaakt, kan je de omschrijving van het account
 en enkele andere instellingen nog wijzigen vanuit Beheer \> Account \>
 **Account-instellingen**

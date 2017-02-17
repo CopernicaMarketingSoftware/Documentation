@@ -1,3 +1,5 @@
+# Wordt een gecertificeerde Copernica gebruiker
+
 Gebruikers kunnen hun parate Copernica kennis toesten aan de hand van
 officiele testen. Er zijn 2 testen beschikbaar: Fundamental en Advanced.
 Na het behalen van een test mag je je Certified Fundamental en/of

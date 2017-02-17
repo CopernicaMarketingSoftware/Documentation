@@ -1,3 +1,5 @@
+# API calls voor dummies
+
 In het [vorige artikel over de
 API](https://www.copernica.com/nl/blog/hij-bijt-niet-een-introductie-tot-copernicas-rest-api)
 over de API werd besproken wat de API is en waar hij voor gebruikt kan
@@ -133,7 +135,7 @@ in je database informatie toevoegen. Als we bijvoorbeeld Henk Visser aan
 onze database willen toevoegen, zou ons JSON bestand er zo uit kunnen
 zien:
 
-    { 
+    {
        "firstname" : "Henk"
         "lastname" : " Visser"
         "email" : "henk.visser@copernica.com"
