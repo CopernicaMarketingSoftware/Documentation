@@ -1,3 +1,5 @@
+# Drie manieren om afmeldingen te verwerken
+
 Je bent volgens Nederlandse wet verplicht een duidelijke
 afmeldmogelijkheid te bieden bij elke bulkmailing die je verzendt. De
 meest gebruikelijke vorm hiervan is een hyperlink om af te melden. Een
