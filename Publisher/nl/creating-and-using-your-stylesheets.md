@@ -1,3 +1,5 @@
+# Maak en gebruik een nieuwe stylesheet
+
 Vanuit het onderdeel *Stijl* kan je nieuwe stylesheets maken voor
 gebruik in Copernica. Het stylesheet is generiek en bevat **tabbladen**
 voor het bewerken van een stylesheet voor algemeen gebruik, voor RSS,

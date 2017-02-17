@@ -1,4 +1,6 @@
-Het is mogelijk om je (verstuurde) nieuwbrieven online te publiceren.
+# Online nieuwsbrief archief maken
+
+Het is mogelijk om je (verstuurde) nieuwbsrieven online te publiceren.
 Hiervoor kan je de *linkemail* (lees: Link e-mail) functie gebruiken.
 
 Deze functie werkt in principe hetzelfde als de *webversion* tag, met

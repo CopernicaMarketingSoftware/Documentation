@@ -1,3 +1,5 @@
+# Eigen domein voor Copernica website
+
 Websites die je maakt binnen Copernica kan je koppelen aan een eigen
 domein. Dit kan een gewoon domein zijn (jouwbedrijf.com), maar meestal
 is dit een subdomein, bijvoorbeeld nieuwsbrief.jouwbedrijf.com.

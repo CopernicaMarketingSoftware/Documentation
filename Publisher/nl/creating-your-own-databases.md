@@ -1,3 +1,5 @@
+# Database aanmaken
+
 Verzamel, beheer en verwerk relatiegegevens online op één centrale
 locatie met Copernica Marketing Software. Jij bepaalt welke gegevens je
 gebruikt voor de marketingcampagnes. Van standaard NAW-gegevens tot

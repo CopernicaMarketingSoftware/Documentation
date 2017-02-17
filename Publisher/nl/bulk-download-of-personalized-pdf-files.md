@@ -1,4 +1,4 @@
-# Bulk download van gepersonaliseerde PDF-bestanden
+# Bulk downloaden van gepersonaliseerde PDF-bestanden
 
 PDF-bestanden die je beheert in het onderdeel PDF kun je downloaden.
 

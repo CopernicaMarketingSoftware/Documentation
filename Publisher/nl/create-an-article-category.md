@@ -1,3 +1,5 @@
+# Een nieuwe artikel rubriek aanmaken
+
 Om een nieuw artikel aan te maken, dien je allereerst te beschikken over
 een rubriek waarin het artikel moet worden opgenomen. Je kan
 bijvoorbeeld een rubriek *Nieuwsbrief* aanmaken. Een artikel dat je
@@ -40,4 +42,3 @@ rubriek](artikelen-toevoegen-aan-de-rubriek)
 
 -   Klik in het linker overzicht op *Artikelen zonder rubriek*
 -   Klik in het menu Artikel op *Artikel toevoegen*.
-

@@ -1,3 +1,5 @@
+# Tellen met databasevelden 
+
 Collecties worden dikwijls gebruikt om bijvoorbeeld producten op te
 slaan. Elk product dat is aangekocht door een profiel wordt dan
 opgeslagen als een subprofiel. Een regelmatig terugkerende vraag is of

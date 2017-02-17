@@ -1,3 +1,5 @@
+# PDF-blokken conditioneel laten zien
+
 Net als bij content blokken in e-mailings en websites, kan je
 PDF-blokken conditioneel tonen. Dit maakt het bijvoorbeeld mogelijk om
 aan mannen een geheel andere tekst te tonen dan aan de vrouwelijke

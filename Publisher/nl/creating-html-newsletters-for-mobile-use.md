@@ -6,7 +6,7 @@ when you are creating HTML newsletters. More and more recipients read
 your email on their smartphone or tablet. Below you will find several
 tips that help you create your mobile-friendly HTML newsletters.
 
-### \
+### 
 **Optimizing CSS for mobile**
 
 A frequent phenomenon when reading email on mobile phones are the style

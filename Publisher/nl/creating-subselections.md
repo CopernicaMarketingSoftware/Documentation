@@ -1,3 +1,5 @@
+# Subselecties
+
 Om overzicht te bewaren in je database of een bepaalde structuur aan te
 brengen, kan je gebruik maken van subselecties. Een subselectie is een
 selectie op een tweede of dieper gelegen niveau. Dus onder een andere

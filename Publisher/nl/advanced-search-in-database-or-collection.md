@@ -1,4 +1,4 @@
-Geavanceerd zoeken in een database of collectie
+# Geavanceerd zoeken in een database of collectie
 
 Om profielen te vinden in een database, kan je de **snelzoekoptie**
 gebruiken die altijd zichbaar is boven de geopende database. Om meer

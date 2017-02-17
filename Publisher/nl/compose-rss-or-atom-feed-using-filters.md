@@ -1,3 +1,5 @@
+# Een feed samenstellen met behulp van filters
+
 Een feed is een bundeling van artikelen. Welke artikelen in de feed
 worden opgenomen stel je in met behulp van filters. Zo kan je
 bijvoorbeeld alleen artikelen uit een bepaalde rubriek, of van een

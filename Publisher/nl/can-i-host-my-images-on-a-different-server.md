@@ -1,3 +1,5 @@
+# Afbeeldingen hosten op een andere server
+
 Afbeeldingen die je gebuikt in een mailing kan je uploaden naar
 Copernica, maar je kan deze ook direct van een andere locatie laden.
 Bijvoorbeeld direct linken naar een afbeelding die je hebt gevonden met

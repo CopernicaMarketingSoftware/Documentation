@@ -1,3 +1,5 @@
+# E-mailtemplate als webtemplate
+
 Je kan een e-mailtemplate ook gebruiken als webtemplate, door de
 e-mailtemplate te kopiëren naar het onderdeel Websites. Andersom is
 vanzelfsprekend ook mogelijk.

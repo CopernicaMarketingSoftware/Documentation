@@ -1,3 +1,5 @@
+# Selecties gebruiken voor personalisatie
+
 Het is mogelijk om selecties en/of miniselecties te gebruiken binnen
 smarty personalisatie. Je gebruikt hiervoor de **in\_selection** en
 **in\_miniselection** tags. Je kan met behulp van deze tags bijvoorbeeld

@@ -1,3 +1,5 @@
+# Bewerk individueel profiel
+
 De profielen in je database beheer je in het onderdeel **Profielen**. Je
 kunt individuele profielen toevoegen, bewerken, verwijderen.
 

@@ -1,3 +1,5 @@
+# Gepersonaliseerde PDF maken
+
 Op zoek naar een web-based oplossing voor het maken en beheren van
 printuitingen? Een PDF-document is een uitstekend kanaal ter
 ondersteuning van je bestaande marketingcampagnes. Met Copernica maak je
@@ -40,4 +42,3 @@ Gebruik je gepersonaliseerde PDF-document bijvoorbeeld als:
 -   Een persoonlijke brief waar je een gepersonaliseerde QR-code in
     opneemt om relaties naar je website te lokken.
 -   En nog veel meer andere mogelijkheden.
-

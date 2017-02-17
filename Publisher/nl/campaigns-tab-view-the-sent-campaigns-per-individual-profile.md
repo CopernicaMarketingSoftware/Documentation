@@ -1,3 +1,5 @@
+# Campagne resultaten van een individueel profiel
+
 Nieuwsgierig naar de campagne resultaten van een bepaald persoon? Van
 ieder profiel worden deze gegevens bewaard. Je kan ze raadplegen via het
 tabblad Campagnes, bij het profiel. Hier vind je een overzicht van alle

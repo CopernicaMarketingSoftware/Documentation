@@ -1,3 +1,5 @@
+# Wachtwoord veranderen of opnieuw aanvragen
+
 Je kan je eigen wachtwoord wijzigen. Om je wachtwoord te wijzigen ga je
 naar het welkoms menu, rechtbovenin de applicatie.
 

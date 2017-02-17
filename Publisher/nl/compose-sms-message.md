@@ -1,3 +1,5 @@
+# Een sms samenstellen
+
 Een nieuw document voor sms verzendingen maak je aan vanuit het menu
 **Document** in het onderdeel **Mobile**
 

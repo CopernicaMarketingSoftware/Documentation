@@ -1,4 +1,4 @@
-# Automatisch repareren van verkeerde email adressen
+# Automatisch repareren van verkeerde e-mailadressen
 
 E-mailadressen in een database of selectie kunnen worden gecontroleerd
 op validiteit. Dit wordt gedaan aan de hand van een lijst van

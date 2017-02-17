@@ -1,3 +1,5 @@
+# Dubbele opt-in voor nieuwe profielen
+
 Je mag van de Wet niet door rood rijden en alleen commerciele e-mails
 versturen aan personen die zich hiervoor hebben aangemeld. Zulks een
 aanmelding noemt men in de wereld van de internet marketing ook wel

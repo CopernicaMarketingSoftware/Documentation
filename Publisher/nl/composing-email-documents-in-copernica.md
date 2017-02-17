@@ -1,3 +1,5 @@
+# Een e-mailtemplate samenstellen
+
 Zodra je een e-mailtemplate gereed hebt, kun je starten met het maken
 van een e-maildocument.
 

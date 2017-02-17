@@ -1,3 +1,5 @@
+# Condities voor testaccount
+
 Deze voorwaarden zijn van toepassing op het gebruik van het Copernica
 testaccount. De gebruiker van het Copernica testaccount verklaart dat
 deze voorwaarden aan hem/haar zijn verstrekt en gaat ermee akkoord.

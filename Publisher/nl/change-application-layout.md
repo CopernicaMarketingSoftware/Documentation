@@ -1,3 +1,5 @@
+# Lay-out van Copernica aanpassen
+
 Partners en franchisers van Copernica kunnen de applicatie tonen in een
 aangepaste lay-out. Nieuwe en bestaande lay-outs beheer je in het
 onderdeel **Beheer**.\
