@@ -1,3 +1,5 @@
+# Condities voor opvolgacties
+
 Het is mogelijk om een opvolgactie wel / niet in te roosteren en/of uit
 te voeren op basis van gegevens uit het profiel of subprofiel aan wie de
 opvolgactie is gericht. Voor het instellen van deze condities kan je

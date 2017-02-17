@@ -1,3 +1,5 @@
+# Contact
+
 Copernica Marketing Software heeft vestigingen in Nederland, Duitsland
 en Engeland. Wil je Copernica bezoeken of telefonisch bereiken? Dan vind
 je hieronder de contactgegevens van onze verschillende vestigingen.\

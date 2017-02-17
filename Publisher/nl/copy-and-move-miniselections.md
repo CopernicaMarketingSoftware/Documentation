@@ -1,3 +1,5 @@
+# Kopieer en verplaats een miniselectie
+
 Het kan gebeuren dat je een selectie per ongeluk op de verkeerde plaats
 aanmaakt. Gelukkig kan je een selectie eenvoudig verplaatsen naar een
 andere locatie. Ook kan je selecties kopieren. Dit is handig wanneer je

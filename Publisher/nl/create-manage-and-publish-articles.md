@@ -1,3 +1,5 @@
+# Artikelen maken en publiceren
+
 In het onderdeel **Content** kan je artikelen maken en beheren. Deze
 artikelen kan je vervolgens publiceren in je e-mailings of op je
 website. Dit publiceren gaat via een Atom of een RSS feed**. **Dit zijn

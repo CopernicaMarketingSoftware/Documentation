@@ -1,3 +1,5 @@
+# PDF-blokken maken in Acrobat Pro
+
 De blokken waarmee je in Copernica (gepersonaliseerde) content toevoegt
 aan PDF bestanden, maak je niet in Copernica, maar in Acrobat Pro. Je
 hebt hiervoor de gratis PDF-lib plugin nodig.

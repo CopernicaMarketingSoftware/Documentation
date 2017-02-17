@@ -1,4 +1,4 @@
-Nieuwsbrief selectie maken
+# Nieuwsbrief selectie maken
 
 Volgens de wet mag je geen ongevraagde commerciele e-mails versturen, en
 moeten ontvangers zich te allen tijde kunnen uitschrijven van je

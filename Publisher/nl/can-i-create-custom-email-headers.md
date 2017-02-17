@@ -1,3 +1,5 @@
+# Custom e-mail headers
+
 De e-mail header is voor de ontvanger onzichtbare informatie die wordt
 meegestuurd met een e-mail. Deze informatie heeft betrekking op de
 zender, de route en de ontvanger van het bericht. Extra headers maken

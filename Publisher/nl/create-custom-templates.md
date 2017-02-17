@@ -1,3 +1,5 @@
+# Een template maken
+
 Ontwerp met Copernica je eigen op maat gemaakte email templates. Deze
 template vormt de basis voor je
 [emails](https://www.copernica.com/nl/functies/e-mailings "E-mailings")

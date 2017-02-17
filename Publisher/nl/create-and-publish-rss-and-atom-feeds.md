@@ -1,3 +1,5 @@
+# RSS en atom feeds
+
 Maak eigen RSS en Atom feeds. De feeds kan je zowel in je campagnes
 binnen Copernica gebruiken, maar kunnen ook door elke andere feedreader
 worden ingelezen. Je publiceert ze dus net zo eenvoudig op je webshop of
@@ -33,4 +35,3 @@ stappen.
 -   Eigen CSS stylesheet of XSLT gebruiken voor je feed
 -   [Hoe je markdown gebruikt in
     Copernica](./how-to-use-markdown-in-copernica.md "Hoe je markdown gebruikt in Copernica")
-

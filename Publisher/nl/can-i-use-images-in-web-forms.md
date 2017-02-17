@@ -1,3 +1,5 @@
+# Afbeeldingen in webformulieren
+
 Het is diverse manieren mogelijk om afbeeldingen te gebruiken in je
 webformulier. Je kan afbeeldingen plaatsen in een formulier tekstblok,
 of afbeeldingen gebruiken in gekoppelde XSLT en CSS bestanden.

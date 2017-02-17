@@ -1,3 +1,5 @@
+# Externe feeds inladen
+
 De loadfeed functie staat ook toe om externe feeds in te laden. Simpel
 door in de tag te refereren aan het volledige internetadres van de feed.
 

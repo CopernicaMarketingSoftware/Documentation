@@ -1,3 +1,5 @@
+# Sms samenstellen
+
 Tegenwoordig is bijna iedereen mobiel bereikbaar. Copernica biedt een
 multimediale oplossing voor je marketingcampagnes. Daarom maak je binnen
 Copernica ook eenvoudig mobiele marketingcampagnes aan. Of het nu gaat

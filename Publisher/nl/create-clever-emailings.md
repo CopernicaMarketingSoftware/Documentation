@@ -1,4 +1,6 @@
-Een simpele email in platte tekst, emails in de huisstijl van je bedrijf
+# Slimme e-mails
+
+Een simpele e-mail in platte tekst, emails in de huisstijl van je bedrijf
 of een gepersonaliseerde boodschap op maat maken? Via Copernica stel je
 in een paar stappen je eigen email marketing campagne samen. Gebruik
 daarvoor je eigen HTML-kennis of één van onze voorontworpen email

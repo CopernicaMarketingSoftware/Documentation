@@ -1,3 +1,5 @@
+# Campagne resultaten en statistieken
+
 Copernica houdt automatisch voor je bij welke ontvangers je e-mails
 geopend hebben, wie van hen hebben doorgeklikt en hoevaak dit is
 gebeurd. Maar ook kan je gedetailleerde informatie terugvinden over
@@ -60,4 +62,3 @@ Website statistieken
 
 -   [Website en webpagina statistieken
     bekijken](./website-and-web-page-statistics.md)
-

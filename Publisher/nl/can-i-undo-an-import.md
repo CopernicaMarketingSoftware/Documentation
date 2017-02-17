@@ -1,3 +1,5 @@
+# Een import ongedaan maken
+
 Mislukte imports. Het komt in de beste families voor. Indien het een
 import was die alleen nieuwe profielen heeft aangemaakt, dan zijn deze
 vrij eenvoudig weer te verwijderen. Zijn er echter ook bestaande

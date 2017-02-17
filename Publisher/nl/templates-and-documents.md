@@ -1,3 +1,5 @@
+# Templates en documenten
+
 HTML-documenten die je verstuurt met Copernica zijn gebouwd met
 templates. Met speciale tags geef je in de template broncode aan waar
 later in het document de tekst en afbeeldingen kunnen worden toegevoegd.
@@ -97,4 +99,3 @@ En verder nog
     tonen](./how-do-i-make-content-blocks-conditional.md)
 -   [Kan ik gebruik maken van image maps in mijn
     e-maildocument?](./can-i-use-image-maps-in-email-templates.md)
-

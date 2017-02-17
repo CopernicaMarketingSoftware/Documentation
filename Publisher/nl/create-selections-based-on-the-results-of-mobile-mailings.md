@@ -1,3 +1,5 @@
+# Selecties aan de hand van mobiele resultaten 
+
 Het is mogelijk om een selectie te maken op basis van verstuurde
 sms-berichten. Er kan alleen onderscheid worden gemaakt tussen
 (sub)profielen aan wie wel/geen bericht is verzonden.
