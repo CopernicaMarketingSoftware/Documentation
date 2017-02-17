@@ -1,3 +1,5 @@
+# Afbeeldingen en bestanden
+
 Afbeeldingen en bestanden die je gebruikt in je Copernica campagnes kun
 je op verschillende plekken opslaan. De meest logische plek om bestanden
 op te slaan verschilt per doeleinde. Gebruik je een afbeelding slechts
