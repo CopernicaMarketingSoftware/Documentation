@@ -1,3 +1,5 @@
+# Een opvolgactie voor alles
+
 Copernica is er om het gemak te dienen (of om de luie marketeer tevreden
 te houden). Campagnes kan je daarom volledig automatiseren. Je hoeft dus
 maar één keer de knoppen te bedienen. Vervolgens kan je rustig

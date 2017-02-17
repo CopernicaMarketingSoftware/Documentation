@@ -1,3 +1,5 @@
+# Voorbeeld van een verlaten winkelmandje
+
 Een van de meest gevraagde functies voor gebruik met onze [Magento
 integratie](./magento.md "Magento webshop integratie voor email marketing")
 is de abandoned shopping cart, het [verlaten
@@ -5,8 +7,8 @@ winkelmandje](./abandonded-shopcarts.md "Verlaten winkelwagens").
 Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
-plaatsen, loont het om [verlaten
-winkelmandjes](../en/3-ways-that-web-shops-are-missing-out-on-business.md) beter
+plaatsen, loont het om verlaten
+winkelmandjes beter
 onder de aandacht te brengen. Een email campagne die hierbij past is een
 campagne voor verlaten winkelmandjes. Daarmee stuur je een email zodra
 een klant een winkelmandje in je webshop achterlaat.
@@ -140,7 +142,7 @@ te zetten ontstaat de volgende code:
     <tr><th></th><th>Product</th><th>Amount</th><th>Price (1 pc.)</th><th>Total price</th></tr>
 
     {capture assign="basketTotal"}0{/capture}
-  
+
     {loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
 
     {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
@@ -166,12 +168,12 @@ te zetten ontstaat de volgende code:
                     {$productTotal}
                 </td>
             </tr>
-    
+
             {assign var="basketTotal" value=$basketTotal+$productTotal}
         {/if}
- 
+
     {/foreach}
-  
+
     <tr><td></td><td></td><td></td>
         <td><b>Total price:</b></td><td><b>{$basketTotal}</b>
     </td></tr>

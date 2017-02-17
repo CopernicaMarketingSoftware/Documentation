@@ -1,4 +1,4 @@
-Hoe gaat u met uw 
+# Bounce management met Copernica
 
 Hoe gaat u op correcte wijze met uw bounces om met behulp van Copernica?
 
@@ -140,4 +140,3 @@ geregistreerd:
     replies.
 -   *Niet gerubriceerde fouten* Copernica Marketing Software heeft de
     fout niet herkend.
-

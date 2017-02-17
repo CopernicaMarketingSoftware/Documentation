@@ -1,3 +1,5 @@
+# Hoe werkt een MX-record
+
 Een MX-record (Mail exchange-record) is een type verwijzing in een
 Domain Name System (./dns-data-what-does-it-do.md "DNS")).
 Dit is het systeem dat onder andere aangeeft naar welk specifiek

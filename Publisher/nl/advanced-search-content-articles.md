@@ -1,3 +1,5 @@
+# Geavanceerd zoeken in content artikelen 
+
 Om een specifiek (feed) artikel te vinden in het onderdeel Content, kan
 je de zoek en filterfunctie gebruiken.
 
@@ -98,4 +100,3 @@ In je zoekopdracht kan je gebruik maken van de volgende operators.
 > helemaal een mooie. Woorden schieten te kort” zal ook terugkomen in de
 > zoekresultaten, omdat interpunctie en hoofdlettergebruik worden
 > genegeerd. \
-

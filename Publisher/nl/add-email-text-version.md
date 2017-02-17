@@ -1,3 +1,5 @@
+# Tekstversie
+
 Tegelijk met het HTML document kan er een tekstversie worden
 meegestuurd. Deze is bedoeld voor e-mail clients die geen HTML e-mails
 ondersteunen. Ontvangers met dergelijke e-mail clients (bijvoorbeeld een

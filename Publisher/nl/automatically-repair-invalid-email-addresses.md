@@ -1,3 +1,5 @@
+# Automatisch repareren van verkeerde email adressen
+
 E-mailadressen in een database of selectie kunnen worden gecontroleerd
 op validiteit. Dit wordt gedaan aan de hand van een lijst van
 veelvoorkomende typfouten, zoals @htmail.com of @hotmail,com. We kunnen

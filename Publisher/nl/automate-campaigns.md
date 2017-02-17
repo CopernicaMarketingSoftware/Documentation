@@ -1,3 +1,5 @@
+# Campagnes automatiseren
+
 In Copernica automatiseer je campagnes met opvolgacties. Een opvolgactie
 is een geautomatiseerde reactie op een gebeurtenis. Zo'n gebeurtenis kan
 bijvoorbeeld een klik op een link in een e-mail zijn, of het verzenden
@@ -26,4 +28,3 @@ koppelen binnen je campagnes.
 
 -   [Kan ik de antwoorden uit een enquete opgestuurd krijgen in een
     opvolgactie](./how-to-receive-the-answers-given-in-a-survey-by-email.md)
-

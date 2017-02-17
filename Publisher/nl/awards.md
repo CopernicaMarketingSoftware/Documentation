@@ -1,3 +1,5 @@
+# Awards
+
 Dankzij de sterke groei van Copernica BV en het geloof in onze
 kernwaarden 'innovatief, gepassioneerd en ondernemend' heeft Copernica
 de voorbije jaren verschillende awards in ontvangst mogen nemen.
@@ -46,4 +48,3 @@ marketing, ICT en e-business.\
 \
 \
 \
-

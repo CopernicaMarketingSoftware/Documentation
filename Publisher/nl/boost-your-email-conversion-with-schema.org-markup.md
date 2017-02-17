@@ -1,3 +1,5 @@
+# Geef je conversie een boost met schema.org
+
 Zou het niet mooi zijn als iedereen die jouw e-mailings ontvangt al op
 je call-to-action kon klikken zonder de e-mail te openen? Wat zou dat
 voor conversieboost opleveren? Kom er zelf achter door gebruik te maken

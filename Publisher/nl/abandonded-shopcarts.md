@@ -1,3 +1,5 @@
+# Verlaten winkelwagentje
+
 Het e-mailen van sitebezoekers die hun winkelwagen hebben laten staan is
 tot wel 20 keer effectiever dan reguliere e-mailcampagnes en levert
 conversies op van 15 tot wel 50%, volgens testrapporten van grote
