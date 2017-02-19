@@ -1,11 +1,14 @@
 # Download instructions
 
-MailerQ is distributed in binary form for a number of Linux distributions.
-The best way to download MailerQ is to add the Copernica repository (Copernica 
-is the company that develops MailerQ) to the list of sources 
-used by your "apt-get" or "yum" package manager. After doing this, you
-can use the regular software update tools to stay up to date with the
-latest version of MailerQ.
+We have precompiled MailerQ versions for a number of Linux distributions. 
+The easiest way to get your hand on the software is to add the Copernica 
+repository to the source list of your package manager. You can then use
+"apt-get" or "yum" to install MailerQ, and to get updates.
+
+If you do not want to use your package manager, you can download MailerQ
+manually. Check out our downloads page for that.
+
+[Click here to download MailerQ manually](/product/downloads)
 
 
 ## Installing on Debian/Ubuntu based systems
