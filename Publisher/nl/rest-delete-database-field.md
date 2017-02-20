@@ -18,7 +18,7 @@ verwijderen.
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call
-    $api->delete("database/1234/field/voornaam");
+    $api->delete("database/1234/field/firstname");
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
