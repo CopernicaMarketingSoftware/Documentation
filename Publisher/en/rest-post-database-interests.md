@@ -24,7 +24,7 @@ $api = new CopernicaRestApi("your-access-token");
 
 // data to pass to the call
 $data = array(
-    'name'      =>  'Voetbal',
+    'name'      =>  'Football',
     'group'     =>  'Sport'
 );
 ```
