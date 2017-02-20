@@ -17,7 +17,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call
-$api->delete("database/1234/field/voornaam");
+$api->delete("database/1234/field/firstname");
 ```
 This example uses the [CopernicaRestAPi class](rest-php).
 
