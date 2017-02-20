@@ -10,7 +10,7 @@ The following variables can be used in the body of the HTTP PUT request:
 - **archived**: optional boolean to determine whether or not a database should be archived.
 
 ## PHP example
-The following exampje demonstrates how to use the API method:
+The following example demonstrates how to use the API method:
 ```PHP 
 // dependencies
 require_once('copernica-rest-api.php');
@@ -23,7 +23,7 @@ $parameters = array();
 
 // data to be sent to the api
 $data = array(
-    'description'   =>  'een nieuwe omschrijving',
+    'description'   =>  'a new description',
     'archived'      =>  true
 );
 
