@@ -43,7 +43,7 @@ $api = new CopernicaRestApi("your-access-token");
 
 // data to pass to the call
 $data = array(
-    'name'      =>  'extra-veld',
+    'name'      =>  'extra-field',
     'type'      =>  'text'
 );
 
