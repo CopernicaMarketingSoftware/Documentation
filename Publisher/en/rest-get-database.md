@@ -1,44 +1,39 @@
-# REST API: fetching database properties
+# REST API: requesting data from a database
 
-To retrieve all metadata about a database, send a GET request to the following address:
+A method to request all metadata from a database. This method does not support parameters. It is called using the following address:
+ `GET https://api.copernica.com/database/$id?access_token=xxxx`
 
-`GET https://api.copernica.com/database/$id?access_token=xxxx`
+## Returned fields
+**ID**: unique numerical identifier
+**name**: name of the database
+**description**: description of the database
+**archived**: whether or not the database is archived
+**created**: when the database was created
+**fields**: array of fields in the database
+**interests**: array met interests in the database
+**collections**: array met de collections in the database
 
-Here $id can be either a unique numerical identifier of a database or the name of a database. This method does not support parameters.
+Fields, interests and collections are returned as arrays of objects. If you want to know how these arrays are built, you can check out the pages of these API methods, which return similar data:
 
-## Returned data
+- [Requesting fields](rest-get-database-fields)
+- [Requesting interests](rest-get-database-interests)
+- [Requesting collections](rest-get-database-collections)
 
-* **ID**: unique numerical identifier
-* **name**: name of the database
-* **description**: description of the database
-* **archived**: whether or not the database is archived
-* **created**: creation timestamp, in YYYY-MM-DD hh:mm:ss format
-* **fields**: array of fields
-* **interests**: array of interests
-* **collections** : array of collections
+## PHP example
 
-For more information on the *fields*, *interests* and *collections* arrays, see the documentation of the following API methods:
+The following example demonstrates how to use this method:
 
-* [Fetching fields](rest-get-database-fields)
-* [Fetching interests](rest-get-database-interests)
-* [Fetching collections](rest-get-database-collections)
+```PHP
+// dependencies
+require_once('copernica_rest_api.php');
 
-# PHP example
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-The following PHP script demonstrates how to call this API method using PHP:
+// do the call, and print result
+print_r($api->get("database/1234"));
+```
+This example uses the [CopernicaRestAPi class](rest-php).
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // do the call, and print result
-    print_r($api->get("database/1234"));
-
-You need the [CopernicaRestApi class](rest-php) to run the example.
-
-# More information
-
-* [Overview of all API calls](rest-api)
-* [Editing a database](rest-put-database)
+## More information
+- [Overview of all REST API methods](rest-api)
