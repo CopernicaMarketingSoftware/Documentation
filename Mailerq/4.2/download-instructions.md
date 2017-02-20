@@ -2,11 +2,10 @@
 
 The easiest way to get your hand on the software is to add the Copernica 
 repository to the source list of your package manager. You can then use
-"apt-get" or "yum" to install MailerQ, and to get updates.
-
-If you do not want to use your package manager, you can download MailerQ
-manually. Check out our [downloads page](/product/downloads) for a list of
-available files.
+"apt-get" or "yum" to install MailerQ, and to get updates. If you do not want 
+to use your package manager, you can download MailerQ manually. Check out our 
+[downloads page](/product/downloads) for a list of available files that
+can be manually installed.
 
 
 ## Installing on Debian/Ubuntu based systems
