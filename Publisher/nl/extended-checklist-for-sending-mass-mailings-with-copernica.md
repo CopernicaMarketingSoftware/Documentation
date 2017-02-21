@@ -1,4 +1,4 @@
-# Het maken van verzendselecties
+# Checklist voor het verzenden van bulkmailing
 
 Om de eerste mailing te versturen is het belangrijk om Copernica goed in
 te richten, je document te controleren en te testen. Als je alle
