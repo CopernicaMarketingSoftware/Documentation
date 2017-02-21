@@ -1,3 +1,5 @@
+# Het maken van verzendselecties
+
 Om de eerste mailing te versturen is het belangrijk om Copernica goed in
 te richten, je document te controleren en te testen. Als je alle
 onderstaande stappen hebt doorlopen ben je klaar om te verzenden.
