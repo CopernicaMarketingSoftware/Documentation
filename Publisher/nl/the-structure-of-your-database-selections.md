@@ -1,3 +1,5 @@
+# De structuur van een verzendlijst
+
 Een goede verzendlijst voor je email marketing draagt bij aan je
 deliverability en heeft een positief effect op je email marketing
 resultaten. Vandaar dat het belangrijk is dat je regelmatig de bezem
@@ -18,7 +20,8 @@ standaardselectie.
 
 ![Standaard selectie opbouw email
 marketing](../images/databasebeheer.png "Standaard selectie opbouw email marketing")\
- Om deze selectieboom te maken, maken we eerst de selecties aan voor het
+
+Om deze selectieboom te maken, maken we eerst de selecties aan voor het
 Databasebeheer.
 
 N.b. Bedenk goed in hoeverre de onderstaande waardes voor jou van
