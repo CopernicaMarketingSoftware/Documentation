@@ -24,9 +24,9 @@ var_dump($result);
 ## Assigning arrays
 
 Arrays can be assigned to the script as well, and are turned into Javascript
-arrays. As you may know, in Javascript everything's an object: even arrays. The
+arrays. As you may know, in Javascript everything is an object: even arrays. The
 PHP-JS extension takes care of this conversion, and converts the PHP array
-into an traverable Javascript array-object with a 'length' property:
+into an traversable Javascript array-object with a 'length' property:
 
 ```php
 <?php

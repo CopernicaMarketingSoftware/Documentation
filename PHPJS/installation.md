@@ -70,10 +70,12 @@ export PATH=`pwd`/depot_tools:"$PATH"
 gclient
 fetch v8
 cd v8
-git checkout 5.3.99
-make library=shared i18nsupport=off native
+git checkout lkgr
+gclient sync
+gn gen out.gn/library --args='is_debug=false is_component_build=true v8_enable_i18n_support=false'
+ninja -C out.gn/library libv8.so
 sudo cp include/*.h /usr/include
-sudo cp out/native/lib.target/libv8.so /usr/lib
+sudo cp out.gn/library/libv8.so /usr/lib
 sudo ldconfig
 ```
 
@@ -86,7 +88,7 @@ GitHub](https://github.com/CopernicaMarketingSoftware/PHP-JS), or one
 of the [versioned releases](https://github.com/CopernicaMarketingSoftware/PHP-JS/releases).
 
 Before installing PHP-JS you'll have to copy 2 files from the v8 installation directory.
-You'll have to copy `out/native/natives_blob.bin` and `out/native/snapshot_blob.bin` into the
+You'll have to copy `out.gn/library/natives_blob.bin` and `out.gn/library/snapshot_blob.bin` into the
 PHP-JS directory. We can't ship these files as they depend on your local v8 build.
 After you've done this you can simply compile PHP-JS using ```make```. To then install
 it systemwide using ```sudo make install```.
