@@ -1,3 +1,5 @@
+# SOAP API Documentatie
+
 Behalve de bestaande
 [integraties](./integrations.md "Integraties")
 voor verschillende systemen, is het dankzij onze krachtige SOAP API ook

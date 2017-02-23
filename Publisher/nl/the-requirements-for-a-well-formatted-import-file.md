@@ -1,3 +1,5 @@
+# Een importbestand maken
+
 Het importbestand is een lijst met gegevens die je wilt importeren naar
 je database en/of collectie in Copernica. Een importbestand maak je
 bijvoorbeeld met Excel.
