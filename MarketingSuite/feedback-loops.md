@@ -3,7 +3,7 @@
 The Marketing Suite allows you to set up feedback loops. These feedback loops
 can be used to receive real timer event notifications. The Marketing Suite
 will notify your server every time an event occurs (click on a link, 
-opening of an email, an incoming bounce, or a failed delivery).
+opening of an email, an incoming bounce, a failed delivery, or the editing of a profile).
 
 The feedback is sent over the HTTP or HTTPS protocol using the HTTP POST
 mechanism. When you [set up a feedback loop](#feedback-setup), you register 
@@ -33,6 +33,10 @@ The following feedback loops can be used:
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
 * [Feedback loops for opens](feedback-opens)
+* [Feedback loops for profile creations](feedback-creates)
+* [Feedback loops for profile updates](feedback-updates)
+* [Feedback loops for profile deletions](feedback-deletes)
+
 ## URL validation
 
 Before calls are made to your URL, the web address first has

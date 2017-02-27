@@ -13,7 +13,7 @@ Feedback loops from ESP's are used to notify senders (like Copernica) when users
 ## Setting up a feedback loop
 Setting up a feedback loop happens from the Marketing Suite dashboard, In the *configuration* menu, you can fill in the address the HTTP POST call is sent to. It's pretty self explanatory: select the events you're interested in and provide the location of your script.
 
-We've got a built-in security system in the feedback loops. To prevent sending data to servers that don't belong to you, you have to prove you have access to the server you've set up. After vreating a feedback loop, you have to place a small verification file onto your server. Only after Copernica downloads and verifies this file do we start making calls.
+We've got a built-in security system in the feedback loops. To prevent sending data to servers that don't belong to you, you have to prove you have access to the server you've set up. After creating a feedback loop, you have to place a small verification file onto your server. Only after Copernica downloads and verifies this file do we start making calls.
 
 ## Data
 Copernica sends all data in HTTP POST format to your script. The only thing you have to do, is place a simple script onto your server that catches these data and uses them for something. The following data are sent with the calls, if possible:
