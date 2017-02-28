@@ -20,10 +20,9 @@ Profiles
 2.  [Adding database fields (3:06)](./profiles-adding-database-fields.md)
 3.  [Adding Collections (2:48)](./profiles-adding-collections.md)
 4.  [Adding profiles and subprofiles (1:27)](./profiles-adding-profiles-and-subprofiles.md)
-5.  [Profile data (1:01)](./profiles-profile-data.md)
-6.  [Selections (2:15)](./profiles-selections.md)
-7.  [Creating a miniselection (2:22)](./profiles-creating-a-miniselection.md)
-8.  [Miniselection on selection level (2:29)](./profiles-miniselection-on-selection-level.md)
+5.  [Selections (2:15)](./profiles-selections.md)
+6.  [Creating a miniselection (2:22)](./profiles-creating-a-miniselection.md)
+7.  [Miniselection on selection level (2:29)](./profiles-miniselection-on-selection-level.md)
 
 Emailings
 
