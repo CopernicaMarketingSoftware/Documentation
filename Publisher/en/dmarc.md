@@ -3,12 +3,12 @@
 DMARC (Domain-based Message Authentication, Reporting and Conformance) is a
 technology that is used to prevent email abuse, like phishing and spam. To get
 a good understanding of DMARC it is best to look at email from the eyes of
-a professional email receiver. Imagine that you are Gmail, Hotmail or Yahoo,
+a professional email receiver. Imagine that you were Gmail, Hotmail or Yahoo,
 how would you handle incoming email?
 
 Before DMARC was invented, we had two important technologies to identify email:
 [SPF](spf) and [DKIM](dkim). SPF allows you, receiver, to check whether the 
-email was sent from an expected IP address and DKIM can be used, to put it simply, 
+email was sent from an expected IP address. DKIM can be used, to put it simply, 
 to check whether the message was indeed written by the claimed sender. Receivers 
 can check every incoming with these two technologies: was the message indeed 
 sent from an IP address that belongs to the company that claims to send the 
@@ -16,7 +16,8 @@ message (and not by an obscure IP address from someone else), and was the
 message indeed written by the claimed sender (and not by someone else)? It is
 of course best if the message passes both of these tests.
 
-But if only one of the tests passes receivers normally consider messages valid too.
+Passing both tests is preferred, but if only one of the tests succeeds receivers 
+normally consider messages valid too.
 For example if a message does have a valid DKIM signature, but came in from
 an unexpected IP address. This happens if a mail was forwarded or retransmitted.
 In such a scenario the DKIM signature stays valid, but the sending IP is 
