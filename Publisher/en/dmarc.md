@@ -18,7 +18,7 @@ of course best if the message passes both of these tests.
 
 Passing both tests is preferred, but if only one of the tests succeeds receivers 
 normally consider messages valid too.
-For example if a message does have a valid DKIM signature, but came in from
+For example if a message does have a valid DKIM signature, but came from
 an unexpected IP address. This happens if a mail was forwarded or retransmitted.
 In such a scenario the DKIM signature stays valid, but the sending IP is 
 different. Because of the valid signature however, a receiver still knows for 
@@ -27,14 +27,14 @@ sure that the message came from the claimed sender, and will accept the message.
 Things get complex if both checks fail: the IP address from which the
 message came in does not match SPF, and the message has no or an invalid DKIM 
 signature. Should a receiver treat this as an abuse message, because someone
-appears to be sending out of someone else's name, or is this still a legitimate 
+appears to be sending out of someone else's name? Or is this still a legitimate 
 message that was just written by someone who had not set up the correct DKIM 
 and SPF records? Should such a message be rejected or thrown away (because it's 
 abuse), or should it be placed in the inbox (because it came from grandma who
 did not understand SPF and DKIM)? It's a big challenge for receivers to make
 this choice. Customers do not appreciate it when legitimate messages are thrown away.
 
-For receivers it would be ideal if they could get in contact with the sender
+For receivers it would be so helpful if they somehow could get in contact with the sender
 when an invalid message comes in. "Hey, I just got a message from one of
 your employees, but SPF and DKIM are wrong. Is this because of a mistake on
 your side? What do you want me to do with this wrong message? Put it in
@@ -57,7 +57,7 @@ be thrown away, while the other 90% should be accepted.
 
 Of course, in reality the settings in your DMARC record are mainly guidelines 
 for receivers. A receiver can decide to ignore the settings, and handle your mail
-differently than you have specified. But the guidelines are often used.
+differently than you have specified.
 
 Besided the delivery policy and the percentage, you can also add email addresses 
 to your DMARC record. Receivers use this address to notify you when they get 
@@ -68,7 +68,7 @@ your own email address in the DMARC record, you will suddenly start to receive
 these notifications and reports.
 
 Copernica's [sender domain technology](sender-domains) takes all the complicated
-DNS settings out of your hands, including setting up the DMARC records. And if
+DNS settings out of your hands, including setting up the DMARC records. If
 you configure a sender domain, you can also let Copernica take care of handling 
 the DMARC reports that are sent back. All these reports are logged and displayed
 in fancy charts and tables on the Marketing Suite dashboard.
