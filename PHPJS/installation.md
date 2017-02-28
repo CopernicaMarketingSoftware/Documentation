@@ -75,7 +75,7 @@ gclient sync
 gn gen out.gn/library --args='is_debug=false is_component_build=true v8_enable_i18n_support=false'
 ninja -C out.gn/library libv8.so
 sudo cp include/*.h /usr/include
-sudo cp out.gn/library/libv8.so /usr/lib
+sudo cp out.gn/library/*.so /usr/lib
 sudo ldconfig
 ```
 
