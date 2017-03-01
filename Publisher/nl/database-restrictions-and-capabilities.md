@@ -33,7 +33,7 @@ alleen kunt mailen naar de selectie "nieuwsbrief" en niet naar de hele database.
 ## Databaserestricties
 
 Databaserestricties zijn regels die je kunt instellen op een database of
-collectie. Wanneer iemand data wilt toevoegen of wijzigen (via de applicatie of 
+collectie. Wanneer iemand data wil toevoegen of wijzigen (via de applicatie of 
 via een webformulier), dan moet de ingevoerde waarde voldoen aan deze regels 
 anders kan het profiel niet opgeslagen of gewijzigd worden. Zo kun je bijvoorbeeld
 instellen dat de waarde van het databaseveld "Leeftijd" niet lager mag zijn dan
