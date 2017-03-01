@@ -1,23 +1,24 @@
 # Followups using javascript
 
+If you're writing the HTML code of your mailings yourself, you can add a piece
+of javascript to each hyperlink. This javascript is executed by Copernica
+when the link is clicked. This works more or less the same as the "onclick" 
+attribute that you are probably already familiar with, with one big difference: 
+the "onclick" script is executed on the client, while this script runs on
+the Copernica servers.
 
+There are a couple of ways how you can attach a script to hyperlinks:
 
+* using the *data-script* attribute on &lt;a&gt; tags
+* if you use the drag-and-drop editor in the follow-up form
 
-
-
-All hyperlinks in a mailing support the *data-script* attribute. You can assign
-a custom javascript to this attribute that is executed by Copernica when the
-link is clicked. This script is more or less identical to a "onclick" attribute,
-with one big difference: the "onclick" javascript is executed on the client,
-while the script inside the "data-script" attribute runs on the Copernica servers.
 
 ## Available objects
 
-Inside the script that you store inside the *data-script* attribute you can
-make use of a couple of global variables that identify the (sub)profile that
-clicked on the link, and other data that is relevant for the click. Each of
-these objects have readonly properties to get data, and some writable properties
-to change them as well. The following variables are accessible:
+Inside the script you can make use of a couple of global variables that identify 
+the (sub)profile that clicked on the link, and other data that is relevant for 
+the click. Each of these objects have readonly properties to get data, and some
+writable properties to change them as well. The following variables are accessible:
 
 * [**copernica**](./followups-scripting-copernica.md)
 * [**message**](./followups-scripting-message.md)
@@ -33,9 +34,8 @@ If you want to change a profile when a link is clicked, you can use the followin
 
     <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">click here to unsubscribe</a>
 
-The above example is a very simple one. The data-script is executed with the v8
-javascript engine that is also used by Google Chrome, so you can write very complex
-scripts.
+The above example is a very simple one. The data-script is executed when the
+link is clicked.
 
 Before an email is delivered, the data-script is removed from the original code. Your
 receivers therefore do not get to see the script when they open the source code of
