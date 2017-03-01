@@ -16,17 +16,16 @@ nieuwe database aan te maken waarin opnieuw alle profielgegevens worden
 geïmporteerd, adviseren wij om steeds dezelfde database te gebruiken. Je 
 database wordt dan steeds rijker door de feedback van eerdere campagnes. Door 
 middel van selecties kan de database worden gesegmenteerd en gebruikt voor 
-doelgerichte campagnes, zonder dat je addressen opnieuw hoeft te importeren.
+doelgerichte campagnes, zonder dat je adressen opnieuw hoeft te importeren.
 
 
 Marketing Suite of Copernica Publisher?
 ---------------------------------------
 
-Momenteel is het databasebeheer alleen toegankelijk via de oude Copernica
-Publisher. Maar de ontwikkelingen gaan snel, en we verwachten op heel korte
-termijn deze module ook in Marketing Suite aan te bieden. Tot het zover is,
-zul je echter gebruik moeten maken van Publisher voor het aanmaken en bewerken
-van databases, selecties en profielen.
+Het databasebeheer is zowel toegankelijk via de oude als de nieuwe interface.
+Maar nog niet alle functies van de oude interface zijn ook beschikbaar in de
+nieuwe omgeving. Daarom adviseren we om voorlopig nog even gebruik te maken
+van de oude omgeving.
 
 
 Meerdere dimensies
@@ -66,5 +65,5 @@ is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
 dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
 door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
-[Lees meer over restricties en gebruikesmogelijkhedeh](database-restrictions-and-capabilities)
+[Lees meer over restricties en gebruikesmogelijkheden](database-restrictions-and-capabilities)
 
