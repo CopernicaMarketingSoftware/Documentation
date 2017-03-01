@@ -1,3 +1,4 @@
+#Database en collectie veld types
 Je databases en collecties in Copernica zijn opgebouwd met
 databasevelden. Er zijn verschillende veldtypes beschikbaar, ieder
 geschikt voor het opslaan van een specifiek soort gegevens. Er zijn
@@ -53,7 +54,7 @@ de weergave van webformulieren.
 
 Grote velden zijn in principe hetzelfde als tekstvelden, op een klein
 verschil na: ze kunnen tot 16 miljoen tekens bevatten (genoeg om een
-bestseller te slaan).
+bestseller in op te slaan).
 
 Het is beter om geen selecties te maken op grote velden. Grote velden
 zijn de enige velden die niet kunnen worden geïndexeerd.
