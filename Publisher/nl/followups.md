@@ -3,7 +3,7 @@
 Als op een link in een mailing wordt geklikt, of als een andersoortige 
 gebeurtenis plaatsvindt, kan Copernica automatisch nieuwe acties uitvoeren 
 of inroosteren. Je kunt dus allerlei campagnes maken en automatische 
-opvolgacties maken. Er zijn zelfs meerdere manieren om dit soort opvolgacties
+opvolgacties instellen. Er zijn meerdere manieren om dit soort opvolgacties
 te maken:
 
 * Via de [opvolgactiemanager van de drag-and-drop editor](./followups-editor.md).
