@@ -1,4 +1,9 @@
-# The data-script attribute
+# Followups using javascript
+
+
+
+
+
 
 All hyperlinks in a mailing support the *data-script* attribute. You can assign
 a custom javascript to this attribute that is executed by Copernica when the
