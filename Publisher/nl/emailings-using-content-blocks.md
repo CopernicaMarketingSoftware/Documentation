@@ -16,7 +16,7 @@ Een contentblok aanmaken: de bewerkmodus
 
 -   Navigeer in Copernica naar ‘E-mailings’ en selecteer het document
     dat je wilt bewerken
--   Klik onderin op ‘[Bewerkmodus](./view-document-in-edit-mode-or-in-preview-mode.md)’
+-   Klik onderin op ‘[Bewerkmodus](./personalization-settings.md)’
 -   Kies ‘Gepersonaliseerd’ om een contentblog
     [gepersonaliseerd](./emailings-using-content-blocks.md)
     te tonen. Of juist ‘Toon variabelen’ als je jouw
@@ -62,7 +62,7 @@ Voorbeeldweergave
 -----------------
 
 Het resultaat van je ingevoerde gegevens is direct te zien in de
-[voorbeeldweergave](./view-document-in-edit-mode-or-in-preview-mode.md)
+[voorbeeldweergave](./personalization-settings.md)
 binnen Copernica. Ook hier heb je weer de keuze tussen om je
 [Smarty-variabelen](./smarty.md)
 zichtbaar te laten zijn (‘Toon variabelen’) of het document

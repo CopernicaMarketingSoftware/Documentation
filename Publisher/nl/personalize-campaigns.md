@@ -27,7 +27,7 @@ smarty versie 2 of 3 wilt gebruiken. [Kies versie
 -   [Personalisatie uit een profiel of uit een
     subprofiel](./personalizing-from-a-profile-or-subprofile.md)
 -   [Voorbeeldweergave en
-    bewerkmodus](./view-document-in-edit-mode-or-in-preview-mode.md)
+    bewerkmodus](./personalization-settings.md)
 -   [Opmaak van smarty personalisatie (Smarty
     filters)](./filter-data-with-smarty-modifiers.md)
 -   [Personaliseren van
