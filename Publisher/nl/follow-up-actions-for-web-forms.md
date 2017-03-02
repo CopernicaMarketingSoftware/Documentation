@@ -1,3 +1,4 @@
+#Opvolgacties in webformulieren
 In Copernica kun je gemakkelijk geautomatiseerde reacties maken op
 webformulieren. Elke keer dat een webformulier wordt ingevuld, kan er
 een opvolgactie worden geactiveerd. Je stelt in onder welke voorwaarden
@@ -112,7 +113,7 @@ uitgelezen als 'webform.interests.interessenaam'.
 Net als bij enquetes zijn deze variabelen ook beschikbaar binnen de
 Smarty engine. Je kunt ze dus ook gebruiken in mailings die als
 opvolgactie naar aanleiding van een ingevuld formulier worden verstuurd.
-De gegevens kun je uitlezen via {\$webform.fields.veldnaam}.
+De gegevens kun je uitlezen via {$webform.fields.veldnaam}.
 
 Meer informatie
 ---------------
