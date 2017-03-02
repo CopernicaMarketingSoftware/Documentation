@@ -99,8 +99,6 @@ Indien u deze melding toch krijgt, maakt u hoogstwaarschijnlijk gebruik
 van een eigen envelope domain. U kunt dit controleren onder Beheer \>
 Account \> **Envelope domain**.
 
--   [Eigen envelope domein gebruiken en instellen SPF voor dit
-    domein](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
 
 Blacklists
 ----------
