@@ -34,8 +34,7 @@ iemand er mee aan de haal gaat om je klanten op te lichten. Deze
 praktijk staat bekend als phishing, en ook jij kan er slachtoffer van
 worden.
 
-![SPF, DKIM and
-SenderID](../images/deliverability-copernica.jpg "SPF, DKIM and SenderID")
+![SPF and DKIM](../images/deliverability-copernica.jpg "SPF and DKIM")
 
 Phishing
 --------
@@ -86,8 +85,7 @@ Helaas verschijnt authenticatiesdata echter niet op magische wijze uit
 het niets. Dus om te voorkomen dat jouw bedrijf wordt gespooft door
 phishers, zal je zelf voorzorgsmaatregelen moeten nemen.
 
-![SPF, DKIM and
-SenderID](../images/senderid-spf-dkim-email-copernica.jpg "SPF, DKIM and SenderID")
+![SPF and DKIM](../images/senderid-spf-dkim-email-copernica.jpg "SPF and DKIM")
 
 Autheniticatiedata instellen
 ----------------------------
@@ -127,17 +125,6 @@ je een aangepast domein gebruikt, dien je dit nog te doen.
 
 [Lees hoe je SPF
 instelt](https://www.copernica.com/nl/ondersteuning/eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein "Lees hoe je SPF instelt")
-
-### Sender ID
-
-Wanneer een e-mailprovider een e-mail ontvangt, checkt het [de
-DNS-data](https://www.copernica.com/nl/blog/dns-gegevens-wat-zijn-dat "Wat zijn DNS-data?")
-om te zien of het verzende ip-adres toestemming heeft om namens de
-betreffende domeinnaam te versturen. In je Sender ID stel je in welke
-ip-adressen namens jouw domeinnaam mogen verzenden.
-
-[Lees hoe je Sender ID
-instelt](./setup-sender-id.md "Lees hoe je Sender ID instelt")
 
 ### DMARC
 

@@ -147,6 +147,5 @@ voor problematische aflevering van uw e-mailings zorgen. Via Copernica
 kunt u de volgende gegevens gemakkelijk aanmaken en controleren:
 
 -   [SPF](./what-is-sender-policy-framework-spf.md "SPF (Sender Framework Policy)")
--   [SenderID](./sender-id-how-does-it-work.md "Sender ID")
 -   [DKIM](./dkim-domainkey-identified-mail.md "DKIM")
 

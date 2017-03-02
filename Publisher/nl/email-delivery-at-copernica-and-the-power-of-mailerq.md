@@ -144,16 +144,7 @@ voor je account is aanbevolen. Het laat zien dat een bericht van het
 bedrijf komt en niet van Copernica. Veel grote mailservers gebruiken
 DKIM voor het filteren van spamberichten.
 
-### 3. Stel een Sender ID in
-
-[Het instellen van een Sender
-ID](https://www.copernica.com/nl/blog/sender-id-instellen-op-je-afzenderdomein/ "”sender")
-helpt grote mailservers zoals Hotmail en Yahoo bij het bevestigen dat
-e-mails ook daadwerkelijk vanuit het bedrijf komen dat wordt
-weergegeven. Net als DKIM wordt dit gebruikt bij het detecteren van
-spam.
-
-### 4. Houd je spamscore laag
+### 3. Houd je spamscore laag
 
 In Copernica testen wij de spamscore van een e-mail. Deze score wordt
 bepaald door een groot aantal checks op de content van je e-mail en een
@@ -161,14 +152,14 @@ aantal DNS checks. Hoe lager de spamscore, hoe hoger de kans dat een
 e-mail wordt afgeleverd. [Lees meer over het verlagen van je
 spamscore](https://www.copernica.com/nl/blog/some-tips-to-lower-your-email-spam-score/ "”tips").
 
-### 5. Stel het uitschrijfgedrag van je database in
+### 4. Stel het uitschrijfgedrag van je database in
 
 Het opzetten van uitschrijfgedrag is belangrijk. Als je ontvangers zich
 niet kunnen uitschrijven voor je nieuwsbrief wordt dit als spam gezien.
 [Lees hoe je uitschrijfgedrag instelt in
 Copernica](https://www.copernica.com/nl/blog/uitschrijfgedrag-instellen-op-database-of-collectie "”Het").
 
-### 6. Stel een dubbele opt-in in
+### 5. Stel een dubbele opt-in in
 
 Het instellen van een dubblele opt-in is niet verplicht, maar heeft wel
 een aantal voordelen ten opzichte van een enkele opt-in. [Lees meer over

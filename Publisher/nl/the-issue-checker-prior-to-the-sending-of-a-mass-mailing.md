@@ -14,7 +14,6 @@ de beste afleverresultaten.
 -   [Geen afzenderadres ingesteld](#geen-afzenderadres-ingesteld)
 -   [Het afzenderadres bestaat niet](#het-afzenderadres-bestaat-niet)
 -   [Het SPF is niet correct](#het-spf-is-niet-correct)
--   [Sender ID is niet correct](#sender-id-is-niet-correct)
 
 ### Blacklists
 
@@ -102,16 +101,6 @@ Account \> **Envelope domain**.
 
 -   [Eigen envelope domein gebruiken en instellen SPF voor dit
     domein](./eigen-envelope-domein-gebruiken-en-instellen-spf-voor-dit-domein.md)
-
-### Sender ID is niet correct
-
-Sender ID is een afgeleide van bovenstaande SPF, echter Sender ID stelt
-u in op het domein van het zichtbare afzenderadres. Controleer of de
-Sender ID instelling op dit domein correct is. U kunt hiervoor het
-artikel over Sender ID raadplegen.
-
--   [Sender ID instellen op je
-    afzenderdomein](./setup-sender-id.md)
 
 Blacklists
 ----------
