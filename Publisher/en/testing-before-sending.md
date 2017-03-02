@@ -57,8 +57,7 @@ successfully. That’s why we built our software to check:
 -   If your HTML source contains any errors.
 -   If there are elements in your CSS style sheet that the software
     can’t convert to inline CSS attributes.
--   If you’re using the right authentication data (SPF, SenderID and
-    DKIM).
+-   If you’re using the right authentication data (SPF and DKIM).
 
 Our checks are firm but fair. They protect your sender reputation and
 ensure better delivery of your emails.

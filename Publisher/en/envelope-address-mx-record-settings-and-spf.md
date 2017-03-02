@@ -4,8 +4,7 @@ the 'from' address and the envelope address.\
 sender of the email. This is also the address that is used when someone
 clicks on 'reply' in his or her email program. The 'from' address can be
 set per document, or even per message in a mass mailing (if smarty
-personalization is used in the 'from' field). To identify yourself as
-the real sender, Sender ID can be configured for this domain.
+personalization is used in the 'from' field).
 
 The envelope domain is the address has a more technical meaning and is
 not visible to recipients. If an email cannot be delivered, an error
