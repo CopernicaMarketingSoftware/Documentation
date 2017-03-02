@@ -25,7 +25,6 @@ Zorg dus voor een correcte instelling van je:
 -   Geldig afzenderadres: gebruik hier altijd een werkend e-mailadres.
     Vermijd het gebruik van een no-reply@adres.
 -   [SPF](./what-is-sender-policy-framework-spf.md)
--   [Sender ID](./sender-id-how-does-it-work.md)
 -   [DKIM](./dkim-domainkey-identified-mail.md)
 
 Reputatiemanagement

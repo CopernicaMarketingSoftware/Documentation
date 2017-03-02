@@ -14,7 +14,6 @@ punten:
     gebruik je best de verhouding; een paragraaf tekst per afbeelding
 -   Gebruik correcte authenticatiegegevens
     ([SPF](./spf.md),
-    [SenderID](./senderid.md),
     [DKIM](./dkim-domainkey-identified-mail.md)
     en afzendadres)
 -   Let op het gebruik van hyperlinks in je e-mails. Maak je gebruik van
