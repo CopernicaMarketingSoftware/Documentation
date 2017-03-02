@@ -9,7 +9,6 @@ maintain a healthy sender reputation.
     -   [Check on the 'from' address](#check-on-the-from-address)
     -   [The 'from' address does not exist](#the-from-address-does-not-exist)
     -   [The SPF is not correct](#the-spf-is-not-correct)
-    -   [Sender ID is not correctly configured](#sender-id-is-not-correctly-configured)
 -   **Blacklists**
     -   [The IP address has been blacklisted](#the-ip-address-has-been-blacklisted)
 -   **DKIM Check**
@@ -99,16 +98,6 @@ Delivery settings \>***Envelope domain** to see your current settings,
 and how the envelope domain should be configured. [Learn how the SPF
 should be further configured if you use your own envelope
 domain](./envelope-address-mx-record-settings-and-spf.md).
-
-#### Sender ID is not correctly configured
-
-Sender ID is an email authentication method derived from the SPF.
-However, the Sender ID is configured in the DNS of the domain that is
-used as the 'from' address. Check whether the Sender ID settings are
-correct on this domain.
-
-[Learn how you can use Sender ID for your
-mailings](./setup-sender-id.md)
 
 Blacklists
 ----------

@@ -45,7 +45,7 @@ sure:
 -   Your email has a low spam score.
 -   You are on not a blacklist.
 -   Your HTML source code is correct.
--   Your authentication data (SPF, SenderID, & DKIM) is set up
+-   Your authentication data (SPF & DKIM) is set up
     correctly.
 
 All of these methods will help make sure your email reaches its

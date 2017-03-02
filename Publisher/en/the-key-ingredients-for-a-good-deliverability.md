@@ -40,12 +40,11 @@ correctly.
 
 DMARC is technical entry that you include in the DNS record of the
 sender's domain of your emails. With this (fairly new) policy, you
-inform receiving mail servers that you utilize Sender ID and (more
-importantly) DKIM.
+inform receiving mail servers that you utilize SPF and DKIM.
 
 But what makes DMARC even more powerful is the fact that it allows you
 to tell the receiving mail server what it should do with emails that
-fail the DKIM and Sender ID test.
+fail the DKIM and SPF test.
 
 It is even possible to receive daily reports about emails that have been
 rejected, enabling you to improve your settings.
