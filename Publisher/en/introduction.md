@@ -9,7 +9,7 @@ Whilst reading this documentation, it is useful to have access to the software i
 With your Copernica credentials, it is easiest to log in via www.copernica.com, because it's a central hub from where you can access all Copernica accounts and applications. 
 However, you can also access the software directly from their respective web pages:
 
-- The Copernica website: www.copernica.com
+- The Copernica website: https://www.copernica.com
 - The “new” MarketingSuite: https://ms.copernica.com
 
 Once logged in, you'll find a big rectangle button which lets you toggle between the MarketingSuite and the Publisher. This button can be found in the left hand side menu, situated at the top.
