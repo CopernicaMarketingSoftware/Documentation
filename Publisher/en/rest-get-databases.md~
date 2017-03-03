@@ -47,7 +47,6 @@ The following PHP script demonstrates how to use the method:
 	print_r($api->get("databases", $parameters));
 
 This example uses the [CopernicaRestApi class](rest-php).
-
 ## More information
 - [Overview of all API methods](rest-api)
 - [Requesting a single database](rest-get-database)
