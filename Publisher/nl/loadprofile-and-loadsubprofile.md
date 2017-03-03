@@ -1,3 +1,4 @@
+#De loadprofile en loadsubprofile functie
 Normaal gesproken gebeurt Smarty-personalisatie met data uit de
 geadresseerde database. Maar indien je meerdere databases hebt met
 gerelateerde data, laat je hier dan niet door beperken! Met de functie
