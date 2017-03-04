@@ -7,7 +7,7 @@ The definition of each field can be found using
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/profile/\$profileID | GET, DELETE | none |
+| https://api.copernica.com/v1/profile/\$profileID | GET, DELETE | none |
 
 GET request
 -----------

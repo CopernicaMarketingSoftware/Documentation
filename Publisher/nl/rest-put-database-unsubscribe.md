@@ -8,7 +8,7 @@ of moet het profiel worden aangepast?
 Om deze instelling door middel van een API call in te stellen, kun je een
 HTTP PUT request sturen naar de volgende URL:
 
-`https://api.copernica.com/database/$id/unsubscribe?access_token=XXX`
+`https://api.copernica.com/v1/database/$id/unsubscribe?access_token=XXX`
 
 De variabele $id in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet

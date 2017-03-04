@@ -46,7 +46,7 @@ gebruiken om de API aan te roepen.
             $query = http_build_query(array('access_token' => $this->token) + $parameters);
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // additional options
             curl_setopt_array($curl, array(CURLOPT_RETURNTRANSFER => true));
@@ -73,7 +73,7 @@ gebruiken om de API aan te roepen.
             $query = http_build_query(array('access_token' => $this->token));
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // data will be json encoded
             $data = json_encode($data);
@@ -108,7 +108,7 @@ gebruiken om de API aan te roepen.
             $query = http_build_query(array('access_token' => $this->token) + $parameters);
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // data will be json encoded
             $data = json_encode($data);
@@ -141,7 +141,7 @@ gebruiken om de API aan te roepen.
             $query = http_build_query(array('access_token' => $this->token));
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // additional options
             curl_setopt_array($curl, array(

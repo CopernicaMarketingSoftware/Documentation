@@ -4,7 +4,7 @@ method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailingdestination/\$destinationID/unsubscribes | GET | start, limit, fields[] |
+| https://api.copernica.com/v1/emailingdestination/\$destinationID/unsubscribes | GET | start, limit, fields[] |
 
 Properties of an unsubscribe of an emailing destination
 -------------------------------------------------------

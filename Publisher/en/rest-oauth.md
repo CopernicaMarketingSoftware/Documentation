@@ -101,7 +101,7 @@ If the *state* variable turns out to be OK, you can use the REST API to fetch
 the actual *access key*. You should send a HTTP GET request to the following
 URL:
 
-`https://api.copernica.com/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
+`https://api.copernica.com/v1/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
 
 This address also contains a number of XXX parameters that have to set:
 

@@ -3,7 +3,7 @@
 De methode om subprofielen uit een collectie op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:
 
-`https://api.copernica.com/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id/subprofiles?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen.

@@ -3,7 +3,7 @@
 Methode om een overzicht op te vragen van alle beschikbare databases. Dit is
 een HTTP GET call naar het volgende adres:
 
-`https://api.copernica.com/databases?access_token=xxxx`
+`https://api.copernica.com/v1/databases?access_token=xxxx`
 
 ## Beschikbare parameters
 

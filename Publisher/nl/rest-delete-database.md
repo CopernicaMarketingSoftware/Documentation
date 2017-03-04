@@ -3,7 +3,7 @@
 Methode om een database (en dus ook alle bijbehorende profielen!) te verwijderen.
 Dit is een HTTP DELETE methode, naar het volgende adres:
 
-`https://api.copernica.com/database/$id?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
 De variabele $id moet worden vervangen door de numerieke identifier of de naam
 van de te verwijderen database.

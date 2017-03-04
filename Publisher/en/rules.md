@@ -24,7 +24,7 @@ If you send a GET request, you will retrieve all rules of the given view
 ### Example GET request
 
 ```
-https://api.copernica.com/view/13/rules?access_token=ff96963b...
+https://api.copernica.com/v1/view/13/rules?access_token=ff96963b...
 ```
 
 Sending the GET request to the url above will result in receiving the

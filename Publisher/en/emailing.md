@@ -2,7 +2,7 @@ One specific emailing can be retrieved with the /emailing/\$emailingID
 method.
 
 | Request url | Methods | Parameters |
-| https://api.copernica.com/emailing/\$emailingID | GET | none |
+| https://api.copernica.com/v1/emailing/\$emailingID | GET | none |
 
 Properties of an emailing
 -------------------------

@@ -2,7 +2,7 @@
 
 This method is used to request all fields in a database. It is an HTTP GET call to the following address:
 
-`https://api.copernica.com/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
 In this, $id should be replaced by the numerical identifier or the name of the database of which you want to request the fields.
 

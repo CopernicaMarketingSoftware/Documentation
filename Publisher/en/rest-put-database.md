@@ -1,7 +1,7 @@
 # REST API: updating properties of a database
 
 A method to update the properties of a database. This is an HTTP PUT method, accessible at the following address:
-`https://api.copernica.com/database/$id?access_token=XXX`
+`https://api.copernica.com/v1/database/$id?access_token=XXX`
 
 ## Available parameters
 The following variables can be used in the body of the HTTP PUT request:

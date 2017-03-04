@@ -3,7 +3,7 @@ with the /emailingdestination/\$destinationID/errors method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailingdestination/\$destinationID/errors | GET | start, limit, fields[] |
+| https://api.copernica.com/v1/emailingdestination/\$destinationID/errors | GET | start, limit, fields[] |
 
 Properties of an error of an emailing destination
 -------------------------------------------------

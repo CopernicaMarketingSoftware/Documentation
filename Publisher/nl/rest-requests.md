@@ -2,7 +2,7 @@
 
 Als je een website of app hebt gekoppeld aan [de REST API](rest-api) van Copernica,
 dan kan deze applicatie HTTP requests sturen naar het *endpoint* van de API
-op onze server. Het adres van dit endpoint is *https://api.copernica.com/path/to/resource?access_token=yourtoken*.
+op onze server. Het adres van dit endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*.
 Het "/path/to/resource" deel van de URL is voor elk request anders, en bepaalt
 welke data je opvraagt of wijzigt. Ook moet je aan de URL altijd een *access_token*
 parameter toevoegen om jouw applicatie te identificeren.
@@ -58,7 +58,7 @@ code als het request is gelukt, maar ze sturen geen data terug. Door middel van
 speciale HTTP headers wordt het resultaat van de actie gerapporteerd. In de 
 resultaatheader van succesvolle POST en PUT requests staat een link naar de 
 aangepaste/toegevoegde data. Hiervoor gebruiken we een *X-location* header,
-bijvoorbeeld "X-location: https://api.copernica.com/profile/$profileID" als 
+bijvoorbeeld "X-location: https://api.copernica.com/v1/profile/$profileID" als 
 je een profiel wijzigt of toevoegt. Een succesvolle DELETE request bevat een
 *X-deleted* header: "X-deleted: profile $profileID".
 

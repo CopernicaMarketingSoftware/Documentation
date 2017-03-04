@@ -3,7 +3,7 @@ method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/impressions | GET | fields[] |
+| https://api.copernica.com/v1/impressions | GET | fields[] |
 
 Properties of an impression
 ---------------------------

@@ -26,7 +26,7 @@ $token = 'your token here';
 // set up the curl resource
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/profile/$profileID?access_token=$token");
+curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/v1/profile/$profileID?access_token=$token");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HEADER, 1);
 
@@ -106,7 +106,7 @@ $token = 'your token here';
 
 // set up the curl resource
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/database/$databaseID/profiles?access_token=$token");
+curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/v1/database/$databaseID/profiles?access_token=$token");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POST, true);
@@ -138,7 +138,7 @@ curl_close($ch);
     Date: Thu, 30 Jan 2014 11:14:07 GMT
     Server: Apache/2.2.22 (Ubuntu)
     X-Powered-By: PHP/5.3.10-1ubuntu3.9
-    Location: https://api.copernica.com/profile/157?access_token=123456
+    Location: https://api.copernica.com/v1/profile/157?access_token=123456
     Content-Length: 0
     Content-Type: application/json
 ```
@@ -165,7 +165,7 @@ $token = 'your token here';
 // set up the curl resource
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/profile/$profileID?access_token=$token");
+curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/v1/profile/$profileID?access_token=$token");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
 
@@ -249,9 +249,9 @@ $token = 'your token';
 
 $ch = curl_init();
 
-echo ("https://api.copernica.com/database/$databaseID/profiles/?$url").PHP_EOL;
+echo ("https://api.copernica.com/v1/database/$databaseID/profiles/?$url").PHP_EOL;
 
-curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/database/$databaseID/profiles/?access_token=$token&$url");
+curl_setopt($ch, CURLOPT_URL, "https://api.copernica.com/v1/database/$databaseID/profiles/?access_token=$token&$url");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT"); // note the PUT here

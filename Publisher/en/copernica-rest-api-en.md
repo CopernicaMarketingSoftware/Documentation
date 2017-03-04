@@ -4,7 +4,7 @@ With Copernica's REST API it's possible to gather, create, update and delete dat
 
 The REST API can, for example, be used to gather information on a profile. A request for all information on a profile with ID 1234 will look something like this:
 
-`https://api.copernica.com/profile/1234?access_token=abc123`
+`https://api.copernica.com/v1/profile/1234?access_token=abc123`
 
 Except it will have to include your own access token instead of 'abc123'.
 You can access the REST service at [https://api.copernica.com](https://api.copernica.com).
@@ -30,7 +30,7 @@ An HTTP request consists of the following parts:
 Writing requests entirely by hand is unusal. It's a lot easier and faster to do so using a library like Requests (Python) or cURl (other languages). [Here](example-get-post-and-delete-requests), you'll find example scripts for all four requests written in PHP using cURL.
 
 ### Errors and success messages
-When your request fails, you'll naturally be notified of it. This happens in the form of a HTTP 400 (bad request) error header. A successful request also returns a header, which is different per type of request. A header request doesn't return any specific header information, because you are the receiver of data. Succesful POST and PUT requests return a link to the data in the form of an `X-location: https://api.copernica.com/profle/$profileID` when the request concerns a profile. A succesful DELETE request returns an `X-deleted: profile $profileID`.
+When your request fails, you'll naturally be notified of it. This happens in the form of a HTTP 400 (bad request) error header. A successful request also returns a header, which is different per type of request. A header request doesn't return any specific header information, because you are the receiver of data. Succesful POST and PUT requests return a link to the data in the form of an `X-location: https://api.copernica.com/v1/profle/$profileID` when the request concerns a profile. A succesful DELETE request returns an `X-deleted: profile $profileID`.
 
 For the most part, data is returned in key:value pairs. The following syntax is used to describe the form of the data:
 

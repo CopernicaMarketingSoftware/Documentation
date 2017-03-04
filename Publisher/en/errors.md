@@ -2,7 +2,7 @@ All errors in an account can be retrieved with the /errors method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/errors | GET | fields[] |
+| https://api.copernica.com/v1/errors | GET | fields[] |
 
 Properties of an error
 ----------------------

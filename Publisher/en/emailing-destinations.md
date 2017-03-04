@@ -5,7 +5,7 @@ returned destinations with the field
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailing/\$emailingID/destinations | GET | limit, start, fields[] |
+| https://api.copernica.com/v1/emailing/\$emailingID/destinations | GET | limit, start, fields[] |
 
 Properties of emailing destinations
 -----------------------------------

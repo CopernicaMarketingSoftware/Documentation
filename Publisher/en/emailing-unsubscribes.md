@@ -3,7 +3,7 @@ The amount of unsubscribes of an emailing can be retrieved with the
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailing/\$emailingID/unsubcribes | GET | start, limit, fields[] |
+| https://api.copernica.com/v1/emailing/\$emailingID/unsubcribes | GET | start, limit, fields[] |
 
 Properties of the emailing unsubcribes
 --------------------------------------

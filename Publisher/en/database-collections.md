@@ -9,7 +9,7 @@ given databaseID.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/database/\$databaseID/collections | GET, POST | none |
+| https://api.copernica.com/v1/database/\$databaseID/collections | GET, POST | none |
 
 ### GET request
 
@@ -72,7 +72,7 @@ containing a header):
 ```
 Date: Tue, 25 Mar 2014 14:01:23 GMT 
 Server: Apache 
-Location: https://api.copernica.com/collection/53
+Location: https://api.copernica.com/v1/collection/53
 Transfer-Encoding: chunked 
 Content-Type: application/json 
 ```

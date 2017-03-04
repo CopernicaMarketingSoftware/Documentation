@@ -68,7 +68,7 @@ Wanneer je je access key hebt, kun je beginnen met het doen van calls.
 Dit doe je in het volgende format, waarin 'youraccesstoken' vervangen
 moet worden door jouw access token.
 
-[https://api.copernica.com/database/\$databaseID/fields?access\_token=youraccesstoken](https://api.copernica.com/database/$databaseID/fields?access_token=youraccesstoken)
+[https://api.copernica.com/v1/database/\$databaseID/fields?access\_token=youraccesstoken](https://api.copernica.com/v1/database/$databaseID/fields?access_token=youraccesstoken)
 
 Deze call geeft je toegang tot de velden in de database die bij
 \$databaseID horen. Je kunt 'database' vervangen door 'collection',

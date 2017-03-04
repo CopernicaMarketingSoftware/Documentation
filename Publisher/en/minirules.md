@@ -17,7 +17,7 @@ GET-request
 -----------
 
 ```
-https://api.copernica.com/miniview/7/rules?access_token=ff96963b...
+https://api.copernica.com/v1/miniview/7/rules?access_token=ff96963b...
 ```
 
 Sending the GET request to the url above will result in receiving the

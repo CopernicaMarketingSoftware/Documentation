@@ -4,7 +4,7 @@ Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,
 kun je een HTTP GET requet naar het volgende adres sturen:
 
-`https://api.copernica.com/collection/$id/miniviews?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.

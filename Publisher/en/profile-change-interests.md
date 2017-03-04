@@ -23,5 +23,5 @@ will not be changed.
 The payload above can be send to the following url:
 
 ```
-https://api.copernica.com/profile/$profileID/changeinterests?access_token=...
+https://api.copernica.com/v1/profile/$profileID/changeinterests?access_token=...
 ```

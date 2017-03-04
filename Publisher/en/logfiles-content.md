@@ -5,10 +5,10 @@ logfiles method.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$filename | GET |
-| https://api.copernica.com/logfiles/$filename/header | GET |
-| https://api.copernica.com/logfiles/$filename/json | GET |
-| https://api.copernica.com/logfiles/$filename/xml | GET |
+| https://api.copernica.com/v1/logfiles/$filename | GET |
+| https://api.copernica.com/v1/logfiles/$filename/header | GET |
+| https://api.copernica.com/v1/logfiles/$filename/json | GET |
+| https://api.copernica.com/v1/logfiles/$filename/xml | GET |
 
 Get Request
 -------------------
@@ -17,7 +17,7 @@ the variable names you can use the method:
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$filename | GET |
+| https://api.copernica.com/v1/logfiles/$filename | GET |
 
 
 ### Example output
@@ -49,7 +49,7 @@ the variable names.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$filename/header | GET |
+| https://api.copernica.com/v1/logfiles/$filename/header | GET |
 
 
 ### Example output
@@ -81,7 +81,7 @@ Request the JSON encoded content of a log file.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$filename/json | GET |
+| https://api.copernica.com/v1/logfiles/$filename/json | GET |
 
 
 ### Example output
@@ -136,7 +136,7 @@ Request the XML encoded content of a log file.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$filename/xml | GET |
+| https://api.copernica.com/v1/logfiles/$filename/xml | GET |
 
 
 ### Example output

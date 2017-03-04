@@ -3,7 +3,7 @@ Information about a destination of an emailing retrieved with the
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailingdestination/\$destinationID | GET | Properties of an emailing destination |
+| https://api.copernica.com/v1/emailingdestination/\$destinationID | GET | Properties of an emailing destination |
 
 -------------------------------------
 

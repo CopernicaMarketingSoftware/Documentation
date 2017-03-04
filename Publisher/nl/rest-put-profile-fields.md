@@ -3,7 +3,7 @@
 Om de velden van een profiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:
 
-`https://api.copernica.com/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel

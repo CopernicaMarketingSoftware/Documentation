@@ -43,7 +43,7 @@ Instead of calling the specific CURL functions yourself, you can use the *get*,
             $query = http_build_query(array('access_token' => $this->token) + $parameters);
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // additional options
             curl_setopt_array($curl, array(CURLOPT_RETURNTRANSFER => true));
@@ -70,7 +70,7 @@ Instead of calling the specific CURL functions yourself, you can use the *get*,
             $query = http_build_query(array('access_token' => $this->token));
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // data will be json encoded
             $data = json_encode($data);
@@ -105,7 +105,7 @@ Instead of calling the specific CURL functions yourself, you can use the *get*,
             $query = http_build_query(array('access_token' => $this->token) + $parameters);
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // data will be json encoded
             $data = json_encode($data);
@@ -138,7 +138,7 @@ Instead of calling the specific CURL functions yourself, you can use the *get*,
             $query = http_build_query(array('access_token' => $this->token));
         
             // construct curl resource
-            $curl = curl_init("https://api.copernica.com/$resource?$query");
+            $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
             
             // additional options
             curl_setopt_array($curl, array(

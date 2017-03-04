@@ -3,7 +3,7 @@ method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/deliveries | GET | fields[] |
+| https://api.copernica.com/v1/deliveries | GET | fields[] |
 
 Properties of a delivery
 ------------------------

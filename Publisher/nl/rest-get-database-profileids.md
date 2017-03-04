@@ -4,7 +4,7 @@ Als je alleen maar de ID's van de profielen in een database wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
 
-`https://api.copernica.com/database/$id/profileids?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/profileids?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de ID's van wilt opvragen.

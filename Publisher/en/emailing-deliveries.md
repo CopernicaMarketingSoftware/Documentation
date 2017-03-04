@@ -5,7 +5,7 @@ returned clicks with the field
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailings | GET | limit, start, fields[] |
+| https://api.copernica.com/v1/emailings | GET | limit, start, fields[] |
 
 Properties of emailing deliveries
 ---------------------------------

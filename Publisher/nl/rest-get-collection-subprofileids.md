@@ -4,7 +4,7 @@ Als je alleen maar de ID's van de subprofielen in een collectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
 
-`https://api.copernica.com/collection/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id/subprofileids?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de ID's van wilt opvragen.

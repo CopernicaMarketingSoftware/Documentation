@@ -6,7 +6,7 @@ delete databases using the API.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/databases | GET, POST | limit, start |
+| https://api.copernica.com/v1/databases | GET, POST | limit, start |
 
 Properties of a database
 ------------------------
@@ -156,7 +156,7 @@ HTTP/1.1 201 Created
 Date: Tue, 18 Feb 2014 14:52:30 GMT
 Server: Apache/2.2.22 (Ubuntu)
 X-Powered-By: PHP/5.3.10-1ubuntu3.9
-Location: https://api.copernica.com/database/839
+Location: https://api.copernica.com/v1/database/839
 Content-Length: 0
 Content-Type: application/json
 ```

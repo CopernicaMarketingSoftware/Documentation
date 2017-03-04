@@ -6,7 +6,7 @@ use the logfiles method.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles | GET |
+| https://api.copernica.com/v1/logfiles | GET |
 
 
 GET Request

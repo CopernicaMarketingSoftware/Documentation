@@ -4,7 +4,7 @@ profile with identifier \$profileID.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/profile/\$profileID/fields | GET, POST | none |
+| https://api.copernica.com/v1/profile/\$profileID/fields | GET, POST | none |
 
 GET profile field values
 ------------------------
@@ -56,7 +56,7 @@ HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 15:46:26 GMT
 Server: Apache/2.2.22 (Ubuntu)
 X-Powered-By: PHP/5.3.10-1ubuntu3.9
-Location: https://api.copernica.com/profile/2
+Location: https://api.copernica.com/v1/profile/2
 Content-Length: 0
 Content-Type: application/json
 ```

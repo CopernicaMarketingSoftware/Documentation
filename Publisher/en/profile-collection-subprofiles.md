@@ -4,7 +4,7 @@ collectionID, associated with profile \$profileID
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/profile/\$profileID/subprofiles/\$collectionID | GET, POST | limit, start, fields[] |
+| https://api.copernica.com/v1/profile/\$profileID/subprofiles/\$collectionID | GET, POST | limit, start, fields[] |
 
 GET Request
 -----------

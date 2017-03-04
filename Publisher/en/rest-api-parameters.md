@@ -52,12 +52,12 @@ For example in a PUT request you must specify a `fields[]` parameter
 with the requirements, to ensure that only the profiles that meet these
 requirements are updated in the request.
 
-    https://api.copernica.com/database/databaseID/profiles?fields[]=email==user@example.com
+    https://api.copernica.com/v1/database/databaseID/profiles?fields[]=email==user@example.com
 
 If you want to update profiles with an *@example.com* email address
 only, use the `LIKE` operator.
 
-    https://api.copernica.com/database/databaseID/profiles?fields[]=email=~%example.com%
+    https://api.copernica.com/v1/database/databaseID/profiles?fields[]=email=~%example.com%
 
 The `fields[]` parameter is currently supported in the following
 requests:
@@ -104,7 +104,7 @@ that information, you can make your request a lot faster by using the
 new `total=false` parameter in your request, which disables the count
 query. Your request will then look something like this:
 
-    https://api.copernica.com/database/databaseID/profiles?start=10&limit=100&fields[]=email==user@example.com&total=false
+    https://api.copernica.com/v1/database/databaseID/profiles?start=10&limit=100&fields[]=email==user@example.com&total=false
 
 ### Further reading
 

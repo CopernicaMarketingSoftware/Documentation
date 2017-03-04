@@ -4,7 +4,7 @@ Selecties kunnen worden genest. Om op te vragen welke selecties er direct
 onder een andere selectie vallen, kun je een HTTP GET request naar de 
 volgende URL sturen:
 
-`https://api.copernica.com/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v1/view/$id/views?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de selectie 
 waarvan je de geneste selecties wilt opvragen.

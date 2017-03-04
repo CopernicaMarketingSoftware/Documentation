@@ -2,7 +2,7 @@
 Every collection has the option to set unsubscribe behaviour. When Copernica’s servers receive an unsubscription, the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
 You can request your settings using the following URL:
-`GET https://api.copernica.com/database/$id/unsubscribe?access_token=xxxx`
+`GET https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
 
 $id can be the numerical identifier or the name of the database.
 

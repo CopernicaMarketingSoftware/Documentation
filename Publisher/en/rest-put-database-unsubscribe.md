@@ -2,7 +2,7 @@
 For every database, you can set the unsubscribe algorithm. When Copernica’s servers receive an unsubscription, the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
 To set this algorithm using an API call, make an HTTP PUT request to the following URL:
-`https://api.copernica.com/database/$id/unsubscribe?access_token=XXX`
+`https://api.copernica.com/v1/database/$id/unsubscribe?access_token=XXX`
 
 In this, the variable $id has to be replaced by the numerical identifier of the database you wish to set the unsubscribe behaviour for. The new setting should be added to the body of the HTTP request.
 

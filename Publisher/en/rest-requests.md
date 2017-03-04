@@ -2,7 +2,7 @@
 
 Once you have connected a website or app to [the Copernica REST API](./rest-api.md),
 you can start sending HTTP requests to the API endpoint. The address of this 
-endpoint is *https://api.copernica.com/path/to/resource?access_token=yourtoken*,
+endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*,
 where the "/path/to/resource" part of the URL identifies the data that you're
 feching or updating. With every request you have to append an *access_token*
 variable to the URL to identify your application and the account that is being accessed.
@@ -56,7 +56,7 @@ to report success, but they do not include data in the response body. These
 methods add a special HTTP header to the response that refers to the entity
 that was just modified or created. The header of a successful POST or PUT
 request contains a *X-location* header with the URL of the just created or modified
-resource, for example "X-location: https://api.copernica.com/profile/$profileID"
+resource, for example "X-location: https://api.copernica.com/v1/profile/$profileID"
 for calls that create or update profiles. The response to a successful 
 DELETE request holds an "X-deleted" header: "X-deleted: profile $profileID".
 

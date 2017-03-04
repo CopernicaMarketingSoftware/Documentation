@@ -5,7 +5,7 @@ returned snapshot with the field
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailing/\$emailingID/snapshot | GET | none |
+| https://api.copernica.com/v1/emailing/\$emailingID/snapshot | GET | none |
 
 Properties of the emailing snapshot
 -----------------------------------

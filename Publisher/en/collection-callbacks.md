@@ -9,7 +9,7 @@ add a new callback URL to the collection.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/collection/\$collectionID/callbacks | GET, POST | limit, start |
+| https://api.copernica.com/v1/collection/\$collectionID/callbacks | GET, POST | limit, start |
 
 Callback data
 -------------

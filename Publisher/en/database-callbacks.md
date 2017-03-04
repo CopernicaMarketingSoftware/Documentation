@@ -9,7 +9,7 @@ database callback URL.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/database/\$databaseID/callbacks | GET, POST | limit, start |
+| https://api.copernica.com/v1/database/\$databaseID/callbacks | GET, POST | limit, start |
 
 Callback data
 -------------

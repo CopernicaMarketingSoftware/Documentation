@@ -41,7 +41,7 @@ There are two things you need to do for the landing page. First, you must check 
 
 If *state* is in order, you can use *code* to download the *access_key*. To do so, use the following URL:
 
-`https://api.copernica.com/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
+`https://api.copernica.com/v1/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
 
 Here, you need to replace the XXX variables with your own:
 
