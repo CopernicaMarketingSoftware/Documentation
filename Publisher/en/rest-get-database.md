@@ -1,7 +1,7 @@
 # REST API: requesting data from a database
 
 A method to request all metadata from a database. This method does not support parameters. It is called using the following address:
- `GET https://api.copernica.com/database/$id?access_token=xxxx`
+ `GET https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
 ## Returned fields
 **ID**: unique numerical identifier

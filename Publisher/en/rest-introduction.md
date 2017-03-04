@@ -35,7 +35,7 @@ characters that you should pass to each API call. Once you have this access
 token, you can test whether you have access to the API by entering the following
 URL in your browser:
 
-`https://api.copernica.com/identify?access_token=youraccesstoken`
+`https://api.copernica.com/v1/identify?access_token=youraccesstoken`
 
 The text "youraccesstoken" should of course be replaced by the access token
 that was given to you in the dashboard. If you have successfully completed

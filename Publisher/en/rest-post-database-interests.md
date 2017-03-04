@@ -2,7 +2,7 @@
 
 The HTTP POST method to add an interest to an existing database is available at the following address:
 
-`https://api.copernica.com/database/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/interests?access_token=xxxx`
 
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add an interest to. The name of the interest field and other values need to be added to the message body of the HTTP request.
 

@@ -14,7 +14,7 @@ using a POST request.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/database/\$databaseID/unsubscribe | GET, POST | none |
+| https://api.copernica.com/v1/database/\$databaseID/unsubscribe | GET, POST | none |
 
 GET Request
 -----------

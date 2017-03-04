@@ -8,7 +8,7 @@ of moet het profiel worden aangepast?
 Het opvragen van het afmeldalgoritme gaat met een HTTP GET request naar het
 volgende adres:
 
-`GET https://api.copernica.com/database/$id/unsubscribe?access_token=xxxx`
+`GET https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
 
 Als $id kun je de numerieke identifier van een database opgeven, of de naam
 van een database.

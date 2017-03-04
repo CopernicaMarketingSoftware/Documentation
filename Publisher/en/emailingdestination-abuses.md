@@ -4,7 +4,7 @@ method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailingdestination/\$destinationID/abuses | GET | fields[] |
+| https://api.copernica.com/v1/emailingdestination/\$destinationID/abuses | GET | fields[] |
 
 Properties of an abuse report of an emailing destination
 --------------------------------------------------------

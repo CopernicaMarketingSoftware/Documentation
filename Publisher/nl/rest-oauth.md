@@ -95,7 +95,7 @@ aan de hand (misbruik!) en hoef je dus niks meer te doen.
 Als de *state* variabele in orde is, kun je de REST API gebruiken om de *access key*
 te downloaden. Gebruik hiervoor de volgende URL:
 
-`https://api.copernica.com/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
+`https://api.copernica.com/v1/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
 
 Ook hier moet je de XXX waarden weer vervangen door je eigen variabelen:
 

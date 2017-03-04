@@ -39,7 +39,7 @@ meesturen. Je kunt testen of alles goed is gegaan door in je browser een API
 adres in te voeren. Als je een JSON bestand terugkrijgt, weet je dat het maken 
 van de API koppeling is gelukt. Gebruik bijvoorbeeld het volgende adres:
 
-`https://api.copernica.com/databases?access_token=jouwapikey`
+`https://api.copernica.com/v1/databases?access_token=jouwapikey`
 
 Natuurlijk moet je de tekst "jouwapikey" in bovenstaand voorbeeld vervangen
 door de string die je op het dashboard ziet. Als het goed is, krijg je een JSON

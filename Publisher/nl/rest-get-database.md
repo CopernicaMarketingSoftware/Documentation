@@ -3,7 +3,7 @@
 Methode om alle meta gegevens van een database op te vragen. De methode
 ondersteunt geen parameters. De methode wordt aangeroepen via het volgende adres:
 
-`GET https://api.copernica.com/database/$id?access_token=xxxx`
+`GET https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
 Als $id kun je de numerieke identifier van een database opgeven, of de naam
 van een database.

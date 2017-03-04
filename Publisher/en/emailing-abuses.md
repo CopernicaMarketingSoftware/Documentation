@@ -5,7 +5,7 @@ returned abuses with the field
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailing/\$emailingID/abuses | GET | limit, start, fields[] |
+| https://api.copernica.com/v1/emailing/\$emailingID/abuses | GET | limit, start, fields[] |
 
 Properties of emailing errors
 -----------------------------

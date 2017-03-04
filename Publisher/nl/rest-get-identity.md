@@ -4,7 +4,7 @@ Als je wilt weten welk account er eigenlijk bij een access token hoort, dan
 kun je deze methode gebruiken. De methode retourneert de gegevens van het
 account dat hoort bij een access key. 
 
-`https://api.copernica.com/identity?access_token=xxxx`
+`https://api.copernica.com/v1/identity?access_token=xxxx`
 
 Deze methode is vooral handig als je een applicatie hebt gemaakt die is gekoppeld
 aan veel verschillende accounts (bijvoorbeeld door middel van een 

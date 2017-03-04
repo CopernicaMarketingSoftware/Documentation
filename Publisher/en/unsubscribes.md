@@ -3,7 +3,7 @@ method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/unsubscribes | GET | fields[] |
+| https://api.copernica.com/v1/unsubscribes | GET | fields[] |
 
 Properties of an unsubscribe
 ----------------------------

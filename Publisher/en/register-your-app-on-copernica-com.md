@@ -33,7 +33,7 @@ to get started.
 To see if your access\_token is valid, just paste the following URL with
 your token into the address bar of your favorite browser:
 
-`https://api.copernica.com/databases?access_token=your-token-here`
+`https://api.copernica.com/v1/databases?access_token=your-token-here`
 
 If everything is fine (and of course it is!), you will receive
 information about the databases in your account.

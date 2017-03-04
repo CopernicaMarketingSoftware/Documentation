@@ -2,7 +2,7 @@ All clicks in an account can be retrieved with the /clicks method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/clicks | GET | fields[] |
+| https://api.copernica.com/v1/clicks | GET | fields[] |
 
 Properties of a click
 ---------------------

@@ -4,7 +4,7 @@ method.
 
 | Request url | Methods | 
 | --- | --- | --- |
-| https://api.copernica.com/logfiles/$date | GET |
+| https://api.copernica.com/v1/logfiles/$date | GET |
 
 
 Available types of logfiles

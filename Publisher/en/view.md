@@ -36,5 +36,5 @@ This can be send as payload with a PUT request to the following URL. As
 you can see, this will update the view with id 42:
 
 ```
-https://api.copernica.com/view/42?access_token=ff96963...
+https://api.copernica.com/v1/view/42?access_token=ff96963...
 ```

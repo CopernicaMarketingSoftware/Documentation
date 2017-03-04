@@ -5,7 +5,7 @@ you can remove the subprofile entirely.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/subprofile/\$subprofileID | GET, DELETE | none |
+| https://api.copernica.com/v1/subprofile/\$subprofileID | GET, DELETE | none |
 
 GET request
 -----------

@@ -16,7 +16,7 @@ Interest fields can be grouped. You can have for example a group called
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/database/\$databaseID/interests | GET, POST | limit, start |
+| https://api.copernica.com/v1/database/\$databaseID/interests | GET, POST | limit, start |
 
 GET request
 -----------
@@ -88,7 +88,7 @@ HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 13:39:11 GMT
 Server: Apache/2.2.22 (Ubuntu)
 X-Powered-By: PHP/5.3.10-1ubuntu3.9
-Location: https://api.copernica.com/database/756/interests/
+Location: https://api.copernica.com/v1/database/756/interests/
 Content-Length: 0
 Content-Type: application/json
 ```

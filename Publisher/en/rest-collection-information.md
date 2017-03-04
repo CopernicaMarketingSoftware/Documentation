@@ -9,7 +9,7 @@ pair.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/collection/\$collectionid | GET | none |
+| https://api.copernica.com/v1/collection/\$collectionid | GET | none |
 
 ### Collection field properties
 

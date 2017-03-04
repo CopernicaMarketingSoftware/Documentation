@@ -16,7 +16,7 @@ GET-request
 -----------
 
 ```
-https://api.copernica.com/collection/51/miniviews?access_token=ff96963b...
+https://api.copernica.com/v1/collection/51/miniviews?access_token=ff96963b...
 ```
 
 Sending the GET request to the url above will result in receiving the

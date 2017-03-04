@@ -3,7 +3,7 @@ The overall statistics of an emailing can be retrieved with the
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailing/\$emailingID/statistics | GET | none |
+| https://api.copernica.com/v1/emailing/\$emailingID/statistics | GET | none |
 
 Properties of the emailing statistics
 -------------------------------------

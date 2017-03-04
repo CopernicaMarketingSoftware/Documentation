@@ -15,8 +15,8 @@ Interest fields can be grouped. You can have for example a group called
 
 | Request url                                                                                                               | Methods     | Parameters |
 | ------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
-| [https://api.copernica.com/profile/\$profileID/interests](https://api.copernica.com/profile/$profileID/interests)         | GET, POST   | none       |
-| [https://api.copernica.com/profile/\$profileid/interests-get](https://api.copernica.com/profile/$profileid/interests-get) | GET         | none       |
+| [https://api.copernica.com/v1/profile/\$profileID/interests](https://api.copernica.com/v1/profile/$profileID/interests)         | GET, POST   | none       |
+| [https://api.copernica.com/v1/profile/\$profileid/interests-get](https://api.copernica.com/v1/profile/$profileid/interests-get) | GET         | none       |
 | ------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
 
 Retrieve the interests of the profile with identifier \$profileID. An
@@ -62,7 +62,7 @@ location of the profile associated with \$profileID is returned.
     Date: Mon, 17 Feb 2014 15:11:10 GMT
     Server: Apache/2.2.22 (Ubuntu)
     X-Powered-By: PHP/5.3.10-1ubuntu3.9
-    Location: https://api.copernica.com/profile/4544701
+    Location: https://api.copernica.com/v1/profile/4544701
     Content-Length: 248
     Content-Type: application/json
 

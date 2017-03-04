@@ -17,7 +17,7 @@ GET-request
 -----------
 
 ```
-https://api.copernica.com/minirule/6?access_token=ff96963b...
+https://api.copernica.com/v1/minirule/6?access_token=ff96963b...
 ```
 
 Sending the GET request to the url above will result in receiving the
@@ -74,7 +74,7 @@ A minirule get be edited by a PUT request. You can send this to an URL
 like the one below:
 
 ```
-https://api.copernica.com/minirule/6?access_token=ff96963b...
+https://api.copernica.com/v1/minirule/6?access_token=ff96963b...
 ```
 
 The following payload inverts the minirule:

@@ -2,7 +2,7 @@
 
 When you want to update the properties of a database field, like the name or the type, you can do so by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/database/$id/field/$id?access_token=XXX`
+`https://api.copernica.com/v1/database/$id/field/$id?access_token=XXX`
 
 In this, the first $id has to be replaced by the numerical ID or the name of the database the field you want to edit is in. The second $id has to be the ID of the field itself.
 

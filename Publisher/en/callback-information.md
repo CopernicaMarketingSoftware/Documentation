@@ -9,7 +9,7 @@ a single database.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/callback/\$callbackID | GET, POST | none |
+| https://api.copernica.com/v1/callback/\$callbackID | GET, POST | none |
 
 Callback data
 -------------

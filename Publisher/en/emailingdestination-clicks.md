@@ -3,7 +3,7 @@ with the /emailingdestination/\$destinationID/clicks method.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/emailingdestination/\$destinationID/clicks | GET | start, limit, fields[] |
+| https://api.copernica.com/v1/emailingdestination/\$destinationID/clicks | GET | start, limit, fields[] |
 
 Properties of an click of an emailing destination
 -------------------------------------------------

@@ -4,7 +4,7 @@ the subprofile with identifier \$subprofileID.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/subprofile/\$subprofileID/fields | GET, POST | none |
+| https://api.copernica.com/v1/subprofile/\$subprofileID/fields | GET, POST | none |
 
 GET subprofile fields
 ---------------------
@@ -48,7 +48,7 @@ A message with the location of the subprofile affected is returned.
 HTTP/1.1 201 Created
 Date: Mon, 17 Feb 2014 13:06:41 GMT
 Server: Apache
-Location: https://api.copernica.com/subprofile/969758
+Location: https://api.copernica.com/v1/subprofile/969758
 Transfer-Encoding: chunked
 Content-Type: application/json
 ```

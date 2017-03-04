@@ -9,7 +9,7 @@ The REST service is accessible on: **https://api.copernica.com**
 
 Let's say, you need all information of a specific profile identified by
 it's id 1234. The call to the REST API to retrieve this data would be:
-[https://api.copernica.com/profile/1234?access\_token=abc123](./profile-request.md)
+[https://api.copernica.com/v1/profile/1234?access\_token=abc123](./profile-request.md)
 
 Each call to the REST API requires an access token to be supplied as
 extra parameter. The `access_token` is used to authorize your request.
@@ -92,7 +92,7 @@ different information for different requests. Successful GET requests
 set no header information, since you will retrieve the actual data.
 Successful POST and PUT requests return a link to the updated/added
 information. This is in the form of
-`X-Location:         https://api.copernica.com/profile/$profileID` when
+`X-Location:         https://api.copernica.com/v1/profile/$profileID` when
 a profile is added or updated. A successful DELETE request returns a
 `X-Deleted:         profile $profileID` header.
 

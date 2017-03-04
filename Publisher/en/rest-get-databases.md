@@ -2,7 +2,7 @@
 
 A method to request a list of all available databases. This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/databases?access_token=xxxx`
+`https://api.copernica.com/v1/databases?access_token=xxxx`
 
 ## Available parameters
 

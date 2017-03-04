@@ -5,7 +5,7 @@ and which profiles are not. Profile that match at least on of the selection rule
 are included in the selection. To retrieve the properties and the conditions of a 
 single rule, you can send a HTTP GET request to the following URL:
 
-`https://api.copernica.com/view/$id/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
 
 The first $id code should be replaced with the numeric identifier of the 
 selection from which you want to retrieve a rule. The second $id parameter

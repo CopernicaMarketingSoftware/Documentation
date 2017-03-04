@@ -1,6 +1,6 @@
 # REST API: requesting profiles in a database
 The method to request profiles in a database is an HTTP GET request and available at the following address:
-`https://api.copernica.com/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to request profiles from.
 
 ## Available parameters

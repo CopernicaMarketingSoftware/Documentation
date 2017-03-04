@@ -6,7 +6,7 @@ gives you access to all profiles associated with a given database.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/database/\$databaseID/profiles | GET, POST, DELETE | fields[], start, limit |
+| https://api.copernica.com/v1/database/\$databaseID/profiles | GET, POST, DELETE | fields[], start, limit |
 
 GET request
 -----------

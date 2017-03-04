@@ -3,7 +3,7 @@
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
 naar de volgende URL.
 
-`https://api.copernica.com/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel

@@ -4,7 +4,7 @@ Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar
 de volgende URL te sturen:
 
-`https://api.copernica.com/database/$id/field/$id?access_token=XXX`
+`https://api.copernica.com/v1/database/$id/field/$id?access_token=XXX`
 
 De eerste $id variabele in de URL moet worden vervangen door de numerieke 
 identifier of de naam van de database waarvan je een veld wilt bewerken. De

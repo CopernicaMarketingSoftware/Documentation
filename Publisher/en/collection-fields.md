@@ -4,7 +4,7 @@ properties.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/collection/\$collectionid/fields | GET, POST | none |
+| https://api.copernica.com/v1/collection/\$collectionid/fields | GET, POST | none |
 
 ### Collection field properties
 

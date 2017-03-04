@@ -11,7 +11,7 @@ them here) and the ID. Take a look at the example below, were
 condition 4 of type 'field' gets updated:
 
 ```
-https://api.copernica.com/condition/field/4?access_token=ff9696....
+https://api.copernica.com/v1/condition/field/4?access_token=ff9696....
 ```
 
 We send the following payload to this URL:

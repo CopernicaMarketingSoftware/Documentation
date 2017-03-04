@@ -3,7 +3,7 @@
 Methode om een veld toe te voegen aan een bestaande collectie. Dit is een HTTP 
 POST call naar het volgende adres:
 
-`https://api.copernica.com/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de collectie
 waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele

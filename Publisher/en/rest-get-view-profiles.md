@@ -2,7 +2,7 @@
 
 To retrieve all profiles in a selection, send a HTTP GET request to this address:
 
-`https://api.copernica.com/view/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v1/view/$id/profiles?access_token=xxxx`
 
 The $id code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the profiles.

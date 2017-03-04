@@ -3,7 +3,7 @@
 All impressions that have been registered by Copernica can be fetched by
 sending a HTTP GET request to the following URL:
 
-`https://api.copernica.com/impressions?access_token=xxxx`
+`https://api.copernica.com/v1/impressions?access_token=xxxx`
 
 ## Supported parameters
 

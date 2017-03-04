@@ -4,7 +4,7 @@ collection.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/collection/\$collectionID/subprofiles | GET | limit, start |
+| https://api.copernica.com/v1/collection/\$collectionID/subprofiles | GET | limit, start |
 
 GET Request
 -----------
@@ -20,7 +20,7 @@ you can use the following URL. Keep in mind, the start parameter has
 nothing to do with the subprofile identifiers. It just determines the
 first retrieved subprofile from a table.
 
-*https://api.copernica.com/collection/1234/subprofiles/?start=10&limit=10&access\_token...*
+*https://api.copernica.com/v1/collection/1234/subprofiles/?start=10&limit=10&access\_token...*
 
 ### Example output GET request
 

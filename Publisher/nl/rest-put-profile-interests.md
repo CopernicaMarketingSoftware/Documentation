@@ -3,7 +3,7 @@
 Om de interesses van een profiel te overschrijven, kun je een HTTP PUT
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel

@@ -31,7 +31,7 @@ rule.
 ### Example GET request
 
 ```
-https://api.copernica.com/rule/5/conditions?access_token=ff96963b...
+https://api.copernica.com/v1/rule/5/conditions?access_token=ff96963b...
 ```
 
 Sending the GET request to the url above will result in receiving the

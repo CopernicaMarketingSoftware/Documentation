@@ -71,7 +71,7 @@ waarin data wordt verzonden. Om iets uit de API te krijgen, moet je dus
 een correct gevormde call maken. Bij de Copernica REST API ziet de URI
 van een GET of DELETE call er zo uit:
 
-    https://api.copernica.com/database/$databaseID/profiles?access_token=your_access_token
+    https://api.copernica.com/v1/database/$databaseID/profiles?access_token=your_access_token
 
 Hierin zijn 'database','\$databaseID' en 'profiles' vervangbaar om een
 andere method te gebruiken. Your\_access\_token moet uiteraard vervangen
@@ -84,7 +84,7 @@ bijvoorbeeld op een specifieke achternaam of leeftijd wil filteren. Dit
 doe je door parameters mee te geven aan de call. Parameters zien er als
 volgt uit in de URI:
 
-    https://api.copernica.com/database/$databaseID/profiles?parameter1=value&parameter2=value&parameter3=value&access_token=your_access_token
+    https://api.copernica.com/v1/database/$databaseID/profiles?parameter1=value&parameter2=value&parameter3=value&access_token=your_access_token
 
 #### Start en limit
 
@@ -106,13 +106,13 @@ Om bijvoorbeeld een voornaam de zoeken, kun je de parameter
 `fields[]=Firstname==Henk` gebruiken (als je het veld voor de voornaam
 'Firstname' hebt genoemd) In de URI ziet het er dan zo uit:
 
-    https://api.copernica.com/database/$databaseID/profiles?fields[]=Firstname%3D%3DHenk&access_token=your_access_token
+    https://api.copernica.com/v1/database/$databaseID/profiles?fields[]=Firstname%3D%3DHenk&access_token=your_access_token
 
 Je kunt meerdere condities stellen voor je filtering. Parameters scheid
 je met een '&'-teken. Wil je bijvoorbeeld alle mensen zoeken die Henk
 Visser heten, dan kun je ook de parameter voor 'Lastname' vermelden:
 
-    https://api.copernica.com/database/$databaseID/profiles?fields[]=Firstname%3D%3DHenk&fields[]=Lastname%3D%3DVisser&
+    https://api.copernica.com/v1/database/$databaseID/profiles?fields[]=Firstname%3D%3DHenk&fields[]=Lastname%3D%3DVisser&
     access_token=your_access_token
 
 Let hierbij wel op dat je je URI correct encodet, anders wordt de

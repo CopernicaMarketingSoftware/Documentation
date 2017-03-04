@@ -5,7 +5,7 @@ geaccepteerde berichten, enzovoort. Deze logfiles kun je met de API downloaden.
 Door een GET request naar de volgende URL te sturen krijg je een overzicht
 van alle datums waarvan we logfiles hebben bewaard:
 
-`https://api.copernica.com/logfiles?access_token=xxxx`
+`https://api.copernica.com/v1/logfiles?access_token=xxxx`
 
 ## Geretourneerde velden
 

@@ -4,7 +4,7 @@ This method can be used if you want to find out the account that is linked to
 an API access token. By sending a GET request to the following URL, you can
 fetch the account information:
 
-`https://api.copernica.com/identity?access_token=xxxx`
+`https://api.copernica.com/v1/identity?access_token=xxxx`
 
 This method can be useful if you have a lot of different access tokens to 
 access many different accounts (this can happen if you built a 

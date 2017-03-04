@@ -3,7 +3,7 @@
 Als je de gegevens van een collectie (eigenlijk alleen de naam) wilt bijwerken,
 kun je dit doen door een HTTP PUT request naar de volgende URL te sturen:
 
-`https://api.copernica.com/collection/$id?access_token=XXX`
+`https://api.copernica.com/v1/collection/$id?access_token=XXX`
 
 De variabele $id in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.

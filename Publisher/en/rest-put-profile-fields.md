@@ -1,6 +1,6 @@
 # REST API: updating a field
 To update existing fields of a profile, you need to do an HTTP PUT request to the following URL:
-`https://api.copernica.com/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. The name of the field and other variables need to be added to the message body of the HTTP request.
 
 ## Body data
