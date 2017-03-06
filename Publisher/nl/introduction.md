@@ -23,20 +23,12 @@ marketingcampagnes.
 
 Meerdere plekken om in te loggen
 --------------------------------
-
-Met de Copernica logingegevens (je emailadres en wachtwoord) kun je op meerdere
-manieren toegang krijgen tot Copernica. Je kunt je login bijvoorbeeld gebruiken 
-om in te loggen via de gewone website, maar ook direct via de adressen van 
-"Publisher" of "Marketing Suite":
+Met de Copernica logingegevens, kan je het beste inloggen via [www.copernica.com](https://www.copernica.com), omdat het de centrale plek is vanwaar je kunt navigeren naar alle Copernica accounts en applicaties. Echter, het is ook mogelijk om direct toegang tot de software te krijgen door te navigeren naar een van de volgende webpagina's:
 
 * De Copernica website: [www.copernica.com](https://www.copernica.com)
-* De "oude" Copernica Publisher: [publisher.copernica.nl](https://publisher.copernica.nl)
 * De "nieuwe" Copernica Marketing Suite: [ms.copernica.com](https://ms.copernica.com)
 
-Inloggen via [www.copernica.com](https://www.copernica.com) is het eenvoudigst: 
-vanuit het dashboard op de website heb je direct toegang tot al je accounts
-en al je applicaties. Maar mocht je deze eerste stap willen overslaan, dan kun 
-je ook inloggen via de andere bovengenoemde adressen.
+Als je bent ingelogd, zie je een grote button waarmee je kan schakelen tussen de MarketingSuite en de Publisher. De button is zichtbaar boven in het linker menu.
 
 
 Het verschil tussen "Copernica Marketing Suite" en "Copernica Publisher"
