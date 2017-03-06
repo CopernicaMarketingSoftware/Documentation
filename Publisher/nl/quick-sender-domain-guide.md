@@ -23,7 +23,7 @@ instellingen te beheren.
 
 Marketing Suite
 ---------------
-De vernieuwde interface van de marketing Suite zorgt ervoor dat je makkelijk en snel
+De vernieuwde interface van de Marketing Suite zorgt ervoor dat je makkelijk en snel
 de sender-domain in kan stellen.
 
 Als je een afzenderdomein hebt ingesteld, zorgt Copernica automatisch
