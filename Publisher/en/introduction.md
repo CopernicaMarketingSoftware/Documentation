@@ -3,14 +3,14 @@ As you may know, Copernica develops multiple e-mail related products, such as Ma
 
 The documentation you're about to read concerns the Copernica Marketing Software, our main product. In this, we use 'Copernica' exactly as stated above: as a product name. You'll read how to, for example, create a template 'in Copernica', or where to find statistics 'in Copernica'.
 
-Whilst reading this documentation, it is useful to have access to the software itself. To gain access, you need a username and a password, which you'll automatically receive when you sign up at www.copernica.com. Using these credentials, you can log in and start setting up marketing campaigns immediately.
+Whilst reading this documentation, it is useful to have access to the software itself. To gain access, you need a username and a password, which you'll automatically receive when you sign up at [www.copernica.com](https://www.copernica.com). Using these credentials, you can log in and start setting up marketing campaigns immediately.
 
 ##Multiple places to log in
-With your Copernica credentials, it is easiest to log in via www.copernica.com, because it's a central hub from where you can access all Copernica accounts and applications. 
+With your Copernica credentials, it is easiest to log in via [www.copernica.com](https://www.copernica.com), because it's a central hub from where you can access all Copernica accounts and applications. 
 However, you can also access the software directly from their respective web pages:
 
-- The Copernica website: https://www.copernica.com
-- The “new” MarketingSuite: https://ms.copernica.com
+- The Copernica website: [www.copernica.com](https://www.copernica.com)
+- The “new” MarketingSuite: [ms.copernica.com](https://ms.copernica.com)
 
 Once logged in, you'll find a big rectangle button which lets you toggle between the MarketingSuite and the Publisher. This button can be found in the left hand side menu, situated at the top.
 
