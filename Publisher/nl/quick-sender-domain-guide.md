@@ -21,29 +21,19 @@ Dit is een technologie waarmee het een stuk makkelijker wordt om je DNS
 instellingen te beheren.
 
 
-Marketing Suite of Copernica Publisher?
----------------------------------------
+Marketing Suite
+---------------
+De vernieuwde interface van de marketing Suite zorgt ervoor dat je makkelijk en snel
+de sender-domain in kan stellen.
 
-De sender-domain technologie is zowel toegankelijk via de nieuwe Marketing Suite
-als via de oude Copernica Publisher omgevingen. Echter, de interface in de 
-Marketing Suite is een stuk beter en uitgebreider dan de interface in 
-Copernica Publisher. Je kunt dit daarom het beste regelen via de Marketing Suite.
+Als je een afzenderdomein hebt ingesteld, zorgt Copernica automatisch
+dat alle DNS instellingen goed staan. Je hoeft wat domeinnamen betreft niks
+anders meer te configuren. Dit betekent dat je, na het instellen van een sender-domain,
+dus niet meer apart in hoeft te stellen welke domeinnaam moet worden gebruikt om clicks en 
+bounces te registreren en om te bepalen wat de DKIM keys zijn. De instellingen van het 
+sender-domain hebben prioriteit, zelfs als je mails gaat versturen met Publisher. 
 
-Als je een afzenderdomein hebt ingesteld, dan zorgt Copernica automatisch
-dat alle DNS instellingen goed staan, en hoef je wat domeinnamen betreft niks
-anders meer te configuren. Je hoeft na het instellen van een sender domain dus 
-niet meer apart in te stellen welke domeinnaam moet worden gebruikt om kliks en 
-bounces te registreren, en wat de DKIM keys zijn. In de oude Copernica Publisher 
-omgeving vind je echter om historische redenen nog wel formulieren om handmatig 
-DKIM keys te beheren, en om handmatig het picserver of envelope domein in te stellen. 
-Deze formulieren kun je negeren. De instellingen van het sender domain hebben 
-prioriteit, zelfs als je mails gaat versturen met Publisher.
-
-Kortom, je kunt het beste gebruik maken van de Marketing Suite om je sender
-domain in te stellen. Je vindt de sender domain tool in het menu onder het
-kopje *configuratie*. De verschillende dialoogvensters in Copernica Publisher 
-om domeinnamen handmatig in te stellen zijn verouderd en heb je niet nodig.
-
+Je vindt de sender-domain tool in het menu onder het kopje *configuratie*.
 
 Hoofddomein of subdomein?
 -------------------------
