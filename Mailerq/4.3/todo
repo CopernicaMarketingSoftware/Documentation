@@ -1,0 +1,13 @@
+config doesn't have some options present in config_defaults
+rabbitmq-user:          ..
+rabbitmq-password:      ..
+
+config_defaults doesn't have some other values present in config
+rabbitmq-address:       ..
+
+
+Not found in config.txt:
+    "smtp-privatekey",      
+    "config-file",          path to config file
+    "dns-threads",          how many threads for dns lookups/resolving an hostname to an ip address
+    "envelope"
