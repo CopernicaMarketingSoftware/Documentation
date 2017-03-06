@@ -15,8 +15,8 @@ kunnen teruglezen hoe je een template "in Copernica" kunt plaatsen, en waar
 je "binnen Copernica" de statistieken kan terugvinden.
 
 Bij het lezen van de documentatie is het handig om toegang te hebben
-tot de software. Daarvoor heb je een login en wachtwoord nodig. Deze krijg je automatisch
-wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
+tot de software. Daarvoor heb je een login en wachtwoord nodig. Deze krijg je 
+automatisch wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
 Met deze gegevens kun je inloggen en beginnen met het inrichten van 
 marketingcampagnes.
 
@@ -32,7 +32,7 @@ een van de volgende webpagina's:
 * De "nieuwe" Copernica MarketingSuite: [ms.copernica.com](https://ms.copernica.com)
 
 Als je bent ingelogd, zie je een grote button waarmee je kan schakelen tussen de MarketingSuite 
-en de Publisher. 
+en de Publisher.
 De button is zichtbaar boven in het linker menu.
 
 
