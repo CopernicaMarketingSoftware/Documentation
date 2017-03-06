@@ -13,8 +13,8 @@ periodically to make sure your private keys don't get cracked.
 Copernica has an easy solution for all of this called Sender Domains, which makes managing your
 DNS settings a lot easier.
 
-## MarketingSuite
-The newly designed MartekingSuite interface lets you easily set up your sender-domain.
+## Marketing Suite
+The newly designed Marketing Suite interface lets you easily set up your sender-domain.
 
 When you set up your domain as a sender domain, Copernica automatically makes sure your DNS
 settings are correct and up-to-date. You won't need to configure anything, domain-wise, after the
@@ -38,7 +38,7 @@ sending mail.
 
 ## Validating your domain
 To prevent abuse of sender domains, you need to prove that you're really the owner of the domain.
-After registering your sender domain, MarketingSuite shows a warning message. You first need to
+After registering your sender domain, Marketing Suite shows a warning message. You first need to
 add a TXT record to your DNS with a code only Copernica can decypher. Only after we've seen
 this record in your DNS, we'll believe it's truly your domain. You'll be able to complete your setup
 after this.
