@@ -13,8 +13,8 @@ periodically to make sure your private keys don't get cracked.
 Copernica has an easy solution for all of this called Sender Domains, which makes managing your
 DNS settings a lot easier.
 
-## Marketing Suite
-The newly designed Marteking Suite interface lets you easily set up your sender-domain.
+## MarketingSuite
+The newly designed MartekingSuite interface lets you easily set up your sender-domain.
 
 When you set up your domain as a sender domain, Copernica automatically makes sure your DNS
 settings are correct and up-to-date. You won't need to configure anything, domain-wise, after the
