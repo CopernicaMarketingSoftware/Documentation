@@ -10,13 +10,13 @@ With your Copernica credentials, it is easiest to log in via [www.copernica.com]
 However, you can also access the software directly from their respective web pages:
 
 - The Copernica website: [www.copernica.com](https://www.copernica.com)
-- The “new” MarketingSuite: [ms.copernica.com](https://ms.copernica.com)
+- The “new” Marketing Suite: [ms.copernica.com](https://ms.copernica.com)
 
 Once logged in, you'll find a big rectangle button which lets you toggle between the MarketingSuite and the Publisher. This button can be found in the left hand side menu, situated at the top.
 
-##The difference between 'Copernica MarketingSuite' and 'Copernica Publisher'
-Copernica has been offering software solutions for over a decade, during which we've created multiple tools. Among these are on-premise MailerQ, cloud-based SMTPeter and online marketing tools Publisher and MarketingSuite.
+##The difference between 'Copernica Marketing Suite' and 'Copernica Publisher'
+Copernica has been offering software solutions for over a decade, during which we've created multiple tools. Among these are on-premise MailerQ, cloud-based SMTPeter and online marketing tools Publisher and Marketing Suite.
 
-MarketingSuite and Publisher largely intersect in their features: Both tools are meant for creating complete online marketing campaigns, which is why a Copernica license gives you access to both. Publisher is the 'old' environment, being over 10 years old. It lets users create campaigns in a fairly technical and detailed way. MarketingSuite, on the other hand, is new and easier to use. Under the hood, the two are equal: data inserted in one system, can be used by the other.
+Marketing Suite and Publisher largely intersect in their features: Both tools are meant for creating complete online marketing campaigns, which is why a Copernica license gives you access to both. Publisher is the 'old' environment, being over 10 years old. It lets users create campaigns in a fairly technical and detailed way. MarketingSuite, on the other hand, is new and easier to use. Under the hood, the two are equal: data inserted in one system, can be used by the other.
 
-Because MarketingSuite is still under construction, not all of Publisher's features are available in MarketingSuite yet. To use Copernica to its full potential, it may be needed at times to switch between Publisher and MarketingSuite. Along the way, more and more of Publisher's features are being added to MarketingSuite, so in the future you won't have to switch anymore.
+Because Marketing Suite is still under construction, not all of Publisher's features are available in Marketing Suite yet. To use Copernica to its full potential, it may be needed at times to switch between Publisher and Marketing Suite. Along the way, more and more of Publisher's features are being added to MarketingSuite, so in the future you won't have to switch anymore.
