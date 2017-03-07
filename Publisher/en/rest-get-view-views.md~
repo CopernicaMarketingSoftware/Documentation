@@ -21,7 +21,7 @@ More information on the meaning of these parameters can be found [in the article
 
 ## Returned fields
 
-For every selection, a JSON object with the following properties is returned:
+For every selection, the following properties are returned:
 
 - **ID**: the numerical identifier of the selection
 - **name**: the name of the selection

@@ -8,7 +8,6 @@ support parameters. It is called using the following address:
 In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
 
 ## Available parameters
-
 There are no available parameters for this method.
 
 ## Returned fields
