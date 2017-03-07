@@ -11,8 +11,8 @@ A method to request all metadata from a database. This method does not support p
 **archived**: whether or not the database is archived
 **created**: when the database was created
 **fields**: array of fields in the database
-**interests**: array with interests in the database
-**collections**: array with the collections in the database
+**interests**: array met interests in the database
+**collections**: array met de collections in the database
 
 Fields, interests and collections are returned as arrays of objects. If you want to know how these arrays are built, you can check out the pages of these API methods, which return similar data:
 

@@ -2,13 +2,13 @@
 
 A method to request a list of all available databases. This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/databases?access_token=xxxx`
+`https://api.copernica.com/v1/databases?access_token=xxxx`
 
 ## Available parameters
 
 - **start**: the first profile to be requested
 -**limit**: the length of the batch that is requested
-- **total**l: whether or not the total number of profiles in the database should be counted
+- **total**: whether or not the total number of profiles in the database should be counted
 
 More information on the meaning of start, limit and total parameters can be found in the [article on paging](rest-paging).
 
@@ -47,6 +47,7 @@ The following PHP script demonstrates how to use the method:
 	print_r($api->get("databases", $parameters));
 
 This example uses the [CopernicaRestApi class](rest-php).
+
 ## More information
 - [Overview of all API methods](rest-api)
 - [Requesting a single database](rest-get-database)
