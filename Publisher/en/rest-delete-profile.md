@@ -5,7 +5,7 @@ a profile:
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the profile
+The $id needs to be replaced by the numerical identifier of the profile
 that you want to remove.
 
 ## PHP example

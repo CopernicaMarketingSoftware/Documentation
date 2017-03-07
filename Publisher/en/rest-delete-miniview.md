@@ -5,7 +5,7 @@ a miniview:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the selection
+The $id needs to be replaced by the numerical identifier of the selection
 that you want to remove. With this method you only remove the miniselection, and
 not the profiles that are inside of it.
 

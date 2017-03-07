@@ -19,7 +19,7 @@ More information on the meaning of start, limit and total parameters can be foun
 
 The *fields* parameter can be used to select profiles. For example, if you only want to request profiles where the field “country” equals “The Netherlands”, you can do so using “fields”. More information on this parameter can be found in the [article on the “fields” parameter](rest-fields-parameter).
 
-The “order” variable can have the name or the ID of a field assigned to it. When you do so, profiles are sorted by the value in that field. 
+The *order* variable can have the name or the ID of a field assigned to it. When you do so, profiles are sorted by the value in that field. 
 Instead of a field to sort on, you can also assign one of the following special values to “order”:
 - **id**: this is the default value, profiles are sorted by ID.
 - **random**: profiles are returned in random order
@@ -62,3 +62,5 @@ This example uses the [CopernicaRestApi class](rest-php).
 - [Overview of all API calls](rest-api)
 - [Requesting profile IDs](rest-get-database-profileids)
 - [Adding a profile to a database](rest-post-database-profiles)
+- [Editing a profile](rest-put-profile-fields)
+- [Delete profile](rest-delete-profile)

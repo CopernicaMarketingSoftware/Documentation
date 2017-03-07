@@ -1,0 +1,35 @@
+# REST API: deleting a selectie
+
+When you send an HTTP DELETE request to the following URL, you’ll delete 
+a selectie of profielen:
+
+`https://api.copernica.com/v1/view/$id?access_token=xxxx`
+
+The first $id needs to be replaced by the numerical identifier of the selectie
+that you want to remove. With this method you only remove the selectie, and
+not the profielen that are inside of it. If you want to remove the profielen
+too, you will have to remove the entire database, or you can make many
+individual API calls to remove profielen one by one.
+
+## PHP example
+
+The following example demonstrates how to make a call using this method.
+
+	// dependencies
+	require_once('copernica_rest_api.php');
+
+	// change this into your access token
+	$api = new CopernicaRestApi("your-access-token");
+
+	// do the call
+	$api->delete("view/1234");
+
+This example uses the [CopernicaRestAPi class](rest-php).
+
+## Meer informatie
+
+* [Overzich van alle REST API calls](rest-api)
+* [Verwijder een database](rest-delete-database)
+* [Vraag alle profielen in selectie op](rest-get-view-profiles)
+* [Profiel verwijderen](rest-delete-profile)
+

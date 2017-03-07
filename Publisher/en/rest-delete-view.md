@@ -5,7 +5,7 @@ a selection of profiles:
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the selection
+The $id needs to be replaced by the numerical identifier of the selection
 that you want to remove. With this method you only remove the selection, and
 not the profiles that are inside of it. If you want to remove the profiles
 too, you will have to remove the entire database, or you can make many
