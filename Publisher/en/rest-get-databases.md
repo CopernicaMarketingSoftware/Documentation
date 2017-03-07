@@ -7,8 +7,8 @@ A method to request a list of all available databases. This is an HTTP GET call 
 ## Available parameters
 
 - **start**: the first profile to be requested
--**limit**: the length of the batch that is requested
-- **total**l: whether or not the total number of profiles in the database should be counted
+- **limit**: the length of the batch that is requested
+- **total**: whether or not the total number of profiles in the database should be counted
 
 More information on the meaning of start, limit and total parameters can be found in the [article on paging](rest-paging).
 
