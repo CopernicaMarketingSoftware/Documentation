@@ -24,4 +24,3 @@ This example uses the [CopernicaRestAPi class](rest-php).
 - [Overview of all API calls](rest-api)
 - [Requesting all fields from a database](rest-get-database-fields)
 - [Creating a new field](rest-post-database-fields)
-- [Editing a field](rest-put-database-fields)
