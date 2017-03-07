@@ -32,7 +32,7 @@ properties per condition:
 - **rule**: numeric ID of the rule to which the condition belongs
 
 Based on the condition type, specific properties are set. For an overview
-of the supported conditions and the properties that they support, check
+of the supported conditions, and the properties that they support, check
 the specific articles:
 
 - [Change conditions](./rest-condition-type-change.md)
