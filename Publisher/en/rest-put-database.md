@@ -8,6 +8,10 @@ The following variables can be used in the body of the HTTP PUT request:
 - **name**: the optional new name of the database
 - **description**: the optional new database description
 - **archived**: optional boolean to determine whether or not a database should be archived.
+- **created**: when the database was created
+- **fields**: array of fields in the database
+- **interests**: array with interests in the database
+- **collections**: array with the collections in the database
 
 ## PHP example
 The following example demonstrates how to use the API method:
@@ -31,6 +35,7 @@ The following example demonstrates how to use the API method:
 	api->put("database/1234", $parameters, $data);
 
 For this example, you need [the CopernicaRestApi class](rest-php).
+
 ## More information
 - [Overview of all API calls](rest-api)
 - [Requesting a list of databases](rest-get-databases)

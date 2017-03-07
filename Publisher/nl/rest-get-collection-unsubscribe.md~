@@ -32,13 +32,13 @@ teruggegeven "fields" setting bevat een object met de nieuwe subprofielwaardes.
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
+    // dependencies
     require_once('copernica_rest_api.php');
     
-    // verander dit naar je access token
+    // change this into your access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // voer de methode uit en print het resultaat
+    // do the call, and print result
     print_r($api->get("collection/1234/unsubscribe"));
 
 ## Meer informatie

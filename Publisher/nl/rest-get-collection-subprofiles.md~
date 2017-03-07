@@ -58,20 +58,20 @@ we in het voorbeeld de CopernicaRestApi klasse gebruiken, hoef je je niet heel
 druk te maken over het vervangen van speciale tekens in de URL. Dat doet de
 klasse automatisch.
 
-    // vereiste scripts
+    // dependencies
     require_once('copernica_rest_api.php');
     
-    // verander dit naar je access token
+    // change this into your access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters voor de methode
+    // parameters to pass to the call
     $parameters = array(
         'limit'     =>  100,
         'orderby'   =>  'country',
         'fields'    =>  array("age>16", "age<=65")
     );
     
-    // voer de methode uit en print het resultaat
+    // do the call, and print result
     print_r($api->get("collection/1234/subprofiles", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

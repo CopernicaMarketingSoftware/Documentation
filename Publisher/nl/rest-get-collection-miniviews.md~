@@ -9,6 +9,7 @@ kun je een HTTP GET requet naar het volgende adres sturen:
 De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:

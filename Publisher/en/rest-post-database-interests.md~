@@ -33,7 +33,7 @@ The following script demonstrates how to use the API method:
 
 This example uses the [CopernicaRestAPi class](rest-php).
 
-More information:
+## More information:
 - [Overview of all API calls](rest-api)
 - [Request all interests in a database](rest-get-database-interests)
 - [Updating an interest](rest-put-profile)
