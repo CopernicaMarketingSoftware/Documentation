@@ -5,14 +5,15 @@ A method to request all metadata from a database. This method does not support p
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
 ## Returned fields
-**ID**: unique numerical identifier
-**name**: name of the database
-**description**: description of the database
-**archived**: whether or not the database is archived
-**created**: when the database was created
-**fields**: array of fields in the database
-**interests**: array with interests in the database
-**collections**: array with the collections in the database
+
+- **ID**: unique numerical identifier
+- **name**: name of the database
+- **description**: description of the database
+- **archived**: whether or not the database is archived
+- **created**: when the database was created
+- **fields**: array of fields in the database
+- **interests**: array with interests in the database
+- **collections**: array with the collections in the database
 
 Fields, interests and collections are returned as arrays of objects. If you want to know how these arrays are built, you can check out the pages of these API methods, which return similar data:
 
@@ -37,3 +38,4 @@ This example uses the [CopernicaRestAPi class](rest-php).
 
 ## More information
 - [Overview of all REST API methods](rest-api)
+- [Create a new database](rest-post-database)

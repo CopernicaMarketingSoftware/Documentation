@@ -21,7 +21,7 @@ van een database.
 
 De velden, interesses en collecties worden teruggegeven als arrays van
 objecten. Als je wilt weten hoe deze arrays zijn opgebouwd, kun je een blik 
-werpen op de documentatie van de volgende API methodes. Deze methodes 
+werpen op de documentatien van de volgende API methodes. Deze methodes 
 retourneren dezelfde soort gegevens:
 
 * [Opvragen van velden](rest-get-database-fields)

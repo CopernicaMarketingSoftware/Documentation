@@ -1,17 +1,17 @@
-# REST API: opvragen van profiel identifiers
+# REST API: opvragen van subprofiel identifiers
 
-Als je alleen maar de ID's van de profielen in een database wilt opvragen,
+Als je alleen maar de ID's van de subprofielen in een collectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
 
-`https://api.copernica.com/v1/database/$id/profileids?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id/subprofileids?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
-database waar je de ID's van wilt opvragen.
+De code $id moet je vervangen door de numerieke identifier van de 
+collectie waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters
 
-Deze methode ondersteunt geen parameters
+Deze methode ondersteunt geen parameters.
 
 ## Geretourneerde velden
 
@@ -27,12 +27,13 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // voer de methode uit en print resultaat
-    print_r($api->get("database/1234/profileids"));
+    // voer de methode uit en print het resultaat
+    print_r($api->get("collection/1234/subprofileids"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+    
 
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Profielen inclusief alle profieldata opvragen](rest-get-database-profiles)
+* [Subprofielen inclusief alle subprofieldata opvragen](rest-get-collection-subprofiles)

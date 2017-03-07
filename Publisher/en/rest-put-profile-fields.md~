@@ -36,5 +36,5 @@ For this example, you need [the CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Updating multiple profiles](rest-put-database-profiles)
+- [Updating multpiple profiles](rest-put-database-profiles)
 - [Deleting a profile](rest-delete-database-profile)

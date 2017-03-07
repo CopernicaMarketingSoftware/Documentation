@@ -60,7 +60,7 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                                      | Edit profile fields                           |
 | GET       | [api.copernica.com/v1/profile/$id/interests](./rest-get-profile-interests)                                | Fetch profile interests                       |
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                               | Add interests to profile                      |
-| PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Overwrite profile interests                   |
+| PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Edit profile interests                   |
 | GET       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-get-profile-subprofiles)                            | Fetch subprofiles of a profile                |
 | POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)                           | Create subprofile                             |
 | GET       | [api.copernica.com/v1/collection/$id](./rest-get-collection)                                              | Fetch collection data                         |
