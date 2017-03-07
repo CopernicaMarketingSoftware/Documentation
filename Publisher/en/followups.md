@@ -16,7 +16,7 @@ follow-ups:
 We are currently very busy with developing a new follow up manager inside our
 drag-and-drop editor. This is a new tool that allows you to use your mouse
 to connect each link or button in a mailing to a follow-up action. If you want
-to update a profile when someone clicks a link, or if you want send ou a new 
+to update a profile when someone clicks a link, or if you want send a new 
 mailing, you can easily set this up with the [follow up editor](./followups-editor.md).
 
 
