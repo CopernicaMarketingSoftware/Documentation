@@ -18,7 +18,7 @@ The following variables can be put into the message body of the HTTP POST call:
 - **hidden**: boolean value to make sure a field is never shown in the interface
 - **index**: boolean value, sets whether or not the field should be indexed
 
-The following types are available for fields:
+A field can have the following types:
 - **integer**: numerical value
 - **float**: numerical floating point value
 - **date**: mandatory date field
