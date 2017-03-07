@@ -1,0 +1,1 @@
+rest-get-rule.md
