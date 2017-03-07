@@ -4,7 +4,7 @@ When you send an HTTP DELETE request to the following URL, you’ll delete a fie
 
 `https://api.copernica.com/v1/collection/$id/field/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier, the ID, of the collection. The second needs to be replaced by the ID or the name of the field you want to delete.
+The $id needs to be replaced by the numerical identifier, the ID, of the collection. The second needs to be replaced by the ID or the name of the field you want to delete.
 
 ## PHP example
 The following example demonstrates how to make a call using this method.

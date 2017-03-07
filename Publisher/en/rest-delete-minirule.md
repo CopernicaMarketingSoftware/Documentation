@@ -5,7 +5,7 @@ a minirule:
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the minirule
+The $id needs to be replaced by the numerical identifier of the minirule
 that you want to remove.
 
 ## PHP example

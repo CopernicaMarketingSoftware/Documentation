@@ -5,7 +5,7 @@ a database:
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the database
+The $id needs to be replaced by the numerical identifier of the database
 that you want to remove. Be careful, this removes all of the data in the database!
 
 ## PHP example

@@ -23,10 +23,10 @@ The method returns a list of databases. For each database in the list, the follo
 - **interests**: array of all possible interests in the database
 - **collection**: array of the collections in the database
 
-If you want to know more about *fields*, *interests* and *collections*,  take a look at the articles below. These methods return the same data:
-- [Requesting fields]
-- [Requesting interests
-- [Requesting collections]
+If you want to know more about *fields*, *interests* and *collections*,  take a look at the articles below. These methods return similar data:
+- [Requesting fields](rest-get-database-fields)
+- [Requesting interests](rest-get-database-interests)
+- [Requesting collections](rest-get-database-collections) 
 
 ## PHP example:
 

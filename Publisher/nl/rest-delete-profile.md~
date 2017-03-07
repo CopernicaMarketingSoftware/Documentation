@@ -1,12 +1,10 @@
-# REST API: deleting a rule
+# REST API: profiel verwijderen
 
-When you send an HTTP DELETE request to the following URL, you’ll delete 
-a rule:
+Het verwijderen van een profiel kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-The $id needs to be replaced by the numerical identifier of the rule
-that you want to remove.
+De $id hier moet vervangen worden door de ID van het profiel dat je wilt verwijderen.
 
 ## PHP example
 
@@ -19,7 +17,7 @@ The following example demonstrates how to make a call using this method.
 	$api = new CopernicaRestApi("your-access-token");
 
 	// do the call
-	$api->delete("rule/1234");
+	$api->delete("profile/1234");
 
 This example uses the [CopernicaRestAPi class](rest-php).
 
@@ -27,5 +25,6 @@ This example uses the [CopernicaRestAPi class](rest-php).
 
 * [Overview of all API calls](rest-api)
 * [Remove a database](rest-delete-database)
-* [Create a rule](rest-get-rule)
-* [Edit a rule](rest-put-rule)
+* [Fetching a profile](rest-get-profile)
+* [Edit a profile](rest-put-profile)
+

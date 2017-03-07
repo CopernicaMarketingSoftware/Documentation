@@ -1,4 +1,4 @@
-# REST API: opvragen logfiles
+# REST API: opvragen logilfes
 
 Copernica houdt allerlei logfiles bij van kliks, opens, foutmeldingen, 
 geaccepteerde berichten, enzovoort. Deze logfiles kun je met de API downloaden.
