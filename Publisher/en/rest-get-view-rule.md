@@ -13,7 +13,7 @@ should be the ID of the rule.
 
 ## The returned properties
 
-This method returns profile data. The following properties are returned:
+This method returns rule data. The following properties are returned:
 
 - **ID**: numeric ID of the rule
 - **name**: name of the rule

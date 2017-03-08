@@ -9,11 +9,10 @@ The $id code should be replaced with the numeric identifier or the name
 of the database in which you want to modify profiles. The new field values
 should be sent in the request body.
 
-Please keep in mind that this is a HTTP PUT requets. This method is an
+Please keep in mind that this is a HTTP PUT request. This method is an
 exception to the rule that the Copernica REST API makes no distinction between
 HTTP POST and HTTP GET calls. For this method you must use HTTP PUT. If you
 send a POST request, you [would be making a brand new profile](./rest-post-database-profiles.md). 
-
 
 ## Supported parameters
 
@@ -21,7 +20,7 @@ You must use two different ways to pass data to this method: via the URL and
 via the request body. You can pass the following parameters to the URL:
 
 * **fields**: required parameter to select the profiles that are going to be modified
-* **create**: boolean parameter that you can set to 1 if you want a new profile to be created if there are no matching profiles
+* **create**: boolean parameter that determines whether to create a new profile if none exist.
 * **async**: boolean parameter to modify the profiles asynchronously. If you set this to 1, the method immediately returns and proceeds in the background with updating profiles
 
 The *fields* parameter is required. By passing this parameter to the the method
@@ -37,13 +36,11 @@ Updating a large list of profiles can take a long time. If you do not want to
 wait for this you can set the *async* parameter to 1. This will cause the API
 to immediately return, while it updates the profiles in the background.
 
-
 ## Body data
 
 Besided the parameters that you append to the URL, you must also include a
 request body in the PUT request. The body should contain the fields to
 assign to matching profiles.
-
 
 ## PHP example
 

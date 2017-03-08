@@ -8,6 +8,10 @@ Dit is een HTTP DELETE methode, naar het volgende adres:
 De variabele $id moet worden vervangen door de numerieke identifier of de naam
 van de te verwijderen database.
 
+## Voorbeeld in PHP
+
+Het volgende voorbeeld demonstreert hoe je deze methode uitvoert in PHP:
+
     // dependencies
     require_once('copernica_rest_api.php');
     

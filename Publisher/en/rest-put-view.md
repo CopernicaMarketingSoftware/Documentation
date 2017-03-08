@@ -1,0 +1,44 @@
+# REST API: create selection meta data
+
+A method to create a selection from a database. This method does not 
+support parameters. It is called using the following address:
+
+`PUT https://api.copernica.com/v1/view/$id?access_token=xxxx`
+
+In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to create the selections for.
+
+## Available parameters
+
+- **name**: name of the selection
+- **description**: description of the selection
+- **parent-type**: type of the parent: view or database
+- **parent-id**: id of the database or view
+- **has-children**: boolean value: whether or not the database has selections nested underneath it
+- **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
+- **has-rules**: boolean value: whether or not the selection has selection rules
+
+## PHP example
+
+The following example demonstrates how to use this method:
+
+	// dependencies
+	require_once('copernica_rest_api.php');
+
+	// change this into your access token
+	$api = new CopernicaRestApi("your-access-token");
+
+	// data to be sent to the api
+	$data = array(
+    	'description'   =>  'a new description',
+    	'has_rules'      =>  true
+	);
+
+	// do the call, and print result
+	print_r($api->put("database/1234", $parameters, $data));
+
+This example uses the [CopernicaRestAPi class](rest-php).
+
+## More information
+
+* [Overview of all REST API methods](./rest-api)
+* [Create selection rules](./rest-put-view-rules)

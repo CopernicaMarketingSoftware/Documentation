@@ -27,18 +27,17 @@ worden teruggegeven:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer de methode uit en print het resultaat
     print_r($api->get("profile/1234"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

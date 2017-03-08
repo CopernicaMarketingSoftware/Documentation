@@ -33,18 +33,18 @@ worden de volgende eigenschappen teruggegeven:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander naar je acces token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
+    // parameters voor de methode
     $parameters = array(
         'limit'     =>  100
     );
     
-    // do the call, and print result
+    // voer methode uit en print resultaat
     print_r($api->get("database/1234/interests", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
