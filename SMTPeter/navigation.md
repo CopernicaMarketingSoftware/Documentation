@@ -26,6 +26,7 @@
     * [Log files](rest-logfiles)
     * [DMARC reports](rest-dmarc)
     * [Retrieve messages](rest-messages)
+    * [Retrieve events](rest-events)
 * [Feedback loops](feedback-loops)
     * [Setting up a feedback loop](feedback-setup)
     * [Bounce feedback](feedback-bounces)
