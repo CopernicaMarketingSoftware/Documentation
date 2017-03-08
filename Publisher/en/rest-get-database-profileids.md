@@ -29,6 +29,7 @@ The following PHP script demonstrates how to use the API method.
 This example uses the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
 - [Requesting profiles including all profile data](rest-get-database-profiles)
 

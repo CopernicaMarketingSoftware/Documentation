@@ -4,14 +4,14 @@ Als je alleen maar de ID's van de subprofielen in een miniselectie wilt opvragen
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
 
-`https://api.copernica.com/v1/view/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v1/miniview/$id/subprofileids?access_token=xxxx`
 
 De code $id moet je vervangen door de numerieke identifier van de 
 miniselectie waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters
 
-Deze methode ondersteunt geen parameters
+Deze methode ondersteunt geen parameters.
 
 ## Geretourneerde velden
 
@@ -21,18 +21,17 @@ De methode retourneert een JSON array bestaande uit numerieke identifiers.
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer de methode uit en print het resultaat
     print_r($api->get("miniview/1234/subprofileids"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

@@ -4,7 +4,7 @@ Een collectie is een "tweede laag" binnen een database. Als je de numerieke
 identifier van een collectie weet, dan kun je met een HTTP GET request de
 gegevens van de collectie ophalen:
 
-`GET https://api.copernica.com/v1/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v1/collection/$id?access_token=xxxx`
 
 Als $id moet je de numerieke identifier van de collectie opgeven.
 
@@ -17,7 +17,7 @@ Als $id moet je de numerieke identifier van de collectie opgeven.
 * **fields**: Array met de velden in de collectie
 
 De velden worden teruggegeven als arrays van objecten. Als je wilt weten hoe 
-deze arrays zijn opgebouwd, kun je een blik werpen op de documentatien van de 
+deze arrays zijn opgebouwd kun je een blik werpen op de documentatie van de 
 volgende API methode:
 
 * [Opvragen van velden in een collectie](rest-get-collection-fields)
@@ -27,13 +27,13 @@ volgende API methode:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit in je access code access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer de opdracht uit en print het resultaat
     print_r($api->get("collection/1234"));
 
 ## Meer informatie

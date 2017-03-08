@@ -27,4 +27,5 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 * [Overzicht van alle API calls](rest-api)
 * [Alle velden van een database opvragen](rest-get-database-fields)
 * [Nieuw veld aanmaken](rest-post-database-fields)
+* [Veld aanpassen](rest-put-database-fields)
 

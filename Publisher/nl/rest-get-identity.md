@@ -1,8 +1,8 @@
 # REST API: opvragen identiteit
 
 Als je wilt weten welk account er eigenlijk bij een access token hoort, dan
-kun je deze methode gebruiken. De methode retourneert de gegevens van het
-account dat hoort bij een access key. 
+kun je deze methode gebruiken. De methode retourneert de gegevens van de
+account die hoort bij een access key. 
 
 `https://api.copernica.com/v1/identity?access_token=xxxx`
 
@@ -30,13 +30,13 @@ teruggegeven:
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen 
 vanuit een PHP script:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit in je access code access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer de opdracht uit en print het resultaat
     print_r($api->get("account"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

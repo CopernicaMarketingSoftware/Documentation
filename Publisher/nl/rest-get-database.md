@@ -21,7 +21,7 @@ van een database.
 
 De velden, interesses en collecties worden teruggegeven als arrays van
 objecten. Als je wilt weten hoe deze arrays zijn opgebouwd, kun je een blik 
-werpen op de documentatien van de volgende API methodes. Deze methodes 
+werpen op de documentatie van de volgende API methodes. Deze methodes 
 retourneren dezelfde soort gegevens:
 
 * [Opvragen van velden](rest-get-database-fields)
@@ -33,13 +33,13 @@ retourneren dezelfde soort gegevens:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit in je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer de opdracht uit en print het resultaat
     print_r($api->get("database/1234"));
 
 ## Meer informatie

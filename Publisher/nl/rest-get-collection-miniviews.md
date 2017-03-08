@@ -9,7 +9,6 @@ kun je een HTTP GET requet naar het volgende adres sturen:
 De code $id moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -38,22 +37,21 @@ worden de volgende eigenschappen teruggegeven:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit in je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
+    // parameters voor de opvraag
     $parameters = array(
         'limit'     =>  100
     );
     
-    // do the call, and print result
+    // voer de methode uit en print de resultaten
     print_r($api->get("collection/1234/miniviews", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
-    
 
 ## Meer informatie
 

@@ -44,22 +44,21 @@ methodes. Deze methodes retourneren dezelfde soort gegevens:
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen 
 vanuit een PHP script:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
+    // parameters voor de methode
     $parameters = array(
         'limit'     =>  100
     );
     
-    // do the call, and print result
+    // voer de methode uit en print het resultaat
     print_r($api->get("databases", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
-    
 
 ## Meer informatie
 

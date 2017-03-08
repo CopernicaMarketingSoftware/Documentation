@@ -45,3 +45,5 @@ This example uses the [CopernicaRestApi class](rest-php).
 ## More information
 - [Overview of all API methods](rest-api)
 - [Adding a collection to a database](rest-post-database-collections)
+- [Fetching field from a collection](rest-get-collection-fields)
+- [Add field to collection](rest-post-collection-fields)
