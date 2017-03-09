@@ -37,13 +37,32 @@ Dit in tegenstelling tot de feedback loops die we hier bespreken. Dit zijn
 terugkoppelingen van ons naar jou. Deze terugkoppelingen worden niet 
 geanonimiseerd of gebundeld, en gebeuren in *real time*.
 
+## Pas op!
 
-## Feedback loop instellen
+Controleer voordat je feedback loops instelt of je server de inkomende datastroom wel aankan.
+Vooral de feedback loop die afgaat [wanneer iemand een mail opent](feedback-opens), ontvangt grote aantallen notificaties.
+
+Als je niet zeker weet of je server al deze notificaties aankan,
+of als je geen behoefte hebt aan real-time terugkoppeling,
+is het beter om [algemene statistieken](statistics) te gebruiken.
+
+## Feedback loops instellen
 
 Het instellen van een feedback loop kan via het dashboard van de Marketing
 Suite. Via het configuratiemenu kun je het adres instellen waar de HTTP
 POST call naar toe wordt gestuurd. Het wijst zich eigenlijk vanzelf: je geeft
 aan in welke events je geïnteresseerd bent, en wat het adres van je script is.
+
+Je kunt gebruik maken van de volgende feedback loops:
+* [Feedback loops voor bounces](feedback-bounces)
+* [Feedback loops voor fouten](feedback-failures)
+* [Feedback loops voor kliks](feedback-clicks)
+* [Feedback loops voor opens](feedback-opens)
+* [Feedback loops voor het aanmaken van een profiel](feedback-creates)
+* [Feedback loops voor het aanpassen van een profiel](feedback-updates)
+* [Feedback loops voor het verwijderen van een profiel](feedback-deletes)
+
+## URL validatie
 
 We hebben een veiligheidssysteem ingebouwd in de feedback loops. Om te 
 voorkomen dat we per ongeluk data naar een server sturen die niet aan jou
@@ -54,19 +73,18 @@ op de server plaatsen. Pas als het Copernica is gelukt om precies dit
 verificatiebestand te downloaden weten we zeker dat de server aan jou 
 toebehoort en gaan we de calls maken.
 
+De naam en inhoud van het bestand is uniek voor elke feedback loop en kan
+vanaf het dashboard opgevraagd worden. Je moet het bestand ofwel naar de root
+van je server kopiëren ofwel naar dezelfde folder waar ook het feedback script
+zich bevindt.
+Als je dus "https://domein.nl/dir/script.php" als feedback script hebt opgesteld,
+dan moet je het bestand "smtpeter-xxxxx.txt" zodanig op je webserver plaatsen
+dat het via "https://domein.nl/dir/smtpeter-xxxxx.txt"
+of via "https://domein.nl/smtpeter-xxxxx.txt" beschikbaar is.
 
-## Data
+Nadat je feedback loop is gevalideerd, kan het bestand weer verwijderd worden.
 
-Copernica stuurt alle data in HTTP POST formaat naar jouw script. Je hoeft
-dus slechts een enkel script op je server te plaatsen die deze data opvangt
-en er iets mee doet. De volgende gegevens worden, indien beschikbaar, worden
-met de calls meegegeven:
+## De feedback loop testen
 
-- *ip*
-- *useragent*
-- *referer*
-- *timestamp*
-- *tags*
-- *recipient*
-- *type*
-
+Het dashboard beschikt over een krachtige tool om je feedback loops mee te testen.
+Vul simpelweg de post data in die je feedback loop moet ontvangen en verstuur direct een voorbeeldnotificatie.
