@@ -10,7 +10,7 @@ all datums we have kept logfiles of.
 ## Returned fields
 
 This method returns a JSON array of date strings. To download a log file 
-please see the links under "More information".
+please see the links under "More information"
 
 ## PHP Example
 

@@ -37,7 +37,6 @@ parameter *order* geven:
 * **random**: de profielen worden in willekeurige volgorde teruggegeven
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van profielen. Voor elk profiel worden de 
@@ -50,7 +49,6 @@ volgende eigenschappen teruggegeven:
 * **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
-
 
 ## Voorbeeld in PHP
 
