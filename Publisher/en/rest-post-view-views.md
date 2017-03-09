@@ -2,7 +2,7 @@
 
 Copernica supports nested selections. To edit a nested selection you can send a HTTP POST request to the following URL:
 
-'https://api.copernica.com/view/$id/views?access_token=xxxx'
+`https://api.copernica.com/view/$id/views?access_token=xxxx`
 
 The first $id needs to be replaced by the numerical identifier of the upper selection and the second $id by the lower selection.
 

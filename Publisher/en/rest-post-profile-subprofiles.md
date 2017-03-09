@@ -2,7 +2,7 @@
 
 To add subprofiles to a profile an HTTP post request can be sent to the following URL:
 
-'https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx'
+`https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
 
 The $id should be replaced with the ID of the profile you want to add a subprofile to. The new subprofile of the profile can be placed in the body of the message.
 
