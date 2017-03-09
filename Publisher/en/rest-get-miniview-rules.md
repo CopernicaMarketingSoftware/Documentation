@@ -1,8 +1,8 @@
-# REST API: fetching rules from a selection
+# REST API: fetching rules from a selection in a collection
 
-To retrieve all rules in a selection, send a HTTP GET request to this address:
+A miniview is to a collection what view is to the database. To retrieve the rules of such a selection you can send an HTTP GET request to this address:
 
-`https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
+'https://api.copernica.com/v1/miniview/$id/rules?access_token=xxxx'
 
 The $id code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.
@@ -25,6 +25,7 @@ with the following properties:
 
 - **id**: ID of the rule
 - **name**: name of the rule
+- **description**: description of the rule
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: array of conditions for the rule
 - **inversed**: boolean value to indicate whether the rule should be inversed. 
