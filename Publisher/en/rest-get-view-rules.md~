@@ -25,7 +25,6 @@ with the following properties:
 
 - **id**: ID of the rule
 - **name**: name of the rule
-- **description**: description of the rule
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: array of conditions for the rule
 - **inversed**: boolean value to indicate whether the rule should be inversed. 
@@ -34,7 +33,7 @@ If set to "True" only profiles *not* conforming to the conditions are selected
 
 ## PHP example
 
-The following script can be used to fetch profiles from a selection. The 
+The following script can be used to fetch rules from a selection. The 
 CopernicaRestApi class that we use in the example takes care of escaping the
 parameters that are passed to the URL. If you write your own code to construct
 the URL, you must take care of escaping the parameters yourself.

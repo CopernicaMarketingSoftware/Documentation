@@ -25,7 +25,6 @@ with the following properties:
 
 - **id**: ID of the rule
 - **name**: name of the rule
-- **description**: description of the rule
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: array of conditions for the rule
 - **inversed**: boolean value to indicate whether the rule should be inversed. 
@@ -51,14 +50,14 @@ the URL, you must take care of escaping the parameters yourself.
     );
     
     // do the call, and print result
-    print_r($api->get("view/1234/rules", $parameters));
+    print_r($api->get("miniview/1234/minirules", $parameters));
 
 You need the [CopernicaRestApi class](./rest-php.md) to run the example.
     
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Get a selection rule by ID](./get-view-rule)
+* [Get a selection rule by ID](./get-miniview-rule)
 * [Request a list of rules from database](./rest-get-rule)
 
 

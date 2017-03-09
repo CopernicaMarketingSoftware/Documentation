@@ -13,7 +13,7 @@ should be the ID of the rule.
 
 ## The returned properties
 
-This method returns profile data. The following properties are returned:
+This method returns rule data. The following properties are returned:
 
 - **ID**: numeric ID of the rule
 - **name**: name of the rule
@@ -32,7 +32,7 @@ properties per condition:
 - **rule**: numeric ID of the rule to which the condition belongs
 
 Based on the condition type, specific properties are set. For an overview
-of the supported conditions, and the properties that they support, check
+of the supported conditions and the properties that they support, check
 the specific articles:
 
 - [Change conditions](./rest-condition-type-change.md)
@@ -75,5 +75,5 @@ You need the [CopernicaRestApi class](./rest-php.md) to run the example.
 * [Add a new selection rule](./rest-post-view-rules.md)
 * [Edit a selection rule](./rest-put-rule.md)
 * [Remove a selection rule](./rest-delete-rule.md)
-* [Edit a condition](./rest-put-condition.md)
+* [Edit a condition](./rest-put-rule-conditions.md)
 * [Remove a condition](./rest-delete-condition.md)

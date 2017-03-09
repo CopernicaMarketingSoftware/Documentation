@@ -2,7 +2,7 @@
 
 A miniview is for a collection what a selection is on a database. To edit a miniview an HTTP PUT request can be sent to the following URL:
 
-'https://api.copernica.com/v1/miniview/$id?access_token=xxxx'
+`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
 The $id is the ID of the miniview you want to edit.
 

@@ -1,6 +1,6 @@
 # REST API: fetch selection meta data
 
-A method to request all metadata from a selection of a selection. This method does not 
+A method to request all metadata from a selection in a collection (miniview). This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`

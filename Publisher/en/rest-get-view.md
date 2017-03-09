@@ -3,7 +3,7 @@
 A method to request all metadata from a database. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
-`GET https://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
 In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
 
