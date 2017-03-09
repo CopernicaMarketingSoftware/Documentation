@@ -13,15 +13,15 @@ andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
-* **name**: Naam van het nieuw aan te maken veld. (verplicht)
+* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
 * **type**: Type van het nieuwe veld
 * **value**: Standaardwaarde van het nieuwe veld
-* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
-* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
-* **length**: Maximum lengte voor teksten
 * **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken
-* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface
+* **length**: Maximum lengte voor teksten
 * **index**: Boolean waarde of een index op het veld moet worden aangemaakt
+* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
+* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface
+* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
 
 Een veld kan de volgende types hebben:
 

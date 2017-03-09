@@ -4,7 +4,12 @@ The HTTP POST method to add a profile to an existing database is available at th
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add an profile to. Profile information needs to be added to the message body of the HTTP request.
+In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add an profile to. 
+Profile information needs to be added to the message body of the HTTP request. 
+
+Please note that while POST and PUT 
+are generally the same it is import to distinguish them in this case. This method posts a new profile, while PUT 
+is the method to edit several profiles (see: [editing multiple profiles](rest-put-database-profiles)).
 
 ## Available parameters
 
@@ -41,3 +46,5 @@ This example uses the [CopernicaRestAPi class](rest-php).
 - [Request all profiles in a database](rest-get-database-profiles)
 - [Updating a profile](rest-put-profile-interests)
 - [Deleting a profile](rest-delete-profile)
+- [Add fields to profile](rest-put-profile-fields)
+- [Add interests to profile](rest-post-profile-interests)
