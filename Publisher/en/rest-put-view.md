@@ -2,7 +2,7 @@
 
 A method to edit a selection from a database. It is called using the following URL:
 
-`PUThttps://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
 In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to create the selections for.
 
