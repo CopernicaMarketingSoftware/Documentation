@@ -1,16 +1,20 @@
-# REST API: request field from profile
+# REST API: request interests from profile
 
-To request the fields from a profile you can send an HTTP GET
+To request the interests from a profile you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
 The $id should be replaced with the numerical identifier of the profile 
-you're requesting the fields of.
+you're requesting the interests of.
 
-## Returned fields
+## Returned interests
 
-This method returns the fields of a profile.
+This method returns an array of JSON interests of a profile. Each JSON interest object has the following properties:
+
+- **ID**: numerical ID of the interest
+- **name**: the name of the interest
+- **group**: the group the interest belongs to
 
 ## PHP Example
 
@@ -23,7 +27,7 @@ The following PHP script demonstrates how to use the API method.
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call, and print result
-    print_r($api->get("profile/1234/fields"));
+    print_r($api->get("profile/1234/interests"));
 
 For the example above you need the [CopernicaRestApi class](rest-php).
 
