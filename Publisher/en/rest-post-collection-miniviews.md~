@@ -4,18 +4,16 @@ In order to create a new selection using the REST API, you need to send an HTTP 
 
 'https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx'
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. The name of the selection is not in the URL, as it needs to be added to the message body of the HTTP request.
+In this, $id should be replaced by the numerical identifier, the ID, of the collection you want to add a selection to. The name of the selection is not in the URL, as it needs to be added to the message body of the HTTP request.
 
 ## Available parameters
+
 The following variables can be added to the body of the HTTP POST call:
 
 - **name**: The name of the selection that is to be created. (mandatory)
 - **description**: an optional description of the new selection.
-- **parent-type**: used to display whether a selection is placed directly under a database, or nested under another selection
-- **parent-id**: ID of the parent selection/database
-- **has-children**: boolean value: whether or not the database has selections nested underneath it
-- **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
-- **has-rules**: boolean value: whether or not the selection has selection rules
+- **parent-type**: used to display whether a selection is placed directly under a collection, or nested under another selection
+- **parent-id**: ID of the parent selection/collection
 
 ## PHP example
 The following example demonstrates how to use the API method:
@@ -28,18 +26,17 @@ The following example demonstrates how to use the API method:
 
 	// data to pass to the call
 	$data = array(
-	    'name'      =>  'my-selection',
-        'description'	=> 'example selection',
-        'has-rules'	=> False
+	  'name'      =>  'my-selection',
+          'description'	=> 'example selection',
 	);
 
 	// do the call
-	$api->post("database/1234/views", $data);
+	$api->post("collection/1234/miniviews", $data);
 
 	This example uses the [CopernicaRestAPi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Requesting selections of a database](rest-get-database-views)
-- [Requesting selection rules](rest-get-view-rules)
-- [Creating selection rules](rest-post-view-rules)
+- [Requesting selections of a collection](rest-get-collection-miniviews)
+- [Requesting selection rules](rest-get-miniview-rules)
+- [Creating selection rules](rest-post-miniview-rules)
