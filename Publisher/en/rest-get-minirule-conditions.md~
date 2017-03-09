@@ -1,8 +1,8 @@
-# REST API: fetch rule conditions
-A method to request all conditions from a rule. This method does not 
+# REST API: fetch minirule conditions
+A method to request all conditions from a minirule. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
 In this, $id needs to be replaced by the numerical identifier or the name of the rule you wish to request the conditions for.
 
@@ -48,12 +48,12 @@ The following example demonstrates how to use this method:
 	$api = new CopernicaRestApi("your-access-token");
 
 	// do the call, and print result
-	print_r($api->get("rule/1234/conditions"));
+	print_r($api->get("minirule/1234/conditions"));
 
 This example uses the [CopernicaRestAPi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch rules](./rest-get-rules)
-* [Get rule by ID](./rest-get-rule)
+* [Fetch rules](./rest-get-minirules)
+* [Get rule by ID](./rest-get-minirule)
