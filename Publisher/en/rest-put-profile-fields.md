@@ -19,9 +19,6 @@ The following example illustrates how to use the API method:
 	// change this into your access token
 	$api = new CopernicaRestApi("your-access-token");
 
-	// this method takes no parameters
-	$parameters = array()
-
 	// data to pass to the call
 	$data = array(
 	    'firstname' =>  'John',
@@ -30,7 +27,7 @@ The following example illustrates how to use the API method:
 	);
 
 	// do the call
-	$api->put("profile/1234/fields", $parameters, $data);
+	$api->put("profile/1234/fields", $data);
 
 For this example, you need [the CopernicaRestApi class](rest-php).
 
