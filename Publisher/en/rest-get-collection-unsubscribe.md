@@ -4,7 +4,7 @@ Every collection has the option to set unsubscribe behaviour. When Copernica’s
 
 You can request your settings using the following URL:
 
-`GET https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
 
 $id can be the numerical identifier or the name of the database.
 

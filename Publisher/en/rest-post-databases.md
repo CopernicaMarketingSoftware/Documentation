@@ -2,7 +2,7 @@
 
 This method is used to create a new database with the REST API. It uses an HTTP POST request to the following address:
 
-'https://api.copernica.com/v1/databases?access_token=XXX'
+`https://api.copernica.com/v1/databases?access_token=xxxx`
 
 ## Available parameters
 
