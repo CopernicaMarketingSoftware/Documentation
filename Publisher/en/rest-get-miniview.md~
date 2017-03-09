@@ -1,11 +1,11 @@
 # REST API: fetch selection meta data
 
-A method to request all metadata from a database. This method does not 
+A method to request all metadata from a selection of a selection. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
-`GET https://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
+In this, $id needs to be replaced by the numerical identifier or the name of the collection you wish to request the miniselections for.
 
 ## Available parameters
 
@@ -16,11 +16,8 @@ There are no available parameters for this method.
 - **ID**: unique numerical identifier
 - **name**: name of the selection
 - **description**: description of the selection
-- **parent-type**: type of the parent: view or database
+- **parent-type**: type of the parent: view or collection
 - **parent-id**: id of the database or view
-- **has-children**: boolean value: whether or not the database has selections nested underneath it
-- **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
-- **has-rules**: boolean value: whether or not the selection has selection rules
 
 ## PHP example
 
@@ -40,4 +37,4 @@ This example uses the [CopernicaRestAPi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch selection rules](./rest-get-view-rules)
+* [Fetch selection rules for a collection](./rest-get-miniview-rules)

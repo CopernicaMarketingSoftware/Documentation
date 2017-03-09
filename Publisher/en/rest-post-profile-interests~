@@ -1,0 +1,7 @@
+# REST API: Create new profile interests
+
+A method to create new interests in a profile. It is called using the following URL:
+
+'https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx'
+
+The $id should be replaced by the ID of the profile you want to edit the interests of.
