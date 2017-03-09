@@ -75,5 +75,4 @@ You need the [CopernicaRestApi class](./rest-php.md) to run the example.
 * [Add a new selection rule](./rest-post-view-rules.md)
 * [Edit a selection rule](./rest-put-rule.md)
 * [Remove a selection rule](./rest-delete-rule.md)
-* [Edit a condition](./rest-put-condition.md)
-* [Remove a condition](./rest-delete-condition.md)
+* [Edit a condition](./rest-put-rule-conditions.md)
