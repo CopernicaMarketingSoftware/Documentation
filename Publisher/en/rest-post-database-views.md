@@ -1,6 +1,7 @@
 # REST API: Creating a new selection
 
-In order to create a new selection using the REST API, you need to send an HTTP POST request to the following URL. The selection will then be created, nested underneath the database.
+In order to create a new selection using the REST API, you need to send an HTTP POST request to the following URL. 
+The selection will then be created, nested underneath the database.
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 

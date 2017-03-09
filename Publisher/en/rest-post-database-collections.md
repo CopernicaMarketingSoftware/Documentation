@@ -1,17 +1,22 @@
 # REST API: adding a collection to a database
 
-The HTTP POST method to add an collection to an existing database is available at the following address:
+A collection is similar to a second layer within the database. To add such 
+a collection to an existing database you can send an HTTP POST request to 
+the following URL:
 
 `https://api.copernica.com/v1/database/$id/collections?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add an collection to. The name of the collection and other values need to be added to the message body of the HTTP request.
+In this, $id should be replaced by the numerical identifier, the ID, 
+of the database you want to add an collection to. The name of the 
+collection and other values need to be added to the message body of the 
+HTTP request.
 
 ## Available parameters
 
 The following variables can be set in the message body:
 
 - **name**: the title of the new collection field (mandatory)
-- **database**: ID of an existing database to get data from
+- **database**: ID of the existing database to put collection in
 - **fields**: fields in the collection
 
 ## PHP example

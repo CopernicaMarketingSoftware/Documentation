@@ -3,7 +3,8 @@ Method to add a new field to an existing database. This is an HTTP POST call to 
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. The name of the field and other variables need to be added to the message body of the HTTP request.
+In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. 
+The name of the field and other variables need to be added to the message body of the HTTP request.
 
 ## Available parameters
 
