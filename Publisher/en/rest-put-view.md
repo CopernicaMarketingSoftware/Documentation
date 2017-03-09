@@ -1,18 +1,18 @@
-# REST API: create selection meta data
+# REST API: edit properties of a selection
 
-A method to create a selection from a database. This method does not 
-support parameters. It is called using the following address:
+A method to create edit a selection from a database. It is called using the following URL:
 
 `PUT https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
 In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to create the selections for.
 
 ## Available parameters
+The following parameters can be placed in the message body of the HTTP PUT command:
 
 - **name**: name of the selection
 - **description**: description of the selection
-- **parent-type**: type of the parent: view or database
-- **parent-id**: id of the database or view
+- **parent-type**: type of the parent: selection or database
+- **parent-id**: id of the database or selection
 - **has-children**: boolean value: whether or not the database has selections nested underneath it
 - **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
 - **has-rules**: boolean value: whether or not the selection has selection rules

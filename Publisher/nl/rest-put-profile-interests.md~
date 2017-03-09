@@ -29,7 +29,8 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call worden de interessen van een profiel met ID 4567 aangepast.
 Voor profiel 1234 worden de interesses "tennis" en "hockey" geactiveerd, en
 alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld) 
-uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'football' geactiveerd en alle andere interesses uitgeschakeld (eerste methode).
+uitgeschakeld. Daarna wordt voor profiel 1235 de interesse 'football' geactiveerd,
+en alle andere interesses uitgeschakeld.
 
     // dependencies
     require_once('copernica_rest_api.php');

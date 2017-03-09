@@ -71,7 +71,6 @@ we modify the profile with ID 4567.
     $api->put("database/1234/profiles", $parameters, $data);
 
 You need the [CopernicaRestApi klasse](rest-php) to run the above example
-    
 
 ## More information
 

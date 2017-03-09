@@ -10,6 +10,8 @@ The new interests of the profile can be placed in the body of the message.
 ## Body data
 
 There are two ways to define the body data, which will influence how the method works.
+This method is able to add interest and disable existing ones. If you want to overwrite 
+all current interests please see the documentation on [overwriting profile interests](rest-put-profile-interests).
 
 The first way to add interests is to send an array of interests. They will be added to
 the profile and the existing interests will remain the same.

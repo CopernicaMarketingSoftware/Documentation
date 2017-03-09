@@ -30,6 +30,8 @@ The following example demonstrates how to use the API method:
 	// data to pass to the call
 	$data = array(
 	    'name'      =>  'my-selection',
+        'description'	=> 'example selection',
+        'has-rules'	=> False
 	);
 
 	// do the call
