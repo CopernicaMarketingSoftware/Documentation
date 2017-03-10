@@ -30,6 +30,7 @@
     * [Speciale functies](./personalization-functions.md)
     * [Tips en trucs](./personalization-tricks.md)
 * [Scripting en opvolgacties](./followups.md)
+    * [Followupmanager](./followup-manager.md)
     * [Followups met Publisher](./followups-publisher.md)
     * [Het data-script attribuut](./followups-scripting.md)
 * [Oude documentatie](./old-documentation.md)
