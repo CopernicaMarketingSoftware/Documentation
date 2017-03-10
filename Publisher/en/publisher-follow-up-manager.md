@@ -1,3 +1,5 @@
+# Follow up manager
+
 The follow-up manager provides a handy overview of all follow-ups that
 are linked to a database, document, form or survey. Also, from here you
 manage all follow-ups. You can create new follow-ups and edit or remove
