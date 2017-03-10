@@ -8,7 +8,7 @@ te maken:
 
 * Via de [followupmanager van de Marketing Suite](./followup-manager.md).
 * Door middel van [data-script attribuut](./followups-scripting.md) als je zelf kunt programmeren.
-* Met het [oude opvolgsysteem van Copernica Publisher](./followups-publisher.md)
+* Met het [oude opvolgsysteem van Copernica Publisher](./publisher-follow-up-manager.md)
 
 
 ## De followupmanager van de Marketing Suite
@@ -33,7 +33,7 @@ kliks wordt omgegaan.
 ## Opvolgacties met de oude Publisher
 
 In de oude Publisher omgeving kun je ook opvolgacties invoeren. Dit 
-[oude systeem](./followups-publisher.md) heeft geen scripting API en is dus niet 
+[oude systeem](./publisher-follow-up-manager.md) heeft geen scripting API en is dus niet 
 zo krachtig als het nieuwe systeem. Maar omdat het al heel wat jaren meegaat, en 
 er door de jaren heen veel verbeteringen aan zijn aangebracht, is het toch een 
 heel krachtige toolkit.
