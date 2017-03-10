@@ -8,7 +8,7 @@ follow-ups:
 
 * Using the [follow up manager in the Marketing suite](./follow-up-manager.md).
 * With the [data-script attribute](./followups-scripting.md) if you are a programmer yourself.
-* Or with the [old follow up system of Copernica Publisher](./followups-publisher.md)
+* Or with the [old follow up system of Copernica Publisher](./publisher-follow-up-manager.md)
 
 
 ## The follow up manager inside the drag-and-drop editor
@@ -32,7 +32,7 @@ own scripts.
 ## Old Publisher follow-ups
 
 If you're still using Publisher for your mailings, you can also use Publisher's
-old [follow up tool](./followups-publisher.md). The Publisher does not have
+old [follow up tool](./publisher-follow-up-manager.md). The Publisher does not have
 a scripting API and is not as powerful as the new systems, but because it has
 been around for so many years, it has still evolved into a very powerful tool.
 
