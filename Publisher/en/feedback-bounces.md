@@ -16,7 +16,7 @@ from servers that do not respect the official format for bounce messages.
 All these type of messages are sent back to the Marketing Suite,
 and if you set up a feedback loop, are also delivered to you.
 
-## Format
+## Variables
 
 The bounce feedback loop is sent over HTTP POST, and the following
 variables are submitted:
@@ -48,7 +48,6 @@ variables are submitted:
     </tr>
 </table>
 
-The "id" and "recipient" variables allow you to link the incoming bounce
-to the original outgoing message that was sent. The "mailfrom", "rcptto"
-and "data" fields hold the message that was received by the Marketing Suite.
+The "id", "recipient" and "tags" variables allow you to link the incoming bounce to the original outgoing message that was sent.
+The "mailfrom", "rcptto" and "data" fields hold the message that was received by the Marketing Suite.
 
