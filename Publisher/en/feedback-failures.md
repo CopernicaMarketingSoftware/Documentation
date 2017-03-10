@@ -49,7 +49,7 @@ calls:
     </tr>
     <tr>
         <td>state</td>
-        <td>state in the smtp protocol where the failure occured ("bounce" for async bounces)</td>
+        <td>state in the smtp protocol where the failure occured ("bounce" for asynchronous bounces)</td>
     </tr>
     <tr>
         <td>code</td>

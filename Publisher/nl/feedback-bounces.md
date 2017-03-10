@@ -16,6 +16,8 @@ en als je een feedback loop instelt ook naar jou.
 
 ## Variabelen
 
+Met elk POST bericht worden de volgende variabelen meegestuurd:
+
 <table>
     <tr>
         <td>id</td>
