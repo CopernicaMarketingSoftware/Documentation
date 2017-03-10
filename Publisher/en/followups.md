@@ -6,7 +6,7 @@ This allows you to make fancy campaigns that trigger new mailings when
 things happen. There are even multiple ways how you can configure these
 follow-ups:
 
-* Using the [follow up manager in the drag-and-drop editor](./followups-editor.md).
+* Using the [follow up manager in the Marketing suite](./followup-manager.md).
 * With the [data-script attribute](./followups-scripting.md) if you are a programmer yourself.
 * Or with the [old follow up system of Copernica Publisher](./followups-publisher.md)
 
