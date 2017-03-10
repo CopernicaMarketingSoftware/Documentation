@@ -40,7 +40,7 @@ variables are submitted:
     </tr>
     <tr>
         <td>mime</td>
-        <td>The MIME data that was sent during, this is the actual received bounce message</td>
+        <td>the MIME data that was sent (this is the actual received bounce message)</td>
     </tr>
     <tr>
         <td>tags</td>
