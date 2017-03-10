@@ -32,7 +32,7 @@ you can set up a [feedback loop for bounces](feedback-bounces) besides
 the failure feedback loop.
 
 
-## Format
+## Variables
 
 The Marketing Suite uses HTTP POST calls to send the data to you. This can be done
 over HTTP or over HTTPS. The following variables are used in the POST
@@ -69,3 +69,5 @@ calls:
     </tr>
 </table>
 
+The "id", "recipient" and "tags" variables allow you to link the failure to
+the originally sent email message.

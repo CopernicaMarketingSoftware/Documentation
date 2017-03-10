@@ -49,5 +49,5 @@ With each POST call the following variables are passed to your script:
     </tr>
 </table>
 
-The "id" and "recipient" variables allow you to link the open to the 
+The "id", "recipient" and "tags" variables allow you to link the open to the 
 originally sent email message.
