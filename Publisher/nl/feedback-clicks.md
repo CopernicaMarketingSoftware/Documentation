@@ -8,7 +8,7 @@ worden naar de oorspronkelijke URL.
 Dit gebeurt automatisch en razendsnel, en dus meestal zonder dat de ontvanger het doorheeft.
 Deze technologie maakt het mogelijk dat de Marketing Suite elke klik op een van je mails registreert.
 
-Als je een feedback loop voor kliks instelt, wordt je in real-time op de hoogte gebracht van deze kliks.
+Als je een feedback loop voor kliks instelt, word je in real-time op de hoogte gebracht van deze kliks.
 Voor elke klik sturen we via HTTP of HTTPS een POST bericht naar jouw server
 met daarin de relevante informatie over de klik.
 
