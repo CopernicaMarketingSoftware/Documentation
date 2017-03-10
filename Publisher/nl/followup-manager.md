@@ -1,21 +1,15 @@
 # Followupmanager
-De followupmanager is een makkelijke tool om complete campagnes te maken. 
-Doordat deze tool geïntegreerd is met de template editor kunnen er direct 
-binnen de editor geavanceerde en persoonlijke opvolgacties worden ontworpen. 
-De followupmanager kan je gebruiken als iemand op een element klikt, 
-bijvoorbeeld op een link, afbeelding, video of andere call-to-action.
+De followupmanager is een gebruiksvriendelijke tool om geavanceerde campagnes te maken. Doordat deze tool geïntegreerd is met de template editor kunnen er binnen de editor geavanceerde en persoonlijke opvolgacties worden ontworpen. De followupmanager kan je gebruiken als iemand op een element klikt, bijvoorbeeld op een link, afbeelding, video of andere call-to-action.
 
 Je navigeert naar de followupmanager door in de template editor een 
-CTA te selecteren waarvoor je een opvolgactie wilt gaan maken. 
-Een followup actie kan je op twee manieren maken, met de flowchart 
-editor en met de script editor.
+CTA te selecteren waarvoor je een opvolgactie wilt gaan maken. Een followup actie kan je op twee manieren maken, met de flowchart editor en met de script editor.
 
 ## Flowchart editor
 Binnen de flowchart editor kan je door verschillende boxen met elkaar 
 te combineren geavanceerde followup- en marketingcampagnes maken. 
-Met sommige boxen kan je met javascript extra functionaliteiten toevoegen. 
+Met sommige boxen kun je met JavaScript extra functionaliteiten toevoegen. 
 De beschikbare objecten kun je [hier vinden](./followups-scripting.md). 
-Verder is de flowchart editor ontworpen om campagnes te 
+Verder is onze flowchart editor ontworpen om campagnes te 
 maken met een duidelijk begin en eindpunt.
 
 ## Scripteditor
