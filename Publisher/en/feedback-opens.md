@@ -32,16 +32,20 @@ With each POST call the following variables are passed to your script:
         <td>ip address of the opened</td>
     </tr>
     <tr>
-        <td>useragent</td>
-        <td>optional user agent string (extracted from http request header)</td>
-    </tr>
-    <tr>
         <td>time</td>
         <td>time when the url was opened</td>
     </tr>
     <tr>
+        <td>useragent</td>
+        <td>optional user agent string (extracted from http request header)</td>
+    </tr>
+    <tr>
         <td>referer</td>
         <td>optional referer (extracted from http request header)</td>
+    </tr>
+    <tr>
+        <td>tags</td>
+        <td>the tags that you associated with the mail</td>
     </tr>
 </table>
 

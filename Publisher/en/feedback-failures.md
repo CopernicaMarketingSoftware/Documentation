@@ -63,5 +63,9 @@ calls:
         <td>description</td>
         <td>optional description of the error</td>
     </tr>
+    <tr>
+        <td>tags</td>
+        <td>the tags that you associated with the mail</td>
+    </tr>
 </table>
 
