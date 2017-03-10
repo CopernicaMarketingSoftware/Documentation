@@ -6,18 +6,18 @@ of inroosteren. Je kunt dus allerlei campagnes maken en automatische
 opvolgacties instellen. Er zijn meerdere manieren om dit soort opvolgacties
 te maken:
 
-* Via de [opvolgactiemanager van de drag-and-drop editor](./followups-editor.md).
+* Via de [followupmanager van de Marketing Suite](./followup-manager.md).
 * Door middel van [data-script attribuut](./followups-scripting.md) als je zelf kunt programmeren.
 * Met het [oude opvolgsysteem van Copernica Publisher](./followups-publisher.md)
 
 
-## De opvolgmanager van de drag-and-drop editor
+## De followupmanager van de Marketing Suite
 
 Op dit moment is een drag-and-drop followup editor in ontwikkeling. Je kunt 
 hiermee op een makkelijke manier met je muis aan elke link en aan elke button
 makkelijk een opvolgactie hangen. Wil je dat een profiel wordt bijgewerkt als
 iemand ergens op klikt, of wil je een nieuwe mail versturen? Je kunt dit 
-makkelijk instellen met de [follow up editor](./followups-editor.md).
+makkelijk instellen met de [followupmanager](./followup-manager.md).
 
 
 ## Het data-script attribuut
