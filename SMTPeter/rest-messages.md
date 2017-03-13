@@ -8,7 +8,7 @@ allow yout to retrieve the text and html version of the mail.
 The following list shows the methods that can be used to retrieve properties 
 of sent emails. All these methods require a unique message ID parameter. This
 is the same identifier that was returned when you injected email with the
-["send" method of the REST API](rest-sent), or when you sent via the
+["send" method of the REST API](rest-send), or when you sent via the
 [SMTP API](smtp-api).
 
 ```text
