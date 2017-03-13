@@ -1,6 +1,8 @@
+# Error Record Information
+
 Every message that triggered an error and was sent via Marketing Suite is 
 logged in the cdm-error log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](./logfiles-content),
+files in CSV, JSON, and XML format using the [REST logfiles API](./rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
 
