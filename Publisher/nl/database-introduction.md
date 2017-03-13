@@ -1,5 +1,4 @@
-Databasebeheer
-==============
+# Databasebeheer
 
 Copernica werkt op basis van volledig configureerbare databases. Je kunt 
 zelf de structuur van databases bepalen, zodat jouw gegevens altijd in Copernica
@@ -17,19 +16,10 @@ geïmporteerd, adviseren wij om steeds dezelfde database te gebruiken. Je
 database wordt dan steeds rijker door de feedback van eerdere campagnes. Door 
 middel van selecties kan de database worden gesegmenteerd en gebruikt voor 
 doelgerichte campagnes, zonder dat je adressen opnieuw hoeft te importeren.
+Het databasebeheer is toegankelijk via de Marketing Suite. 
 
 
-Marketing Suite of Copernica Publisher?
----------------------------------------
-
-Het databasebeheer is zowel toegankelijk via de oude als de nieuwe interface.
-Maar nog niet alle functies van de oude interface zijn ook beschikbaar in de
-nieuwe omgeving. Daarom adviseren we om voorlopig nog even gebruik te maken
-van de oude omgeving.
-
-
-Meerdere dimensies
-------------------
+## Meerdere dimensies
 
 Binnen het Copernica databasebeheer kom je regelmatig de begrippen *collectie*
 en *subprofiel* tegen. Deze termen worden gebruikt bij multidimensionale 
@@ -39,7 +29,7 @@ een database kunnen aanmaken met velden voor de voor- en achternaam, woonplaats
 en het emailadres van zijn klanten. Records die in deze database worden
 geplaatst worden door Copernica *profielen* genoemd.
 
-Zo'n eenvoudige database kan echter worden voorzien van een tweede laag door
+Echter, zo'n eenvoudige database kan worden voorzien van een tweede laag door
 er een *collectie* aan toe te voegen. De winkelier kan bijvoorbeeld een 
 collectie "bestellingen" toevoegen, en in deze collectie de velden "datum", 
 "product" en "prijs" opnemen. Aan elk profiel in de database (elke klant dus)
@@ -56,8 +46,7 @@ een collectie voor de kinderen.
 [Lees meer over het maken van velden en collecties](database-fields-and-collections)
 
 
-Overige opties
---------------
+## Overige opties
 
 Als je databases inricht, zijn er verschillende zaken die je kunt instellen.
 Voordat je kunt mailen moet je bijvoorbeeld aangeven dat een database geschikt
@@ -66,4 +55,3 @@ dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
 door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
 [Lees meer over restricties en gebruikesmogelijkheden](database-restrictions-and-capabilities)
-
