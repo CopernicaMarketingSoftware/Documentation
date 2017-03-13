@@ -1,4 +1,4 @@
-# Feedback loops voor het aanmaken van een profiel
+# Feedback loops voor het aanmaken van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer er een nieuw
 profiel of subprofiel in een van je database aangemaakt wordt,
@@ -37,5 +37,8 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
     </tr>
 </table>
 
+De variabele "action" heeft altijd de waarde 'create'; dit helpt je om deze
+berichten te onderscheiden van de berichten die verstuurd worden als een
+profiel [aangepast](feedback-updates) of [verwijderd](feedback-deletes) wordt.
 De variabele "profile" danwel "subprofile" stelt je in staat het zojuist
 aangemaakte profiel (resp. subprofiel) direct op te zoeken.

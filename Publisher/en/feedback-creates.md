@@ -17,7 +17,7 @@ With each POST call the following variables are sent over:
     </tr>
     <tr>
         <td>action</td>
-        <td>which action was performed on the profile (create, update or delete)</td>
+        <td>which action was performed on the profile ('create', 'update' or 'delete')</td>
     </tr>
     <tr>
         <td>parameter_X</td>
@@ -37,4 +37,7 @@ With each POST call the following variables are sent over:
     </tr>
 </table>
 
+The "action" variable will always have the value 'create'; this helps discern
+these messages from messages that are sent when a profile is
+[updated](feedback-updates) or [deleted](feedback-deletes).
 The "profile" or "subprofile" variable allows you to look up the profile that was just created.
