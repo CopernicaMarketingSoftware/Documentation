@@ -11,7 +11,7 @@ Selections allow you to segment your database and use it for targeted campaigns 
 
 
 ## Marketing Suite
-You can manage your databases easily by navigating to the *PROFILES* tab within the Marketing Suite. Create databases, add filters, edit selections and much more. The options are endless.
+You can manage your databases easily by navigating to the 'profiles' tab within the Marketing Suite. Create databases, add filters, edit selections and much more. The options are endless.
 
 ## Multidimensional
 In Copernica, you'll come across the the words “collection” and “subprofile” quite often. These apply to multidimensional 
@@ -34,7 +34,7 @@ Read more on fields and collections
 ## Database intentions
 There are various things to set up when designing databases. One is database intentions,
 in which you can specify whether a database is suitable for sending mailings. You can also set a variety of rules to which
-data must comply in order to be added to the databases. You'll find these settings under the *PROFILES* tab in
+data must comply in order to be added to the databases. You'll find these settings under the 'profiles' tab in
 the Marketing Suite.
  
 ## Creating profiles
