@@ -4,15 +4,8 @@ Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
 dat ongeldige gegevens in je database belanden, en om te voorkomen dat je
 een mailing verstuurt naar een verkeerd adressenbestand. Je kunt met
 behulp van *databaserestricties* regels maken om inputdata te filteren en
-te voorkomen dat er ongeldige data in de database belandt. Met 
-*gebruiksmogelijkheden* kun je voorkomen dat een database of selectie ten
-onrechte wordt gebruikt voor mailings.
-
-Beide systemen zijn te vinden in het profielenbeheer van Copernica Publisher.
-De gebruiksmogelijkheden kun je vinden in het profielenbeheer
-in het menu "databasebeheer". Het beheren van restricties zit iets verder
-weggestopt, dat kun je vinden in het profielenbeheer onder "Databasebeheer >
-Databasevelden wijzigen > Databaserestricties".
+te voorkomen dat er ongeldige data in de database belandt.
+Het overzicht van deze systemen zijn te vinden in de Marketing Suite.
 
 
 ## Gebruiksmogelijkheden instellen
@@ -23,11 +16,10 @@ veiligheidssysteem waarmee we voorkomen dat iemand per ongeluk een mailing
 stuurt naar zijn hele database, terwijl het de bedoeling was om alleen de 
 nieuwsbriefabonnees te mailen.
 
-In het dialoogvenster voor het instellen van de gebruiksmogelijkheden kan
-je voor elke database en selectie, en ook voor elke collectie en miniselectie,
-aangeven of die mag worden gebruikt voor mailings. Zo weet je zeker dat je 
-nooit per ongeluk een mail stuurt naar de selectie "afmeldingen", of dat je
-alleen kunt mailen naar de selectie "nieuwsbrief" en niet naar de hele database.
+In het dialoogvenster kan je voor elke database en selectie, en ook voor 
+elke collectie en miniselectie, aangeven of die mag worden gebruikt voor mailings. 
+Zo weet je zeker dat je nooit per ongeluk een mail stuurt naar de selectie "afmeldingen", 
+of dat je alleen kunt mailen naar de selectie "nieuwsbrief" en niet naar de hele database.
 
 
 ## Databaserestricties
