@@ -76,10 +76,10 @@ in a single "call", the SMTP protocol was not designed to do so. Our REST API ac
 on its endpoint. 
 
 If you want to use SMTPeter with Postfix, please follow our 
-[Using SMTPeter with Postfix guide](quick-start/postfix "Using SMTPeter with Postfix").
+[Using SMTPeter with Postfix guide](postfix "Using SMTPeter with Postfix").
 
 If you are already sending through SMTP or want to send through SMTP you should 
-read our [SMTP API quick start guide](quick-start/smtp-api)
+read our [SMTP API quick start guide](smtp-api)
 
 If you want to use our REST API go to our 
-[REST API quick start guide](quick-start/rest-api)
+[REST API quick start guide](rest-api)
