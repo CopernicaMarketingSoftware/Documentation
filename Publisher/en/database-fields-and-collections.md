@@ -12,15 +12,10 @@ An interest field is a regular field, only it can only contain binary data (on/o
 When adding an interest, you also have to specify the category it belongs to. This category name is not that relevant for campaigns, but Copernica uses it to make forms for editing profiles somewhat neater. Interests that belong to the same category are grouped together in such forms.
 
 ## Fields
-Within Copernica, there are numerous options for saving data. Both databases and collections consist of fields. When adding a field to a database, you must therefore choose whether you want to add it to the database itself or to a collection in a deeper layer.
-
-![Typen velden](../images/edit_database_fields.png)
-You have to specify the type of field before adding it. So text goes into a text field, numbers into a numeric one, and so forth.
+Within Copernica, there are numerous options for saving data. Both databases and collections consist of fields. When adding a field to a database, you must therefore choose whether you want to add it to the database itself or to a collection in a deeper layer. You have to specify the type of field before adding it. So text goes into a text field, numbers into a numeric one, and so forth.
 
 ## Numeric fields
-Numeric fields can only hold values of numbers [0-9]. Use it to store things like age or weight. They must contain something, so it’s a good idea to set the default value to 0 to prevent errors. 
-
-Note that numeric fields cannot hold decimals. If you want to do so anyway, use a text field. SOAP API users can use the ‘float’ field type.
+Numeric fields can only hold values of numbers [0-9]. Use it to store things like age or weight. They must contain something, so it’s a good idea to set the default value to 0 to prevent errors. Note that numeric fields cannot hold decimals. If you want to do so anyway, use a text field. SOAP API users can use the ‘float’ field type.
 
 ## Text field
 Text fields are for textual values and can hold letters [A-Z], numbers [0-9] and underscores. They can be up to 5 lines (multiline). The default length of a text field is 50 characters, but it can be expanded to 255 characters if needed. If you want to store more text than that, use a large field (explained below).
@@ -71,31 +66,3 @@ This option allows you to sort your list based on a field. It can only be activa
 
 ### Indexed fields
 Use this option for fields you often use to search for profiles and fields you’ve used to create selections with. Indexing a field increases the speed of search queries within your database, as well as building selections and miniselections. Don’t index too many fields, as it defeats the purpose. A maximum of 64 of all types of fields can be indexed, with the exeption of large fields, which cannot be indexed at all.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
