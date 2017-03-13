@@ -1,4 +1,4 @@
-# Feedback loops for clicks
+# Feedback loops for profile creations
 
 If you set up a profile creation feedback loop, the Marketing Suite notifies
 you in realtime whenever a profile or subprofile is created within your account's databases.
