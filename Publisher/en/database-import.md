@@ -6,12 +6,11 @@ our API to synchronize profiles automatically. It is also possible to import
 profiles from a CSV or tab delimited file (the type of files that you can 
 edit with spreadsheet software). 
 
-Imports from CSV files are very flexiable and can even be used for layered
+Imports from CSV files are very flexible and can even be used for layered
 databases that contain collections and subprofiles. It also is possible to
 schedule automatically repeating imports that download a file from your
-server. The import module can be found in Publisher in the profile section,
-in the "Current view" menu.
-
+server. The import module can be found in the Marketing Suite within 
+the 'profiles' section.
 
 ## The import file
 
@@ -26,7 +25,7 @@ should hold the names of the database fields into which you are going to import.
 
 ## Linking columns
 
-After you've uploaded a fiel, you must link the columns in the file to fields
+After you've uploaded a field, you must link the columns in the file to fields
 in the database. This is normally a very straightforward job: the column
 "firstname" gets linked to the field "firstname" in the database. If the database
 does not (yet) have a "firstname" field, you can link the column to a different
