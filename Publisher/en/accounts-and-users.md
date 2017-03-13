@@ -1,8 +1,7 @@
 # Accounts and users
-Whether you're approaching Copernica software from the old Publisher environment or the new
-MarketingSuite: the user management module is always available. Here, you can edit your own
-information, such as company name or credentials, and also create new logins for colleagues. This
-is also the place to manage access rights to your accounts.
+The user management module is the place where you can edit your own
+information, such as company name or credentials, and also create new logins for colleagues. 
+This is also the place to manage access rights to your accounts.
 Copernica's account and user management may seem a little complicated. This is because
 Copernica works together with a close-knit network of partners. Among these are advertising
 agencies, writers and DM and IT companies that support users in using Copernica. All partners
