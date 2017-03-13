@@ -26,11 +26,11 @@ Inside the block you can use sub properties. The most obvious ones were
 already demonstrated in the example, `content` and `type`, but there are
 many more. The following tables lists all supported properties.
 
-## Text block properties
+## HTML block properties
 
 | Property | Value | Description                                                                                                                  |
 |:---------|-------|------------------------------------------------------------------------------------------------------------------------------|
-| type | "text" | Identifies the block as a text block.                                                                                           |
+| type | "html" | Identifies the block as a HTML block.                                                                                           |
 | [content](../json/property-html-content) | _string_ | The textual content of the block. This may include HTML.                                  |
 | [url](../json/property-url) | _string_ | A url to fetch the html content from.                                                                  |
 | [font](../json/property-font) | _object_ | Override the template wide default font properties.                                                  |
@@ -44,7 +44,7 @@ many more. The following tables lists all supported properties.
 ## Example
 
 The following JSON input shows a more extensive example how to use all 
-the properties of a text block.
+the properties of a HTML block.
 
 ```javascript
 {
