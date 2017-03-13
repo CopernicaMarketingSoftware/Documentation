@@ -15,20 +15,13 @@ snel aan de slag te kunnen raden we aan om je database in eerste instantie
 eenvoudig te houden. Je kunt later altijd extra velden toevoegen.
 
 
-Marketing Suite of Copernica Publisher?
+Marketing Suite
 ---------------------------------------
 
-Op het moment van schrijven kun je alleen via de oude Copernica Publisher
-omgeving databases beheren. Onze ontwikkelaars zijn hard bezig om het
-databasebeheer ook in de nieuwe Marketing Suite in te bouwen, maar dit is nog 
-in ontwikkeling. Voorlopig zul je het dus nog even moeten doen met de wat
-ingewikkelder Publisher omgeving. We verwachten echter binnen enkele weken het
-databasebeheer in Marketing Suite beschikbaar te hebben.
-
-In Publisher kom je bij het databasebeheer via de optie "profiles". Hier
-kun je al je databases en selecties beheren, en profieldata inkijken en
-wijzigen. De eerste keer dat je de profielenmodule opent, is alles natuurlijk
-nog leeg en moet je zelf een nieuwe database aanmaken.
+De Marketing Suite maakt het mogelijk om gemakkelijk databases te beheren. 
+Navigeer naar het *PROFILES* kopje in het menu.
+Binnen die omgeving is het mogelijk om databases te creëeren, filters toe te voegen, 
+selecties te bewerken en nog veel meer. De mogelijkheden zijn eindeloos.
 
 
 Velden, interesses en collecties
@@ -73,9 +66,9 @@ naar mailen.
 Daarom is het standaard onmogelijk om naar nieuw aangemaakte databases (en
 selecties, maar hierover later meer) mailings te versturen. Je moet
 expliciet instellen dat een database geschikt is voor mailings. Dit gaat door
-middel van database *intenties*. In het profielenbeheer van Copernica Publisher
-vind je menu items om de intenties van databases en selecties in te stellen,
-en daar kun je aangeven dat een database gebruikt mag worden voor mailings. 
+middel van database *intenties*. In de Marketing Suite vind je de mogelijkheden 
+om de intenties van databases en selecties in te stellen. Tegelijkertijd kun je daar 
+ook aangeven welke database gebruikt mag worden voor mailings.
 
 
 Profielen aanmaken
@@ -83,8 +76,8 @@ Profielen aanmaken
 
 Nadat je de database hebt aangemaakt en velden aan de database hebt toegevoegd,
 is deze database natuurlijk nog leeg. Je kunt nu data gaan toevoegen aan de
-database. Dit noemen we profielen en kan ook via de profielenmodule van
-Copernica Publisher. Om één en ander te testen kun je het beste eerst een 
+database. Deze datasets noemen we profielen en kunnen worden aangemaak in de 'profielen'
+sectie van de Marketing Suite. Om één en ander te testen kun je het beste eerst een 
 profiel met je eigen gegevens aanmaken.
 
 Als je Copernica gebruikt voor het ontwerpen of schrijven van mailings, dan
