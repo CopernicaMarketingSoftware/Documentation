@@ -12,4 +12,4 @@ Some email providers have feedback loops that give us a heads up when someone lo
 These types of feedback are caught by Copernia and processed according to your unsubscribe options.
 
 ## Where to find
-Unsubscribe behaviour can be set for each database individually. The profile management module has an option called 'set unsubscribe behaviour' under the database menu. Click this, and the rest speaks for itself.
+Unsubscribe behaviour can be set for each database individually. In the 'profiles' section, click on the cog wheel that matches the databse. The rest speaks for itself.
