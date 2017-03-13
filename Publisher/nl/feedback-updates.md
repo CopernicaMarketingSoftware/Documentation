@@ -1,4 +1,4 @@
-# Feedback loops voor het aanpassen van een profiel
+# Feedback loops voor het aanpassen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel in een van je database aangepast wordt,
@@ -37,5 +37,8 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
     </tr>
 </table>
 
+De variabele "action" heeft altijd de waarde 'update'; dit helpt je om deze
+berichten te onderscheiden van de berichten die verstuurd worden als een
+profiel [aangemaakt](feedback-creates) of [verwijderd](feedback-deletes) wordt.
 De variabele "profile" danwel "subprofile" stelt je in staat het profiel (resp.
 subprofiel) dat aangepast was direct op te zoeken.

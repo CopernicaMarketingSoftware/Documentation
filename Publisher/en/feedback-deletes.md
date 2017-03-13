@@ -17,7 +17,7 @@ With each POST call the following variables are sent over:
     </tr>
     <tr>
         <td>action</td>
-        <td>which action was performed on the profile (create, update or delete)</td>
+        <td>which action was performed on the profile ('create', 'update' or 'delete')</td>
     </tr>
     <tr>
         <td>timestamp</td>
@@ -33,5 +33,8 @@ With each POST call the following variables are sent over:
     </tr>
 </table>
 
+The "action" variable will always have the value 'delete'; this helps discern
+these messages from messages that are sent when a profile is
+[created](feedback-creates) or [updated](feedback-updates).
 In case you want to restore the profile, the "field" and "interest" variables
 show you the state of the profile's data as it was just before it was deleted.

@@ -1,4 +1,4 @@
-# Feedback loops voor het verwijderen van een profiel
+# Feedback loops voor het verwijderen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel uit een van je database verwijderd wordt,
@@ -33,5 +33,8 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
     </tr>
 </table>
 
+De variabele "action" heeft altijd de waarde 'delete'; dit helpt je om deze
+berichten te onderscheiden van de berichten die verstuurd worden als een
+profiel [aangemaakt](feedback-creates) of [aangepast](feedback-updates) wordt.
 Als je het profiel terug zou willen brengen, vertellen de "field" en "interest" variabelen
 je hoe het profiel eruitzag net voordat het verwijderd werd.
