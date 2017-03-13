@@ -24,8 +24,4 @@ manier zoals je bij het uitschrijfgedrag hebt ingesteld.
 
 ## Waar kun je dit vinden?
 
-Het uitschrijfgedrag kun je per database instellen. In het profielenbeheer
-van Copernica Publisher is er een optie "uitschrijfopties instellen" onder 
-het menu database. Als je deze optie aanklikt spreekt de rest voor zich.
-
-
+Het uitschrijfgedrag kun je per database instellen door op het tandwieltje te klikken. Vervolgens zie je een kopje met 'geef uitschrijfgedrag aan'. De rest spreekt voor zich.
