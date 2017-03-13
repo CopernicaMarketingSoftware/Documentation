@@ -5,16 +5,20 @@ or the dashboard. These log files contain the following data in the
 respective order:
 
 
-| Data | Description |
-| ---- | ----------- |
-| id | The id of the message that triggered the error |
-| time | The time when the error was reported to us |
-| type | The type of error |
-| status |The status of the error |
-| description | The description of the error |
-| code | The error code |
-| content |
-| email | The email address to which the original message was sent 
-| tags | The tags of the message (semicolon separated |
-| senderdomain | The sender domain name that was used |
-| groupid | The group ID the mail belonged to |
+| Data         | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| id           | The id of the message that triggered the error           |
+| time         | The time when the error was reported to us               |
+| type         | The type of error                                        |
+| status       | The status of the error                                  |
+| description  | The description of the error                             |
+| code         | The error code                                           |
+| content      |                                                          |
+| email        | The email address to which the original message was sent |
+| tags         | The tags of the message (semicolon separated             |
+| senderdomain | The sender domain name that was used                     |
+| groupid      | The group ID the mail belonged to                        |
+| profile      | The ID of the profile                                    |
+| subprofile   | The ID of the sub profile                                |
+| template     | The ID of the used template                              |
+| document     | The ID of the used document                              |
