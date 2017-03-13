@@ -1,9 +1,9 @@
-# REST API: fetch logfiles
+# REST API: fetch logfile dates
 
 Copernica keeps logfiles about several things such as clicks, opens, errors, 
 accepted messages, etc. These logfiles can be downloaded with the API.
 By sending an HTTP GET request to the following URL you will get a list of
-all datums we have kept logfiles of.
+all dates we have kept logfiles of.
 
 `https://api.copernica.com/v1/logfiles?access_token=xxxx`
 
@@ -30,6 +30,7 @@ For the example above you need the [CopernicaRestApi class](./rest-php.md).
 ## More information
 
 * [List of all API calls](./rest-api.md)
-* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
-* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
-* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)
+* [Get logfile names for a date](./rest-get-logfiles-names.md)
+* [Downloading a logfile in JSON format](rest-get-logfiles-json)
+* [Downloading a logfile in CSV format](rest-get-logfiles-csv)
+* [Downloading a logfile in XML format](rest-get-logfiles-xml)
