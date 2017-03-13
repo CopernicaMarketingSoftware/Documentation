@@ -1,4 +1,4 @@
-# Feedback loops for clicks
+# Feedback loops for profile deletions
 
 If you set up a profile deletion feedback loop, the Marketing Suite notifies
 you in realtime whenever a profile or subprofile is deleted from your account's databases.

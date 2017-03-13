@@ -1,4 +1,4 @@
-# Feedback loops for clicks
+# Feedback loops for profile updates
 
 If you set up a profile update feedback loop, the Marketing Suite notifies
 you in realtime whenever a profile or subprofile is updated within your account's databases.
