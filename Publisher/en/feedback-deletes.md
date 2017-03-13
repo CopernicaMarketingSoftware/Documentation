@@ -29,7 +29,7 @@ With each POST call the following variables are sent over:
     </tr>
     <tr>
         <td>interest_N</td>
-        <td>value of the N-th interest of the profile before it was deleted</td>
+        <td>the N-th interest of the profile before it was deleted</td>
     </tr>
 </table>
 
