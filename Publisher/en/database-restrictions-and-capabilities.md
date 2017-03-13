@@ -6,12 +6,8 @@ send out a mailing to a wrong address list. The *database restrictions* feature
 allows you to create rules to filter input data to prevent that invalid are
 inserted into the database. With *database intentions* you can prevent that
 a database or selection is wrongly used to send out a mailing.
+These systems can be found in the profile management section the Marketing Suite.
 
-Both systems van be found in the profile management section of Copernica Publisher.
-The intentions can be found in the database managent menu of the profiles
-section. To edit the restrictions you first have to open the form to edit
-the database fields. In this form you find the link to set the restrictions.
- 
 
 ## Database intentions
 
@@ -22,7 +18,7 @@ of sending it to just the newsletter subscribers. Before you can send a mailing
 to a database or selection you therefore first have to enable the mailing intention
 for the database of selection. You can do that with the intention settings dialog.
 
-The intentions window shows the database and a full list of all available 
+The dialogwindow shows the database and a full list of all available 
 selections. For the database and for every selection you can set its intentions: 
 email, fax or mobile. Only after you've set the intention, the database or
 selection will appear in the list of available targets when you try to schedule
