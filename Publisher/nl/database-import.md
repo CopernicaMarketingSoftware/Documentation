@@ -1,15 +1,15 @@
 # Importeren van profielgegevens
 
-Er zijn in de Copernica Publisher verschillende manieren voor het invoeren of 
-importeren van gegevens. Zo kun je profielen niet alleen met de hand invoeren, 
-maar kun je ze ook aanmaken of bewerken met de API, of importeren vanuit een 
-CSV bestand of tabgescheiden bestand (dit zijn bestanden die je onder meer 
+Er zijn verschillende manieren voor het invoeren of importeren van gegevens. 
+Zo kun je profielen niet alleen met de hand invoeren, maar kun je ze ook 
+aanmaken of bewerken met de API, of importeren vanuit een CSV bestand 
+of tabgescheiden bestand (dit zijn bestanden die je onder meer 
 spreadsheetprogramma's kunt maken).
 
 Het importeren van CSV bestanden is krachtig en kan ook worden gebruikt voor
 gelaagde databases met collecties en subprofielen. Ook kun je periodieke
 imports maken die automatisch worden herhaald. Je vindt de importmodule in
-Copernica Publisher in het profielenbeheer in het menu *Huidige weergave*.
+de Marketing Suite binnen het kopje 'profielen'.
 
 
 ## Importbestand voorbereiden
