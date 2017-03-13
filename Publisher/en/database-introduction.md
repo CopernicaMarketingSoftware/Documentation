@@ -14,14 +14,8 @@ you can improve future campaigns based on the results of previous
 mailings. Although some Copernica users choose to regularly create new databases and
 upload new profile data, we always advise to keep and enrich the same
 database. The profiles in this databases become richer based on the feedback
-of previous campaigns.
-
-## Marketing Suite or Copernica Publisher?
-
-The database management tools are accessible through the old and the new
-interface. However, the old interface has some extra tools that are not yet
-available in the new interface. We therefore, for the time being, recommend
-to use the old interface.
+of previous campaigns. The database management tools are accessible through 
+the Marketing Suite. 
 
 
 ## Multiple dimensions
@@ -34,7 +28,7 @@ with fields for the customer name, his or her postal address and, of
 course, the email address. Records in such a flat database are called 
 *profiles*.
 
-A flat database can however easily be turned into a multidimensional
+However, a flat database can easily be turned into a multidimensional
 database by adding one or more *collections* to it. The show owner could for example add
 a collection *orders* to the database, with fields *date*, *product* and
 *price*. It then becomes possible to store a full order history for every 
@@ -60,4 +54,3 @@ gets into your system, or that you accidentally send out a mailing to a wrong
 segment of your profiles.
 
 [Read more about database restrictions and intentions](database-restrictions-and-capabilities)
-
