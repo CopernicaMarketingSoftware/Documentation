@@ -2,9 +2,9 @@ There are different types of log files (see table below). To see which
 types of log files are available for a certain date you can use the logfiles 
 method.
 
-| Request url | Methods | 
-| --- | --- | --- |
-| https://api.copernica.com/v1/logfiles/$date | GET |
+| Request url                                 | Methods | 
+| ------------------------------------------- | ------- |
+| https://api.copernica.com/v1/logfiles/$date | GET     |
 
 
 Available types of logfiles
@@ -13,24 +13,24 @@ Available types of logfiles
 The types of log files that are available
 are listed in the table below:
 
-| prefix | type of information |
-| ------ | ------------------- |
-| [cdm-attempts](./cdm-attempts-logfile.md) | General info about mails sent with Marketing Suite (MS) |
-| [cdm-abuse](./cdm-abuse-logfile.md) | Info about mails sent via MS that triggered an notification |
-| [cdm-click](./cdm-click-logfile.md) | Info about clicks generated from mails sent with MS |
-| [cdm-delivery](./cdm-delivery-logfile.md) | Info about delivered mails sent with MS |
-| [cdm-error](./cdm-error-logfile.md) | Info about mails sent with MS that triggered an error |
-| [cdm-impression](./cdm-impression-logfile.md) | Info about impressions from mails sent with MS |
-| [cdm-retry](./cdm-retry-logfile.md) | Info about mails sent via MS for which we retry a delivery |
-| [cdm-unsubscribe](./cdm-unsubscribe.md) | Info about mails sent via MS that triggered an unsubscribe|
-| [pom-attempts](./pom-attempts-logfile.md) | General info about mails sent with Publisher |
-| [pom-abuses](./pom-abuses-logfile.md) | Info about mails sent via Publisher that triggered an notification |
-| [pom-clicks](./pom-clicks-logfile.md) | info about clicks generated from mails sent with Publisher |
-| [pom-deliveries](./pom-deliveries-logfile.md) | Info about delivered mails sent with Publisher |
-| [pom-errors](./pom-errors-logfile.md) | Info about failed mails sent with Publisher |
-| [pom-impressions](./pom-impressions-logfile.md) | Info about impressions from mails sent with Publisher |
-| [pom-retries](./pom-retries-logfile.md) | Info about mails sent via Publisher for which we retry a delivery |
-| [pom-unsubscribes](./pom-unsubscribes-logfile.md) | Info about mails sent via Publisher that triggered an unsubscribe |
+| prefix                                            | type of information                                                |
+| ------------------------------------------------- | ------------------------------------------------------------------ |
+| [cdm-attempts](./cdm-attempts-logfile.md)         | General info about mails sent with Marketing Suite (MS)            |
+| [cdm-abuse](./cdm-abuse-logfile.md)               | Info about mails sent via MS that triggered an notification        |
+| [cdm-click](./cdm-click-logfile.md)               | Info about clicks generated from mails sent with MS                |
+| [cdm-delivery](./cdm-delivery-logfile.md)         | Info about delivered mails sent with MS                            |
+| [cdm-error](./cdm-error-logfile.md)               | Info about mails sent with MS that triggered an error              |
+| [cdm-impression](./cdm-impression-logfile.md)     | Info about impressions from mails sent with MS                     |
+| [cdm-retry](./cdm-retry-logfile.md)               | Info about mails sent via MS for which we retry a delivery         |
+| [cdm-unsubscribe](./cdm-unsubscribe.md)           | Info about mails sent via MS that triggered an unsubscribe         |
+| [pom-attempts](./pom-attempts-logfile.md)         | General info about mails sent with Publisher                       |
+| [pom-abuses](./pom-abuses-logfile.md)             | Info about mails sent via Publisher that triggered an notification |
+| [pom-clicks](./pom-clicks-logfile.md)             | info about clicks generated from mails sent with Publisher         |
+| [pom-deliveries](./pom-deliveries-logfile.md)     | Info about delivered mails sent with Publisher                     |
+| [pom-errors](./pom-errors-logfile.md)             | Info about failed mails sent with Publisher                        |
+| [pom-impressions](./pom-impressions-logfile.md)   | Info about impressions from mails sent with Publisher              |
+| [pom-retries](./pom-retries-logfile.md)           | Info about mails sent via Publisher for which we retry a delivery  |
+| [pom-unsubscribes](./pom-unsubscribes-logfile.md) | Info about mails sent via Publisher that triggered an unsubscribe  |
 
 You can click on the type of log file in the table above to see which information
 is stored in that type of log file.
