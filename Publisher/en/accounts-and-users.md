@@ -9,7 +9,7 @@ need access to the software for various reasons, because they use the software f
 campaigns and because they need to be able to look into their clients' accounts. To enable this, we
 differentiate between 'users', 'accounts' and 'companies'.
 
-## Accounts and users
+## Accounts and companies
 Most of the time, a connection exists between an account and a “real world company”. This is why
 most accounts are named after companies. For many Copernica users this suffices. For partner
 companies, this is a bit more complicated.
@@ -30,12 +30,11 @@ well. In the user dashboard you can create these types of relations to your liki
 access rights.
 
 ## How does this work in practice?
-In both the old Publisher and the new MarketingSuite, it's possible to keep users, accounts and
-company information. In both environments you can link users to companies and accounts. If
-you're a regular user, i.e. a single account with a few colleagues, this may look a little superfluous:
+In the new MarketingSuite, it's possible to manage users, accounts and
+company information. If you're a regular user, i.e. a single account with 
+a few colleagues, this may look a little superfluous:
 a list of colleagues and a list of people with access to the account, while these are often the same
 list.
 
 As described, this is because of the triangular structure, which you can use in the case of multiple
 accounts, or if you want to grant access to a non-colleague.
-
