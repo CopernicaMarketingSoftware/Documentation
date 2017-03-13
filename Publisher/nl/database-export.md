@@ -5,8 +5,7 @@ Je kunt een hele database in één keer exporteren, of in onderdelen (bijvoorbee
 per collectie). Bij een export wordt een bestand in een formaat naar keuze 
 gegenereert, dat je kunt downloaden of laten e-mailen.
 
-Je vindt de exporteerfunctie in Publisher in het profielenbeheer in het menu 
-*Huidige weergave*.
+Je vindt de exporteerfunctie in de Marketing Suite onder het kopje 'profiles'.
 
 ## Extra opmerkingen 
 
@@ -36,5 +35,5 @@ van de gekozen instellingen, volgen aantal extra formulieren om opties in te ste
 
 Als je profielen of subprofielen wilt exporteren gebaseerd op e-mailresultaten, 
 maak dan een selectie aan met de conditietype *Check op resultaten e-mailcampagnes*. 
-Gebruik dan de exportfunctie in het menu *Huidige weergave* in het onderdeel 
-*Profielen* om de profielgegevens uit de selectie te downloaden.
+Gebruik dan de exportfunctie in het onderdeel *profielen* om de profielgegevens 
+uit de selectie te downloaden.
