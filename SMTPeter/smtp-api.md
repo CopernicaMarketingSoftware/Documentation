@@ -57,4 +57,4 @@ is disabled. When you connect to the SMTP API, you simply pick a login/password
 combination that has the features you need.
 
 The alternative method to enable or disable features is by adding special
-[MIME-headers](mime "MIME headers") to your email.
+[MIME-headers](mime-headers "MIME headers") to your email.
