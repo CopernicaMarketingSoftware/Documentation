@@ -62,4 +62,4 @@ For the example above you need the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Log file information](rest-logfiles-names)
+* [Log file information](rest-get-logfiles-names)
