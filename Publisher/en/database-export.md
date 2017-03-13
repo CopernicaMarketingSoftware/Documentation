@@ -6,8 +6,8 @@ in one go, or to export only parts of the database, for example one collection
 at a time. An export creates a file that you can download or you can have it
 emailed to your addres.
 
-The export dialog window can be found in the Profiles section of Copernica 
-Publisher. Check the "Current view" menu and look for "import/export" data dialog.
+The export dialog window can be found in the 'profiles' section from the Marketing Suite. 
+Check the "Current view" menu and look for "import/export" data dialog.
 
 
 ## Extra remarks
