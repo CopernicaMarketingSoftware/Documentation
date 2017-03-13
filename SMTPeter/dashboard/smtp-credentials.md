@@ -6,8 +6,7 @@ found in the [SMTP credentials tab](https://www.smtpeter.com/app/#/admin/smtp-cr
 on your SMTPeter dashboard. 
 
 The SMTP credentials are generated automatically and can have 
-certain [features of SMTPeter](../rest-features "SMTPeter features") 
-enabled or disabled. You can create multiple logins with different 
+certain features of SMTPeter enabled or disabled. You can create multiple logins with different 
 features enabled. The SMTP credentials overview will show which features 
 are enabled for each of your logins. 
 
