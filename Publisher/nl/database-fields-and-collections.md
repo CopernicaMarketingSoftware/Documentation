@@ -48,8 +48,6 @@ uit velden. Als je een veld toevoegt aan de database, moet je daarom kiezen
 of je het veld aan de database zelf wil toevoegen, of aan een collectie
 een laag dieper.
 
-![Typen velden](../images/edit_database_fields.png)
-
 Als je een veld toevoegt moet je kiezen wat voor type veld het is. Teksten
 sla je op in tekstvelden, datums in datumvelden, enzovoort. De volgende 
 veldtypes worden ondersteund:
@@ -207,4 +205,3 @@ profielen, en waarmee je selecties hebt gemaakt. Het indexeren van deze velden
 versnelt het zoeken binnen je database en het opbouwen van selecties en 
 miniselecties. Indexeer niet te veel velden. Je kan maximaal 64 velden indexeren.
 Velden van het type "Groot veld" kunnen niet worden geïndexeerd.
-
