@@ -1,6 +1,8 @@
+# Attempts Record Information
+
 Every message that is sent via Marketing Suite is logged in the cdm-attempts
 log files. You can download the content of these files in CSV, JSON, and XML
-format using the [REST logfiles API](./logfiles-content), or the dashboard. 
+format using the [REST logfiles API](./rest-get-logfiles), or the dashboard. 
 These log files contain the following data in the respective order:
 
 | Data         | Description                                |
