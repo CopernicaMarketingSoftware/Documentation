@@ -6,15 +6,15 @@ Het kan gebeuren dat je een selectie per ongeluk op de verkeerde plaats aanmaakt
 
 Bij het kopiëren van selecties kun je subselecties desgewenst meekopiëren en een kopie kun je overal in de database neerzetten. Bij het verplaatsen van een selectie worden subselecties automatisch meeverplaatst. De enige voorwaarde is dat er geen selecties dezelfde naam mogen hebben, dus de naam moet je wel veranderen.
 
-Je kunt selecties kopiëren en verplaatsen in de Pusbliher vanuit het tabblad *Kopiëren of verplaatsen* bij de selectie (*Profielen* > *Databasebeheer* > *Selecties beheren*). Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
+Je kunt selecties kopiëren en verplaatsen in de Pusbliher vanuit het tabblad *kopiëren of verplaatsen* bij de selectie (*profielen* > *databasebeheer* > *selecties beheren*). Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
 ## Profielen uit een (mini)selectie weergeven
-De profielen van een selectie kun je inzien door simpelweg op de naam van de selectie te klikken. Voor miniselecties ligt het net iets anders: de subprofielen verkrijg je door in het menu *Huidige weergave* op *Subprofielen weergeven* te klikken.
+De profielen van een selectie kun je inzien door simpelweg op de naam van de selectie te klikken. Voor miniselecties ligt het net iets anders: de subprofielen verkrijg je door in het menu *huidige weergave* op *subprofielen weergeven* te klikken.
 
 ## Selecties authoriseren voor mailings
-Voordat je kunt beginnen met mailen naar een selectie, dien je hem eerst te activeren voor mailings. Door selecties wel of niet te authoriseren voor mailings zorg je ervoor dat je alleen kunt mailen naar de mensen die berichten mogen ontvangen. Zo is het logisch dat je de selectie *Uitschrijvers* niet authoriseert voor mailings, omdat zij hebben aangegeven geen mails van jou te willen ontvangen.
+Voordat je kunt beginnen met mailen naar een selectie, dien je hem eerst te activeren voor mailings. Door selecties wel of niet te authoriseren voor mailings zorg je ervoor dat je alleen kunt mailen naar de mensen die berichten mogen ontvangen. Zo is het logisch dat je de selectie *uitschrijvers* niet authoriseert voor mailings, omdat zij hebben aangegeven geen mails van jou te willen ontvangen.
 
-Dit kun je in Publisher instellen bij *Databasebeheer* > *Gebruiksmogelijkheden* en bij de MarketingSuite kun je dit meteen aangeven bij het creeeren van de selectie. Als opties niet aanklikbaar zijn, komt dat doordat je geen geschikt veld ervoor hebt in je database. Dit dien je dus eerst aan te maken.
+Dit kun je in de Marketing Suite meteen aangeven bij het creëren van de selectie. Als opties niet aanklikbaar zijn, komt dat doordat je geen geschikt veld ervoor hebt in je database. Dit dien je dus eerst aan te maken.
 
 ## Verwijderen, deactiveren of archiveren?
 Selecties die je niet of amper gebruikt, kun je het beste (tijdelijk) uit je database halen om je performance te verhogen. Hier zijn verschillende opties voor: verwijderen, deactiveren of archiveren.
