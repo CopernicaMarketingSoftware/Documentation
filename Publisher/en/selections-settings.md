@@ -6,13 +6,13 @@ It's not improbable that at some point, you'll accidentally create a selection i
 
 When you move a selection, you automatically move any subselections along with the selection. This is optional when copying a selection. Note that no two selections can have the same name in your database. 
 
-Copying or moving a selection can be done under *Profiles* > *Database management* > *Manage selections* > *Copy or move selections*. In doing so, no profiles are lost.
+Copying or moving a selection can be done under *profiles* > *edit selections*. In doing so, no profiles are lost.
 
 ## Displaying profiles in a (mini) selection
-You can display the profiles in a selection by simply clicking its name in the left menu in Publisher. For profiles in mini selections, to to *Current view* and click *Subprofiles*.
+You can display the profiles in a selection by simply clicking its name. For profiles in mini selections, go to *current view* and click *subprofiles*.
 
 ## Authorize a selection for emails
-Before you can start sending emails to profiles in a selection, you must first authorize it for email sending. In Publisher, this is done under *Database management* > *Set intentions* and in MarketingSuite you can select its intentions when creating it. Setting intentions prevents you from accidentally sending emails to selections that should not receive emails, such as unsubscribers. If these options are not clickable, it's probably because you don't have a corresponding field in your database. You'll need to create these first.
+Before you can start sending emails to profiles in a selection, you must first authorize it for email sending. Go to the Marketing Suite and select its intentions when creating it. Setting intentions prevents you from accidentally sending emails to selections that should not receive emails, such as unsubscribers. If these options are not clickable, it's probably because you don't have a corresponding field in your database. You'll need to create these first.
 
 ## Delete, deactivate or archive?
 It's a good idea to (temporarily) remove selections you never or rarely use from your database. Copernica has three options to do that: delete, deactive or archive. A selection that is not used at all is best deleted. Selections are rebuilt often, which takes up computing power. Therefore, having less selections will make your database faster. Removing a selection does not mean the profiles in it are removed.
