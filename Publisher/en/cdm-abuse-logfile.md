@@ -1,6 +1,8 @@
+# Abuse Record Information
+
 Every message sent with Marketing Suite that triggered an abuse message is 
 logged in the cdm-abuse log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](./logfiles-content),
+files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
 
