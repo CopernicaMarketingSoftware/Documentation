@@ -1,6 +1,8 @@
+# Errors Record Information
+
 Every message sent with Publisher that triggered an error is logged in the
 pom-errors log files. You can download the content of these files in CSV,
-JSON, and XML format using the [REST logfiles API](./logfiles-content),
+JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
 

@@ -1,6 +1,8 @@
+# Unsubscribe Record Information
+
 Messages sent via Publisher that triggered an unsubscribe are logged
 in the the pom-unsubscribes log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](./logfiles-content),
+files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
 
