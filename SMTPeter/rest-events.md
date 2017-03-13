@@ -9,7 +9,7 @@ you can use the events rest call. All calls that are supported are:
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
-https://www.smtpeter.com/v1/tags/TAG1/OPTIONALTAG2/OPTIONALTAG3
+https://www.smtpeter.com/v1/events/tags/TAG1/OPTIONALTAG2/OPTIONALTAG3
 ```
 after this call you receive a JSON with all the information you have requested.
 
@@ -78,13 +78,13 @@ If you want to retrieve all information about one tag, you can make a get
 request to:
 
 ```text
-https://www.smtpeter.com/v1/tags/TAG
+https://www.smtpeter.com/v1/events/tags/TAG
 ```
 where `TAG` is the tag you are interested in. Optionally you can also filter
 on multiple tags. If you want to do so, you can extend the call to:
 
 ```text
-https://www.smtpeter.com/v1/tags/TAG1/TAG2/TAG3/...
+https://www.smtpeter.com/v1/events/tags/TAG1/TAG2/TAG3/...
 ```
 The returned JSON will only contain information for messages that have
 all tags set.
