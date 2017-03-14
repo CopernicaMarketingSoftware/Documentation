@@ -13,9 +13,11 @@ collectie waar je de miniselecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste miniselectie die wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare miniselecties
+| Parameters | Omschrijving                                              |
+|------------|-----------------------------------------------------------|
+| **start**  | eerste miniselectie die wordt opgevraagd                  |
+| **limit**  | lengte van de batch die wordt opgevraagd                  |
+| **total**  | toon wel/niet het totaal aantal beschikbare miniselecties |
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).

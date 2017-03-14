@@ -1,4 +1,4 @@
-# REST API: interesses aan een profiel toevoegen
+# REST API: een subprofiel aan een profiel toevoegen
 
 Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
@@ -6,11 +6,18 @@ request sturen naar de volgende URL:
 `https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
-waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.
+waaraan je een subprofiel wil toevoegen. De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
 
+Het subprofiel kan de volgende eigenschappen hebben:
 
+- **secret**: Geheime code geassocieerd met dit subprofiel
+- **profile**: ID van het profiel waar het subprofiel bij hoort
+- **fields**: Velden van het subprofiel
+- **collection**: ID van de collectie waar het subprofiel bij hoort
+- **created**: Tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat
+- **modified**: Tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat
 
 ## Voorbeeld in PHP
 
