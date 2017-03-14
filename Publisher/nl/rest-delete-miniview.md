@@ -4,7 +4,7 @@ Een miniview kan verwijderd worden door een HTTP DELETE verzoek te sturen naar d
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-De $id hier moet vervangen worden door de ID van de selectie die je wilt verwijderen. Let op dat je alleen de miniview verwijderd op deze manieren, alle profielen die het bevat blijven bestaan.
+De `$id` hier moet vervangen worden door de ID van de selectie die je wilt verwijderen. Let op dat je alleen de miniview verwijderd op deze manieren, alle profielen die het bevat blijven bestaan.
 
 ## Voorbeeld in PHP
 

@@ -6,7 +6,7 @@ volgende URL sturen:
 
 `https://api.copernica.com/v1/view/$id/views?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de selectie 
+De code `$id` moet je vervangen door de numerieke identifier van de selectie 
 waarvan je de geneste selecties wilt opvragen.
 
 

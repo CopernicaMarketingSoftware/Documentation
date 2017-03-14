@@ -2,9 +2,9 @@
 
 Deze methode voegt een regel toe aan een bestaande selectie van een collectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
 
-'https://api.copernica.com/v1/miniview/$id/minirules?access_token=xxxx'
+`https://api.copernica.com/v1/miniview/$id/minirules?access_token=xxxx`
 
-De $id moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
+De `$id` moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
 
 ## Beschikbare parameters
 

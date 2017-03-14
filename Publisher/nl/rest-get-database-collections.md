@@ -5,7 +5,7 @@ terug van alle collecties binnen een database:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van 
+De `$id` moet je vervangen door de numerieke identifier of de naam van 
 de database waar je de collecties van wilt opvragen.
 
 ## Beschikbare parameters
@@ -18,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 

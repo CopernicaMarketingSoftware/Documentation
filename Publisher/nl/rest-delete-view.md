@@ -4,7 +4,7 @@ Om een selectie van profielen te verwijderen kan er een HTTP DELETE verzoek gest
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-De eerste $id moet vervangen worden door de ID van de selectie die je wilt verwijderen. Met deze methode verwijder je alleen de selectie, niet de profielen die erin zitten. Als je de profielen ook wilt verwijderen kun je de hele database verwijderen of individuele profielen verwijderen.
+De `$id` moet vervangen worden door de ID van de selectie die je wilt verwijderen. Met deze methode verwijder je alleen de selectie, niet de profielen die erin zitten. Als je de profielen ook wilt verwijderen kun je de hele database verwijderen of individuele profielen verwijderen.
 
 ## Voorbeeld in PHP
 

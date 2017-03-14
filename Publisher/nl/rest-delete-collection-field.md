@@ -4,7 +4,7 @@ Deze methode verwijdert een veld uit een collectie. De methode kan aangeroepen w
 
 `https://api.copernica.com/v1/collection/$id/field/$id?access_token=xxxx`
 
-De eerste $id moet vervangen worden door de numerieke identifier van de collectie. De tweede ID moet vervangen worden door de ID of de naam van het veld dat je wilt verwijderen.
+De eerste `$id` moet vervangen worden door de numerieke identifier van de collectie. De tweede `$id` moet vervangen worden door de ID of de naam van het veld dat je wilt verwijderen.
 
 ## Voorbeeld in PHP
 Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken met de API:

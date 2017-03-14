@@ -4,7 +4,7 @@ Dit is een methode om de eigenschappen van een bestaande regel aan te passen. Om
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`
 
-De $id moet hier vervangen worden door de ID van de regel waarvan je de eigenschappen aan wilt passen.
+De `$id` moet hier vervangen worden door de ID van de regel waarvan je de eigenschappen aan wilt passen.
 
 ## Beschikbare parameters
 De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT command:

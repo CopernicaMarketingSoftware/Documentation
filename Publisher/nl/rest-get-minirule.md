@@ -2,9 +2,9 @@
 
 Dit is een methode om alle metadata van een regel binnen een selectie in een collectie (miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 
-'https://api.copernica.com/v1/minirule/$id?access_token=xxxx'
+`https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-De $id hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
+De `$id` hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
 
 ## Beschikbare parameters
 

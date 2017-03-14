@@ -1,16 +1,16 @@
-# REST API: vraag selection metadata op
+# REST API: vraag selectie metadata op
 
 Een methode om de metadata van een database op te vragen. De methode kan aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-Hier moet de $id vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
+Hier moet de `$id` vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
 
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
 
-## Returned fields
+## Geretourneerde velden
 
 - **ID**: unieke numerieke identifier van selectie
 - **name**: naam van de selectie

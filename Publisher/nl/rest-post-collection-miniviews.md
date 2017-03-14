@@ -5,7 +5,7 @@ naar de volgende URL. De selectie wordt dan direct onder de collectie aangemaakt
 
 `https://api.copernica.com/v1/collectie/$id/miniviews?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 collectie waar je een selectie aan wilt toevoegen. De naam van de selectie moet
 als message body aan het HTTP request worden toegevoegd.
 
@@ -30,9 +30,9 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
     // data voor de methode
     $data = array(
-        'name'      =>  'mijn-selectie',
-	'description'	=> 'voorbeeld selectie',
-	'has-rules'	=> False
+        'name'      =>  'mijn-selectie', 
+        'description'	=> 'voorbeeld selectie',
+        'has-rules'	=> False
     );
     
     // voer het verzoek uit

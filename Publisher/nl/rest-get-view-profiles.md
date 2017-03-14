@@ -5,7 +5,7 @@ en beschikbaar via het volgende adres:
 
 `https://api.copernica.com/v1/view/$id/profiles?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 selectie waar je de profielen van wilt opvragen.
 
 ## Beschikbare parameters

@@ -10,7 +10,7 @@ HTTP PUT request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/database/$id/unsubscribe?access_token=XXX`
 
-De variabele $id in de URL moet worden vervangen door de numerieke identifier
+De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet
 je in de body van het HTTP request plaatsen.
 

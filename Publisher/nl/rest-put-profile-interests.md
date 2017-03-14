@@ -5,7 +5,7 @@ request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van het profiel 
+De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel
 kun je in de body van het bericht plaatsen.
 
@@ -31,26 +31,26 @@ Voor profiel 1234 worden de interesses "tennis" en "hockey" geactiveerd, en
 alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld) 
 uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'football' geactiveerd en alle andere interesses uitgeschakeld (eerste methode).
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call, the new interests
+    // data voor de methode
     $data = array(
         'football'  =>  0,
         'tennis'    =>  1,
         'hockey'    =>  1
     );
     
-    // do the call
+    // voer het verzoek uit
     $api->put("profile/1234/interests", $parameters, $data);
 
-    // data to pass to a second call
+    // data voor het tweede verzoek
     $data = array('football');
     
-    // do the call
+    // voer het verzoek uit
     $api->put("profile/1235/interests", $parameters, $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

@@ -5,7 +5,7 @@ verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
-De $id moet vervangen worden door de ID van het profiel waarvan je de interesses op wil vragen.
+De `$id` moet vervangen worden door de ID van het profiel waarvan je de interesses op wil vragen.
 
 ## Teruggegeven velden
 

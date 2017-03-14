@@ -17,7 +17,7 @@ names and is mandatory
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: Array of conditions profiles within the selection should conform to, 
 such as certain values within certain fields
-- **inversed**: Boolean value that when set to "True" will return only profiles 
+- **inversed**: Boolean value that when set to "True" will return only profiles
 that do *not* adhere to the rule.
 - **disabled**: Boolean value that when set to "True" will disable the rule.
 

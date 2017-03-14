@@ -13,7 +13,6 @@ access key horende account wilt opvragen kan dat met deze methode. Als je
 een applicatie hebt die alleen met je eigen account is gekoppeld, heeft het
 aanroepen van deze methode niet zo veel toegevoegde waarde.
 
-
 ## Geretourneerde velden
 
 De methode retourneert een accountgegevens. De volgende eigenschappen worden
@@ -23,7 +22,6 @@ teruggegeven:
 * **name**: Naam van het account
 * **description**: Omschrijving van het account
 * **company**: Naam van het bedrijf dat betaalt voor het account
-
 
 ## Voorbeeld in PHP
 
@@ -41,7 +39,6 @@ vanuit een PHP script:
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

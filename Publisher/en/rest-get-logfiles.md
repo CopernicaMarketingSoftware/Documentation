@@ -1,16 +1,12 @@
 # REST API: fetch logfile dates
 
-Copernica keeps logfiles about several things such as clicks, opens, errors, 
-accepted messages, etc. These logfiles can be downloaded with the API.
-By sending an HTTP GET request to the following URL you will get a list of
-all dates we have kept logfiles of.
+Copernica keeps logfiles about several things such as clicks, opens, errors, accepted messages, etc. These logfiles can be downloaded with the API. By sending an HTTP GET request to the following URL you will get a list of all dates we have kept logfiles of.
 
 `https://api.copernica.com/v1/logfiles?access_token=xxxx`
 
 ## Returned fields
 
-This method returns a JSON array of date strings. To download a log file 
-please see the links under "More information".
+This method returns a JSON array of date strings. To download a log file please see the links under "More information".
 
 ## PHP Example
 

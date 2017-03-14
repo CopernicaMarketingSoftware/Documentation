@@ -2,9 +2,9 @@
 
 Subprofielen zijn voor collecties wat reguliere profielen zijn in een database. Om een lijst van subprofielen van een profiel uit een miniview op te vragen kun je een HTTP GET verzoek sturen naar de volgende URL:
 
-'https://api.copernica.com/v1/miniview/$id/subprofile?access_token=xxxx'
+`https://api.copernica.com/v1/miniview/$id/subprofile?access_token=xxxx`
 
-De $id moet vervangen worden met de ID van het profiel waar je de subprofielen van opvraagt.
+De `$id` moet vervangen worden met de ID van het profiel waar je de subprofielen van opvraagt.
 
 ## Teruggeven velden
 

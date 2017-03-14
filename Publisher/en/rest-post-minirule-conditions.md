@@ -1,38 +1,40 @@
-# REST API: miniregel condities aanpassen
-Een methode om condities voor een miniregel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
+# REST API: edit minirule conditions
+A method to edit conditions for a minirule. This method does not 
+support parameters. It is called by sending an HTTP POST request to the following URL:
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De $id moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
+In this, $id needs to be replaced by the numerical identifier or the name of the minirule you wish to edit the conditions of.
 
-## Beschikbare parameters
+## Available parameters
 
 The message body can hold the following properties for a condition:
 
-- **id**: numeriek ID van de conditie
-- **type**: type van de conditie
-- **rule**: numeriek ID van de miniregel waar de conditie toe hoort
+- **type**: type of condition
+- **rule**: numeric ID of the minirule the condition belongs to
 
-De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
+Based on the condition type, specific properties are set. For an overview
+of the supported conditions and the properties that they support, check
+the specific articles:
 
-- [Veranderings voorwaarden](./rest-condition-type-change.md)
-- [Datum voorwaarden](./rest-condition-type-date.md)
-- [DoubleField voorwaarden](./rest-condition-type-doublefield.md)
-- [Email voorwaarden](./rest-condition-type-email.md)
-- [Fax voorwaarden](./rest-condition-type-fax.md)
-- [Veld voorwaarden](./rest-condition-type-field.md)
-- [Interesse voorwaarden](./rest-condition-type-interest.md)
-- [LastContact voorwaarden](./rest-condition-type-lastcontact.md)
-- [Miniview voorwaarden](./rest-condition-type-miniview.md)
-- [SMS voorwaarden](./rest-condition-type-sms.md)
-- [Todo voorwaarden](./rest-condition-type-todo.md)
-- [Survey voorwaarden](./rest-condition-type-survey.md)
-- [Part voorwaarden](./rest-condition-type-part.md)
-- [ReferView voorwaarden](./rest-condition-type-referview.md)
+- [Change conditions](./rest-condition-type-change.md)
+- [Date conditions](./rest-condition-type-date.md)
+- [DoubleField conditions](./rest-condition-type-doublefield.md)
+- [Email conditions](./rest-condition-type-email.md)
+- [Fax conditions](./rest-condition-type-fax.md)
+- [Field conditions](./rest-condition-type-field.md)
+- [Interest conditions](./rest-condition-type-interest.md)
+- [LastContact conditions](./rest-condition-type-lastcontact.md)
+- [Miniview conditions](./rest-condition-type-miniview.md)
+- [SMS conditions](./rest-condition-type-sms.md)
+- [Todo conditions](./rest-condition-type-todo.md)
+- [Survey conditions](./rest-condition-type-survey.md)
+- [Part conditions](./rest-condition-type-part.md)
+- [ReferView conditions](./rest-condition-type-referview.md)
 
-## Voorbeeld in PHP
+## PHP example
 
-Het volgende PHP script demonstreert hoe de API method te gebruiken is.
+The following example demonstrates how to use this method:
 
 	// dependencies
 	require_once('copernica_rest_api.php');
@@ -48,11 +50,11 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 	// do the call, and print result
 	$api->post("minirule/1234/conditions", array(), $data);
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+This example uses the [CopernicaRestAPi class](rest-php).
 
-## Meer informatie
+## More information
 
-* [Overzicht van alle API methodes](rest-api)
-* [Regels opvragen](./rest-get-minirules)
-* [Regels bij ID opvragen](./rest-get-minirule)
-* [Een regel aanmaken](./rest-post-minirule)
+* [Overview of all REST API methods](./rest-api)
+* [Fetch rules](./rest-get-minirules)
+* [Get rule by ID](./rest-get-minirule)
+* [Create rule](./rest-post-minirule)

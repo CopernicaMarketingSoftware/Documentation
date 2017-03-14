@@ -2,9 +2,9 @@
 
 Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan te passen kan er een HTTP post request gestuurd worden naar de volgende URL:
 
-'https://api.copernica.com/view/$id/views?access_token=xxxx'
+`https://api.copernica.com/view/$id/views?access_token=xxxx`
 
-De eerste $id moet hier vervangen worden door de bovenliggende selectie en de tweede $id door de lager gelegen selectie.
+De eerste `$id` moet hier vervangen worden door de bovenliggende selectie en de tweede $id door de lager gelegen selectie.
 
 ## Beschikbare parameters
 

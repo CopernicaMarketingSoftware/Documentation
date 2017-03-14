@@ -4,7 +4,7 @@ Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen 
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
 
-De $id moet hier vervangen worden door de ID van de selectie waar je de regels van op wilt vragen.
+De `$id` moet hier vervangen worden door de ID van de selectie waar je de regels van op wilt vragen.
 
 ## Ondersteunde parameters
 

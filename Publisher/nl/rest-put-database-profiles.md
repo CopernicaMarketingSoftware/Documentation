@@ -5,7 +5,7 @@ doen met behulp van een HTTP PUT request naar de volgende URL:
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar binnen je profielen wilt veranderen. De veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 

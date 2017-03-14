@@ -5,7 +5,7 @@ Dit is een HTTP GET call naar het volgende adres:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de velden van wilt opvragen.
 
 ## Beschikbare parameters
@@ -18,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -34,8 +33,7 @@ worden de volgende eigenschappen teruggegeven:
 * **length**: voor tekstvelden de maximum lengte van waardes die kunnen worden opgeslagen
 * **textlines**: voor meerregelige velden: het aantal regels dat beschikbaar is om het veld te bewerken
 * **hidden**: boolean waarde of dit veld verborgen is en *nooit* wordt getoond in de user interface
-* **index**: wordt er een index voor dit veld bijgehouden zodat lookups en selecties sneller zijn?
-
+* **index**: boolean waarde die aangeeft of er een index bijgehouden word (dit maakt lookups en selecties sneller)
 
 ## Voorbeeld in PHP
 
@@ -56,7 +54,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     print_r($api->get("database/1234/fields", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
-    
 
 ## Meer informatie
 
