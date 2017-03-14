@@ -1,9 +1,28 @@
-# **copernica** variable
+# Followups: **copernica** variable
 
-**copernica** variable gives access to data available on the account level. That
-means that data accessed via this variable will be available in all scripts
-inside one account.
+The **copernica** variable is linked to the account registered with 
+Copernica. It is available in the data-script object and provides access 
+to data linked to your account. This information is available in all scripts 
+inside this account.
 
-Available properties:
+## Available properties
 
-* [**data**](./followups-scripting-data.md)
+* **data**: see the documentation on [the **data** object](./followups-scripting-data)
+* **properties**: accessible account properties
+
+## Available functions
+
+* **database**: with the name or ID of the database as a key the database 
+can be returned
+* **collection**: with the ID of the collection as a key the collection 
+can be returned
+* **profile**: with the ID of a profile as a key the profile can be returned
+* **subprofile**: with the ID of a subprofile as a key the subprofile 
+can be returned
+
+## More information
+* [The data-script object](./followups-scripting)
+* [The **data** object](./followups-scripting-data)
+* [User profile information](./followups-scripting-profile)
+* [User subprofile information](./followups-scripting-subprofile)
+* [Destination information](./followups-scripting-destination)

@@ -1,13 +1,20 @@
-# **database** variable
+# Followups: **database** variable
 
-A variable that gives access to a database.
+A database linked to your account can be accessed in the data-scripts. 
+To request a database object please see the documentation on [the account object](./followups-scripting-copernica)
+It is also possible to edit some of the information in the database.
 
-Available properties:
+## Available properties
 
-* **ID** The ID of the database. (Read only)
-* **name** The name of the database. (Read and write)
-* **description** The description of the database. (Read and write)
-* **archived** A boolean value telling if database was archived. (Read and write)
-* **created** When was database created. (Read only)
-* **profiles** An array of all database profiles. Keys in this array are profile IDs.
-* [**data**](./followups-scripting-data.md) Additional data object.
+* **ID**: the ID of the database (Read only)
+* **name**: the name of the database (Read and write)
+* **description**: the description of the database (Read and write)
+* **archived**: a boolean value telling if database was archived (Read and write)
+* **created**: timestamp of database creation (Read only)
+* **profiles**: an array of all database profiles. Keys in this array are profile IDs.
+* **data**: see the documentation on [the **data** object](./followups-scripting-data)
+
+## More information
+* [The data-script object](./followups-scripting)
+* [The data object](./followups-scripting-data)
+* [Collection variable](./followups-scripting-collection)

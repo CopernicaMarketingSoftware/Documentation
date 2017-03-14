@@ -12,12 +12,11 @@ There are a couple of ways how you can attach a script to hyperlinks:
 * using the *data-script* attribute on &lt;a&gt; tags
 * if you use the drag-and-drop editor in the follow-up form
 
-
 ## Available objects
 
 Inside the script you can make use of a couple of global variables that identify 
-the (sub)profile that clicked on the link, and other data that is relevant for 
-the click. Each of these objects have readonly properties to get data, and some
+the (sub)profile that clicked on the link and other data that is relevant for 
+the click. Each of these objects have readonly properties to get data and some
 writable properties to change them as well. The following variables are accessible:
 
 * [**copernica**](./followups-scripting-copernica.md)
@@ -30,12 +29,16 @@ writable properties to change them as well. The following variables are accessib
 
 ## A very simple example
 
-If you want to change a profile when a link is clicked, you can use the following code:
+A possibility of the data-script object is to change a profile when a link 
+is clicked. This can be used to place an unsubscribe link that when clicked 
+sets a profile setting such that no more newsletters are send. To place a 
+link like this you can use the following code:
 
-    <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">click here to unsubscribe</a>
+    <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 
 The above example is a very simple one. The data-script is executed when the
-link is clicked.
+link is clicked and sets the profile field "newsletter" to "no". Now the 
+user will be in the system, but not receive any newsletters.
 
 Before an email is delivered, the data-script is removed from the original code. Your
 receivers therefore do not get to see the script when they open the source code of
