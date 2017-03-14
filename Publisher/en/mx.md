@@ -68,7 +68,7 @@ according to the following scheme:
         <td><strong>CNAME record that can be used too</strong></td>
     </tr>
     <tr>
-        <td>MX 0 publisher.copernica.nl</td>
+        <td>MX 0 ms.copernica.nl</td>
         <td>CNAME feedback.copernica.com</td>
     </tr>
     <tr>
@@ -79,5 +79,5 @@ according to the following scheme:
 
 You can use the table above to lookup the recommended advice. If the dashboard
 says that you should create a MX record for "feedback.yourdomain.com" with
-value "0 publisher.copernica.nl" you can create CNAME record for 
+value "0 ms.copernica.nl" you can create CNAME record for 
 "feedback.yourdomain.com" with value "feedback.copernica.com" instead.
