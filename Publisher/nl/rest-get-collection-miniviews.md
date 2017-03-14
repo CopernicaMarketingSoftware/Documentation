@@ -6,7 +6,7 @@ kun je een HTTP GET requet naar het volgende adres sturen:
 
 `https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
 ## Beschikbare parameters
@@ -20,18 +20,18 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van miniselecties. Voor elke selectie
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: numeriek ID van de miniselectie
-* **name**: naam van de miniselectie
-* **description**: omschrijving van de miniselectie
-* **parent-type**: dit is altijd de string "collection"
-* **parent-id**: ID van de collectie waar deze miniselectie onder valt
-
+| Variabele       | Omschrijving
+|-----------------|-------------------------------------------------------|
+| **ID**          | numeriek ID van de miniselectie			  |
+| **name**  	  | naam van de miniselectie				  |
+| **description** | omschrijving van de miniselectie			  |
+| **parent-type** | dit is altijd de string "collection"		  |
+| **parent-id**   | ID van de collectie waar deze miniselectie onder valt |
 
 ## Voorbeeld in PHP
 

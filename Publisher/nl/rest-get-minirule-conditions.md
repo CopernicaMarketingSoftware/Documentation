@@ -2,9 +2,9 @@
 
 Dit is een methode om alle condities van een miniregel (voor een miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 
-'https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx'
+`https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De $id hier moet vervangen worden door de ID van de miniregel waarvan je de condities op wil vragen.
+De `$id` hier moet vervangen worden door de ID van de miniregel waarvan je de condities op wil vragen.
 
 ## Beschikbare parameters
 

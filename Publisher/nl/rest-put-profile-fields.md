@@ -5,7 +5,7 @@ sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van het profiel 
+De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 
@@ -25,20 +25,20 @@ waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call wordt een profiel met ID 4567 aangepast.
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call
+    // data voor de methode
     $data = array(
         'firstname' =>  'John',
         'lastname'  =>  'Doe',
         'email'     =>  'johndoe@example.com'
     );
     
-    // do the call
+    // voer het verzoek uit
     $api->put("profile/1234/fields", $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

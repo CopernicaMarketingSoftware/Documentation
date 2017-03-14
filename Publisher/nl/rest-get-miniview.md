@@ -4,7 +4,7 @@ Een methode om alle metadata van een selectie binnen een collectie op te vragen.
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-De $id hier moet vervangen worden door de ID of de naam van de collectie waarvoor je de selecties op wil vragen.
+De `$id` hier moet vervangen worden door de ID of de naam van de collectie waarvoor je de selecties op wil vragen.
 
 ## Ondersteunde parameters
 

@@ -19,7 +19,6 @@ jouw e-mailadres, vriendenlijst, enzovoort. Vind je dat goed?" Als je akkoord
 gaat keer je terug naar de oorspronkelijke website, die nu toegang heeft tot
 jouw gegevens van Facebook. Iets dergelijks kan ook met Copernica.
 
-
 ## Wanneer heb je dit nodig?
 
 Voordat je verder leest, moet je goed bedenken of je deze functionaliteit
@@ -41,7 +40,6 @@ een vraag gesteld zoals: "De database-analyzer wil toegang tot jouw account om
 je database te analyseren. Vind je dat goed?".
 
 ![](../images/oauth-copernica.png)
-
 
 ## Applicatie aanmelden
 
@@ -79,7 +77,6 @@ Je moet er goed voor zorgen dat de **state** variabele echt een moeilijk te rade
 random string is. Als de string niet naar onze zin is (te kort, te voorspelbaar),
 dan wordt sowieso geen toegang verleend.
 
-
 ## De terugkeerpagina
 
 Ook moet je een terugkeerpagina maken. Nadat iemand op de link op je website heeft
@@ -116,7 +113,7 @@ Als alles goed gaat, dan krijg je als resultaat van deze API call een
 *access_token* terug. Dit token kan je vervolgens gebruiken om API calls te
 doen, en de gegevens in het desbetreffende account op te vragen.
 
-`{ access_token : "ed430a95c58fd7d2830c9dc453396cf5" }`
+`{ access_token : "ed430a95c58fd7d230c9dc453396cf5" }`
 
 ## Meer informatie
 

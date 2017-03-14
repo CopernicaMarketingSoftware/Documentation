@@ -5,19 +5,19 @@ veld uit een database:
 
 `https://api.copernica.com/v1/database/$id/field/$id?access_token=xxxx`
 
-De eerste $id variabele moet je vervangen door de numerieke identifier of de naam
+De eerste `$id` variabele moet je vervangen door de numerieke identifier of de naam
 van de database, en de tweede door het ID of de naam van het veld dat je wilt
 verwijderen.
 
 ## Voorbeeld in PHP
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call
+    // voer het verzoek uit
     $api->delete("database/1234/field/firstname");
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

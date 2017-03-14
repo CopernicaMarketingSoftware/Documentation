@@ -2,9 +2,9 @@
 
 Een miniview is voor een collectie wat een selectie is voor een database. Om een miniview aan te passen kan er een HTTP PUt verzoek verstuurd worden naar de volgende URL:
 
-'https://api.copernica.com/v1/miniview/$id?access_token=xxxx'
+`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-De $id is de ID van de miniview die je aan wilt passen.
+De `$id` is de ID van de miniview die je aan wilt passen.
 
 ## Beschikbare parameters
 

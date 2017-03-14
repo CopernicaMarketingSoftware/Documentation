@@ -5,7 +5,7 @@ is beschikbaar via het volgende adres:
 
 `https://api.copernica.com/v1/database/$id/interests?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een interesse aan wilt toevoegen. De naam van de interesse, 
 en eventuele andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 

@@ -3,9 +3,9 @@ Voor elke collectie kunnen apart de instellingen voor unsubscribes worden aangep
 
 Om de instellingen hiervoor aan te passen kan er een HTTP PUT verzoek gedaan worden aan de volgende URL:
 
-`https://api.copernica.com/v1/collection/$id/unsubscribe?access_token=xxxx'
+`https://api.copernica.com/v1/collection/$id/unsubscribe?access_token=xxxx`
 
-Hier moet de $id aangepast worden naar de ID van de collectie waar je de instellingen voor aan wilt passen. De nieuwe instellingen zelf moeten toegevoegd worden aan de message body van het verzoek.
+Hier moet de `$id` aangepast worden naar de ID van de collectie waar je de instellingen voor aan wilt passen. De nieuwe instellingen zelf moeten toegevoegd worden aan de message body van het verzoek.
 
 ## Beschikbare parameters
 

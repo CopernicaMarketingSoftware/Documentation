@@ -7,7 +7,6 @@ om data te bewerken. De requests worden door onze API servers verwerkt, en de
 opgehaalde of bewerkte data wordt in een formaat dat makkelijk door computers 
 is te verwerken (JSON) teruggestuurd.
 
-
 ## Aanmelden voor de API
 
 Om te voorkomen dat onbevoegden toegang hebben tot de REST API, moet je eerst
@@ -47,7 +46,6 @@ bestand terug met daarin alle databases van het account. Voor mensen is
 zo'n lijst niet zo makkelijk in het gebruik, maar je zult begrijpen dat 
 computerprogramma's hier goed mee uit de voeten kunnen.
 
-
 ## HTTP requests
 
 De REST API maakt gebruik van het HTTP protocol voor het uitwisselen van data.
@@ -73,7 +71,6 @@ die twee methodes aan te houden.
 
 Bij elk request moet je altijd een access_token variabele meesturen. Je kunt
 deze variabele toevoegen aan de URL als gewone get parameter.
-
 
 ## Meer informatie
 

@@ -6,7 +6,7 @@ naar het volgende adres:
 
 `https://api.copernica.com/v1/collection/$id/subprofileids?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters

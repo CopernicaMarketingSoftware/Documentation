@@ -4,7 +4,7 @@ Een minirule is voor een miniview wat een regel is voor een selectie. Om de eige
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-De $id moet aangepast worden naar de ID van de minirule die je aan wilt passen.
+De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 
 ## Beschikbare parameters
 De volgende parameters kunnen in de message body geplaatst worden:
@@ -19,19 +19,19 @@ De volgende parameters kunnen in de message body geplaatst worden:
 
 Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden:
 
-	// dependencies
+	// vereiste scripts
 	require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+	// verander dit naar je access token
+	$api = new CopernicaRestApi("jouw-access-token");
 
-	// data to be sent to the api
+	// data voor de methode
 	$data = array(
     	
-		'name'   =>  'new rule name',
+		'name'   =>  'nieuwe regel naam',
 	);
 
-	// do the call, and print result
+	// voer het verzoek uit en print het resultaat
 	print_r($api->put("minirule/1234", array(), $data));
 
 Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).

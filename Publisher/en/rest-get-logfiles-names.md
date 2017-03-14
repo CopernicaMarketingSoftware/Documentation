@@ -16,23 +16,22 @@ are provided in the table below.
 
 | prefix                                       | type of information                                                |
 | -------------------------------------------- | ------------------------------------------------------------------ |
-| [cdm-attempts](cdm-attempts-logfile)         | General info about mails sent with Marketing Suite (MS)            |
-| [cdm-abuse](cdm-abuse-logfile)               | Info about mails sent via MS that triggered an notification        |
-| [cdm-click](cdm-click-logfile)               | Info about clicks generated from mails sent with MS                |
-| [cdm-delivery](cdm-delivery-logfile)         | Info about delivered mails sent with MS                            |
-| [cdm-error](cdm-error-logfile)               | Info about mails sent with MS that triggered an error              |
-| [cdm-impression](cdm-impression-logfile)     | Info about impressions from mails sent with MS                     |
-| [cdm-retry](cdm-retry-logfile)               | Info about mails sent via MS for which we retry a delivery         |
-| [cdm-unsubscribe](cdm-unsubscribe)           | Info about mails sent via MS that triggered an unsubscribe         |
-| [pom-attempts](pom-attempts-logfile)         | General info about mails sent with Publisher                       |
-| [pom-abuses](pom-abuses-logfile)             | Info about mails sent via Publisher that triggered an notification |
-| [pom-clicks](pom-clicks-logfile)             | info about clicks generated from mails sent with Publisher         |
-| [pom-deliveries](pom-deliveries-logfile)     | Info about delivered mails sent with Publisher                     |
-| [pom-errors](pom-errors-logfile)             | Info about failed mails sent with Publisher                        |
-| [pom-impressions](pom-impressions-logfile)   | Info about impressions from mails sent with Publisher              |
-| [pom-retries](pom-retries-logfile)           | Info about mails sent via Publisher for which we retry a delivery  |
-| [pom-unsubscribes](pom-unsubscribes-logfile) | Info about mails sent via Publisher that triggered an unsubscribe  |
-
+| [cdm-attempts](rest-cdm-attempts-logfile)         | General info about mails sent with Marketing Suite (MS)            |
+| [cdm-abuse](rest-cdm-abuse-logfile)               | Info about mails sent via MS that triggered a notification        |
+| [cdm-click](rest-cdm-click-logfile)               | Info about clicks generated from mails sent with MS                |
+| [cdm-delivery](rest-cdm-delivery-logfile)         | Info about delivered mails sent with MS                            |
+| [cdm-error](rest-cdm-error-logfile)               | Info about mails sent with MS that triggered an error              |
+| [cdm-impression](rest-cdm-impression-logfile)     | Info about impressions from mails sent with MS                     |
+| [cdm-retry](rest-cdm-retry-logfile)               | Info about mails sent via MS for which we retry a delivery         |
+| [cdm-unsubscribe](rest-cdm-unsubscribe-logfile)           | Info about mails sent via MS that triggered an unsubscribe         |
+| [pom-attempts](rest-pom-attempts-logfile)         | General info about mails sent with Publisher                       |
+| [pom-abuses](rest-pom-abuses-logfile)             | Info about mails sent via Publisher that triggered an notification |
+| [pom-clicks](rest-pom-clicks-logfile)             | info about clicks generated from mails sent with Publisher         |
+| [pom-deliveries](rest-pom-deliveries-logfile)     | Info about delivered mails sent with Publisher                     |
+| [pom-errors](rest-pom-errors-logfile)             | Info about failed mails sent with Publisher                        |
+| [pom-impressions](rest-pom-impressions-logfile)   | Info about impressions from mails sent with Publisher              |
+| [pom-retries](rest-pom-retries-logfile)           | Info about mails sent via Publisher for which we retry a delivery  |
+| [pom-unsubscribes](rest-pom-unsubscribes-logfile) | Info about mails sent via Publisher that triggered an unsubscribe  |
 
 To download a log file please see the links under "More information".
 
@@ -54,6 +53,7 @@ For the example above you need the [CopernicaRestApi class](./rest-php.md).
 ## More information
 
 * [List of all API calls](./rest-api.md)
+* [Get names of log files](rest-get-logfiles-names)
 * [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
 * [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
 * [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)

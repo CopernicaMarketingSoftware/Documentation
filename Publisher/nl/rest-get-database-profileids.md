@@ -6,7 +6,7 @@ naar het volgende adres:
 
 `https://api.copernica.com/v1/database/$id/profileids?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters

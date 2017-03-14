@@ -4,7 +4,7 @@ Het verwijderen van een profiel kan gedaan worden door een HTTP DELETE verzoek t
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-De $id hier moet vervangen worden door de ID van het profiel dat je wilt verwijderen.
+De `$id` hier moet vervangen worden door de ID van het profiel dat je wilt verwijderen.
 
 ## Voorbeeld in PHP
 

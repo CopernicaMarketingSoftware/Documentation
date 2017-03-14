@@ -5,20 +5,20 @@ Dit is een HTTP DELETE methode, naar het volgende adres:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
-De variabele $id moet worden vervangen door de numerieke identifier of de naam
+De variabele `$id` moet worden vervangen door de numerieke identifier of de naam
 van de te verwijderen database.
 
 ## Voorbeeld in PHP
 
 Het volgende voorbeeld demonstreert hoe je deze methode uitvoert in PHP:
 
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call
+    // voer het verzoek uit
     $api->delete("database/1234");
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.

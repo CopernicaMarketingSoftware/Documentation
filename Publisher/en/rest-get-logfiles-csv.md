@@ -1,7 +1,6 @@
-# Download a log file as a csv file
+# REST API: Download a log file as a csv file
 
-If you want to download a logfile as a csv file you can send an HTTP GET
-request to the following URL:
+Copernica keeps logfiles which you can request with the API. This method can be used to download a logfile as JSON using its filename. If you don't know the filename please see "More information" for instructions. To execute the method you can send an HTTP GET request to the following URL for a CSV file without header:
 
 `https://api.copernica.com/v1/logfiles/$filename?access_token=xxxx`
 
@@ -10,9 +9,16 @@ csv you can send an HTTP GET request to:
 
 `https://api.copernica.com/v1/logfiles/$filename/header?access_token=xxxx`
 
+In both URLs `$filename` is the name of the file you want to request.
+
 ## Returned value
 
-A csv file with optionally a header row of the requested log file.
+A csv file with optionally a header row of the requested log file. An example with header is shown below.
+
+| id  |        time         | mailingid | profileid | subprofileid | databaseid | ... |
+|-----|---------------------|-----------|-----------|--------------|------------|-----|
+| XX1 | 2016-11-04 11:01:00 | 12345     | 111111    | 2            | 123        | ... |
+| XX2 | 2016-11-04 11:06:00 | 12346     | 111112    | 3            | 123        | ... |
 
 ## PHP Example
 
@@ -32,4 +38,7 @@ For the example above you need the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Log file information](rest-get-logfiles-names)
+* [Get names of log files](rest-get-logfiles-names)
+* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
+* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
+* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)

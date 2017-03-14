@@ -5,14 +5,12 @@ request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van het profiel
+De code `$id` moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
-
 
 ## Geretourneerde velden
 
 De methode retourneert de velden van een profiel.
-
 
 ## Voorbeeld in PHP
 
@@ -29,7 +27,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

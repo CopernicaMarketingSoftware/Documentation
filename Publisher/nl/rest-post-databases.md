@@ -3,14 +3,13 @@
 Methode om een nieuwe database aan te maken. Dit is een HTTP POST methode
 naar het volgende adres:
 
-`https://api.copernica.com/v1/databases?access_token=XXX`
-
+`https://api.copernica.com/v1/databases?access_token=xxxx`
 
 ## Beschikbare parameters
 
-* *name*: naam van de nieuw aan te maken database
-* *description*: optionele omschrijving van de database
-* *archived*: optionele boolean waarde om de database direct te archiveren
+* **name**: naam van de nieuw aan te maken database
+* **description**: optionele omschrijving van de database
+* **archived**: optionele boolean waarde om de database direct te archiveren
 
 ## Voorbeeld in PHP
 

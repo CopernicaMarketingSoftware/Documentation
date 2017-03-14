@@ -1,16 +1,16 @@
-# REST API: regel condities aanpassen
-Een methode om condities voor een regel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
+# REST API: miniregel condities aanpassen
+Een methode om condities voor een miniregel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de regel waaraan je een conditie toe wilt voegen.
+De $id moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
 
 ## Beschikbare parameters
 
-De message body kan de volgende eigenschappen voor de conditie bevatten:
+De message body kan de volgende eigenschappen hebben voor een conditie:
 
 - **type**: type van de conditie
-- **rule**: numeriek ID van regel waar de conditie toe hoort
+- **rule**: numeriek ID van de miniregel waar de conditie toe hoort
 
 De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
 
@@ -33,25 +33,25 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
-	// vereiste scripts
+	// dependencies
 	require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
+	// change this into your access token
 	$api = new CopernicaRestApi("your-access-token");
 
-	// parameters voor de methode
+	// parameters to pass to the call
 	$data = array(
 		'type' = 'date'
 	)
 
-	// voer het verzoek uit en print het resultaat
-	$api->post("rule/1234/conditions", array(), $data);
+	// do the call, and print result
+	$api->post("minirule/1234/conditions", array(), $data);
 
 Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
 
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [Regels opvragen](./rest-get-rules)
-* [Regels bij ID opvragen](./rest-get-rule)
-* [Een regel aanmaken](./rest-post-rule)
+* [Regels opvragen](./rest-get-minirules)
+* [Regels bij ID opvragen](./rest-get-minirule)
+* [Een regel aanmaken](./rest-post-minirule)

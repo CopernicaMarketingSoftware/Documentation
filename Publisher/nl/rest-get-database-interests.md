@@ -5,7 +5,7 @@ met de volgende URL:
 
 `https://api.copernica.com/v1/database/$id/interests?access_token=xxx`
 
-De variabele $id moet je vervangen door de numerieke identifier of de naam
+De variabele `$id` moet je vervangen door de numerieke identifier of de naam
 van de database waar je de interesses van wilt opvragen.
 
 ## Beschikbare parameters
@@ -18,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -49,7 +48,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

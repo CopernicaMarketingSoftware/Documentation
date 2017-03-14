@@ -11,7 +11,6 @@ van al deze methodes echter standaard beperkt. Er worden niet meer dan 100 objec
 teruggegeven, zelfs als er wel meer databases of profielen bestaan. Als je meer 
 objecten wilt opvragen, zul je meerdere calls achter elkaar moeten doen.
 
-
 ## Teruggegeven data
 
 Als een methode een lijst teruggeeft is dat altijd verpakt in een JSON object.
@@ -42,7 +41,6 @@ De property *total* bevat het totaal aantal beschikbare elementen. In bovenstaan
 voorbeeld staat het op 335, wat veel meer is dan de 100 objecten die zijn teruggegeven.
 Je weet dus dat je aanvullende calls moet doen om meer gegevens op te vragen.
 
-
 ## Paging parameters
 
 Elke methode die een lijst van objecten retourneert ondersteunt standaard
@@ -58,7 +56,6 @@ Het uitrekenen van het totaal aantal beschikbare objecten is een relatief zware
 operatie. Als jouw script de property *total* in de geretourneerde JSON negeert, 
 dan kun je net zo goed al van te voren aangeven dat deze property niet hoeft
 te worden berekend. Dit maakt de API call iets sneller.
-
 
 ## Voorbeeld in PHP
 
@@ -82,7 +79,6 @@ alleen de tweede vijf items kunt opvragen.
     print_r($api->get("databases", $parameters));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
-
 
 ## Meer informatie
 

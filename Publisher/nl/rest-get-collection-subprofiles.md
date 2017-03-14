@@ -5,7 +5,7 @@ en beschikbaar via het volgende adres:
 
 `https://api.copernica.com/v1/collection/$id/subprofiles?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen.
 
 ## Beschikbare parameters

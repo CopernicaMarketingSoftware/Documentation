@@ -6,7 +6,7 @@ sturen naar het volgende adres:
 
 `https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
 
-De code $id moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
 
 ## Beschikbare parameters
@@ -51,7 +51,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
