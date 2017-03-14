@@ -22,7 +22,7 @@ the object will remain the same.
 
 ## PHP example
 
-The following PHP script demonstrates how the API method can be called.
+The following PHP script demonstrateshow the API method can be called.
 In this example the interests of a profile with ID 4567 are modified.
 For profile 1234 the interests "tennis" and "hockey" are activated and the 
 interest "football" is deactivated. All other interests remain the same.
