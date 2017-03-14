@@ -87,47 +87,6 @@ one that we take care of. We've explained this in more detail in a seperate arti
 
 * [Setting up DMARC](./dmarc.md)
 
-Setting up sender domains can best be done via the Copernica Marketing Suite instead
-of the old Copernica Publisher. Although Copernica Publisher also has forms to 
-change the Sender Domain settings, the interface in Marketing Suite is more 
-advanced, and helps you in setting things up. With green checks and red
-warnings we show whether you've created the right aliases.
-
-
-## Manual settings in Publisher
-
-If you use the old Publisher, you will find all sorts for forms and dialog windows
-to manually configure the picserver and envelope domains, and to manually edit private 
-DKIM keys. These are all outdated forms that were used before the Sender Domain
-technology was introduced. You no longer need these forms and you can better use
-the new Sender Domain dashboard from the Marketing Suite. These forms are only 
-useful for customers who have not yet switched to Sender Domains.
-
-If you do still use these outdated forms, it is better to switch to Sender Domains.
-Configuring your DNS using Sender Domains is safer and easier, and will eventually
-lead to a better deliverability because with a Sender Domains based setup all hyperlinks 
-and addresses in your mailings are aligned. However, if you do switch from the old manual settings 
-to Sender Domains we do recommend to do this slowly. Generally speaking, it is 
-better not to change all your mail settings at once, because receivers do not like 
-these sudden changes. If you've built up a good reputation with your current settings,
-you better keep them for a while, and slowly move over to the Sender Domain settings.
-In the Sender Domain configuration dialog in Publisher you can find a special tab 
-where you can enter a deployment percentage. This setting allows you to slowly 
-roll out your new Sender Domain configuration.
-
-People often ask us what percentage to use to slowly move to Sender Domains. 
-There is not a single answer to this question, and it very much depends on your 
-current sender reputation and the number of messages that you send. If you've
-configured Sender Domains we normally advise to start with a small percentage, 
-say 10%. This means that 10% of your mails will be sent using the Sender Domain
-settings, while 90% is still sent with the old settings. One out of ten messages
-will use the new envelope- and tracking domains that are configured in the 
-Sender Domain, and the other messages still use the old picserver domain.
-
-After a couple of days you can then check the statistics. Did you notice a rise
-in the number of errors? Or does everything seem to be ok. Normally things are
-ok and you can grow the percentage, for example to 25%. In a number of steps
-(for example 10% - 25% - 50% - 75% - 100%) you can roll out a Sender Domain. 
-The actual size of the steps depends on the size of your database. If your database
-contains a couple of hundred addresses you can take bigger steps, but with
-millions of addresses you want to roll it out more slowly.
+Setting up sender domains can be done via the advanced interface of the Marketing Suite.
+With green checks and red warnings we show whether you've created the right aliases.
+No hassle whatsoever. 
