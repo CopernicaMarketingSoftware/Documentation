@@ -1,19 +1,23 @@
 # REST API: adding interests to a profile
 
-To add interests to a profile an HTTP post request can be sent to the following URL:
+To add interests to a profile an HTTP post request can be sent to the 
+following URL:
 
 `https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
-The $id should be replaced with the ID of the profile you want to change the interests of. The new interests of the profile can be placed in the body of the message.
+The $id should be replaced with the ID of the profile you want to change 
+the interests of. The new interests of the profile can be placed in the 
+body of the message.
 
 ## Body data
 
-There are two ways to define the body data, which will influence how the method works.
-This method is able to add interest and disable existing ones. If you want to overwrite 
-all current interests please see the documentation on [overwriting profile interests](rest-put-profile-interests).
+There are two ways to define the body data, which will influence how the
+method works. This method is able to add interest and disable existing ones. 
+If you want to overwrite all current interests please see the documentation
+on [overwriting profile interests](rest-put-profile-interests).
 
-The first way to add interests is to send an array of interests. They will be added to
-the profile and the existing interests will remain the same.
+The first way to add interests is to send an array of interests. They will
+be added to the profile and the existing interests will remain the same.
 
 It is also possible to sent an object as the body data. The keys to this object should
 be the interests and the values booleans that determine whether or not the interests should

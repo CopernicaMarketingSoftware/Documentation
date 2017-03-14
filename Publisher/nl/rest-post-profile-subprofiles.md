@@ -36,7 +36,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     );
     
     // voer het verzoek uit
-    $api->post("profile/1234/interests", $data);
+    $api->post("profile/1234/subprofiles", $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 

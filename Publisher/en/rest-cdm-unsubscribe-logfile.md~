@@ -1,23 +1,21 @@
-# REST API: Retry Record information
+# Unsubscribe Record Information
 
-For messages sent via Marketing Suite that could not directly be delivered
-we retry the delivery. These retries are logged  in the the cdm-retry log
-files. You can download the content of these files in CSV, JSON, and XML
-format using the [REST logfiles API](rest-get-logfiles),
+Messages sent via Marketing Suite that triggered an unsubscribe are logged
+in the the cdm-unsubscribe log files. You can download the content of these
+files in CSV, JSON, and XML format using the [REST logfiles API](./rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
 
-| Data         | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| id           | The ID for which we retry a delivery                      |
-| time         | The time of the retry                                     |
-| attempt      | The number of retries so far (counting form 0)            |
-| email        | The email address of the original mail for which we retry |
-| tags         | The tags of the mail (semicolon separated)                |
-| senderdomain | The sender domain who sent the original mail              |
-| profile      | The ID of the profile                                     |
-| subprofile   | The ID of the subprofile                                  |
-| template     | The ID of the used template                               |
+| Data         | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| id           | The ID of the message that triggered the unsubscibe                |
+| time         | The time when the unsubscribe was registered                       |
+| email        | The email address of the the message the triggered the unsubscribe |
+| tags         | The tags of the email (semicolon separated)                        |
+| senderdomain | The sender domain who has sent the message                         |
+| profile      | The ID of the profile                                              |
+| subprofile   | The ID of the subprofile                                           |
+| template     | The ID of the used template                                        |
 
 ## Other logfile names
 
@@ -27,7 +25,7 @@ respective order:
 * [Marketing suite delivery log](./rest-cdm-delivery-logfile)
 * [Marketing suite error log](./rest-cdm-error-logfile)
 * [Marketing suite impressions log](./rest-cdm-impression-logfile)
-* [Marketing suite unsubscribe log](./rest-cdm-impression-logfile)
+* [Marketing suite retry log](./rest-cdm-retry-logfile)
 * [Publisher general log](./rest-pom-attempts-logfile)
 * [Publisher abuse log](./rest-pom-abuses-logfile)
 * [Publisher clicks log](./rest-pom-clicks-logfile)
@@ -36,6 +34,7 @@ respective order:
 * [Publisher impressions log](./rest-pom-impressions-logfile)
 * [Publisher retry log](./rest-pom-retries-logfile)
 * [Publisher unsubscribe log](./rest-pom-unsubscribes-logfile)
+
 
 ## More information on logfiles
 

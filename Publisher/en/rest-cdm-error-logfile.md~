@@ -1,4 +1,4 @@
-# REST API: Error Record Information
+# Error Record Information
 
 Every message that triggered an error and was sent via Marketing Suite is 
 logged in the cdm-error log files. You can download the content of these
