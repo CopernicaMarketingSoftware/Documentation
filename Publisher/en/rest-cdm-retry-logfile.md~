@@ -1,4 +1,4 @@
-# REST API: Retry Record information
+# Retry Record information
 
 For messages sent via Marketing Suite that could not directly be delivered
 we retry the delivery. These retries are logged  in the the cdm-retry log

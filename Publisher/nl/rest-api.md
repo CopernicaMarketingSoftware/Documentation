@@ -90,6 +90,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 | GET       | [api.copernica.com/v1/subprofile/$id](./rest-get-subprofile.md)                                               | Opvragen subprofielgegevens                       |
 | GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields.md)                                 | Opvragen subprofielvelden                         |
 | GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles.md)                                                       | Opvragen van alle logfiles                        |
+| GET       | [https://api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					    | Opvragen van namen van logfiles                   |
 | GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv.md)                                             | Downloaden van logfile in CSV formaat             |
 | GET       | [api.copernica.com/v1/logfiles/$name/json](./rest-get-logfiles-json.md)                                       | Downloaden van logfile in JSON formaat            |
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml.md)                                         | Downloaden van logfile in XML formaat             |

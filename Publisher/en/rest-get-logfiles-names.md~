@@ -14,10 +14,10 @@ where `$date` is the date for which you want to see the logfiles.
 This method returns a JSON array of logfile name. The types of logfiles
 are provided in the table below. 
 
-| prefix                                            | type of information                                                |
-| --------------------------------------------------|--------------------------------------------------------------------|
+| prefix                                       | type of information                                                |
+| -------------------------------------------- | ------------------------------------------------------------------ |
 | [cdm-attempts](rest-cdm-attempts-logfile)         | General info about mails sent with Marketing Suite (MS)            |
-| [cdm-abuse](rest-cdm-abuse-logfile)               | Info about mails sent via MS that triggered a notification         |
+| [cdm-abuse](rest-cdm-abuse-logfile)               | Info about mails sent via MS that triggered a notification        |
 | [cdm-click](rest-cdm-click-logfile)               | Info about clicks generated from mails sent with MS                |
 | [cdm-delivery](rest-cdm-delivery-logfile)         | Info about delivered mails sent with MS                            |
 | [cdm-error](rest-cdm-error-logfile)               | Info about mails sent with MS that triggered an error              |

@@ -1,7 +1,7 @@
-# Unsubscribe Record Information
+# REST API: Unsubscribe Record Information
 
 Messages sent via Marketing Suite that triggered an unsubscribe are logged
-in the the cdm-unsubscribe log files. You can download the content of these
+in the cdm-unsubscribe log files. You can download the content of these
 files in CSV, JSON, and XML format using the [REST logfiles API](./rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:

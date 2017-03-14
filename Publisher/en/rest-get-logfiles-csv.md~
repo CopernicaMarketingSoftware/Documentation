@@ -13,9 +13,7 @@ In both URLs `$filename` is the name of the file you want to request.
 
 ## Returned value
 
-A csv file with optionally a header row of the requested log file. In the table below is an example 
-of what a CSV file could look like. In the real file, however, the values would be separated by commas 
-instead of lines in a table.
+A csv file with optionally a header row of the requested log file. An example with header is shown below.
 
 | id  |        time         | mailingid | profileid | subprofileid | databaseid | ... |
 |-----|---------------------|-----------|-----------|--------------|------------|-----|

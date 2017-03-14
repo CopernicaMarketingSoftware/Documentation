@@ -1,4 +1,4 @@
-# Click Record Information
+# REST API: Click Record Information
 
 Every click on every link from messages sent via Marketing Suite is
 logged in the cdm-click log files. You can download the content of these

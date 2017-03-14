@@ -1,4 +1,4 @@
-# REST API: Delivery Record Information
+# Delivery Record Information
 
 Every mail sent via Marketing Suite that is delivered is logged in the 
 cdm-delivery log files. You can download the content of these files 

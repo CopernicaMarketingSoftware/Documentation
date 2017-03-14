@@ -1,4 +1,4 @@
-# Abuse Record Information
+# REST API: Abuse Record Information
 
 Every message sent with Marketing Suite that triggered an abuse message is 
 logged in the cdm-abuse log files. You can download the content of these
