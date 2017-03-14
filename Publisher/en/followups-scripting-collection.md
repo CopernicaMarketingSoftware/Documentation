@@ -3,7 +3,7 @@
 A collection is a subset of a database and can be accessed in a datascript.
 To request a collection object please see the documentation on [the account object](./followups-scripting-copernica)
 
-## Available properties:
+## Available properties
 
 * **ID**: The ID of the collection (Read only)
 * **name**: The name of the collection (Read and write)

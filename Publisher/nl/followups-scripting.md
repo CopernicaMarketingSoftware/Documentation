@@ -12,7 +12,6 @@ Je kunt de scriptjes op een aantal manieren aan hyperlinks koppelen:
 * je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
 * of je kunt ze met de drag-and-drop editor invoeren. 
 
-
 ## Beschikbare objecten
 
 In het script kun je gebruik maken van verschillende voorgedefinieerde variabelen 

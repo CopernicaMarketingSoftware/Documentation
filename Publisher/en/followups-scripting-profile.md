@@ -23,5 +23,5 @@ profile. To request a profile object please see the documentation on [the accoun
 * [The data-script object](./followups-scripting)
 * [The **data** object](./followups-scripting-data)
 * [Database information](./followups-scripting-database)
-* [User profile information](./followups-scripting-profile)
+* [User subprofile information](./followups-scripting-subprofile)
 * [Destination information](./followups-scripting-destination)
