@@ -11,7 +11,7 @@ maken zorg je dat zulke bounces daadwerkelijk bij Copernica terecht komen.
 
 ## Envelope adressen
 
-Om te begrijpen waarom je een MX record moet aanmaken, moet we eigenlijk twee
+Om te begrijpen waarom je een MX record moet aanmaken, moeten we eigenlijk twee
 dingen uitleggen. Namelijk ten eerste wat een *envelope adres* is en wat dat te 
 maken heeft met bounces en out-of-office replies, en ten tweede hoe een MX
 record eigenlijk wordt gebruikt. We beginnen bij het begin: bij het envelope adress.
@@ -80,7 +80,7 @@ volgende schema:
         <td><strong>CNAME record dat ook werkt</strong></td>
     </tr>
     <tr>
-        <td>MX 0 publisher.copernica.nl</td>
+        <td>MX 0 ms.copernica.com</td>
         <td>CNAME feedback.copernica.com</td>
     </tr>
     <tr>
@@ -92,7 +92,6 @@ volgende schema:
 In bovenstaande tabel kun je in de linkerkolom opzoeken welk advies het dashboard
 je geeft, en in de rechterkolom welk CNAME record je daarvoor in de plaats ook
 zou kunnen gebruiken. Kortom, als het dashboard je adviseert om een MX record 
-voor "feedback.jouwdomein.nl" aan te maken met de waarde "0 publisher.copernica.nl",
+voor "feedback.jouwdomein.nl" aan te maken met de waarde "0 ms.copernica.com",
 dan kun je dus ook een CNAME record aanmaken voor "feedback.jouwdomein.nl" met
 de waarde "feedback.copernica.com".
-
