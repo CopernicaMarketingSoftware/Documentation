@@ -8,7 +8,6 @@ binnen alle scripts gemaakt met deze account.
 ## Beschikbare eigenschappen
 
 * **data**: zie de documentatie van [het data object](./followups-scripting-data)
-* **properties**: de [informatie over het account](./followups-scripting-copernica-properties)
 
 ## Beschikbare functies
 

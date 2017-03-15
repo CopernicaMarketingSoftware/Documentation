@@ -9,10 +9,10 @@ hierover vinden bij [het account object](./followups-scripting-copernica)
 * **ID**: ID van de collectie (Read only)
 * **name**: Naam van de collectie (Read and write)
 * **created**: Tijdstip waarop de collectie is aangemaakt (Read only)
-* **data**: Zie de documentatie over [de data variabele](./followups-scripting-data)
 * **subprofiles** Een array met [subprofielen](./followups-scripting-data) in deze collectie. 
 Het ID van een subprofiel kan als key gebruikt worden om een subprofiel object 
 uit de array op te vragen (zie voorbeeld).
+* **data**: Zie de documentatie over [de data variabele](./followups-scripting-data)
 
 ## Voorbeeld
 

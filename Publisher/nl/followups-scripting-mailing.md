@@ -5,8 +5,10 @@ mailing is al geweest, dus je kunt alleen zijn eigenschappen lezen en niet
 bewerken.
 
 ## Beschikbare eigenschappen
+
 * **ID**: ID van de mailing (Read-only)
 * **subject**: Onderwerp van de mailing (Read-only)
+* **data**: Zie documentatie over [het data object](./followups-scripting-data)
 
 ## Voorbeeld
 

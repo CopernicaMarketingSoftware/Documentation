@@ -7,6 +7,7 @@ een [template](./followups-scripting-template).
 * **name**: Naam van de snapshot (Read-only property)
 * **source**: De broncode van de snapshot (Read-only property)
 * **subject**: Het onderwerp van de snapshot. (Read-only property)
+* **data**: Zie documentatie over [het data object](./followups-scripting-data)
 
 ## Voorbeeld
 
