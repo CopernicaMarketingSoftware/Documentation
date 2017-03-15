@@ -1,7 +1,10 @@
 # Followups: Copernica Properties
 
 The **properties** in the Copernica object contains functions to retrieve 
-information about the account, including:
+information about the account which can be found in the list below.
+Many of these functions accept a filter to return a collection of objects that 
+fit the criteria from the filter. By using "null" as a filter in these functions 
+you can retrieve all objects of this type for the account.
 
 * **name()**: get account name
 * **setName($newName)**: set account name
@@ -11,7 +14,7 @@ information about the account, including:
 * **setApplication(PxCDMApplication $application)**: set application with settings and preferences
 * **environment()**: retrieve linked responsive environment
 * **setEnvironment(PxCDMResponsiveEnvironment $environment)**: set linked responsive environment
-* **apiAccessTokens(PxCDMApiAccessTokenFilter $filter)**: the applications that have access
+* **apiAccessTokens(PxCDMApiAccessTokenFilter $filter)**: applications the account has access to
 * **limiter()**: limiter to limit usage
 * **main()**: check if main account for this customer
 * **setMain()**: set this account as main account for customer
@@ -43,7 +46,7 @@ information about the account, including:
 * **articleUrl($identifier)**: get article url by ID
 * **articleUrls(PxCDMArticleUrlFilter $filter)**: get all/filtered article URLs for this account
 * **pipe($id)**: retrieve a pipe by ID
-* **pipes(PxCDMPipeFilter $filter)**: get all/filtered pipes by ID
+* **pipes(PxCDMPipeFilter $filter)**: get all/filtered pipes
 * **createPipe($name)**: create a new pipe
 * **consumption(PxtMonth $month)**: get consumption statistics
 * **consumptionReport(PxtDateTimeRange $range)**: get consumption report over given period
