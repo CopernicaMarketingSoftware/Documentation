@@ -15,7 +15,7 @@ Copernica with your own system, without any human interference.
 The following table lists all methods that are accessible through HTTP GET, POST, PUT en DELETE:
 
 | Method    | Address                                                                                                   | Description                                   |
-| --------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+|-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | GET       | [api.copernica.com/v1/identity](./rest-get-identity)                                                      | Fetch API access token identity               |
 | GET       | [api.copernica.com/v1/databases](./rest-get-databases)                                                    | Fetch databases                               |
 | POST      | [api.copernica.com/v1/databases](./rest-post-databases)                                                   | Create a new database                         |
