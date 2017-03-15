@@ -60,7 +60,7 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                                      | Edit profile fields                           |
 | GET       | [api.copernica.com/v1/profile/$id/interests](./rest-get-profile-interests)                                | Fetch profile interests                       |
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                               | Add interests to profile                      |
-| PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Edit profile interests                   	|
+| PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Edit profile interests                        |
 | GET       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-get-profile-subprofiles)                            | Fetch subprofiles of a profile                |
 | POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)                           | Create subprofile                             |
 | GET       | [api.copernica.com/v1/collection/$id](./rest-get-collection)                                              | Fetch collection data                         |
@@ -69,20 +69,20 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields)                               | Create collection field                       |
 | PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field)                              | Edit collection field                         |
 | DELETE    | [api.copernica.com/v1/collection/$id/field/$id](./rest-delete-collection-field)                           | Remove collection field                       |
-| GET       | [api.copernica.com/v1/collection/$id/miniviews](./rest-get-collection-miniviews)                          | Fetch miniviews                          	|
-| POST      | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews)                         | Create miniview                          	|
+| GET       | [api.copernica.com/v1/collection/$id/miniviews](./rest-get-collection-miniviews)                          | Fetch miniviews                            	|
+| POST      | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews)                         | Create miniview                            	|
 | GET       | [api.copernica.com/v1/collection/$id/subprofiles](./rest-get-collection-subprofiles)                      | Fetch subprofiles from a collection           |
 | GET       | [api.copernica.com/v1/collection/$id/subprofileids](./rest-get-collection-subprofileids)                  | Fetch subprofile IDs from a collection        |
 | GET       | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)                      | Fetch collection unsubscribe behavior         |
 | PUT       | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)                      | Update collection unsubscribe behavior        |
-| GET       | [api.copernica.com/v1/miniview/$id](./rest-get-miniview)                                                  | Fetch miniview data                      	|
-| PUT       | [api.copernica.com/v1/miniview/$id](./rest-put-miniview)                                                  | Update miniview data                     	|
-| DELETE    | [api.copernica.com/v1/miniview/$id](./rest-delete-miniview)                                               | Remove miniview                          	|
-| GET       | [api.copernica.com/v1/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)                          | Fetch subprofiles in a miniview          	|
+| GET       | [api.copernica.com/v1/miniview/$id](./rest-get-miniview)                                                  | Fetch miniview data                      	    |
+| PUT       | [api.copernica.com/v1/miniview/$id](./rest-put-miniview)                                                  | Update miniview data                     	    |
+| DELETE    | [api.copernica.com/v1/miniview/$id](./rest-delete-miniview)                                               | Remove miniview                          	    |
+| GET       | [api.copernica.com/v1/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)                          | Fetch subprofiles in a miniview          	    |
 | GET       | [api.copernica.com/v1/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)                      | Fetch subprofile identifiers                  |
-| GET       | [api.copernica.com/v1/miniview/$id/rules](./rest-get-miniview-rules)                                      | Fetch miniview rules                     	|
-| POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules)                                     | Create miniview rule                     	|
-| GET       | [api.copernica.com/v1/miniview/$id/rule/$id](./rest-get-miniview-rule)                                    | Fetch miniview rule                      	|
+| GET       | [api.copernica.com/v1/miniview/$id/rules](./rest-get-miniview-rules)                                      | Fetch miniview rules                     	    |
+| POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules)                                     | Create miniview rule                     	    |
+| GET       | [api.copernica.com/v1/miniview/$id/rule/$id](./rest-get-miniview-rule)                                    | Fetch miniview rule                      	    |
 | GET       | [api.copernica.com/v1/minirule/$id](./rest-get-minirule)                                                  | Fetch miniselection rule                      |
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule)                                                  | Edit miniselection rule                       |
 | DELETE    | [api.copernica.com/v1/minirule/$id](./rest-delete-minirule)                                               | Remove miniselection rule                     |
@@ -91,7 +91,7 @@ The following table lists all methods that are accessible through HTTP GET, POST
 | GET       | [api.copernica.com/v1/subprofile/$id](./rest-get-subprofile)                                              | Fetch subprofile data                         |
 | GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields)                                | Fetch subprofile fields                       |
 | GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles)                                                      | Fetch all logfiles                            |
-| GET       | [https://api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					| Logfile names					|
+| GET       | [https://api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					                | Logfile names					                |
 | GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv)                                            | Download logfile in CSV format                |
 | GET       | [api.copernica.com/v1/logfiles/$name/json](./rest-get-logfiles-json)                                      | Download logfile in JSON format               |
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml)                                        | Download logfile in XML format                |
