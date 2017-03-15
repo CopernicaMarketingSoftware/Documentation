@@ -1,6 +1,6 @@
 # Followups: mailing variabele
 
-De mailing variabele kan gebruikt worden in het data-script object. Een 
+De **mailing** variabele kan gebruikt worden in het data-script object. Een 
 mailing is al geweest, dus je kunt alleen zijn eigenschappen lezen en niet 
 bewerken.
 

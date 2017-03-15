@@ -1,6 +1,6 @@
 # Followups: template variable
 
-A variable that gives access to a unpersonalized template.
+A variable that gives access to a unpersonalized **template**.
 
 ## Available properties:
 

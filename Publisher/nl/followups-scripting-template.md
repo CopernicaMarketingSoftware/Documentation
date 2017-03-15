@@ -1,6 +1,6 @@
 # Followups: template variabele
 
-Variabele die toegang geeft tot een niet-gepersonalizeerde template.
+Variabele die toegang geeft tot een niet-gepersonalizeerde **template**.
 
 ## Beschikbare eigenschappen
 

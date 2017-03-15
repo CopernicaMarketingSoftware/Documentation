@@ -1,6 +1,6 @@
 # Followups: subprofile variabele
 
-In het data-script object kun je informatie opvragen over elk subprofiel.
+In het data-script object kun je informatie opvragen over elk **subprofiel**.
 Van een profiel kun je informatie opvragen en aanpassen. Om een subprofiel op 
 te vragen kun je meer informatie vinden in de documentatie over [het account object](./followups-scripting-copernica)
 

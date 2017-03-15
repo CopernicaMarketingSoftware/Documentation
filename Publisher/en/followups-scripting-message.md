@@ -1,13 +1,13 @@
 # Followups: message variable
 
-A variable that gives access to personalized snapshot of a template.
+A variable that gives access to personalized **snapshot** of a template.
 
 ## Available properties
 
 * **name**: The name of the snapshot (Read-only property)
 * **source**: The source code of the personalized snapshot (Read-only property)
 * **subject**: The subject of the snapshot (Read-only property)
-* **data**: See the documentation on [the **data** object](./followups-scripting-data)
+* **data**: See the documentation on [the data object](./followups-scripting-data)
 
 ## Example
 

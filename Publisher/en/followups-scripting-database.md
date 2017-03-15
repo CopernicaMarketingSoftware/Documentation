@@ -1,6 +1,6 @@
 # Followups: database variable
 
-A database linked to your account can be accessed in the data-scripts. 
+A **database** linked to your account can be accessed in the data-scripts. 
 To request a database object please see the documentation on [the account object](./followups-scripting-copernica)
 It is also possible to edit some of the information in the database.
 
