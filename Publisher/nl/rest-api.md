@@ -14,7 +14,7 @@ Dit gaat automatisch, dus buiten de *user interface* om.
 De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE:
 
 | Methode   | Adres                                                                                                         | Omschrijving                                      |
-| --------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+|-----------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | GET       | [api.copernica.com/v1/identity](./rest-get-identity.md)                                                       | Opvragen identiteit van API koppeling             |
 | GET       | [api.copernica.com/v1/databases](./rest-get-databases.md)                                                     | Opvragen databases                                |
 | POST      | [api.copernica.com/v1/databases](./rest-post-databases.md)                                                    | Aanmaken nieuwe database                          |
