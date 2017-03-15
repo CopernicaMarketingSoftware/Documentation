@@ -16,7 +16,8 @@ Keys in this array are profile IDs (see example).
 * **data**: see the documentation on [the data object](./followups-scripting-data)
 
 ## Example profile retrieval
-To retrieve a profile from a database you can use the following javascript code.
+
+The following example in javascript can be used to access a profile from a database.
 
     <script> 
     var profileID = 54840;

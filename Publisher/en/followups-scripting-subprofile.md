@@ -19,7 +19,7 @@ subprofile object please see the documentation on [the account object](./followu
 
 ## Example
 
-This javascript code shows how to retrieve the value from a profile field.
+The following example in javascript can be used to access the "age" field of a subprofile.
 
     <script> 
     var profileAge = subprofile.fields.age

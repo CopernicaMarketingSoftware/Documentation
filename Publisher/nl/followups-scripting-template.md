@@ -11,11 +11,10 @@ Variabele die toegang geeft tot een niet-gepersonalizeerde template.
 
 ## Voorbeeld
 
-Het volgende voorbeeld in javascript laat zien hoe je het onderwerp van 
-een mailing opvraagt.
+Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
     <script> 
-    var mySubject = mailing.subject
+    var mySubject = template.subject
     </script>
 
 ## Meer informatie

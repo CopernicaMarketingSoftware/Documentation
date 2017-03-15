@@ -19,7 +19,7 @@ binnen alle scripts gemaakt met deze account.
 
 ## Voorbeeld
 
-Het volgende voorbeeld laat zien hoe je een database op kunt vragen.
+Met het volgende voorbeeld in javascript kun je een database van een account opvragen.
 
     <script> 
     var databaseName = "My database";

@@ -10,8 +10,7 @@ bewerken.
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing 
-opvragen.
+Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
     <script> 
     var mySubject = mailing.subject
