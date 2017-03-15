@@ -1,4 +1,4 @@
-# Followups: **mailing** variable
+# Followups: mailing variable
 
 The mailing variable can also be accessed in the data-script object. From 
 a mailing object you can access its properties, but not edit them.
@@ -9,4 +9,4 @@ a mailing object you can access its properties, but not edit them.
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [The **data** object](./followups-scripting-data)
+* [The data object](./followups-scripting-data)

@@ -1,4 +1,4 @@
-# Followups: **subprofile** variable
+# Followups: subprofile variable
 
 A variable that gives access to current subprofile. To request a 
 subprofile object please see the documentation on [the account object](./followups-scripting-copernica)
@@ -19,6 +19,6 @@ subprofile object please see the documentation on [the account object](./followu
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [The **data** object](./followups-scripting-data)
+* [The data object](./followups-scripting-data)
 * [User profile information](./followups-scripting-profile)
 * [Destination information](./followups-scripting-destination)
