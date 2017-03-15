@@ -18,11 +18,11 @@ Keys in this array are profile IDs (see example).
 ## Example profile retrieval
 To retrieve a profile from a database you can use the following javascript code.
 
-    <script\> 
+    <script> 
     var profileID = 54840;
 
     var someProfile = database.profiles[profileID];
-    </script\>
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

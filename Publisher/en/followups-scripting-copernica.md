@@ -24,11 +24,11 @@ can be returned
 
 This example show how to access a database.
 
-    <script\> 
+    <script> 
     var databaseName = "My database";
 
     var myDatabase = copernica.database(databaseName);
-    </script\>
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

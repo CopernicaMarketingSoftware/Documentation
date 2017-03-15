@@ -12,9 +12,9 @@ a mailing object you can access its properties, but not edit them.
 
 This following line of code shows how to retrieve a subject from a mailing.
 
-    <script\> 
+    <script> 
     var mySubject = mailing.subject
-    </script\>
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

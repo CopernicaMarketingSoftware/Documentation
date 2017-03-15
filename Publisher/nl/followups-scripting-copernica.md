@@ -21,11 +21,11 @@ binnen alle scripts gemaakt met deze account.
 
 Het volgende voorbeeld laat zien hoe je een database op kunt vragen.
 
-    <script\> 
+    <script> 
     var databaseName = "My database";
 
     var myDatabase = copernica.database(databaseName);
-    </script\>
+    </script>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

@@ -16,11 +16,11 @@ object from the array (see example).
 ## Example
 To retrieve a subprofile from a collection you can use the following javascript code.
 
-    <script\> 
+    <script> 
     var subProfileID = 54840;
 
     var someSubProfile = collection.subprofiles[subProfileID];
-    </script\>
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

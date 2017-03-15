@@ -13,9 +13,9 @@ A variable that gives access to a unpersonalized template.
 
 The following javascript code shows how to request the subject of a mailing.
 
-    <script\> 
+    <script> 
     var mySubject = mailing.subject
-    </script\>
+    </script>
 
 ## More information
 

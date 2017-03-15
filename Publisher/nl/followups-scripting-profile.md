@@ -24,9 +24,9 @@ Met het volgende voorbeeld in javascript kun je een veld van een profiel
 opvragen. In dit geval vragen we de leeftijd op, maar je kunt elk veld in 
 het profiel op deze manier opvragen.
 
-    <script\> 
+    <script> 
     var profileAge = profile.fields.age
-    </script\>
+    </script>
 
 ## Meer informatie
 
