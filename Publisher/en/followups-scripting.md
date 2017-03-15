@@ -10,7 +10,7 @@ the Copernica servers.
 There are a couple of ways how you can attach a script to hyperlinks:
 
 * using the *data-script* attribute on &lt;a&gt; tags
-* if you use the drag-and-drop editor in the follow-up form
+* using the drag-and-drop editor in the follow-up form
 
 ## Available objects
 
@@ -19,13 +19,18 @@ the (sub)profile that clicked on the link and other data that is relevant for
 the click. Each of these objects have readonly properties to get data and some
 writable properties to change them as well. The following variables are accessible:
 
-* [**copernica**](./followups-scripting-copernica.md)
-* [**message**](./followups-scripting-message.md)
-* [**mailing**](./followups-scripting-mailing.md)
-* [**template**](./followups-scripting-template.md)
-* [**profile**](./followups-scripting-profile.md)
-* [**subprofile**](./followups-scripting-subprofile.md)
-* [**destination**](./followups-scripting-destination.md)
+* [**copernica**](./followups-scripting-copernica)
+* [**mailing**](./followups-scripting-mailing)
+* [**message**](./followups-scripting-message)
+* [**template**](./followups-scripting-template)
+* [**database**](./followups-scripting-database)
+* [**collection**](./followups-scripting-collection)
+* [**profile**](./followups-scripting-profile)
+* [**subprofile**](./followups-scripting-subprofile)
+* [**destination**](./followups-scripting-destination)
+
+A few of these objects also have [the data object](./followups-scripting-data), 
+which you can use to store your own information regarding the object.
 
 ## A very simple example
 
@@ -36,9 +41,10 @@ link like this you can use the following code:
 
     <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 
-The above example is a very simple one. The data-script is executed when the
-link is clicked and sets the profile field "newsletter" to "no". Now the 
-user will be in the system, but not receive any newsletters.
+While the example above is very simple you can write a lot more complicated 
+data-scripts. This data-script is executed when the link is clicked and 
+sets the profile field "newsletter" to "no". Now the user will be in the system, 
+but not receive any newsletters.
 
 Before an email is delivered, the data-script is removed from the original code. Your
 receivers therefore do not get to see the script when they open the source code of

@@ -9,6 +9,15 @@ Variabele die toegang geeft tot een niet-gepersonalizeerde template.
 * **subject**: Onderwerp van de templates (Read, write)
 * **data**: Zie documentatie over [the data object](./followups-scripting-data)
 
+## Voorbeeld
+
+Het volgende voorbeeld in javascript laat zien hoe je het onderwerp van 
+een mailing opvraagt.
+
+    <script\> 
+    var mySubject = mailing.subject
+    </script\>
+
 ## Meer informatie
 * [Het data-script object](./followups-scripting)
 * [Het data object](./followups-scripting-data)

@@ -26,3 +26,12 @@ actions.
 ## More information
 
 * [The data-script object](./followups-scripting)
+* [Copernica/Account variable](./followups-scripting-copernica)
+* [Database variable](./followups-scripting-database)
+* [Collection variable](./followups-scripting-collection)
+* [Profile variable](./followups-scripting-profile)
+* [Subprofile variable](./followups-scripting-subprofile)
+* [Destination variable](./followups-scripting-profile)
+* [Mailing variable](./followups-scripting-mailing)
+* [Template variable](./followups-scripting-template)
+* [Message variable](./followups-scripting-message)

@@ -12,13 +12,23 @@ inside this account.
 
 ## Available functions
 
-* **database**: with the name or ID of the database as a key the database 
+* **database**: with the name or ID of the [database](./followups-scripting-database) as a key the database 
 can be returned
-* **collection**: with the ID of the collection as a key the collection 
+* **collection**: with the ID of the [collection](./followups-scripting-collection) as a key the collection 
 can be returned
-* **profile**: with the ID of a profile as a key the profile can be returned
-* **subprofile**: with the ID of a subprofile as a key the subprofile 
+* **profile**: with the ID of a [profile](./followups-scripting-profile) as a key the profile can be returned
+* **subprofile**: with the ID of a [subprofile](./followups-scripting-subprofile) as a key the subprofile 
 can be returned
+
+## Example
+
+This example show how to access a database.
+
+    <script\> 
+    var databaseName = "My database";
+
+    var myDatabase = copernica.database(databaseName);
+    </script\>
 
 ## More information
 * [The data-script object](./followups-scripting)
