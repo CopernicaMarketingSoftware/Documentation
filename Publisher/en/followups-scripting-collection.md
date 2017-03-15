@@ -1,4 +1,4 @@
-# Followups: **collection** variable
+# Followups: collection variable
 
 A collection is a subset of a database and can be accessed in a datascript.
 To request a collection object please see the documentation on [the account object](./followups-scripting-copernica)

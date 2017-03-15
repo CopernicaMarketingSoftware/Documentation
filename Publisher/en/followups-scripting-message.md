@@ -1,4 +1,4 @@
-# Followups: **message** variable
+# Followups: message variable
 A variable that gives access to personalized snapshot of a template.
 
 ## Available properties
@@ -9,5 +9,5 @@ A variable that gives access to personalized snapshot of a template.
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [The **data** object](./followups-scripting-data)
+* [The data object](./followups-scripting-data)
 * [Template information](./followups-scripting-template)

@@ -1,4 +1,4 @@
-# Followups: **profile** variable
+# Followups: profile variable
 
 In the data-script object you can access information about any profile. 
 From a profile object you request and edit the information of the current 
@@ -21,7 +21,7 @@ profile. To request a profile object please see the documentation on [the accoun
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [The **data** object](./followups-scripting-data)
+* [The data object](./followups-scripting-data)
 * [Database information](./followups-scripting-database)
 * [User subprofile information](./followups-scripting-subprofile)
 * [Destination information](./followups-scripting-destination)

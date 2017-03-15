@@ -1,4 +1,4 @@
-# Followups: **data** variable
+# Followups: data variable
 
 The data variable can be used to store information for your data-scripts 
 and is empty until used. It works similar to the fields parameters for a 
@@ -11,7 +11,7 @@ and you want to keep track of which items they clicked. In the following example
 we'll show you a script (that you can put in the data-script environment) 
 to store a click on a specific item.
 
-<script\> profile.data.clickedSaleItem1 = "yes" </script\>
+    <script\> profile.data.clickedSaleItem1 = "yes" </script\>
 
 By embedding this script in every link we can now see which items have been 
 clicked. In our next data-script we can use this value to perform certain 

@@ -1,4 +1,4 @@
-# Followups: **template** variable
+# Followups: template variable
 
 A variable that gives access to a unpersonalized template.
 
@@ -11,5 +11,5 @@ A variable that gives access to a unpersonalized template.
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [The **data** object](./followups-scripting-data)
+* [The data object](./followups-scripting-data)
 * [Personalized template](./followups-scripting-data)
