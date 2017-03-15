@@ -13,9 +13,9 @@ A variable that gives access to personalized snapshot of a template.
 
 The following example shows how to retrieve the source code for a message.
     
-    <script\> 
+    <script> 
     var mySourceCode = message.source
-    </script\>
+    </script>
 
 ## More information
 

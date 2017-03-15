@@ -19,11 +19,11 @@ uit de array op te vragen (zie voorbeeld).
 Met het volgende voorbeeld in javascript kun je een subprofiel uit een 
 collectie opvragen.
 
-    <script\> 
+    <script> 
     var subProfileID = 54840;
 
     var someSubProfile = collection.subprofiles[subProfileID];
-    </script\>
+    </script>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

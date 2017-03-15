@@ -17,11 +17,11 @@ By embedding this script in every link we can now see which items have been
 clicked. In our next data-script we can use this value to perform certain 
 actions.
 
-    <script\> 
+    <script> 
     if (profile.data.clickedSaleItem1 = "yes") {
         // Your action
     }
-    </script\>
+    </script>
 
 ## More information
 

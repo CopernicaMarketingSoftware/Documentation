@@ -21,11 +21,11 @@ die gebruikt kunnen worden om de profielen zelf op te vragen.
 Met het volgende voorbeeld in javascript kun je een profiel uit een database 
 opvragen.
 
-    <script\> 
+    <script> 
     var profileID = 54840;
 
     var someProfile = database.profiles[profileID];
-    </script\>
+    </script>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

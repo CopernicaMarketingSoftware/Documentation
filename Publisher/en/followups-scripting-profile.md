@@ -23,9 +23,9 @@ profile. To request a profile object please see the documentation on [the accoun
 
 This javascript code shows how to retrieve the value from a profile field.
 
-    <script\> 
+    <script> 
     var profileAge = profile.fields.age
-    </script\>
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)
