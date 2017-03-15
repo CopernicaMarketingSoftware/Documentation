@@ -8,7 +8,7 @@ inside this account.
 ## Available properties
 
 * **data**: see the documentation on [the data object](./followups-scripting-data)
-* **properties**: accessible account properties
+* **properties**: accessible account [properties](./followups-scripting-copernica-properties)
 
 ## Available functions
 
@@ -24,12 +24,8 @@ can be returned
 
 The following example in javascript can be used to access a database from an account.
 
-    <script>
-    
     var databaseName = "My database";
     var myDatabase = copernica.database(databaseName);
-    
-    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)
@@ -37,3 +33,4 @@ The following example in javascript can be used to access a database from an acc
 * [User profile information](./followups-scripting-profile)
 * [User subprofile information](./followups-scripting-subprofile)
 * [Destination information](./followups-scripting-destination)
+* [Copernica variable properties](./followups-scripting-copernica-properties)

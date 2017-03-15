@@ -21,12 +21,8 @@ binnen alle scripts gemaakt met deze account.
 
 Met het volgende voorbeeld in javascript kun je een database van een account opvragen.
 
-    <script> 
-    
     var databaseName = "My database";
     var myDatabase = copernica.database(databaseName);
-    
-    </script>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

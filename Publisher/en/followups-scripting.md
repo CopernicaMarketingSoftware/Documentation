@@ -19,15 +19,17 @@ the (sub)profile that clicked on the link and other data that is relevant for
 the click. Each of these objects have readonly properties to get data and some
 writable properties to change them as well. The following variables are accessible:
 
-* [**copernica**](./followups-scripting-copernica)
-* [**mailing**](./followups-scripting-mailing)
-* [**message**](./followups-scripting-message)
-* [**template**](./followups-scripting-template)
-* [**database**](./followups-scripting-database)
-* [**collection**](./followups-scripting-collection)
-* [**profile**](./followups-scripting-profile)
-* [**subprofile**](./followups-scripting-subprofile)
-* [**destination**](./followups-scripting-destination)
+| Variable name                                         | Description
+|-------------------------------------------------------|--------------------------------------|
+| [**copernica**](./followups-scripting-copernica)      | Copernica account                    |
+| [**mailing**](./followups-scripting-mailing)          | Previous mailing                     |
+| [**message**](./followups-scripting-message)          | Personalized template                |
+| [**template**](./followups-scripting-template)        | Standard template                    |
+| [**database**](./followups-scripting-database)        | Database                             |
+| [**collection**](./followups-scripting-collection)    | Collection (subset of database)      |
+| [**profile**](./followups-scripting-profile)          | Profile                              |
+| [**subprofile**](./followups-scripting-subprofile)    | Subprofile (profile from collection) |
+| [**destination**](./followups-scripting-destination)  | Receiver (profile/subprofile)        |
 
 A few of these objects also have [the data object](./followups-scripting-data), 
 which you can use to store your own information regarding the object.

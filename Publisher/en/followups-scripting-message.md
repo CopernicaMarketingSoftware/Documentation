@@ -13,9 +13,7 @@ A variable that gives access to personalized **snapshot** of a template.
 
 The following example in javascript can be used to access the source code for a personalized template.
     
-    <script> 
     var mySourceCode = message.source;
-    </script>
 
 ## More information
 
