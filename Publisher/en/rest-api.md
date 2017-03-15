@@ -91,7 +91,7 @@ POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-
 GET       | [api.copernica.com/v1/subprofile/$id](./rest-get-subprofile)                                              | Fetch subprofile data                         
 GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields)                                | Fetch subprofile fields                       
 GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles)                                                      | Fetch all logfiles                            
-GET       | [https://api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					              | Logfile names					                
+GET       | [api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					                      | Logfile names					                
 GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv)                                            | Download logfile in CSV format                
 GET       | [api.copernica.com/v1/logfiles/$name/json](./rest-get-logfiles-json)                                      | Download logfile in JSON format               
 GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml)                                        | Download logfile in XML format                
