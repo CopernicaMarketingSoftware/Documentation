@@ -46,8 +46,8 @@ get messages that do not pass the SPF or DKIM checks.
 
 ## DMARC and DNS
 
-DMARC makes use of DNS and email. As a domain owner you can add a DMARC record
-record to your DNS settings, and inside this record you can specify how you
+DMARC makes use of DNS and email. As a domain owner you can add a DMARC record 
+to your DNS settings, and inside this record you can specify how you
 would like receivers to handle messages that do not match DKIM and SPF. Do 
 you want receivers to throw these messages away, or should they be placed in
 the inbox anyway? Or do you want receivers to quarantine the messages and put
