@@ -8,10 +8,10 @@ To request a collection object please see the documentation on [the account obje
 * **ID**: The ID of the collection (Read only)
 * **name**: The name of the collection (Read and write)
 * **created**: The time when collection was created (Read only)
-* **data**: The additional [data object](./followups-scripting-data) (Read and write)
 * **subprofiles** An array of all [subprofiles](./followups-scripting-subprofile) inside this collection. 
 The ID of a subprofile can be used as a key to extract the subprofile 
 object from the array (see example).
+* **data**: The additional [data object](./followups-scripting-data) (Read and write)
 
 ## Example
 

@@ -8,7 +8,6 @@ inside this account.
 ## Available properties
 
 * **data**: see the documentation on [the data object](./followups-scripting-data)
-* **properties**: accessible account [properties](./followups-scripting-copernica-properties)
 
 ## Available functions
 

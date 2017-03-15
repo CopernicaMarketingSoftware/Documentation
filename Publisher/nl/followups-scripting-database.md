@@ -25,6 +25,7 @@ opvragen.
     var someProfile = database.profiles[profileID];
 
 ## Meer informatie
+
 * [Het data-script object](./followups-scripting)
 * [Data variabele](./followups-scripting-data)
 * [Collectie variabele](./followups-scripting-collection)

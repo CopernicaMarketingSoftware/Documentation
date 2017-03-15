@@ -3,7 +3,9 @@
 De data variable kan gebruikt worden om informatie voor je data-scripts 
 op te slaan en is leeg tot je hem gebruikt. De variabele werkt vergelijkbaar 
 met de fields parameter in een [profiel](./followups-scripting-profile) en kan strings en getallen opslaan,
-maar geen arrays of andere objecten.
+maar geen arrays of andere objecten. Elke data-script variabele heeft 
+een data object dat kan worden gebruikt in alle instanties van deze variabele 
+in alle scripts binnen dit account.
 
 ## Simpel voorbeeld
 
@@ -12,7 +14,7 @@ staan en je wilt opslaan welke zijn aangeklikt. In het volgende voorbeeld
 laten we je een script zien dat je in de data-script kunt zetten om dit op 
 te slaan.
 
-    profile.data.clickedSaleItem1 = "yes"
+    profile.data.clickedSaleItem1 = "yes";
 
 Door een variabele aan te passen voor elke link die geklikt worden kunnen 
 we nu zien welke producten het profiel heeft aangeklikt. Je kunt deze informatie
@@ -20,7 +22,18 @@ nu gebruiken in andere scripts.
 
     if (profile.data.klikopAanbieding1 = "ja") {
         // Voeg hier een actie toe.
+    } else {
+        // Voeg hier een andere actie toe.
     }
+
+Je kan zelf in het data object bijhouden wat je wilt. Je kan bijvoorbeeld ook 
+bijhouden hoeveel mensen al gebruik hebben gemaakt van je aanbieding door de 
+clicks per bericht op te slaan.
+
+    message.timesClicked += 1;
+    
+Zelf kun je dit script natuurlijk uitbreiden, bijvoorbeeld door te checken of 
+mensen niet meerdere keren op de link hebben geklikt.
 
 ## Meer informatie
 
