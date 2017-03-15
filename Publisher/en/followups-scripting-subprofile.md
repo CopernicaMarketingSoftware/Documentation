@@ -1,6 +1,6 @@
 # Followups: subprofile variable
 
-A variable that gives access to current subprofile. To request a 
+A variable that gives access to current **subprofile**. To request a 
 subprofile object please see the documentation on [the account object](./followups-scripting-copernica).
 
 ## Available properties
@@ -15,7 +15,7 @@ subprofile object please see the documentation on [the account object](./followu
 * **profile**: An object that gives access to a [profile](./followups-scripting-data) that the subprofile is from
 * **collection**: An object that gives access to a [collection](./followups-scripting-data) that the subprofile is from
 * **fields**: A hash map of all profiles fields. Fields are set as properties (Read and write)
-* **data**: See the documentation on [the **data** object](./followups-scripting-data)
+* **data**: See the documentation on [the data object](./followups-scripting-data)
 
 ## Example
 

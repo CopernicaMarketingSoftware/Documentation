@@ -1,6 +1,6 @@
 # Followups: profile variabele
 
-In het data-script object kun je informatie opvragen over elk profiel.
+In het data-script object kun je informatie opvragen over elk **profiel**.
 Van een profiel kun je informatie opvragen en aanpassen. Om een profiel op 
 te vragen kun je meer informatie vinden in de documentatie over [het account object](./followups-scripting-copernica)
 

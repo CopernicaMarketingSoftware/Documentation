@@ -1,5 +1,5 @@
 # Followups: message variabele
-Een variabele die toegang geeft tot een gepersonalizeerde snapshot van 
+Een variabele die toegang geeft tot een gepersonalizeerde **snapshot** van 
 een [template](./followups-scripting-template).
 
 ## Beschikbare eigenschappen

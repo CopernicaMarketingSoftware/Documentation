@@ -1,6 +1,6 @@
 # Followups: data variable
 
-The data variable can be used to store information for your data-scripts 
+The **data** variable can be used to store information for your data-scripts 
 and is empty until used. It works similar to the fields parameters for a 
 profile and can store strings and numbers, but no arrays or objects.
 

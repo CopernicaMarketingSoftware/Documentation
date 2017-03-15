@@ -1,6 +1,6 @@
 # Followups: profile variable
 
-In the data-script object you can access information about any profile. 
+In the data-script object you can access information about any **profile**. 
 From a profile object you request and edit the information of the current 
 profile. To request a profile object please see the documentation on [the account object](./followups-scripting-copernica).
 
