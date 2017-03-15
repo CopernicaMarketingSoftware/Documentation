@@ -19,13 +19,15 @@ en objecten waarmee je gegevens uit je account kunt ophalen en gegevens kunt
 bijwerken. Je hebt bijvoorbeeld toegang tot de gegevens van het profiel dat
 op de hyperlink klikte. De volgende variabelen zijn beschikbaar:
 
-* [**copernica**](./followups-scripting-copernica.md)
-* [**message**](./followups-scripting-message.md)
-* [**mailing**](./followups-scripting-mailing.md)
-* [**template**](./followups-scripting-template.md)
-* [**profile**](./followups-scripting-profile.md)
-* [**subprofile**](./followups-scripting-subprofile.md)
-* [**destination**](./followups-scripting-destination.md)
+* [**copernica**](./followups-scripting-copernica)
+* [**mailing**](./followups-scripting-mailing)
+* [**message**](./followups-scripting-message)
+* [**template**](./followups-scripting-template)
+* [**database**](./followups-scripting-database)
+* [**collection**](./followups-scripting-collection)
+* [**profile**](./followups-scripting-profile)
+* [**subprofile**](./followups-scripting-subprofile)
+* [**destination**](./followups-scripting-destination)
 
 Een aantal van deze objecten hebben een eigen [data object](./followups-scripting-data) 
 dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer informatie.
