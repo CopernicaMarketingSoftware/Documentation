@@ -14,7 +14,7 @@ Variabele die toegang geeft tot een niet-gepersonalizeerde template.
 Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
     <script> 
-    var mySubject = template.subject
+    var mySubject = template.subject;
     </script>
 
 ## Meer informatie

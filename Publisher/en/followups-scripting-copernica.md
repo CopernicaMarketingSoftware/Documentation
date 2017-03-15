@@ -25,8 +25,10 @@ can be returned
 The following example in javascript can be used to access a database from an account.
 
     <script>
+    
     var databaseName = "My database";
     var myDatabase = copernica.database(databaseName);
+    
     </script>
 
 ## More information

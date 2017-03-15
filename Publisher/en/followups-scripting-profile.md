@@ -24,7 +24,7 @@ profile. To request a profile object please see the documentation on [the accoun
 The following example in javascript can be used to access the "age" field of a profile.
 
     <script> 
-    var profileAge = profile.fields.age
+    var profileAge = profile.fields.age;
     </script>
 
 ## More information

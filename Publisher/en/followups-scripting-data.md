@@ -18,9 +18,11 @@ clicked. In our next data-script we can use this value to perform certain
 actions.
 
     <script> 
+    
     if (profile.data.clickedSaleItem1 = "yes") {
         // Your action
     }
+    
     </script>
 
 ## More information

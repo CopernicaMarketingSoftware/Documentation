@@ -17,10 +17,12 @@ object from the array (see example).
 
 The following example in javascript can be used to access a subprofile from a collection.
 
-        <script> 
-        var subProfileID = 54840;
-        var someSubProfile = collection.subprofiles[subProfileID];
-        </script>
+    <script> 
+        
+    var subProfileID = 54840;
+    var someSubProfile = collection.subprofiles[subProfileID];
+        
+    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

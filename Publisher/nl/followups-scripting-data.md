@@ -19,9 +19,11 @@ we nu zien welke producten het profiel heeft aangeklikt. Je kunt deze informatie
 nu gebruiken in andere scripts.
 
     <script> 
+    
     if (profile.data.klikopAanbieding1 = "ja") {
         // Voeg hier een actie toe.
     }
+    
     </script>
 
 ## Meer informatie

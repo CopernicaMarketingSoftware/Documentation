@@ -22,9 +22,10 @@ Met het volgende voorbeeld in javascript kun je een profiel uit een database
 opvragen.
 
     <script> 
+    
     var profileID = 54840;
-
     var someProfile = database.profiles[profileID];
+    
     </script>
 
 ## Meer informatie

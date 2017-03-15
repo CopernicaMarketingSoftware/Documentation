@@ -13,7 +13,7 @@ bewerken.
 Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
     <script> 
-    var mySubject = mailing.subject
+    var mySubject = mailing.subject;
     </script>
 
 ## Meer informatie
