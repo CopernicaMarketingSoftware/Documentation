@@ -1,6 +1,6 @@
 # Followups: copernica variabele
 
-De **copernica** variabele is gelinkt aan de account die je hebt geregistreerd
+De **copernica** variabele is gelinkt aan het account die je hebt geregistreerd
 bij Copernica. Deze is beschikbaar in het data-script object en geeft 
 toegang tot de data die bij jouw account hoort. Deze informatie is beschikbaar
 binnen alle scripts gemaakt met deze account.
@@ -8,7 +8,7 @@ binnen alle scripts gemaakt met deze account.
 ## Beschikbare eigenschappen
 
 * **data**: zie de documentatie van [het data object](./followups-scripting-data)
-* **properties**: de informatie over de account
+* **properties**: de [informatie over het account](./followups-scripting-copernica-properties)
 
 ## Beschikbare functies
 
