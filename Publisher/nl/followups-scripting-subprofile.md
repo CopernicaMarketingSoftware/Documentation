@@ -25,7 +25,7 @@ opvragen. In dit geval vragen we de leeftijd op, maar je kunt elk veld in
 het subprofiel op deze manier opvragen.
 
     <script> 
-    var profileAge = subprofile.fields.age
+    var profileAge = subprofile.fields.age;
     </script>
 
 ## Meer informatie

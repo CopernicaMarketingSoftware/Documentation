@@ -14,7 +14,7 @@ A variable that gives access to a unpersonalized template.
 The following example in javascript can be used to access the subject of a template.
 
     <script> 
-    var mySubject = template.subject
+    var mySubject = template.subject;
     </script>
 
 ## More information

@@ -13,7 +13,7 @@ een [template](./followups-scripting-template).
 Met het volgende voorbeeld in javascript kun je de broncode van een gepersonalizeerde template opvragen.
 
     <script> 
-    var mySourceCode = message.source
+    var mySourceCode = message.source;
     </script>
 
 ## Meer informatie
