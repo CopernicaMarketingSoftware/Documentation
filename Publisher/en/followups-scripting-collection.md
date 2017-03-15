@@ -14,13 +14,13 @@ The ID of a subprofile can be used as a key to extract the subprofile
 object from the array (see example).
 
 ## Example
-To retrieve a subprofile from a collection you can use the following javascript code.
 
-    <script> 
-    var subProfileID = 54840;
+The following example in javascript can be used to access a subprofile from a collection.
 
-    var someSubProfile = collection.subprofiles[subProfileID];
-    </script>
+        <script> 
+        var subProfileID = 54840;
+        var someSubProfile = collection.subprofiles[subProfileID];
+        </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

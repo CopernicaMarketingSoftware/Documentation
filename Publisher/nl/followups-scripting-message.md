@@ -10,14 +10,14 @@ een [template](./followups-scripting-template).
 
 ## Voorbeeld
 
-Het volgende voorbeeld in javascript kun je gebruiken om de broncode van 
-een gepersonalizeerde template op te vragen.
+Met het volgende voorbeeld in javascript kun je de broncode van een gepersonalizeerde template opvragen.
 
     <script> 
     var mySourceCode = message.source
     </script>
 
 ## Meer informatie
+
 * [Het data-script object](./followups-scripting)
 * [Het data object](./followups-scripting-data)
 * [Template variabele](./followups-scripting-template)

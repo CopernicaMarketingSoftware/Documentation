@@ -11,10 +11,10 @@ A variable that gives access to a unpersonalized template.
 
 ## Example
 
-The following javascript code shows how to request the subject of a mailing.
+The following example in javascript can be used to access the subject of a template.
 
     <script> 
-    var mySubject = mailing.subject
+    var mySubject = template.subject
     </script>
 
 ## More information

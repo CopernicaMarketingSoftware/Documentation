@@ -21,7 +21,7 @@ profile. To request a profile object please see the documentation on [the accoun
 
 ## Example
 
-This javascript code shows how to retrieve the value from a profile field.
+The following example in javascript can be used to access the "age" field of a profile.
 
     <script> 
     var profileAge = profile.fields.age

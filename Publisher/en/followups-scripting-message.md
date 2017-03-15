@@ -11,7 +11,7 @@ A variable that gives access to personalized snapshot of a template.
 
 ## Example
 
-The following example shows how to retrieve the source code for a message.
+The following example in javascript can be used to access the source code for a personalized template.
     
     <script> 
     var mySourceCode = message.source

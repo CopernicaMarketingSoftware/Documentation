@@ -10,7 +10,7 @@ a mailing object you can access its properties, but not edit them.
 
 ## Example
 
-This following line of code shows how to retrieve a subject from a mailing.
+The following example in javascript can be used to access a subject of a mailing.
 
     <script> 
     var mySubject = mailing.subject
