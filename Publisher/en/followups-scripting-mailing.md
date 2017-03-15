@@ -12,9 +12,7 @@ a mailing object you can access its properties, but not edit them.
 
 The following example in javascript can be used to access a subject of a mailing.
 
-    <script> 
     var mySubject = mailing.subject;
-    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

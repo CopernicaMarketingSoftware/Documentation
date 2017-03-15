@@ -11,19 +11,15 @@ and you want to keep track of which items they clicked. In the following example
 we'll show you a script (that you can put in the data-script environment) 
 to store a click on a specific item.
 
-    <script\> profile.data.clickedSaleItem1 = "yes" </script\>
+    profile.data.clickedSaleItem1 = "yes"
 
 By embedding this script in every link we can now see which items have been 
 clicked. In our next data-script we can use this value to perform certain 
 actions.
 
-    <script> 
-    
     if (profile.data.clickedSaleItem1 = "yes") {
         // Your action
     }
-    
-    </script>
 
 ## More information
 

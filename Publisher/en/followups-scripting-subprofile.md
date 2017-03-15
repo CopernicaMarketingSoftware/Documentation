@@ -21,9 +21,7 @@ subprofile object please see the documentation on [the account object](./followu
 
 The following example in javascript can be used to access the "age" field of a subprofile.
 
-    <script> 
     var profileAge = subprofile.fields.age;
-    </script>
 
 ## More information
 

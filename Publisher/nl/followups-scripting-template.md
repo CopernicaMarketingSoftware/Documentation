@@ -13,9 +13,7 @@ Variabele die toegang geeft tot een niet-gepersonalizeerde **template**.
 
 Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
-    <script> 
     var mySubject = template.subject;
-    </script>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

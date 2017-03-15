@@ -19,12 +19,8 @@ Keys in this array are profile IDs (see example).
 
 The following example in javascript can be used to access a profile from a database.
 
-    <script> 
-    
     var profileID = 54840;
     var someProfile = database.profiles[profileID];
-    
-    </script>
 
 ## More information
 * [The data-script object](./followups-scripting)

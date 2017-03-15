@@ -19,15 +19,17 @@ en objecten waarmee je gegevens uit je account kunt ophalen en gegevens kunt
 bijwerken. Je hebt bijvoorbeeld toegang tot de gegevens van het profiel dat
 op de hyperlink klikte. De volgende variabelen zijn beschikbaar:
 
-* [**copernica**](./followups-scripting-copernica)
-* [**mailing**](./followups-scripting-mailing)
-* [**message**](./followups-scripting-message)
-* [**template**](./followups-scripting-template)
-* [**database**](./followups-scripting-database)
-* [**collection**](./followups-scripting-collection)
-* [**profile**](./followups-scripting-profile)
-* [**subprofile**](./followups-scripting-subprofile)
-* [**destination**](./followups-scripting-destination)
+| Variabele                                              | Omschrijving                      |
+|--------------------------------------------------------|-----------------------------------|
+| [**copernica**](./followups-scripting-copernica)       | Copernica account                 |
+| [**mailing**](./followups-scripting-mailing)           | Vorige mailing                    |
+| [**message**](./followups-scripting-message)           | Gepersonalizeerde template        |
+| [**template**](./followups-scripting-template)         | Standaard template                |
+| [**database**](./followups-scripting-database)         | Database                          |
+| [**collection**](./followups-scripting-collection)     | Collectie (subset van database)   |
+| [**profile**](./followups-scripting-profile)           | Profiel                           |
+| [**subprofile**](./followups-scripting-subprofile)     | Subprofiel (profiel in collectie) |
+| [**destination**](./followups-scripting-destination)   | Ontvanger (profiel/subprofiel)    |
 
 Een aantal van deze objecten hebben een eigen [data object](./followups-scripting-data) 
 dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer informatie.
