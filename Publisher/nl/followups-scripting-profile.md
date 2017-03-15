@@ -1,4 +1,4 @@
-# Followups: **profile** variabele
+# Followups: profile variabele
 
 In het data-script object kun je informatie opvragen over elk profiel.
 Van een profiel kun je informatie opvragen en aanpassen. Om een profiel op 
@@ -20,7 +20,7 @@ te vragen kun je meer informatie vinden in de documentatie over [het account obj
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)
-* [Het **data** object](./followups-scripting-data)
+* [Het data object](./followups-scripting-data)
 * [Database informatie](./followups-scripting-database)
 * [Subprofiel informatie](./followups-scripting-subprofile)
 * [Destination informatie](./followups-scripting-destination)
