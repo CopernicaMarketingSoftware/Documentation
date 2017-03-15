@@ -16,7 +16,7 @@ te vragen kun je meer informatie vinden in de documentatie over [het account obj
 * **collection**: [Collectie](./followups-scripting-collection) van het profiel (Read-only)
 * **fields**: Hash map van de "fields" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
 * **interests**: Hash map van de "interests" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
-* **data**: Zie documentatie over [het **data** object](./followups-scripting-data)
+* **data**: Zie documentatie over [het data object](./followups-scripting-data)
 
 ## Voorbeeld
 
