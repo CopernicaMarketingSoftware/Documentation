@@ -15,7 +15,7 @@ Je kunt de scriptjes op een aantal manieren aan hyperlinks koppelen:
 ## Beschikbare objecten
 
 In het script kun je gebruik maken van verschillende voorgedefinieerde variabelen 
-en objecten waarmee je gegevens uit je account kunt ophalen, en gegevens kunt
+en objecten waarmee je gegevens uit je account kunt ophalen en gegevens kunt
 bijwerken. Je hebt bijvoorbeeld toegang tot de gegevens van het profiel dat
 op de hyperlink klikte. De volgende variabelen zijn beschikbaar:
 
@@ -26,6 +26,9 @@ op de hyperlink klikte. De volgende variabelen zijn beschikbaar:
 * [**profile**](./followups-scripting-profile.md)
 * [**subprofile**](./followups-scripting-subprofile.md)
 * [**destination**](./followups-scripting-destination.md)
+
+Een aantal van deze objecten hebben een eigen [data object](./followups-scripting-data) 
+dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer informatie.
 
 ## Een eenvoudig voorbeeld
 

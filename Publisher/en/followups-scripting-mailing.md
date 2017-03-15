@@ -6,7 +6,18 @@ a mailing object you can access its properties, but not edit them.
 ## Available properties
 * **ID**: The ID of the emailing. (Read-only)
 * **subject**: The subject of the emailing. (Read-only)
+* **data**: See the documentation on [the **data** object](./followups-scripting-data)
+
+## Example
+
+This following line of code shows how to retrieve a subject from a mailing.
+
+    <script\> 
+    var mySubject = mailing.subject
+    </script\>
 
 ## More information
 * [The data-script object](./followups-scripting)
 * [The data object](./followups-scripting-data)
+* [Template variable](./followups-scripting-template)
+* [Message variable](./followups-scripting-message)

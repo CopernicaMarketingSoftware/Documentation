@@ -13,10 +13,20 @@ te vragen kun je meer informatie vinden in de documentatie over [het account obj
 * **created**: Tijdstip van aanmaken profiel (Read-only)
 * **removed**: Tijdstip van verwijderen profiel (Read-only)
 * **unsubscribed**: Boolean waarde die aangeeft of een profiel uitgeschreven is (Read-only)
-* **collection**: Collectie van het profiel (Read-only)
-* **fields**: Hash map van de "fields" parameter van een profiel (Read and write)
-* **interests**: Hash map van de "interests" parameter van een profiel (Read and write)
-* **data**: zie documentatie over [het **data** object](./followups-scripting-data)
+* **collection**: [Collectie](./followups-scripting-collection) van het profiel (Read-only)
+* **fields**: Hash map van de "fields" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
+* **interests**: Hash map van de "interests" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
+* **data**: Zie documentatie over [het **data** object](./followups-scripting-data)
+
+## Voorbeeld
+
+Met het volgende voorbeeld in javascript kun je een veld van een subprofiel 
+opvragen. In dit geval vragen we de leeftijd op, maar je kunt elk veld in 
+het subprofiel op deze manier opvragen.
+
+    <script\> 
+    var profileAge = subprofile.fields.age
+    </script\>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)

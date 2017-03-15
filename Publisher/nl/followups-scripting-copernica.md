@@ -12,10 +12,20 @@ binnen alle scripts gemaakt met deze account.
 
 ## Beschikbare functies
 
-* **database**: een database kan opgevraagd worden per naam of ID
-* **collection**: een collectie kan opgevraagd worden per ID
-* **profile**: een profiel kan opgevraagd worden per ID
-* **subprofile**: een subprofiel kan opgevraagd worden per ID
+* **database**: een [database](./followups-scripting-database) kan opgevraagd worden per naam of ID
+* **collection**: een [collectie](./followups-scripting-collection) kan opgevraagd worden per ID
+* **profile**: een [profiel](./followups-scripting-profile) kan opgevraagd worden per ID
+* **subprofile**: een [subprofiel](./followups-scripting-subprofile) kan opgevraagd worden per ID
+
+## Voorbeeld
+
+Het volgende voorbeeld laat zien hoe je een database op kunt vragen.
+
+    <script\> 
+    var databaseName = "My database";
+
+    var myDatabase = copernica.database(databaseName);
+    </script\>
 
 ## Meer informatie
 * [Het data-script object](./followups-scripting)
