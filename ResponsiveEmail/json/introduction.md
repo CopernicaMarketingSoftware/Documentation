@@ -76,9 +76,3 @@ Add an image
   }
 }
 ```
-
-## Output
-
-![](//placekitten.com/200/140)
-
-[Learn more about content block types](../json/property-blocks "Learn more about content block types")
