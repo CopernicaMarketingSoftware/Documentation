@@ -97,4 +97,3 @@ The following table lists all the methods that are supported by the API.
 
 ## Create your first JSON document
 Head over to the [JSON documentation](../json/introduction "JSON documentation") and learn how to create your first JSON documentation.
-
