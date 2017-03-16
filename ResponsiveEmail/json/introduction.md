@@ -1,6 +1,6 @@
 # Introduction to the JSON documentation
 
-The ResponsiveEmail.com API accepts JSON objects as input, and turns these 
+The ResponsiveEmail API accepts JSON objects as input, and turns these 
 objects into responsive emails.
 
 The properties of the email are set in the JSON document. This includes MIME 
