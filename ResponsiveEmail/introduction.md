@@ -1,6 +1,6 @@
 # Introduction
 
-The responsive email API allows you to create and send responsive emails using 
+The responsiveEmail API allows you to create and send responsive emails using 
 a simple to use API. 
 
 ## How does it work?
