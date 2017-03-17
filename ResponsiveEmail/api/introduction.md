@@ -1,23 +1,23 @@
 # API reference
-The Responsive Email API provides a simple RESTful interface. This means that  
-your application can access the API using the HTTP protocol. With simple (secure) 
-HTTP calls you can create, store and modify email messages (in raw HTML, prettifiedm or MIME  
-format) and retrieve email statistics. All you need is an 
-[access-token](https://www.responsiveemail.com/app/#/admin/configuration/api/rest-token) and you are ready to go. 
+The Responsive Email API provides a simple RESTful interface. This means that
+your application can access the API using the HTTP protocol. With simple (secure)
+HTTP calls you can create, store and modify email messages (in raw HTML, prettified or MIME
+format) and retrieve email statistics. All you need is an
+[access-token](https://www.responsiveemail.com/app/#/admin/configuration/api/rest-token) and you are ready to go.
 
-The API key is accessible via your Copernica account. Every request 
-starts with a [version number](../api/versions), 
-that allows us to make changes to the methods while keeping backwards 
-compatibility. With every request you also have to send an `access_token` 
+The API key is accessible via your Copernica account. Every request
+starts with a [version number](../api/versions),
+that allows us to make changes to the methods while keeping backwards
+compatibility. With every request you also have to send an `access_token`
 parameter to identify your application.
 
 ```
 https://www.responsiveemail.com/v1/{RESOURCE}?access_token={YOUR_API_TOKEN}
 ```
 
-> **Note:** API requests must use secure HTTPS connections. Unsecured HTTP 
-requests will result in a 400 Bad Request response. You can do a call to the API 
-with any programming language that supports HTTP requests. The following is an 
+> **Note:** API requests must use secure HTTPS connections. Unsecured HTTP
+requests will result in a 400 Bad Request response. You can do a call to the API
+with any programming language that supports HTTP requests. The following is an
 example of how to request the JSON representation of an email template.
 
 ```php
@@ -49,17 +49,17 @@ example of how to request the JSON representation of an email template.
 ```
 
 ## Authentication
-The API requires an application key (token) that is provided after you register 
-your app. The key identifies your application to the service, and is used to 
-track overall call usage. It's passed using the standard `access_token` parameter. 
-If you haven't created a API key yet, now is the perfect time to 
-[register for free](/app/#/menu/register "register for free") 
+The API requires an application key (token) that is provided after you register
+your app. The key identifies your application to the service, and is used to
+track overall call usage. It's passed using the standard `access_token` parameter.
+If you haven't created a API key yet, now is the perfect time to
+[register for free](/app/#/menu/register "register for free")
 and [create your key](/app/#/admin/responsive-api "create your key").
 
 ## Template ID
-You can store a template on the responsiveemail.com servers. After storing your 
-template with a POST request, the API will return a link to your new template 
-and show the template ID in the JSON output. This ID can then be used to 
+You can store a template on the responsiveemail.com servers. After storing your
+template with a POST request, the API will return a link to your new template
+and show the template ID in the JSON output. This ID can then be used to
 retrieve the template via GET requests.
 
 ## Supported methods
