@@ -44,10 +44,6 @@ and a content section with a yellow background.
 }
 ```
 
-## Example output
-
-![](../images/example-output-content.png)
-
 ## Sub properties
 
 As described above, and as demonstrated in the example JSON, the `content`

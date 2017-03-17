@@ -80,7 +80,3 @@ Just an idea of how a JSON document could look like.
     }
 }
 ```
-
-## Output
-
-![](../images/example-output.png)

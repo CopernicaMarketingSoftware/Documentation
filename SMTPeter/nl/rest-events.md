@@ -83,7 +83,7 @@ waar`TAG` de betreffende tag is. Het is ook mogelijk om op meerdere tags
 tegelijkertijd te filteren. Dit kan met de volgende URL:
 
 ```text
-https://www.smtpeter.com/v1/tags/TAG1/TAG2/TAG3/...
+https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
 ```
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
 opgegeven tags bevatten.
