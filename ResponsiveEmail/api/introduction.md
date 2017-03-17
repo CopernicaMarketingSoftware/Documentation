@@ -16,9 +16,9 @@ https://www.responsiveemail.com/v1/{RESOURCE}?access_token={YOUR_API_TOKEN}
 ```
 
 > **Note:** API requests must use secure HTTPS connections. Unsecured HTTP
-requests will result in a 400 Bad Request response. You can do a call to the API
-with any programming language that supports HTTP requests. The following is an
-example of how to request the JSON representation of an email template.
+requests will result in a 400 Bad Request response. You can make a call to the API
+with any programming language that supports HTTPS requests. The following is an
+example of how to request the JSON representation of an email template using PHP.
 
 ```php
 <?php
@@ -52,9 +52,8 @@ example of how to request the JSON representation of an email template.
 The API requires an application key (token) that is provided after you register
 your app. The key identifies your application to the service, and is used to
 track overall call usage. It's passed using the standard `access_token` parameter.
-If you haven't created a API key yet, now is the perfect time to
-[register for free](/app/#/menu/register "register for free")
-and [create your key](/app/#/admin/responsive-api "create your key").
+If you haven't have an API key yet, you can go to [SMTPeter.com](https://www.smtpeter.com)
+got register and get one.
 
 ## Template ID
 You can store a template on the responsiveemail.com servers. After storing your
