@@ -11,14 +11,14 @@ zijn terug te vinden in het linkeroverzicht.
 
 -   [Een nieuwe enquête
     maken](./surveys-create)
--   [Vraag types](./survey-question-types)
--   [Vraag opties](./survey-question-options)
+-   [Vraag types](./surveys-question-types)
+-   [Vraag opties](./surveys-question-options)
 -   [Enquêtevragen verwijderen, bewerken of
-    verplaatsen](./survey-edit)
+    verplaatsen](./surveys-edit)
 -   [De enquête bedanktpagina
-    instellen](./survey-conclude-page)
+    instellen](./surveys-conclude-page)
 -   [Tekst van enquête buttons
-    wijzigen](./survey-edit-buttons)
+    wijzigen](./surveys-edit-buttons)
 -   [Gegeven antwoorden van een enquête mailen in
     opvolgactie](./surveys-email-results)
 -   [Enquête titel en introductietekst
@@ -28,7 +28,7 @@ zijn terug te vinden in het linkeroverzicht.
 -   [Enquête
     opvolgacties](./surveys-followup)
 -   Herinneringsmail sturen voor invullen enquête
--   [Vraag op nieuwe pagina beginnen](./survey-question-options)
+-   [Vraag op nieuwe pagina beginnen](./surveys-question-options)
 
 ## Enquête publiceren
 
