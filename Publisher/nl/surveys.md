@@ -49,12 +49,12 @@ de enquête. Je kan de resultaten in Copernica bekijken, of downloaden
 naar een text-bestand die geopend kan worden met bijvoorbeeld Excel.
 
 -   [De enquête resultaten
-    exporteren](http://www.copernica.com/nl/ondersteuning/enquete-resultaten-exporteren)
+    exporteren](./surveys-export-results)
 -   Resultaten per deelnemer bekijken
 -   [Gegeven antwoorden enquête bij profiel
-    inzien](http://www.copernica.com/nl/ondersteuning/gegeven-antwoorden-enquete-bij-profiel-inzien)
+    inzien](./surveys-view-results)
 -   [Enquêteresultaten
-    wissen](http://www.copernica.com/nl/ondersteuning/enqueteresultaten-wissen)
+    wissen](./surveys-reset-results)
 
 ## Opmaak van enquête
 
@@ -65,5 +65,5 @@ aansluiten bij jouw huisstijl of dat van een klant.
 -   [Eigen CSS of XSLT gebruiken voor
     enquête](./creating-and-using-your-stylesheets.md)
 -   [Het hekje (\#) bij elke vraag
-    verwijderen](https://www.copernica.com/nl/ondersteuning/het-hekje-bij-elke-vraag-verwijderen)
+    verwijderen](./surveys-remove-#.md)
 
