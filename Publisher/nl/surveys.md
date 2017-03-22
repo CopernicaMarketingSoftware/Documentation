@@ -11,14 +11,14 @@ zijn terug te vinden in het linkeroverzicht.
 
 -   [Een nieuwe enquête
     maken](./surveys-create)
--   [Vraag types](./survey-question-types)
--   [Vraag opties](./survey-question-options)
+-   [Vraag types](./surveys-question-types)
+-   [Vraag opties](./surveys-question-options)
 -   [Enquêtevragen verwijderen, bewerken of
-    verplaatsen](./survey-edit)
+    verplaatsen](./surveys-edit)
 -   [De enquête bedanktpagina
-    instellen](./survey-conclude-page)
+    instellen](./surveys-conclude-page)
 -   [Tekst van enquête buttons
-    wijzigen](./survey-edit-buttons)
+    wijzigen](./surveys-edit-buttons)
 -   [Gegeven antwoorden van een enquête mailen in
     opvolgactie](./surveys-email-results)
 -   [Enquête titel en introductietekst
@@ -28,7 +28,7 @@ zijn terug te vinden in het linkeroverzicht.
 -   [Enquête
     opvolgacties](./surveys-followup)
 -   Herinneringsmail sturen voor invullen enquête
--   [Vraag op nieuwe pagina beginnen](./survey-question-options)
+-   [Vraag op nieuwe pagina beginnen](./surveys-question-options)
 
 ## Enquête publiceren
 
@@ -49,12 +49,12 @@ de enquête. Je kan de resultaten in Copernica bekijken, of downloaden
 naar een text-bestand die geopend kan worden met bijvoorbeeld Excel.
 
 -   [De enquête resultaten
-    exporteren](http://www.copernica.com/nl/ondersteuning/enquete-resultaten-exporteren)
+    exporteren](./surveys-export-results)
 -   Resultaten per deelnemer bekijken
 -   [Gegeven antwoorden enquête bij profiel
-    inzien](http://www.copernica.com/nl/ondersteuning/gegeven-antwoorden-enquete-bij-profiel-inzien)
+    inzien](./surveys-view-results)
 -   [Enquêteresultaten
-    wissen](http://www.copernica.com/nl/ondersteuning/enqueteresultaten-wissen)
+    wissen](./surveys-reset-results)
 
 ## Opmaak van enquête
 
@@ -65,5 +65,5 @@ aansluiten bij jouw huisstijl of dat van een klant.
 -   [Eigen CSS of XSLT gebruiken voor
     enquête](./creating-and-using-your-stylesheets.md)
 -   [Het hekje (\#) bij elke vraag
-    verwijderen](https://www.copernica.com/nl/ondersteuning/het-hekje-bij-elke-vraag-verwijderen)
+    verwijderen](./surveys-remove-#.md)
 
