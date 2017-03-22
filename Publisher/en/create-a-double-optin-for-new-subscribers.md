@@ -66,8 +66,9 @@ value) it with the following options:
 -   The third webpage is the final landing page, and is loaded after the
     subscriber clicks on the confirmation page.
 
+### **Third step - Creating the subscription web form**
+
     Now head to the Content section to create the subscription form.
-    \#\#\# **Third step - Creating the subscription web form**
 
 -   Choose ‘**New web form**’ from the web form menu and link it to your
     database.
@@ -114,7 +115,7 @@ Choose the following options:
 -   Choose the error text (e.g., You are already receiving our emails).
 -   In the end of the wizard **click on finish**.
 
-### **Fourth step** – Create the document with confirmation link
+### **Fourth step – Create the document with confirmation link**
 
 In the Emailings section create a new document (if you haven't got one
 already). This is the document new subscribers will receive after they
@@ -153,7 +154,9 @@ or her an email to confirm the subscription. We are going to use a
 -   At action choose 'Send a formatted document by e-mail' and select
     the document that you want to send as a confirmation.
 
-    Good. \#\#\# Latest step: test your double opt in.
+    Good.
+
+### Latest step: test your double opt in.
 
 Add the web form to the first web page and test if it all works!
 
