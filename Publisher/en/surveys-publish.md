@@ -20,5 +20,5 @@ to the profile the email was sent to.
 
 ## More information
 
-[Survey overview](./surveys)
-[Stylesheets](./stylesheets)
+* [Survey overview](./surveys)
+* [Stylesheets](./stylesheets)
