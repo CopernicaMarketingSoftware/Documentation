@@ -1,3 +1,5 @@
+# Selection conditions: Select by survey status
+
 This selection type enables you to find the profiles and/or subprofiles
 who missed your survey or just forgot to fill out the survey (and send
 them a reminder). You can specify the type of submitter (profile,
@@ -36,7 +38,7 @@ submitted by a profile**\
 have submitted the survey, even if the profile himself did (or did not)
 submit the survey.*
 
-### Can I make a selection based on the given answers in a survey?
+## Can I make a selection based on the given answers in a survey?
 
-Unfortunately: **nope**. \
+At the moment this functionality is not implemented.
 

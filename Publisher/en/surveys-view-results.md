@@ -1,4 +1,6 @@
-The results of a survey are shown in the **Results tab**of the survey
+# Surveys: View results
+
+The results of a survey are shown in the **Results tab** of the survey
 under **Content**.
 
 It displays how many times each answer was given and all open answers.
@@ -11,3 +13,8 @@ are displayed).
 
 Known profiles of subprofiles are participants that were logged in when
 they completed the survey.
+
+## More information
+
+* [Survey overview](./surveys)
+* [Export results](./surveys-export-results)
