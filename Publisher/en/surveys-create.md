@@ -13,7 +13,8 @@ under the **Survey menu** of **Content**.
 
 Choose a descriptive name and an optional description. Once your survey
 is created you can start adding questions. For more information on 
-adding questions please see 
+adding questions please see [question types](./surveys-question-types.md)
+en [question options](./surveys-question-options.md)
 
 ![New survey dialog](../images/createnewsurvey.png)
 
