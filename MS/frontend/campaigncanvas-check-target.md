@@ -5,4 +5,4 @@ used) or subprofile (when collection/mini selection was used).
 
 Beside checking fields or interests it's also possible to check for
 a custom value set on a (sub)profile. This custom value is value set on
-the data property of the (sub)profile. Read more about data property here.
+the data property of the (sub)profile. Read more about data property [here](https://www.copernica.com/en/documentation/followups-scripting-data).
