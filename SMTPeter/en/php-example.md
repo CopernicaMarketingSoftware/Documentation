@@ -146,5 +146,5 @@ $output = $object->post("send", array(
 
 // run the HTTP GET call for the "text" method
 $messageID = "your message id";
-$dates = object->get("text/$messageID");
+$dates = $object->get("text/$messageID");
 print_r($dates);
