@@ -1,3 +1,5 @@
+# Linking to a web form or survey
+
 Once a web form or survey is published, you can link it to it from an
 e-mailing. Just like with web pages, this is done through a hyperlink.\
  To ensure that your subscribers are directly logged in when they click

@@ -1,4 +1,6 @@
-De knoppen van een enquête kunnen worden gewijzigd. Je vindt deze
+# Enquêtes: Text op de knoppen aanpassen.
+
+De text van de knoppen van een enquête kunnen worden gewijzigd. Je vindt deze
 functie in het Enquête menu onder Content.
 
 Het invullen van een enquête eindigt met een knop op de 'submitknop',
