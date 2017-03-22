@@ -18,31 +18,31 @@ zijn terug te vinden in het linkeroverzicht.
 -   [De enquête bedanktpagina
     instellen](./survey-conclude-page)
 -   [Tekst van enquête buttons
-    wijzigen](survey-edit-buttons)
+    wijzigen](./survey-edit-buttons)
 -   [Gegeven antwoorden van een enquête mailen in
-    opvolgactie](http://www.copernica.com/nl/ondersteuning/antwoorden-enquete-mailen-in-opvolgactie)
+    opvolgactie](./surveys-email-results)
 -   [Enquête titel en introductietekst
-    aanpassen](http://www.copernica.com/nl/ondersteuning/enquete-titel-en-introductietekst-aanpassen)
+    aanpassen](./surveys/title-introduction.md)
 -   [Conditionele vragen in
-    enquête](http://www.copernica.com/nl/ondersteuning/conditionele-vragen-in-enquete)
+    enquête](./surveys-question-conditional)
 -   [Enquête
-    opvolgacties](http://www.copernica.com/nl/ondersteuning/opvolgacties-voor-enquetes)
+    opvolgacties](./surveys-followup)
 -   Herinneringsmail sturen voor invullen enquête
--   Vraag op nieuwe pagina beginnen
+-   [Vraag op nieuwe pagina beginnen](./survey-question-options)
 
-### Enquête publiceren
+## Enquête publiceren
 
 Enquêtes kunnen alleen worden gepubliceerd in webpagina's. Het is dus
 niet mogelijk om een enquête te e-mailen.
 
 -   [Enquête publiceren met {survey}
-    tag](http://www.copernica.com/nl/ondersteuning/enquete-in-webpagina-invoegen)
+    tag](./surveys-publish)
 -   Enquête weer offline halen
 -   Aantal keer invullen per gebruiker beperken
 -   [Vanuit e-mailing naar enquête
     linken](./linking-to-your-website-from-an-emailing.md)
 
-### Enquête resultaten
+## Enquête resultaten
 
 Je bent natuurlijk nieuwsgierig naar de antwoorden die zijn gegeven in
 de enquête. Je kan de resultaten in Copernica bekijken, of downloaden
@@ -56,7 +56,7 @@ naar een text-bestand die geopend kan worden met bijvoorbeeld Excel.
 -   [Enquêteresultaten
     wissen](http://www.copernica.com/nl/ondersteuning/enqueteresultaten-wissen)
 
-### Opmaak van enquête
+## Opmaak van enquête
 
 Copernica maakt gebruik van een standaard CSS stylesheet en XSLT voor de
 enquêtes. Je bent vrij om deze aan te passen, zodat ze naadloos

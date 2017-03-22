@@ -26,6 +26,7 @@ also found in the **Survey** menu.
 -   [How to edit the survey title and introduction text](./surveys-title-introduction.md)
 -   [Edit the survey conclude page](./surveys-conclude-page.md)
 -   [Change styling of your survey with CSS](./stylesheets.md)
+-   [Question on new page](./survey-question-options)
 
 ## Publish your survey
 
