@@ -11,7 +11,7 @@ will have the same lay-out as the rest of the survey.
 ![Editing the conclude page](../images/editconcludepage.png)
 
 Personalization code is not supported, but it is possible to re-direct to 
-your own page. Please see the documentation on the [personalized conclude page](./surveys-personalized-conclude-page)
+your own page.
 
 ## Personalizing with profile information
 
@@ -20,9 +20,16 @@ name or other profile information. Please note that the user has to be logged in
 to be able to access their information. If you want to account for both anonymous 
 and logged in users you could use something like the following code:
 
-'{if $profile.id} Text for logged in users {else} Text for anonymous users {/if}'
+`{if $profile.id} Text for logged in users {else} Text for anonymous users {/if}`
+
+## Re-direct to page
+
+If you want to re-direct to your own (externally hosted) webpage 
+you can do so by adding the following snippet of javascript with the HTML
+editor. The participant will then be sent to that webpage.
+
+<script type="text/javascript"> document.location = "http://www.mywebsite.nl/thanks"; </script>
 
 ## More information
 
 * [Survey overview](./surveys)
-* [Personalized conclude page](./surveys-personalized-conclude-page)
