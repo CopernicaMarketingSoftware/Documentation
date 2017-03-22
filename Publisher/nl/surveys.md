@@ -6,21 +6,19 @@ resultaten kan je naderhand downloaden naar een excelbestand. Of bekijk
 in Copernica de antwoorden van individuele relaties.
 
 De enquêtemodule is te vinden in het onderdeel **Content**. Vanuit het
-menu **enquête** kan je een nieuwe enquête aanmaken. Bestaande enquêtes
+menu **Enquête** kan je een nieuwe enquête aanmaken. Bestaande enquêtes
 zijn terug te vinden in het linkeroverzicht.
 
 -   [Een nieuwe enquête
-    maken](http://www.copernica.com/nl/ondersteuning/een-nieuwe-enquete-maken)
--   [Vraag toevoegen: open vragen, meerkeuzevragen, gridvragen en
-    tussenteksten](./survey-question-types-and-their-options.md)
+    maken](./surveys-create)
+-   [Vraag types](./survey-question-types)
+-   [Vraag opties](./survey-question-options)
 -   [Enquêtevragen verwijderen, bewerken of
-    verplaatsen](http://www.copernica.com/nl/ondersteuning/enquetevragen-verwijderen-bewerken-of-verplaatsen)
+    verplaatsen](./survey-edit)
 -   [De enquête bedanktpagina
-    instellen](http://www.copernica.com/nl/ondersteuning/de-enquete-bedanktpagina-instellen)
--   [Hoe kan ik de enquête bedanktpagina
-    personaliseren](http://www.copernica.com/nl/ondersteuning/hoe-kan-ik-de-enquete-bedanktpagina-personaliseren)
+    instellen](./survey-conclude-page)
 -   [Tekst van enquête buttons
-    wijzigen](http://www.copernica.com/nl/ondersteuning/tekst-van-enquete-buttons-wijzigen)
+    wijzigen](survey-edit-buttons)
 -   [Gegeven antwoorden van een enquête mailen in
     opvolgactie](http://www.copernica.com/nl/ondersteuning/antwoorden-enquete-mailen-in-opvolgactie)
 -   [Enquête titel en introductietekst
