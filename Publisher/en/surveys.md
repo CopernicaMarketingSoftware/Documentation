@@ -9,22 +9,23 @@ The results of your survey can be viewed in Copernica and downloaded to
 an Excel file. You can also lookup the answers given by a specific
 respondent in your Copernica database.
 
-### Creating surveys
+## Creating surveys
 
 You'll find the survey module in the **Content**section. From the
 **Survey menu**, you can create a new survey. Existing surveys can be
 found in the left overview. All other options related to a survey are
 also found in the **Survey**menu.
 
--   [Create new survey](./create-new-survey.md)
--   [Survey question types and their options](./survey-question-types-and-their-options.md)
--   [Edit, add, copy and move survey questions](./edit-add-copy-and-move-survey-questions.md)
--   [How to edit the survey title and introduction text](./how-to-edit-the-survey-title-and-introduction-text.md)
--   [Edit the survey conclude page](./edit-the-survey-conclude-page.md)
--   [Change styling of your survey with CSS](./creating-and-using-your-stylesheets.md)
--   [Make the survey questions conditional](./make-the-survey-questions-conditional.md)
+-   [Create new survey](./surveys-create.md)
+-   [Survey question types](./surveys-question-types.md)
+-   [Survey question options](./surveys-question-options.md)
+-   [Conditional survey questions](./surveys-questions-conditional.md)
+-   [Edit, add, copy and move survey questions](./surveys-edit)
+-   [How to edit the survey title and introduction text](./surveys-title-introduction.md)
+-   [Edit the survey conclude page](./surveys-conclude-page.md)
+-   [Change styling of your survey with CSS](./stylesheets.md)
 
-### Publish your survey
+## Publish your survey
 
 Surveys can be published on web pages only. It is technically not
 possible to email a survey.
@@ -34,13 +35,13 @@ possible to email a survey.
 -   [Link to the survey from an emailing](./linking-to-your-website-from-an-emailing.md)
 -   [Register survey participants and answers](./register-survey-participants-and-answers.md)
 
-### Survey follow-up actions
+## Survey follow-up actions
 
 -   [Survey follow-up actions](./follow-up-actions-for-surveys.md)
 -   [Recieve answers from respondent in your inbox, each time someone
     completed your survey](./how-to-receive-the-answers-given-in-a-survey-by-email.md)
 
-### Results of your survey
+## Results of your survey
 
 Of course you are curious about the answers given in the survey. You can
 view the results in Copernica, or download it to a text file, which can
@@ -50,7 +51,7 @@ be, for example, opened in Excel or SPSS statistical software.
 -   [Export the results of your survey](./export-the-results-of-your-survey.md)
 -   Taking the survey off line
 
-### Other topics
+## Other topics
 
 -   [Remove the number sign (\#) at each survey
     question](./remove-the-leading-number-sign-that-is-displayed-at-each-survey-question.md)

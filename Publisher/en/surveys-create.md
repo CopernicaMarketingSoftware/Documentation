@@ -1,7 +1,7 @@
-# Surveys
+# Surveys in Publisher
 
-Surveys are a very powerful tool to learn how contacts think of your
-company, your service, products or whatever you like to know about them.
+Surveys are a very powerful tool in Publisher to learn how contacts think 
+of your company, your service, products or whatever you like to know about them.
 
 Surveys are easily created and can be published on your website in a
 wink. If you [link to this website from an
@@ -21,10 +21,11 @@ adding questions please see
 
 1.  In the survey menu, find the **New question** option.
 2.  You can immediately start creating the first question. Enter the
-    name of the question, and [choose the type of the
-    question](./survey-question-types.md).
-    The text editor allows you to place 'underwriting' to your question,
-    such as 'please check only one box'.
+    name of the question and [choose the type of the
+    question](./surveys-question-types.md).
+    The text editor allows you to place 'underwriting' to your question to
+    explain the question further to your users. An example would be to 
+    instruct your users to 'please check only one box'.
 
 ![New question](../images/newquestion.png)
 
@@ -33,9 +34,11 @@ Unladen Swallow?*
 
 3.  Click on store to save the question and proceed to the next step.
 
-You can now select the [options](./survey-question-options.md) 
-for the question.
+You can now select the [options](./surveys-question-options.md) for the 
+question.
 
 ## More information
-* [Survey question types](./survey-question-types.md)
-* [Survey question options](./survey-question-options.md)
+
+* [Survey overview](./surveys)
+* [Survey question types](./surveys-question-types.md)
+* [Survey question options](./surveys-question-options.md)

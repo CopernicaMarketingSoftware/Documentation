@@ -1,38 +1,26 @@
-When composing your survey you can choose from four question types: open
-question, multiple choice, grid question or an in-between text (which is
-of course not really a question).
+# Surveys: Question types and their options
+
+When composing your survey you can choose from four 'question' types: open
+question, multiple choice, grid question or an in-between text.
 
 This article is about the question types. [Were you looking for
 information on how to create a survey
 instead?](./create-new-survey.md)
 
-**Each question has at least two options**
-
--   **Optional** - Check this box if the question may be skipped by the
-    participant. Otherwise he/she will be obliged to fill in an answer
-    before his/her survey can be submitted.
--   **Starts on new page** - Check this box if this question should
-    start on a new web page. There will be a submit button added after
-    the last question before this one, and those questions will not be
-    shown again on the next page where this question starts.
--   **Display** (multiple choice only) - Choose checkboxes if multiple
-    answers are allowed for this question. Choose selectbox to allow
-    only one answer.
-
-### Text between questions
+## Text between questions
 
 Text between questions is given the same space as a question, but has no
 answering option. It is mostly used to add introductory headers to
 questions or divisions between topics.
 
-### Open questions
+## Open questions
 
 An open question allows the participant to type in an answer through
 free text.\
  After saving the question you will see the extra option to limit the
 number of lines the participant will see to fill out his answer.
 
-### Multiple-choice questions
+## Multiple-choice questions
 
 A multiple choice question offers the participant a select number of
 answering possibilities. After saving the question you will see several
@@ -80,3 +68,19 @@ options are displayed.
 ![Creating a grid question](../images/gridquestion.png)
 
 This grid question has 3 columns with options
+
+
+**Each question has at least two options**
+
+-   **Optional** - Check this box if the question may be skipped by the
+    participant. Otherwise he/she will be obliged to fill in an answer
+    before his/her survey can be submitted.
+-   **Starts on new page** - Check this box if this question should
+    start on a new web page. There will be a submit button added after
+    the last question before this one, and those questions will not be
+    shown again on the next page where this question starts.
+-   **Display** (multiple choice only) - Choose checkboxes if multiple
+    answers are allowed for this question. Choose selectbox to allow
+    only one answer.
+    
+![Extra options](../images/extraoptions.png)
