@@ -8,4 +8,6 @@ connections. Each of these connections can decide if the next box will be
 processed with a simple comparison. If the comparison is fulfilled then
 the next box will be processed.
 
+If you don't want to take care about the outputs use execution box.
+
 [data-script]: https://www.copernica.com/en/documentation/followups-scripting
