@@ -123,6 +123,9 @@ personalizes it with the supplied data.
 Via the SMTPeter dashboard you have access to a powerful drag-and-drop editor
 to manage, edit and create responsive email templates. Every template has a 
 unique numeric identifier that you can use in the REST API to send out email.
+Instead of using a numeric identifier for an email template, it is also possible
+to fill in the json code of a template in the format of a string or object.
+
 
 ````json
 {
