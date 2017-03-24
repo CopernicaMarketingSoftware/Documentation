@@ -1,4 +1,4 @@
-#Naar webpagina linken vanuit emailing
+# Naar webpagina linken vanuit emailing
 Veel gebruikers van Copernica maken webpagina's voor gebruik in hun
 e-mail campagnes. Bijvoorbeeld een link naar een webpagina met een
 formulier of enquête. Linken naar webpagina's wordt gedaan met normale
