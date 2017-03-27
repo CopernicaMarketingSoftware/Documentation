@@ -1,4 +1,4 @@
-Profielen: Collectie aanmaken
+# Profielen: Collectie aanmaken
 
 In deze Copernica-tutorial leer je hoe je een collectie aanmaakt in je
 database.
