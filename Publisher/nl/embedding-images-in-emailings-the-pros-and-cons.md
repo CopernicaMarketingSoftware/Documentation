@@ -1,3 +1,4 @@
+# Afbeeldingen meesturen: de voor- en nadelen
 Wanneer je een HTML document gaat versturen heb je bij het instellen de
 keuze om afbeeldingen mee te sturen of om deze op onze servers te
 hosten. Beide opties hebben voor- en nadelen. Deze worden hieronder kort
