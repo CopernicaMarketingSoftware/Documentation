@@ -1,3 +1,4 @@
+# Naar webpagina linken vanuit emailing
 Veel gebruikers van Copernica maken webpagina's voor gebruik in hun
 e-mail campagnes. Bijvoorbeeld een link naar een webpagina met een
 formulier of enquête. Linken naar webpagina's wordt gedaan met normale
@@ -20,11 +21,11 @@ inlogcode uitbreiden. Deze code toevoegen heeft verschillende voordelen.
 Om een gebruiker automatisch te laten inloggen, voeg je de volgende code
 toe aan de link in het e-mail document:
 
-http://subdomein.jouwdomein.nl/webpaginanaam**?profile={\$profile.id}&code={\$profile.code}**
+http://subdomein.jouwdomein.nl/webpaginanaam?profile={$profile.id}&code={$profile.code}
 
 of wanneer de mailing wordt verstuurd naar subprofielen:
 
-http://subdomein.jouwdomein.nl/webpaginanaam**?subprofile={\$subprofile.id}&code={\$subprofile.code}**
+http://subdomein.jouwdomein.nl/webpaginanaam?subprofile={$subprofile.id}&code={$subprofile.code}
 
 Als je deze code niet handmatig wilt toevoegen, kun je ook gebruik maken
 van de functie **Hyperlinks uitbreiden** in het **Template** menu onder

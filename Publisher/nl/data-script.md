@@ -17,9 +17,7 @@ hyperlink klikt, wordt hij eerst doorgestuurd naar onze server, daar wordt
 het script uitgevoerd, waarna de gebruiker razendsnel wordt doorgestuurd
 naar de oorspronkelijke URL.
 
-<pre>
-<a href="http://www.example.com" data-script="profile.aantalkliks += 1;">klik hier</a>
-</pre>
+    <a href="http://www.example.com" data-script="profile.aantalkliks += 1;">klik hier</a>
 
 Bovenstaand code demonstreert hoe je gebruik kunt maken van het data-script
 attribuut. Als je een link in je mailing opneemt (zoals naar www.example.com
