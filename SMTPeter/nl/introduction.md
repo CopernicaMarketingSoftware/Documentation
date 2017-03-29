@@ -1,3 +1,5 @@
+*"We zijn druk bezig om de documentatie ook in het Nederlands beschikbaar te maken. De Engelse documentatie is [hier](https://www.smtpeter.com/en/documentation/introduction) te vinden."*
+
 # Beginnen met SMTPeter
 
 SMTPeter is een e-mail gateway op cloud-basis waarmee je al je e-mail kunt versturen vanaf al je devices, of het nou bulkmailings, transactieberichten of persoonlijke berichten zijn. Wij zorgen ervoor zorgt ervoor dat al je berichten perfect zijn: ze worden automatisch geprepareerd, gearchiveerd en ondertekend voordat ze aankomen bij de ontvanger.
