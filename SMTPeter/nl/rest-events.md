@@ -1,10 +1,10 @@
-# Haal alle gebeurtenissen voor een bepaalde eigenschap
+# Vraag gebeurtenissen op met een bepaalde eigenschap
 
-Alle data die door SMTPeter gaan wordt gelogd: afleveringen, bounces, clicks,
+Alle data die door SMTPeter gaat wordt gelogd: afleveringen, bounces, clicks,
 opens. Deze log files zijn op  te vragen via de [REST API](rest-logfiles).
 Wanneer u echter alleen geïnteresseerd bent in gebeurtenissen die voldoen
-aan een bepaalde eigenschap kunt u onderstaande URLs gebruiken. Dan zoeken
-wij voor u.
+aan een bepaalde eigenschap kunt u de onderstaande URLs gebruiken. Dan zoeken
+wij voor u de juiste informatie.
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
@@ -34,8 +34,8 @@ Na het verzoek ontvangt u de volgende JSON:
     ...
 ]
 ```
-Het `type` in de JSON geft het type record. De types die beschikbaar zijn
-staan in de onderstaande tabel. De data data die beschikbaar zijn worden
+Het `type` in de JSON geeft het type record. De types die beschikbaar zijn
+staan in de onderstaande tabel. De data die beschikbaar is wordt 
 beschreven op de betreffende pagina van het type.
 
 | Type                                        | Description                                      |
@@ -48,7 +48,6 @@ beschreven op de betreffende pagina van het type.
 | [open](log-opens "opens log file")          | informatie over wanneer een bericht is geopend   |
 | [response](log-responses)                   | informatie over door SMTPeter ontvangen reacties |
 
-
 ## Gebeurtenissen op basis van een messageid
 
 De volgende URL kan gebruikt worden om alle gebeurtenissen die betrekking
@@ -57,7 +56,7 @@ hebben op een bepaalde messageid op te vragen.
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 ```
-waar `MESSAGEID` het betreffende messageid is.
+Waar `MESSAGEID` het betreffende messageid is.
 
 
 ## Gebeurtenissen op basis van een email adres
