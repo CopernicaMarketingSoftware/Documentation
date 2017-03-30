@@ -63,7 +63,7 @@ kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn
 voor de meeste gebruikers geschikt. (tracking.jouwdomein.nl en 
 clicks.jouwdomein.nl)
 
-Als je SMTPeter gebruikt om kliks op te slaan worden gebruikers eerst 
+Als je SMTPeter gebruikt om [kliks](./statistics) op te slaan worden gebruikers eerst 
 doorgestuurd naar een andere website die de klik opslaat in onze databases. 
 De hyperlinks zien er daarom uit als "clicks.jouwdomein.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 
