@@ -57,7 +57,7 @@ be, for example, opened in Excel or SPSS statistical software.
 
 -   [Edit button text](./surveys-edit-buttons)
 -   [Remove the number sign (\#) at each survey
-    question](./surveys-remove-#.md)
+    question](./surveys-remove-hashtag.md)
 -   [Database marketing and web surveys; avoid
     corruption](./database-marketing-and-web-surveys-avoid-corruption.md)
 
