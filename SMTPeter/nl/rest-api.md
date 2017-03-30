@@ -28,10 +28,10 @@ Bij de REST API is deze overbodig.
 
 De REST API heeft een heldere manier om fouten te communiceren. Namelijk, 
 het teruggeven van de reguliere '[HTTP error code](https://nl.wikipedia.org/wiki/Lijst_van_HTTP-statuscodes)'
-in kwestie. Het opgeven van verkeerde data of andere foutmeldingen maakt
-dus niet uit, omdat je ook altijd een textuele uitleg terugkrijgt over wat
+in kwestie. Het opgeven van verkeerde data of andere foutmeldingen maakt 
+niet uit, omdat je ook altijd een textuele uitleg terugkrijgt over wat
 precies fout is gegaan. Een succesvolle 'call' geeft je altijd een status
-code terug van rond de '200 - 202'.
+code terug van '200' tot en met '202'.
 
 
 ## Voorbeelden
