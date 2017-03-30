@@ -9,15 +9,15 @@ you should select "Send a text e-mail". You can now add a sender name and
 address. The tab "message" is the text body and should use the following 
 code that outputs the answers given in the survey.
 
-    {foreach from=\$survey.questions key=number item=question}\
-      {\$question.question}\
-      {\$question.type}\
-      {if \$question.type == "open"}\
-       {\$question.answer}\
-      {else}\
-       {foreach from=\$question.answer item=answer}{\$answer}{/foreach}\
-      {/if}\
-     {/foreach}
+    {foreach from=$survey.questions key=number item=question}
+      {$question.question}
+      {$question.type}
+      {if $question.type == "open"}
+       {$question.answer}
+      {else}
+       {foreach from=$question.answer item=answer}{$answer}{foreach}
+      {if}
+     {foreach}
 
 ## More information
 

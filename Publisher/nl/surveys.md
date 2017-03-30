@@ -22,7 +22,7 @@ zijn terug te vinden in het linkeroverzicht.
 -   [Gegeven antwoorden van een enquête mailen in
     opvolgactie](./surveys-email-results)
 -   [Enquête titel en introductietekst
-    aanpassen](./surveys/title-introduction.md)
+    aanpassen](./surveys-title-introduction.md)
 -   [Conditionele vragen in
     enquête](./surveys-question-conditional)
 -   [Enquête

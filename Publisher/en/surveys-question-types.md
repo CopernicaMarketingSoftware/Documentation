@@ -45,7 +45,7 @@ If you want to allow the user to type their own answer in text you can click
 and the textbox to add their own option.*
 
 To have one of the multiple choice options already checked for the
-respondent, add a \\* to that option (before or after text). The \\* will
+respondent, add a \\ * to that option (before or after text). The \\ * will
 be visible in the text and the checkbox will already be checked.
 
 ## Grid questions
