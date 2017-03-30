@@ -1,2 +1,4 @@
 * [Introductie](introduction)
-* [Rest events](rest-events)
+    * [Zender domeinen](sender-domains)
+* REST API
+    * [Rest events](rest-events)
