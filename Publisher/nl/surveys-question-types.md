@@ -40,7 +40,7 @@ laten typen door een text box toe te voegen bij de multiple choice opties.
 antwoord te geven.*
 
 Om standaard een antwoord aangevinkt te hebben voor de deelnemer kun je 
-een \* toevoegen aan de optie (voor of na tekst). Dit zal zichtbaar zijn 
+een \\\* toevoegen aan de optie (voor of na tekst). Dit zal zichtbaar zijn 
 in de tekst en het vakje zal vast aangevinkt zijn.
 
 ## Grid vragen
