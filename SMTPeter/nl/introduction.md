@@ -1,4 +1,4 @@
-*"We zijn druk bezig om de documentatie ook in het Nederlands beschikbaar te maken. De Engelse documentatie is [hier](https://www.smtpeter.com/en/documentation/introduction) te vinden."*
+*We zijn druk bezig om de documentatie ook in het Nederlands beschikbaar te maken. De Engelse documentatie is [hier](https://www.smtpeter.com/en/documentation/introduction) te vinden.*
 
 # Beginnen met SMTPeter
 
