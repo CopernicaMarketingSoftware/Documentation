@@ -16,5 +16,5 @@ SMTPeter verstuurd vaak grote hoeveelheden email, waardoor het door de
 grote ontvangers als normaal wordt beschouwd. Daarnaast heeft SMTPeter 
 throttling algoritmes om met een goed tempo mail af te leveren. We weten
 de verschillende ontvangstcapaciteiten van de email clienten. Als je vele
-mails verstuurtkan ons geavanceerde vertragingssysteem helpen om jouw 
+mails verstuurt kan ons geavanceerde vertragingssysteem helpen om jouw 
 emails aan te laten komen.
