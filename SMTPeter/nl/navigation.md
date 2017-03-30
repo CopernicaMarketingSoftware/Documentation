@@ -12,5 +12,5 @@
     * [Personalizatie](personalization)
     * [Templates](templates)
     * [Email archivering](archiving)
-* REST API
+* [REST API](rest-api)
     * [Rest events](rest-events)
