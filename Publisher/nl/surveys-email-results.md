@@ -11,15 +11,15 @@ selecteer je "De enquête is ingevuld" en verzonden en bij **Actie**
 verzendadres toevoegen. Onder het **bericht** tabje kun je de volgende 
 code toevoegen om de resulten toe te voegen.
 
-    {foreach from=\$survey.questions key=number item=question}\
-      {\$question.question}\
-      {\$question.type}\
-      {if \$question.type == "open"}\
-       {\$question.answer}\
-      {else}\
-       {foreach from=\$question.answer item=answer}{\$answer}{/foreach}\
-      {/if}\
-     {/foreach}
+    {foreach from=$survey.questions key=number item=question}
+      {$question.question}
+      {$question.type}
+      {if $question.type == "open"}
+       {$question.answer}
+      {else}
+       {foreach from=$question.answer item=answer}{$answer}{foreach}
+      {if}
+     {foreach}
 
 ## Meer informatie
 
