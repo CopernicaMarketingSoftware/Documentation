@@ -2,7 +2,7 @@
 
 Mail die je verstuurd via SMTPeter wordt voorbewerkt en daarna doorgestuurd 
 naar de daadwerkelijke ontvanger. Dit gebeurt allemaal in een fractie van 
-een seconde, dus je zal hier niets van merken
+een seconde, dus je zal hier niets van merken.
 
 Het kan echter gebeuren dat SMTPeter opzettelijk het verzenden van je 
 mail vertraagt. Dit is om te voorkomen dat email clients je adres blokkeren 
