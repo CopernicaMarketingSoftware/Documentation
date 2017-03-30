@@ -13,4 +13,13 @@
     * [Templates](templates)
     * [Email archivering](archiving)
 * [REST API](rest-api)
-    * [Rest events](rest-events)
+    * [Endpoint and access token](rest-endpoint)
+    * [JSON vs POST data](json-vs-post)
+    * [Sending mail](rest-send)
+    
+    
+    
+    
+    
+    * [Retrieve events](rest-events)
+    
