@@ -14,7 +14,7 @@ moet worden geinspecteerd om na te gaan welke data is teruggegeven.
 ## Voorbeeld API 'call' door middel van POST data
 
 Het hieropvolgende stuk 'code' laat een voorbeeld zien van communicatie tussen de
-de applicatie van de gebuiker en SMTPeter. In dit voorbeeld hebben we ook een stuk 
+applicatie van de gebuiker en SMTPeter. In dit voorbeeld hebben we ook een stuk 
 van de data meegegeven wat daadwerkelijk wordt verstuurd. 
 
 ```text
