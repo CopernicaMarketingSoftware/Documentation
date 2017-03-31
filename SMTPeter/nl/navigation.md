@@ -16,10 +16,4 @@
     * [Endpoint and access token](rest-endpoint)
     * [JSON vs POST data](json-vs-post)
     * [Sending mail](rest-send)
-    
-    
-    
-    
-    
     * [Retrieve events](rest-events)
-    
