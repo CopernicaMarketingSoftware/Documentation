@@ -9,6 +9,7 @@ you can use the events rest call. All calls that are supported are:
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
+https://www.smtpeter.com/v1/events/tamplate/TEMPLATE
 https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
 ```
 after this call you receive a JSON with all the information you have requested.
@@ -63,13 +64,24 @@ where `MESSAGEID` is the messageid of interest.
 
 ## Events based on an email address
 
-If you want to retrieve all inforamtion about a particular email address
+If you want to retrieve all information about a particular email address
 you can make a get request to:
 
 ```text
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
 ```
 where `EMAILADDRESS` is the address you are interested in
+
+
+## Events based on a template
+
+If you want to retrieve all information about a particular template
+you can make a get request to:
+
+```text
+https://www.smtpeter.com/v1/events/template/TEMPLATE
+```
+where `TEMPLATE` is the id of the template you are interested in
 
 
 ## Events based on tags
