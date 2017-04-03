@@ -1,12 +1,9 @@
-## Wat is SMTPeter?
+## Direct aan de slag
 
 SMTPeter is een 'cloud based' email gateway die ervoor zorgt dat je op een makkelijke manier
-emails kunt versturen. SMTPeter neemt complexe materie zoals 'DKIM signing', SPF, 'DNS hosting',
-DMARC en 'het nagaan van kliks en opens' voor je uit handen. Dit bespaart je een hoop tijd.
-Je kunt kiezen om emails naar SMTPeter te versturen via de REST API of SMTP API. In de korte
-periode dat je emails onze servers passeren, worden de emails gelogd en geoptimaliseerd.
-Daarna worden de emails op de juiste manier afgeleverd bij de ontvangers.
-Om direct te starten met SMTPeter, heb je (naast het registreren) twee dingen nodig:
+emails kunt versturen. Je kunt kiezen om emails naar SMTPeter te versturen via de REST API 
+of SMTP API. Om direct te starten met SMTPeter, heb je (naast het registreren) twee dingen 
+nodig:
 - *Aanmaken van een '**sender domain**'*
 - *Aanmaken van een verbinding met de '**API**'*
 
