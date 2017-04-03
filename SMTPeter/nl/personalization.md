@@ -9,11 +9,11 @@ toepassing.
 
 ## Variabelen 
 
-Laten we starten met het uitleggen van de variabelen. Een variabel ziet er 
+Laten we starten met het uitleggen van de variabelen. Een variabele ziet er 
 als volgt uit: `{$` naam van de variabel `}`
 Er zijn een aantal variablen die we veelvuldig voorbij zien komen, bijvoorbeeld
 "{$firstname}", "{$age}" en "{$city}".
-In het algemeen moet een variabel aan de volgende criteria voldoen:
+In het algemeen moet een variabele aan de volgende criteria voldoen:
 
 * beginnen met een $ teken,
 * is omringd met accolades,
@@ -61,3 +61,63 @@ binnen de accolades worden uitgevoerd. Bijvoorbeeld:
 ```text
 {$var + 10}
 ```
+
+Naast de accolades gelden de vanzelfsprekende mathematische regels. 
+De standaard mathematische 'operators' (`+`, `-`, `*`, `/`) en de modulus 
+'operator' (`%`) zijn dus beschikbaar. Onthoud dat als een waarde niet bestaat
+of geen numerieke inhoud bevat, de waarde 0 wordt toegekend.
+
+
+## Conditionele 'statements'
+
+Een van de hoekstenen van elke programmeertaal zijn conditionele 'statments'.
+Een conditioneel 'blok' begint altijd met het {if} keyword (altijd met accolades),
+gevolgd door een 'statement' dat wordt getest/uitgevoerd. Een conditioneel blok 
+eindigt altijd met de if 'closing tag' {/if}. Een conditioneel blok wordt alleen
+uitgevoerd als het 'statement' binnen het {if} gedeelte evalueert als true.
+
+In het volgende voorbeeld wordt de text 'Hello John' alleen weergegeven als 
+de waarde van de variabele $name gelijk is aan 'john'. 
+```text
+{if $name == 'john'}Hello John{/if}
+```
+
+Maar wat als er ook een 'Sarah' in je mailinglist zit? Je wilt niet dat zij
+niets ontvangt. Dat is de situatie waar de {elseif} om de hoek komt kijken.
+```text
+{if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}
+```
+
+Het kan ook voor komen dat we in een bepaalde situatie niets aan 'John'
+en 'Sarah' willen laten weten. In dat geval gebruiken we het {else}
+keywoord. Het stukje 'code' na het {else} keyword wordt uitgevoerd als
+geen van de voorgaande statements evualeren tot true.
+```text
+    {if $name == 'john'}
+        Hello John
+    {elseif $name == 'sarah'}
+        Hello Sarah
+    {else}
+        Hello anybody else
+    {/if}
+```
+
+Dit is natuurlijk een zeer slecht voorbeeld van hoe je een gepersonaliseerde
+aanhef schrijft. Je conditionele blok moet in dit geval namelijk zo groot zijn
+als de lijst met alle namen van de wereld. 
+
+Een beter voorbeeld is uiteraard:
+```text
+    {if $name == ''}
+        Dear subscriber,
+    {else} 
+        Dear {$name},
+    {/if}
+```
+
+Afhankelijk van de inhoud van de variabele wordt bekeken welk blok moet worden 
+uitgevoerd. Stel dat de $name variabele geen waarde heeft, dan wordt dat blok {if}
+uitgevoerd. De conditie evualeert immers tot true. Als de eerste conditie evalueert 
+tot false wordt het else blok uitgevoerd. 
+
+
