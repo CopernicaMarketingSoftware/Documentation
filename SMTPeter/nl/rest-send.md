@@ -1,7 +1,7 @@
 # REST API method: send
 
 Om SMTPeter een email te laten versturen hoef je alleen maar met een
-HTTP POST 'request' aan te geven welk   dat je gebruik wil maken van 
+HTTP POST 'request' aan te geven dat je gebruik wilt maken van 
 de 'send method':
 
 ```text
@@ -57,35 +57,35 @@ Na het succesvol versturen van je 'request', stuurt SMTPeter een JSON object ter
 met daarin een unieke 'identifier' voor elke ontvanger waarnaar de email verstuurd
 gaat worden.
 
-````json
+```json
 {
     "id1" : "recipient1@example.com",
     "id2" : "recipient2@example.com"
 }
-````
+```
 De geretourneerde id's kunnen worden gebruikt om informatie te verkrijgen middels 
 andere methodes van de REST API. Omdat je emails kunt versturen naar meerdere ontvangers
 met een slechts een 'call', bevat de geretourneerde waarde wellicht meerdere id's 
 en 'recipients'.
 
-## Minimale aantal properties
+## Minimale aantal 'properties'
 
 Je hebt tenminste twee properties nodig om een email te kunnen versturen. Het
 'recipient' adres dat gebruikt gaat worden in het 'RCPT TO' gedeelte van de SMTP
 protocol en de algehele 'MIME' data.
 
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
-````
+```
 Om alles leesbaar te maken, hebben we het merendeel van de 'MIME' code van het 
 voorbeeld verwijderd. Als je zelf geen 'MIME' bericht wil maken, kan je de 
 'property' weglaten. Gebruik dan wel de '[special MIME properties](rest-mime)' 
 zoals 'subject', 'text' en 'html' zodat SMTPeter de mime data kan aanmaken.
 
-Je hoet enkel en alleen een 'recipient' adress aan te leveren om een email te
+Je hoeft enkel en alleen een 'recipient' adress aan te leveren om een email te
 versturen. Echter, als je bekend bent met het SMTP protocol weet je dat dat je
 normaal gesproken ook een 'envelope address' moet opgeven. Dit 'envelope address' 
 is het adres waar 'bounces' of momenteel-niet-op-kantoor 'replies' naartoe
@@ -93,79 +93,76 @@ worden verstuurd. SMTPeter neemt alle zorgen weg omtrent het afhandelen van die
 'bounces' en daarom hoe je in dit geval geen 'envelope address' op te geven. 
 SMTPeter doet dit proces helemaal zelfstandig.
 
-If you want to handle the bounces yourself, you can add an extra "envelope" address
-to the input data. Besides this envelope address, you might also be interested 
-in adding a ["dsn" property](rest-dsn) to specify the type of bounce messages 
-you want to receive.
+Het is ook mogelijk om zelf 'bounces' af te handelen. Dit doe je door een extra 
+'envelope' adres toe te voegen aan de 'input data'. Naast dit 'envelope' adres
+is het wellicht ook interessant om een ['dsn' property](rest-dsn) toe te voegen.
+Hiermee kan je aangeven welke soort berichten je over de 'bounces' wilt ontvangen.
 
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "envelope":     "myaddress@example.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
-````
+```
 
 
-## Using templates
+## Het gebruik van 'templates'
 
-In all of the examples that we gave so far, we required you to send the full
-message to SMTPeter - either as a MIME string or as individual "text" and 
-"html" properties. But you can also make use of pre-stored templates so that
-you only have to send personalization data to the REST API. SMTPeter 
-constructs the email message based on the earlier created template and 
-personalizes it with the supplied data.
+Er zijn tot nu toe een aantal voorbeelden gegeven van hoe je data naar SMTPeter stuurt.
+Hierbij is het nodig om telkens de hele email te versturen naar SMTPeter. Of als een 
+'MIME' string of als individuele tekst en html 'properties'. Het is ook mogelijk om 
+gebruik te maken van vooraf-opgestelde 'templates'. Dit is handig, omdat je dan alleen
+personalisatie velden mee hoeft te geven bij het versturen van data naar de REST API. 
+Vanaf daar neemt SMTPeter het over, door de mail te construeren met de gepersonaliseerde 
+data. 
 
-Via the SMTPeter dashboard you have access to a powerful drag-and-drop editor
-to manage, edit and create responsive email templates. Every template has a 
-unique numeric identifier that you can use in the REST API to send out email.
-Instead of using a numeric identifier for an email template, it is also possible
-to fill in the json code of a template in the format of a string or object.
+In het SMTPeter 'dashboard' heb je toegang tot de uitgebreide 'drag-and-drop' editor.
+Hier kun je 'responsive email templates' maken, bewerken en beheren. Elke 'template'
+krijgt een eigen 'id' die je kunt gebruiken om email te versturen via de REST API.
+Het is ook mogelijk om een gehele string of object in te voeren als 'email template'. 
 
 
-````json
+```json
 {
     "recipient":    "john@doe.com",
-    "template":     12,
+    "template":     12 | **or string/object**,
     "data": {
         "firstname":    "John",
         "lastname":     "Doe"
     }
 }
-````
+```
+Je kunt dus '[personalization data](personalization)' meegeven aan de REST 'call', 
+zodat de email wordt gepersonaliseerd. Bovenstaand voorbeeld stuurt 'template' #12
+naar john@doe.com, met de variabelen {$firstname} en {$lastname}. Dit wordt in de 
+uiteindelijke email weergegeven als 'John Doe'.
 
-You can pass [personalization data](personalization) to the REST call, so 
-that the mail gets personalized. The above example will send template #12 to
-john@doe.com, with the variables {$firstname} and {$lastname} replaced with 
-John Doe's name.
 
+## Meerdere ontvangers
 
-## Multiple recipients
+Het is natuurlijk ook mogelijk om een mail te versturen naar meerdere ontvangers.
+Dit doe je door het 'recipient' veld te verwijderen en te vervangen door 'recipients'.
+Hierin plaats je vervolgens een array met alle emailadressen die je een email wilt 
+versturen. Dit ziet er als volgt uit:
 
-To send a single message to multiple recipients, remove the "recipient"
-propery, and replace it with a "recipients" property holding an array
-of email addresses:
-
-````json
+```json
 {
     "recipients":   [ "john@doe.com", "someone@else.com" ],
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
-````
+```
 
-Only pure email addresses are supported. It is not permitted to use display 
-names or to put the addresses inside angle brackets.
-
-If you send a message to multiple recipients, SMTPeter will also return
-multiple identifiers.
-
-
+Alleen bestaande emailadressen worden ondersteund. Het is niet toegestaan om 
+'display names' of adressen in 'angle brackets' te gebruiken. SMTPeter geeft
+bij het versturen van email naar meerdere ontvangers ook meerdere 'identifiers'
+terug.
 
 ## Personalization
 
-You can add personal data to the recipient or recipients. This data can be
-used to [personalize the mail](personalization). If you have one
-recipient, you can add the personal data with property "data".
+Je kunt gepersonaliseerde data toevoegen aan de 'recipient(s)'. Deze data kan
+gebruikt worden om [emails te personaliseren](personalization). De data 'property'
+kun je verwijderen als de email naar een enkele 'recipient' wordt verstuurd.
 
 ```json
 {
@@ -178,7 +175,7 @@ recipient, you can add the personal data with property "data".
 }
 ```
 
-If you have multiple recipients, the data can be passed as follows:
+Bij meerdere 'recipients' kan de data als volgt worden meegegeven:
 
 ```json
 {   
@@ -195,20 +192,20 @@ If you have multiple recipients, the data can be passed as follows:
     "mime": "....",
 }
 ```
+Binnen de 'MIME' string, tekst of html 'properties' kan je 
+'[personalization variables](personalization)' gebruiken, zoals bijvoorbeeld
+{$firstname} en {$lastname}. SMTPeter personaliseert de waardes dan zelf bij 
+elke email. 
 
-Inside the MIME string, or inside the "text" or "html" properties, you can
-use [personalization variables](personalization) like {$firstname} and 
-{$lastname} that will be filled in by SMTPeter.
 
+## Speciale toepassingen
 
+Door speciale 'properties' toe te voegen aan de input van de JSON, kun je bepaalde
+toepassingen van SMTPeter aan of uitzetten. Zo kun je bijvoorbeeld het aantal 'clicks', 
+'opens' en 'bounces' nagaan. Ook kun je bijvoorbeeld aangeven dat je wilt dat SMTPeter 
+de CSS code 'inline' zet.
 
-## Special features
-
-By adding special properties to the input JSON you can enable or disable specific
-SMTPeter features. You can for example enable click, open and bounce tracking,
-or you can tell SMTPeter to inlinize your CSS code.
-
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
@@ -218,26 +215,24 @@ or you can tell SMTPeter to inlinize your CSS code.
     "trackbounces": true,
     "preventscam":  true
 }
-````
+```
 
-### Inlinize CSS code
+### Zet CSS 'inline'
 
-By setting the "inlinecss" variable to true you enable the feature that 
-CSS stylesheets in the header of your email are converted into inline style
-attributes in the HTML code.
+Door de "inlinecss" variabel op 'true' te zetten activeer je de toepassing
+die ervoor zorgt dat 'CSS stylesheets' uit je 'header' worden omgezet naar
+'inline' attributen in de html code.
 
 
-### Tracking clicks, opens and bounces
+### Het nagaan van 'clicks', 'opens' en 'bounces'
 
-SMTPeter automatically replaces all hyperlinks in your messages with its
-own URLs so that it can track clicks and opens. The envelope address
-of the mailing will also be set to a SMTPeter address, so that all
-bounces and out-of-office replies are tracked by SMTPeter. If you
-want to disable these tracking settings, you can include the 
-"trackclicks", "trackopens" and "trackbounces" options, and set them 
-to false:
+SMTPeter vervangt automatisch alle 'hyperlinks' in je emails met eigen 'URLs'.
+Op deze manier kunnen de verschillende 'events' worden nagegaan. Het 'envelope'
+adres van de emails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
+kan SMTPeter ook die 'events' afhandelen. Je kunt deze toepassingen gemakkelijk
+uitzetten. Zie onderstaande JSON data:
 
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
@@ -245,52 +240,51 @@ to false:
     "trackopens":   false,
     "trackbounces": false
 }
-````
+```
+De 'click-tracking' is automatisch geactiveerd. Dit betekent dat *alle* hyperlinks
+zijn ingesteld om 'clicks' te traceren en na te gaan. Echter, sommige 'email clients'
+tonen een waarschuwing aan de gebruiks op het moment dat links zijn bewerkt. 
+Dit is in sterkere mate het geval waneer de link waarop gelikt kan worden,
+niet overeenkomt met de 'hyperlink'. In dat geval kan je altijd de "preventscam"
+'property' opgeven, waardoor SMTPeter van de links afblijft en ze dus niet bewerkt:
 
-When click-tracking is enabled (which is the default), *all* hyperlinks in
-your email are modified to track the clicks. However, some email programs
-show a warning to the user when links are modified. This is especially the
-case if a link is modified in such a way that the clickable text does
-not match the actual hyperlink. You can add a "preventscam" property to
-tell SMTPeter not to modify these type of links:
-
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
     "trackclicks":  true,
     "preventscam":  true
 }
-````
+```
+De "preventscam" optie voorkomt dus de door SMTPeter bewerkte hyperlinks, zoals:
+&lt;a href="http://www.example.com"&gt;www.example.com&lt;/a&gt;
 
-The preventscam option prevents that SMTPeter modified hyperlinks like
-&lt;a href="http://www.example.com"&gt;www.example.com&lt;/a&gt;.
 
+### Instellingen voor 'Delivery Status Notifications'
 
-### Settings for Delivery Status Notifications
+SMTPeter kan 'bounces' voor je nagaan. Deze worden gestuurd naar jouw
+'envelope' adres. Je kan deze toepassing aanzetten door het "envelope"
+adres toe te voegen aan de JSON:
 
-If you do not want SMTPeter to track bounces for you, all bounces are sent
-sent back to your envelope address. If you want this, you must add the
-"envelope" address to the JSON too:
-
-````json
+```json
 {
     "envelope":     "your@address.com",
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
     "trackbounces": false
 }
-````
+```
+De bovenstaande JSON instrueert SMTPeter om geen 'bounces' na te gaan.
+In dit geval geeft de JSON aan dat jouw eigen emailadres wordt gebruikt
+om berichten naar te sturen met betrekking tot de niet geleverde emails.
+Wees ervan bewust dat je ook een 'envelope' adres moet toevoegen als je 
+wel 'bounces' wilt ontvangen.
 
-The above JSON instructs SMTPeter to not track bounces, but to use your
-envelope for messages that could not be delivered. Be aware that you must
-add an envelope address to the JSON too to receive bounces!
+Met de optionele dsn 'property' kan je verder 'finetunen' wat voor soort 
+'Delivery Status Notification' berichten je wilt ontvangen. De dsn variabel 
+accepteert een JSON objevct met vier optionele velden:
 
-With the optional "dsn" property you can further finetune what kind of Delivery 
-Status Notification messages you want to receive. The "dsn" variable accepts a 
-JSON object with four (optional) fields:
-
-````json
+```json
 {
     "recipient":    "john@doe.com",
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
@@ -303,28 +297,29 @@ JSON object with four (optional) fields:
         "orcpt":            "original@recipient.address.com"
     }
 }
-````
+```
+De "notify" 'property' is de allerbelangrijkste. Je kunt specificeren voor welke
+soorten 'events' een email notificatie moet worden getriggerd. Mogelijke waardes
+zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een komma gescheiden lijst met 
+waardes wordt ook ondersteund. 
 
-The "notify" property is the most important one: you can specify what kind of events 
-should trigger an email notification. Possible values are "NEVER", "FAILURE", 
-"SUCCESS" or "DELAY". A comma seperated list of values is also supported.
+De "ret" waarde kan de waardes "FULL" of "HDRS" bevatten om te specificeren of de 
+notificatie de gehele email moet bevatten of slechts de 'headers'. 
 
-The "ret" value may hold the values "FULL" or "HDRS" to specify whether the
-notification should hold the full original email, or just the headers.
+De "envid" and "orcpt" velden kunnen worden gebruikt als je volledige controle wilt
+hebben over de extra data die meegestuurd wordt in de notificaties. De waarde van 
+"envid" wordt bijgevoegd in de "original-envelope-id" 'property' van het teruggestuurde
+status bericht. De "orcpt" waarde wordt gekopierd naar de "original-recipient" 
+'property.
 
-The "envid" and "orcpt" fields can be used if you want to control what extra
-data will be included in the notifications. The value of the "envid" will 
-be included in the "original-envelope-id" property of the returned status
-message, and the "orcpt" value is copied to the "original-recipient" 
-property.
 
-### Setting for embedded images
+### Instelling voor 'embedded' images
 
-Having embedded images in your mime may give some [issues](images). SMTPeter
-can subtract the embedded images from your mime, host them, and rewrite
-the links in the HTML part of the mime to the remote location.
-The option can be enabled to set the "images" property in the JSON to
-"hosted". The default is "default", which simply does nothing.
+Het hebben van 'embedded' afbeeldingen in je 'MIME' kan soms wat [problemen](images) geven.
+SMTPeter kan de 'embedded' afbeeldingen uit je 'MIME' halen, hosten, en vervolgens
+de links herschrijven in het html gedeelte van de 'MIME' naar de oorspronkelijke locatie.
+De optie kan worden geactiveerd door in de JSON op de "image" 'property' een waarde mee 
+te geven, genaamd: "hosted". De "default" waarde doet vanzelfsprekend niets.
 
 ```json
 {
