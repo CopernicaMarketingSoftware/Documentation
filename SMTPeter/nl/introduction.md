@@ -1,4 +1,4 @@
-## Direct aan de slag
+# Direct aan de slag
 
 SMTPeter is een 'cloud based' email gateway die ervoor zorgt dat je op een makkelijke manier
 emails kunt versturen. Je kunt kiezen om emails naar SMTPeter te versturen via de REST API 
