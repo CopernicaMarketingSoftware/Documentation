@@ -8,7 +8,7 @@ nodig:
 - *Aanmaken van een verbinding met de '**API**'*
 
 
-## 'Sender Domain' instellen
+## Sender Domain instellen
 
 'Sender Domains' vind je in het menu van het SMTPeter dashboard. Klik op ‘Add sender domain’
 en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving waar alle instructies
