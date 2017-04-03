@@ -1,6 +1,6 @@
 # Email throttling
 
-Mail die je verstuurd via SMTPeter wordt voorbewerkt en daarna doorgestuurd 
+Mail die je verstuurt via SMTPeter wordt voorbewerkt en daarna doorgestuurd 
 naar de daadwerkelijke ontvanger. Dit gebeurt allemaal in een fractie van 
 een seconde, dus je zal hier niets van merken.
 
