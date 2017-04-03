@@ -1,3 +1,3 @@
-We're working on this page, stay tuned.
-For now, you can read the full documentation in English:
+We zijn bezig met het creëren van deze pagina.
+Je kunt voor nu in ieder geval de gehele documentatie bekijken in het Engels:
 https://www.smtpeter.com/en/documentation/smtp-api
