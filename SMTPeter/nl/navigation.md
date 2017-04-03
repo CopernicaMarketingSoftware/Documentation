@@ -3,6 +3,8 @@
     * [Open and click statistieken](statistics)
     * [Personalizatie](personalization)
 * [Verzenden via SMTP](smtp-api)
+    * [Aanmaken van credentials](smtp-credentials)
+    * [MIME headers](smtp-headers)
 * [Verzenden via REST](rest-send)
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
