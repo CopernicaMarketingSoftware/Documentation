@@ -20,7 +20,7 @@
     * [Templates beheren](rest-templates)
 * [Personaliseren](personalize)
     * [Webversie](webversion)
-* [Achterground informatie](background)
+* [Achtergrond informatie](background)
     * [Zender domeinen](sender-domains)
     * [SPF validatie](spf-validation)
     * [DKIM ondertekenen](dkim-signing)
