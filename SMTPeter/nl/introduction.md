@@ -5,7 +5,7 @@ emails kunt versturen. Je kunt kiezen om emails naar SMTPeter te versturen via d
 of SMTP API. Om direct te starten met SMTPeter, heb je (naast het registreren) twee dingen 
 nodig:
 - *Aanmaken van een '**sender domain**'*
-- *Aanmaken van een verbinding met de '**API**'*
+- *Aanmaken van een verbinding met de gewenste '**API**'*
 
 
 ## Sender Domain instellen
