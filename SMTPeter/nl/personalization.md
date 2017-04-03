@@ -6,6 +6,7 @@ te houden. Hieronder wordt de syntax uitgelegd aan de hand van een aantal
 voorbeelden, zodat je direct een beeld hebt bij de mogelijkheden van deze 
 toepassing.
 
+
 ## Variabelen 
 
 Laten we starten met het uitleggen van de variabelen. Een variabel ziet er 
@@ -41,3 +42,22 @@ zijn:
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
 een array, als variabele een object is. Let erop dat je ook hier start vanaf
 0. 
+
+
+## Modificeer variabelen
+
+Je kunt de inhoud van je variabelen veranderen door 'modifiers' toe te voegen.
+Zo is het bijvoorbeeld mogelijk om alle content te weergeven in hoofdletters of
+de lengte te berekenen van een string of een 'hash' som. Een volledige lijst
+van alle 'modifiers' en corresponderende functionaliteit is [hier](personalization-modifiers) 
+te vinden.
+
+
+## Simpele berekeningen 
+
+Variabelen die een numerieke waarde bevatten kunnen worden gebruikt om simpele
+berekeningen te doen. Net zoals de 'normale variabelen' moeten alle berekeningen
+binnen de accolades worden uitgevoerd. Bijvoorbeeld:
+```text
+{$var + 10}
+```
