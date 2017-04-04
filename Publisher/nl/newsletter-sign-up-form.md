@@ -1,8 +1,4 @@
-In dit artikel lees je hoe je een aanmeldformulier maakt. Bij het
-verzenden van het formulier wordt altijd een nieuw profiel aangemaakt.
-
-Het formulier maken
--------------------
+# Het maken van een aanmeldformulier
 
 Maak in het onderdeel Content een nieuw webformulier, en voeg minstens
 de volgende twee velden toe.
@@ -37,7 +33,7 @@ instellingen:
 -   **Tekst verzendknop**: dit is de tekst die op de verzendknop komt
     (bijvoorbeeld: Verzenden)
 -   **Vervolgpagina**: kies de vervolgpagina. (bijvoorbeeld ‘bedankt’,
-    als de vervolgpagina http://www.uwbedrijf.nl/bedankt is)
+    als de vervolgpagina http://www.example.com/bedankt is)
 -   **HTML filteren**. Met deze optie ingeschakeld is de database goed
     beveiligd tegen schadelijke invoer van HTML, scripttaal en
     dergelijke door kwaadwillenden (hackers). 
