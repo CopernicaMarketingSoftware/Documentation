@@ -1,3 +1,5 @@
+# Het wijzigen van een ingeroosterde mailing
+
 Wanneer je een mailing hebt ingeroosterd, kan je enkele instellingen van
 de mailing wijzigen. Het is natuurlijk ook mogelijk de mailing af te
 breken. Het is niet mogelijk om de bestemming (selectie of miniselectie)
