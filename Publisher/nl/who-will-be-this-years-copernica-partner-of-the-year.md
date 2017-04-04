@@ -1,3 +1,5 @@
+# Wie wordt deze keer Copernica partner van het jaar?
+
 De uitreiking van de tweede Copernica Partner of the Year award komt
 snel dichterbij. Op 17 september tijdens het Copernica Summit wordt
 bekend gemaakt welke Copernica partner zich weer een jaar lang de beste
@@ -7,46 +9,27 @@ gesleept door
 Hieronder de lijst van 50 partners die op dit moment kans maken op de
 titel op alfabetische volgorde.
 
-+--------------------------+--------------------------+--------------------------+
-| 22 Times                 | CPA                      | Quercis                  |
-+--------------------------+--------------------------+--------------------------+
-| Abovo Media              | Cream                    | Quibus B.V.              |
-+--------------------------+--------------------------+--------------------------+
-| Admix Connect            | Crimsonwing              | Redhotminute             |
-+--------------------------+--------------------------+--------------------------+
-| Amazing BV               | csolutions               | ReMind                   |
-+--------------------------+--------------------------+--------------------------+
-| Ambitions                | De Makers                | Schutreclame             |
-+--------------------------+--------------------------+--------------------------+
-| AnchorMen                | Digitalbits              | Storm Media Buying       |
-+--------------------------+--------------------------+--------------------------+
-| Aride                    | Exxtra                   | TheMailMen               |
-+--------------------------+--------------------------+--------------------------+
-| aYaline                  | Freshheads               | Tribal Internet          |
-|                          |                          | Marketing                |
-+--------------------------+--------------------------+--------------------------+
-| Bikkelhart               | Indicia Nederland BV     | TTF Marketing &          |
-|                          |                          | Communicatie             |
-+--------------------------+--------------------------+--------------------------+
-| Bluedesk E-Business B.V. | Infour                   | Turksma                  |
-+--------------------------+--------------------------+--------------------------+
-| Bookerz                  | ISM                      | Van Luyken Communicatie  |
-+--------------------------+--------------------------+--------------------------+
-| Boom Communicatie        | JWB Communicatie         | Voice SA/NV              |
-+--------------------------+--------------------------+--------------------------+
-| Bosma DMC                | LeadsOnline              | X-com BV                 |
-+--------------------------+--------------------------+--------------------------+
-| Bull Marketing.nl        | Lemm Ten Haaf            | Xplore Group NV          |
-+--------------------------+--------------------------+--------------------------+
-| Cervino Marketing        | MarketingBytes           | Youniq reclame en        |
-|                          |                          | internet                 |
-+--------------------------+--------------------------+--------------------------+
-| CKK Liberté              | Ophirah                  | ZJAM                     |
-+--------------------------+--------------------------+--------------------------+
-| COMEE                    | Perfect Groep            |                          |
-+--------------------------+--------------------------+--------------------------+
+| Company                     |                            |                             |
+|-----------------------------|----------------------------|-----------------------------|
+| 22 Times                    | CPA                        | Quercis                     |
+| Abovo Media                 | Cream                      | Quibus B.V.                 |
+| Admix Connect               | Crimsonwing                | Redhotminute                |
+| Amazing BV                  | csolutions                 | ReMind                      |
+| Ambitions                   | De Makers                  | Schutreclame                |
+| AnchorMen                   | Digitalbits                | Storm Media Buying          |
+| Aride                       | Exxtra                     | TheMailMen                  |
+| aYaline                     | Freshheads                 | Tribal Internet Marketing   |
+| Bikkelhart                  | Indicia Nederland BV       | TTF Marketing & Communicatie|
+| Bluedesk E-Business B.V.    | Infour                     | Turksma                     |
+| Bookerz                     | ISM                        | Van Luyken Communicatie     |
+| Boom Communicatie           | JWB Communicatie           | Voice SA/NV                 |
+| Bosma DMC                   | LeadsOnline                | X-com BV                    |
+| Bull Marketing.nl           | Lemm Ten Haaf              | Xplore Group NV             |
+| Cervino Marketing           | MarketingBytes             | Youniq reclame en internet  |
+| CKK Liberté                 | Ophirah                    | ZJAM                        |
+| COMEE                       | Perfect Groep              |                             |
 
-**Copernica’s partnernetwerk groeit**
+## Copernica’s partnernetwerk groeit
 
 Uit deze tweede editie van de Copernica Partner of the Year komt
 duidelijk naar voren dat het
@@ -73,7 +56,7 @@ het nu gaat om het ontwerpen van e-mailtemplates, vormgeven van je
 website of het inrichten van je klantenbestand. Copernica’s
 partnernetwerk biedt voor iedereen een juiste oplossing.
 
-**Ook kans maken op de Partner of the Year award?**
+## Ook kans maken op de Partner of the Year award?
 
 Deze top 50 van partners die in aanmerking komen voor de Partner of the
 Year award is een voorlopige lijst. De titel van Partner of the Year
