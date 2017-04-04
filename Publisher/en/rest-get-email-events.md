@@ -1,15 +1,15 @@
-# REST API: request events from a profile
+# REST API: request events for an email address
 
-To request the profile events for the last monthly period you can send an
+To request the email events for the last monthly period you can send an
 HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/events?access_token=xxxx`
+`https://api.copernica.com/v1/email/$addres/events?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the profile 
-you're requesting the events of. If you want to retrieve events for an earlier
-monthly period you can add the starting date to the request like:
+The $addres should be replaced with the email address of interest. If you
+want to retrieve events for an earlier monthly period you can add the
+starting date to the request like:
 
-`https://api.copernica.com/v1/profile/$id/events/$date?access_token=xxxx`
+`https://api.copernica.com/v1/email/$id/events/$date?access_token=xxxx`
 
 where $date has the form yyyy-mm-dd.
 
@@ -51,11 +51,10 @@ The following PHP script demonstrates how to use the API method.
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call, and print result
-    print_r($api->get("profile/1234/events"));
+    print_r($api->get("email/john.doe@example.com/events"));
 
 For the example above you need the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all profile information](rest-get-profile)

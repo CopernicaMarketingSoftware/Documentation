@@ -1,17 +1,17 @@
-# REST API: Opvragen van subprofiel gebeurtenissen
+# REST API: Opvragen van gebeurtenissen bij een email adres
 
-Als je subprofiel gebeurtenissen van de afgelopen maandelijkse periode wilt
-downloaden, dan kun je een eenvoudige HTTP GET call naar de volgende URL
-sturen.
+Als je gebeurtenissen van de afgelopen maandelijkse periode bij een email
+adres wilt downloaden, dan kun je die opvragen door middel van een eenvoudige
+HTTP GET call naar de volgende URL
 
-`https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx`
+`https://api.copernica.com/v1/email/$adres/events?access_token=xxxx`
 
-De `$id` moet je vervangen door de numerieke identifier van het subprofiel
-waarvoor je de gebeurtenissen wilt hebben. Als je gebeurtenissen van een
-eerdere maandelijkse periode wilt downloaden dan kun je een datum aan de URL
-toevoegen
+Het `$adres` moet je vervangen door het email adres waarvoor je de gebeurtenissen
+wilt hebben. Als je voor een eerdere maandelijkse periode gebeurtenissen 
+bij een email adres wilt hebben dan kun je een start datum aan de URL
+toevoegen.
 
-`https://api.copernica.com/v1/subprofile/$id/events/$datum?access_token=xxxx`
+`https://api.copernica.com/v1/email/$adres/events/$datum?access_token=xxxx`
 
 waarbij $datum de form heeft van jjjj-mm-dd.
 
@@ -43,6 +43,7 @@ ziet er als volgt uit:
 ]
 ```
 
+
 ## PHP Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -54,10 +55,11 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     $api = new CopernicaRestApi("your-access-token");
 
     // voer de methode uit en print het resultaat
-    print_r($api->get("subprofile/1234/events"));
+    print_r($api->get("email/john.doe@example.com/events"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
-## More information
+
+## More information## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

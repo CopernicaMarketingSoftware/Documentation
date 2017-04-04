@@ -1,19 +1,20 @@
-# REST API: Opvragen van subprofiel gebeurtenissen
+# REST API: Opvragen van Publisher template events
 
-Als je subprofiel gebeurtenissen van de afgelopen maandelijkse periode wilt
-downloaden, dan kun je een eenvoudige HTTP GET call naar de volgende URL
-sturen.
+Als je gebeurtenissen van de afgelopen maandelijkse periode bij een Publisher
+template wilt downloaden, dan kun je die opvragen door middel van een
+eenvoudige HTTP GET call naar de volgende URL
 
-`https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx`
+`https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx`
 
-De `$id` moet je vervangen door de numerieke identifier van het subprofiel
-waarvoor je de gebeurtenissen wilt hebben. Als je gebeurtenissen van een
-eerdere maandelijkse periode wilt downloaden dan kun je een datum aan de URL
-toevoegen
+De `$id` moet je vervangen door de numerieke identifier van de template
+waarvoor je de gebeurtenissen wilt hebben.
 
-`https://api.copernica.com/v1/subprofile/$id/events/$datum?access_token=xxxx`
+Als je gebeurtenissen van een eerdere maandelijkse periode wilt downloadend,
+dan kun je een start datum aan de URL toevoegen:
 
-waarbij $datum de form heeft van jjjj-mm-dd.
+`https://api.copernica.com/v1/old/template/$id/events/$datum?access_token=xxxx`
+
+waar datum de form heeft van jjjj-mm-dd.
 
 Merk op: Momenteel kunnen gebeurtenissen gedownload worden per maandelijkse
 periode. Deze periode kan echter gewijzigd worden wanneer performance dit
@@ -54,10 +55,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     $api = new CopernicaRestApi("your-access-token");
 
     // voer de methode uit en print het resultaat
-    print_r($api->get("subprofile/1234/events"));
+    print_r($api->get("old/template/1234/events"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
-## More information
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
