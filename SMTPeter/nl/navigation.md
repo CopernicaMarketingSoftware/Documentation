@@ -1,7 +1,7 @@
 * [Introductie](introduction)
     * [Email throttling](email-throttling)
     * [Open and click statistieken](statistics)
-    * [Personalizatie](personalization)
+    * [Personalisatie](personalization)
 * [Dashboard](dashboard)
 * [Verzenden via SMTP](smtp-api)
     * [Aanmaken van credentials](smtp-credentials)
