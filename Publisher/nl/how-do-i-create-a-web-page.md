@@ -1,3 +1,5 @@
+# Hoe maak je een webpagina?
+
 Om een nieuwe webpagina aan te maken selecteer je eerst de website
 waaronder je de pagina wilt maken. Vervolgens kan je in het *Webpagina*
 menu een nieuwe pagina aanmaken.
