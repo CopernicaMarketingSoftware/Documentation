@@ -1,15 +1,17 @@
-# REST API: request events from a profile
+# REST API: request events for a Marketing Suite template
 
-To request the profile events for the last monthly period you can send an
-HTTP GET request to the following URL:
+To request the events of the last monthly period for a Marketing Suite 
+template you can send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/events?access_token=xxxx`
+`https://api.copernica.com/v1/template/$id/events?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the profile 
-you're requesting the events of. If you want to retrieve events for an earlier
-monthly period you can add the starting date to the request like:
+The $id should be replaced with the numerical identifier of the template 
+you're requesting the events of.
 
-`https://api.copernica.com/v1/profile/$id/events/$date?access_token=xxxx`
+If you want to have it for an earlier monthly period you can add a start
+date to the request like:
+
+`https://api.copernica.com/v1/template/$id/events/$date?access_token=xxxx`
 
 where $date has the form yyyy-mm-dd.
 
@@ -19,7 +21,7 @@ period is subject to change if performance requires this.
 
 ## Returned fields
 
-A JSON with all the events for this profile.
+This method returns a JSON containing all the events.
 
 ```json
 [
@@ -39,7 +41,6 @@ A JSON with all the events for this profile.
 ]
 ```
 
-
 ## PHP Example
 
 The following PHP script demonstrates how to use the API method.
@@ -51,11 +52,10 @@ The following PHP script demonstrates how to use the API method.
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call, and print result
-    print_r($api->get("profile/1234/events"));
+    print_r($api->get("template/1234/events"));
 
 For the example above you need the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all profile information](rest-get-profile)

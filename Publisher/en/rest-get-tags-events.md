@@ -1,7 +1,7 @@
-# REST API: request all events with some tags
+# REST API: request events with some tags
 
-To request all the events that have a specific tag you can send an HTTP GET
-request to the following URL:
+To request all the events for the last monthly period that have a specific
+tag you can send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
 
@@ -9,6 +9,21 @@ The $tag should be replaced with the the tag of interest. If you have multiple
 tags on which you want to filter, you can separate them with semicolons like:
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
+
+If you want to have the events for an earlier monthly period you can add
+the starting date to the request like:
+
+`https://api.copernica.com/v1/tags/$tag/events/$date?access_token=xxxx`
+
+or
+
+`https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events/$date?access_token=xxxx`
+
+where $data has the form yyyy-mm-dd.
+
+Note: currently we support a monthly period to retrieve events but this
+period is subject to change if performance requires this.
+
 
 ## Returned fields
 

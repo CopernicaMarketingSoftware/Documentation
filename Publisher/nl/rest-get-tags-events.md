@@ -1,17 +1,29 @@
 # REST API: Opvragen van gebeurtenissen met een tag
 
-Als je alle gebeurtenissen met een bepaalde tag wilt downloaden, dan kun je die
-opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
+Als je  gebeurtenissen met een bepaalde tag wilt downloaden voor de afgelopen
+maandelijkse periode, dan kun je die opvragen door middel van een eenvoudige
+HTTP GET call naar de volgende URL.
 
 `https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
 
 De `$tag` moet je vervangen door de tag waarvoor je de gebeurtenissen wilt
 hebben.
-
 Als je op meerdere tags tegelijkertijd wilt filteren, dan kun je de tags
 scheiden door middel van puntkomma's.
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
+
+Als je gebeurtenissen voor een eerdere maandelijkse periode wilt downloaden
+dat kun je een start datum aan de URL toevoegen:
+
+`https://api.copernica.com/v1/tags/$tag/events/$datum?access_token=xxxx`
+
+waarbij $datum de form heeft van jjjj-mm-dd.
+
+Merk op: Momenteel kunnen gebeurtenissen gedownload worden per maandelijkse
+periode. Deze periode kan echter gewijzigd worden wanneer performance dit
+vereist.
+
 
 ## Returned fields
 
