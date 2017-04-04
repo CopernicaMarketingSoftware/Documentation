@@ -102,6 +102,7 @@ doorvoeren.
     +-------------------+                       +-------------------+
     |   Bounce alias    |           --->        |   MX record(s)    |
     +-------------------+                       +-------------------+
+    
 </pre>
 
 Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 

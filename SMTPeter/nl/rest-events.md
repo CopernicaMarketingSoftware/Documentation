@@ -9,6 +9,7 @@ wij voor u de juiste informatie.
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADRES
+https://www.smtpeter.com/v1/events/template/TEMPLATEID
 https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
 ```
 Na het verzoek ontvangt u de volgende JSON:
@@ -68,6 +69,17 @@ een bepaald e-mail adres op te vragen.
 https://www.smtpeter.com/v1/events/email/EMAILADRES
 ```
 waar `EMAILADRES` het betreffende e-mail adres is
+
+
+# Gebeurtenissen op basis van een template
+
+De volgende URL kan gebruikt worden om alle informatie met betrekking tot
+een bepaalde template adres op te vragen.
+
+```text
+https://www.smtpeter.com/v1/events/template/TEMPLATEID
+```
+waar `TEMPLATEID` de ID van de betreffende template is
 
 
 ## Gebeurtenissen op basis van tags

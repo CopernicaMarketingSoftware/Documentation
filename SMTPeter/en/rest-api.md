@@ -39,5 +39,3 @@ instead.
 
 * [PHP example](php-example)
 * [Python example](python-example)
-
-

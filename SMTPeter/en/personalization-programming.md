@@ -9,7 +9,7 @@ simple stuff can have bugs).
 ## Variables
 
 Let's just start with the basics of printing a user supplied variable. A variable
-starts with a `{$` than your variable name and is closes with a `}`. Valid
+starts with a `{$` than your variable name and is closed with a `}`. Valid
 variables for example are "{$firstname}", "{$age}" and "{$city}".
 Formally, a variable is required to:
 
@@ -28,7 +28,7 @@ The next table gives all variable notations:
 | {$foo[4]}  | Display the 5th element of a zero-indexed array. |
 | {$foo.bar} | Display the "bar" key value of an object.        |
 
-With these notaitions you may make combinations. Examples of combinations
+With these notations you may make combinations. Examples of combinations
 are:
 
 | Syntax            | Meaning                                                                                |

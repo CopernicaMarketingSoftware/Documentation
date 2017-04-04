@@ -1,3 +1,4 @@
+# Extra variabelen voor opvolgacties
 Binnen opvolgacties zijn er extra variabelen beschikbaar gemaakt waarmee
 je informatie kan opvragen over de actie die de opvolgactie getriggerd
 heeft of de actie die naar aanleiding van de follow-up is uitgevoerd. Je

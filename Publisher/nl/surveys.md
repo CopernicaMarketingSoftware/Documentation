@@ -22,7 +22,7 @@ zijn terug te vinden in het linkeroverzicht.
 -   [Gegeven antwoorden van een enquête mailen in
     opvolgactie](./surveys-email-results)
 -   [Enquête titel en introductietekst
-    aanpassen](./surveys/title-introduction.md)
+    aanpassen](./surveys-title-introduction.md)
 -   [Conditionele vragen in
     enquête](./surveys-question-conditional)
 -   [Enquête
@@ -65,5 +65,6 @@ aansluiten bij jouw huisstijl of dat van een klant.
 -   [Eigen CSS of XSLT gebruiken voor
     enquête](./creating-and-using-your-stylesheets.md)
 -   [Het hekje (\#) bij elke vraag
-    verwijderen](./surveys-remove-#.md)
+    verwijderen](./surveys-remove-hashtag.md)
+-   [Corruptie in de database voorkomen](./database-marketing-and-web-surveys-avoid-corruption.md)
 
