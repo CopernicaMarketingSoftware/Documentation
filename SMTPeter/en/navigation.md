@@ -4,7 +4,7 @@
     * [Open and click statistics](statistics)
     * [Sender domains](sender-domains)
     * [Bounce handling](bounce-handling)
-    * [Inlinize CSS code](inline-css)
+    * [Inline CSS code](inline-css)
     * [SPF validation](spf-validation)
     * [DKIM signing](dkim-signing)
     * [DMARC deployment](dmarc-deployment)

@@ -1,3 +1,5 @@
+# Wetgeving
+
 Bij Copernica Marketing Software staan privacy en de bescherming van
 persoonsgegevens hoog in het vaandel. Daarom moet je erover waken dat de
 marketingactiviteiten die je uitvoert, volgens de wet verlopen.
@@ -247,4 +249,3 @@ volstaan:
     van de betrokkenen
 -   Verbod op harvesten: Het is niet toegestaan opgegeven adressen op te
     slaan in de commerciële database
-
