@@ -1,3 +1,5 @@
+# Hoe verander je de lay-out van een formulier
+
 Je kan de lay-out van een formulier volledig naar je eigen smaak
 bewerken met behulp van XSLT en CSS stylesheets. De applicatie werkt met
 standaard XSLTs en Stylesheets, die je kan gebruiken en verder
