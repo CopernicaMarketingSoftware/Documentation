@@ -122,7 +122,7 @@ tot false wordt het 'else' blok uitgevoerd.
 
 In het bovenstaande voorbeeld is de 'operator' == gebruikt. Dit betekent 'is gelijk aan'.
 De conditie evalueert tot true als de linkerkant gelijk is aan de rechterkant. De
-'operator' == is een van de vele 'operators' die je can gebruiken om de condities voor
+'operator' == is een van de vele 'operators' die je kunt gebruiken om de condities voor
 de 'statements' op te bouwen. Hier is de complete lijst:
 
 | Syntax voorbeeld  | Betekenis                                             |
@@ -142,7 +142,7 @@ Met de eerste zes 'operators' (== tot aan <=) vergelijk je $a en $b met elkaar.
 De uitkomst van de conditie evalueert tot true als de twee geteste waardes 
 gelijk zijn aan elkaar. De uitkomst van de conditie evalueert tot false als
 de twee geteste waardes niet gelijk zijn aan elkaar. Met de volgende 'operators'
-in de bovenstaande tabel ('AND' en 'OR') kan je 'statments' combineren.
+in de bovenstaande tabel ('AND' en 'OR') kun je 'statments' combineren.
 Het komt vaak voor dat conditionele blokken te groot of te complex worden.
 Je kunt lange of complexe blokken inkorten door meerdere 'statements' binnen
 een {if} blok op te nemen. Gebruik hiervoor dan de AND en/of OR 'operators'.
@@ -262,4 +262,41 @@ dat je toch accolades moet gebruiken in de tekst. In dat geval kun je het beste
 en dus niet verwerkt.
 
 
-##  
+##  Denk om de layout
+
+De hierboven getoonde scripts zijn op een bepaalde manier geformateerd. Door middel
+van nieuwe regels, indentatie etc. zijn de scripts beter te lezen. Deze manier 
+van werken valt aan te raden, omdat de foutendetectie veelal gemakkelijker is.
+Echter, het kan zijn dat de uitkomst van alle opmaak niet gewenst is. In dat geval
+kunnen een paar kleine veranderingen een groot effect hebben. Hieronder wordt
+aan de hand van voorbeelden uitgelegd hoe je met de opmaak kunt omgaan.
+
+```text
+{foreach $player in $soccerTeam}
+    {$player.name}
+{/foreach}
+
+Als het voetbal team array er als volgt uit ziet: `["Ronaldo", "Messi", "Ibrahimovic"]`;
+Is de uitkomst :
+
+    Ronaldo
+
+    Messi
+
+    Ibrahimovic
+    
+```
+Dit is waarschijnlijk niet het gewenste resultaat dat je voor ogen had.
+Maar dit is precies wat je krijgt, omdat er een nieuwe regel in combinatie
+met indentatie rondom de variabele wordt gebruikt. Om een lijst van de namen
+te generen, zonder extra spaties kan je het beste deze foreach 'loop' opzetten:
+```text
+{foreach $player in $soccerTeam}{$player}
+{/foreach}
+```
+Minder leesbaar, maar precies wat je voor ogen had.
+```
+Ronaldo
+Messi
+Ibrahimovic
+```
