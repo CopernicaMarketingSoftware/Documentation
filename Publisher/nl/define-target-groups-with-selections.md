@@ -1,13 +1,10 @@
+# Aan de slag met selecties
+
 Met Copernica voeg je eenvoudig structuur toe aan je database met behulp
 van selecties. Zo optimaliseer je de kwaliteit van je database en zet je
 makkelijk doelgerichte campagnes op. Selecties zijn te allen tijde
 up-to-date omdat Copernica alle wijzigingen in je database bijhoudt.
 
-Aan de slag met selecties
--------------------------
-
-![Aan de slag met
-selectiess](../images/nl-selecties.png "Aan de slag met selecties")
 Alle relatiegegevens die je opslaat in Copernica zijn te gebruiken als
 regels voor je selecties. Maak bijvoorbeeld eenvoudig onderscheid tussen
 relaties die wel of niet nieuwsbriefabonnee zijn door middel van
@@ -36,18 +33,6 @@ meer selecties instellen op basis van:
     gehad. En stel als extra regel in dat de relaties in de selectie met
     productvoorkeur “Apple” moeten voorkomen. Zo kan je deze relaties
     een speciale aanbodmail sturen met een korting op Apple-producten.
-
-Standaardselecties binnen Copernica
------------------------------------
-
-Vanuit onze ervaring met verschillende gebruikers weten we dat er enkele
-selecties zijn die vaak worden ingezet. Om het gemakkelijk te maken voor
-de (nieuwe) gebruiker hebben we daarom voor enkele van deze selecties
-tutorials gemaakt. Zo zie je hoe je deze selecties in slechts enkele
-stappen binnen Copernica maakt.
-
--   [Een verjaardagsselectie maken binnen Copernica (./how-to-create-a-birthday-selection.md)
--   [Een nieuwsbriefselectie maken binnen Copernica (./create-a-mailing-list.md)
 
 Altijd relevant dankzij dynamische selecties
 --------------------------------------------
