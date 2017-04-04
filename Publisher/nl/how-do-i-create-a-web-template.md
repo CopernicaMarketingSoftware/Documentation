@@ -1,3 +1,5 @@
+# Hoe maak je een web template
+
 Webpagina's die je maakt in de software zijn altijd gebaseerd op een
 template. Om een nieuwe template te maken, gebruik je de zogenoemde
 functie in het **Template menu**onder **Websites**.
@@ -10,8 +12,7 @@ technieken, formulieren, flash, video, javascript et cetera.
 **Net als met e-mailtemplates kan afbeeldingblokken, tekstblokken en
 loopblokken invoegen.**
 
-Een web template maken
-----------------------
+## Een web template maken
 
 Je kan een nieuwe template maken, een bestaande template kopiëren of een
 template importeren vanaf je computer.
@@ -32,8 +33,7 @@ template importeren vanaf je computer.
 
 ![](../images/newtemplate.png)
 
-Template broncode bewerken
---------------------------
+## Template broncode bewerken
 
 De broncode van een template kan je in Copernica aanpassen.
 
