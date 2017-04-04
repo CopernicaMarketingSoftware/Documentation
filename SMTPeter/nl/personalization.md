@@ -40,8 +40,7 @@ zijn:
 | {$foo.bar.baz[4]} | Weergeeft het 5de element van "baz", die in "bar" zit en onderdeel is van $foo           |
 
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
-een array, als variabele een object is. Let erop dat je ook hier start vanaf
-0. 
+een array, als variabele een object is. Let erop dat je ook hier start vanaf #0. 
 
 
 ## Modificeer variabelen
