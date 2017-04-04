@@ -1,3 +1,5 @@
+# Hoe maak je een e-maildocument
+
 Een e-maildocument is altijd gebaseerd op een HTML template. In de
 template bepaal je de lay-out en de structuur van de e-mail. De
 daadwerkelijk inhoud voeg je pas later toe in het document. Met speciale
