@@ -1,3 +1,5 @@
+# Hoe voeg je Google Analytics toe aan je webpagina?
+
 Om bezoekersgedrag van je website te meten met Google Analytics dien je
 een door Google uitgegeven stukje
 [JavaScript](http://code.google.com/apis/analytics/docs/tracking/home.html)
