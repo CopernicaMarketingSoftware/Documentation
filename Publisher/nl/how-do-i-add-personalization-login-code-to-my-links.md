@@ -1,3 +1,5 @@
+# Gepersonaliseerde hyperlink
+
 Als je vanuit een e-maildocument verwijst naar een webpagina, dan kan de
 webpagina gepersonaliseerd worden weergegeven. Hiertoe voeg je speciale
 smarty variabelen toe aan de hyperlink: het ID van het profiel en de
@@ -7,19 +9,19 @@ beveiligingscode.
 -   De beveiligingscode van het profiel is opgeslagen in de variabele
     {\$profile.code}
 
-#### **Inlogcode voor profielen**
+## Inlogcode voor profielen
 
-Als je linkt naar de pagina *http://www.company.nl/pagename*
+Als je linkt naar de pagina *http://www.example.com/pagename*
 
-`http://www.company.nl/pagename?profile={$profile.id}&code={$profile.code}`
+`https://www.example.com/pagename?profile={$profile.id}&code={$profile.code}`
 
-#### **Inlogcode voor subprofielen**
+## Inlogcode voor subprofielen
 
 Als je mailing is gericht aan subprofielen
 
-`http://www.company.nl/pagename?profile={$subprofile.id}&code={$subprofile.code}`
+`https://www.example.com/pagename?profile={$subprofile.id}&code={$subprofile.code}`
 
-### Deze code in een keer toevoegen voor alle links
+## Deze code in een keer toevoegen voor alle links
 
 De inlogcode kan ook automatisch worden toegevoegd (of weer verwijderd)
 bij alle links in het document of webpagina. Je kan hierbij kiezen of de
@@ -32,14 +34,14 @@ webpagina-menu, onder de noemer **Hyperlinks uitbreiden**...
 
 ![Add personalization code](../images/prepareurl.png)
 
-### Inlogcode weer verwijderen
+## Inlogcode weer verwijderen
 
-Selecteer hiertoe *verwijder de inlogcode*en vervolgens de hyperlinks
+Selecteer hiertoe *verwijder de inlogcode* en vervolgens de hyperlinks
 waar de personalisatiecode moet worden verwijderd.
 
-#### Toevoegen aan template broncode
+## Toevoegen aan template broncode
 
-Selecteer **ook toepassen op de template broncode**om hyperlinks uit de
+Selecteer **ook toepassen op de template broncode** om hyperlinks uit de
 template broncode tevens te bewerken. Let op dat wijzigingen in de
 template bron alle documenten die op basis van deze template zijn
 gemaakt zullen beïnvloeden.
