@@ -1,3 +1,5 @@
+# Copernica Partner of the Year genomineerden
+
 Voor het tweede jaar op rij reikt Copernica Marketing Software met trots
 de Copernica Partner of the Year Award uit. Deze award is in het leven
 geroepen als extra erkenning voor bureaus die zich actief inzetten in
@@ -25,19 +27,15 @@ op 17 september.
 
 -   [22 Times](https://www.copernica.com/nl/partners/profile/454681)
 -   [Aride](https://www.copernica.com/nl/partners/profile/2157)
--   [Bluedesk E-Business
-    B.V.](https://www.copernica.com/nl/partners/profile/4537956)
+-   [Bluedesk E-Business B.V.](https://www.copernica.com/nl/partners/profile/4537956)
 -   [Bookerz](https://www.copernica.com/nl/partners/profile/4541127)
--   [Invest
-    Online](https://www.copernica.com/nl/partners/profile/4540325)
--   [ISM
-    eCompany](https://www.copernica.com/nl/partners/profile/4533916)
+-   [Invest Online](https://www.copernica.com/nl/partners/profile/4540325)
+-   [ISM eCompany](https://www.copernica.com/nl/partners/profile/4533916)
 -   [LeadsOnline](https://www.copernica.com/nl/partners/profile/4465793)
 -   [Perfect Groep](https://www.copernica.com/nl/partners/profile/2036)
 -   [Quercis](https://www.copernica.com/nl/partners/profile/4537232)
 -   [Redhotminute](https://www.copernica.com/nl/partners/profile/4463119)
 
-\
 
 **Waar wordt naar gekeken?**
 
@@ -80,7 +78,6 @@ beste nieuwkomer 2013 zijn dit jaar (op alfabetische volgorde):
 **Wil je er ook bij zijn?**
 
 De uitreiking van de Partner of the Year award vindt plaats tijdens het
-Copernica Summit. Wil je er ook bij zijn? Je kan je [hier gratis
-aanmelden!](http://www.copernica.com/nl/ondersteuning/copernica-summit/meld-je-nu-aan-voor-het-copernica-summit "Aanmelden Copernica Summit")
-
+Copernica Summit. Wil je er ook bij zijn? Je kan je gratis
+aanmelden!
  
