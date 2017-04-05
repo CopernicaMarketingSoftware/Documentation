@@ -160,12 +160,12 @@ Voor AND geldt:
 
 Voor OR geldt:
 
-| $a    | $b    | result |
-| ----- | ----- | ------ |
-| true  | true  | true   |
-| true  | false | true   |
-| false | true  | true   |
-| false | false | false  |
+| $a    | $b    | resultaat |
+| ----- | ----- | --------- |
+| true  | true  | true      |
+| true  | false | true      |
+| false | true  | true      |
+| false | false | false     |
 
 Je kunt AND bijvoorbeeld op deze manier gebruiken:
 ```text
