@@ -18,6 +18,8 @@ can be returned
 * **profile**: with the ID of a [profile](./followups-scripting-profile) as a key the profile can be returned
 * **subprofile**: with the ID of a [subprofile](./followups-scripting-subprofile) as a key the subprofile 
 can be returned
+* **template**: with the ID of a [template](./followups-scripting-template) as a key the template 
+can be returned
 
 ## Example
 
@@ -31,5 +33,6 @@ The following example in javascript can be used to access a database from an acc
 * [The data object](./followups-scripting-data)
 * [User profile information](./followups-scripting-profile)
 * [User subprofile information](./followups-scripting-subprofile)
+* [Template information](./followups-scripting-template)
 * [Destination information](./followups-scripting-destination)
 * [Copernica variable properties](./followups-scripting-copernica-properties)
