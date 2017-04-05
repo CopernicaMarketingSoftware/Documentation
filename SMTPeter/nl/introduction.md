@@ -11,10 +11,13 @@ nodig:
 ## Sender Domain instellen
 
 'Sender Domains' vind je in het menu van het SMTPeter dashboard. Klik op ‘Add sender domain’
-en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving waar alle instructies
-staan uitgelegd. Maak je geen zorgen om klik- en afbeeldingdomeinen of DMARC deployment.
-Deze kun je later allemaal aanpassen in het configuratiescherm.
-
+en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving die je kunt raadplegen 
+om het een en ander duidelijk te krijgen. Maak je geen zorgen om klik- en afbeeldingdomeinen 
+of DMARC deployment. Deze kun je later allemaal aanpassen in het configuratiescherm. 
+Het opzetten van 'sender domains' is gemakkelijk aangezien SMTPeter alles overneemt. 
+Echter, het is wel belangrijk dat je alle stappen daadwerkelijk uitvoert omdat SMTPeter 
+anders niet werkt. Deze stappen worden in z'n totaliteit uitgelegd op [deze](sender-domains)
+pagina.
 
 ## REST API
 
