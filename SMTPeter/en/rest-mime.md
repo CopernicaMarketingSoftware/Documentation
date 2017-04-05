@@ -8,46 +8,17 @@ request, but use separate "subject", "text", "html" and so properties,
 the MIME is created by SMTPeter. The following table lists all 
 supported propreties:
 
-<table>
-    <tr>
-        <td>from</td>
-        <td>"From:" header</td>
-    </tr>
-    <tr>
-        <td>to</td>
-        <td>"To:" header</td>
-    </tr>
-    <tr>
-        <td>cc</td>
-        <td>"Cc:" header</td>
-    </tr>
-    <tr>
-        <td>subject</td>
-        <td>Subject of the mail</td>
-    </tr>
-    <tr>
-        <td>text</td>
-        <td>Text version of the mail</td>
-    </tr>
-    <tr>
-        <td>html</td>
-        <td>HTML version of the mail</td>
-    </tr>
-    <tr>
-        <td>unsubscribe</td>
-        <td>The "list-unsubscribe" header</td>
-    </tr>
-    <tr>
-        <td>extra</td>
-        <td>Extra "x-*" headers</td>
-    </tr>
-    
-    <tr>
-        <td>attachments</td>
-        <td>Attachments to be added to the mail</td>
-    </tr>
-</table>
-    
+| Property           | Description                          |
+|--------------------|--------------------------------------|
+| from               | "From:" header                       |
+| to                 | "To:" header                         |
+| cc                 | "Cc:" header                         |
+| subject            | Subject of the mail                  |
+| text               | Text version of the mail             |
+| html               | HTML version of the mail             |
+| unsubscribe        | The "list-unsubscribe" header        |
+| extra              | Extra "x-\*" headers                 |
+| attachments        | Attachments to be added to the mail  |
 
 ## Email addresses
 
