@@ -35,21 +35,29 @@ zijn:
 
 | Syntax            | Betekenis                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------- |
-| {$foo.bar.baz}    | Weergeeft de value van de "baz" key binnen de array "bar" wat behoort tot $foo.          |
-| {$foo[4].baz}     | Weergeeft de value van de "baz" key binnen het 5de element van $foo.                     |
-| {$foo.bar.baz[4]} | Weergeeft het 5de element van "baz", die in "bar" zit en onderdeel is van $foo           |
+| {$foo.bar.baz}    | Laat de value zien van de "baz" key binnen de array "bar" wat behoort tot $foo.          |
+| {$foo[4].baz}     | Laat de value zien van de "baz" key binnen het 5de element van $foo.                     |
+| {$foo.bar.baz[4]} | Laat het 5de element van "baz" zien, die in "bar" zit en onderdeel is van $foo           |
 
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
 een array, als variabele een object is. Let erop dat je ook hier start vanaf 0. 
 
 
-## Modificeer variabelen
+## Verander inhoud van variabelen
 
 Je kunt de inhoud van je variabelen veranderen door 'modifiers' toe te voegen.
-Zo is het bijvoorbeeld mogelijk om alle content te weergeven in hoofdletters of
-de lengte te berekenen van een string of een 'hash' som. Een volledige lijst
-van alle 'modifiers' en corresponderende functionaliteit is [hier](personalization-modifiers) 
-te vinden.
+Zo is het bijvoorbeeld mogelijk om alle content in hoofdletters te weergeven of
+om de lengte te berekenen van een string of een 'hash' som. Een volledige lijst
+van alle mogelijke bewerkingen en corresponderende functionaliteit is [hier](personalization-modifiers) 
+te vinden. In het volgende voorbeeld zie je hoe 'modifiers' worden gebruikt
+om de lengte van de naam variable weer te geven:
+```
+Hello {$name|escape},
+
+Your name {$name|escape} is {$name|strlen} characters long.
+
+Bye!
+```
 
 
 ## Simpele berekeningen 
@@ -82,7 +90,7 @@ de waarde van de variabele $name gelijk is aan 'john'.
 ```
 
 Maar wat als er ook een 'Sarah' in je mailinglist zit? Je wilt niet dat zij
-niets ontvangt. Dat is de situatie waar de {elseif} om de hoek komt kijken.
+niets ontvangt. Dit is een situatie waar de {elseif} om de hoek komt kijken.
 ```text
 {if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}
 ```
