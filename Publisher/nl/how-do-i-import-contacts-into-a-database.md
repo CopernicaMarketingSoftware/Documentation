@@ -1,3 +1,5 @@
+# Hoe importeer je contacten in een database
+
 Met Copernica kan je gemakkelijk en snel een bestand met relaties (of
 andere gegevens) importeren naar een database. Ook is het mogelijk
 bestaande gegevens bij te werken met behulp van een import
@@ -9,7 +11,7 @@ bestaande gegevens bij te werken met behulp van een import
 Het importbestand bevindt zich op jouw computer, of is beschikbaar vanaf
 een online locatie (FTP).
 
-### Waar moet een importbestand aan voldoen?
+## Waar moet een importbestand aan voldoen?
 
 Het importbestand bevat alle gegevens die je wilt importeren. Een
 correct opgemaakt importbestand kan bijvoorbeeld met Excel worden
@@ -80,8 +82,8 @@ Mocht je ergens tegenaanlopen tijdens het importeren, kijk dan even of
 je vraag hieronder beantwoord is. Mocht dit niet het geval zijn, kan je
 altijd contact opnemen met onze [hulpdiensten](./support.md).
 
-***Ik krijg bij het instellen van de veldeigenschappen een
-'niet-passende data' waarschuwing.***\
+**Ik krijg bij het instellen van de veldeigenschappen een
+'niet-passende data' waarschuwing.**\
  Een numeriek veld kan alleen numerieke waardes bevatten. Een datumveld
 alleen datums, et cetera. Indien in het importbestand waardes aanwezig
 zijn die onverenigbaar zijn met het gekozen type veld, zal deze
@@ -91,18 +93,18 @@ zal dan echter niet worden opgeslagen in de database. Indien je de
 waarde toch wilt opslaan, kan je het databaseveld om te zetten naar het
 type Tekstveld.
 
-***Ik wil een reeds draaiende import afbreken. Kan dat?***\
+**Ik wil een reeds draaiende import afbreken. Kan dat?**\
  Nee. Als een import is gestart, kan deze niet meer worden geannuleerd.
 
-***Het bestand is geïmporteerd, maar nu heb ik allemaal dubbele
-profielen in mijn database***\
+**Het bestand is geïmporteerd, maar nu heb ik allemaal dubbele
+profielen in mijn database**\
  Mogelijk heb je voor het verkeerde importtype gekozen. Raadpleeg het
 artikel over het ontdubbelen van een database, verwijder vervolgens de
 dubbele profielen en kies voor een nieuwe import met sleutelvelden,
 waarmee bestaande profielen worden bijgewerkt.
 
-***Ik heb het bestand geïmporteerd, maar de database lijkt wel leeg.
-Alleen het veld ID is zichtbaar.***\
+**Ik heb het bestand geïmporteerd, maar de database lijkt wel leeg.
+Alleen het veld ID is zichtbaar.**\
  Ga naar Databasebeheer \> Velden wijzigen. Klik op een veld, en vink de
 optie 'Toon dit veld op overzichtspagina' aan. Het veld zal nu worden
 getoond naast de kolom ID. Herhaal dit voor alle velden die je wilt
