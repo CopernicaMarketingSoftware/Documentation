@@ -121,7 +121,7 @@ You also see an additional get_module() function in the source code. This is the
 
 ## We start with a silly question
 
-How would the native bubblesort function compare to the built-in sort() function of PHP? This is a silly question. Bubblesort is an extremely inefficient algorithm, which should never be user for real sorting. We have only used it here to demonstrate the performance difference between PHP and C++, when you implement _exactly the same_ algorithm in the two languages.
+How would the native bubblesort function compare to the built-in sort() function of PHP? This is a silly question. Bubblesort is an extremely inefficient algorithm, which should never be used for real sorting. We have only used it here to demonstrate the performance difference between PHP and C++, when you implement _exactly the same_ algorithm in the two languages.
 
 The built-in sort() function of PHP is much faster than bubblesort. It is based on quicksort, one of the best and most famous sorting algorithms there is. And on top of that: the built-in sort() function is implemented in C! Thus, when you compare the example C++ bubblesort function with the built-in PHP sort() function, you are comparing two _different_ algorithms, and _both_ have a _native implementation_. And we want to do exactly the opposite: we want to compare two _identical_ algorithms, one of which is written in PHP, and the other one completely in C++.
 
