@@ -1,4 +1,5 @@
 * [Introductie](introduction)
+    * [Zender domeinen](sender-domains)
     * [Email throttling](email-throttling)
     * [Open and click statistieken](statistics)
 * [Dashboard](dashboard)
@@ -20,7 +21,6 @@
 * [Personalisatie](personalization)
     * [Webversie](webversion)
 * [Achtergrond informatie](background)
-    * [Zender domeinen](sender-domains)
     * [SPF validatie](spf-validation)
     * [DKIM ondertekenen](dkim-signing)
     * [DMARC deployment](dmarc-deployment)
