@@ -150,6 +150,7 @@ de uitkomst tot true of false. De volgende tabel laat zien hoe dat in z'n werk
 gaat.
 
 Voor AND geldt:
+
 | $a    | $b    | resultaat |
 | ----- | ----- | --------- |
 | true  | true  | true      |
@@ -158,6 +159,7 @@ Voor AND geldt:
 | false | false | false     |
 
 Voor OR geldt:
+
 | $a    | $b    | result |
 | ----- | ----- | ------ |
 | true  | true  | true   |
