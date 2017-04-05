@@ -21,13 +21,15 @@ de muis vast te houden en vervolgens te slepen naar het gewenste eindpunt.
 
 In het linker menu vind je ook een kopje 'sender reputation'. Hier kun je
 bekijken hoe je prestaties als verzender eruit zien. Dit wordt getest
-aan de hand van de 'DMARC Analyzer' en de 'Blacklist Tool'. 
+aan de hand van de 'DMARC Analyzer' en de 'Blacklist Tool'. Door te klikken
+op een van deze twee opties, kun je op een duidelijke manier zien wat 
+goed gaat of waar het juist nog aan schort. 
 
 
 ## Operations log
 
 De 'operations log' laat de logfiles zien die je door middel van de API
-op kunt vragen. Je kunt van een aantal categorieën de logfiles opvragen.
+kunt opvragen. Je kunt van een aantal categorieën de logfiles opvragen.
 Bijvoorbeeld de pogingen, gefaalde pogingen en het aantal keer dat een 
-email geopend is. Per log catergorie zijn de resultaten steeds weer op
+email geopend is. Per log categorie zijn de resultaten steeds weer op
 een overzichtelijke manier beschikbaar gemaakt.
