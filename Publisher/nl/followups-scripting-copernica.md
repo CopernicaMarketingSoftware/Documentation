@@ -15,6 +15,7 @@ binnen alle scripts gemaakt met deze account.
 * **collection**: een [collectie](./followups-scripting-collection) kan opgevraagd worden per ID
 * **profile**: een [profiel](./followups-scripting-profile) kan opgevraagd worden per ID
 * **subprofile**: een [subprofiel](./followups-scripting-subprofile) kan opgevraagd worden per ID
+* **template**: een [template](./followups-scripting-template) kan opgevraagd worden per ID
 
 ## Voorbeeld
 
@@ -28,4 +29,5 @@ Met het volgende voorbeeld in javascript kun je een database van een account opv
 * [Het data object](./followups-scripting-data)
 * [Profiel informatie](./followups-scripting-profile)
 * [Subprofiel informatie](./followups-scripting-subprofile)
+* [Template informatie](./followups-scripting-template)
 * [Destination informatie](./followups-scripting-destination)
