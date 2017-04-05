@@ -1,3 +1,5 @@
+# Conditionele content
+
 Het is mogelijk om content blokken conditioneel in je document te laden.
 Zodat persoon A andere inhoud ziet dan persoon B.
 
@@ -14,7 +16,7 @@ iets flexibeler, maar geeft een wat drukker beeld als je de template in
 Bewerkmodus bekijkt (met name wanneer je uitgebreide smarty code gaat
 schrijven).
 
-### Smarty personalisatie gebruiken in de template broncode
+## Smarty personalisatie gebruiken in de template broncode
 
 Met behulp van condities die je schrijft met Smarty code kan je meer
 flexibiliteit aanbrengen in de template. Het maakt het mogelijk om
@@ -27,7 +29,7 @@ hebt, en je wilt Amsterdammers niet tegen het zere been schoppen.
 
 > `{if $profile.plaats != "Amsterdam"} [text name="artikel"] {/if} `
 
-### Met behulp van de content block conditie editor
+## Met behulp van de content block conditie editor
 
 Met de content block conditie editor kan je blokken tonen of juist
 verbergen op basis van gegevens uit het profiel of subprofiel.
@@ -61,8 +63,7 @@ worden.
 *Afbeelding - condities instellen bij een content blok, met behulp van
 de eenvoudige script editor*
 
-Voor het maken van de condities kan je zowel de [Eenvoudige script editor](./the-easy-script-editor.md)
-en de [JavaScript editor](./geavanceerde-javascript-condities.md) gebruik maken.
+Voor het maken van de condities kan je gebruik maken van de [Eenvoudige script editor](./the-easy-script-editor.md).
 
 ### Extra (geavanceerde) opties voor loop blokken
 
@@ -80,7 +81,7 @@ informatie op te vragen over de items die worden herhaald.
 Deze extra paramaters kan je bijvoorbeeld gebruiken om de inhoud en
 opmaak van een loop iteratie te manipuleren.
 
-### Enkele voorbeelden
+## Enkele voorbeelden
 
 Veronderstel, je hebt een loop blok [loop name="row"] die in het
 document 3 keer wordt geitereerd. Je kan dan de huidige iteratie
@@ -97,7 +98,7 @@ resultaat zijn:
 
 First, other, other,
 
-### Geneste loops
+## Geneste loops
 
 Wanneer je gebruik maakt van geneste loops in de template (bijvoorbeeld
 loop A en loop B), dan kan je de child loop alsvolgt benaderen:
