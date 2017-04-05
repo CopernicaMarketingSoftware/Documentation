@@ -1,4 +1,4 @@
-# Zender domeinen
+# Sender Domains
 
 SMTPeter gebruikt het concept "Sender Domains", of zender domeinen,
 om email simpeler te maken. Het laat je email versturen zonder je bezig 
