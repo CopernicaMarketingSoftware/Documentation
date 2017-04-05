@@ -275,8 +275,8 @@ aan de hand van voorbeelden uitgelegd hoe je met de opmaak kunt omgaan.
     {$player.name}
 {/foreach}
 
-Als het voetbal team array er als volgt uit ziet: `["Ronaldo", "Messi", "Ibrahimovic"]`;
-Is de uitkomst:
+Voetbalteam array: `["Ronaldo", "Messi", "Ibrahimovic"]`;
+Evalueert tot:
 
     Ronaldo
 
