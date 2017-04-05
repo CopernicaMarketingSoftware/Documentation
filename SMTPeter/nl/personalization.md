@@ -22,13 +22,13 @@ In het algemeen moet een variabele aan de volgende criteria voldoen:
 * kan niet beginnen met verbindingsstreepje of lagestreepje,
 * is hoofdlettergevoelig, wat betekent dat {$NAME} anders is dan {$name}.
 
-De volgende tabel geeft alle variabel notaties weer:
+De volgende tabel weergeeft alle variabelen:
 
 | Syntax     | Betekenis                                               |  
 | ---------- | ------------------------------------------------------- |
-| {$foo}     | Weergeeft een simpele variabel (geen array/object).     |
-| {$foo[4]}  | Weergeeft het 5de element van een 'zero-indexed array'. |
-| {$foo.bar} | Weergeeft de "bar" value van een object.                |
+| {$foo}     | Laat een simpele variabele zien (geen array/object).    |
+| {$foo[4]}  | Laat het 5de element van een 'zero-indexed array' zien. |
+| {$foo.bar} | Laat de "bar" value van een object zien.                |
 
 Met deze notaties kun je combinaties maken. Voorbeelden van combinaties 
 zijn:
