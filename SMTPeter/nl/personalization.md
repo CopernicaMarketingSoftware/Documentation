@@ -10,9 +10,9 @@ toepassing.
 ## Variabelen 
 
 Laten we starten met het uitleggen van de variabelen. Een variabele ziet er 
-als volgt uit: `{$` naam van de variabel `}`
-Er zijn een aantal variablen die we veelvuldig voorbij zien komen, bijvoorbeeld
-"{$firstname}", "{$age}" en "{$city}".
+als volgt uit: `{$` naam van de variabel `}`.
+Er zijn een aantal variablen die we veelvuldig voorbij zien komen, 
+bijvoorbeeld '{$firstname}', {$age}' en '{$city}'.
 In het algemeen moet een variabele aan de volgende criteria voldoen:
 
 * beginnen met een $ teken,
