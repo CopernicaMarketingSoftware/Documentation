@@ -1,11 +1,10 @@
 # Followups: **data** variabele
 
-De data variable kan gebruikt worden om informatie voor je data-scripts 
-op te slaan en is leeg tot je hem gebruikt. De variabele werkt vergelijkbaar 
+De data variable is aanwezig op alle [data-script objecten](./followups-scripting) en kan gebruikt worden om scalars voor je scripts 
+op te slaan, waarbij de data niet door ons wordt gebruikt. De variabele werkt vergelijkbaar 
 met de fields parameter in een [profiel](./followups-scripting-profile) en kan strings en getallen opslaan,
 maar geen arrays of andere objecten. Elke data-script variabele heeft 
-een data object dat kan worden gebruikt in alle instanties van deze variabele 
-in alle scripts binnen dit account.
+een **data** object welke beschikbaar is in alle instanties van deze variabele, in alle scripts binnen dit account.
 
 ## Simpel voorbeeld
 
