@@ -1,10 +1,10 @@
 # Followups: data variable
 
-The **data** variable can be used to store information for your data-scripts 
-and is empty until used. It works similar to the fields parameters for a 
+The **data** variable is present on all [data-script objects](./followups-scripting) and can be used to store scalar information for your 
+scripts, which is not used by us. Therefore, it works similar to the fields parameters for a 
 profile and can store strings and numbers, but no arrays or objects. Every 
 data-script variable has a data object that can be used in all instances of 
-this variable over multiple scripts.
+the same variable over multiple scripts.
 
 ## Simple example
 
