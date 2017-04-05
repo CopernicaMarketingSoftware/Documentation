@@ -1,5 +1,4 @@
-
-
+[Dashboard SMTPeter](/images/smtp_dashboard overview.png)
 
 
 # Dashboard 
