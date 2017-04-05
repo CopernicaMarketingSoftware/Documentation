@@ -1,57 +1,45 @@
-# Variable modifiers
+# Overzicht personalisatie bewerking
 
-The variables used for personalization can be altered with modifiers. A modifier
-is called on the variable by appending it with a `|` before the closing curly
-brace. E.g. if you want to apply the `tolower` modifier on
-variable `{$name}` you use: `{$name|tolower}`.
+Je kunt de variabelen, waarmee je emails personaliseert, veranderen met behulp
+van 'modifiers'. Je doet dit door een `|` toe te voegen na de variabele.
+Je gebruikt bijvoorbeeld`tolower` om de variabele `{$name}` te
+bewerken. Dit ziet er dan zo uit: `{$name|tolower}`.
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
+Je kunt bijvoorbeeld `{$name|tolower|ucfirst}` gebruiken om te zorgen dat alle
+namen met een hoofdletter beginnen en de resterende letters altijd kleine 
+letters zijn. 
 
-An example of how the modifiers can be used for a personalized mail is:
-```
-Hello {$name|escape},
 
-Your name {$name|escape} is {$name|strlen} characters long.
+De volgende tabel laat alle geldige 'modifiers' zien:
 
-Bye!
-```
-Besides calling one modifier on a variable it is possible to chain modifiers.
-E.g. you have name data. However, the strings containing names, are sometimes
-capitalized and sometimes not. You want to use these names and you want to
-be sure that a name starts with a capital and the rest of the name is in
-lower case. Doing this is easy. You use `{$name|tolower|ucfirst}`. The first
-modifier `tolower`, will make sure that the name is all in lower case. Then
-modifier `ucfirst` is applied, which will capitalize the first character.
-Note that if you call a modifier that does not exist, no effect takes place.
-
-The following table lists all supported modifiers:
-
-| Modifier                                                          | description                                                                    |
+| 'Modifier'                                                        | Beschrijving                                                                    |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [base64_encode](personalization-modifiers#base64_encode)                          | base64 encoder                                                 |
 | [base64_decode](personalization-modifiers#base64_decode)                          | base64 decoder                                                 |
-| [cat](personalization-modifiers#cat):"string"                                     | concatenates a string to variable                              |
-| [count](personalization-modifiers#count)                                          | count number of elements in variable                           |
-| [count_characters](personalization-modifiers#count_characters)                    | count number of characters in a string                         |
-| [count_paragraphs](personalization-modifiers#count_paragraphs)                    | count number of paragraphs in a text (by counting newlines)    |
-| [count_words](personalization-modifiers#count_words)                              | count number of words in a text                                |
-| [default](personalization-modifiers#default):default value                        | use default value if variable is not set                       |
-| [empty](personalization-modifiers#empty)                                          | check whether a variable is empty                              |
-| [escape](personalization-modifiers#escape):"string"                               | escape html characters (or other chars) inside a string        |
-| [indent](personalization-modifiers#indent):num = 1:char = " "                     | put num whitespaces in front of every line                     |
-| [md5](personalization-modifiers#md5)                                              | perform md5 hashing                                            |
-| [nl2br](personalization-modifiers#nl2br)                                          | replace newlines with html br tags                             |
-| [range](personalization-modifiers#range):start = 0:end                            | truncate list to get the items between positions start and end |
-| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text       | replace substrings using regular expression                    |
-| [replace](personalization-modifiers#replace):"string1":"string2"                  | replace occurrences of string1 with string2                    |
-| [sha1](personalization-modifiers#sha1)                                            | perform sha1 hashing                                           |
-| [sha256](personalization-modifiers#sha256)                                        | perform sha256 hashing                                         |
+| [cat](personalization-modifiers#cat):"string"                                     | Maakt van de variabele een string                             |
+| [count](personalization-modifiers#count)                                          | telt het aantal elementen in een  variable                |
+| [count_characters](personalization-modifiers#count_characters)                    | telt het aantal tekens in een string                         |
+| [count_paragraphs](personalization-modifiers#count_paragraphs)                    | telt het aantal paragrafen in een tekst (door 'newlines' te tellen)    |
+| [count_words](personalization-modifiers#count_words)                              | telt het aantal woorden in een tekst                                |
+| [default](personalization-modifiers#default):default value                        | gebruik 'default' waarde als variabele niet is aangegeven                       |
+| [empty](personalization-modifiers#empty)                                          | check of een variabele leeg is                              |
+| [escape](personalization-modifiers#escape):"string"                               | 'escape' html tekens (of andere tekens) binnen een string        |
+| [indent](personalization-modifiers#indent):num = 1:char = " "                     | zet het aantal 'whitespaces' aan het begin van elke regel                     |
+| [md5](personalization-modifiers#md5)                                              | voer md5 hashing uit                                        |
+| [nl2br](personalization-modifiers#nl2br)                                          | vervang 'newlines' met html 'br tags'                             |
+| [range](personalization-modifiers#range):start = 0:end                            | lijst opdelen om de items tussen de start en eindpositie te krijgen |
+| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text       | vervang 'substrings' door 'regular expressions' te gebruiken                  |
+| [replace](personalization-modifiers#replace):"string1":"string2"                  | vervang gebeurtenissen van string1 met string2                    |
+| [sha1](personalization-modifiers#sha1)                                            | voer sha1 hashing uit                                           |
+| [sha256](personalization-modifiers#sha256)                                        | voer sha256 hashing uit                                       |
 | [sha512](personalization-modifiers#sha512)                                        | sha512 hashing                                                 |
-| [spacify](personalization-modifiers#spacify):separator = " "                      | place a separator between every input character                |
-| [strlen](personalization-modifiers#strlen)                                        | count the characters in a string                               |
-| [strstr](personalization-modifiers#strstr):"substring":before = false             | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. |
-| [substr](personalization-modifiers#substr):start position:length                  | return the substring from start position onward, optionally truncated after length characters |
-| [tolower](personalization-modifiers#tolower)                                      | convert all characters to lower case                           |
-| [toupper](personalization-modifiers#toupper)                                      | convert all characters to upper case                           |
-| [trim](personalization-modifiers#trim)                                            | trim the white space and endline characters off both sides of the input |
+| [spacify](personalization-modifiers#spacify):separator = " "                      | plaats een verdeler tussen elk input teken                |
+| [strlen](personalization-modifiers#strlen)                                        | tel het aantal tekens in een string                               |
+| [strstr](personalization-modifiers#strstr):"substring":before = false             | geef de string terug, startend van de eerste gebeurtenis of substring als before = false. Geef anders de string terug tot aan de eerste gebeurtenis. |
+| [substr](personalization-modifiers#substr):start position:length                  | geef de substring teurg vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters    |
+| [tolower](personalization-modifiers#tolower)                                      | zet alle tekens om naar kleine letters                           |
+| [toupper](personalization-modifiers#toupper)                                      | zet alle tekens om naar grote letters                           |
+| [trim](personalization-modifiers#trim)                                            | trim de spaties en 'endline' tekens aan beide kanten van het inputveld  |
 | [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words |
 | [ucfirst](personalization-modifiers#ucfirst)                                      | replace first character with an upper case character           |
 | [urlencode](personalization-modifiers#urlencode)                                  | encode input for use in an url                                 |
