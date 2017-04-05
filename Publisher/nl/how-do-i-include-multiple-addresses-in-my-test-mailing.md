@@ -1,3 +1,5 @@
+# Een testmail versturen naar meerdere adressen
+
 De normale testmail functionaliteit stuurt een testmail naar maximaal 1
 persoon tegelijk (het adres van de standaardbestemming).
 
