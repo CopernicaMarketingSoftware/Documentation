@@ -1,4 +1,4 @@
-[Dashboard SMTPeter](/Images/smtp_dashboard overview.png)
+![Dashboard SMTPeter](/Images/smtp_dashboard overview.png)
 
 
 # Dashboard 
