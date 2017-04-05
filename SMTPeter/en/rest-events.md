@@ -8,9 +8,13 @@ you can use the events rest call. All calls that are supported are:
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
+https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATE
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
+https://www.smtpeter.com/v1/events/email/EMAILADDRESS/DATE
 https://www.smtpeter.com/v1/events/tamplate/TEMPLATE
+https://www.smtpeter.com/v1/events/tamplate/TEMPLATE/DATE
 https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
+https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3/DATE
 ```
 after this call you receive a JSON with all the information you have requested.
 
@@ -53,41 +57,61 @@ contain are described on the page of the particular log file.
 
 ## Events based on messageid
 
-If you want to retreive all information about a particular message you can 
-make a get request to
+If you want to retrieve the information about a particular message till one
+month after you have sent the message you can make a get request to
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 ```
 where `MESSAGEID` is the messageid of interest.
 
+If you are interested in another monthly period you can at a staring date
+to the request like:
+
+```text
+https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATE
+```
+where `DATE` has the form `yyyy-mm-dd`
 
 ## Events based on an email address
 
-If you want to retrieve all information about a particular email address
-you can make a get request to:
+If you want to retrieve information about a particular email address for
+the last monthly period, you can make a get request to:
 
 ```text
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
 ```
 where `EMAILADDRESS` is the address you are interested in
 
+If you want to have the events for an earlier monthly period you can add
+a starting date for the period to the request like:
+
+```text
+https://www.smtpeter.com/v1/events/email/EMAILADDRESS/DATE
+```
+where `DATE` has the form `yyyy-mm-dd`.
 
 ## Events based on a template
 
-If you want to retrieve all information about a particular template
-you can make a get request to:
+If you want to retrieve the information about a particular template for
+the last monthly period, you can make a get request to:
 
 ```text
 https://www.smtpeter.com/v1/events/template/TEMPLATE
 ```
-where `TEMPLATE` is the id of the template you are interested in
+where `TEMPLATE` is the id of the template you are interested in. If you
+want to have information for an earlier monthly period, you can add a staring
+date to the call like:
 
+```text
+https://www.smtpeter.com/v1/events/template/TEMPLATE/DATE
+```
+where `DATE` has the form of `yyyy-mm-dd`
 
 ## Events based on tags
 
-If you want to retrieve all information about one tag, you can make a get
-request to:
+If you want to retrieve information about one tag, for the last monthly
+period you can make a get request to:
 
 ```text
 https://www.smtpeter.com/v1/events/tags/TAG
@@ -100,3 +124,12 @@ https://www.smtpeter.com/v1/events/tags/TAG1;TAG2;TAG3;...
 ```
 The returned JSON will only contain information for messages that have
 all tags set.
+
+If you want to have information for an earlier monthly period, you can add
+a starting date to the above requests like:
+
+```text
+https://www.smtpeter.com/v1/events/tags/TAG1/DATE
+https://www.smtpeter.com/v1/events/tags/TAG1;TAG2;TAG3;.../DATE
+```
+where `DATE` has the form of `yyyy-mm-dd`.
