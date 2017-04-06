@@ -14,4 +14,4 @@ succesvol is afgeleverd.
 -   **Overig**: het is niet bekend of het bericht is afgeleverd.
 
 ## Meer informatie
-[Publisher statistieken](./statistics)
+* [Publisher statistieken](./statistics)

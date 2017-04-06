@@ -116,3 +116,6 @@ zijn Outlook, Hotmail, Gmail.
 Dit gaat feitelijk over het deel na het apenstaartje in het e-mailadres
 van de geadresseerden. Hier kan je dus zowel @hotmail.com en
 @slagerijvanvliet.nl domeinen terugvinden.
+
+## Meer informatie
+* [Publisher statistieken](./statistics)

@@ -19,3 +19,6 @@ international coding.
 
 Mobile messages are also delivered to cellphones that have been
 (temporarily) turned off.
+
+## More information
+* [Statistics in Publisher](./statistics)
