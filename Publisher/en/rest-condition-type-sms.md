@@ -6,11 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 sms condition.
 
-## Navigation
-* [Date properties](rest-condition-type-sms#date-properties)
-* [Mailing properties](rest-condition-type-sms#mailing-properties)
-* [More information](rest-condition-type-sms#more-information)
-
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
@@ -29,7 +24,7 @@ sms condition.
 * **number**: The required number of messages that are received by the recipient.
 * **operator**: The operator to compare the number of messages with the number 
 of received messages by the profile/subprofile. Possible values: 
-\= (equal), \!\= (not equal), \<\> (between), \< (less than), \> (greater than).
+= (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
 ## More information
 * [Fetch rule conditions](rest-get-rule-conditions)

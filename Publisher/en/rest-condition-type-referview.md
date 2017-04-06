@@ -6,10 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 referview condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-referview#individual-properties)
-* [More information](rest-condition-type-referview#more-information)
-
 ## Individual properties
 * **refer-view**: View that the condition refers to.
 * **check-type**: Boolean value to indicate whether a profile should be 

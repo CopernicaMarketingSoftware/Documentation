@@ -6,11 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 survey condition.
 
-## Navigation
-* [Date properties](rest-condition-type-survey#date-properties)
-* [Individual properties](rest-condition-type-survey#individual-properties)
-* [More information](rest-condition-type-survey#more-information)
-
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time

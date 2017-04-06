@@ -6,10 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 miniview condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-minview#individual-properties)
-* [More information](rest-condition-type-miniview#more-information)
-
 ## Individual properties
 * **mini-view**: Miniview associated with condition
 * **min-subprofiles**: Minimum number of subprofiles in the miniview

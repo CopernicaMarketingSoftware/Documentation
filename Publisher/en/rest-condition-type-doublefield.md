@@ -6,12 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 doublefield condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-doublefield#individual-properties)
-* [Match modes](rest-condition-type-doublefield#match-modes)
-* [Example](rest-condition-type-doublefield#example)
-* [More information](rest-condition-type-doublefield#more-information)
-
 ## Individual properties
 * **match-mode**: Match mode of doublefield condition. See the [match mode table](./rest-condition-type-doublefield#match-modes)
 * **fields**: The combination of fields that should be checked.
