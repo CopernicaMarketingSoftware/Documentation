@@ -1,3 +1,5 @@
+# Statistieken: SMS mailings
+
 De statistieken bieden een beknopt overzicht op de resultaten van alle
 mailings van de betreffende sms.
 
@@ -11,3 +13,5 @@ succesvol is afgeleverd.
 -   **Fout**: het bericht kon niet worden afgeleverd
 -   **Overig**: het is niet bekend of het bericht is afgeleverd.
 
+## Meer informatie
+* [Publisher statistieken](./statistics)

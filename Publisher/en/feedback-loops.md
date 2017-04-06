@@ -1,4 +1,5 @@
 # Feedback loops
+
 The dashboard in MarketingSuite allows you to configure *feedback loops*. Feedback loops are processes that are triggered whenever a certain event happens, such as a click or an open, and report it to the user in real time via HTTP POST.
 
 You could use this if you want to update data in your own application upon certain events Copernica picks up. To achieve this, place a script on your own server that executes upon Copernica's calls, and in the MarketingSuite dashboard, set the triggers. That is all!

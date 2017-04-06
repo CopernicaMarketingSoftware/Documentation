@@ -1,5 +1,5 @@
 * [Introductie](introduction)
-    * [Zender domeinen](sender-domains)
+    * [Sender Domains](sender-domains)
     * [Dashboard](dashboard)
 * [Verzenden via SMTP](smtp-api)
     * [Aanmaken van credentials](smtp-credentials)

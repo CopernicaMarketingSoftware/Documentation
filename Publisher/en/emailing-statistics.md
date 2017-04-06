@@ -1,3 +1,5 @@
+# Retrieve mailing statistics
+
 The overall statistics of an emailing can be retrieved with the
 /emailing/\$emailingID/statistics method.
 
@@ -5,8 +7,7 @@ The overall statistics of an emailing can be retrieved with the
 | --- | --- | --- |
 | https://api.copernica.com/v1/emailing/\$emailingID/statistics | GET | none |
 
-Properties of the emailing statistics
--------------------------------------
+## Properties of the emailing statistics
 
 The statistics of an emailing contains the following information:
 
@@ -21,14 +22,13 @@ The statistics of an emailing contains the following information:
 -   **abuses** (array(2), cannot be edited. Contains the total and
     unique abuses of the emailing)
 
-GET Request
------------
+## GET Request
 
 Request information about the statistics of an emailing in an account.
 The request returns a message containing the clicks, impressions, erors,
 unsubsribes and abuses of an emailing.
 
-### Example output
+## Example output
 
 Upon a successful request, you will receive a message similar to the
 example below.
@@ -68,3 +68,6 @@ Content-Type: application/json
     }
 }
 ```
+
+## More information
+[Feedback loops](./feedback-loops)

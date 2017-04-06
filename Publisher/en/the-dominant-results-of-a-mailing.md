@@ -1,5 +1,4 @@
-The dominant results of a mailing
-=================================
+# The dominant results of a mailing
 
 This chart provides an overview of the statistics for each mailing. This
 chart only displays the **DOMINANT** result. That means that if a
@@ -10,7 +9,7 @@ the total number of clicks.
 
 ![](../images/sjabloon_clip_image001.png)
 
-#### \
+####
 **Error (bounces)**
 
 The mailing has triggered an error somewhere in the delivery process.
@@ -44,3 +43,7 @@ on the {unsubscribe} link.
 Represents the number of subscribers from whom we received a complaint
 about your email. They may have reported it as spam, or reported an
 abuse otherwisely.
+
+## More information
+* [Statistics in Publisher](./statistics)
+* [Key figures](./statistics-key-figures)
