@@ -58,7 +58,6 @@
 | en/pom-attempts-logfile                                           |  2 |
 | en/personalization-testing                                        |  2 |
 | nl/rest-api-parameters                                            |  2 |
-| nl/surveys-delete                                                 |  2 |
 | nl/magento-integration/targets/subscribers                        |  2 |
 | en/how-to-edit-the-survey-title-and-introduction-text             |  2 |
 | nl/rest-delete-database-interest                                  |  2 |
@@ -68,7 +67,4 @@
 | nl/rss-versus-atom-feeds                                          |  2 |
 | en/rest-get-collection-miniviews                                  |  3 |
 | nl/rest-put-database-interest                                     |  3 |
-| nl/the-copernica-survey-module                                    |  3 |
-| nl/followups-editor                                               |  3 |
-| en/survey-question-types-and-their-options                        |  4 |
 | nl/rest-cdm-attempts-logfiles                                     |  4 |
