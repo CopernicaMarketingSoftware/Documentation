@@ -1,6 +1,6 @@
 # Versturen op basis van een template
 
-Er zijn tot nu toe een aantal [voorbeelden](rest-send-json) gegeven van hoe je data naar SMTPeter stuurt.
+Er zijn een aantal [voorbeelden](rest-send-json) gegeven van hoe je data naar SMTPeter stuurt.
 Hierbij is het nodig om telkens de hele email te versturen naar SMTPeter. Of als een 
 'MIME' string of als individuele tekst en html 'properties'. Het is ook mogelijk om 
 gebruik te maken van vooraf-opgestelde 'templates'. Dit is handig, omdat je dan alleen
