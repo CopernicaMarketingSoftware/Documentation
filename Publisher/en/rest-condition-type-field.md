@@ -6,11 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 field condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-field#individual-properties)
-* [Example](rest-condition-type-field#example)
-* [More information](rest-condition-type-field#more-information)
-
 ## Individual properties
 * **comparison**: Comparison type for fieldcondition. Possible values: 
 "equals", "not equals", "contains", "not contains", "less", "more", "is email", 
