@@ -15,8 +15,8 @@ Er zijn een aantal variablen die we veelvuldig voorbij zien komen,
 bijvoorbeeld '{$firstname}', {$age}' en '{$city}'.
 In het algemeen moet een variabele aan de volgende criteria voldoen:
 
-* beginnen met een $ teken,
 * is omringd met accolades,
+* beginnen met een $ teken,
 * kan alphanumerieke karakters bevatten. Mag niet met een cijfer beginnen,
 * kan een verbindingsstreepje (-) en/of lage streepje (_) bevatten,
 * kan niet beginnen met verbindingsstreepje of lagestreepje,
