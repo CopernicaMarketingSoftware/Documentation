@@ -1,3 +1,5 @@
+# Haal het meeste uit je partner licensie!
+
 Een partnerlicentie is veel meer dan alleen een gebruikslicentie
 Copernica Marketing Software. Naast de mogelijkheden van de software
 zelf, biedt de partnerlicentie ook unieke mogelijkheden om het maximale
