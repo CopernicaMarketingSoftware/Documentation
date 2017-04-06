@@ -19,6 +19,10 @@ profile. To request a profile object please see the documentation on [the accoun
   set as properties (Read and write)
 * **data**: See the documentation on [the data object](./followups-scripting-data)
 
+## Available methods
+* **remove()**: Remove this profile from the database
+* **unsubscribe()**: Unsubscribe this profile
+
 ## Example
 
 The following example in javascript can be used to access the "age" field of a profile.
