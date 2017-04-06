@@ -54,5 +54,5 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Miniselectie toevoegen aan database](rest-post-collection-views)
+* [Miniselectie toevoegen aan collectie](rest-post-collection-views)
 * [Selectieregels opvragen](rest-get-miniview-rules)
