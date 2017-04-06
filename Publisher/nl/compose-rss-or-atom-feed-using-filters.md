@@ -8,10 +8,9 @@ artikelen er maximaal in de feed worden opgenomen, in welke volgorde de
 artikelen worden geplaatst en welke artikelen moeten worden opgenomen op
 basis van de aanmaakdatum van het artikel.
 
-Nieuwe feed maken
------------------
+## Nieuwe feed maken
 
-Kies de optie **Nieuwe feed**in het menu **Feed**
+Kies de optie **Nieuwe feed** in het menu **Feed**
 
 -   Kies een **naam** voor de feed.
 -   Kies een **titel** voor de feed. Deze titel kan eventueel later
@@ -22,8 +21,7 @@ Kies de optie **Nieuwe feed**in het menu **Feed**
     en wordt niet gebruikt voor publicatie.
 -   Klik op **opslaan**om de feed op te slaan.
 
-Artikelen aan feed toevoegen (filter-opties)
---------------------------------------------
+## Artikelen aan feed toevoegen (filter-opties)
 
 Na het aanmaken van een nieuwe feed, is deze nog helemaal leeg. Je kan
 artikelen toevoegen met behulp van de filter-opties.
@@ -56,8 +54,7 @@ Klik op **opslaan** om de filtercriteria te bewaren.
 In het tabblad **Voorvertoning** zie je nu de feed volgens de nieuwe
 filtercritera.
 
-Feed adressen (RSS en Atom)
----------------------------
+## Feed adressen (RSS en Atom)
 
 De feed kan je uiteindelijk publiceren in twee verschillende formaten:
 

@@ -1,6 +1,7 @@
 # Laden en aanpassen van RSS feeds
 
 ## Navigeren
+-   [Introductie](#introductie)
 -   [Automatisch inladen van een feed](#automatisch-inladen-van-een-feed)
 -   [Handmatig inladen van een feed](#handmatig-instellen-van-rss)
 -   [De feed afstemmen op de doelgroep (conditioneel tonen)](#conditioneel-inladen-van-een-feed)
@@ -36,8 +37,7 @@ RSS op een basale manier worden getoond. Een eigen XSLT maken gebeurt in
 het 'Stijl'-onderdeel van Copernica. Dit vergt meer technische kennis,
 waarover later in dit artikel meer wordt beschreven.
 
-Handmatig instellen van een RSS
--------------------------------
+## Handmatig instellen van een RSS
 
 Het handmatig inladen van een RSS-feed gebeurt met de
 [{loadfeed}-functie](./the-loadfeed-function.md).
@@ -51,7 +51,7 @@ de NOS website in te laden met de XSLT genaamd 'Test':
 {loadfeed feed="http://feeds.nos.nl/nosnieuwsalgemeen?format=xml" xslt="Test"}
 ```
 
-### Conditioneel inladen van een feed
+## Conditioneel inladen van een feed
 
 Stel dat je verschillende feeds hebt die, zoals bij de NOS, allemaal een
 andere categorie producten of nieuwsartikelen bevatten. Je kunt dan met
@@ -68,8 +68,7 @@ tonen. Een voorbeeld:
 {/if}
 ```
 
-XSLT
-----
+## XSLT
 
 De manier waarop de feed wordt weergegeven wordt bepaald door het
 XSLT-bestand wat er aan gekoppeld is. XSLT leest de XML en schrijft het
@@ -125,7 +124,7 @@ verwijzingen naar het stylesheet dat aan het document is gekoppeld. Bij
 de laatste twee opties gebruik je in het XSLT-bestand gewone html-tags
 om de CSS aan toe roepen.
 
-### Call-to-Action
+## Call-to-Action
 
 Vaak geeft een feed slechts een samenvatting van een artikel weer. Of
 wanneer de feed webshopproducten bevat, dan wordt vaak alleen de meest
@@ -143,7 +142,7 @@ voorbeeldcode om ook in de *foreach*-loop te plaatsen:
 </tr>
 ```
 
-### Afbeelding uit de feed inladen
+## Afbeelding uit de feed inladen
 
 Veel feeds bevatten afbeeldingen, bijvoorbeeld van producten uit een
 webshop. Het kan zijn dat er een XML-tag is gemaakt die alleen de url
@@ -159,7 +158,7 @@ volgt (respectievelijk):
 <img src="{enclosure/@url}"/> 
 ```
 
-### Aantal items limiteren
+## Aantal items limiteren
 
 Het is mogelijk om het aantal iteraties te beperken. Hieronder zie je
 een voorbeeld van een limitatie waarbij alleen de eerste 2 items getoond
@@ -171,7 +170,7 @@ hoeft te komen in de XSLT. Onderstaande code moet als eerste in de
 <xsl:if test="position() < 3">
 ```
 
-### Lengte van item limiteren
+## Lengte van item limiteren
 
 Het is niet prettig om erg lange stukken tekst in je mailing te
 plaatsen. Het is dus fijn om een bericht automatisch af te kunnen
@@ -197,7 +196,7 @@ geplaatst.
 </xsl:choose>
 ```
 
-### Google Analytics UTM codes meesturen
+## Google Analytics UTM codes meesturen
 
 Copernica verwerkt bij een uitgaande mailing een RSS-feed als een van de
 laatste dingen, zodat altijd de nieuwste items worden weergegeven. Als
@@ -215,3 +214,7 @@ bijvoorbeeld de titel van het item. Dit gaat als volgt:
 ```
 <a class="feedlink" href="{link}?title={title}">Tekst_van_link</a>
 ```
+
+## Meer informatie
+* [RSS en Atom feeds](rss-and-atom-feeds)
+* [RSS vs. Atom feeds](rss-versus-atom-feeds)
