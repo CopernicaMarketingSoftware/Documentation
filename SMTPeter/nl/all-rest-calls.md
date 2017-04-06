@@ -19,25 +19,23 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | [https://www.smtpeter.com/v1/domains]()                                                                  | Opvragen van alle 'sender domains'                                      |
 | GET            | [https://www.smtpeter.com/v1/embeds]()                                                                   | Lijst van alle 'embedded' bestanden + content id (cid)                  |
 | GET            | [https://www.smtpeter.com/v1/envelope]()                                                                 | Opvragen van gebruikte envelope adres voor specifiek message id         |
-| GET            | [https://www.smtpeter.com/v1/events]()                                                                   | Opvragen van evnet                                                      |
-| GET            | [https://www.smtpeter.com/v1/feedbackloops]()                                                            | Veld uit database bijwerken                                             |
-| GET            | [https://www.smtpeter.com/v1/headers]()                                                                  | Veld uit database verwijderen                                           |
-| GET            | [https://www.smtpeter.com/v1/html]()                                                                     | Opvragen interesses                                                     |
-| GET            | [https://www.smtpeter.com/v1/logfiles]()                                                                 | Aanmaken interesse                                |
-| GET            | [https://www.smtpeter.com/v1/recent-tags]()                                                              | Opvragen collecties                               |
-| GET            | [https://www.smtpeter.com/v1/recipient]()                                                                | Aanmaken collectie                                |
-| GET            | [https://www.smtpeter.com/v1/spf]()                                                                      | Opvragen profielen                                |
-| GET            | [https://www.smtpeter.com/v1/tag]()                                                                      | Aanmaken nieuw profiel                            |
-| GET            | [https://www.smtpeter.com/v1/template]()                                                                 | Meerdere profielen tegelijk bewerken              |
-| GET            | [https://www.smtpeter.com/v1/templates]()                                                                | Opvragen profiel identifiers                      |
-| GET            | [https://www.smtpeter.com/v1/text]()                                                                     | Opvragen selecties                                |
-| POST           | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Voeg een nieuwe DKIM toe aan het 'sender domain'                |
-| POST           | [https://www.smtpeter.com/v1/domain]()                                                                   | Maak een nieuw domein aan of wijs een domein toe                |
-| POST           | [https://www.smtpeter.com/v1/feedbackloop]()                                                             | d                                                                |
-| POST           | [https://www.smtpeter.com/v1/send]()                                                                     | Versturen van data naar SMTP                                    |
-| POST           | [https://www.smtpeter.com/v1/spf]()                                                                      |   d                                                              |
-| POST           | [https://www.smtpeter.com/v1/template]()                                                                 |    d                                                             |
-| DELETE         | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Verwijder een DKIM sleutel                                      |
-| DELETE         | [https://www.smtpeter.com/v1/domain]()                                                                   | Verwijder een domein                                            | 
-| DELETE         | [https://www.smtpeter.com/v1/spf]()                                                                      | Verwijder een SPF record                                        |
-| DELETE         | [https://www.smtpeter.com/v1/template]()                                                                 | Verwijder een template                                          |
+| GET            | [https://www.smtpeter.com/v1/events]()                                                                   | Opvragen van events                                                     |
+| GET            | [https://www.smtpeter.com/v1/feedbackloops]()                                                            | Opvragen van feedback loop instellingen                                 |
+| GET            | [https://www.smtpeter.com/v1/headers]()                                                                  | Opvragen van headers van een verstuurd bericht                          |
+| GET            | [https://www.smtpeter.com/v1/html]()                                                                     | Opvragen van het HTML gedeelte van een verstuurd bericht                |
+| GET            | [https://www.smtpeter.com/v1/text]()                                                                     | Opvragen van het text gedeelte van een verstuurd bericht                |
+| GET            | [https://www.smtpeter.com/v1/logfiles]()                                                                 | Opvragen van logfilesinformatie                                         |
+| GET            | [https://www.smtpeter.com/v1/recipient]()                                                                | Opvragen van de recipient van een verstuurd bericht                     |
+| GET            | [https://www.smtpeter.com/v1/spf]()                                                                      | Opvragen van SPF informatie                                             |
+| GET            | [https://www.smtpeter.com/v1/template]()                                                                 | Opvragen van een specifieke template                                    |
+| GET            | [https://www.smtpeter.com/v1/templates]()                                                                | Opvragen van alle template identifiers                                  |
+| POST           | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Voeg een nieuwe DKIM toe aan het 'sender domain'                        |
+| POST           | [https://www.smtpeter.com/v1/domain]()                                                                   | Maak een nieuw domein aan of wijs een domein toe                        |
+| POST           | [https://www.smtpeter.com/v1/feedbackloop]()                                                             | Configureren van een feedback loop                                      |
+| POST           | [https://www.smtpeter.com/v1/send]()                                                                     | Versturen van data naar SMTP                                            |
+| POST           | [https://www.smtpeter.com/v1/spf]()                                                                      | Het aanmaken van een spf record                                         |
+| POST           | [https://www.smtpeter.com/v1/template]()                                                                 | Het aanmaken van een template                                           |
+| DELETE         | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Verwijder een DKIM sleutel                                              |
+| DELETE         | [https://www.smtpeter.com/v1/domain]()                                                                   | Verwijder een domein                                                    | 
+| DELETE         | [https://www.smtpeter.com/v1/spf]()                                                                      | Verwijder een SPF record                                                |
+| DELETE         | [https://www.smtpeter.com/v1/template]()                                                                 | Verwijder een template                                                  |
