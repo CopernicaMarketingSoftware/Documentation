@@ -41,3 +41,8 @@ The "action" variable will always have the value 'update'; this helps discern
 these messages from messages that are sent when a profile is
 [created](feedback-creates) or [deleted](feedback-deletes).
 The "profile" or "subprofile" variable allows you to look up the profile that was modified.
+
+## More information
+* [Feedback loops](./feedback-loops)
+* [Creation feedback](./feedback-creates)
+* [Delete feedback](./feedback-deletes)

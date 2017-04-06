@@ -51,3 +51,5 @@ variables are submitted:
 The "id", "recipient" and "tags" variables allow you to link the incoming bounce to the original outgoing message that was sent.
 The "mailfrom", "rcptto" and "data" fields hold the message that was received by the Marketing Suite.
 
+## More information
+[Feedback loops](./feedback-loops)

@@ -6,7 +6,6 @@ for both synchronous failures (failures during the SMTP handshake)
 as well as asynchronous failures (messages that were initially accepted,
 but for which we received a failure report later on).
 
-
 ## Synchronous vs asynchronous
 
 The SMTP protocol allows receiving servers to either accept or reject a 
@@ -30,7 +29,6 @@ asynchronous bounces, and to pass them to feedback loops.
 If you want to receive all bounces, even the ones that we did not recognize,
 you can set up a [feedback loop for bounces](feedback-bounces) besides
 the failure feedback loop.
-
 
 ## Variables
 
@@ -71,3 +69,6 @@ calls:
 
 The "id", "recipient" and "tags" variables allow you to link the failure to
 the originally sent email message.
+
+## More information
+[Feedback loops](./feedback-loops)
