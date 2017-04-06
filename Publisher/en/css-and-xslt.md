@@ -1,3 +1,5 @@
+# CSS and XSLT in Copernica
+
 Designers that work with CSS and XSLT get very happy when they work with
 Copernica. You see, all publications you create with our software can be
 fully restyled and restructured. We find this part so important, we
