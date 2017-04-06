@@ -52,5 +52,5 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 * [Overzicht van alle API calls](rest-api)
 * [Interesse toevoegen aan een database](rest-post-database-interests)
-* [Interesse bijwerken](rest-put-database-interest)
+* [Interesse bijwerken](rest-post-database-interest)
 * [Interesse verwijderen](rest-delete-database-interest)

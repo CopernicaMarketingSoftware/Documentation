@@ -46,5 +46,5 @@ This example uses the [CopernicaRestApi class](rest-php).
 ## More information
 - [Overview of all API calls](rest-api)
 - [Adding an interest to a database](rest-post-database-interests)
-- [Updating an interest](rest-put-profile-interests)
+- [Updating an interest](rest-post-profile-interests)
 - [Deleting an interest](rest-delete-database-interest)
