@@ -50,3 +50,6 @@ With each POST call the following variables are passed to your script:
 
 The "id", "recipient" and "tags" variables allow you to link the open to the 
 originally sent email message.
+
+## More information
+[Feedback loops](./feedback-loops)

@@ -1,8 +1,9 @@
+# Statistics: Mailing Statistics
+
 Sent your first mailing and wondering how successful it was? Use our
 emailing statistics to find out.
 
-Where do I find my mailing statistics?
---------------------------------------
+## Where do I find my mailing statistics?
 
 The statistics for all mailings sent with the application can be found
 in the Emailings section.
@@ -12,20 +13,18 @@ in the Emailings section.
     report’**.
 -   You may use the **filter options** to narrow your search.
 
-Where do I find the results of my scheduled mailing?
-----------------------------------------------------
+## Where do I find the results of my scheduled mailing?
 
 To view the results of mailings sent in a scheduled mailing:
 
--   In the menu *Mailings*click **Scheduled mailings**
+-   In the menu *Mailings* click **Scheduled mailings**
 -   Find and select your mailing in the list
 -   Click **Show full statistics report**
 
 To view the reports of a separate mailing sent in the scheduled mailing,
 click on the mailing in the top right corner of the screen.
 
-Statistics key figures
-----------------------
+## Statistics key figures
 
 The mailing key figures provides you a quick overview of the results of
 your mailing. This article explains you the figures presented in this

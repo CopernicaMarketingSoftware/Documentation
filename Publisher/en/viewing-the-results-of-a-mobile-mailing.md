@@ -1,5 +1,7 @@
+# Statistics: Mobile mailing statistics
+
 To see the results of your mobile mailing, go to Mobile \> Mailings \>
-Statistics \
+Statistics
 Select a mailing from the top half to see its results in the lower half.
 
 For mobile mailings it is only possible to register whether or not the

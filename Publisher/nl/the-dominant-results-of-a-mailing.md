@@ -1,3 +1,5 @@
+# Statistieken: Dominante resultaten
+
 Bij de resultaten van e-mailings worden naast de kerncijfers ook de
 dominante resultaten van de mailing getoond. Per bestemming wordt het
 belangrijkste resultaat weergegeven. Een geregistreerde klik is
@@ -12,12 +14,11 @@ aantal kliks, maar het aantal bestemmingen waar een klik is
 geregistreerd (en daarna geen uitschrijving of spamklacht). Als geen
 resultaat is gemeten, staat men in 'Geen terugkoppeling'.
 
-**Kerncijfers vs. het dominante resultaat**\
- Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
+**Kerncijfers vs. het dominante resultaat**
+Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
 impressies en alle kliks meegeteld, hierdoor zie je een verschil in
-aantallen impressies/kliks. \
-[\
- Meer lezen over de
+aantallen impressies/kliks.
+[ Meer lezen over de
 kerncijfers](./statistics-key-figures.md)
 
 ![](../images/sjabloon_clip_image001.png)
