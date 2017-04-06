@@ -1,3 +1,6 @@
+# Laden en aanpassen van RSS feeds
+
+## Navigeren
 -   [Automatisch inladen van een feed](#automatisch-inladen-van-een-feed)
 -   [Handmatig inladen van een feed](#handmatig-instellen-van-rss)
 -   [De feed afstemmen op de doelgroep (conditioneel tonen)](#conditioneel-inladen-van-een-feed)
@@ -8,6 +11,7 @@
 -   [De lengte van items automatisch limiteren](#lengte-van-item-limiteren)
 -   [Links uit de feed uitbreiden met Google Analytics UTM-tags](#google-analytics-utm-codes-meesturen)
 
+## Introductie
 Het gebruik van RSS-feeds kan het leven van een marketeer
 vergemakkelijken doordat er minder tekst en afbeeldingen handmatig
 ingevoerd hoeven worden. Ook stelt het de marketeer in staat om het
@@ -19,8 +23,7 @@ Er zijn twee manieren om een RSS feed in Copernica te laden:
 -   Automatisch, middels het 'blokken bewerken' menu.
 -   Met de hand, door middel van smarty-tags
 
-Automatisch inladen van een feed
---------------------------------
+## Automatisch inladen van een feed
 
 Wanneer de inhoud van de RSS al naar wens is en eenvoudigweg de gehele
 feed moet worden ingelaten, dan kun je de feed inladen in het menu
