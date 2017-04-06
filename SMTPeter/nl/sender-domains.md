@@ -1,6 +1,6 @@
 # Sender Domains
 
-SMTPeter gebruikt het concept "Sender Domains", of zender domeinen,
+SMTPeter gebruikt het concept 'Sender Domains', of zender domeinen,
 om email simpeler te maken. Het laat je email versturen zonder je bezig 
 te houden met SPF, DKIM en DMARC. Zo kun jij je bezig houden met je 
 bedrijf terwijl wij je berichten afhandelen.
@@ -44,7 +44,7 @@ archieven:
 We vragen jou om CNAME archieven en andere verwijzingen in je DNS op te 
 zetten.
 
-## Het "van" adres
+## Het "from" adres
 
 Voor elk zender domein hebben we de publieke DKIM sleutels in onze DNS.
 We hebben ook een kopie van de persoonlijke key op onze server zodat we een 
@@ -72,5 +72,3 @@ kun je het click domein aanpassen in de zender domein configuratie.
 
 Je kunt ook je bounce domein aanpassen, maar deze is alleen zichtbaar in 
 de broncode van de email.
-
-
