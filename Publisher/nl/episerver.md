@@ -1,3 +1,5 @@
+# Episerver
+
 Met de EPiServer integratie ben je in staat alle gebruikersdata vanuit
 EPiServer automatisch te synchroniseren met je gebruikersprofielen
 binnen Copernica Marketing Software. Met behulp van de integratie zet je
@@ -28,19 +30,9 @@ Enkele voorbeelden van EPiServer webwinkels
 Diverse bekende webwinkels maken gebruik van EPiServer en Copernica
 Marketing Software, zoals:
 
-+-------------------------------------------------------------------------------------------+
-| ### Keymusic                                                                              |
-+-------------------------------------------------------------------------------------------+
-| [![Keymusic](../images/Keymusic-homepage.jpg)](http://www.keymusic.com/nl/)               |
-+-------------------------------------------------------------------------------------------+
-| ### Nationale Apotheek                                                                    |
-+-------------------------------------------------------------------------------------------+
-| [![Nationale                                                                              |
-| Apotheek](../images/nationale-apotheek-homepage.jpg)](https://www.nationale-apotheek.nl/) |
-+-------------------------------------------------------------------------------------------+
-| [Download de                                                                              |
-| integraties](#download "Download de EPiServer integraties")                 |
-+-------------------------------------------------------------------------------------------+
+![Keymusic](../images/Keymusic-homepage.jpg)](http://www.keymusic.com/nl/)
+![Nationale Apotheek](../images/nationale-apotheek-homepage.jpg)](https://www.nationale-apotheek.nl/)
+[Download de integraties](#download "Download de EPiServer integraties")         
 
 Inspiratie voor jouw EPiServer webwinkel
 ----------------------------------------

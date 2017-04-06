@@ -18,10 +18,10 @@ general or for specific periods of time here.
 
 ## Mobile mailings
 It's possible to send text messages via Publisher, but the only available 
-information here is whether or not these messages have arrived. [This article](view-the-results-of-a-mobile-mailing) 
+information here is whether or not these messages have arrived. [This article](viewing-the-results-of-a-mobile-mailing) 
 contains more information about the limited statistics of the mobile mailing.
 
 ## More information
 * [Mailing statistics](./view-the-results-of-your-mailing)
 * [Key figures over a period](./statistics-key-figures)
-* [Mobile mailings](./view-the-results-of-a-mobile-mailing)
+* [Mobile mailings](./viewing-the-results-of-a-mobile-mailing)

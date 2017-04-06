@@ -1,3 +1,5 @@
+# Zender adres en onderwerp van een mail instellen
+
 Elke email die je met Copernica verstuurt moet zijn voorzien van een
 afzenderadres, een afzendernaam en een onderwerpregel.
 
