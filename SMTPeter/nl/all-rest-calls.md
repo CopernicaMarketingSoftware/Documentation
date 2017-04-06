@@ -19,10 +19,10 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | [https://www.smtpeter.com/v1/domains]()                                                                  | Opvragen van alle 'sender domains'                                      |
 | GET            | [https://www.smtpeter.com/v1/embeds]()                                                                   | Lijst van alle 'embedded' bestanden + content id (cid)                  |
 | GET            | [https://www.smtpeter.com/v1/envelope]()                                                                 | Opvragen van gebruikte envelope adres voor specifiek message id         |
-| GET            | [https://www.smtpeter.com/v1/events]()                                                                   | Opvragen van                                      |
-| GET            | [https://www.smtpeter.com/v1/feedbackloops]()                                                            | Veld uit database bijwerken                       |
-| GET            | [https://www.smtpeter.com/v1/headers]()                                                                  | Veld uit database verwijderen                     |
-| GET            | [https://www.smtpeter.com/v1/html]()                                                                     | Opvragen interesses                               |
+| GET            | [https://www.smtpeter.com/v1/events]()                                                                   | Opvragen van evnet                                                      |
+| GET            | [https://www.smtpeter.com/v1/feedbackloops]()                                                            | Veld uit database bijwerken                                             |
+| GET            | [https://www.smtpeter.com/v1/headers]()                                                                  | Veld uit database verwijderen                                           |
+| GET            | [https://www.smtpeter.com/v1/html]()                                                                     | Opvragen interesses                                                     |
 | GET            | [https://www.smtpeter.com/v1/logfiles]()                                                                 | Aanmaken interesse                                |
 | GET            | [https://www.smtpeter.com/v1/recent-tags]()                                                              | Opvragen collecties                               |
 | GET            | [https://www.smtpeter.com/v1/recipient]()                                                                | Aanmaken collectie                                |
