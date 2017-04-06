@@ -3,7 +3,7 @@
 The Marketing Suite can rewrite image links in emails to track opens. When an email
 is opened for which this option was set, the image will not be downloaded from your
 own server, but from the cache on our web servers instead. This
-allows us to track all opens, and to use that for statistics.
+allows us to track all opens and to use that for statistics.
 
 If you set up a feedback loop for opens, the Marketing Suite notifies you in realtime
 about each registered image download. For each open that we monitor we send 
@@ -11,8 +11,7 @@ a HTTP POST call (HTTPS is possible too) to your server with the relevant
 information about the open. 
 
 Note: this might generate a lot of traffic, so be sure that your server is capable
-of handeling this.
-
+of handling this.
 
 ## Variables
 
