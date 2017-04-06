@@ -1,3 +1,5 @@
+# Email bestanden en afbeeldingen
+
 Afbeeldingen en bestanden die je gebruikt in je template of document kan
 je uploaden naar de bestanden en afbeeldingen map die hoort bij het
 template of document. Ook is het mogelijk de bestanden centraal op te

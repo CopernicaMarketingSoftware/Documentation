@@ -1,3 +1,5 @@
+# Creating a responsive HTML email from scratch
+
 You must have heard this question before: will our newsletter look nice
 on an iPhone? Or, why doesn't our email look just as nice as our
 competitor's email? I'm going to teach you how to create an email

@@ -1,3 +1,5 @@
+# User and account management
+
 All kinds of things relating to user and account management, can be
 found in the Admin section. An increasing number of tasks can also be
 arranged though
