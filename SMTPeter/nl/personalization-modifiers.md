@@ -50,7 +50,7 @@ De volgende tabel laat alle geldige 'modifiers' zien:
 Met deze 'modifier codeer je data naar base64. Dit werkt niet op arrays.
 Gebruik:
 ```
-The base64 encoding of {$name} is {$name|base64_encode}.
+The base64 encoding of {$name} is {$name|base64_encode}
 ```
 
 ## base64_decode
