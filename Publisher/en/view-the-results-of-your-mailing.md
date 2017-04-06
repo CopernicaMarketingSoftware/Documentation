@@ -57,3 +57,6 @@ only counted once).
 
 **Open rate:** Messages with impression devided by the total number of
 messages sent \* 100.
+
+## More information
+* [Statistics in Publisher](./statistics)

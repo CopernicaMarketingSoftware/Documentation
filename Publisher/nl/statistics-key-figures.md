@@ -64,4 +64,5 @@ impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks.
 
 ## Meer informatie
-[Het dominante resultaat per bestemming](./the-dominant-results-of-a-mailing.md)
+* [Publisher statistieken](./statistics)
+* [Het dominante resultaat per bestemming](./the-dominant-results-of-a-mailing.md)

@@ -62,3 +62,7 @@ geklikt in de mailing.
 
 Je ziet hoeveel unieke geadresseerden de email naar hun spambox hebben
 verwezen, of anderzijds een abusemelding hebben ingediend.
+
+## Meer informatie
+* [Statistieken](./statistics)
+* [Kerncijfers](./statistics-key-figures)

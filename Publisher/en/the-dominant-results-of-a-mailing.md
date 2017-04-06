@@ -43,3 +43,7 @@ on the {unsubscribe} link.
 Represents the number of subscribers from whom we received a complaint
 about your email. They may have reported it as spam, or reported an
 abuse otherwisely.
+
+## More information
+* [Statistics in Publisher](./statistics)
+* [Key figures](./statistics-key-figures)

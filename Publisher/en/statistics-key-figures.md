@@ -58,4 +58,5 @@ are counted, causing a difference with the amount of impressions and clicks
 in the [dominant result](./the-dominant-results-of-a-mailing)
 
 ## More information
-[The dominant result per destination](./the-dominant-results-of-a-mailing)
+* [Statistics in Publisher](./statistics)
+* [The dominant result per destination](./the-dominant-results-of-a-mailing)
