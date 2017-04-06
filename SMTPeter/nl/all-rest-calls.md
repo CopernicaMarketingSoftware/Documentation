@@ -31,21 +31,12 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | [https://www.smtpeter.com/v1/template]()                                                                 | Meerdere profielen tegelijk bewerken              |
 | GET            | [https://www.smtpeter.com/v1/templates]()                                                                | Opvragen profiel identifiers                      |
 | GET            | [https://www.smtpeter.com/v1/text]()                                                                     | Opvragen selecties                                |
-
-
-| Methode        | Adres                                                                                                    | Omschrijving                                                    |
-|--------------- |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------- |
 | POST           | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Voeg een nieuwe DKIM toe aan het 'sender domain'                |
 | POST           | [https://www.smtpeter.com/v1/domain]()                                                                   | Maak een nieuw domein aan of wijs een domein toe                |
 | POST           | [https://www.smtpeter.com/v1/feedbackloop]()                                                             | d                                                                |
 | POST           | [https://www.smtpeter.com/v1/send]()                                                                     | Versturen van data naar SMTP                                    |
 | POST           | [https://www.smtpeter.com/v1/spf]()                                                                      |   d                                                              |
 | POST           | [https://www.smtpeter.com/v1/template]()                                                                 |    d                                                             |
-
-
-
-| Methode        | Adres                                                                                                    | Omschrijving                                                    |
-|--------------- |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------- |
 | DELETE         | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Verwijder een DKIM sleutel                                      |
 | DELETE         | [https://www.smtpeter.com/v1/domain]()                                                                   | Verwijder een domein                                            | 
 | DELETE         | [https://www.smtpeter.com/v1/spf]()                                                                      | Verwijder een SPF record                                        |
