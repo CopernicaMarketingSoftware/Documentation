@@ -1,3 +1,5 @@
+# Templates and documents
+
 Email documents are built with templates. In the template source code
 you specify where content (for example text and images) can later be
 added by the end user in the documents based on the template. This way

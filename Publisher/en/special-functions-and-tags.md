@@ -1,3 +1,5 @@
+# Special functions and tags
+
 Copernica has many functions for personalization and tags for publishing
 special content.
 

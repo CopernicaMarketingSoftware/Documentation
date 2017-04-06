@@ -1,3 +1,5 @@
+# Web forms
+
 You can easily create powerful web forms in Copernica and embed them on
 a webpage. The web form behaviour settings give you full control over
 the working of the web form. Link follow-up actions to extend their

@@ -1,3 +1,5 @@
+# Using the Copernica default template
+
 For new users to get familiar with template and documents in Copernica,
 we offer an example email template and document, that is easily created.
 The template makes use of all common techniques, such as the webversion

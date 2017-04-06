@@ -1,3 +1,5 @@
+# Building email templates
+
 Creating your own template requires some knowledge of HTML. To be able
 to have more control over the code, we advise you to use a text editor
 to create a template, rather than using a WYSIWYG editor

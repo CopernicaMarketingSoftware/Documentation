@@ -1,3 +1,5 @@
+# Integration
+
 Would you like to integrate Copernica with your CMS, ecommerce platform or CRM software? We offer various generic integrations, most of them developed by our Copernica partners. They are also responsible to update these integrations. Did you download an integration? Be sure to check our website for possible updates  
   
  We have the following types of integrations available for download:

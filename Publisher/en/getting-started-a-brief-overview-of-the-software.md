@@ -1,3 +1,5 @@
+# Introduction to the Copernica Marketing Software
+
 Thank you for choosing Copernica Marketing Software! Although the
 software is very user-friendly, getting started on something new never
 comes without hiccups. That's why we've made you this starter guide. In

@@ -1,3 +1,5 @@
+# Composing email documents
+
 Once you have created a template, you can compose your first email
 document. A document is always based on a template. If you
 added [dynamic blocks](./dynamic-content.md)

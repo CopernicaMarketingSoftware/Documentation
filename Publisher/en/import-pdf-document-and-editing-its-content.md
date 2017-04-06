@@ -1,3 +1,5 @@
+# Importing a PDF
+
 After you provided the PDF file with PDFlib blocks in Acrobat Pro, you
 can import the PDF document to Copernica.
 

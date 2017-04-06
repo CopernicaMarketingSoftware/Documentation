@@ -1,3 +1,5 @@
+# Websites: Getting started
+
 Surveys and webforms that you create under *Content* can only be
 published on web pages (not in email documents). Websites and web pages
 are created and managed in the *Website* section of the software. Your

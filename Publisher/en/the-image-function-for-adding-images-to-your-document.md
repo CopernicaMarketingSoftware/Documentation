@@ -1,3 +1,5 @@
+# Adding images to your document
+
 An image tag is the code to add a variable image block to e-mail
 documents. It is placed in the source code of an HTML template as:
 
