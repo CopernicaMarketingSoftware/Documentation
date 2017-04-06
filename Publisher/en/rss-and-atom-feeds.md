@@ -1,3 +1,5 @@
+# RSS and atom feeds
+
 Don't know what content to put on a [web
 page](https://www.copernica.com/en/features/web-pages "Web pages") or
 [emailing](https://www.copernica.com/en/features/emailings "Emailings")?
@@ -5,8 +7,7 @@ Have you ever thought of a content feed? You decide what content you
 want on a certain page or email. Just add an RSS or Atom feed to your
 marketing campaign in Copernica.
 
-Dynamic content with feeds
---------------------------
+## Dynamic content with feeds
 
 Content feeds are collections of articles that you publish through
 various channels, in your
@@ -22,9 +23,7 @@ Copernica editor. Easily add various sections to an RSS or Atom feed.
 This enables you to sort the articles you add to the feed according to
 these sections.
 
- 
-
-### Designing RSS or Atom feeds with Copernica
+## Designing RSS or Atom feeds with Copernica
 
 In just a few steps, you'll be able to compose the address of your feed
 in Copernica. This is the link that points to your content feed when you
