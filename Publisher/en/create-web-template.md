@@ -1,3 +1,5 @@
+# Create web template
+
 Web pages are created based on web templates. In the template you
 determine the layout and styling of your page. It also incorporates
 variable elements, that can be given content on page level. These are

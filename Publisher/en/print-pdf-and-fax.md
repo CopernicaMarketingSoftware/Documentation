@@ -1,3 +1,5 @@
+# PDF's in Copernica
+
 Copernica allows you to create PDF documents for fax mailings,
 advertisements, brochures and other printed material. Or more
 importantly create personalized PDF documents to send in e-mailings.

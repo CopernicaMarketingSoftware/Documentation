@@ -1,3 +1,5 @@
+# Personalizing hyperlinks
+
 The hyperlinks in your emailings and webpages can be supplemented with
 data from a profile or subprofile. An common example is the login code
 (**{\$profile.id}** and **{\$profile.code}**) that you add to the

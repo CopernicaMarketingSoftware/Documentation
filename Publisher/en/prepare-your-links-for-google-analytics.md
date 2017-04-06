@@ -1,3 +1,5 @@
+# Prepare your hyperlinks for Google Analytics
+
 Google Analytics supports the integration of different campaigns. To do
 so, you have to add special variables to hyperlinks in a newsletter or a
 webpage. By adding these variables, you will be able to collect better

@@ -1,3 +1,5 @@
+# Files and images
+
 Images and files you use in your campaigns can be stored in different
 places. The most logical place to store files and images varies per
 purpose. Do you use an image only once in an e-mail? Then use the file

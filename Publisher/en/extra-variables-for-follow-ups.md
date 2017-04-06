@@ -1,3 +1,5 @@
+# Extra variables for follow-up
+
 For follow-up actions, extra variables are made available that enable
 you to recieve information about the action that preceded. This can be
 usefull for example when you want to make a follow-up action that sends
@@ -5,7 +7,7 @@ an email to a fixed address containing information about a webform or
 survey that was submitted.
 
 Please note that smarty 2 is still being used within follow-up actions.
-This requires the oldschool foreach syntax to loop through the array.
+This requires the older foreach syntax to loop through the array.
 
 #### Example:
 

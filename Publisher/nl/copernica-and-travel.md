@@ -1,4 +1,8 @@
-![Travel newsletters](../images/travel-copernica.jpg)Zet Copernica in
+# Copernica en reizen
+
+![Travel newsletters](../images/travel-copernica.jpg)
+
+Zet Copernica in
 om je klant te voorzien van alle relevante informatie omtrent zijn reis.
 Stuur uitgebreide bevestigingsmails van reservatie met dynamische
 content op basis van de bestemming of breng hem op de hoogte van
@@ -23,8 +27,6 @@ Krachtige functionaliteiten voor Travel
 -   Gebruik eerdere vakanties, vakantievoorkeuren (zomer, winter,
     strand, actief, etc.) om je klanten een nieuw relevant aanbod te
     bieden
-
-\
 
 ### Interessante artikelen voor Travel
 

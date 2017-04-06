@@ -1,3 +1,5 @@
+# Setting up the REST service
+
 The Copernica REST API allows you to create applications that can access
 and modify all data in a Copernica account, and for example start
 campaigns.

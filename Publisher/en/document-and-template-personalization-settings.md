@@ -1,3 +1,5 @@
+# Document and template personalization settings
+
 The personalization settings allow you to configure the way how any
 personalization must be handled or displayed by the application and the
 e-mailings you send with this application.

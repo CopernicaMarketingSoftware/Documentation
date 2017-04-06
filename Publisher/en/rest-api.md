@@ -9,6 +9,7 @@ Copernica with your own system, without any human interference.
 * [Introduction: the REST api in a nutshell](rest-introduction)
 * [Send and receive HTTP requests](rest-requests)
 * [Fancy OAuth2 links](rest-oauth)
+* [Setting up Copernica REST service](./setting-up-copernica-rest-service)
 
 ## REST API: method reference
 

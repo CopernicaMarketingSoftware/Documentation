@@ -1,3 +1,5 @@
+# Link to the webversion of your email
+
 The webversion offers a solution for the recipient who cannot read HTML
 newsletters in their email program. You include the webversion in your
 email templates and documents with the {webversion} tag. It is also

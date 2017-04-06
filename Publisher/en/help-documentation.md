@@ -1,3 +1,5 @@
+# Help documentation
+
 Need help using Copernica? Quickly find the answers to all your
 questions in our help documentation. Can't find the information you need
 in the help documentation? Don't hesitate to contact our support
