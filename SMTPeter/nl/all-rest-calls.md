@@ -37,10 +37,10 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 |--------------- |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------- |
 | POST           | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Voeg een nieuwe DKIM toe aan het 'sender domain'                |
 | POST           | [https://www.smtpeter.com/v1/domain]()                                                                   | Maak een nieuw domein aan of wijs een domein toe                |
-| POST           | [https://www.smtpeter.com/v1/feedbackloop]()                                                             |                |
-| POST           | [https://www.smtpeter.com/v1/send]()                                                                     | Versturen van data naar SMTP |
-| POST           | [https://www.smtpeter.com/v1/spf]()                                                                      |               |
-| POST           | [https://www.smtpeter.com/v1/template]()                                                                 |                        |
+| POST           | [https://www.smtpeter.com/v1/feedbackloop]()                                                             | d                                                                |
+| POST           | [https://www.smtpeter.com/v1/send]()                                                                     | Versturen van data naar SMTP                                    |
+| POST           | [https://www.smtpeter.com/v1/spf]()                                                                      |   d                                                              |
+| POST           | [https://www.smtpeter.com/v1/template]()                                                                 |    d                                                             |
 
 
 
