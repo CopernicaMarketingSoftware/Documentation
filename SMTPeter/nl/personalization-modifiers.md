@@ -257,16 +257,12 @@ Gebruik:
 
 ## strstr
 
-With this modifier you can search for a string in you variable and get the
-first occurrence plus the rest of your variable, or you can get everything
-in the variable till the searched string. The syntax is: strstr:string:before,
-where string is the searched string, and before is a boolean, default = false.
-If the boolean is true, you get what is in the variable before the first
-occurrence of string. If it is false you get what is in the variable from
-the first occurrence of string onwards. If the variable is an array the
-modifier is ignored.
-Usage:
-```text
+Met deze 'modifer' kun je naar een string zoeken in de variabele en het 
+punt aangeven van waar je de rest van de variabele terug wilt hebben.
+Dit kan het gedeelte voor de string zijn, maar ook het gedeelte vanaf de 
+gevonden string. Deze 'modifier' werkt niet op een array.
+Gebruik:
+```
 If the variable holds "Hello world!", this will print Hello, {$variable|strstr:" ":true}
 and this will print world!, {$variable|strstr:"w":false}, just like this
 {$variable|strstr:"w"}
@@ -274,12 +270,11 @@ and this will print world!, {$variable|strstr:"w":false}, just like this
 
 ## substr
 
-With this modifier you can obtain a substring from you variable. The syntax
-is substr:start:length, where start is the starting position in the string
-(zero indexed) and length is the length you want to obtain. The default
-for length is the the length of the string minus the starting position.
-Usage:
-```text
+Met deze 'modifier' kun je een substring van een variabele opvragen.
+De syntax is als volgt: substr:start:length. Start is de beginpositie
+(zero indexed) en de lengte is de lengte die je wilt opvragen. 
+Gebruik:
+```
 If the variable is "0123456789" this will print 2 to 9
 {$variable|substr:2}
 and this will print 456
@@ -288,68 +283,64 @@ and this will print 456
 
 ## tolower
 
-With this modifier you can change all character in your text to lowercase
-characters.
-Usage:
-```text
+Met deze 'modifier' kun je alle tekens naar kleine letters omzetten.
+Gebruik:
+```
 {$text|tolower}
 ```
 
 ## toupper
 
-With this modifier you can change all characters in your text to uppercase
-characters.
-Usage:
-```text
+Met deze 'modifier' kun je alle tekens naar hoofdletters omzetten.
+Gebruik:
+```
 The next part looks like it is shouted {$text|toupper}
 ```
 
 ## trim
 
-With this modifier you can trim trailing white space and new line characters
-from your text. The characters that are trimmed are: spaces, tabs, newlines,
-carriage returns, vertical tabs, and end of strings.
-Usage:
-```text
-{$text}
+Met deze 'modifier' kun je ongewenste spaties en 'new line characters' in je
+tekst trimmen. Een overzicht van tekens die worden getrimd: spaties, tabs, 
+'newlines', regelterugloop, verticale tabs en einde van strings.
+Gebruik:
+```
+{$text|trim}
 ```
 
 ## truncate
 
-With this modifier it is possible to truncate your text to a certain length.
-If the text is truncated it is possible to add some characters to indicate
-that the text is truncated. These extra characters are counted for the
-truncation length as well. You can also specify whether it is allowed to
-break words or not. The syntax is: truncate:length:etc:break_words,
-where length has a default of 80, etc (the replacement), has a default of
-... and break_words has as default false.
-
-Usage:
-```text
+Met deze 'modifier' is het mogelijk om tekst af te knippen en tot een bepaalde
+lengte terug te brengen. Je kunt wat tekens toevoegen om aan te geven dat de
+tekst is afgeknipt. Deze worden bij de lengte van het afknippen opgeteld. 
+Je kunt ook opgeven of het toegestaan is om worden af te breken of niet.
+De syntax is als volgt: truncate:length:etc:break_words. De lengte heeft
+een 'default' van 80, etc (de vervanging) heeft een'default' van ...
+en break_words heeft een 'default' van false.
+Gebruik:
+```
 {$text|truncate:50:"....":true}
 ```
 
 ## ucfirst
 
-With this modifier you replace the first character of your text with an
-uppercase character.
-Usage:
-```text
+Met deze 'modifer' kun je het eerste teken van de tekst vervangen met een
+hoofdletter teken.
+Gebruik:
+```
 {$name|ucfirst}
 ```
 
 ## urlencode
 
-With this modifier you can url encode your text.
-Usage:
-```text
+Met deze 'modifier' kun je tekst 'url encoden'. 
+Gebruik:
+```
 {$text|urlencode}
 ```
 
 ## urldecode
-
-With this modifier you can url decode your text.
-Usage:
-```text
+Met deze 'modifier' kun je tekst 'url decoden'.
+Gebruik:
+```
 {$text|urldecode}
 ```
