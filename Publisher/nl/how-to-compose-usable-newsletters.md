@@ -1,3 +1,5 @@
+# Tips voor een nieuwe nieuwsbrief opstellen
+
 Je nieuwsbrieven zijn eindelijk bezorgd en worden goed op het scherm
 weergegeven. Maar worden ze eigenlijk wel helemaal gelezen? Heb je niet
 al die moeite voor niets gedaan? Wat geldt voor de

@@ -1,3 +1,5 @@
+# PDF's importeren en editen
+
 Nadat je in Adobe Acrobat het PDF-bestand voorzien hebt van PDFlib
 blokken, kun je het bestand importeren naar Copernica. Net als bij
 e-mailings en websites zullen de tekst en afbeeldingblokken aanklikbaar

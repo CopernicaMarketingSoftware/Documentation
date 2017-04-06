@@ -1,3 +1,5 @@
+# Email marketing
+
 Email marketing is een belangrijke manier om je doelgroep te informeren
 en bezoekers naar je website te krijgen. Met de email marketing software
 van Copernica maak, test en verzend je snel en gemakkelijk professionele

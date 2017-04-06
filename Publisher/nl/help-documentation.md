@@ -1,3 +1,5 @@
+# Helpdocumentatie
+
 Heb je een vraag over Copernica of ben je op zoek naar wat meer
 informatie over de werking van een van onze functies? Gebruik dan onze
 helpdocumentatie om snel de nodige informatie te vinden.

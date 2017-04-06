@@ -1,3 +1,5 @@
+# Betere email aflevering met Copernica
+
 Bij het opstellen van uw e-mailcampagnes wilt u zeker zijn van een goede
 deliverability. Copernica Marketing Software biedt verschillende
 methodes en tools die helpen bij het verbeteren van uw verzendreputatie.
