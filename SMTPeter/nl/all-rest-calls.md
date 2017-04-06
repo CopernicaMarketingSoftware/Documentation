@@ -47,6 +47,6 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | Methode        | Adres                                                                                                    | Omschrijving                                                    |
 |--------------- |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------- |
 | DELETE         | [https://www.smtpeter.com/v1/dkimkey]()                                                                  | Verwijder een DKIM sleutel                                      |
-| DELETE         | [https://www.smtpeter.com/v1/domain]()                                                                   | Verwijder een domein                                            |                                                                   | Versturen van data naar SMTP |
+| DELETE         | [https://www.smtpeter.com/v1/domain]()                                                                   | Verwijder een domein                                            | 
 | DELETE         | [https://www.smtpeter.com/v1/spf]()                                                                      | Verwijder een SPF record                                        |
 | DELETE         | [https://www.smtpeter.com/v1/template]()                                                                 | Verwijder een template                                          |
