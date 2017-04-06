@@ -1,5 +1,6 @@
 * [Introductie](introduction)
     * [Dashboard](dashboard)
+    * [Alle beschikbare REST calls](all-rest-calls)
 * [Verzenden via SMTP](smtp-api)
     * [Aanmaken van credentials](smtp-credentials)
     * [MIME headers](smtp-headers)
