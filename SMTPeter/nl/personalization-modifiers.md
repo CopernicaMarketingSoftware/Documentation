@@ -96,7 +96,7 @@ Er wordt een 0 teruggegeven als de 'modifier' wordt aangeroepen
 op een array.
 Gebruik:
 ```
-The following text has {$text|count_paragraphs} paragraph.
+The following text has {$text|count_paragraphs} paragraph
 Text:
 {$text}
 ```
@@ -108,7 +108,7 @@ Hier wordt een 0 teruggegeven als de 'modifier' wordt aangeroepen op een
 array.
 Gebruik:
 ```
-"{$text}" has {$text|count_words} words.
+"{$text}" has {$text|count_words} words
 ```
 
 ## default
