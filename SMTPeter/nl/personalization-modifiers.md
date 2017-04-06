@@ -1,147 +1,131 @@
-# Variable modifiers
+# Overzicht 'modifiers'
+Je kunt de variabelen, waarmee je emails personaliseert, veranderen met behulp
+van 'modifiers'. Je doet dit door een `|` toe te voegen na de variabele.
+Je gebruikt bijvoorbeeld`tolower` om de variabele `{$name}` te
+bewerken. Dit ziet er dan zo uit: `{$name|tolower}`.
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
+Je kunt bijvoorbeeld `{$name|tolower|ucfirst}` gebruiken om te zorgen dat alle
+namen met een hoofdletter beginnen en de resterende letters altijd kleine 
+letters zijn. 
 
-The variables used for personalization can be altered with modifiers. A modifier
-is called on the variable by appending it with a `|` before the closing curly
-brace. E.g. if you want to apply the `tolower` modifier on
-variable `{$name}` you use: `{$name|tolower}`.
 
-An example of how the modifiers can be used for a personalized mail is:
-```
-Hello {$name|escape},
+De volgende tabel laat alle geldige 'modifiers' zien:
 
-Your name {$name|escape} is {$name|strlen} characters long.
-
-Bye!
-```
-Besides calling one modifier on a variable it is possible to chain modifiers.
-E.g. you have name data. However, the strings containing names, are sometimes
-capitalized and sometimes not. You want to use these names and you want to
-be sure that a name starts with a capital and the rest of the name is in
-lower case. Doing this is easy. You use `{$name|tolower|ucfirst}`. The first
-modifier `tolower`, will make sure that the name is all in lower case. Then
-modifier `ucfirst` is applied, which will capitalize the first character.
-Note that if you call a modifier that does not exist, no effect takes place.
-
-The following table lists all supported modifiers:
-
-| Modifier                                                          | description                                                                    |
+| 'Modifier'                                                        | Beschrijving                                                                    |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [base64_encode](personalization-modifiers#base64_encode)                          | base64 encoder                                                 |
-| [base64_decode](personalization-modifiers#base64_decode)                          | base64 decoder                                                 |
-| [cat](personalization-modifiers#cat):"string"                                     | concatenates a string to variable                              |
-| [count](personalization-modifiers#count)                                          | count number of elements in variable                           |
-| [count_characters](personalization-modifiers#count_characters)                    | count number of characters in a string                         |
-| [count_paragraphs](personalization-modifiers#count_paragraphs)                    | count number of paragraphs in a text (by counting newlines)    |
-| [count_words](personalization-modifiers#count_words)                              | count number of words in a text                                |
-| [default](personalization-modifiers#default):default value                        | use default value if variable is not set                       |
-| [empty](personalization-modifiers#empty)                                          | check whether a variable is empty                              |
-| [escape](personalization-modifiers#escape):"string"                               | escape html characters (or other chars) inside a string        |
-| [indent](personalization-modifiers#indent):num = 1:char = " "                     | put num whitespaces in front of every line                     |
-| [md5](personalization-modifiers#md5)                                              | perform md5 hashing                                            |
-| [nl2br](personalization-modifiers#nl2br)                                          | replace newlines with html br tags                             |
-| [range](personalization-modifiers#range):start = 0:end                            | truncate list to get the items between positions start and end |
-| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text       | replace substrings using regular expression                    |
-| [replace](personalization-modifiers#replace):"string1":"string2"                  | replace occurrences of string1 with string2                    |
-| [sha1](personalization-modifiers#sha1)                                            | perform sha1 hashing                                           |
-| [sha256](personalization-modifiers#sha256)                                        | perform sha256 hashing                                         |
-| [sha512](personalization-modifiers#sha512)                                        | sha512 hashing                                                 |
-| [spacify](personalization-modifiers#spacify):separator = " "                      | place a separator between every input character                |
-| [strlen](personalization-modifiers#strlen)                                        | count the characters in a string                               |
-| [strstr](personalization-modifiers#strstr):"substring":before = false             | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. |
-| [substr](personalization-modifiers#substr):start position:length                  | return the substring from start position onward, optionally truncated after length characters |
-| [tolower](personalization-modifiers#tolower)                                      | convert all characters to lower case                           |
-| [toupper](personalization-modifiers#toupper)                                      | convert all characters to upper case                           |
-| [trim](personalization-modifiers#trim)                                            | trim the white space and endline characters off both sides of the input |
-| [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words |
-| [ucfirst](personalization-modifiers#ucfirst)                                      | replace first character with an upper case character           |
-| [urlencode](personalization-modifiers#urlencode)                                  | encode input for use in an url                                 |
-| [urldecode](personalization-modifiers#urldecode)                                  | decode input for use in an url                                 |
+| [base64_encode](personalization-modifiers#base64_encode)                          | 'base64 encoder'                                                 |
+| [base64_decode](personalization-modifiers#base64_decode)                          | 'base64 decoder'                                                 |
+| [cat](personalization-modifiers#cat):"string"                                     | maakt van de variabele een string                             |
+| [count](personalization-modifiers#count)                                          | telt het aantal elementen in een  variable                |
+| [count_characters](personalization-modifiers#count_characters)                    | telt het aantal tekens in een string                         |
+| [count_paragraphs](personalization-modifiers#count_paragraphs)                    | telt het aantal paragrafen in een tekst (door 'newlines' te tellen)    |
+| [count_words](personalization-modifiers#count_words)                              | telt het aantal woorden in een tekst                                |
+| [default](personalization-modifiers#default):default value                        | gebruik 'default' waarde als variabele niet is aangegeven                       |
+| [empty](personalization-modifiers#empty)                                          | check of een variabele leeg is                              |
+| [escape](personalization-modifiers#escape):"string"                               | 'escape' html tekens (of andere tekens) binnen een string        |
+| [indent](personalization-modifiers#indent):num = 1:char = " "                     | zet het aantal 'whitespaces' aan het begin van elke regel                     |
+| [md5](personalization-modifiers#md5)                                              | voer md5 hashing uit                                        |
+| [nl2br](personalization-modifiers#nl2br)                                          | vervang 'newlines' met html 'br tags'                             |
+| [range](personalization-modifiers#range):start = 0:end                            | lijst opdelen om de items tussen de start en eindpositie te krijgen |
+| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text       | vervang 'substrings' door 'regular expressions' te gebruiken                  |
+| [replace](personalization-modifiers#replace):"string1":"string2"                  | vervang het voorkomen van string1 met string2                    |
+| [sha1](personalization-modifiers#sha1)                                            | voer sha1 hashing uit                                           |
+| [sha256](personalization-modifiers#sha256)                                        | voer sha256 hashing uit                                       |
+| [sha512](personalization-modifiers#sha512)                                        | 'sha512 hashing'                                             |
+| [spacify](personalization-modifiers#spacify):separator = " "                      | plaats een verdeler tussen elk input teken                |
+| [strlen](personalization-modifiers#strlen)                                        | tel het aantal tekens in een string                               |
+| [strstr](personalization-modifiers#strstr):"substring":before = false             | geef de string terug, startend van de eerste eerste verschrijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning. |
+| [substr](personalization-modifiers#substr):start position:length                  | geef de substring teurg vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters    |
+| [tolower](personalization-modifiers#tolower)                                      | zet alle tekens om naar kleine letters                           |
+| [toupper](personalization-modifiers#toupper)                                      | zet alle tekens om naar grote letters                           |
+| [trim](personalization-modifiers#trim)                                            | trim de spaties en 'endline' tekens aan beide kunten van het inputveld  |
+| [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | deel de inputvelden op die niet langer dan lengte en toevoegen zijn aan het eind. break_words = true staat het opdelen van delen van woorden toe. |
+| [ucfirst](personalization-modifiers#ucfirst)                                      | vervang eerste teken met een hoofdletter           |
+| [urlencode](personalization-modifiers#urlencode)                                  | codeer input om te gebruiken in een url                            |
+| [urldecode](personalization-modifiers#urldecode)                                  | decodeer input om te gebruiken in een url                            |
 
 
 ## base64_encode
 
-With this modifier you encode the data into base64. Note that this
-modifier does not have an effect on arrays.
-Usage:
-```text
-The base64 encoding of {$name} is {$name|base64_encode}.
+Met deze 'modifier codeer je data naar base64. Dit werkt niet op arrays.
+Gebruik:
+```
+The base64 encoding of {$name} is {$name|base64_encode}
 ```
 
 ## base64_decode
 
-With this modifier you can decode base64 encoded information.
-Usage:
-
-```text
+Met deze 'modifier' kun je base64 decoderen.
+Gebruik:
+```
 The decoded information is {$base64encoded|base64_decode}
 ```
 
 ## cat
 
-With this modefier you can concatenate a string to your variable. If the
-variable is an arrary, the string will be used.
-Usage:
-
+Met deze 'modifier' kun je een string samenvoegen met je variabele. Als de variabele een array is, 
+wordt de string gebruikt. 
+Gebruik:
 ```
 {$name|cat:"string"}
 ```
 
 ## count
 
-With this modifier you can count the number of elements in an array. If
-the variable is not an array a 0 will be returned.
-Usage:
-```text
+Met deze 'modifier' kun je het aantal elementen tellen in een array.
+Er wordt een 0 teruggegeven als de variabele geen array is.
+Gebruik:
+```
 {$names|count}
 ```
 
 ## count_characters
 
-With this modifier you can count the number of characters in your text.
-If this modifier is called on an variable that contains an array, 0 is
-returned.
-Usage:
+Met deze 'modifier' kun je het aantal tekens in een tekst tellen.
+Er wordt in dit geval een 0 teruggegeven als de variabele waarop
+deze 'modifier' wordt aangeroepen een array bevat.
+Gebruik:
 ```text
 {$name|count_characters}
 ```
 
 ## count_paragraphs
 
-With this modifier you can count the number of paragraphs in your text.
-If this modifier is applied on an array a 0 is returned.
-Usage:
-```text
-The following text has {$text|count_paragraphs} paragraph.
+Met deze 'modifier' kun je het aantal paragrafen tellen in een tekst.
+Er wordt een 0 teruggegeven als de 'modifier' wordt aangeroepen
+op een array.
+Gebruik:
+```
+The following text has {$text|count_paragraphs} paragraph
 Text:
 {$text}
 ```
 
 ## count_words
 
-With this modifier you can count the number of words in your text. If this
-modifier is applied on an array a 0 is returned.
-Usage:
-
-```text
-"{$text}" has {$text|count_words} words.
+Met deze 'modifier' kun je het aantal woorden tellen in een stuk tekst.
+Hier wordt een 0 teruggegeven als de 'modifier' wordt aangeroepen op een
+array.
+Gebruik:
+```
+"{$text}" has {$text|count_words} words
 ```
 
 ## default
 
-With this modifier you can set a default value that will be used if
-the value does not exist.
-Usage:
-
-```text
+Met deze 'modifier' kun je de 'default' waarde aanroepen die wordt gebruikt
+bij het ontbreken van een bepaalde waarde.
+Gebruik:
+```
 This will always show {$name|default:"something"}
 ```
 
 ## empty
 
-With this modifier you can check if the variable is set or not. It
-will return true if the variable is set or false if it isn't.
-Usage:
-```text
+Met deze 'modifier' kun je checken of een bepaalde variabele is aangegeven.
+Het resultaat evalueert tot true of false.
+Gebruik:
+```
 {if $name|empty}
     Dear customer,
 {else}
@@ -151,46 +135,42 @@ Usage:
 
 ## escape
 
-With this modifier you can escape, or encode, the variable. The form is:
-escape:"value". The possible values are: "html", "url", and "base64". If
-no value is specified "html" is used. On an array this modifier is ingored.
-Usage:
-```text
+Met deze 'modifier' kun je 'escape' aanroepen op een variabele. Deze 'modifier' werkt 
+niet op een arrray. 
+Gebruik:
+```
 {$text|escape:"html"}
-is equal to:
+is gelijk aan:
 {$text|escape}
 ```
 
 ## indent
 
-With this modifier you can add indentation to your text. You can specify
-the amount of indentation and the character(s) that is used for indentation.
-The syntax is indent:num:char, where "num" is the number of characters and
-"char" the character. The default of these is 1 and space respectively.
-On an array this modifier is ignored.
-Usage
-
+Met deze 'modifier' kun je indentatie toevoegen aan je tekst. 
+Je kunt zelfs specificere hoeveel indentatie er nodig is en welke
+tekens indentatie moeten ontvangen. De syntax is indent:num:char en
+de 'default' is 1 en spacing respectievelijk. De 'modifier' wordt 
+genegereerd bij gebruik op een array. 
+Gebruik:
 ```text
 {$text|indent:4:" "}
 ```
 
 ## md5
 
-With this modifier you get the MD5 checksum of your text. If you use it
-on an array, the MD checksum is calculated over the entire array excluding
-the keys.
-Usage:
+Met deze 'modifier' kun je de MD5 checksum van je tekst calculeren. 
+Bij gebruik van een array, wordt de hele array gecalculeerd.
+Gebruik:
 ```text
 {$text|md5}
 ```
 
-
 ## nl2br
 
-This modifier replaces your newlines with the equivalent HTML br tags.
-This enables you to write plain text that will be truncated in html mode.
-On an array this value is ignored.
-Usage:
+Met deze 'modifier' vervang je 'newlines' met HTML br tags.
+Dit stelt je in staat om gewone tekst te schrijven dat op wordt gedeeld
+in HTML modus. Dit werkt bij gebruik van een array.
+Gebruik:
 ```text
 {$text|nl2br}
 ```
@@ -198,98 +178,91 @@ Usage:
 
 ## range
 
-With this modifier you can take a range form your input if your input is
-an array. The form is range:start:end, where start is the start position
-and end is the exclusive end position. If the variable is not an array, the
-value will be ignored.
-Usage:
+Met deze 'modifier' kun je een array als het ware opknippen door zelf 
+de grenzen aan te geven waartussen de range moet vallen. Deze 'modifier' 
+werkt niet als de variabele geen array is.
+Gebruik:
 ```text
 {$array|range:2:5}
 ```
 
 ## regex_replace
 
-With this modifier you can replace parts of your text, base on a [regular expression](@todo),
-with other text. If the variable is an array this value will be ignored.
-Usage
-```text
+Met deze 'modifier' kun je delen van je tekst vervangen met andere tekst,
+gebasseerd op ['regular expressions'](@todo). Dit werkt niet als de 
+variabele een array is.
+Gebruik:
+```
 This will replace each number in the variable string with the string " a number "
 {$text|regex_replace:"\d":" a number "}
 ```
 
 ## replace
 
-With modifier replace you can replace a part of your text with some
-other text. The syntax is: replace:"string1":"string2", where all occurrences
-of "string1" will be replaced by "string2". When the variable is an array,
-this modifier does not have an effect.
-Usage:
-```text
+Met deze 'modifier' kun je een deel van de tekst vervangen met
+andere tekst. De syntax is als volgt: replace:"string1":"string2".
+Dit zorgt ervoor dat overal waar "string1" voorkomt, deze wordt 
+vervangen door "string2". Dit werkt niet als de variabele een array 
+is.
+Gebruik:
+```
 {$text|replace:"hi":"hello"}
 ```
 
 ## sha1
 
-With this modifier you get the SHA1 hash of your text. If the variable is
-an array the SHA1 hash will be calculated over the entire array, excluding
-the keys.
-Usage:
-```text
+Met deze 'modifier' krijg je de 'SHA1 hash' van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de 'keys'.
+Gebruik:
+```
 {$text|sha1}
 ```
 
 ## sha256
 
-With this modifier you get the SHA256 hash of your text. If the variable is
-an array the SHA256 hash will be calculated over the entire array, excluding
-the keys.
-Usage:
-```text
+Met deze 'modifier' krijg je de 'SHA256 hash' van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de 'keys'.
+Gebruik:
+```
 {$text|sha256}
 ```
 
 ## sha512
 
-With this modifier you get the SHA512 hash of your text. If the variable is
-an array the SHA512 hash will be calculated over the entire array, excluding
-the keys.
-Usage:
-```text
+Met deze 'modifier' krijg je de 'SHA512 hash' van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de 'keys'.
+Gebruik:
+```
 {$text|sha512}
 ```
 
 ## spacify
 
-With this modifier you can add a character, or characters, between each
-character in your variable. The syntax is spacify:separator, where the
-default separator is space. If the variable is an array the modifier will
-be ignored.
-Usage:
-```text
+Met deze 'modifier' kun je een teken of tekens toevoegen tussen elk teken
+in je variabele. De syntax is als volgt: spacify:separator, waar de 'default'
+scheiding een spatie is. Dit werkt niet als de variabele een array is.
+Gebruik:
+```
 {$text|spacify:"."}
 ```
 
 ## strlen
 
-With this modifier the length of the text in a variable can be obtained.
-If the variable is an array a 0 will be returned.
-Usage:
-```text
+Met deze 'modifier' kun de lengte van de variabele worden achterhaald.
+Bij toepassing op een array, wordt de waarde 0 teruggegeven.
+Gebruik:
+```
 {$text|strlen}
 ```
 
 ## strstr
 
-With this modifier you can search for a string in you variable and get the
-first occurrence plus the rest of your variable, or you can get everything
-in the variable till the searched string. The syntax is: strstr:string:before,
-where string is the searched string, and before is a boolean, default = false.
-If the boolean is true, you get what is in the variable before the first
-occurrence of string. If it is false you get what is in the variable from
-the first occurrence of string onwards. If the variable is an array the
-modifier is ignored.
-Usage:
-```text
+Met deze 'modifer' kun je naar een string zoeken in de variabele en het 
+punt aangeven van waar je de rest van de variabele terug wilt hebben.
+Dit kun het gedeelte voor de string zijn, maar ook het gedeelte vanaf de 
+gevonden string. Deze 'modifier' werkt niet op een array.
+Gebruik:
+```
 If the variable holds "Hello world!", this will print Hello, {$variable|strstr:" ":true}
 and this will print world!, {$variable|strstr:"w":false}, just like this
 {$variable|strstr:"w"}
@@ -297,12 +270,11 @@ and this will print world!, {$variable|strstr:"w":false}, just like this
 
 ## substr
 
-With this modifier you can obtain a substring from you variable. The syntax
-is substr:start:length, where start is the starting position in the string
-(zero indexed) and length is the length you want to obtain. The default
-for length is the the length of the string minus the starting position.
-Usage:
-```text
+Met deze 'modifier' kun je een substring van een variabele opvragen.
+De syntax is als volgt: substr:start:length. Start is de beginpositie
+(zero indexed) en de lengte is de lengte die je wilt opvragen. 
+Gebruik:
+```
 If the variable is "0123456789" this will print 2 to 9
 {$variable|substr:2}
 and this will print 456
@@ -311,68 +283,64 @@ and this will print 456
 
 ## tolower
 
-With this modifier you can change all character in your text to lowercase
-characters.
-Usage:
-```text
+Met deze 'modifier' kun je alle tekens naar kleine letters omzetten.
+Gebruik:
+```
 {$text|tolower}
 ```
 
 ## toupper
 
-With this modifier you can change all characters in your text to uppercase
-characters.
-Usage:
-```text
+Met deze 'modifier' kun je alle tekens naar hoofdletters omzetten.
+Gebruik:
+```
 The next part looks like it is shouted {$text|toupper}
 ```
 
 ## trim
 
-With this modifier you can trim trailing white space and new line characters
-from your text. The characters that are trimmed are: spaces, tabs, newlines,
-carriage returns, vertical tabs, and end of strings.
-Usage:
-```text
-{$text}
+Met deze 'modifier' kun je ongewenste spaties en 'new line characters' in je
+tekst trimmen. Een overzicht van tekens die worden getrimd: spaties, tabs, 
+'newlines', regelterugloop, verticale tabs en einde van strings.
+Gebruik:
+```
+{$text|trim}
 ```
 
 ## truncate
 
-With this modifier it is possible to truncate your text to a certain length.
-If the text is truncated it is possible to add some characters to indicate
-that the text is truncated. These extra characters are counted for the
-truncation length as well. You can also specify whether it is allowed to
-break words or not. The syntax is: truncate:length:etc:break_words,
-where length has a default of 80, etc (the replacement), has a default of
-... and break_words has as default false.
-
-Usage:
-```text
+Met deze 'modifier' is het mogelijk om tekst af te knippen en tot een bepaalde
+lengte terug te brengen. Je kunt wat tekens toevoegen om aan te geven dat de
+tekst is afgeknipt. Deze worden bij de lengte van het afknippen opgeteld. 
+Je kunt ook opgeven of het toegestaan is om worden af te breken of niet.
+De syntax is als volgt: truncate:length:etc:break_words. De lengte heeft
+een 'default' van 80, etc (de vervanging) heeft een'default' van ...
+en break_words heeft een 'default' van false.
+Gebruik:
+```
 {$text|truncate:50:"....":true}
 ```
 
 ## ucfirst
 
-With this modifier you replace the first character of your text with an
-uppercase character.
-Usage:
-```text
+Met deze 'modifer' kun je het eerste teken van de tekst vervangen met een
+hoofdletter teken.
+Gebruik:
+```
 {$name|ucfirst}
 ```
 
 ## urlencode
 
-With this modifier you can url encode your text.
-Usage:
-```text
+Met deze 'modifier' kun je tekst 'url encoden'. 
+Gebruik:
+```
 {$text|urlencode}
 ```
 
 ## urldecode
-
-With this modifier you can url decode your text.
-Usage:
-```text
+Met deze 'modifier' kun je tekst 'url decoden'.
+Gebruik:
+```
 {$text|urldecode}
 ```

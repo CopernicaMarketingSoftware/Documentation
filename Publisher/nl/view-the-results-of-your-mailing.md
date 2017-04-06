@@ -1,3 +1,5 @@
+# Statistieken: Mailing statistieken
+
 Heb je je eerste mailing verstuurd en ben je nieuwsgierig naar de
 resultaten? Van alle mailing die je verstuurt met Copernica wordt
 bijgehouden wat de resultaten zijn. Je kan dus exact achterhalen wie de
@@ -80,8 +82,8 @@ totaal altijd **100%**.
 
 ![](../images/sjabloon_clip_image001.png)
 
-**Kerncijfers vs. het dominante resultaat**\
- Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
+**Kerncijfers vs. het dominante resultaat**
+Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
 impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks.
 
@@ -114,3 +116,6 @@ zijn Outlook, Hotmail, Gmail.
 Dit gaat feitelijk over het deel na het apenstaartje in het e-mailadres
 van de geadresseerden. Hier kan je dus zowel @hotmail.com en
 @slagerijvanvliet.nl domeinen terugvinden.
+
+## Meer informatie
+* [Publisher statistieken](./statistics)
