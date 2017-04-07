@@ -10,12 +10,18 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de email conditie.
 
 ## Datum eigenschappen
+
+De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
+binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
+worden in YYYY-MM-DD HH:MM:SS formaat.
+
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
 * **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
 * **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Mailing eigenschappen
+
 * **match-mode**: Matchmode van de mailing conditie. Zie [matchmode tabel](rest-conditie-type-mailing#match-modes)
 * **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
 "profile", "subprofile", anything" als beide mag.
@@ -46,6 +52,7 @@ Mogelijke waarden: Error code, "mailmessage", "unreachable", "nocontent", "nohos
 voor een onoplosbare error.
 
 ## Required results
+
 De volgende tabel bevat de mogelijke waarden voor het required result en 
 hun omschrijvingen.
 
@@ -64,7 +71,25 @@ hun omschrijvingen.
 | nothing         | Er is geen resultaat geregistreerd.               |
 | anything        | Er is een, welk dan ook, resultaat geregistreerd. |
 
+## Voorbeeld
+
+Met het resultaat van een email kun je heel makkelijk selecties maken. Je 
+kunt er bijvoorbeeld voor kiezen aparte selecties te maken voor mensen 
+die een error krijgen bij het ontvangen en de mensen die geen errors krijgen. 
+Je kunt dit doen met de **required-result** instelling, waar je de waarden 
+op "error" en "noerror" zou moeten zetten, respectievelijk.
+
+Je kunt ook een selectie aanmaken voor mensen die op een specifieke URL 
+hebben geklikt. Zo kun je bijvoorbeeld, als de URL naar een product linkt, 
+later nog een mail sturen met meer informatie over dit product. Zo verhoog 
+je de kans dat je jouw klanten overtuigt. Je kunt dit doen met de volgende 
+waarden voor de email conditie.
+
+* **required-result**: "clickonurl"
+* **clicked-url**: \<De URL van jouw product!>
+
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type sms](rest-condition-type-sms)

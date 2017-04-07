@@ -10,6 +10,7 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de doublefield conditie.
 
 ## Individuele eigenschappen
+
 * **match-mode**: Match modus van de doublefield conditie. Zie de [match mode tabel](./rest-conditie-type-doublefield#match-modes)
 * **fields**: De combinatie van velden die gecheckt moet worden.
 
@@ -27,7 +28,18 @@ omschrijvingen.
 | match_last_profiles          | Match alle profielen die later niet voorkomen       |
 | match_toberepeated_profiles  | Match alle profielen die ook voorkomen een hoger ID |
 
+## Voorbeeld
+
+Laten we zeggen dat we alleen de mensen willen selecteren met een unieke naam. 
+We kunnen deze selectie maken door de velden voor de voornaam en achternaam te 
+bekijken met de juiste matchmode. Om deze mensen te omschrijven kunnen we de volgende 
+waarden gebruiken:
+
+* **match-mode**: match_unique profiles
+* **fields**: \[voornaam, achternaam\]
+
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type veld](rest-condition-type-field)

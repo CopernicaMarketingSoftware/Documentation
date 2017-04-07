@@ -10,6 +10,7 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de field conditie.
 
 ## Individuele eigenschappen
+
 * **comparison**: Vergelijk type voor fieldconditie. Zie de [comparison types tabel](rest-conditie-type-field#comparison-types)
 * **field**: Veld om te vergelijken met waarde
 * **value**: Waarde om mee te vergelijken. (Aanpassing hiervan reset **other-field**)
@@ -34,7 +35,19 @@ omschrijvingen.
 |regexp            | Regex          |
 |is-numeric        | Is numeriek    |
 
+## Voorbeelden
+
+Laten we aannemen dat we een product hebben dat alleen kinderen leuk vinden 
+en dat we weten welke profielen kinderen hebben. Dit wordt aangegeven in het 
+veld "has_children" in de velden van de database profielen. We kunnen nu een 
+specifieke doelgroep emailen door een selectie te maken, namelijk de ouders, 
+met de field conditie. We gebruiken de volgende waarden:
+
+* **field**: "has_children"
+* **value**: "yes"
+
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type interesse](rest-condition-type-interest)

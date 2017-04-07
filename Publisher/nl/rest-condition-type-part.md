@@ -10,6 +10,7 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de part conditie.
 
 ## Individuele eigenschappen
+
 * **begin**: Het eerst geselecteerde profiel als een getal of percentage. 
 Je kunt hier een negatieve waarde gebruiken om vanaf het eind te beginnen 
 met tellen.
@@ -17,5 +18,6 @@ met tellen.
 * **fields**: Alle velden gebruikt in deze conditie.
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)

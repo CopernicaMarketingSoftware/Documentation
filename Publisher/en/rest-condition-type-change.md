@@ -10,12 +10,18 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the change condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: The timestamp before which the change must have occured. 
 * **after-time**: The timestamp after which the change must have occured. 
 * **before-mutation**: The beforemutation (time difference) of the changecondition.
 * **after-mutation**: The aftermutation (time difference) of the changecondition.
 
 ## Individual properties
+
 * **change-type**: The changetype of the changecondition. See the [change types table](./rest-condition-type-change#change-types)
 * **field**: Database field to be changed/not changed.
 * **interest**: Database interest to be changed/not changed.
@@ -50,14 +56,10 @@ their descriptions.
 Emails can be personalized in many ways. Therefore it is important to keep 
 track of the information about the user and use it in a smart way.
 With the change condition we can use changes in the database to change a 
-selection or miniselection. If we know that a user likes "football" for 
-example, we can show them "football" related items to buy. However, if a 
-user loses this interest the items that were previously useful are not anymore.
-To remove the user from the selection that contains football fanatics and 
-place them into the non-football fans we would use the following condition:
-
-* **change-type**: lostinterest
-* **interest**: "football"
+selection or miniselection. If a user has just created a profile they might 
+need some help navigating. You can send them an email to help by creating a 
+selection. This selection can be made with the change condition by setting 
+**change-type** to "new".
 
 ## More information
 * [Fetch rule conditions](rest-get-rule-conditions)

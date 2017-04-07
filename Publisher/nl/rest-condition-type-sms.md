@@ -11,12 +11,18 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de sms conditie.
 
 ## Datum eigenschappen
+
+De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
+binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
+worden in YYYY-MM-DD HH:MM:SS formaat.
+
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
 * **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
 * **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Mailing eigenschappen
+
 * **match-mode**: Matchmode van de mailing conditie. Zie [matchmode tabel](rest-conditie-type-mailing#match-modes)
 * **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
 "profile", "subprofile", anything" als beide mag.
@@ -37,7 +43,19 @@ van **number** te vergelijken. Ondersteunde operatoren:
 | match_profiles_that_received_nothing      | Match alle profielen die niets ontvangen hebben.                       |
 | match_profiles_that_received_not_document | Match alle profielen die niet een specifiek document ontvangen hebben. |
 
+## Voorbeeld
+
+Laten we zeggen dat we per ongeluk een verkeerd document hebben gestuurd 
+naar een aantal klanten en we hier een mail achteraan willen sturen. Als 
+de originele selectie nog bestaat is het makkelijker om die te gebruiken, 
+maar in het geval dat deze niet meer bestaat is het mogelijk de sms conditie 
+te gebruiken met de volgende waarden:
+
+* **document**: /<Verkeerd document>
+* **match-mode**: "match_profiles_that_received_document"
+
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type email](rest-condition-type-email)

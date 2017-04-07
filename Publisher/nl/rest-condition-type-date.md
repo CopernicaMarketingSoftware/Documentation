@@ -10,17 +10,24 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de date conditie.
 
 ## Datum eigenschappen
+
+De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
+binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
+worden in YYYY-MM-DD HH:MM:SS formaat.
+
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
 * **before-mutation**: De beforemutation (tijdverschil) voor de date conditie.
 * **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Individuele eigenschappen
+
 * **field**: Het database veld van de dateconditie.
 * **compare-mode**: Vergelijk modus van de dateconditie. Mogelijke waarden: 
 "full" als de hele datum moet matchen, "ignoreyear" als het jaar anders mag zijn.
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type aanpassing](rest-condition-type-change)
