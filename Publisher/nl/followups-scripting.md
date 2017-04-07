@@ -49,3 +49,7 @@ Overigens, als je de broncode van een door Copernica verstuurd bericht inspectee
 dan zul je hier nooit een data-script attribuut in aantreffen. Het data-script 
 attribuut wordt namelijk uit de mail gefilterd voordat het bericht wordt verstuurd. 
 Maar Copernica slaat het script wel op en voert het uit als op de link wordt geklikt.
+
+## Meer informatie
+
+* [Followups algemeen](./followups)

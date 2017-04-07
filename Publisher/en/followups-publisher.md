@@ -8,16 +8,16 @@ You can create an **infinite number of follow-up actions**, and there is
 **no limitation** to the number of actions in a chain. Of course you can
 also combine follow-ups for different parts:
 
--   **Database follow-up actions.** The action is triggered by some
+-   [**Database/collection follow-up actions**](followups-publisher-databases-and-collections): The action is triggered by some
     event in the **database** and/or **collection**. Such as a profile
     that has been modified or a removed subprofile. \
      *Example: send a notification when a new profile is created in the
     database*
--   **Web form follow-ups.** The action is triggered for example when
+-   [**Web form follow-ups**](followups-publisher-web-forms): The action is triggered for example when
     the web form is submitted, or only when a specific answer has been
     given. \
     *Example: Send a confirmation mail to the submitter of a web form.*
--   **Document follow-ups.** Actions which are triggered by a response
+-   [**Document follow-ups**](followups-publisher-mailing): Actions which are triggered by a response
     to a mailing. You can automate campaigns by setting follow-ups to
     respond to certain behaviour of recipients, such as clicks or
     views.\
@@ -85,6 +85,7 @@ more information [here](./followups-publisher-stop).
 
 ## More information
 
+* [Followups general](./followups)
 * [Conditions for follow-ups](./followups-publisher-conditions)
 * [Stop follow-ups](./followups-publisher-stop).
 * [Extra variables for followups](./followups-publisher-extra-variables)

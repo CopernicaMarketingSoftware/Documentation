@@ -1,3 +1,5 @@
+# Followups for mailings
+
 You can create automated responses on your email documents. Each time a
 document is sent, someone clicked or registered an impression, a
 follow-up action can be activated for this destination. You set under
@@ -9,8 +11,7 @@ under Emailings, then choose **Follow-ups...** from the *Document* menu.
 Your follow-ups can also be accessed from the **Follow-ups** tab at the
 document.
 
-Cause and action
-----------------
+## Cause and action
 
 A follow-up action consist of two parts: the cause and the action. When
 creating a new follow-up action, you are first asked to choose the
@@ -38,8 +39,7 @@ action:
     if the follow-up action is triggered. This may be sending an email
     to the profile or something else.
 
-Additional conditions for the follow-up actions
------------------------------------------------
+## Additional conditions for the follow-up actions
 
 Sometimes you want to prevent that a follow-up action is scheduled or
 executed. For example, the follow-up should only be scheduled when the
@@ -56,12 +56,9 @@ between **schedule conditions** and**action conditions.**
 -   Create an **action condition** to ensure that the follow-up action
     is executed under certain conditions only
 
-### Further reading
+## More information
 
--   [Conditions for follow-up
-    actions](./automate-campaigns-with-follow-up-actions.md)
--   [More information on follow-up
-    actions](./conditions-for-follow-ups.md)
--   [Follow-up
-    manager](./follow-up-manager.md)
+* [Followups in publisher](./followups-publisher)
+* [Followups for mailings in publisher](./followups-publisher-mailing)
+* [Followups for web forms in publisher](./followups-publisher-web-forms)
 
