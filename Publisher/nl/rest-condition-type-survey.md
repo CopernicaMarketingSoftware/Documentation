@@ -10,12 +10,18 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de lastcontact conditie.
 
 ## Datum eigenschappen
+
+De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
+binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
+worden in YYYY-MM-DD HH:MM:SS formaat.
+
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
 * **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
 * **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Individuele eigenschappen
+
 * **submitter**: Vereiste submitter van de enquête. Zie de [required submitters tabel](rest-conditie-type-survey#required-submitters)
 * **survey-name**: Naam van enquête om indien-status te vergelijken.
 
@@ -33,6 +39,17 @@ en hun omschrijvingen.
 | noprofile          | Enquête werd niet ingediend door een profiel.      |
 | nosubprofile       | Enquête werd niet ingediend door een subprofiel.   |
 
+## Voorbeeld
+
+Stel dat je een belangrijke enquête hebt verstuurd, maar nog niet van alle 
+profielen in je database een reactie hebt gekregen. Je kunt dan een selectie 
+maken met de survey condition van de mensen die je een reminder wilt sturen. 
+Je gebruikt hiervoor de volgende waarden:
+
+* **survey-name**: /<Enquête waarvoor je een reminder wilt versturen.>
+* **submitter**: "none"
+
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
