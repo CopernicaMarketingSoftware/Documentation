@@ -1,3 +1,5 @@
+# Follow-ups in Publisher
+
 Follow-up actions are automatic responses to a certain event. This can
 be for instance a click on a specific hyperlink, or a web from that is
 submitted.
@@ -17,7 +19,7 @@ You can create an **infinite number of follow-up actions**, and there is
 also combine follow-ups for different parts:
 
 -   **Database follow-up actions.** The action is triggered by some
-    event in the **database**and/or **collection**. Such as a profile
+    event in the **database** and/or **collection**. Such as a profile
     that has been modified or a removed subprofile. \
      *Example: send a notification when a new profile is created in the
     database*
