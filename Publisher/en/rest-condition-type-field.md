@@ -3,18 +3,21 @@
 Conditions have different types of properties. Some concern the timeframe in 
 which something happened (date properties), others concern mailing information 
 (mailing properties) and others concern just the specific type of condition 
-(individual properties). This article is about the properties of the 
-field condition.
+(individual properties). All of these properties together combine to a condition 
+for which all properties should be satisfied to satisfy the condition as a whole.
+Only one condition needs to be satisfied to satisfy a rule.
+
+This article is about the properties of the field condition.
 
 ## Individual properties
 * **comparison**: Comparison type for fieldcondition. Possible values: 
-"equals", "not equals", "contains", "not contains", "less", "more", "is email", 
+"equals", "not equals", "contains", "not contains", "less", "more", "is_email", 
 "regexp" and "is-numeric".
 * **field**: Field to compare with value
-* **value**: Value to compare with field (setting this resets other-field)
-* **other-field**: Other field to compare "field" with. If this variable is set 
+* **value**: Value to compare with field (setting this resets **other-field**)
+* **other-field**: Other field to compare **field** with. If this variable is set 
 "value" will not be used.
-* **numeric-comparison**: Boolean value to indicate whether value is done numerically or not.
+* **numeric-comparison**: Boolean value to indicate whether value comparison is done numerically or not.
 
 ## Example
 
