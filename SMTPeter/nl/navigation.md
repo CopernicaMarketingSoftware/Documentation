@@ -10,7 +10,7 @@
     * [Overige delivery settings](rest-send-advanced)
 * [Overige REST calls](rest-api)
     * [Gearchiveerde berichten](rest-messages)
-    * [Events (kliks, opens, etc) opvragen](rest-events)
+    * [Opvragen van 'events'](rest-events)
     * [Logfiles opvragen](rest-logfiles)
     * [DMARC reports opvragen](rest-dmarc)
     * [Templates beheren](rest-templates)
