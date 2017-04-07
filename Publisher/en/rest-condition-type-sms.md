@@ -35,6 +35,16 @@ format.
 of received messages by the profile/subprofile. Possible values: 
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
+## Example
+
+Let's say we have accidentally send a wrong document to several of our 
+customers and we want to send another mail to apologize (and we don't 
+have the original selection anymore, you could use that as well). We 
+could then select using the sms condition with the following values:
+
+* **document**: /<Wrong document>
+* **match-mode**: "match_profiles_that_received_document"
+
 ## More information
 
 * [Fetch rule conditions](rest-get-rule-conditions)
