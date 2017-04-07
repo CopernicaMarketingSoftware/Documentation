@@ -1,3 +1,5 @@
+# Followups for web forms
+
 You can create automated responses on your web forms. Each time the web
 form is submitted, a follow-up action can be triggered. You set under
 which conditions the follow up should be triggered, and which action
@@ -8,8 +10,7 @@ under Content, then choose **Follow-ups...** from the web form menu.
 Your follow-ups are also accessed from the **Follow-ups** tab at the web
 form.
 
-Cause and action
-----------------
+## Cause and action
 
 A follow-up action consist of two parts: the cause and the action. When
 creating a new follow-up action, you are first asked to choose the
@@ -38,8 +39,7 @@ action:
     if the follow-up action is triggered. This may be sending an email
     to the profile or something else.
 
-Additional conditions for the follow-up actions
------------------------------------------------
+## Additional conditions for the follow-up actions
 
 Sometimes you want to prevent that a follow-up action is scheduled. For
 example, the follow-up should only be scheduled when the submitter of
@@ -55,13 +55,9 @@ between **schedule conditions** and**action conditions.**
 -   Create an **action condition** to ensure that the follow-up action
     is executed under certain conditions only
 
-More information
-----------------
+## More information
 
--   [Conditions for follow-up
-    actions](./automate-campaigns-with-follow-up-actions.md)
--   [More information on follow-up
-    actions](./conditions-for-follow-ups.md)
--   [Follow-up
-    manager](./follow-up-manager.md)
+* [Followups in publisher](./followups-publisher)
+* [Followups for mailings in publisher](./followups-publisher-mailing)
+* [Followups for databases and collections in publisher](./followups-publisher-databases-and-collections)
 
