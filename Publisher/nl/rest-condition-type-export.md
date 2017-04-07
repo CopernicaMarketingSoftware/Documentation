@@ -12,8 +12,8 @@ Dit artikel gaat over de verschillende eigenschappen van de export conditie.
 ## Datum eigenschappen
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
-* **before-mutation**: Datemutatie (tijdverschil) voor mails die te vroeg verstuurd zijn.
-* **after-mutation**: Datemutatie (tijdverschil) voor mails die te laat verstuurd zijn.
+* **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
+* **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Individuele eigenschappen
 * **include-never-exported-profiles**: Boolean value om aan te geven of 
