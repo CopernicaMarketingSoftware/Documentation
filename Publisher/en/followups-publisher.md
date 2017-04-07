@@ -88,3 +88,4 @@ more information [here](./followups-publisher-stop).
 * [Conditions for follow-ups](./followups-publisher-conditions)
 * [Stop follow-ups](./followups-publisher-stop).
 * [Extra variables for followups](./followups-publisher-extra-variables)
+* [Blog: Three signs you're ready to automate your email campaigns](https://www.copernica.com/en/blog/3-signs-youre-ready-to-automate-your-email-campaigns)
