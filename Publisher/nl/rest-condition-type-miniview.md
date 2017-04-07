@@ -10,11 +10,13 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de miniview conditie.
 
 ## Individuele eigenschappen
+
 * **mini-view**: Miniview geassocieerd met de conditie.
 * **min-subprofiles**: Minimum hoeveelheid subprofielen in de miniview
 * **max-subprofiles**: Maximum hoevelheid subprofielen in de miniview
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type referview](rest-condition-type-referview)

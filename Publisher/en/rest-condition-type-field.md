@@ -10,6 +10,7 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the field condition.
 
 ## Individual properties
+
 * **comparison**: Comparison type for fieldcondition. Possible values: 
 "equals", "not equals", "contains", "not contains", "less", "more", "is_email", 
 "regexp" and "is-numeric".
@@ -23,10 +24,12 @@ This article is about the properties of the field condition.
 
 Let's assume, for the purposes of the example, that we have a product only 
 children like and that we know which of our customers have children. This is 
-indicated in the field "hasChildren" in the fields of the database profiles. 
+indicated in the field "has_children" in the fields of the database profiles. 
 Now we can pick a specific target for marketing, namely parents, using the field 
-condition. If we set **field** to "hasChildren" and the **value** to "yes" 
-we can make a selection of only parents and email this selection.
+condition. We use the following values:
+
+* **field**: "has_children"
+* **value**: "yes"
 
 ## More information
 * [Fetch rule conditions](rest-get-rule-conditions)

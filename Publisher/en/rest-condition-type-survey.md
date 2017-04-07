@@ -10,12 +10,18 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the survey condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
 * **before-mutation**: The beforemutation (time difference) for the surveycondition.
 * **after-mutation**: The aftermutation (time difference) for the surveycondition.
 
 ## Individual properties
+
 * **submitter**: Required submitter of the survey. See the [required submitters table](rest-condition-type-survey#required-submitters)
 * **survey-name**: Name of survey to check submission for.
 
@@ -34,5 +40,6 @@ and their description.
 | nosubprofile       | Survey was not submitted by subprofile.      |
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)

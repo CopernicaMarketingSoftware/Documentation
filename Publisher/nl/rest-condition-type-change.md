@@ -10,12 +10,18 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de change conditie.
 
 ## Datum eigenschappen
+
+De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
+binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
+worden in YYYY-MM-DD HH:MM:SS formaat.
+
 * **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
 * **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
 * **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
 * **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Individuele eigenschappen
+
 * **change-type**: Het change type van de changeconditie. Zie de [change types tabel](./rest-conditie-type-change#change-types)
 * **field**: Database veld om wel/niet aan te passen
 * **interest**: Database interesse om wel/niet aan te passen
@@ -44,6 +50,16 @@ hun beschrijvingen.
 | interest             | Interesses veranderd              |
 | gotinterest          | Nieuwe interesse toegevoegd       |
 | lostinterest         | Interesse verloren                |
+
+## Voorbeeld
+
+Emails kunnen op veel manieren gepersonalizeerd worden. Het is daarom 
+belangrijk om informatie over de gebruiker bij te houden en slim te 
+gebruiken. Met de change conditie kunnen we aanpassingen in de database 
+gebruiken om selecties en miniselecties aan te passen. Je kunt dit bijvoorbeeld 
+gebruiken om nieuwe gebruikers een mailtje te sturen om ze wegwijs te maken. 
+Je kunt deze selectie maken met de change conditie door **change-type** op 
+"new" te zetten.
 
 ## Meer informatie
 * [Regel condities opvragen](rest-get-rule-conditions)

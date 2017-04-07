@@ -10,12 +10,18 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the sms condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
 * **before-mutation**: The beforemutation (time difference) for the smscondition.
 * **after-mutation**: The aftermutation (time difference) for the smscondition.
 
 ## Mailing properties
+
 * **match-mode**: Matchmode of the mailing condition. Possible values: 
 "match_profiles_that_received_something", "match_profiles_that_received_document", 
 "match_profiles_that_received_nothing", "match_profiles_that_received_not_document"
@@ -30,6 +36,7 @@ of received messages by the profile/subprofile. Possible values:
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type email](rest-condition-type-email)
