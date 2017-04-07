@@ -1,7 +1,9 @@
+# Tutorial: Send an email when a customers spends over 1000 euros.
+
 This tutorial explains how you can automatically send an email to
 customers that spent over 1000 euros in your webshop.
 
-For this tutorial you will need a database, with a collection wherin you
+For this tutorial you will need a database, with a collection wherein you
 store information about purchased products at the profile. An email will
 be sent to the profile when the total amount of money spent by the
 customer, exceeds the 1000 euros.

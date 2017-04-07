@@ -1,3 +1,5 @@
+# SMS mailings
+
 Copernica can be used for sending mass mailings with SMS. It is also
 possible to send individual messages, for example, in a follow-up
 action. SMS messages can be personalized using Smarty code.

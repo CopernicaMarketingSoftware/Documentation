@@ -1,3 +1,5 @@
+# Sending mailings
+
 The first time you send an emailing can be an exciting moment. Will it
 all go as planned? Is your emailing going to be delivered to the people
 intended and how will they respond? Luckily you arrived at the right
