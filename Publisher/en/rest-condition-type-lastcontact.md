@@ -35,6 +35,22 @@ is required.
 * **priority**: Get priority of selected contacts.
 * **contains**: Search string for searching contact report contents.
 
+## Example
+
+Let's say our new customer service employee, Bob, has been working here 
+since one month and we want to evaluate his performance. Then we can 
+make a selection of customers he has contacted at least three times, for 
+an accurate representation of him, and ask them to evaluate their contact. 
+We can do this with the following values for the lastcontact condition:
+
+* **after-time**: /<Today - 1 month in YYYY-MM-DD HH:MM:SS format>
+* **min-closed**: 3
+* **contains**: "Bob"
+
+We only search for the relevant time period and documents that contain Bob. 
+Then we also look for profiles that have been in contact with him at least 
+three times.
+
 ## More information
 
 * [Fetch rule conditions](rest-get-rule-conditions)

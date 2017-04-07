@@ -43,6 +43,17 @@ van **number** te vergelijken. Ondersteunde operatoren:
 | match_profiles_that_received_nothing      | Match alle profielen die niets ontvangen hebben.                       |
 | match_profiles_that_received_not_document | Match alle profielen die niet een specifiek document ontvangen hebben. |
 
+## Voorbeeld
+
+Laten we zeggen dat we per ongeluk een verkeerd document hebben gestuurd 
+naar een aantal klanten en we hier een mail achteraan willen sturen. Als 
+de originele selectie nog bestaat is het makkelijker om die te gebruiken, 
+maar in het geval dat deze niet meer bestaat is het mogelijk de sms conditie 
+te gebruiken met de volgende waarden:
+
+* **document**: /<Verkeerd document>
+* **match-mode**: "match_profiles_that_received_document"
+
 ## Meer informatie
 
 * [Regel condities opvragen](rest-get-rule-conditions)

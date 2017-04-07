@@ -36,6 +36,23 @@ selectie nodig is.
 * **priority**: Vraag prioriteit van geselecteerde contacten op.
 * **contains**: Zoek string voor het doorzoeken van contact rapporten.
 
+## Voorbeeld
+
+Laten we zeggen dat we net een nieuwe aanwinst hebben bij de klantenservice: 
+Medewerker Bob. Hij werkt hier net een maand en we willen zien of hij zijn 
+klanten goed helpt. We kunnen dan een selectie maken van profielen die 
+tenminste drie keer met hem in contact zijn geweest (voor een duidelijker beeld) 
+en deze profielen vragen om een evaluatie. We doen dit met de volgende 
+waarden.
+
+* **after-time**: /<Vandaag - 1 maand in YYYY-MM-DD HH:MM:SS format>
+* **min-closed**: 3
+* **contains**: "Bob"
+
+We zoeken hier alleen voor minstens drie keer contact en alleen voor de 
+periode waarin Bob gewerkt heeft. We zoeken tevens naar zijn naam in de 
+contact rapporten om te checken of ze wel echt door hem geholpen zijn.
+
 ## Meer informatie
 
 * [Regel condities opvragen](rest-get-rule-conditions)
