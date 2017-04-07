@@ -39,6 +39,16 @@ en hun omschrijvingen.
 | noprofile          | Enquête werd niet ingediend door een profiel.      |
 | nosubprofile       | Enquête werd niet ingediend door een subprofiel.   |
 
+## Voorbeeld
+
+Stel dat je een belangrijke enquête hebt verstuurd, maar nog niet van alle 
+profielen in je database een reactie hebt gekregen. Je kunt dan een selectie 
+maken met de survey condition van de mensen die je een reminder wilt sturen. 
+Je gebruikt hiervoor de volgende waarden:
+
+* **survey-name**: /<Enquête waarvoor je een reminder wilt versturen.>
+* **submitter**: "none"
+
 ## Meer informatie
 
 * [Regel condities opvragen](rest-get-rule-conditions)

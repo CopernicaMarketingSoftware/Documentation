@@ -35,6 +35,20 @@ is required.
 * **priority**: Get priority of todo's.
 * **contains**: Search string the todo should contain.
 
+## Example
+
+Let's say there is an update to your software you want to inform the users 
+about. You put this in the todo's some time ago, but the document is only 
+finished now. You want to use the todo's you made previously to select the 
+customers you needed to email. You can do this with the todo condition with 
+the following values:
+
+* **match_type**: "match_intelligent"
+* **contains**: \<name of document>
+
+By using "match_intelligent" you ensure that typos or spread out words don't 
+cause you to miss any of the todo's.
+
 ## More information
 
 * [Fetch rule conditions](rest-get-rule-conditions)

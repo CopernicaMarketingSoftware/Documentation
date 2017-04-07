@@ -36,6 +36,19 @@ selectie nodig is.
 * **priority**: Vraag prioriteit van geselecteerde todo's op.
 * **contains**: Zoek string voor het doorzoeken van todo's.
 
+## Voorbeeld
+
+Stel dat je een update hebt uitgebracht voor je software en je klanten wil 
+informeren. Het document voor de mail was nog niet klaar, maar je had er 
+wel todo's voor aangemaakt. Nu het document klaar is wil je een selectie maken 
+met de todo's. Je kunt dit doen met de todo condition met de volgende waarden:
+
+* **match_type**: "match_intelligent"
+* **contains**: \<naam van document>
+
+Door "match_intelligent" te gebruiken voorkom je dat documenten niet 
+gevonden worden door typo's of gespreide woorden.
+
 ## Meer informatie
 
 * [Regel condities opvragen](rest-get-rule-conditions)
