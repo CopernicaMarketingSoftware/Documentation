@@ -49,7 +49,6 @@
     * [Special functions and tags](./special-functions-and-tags.md)
     * [Campaign results and statistics](./campaign-results-and-statistics.md)
     * [Print, PDF and fax](./print-pdf-and-fax.md)
-    * [Automate campaigns](./automate-campaigns.md)
     * [Personalize campaigns](./personalize-campaigns.md)
     * [SMS and mobile](./sms-and-mobile.md)
     * [User and account management](./user-and-account-management.md)

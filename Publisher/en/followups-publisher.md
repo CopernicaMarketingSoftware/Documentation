@@ -4,16 +4,6 @@ Follow-up actions are automatic responses to a certain event. This can
 be for instance a click on a specific hyperlink, or a web from that is
 submitted.
 
- Follow-up actions are used to automate campaigns. Some examples of
-campaign types where follow-ups are used:
-
--   [Double opt in for newsletter
-    subscribers](./create-a-double-optin-for-new-subscribers.md)
--   [Whitepaper
-    downloads](./how-to-make-a-white-paper-marketing-campaign.md)
-    (to generate new leads)
--   And many more...
-
 You can create an **infinite number of follow-up actions**, and there is
 **no limitation** to the number of actions in a chain. Of course you can
 also combine follow-ups for different parts:
@@ -52,7 +42,7 @@ the bottom left of the dialog window.
 
 ![New follow up action](../images/newfollowup.png)
 
-### The cause, the action and the delay
+## The cause, the action and the delay
 
 Characteristic of a follow-up action is that it always has a **cause**
 (e.g. a click on a hyperlink) and an **effect**. (e.g. send a formatted
@@ -72,20 +62,29 @@ you will hopefully manage to succeed with this pretty easily.
 
 *Screenshot of the database follow-up editor*
 
-### Conditions to constraint the scheduling or the execution of a follow-up
+## Conditions to constraint the scheduling or the execution of a follow-up
 
 You can create extra conditions for both the cause and the effect of a
 follow-up. You can use conditions to be sure that a follow-up action is
 performed only when someone still meets certain requirements at the time
 of execution. Or that the follow-up action will be scheduled only if the
-person meets the conditions on that very moment.
+person meets the conditions on that very moment. You can read more about 
+it [here](./followups-publisher-conditions).
 
-We distinguish two types of follow-up conditions:
+## Removing followups
 
--   **Scheduling condition**: to constraint the activation of the follow
-    up.
--   **Execution condition**: to constraint the execution of the
-    follow-up (the can be weeks or years later).
+If you want to delete followups or stop them temporarily you can find 
+more information [here](./followups-publisher-stop).
 
-[Read more about conditions for
-follow-ups](./conditions-for-follow-ups.md)
+## Tutorials
+
+* [The White Paper marketing campaign](./followups-publisher-tutorial-white-paper)
+* [Sending an email when a customer has spent over 1000 euros](./followups-publisher-tutorial-email-total)
+* [Count submits and send an email to the Xth submitter](./followups-publisher-tutorial-count-submits)
+* [Send confirmation mails](./followups-publisher-tutorial-confirmation-mail)
+
+## More information
+
+* [Conditions for follow-ups](./followups-publisher-conditions)
+* [Stop follow-ups](./followups-publisher-stop).
+* [Extra variables for followups](./followups-publisher-extra-variables)
