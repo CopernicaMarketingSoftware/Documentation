@@ -1,3 +1,5 @@
+# Selections and miniselections
+
 You can create filters on the data in your databases and collections and
 use for example target segmentation. To do this, you use mini selections
 and selections. The content of the selections will be updated

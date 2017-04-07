@@ -1,3 +1,5 @@
+# Automate campaigns
+
 Lean back and let Copernica do all the work. Automate your campaigns
 with automatic responses to **emails**, **web forms**, **surveys** or in
 response to certain events in your **databases**, such as newly created

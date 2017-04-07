@@ -1,3 +1,5 @@
+# Database management
+
 Each marketing campaign starts with a contact database. You manage your
 database(s) in the Profiles section. A profile is a record in your
 database, for example with data of a single relationship. Databases can
