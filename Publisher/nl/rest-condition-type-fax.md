@@ -50,7 +50,7 @@ te veel berichten versturen naar dezelfde persoon. Deze kan ons dan als
 spam registreren, wat we natuurlijk willen voorkomen. We kunnen voor deze 
 selectie de volgende waarden gebruiken:
 
-* **after-time**: \<Huidige dag - 2 maanden in YYYY-MM-DD HH:MM:SS formaat>
+* **after-time**: <Huidige dag - 2 maanden in YYYY-MM-DD HH:MM:SS formaat>
 * **number**: 10
 * **operator**: >
 

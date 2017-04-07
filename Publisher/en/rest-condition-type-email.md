@@ -75,6 +75,7 @@ would have to be set to "clickonurl" and the **clicked-url** should be set to
 the item link.
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type sms](rest-condition-type-sms)

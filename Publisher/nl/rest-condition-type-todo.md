@@ -44,7 +44,7 @@ wel todo's voor aangemaakt. Nu het document klaar is wil je een selectie maken
 met de todo's. Je kunt dit doen met de todo condition met de volgende waarden:
 
 * **match_type**: "match_intelligent"
-* **contains**: \<naam van document>
+* **contains**: <naam van document>
 
 Door "match_intelligent" te gebruiken voorkom je dat documenten niet 
 gevonden worden door typo's of gespreide woorden.
