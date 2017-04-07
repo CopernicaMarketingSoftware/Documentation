@@ -21,7 +21,7 @@ Als we twee views willen hebben die geen enkele overlap hebben in profielen
 kunnen we deze conditie gebruiken om ze te vergelijken. Om selectie van profielen 
 in de andere view te voorkomen kunnen we de volgende waarden gebruiken:
 
-* **refer-view**: \<View waar we geen profielen uit willen>
+* **refer-view**: View waar we geen profielen uit willen
 * **check-type**: "no"
 
 Het is ook mogelijk om een overkoepelende view te maken, die juist wel 

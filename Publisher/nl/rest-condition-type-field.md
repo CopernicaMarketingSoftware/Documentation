@@ -11,7 +11,7 @@ Dit artikel gaat over de verschillende eigenschappen van de field conditie.
 
 ## Individuele eigenschappen
 
-* **comparison**: Vergelijk type voor fieldconditie. Zie de [comparison types tabel](rest-conditie-type-field#comparison-types)
+* **comparison**: Vergelijk type voor fieldconditie. Zie de comparison types tabel.
 * **field**: Veld om te vergelijken met waarde
 * **value**: Waarde om mee te vergelijken. (Aanpassing hiervan reset **other-field**)
 * **other-field**: Ander veld om **field** mee te vergelijken. Als deze is 

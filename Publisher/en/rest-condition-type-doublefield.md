@@ -11,7 +11,7 @@ This article is about the properties of the doublefield condition.
 
 ## Individual properties
 
-* **match-mode**: Match mode of doublefield condition. See the [match mode table](./rest-condition-type-doublefield#match-modes)
+* **match-mode**: Match mode of doublefield condition. See the match mode table.
 * **fields**: The combination of fields that should be checked.
 
 ## Match Modes
@@ -39,6 +39,7 @@ match-mode. The following values describe this set of people:
 * **fields**: \[first_name, last_name\]
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type field](rest-condition-type-field)

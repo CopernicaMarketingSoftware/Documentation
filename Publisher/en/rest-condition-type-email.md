@@ -35,7 +35,7 @@ of received messages by the profile/subprofile. Possible values:
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
 ## Individual properties
-* **required-result**: The certain result of an email. See the [required result table](./rest-condition-type-email#required-results)
+* **required-result**: The certain result of an email. See the required result table.
 * **clicked-url**: The url that must be clicked (only for **required-result** set to "clickonurl").
 * **required-errors**: Error code to use with "error" for **required-result**. 
 Possible values: Error code, "mailmessage", "unreachable", "nocontent", "nohost", 
@@ -75,6 +75,7 @@ would have to be set to "clickonurl" and the **clicked-url** should be set to
 the item link.
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type sms](rest-condition-type-sms)

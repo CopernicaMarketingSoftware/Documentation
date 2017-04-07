@@ -11,7 +11,7 @@ Dit artikel gaat over de verschillende eigenschappen van de doublefield conditie
 
 ## Individuele eigenschappen
 
-* **match-mode**: Match modus van de doublefield conditie. Zie de [match mode tabel](./rest-conditie-type-doublefield#match-modes)
+* **match-mode**: Match modus van de doublefield conditie. Zie de match mode tabel.
 * **fields**: De combinatie van velden die gecheckt moet worden.
 
 ## Match Modes

@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Individuele eigenschappen
 
-* **submitter**: Vereiste submitter van de enquête. Zie de [required submitters tabel](rest-conditie-type-survey#required-submitters)
+* **submitter**: Vereiste submitter van de enquête. Zie de required submitters tabel.
 * **survey-name**: Naam van enquête om indien-status te vergelijken.
 
 ## Required submitters
@@ -46,7 +46,7 @@ profielen in je database een reactie hebt gekregen. Je kunt dan een selectie
 maken met de survey condition van de mensen die je een reminder wilt sturen. 
 Je gebruikt hiervoor de volgende waarden:
 
-* **survey-name**: /<Enquête waarvoor je een reminder wilt versturen.>
+* **survey-name**: Enquête waarvoor je een reminder wilt versturen
 * **submitter**: "none"
 
 ## Meer informatie
