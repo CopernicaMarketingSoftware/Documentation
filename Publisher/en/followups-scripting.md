@@ -52,3 +52,7 @@ Before an email is delivered, the data-script is removed from the original code.
 receivers therefore do not get to see the script when they open the source code of
 the message. However, the script stays active because Copernica has stored the
 script and runs it when a click is registered.
+
+## More information
+
+* [Followups general](./followups)
