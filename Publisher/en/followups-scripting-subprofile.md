@@ -17,6 +17,10 @@ subprofile object please see the documentation on [the account object](./followu
 * **fields**: A hash map of all profiles fields. Fields are set as properties (Read and write)
 * **data**: See the documentation on [the data object](./followups-scripting-data)
 
+## Available methods
+* **remove()**: Remove this subprofile
+* **unsubscribe()**: Unsubscribe this subprofile
+
 ## Example
 
 The following example in javascript can be used to access the "age" field of a subprofile.
