@@ -95,7 +95,7 @@ Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
 'events' vanaf de start datum tot en met een maand na de startdatum 
 teruggestuurd.
 
-# 'Events' op basis van een template
+## 'Events' op basis van een 'template'
 
 De volgende URL kan gebruikt worden om alle informatie met betrekking tot
 een bepaalde template adres op te vragen.
