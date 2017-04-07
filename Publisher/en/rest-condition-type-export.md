@@ -31,7 +31,7 @@ If you wanted to only export profiles you have exported before after a
 certain date, you could make that selection using this condition. The 
 following values should be used:
 
-* **after-time**: <Timestamp you want the exports after>
+* **after-time**: Timestamp you want the exports after
 * **include-never-exported-profiles**: false
 
 ## More information

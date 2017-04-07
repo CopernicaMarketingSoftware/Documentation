@@ -44,7 +44,7 @@ customers you needed to email. You can do this with the todo condition with
 the following values:
 
 * **match_type**: "match_intelligent"
-* **contains**: < Name of document >
+* **contains**: Name of document
 
 By using "match_intelligent" you ensure that typos or spread out words don't 
 cause you to miss any of the todo's.
