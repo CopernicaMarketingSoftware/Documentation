@@ -12,8 +12,8 @@ This article is about the properties of the survey condition.
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-mutation**: The beforemutation (time difference) for the surveycondition.
+* **after-mutation**: The aftermutation (time difference) for the surveycondition.
 
 ## Individual properties
 * **submitter**: Required submitter of the survey. See the [required submitters table](rest-condition-type-survey#required-submitters)

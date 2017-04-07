@@ -12,8 +12,8 @@ This article is about the properties of the email condition.
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-mutation**: The beforemutation (time difference) for mails sent too early.
+* **after-mutation**: The aftermutation (time difference) for mails sent too late.
 
 ## Mailing properties
 * **match-mode**: Matchmode of the mailing condition. Possible values: 
