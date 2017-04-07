@@ -10,6 +10,11 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the date condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: Matches only if the value was in the field before given time
 * **after-time**: Matches only if the value was in the field after given time
 * **before-mutation**: The variable time after which the chosen field must be.

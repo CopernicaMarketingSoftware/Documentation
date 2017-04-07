@@ -10,6 +10,7 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the doublefield condition.
 
 ## Individual properties
+
 * **match-mode**: Match mode of doublefield condition. See the [match mode table](./rest-condition-type-doublefield#match-modes)
 * **fields**: The combination of fields that should be checked.
 
@@ -29,10 +30,13 @@ their descriptions.
 
 ## Example
 
-Let's say we want to select only people with a different first name. Then 
-we could set **match-mode** to "match_unique_profiles" to only get unique profiles 
-and **fields** to "first_name", to only match on first names. It is also possible to 
-check a combination of fields by entering an array for fields.
+Let's say we want to make a selection of only people with unique names. This 
+includes both the first name and the last name. In this case we could describe this 
+selection by comparing the first name and the last name fields with the correct 
+match-mode. The following values describe this set of people:
+
+* **match-mode**: match_unique profiles
+* **fields**: \[first_name, last_name\]
 
 ## More information
 * [Fetch rule conditions](rest-get-rule-conditions)

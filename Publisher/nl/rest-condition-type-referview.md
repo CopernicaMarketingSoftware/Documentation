@@ -10,11 +10,13 @@ om een regel waar te maken.
 Dit artikel gaat over de verschillende eigenschappen van de referview conditie.
 
 ## Individuele eigenschappen
+
 * **refer-view**: View waar de conditie naar verwijst.
 * **check-type**: Boolean value om aan te geven of een profiel zichtbaar 
 moet zijn in de andere view. Mogelijke waarden: "yes", "no".
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type miniview](rest-condition-type-miniview)

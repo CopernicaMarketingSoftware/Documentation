@@ -10,6 +10,11 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the email condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
 * **before-mutation**: The beforemutation (time difference) for mails sent too early.
@@ -65,7 +70,7 @@ condition that only destinations that do not cause error satisfy.
 
 Another example would be to make another selection using a condition for 
 people who clicked on a specific URL. If they have seen an item then it might 
-be a good idea to send them another mail about it! To do this **required-results** 
+be a good idea to send them another mail about it! To do this **required-result** 
 would have to be set to "clickonurl" and the **clicked-url** should be set to 
 the item link.
 

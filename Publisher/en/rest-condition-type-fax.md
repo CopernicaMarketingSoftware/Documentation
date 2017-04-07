@@ -10,6 +10,11 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the fax condition.
 
 ## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
 * **before-mutation**: The beforemutation (time difference) of the faxcondition.
@@ -28,6 +33,17 @@ This article is about the properties of the fax condition.
 * **operator**: The operator to compare the number of messages with the number 
 of received messages by the profile/subprofile. Possible values: 
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
+
+## Example
+
+Using the fax condition we can make a selection of people who have received 
+over 10 messages in the last two months, to prevent us from sending too 
+many messages to the same user. We don't want them to unsubscribe, after all.
+To do this we can use the following values:
+
+* **after-time**: \<Current day - 2 months in YYYY-MM-DD HH:MM:SS format>
+* **number**: 10
+* **operator**: >
 
 ## More information
 * [Fetch rule conditions](rest-get-rule-conditions)
