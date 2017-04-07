@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Individuele eigenschappen
 
-* **submitter**: Vereiste submitter van de enquête. Zie de [required submitters tabel](rest-conditie-type-survey#required-submitters)
+* **submitter**: Vereiste submitter van de enquête. Zie de required submitters tabel.
 * **survey-name**: Naam van enquête om indien-status te vergelijken.
 
 ## Required submitters

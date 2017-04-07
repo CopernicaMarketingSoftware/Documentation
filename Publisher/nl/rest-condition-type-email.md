@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Mailing eigenschappen
 
-* **match-mode**: Matchmode van de mailing conditie. Zie [matchmode tabel](rest-conditie-type-mailing#match-modes)
+* **match-mode**: Matchmode van de mailing conditie. Zie match modus tabel.
 * **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
 "profile", "subprofile", anything" als beide mag.
 * **document**: Naam van het document gebruikt voor matchmode. (Alleen bij
@@ -44,7 +44,7 @@ van **number** te vergelijken. Ondersteunde operatoren:
 
 ## Individuele eigenschappen
 
-* **required-result**: Het zekere resultaat van een email. Zie ook de [required result tabel](./rest-conditie-type-email#required-results)
+* **required-result**: Het zekere resultaat van een email. Zie ook de required result tabel.
 * **clicked-url**: URL die aangeklikt moet worden als **required-result** op "clickonurl" staat.
 * **required-errors**: Error codes om te gebruiken met "error" als **required-result**. 
 Mogelijke waarden: Error code, "mailmessage", "unreachable", "nocontent", "nohost", 

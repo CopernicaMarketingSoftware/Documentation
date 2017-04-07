@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Mailing eigenschappen
 
-* **match-mode**: Matchmode van de mailing conditie. Zie [matchmode tabel](rest-conditie-type-mailing#match-modes)
+* **match-mode**: Matchmode van de mailing conditie. Zie matchmode tabel.
 * **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
 "profile", "subprofile", anything" als beide mag.
 * **document**: Naam van het document gebruikt voor matchmode. (Alleen bij
