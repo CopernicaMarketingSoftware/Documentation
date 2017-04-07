@@ -22,7 +22,7 @@ format.
 
 ## Individual properties
 
-* **submitter**: Required submitter of the survey. See the [required submitters table](rest-condition-type-survey#required-submitters)
+* **submitter**: Required submitter of the survey. See the required submitters table.
 * **survey-name**: Name of survey to check submission for.
 
 ## Required submitters
@@ -46,7 +46,7 @@ to fill out, but some of them have not sent a reaction yet. Using the survey
 condition you can select everyone that did not submit your survey yet, by 
 using the following values:
 
-* **survey-name**: /<Survey you want to send a reminder for>
+* **survey-name**: Survey you want to send a reminder for
 * **submitter**: "none"
 
 ## More information

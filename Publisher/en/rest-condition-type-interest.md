@@ -32,6 +32,7 @@ We use the following values:
 * **match-mode**: "match_profiles_with_interest"
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type field](rest-condition-type-field)

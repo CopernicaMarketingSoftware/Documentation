@@ -45,7 +45,7 @@ tenminste drie keer met hem in contact zijn geweest (voor een duidelijker beeld)
 en deze profielen vragen om een evaluatie. We doen dit met de volgende 
 waarden.
 
-* **after-time**: /<Vandaag - 1 maand in YYYY-MM-DD HH:MM:SS format>
+* **after-time**: Vandaag - 1 maand in YYYY-MM-DD HH:MM:SS format
 * **min-closed**: 3
 * **contains**: "Bob"
 

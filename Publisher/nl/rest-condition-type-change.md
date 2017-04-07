@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Individuele eigenschappen
 
-* **change-type**: Het change type van de changeconditie. Zie de [change types tabel](./rest-conditie-type-change#change-types)
+* **change-type**: Het change type van de changeconditie. Zie de change types tabel.
 * **field**: Database veld om wel/niet aan te passen
 * **interest**: Database interesse om wel/niet aan te passen
 
@@ -62,5 +62,6 @@ Je kunt deze selectie maken met de change conditie door **change-type** op
 "new" te zetten.
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)

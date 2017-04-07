@@ -23,7 +23,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Mailing eigenschappen
 
-* **match-mode**: Matchmode van de mailing conditie. Zie [matchmode tabel](rest-conditie-type-mailing#match-modes)
+* **match-mode**: Matchmode van de mailing conditie. Zie matchmode tabel.
 * **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
 "profile", "subprofile", anything" als beide mag.
 * **document**: Naam van het document gebruikt voor matchmode. (Alleen bij
@@ -51,7 +51,7 @@ de originele selectie nog bestaat is het makkelijker om die te gebruiken,
 maar in het geval dat deze niet meer bestaat is het mogelijk de sms conditie 
 te gebruiken met de volgende waarden:
 
-* **document**: /<Verkeerd document>
+* **document**: Verkeerd document
 * **match-mode**: "match_profiles_that_received_document"
 
 ## Meer informatie

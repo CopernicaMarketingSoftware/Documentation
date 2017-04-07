@@ -24,6 +24,7 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 - [Datum voorwaarden](./rest-condition-type-date.md)
 - [DoubleField voorwaarden](./rest-condition-type-doublefield.md)
 - [Email voorwaarden](./rest-condition-type-email.md)
+- [Export voorwaarden](./rest-condition-type-export.md)
 - [Fax voorwaarden](./rest-condition-type-fax.md)
 - [Veld voorwaarden](./rest-condition-type-field.md)
 - [Interesse voorwaarden](./rest-condition-type-interest.md)
@@ -54,4 +55,4 @@ Dit voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
 
 * [Overzicht van alle API methodes](./rest-api)
 * [Vraag regels op](./rest-get-rules)
-* [Vraag regel op bij ID](./rest-get-rule)
+* [Vraag regel op per ID](./rest-get-rule)

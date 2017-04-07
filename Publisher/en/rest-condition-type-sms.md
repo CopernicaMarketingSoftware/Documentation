@@ -42,7 +42,7 @@ customers and we want to send another mail to apologize (and we don't
 have the original selection anymore, you could use that as well). We 
 could then select using the sms condition with the following values:
 
-* **document**: /<Wrong document>
+* **document**: Name of wrong document
 * **match-mode**: "match_profiles_that_received_document"
 
 ## More information

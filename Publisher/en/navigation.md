@@ -56,4 +56,3 @@
     * [CSS and XSLT](./css-and-xslt.md)
     * [Files and images](./files-and-images.md)
     * [Sending mailings](./sending-mailings.md)
-    * [Standard e-mail campaigns](./standard-email-campaigns.md)
