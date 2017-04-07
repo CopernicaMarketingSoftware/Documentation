@@ -1,3 +1,5 @@
+# Followups for databases and collections
+
 You can create automated responses on your databases and collections.
 Each time a profile has been created or modified a follow-up action can
 be initiated. You set under which conditions the follow-up should be
@@ -10,7 +12,7 @@ management*menu. Your follow-ups can also be accessed from the
 
 You can create follow-ups on databases and collections.
 
-### Cause and action
+## Cause and action
 
 A follow-up action consist of two parts: the cause and the action. When
 creating a new follow-up action, you are first asked to choose the
@@ -33,7 +35,7 @@ You can choose from 2 different causes for the survey follow-up action:
     if the follow-up action is triggered. This may be sending an email
     to the profile or something else.
 
-### Additional conditions for the follow-up actions
+## Additional conditions for the follow-up actions
 
 Sometimes you want to prevent that a follow-up action is scheduled or
 executed. For example, the follow-up should only be scheduled when
@@ -50,27 +52,24 @@ between **schedule conditions** and**action conditions.**
 -   Create an **action condition** to ensure that the follow-up action
     is executed under certain conditions only
 
-### Copy follow-ups
+## Copy follow-ups
 
 When copying a database or collection, follow-ups are not copied along.
 
-### Remove follow-ups
+## Remove follow-ups
 
 Follow ups can be removed. Already scheduled follow ups will still be
 executed after you remove the follow-up.
 
-### To remove a follow up
+## To remove a follow up
 
--   open the follow-up window
+-   Open the follow-up window
 -   Select the follow-up that you wish to remove
 -   Click remove
 
-#### Further reading
+## More information
 
--   [Conditions for follow-up
-    actions](./automate-campaigns-with-follow-up-actions.md)
--   [More information on follow-up
-    actions](./conditions-for-follow-ups.md)
--   [Follow-up
-    manager](./follow-up-manager.md)
+* [Followups in publisher](./followups-publisher)
+* [Followups for mailings in publisher](./followups-publisher-mailing)
+* [Followups for web forms in publisher](./followups-publisher-web-forms)
 

@@ -1,3 +1,5 @@
+# Personalization
+
 Personalization is dynamically tailoring your publications to meet the
 wants and needs of your subscribers. You can think of showing a
 personalized salutation, or displaying different images to different
@@ -34,7 +36,7 @@ supports both Smarty verion 2 and 3 (though we recommend using version
 -   [Example of the loadprofile and loadsubprofile
     functions](./example-of-the-loadprofile-and-loadsubprofile-functions.md)
 
-### Complete Smarty documentation
+## Complete Smarty documentation
 
 Smarty is not developed by Copernica, but is an external web template
 system and very well documented by a large army of enthusiasts.
@@ -48,7 +50,7 @@ Maybe we can fix it for you.
 -   [Check out the full and uncencored Smarty
     documentation](http://www.smarty.net/docs/en/)
 
-### Copernica special functions and tags
+## Copernica special functions and tags
 
 Copernica has many special features for personalization and tags for
 publishing special content.
@@ -59,7 +61,7 @@ publishing special content.
     actions](./extra-variables-for-follow-ups.md)
     (get access to information about the trigger event)
 
-### Smarty Reference
+## Smarty Reference
 
 On the smarty reference page we list all variables that are assigned by
 Copernica and that can be used in your mailings and documents.

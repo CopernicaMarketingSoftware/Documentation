@@ -1,3 +1,5 @@
+# Followups tutorial: White Paper marketing campaign
+
 This article describes how you create a whitepaper marketing campaign.
 
 In a white paper marketing program you offer educational or interesting
@@ -14,7 +16,7 @@ The process is as follows:
 -   Your sales department is automatically informed when a whitepaper
     download has been requested. There's your lead!
 
-### Step 1. Prepare your database
+## Step 1. Prepare your database
 
 In the database where your relationships are stored create a new
 [interest group](./working-with-interest-fields-and-groups.md)
@@ -24,7 +26,7 @@ interest field for each whitepaper that can be downloaded.
 Although interest fields are eminently suitable you can of course use
 normal database fields if you prefer so.
 
-### Step 2. Make the web form
+## Step 2. Make the web form
 
 -   In *Content*, create a new [web form](./introduction-to-web-forms.md)
 -   Add the required fields (at least name, email, phone)
@@ -35,7 +37,7 @@ normal database fields if you prefer so.
     newsletter as well
 -   The form is a normal registration form.
 
-### Step 3. Create a new e-mail document
+## Step 3. Create a new e-mail document
 
 This document will be sent to the profile as a follow-up action on the
 web form. In the e-mail document place a hyperlink that points to the
@@ -44,7 +46,7 @@ expanded to [include personalization code](./linking-to-your-website-from-an-ema
 , to ensure that the profile is automatically logged in when he visits
 the secure download page (see step 5).
 
-### Step 4. A follow-up action linked to the webform
+## Step 4. A follow-up action linked to the webform
 
 -   Go to the Webform menu and choose **Follow-ups...**
 -   Make a follow-up action that results in the sending of a formatted
@@ -54,7 +56,7 @@ the secure download page (see step 5).
     received. The document can be personalized with details about the
     new lead, including his or her phone number.
 
-### Step 5. Make the download page
+## Step 5. Make the download page
 
 Create a new web page. On these pages you link to the document being
 requested. This can be done with a simple smarty code. The code takes
@@ -75,3 +77,5 @@ The web page with the download links should be made a secure page.
 Go to **Websites**, open the download page and then choose *Set
 access*from the web page menu. Tick ​​the option in the dialog box which
 says *This page is only available for logged in visitors*
+
+[Back to followups in Publisher.](./followups-publisher)
