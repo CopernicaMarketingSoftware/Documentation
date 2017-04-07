@@ -1,10 +1,11 @@
-# Vraag gebeurtenissen op met een bepaalde eigenschap
+# Opvragen van 'events'
 
-Alle data die door SMTPeter gaat wordt gelogd: afleveringen, bounces, clicks,
-opens. Deze log files zijn op  te vragen via de [REST API](rest-logfiles).
-Wanneer u echter alleen geïnteresseerd bent in gebeurtenissen die voldoen
-aan een bepaalde eigenschap kunt u de onderstaande URLs gebruiken. Dan zoeken
-wij voor u de juiste informatie.
+Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter 
+onder meer de volgende 'events' bij: afleveringen, 'bounces', kliks en opens. 
+Deze log files zijn op te vragen via de [REST API](rest-logfiles).
+Het kan natuurlijk ook voorkomen dat je opzoek bent naar een specifiek 'event'.
+De flexibele API geeft je de mogelijkheid om het 'event' naar keuze op te vragen.
+Je doet dit middels een van de volgende URls:
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
@@ -16,7 +17,7 @@ https://www.smtpeter.com/v1/events/template/TEMPLATEID/DATUM
 https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
 https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3/DATUM
 ```
-Na het verzoek ontvangt u de volgende JSON:
+Na het verzoek ontvang je de volgende JSON:
 
 ```json
 [
@@ -39,11 +40,11 @@ Na het verzoek ontvangt u de volgende JSON:
     ...
 ]
 ```
-Het `type` in de JSON geeft het type record. De types die beschikbaar zijn
-staan in de onderstaande tabel. De data die beschikbaar is wordt 
+Het `type` in de JSON geeft het type record. De beschikbare types
+staan in de onderstaande tabel. De beschikbare data wordt 
 beschreven op de betreffende pagina van het type.
 
-| Type                                        | Description                                      |
+| Type                                        | Beschrijving                                      |
 | ------------------------------------------- | ------------------------------------------------ |
 | [attempt](log-attempts "attempts log file") | Algemene informatie over het bericht             |
 | [bounce](log-bounces "bounces log file")    | informatie over een bounce                       |
@@ -53,46 +54,48 @@ beschreven op de betreffende pagina van het type.
 | [open](log-opens "opens log file")          | informatie over wanneer een bericht is geopend   |
 | [response](log-responses)                   | informatie over door SMTPeter ontvangen reacties |
 
-## Gebeurtenissen op basis van een messageid
 
-De volgende URL kan gebruikt worden om gebeurtenissen  die betrekking 
-hebben op een bepaalde messageid op te vragen.
+## 'Events' op basis van een 'MESSAGE ID'
+
+De volgende URL kan gebruikt worden om 'events', die betrekking 
+hebben op een bepaalde 'message ID', op te vragen.
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 ```
-Waar `MESSAGEID` het betreffende messageid is. Je krijgt vervolgens de
-gebeurtenissen tot een maand na het tijdstip van verzenden van het bericht.
-Als je latere gebeurtenissen wilt downloaden, dan kun je de URL uitbreiden
+Hierbij is de `MESSAGE ID` het betreffende 'message ID'. Je krijgt vervolgens de
+'events' tot een maand na het tijdstip van verzenden van het bericht.
+Je kunt latere 'events' downloaden door de URL uit te breiden
 met een startdatum:
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATUM
 ```
-waar datum de form heeft van `jjjj-mm-dd`. Je krijgt dan de gebeurtenissen
+Hierbij wordt de datum aangegeven door middel van `jjjj-mm-dd`. Je krijgt dan de 'events'
 vanaf de start datum tot een maand na de start datum.
 
 
-## Gebeurtenissen op basis van een email adres
+## 'Events' op basis van een e-mailadres
 
 De volgende URL kan gebruikt worden om informatie met betrekking tot
-een bepaald e-mail adres op te vragen.
+een bepaald e-mailadres op te vragen.
 
 ```text
 https://www.smtpeter.com/v1/events/email/EMAILADRES
 ```
-waar `EMAILADRES` het betreffende e-mail adres is. Je krijgt de gebeurtenissen
-van de laatste maandelijkse periode. Als je gebeurtenissen van een eerdere
-maandelijkse periode wilt downloaden dan kun je een startdatum aan de URL
-toevoegen:
+Hierbij is `EMAILADRES` het betreffende e-mailadres. Je krijgt de 'events'
+van de laatste maandelijkse periode. De 'events' van een eerdere
+maandelijkse periode kunnen ook worden gedownload. In dat geval 
+kun je een startdatum aan de URL toevoegen:
 
 ```text
 https://www.smtpeter.com/v1/events/email/EMAILADRES/DATUM
 ```
-waar `DATUM` de form heeft van `jjjj-mm-dd`. Je krijgt vervolgens de
-gebeurtenissen vanaf de start datum tot en met een maand na de startdatum.
+Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
+'events' vanaf de start datum tot en met een maand na de startdatum 
+teruggestuurd.
 
-# Gebeurtenissen op basis van een template
+# 'Events' op basis van een template
 
 De volgende URL kan gebruikt worden om alle informatie met betrekking tot
 een bepaalde template adres op te vragen.
@@ -100,19 +103,19 @@ een bepaalde template adres op te vragen.
 ```text
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
 ```
-waar `TEMPLATEID` de ID van de betreffende template is. Je krijgt vervolgens
-alle gebeurtenissen van de laatste maandelijkse periode. Als je gebeurtenissen
-van een eerdere maandelijkse periode wilt downloaden kun je een startdatum
-aan de URL toevoegen:
+Hierbij is `TEMPLATEID` de ID van de betreffende template. Je krijgt vervolgens
+alle 'events' van de laatste maandelijkse periode. De 'events' van een eerdere 
+maandelijkse periode kunnen ook worden gedownload. In dat geval kun je een 
+startdatum aan de URL toevoegen:
 
 ```text
 https://www.smtpeter.com/v1/events/template/TEMPLATEID/DATUM
 ```
-waar `DATUM` de form heeft van `jjjj-mm-dd`. Je krijgt vervolgens de
-gebeurtenissen vanaf de startdatum tot en met een maand na de startdatum.
+Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
+'events' vanaf de startdatum tot en met een maand na de startdatum.
 
 
-## Gebeurtenissen op basis van tags
+## 'Events' op basis van tags
 
 De volgende URL kan gebruikt worden om informatie met een tag op te
 vragen.
@@ -120,16 +123,16 @@ vragen.
 ```text
 https://www.smtpeter.com/v1/tags/TAG
 ```
-waar`TAG` de betreffende tag is. Je krijgt vervolgens alle gebeurtenissen
-van de laatste maandelijkse periode. Als je gebeurtenissen van een eerdere
-maandelijkse periode wilt downloaden kun je een startdatum aan de URL toevoegen:
+Hierbij is `TAG` de betreffende tag. Je krijgt vervolgens alle 'events'
+van de laatste maandelijkse periode. De 'events' van een eerdere
+maandelijkse periode kunnen ook worden gedownlaod. In dat geval kun 
+je een startdatum aan de URL toevoegen:
 
 ```text
 https://www.smtpeter.com/v1/tags/TAG/DATUM
 ```
-waar `DATUM` de form heeft van `jjjj-mm-dd`. Je krijgt vervolgens de
-gebeurtenissen vanaf de startdatum tot en met een maand na de startdatum.
-
+Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
+'events' vanaf de startdatum tot en met een maand na de startdatum. 
 Het is ook mogelijk om op meerdere tags tegelijkertijd te filteren. Dit
 kan met de volgende URL:
 
@@ -138,4 +141,4 @@ https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
 ```
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
 opgegeven tags bevatten. Ook hier kan eventueel gekozen worden voor een
-andere maandelijkse periode door een datum aan de URL toe te voegen.
+andere maandelijkse periode, door een datum aan de URL toe te voegen.
