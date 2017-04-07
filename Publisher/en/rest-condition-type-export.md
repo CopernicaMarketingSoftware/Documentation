@@ -10,10 +10,10 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the export condition.
 
 ## Date properties
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-time**: The timestamp before which the export must have occurred.
+* **after-time**: The timestamp after which the export must have occurred.
+* **before-mutation**: The beforemutation (time difference) of the exportcondition.
+* **after-mutation**: The aftermutation (time difference) of the exportcondition.
 
 ## Individual properties
 * **include-never-exported-profiles**: Boolean value to indicate whether 

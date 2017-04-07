@@ -7,14 +7,13 @@ which something happened (date properties), others concern mailing information
 for which all properties should be satisfied to satisfy the condition as a whole.
 Only one condition needs to be satisfied to satisfy a rule.
 
-This article is about the properties of the 
-date condition.
+This article is about the properties of the date condition.
 
 ## Date properties
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-time**: Matches only if the value was in the field before given time
+* **after-time**: Matches only if the value was in the field after given time
+* **before-mutation**: The variable time after which the chosen field must be.
+* **after-mutation**: The variable time before which the chosen field must be.
 
 ## Individual properties
 * **field**: The databasefield of the datecondition.

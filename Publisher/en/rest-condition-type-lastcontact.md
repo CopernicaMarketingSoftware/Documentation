@@ -10,10 +10,10 @@ Only one condition needs to be satisfied to satisfy a rule.
 This article is about the properties of the lastcontact condition.
 
 ## Date properties
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-time**: Matches only profiles that were contacted before this time
+* **after-time**: Matches only profiles that were contacted after this time
+* **before-mutation**: beforemutation (time difference) for lastcontactcondition.
+* **after-mutation**: aftermutation (time difference) for lastcontactcondition.
 
 ## Individual properties
 * **match-type**: Match type of last contact. Possible values: 
