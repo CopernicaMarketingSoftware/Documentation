@@ -1,3 +1,5 @@
+# Fair use policy
+
 Om ervoor te zorgen dat iedereen optimaal gebruik kan maken van
 Copernica Marketing Software, hanteren wij een fair use policy. Dit
 houdt in dat gebruikers niet voor excessief en onnodig dataverkeer mogen
