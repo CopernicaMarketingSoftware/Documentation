@@ -11,7 +11,7 @@ Dit artikel gaat over de verschillende eigenschappen van de interest conditie.
 
 ## Individuele eigenschappen
 
-* **match-mode**: Matchmode van de interest conditie. Zie de [match-mode tabel](rest-conditie-type-interest#match-modes)
+* **match-mode**: Matchmode van de interest conditie. Zie de match-mode tabel.
 * **interest**: Interesse voor de conditie. Dit geeft alleen een valide waarde
 terug als de **match-mode** staat op "match_profiles_with_interest" of "match_profiles_without_interest".
 * **interest-group**: Interessegroep van de conditie. Dit geeft alleen een valide waarde

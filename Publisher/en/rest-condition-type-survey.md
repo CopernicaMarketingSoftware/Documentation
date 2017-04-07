@@ -22,7 +22,7 @@ format.
 
 ## Individual properties
 
-* **submitter**: Required submitter of the survey. See the [required submitters table](rest-condition-type-survey#required-submitters)
+* **submitter**: Required submitter of the survey. See the required submitters table.
 * **survey-name**: Name of survey to check submission for.
 
 ## Required submitters

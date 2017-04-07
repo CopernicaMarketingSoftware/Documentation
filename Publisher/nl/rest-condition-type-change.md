@@ -22,7 +22,7 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 
 ## Individuele eigenschappen
 
-* **change-type**: Het change type van de changeconditie. Zie de [change types tabel](./rest-conditie-type-change#change-types)
+* **change-type**: Het change type van de changeconditie. Zie de change types tabel.
 * **field**: Database veld om wel/niet aan te passen
 * **interest**: Database interesse om wel/niet aan te passen
 

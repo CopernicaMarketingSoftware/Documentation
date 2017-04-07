@@ -22,7 +22,7 @@ format.
 
 ## Individual properties
 
-* **change-type**: The changetype of the changecondition. See the [change types table](./rest-condition-type-change#change-types)
+* **change-type**: The changetype of the changecondition. See the change types table.
 * **field**: Database field to be changed/not changed.
 * **interest**: Database interest to be changed/not changed.
 
