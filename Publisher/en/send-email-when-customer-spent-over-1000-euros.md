@@ -60,3 +60,5 @@ Schedule a daily mail to the selection
 
 Make sure you test your campaign a few days before you start sending to
 your customers.
+
+[Back to the "automate campaigns" page](./automate-campaigns)

@@ -5,8 +5,6 @@ with automatic responses to **emails**, **web forms**, **surveys** or in
 response to certain events in your **databases**, such as newly created
 profiles or customer purchases.
 
--   [Automate campaigns with follow-up
-    actions](./automate-campaigns-with-follow-up-actions.md)
 -   [Follow-up
     manager](./follow-up-manager.md)
 -   [Conditions for
@@ -32,6 +30,6 @@ profiles or customer purchases.
 
 ### From our blog
 
--   [3 signs you’re ready to automate your email
+-   [Three signs you’re ready to automate your email
     campaigns](https://www.copernica.com/en/blog/3-signs-youre-ready-to-automate-your-email-campaigns)
 
