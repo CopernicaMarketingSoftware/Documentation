@@ -1,3 +1,5 @@
+# Followups tutorial: Creating a double opt-in for new subscribers
+
 You are interested in creating a double opt in for new subscribers.
 Excellent choice! But what is a double optin?
 
@@ -18,7 +20,7 @@ opt in.
 -   As a result it is less likely that your emails get trapped in spam
     filters.
 
-#### This is how it works:
+## This is how it works:
 
 1.  A new subscriber asks to be subscribed to the mailing list and uses
     a web form to fill out his or her email address.
@@ -32,7 +34,7 @@ opt in.
 
 Now let’s create a double opt in.
 
-#### You will need the following:
+## You will need the following:
 
 -   A database with a multiple choice field about newsletter preferences
     and a field holding the email address.
@@ -41,7 +43,7 @@ Now let’s create a double opt in.
     a landing page after confirmation.
 -   One email document with the confirmation link.
 
-### **First step: setting up the database**
+# **First step: setting up the database**
 
 Start with setting up the database. This database should at least
 contain a field to store the subscribers email address and a field to
@@ -55,14 +57,14 @@ value) it with the following options:
 -   Yes, not confirmed
 -   Yes, confirmed
 
-### **Second step: create webpages**
+## **Second step: create webpages**
 
 -   Create three web pages.
 -   The first one will hold the subscription form
 -   The second one will be the landing page of the subscription form and
     say something like: Thank you for your subscription. A confirmation
     email will be sent to {\$emailadress}. Click on the link in the
-    email  to complete the subscription.
+    email to complete the subscription.
 -   The third webpage is the final landing page, and is loaded after the
     subscriber clicks on the confirmation page.
 
@@ -74,7 +76,7 @@ value) it with the following options:
     database.
 -   Add (at least) two fields.
 -   Link the first field to the database colom with emailaddresses, make
-    it a **Loose key field**and make this a **required field** (user
+    it a **Loose key field** and make this a **required field** (user
     cannot submit form without filling out this field).
 
 The second field will be an invisible field:
@@ -91,7 +93,9 @@ The second field will be an invisible field:
     You are free to add more fields to ask for more information, such as
     gender. But be aware that asking too many details can seriously
     discourage people from subscribing. You can always ask for more
-    details later. \#\#\# Change the web form behavior
+    details later. 
+    
+## Change the web form behavior
 
 Go to the webform menu, and click on **Settings…** to open the web form
 settings dialog.
@@ -115,7 +119,7 @@ Choose the following options:
 -   Choose the error text (e.g., You are already receiving our emails).
 -   In the end of the wizard **click on finish**.
 
-### **Fourth step – Create the document with confirmation link**
+## **Fourth step – Create the document with confirmation link**
 
 In the Emailings section create a new document (if you haven't got one
 already). This is the document new subscribers will receive after they
@@ -139,7 +143,7 @@ Store the follow-up. When the subscriber clicks on the link, the
 follow-up will be triggered and tthe value of the newsletter field will
 update itself to **Yes, confirmed**.
 
-### **Fifth step – send the confirmation mail**
+## **Fifth step – send the confirmation mail**
 
 You are now nearly finished. Go back to the section Content and select
 the webform that you created in the third step.
@@ -156,10 +160,12 @@ or her an email to confirm the subscription. We are going to use a
 
     Good.
 
-### Latest step: test your double opt in.
+## Latest step: test your double opt in.
 
 Add the web form to the first web page and test if it all works!
 
 Ow, and don't forget to make a [Newsletter database selection](./selections-and-miniselections.md)
 (check on field, the field newsletter must be equal to Yes, confirmed)
 and use this selection to send your newsletters to.
+
+[Back to followups with Publisher](./followups-publisher)

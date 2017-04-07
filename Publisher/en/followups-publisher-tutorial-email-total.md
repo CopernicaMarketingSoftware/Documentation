@@ -1,4 +1,4 @@
-# Tutorial: Send an email when a customers spends over 1000 euros.
+# Followups Tutorial: Send an email when a customers spends over 1000 euros.
 
 This tutorial explains how you can automatically send an email to
 customers that spent over 1000 euros in your webshop.
@@ -24,8 +24,9 @@ field later to store the total amount for the products.
 Add a database follow-up action to the collection in which the products
 are stored.
 
--   At cause choose: a subprofile is created.
--   The action of the follow-up: Change the value of the field Total
+-   At **cause** choose: "A subprofile is created"
+-   The **action** of the follow-up: "Change the subprofile"
+-   The **Field 1** option should be set to the field *Total*
 -   Select the profile field to be changed and enter the following code:
 
 `{capture assign="total"}0{/capture}{foreach from=$profile.products item=sp}{capture  assign="total"}{$sp.product_price+$total}{/capture}{/foreach}{$total}`
@@ -49,16 +50,15 @@ conditions:
 > Check on field value: the value in the field *Total* [is greater than]
 > 1000.\
 >  **AND**\
->  Check on email results: Select profiles where Document X was sent to.
+>  Check on email results: Select profiles where Document X was not sent to.
 > Document X is of course your e-mail document sent in response to the
 > purchased products.
 
 The selection will now contain profiles that spent over 1000 euro in
-your shop, but did not yet recieve the email.
-
-Schedule a daily mail to the selection
+your shop, but did not yet recieve the email. Now you should schedule a 
+(daily/weekly) mail to the selection to sent them.
 
 Make sure you test your campaign a few days before you start sending to
 your customers.
 
-[Back to the "automate campaigns" page](./automate-campaigns)
+[Back to followups in Publisher.](./followups-publisher)

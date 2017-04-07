@@ -1,13 +1,15 @@
+# Followups Tutorial: Trigger an action for submitting a web form
+
 This article explains how you can trigger a follow-up action (every) X
 times a web form has been submitted. This enables you for example to
 send an email to each 1000st new subscriber of your newsletter.
 
-### Step 1 - preparing your database
+### Step 1 - Preparing your database
 
 -   In your database, create an extra numeric field with the default
     value of **0**. Name this field **index**. We will use this field to
     sum the score.
--   Create another field, and name this field **winner.**This should be
+-   Create another field, and name this field **winner**. This should be
     a text field without a default value. This field will be used to
     reveal the winner.
 
@@ -23,12 +25,11 @@ settings:
 -   When the form has been submitted, data of the profile should be
     changed.
 -   Choose the action **Change (sub)profile data**
--   Click **continue**\
+-   Click **continue**
 
 Choose the field **index**, and paste the following code in the field:
 
 ```
-
 {capture assign="highest"}0{/capture}
 {loadprofile multiple="1" source="the name of your database" assign="lp"}
 {foreach from=$lp item=p}
@@ -77,7 +78,7 @@ Create a condition for the follow-up. Click on **Edit condition**to edit
 the condition for the triggering of the follow-up. Choose the
 **JavaScript editor**and enter the following information:
 
-            profile.index % 1000 == 0;
+    profile.index % 1000 == 0;
         
 
 (what is does: it checks if the value in the field **index** can be

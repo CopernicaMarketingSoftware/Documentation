@@ -115,3 +115,5 @@ $mailing.trigger.snapshot.created
 
 $mailing.trigger.snapshot.subject
 ```
+
+[Back to followups in Publisher.](./followups-publisher)
