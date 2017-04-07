@@ -39,6 +39,16 @@ and their description.
 | noprofile          | Survey was not submitted by profile.         |
 | nosubprofile       | Survey was not submitted by subprofile.      |
 
+## Example
+
+Let's say you have sent an important survey for the profiles in your database 
+to fill out, but some of them have not sent a reaction yet. Using the survey 
+condition you can select everyone that did not submit your survey yet, by 
+using the following values:
+
+* **survey-name**: /<Survey you want to send a reminder for>
+* **submitter**: "none"
+
 ## More information
 
 * [Fetch rule conditions](rest-get-rule-conditions)
