@@ -32,6 +32,7 @@ condition. We use the following values:
 * **value**: "yes"
 
 ## More information
+
 * [Fetch rule conditions](rest-get-rule-conditions)
 * [Post rule conditions](rest-post-rule-conditions)
 * [Condition type interest](rest-condition-type-interest)

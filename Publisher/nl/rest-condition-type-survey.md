@@ -46,7 +46,7 @@ profielen in je database een reactie hebt gekregen. Je kunt dan een selectie
 maken met de survey condition van de mensen die je een reminder wilt sturen. 
 Je gebruikt hiervoor de volgende waarden:
 
-* **survey-name**: /<Enquête waarvoor je een reminder wilt versturen.>
+* **survey-name**: <Enquête waarvoor je een reminder wilt versturen.>
 * **submitter**: "none"
 
 ## Meer informatie

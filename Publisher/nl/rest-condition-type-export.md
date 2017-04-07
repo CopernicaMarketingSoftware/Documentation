@@ -31,7 +31,7 @@ Als je alleen profielen zou willen selecteren die je eerder hebt geëxporteerd
 voor een bepaalde dag, dan kun je deze selectie maken met de export conditie. 
 Je kunt dan de volgende waarden gebruiken:
 
-* **after-time**: /<Tijdstip in YYYY-MM-DD HH:MM:SS formaat>
+* **after-time**: <Tijdstip in YYYY-MM-DD HH:MM:SS formaat>
 * **include-never-exported-profiles**: false
 
 ## Meer informatie

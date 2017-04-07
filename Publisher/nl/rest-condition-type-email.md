@@ -86,7 +86,7 @@ je de kans dat je jouw klanten overtuigt. Je kunt dit doen met de volgende
 waarden voor de email conditie.
 
 * **required-result**: "clickonurl"
-* **clicked-url**: \<De URL van jouw product!>
+* **clicked-url**: <De URL van jouw product!>
 
 ## Meer informatie
 

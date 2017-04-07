@@ -62,5 +62,6 @@ Je kunt deze selectie maken met de change conditie door **change-type** op
 "new" te zetten.
 
 ## Meer informatie
+
 * [Regel condities opvragen](rest-get-rule-conditions)
 * [Regel condities aanpassen](rest-post-rule-conditions)
