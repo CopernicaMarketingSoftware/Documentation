@@ -51,7 +51,7 @@ de originele selectie nog bestaat is het makkelijker om die te gebruiken,
 maar in het geval dat deze niet meer bestaat is het mogelijk de sms conditie 
 te gebruiken met de volgende waarden:
 
-* **document**: <Verkeerd document>
+* **document**: Verkeerd document
 * **match-mode**: "match_profiles_that_received_document"
 
 ## Meer informatie

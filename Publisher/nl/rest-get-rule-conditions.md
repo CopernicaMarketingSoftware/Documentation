@@ -55,4 +55,4 @@ Dit voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
 
 * [Overzicht van alle API methodes](./rest-api)
 * [Vraag regels op](./rest-get-rules)
-* [Vraag regel op bij ID](./rest-get-rule)
+* [Vraag regel op per ID](./rest-get-rule)

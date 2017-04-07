@@ -41,7 +41,7 @@ over 10 messages in the last two months, to prevent us from sending too
 many messages to the same user. We don't want them to unsubscribe, after all.
 To do this we can use the following values:
 
-* **after-time**: <Current day - 2 months in YYYY-MM-DD HH:MM:SS format>
+* **after-time**: Current day - 2 months in YYYY-MM-DD HH:MM:SS format
 * **number**: 10
 * **operator**: >
 

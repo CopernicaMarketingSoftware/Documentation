@@ -21,7 +21,7 @@ If we want to have two views that are mutually inclusive we can use
 this condition to compare them. To prevent selection from a certain view 
 we use the following values:
 
-* **refer-view**: \<View we don't want to get profiles from>
+* **refer-view**: View we don't want to get profiles from
 * **check-type**: "no"
 
 It's also possible to make an overarching view and include the profiles 

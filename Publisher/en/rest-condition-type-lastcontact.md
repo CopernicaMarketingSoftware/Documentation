@@ -43,7 +43,7 @@ make a selection of customers he has contacted at least three times, for
 an accurate representation of him, and ask them to evaluate their contact. 
 We can do this with the following values for the lastcontact condition:
 
-* **after-time**: /<Today - 1 month in YYYY-MM-DD HH:MM:SS format>
+* **after-time**: Today - 1 month in YYYY-MM-DD HH:MM:SS format
 * **min-closed**: 3
 * **contains**: "Bob"
 
