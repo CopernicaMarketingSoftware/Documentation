@@ -8,7 +8,7 @@ mensen zomaar emails kunnen versturen vanuit jouw naam. Met je
 'access token' kan je in ieder geval de SMTPeter API bereiken via 
 de volgende URL:
  
-```
+```text
 https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
 ```
 Je kan alleen gebruik maken van HTTPS connecties. Onveilige HTTP
