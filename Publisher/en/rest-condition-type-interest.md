@@ -6,11 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 interest condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-interest#individual-properties)
-* [Example](rest-condition-type-interest#example)
-* [More information](rest-condition-type-interest#more-information)
-
 ## Individual properties
 * **match-mode**: Matchmode of interest condition. Possible values: 
 "match_profiles_with_interest", "match_profiles_without_interest", 
