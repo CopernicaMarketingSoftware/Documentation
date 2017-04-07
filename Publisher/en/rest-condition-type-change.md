@@ -3,19 +3,22 @@
 Conditions have different types of properties. Some concern the timeframe in 
 which something happened (date properties), others concern mailing information 
 (mailing properties) and others concern just the specific type of condition 
-(individual properties). This article is about the properties of the 
-change condition.
+(individual properties). All of these properties together combine to a condition 
+for which all properties should be satisfied to satisfy the condition as a whole.
+Only one condition needs to be satisfied to satisfy a rule.
+
+This article is about the properties of the change condition.
 
 ## Date properties
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: Datemutation (time difference) for mails sent too early.
-* **after-mutation**: Datemutation (time difference) for mails sent too late.
+* **before-time**: The timestamp before which the change must have occured. 
+* **after-time**: The timestamp after which the change must have occured. 
+* **before-mutation**: The beforemutation (time difference) of the changecondition.
+* **after-mutation**: The aftermutation (time difference) of the changecondition.
 
 ## Individual properties
 * **change-type**: The changetype of the changecondition. See the [change types table](./rest-condition-type-change#change-types)
-* **field**: Database field to be changed/not changed
-* **interest**: Database interest to be changed/not changed
+* **field**: Database field to be changed/not changed.
+* **interest**: Database interest to be changed/not changed.
 
 ## Change types
 
