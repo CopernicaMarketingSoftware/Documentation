@@ -6,14 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 email condition.
 
-## Navigation
-* [Date properties](rest-condition-type-email#date-properties)
-* [Mailing properties](rest-condition-type-email#mailing-properties)
-* [Individual properties](rest-condition-type-email#individual-properties)
-* [Required results](rest-condition-type-email#required-results)
-* [Example](rest-condition-type-email#example)
-* [More information](rest-condition-type-email#more-information)
-
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
@@ -32,7 +24,7 @@ email condition.
 * **number**: The required number of messages that are received by the recipient.
 * **operator**: The operator to compare the number of messages with the number 
 of received messages by the profile/subprofile. Possible values: 
-\= (equal), \!\= (not equal), \<\> (between), \< (less than), \> (greater than).
+= (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
 ## Individual properties
 * **required-result**: The certain result of an email. See the [required result table](./rest-condition-type-email#required-results)

@@ -6,10 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 part condition.
 
-## Navigation
-* [Individual properties](rest-condition-type-part#individual-properties)
-* [More information](rest-condition-type-part#more-information)
-
 ## Individual properties
 * **begin**: The first selected profile as a number or percentage. By 
 using a negative value the begin count begins at the end.

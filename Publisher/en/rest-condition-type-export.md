@@ -6,11 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 export condition.
 
-## Navigation
-* [Date properties](rest-condition-type-export#date-properties)
-* [Individual properties](rest-condition-type-export#individual-properties)
-* [More information](rest-condition-type-export#more-information)
-
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time

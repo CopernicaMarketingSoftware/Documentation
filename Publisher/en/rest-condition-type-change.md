@@ -6,13 +6,6 @@ which something happened (date properties), others concern mailing information
 (individual properties). This article is about the properties of the 
 change condition.
 
-## Navigation
-* [Date properties](rest-condition-type-change#date-properties)
-* [Individual properties](rest-condition-type-change#individual-properties)
-* [Example](rest-condition-type-change#example)
-* [Change types](rest-condition-type-change#change-types)
-* [More information](rest-condition-type-change#more-information)
-
 ## Date properties
 * **before-time**: Matches only profiles that received the document before this time
 * **after-time**: Matches only profiles that received the document after this time
