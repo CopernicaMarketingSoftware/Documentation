@@ -26,6 +26,7 @@ the specific articles:
 - [Date conditions](./rest-condition-type-date.md)
 - [DoubleField conditions](./rest-condition-type-doublefield.md)
 - [Email conditions](./rest-condition-type-email.md)
+- [Export conditions](./rest-condition-type-export.md)
 - [Fax conditions](./rest-condition-type-fax.md)
 - [Field conditions](./rest-condition-type-field.md)
 - [Interest conditions](./rest-condition-type-interest.md)
