@@ -10,7 +10,7 @@ code**. This is a very well documented php-based (but much easier)
 scripting language. You can make use of Smarty personalization virtually
 anywhere in your campaigns. Not only in e-mail documents and websites,
 but also for example in web forms and follow-up actions. Copernica
-supports both Smarty verion 2 and 3 (though we recommend using version
+supports both Smarty version 2 and 3 (though we recommend using version
 3).
 
 -   [What is
@@ -44,10 +44,10 @@ system and very well documented by a large army of enthusiasts.
 Most smarty template functions can be used in your Copernica campaigns.
 Some functions and modifiers however are disabled because of security
 reasons. If you want to use a function or modifier that is currently
-blocked in our software, please send a request to our support team.
-Maybe we can fix it for you.
+blocked in our software, please send a request to our support team, so 
+that we may consider adding this function.
 
--   [Check out the full and uncencored Smarty
+-   [Check out the full and uncensored Smarty
     documentation](http://www.smarty.net/docs/en/)
 
 ## Copernica special functions and tags

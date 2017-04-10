@@ -1,3 +1,5 @@
+## Personalization: A Smarty introduction
+
 Personalization is adapting a mailing to the individual subscriber.
 Inserting their name in an e-mail for example, or by displaying
 different content to different target groups or different images based
@@ -5,7 +7,7 @@ on interests.
 
 **Personalization is based on profile and/or subprofile information.**
 
-### How does personalization work (smarty)
+## How personalization works with Smarty
 
 Mailings, web pages, text messages and PDF files are personalized with
 special coding from a tool known as Smarty. This is an external software
@@ -13,14 +15,13 @@ tool incorporated in the application. When the document is sent, the
 coding is replaced by information from your database profiles. Creating
 unique mailings for each recipient.
 
-Writing personalization code with variables
--------------------------------------------
+## Writing personalization code with variables
 
 Writing personalization code is done by adding { and } and \$ to
 variables. A variable can hold different values and is directly linked
 to a database field or created within the document using smarty code.
 
-### Personalizing with database field names
+## Personalizing with database field names
 
 By placing text between left and right braces (curly brackets) the
 application recognizes it as smarty text to be replaced with data. The
@@ -48,7 +49,7 @@ You may also create your own variables in the document:
 displayed personalized. You can capture anything, including other smarty
 code.
 
-### Personalizing with interest fields
+## Personalizing with interest fields
 
 Interest fields are database fields that can hold only 2 values: yes and
 no. They are particularly useful to store preferences. Personalizing
@@ -58,7 +59,7 @@ variable itself is used.
 
 For example **football** would be used as {\$profile.football}
 
-### Where can I use personalization?
+## Where can I use personalization?
 
 You can use smarty personalization code anywhere in the software.
 
@@ -70,7 +71,7 @@ You can use smarty personalization code anywhere in the software.
 -   Hyperlinks and mailto: links
 -   Et cetera...
 
-### Custom tags
+## Custom tags
 
 Additional to Smarty, we have incorporated lots of custom tags that can
 be used within your online campaigns. Amongst them the {unsubscribe} and
@@ -80,7 +81,7 @@ smarty coding, the **custom functions have no dollar signs**.
 -   [View all Copernica tags and
     functions](https://www.copernica.com/en/support/special-functions-and-tags)
 
-### Further reading:
+## Further reading:
 
 -   Full smarty documentation:
     [http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/)
