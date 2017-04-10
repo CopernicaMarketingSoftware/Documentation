@@ -42,7 +42,6 @@
 * [Oude documentatie](./old-documentation.md)
     * [Databasebeheer](./database-management.md)
     * [Importeren en exporteren](./import-and-export.md)
-    * [Selecties en miniselecties](./selections-and-miniselections.md)
     * [Webformulieren](./web-forms.md)
     * [Templates en documenten](./templates-and-documents.md)
     * [Mailings verzenden](./sending-mailings.md)
