@@ -20,38 +20,38 @@ tags will not be rendered. In the above example we cleverly use the {mailonly}
 block to hide the web version link if the user already views the mail in his
 or her browser.
     
-
 ## Available functions
 
 The list of available functions is long. There are a lot of functions that 
 are built-in Smarty functions, and a number of Copernica-only functions:
 
-* **[{assign}](./personalization-function-assign)**: assign a value to a variable
-* **[{capture}](./personalization-function-capture)**: capture text and store it in a variable
-* **[{condition}](./personalization-function-condition)**: conditional block based on a javascript expression
-* **[{counter}](./personalization-function-counter)**: incrementing counter
-* **[{cycle}](./personalization-function-cycle)**: cycle between two values
-* **[{feed}](./personalization-function-feed)**: load an external RSS feed
-* **[{fetch}](./personalization-function-fetch)**: import externally hosted content
-* **[{foreach}](./personalization-function-foreach)**: iterate over an array
-* **[{if}](./personalization-function-if)**: conditional block
-* **[{in_miniselection}](./personalization-function-in_miniselection)**: mark text that is only rendered if subprofile belongs to a miniselection
-* **[{in_selection}](./personalization-function-in_selection)**: mark text that is only rendered if profile belongs to a selection
-* **[{ldelim}](./personalization-function-ldelim)**: left curly bracket
-* **[{literal}](./personalization-function-literal)**: mark literal block in which curly brackets are permitted
-* **[{linkemail}](./personalization-function-linkemail)**: link to web version of a different email
-* **[{linkfile}](./personalization-function-linkfile)**: link to a file
-* **[{linkpdf}](./personalization-function-linkpdf)**: link to a PDF document
-* **[{loadfeed}](./personalization-function-loadfeed)**: load external RSS feed
-* **[{loadfile}](./personalization-function-loadfile)**: load file into mailing
-* **[{mailonly}](./personalization-function-mailonly)**: mark text that is only rendered in the mail (not on the web)
-* **[{math}](./personalization-function-math)**: calculations and mathematical equations
-* **[{rawcapture}](./personalization-function-rawcapture)**: like {capture}, but without html escaping
-* **[{strip}](./personalization-function-strip)**: remove whitespace
-* **[{survey}](./personalization-function-survey)**: display a survey
-* **[{rdelim}](./personalization-function-rdelim)**: right curly bracket
-* **[{textformat}](./personalization-function-textform)**: text formatting
-* **[{unsubscribe}](./personalization-function-unsubscribe)**: unsubscribe link
-* **[{webform}](./personalization-function-webform)**: render a webform
-* **[{webonly}](./personalization-function-webonly)**: mark text that is only rendered on the web (not in an email)
+* **[{assign}](./personalization-functions-assign)**: assign a value to a variable
+* **[{capture}](./personalization-functions-capture)**: capture text and store it in a variable
+* **[{condition}](./personalization-functions-condition)**: conditional block based on a javascript expression
+* **[{counter}](./personalization-functions-counter)**: incrementing counter
+* **[{cycle}](./personalization-functions-cycle)**: cycle between two values
+* **[{feed}](./personalization-functions-feed)**: load an external RSS feed
+* **[{fetch}](./personalization-functions-fetch)**: import externally hosted content
+* **[{foreach}](./personalization-functions-foreach)**: iterate over an array
+* **[{if}](./personalization-functions-if)**: conditional block
+* **[{in_miniselection}](./personalization-functions-in_miniselection)**: mark text that is only rendered if subprofile belongs to a miniselection
+* **[{in_selection}](./personalization-functions-in_selection)**: mark text that is only rendered if profile belongs to a selection
+* **[{ldelim}](./personalization-functions-ldelim)**: left curly bracket
+* **[{literal}](./personalization-functions-literal)**: mark literal block in which curly brackets are permitted
+* **[{linkemail}](./personalization-functions-linkemail)**: link to web version of a different email
+* **[{linkfile}](./personalization-functions-linkfile)**: link to a file
+* **[{linkpdf}](./personalization-functions-linkpdf)**: link to a PDF document
+* **[{loadfeed}](./personalization-functions-loadfeed)**: load external RSS feed
+* **[{loadfile}](./personalization-functions-loadfile)**: load file into mailing
+* **[{mailonly}](./personalization-functions-mailonly)**: mark text that is only rendered in the mail (not on the web)
+* **[{math}](./personalization-functions-math)**: calculations and mathematical equations
+* **[{rawcapture}](./personalization-functions-rawcapture)**: like {capture}, but without html escaping
+* **[{strip}](./personalization-functions-strip)**: remove whitespace
+* **[{survey}](./personalization-functions-survey)**: display a survey
+* **[{rdelim}](./personalization-functions-rdelim)**: right curly bracket
+* **[{textformat}](./personalization-functions-textform)**: text formatting
+* **[{unsubscribe}](./personalization-functions-unsubscribe)**: unsubscribe link
+* **[{webform}](./personalization-functions-webform)**: render a webform
+* **[{webonly}](./personalization-functions-webonly)**: mark text that is only rendered on the web (not in an email)
 
+[Back to personalization](./personalization)
