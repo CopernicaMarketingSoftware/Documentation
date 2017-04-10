@@ -31,7 +31,7 @@ van een organisatie. Dit betekent concreet dat je tekst toe kunt voegen als:
 
 ```text
 "Al onze medewerkers versturen altijd e-mail, ondertekend door DKIM. Daarnaast
-komen al onze e-mails van servers die met valide SPF 'records'. Mocht je een 
+komen al onze e-mails van servers met valide SPF 'records'. Mocht je een 
 e-mail ontvangen zonder DKIM ondertekening en SPF, dan kun je de e-mail weggooien.
 Laat ons alsjeblieft weten als je verdachte e-mails ontvangt en vervolgens weggooit.
 Op die manier kunnen wij binnen onze organisatie bekijken, waar de fout eventueel
@@ -70,18 +70,18 @@ versturen door middel van SMTPeter.com. Echter, wees wel voorzichtig!
 Op het moment dat je de DNS 'records' update voor al je domeinen, zijn alle e-mails 
 die je niet verstuurt door middel van SMTPeter ongeldig. Hoewel dit niet noodzakelijk
 betekent dat deze e-mails worden geweigerd (je kan namelijk in het DMARC 'record' aangeven
-dat ongeldige e-mails initieel altijd worden geaccepteer ), is het natuurlijk beter
+dat ongeldige e-mails initieel altijd worden geaccepteer), is het natuurlijk beter
 om uiteindelijk je hele e-mail structuur te verbeteren. Op die manier kan je garanderen 
 dat alle e-mail die door SMTPeter gaat correct worden ondertekend en verstuurd van de
 juiste servers. 
 
 
 Is het veranderen van de gehele e-mailstructuur nu nog teveel moeite?
-Dan kun je de alternatieve manier proberen: het gebruik van '_subdomains_'.
+Dan kun je de alternatieve manier proberen, namelijk het gebruik van _subdomains_.
 Als je normale e-mail bijvoorbeeld wordt verstuurd vanuit het 'yourcompany.com'
 domein kun je SMTPeter gebruiken om een 'sender domain' op te zetten voor een
 'subdomain'. Bijvoorbeeld 'newsletter.yourcompany.com'. Nadat dit is opgezet
-kun je SMTPeter gebruiken voor e-mails met een '_from_' adres dat eindigt op 
+kun je SMTPeter gebruiken voor e-mails met een _from_ adres dat eindigt op 
 '@newsletter.example.com'. Je kunt nog steeds gebruik maken van je huidige
 instellingen en het versturen van e-mail van example.com.
 
@@ -91,12 +91,12 @@ instellingen en het versturen van e-mail van example.com.
 De DMARC technologie stelt je in staat om te specificeren wat ontvangers (bedrijven
 als Google, Yahoo en Microsoft) moeten doen met ongeldige e-mails die van jou
 lijken te komen. Er zijn drie mogelijke instellingen waaruit te kiezen valt.
-De meest toegevelijke instelling is '_none_', dit betekent dat je wilt dat de ontvangers 
+De meest toegevelijke instelling is _none_, dit betekent dat je wilt dat de ontvangers 
 de uitkomst van de SPF en DKIM checks negeren en de e-mails gewoon in de inbox
-belanden. Een wat strengere instelling is de '_quarantine_'. Met deze instelling 
+belanden. Een wat strengere instelling is de _quarantine_. Met deze instelling 
 worden de e-mails met een foutieve SPF of DKIM check alsnog afgeleverd. Echter, 
 de e-mails worden wel in een aparte folder geplaatst. Dit is meestal de spam folder.
-De laatste instelling '_reject_' is de meest strenge. Deze instelling blokt daadwerkelijk
+De laatste instelling _reject_ is de meest strenge. Deze instelling blokt daadwerkelijk
 de aflevering van e-mails met foutieve DKIM ondertekeningen of IP adressen die niet in
 SPF zijn opgenomen.
 
@@ -109,7 +109,7 @@ zorgen te hoeven maken over het feit dat alle e-mails worden afgewezen.
 
 Het 'deployen' van DMARC is veilig: je kunt het beste starten met een hele losse DMARC
 setting. Maak gebruik van de 'quarantine' instelling in combinatie met 1% checks.
-Je kunt dat rustig het percentage omhoog doen, naarmate je tevreden bent met de 
+Je kunt dan rustig het percentage omhoog brengen naarmate je tevreden bent met de 
 resultaten. Je kunt dan later overstappen op de 'reject' instelling en die vervolgens 
 ook weer laten oplopen qua percentage `(1% -> 100%)`.
 
