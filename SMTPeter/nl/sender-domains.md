@@ -1,9 +1,8 @@
 # Sender Domains
 
-SMTPeter gebruikt het concept 'Sender Domains', of zender domeinen,
-om email simpeler te maken. Het laat je email versturen zonder je bezig 
-te houden met SPF, DKIM en DMARC. Zo kun jij je bezig houden met je 
-bedrijf terwijl wij je berichten afhandelen.
+SMTPeter gebruikt het concept 'Sender Domains' om email simpeler te maken. 
+Het laat je email versturen zonder je bezig te houden met SPF, DKIM en DMARC. 
+Zo kun jij je bezig houden met je bedrijf, terwijl SMTPeter je berichten afhandelt.
 
 Dit artikel gaat over wat een zender domein precies doet. Het werkt als 
 volgt: Op het SMTPeter dashboard geef je aan vanaf welke domeinen je 
@@ -26,7 +25,7 @@ mail te versturen, wisselende publieke en persoonlijke key pairs for DKIM
 signatures bijhouden en DMARC archieven in je DNS opslaan zodat de 
 wereld weet dat jij de enige bent die dit domein gebruikt om mee te emailen.
 
-SMTPeter neemt deze verantwoordelijkheden van je over met zender domeinen.
+SMTPeter neemt deze verantwoordelijkheden van je over met 'sender domains'.
 Wij maken SPF, DKIM en DMARC archieven voor je aan en slaan ze op onze 
 DNS servers op. Zelf hoef je alleen een aantal archieven in je eigen DNS 
 archief aan te maken door deze aan je DNS provider te geven of op je eigen 
@@ -52,7 +51,7 @@ DKIM ondertekenening onder elke mail via de SMTPeter servers kunnen zetten.
 
 Om de juiste sleutels te gebruiken halen we de sleutels uit elk "van" adres
 dat we gebruiken. Daarom is het belangrijk dat je altijd geregistreerde 
-zender domeinen gebruikt. Als je geen keys hebt opgezet wordt jij niet 
+'sender domains' gebruikt. Als je geen keys hebt opgezet wordt jij niet 
 geverifieerd als de afzender van de email.
 
 ## Tracking en bounce domeinen
