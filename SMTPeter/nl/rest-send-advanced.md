@@ -1,4 +1,4 @@
-# Geavanceerde opties
+# Geavanceerde verzendopties
 
 Door speciale 'properties' toe te voegen aan de input van de JSON, kun je bepaalde
 properties van SMTPeter aan of uitzetten. Zo kun je bijvoorbeeld het aantal kliks, 

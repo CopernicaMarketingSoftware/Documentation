@@ -1,4 +1,4 @@
-# Opvragen van gearchiveerde berichten
+# Opvragen van berichten
 
 Alle berichten worden automatisch [gearchiveerd](), zodra ze via SMTPeter worden 
 verstuurd. De REST API kan bijna elke 'property' achterhalen van e-mails

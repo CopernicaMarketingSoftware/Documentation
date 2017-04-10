@@ -9,7 +9,7 @@
     * [Versturen op basis van een template](rest-send-template)
     * [Geavanceerde verzendopties](rest-send-advanced)
 * [Overige REST calls](rest-other-calls)
-    * [Opvragen van gearchiveerde berichten](rest-messages)
+    * [Opvragen van berichten](rest-messages)
     * [Opvragen van 'events'](rest-events)
     * [Opvragen van 'log files'](rest-logfiles)
     * [Opvragen van 'DMARC reports'](rest-dmarc)
