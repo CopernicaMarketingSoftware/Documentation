@@ -22,9 +22,8 @@ pagina.
 
 ## REST vs SMTP
 
-Het versturen van e-mails door middel van SMTPeter kan via de REST 
-en de SMTP API. Zoals in de voorgaande tekst al duidelijk werd gemaakt, 
-raden we je sterk aan om, als je de keuze hebt, te gaan voor de 
+SMTPeter maakt het mogelijk om e-mails te versuren via de REST API en
+en de SMTP API. We raden je sterk aan om, als je de keuze hebt, te gaan voor de 
 REST API. Deze API geeft je zoveel meer opties, vrijheid en gebruiksgemak. 
 Denk bijvoorbeeld aan de complexe en tijdrovende SMTP handshake die gedaan 
 moet worden om e-mails te versturen van de ene naar de andere server.
