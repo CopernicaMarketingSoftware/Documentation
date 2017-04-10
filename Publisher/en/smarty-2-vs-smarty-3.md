@@ -75,5 +75,5 @@ or
 ## More information
 
 * [Smarty documentation](http://www.smarty.net/docs/en/)
-* [Personalization general(./personalization)
+* [Personalization general](./personalization)
 * [Personalization functions](./personalization-functions)

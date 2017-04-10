@@ -1,3 +1,5 @@
+# Magento
+
 By linking your Magento webshop to Copernica Marketing Software, you
 will be able to create professional email campaigns and automate email
 marketing throughout the customer journey. The integration automatically
