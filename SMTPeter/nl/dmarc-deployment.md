@@ -1,22 +1,23 @@
 # DMARC deployment
 
 Naast [DKIM](dkim-signing) en [SPF](spf-validation) is er nog een derde 
-technologie die ontvangers gebruiken om te bepalen of een e-mail
-legitiem of onecht was. Deze technologie heet DMARC en is bedacht om
-de tekortkomingen van DKIM en SPF op te vangen.
+technologie die ontvangers gebruiken om te bepalen of een e-mail legitiem 
+of onecht is. Deze technologie heet DMARC en is bedacht om de tekortkomingen 
+van DKIM en SPF op te vangen.
 
 Om DMARC te begrijpen, moet je realiseren dat nieuwe toepassingen altijd
-_optioneel_ zijn. DKIM en SPF zijn ooit bedacht om e-mail veiliger te,
-maar het is volkomen legitiem om e-mails te versturen _zonder_ DKIM 
-ondertekenignen of om e-mails te versturen vanaf servers die _niet_ zijn 
-opgenomen in SPF 'records'. Het volgende scenario toont de waarde van DMARC:
-Het kan voorkomen dat het IT departement van een organisatie ervoor heeft 
-gezorgd dat iedereen e-mails kan versturen met geldige DKIM ondertekeningen.
+_optioneel_ zijn. DKIM en SPF zijn ooit bedacht om e-mail veiliger te maken,
+maar het is volkomen legitiem om e-mails te versturen zonder DKIM 
+ondertekenignen of om e-mails te versturen vanaf servers die niet zijn 
+opgenomen in SPF 'records'. Het volgende scenario toont de toegevoegde
+waarde van DMARC: het kan voorkomen dat het IT departement van een organisatie 
+ervoor heeft gezorgd dat iedereen e-mails kan versturen met geldige DKIM 
+ondertekeningen.
 
 Echter, er is een persoon in deze organisatie die thuis een mail server 
 heeft lopen en zonder ondertekeningen e-mails verstuurt. Het is niet
-mogelijk voor een ontvanger om na te gaan of de e-mail van deze organisatie
-legitiem was. Het kon een fout zijn van de organisatie, maar ook een phiser 
+mogelijk voor een ontvanger om na te gaan of de e-mail van deze persoon
+legitiem was. Het kon een fout zijn van de organisatie, maar ook een 'phiser' 
 die kwade bedoelingen had met de e-mail. Concluderend, een DKIM sleutel en 
 SPF record zijn nog steeds niet genoeg om valide van invalide e-mails te 
 onderscheiden. DMARC is bedacht om dit op te vangen.
@@ -24,15 +25,18 @@ onderscheiden. DMARC is bedacht om dit op te vangen.
 
 ## DMARC en DNS
 
-Net zoals DKIM en SPF, is DMARC ook afhankelijk van de DNS. DMARC staat 
+Net zoals DKIM en SPF, is DMARC ook gebasseerd op DNS. DMARC staat 
 toe om een extra DNS toe te voegen met daarop instructies over de procedures
 van een organisatie. Dit betekent concreet dat je tekst toe kunt voegen als:
+
+```text
 "Al onze medewerkers versturen altijd e-mail, ondertekend door DKIM. Daarnaast
 komen al onze e-mails van servers die met valide SPF 'records'. Mocht je een 
 e-mail ontvangen zonder DKIM ondertekening en SPF, dan kun je de e-mail weggooien.
 Laat ons alsjeblieft weten als je verdachte e-mails ontvangt en vervolgens weggooit.
 Op die manier kunnen wij binnen onze organisatie bekijken, waar de fout eventueel
 vandaan kan komen."
+```
 
 Bovenstaand scenario laat perfect zien wat DMARC precies is. Het stelt ontvangers
 in staat om de DNS te raadplegen en daardoor is het voor de ontvangers mogelijk om 
