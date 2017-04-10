@@ -5,7 +5,7 @@ Smarty syntax. The smarty code to use a name for example is `{$name}`.
 However, this means you can't use curly brackets in your text without a second 
 thought. There are three ways to escape the brackets: Placing spaces 
 around the brackets ([Smarty](./smarty-2-vs-smarty-3) 3 only), *ldelim* and 
-*rdelim* and [literal](./personalization-functions-literal).
+[rdelim](./personalize-functions-rdelim) and [literal](./personalization-functions-literal).
 
 To output a left curly bracket '{' you can use the code `{ldelim}` which 
 is short for left delimiter. To output a right curly bracket '}' you can 

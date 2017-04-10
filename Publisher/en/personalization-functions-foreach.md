@@ -33,7 +33,7 @@ with the [capture function](./personalization-functions-capture).
     
 The output is:
 
-    Bob, 25, the Netherlands
+`Bob, 25, the Netherlands`
     
 We can also use the other properties of the iteration for this loop.
 
@@ -47,7 +47,7 @@ We can also use the other properties of the iteration for this loop.
 In this case we print the index of every item and a message before we 
 print index 3. The output looks like this:
 
-    1, 2, End of the list, 3,
+`1, 2, End of the list, 3`
     
 ## More information
 
