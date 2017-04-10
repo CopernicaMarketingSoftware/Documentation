@@ -1,12 +1,12 @@
-# Gearchiveerde berichten
+# Opvragen van gearchiveerde berichten
 
 Alle berichten worden automatisch [gearchiveerd](), zodra ze via SMTPeter worden 
-verstuurd. De REST API kan bijna elke 'property' achterhalen van emails
+verstuurd. De REST API kan bijna elke 'property' achterhalen van e-mails
 die door SMTPeter zijn gegaan tijdens het versturen. Je kunt bijvoorbeeld met 
-de 'text' en 'html' methodes de structuur opvragen van verzonden emails.
+de 'text' en 'html' methodes de structuur opvragen van verzonden e-mails.
 
 De hieropvolgende lijst laat de verschillende methodes zien die kunnen worden
-gebruikt om 'properties' te achterhalen van verstuurde emails. Voor het gebruik
+gebruikt om 'properties' te achterhalen van verstuurde e-mails. Voor het gebruik
 van deze methodes heb je wel een unieke 'message ID' nodig. 
 
 ```text
@@ -26,8 +26,8 @@ https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ## 'Envelope' en ontvanger adres
 
 Het originele 'envelope' en ontvanger adres, dat je door middel van de
-API hebt gebruikt voor het versturen van emails, kan worden achterhaald 
-met de 'recipient' en 'envelope' methode. Beide methoden geven een email
+API hebt gebruikt voor het versturen van e-mails, kan worden achterhaald 
+met de 'recipient' en 'envelope' methode. Beide methoden geven een e-mail
 adres terug in normaal text formaat.
 
 ```text
@@ -37,7 +37,7 @@ https://www.smtpeter.com/v1/recipient/MESSAGEID
 
 Het is handig om te vermelden dat SMTPeter, normaal gesproken, zelf
 het 'envelope' adres verandert. Dit doet SMTPeter om de events rondom
-het versturen van de emails te kunnen detecteren. Denk hierbij aan het
+het versturen van de e-mails te kunnen detecteren. Denk hierbij aan het
 traceren van 'bounces' en 'errors'. Vaak is het 'envelope' adres dat je
 terugkrijgt niet hetzelfde als het adres dat je initieel had opgegeven.
 Je kunt natuurlijk ook helemaal geen 'envelope' opgeven. In dat geval
@@ -46,7 +46,7 @@ krijg je een lege string terug.
 
 ## Inhoud van berichten
 
-Je kunt de 'text' of 'html' versie van een verstuurde email gemakkelijk
+Je kunt de 'text' of 'html' versie van een verstuurde e-mail gemakkelijk
 achterhalen door de 'text' of 'html' methode. De gehele oorspronkelijke 
 'headers' kunnen worden uitgelezen met de 'headers' method. Dit kun je 
 op de volgende manier doen:
@@ -63,7 +63,7 @@ tekstt is in regulier 'text' formaat.
 
 ## Bijlages
 
-Je kunt de bijlages van een email opvragen via de volgende methode:
+Je kunt de bijlages van een e-mail opvragen via de volgende methode:
 
 ```text
 (1) https://www.smtpeter.com/v1/attachments/MESSAGEID
@@ -82,10 +82,10 @@ te geven.
 
 ## 'Embedded' content
 
-Emails kunnen worden verstuurd met 'embedded' afbeeldingen. De afbeeldingen worden
+e-mails kunnen worden verstuurd met 'embedded' afbeeldingen. De afbeeldingen worden
 'embed' in het MIME bericht. Bijlages worden op min of meer dezelfde wijze aan een
-email gelinkt. De REST API heeft een aantal methodes om alle 'embedded' content, 
-wat bij een email hoort, te weergeven.
+e-mail gelinkt. De REST API heeft een aantal methodes om alle 'embedded' content, 
+wat bij een e-mail hoort, te weergeven.
 
 ```text
 (1) https://www.smtpeter.com/v1/embeds/MESSAGEID
