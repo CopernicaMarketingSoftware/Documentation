@@ -1,4 +1,4 @@
-# Wordt een Copernica franchiser
+# Word een Copernica franchiser
 
 Copernica BV groeit internationaal via zijn netwerk van partners. Een
 partner kan bij goede prestaties franchiserechten verwerven. Hiermee
