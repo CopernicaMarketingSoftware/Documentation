@@ -2,7 +2,7 @@
 
 The *cycle* function can be used to alternate between a set of values. 
 You can use it to switch between two colors in a table or cycle through 
-an array of values.
+an array of colors or any other array of values.
 
 ## Variables
 
@@ -29,7 +29,7 @@ colors.
         {cycle values="red;orange;yellow;green;blue;indigo;purple, name=$product.color, delimiter=";"}
     {\foreach}
     
-Because we did not sent print to false we get the following output.
+Because we did not set print to false we get the following output.
 
     redorangeyellowgreenblueindigopurple
     
