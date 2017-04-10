@@ -163,3 +163,4 @@ personalization variabeles are accessible via the object {$property} variable:
 
 * **{$property.*fieldname*}**: value of the extra personalization variabele *fieldname*.
 
+[Back to personalization](./personalization)
