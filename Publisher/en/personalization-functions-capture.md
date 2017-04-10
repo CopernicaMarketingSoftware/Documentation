@@ -12,8 +12,19 @@ want to escape HTML please replace *capture* by *rawcapture* in the following
 examples.
 
 Capture has many different functionalities. It can simply store information, 
-store it in a variable or append to an existing variable. We will now proceed 
-with some examples to make you more familiar with the use of this function.
+store it in a variable or append to an existing variable. We will show its 
+variables first and then show some examples on how to use them.
+
+## Variables
+
+| Variable name | Description                      |
+|---------------|----------------------------------|
+| name          | Name of the captured block       |
+| assign        | Variable to store the block in   |
+| append        | (Existing) variable to append to |
+
+Only the name is required, the other two variables are optional. If you 
+do not supply a name it will be set to 'default'.
 
 ## Assigning without variable name
 
@@ -83,14 +94,6 @@ What happens here is that we cycle through everything in *information* and
 print it after converting it to text. The final output looks like this:
 
     Bob, 25, the Netherlands
-    
-## Variables
-
-| Variable name | Description                      |
-|---------------|----------------------------------|
-| name          | Name of the captured block       |
-| assign        | Variable to store the block in   |
-| append        | (Existing) variable to append to |
 
 ## More information
 
