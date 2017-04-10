@@ -1,6 +1,6 @@
 # Bounce protocol
 
-Als je een email verstuurt ontvang je allerlei bounce berichten. 
+Als je een e-mail verstuurt ontvang je allerlei bounce berichten. 
 Tussen deze berichten vindt je de status van ontvangst voor adressen 
 die niet meer bestaan, afwezigheidsberichten, bevestigingsberichten en 
 andere automatisch gegenereerde berichten.
@@ -8,9 +8,9 @@ andere automatisch gegenereerde berichten.
 SMTPeter kan geconfigureerd worden om hier op een goede manier mee om te 
 gaan. Er zijn hier verschillende opties voor.
 
-## Het envelope adres
+## Het 'envelope' adres
 
-Wanneer je email toevoegd via de [SMTP API](smtp-api) of de 
+Wanneer je e-mail toevoegd via de [SMTP API](smtp-api) of de 
 [REST API](rest-api) kun je een "envelope adres" toevoegen. Dit is het 
 adres waarop de bounces worden afgeleverd. Deze hoeft niet hetzelfde te 
 zijn als het "van" adres. Het "van" adres wordt gebruikt wanneer iemand 
@@ -19,12 +19,12 @@ voor geautomatiseerde antwoorden.
 
 Als je helemaal niet geinteresseerd bent in deze berichten kun je ze 
 voorkomen door geen envelope adres in te stellen. Je kunt dan helemaal 
-geen email van bounces ontvangen. Als je email ontvangt op je verzender 
+geen e-mail van bounces ontvangen. Als je e-mail ontvangt op je verzender 
 adres dan is dit gestuurd door iemand persoonlijk. 
 
 Om geen envelope adres mee te geven met de REST API hoef je alleen de 
 "envelope" parameter weg te laten in de POST data. Met de SMTP API kun 
-je ook email injecteren zonder envelope adress met het volgende voorbeeld:
+je ook e-mail injecteren zonder envelope adress met het volgende voorbeeld:
 
 ````
 MAIL FROM:<>
@@ -39,7 +39,7 @@ DATA
 Zoals je hierboven kunt zien is "MAIL FROM" ook geldig zonder envelope 
 adres.
 
-## Bounce tracking
+## 'Bounce tracking'
 
 Als je wel een "envelope" adres toegevoegd hebt kun je SMTPeter 
 instructies geven over het afhandelen van bounce informatie.
@@ -64,7 +64,7 @@ envelope adres met een valide SPF optekening in DNS gebruikt.
 
 Deze variabele kan niet aangepast worden in de [SMTP API](smtp-api).
 De enige toegang tot de variabele is via het dashboard, waar de variabele 
-na aanpassing automatisch wordt toegepast op alle emails met deze 
+na aanpassing automatisch wordt toegepast op alle e-mails met deze 
 verzender.
 
 ## Aankomst Status Notificaties
@@ -77,7 +77,7 @@ Je kunt er daarom ook voor kiezen om deze niet daarnaast nog door te
 laten sturen.
 
 Het SMTP protocol heeft een DSN extensie die dit toelaat. Wanneer je 
-email bevestigt met dit protocol kun je specificeren welke emails je 
+e-mail bevestigt met dit protocol kun je specificeren welke e-mails je 
 wilt ontvangen. Je kunt dan zelf besluiten of je deze notificaties wil 
 ontvangen, alleen errors of alle notificaties, etc.
 
@@ -142,7 +142,7 @@ he "envid" and "orcpt" settings are fields
 Stel je voor dat je afwezigheidsberichten wilt ontvangen en andere bounces, 
 maar geen DSN berichten omdat je weet dat deze al in SMTPeter error 
 logs worden opgeslagen. Je kunt dan de volgende JSON REST data gebruiken in 
-je email.
+je e-mail.
 
 ````
 {

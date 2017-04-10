@@ -14,7 +14,7 @@ goed worden misbruikt. Als een domein eigenaar wil je niet dat andere
 personen e-mail kunnen versturen vanuit jouw domein.
 
 DKIM kan worden gebruikt om dit te voorkomen. Het stelt ontvangende partijen 
-in staat om te verifieren of een email daadwerkelijk door jou is verstuurd.
+in staat om te verifieren of een e-mail daadwerkelijk door jou is verstuurd.
 DKIM kan daarnaast ook aantonen of de vertuurde e-mail (inclusief de bijlages)
 niet bewerkt is tijdens het transporteren van de ene naar de andere e-mailclient.
 

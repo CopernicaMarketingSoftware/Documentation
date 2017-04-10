@@ -26,9 +26,9 @@ die ervoor zorgt dat 'CSS stylesheets' uit je 'header' worden omgezet naar
 
 ## Het nagaan van kliks, opens en 'bounces'
 
-SMTPeter vervangt automatisch alle 'hyperlinks' in je emails met eigen 'URLs'.
+SMTPeter vervangt automatisch alle 'hyperlinks' in je e-mails met eigen 'URLs'.
 Op deze manier kunnen de verschillende 'events' worden nagegaan. Het 'envelope'
-adres van de emails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
+adres van de e-mails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
 kan SMTPeter ook die 'events' afhandelen. Je kunt deze toepassingen gemakkelijk
 uitzetten. Zie onderstaande JSON data:
 
@@ -42,7 +42,7 @@ uitzetten. Zie onderstaande JSON data:
 }
 ```
 De 'click-tracking' is automatisch geactiveerd. Dit betekent dat *alle* hyperlinks
-zijn ingesteld om 'clicks' te traceren en na te gaan. Echter, sommige 'email clients'
+zijn ingesteld om 'clicks' te traceren en na te gaan. Echter, sommige 'e-mail clients'
 tonen een waarschuwing aan de gebruiks op het moment dat links zijn bewerkt. 
 Dit is in sterkere mate het geval waneer de link waarop gelikt kan worden,
 niet overeenkomt met de 'hyperlink'. In dat geval kan je altijd de "preventscam"
@@ -75,8 +75,8 @@ adres toe te voegen aan de JSON:
 }
 ```
 De bovenstaande JSON instrueert SMTPeter om geen 'bounces' na te gaan.
-In dit geval geeft de JSON aan dat jouw eigen emailadres wordt gebruikt
-om berichten naar te sturen met betrekking tot de niet geleverde emails.
+In dit geval geeft de JSON aan dat jouw eigen e-mailadres wordt gebruikt
+om berichten naar te sturen met betrekking tot de niet geleverde e-mails.
 Wees ervan bewust dat je ook een 'envelope' adres moet toevoegen als je 
 wel 'bounces' wilt ontvangen.
 
@@ -99,12 +99,12 @@ accepteert een JSON objevct met vier optionele velden:
 }
 ```
 De "notify" 'property' is de allerbelangrijkste. Je kunt specificeren voor welke
-soorten 'events' een email notificatie moet worden getriggerd. Mogelijke waardes
+soorten 'events' een e-mail notificatie moet worden getriggerd. Mogelijke waardes
 zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een komma gescheiden lijst met 
 waardes wordt ook ondersteund. 
 
 De "ret" waarde kan de waardes "FULL" of "HDRS" bevatten om te specificeren of de 
-notificatie de gehele email moet bevatten of slechts de 'headers'. 
+notificatie de gehele e-mail moet bevatten of slechts de 'headers'. 
 
 De "envid" and "orcpt" velden kunnen worden gebruikt als je volledige controle wilt
 hebben over de extra data die meegestuurd wordt in de notificaties. De waarde van 

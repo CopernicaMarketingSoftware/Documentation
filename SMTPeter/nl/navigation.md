@@ -24,5 +24,5 @@
     * [DMARC deployment](dmarc-deployment)
     * [Bounce protocol](bounce-handling)
     * [Inline CSS code](inline-css)
-    * [Email throttling](email-throttling)
+    * [E-mail throttling](email-throttling)
     * [Open and click statistieken](statistics)
