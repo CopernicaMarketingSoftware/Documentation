@@ -1,11 +1,12 @@
 # Sender Domains
 
-SMTPeter gebruikt het concept 'Sender Domains' om e-mail simpeler te maken. 
-Het laat je e-mail versturen zonder je bezig te houden met SPF, DKIM en DMARC. 
-Zo kun jij je bezig houden met je bedrijf, terwijl SMTPeter je berichten afhandelt.
+SMTPeter gebruikt het concept van 'sender domains' om e-mail simpeler te maken.
+SPF, DKIM en DMARC zijn lastig te begrijpen en in te stellen. SMTPeter heeft
+hier handige oplossingen voor bedacht, zodat jij je bezig houden met je bedrijf 
+en andere zaken.
 
 Dit artikel gaat over wat een zender domein precies doet. Het werkt als 
-volgt: Op het SMTPeter dashboard geef je aan vanaf welke domeinen je 
+volgt: op het SMTPeter dashboard geef je aan vanaf welke domeinen je 
 wilt mailen en wij vertellen hoe je je DNS moet configureren. Het zender 
 domein is de domein naam die je gaat gebruiken in je e-mails.
 
