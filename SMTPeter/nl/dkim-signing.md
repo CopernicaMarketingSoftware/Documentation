@@ -14,7 +14,7 @@ goed worden misbruikt. Als een domein eigenaar wil je niet dat andere
 personen e-mail kunnen versturen vanuit jouw domein.
 
 DKIM kan worden gebruikt om dit te voorkomen. Het stelt ontvangende partijen 
-in staat om te verifieren of een email daadwerkelijk door jou is verstuurd.
+in staat om te verifieren of een e-mail daadwerkelijk door jou is verstuurd.
 DKIM kan daarnaast ook aantonen of de vertuurde e-mail (inclusief de bijlages)
 niet bewerkt is tijdens het transporteren van de ene naar de andere e-mailclient.
 
@@ -34,48 +34,43 @@ domein te gebruiken als het 'from' adres. Ze kunnen in het algemeen geen
 e-mails versturen vanuit jouw naam, omdat ze simeplweg geen toegang hebben
 tot jouw privésleutel.
 
-<Resterende gedeelte komt asap>
 
-<!-- 
 ## Ondertekenen van e-mails
 
 SMTPeter kan je e-mails ondertekenen met DKIM. SMTPeter moet dan wel weten
-welk 'from' adres je gebruikt. Dit kun je opgecen 
+welk 'from' adres je gebruikt. Je kunt het ['sender domain'](sender-domains)
+configureren in het dashboard. SMTPeter maakt automatisch DKIM sleutels 
+voor je aan en laat je weten hoe je de DNS records kunt updaten.
+Je hoeft de instellingen maar een keer te configureren. Vanaf dat moment
+stuurt SMTPeter alle e-mails vanaf hetzelfde adres als de 'sender domains'.
+
+Het kan voorkomen dat je eigen publieke -en privésleutels hebt. In dit geval
+kun je het dashboard gebruiken om je eigen privésleutels te gebruiken.
+Het is ook mogelijk om SMTPeter te laten weten dat er altijd een ondertekening
+moet worden gebruikt van een bepaalde sleutel, ook al is het 'from' adres
+van de verstuurde e-mail anders dan het 'sender domain'. 
+
+Dit alles neemt niet weg dat het sterk wordt aangeraden om het ondertekenen
+van de e-mail te laten doen door SMTPeter. SMTPeter bewerkt normaal gesproken
+altijd verstuurde e-mails. Bijvoorbeeld om [link kliks, opens](statistics) of
+[CSS code inline te zetten](inline-css). Dit maakt de eerder toegevoegde 
+ondertekening ongeldig.
+
+Het is niet de bedoeling dat je e-mails gaat versturen met verschillende
+'from' adressen anders dan je eigen 'sender domain'. Hoe dan ook, mocht het 
+toch voorkomen dat je e-mails verstuurt met een ander 'from' adres, dan
+kijkt SMTPeter of het een van je 'sender domain' sleutels kan gebruiken om 
+alsnog aan de benodigdheden te voldoen.
 
 
+## Automatische DKIM sleutel rotatie
 
-SMTPeter can sign your mails with DKIM. In order to do this SMTPeter needs to know
-which from addresses you use with SMTPeter. You can configure something called
-sender domains via SMTPeter's dashboard. If you create
-a sender domain, SMTPeter creates DKIM keys and informs you how to update
-the DNS records. This is a one time procedure. Once a sender domain is
-configured, SMTPeter automatically signs mails with from addresses identical
-to the sender domain.
+De privésleutels worden opgeslagen op de SMTPeter servers. Deze zijn op
+geen enkele manier in te zien door anderen. De technologie achter de 
+publieke -en privésleutels is zeer veilig. Echter, de sleutels kunnen 
+'breken' als iemand langdurig met je sleutels in de weer is. Daarom is
+het handig om af en toe nieuwe sleutels genereren. De standaardinstellingen
+van SMTPeter zorgen ervoor dat de sleutels automatisch roteren. Wil je toch 
+nog steeds gebruik maken van je eigen gegenereerde sleutels? Dan is het updaten
+daarvan je eigen verantwoordelijkheid. 
 
-Do you already have private and public key pairs, and do you want
-SMTPeter to use these? No problem, you can use the dashboard to install
-your own private keys too. It is also possible to let SMTPeter know that
-it should always add a signature of a certain key, even if the from address
-of the sent mail is different from the sender domain.
-
-Mind you, even if you have your own keys, it is in general still a good
-idea to leave the signing of email to SMTPeter. SMTPeter normally also
-modifies your email (for example to [track clicks and opens](statistics),
-or to [inlinize CSS code](inline-css)) and this invalidates signatures
-that were added before.
-
-You should of course not be sending out mails with different from addresses
-than your sender domains. However, if you happen to send out mails with a
-different from address SMTPeter will see if it can use one of your sender
-domain keys and still fulfill all necessary requirements.
-
-
-## Automatic DKIM key rotation
-
-The private keys are stored on the SMTPeter servers and are never exposed.
-The technology behind the public and private keys is very secure, yet, if
-someone spends a lot of time on it, keys can be broken. Therefore, you
-want to generate new keys every now and then. If you use SMTPeter's standard
-suggestions, it will rotate your keys automatically. If you want to use
-SMTPeter with your own generated keys, updating the keys is your own responsibility.
- -->
