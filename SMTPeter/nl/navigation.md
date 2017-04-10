@@ -7,7 +7,7 @@
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
     * [Versturen op basis van een template](rest-send-template)
-    * [Overige delivery settings](rest-send-advanced)
+    * [Versturen op basis van overige instellingen](rest-send-advanced)
 * [Overige REST calls](rest-api)
     * [Gearchiveerde berichten](rest-messages)
     * [Opvragen van 'events'](rest-events)

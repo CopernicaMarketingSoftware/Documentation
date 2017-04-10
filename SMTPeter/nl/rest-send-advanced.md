@@ -1,8 +1,8 @@
-# Speciale properties
+# Versturen op basis van overige instellingen
 
 Door speciale 'properties' toe te voegen aan de input van de JSON, kun je bepaalde
-properties van SMTPeter aan of uitzetten. Zo kun je bijvoorbeeld het aantal 'clicks', 
-'opens' en 'bounces' nagaan. Ook kun je bijvoorbeeld aangeven dat je wilt dat SMTPeter 
+properties van SMTPeter aan of uitzetten. Zo kun je bijvoorbeeld het aantal kliks, 
+opens en 'bounces' nagaan. Ook kun je bijvoorbeeld aangeven dat je wilt dat SMTPeter 
 de CSS code 'inline' zet.
 
 ```json
@@ -17,14 +17,14 @@ de CSS code 'inline' zet.
 }
 ```
 
-### Zet CSS 'inline'
+## Zet CSS 'inline'
 
 Door de "inlinecss" variabel op 'true' te zetten activeer je de toepassing
 die ervoor zorgt dat 'CSS stylesheets' uit je 'header' worden omgezet naar
 'inline' attributen in de html code.
 
 
-### Het nagaan van 'clicks', 'opens' en 'bounces'
+## Het nagaan van kliks, opens en 'bounces'
 
 SMTPeter vervangt automatisch alle 'hyperlinks' in je emails met eigen 'URLs'.
 Op deze manier kunnen de verschillende 'events' worden nagegaan. Het 'envelope'
@@ -60,7 +60,7 @@ De "preventscam" optie voorkomt dus de door SMTPeter bewerkte hyperlinks, zoals:
 &lt;a href="http://www.example.com"&gt;www.example.com&lt;/a&gt;
 
 
-### Instellingen voor 'Delivery Status Notifications'
+## Instellingen voor 'Delivery Status Notifications'
 
 SMTPeter kan 'bounces' voor je nagaan. Deze worden gestuurd naar jouw
 'envelope' adres. Je kan deze toepassing aanzetten door het "envelope"
@@ -113,7 +113,7 @@ status bericht. De "orcpt" waarde wordt gekopierd naar de "original-recipient"
 'property.
 
 
-### Instelling voor 'embedded' images
+## Instelling voor 'embedded' images
 
 Het hebben van 'embedded' afbeeldingen in je 'MIME' kan soms wat [problemen](images) geven.
 SMTPeter kan de 'embedded' afbeeldingen uit je 'MIME' halen, hosten, en vervolgens
