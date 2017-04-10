@@ -1,12 +1,8 @@
-# DMARC instellingen en rapporten
+# Opvragen van 'DMARC reports'
 
-SMTPeter ondersteund DMARC. Via de REST API kan je de verstuurde DMARC reports ontvangen. 
-
-## Ontvang DMARC rapporten
-
-Als je [DMARC](dmarc-deployment) gebruikt versturen ISPs en e-mailproviders  periodiek rapportages met SPF en DKIM statistieken.
-
-Deze rapporten zijn te bereiken via de REST GET API met de volgende methodes:
+SMTPeter ondersteund DMARC. Via de REST API kun je de verstuurde DMARC reports ontvangen. 
+Bij het gebruik van [DMARC](dmarc-deployment) versturen ISPs en e-mailproviders periodiek rapportages met SPF en DKIM statistieken.
+Deze rapporten zijn te bereiken via de REST GET API via de volgende methodes:
 
 ```text
 (1) https://www.smtpeter.com/v1/dmarc

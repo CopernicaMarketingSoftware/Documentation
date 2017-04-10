@@ -19,6 +19,18 @@ Echter, het is wel belangrijk dat je alle stappen daadwerkelijk uitvoert omdat S
 anders niet werkt. Deze stappen worden in z'n totaliteit uitgelegd op [deze](sender-domains)
 pagina.
 
+
+## REST vs SMTP
+
+Het versturen van e-mails door middel van SMTPeter kan via de REST 
+en de SMTP API. Zoals in de voorgaande tekst al duidelijk werd gemaakt, 
+raden we je sterk aan om, als je de keuze hebt, te gaan voor de 
+REST API. Deze API geeft je zoveel meer opties, vrijheid en gebruiksgemak. 
+Denk bijvoorbeeld aan de complexe en tijdrovende SMTP handshake die gedaan 
+moet worden om e-mails te versturen van de ene naar de andere server.
+Bij de REST API is deze overbodig. 
+
+
 ## REST API
 
 Voor het gebruik van de REST API heb je een zogeheten 'access token' nodig. Deze kun je

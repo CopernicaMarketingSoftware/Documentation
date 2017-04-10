@@ -1,4 +1,4 @@
-# REST API method: send
+# Verzenden via REST
 
 Om SMTPeter een e-mail te laten versturen hoef je alleen maar met een
 HTTP POST 'request' aan te geven dat je gebruik wilt maken van 
