@@ -3,7 +3,7 @@
 ![Dashboard SMTPeter](Images/dashboardoverview.png "Dashboad Overview")
 
 SMTPeter geeft je de mogelijkheid om de verschillende statistieken 
-van je verstuurde emails direct in te zien. Dit kun je doen binnen 
+van je verstuurde e-mails direct in te zien. Dit kun je doen binnen 
 de omgeving van het 'dashboard'. 
 
 
@@ -11,7 +11,7 @@ de omgeving van het 'dashboard'.
 
 Het welkomstscherm van het dashboard laat direct de statistieken zien
 die in de afgelopen periode zijn opgebouwd. Je kunt het aantal kliks 
-nagaan, maar ook het aantal opens, de verstuurde emails en foutieve
+nagaan, maar ook het aantal opens, de verstuurde e-mails en foutieve
 afleveringen. Je kunt inzoomen door een gewenst startpunt aan te klikken,
 de muis vast te houden en vervolgens te slepen naar het gewenste eindpunt.
 
@@ -30,5 +30,5 @@ goed gaat of waar het juist nog aan schort.
 De 'operations log' laat de logfiles zien die je door middel van de API
 kunt opvragen. Je kunt van een aantal categorieën de logfiles opvragen.
 Bijvoorbeeld de pogingen, gefaalde pogingen en het aantal keer dat een 
-email geopend is. Per log categorie zijn de resultaten steeds weer op
+e-mail geopend is. Per log categorie zijn de resultaten steeds weer op
 een overzichtelijke manier beschikbaar gemaakt.
