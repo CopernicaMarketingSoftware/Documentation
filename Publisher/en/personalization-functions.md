@@ -49,7 +49,7 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 * **[{strip}](./personalization-functions-strip)**: remove whitespace
 * **[{survey}](./personalization-functions-survey)**: display a survey
 * **[{rdelim}](./personalization-functions-rdelim)**: right curly bracket
-* **[{textformat}](./personalization-functions-textform)**: text formatting
+* **[{textformat}](./personalization-functions-textformat)**: text formatting
 * **[{unsubscribe}](./personalization-functions-unsubscribe)**: unsubscribe link
 * **[{webform}](./personalization-functions-webform)**: render a webform
 * **[{webonly}](./personalization-functions-webonly)**: mark text that is only rendered on the web (not in an email)

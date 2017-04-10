@@ -4,7 +4,7 @@ The {assign} function is used to assign a value to a variable, which
 you can then use later. You can assign a variable in two ways:
 
 `{assign var="name" value="Bob"}`
-'{assign "name" "Bob"}`
+`{assign "name" "Bob"}`
 
 They behave exactly the same, because the second example is just a shorter 
 way to write the same thing.

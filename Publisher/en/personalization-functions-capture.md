@@ -61,8 +61,7 @@ The shorthand version looks like this:
         This is some text that I would like to use later in the template.
     {/capture}
     
-To use the captured content you can use the following code:
-    {$myText}
+To use the captured content you can use `{$myText}`.
     
 In this example the text is so short the same could have been accomplished 
 with [assign](./personalization-functions-assign), but you can place any 
@@ -72,8 +71,8 @@ is only supported by [rawcapture](./personalization-functions-rawcapture)).
 ## Using capture with arrays
 
 If you want to use a more advanced technique it is possible to use an 
-array in capture as well, which can be printed with [foreach]. This is 
-particularly useful if you want to concatenate information from different 
+array in capture as well, which can be printed with [foreach](./personalization-functions-foreach). 
+This is particularly useful if you want to concatenate information from different 
 places.
 
 Storing information can be done similarly to the code below:
@@ -93,7 +92,7 @@ Now let's use this variable in our template.
 What happens here is that we cycle through everything in *information* and 
 print it after converting it to text. The final output looks like this:
 
-    Bob, 25, the Netherlands
+`Bob, 25, the Netherlands`
 
 ## More information
 

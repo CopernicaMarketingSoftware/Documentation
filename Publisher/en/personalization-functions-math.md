@@ -16,6 +16,10 @@ The following variables are supported:
 | assign        | Variable to store result in      |
 | \[var ...\]   | Values for variables in equation |
 
+Where the last variable denotes all variables that you use in your equation. 
+In the formula `$a * $b` you have variables $a and $b for example, which 
+should be defined before using an equation. 
+
 ## Supported operators
 
 The supported math operators are +, -, /, *, abs, ceil, cos, exp, floor, 

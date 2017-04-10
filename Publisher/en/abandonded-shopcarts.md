@@ -1,3 +1,5 @@
+# Abandoned shopping carts
+
 Sending e-mails to website visitors who have left their shopping cart
 unpaid is up to 20 times more effective than a regular e-mail campaign.
 The conversion rates of such campaigns are between 15 and 50% according
@@ -19,7 +21,8 @@ be a good approach to prevent this from happening. Make your message
 polite and service targeted. Don’t try to cross sell or offer incentives
 in this form.
 
-**Extra discounts**
+## Extra discounts
+
 Offering extra discounts or adding a sales pitch to convince the reader
 to make his purchase are suitable to the quick response e-mail for
 abandoned shop carts. Do keep in mind that you may be offering discounts
@@ -39,7 +42,8 @@ timing the messages right. Send reminders when:
 - a product from the cart is becoming more expensive or on offer \
  (and tell the contact that’s why you are giving them a warning).
 
-**Permission to e-mail**
+# Permission to e-mail
+
 For all of these campaigns, it’s essential that you know who you are
 e-mailing and that you’re allowed to e-mail them. Make sure that one of
 the first steps in the ordering process is asking for contact details.
