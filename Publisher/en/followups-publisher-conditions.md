@@ -1,3 +1,5 @@
+# Followup conditions in Publisher
+
 The follow-ups of a mailing can be constraint. This means that
 conditions are set for the scheduling and/or execution of the follow-up.
 You can set these yourself by using the easy script editor. For the

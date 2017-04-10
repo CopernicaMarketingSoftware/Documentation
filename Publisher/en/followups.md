@@ -34,6 +34,8 @@ selected **database**, **document**, **survey** or **web form**. See the
 link for more information on creating followups in Publisher. The Publisher does not have
 a scripting API and is not as powerful as the new systems, but because it has
 been around for so many years, it has still evolved into a very powerful tool.
+If there is something you don't understand in Marketing Suite or need a tutorial, 
+you'll most likely find it here.
 
 ## More information
 
