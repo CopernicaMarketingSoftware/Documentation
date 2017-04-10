@@ -1,23 +1,41 @@
 # REST API: Opvragen van profiel gebeurtenissen
 
-Als je profiel gebeurtenissen van de afgelopen maandelijkse periode wilt 
-downloaden, dan kun je een eenvoudige  HTTP GET call naar de volgende URL
-sturen.
+Als je profiel events wilt downloaden, dan kun je een eenvoudige  HTTP GET
+call naar de volgende URL sturen.
 
 `https://api.copernica.com/v1/profile/$id/events?access_token=xxxx`
 
 De `$id` moet je vervangen door de numerieke identifier van het profiel
-waarvoor je de gebeurtenissen wilt hebben. Als je gebeurtenissen van een
-eerdere maandelijkse periode wilt downloaden dan kun je een datum aan de
-URL toevoegen.
+waarvoor je de gebeurtenissen wilt hebben.
 
-`https://api.copernica.com/v1/profile/$id/events/$datum?access_token=xxxx`
 
-waarbij datum de form heeft van jjjj-mm-dd.
+## Beschikbare parameters
 
-Merk op: Momenteel kunnen gebeurtenissen gedownload worden per maandelijkse
-periode. Deze periode kan echter gewijzigd worden wanneer performance dit
-vereist.
+De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
+
+- **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
+- **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
+- **tags**:  optionele tags waarop gefilterd wordt.
+
+### Start en end
+
+Als er geen start en end parameters opgegeven worden, krijg je de events
+tot een maand geleden. Als je een start parameter opgegeven wordt, krijg
+je de events vanaf de startdatum tot een maand na de startdatum. Als je
+een einddatum opgeeft, krijg je de events van een maand voor de einddatum
+tot aan (exclusief) de einddatum. Als de start- en einddatum verder dan
+een maand uit elkaar liggen, krijg je de gebeurtenissen van de start tot
+een maand na start. De einddatum wordt dus genegeerd. Houd er rekening
+mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
+1 of 2 uur later  (afhankelijk van zomer- en wintertijd) dan de Nederlandse
+tijd. Houd er ook rekening mee dat de beperking van de periode tot een
+maand gewijzigd kan worden als als de performance dit vereist.
+
+### Tags
+
+Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
+op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
+je meerdere tags gescheiden door puntkomma's opgeven.
 
 
 ## Geretourneerde informatie
@@ -52,9 +70,14 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     
     // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
-
+    
+    // parameters voor de methode
+    $parameters = array(
+        "start"     =>  "2017-02-27"
+    );
+    
     // voer de methode uit en print het resultaat
-    print_r($api->get("profile/1234/events"));
+    print_r($api->get("profile/1234/events"), $parameters);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
