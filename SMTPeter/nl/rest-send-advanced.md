@@ -1,4 +1,4 @@
-# Versturen op basis van overige instellingen
+# Geavanceerde opties
 
 Door speciale 'properties' toe te voegen aan de input van de JSON, kun je bepaalde
 properties van SMTPeter aan of uitzetten. Zo kun je bijvoorbeeld het aantal kliks, 
@@ -44,8 +44,8 @@ uitzetten. Zie onderstaande JSON data:
 De 'click-tracking' is automatisch geactiveerd. Dit betekent dat *alle* hyperlinks
 zijn ingesteld om 'clicks' te traceren en na te gaan. Echter, sommige 'e-mail clients'
 tonen een waarschuwing aan de gebruiks op het moment dat links zijn bewerkt. 
-Dit is in sterkere mate het geval waneer de link waarop gelikt kan worden,
-niet overeenkomt met de 'hyperlink'. In dat geval kan je altijd de "preventscam"
+Dit is in sterkere mate het geval waneer de link waarop geklikt kan worden,
+niet overeenkomt met de 'hyperlink'. In dat geval kun je altijd de "preventscam"
 'property' opgeven, waardoor SMTPeter van de links afblijft en ze dus niet bewerkt:
 
 ```json
@@ -63,7 +63,7 @@ De "preventscam" optie voorkomt dus de door SMTPeter bewerkte hyperlinks, zoals:
 ## Instellingen voor 'Delivery Status Notifications'
 
 SMTPeter kan 'bounces' voor je nagaan. Deze worden gestuurd naar jouw
-'envelope' adres. Je kan deze toepassing aanzetten door het "envelope"
+'envelope' adres. Je kunt deze toepassing aanzetten door het "envelope"
 adres toe te voegen aan de JSON:
 
 ```json
@@ -80,7 +80,7 @@ om berichten naar te sturen met betrekking tot de niet geleverde e-mails.
 Wees ervan bewust dat je ook een 'envelope' adres moet toevoegen als je 
 wel 'bounces' wilt ontvangen.
 
-Met de optionele dsn 'property' kan je verder 'finetunen' wat voor soort 
+Met de optionele dsn 'property' kun je verder 'finetunen' wat voor soort 
 'Delivery Status Notification' berichten je wilt ontvangen. De dsn variabel 
 accepteert een JSON objevct met vier optionele velden:
 
