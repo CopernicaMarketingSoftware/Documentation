@@ -8,14 +8,43 @@ you can use the events rest call. All calls that are supported are:
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATE
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
-https://www.smtpeter.com/v1/events/email/EMAILADDRESS/DATE
 https://www.smtpeter.com/v1/events/tamplate/TEMPLATE
-https://www.smtpeter.com/v1/events/tamplate/TEMPLATE/DATE
 https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
-https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3/DATE
 ```
+
+## Available parameters
+
+You can specify extra options while retrieving events. You can add these
+extra options by adding an `&` after your access token, followed by the name
+of the option a `=` and the value of the option.
+The following parameters can be added to the URL as variables:
+
+- **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
+- **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
+- **tags**:  optional tags you want to filter for.
+
+### Start and end
+
+If no start and end parameters are provided you will get the default period
+for the particular events. If you provide a start you will get events from the start
+date up to one month after the start. If you provide an end, you will get
+the events from one month before the end up to (but excluding) the end.
+If you provide both a start and an end and the interval between the two
+is longer than a month, it will be shortened to a month where the start is
+leading. Take into account that the dates are treated as UTC dates. 
+Also take into account that the monthly period limitation is subject to
+change if performance requires this.
+
+### Tags
+
+If you provide a tags parameter, your events will also be filtered on the
+provided tag. If you filter on multiple tags you can separate the tags
+with a semicolon.
+
+
+## Returned information
+
 after this call you receive a JSON with all the information you have requested.
 
 The layout of this json is:
@@ -63,15 +92,9 @@ month after you have sent the message you can make a get request to
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 ```
-where `MESSAGEID` is the messageid of interest.
+where `MESSAGEID` is the messageid of interest. If you want to have events
+for a different period, you can specify the `start` and/or `end` option.
 
-If you are interested in another monthly period you can at a staring date
-to the request like:
-
-```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATE
-```
-where `DATE` has the form `yyyy-mm-dd`
 
 ## Events based on an email address
 
@@ -81,15 +104,10 @@ the last monthly period, you can make a get request to:
 ```text
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
 ```
-where `EMAILADDRESS` is the address you are interested in
+where `EMAILADDRESS` is the address you are interested in. If you want to have events
+for a different period, you can specify the `start` and/or `end` option.
+Optionally, you can filter on tags as well by providing the `tags` option.
 
-If you want to have the events for an earlier monthly period you can add
-a starting date for the period to the request like:
-
-```text
-https://www.smtpeter.com/v1/events/email/EMAILADDRESS/DATE
-```
-where `DATE` has the form `yyyy-mm-dd`.
 
 ## Events based on a template
 
@@ -99,14 +117,11 @@ the last monthly period, you can make a get request to:
 ```text
 https://www.smtpeter.com/v1/events/template/TEMPLATE
 ```
-where `TEMPLATE` is the id of the template you are interested in. If you
-want to have information for an earlier monthly period, you can add a staring
-date to the call like:
+where `TEMPLATE` is the id of the template you are interested in. If you 
+want to have events for a different period, you can specify the `start`
+and/or `end` option. Optionally, you can filter on tags as well by providing
+the `tags` option.
 
-```text
-https://www.smtpeter.com/v1/events/template/TEMPLATE/DATE
-```
-where `DATE` has the form of `yyyy-mm-dd`
 
 ## Events based on tags
 
@@ -125,11 +140,5 @@ https://www.smtpeter.com/v1/events/tags/TAG1;TAG2;TAG3;...
 The returned JSON will only contain information for messages that have
 all tags set.
 
-If you want to have information for an earlier monthly period, you can add
-a starting date to the above requests like:
-
-```text
-https://www.smtpeter.com/v1/events/tags/TAG1/DATE
-https://www.smtpeter.com/v1/events/tags/TAG1;TAG2;TAG3;.../DATE
-```
-where `DATE` has the form of `yyyy-mm-dd`.
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option.
