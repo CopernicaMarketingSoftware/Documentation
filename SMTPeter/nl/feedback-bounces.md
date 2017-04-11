@@ -24,6 +24,7 @@ te weigeren. Geweigerde e-mails worden bijgeschreven op de 'failure logfile'
 en respectievelijk ook toegevoegd aan de 'failure feedback loop' (zie diagram 1).
 
 **Diagram 1**
+<img style="float: right;" src="Images/smtpeter-diagram-send-email.svg">
 ![Diagram 1](Images/smtpeter-diagram-send-email.svg)
 
 Echter, het is mogelijk dat een bericht initieel geaccepteerd wordt, 
