@@ -3,7 +3,7 @@
 Alle berichten worden automatisch [gearchiveerd](), zodra ze via SMTPeter worden 
 verstuurd. De REST API kan bijna elke 'property' achterhalen van e-mails
 die door SMTPeter zijn gegaan tijdens het versturen. Je kunt bijvoorbeeld met 
-de 'text' en 'html' methodes de structuur opvragen van verzonden e-mails.
+de 'text' en 'HTML' methodes de structuur opvragen van verzonden e-mails.
 
 De hieropvolgende lijst laat de verschillende methodes zien die kunnen worden
 gebruikt om 'properties' te achterhalen van verstuurde e-mails. Voor het gebruik
