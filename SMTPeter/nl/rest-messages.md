@@ -46,8 +46,8 @@ krijg je een lege string terug.
 
 ## Inhoud van berichten
 
-Je kunt de 'text' of 'html' versie van een verstuurde e-mail gemakkelijk
-achterhalen door de 'text' of 'html' methode. De gehele oorspronkelijke 
+Je kunt de 'text' of 'HTML' versie van een verstuurde e-mail gemakkelijk
+achterhalen door de 'text' of 'HTML' methode. De gehele oorspronkelijke 
 'headers' kunnen worden uitgelezen met de 'headers' method. Dit kun je 
 op de volgende manier doen:
 
@@ -58,7 +58,7 @@ https://www.smtpeter.com/v1/header/MESSAGEID
 ```
 
 De 'MESSAGEID' is uiteraard de ID van het bericht en de teruggestuurde 
-tekstt is in regulier 'text' formaat.
+tekst is in regulier 'text' formaat.
 
 
 ## Bijlages

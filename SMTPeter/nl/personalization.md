@@ -1,6 +1,6 @@
 # Personalisatie
 
-SMTPeter biedt vele mogelijkheden om emails te personaliseren. Personalisatie
+SMTPeter biedt vele mogelijkheden om e-mails te personaliseren. Personalisatie
 is belangrijk om een goede indruk te maken en de aandacht van de lezer vast 
 te houden. Hieronder wordt de syntax uitgelegd aan de hand van een aantal 
 voorbeelden, zodat je direct een beeld hebt bij de mogelijkheden van deze 
@@ -10,8 +10,8 @@ toepassing.
 ## Variabelen 
 
 Laten we starten met het uitleggen van de variabelen. Een variabele ziet er 
-als volgt uit: `{$` naam van de variabel `}`.
-Er zijn een aantal variablen die we veelvuldig voorbij zien komen, 
+als volgt uit: `{$` naam van de variabele `}`.
+Er zijn een aantal variabelen die we veelvuldig voorbij zien komen, 
 bijvoorbeeld '{$firstname}', {$age}' en '{$city}'.
 In het algemeen moet een variabele aan de volgende criteria voldoen:
 
@@ -37,7 +37,7 @@ zijn:
 | ----------------- | ---------------------------------------------------------------------------------------- |
 | {$foo.bar.baz}    | Laat de value zien van de "baz" key binnen de array "bar" wat behoort tot $foo.          |
 | {$foo[4].baz}     | Laat de value zien van de "baz" key binnen het 5de element van $foo.                     |
-| {$foo.bar.baz[4]} | Laat het 5de element van "baz" zien, die in "bar" zit en onderdeel is van $foo           |
+| {$foo.bar.baz[4]} | Laat het 5de element van "baz" zien, die in "bar" zit en onderdeel is van $foo.          |
 
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
 een array, als variabele een object is. Let erop dat je ook hier start vanaf 0. 
@@ -48,10 +48,11 @@ een array, als variabele een object is. Let erop dat je ook hier start vanaf 0.
 Je kunt de inhoud van je variabelen veranderen door 'modifiers' toe te voegen.
 Zo is het bijvoorbeeld mogelijk om alle content in hoofdletters te weergeven of
 om de lengte te berekenen van een string of een 'hash' som. Een volledige lijst
-van alle mogelijke bewerkingen en corresponderende functionaliteit is [hier](personalization-modifiers) 
+van alle mogelijke bewerkingen en corresponderende functionaliteit is [hier](personalization-modifiers)
 te vinden. In het volgende voorbeeld zie je hoe 'modifiers' worden gebruikt
-om de lengte van de naam variable weer te geven:
-```
+om de lengte van de naam variabele weer te geven:
+
+```text
 Hello {$name|escape},
 
 Your name {$name|escape} is {$name|strlen} characters long.
@@ -65,6 +66,7 @@ Bye!
 Variabelen die een numerieke waarde bevatten kunnen worden gebruikt om simpele
 berekeningen te doen. Net zoals de 'normale variabelen', moeten alle berekeningen
 binnen de accolades worden uitgevoerd. Bijvoorbeeld:
+
 ```text
 {$var + 10}
 ```
@@ -84,13 +86,15 @@ eindigt altijd met de if 'closing tag' {/if}. Een conditioneel blok wordt alleen
 uitgevoerd als het 'statement' binnen het {if} gedeelte evalueert als true.
 
 In het volgende voorbeeld wordt de text 'Hello John' alleen weergegeven als 
-de waarde van de variabele $name gelijk is aan 'john'. 
+de waarde van de variabele $name gelijk is aan 'john'.
+
 ```text
-{if $name == 'john'}Hello John{/if}
+    {if $name == 'john'}Hello John{/if}
 ```
 
 Maar wat als er ook een 'Sarah' in je mailinglist zit? Je wilt niet dat zij
 niets ontvangt. Dit is een situatie waar de {elseif} om de hoek komt kijken.
+
 ```text
 {if $name == 'john'}Hello John{elseif $name == 'sarah'}Hello Sarah{/if}
 ```
@@ -99,6 +103,7 @@ Het kan ook voor komen dat we in een bepaalde situatie niets aan 'John'
 en 'Sarah' willen laten weten. In dat geval gebruiken we het {else}
 keywoord. Het stukje 'code' na het {else} keyword wordt uitgevoerd als
 geen van de voorgaande statements evualeren tot true.
+
 ```text
     {if $name == 'john'}
         Hello John
@@ -114,6 +119,7 @@ aanhef schrijft. Je conditionele blok moet in dit geval namelijk zo groot zijn
 als de lijst met alle namen van de wereld. 
 
 Een beter voorbeeld is uiteraard:
+
 ```text
     {if $name == ''}
         Dear subscriber,
@@ -176,6 +182,7 @@ Voor OR geldt:
 | false | false | false     |
 
 Je kunt AND bijvoorbeeld op deze manier gebruiken:
+
 ```text
 {if $a >= $b AND $b <= $c}true{else}false{/if}
 ```
@@ -199,6 +206,7 @@ Aan de hand van een voorbeeld laten we alle leden van een voetbalteam zien. Deze
 leden staan in een $soccerTeam array opgeslagen. Alle leden van het team kunnen 
 worden opgevraagd door middel van een foreach 'statement'. De syntax is recht toe,
 recht aan:
+
 ```text
 {foreach $player in $soccerTeam}
     {$player.name}
@@ -211,7 +219,8 @@ doen met de 'output'. Je kunt bijvoorbeeld een HTML lijst genereren de voetballe
 van dat team. Dit is waar het iets complexer wordt..
 
 Natuurlijk ondersteunen we ook het 'loopen' over arrays die niet gestandaardiseerde
-keys bevatten. 
+keys bevatten.
+
 ```text
     {foreach $list as $key => $value}
        Key {$key} contains {$value}.
@@ -223,6 +232,7 @@ te geven en hier de waardes in op te slaan. De daadwerkelijke waardes worden
 opgeslagen door middel van elke iteratie. Tot slot, soms wil je dat 'code' wordt
 uitgevoerd terwijl er misschien helemaal geen data is. Dit kan worden gedaan met
 behulp van een {foreachelse} 'statement'.
+
 ```text
     {foreach $item in $list}
        {$item.name}
@@ -240,7 +250,8 @@ wordt dan ook volkomen genegereerd als er wel data is.
 Het is mogelijk om waardes toe te voegen tijdens 'runtime'. Dit kun je bijvoorbeeld
 gebruiken om de totale prijs te berekenen van een samenstelling aan gekochte items.
 Of om een bepaald item te herinneren binnen in een foreach 'statemement'. Je kunt
-variabelen op de volgende manier toekennen: 
+variabelen op de volgende manier toekennen:
+
 ```text
 {assign $item to $topitem}
 ```
@@ -248,6 +259,7 @@ variabelen op de volgende manier toekennen:
 Na dit 'statement' is de variabele $topitem beschikbaar en neemt het over wat $item 
 bevatte wanneer de mail werd samengesteld en verzonden naar de ontvanger.
 Dit stelt je in staat om bijvoorbeeld dit soort regels te schrijven:
+
 ```text
   {foreach $item in $list}
     {assign $total + $item.price to $total}
@@ -292,19 +304,22 @@ Evalueert tot:
 
     Messi
 
-    Ibrahimovic
-    
+    Ibrahimovic   
 ```
+
 Dit is waarschijnlijk niet het gewenste resultaat dat je voor ogen had.
 Maar dit is precies wat je krijgt, omdat er een nieuwe regel in combinatie
 met indentatie rondom de variabele wordt gebruikt. Om een lijst van de namen
 te generen, zonder extra spaties kan je het beste deze foreach 'loop' opzetten:
+
 ```text
 {foreach $player in $soccerTeam}{$player}
 {/foreach}
 ```
+
 Minder leesbaar, maar precies wat je voor ogen had.
-```
+
+```text
 Ronaldo
 Messi
 Ibrahimovic

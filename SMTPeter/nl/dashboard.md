@@ -1,6 +1,6 @@
 # Dashboard 
 
-![Dashboard SMTPeter](Images/dashboardoverview.png "Dashboad Overview")
+!['dashboard' SMTPeter](Images/'dashboard'overview.png "Dashboad Overview")
 
 SMTPeter geeft je de mogelijkheid om de verschillende statistieken 
 van je verstuurde e-mails direct in te zien. Dit kun je doen binnen 
@@ -9,7 +9,7 @@ de omgeving van het 'dashboard'.
 
 ## Statistieken
 
-Het welkomstscherm van het dashboard laat direct de statistieken zien
+Het welkomstscherm van het 'dashboard' laat direct de statistieken zien
 die in de afgelopen periode zijn opgebouwd. Je kunt het aantal kliks 
 nagaan, maar ook het aantal opens, de verstuurde e-mails en foutieve
 afleveringen. Je kunt inzoomen door een gewenst startpunt aan te klikken,

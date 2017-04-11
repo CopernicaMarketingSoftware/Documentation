@@ -25,4 +25,4 @@
     * [Bounce protocol](bounce-handling)
     * [Inline CSS code](inline-css)
     * [E-mail throttling](email-throttling)
-    * [Open and click statistieken](statistics)
+    * [Klik en open tracking](statistics)
