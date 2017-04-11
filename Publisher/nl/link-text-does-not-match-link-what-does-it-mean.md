@@ -1,3 +1,4 @@
+# Link text does not match link
 Deze waarschuwing wordt regelmatig weergegeven bij het bekijken van de
 spamscore van een document en levert bij veel gebruikers vragen op.
 Temeer omdat er twee strafpunten aan verbonden zijn. Gelukkig is de
