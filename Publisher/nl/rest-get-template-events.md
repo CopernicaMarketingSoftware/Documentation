@@ -22,7 +22,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 ### Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
-van de laatste maandelijkse periode. Als je een start parameter opgegeven
+van de laatste maandelijkse periode. Als een start parameter opgegeven
 wordt, krijg je de events vanaf de startdatum tot een maand na de start
 datum. Als je een einddatum opgeeft, krijg je de events van een maand voor
 de einddatum tot aan (exclusief) de einddatum. Als de start- en einddatum
