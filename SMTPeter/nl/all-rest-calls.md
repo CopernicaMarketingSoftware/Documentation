@@ -10,7 +10,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 
 | Methode        | Adres                                                                                                    | Omschrijving                                                            |
 |--------------- |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| GET            | [api.smtpeter.com/v1/attachments](./get/get-attachments)                                                 | Lijst van alle bijlages voor specifieke email                       |
+| GET            | [api.smtpeter.com/v1/attachments](./RESTmethods/get/get-attachments)                                                 | Lijst van alle bijlages voor specifieke email                       |
 | GET            | [https://www.smtpeter.com/v1/dkimkey](get-dkimkey)                                                       | DKIM opvragen met specifiek ID               |
 | GET            | [https://www.smtpeter.com/v1/dkimkeys](get-dkimkeys)                                                     | Alle DKIM opvragen voor een 'sender domain'  |
 | GET            | [https://www.smtpeter.com/v1/dmarc](get-senderdomain)                                                    | Opvragen van alle datums waar mogelijk een dmarc raport voor is      |
