@@ -9,14 +9,46 @@ Je doet dit middels een van de volgende URls:
 
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATUM
 https://www.smtpeter.com/v1/events/email/EMAILADRES
-https://www.smtpeter.com/v1/events/email/EMAILADRES/DATUM
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
-https://www.smtpeter.com/v1/events/template/TEMPLATEID/DATUM
 https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
-https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3/DATUM
 ```
+
+## Beschikbare parameters
+
+Bij het opvragen van events kunnen extra opties worden meegegeven. Dit meegeven
+gebeurt door extra GET parameters aan de URL mee te geven. Dit meegeven kan
+door achter de access token een `&` te zetten, de naam van de optie op te
+geven, gevolgd door een `=` en de waarde van de optie.
+De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
+
+- **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
+- **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
+- **tags**:  optionele tags waarop gefilterd wordt.
+
+
+### Start en end
+
+Als er geen start en end parameters opgegeven worden, krijg je events voor
+de standaard periode van de gebeurtenissen. Als een start parameter opgegeven
+wordt, krijg je de events vanaf de startdatum tot een maand na de start
+datum. Als je een einddatum opgeeft, krijg je de events van een maand voor
+de einddatum tot aan (exclusief) de einddatum. Als de start- en einddatum
+verder dan een maand uit elkaar liggen, krijg je de gebeurtenissen van
+de start tot een maand na start. De einddatum wordt dus genegeerd. Houd er
+rekening mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum
+begint 1 of 2 uur later (afhankelijk van zomer- en wintertijd) dan de
+Nederlandse tijd. Houd er ook rekening mee dat de beperking van de periode
+tot een maand gewijzigd kan worden als als de performance dit vereist.
+
+### Tags
+
+Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
+op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
+je meerdere tags gescheiden door puntkomma's opgeven.
+
+## Geretourneerde informatie
+
 Na het verzoek ontvang je de volgende JSON:
 
 ```json
@@ -55,6 +87,8 @@ beschreven op de betreffende pagina van het type.
 | [response](log-responses)                   | informatie over door SMTPeter ontvangen reacties |
 
 
+
+
 ## 'Events' op basis van een 'MESSAGE ID'
 
 De volgende URL kan gebruikt worden om 'events', die betrekking 
@@ -65,14 +99,8 @@ https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 ```
 Hierbij is de `MESSAGE ID` het betreffende 'message ID'. Je krijgt vervolgens de
 'events' tot een maand na het tijdstip van verzenden van het bericht.
-Je kunt latere 'events' downloaden door de URL uit te breiden
-met een startdatum:
-
-```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID/DATUM
-```
-Hierbij wordt de datum aangegeven door middel van `jjjj-mm-dd`. Je krijgt dan de 'events'
-vanaf de start datum tot een maand na de start datum.
+Je kunt latere 'events' downloaden door een `start` en/of `end` parameter
+op te geven.
 
 
 ## 'Events' op basis van een e-mailadres
@@ -84,16 +112,10 @@ een bepaald e-mailadres op te vragen.
 https://www.smtpeter.com/v1/events/email/EMAILADRES
 ```
 Hierbij is `EMAILADRES` het betreffende e-mailadres. Je krijgt de 'events'
-van de laatste maandelijkse periode. De 'events' van een eerdere
-maandelijkse periode kunnen ook worden gedownload. In dat geval 
-kun je een startdatum aan de URL toevoegen:
+tot een maand geleden. De 'events' voor andere periodes kunnen worden gedownload
+door de optionele parameters `start` en/of `end` op te geven. Tevens kun
+je filteren op tags door de `tags` parameter op te geven.
 
-```text
-https://www.smtpeter.com/v1/events/email/EMAILADRES/DATUM
-```
-Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
-'events' vanaf de start datum tot en met een maand na de startdatum 
-teruggestuurd.
 
 ## 'Events' op basis van een 'template'
 
@@ -104,15 +126,10 @@ een bepaalde template adres op te vragen.
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
 ```
 Hierbij is `TEMPLATEID` de ID van de betreffende template. Je krijgt vervolgens
-alle 'events' van de laatste maandelijkse periode. De 'events' van een eerdere 
-maandelijkse periode kunnen ook worden gedownload. In dat geval kun je een 
-startdatum aan de URL toevoegen:
-
-```text
-https://www.smtpeter.com/v1/events/template/TEMPLATEID/DATUM
-```
-Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
-'events' vanaf de startdatum tot en met een maand na de startdatum.
+alle 'events' tot een maand geleden. De 'events' voor andere periodes
+kunnen worden gedownload door de optionele parameters `start` en/of `end`
+op te geven. Tevens kun je filteren op tags door de `tags` parameter op
+te geven.
 
 
 ## 'Events' op basis van tags
@@ -124,21 +141,14 @@ vragen.
 https://www.smtpeter.com/v1/tags/TAG
 ```
 Hierbij is `TAG` de betreffende tag. Je krijgt vervolgens alle 'events'
-van de laatste maandelijkse periode. De 'events' van een eerdere
-maandelijkse periode kunnen ook worden gedownlaod. In dat geval kun 
-je een startdatum aan de URL toevoegen:
+tot een maand geleden. De 'events' voor andere periodes
+kunnen worden gedownload door de optionele parameters `start` en/of `end`
+op te geven.
 
-```text
-https://www.smtpeter.com/v1/tags/TAG/DATUM
-```
-Hierbij wordt de `DATUM` aangegeven met `jjjj-mm-dd`. Je krijgt vervolgens de
-'events' vanaf de startdatum tot en met een maand na de startdatum. 
-Het is ook mogelijk om op meerdere tags tegelijkertijd te filteren. Dit
-kan met de volgende URL:
 
 ```text
 https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
 ```
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
 opgegeven tags bevatten. Ook hier kan eventueel gekozen worden voor een
-andere maandelijkse periode, door een datum aan de URL toe te voegen.
+andere periode door een `start` en/of `end` parameter op te geven.
