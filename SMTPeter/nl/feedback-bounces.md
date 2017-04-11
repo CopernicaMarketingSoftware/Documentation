@@ -31,7 +31,7 @@ maar dat de server achteraf toch nog een 'bounce' e-mail verstuurd
 waarin meded wordt gedeeld dat het bericht toch is geweigerd. 
 Deze vorm van 'bounces' duiden op een 'Delivery Status Notification'
 en hebben een speciaal formaat. SMTPeter herkent ook deze type van 'bounces
-en schrijft ze naar de 'log files'. Ook de [failure feedback loop](feedback-failures)
+en schrijft ze naar de 'log files'. Ook de ['failure feedback loop'](feedback-failures)
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
