@@ -16,7 +16,7 @@
     * [Templates beheren](rest-templates)
 * [Feedback loops](feedback-loops)
     * [Feedback loop aanmaken](feedback-setup)
-    * [Feddback loops voor 'bounces'](feedback-bounces)
+    * [Feedback loops voor 'bounces'](feedback-bounces)
     * [Feedback loops voor 'failures'](feedback-failure)
     * [Feedback loops voor 'clicks'](feedback-clicks)
     * [Feedback loops voor 'opens'](feedback-opens)
