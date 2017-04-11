@@ -1,30 +1,30 @@
-# Klik en open tracking
+# Klik en open 'tracking'
 
-Je kunt de click tracking van SMTPeter gebruiken om te zien wat de 
-gebruikers aantrekt. Als click tracking ingeschakeld is worden alle 
+Je kunt de klik 'tracking' van SMTPeter gebruiken om te zien wat de 
+gebruikers aantrekt. Als klik 'tracking' ingeschakeld is worden alle 
 links verstuurd met SMTPeter herschreven. In plaats van de originele 
 hyperlink te openen leidt de link naar een van de web servers van SMTPeter. 
 Deze slaat de klik op in de logs en stuurt de gebruiker vervolgens door 
 naar de daadwerkelijke website. Dit gaat allemaal zo snel dat de gebruiker 
 hier niets van merkt.
 
-Hetzelfde gebeurd met klikken op afbeeldingen. Alle afbeelding link worden 
-herschreven zodat afbeelding worden gedownload via de SMTPeter server in 
+Hetzelfde gebeurd met klikken op afbeeldingen. Alle afbeelding links worden
+herschreven, zodat afbeelding worden gedownload via de SMTPeter server in 
 plaats van de originele server. Door dit te doen kunnen we ook registreren 
 wanneer de email geopend wordt, omdat we zien dat de afbeelding wordt gedownload.
 
-## Klik tracking inschakelen
+## Klik 'tracking' inschakelen
 
 Emails kunnen naar SMTPeter worden gestuurd met de [SMTP API](./smtp-api) 
 en de [REST API](./rest-api). Beide API's hebben de mogelijkheid klik 
-tracking in te schakelen.
+'tracking' in te schakelen.
 
-In de REST API kun je een trackclicks property meegeven in de JSON of de 
+In de REST API kun je een 'trackclicks property' meegeven in de JSON of de 
 POST data.
 
-In SMTP API kun je een "x-smtpeter-trackclicks" MIME header meegeven aan 
-je email of naar het dashboard gaan en gegevens aanmaken waarvoor klik 
-tracking is ingeschakeld.
+In SMTP API kun je een 'x-smtpeter-trackclicks' MIME header meegeven aan 
+je email of naar het 'dashboard' gaan en gegevens aanmaken waarvoor klik 
+'tracking' is ingeschakeld.
 
 ## Scam preventie
 
@@ -32,32 +32,32 @@ Sommige email programma's geven een waarschuwing als een klikbare URL
 naar een andere URL gelinkt wordt dan weergeven wordt.
 
 
-````html
+```html
 <a href="http://clicks.smtpeter.com/path/to/file">www.example.com</a>
-````
+```
 
-De bovenstaande link resulteert in een "dit bericht kan spam zijn" 
+De bovenstaande link resulteert in een 'dit bericht kan spam zijn' 
 waarschuwing in email programma's, omdat het lijkt alsof de link naar 
-"example.com" gaat voor de gebruiker maar in werkelijkheid 
-"clicks.smtpeter.com" opent.
+'example.com' gaat voor de gebruiker maar in werkelijkheid 
+'clicks.smtpeter.com' opent.
 
 Als je zulke waarschuwingen wilt voorkomen kun je aangeven dat 
 SMTPeter dit soort hyperlinks niet moet herschrijven. Je kunt ook in 
 plaats van de URL text weergeven:
 
-````html
+```html
 <a href="http://clicks.smtpeter.com/path/to/file">mijn website</a>
-````
+```
 
-## API en dashboard
+## API en 'dashboard'
 
 Alle kliks en opens worden opgeslagen in een log. Je kunt hier toegang 
 toe krijgen met de REST API. Je hebt dan toegang tot alle onbewerkte 
 data (in XML, JSON of csv).
 
 Daarnaast zal SMTPeter periodiek deze files doorlopen om relevante 
-informatie weer te geven op het dashboard. Je krijgt zo meteen inzicht 
-in de meest effectieve links als je het dashboard opent.
+informatie weer te geven op het 'dashboard'. Je krijgt zo meteen inzicht 
+in de meest effectieve links als je het 'dashboard' opent.
 
 Een overzicht van alle types van logfiles die we opslaan wordt weergeven 
 in de onderstaande tabel. Je kunt de individuele log bestanden pagina 
@@ -76,7 +76,7 @@ bekijken om inzicht te krijgen in de inhoud van deze files.
 | [responses log file](log-responses)                   | informatie over response mails ontvangen door SMTPeter |
 
 
-## Klik tracking domein
+## Klik 'tracking' domein
 
 Bij het herschrijven van links proberen we deze zo veel mogelijk op het 
 origineel te laten lijken. We laten het pad intact en voegen alleen een 
@@ -84,7 +84,7 @@ kleine identifier toe. We veranderen ook de originele hostname in de URL
 naar een hostname die naar de SMTPeter web servers verwijst. Dit is standaard 
 "clicks.smtpeter.com".
 
-Echter raden wij aan om op het dashboard een ander klik domein te 
+Echter raden wij aan om op het 'dashboard' een ander klik domein te 
 configureren. Sommige gebruikers herkennen jouw hyperlink (die zichtbaar 
 is wanneer er een muis over hangt) als klik registratie en zullen daarom 
 niet klikken, of de registratie op andere wijze te omzeilen. Als je 
@@ -100,4 +100,4 @@ de gebruiker weer door te sturen. De makkelijkste manier om dit te doen
 is om een DNS CNAME connectie aan te maken met "clicks.smtpeter.com". 
 
 De precieze manier om dit te doen hangt af van je DNS provider. 
-Als je hierover vragen hebt moedigen we je aan deze aan hen te stellen.
+Als je hierover vragen hebt, moedigen we je aan deze aan hen te stellen.
