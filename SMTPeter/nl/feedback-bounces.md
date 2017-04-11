@@ -24,7 +24,7 @@ te weigeren. Geweigerde e-mails worden bijgeschreven op de 'failure logfile'
 en respectievelijk ook toegevoegd aan de 'failure feedback loop' (zie diagram 1).
 
 **Diagram 1**
-<img style="float: right; max-width: 50%; max-height: 50%;" src="Images/smtpeter-diagram-send-email.svg">
+<img style="float: center; max-width: 50%; max-height: 50%; margin-bottom: 10px;" src="Images/smtpeter-diagram-send-email.svg">
 
 Echter, het is mogelijk dat een bericht initieel geaccepteerd wordt, 
 maar dat de server achteraf toch nog een 'bounce' e-mail verstuurd 
@@ -35,28 +35,24 @@ en schrijft ze naar de 'log files'. Ook de [failure feedback loop](feedback-fail
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
-<img style="float: left; position: relative; max-width: 50%; max-height: 50%;" src="Images/smtpeter-diagram-bounce.svg">
+<img style="float: center; max-width: 50%; max-height: 50%; margin-bottom: 10px;" src="Images/smtpeter-diagram-bounce.svg">
 
-Besides these standardized Delivery Status Notifications, there 
-are many more messages that are sent back to the envelope address. These 
-are for example out-of-office mails or vacation mails, but also error 
-messages (like "mailbox full" or "email address does not exist") from
-servers that do not respect the official Delivery Status Notification
-format. These messages are also picked up by SMTPeter.
+Naast deze standaard 'Delivery Status Notifications' zijn er nog vele andere
+berichten die terug worden gestuurd naar het 'envelope' adres. Dit zijn 
+bijvoorbeeld 'out-of-office' e-mails, maar ook fout meldingen over het 
+feit dat de mailbox vol zit of het e-mailadres niet bestaat. Deze meldingen
+komen van servers die het officiële 'Delivery Status Notification' niet
+respecteren. SMTPeter pakt deze meldingen ook gewoon op.
 
-Because such messages do not follow the official standard for
-Delivery Status Notifications, they can not be recognized by SMTPeter and
-are not written to the error log file or are sent to failure feedback loops.
-Such incoming bounces are only written to the bounce log file, and are 
-sent to the bounce feedback loops. The bounce feedback loop thus receives
-two sort of messages: official Delivery Status Notifications, *and*
-bounces and out-of-office replies that could not be recognized.
+SMTPeter herkent dat deze meldingen niet naar de reguliere 'error log file'
+moeten worden geschreven en stuurt ze dus naar de 'bounce log file' en 
+consequent ook naar de 'bounce feedback loops'.
 
 
-## Format
+## Formaat
 
-The bounce feedback loop is sent over HTTP POST, and the following
-variables are submitted:
+De 'bounce feedback loop' wordt door middel van het HTTP POST mechanisme verstuurd. 
+De volgende variabelen worden dan ingevoerd:
 
 ```html
 <table>
@@ -83,7 +79,6 @@ variables are submitted:
 </table>
 ```
 
-The "id" and "recipient" variables allow you to link the incoming bounce
-to the original outgoing message that was sent. The "mailfrom", "rcptto"
-and "data" fields hold the message that was received by SMTPeter.
-
+De 'id' en 'recipient' variabelen stellen je in staat om de inkomende 'bounce'
+te linken aan het oorspronkelijke bericht dat werd verstuurd. De 'mailfrom', 
+'rcptto' en 'data' velden bevatten de melding die door SMTPeter is ontvangen.
