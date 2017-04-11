@@ -35,7 +35,7 @@ en schrijft ze naar de 'log files'. Ook de [failure feedback loop](feedback-fail
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
-<img style="float: left; position: absolute; max-width: 50%; max-height: 50%;" src="Images/smtpeter-diagram-bounce.svg">
+<img style="float: left; position: relative; max-width: 50%; max-height: 50%;" src="Images/smtpeter-diagram-bounce.svg">
 
 Besides these standardized Delivery Status Notifications, there 
 are many more messages that are sent back to the envelope address. These 
