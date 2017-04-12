@@ -1,14 +1,10 @@
-# Dashboard 
+# Dashboard
 
-<<<<<<< HEAD
 !['dashboard' SMTPeter](Images/dashboardoverview.png "Dashboad Overview")
-=======
-!['dashboard' SMTPeter](Images/dashboardoverview.png)
->>>>>>> 43d45aac8fffa64450a75d5616348f6b99d21107
 
 SMTPeter geeft je de mogelijkheid om de verschillende statistieken 
 van je verstuurde e-mails direct in te zien. Dit kun je doen binnen 
-de omgeving van het 'dashboard'. 
+de omgeving van het 'dashboard'..
 
 
 ## Statistieken
