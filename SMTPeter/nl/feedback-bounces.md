@@ -1,17 +1,17 @@
 # Feedback loops voor bounces
 
-SMTPeter bewerkt normaal gesproken het 'envelope' adres van alle e-mails
-die middels SMTPeter worden verstuurd. Dit wordt gedaan om 'bounces' te
-traceren en ook om andere 'events' te kunnen onderscheppen.
+SMTPeter bewerkt normaal gesproken het *envelope* adres van alle e-mails
+die middels SMTPeter worden verstuurd. Dit wordt gedaan om *bounces* te
+traceren en ook om andere *events* te kunnen onderscheppen.
 Naast dat SMTPeter alles automatisch ontvangt, kan je er voor kiezen om
-zelf ook meldingen over 'feedback loops' te ontvangen.
+zelf ook meldingen over *feedback loops* te ontvangen.
 
 
 ## Type meldingen
 
 De feedback loop voor bounces traceert letterlijk _alle_ meldingen
 die terug worden gestuurd naar het envelope adres. Dit betekent ook 
-dat reguliere delivery status notifications, 'out-of-office replies' 
+dat reguliere delivery status notifications, *out-of-office replies* 
 en foutmeldingen worden teruggestuurd. Al deze type meldingen kun je 
 ontvangen door de feedback loop voor bounces op te zetten.
 
@@ -19,23 +19,23 @@ ontvangen door de feedback loop voor bounces op te zetten.
 ## Bounces versus Delivery Status Notifications
 
 SMTPeter verstuurt e-mails door middel van het SMTP protocol. Dit
-protocol staat 'remote servers' toe om een bericht te accepteren of
-te weigeren. Geweigerde e-mails worden bijgeschreven op de 'failure logfile' 
-en respectievelijk ook toegevoegd aan de 'failure feedback loop' (zie diagram 1).
+protocol staat *remote servers* toe om een bericht te accepteren of
+te weigeren. Geweigerde e-mails worden bijgeschreven op de *failure logfile*
+en respectievelijk ook toegevoegd aan de *failure feedback loop* (zie diagram 1).
 
 **Diagram 1**
-<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:inherit" src="Images/smtpeter-diagram-send-email.svg">
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:Lato,sans-serif" src="Images/smtpeter-diagram-send-email.svg">
 
 Echter, het is mogelijk dat een bericht initieel geaccepteerd wordt, 
 maar dat de server achteraf toch nog een bounce e-mail verstuurd 
 waarin meded wordt gedeeld dat het bericht toch is geweigerd. 
 Deze vorm van bounces duiden op een Delivery Status Notification
 en hebben een speciaal formaat. SMTPeter herkent ook deze type van bounces
-en schrijft ze naar de 'log files'. Ook de ['failure feedback loop'](feedback-failures)
+en schrijft ze naar de *log files*. Ook de ['failure feedback loop'](feedback-failures)
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
-<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:inherit" src="Images/smtpeter-diagram-bounce.svg">
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:Lato,sans-serif" src="Images/smtpeter-diagram-bounce.svg">
 
 Naast deze standaard Delivery Status Notifications zijn er nog vele andere
 berichten die terug worden gestuurd naar het envelope adres. Dit zijn 
@@ -44,15 +44,16 @@ feit dat de mailbox vol zit of het e-mailadres niet bestaat. Deze meldingen
 komen van servers die het officiële Delivery Status Notification niet
 respecteren. SMTPeter pakt deze meldingen ook gewoon op.
 
-SMTPeter herkent dat deze meldingen niet naar de reguliere 'error log file'
-moeten worden geschreven en stuurt ze dus naar de 'bounce log file' en 
-consequent ook naar de 'bounce feedback loops'.
+SMTPeter herkent dat deze meldingen niet naar de reguliere error log file
+moeten worden geschreven en stuurt ze dus naar de bounce log file en 
+consequent ook naar de bounce feedback loops.
 
 
 ## Formaat
 
-De 'bounce feedback loop' wordt door middel van het HTTP POST mechanisme verstuurd. 
+De bounce feedback loop wordt door middel van het HTTP POST mechanisme verstuurd. 
 De volgende variabelen worden dan ingevoerd:
+
 
 ```html
 <table>
