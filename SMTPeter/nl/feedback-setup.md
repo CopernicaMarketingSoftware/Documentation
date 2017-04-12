@@ -1,9 +1,9 @@
-# 'Feedback loop' aanmaken
+# Feedback loops aanmaken
 
-Feedback loops kunnen worden aangemaakt via het SMTPeter dashboard.
+*Feedback loops* kunnen worden aangemaakt via het SMTPeter dashboard.
 De interface is gemakkelijk te begrijpen: je voert een feedback URL in
 (bijvoorbeeld: "https://www.yourwebsite.com/path/to/your/script.php")
-en het type van de feedback loop die je aan wilt maken (kliks, 'bounces' etc.).
+en het type van de feedback loop die je aan wilt maken (kliks, *bounces* etc.).
 Dat is alles.
 
 
@@ -18,9 +18,9 @@ kunnen we zien dat de server daadwerkelijk van jou is.
 
 De naam en inoud van de tekst bestanden zijn steeds weer uniek voor elke
 nieuwe feedback loop. Je moet deze kopiëren naar een van deze locaties:
-de hoofdmap va je webserver of naar dezelfde locatie waar je 'feedback script'
+de hoofdmap va je webserver of naar dezelfde locatie waar je *feedback script*
 is opgeslagen. Dus als je "https://domain.com/dir/script.php" hebt aangemaakt
-als je feedback script, moet je "smtpeter-xxxxx.txt" kopiëren naar de webserver 
+als je feedback script, moet je "smtpeter-xxxxx.txt" kopiëren naar de webserver,
 zodat het beschikbaar komt via "https://domain.com/dir/smtpeter-xxxxx.txt" of 
 "https://domain.com/smtpeter-xxxxx.txt". Je kunt het tekstbestand verwijderen 
 als het adres is gevalideerd.
