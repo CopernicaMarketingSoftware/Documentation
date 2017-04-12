@@ -13,9 +13,7 @@ Dit kun je doen door een *HTTP GET call* te versturen naar de volgende URL
 (vergeet niet om je API sleutel toe te voegen):
 
 ```text
-
 https://www.smtpeter.com/v1/templates/{start}/{length}
-
 ```
 
 De templates methode is alleen beschikbaar als je een HTTP GET methode wilt doen.
@@ -24,7 +22,6 @@ de ineens een groot aantal templates terugkrijgt. De *default* waarde is `0` en 
 De call geeft een JSON array terug in het volgende formaat:
 
 ```json
-
 [
     {
         "id"    : 1,
@@ -34,7 +31,6 @@ De call geeft een JSON array terug in het volgende formaat:
         "name"  : "Test 123"
     }
 ]
-
 ```
 
 Voor elke template wordt een unieke *identifier* en *template* naam teruggegeven.
@@ -47,9 +43,7 @@ een HTTP GET call. Je moet hiervoor wel de specifieke ID van een template weten.
 
 
 ```text
-
 https://www.smtpeter.com/v1/template/{ID}/{format}
-
 ```
 
 Je kunt ook hier weer gebruik maken van een specifiek formaat.
@@ -72,9 +66,7 @@ Je kunt een nieuwe template creëren door een HTTP POST methode te versturen
 naar SMTPeter:
 
 ```text
-
 https://www.smtpeter.com/v1/template/{format}
-
 ```
 
 Je kunt de templates aanmaken door de JSON code toe te voegen aan de body van de 
@@ -89,7 +81,6 @@ zijn.
 Voorbeeld van een request:
 
 ```json
-
 POST /v1/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
@@ -101,5 +92,4 @@ Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }
-
 ```

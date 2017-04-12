@@ -31,10 +31,8 @@ met de *recipient* en envelope methode. Beide methoden geven een e-mail
 adres terug in normaal text formaat.
 
 ```text
-
 https://www.smtpeter.com/v1/envelope/MESSAGEID
 https://www.smtpeter.com/v1/recipient/MESSAGEID
-
 ```
 
 Het is handig om te vermelden dat SMTPeter, normaal gesproken, zelf
@@ -54,11 +52,9 @@ achterhalen door de text of HTML methode. De gehele oorspronkelijke
 op de volgende manier doen:
 
 ```text
-
 https://www.smtpeter.com/v1/text/MESSAGEID
 https://www.smtpeter.com/v1/html/MESSAGEID
 https://www.smtpeter.com/v1/header/MESSAGEID
-
 ```
 
 De MESSAGEID is uiteraard de ID van het bericht en de teruggestuurde 
@@ -70,11 +66,9 @@ tekst is in regulier *plain text* formaat.
 Je kunt de bijlages van een e-mail opvragen via de volgende methode:
 
 ```text
-
 (1) https://www.smtpeter.com/v1/attachments/MESSAGEID
 (2) https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
 (3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
-
 ```
 
 Hierbij is MESSAGEID de message ID waar je de bijlages van wil hebben, 
@@ -94,11 +88,9 @@ e-mail gelinkt. De REST API heeft een aantal methodes om alle embedded content,
 wat bij een e-mail hoort, te weergeven.
 
 ```text
-
 (1) https://www.smtpeter.com/v1/embeds/MESSAGEID
 (2) https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
 (3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
-
 ```
 
 Hierbij is MESSAGEID de message ID waar je de embedded content van wilt hebben,
