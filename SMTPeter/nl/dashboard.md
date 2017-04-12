@@ -1,6 +1,6 @@
 # Dashboard 
 
-!['dashboard' SMTPeter](Images/'dashboard'overview.png "Dashboad Overview")
+!['dashboard' SMTPeter](Images/dashboardoverview.png)
 
 SMTPeter geeft je de mogelijkheid om de verschillende statistieken 
 van je verstuurde e-mails direct in te zien. Dit kun je doen binnen 
