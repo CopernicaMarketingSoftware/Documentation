@@ -15,7 +15,7 @@
     * [Opvragen van 'DMARC reports'](rest-dmarc)
     * [Templates beheren](rest-templates)
 * [Feedback loops](feedback-loops)
-    * [Feedback loop aanmaken](feedback-setup)
+    * [Feedback loops aanmaken](feedback-setup)
     * [Feedback loops voor 'bounces'](feedback-bounces)
     * [Feedback loops voor 'failures'](feedback-failure)
     * [Feedback loops voor 'clicks'](feedback-clicks)
