@@ -1,16 +1,16 @@
 # Verzenden via REST
 
 Om SMTPeter een e-mail te laten versturen hoef je alleen maar met een
-HTTP POST 'request' aan te geven dat je gebruik wilt maken van 
+HTTP POST request aan te geven dat je gebruik wilt maken van 
 de 'send method':
 
 ```text
 https://www.smtpeter.com/v1/send
 ```
-De 'body' moet het e-mailbericht bevatten dat je wilt versturen, tezamen
+De body moet het e-mailbericht bevatten dat je wilt versturen, tezamen
 met de SMTPeter mogelijkheden die je wilt activeren. De e-mail kan vervolgens
 worden aangeleverd in vele verschillende formaten. Bijvoorbeeld door 
-middel van een 'raw MIME string' of als individuele 'property', zodat SMTPeter
+middel van een 'raw MIME string' of als individuele *property*, zodat SMTPeter
 de mime kan opbouwen:
 
 ```text
@@ -27,33 +27,31 @@ Content-Length: 246
     "to":           "john@doe.com"
 }
 ```
-Bovenstaand voorbeeld van een 'call' demonstreert een van de vele manieren om 
-e-mail te versturen met de REST API. Net zoals alle andere API 'calls' kun je
+Bovenstaand voorbeeld van een call demonstreert een van de vele manieren om 
+e-mail te versturen met de REST API. Net zoals alle andere API calls kun je
 data meesturen als een 'application/json' JSON string of als een reguliere 
 'application/x-www-form-encoded' HTTP POST data. In bovenstaand voorbeeld 
 (en alle andere voorbeelden op deze website) gebruiken we JSON omdat het veel
-makkelijke te lezen is.
+makkelijker te lezen is.
 
 In het voorbeeld hebben we geen 'raw MIME message' meegegeven naar SMTPeter.
 We gaven individueel 'subject', 'html', 'from' en 'to' properties op. SMTPeter 
 gebruikt deze properties om een e-mail te construeren nog voordat de e-mail
-wordt verstuurd naar de ontvanger(s). Dit betekent dat je geen complexe 
-'MIME message' hoeft op te bouwen voor SMTPeter. Dit is natuurlijk optioneel.
-Je kunt ook handmatig een 'MIME' string meegeven naar de REST API. Dit wordt
+wordt verstuurd naar de ontvanger(s). Dit betekent dat je geen complex MIME-bericht hoeft op te bouwen voor SMTPeter. Dit is natuurlijk optioneel.
+Je kunt ook handmatig een MIME string meegeven naar de REST API. Dit wordt
 verder in het artikel nader uitgelegd. 
 
-Hierboven hebben we en een 'recipient' en een 'to' field gebruikt. Het 'recipient' 
-veld bevat de adressen waarnaar de e-mail wordt verstuurd. Het 'to' veld bevat 
+Hierboven hebben we en een 'recipient' en een 'to' field gebruikt. Het 'recipient' veld bevat de adressen waarnaar de e-mail wordt verstuurd. Het 'to' veld bevat 
 het veld dat daadwerkelijk in de e-mail wordt weergegeven als het 'to' adres.
-Voor de meeste e-mails zijn deze twee adressen identiek. Echter, het is ook
+Voor de meeste e-mails zijn deze twee adressen identiek. Het is echter ook
 volkomen legaal om e-mails te versturen naar adressen die niet zijn weergegeven 
-in het 'to' veld. Dit is namelijk precies hoe 'BCC' werkt: e-mails worden afgeleverd
+in het 'to' veld. Dit is namelijk precies hoe BCC werkt: e-mails worden afgeleverd
 bij adressen die niet zijn vermeld in de 'to' header.
 
 ## Teruggeven van waardes
 
-Na het succesvol versturen van je 'request', stuurt SMTPeter een JSON object terug
-met daarin een unieke 'identifier' voor elke ontvanger waarnaar de e-mail verstuurd
+Na het succesvol versturen van je request, stuurt SMTPeter een JSON object terug
+met daarin een unieke identifier voor elke ontvanger waar de e-mail naar verstuurd
 gaat worden.
 
 ```json
@@ -64,8 +62,8 @@ gaat worden.
 ```
 De geretourneerde id's kunnen worden gebruikt om informatie te verkrijgen middels 
 andere methodes van de REST API. Omdat je e-mails kunt versturen naar meerdere ontvangers
-met een slechts een 'call', bevat de geretourneerde waarde wellicht meerdere id's 
-en 'recipients'.
+met een slechts een call, bevat de geretourneerde waarde wellicht meerdere id's 
+en recipients.
 
 ## Meerdere ontvangers
 
@@ -82,14 +80,14 @@ versturen. Dit ziet er als volgt uit:
 ```
 
 Alleen bestaande e-mailadressen worden ondersteund. Het is niet toegestaan om 
-'display names' of adressen in 'angle brackets' te gebruiken. SMTPeter geeft
-bij het versturen van e-mail naar meerdere ontvangers ook meerdere 'identifiers'
+'display names' of adressen in blokhaken te gebruiken. SMTPeter geeft
+bij het versturen van e-mail naar meerdere ontvangers ook meerdere identifiers
 terug.
 
 ## Personalization
 
 Je kunt gepersonaliseerde data toevoegen aan de 'recipient(s)'. Deze data kan
-gebruikt worden om [e-mails te personaliseren](personalization). De data 'property'
+gebruikt worden om [e-mails te personaliseren](personalization). De 'data' property
 kun je verwijderen als de e-mail naar een enkele 'recipient' wordt verstuurd.
 
 ```json
@@ -121,7 +119,7 @@ Bij meerdere 'recipients' kan de data als volgt worden meegegeven:
 }
 ```
 
-Binnen de 'MIME' string, tekst of html 'properties' kun je 
+Binnen de MIME-string, text properties of html properties kun je 
 ['personalization variables'](personalization) gebruiken, zoals bijvoorbeeld
 {$firstname} en {$lastname}. SMTPeter personaliseert de waardes dan zelf bij 
 elke e-mail. 
