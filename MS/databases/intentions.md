@@ -1,1 +1,0 @@
-To prevent that mailings are sent to wrong targets, you need to enable the target for its purpose. Intentions need special fields to be present in database or collection. If they are missing you will be informed about it here.
