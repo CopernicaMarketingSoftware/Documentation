@@ -1,11 +1,11 @@
-# 'Feedback loops' voor 'opens'
+# Feedback loops voor opens
 
 SMTPeter kan ook de link van afbeeldingen herschrijven. Dit is handig, omdat
 de afbeelding dan niet wordt gedownload van je eigen server. SMTPeter zet de 
 afbeelding in de *cache* op onze eigen servers, waardoor je het aantal opens
 kunt nagaan om te analyseren. 
 
-Door het opzetten van een feedback loop voor opens krijg je live meldingen
+Door het opzetten van een feedback loop voor *opens* krijg je live meldingen
 over elke geregistreerde opening (van de afbeelding). Voor elke opening sturen
 we een HTTP POST call (HTTPS is ook mogelijk) naar je server met relevante
 informatie over het openen.
@@ -39,7 +39,7 @@ Met elke POST call worden de volgende variabelen toegestuurd:
     </tr>
     <tr>
         <td>referer</td>
-        <td>optional referer (extracted from http request header)</td>
+        <td>optionele *referer* (uit de http header gehaald)</td>
     </tr>
 </table>
 ```

@@ -12,7 +12,7 @@ Dat is alles.
 Voordat SMTPeter begint met het maken van calls naar je URL, moet het
 webadres eerst gevalideerd worden. SMTPeter doet dit om te voorkomen dat 
 gebruikers ons per ongeluk instrueren om vertrouwelijke informatie naar
-de foute server te sturen. Gedurende het validatieproces wordt je gevraagd
+de foute server te sturen. Gedurende het validatieproces word je gevraagd
 om een een klein stukje tekst te kopiëren naar je webserver. Op die manier
 kunnen we zien dat de server daadwerkelijk van jou is.
 

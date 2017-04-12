@@ -1,13 +1,13 @@
 # Direct aan de slag
 
-SMTPeter is een *cloud based* e-mail *gateway* die ervoor zorgt dat je op een makkelijke manier
+SMTPeter is een *cloud based e-mail gateway* die ervoor zorgt dat je op een makkelijke manier
 e-mails kunt versturen. Je kunt kiezen om e-mails naar SMTPeter te versturen via de REST API 
 of SMTP API. Als je start met SMTPeter, moet je (nadat je je hebt geregistreerd) een paar 
 dingen doen:
 
 - Via het dashboard moet je instellen vanaf welke domeinnaam je wilt gaan mailen;
 - Je moet een paar DNS records aanmaken, zodat SMTPeter e-mail vanuit jouw naam kan versturen;
-- En je moet *login credentials* aanmaken om toegang tot de *API* te krijgen.
+- En je moet **login credentials** aanmaken om toegang tot de **API** te krijgen.
 
 
 ## Sender Domain instellen

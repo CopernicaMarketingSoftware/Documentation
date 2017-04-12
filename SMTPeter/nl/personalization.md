@@ -13,7 +13,7 @@ De volgende onderwerpen komen aan bod:
 * [Conditionele 'statements'](personalization#conditionele-statements)
 * [Data uit arrays opvragen en gebruiken](personalization#foreach)
 * [Toekennen van variabelen](personalization#toekennen-van-variabelen)
-* [Gebruik van accolades](personalization#gebruik-accolades-in-je-text)
+* [Gebruik van accolades](personalization#gebruik-van-accolades)
 * [Layout](personalization#denk-om-de-layout)
 
 ## Variabelen 
@@ -49,7 +49,7 @@ zijn:
 | {$foo.bar.baz[4]} | Laat het 5de element van "baz" zien, die in "bar" zit en onderdeel is van $foo.          |
 
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
-een array, als variabele een object is. Let erop dat je ook hier start vanaf 0. 
+een array, als een variabele een object is. Let erop dat je ook hier start vanaf 0.
 
 
 ## Verander inhoud van variabelen
@@ -282,7 +282,7 @@ Dit zorgt ervoor dat uiteindelijk de meest dure items in de $topitem variabele
 worden ondergebracht. De totale prijs wordt ondergebracht in $total.
 
 
-## Gebruik accolades in je text
+## Gebruik van accolades 
 
 De syntax is sterk gebasseerd op accolades `{}`. De accolades kunnen/mogen niet 
 voorkomen in de tekst, zonder naar een valide syntax te verwijzen. Het kan voorkomen
