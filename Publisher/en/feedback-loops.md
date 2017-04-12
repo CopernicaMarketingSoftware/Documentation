@@ -4,7 +4,8 @@ The dashboard in MarketingSuite allows you to configure *feedback loops*. Feedba
 
 You could use this if you want to update data in your own application upon certain events Copernica picks up. To achieve this, place a script on your own server that executes upon Copernica's calls, and in the MarketingSuite dashboard, set the triggers. That is all!
 
-The good thing about feedback loops is that the data Copernica sends you is a lot richer than the data Copernica receives in the first place. All Copernica sees when receiving a click or open is the IP addresss and HTTP headers of the incoming request. To that, we add the e-mail address, profile data and the linked tags and send it to you. This way, your script receives the data that makes it easy to link the data to data in your own system.
+<!--
+The good thing about feedback loops is that the data Copernica sends you is a lot richer than the data Copernica receives in the first place. All Copernica sees when receiving a click or open is the IP addresss and HTTP headers of the incoming request. To that, we add the e-mail address, profile data and the linked tags and send it to you. This way, your script receives the data that makes it easy to link the data to data in your own system.-->
 
 ## Microsoft's, Gmail's and Yahoo's feedback loops
 If you've been around for a while in the email marketing business, you might know about the feedback loops ESP's like Microsoft and Gmail offer. These, however, are different feedback loops than the ones described in this article.
@@ -30,9 +31,11 @@ The following feedback loops can be used:
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
 * [Feedback loops for opens](feedback-opens)
+<!--
 * [Feedback loops for profile creations](feedback-creates)
 * [Feedback loops for profile updates](feedback-updates)
 * [Feedback loops for profile deletions](feedback-deletes)
+-->
 
 ## URL validation
 
