@@ -1,4 +1,4 @@
-# Overige REST calls
+# Overige *REST calls*
 
 De REST API biedt naast de vele verzendopties ook nog een aantal andere opties.
 Deze 'calls' zijn heel erg handig om inzicht te krijgen in de processen rondom
