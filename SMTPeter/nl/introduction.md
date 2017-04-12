@@ -12,6 +12,7 @@ dingen doen:
 
 ## Sender Domain instellen
 
+<<<<<<< HEAD
 Om in te stellen vanuit welke domeinnaam je mail gaat versturen, moet je een *sender domain*
 aanmaken. Deze 'sender domains' vind je in het menu van het SMTPeter dashboard. Klik op 
 ‘Add sender domain’ en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving.
@@ -25,28 +26,55 @@ Dit is nodig, omdat de servers van SMTPeter alleen e-mail uit jouw naam kunnen v
 daar in jouw DNS expliciet toestemming voor wordt gegegeven. 
 
 [Klik hier voor meer informatie over sender domains](sender-domains)
+=======
+'Sender domains' vind je in het menu van het SMTPeter dashboard. Klik op ‘Add sender domain’
+en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving die je kunt raadplegen 
+om het een en ander duidelijk te krijgen. Maak je geen zorgen om klik- en afbeeldingdomeinen 
+of DMARC deployment. Deze kun je later allemaal aanpassen in het configuratiescherm. 
+Het opzetten van sender domains is gemakkelijk, aangezien SMTPeter bijna alles voor je doet. 
+Het is echter wel belangrijk dat je alle stappen daadwerkelijk uitvoert omdat SMTPeter 
+anders niet werkt. Deze stappen worden in hun geheel uitgelegd op [deze](sender-domains)
+pagina.
+>>>>>>> 43d45aac8fffa64450a75d5616348f6b99d21107
 
 
 ## REST vs SMTP
 
 SMTPeter maakt het mogelijk om e-mails te versuren via de REST API en
 en de SMTP API. We raden je sterk aan om, als je de keuze hebt, te gaan voor de 
+<<<<<<< HEAD
 REST API. Deze API geeft je meer opties, vrijheid en gebruiksgemak. 
 En hij is snelle, omdat er geen complexe en tijdrovende SMTP handshake nodig is
 om e-mails te versturen van de ene naar de andere server.
+=======
+REST API. Deze API geeft je veel meer opties, vrijheid en gebruiksgemak. 
+Denk bijvoorbeeld aan de complexe en tijdrovende SMTP handshake die gedaan 
+moet worden om e-mails te versturen van de ene naar de andere server.
+Bij de REST API is deze overbodig. 
+>>>>>>> 43d45aac8fffa64450a75d5616348f6b99d21107
 
 
 ## REST API
 
+<<<<<<< HEAD
 Voor het gebruik van de REST API heb je een zogeheten 'access token' nodig. Deze kun je
 eenvoudig genereren in het SMTPeter dashboard onder het kopje REST API.
+=======
+Voor het gebruik van de REST API heb je een zogeheten *access token* nodig. Deze kun je
+eenvoudig genereren in het SMTPeter dashboard onder het kopje 'REST API'.
+>>>>>>> 43d45aac8fffa64450a75d5616348f6b99d21107
 Vervolgens kun je gebruik maken van alle toepassingen door middel van de onderstaande URL:
 
 ```text
 https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
 ```
+<<<<<<< HEAD
 Let wel op dat je 'METHOD' moet vervangen door de methode die je gaat gebruiken. En dat
 'YOUR_ACCESS_TOKEN' moet worden vervangen door de acces token. Wij raden aan om de
+=======
+Let wel op dat je METHOD moet vervangen door de methode die je gaat gebruiken. En dat
+YOUR_ACCESS_TOKEN moet worden vervangen door de acces token. Wij raden aan om de
+>>>>>>> 43d45aac8fffa64450a75d5616348f6b99d21107
 REST API te gebruiken, omdat die simpelweg een betere functionaliteit heeft dan de SMTP API.
 
 
@@ -54,7 +82,7 @@ REST API te gebruiken, omdat die simpelweg een betere functionaliteit heeft dan 
 
 Voor het gebruik van de SMTP API heb je een valide gebruikersnaam en wachtwoord nodig.
 Deze kun je creëren door op 'Create SMTP login' te klikken en de stappen te volgen.
-Zorg dat je de gegevens goed onthoud, want je krijgt deze maar een keer te zien.
+Zorg dat je de gegevens goed onthoudt, want je krijgt ze maar een keer te zien.
 Nu kun je per aangemaakt account de verschillende toepassingen beheren.
 
 
