@@ -28,10 +28,10 @@ en respectievelijk ook toegevoegd aan de *failure feedback loop* (zie diagram 1)
 
 Echter, het is mogelijk dat een bericht initieel geaccepteerd wordt, 
 maar dat de server achteraf toch nog een bounce e-mail verstuurd 
-waarin meded wordt gedeeld dat het bericht toch is geweigerd. 
+waarin mede wordt gedeeld dat het bericht toch is geweigerd. 
 Deze vorm van bounces duiden op een Delivery Status Notification
 en hebben een speciaal formaat. SMTPeter herkent ook deze type van bounces
-en schrijft ze naar de *log files*. Ook de ['failure feedback loop'](feedback-failures)
+en schrijft ze naar de *log files*. Ook de [failure feedback loop](feedback-failures)
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
@@ -80,6 +80,6 @@ De volgende variabelen worden dan ingevoerd:
 </table>
 ```
 
-De "id" en "recipient" variabelen stellen je in staat om de inkomende bounce
+De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
 te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom", 
 "rcptto" en "data" velden bevatten de melding die door SMTPeter is ontvangen.
