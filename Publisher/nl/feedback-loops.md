@@ -58,9 +58,10 @@ Je kunt gebruik maken van de volgende feedback loops:
 * [Feedback loops voor fouten](feedback-failures)
 * [Feedback loops voor kliks](feedback-clicks)
 * [Feedback loops voor opens](feedback-opens)
-* [Feedback loops voor het aanmaken van een profiel](feedback-creates)
+
+<!-- * [Feedback loops voor het aanmaken van een profiel](feedback-creates)
 * [Feedback loops voor het aanpassen van een profiel](feedback-updates)
-* [Feedback loops voor het verwijderen van een profiel](feedback-deletes)
+* [Feedback loops voor het verwijderen van een profiel](feedback-deletes) -->
 
 ## URL validatie
 
