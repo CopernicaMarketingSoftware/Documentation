@@ -34,8 +34,7 @@ The following feedback loops can be used:
 <!--
 * [Feedback loops for profile creations](feedback-creates)
 * [Feedback loops for profile updates](feedback-updates)
-* [Feedback loops for profile deletions](feedback-deletes)
--->
+* [Feedback loops for profile deletions](feedback-deletes) -->
 
 ## URL validation
 
