@@ -26,7 +26,8 @@ mee te geven, maar dit lukt niet altijd vanwege de vele verschillende formaten
 waarin bounces worden gemeld. 
 
 Je kunt alsnog alle bounces ontvangen als je dat wilt. Zelfs degene die we niet
-hebben getraceerd. In dat geval kun je additioneel een [feedback loop opzetten voor bounces](feedback-bounces).
+hebben getraceerd met de failures feedback loop. 
+In dat geval kun je additioneel een [feedback loop opzetten voor bounces](feedback-bounces).
 
 
 ## Formaat

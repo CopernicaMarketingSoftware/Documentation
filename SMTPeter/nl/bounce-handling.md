@@ -1,20 +1,20 @@
 # Bounce protocol
 
-Als je een e-mail verstuurt ontvang je allerlei bounce berichten. 
-Tussen deze berichten vindt je de status van ontvangst voor adressen 
+Als je een e-mail verstuurt ontvang je allerlei *bounce* berichten. 
+Tussen deze berichten vind je de status van ontvangst voor adressen 
 die niet meer bestaan, afwezigheidsberichten, bevestigingsberichten en 
 andere automatisch gegenereerde berichten.
 
 SMTPeter kan geconfigureerd worden om hier op een goede manier mee om te 
 gaan. Er zijn hier verschillende opties voor.
 
-## Het 'envelope' adres
+## Het envelope adres
 
 Wanneer je e-mail toevoegd via de [SMTP API](smtp-api) of de 
-[REST API](rest-api) kun je een "envelope adres" toevoegen. Dit is het 
+[REST API](rest-api) kun je een *envelope adres* toevoegen. Dit is het 
 adres waarop de bounces worden afgeleverd. Deze hoeft niet hetzelfde te 
-zijn als het "van" adres. Het "van" adres wordt gebruikt wanneer iemand 
-op "antwoord" drukt in de mail client, het "envelope" adres wordt gebruikt 
+zijn als het "from" adres. Het "from" adres wordt gebruikt wanneer iemand 
+op "reply" drukt in de *mail client*, het envelope adres wordt gebruikt 
 voor geautomatiseerde antwoorden.
 
 Als je helemaal niet geinteresseerd bent in deze berichten kun je ze 
@@ -39,9 +39,9 @@ DATA
 Zoals je hierboven kunt zien is "MAIL FROM" ook geldig zonder envelope 
 adres.
 
-## 'Bounce tracking'
+## Bounce tracking
 
-Als je wel een "envelope" adres toegevoegd hebt kun je SMTPeter 
+Als je wel een envelope adres toegevoegd hebt kun je SMTPeter 
 instructies geven over het afhandelen van bounce informatie.
 
 In de REST API kun je de "trackbounces" variabele toevoegen aan je 
@@ -69,10 +69,10 @@ verzender.
 
 ## Aankomst Status Notificaties
 
-Een speciaal type bounce berichten zijn aankomst status notificaties of 
-DSN's. Veel bounce messages zijn moeilijk te herkennen voor computers, 
+Een speciaal type bounce bericht is aankomst status notificatie van 
+DSN's. Veel bounce berichten zijn moeilijk te herkennen voor computers, 
 maar DSN's zijn gestandardizeerd en kunnen daarom verwerkt worden door 
-mail servers. SMTPeter herkent dit type bounces en slaat de errors op. 
+e-mail servers. SMTPeter herkent dit type bounces en slaat de errors op. 
 Je kunt er daarom ook voor kiezen om deze niet daarnaast nog door te 
 laten sturen.
 
@@ -98,7 +98,7 @@ worden met deze parameters:
 Deze parameters kunnen zowel met de SMTP API als met de REST API worden 
 doorgegeven. De REST API gebruikt een nested JSON object.
 
-````
+```json
 {
     "envelope": "bounce@yourdomain.com",
     "recipient": "info@example.com",
@@ -110,23 +110,23 @@ doorgegeven. De REST API gebruikt een nested JSON object.
         "orcpt": "info@example.com"
     }
 }
-````
+```
 
 In de SMTP API kun je ze doorgeven aan de "MAIL FROM" en "RCPT TO" 
 instructies.
 
-````
+```json
 MAIL FROM:<alice@example.org> RET=HDRS ENVID=yourid
 250 sender ok
 RCPT TO:<bob@example.com> NOTIFY=SUCCESS ORCPT=rfc822;bob@example.com
 250 recipient ok
-````
+```
 
 De "notify" parameter heeft de volgende waarden:
 
-* NEVER: Nooit een notificatie sturen
-* FAILURE: Alleen een notificatie sturen voor niet aangekomen mails
-* SUCCESS: Alleen een notificatie sturen voor wel aangekomen mails
+* NEVER: Nooit een notificatie sturen;
+* FAILURE: Alleen een notificatie sturen voor niet aangekomen mails;
+* SUCCESS: Alleen een notificatie sturen voor wel aangekomen mails;
 * DELAY: Alleen een notificatie sturen voor vertraagde berichten.
 
 De "ret" parameter kan "FULL" zijn om het hele bericht door te sturen 
@@ -144,7 +144,7 @@ maar geen DSN berichten omdat je weet dat deze al in SMTPeter error
 logs worden opgeslagen. Je kunt dan de volgende JSON REST data gebruiken in 
 je e-mail.
 
-````
+```json
 {
     "envelope": "bounce@yourdomain.com",
     "recipient": "info@example.com",
@@ -154,7 +154,7 @@ je e-mail.
         "notify": "NEVER"
     }
 }
-````
+```
 
 In het voorbeeld geef je wel een envelope adres mee om bounces te ontvangen. 
 De "trackbounces" variabele staat op waar zodat SMTPeter de DSN's kan loggen.
@@ -164,18 +164,18 @@ nooit DSN's ontvangt in je inbox.
 Als je zelf geen bounces wilt maar wel dat de errors worden opgeslagen 
 kun je het envelope adres weglaten en "trackbounces" op true zetten.
 
-````
+```json
 {
     "recipient": "info@example.com",
     "mime": "...",
     "trackbounces": true
 }
-````
+```
 
 Als je afwezigheidsberichten, niet herkende errors en error berichten 
 wilt ontvangen kun je de volgende JSON data gebruiken.
 
-````
+```json
 {
     "envelope": "bounce@yourdomain.com",
     "recipient": "info@example.com",
@@ -185,7 +185,7 @@ wilt ontvangen kun je de volgende JSON data gebruiken.
         "notify": "FAILURE"
     }
 }
-````
+```
 
-Met de bovenstaande data zal SMTPeter alle mail doorsturen naar je 
+Met de bovenstaande data stuurt SMTPeter alle e-mails door naar je 
 envelope adres.
