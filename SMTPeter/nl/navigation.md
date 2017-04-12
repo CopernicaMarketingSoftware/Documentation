@@ -2,6 +2,7 @@
     * [Dashboard](dashboard)
 * [Verzenden via SMTP](smtp-api)
     * [Aanmaken van credentials](smtp-credentials)
+    * [Domeinnaam en poorten](smtp-ports)
     * [MIME headers](smtp-headers)
 * [Verzenden via REST](rest-send)
     * [MIME data versturen](rest-mime)
