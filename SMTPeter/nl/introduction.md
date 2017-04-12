@@ -14,9 +14,9 @@ nodig:
 en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving die je kunt raadplegen 
 om het een en ander duidelijk te krijgen. Maak je geen zorgen om klik- en afbeeldingdomeinen 
 of DMARC deployment. Deze kun je later allemaal aanpassen in het configuratiescherm. 
-Het opzetten van 'sender domains' is gemakkelijk aangezien SMTPeter alles overneemt. 
-Echter, het is wel belangrijk dat je alle stappen daadwerkelijk uitvoert omdat SMTPeter 
-anders niet werkt. Deze stappen worden in z'n totaliteit uitgelegd op [deze](sender-domains)
+Het opzetten van sender domains is gemakkelijk, aangezien SMTPeter bijna alles voor je doet. 
+Het is echter wel belangrijk dat je alle stappen daadwerkelijk uitvoert omdat SMTPeter 
+anders niet werkt. Deze stappen worden in hun geheel uitgelegd op [deze](sender-domains)
 pagina.
 
 
@@ -24,7 +24,7 @@ pagina.
 
 SMTPeter maakt het mogelijk om e-mails te versuren via de REST API en
 en de SMTP API. We raden je sterk aan om, als je de keuze hebt, te gaan voor de 
-REST API. Deze API geeft je zoveel meer opties, vrijheid en gebruiksgemak. 
+REST API. Deze API geeft je veel meer opties, vrijheid en gebruiksgemak. 
 Denk bijvoorbeeld aan de complexe en tijdrovende SMTP handshake die gedaan 
 moet worden om e-mails te versturen van de ene naar de andere server.
 Bij de REST API is deze overbodig. 
@@ -32,15 +32,15 @@ Bij de REST API is deze overbodig.
 
 ## REST API
 
-Voor het gebruik van de REST API heb je een zogeheten 'access token' nodig. Deze kun je
-eenvoudig genereren in het SMTPeter 'dashboard' onder het kopje 'REST API'.
+Voor het gebruik van de REST API heb je een zogeheten *access token* nodig. Deze kun je
+eenvoudig genereren in het SMTPeter dashboard onder het kopje 'REST API'.
 Vervolgens kun je gebruik maken van alle toepassingen door middel van de onderstaande URL:
 
 ```text
 https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
 ```
 Let wel op dat je METHOD moet vervangen door de methode die je gaat gebruiken. En dat
-YOUR_ACCESS_TOKEN moet worden vervangen door de 'acces token'. Wij raden aan om de
+YOUR_ACCESS_TOKEN moet worden vervangen door de acces token. Wij raden aan om de
 REST API te gebruiken, omdat die simpelweg een betere functionaliteit heeft dan de SMTP API.
 
 
@@ -48,7 +48,7 @@ REST API te gebruiken, omdat die simpelweg een betere functionaliteit heeft dan 
 
 Voor het gebruik van de SMTP API heb je een valide gebruikersnaam en wachtwoord nodig.
 Deze kun je creëren door op 'Create SMTP login' te klikken en de stappen te volgen.
-Zorg dat je de gegevens goed onthoud, want je krijgt deze maar een keer te zien.
+Zorg dat je de gegevens goed onthoudt, want je krijgt ze maar een keer te zien.
 Nu kun je per aangemaakt account de verschillende toepassingen beheren.
 
 
