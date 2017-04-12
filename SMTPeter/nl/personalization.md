@@ -6,6 +6,15 @@ te houden. Hieronder wordt de syntax uitgelegd aan de hand van een aantal
 voorbeelden, zodat je direct een beeld hebt bij de mogelijkheden van deze 
 toepassing.
 
+De volgende onderwerpen komen aan bod:
+* [Variabelen](personalization#variabelen)
+* [Inhoud van variabelen veranderen](personalization#verander-inhoud-van-variabelen)
+* [Simpele berekeningen](personalization#simpele-berekeningen)
+* [Conditionele 'statements'](personalization#conditionele-statements)
+* [Data uit arrays opvragen en gebruiken](personalization#foreach)
+* [Toekennen van variabelen](personalization#toekennen-van-variabelen)
+* [Gebruik van accolades](personalization#gebruik-accolades-in-je-text)
+* [Layout](personalization#denk-om-de-layout)
 
 ## Variabelen 
 
