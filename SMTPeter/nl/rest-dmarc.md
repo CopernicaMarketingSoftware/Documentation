@@ -5,11 +5,9 @@ Bij het gebruik van [DMARC](dmarc-deployment) versturen *ISPs* en e-mailprovider
 Deze rapporten zijn te bereiken via de REST GET API via de volgende methodes:
 
 ```text
-
 (1) https://www.smtpeter.com/v1/dmarc
 (2) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR
 (3) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR/ID
-
 ```
 
 "DATE" is de datum van het rapport in de vorm YYYY-MM-DD, "FROM" is het domein die het rapport heeft verstuurd en FOR is het domein waarvoor het rapport is. Als er meerdere rapporten zijn voor een FROM-FOR combinatie of voor een bepaalde datum, kun je een ID (beginnend bij nul) gebruiken om de data te ontvangen. Als er meerdere rapporten zijn en er geen ID is meegegeven wordt alleen het eerste DMARC rapport (XML bestand) teruggegeven.

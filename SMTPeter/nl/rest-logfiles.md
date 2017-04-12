@@ -8,14 +8,12 @@ De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
 Je doet dit middels een van de volgende URls:
 
 ```text
-
 (1) https://www.smtpeter.com/v1/logfiles
 (2) https://www.smtpeter.com/v1/logfiles/DATE
 (3) https://www.smtpeter.com/v1/logfiles/FILENAME
 (4) https://www.smtpeter.com/v1/logfiles/FILENAME/header
 (5) https://www.smtpeter.com/v1/logfiles/FILENAME/json
 (6) https://www.smtpeter.com/v1/logfiles/FILENAME/xml
-
 ```
 
 De bovenstaande methodes kunnen worden gebruikt (1) om te zien voor welke
@@ -31,7 +29,6 @@ methode aan te roepen zonder een extra paramater mee te geven
 met alle datums:
 
 ```json
-
 [ "2016-03-20", "2016-03-21", "2016-03-22" ]
 // UTC tijd
 ```
@@ -45,14 +42,12 @@ De datum kun je opvragen door het volgende formaat aan te houden:
 "YYYY-MM-DD".
 
 ```json
-
 [
     "attempts.2016-03-20.log",
     "clicks.2016-03-20.log",
     "opens.2016-03-20.log",
     "dmarc.2016-03-20.log"
 ]
-
 ```
 
 De namen van de log files bestaan uit de volgende indeling *PREFIX.DATE.log*.
@@ -79,9 +74,7 @@ log file downloaden als csv formaat door de een tag toe te voegen aan
 het eind van de REST API URL. 
 
 ```text
-
 https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/csv
-
 ```
 
 Dit geeft een CSV bestand terug zonder variabelen. Je kunt een header 
@@ -89,18 +82,14 @@ toevoegen aan de *call* als je alle variabelen op de eerste regel van
 je CSV bestand wilt hebben. 
 
 ```text
-
 https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/csv/header
-
 ```
 
 Je kunt de bestanden ook downloaden in JSON formaat. Voeg in dat geval
 "/json" toe aan het bestand dat je wilt downloaden.
 
 ```text
-
 https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/json
-
 ```
 
 De JSON bestaat uit een array met daarin JSON objecten. De *properties*
@@ -111,15 +100,12 @@ Tot slot, het downloaden van een XML formaat werkt identiek als de bovenstaande
 voorbeelden. Voeg "/xml" toe aan de bestandsnaam die je wilt downloaden.
 
 ```text
-
 https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/xml
-
 ```
 
 Het XML bestand ziet er als volgt uit:
 
 ```xml
-
 <records>
     <record>
         <NAME1>
@@ -138,7 +124,6 @@ Het XML bestand ziet er als volgt uit:
         </NAME2>
     </record>
 </records>
-
 ```
 
 *De naam kun je opvragen middels de instructies in bovenstaande tabel.*

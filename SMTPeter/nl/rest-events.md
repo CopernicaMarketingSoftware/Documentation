@@ -8,12 +8,10 @@ De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
 Je doet dit middels een van de volgende URls:
 
 ```text
-
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADRES
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
 https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
-
 ```
 
 ## Beschikbare parameters
@@ -25,11 +23,9 @@ geven, gevolgd door een `=` en de waarde van de optie.
 De volgende parameters kunnen aan de URLs als variabelen worden toegevoegd:
 
 ```text
-
 - **start**: de startdatum (jjjj-mm-dd) vanaf wanneer de events gedownload worden;
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload moeten worden;
 - **tags**:  optionele tags waarop gefilterd kan worden.
-
 ```
 
 
@@ -67,7 +63,6 @@ door middel van puntkomma's.
 Na het verzoek ontvang je de volgende JSON:
 
 ```json
-
 [
     {
         "type" : "open|click|failure|...",
@@ -87,7 +82,6 @@ Na het verzoek ontvang je de volgende JSON:
     },
     ...
 ]
-
 ```
 
 Het `type` in de JSON geeft het type record. De beschikbare types
@@ -111,9 +105,7 @@ De volgende URL kan gebruikt worden om events, die betrekking
 hebben op een bepaalde message ID, op te vragen.
 
 ```text
-
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
-
 ```
 
 Hierbij is de `MESSAGE ID` het betreffende message ID. Je krijgt vervolgens de
@@ -128,9 +120,7 @@ De volgende URL kan gebruikt worden om informatie met betrekking tot
 een bepaald e-mailadres op te vragen.
 
 ```text
-
 https://www.smtpeter.com/v1/events/email/EMAILADRES
-
 ```
 
 Hierbij is `EMAILADRES` het betreffende e-mailadres. Je krijgt de events
@@ -145,9 +135,7 @@ De volgende URL kan gebruikt worden om alle informatie met betrekking tot
 een bepaalde template adres op te vragen.
 
 ```text
-
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
-
 ```
 
 Hierbij is `TEMPLATEID` de ID van de betreffende template. Je krijgt vervolgens
@@ -163,9 +151,7 @@ De volgende URL kan gebruikt worden om informatie met een tag op te
 vragen.
 
 ```text
-
 https://www.smtpeter.com/v1/tags/TAG
-
 ```
 
 Hierbij is `TAG` de betreffende tag. Je krijgt vervolgens alle events
@@ -173,9 +159,7 @@ tot een maand geleden. De events voor andere periodes kunnen worden
 gedownload door de optionele parameters `start` en/of `end` op te geven.
 
 ```text
-
 https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
-
 ```
 
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
