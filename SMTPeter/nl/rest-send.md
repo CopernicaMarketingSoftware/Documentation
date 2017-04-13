@@ -1,10 +1,12 @@
 # Verzenden via REST
 
 SMTPeter heeft een betrouwbare REST API die gebruik maakt van het HTTPS 
-protocol. De REST API kan als alternatieve optie worden gebruikt om 
-toepassingen te injecteren in je e-mails. De SMTP API mist een aantal 
-functionaliteiten die de REST API wel heeft. Zoals bijvoorbeeld het 
-ophalen van statistieken of het omzetten van e-mails naar JSON formaat. 
+protocol. Met de REST API kun je op een flexibele en geavanceerde manier 
+toepassingen injecteren in je e-mails. In het [direct aan de slag](introduction)
+artikel heb je kunnen lezen dat de REST API dus een echte alleskunner is,
+die je veel meer mogelijkheden geeft dan de SMTP API. Een voorbeeld van die 
+mogelijkheden is het ophalen van statistieken of het omzetten van e-mails 
+naar JSON formaat. 
 
 Nogmaals, er kan alleen gebruik worden gemaakt van *calls* die via 
 het HTTPS protocol worden gedaan. Onveilige HTTP calls worden niet
