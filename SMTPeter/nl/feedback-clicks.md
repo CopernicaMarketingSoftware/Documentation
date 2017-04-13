@@ -12,7 +12,6 @@ met relevante informatie over de klik.
 
 Met elke POST call worden de volgende vaiabelen toegestuurd:
 
-```html 
 <table>
     <tr>
         <td>id</td>
@@ -47,7 +46,6 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
         <td>de *tags* die je associërt met een e-mail</td>
     </tr>
 </table>
-```
 
 De "ID", "recipient" en "tags" variabelen stellen je in staat om de klik te linken aan de 
 originele verstuurde e-mail.
