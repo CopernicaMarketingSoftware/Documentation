@@ -31,5 +31,6 @@ The output looks like this:
 
 * [Personalization](./personalization)
 * [Personalization modifiers](./personalization-modifiers)
+* [string_format modifier](./personalization-modifiers-string_format)
 
 This modifier can also be found in the [Smarty Documentation](http://www.smarty.net/docs/en/language.modifier.date.format.tpl).

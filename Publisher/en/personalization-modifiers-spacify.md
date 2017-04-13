@@ -24,4 +24,4 @@ The output looks like this:
 * [Personalization](./personalization)
 * [Personalization modifiers](./personalization-modifiers)
 
-This modifier can also be found in the [Smarty Documentation]().
+This modifier can also be found in the [Smarty Documentation](http://www.smarty.net/docs/en/language.modifier.spacify.tpl).
