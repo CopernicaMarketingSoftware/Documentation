@@ -3,7 +3,7 @@
 The Style component allows you to create new stylesheets using the
 Stylesheet menu.
 The stylesheet is generic and contains tabs to create stylesheets for
-general, RSS feeds, Atom feeds, surveys and web forms. **All in one file
+general, [RSS feeds and Atom feeds](./rss-and-atom-feeds.md), surveys and web forms. **All in one file
 seperated with tabs.**
 
 You can compose each style sheet with example coding, or create an empty
@@ -18,7 +18,7 @@ list.
 
 ![Preview style or xslt](../images/previewstyleorxslt.jpg)
 
-the preview tab alows you to preview an xslt or css with your webform,
+The preview tab allows you to preview an xslt or css with your webform,
 feed or survey.
 
 ## Linking the stylesheet
