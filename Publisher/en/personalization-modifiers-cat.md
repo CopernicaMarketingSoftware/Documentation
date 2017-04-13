@@ -7,10 +7,18 @@ a string.
 ## Example
 
 Let's say we want to concatenate the first and last name, which are 
-initialized as $firstname and $lastname respectively. We can use the *cat* 
+initialized as $firstname ("John") and $lastname ("Doe") respectively. We can use the *cat* 
 modifier to achieve this with the following example:
 
+    {$firstname}
+    {$lastname}
     {$firstname|cat:$lastname}
+    
+The output looks like this:
+
+    John
+    Doe
+    JohnDoe
 
 ## More information
 
