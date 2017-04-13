@@ -19,7 +19,7 @@ de CSS code *inline* zet.
 
 ## Zet CSS inline
 
-Door de "inlinecss" variabel op *true* te zetten activeer je de toepassing
+Door de "inlinecss" variabele op *true* te zetten, activeer je de toepassing
 die ervoor zorgt dat *CSS stylesheets* uit de *header* worden omgezet naar
 inline attributen in de html code.
 

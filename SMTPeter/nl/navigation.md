@@ -5,6 +5,8 @@
     * [Domeinnaam en poorten](smtp-ports)
     * [MIME headers](smtp-headers)
 * [Verzenden via REST](rest-send)
+    * [Bepaal de methode](rest-method)
+    * [Terugkoppeling](rest-api-reaction)
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
     * [Versturen op basis van een template](rest-send-template)
