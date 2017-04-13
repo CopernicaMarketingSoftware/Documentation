@@ -1,18 +1,12 @@
 # Verzenden via REST
 
 SMTPeter heeft een betrouwbare REST API die gebruik maakt van het HTTPS 
-protocol. Met de REST API kun je op een flexibele en geavanceerde manier 
-toepassingen injecteren in je e-mails. In het [direct aan de slag](introduction)
-artikel heb je kunnen lezen dat de REST API dus een echte alleskunner is,
-die je veel meer mogelijkheden geeft dan de SMTP API. Een voorbeeld van die 
-mogelijkheden is het ophalen van statistieken of het omzetten van e-mails 
-naar JSON formaat. 
-
-Nogmaals, er kan alleen gebruik worden gemaakt van *calls* die via 
-het HTTPS protocol worden gedaan. Onveilige HTTP calls worden niet
-geaccepteerd en geven dan ook een *400 BAD Request* antwoord terug.
-Om toegang te krijgen tot de REST API heb je een een *API access token* 
-nodig. Deze vind je terug in het SMTPeter dashboard.
+protocol. Onveilige HTTP calls worden niet geaccepteerd en geven dan ook een 
+*400 BAD Request* antwoord terug.Om toegang te krijgen tot de REST API 
+heb je een een *API access token* nodig. Deze vind je terug in het 
+SMTPeter dashboard. Met de REST API kun je op een flexibele en geavanceerde 
+manier toepassingen injecteren in je e-mails. In dit artikel wordt verder 
+uitgelegd wat die toepassingen precies inhouden en hoe je ze kunt aanroepen.
 
 
 ## Bepaal de methode
@@ -50,15 +44,15 @@ Content-Length: 246
 Bovenstaand voorbeeld van een call demonstreert een van de vele manieren om 
 e-mail te versturen met de REST API. Net zoals alle andere API calls kun je
 data meesturen als een "application/json" JSON string of als een reguliere 
-"application/x-www-form-encoded" HTTP POST data. In bovenstaand voorbeeld 
+"application/x-www-form-encoded" HTTP POST data. In bovenstaand voorbeeld
 (en alle andere voorbeelden op deze website) gebruiken we JSON omdat het 
 veel makkelijker te lezen is.
 
 In het voorbeeld hebben we geen raw MIME bericht meegegeven naar SMTPeter.
 We gaven individueel "subject", "html", "from" en "to" properties op. SMTPeter 
 gebruikt deze properties om een e-mail te construeren nog voordat de e-mail
-wordt verstuurd naar de ontvanger(s). Dit betekent dat je geen complex MIME-bericht 
-hoeft op te bouwen voor SMTPeter. Dit is natuurlijk optioneel.
+wordt verstuurd naar de ontvanger(s). Dit betekent dat je geen complex 
+MIME-bericht hoeft op te bouwen voor SMTPeter. Dit is natuurlijk optioneel.
 Je kunt ook handmatig een MIME string meegeven naar de REST API. Dit wordt
 verder in het artikel nader uitgelegd. 
 
@@ -67,8 +61,8 @@ veld bevat de adressen waarnaar de e-mail wordt verstuurd. Het "to" veld bevat
 het veld dat daadwerkelijk in de e-mail wordt weergegeven als het "to" adres.
 Voor de meeste e-mails zijn deze twee adressen identiek. Het is echter ook
 volkomen legaal om e-mails te versturen naar adressen die niet zijn weergegeven 
-in het "to" veld. Dit is namelijk precies hoe *BCC* werkt: e-mails worden afgeleverd
-bij adressen die niet zijn vermeld in de "to" header.
+in het "to" veld. Dit is namelijk precies hoe *BCC* werkt: e-mails worden 
+afgeleverd bij adressen die niet zijn vermeld in de "to" header.
 
 
 ## Teruggeven van waardes
@@ -158,4 +152,4 @@ Bij meerdere "recipients" kan de data als volgt worden meegegeven:
 Binnen de MIME-string, text properties of html properties kun je 
 ['personalization variables'](personalization) gebruiken, zoals bijvoorbeeld
 {$firstname} en {$lastname}. SMTPeter personaliseert de waardes dan zelf bij 
-elke e-mail. 
+elke e-mail.
