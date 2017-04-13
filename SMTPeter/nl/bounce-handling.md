@@ -11,7 +11,7 @@ gaan. Er zijn hier verschillende opties voor.
 ## Het envelope adres
 
 Wanneer je e-mail toevoegd via de [SMTP API](smtp-api) of de 
-[REST API](rest-api) kun je een *envelope adres* toevoegen. Dit is het 
+[REST API](rest-send) kun je een *envelope adres* toevoegen. Dit is het 
 adres waarop de bounces worden afgeleverd. Deze hoeft niet hetzelfde te 
 zijn als het "from" adres. Het "from" adres wordt gebruikt wanneer iemand 
 op "reply" drukt in de *mail client*, het envelope adres wordt gebruikt 
