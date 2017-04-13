@@ -1,4 +1,4 @@
-# Click -en open tracking
+# Click en open tracking
 
 Je kunt de *click tracking* van SMTPeter gebruiken om te zien wat de 
 gebruikers aantrekt. Als click tracking ingeschakeld is worden alle 
@@ -15,8 +15,8 @@ wanneer de email geopend wordt, omdat we zien dat de afbeelding wordt gedownload
 
 ## Click tracking inschakelen
 
-Emails kunnen naar SMTPeter worden gestuurd met de [SMTP API](./smtp-api) 
-en de [REST API](./rest-api). Beide API's hebben de mogelijkheid klik 
+Emails kunnen naar SMTPeter worden gestuurd met de [SMTP API](smtp-api) 
+en de [REST API](rest-send). Beide API's hebben de mogelijkheid klik 
 tracking in te schakelen.
 
 In de REST API kun je een 'trackclicks property' meegeven in de JSON of de 
