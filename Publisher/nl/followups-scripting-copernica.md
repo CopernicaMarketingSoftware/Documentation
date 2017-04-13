@@ -1,9 +1,9 @@
 # Followups: copernica klasse
 
 De **copernica** klasse is gelinkt aan het account die je hebt geregistreerd bij Copernica. De globale `copernica`
-variabele is de enige instantie van deze klasse. Deze is beschikbaar in het data-script object en geeft 
+variabele is de enige instantie van deze klasse. Deze is beschikbaar in het script en geeft 
 toegang tot de data die bij jouw account hoort. Deze informatie is beschikbaar binnen alle scripts gemaakt met deze account,
-dus aanpassing van het globale `copernica.data` object zijn over alle scripts over het hele account zichtbaar.
+dus aanpassing van het globale `copernica.data` object zijn in alle scripts over het hele account zichtbaar.
 
 ## Beschikbare eigenschappen
 
