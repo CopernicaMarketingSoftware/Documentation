@@ -3,11 +3,11 @@
 De webversie biedt een alternatief voor het lezen van de email binnen een 
 email client. Dit is bijvoorbeeld nuttig voor ontvangers die binnen hun 
 email client geen HTML mails kunnen lezen. Je kunt een link naar de webversie 
-toevoegen in je mail of [template](./templates) door de `{$webversion}` tag te gebruiken.
+toevoegen in je mail of [template](rest-templates) door de `{$webversion}` tag te gebruiken.
 Deze tag wordt automatisch omgezet naar een unieke URL voor elke gebruiker.
 
 
-Met het volgende stukje HTML wordt de URL in een linkje omgezet:
+Met het volgende stukje HTML wordt de URL in een link omgezet:
 
 ```html
 <a href="{$webversion}">View the web version</a>
