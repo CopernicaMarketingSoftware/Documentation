@@ -32,4 +32,4 @@
     * [Bounce protocol](bounce-handling)
     * [Inline CSS code](inline-css)
     * [E-mail throttling](email-throttling)
-    * [Klik en open tracking](statistics)
+    * [Click en open tracking](statistics)
