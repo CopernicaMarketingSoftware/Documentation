@@ -51,7 +51,7 @@ De "subject", "text" en "HTML" properties kunnen gebruikt worden om het onderwer
 
 ## Unsubscribe header
 
-Als je een "list-unsubscribe header" wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. 
+Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. 
 
 ```json
 {

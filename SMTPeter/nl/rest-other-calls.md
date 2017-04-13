@@ -8,10 +8,14 @@ categoriën opvragen: *events*, *log files*, *DMARC reports* en *templates*.
 Kortom, met de flexibele REST API heb je alle denkbare opties tot je beschikking.
 
 
-## Verken de overige REST calls 
+## Verken de andere toepassingen 
+
+De REST API geeft je een aantal handige opties om je mailings te verbeteren:
 
 * [Opvragen van berichten](rest-messages)
 * [Opvragen van events](rest-events)
 * [Opvragen van log files](rest-logfiles)
 * [Opvragen van DMARC reports](rest-dmarc)
 * [Templates beheren](rest-tempaltes)
+
+*Alle beschikbare REST calls kun je [hier](all-rest-calls) vinden.*
