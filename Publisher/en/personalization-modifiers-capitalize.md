@@ -3,7 +3,7 @@
 The *capitalize* modifier can be used to capitalize the first letter of 
 all words in a variable. This is very useful for capitalizing titles or names.
 
-## Variables
+## Parameters
 
 The *capitalize* modifier has two booleans. They do not have a name, but 
 are assigned according to the assigned order. The first boolean determines 

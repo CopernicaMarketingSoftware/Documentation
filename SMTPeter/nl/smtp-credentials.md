@@ -21,5 +21,4 @@ Als je gebruik maakt van de [bounce-tracking feature](bounce-handling) vervangt 
 
 Als je echter het verwerken van bounces niet aan SMTPeter overlaat, gedraagt SMTPeter zich als een normale MTA en stuurt hij Delivery Status Notifications naar je envelope address als er iets mis gaat.
 
-SMTPeter ondersteunt ook de (SMTP DSN)[https://tools.ietf.org/html/rfc3461https://tools.ietf.org/html/rfc3461] extensie, waarmee je parameters kunt doorgeven aan de “MAIL FROM” en “RCPT TO”-commando’s, die bepalen wanneer en welke DSN-berichten je ontvangt. 
-s
+SMTPeter ondersteunt ook de [SMTP DSN](https://tools.ietf.org/html/rfc3461https://tools.ietf.org/html/rfc3461) extensie, waarmee je parameters kunt doorgeven aan de “MAIL FROM” en “RCPT TO”-commando’s, die bepalen wanneer en welke DSN-berichten je ontvangt.
