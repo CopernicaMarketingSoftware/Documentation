@@ -1,4 +1,4 @@
-# Click -en open tracking
+# Click en open tracking
 
 Je kunt de *click tracking* van SMTPeter gebruiken om te zien wat de 
 gebruikers aantrekt. Als click tracking ingeschakeld is worden alle 
@@ -13,18 +13,20 @@ herschreven, zodat afbeelding worden gedownload via de SMTPeter server in
 plaats van de originele server. Door dit te doen kunnen we ook registreren 
 wanneer de email geopend wordt, omdat we zien dat de afbeelding wordt gedownload.
 
+
 ## Click tracking inschakelen
 
-Emails kunnen naar SMTPeter worden gestuurd met de [SMTP API](./smtp-api) 
-en de [REST API](./rest-api). Beide API's hebben de mogelijkheid klik 
+Emails kunnen naar SMTPeter worden gestuurd met de [SMTP API](smtp-api) 
+en de [REST API](rest-send). Beide API's hebben de mogelijkheid klik 
 tracking in te schakelen.
 
-In de REST API kun je een 'trackclicks property' meegeven in de JSON of de 
+In de REST API kun je een "trackclicks" property meegeven in de JSON of de 
 POST data.
 
-In SMTP API kun je een 'x-smtpeter-trackclicks' MIME header meegeven aan 
-je email of naar het dashboard gaan en gegevens aanmaken waarvoor klik 
+In de SMTP API kun je een *x-smtpeter-trackclicks* MIME header meegeven aan 
+je email of naar het dashboard gaan en gegevens aanmaken waarvoor click 
 tracking is ingeschakeld.
+
 
 ## Scam preventie
 
@@ -36,10 +38,10 @@ naar een andere URL gelinkt wordt dan weergeven wordt.
 <a href="http://clicks.smtpeter.com/path/to/file">www.example.com</a>
 ```
 
-De bovenstaande link resulteert in een 'dit bericht kan spam zijn' 
+De bovenstaande link resulteert in een *dit bericht kan spam zijn*
 waarschuwing in email programma's, omdat het lijkt alsof de link naar 
-'example.com' gaat voor de gebruiker maar in werkelijkheid 
-'clicks.smtpeter.com' opent.
+"example.com" gaat voor de gebruiker maar in werkelijkheid 
+"clicks.smtpeter.com" opent.
 
 Als je zulke waarschuwingen wilt voorkomen kun je aangeven dat 
 SMTPeter dit soort hyperlinks niet moet herschrijven. Je kunt ook in 
@@ -51,7 +53,7 @@ plaats van de URL text weergeven:
 
 ## API en dashboard
 
-Alle kliks en opens worden opgeslagen in een log. Je kunt hier toegang 
+Alle *clicks en opens* worden opgeslagen in een log. Je kunt hier toegang 
 toe krijgen met de REST API. Je hebt dan toegang tot alle onbewerkte 
 data (in XML, JSON of csv).
 

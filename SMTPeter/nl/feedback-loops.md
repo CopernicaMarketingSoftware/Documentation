@@ -19,7 +19,7 @@ aangeroepen als [iemand een mail opent](feedback-opens), aangezien hier vaak een
 hoeveelheid calls mee gemoeid is.
 
 Vind je deze optie op dit moment te gevaarlijk voor je servers of heb je geen live events
-nodig? Dan kan je beter de [REST API](rest-api) gebruiken om periodiek [de laatste log files](rest-logfiles)
+nodig? Dan kan je beter de [REST API](rest-send) gebruiken om periodiek [de laatste log files](rest-logfiles)
 te downloaden. De REST API levert exact dezelfde informatie als de feedback loops.
 Echter, met de REST API hou je de controle en bepaal je zelf welke data je wilt opvragen.
 
