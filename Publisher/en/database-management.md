@@ -14,7 +14,7 @@ You manage databases, collections and (sub) profile data in the section
 -   [Setting up your database and import
     contacts](./setting-up-your-database-and-import-your-contacts.md)
 -   [Database selections and
-    miniselections](./selections-and-miniselections.md)
+    miniselections](./selections-introduction.md)
 -   [Create a
     mailinglist](./create-a-mailing-list.md)
 -   [Setting unsubscribe behaviour for your database or
@@ -36,7 +36,7 @@ You manage databases, collections and (sub) profile data in the section
 -   [Profile survey
     results](./view-the-given-answers-in-a-survey.md)
 -   [Database and collection
-    follow-ups](./follow-up-actions-for-databases-and-collections.md)
+    follow-ups](./followups.md)
 -   [Notify other systems through Callback
     URLs](./callback-urls.md)
 

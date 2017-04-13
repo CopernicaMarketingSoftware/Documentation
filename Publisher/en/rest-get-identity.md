@@ -8,7 +8,7 @@ fetch the account information:
 
 This method can be useful if you have a lot of different access tokens to 
 access many different accounts (this can happen if you built a 
-[OAuth integration](./rest-oath.md)). This method can then be used to find 
+[OAuth integration](./rest-oauth.md)). This method can then be used to find 
 out to which account an access token belongs. If you use the REST API only
 to access your own account, there is not so much value in this method, because
 you already know the account to which you are linked.
