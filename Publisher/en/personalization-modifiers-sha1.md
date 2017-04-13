@@ -1,6 +1,6 @@
 # Personalization modifier: *sha1*
 
-The *sha1* modifier calculates the md5 hash of a string. It is based on 
+The *sha1* modifier calculates the sha1 hash of a string. It is based on 
 php's [sha1 function](http://php.net/manual/en/function.sha1.php).
 
 ## Example
