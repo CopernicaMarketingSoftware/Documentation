@@ -46,8 +46,8 @@ The following modifiers are supported by Copernica:
 * **{$variable|[ceil](./personalization-modifiers-ceil.md)}**: round fractions up
 * **{$variable|[count](./personalization-modifiers-count.md)}**: number of items in a variable (useful if $variabele is an array)
 * **{$variable|[count_characters](./personalization-modifiers-count_characters.md)}**: number of characters in a string
-* **{$variable|[count_paragraphs](./personalization-modifiers-paragraphs.md)}**: number of paragraphs in a string
-* **{$variable|[count_sentences](./personalization-modifiers-sentences.md)}**: number of sentences in a string
+* **{$variable|[count_paragraphs](./personalization-modifiers-count_paragraphs.md)}**: number of paragraphs in a string
+* **{$variable|[count_sentences](./personalization-modifiers-count_sentences.md)}**: number of sentences in a string
 * **{$variable|[count_words](./personalization-modifiers-count_words.md)}**: number of words in a string
 * **{$variable|[date_format](./personalization-modifiers-date_format.md)}**: formatting dates and times
 * **{$variable|[default](./personalization-modifiers-default.md)}**: use default value in case a variable is empty

@@ -17,9 +17,9 @@ Let's say we have a biography that we want to preview in a set amount of
 characters. We can use the *truncate* modifier to do this. First let's set 
 the biography.
 
-<?php
-$smarty->assign('biography', 'Hello, I'm John. John Doe. I am 42 years old. I like cars, sports, dogs and writing biographies on myself.');
-?>
+    <?php
+    $smarty->assign('biography', 'Hello, I'm John. John Doe. I am 42 years old. I like cars, sports, dogs and writing biographies on myself.');
+    ?>
 
 A few examples of how to do this in code:
 
