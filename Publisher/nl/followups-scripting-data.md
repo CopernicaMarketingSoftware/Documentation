@@ -1,10 +1,9 @@
-# Followups: **data** variabele
+# Followups: **data** klasse
 
-De data variable is aanwezig op alle objecten binnen het [data-script](./followups-scripting) en kan gebruikt worden om scalars voor je scripts 
-op te slaan, waarbij de data niet door ons wordt gebruikt. De variabele werkt daarin vergelijkbaar 
-met de fields parameter in een [profiel](./followups-scripting-profile) en kan strings en getallen opslaan,
-maar geen arrays of andere objecten. Elke data-script variabele heeft een **data** object welke beschikbaar 
-is in alle instanties van deze variabele, in alle scripts binnen dit account.
+De **data** klasse kan worden gebruikt om scalars voor je scripts op te slaan, waarbij de data in dit object verder niet door ons wordt gebruikt.
+Een instantie van de **data** klasse is aanwezig op al onze objecten binnen het [data-script](./followups-scripting), binnen het gehele
+account. Iedere unieke instantie heeft dan ook zijn eigen **data** instantie. Zo heeft bijvoorbeeld ieder uniek profiel zijn eigen
+**data** instantie, maar twee instanties van *hetzelfde* profiel delen ook *dezelfde* data instantie.
 
 ## Simpel voorbeeld
 
@@ -26,10 +25,11 @@ nu gebruiken in andere scripts, bijvoorbeeld bij een volgende mailing.
     }
 
 Met het bovenstaande script kun je in bijvoorbeeld een volgende mail naar dezelfde bestemming
-zien of deze op de aanbieding had geklikt, om vervolgens hier weer een actie naar uit te voeren.
+zien of deze in een voorgaande mail op de aanbieding had geklikt, om vervolgens hier weer een 
+actie naar uit te voeren.
 
 Je kan zelf in het data object bijhouden wat je wilt. Je kan bijvoorbeeld ook 
-bijhouden hoeveel mensen al gebruik hebben gemaakt van je aanbieding door de 
+bijhouden hoeveel mensen al gebruik hebben gemaakt van je aanbieding door het aantal 
 clicks per bericht op te slaan.
 
     message.timesClicked += 1;
