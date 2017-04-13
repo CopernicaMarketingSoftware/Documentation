@@ -1,11 +1,11 @@
-# Personalization modifier: *count_paragraphs*
+# Personalizatie modifier: *count_paragraphs*
 
-The *count_paragraphs* modifier counts the amount of paragraphs in a variable. 
-The modifier itself does not have any parameters.
+De *count_paragraphs* modifier kan gebruikt worden om het aantalen 
+paragrafen in een string te tellen. De modifier heeft geen parameters.
 
-## Example
+## Voorbeeld
 
-First let's assign an article to count paragraphs from:
+Laten we eerst een artikel definiëren om de paragrafen van te tellen:
 
     <?php
 
@@ -17,13 +17,13 @@ First let's assign an article to count paragraphs from:
                     );
 
     ?>
-
-We use the following code to output the number of paragraps:
+    
+Met de volgende code krijgen we het aantal paragrafen:
 
     {$article}
     {$article|count_paragraphs}
-    
-The output looks like this:
+
+De output ziet eruit als volgt:
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     
@@ -34,12 +34,12 @@ The output looks like this:
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     4
 
-## More information
+## Meer informatie
 
-* [Personalization](./personalization)
-* [Personalization modifiers](./personalization-modifiers)
+* [Personalizatie](./personalization)
+* [Personalizatie modifiers](./personalization-modifiers)
 * [count_characters modifiers](./personalization-modifiers-count_characters)
 * [count_words modifiers](./personalization-modifiers-count_words)
 * [count_sentences modifiers](./personalization-modifiers-count_sentences)
 
-This modifier can also be found in the [Smarty Documentation](http://www.smarty.net/docs/en/language.modifier.count.paragraphs.tpl).
+Deze modifier staat ook in de [Smarty documentatie](http://www.smarty.net/docs/en/language.modifier.count.paragraphs.tpl).
