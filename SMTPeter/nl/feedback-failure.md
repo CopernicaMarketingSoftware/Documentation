@@ -36,7 +36,6 @@ SMTPeter gebruikt HTTP POST calls om data naar je toe te sturen. Dit kan gedaan
 worden over HTTP of over HTTPS. De volgende variabelen worden gebruikt in POST 
 calls:
 
-```html
 <table>
     <tr>
         <td>id</td>
@@ -63,4 +62,3 @@ calls:
         <td>optionele omschrijving van de error</td>
     </tr>
 </table>
-```
