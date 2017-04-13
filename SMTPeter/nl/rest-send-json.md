@@ -24,6 +24,7 @@ De "from", "to" en "cc" velden beslissen welke e-mailadressen worden weergeven i
 
 De notatie voor e-mailadressen in het "from", "to" en "cc" velden is veel flexibeler dan de "envelope" en "recipient" velden. Je kunt onder andere namen weergeven of gebruik maken van punthaken. Voor de "to" en "cc" velden kun je ook komma gescheiden lijsten gebruiken. Het is zo dat de "from", "to" en "cc" velden alleen kiezen wat voor e-mailadressen er worden toegevoegd aan de MIME data, en verder niet identiek hoeven te zijn aan de adressen die gebruikt worden in de "envelope" en "recepient" velden. Al is het een goede gewoonte om e-mails te versturen naar de e-mailadressen in het veld "to".
 
+
 ```json
 {
     "from": "info@example.com",
@@ -37,6 +38,7 @@ De notatie voor e-mailadressen in het "from", "to" en "cc" velden is veel flexib
 ```
 
 ## Subject, text en HTML
+
 De "subject", "text" en "HTML" properties kunnen gebruikt worden om het onderwerp, de tekstversie en de HTML versie toe te voegen.
 
 ```json
@@ -48,7 +50,8 @@ De "subject", "text" en "HTML" properties kunnen gebruikt worden om het onderwer
 ```
 
 ## Unsubscribe header
-Als je een "list-unsubscribe header" wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. 
+
+Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. 
 
 ```json
 {
@@ -82,6 +85,7 @@ Of een URL en een e-mailadres:
 ```
 
 ## Extra "x-*" headers
+
 De "extra" property kun je gebruiken als je een custom header wilt toevoegen aan je e-mail. Om te voorkomen dat een custom header niet conflicteert met een andere header mag je alleen custom headers toevoegen met een "x-*" prefix.
 
 ```json
@@ -97,6 +101,7 @@ De "extra" property kun je gebruiken als je een custom header wilt toevoegen aan
 ```
 
 ## Bijlagen
+
 Met de "attachments" property kun je bestanden toevoegen aan een mailing. SMTPeter verwacht een array met JSON objecten. Er zijn twee verschillende objecten die ondersteund worden. Of je voegt een link toe die naar de bijlage verwijst of je voegt de data in het JSON object toe. De data moet dan wel base64 encoded zijn. Bovendien kun je optioneel specificeren wat voor type data je verstuurd.
 
 
