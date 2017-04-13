@@ -15,7 +15,6 @@ informatie over het openen.
 
 Met elke POST call worden de volgende variabelen toegestuurd:
 
-```html
 <table>
     <tr>
         <td>id</td>
@@ -42,7 +41,6 @@ Met elke POST call worden de volgende variabelen toegestuurd:
         <td>optionele *referer* (uit de http header gehaald)</td>
     </tr>
 </table>
-```
 
 De "ID" en "recipient" variabelen stellen je in staat om het aantal openingen te 
 linken aan de originele verstuurde e-mail.
