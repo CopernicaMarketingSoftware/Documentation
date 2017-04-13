@@ -1,8 +1,8 @@
-# Followups: mailing variabele
+# Followups: mailing klasse
 
-De **mailing** variabele kan gebruikt worden in het data-script object. Een 
-mailing is al geweest, dus je kunt alleen zijn eigenschappen lezen en niet 
-bewerken.
+De **mailing** klasse kan worden gebruikt om informatie op te vragen over een mailing binnen het account. 
+De enige beschikbare instantie is momenteel de globale `mailing` variabele, en omdat deze mailing al geweest
+is zijn de eigenschappen alleen leesbaar. 
 
 ## Beschikbare eigenschappen
 
@@ -17,5 +17,5 @@ Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing op
     var mySubject = mailing.subject;
 
 ## Meer informatie
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
