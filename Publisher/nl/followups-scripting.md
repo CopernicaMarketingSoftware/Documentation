@@ -9,8 +9,8 @@ door de browser uitgevoerd, maar op de servers van Copernica.
 
 Je kunt de scriptjes op een aantal manieren aan hyperlinks koppelen:
 
-* je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
-* of je kunt ze met de drag-and-drop editor invoeren. 
+* Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
+* Je kunt ze met de drag-and-drop editor invoeren. 
 
 ## Beschikbare objecten
 
