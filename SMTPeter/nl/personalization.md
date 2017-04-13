@@ -19,9 +19,9 @@ De volgende onderwerpen komen aan bod:
 ## Variabelen 
 
 Laten we starten met het uitleggen van de variabelen. Een variabele ziet er 
-als volgt uit: `{$` naam van de variabele `}`.
+als volgt uit: `{$` *naam van de variabele* `}`.
 Er zijn een aantal variabelen die we veelvuldig voorbij zien komen, 
-bijvoorbeeld '{$firstname}', {$age}' en '{$city}'.
+bijvoorbeeld `{$firstname}`, `{$age}` en `{$city}`.
 In het algemeen moet een variabele aan de volgende criteria voldoen:
 
 * is omringd met accolades,
