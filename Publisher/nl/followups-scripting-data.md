@@ -39,7 +39,7 @@ mensen niet meerdere keren op de link hebben geklikt.
 
 ## Meer informatie
 
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Copernica klasse](./followups-scripting-copernica)
 * [Database klasse](./followups-scripting-database)
 * [Collectie klasse](./followups-scripting-collection)
