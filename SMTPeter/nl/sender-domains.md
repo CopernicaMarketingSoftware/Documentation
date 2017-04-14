@@ -39,9 +39,9 @@ omdat je eigen DNS archieven naar de onze verwijzen.
 In onze DNS (die ".smtpeter.com" subdomeinen gebruikt) bewaren we de volgende 
 archieven:
 
-* [SPF archieven](spf-validation) die de IP adressen waar je vandaan mailt opslaan
-* [DKIM sleutels](dkim-signing) met je publieke sleutels die we per maand wisselen
-* [DMARC archieven](dmarc-deployment) met je DMARC beleid
+* [SPF archieven](spf-validation "SPF email validatie - een korte introductie") die de IP adressen waar je vandaan mailt opslaan
+* [DKIM sleutels](dkim-signing "E-mail ondertekenen met DKIM") met je publieke sleutels die we per maand wisselen
+* [DMARC archieven](dmarc-deployment "DMARC deployment") met je DMARC beleid
 
 We vragen jou om CNAME archieven en andere verwijzingen in je DNS op te 
 zetten.
@@ -65,7 +65,7 @@ kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn
 voor de meeste gebruikers geschikt ("tracking.jouwdomein.nl" en 
 "clicks.jouwdomein.nl").
 
-Als je SMTPeter gebruikt om [kliks](/statistics) op te slaan, worden gebruikers 
+Als je SMTPeter gebruikt om [kliks](/statistics "Click en open tracking") op te slaan, worden gebruikers 
 eerst doorgestuurd naar een andere website die de klik opslaat in onze databases. 
 De hyperlinks zien er daarom uit als "clicks.jouwdomein.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 

@@ -37,8 +37,7 @@ welke API je gebruikt.
 ## Inline CSS inschakelen met de SMTP API
 
 Er zijn twee manieren om inline CSS in te schakelen in SMTPeter. De eerste 
-is om een [nieuwe login](dashboard/smtp-credentials) aan te maken met dit 
-kenmerk ingeschakeld.
+is om een nieuwe login aan te maken met dit kenmerk ingeschakeld.
 
 Omdat het STMP protocol ervoor zorgt dat parameters niet makkelijk 
 doorgegeven kunnen worden mogen er veel SMTP logins aangemaakt worden 

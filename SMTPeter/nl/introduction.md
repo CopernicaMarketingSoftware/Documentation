@@ -24,7 +24,7 @@ een lijstje van geadviseerde DNS instellingen staan. Deze instellingen moet je i
 Dit is nodig, omdat de servers van SMTPeter alleen e-mail uit jouw naam kunnen versturen als
 daar in jouw DNS expliciet toestemming voor wordt gegegeven. 
 
-[Klik hier voor meer informatie over sender domains](sender-domains)
+[Klik hier voor meer informatie over sender domains](sender-domains "Sender Domains")
 
 
 ## REST vs SMTP
@@ -55,8 +55,8 @@ Je kunt deze voorbeelden gebruiken om een verbinding op te zetten met de
 REST API. Zo hoef je geen *low-level calls* te schrijven en kun je direct
 aan de slag.
 
-* [PHP example](php-example)
-* [Python example](python-example)
+* [PHP voorbeeld](php-example "PHP voorbeeld")
+* [Python voorbeeld](python-example "Python voorbeeld")
 
 
 ## SMTP API
@@ -70,6 +70,6 @@ Nu kun je per aangemaakt account de verschillende toepassingen beheren.
 Dat is alles! SMTPeter is nu klaar voor gebruik.
 Lees meer over de mogelijkheden van SMTPeter via:
 
-- [Sender Domains](sender-domains)
-- [SMTP API](smtp-api)
-- [REST API](rest-send)
+- [Sender Domains](sender-domains "Sender Domains")
+- [SMTP API](smtp-api "SMTP API")
+- [REST API](rest-send "REST API")

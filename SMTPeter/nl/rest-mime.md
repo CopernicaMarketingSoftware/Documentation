@@ -12,7 +12,7 @@ protocol en de algehele "MIME" data.
 ```
 Om alles leesbaar te maken, hebben we het merendeel van de "MIME" code van het 
 voorbeeld verwijderd. Als je zelf geen "MIME" bericht wil maken, kun je de 
-property weglaten. Gebruik dan wel de [special MIME properties](rest-mime)
+property weglaten. Gebruik dan wel de [special MIME properties](rest-mime "MIME data versturen")
 zoals "subject", "text" en "html" zodat SMTPeter de mime data kan aanmaken.
 
 Je hoeft enkel en alleen een "recipient" adress aan te leveren om een e-mail te
@@ -25,7 +25,7 @@ doet dit proces helemaal zelfstandig.
 
 Het is ook mogelijk om zelf bounces af te handelen. Dit doe je door een extra 
 envelope adres toe te voegen aan de *input data*. Naast dit envelope adres
-is het wellicht ook interessant om een [DSN property](rest-dsn) toe te voegen.
+is het wellicht ook interessant om een [DSN property](rest-dsn "REST en DSN Messages") toe te voegen.
 Hiermee kun je aangeven welke soort berichten je over de bounces wilt ontvangen.
 
 ```json

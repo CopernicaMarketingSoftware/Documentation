@@ -18,4 +18,4 @@ De REST API geeft je een aantal handige opties om je mailings te verbeteren:
 * [Opvragen van DMARC reports](rest-dmarc)
 * [Templates beheren](rest-templates)
 
-*Alle beschikbare REST calls kun je [hier](all-rest-calls) vinden.*
+*Alle beschikbare REST calls kun je [hier](all-rest-calls "Alle beschikbare REST calls") vinden.*
