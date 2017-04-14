@@ -1,7 +1,7 @@
 # Opvragen van events
 
 Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter 
-onder meer de volgende *events* bij: afleveringen, *bounces*, kliks en *opens*. 
+onder meer de volgende *events* bij: afleveringen, *bounces*, *clicks* en *opens*. 
 Deze log files zijn op te vragen via de [REST API](rest-logfiles).
 Het kan natuurlijk ook voorkomen dat je opzoek bent naar een specifiek event.
 De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
@@ -41,7 +41,7 @@ een maand weergegeven.
 Bij het opgeven van een einddatum (zonder startdatum), wordt tot de einddatum
 de voorgaande maand weergegeven. 
 
-Bij het opgeven van een start -en einddatum (die verder dan een maand uit elkaar 
+Bij het opgeven van een start- en einddatum (die verder dan een maand uit elkaar 
 liggen), wordt vanaf de startdatum een maand weergegeven. De einddatum wordt 
 dus genegeerd.
 
