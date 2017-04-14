@@ -15,10 +15,10 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
 <table>
     <tr>
         <td>id</td>
-        <td>unieke *identifier* van de e-mail waarop werd geklikt</td>
+        <td>unieke <em>identifier</em> van de e-mail waarop werd geklikt</td>
     </tr>
     <tr>
-        <td>*recipient*</td>
+        <td><em>recipient</em></td>
         <td>e-mailadres van de gebruiker die heeft geklikt</td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
     </tr>
     <tr>
         <td>tags</td>
-        <td>de *tags* die je associërt met een e-mail</td>
+        <td>de <em>tags</em> die je associërt met een e-mail</td>
     </tr>
 </table>
 
