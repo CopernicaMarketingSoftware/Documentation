@@ -24,7 +24,7 @@ te weigeren. Geweigerde e-mails worden bijgeschreven op de *failure logfile*
 en respectievelijk ook toegevoegd aan de *failure feedback loop* (zie diagram 1).
 
 **Diagram 1**
-<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:Lato,sans-serif" src="Images/smtpeter-diagram-send-email.svg">
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-send-email.svg">
 
 Echter, het is mogelijk dat een bericht initieel geaccepteerd wordt, 
 maar dat de server achteraf toch nog een bounce e-mail verstuurd 
@@ -35,7 +35,7 @@ en schrijft ze naar de *log files*. Ook de [failure feedback loop](feedback-fail
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
-<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px; font-family:Lato,sans-serif" src="Images/smtpeter-diagram-bounce.svg">
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-bounce.svg">
 
 Naast deze standaard Delivery Status Notifications zijn er nog vele andere
 berichten die terug worden gestuurd naar het envelope adres. Dit zijn 
