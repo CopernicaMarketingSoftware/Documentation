@@ -90,10 +90,10 @@ of geen numerieke inhoud bevat, de waarde 0 wordt toegekend.
 ## Conditionele statements
 
 Een van de hoekstenen van elke programmeertaal zijn conditionele *statements*.
-Een conditioneel *block* begint altijd met het {if} keyword (altijd met accolades),
+Een conditioneel *block* begint altijd met het `{if}` keyword (altijd met accolades),
 gevolgd door een statement dat wordt getest/uitgevoerd. Een conditioneel blok 
-eindigt altijd met de if *closing tag* {/if}. Een conditioneel blok wordt alleen
-uitgevoerd als het *statement* binnen het {if} gedeelte evalueert als true.
+eindigt altijd met de if *closing tag* `{/if}`. Een conditioneel blok wordt alleen
+uitgevoerd als het *statement* binnen het `{if}` gedeelte evalueert als true.
 
 In het volgende voorbeeld wordt de text "Hello John" alleen weergegeven als 
 de waarde van de variabele `$name` gelijk is aan "John".
@@ -139,7 +139,7 @@ Een beter voorbeeld is uiteraard:
 ```
 
 Afhankelijk van de inhoud van de variabele wordt bekeken welk blok moet worden 
-uitgevoerd. Stel dat de `$name` variabele geen waarde heeft, dan wordt dat blok {if}
+uitgevoerd. Stel dat de `$name` variabele geen waarde heeft, dan wordt dat blok `{if}`
 uitgevoerd. De conditie evualeert immers tot true. Als de eerste conditie evalueert 
 tot false wordt het *else* blok uitgevoerd. 
 
