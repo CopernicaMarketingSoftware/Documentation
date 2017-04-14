@@ -10,7 +10,7 @@ De volgende onderwerpen komen aan bod:
 * [Variabelen](personalization#variabelen)
 * [Inhoud van variabelen veranderen](personalization#verander-inhoud-van-variabelen)
 * [Simpele berekeningen](personalization#simpele-berekeningen)
-* [Conditionele 'statements'](personalization#conditionele-statements)
+* [Conditionele statements](personalization#conditionele-statements)
 * [Data uit arrays opvragen en gebruiken](personalization#foreach)
 * [Toekennen van variabelen](personalization#toekennen-van-variabelen)
 * [Gebruik van accolades](personalization#gebruik-van-accolades)
@@ -89,7 +89,7 @@ of geen numerieke inhoud bevat, de waarde 0 wordt toegekend.
 
 ## Conditionele statements
 
-Een van de hoekstenen van elke programmeertaal zijn conditionele *statments*.
+Een van de hoekstenen van elke programmeertaal zijn conditionele *statements*.
 Een conditioneel *block* begint altijd met het {if} keyword (altijd met accolades),
 gevolgd door een statement dat wordt getest/uitgevoerd. Een conditioneel blok 
 eindigt altijd met de if *closing tag* {/if}. Een conditioneel blok wordt alleen
@@ -165,7 +165,7 @@ Met de eerste zes operators (== tot aan <=) vergelijk je $a en $b met elkaar.
 De uitkomst van de conditie evalueert tot true als de twee geteste waardes 
 gelijk zijn aan elkaar. De uitkomst van de conditie evalueert tot false als
 de twee geteste waardes niet gelijk zijn aan elkaar. Met de volgende operators
-in de bovenstaande tabel ('AND' en 'OR') kun je statements combineren.
+in de bovenstaande tabel (*AND* en *OR*) kun je statements combineren.
 Het komt vaak voor dat conditionele blokken te groot of te complex worden.
 Je kunt lange of complexe blokken inkorten door meerdere statements binnen
 een `{if}` blok op te nemen. Gebruik hiervoor dan de AND en/of OR operators.
@@ -211,11 +211,10 @@ de uitkomst tot false. Omgekeerd evalueert de uitkomst tot true.
 
 Het komt vaak voor dat je een collectie van data (een array) tot je beschikking hebt.
 Met deze data wil je graag dingen doen, zoals het opzoeken van een bepaald item.
-Je moet dan door alle items *loopen*.
-Aan de hand van een voorbeeld laten we alle leden van een voetbalteam zien. Deze 
-leden staan in een `$soccerTeam` array opgeslagen. Alle leden van het team kunnen 
-worden opgevraagd door middel van een `foreach` statement. De syntax is recht toe,
-recht aan:
+Je moet dan door alle items *loopen*. Aan de hand van een voorbeeld laten we alle 
+leden van een voetbalteam zien. Deze leden staan in een `$soccerTeam` array opgeslagen. 
+Alle leden van het team kunnen worden opgevraagd door middel van een `foreach` statement. 
+De syntax is recht toe, recht aan:
 
 ```text
 {foreach $player in $soccerTeam}
