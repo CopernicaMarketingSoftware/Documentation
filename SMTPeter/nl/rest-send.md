@@ -17,8 +17,7 @@ een e-mailbericht aan de *body* en het aangeven van de SMTPeter mogelijkheden di
 je wilt activeren. De opmaak ziet er dan als volgt uit:
 
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} 
-HTTP/1.0
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 246
