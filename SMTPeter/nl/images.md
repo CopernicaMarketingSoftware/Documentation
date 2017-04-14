@@ -1,5 +1,3 @@
-
-
 # Afbeeldingen in een e-mail
 
 Er zijn een aantal manieren om afbeeldingen in je e-mail te krijgen. Je kan een afbeeldingen *embedden* in je *mime*, of je kan afbeeldingen *hosten* en linken naar een afbeelding. Elke methode heeft zijn voor en nadelen. In dit artikel worden de voor en nadelen besproken. 
