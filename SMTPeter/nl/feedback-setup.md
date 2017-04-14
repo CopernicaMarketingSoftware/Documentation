@@ -2,8 +2,12 @@
 
 *Feedback loops* kunnen worden aangemaakt via het SMTPeter dashboard.
 De interface is gemakkelijk te begrijpen: 'je voert een feedback URL in,
-bijvoorbeeld "https://www.yourwebsite.com/path/to/your/script.php", en 
-het type van de feedback loop dat je aan wilt maken (*clicks*, *bounces* etc.).
+bijvoorbeeld:
+
+```text
+"https://www.yourwebsite.com/path/to/your/script.php"
+```
+en het type van de feedback loop dat je aan wilt maken (*clicks*, *bounces* etc.).
 En dat is alles.
 
 
