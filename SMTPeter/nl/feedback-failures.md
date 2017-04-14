@@ -39,15 +39,15 @@ calls:
 <table>
     <tr>
         <td>id</td>
-        <td>unieke *identifier* van de e-mail waarvoor het failure report geldt</td>
+        <td>unieke <em>identifier</em> van de e-mail waarvoor het failure report geldt</td>
     </tr>
     <tr>
-        <td>*recipient*</td>
+        <td><em>recipient</em></td>
         <td>e-mailadres van de gebruiker waar de failure voor geldt</td>
     </tr>
     <tr>
         <td>state</td>
-        <td>*state* in het smtp protocol waar de *failure* plaatsvond</td>
+        <td><em>state</em> in het smtp protocol waar de <em>failure</em> plaatsvond</td>
     </tr>
     <tr>
         <td>code</td>
