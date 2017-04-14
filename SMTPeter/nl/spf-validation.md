@@ -10,7 +10,7 @@ zijn er verschillende technieken ontwikkeld, waaronder SPF.
 
 Dit artikel is bedoeld om achtergrond te geven over SPF of die controle 
 willen hebben over de SPF archieven die wij bijhouden. Als je alleen 
-SPF op wilt zetten voor je *sender domein* kun je [dit artikel](./sender-domain) 
+SPF op wilt zetten voor je *sender domein* kun je [dit artikel](./sender-domains) 
 bekijken.
 
 ## Wat is SPF?
