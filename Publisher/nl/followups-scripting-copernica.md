@@ -21,7 +21,7 @@ dus aanpassing van het globale `copernica.data` object zijn in alle scripts over
 
 Met het volgende voorbeeld in javascript kun je een database van een account opvragen.
 
-    var databaseName = "My database";
+    var databaseName = "Mijn database";
     var myDatabase = copernica.database(databaseName);
 
 ## Meer informatie

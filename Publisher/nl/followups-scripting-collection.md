@@ -1,4 +1,4 @@
-# Followups: collection klasse
+# Followups: collectie klasse
 
 Een collectie is een subset van een [database](./followups-scripting-database) en kan ook gebruikt worden 
 in een data-script of followup. Zie [het copernica object](./followups-scripting-copernica) voor het opvragen
