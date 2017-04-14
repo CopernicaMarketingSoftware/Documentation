@@ -135,6 +135,6 @@ Door "null" als filter mee te geven krijg je alle bestaande objecten voor het ac
 * **setTracking($forced, $value)**: stel force in op tracking parameter
 
 ## Meer informatie
-[Het data-script object](./followups-scripting)
-[De copernica variable](./followups-scripting-copernica)
+[Het data-script](./followups-scripting)
+[De copernica klasse](./followups-scripting-copernica)
 

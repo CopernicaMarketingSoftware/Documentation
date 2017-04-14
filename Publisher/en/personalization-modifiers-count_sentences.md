@@ -1,4 +1,4 @@
-# Personalization modifier: count_sentences
+# Personalization modifier: *count_sentences*
 
 The *count_sentences* modifier outputs the amount of sentences, which is 
 defined by the presence of a dot, question- or exclamation-mark. (.?!)

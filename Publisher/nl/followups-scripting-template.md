@@ -1,6 +1,10 @@
 # Followups: template variabele
 
-Variabele die toegang geeft tot een niet-gepersonalizeerde **template**.
+De **template** klasse kan worden gebruikt om informatie op te vragen en aan te passen van
+een template. Er is in ieder script een globale `template` variabele aanwezig, met een instantie
+van het template waarmee de email is gemaakt. Dit is ongepersonaliseerd, in tegenstelling tot de [message](./followups-scripting-message).
+
+Zie daarnaast de documentatie van de [copernica klasse](./followups-scripting-message) om een template op te vragen met een ID.
 
 ## Beschikbare eigenschappen
 
@@ -11,13 +15,7 @@ Variabele die toegang geeft tot een niet-gepersonalizeerde **template**.
 
 ## Beschikbare methoden
 
-### send(*target*)
-De send methode kan worden gebruikt om dit template object naar een *target* te sturen. Dit
-kan een enkele bestemming zijn zoals een profiel of subprofiel, maar ook meerdere bestemmingen 
-zoals een gehele database of collectie. De mail wordt na het aanroepen direct verzonden, en
-wordt verder hetzelfde behandeld als iedere andere mail naar deze bestemming.
-
-
+* **send(*target*)**: direct verzenden van een email naar een target (database, collectie, profiel of subprofiel)
 
 ## Voorbeeld
 
@@ -26,13 +24,16 @@ Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing op
     var mySubject = template.subject;
 
 Neem nu voor een leuker voorbeeld aan dat er nog een mail klaar staat om verzonden te worden
-zodra er op de link is geklikt. Het verzenden van een template op basis van zijn id is zo simpel
-als de regel hieronder.
+zodra er op de link is geklikt.
 
-    copernica.template(*id*).send(destination)
+    var templateID = 1520;
+    
+    // destination is altijd de globale bestemming van de huidige mail met de geklikte link,
+    // en we willen deze mail sturen als vervolg naar de klikker
+    copernica.template(templateID).send(destination)
 
 
 ## Meer informatie
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Gepersonaliseerde template](./followups-scripting-message)
+* [message klasse](./followups-scripting-message)

@@ -1,9 +1,9 @@
-# Followups: copernica variabele
+# Followups: copernica klasse
 
-De **copernica** variabele is gelinkt aan het account die je hebt geregistreerd
-bij Copernica. Deze is beschikbaar in het data-script object en geeft 
-toegang tot de data die bij jouw account hoort. Deze informatie is beschikbaar
-binnen alle scripts gemaakt met deze account.
+De **copernica** klasse is gelinkt aan het account die je hebt geregistreerd bij Copernica. De globale `copernica`
+variabele is de enige instantie van deze klasse. Deze is beschikbaar in het script en geeft 
+toegang tot de data die bij jouw account hoort. Deze informatie is beschikbaar binnen alle scripts gemaakt met deze account,
+dus aanpassing van het globale `copernica.data` object zijn in alle scripts over het hele account zichtbaar.
 
 ## Beschikbare eigenschappen
 
@@ -11,11 +11,11 @@ binnen alle scripts gemaakt met deze account.
 
 ## Beschikbare functies
 
-* **database**: een [database](./followups-scripting-database) kan opgevraagd worden per naam of ID
-* **collection**: een [collectie](./followups-scripting-collection) kan opgevraagd worden per ID
-* **profile**: een [profiel](./followups-scripting-profile) kan opgevraagd worden per ID
-* **subprofile**: een [subprofiel](./followups-scripting-subprofile) kan opgevraagd worden per ID
-* **template**: een [template](./followups-scripting-template) kan opgevraagd worden per ID
+* **database(*id* of *naam*)**: een [database](./followups-scripting-database) instantie kan opgevraagd worden per naam of ID
+* **collection(*id*)**: een [collectie](./followups-scripting-collection) instantie kan opgevraagd worden per ID
+* **profile(*id*)**: een [profiel](./followups-scripting-profile) instantie kan opgevraagd worden per ID
+* **subprofile(*id*)**: een [subprofiel](./followups-scripting-subprofile) instantie kan opgevraagd worden per ID
+* **template(*id*)**: een [template](./followups-scripting-template) instantie kan opgevraagd worden per ID
 
 ## Voorbeeld
 
@@ -25,9 +25,8 @@ Met het volgende voorbeeld in javascript kun je een database van een account opv
     var myDatabase = copernica.database(databaseName);
 
 ## Meer informatie
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Profiel informatie](./followups-scripting-profile)
-* [Subprofiel informatie](./followups-scripting-subprofile)
-* [Template informatie](./followups-scripting-template)
-* [Destination informatie](./followups-scripting-destination)
+* [Profiel klasse](./followups-scripting-profile)
+* [Subprofiel klasse](./followups-scripting-subprofile)
+* [Template klasse](./followups-scripting-template)
