@@ -19,7 +19,7 @@
 * [Feedback loops](feedback-loops)
     * [Feedback loops aanmaken](feedback-setup)
     * [Feedback loops voor bounces](feedback-bounces)
-    * [Feedback loops voor failures](feedback-failure)
+    * [Feedback loops voor failures](feedback-failures)
     * [Feedback loops voor clicks](feedback-clicks)
     * [Feedback loops voor opens](feedback-opens)
 * [Personalisatie](personalization)
