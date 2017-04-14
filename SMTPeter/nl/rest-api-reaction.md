@@ -1,6 +1,6 @@
 # Terugkoppeling
 
-Na het succesvol versturen van je request, stuurt SMTPeter een JSON object terug
+Na het succesvol versturen van je *request*, stuurt SMTPeter een JSON object terug
 met daarin een unieke identifier voor elke ontvanger waar de e-mail naar verstuurd
 gaat worden.
 
