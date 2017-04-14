@@ -8,8 +8,6 @@ alle processen die worden uitgevoerd. Echter, het is goed om je kennis
 rondom alle processen te verbeden of te verdiepen, zodat je het maximale resultaat
 uit je mailings kunt halen. 
 
-## Achtergrondinformatie over het versturen van e-mails
-
 - [Alle beschikbare REST calls](all-rest-calls "Alle beschikbare REST calls")
 - [Sender Domains](sender-domains "Sender Ddomains")
 - [SPF validatie](spf-validation "SPF email validatie - een korte introductie")
