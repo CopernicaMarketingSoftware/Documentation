@@ -41,9 +41,9 @@ internet e-mail versturen via jouw domein. Daarnaast komt het professioneel
 over om een valide SPF record te hebben voor de ontvanger. Dit kan een positief 
 effect hebben op de plaatsing van je bericht in de inbox van de gebruiker.
 
-## De sender domain aanbevelingen
+## Sender Domain aanbevelingen
 
-Als je het dashboard gebruikt om een [zender domein](sender-domains) op 
+Als je het dashboard gebruikt om een [Sender Domains](sender-domains) op 
 te zetten dan regelen wij het hosten van je SPF records. Je hoeft ze dus 
 niet zelf op te zetten. Je moet wel zelf het SPF record toevoegen aan je DNS 
 door het door te geven aan je provider of door het op je eigen server te zetten.
