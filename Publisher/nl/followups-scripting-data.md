@@ -7,10 +7,10 @@ account. Iedere unieke instantie heeft dan ook zijn eigen **data** instantie. Zo
 
 ## Simpel voorbeeld
 
-Stel dat je een email hebt geschreven aan een user waar 10 aanbiedingen in
+Stel dat je een email hebt geschreven waar 10 aanbiedingen in
 staan en je wilt opslaan welke zijn aangeklikt. In het volgende voorbeeld 
-laten we je een script zien dat je in de data-script kunt zetten om dit op 
-te slaan.
+laten we je een script zien dat je in de data-script kunt zetten van
+de eerste aanbieding om dit op te slaan.
 
     profile.data.klikopAanbieding1 = "ja";
 

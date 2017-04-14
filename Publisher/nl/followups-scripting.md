@@ -28,7 +28,7 @@ bijwerken. Hiervoor zijn de volgende globale variabelen beschikbaar:
 | [**profile**](./followups-scripting-profile)           | Huidige profiel                      |
 
 Daarnaast is het nog mogelijk dat er een globale [**subprofile**](./followups-scripting-subprofile) variabele aanwezig is 
-met het subprofiel, mits deze mail naar een collectie of mini-selection is verzonden.
+met het subprofiel, mits deze mail naar een collectie of mini-selectie is verzonden.
 
 Al deze objecten hebben een eigen [data object](./followups-scripting-data) 
 dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer informatie en voorbeelden.
