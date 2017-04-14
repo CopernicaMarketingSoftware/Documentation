@@ -102,7 +102,7 @@ accepteert een JSON object met vier optionele velden:
 }
 ```
 
-De "notify" property is de allerbelangrijkste. Je kunt specificeren voor welke
+De *notify* property is de allerbelangrijkste. Je kunt specificeren voor welke
 soorten events een e-mail notificatie moet worden getriggerd. Mogelijke waardes
 zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een komma gescheiden lijst met 
 waardes wordt ook ondersteund. 

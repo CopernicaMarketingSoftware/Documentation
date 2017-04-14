@@ -9,7 +9,7 @@ de omgeving van het dashboard.
 
 ## Statistieken
 
-Het welkomstscherm van het dashboar' laat direct de statistieken zien
+Het welkomstscherm van het dashboard laat direct de statistieken zien
 die in de afgelopen periode zijn opgebouwd. Je kunt het aantal kliks 
 nagaan, maar ook het aantal opens, de verstuurde e-mails en foutieve
 afleveringen. Je kunt inzoomen door een gewenst startpunt aan te klikken,
