@@ -13,6 +13,7 @@ En dat is alles.
 
 ## URL validatie
 
+
 Voordat SMTPeter begint met het maken van calls naar je URL, moet het
 webadres eerst gevalideerd worden. SMTPeter doet dit om te voorkomen dat 
 gebruikers ons per ongeluk instrueren om vertrouwelijke informatie naar
@@ -23,11 +24,25 @@ kunnen we zien dat de server daadwerkelijk van jou is.
 De naam en inoud van de tekst bestanden zijn steeds weer uniek voor elke
 nieuwe feedback loop. Je moet deze kopiëren naar een van deze locaties:
 de hoofdmap va je webserver of naar dezelfde locatie waar je *feedback script*
-is opgeslagen. Dus als je "https://domain.com/dir/script.php" hebt aangemaakt
-als je feedback script, moet je "smtpeter-xxxxx.txt" kopiëren naar de webserver,
-zodat het beschikbaar komt via "https://domain.com/dir/smtpeter-xxxxx.txt" of 
-"https://domain.com/smtpeter-xxxxx.txt". Je kunt het tekstbestand verwijderen 
-als het adres is gevalideerd.
+is opgeslagen. Dus als je:
+
+```text
+"https://domain.com/dir/script.php"
+```
+hebt aangemaakt als je feedback script, moet je "smtpeter-xxxxx.txt" kopiëren naar de webserver,
+zodat het beschikbaar komt via:
+
+```text
+"https://domain.com/dir/smtpeter-xxxxx.txt"
+```
+
+of 
+
+```text
+"https://domain.com/smtpeter-xxxxx.txt"
+```
+
+Je kunt het tekstbestand verwijderen als het adres is gevalideerd.
 
 
 ## Test de feedback loop
