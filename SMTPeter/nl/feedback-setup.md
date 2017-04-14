@@ -5,7 +5,7 @@ De interface is gemakkelijk te begrijpen: 'je voert een feedback URL in,
 bijvoorbeeld:
 
 ```text
-"https://www.yourwebsite.com/path/to/your/script.php"
+"https://www.example.com/path/to/your/script.php"
 ```
 en het type van de feedback loop dat je aan wilt maken (*clicks*, *bounces* etc.).
 En dat is alles.
@@ -27,19 +27,19 @@ de hoofdmap va je webserver of naar dezelfde locatie waar je *feedback script*
 is opgeslagen. Dus als je:
 
 ```text
-"https://domain.com/dir/script.php"
+"https://example.com/dir/script.php"
 ```
 hebt aangemaakt als je feedback script, moet je "smtpeter-xxxxx.txt" kopiëren naar de webserver,
 zodat het beschikbaar komt via:
 
 ```text
-"https://domain.com/dir/smtpeter-xxxxx.txt"
+"https://example.com/dir/smtpeter-xxxxx.txt"
 ```
 
 of 
 
 ```text
-"https://domain.com/smtpeter-xxxxx.txt"
+"https://example.com/smtpeter-xxxxx.txt"
 ```
 
 Je kunt het tekstbestand verwijderen als het adres is gevalideerd.
