@@ -5,7 +5,7 @@ The modifier itself does not have any parameters.
 
 ## Example
 
-First let's assign a paragraph:
+First let's assign an article to count paragraphs from:
 
     <?php
 
@@ -42,4 +42,4 @@ The output looks like this:
 * [count_words modifiers](./personalization-modifiers-count_words)
 * [count_sentences modifiers](./personalization-modifiers-count_sentences)
 
-This modifier can also be found in the [Smarty Documentation]().
+This modifier can also be found in the [Smarty Documentation](http://www.smarty.net/docs/en/language.modifier.count.paragraphs.tpl).

@@ -1,6 +1,14 @@
-# Followups: message variabele
-Een variabele die toegang geeft tot een gepersonalizeerde **snapshot** van 
-een [template](./followups-scripting-template).
+# Followups: message klasse
+
+De **message** klasse geeft toegang tot een gepersonalizeerde snaphot van een
+[template](./followups-scripting-template). Hiermee kan gepersonaliseerde informatie worden
+opgevraagd, zoals de broncode en het onderwerp van de message zoals deze verzonden is. Omdat dit
+een snapshot is, maakt het niet uit als ondertussen de template compleet veranderd is of andere
+eigenschappen zijn aangepast, deze zijn binnen de message klasse nog hetzelfde als het moment
+dat de email verzonden is.
+
+De enige instantie van de **message** klasse is momenteel het globale `message` object, wat
+de gepersonaliseerde versie bevat van het huidige [template](./followups-scripting-template).
 
 ## Beschikbare eigenschappen
 
@@ -17,6 +25,6 @@ Met het volgende voorbeeld in javascript kun je de broncode van een gepersonaliz
 
 ## Meer informatie
 
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Template variabele](./followups-scripting-template)
+* [Template klasse](./followups-scripting-template)

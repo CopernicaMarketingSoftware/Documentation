@@ -1,8 +1,8 @@
-# Followups: collection variabele
+# Followups: collection klasse
 
 Een collectie is een subset van een [database](./followups-scripting-database) en kan ook gebruikt worden 
-in een datascript. Om een collectie object op te vragen kun je de documentatie
-hierover vinden bij [het account object](./followups-scripting-copernica)
+in een data-script of followup. Zie [het copernica object](./followups-scripting-copernica) voor het opvragen
+van een instantie van een collectie.
 
 ## Beschikbare eigenschappen
 
@@ -23,6 +23,6 @@ collectie opvragen.
     var someSubProfile = collection.subprofiles[subProfileID];
 
 ## Meer informatie
-* [Het data-script object](./followups-scripting)
+* [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
 * [Database variabele](./followups-scripting-database)
