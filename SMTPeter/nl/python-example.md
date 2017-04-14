@@ -2,7 +2,7 @@
 
 In dit Python voorbeeld kun je zien hoe je een e-mail kunt versturen met de REST API.
 
-Het voorbeeld laat een simpele class zien genaamd SMTPeter. De constructor van de class pakt je ‘access token’ als input. Alleen de post() member function is geïmplementeerd met welke je een e-mail instructie kunt sturen naar SMTPeter.
+Het voorbeeld laat een simpele class zien genaamd SMTPeter. De constructor van de class pakt je *access token* als input. Alleen de `post()` member function is geïmplementeerd met welke je een e-mail instructie kunt sturen naar SMTPeter.
 
 ```python
 import requests
