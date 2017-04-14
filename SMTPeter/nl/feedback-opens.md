@@ -18,10 +18,10 @@ Met elke POST call worden de volgende variabelen toegestuurd:
 <table>
     <tr>
         <td>id</td>
-        <td>unieke *identifier* van het bericht dat werd geopeopend</td>
+        <td>unieke <em>identifier</em> van het bericht dat werd geopeopend</td>
     </tr>
     <tr>
-        <td>*recipient*</td>
+        <td><em>recipient</em></td>
         <td>e-mailadres van de persoon die de e-mail heeft geopend</td>
     </tr>
     <tr>
@@ -34,11 +34,11 @@ Met elke POST call worden de volgende variabelen toegestuurd:
     </tr>
     <tr>
         <td>useragent</td>
-        <td>optionele *user agent* string (uit de http header gehaald)</td>
+        <td>optionele <em>user agent</em> string (uit de http header gehaald)</td>
     </tr>
     <tr>
         <td>referer</td>
-        <td>optionele *referer* (uit de http header gehaald)</td>
+        <td>optionele <em>referer</em> (uit de http header gehaald)</td>
     </tr>
 </table>
 
