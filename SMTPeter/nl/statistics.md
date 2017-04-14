@@ -68,14 +68,14 @@ bekijken om inzicht te krijgen in de inhoud van deze files.
 
 | Log bestand                                           | Omschrijving                                           |
 | ----------------------------------------------------- | ------------------------------------------------------ |
-| [attempts log file](log-attempts "attempts log file") | informatie over alle berichten verstuurd met SMTPeter  |
-| [bounces log file](log-bounces "bounces log file")    | informatie over bounces                                |
-| [clicks log file](log-clicks "clicks log file")       | informatie over de kliks                               |
-| [deliveries log file](log-deliveries)                 | informatie over het afleveren van berichten            |
-| [dmarc log file](log-dmarc)                           | informatie over DMARC statistieken                     |
-| [failures log file](log-failures)                     | informatie over mislukte verzendpogingen               |
-| [opens log file](log-opens "opens log file")          | informatie over de opens                               |
-| [responses log file](log-responses)                   | informatie over response mails ontvangen door SMTPeter |
+| [attempts log file](get-logfiles "attempts log file") | informatie over alle berichten verstuurd met SMTPeter  |
+| [bounces log file](get-logfiles "bounces log file")   | informatie over bounces                                |
+| [clicks log file](get-logfiles "clicks log file")     | informatie over de kliks                               |
+| [deliveries log file](get-logfiles "log-deliveries")  | informatie over het afleveren van berichten            |
+| [dmarc log file](get-logfiles "log-dmarc")            | informatie over DMARC statistieken                     |
+| [failures log file](get-logfiles "log-failures")      | informatie over mislukte verzendpogingen               |
+| [opens log file](get-logfiles "opens log file")       | informatie over de opens                               |
+| [responses log file](get-logfiles "log-responses")    | informatie over response mails ontvangen door SMTPeter |
 
 
 ## Click tracking domein
