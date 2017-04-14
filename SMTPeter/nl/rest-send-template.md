@@ -1,6 +1,6 @@
 # Versturen op basis van een template
 
-Er zijn een aantal [voorbeelden](rest-send-json) gegeven van hoe je data naar SMTPeter stuurt.
+Er zijn een aantal [voorbeelden](rest-send-json "MIME door SMTPeter laten maken") gegeven van hoe je data naar SMTPeter stuurt.
 Hierbij is het nodig om telkens de hele e-mail te versturen naar SMTPeter. Of als een 
 MIME string of als individuele text en html properties. Het is ook mogelijk om 
 gebruik te maken van vooraf-opgestelde *templates*. Dit is handig, omdat je dan alleen
@@ -24,7 +24,7 @@ Het is ook mogelijk om een gehele string of object in te voeren als e-mail templ
     }
 }
 ```
-Je kunt dus [personalization data](personalization) meegeven aan de REST *call*, 
+Je kunt dus [personalization data](personalization "Personalisatie") meegeven aan de REST *call*, 
 zodat de e-mail wordt gepersonaliseerd. Bovenstaand voorbeeld stuurt template #12
 naar john@doe.com, met de variabelen {$firstname} en {$lastname}. Dit wordt in de 
 uiteindelijke e-mail weergegeven als 'John Doe'.

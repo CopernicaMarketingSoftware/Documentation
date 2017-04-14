@@ -13,4 +13,4 @@ Hieronder vind je een lijst van alle mogelijke optionele headers:
 | x-smtpeter-trackopens:   | Open tracking wordt geactiveerd wanneer deze optie aanstaat  |
 | x-smtpeter-preventscam:  | Links met labels die overeenkomen met de link worden niet getrackt als deze optie aanstaat |
 | x-smtpeter-tags:         | Komma-gescheiden lijst van de tags van het bericht |
-| x-smtpeter-images:       | Als deze optie op ‘hosted’ staat, worden [embedded afbeeldingen](images) door SMTPeter zelf gehost |
+| x-smtpeter-images:       | Als deze optie op ‘hosted’ staat, worden [embedded afbeeldingen](images "Afbeeldingen in een e-mail") door SMTPeter zelf gehost |

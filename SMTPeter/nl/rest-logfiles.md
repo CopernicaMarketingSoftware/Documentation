@@ -2,7 +2,7 @@
 
 Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter 
 onder meer de volgende *events* bij: afleveringen, *bounces*, kliks en *opens*. 
-Deze *log files* zijn op te vragen via de [REST API](rest-logfiles).
+Deze *log files* zijn op te vragen via de [REST API](rest-logfiles "Opvragen van log files").
 Het kan natuurlijk ook voorkomen dat je opzoek bent naar een specifiek event.
 De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
 Je doet dit middels een van de volgende URls:
@@ -61,8 +61,8 @@ met bestaande prefixes:
 | [clicks log file](get-logfiles "clicks log file")     | informatie over het aantal kliks                                   |
 | [deliveries log file](get-logfiles "log-deliveries")  | informatie over de afgeleverde mails                               |
 | [dmarc log file](get-logfiles "log-dmarc")            | informatie over ontvangen DMARC rapporten                          |
-| [failures log file]("log-failures")                   | informatie over gefaalde pogingen                                  |  
-| [opens log file](get-logfiles "opens log file")       |  informatie over geopende mails                                     |
+| [failures log file](get-logfiles "log-failures")      | informatie over gefaalde pogingen                                  |  
+| [opens log file](get-logfiles "opens log file")       |  informatie over geopende mails                                    |
 | [responses log file](get-logfiles "log-responses")    | informatie over response mails ontvangen door SMTPeter             |
 
 

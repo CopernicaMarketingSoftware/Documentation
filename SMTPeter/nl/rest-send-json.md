@@ -1,6 +1,6 @@
 # MIME door SMTPeter laten maken
 
-Als je de [REST API gebruikt om e-mail te versturen](rest-send) kun je een *MIME property* toevoegen, 
+Als je de [REST API gebruikt om e-mail te versturen](rest-send "Verzenden via REST") kun je een *MIME property* toevoegen, 
 die het volledige MIME object bevat dat je wilt versturen. Echter, je kunt ook SMTPeter een MIME string 
 laten maken. Als je geen MIME property toevoegt aan je request maar een aparte "subject", "text" of 
 "HTML" property, wordt de MIME gecreëerd door SMTPeter. De volgende tabel bevat alle ondersteunde eigenschappen:

@@ -2,7 +2,7 @@
 
 Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter 
 onder meer de volgende *events* bij: afleveringen, *bounces*, *clicks* en *opens*. 
-Deze log files zijn op te vragen via de [REST API](rest-logfiles).
+Deze log files zijn op te vragen via de [REST API](rest-logfiles "Opvragen van log files").
 Het kan natuurlijk ook voorkomen dat je opzoek bent naar een specifiek event.
 De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
 Je doet dit middels een van de volgende URls:
@@ -88,15 +88,15 @@ Het `type` in de JSON geeft het type record. De beschikbare types
 staan in de onderstaande tabel. De beschikbare data wordt 
 beschreven op de betreffende pagina van het type.
 
-| Type                                        | Beschrijving                                      |
+| Type                                        | Beschrijving                                     |
 | ------------------------------------------- | ------------------------------------------------ |
-| [attempt](log-attempts "attempts log file") | Algemene informatie over het bericht             |
-| [bounce](log-bounces "bounces log file")    | informatie over een bounce                       |
-| [click](log-clicks "clicks log file")       | informatie over een gegenereerde klik            |
-| [delivery](log-deliveries)                  | informatie over de aflevering                    |
-| [failure](log-failures)                     | informatie over een mislukte aflevering          |
-| [open](log-opens "opens log file")          | informatie over wanneer een bericht is geopend   |
-| [response](log-responses)                   | informatie over door SMTPeter ontvangen reacties |
+| [attempt](get-logfiles "attempts log file") | Algemene informatie over het bericht             |
+| [bounce](get-logfiles "bounces log file")   | informatie over een bounce                       |
+| [click](get-logfiles"clicks log file")      | informatie over een gegenereerde klik            |
+| [delivery](get-logfiles "log-deliveries")   | informatie over de aflevering                    |
+| [failure](get-logfiles "log-failures")      | informatie over een mislukte aflevering          |
+| [open](get-logfiles "opens log file")       | informatie over wanneer een bericht is geopend   |
+| [response](get-logfiles "log-responses")    | informatie over door SMTPeter ontvangen reacties |
 
 
 ## Events op basis van een MESSAGE ID
