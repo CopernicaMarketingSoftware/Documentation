@@ -10,7 +10,7 @@ zijn er verschillende technieken ontwikkeld, waaronder SPF.
 
 Dit artikel is bedoeld om achtergrond te geven over SPF of die controle 
 willen hebben over de SPF archieven die wij bijhouden. Als je alleen 
-SPF op wilt zetten voor je *sender domein* kun je [dit artikel](./sender-domains) 
+SPF op wilt zetten voor je *sender domein* kun je [dit artikel](./sender-domains "Sender Domains") 
 bekijken.
 
 ## Wat is SPF?
@@ -43,7 +43,7 @@ effect hebben op de plaatsing van je bericht in de inbox van de gebruiker.
 
 ## Sender Domain aanbevelingen
 
-Als je het dashboard gebruikt om een [Sender Domains](sender-domains) op 
+Als je het dashboard gebruikt om een [Sender Domains](sender-domains "Sender Domains") op 
 te zetten dan regelen wij het hosten van je SPF records. Je hoeft ze dus 
 niet zelf op te zetten. Je moet wel zelf het SPF record toevoegen aan je DNS 
 door het door te geven aan je provider of door het op je eigen server te zetten.
