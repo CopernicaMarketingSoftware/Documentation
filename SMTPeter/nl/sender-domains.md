@@ -2,13 +2,13 @@
 
 SMTPeter gebruikt het concept van *sender domains* om e-mail simpeler te maken.
 *SPF, DKIM en DMARC* zijn lastig te begrijpen en in te stellen. SMTPeter heeft
-hier handige oplossingen voor bedacht, zodat jij je bezig houden met je bedrijf 
+hier handige oplossingen voor bedacht, zodat jij bezig kunt zijn met je bedrijf 
 en andere zaken.
 
 Dit artikel gaat over wat een sender domain precies doet. Het werkt als 
-volgt: op het SMTPeter dashboard geef je aan vanaf welke domeinen je 
-wilt mailen en wij vertellen hoe je je DNS moet configureren. Het sender 
-domain is de domeinnaam die je gaat gebruiken in je e-mails.
+volgt: 'in het SMTPeter dashboard geef je aan vanaf welke domeinen je 
+wilt mailen en wij vertellen vervolgens hoe je je DNS moet configureren. 
+Het sender domain is de domeinnaam die je gaat gebruiken in je e-mails'.
 
 Stel dat je e-mails wil versturen vanaf adressen die eindigen op 
 "@jouwdomein.com" of "@eenanderdomein.org". Je kunt simpelweg het 
@@ -31,12 +31,12 @@ bepaald domein gebruikt om mee te e-mailen.
 SMTPeter neemt deze verantwoordelijkheden van je over met sender domains.
 We maken SPF, DKIM en DMARC archieven voor je aan en slaan ze op onze 
 DNS servers op. Zelf hoef je alleen een aantal archieven in je eigen DNS 
-archief aan te maken door deze aan je DNS provider te geven of op je eigen 
+archief aan te maken, door deze aan je DNS provider te geven of op je eigen 
 DNS server te zetten die naar de onze verwijzen. Als wij een verandering 
 doorvoeren (zoals je DKIM sleutels wisselen) heb je hier meteen toegang toe, 
 omdat je eigen DNS archieven naar de onze verwijzen. 
 
-In onze DNS (die *.smtpeter.com subdomeinen gebruikt) bewaren we de volgende 
+In onze DNS (die ".smtpeter.com" subdomeinen gebruikt) bewaren we de volgende 
 archieven:
 
 * [SPF archieven](spf-validation) die de IP adressen waar je vandaan mailt opslaan
@@ -62,10 +62,10 @@ geverifieerd als de afzender van de e-mail.
 Als je een sender domain opzet word je ook gevraagd om je tracking en 
 bounce domeinen op te zetten. Dit zijn de hostnames die we gebruiken om 
 kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn 
-voor de meeste gebruikers geschikt. (tracking.jouwdomein.nl en 
-clicks.jouwdomein.nl)
+voor de meeste gebruikers geschikt ("tracking.jouwdomein.nl" en 
+"clicks.jouwdomein.nl").
 
-Als je SMTPeter gebruikt om [kliks](./statistics) op te slaan, worden gebruikers 
+Als je SMTPeter gebruikt om [kliks](/statistics) op te slaan, worden gebruikers 
 eerst doorgestuurd naar een andere website die de klik opslaat in onze databases. 
 De hyperlinks zien er daarom uit als "clicks.jouwdomein.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 
