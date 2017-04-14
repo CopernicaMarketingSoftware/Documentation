@@ -56,14 +56,14 @@ met bestaande prefixes:
 
 | Prefix                                                | Beschrijving                                                       |
 | ----------------------------------------------------- | ------------------------------------------------------------------ |
-| [attempts log file](log-attempts "attempts log file") | informatie over alle beschikbare mails verzonden met SMTPeter      |
-| [bounces log file](log-bounces "bounces log file")    | informatie over het aantal bounces                                 |
-| [clicks log file](log-clicks "clicks log file")       | informatie over het aantal kliks                                   |
-| [deliveries log file](log-deliveries)                 | informatie over de afgeleverde mails                               |
-| [dmarc log file](log-dmarc)                           | informatie over ontvangen DMARC rapporten                          |
-| [failures log file](log-failures)                     | informatie over gefaalde pogingen                                  |  
-| [opens log file](log-opens "opens log file")          | informatie over geopende mails                                     |
-| [responses log file](log-responses)                   | informatie over response mails ontvangen door SMTPeter             |
+| [attempts log file](get-logfiles "attempts log file") | informatie over alle beschikbare mails verzonden met SMTPeter      |
+| [bounces log file](get-logfiles "bounces log file")   | informatie over het aantal bounces                                 |
+| [clicks log file](get-logfiles "clicks log file")     | informatie over het aantal kliks                                   |
+| [deliveries log file](get-logfiles "log-deliveries")  | informatie over de afgeleverde mails                               |
+| [dmarc log file](get-logfiles "log-dmarc")            | informatie over ontvangen DMARC rapporten                          |
+| [failures log file]("log-failures")                   | informatie over gefaalde pogingen                                  |  
+| [opens log file](get-logfiles "opens log file")       |  informatie over geopende mails                                     |
+| [responses log file](get-logfiles "log-responses")    | informatie over response mails ontvangen door SMTPeter             |
 
 
 ## Downloaden van bestanden
