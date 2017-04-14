@@ -16,6 +16,6 @@ De REST API geeft je een aantal handige opties om je mailings te verbeteren:
 * [Opvragen van events](rest-events)
 * [Opvragen van log files](rest-logfiles)
 * [Opvragen van DMARC reports](rest-dmarc)
-* [Templates beheren](rest-tempaltes)
+* [Templates beheren](rest-templates)
 
 *Alle beschikbare REST calls kun je [hier](all-rest-calls) vinden.*
