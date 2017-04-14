@@ -124,7 +124,7 @@ class SMTPeter
 }
 ```
 
-Het gebruik van deze class is gemakkelijk:
+Het gebruik van deze class is makkelijk:
 
 ```php
 // Your token
