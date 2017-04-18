@@ -1,4 +1,4 @@
-# Verzenden via REST
+# Verzenden via REST API
 
 SMTPeter heeft een betrouwbare REST API die gebruik maakt van het HTTPS 
 protocol. Om toegang te krijgen tot de REST API heb je een een *API access token* 
