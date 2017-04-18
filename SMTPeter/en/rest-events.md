@@ -1,4 +1,4 @@
-# Get all events for a given characteristic
+# Retrieve events
 
 Everything that passes through SMTPeter gets logged: deliveries, bounces,
 clicks, opens - all these events are written to log files. These log
@@ -24,19 +24,26 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-### Start and end
+## Start and end
 
 If no start and end parameters are provided you will get the default period
-for the particular events. If you provide a start you will get events from the start
-date up to one month after the start. If you provide an end, you will get
-the events from one month before the end up to (but excluding) the end.
+for the particular events. 
+
+If you provide a start you will get events from the start
+date up to one month after the start.
+
+If you provide an end, you will get the events from one month before the end 
+up to (but excluding) the end.
+
 If you provide both a start and an end and the interval between the two
 is longer than a month, it will be shortened to a month where the start is
-leading. Take into account that the dates are treated as UTC dates. 
+leading. 
+
+Take into account that the dates are treated as UTC dates. 
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
 
-### Tags
+## Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags
@@ -45,9 +52,10 @@ with a semicolon.
 
 ## Returned information
 
-after this call you receive a JSON with all the information you have requested.
+After this call you receive a JSON with all the information you have requested.
 
 The layout of this json is:
+
 ```json
 [
     {
@@ -69,6 +77,7 @@ The layout of this json is:
     ...
 ]
 ```
+
 The `type` in the JSON describes which type of record it is. The types that
 are available are listed in the table below. The data that these types
 contain are described on the page of the particular log file.

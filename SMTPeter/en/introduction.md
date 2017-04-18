@@ -6,12 +6,12 @@ After registering, you only need a few things to do in order to start with SMTPe
 
 * In the SMTPeter dashboard, set up your domain from which you want to send emails;
 * Set up the correct DNS records, so that SMTPeter can send email out of your name;
-* Set up *login credentials* to acces the *API*.
+* Set up **login credentials** to acces the **API**.
 
 
 ## Setting up a Sender Domain
 
-The Sender Domains module can be found under the `Account configuration` tab in the application. 
+The sender domains module can be found under the `Account configuration` tab in the application. 
 The interface speaks for itself: click `Setup sender domain` and then `Add sender domain` and 
 follow the steps. Don’t worry about your click- and tracking domains or the DMARC deployment, 
 you can always edit them later on.
@@ -70,3 +70,4 @@ Read more about what SMTPeter has to offer:
 - [Sender Domains](sender-domains)
 - [SMTP API](smtp-api)
 - [REST API](rest-api)
+
