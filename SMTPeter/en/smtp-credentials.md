@@ -1,4 +1,4 @@
-# SMTP credentials
+# Creating credentials
 
 You need a valid login/password combination to access the SMTP API.
 These credentials have to be included in the SMTP handshake before
@@ -25,11 +25,11 @@ install a different feature set for each login. When you send out mail,
 you use login/password combination that supports the features that 
 you need.
 
-* modify hyperlinks to track clicks
-* modify image urls to track opens
-* do not modify links that would trigger scam warnings
-* change envelope address to collect bounces
-* modify html code to contain inline css attributes
+* modify hyperlinks to track clicks;
+* modify image urls to track opens;
+* do not modify links that would trigger scam warnings;
+* change envelope address to collect bounces;
+* modify html code to contain inline css attributes.
 
 The above list holds the properties that can be associated with a
 login/password pair. When you use the dashboard to create a login, you

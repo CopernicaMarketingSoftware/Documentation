@@ -36,7 +36,7 @@ included in the MIME data, and do not have to be identical to the
 addresses used in the "envelope" and "recipient" fields (although it
 is good practice to send email to the addresses mentioned in "to").
 
-````json
+```json
 {
     "from": "info@example.com",
     "to": [
@@ -46,7 +46,7 @@ is good practice to send email to the addresses mentioned in "to").
     ],
     "cc": "John Doe <johndoe@example.org>"
 }
-````
+```
 
 ## Subject, text and HTML
 
@@ -54,13 +54,13 @@ The "subject", "text" and "html" properties can be used to set the
 subject line of the email, and the text and HTML version. The properties
 are self-explanatory.
 
-````json
+```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the email"
 }
-````
+```
 
 ## Unsubscribe header
 
@@ -68,36 +68,36 @@ If you want to add a "list-unsubscribe" header to your email, you can
 add the JSON "unsubscribe" option. You can set it to a string holding
 either a URL or an email address, or an array holding both:
 
-````json
+```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the email",
     "unsubscribe": "unsubscribe@example.com"
 }
-````
+```
 
 You can also set it to a URL:
 
-````json
+```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the email",
     "unsubscribe": "http://www.example.com"
 }
-````
+```
 
 Or to both an email address and a URL:
 
-````json
+```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the email",
     "unsubscribe": [ "http://www.example.com", "unsubscribe@example.com" ]
 }
-````
+```
 
 ## Extra "x-*" headers
 
@@ -105,7 +105,7 @@ The "extra" property can be used in case you want to add custom headers
 to your email. To ensure that your custom headers do not conflict with
 other headers, you may only add headers with a "x-*" prefix.
 
-````json
+```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
@@ -115,7 +115,7 @@ other headers, you may only add headers with a "x-*" prefix.
         "x-custom-property": "custom"
     }
 }
-````
+```
 
 ## Attachments
 
@@ -126,7 +126,7 @@ to send and for the other you provide the data in the JSON object itself.
 If you provide the data in the JSON, this data has to be base64 encoded.
 Moreover, you can optionally specify the type of data that you send.
 
-````json
+```json
 {
     "attachments": [ 
         {
@@ -139,5 +139,4 @@ Moreover, you can optionally specify the type of data that you send.
         } 
     ]
 }
-````
-
+```
