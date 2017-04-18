@@ -4,7 +4,7 @@
     * [Aanmaken van credentials](smtp-credentials)
     * [Domeinnaam en poorten](smtp-ports)
     * [MIME headers](smtp-headers)
-* [Verzenden via REST](rest-send)
+* [Verzenden via REST](rest-api)
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
     * [Versturen op basis van een template](rest-send-template)
