@@ -23,7 +23,7 @@ https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
 https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ```
 
-## Envelope en ontvanger adres
+## Envelope en recipient adres
 
 Het originele *envelope* en ontvanger adres, dat je door middel van de
 API hebt gebruikt voor het versturen van e-mails, kan worden achterhaald 
