@@ -29,8 +29,8 @@ daar in jouw DNS expliciet toestemming voor wordt gegegeven.
 
 ## REST vs SMTP
 
-SMTPeter maakt het mogelijk om e-mails te versuren via de REST API en
-en de SMTP API. We raden je sterk aan om, als je de keuze hebt, te gaan voor de 
+SMTPeter maakt het mogelijk om e-mails te versuren via de REST API en de 
+SMTP API. We raden je sterk aan om, als je de keuze hebt, te gaan voor de 
 REST API. Deze API geeft je meer opties, vrijheid en gebruiksgemak. 
 En hij is sneller, omdat er geen complexe en tijdrovende *SMTP handshake* nodig is
 om e-mails te versturen van de ene naar de andere server.
