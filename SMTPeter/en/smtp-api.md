@@ -1,4 +1,4 @@
-# SMTP API
+# Send via SMTP API
 
 The SMTPeter service can be accessed using a traditional SMTP API. SMTP is 
 the language or protocol that email programs use to transfer mail from 

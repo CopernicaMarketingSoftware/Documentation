@@ -6,7 +6,7 @@ After registering, you only need a few things to do in order to start with SMTPe
 
 * In the SMTPeter dashboard, set up your domain from which you want to send emails;
 * Set up the correct DNS records, so that SMTPeter can send email out of your name;
-* Set up *login credentials* to acces the *API*
+* Set up *login credentials* to acces the *API*.
 
 
 ## Setting up a Sender Domain
@@ -48,8 +48,8 @@ be replaced by the method you want to use and YOUR_ACCESS_TOKEN needs to be your
 We've made a few examples in different programming languages. With these classes, you can set up a connection 
 with the REST API. This way, no low-level calls have to be written and you can start using SMTPeter directly.
 
-* [PHP voorbeeld](php-example "PHP voorbeeld")
-* [Python voorbeeld](python-example "Python voorbeeld")
+* [PHP example](php-example "PHP example")
+* [Python example](python-example "Python example")
 
 
 ## SMTP API
