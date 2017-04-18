@@ -1,4 +1,4 @@
-# SMTP API
+# Verzenden via SMTP API
 
 SMTP is het protocol dat e-mailprogramma’s gebruiken om e-mail van de ene computer naar de andere computer te versturen. 
 Het is eenvoudig om SMTPeter te integreren in een bestaande e-mailinfrastructuur, omdat SMTPeter wordt geleverd met een SMTP API. 
