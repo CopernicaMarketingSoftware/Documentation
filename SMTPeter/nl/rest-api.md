@@ -14,7 +14,7 @@ https://www.smtpeter.com/v1/send
 
 Vervolgens zorg je dat aan een tweetal elementen wordt voldaan: 'het toevoegen van 
 een e-mailbericht aan de *body* en het aangeven van de SMTPeter mogelijkheden die 
-je wilt activeren. De opmaak ziet er dan als volgt uit:
+je wilt activeren'. De opmaak ziet er dan als volgt uit:
 
 ```text
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
