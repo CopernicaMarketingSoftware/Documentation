@@ -70,7 +70,7 @@ met bestaande prefixes:
 
 Log files kunnen worden gedownload in CSV, JSON en XML formaat. Op deze
 manier kun je zelf kiezen waar je het liefst mee wilt werken. Je kunt een 
-log file downloaden als csv formaat door de een tag toe te voegen aan 
+log file downloaden als CSV formaat door de een tag toe te voegen aan 
 het eind van de REST API URL. 
 
 ```text
