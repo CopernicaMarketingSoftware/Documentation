@@ -54,13 +54,13 @@ consequent ook naar de bounce feedback loops.
 De bounce feedback loop wordt door middel van het HTTP POST mechanisme verstuurd. 
 De volgende variabelen worden dan ingevoerd:
 
-| Variabelen| Omschrijving																		|
+| Variabelen| Omschrijving                                                                      |
 |-----------|-----------------------------------------------------------------------------------|
-| id 		| original message id to which the bounce is associated 							|
-| recipient | email address to which the original mail was sent 								|
-| mailfrom 	| "MAIL FROM" address that was used for delivering the incoming bounce 				|
-| rcptto 	| "RCPT TO" address that was used for delivering the incoming bounce 				|
-| mime 		| The MIME data that was sent during, this is the actual received bounce message 	|
+| id        | origineel message id van de bounce in kwestie                                     |
+| recipient | e-mailadres waar de originele mail naartoe is verstuurd                           |
+| mailfrom  | "MAIL FROM" adres dat is gebruikt voor aflevering van de inkomende bounce         |
+| rcptto    | "RCPT TO" adres dat is gebruikt voor aflevering van de inkomende bounce           |
+| mime      | de MIME data dat is verstuurd, dit is het daadwerkelijk ontvangen bounce bericht  |
 
 De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
 te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom", 

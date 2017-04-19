@@ -1,6 +1,6 @@
 # Managing templates
 
-In SMTPeter' dashboard it's easy and convenient to manage your templates. 
+In SMTPeter's dashboard it's easy and convenient to manage your templates. 
 All the templates are available by using the REST API. You can then use 
 various methods to download, edit or create templates. And of course
 you can [send email](rest-send) with the templates.
@@ -32,6 +32,7 @@ back a JSON array in the following format:
     }
 ]
 ```
+
 For every template a unique identifier and template name is given back. 
 You can request multiple properties by providing a unique ID when doing 
 an API call. 
@@ -68,6 +69,7 @@ You can create a new template by using a HTTP POST method and sending it to SMTP
 ```text
 https://www.smtpeter.com/v1/template/{format}
 ```
+
 Creating templates is done by adding the JSON code to the body of a POST request.
 For all specificatons of the properties that can be used, you can take a look at:
 [www.ResponsiveEmail.com](https://www.responsiveemail.com).
