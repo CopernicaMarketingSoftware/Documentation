@@ -23,8 +23,9 @@ remote servers to either accept a message, or to refuse it. Refused mails
 are written to the failure logfile, and are sent to the failure feedback
 loops (see diagram 1). 
 
+
 **Diagram 1**
-![Diagram 1](Images/smtpeter-diagram-send-email.svg "Sending email")
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-send-email.svg">
 
 However, even when a message is initially accepted (and thus not 
 considered a failure), it still is possible for the other server
@@ -34,9 +35,12 @@ and have a special format. SMTPeter recognizes these bounces, and adds
 these errors to the log file too, and calls your 
 [failure feedback loop](feedback-failures) (see diagram 2).
 
+
 **Diagram 2**
+<img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-bounce.svg">
 
 ![Diagram 2](Images/smtpeter-diagram-bounce.svg "Bounces")
+
 
 Besides these standardized Delivery Status Notifications, there 
 are many more messages that are sent back to the envelope address. These 
@@ -59,30 +63,14 @@ bounces and out-of-office replies that could not be recognized.
 The bounce feedback loop is sent over HTTP POST, and the following
 variables are submitted:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>original message id to which the bounce is associated</td>
-    </tr>
-    <tr>
-        <td>recipient</td>
-        <td>email address to which the original mail was sent</td>
-    </tr>
-    <tr>
-        <td>mailfrom</td>
-        <td>"MAIL FROM" address that was used for delivering the incoming bounce</td>
-    </tr>
-    <tr>
-        <td>rcptto</td>
-        <td>"RCPT TO" address that was used for delivering the incoming bounce</td>
-    </tr>
-    <tr>
-        <td>mime</td>
-        <td>The MIME data that was sent during, this is the actual received bounce message</td>
-    </tr>
-</table>
+| variables | Omschrijving                                                                      |
+|-----------|-----------------------------------------------------------------------------------|
+| id        | original message id to which the bounce is associated                             |
+| recipient | email address to which the original mail was sent                                 |
+| mailfrom  | "MAIL FROM" address that was used for delivering the incoming bounce              |
+| rcptto    | "RCPT TO" address that was used for delivering the incoming bounce                |
+| mime      | The MIME data that was sent during, this is the actual received bounce message    |
 
 The "id" and "recipient" variables allow you to link the incoming bounce
 to the original outgoing message that was sent. The "mailfrom", "rcptto"
 and "data" fields hold the message that was received by SMTPeter.
-
