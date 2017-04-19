@@ -8,15 +8,15 @@ even set up traditional email clients like Outlook, Thunderbird or your
 mobile devices to send all messages through SMTPeter.
 
 To use the SMTP API you need to authenticate yourself to our servers,
-so you should configure your application to authenticate with 
-[AUTH PLAIN or AUTH LOGIN](https://en.wikipedia.org/wiki/SMTP_Authentication).
+so you should configure your application to authenticate with
+<a href="https://en.wikipedia.org/wiki/SMTP_Authentication" target="_blank">AUTH PLAIN or AUTH LOGIN</a>.
 You can create different SMTP logins via the SMTPeter dashboard. 
-So you can for make different logins for different users, and/or enable or disable specific features such
+So you can for example make different logins for different users, and/or enable or disable specific features such
 as click tracking, for different logins.
 
 If you do not want to bother with different accounts, you can instead use the 
 email/password combination of your SMTPeter account or Copernica account to login.
-Note however that most additional features, including tracking of clicks and opens, are disabled for this option.
+Note however that most additional features, including the tracking of clicks and opens, are disabled for this option.
 
 ## Examples
 
@@ -57,4 +57,4 @@ is disabled. When you connect to the SMTP API, you simply pick a login/password
 combination that has the features you need.
 
 The alternative method to enable or disable features is by adding special
-[MIME-headers](mime-headers "MIME headers") to your email.
+[MIME-headers](rest-mime) to your email.

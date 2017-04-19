@@ -1,4 +1,4 @@
-# REST API method: templates
+# Sending based on templates
 
 The templates that can be managed via the dashboard, are also accessible
 through the REST API. The API offers methods to download templates, and
