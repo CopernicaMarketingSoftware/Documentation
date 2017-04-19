@@ -39,9 +39,6 @@ these errors to the log file too, and calls your
 **Diagram 2**
 <img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-bounce.svg">
 
-![Diagram 2](Images/smtpeter-diagram-bounce.svg "Bounces")
-
-
 Besides these standardized Delivery Status Notifications, there 
 are many more messages that are sent back to the envelope address. These 
 are for example out-of-office mails or vacation mails, but also error 
