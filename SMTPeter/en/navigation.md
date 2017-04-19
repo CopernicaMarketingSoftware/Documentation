@@ -38,23 +38,10 @@
 
 
 
-
-
-
 <!-- 
-
-
-
-
-
     * [JSON to MIME conversion](json-to-mime)
 
     * [Sender domains](sender-domains)
-
-
-
-
-
 
 
     * [Templates](templates)
@@ -63,7 +50,6 @@
 * [REST API](rest-api)
     * [Endpoint and access token](rest-endpoint)
     * [JSON vs POST data](json-vs-post)
-
 
 
     * [Configuration via REST](rest-configuration)
@@ -79,5 +65,4 @@
     * [Opens feedback](feedback-opens)
 * [License and Billing](license-and-billing "License & Billing")
 * [Responsive Email](responsive-email "Using SMTPeter with ResponsiveEmail")
-
  -->

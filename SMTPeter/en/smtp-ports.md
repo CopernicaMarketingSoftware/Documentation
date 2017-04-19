@@ -45,4 +45,3 @@ Host:       mail.smtpeter.com
 Port:       465
 Encryption: SMTPS
 ```
-
