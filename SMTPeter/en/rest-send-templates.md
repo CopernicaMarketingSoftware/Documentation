@@ -49,12 +49,12 @@ You must provide the identifier of the template, but the format is optional.
 When the format is not provided, the template will be returned in JSON 
 format. But you can also ask SMTPeter to return the template in other formats:
 
-- json: return the template in JSON format;
-- html: return the template in HTML format, optimized for email clients;
-- webversion: return the template in HTML format, optimized for web clients;
-- mime: return the template in MIME format, with externally hosted images;
-- embedded: return the template in MIME format, with embedded images;
-- text: return the text version of the template.
+- JSON: return the template in JSON format;
+- HTML: return the template in HTML format, optimized for email clients;
+- Webversion: return the template in HTML format, optimized for web clients;
+- MIME: return the template in MIME format, with externally hosted images;
+- Embedded: return the template in MIME format, with embedded images;
+- Text: return the text version of the template.
 
 You can provide extra personalization variables in the GET request, that are
 uses to personalize the template. If no variables are provided, the template

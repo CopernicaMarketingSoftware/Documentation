@@ -30,8 +30,6 @@ JSON array holding dates.
 // UTC time
 ```
 
-The returned dates are UTC dates.
-
 
 ## Log files per date
 

@@ -1,6 +1,6 @@
-# Create MIME with the REST API
+# Let SMTPeter create MIME data
 
-If you use the [send method of the REST API](rest-send) to send email,
+If you use the [send method of the REST API](rest-api) to send email,
 you normally include a "mime" property holding the full MIME object
 that you want to send. However, you can also let SMTPeter create the
 MIME string for you. If you do not include a "mime" property in your
