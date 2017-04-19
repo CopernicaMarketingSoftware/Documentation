@@ -21,6 +21,6 @@ is returned. The DMARC reports are XML documents.
 If you call DMARC without any extra arguments (method 1), you receive
 an array with dates for which we possibly have DMARC reports for you. However,
 we advise you to use the [log files method](rest-logfiles) to see for which
-dates you have [DMARC log files](log-dmarc). The content in these DMARC
+dates you have DMARC log files. The content in these DMARC
 log files gives you the information you need, like FROM and FOR, to get the
 DMARC reports.

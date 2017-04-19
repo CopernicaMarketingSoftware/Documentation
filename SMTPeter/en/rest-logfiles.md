@@ -27,6 +27,7 @@ JSON array holding dates.
 
 ```json
 [ "2016-03-20", "2016-03-21", "2016-03-22" ]
+// UTC time
 ```
 
 The returned dates are UTC dates.

@@ -24,7 +24,7 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-## Start and end
+## Start and end parameters
 
 If no start and end parameters are provided you will get the default period
 for the particular events. 
@@ -54,7 +54,7 @@ with a semicolon.
 
 After this call you receive a JSON with all the information you have requested.
 
-The layout of this json is:
+The layout of this JSON is:
 
 ```json
 [
