@@ -68,6 +68,6 @@ variables are submitted:
 | rcptto    | "RCPT TO" address that was used for delivering the incoming bounce                |
 | mime      | The MIME data that was sent during, this is the actual received bounce message    |
 
-The "id" and "recipient" variables allow you to link the incoming bounce
+The "ID" and "recipient" variables allow you to link the incoming bounce
 to the original outgoing message that was sent. The "mailfrom", "rcptto"
 and "data" fields hold the message that was received by SMTPeter.
