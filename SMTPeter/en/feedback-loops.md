@@ -16,7 +16,7 @@ Once your URL has been validated, SMTPeter starts making calls to it.
 
 Before you set up a feedback loop, please do make sure that your server
 is capable of handling the load. Especially the feedback loop that is
-called [when someone opens a mail](feedback-opens) receives huge
+called when someone[opens a mail](feedback-opens) receives huge
 numbers of calls.
 
 If you're not sure whether your server can handle the load, or when you do
@@ -34,4 +34,3 @@ The following feedback loops can be used:
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
 * [Feedback loops for opens](feedback-opens)
-
