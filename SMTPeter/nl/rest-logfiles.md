@@ -25,7 +25,7 @@ een specifieke datum en (3-6) om een enkele log file op te vragen.
 Alle log files worden opgeslagen in mappen, geordend op datum. Je kunt 
 een overzicht opvragen van alle 'beschikbare' datums, door de logfiles
 methode aan te roepen zonder een extra paramater mee te geven 
-(zie de eerste methode hierboven).Dit geeft een JSON array terug 
+(zie de eerste methode hierboven). Dit geeft een JSON array terug 
 met alle datums:
 
 ```json
