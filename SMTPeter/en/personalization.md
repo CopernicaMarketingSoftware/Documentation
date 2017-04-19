@@ -1,30 +1,20 @@
 # Personalization
 
-With SMTPeter you can easily personalize your mailings. You simply [send personal data](personalization-data)
-about the recipient(s) together with your [message template](personalization-programming)
-to SMTPeter. SMTPeter will rewrite your
-template given the data into a personalized mail. A template can be
-simple, where only some names have to be filled in, or very complex where
-the content is completely personalized based on the age, gender, and the
-number of children that one has. It is up to you.
+SMTPeter provides many possibilities to personalize emails. Personalization is important
+to make a good impression and to keep the attention of the reader. The syntax of how
+you write variables in SMTPeter is explained below. Accompanied we've given some examples
+in order to make things more tangible.
 
-Curious? Read how you can:
+The following concepts will be explained:
 
-* [Add personal data to your mails](personalization-data)
-* [Completely program your template](personalization-programming)
-* [Using modifiers on your data](personalization-modifiers)
-
-
-
-
-
-
-
-
-
-
-
-
+* [Variables](personalization#variabelen)
+* [Modifying your variables](personalization#modifying-your-variables)
+* [Simple calculations](personalization#simple-calculations)
+* [Conditional statements](personalization#conditional-statements)
+* [Retrieve data from arrays](personalization#foreach)
+* [Assigning variables](personalization#assigning-variables)
+* [Using curly braces in your text](personalization#using-curly-braces-in-your-text)
+* [Layout issues](personalization#layout-issues)
 
 
 ## Variables
@@ -49,8 +39,7 @@ The next table gives all variable notations:
 | {$foo[4]}  | Display the 5th element of a zero-indexed array. |
 | {$foo.bar} | Display the "bar" key value of an object.        |
 
-With these notations you may make combinations. Examples of combinations
-are:
+With these notations you may make combinations. Examples of combinations are:
 
 | Syntax            | Meaning                                                                                |
 | ----------------- | -------------------------------------------------------------------------------------- |
