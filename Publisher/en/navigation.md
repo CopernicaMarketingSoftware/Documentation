@@ -28,7 +28,7 @@
     * [Special functions](./personalization-functions.md)
     * [Tips en tricks](./personalization-tricks.md)
 * [Scripting and follow-ups](./followups.md)
-    * [Followup manager](./follow-up-manager.md)
+    * [Follow up manager](./follow-up-manager.md)
     * [Followups with Publisher](./publisher-follow-up-manager.md)
     * [The data-script attribute](./followups-scripting.md)
 * [Surveys](./surveys)
