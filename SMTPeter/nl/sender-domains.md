@@ -12,7 +12,7 @@ Het sender domain is de domeinnaam die je gaat gebruiken in je e-mails'.
 
 Stel dat je e-mails wil versturen vanaf adressen die eindigen op 
 "@jouwdomein.com" of "@eenanderdomein.org". Je kunt simpelweg het 
-dashboard gebruiken om domeinen "jouwdomein.com" en "eenanderdomein.org" 
+dashboard gebruiken om domeinen "example.com" en "example.org" 
 op te zetten. Wanneer je dit hebt gedaan geeft SMTPeter een lijst van 
 DNS records terug, die je aan je *DNS provider* kunt geven of op je eigen 
 DNS server kunt zetten. We hebben daarna nog tips voor je, maar je kunt 
@@ -62,14 +62,14 @@ geverifieerd als de afzender van de e-mail.
 Als je een sender domain opzet word je ook gevraagd om je tracking en 
 bounce domeinen op te zetten. Dit zijn de hostnames die we gebruiken om 
 kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn 
-voor de meeste gebruikers geschikt ("tracking.jouwdomein.nl" en 
-"clicks.jouwdomein.nl").
+voor de meeste gebruikers geschikt ("tracking.example.nl" en 
+"clicks.example.nl").
 
 Als je SMTPeter gebruikt om [kliks](/statistics "Click en open tracking") op te slaan, worden gebruikers 
 eerst doorgestuurd naar een andere website die de klik opslaat in onze databases. 
-De hyperlinks zien er daarom uit als "clicks.jouwdomein.com". Sommige 
+De hyperlinks zien er daarom uit als "clicks.example.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 
-deze URLs wilt veranderen naar iets zoals "aanbiedingen.jouwdomein.com" 
+deze URLs wilt veranderen naar iets zoals "aanbiedingen.example.com" 
 kun je het klik domein aanpassen in de sender domainn configuratie.
 
 Je kunt ook je bounce domein aanpassen, maar deze is alleen zichtbaar in 
