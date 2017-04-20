@@ -11,7 +11,7 @@ wilt mailen en wij vertellen vervolgens hoe je je DNS moet configureren.
 Het sender domain is de domeinnaam die je gaat gebruiken in je e-mails'.
 
 Stel dat je e-mails wil versturen vanaf adressen die eindigen op 
-"@jouwdomein.com" of "@eenanderdomein.org". Je kunt simpelweg het 
+"@example.com" of "@example.org". Je kunt simpelweg het 
 dashboard gebruiken om domeinen "example.com" en "example.org" 
 op te zetten. Wanneer je dit hebt gedaan geeft SMTPeter een lijst van 
 DNS records terug, die je aan je *DNS provider* kunt geven of op je eigen 
