@@ -66,3 +66,5 @@ that have not you set up a sender domain. If you're using sender domains (which
 we stronly recommend) you can safely ignore these forms. With sender domains all
 your messages are automatically signed, and it is safe to keep the list of DKIM
 keys in the DKIM dialog empty.
+
+[Back to sender domains](./sender-domains)

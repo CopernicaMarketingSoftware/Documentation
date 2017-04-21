@@ -81,3 +81,5 @@ You can use the table above to lookup the recommended advice. If the dashboard
 says that you should create a MX record for "feedback.yourdomain.com" with
 value "0 ms.copernica.nl" you can create CNAME record for 
 "feedback.yourdomain.com" with value "feedback.copernica.com" instead.
+
+[Back to sender domains](./sender-domains)

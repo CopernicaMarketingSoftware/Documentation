@@ -13,7 +13,25 @@ A subselection is a selection within a selection, for example, a selection of pe
 Creating subselections is only possible on profile level; making "subminiselections" is not possible. 
 
 ## Creating selections, subselections and miniselections
-Selections, subselections and miniselections can be added, deleted and managed under *profiles* > *edit selections* in the Marketing Suite. A subselection is created by clicking *create selection* and then assigning it to exist under the selection you want it to. In MarketingSuite, you'll find the *create a first selection* button on the left side of your database, if you haven't got any yet, and the *create (mini)selection* button on the top right if you do.
+
+### Marketing Suite
+
+Selections, subselections and miniselections can be added, deleted and 
+managed under **profiles** > **edit selections** in the Marketing Suite. A 
+subselection is created by clicking *create selection* and then assigning 
+it to exist under the selection you want it to. In MarketingSuite, you'll 
+find the **create a first selection** button on the left side of your database, 
+if you haven't got any yet, and the **create (mini)selection** button on 
+the top right if you do.
+
+### Publisher (old)
+
+It is also possible to make selections in Publisher. Since Marketing Suite 
+and Publisher use the same data any selection made in either program are 
+also accessible in the other program. To add a selection in Publisher 
+go to **Profiles** > **Database management** > **Edit selections...**. 
+Here you can make and edit selections and access their title, description 
+and conditions.
 
 ## Selection rules and conditions
 As stated above, profiles in any kind of selection need to have certain properties in order to belong to a selection. These properties are set in Copernica using *selection rules* and *selection conditions*. There are many options for filtering, from a birthday to clicks in mailings during a certain period of time. It's quite a bit of information, so we've created a separate article explaining it all. You'll find it [here](selections-conditions).
