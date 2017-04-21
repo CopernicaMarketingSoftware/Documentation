@@ -43,7 +43,7 @@ so we get the result "1.33" when we use `{$frac}`.
 
     {assign "height" 1}
     {assign "width" 3}
-    {math equation="x / y" assign="frac" format="%.2f" x=$height y=$width}
+    {math equation="1 + x / y" assign="frac" format="%.2f" x=$height y=$width}
     
 ## More information
 
