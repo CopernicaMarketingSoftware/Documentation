@@ -1,4 +1,4 @@
-# The dominant results of a mailing
+# Statistics: The dominant results of a mailing
 
 This chart provides an overview of the statistics for each mailing. This
 chart only displays the **DOMINANT** result. That means that if a

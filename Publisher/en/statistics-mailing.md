@@ -1,4 +1,4 @@
-# Statistics: Mailing Statistics in Publisher
+# Statistics: Mailing Statistics
 
 Sent your first mailing and wondering how successful it was? Use our
 emailing statistics to find out.
@@ -17,14 +17,12 @@ statistics.
 The statistics for all mailings sent with the application can be found
 in the Emailings section.
 
--   In the menu *Mailings* click ***Statistics**.*
--   Find select your mailing and then click  ‘**Show full statistics
-    report’**.
--   You may use the **filter options** to narrow your search.
+-   Select your mailing/template on the left and click **Statistics**.
+-   Open the full statistics report.
 -   To see the statistics for mailings that have been scheduled for later
 processing, navigate to the **Scheduled tab**.
 
 ## More information
 
-* [Statistics in Publisher](./statistics)
+* [Statistics](./statistics)
 * [Key figures](./statistics-key-figures)

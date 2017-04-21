@@ -3,8 +3,8 @@
 The Copernica server save information about your mailings and your users. 
 This information can be displayed in the Publisher application. Examples 
 of statistics are the number of opens from your mailing and how many new 
-profiles were created. You can also [export](./statistics-export) mailing 
-statistics.
+profiles were created. You can [export statistics in Publisher](./statistics-export) 
+or [export with the REST API](./rest-get-logfiles-names).
 
 ## Individual mailing/template statistics
 
@@ -48,4 +48,5 @@ See [this article](./statistics-share) on sharing statistics.
 
 * [Mailing statistics](./statistics-mailing)
 * [Key figures over a period](./statistics-key-figures)
-* [Mobile mailings](./statistics-mobile-mailing)
+* [Export statistics](./statistics-export)
+* [Export statistics with the REST API](./rest-get-logfiles-names)

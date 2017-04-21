@@ -1,3 +1,5 @@
+# Statistieken: Statistieken delen in Marketing Suite
+
 Trots op de resultaten van je recente e-mailmarketinginspanningen? Deel
 de resultaten van jouw e-mailcampagnes met collega’s, vrienden en wie
 dan ook.
@@ -104,3 +106,9 @@ De impressies in het overzicht laten echter het *dominante
 resultaat* van *unieke impressies* zien. Een enkele ontvanger die de
 e-mail meerdere malen heeft bekeken (en niet op een hyperlink heeft
 geklikt) wordt hier als een enkele impressie geteld.
+
+## Meer informatie
+
+* [Statistieken](./statistics)
+* [Statistieken mailing](./statistics-mailing)
+* [Statistieken exporteren](./statistics-export)

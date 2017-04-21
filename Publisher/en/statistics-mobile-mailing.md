@@ -23,4 +23,4 @@ Mobile messages are also delivered to cellphones that have been
 
 ## More information
 
-* [Statistics in Publisher](./statistics)
+* [Statistics](./statistics)
