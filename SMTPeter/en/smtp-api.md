@@ -35,6 +35,8 @@ it, you will have to create a new password.
 The SMTP configuration is application dependent. We have examples 
 for a couple of well known email programs:
 
+* [Gmail](gmail "Example of setting up Gmail")
+* [Apple mail](applemail "Example of setting up Mozilla Firefox")
 * [Mozilla Thunderbird](thunderbird "Example of setting up Mozilla Thunderbird")
 * [Android email app](android "Example of setting up Android email app")
 * [Postfix](postfix "Example of setting up Postfix")
