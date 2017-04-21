@@ -29,7 +29,7 @@ writable properties to change them as well. The following variables are accessib
 | [**collection**](./followups-scripting-collection)    | Collection (subset of database)      |
 | [**profile**](./followups-scripting-profile)          | Profile                              |
 | [**subprofile**](./followups-scripting-subprofile)    | Subprofile (profile from collection) |
-| [**destination**](./followups-scripting-destination)  | Receiver (profile/subprofile)        |
+| [**destination**](./followups-scripting-destination)  | Alias to profile/subprofile          |
 
 A few of these objects also have [the data object](./followups-scripting-data), 
 which you can use to store your own information regarding the object.
@@ -40,8 +40,7 @@ A possibility of the data-script object is to change a profile when a link
 is clicked. This can be used to place an unsubscribe link that when clicked 
 sets a profile setting such that no more newsletters are send. To place a 
 link like this you can use the following code:
-
-    <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
+<a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 
 While the example above is very simple you can write a lot more complicated 
 data-scripts. This data-script is executed when the link is clicked and 
