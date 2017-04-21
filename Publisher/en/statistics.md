@@ -30,6 +30,12 @@ The account statistics provide information about the usage of the account.
 [This article](./statistics-account) explains more about the account statistics. 
 It is not possible to export this information currently.
 
+## Webpage statistics
+
+If you have a Copernica webpage the behaviour is tracked automatically. 
+To learn more about these statistics you can read the article about it 
+[here](./statistics-webpage)
+
 ## Key figures over a period of time
 
 The *Profiles* menu has a tab called *statistics* where you can find more 
