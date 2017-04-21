@@ -1,3 +1,5 @@
+# Statistics: Sharing with Marketing Suite
+
 You can share the results of your emailing campaigns with colleagues,
 friends, or anyone else that you would like to inform about your recent
 online marketing successes, without needing to give them login
@@ -10,34 +12,32 @@ The document contains information about the **destinations**,
 You can create as many shared documents as you want and share it to the
 whole world if you like. There are no charges involved!
 
-Create a report
----------------
+## Create a report
 
-To create a report, open the statistics you want to share and click on
-‘Share statistics’ in the bottom of the screen. In the dialog that
+Go to **Mailing history** and select your mailing or template. Go to the **Options** 
+tab and view the mailing/template statistics. Click the **Share statistics** 
+button on the top right of the screen. In the dialog that
 appears you can enter a title for the document and an expiration date.
 After the document expires, it will not be available anymore.
 
-You may also email the hyperlink to people to give them access to the
-document. Use a comma to separate multiple email addresses.
+You can also send the hyperlink directly by selecting the "generate URL 
+and send it directly by email" option. Simply enter the recipients, 
+separated by commas, the subject and an optional additional message.
 
 The shared statistics document is a live document. That is, you can
 create the document right after you have sent out your email campaign or
 newsletter. The charts and numbers in the document will always be up to
-date\* when you open / refresh the web page.
+date\* when you open or refresh the web page.
 
 **Note:**To prevent server overload, statistics can walk behind with the
 displaying of errors and impressions.
 
-\
-
-### Who can view / recieve the document
+## Who can view / recieve the document
 
 Anyone can open the document. The document is not indexed by any search
 engine or other crawlers.
 
-Frequently Asked Questions
---------------------------
+## Frequently Asked Questions
 
 #### I only want to share the clicks, not the impressions. Can I compose my own document?
 
@@ -80,3 +80,8 @@ When a destination also clicks on a hyperlink, he will move from
 destinations to the clicks in the waterfall chart.
 
 ![Shared report](../images/sharedreport.png)
+
+## More information
+
+* [Statistics general](./statistics)
+* [Statistics mailing](./statistics-mailing)

@@ -55,8 +55,9 @@ destinations.
 - **Key figures vs. the dominant result**
 In the key figures (above the dominant results) all impressions and clicks 
 are counted, causing a difference with the amount of impressions and clicks 
-in the [dominant result](./the-dominant-results-of-a-mailing)
+in the [dominant result](./statistics-dominant-result)
 
 ## More information
+
 * [Statistics in Publisher](./statistics)
-* [The dominant result per destination](./the-dominant-results-of-a-mailing)
+* [The dominant result per destination](./statistics-dominant-result)
