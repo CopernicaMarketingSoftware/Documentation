@@ -20,5 +20,6 @@ ondersteuning bij het maken van een conditionele enquête.
 
 ## Meer informatie
 
+* [Enquêtes](./surveys)
 * [Enquête aanmaken](./surveys-create)
-* [Vraag types](./surveys-questiontypes)
+* [Vraag types](./surveys-question-types)
