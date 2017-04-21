@@ -19,8 +19,8 @@ alternative.
 
 ## Supported file types
 
-- HTML files: *.html
-- TXT files: *.txt
+* HTML files: *.html
+* TXT files: *.txt
 
 ## More information
 
