@@ -34,6 +34,12 @@ De account statistieken zijn bedoeld om het gebruik van de account the monitoren
 [Dit artikel](./statistics-account) legt uit waar ze te vinden zijn en wat 
 erin staat. Deze informatie kan (nog) niet geëxporteerd worden.
 
+## Webpagina statistieken
+
+Als je een website bij Copernica hebt aangemaakt die actief is wordt er 
+informatie bijgehouden over hoe de gebruikers zich gedragen. Zie 
+[dit artikel](./statistics-webpage) voor meer informatie.
+
 ## Kerncijfers over een periode
 
 Onder *Profielen* kun je een tabje met statistieken vinden. Hier staan 
