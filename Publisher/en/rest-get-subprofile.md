@@ -43,4 +43,3 @@ For this example you need the [CopernicaRestApi class](rest-php).
 * [List of all the API calls](rest-api)
 * [Get only profile IDs](rest-get-database-profileids)
 * [Add subprofile to database](rest-post-database-subprofiles)
-* [Delete subprofile](rest-delete-subprofile)

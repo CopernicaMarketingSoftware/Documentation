@@ -43,5 +43,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [Overwrite profile interests](rest-put-profile-interests)
 * [Creating a profile](rest-post-profile)
 * [Fetch subprofile data](rest-get-subprofile)
-* [Edit a subprofile](rest-put-subprofile)
-* [Remove a subprofile](rest-delete-subprofile)
+* [Edit a subprofile](rest-post-profile-subprofiles)
