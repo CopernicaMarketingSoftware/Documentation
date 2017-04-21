@@ -1,29 +1,30 @@
-# Personalization functions: in_selection
+# Personalizatie functies: in_selection
 
-The *in_selection* function can be used to check if a given profile 
-is in a specific view. This function is developed by Copernica and 
-allows content to be placed specifically for selections in your database. 
-If you run a webshop, you can make selections based on information about 
-the customer and these can be used to personalize. You can, for example, 
-send a woman only women's clothes, or kids clothes too if you know she has kids.
+De *in_selection* functie kan gebruikt worden om te checken of een profiel 
+in een gegeven selectie voorkomt. Deze functie is ontwikkeld door Copernica 
+en je kunt hiermee specifieke content plaatsen voor de selecties in je 
+database. Als je bijvoorbeeld een webshop hebt en genoeg data in je database 
+om een selectie van moeders te maken dan kun je specifiek kinderkleren 
+adverteren in mails naar deze moeders, maar deze bijvoorbeeld niet meesturen 
+in de mails naar alleenstaande mannen.
 
-To execute the function at least a view is required. A profile may 
-be given too, but the function will attempt to retrieve the profile you're 
-personalizing for if it is not specified.
+Om de functie uit te voeren moet er tenminste een selectie meegegeven worden. 
+Als het profiel niet gegeven wordt probeert de functie zelf het profiel 
+op te vragen waarvoor gepersonalizeerd wordt.
 
-## Example
+## Voorbeeld
 
     {if {in_selection selection="womenwithkids"}}
         { Display your content here! }
     {/if}
     
-In this example the [if function](./personalization-functions-if) was used, 
-which pairs with this function very well. If you make yourself familiar 
-with these two functions and making selections you can make very relevant 
-mailings for everyone.
+In dit voorbeeld wordt de [if functie](./personalization-functions-if) 
+gebruikt, die erg nuttig is in combinatie met deze functie. Als je jezelf 
+met deze wijze van personalizatie bekend maakt en genoeg data hebt voor nuttige 
+selecties kun je erg relevante mails sturen naar je klanten.
 
-## More information
+## Meer informatie
 
-* [Personalization](./personalization)
-* [Personalization functions](./personalization-functions)
-* [in_miniselection function](./personalization-functions-in_miniselection)
+* [Personalizatie](./personalization)
+* [Personalizatie functies](./personalization-functions)
+* [in_miniselection functie](./personalization-functions-in_miniselection)

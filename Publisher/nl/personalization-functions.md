@@ -37,7 +37,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 * **[{if}](./personalization-functions-if)**: conditionele blokken
 * **[{in_miniselection}](./personalization-functions-in_miniselection)**: blok dat alleen wordt getoond indien subprofiel tot een miniselectie behoort
 * **[{in_selection}](./personalization-functions-in_selection)**: blok dat alleen wordt getoond indien profiel tot een selectie behoort
-* **[{ldelim}](./personalization-functions-ldelim)**: linkeraccolade
+* **[{ldelim}](./personalization-functions-delim)**: linkeraccolade
 * **[{literal}](./personalization-functions-literal)**: blok markeren waarbinnen accolades mogen worden gebruikt
 * **[{linkemail}](./personalization-functions-linkemail)**: linken naar de webversie van een andere mailing
 * **[{linkfile}](./personalization-functions-linkfile)**: linken naar een file
@@ -49,7 +49,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 * **[{rawcapture}](./personalization-functions-rawcapture)**: als {capture}, maar dan zonder html escaping
 * **[{strip}](./personalization-functions-strip)**: witruimte verwijderen
 * **[{survey}](./personalization-functions-survey)**: inladen van een enquête
-* **[{rdelim}](./personalization-functions-rdelim)**: rechteraccolade
+* **[{rdelim}](./personalization-functions-delim)**: rechteraccolade
 * **[{textformat}](./personalization-functions-textform)**: tekst opmaken
 * **[{unsubscribe}](./personalization-functions-unsubscribe)**: afmeldlink
 * **[{webform}](./personalization-functions-webform)**: inladen van een webformulier
