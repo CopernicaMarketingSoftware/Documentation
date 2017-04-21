@@ -37,7 +37,7 @@ times on two different links this will be registered as three clicks.
 double clicks or different link clicks are not counted.
 
 - **Click through rate:** The percentage of unique clicks from all messages 
-with at least one impression.
+with at least one impression. See [this article](./statistics-ctr) for more information.
 
 - **Total complaints:** A complaint is a spam registration by the client.
 This number displays the amount of times a message was marked as spam by 

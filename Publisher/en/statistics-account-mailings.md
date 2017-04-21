@@ -9,7 +9,7 @@ To view the account statistics, choose **Account emailing
 statistics** from the **Mailings menu**.
 
 **Note**: The account emailing statistics are not the same as the
-account statistics. These statistics can be found in the admin section.
+[account statistics](./statistics-account). These statistics can be found in the admin section.
 
 ## More information
 

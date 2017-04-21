@@ -15,4 +15,4 @@ per month and also visualized in a graph.
 
 ## More information
 
-* [Statistics in Publisher](./statistics)
+* [Statistics](./statistics)

@@ -85,3 +85,4 @@ destinations to the clicks in the waterfall chart.
 
 * [Statistics general](./statistics)
 * [Statistics mailing](./statistics-mailing)
+* [Export statistics](./statistics-export)
