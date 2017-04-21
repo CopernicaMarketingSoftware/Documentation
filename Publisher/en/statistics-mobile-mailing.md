@@ -1,7 +1,8 @@
 # Statistics: Mobile mailing statistics
 
-To see the results of your mobile mailing, go to Mobile \> Mailings \>
-Statistics
+## Publisher
+
+To see the results of your mobile mailing, go to **Mobile** \> **Mailings** \> **Statistics**
 Select a mailing from the top half to see its results in the lower half.
 
 For mobile mailings it is only possible to register whether or not the
@@ -21,4 +22,5 @@ Mobile messages are also delivered to cellphones that have been
 (temporarily) turned off.
 
 ## More information
+
 * [Statistics in Publisher](./statistics)
