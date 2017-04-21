@@ -17,9 +17,12 @@ Echter, de meeste extra functies zoals het registreren van *clicks* en *opens* z
 Om een voorbeeld te geven hoe makkelijk het is om een connectie te maken met SMTPeter, hebben we drie voorbeelden voor je gemaakt 
 voor verschillende e-mailclients.
 
+* [Gmail](gmail "Gmail voorbeeld")
+* [Apple mail](applemail "Apple mail voorbeeld")
 * [Mozilla Thunderbird](thunderbird "Mozilla Thunderbird voorbeeld")
 * [Android email app](android "Android e-mail app voorbeeld")
 * [Postfix](postfix "Postfix voorbeeld")
+
 
 Voordat je een connectie kunt maken met SMTPeter moet je in het dashboard van SMTPeter een SMTP login maken. Bewaar het wachtwoord goed. 
 Intern worden alle wachtwoorden versleuteld door SMTPeter, dus als je het wachtwoord verliest moet je een nieuw wachtwoord aanmaken.
