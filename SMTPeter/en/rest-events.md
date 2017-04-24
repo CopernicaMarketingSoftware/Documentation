@@ -9,7 +9,7 @@ you can use the events rest call. All calls that are supported are:
 ```text
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADDRESS
-https://www.smtpeter.com/v1/events/tamplate/TEMPLATE
+https://www.smtpeter.com/v1/events/template/TEMPLATE
 https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
 ```
 
