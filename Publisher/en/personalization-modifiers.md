@@ -41,7 +41,7 @@ modifiers can be found [on the Smarty website](http://www.smarty.net/docsv2/en/l
 The following modifiers are supported by Copernica:
 
 | Modifier                                                                                           | Description                                                      |
-|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------- |------------------------------------------------------------------|
 | **{$variable\|[base64_encode](./personalization-modifiers-base64_encode.md)}**                     | convert to base64 encoding                                       |
 | **{$variable\|[capitalize](./personalization-modifiers-capitalize.md)}**                           | convert the first letter of each word to uppercase               |
 | **{$variable\|[cat](./personalization-modifiers-cat.md)}**                                         | append text to variable                                          |
@@ -69,6 +69,8 @@ The following modifiers are supported by Copernica:
 | **{$variable\|[regex_replace](./personalization-modifiers-regex_replace.md)}**                     | replace text based on a regular expression                       |
 | **{$variable\|[replace](./personalization-modifiers-replace.md)}**                                 | replace text                                                     |
 | **{$variable\|[sha1](./personalization-modifiers-sha1.md)}**                                       | sha1 hash                                                        |
+| **{$variable\|[sha256](./personalization-mofifiers-sha256.md)}**                                   | sha256 hash                                                      |
+| **{$variable\|[sha512](./personalization-mofifiers-sha512.md)}**                                   | sha512 hash                                                      |
 | **{$variable\|[spacify](./personalization-modifiers-spacify.md)}**                                 | stretch text by adding spaces                                    |
 | **{$variable\|[string_format](./personalization-modifiers-string_format.md)}**                     | printf-like modifier                                             |
 | **{$variable\|[strip](./personalization-modifiers-strip.md)}**                                     | strip whitespace                                                 |

@@ -15,8 +15,7 @@ An unsubscribe contains the following information:
 -   **ID** (int, system field)
 -   **timestamp** (datetime, system field)
 -   **source**(string, the source of the unsubscription)
--   **success** (boolean, indicates whether the unsubscription was
-    successful)
+-   **success** (boolean, indicates whether the unsubscription was successful)
 -   **emailing** (int, id of the emailing)
 -   **destination** (int, id of the destination)
 -   **profile** (int, id of the profile)
@@ -35,13 +34,15 @@ the number of returned unsubscribes.
 Upon a successful request, you will receive a message similar to the
 example below.
 
-```
+```json 
+
 HTTP/1.1 200 OK
 Date: Mon, 10 Feb 2014 12:25:37 GMT
 Server: Apache/2.2.22(Ubuntu)
 X-Powered-By: PHP/5.3.10 - 1ubuntu3.9
 Content-Length: 2059
 Content-Type: application/json
+
 {
     "start":0,
     "limit":100,
@@ -69,7 +70,7 @@ The field on which can be filtered is `timestamp`. The datetime format
 we use is YYYY-MM-DD HH:MM:SS and can look like 2014-08-01 10:40:31.
 With these GET parameters the url of a call could look like this:
 
-```
+```text
 /unsubscribes?fields[]=timestamp==2014-01-01 10:40:31&access_token=...
 ```
 
