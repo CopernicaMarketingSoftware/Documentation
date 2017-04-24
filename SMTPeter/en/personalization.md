@@ -182,7 +182,11 @@ The truth table for OR is:
 E.g. you can use AND like:
 
 ```text
-{if $a >= $b AND $b <= $c}true{else}false{/if}
+{if $a >= $b AND $b <= $c}
+    true
+    {else}
+    false
+{/if}
 ```
 
 In the above snippet first `$a >= $b` will be tested. Only if this is true,
@@ -265,10 +269,10 @@ This will allow you to do things like the following.
 
 ```text
 {foreach $item in $list}
-{assign $total + $item.price to $total}
-{if $item.price > $topitem.price}
-{assign $item to $topitem}
-{/if}
+    {assign $total + $item.price to $total}
+    {if $item.price > $topitem.price}
+        {assign $item to $topitem}
+    {/if}
 {/foreach}
 ```
 
@@ -314,7 +318,9 @@ variable and there are some spaces in front of it used as indentation.
 To get a list of the names without the extra whitespace you should write:
 
 ```text
-{foreach $player in $soccerTeam}{$player}{/foreach}
+{foreach $player in $soccerTeam}
+    {$player}
+{/foreach}
 ```
 This is less readable but gives what you want:
 
