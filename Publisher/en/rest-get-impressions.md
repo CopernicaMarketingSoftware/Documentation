@@ -38,7 +38,6 @@ the following properties:
 * **profile**: Optional numeric profile identifier
 * **subprofile**: Optional numeric subprofile identifier
 
-
 ## PHP example
 
 The following PHP script can be used to call this method:
@@ -59,7 +58,6 @@ The following PHP script can be used to call this method:
 
 You need the [CopernicaRestApi class](./rest-php.php) to run this example.
     
-
 ## More information
 
 * [Overview of API calls](./rest-api.md)

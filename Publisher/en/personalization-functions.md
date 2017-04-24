@@ -29,8 +29,8 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 |------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | **[{assign}](./personalization-functions-assign)**                     | Assign a value to a variable                                             |
 | **[{capture}](./personalization-functions-capture)**                   | Capture blocks and store in a variable                                   |
-| **[{condition}](./personalization-functions-condition)**               | Conditional block based on a javascript expression                       |
-| **[{counter}](./personalization-functions-counter)**                   | Incrementing counter                                                     |
+| **[{condition}](./personalization-functions-condition)**               | Conditional block based on a JavaScript expression                       |
+| **[{counter}](./personalization-functions-counter)**                   | Counter (ascending/descending)                                           |
 | **[{cycle}](./personalization-functions-cycle)**                       | Cycle between two values                                                 |
 | **[{feed}](./personalization-functions-feed)**                         | Load an external RSS feed                                                |
 | **[{fetch}](./personalization-functions-fetch)**                       | Import externally hosted content                                         |
@@ -56,4 +56,7 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 | **[{webform}](./personalization-functions-webform)**                   | Render a webform                                                         |
 | **[{webonly}](./personalization-functions-webonly)**                   | Mark text that is only rendered on the web (not in an email)             |
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization modifiers](./personalization-modifiers)

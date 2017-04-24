@@ -37,7 +37,6 @@ parameter *order* geven:
 * **random**: de subprofielen worden in willekeurige volgorde teruggegeven
 * **modified**: de subprofielen worden gesorteerd op basis het *modified* timestamp.
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van subprofielen. Voor elk subprofiel worden de 

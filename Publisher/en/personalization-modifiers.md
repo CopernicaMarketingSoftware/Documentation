@@ -88,4 +88,7 @@ The following modifiers are supported by Copernica:
 | **{$variable\|[urlencode](./personalization-modifiers-urlencode.md)}**                             | encode variable to be usable in url                              |
 | **{$variable\|[wordwrap](./personalization-modifiers-wordwrap.md)}**                               | wrap long texts over multiple lines                              |
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization functions](./personalization-functions)

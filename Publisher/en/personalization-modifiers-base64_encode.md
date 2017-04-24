@@ -16,8 +16,8 @@ convert it to base 64.
     
 The result looks like this:
 
-        01010101010011
-        MDEwMTAxMDEwMTAwMTE
+    01010101010011
+    MDEwMTAxMDEwMTAwMTE
 
 ## More information
 

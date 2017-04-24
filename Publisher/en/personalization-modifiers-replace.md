@@ -27,8 +27,8 @@ sentence above.
     
 The output looks like this:
 
-        I  am a  messy  sentence.
-        I am a neat sentence.
+    I  am a  messy  sentence.
+    I am a neat sentence.
 
 ## More information
 

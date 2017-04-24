@@ -14,6 +14,8 @@ The following parameters can be added to the URL as variables:
 - **limit**: length of the requested batch
 - **total**: whether or not the total number of collections should be counted
 
+More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
+
 ## Returned fields
 
 The method returns a list of collections in the database. For each collection, the following properties are displayed:
