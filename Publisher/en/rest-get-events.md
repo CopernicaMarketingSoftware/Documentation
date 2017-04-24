@@ -133,7 +133,6 @@ https://api.copernica.com/v1/events/email/$email?access_token=xxxx
 ```
 where `$email` is the address you are interested in
 
-
 ## Events based on tags
 
 If you want to retrieve all information about one tag, you can make a get
