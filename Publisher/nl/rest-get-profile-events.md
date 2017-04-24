@@ -8,7 +8,6 @@ call naar de volgende URL sturen.
 De `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvoor je de gebeurtenissen wilt hebben.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -16,6 +15,9 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
+
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
 
 ### Start en end
 

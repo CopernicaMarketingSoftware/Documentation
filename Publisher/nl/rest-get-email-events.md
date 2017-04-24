@@ -16,6 +16,9 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
 
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
+
 ### Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
@@ -35,7 +38,6 @@ maand gewijzigd kan worden als als de performance dit vereist.
 Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
 op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
 je meerdere tags gescheiden door puntkomma's opgeven.
-
 
 ## Geretourneerde informatie
 
@@ -60,7 +62,6 @@ ziet er als volgt uit:
 ]
 ```
 
-
 ## PHP Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -81,7 +82,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
-
-## More information## Meer informatie
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

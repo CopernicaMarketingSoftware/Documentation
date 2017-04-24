@@ -11,7 +11,7 @@ collectie waar je de ID's van wilt opvragen.
 
 ## Beschikbare parameters
 
-Deze methode ondersteunt geen parameters
+Deze methode ondersteunt geen parameters.
 
 ## Geretourneerde velden
 

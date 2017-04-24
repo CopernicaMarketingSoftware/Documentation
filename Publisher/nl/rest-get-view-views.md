@@ -9,7 +9,6 @@ volgende URL sturen:
 De code `$id` moet je vervangen door de numerieke identifier van de selectie 
 waarvan je de geneste selecties wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -35,7 +34,6 @@ worden de volgende eigenschappen teruggegeven:
 * **has-children**: boolean waarde; heeft deze selectie geneste selecties onder zich?
 * **has-referred**: boolean waarde; zijn er andere selecties die verwijzen naar deze selectie?
 * **has-rules**: boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
-
 
 ## Voorbeeld in PHP
 
