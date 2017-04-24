@@ -8,7 +8,7 @@ clicks etc. De statistieken bevatten ook een tabel met [kerncijfers](./statistic
 
 ## Marketing Suite
 
-Ga naar je **mailing geschiedenis** en selecteer je document. 
+Ga naar je **Mailing Geschiedenis** en selecteer je document. 
 Ga naar het tabje **Opties** en open de volledige rapportage of de rapportage 
 over de template die gebruikt is.
 
