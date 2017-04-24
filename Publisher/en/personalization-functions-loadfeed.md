@@ -21,7 +21,7 @@ Load in external feeds
 ----------------------
 
 Of course it's also possible to publish external RSS and atom feeds
-in yout documents: 
+in your documents: 
 
 `{loadfeed feed='http://www.example.com/feed/feed.xml'}`
 
