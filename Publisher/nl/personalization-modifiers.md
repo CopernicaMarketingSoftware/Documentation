@@ -49,7 +49,7 @@ De volgende modifiers worden door Copernica ondersteund:
 | **{$variable\|[count_paragraphs](./personalization-modifiers-count_paragraphs.md)}**               | aantal paragrafen in een string                                        |
 | **{$variable\|[count_sentences](./personalization-modifiers-count_sentences.md)}**                 | aantal zinnen in een string                                            |
 | **{$variable\|[count_words](./personalization-modifiers-count_words.md)}**                         | aantal woorden in een string                                           |
-| **{$variable\|[date_format](./personalization-modifiers-date_format.md)}**                         | opmaken van een datum                                                  |
+| **{$variable\|[date_format](./personalization-modifiers-date_format.md)}**                         | formatteren van een datum                                                  |
 | **{$variable\|[default](./personalization-modifiers-default.md)}**                                 | standaardwaarde indien een variabele niet bestaat                      |
 | **{$variable\|[escape](./personalization-modifiers-escape.md)}**                                   | scripts en html code filteren                                          |
 | **{$variable\|[explode](./personalization-modifiers-explode.md)}**                                 | string opsplitsen en converteren naar een array                        |
@@ -63,7 +63,7 @@ De volgende modifiers worden door Copernica ondersteund:
 | **{$variable\|[md5](./personalization-modifiers-md5.md)}**                                         | tekst omzetten naar een md5 hash                                       |
 | **{$variable\|[nl2br](./personalization-modifiers-nl2br.md)}**                                     | newlines in de tekst omzetten naar &lt;bt/&gt; tags                    |
 | **{$variable\|[number_format](./personalization-modifiers-number_format.md)}**                     | getal opmaken                                                          |
-| **{$variable\|[rand](./personalization-modifiers-rand.md)}**                                       | random nummer maken                                                    |
+| **{$variable\|[rand](./personalization-modifiers-rand.md)}**                                       | random nummer genereren                                                    |
 | **{$variable\|[regex_replace](./personalization-modifiers-regex_replace.md)}**                     | tekst filteren aan de hand van een reguliere expressie                 |
 | **{$variable\|[replace](./personalization-modifiers-replace.md)}**                                 | tekst vervangen                                                        |
 | **{$variable\|[sha1](./personalization-modifiers-sha1.md)}**                                       | bereken de sha1 hash van een variable                                  |
@@ -84,5 +84,8 @@ De volgende modifiers worden door Copernica ondersteund:
 | **{$variable\|[urlencode](./personalization-modifiers-urlencode.md)}**                             | variabele omzetten zodat die in een url kan worden gebruikt            |
 | **{$variable\|[wordwrap](./personalization-modifiers-wordwrap.md)}**                               | automatisch newlines toevoegen aan tekst                               |
                                                                                                                                                                         
-[Terug naar personalizatie](./personalization)                                                                                                                               
+## Meer informatie
+
+* [Personalizatie](./personalization)        
+* [Personalizatie functies](./personalization-functions)                                                                                                               
                                                                                                                                                                             
