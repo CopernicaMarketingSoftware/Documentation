@@ -2,7 +2,7 @@
 * [Snel aan de slag](./quick-start-guide.md)
     * [Afzenderdomain instellen](./quick-sender-domain-guide.md)
     * [Database inrichten](./quick-database-guide.md)
-    * [Je eerste drag-n-drop mail](./quick-mailing-guide.md)
+    * [Je eerste mailing](./quick-mailing-guide.md)
 * [Accounts en gebruikers](./accounts-and-users.md)
 * [Databasebeheer](./database-introduction.md)
     * [Velden en collecties](./database-fields-and-collections.md)

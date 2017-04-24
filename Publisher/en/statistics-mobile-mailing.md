@@ -1,10 +1,5 @@
 # Statistics: Mobile mailing statistics
 
-## Publisher
-
-To see the results of your mobile mailing, go to **Mobile** \> **Mailings** \> **Statistics**
-Select a mailing from the top half to see its results in the lower half.
-
 For mobile mailings it is only possible to register whether or not the
 message was successfully delivered to the Telecom gateway. These will be
 registered as 'success'. When sending the messages, the application
@@ -21,6 +16,17 @@ international coding.
 Mobile messages are also delivered to cellphones that have been
 (temporarily) turned off.
 
+## Marketing Suite
+
+In Marketing Suite you can find the results in the same spot as any other 
+[mailing results](./statistics-mailing).
+
+## Publisher
+
+To see the results of your mobile mailing, go to **Mobile** \> **Mailings** \> **Statistics**
+Select a mailing from the top half to see its results in the lower half.
+
 ## More information
 
 * [Statistics](./statistics)
+* [Mailing results](./statistics-mailing)

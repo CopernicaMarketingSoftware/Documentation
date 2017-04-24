@@ -8,8 +8,8 @@ clicks etc. The statistics also include a table of [key figures](./statistics-ke
 
 ## Marketing Suite
 
-Go to your **mailing history** and select your document or template. Go 
-to the options tab and open the *full report* or *template stats* to view the 
+Go to your **Mailing History** and select your document or template. Go 
+to the options tab and click *Full report* or *View template stats* to view the 
 statistics.
 
 ## Publisher

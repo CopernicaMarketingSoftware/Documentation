@@ -6,10 +6,6 @@ in one go, or to export only parts of the database, for example one collection
 at a time. An export creates a file that you can download or you can have it
 emailed to your addres.
 
-The export dialog window can be found in the 'profiles' section from the Marketing Suite. 
-Check the "Current view" menu and look for "import/export" data dialog.
-
-
 ## Extra remarks
 
 * The fields *ID*, *Access code* and *Profile created* are system fields.
@@ -30,13 +26,19 @@ to prevent conflicts with the delimiter.
 
 ## Exporting email results
 
-You can also export the results of mailings. In the "Mailings" section of 
-Pubisher you find a "Export" options. Choose the data you want to export
-(destinations, impressions, clicks, errors) en the (sub)profile fields
-you like to have in your export. You will be guided through a couple of
-extra form dialogs based on the selected options and fields
+You can also export the results of mailings. See [this article](./statistics-export) 
+for more information.
 
 To export profiles or subprofiles based on results of email campaigns (like 
 exporting all profiles that clicked last week), you first have to create the 
 appropriate selection. After you built this selection, you can start the 
 export dialog to export the profiles from this selection. 
+
+## Exporting in Publisher
+
+To export a database or collection you should select in under **Profiles** 
+and find the options to import/export under **Current view**.
+
+## Exporting in Marketing Suite
+
+It is not (yet) possible to export with Marketing Suite.
