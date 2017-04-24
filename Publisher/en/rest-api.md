@@ -73,6 +73,8 @@ GET methods are used to fetch data. The following GET methods are available:
 | GET       | [api.copernica.com/v1/template/$id/events](./rest-get-template-events)                                    | Fetch MS template events                |
 | GET       | [api.copernica.com/v1/old/template/$id/events](./rest-get-old-template-events)                            | Fetch Publisher template events         |
 
+See also the [general article on events](./rest-get-events).
+
 ### **PUT & POST**
 
 PUT and POST methodes are used to create and edit data. They are often 

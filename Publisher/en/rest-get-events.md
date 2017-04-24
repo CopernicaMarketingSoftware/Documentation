@@ -1,4 +1,4 @@
-# Get all events for a given characteristic
+# REST API: Get all events for a given characteristic
 
 ```text
 https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
@@ -81,7 +81,6 @@ you can make a get request to:
 https://api.copernica.com/v1/events/email/$email?access_token=xxxx
 ```
 where `$email` is the address you are interested in
-
 
 ## Events based on tags
 

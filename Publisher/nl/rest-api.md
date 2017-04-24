@@ -72,6 +72,8 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/template/$id/events](./rest-get-template-events)                                        | Opvragen MS template events                       |
 | GET       | [api.copernica.com/v1/old/template/$id/events](./rest-get-old-template-events)                                | Opvragen Publisher template events                |
 
+Zie ook het [algemene artikel over events](./rest-get-events).
+
 ### **PUT & POST**
 
 PUT en POST methodes worden gebruikt om data aan te maken en aan te passen. 
