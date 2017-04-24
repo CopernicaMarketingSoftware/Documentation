@@ -62,6 +62,15 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv.md)                                             | Downloaden van logfile in CSV formaat             |
 | GET       | [api.copernica.com/v1/logfiles/$name/json](./rest-get-logfiles-json.md)                                       | Downloaden van logfile in JSON formaat            |
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml.md)                                         | Downloaden van logfile in XML formaat             |
+| GET       | [api.copernica.com/v1/email/$addres/events](./rest-get-email-events)                                          | Opvragen email events                             |
+| GET       | [api.copernica.com/v1/message/$id/events](./rest-get-message-events)                                          | Opvragen MS bericht events                        |
+| GET       | [api.copernica.com/v1/old/message/$id/events](./rest-get-old-message-events)                                  | Opvragen Publisher bericht events                 |
+| GET       | [api.copernica.com/v1/old/document/$id/events](./rest-get-old-document-events)                                | Opvragen Publisher document events                |
+| GET       | [api.copernica.com/v1/profile/$id/events](./rest-get-profile-events)                                          | Opvragen profiel events                           |
+| GET       | [api.copernica.com/v1/subprofile/$id/events](./rest-get-subprofile-events)                                    | Opvragen subprofiel events                        |
+| GET       | [api.copernica.com/v1/tags/$tag/events](./rest-get-tags-events)                                               | Opvragen tag events                               |
+| GET       | [api.copernica.com/v1/template/$id/events](./rest-get-template-events)                                        | Opvragen MS template events                       |
+| GET       | [api.copernica.com/v1/old/template/$id/events](./rest-get-old-template-events)                                | Opvragen Publisher template events                |
 
 ### **PUT & POST**
 
