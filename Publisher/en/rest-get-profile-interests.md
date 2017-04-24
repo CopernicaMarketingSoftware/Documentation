@@ -1,16 +1,40 @@
 # REST API: request interests from profile
 
-To request the interests from a profile you can send an HTTP GET
-request to the following URL:
+There are several different ways to request the interests of a profile. 
+Which method is best depends on how you want to use it. You can request 
+a list of interest names, interest ID's or an array of JSON objects.
+
+Please remember that $id should always be replaced with the numerical 
+identifier of the profile you're requesting the interests of.
+
+## List of interest names
+
+A list of interest names can be requested by sending an HTTP GET request 
+to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the profile 
-you're requesting the interests of.
+The call returns a simple list of the names of interests. You could 
+use this in code to check if a user has a certain interest.
 
-## Returned interests
+## List of interest ID's
 
-This method returns an array of JSON interests of a profile. Each JSON interest object has the following properties:
+A list of interest ID's can be requested by sending an HTTP GET request 
+to the following URL:
+
+`https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx&return=ids`
+
+The call returns a simple list of the ID's of interests. You could use this 
+to request the interests themselves.
+
+## Array of objects
+
+A list of JSON interest objects can be requested by sending an HTTP GET request 
+to the following URL:
+
+`https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx&return=objects`
+
+Each returned object in the array has the following properties:
 
 - **ID**: numerical ID of the interest
 - **name**: the name of the interest

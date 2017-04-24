@@ -1,3 +1,5 @@
+# Unsubscribes
+
 All unsubscribes in an account can be retrieved with the /unsubscribes
 method.
 
@@ -80,4 +82,3 @@ With these GET parameters the url of a call could look like this:
 -   [PHP example scripts for POST, GET and DELETE
     requests](./example-get-post-and-delete-requests.md)
 -   [REST API resources / methods](./the-copernica-rest-api.md)
-
