@@ -1,6 +1,6 @@
-# Follow up manager
+# Follow-Up Manager for Publisher
 
-The follow-up manager provides a handy overview of all follow-ups that
+The Follow-Up Manager provides a handy overview of all follow-ups that
 are linked to a database, document, form or survey. Also, from here you
 manage all follow-ups. You can create new follow-ups and edit or remove
 existing follow-ups.
@@ -9,7 +9,7 @@ existing follow-ups.
 
 ***Image:** database with multiple collections and their follow-ups.*
 
-The follow-up manager is located behind an additional tab at the
+The Follow-Up Manager is located behind an additional tab at the
 database, form, document, or survey.
 
 ![](../images/follow-up-tab.png)
@@ -38,3 +38,8 @@ or edit existing follow-up actions.
 ![](../images/edit-follow-up.png)
 
 ***Image:** editing the settings of the follow-up*
+
+## More information
+
+* [Follow-ups](./followups)
+* [Follow-Up Manager](./follow-up-manager)

@@ -39,7 +39,11 @@ need special care:
 
 * Keep it safe and always escape your variables
 * Smarty is *case sensitive*. {$name} does not equal {$NAME}.
-* If you want to use curly brackets, you have to use {ldelim} and {rdelim}
+* If you want to use curly brackets as symbols you should use [literal](./personalization-functions-literal), 
+[rdelim and ldelim](./personalization-functions-delim) or spaces around the 
+bracket in Smarty 3. 
+
+The rest of this article will help you follow these guidelines.
 
 ## Escaping variables
 
