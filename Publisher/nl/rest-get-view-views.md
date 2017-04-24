@@ -21,7 +21,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van selecties. Voor elke selectie
