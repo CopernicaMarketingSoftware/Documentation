@@ -1,16 +1,35 @@
 # Feedback loops
 
-The dashboard in MarketingSuite allows you to configure *feedback loops*. Feedback loops are processes that are triggered whenever a certain event happens, such as a click or an open, and report it to the user in real time via HTTP POST.
+The dashboard in MarketingSuite allows you to configure *feedback loops*. 
+Feedback loops are processes that are triggered whenever a certain event 
+happens, such as a click or an open, and report it to the user in real 
+time via HTTP POST. Please note that they are not available in Publisher.
 
-You could use this if you want to update data in your own application upon certain events Copernica picks up. To achieve this, place a script on your own server that executes upon Copernica's calls, and in the MarketingSuite dashboard, set the triggers. That is all!
+You could use this if you want to update data in your own application 
+upon certain events Copernica picks up. To achieve this, place a script 
+on your own server that executes upon Copernica's calls, and in the 
+MarketingSuite dashboard, set the triggers. That is all!
 
 <!--
-The good thing about feedback loops is that the data Copernica sends you is a lot richer than the data Copernica receives in the first place. All Copernica sees when receiving a click or open is the IP addresss and HTTP headers of the incoming request. To that, we add the e-mail address, profile data and the linked tags and send it to you. This way, your script receives the data that makes it easy to link the data to data in your own system.-->
+The good thing about feedback loops is that the data Copernica sends 
+you is a lot richer than the data Copernica receives in the first place. 
+All Copernica sees when receiving a click or open is the IP addresss and 
+HTTP headers of the incoming request. To that, we add the e-mail address, 
+profile data and the linked tags and send it to you. This way, your 
+script receives the data that makes it easy to link the data to data 
+in your own system.-->
 
 ## Microsoft's, Gmail's and Yahoo's feedback loops
-If you've been around for a while in the email marketing business, you might know about the feedback loops ESP's like Microsoft and Gmail offer. These, however, are different feedback loops than the ones described in this article.
+If you've been around for a while in the email marketing business, 
+you might know about the feedback loops ESP's like Microsoft and Gmail 
+offer. These, however, are different feedback loops than the ones 
+described in this article.
 
-Feedback loops from ESP's are used to notify senders (like Copernica) when users hit the "this is spam"-button or interact with the email otherwise. These loops send feedback from the ESP to us, whereas the feedback loops we offer are from us to you. Contrary to the ESP feedback loops, ours are non-aggregated and sent in real-time.
+Feedback loops from ESP's are used to notify senders (like Copernica) 
+when users hit the "this is spam"-button or interact with the email 
+otherwise. These loops send feedback from the ESP to us, whereas the 
+feedback loops we offer are from us to you. Contrary to the ESP feedback 
+loops, ours are non-aggregated and sent in real-time.
 
 ## Watch out!
 
@@ -23,8 +42,11 @@ If you're not sure whether your server can handle the load, or when you do
 not need realtime feedback, you better use the [general statistics](statistics).
 
 ## Setting up a feedback loop
+
 Setting up a feedback loop happens from the Marketing Suite dashboard.
-In the *configuration* menu, you can fill in the address the HTTP POST call is sent to. It's pretty self explanatory: select the events you're interested in and provide the location of your script.
+In the **Feedback Loops** menu, you can fill in the address the HTTP POST 
+call is sent to in the **manage** menu. It's pretty self explanatory: 
+select the events you're interested in and provide the location of your script.
 
 The following feedback loops can be used:
 * [Feedback loops for bounces](feedback-bounces)

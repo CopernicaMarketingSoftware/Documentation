@@ -24,7 +24,6 @@ get signed, and Copernica ensures that your public key is correctly
 published in DNS. We also refresh your keys once a month, to make it hard 
 for outsiders to crack your keys. 
 
-
 ## Multiple signatures
 
 If you inspect the source code of a message that was sent with Copernica, you'll
@@ -52,19 +51,20 @@ happens here. Gmail uses both signatures: the normal one to check if the message
 did indeed come from the sender, and the second one to check whether it is ok
 to send a report back to Copernica. 
 
-
-## Managing DKIM keys with Copernica Publisher
+## (Automatically) managing DKIM keys with Copernica Software
 
 Before we introduced sender domains, Copernica users had to manage their own
 DKIM keys. Users had to manually store (copy-paste) the public keys in DNS, 
 and they had to rotate their keys once in a while. The new sender domain
-technology makes this manual editing obsolute: it all happens automatically.
+technology makes this manual editing obsolete: it all happens automatically.
 
 However, in the old Publisher environment you can still find some leftover forms
 and dialog windows to manage DKIM keys. These forms are still used by users
-that have not you set up a sender domain. If you're using sender domains (which
-we stronly recommend) you can safely ignore these forms. With sender domains all
-your messages are automatically signed, and it is safe to keep the list of DKIM
+that have not you set up a sender domain, which we strongly recommend.
+
+When using a sender domain you can safely ignore these forms in both 
+Marketing Suite and Publisher. With sender domains all your messages are 
+automatically signed, and it is safe to keep the list of DKIM
 keys in the DKIM dialog empty.
 
 [Back to sender domains](./sender-domains)

@@ -2,7 +2,7 @@
 
 With this user friendly tool, you can easily create advanced and powerful follow up actions for your campaigns. 
 This tool is fully integrated within the template editor so you can easily make personal and advanced 
-follow up actions within the Marketing Suite. You can use the follow up manager if you select an element 
+follow up actions within the Marketing Suite. You can use the Follow-Up Manager if you select an element 
 that can also be a link, like for example a button, video or image. The follow up actions only work when 
 a destination link is specified. 
 

@@ -1,6 +1,6 @@
 # REST API: Opvragen van events bij een email adres
 
-Als je events bij een email adres wilt downloaden, dan kun je die opvragen
+Als je events voor een email adres wilt downloaden, dan kun je die opvragen
 door middel van een eenvoudige HTTP GET call naar de volgende URL:
 
 `https://api.copernica.com/v1/email/$adres/events?access_token=xxxx`

@@ -1,4 +1,4 @@
-# Enquêtes
+# Enquêtes in Publisher
 
 Nieuwsgierig naar de mening van je klanten over jouw product of dienst?
 Met de enquêtemodule maak je je eigen enquêtes in een handomdraai. De
@@ -8,6 +8,14 @@ in Copernica de antwoorden van individuele relaties.
 De enquêtemodule is te vinden in het onderdeel **Content**. Vanuit het
 menu **Enquête** kan je een nieuwe enquête aanmaken. Bestaande enquêtes
 zijn terug te vinden in het linkeroverzicht.
+
+Let op: Het is op het moment (nog) niet mogelijk enquêtes te maken in 
+Marketing Suite.
+
+## Enquêtes maken
+
+Hier vindt je een aantal artikelen die je op weg helpen met het maken 
+van je enquêtes:
 
 -   [Een nieuwe enquête
     maken](./surveys-create)

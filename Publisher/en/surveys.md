@@ -1,4 +1,4 @@
-# Surveys
+# Surveys in Publisher
 
 Customers have an opinion. About politics, and Justin Bieber's haircut.
 Or about your product or service. Use the Copernica survey module to
@@ -10,6 +10,8 @@ an Excel file. You can also lookup the answers given by a specific
 respondent in your Copernica database. For tips on good data gathering 
 please see our article on 
 [avoiding data corruption](./database-marketing-and-web-surveys-avoid-corruption.md)
+
+Please note that it is not (yet) possible to make surveys in Marketing Suite.
 
 ## Creating surveys
 

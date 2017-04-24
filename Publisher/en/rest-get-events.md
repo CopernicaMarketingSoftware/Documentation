@@ -38,11 +38,10 @@ The `type` in the JSON describes which type of record it is. The types that
 are available are listed in the tables below. The data that these types
 contain are described on the page of the particular log file.
 
-
 | Marketing Suite Event Type            | Description                                                 |
 | ------------------------------------- | ----------------------------------------------------------- |
 | [attempt](./cdm-attempts-logfile.md)  | General info about mails sent with Marketing Suite (MS)     |
-| [abuse](./cdm-abuse-logfile.md)       | Info about mails sent via MS that triggered an notification |
+| [abuse](./cdm-abuse-logfile.md)       | Info about mails sent via MS that triggered a notification |
 | [click](./cdm-click-logfile.md)       | Info about clicks generated from mails sent with MS         |
 | [delivery](./cdm-delivery-logfile.md) | Info about delivered mails sent with MS                     |
 | [error](./cdm-error-logfile.md)       | Info about mails sent with MS that triggered an error       |
@@ -54,7 +53,7 @@ contain are described on the page of the particular log file.
 | Publisher Event Type                         | Description                                                        |
 | -------------------------------------------- | ------------------------------------------------------------------ |
 | [attempt](./pom-attempts-logfile.md)         | General info about mails sent with Publisher                       |
-| [abuse](./pom-abuses-logfile.md)             | Info about mails sent via Publisher that triggered an notification |
+| [abuse](./pom-abuses-logfile.md)             | Info about mails sent via Publisher that triggered a notification |
 | [click](./pom-clicks-logfile.md)             | info about clicks generated from mails sent with Publisher         |
 | [delivery](./pom-deliveries-logfile.md)      | Info about delivered mails sent with Publisher                     |
 | [error](./pom-errors-logfile.md)             | Info about failed mails sent with Publisher                        |
@@ -101,12 +100,6 @@ https://www.smtpeter.com/v1/events/tags/TAG1/TAG2/TAG3/...
 The returned JSON will only contain information for messages that have
 all tags set.
 
+## More information
 
-
-
-
-https://api.copernica.com/v1/events/tags/$tag1/$optionaltag2/$optionaltag3/...?access_token=xxxx
-https://api.copernica.com/v1/events/profile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/subprofile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/template/$id?access_token=xxxx
-https://api.copernica.com/v1/events/document/$id?access_token=xxxx
+* [REST API](./rest-api)

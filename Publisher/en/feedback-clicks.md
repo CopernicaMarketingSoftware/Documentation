@@ -55,4 +55,5 @@ The "id", "recipient" and "tags" variables allow you to link the click to the
 originally sent email message.
 
 ## More information
-[Feedback loops](./feedback-loops)
+
+* [Feedback loops](./feedback-loops)

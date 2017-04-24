@@ -1,3 +1,8 @@
+# Selections Tutorial: Automatically process bounces
+
+NOTE: This tutorial is written for Publisher users. A tutorial for 
+Marketing Suite is not (yet) available.
+
 When delivering an e-mail, various errors can occur. For example, an
 e-mail address no longer exists, or the email address may have never
 existed at all.
