@@ -40,8 +40,8 @@ explanation of the workings of these modifiers, and a list of all built-in
 modifiers can be found [on the Smarty website](http://www.smarty.net/docsv2/en/language.modifiers.tpl).
 The following modifiers are supported by Copernica:
 
-| Modifier                                                                                          | Description                                                      |
-|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| Modifier                                                                                           | Description                                                      |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | **{$variable\|[base64_encode](./personalization-modifiers-base64_encode.md)}**                     | convert to base64 encoding                                       |
 | **{$variable\|[capitalize](./personalization-modifiers-capitalize.md)}**                           | convert the first letter of each word to uppercase               |
 | **{$variable\|[cat](./personalization-modifiers-cat.md)}**                                         | append text to variable                                          |
@@ -55,7 +55,7 @@ The following modifiers are supported by Copernica:
 | **{$variable\|[default](./personalization-modifiers-default.md)}**                                 | use default value in case a variable is empty                    |
 | **{$variable\|[escape](./personalization-modifiers-escape.md)}**                                   | filter out scripts and html                                      |
 | **{$variable\|[explode](./personalization-modifiers-explode.md)}**                                 | split string into parts                                          |
-| **{$variable\|[htmlspecialchars_decode](./personalization-modifiers-htmlspecialchars_decode.md)}** | reverse of escape: bring back an escaped string to html         |
+| **{$variable\|[htmlspecialchars_decode](./personalization-modifiers-htmlspecialchars_decode.md)}** | reverse of escape: bring back an escaped string to html          |
 | **{$variable\|[html_entity_decode](./personalization-modifiers-html_entity_decode.md)}**           | html entities weer terugbrengen oorspronkelijke tekens           |
 | **{$variable\|[http_build_query](./personalization-modifiers-http_build_query.md)}**               | convert variable to a query string                               |
 | **{$variable\|[indent](./personalization-modifiers-indent.md)}**                                   | indent text with spaces                                          |
@@ -86,4 +86,7 @@ The following modifiers are supported by Copernica:
 | **{$variable\|[urlencode](./personalization-modifiers-urlencode.md)}**                             | encode variable to be usable in url                              |
 | **{$variable\|[wordwrap](./personalization-modifiers-wordwrap.md)}**                               | wrap long texts over multiple lines                              |
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization functions](./personalization-functions)
