@@ -1,5 +1,4 @@
-Accounts en gebruikers
-======================
+# Accounts en gebruikers
 
 In de module gebruikersbeheer kun je een aantal gegevens wijzigen - zoals je bedrijfsnaam of je 
 emailadres en wachtwoord - en nieuwe logins voor collega's aanmaken. Ook kun je
@@ -13,8 +12,7 @@ enerzijds gebruiken voor hun eigen marketingcampagnes, maar ook toegang moeten
 hebben om mee te kunnen kijken met hun klanten. Om dit mogelijk te maken, maken we 
 in het gebruikersbeheer onderscheid tussen "gebruikers", "accounts" en "bedrijven".
 
-Accounts en bedrijven
----------------------
+## Accounts en bedrijven
 
 Zoals beschreven onderscheiden we gebruikers en accounts, en bestaat er eigenlijk
 altijd een relatie tussen een account en een bedrijf-in-de-echte-wereld. De meeste 
@@ -43,10 +41,9 @@ relaties kunnen met worden gelegd. In het gebruikersbeheer kun je, afhankelijk
 van je toegangsrechten, allemaal van dit soort relaties aanmaken. 
 
 
-Hoe werkt dit in de praktijk?
------------------------------
+## Hoe werkt dit in de praktijk?
 
-In de Marketing Suite kun je gebruikers, accounts en bedrijfsgegevens beheren. 
+In de Marketing Suite of Publisher kun je gebruikers, accounts en bedrijfsgegevens beheren. 
 Je kan gebruikers koppelen aan bedrijven en ook gebruikers koppelen aan accounts. 
 Als je een "gewone gebruiker" bent (dat wil zeggen je gebruikt een enkel account waar je samen met een paar collega's toegang toe hebt), dan kan dit soms wat dubbelop lijken. Je moet twee lijsten beheren, 
 namelijk een lijst van collega's en een lijsten van mensen met toegang tot het account. 
