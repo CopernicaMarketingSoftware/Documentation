@@ -9,7 +9,8 @@ ontvangers van de mailing. Per onderdeel wordt beknopt uitgelegd wat de
 cijfers betekenen. 
 
 Je kunt zo vaak en zo vaak als je wilt van deze functionaliteit gebruik
-maken. Er zijn geen speciale kosten aan verbonden!
+maken. Er zijn geen speciale kosten aan verbonden! Deze functionaliteit 
+is echter alleen te gebruiken in Marketing Suite.
 
 Rapport maken
 -------------

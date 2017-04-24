@@ -1,7 +1,7 @@
-# Algemene statistieken in Publisher
+# Statistieken
 
 De servers van Copernica slaan informatie op over jouw emailings en 
-gebruikers, die vervolgens bekeken kan worden in de Publisher applicatie. 
+gebruikers, die vervolgens bekeken kan worden in de Publisher of Marketing Suite applicatie. 
 Je kunt hier bijvoorbeeld zien hoeveel nieuwe profielen er aan zijn gemaakt, 
 of hoe vaak je email geopend is. Je kunt de resultaten van een mailing ook 
 [exporteren met Publisher](./statistics-export) of [exporteren met de REST API](./rest-get-logfiles-names).
@@ -42,9 +42,9 @@ informatie bijgehouden over hoe de gebruikers zich gedragen. Zie
 
 ## Kerncijfers over een periode
 
-Onder *Profielen* kun je een tabje met statistieken vinden. Hier staan 
-onder andere de [kerncijfers](./statistics-key-figures), waar je informatie 
-vindt over een specifieke mailing of meerdere mailings in een periode.
+In veel van de statistieken komen [kerncijfers](./statistics-key-figures) voor,
+, waar je informatie vindt over een specifieke mailing, template of meerdere 
+mailings in een periode.
 
 ## Statistieken delen
 

@@ -4,6 +4,14 @@ De account statistieken geven inzicht in hoe je Copernica account wordt
 gebruikt. Het houdt de media die je verstuurd over bepaalde periodes bij.
 Dit is niet hetzelfde als de [algemene account mailing statistieken](./statistics-account-mailings).
 
+## Marketing Suite
+
+In Marketing Suite ga je eerst naar jouw account. Je vind hier verschillende 
+opties, waaronder het gebruik van je account. Je vindt hier informatie over 
+onder andere het aantal berichten dat je verstuurt, je websites en het 
+aantal API calls dat je hebt uitgevoerd. Aan de rechterkant vindt je 
+een knop om de statistieken te downloaden als PDF.
+
 ## Publisher 
 
 Je kunt de statistieken vinden onder de **Beheer** tab. De statistieken 
