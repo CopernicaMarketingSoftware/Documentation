@@ -10,7 +10,8 @@ The document contains information about the **destinations**,
 **mailing**, **scheduled mailings** or **split run mailing**.
 
 You can create as many shared documents as you want and share it to the
-whole world if you like. There are no charges involved!
+whole world if you like. There are no charges involved! Please note, however, 
+that this function is only available in Marketing Suite.
 
 ## Create a report
 

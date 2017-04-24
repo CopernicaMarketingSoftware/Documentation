@@ -1,7 +1,7 @@
-# Statistics in Publisher
+# Statistics
 
 The Copernica server save information about your mailings and your users. 
-This information can be displayed in the Publisher application. Examples 
+This information can be displayed in the Publisher or Marketing Suite application. Examples 
 of statistics are the number of opens from your mailing and how many new 
 profiles were created. You can [export statistics in Publisher](./statistics-export) 
 or [export with the REST API](./rest-get-logfiles-names).
@@ -14,7 +14,7 @@ about your [mailing](./statistics-mailing) or [all mailings for a template](./st
 
 ## Mobile mailings
 
-It's possible to send text messages via Publisher, but the only available 
+It's possible to send text messages via Copernica software, but the only available 
 information here is whether or not these messages have arrived. [This article](statistics-mobile-mailing) 
 contains more information about the limited statistics of the mobile mailing.
 
@@ -38,10 +38,10 @@ To learn more about these statistics you can read the article about it
 
 ## Key figures over a period of time
 
-The *Profiles* menu has a tab called *statistics* where you can find more 
-information about one or several mailings. It contains some graphs and 
-[key figures](./statistics-key-figures). You can see your statistics in 
-general or for specific periods of time here.
+Many of the statistics contain [key figures](./statistics-key-figures). 
+They may provide more insight into the results of a single mailing, 
+multiple mailings over a time span or the results of all mailings for a 
+template.
 
 ## Share statistics
 
@@ -53,6 +53,6 @@ See [this article](./statistics-share) on sharing statistics.
 ## More information
 
 * [Mailing statistics](./statistics-mailing)
-* [Key figures over a period](./statistics-key-figures)
+* [Key figures](./statistics-key-figures)
 * [Export statistics](./statistics-export)
 * [Export statistics with the REST API](./rest-get-logfiles-names)

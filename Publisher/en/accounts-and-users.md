@@ -1,4 +1,5 @@
 # Accounts and users
+
 The user management module is the place where you can edit your own
 information, such as company name or credentials, and also create new logins for colleagues. 
 This is also the place to manage access rights to your accounts.
@@ -10,6 +11,7 @@ campaigns and because they need to be able to look into their clients' accounts.
 differentiate between 'users', 'accounts' and 'companies'.
 
 ## Accounts and companies
+
 Most of the time, a connection exists between an account and a “real world company”. This is why
 most accounts are named after companies. For many Copernica users this suffices. For partner
 companies, this is a bit more complicated.
@@ -30,7 +32,8 @@ well. In the user dashboard you can create these types of relations to your liki
 access rights.
 
 ## How does this work in practice?
-In the new MarketingSuite, it's possible to manage users, accounts and
+
+In the new MarketingSuite or old Publisher, it's possible to manage users, accounts and
 company information. If you're a regular user, i.e. a single account with 
 a few colleagues, this may look a little superfluous:
 a list of colleagues and a list of people with access to the account, while these are often the same
