@@ -10,13 +10,14 @@ tags on which you want to filter, you can separate them with semicolons like:
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
 
-
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
 
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
-- **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
+- **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events
+
+More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 If no start and end parameters are provided you will get the events
 of the last monthly period. If you provide a start you will get events

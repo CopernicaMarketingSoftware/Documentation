@@ -1,3 +1,8 @@
+# Selections Tutorial: Newsletter Selection
+
+NOTE: This tutorial is focused on Publisher. A tutorial for Marketing Suite 
+is not (yet) available.
+
 According to the law and netiquette, your subscribers **must** be able
 to remove themselves from your list. This tutorial shows you how you can
 automatically exclude those unsubscribes from your active mailing list. 

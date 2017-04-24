@@ -43,6 +43,7 @@ these messages from messages that are sent when a profile is
 The "profile" or "subprofile" variable allows you to look up the profile that was modified.
 
 ## More information
+
 * [Feedback loops](./feedback-loops)
 * [Creation feedback](./feedback-creates)
 * [Delete feedback](./feedback-deletes)

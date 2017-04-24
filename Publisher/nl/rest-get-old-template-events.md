@@ -17,6 +17,9 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
 
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
+
 ### Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events

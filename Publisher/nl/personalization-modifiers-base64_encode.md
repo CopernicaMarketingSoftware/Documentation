@@ -16,8 +16,8 @@ nu omzetten naar base 64.
     
 Het resultaat ziet er als volgt uit:
 
-        01010101010011
-        MDEwMTAxMDEwMTAwMTE
+    01010101010011
+    MDEwMTAxMDEwMTAwMTE
 
 ## Meer informatie
 

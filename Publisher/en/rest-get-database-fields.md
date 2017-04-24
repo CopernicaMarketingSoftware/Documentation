@@ -14,6 +14,8 @@ The following parameters can be added to the URL as variables:
 - **limit**: length of the requested batch
 - **total**: whether or not the total number of fields should be counted
 
+More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
+
 ## Returned fields
 
 The method returns a list of fields in the database. For each field, the following properties are displayed:

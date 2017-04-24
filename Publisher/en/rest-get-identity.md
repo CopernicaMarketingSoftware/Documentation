@@ -13,7 +13,6 @@ out to which account an access token belongs. If you use the REST API only
 to access your own account, there is not so much value in this method, because
 you already know the account to which you are linked.
 
-
 ## The returned data
 
 This method returns an object with account data. The object has the following
@@ -23,7 +22,6 @@ properties:
 * **name**: Account name
 * **description**: Description of the account
 * **company**: The name of the company that pays for the account
-
 
 ## PHP example
 
@@ -39,7 +37,6 @@ The following PHP script calls this API method:
     print_r($api->get("account"));
 
 You need the [CopernicaRestApi class](./rest-php) to run the PHP script.
-    
 
 ## More information
 

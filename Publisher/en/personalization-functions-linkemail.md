@@ -3,7 +3,8 @@
 Sometimes an email is not displayed properly in the email program of the 
 receiver. No worries, however, since we can simply send the user to the 
 webversion of the mail. The webversion is created automatically when 
-requested with the *linkemail* function.
+requested with the *linkemail* function. It is also possible to create 
+a webversion of a different email or a different template.
 
 ## Using the tag
 
@@ -14,44 +15,39 @@ It's that simple! The tag simply inserts the URL for you and the page is
 created automatically. You can't click this yet and there is no text to 
 click, but this is easily done with HTML.
 
-    <a href="{webversion}" title="Click for webversion">Klik hier om de mail in je browser te bekijken</a>
+    <a href="{webversion}" title="Click for webversion">Click here to view the mail in your browser</a>
 
 ## Options
 
-### showheader
+### **showheader**
 
-De *showheader* optie kun je gebruiken om de standaard header met de informatie 
-over de zender en de document informatie weg te laten.
+The *showheader* option can be used to remove the standard header with sender and document information.
 
 `{webversion showheader=false}`
 
-### document
+### **document**
 
-De *document* optie kun je gebruiken om een ander document weer te geven 
-dan degene die je hebt verzonden. Je hebt hiervoor slechts de titel nodig.
+The *document* option can be used to show another document than the one that was sent.
 
 `{webversion document='newsletter april 2017'}`
 
-### template
+### **template**
 
-De template optie kun je gebruiken om een ander template te laten zien dan 
-degene die gebruikt is in de mail. Je moet hier ook het onderliggende document 
-toevoegen onder de *document* optie.
+The *template* option can be used to show a different template than 
+the one that was used for the mail. You should also include the document 
+in the *document* option.
 
 `{webversion template='Spring2017' document='newsletter april 2017'}`
 
-### domain
+### **domain**
 
-De *domain* optie kan gebruikt worden om het picserverdomein aan te passen, 
-zodat je link er anders uit ziet.
+The *domain* option can be used to replace the default picserverdomain.
 
 `{webversion domain='newsletter.yourdomain.com'}`
 
-Om er echter voor te zorgen dat je webversie nog wel samenwerkt met Copernica 
-moet je een CNAME referentie toevoegen aan het domein die verwijst naar 
-pic.vicinity.nl.
+If you want to use your own domain this should have a CNAME reference to pic.vicinity.nl.
 
-## Meer informatie
+## More information
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalization](./personalization)
+* [Personalization functions](./personalization-functions)
