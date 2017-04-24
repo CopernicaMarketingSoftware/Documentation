@@ -1,7 +1,7 @@
 # Rest events
 
 Everything that passes through SMTPeter gets logged: deliveries, bounces, clicks, opens 
-- all these events are written to log files. These log files are accessible through the 
+all these events are written to log files. These log files are accessible through the 
 REST API. Yet, if you are only interested in particular events that fulfill a certain 
 requirement you can use the events rest call. All calls that are supported are:
 
@@ -115,7 +115,7 @@ contain are described on the page of the particular log file.
 
 ## Events based on destinationid
 
-If you want to retreive all information about a particular message you can 
+If you want to retrieve all information about a particular message you can 
 make a get request to
 
 ```text
