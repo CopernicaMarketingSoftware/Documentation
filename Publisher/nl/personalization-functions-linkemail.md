@@ -19,21 +19,21 @@ woorden om op te klikken. Dit is snel op te lossen met wat HTML.
 
 ## Opties
 
-### showheader
+### **showheader**
 
 The *showheader* option can be used to remove the standard header with 
 sender and document information.
 
 `{webversion showheader=false}`
 
-### document
+### **document**
 
 The *document* option can be used to show another document than the one 
 that was sent.
 
 `{webversion document='newsletter april 2017'}`
 
-### template
+### **template**
 
 The template option can be used to show a different template than the 
 one that was used for the mail. You should also include the document in the 
@@ -41,7 +41,7 @@ one that was used for the mail. You should also include the document in the
 
 `{webversion template='Spring2017' document='newsletter april 2017'}`
 
-### domain
+### **domain**
 
 The *domain* option can be used to replace the default picserverdomain.
 

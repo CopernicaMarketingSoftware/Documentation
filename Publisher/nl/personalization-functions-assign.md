@@ -4,7 +4,7 @@ De {assign} functie kan gebruikt worden om een waarde in een variabele
 op te slaan. Je kunt deze dan later gebruiken. Er zijn twee manieren om 
 een variabele in te stellen:
 
-`{assign var="name" value="Bob"}`
+`{assign var="name" value="Bob"}` of 
 `{assign "name" "Bob"}`
 
 Deze commando's gedragen zich hetzelfde, omdat het tweede voorbeeld slechts 
