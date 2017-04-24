@@ -3,9 +3,10 @@
 Soms als een email aankomt kan deze niet goed weergegeven worden in de 
 email client. Copernica heeft hier een mooie oplossing voor: De webversie. 
 Deze hoef je niet zelf aan te maken, want dit gebeurt wanneer de *linkemail* 
-of *webversion* functie wordt aangeroepen.
+of *webversion* functie wordt aangeroepen. Je kunt met deze functie ook 
+een link creëren naar de webversie van een andere mail.
 
-## De fucntie gebruiken
+## De functie gebruiken
 
 Om de functie te gebruiken hoef je alleen een tag toe te voegen aan je 
 document: `{webversion}`. Je kunt in de volgende voorbeelden ook `{linkemail}` 
@@ -21,36 +22,37 @@ woorden om op te klikken. Dit is snel op te lossen met wat HTML.
 
 ### **showheader**
 
-The *showheader* option can be used to remove the standard header with 
-sender and document information.
+De *showheader* option kan gebruikt worden om de standaard header met 
+verzender en document informatie uit te schakelen.
 
 `{webversion showheader=false}`
 
 ### **document**
 
-The *document* option can be used to show another document than the one 
-that was sent.
+De *document* optie kan gebruikt worden om een ander document te laten 
+zien in de browser dan de mail waaruit de link zichtbaar is.
 
 `{webversion document='newsletter april 2017'}`
 
 ### **template**
 
-The template option can be used to show a different template than the 
-one that was used for the mail. You should also include the document in the 
-*document* option.
+De *template* optie kan gebruikt worden om een andere template weer te 
+geven dan degene die voor de mail gebruikt wordt in de mail client. In 
+dit geval moet je ook het document meegeven in de *document* optie.
 
 `{webversion template='Spring2017' document='newsletter april 2017'}`
 
 ### **domain**
 
-The *domain* option can be used to replace the default picserverdomain.
+De *domain* optie kan gebruikt worden om het standaard picserver domein 
+te vervangen.
 
 `{webversion domain='newsletter.yourdomain.com'}`
 
-If you want to use your own domain this should have a CNAME reference to 
+Als je je eigen domein wilt gebruiken moet deze een CNAME referentie hebben naar 
 pic.vicinity.nl.
 
-## More information
+## Meer informatie
 
-* [Personalization](./personalization)
-* [Personalization functions](./personalization-functions)
+* [Personalizatie(./personalization)
+* [Personalizatie functies](./personalization-functions)
