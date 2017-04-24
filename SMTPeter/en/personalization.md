@@ -103,13 +103,13 @@ will use the {else} keyword. The code after the {else} keyword will be
 executed if none of the preceeding statements returned true.
 
 ```text
-    {if $name == 'John'}
-        Hello John
+{if $name == 'John'}
+    Hello John
     {elseif $name == 'Sarah'}
         Hello Sarah
-    {else}
-        Hello anybody else
-    {/if}
+    {else}  
+    Hello anybody else
+{/if}
 ```
 
 This is of course a very bad example of how you should write your personal
@@ -119,11 +119,12 @@ list of all names in the world.
 A much better example would obviously be:
 
 ```text
-    {if $name == ''}
-        Dear subscriber,
-    {else} 
-        Dear {$name},
-    {/if}
+{if $name == ''}
+    Dear subscriber,
+    {else}
+    Dear 
+    {$name},
+{/if}
 ```
 
 The code snippet above means: if the value of name is empty, show 'Dear
@@ -181,7 +182,11 @@ The truth table for OR is:
 E.g. you can use AND like:
 
 ```text
-{if $a >= $b AND $b <= $c}true{else}false{/if}
+{if $a >= $b AND $b <= $c}
+    true
+    {else}
+    false
+{/if}
 ```
 
 In the above snippet first `$a >= $b` will be tested. Only if this is true,
@@ -224,9 +229,9 @@ It becomes a little bit more technical now...
 Of course we also support looping over arrays that have non-standard keys.
 
 ```text
-    {foreach $list as $key => $value}
-       Key {$key} contains {$value}.
-    {/foreach}
+{foreach $list as $key => $value}
+    Key {$key} contains {$value}.
+{/foreach}
 ```
 As you can see here, you specify both a `$key` and a `$value` which will be
 used to store these values on each iteration.
@@ -235,11 +240,11 @@ And finally, sometimes you want certain code to execute if there is no data
 at all, this is done using the {foreachelse} statement.
 
 ```text
-    {foreach $item in $list}
-       {$item.name}
-    {foreachelse}
-        No items in list.
-    {/foreach}
+{foreach $item in $list}
+    {$item.name}
+{foreachelse}
+    No items in list.
+{/foreach}
 ```
 
 This foreachelse statement is only executed in case of no data. It is
@@ -263,12 +268,12 @@ what `$item` contained when the email was being compiled and sent to the user.
 This will allow you to do things like the following.
 
 ```text
-  {foreach $item in $list}
+{foreach $item in $list}
     {assign $total + $item.price to $total}
     {if $item.price > $topitem.price}
-      {assign $item to $topitem}
+        {assign $item to $topitem}
     {/if}
-  {/foreach}
+{/foreach}
 ```
 
 Which will eventually have the most expensive item in the `$topitem` variable.
@@ -301,11 +306,11 @@ If the soccerTeam array looks like: `["Ronaldo", "Messi", "Ibrahimovic"]`
 The output that we get in the text section will be:
 
 ```text
-    Ronaldo
+Ronaldo
 
-    Messi
+Messi
 
-    Ibrahimovic    
+Ibrahimovic    
 ```
 This is probably not what you had in mind while typing the foreach loop.
 But this is what you get since there is a new line before and after the
@@ -313,7 +318,8 @@ variable and there are some spaces in front of it used as indentation.
 To get a list of the names without the extra whitespace you should write:
 
 ```text
-{foreach $player in $soccerTeam}{$player}
+{foreach $player in $soccerTeam}
+    {$player}
 {/foreach}
 ```
 This is less readable but gives what you want:
