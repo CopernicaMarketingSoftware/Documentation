@@ -8,6 +8,7 @@ You can request your settings using the following URL:
 $id should be the numerical identifier or the name of the database.
 
 ## Returned fields
+
 - **behavior**: the setting itself
 - **fields**: the new profile setting (only applicable if "behaviour" is set to "update")
 

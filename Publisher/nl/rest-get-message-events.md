@@ -14,7 +14,10 @@ je de gebeurtenissen wilt hebben.
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
-- **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
+- **end**: de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
+
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
 
 ### Start en end
 
