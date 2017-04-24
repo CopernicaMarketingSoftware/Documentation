@@ -25,3 +25,4 @@ of the email clicked on a link.
 
 * [Follow-ups](./followups)
 * [Follow-Up Manager in Publisher](./publisher-follow-up-manager)
+* [Data-script object](./followups-scripting.md)

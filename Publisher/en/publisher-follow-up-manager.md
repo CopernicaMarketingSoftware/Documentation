@@ -43,3 +43,4 @@ or edit existing follow-up actions.
 
 * [Follow-ups](./followups)
 * [Follow-Up Manager](./follow-up-manager)
+* [Data-script object](./followups-scripting.md)
