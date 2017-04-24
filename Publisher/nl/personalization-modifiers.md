@@ -46,8 +46,8 @@ De volgende modifiers worden door Copernica ondersteund:
 | **{$variable\|[ceil](./personalization-modifiers-ceil.md)}**                                       | getal naar boven afronden                                              |
 | **{$variable\|[count](./personalization-modifiers-count.md)}**                                     | aantal elementen in variabele (handig als $variabele een array is)     |
 | **{$variable\|[count_characters](./personalization-modifiers-count_characters.md)}**               | aantal karakters in een string                                         |
-| **{$variable\|[count_paragraphs](./personalization-modifiers-paragraphs.md)}**                     | aantal paragrafen in een string                                        |
-| **{$variable\|[count_sentences](./personalization-modifiers-sentences.md)}**                       | aantal zinnen in een string                                            |
+| **{$variable\|[count_paragraphs](./personalization-modifiers-count_paragraphs.md)}**               | aantal paragrafen in een string                                        |
+| **{$variable\|[count_sentences](./personalization-modifiers-count_sentences.md)}**                 | aantal zinnen in een string                                            |
 | **{$variable\|[count_words](./personalization-modifiers-count_words.md)}**                         | aantal woorden in een string                                           |
 | **{$variable\|[date_format](./personalization-modifiers-date_format.md)}**                         | opmaken van een datum                                                  |
 | **{$variable\|[default](./personalization-modifiers-default.md)}**                                 | standaardwaarde indien een variabele niet bestaat                      |
