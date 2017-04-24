@@ -21,17 +21,4 @@ De output ziet eruit als volgt:
 * [Personalizatie](./personalization)
 * [Personalizatie modifiers](./personalization-modifiers)
 
-
-# Personalization modifier: *upper*
-
-The *upper* modifier can be used to convert all characters in a variable 
-to uppercase.
-
-## More information
-
-* [Personalization](./personalization)
-* [Personalization modifiers](./personalization-modifiers)
-* [capitalize modifier](./personalization-modifiers-capitalize)
-* [lower modifier](./personalization-modifiers-lower) 
-
 Deze modifier vindt je ook in de [Smarty documentatie](http://www.smarty.net/docs/en/language.modifier.upper.tpl).
