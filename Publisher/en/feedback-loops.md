@@ -47,8 +47,8 @@ not need realtime feedback, you better use the [general statistics](statistics).
 ## Setting up a feedback loop
 
 Click on the tab called `feedback loops` inside the Marketing Suite.
-In the **Feedback Loops** menu, you can fill in the address the HTTP POST 
-call is sent to in the **manage** menu. It's pretty self explanatory: 
+In the feedback loops menu, you can fill in the address the HTTP POST 
+call is sent to in the manage menu. It's pretty self explanatory: 
 select the events you're interested in and provide the location of your script.
 
 The following feedback loops can be used:
@@ -64,8 +64,8 @@ Before calls are made to your URL, the web address first has
 to be validated. The Marketing Suite does this to prevent
 that users accidentally instruct us to send confidential 
 information to a wrong server. During the validation
-procedure you are asked to copy a small text file to your webserver, so
-that we can see that the server really belongs to you.
+procedure you are asked to copy a small text file to your webserver, 
+so that we can see that the server really belongs to you.
 
 The name and contents of the text file is unique for each feedback loop,
 and can be fetched from the Marketing Suite. You must copy it to one of
