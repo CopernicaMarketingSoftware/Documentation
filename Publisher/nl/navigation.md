@@ -27,6 +27,7 @@
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
     * [Feedback loops](./feedback-loops.md)
+    * [REST events](./rest-get-events.md)
 * [Personaliseren](./personalization.md)
     * [Beschikbare variabelen](./personalization-variables.md)
     * [Modifiers voor variabelen](./personalization-modifiers.md)
