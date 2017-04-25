@@ -1,13 +1,16 @@
-# Followups met javascript
+# Followups met JavaScript
 
 Als je zelf je eigen mailings programmeert, dan kun je gebruik maken van
-javascript om allerlei opvolgacties aan hyperlinks te koppelen. Deze scripts
-worden door Copernica uitgevoerd zodra iemand op zo'n hyperlink klikt. Dit
-werkt ongeveer hetzelfde als de scripts die je in een "onclick" attribuut
-van een hyperlink plaatst, met een belangrijk verschil: de scripts worden niet
-door de browser uitgevoerd, maar op de servers van Copernica.
+JavaScript (data-scripting) om allerlei opvolgacties aan hyperlinks te 
+koppelen. Deze scripts worden door Copernica uitgevoerd, zodra iemand op
+zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde als de scripts die je 
+in een "onclick" attribuut van een hyperlink plaatst, met een belangrijk 
+verschil: de scripts worden niet door de browser uitgevoerd, maar op de 
+servers van Copernica. Met de data-scripts en de follow-up manager, die 
+op dat *link tracking system* gebasseerd is, geeft de Marketing Suite
+je alle mogelijkheden om hoogwaardige marketingcampagnes samen te stellen.
 
-Je kunt de scriptjes op een aantal manieren aan hyperlinks koppelen:
+De scripts voeg je toe aan de hyperlinks op de volgende manieren:
 
 * Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
 * Je kunt ze met de drag-and-drop editor invoeren. 

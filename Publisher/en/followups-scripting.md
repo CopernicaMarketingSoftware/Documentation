@@ -1,13 +1,16 @@
-# Followups using javascript
+# Followups using JavaScript
 
 If you're writing the HTML code of your mailings yourself, you can add a piece
-of JavaScript to each hyperlink. This JavaScript is executed by Copernica
-when the link is clicked. This works more or less the same as the "onclick" 
-attribute that you are probably already familiar with, with one big difference: 
-the "onclick" script is executed on the client, while this script runs on
-the Copernica servers.
+of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
+by Copernica when the link is clicked. This works more or less the same as the 
+"onclick" attribute that you are probably already familiar with.
+However, there is one big difference: the "onclick" script is executed on the client, 
+while this script runs on the Copernica servers. This link tracking system is native 
+to the Marketing Suite and lets you use data-scripting easily. The follow-up manager 
+is now also ready to be used, thus the Marketing Suite brings you absolute power with
+excecuting highly-tailored marketing campaigns.
 
-There are a couple of ways how you can attach a script to hyperlinks:
+You can attach scripts to hyperlinks by doing the following:
 
 * using the *data-script* attribute on &lt;a&gt; tags
 * using the drag-and-drop editor in the follow-up form
@@ -43,8 +46,9 @@ is clicked. This can be used to place an unsubscribe link that when clicked
 sets a profile setting such that no more newsletters are send. To place a 
 link like this you can use the following code:
 
+```html
 <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
-
+```
 
 While the example above is very simple you can write a lot more complicated 
 data-scripts. This data-script is executed when the link is clicked and 

@@ -1,15 +1,15 @@
 # Followups: template variabele
 
-De **template** klasse kan worden gebruikt om informatie op te vragen en aan te passen van
-een template. Er is in ieder script een globale `template` variabele aanwezig, met een instantie
-van het template waarmee de email is gemaakt. Dit is ongepersonaliseerd, in tegenstelling tot de [message](./followups-scripting-message).
+De **template** class kan worden gebruikt om informatie van een template op te vragen en aan te passen. 
+Er is in ieder script een globale `template` variabele aanwezig, met een instantie van het template 
+waarmee de email is gemaakt. Dit is ongepersonaliseerd, in tegenstelling tot de [message](./followups-scripting-message).
 
-Zie daarnaast de documentatie van de [copernica klasse](./followups-scripting-message) om een template op te vragen met een ID.
+Zie daarnaast de documentatie van de [Copernica class](./followups-scripting-message) om een template op te vragen met een id.
 
 
 ## Beschikbare eigenschappen
 
-* **ID**: ID van de template (Read-only)
+* **id**: Id van de template (Read-only)
 * **name**: Naam van de template (Read, write)
 * **subject**: Onderwerp van de templates (Read, write)
 * **data**: Zie documentatie over [het data object](./followups-scripting-data)
@@ -20,27 +20,30 @@ Zie daarnaast de documentatie van de [copernica klasse](./followups-scripting-me
 `send(*target*): direct verzenden van een email naar een target (database, collectie, profiel of subprofiel)`
 
 De send methode kan worden gebruikt om een template naar een *target* te versturen. 
-Het target kan een gewone (enkele) bestemming zijn, zoals een profiel of een subprofiel, maar 
-ook met meerdere bestemmingen zoals een gehele database of collectie. 
+Het target kan een gewone (enkele) bestemming zijn, zoals een profiel of een subprofiel, 
+maar ook met meerdere bestemmingen zoals een gehele database of collectie. 
 
 
 ## Voorbeeld
 
 Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
 
-    var mySubject = template.subject;
+```javascript
+var mySubject = template.subject;
+```
 
 Neem nu voor een leuker voorbeeld aan dat er nog een mail klaar staat om verzonden te worden
 zodra er op de link is geklikt.
 
-    var templateID = 1520;
-    
-    // destination is altijd de globale bestemming van de huidige mail met de geklikte link,
-    // en we willen deze mail sturen als vervolg naar de klikker
-    copernica.template(templateID).send(destination)
+```javascript
+var templateID = 1520;
+
+//set global destination
+copernica.template(templateID).send(destination)
+```
 
 
 ## Meer informatie
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [message klasse](./followups-scripting-message)
+* [Message class](./followups-scripting-message)
