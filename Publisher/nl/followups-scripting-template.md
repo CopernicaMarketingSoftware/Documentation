@@ -6,6 +6,7 @@ van het template waarmee de email is gemaakt. Dit is ongepersonaliseerd, in tege
 
 Zie daarnaast de documentatie van de [copernica klasse](./followups-scripting-message) om een template op te vragen met een ID.
 
+
 ## Beschikbare eigenschappen
 
 * **ID**: ID van de template (Read-only)
@@ -13,9 +14,15 @@ Zie daarnaast de documentatie van de [copernica klasse](./followups-scripting-me
 * **subject**: Onderwerp van de templates (Read, write)
 * **data**: Zie documentatie over [het data object](./followups-scripting-data)
 
+
 ## Beschikbare methoden
 
-* **send(*target*)**: direct verzenden van een email naar een target (database, collectie, profiel of subprofiel)
+`send(*target*): direct verzenden van een email naar een target (database, collectie, profiel of subprofiel)`
+
+De send methode kan worden gebruikt om een template naar een *target* te versturen. 
+Het target kan een gewone (enkele) bestemming zijn, zoals een profiel of een subprofiel, maar 
+ook met meerdere bestemmingen zoals een gehele database of collectie. 
+
 
 ## Voorbeeld
 

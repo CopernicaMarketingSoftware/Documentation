@@ -8,12 +8,13 @@ Dit gaat automatisch, dus buiten de *user interface* om.
 * [Introductie: de REST api in een notendop](rest-introduction)
 * [HTTP requests sturen en antwoorden ontvangen](rest-requests)
 * [Fancy OAuth2 koppelingen](rest-oauth)
+* [REST events](rest-get-events.md)
 
 ## REST API: overzicht van methodes
 
 De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE.
 
-### **GET**
+## GET
 
 GET methodes worden gebruikt om data op te vragen. De volgende GET methodes 
 zijn beschikbaar:
@@ -74,7 +75,7 @@ zijn beschikbaar:
 
 Zie ook het [algemene artikel over events](./rest-get-events).
 
-### **PUT & POST**
+## PUT & POST
 
 PUT en POST methodes worden gebruikt om data aan te maken en aan te passen. 
 Dit zijn vaak zeer vergelijkbare methodes en als je geen POST methode 
@@ -113,7 +114,7 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule.md)                                                   | Bijwerken instellingen van miniselectieregel      |
 | POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions.md)                            | Aanmaken nieuwe conditie bij miniselectieregel    |
 
-### **DELETE**
+## DELETE
 
 DELETE methodes worden gebruikt om data te verwijderen. Dit is permanent, 
 dus wees voorzichtig met welke calls je uitvoert. De volgende DELETE methodes 

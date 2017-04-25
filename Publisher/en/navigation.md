@@ -25,6 +25,7 @@
 * [API documentation](./apis.md)
     * [REST API](./rest-api.md)
     * [Feedback loops](./feedback-loops.md)
+    * [REST events](./rest-get-events.md)
 * [Personalization](./personalization.md)
     * [Available variables](./personalization-variables.md)
     * [Variable modifiers](./personalization-modifiers.md)
