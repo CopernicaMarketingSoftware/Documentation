@@ -1,19 +1,15 @@
-# Followups using JavaScript
+# The use of data-scripts
 
 If you're writing the HTML code of your mailings yourself, you can add a piece
 of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
 by Copernica when the link is clicked. This works more or less the same as the 
 "onclick" attribute that you are probably already familiar with.
 However, there is one big difference: the "onclick" script is executed on the client, 
-while this script runs on the Copernica servers. This link tracking system is native 
-to the Marketing Suite and lets you use data-scripting easily. The follow-up manager 
-is now also ready to be used, thus the Marketing Suite brings you absolute power with
-excecuting highly-tailored marketing campaigns.
+while this script runs on the Copernica servers. You only have to add the data-scripts 
+to the hyperlinks via:
 
-You can attach scripts to hyperlinks by doing the following:
-
-* using the *data-script* attribute on &lt;a&gt; tags
-* using the drag-and-drop editor in the follow-up form
+* the *data-script* attribute on &lt;a&gt; tags
+* the drag-and-drop editor in the follow-up form
 
 
 ## Available objects
