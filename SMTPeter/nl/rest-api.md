@@ -1,35 +1,47 @@
 # Verzenden via REST API
 
-SMTPeter heeft een betrouwbare REST API die gebruik maakt van het HTTPS 
+SMTPeter heeft een eenvoudige en veilig REST API die gebruik maakt van het HTTPS 
 protocol. Om toegang te krijgen tot de REST API heb je een een *API access token* 
 nodig. Deze vind je terug in het SMTPeter dashboard. De REST API stelt je in staat
-om gemakkelijk e-mail te versturen en tegelijkertijd geavanceerde toepassingen te 
-injecteren in je e-mails. Door middel van een HTTP POST request kun je aangeven 
+om gemakkelijk e-mail te versturen en tegelijkertijd uitgebreide opties per e-mail
+in te stellen. Door middel van een HTTP POST request kun je aangeven 
 dat je gebruik wilt maken van de send method en kun je al bijna je eerste 
 e-mail versturen:
 
 ```text
-https://www.smtpeter.com/v1/send
+https://www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}
 ```
-
-Vervolgens zorg je dat aan een tweetal elementen wordt voldaan: 'het toevoegen van 
-een e-mailbericht aan de *body* en het aangeven van de SMTPeter mogelijkheden die 
-je wilt activeren'. De opmaak ziet er dan als volgt uit:
+waar `{JOUW_API_TOKEN}` de access token is die je via het dashboard hebt opgevraagd.
+De extra data in de POST request met daarin de gegevens voor de email kunnen
+als JSON worden meegegeven. De opmaak van een eenvoudig maar volledig request
+ziet er dan als volgt uit:
 
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v1/send?access_token={JOUW_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 246
 
 {
     "recipient":    "john@doe.com",
-    "subject":      "This is the subject",
-    "html":         "This is example content",
     "from":         "info@example.com",
     "to":           "john@doe.com"
+    "subject":      "Dit is het onderwerp",
+    "text":         "Dit is de inhoud",
 }
 ```
+Na het dit request maakt SMTPeter een MIME (een email bericht) met
+het gespecificeerde from, to, subject en text en stuurt dit bericht naar
+de opgegeven recipient.
+
+Als je een mail met HTML of bijlagen wilt versturen dan is dit ook mogelijk.
+Alle opties die SMTPeter bij een mail ondersteund zijn beschreven in de
+[MIME door SMTPeter laten maken](rest-send-json) documentatie.
+
+Een zelfgemaakt MIME met SMTPeter versturen behoort ook tot de mogelijkheden.
+Meer informatie hierover kun je vinden in de [MIME data versturen](rest-mime)
+documentatie.
+
 
 ## Verken de andere toepassingen
 

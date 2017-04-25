@@ -59,4 +59,4 @@ is disabled. When you connect to the SMTP API, you simply pick a login/password
 combination that has the features you need.
 
 The alternative method to enable or disable features is by adding special
-[MIME-headers](rest-mime) to your email.
+[MIME-headers](smtp-headers) to your email.
