@@ -12,15 +12,15 @@ protocol en de algehele "MIME" data.
 ```
 Om alles leesbaar te maken, hebben we het merendeel van de "MIME" code van het 
 voorbeeld verwijderd. Als je zelf geen "MIME" bericht wil maken, kun je de 
-property weglaten. Gebruik dan wel de [special MIME properties](rest-mime "MIME data versturen")
-zoals "subject", "text" en "html" zodat SMTPeter de mime data kan aanmaken.
+property weglaten. Gebruik dan wel de speciale properties zoals "subject", 
+"text" en "html" zodat SMTPeter de mime data kan aanmaken.
 
 Je hoeft enkel en alleen een "recipient" adress aan te leveren om een e-mail te
 versturen. Echter, als je bekend bent met het SMTP protocol weet je dat je
 normaal gesproken ook een *envelope address* moet opgeven. Dit envelope address 
 is het adres waar *bounces* of momenteel-niet-op-kantoor *replies* naartoe
 worden verstuurd. SMTPeter neemt alle zorgen weg omtrent het afhandelen van die 
-bounces en daarom hoe je in dit geval geen envelope adres op te geven. SMTPeter 
+bounces en daarom hoef je in dit geval geen envelope adres op te geven. SMTPeter 
 doet dit proces helemaal zelfstandig.
 
 Het is ook mogelijk om zelf bounces af te handelen. Dit doe je door een extra 

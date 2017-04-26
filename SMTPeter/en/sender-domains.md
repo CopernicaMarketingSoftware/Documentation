@@ -61,15 +61,15 @@ emails for which you've set up a sender domain can be signed.
 
 If you set up a sender domain you are asked to configure your tracking and
 bounce domains. These are the hostnames that we use to track clicks,
-opens and errors. The suggested defaults, "clicks.yourdomain.com" and 
-"bounce.yourdomain.com" are for most users sufficient. 
+opens and errors. The suggested defaults, "clicks.example.com" and 
+"bounce.example.com" are for most users sufficient. 
 
 But be aware that if you configure SMTPeter to track clicks, all hyperlinks 
 in your emails are going to be rewritten to use the click domain. The default
 "clicks.yourdomain.com" might look like a tracking domain to your users (which 
 is not that strange, given the fact that it actually _is_ a tracking domain).
-If you rather have urls that look more neutral (for example "specialoffers.yourdomain.com",
-or "www2.yourdomain.com") you can change the click domain in the
+If you rather have urls that look more neutral (for example "specialoffers.example.com",
+or "www.example.com") you can change the click domain in the
 sender domain configuration.
 
 The same applies to the bounce domain, although the bounce domain is less 

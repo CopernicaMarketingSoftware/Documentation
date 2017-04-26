@@ -94,7 +94,7 @@ niet bestaan in datumvelden, dus worden ze automatisch overgezet naar
 
 Als je iets verkeerd doet, kun je zomaar je hele database overschrijven met
 verkeerde gegevens. Goed opletten dus. Als het toch verkeerd is gegaan, kun
-je dit met een trucs grotendeels ongedaan maken:
+je dit met een trucje grotendeels ongedaan maken:
 
 Na een verkeerde import kun je een selectie aanmaken waarin je alle nieuwe 
 profielen opneemt. Je maakt hiervoor een selectie met een conditie van het
@@ -107,3 +107,5 @@ Zijn er door de import bestaande profielen abusievelijk gewijzigd? Het
 terughalen van profieldata kan alleen per individueel profiel met de rollback
 functie. Veel werk dus. Eventueel kan je Copernica vragen om een back-up van 
 de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
+
+[Terug naar databasebeheer](./database-introduction)

@@ -29,8 +29,8 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 |------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | **[{assign}](./personalization-functions-assign)**                     | Assign a value to a variable                                             |
 | **[{capture}](./personalization-functions-capture)**                   | Capture blocks and store in a variable                                   |
-| **[{condition}](./personalization-functions-condition)**               | Conditional block based on a javascript expression                       |
-| **[{counter}](./personalization-functions-counter)**                   | Incrementing counter                                                     |
+| **[{condition}](./personalization-functions-condition)**               | Conditional block based on a JavaScript expression                       |
+| **[{counter}](./personalization-functions-counter)**                   | Counter (ascending/descending)                                           |
 | **[{cycle}](./personalization-functions-cycle)**                       | Cycle between two values                                                 |
 | **[{feed}](./personalization-functions-feed)**                         | Load an external RSS feed                                                |
 | **[{fetch}](./personalization-functions-fetch)**                       | Import externally hosted content                                         |
@@ -38,7 +38,7 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 | **[{if}](./personalization-functions-if)**                             | Conditional block                                                        |
 | **[{in_miniselection}](./personalization-functions-in_miniselection)** | Mark text that is only rendered if subprofile belongs to a miniselection |
 | **[{in_selection}](./personalization-functions-in_selection)**         | Mark text that is only rendered if profile belongs to a selection        |
-| **[{ldelim}](./personalization-functions-ldelim)**                     | Left curly bracket                                                       |
+| **[{ldelim}](./personalization-functions-delim)**                      | Left curly bracket                                                       |
 | **[{literal}](./personalization-functions-literal)**                   | Mark literal block in which curly brackets are permitted                 |
 | **[{linkemail}](./personalization-functions-linkemail)**               | Link to web version of a different email                                 |
 | **[{linkfile}](./personalization-functions-linkfile)**                 | Link to a file                                                           |
@@ -50,10 +50,13 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 | **[{rawcapture}](./personalization-functions-rawcapture)**             | Like {capture}, but without html escaping                                |
 | **[{strip}](./personalization-functions-strip)**                       | Remove whitespace                                                        |
 | **[{survey}](./personalization-functions-survey)**                     | Display a survey                                                         |
-| **[{rdelim}](./personalization-functions-rdelim)**                     | Right curly bracket                                                      |
+| **[{rdelim}](./personalization-functions-delim)**                      | Right curly bracket                                                      |
 | **[{textformat}](./personalization-functions-textformat)**             | Text formatting                                                          |
 | **[{unsubscribe}](./personalization-functions-unsubscribe)**           | Unsubscribe link                                                         |
 | **[{webform}](./personalization-functions-webform)**                   | Render a webform                                                         |
 | **[{webonly}](./personalization-functions-webonly)**                   | Mark text that is only rendered on the web (not in an email)             |
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization modifiers](./personalization-modifiers)

@@ -1,3 +1,4 @@
+# Opvolgacties voor databases en collecties
 Database opvolgacties zijn geautomatiseerde reacties op een gebeurenis
 in de database of collectie. Je kunt bijvoorbeeld instellen dat een
 e-mail moet worden verstuurd wanneer een profiel is gewijzigd of

@@ -38,9 +38,7 @@ Registering your application
 ----------------------------
 
 Before you can even start implementing the OAuth protocol, you need to
-[register your
-application](./register-your-app-on-copernica-com.md)
-on the Copernica.com dashboard. By registering your application you will
+register your application on the Copernica.com dashboard. By registering your application you will
 obtain the **client key** and **secret key**. This basically is the
 login and password of your application. Both are needed for your
 application to authenticate itself to Copernica.
@@ -164,7 +162,7 @@ accompanied with the access token as a query string:
 
     https://api.copernica.com/v1/profile/123456?access_token=ed430a95c58fd7d2830c9dc453396cf5
 
-View our [REST API documentation](./the-copernica-rest-api.md) for in depth
+View our [REST API documentation](./rest-api.md) for in depth
 information on making API calls.
 
 Revoking access data

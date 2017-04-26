@@ -1,4 +1,4 @@
-# Dubbele opt-in voor nieuwe profielen
+# Publisher Tutorial: Dubbele opt-in voor nieuwe profielen
 
 Je mag van de Wet niet door rood rijden en alleen commerciele e-mails
 versturen aan personen die zich hiervoor hebben aangemeld. Zulks een
@@ -6,6 +6,10 @@ aanmelding noemt men in de wereld van de internet marketing ook wel
 opt-in (en een uitschrijving opt-out). Een dubbel opt-in gaat nog even
 verder en geeft je de garantie dat aanmelders zichzelf daadwerkelijk
 hebben aangemeld en met een bestaand e-mailadres.
+
+Let op: Deze tutorial laat alleen zien hoe je dit kunt doen vanuit Publisher. 
+Je kunt in Marketing Suite hetzelfde bereiken met [followups](./followups), 
+maar deze zullen anders werken.
 
 Hoe werkt dubbele optin?
 ------------------------
@@ -145,3 +149,8 @@ Maak tot slot in de database een
 (Selectietype: *Check op veldwaarde*) aan waarin alleen mensen worden
 opgenomen waarbij de waarde in het nieuwbriefveld gelijk is aan ‘Ja,
 bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
+
+## Meer informatie
+
+- [Followups](./followups)
+- [Selecties/Collecties](./selections-introduction)

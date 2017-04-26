@@ -13,9 +13,9 @@ personalizing for if it is not specified.
 
 ## Example
 
-    {if {in_miniselection miniselection="womenwithkids"}}
+    {in_miniselection miniselection="womenwithkids"}
         { Display your content here! }
-    {/if}
+    {/in_miniselection}
     
 In this example the [if function](./personalization-functions-if) was used, 
 which pairs with this function very well. If you make yourself familiar 

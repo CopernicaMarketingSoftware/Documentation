@@ -1,25 +1,27 @@
-# REST API method: templates
+# Managing templates
 
-The templates that can be managed via the dashboard, are also accessible
-through the REST API. The API offers methods to download templates, and
-methods to edit or create templates. It is also 
-possible to [send an email](rest-send) using these templates.
+In SMTPeter's dashboard it's easy and convenient to manage your templates. 
+All the templates are available by using the REST API. You can then use 
+various methods to download, edit or create templates. And of course
+you can [send email](rest-send) with the templates.
 
-## Fetch templates
 
-To get a full list of all templates in your environment, simply make a HTTP 
-GET call to the following URL (remember to to add your API key to the URL):
+## Retrieve templates
 
-````text
+Inside your SMTPeter environment you can retrieve the comprehensive list
+of templates. Do this by making a *HTTP GET call* to the following URL 
+(don't forget to add your API key):
+
+```text
 https://www.smtpeter.com/v1/templates/{start}/{length}
-````
+```
 
-The "templates" method is only available using the HTTP GET method. The url may 
-contain a start and length value to limit the list of templates that is returned. 
-If these limits are ommitted, the default values of 0 and 100 are
-used. This call returns a JSON array in the following format:
+The template method is only available when making a HTTP GET call.
+If you don't want to be porovided with all the templates, it's wise 
+to limit the timeframe with `{start}` and `{length}`. The call gives 
+back a JSON array in the following format:
 
-````json
+```json
 [
     {
         "id"    : 1,
@@ -29,59 +31,54 @@ used. This call returns a JSON array in the following format:
         "name"  : "Test 123"
     }
 ]
-````
+```
 
-For every template the unique identifier is returned, and the template name.
-If you want to have more properties, you need to fetch a template based on
-its unique ID.
+For every template a unique identifier and template name is given back. 
+You can request multiple properties by providing a unique ID when doing 
+an API call. 
 
 
-## Fetching a single template
+## Request a specific template
 
-Once you know the ID of a template, the REST API can be used to fetch the
-full template source with a "HTTP GET" call.
+You can use the REST API to request a specific template by using the 
+HTTP GET call. Note that you need to have a specific ID from a certain
+template.
 
-````text
+```text
 https://www.smtpeter.com/v1/template/{ID}/{format}
-````
+```
 
-You must provide the identifier of the template, but the format is optional. 
-When the format is not provided, the template will be returned in JSON 
-format. But you can also ask SMTPeter to return the template in other formats:
+You can specify what format you want the returned content to be. You do
+this by adding the parameter to the URL. The default format is JSON, 
+other formats SMTPeter supports are:
 
-- json: return the template in JSON format;
-- html: return the template in HTML format, optimized for email clients;
-- webversion: return the template in HTML format, optimized for web clients;
-- mime: return the template in MIME format, with externally hosted images;
-- embedded: return the template in MIME format, with embedded images;
-- text: return the text version of the template.
+- JSON: gives back the template in JSON format;
+- HTML: gives back the template in HTML format, optimized for emailclients;
+- Webversion: gives back the template in HTML format, optimized for webclients;
+- MIME: gives back the template in MIME format, with externally hosted images;
+- Embedded: gives back the template in MIME format, with embedded images;
+- Text: gives back the text version from a template.
 
-You can provide extra personalization variables in the GET request, that are
-uses to personalize the template. If no variables are provided, the template
-will not be personalized.
-
+It's also possible to add extra personaliation variables in the GET method, because
+then your templates will actually be personalized. 
 
 ## Creating templates
 
-To create a new template you can send a HTTP POST request to SMTPeter:
+You can create a new template by using a HTTP POST method and sending it to SMTPeter:
 
-````text
+```text
 https://www.smtpeter.com/v1/template/{format}
-````
+```
 
-Inside the body data, you must pass the JSON source of your template. The
-full specification of the supported properties can be found on the
-[ResponsiveEmail.com website](https://www.responsiveemail.com).
+Creating templates is done by adding the JSON code to the body of a POST request.
+For all specificatons of the properties that can be used, you can take a look at:
+[www.ResponsiveEmail.com](https://www.responsiveemail.com).
 
-The API returns a link to the new template in the "Location" header of the
-HTTP response, and a small JSON object holding the template ID. You can 
-optionally pass a format-name to the URL, to tell SMTPeter to redirect to an 
-other URL instead. Note that this "format" option only changes the "location"
-header in SMTPeter's answer; the body data of your POST call must be JSON.
+The API gives back a link of the new template in the location header. 
+Accompanied a JSON object is also sent back, containing the template ID.
+The data you put in the body must be JSON. It looks like this:
 
-Example request:
-
-````json
+```json
 POST /v1/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
@@ -93,5 +90,4 @@ Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }
-````
-
+```

@@ -159,3 +159,5 @@ no indication of abuse) you are faces with a business decission: is the
 tolerant setting acceptible for you or do you want to move to a stricter setting.
 A strict setting (p=reject) makes it much harder for others to abuse your mail,
 but also more likely that you messages accidentally can not be delivered.
+
+[Back to sender domains](./sender-domains)

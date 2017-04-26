@@ -1,12 +1,12 @@
-# SMTP credentials
+# Creating credentials
 
-You need a valid login/password combination to access the SMTP API.
+You need a valid login/password combination to use the SMTP API.
 These credentials have to be included in the SMTP handshake before
 you send the first message over the connection. SMTPeter supports both
 the "AUTH PLAIN" as well as the "AUTH LOGIN" authentication mechanism.
-The credentials must be sent over a secure connection, either
-because you set up a connection using [port 465](smtp-ports) or
-after you've secured the connection with "STARTTLS".
+The credentials must be sent over a secure connection, either you set up
+a connection using [port 465](smtp-ports) or you secure the connection with
+"STARTTLS".
 
 The login/password combinations can be created and modified via
 the SMTPeter dashboard. The number of logins that you create is not
@@ -25,11 +25,11 @@ install a different feature set for each login. When you send out mail,
 you use login/password combination that supports the features that 
 you need.
 
-* modify hyperlinks to track clicks
-* modify image urls to track opens
-* do not modify links that would trigger scam warnings
-* change envelope address to collect bounces
-* modify html code to contain inline css attributes
+* modify hyperlinks to track clicks;
+* modify image urls to track opens;
+* do not modify links that would trigger scam warnings;
+* change envelope address to collect bounces;
+* modify html code to contain inline css attributes.
 
 The above list holds the properties that can be associated with a
 login/password pair. When you use the dashboard to create a login, you
@@ -45,7 +45,7 @@ therefore be different than the envelope that you supplied. All bounces
 first end up at SMTPeter, before they are optionally forwarded to
 the envelope address that you supplied.
 
-However, if you do not hand over the bounce handling to SMTPeter, 
+However, if you do not handover the bounce handling to SMTPeter, 
 SMTPeter behaves as a normal MTA and sends back DSN messages to your
 envelope address when anything goes wrong.
 

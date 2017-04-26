@@ -1,4 +1,4 @@
-# REST API: Retrieve general information from a Marketing Suite message id
+# REST API: Retrieve general information from a Marketing Suite message ID
 
 If you want to get some general information from a mail sent with Marketing
 Suite you can make a simple a GET request to the following URL:

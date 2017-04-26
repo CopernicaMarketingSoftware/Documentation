@@ -6,7 +6,9 @@ Copernica houdt logfiles bij met verschillende informatie zoals clicks, geopende
 
 ## Geretourneerde velden
 
-Deze methode geeft een JSON array terug van datum strings. De links onder "Meer informatie" bevatten instructies om de logfiles voor een datum te downloaden.
+Deze methode geeft een JSON array terug van datum strings. De links onder 
+"Meer informatie" bevatten instructies om de logfiles voor een datum te downloaden 
+in het gewenste formaat.
 
 ## Voorbeeld in PHP
 

@@ -32,8 +32,6 @@ An XML representation of the requested log file. An example is shown below.
 </records>
 ```
 
-
-
 ## PHP Example
 
 The following PHP script demonstrates how to use the API method.

@@ -23,9 +23,9 @@ https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
 https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ```
 
-## Envelope en ontvanger adres
+## Envelope en recipient adres
 
-Het originele *envelope* en ontvanger adres, dat je door middel van de
+Het originele *envelope* en *recipient* adres, dat je door middel van de
 API hebt gebruikt voor het versturen van e-mails, kan worden achterhaald 
 met de *recipient* en envelope methode. Beide methoden geven een e-mail
 adres terug in normaal text formaat.
