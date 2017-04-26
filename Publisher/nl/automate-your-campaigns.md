@@ -1,6 +1,6 @@
 # Automatiseer je campagnes
 
-Copernica stelt je in staat volledig automatische campagnes te
+De Publisher stelt je in staat volledig automatische campagnes te
 [verzenden](./send-emailings-to-relations.md "E-mailings verzenden").
 Naast [e-mailings](./emailings.md "E-mailings versturen")
 stuur je ook automatisch en snel

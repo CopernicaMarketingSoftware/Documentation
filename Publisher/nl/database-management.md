@@ -1,3 +1,5 @@
+# Database management
+
 Iedere marketingcampagne start met een database met relatiegegevens. Je
 beheert je database(s) in het onderdeel Profielen. Een profiel is een
 record in je database, bijvoorbeeld met gegevens over één enkele

@@ -1,5 +1,6 @@
-The **File** tab in the export dialog allows you further configure how
-your data should be exported. The default settings are the most common
+# Exporting 
+
+The default settings are the most common
 export settings.
 
 ### Filename and file type
