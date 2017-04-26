@@ -1,3 +1,5 @@
+# Selecties
+
 In Copernica gebruik je selecties om onderscheid te maken tussen
 gegevens in je database. Je kan bijvoorbeeld een selectie maken van alle
 mannen in je database, of van alle vrouwen uit
