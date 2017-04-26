@@ -43,7 +43,7 @@ stap 4 als breekpunt. Weer anderen negeren deze stappen en gebruiken de
 foutcodes om te achterhalen of de afleverpoging resulteerde in een hard
 of softbounce.
 
-Wanneer de fout is opgetreden bij jouw e-mails, kan je terugvinden in
+Wanneer de fout is opgetreden bij jouw e-mails, kun je terugvinden in
 het tabblad **Fouten**. Ook vind je hier de **foutcode** die is
 teruggegeven.
 
