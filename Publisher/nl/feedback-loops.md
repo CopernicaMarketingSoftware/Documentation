@@ -1,6 +1,6 @@
 # Feedback loops
 
-In het menu van de Marketing Suite zie je een kopje met `feedback loops` staa.
+In het menu van de Marketing Suite zie je een kopje met `feedback loops` staan.
 Hier kun je instellen dat Copernica je real-time notificaties via HTTP POST
 stuurt als er een events zoals kliks, opens of errors plaatsvinden. Je kunt dit 
 bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie wilt bijwerken
