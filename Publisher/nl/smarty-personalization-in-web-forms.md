@@ -13,7 +13,7 @@ of subprofiel.
 
 Als het webformulier door een anonieme gebruiker wordt ingevuld kan je
 nog steeds gebruik maken van bepaalde smarty functies, zoals
-{\$smarty.now}. Dit is handig als je de invuldatum van het formulier
+`{\$smarty.now}`. Dit is handig als je de invuldatum van het formulier
 wilt opslaan in het profiel.
 
 **Let op:**De functies [linkfile en
