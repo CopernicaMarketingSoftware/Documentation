@@ -1,65 +1,6 @@
-# Aan de slag met het in elkaar zetten van templates
+# Documenten maken in de Publisher
 
-Een HTML template vormt de blauwdruk voor de e-maildocumenten die je
-gaat versturen. In de template bepaal je de structuur en de lay-out. Ook
-geef je in de template met speciale tags aan waar in het document door
-de eindgebruiker content (afbeeldingen en tekst) kan worden toegevoegd.
-
-Een template dient te zijn voorzien van een uitschrijflink, en vaak
-wordt aan de template ook een link naar de webversie toegevoegd. Dit
-artikel gaat in op de basisbeginselen die komen kijken bij het
-ontwikkelen van een HTML template.
-
-Hoewel de applicatie voldoende mogelijkheden biedt om hierin een
-template te ontwikkelen, kiezen de meeste gebruikers ervoor de HTML
-template lokaal op de computer te fabrieken. Je kan hiervoor een WYSIWYG
-editor gebruiken (zoals Dreamweaver) of de HTML zelf schrijven,
-bijvoorbeeld met [Notepad ++](http://notepad-plus-plus.org/).
-
-Vervolgens kun je met een aantal eenvoudige **tags** de template zeer
-flexibel maken voor hergebruik.
-
-Een template begint met een idee en een design. Bedenk van te voren goed
-hoe je de template wilt maken, zodat deze keer op keer hergebruikt kan
-worden. Bedenk hoeveel kolommen de template moet krijgen, en hoe
-bijvoorbeeld verschillende artikelen geïtereerd moeten gaan worden in
-het uiteindelijke document.
-
-De meeste e-mailtemplates hebben een header, twee kolommen (een voor
-inhoudsopgave en een voor de artikelen), en een footer (met hierin vaak
-adresgegevens, en de uitschrijflink).
-
-![](../images/differentlayouts.png)
-
-
-## Waar moet je op letten
-
-Houd bij de ontwikkeling van je HTML template er rekening dat je
-e-maildocumenten in de laatste plaats pas worden bekeken in een moderne
-internet browser (middels de
-[webversie](http://www.copernica.com/nl/ondersteuning/linken-naar-de-webversie-van-een-e-mail)).
-Het vaakst zullen ze worden bekeken met e-mailprogramma's zoals Outlook
-Express, Gmail, Hotmail, maar ook steeds vaker op de smartphone.
-
-* Moderne internetstandaarden worden door deze programma's niet of
-nauwelijks ondersteund. Je kan bij het ontwikkelen van een template
-dus niet helemaal los gaan met CSS en JavaScript. Javascript kan
-zelfs helemaal niet worden gebruikt.
-* Gebruik voor de lay-out HTML tabellen, en geen CSS positionering.
-* Maak voor ieder onderdeel in je template een aparte tabel (geneste
-tabellen). Op deze wijze wordt je template gemakkelijker in
-onderhoud.
-* Gebruik geen margins en paddings, maar gebruik hiervoor een lege
-tabelcel waarin je met behulp van een transparante pixel de hoogte
-of breedte kunt vastleggen. Onder andere Gmail ondersteunt CSS
-margin en padding niet.
-* Maak je template niet breder dan 700 pixels.
-* Zorg dat de verhouding afbeeldingen / tekst niet hoger is dan 1:1,
-in het voordeel van de afbeeldingen.
-
-We hebben een speciaal artikel voor de [HTML richtlijnen in
-e-mailmarketing](./html-email-template-design-guidelines.md).
-
+Dit artikel beschijft
 
 ## Toevoegen van inhoudsblokken
 
@@ -244,3 +185,7 @@ het document instellen.
 
 Toon bepaalde content alleen in de email of in de webversie met de
 [{mailonly} en {webonly}](./the-webonly-and-mailonly-functions.md)tags.
+
+
+
+

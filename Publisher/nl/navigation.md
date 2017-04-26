@@ -22,8 +22,9 @@
     * [SPF records](./spf.md)
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
-* [Templates en documenten](./templates-en-documenten.md)
-    * [Publisher templates](./publisher-templates.md)
+* [Het gebruik van templates](./templates.md)
+* []
+
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
     * [Feedback loops](./feedback-loops.md)
@@ -35,7 +36,7 @@
     * [Tips en trucs](./personalization-tricks.md)
 * [Scripting en opvolgacties](./followups.md)
     * [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
-    * [Follow-Up Manager Publisher](./publisher-follow-up-manager.md)
+
     * [Het data-script attribuut](./followups-scripting.md)
 * [Enquêtes](./surveys)
     * [Enquêtes aanmaken](./surveys-create)
@@ -48,6 +49,8 @@
     * [Importeren en exporteren](./import-and-export.md)
     * [Webformulieren](./web-forms.md)
     * [Templates en documenten](./templates-and-documents.md)
+    * [Follow-Up Publisher](./publisher-follow-up-manager.md)
+    * [Publisher templates](./publisher-templates.md)
     * [Mailings verzenden](./sending-mailings.md)
     * [Deliverability optimaliseren](./deliverability.md)
     * [Enquêtes](./surveys.md)
