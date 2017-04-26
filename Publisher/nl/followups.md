@@ -10,15 +10,21 @@ te maken:
 * Door middel van [data-script attribuut](./followups-scripting.md) als je zelf kunt programmeren.
 * Met het [oude opvolgsysteem van Copernica Publisher](./publisher-follow-up-manager.md)
 
-
-## De followupmanager van de Marketing Suite
+## Follow-Up Manager van de Marketing Suite
 
 Op dit moment is een drag-and-drop followup editor in ontwikkeling. Je kunt 
 hiermee op een makkelijke manier met je muis aan elke link en aan elke button
 makkelijk een opvolgactie hangen. Wil je dat een profiel wordt bijgewerkt als
 iemand ergens op klikt, of wil je een nieuwe mail versturen? Je kunt dit 
-makkelijk instellen met de [followupmanager](./follow-up-manager.md).
+makkelijk instellen met de [Follow-Up Manager](./follow-up-manager.md).
 
+## Follow-Up Manager van de oude Publisher
+
+In de oude Publisher omgeving kun je ook opvolgacties invoeren. Dit 
+[oude systeem](./publisher-follow-up-manager.md) heeft geen scripting API en is dus niet 
+zo krachtig als het nieuwe systeem. Maar omdat het al heel wat jaren meegaat, en 
+er door de jaren heen veel verbeteringen aan zijn aangebracht, is het toch een 
+heel krachtige toolkit.
 
 ## Het data-script attribuut
 
@@ -29,11 +35,8 @@ dat wordt uitgevoerd als op de link wordt geklikt. Dit is een heel krachtige man
 om opvolgacties in te stellen, omdat je zelf kunt programmeren hoe met inkomende
 kliks wordt omgegaan.
 
+## Meer informatie
 
-## Opvolgacties met de oude Publisher
-
-In de oude Publisher omgeving kun je ook opvolgacties invoeren. Dit 
-[oude systeem](./publisher-follow-up-manager.md) heeft geen scripting API en is dus niet 
-zo krachtig als het nieuwe systeem. Maar omdat het al heel wat jaren meegaat, en 
-er door de jaren heen veel verbeteringen aan zijn aangebracht, is het toch een 
-heel krachtige toolkit.
+* [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
+* [Follow-Up Manager Publisher](./publisher-follow-up-manager.md)
+* [Data-script object](./followups-scripting.md)

@@ -1,4 +1,4 @@
-# Surveys
+# Surveys in Publisher
 
 Customers have an opinion. About politics, and Justin Bieber's haircut.
 Or about your product or service. Use the Copernica survey module to
@@ -11,6 +11,8 @@ respondent in your Copernica database. For tips on good data gathering
 please see our article on 
 [avoiding data corruption](./database-marketing-and-web-surveys-avoid-corruption.md)
 
+Please note that it is not (yet) possible to make surveys in Marketing Suite.
+
 ## Creating surveys
 
 You'll find the survey module in the **Content** section. From the
@@ -21,7 +23,7 @@ also found in the **Survey** menu.
 -   [Create new survey](./surveys-create.md)
 -   [Survey question types](./surveys-question-types.md)
 -   [Survey question options](./surveys-question-options.md)
--   [Conditional survey questions](./surveys-questions-conditional.md)
+-   [Conditional survey questions](./surveys-question-conditional.md)
 -   [Edit, add, copy and move survey questions](./surveys-edit)
 -   [How to edit the survey title and introduction text](./surveys-title-introduction.md)
 -   [Edit the survey conclude page](./surveys-conclude-page.md)

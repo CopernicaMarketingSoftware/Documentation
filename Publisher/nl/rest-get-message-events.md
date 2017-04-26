@@ -1,8 +1,8 @@
-# REST API: Opvragen van gebeurtenissen bij een Marketing Suite bericht
+# REST API: Opvragen van events bij een Marketing Suite bericht
 
 Als je events bij een met Marketing Suite verstuurd bericht wilt
 downloaden, dan kun je die opvragen door middel van een eenvoudige
-HTTP GET call naar de volgende URL
+HTTP GET call naar de volgende URL:
 
 `https://api.copernica.com/v1/message/$id/events?access_token=xxxx`
 
@@ -14,7 +14,10 @@ je de gebeurtenissen wilt hebben.
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
-- **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
+- **end**: de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
+
+Meer informatie over de betekenis van deze parameters vind je in het
+[artikel over paging](rest-paging).
 
 ### Start en end
 
@@ -29,7 +32,6 @@ rekening mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum
 begint 1 of 2 uur later  (afhankelijk van zomer- en wintertijd) dan de
 Nederlandse tijd. Houd er ook rekening mee dat de beperking van de periode
 tot een maand gewijzigd kan worden als als de performance dit vereist.
-
 
 ## Geretourneerde informatie
 
@@ -54,7 +56,6 @@ ziet er als volgt uit:
 ]
 ```
 
-
 ## PHP Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -75,7 +76,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
-
-## More information## Meer informatie
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

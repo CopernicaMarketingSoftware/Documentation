@@ -11,31 +11,38 @@ The following parameters can be placed in the message body of the HTTP PUT comma
 
 - **fields**: Fields that the profile contains
 - **interests**: Interests that the profile contains
-- **database**: ID of the database the profile belongs to
 - **secret**: The secret code that is associated with the profile
-- **created**: Timestamp of when the profile was created in YYYY-MM-DD hh:mm:ss format
-- **modified**: Timestamp of when the profile was last modified in YYYY-MM-DD hh:mm:ss format
+
 
 ## PHP example
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+    // dependencies
+    require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+    // change this into your access token
+    $api = new CopernicaRestApi("your-access-token");
 
-	// data to be sent to the api
-	$data = array(
-    	'description'   =>  'a new description',
-    	'has_rules'      =>  true
-	);
+    // data to be sent to the api
+    $data = array(
+        "fields" => array(
+            'firstname' =>  'John',
+            'lastname'  =>  'Doe',
+            'email'     =>  'johndoe@example.com'
+        ),
+        "interests" = array(
+            'football'  =>  0,
+            'tennis'    =>  1,
+            'hockey'    =>  1
+        ),
+        "secret" => "geheimecode"
+    );
 
-	// do the call, and print result
-	print_r($api->put("profile/1234", array(), $data));
+    // do the call, and print result
+    print_r($api->put("profile/1234", array(), $data));
 
-This example uses the [CopernicaRestAPi class](rest-php).
+This example uses the [Copernica REST API class](rest-php).
 
 ## More information
 

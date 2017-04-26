@@ -27,12 +27,19 @@ gebruiken:
     
     U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email}.
 
-Zo eenvoudig is het. Maar je moet wel op een paar dingen letten:
+Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
+in je database met de [in_selection](./personalization-function-in_selection) 
+en [in_miniselection](./personalization-function-in_miniselection) functies.
 
+Er zijn echter wel wat belangrijke dingen om op te letten als je werkt met 
+Smarty:
 * Houd het veilig en zorg dat je je variabelen escapet.
 * Smarty is *hooflettergevoelig*. {$name} is dus wat anders dan {$NAME}.
-* Als je echte accolades wilt gebruiken, doe je dat met {ldelim} en {rdelim}.
+* Accolades gebruiken als symbool kan met [rdelim en ldelim](./personalization-functions-delim) 
+of [literal](./personalization-functions-literal). Het is in Smarty 3 ook 
+mogelijk om simpelweg beide kanten van je accolades te voorzien van een spatie.
 
+De rest van dit artikel zal je helpen deze richtlijnen te volgen.
 
 ## Smarty 2 of Smarty 3?
 
@@ -127,12 +134,9 @@ Op een paar plekken kun je echter momenteel nog geen gebruik maken van personali
 * In enquêtes
 * In Content feeds
 
- 
 ## Verder lezen
 
 * [Overzicht van variabelen](./personalization-variables.md)
 * [Overzicht van modifiers](./personalization-modifiers.md)
 * [Overzicht van functies](./personalization-functions.md)
 * [Tips en trucs](./personalization-tricks.md)
-
-

@@ -4,25 +4,25 @@ Copernica has many functions for personalization and tags for publishing
 special content.
 
 -   [Webversion and
-    linkemail](./link-to-the-webversion-of-your-email.md)
+    linkemail](./personalization-functions-linkemail.md)
     - shows email in webbrowser
--   [Mailonly and
-    webonly](./the-webonly-and-mailonly-functions.md)
+-   [mailonly](./personalization-functions-mailonly.md)
+-   [webonly](./personalization-functions-webonly.md)
     - hide/show specified content in email or browser
 -   [Unsubscribe](./the-unsubscribe-function.md)
     - adds unsubscribe link to your mail
--   [In\_selection and
-    in\_miniselection](./in-selection-and-in-miniselection.md)
+-   [in_selection](./personalization-functions-in_selection)
+-   [in_miniselection](./personalization-functions-in_miniselection.md)
     - use (mini)selections to show or hide content in your document
 -   [Loadprofile and
     loadsubprofile](./loadprofile-and-loadsubprofile.md)
     - load data from a different database and/or collection
--   [Fetch html](./the-fetch-function.md)
+-   [Fetch html](././personalization-functions-fetch.md)
     - Fetch HTML
 -   [Loadfeed
-    tag](./the-loadfeed-function.md) -
+    tag](././personalization-functions-loadfeed.md) -
     publish RSS or Atom feeds
--   [Survey tag](./publish-a-survey.md) -
+-   [Survey tag](././personalization-functions-survey.md) -
     publish your survey
 -   [Image block
     tag](./the-image-function-for-adding-images-to-your-document.md)
@@ -34,9 +34,9 @@ special content.
     tag](./the-loop-function-to-iterate-content-in-your-email.md)
     - specify how content is iterated in your documents or web pages
 -   [Webform
-    tag](./publish-your-web-form.md) -
+    tag](./personalization-functions-webform.md) -
     publish your web form
--   [LinkPDF](./the-linkpdf-function.md)
+-   [LinkPDF](./personalization-functions-linkpdf.md)
     - link to a (personalized) PDF document
 -   [Loadfile and
     Linkfile](./the-loadfile-and-linkfile-functions.md)

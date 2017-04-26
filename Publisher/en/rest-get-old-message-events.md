@@ -1,4 +1,4 @@
-# REST API: Retrieve events for a message id sent with Publisher
+# REST API: Retrieve events for a message ID sent with Publisher
 
 If you are interested in the events of a message sent with Publisher you
 can make a GET request to the following URL:
@@ -15,6 +15,7 @@ The following parameters can be added to the URL as variables:
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 
+More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 ### Start and end
 

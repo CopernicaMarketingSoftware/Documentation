@@ -42,7 +42,8 @@ zij meerdere malen geklikt of dezelfde of op verschillende links in de
 e-mail.
 
 - **Click through rate:** het aantal unieke kliks, gedeeld door het aantal
-berichten met impressie. En dit dan weer maal 100.
+berichten met impressie. En dit dan weer maal 100. Zie ook [dit artikel](./statistics-ctr) 
+dat dieper ingaat op de click-through rate.
 
 - **Totaal aantal klachten:** een klacht is een spamregistratie door de
 ontvanger. Dit cijfer geeft het totaal aantal keer weer dat een bericht
@@ -59,10 +60,11 @@ malen op de spamknop hebben gedrukt naar aanleiding van je e-mailing(s).
 totaal aantal bestemmingen maal 100.
 
 - **Kerncijfers vs. het dominante resultaat**
- Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
+Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
 impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks.
 
 ## Meer informatie
+
 * [Publisher statistieken](./statistics)
-* [Het dominante resultaat per bestemming](./the-dominant-results-of-a-mailing.md)
+* [Het dominante resultaat per bestemming](./statistics-dominant-result)

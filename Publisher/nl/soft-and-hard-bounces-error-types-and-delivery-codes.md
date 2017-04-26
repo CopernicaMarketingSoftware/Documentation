@@ -1,3 +1,20 @@
+# Error types en codes
+
+Errors zijn heel vervelend, omdat je je gebruikers dan niet kunt bereiken. 
+Dit artikel geeft achtergrond over wat voor errors er bestaan, hun codes 
+en hoe je ermee om kunt gaan.
+
+## Softbounces vs. hardbounces
+
+Wanneer een e-mail niet kan worden afgeleverd, wordt door de ontvangende
+mailserver meestal een bericht teruggestuurd, met hierin een foutcode en
+een korte omschrijving van de fout.
+
+-   Soft bounces: temporary errors. Foutcodes beginnen met een 4 (4.XX)
+-   Hard bounces: persistent errors. Foutcodes beginnen met een 5 (5.XX)
+
+## De error identificeren
+
 Het onderscheid tussen hard en softbounces lijkt evident, maar in de
 praktijk zijn er vele verschillende oorzaken mogelijk waardoor een
 e-mail niet (al dan niet tijdelijk) kan worden afgeleverd. Omdat het
@@ -30,8 +47,7 @@ Wanneer de fout is opgetreden bij jouw e-mails, kan je terugvinden in
 het tabblad **Fouten**. Ook vind je hier de **foutcode** die is
 teruggegeven.
 
-Het oplossen afleverfouten
---------------------------
+## Afleverfouten oplossen
 
 Wat je kunt doen aan fouten, verschilt per gebruiker van de software en
 per geadresseerde. Sommige gebruikers zullen de mogelijkheid hebben via
@@ -45,15 +61,6 @@ resultaten
 e-mailcampagnes](./selectie-condities-check-op-resultaten-campagnes.md)
 .
 
-E-mail foutcodes
-----------------
+## Meer informatie
 
-Wanneer een e-mail niet kan worden afgeleverd, wordt door de ontvangende
-mailserver meestal een bericht teruggestuurd, met hierin een foutcode en
-een korte omschrijving van de fout.
-
--   Soft bounces: temporary errors. Foutcodes beginnen met een 4 (4.XX)
--   Hard bounces: persistent errors. Foutcodes beginnen met een 5 (5.XX)
-
-Een lijst van alle foutcodes die kunnen worden teruggegeven vind je op
-[http://www.e-mailaddressmanager.com/tips/codes.html](http://www.emailaddressmanager.com/tips/codes.html)
+* [Statistieken](./statistics)

@@ -10,9 +10,8 @@ you can use the same variables for personalization:
 * {$city}
 * {$email}
 
-You can either use this variables directory, or you can use them as member
+You can either use this variables directly, or you can use them as member
 of one of the predefined objects {$profile}, {$subprofile} and {$destination}
-
 
 ## Mailings to profiles
 
@@ -36,11 +35,10 @@ addressee belongs. The {$profile} object has a number of properties:
 * **{$profile.referrers}**: optional array of profiles that refer to this profile using a *foreign key* field
 * **{$profile.*fieldname*}**: every profile field is accessible through {$profile.*fieldname*}
 * **{$profile.*interest*}**: every profile interest is accessible through {$profile.*interest*}, and has the value "yes" or "no"
-* **{$profile.*collection*}**: when a profile has subprofiles, each collection of subprofiles is accessible through {$profie.*collectionname*}
+* **{$profile.*collection*}**: when a profile has subprofiles, each collection of subprofiles is accessible through {$profile.*collectionname*}
 
 Simple personalizations like {$firstname} and {$lastname} can thus also be written
 as {$profile.firstname} and {$profile.lastname}.
-
 
 ## Mailings to subprofiles
 
@@ -67,7 +65,7 @@ subprofile mailings.
 ## Iterating over subprofiles
 
 All the subprofiles that are linked to a profile are accessible through the
-{$profile.*colelctionname*} variable, and you can *iterate* over these subprofiles
+{$profile.*collectionname*} variable, and you can *iterate* over these subprofiles
 and use the subprofile data for personalizing your message too. If, for example,
 you are the owner of a pet shop and you have a database with information about
 your customers, with collections for the cats and dogs that your customers have,

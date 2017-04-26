@@ -10,3 +10,9 @@ questions based on the answer to a question. An example:
 
 This can be done with advanced JavaScript and XLST programming skills, but 
 is not (yet) a standard functionality in the survey module.
+
+## More information
+
+* [Surveys](./surveys)
+* [Create a survey](./surveys-create)
+* [Question types](./surveys-question-types)

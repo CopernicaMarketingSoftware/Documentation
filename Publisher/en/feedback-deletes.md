@@ -40,6 +40,7 @@ In case you want to restore the profile, the "field" and "interest" variables
 show you the state of the profile's data as it was just before it was deleted.
 
 ## More information
+
 * [Feedback loops](./feedback-loops)
 * [Creation feedback](./feedback-creates)
 * [Update feedback](./feedback-updates)
