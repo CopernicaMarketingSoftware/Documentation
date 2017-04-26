@@ -1,3 +1,5 @@
+# Gegevens wijzigen
+
 Een gebruiker kan alleen zijn of haar eigen gegevens wijzigen. Dit kan
 vanuit het persoonlijk menu rechtsboven in de applicatie. Naast je
 NAW-gegevens kan je hier ook aangeven of je per e-mail op de hoogte wilt

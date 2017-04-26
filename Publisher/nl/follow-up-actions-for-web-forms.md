@@ -1,4 +1,5 @@
-#Opvolgacties in webformulieren
+# Opvolgacties in webformulieren
+
 In Copernica kun je gemakkelijk geautomatiseerde reacties maken op
 webformulieren. Elke keer dat een webformulier wordt ingevuld, kan er
 een opvolgactie worden geactiveerd. Je stelt in onder welke voorwaarden

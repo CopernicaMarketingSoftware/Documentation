@@ -1,3 +1,5 @@
+# Magento
+
 E-mailmarketing biedt voor webwinkeliers een uitgelezen kans om meer te
 halen uit hun relaties en meer conversie te genereren. Customer life
 cycle campagnes zijn ideale hulpmiddelen om klanten gericht te benaderen
