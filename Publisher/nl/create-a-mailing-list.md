@@ -10,11 +10,11 @@ nodig (voor de nieuwsbrief voorkeur) en een selectie, waarmee je
 profielen filtert op basis van de waarde in dat nieuwsbriefveld. Dit
 artikel legt stap voor stap uit hoe je dit zelf maakt.
 
-### Hoe maak ik een nieuwsbriefselectie?
+## Hoe maak ik een nieuwsbriefselectie?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qekOfDg9tAE" frameborder="0" allowfullscreen>  </iframe>
 
-### Nieuw databaseveld
+## Nieuw databaseveld
 
 Maak een nieuw databaseveld aan, bijvoorbeeld van het type
 meerkeuzeveld, die zowel de waardes Ja, Nee en een lege waarde
@@ -47,7 +47,7 @@ aangemaakte veld.
 
 ![../images/edit-multiple-profiles.png](../images/edit-multiple-profiles.png "https://pic.vicinity.nl/127/0/112847/edit-multiple-profiles.png")
 
-### De selectie maken
+## De selectie maken
 
 Je selectie mag alleen profielen bevatten die de waarde 'Ja' in het veld
 nieuwsbrief hebben. Profielen die zich uitschrijven worden automatisch
@@ -68,7 +68,7 @@ Sla de selectie op. Je selectie is nu aangemaakt en zal automatisch
 worden opgebouwd. Copernica zorgt er verder voor dat de selectie altijd
 up to date is en blijft (en dus altijd de juiste profielen bevat).
 
-### Tot slot
+## Tot slot
 
 Geweldig! Je hebt nu een database, je hebt contacten geimporteerd en je
 hebt een selectie gemaakt die automatisch de uitschrijvers wegfiltert.
