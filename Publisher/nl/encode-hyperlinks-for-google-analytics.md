@@ -1,3 +1,5 @@
+# Hyperlinks coderen voor Google Analytics
+
 Copernica geeft u inzicht in de statistieken van een bepaalde campagne,
 zoals het aantal kliks, impressies en foutmeldingen bij een e-mailing.
 Het bezoekersgedrag en de conversies op je website zijn met die gegevens

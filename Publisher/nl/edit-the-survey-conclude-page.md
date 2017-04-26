@@ -1,3 +1,5 @@
+# Bedanktpagina voor je enquête
+
 Deelnemers van een enquête worden na het invullen doorgestuurd naar de
 bedanktpagina. Deze kan je natuurlijk zelf van inhoud voorzien.
 

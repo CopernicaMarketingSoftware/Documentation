@@ -1,4 +1,6 @@
-Gebruikers van Copernica hebben nu de mogelijkheid om inhoud van
+# Markdown
+
+Gebruikers van de Publisher hebben nu de mogelijkheid om inhoud van
 [artikelen in
 markdown](https://www.copernica.com/nl/ondersteuning/hoe-je-markdown-gebruikt-in-copernica "Markdown gebruiken in Copernica")
 op te maken. Deze functionaliteit is zojuist geïntroduceerd. Markdown is

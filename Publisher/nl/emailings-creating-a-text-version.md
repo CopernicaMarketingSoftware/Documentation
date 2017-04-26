@@ -1,4 +1,4 @@
-E-mailings: Tekstversie aanmaken
+# E-mailings: Tekstversie aanmaken
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 
