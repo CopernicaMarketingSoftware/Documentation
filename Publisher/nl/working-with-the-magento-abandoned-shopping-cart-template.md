@@ -1,3 +1,5 @@
+# Abandoned Shopping Carts campagne
+
 In dit artikel gaan we in op de Abandoned Shopping Cart e-mail. Hoe
 werkt het template en hoe kan je deze aanpassen naar je eigen smaak? De
 benodigde gegevens (demo Magento template en demo database) kan je

@@ -1,3 +1,5 @@
+# Standaardbestemming
+
 In de applicatie kan elke gebruiker een eigen **standaardbestemming**
 instellen. De standaardbestemming is het (sub)profiel dat gebruikt wordt
 voor jouw **testverzendingen** van e-mails en sms-berichten. Ook is het

@@ -1,3 +1,5 @@
+# Wordpress
+
 Ruim 25% van marketing-website op het internet gebruikt WordPress als
 CMS. Maak jij voor corporate site, campagne pagina’s of webshop gebruik
 van het WordPress CMS? Integreer dan eenvoudig WordPress met Copernica!
