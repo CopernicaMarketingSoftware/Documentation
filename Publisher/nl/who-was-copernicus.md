@@ -1,3 +1,5 @@
+# Copernica
+
 Achter elke merknaam schuilt zo wel een verhaal. Voor Copernica is dat
 niet anders. De titel en naam verraden het al, Copernica dankt zijn naam
 aan de Poolse wetenschapper Nicolaus Copernicus. Copernicus leefde van
@@ -21,9 +23,4 @@ aarde.
 
 Copernicus zag de zon als centrum van het universum, Copernica ziet
 krachtige en gebruiksvriendelijke marketingsoftware als centrum van jouw
-succesvolle marketingacties met
-[e-mailings](http://www.copernica.com/nl/functies/e-mailings "E-mailings"),
-[webpagina's](http://www.copernica.com/nl/functies/webpaginas "Webpagina's"),
-[mobile](http://www.copernica.com/nl/functies/mobile "Mobile"),
-[social](http://www.copernica.com/nl/functies/social "Social") en
-[print](http://www.copernica.com/nl/functies/print "Print").
+succesvolle marketingacties met e-mailings, webpagina's, mobile, social en print.

@@ -1,5 +1,4 @@
-[Download de volledige
-infographic](../images/What-is-lead-scoring-Copernica.png "Wat is lead scoring")
+# Lead scoring
 
 Lead scoring komt voort uit de behoefte zo relevant mogelijk te zijn.
 Tot nu toe richtten de meeste organisaties zich enkel op het verzamelen
@@ -62,9 +61,6 @@ volgende lead scoring toe:
 -   Geen geopende mail in de laatste drie maanden: - 10
 -   Geen klik in de laatste 6 maanden: - 15
 -   Etcetera
-
-[![Een Copernica infographic over het effect van lead
-scoring](../images/What-is-lead-scoring-Copernica.png "Wat is lead scoring")](../images/What-is-lead-scoring-Copernica.png'%20title='Wat%20is%20lead%20scoring)
 
 Iedereen die een positieve score haalt, is betrokken. Waarbij je de
 relaties of klanten die een hogere score dan 45 behalen kan bestempelen

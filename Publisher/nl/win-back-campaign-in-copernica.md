@@ -1,6 +1,6 @@
-We schreven het al eens
-[eerder](https://www.copernica.com/nl/blog/5-conversion-boosting-e-mail-campaigns),
-gemiddeld verliezen bedrijven per 5 jaar ongeveer de helft van hun
+# Win-back campagne
+
+Gemiddeld verliezen bedrijven per 5 jaar ongeveer de helft van hun
 klanten. Daarnaast is het terugwinnen van een oude klant meestal
 eenvoudiger dan het binnenhalen van een nieuwe. Alle reden om een
 win-back campagne in te richten voor je Copernica account.

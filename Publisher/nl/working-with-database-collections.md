@@ -1,3 +1,5 @@
+# Collecties
+
 Databases in Copernica kunnen worden uitgebreid met een extra laag
 gegevens. Zo'n extra laag noemen we een **collectie**.
 

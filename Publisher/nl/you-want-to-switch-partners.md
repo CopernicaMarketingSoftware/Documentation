@@ -1,3 +1,5 @@
+# Wisselen van partner
+
 Vanzelfsprekend kan je zonder al te veel poeha van partner wisselen.
 Voordat we dit doorzetten, willen we graag nog even laten weten maken
 wat dit betekent voor jouw organisatie en voor de betrokken partners.

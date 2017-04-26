@@ -1,3 +1,5 @@
+# SPF records
+
 Een SPF (Sender Policy Framework) record (gedefinieerd in [RFC
 4408](http://www.openspf.org/Specifications "Open SPF specificaties"))
 is een record (meerbepaald een TXT-record) binnen de
