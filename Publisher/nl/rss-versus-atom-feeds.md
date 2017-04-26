@@ -1,6 +1,6 @@
 # RSS en Atom verschillen
 
-For elke feed die je samenstelt onder *Content* ontvang je een Atom en 
+Voor elke feed die je samenstelt onder *Content* ontvang je een Atom en 
 een RSS versie. Dit artikel legt de verschillen tussen de twee uit.
 
 ## RSS or Atom

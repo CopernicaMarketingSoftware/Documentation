@@ -10,6 +10,7 @@ Als uit je statistieken blijkt dat veel van je mails niet aankomen kun je
 dit [artikel over errors](./soft-and-hard-bounces-error-types-and-delivery-codes) 
 bekijken voor meer informatie.
 
+
 ## Individuele mailing statistieken
 
 Onder het *Mailings* menu kun je statistieken vinden, waar je 
@@ -17,16 +18,19 @@ de resultaten voor een specifieke mailing kunt bekijken in een volledig
 rapport. [Dit artikel](./view-the-results-of-your-mailing) kun je een 
 overzicht vinden over de betekenis van deze statistieken.
 
+
 ## Mobiele mailings
 
 Het is met ook mogelijk om sms mailings te versturen, waarvan helaas alleen 
 bekend is of deze zijn afgeleverd. Zie [dit artikel](view-the-results-of-a-mobile-mailing) 
 voor meer informatie over de statistieken van een mobiele mailing.
 
+
 ## Account mailing statistieken
 
 Je kunt ook statistieken bekijken over al je mailings bij elkaar. Deze 
 algemene statistieken worden verder toegelicht in [dit artikel](./statistics-account-mailings).
+
 
 ## Account statistieken
 
@@ -40,11 +44,13 @@ Als je een website bij Copernica hebt aangemaakt die actief is wordt er
 informatie bijgehouden over hoe de gebruikers zich gedragen. Zie 
 [dit artikel](./statistics-webpage) voor meer informatie.
 
+
 ## Kerncijfers over een periode
 
 In veel van de statistieken komen [kerncijfers](./statistics-key-figures) voor,
-, waar je informatie vindt over een specifieke mailing, template of meerdere 
+waar je informatie vindt over een specifieke mailing, template of meerdere 
 mailings in een periode.
+
 
 ## Statistieken delen
 

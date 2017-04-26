@@ -52,5 +52,3 @@ definieer zelf doelgroepen met behulp van selecties binnen Copernica.
 
     [Meer over het importeren/exporteren van
     data](./import-and-export-data.md "Importeer en exporteer data")
-
-
