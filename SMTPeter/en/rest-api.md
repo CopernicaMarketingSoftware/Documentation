@@ -45,6 +45,6 @@ The REST API is comprehensive and provides a great number of options for you:
 * [Let SMTPeter create MIME data](rest-send-json)
 * [Sending based on templates](rest-send-templates)
 * [Sending mail](rest-send-advanced)
-* [API reaction](rest-api-reaction)
+* [API response](rest-api-reaction)
 
 *All available REST calls can be found right [here](all-rest-calls).*
