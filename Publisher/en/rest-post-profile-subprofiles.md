@@ -2,9 +2,12 @@
 
 To add subprofiles to a profile an HTTP post request can be sent to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
-The $id should be replaced with the ID of the profile you want to add a subprofile to. The new subprofile of the profile can be placed in the body of the message.
+The $id should be replaced with the ID of the profile you want to add a
+subprofile to. The $collectionID should be replaced with the ID of the
+collection in which the subprofile should be stored. The new subprofile
+of the profile can be placed in the body of the message.
 
 ## Body data
 
@@ -33,7 +36,7 @@ The following PHP script demonstrates how the API method can be called.
     );
     
     // do the call
-    $api->post("profile/1234/subprofiles", $data);
+    $api->post("profile/1234/subprofiles/321", $data);
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
