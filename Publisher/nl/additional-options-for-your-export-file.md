@@ -1,7 +1,7 @@
 # Extra instellingen bij het exporteren
 
 Wanneer je profielen en/of subprofielen gaat exporteren vanuit
-Copernica, kan je desgewenst nog wat extra instellingen doen. De meeste
+de Publisher, kan je desgewenst nog wat extra instellingen doen. De meeste
 exports functioneren prima met de standaard instellingen. In dit artikel
 worden de opties in het kort toegelicht.
 

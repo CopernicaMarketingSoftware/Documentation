@@ -6,8 +6,7 @@ programmeerkennis je eigen website in elkaar en zet deze online.
 Daarnaast heb je ook de ruimte om je bestaande HTML-pagina's in te laden
 en te gebruiken in Copernica.
 
-Webpagina's maken met templates
--------------------------------
+## Webpagina's maken met templates
 
 ![Webpagina's maken met
 templates](../images/nl-webpaginas-templates.png "Webpagina's maken met templates")

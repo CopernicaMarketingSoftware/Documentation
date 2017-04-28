@@ -1,3 +1,5 @@
+# Standaard afzenderadressen
+
 In sommige accounts is het gewenst alle verzendingen vanuit dezelfde
 afzender te verrichten. Vanuit Beheer kan je daarom een of meerdere
 standaard afzenderadressen instellen.

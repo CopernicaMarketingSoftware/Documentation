@@ -1,3 +1,5 @@
+# DomainKey Identified Mail
+
 DKIM staat voor DomainKey Identified Mail en is een stukje code in de
 DNS. Hiermee zet je een unieke digitale handtekening in de header van je
 e-mail die jou bestempelt als veilige afzender. Ontvangende mailservers

@@ -1,3 +1,5 @@
+# Smarty modifiers
+
 In een database kunnen typefouten of stijlfouten voorkomen in tekst.
 Zeker wanneer een deel van de informatie binnenkomt via
 aanmeldformulieren door relaties zelf ingevuld. Om in publicaties hun

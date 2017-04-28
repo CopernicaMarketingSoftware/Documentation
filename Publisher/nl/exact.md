@@ -1,3 +1,5 @@
+# Exact
+
 De Exact © Copernica-connector biedt je alles wat je van een
 professionele e-mailmarketingoplossing & CRM-systeem mag verwachten! Met
 de connector zijn beide softwaresystemen naadloos met elkaar te

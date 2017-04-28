@@ -9,7 +9,7 @@ door de beheerder van het account aangepast worden. Naast de
 mogelijkheid om de omschrijving van het account te wijzigen, vind je
 hier nog een aantal instellingen die hieronder verder worden toegelicht.
 
-### **Opmaak**
+## **Opmaak**
 
 Bij bepaalde licentietypen is het mogelijk om de applicatie te tonen met
 een eigen lay-out. Deze lay-out wordt automatisch overgenomen in de

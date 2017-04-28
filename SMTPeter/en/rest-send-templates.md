@@ -1,96 +1,83 @@
-# Sending based on templates
+# Sending emails based on templates
 
-The templates that can be managed via the dashboard, are also accessible
-through the REST API. The API offers methods to download templates, and
-methods to edit or create templates. It is also 
-possible to [send an email](rest-api) using these templates.
-
-## Fetch templates
-
-To get a full list of all templates in your environment, simply make a HTTP 
-GET call to the following URL (remember to to add your API key to the URL):
-
-```text
-https://www.smtpeter.com/v1/templates/{start}/{length}
-```
-
-The "templates" method is only available using the HTTP GET method. The url may 
-contain a start and length value to limit the list of templates that is returned. 
-If these limits are ommitted, the default values of 0 and 100 are
-used. This call returns a JSON array in the following format:
-
-```json
-[
-    {
-        "id"    : 1,
-        "name"  : "Test email"
-    }
-    {   "id"    : 2,
-        "name"  : "Test 123"
-    }
-]
-```
-
-For every template the unique identifier is returned, and the template name.
-If you want to have more properties, you need to fetch a template based on
-its unique ID.
+A couple of examples have been given ([1](rest-send-json "Let SMTPeter create a MIME"), 
+[2](rest-mime)) about what kind of data to send to SMTPeter for sending mails.
+Besides these options you can also use [Responsive Email](https://www.responsiveemail.com/)
+templates. The usage of Responsive Email templates has a couple of advantages
+over sending a Mime or letting SMTPeter create the mime based on your to,
+html, text, etc. Firstly, you can create the template with the extensive
+*drag-and-drop* editor in the dashboard, so you don't have to write the raw
+HTML yourself. Not only is it easy to create a template, you also have
+a clear overview of all your templates in the dashboard. A second benefit
+of using template is that mails based on a template are responsive. This
+means that a mail opened on a regular PC can be displayed differently than
+a mail opened on a mobile device like tablet or smart phone. This implies
+that your mail always looks great!
 
 
-## Fetching a single template
+## Use a template
 
-Once you know the ID of a template, the REST API can be used to fetch the
-full template source with a "HTTP GET" call.
-
-```text
-https://www.smtpeter.com/v1/template/{ID}/{format}
-```
-
-You must provide the identifier of the template, but the format is optional. 
-When the format is not provided, the template will be returned in JSON 
-format. But you can also ask SMTPeter to return the template in other formats:
-
-- JSON: return the template in JSON format;
-- HTML: return the template in HTML format, optimized for email clients;
-- Webversion: return the template in HTML format, optimized for web clients;
-- MIME: return the template in MIME format, with externally hosted images;
-- Embedded: return the template in MIME format, with embedded images;
-- Text: return the text version of the template.
-
-You can provide extra personalization variables in the GET request, that are
-uses to personalize the template. If no variables are provided, the template
-will not be personalized.
-
-
-## Creating templates
-
-To create a new template you can send a HTTP POST request to SMTPeter:
-
-```text
-https://www.smtpeter.com/v1/template/{format}
-```
-
-Inside the body data, you must pass the JSON source of your template. The
-full specification of the supported properties can be found on the
-[ResponsiveEmail.com website](https://www.responsiveemail.com).
-
-The API returns a link to the new template in the "Location" header of the
-HTTP response, and a small JSON object holding the template ID. You can 
-optionally pass a format-name to the URL, to tell SMTPeter to redirect to an 
-other URL instead. Note that this "format" option only changes the "location"
-header in SMTPeter's answer; the body data of your POST call must be JSON.
-
-Example request:
+In SMTPeter's dashboard you have access to the the extensive *drag-and-drop*
+editor. Here you can create your *responsive email* template, modify it,
+and manage the. Each template has its own ID that you can use when sending
+an email. A possible JSON for using a template that you use in your POST
+request looks like this:
 
 ```json
-POST /v1/template/html?access_token=yourtoken
-Host: www.smtpeter.com
-Content-Type: application/json
-
-{ "name" : "template..." }
-
-HTTP/1.1 201 Created
-Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
-Content-Type: application/json
-
-{ "id" : 2 }
+{
+    "recipient":    "john@doe.com",
+    "template":     12
+}
 ```
+In this case template with ID 12 will be sent to `john@doe.com`. Since the
+templates use [Responsive Email](https://www.responsiveemail.com/) and
+Responsive Email supports JSON, it is also possible to send the template
+as a JSON. This can be a string or a real JSON.
+
+
+## Using personalization and templates
+
+Just like mails where you create your own HTML or MIME, you can use personalization
+data in mails based on templates. If you have only one recipient you can
+add the data by specifying a `data` property in the JSON like:
+
+```json
+{
+    "recipient":    "john@doe.com",
+    "template":     12 | **or string/object**,
+    "data": {
+        "firstname":    "John",
+        "lastname":     "Doe"
+    }
+}
+```
+If you have multiple recipients you can add the data per recipient like:
+
+
+```json
+{
+    "recipients" : [
+        "jane@doe.com": {
+            "firstname": "Jane",
+            "lastname": "Doe",
+            "kids" : ["Jacky", "Joe"]
+        },
+        "john@doe.com": {
+            "firstname": "John",
+            "lastname": "Doe",
+            "kids" : ["Jacky", "Joe"]
+        }
+    ],
+    "template":     12 | **or string/object**,
+}
+```
+
+In the template you can use the variables `{$firstname}`, `{$lastname}`,
+and `{$kids}`. For more information about the using personalization we
+refer to the links below.
+
+* [Using personalization ](personalization)
+* [Modifiers overview](personalization-modifiers)
+
+<!--- @todo how to set a to --->
+<!--- @todo manage templates via rest --->

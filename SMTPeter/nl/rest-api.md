@@ -49,6 +49,7 @@ De REST API is uitgebreid en geeft je vrijheid in het maken van keuzes:
 
 * [MIME data versturen](rest-mime)
 * [MIME data door SMTPeter laten versturen](rest-send-json)
+* [Versturen naar meerdere afzenders](rest-send-multiple-recipients)
 * [Versturen op basis van een template](rest-send-template)
 * [Geavanceerde verzendopties](rest-send-advanced)
 * [Terugkoppeling](rest-api-reaction)

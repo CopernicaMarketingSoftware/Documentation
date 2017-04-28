@@ -1,4 +1,4 @@
-# Tekstversie
+# De tekstversie van een e-mail
 
 Tegelijk met het HTML document kan er een tekstversie worden
 meegestuurd. Deze is bedoeld voor e-mail clients die geen HTML e-mails

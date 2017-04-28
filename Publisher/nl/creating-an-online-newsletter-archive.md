@@ -12,6 +12,6 @@ vermelden, als volgt:
 
 `{linkemail template="name of  template" document="name of document"}`
 
-#### **Voorbeeld van linkemail tag in een webpagina**
+## **Voorbeeld van linkemail tag in een webpagina**
 
 `<a  href="{linkemail template='name of template' document='newsletter  jan'}>Read our January edition</a><br/> <a  href="{linkemail template='name of template' document='newsletter  feb'}>Read our February edition</a>`

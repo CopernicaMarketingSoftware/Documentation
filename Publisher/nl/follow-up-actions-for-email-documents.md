@@ -1,4 +1,6 @@
-Je kan opvolgacties instellen bij e-maildocumenten. Wanneer het document
+# Opvolgacties in de Publisher
+
+Je kunt opvolgacties instellen bij e-maildocumenten. Wanneer het document
 is verzonden, of er is bij de ontvanger een bepaald resultaat
 geregistreerd, kan een opvolgactie worden uitgevoerd. Je bepaalt zelf
 bij welke gebeurtenis en onder welke omstandigheden de opvolgactie moet

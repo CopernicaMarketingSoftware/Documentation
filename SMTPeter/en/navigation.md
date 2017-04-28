@@ -3,6 +3,8 @@
 * [Send with REST API](rest-api)
     * [Send MIME data](rest-mime)
     * [Let SMTPeter create MIME data](rest-send-json)
+    * [Multiple recipients](rest-send-multiple-recipients)
+    * [Personalization of emails](rest-send-personalize)
     * [Sending based on templates](rest-send-templates)
     * [Advanced send options](rest-send-advanced)
     * [API reaction](rest-api-reaction)

@@ -1,3 +1,5 @@
+# Databaserestricties
+
 Databaserestricties zijn regels die je kunt instellen op een database of
 collectie. Wanneer iemand data wilt toevoegen of wijzigen in een
 database met restricties (via de applicatie en via webformulieren), moet

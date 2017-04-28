@@ -1,4 +1,5 @@
-#Database en collectie veld types
+# Database en collectie veld types
+
 Je databases en collecties in Copernica zijn opgebouwd met
 databasevelden. Er zijn verschillende veldtypes beschikbaar, ieder
 geschikt voor het opslaan van een specifiek soort gegevens. Er zijn

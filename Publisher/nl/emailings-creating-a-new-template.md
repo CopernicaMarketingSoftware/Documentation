@@ -1,5 +1,4 @@
-In deze Copernica-tutorial leer hoe je een nieuwe e-mailtemplate
-aanmaakt.
+# E-mailtemplates aanmaken
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3wUPASnAKY" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
 
