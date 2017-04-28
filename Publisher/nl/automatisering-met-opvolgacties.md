@@ -1,4 +1,5 @@
 # Automatisering met opvolgacties
+
 In Copernica gebruik je opvolgacties om campagnes te automatiseren. Een opvolgactie is een vooraf ingestelde reactie op een gebeurtenis, bijvoorbeeld een klik of een profielwijziging. Zodra de gebeurtenis plaatsvindt, wordt Copernica aangespoord om een actie uit te voeren, die je zelf instelt. Je kunt ervoor kiezen om deze actie direct uit te voeren, maar je kunt ook een vertraging instellen. Je kunt zo veel opvolgacties instellen en aan elkaar koppelen als je zelf wilt. De MarketingSuite ondersteunt op dit moment nog geen opvolgacties. In de publisher beheer je opvolgacties met de zogeheten *Follow-up manager*. Je vindt hem onder het tabblad *Follow-ups*, of in het *Document*-menu als je in een document zit. Door te klikken op de elementen in de boom van opvolgacties kun je ze bewerken of nieuwe aanmaken.
 
 

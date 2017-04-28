@@ -1,4 +1,4 @@
-E-mailings: Statistieken
+# E-mailings: Statistieken
 
 -   [Terug naar de video's](./video-tutorials.md "Video's")
 

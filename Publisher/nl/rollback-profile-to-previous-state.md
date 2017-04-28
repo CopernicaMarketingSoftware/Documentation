@@ -1,6 +1,8 @@
+# Rollback profile
+
 Als je per ongeluk drastische wijzigingen aan een (sub)profiel hebt
 gemaakt en je wilt dit terugdraaien, dan kan je gebruik maken van de
-functie '**(sub)profiel terughalen**'. Deze vind je bij het betreffende
+functie '**(sub)profiel terughalen**'. Deze vind je in de Publisher bij het betreffende
 profiel, achter het tabblad '**Geschiedenis'**.
 
 ![Rollback profile](../images/rollback.png)

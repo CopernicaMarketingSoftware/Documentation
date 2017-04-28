@@ -9,8 +9,7 @@ e-mailadressen een negatieve invloed op je e-mailreputatie. Gelukkig
 heeft Copernica verschillende mogelijkheden om je verzendlijst
 grotendeels automatisch te optimaliseren.
 
-Een standaard selectie indeling voor een optimale email verzendlijst
---------------------------------------------------------------------
+## Een standaard selectie indeling voor een optimale email verzendlijst
 
 Veel van onze gebruikers hanteren een standaard selectie indeling voor
 hun databasebeheer. Daarmee halen ze automatisch alle foutieve en
@@ -135,8 +134,7 @@ verzendselectie. Daarmee heb je altijd een ontdubbelde verzendselectie
 met werkende e-mailadressen die geïnteresseerd zijn in jouw
 e-mailmarketingcampagnes.
 
-Hou je e-mailmarketingstatistieken in de gaten
-----------------------------------------------
+## Hou je e-mailmarketingstatistieken in de gaten
 
 Het aanmaken van deze verzendselectie zal bij de eerstkomende verzending
 drie resultaten hebben:
@@ -165,5 +163,5 @@ te houden.
     mobiele telefoon op je links goed kunnen klikken.
 
 Ik ben benieuwd wat het opschonen van je e-mailverzendlijst jou heeft
-opgeleverd. Stuur me [een email](mailto:ralph@copernica.com) met je
+opgeleverd. Stuur ons [een email](mailto:info@copernica.com) met je
 resultaten.

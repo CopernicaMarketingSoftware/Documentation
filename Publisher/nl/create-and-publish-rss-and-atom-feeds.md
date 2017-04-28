@@ -24,7 +24,7 @@ stappen.
 4.  [Feed publiceren in e-mailings of
     webpagina](./the-loadfeed-function.md)
 
-### Overige artikelen
+## Overige artikelen
 
 -   [Externe RSS of Atom feed in document
     laden](./can-i-load-an-external-feed-in-my-document.md)

@@ -1,7 +1,7 @@
 # Let SMTPeter create MIME data
 
 If you use the [send method of the REST API](rest-api) to send email,
-you normally include a "mime" property holding the full MIME object
+you can include a "mime" property holding the full MIME object
 that you want to send. However, you can also let SMTPeter create the
 MIME string for you. If you do not include a "mime" property in your
 request, but use separate "subject", "text", "html" and so properties,
@@ -20,19 +20,20 @@ supported propreties:
 | extra              | Extra "x-\*" headers                 |
 | attachments        | Attachments to be added to the mail  |
 
+
 ## Email addresses
 
 The "from", "to" and "cc" fields decide which email addresses are going
-to appear in the MIME object. The "from" variable must be a **single** email 
+to appear in the MIME object. The "from" variable must be a **single** email
 address, but there is no limit for the number of addresses that you use
 for the "to" and the "cc" fields.
 
 The notation for the email addresses in the "from", "to" and "cc" fields
-is much more flexible than for the "envelope" and "recipient" fields. 
-You can include display names or use angle brackets, and for the "to" and 
-"cc" fields you can also use comma separated lists. Note that the address 
-set in these "from", "to" and "cc" fields just decide what addresses are 
-included in the MIME data, and do not have to be identical to the 
+is much more flexible than for the "envelope" and "recipient" fields.
+You can include display names or use angle brackets, and for the "to" and
+"cc" fields you can also use comma separated lists. Note that the address
+set in these "from", "to" and "cc" fields just decide what addresses are
+included in the MIME data, and do not have to be identical to the
 addresses used in the "envelope" and "recipient" fields (although it
 is good practice to send email to the addresses mentioned in "to").
 
@@ -64,7 +65,7 @@ are self-explanatory.
 
 ## Unsubscribe header
 
-If you want to add a "list-unsubscribe" header to your email, you can 
+If you want to add a "list-unsubscribe" header to your email, you can
 add the JSON "unsubscribe" option. You can set it to a string holding
 either a URL or an email address, or an array holding both:
 
@@ -99,6 +100,7 @@ Or to both an email address and a URL:
 }
 ```
 
+
 ## Extra "x-*" headers
 
 The "extra" property can be used in case you want to add custom headers
@@ -117,6 +119,7 @@ other headers, you may only add headers with a "x-*" prefix.
 }
 ```
 
+
 ## Attachments
 
 With the "attachments" property you can attach files to your mailing. SMTPeter
@@ -128,15 +131,15 @@ Moreover, you can optionally specify the type of data that you send.
 
 ```json
 {
-    "attachments": [ 
+    "attachments": [
         {
             "url": "https://www.example.com/attachment1.pdf"
-        }, 
+        },
         {
             "data": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUgdGV4dCBmaWxlLi4=",
             "name": "test.txt",
             "type": "text/plain"
-        } 
+        }
     ]
 }
 ```

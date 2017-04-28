@@ -6,7 +6,7 @@ applicatie kan bijvoorbeeld een CRM syteem zijn. Wanneer een profiel of
 subprofiel is aangemaakt, gewijzigd of verwijderd in jouw database wordt
 het andere systeem automatisch op de hoogte gebracht van de wijziging.
 
-Deze functionaliteit kan worden gevonden bij *Profielen \>
+Deze functionaliteit kan worden gevonden in de Publisher bij *Profielen \>
 Databasebeheer \>***Callback URLs**
 
 Er wordt een HTTP POST verzoek naar de callback url verzonden. Dit

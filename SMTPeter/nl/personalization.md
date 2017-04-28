@@ -1,4 +1,4 @@
-# Personalisatie
+# Personalisatie gebruiken
 
 SMTPeter biedt vele mogelijkheden om e-mails te personaliseren. Personalisatie
 is belangrijk om een goede indruk te maken en de aandacht van de lezer vast 

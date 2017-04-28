@@ -1,3 +1,5 @@
+# Account Settings
+
 The account settings are for the entire account, and can only be edited
 by the administrator of the account. Besides the possibility of changing
 the description of the account, you will find a few other settings that

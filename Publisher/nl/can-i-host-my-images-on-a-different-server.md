@@ -16,9 +16,9 @@ op onze server zonder dat je deze zelf hoeft te uploaden naar Copernica.
 afbeelding gevonden met Google images is zo gekopieerd. Maar bestaat
 deze afbeelding nog over 2 weken?*
 
-#### Afbeeldingen uit e-mailing automatisch opslaan op onze server
+## Afbeeldingen uit e-mailing automatisch opslaan op onze server
 
-Kies bij het instellen van een bulkmailing in het tabblad **Opties**voor
+Kies bij het instellen van een bulkmailing in de Publisher het tabblad **Opties**voor
 de optie om externe afbeeldingen op onze servers te bewaren. De
 afbeeldingen worden nu op onze picservers opgeslagen en zullen tot in de
 eeuwigheid beschikbaar blijven.

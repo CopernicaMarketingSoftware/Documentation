@@ -1,11 +1,16 @@
-# Add personal data to a mail
+# Personalize emails
 
-This page describes how you can add data to your mail that can be used for
-personalization. Adding data for personalization is only possible
-if you are sending your mail using the [REST-API](rest-send). 
+As you could have [read](rest-send-multiple-recipients) you can send a mail
+to multiple recipients with one POST request. Sometimes you indeed want
+to send identical mails to multiple persons, yet, often you want to give
+each mail a personal touch. With SMTPeter this is possible too. SMTPeter
+allows you to add some code in your message that will be replaced with data
+specific for each recipient.
 
-<!--- @todo make this uniform with responsive --->
-
+The way how you indicate what parts of a message needs to be replaced with
+personal data is based on [SMARTY](http://www.smarty.net/). SMARTY makes
+it easy to combine text and code, but more on this later. Firstly, we discuss
+how personalization data can be added to a POST request.
 
 ## Adding data for a single recipient mail
 
@@ -128,3 +133,10 @@ Since the "envelope" and "recipient" data are automatically extracted from
 the mail for you. You can use these without specifying them as a data
 property. Note that this makes sending out your mass mails with only one
 REST call easy.
+
+If you want to send personalized emails you also may be interest in using
+our [e-mail templates](rest-send-template). 
+
+
+* [Using personalisatie](personalization)
+* [Modifiers overview](personalization-modifiers)
