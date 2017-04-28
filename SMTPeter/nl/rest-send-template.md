@@ -1,4 +1,4 @@
-# Versturen op basis van een template
+# Emails versturen op basis van een template
 
 Er zijn een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) van hoe je data naar SMTPeter stuurt voor het versturen
@@ -11,6 +11,9 @@ HTML schrijven. Daarnaast zijn de mails die hiermee verzonden worden
 responsive, Dit betekent dat een email geopend op een PC een andere opmaak
 kan hebben dan de een email geopend op een tablet of smartphone. Hierdoor
 ziet uw mail er altijd goed uit!
+
+
+## Gebruik een template
 
 In het SMTPeter dashboard heb je toegang tot de uitgebreide *drag-and-drop* editor.
 Hier kun je *responsive e-mail* templates maken, bewerken en beheren. Elke template
@@ -42,13 +45,13 @@ als data property, zoals in onderstaand voorbeeld.
     "recipient":    "john@doe.com",
     "template":     12 | **or string/object**,
     "data": {
-        "firstname":    "John",
-        "lastname":     "Doe"
+        "voornaam":    "John",
+        "achternaam":     "Doe"
     }
 }
 ```
 
-Als je meerdere recpients hebt dan kun je de data per recipient toevoegen±
+Als je meerdere recpients hebt dan kun je de data per recipient toevoegen:
 
 ```json
 {
@@ -69,6 +72,12 @@ Als je meerdere recpients hebt dan kun je de data per recipient toevoegen±
 ```
 
 In de template kun je vervolgens de variabelen `{$voornaam}`, `{$achternaam}`
-en `{$kinderen}` gebruiken.
+en `{$kinderen}` gebruiken. Voor meer informatie over personaliseren verwijzen
+we je naar de onderstaand links. 
+
+* [Personalisatie gebruiken](personalization)
+* [Overzicht modifiers](personalization-modifiers)
+
 
 <!--- @todo how to set a to --->
+<!--- @todo manage templates via rest --->
