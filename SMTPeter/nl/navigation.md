@@ -7,7 +7,7 @@
     * [Personaliseren van e-mails](rest-send-personalize)
     * [Versturen op basis van een template](rest-send-template)
     * [Geavanceerde verzendopties](rest-send-advanced)
-    * [Terugkoppeling](rest-api-reaction)
+    * [API respons](rest-api-reaction)
 * [Verzenden via SMTP](smtp-api)
     * [Aanmaken van credentials](smtp-credentials)
     * [Domeinnaam en poorten](smtp-ports)
