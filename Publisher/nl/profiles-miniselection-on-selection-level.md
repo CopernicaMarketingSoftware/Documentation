@@ -3,12 +3,16 @@ Profielen: Miniselectie op selectieniveau
 In deze Copernica-tutorial leer je hoe je een miniselectie maakt op
 selectieniveau.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w7NUxzMpfKY?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
+```html
+<iframe 
+	width="560" height="315" 
+	src="https://www.youtube.com/embed/w7NUxzMpfKY?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" 
+	frameborder="0" allowfullscreen="allowfullscreen">  
+</iframe>
+```
 
--   [Terug naar de video's](./video-tutorials.md "Video's")
 
-Wat is een miniselectie op selectieniveau?
-------------------------------------------
+## Wat is een miniselectie op selectieniveau?
 
 Als je een [miniselectie aanmaakt](./profiles-creating-a-miniselection.md),
 wil je die gegevens over het algemeen ook beschikbaar hebben op
@@ -32,8 +36,8 @@ subprofielen beschikbaar hebben op profielniveau.
 
 Dat kan met een miniselectie op selectieniveau.
 
-Hoe maak ik een miniselectie op selectieniveau?
------------------------------------------------
+
+## Hoe maak ik een miniselectie op selectieniveau?
 
 -   Ga in Copernica naar ‘Profielen’
 -   Selecteer aan de linkerkant de database waarin je wilt werken

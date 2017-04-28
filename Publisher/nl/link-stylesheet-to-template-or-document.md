@@ -11,8 +11,8 @@ voor alle documenten die op basis van deze stylesheet zijn gemaakt.**
 
 ![Stijlblokken](../images/nl-stylesheet.png)
 
-Stijlblokken
-------------
+## Stijlblokken
+
 
 Enkele belangrijke e-mail clients negeren stijl blokken die zijn
 toegevoegd aan de header van een HTML-template. Als gevolg hiervan,
@@ -24,14 +24,18 @@ worden omgezet naar inline style attributen.
 
 ### Voorbeeld
 
-    <style>
-        p {color: red}
-    </style>
+```html
+<style>
+    p {color: red}
+</style>
+```
 
 Na de conversie zal elk paragraaf (\<p\>) element in de template en/of
 document de stijlregel hebben toegevoegd als inline attribuut:
 
-    <p style="color: red">
+```html
+<p style="color: red">
+```
 
 Bij het instellen van de stijl van het document, zijn er verschillende
 opties voor het omzetten:

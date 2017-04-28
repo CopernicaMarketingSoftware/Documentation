@@ -1,18 +1,20 @@
-# Profielen: Collectie aanmaken
+# Profielen: collectie aanmaken
 
 In deze Copernica-tutorial leer je hoe je een collectie aanmaakt in je
 database.
 
--   [Terug naar de
-    video's](./video-tutorials.md "Video's")
+```html
+<iframe 
+    width="560" height="315" 
+    src="https://www.youtube.com/embed/5bxY6SlVU2Y?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" 
+    frameborder="0" 
+    allowfullscreen="allowfullscreen">  
+</iframe>
+```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5bxY6SlVU2Y?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
+## Wat zijn collecties?
 
-Wat zijn collecties?
---------------------
-
-Als je in je
-[database](./profiles-creating-a-database.md)
+Als je in je [database](./profiles-creating-a-database.md)
 niet alleen ‘platte’ informatie als contactgegevens wilt opslaan, maar
 ook andere informatie als iemands aankopen of de contactpersonen van een
 bedrijf, maak je daarvoor gebruik van een collectie.
@@ -42,8 +44,6 @@ velden aanmaken waarin je informatie kunt opslaan:
     velden](./profiles-adding-database-fields.md),
     zoals beschreven in de vorige tutorial
 
--   **Vorige:** [Velden
-    aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
--   **Volgende:** [Profielen en subprofielen
-    aanmaken](./profiles-adding-profiles-and-subprofiles.md "Profielen: Profielen en subprofielen aanmaken")
+-   **Vorige:** [Velden aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
+-   **Volgende:** [Profielen en subprofielen aanmaken](./profiles-adding-profiles-and-subprofiles.md "Profielen: Profielen en subprofielen aanmaken")
 

@@ -5,7 +5,7 @@ Let op, het aantal wordt per profiel bijgehouden. Er wordt dus niet
 bijgehouden hoe vaak het webformulier in totaal (door alle bezoekers) is
 ingevuld.
 
-### **Database**
+## Database
 
 Je hebt nodig: een veld in de database (noem dit veld 'huidigaantal';
 een numeriek veld met standaardwaarde = 1).

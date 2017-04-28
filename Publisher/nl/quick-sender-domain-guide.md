@@ -1,5 +1,4 @@
-Afzenderdomain instellen
-========================
+# Sender Domain instellen
 
 De mailings die je verstuurt worden verstuurd vanuit een bepaald afzenderadres,
 bijvoorbeeld nieuwsbrief@bedrijfsnaam.nl. Dit afzenderadres kun je zelf in 
@@ -21,8 +20,8 @@ Dit is een technologie waarmee het een stuk makkelijker wordt om je DNS
 instellingen te beheren.
 
 
-Marketing Suite
----------------
+## Marketing Suite
+
 De vernieuwde interface van de Marketing Suite zorgt ervoor dat je makkelijk en snel
 de sender-domain in kan stellen.
 
@@ -35,8 +34,8 @@ sender-domain hebben prioriteit, zelfs als je mails gaat versturen met Publisher
 
 Je vindt de sender-domain tool in het menu onder het kopje *configuratie*.
 
-Hoofddomein of subdomein?
--------------------------
+
+## Hoofddomein of subdomein?
 
 Als je via de Marketing Suite een sender domain instelt, dan moet je een
 domeinnaam opgeven. Dit is de domeinnaam die je als afzenderadres wilt gaan
@@ -54,8 +53,7 @@ als afzenderadres oogt weliswaar wat minder chique, maar als je snel aan de slag
 wilt dan is dat de snelste manier om de configuratie goed te krijgen. 
 
 
-Domeinnaam valideren
---------------------
+## Domeinnaam valideren
 
 Om misbruik van sender domains te voorkomen, moet je bewijzen dat jij echt de 
 eigenaar bent van het domein. Nadat je een sender domain hebt aangemaakt toont de Marketing Suite
@@ -66,8 +64,7 @@ we dat je echt de eigenaar van het domein bent en kun je verder gaan met
 het configueren van het domein.
 
 
-Achtergrondinformatie
----------------------
+## Achtergrondinformatie
 
 Zoals beschreven, maakt Copernica alle relevante DNS records aan, zodat je
 die records zelf niet meer hoeft te beheren. Tenminste, dat schreven we steeds.
@@ -85,8 +82,8 @@ records) die verwijzen naar de DNS servers van Copernica. Alleen de domeineigena
 doet en alle aliassen installeert, dan kan Copernica vervolgens wijzigingen
 doorvoeren.
 
+```html
 <pre>
-
     Geadviseerde DNS records die                DNS records op de server
     aan het domein moeten worden                van Copernica, met instellingen
     toegevoegd:                                 van het sender domain:
@@ -102,8 +99,8 @@ doorvoeren.
     +-------------------+                       +-------------------+
     |   Bounce alias    |           --->        |   MX record(s)    |
     +-------------------+                       +-------------------+
-    
 </pre>
+```
 
 Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 
 Marketing Suite opvolgt, dan voeg je aan jouw domein een aantal aliassen toe 
@@ -115,8 +112,7 @@ de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een
 afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
 
 
-De volgende stap
-----------------
+## De volgende stap
 
 Om de eerste mail te kunnen versturen, heb je natuurlijk 
 [een database met profielen](quick-database-guide) nodig om die mailing naar

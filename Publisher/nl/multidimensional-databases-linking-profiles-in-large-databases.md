@@ -1,5 +1,4 @@
-Met [multidimensionale
-databases](./personalizing-using-multi-dimensional-databases.md)
+Met [multidimensionale databases](./personalizing-using-multi-dimensional-databases.md)
 kan je twee of meer databases aan elkaar koppelen. Voor de
 totstandbrenging van deze koppeling maak je een referentieveld aan in de
 database die je onderliggend wilt maken van de andere database.
@@ -28,8 +27,8 @@ In dit voorbeeld gaan we uit van twee databases.
     aan elkaar kunnen worden gekoppeld. Het meest voordehandliggend is
     natuurlijk de **bedrijfsnaam**.
 
-**Referentieveld maken**
-------------------------
+
+## Referentieveld maken
 
 Met het referentieveld leg je de link tussen de profielen uit de
 verschillende databases.
@@ -45,8 +44,8 @@ verschillende databases.
 Ieder profiel in de database met bedrijven heeft nu een extra tabblad
 vernoemd naar de database waarin je het referentieveld hebt aangemaakt.
 
-**Exporteren van profielen uit de bedrijfsdatabase**
-----------------------------------------------------
+
+## Exporteren van profielen uit de bedrijfsdatabase
 
 Exporteer de profielen uit database waarin je het referentieveld niet
 hebt aangebracht. In dit voorbeeld is dit de database met de bedrijven.
@@ -83,8 +82,8 @@ en selecteer het exportbestand uit de bedrijfsdatabase.
 
 Wanneer de import is afgerond heeft ieder bedrijf in de
 bedrijvendatabase een tabblad met hierin de medewerkers van het bedrijf.
-\
- Je kan vanuit dit tabblad de profielen beheren. Een nieuw profiel voegt
+
+Je kan vanuit dit tabblad de profielen beheren. Een nieuw profiel voegt
 een nieuwe medewerker toe. Dit profiel wordt toegevoegd aan de
 medewerkers database; het referentieveld krijgt automatisch de juiste
 gegevens.
