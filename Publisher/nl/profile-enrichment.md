@@ -1,8 +1,6 @@
-Gebruik je naast Copernica nog een ander softwaresysteem waarin je
-relatiegegevens opslaat? Gebruik ook deze gegevens om je
 
-Hoe kan je verder profielen verrijken?
---------------------------------------
+# Hoe kan je verder profielen verrijken?
+
 
 Vooraleer je de profielen binnen de database gaat verrijken met nieuwe
 gegevens, maak je hiervoor de passende databasevelden aan binnen de

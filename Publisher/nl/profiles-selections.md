@@ -1,15 +1,18 @@
-Profielen: Selecties
+# Profielen: selecties
 
 In deze Copernica-tutorial leer je wat een selectie is en hoe je er een
 aanmaakt.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y9vXCAjs8mk?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
+```html
+<iframe 
+    width="560" height="315" 
+    src="https://www.youtube.com/embed/y9vXCAjs8mk?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" 
+    frameborder="0" 
+    allowfullscreen="allowfullscreen">      
+</iframe>
 
--   [Terug naar de
-    video's](./video-tutorials.md "Video's")
 
-Wat is een selectie?
---------------------
+## Wat is een selectie?
 
 In je [database](./profiles-creating-a-database.md) in
 Copernica kan je allerlei selecties aanmaken. Met selecties kan je
@@ -20,7 +23,7 @@ zijn ingeschreven voor je nieuwsbrief. Een selectie is dus eigenlijk een
 filter op je database.
 
 Hoe maak ik een selectie aan?
------------------------------
+
 
 Een selectie maak je als volgt aan:
 
@@ -33,8 +36,8 @@ Een selectie maak je als volgt aan:
 Geef jezelf maar een schouderklop, je hebt nu een lege selectie
 aangemaakt!
 
-Selectiecondities
------------------
+
+## Selectiecondities
 
 Een selectie werkt natuurlijk pas als je er condities aangeeft. Door de
 selectie bijvoorbeeld te laten checken of iemand je nieuwsbrief wilt
@@ -49,15 +52,15 @@ ontvangen. Condities aan je selectie toevoegen doe je zo:
 
 Je hebt nu een selectie met condities aangemaakt!
 
-Opbouwstatus
-------------
+
+## Opbouwstatus
 
 In het tabblad [opbouwstatus](./is-my-selection-miniselection-up-to-date.md)
 kan je zien in hoeverre je selectie al is opgebouwd. Je kan dit scherm
 gewoon wegklikken, zonder dat dit van invloed is op het opbouwen.
 
-Selectie bekijken
------------------
+
+## Selectie bekijken
 
 Je selectie bekijken doe je als volgt:
 
@@ -73,4 +76,3 @@ profielen zichtbaar zijn.
     [Profielgegevens](./profiles-profile-data.md "Profielen: Profielgegevens")
 -   **Volgende:** [Miniselectie
     aanmaken](./profiles-creating-a-miniselection.md "Profielen: Miniselectie aanmaken")
-

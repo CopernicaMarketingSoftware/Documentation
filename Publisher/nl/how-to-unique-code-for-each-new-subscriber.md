@@ -16,7 +16,7 @@ Ga vervolgens naar het onderdeel **Content** en maak een nieuw formulier
 aan, met hierin ALLEEN het e-mailadres opgenomen. Dit veld is GEEN
 sleutelveld.
 
-### Werking formulier instellen
+## Werking formulier instellen
 
 Geef het formulier de volgende instellingen:
 

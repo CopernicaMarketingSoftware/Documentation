@@ -18,14 +18,12 @@ een nieuwe regel moet beginnen of op het exacte karakter (true).
 Laten we zeggen dat we een biografie hebben die we aan de breedte van 
 onze mail aan willen passen. We definiëren eerst de biografie.
 
-    <?php
-
-    $smarty->assign('biography',
-                    "Hello, I'm John. John Doe. I am 42 years old. I like cars, sports and dogs."
-                   );
-
-    ?>
-    
+```php
+<?php
+    $smarty->assign('biography', 
+        "Hello, I'm John. John Doe. I am 42 years old. I like cars, sports and dogs.");
+?>
+```
 Hierna gebruiken we *wordwrap* om te formatteren:
 
     {$biography}
