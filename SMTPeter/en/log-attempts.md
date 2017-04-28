@@ -5,7 +5,7 @@ Every message that is sent to SMTPeter is logged in log files with the prefix
 format using the [REST logfiles API](rest-logfiles), or the dashboard. 
 These log files contain the following data in the respective order:
 
-| Data       | Description                                                                                                             |
+| Name       | Description                                                                                                             |
 | -----------| ----------------------------------------------------------------------------------------------------------------------- |
 | id         | The unique message id of the sent message                                                                               |
 | time       | The time when the message was received by us in the form YYYY-MM-DD hh:mm:ss                                            |

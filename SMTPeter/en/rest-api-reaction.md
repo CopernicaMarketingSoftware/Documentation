@@ -1,4 +1,4 @@
-# API Reaction
+# API Response
 
 After a succesful request, SMTPeter sends a JSON object containing a unique identifier 
 for every recipient which is going to receive an email. 
