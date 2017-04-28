@@ -9,7 +9,7 @@ order:
 | Name        | Description                                                                             |
 | ----------- | --------------------------------------------------------------------------------------- |
 | id          | The unique id of the message for which delivery failed                                  |
-| time        | The time when we received the failed delivery notification (YY-MM-DD hh:mm:ss formatted)|
+| time        | The time we figured the message never could be delivered (YYYY-MM-DD hh:mm:ss formatted)|
 | envelope    | The envelope of the message that failed                                                 |
 | recipient   | The recipient of the failed message                                                     |
 | attempt     | The attempt number (starting from zero)                                                 |
