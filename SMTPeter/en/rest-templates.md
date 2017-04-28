@@ -3,7 +3,7 @@
 In SMTPeter's dashboard it's easy and convenient to manage your templates. 
 All the templates are available by using the REST API. You can then use 
 various methods to download, edit or create templates. And of course
-you can [send email](rest-send) with the templates.
+you can [send email](rest-send-template) with the templates.
 
 
 ## Retrieve templates
