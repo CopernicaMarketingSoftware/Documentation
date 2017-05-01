@@ -81,11 +81,18 @@ hoofddomein een dergelijk record al bestaat. Dit bestaande record kun je niet
 zomaar weghalen of overschrijven. De simpele oplossing is om er dan toch maar 
 voor te kiezen om vanuit een subdomein te versturen. Als je echter wel vanuit 
 het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra 
-maatregelen treffen. Hoe dat precies werkt leggen we in een apart artikel uit:
-
-* [DMARC configureren](./dmarc.md)
+maatregelen treffen. Hoe dat precies werkt leggen we uit in het artikel over 
+[DMARC configureren](./dmarc.md).
 
 Het instellen van sender domains, en de DNS records die je moet maken, kun
 je doen via de Copernica Marketing Suite. De wizards in de Marketing Suite 
 werken intuïtief en door middel van groene vinkjes of rode kruisjes kun je 
 precies zien of je het goed hebt gedaan.
+
+## Meer informatie
+
+* [Afzenderdomein configureren](./quick-sender-domain-guide)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)

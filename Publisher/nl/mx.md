@@ -97,3 +97,10 @@ zou kunnen gebruiken. Kortom, als het dashboard je adviseert om een MX record
 voor "feedback.jouwdomein.nl" aan te maken met de waarde "0 ms.copernica.com",
 dan kun je dus ook een CNAME record aanmaken voor "feedback.jouwdomein.nl" met
 de waarde "feedback.copernica.com".
+
+## Meer informatie
+
+* [Afzenderdomeinen](./sender-domains)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [SPF](./spf)

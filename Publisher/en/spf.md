@@ -74,4 +74,9 @@ of course are free to do so. You can copy our recommended SPF records and modify
 it (for example to add more IP addresses to it). ALthough that is probably not 
 necessary.
 
-[Back to sender domains](./sender-domains)
+## More information
+
+* [Sender domains](./sender-domains)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [MX](./mx)

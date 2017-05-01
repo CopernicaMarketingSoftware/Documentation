@@ -83,10 +83,17 @@ existing record because that might influence your existing mail flow. The simple
 solution would then be to setup Copernica to use a new subdomain instead. However,
 if you insist on using the main domain, which of course is way more elegant, you
 will have to take some extra steps, and merge your existing DMARC record with the
-one that we take care of. We've explained this in more detail in a seperate article:
-
-* [Setting up DMARC](./dmarc.md)
+one that we take care of. We've explained this in more detail in the article 
+on [setting up DMARC](./dmarc.md).
 
 Setting up sender domains can be done via the advanced interface of the Marketing Suite.
 With green checks and red warnings we show whether you've created the right aliases.
 No hassle whatsoever. 
+
+## More information
+
+* [Configuring a sender domain](./quick-sender-domain-guide)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)
