@@ -19,7 +19,6 @@ DNS records. You copy these records to your DNS server (or give them to your
 DNS provider) and that's basically all there is to it: after you've followed 
 our recommendations you can use SMTPeter to send email.
 
-
 ## A little more details
 
 Lets be honest here. Sending email is getting more and more complicated. 
@@ -76,5 +75,9 @@ The same applies to the bounce domain, although the bounce domain is less
 visible for the receivers of your email. It is only used for the envelope
 domain, and the envelope domain is normally not shown to users, unless they
 are going to inspect the original email source.
+
+## More information
+
+* [Configure a sender domain](./introduction-sender-domains)
 
 
