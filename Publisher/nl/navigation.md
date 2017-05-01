@@ -22,8 +22,6 @@
     * [SPF records](./spf.md)
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
-* [Het gebruik van templates](./templates.md)
-    * [Drag-and-drop editor](./drag-and-drop-editor.md)
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
     * [REST events](./rest-get-events.md)
