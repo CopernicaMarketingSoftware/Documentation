@@ -1,5 +1,7 @@
 # RSS en Atom feeds
 
+Let op: Deze functionaliteit bestaat (nog) niet in Marketing Suite.
+
 Weet je even niet welke content te plaatsen op je
 [webpagina](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina's")
 of in je
