@@ -1,4 +1,4 @@
-# Getting started: Sender Domains and DNS
+# Getting started: Sender Domains
 
 ## Sender Domain
 
