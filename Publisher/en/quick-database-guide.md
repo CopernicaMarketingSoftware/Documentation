@@ -1,4 +1,5 @@
 # Setting up a database
+
 Copernica works with entirely configurable databases. It's up to you to decide on the structure of your databases, so your data always fits into Copernica. On top of that, Copernica databases are multidimensional. 
 This means your database can have multiple layers to support things like collections of webshop orders per profile.
 
@@ -9,11 +10,12 @@ new databases every now and then and importing all profile data again, we advise
 but structuring it well. This way, your database will keep on growing richer with feedback from previous campaigns. 
 Selections allow you to segment your database and use it for targeted campaigns without having to import all data again.
 
-
 ## Marketing Suite
+
 You can manage your databases easily by navigating to the 'profiles' tab within the Marketing Suite. Create databases, add filters, edit selections and much more. The options are endless.
 
 ## Multidimensional
+
 In Copernica, you'll come across the the words “collection” and “subprofile” quite often. These apply to multidimensional 
 databases, as described above. In a simple database with one layer, we use only single data fields and interests. For example:
 a store owner could keep a database containing his customers' first and last names, email addresses and where they live. 
@@ -45,6 +47,7 @@ If you plan on using Copernica to design and send email, you can send test email
 ## The next step
 Once your database is ready and filled with your profile, you're ready to [make your first mailing](quick-mailing-guide) to further discover the magic of Copernica.
 
+## More information
 
-
-
+* [Database management](./database-introduction)
+* [Selections and miniselections](./selections-introduction)

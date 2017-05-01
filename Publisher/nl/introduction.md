@@ -60,5 +60,16 @@ van Copernica Publisher ook toegankelijk via Marketing Suite. Hierdoor is het, a
 mogelijkheden van Copernica optimaal wilt benutten, soms nodig om te wisselen
 tussen de oude Publisher en de nieuwe Marketing Suite. Gaandeweg worden echter steeds
 meer functies omgezet van Publisher naar MarketingSuite zodat je op den duur 
-Publisher steeds minder vaak nodig zult hebben.
+Publisher steeds minder vaak nodig zult hebben. In deze documentatie zal 
+apart benoemd worden hoe je Marketing Suite of Publisher moet gebruiken 
+wanneer dit van toepassing is.
+
+## Meer informatie
+
+Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies 
+en informatie om snel van start te gaan.
+
+* [Configureren van een zender domein](./quick-sender-domain-guide)
+* [Configureren van een database](./quick-database-guide)
+* [Je eerste mailing met Copernica](./quick-mailing-guide)
 

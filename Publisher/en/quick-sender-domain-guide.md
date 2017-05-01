@@ -6,14 +6,18 @@ update your DNS settings first before sending mail through Copernica. Simply put
 DNS settings need to say Copernica is allowed to send mail from your domain. If this is not the
 case, chances are many of your messages will not be accepted by recipients' servers.
 
-Normally, setting DNS records is a complex thing. It involves correctly creating records for SPF,
-DKIM and DMARC (we'll explain later on what all of these mean) and subdomains for click, open
-and bounce tracking. If you want to do this correctly, you'll also need to rotate these settings
-periodically to make sure your private keys don't get cracked.
-Copernica has an easy solution for all of this called Sender Domains, which makes managing your
-DNS settings a lot easier.
+Copernica Sender Domains are an easy solution for a complicated problem. 
+They handle the difficult task of creating correct records for [SPF](./spf), 
+[DKIM](./dkim), [DMARC](./dmarc) and subdomains for click, open and bounce tracking. 
+Usually you would also have to rotate private keys to prevent them from being 
+cracked, but Copernica Sender Domains also habdke this for you.
+
+This article focuses on setting your sender domain 
+up appropriately, but you can find more information in the [background on sender domains](./sender-domains) 
+article.
 
 ## Marketing Suite
+
 The newly designed Marketing Suite interface lets you easily set up your sender-domain.
 
 When you set up your domain as a sender domain, Copernica automatically makes sure your DNS
@@ -37,13 +41,15 @@ may look less fancy, it is the fastest way to fix the configuration quickly if y
 sending mail.
 
 ## Validating your domain
+
 To prevent abuse of sender domains, you need to prove that you're really the owner of the domain.
 After registering your sender domain, Marketing Suite shows a warning message. You first need to
 add a TXT record to your DNS with a code only Copernica can decypher. Only after we've seen
 this record in your DNS, we'll believe it's truly your domain. You'll be able to complete your setup
 after this.
 
-## Background information
+## DNS settings
+
 As described above, Copernica creates all relevant DNS settings so you don't need to. However,
 Copernica cannot implement these settings for you. No one except the domain owner has writing
 rights to DNS settings unless the owner explicitly grants permission. The domain owner is the only
@@ -82,3 +88,11 @@ sending mailings that are properly authenticated and using aligned domains.
 
 ## The next step
 To send your first mailing, you need a database with profiles to send it to.
+
+## More information
+
+* [Sender domains background](./sender-domains)
+* [Setting up a database](./quick-database-guide)
+* [DKIM](./dkim)
+* [DMARC](./dmarc)
+* [SPF](./spf)

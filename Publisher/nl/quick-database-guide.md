@@ -1,5 +1,4 @@
-De database inrichten
-=====================
+# De database inrichten
 
 Copernica werkt met flexibele multidimensionale databases die je helemaal zelf
 kunt ontwerpen. Je kunt dus zelf bepalen welke velden er in de database zitten,
@@ -10,22 +9,18 @@ kunt gebruiken om adressen (en andere profielgegevens) op te slaan.
 Er zijn bijna geen beperkingen aan de structuur van een database. Of je nu
 een eenvoudige voornaam-achternaam-emailadres-structuur wilt hebben, of
 dat je een geneste database wilt aanmaken waarin per profiel de bestelgeschiedenis
-en *abandoned shopping carts* wordt opgeslagen: het kan allemaal. Maar om
+en *abandoned shopping carts* worden opgeslagen: het kan allemaal. Maar om
 snel aan de slag te kunnen raden we aan om je database in eerste instantie
 eenvoudig te houden. Je kunt later altijd extra velden toevoegen.
 
-
-Marketing Suite
----------------------------------------
+## Marketing Suite
 
 De Marketing Suite maakt het mogelijk om gemakkelijk databases te beheren. 
-Navigeer naar het *PROFILES* kopje in het menu.
+Navigeer naar het **Profiles** kopje in het menu.
 Binnen die omgeving is het mogelijk om databases te creëeren, filters toe te voegen, 
 selecties te bewerken en nog veel meer. De mogelijkheden zijn eindeloos.
 
-
-Velden, interesses en collecties
---------------------------------
+## Velden, interesses en collecties
 
 Binnen een database onderscheiden we velden, interesses en collecties. Velden
 en interesses zijn eenvoudig: daarin sla je enkelvoudige data op, zoals een 
@@ -52,9 +47,7 @@ het bedrag.
 Zodra ja met collecties gaat werken, wordt Copernica een stuk krachtiger, maar
 de extra dimensie die je aan de database toevoegt maakt het ook wat ingewikkelder.
 
-
-Database intenties
-------------------
+## Database intenties
 
 Copernica heeft een ingebouwd beveiligingssysteem. We willen voorkomen dat iemand
 per ongeluk een mailing naar een hele database stuurt, als het de bedoeling
@@ -70,9 +63,7 @@ middel van database *intenties*. In de Marketing Suite vind je de mogelijkheden
 om de intenties van databases en selecties in te stellen. Tegelijkertijd kun je daar 
 ook aangeven welke database gebruikt mag worden voor mailings.
 
-
-Profielen aanmaken
-------------------
+## Profielen aanmaken
 
 Nadat je de database hebt aangemaakt en velden aan de database hebt toegevoegd,
 is deze database natuurlijk nog leeg. Je kunt nu data gaan toevoegen aan de
@@ -86,13 +77,16 @@ verstuurd naar de *standaardbestemming*. Dit is een profiel uit de database
 dat is gemarkeerd als het profiel voor testmails. Het ligt voor de hand om
 jouw eigen profiel in te stellen als de standaardbestemming.
 
-
-Volgende stap
--------------
+## Volgende stap
 
 Als je een database hebt aangemaakt, daar een aantal velden in hebt aangemaakt 
 (waaronder natuurlijk een veld met een emailadres), en je eigen profiel aan
 die database hebt toegevoegd, kun je beginnen met het 
 [maken van een eerste mailing](quick-mailing-guide) om verder te ontdekken 
 hoe Copernica werkt.
+
+## Meer informatie
+
+* [Database management](./database-introduction)
+* [Selecties en miniselecties](./selections-introduction)
 
