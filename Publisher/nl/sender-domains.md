@@ -4,7 +4,7 @@ Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
 zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
 versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
-eerst allerlei [DNS instellingen](./dns/md) goed zetten. Dit stelt ontvangers in 
+eerst allerlei [DNS instellingen](./dns.md) goed zetten. Dit stelt ontvangers in 
 staat om te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. 
 Als je dit niet doet, zal een groot deel van de berichten die je verstuurt niet 
 goed aankomen.

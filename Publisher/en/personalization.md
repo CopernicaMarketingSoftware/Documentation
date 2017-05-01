@@ -30,9 +30,11 @@ values for the profile for which the message is personalized. It is also
 possible to assign variables with [Smarty functions](./personalization-functions).
 But if this is indeed true, you can create a personalized message:
 
+```text
     Dear {$salutation} {$name},
     
     We send you this email because your address {$email} is listed in our database.
+```
     
 Personalizing is as easy as that. However, there are a couple of things that 
 need special care:
@@ -70,9 +72,11 @@ Every variable that you use in a mailing or website should be passed
 through this modifier if auto-escaping is not enabled to neutralize 
 possibly harmful HTML code that was entered by users:
 
+```text
     Dear {$salutation|escape} {$name|escape},
     
     We send you this email because your address {$email|escape} is listed in our database.
+```
 
 Always keep this in mind when you are using Smarty code inside HTML texts.
 If you cannot be sure of the contents of your database (which nobody 
@@ -107,9 +111,11 @@ copied into your mailing, without being checked for personalization tags and
 variables. Curly brackets inside this text are also copied, even if they look
 like valid Smarty functions or variables:
 
+```text
     {literal}
         I am a big fan of {curly} {brackets}!
     {/literal}
+```
 
 If you include the above code in a template, the {curly} {bracket} text will
 not be recognized as Smarty code, but is literally included in the mailing.
