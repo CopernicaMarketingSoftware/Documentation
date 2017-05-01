@@ -17,7 +17,6 @@ database. The profiles in this databases become richer based on the feedback
 of previous campaigns. The database management tools are accessible through 
 the Marketing Suite. 
 
-
 ## Multiple dimensions
 
 If you work with databases, you will regularly run into the terms *collection*
@@ -41,9 +40,6 @@ more uses, like a database with companies with a collection for all the
 employees per company or a database with parents, and for each parent a
 colletion of their children.
 
-[Read more about fields and collections](database-fields-and-collections)
-
-
 ## Other options
 
 When you're setting up your database, you have to take care of many different
@@ -53,4 +49,11 @@ You can for example install all sorts of rules to prevent that invalid data
 gets into your system, or that you accidentally send out a mailing to a wrong
 segment of your profiles.
 
-[Read more about database restrictions and intentions](database-restrictions-and-capabilities)
+## More information 
+
+* [Selections](./selections-introduction)
+* [Fields and collections](database-fields-and-collections)
+* [Database restrictions and intentions](database-restrictions-and-capabilities)
+* [Configuring a database](./quick-database-guide)
+* [Exporting a database](./database-export)
+

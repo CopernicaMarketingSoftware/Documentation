@@ -41,3 +41,7 @@ list.
 
 As described, this is because of the triangular structure, which you can use in the case of multiple
 accounts, or if you want to grant access to a non-colleague.
+
+## More information
+
+* [Account usage statistics](./statistics-account)
