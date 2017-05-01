@@ -24,21 +24,25 @@ werkt dit niet.
 
 **Voorbeeld van een layout met een kolom:**
 
-    <table>
-        <tr>
-            <td>Hallo wereld!</td>
-        </tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td>Hallo wereld!</td>
+    </tr>
+</table>
+```
 
 **Voorbeeld van een layout met twee kolommen:**
 
-    <table width="100%">
-        <tr>
-            <td width="40%">Column 1</td>
-            <td width="10%">&nbsp;</td> <!-- *1 -->
-            <td width="40%">Columns 2</td>
-        </tr>
-    </table>
+```html
+<table width="100%">
+    <tr>
+        <td width="40%">Column 1</td>
+        <td width="10%">&nbsp;</td> <!-- *1 -->
+        <td width="40%">Columns 2</td>
+    </tr>
+</table>
+```
 
 *1: De tweede `<td>` is nodig om extra witruimte te creëren tussen de
 twee kolommen.*
@@ -63,14 +67,15 @@ Outlook](https://www.copernica.com/en/blog/remove-unwanted-gaps-in-microsoft-out
 
 **Voorbeeld van het normaliseren van tabel attributen:**
 
-    <table border="0" cellpadding=0" cellspacing="0" style="border-collapse: collapse;">
-        <tr>
-            <td>Hello World!</td>
-        </tr>
-    </table>
+```html
+<table border="0" cellpadding=0" cellspacing="0" style="border-collapse: collapse;">
+    <tr>
+        <td>Hello World!</td>
+    </tr>
+</table>
+```
 
-Breedte van je e-mail
----------------------
+## Breedte van je e-mail
 
 Helaas is er geen magisch getal voor de perfecte breedte die ik kan
 aanbevelen, maar ik raad je aan om niet breder te gaan dan 640px. Niet
@@ -87,8 +92,8 @@ als je niet zeker van je zaak bent.
 e-mail](https://www.copernica.com/en/blog/how-to-create-a-responsive-html-email-from-scratch "How to create a responsive HTML email from scratch")
 (artikel is in het Engels)
 
-Plaats de CSS inline
---------------------
+
+## Plaats de CSS inline
 
 Schrijf de CSS altijd inline, of gebruik een hulpmiddel die dat
 automatisch voor je doet. Sommige e-mailserviceproviders hebben zo'n
@@ -100,27 +105,31 @@ toegepaste styling verloren gaat.
 
 Voorbeeld van inline CSS (hoe het **wel** moet):
 
-    <table>
-        <tr>
-            <td style="color: red;">
-                Using inline CSS
-            </td>
-        </tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td style="color: red;">
+            Using inline CSS
+        </td>
+    </tr>
+</table>
+```
 
 Voorbeeld van (embedded) CSS (hoe het dus **niet** moet):
 
-    <style type="text/css">
-        .fooBar {color: red;}
-    </style>
+```html
+<style type="text/css">
+    .fooBar {color: red;}
+</style>
 
-    <table>
-        <tr>
-            <td class="fooBar">
-                Using inline CSS
-            </td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <td class="fooBar">
+            Using inline CSS
+        </td>
+    </tr>
+</table>
+```
 
 *Begrijp me niet verkeerd, het is natuurlijk toegestaan om CSS in de
 `<head>` van je HTML e-maildocument te plaatsen. Maar zorg er wel voor
@@ -145,30 +154,34 @@ ondersteund worden door e-mailclients.
 
 **Alternatief voor float en position** Een afbeelding uitlijnen (1):
 
-    <table width="640">
-        <tr>
-            <td width="540">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </td>
-            <td width="100" align="right">
-                <img src="http://placehold.it/100x100"/>
-            </td>
-        </tr>
-    </table>
+```html
+<table width="640">
+    <tr>
+        <td width="540">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </td>
+        <td width="100" align="right">
+            <img src="http://placehold.it/100x100"/>
+        </td>
+    </tr>
+</table>
+```
 
 ![Een afbeelding uitlijnen met behulp van
 cellen](../images/img-float-alternative-html-email-1.jpg)
 
 Een afbeelding uitlijnen (2):
 
-    <table>
-        <tr>
-            <td valign="top">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <img src="http://placehold.it/100x100" align="right"/>
-            </td>
-        </tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td valign="top">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <img src="http://placehold.it/100x100" align="right"/>
+        </td>
+    </tr>
+</table>
+```
 
 ![Een afbeelding uitlijnen met behulp align op de img
 tag](../images/img-float-alternative-html-email-2.jpg)
@@ -180,16 +193,18 @@ tag](../images/img-float-alternative-html-email-2.jpg)
 Voorbeeld van extra witruimte aan de onderkant met `padding` op een
 `<td>`:
 
-    <table>
-        <tr>
-            <td style="padding: 0 0 20px 0;"> <!-- *2 -->
-                Titel van je artikel
-            </td>
-        </tr>
-        <tr>
-            <td>Volledig artikel</td>
-        </tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td style="padding: 0 0 20px 0;"> <!-- *2 -->
+            Titel van je artikel
+        </td>
+    </tr>
+    <tr>
+        <td>Volledig artikel</td>
+    </tr>
+</table>
+```
 
 \*\*2: Dit kan ook op de volgende manier: `padding-bottom: 20px;`\*
 
@@ -199,11 +214,13 @@ Outlook er niets van en krijg je rare dingen te zien.
 
 Voorbeeld van extra witruimte met een lege `<td>`:
 
-    <table>
-        <tr>
-            <td style="line-height: 0; font-size: 0;" height="10">&nbsp;</td>
-        <tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td style="line-height: 0; font-size: 0;" height="10">&nbsp;</td>
+    <tr>
+</table>
+```
 
 Het trucje hierachter is dat je alle mogelijke hoogte-eigenschappen van
 een HTML-element normaliseert naar 0, zodat je deze opnieuw kunt
@@ -222,20 +239,22 @@ boekje van HTML, de
 
 Voorbeeld van extra witruimte met spacer-GIF:
 
-    <table>
-        <tr>
-            <td>Lorem ipsum</td>
-        </tr>
-        <tr>
-            <td><img src="spacer.gif" width="1" height="10" alt=""/></td>
-        </tr>
-        <tr>
-            <td>Lorem ipsum</td>
-        </tr>
-        <tr>
-            <td><img src="spacer.gif" width="1" height="30" alt=""/></td>
-        </tr>
-    </table>
+```html
+<table>
+    <tr>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td><img src="spacer.gif" width="1" height="10" alt=""/></td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td><img src="spacer.gif" width="1" height="30" alt=""/></td>
+    </tr>
+</table>
+```
 
 ![spacer-gif techniek html email](../images/spacer-gif-email-template.jpg)
 

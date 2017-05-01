@@ -25,10 +25,10 @@ verstuurde bericht vervangen door de veldwaarde in het profiel van de
 ontvanger.
 
 Smarty-code wordt gekenmerkt door het gebruik van accolades, { en }, en
-het dollarteken, \$.
+het dollarteken, `$`.
 
-Wat is er veranderd in de personalisatie
-----------------------------------------
+
+## Wat is er veranderd in de personalisatie
 
 Personaliseren met Smarty-code was al mogelijk in de HTML-editor van
 Copernica. Dit kon bijvoorbeeld door de voornaam van een persoon,
@@ -43,8 +43,8 @@ voornaam die hij of zij heeft doorgegeven te zien in het e-mailbericht.
 
 In de drag-and-drop editor werkt dit iets anders: er moet namelijk
 altijd gespecificeerd worden of een veld uit het profiel of het
-subprofiel aangeroepen wordt. Door in plaats van {\$Voornaam},
-{\$profile.Voornaam} of {\$subprofile.veldnaam} te gebruiken is het
+subprofiel aangeroepen wordt. Door in plaats van `{\$Voornaam}`,
+`{\$profile.Voornaam}` of `{\$subprofile.veldnaam}` te gebruiken is het
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren. Dit was al mogelijk in de HTML-editor,
 maar het was niet nodig om dit te specificeren als er alleen gegevens

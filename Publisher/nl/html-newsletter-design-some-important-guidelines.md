@@ -69,7 +69,7 @@ nieuwsbrief bovenaan te plaatsen.
 
 ### Bekijk ook
 
--   [HTML-richtlijnen voor e-mail herzien] (./html-email-guidelines-revisited.md)
+-   [HTML-richtlijnen voor e-mail herzien](./html-email-guidelines-revisited.md)
 -   [Ontwerp je eigen templates](./create-custom-templates.md "Ontwerp je eigen templates")
 -   [Responsive design: je e-mails klaarstomen voor
     mobile](./responsive-design-preparing-your-emails-for-mobile.md "Responsive design: je e-mails klaarstomen voor mobile")

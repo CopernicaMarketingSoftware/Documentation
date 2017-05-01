@@ -44,7 +44,7 @@ The following PHP script demonstrates how to use the API method:
 	$parameters = array(
 	    'limit'     =>  100
 	);
-	n
+	
 	// do the call, and print result
 	print_r($api->get("database/1234/fields", $parameters));
 

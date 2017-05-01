@@ -6,10 +6,9 @@ zender, de route en de ontvanger van het bericht. Extra headers maken
 het mogelijk om extra informatie mee te sturen met e-mails, die kunnen
 worden ingelezen door e-mailprogramma's, servers of applicaties.
 
-### Custom header toevoegen of bewerken
+## Custom header toevoegen of bewerken
 
-Om een extra header toe te voegen of te bewerken, schakel je het
-document eerst naar niet-gepersonaliseerde weergave. Klik vervolgens op
+Om een extra header toe te voegen of te bewerken, schakel je in de Publisher het document eerst naar niet-gepersonaliseerde weergave. Klik vervolgens op
 Header toevoegen (direct boven het document). Kies een naam voor de
 header en een waarde.
 
@@ -22,7 +21,7 @@ Extra header zonder deze toevoeging worden door de applicatie genegeerd.
 Het is toegestaan om smarty personalisatie te gebruiken in extra header
 velden
 
-### Fictief voorbeeld van een extra header
+## Fictief voorbeeld van een extra header
 
 **X-myheader:** zomaar een waarde
 

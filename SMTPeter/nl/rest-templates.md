@@ -3,7 +3,7 @@
 In de dashboard omgeving van SMTPeter kun je gemakkelijk *templates* beheren.
 Deze templates zijn ook beschikbaar door gebruik van de REST API.
 Er zijn methodes om templates te downloaden, te editten of te creëren.
-Daarnaast is het natuurlijk ook mogelijk om [een e-mail te versturen](rest-send)
+Daarnaast is het natuurlijk ook mogelijk om [een e-mail te versturen](rest-send-template)
 door middel van templates.
 
 ## Haal templates op

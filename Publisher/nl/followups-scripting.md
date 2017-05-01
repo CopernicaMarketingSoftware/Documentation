@@ -1,13 +1,13 @@
-# Followups met javascript
+# Het gebruik van data-scripts
 
 Als je zelf je eigen mailings programmeert, dan kun je gebruik maken van
-javascript om allerlei opvolgacties aan hyperlinks te koppelen. Deze scripts
-worden door Copernica uitgevoerd zodra iemand op zo'n hyperlink klikt. Dit
-werkt ongeveer hetzelfde als de scripts die je in een "onclick" attribuut
-van een hyperlink plaatst, met een belangrijk verschil: de scripts worden niet
-door de browser uitgevoerd, maar op de servers van Copernica.
-
-Je kunt de scriptjes op een aantal manieren aan hyperlinks koppelen:
+JavaScript (data-scripting) om allerlei opvolgacties aan hyperlinks te 
+koppelen. Deze scripts worden door Copernica uitgevoerd, zodra iemand op
+zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde als de scripts die je 
+in een "onclick" attribuut van een hyperlink plaatst, met een belangrijk 
+verschil: de scripts worden niet door de browser uitgevoerd, maar op de 
+servers van Copernica. In de marketing Suite hoef je alleen maar data-scripts
+toe te voegen op een van de volgende manieren:
 
 * Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
 * Je kunt ze met de drag-and-drop editor invoeren. 
@@ -37,7 +37,9 @@ dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer info
 
 Je kunt heel makkelijk een profiel aanpassen als iemand op een link klikt:
 
-    <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">klik hier om af te melden</a>
+```html
+<a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">klik hier om af te melden</a>
+```
 
 Als iemand op de link klikt, wordt het script in het "data-script" attribuut
 uitgevoerd. In bovenstaand voorbeeld wordt het veld "newsletter" dus op "no"

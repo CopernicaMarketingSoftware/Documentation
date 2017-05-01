@@ -1,15 +1,34 @@
-#Quick start
-##Setting up the software
-Before being able to send campaigns in Copernica, there are a few things you have to do.
-You first need to set up the software and update the DNS settings and subdomains of your domain. After that, you need to create or import a database with profiles, create a template and configure a sender domain. You might want to make one or multiple selections to aim your campaigns at certain subsets of your database.
+# Quick start
 
-Sounds like a lot, right? Sometimes, that's not even all. Many of our users choose an automated link between their website and Copernica and use feedback loops to integrate data that was acquired by Copernica into their own systems.
+Before being able to send campaigns in Copernica, there is some setup work. 
+First you have to set up a sender domain so Copernica can send email for 
+you. You also have to configure your DNS settings and subdomains. 
+After this we'll take care of getting your emails delivered succesfully. 
+The second step is to create or import your database. After doing this 
+you can also make [selections](./selections-introduction) to email 
+specific subsets of your database.
 
-We try our best to make our systems so that setting up takes as little effort as possible, but it will always take some time to configure everything exactly to your needs.
+After you have completed these steps you can create your first template with 
+the very user-friendly Marketing Suite template editor.
 
-##Quick start checklist
-To help you out, we've created a small checklist of things you need to get you started. After completing it, you'll be able to send your first mass mailing.
+After all of these steps you are ready to send your first mailing! 
+However, if you want to integrate Copernica data into your own system 
+you may want to look into [feedback loops](./feedback-loops) as well. 
 
-- Setting up a sender domain
-- Setting up a database
-- Create your first template
+## Quick start checklist
+
+To help you out, we've created a small checklist of things you need to 
+get you started. After completing it, you'll be able to send your first 
+mass mailing.
+
+- [Setting up a sender domain](./quick-sender-domain-guide)
+- [Setting up a database](./quick-database-guide)
+- [Create your first template](./quick-mailing-guide)
+
+## More information
+
+If you want some more control over your own data and who you send mail 
+to you can look into the articles below.
+
+* [Database selections](./selections-introduction)
+* [Feedback loops](./feedback-loops)

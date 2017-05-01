@@ -1,26 +1,22 @@
-De software inrichten
-=====================
+# De software inrichten
 
-Als je met Copernica aan de slag gaat, kun je nog niet onmiddellijk campagnes
-versturen. Je moet de software eerst inrichten en de nodige subdomeinen
-en DNS instellingen van je domeinnaam wijzigen. Je moet in Copernica een database 
-aanmaken, profielen importeren, een template (laten) maken en een sender-domain 
-configureren. Vermoedelijk wil je ook één of meer selecties maken als je campagnes
-wilt richten naar *subsets* van je relaties.
+Voordat je mailings kunt versturen met Copernica moet je de software 
+opzetten om samen te werken met jouw database en zender domain. Eerst 
+moet je een zender domein opzetten en je DNS en subdomeinen configureren. 
+Dit zorgt ervoor dat Copernica namens jou mail kan versturen en succesvol 
+aan kan laten komen. Hierna kun je een database aanmaken of importeren. 
+Hierna kun je er [selecties](./selections-introduction) in aanmaken om 
+subgroepen binnen je database te mailen. 
 
-Klinkt als een hoop werk, nietwaar? En dat is soms nog niet eens alles. Veel 
-gebruikers kiezen voor een geautomatiseerde koppeling tussen hun website en de 
-Copernica database, en gebruiken feedback loops om data die door Copernica wordt 
-verzameld ook weer in het eigen systeem op te nemen.
+Als je dit allemaal hebt gedaan kun je je eerste template aan maken met 
+de gebruiksvriendelijke template editor in de Marketing Suite. Als deze 
+af is kun je gaan mailen!
 
-We hebben ons best gedaan om onze systemen zo te ontwerpen dat je zo min mogelijk
-tijd hoeft te besteden aan het inrichten van het systeem, en zo snel mogelijk
-kunt overgaan op het versturen van mail. Maar hoe je het ook wendt of keert: je 
-moet aandacht besteden aan het inrichten van het systeem.
+Copernica verzamelt een hoop data over de mailings die je verstuurt. Als 
+je deze ook wil integreren met je eigen systeem kun je daar 
+[feedback loops](./feedback-loops) voor instellen.
 
-
-Checklist snel-op-weg
----------------------
+## Checklist snel-op-weg
  
 Om je op weg te helpen, hebben we een kleine checklist gemaakt. Als je de volgende
 stappen zet, dan heb je genoeg gedaan om je eerste mailing te versturen.
@@ -28,3 +24,11 @@ stappen zet, dan heb je genoeg gedaan om je eerste mailing te versturen.
 * [Afzenderdomain instellen](quick-sender-domain-guide)
 * [Database inrichten](quick-database-guide)
 * [Je eerste mail met de drag-and-drop editor](quick-mailing-guide)
+
+## Meer informatie
+
+Voor het integreren met je eigen systeem en het aanmaken van selecties 
+om naar te mailen vindt je meer informatie in de artikelen hieronder.
+
+* [Selecties maken in een database](./selections-introduction)
+* [Integreren met je eigen systeem](./feedback-loops)

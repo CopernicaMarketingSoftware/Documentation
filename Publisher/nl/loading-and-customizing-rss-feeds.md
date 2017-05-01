@@ -58,7 +58,7 @@ andere categorie producten of nieuwsartikelen bevatten. Je kunt dan met
 behulp van smarty-personalisatie verschillende feeds conditioneel laten
 tonen. Een voorbeeld:
 
-```
+```html
 {if $interest=="Sport"}
 {loadfeed feed="http://feeds.feedburner.com/nossportalgemeen?format=xml" xslt="Test"}
 {else if $interest=="Economie"}
@@ -80,7 +80,7 @@ vinden op de website van [w3schools](http://www.w3schools.com/xsl/).
 Als we de XML bekijken van een nieuwsbericht uit de NOS feed, dan zien
 we het volgende:
 
-```
+```xml
 <item>
     <title><![CDATA[FIFA onderzoekt racisme Mexicanen]]></title>
     <link>http://nos.nl/wk2014/artikel/663371-fifa-onderzoekt-racisme-mexicanen.html</link>
@@ -98,7 +98,7 @@ willen schrijven, gebruiken we een *for-each*-loop. Voor elk artikel
 vullen we een deel van de tabel. Na de loop sluiten we de tabel weer
 netjes af. Een eenvoudig voorbeeld:
 
-```
+```xml
 <xsl:template name="item">
     <table>
         <xsl:for-each select="item">
@@ -134,7 +134,7 @@ product volledig te bekijken valt. Hiervoor kun je een mooie knop bij
 elk item van de feed plaatsen: een call-to-action button! Een
 voorbeeldcode om ook in de *foreach*-loop te plaatsen:
 
-```
+```xml
 <tr>
     <td>
         <a class="calltoaction" href="{link}">Lees meer!</a>
@@ -152,7 +152,7 @@ url="http://content.nos.nl/data/image/l/2014/06/19/663433.jpg"
 length="16566" /\> De manieren om beide manieren in te laden is als
 volgt (respectievelijk):
 
-```
+```html
 <img src="{imageurl}"/>
 
 <img src="{enclosure/@url}"/> 
@@ -166,7 +166,7 @@ worden. De variabele *test* kan alles zijn, gezien het niet elders terug
 hoeft te komen in de XSLT. Onderstaande code moet als eerste in de
 *for-each* staan.
 
-```
+```html
 <xsl:if test="position() < 3">
 ```
 
@@ -183,7 +183,7 @@ item.
 Als de tekst niet langer is dan 200 karakters, wordt het gewoon
 geplaatst.
 
-```
+```xml
 <xsl:choose>
     <xsl:when test="string-length(description) > '200'">
         <xsl:value-of select="substring(description, 1, 200)" disable-output-escaping="yes"/>...
@@ -204,14 +204,14 @@ je hyperlinks in de feed wil uitbreiden met UTM-tags, dan zal dat dus in
 de XSLT moeten gebeuren. Dit kan eenvoudig door de tags aan de *{link}*
 te plakken. (Let op, & moet worden geschreven als &amp;) Een voorbeeld:
 
-```
+```html
 <a class="feedlink" href="{link}?utm_source=feed&amp;utm_medium=e-mail&amp;utm_campaign=sale">Tekst_van_link</a>
 ```
 
 Indien gewenst is het mogelijk om de *{link}* uit te breiden met
 bijvoorbeeld de titel van het item. Dit gaat als volgt:
 
-```
+```html
 <a class="feedlink" href="{link}?title={title}">Tekst_van_link</a>
 ```
 

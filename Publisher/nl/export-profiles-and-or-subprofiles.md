@@ -1,3 +1,5 @@
+# exporteren van profiel- en subprofielgegevens
+
 Profiel- en subprofielgegevens kunnen worden geëxporteerd. Je kan een
 hele database ineens exporteren, of alleen de (sub)profielen uit een
 (mini)selectie. Er wordt een bestand in het formaat naar keuze

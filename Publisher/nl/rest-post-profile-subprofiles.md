@@ -1,12 +1,14 @@
 # REST API: een subprofiel aan een profiel toevoegen
 
-Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
-request sturen naar de volgende URL:
+Om een subprofiel aan een profiel in een bepaalde collectie toe te voegen,
+kun je een HTTP POST request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
-waaraan je een subprofiel wil toevoegen. De inhoud van het subprofiel kun je in de message body plaatsen.
+waaraan je een subprofiel wil toevoegen en $collectionID moet vervangen worden
+met de identifier van de collectie waarin je het subprofiel wil toevoegen.
+De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
 
@@ -36,7 +38,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     );
     
     // voer het verzoek uit
-    $api->post("profile/1234/subprofiles", $data);
+    $api->post("profile/1234/subprofiles/321", $data);
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 

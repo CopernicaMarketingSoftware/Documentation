@@ -1,3 +1,5 @@
+# E-mailstatistieken
+
 E-mailstatistieken helpen bij het analyseren en optimaliseren van je
 e-mailings. Op basis van deze gegevens krijg je een volledig beeld van
 de prestatie van jouw e-mailings. Copernica Marketing Software beschikt

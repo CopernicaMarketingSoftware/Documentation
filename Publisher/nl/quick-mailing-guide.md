@@ -29,5 +29,5 @@ een tekstversie toevoegen en de mail bekijken.
 ## Meer informatie
 
 * [Stylesheets](./stylesheets)
+* [Personalizatie](./personalizatie)
 * [Followups](./followups)
-* [Enquêtes](./surveys)

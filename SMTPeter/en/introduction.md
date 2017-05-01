@@ -11,9 +11,11 @@ After registering, you only need a few things to do in order to start with SMTPe
 
 ## Setting up a Sender Domain
 
-The sender domains module can be found under the `Account configuration` tab in the application. 
-The interface speaks for itself: click `Setup sender domain` and then `Add sender domain` and 
-follow the steps. Don’t worry about your click- and tracking domains or the DMARC deployment, 
+In order to use SMTPeter you have to setup the domain from which you want to send your emails.
+We call this domain the "sender domain" and it can be configured via the [dashboard](dashboard)
+in the sender domain module. This module can be found under the `Sender Domains` tab in the application. 
+The interface speaks for itself: click `Add sender domain` and follow the steps.
+Don’t worry about your click- and tracking domains or the DMARC deployment, 
 you can always edit them later on.
 
 Once you’ve incorporated the recommended settings in your DNS, your domain is ready to be verified. 
@@ -51,23 +53,30 @@ with the REST API. This way, no low-level calls have to be written and you can s
 * [PHP example](php-example "PHP example")
 * [Python example](python-example "Python example")
 
+More information about the REST API can be found [here](rest-api).
+
 
 ## SMTP API
 
 Instead of the REST API, the traditional SMTP API can also be used to connect with SMTPeter. This API is 
 best used when connecting to traditional email clients such as Outlook and Thunderbird, and when connecting 
-to mobile devices. With the SMTP API, it is also possible to set the standard SMTP user options in the 
-interface using toggle switches.
+with mobile devices. 
 
 In order to use the SMTP API, you must create a valid username and password in the application. Remember 
-these well, because you will only see them once!
-Of course it's also possible to connect to both APIs. That way, you can use the features you like best 
+these well, because you will only see them once! Subsequently you can send mails via SMTP to SMTPeter.
+The SMTP settings that you will need can be found [here](smtp-ports). You can also read the
+[general SMTP API documentation](smtp-api) if you want to know more.
+
+
+If you want to use both APIs that is possible tooo. That way, you can use the features you like best 
 from both.
 
 That's everything! SMTPeter is now ready to be utilized. 
 Read more about what SMTPeter has to offer:
 
-- [Sender Domains](sender-domains)
-- [SMTP API](smtp-api)
-- [REST API](rest-api)
 
+## Further reading:
+
+- [More information about the REST API](rest-api)
+- [More information about the SMTP API](smtp-api)
+- [More information about Sender Domains](sender-domains)

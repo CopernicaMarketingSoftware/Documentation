@@ -1,7 +1,7 @@
 # Werken met datums in Smarty
 
 Naast de standaard profielvariabelen om te personaliseren heb je in templates
-en documenten ook altijd toegang tot de variabele {$smarty.now}. In deze variabele
+en documenten ook altijd toegang tot de variabele `{$smarty.now}`. In deze variabele
 staat het huidige tijdstip, en kan je gebruiken om bijvoorbeeld een automatische 
 copyrighttekst onderaan je berichten te plaatsen, die gegarandeerd het huidige 
 jaartal toont. Maar er kan veel meer:
@@ -11,30 +11,30 @@ jaartal toont. Maar er kan veel meer:
 * Sluit een enquete automatisch nadat de uiterste invuldatum is verstreken
 
 
-## {$smart.now} en {$timestamp}
+## `{$smart.now` en `{$timestamp}`
 
-De {$smarty.now} variabele bevat altijd het huidige tijdstip. Hierdoor kun je
+De `{$smarty.now}` variabele bevat altijd het huidige tijdstip. Hierdoor kun je
 altijd de juiste datum boven een nieuwsbrief kan zetten, of het juiste jaartal 
 in een afsluitende copyright-melding.
 
-Maar het heeft ook een nadeel. De {$smarty.now} variabele bevat het huidige 
+Maar het heeft ook een nadeel. De `{$smarty.now}` variabele bevat het huidige 
 tijdstip en blijft dus gewoon doorlopen, zelfs als een mailing eenmaal is 
 verzonden. Als je bijvoorbeeld op maandag een nieuwsbrief verstuurt en je gebruikt 
-de {$smarty.now} variabele om bovenaan de tekst "nieuwsbrief van maandag 12 september" 
+de `{$smarty.now}` variabele om bovenaan de tekst "nieuwsbrief van maandag 12 september" 
 te plaatsen, dan krijgen mensen die een dag later de webversie van de mail bekijken 
 een andere tekst te zien. De webversie van een mailing wordt namelijk live
-samengesteld en gebruikt de actuele waarde van {$smarty.now}. Boven de webversie
+samengesteld en gebruikt de actuele waarde van `{$smarty.now}`. Boven de webversie
 komt hierdoor een "nieuwsbrief van dinsdag 13 september" titel te staan.
 
-Om dit op te lossen is er ook een {$timestamp} variabele. Deze variabele bevat
-het tijdstip van versturen. Meestal is er geen verschil tussen {$smarty.now}
-en {$timestamp}, maar in bepaalde gevallen, zoals bij een webversie die enige
+Om dit op te lossen is er ook een `{$timestamp}` variabele. Deze variabele bevat
+het tijdstip van versturen. Meestal is er geen verschil tussen `{$smarty.now}`
+en `{$timestamp}`, maar in bepaalde gevallen, zoals bij een webversie die enige
 tijd later wordt geopend, is er wel een verschil.
 
 
 ## Smarty modifiers
 
-De {$smarty.now} en de {$timestamp} variabelen bevatten het huidige tijdstip op 
+De `{$smarty.now}` en de `{$timestamp}` variabelen bevatten het huidige tijdstip op 
 een manier die voor computers erg handig is, maar die door mensen nooit wordt 
 gebruikt: de tijd is opgeslagen als het aantal seconden sinds 1 januari 1970, 
 Greenwich time. Het heeft daarom niet zo veel zin om deze variabelen direct in 
@@ -42,7 +42,7 @@ een mailing op te nemen: er zou dan een heel groot getal in je bericht komen te 
 
 Mensen werken op een heel andere manier met tijd dan computers. Mensen werken
 met jaren, maanden en dagen. Als je wilt personaliseren op basis van de tijd
-moet je daarom het tijdstip dat is opgeslagen in de {$smarty.now} variabele
+moet je daarom het tijdstip dat is opgeslagen in de `{$smarty.now}` variabele
 omzetten naar een representatie die voor mensen is te begrijpen. Dit kun je
 doen door gebruik te maken van een [Smarty modifier](personalization-modifiers):
 |date_format.
@@ -87,7 +87,7 @@ modifier gebruikt de timezone instelling om dit te bepalen.
 ## Morgen, overmorgen en de dag daarna
 
 De |date_format modifier is best slim. Je kunt hem niet alleen gebruiken om de
-{$smarty.now} variabele om te zetten naar een leesbare tijd- of datumstring, 
+`{$smarty.now}` variabele om te zetten naar een leesbare tijd- of datumstring, 
 maar ook om allerlei andere datums te tonen. Is je actie slechts een dag geldig?
 
     De actie is geldig tot en met {"tomorrow"|date_format:"%A, %B %e, %Y"}

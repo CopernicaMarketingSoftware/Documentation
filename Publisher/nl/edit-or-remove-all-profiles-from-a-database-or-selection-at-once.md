@@ -1,3 +1,5 @@
+# Alle profielen uit een selectie of database verwijderen
+
 Het is mogelijk om alle profielen uit een database ineens te
 verwijderen. Ook kan je alle profielen uit een selectie ineens
 verwijderen. Let op, profielen die je hebt verwijderd kan je niet meer

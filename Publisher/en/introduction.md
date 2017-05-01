@@ -54,3 +54,12 @@ Publisher's features are being added to MarketingSuite, so in the future
 you won't have to switch anymore. The documentation describes both 
 Marketing Suite and Publisher and distinguishes between them where 
 necessary.
+
+## More information
+
+Eager to get started? The articles below provide instructions to make 
+a quick start.
+
+* [Configure a sender domain](./quick-sender-domain-guide)
+* [Configure your database](./quick-database-guide)
+* [Send your first mailing](./quick-mailing-guide)

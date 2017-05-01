@@ -1,5 +1,4 @@
-Copy a database, collection and/or its components
-=================================================
+# Copy a database, collection and/or its components
 
 Het is mogelijk om kopie te maken van een database en de volledige
 database. Je kan de database kopieren inclusief (sub)profielen, of

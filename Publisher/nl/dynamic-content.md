@@ -1,3 +1,5 @@
+# Conditionele en dynamische content
+
 Er zijn binnen Copernica verschillende manieren waarop je gebruik kan
 maken van dynamische content binnen je marketingcampagnes. Zo kan je met
 behulp van [Smarty

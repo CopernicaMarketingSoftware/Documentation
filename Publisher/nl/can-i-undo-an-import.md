@@ -6,8 +6,7 @@ vrij eenvoudig weer te verwijderen. Zijn er echter ook bestaande
 profielen gewijzigd door de import, dan kunnen profielen alleen
 een-voor-een handmatig worden teruggedraaid middels de rollback functie.
 
-Profielen na een import weer verwijderen
-----------------------------------------
+## Profielen na een import weer verwijderen
 
 Maak onder de database een nieuwe selectie aan. Hiermee ga je alleen
 profielen selecteren die door de import zijn toegevoegd.
@@ -20,7 +19,7 @@ profielen selecteren die door de import zijn toegevoegd.
     selectie de juiste profielen bevat, voordat je deze definitief
     verwijdert.
 
-### De profielen uit de selectie verwijderen
+## De profielen uit de selectie verwijderen
 
 -   Om de profielen te verwijderen, kies je in het menu Huidige weergave
     voor **Wijzigen / verwijderen meerdere profielen**
@@ -28,8 +27,7 @@ profielen selecteren die door de import zijn toegevoegd.
 -   Klik vervolgens op **Verwijderen** om de profielen uit deze selectie
     te verwijderen.
 
-Profielen naar eerdere staat terugdraaien
------------------------------------------
+## Profielen naar eerdere staat terugdraaien
 
 Heb je door de import bestaande profielen abusievelijk gewijzigd? Het
 terughalen van profieldata kan namelijk alleen per individueel profiel
