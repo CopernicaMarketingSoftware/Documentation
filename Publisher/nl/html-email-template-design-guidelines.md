@@ -1,3 +1,5 @@
+# HTML en e-mail document richtlijnen
+
 Dit artikel gaat over de ondersteuning van HTML en CSS door diverse
 e-mailprogramma's zoals Gmail en Outlook. De regels van
 e-mailprogramma's wat betreft HTML en CSS gebruik verschillen onderling
@@ -16,7 +18,7 @@ bestaan in plaats van gepositioneerde ‘divs’.
 
 ![tables1.png](../images/htmltemplatetable.png)
 
-**Tip:**Gebruik altijd een aparte tabel om de boel bij elkaar te houden.
+**Tip:** Gebruik altijd een aparte tabel om de boel bij elkaar te houden.
 Zo voorkom je dat er onwenselijke ruimte ontstaat tussen de overige
 tabellen.
 
