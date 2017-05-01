@@ -79,7 +79,6 @@ doet en alle aliassen installeert, dan kan Copernica vervolgens wijzigingen
 doorvoeren.
 
 ```html
-<pre>
     Geadviseerde DNS records die                DNS records op de server
     aan het domein moeten worden                van Copernica, met instellingen
     toegevoegd:                                 van het sender domain:
@@ -95,7 +94,6 @@ doorvoeren.
     +-------------------+                       +-------------------+
     |   Bounce alias    |           --->        |   MX record(s)    |
     +-------------------+                       +-------------------+
-</pre>
 ```
 
 Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 

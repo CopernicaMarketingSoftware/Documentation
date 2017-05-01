@@ -6,18 +6,15 @@ door de bijbehorende gegevens van de geadresseerde. De speciale codes komen uit
 een scripttaal genaamd *Smarty*. Ga naar [http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/) 
 voor een complete handleiding van de mogelijkheden van Smarty.
 
-
 ## Gebruik van variabelen
 
 Een personalisatievariabele bestaat uit een dollarteken en een naam van een variabele,
 geplaatst tussen accolades. De volgende variabelen zou je bijvoorbeeld in een template
 of document kunnen gebruiken:
 
-```text
 * {$naam}
 * {$email}
 * {$aanhef}
-```
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
 velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 
@@ -38,13 +35,11 @@ en [in_miniselection](./personalization-function-in_miniselection) functies.
 Er zijn echter wel wat belangrijke dingen om op te letten als je werkt met 
 Smarty:
 
-```text
 * Houd het veilig en zorg dat je je variabelen escapet.
 * Smarty is *hooflettergevoelig*. {$name} is dus wat anders dan {$NAME}.
 * Accolades gebruiken als symbool kan met [rdelim en ldelim](./personalization-functions-delim) 
 of [literal](./personalization-functions-literal). Het is in Smarty 3 ook 
 mogelijk om simpelweg beide kanten van je accolades te voorzien van een spatie.
-```
 
 De rest van dit artikel zal je helpen deze richtlijnen te volgen.
 
@@ -52,7 +47,6 @@ De rest van dit artikel zal je helpen deze richtlijnen te volgen.
 
 Als je templates of documenten maakt, moet je soms kiezen tussen Smarty versie
 2 en Smarty versie 3. [Kies altijd voor versie 3.](./smarty-2-vs-smarty-3.md)
-
 
 ## Escapen van variabelen
 
@@ -91,7 +85,6 @@ te denken om overal |escape achter te zetten, kun je dat onder de template of
 onder het document via het [formulier met personalisatieinstellingen](./personalization-settings.md)
 aangeven.
 
-
 ## Accolades
 
 Als je accolades in een template of een document wilt opnemen die niet als Smarty 
@@ -116,10 +109,6 @@ zelfs als het wel geldige Smarty variabelen lijken te zijn:
 
 Als je bovenstaand code in een mailing opneemt, dan wordt de code {accolades}
 niet gezien als Smarty code en blijft het gewoon in de mailing staan.
-    
-Zie ook: [Probleem: Blokhaken en accolades veroorzaken
-personalisatiefouten](how-to-solve-errors-in-personalization)
-
 
 ## Personalisatie testen
 
@@ -127,7 +116,6 @@ Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personali
 Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf 
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
-
 
 ## Waar kan je Smarty personalisatie gebruiken?
 
