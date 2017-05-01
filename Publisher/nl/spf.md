@@ -78,3 +78,10 @@ wat voor reden dan ook, ook andere IP addressen (of andere elementen) in het SPF
 record wilt opnemen, dan kan dit. Je kunt gewoon het door ons geadviseerde SPF
 record overnemen en aanpassen, en de aangepaste versie in je DNS plaatsen. Nodig 
 is dit echter meestal niet.
+
+## Meer informatie
+
+* [Afzenderdomeinen](./sender-domains)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [MX](./mx)

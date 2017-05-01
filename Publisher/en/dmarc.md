@@ -43,7 +43,6 @@ what DMARC does. DMARC allows a receiver to run a DNS query to
 find out the answers to the above questions, and to notify senders when they
 get messages that do not pass the SPF or DKIM checks.
 
-
 ## DMARC and DNS
 
 DMARC makes use of DNS and email. As a domain owner you can add a DMARC record 
@@ -72,7 +71,6 @@ DNS settings out of your hands, including setting up the DMARC records. If
 you configure a sender domain, you can also let Copernica take care of handling 
 the DMARC reports that are sent back. All these reports are logged and displayed
 in fancy charts and tables on the Marketing Suite dashboard.
-
 
 ## Main domain vs subdomain
 
@@ -160,4 +158,9 @@ tolerant setting acceptible for you or do you want to move to a stricter setting
 A strict setting (p=reject) makes it much harder for others to abuse your mail,
 but also more likely that you messages accidentally can not be delivered.
 
-[Back to sender domains](./sender-domains)
+## More information
+
+* [Sender domains](./sender-domains)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)
