@@ -22,7 +22,6 @@ should hold the names of the database fields into which you are going to import.
     John,Doe,Denver,555-343-32
     Peter,Smith,Nashville,555-341-66
 
-
 ## Linking columns
 
 After you've uploaded a field, you must link the columns in the file to fields
@@ -37,7 +36,6 @@ import file, Copernica searches for matching profiles based on the selected keys
 and updates these matching profiles. You can also configure what you want to do
 with lines for which no matching profiles are found: ignore these lines or 
 you can create new profiles.
-
 
 ## Dealing with subprofiles
 
@@ -58,7 +56,6 @@ subprofile (the pets) have to be entered on a seperate line, the profile data
 key fields (for example the combination Firstname, Lastname and City) to allow 
 Copernica to recognize that the two "John Doe" lines refer to one profile, instead 
 of handling the lines as two seperate profiles: one with a dog and one with a cat. 
-
 
 ## Periodic imports
 
@@ -104,3 +101,8 @@ Did the import modify profiles that you now want to bring back to their
 original state? Individual profiles have a rollback feature, but this feature
 can only be used one profile at a time. You can also ask Copernica to install
 a backup of your database, but you might be charged extra for that.
+
+## More information
+
+* [Database management](./database-introduction)
+* [Exporting a database](./database-export)

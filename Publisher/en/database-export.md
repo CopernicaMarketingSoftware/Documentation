@@ -42,3 +42,8 @@ and find the options to import/export under **Current view**.
 ## Exporting in Marketing Suite
 
 It is not (yet) possible to export with Marketing Suite.
+
+## More information
+
+* [Database management](./database-introduction)
+* [Importing a database](./database-import)

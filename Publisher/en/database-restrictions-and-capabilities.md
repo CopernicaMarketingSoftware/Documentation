@@ -8,7 +8,6 @@ inserted into the database. With *database intentions* you can prevent that
 a database or selection is wrongly used to send out a mailing.
 These systems can be found in the profile management section the Marketing Suite.
 
-
 ## Database intentions
 
 When you create a new database or selection, you will notice that you can not 
@@ -23,7 +22,6 @@ selections. For the database and for every selection you can set its intentions:
 email, fax or mobile. Only after you've set the intention, the database or
 selection will appear in the list of available targets when you try to schedule
 a mailing.
-
 
 ## Database restrictions
 
@@ -55,7 +53,6 @@ the database. The option "block doubles" should be used for that. Before a new
 profile is added to the database, the database is first checked to see if it 
 already contains a profile with the same combination of fields. Only unique 
 profiles are allowed in.
-
 
 ## Regular expressions
 
