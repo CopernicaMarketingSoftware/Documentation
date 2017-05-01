@@ -1,5 +1,7 @@
 # RSS and atom feeds
 
+Note: This function does not yet exist in Marketing Suite.
+
 Don't know what content to put on a [web
 page](https://www.copernica.com/en/features/web-pages "Web pages") or
 [emailing](https://www.copernica.com/en/features/emailings "Emailings")?
