@@ -48,7 +48,7 @@
     * [Enquêtes](./surveys.md)
     * [RSS en Atom feed maken en publiceren](./rss-and-atom-feeds.md)
     * [Overzicht van beschikbare functies en invoegcodes](./special-functions-and-tags.md)
-    * [Campagneresultaten bekijken en delen (./statistieken.md)](./campaign-results-and-statistics.md)
+    * [Campagneresultaten bekijken en delen](./campaign-results-and-statistics.md)
     * [Print, PDF en fax](./print-pdf-and-fax.md)
     * [Campagnes personaliseren](./personalize-campaigns.md)
     * [Sms en mobile](./sms-and-mobile.md)
