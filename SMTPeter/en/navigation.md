@@ -1,5 +1,5 @@
 * [Getting started](introduction)
-    * [Dashoard](dashboard)
+    * [Dashboard](dashboard)
 * [Send with REST API](rest-api)
     * [Send MIME data](rest-mime)
     * [Let SMTPeter create MIME data](rest-send-json)

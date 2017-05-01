@@ -1,7 +1,5 @@
 # Documenten maken in de Publisher
 
-Dit artikel beschijft
-
 ## Toevoegen van inhoudsblokken
 
 Als je je HTML-template hebt ontwikkeld, kan je in de HTML-broncode met
@@ -31,7 +29,7 @@ Geef in de template aan waar in het document een afbeelding mag worden
 toegevoegd. De eindgebruiker kan vervolgens op documentniveau op deze
 plek een afbeelding uploaden, en deze bijvoorbeeld aanklikbaar maken.
 
-de tag: **[image name="foto"]**
+De tag: **[image name="foto"]**
 
 [Volledige artikel over afbeeldingblokken en de extra
 opties](./the-image-function-for-adding-images-to-your-document.md)
@@ -70,12 +68,11 @@ specificeren met speciale parameters. Deze vind je in de help-artikelen
 over de individuele content blokken.
 
 Wanneer je de template hebt geüpload naar de software, dan kan je de
-eigenschappen van de content blokken ook aanpassen onder *Template menu* 
-**Blokstructuur aanpassen...**
+eigenschappen van de content blokken ook aanpassen onder *Template menu*,  
+*Blokstructuur aanpassen*..
 
 
 ## Automatisch datum en tijd opnemen in template
-
 
 Met behulp van smarty code kan je automatisch de datum en tijd weergeven
 in je document.
@@ -105,6 +102,7 @@ URL. Om hier een aanklikbare link van de maken is nog wat HTML nodig.
 <a href="{webversion}">Bekijk de webversie van deze mail</a>
 ```
 
+
 ## Uitschrijflink toevoegen
 
 Een commerciële e-mail is wettelijk verplicht uitgerust met
@@ -118,8 +116,8 @@ verwerkt in de database.
 <a href="{unsubscribe}">Klik hier om je uit te schrijven voor deze nieuwsbrief</a>
 ```
 
-**Let op:** De uitschrijflink moet nog wel geactiveerd worden. Ga naar
-*Databasemanagement* - *Uitschrijfgedrag instellen*... om in te stellen
+Let op: de uitschrijflink moet nog wel geactiveerd worden. Ga naar
+*Databasemanagement* - *Uitschrijfgedrag instellen*.. om in te stellen
 hoe een uitschrijfverzoek in de database moet worden verwerkt
 (bijvoorbeeld de waarde in het veld *Nieuwsbrief* veranderen naar
 'Nee').
