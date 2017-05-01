@@ -8,7 +8,7 @@ server met daarin alle relevante informatie over het zojuist verwijderde profiel
 
 ## Variabelen
 
-Met elk POST bericht worden de volgende variabelen meegestuurd:
+Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
 <table>
     <tr>
@@ -16,25 +16,40 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
         <td>het unieke ID van het profiel/subprofiel dat verwijderd werd</td>
     </tr>
     <tr>
-        <td>action</td>
-        <td>welke actie er op het profiel was uitgevoerd ('create', 'update' of 'delete')</td>
+        <td>type</td>
+        <td>welk type actie er op het (sub)profiel was uitgevoerd ('create', 'update' of 'delete')</td>
     </tr>
     <tr>
         <td>timestamp</td>
-        <td>tijdstip waarop het profiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-    <tr>
-        <td>field_X</td>
-        <td>waarde van het veld X van het profiel voordat het verwijderd werd</td>
-    </tr>
-    <tr>
-        <td>interest_N</td>
-        <td>de N-de interesse van het profiel voordat het verwijderd werd</td>
+        <td>het tijdstip waarop het (sub)profiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
     </tr>
 </table>
 
 De variabele "action" heeft altijd de waarde 'delete'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
 profiel [aangemaakt](feedback-creates) of [aangepast](feedback-updates) wordt.
-Als je het profiel terug zou willen brengen, vertellen de "field" en "interest" variabelen
-je hoe het profiel eruitzag net voordat het verwijderd werd.
+Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. Voor profielen zijn dit de volgende variabelen:
+
+<table>
+    <tr>
+        <td>database</td>
+        <td>het unieke ID van de database waarin het profiel zich bevindt</td>
+    </tr>
+</table>
+
+Voor subprofielen zijn dit de volgende variabelen:
+
+<table>
+    <tr>
+        <td>profile</td>
+        <td>het unieke ID van het profiel dat bij dit subprofiel hoort</td>
+    </tr>
+    <tr>
+        <td>database</td>
+        <td>het unieke ID van de database waarin het subprofiel zich bevindt</td>
+    </tr>
+    <tr>
+        <td>collection</td>
+        <td>het unieke ID van de collection waarin het subprofiel zich bevindt</td>
+    </tr>
+</table>
