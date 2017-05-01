@@ -4,8 +4,6 @@ The table of key figures provides an insight into the most important
 results of an emailing or a series of mailings. It can be found in the 
 *statistics* tab from the *Profile* menu.
 
-![Key figures](../images/key_figures.png)
-
 ## Key figures in account, document and template statistics
 
 - **Sent mailings:** Show the total amount of **e-mailings** sent from 
