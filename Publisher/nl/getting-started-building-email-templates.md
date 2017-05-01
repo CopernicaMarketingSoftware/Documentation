@@ -89,7 +89,7 @@ weer.
 
 ## Webversie toevoegen
 
-Met behulp van de [webversietag](./link-to-the-webversion-of-your-email.md)
+Met behulp van de [webversietag](./web-version.md)
 stuur je snel en gemakkelijk een webversie mee met de nieuwsbrief. De
 webversie biedt uitkomst voor ontvangers die de HTML nieuwsbrief niet
 goed kan lezen in zijn of haar e-mailprogramma.
@@ -183,8 +183,8 @@ het document instellen.
 
 ## Andere zaken van bijzonder groot nut
 
-Toon bepaalde content alleen in de email of in de webversie met de
-[{mailonly} en {webonly}](./the-webonly-and-mailonly-functions.md)tags.
+Toon bepaalde content alleen in de e-mail of in de webversie met de
+`{mailonly}` en `{webonly}` tags.
 
 
 
