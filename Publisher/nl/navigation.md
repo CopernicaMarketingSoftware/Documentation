@@ -36,7 +36,6 @@
 * [Data-scripting en opvolgacties](./followups.md)
     * [Follow-up manager](./follow-up-manager.md)
     * [Het data-script attribuut](./followups-scripting.md)
-
 * [Oude documentatie](./old-documentation.md)
     * [Databasebeheer](./database-management.md)
     * [Importeren en exporteren](./import-and-export.md)
