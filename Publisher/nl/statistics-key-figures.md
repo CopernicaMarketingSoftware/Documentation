@@ -64,5 +64,5 @@ aantallen impressies/kliks.
 
 ## Meer informatie
 
-* [Publisher statistieken](./statistics)
+* [Statistieken](./statistics)
 * [Het dominante resultaat per bestemming](./statistics-dominant-result)

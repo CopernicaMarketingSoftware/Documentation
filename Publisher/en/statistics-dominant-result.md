@@ -7,10 +7,9 @@ click is counted on this view. Thus, the green box represents the number
 of destinations where a click was registered as the dominant result, not
 the total number of clicks.
 
-![](../images/sjabloon_clip_image001.png)
+[Read more on key figures](./statistics-key-figures)
 
-####
-**Error (bounces)**
+#### **Error (bounces)**
 
 The mailing has triggered an error somewhere in the delivery process.
 Check the **errors** tab to see what error and in what stage it
@@ -46,5 +45,5 @@ abuse otherwisely.
 
 ## More information
 
-* [Statistics in Publisher](./statistics)
+* [Statistics](./statistics)
 * [Key figures](./statistics-key-figures)
