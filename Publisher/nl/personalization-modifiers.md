@@ -1,90 +1,375 @@
-# Modifiers voor variabelen
+# Overzicht modifiers
+Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
+van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
+Je gebruikt bijvoorbeeld `tolower` om de variabele `{$name}` te
+bewerken. Dit ziet er dan zo uit: `{$name|tolower}`.
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
+Je kunt bijvoorbeeld `{$name|tolower|ucfirst}` gebruiken om te zorgen dat alle
+namen met een hoofdletter beginnen en de resterende letters altijd kleine 
+letters zijn. 
 
-Je kunt met behulp van modifiers personalisatievariabelen finetunen. Een 
-modifier is een soort filter waarmee je de inhoud van een variabele aanpast. 
-Je kunt met een modifier bijvoorbeeld zorgen dat namen altijd met een hoofdletter
-beginnen, of dat alleen de eerste 50 letters van de woonplaats in een mailing
-wordt getoond (om te voorkomen dat de layout van de mail wordt opgerekt als
-iemand een heel erg lange woonplaats heeft ingevoerd).
 
-`{$naam|ucfirst}`
-`{$woonplaats|truncate:50}`
+De volgende tabel laat alle geldige modifiers zien:
 
-Je kunt modifiers zelfs combineren. Als je bijvoorbeeld eerst wilt zorgen dat
-de woonplaats met een hoofdletter begint, en daarna ook nog wilt zorgen dat
-hij niet langer dan 50 tekens is, doe je dit als volgt:
+| Modifier                                                                                   | Beschrijving                                                                                                 |
+| -------------------------------------------------------------------------------------------| -------------------------------------------------------------------------------------------------------------|
+| [base64_encode](personalization-modifiers#base64_encode)                                   | base64 encoder                                                                                               |
+| [base64_decode](personalization-modifiers#base64_decode)                                   | base64 decoder                                                                                               |
+| [cat](personalization-modifiers#cat):"string"                                              | maakt van de variabele een string                                                                            |
+| [count](personalization-modifiers#count)                                                   | telt het aantal elementen in een  variable                                                                   |
+| [count_characters](personalization-modifiers#count_characters)                             | telt het aantal tekens in een string                                                                         |
+| [count_paragraphs](personalization-modifiers#count_paragraphs)                             | telt het aantal paragrafen in een tekst (door *newlines* te tellen)                                          |
+| [count_words](personalization-modifiers#count_words)                                       | telt het aantal woorden in een tekst                                                                         |
+| [default](personalization-modifiers#default):default value                                 | gebruik *default* waarde als variabele niet is aangegeven                                                    |
+| [empty](personalization-modifiers#empty)                                                   | check of een variabele leeg is                                                                               |
+| [escape](personalization-modifiers#escape):"string"                                        | *escape* html tekens (of andere tekens) binnen een string                                                    |
+| [indent](personalization-modifiers#indent):num = 1:char = " "                              | zet het aantal *whitespaces* aan het begin van elke regel                                                    |
+| [md5](personalization-modifiers#md5)                                                       | voer md5 hashing uit                                                                                         |
+| [nl2br](personalization-modifiers#nl2br)                                                   | vervang newlines met html *br tags*                                                                          |
+| [range](personalization-modifiers#range):start = 0:end                                     | lijst opdelen om de items tussen de start en eindpositie te krijgen                                          |
+| [regex_replace](personalization-modifiers#regex_replace):regex:replace_text                | vervang *substrings* door *regular expressions* te gebruiken                                                 |
+| [replace](personalization-modifiers#replace):"string1":"string2"                           | vervang het voorkomen van string1 met string2                                                                |
+| [sha1](personalization-modifiers#sha1)                                                     | voer sha1 hashing uit                                                                                        |
+| [sha256](personalization-modifiers#sha256)                                                 | voer sha256 hashing uit                                                                                      |
+| [sha512](personalization-modifiers#sha512)                                                 | *sha512 hashing*                                                                                             |
+| [spacify](personalization-modifiers#spacify):separator = " "                               | plaats een verdeler tussen elk input teken                                                                   |
+| [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
+| [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschrijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
+| [substr](personalization-modifiers#substr):start position:length                           | geef de substring teurg vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
+| [tolower](personalization-modifiers#tolower)                                               | zet alle tekens om naar kleine letters                                                                       |
+| [toupper](personalization-modifiers#toupper)                                               | zet alle tekens om naar grote letters                                                                        |
+| [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kunten van het inputveld                                       |
+| [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | deel de inputvelden op die niet langer dan lengte en toevoegen zijn aan het eind. break_words = true staat het opdelen van delen van woorden toe.                                                                                                                                                                                                |
+| [ucfirst](personalization-modifiers#ucfirst)                                               | vervang eerste teken met een hoofdletter                                                                     |
+| [urlencode](personalization-modifiers#urlencode)                                           | codeer input om te gebruiken in een url                                                                      |
+| [urldecode](personalization-modifiers#urldecode)                                           | decodeer input om te gebruiken in een url                                                                    |
 
-`{$woonplaats|ucfirst|truncate:50}`
 
-De belangrijkste modifier is de |escape modifier. Met deze modifier zorg je
-dat HTML code en scripts in een variabele worden omgezet naar veilige tekens. 
-Als je personaliseert dan maak je vaak gebruik van gegevens die door mensen
-zelf zijn ingevoerd. Meestal zijn deze gegevens correct, maar dit weet je 
-nooit zeker. Om te voorkomen dat er per ongeluk ongeldig HTML code of javascripts
-in je mailing verschijnen, moet je deze |escape modifier altijd gebruiken in
-HTML code:
+## base64_encode
 
-    Beste {$naam|ucfirst|escape}
+Met deze modifier codeer je data naar base64. Dit werkt niet op arrays.
+Gebruik:
 
-In bovenstaand voorbeeld wordt de eerste letter van de naam omgezet naar een 
-hoofdletter, en daarna door de escape-modifier gehaald om te voorkomen dat er
-per ongeluk scripts in de mailing verschijnen als iemand een ongeldige naam
-heeft ingevoerd.
+```text
+The base64 encoding of {$name} is {$name|base64_encode}
+```
 
-## Beschikbare modifiers
+## base64_decode
 
-Het personalisatiesysteem van Copernica maakt gebruik van Smarty. Een uitgebreide
-uitleg van wat er allemaal mogelijk is, en welke modifiers er allemaal zijn 
-kun je vinden [op de Smarty website](http://www.smarty.net/docs/en/).
-De volgende modifiers worden door Copernica ondersteund:
+Met deze modifier kun je base64 decoderen.
+Gebruik:
 
-| Modifier                                           											 | Omschrijving												  |
-|------------------------------------------------------------------------------------------------|----------------------------------------------------------- |
-| {$variable\|[base64_encode](./personalization-modifiers-base64_encode.md)}                     | variable naar base64 encoden                               |
-| {$variable\|[capitalize](./personalization-modifiers-capitalize.md)}                           | eerste letter van elk woord omzetten naar een hoofdletter  |
-| {$variable\|[cat](./personalization-modifiers-cat.md)}                                         | tekst achter een variabele plakken                         |
-| {$variable\|[ceil](./personalization-modifiers-ceil.md)}                                       | getal naar boven afronden                                  |
-| {$variable\|[count](./personalization-modifiers-count.md)}                                     | aantal elementen in variabele (handig als $variabele een array is)|
-| {$variable\|[count_characters](./personalization-modifiers-count_characters.md)}               | aantal karakters in een string                             |
-| {$variable\|[count_paragraphs](./personalization-modifiers-count_paragraphs.md)}               | aantal paragrafen in een string                            |
-| {$variable\|[count_sentences](./personalization-modifiers-count_sentences.md)}                 | aantal zinnen in een string                                |
-| {$variable\|[count_words](./personalization-modifiers-count_words.md)}                         | aantal woorden in een string                               |
-| {$variable\|[date_format](./personalization-modifiers-date_format.md)}                         | formatteren van een datum                                  |
-| {$variable\|[default](./personalization-modifiers-default.md)}                                 | standaardwaarde indien een variabele niet bestaat          |
-| {$variable\|[escape](./personalization-modifiers-escape.md)}                                   | scripts en html code filteren                              |
-| {$variable\|[explode](./personalization-modifiers-explode.md)}                                 | string opsplitsen en converteren naar een array            |
-| {$variable\|[htmlspecialchars_decode](./personalization-modifiers-htmlspecialchars_decode.md)} | tegenovergestelde van escape: tekst weer terugbrengen naar html |
-| {$variable\|[html_entity_decode](./personalization-modifiers-html_entity_decode.md)}           | html entities weer terugbrengen oorspronkelijke tekens     |
-| {$variable\|[http_build_query](./personalization-modifiers-http_build_query.md)}               | variabele omzetten naar een query string                   |
-| {$variable\|[indent](./personalization-modifiers-indent.md)}                                   | tekst inspringen met spaties                               |
-| {$variable\|[json_decode](./personalization-modifiers-json_decode.md)}                         | json code omzetten naar gewone variabele                   |
-| {$variable\|[json_encode](./personalization-modifiers-json_encode.md)}                         | variabele omzetten naar json (voor gebruik in JavaScript)  |
-| {$variable\|[lower](./personalization-modifiers-lower.md)}                                     | tekst omzetten naar kleine letters                         |
-| {$variable\|[md5](./personalization-modifiers-md5.md)}                                         | tekst omzetten naar een md5 hash                           |
-| {$variable\|[nl2br](./personalization-modifiers-nl2br.md)}                                     | newlines in de tekst omzetten naar &lt;bt/&gt; tags        |
-| {$variable\|[number_format](./personalization-modifiers-number_format.md)}                     | getal opmaken                                         	  |
-| {$variable\|[rand](./personalization-modifiers-rand.md)}                                       | random nummer genereren                                    |
-| {$variable\|[regex_replace](./personalization-modifiers-regex_replace.md)}                     | tekst filteren aan de hand van een reguliere expressie     |
-| {$variable\|[replace](./personalization-modifiers-replace.md)}                                 | tekst vervangen                                            |
-| {$variable\|[sha1](./personalization-modifiers-sha1.md)}                                       | bereken de sha1 hash van een variable                      |
-| {$variable\|[spacify](./personalization-modifiers-spacify.md)}                                 | tekst oprekken door spaties toe te voegen                  |
-| {$variable\|[string_format](./personalization-modifiers-string_format.md)}                     | tekst opmaken op printf-achtige wijze                      |
-| {$variable\|[strip](./personalization-modifiers-strip.md)}                                     | witruimte automatische vervangen                           |
-| {$variable\|[strip_tags](./personalization-modifiers-strip_tags.md)}                           | html tags uit input filteren                               |
-| {$variable\|[strstr](./personalization-modifiers-strstr.md)}                                   | substring zoeken en retourneren                            |
-| {$variable\|[strtotime](./personalization-modifiers-strtotime.md)}                             | text converteren naar een tijd                             |
-| {$variable\|[strval](./personalization-modifiers-strval.md)}                                   | variabele omzetten naar een string                         |
-| {$variable\|[substr](./personalization-modifiers-substr.md)}                                   | substring selecteren                                       |
-| {$variable\|[trim](./personalization-modifiers-trim.md)}                                       | witruimte aan het begin en einde van een tekst verwijderen |
-| {$variable\|[truncate](./personalization-modifiers-truncate.md)}                               | maximum lengte voor tekst instellen                        |
-| {$variable\|[ucfirst](./personalization-modifiers-ucfirst.md)}                                 | eerste letter omzetten naar een hoofdletter                |
-| {$variable\|[ucwords](./personalization-modifiers-ucwords.md)}                                 | eerste letter van elk woord omzetten naar een hoofdletter  |
-| {$variable\|[upper](./personalization-modifiers-upper.md)}                                     | tekst omzetten naar hoofdletters                           |
-| {$variable\|[urlencode](./personalization-modifiers-urlencode.md)}                             | variabele omzetten zodat die in een url kan worden gebruikt|
-| {$variable\|[wordwrap](./personalization-modifiers-wordwrap.md)}                               | automatisch newlines toevoegen aan tekst           		  |
-                                                                                                                                                                        
-## Meer informatie
+```text
+The decoded information is {$base64encoded|base64_decode}
+```
 
- [Personalizatie](./personalization)        
- [Personalizatie functies](./personalization-functions)                                                                                                               
-                                                                                                                                                                            
+## cat
+
+Met deze modifier kun je een string samenvoegen met je variabele. Als de variabele een array is, 
+wordt de string gebruikt. 
+Gebruik:
+
+```text
+{$name|cat:"string"}
+```
+
+## count
+
+Met deze modifier kun je het aantal elementen tellen in een array.
+Er wordt een 0 teruggegeven als de variabele geen array is.
+Gebruik:
+
+```text
+{$names|count}
+```
+
+## count_characters
+
+Met deze modifier kun je het aantal tekens in een tekst tellen.
+Er wordt in dit geval een 0 teruggegeven als de variabele waarop
+deze modifier wordt aangeroepen een array bevat.
+Gebruik:
+
+```text
+{$name|count_characters}
+```
+
+## count_paragraphs
+
+Met deze modifier kun je het aantal paragrafen tellen in een tekst.
+Er wordt een 0 teruggegeven als de modifier wordt aangeroepen
+op een array.
+Gebruik:
+
+```text
+The following text has {$text|count_paragraphs} paragraph
+Text:
+{$text}
+```
+
+## count_words
+
+Met deze modifier kun je het aantal woorden tellen in een stuk tekst.
+Hier wordt een 0 teruggegeven als de 'modifier' wordt aangeroepen op een
+array.
+Gebruik:
+
+```text
+"{$text}" has {$text|count_words} words
+```
+
+## default
+
+Met deze modifier kun je de default waarde aanroepen die wordt gebruikt
+bij het ontbreken van een bepaalde waarde.
+Gebruik:
+
+```text
+This will always show {$name|default:"something"}
+```
+
+## empty
+
+Met deze modifier kun je checken of een bepaalde variabele is aangegeven.
+Het resultaat evalueert tot true of false.
+Gebruik:
+
+```text
+{if $name|empty}
+Dear customer,
+{else}
+Dear {$name},
+{/if}
+```
+
+## escape
+
+Met deze modifier kun je escape aanroepen op een variabele. Deze modifier werkt 
+niet op een arrray. 
+Gebruik:
+
+```text
+{$text|escape:"html"}
+is gelijk aan:
+{$text|escape}
+```
+
+## indent
+
+Met deze modifier kun je indentatie toevoegen aan je tekst. 
+Je kunt zelfs specificere hoeveel indentatie er nodig is en welke
+tekens indentatie moeten ontvangen. De syntax is indent:num:char en
+de default is 1 en spacing respectievelijk. De modifier wordt 
+genegereerd bij gebruik op een array. 
+Gebruik:
+
+```text
+{$text|indent:4:" "}
+```
+
+## md5
+
+Met deze modifier kun je de MD5 checksum van je tekst calculeren. 
+Bij gebruik van een array, wordt de hele array gecalculeerd.
+Gebruik:
+
+```text
+{$text|md5}
+```
+
+## nl2br
+
+Met deze modifier vervang je newlines met HTML br tags.
+Dit stelt je in staat om gewone tekst te schrijven dat op wordt gedeeld
+in HTML modus. Dit werkt bij gebruik van een array.
+Gebruik:
+
+```text
+{$text|nl2br}
+```
+
+## range
+
+Met deze modifier kun je een array als het ware opknippen door zelf 
+de grenzen aan te geven waartussen de range moet vallen. Deze modifier 
+werkt niet als de variabele geen array is.
+Gebruik:
+
+```text
+{$array|range:2:5}
+```
+
+## regex_replace
+
+Met deze modifier kun je delen van je tekst vervangen met andere tekst,
+gebasseerd op [regular expressions](@todo). Dit werkt niet als de 
+variabele een array is.
+Gebruik:
+
+```text
+This will replace each number in the variable string with the string "a number"
+{$text|regex_replace:"\d":" a number "}
+```
+
+## replace
+
+Met deze modifier kun je een deel van de tekst vervangen met
+andere tekst. De syntax is als volgt: replace:"string1":"string2".
+Dit zorgt ervoor dat overal waar "string1" voorkomt, deze wordt 
+vervangen door "string2". Dit werkt niet als de variabele een array 
+is.
+Gebruik:
+
+```text
+{$text|replace:"hi":"hello"}
+```
+
+## sha1
+
+Met deze modifier krijg je de *SHA1 hash* van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de *keys*.
+Gebruik:
+
+```text
+{$text|sha1}
+```
+
+## sha256
+
+Met deze modifier krijg je de *SHA256 hash* van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de keys.
+Gebruik:
+
+```text
+{$text|sha256}
+```
+
+## sha512
+
+Met deze modifier krijg je de *SHA512 hash* van de text terug. Een array 
+wordt in z'n geheel gecalculeerd, behalve de keys.
+Gebruik:
+
+```text
+{$text|sha512}
+```
+
+## spacify
+
+Met deze modifier kun je een teken of tekens toevoegen tussen elk teken
+in je variabele. De syntax is als volgt: spacify:separator, waar de default
+scheiding een spatie is. Dit werkt niet als de variabele een array is.
+Gebruik:
+
+```text
+{$text|spacify:"."}
+```
+
+## strlen
+
+Met deze modifier kun de lengte van de variabele worden achterhaald.
+Bij toepassing op een array, wordt de waarde 0 teruggegeven.
+Gebruik:
+
+```text
+{$text|strlen}
+```
+
+## strstr
+
+Met deze modifer kun je naar een string zoeken in de variabele en het 
+punt aangeven van waar je de rest van de variabele terug wilt hebben.
+Dit kun het gedeelte voor de string zijn, maar ook het gedeelte vanaf de 
+gevonden string. Deze modifier werkt niet op een array.
+Gebruik:
+
+```text
+If the variable holds "Hello world!", this will print Hello, {$variable|strstr:" ":true}
+and this will print world!, {$variable|strstr:"w":false}, just like this
+{$variable|strstr:"w"}
+```
+
+## substr
+
+Met deze modifier kun je een substring van een variabele opvragen.
+De syntax is als volgt: substr:start:length. Start is de beginpositie
+(zero indexed) en de *length* is de lengte die je wilt opvragen. 
+Gebruik:
+
+```text
+If the variable is "0123456789" this will print 2 to 9
+{$variable|substr:2}
+and this will print 456
+{$variable|substr:4:3}
+```
+
+## tolower
+
+Met deze modifier kun je alle tekens naar kleine letters omzetten.
+Gebruik:
+
+```text
+{$text|tolower}
+```
+
+## toupper
+
+Met deze modifier kun je alle tekens naar hoofdletters omzetten.
+Gebruik:
+
+```text
+The next part looks like it is shouted {$text|toupper}
+```
+
+## trim
+
+Met deze modifier kun je ongewenste spaties en new line characters in je
+tekst trimmen. Een overzicht van tekens die worden getrimd: spaties, tabs, 
+newlines, regelterugloop, verticale tabs en einde van strings.
+Gebruik:
+
+```text
+{$text|trim}
+```
+
+## truncate
+
+Met deze modifier is het mogelijk om tekst af te knippen en tot een bepaalde
+lengte terug te brengen. Je kunt wat tekens toevoegen om aan te geven dat de
+tekst is afgeknipt. Deze worden bij de lengte van het afknippen opgeteld. 
+Je kunt ook opgeven of het toegestaan is om worden af te breken of niet.
+De syntax is als volgt: truncate:length:etc:break_words. De lengte heeft
+een default van 80, etc (de vervanging) heeft een default van ...
+en break_words heeft een default van false.
+Gebruik:
+
+```text
+{$text|truncate:50:"....":true}
+```
+
+## ucfirst
+
+Met deze modifer kun je het eerste teken van de tekst vervangen met een
+hoofdletter teken.
+Gebruik:
+
+```text
+{$name|ucfirst}
+```
+
+## urlencode
+
+Met deze modifier kun je tekst *url encoden*. 
+Gebruik:
+
+```text
+{$text|urlencode}
+```
+
+## urldecode
+Met deze modifier kun je tekst *url decoden*.
+Gebruik:
+
+```text
+{$text|urldecode}
+```
