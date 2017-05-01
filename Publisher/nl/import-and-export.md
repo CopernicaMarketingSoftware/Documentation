@@ -1,4 +1,6 @@
-Het is vanzelfsprekend mogelijk om gegevens naar je Copernica database
+# Importeren en exporteren
+
+Het is mogelijk om gegevens naar je Copernica database
 te importeren, of vanuit Copernica te exporteren voor gebruik in een
 ander systeem. Ook is het mogelijk bestaande gegevens (periodiek) bij te
 werken met de import functionaliteit.
@@ -26,7 +28,7 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 -   [Verkeerde import ongedaan maken of
     terugdraaien](./can-i-undo-an-import.md)
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
 -   [Ik krijg een melding over niet-passende
     datums](./i-get-a-non-compatible-date-warning.-how-can-i-prevent-this.md)
@@ -35,8 +37,8 @@ De importfunctionaliteit vind je onder **Profielen**, in het menu
 -   [Meer veelgestelde vragen en het oplossen van problemen bij het
     importeren](./importing-troubleshooting-and-faq.md)
 
-Exporteren van profielgegevens
-------------------------------
+
+## Exporteren van profielgegevens
 
 De exportfunctionaliteit vind je onder **Profielen**, in het menu
 **Huidige weergave**.

@@ -1,3 +1,5 @@
+# Hoe lang duurt het voordat een mailing wordt verstuurd?
+
 De mailing zal in principe meteen nadat je op 'verzenden' hebt gedrukt
 starten. Dit proces is onomkeerbaar, de mailing zal volledig worden
 afgeleverd.
