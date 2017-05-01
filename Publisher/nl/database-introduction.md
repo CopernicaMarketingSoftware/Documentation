@@ -18,7 +18,6 @@ middel van selecties kan de database worden gesegmenteerd en gebruikt voor
 doelgerichte campagnes, zonder dat je adressen opnieuw hoeft te importeren.
 Het databasebeheer is toegankelijk via de Marketing Suite. 
 
-
 ## Meerdere dimensies
 
 Binnen het Copernica databasebeheer kom je regelmatig de begrippen *collectie*
@@ -43,9 +42,6 @@ je zou bijvoorbeeld ook een database met bedrijven kunnen aanmaken, inclusief
 een collectie met de medewerkers per bedrijf. Of een database met ouders, en
 een collectie voor de kinderen.
 
-[Lees meer over het maken van velden en collecties](database-fields-and-collections)
-
-
 ## Overige opties
 
 Als je databases inricht, zijn er verschillende zaken die je kunt instellen.
@@ -54,4 +50,11 @@ is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
 dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
 door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
-[Lees meer over restricties en gebruikesmogelijkheden](database-restrictions-and-capabilities)
+## Meer informatie
+
+* [Selecties](./selections-introduction)
+* [Velden en collecties](database-fields-and-collections)
+* [Database restricties en intenties](database-restrictions-and-capabilities)
+* [Configureren van een database](./quick-database-guide)
+* [Exporteren van een database](./database-export)
+* [Databases beheren met de REST API](./rest-api)

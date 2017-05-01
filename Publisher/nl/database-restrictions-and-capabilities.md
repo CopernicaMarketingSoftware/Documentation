@@ -83,3 +83,4 @@ uitgebreide libraries beschikbaar om met reguliere expressies te leren werken.
 
 Let op: reguliere expressies beginnen en eindigen altijd met een slash (/)
 
+[Terug naar database beheer](./database-introduction).

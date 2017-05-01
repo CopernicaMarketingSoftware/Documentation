@@ -61,7 +61,6 @@ of the {$destination} variable. This {$destination} variable is an alias for
 {$profile} in mailings that are sent to profiles, and for {$subprofile} for
 subprofile mailings.
 
-
 ## Iterating over subprofiles
 
 All the subprofiles that are linked to a profile are accessible through the
@@ -89,7 +88,6 @@ The simple example above is a good indication how powerful the personalization
 features are. You can use all profile and subprofile data in your email to 
 personalize your message. With a little inspiration and cleverness you can use
 this to make great campaigns.
-
 
 ## Foreign key fields
 
@@ -126,7 +124,6 @@ thse fields, you had to use the [{loadprofile} and {loadsubprofile} functions](.
 to include data of other (sub)profiles in your mailing. The functions still exist,
 and you can still use them if you want.
 
-
 ## Accounts and mailings
 
 Besides the {$profile} and {$subprofile} objects, you can also use the {$account}
@@ -151,14 +148,17 @@ are automatically started/triggered as a result of a certain event, like a submi
 survey or a modified profile. For these type of mailings, the {$mailing.trigger}
 variable holds the data of this event.
 
-
 ## Extra personalization variables
 
-When you're editing a template, you can open a dialog window to edit 
+When you're editing a template, you can add 
 [extra personalization variables](./personalization-extra-variables.md).
 These variables can be set for documents to influence the template. These extra 
-personalization variabeles are accessible via the object {$property} variable:
+personalization variables are accessible via their name after assignment: 
 
-* **{$property.*fieldname*}**: value of the extra personalization variabele *fieldname*.
+    {$variable}
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization functions](./personalization-functions)
+* [Personalization modifier](./personalization-modifiers)

@@ -11,7 +11,6 @@ gelaagde databases met collecties en subprofielen. Ook kun je periodieke
 imports maken die automatisch worden herhaald. Je vindt de importmodule in
 de Marketing Suite binnen het kopje 'profielen'.
 
-
 ## Importbestand voorbereiden
 
 Het bestand dat je wilt importeren moet aan een specfiek formaat voldoen.
@@ -22,7 +21,6 @@ importeren.
     Voornaam,Achternaam,Stad,Telefoonnummer
     Jan,de Jong,Amersfoort,0612456631
     Roos,Schippers,Groningen,0612222444
-
 
 ## Kolommen koppelen
 
@@ -39,7 +37,6 @@ om profielen bij te werken. Voor elke regel in het importbestand wordt aan de
 hand van het sleutelveld / de sleutelvelden gezocht naar een bijpassend profiel
 in de database, en wordt dit overeenkomende profiel bijgewerkt. Als er geen
 match is kun je instellen dat er een nieuw profiel moet worden aangemaakt.
-
 
 ## Subprofielen importeren
 
@@ -60,7 +57,6 @@ dat de twee dieren bij hetzelfde profiel horen. Let wel op dat je goed de
 sleutelvelden instelt (ook als je alleen maar nieuwe profielen wilt toevoegen),
 omdat Copernica anders niet herkent dat de twee "Jan De Vries" regels bij elkaar
 horen.
-
 
 ## Periodieke imports
 
@@ -108,4 +104,7 @@ terughalen van profieldata kan alleen per individueel profiel met de rollback
 functie. Veel werk dus. Eventueel kan je Copernica vragen om een back-up van 
 de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
 
-[Terug naar databasebeheer](./database-introduction)
+## Meer informatie 
+
+* [Database beheer](./database-introduction)
+* [Database exporteren](./database-export)

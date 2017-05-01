@@ -167,3 +167,10 @@ met jouw domeinnaam phishing aanvallen kunnen doen, maar het vergroot de kans
 dat sommige berichten (zoals berichten die lopen via mailinglists) niet goed bij
 de ontvanger aankomen.
 
+## Meer informatie
+
+* [Afzenderdomeinen](./sender-domains)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)
+
