@@ -36,37 +36,9 @@
 * [Data-scripting en opvolgacties](./followups.md)
     * [Follow-up manager](./follow-up-manager.md)
     * [Het data-script attribuut](./followups-scripting.md)
-<<<<<<< HEAD
-=======
-* [Oude documentatie](./old-documentation.md)
-    * [Databasebeheer](./database-management.md)
-    * [Importeren en exporteren](./import-and-export.md)
-    * [Webformulieren](./web-forms.md)
-    * [Templates en documenten](./templates-and-documents.md)
-    * [Follow-Up Publisher](./publisher-follow-up-manager.md)
-    * [Publisher templates](./publisher-templates.md)
-    * [Mailings verzenden](./sending-mailings.md)
-    * [Deliverability optimaliseren](./deliverability.md)
-    * [Enquêtes](./surveys.md)
-    * [RSS en Atom feed maken en publiceren](./rss-and-atom-feeds.md)
-    * [Overzicht van beschikbare functies en invoegcodes](./special-functions-and-tags.md)
-    * [Campagneresultaten bekijken en delen](./campaign-results-and-statistics.md)
-    * [Print, PDF en fax](./print-pdf-and-fax.md)
-    * [Campagnes personaliseren](./personalize-campaigns.md)
-    * [Sms en mobile](./sms-and-mobile.md)
-    * [Gebruikers en accountbeheer](./user-and-account-management.md)
-    * [CSS en XSLT](./css-and-xslt.md)
-    * [Bestanden en afbeeldingen](./files-and-images.md)
-    * [Standaard e-mailcampagnes](./standard-email-campaigns.md)
-    * [Websites](./websites.md)
->>>>>>> 6603ad064083b7319bee5a90b79749ac3e9a1b10
 * [Enquêtes](./surveys)
     * [Enquêtes aanmaken](./surveys-create)
     * [Enquêtes aanpassen](./surveys-edit)
     * [Enquêtes verwijderen](./surveys-delete)
     * [Resultaten bekijken](./surveys-view-results)
-<<<<<<< HEAD
     * [Resultaten exporteren](./surveys-export-results)
-=======
-    * [Resultaten exporteren](./surveys-export-results)
->>>>>>> 6603ad064083b7319bee5a90b79749ac3e9a1b10
