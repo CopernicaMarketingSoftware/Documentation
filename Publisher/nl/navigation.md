@@ -57,7 +57,6 @@
     * [Bestanden en afbeeldingen](./files-and-images.md)
     * [Standaard e-mailcampagnes](./standard-email-campaigns.md)
     * [Websites](./websites.md)
-
 * [Enquêtes](./surveys)
     * [Enquêtes aanmaken](./surveys-create)
     * [Enquêtes aanpassen](./surveys-edit)
