@@ -150,11 +150,15 @@ variable holds the data of this event.
 
 ## Extra personalization variables
 
-When you're editing a template, you can open a dialog window to edit 
+When you're editing a template, you can add 
 [extra personalization variables](./personalization-extra-variables.md).
 These variables can be set for documents to influence the template. These extra 
-personalization variables are accessible via the object {$property} variable:
+personalization variables are accessible via their name after assignment: 
 
-* **{$property.*fieldname*}**: value of the extra personalization variabele *fieldname*.
+    {$variable}
 
-[Back to personalization](./personalization)
+## More information
+
+* [Personalization](./personalization)
+* [Personalization functions](./personalization-functions)
+* [Personalization modifier](./personalization-modifiers)

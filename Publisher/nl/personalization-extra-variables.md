@@ -2,8 +2,7 @@
 
 Je kunt op templateniveau extra *personalisatievariabelen* aanmaken, die je
 vervolgens op documentniveau van een waarde kunt voorzien. Dit kun je gebruiken
-om op documentniveau de template te beÏnvloeden.
-
+om op documentniveau de template te beïnvloeden.
 
 ## Waarom is dit handig?
 

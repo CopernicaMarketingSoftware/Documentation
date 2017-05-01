@@ -16,7 +16,6 @@ Je kunt deze variabelen rechtstreeks in de template of het document zetten,
 maar je kunt de velden ook benaderen via de voorgedefinieerde objecten 
 {$profile}, {$subprofile} en {$destination}.
 
-
 ## Mailings naar profielen
 
 Omdat Copernica gelaagde databases ondersteunt, kunnen mailings worden verstuurd 
@@ -41,7 +40,6 @@ heeft een aantal eigenschappen:
 Je kunt eenvoudige personalisaties als {$voornaam} en {$achternaam} dus ook
 schrijven als {$profile.voornaam} en {$profile.achternaam}.
 
-
 ## Mailings naar subprofielen
 
 Als je een mailing naar subprofielen stuurt, dan is er naast het hierboven
@@ -61,7 +59,6 @@ of je {$profile.veldnaam} of {$subprofile.veldnaam} moet gebruiken, dan kun je
 de {$destination} variabele gebruiken. De {$destination} variabele is een alias voor
 {$profile} bij mailings naar profielen, en een alias voor {$subprofile} als
 het bericht voor een subprofiel wordt gepersonaliseerd.
-
 
 ## Itereren over subprofielen
 
@@ -88,7 +85,6 @@ dit soort personalisaties maken:
 Bovenstaand eenvoudige voorbeeld demonstreert hoe krachtig de personalisatiemogelijkheden
 zijn. Zowel de profielgegevens als de subprofieldata kun je gebruiken voor het
 personaliseren van je mailings. 
-
 
 ## Foreign key velden
 
@@ -126,7 +122,6 @@ velden werden ondersteund, diende je gebruik te maken van de
 om (sub)profielen in te laden. Deze functies bestaan nog steeds, en kun je
 gebruiken als je ze nodig hebt.
 
-
 ## Accounts en mailings
 
 Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
@@ -151,13 +146,16 @@ automatisch wordt ingeroosterd naar aanleiding van een bepaalde gebeurtenis (zoa
 een ingevulde enquete of een gewijzigd profiel), dan bevat het trigger object 
 allerlei gegevens over deze gebeurtenis.
 
+## Extra personalisatievariabelen toevoegen
 
-## Extra personalisatievariabelen
+Op templateniveau kun je [extra variabelen](./personalization-functions-assign)
+toevoegen. De extra personalizatievariabelen zijn daarna benaderbaar
+via de gegeven naam.
 
-Op templateniveau kun je [extra personalisatievariabalen](./personalization-extra-variables.md)
-invoeren. Deze variabelen kun je gebruiken om op documentniveau de instellingen
-van de template te beïnvloeden. De extra personalizatievariabelen zijn benaderbaar
-via het {$property} object:
+    {$variabele}
 
-* **{$property.*veldnaam*}**: de waarde van de extra personalisatievariabele *veldnaam*.
+## Meer informatie
 
+* [Personalizatie](./personalization)
+* [Personalizatie functies](./personalization-functions)
+* [Personalizatie modifiers](./personalization-modifiers)
