@@ -4,8 +4,7 @@ Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter
 meer de volgende events bij: afleveringen, bounces, clicks en opens. Deze log files 
 zijn op te vragen via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
 naar een specifiek event. De flexibele API geeft je de mogelijkheid om het event naar 
-keuze op te vragen. Je doet dit middels een van de volgende URls:
-
+keuze op te vragen. Je doet dit middels een van de volgende URLs:
 
 ```text
 https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
@@ -16,7 +15,6 @@ https://api.copernica.com/v1/events/subprofile/$id?access_token=xxxx
 https://api.copernica.com/v1/events/template/$id?access_token=xxxx
 https://api.copernica.com/v1/events/document/$id?access_token=xxxx
 ```
-
 
 ## Beschikbare parameters
 

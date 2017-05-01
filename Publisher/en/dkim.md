@@ -67,4 +67,9 @@ Marketing Suite and Publisher. With sender domains all your messages are
 automatically signed, and it is safe to keep the list of DKIM
 keys in the DKIM dialog empty.
 
-[Back to sender domains](./sender-domains)
+## More information
+
+* [Sender domains](./sender-domains)
+* [DMARC](./dmarc)
+* [SPF](./spf)
+* [MX](./mx)

@@ -19,6 +19,7 @@ voorwaarden van de selectie voldoen.
 Naast 'gewone' selecties bestaan er ook miniselecties en subselecties. 
 
 ## Miniselecties
+
 Je kunt ook selecties maken binnen collecties; we noemen ze miniselecties. 
 Een collectie is een sub-database die je aan een profiel kunt hangen, 
 bijvoorbeeld van alle producten die een klant heeft gekocht. In dit 
@@ -65,3 +66,9 @@ in door middel van *selectieregels* en *condities*. Je kunt op van alles
 filteren, van een geboortedatum tot kliks in mailings in een bepaalde periode. 
 Het is best een hoop informatie, vandaar dat we er een apart uitlegartikel 
 voor hebben gemaakt. Je vindt dit artikel [hier](selections-conditions).
+
+## Meer informatie
+
+* [Database beheer](./database-introduction)
+* [Selectie beheer](./selections-settings)
+* [Selectie condities](./selections-conditions)

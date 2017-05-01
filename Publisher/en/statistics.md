@@ -41,7 +41,7 @@ To learn more about these statistics you can read the article about it
 Many of the statistics contain [key figures](./statistics-key-figures). 
 They may provide more insight into the results of a single mailing, 
 multiple mailings over a time span or the results of all mailings for a 
-template.
+template. These key figures also include the [click-through rate](./statistics-ctr).
 
 ## Share statistics
 

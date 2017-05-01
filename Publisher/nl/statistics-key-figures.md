@@ -3,8 +3,6 @@
 De tabel met kerncijfers biedt een overzicht van de belangrijkste
 resultaten van een e-mailing of een serie mailings.
 
-![Key figures](../images/key_figures.png)
-
 ## Kerncijfers bij account, document en template statistieken
 
 - **Verzonden mailings:** Laat het totaal aantal **e-mailings** zien dat
@@ -66,5 +64,5 @@ aantallen impressies/kliks.
 
 ## Meer informatie
 
-* [Publisher statistieken](./statistics)
+* [Statistieken](./statistics)
 * [Het dominante resultaat per bestemming](./statistics-dominant-result)

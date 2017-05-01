@@ -18,10 +18,9 @@ resultaat is gemeten, staat men in 'Geen terugkoppeling'.
 Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
 impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks.
-[ Meer lezen over de
+[Meer lezen over de
 kerncijfers](./statistics-key-figures.md)
 
-![](../images/sjabloon_clip_image001.png)
 
 **Fout**
 --------
