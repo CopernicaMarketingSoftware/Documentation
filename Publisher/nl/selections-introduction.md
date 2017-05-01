@@ -66,3 +66,9 @@ in door middel van *selectieregels* en *condities*. Je kunt op van alles
 filteren, van een geboortedatum tot kliks in mailings in een bepaalde periode. 
 Het is best een hoop informatie, vandaar dat we er een apart uitlegartikel 
 voor hebben gemaakt. Je vindt dit artikel [hier](selections-conditions).
+
+## Meer informatie
+
+* [Database beheer](./database-introduction)
+* [Selectie beheer](./selections-settings)
+* [Selectie condities](./selections-conditions)

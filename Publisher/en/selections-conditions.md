@@ -1,4 +1,5 @@
 # Selection rules
+
 As you may know, Copernica determines which profiles are added to a selection based on certain properties. All profile data you store in Copernica can be used for selection rules. There are many different filter options:
 
 * **Field value**. Example: make a selection to check whether the field 'city' matches 'Amsterdam'. If it does, the profile will apear in the selection.
@@ -14,6 +15,7 @@ It's also possible to use selections to alphanumerically sort a given amount of 
 More on conditions and rules can be found [here](selection-conditions).
 
 ## Rules and conditions
+
 Filtering profiles is done using selection rules and selection conditions. These are used to specify what properties the profile needs to have to be part of the selection. It's important to note that in this case, a rule and a condition are two different things. A condition is part of a rule; multiple conditions can make up a rule. A rule could be: a profile bust be female AND under 30. Females over 30 or men under 30 cannot be in this selection.
 
 You can also choose to create an OR-relation. A rule can only consist of AND-conditions, so in order to achieve this, you'll need to create multiple rules. A profile then only needs to comply to one of the rules. So, if you want a selection of all females and all people under 30, you can say you want someone to be female OR under 30.
@@ -28,6 +30,7 @@ To summarize:
 * When using multiple rules, the ones that profiles to need to meet are OR-rules and the ones they don't need to meet are OR NOT-rules.
 
 ## AND-conditions
+
 Say, you've got a database of companies. You want create a selection that holds all companies that operate in IT and that are located in Seattle. To do this, you create a selection with one rule, consisting of two conditions:
 
 Rule 1:
@@ -39,6 +42,7 @@ Rule 1:
 * Condition 2 - add all profiles where the field 'Branch' contains 'IT'.
 
 ## OR-conditions
+
 OR-conditions are used for selections where profiles need to comply to one of multiple conditions. This means you put all conditions in separate rules, as it's not possible to put multiple OR-conditions within one rule.
 
 We take the same database we had in the previous example, only this time we want to select companies located in either Seattle or New York.
@@ -54,12 +58,14 @@ Create two selection rules:
 This selection will now contain companies from Seattle and New York.
 
 ## OR NOT-condition
+
 An OR NOT-condiion is like an OR-condition, only instead of including the selected profiles in the selection, it excludes them. So instead of saying "I want these profiles in my selection", you're saying "I want all profiles in my selection EXCEPT those that comply to the rules."
 
 In most cases, AND- and OR-conditions will suffice. There are some situations in which it is useful to use OR NOT-conditions, such as a selection of people who haven't responded to your survey yet. In that case, you could use an OR NOT-condition that selects profiles that did respond, so all selected profiles are excluded.
 
 
 ## Combining OR and AND
+
 Taking the same database, we now want a selection of companies located in Seattle OR New York AND that operate in IT.
 
 The selection rules will look like this:
@@ -81,9 +87,11 @@ AND
 
 * Condition 2 - select profiles where the field 'Branch' contains 'IT'
 
-## Frequently used selections
-The possibilities for creating selections are really only limited by your own imagination. You can set them up in any way that works for your database. To give you some inspiration, we've created some tutorials on frequently used selections:
+## More information
 
+You can find more information and tutorials on often used selections here.
+
+* [Selection management](./selections-introduction)
 * [Birthday selection](how-to-create-a-birthday-selection)
 * [Newsletter selection](create-a-mailing-list)
 * [Automatically processing email bounces](automatically-process-bounces)
