@@ -1,7 +1,7 @@
 # Feedback loops for profile updates
 
-If you set up a profile update feedback loop, the Marketing Suite notifies
-you in realtime whenever a profile or subprofile is updated within your account's databases.
+If you set up a profile update feedback loop, you are notified in realtime
+whenever a profile or subprofile is updated within your account's databases.
 For each event we send an HTTP POST call (HTTPS is possible 
 too) to your server with the relevant information about the profile at the time of the update.
 
