@@ -8,7 +8,7 @@ server met daarin alle relevante informatie over het zojuist aangemaakte profiel
 
 ## Variabelen
 
-Met elk POST bericht worden de volgende variabelen meegestuurd:
+Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
 <table>
     <tr>
@@ -16,29 +16,84 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
         <td>het unieke ID van het profiel/subprofiel dat aangemaakt werd</td>
     </tr>
     <tr>
-        <td>action</td>
-        <td>welke actie er op het profiel was uitgevoerd ('create', 'update' of 'delete')</td>
+        <td>type</td>
+        <td>welk type actie er op het (sub)profiel was uitgevoerd ('create', 'update' of 'delete')</td>
     </tr>
     <tr>
-        <td>parameter_X</td>
-        <td>waarde van de parameter X waarmee de actie uitgevoerd werd</td>
+        <td>parameters</td>
+        <td>de parameters waarmee de actie uitgevoerd werd</td>
     </tr>
     <tr>
         <td>timestamp</td>
-        <td>tijdstip waarop het profiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-    <tr>
-        <td>field_X</td>
-        <td>waarde van het veld X van het profiel nadat het aangemaakt was</td>
-    </tr>
-    <tr>
-        <td>interest_N</td>
-        <td>de N-de interesse van het profiel nadat het aangemaakt was</td>
+        <td>het tijdstip waarop het (sub)profiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
     </tr>
 </table>
 
 De variabele "action" heeft altijd de waarde 'create'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
 profiel [aangepast](feedback-updates) of [verwijderd](feedback-deletes) wordt.
-De variabele "profile" danwel "subprofile" stelt je in staat het zojuist
-aangemaakte profiel (resp. subprofiel) direct op te zoeken.
+Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. Voor profielen zijn dit de volgende variabelen:
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>het unieke ID van het profiel</td>
+    </tr>
+    <tr>
+        <td>database</td>
+        <td>het unieke ID van de database waarin het profiel zich bevindt</td>
+    </tr>
+    <tr>
+        <td>fields</td>
+        <td>de huidige velden van het profiel</td>
+    </tr>
+    <tr>
+        <td>interests</td>
+        <td>de huidige interesses van het profiel</td>
+    </tr>
+    <tr>
+        <td>created</td>
+        <td>het tijdstip waarop het profiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
+    </tr>
+    <tr>
+        <td>modified</td>
+        <td>het tijdstip waarop het profiel gewijzigd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
+    </tr>
+</table>
+
+Voor subprofielen zijn dit de volgende variabelen:
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>het unieke ID van het subprofiel</td>
+    </tr>
+    <tr>
+        <td>profile</td>
+        <td>het unieke ID van het profiel dat bij dit subprofiel hoort</td>
+    </tr>
+    <tr>
+        <td>database</td>
+        <td>het unieke ID van de database waarin het subprofiel zich bevindt</td>
+    </tr>
+    <tr>
+        <td>collection</td>
+        <td>het unieke ID van de collection waarin het subprofiel zich bevindt</td>
+    </tr>
+    <tr>
+        <td>fields</td>
+        <td>de huidige velden van het subprofiel</td>
+    </tr>
+    <tr>
+        <td>created</td>
+        <td>het tijdstip waarop het subprofiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
+    </tr>
+    <tr>
+        <td>modified</td>
+        <td>het tijdstip waarop het subprofiel gewijzigd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
+    </tr>
+</table>
+
+Associative arrays zoals "parameters" en "fields" worden per key-valuepaar verstuurd,
+bijvoorbeeld als *parameters[key]=value*.
+Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
