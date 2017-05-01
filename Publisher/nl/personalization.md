@@ -109,9 +109,6 @@ zelfs als het wel geldige Smarty variabelen lijken te zijn:
 
 Als je bovenstaand code in een mailing opneemt, dan wordt de code {accolades}
 niet gezien als Smarty code en blijft het gewoon in de mailing staan.
-    
-Zie ook: [Probleem: Blokhaken en accolades veroorzaken
-personalisatiefouten](how-to-solve-errors-in-personalization)
 
 ## Personalisatie testen
 
