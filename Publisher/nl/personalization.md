@@ -13,9 +13,11 @@ Een personalisatievariabele bestaat uit een dollarteken en een naam van een vari
 geplaatst tussen accolades. De volgende variabelen zou je bijvoorbeeld in een template
 of document kunnen gebruiken:
 
-* **{$naam}**
-* **{$email}**
-* **{$aanhef}**
+```text
+* {$naam}
+* {$email}
+* {$aanhef}
+```
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
 velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 
@@ -23,9 +25,11 @@ geadresseerden van de mailing deze gegevens hebt ingevuld. Als dat
 het geval is, dan kun je deze variabelen gewoon in je mailing
 gebruiken:
 
-    Geachte {$aanhef} {$naam},
+```text
+Geachte {$aanhef} {$naam},
     
-    U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email}.
+U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email}.
+```
 
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
 in je database met de [in_selection](./personalization-function-in_selection) 
@@ -33,11 +37,14 @@ en [in_miniselection](./personalization-function-in_miniselection) functies.
 
 Er zijn echter wel wat belangrijke dingen om op te letten als je werkt met 
 Smarty:
+
+```text
 * Houd het veilig en zorg dat je je variabelen escapet.
 * Smarty is *hooflettergevoelig*. {$name} is dus wat anders dan {$NAME}.
 * Accolades gebruiken als symbool kan met [rdelim en ldelim](./personalization-functions-delim) 
 of [literal](./personalization-functions-literal). Het is in Smarty 3 ook 
 mogelijk om simpelweg beide kanten van je accolades te voorzien van een spatie.
+```
 
 De rest van dit artikel zal je helpen deze richtlijnen te volgen.
 
@@ -65,9 +72,11 @@ modifier. Elke variabele die je in een mailing opneemt moet je eerst door deze
 modifier halen om te zorgen dat eventueel schadelijke HTML code ongedaan wordt 
 gemaakt:
 
-    Geachte {$aanhef|escape} {$naam|escape},
+```text
+Geachte {$aanhef|escape} {$naam|escape},
     
-    U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email|escape}.
+U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email|escape}.
+```
 
 Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
 niet zeker bent van de data in de database omdat de gegevens door mensen 
@@ -99,9 +108,11 @@ en {/literal} gebruiken. Alle tekst die tussen {literal} en {/literal} staat wor
 niet Smarty gecontroleerd op accolades. Alle accolades worden letterlijk overgenomen,
 zelfs als het wel geldige Smarty variabelen lijken te zijn:
 
-    {literal}
-        Ik ben gek op {accolades}!
-    {/literal}
+```text
+{literal}
+	Ik ben gek op {accolades}!
+{/literal}
+```
 
 Als je bovenstaand code in een mailing opneemt, dan wordt de code {accolades}
 niet gezien als Smarty code en blijft het gewoon in de mailing staan.
@@ -109,12 +120,14 @@ niet gezien als Smarty code en blijft het gewoon in de mailing staan.
 Zie ook: [Probleem: Blokhaken en accolades veroorzaken
 personalisatiefouten](how-to-solve-errors-in-personalization)
 
+
 ## Personalisatie testen
 
 Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personalization-testing.md). 
 Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf 
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
+
 
 ## Waar kan je Smarty personalisatie gebruiken?
 
