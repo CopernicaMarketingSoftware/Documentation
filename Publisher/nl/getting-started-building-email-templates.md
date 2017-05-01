@@ -185,7 +185,3 @@ het document instellen.
 
 Toon bepaalde content alleen in de e-mail of in de webversie met de
 `{mailonly}` en `{webonly}` tags.
-
-
-
-
