@@ -4,13 +4,13 @@ According to the law and netiquette, your subscribers **must** be able
 to remove themselves from your list. This tutorial shows you how you can
 automatically exclude those unsubscribes from your active mailing list.
 
-*For this tutorial you need a database. Create a [new database](./setting-up-your-database-and-import-your-contacts.md) 
+*For this tutorial you need a database. Create a [new database](./quick-database-guide) 
 if you don't have one already*
 
-A mailing list is created in two steps:
+A mailing list is created in three steps:
 
 1.  Add a newsletter preference field to your database
-2.  Set your [unsubscribe behaviour](./database-unsubscribe-behavior)
+2.  Set your [unsubscribe behaviour](./database-unsubscribe-behavior) and add unsubscribe links.
 3.  Create a mailinglist, to which you will later target your mass
     mailings
 
@@ -37,7 +37,14 @@ profiles at once under **Current view** if you have your database selected.
 You can also [edit multiple profiles](./rest-put-database-profiles) with 
 the REST API.
 
-### Create a selection to exclude unsubscribes from future mailings
+### Unsubscribing
+
+If a user wants to unsubscribe they can do so by clicking an unsubscribe 
+link, which you can add to your mail with the [unsubscribe function](./personalization-functions-unsubscribe) 
+in the template editor. Please note that this only works if you have 
+entered [unsubscribe settings](./database-unsubscribe-behavior)
+
+### Excluding unsubscribes from future mailings
 
 Only subscribers should receive your newsletter. Unsubscribes should
 not, and this is the way how to accomplish that:
@@ -58,3 +65,8 @@ omitted from the selection.
 You can now use this selection to send email to only those who want 
 to receive it.
 
+## More information
+
+* [Selections](./selections-introduction)
+* [Unsubscribe function](./personalization-functions-unsubscribe)
+* [Unsubscribe settings](./database-unsubscribe-behavior)

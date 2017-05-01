@@ -1,79 +1,71 @@
-# Nieuwsbrief selectie maken
+# Selecties Tutorial: De nieuwsbrief selectie
 
-Volgens de wet mag je geen ongevraagde commerciele e-mails versturen, en
-moeten ontvangers zich te allen tijde kunnen uitschrijven van je
-mailinglijst. Je kan mensen die zich hebben uitgeschreven direct
-verwijderen uit je database, maar je kan ook bij het profiel een
-'vlaggetje' zetten waaruit hun gewijzigde interesse blijkt, en op basis
-hiervan een selectie maken. Je hebt hiervoor een apart databaseveld
-nodig (voor de nieuwsbrief voorkeur) en een selectie, waarmee je
-profielen filtert op basis van de waarde in dat nieuwsbriefveld. Dit
-artikel legt stap voor stap uit hoe je dit zelf maakt.
+Volgens zowel de wet als netiquette, moeten jouw ontvangers zich uit 
+kunnen schrijven van jouw mailing lijst. Deze tutorial laat zien hoe je 
+deze uitschrijvers automatisch buiten jouw lijst van ontvangers kan laten 
+bij het versturen van een mail.
 
-## Hoe maak ik een nieuwsbriefselectie?
+*Je hebt voor deze tutorial een database nodig. 
+Zie het [artikel over je database inrichten](./quick-database-guide) 
+voor meer informatie.*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qekOfDg9tAE" frameborder="0" allowfullscreen>  </iframe>
+Je creërt een mailinglist in drie stappen:
 
-## Nieuw databaseveld
+1.  Voeg een "nieuwsbrief" veld toe aan je database.
+2.  Stel je [uitschrijf gedrag](./database-unsubscribe-behavior) in en voeg uitschrijf links toe.
+3.  Maak een nieuwe mailing list aan voor nieuwsbrief ontvangers.
 
-Maak een nieuw databaseveld aan, bijvoorbeeld van het type
-meerkeuzeveld, die zowel de waardes Ja, Nee en een lege waarde
-accepteert.
+## Voeg een "nieuwsbrief" veld toe aan je database.
 
-Om het veld te maken ga je naar **Databasebeheer**\>*Databasevelden
-wijzigen*
+Als iemand geen mail meer wil ontvangen moet deze zich uit kunnen schrijven. 
+Je kunt ervoor kiezen mensen volledig uit je database te verwijderen, 
+of de informatie te behouden en deze mensen niet meer actief te mailen. 
+De meeste van onze klanten kiezen de laatste optie.
 
-![../images/newsletter-preference-field.png](../images/newsletter-preference-field.png "https://pic.vicinity.nl/127/0/112849/newsletter-preference-field.png")
+Om het verschil aan te merken voegen we een veld toe dat aangeeft of 
+iemand wel of niet je nieuwsbrief wil ontvangen. Selecteer je database 
+en voeg een veld toe.
 
--   Kies **Veld toevoegen**
--   Kies een naam voor het nieuwe veld (bijvoorbeeld *Nieuwsbrief*)
--   Kies voor het type **Meerkeuzeveld**
--   Voer de waardes *Ja, Nee,* en een *lege waarde* in (zie afbeelding)
+* Geef je veld een duidelijk omschrijvende naam, zoals *nieuwsbrief*.
+* Maak het veld multiple choice met waardes \<empty\>, "Ja" en "Nee".
+* Klik '*Show field on overview pages*' (om het veld bij het profiel 
+zichtbaar te maken) en ‘*The field is indexed*’ (om de selectie sneller te maken) aan.
+* Sla het veld op.
 
-Omdat je je selectie straks gaat maken op basis van dit veld, kan je het
-veld indexeren. De selectie wordt dan een stuk sneller.
+Je hebt nu een veld aangemaakt. Nu moet je alle gebruikers in je database 
+op "Ja" zetten. Dit kan het makkelijkst in Publisher, waar meerdere profielen 
+tegelijk bewerkt kunnen worden onder de huidige selectie als je database 
+geselecteerd is. Je kunt ook [meerdere profielen bewerken](./rest-put-database-profiles) 
+met de REST API.
 
--   Sla het veld op.
+### Uitschrijven
 
-Het veld is nu aangemaakt. Als je adressenbestand louter bestaat uit
-personen die zich hebben ingeschreven (en nog niet uitgeschreven), dan
-kan je bij alle profielen alvast de waarde 'Ja' invullen in het nieuw
-aangemaakte veld.
+Als een gebruiker zich uit wil schrijven kan deze dat doen met een 
+unsubscribe link in de mail. Je kunt deze toevoegen met de 
+[unsubscribe functie](./personalization-functions-unsubscribe) in de 
+template editor. Dit werkt alleen als je het 
+[uitschrijfgedrag](./database-unsubscribe-behavior) hebt ingesteld.
 
--   Ga naar **Huidige weergave** en kies**Meerdere (sub)profielelen
-    wijzigen**
--   Selecteer het nieuwe veld, en kies bij Waarde **'Ja**'
--   Klik op **wijzigen** om alle profielen in de database te wijzigen.
+### Selectie zonder uitschrijvers opstellen
 
-![../images/edit-multiple-profiles.png](../images/edit-multiple-profiles.png "https://pic.vicinity.nl/127/0/112847/edit-multiple-profiles.png")
+Om uitschrijvers niet opnieuw te mailen gaan we een selectie aanmaken. 
+Je moet hier voortaan je nieuwsbrieven naartoe sturen. Alle contacten 
+die zich uit hebben geschreven worden automatisch weggelaten uit de 
+selectie.
 
-## De selectie maken
+-   Maak een nieuwe selectie aan.
+-   Geef deze een beschrijvende naam.
+-   Sla de selectie op.
+-   Maak een nieuwe conditie "Check op veldwaarde" aan.
+-   Selecteer je nieuwsbrief veld uit de eerste stap.
+-   Selecteer *is gelijk aan* en vul bij de waarde *Ja* in.
+-   Sla de conditie op.
 
-Je selectie mag alleen profielen bevatten die de waarde 'Ja' in het veld
-nieuwsbrief hebben. Profielen die zich uitschrijven worden automatisch
-uit de selectie gefilterd.
+De selectie wordt nu vanzelf bijgewerkt en verzend mail alleen naar degenen 
+die deze willen ontvangen.
 
-Kies in het menu **Databasebeheer**voor **Selecties beheren...**
+## Meer informatie
 
--   Kies **'Selectie aanmaken'**
--   Kies een naam voor de selectie (bijvoorbeeld *Nieuwsbriefselectie*)
-    en klik opslaan.
--   Voeg een conditie toe aan de selectie van het type *'Check op
-    veldwaarde*'
--   Selecteer in het formulier het veld voor de nieuwsbrief en bij
-    vergelijking 'de waarde van het veld *Nieuwsbrief* [is gelijk
-    aan]-\>[ja]'
-
-Sla de selectie op. Je selectie is nu aangemaakt en zal automatisch
-worden opgebouwd. Copernica zorgt er verder voor dat de selectie altijd
-up to date is en blijft (en dus altijd de juiste profielen bevat).
-
-## Tot slot
-
-Geweldig! Je hebt nu een database, je hebt contacten geimporteerd en je
-hebt een selectie gemaakt die automatisch de uitschrijvers wegfiltert.
-
-Je kan nu je emailing gaan versturen. Ow wacht! Je hebt nog een template
-en een document nodig dat je moet versturen. En - niet geheel
-onbelangrijk- je moet het uitschrijfgedrag nog instellen op de database.
-Gaan we nu doen.
+* [Selecties](./selections-introduction)
+* [Unsubscribe functie](./personalization-functions-unsubscribe)
+* [Uitschrijfgedrag](./database-unsubscribe-behavior)
