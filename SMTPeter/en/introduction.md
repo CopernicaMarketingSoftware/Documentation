@@ -2,81 +2,34 @@
 
 SMTPeter is a *cloud based email gateway* which takes care of sending emails, the easy way.
 You can choose to send email via the REST API or the SMTP API.
-After registering, you only need a few things to do in order to start with SMTPeter:
+After registering, you only need a few things to do in order to start with SMTPeter, 
+which we will discuss now.
 
-* In the SMTPeter dashboard, set up your domain from which you want to send emails;
-* Set up the correct DNS records, so that SMTPeter can send email out of your name;
-* Set up **login credentials** to acces the **API**.
+## Setting up a Sender Domain and DNS settings
 
-
-## Setting up a Sender Domain
-
-In order to use SMTPeter you have to setup the domain from which you want to send your emails.
-We call this domain the "sender domain" and it can be configured via the [dashboard](dashboard)
-in the sender domain module. This module can be found under the `Sender Domains` tab in the application. 
-The interface speaks for itself: click `Add sender domain` and follow the steps.
-Don’t worry about your click- and tracking domains or the DMARC deployment, 
-you can always edit them later on.
-
-Once you’ve incorporated the recommended settings in your DNS, your domain is ready to be verified. 
-After you’ve created your sender domain, a warning message about verification is displayed in
-SMTPeter with a code in it. This code needs to be added to your DNS as well. Once SMTPeter has 
-seen this record, we believe the domain is truly yours and it will be ready to use.
-
-[Click here for more information about sender domains](sender-domains)
-
+SMTPeter uses the concept of "Sender Domains" to simplify email. This allows 
+you to send your email through our servers without having to worry about 
+complicated things like SPF, DKIM and DMARC. The Sender Domain confirms 
+that we are sending email in your name. First you [configure your sender domain](./introduction-sender-domains).
+Don't worry about click- and tracking domains or DMARC deployment for now. 
+Then you [incorporate your DNS settings](./rest-dns) and use your verification code. 
+After these steps you are ready to send mail with SMTPeter.
 
 ## REST vs SMTP
 
-SMTPeter lets you send email via the REST- and SMTP API. We highly suggest that, if you have the 
+SMTPeter lets you send email via the [REST](./rest-api)- and [SMTP](./smtp-api) API. We highly suggest that, if you have the 
 option to choose, you use the REST API. This API gives you more options, freedom and is more 
 user-friendly overall. On top of that, the REST API is much quicker, because no complex and timeconsuming
-*SMTP handshake* is required. 
-
-
-## REST API
-
-If you’re planning on using the REST API to send emails, all you have to do is generate an access token. 
-You can do so by going to the configuration tab and clicking ‘REST API’ in the ‘APIs’ section. Here, 
-you’ll find your token and the possibility to create a new one in case you need it. We recommend using 
-the REST API, because it supports a number of options the SMTP API does not support, such as statistics 
-and handling JSON files.
-
-Once you’ve got your access token, the API is accessible via the following URL, in which METHOD needs to 
-be replaced by the method you want to use and YOUR_ACCESS_TOKEN needs to be your actual access token.
-
-`https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN`
-
-We've made a few examples in different programming languages. With these classes, you can set up a connection 
-with the REST API. This way, no low-level calls have to be written and you can start using SMTPeter directly.
-
-* [PHP example](php-example "PHP example")
-* [Python example](python-example "Python example")
-
-More information about the REST API can be found [here](rest-api).
-
-
-## SMTP API
-
-Instead of the REST API, the traditional SMTP API can also be used to connect with SMTPeter. This API is 
-best used when connecting to traditional email clients such as Outlook and Thunderbird, and when connecting 
-with mobile devices. 
-
-In order to use the SMTP API, you must create a valid username and password in the application. Remember 
-these well, because you will only see them once! Subsequently you can send mails via SMTP to SMTPeter.
-The SMTP settings that you will need can be found [here](smtp-ports). You can also read the
-[general SMTP API documentation](smtp-api) if you want to know more.
-
-
-If you want to use both APIs that is possible tooo. That way, you can use the features you like best 
-from both.
+*SMTP handshake* is required. You can [configure the REST API](./introduction-rest-api) 
+by obtaining an access token. You can [configure the SMTP API](./introduction-smtp-api) 
+by creating login credentials.
 
 That's everything! SMTPeter is now ready to be utilized. 
 Read more about what SMTPeter has to offer:
 
+## More information
 
-## Further reading:
-
-- [More information about the REST API](rest-api)
-- [More information about the SMTP API](smtp-api)
-- [More information about Sender Domains](sender-domains)
+- [REST API](rest-api)
+- [SMTP API](smtp-api)
+- [Sender Domains](sender-domains)
+- [DNS settings](rest-dns)
