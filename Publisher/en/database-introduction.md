@@ -56,4 +56,4 @@ segment of your profiles.
 * [Database restrictions and intentions](database-restrictions-and-capabilities)
 * [Configuring a database](./quick-database-guide)
 * [Exporting a database](./database-export)
-
+* [Managing databases with the REST API](./rest-api)
