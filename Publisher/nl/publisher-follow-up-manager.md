@@ -36,4 +36,3 @@ aangepast door op de oorzaak, wachtijd of op de actie zelf te klikken.
 
 * [Opvolgacties](./followups)
 * [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
-* [Data-script object](./followups-scripting.md)

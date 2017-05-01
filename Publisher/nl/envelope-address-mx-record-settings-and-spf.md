@@ -1,3 +1,5 @@
+# Envelope address mx records settings en spf
+
 Een e-mail die door de applicatie wordt verstuurd, heeft twee
 verschillende afzenderadressen. Het zichtbare afzenderadres van de
 mailing kan per mailing afzonderlijk worden ingesteld. Dit is het adres

@@ -7,7 +7,7 @@ het toevoegen van een *style=* attribuut aan de HTML tag). Hartstikke
 onhandig natuurlijk, zeker wanneer je een omvangrijke template hebt
 waarop je nog omvangrijkere e-maildocumenten bouwt.
 
-De software beschikt gelukkig over een functie waardoor je gebruik kan
+De Publisher beschikt gelukkig over een functie waardoor je gebruik kan
 blijven maken van een extern stylesheet. Wanneer je dit stylesheet via
 de applicatie koppelt aan de template of document, worden alle
 stijlregels uit de stylesheet vlak voor het versturen van het document

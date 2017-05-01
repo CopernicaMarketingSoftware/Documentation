@@ -1,3 +1,5 @@
+# Text version
+
 A text version of the HTML document can be sent along with your
 e-mailing for e-mail clients that do not support HTML. Recipients at
 these e-mail clients will be shown the text version, rather than an

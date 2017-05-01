@@ -74,6 +74,7 @@ Als het Copernica dashboard je adviseert om een MX record aan te maken, dan
 kun je daarvoor in de plaats ook een CNAME record aanmaken, en wel volgens het
 volgende schema:
 
+```html
 <table>
     <tr>
         <td><strong>Geadviseerd MX record</strong></td>
@@ -88,6 +89,7 @@ volgende schema:
         <td>CNAME smtpeter.com</td>
     </tr>
 </table>
+```
 
 In bovenstaande tabel kun je in de linkerkolom opzoeken welk advies het dashboard
 je geeft, en in de rechterkolom welk CNAME record je daarvoor in de plaats ook

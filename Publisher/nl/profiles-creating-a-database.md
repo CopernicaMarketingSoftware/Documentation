@@ -1,14 +1,16 @@
-Profielen: Database aanmaken
+# Profielen: database aanmaken
 
 In deze Copernica-tutorial leer je hoe je binnen het onderdeel
 'Profielen' een nieuwe database creëert.
 
--   [Terug naar de video's](./video-tutorials.md "Video's")
+<iframe 
+	width="560" height="315" 
+	src="https://www.youtube.com/embed/Um2RrxKH3AM?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" 
+	frameborder="0" 
+	allowfullscreen="allowfullscreen">
+</iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Um2RrxKH3AM?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
-
-Hoe creëer je een nieuwe database?
-----------------------------------
+## Hoe creëer je een nieuwe database?
 
 -   Ga in Copernica Marketing Software naar het onderdeel 'Profielen'
 -   Klik op 'Databaseheer' en vervolgens op 'Nieuwe database toevoegen'
@@ -18,6 +20,4 @@ Hoe creëer je een nieuwe database?
 Hey presto! In het linkeroverzicht is je zojuist gecreëerde database nu
 zichtbaar.
 
--   **Volgende:** [Velden
-    aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")
-
+-   **Volgende:** [Velden aanmaken](./profiles-adding-database-fields.md "Profielen: Velden aanmaken")

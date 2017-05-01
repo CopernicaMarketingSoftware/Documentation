@@ -21,7 +21,7 @@ Nee, niet helemaal. Indirect misschien wel, maar ook als bonafide
 e-mailmarketeer kan het gebeuren dat je e-mailings bij een spamtrap
 aankomen en jij zo op een blacklist komt te staan.
 
-### Hoe kan dat nou?
+## Hoe kan dat nou?
 
 Spammers hebben er alle baat bij de betrouwbaarheid van blacklists te
 beschadigen door legitieme verzendadressen in een spamtrap te laten
@@ -38,13 +38,13 @@ Maar ook als iemand zich ooit een keer heeft aangemeld voor je
 e-mailings en op een gegeven moment zijn e-mailaccount opzegt, kan dat
 er toe leiden dat je op een blacklist terecht komt.
 
-Wat kan ik doen om te voorkomen dat ik e-mailings naar spamtraps zend?
-----------------------------------------------------------------------
+
+## Wat kan ik doen om te voorkomen dat ik e-mailings naar spamtraps zend?
 
 Er zijn een aantal dingen die je kunt doen om te voorkomen dat je
 spamvallen in je verzendlijst opneemt:
 
-### Verificatie
+## Verificatie
 
 Verifieer dat iedereen die zich via een webformulier aanmeldt voor je
 e-mailings daadwerkelijk een mens is. Dat kan door middel van
@@ -53,13 +53,13 @@ bijvoorbeeld te laten inloggen voordat hij zich inschrijft.Een nadeel
 van deze methodes is dat ze vaak irritatie bij gebruikers oproepen en de
 drempel verhogen om zich voor jouw nieuwsbrief aan te melden.
 
-### Dubbele opt-in
+## Dubbele opt-in
 
 Voer bij elke inschrijving een dubbelcheck uit. Laat iedereen zijn
 aanmelding bevestigen door op een link te klikken in een e-mail, of door
 hier op een andere manier op te reageren.
 
-### Houd je database actueel
+## Houd je database actueel
 
 Zorg ervoor dat je een actuele database hebt. Verwerk niet alleen
 opt-outs, maar controleer ook op [hard en soft
@@ -75,7 +75,7 @@ namelijk niet meer dan een teken van een vervuilde database. Wees dus
 zorgvuldig bij het verzamelen van informatie en [houd je database
 schoon](./database-marketing-and-web-surveys-avoid-corruption.md).
 
-### Bekijk ook
+## Bekijk ook
 
 -   [E-mailreputatie: hoe bouw je dit
     op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")

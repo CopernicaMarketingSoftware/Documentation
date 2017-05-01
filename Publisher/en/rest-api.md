@@ -10,12 +10,15 @@ Copernica with your own system, without any human interference.
 * [Send and receive HTTP requests](rest-requests)
 * [Fancy OAuth2 links](rest-oauth)
 * [Setting up Copernica REST service](./setting-up-copernica-rest-service)
+* [REST events](./rest-get-events.md)
+
 
 ## REST API: method reference
 
 The following table lists all methods that are accessible through HTTP GET, POST, PUT en DELETE.
 
-### **GET**
+
+## GET
 
 GET methods are used to fetch data. The following GET methods are available:
 
@@ -75,7 +78,8 @@ GET methods are used to fetch data. The following GET methods are available:
 
 See also the [general article on events](./rest-get-events).
 
-### **PUT & POST**
+
+## PUT & POST
 
 PUT and POST methodes are used to create and edit data. They are often 
 very similar. If you can not find a POST method of what you are looking 
@@ -114,7 +118,8 @@ The following PUT and POST methods are available:
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule)                                                  | Edit miniselection rule                 |     
 | POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions)                           | Create condition for a miniselection    |     
 
-### **DELETE**
+
+## DELETE
 
 DELETE methods are used to delete data. This is permanent, so always be 
 double check your calls and be careful. The following DELETE methods are 

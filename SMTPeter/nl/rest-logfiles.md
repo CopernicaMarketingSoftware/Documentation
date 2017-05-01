@@ -54,16 +54,16 @@ De namen van de log files bestaan uit de volgende indeling *PREFIX.DATE.log*.
 De *PREFIX* verteld je wat voor soort *event* wordt gelogd. Dit is een lijst 
 met bestaande prefixes:
 
-| Prefix                                                | Beschrijving                                                       |
-| ----------------------------------------------------- | ------------------------------------------------------------------ |
-| [attempts log file](get-logfiles "attempts log file") | informatie over alle beschikbare mails verzonden met SMTPeter      |
-| [bounces log file](get-logfiles "bounces log file")   | informatie over het aantal bounces                                 |
-| [clicks log file](get-logfiles "clicks log file")     | informatie over het aantal kliks                                   |
-| [deliveries log file](get-logfiles "log-deliveries")  | informatie over de afgeleverde mails                               |
-| [dmarc log file](get-logfiles "log-dmarc")            | informatie over ontvangen DMARC rapporten                          |
-| [failures log file](get-logfiles "log-failures")      | informatie over gefaalde pogingen                                  |  
-| [opens log file](get-logfiles "opens log file")       |  informatie over geopende mails                                    |
-| [responses log file](get-logfiles "log-responses")    | informatie over response mails ontvangen door SMTPeter             |
+| Prefix                                                 | Beschrijving                                                       |
+| ------------------------------------------------------ | ------------------------------------------------------------------ |
+| [attempts log file](log-attempts "attempts log file")  | informatie over alle beschikbare mails verzonden met SMTPeter      |
+| [bounces log file](log-bounces "bounces log file")     | informatie over het aantal bounces                                 |
+| [clicks log file](log-clicks "clicks log file")        | informatie over het aantal kliks                                   |
+| [deliveries log file](log-deliveries "log-deliveries") | informatie over de afgeleverde mails                               |
+| [dmarc log file](log-dmarc "log-dmarc")                | informatie over ontvangen DMARC rapporten                          |
+| [failures log file](log-failures "log-failures")       | informatie over gefaalde pogingen                                  |  
+| [opens log file](log-opens "opens log file")           |  informatie over geopende mails                                    |
+| [responses log file](log-responses "log-responses")    | informatie over response mails ontvangen door SMTPeter             |
 
 
 ## Downloaden van bestanden

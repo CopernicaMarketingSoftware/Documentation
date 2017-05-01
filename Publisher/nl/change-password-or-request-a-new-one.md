@@ -8,8 +8,7 @@ Kies hier *Wijzig uw gegevens*. Ga vervolgens naar het tabblad
 
 **Je kan alleen je eigen wachtwoord wijzigen.**
 
-Wachtwoord vergeten?
---------------------
+## Wachtwoord vergeten?
 
 Je kunt vanaf de inlogpagina een nieuw wachtwoord opvragen. Voer het
 e-mailadres in waarmee je bij ons bekend bent. Er wordt dan een nieuw

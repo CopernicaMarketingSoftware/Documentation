@@ -1,22 +1,26 @@
-Profielen: Miniselectie aanmaken
+# Profielen: miniselectie aanmaken
 
 In deze Copernica-tutorial leggen we je uit wat een miniselectie is en
 hoe je er een aanmaakt.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/28T-BixYk6E?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen>  </iframe>
+```html
+<iframe 
+	width="560" height="315" src="https://www.youtube.com/embed/28T-BixYk6E?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" 
+	frameborder="0" 
+	allowfullscreen>
+</iframe>
+```
 
--   [Terug naar de video's](./video-tutorials.md "Video's")
 
-Wat is een miniselectie?
-------------------------
+## Wat is een miniselectie?
+
 
 In Copernica kan je naast [selecties op profielniveau](./profiles-selections.md),
 ook selecties maken op subprofielniveau. Een miniselectie is dus een
 filter op een
 [collectie](./profiles-adding-collections.md).
 
-Hoe maak ik een miniselectie aan?
----------------------------------
+## Hoe maak ik een miniselectie aan?
 
 Een miniselectie maak je als volgt aan:
 
@@ -30,8 +34,8 @@ Een miniselectie maak je als volgt aan:
 
 Je hebt nu een lege miniselectie aangemaakt.
 
-Miniselectiecondities
----------------------
+
+## Miniselectiecondities
 
 Net zoals bij selecties, moet je ook bij miniselecties condities
 aanmaken voordat je er wat mee kunt:
@@ -49,4 +53,3 @@ Je hebt nu een miniselectie met condities aangemaakt!
     [Selecties](./profiles-selections.md "Profielen: Selecties")
 -   **Volgende:** [Miniselectie op
     selectieniveau](./profiles-miniselection-on-selection-level.md "Profielen: Miniselectie op selectieniveau")
-

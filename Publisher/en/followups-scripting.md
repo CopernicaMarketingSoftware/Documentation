@@ -1,16 +1,16 @@
-# Followups using javascript
+# The use of data-scripts
 
 If you're writing the HTML code of your mailings yourself, you can add a piece
-of javascript to each hyperlink. This javascript is executed by Copernica
-when the link is clicked. This works more or less the same as the "onclick" 
-attribute that you are probably already familiar with, with one big difference: 
-the "onclick" script is executed on the client, while this script runs on
-the Copernica servers.
+of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
+by Copernica when the link is clicked. This works more or less the same as the 
+"onclick" attribute that you are probably already familiar with.
+However, there is one big difference: the "onclick" script is executed on the client, 
+while this script runs on the Copernica servers. You only have to add the data-scripts 
+to the hyperlinks via:
 
-There are a couple of ways how you can attach a script to hyperlinks:
+* the *data-script* attribute on &lt;a&gt; tags
+* the drag-and-drop editor in the follow-up form
 
-* using the *data-script* attribute on &lt;a&gt; tags
-* using the drag-and-drop editor in the follow-up form
 
 ## Available objects
 
@@ -34,13 +34,17 @@ writable properties to change them as well. The following variables are accessib
 A few of these objects also have [the data object](./followups-scripting-data), 
 which you can use to store your own information regarding the object.
 
+
 ## A very simple example
 
 A possibility of the data-script object is to change a profile when a link 
 is clicked. This can be used to place an unsubscribe link that when clicked 
 sets a profile setting such that no more newsletters are send. To place a 
 link like this you can use the following code:
+
+```html
 <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
+```
 
 While the example above is very simple you can write a lot more complicated 
 data-scripts. This data-script is executed when the link is clicked and 
@@ -51,6 +55,7 @@ Before an email is delivered, the data-script is removed from the original code.
 receivers therefore do not get to see the script when they open the source code of
 the message. However, the script stays active because Copernica has stored the
 script and runs it when a click is registered.
+
 
 ## More information
 

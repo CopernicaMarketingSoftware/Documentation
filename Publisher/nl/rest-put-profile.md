@@ -6,37 +6,46 @@ Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. 
 
 De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen in de message body van het HTTP PUT command worden geplaatst:
 
 - **fields**: Velden die het profiel bevat en hun waarden
 - **interests**: Interesses van het profiel
-- **database**: ID van de database waar het profiel in staat
 - **secret**: De geheime code die gelinkt is aan het profiel
-- **created**: Tijdstip waarop het profiel is aangemaakt in YYYY-MM-DD hh:mm:ss formaat
-- **modified**: Tijdstip waarop het profiel laatst is aangepast in YYYY-MM-DD hh:mm:ss formaat
+
 
 ## Voorbeeld in PHP
 
 Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+    // vereiste scripts
+    require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+    // verander dit naar je access token
+    $api = new CopernicaRestApi("your-access-token");
 
-	// data voor de methode
-	$data = array(
-    	'description'   =>  'a new description',
-    	'has_rules'      =>  true
-	);
+    // data voor de methode
 
-	// voer het verzoek uit en print het resultaat
-	print_r($api->put("profile/1234", array(), $data));
+    $data = array(
+        "fields" => array(
+            'firstname' =>  'John',
+            'lastname'  =>  'Doe',
+            'email'     =>  'johndoe@example.com'
+        ),
+        "interests" = array(
+            'football'  =>  0,
+            'tennis'    =>  1,
+            'hockey'    =>  1
+        ),
+        "secret" => "geheimecode"
+    );
 
-Dit voorbeeld vereist de [CopernicaRestAPi klasse](rest-php).
+    // voer het verzoek uit en print het resultaat
+    print_r($api->put("profile/1234", array(), $data));
+
+Dit voorbeeld vereist de [Copernica REST API class](rest-php).
 
 ## Meer informatie
 

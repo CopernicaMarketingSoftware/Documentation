@@ -1,1 +1,0 @@
-Copernica beschikt over een

@@ -16,7 +16,7 @@ kan je op documentniveau content toevoegen. Dit artikel bevat alle
 basisinformatie die je nodig hebt voor het opmaken van een e-mail
 document.
 
-### Nieuw document maken
+## Nieuw document maken
 
 -   Selecteer de template die je wilt gebruiken
 -   In het document menu kies je vervolgens **'Nieuw document'**

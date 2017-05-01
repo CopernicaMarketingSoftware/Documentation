@@ -29,6 +29,7 @@ Geen van deze variabelen is verplicht. Als je geen naam meegeeft aan
 de functie kun wordt de naam op 'default' gezet. Je gebruikt dit blok 
 vervolgens met `{$smarty.capture.default}`.
 
+
 ## Capture zonder variabele naam
 
 Het volgende voorbeeld laat zien hoe je *capture* gebruikt zonder op 
@@ -48,7 +49,8 @@ Om de code tussen de capture te gebruiken kun je de volgende code in je
 template plaatsen:
 
     {$smarty.capture.someText}
-    
+
+
 ## Opslaan in een variabele
 
 In het vorige voorbeeld halen we de inhoud van de capture op met 
@@ -71,6 +73,7 @@ In dit voorbeeld is de tekst kort en had ook de [assign](./personalization-funct
 gebruikt kunnen worden, maar je kunt alles wat geen HTML is tussen deze 
 tags plaatsen. Als je toch HTML wil gebruiken kun je {capture} vervangen 
 door {rawcapture}.
+
 
 ## Capture gebruiken met arrays
 

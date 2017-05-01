@@ -8,26 +8,30 @@ met één artikel, als voor een nieuwsbrief met tien artikelen. Je kunt zelfs
 geneste loops maken, loops binnen loops dus, waardoor je een heel krachtig 
 templatesysteem krijgt. 
 
-    [loop name="example"]
-        Deel dat je wilt herhalen
-    [/loop]
+```html
+[loop name="example"]
+    Deel dat je wilt herhalen
+[/loop]
+```
 
 Bovenstaand voorbeeld is erg simpel en niet erg praktisch. Je ziet pas echt de
 kracht als je binnen de loop weer andere tags opneemt. Bijvoorbeeld als je de 
 gebruiker op documentniveau in staat wilt stellen om meerdere paragrafen met
 tekst en afbeeldingen op te nemen:
 
-    [loop name="myloop"]
-        <div>
-            <table>
-                <tr>
-                    <td>[text name="mytext"]</td>
-                    <td>[image name="myimage"]</td>
-                </tr>
-            </table>
-        </div>
-    [/loop]
-    
+```html
+[loop name="myloop"]
+    <div>
+        <table>
+            <tr>
+                <td>[text name="mytext"]</td>
+                <td>[image name="myimage"]</td>
+            </tr>
+        </table>
+    </div>
+[/loop]
+```
+
 Op documentniveau kan een gebruiker zelf kiezen hoeveel iteraties (herhalingen) 
 van de loop er in de mailing moeten worden geplaatst. Nul is ook een geldige 
 waarde, waardoor je loop blocks ook kunt gebruiken voor conditionele content: 
@@ -48,9 +52,11 @@ wilt gebruiken. Nul is ook een geldige waarde is. Als je het aantal iteraties
 wilt beperken, of als je juist een minimum aantal iteraties wilt instellen, kun 
 je hiervoor de *min* en *max* attributen gebruiken.
 
-    [loop name="example" min="1" max="5"]
-        ...
-    [/loop]
+```html
+[loop name="example" min="1" max="5"]
+    ...
+[/loop]
+```
 
 Beide attributen zijn optioneel. Je kunt ze ook allebei weglaten, of maar één
 van de attributen opnemen.
@@ -62,12 +68,14 @@ Met de *begin* en *end* attributen kun je eventueel inleidende en afsluitende
 HTML code aan het loop blok koppelen. Deze code wordt alleen in het document 
 opgenomen indien het aantal iteraties hoger is dan 0.
 
-    [loop name="example" begin="<table>" end="</table>"]
-        <tr>
-            <td>[text]</td>
-        </tr>
-    [/loop]
-    
+```html
+[loop name="example" begin="<table>" end="</table>"]
+    <tr>
+        <td>[text]</td>
+    </tr>
+[/loop]
+```
+
 Het bovenstaande (eenvoudige) voorbeeld bevat een tabel met een variabel 
 aantal rijen. Als binnen het document het aantal iteraties op nul wordt gezet,
 dan wordt er helemaal geen tabel in het document geplaatst. De &lt;table&gt;
@@ -88,14 +96,16 @@ Er zijn verschillende variabelen die je kunt gebruiken:
 
 Deze variabalen kun je gebruiken om de opmaak van de loops wat te verfraaien:
 
-    [loop name="myloop"]
-        <p>
-            [text name="mytext"]
-        </p>
-        [if !$loop.myloop.last]
-            <hr/>
-        [/if]
-    [/loop]
+```html
+[loop name="myloop"]
+    <p>
+        [text name="mytext"]
+    </p>
+    [if !$loop.myloop.last]
+        <hr/>
+    [/if]
+[/loop]
+```
 
 Hierboven zie je een loop van paragrafen waarbij op documentniveau kan worden 
 ingesteld hoeveel paragrafen er in de mailing moeten worden opgenomen. Tussen

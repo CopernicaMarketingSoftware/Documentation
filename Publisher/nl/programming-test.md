@@ -23,6 +23,7 @@ Example XML file
 Below you'll find an example XML file that you can use to upload to the
 form. For testing we use much longer XML files.
 
+```xml
     <data>
         <record>
             <name>Copernica</name>
@@ -46,6 +47,7 @@ form. For testing we use much longer XML files.
             <telephone>+312012345678</telephone>
         </record>
     </data>
+```
 
 Page 2: Error page
 ------------------

@@ -1,3 +1,5 @@
+# Intressevelden
+
 Een interesseveld is een speciaal soort databaseveld met maar twee
 invulmogelijkheden: wel of niet aangevinkt. Dit type velden wordt vooral
 toegepast om interesses en voorkeuren aan te geven. Bijvoorbeeld, bij

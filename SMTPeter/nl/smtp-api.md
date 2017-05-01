@@ -1,7 +1,7 @@
 # Verzenden via SMTP API
 
 SMTP is het protocol dat e-mailprogramma’s gebruiken om e-mail van de ene computer naar de andere computer te versturen. 
-Het is eenvoudig om SMTPeter te integreren in een bestaande e-mailinfrastructuur, omdat SMTPeter wordt geleverd met een SMTP API. 
+Het is eenvoudig om SMTPeter te integreren in een bestaande e-mailinfrastructuur, omdat SMTPeter een SMTP API heeft.
 E-mailprogramma’s zoals Outlook, Thunderbird of mobiele apparaten kunnen dus ook berichten via SMTPeter versturen.
 
 Om de SMTP API te gebruiken moet je jezelf authenticeren op onze servers. 
@@ -36,3 +36,6 @@ berichten moet je gebruik maken van SMTP credentials of je moet gebruik maken va
 
 In het SMTPeter dashboard kun je meerdere SMTP-logins aanmaken. Je kunt bijvoorbeeld een login aanmaken waar “inlinecss” is ingeschakeld. 
 Wanneer je verbinding maakt met de SMTP-API kies je gewoon de login en wachtwoord combinatie voor de functies die je nodig hebt.
+
+De alternatieve method is om opties aan en uit te zetten door middel van het
+meesturen van speciale [MIME-headers](smtp-headers) met de email.

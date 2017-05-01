@@ -1,3 +1,5 @@
+# Drupal
+
 Met behulp van de verschillende Drupal-modules kan je iedere
 Drupal-website eenvoudig koppelen met Copernica. De modules zorgen
 ervoor dat Copernica wordt aangevuld met belangrijke informatie zoals:
@@ -21,25 +23,6 @@ De kracht van de Drupal modules
     om zo slim in te spelen op de lifecycle van je klant
 -   [React to form fills](./various-types-of-web-forms.md) and downloads on your B2B website
 
-Voorbeelden van Drupal webshops
--------------------------------
-
-De modules tussen Copernica en Drupal worden o.a. door de volgende
-bekende webshops gebruikt:
-
-+----------------------------------------------------------------------------+
-| ### Coals2U                                                                |
-+----------------------------------------------------------------------------+
-| [![Coals2U](../images/Coals2U-screenshot.PNG)](https://www.coals2u.co.uk/) |
-+----------------------------------------------------------------------------+
-| Manchester United Soccer Schools                                           |
-+----------------------------------------------------------------------------+
-| [![Manchester United Soccer                                                |
-| Schools](../images/MUSS.PNG)](http://www.manutdsoccerschools.com/)         |
-+----------------------------------------------------------------------------+
-| [Download de                                                               |
-| modules](#download-drupal-modules "Download de Drupal modules")            |
-+----------------------------------------------------------------------------+
 
 Over de Drupal modules
 ----------------------
@@ -73,7 +56,7 @@ Deze module verzorgt de koppeling tussen Copernica en Drupal en maakt de
 uitwisseling van gegevens mogelijk tussen beide systemen. Als developer
 heb je via deze module toegang tot een reeks aan Drupal-functies.
 
-**Bestandsgrootte:**12 kB \
+**Bestandsgrootte:**12 kB
 [Download](../downloads/copernica_connector_v2.zip "Download Drupal connector integratie voor Copernica Marketing Software")
 
 Copernica User
@@ -86,7 +69,7 @@ combinatie met de Copernica Drupal Commerce module biedt dit kansen voor
 bijvoorbeeld plaatsgebonden communicatie of aanbiedingen op basis van
 persoonlijke interesses.
 
-**Bestandsgrootte:**3 kB\
+**Bestandsgrootte:**3 kB
 
 [Download](../downloads/copernica_basic_user.zip "Download Drupal user integratie voor Copernica Marketing Software")
 
@@ -98,7 +81,7 @@ te verzamelen. Alle gegevens die je uit de ingevulde formulieren
 verzamelt, zijn later te gebruiken als selectiecriteria voor je
 marketingcampagnes.
 
-**Bestandsgrootte:**13 kB\
+**Bestandsgrootte:**13 kB
 
 [Download](../downloads/copernica_webform.zip "Download Drupal webform integratie voor Copernica Marketing Software")
 
@@ -111,7 +94,7 @@ van deze module ben je in staat met Copernica gerichte
 marketingcampagnes op te zetten. Bijvoorbeeld loyaliteitscampagnes of
 verlaten winkelmandjes campagnes.
 
-**Bestandsgrootte:**20 kB\
+**Bestandsgrootte:**20 kB
 
 [Download](../downloads/copernica_commerce.zip "Download Copernica Drupal Commerce integratie voor Copernica Marketing Software")
 
@@ -124,7 +107,7 @@ door andere modules zoals Copernica Entity gebruikt. Zo kan allerlei
 data naar Copernica worden gestuurd via een background request wat de
 snelheid en user experience van de site niet vertraagd.
 
-**Bestandsgrootte:**12 kB\
+**Bestandsgrootte:**12 kB
 
 [Download](../downloads/copernica_queue.zip "Download Copernica Drupal queue integratie voor Copernica Marketing Software")
 
@@ -139,7 +122,7 @@ entiteiten kan je koppelen aan Copernica velden en met behulp van PHP,
 kan je ook aangepaste eigenschappen en gewijzigde waarden doorsturen. Om
 met deze module te werken heb je ook de Copernica Queue module nodig.
 
-**Bestandsgrootte:**21 kB\
+**Bestandsgrootte:**21 kB
 
 [Download](../downloads/copernica_entity.zip "Download Copernica Drupal Entity voor Copernica Marketing Software")
 

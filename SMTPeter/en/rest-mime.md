@@ -13,7 +13,8 @@ You need at least two properties to send an email. The so called "recipient" add
 To establish that everything is more readable, we've cut down on most of the "MIME"
 code in the above mentioned example. If you don't want to curate your own "MIME",
 just leave out the property of the JSON. However, do use the special mime properties
-like "subject", "text" and "html", so that SMTPeter can construct the mime instead.
+like "subject", "text" and "html", so that SMTPeter can construct the mime instead
+([see "Let SMTPeter create MIME data"](rest-send-json)).
 
 You just have to provide SMTPeter with a "recipient" address to send an email. 
 Note that normally you have to also specify an envelope address. This is the 
