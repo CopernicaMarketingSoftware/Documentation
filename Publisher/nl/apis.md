@@ -6,20 +6,13 @@ lezen of gegevens in Copernica bij te werken, en door middel van *feedback
 loops* kan Copernica je *real time* notificaties sturen als er een event als
 een *klik*, *open* of *bounce* plaatsvindt.
 
-
-## REST vs SOAP
+## REST vs. SOAP
 
 Copernica heeft twee verschillende API's: een REST API en een SOAP API. De 
 REST API is de nieuwste van de twee. We raden je daarom aan om, als het even
 kan, niet de SOAP API maar deze REST API te gebruiken: die is eenvoudiger 
 in het gebruik, en ook een stuk sneller omdat er geen ingewikkelde SOAP laag 
 tussen de aanroepen zit. 
-
-De SOAP API is echter wel wat rijker dan de REST API. De REST API ondersteunt
-alleen de veel voorkomende aanroepen - zoals het aanmaken of bewerken van
-profielgegevens - terwijl de SOAP API ook allerlei weiniggebruikte calls 
-aankan.
-
 
 ## Feedback loops
 
@@ -47,7 +40,6 @@ zoiets gebeurt heel vaak), dan kan de stroom van calls vanuit Copernica
 gigantisch worden. Als jouw servers onvoldoende capaciteit hebben om al deze 
 events op te vangen, kun je beter geen feedback loops gebruiken.
 
-
 ## Logfiles
 
 Alle events die naar feedback loops worden gestuurd, worden ook weggeschreven
@@ -60,3 +52,8 @@ De logfiles kunnen worden gedownload via het dashboard van Marketing Suite.
 Alle mailinggerelateerde events (zoals verzendingen, bounces, kliks en opens)
 worden in logfiles bewaard en kun je via het dashboard uitlezen. Daarnaast
 kun je met de REST API deze bestanden downloaden.
+
+## Meer informatie
+
+* [REST API methodes](./rest-api)
+* [REST events](./rest-get-events)
