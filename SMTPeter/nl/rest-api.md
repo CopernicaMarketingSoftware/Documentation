@@ -35,7 +35,7 @@ het gespecificeerde from, to, subject en text en stuurt dit bericht naar
 de opgegeven recipient.
 
 Als je een mail met HTML of bijlagen wilt versturen dan is dit ook mogelijk.
-Alle opties die SMTPeter bij een mail ondersteund zijn beschreven in de
+Alle opties die SMTPeter bij een mail ondersteunt zijn beschreven in de
 [MIME door SMTPeter laten maken](rest-send-json) documentatie.
 
 Een zelfgemaakt MIME met SMTPeter versturen behoort ook tot de mogelijkheden.
