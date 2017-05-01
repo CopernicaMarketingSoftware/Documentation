@@ -8,17 +8,16 @@ Eenvoudig gezegd moet je zorgen dat in de DNS instellingen van jouw domeinnaam
 staat dat Copernica gerechtigd is om mail vanuit jouw domeinnaam te verzenden. Als je 
 dit niet doet is de kans groot dat veel van de berichten niet worden geaccepteerd.
 
-Normaal gesproken is het bijwerken van de DNS records een complexe klus. Je
-moet records aanmaken om SPF, DKIM en DMARC goed in te stellen (we leggen elders
-uit wat dit allemaal betekent), en je moet subdomeinen aanmaken om de kliks,
-opens en bounces te registreren. En als je het echt goed wil doen, moet je
-bovendien periodiek deze DNS instellingen wijzigen om te voorkomen dat de
-private key van de DKIM signatures worden gekraakt.
+Copernica afzenderdomeinen zijn een simpele oplossing voor een gecompliceerd 
+probleem. Waar je normaal gesproken zelf records aan zou moeten maken voor [SPF](./spf), 
+[DKIM](./dkim), [DMARC](./dmarc) en subdomeinen voor kliks, opens en bounces zou moeten instellen 
+regelt Copernica dit voor je. Je hoeft ook je private keys niet meer periodiek 
+om te wisselen om te voorkomen dat deze worden gekraakt omdat Copernica 
+dit voor je regelt.
 
-Copernica kent echter "Sender Domains" - of in het Nederlands: afzenderdomeinen.
-Dit is een technologie waarmee het een stuk makkelijker wordt om je DNS
-instellingen te beheren.
-
+Dit artikel legt je uit hoe je een geschikt 
+afzenderdomein instelt, maar je kunt meer informatie vinden in het 
+[afzenderdomeinen achtergrond](./sender-domains) artikel.
 
 ## Marketing Suite
 
@@ -33,7 +32,6 @@ bounces te registreren en om te bepalen wat de DKIM keys zijn. De instellingen v
 sender-domain hebben prioriteit, zelfs als je mails gaat versturen met Publisher. 
 
 Je vindt de sender-domain tool in het menu onder het kopje *configuratie*.
-
 
 ## Hoofddomein of subdomein?
 
@@ -52,7 +50,6 @@ vanuit, bijvoorbeeld, "nieuwsbrief@campagnes.bedrijfsnaam.nl". Zo'n subdomein
 als afzenderadres oogt weliswaar wat minder chique, maar als je snel aan de slag 
 wilt dan is dat de snelste manier om de configuratie goed te krijgen. 
 
-
 ## Domeinnaam valideren
 
 Om misbruik van sender domains te voorkomen, moet je bewijzen dat jij echt de 
@@ -63,8 +60,7 @@ Pas als Copernica ziet dat je dit record aan het domein hebt toegevoegd, geloven
 we dat je echt de eigenaar van het domein bent en kun je verder gaan met
 het configueren van het domein.
 
-
-## Achtergrondinformatie
+## DNS instellingen
 
 Zoals beschreven, maakt Copernica alle relevante DNS records aan, zodat je
 die records zelf niet meer hoeft te beheren. Tenminste, dat schreven we steeds.
@@ -111,9 +107,16 @@ Nadat je het sender domain hebt aangemaakt, je domein hebt gevalideerd, en
 de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een 
 afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
 
-
 ## De volgende stap
 
 Om de eerste mail te kunnen versturen, heb je natuurlijk 
 [een database met profielen](quick-database-guide) nodig om die mailing naar
 toe te sturen.
+
+## Meer informatie
+
+* [Afzenderdomeinen achtergrond](./sender-domains)
+* [Database configureren](./quick-database-guide)
+* [DKIM](./dkim)
+* [DMARC](./dmarc)
+* [SPF](./spf)

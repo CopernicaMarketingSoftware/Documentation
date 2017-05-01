@@ -29,5 +29,5 @@ You can then create a mail under **E-mailings**, add a text version and view the
 ## More information
 
 * [Stylesheets](./stylesheets)
+* [Personalization](./personalization)
 * [Followups](./followups)
-* [Surveys](./surveys)
