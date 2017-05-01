@@ -15,14 +15,14 @@ bekijken voor meer informatie.
 
 Onder het *Mailings* menu kun je statistieken vinden, waar je 
 de resultaten voor een specifieke mailing kunt bekijken in een volledig 
-rapport. [Dit artikel](./view-the-results-of-your-mailing) kun je een 
+rapport. [Dit artikel](./statistics-mailing) kun je een 
 overzicht vinden over de betekenis van deze statistieken.
 
 
 ## Mobiele mailings
 
 Het is met ook mogelijk om sms mailings te versturen, waarvan helaas alleen 
-bekend is of deze zijn afgeleverd. Zie [dit artikel](view-the-results-of-a-mobile-mailing) 
+bekend is of deze zijn afgeleverd. Zie [dit artikel](./statistics-mobile-mailing) 
 voor meer informatie over de statistieken van een mobiele mailing.
 
 
@@ -49,7 +49,7 @@ informatie bijgehouden over hoe de gebruikers zich gedragen. Zie
 
 In veel van de statistieken komen [kerncijfers](./statistics-key-figures) voor,
 waar je informatie vindt over een specifieke mailing, template of meerdere 
-mailings in een periode.
+mailings in een periode. Deze bevat onder andere de [click-through rate](./statistics-ctr).
 
 
 ## Statistieken delen
