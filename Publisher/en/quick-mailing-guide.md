@@ -9,7 +9,7 @@ both programs.
 If you want to try some more advanced topics you can inspect the articles 
 under "More information".
 
-## Marketing Suite drag 'n drop mailing
+## Creating a template
 
 In the Marketing Suite, you simply drag and drop content blocks onto your 
 template such as text, headers, images, social media buttons, and much more. 
@@ -19,15 +19,18 @@ create a template by clicking on the green button on the top right.
 If you want to quickly put together a beautiful and professional looking email, 
 the Marketing Suite is the way to go.
 
-## Publisher
+## Send the mailing
 
-Publisher does not offer drag and drop mailings, but it is still a pretty 
-powerful tool that has been developed over many years. In Publisher each 
-mail document needs a template, which is made under the **Style** component. 
-You can then create a mail under **E-mailings**, add a text version and view the mail.
+To send the mailing you select your template. You then enter things such 
+as the sender domain you want to use and the subject of the email. You 
+can schedule it for a later time or send it immediately. You can add tags 
+to organize and categorize for own use. The target for your mail can be 
+a [database](./database-introduction) or a [selection](./selections-introduction). 
+Mails can also be sent automatically through [followups](./followups).
 
 ## More information
 
+* [Templates](./templates)
 * [Stylesheets](./stylesheets)
 * [Personalization](./personalization)
 * [Followups](./followups)
