@@ -36,3 +36,4 @@
     * [Delete survey](./surveys-delete)
     * [View results](./surveys-view-results)
     * [Export results](./surveys-export-results)
+* [RSS and ATOM feeds (Publisher)](./rss-and-atom-feeds)

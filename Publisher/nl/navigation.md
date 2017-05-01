@@ -36,3 +36,4 @@
     * [Enquêtes verwijderen](./surveys-delete)
     * [Resultaten bekijken](./surveys-view-results)
     * [Resultaten exporteren](./surveys-export-results)
+* [RSS en Atom feeds (Publisher)](./rss-and-atom-feeds)

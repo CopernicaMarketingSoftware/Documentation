@@ -40,8 +40,3 @@ Of ben je op zoek naar iemand die je kan helpen bij het vormgeven van je
 contentfeed? In Copernica's
 [partnernetwerk](./get-the-most-out-of-the-partner-license.md "Ontdek ons partnernetwerk")
 vind je de geschikte partner die je graag te woord staat.
-
-## Meer informatie
-* [Verschillen tussen RSS en Atom](rss-versus-atom-feeds)
-* [RSS feeds laden en aanpassen](loading-and-customizing-rss-feeds)
-* [RSS en Atom feeds opstellen met filters](compose-rss-or-atom-feed-using-filters)
