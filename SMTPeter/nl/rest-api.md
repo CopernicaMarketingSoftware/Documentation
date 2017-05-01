@@ -30,7 +30,7 @@ Content-Length: 246
     "text":         "Dit is de inhoud",
 }
 ```
-Na het dit request maakt SMTPeter een MIME (een email bericht) met
+Na dit request maakt SMTPeter een MIME (een email bericht) met
 het gespecificeerde from, to, subject en text en stuurt dit bericht naar
 de opgegeven recipient.
 
