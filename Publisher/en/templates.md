@@ -1,9 +1,9 @@
-# Templates
+# Templates and mailings
 
 Templates are the base for all your mails. They contain the document you 
 will send to your user. You can style them using Marketing Suite's very 
 user-friendly template editor, or by coding in XSLT or CSS. You can 
-personalize them to your liking and automatize them with [followup actions](./followups). 
+automatize them with [followup actions](./followups).
 After sending a mail with your template you can view the [template statistics](./statistics-template) 
 or [mailing statistics](./statistics-mailing).
 
