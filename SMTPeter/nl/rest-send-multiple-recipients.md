@@ -15,14 +15,14 @@ wordt is:
         "alice@example.com",
         "bob@example.com",
         "charles@example.com"
-    ]
+    ],
     "from": "info@example.com",
     "to": [
         "alice@example.com",
         "bob@example.com"
-    }
+    ],
     "subject": "Dit is het onderwerp",
-    "text":    "Hoi Alice en Bob!",
+    "text":    "Hoi Alice en Bob!"
 }
 ```
 
