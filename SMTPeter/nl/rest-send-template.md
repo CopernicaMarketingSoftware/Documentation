@@ -47,7 +47,7 @@ of als echte JSON:
 
 Net als wanneer je e-mails verstuurt waarbij je zelf de HTML of MIME genereert,
 kun je bij templates gebruik maken van personalisatiedata. Ook hier geldt
-dat wanneer je één rercipient hebt je de data mee kan geven via de *data* 
+dat wanneer je één recipient hebt je de data mee kan geven via de *data* 
 property, zoals in onderstaand voorbeeld:
 
 ```json
