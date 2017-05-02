@@ -30,7 +30,6 @@
     * [Feedback loops for opens](feedback-opens)
 * [Personalization](personalization)
     * [Modifiers](personalization-modifiers)
-* [Webversion](webversion)
 * [Background information](background)
     * [All available REST calls](all-rest-calls)
     * [Sender Domains](sender-domains)
@@ -41,35 +40,4 @@
     * [Inline CSS code](inline-css)
     * [Email throttling](email-throttling)
     * [Click and open tracking](statistics)
-
-
-
-
-<!-- 
-    * [JSON to MIME conversion](json-to-mime)
-
-    * [Sender domains](sender-domains)
-
-
-    * [Templates](templates)
-    * [Email archiving](archiving)
-
-* [REST API](rest-api)
-    * [Endpoint and access token](rest-endpoint)
-    * [JSON vs POST data](json-vs-post)
-
-
-    * [Configuration via REST](rest-configuration)
-    * [Log files](rest-logfiles)
-    * [DMARC reports](rest-dmarc)
-    * [Retrieve messages](rest-messages)
-    * [Retrieve events](rest-events)
-* [Feedback loops](feedback-loops)
-    * [Setting up a feedback loop](feedback-setup)
-    * [Bounce feedback](feedback-bounces)
-    * [Failure feedback](feedback-failures)
-    * [Clicks feedback](feedback-clicks)
-    * [Opens feedback](feedback-opens)
-* [License and Billing](license-and-billing "License & Billing")
-* [Responsive Email](responsive-email "Using SMTPeter with ResponsiveEmail")
- -->
+    * [Webversion](webversion)

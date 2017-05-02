@@ -6,13 +6,13 @@ bounces yourself. However, if you do want to receive bounces, you should
 add an "envelope" property with the address to which the bounces should
 be sent.
 
-````json
+```json
 {
     "envelope":     "youraddress@yourdomain.com",
     "recipient":    "example@example.com",
     "mime":         "...."
 }
-````
+```
 
 By adding the envelope address, you instruct SMTPeter not to track bounces,
 and deliver the delivery status notification messages to your envelope
@@ -24,7 +24,7 @@ address.
 With the "dsn" variable you can set when and what kind of delivery 
 notifications you like to receive.
 
-````json
+```json
 {
     "envelope":     "youraddress@yourdomain.com",
     "recipient":    "example@example.com",
@@ -34,7 +34,7 @@ notifications you like to receive.
         "ret":      "HDRS"
     }
 }
-````
+```
 
 With the "notify" field you set when you want to get an email 
 notification. You can set it to either "SUCCESS" or "FAILURE" to request

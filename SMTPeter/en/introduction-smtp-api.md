@@ -1,4 +1,4 @@
-## Getting started: SMTP API
+# Configure SMTP API
 
 Instead of the REST API, the traditional SMTP API can also be used to connect with SMTPeter. This API is 
 best used when connecting to traditional email clients such as Outlook and Thunderbird, and when connecting 
@@ -11,6 +11,7 @@ The SMTP settings that you will need can be found [here](smtp-ports). You can al
 
 If you want to use both APIs that is possible too. That way, you can use the features you like best 
 from both.
+
 
 ## More information
 
