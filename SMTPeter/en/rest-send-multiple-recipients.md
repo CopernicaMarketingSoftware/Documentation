@@ -14,14 +14,14 @@ is:
         "alice@example.com",
         "bob@example.com",
         "charles@example.com"
-    ]
+    ],
     "from": "info@example.com",
     "to": [
         "alice@example.com",
         "bob@example.com"
-    }
+    ],
     "subject": "Here we have a subject",
-    "text":    "Hello Alice en Bob!",
+    "text":    "Hello Alice en Bob!"
 }
 ```
 When a JSON like this is received by SMTPeter, a mail with two "to" fields
