@@ -33,17 +33,18 @@ teruggegeven "fields" setting bevat een object met de nieuwe profielwaardes. Zo 
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer de methode uit en print het resultaat
-    print_r($api->get("database/1234/unsubscribe"));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer de methode uit en print het resultaat
+print_r($api->get("database/1234/unsubscribe"));
+```
 
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
 * [Afmeldalgoritme instellen](rest-put-database-unsubscribe)
-
