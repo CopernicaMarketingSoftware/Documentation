@@ -1,9 +1,9 @@
 # Een mail naar meerder ontvangers versturen
 
-Wanneer je dezelfde mail naar meerdere ontvangers wilt versturen, bijvoorbeeld
+Wanneer je dezelfde e-mail naar meerdere ontvangers wilt versturen, bijvoorbeeld
 wanneer er meerdere "to" of "cc" headers zijn, of wanneer je dezelfde mail wilt
 bcc-en, dan hoef je niet voor elke ontvanger een POST request te sturen.
-Je kunt in zo'n geval alle recipients die de mail moeten ontvangen in de
+Je kunt in zo'n geval alle recipients die de e-mail moeten ontvangen in de
 mee te zenden JSON specificeren onder property "recipients". 
 
 Een voorbeeld van een JSON waarbij de mail naar meerdere ontvangers verstuurd
