@@ -13,10 +13,10 @@ protocol en de algehele "MIME" data.
 Om alles leesbaar te maken, hebben we het merendeel van de "MIME" code van het 
 voorbeeld verwijderd. Als je zelf geen "MIME" bericht wil maken, kun je de 
 property weglaten. Gebruik dan wel de speciale properties zoals "subject", 
-"text" en "html" zodat SMTPeter de mime data kan aanmaken (zie 
+"text" en "html", zodat SMTPeter de mime data kan aanmaken (zie 
 [MIME door SMTPeter laten maken](rest-send-json)).
 
-Je hoeft enkel en alleen een "recipient" adress aan te leveren om een e-mail te
+Je hoeft enkel en alleen een *recipient adress* aan te leveren om een e-mail te
 versturen. Echter, als je bekend bent met het SMTP protocol weet je dat je
 normaal gesproken ook een *envelope address* moet opgeven. Dit envelope address 
 is het adres waar *bounces* of momenteel-niet-op-kantoor *replies* naartoe

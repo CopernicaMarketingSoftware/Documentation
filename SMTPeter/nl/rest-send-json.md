@@ -1,9 +1,9 @@
 # MIME door SMTPeter laten maken
 
-Als je de [REST API gebruikt om e-mail te versturen](rest-send "Verzenden via REST") kun je een *MIME property* toevoegen, 
-die het volledige MIME object bevat dat je wilt versturen. Echter, je kunt ook SMTPeter een MIME string 
-laten maken. Als je geen MIME property toevoegt aan je request maar een aparte "subject", "text" of 
-"HTML" property, wordt de MIME gecreëerd door SMTPeter. De volgende tabel bevat alle ondersteunde eigenschappen:
+Je kunt SMTPeter e-mails laten versturen door een *MIME property* toe tevoegen aan de JSON. Deze MIME property
+bevat het volledige MIME object dat je wilt versturen. Echter, je kunt SMTPeter ook een MIME string 
+laten maken. In dit geval specificeer je geen MIME property, maar wel een aparte "subject", "text" of 
+"HTML" property. Nu wordt de MIME gecreëerd door SMTPeter. De volgende tabel bevat alle ondersteunde eigenschappen:
 
 | Property      | Omschrijving                  |
 |---------------|-------------------------------|
@@ -20,9 +20,15 @@ laten maken. Als je geen MIME property toevoegt aan je request maar een aparte "
 
 ## E-mailadressen
 
-De "from", "to" en "cc" velden beslissen welke e-mailadressen worden weergeven in het MIME-object. De "from" variabele moet bestaan uit één enkel e-mailadres, maar er is geen limiet voor het aantal adressen die kunnen worden gebruikt voor de "to" en "cc" velden.
+De "from", "to" en "cc" velden beslissen welke e-mailadressen worden aangemaakt binnen het MIME-object. De "from" variabele 
+moet bestaan uit één enkel e-mailadres, maar er is geen limiet voor het aantal adressen die kunnen worden gebruikt 
+voor de "to" en "cc" velden.
 
-De notatie voor e-mailadressen in het "from", "to" en "cc" velden is veel flexibeler dan de "envelope" en "recipient" velden. Je kunt onder andere namen weergeven of gebruik maken van punthaken. Voor de "to" en "cc" velden kun je ook komma gescheiden lijsten gebruiken. Het is zo dat de "from", "to" en "cc" velden alleen kiezen wat voor e-mailadressen er worden toegevoegd aan de MIME data, en verder niet identiek hoeven te zijn aan de adressen die gebruikt worden in de "envelope" en "recepient" velden. Al is het een goede gewoonte om e-mails te versturen naar de e-mailadressen in het veld "to".
+De notatie voor e-mailadressen in de "from", "to" en "cc" velden is veel flexibeler dan de "envelope" en "recipient" velden. 
+Je kunt onder andere namen weergeven of gebruik maken van punthaken. Voor de "to" en "cc" velden kun je ook kommagescheiden 
+lijsten gebruiken. De "from", "to" en "cc" velden bepalen welke e-mailadressen worden toegevoegd aan de MIME data. Let er op
+dat deze e-mailadressen niet identiek hoeven te zijn aan de adressen die gebruikt worden in de "envelope" en "recepient" 
+velden. Uiteraard is het een goede gewoonte om e-mails te versturen naar de e-mailadressen die in het "to" veld worden gespecificeerd.
 
 
 ```json
@@ -36,6 +42,7 @@ De notatie voor e-mailadressen in het "from", "to" en "cc" velden is veel flexib
     "cc": "John Doe <johndoe@example.org>"
 }
 ```
+
 
 ## Subject, text en HTML
 

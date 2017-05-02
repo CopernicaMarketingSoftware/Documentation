@@ -21,14 +21,14 @@ de CSS code *inline* zet.
 
 Door de "inlinecss" variabele op *true* te zetten, activeer je de toepassing
 die ervoor zorgt dat *CSS stylesheets* uit de *header* worden omgezet naar
-inline attributen in de html code.
+inline attributen in de HTML code.
 
 
 ## Het nagaan van clicks, opens en bounces
 
 SMTPeter vervangt automatisch alle *hyperlinks* in je e-mails met eigen URLs.
-Op deze manier kunnen de verschillende *events* worden nagegaan. Het *envelope*
-adres van de e-mails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
+Op deze manier kunnen de verschillende *events* worden nagegaan. Het *envelope
+address* van de e-mails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
 kan SMTPeter ook die events afhandelen. Je kunt deze toepassingen gemakkelijk
 uitzetten. Zie onderstaande JSON data:
 
@@ -104,7 +104,7 @@ accepteert een JSON object met vier optionele velden:
 
 De *notify* property is de allerbelangrijkste. Je kunt specificeren voor welke
 soorten events een e-mail notificatie moet worden getriggerd. Mogelijke waardes
-zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een komma gescheiden lijst met 
+zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een kommagescheiden lijst met 
 waardes wordt ook ondersteund. 
 
 De "ret" waarde kan de waardes "FULL" of "HDRS" bevatten om te specificeren of de 
