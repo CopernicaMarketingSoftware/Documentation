@@ -30,7 +30,7 @@
     * [Feedback loops voor opens](feedback-opens)
 * [Personalisatie](personalization)
     * [Modifiers](personalization-modifiers)
-* [Achtergrond informatie](background)
+* [Achtergrondinformatie](background)
     * [Alle beschikbare REST calls](all-rest-calls)
     * [Sender Domains](sender-domains)
     * [SPF validatie](spf-validation)
