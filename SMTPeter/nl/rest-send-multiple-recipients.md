@@ -1,4 +1,4 @@
-# Een mail naar meerder ontvangers versturen
+# Een mail naar meerdere ontvangers versturen
 
 Wanneer je dezelfde e-mail naar meerdere ontvangers wilt versturen, bijvoorbeeld
 wanneer er meerdere "to" of "cc" headers zijn, of wanneer je dezelfde mail wilt
@@ -22,7 +22,7 @@ wordt is:
         "bob@example.com"
     ],
     "subject": "Dit is het onderwerp",
-    "text": "Hoi Alice en Bob!",
+    "text": "Hoi Alice en Bob!"
 }
 ```
 
