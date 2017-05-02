@@ -1,4 +1,4 @@
-# Direct aan de slag: Sender Domains
+# Sender Domains instellen
 
 ## Sender Domain
 

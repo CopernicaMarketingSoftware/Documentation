@@ -1,16 +1,16 @@
 # MIME headers
 
-Wanneer je een MIME-bericht hebt gemaakt, kun je deze aan SMTPeter geven, 
-waarop hij alles verder zal regelen. Als je wilt, kunt je het gedrag van
+Je kunt eenvoudig zelf gemaakt MIME-berichten meegeven aan SMTPeter.
+Alles gaat vanaf daar automatisch. Indien gewenst kun je het gedrag van
 SMTPeter beïnvloeden door specifieke 'x-smtpeter'-headers in het MIME-bericht
 te zetten. Dit is vooral handig wanneer je gebruikt maakt van de SMTP API
 in plaats van de REST API, omdat SMTP het doorgeven van aparte parameters
 in een bericht niet ondersteunt zoals REST dat doet.
 
-MIME headers kunnen echter ook gebruikt worden om de opties die doorgegeven
-worden bij REST te overschrijven. Let wel dat deze extra headers worden
-gestript voordat het bericht naar de ontvanger wordt verzonden. Ze staan
-dus niet meer in het bericht dat de ontvanger ziet.
+MIME headers kunnen ook gebruikt worden om de opties die doorgegeven
+worden bij het maken van de REST call te overschrijven. Let wel op dat deze 
+extra headers worden gestript nog voordat het bericht naar de ontvanger 
+wordt verzonden. Ze staan dus niet meer in het bericht dat de ontvanger ziet.
 
 Hieronder vind je een lijst van alle mogelijke optionele headers:
 

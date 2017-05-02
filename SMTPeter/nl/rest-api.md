@@ -11,10 +11,11 @@ e-mail versturen:
 ```text
 https://www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}
 ```
-waar `{JOUW_API_TOKEN}` de access token is die je via het dashboard hebt opgevraagd.
-De extra data in de POST request met daarin de gegevens voor de email kunnen
-als JSON worden meegegeven. De opmaak van een eenvoudig maar volledig request
-ziet er dan als volgt uit:
+
+`{JOUW_API_TOKEN}` is de access token die je via het dashboard hebt opgevraagd.
+De extra data in de POST request, met daarin gegevens voor de e-mail, kunnen
+als JSON worden meegegeven. De opmaak van een eenvoudige request ziet er 
+dan als volgt uit:
 
 ```text
 POST /v1/send?access_token={JOUW_API_TOKEN} HTTP/1.0
@@ -30,13 +31,14 @@ Content-Length: 246
     "text":         "Dit is de inhoud",
 }
 ```
-Na dit request maakt SMTPeter een MIME (een email bericht) met
-het gespecificeerde from, to, subject en text en stuurt dit bericht naar
-de opgegeven recipient.
 
-Als je een mail met HTML of bijlagen wilt versturen dan is dit ook mogelijk.
-Alle opties die SMTPeter bij een mail ondersteund zijn beschreven in de
-[MIME door SMTPeter laten maken](rest-send-json) documentatie.
+SMTPeter gaat, nadat je een request hebt gedaan, meteen aan de slag. Er wordt een MIME 
+(een e-mail bericht) aangemaakt met de gespecificeerde from, to, subject en text velden.
+De e-mail wordt uiteindelijk op de juiste manier afgeleverd bij de opgegeven recipient.
+
+Het is ook mogelijk om een e-mail door middel van HTML of met bijlagen te versturen.
+Alle opties die SMTPeter, bij het versturen van een e-mail, ondersteund zijn beschreven 
+in de [MIME door SMTPeter laten maken](rest-send-json) documentatie.
 
 Een zelfgemaakt MIME met SMTPeter versturen behoort ook tot de mogelijkheden.
 Meer informatie hierover kun je vinden in de [MIME data versturen](rest-mime)
@@ -52,6 +54,6 @@ De REST API is uitgebreid en geeft je vrijheid in het maken van keuzes:
 * [Versturen naar meerdere afzenders](rest-send-multiple-recipients)
 * [Versturen op basis van een template](rest-send-template)
 * [Geavanceerde verzendopties](rest-send-advanced)
-* [API respons](rest-api-reaction)
+* [API respons](rest-api-respons)
 
 *Alle beschikbare REST calls kun je [hier](all-rest-calls) vinden.*

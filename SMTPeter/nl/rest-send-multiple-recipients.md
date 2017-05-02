@@ -15,22 +15,22 @@ wordt is:
         "alice@example.com",
         "bob@example.com",
         "charles@example.com"
-    ]
+    ],
     "from": "info@example.com",
     "to": [
         "alice@example.com",
         "bob@example.com"
-    }
+    ],
     "subject": "Dit is het onderwerp",
-    "text":    "Hoi Alice en Bob!",
+    "text": "Hoi Alice en Bob!",
 }
 ```
 
-Wanneer een bovenstaand bericht ontvangen wordt door SMTPeter dan wordt een mail
-geconstrueerd met daarin twee "to" velden. Deze mail wordt naar Alice, Bob
-en Charles gestuurd. Alice en Bob kunnen niet zien dat ook Charles het bericht
-ontvangt. Charles wordt in dit geval dus ge-bcc'd.
+In het bovenstaande voorbeeld ontvangt SMTPeter een JSON van een gebruiker. 
+SMTPeter constateert dat er twee "to" velden zijn. Deze e-mail wordt vervolgens
+naar Alice, Bob en Charles gestuurd. Alice en Bob kunnen niet zien dat ook Charles 
+het bericht ontvangt. Charles wordt in dit geval dus ge-bcc'd.
 
-Als je een mail naar meerdere mensen wilt sturen, maar je wilt elke mail
-er wel persoonlijk uit laten zien, dan wil je waarschijnlijk onze 
-[Personalisatie van e-mails](rest-send-personalize) documentatie lezen.
+SMTPeter biedt ook de mogelijkheid om een gepersonaliseerde e-mails naar meerdere 
+ontvangers te versturen. Wil je weten hoe je dat kunt doen? 
+[Personalisatie van e-mails](rest-send-personalize)

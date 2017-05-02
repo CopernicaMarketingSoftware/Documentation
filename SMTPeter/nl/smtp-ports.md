@@ -8,7 +8,7 @@ Port:       25, 587, 2525
 Encryption: STARTTLS
 ```
 
-Let erop dat we e-mail kunnen weigeren tijdens de “RCPT TO” fase van het SMTP, of nadat je alle data van het bericht hebt verstuurd. Soms verwerken we het hele bericht om erachter te komen wie onze systemen probeert te misbruiken, en weigeren we de mail pas als we het volledige bericht hebben gezien.
+Let erop dat we e-mail kunnen weigeren tijdens de “RCPT TO” fase van het SMTP, of nadat je alle data van het bericht hebt verstuurd. Soms verwerken we het hele bericht om erachter te komen wie onze systemen probeert te misbruiken, en weigeren we de e-mail pas als we het volledige bericht hebben gezien.
 
 ## Poorten
 
