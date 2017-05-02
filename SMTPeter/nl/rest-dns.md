@@ -28,8 +28,8 @@ Met de “*dsn*” variabele kun je aangeven wat voor soort berichten je wilt on
 }
 ```
 
-Met het “notify” veld kun je aangeven wanneer je een e-mail notificatie wilt ontvangen. Je kan dit op zowel “SUCCESS” of “FAILURE” zetten. Als je bounces in beide gevallen wilt ontvangen kun je “SUCCESS,FAILURE” gebruiken. De standaardwaarde is “FAILURE”.
+Met het “notify” veld kun je aangeven wanneer je een e-mail notificatie wilt ontvangen. Je kan dit op zowel “SUCCESS” of “FAILURE” zetten. Als je bounces in beide gevallen wilt ontvangen kun je “SUCCESS, FAILURE” gebruiken. De standaardwaarde is “FAILURE”.
 
-Met het “ret” veld heb je de controle over de inhoud van de bounce, of het hele e-mailbericht is meegeleverd, of alleen de headers in de bounce. De mogelijke waarden zijn “FULL” en “HDRS”. De standaardwaarde is “HDRS”.
+Met het “ret” veld heb je de controle over de inhoud van de bounce, of het hele e-mailbericht is meegeleverd, of alleen de headers in de bounce. De mogelijke waardes zijn “FULL” en “HDRS”. De standaardwaarde is “HDRS”.
 
-Hou in gedachten dat als je veel e-mails verstuurd je waarschijnlijk ook veel bounces ontvangt. Dit kan je mailbox snel doen overstromen.
+Hou in gedachten dat als je veel e-mails verstuurt je waarschijnlijk ook veel bounces ontvangt. Dit kan je mailbox snel doen overstromen.

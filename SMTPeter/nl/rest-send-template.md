@@ -77,7 +77,7 @@ Als je meerdere recipients hebt dan kun je de data per recipient toevoegen:
             "kinderen" : ["Jacky", "Joe"]
         }
     ],
-    "template":     12
+    "template": 12
 }
 ```
 
@@ -85,7 +85,7 @@ In de template kun je vervolgens de variabelen `{$voornaam}`, `{$achternaam}`
 en `{$kinderen}` gebruiken. Voor meer informatie over personaliseren verwijzen
 we je naar de onderstaand links. 
 
-* [Personalisatie gebruiken](personalization.md)
+* [Personalisatie gebruiken](personalization)
 * [Overzicht modifiers](personalization-modifiers)
 
 
