@@ -32,26 +32,28 @@ class SMTPeter:
 ```
 Het gebruik van deze class is makkelijk:
 
-```
-# your token
-token = "abcde"
+*your token* = 
+"abcde"
 
-# initialize SMTPeter with token
+initialize SMTPeter with token
 mySMTPeterConnection = SMTPeter(token)
 
-# The data we want to send
-data = {"envelope"  : "sender@example.com",
-        "recipient" : "receiver@example.com",
-        "subject"   : "This is the mail subject",
-        "from"      : "sender@example.com",
-        "to"        : "receiver@example.com",
-        "html"      : "<html><head><style>body { font-weight: 600; }</style></head><body>This is the html version.</body></html>",
-        "text"      : "And this is the text version"
-       }
+The data we want to send
 
-# Post
-response = mySMTPeterConnection.post("send", data)
-# Print response
-pprint.pprint(response.json())
+``` json
+{
+    "envelope"  : "sender@example.com",
+    "recipient" : "receiver@example.com",
+    "subject"   : "This is the mail subject",
+    "from"      : "sender@example.com",
+    "to"        : "receiver@example.com",
+    "html"      : "<html><head><style>body { font-weight: 600; }</style></head><body>This is the html version.</body></html>",
+    "text"      : "And this is the text version"
+}
 ```
 
+*Post response* = 
+mySMTPeterConnection.post("send", data)
+
+*Print response* =
+pprint.pprint(response.json())

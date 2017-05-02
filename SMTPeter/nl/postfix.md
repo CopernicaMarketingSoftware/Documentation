@@ -14,7 +14,7 @@ De volgende stap is om je SMTP-gegevens in te stellen. Deze inlogegevens zitten 
 
 Wanneer je deze gegevens toevoegt of aanpast, moet je het volgende postmap-commando runnen:
 
-$ postmap /etc/postfix/sasl_passwd
+`$ postmap /etc/postfix/sasl_passwd`
 
 Om veiligheidsredenen kun je het beste daarna het volgende commando runnen, zodat alleen de *root*-gebruiker het bestand kan lezen en bewerken;
 

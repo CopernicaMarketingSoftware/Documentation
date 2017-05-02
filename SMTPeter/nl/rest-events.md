@@ -29,7 +29,7 @@ De volgende parameters kunnen aan de URLs als variabelen worden toegevoegd:
 ```
 
 
-### Start en end parameters
+## Start en end parameters
 
 De *default* instelling voor het tonen van *calls* is afhankelijk van het type event.
 Er wordt uitgegaan van een maand als er geen specifieke start en eind datum worden
@@ -51,12 +51,13 @@ tijd. Houd er ook rekening mee dat de beperking van de periode tot een maand gew
 kan worden als de performance dit vereist.
 
 
-### Tags
+## Tags
 
 Het is ook mogelijk om een *tag* mee te geven. Vanaf dat moment kunnen de events ook 
 worden gefilterd op de tags. Het kan natuurlijk voorkomen dat je op meerdere tags 
 tegelijkertijd wil filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
 door middel van puntkomma's.
+
 
 ## Geretourneerde informatie
 
@@ -69,7 +70,7 @@ Na het verzoek ontvang je de volgende JSON:
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
-            ...
+            /* ... */
         }
     },
     {
@@ -77,10 +78,10 @@ Na het verzoek ontvang je de volgende JSON:
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
-            ...
+            /* ... */
         }
     },
-    ...
+    /* ... */
 ]
 ```
 
@@ -120,10 +121,10 @@ De volgende URL kan gebruikt worden om informatie met betrekking tot
 een bepaald e-mailadres op te vragen.
 
 ```text
-https://www.smtpeter.com/v1/events/email/EMAILADRES
+https://www.smtpeter.com/v1/events/email/EMAILADDRESS
 ```
 
-Hierbij is `EMAILADRES` het betreffende e-mailadres. Je krijgt de events
+Hierbij is `EMAILADDRESS` het betreffende e-mailadres. Je krijgt de events
 tot een maand geleden. De events voor andere periodes kunnen worden gedownload
 door de optionele parameters `start` en/of `end` op te geven. Tevens kun
 je filteren op tags door de `tags` parameter op te geven.
