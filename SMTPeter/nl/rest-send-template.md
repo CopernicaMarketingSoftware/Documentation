@@ -1,14 +1,14 @@
 # Emails op basis van templates
 
-Er zijn een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
+Er is een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) van hoe je data naar SMTPeter stuurt voor het versturen
 van een e-mail. Daarnaast kun je ook mails versturen met behulp van templates. 
 Het gebruik templates heeft een aantal voordelen ten opzicht van de eerder 
-genoemde methodes. Zo kun je makkelijk mails via de uitgebreide
-*drag-and-drop* editor in het dashboard samenstellen en hoef je niet zelf
-de HTML te schrijven. Daarnaast zijn de template *responsive*. Dit betekent 
+genoemde methodes. Zo hoef je zelf geen HTML code meer te schrijven als je 
+templates gebruikt, maar kun je de berichten via de *drag-and-drop* editor 
+samenstellen. Bovendien zijn templates *responsive*. Dit betekent 
 dat de opmaak van de email altijd aansluit op het device waarop de mail
-wordt geopend. Hierdoor ziet uw mail er altijd goed uit!
+wordt geopend. Hierdoor ziet de mail er altijd goed uit!
 
 
 ## Template ID's
