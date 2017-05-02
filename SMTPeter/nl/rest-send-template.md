@@ -3,7 +3,7 @@
 Er is een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) van hoe je data naar SMTPeter stuurt voor het versturen
 van een e-mail. Daarnaast kun je ook e-mails versturen met behulp van templates. 
-Het gebruik templates heeft een aantal voordelen ten opzicht van de eerder 
+Het gebruik templates heeft een aantal voordelen ten opzichte van de eerder 
 genoemde methodes. Zo hoef je zelf geen HTML code meer te schrijven als je 
 templates gebruikt, maar kun je de berichten via de *drag-and-drop* editor 
 samenstellen. Bovendien zijn templates *responsive*. Dit betekent 
