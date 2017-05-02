@@ -31,7 +31,7 @@
 * [Personalisatie](personalization)
     * [Modifiers](personalization-modifiers)
 * [Webversie](webversion)
-* [Achtergrond informatie](background)
+* [Achtergrondinformatie](background)
     * [Alle beschikbare REST calls](all-rest-calls)
     * [Sender Domains](sender-domains)
     * [SPF validatie](spf-validation)

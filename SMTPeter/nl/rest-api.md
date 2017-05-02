@@ -26,10 +26,10 @@ Content-Length: 246
 }
 ```
 
-De data die je naar SMTPeter stuurt kan op verschillende manieren zijn opgemaakt.
+De data die je naar SMTPeter stuurt kan uit verschillende variabelen bestaan.
 In bovenstaand voorbeeld wordt het e-mailbericht door SMTPeter opgemaakt,
-maar je kunt ook andersoortige velden opnemen, bijvoorbeeld omdat je zelf de MIME
-hebt opgemaakt of om gebruik te maken van een voorgedefinieerde template.
+maar je kunt ook andere parameters gebruiken, bijvoorbeeld omdat je al zelf 
+de MIME hebt opgemaakt of om te verwijzen naar een voorgedefinieerde template.
 
 
 ## Verken de andere toepassingen
