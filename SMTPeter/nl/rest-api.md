@@ -1,8 +1,8 @@
 # Verzenden via REST API
 
-SMTPeter heeft een eenvoudige en veilig REST API waarmee je e-mail kunt versturen
-via het HTTPS protocol. Stuur een POST request naar onderstaande URL om een 
-mail te versturen:
+SMTPeter heeft een eenvoudige en veilige REST API ontwikkeld, waarmee je e-mails 
+kunt versturen via het HTTPS protocol. Stuur een POST request naar onderstaande URL 
+om een e-mail te versturen:
 
 ```text
 https://www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}
@@ -10,7 +10,7 @@ https://www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}
 
 `{JOUW_API_TOKEN}` is de access token die je via het dashboard kunt opvragen.
 De body van de POST request, met daarin de content van de e-mail, kunnen
-als JSON worden meegegeven. De opmaak van een eenvoudige request ziet er 
+als JSON worden meegegeven. De opmaak van de request ziet er 
 dan als volgt uit:
 
 ```text
@@ -29,14 +29,14 @@ Content-Length: 246
 ```
 
 SMTPeter gaat, nadat je een request hebt gedaan, meteen aan de slag. Er wordt een MIME 
-(een e-mail bericht) aangemaakt met de gespecificeerde "from", "to", "subject" en "text" velden.
-De e-mail wordt uiteindelijk op de juiste manier afgeleverd bij de opgegeven recipient.
+(e-mail bericht) aangemaakt met de gespecificeerde "from", "to", "subject" en "text" 
+velden. De e-mail wordt uiteindelijk op de juiste manier afgeleverd bij de opgegeven recipient.
 
-De data die je naar SMTPeter stuurt kan uit verschillende variabelen bestaan.
+De data die je meegeeft aan SMTPeter, kan uit verschillende variabelen bestaan.
 In bovenstaand voorbeeld wordt het e-mailbericht door SMTPeter opgemaakt,
-maar je kunt ook andere parameters gebruiken, bijvoorbeeld omdat je al zelf 
+maar je kunt ook andere parameters gebruiken: bijvoorbeeld omdat je al zelf 
 de MIME hebt opgemaakt of om te verwijzen naar een voorgedefinieerde template.
-Alle opties die SMTPeter, bij het versturen van een e-mail, ondersteund zijn beschreven 
+Alle opties die SMTPeter, bij het versturen van een e-mail ondersteund, zijn beschreven 
 in de [MIME door SMTPeter laten maken](rest-send-json) documentatie.
 
 

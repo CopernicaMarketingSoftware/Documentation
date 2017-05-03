@@ -1,12 +1,11 @@
 # Sender Domains instellen
 
-## Sender Domain
-
-Om in te stellen vanuit welke domeinnaam je mail gaat versturen, moet je een *sender domain*
-aanmaken. Deze sender domains vind je in het menu van het SMTPeter dashboard. Klik op 
-`Add sender domain` en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving.
-De meeste standaardinstellingen zijn eigenlijk al goed, dus je kunt vrij snel doorklikken zonder 
-je zorgen te hoeven maken over bijvoorbeeld de klik- en afbeeldingdomeinen of *DMARC deployment*. 
+Om in te stellen vanuit welke domeinnaam je e-mail gaat versturen, moet je een *sender domain*
+aanmaken. De sender domains vind je in het menu van het SMTPeter dashboard. Klik op 
+`Add sender domain` en volg de stappen. Bij alle stappen staat een uitgebreide omschrijving, 
+zodat je telkens na kunt gaan wat het belang is van een bepaalde instelling.
+Echter, de meeste standaardinstellingen staan eigenlijk al goed ingesteld, dus je hoeft je niet 
+direct zorgen te maken over bijvoorbeeld de klik- en afbeeldingdomeinen of *DMARC deployment*. 
 Alles kun je later aanpassen in het configuratiescherm. Je kunt ook altijd 
 het artikel over [sender domains](./sender-domains) raadplegen.
 

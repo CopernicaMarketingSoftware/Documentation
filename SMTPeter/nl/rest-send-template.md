@@ -1,14 +1,13 @@
-# Emails op basis van templates
+# Versturen van templates
 
 Er is een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) van hoe je data naar SMTPeter stuurt voor het versturen
 van een e-mail. Daarnaast kun je ook e-mails versturen met behulp van templates. 
 Het gebruik van templates heeft een aantal voordelen ten opzichte van de eerder 
-genoemde methodes. Zo hoef je zelf geen HTML code meer te schrijven als je 
-templates gebruikt, maar kun je de berichten via de *drag-and-drop* editor 
-samenstellen. Bovendien zijn templates *responsive*. Dit betekent 
-dat de opmaak van de e-mail altijd aansluit op het device waarop de mail
-wordt geopend. Hierdoor ziet de e-mail er altijd goed uit!
+genoemde toepassingen. Zo hoef je bijvoorbeeld zelf geen HTML code meer te schrijven en 
+kun je e-mails samenstellen met de *drag-and-drop* editor. Bovendien zijn de templates 
+*responsive*. Dit betekent dat de opmaak van de e-mail altijd aansluit op het device waarop de 
+e-mail wordt geopend. Hierdoor ziet de e-mail er altijd goed uit!
 
 
 ## Template ID's
@@ -25,10 +24,10 @@ Een mogelijke JSON voor het versturen ziet er als volgt uit:
 }
 ```
 
-Omdat de templates gebruik maken van [Responsive Email](https://www.responsiveemail.com/)
-en Responsive Email JSON ondersteunt, kun je in plaats van een template ID
-ook een complete JSON bij de template property meegeven. Dit kan als string
-of als echte JSON:
+De templates maken gebruik van onze [Responsive Email](https://www.responsiveemail.com/)
+service. Deze service ondersteund het JSON formaat en dus kun je in plaats van een template 
+ID ook een complete JSON aan de template property meegeven. Dit kan als string of als echte 
+JSON:
 
 ```json
 {
@@ -45,11 +44,12 @@ of als echte JSON:
 
 ## Personaliseren van templates
 
-Net als wanneer je e-mails verstuurt waarbij je zelf de HTML of MIME genereert,
-kun je bij templates gebruik maken van personalisatiedata. Ook hier geldt
-dat wanneer je één recipient hebt je de data mee kan geven via de *data* 
-property, zoals in onderstaand voorbeeld:
-
+Het is bekend dat je zelf HTML en MIME kunt maken en mee kunt geven aan de API call. 
+De e-mails die je hebt gemaakt kunnen een groot scala aan personalisatiedata bevatten, 
+zoals eerder al is uitgelegd. Bij het gebruik van templates heb je ook de volledige 
+beschikking over het invoegen van personalisatiedata. In onderstaand voorbeeld wordt een 
+recipient gebruikt met tempalate 12. Vervolgens wordt in de "data" property de 
+personalisatiedata meegegeven. 
 ```json
 {
     "recipient":    "john@doe.com",
@@ -61,7 +61,7 @@ property, zoals in onderstaand voorbeeld:
 }
 ```
 
-Als je meerdere recipients hebt dan kun je de data per recipient toevoegen:
+Meerdere recipients? Voeg dan de data per recipient toe:
 
 ```json
 {
@@ -91,7 +91,7 @@ we je naar de onderstaand links.
 
 ## Onderdelen van de template overschrijven
 
-Normaal gesproken maak je je templates met de template editor van het SMTPeter
+Normaal gesproken maak je templates aan met de template editor in het SMTPeter
 dashboard. Onder de motorkap worden deze templates als JSON opgeslagen. Dit 
 kun je ook zien in de editor: er is een optie in het menu om de JSON broncode 
 van de template te bekijken en te bewerken.
@@ -154,7 +154,7 @@ Of, als je wilt dat SMTPeter het attachment voor je downloadt:
 }
 ```
 
-Zoals hierboven al beschreven, worden de templates opgeslagen volgens het JSON
+De templates worden opgeslagen volgens het JSON
 formaat van Copernica's [Responsive Email](https://www.responsiveemail.com) service.
 Op de speciale website over Responsive Email vind je [uitgebreide documentatie](https://www.responsiveemail.com/json/top-level-properties) 
 en voorbeelden van alle properties, inclusief de opgesomde properties die via de REST 

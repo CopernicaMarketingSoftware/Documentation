@@ -1,4 +1,4 @@
-## Direct aan de slag: REST API
+# REST API configureren
 
 Voor het gebruik van de REST API heb je een zogeheten *access token* nodig. Deze kun je
 eenvoudig genereren in het SMTPeter dashboard onder het kopje REST API.
