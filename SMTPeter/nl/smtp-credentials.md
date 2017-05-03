@@ -1,8 +1,9 @@
-# SMTP Credentials
+# Aanmaken van Credentials
 
 Om toegang te krijgen tot de REST API heb je geldige inloggegevens nodig. Deze gegevens moeten in een handshake zijn meegenomen voordat je het eerste bericht over de verbinding kunt sturen. SMTPeter ondersteunt zowel het [AUTH PLAIN als het AUTH LOGIN mechanisme](https://en.wikipedia.org/wiki/SMTP_Authentication "SMTP Authentication"). De inloggegevens moeten over een versleutelde verbinding worden verstuurd, die kan worden opgezet door een connectie te maken met poort 456 of door de verbinding te versleutelen met STARTTLS. Meer over poorten en STARTTLS vind je in het artikel over [poorten](smtp-ports "Domeinnaam en poorten").
 
 De gebruikersnaam en het wachtwoord kunnen worden aangemaakt en veranderd via het SMTPeter dashboard. Je kunt oneindig veel logins maken.
+
 
 ## Instellingen voor inloggegevens
 Omdat het SMTP-protocol het doorgeven van parameters niet echt ondersteunt, gebruikt SMTPeter een andere manier om de opties te specificeren die gebruikt moeten worden bij verzonden berichten: Voor iedere set inloggegevens kun je de benodigde SMTPeter functies aan- en uitzetten. Je kunt meerdere logins maken met elk een andere set opties. Wanneer je e-mail verstuurt, kun je de gebruikersnaam en het wachtwoord gebruiken met de opties die je nodig hebt voor die specifieke mailing.

@@ -3,7 +3,7 @@
 Je hebt al kunnen [lezen](rest-send-multiple-recipients) hoe je met
 SMTPeter een e-mail naar meerdere personen tegelijk kunt sturen. Soms wil 
 je inderdaad identieke e-mails naar een groep mensen sturen, maar vaak wil 
-je elke mail toch persoonlijk maken. Dit kan met SMTPeter door in je bericht
+je dat elke e-mail toch persoonlijk is. Dit kan met SMTPeter door in je bericht
 code op te nemen die vervangen moet worden met gegevens van de ontvanger. 
 De gegevens van de ontvanger worden, op de aangegeven plaatsen, ingevuld 
 door SMTPeter nog voordat het bericht daadwerkelijk wordt verstuurd. 
@@ -27,8 +27,7 @@ als volgt uit:
         "voornaam"  : "John",
         "achternaam" : "Doe",
         "kinderen"   : ["Jane", "Joe", "Jacky", "Josef"]
-    },
-    ...
+    }
 }
 ```
 
@@ -37,31 +36,29 @@ Voor het personaliseren beschik je nu over de variabelen `voornaam`,
 respectievelijke de waardes `John` en `Doe`. De variabele `kinderen` is een
 array met daarin de waardes `Jane`, `Joe`, `Jacky` en `Josef`. De namen van
 de variabelen mag je zelf kiezen, maar er gelden enige regels. Deze regels
-staan beschreven in [@todo](), maar als je alleen letters en cijfer gebruikt
-en begint met een letter, dan heb je altijd een correcte naam.
+staan beschreven in het gedeelte over [personalisatie](personalization).
 
 
 ## Personalisatie data bij meerdere ontvangers
 
 Als je e-mail verstuurt naar meerdere ontvangers, kun je
 de personalisatiedata per ontvanger meegeven door een array achter de ontvanger
-in kwestie te zetten. Een mogelijk JSON ziet er dan als volgt uit:
+in kwestie te zetten. Een JSON ziet er dan als volgt uit:
 
 ```json
 {
-    "recipients" : [
+    "recipients": {
         "jane@doe.com": {
             "voornaam": "Jane",
             "achternaam": "Doe",
-            "kinderen" : ["Jacky", "Joe"]
+            "kinderen": ["Jacky", "Joe"]
         },
         "john@doe.com": {
             "voornaam": "John",
             "achternaam": "Doe",
-            "kinderen" : ["Jacky", "Joe"]
+            "kinderen": ["Jacky", "Joe"]
         }
-    ],
-    ...
+    }
 }
 ```
 
@@ -81,45 +78,47 @@ door `{$variabeleNaam}` te gebruiken. Een simpel voorbeeld hiervan is:
 
 ```json
 {
-    "recipients" : [
+    "recipients": {
         "jane@doe.com": {
             "voornaam": "Jane",
             "achternaam": "Doe",
-            "kinderen" : ["Jacky", "Joe"]
+            "kinderen": ["Jacky", "Joe"]
         },
         "john@doe.com": {
             "voornaam": "John",
             "achternaam": "Doe",
-            "kinderen" : ["Jacky", "Joe"]
+            "kinderen": ["Jacky", "Joe"]
         }
-    ],
-    "from"    : "info@example.com",
-    "to"      : "{$recipient}",
-    "subject" : "Hallo {$voornaam}",
-    "text"    : "Hallo {$voornaam} {$achternaam}!"
+    },
+    "from": "info@example.com",
+    "to": "{$recipient}",
+    "subject": "Hallo {$voornaam}",
+    "text": "Hallo {$voornaam} {$achternaam}!"
 }
 ```
 
-Verstuur je een e-mail naar Jane? Dan wordt het "subject": "Hallo Jane" en de
+Verstuur je een e-mail naar Jane? Dan ziet dat er zo uit:
+
+```text
+"subject": "Hallo Jane" 
 "text": "Hallo Jane Doe!"
-In het geval van John wordt het "subject": "Hallo John" en de "text":
-"Hallo John Doe!".
+```
+
+Verstuur je een e-mail naar John? Dan ziet dat er zo uit:
+
+```text
+"subject": "Hallo John"
+"text": "Hallo John Doe!"
+```
+
 De variabele `recipient` krijg je automatisch en is gelijk aan
-het recipient adres.
+het recipient adres. Je kunt nagaan dat in dit voorbeeld de 
+recipient variabele in de "to" header wordt gebruikt.
+Voor uitgebreide informatie over de mogelijkheden
+van SMARTY, verwijzen we je graag naar het overzicht van
+de [modifiers](personalization-modifiers). 
 
+Wist je al dat je met SMTPeter ook templates kunt versturen? 
+Dit scheelt een hoop tijd en ziet er professioneel uit:
 
-Als de mail naar Jane wordt verstuurd, wordt de subject: "Hallo Jane"
-en de text: "Hallo Jane Doe!". Bij John wordt dit "Hallo John" en "Hallo
-John Doe!". De variabele `recipient` krijg je automatisch en is gelijk aan
-het recipient adres. In bovenstaand voorbeeld wordt dit gebruikt in de "to"
-header. Dit voorbeeld is erg simpel en er zijn tal van mogelijkheden om met
-SMARTY e-mails te personaliseren. Voor uitgebreide informatie over de mogelijkheden
-van SMARTY, verwijzen we je graag naar de onderstaand links. 
-
-Weet je al dat je met SMTPeter ook templates kunt versturen? Dit scheelt een hoop 
-tijd en ziet er professioneel uit:
-[e-mailtemplates](rest-send-template) 
-
-
-* [Personalisatie gebruiken](personalization)
-* [Overzicht modifiers](personalization-modifiers)
+* [e-mail templates](rest-send-template)
