@@ -1,4 +1,4 @@
-## Direct aan de slag: SMTP API
+# SMTP API configureren
 
 Naast de REST API heeft SMTPeter een traditionele SMTP API. Deze API is
 vooral nuttig als je e-mails wilt versturen met traditionele e-mailclients

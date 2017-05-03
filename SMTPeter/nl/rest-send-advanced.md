@@ -126,7 +126,7 @@ te geven, genaamd: "hosted". De "default" waarde doet vanzelfsprekend niets.
 
 ```json
 {
-    ...,
+    /* ..., */
     "images": "hosted"|"default"
 }
 ```

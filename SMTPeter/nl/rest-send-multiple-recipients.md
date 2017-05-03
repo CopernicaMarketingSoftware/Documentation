@@ -1,13 +1,12 @@
-# Een mail naar meerdere ontvangers versturen
+# Meerdere ontvangers
 
-Wanneer je dezelfde e-mail naar meerdere ontvangers wilt versturen, bijvoorbeeld
-wanneer er meerdere "to" of "cc" headers zijn, of wanneer je dezelfde mail wilt
-bcc-en, dan hoef je niet voor elke ontvanger een POST request te sturen.
+Het kan voorkomen dat je dezelfde e-mail naar meerdere ontvangers wilt versturen. 
+Bijvoorbeeld wanneer er meerdere "to" of "cc" headers zijn, of wanneer je dezelfde 
+e-mail wilt bcc-en. Je hoeft niet per se voor elke ontvanger een POST request te sturen.
 Je kunt in zo'n geval alle recipients die de e-mail moeten ontvangen in de
-mee te zenden JSON specificeren onder property "recipients". 
+mee te zenden JSON specificeren in de "recipients" property. 
 
-Een voorbeeld van een JSON waarbij de mail naar meerdere ontvangers verstuurd
-wordt is:
+Hieronder staat een voorbeeld van een JSON waarbij de e-mail naar meerdere ontvangers wordt verstuurd:
 
 ```json
 {
@@ -31,6 +30,6 @@ SMTPeter constateert dat er twee "to" velden zijn. Deze e-mail wordt vervolgens
 naar Alice, Bob en Charles gestuurd. Alice en Bob kunnen niet zien dat ook Charles 
 het bericht ontvangt. Charles wordt in dit geval dus ge-bcc'd.
 
-SMTPeter biedt ook de mogelijkheid om een gepersonaliseerde e-mails naar meerdere 
+SMTPeter biedt ook de mogelijkheid om een gepersonaliseerde e-mail naar meerdere 
 ontvangers te versturen. Wil je weten hoe je dat kunt doen? 
 [Personalisatie van e-mails](rest-send-personalize)

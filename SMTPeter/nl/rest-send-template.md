@@ -1,13 +1,14 @@
-# Emails op basis van templates
+# Versturen van templates
 
 Er zijn een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) hoe je data naar SMTPeter stuurt voor het versturen
 van een e-mail. Daarnaast kun je ook e-mails versturen met behulp van templates. 
 Het gebruik van templates heeft een aantal voordelen ten opzichte van de eerder 
-genoemde methodes. Zo kun je templates via de *drag-and-drop* editor 
-samenstellen. Bovendien kan je eenvoudig deze templates *responsive* maken. Dit betekent 
-dat de opmaak van de e-mail altijd aansluit op het device waarop de mail
-wordt geopend. Hierdoor ziet de e-mail er altijd goed uit!
+genoemde methodes. kun je templates via de HTML editor of *drag-and-drop* editor 
+samenstellen. Bovendien zijn deze templates gemaakt met de drag-and-drop editor
+ *responsive*. Dit betekent dat de opmaak van de e-mail altijd aansluit op het 
+ device waarop de e-mail wordt geopend. Hierdoor ziet de e-mail er altijd goed 
+ uit!
 
 
 ## Template ID's
@@ -45,11 +46,12 @@ of als echte JSON:
 
 ## Personaliseren van templates
 
-Net als wanneer je e-mails verstuurt waarbij je zelf de HTML of MIME genereert,
-kun je bij templates gebruik maken van personalisatiedata. Ook hier geldt
-dat wanneer je één recipient hebt je de data mee kan geven via de *data* 
-property, zoals in onderstaand voorbeeld:
-
+Het is bekend dat je zelf HTML en MIME kunt maken en mee kunt geven aan de API call. 
+De e-mails die je hebt gemaakt kunnen een groot scala aan personalisatiedata bevatten, 
+zoals eerder al is uitgelegd. Bij het gebruik van templates heb je ook de volledige 
+beschikking over het invoegen van personalisatiedata. In onderstaand voorbeeld wordt een 
+recipient gebruikt met tempalate 12. Vervolgens wordt in de "data" property de 
+personalisatiedata meegegeven. 
 ```json
 {
     "recipient":    "john@doe.com",
@@ -61,7 +63,7 @@ property, zoals in onderstaand voorbeeld:
 }
 ```
 
-Als je meerdere recipients hebt dan kun je de data per recipient toevoegen:
+Meerdere recipients? Voeg dan de data per recipient toe:
 
 ```json
 {
@@ -91,8 +93,8 @@ we je naar de onderstaand links.
 
 ## Onderdelen van de template overschrijven
 
-Als je templates maakt met de eenvoudige template editor, worden de deze onder 
-de motorkap als JSON opgeslagen. Dit kun je ook zien in de editor: er is een 
+Als je met onze tool templates maakt, worden de deze onder 
+de motorkap als JSON opgeslagen. Dit kun je ook zien in de eenvoudige template editor: er is een 
 optie in het menu om de JSON broncode van de template te bekijken en te bewerken.
 
 Als je via de API naar een template verwijst (in bovenstaande voorbeelden
@@ -133,11 +135,11 @@ te voegen:
 {
     "recipient":    "john@doe.com",
     "template":     12,
-    "attachments":  [{
+    "attachments":  {
         "data":         "base64-encoded data",
         "name":         "attachment.pdf",
         "type":         "application/pdf"
-    }]
+    }
 }
 ```
 
@@ -147,14 +149,14 @@ Of, als je wilt dat SMTPeter het attachment voor je downloadt:
 {
     "recipient":    "john@doe.com",
     "template":     12,
-    "attachments":  [{
-        "url":          "http://example.com/path/to/document.pdf",
-    }]
+    "attachments":  {
+        "url":          "http:://example.com/path/to/document.pdf"
+    }
 }
 ```
 
-Zoals hierboven al beschreven, worden de templates opgeslagen volgens 
-het JSON formaat van Copernica's [Responsive Email](https://www.responsiveemail.com) service. Op de speciale website over 
-Responsive Email vind je [uitgebreide documentatie](https://www.responsiveemail.com/json/top-level-properties) en voorbeelden 
-van alle properties, inclusief de opgesomde properties die via de 
-REST call mogen worden overschreven.
+De templates worden opgeslagen volgens het JSON
+formaat van Copernica's [Responsive Email](https://www.responsiveemail.com) service.
+Op de speciale website over Responsive Email vind je [uitgebreide documentatie](https://www.responsiveemail.com/json/top-level-properties) 
+en voorbeelden van alle properties, inclusief de opgesomde properties die via de REST 
+call mogen worden overschreven.
