@@ -9,7 +9,7 @@
     * [MIME door SMTPeter laten maken](rest-send-json)
     * [Meerdere ontvangers](rest-send-multiple-recipients)
     * [Personaliseren van e-mails](rest-send-personalize)
-    * [Versturen op basis van een template](rest-send-template)
+    * [Versturen van templates](rest-send-template)
     * [Geavanceerde verzendopties](rest-send-advanced)
     * [API respons](rest-api-respons)
 * [Verzenden via SMTP](smtp-api)
