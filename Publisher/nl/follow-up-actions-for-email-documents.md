@@ -9,7 +9,7 @@ zelf.
 
 Om een nieuwe opvolgactie te maken (of een bestaande te bewerken) kies
 je *Opvolgacties*... in het **Document menu**in het onderdeel
-**E-mailings**. Het zelfde kan via het tabblad '*Follow-ups*' bij het
+**E-mailings**. Hetzelfde kan via het tabblad '*Follow-ups*' bij het
 document.
 
 Aanleiding en gevolg

@@ -118,7 +118,7 @@ van SMARTY, verwijzen we je graag naar de onderstaand links.
 
 Weet je al dat je met SMTPeter ook templates kunt versturen? Dit scheelt een hoop 
 tijd en ziet er professioneel uit:
-[e-mail templates](rest-send-template) 
+[e-mailtemplates](rest-send-template) 
 
 
 * [Personalisatie gebruiken](personalization)

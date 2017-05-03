@@ -14,7 +14,7 @@ Lees in de documentatie van Google hoe je een [CNAME
 aanmaakt](http://support.google.com/blogger/bin/answer.py?hl=nl&answer=58317)
 onder jouw domein.
 
-### Domein koppelen
+## Domein koppelen
 
 Nadat je deze CNAME hebt gemaakt, koppel je het (sub)domein aan je
 website in Copernica.
