@@ -1,46 +1,14 @@
-# Follow-up Manager instellen
+# Follow-up Manager
 
 Als op een link in een mailing wordt geklikt, of als een andersoortige 
 gebeurtenis plaatsvindt, kan Copernica automatisch nieuwe acties uitvoeren 
-of inroosteren. Je kunt dus allerlei campagnes maken en automatische 
-opvolgacties instellen. Er zijn meerdere manieren om dit soort opvolgacties
-te maken:
+of inroosteren. Je kunt dus verschillende campagnes maken en automatische 
+opvolgacties instellen. Ook hier is er onderscheid tussen de (nieuwe) Marketing
+Suite en de (oude) Publisher. Geadviseerd wordt om gebruik te maken van de Marketing
+Suite, omdat het gebruiksgemak wel degelijk groter is dan bij de Publisher. Het gebruik
+van data-script attributen is voor de gevorderde gebruiker die met JavaScript zelf kan
+programmeren hoe er met inkomende clicks wordt omgegaan.
 
-* Via de [Follow-up Manager binnen de Marketing Suite](./follow-up-manager.md)
+* Via de [Follow-up Manager binnen de Marketing Suite](./follow-up-manager-ms.md)
 * Via de [Follow-up Manager binnen de Publisher](./follow-up-manager-publisher.md)
 * Door middel van het [data-script attribuut](./followups-scripting.md)
-
-
-## Follow-up Manager van de Marketing Suite
-
-Op dit moment is een drag-and-drop followup editor in ontwikkeling. Je kunt 
-hiermee op een makkelijke manier met je muis aan elke link en aan elke button
-makkelijk een opvolgactie hangen. Wil je dat een profiel wordt bijgewerkt als
-iemand ergens op klikt, of wil je een nieuwe mail versturen? Je kunt dit 
-makkelijk instellen met de [Follow-up Manager](./follow-up-manager-ms.md).
-
-
-## Follow-up Manager van de oude Publisher
-
-In de oude Publisher omgeving kun je ook opvolgacties invoeren. Dit 
-[oude systeem](./follow-up-manager-publisher.md) heeft geen scripting API en is dus niet 
-zo krachtig als het nieuwe systeem. Maar omdat het al heel wat jaren meegaat, en 
-er door de jaren heen veel verbeteringen aan zijn aangebracht, is het toch een 
-heel krachtige toolkit.
-
-
-## Het data-script attribuut
-
-Als je kunt programmeren, en optimaal van de kracht van Copernica gebruikt wilt
-maken, kun je ook gebruik maken van het [data-script attribuut](./followups-scripting.md). 
-Aan elke hyperlink in een mail kan een script worden gekoppeld 
-dat wordt uitgevoerd als op de link wordt geklikt. Dit is een heel krachtige manier
-om opvolgacties in te stellen, omdat je zelf kunt programmeren hoe met inkomende
-kliks wordt omgegaan.
-
-
-## Meer informatie
-
-* [Follow-up Manager binnen Marketing Suite](./follow-up-manager-ms.md)
-* [Follow-up Manager binnen Publisher](./follow-up-manager-publisher.md)
-* [Data-script attribuut](./followups-scripting.md)
