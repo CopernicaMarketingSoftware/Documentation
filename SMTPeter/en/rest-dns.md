@@ -65,7 +65,6 @@ recommendations in the following format:
         "value": "dmarcX.smtpeter.com"
     }
 ]
-
 ```
 
 The JSON holds an array with the DNS records that you should copy to your
