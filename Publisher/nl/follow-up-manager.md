@@ -9,6 +9,6 @@ Suite, omdat het gebruiksgemak wel degelijk groter is dan bij de Publisher. Het 
 van data-script attributen is voor de gevorderde gebruiker die met JavaScript zelf kan
 programmeren hoe er met inkomende clicks wordt omgegaan.
 
-* Via de [Follow-up Manager binnen de Marketing Suite](./follow-up-manager-ms.md)
-* Via de [Follow-up Manager binnen de Publisher](./follow-up-manager-publisher.md)
-* Door middel van het [data-script attribuut](./followups-scripting.md)
+* Met de [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
+* Met de [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
+* Met het [data-script attribuut](./followups-scripting.md)
