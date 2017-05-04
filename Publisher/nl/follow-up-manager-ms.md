@@ -1,35 +1,36 @@
-# Follow-Up Manager Marketing Suite
+# Follow-up Manager Marketing Suite
 
-De Follow-Up Manager is een gebruiksvriendelijke tool om geavanceerde campagnes te maken. 
+De Follow-up Manager is een gebruiksvriendelijke tool om geavanceerde campagnes te maken. 
 Doordat deze tool geïntegreerd is met de template editor kunnen er binnen 
 de editor geavanceerde en persoonlijke opvolgacties worden ontworpen. 
-De Follow-Up Manager kan je gebruiken als iemand op een element klikt, 
-bijvoorbeeld op een link, afbeelding, video of andere call-to-action.
+De Follow-up Manager kun je gebruiken als iemand op een element klikt. 
+Bijvoorbeeld op een link, afbeelding, video of een andere call-to-action.
 
-Je navigeert naar de followupmanager door in de template editor een 
+Je navigeert naar de Follow-up Manager door in de template editor een 
 CTA te selecteren waarvoor je een opvolgactie wilt gaan maken. Een 
-followup actie kan je op twee manieren maken, met de flowchart editor 
+follow-up actie kan je op twee manieren maken, met de flowchart editor 
 en met de script editor.
+
 
 ## Flowchart editor
 
-Binnen de flowchart editor kan je door verschillende boxen met elkaar 
-te combineren geavanceerde followup- en marketingcampagnes maken. 
-Met sommige boxen kun je met JavaScript extra functionaliteiten toevoegen. 
-De beschikbare objecten kun je [hier vinden](./followups-scripting). 
-Verder is onze flowchart editor ontworpen om campagnes te 
-maken met een duidelijk begin en eindpunt.
+Binnen de flowchart editor kun je, door verschillende boxen met elkaar 
+te combineren, geavanceerde marketingcampagnes maken. 
+Sommige boxen staan het toe om met JavaScript extra functionaliteiten toe te voegen. 
+De beschikbare objecten kun je [hier](./followups-scripting) vinden. 
 
-## Scripteditor
 
-De scripteditor kan je naast de flowchart editor gebruiken. 
+## Script editor
+
+De script editor is voor de ervaren gebruiker. Hier kun je namelijk zelf aan de slag
+met JavaScript om zo 
 Deze scripts worden (net als in de flowchart editor) 
 uitgevoerd op de servers van Copernica als er op de 
 link wordt geklikt. De beschikbare objecten 
-die je kan gebruiken kan je [hier vinden](./followups-scripting).
+vind je [hier](./followups-scripting).
+
 
 ## Meer informatie
 
-* [Opvolgacties](./followups)
-* [Follow-Up Manager Publisher](./follow-up-manager-publisher)
-* [Data-script object](./followups-scripting.md)
+* [Follow-up Manager](./follow-up-manager)
+* [Data-script attribuut](./followups-scripting.md)

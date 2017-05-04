@@ -9,7 +9,7 @@ iPhone, Samsung of gewoon op de computer. Met het gebruik van templates kun je
 ook gemakkelijk mooi uitziende e-mails samenstellen en personaliseren,
 waardoor je een doelgroep op de juiste manier kunt bereiken. Tot slot, er is 
 een verschil tussen de (nieuwe) Marketing Suite en de (oude) Publisher.
-In de kopjes hieronder wordt het verschil nader uiteengezet. 
+In de kopjes hieronder kun je navigeren naar de tool in kwestie en . 
 
 
 ## De Marketing Suite
@@ -17,16 +17,16 @@ In de kopjes hieronder wordt het verschil nader uiteengezet.
 Met de Marketing Suite stel je e-mails samen in een handomdraai. In de
 Marketing Suite vind je de *fancy* drag-and-drop editor, waarmee je 
 allerlei contentblokken in je e-mail kunt slepen. Denk bijvoorbeeld aan
-blokken voor afbeeldingen, tekst en buttons. Aan werkelijk alles is
-gedacht. Een andere handige tool is de Follow-up Manager. Hiermee creëer
-je op maat gemaakte campgnes die volledig automatisch van start gaan 
-als een klant op een bepaald element in je e-mails klikt. Dit moet je 
-natuurlijk nog wel eerst [instellen](./follow-up-manager.md). Als je klaar bent met het 
-aanmaken van je templates, kun je deze opslaan en op een later moment
-altijd weer gebruiken of aanpassen.
+blokken voor afbeeldingen, tekst en buttons. 
+Aan werkelijk alles is gedacht. Een andere handige tool is de Follow-up Manager. 
+Hiermee creëer je op maat gemaakte campgnes die volledig automatisch van 
+start gaan als een klant op een bepaald element in je e-mails klikt. Dit 
+moet je  natuurlijk nog wel eerst [instellen](./follow-up-manager.md). 
+Als je klaar bent met het aanmaken van je templates, kun je deze opslaan 
+en op een later moment altijd weer gebruiken of aanpassen.
 
 
-## Publisher
+## De Publisher
 
 Met de Publisher kun je ook templates maken en personaliseren. 
 Echter, de stappen om tot een mooie en werkende template te komen 
