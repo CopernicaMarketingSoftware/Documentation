@@ -9,7 +9,8 @@ iPhone, Samsung of gewoon op de computer. Met het gebruik van templates kun je
 ook gemakkelijk mooi uitziende e-mails samenstellen en personaliseren,
 waardoor je een doelgroep op de juiste manier kunt bereiken. Tot slot, er is 
 een verschil tussen de (nieuwe) Marketing Suite en de (oude) Publisher.
-In de kopjes hieronder kun je navigeren naar de tool in kwestie en . 
+In de kopjes hieronder kun je navigeren naar de tool in kwestie en nalezen
+wat het verschil precies inhoudt.
 
 
 ## De Marketing Suite
