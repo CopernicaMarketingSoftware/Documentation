@@ -16,7 +16,7 @@ en met de script editor.
 Binnen de flowchart editor kan je door verschillende boxen met elkaar 
 te combineren geavanceerde followup- en marketingcampagnes maken. 
 Met sommige boxen kun je met JavaScript extra functionaliteiten toevoegen. 
-De beschikbare objecten kun je [hier vinden](./followups-scripting.md). 
+De beschikbare objecten kun je [hier vinden](./followups-scripting). 
 Verder is onze flowchart editor ontworpen om campagnes te 
 maken met een duidelijk begin en eindpunt.
 
@@ -26,10 +26,10 @@ De scripteditor kan je naast de flowchart editor gebruiken.
 Deze scripts worden (net als in de flowchart editor) 
 uitgevoerd op de servers van Copernica als er op de 
 link wordt geklikt. De beschikbare objecten 
-die je kan gebruiken kan je [hier vinden](./followups-scripting.md).
+die je kan gebruiken kan je [hier vinden](./followups-scripting).
 
 ## Meer informatie
 
 * [Opvolgacties](./followups)
-* [Follow-Up Manager Publisher](./publisher-follow-up-manager)
+* [Follow-Up Manager Publisher](./follow-up-manager-publisher)
 * [Data-script object](./followups-scripting.md)
