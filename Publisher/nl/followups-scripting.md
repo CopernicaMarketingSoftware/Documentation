@@ -12,6 +12,7 @@ toe te voegen op een van de volgende manieren:
 * Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
 * Je kunt ze met de drag-and-drop editor invoeren. 
 
+
 ## Beschikbare objecten
 
 In het script kun je gebruik maken van verschillende voorgedefinieerde variabelen 
@@ -27,11 +28,14 @@ bijwerken. Hiervoor zijn de volgende globale variabelen beschikbaar:
 | [**destination**](./followups-scripting-destination)   | Ontvanger (profiel of subprofiel)    |
 | [**profile**](./followups-scripting-profile)           | Huidige profiel                      |
 
-Daarnaast is het nog mogelijk dat er een globale [**subprofile**](./followups-scripting-subprofile) variabele aanwezig is 
-met het subprofiel, mits deze mail naar een collectie of mini-selectie is verzonden.
+Daarnaast is het nog mogelijk dat er een globale [subprofile](./followups-scripting-subprofile) 
+variabele aanwezig is met het subprofiel, mits deze mail naar een collectie 
+of mini-selectie is verzonden.
 
 Al deze objecten hebben een eigen [data object](./followups-scripting-data) 
-dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer informatie en voorbeelden.
+dat je kunt gebruiken om zelf informatie op te slaan. Zie de link voor meer 
+informatie en voorbeelden.
+
 
 ## Een eenvoudig voorbeeld
 
@@ -52,8 +56,9 @@ attribuut wordt namelijk uit de mail gefilterd voordat het bericht wordt verstuu
 dit niet zichtbaar is voor de ontvanger. Maar Copernica slaat het script wel op en voert het 
 uit als op de link wordt geklikt.
 
+
 ## Meer informatie
 
-* [Followups algemeen](./follow-up-manager)
-* [Database klasse](./followups-scripting-database)
-* [Collectie klasse](./followups-scripting-collection)
+* [Follow-up Manager](./follow-up-manager)
+* [Database class](./followups-scripting-database)
+* [Collectie class](./followups-scripting-collection)
