@@ -37,6 +37,6 @@ kliks wordt omgegaan.
 
 ## Meer informatie
 
-* [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
-* [Follow-Up Manager Publisher](./publisher-follow-up-manager.md)
+* [Follow-up Manager Marketing Suite](./follow-up-manager-ms.md)
+* [Follow-up Manager Publisher](./follow-up-manager-publisher.md)
 * [Data-script object](./followups-scripting.md)

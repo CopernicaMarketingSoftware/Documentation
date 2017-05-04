@@ -21,7 +21,7 @@ blokken voor afbeeldingen, tekst en buttons. Aan werkelijk alles is
 gedacht. Een andere handige tool is de Follow-up Manager. Hiermee creëer
 je op maat gemaakte campgnes die volledig automatisch van start gaan 
 als een klant op een bepaald element in je e-mails klikt. Dit moet je 
-natuurlijk nog wel eerst [instellen](). Als je klaar bent met het 
+natuurlijk nog wel eerst [instellen](./follow-up-manager.md). Als je klaar bent met het 
 aanmaken van je templates, kun je deze opslaan en op een later moment
 altijd weer gebruiken of aanpassen.
 
@@ -37,10 +37,3 @@ documentatie over het werken met templates in de oude Publisher omgeving
 kun je hier terecht:
 
 * [Templates en documenten](templates-en-documenten)
-
-
-## Meer informatie
-
-* [Followups](./followups)
-* [Marketing Suite Follow-Up Manager](./follow-up-manager-ms)
-* [Template statistieken](./statistics-template)
