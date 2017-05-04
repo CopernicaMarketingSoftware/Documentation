@@ -6,7 +6,7 @@ bestand hebt voor de layout.
 
 ## Voorbeeld
 
-    {webform name="mywebform" xslt="mystyle"}
+`{webform name="mywebform" xslt="mystyle"}`
     
 Door deze regel toe te voegen voeg je het web formulier met de gegeven 
 naam toe in de stijl van de gegeven XSLT aan je template.

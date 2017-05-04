@@ -11,7 +11,7 @@ De template blijft te allen tijde intact en kan dus steeds opnieuw worden gebrui
 ## Hoe werkt het templatesysteem van de Publisher?
 
 Het templatesysteem van de oude Copernica Publisher is een stuk ingewikkelder
-dan het nieuwe systeem van Marketing Suite. Je moet zelf de HTML code van een
+dan het nieuwe systeem van de Marketing Suite. Je moet zelf de HTML code van een
 template invoeren en je moet zelf aangeven op welke plaatsen binnen de 
 template variabele teksten en afbeeldingen kunnen worden geplaatst.
 
@@ -41,27 +41,26 @@ template kunnen aanmaken en gebruiken voor mailings en campagnes.
 In de onderstaande artikelen kun je vinden hoe je templates aanmaakt, personaliseert
 en bewerkt:
 
-* [Aan de slag met templates](./getting-started-building-email-templates);
-* [Samenstellen van documenten](./composing-email-documents-in-copernica);
-* [Gebruik van de default template](./using-the-copernica-default-template);
-* [Gebruik van CSS stylesheets](create-custom-templates);
-* [Gebruik van tekstblokken in een document](./the-text-function-for-adding-textual-content-to-your-document);
-* [Gebruik van afbeeldingblokken in een document](./the-image-function-for-adding-images-to-your-document);
-* [Gebruik van "loop" blokken](./the-loop-function-to-iterate-content-in-your-email);
-* [Gebruik van feeds zoals Atom of RSS](./the-loadfeed-function);
-* [Gebruik van SMARTY personalisatie in je templates en documenten](./personalize-campaigns);
-* [Voeg unsubscribe link toe](./personalization-functions-unsubscribe);
-* [Voeg een e-mail tekst versie toe](./add-email-text-version);
-* [Beheer e-mail afbeeldingen en bestanden](./email-files-and-images);
-* [Instellen van het sender address, sender name, subject en andere e-mail headers](./sender-subject-and-other-email-headers);
-* [Personalisatie instellingen voor templates en documenten](./document-and-template-personalization-settings);
-* [Extra velden voor personalisatie](./extra-fields-for-personalizing);
-* [Link naar webforms en surveys](./personalization-functions-webform);
-* [Link naar gepersonaliseerde PDF-documenten](./personalization-functions-linkpdf);
-* [Track e-mail conversie in Google Analytics](./prepare-hyperlinks-for-google-analytics);
-* [Maak een responsive e-mail vanaf scratch](https://www.copernica.com/en/blog/how-to-create-a-responsive-html-email-from-scratch "How to create a responsive HTML email from scratch");
-* [Verstuur een test e-mail](./send-a-test-mail-or-test-mailing).
-
+* [Aan de slag met templates](./getting-started-building-email-templates)
+* [Samenstellen van documenten](./composing-email-documents-in-copernica)
+* [Gebruik van de default template](./using-the-copernica-default-template)
+* [Gebruik van CSS stylesheets](create-custom-templates)
+* [Gebruik van tekstblokken in een document](./the-text-function-for-adding-textual-content-to-your-document)
+* [Gebruik van afbeeldingblokken in een document](./the-image-function-for-adding-images-to-your-document)
+* [Gebruik van "loop" blokken](./the-loop-function-to-iterate-content-in-your-email)
+* [Gebruik van feeds zoals Atom of RSS](./the-loadfeed-function)
+* [Gebruik van SMARTY personalisatie in je templates en documenten](./personalize-campaigns)
+* [Voeg unsubscribe link toe](./personalization-functions-unsubscribe)
+* [Voeg een e-mail tekst versie toe](./add-email-text-version)
+* [Beheer e-mail afbeeldingen en bestanden](./email-files-and-images)
+* [Instellen van het sender address, sender name, subject en andere e-mail headers](./sender-subject-and-other-email-headers)
+* [Personalisatie instellingen voor templates en documenten](./document-and-template-personalization-settings)
+* [Extra velden voor personalisatie](./extra-fields-for-personalizing)
+* [Link naar webforms en surveys](./personalization-functions-webform)
+* [Link naar gepersonaliseerde PDF-documenten](./personalization-functions-linkpdf)
+* [Track e-mail conversie in Google Analytics](./prepare-hyperlinks-for-google-analytics)
+* [Maak een responsive e-mail vanaf scratch](https://www.copernica.com/en/blog/how-to-create-a-responsive-html-email-from-scratch "How to create a responsive HTML email from scratch")
+* [Verstuur een test e-mail](./send-a-test-mail-or-test-mailing)
 
 
 <!-- 

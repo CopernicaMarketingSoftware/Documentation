@@ -17,7 +17,7 @@
 * [Templates](./templates)
     * [Personaliseren](./personalization.md)
     * [Scripting en followups](./followups.md)
-    * [Follow-Up Manager](./follow-up-manager.md)
+    * [Follow-Up Manager](./followups.md)
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)
     * [Statistieken exporteren](./statistics-export)
