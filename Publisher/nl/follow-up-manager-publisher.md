@@ -1,4 +1,4 @@
-# Follow-Up Manager Publisher
+# Follow-up Manager Publisher
 
 De Follow-Up Manager biedt een handig overzicht van alle ingestelde
 opvolgacties op een database, collectie, document, enquete of
@@ -34,5 +34,5 @@ aangepast door op de oorzaak, wachtijd of op de actie zelf te klikken.
 
 ## Meer informatie
 
-* [Opvolgacties](./followups)
-* [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
+* [Follow-up Manager](./follow-up-manager.md)
+* [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)

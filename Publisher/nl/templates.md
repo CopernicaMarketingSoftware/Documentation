@@ -18,13 +18,16 @@ wat het verschil precies inhoudt.
 Met de Marketing Suite stel je e-mails samen in een handomdraai. In de
 Marketing Suite vind je de *fancy* drag-and-drop editor, waarmee je 
 allerlei contentblokken in je e-mail kunt slepen. Denk bijvoorbeeld aan
-blokken voor afbeeldingen, tekst en buttons. 
-Aan werkelijk alles is gedacht. Een andere handige tool is de Follow-up Manager. 
-Hiermee creëer je op maat gemaakte campgnes die volledig automatisch van 
-start gaan als een klant op een bepaald element in je e-mails klikt. Dit 
-moet je  natuurlijk nog wel eerst [instellen](./follow-up-manager.md). 
-Als je klaar bent met het aanmaken van je templates, kun je deze opslaan 
-en op een later moment altijd weer gebruiken of aanpassen.
+blokken voor afbeeldingen, tekst en buttons. Aan werkelijk alles is 
+gedacht en dat merk je aan het gebruiksgemak. De drag-and-drop editor
+behoeft geen verdere documentatie, aangezien de interface dusdanig 
+intuitief is. Een andere handige tool, die beschikbaar is binnen de 
+Marketing Suite, is de Follow-up Manager. Hiermee creëer je op maat 
+gemaakte campgnes die volledig automatisch van start gaan als een klant 
+op een bepaald element in je e-mails klikt. Dit moet je natuurlijk nog 
+wel eerst [instellen](./follow-up-manager-ms.md). Als je klaar bent met 
+het aanmaken van je templates, kun je deze opslaan en op een later 
+moment altijd weer gebruiken of aanpassen.
 
 
 ## De Publisher
@@ -34,7 +37,7 @@ Echter, de stappen om tot een mooie en werkende template te komen
 zijn in tegenstelling tot de Marketing Suite ietwat omslachtig en 
 gecompliceerd. Vandaar dat we al onze nieuwe gebruikers adviseren 
 om met de (nieuwe) Marketing Suite te gaan werken. Voor de uitgebreide 
-documentatie over het werken met templates in de oude Publisher omgeving
+documentatie over het werken met templates, in de oude Publisher omgeving,
 kun je hier terecht:
 
 * [Templates en documenten](templates-en-documenten)
