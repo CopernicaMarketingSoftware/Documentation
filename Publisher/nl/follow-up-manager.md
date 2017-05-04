@@ -1,4 +1,4 @@
-# Opvolgacties instellen
+# Follow-up Manager instellen
 
 Als op een link in een mailing wordt geklikt, of als een andersoortige 
 gebeurtenis plaatsvindt, kan Copernica automatisch nieuwe acties uitvoeren 
@@ -8,7 +8,7 @@ te maken:
 
 * Via de [Follow-up Manager binnen de Marketing Suite](./follow-up-manager.md)
 * Via de [Follow-up Manager binnen de Publisher](./follow-up-manager-publisher.md)
-* Door middel van [data-script attribuut](./followups-scripting.md) voor als je zelf kunt programmeren
+* Door middel van het [data-script attribuut](./followups-scripting.md)
 
 
 ## Follow-up Manager van de Marketing Suite

@@ -1,3 +1,5 @@
+# Personaliseren binnen de Marketing Suite
+
 In de drag-and-drop editor van de [Copernica Marketing
 Suite](https://ms.copernica.com "ga naar de Marketing Suite") stel je
 gemakkelijk nieuwsbrieven samen. Deze nieuwsbrieven zijn net als de oude
@@ -35,10 +37,12 @@ Copernica. Dit kon bijvoorbeeld door de voornaam van een persoon,
 opgeslagen in het profielveld Voornaam, ophalen door in het
 e-mailbericht *{\$Voornaam}* te noteren:
 
-    Beste {$Voornaam}
+```text
+Beste {$Voornaam}
+```
 
 Op deze manier vervangt de data onder het veld 'Voornaam' bij de
-ontvanger de {\$Voornaam} Smarty-code. De ontvanger krijgt dan de
+ontvanger de `{\$Voornaam}` Smarty-code. De ontvanger krijgt dan de
 voornaam die hij of zij heeft doorgegeven te zien in het e-mailbericht.
 
 In de drag-and-drop editor werkt dit iets anders: er moet namelijk
@@ -49,10 +53,12 @@ mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren. Dit was al mogelijk in de HTML-editor,
 maar het was niet nodig om dit te specificeren als er alleen gegevens
 uit een profiel gehaald werden. Om een voornaam weer te geven in de
-drag-and-drop editor moet er dus in plaats van {\$Voornaam} de volgende
+drag-and-drop editor moet er dus in plaats van `{\$Voornaam}` de volgende
 code geschreven worden:
 
-    Beste {$profile.Voornaam}
+```text
+Beste {$profile.Voornaam}
+```
 
 Het is dus maar een klein verschil met de personalisatie in de
 HTML-editor. Het is echter belangrijk dat hier rekening mee wordt
@@ -60,8 +66,8 @@ gehouden. Wanneer er niet gespecificeerd wordt of een veldwaarde uit een
 profiel of subprofiel komt, wordt de personalisatie in de drag-and-drop
 editor namelijk niet toegepast.
 
-Andere personalisatiemogelijkheden
-----------------------------------
+
+## Andere personalisatiemogelijkheden
 
 Uiteraard is het ook mogelijk andere soorten personalisatie en meer
 geavanceerde Smarty-codes toe te passen. Alle Smarty-code die in de
@@ -76,18 +82,18 @@ bijvoorbeeld mogelijk om de aanbieding weglaten voor personen die de
 smartphone al hebben aangeschaft. Aan de ontvangers die de smartphone al
 hebben gekocht kan een alternatieve aanbieding getoond worden:
 
-Waar kan ik personaliseren in de drag-and-drop editor
------------------------------------------------------
+
+## Waar kan ik personaliseren in de drag-and-drop editor
 
 In de drag-and-drop editor in de Copernica Marketing Suite kan je naast
 in de tekstvelden ook op vele andere plaatsen personalisatie toepassen.
-Deze velden zijn te herkennen aan het Dollar (\$) teken in het
+Deze velden zijn te herkennen aan het Dollar `(\$)` teken in het
 input-veld. Zo kan je bijvoorbeeld de 'from name', het onderwerp, maar
 ook het 'from adres' aanpassen door in deze velden Smarty-code toe te
 passen.
 
-Verdere ontwikkelingen
-----------------------
+
+## Verdere ontwikkelingen
 
 Op dit moment is het nog niet mogelijk om in de drag-and-drop editor
 volledige contentblokken (zoals tekstblokken of afbeeldingsblokken) weg
