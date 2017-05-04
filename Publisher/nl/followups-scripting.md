@@ -54,6 +54,6 @@ uit als op de link wordt geklikt.
 
 ## Meer informatie
 
-* [Followups algemeen](./followups)
+* [Followups algemeen](./follow-up-manager)
 * [Database klasse](./followups-scripting-database)
 * [Collectie klasse](./followups-scripting-collection)
