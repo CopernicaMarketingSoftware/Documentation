@@ -9,7 +9,8 @@ opvolgacties aan te maken en bestaande opvolgacties te bewerken.
 
 **Afbeelding:***een database met hieraan een heel web aan opvolgacties*
 
-### Waar vind ik de Follow-Up Manager?
+
+## Waar vind ik de Follow-up Manager?
 
 Je vindt de followupmanager achter een extra tab bij de database,
 document, formulier of enquete.
@@ -21,7 +22,8 @@ profiel is aangemaakt wordt automatisch een e-mail verzonden naar het
 profiel. Wanneer een profiel wordt gewijzigd, wordt het profiel na 5
 dagen automatisch verwijderd.*
 
-### Nieuwe opvolgactie maken
+
+## Nieuwe opvolgactie maken
 
 Vanuit het overzicht kan je direct nieuwe opvolgacties aanmaken door op
 de blauwe hyperlink in de gele melding te klikken. Je belandt dan in het
@@ -31,6 +33,7 @@ of enquete.
 
 Bestaande opvolgacties kunnen vanuit het overzicht gemakkelijk worden
 aangepast door op de oorzaak, wachtijd of op de actie zelf te klikken.
+
 
 ## Meer informatie
 
