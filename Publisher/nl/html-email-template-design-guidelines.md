@@ -109,7 +109,7 @@ colspan en rowspan te voorkomen.
 Pseudo classes worden veel gebruikt om het uiterlijk van bijvoorbeeld
 hyperlinks manipuleren. Met het gebruik van pseudo classes kun je in dit
 voorbeeld bijvoorbeeld de onderstreping van een hyperlink verwijderen.
-Dit is alleen niet mogelijk in e-mail templates.
+Dit is alleen niet mogelijk in e-mailtemplates.
 
 ![linkstylinginline.png](../images/pseudoclasses.png)
 
@@ -216,7 +216,7 @@ Een aantal nuttige referenties:
 
     [http://msdn.microsoft.com/en-us/library/aa338201.aspx](http://msdn.microsoft.com/en-us/library/aa338201.aspx)
 3.  **CSS and email, kissing in a tree**\
-     Artikel over het gebruik van CSS inline stijl in e-mail templates\
+     Artikel over het gebruik van CSS inline stijl in e-mailtemplates\
 
     [http://www.alistapart.com/articles/cssemail/](http://www.alistapart.com/articles/cssemail/)
 
