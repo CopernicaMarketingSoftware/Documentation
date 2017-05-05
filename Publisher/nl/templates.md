@@ -26,8 +26,8 @@ template editor, in de Marketing Suite, kun je hier terecht:
 ## De Publisher
 
 De Publisher hanteert, zoals eerder is aangegeven, een andere manier om 
-tot een mooie en werkende template te komen. In tegenstelling tot de 
-Marketing Suite is dit ietwat omslachtig en gecompliceerd. 
+tot een mooie en werkende template te komen. In vergelijking met Marketing 
+Suite is de aanpak wat technischer en moeilijker.
 Vandaar dat we al onze nieuwe gebruikers adviseren om met de (nieuwe) 
 Marketing Suite te gaan werken. De Publisher heeft door de jaren heen 
 wel een hoop geoptimaliseerde functionaliteiten gekregen, die in de 
