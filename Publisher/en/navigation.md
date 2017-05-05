@@ -31,7 +31,7 @@
     * [SPF records](./spf.md)
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
-* Tips and tricks
+* [Tips and tricks](./tips-and-tricks)
     * [Deliverability](./deliverability)
     * [Spam score](./some-tips-to-lower-your-email-spam-score)
 * [Publisher only features](./publisher-only)
