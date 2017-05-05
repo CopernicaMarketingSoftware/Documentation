@@ -20,33 +20,33 @@ score is larger than 5, you cannot send the message at all.
 Here are some quick wins to lower your spam score
 -------------------------------------------------
 
-**Create a text version**\
+**Create a text version**
  The email message should have a text version. The textual content of it
-should not completely differ from the HTML message.\
-\
-**Avoid usage of spam sensitive words and phrases**\
+should not completely differ from the HTML message.
+
+**Avoid usage of spam sensitive words and phrases**
  Avoid words like Cialis, Levitra, soma, valium, Xanax, talks about
 price per dose, mentions of other drugs and their chemical names,
 pharmacy, Viagra, fast delivery, attempts to disguise words like Viagra
 and porn. In short: avoid all words that spammers also frequently use.
-Do not disguise words, or use misspellings of forbidden words. \
-\
-**Use normal texts inside hyperlinks, instead of the URL**\
+Do not disguise words, or use misspellings of forbidden words.
+
+**Use normal texts inside hyperlinks, instead of the URL**
  Do not create hyperlinks that have the URL between the opening and
 closing tag, because some email clients interpret this as a phishing
-attempt. \
-\
- Example: \
+attempt.
+
+ Example:
 `<a  href="http://www.google.com">http://www.google.com</a>   <a  href="http://www.google.com">www.google.com</a>`\
-\
+
  Because the original link is replaced by our pic server domain
 (http://pic.vicinity...) the link will be blocked because email clients
-will find this discrepancy misleading to subscribers. \
+will find this discrepancy misleading to subscribers.
  Better do something like this:
 
-`<a  href="http://www.google.com">Click here to visit a great search  engine</a>`\
-**\
- Use a proper from address**
+`<a  href="http://www.google.com">Click here to visit a great search  engine</a>`
+
+**Use a proper from address**
 
 -   Do not end your from address name with digits (e.g., do not use
     info123@yourcompany.com.

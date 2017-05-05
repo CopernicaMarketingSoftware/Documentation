@@ -48,9 +48,6 @@ uw HTML-code kunnen leiden tot problemen bij het weergeven van de
 e-mail. Dit resulteert in foutmeldingen of een verkeerde indeling van uw
 e-mail bij de ontvangende mailserver.
 
-Copernica Marketing Software biedt de mogelijkheid nog voor verzending
-de HTML-broncode op fouten te controleren.
-
 SPAM & blacklist check
 ----------------------
 
@@ -63,7 +60,7 @@ Een belangrijk hulpmiddel bij het optimaliseren van uw deliverability.
 Daarnaast controleren de Copernica mailservers continu of zij ervan
 verdacht worden spam uit te sturen. Voor deze controle staan de
 mailservers van Copernica in verbinding met een aantal organisaties die
-hierover waken Return Path,
+hierover waken (Return Path,
 Lashback, Listbox,e.a.).
 
 Verbeteren van e-mailreputatie
