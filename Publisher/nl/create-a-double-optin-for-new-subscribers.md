@@ -8,8 +8,8 @@ verder en geeft je de garantie dat aanmelders zichzelf daadwerkelijk
 hebben aangemeld en met een bestaand e-mailadres.
 
 Let op: Deze tutorial laat alleen zien hoe je dit kunt doen vanuit Publisher. 
-Je kunt in Marketing Suite hetzelfde bereiken met [followups](./followups), 
-maar deze zullen anders werken.
+Helaas werkt deze tutorial niet voor Marketing Suite, omdat webformulieren 
+hier nog niet bestaan.
 
 Hoe werkt dubbele optin?
 ------------------------
@@ -30,7 +30,7 @@ zijn enkele zusje:
 -   Dit lijdt tot significant minder fouten bij het versturen van
     e-mails
 -   Dit verbetert uiteindelijk de deliverability.
--   De database blijft schoon en bestaat louter uit mensen die
+-   De database blijft schoon en bestaat alleen uit mensen die
     daadwerkelijk een nieuwsbrief willen ontvangen
 
 ### De dubbele optin werkt als volgt:
@@ -45,7 +45,7 @@ zijn enkele zusje:
     ook nog wat verwijzingen naar interessante artikelen / producten op
     jouw website.
 
-### Voor het maken van een dubbele optin dien je over het volgende te beschikken
+### Benodigdheden
 
 Een database met hierin een meerkeuzeveld opgenomen voor
 nieuwsbriefvoorkeur en uiteraard een veld waarin het e-mailadres zal
@@ -73,7 +73,7 @@ te zijn (zodat het systeem weet dat dit veld de adressen bevat).
 Van het veld voor nieuwbriefvoorkeur maak je een meerkeuzeveld met de
 volgende opties voorgedefinieerd:
 
--   [lege optie]
+-   *lege optie*
 -   Nee
 -   Ja, niet bevestigd
 -   Ja, bevestigd
@@ -99,7 +99,7 @@ Dit wordt een aanmeldformulier met hierin **twee velden** opgenomen.
 
 Let op, omdat er straks een automatische e-mail moet worden verstuurd
 naar de invuller, gebruikt je bij de formulierinstellingen ‘inloggen als
-profiel uit de database [database]
+profiel uit de database'
 
 Plaats het webformulier op webpagina 1, en zorg dat de vervolgpagina van
 het webform een webpagina is waarop je vermeldt dat een bevestigingsmail
@@ -153,4 +153,7 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 ## Meer informatie
 
 - [Followups](./followups)
-- [Selecties/Collecties](./selections-introduction)
+* [Selectie condities](./selections-conditions)
+* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
+* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)

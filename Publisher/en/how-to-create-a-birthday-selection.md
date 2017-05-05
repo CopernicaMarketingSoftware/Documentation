@@ -14,4 +14,9 @@ serve the purpose of the selection).
 4. Save it, and plan a daily mailing to this selection to congratulate 
 your customers on their birthday!
 
-[Back to selection rules](./selections-conditions)
+## More information 
+
+* [Selection conditions](./selections-conditions)
+* [Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
+* [Create a newsletter selection](./create-a-mailing-list)
+* [Automatically process email bounces](./automatically-process-email-bounces)
