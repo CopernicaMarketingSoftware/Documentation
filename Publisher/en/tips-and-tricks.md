@@ -9,3 +9,4 @@ more on the software and how to use it.
 * [Deliverability](./deliverability)
 * [Lowering your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Reducing HTML errors](./reducing-html-errors)
+* [Selections optimization](./selections-optimization)

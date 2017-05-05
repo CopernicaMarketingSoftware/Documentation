@@ -10,3 +10,4 @@ ingaan op de software.
 * [Aflevering van mails](./deliverability)
 * [Spam score verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
+* [Selecties optimalizeren en sneller maken](./selections-optimization)
