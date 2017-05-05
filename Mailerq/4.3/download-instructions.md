@@ -33,10 +33,11 @@ You can enter the following instructions to add our repository to your
 software list, and to download and install MailerQ.
 
 ```
-wget -O- http://packages.copernica.com/copernica.key | sudo apt-key add -
-echo "deb http://packages.copernica.com/debian stable main" | sudo tee /etc/apt/sources.list.d/copernica.list
-sudo apt-get update
-sudo apt-get install mailerq
+$ wget http://packages.copernica.com/copernica.key
+$ sudo apt-key add copernica.key 
+$ rm copernica.key
+$ sudo apt-get update
+$ sudo apt-get install mailerq
 ```
 
 Watch out: if you're on Debian 6 or Debian 7, make sure you replace the 
