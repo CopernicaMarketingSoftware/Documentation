@@ -33,6 +33,7 @@
     * [DMARC records](./dmarc.md)
 * Tips en tricks
     * [Email aflevering](./deliverability)
+    * [Verlaag je spam score](./some-tips-to-lower-your-email-spam-score)
 * [Publisher exclusief](./publisher-only)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
