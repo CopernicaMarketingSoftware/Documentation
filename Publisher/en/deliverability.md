@@ -115,14 +115,6 @@ same person who will be receiving the emails. You will not be sending to
 non-existing email addresses. It also keeps your database clean. See also 
 the [tutorial on creating a double opt-in](./create-a-double-optin-for-new-subscribers.md).
 
-**Remove erroneous email address**
-
-Email addresses that keep bouncing can better be removed from your
-database or removed from the selection that you use to send your
-mailings to. This process can also be automated. Copernica can in some
-cases repair those erroneous email addresses for you, with the 
-[automatic repair functionality](./automatically-repair-invalid-email-addresses.md).
-
 **Create the lowest possible spam score**
 
 Spam filters and email service providers test incoming mails to
