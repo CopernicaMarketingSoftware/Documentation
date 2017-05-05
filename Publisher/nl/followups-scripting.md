@@ -1,16 +1,23 @@
 # Het gebruik van data-scripts
 
-Als je zelf je eigen mailings programmeert, dan kun je gebruik maken van
-JavaScript (data-scripting) om allerlei opvolgacties aan hyperlinks te 
-koppelen. Deze scripts worden door Copernica uitgevoerd, zodra iemand op
+Voordat we beginnen met het uitleggen van data-scripts, is het goed om te weten
+dat je data-scripts alleen kunt gebruiken met het **nieuwe link tracking system**.
+Dit nieuwe systeem is vanaf de ontwikkeling opgenomen binnen de Marketing Suite 
+en hoef je daardoor dus niet te activeren. In de Publisher is het nieuwe link
+tracking systeem niet automatisch geactiveerd. Als je gebruik wilt maken 
+van dit systeem, kun je dat handmatig activeren.
+
+Het wordt aangeraden om data-scripts te gebruiken als je zelf je eigen mailings 
+programmeert. Met data-scripts kun je allerlei opvolgacties aan hyperlinks koppelen.
+Deze scripts worden door Copernica uitgevoerd, zodra iemand op
 zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde als de scripts die je 
 in een "onclick" attribuut van een hyperlink plaatst, met een belangrijk 
 verschil: de scripts worden niet door de browser uitgevoerd, maar op de 
 servers van Copernica. In de marketing Suite hoef je alleen maar data-scripts
 toe te voegen op een van de volgende manieren:
 
-* Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag.
-* Je kunt ze met de drag-and-drop editor invoeren. 
+* Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag;
+* Je kunt ze met de drag-and-drop editor invoeren.
 
 
 ## Beschikbare objecten
