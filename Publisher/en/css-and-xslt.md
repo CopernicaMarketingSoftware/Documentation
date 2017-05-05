@@ -1,4 +1,4 @@
-# CSS and XSLT in Copernica
+# CSS and XSLT in Publisher
 
 Designers that work with CSS and XSLT get very happy when they work with
 Copernica. You see, all publications you create with our software can be
@@ -9,25 +9,6 @@ The **Style** component in Copernica is fully equipped for creating and
 managing your own style sheets and XSLT files.
 
 ![](../images/new-xslt.png)
-
-Table of contents
------------------
-
-### CSS stylesheets
-
--   [What can i do with CSS](#what-can-i-do-with-css)
--   [Create and manage new and existing stylesheets](#use-a-css-stylesheet-to)
--   [Easily test your stylesheet on a webform, survey or web feed](#create-and-manage-your-own-stylesheets)
--   [Link your stylesheet to a template, document or web page](#link-your-stylesheet-to-a-template-document-or-web-page)
--   [Using CSS in your emailings](#using-css-in-your-emailings)
-
-### XSLT in Copernica
-
--   [What is XSLT](#what-is-xslt)
--   [How does XSLT work](#xslt-in-practice)
--   [Create your own XSLT](#create-your-own-xslt)
--   [XSLT resources](#xslt-resources)
--   [Link your XSLT to a webform, feed or survey](#link-your-xslt-to-a-webform-feed-or-survey)
 
 Using stylesheets in Copernica
 ------------------------------
@@ -51,11 +32,6 @@ can edit as much as you like. They're equipped with /\* clear commentary
 -   Give a web form text field those neat rounded borders
 -   Et cetera.
 
-The software uses a default CSS file to display web forms, surveys and
-content feeds created within the software. You are of course free to
-edit these style sheets to manipulate the appearance of your web form,
-feed or survey.
-
 ### Create and manage your own stylesheets
 
 Web forms, feeds, surveys always have a default style sheet. If you wish
@@ -63,13 +39,11 @@ to modify their rules, or create your own style sheet, you can do so
 under **Style**. The default style sheets come with lots of comments
 that will help you modifying it. Note that a stylesheet is not linked to
 a web form, but to the web page or template whereon you have published
-it. You can [link a style
-sheet](./email-templates-and-css-stylesheets.md) to
+it. You can link a style sheet to
 the page, document or template through its context menu. The same
 applies to stylesheets for surveys and feeds.
 
-Further reading: [Manage CSS stylesheet
-files](./manage-css-stylesheet-files.md)
+Further reading: [Manage CSS stylesheet files](./manage-css-stylesheet-files.md)
 
 ### Link your stylesheet to a template, document or web page
 
@@ -117,9 +91,6 @@ internet browser: HTML. So, what can you do with XSLT?
 -   Give an image a CSS class
 -   The publish date of an article should not appear in the HTML
     document. The author of the article must appear below the article.
--   [Remove the
-    \#-sign ](./working-with-css-and-xslt-a-brief-introduction.md)that
-    is placed before each survey question.
 -   Et cetera….
 
 ![](../images/xslt-image.png)
@@ -143,7 +114,6 @@ a CSS class. Whenever the field is required, an asterisk is placed
 behind the field.
 
     <!-- Add a label in front of the input field -->  <div class="label">     <xsl:value-of select="label" />     <div class="colon">:</div>     <xsl:if test="required = 'yes'"><div class="required">*</div></xsl:if>  </div>
-                    
 
 ### Create your own XSLT
 
@@ -166,9 +136,7 @@ Creating a new XSLT file is fairly simple.
 
 As opposed to CSS, XSLT programming is quite complex, and requires
 specific knowledge. Much can be found on the internet about XSLT's,
-since it is a standard technology. For example
-[http://www.w3schools.com/xsl/](http://www.w3schools.com/xsl/) provides
-a comprehensive starters guide.
+since it is a standard technology.
 
 ### Link your XSLT to a webform, feed or survey
 
@@ -177,4 +145,9 @@ publication where you have created the XSLT for. This is done by adding
 the *xslt=* parameter to the tag to publish the webform, survey or web
 feed.
 
-> `{feed name=my_feed xslt=myxslt}                     {survey name=my_survey xslt=myxslt}                     {webform name=my_webform xslt=myxslt}`
+> `{feed name=my_feed xslt=myxslt}     {survey name=my_survey xslt=myxslt}     {webform name=my_webform xslt=myxslt}`
+
+## More information
+
+* [Publisher only functions](./publisher-only)
+* [Managing stylesheets](./manage-css-stylesheet-files)
