@@ -34,6 +34,7 @@
 * [Tips en tricks](./tips-and-tricks)
     * [Email aflevering](./deliverability)
     * [Verlaag je spam score](./some-tips-to-lower-your-email-spam-score)
+    * [Verminder HTML fouten](./reducing-html-errors)
 * [Publisher exclusief](./publisher-only)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
