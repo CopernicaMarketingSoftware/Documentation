@@ -11,10 +11,10 @@ handig zijn bij het creëren van je e-mailtemplates.
 
 ## Extend hyperlinks
 
-Binnen de template editor kun je gebruik maken van "extended hyperlinks".
-Voeg de benodigde informatie (tags) toe om uit te vinden hoe je klanten 
-naar je website navigeren. Je kunt ook kiezen voor de custom optie en op
-je eigen tags meegeven om data te verwerken. 
+Binnen de template editor kun je gebruik maken van "extend hyperlinks".
+Voeg de benodigde informatie (tags) toe om uit te vinden hoe klanten op 
+bepaalde links en e-mails reageren. Je kunt ook kiezen voor de custom 
+optie en op je eigen tags meegeven om data te verwerken. 
 
 
 ## CSS automatisch inline
@@ -38,9 +38,8 @@ wat er is veranderd op het moment dat het scherm werd afgesloten.
 ## Responsive templates
 
 Templates die worden aangemaakt (en gebruikt) binnen de Marketing Suite zijn
-automatisch responsive, zodat ze op elk apparaat en/of besturingssysteem 
-op een goede manier worden weergegeven. Onder de motorkap zijn de gecreëerde 
-templates namelijk JSON bestanden. Door onze geavanceerde [Responsive Email](www.responsiveemail.com)
+automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk 
+JSON bestanden. Door onze geavanceerde [Responsive Email](www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
