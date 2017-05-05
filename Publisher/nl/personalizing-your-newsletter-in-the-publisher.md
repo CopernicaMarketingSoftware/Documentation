@@ -130,6 +130,7 @@ Op een paar plekken kun je echter momenteel nog geen gebruik maken van personali
 * In enquêtes
 * In content feeds
 
+
 ## Verder lezen
 
 * [Overzicht van variabelen](./personalization-variables.md)
