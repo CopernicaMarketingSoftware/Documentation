@@ -34,7 +34,7 @@ vinden in de onderstaande onderwerpen.
 -   [Deliverability optimaliseren](./the-key-ingredients-for-a-good-deliverability.md)
 -   [RSS en Atom feed maken en publiceren](./rss-and-atom-feeds.md)
 -   [Overzicht van beschikbare functies en invoegcodes](./special-functions-and-tags.md)
--   [Campagneresultaten bekijken en delen (./statistics.md)
+-   [Campagneresultaten bekijken en delen](./statistics.md)
 -   [Print, PDF en fax](./print-pdf-and-fax.md)
 -   [Campagnes automatiseren met opvolgacties](./followups.md)
 -   [Campagnes personaliseren](./personalization.md)
