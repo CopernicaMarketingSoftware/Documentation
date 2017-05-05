@@ -121,3 +121,7 @@ address).
 
 If things are not perfect, an extra property "remarks" is added that holds
 human readable messages with improvement suggestions per record.
+
+## More information
+
+- [Getting started with SMTPeter](./introduction)
