@@ -31,6 +31,8 @@
     * [SPF records](./spf.md)
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
+* Tips en tricks
+    * [Email aflevering](./deliverability)
 * [Publisher exclusief](./publisher-only)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
