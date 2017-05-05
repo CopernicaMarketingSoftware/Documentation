@@ -37,8 +37,7 @@ Smarty:
 
 * Houd het veilig en door de `escape` toe te passen op variabelen;
 * SMARTY is *hooflettergevoelig*. `{$name}` is dus wat anders dan `{$NAME}`;
-* Accolades gebruiken als symbool kan met [rdelim en ldelim](./personalization-functions-delim) 
-of [literal](./personalization-functions-literal).
+* Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
 
 
 ## Escapen van variabelen
@@ -85,10 +84,6 @@ Als je accolades in een template of een document wilt opnemen die niet als Smart
 code hoeven te worden herkend, dan kun je dit op twee manieren doen: door {ldelim} en
 {rdelim} te gebruiken, of door van {literal} en {/literal} gebruik te maken.
 
-De {ldelim} en {rdelim} (de namen zijn afgeleid *left delimiter* en *right delimiter*)
-tags kun je gebruiken om accolades te gebruiken zonder dat deze door de Smarty 
-engine worden opgepikt als personalisatievariabelen. Als je bijvoorbeeld een 
-}-) smiley in een mailing wilt opnemen, gebruik je hiervoor {rdelim}-).
 
 Om voor een groot stuk HTML code de Smarty engine uit te schakelen kun je {literal}
 en {/literal} gebruiken. Alle tekst die tussen {literal} en {/literal} staat wordt
@@ -111,6 +106,7 @@ Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personali
 Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf 
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
+
 
 ## Waar kan je Smarty personalisatie gebruiken?
 

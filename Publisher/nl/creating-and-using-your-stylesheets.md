@@ -11,8 +11,8 @@ leeg bestand. Het voorbeeldbestand is voorzien van uitgebreide
 becommentariering over de CSS classes en regels, en hoe deze kunnen
 worden aangepast.
 
-De stylesheet testen met je formulier, enquête of feed
-------------------------------------------------------
+
+## De stylesheet testen met je formulier, enquête of feed
 
 In het onderdeel **Content** kan je een eigen stylesheet testen met je
 formulier, enquête of feed. Klik hiervoor op het item waarvoor je de
@@ -22,8 +22,8 @@ toegepast worden op het het formulier, de enquête of feed.
 
 ![Preview style or xslt](../images/previewstyleorxslt.jpg)
 
-De stylesheet koppelen aan een template of document
----------------------------------------------------
+
+## De stylesheet koppelen aan een template of document
 
 Een stylsheet koppel je aan een document, template, webtemplate of web
 pagina. Je kan geen stylesheets koppelen aan losse webformulieren,
