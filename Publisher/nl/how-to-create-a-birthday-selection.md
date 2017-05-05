@@ -16,4 +16,9 @@ te zijn, anders kijken we alleen naar de mensen die vandaag geboren zijn.
 in naar deze selectie, deze updaten we namelijk vanzelf. Vanaf nu krijgen je 
 klanten een mailtje op de verjaardag die ze hebben ingevoerd.
 
-[Terug naar selectie condities](./selections-conditions)
+## Meer informatie
+
+* [Selectie condities](./selections-conditions)
+* [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
+* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)

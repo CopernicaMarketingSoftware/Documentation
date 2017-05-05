@@ -69,3 +69,6 @@ die deze willen ontvangen.
 * [Selecties](./selections-introduction)
 * [Unsubscribe functie](./personalization-functions-unsubscribe)
 * [Uitschrijfgedrag](./database-unsubscribe-behavior)
+* [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)
