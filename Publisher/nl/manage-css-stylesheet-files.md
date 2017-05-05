@@ -1,3 +1,5 @@
+## Manage stylesheets
+
 Copernica biedt de mogelijkheid om stylesheets centraal te beheren en te
 gebruiken voor je publicaties. Je beheert je stylesheets in het
 onderdeel Stijl.
