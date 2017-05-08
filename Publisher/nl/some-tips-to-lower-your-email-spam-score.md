@@ -1,4 +1,4 @@
-## Je spam score verlagen
+# Je spam score verlagen
 
 Je spam score wordt bepaald door een grote hoeveelheid checks die kijken 
 naar je DNS en de inhoud van je document. De meeste checks zijn gebaseerd 

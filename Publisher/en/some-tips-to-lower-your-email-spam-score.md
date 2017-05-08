@@ -1,4 +1,4 @@
-## Lower your spam score
+# Lower your spam score
 
 Your spam score is determined by a large number of checks performed on
 the content of your email document plus some DNS based checks. Most
