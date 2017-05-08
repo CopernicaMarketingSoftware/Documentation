@@ -30,3 +30,7 @@ een link.
 
 De webversie is standaard gelijk aan de HTML versie in de mail. Emails 
 verstuurd in JSON formaat optimalizeren daarnaast de HTML data voor het web.
+
+## Meer informatie
+
+* [Inline CSS](./inline-css)

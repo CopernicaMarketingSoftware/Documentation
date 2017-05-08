@@ -1,39 +1,34 @@
-Introductie
-===========
+# Introductie
 
 Zoals je wellicht weet, ontwikkelt Copernica meerdere emailgerelateerde 
 producten, zoals [MailerQ](https://www.mailerq.com) en 
 [SMTPeter](https://www.smtpeter.com). Het bekendst is Copernica echter van
-de complete online marketing automation toolkit, en voor menigeen is onze
-bedrijfsnaam "Copernica" zelfs verworden tot productnaam. 
+onze online marketing automation toolkits, de oude Publisher en gloednieuwe Marketing Suite, 
+en voor menigeen is onze bedrijfsnaam "Copernica" zelfs verworden tot productnaam.
 
-De documentatie die je nu voor ogen hebt gaat precies over het "normale"
-Copernicaproduct, de Copernica Marketing Software. In de documentatie gebruiken 
-we regelmatig onze bedrijfsnaam, Copernica, ook op precies dezelfde manier 
-als veel van onze gebruikers: als productnaam. Je zult in de documentatie dus 
-kunnen teruglezen hoe je een template "in Copernica" kunt plaatsen, en waar 
-je "binnen Copernica" de statistieken kan terugvinden.
+De documentatie die je nu voor ogen hebt gaat over de toolkits Publisher 
+en Marketing Suite. De websites van MailerQ en SMTPeter bevatten hun eigen 
+documentatie en wanneer nodig kun je hier altijd naar refereren. In sommige 
+documentatie wordt er nog verwezen naar onze producten als "Copernica". 
+Het zal in deze gevallen bijna altijd gaan om de oude Publisher omgeving.
 
 Bij het lezen van de documentatie is het handig om toegang te hebben
 tot de software. Daarvoor heb je een login en wachtwoord nodig. Deze krijg je 
 automatisch wanneer je je aanmeldt via [www.copernica.com](https://www.copernica.com).
-Met deze gegevens kun je inloggen en beginnen met het inrichten van 
-marketingcampagnes.
-
+Met deze gegevens kun je inloggen in Marketing Suite, waarbinnen je kunt 
+schakelen naar Publisher. Je kunt met onze documentatie snel beginnen met 
+het inrichten van marketingcampagnes.
 
 Meerdere plekken om in te loggen
 --------------------------------
 Met de Copernica logingegevens, kan je het beste inloggen via [www.copernica.com](https://www.copernica.com), 
 omdat het de centrale plek is vanwaar je kunt navigeren naar alle Copernica accounts en applicaties. 
-Echter, het is ook mogelijk om direct toegang tot de software te krijgen door te navigeren naar 
-een van de volgende webpagina's:
-
-* De Copernica website: [www.copernica.com](https://www.copernica.com)
-* De "nieuwe" Copernica Marketing Suite: [ms.copernica.com](https://ms.copernica.com)
+Je kunt toegang krijgen tot zowel de Marketing Suite en Publisher 
+via [ms.copernica.com](https://ms.copernica.com).
 
 Als je bent ingelogd, zie je een grote button waarmee je kan schakelen tussen de Marketing Suite 
-en de Publisher.
-De button is zichtbaar boven in het linker menu.
+en de Publisher. De button is zichtbaar boven in het linker menu. Je kunt 
+zo makkelijk gebruik maken van het beste van beide omgevingen.
 
 
 Het verschil tussen "Copernica Marketing Suite" en "Copernica Publisher"

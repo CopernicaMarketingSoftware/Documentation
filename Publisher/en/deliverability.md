@@ -158,4 +158,4 @@ ESP's will lower your sender reputation significantly.
 
 * [Followups](./followups)
 * [Unsubscribe behaviour](./database-unsubscribe-behavior)
-* [Lower your spam score](./some-tips-to-lower-your-spam-score)
+* [Lower your spam score](./some-tips-to-lower-your-email-spam-score)

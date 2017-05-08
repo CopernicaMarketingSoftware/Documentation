@@ -41,4 +41,4 @@ This example uses the [CopernicaRestAPi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Create a rule](./rest-put-view-rules)
+* [Create a rule](./rest-post-view-rules)

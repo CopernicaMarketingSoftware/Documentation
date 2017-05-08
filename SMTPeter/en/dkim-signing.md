@@ -29,11 +29,11 @@ else to use your domain as from address and sign mails out of your name,
 simply because they do not have access to your private key.
 
 
-## Singing of messages
+## Signing of messages
 
 SMTPeter can sign your mails with DKIM. In order to do this SMTPeter needs to know
 which from addresses you use with SMTPeter. You can configure something called
-sender domains via SMTPeter's dashboard. If you create
+[sender domains](./sender-domains) via SMTPeter's dashboard. If you create
 a sender domain, SMTPeter creates DKIM keys and informs you how to update
 the DNS records. This is a one time procedure. Once a sender domain is
 configured, SMTPeter automatically signs mails with from addresses identical
@@ -51,11 +51,10 @@ modifies your email (for example to [track clicks and opens](statistics),
 or to [inlinize CSS code](inline-css)) and this invalidates signatures
 that were added before.
 
-You should of course not be sending out mails with different from addresses
+You should of course not be sending out mails with different "from" addresses
 than your sender domains. However, if you happen to send out mails with a
 different from address SMTPeter will see if it can use one of your sender
 domain keys and still fulfill all necessary requirements.
-
 
 ## Automatic DKIM key rotation
 
@@ -65,3 +64,11 @@ someone spends a lot of time on it, keys can be broken. Therefore, you
 want to generate new keys every now and then. If you use SMTPeter's standard
 suggestions, it will rotate your keys automatically. If you want to use
 SMTPeter with your own generated keys, updating the keys is your own responsibility.
+
+## More information
+
+## More information
+
+* [Sender domains](./sender-domains)
+* [SPF validation](spf-validation)
+* [DMARC records](dmarc-deployment)

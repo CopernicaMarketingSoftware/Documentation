@@ -166,3 +166,9 @@ https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
 opgegeven tags bevatten. Ook hier kan eventueel gekozen worden voor een
 andere periode door een `start` en/of `end` parameter op te geven.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Niet-verzend REST calls](./rest-other-calls)
+* [Alle REST calls](all-rest-calls)

@@ -11,5 +11,10 @@ data in the respective order:
 | time        | The time we received the bounce (YYYY-MM-DD hh:mm:ss formatted) |
 | envelope    | The envelope of the message                                     |
 | recipient   | The recipient of the message                                    |
-| mime        | The mime content of the received bounc                          |
+| mime        | The mime content of the received bounce                         |
 | tags        | The tags of the message that bounced, separated by semicolons   |
+
+## More information
+
+* [REST non-send calls](./rest-other-calls)
+* [REST retrieve events](./rest-events)

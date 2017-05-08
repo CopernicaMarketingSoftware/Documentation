@@ -1,6 +1,6 @@
 # Aflever log files
 
-Elk afgeleverde mail is gelogd in log files met de prefix "deliveries".
+Elk afgeleverde mail is gelogd in logfiles met de prefix "deliveries".
 Je kunt de inhoud van deze bestanden downloaden in CSV, JSON en XML formaat
 via de [REST logfiles API](rest-logfiles) of via het dashboard. Deze
 bestanden bevatten de volgende informatie: 
@@ -15,3 +15,8 @@ bestanden bevatten de volgende informatie:
 | to        | Het IP adres waar het bericht ontvangen is                      |
 | attempt   | Het nummer van het totaal aantal afleverpogingen (telt vanaf 0) |
 | tags      | De tags van het afgeleverde bericht (puntkomma gescheiden)      |
+
+## Meer informatie
+
+* [REST niet-zend calls](./rest-other-calls)
+* [REST events opvragen](./rest-events)

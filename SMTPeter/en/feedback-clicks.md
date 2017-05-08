@@ -1,10 +1,10 @@
 # Feedback loops for clicks
 
 If you enable click-tracking, SMTPeter rewrites all hyperlinks in your emails.
-If someone clicks on one of these rewritten links, that user first goes to
+If someone clicks on one of these rewritten links that user first goes to
 the SMTPeter website, where the click is registered, and is then immediately
-redirected to the original URL. This all happens automatically and very fast, 
-and is most of the time unnoticable for your receiver. This technology
+redirected to the original URL. This all happens automatically and very fast  
+and is most of the time unnoticeable for your receiver. This technology
 allows SMTPeter to track all clicks on your mails.
 
 If you set up a click feedback loop, SMTPeter also notifies you in realtime
@@ -16,40 +16,21 @@ too) to your server with the relevant information about the click.
 
 With each POST call the following variables are sent over:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unique identifier of the message that was clicked</td>
-    </tr>
-    <tr>
-        <td>recipient</td>
-        <td>email address of the person that clicked</td>
-    </tr>
-    <tr>
-        <td>ip</td>
-        <td>ip address of the clicker</td>
-    </tr>
-    <tr>
-        <td>url</td>
-        <td>the clicked url (this is the link to the SMTPeter server)</td>
-    </tr>
-    <tr>
-        <td>original</td>
-        <td>the original url (this is the link to which the user was redirected)</td>
-    </tr>
-    <tr>
-        <td>useragent</td>
-        <td>optional user agent string (extracted from http request header)</td>
-    </tr>
-    <tr>
-        <td>referer</td>
-        <td>optional referer (extracted from http request header)</td>
-    </tr>
-    <tr>
-        <td>tags</td>
-        <td>the tags that you associated with the mail</td>
-    </tr>
-</table>
+| Variable  | Description                                                          |
+|-----------|----------------------------------------------------------------------|
+| id        | Unique identifier of the message that was clicked                    |
+| recipient | Email address of the person that clicked                             |
+| ip        | IP address of the clicker                                            |
+| url       | The clicked url (this is the link to the SMTPeter server)            |
+| original  | The original url (this is the link to which the user was redirected) |
+| useragent | Optional user agent string (extracted from http request header)      |
+| referer   | Optional referer (extracted from http request header)                |
+| tags      | The tags that you associated with the mail                           |
 
 The "id", "recipient" and "tags" variables allow you to link the click to the 
 originally sent email message.
+
+## More information
+
+* [Feedback loops](./feedback-loops)
+* [Set up a feedback loop](./feedback-setup)

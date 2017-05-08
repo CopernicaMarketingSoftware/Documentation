@@ -93,3 +93,9 @@ Content-Type: application/json
 
 { "id" : 2 }
 ```
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Niet-verzend REST calls](./rest-other-calls)
+* [Alle REST calls](all-rest-calls)

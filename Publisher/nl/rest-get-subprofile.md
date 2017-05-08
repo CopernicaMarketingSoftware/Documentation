@@ -41,6 +41,6 @@ Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 * [Overzicht van alle API calls](rest-api)
 * [Opvragen van profiel ID's](rest-get-database-subprofileids)
-* [Profiel toevoegen aan een database](rest-post-database-subprofiles)
+* [Profiel toevoegen aan een database](rest-post-profile-subprofiles)
 * [Profiel bijwerken](rest-put-subprofile-fields)
 * [Profiel verwijderen](rest-delete-subprofile)
