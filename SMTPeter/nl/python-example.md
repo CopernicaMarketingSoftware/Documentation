@@ -52,8 +52,17 @@ The data we want to send
 }
 ```
 
+```python
 *Post response* = 
 mySMTPeterConnection.post("send", data)
 
 *Print response* =
 pprint.pprint(response.json())
+```
+
+## Meer informatie
+
+* [REST API configureren](./introduction-rest-api)
+* [REST API algemeen](./rest-api)
+* [Alle REST API calls](./all-rest-calls)
+* [PHP voorbeeld](./php-example)
