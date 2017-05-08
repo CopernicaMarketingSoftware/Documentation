@@ -118,7 +118,7 @@ status bericht. De "orcpt" waarde wordt gekopierd naar de "original-recipient" p
 
 ## Instelling voor embedded images
 
-Het hebben van *embedded* afbeeldingen in je MIME kan soms wat problemen geven.
+Het hebben van *embedded* [afbeeldingen](./images) in je MIME kan soms wat problemen geven.
 SMTPeter kan de embedded afbeeldingen uit je MIME halen, hosten, en vervolgens
 de links herschrijven in het "html" gedeelte van de MIME naar de oorspronkelijke locatie.
 De optie kan worden geactiveerd door in de JSON op de "image" property een waarde mee 
@@ -130,3 +130,11 @@ te geven, genaamd: "hosted". De "default" waarde doet vanzelfsprekend niets.
     "images": "hosted"|"default"
 }
 ```
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Verzenden van MIME data](./rest-mime)
+* [Aanmaken van MIME data met SMTPeter](./rest-send-json)
+* [Afbeeldingen met SMTPeter](./images)
+* [Inline CSS](./inline-css)

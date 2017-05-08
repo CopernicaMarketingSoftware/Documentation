@@ -21,3 +21,7 @@ Host:       mail.smtpeter.com
 Port:       465
 Encryption: SMTPS
 ```
+## Meer informatie
+
+* [SMTP API configureren](./introduction-smtp-api)
+* [SMTP API algemeen](./smtp-api)
