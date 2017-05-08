@@ -93,3 +93,11 @@ ingesteld op een paar uur. Maar een TTL van 24 uur of meer is ook beslist niet
 uitzonderlijk. Het gevolg is dat als je een wijziging in DNS plaatst, je voor de 
 zekerheid het beste een paar uur kunt wachten voordat je gebruik gaat maken van
 de nieuwe instelling.
+
+## Meer informatie
+
+* [Afzenderdomeinen](./sender-domains)
+* [MX](mx)
+* [SPF](spf)
+* [DKIM](dkim)
+* [DMARC](dmarc)

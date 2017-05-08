@@ -8,7 +8,7 @@ order:
 
 | Name               | Description                                                                       |
 | ------------------ | --------------------------------------------------------------------------------- |
-| time               | The time when we have received the dmarc report (YYYY-MM-DD hh:mm:ss              |
+| time               | The time when we have received the dmarc report (YYYY-MM-DD hh:mm:ss formatted)   |
 | organizationName   | The name of the organization who has sent the report                              |
 | email              | The email address from which we received the report                               |
 | reportId           | The unique (for that domain) report ID                                            |
@@ -26,3 +26,8 @@ send via a different address that the domain that is covered by the report
 (an example is microsoft.com who also sends reports for hotmail.com). This
 is solved in new records.
 (2): Old records do not have this information
+
+## More information
+
+* [REST non-send calls](./rest-other-calls)
+* [REST retrieve events](./rest-events)

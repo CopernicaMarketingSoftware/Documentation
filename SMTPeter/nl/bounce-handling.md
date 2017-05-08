@@ -189,3 +189,9 @@ wilt ontvangen kun je de volgende JSON data gebruiken.
 
 Met de bovenstaande data stuurt SMTPeter alle e-mails door naar je 
 envelope adres.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [SMTP API](./smtp-api)
+* [Feedback loops](./feedback-loops)

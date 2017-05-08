@@ -7,7 +7,7 @@ in the internet marketing world. When you unsubscribe this is called an
 "opt-out". A double opt-in asks the user to confirm their email so you 
 can guarantee your users registered a valid email address.
 
-Note: This tutorial is aimed at Publisher users. See [followups](./followups) 
+Note: This tutorial is aimed at Publisher users. See [followups](./follow-up-manager) 
 for more information on followup actions in Publisher and Marketing Suite.
 
 ## How does it work?
@@ -33,11 +33,9 @@ want to receive your newsletters.
 1.  A new users registers with your registration form.
 2.  When the form is sent an automatic mail is sent to the user containing 
 the confirmation link. This will be accomplished with a follow-up link.
-3.  Zodra deze link is aangeklikt is de aanmelding voltooid.
-4.  Optioneel kan er nog een extra bevestiging achterna gestuurd worden,
-    met hierin informatie over de afmeldprocedure, en als je slim bent
-    ook nog wat verwijzingen naar interessante artikelen / producten op
-    jouw website.
+3.  When this link is clicked the subscription is confirmed.
+4.  Optionally send another confirmation mail with information about 
+    how to unsubscribe and some interesting product on your website.
 
 ### Requirements
 
@@ -101,7 +99,7 @@ address with `{\$emailadres}`.
 ## Step 4: Configure a followup action to the form.
 
 When the form is completed and sent a confirmation mail should arrive in 
-the users mailbox. We accomplish this with a [followup action](./followups).
+the users mailbox. We accomplish this with a [followup action](./follow-up-manager).
 
 Go to the **Follow-ups** option in the webform menu and make a new followup 
 that sends the email to the profile. Select the email document with the 
@@ -134,7 +132,7 @@ You should then send your emails only to the selection you have created.
 
 ## More information
 
-* [Followups](./followups)
+* [Followups](./follow-up-manager)
 * [Selections/Collections](./selections-introduction)
 * [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
 * [Tutorial: Create a newsletter selection](./create-a-mailing-list)

@@ -67,3 +67,9 @@ Als je alleen SMTPeter gebruikt ziet je file er zo uit.
 ```text
 v=spf1 include:smtpeter.com -all
 ```
+
+## Meer informatie
+
+* [Afzenderdomeinen](./sender-domains)
+* [DKIM keys](dkim-signing)
+* [DMARC records](dmarc-deployment)

@@ -1,56 +1,41 @@
 # Databasebeheer
 
-Copernica werkt op basis van volledig configureerbare databases. Je kunt 
-zelf de structuur van databases bepalen, zodat jouw gegevens altijd in Copernica
-passen. De databases ondersteunen bovendien meerdere dimensies. Dit 
-stelt je in staat om een database met meerdere lagen te maken waarin per 
-profiel bijvoorbeeld de volledige bestelgeschiedenis wordt opgeslagen.
+Copernica werkt op basis van databases die je zelf kunt figureren. Je kunt 
+de database makkelijk naar wens structuren en data [importeren](./database-import) 
+en [exporteren](./database-export).
 
-De database vormt het hart van je marketingcampagnes. In de database staat
-alle profieldata voor het maken van selecties en voor het personaliseren van 
-mailings. De data wordt bovendien continu verrijkt naar aanleiding van 
-acties van de geadresseerden, zodat je steeds nauwkeuriger campagnes kunt
-versturen. Hoewel sommige gebruikers er de voorkeur aan geven regelmatig een 
-nieuwe database aan te maken waarin opnieuw alle profielgegevens worden 
-geïmporteerd, adviseren wij om steeds dezelfde database te gebruiken. Je 
-database wordt dan steeds rijker door de feedback van eerdere campagnes. Door 
-middel van selecties kan de database worden gesegmenteerd en gebruikt voor 
-doelgerichte campagnes, zonder dat je adressen opnieuw hoeft te importeren.
-Het databasebeheer is toegankelijk via de Marketing Suite. 
+Je kunt ook verschillende lagen aanmaken in je database, bijvoorbeeld om 
+de aankoopgeschiedenis van een klant op te slaan in zijn profiel. Je kunt 
+ook [selecties](./selections-introductions) aanmaken om de database makkelijk 
+op te delen en om te personalizeren. Copernica linkt ook veel informatie 
+aan de profielen in je database, waaronder kliks, opens en errors. Om deze 
+reden is het ook belangrijk dat je een database netjes houdt en update, in plaats 
+van periodiek een geheel nieuwe database aan te maken. Deze data, waarmee 
+je vorige campagnes kan evalueren en toekomstige campagnes kan verbeteren, 
+raakt anders verloren.
 
 ## Meerdere dimensies
 
 Binnen het Copernica databasebeheer kom je regelmatig de begrippen *collectie*
 en *subprofiel* tegen. Deze termen worden gebruikt bij multidimensionale 
-databases. In een eenvoudige, ééndimensionale, database worden alleen 
-enkelvoudige velden en interesses gebruikt: een winkelier zou bijvoorbeeld
-een database kunnen aanmaken met velden voor de voor- en achternaam, woonplaats
-en het emailadres van zijn klanten. Records die in deze database worden
-geplaatst worden door Copernica *profielen* genoemd.
-
-Echter, zo'n eenvoudige database kan worden voorzien van een tweede laag door
-er een *collectie* aan toe te voegen. De winkelier kan bijvoorbeeld een 
-collectie "bestellingen" toevoegen, en in deze collectie de velden "datum", 
-"product" en "prijs" opnemen. Aan elk profiel in de database (elke klant dus)
-kunnen dan de bestellingen die in de loop der tijd zijn gedaan worden
-toegevoegd. Een record uit zo'n collectie (in dit geval een bestelling) wordt
-een *subprofiel* genoemd.
-
-Een database met klanten met een collectie voor bestellingen is slechts
-een enkel voorbeeld hoe je multidimensionale databases kunt gebruiken. Maar
-je zou bijvoorbeeld ook een database met bedrijven kunnen aanmaken, inclusief
-een collectie met de medewerkers per bedrijf. Of een database met ouders, en
-een collectie voor de kinderen.
+databases. In het voorbeeld met de aankoopgeschiedenis zou je bijvoorbeeld 
+een collectie van orders aanmaken. De klant is in dit geval het *profiel* 
+en het product het *subprofiel*. Je kunt hetzelfde principe toepassen op 
+bijvoorbeeld de werknemers van een bedrijf, of de kinderen van een ouder.
 
 ## Overige opties
 
-Als je databases inricht, zijn er verschillende zaken die je kunt instellen.
+Als je databases inricht, zijn er verschillende zaken die je kunt instellen. 
+Het belangrijkst is dat de structuur van je database efficient en logisch is. 
 Voordat je kunt mailen moet je bijvoorbeeld aangeven dat een database geschikt
 is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
 dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
 door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
 
 ## Meer informatie
+
+De volgende artikelen zullen je op weg helpen bij het opzetten van een 
+database en het onderhouden hiervan.
 
 * [Selecties](./selections-introduction)
 * [Velden en collecties](database-fields-and-collections)

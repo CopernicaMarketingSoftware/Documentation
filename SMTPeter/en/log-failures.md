@@ -13,11 +13,16 @@ order:
 | envelope    | The envelope of the message that failed                                                 |
 | recipient   | The recipient of the failed message                                                     |
 | attempt     | The attempt number (starting from zero)                                                 |
-| from        | The from IP address                                                                     |
-| to          | The to IP address                                                                       |
+| from        | The "from" IP address                                                                   |
+| to          | The "to" IP address                                                                     |
 | type        | The result type                                                                         |
 | code        | The SMTP error code                                                                     |
 | status      | SMTP status code (like "5.0.0")                                                         |
 | description | Human readable description received over SMTP                                           |
 | state       | State in the SMTP protocol during which the error occured                               |
 | tags        | The tags of the message (semicolon separated)                                           |
+
+## More information
+
+* [REST non-send calls](./rest-other-calls)
+* [REST retrieve events](./rest-events)

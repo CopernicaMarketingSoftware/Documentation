@@ -51,3 +51,7 @@ Het SMTPeter dashboard komt met een handige tool om je feedback loops te
 testen. Je kunt de POST data invoeren die je stuurt naar de feedback loop. 
 SMTPeter stuurt het dan meteen door naar jouw script. Op die manier weet je 
 dat de feedback loop klaar voor gebruik is!
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)

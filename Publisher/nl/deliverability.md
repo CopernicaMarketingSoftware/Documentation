@@ -150,5 +150,5 @@ kunt u de volgende gegevens gemakkelijk aanmaken en controleren:
 
 * [Followups](./followups)
 * [Uitschrijfgedrag](./database-unsubscribe-behavior)
-* [Je spamscore verlagen](./some-tips-to-lower-your-spam-score)
+* [Je spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 

@@ -26,11 +26,11 @@ as the sender domain you want to use and the subject of the email. You
 can schedule it for a later time or send it immediately. You can add tags 
 to organize and categorize for own use. The target for your mail can be 
 a [database](./database-introduction) or a [selection](./selections-introduction). 
-Mails can also be sent automatically through [followups](./followups).
+Mails can also be sent automatically through [followups](./follow-up-manager).
 
 ## More information
 
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
 * [Personalization](./personalization)
-* [Followups](./followups)
+* [Followups](./follow-up-manager)

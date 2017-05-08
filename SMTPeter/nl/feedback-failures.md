@@ -62,3 +62,8 @@ calls:
         <td>optionele omschrijving van de error</td>
     </tr>
 </table>
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)
+* [Feedback loops instellen](./feedback-setup)
