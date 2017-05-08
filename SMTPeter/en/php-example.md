@@ -148,3 +148,11 @@ $output = $object->post("send", array(
 $messageID = "your message id";
 $dates = $object->get("text/$messageID");
 print_r($dates);
+```
+
+## More infomation
+
+* [Configure the REST API](./introduction-rest-api)
+* [About the REST API](./rest-api)
+* [All REST API calls](./all-rest-calls)
+* [Python example](./python-example)
