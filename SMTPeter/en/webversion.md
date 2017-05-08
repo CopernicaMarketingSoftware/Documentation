@@ -27,3 +27,7 @@ of any `link` object. For example, inside a link block:
 
 By default, the web version is identical to the HTML version.
 Emails sent in JSON format, however, optimize the generated HTML data for web.
+
+## More information
+
+* [Inline CSS](./inline-css)

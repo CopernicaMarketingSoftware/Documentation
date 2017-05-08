@@ -103,3 +103,8 @@ is om een DNS CNAME connectie aan te maken met "clicks.smtpeter.com".
 
 De precieze manier om dit te doen hangt af van je DNS provider. 
 Als je hierover vragen hebt, moedigen we je aan deze aan hen te stellen.
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)
+* [Logfiles download met REST](./rest-logfiles)

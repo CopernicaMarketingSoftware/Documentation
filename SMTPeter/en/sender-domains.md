@@ -31,7 +31,7 @@ you are the only one who uses your domain to send mail.
 With "sender domains" SMTPeter takes all these responsibilities out of your 
 hands. We create your SPF, DKIM and DMARC records and store them 
 on _our_ DNS servers. All that you have to do is create a couple of records 
-in _your_ DNS record (or ask/instruct your DNS provider to do so) that points 
+in _your_ DNS record (or ask/instruct your DNS provider to do so) pointing  
 to our records. If we make a change to the DNS (for example, because we rotate 
 one of your private DKIM keys), it gets automatically propagated over the 
 internet, because your DNS records just point to our records.
@@ -61,23 +61,24 @@ emails for which you've set up a sender domain can be signed.
 If you set up a sender domain you are asked to configure your tracking and
 bounce domains. These are the hostnames that we use to track clicks,
 opens and errors. The suggested defaults, "clicks.example.com" and 
-"bounce.example.com" are for most users sufficient. 
+"bounce.example.com" are sufficient for most users. 
 
-But be aware that if you configure SMTPeter to track clicks, all hyperlinks 
+Please be aware, however, that if you configure SMTPeter to track clicks all hyperlinks 
 in your emails are going to be rewritten to use the click domain. The default
 "clicks.yourdomain.com" might look like a tracking domain to your users (which 
 is not that strange, given the fact that it actually _is_ a tracking domain).
-If you rather have urls that look more neutral (for example "specialoffers.example.com",
+If you rather have URLs that look more neutral (for example "specialoffers.example.com",
 or "www.example.com") you can change the click domain in the
 sender domain configuration.
 
 The same applies to the bounce domain, although the bounce domain is less 
 visible for the receivers of your email. It is only used for the envelope
-domain, and the envelope domain is normally not shown to users, unless they
-are going to inspect the original email source.
+domain, which is normally not shown to users, unless they inspect the original email source.
 
 ## More information
 
 * [Configure a sender domain](./introduction-sender-domains)
-
+* [SPF records](spf-validation)
+* [DKIM keys](dkim-signing)
+* [DMARC records](dmarc-deployment)
 
