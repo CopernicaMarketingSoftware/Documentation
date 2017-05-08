@@ -2,12 +2,14 @@
 
 Er zijn een aantal voorbeelden gegeven ([1](rest-send-json "MIME door SMTPeter laten maken"), 
 [2](rest-mime)) hoe je data naar SMTPeter stuurt voor het versturen van een e-mail. 
-Het gebruik van templates heeft een aantal voordelen ten opzichte van de eerder 
-genoemde methodes. Ten eerste, je maakt de templates met de handige drag-and-drop 
+Het gebruik van templates heeft een aantal voordelen ten opzichte van de eerder
+genoemde methodes. 
+
+Ten eerste, je maakt de templates met de handige drag-and-drop 
 editor, waardoor je geen HTML hoeft te scrhijven. Uiteraard kun je dit wel blijven doen
 als je daarvoor voor kiest. Ten tweede, het is niet alleen makkelijk om templates
-te maken, maar je kunt ze ook opslaan en bewerken. Zo heb je alle templates onder
-een plek binnen het dashboard van SMTPeter. Tot slot, de gecreëerde templates worden
+te maken, maar je kunt ze ook opslaan en bewerken. Zo heb je alle templates netjes op
+een plek, binnen het dashboard van SMTPeter. Tot slot, de gecreëerde templates worden
 gemaakt door middel van JSON. Door onze geavanceerde [Responsive E-mail](www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
@@ -41,6 +43,7 @@ of als echte JSON:
         "subject":      "this is the subject"
 
         /* plus alle andere properties beschreven op https://www.responsiveemail.com */
+
     }
 }
 ```
