@@ -89,8 +89,7 @@ should be ready to test.
 $ sudo service postfix restart
 ```
 
-<!---
-### configure Postfix to only send certain emails through SMTPeter
+## More information
 
-@todo
--->
+* [Configuring the SMTP API](./introduction-smtp-api)
+* [SMTP API](./smtp-api)

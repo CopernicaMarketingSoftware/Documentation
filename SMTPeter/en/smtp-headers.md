@@ -5,11 +5,10 @@ care of the rest. If you want to, you can influence SMTPeters behavior by
 setting some specific x-smtpeter headers in the MIME message. This is especially
 useful if you are using the SMTP API, since, SMTP does not allow to pass
 separate parameters with a message. However, the MIME headers can also be
-used to overwrite the options that are passed to the REST API. Note that
+used to overwrite the options that are passed to the [REST API](./rest-api). Note that
 these extra headers that are used to set SMTPeter's options are stripped
 out before the message is send to the recipient. Thus, they will not show
 up in the recipients message.
-
 
 ## Optional headers
 
@@ -24,3 +23,8 @@ The headers in the table below can be used to affect SMTPeter's behavior.
 | x-smtpeter-preventscam:  | When set to true, links with labels equal to the link will not be tracked 	|
 | x-smtpeter-tags:         | Comma-separated list of message tags      									|
 | x-smtpeter-images:       | When set to hosted, [embedded images](images) will be hosted by us 		|
+
+## More information
+
+* [SMTP API](./smtp-api)
+* [REST API settings](./rest-send-advanced)

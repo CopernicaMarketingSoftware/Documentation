@@ -2,7 +2,7 @@
 
 ## Configureer je domeinnaam
 
-Voordat je jouw berichten kunt relayen moet je zorgen dat de 'myhostname' parameter geconfigureerd is met de *fully qualified domain  name* (FQDM) van jouw server. Dit kun je doen in het `/etc/postfix/main.cf` door het volgende in te vullen:
+Voordat je jouw berichten kunt relayen moet je zorgen dat de 'myhostname' parameter geconfigureerd is met de *fully qualified domain name* (FQDM) van jouw server. Dit kun je doen in het `/etc/postfix/main.cf` door het volgende in te vullen:
 
 `myhostname=fqdn.jouwdomein.com`
 
@@ -45,3 +45,8 @@ smtp_tls_CAfile             = /etc/ssl/certs/ca-certificates.crt
 Let op: als je een andere poort dan de standaard poort hebt ingevuld in je sasl_passwd file, moet je diezelfde poort ook invullen als je de *relayhost* parameter instelt.
 
 Als je deze stappen hebt doorlopen, herstart dan Postfix en test of het werkt.
+
+## Meer informatie
+
+* [SMTP API configureren](./introduction-smtp-api)
+* [SMTP API](./smtp-api)
