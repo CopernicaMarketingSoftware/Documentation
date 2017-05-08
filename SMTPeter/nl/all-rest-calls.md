@@ -2,7 +2,7 @@
 
 In onderstaande tabel kun je alle beschikbare REST *calls* vinden voor de 
 SMTPeter API. De REST API helpt je bij het ophalen, verwijderen en creëren 
-van data in jouw SMTPeter omgeving. Op deze manier kun je SMTPeter incorperen
+van data in jouw SMTPeter omgeving. Op deze manier kun je SMTPeter incorporeren
 binnen je eigen website of applicatie en ben je volledig vrij om te bepalen
 welke taken je door SMTPeter wilt laten doen. 
 
