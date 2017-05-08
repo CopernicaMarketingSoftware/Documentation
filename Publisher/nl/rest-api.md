@@ -7,7 +7,7 @@ Dit gaat automatisch, dus buiten de *user interface* om.
 
 * [Introductie: de REST api in een notendop](rest-introduction)
 * [HTTP requests sturen en antwoorden ontvangen](rest-requests)
-* [Fancy OAuth2 koppelingen](rest-oauth)
+* [OAuth2 koppelingen](rest-oauth)
 * [REST events](rest-get-events.md)
 
 ## REST API: overzicht van methodes
