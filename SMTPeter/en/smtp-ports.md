@@ -1,9 +1,10 @@
 # SMTP hostname and port numbers
 
 The SMTP API is accessible through the "mail.smtpeter.com" domain name.
-All mails must be submitted using secure connections using STARTTLS encryption.
-Alternatively, you can make use of port 587. There is no difference in how
-we handle port 25 versus port 587.
+There are different ports to use for messaging: port 25, 587 and 2525 are 
+all used with STARTTLS encryption and are handled in the same manner. It 
+is also possible to use port 465 without STARTTLS, see the section on 
+port 465 for more information.
 
 ```text
 Host:       mail.smtpeter.com
@@ -11,13 +12,13 @@ Port:       25, 587, 2525
 Encryption: STARTTLS
 ```
 
-Only authenticated and encrypted connections using "STARTTLS" are supported.
-Non-authenticed emails and messages that are not sent over a secure connection 
-are rejected.
+Only authenticated and encrypted connections using "STARTTLS" are supported 
+on ports 25, 587 and 2525. Non-authenticed emails and messages that are 
+not sent over a secure connection are rejected.
 
 Note that we can reject mail during the "RCPT TO" phase of the SMTP
 protocol, or until after you've sent all message data. Sometimes we process 
-the entire mail message to find out who is trying to abuse our systems,
+the entire mail message to find out who is trying to abuse our systems
 and reject the mail only after we've seen the full message.
 
 
@@ -31,7 +32,7 @@ Cloud users since Google Cloud does neither support 25 nor 587.
 
 ## Port 465
 
-As an alternative to ports 25 and 587, you can also connect to port **465**.
+As an alternative to the ports mentioned previously, you can also connect to port **465**.
 This opens up a TCP connection in a secure state right away, and skips
 the STARTTLS handshake. Although sending mail over port 465 was never
 standardized and is even deprecated in favor of the STARTTLS encryption
@@ -45,3 +46,8 @@ Host:       mail.smtpeter.com
 Port:       465
 Encryption: SMTPS
 ```
+
+## More information
+
+* [Configure the SMTP API](./introduction-smtp-api)
+* [About the SMTP API](./smtp-api)
