@@ -126,3 +126,11 @@ Met de "attachments" property kun je bestanden toevoegen aan een mailing. SMTPet
     ]
 }
 ```
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Geavanceerde verzender opties](./rest-send-advanced)
+* [Verzenden MIME data](./rest-mime)
+* [Meerdere ontvangers emailen](./rest-send-multiple-recipients)
+* [API respons](./rest-api-reaction)

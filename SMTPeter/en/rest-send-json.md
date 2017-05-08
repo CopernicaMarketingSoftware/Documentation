@@ -31,7 +31,10 @@ for the "to" and the "cc" fields.
 The notation for the email addresses in the "from", "to" and "cc" fields
 is much more flexible than for the "envelope" and "recipient" fields.
 You can include display names or use angle brackets, and for the "to" and
-"cc" fields you can also use comma separated lists. Note that the address
+"cc" fields you can also use comma separated lists. How the adresses show 
+up to the recipients is explained in the article on [multiple recipients](./rest-send-multiple-recipients).
+
+Note that the address
 set in these "from", "to" and "cc" fields just decide what addresses are
 included in the MIME data, and do not have to be identical to the
 addresses used in the "envelope" and "recipient" fields (although it
@@ -143,3 +146,13 @@ Moreover, you can optionally specify the type of data that you send.
     ]
 }
 ```
+
+If all information is provided in a correct format you will get a [reaction from the API](./rest-api-reaction).
+
+## More information
+
+* [REST API](./rest-api)
+* [Advanced send options](./rest-send-advanced)
+* [Send MIME data](./rest-mime)
+* [Emailing multiple recipients](./rest-send-multiple-recipients)
+* [API reaction](./rest-api-reaction)
