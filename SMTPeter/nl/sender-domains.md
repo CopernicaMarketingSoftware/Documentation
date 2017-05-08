@@ -74,3 +74,10 @@ kun je het klik domein aanpassen in de sender domainn configuratie.
 
 Je kunt ook je bounce domein aanpassen, maar deze is alleen zichtbaar in 
 de broncode van de e-mail.
+
+## Meer informatie
+
+* [Configureren van een zender domein](./introduction-sender-domains)
+* [SPF records](./spf-validation)
+* [DKIM keys](./dkim-signing)
+* [DMARC records](./dmarc-deployment)

@@ -14,7 +14,7 @@ files are accessible through the REST API with the following methods:
 ```
 
 The above methods can be used to (1) see for which dates log files are 
-available, to (2) see the log files kept for one specific date, and to 
+available, to (2) see the log files kept for one specific date and to 
 (3-6) download a single log file.
 
 
@@ -128,3 +128,9 @@ The format of the xml file is as follows:
 
 The NAMEs can be found in the articles on the specific log file articles
 (see the table above).
+
+## More information
+
+* [REST API](./rest-api)
+* [Non-send REST calls](./rest-other-calls)
+* [All REST calls](all-rest-calls)

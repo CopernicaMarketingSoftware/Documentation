@@ -1,35 +1,33 @@
 # Click and open tracking
 
 You can use SMTPeter's click tracking to figure out what attracts users' eyes. 
-With click tracking enabled, all links in emails sent through SMTPeter are 
-rewritten. When a receiver clicks on such a rewritten link, 
-he or she will not open the original hyperlink, but a link to one of 
-SMTPeter's web servers instead. SMTPeter intercepts the click, and logs
+With click tracking enabled all links in emails sent through SMTPeter are 
+rewritten. When a receiver clicks on such a rewritten link he or she will 
+not open the original hyperlink, but a link to one of 
+SMTPeter's web servers instead. SMTPeter intercepts the click and logs
 it.
 
-Of course, right after we've logged the click, we redirect the user to
-the original hyperlink, so that from a user's perspective, it was just
-as if the original link was opened.
+Of course, right after we've logged the click we redirect the user to
+the original hyperlink. From a user's perspective it will appear as if 
+the original link was opened.
 
 We do the same with images. All image links in email messages are rewritten
-too, so that the images are downloaded from the SMTPeter
+too, such that the images are downloaded from the SMTPeter
 servers instead of the original server. By doing this we know exactly
 when someone opens an email, because we see the image download appear
 in our log files.
-
 
 ## Enabling click tracking
 
 Emails can be sent to SMTPeter using the [SMTP](smtp-api) and the 
 [REST API](rest-api). Both API's allow you to enable click tracking. If
-you use the REST API, you can simply add a "trackclicks" property to
+you use the REST API you can simply add a "trackclicks" property to
 the JSON or POST data.
 
-For the SMTP API things are a little more complex. You either have to
-add a "x-smtpeter-trackclicks" MIME header to your email, or you have
+For the SMTP API there are two ways to do this. You either have to
+add a "x-smtpeter-trackclicks" MIME header to your email or you have
 to go to SMTPeter's dashboard to create SMTP credentials for which
 clicktracking is enabled.
-
 
 ## Scam prevention
 
@@ -58,7 +56,7 @@ All clicks and opens are logged. You can get access to these log files
 with the REST API. You therefore have access to all collected raw data.
 
 On top of that, SMTPeter periodically processes the log files and 
-extracts relevant data from it, and puts this data on the dashboard. 
+extracts relevant data from it and puts this data on the dashboard. 
 When you open the dashboard, you get direct insight into the best 
 performing links.
 
@@ -81,7 +79,7 @@ hold.
 ## Click tracking domain
 
 When rewriting the links to detect the clicks, we do our best to make the
-rewritten link look as much as the original. We leave the path intact, and
+rewritten link look as much as the original. We leave the path intact and
 only add a small identifier to the URL. We also change the original hostname
 in the URL to a hostname that points to the SMTPeter web servers. By 
 default, we use "clicks.smtpeter.com" for this. 
@@ -93,7 +91,6 @@ receivers of your messages will then already see your domain when they
 hover their mouse over the hyperlinks, which gives them more confidence to
 click.
 
-
 ## DNS configuration
 
 If you install your own click domain, you must make sure that this domain 
@@ -103,3 +100,8 @@ The easiest way to do this is to create a DNS CNAME record towards
 
 The exact way to do this depends on your DNS provider. If in doubt, please 
 contact them for support.
+
+## More information
+
+* [Feedback loops](./feedback-loops)
+* [Downloading logfiles with REST](./rest-logfiles)

@@ -100,3 +100,9 @@ NAME de naam van de embedded content en NUMBER de rang van de embedded content
 Met methode (1) kun je de naam en rang opvragen van de embedded content. 
 Met methode (2) en (3) kun je de embedded content downloaden door de naam en rang
 op te geven.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Niet-verzend REST calls](./rest-other-calls)
+* [Alle REST calls](all-rest-calls)

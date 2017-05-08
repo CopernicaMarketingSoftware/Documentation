@@ -18,3 +18,8 @@ het dashboard. Deze bestanden bevatten de volgende informatie:
 | countryname | De naam van het land waar het bericht geopend is                                          |
 | countrycode | De landendcode (alpha-2) van het land waar het bericht geopend is                         |
 | regioncode  | De regiocode waar het bericht geopend is                                                  |
+
+## Meer informatie
+
+* [REST niet-zend calls](./rest-other-calls)
+* [REST events opvragen](./rest-events)

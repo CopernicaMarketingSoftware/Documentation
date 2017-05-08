@@ -20,3 +20,8 @@ het dashboard. Deze bestanden bevatten de volgende informatie:
 | description | Leesbare beschrijving die ontvangen is over SMTP                                                            |
 | state       | De staat van het SMTP protocol op het tijdstip wanneer de fout plaatsvond                                   |
 | tags        | De tags van het bericht (puntkomma gescheiden)                                                              |
+
+## Meer informatie
+
+* [REST niet-zend calls](./rest-other-calls)
+* [REST events opvragen](./rest-events)

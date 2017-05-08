@@ -97,3 +97,4 @@ No hassle whatsoever.
 * [DKIM](./dkim)
 * [SPF](./spf)
 * [MX](./mx)
+* [DNS](./dns)

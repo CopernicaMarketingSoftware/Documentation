@@ -1,3 +1,5 @@
+# Litmus preview
+
 Litmus is an easy to use tool that allows you to preview your emailings
 in different email programs before they're sent.
 
@@ -7,8 +9,7 @@ in different email programs before they're sent.
 users of Copernica Marketing Software. Per test a 5 euro fee will be
 charged.*
 
-About Litmus
-------------
+## About Litmus
 
 Litmus offers previews of what your emailing will look like in various
 email programs. Among others, you will be able to get previews for:
@@ -22,3 +23,16 @@ email programs. Among others, you will be able to get previews for:
 
 The Litmus integration is easy to use in Copernica. With one single
 click of a button you'll be able to see the different previews.
+
+## Publisher
+
+When creating an email or template you can find the **View document in 
+various clients** function on the bottom right of the screen.
+
+## Marketing Suite
+
+Marketing Suite uses a user-friendly drag 'n drop editor that can be 
+used to create beautiful templates that are stored in JSON format to create 
+responsive emails. Therefore Litmus is not needed here. You can click the 
+**Template preview** button under **Tools** to see your mail on different 
+devices. 

@@ -27,7 +27,7 @@ zijn enkele zusje:
     persoon die de nieuwbrief ontvangt.
 -   Het e-mailadres waarnaar je de nieuwsbrief verstuurt is altijd een
     werkende
--   Dit lijdt tot significant minder fouten bij het versturen van
+-   Dit leidt tot significant minder fouten bij het versturen van
     e-mails
 -   Dit verbetert uiteindelijk de deliverability.
 -   De database blijft schoon en bestaat alleen uit mensen die
@@ -152,7 +152,7 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 ## Meer informatie
 
-- [Followups](./followups)
+- [Followups](./follow-up-manager)
 * [Selectie condities](./selections-conditions)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
