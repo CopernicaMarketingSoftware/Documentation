@@ -65,3 +65,8 @@ De volgende variabelen worden dan ingevoerd:
 De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
 te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom", 
 "rcptto" en "data" velden bevatten de melding die door SMTPeter is ontvangen.
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)
+* [Feedback loops instellen](./feedback-setup)

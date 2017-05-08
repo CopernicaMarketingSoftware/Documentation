@@ -13,14 +13,14 @@ sent back to the envelope address. This includes the regular
 delivery status notifications, but also out-of-office replies, vacation
 mails, or error messages from servers that do not respect the official
 format for bounce messages. All these type of messages are sent back to
-SMTPeter, and if you set up a feedback loop, are also delivered to you.
+SMTPeter and to you, if you set up a feedback loop.
 
 
 ## Bounces vs Delivery Status Notifications
 
 SMTPeter sends out messages using the SMTP protocol. This protocol allows
-remote servers to either accept a message, or to refuse it. Refused mails
-are written to the failure logfile, and are sent to the failure feedback
+remote servers to either accept a message or to refuse it. Refused mails
+are written to the failure logfile and are sent to the failure feedback
 loops (see diagram 1). 
 
 
@@ -71,3 +71,8 @@ variables are submitted:
 The "ID" and "recipient" variables allow you to link the incoming bounce
 to the original outgoing message that was sent. The "mailfrom", "rcptto"
 and "data" fields hold the message that was received by SMTPeter.
+
+## More information
+
+* [Feedback loops](./feedback-loops)
+* [Set up a feedback loop](./feedback-setup)

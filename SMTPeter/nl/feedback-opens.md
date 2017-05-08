@@ -44,3 +44,8 @@ Met elke POST call worden de volgende variabelen toegestuurd:
 
 De "ID" en "recipient" variabelen stellen je in staat om het aantal openingen te 
 linken aan de originele verstuurde e-mail.
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)
+* [Feedback loops instellen](./feedback-setup)
