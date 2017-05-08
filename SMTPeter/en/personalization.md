@@ -24,12 +24,12 @@ starts with a `{$` than your variable name and is closed with a `}`. Valid
 variables for example are `{$firstname}`, `{$age}` and `{$city}`.
 Formally, a variable is required to:
 
-* start with a dollar sign;
-* is surrounded by curly braces;
-* may contain alphanumeric characters. May not start with a number;
-* may contain dash (-) and underscore (_) symbols;
-* may not start with dash or underscore;
-* is case sensitive, meaning that `{$NAME}` is different from `{$name}`.
+* start with a dollar sign
+* is surrounded by curly braces
+* may contain alphanumeric characters. May not start with a number
+* may contain dash (-) and underscore (_) symbols
+* may not start with dash or underscore
+* is case sensitive, meaning that `{$NAME}` is different from `{$name}`
 
 The next table gives all variable notations:
 
@@ -72,14 +72,14 @@ brackets. So you can do for example the following:
 Besides the surrounding of curly braces, all standard math rules apply.
 The standard math operators (`+`, `-`, `*`, `/`)  and the modulo operator (`%`)
 are available. Note that if a value does not exists or does not contain a
-numeric value, it will behave as the value zero. 
+numeric value, it will behave as if its value were zero. 
 
 
 ## Conditional statements
 
 One of the key concepts of any programming language are conditional statements.
-A conditional block always starts with the {if} keyword (always with the
-curly braces) followed by the statement that is tested. A conditional
+A conditional block always starts with the {if} keyword (always between 
+curly braces) followed by the statement that is evaluated. A conditional
 block always ends with the if closing tag {/if}. A conditional block is only
 executed if the statement in the {if} part is true.
 
@@ -91,8 +91,7 @@ of the variable `$name` is equal to 'John'.
 ```
 
 But what if there's also a Sarah in your mailing list. You wouldn't want
-to display nothing to her, would you? That's where the `{elseif}` becomes
-the protagonist.
+to display nothing to her, would you? That's where the `{elseif}` comes in.
 
 ```text
 {if $name == 'John'}Hello John{elseif $name == 'Sarah'}Hello Sarah{/if}
@@ -128,8 +127,7 @@ A much better example would obviously be:
 ```
 
 The code snippet above means: if the value of name is empty, show 'Dear
-subscriber', otherwhise, show Dear John (or Sarah, or what is in the `{$name}`
-variable).
+subscriber', otherwise, show "Dear John" (or any other name in the `{$name}` variable).
 
 In the preceeding example, the operator == was used. This operator means 'is equal to'.
 It will evaluate to true if the left hand side of the `==` is exactly equal
@@ -197,8 +195,8 @@ Subsequently there is the `not` operator. This operator will invert the value
 that is given. So true becomes false and false becomes true. 
 Finally it is good to know that a variable itself will be converted to a
 boolean when used in an if statement. If the variable contains an empty string
-or the value 0, it will be evaluated as false. If it is not an empty string
-or not zero, it will be evaluated as true.
+or the value 0 it will be evaluated as false. If it is not an empty string
+or not zero it will be evaluated as true.
 
 
 ## Foreach
@@ -312,6 +310,7 @@ Messi
 
 Ibrahimovic    
 ```
+
 This is probably not what you had in mind while typing the foreach loop.
 But this is what you get since there is a new line before and after the
 variable and there are some spaces in front of it used as indentation.
@@ -322,6 +321,7 @@ To get a list of the names without the extra whitespace you should write:
     {$player}
 {/foreach}
 ```
+
 This is less readable but gives what you want:
 
 ```text
@@ -329,3 +329,7 @@ Ronaldo
 Messi
 Ibrahimovic
 ```
+
+## More information 
+
+* [Personalization modifiers](./personalization-modifiers)
