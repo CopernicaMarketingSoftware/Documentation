@@ -1,4 +1,4 @@
-## Publisher only functions
+# Publisher only functions
 
 Copernica has two online marketing tools: The Publisher and the Marketing 
 Suite. The Marketing Suite is newer and still under construction, so 
