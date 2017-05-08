@@ -127,3 +127,9 @@ Het XML bestand ziet er als volgt uit:
 ```
 
 *De naam kun je opvragen middels de instructies in bovenstaande tabel.*
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Niet-verzend REST calls](./rest-other-calls)
+* [Alle REST calls](all-rest-calls)

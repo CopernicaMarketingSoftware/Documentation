@@ -3,12 +3,12 @@
 All emails that you send through SMTPeter are [archived](archiving "Email archiving").
 The REST API can be used to retrieve (almost) all the properties from emails 
 that have passed through SMTPeter. For example, the "text" and "html" methods 
-allow yout to retrieve the text and html version of the mail.
+allow you to retrieve the text and html version of the mail.
 
 The following list shows the methods that can be used to retrieve properties 
 of sent emails. All these methods require a unique message ID parameter. This
 is the same identifier that was returned when you injected email with the
-"send" method of the [REST API](rest-api), or when you sent via the
+"send" method of the [REST API](rest-api) or when you sent via the
 [SMTP API](smtp-api).
 
 ```text
@@ -39,7 +39,7 @@ https://www.smtpeter.com/v1/recipient/MESSAGEID
 Keep in mind that SMTPeter normally changes the envelope address to
 a custom address to track bounces and errors. The envelope address that is
 returned by this method is therefore normally different than the address 
-that you originally injected. If you injected mail without an envelope,
+that you originally injected. If you injected mail without an envelope 
 an empty string is returned.
 
 
@@ -47,7 +47,7 @@ an empty string is returned.
 
 To get the text or HTML version of a sent message you can simply use the 
 "text" and "html" methods. The full original headers can be fetched with
-the "headers" method. The URI of these calls are:
+the "headers" method. The URLs of these calls are:
 
 ```text
 https://www.smtpeter.com/v1/text/MESSAGEID
@@ -75,7 +75,7 @@ from zero).
 
 With method (1) you can retrieve the names and ranks of the attachments belonging
 to a message, with method (2) and (3) you can download the attachment by providing
-the name or rank respectively.
+its name or rank respectively.
 
 
 ## Embedded content
@@ -100,3 +100,8 @@ With method (1) you can retrieve the names and ranks of the embedded content
 of the message, with method (2) and (3) you can download the content by providing
 the name or rank respectively.
 
+## More information
+
+* [REST API](./rest-api)
+* [Non-send REST calls](./rest-other-calls)
+* [All REST calls](all-rest-calls)

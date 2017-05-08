@@ -19,7 +19,7 @@
 * [Overige REST calls](rest-other-calls)
     * [Opvragen van berichten](rest-messages)
     * [Opvragen van events](rest-events)
-    * [Opvragen van log files](rest-logfiles)
+    * [Opvragen van logfiles](rest-logfiles)
     * [Opvragen van DMARC reports](rest-dmarc)
     * [Templates beheren](rest-templates)
 * [Feedback loops](feedback-loops)

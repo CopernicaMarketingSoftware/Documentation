@@ -11,7 +11,12 @@ files contain the following data in the respective order:
 | time      | The time when the delivery was reported (YYYY-MM-DD hh:mm:ss formatted) |
 | envelope  | The envelope of the message                                             |
 | recipient | The recipient of the message                                            |
-| from      | The from ip address                                                     |
-| to        | The to ip address                                                       |
+| from      | The "from" ip address                                                   |
+| to        | The "to" IP address                                                     |
 | attempt   | The attempt number (starting from 0)                                    |
 | tags      | The tags of the messge (semicolon separated)                            |
+
+## More information
+
+* [REST non-send calls](./rest-other-calls)
+* [REST retrieve events](./rest-events)
