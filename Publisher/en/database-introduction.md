@@ -1,55 +1,41 @@
 # Database management
 
-Copernica databases are fully configurable: you can define your own databases, 
-with exactly the fields that you need. This ensures that your business specific
-data can always be stored in Copernica and used for your campaigns. 
-The Copernica databases even support multiple dimensions. This allows you to 
-create a database with multiple layers to store, for example, per profile a 
-full order history.
+Copernica databases are fully configurable and fit all your information needs. 
+You can choose how you store your information and [import](./database-import) 
+and [export](database-export) everything with ease.
 
-The database is the central point of all your marketing campaigns. It contains 
-the profile data for segmentation and personalization. The
-data is also continuously enriched based on actions from the addressees, so 
-you can improve future campaigns based on the results of previous
-mailings. Although some Copernica users choose to regularly create new databases and
-upload new profile data, we always advise to keep and enrich the same
-database. The profiles in this databases become richer based on the feedback
-of previous campaigns. The database management tools are accessible through 
-the Marketing Suite. 
+Copernica databases can be layered, allowing you to do things like store 
+purchase histories. It's also possible to make [selections](./selections-introduction) 
+for segmentation and personalization. Copernica stores a lot of information 
+like clicks, opens, bounces and errors as well, which can help you create 
+more succesful campaigns in the future.
+
+Although some Copernica users choose to regularly create new databases and
+upload new profile data, we always advise to update your current database. 
+Since Copernica stores so much feedback from campaigns you miss out on a lot 
+of inofmration otherwise!
 
 ## Multiple dimensions
 
-If you work with databases, you will regularly run into the terms *collection*
-and *subprofile*. These are words that are used for layered databases. In a
-simple, one-dimensional database you only find normal fields and 
-interests: a shop owner could for example create a database with customers, 
-with fields for the customer name, his or her postal address and, of 
-course, the email address. Records in such a flat database are called 
-*profiles*.
+When working with Copernica software you will run into the terms *collection*
+and *subprofile* very often. A database becomes multidimensional when 
+you would start storing *collections* within your database, like the 
+purchase history for a customer. In this case we would refer to the customer 
+as the *profile* and to the order as the *subprofile*.
 
-However, a flat database can easily be turned into a multidimensional
-database by adding one or more *collections* to it. The show owner could for example add
-a collection *orders* to the database, with fields *date*, *product* and
-*price*. It then becomes possible to store a full order history for every 
-profile (every customer) in this database. The nested records in such a
-collection (in this case the orders) are called *subprofiles*.
+You could apply the same principle by storing a company's employees in 
+a collection, or a parent's children.
 
-This layered structure is very powerful. A collection for the order history 
-is just a first example. But there are many
-more uses, like a database with companies with a collection for all the
-employees per company or a database with parents, and for each parent a
-colletion of their children.
+## Things to consider
 
-## Other options
-
-When you're setting up your database, you have to take care of many different
-things. The structure of the fields and collections is of course important,
-but you need to do more before you can use a database to send out a mailing.
-You can for example install all sorts of rules to prevent that invalid data
-gets into your system, or that you accidentally send out a mailing to a wrong
-segment of your profiles.
+The most important thing to consider in your database is the structure. 
+You want your database to be clear and effective. It's also possible to 
+install rules and restrictions to prevent invalid data from entering your 
+system or sending out unintended mailings.
 
 ## More information 
+
+The following articles will help you build and maintain a database.
 
 * [Selections](./selections-introduction)
 * [Fields and collections](database-fields-and-collections)
