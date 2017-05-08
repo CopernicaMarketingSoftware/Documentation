@@ -8,7 +8,7 @@ log files contain the following data in the respective order:
 | Name        | Description                                                               |
 | ----------- | ------------------------------------------------------------------------- |
 | id          | The id of the message that generated the click                            |
-| time        | The time of the click in the form YYYY-MM-DD hh:mm:ss                     |
+| time        | The timestamp of registering click (YYYY-MM-DD hh:mm:ss formatted)        |
 | headers     | The headers that where used to make the call, separated by newlines       |
 | ip          | The IP address of the system where the link was clicked                   |
 | url         | The URL in the message that was clicked                                   |
@@ -19,3 +19,8 @@ log files contain the following data in the respective order:
 | countryname | The name of the country in which the click was generated                  |
 | countrycode | The code (alpha-2) of the country in which the click was generated        |
 | regioncode  | The code of the region in which the click was generated                   |
+
+## More information
+
+* [REST non-send calls](./rest-other-calls)
+* [REST retrieve events](./rest-events)

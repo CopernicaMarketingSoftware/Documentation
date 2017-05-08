@@ -1,8 +1,8 @@
 # Retrieve events
 
 Everything that passes through SMTPeter gets logged: deliveries, bounces,
-clicks, opens - all these events are written to log files. These log
-files are accessible through the [REST API](rest-logfiles). Yet, if you
+clicks, opens - all these events are written to log files. These logfiles 
+are accessible through the [REST API](rest-logfiles). However, if you
 are only interested in particular events that fulfill a certain requirement
 you can use the events rest call. All calls that are supported are:
 
@@ -151,3 +151,9 @@ all tags set.
 
 If you want to have events for a different period, you can specify the 
 `start` and/or `end` option.
+
+## More information
+
+* [REST API](./rest-api)
+* [Non-send REST calls](./rest-other-calls)
+* [All REST calls](all-rest-calls)
