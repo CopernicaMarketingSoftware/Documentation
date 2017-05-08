@@ -84,7 +84,6 @@ Als je accolades in een template of een document wilt opnemen die niet als Smart
 code hoeven te worden herkend, dan kun je dit op twee manieren doen: door {ldelim} en
 {rdelim} te gebruiken, of door van {literal} en {/literal} gebruik te maken.
 
-
 Om voor een groot stuk HTML code de Smarty engine uit te schakelen kun je {literal}
 en {/literal} gebruiken. Alle tekst die tussen {literal} en {/literal} staat wordt
 niet Smarty gecontroleerd op accolades. Alle accolades worden letterlijk overgenomen,
