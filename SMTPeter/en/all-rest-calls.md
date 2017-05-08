@@ -1,10 +1,10 @@
-# Alle available REST calls
+# All available REST calls
 
-In the table below, you find all the available REST calls for the SMTPeter API.
+In the table below you find all the available REST calls for the SMTPeter API.
 The REST API helps you by retrieving, deleting and creating data in your
 SMTPeter environment. This way, you can incorporate SMTPeter in your own
 website or application and you're absolutely free to determine which duties 
-SMTPeter must do for you.
+SMTPeter should perform.
 
 The following methods are accessible via HTTP GET, POST and DELETE:
 
