@@ -53,25 +53,27 @@ this by adding the parameter to the URL. The default format is JSON,
 other formats SMTPeter supports are:
 
 - JSON: gives back the template in JSON format;
-- HTML: gives back the template in HTML format, optimized for emailclients;
-- Webversion: gives back the template in HTML format, optimized for webclients;
+- HTML: gives back the template in HTML format, optimized for email clients;
+- Webversion: gives back the template in HTML format, optimized for web clients;
 - MIME: gives back the template in MIME format, with externally hosted images;
 - Embedded: gives back the template in MIME format, with embedded images;
 - Text: gives back the text version from a template.
 
-It's also possible to add extra personaliation variables in the GET method, because
+It's also possible to add extra personalization variables in the GET method, because
 then your templates will actually be personalized. 
 
 ## Creating templates
 
-You can create a new template by using a HTTP POST method and sending it to SMTPeter:
+You can build HTML and JSON templates with one of our template editors 
+within the SMTPeter dashboard. But you also can create a new template 
+by using a HTTP POST method and sending it to SMTPeter:
 
 ```text
 https://www.smtpeter.com/v1/template/{format}
 ```
 
 Creating templates is done by adding the JSON code to the body of a POST request.
-For all specificatons of the properties that can be used, you can take a look at:
+For all specifications of the properties that can be used, you can take a look at:
 [www.ResponsiveEmail.com](https://www.responsiveemail.com).
 
 The API gives back a link of the new template in the location header. 
