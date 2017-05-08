@@ -96,3 +96,4 @@ precies zien of je het goed hebt gedaan.
 * [DKIM](./dkim)
 * [SPF](./spf)
 * [MX](./mx)
+* [DNS](./dns)
