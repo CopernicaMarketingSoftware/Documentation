@@ -25,7 +25,7 @@ of the HTML code:
 ```
 
 If you send this message through SMTPeter and you have enabled SMTPeter's 
-"inline-css" feature, the above message is automatically converted. The
+"inline-css" feature the message above is automatically converted. The
 CSS code from the style block is copied to the style attributes from all
 matching HTML elements:
 
@@ -36,6 +36,9 @@ matching HTML elements:
 There are a couple of ways to enable this feature, depending on whether 
 you use the REST API or the SMTP API to inject emails into the SMTPeter 
 service.
+
+It is also wise to link to a [webversion](./webversion) for users that 
+are having trouble viewing the mail in their client.
 
 
 ## Enabling inline CSS using the SMTP API
@@ -63,10 +66,9 @@ x-smtpeter-inlinecss:   true
 The MIME header will be stripped from the mail when the mail is sent to
 the final recipient.
 
-
 ## Enabling inline CSS using the REST API
 
-If you use the REST API to send emails through SMTPeter, you can add the 
+If you use the REST API to send emails through SMTPeter you can add the 
 "inlinecss" parameter to your POST variables or your JSON input. This tells 
 SMTPeter to enable the inlinizer.
 
@@ -89,3 +91,8 @@ Content-Length: 302
 In the above example we've used JSON to format the entire email. You can 
 of course also submit regular POST data via the REST API.
 
+## More information
+
+* [REST API](./rest-api)
+* [SMTP API](./smtp-api)
+* [Webversion](./webversion)

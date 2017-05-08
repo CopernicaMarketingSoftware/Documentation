@@ -59,4 +59,4 @@ script and runs it when a click is registered.
 
 ## More information
 
-* [Followups general](./followups)
+* [Followups general](./follow-up-manager)

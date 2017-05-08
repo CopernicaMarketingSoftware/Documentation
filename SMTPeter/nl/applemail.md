@@ -14,3 +14,7 @@ Ga naar 'Accounts' en selecteer het account dat je aan SMTPeter wil koppelen. Kl
 
 Selecteer vervolgens bij 'Server uitgaande e-mail' de naam die je de SMTPeter-server hebt gegeven en sla je wijzigingen op. Vanaf nu worden al je uitgaande e-mails automatisch met SMTPeter verstuurd!
 
+## Meer informatie
+
+* [SMTP API configureren](./introduction-smtp-api)
+* [SMTP API](./smtp-api)

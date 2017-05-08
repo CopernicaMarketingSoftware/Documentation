@@ -5,11 +5,11 @@ technology that receivers use to verify whether an email was legitimate
 or whether it was faked: DMARC. DMARC was invented to solve some shortcomings
 of DKIM and SPF.
 
-To understand DMARC, one must realize that new features in email are alway 
+To understand DMARC, one must realize that new features in email are always   
 _optional_. Email has been around for ages, and new technologies may not 
 break existing email software. This means that even though DKIM and SPF 
 were invented to make email more secure, it still is perfectly legal to 
-send emails _without_ DKIM signatures, and to send email from servers 
+send emails _without_ DKIM signatures and to send email from servers 
 that are _not_ listed in SPF records. It is for example possible that the 
 IT department in an organization has updated its mail architecture and 
 ensured that everyone sends messages with perfectly valid DKIM signatures, 
@@ -19,10 +19,10 @@ messages without signatures.
 If a receiver gets a message from this company without a DKIM signature,
 there is for this receiver no way to find out whether this mail was sent
 by a malicious phisher, or by the employee who simply forgot
-to update. The simple fact that a DKIM signature is missing, or that there
+to update. The simple fact that a DKIM signature is missing or that there
 was no matching SPF record _could_ be an indication that something is
 terribly wrong, but it could also be a small mistake. So even though 
-DKIM and SPF were introducted, there was still no good way to 
+DKIM and SPF were introduced, there was still no good way to 
 distinguish valid mails from abuse. DMARC is a technology to solve this.
 
 
@@ -30,15 +30,15 @@ distinguish valid mails from abuse. DMARC is a technology to solve this.
 
 Just like DKIM and SPF, DMARC also relies on the DNS. DMARC allows you
 to add an extra record to your DNS server, and in that record you can
-specify things like "yes, all of my colleagues always send DKIM signed emails
-and we all send email from servers with valid SPF records, and if you ever 
+specify things like "Yes, all of my colleagues always send DKIM signed emails
+and we all send email from servers with valid SPF records and if you ever 
 receive an email from my company without a DKIM signature or from a server
 without SPF, just throw it away. And by the way, please keep me informed 
 about the messages that you throw away, so that I can check internally if 
-someone on the team forgot to update her computer".
+someone on the team forgot to update their computer".
 
 That's essentially what DMARC is. It allows receivers to query the DNS, so
-that they know what to do when a DKIM signature is missing, or what to do when SPF
+that they know what to do when a DKIM signature is missing or what to do when SPF
 records seem to be incorrectly configured. The receiver can check the DMARC
 record to find out whether this is a real indication that someone is trying
 to abuse the domain, or that the company has just not completely rolled out
@@ -48,19 +48,17 @@ Besides that, DMARC allows senders to receive periodic notifications
 from receivers about failed checks, so that they can roll out
 DMARC slowly, and get notifications if anything is wrong.
 
-
 ## Setting up DMARC
 
 Setting up DMARC is not always easy. The SPF and DKIM records already allow
 many different parameters, and DMARC makes it only more complicated. The
 SMTPeter dashboard helps you with the concept of "sender domains".
-A sender domain is a domain from which you intend to send out mail. 
+A [sender domain](./sender-domains) is a domain from which you intend to send out mail. 
 If you use the dashboard to configure a sender domain, SMTPeter automatically
 creates all the appropriate DNS records and private keys so that you can
 start sending mail using that domain. You just have to copy the DNS records 
 that were created by SMTPeter to your own DNS server (or give them to your 
 provider) and you are ready to go.
-
 
 ## Domains vs sub-domains
 
@@ -117,7 +115,6 @@ can enter the percentage that you would like to have, and the date when you
 want to have it deployed, and SMTPeter will every day automatically update your
 DNS records to slowly advance to this percentage.
 
-
 ## Processing reports
 
 Email receivers send back daily reports to SMTPeter in which they tell
@@ -125,4 +122,10 @@ how many emails failed the DKIM, SPF or DMARC checks. These daily reports
 are processed by SMTPeter and presented to you via the dashboard. It allows
 you to monitor whether your configuration is valid, and/or whether your
 domain is being abused.
+
+## More information
+
+* [Sender domains](./sender-domains)
+* [DKIM keys](dkim-signing)
+* [SPF validation](spf-validation)
 

@@ -13,5 +13,10 @@ bevatten de volgende informatie:
 | time        | Het tijdstip van de reactie (in JJJJ-MM-DD uu:mm:ss formaat)         |
 | envelope    | De envelope van het bericht waarop gereageerd werd                   |
 | recipient   | De recipient van het bericht waarop gereageerd werdt                 |
-| mime        | De mime van de reactie                                               |
+| mime        | De MIME van de reactie                                               |
 | tags        | De tags van het bericht waarop geregeerd werd (puntkomma gescheiden) |
+
+## Meer informatie
+
+* [REST niet-zend calls](./rest-other-calls)
+* [REST events opvragen](./rest-events)

@@ -4,15 +4,14 @@ Ever since email became commonplace for everyday communication, spammers and
 other crooks have taken advantage of the medium to try to lure people into buying
 certain pills or to kindly ask if they can help stash millions on behalf of a 
 deceased Nigerian princess. Especially with phishing emails, these culprits
-use forged sender addresses to make it look like a legit email, for instance
+use forged sender addresses to make it look like a legit email, for example 
 from your credit card company. To prevent these emails from actually reaching your inbox, 
 various tools have been developed over the years. SPF is one of them. 
 
 This article is intended for users who want to have background
 information about SPF, or who want to control the SPF records that are 
 created by us. If you want to set up SPF with your sender domain, please follow 
-the instructions on our article about [setting up sender domains with SMTPeter](sender-domains).
-
+the instructions on our article about [setting up sender domains with SMTPeter](introduction-sender-domains).
 
 ## What is SPF?
 
@@ -33,10 +32,10 @@ An SPF record is a setting in DNS. If you have a domain name, you can use
 DNS not only to store the IP address of your website, but also to
 advertise a list of IP addresses from which you send out email. When
 a receiver gets an email message from a server or computer who claims
-to represent you, it can check this DNS record. If the IP address of this
+to represent you it can check this DNS record. If the IP address of this
 server or computer is indeed in the list, it knows for sure that the mail 
 came from a valid source. On the other hand, when the IP is not listed in 
-the SPF record, it handles the mail with much more care, or even rejects
+the SPF record, it handles the mail with much more care or even rejects
 the message.
 
 With SPF records in your DNS you prevent random computers on the 
@@ -88,5 +87,11 @@ can be used to send email out of my name." If you use other servers too,
 then your SPF record has to be a little longer, but it should at least contain
 the "include:smtpeter.com" part, so that your mails can flow through 
 SMTPeter.
+
+## More information
+
+* [Sender domains](./sender-domains)
+* [DKIM keys](dkim-signing)
+* [DMARC records](dmarc-deployment)
 
 

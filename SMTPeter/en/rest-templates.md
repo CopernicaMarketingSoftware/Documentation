@@ -1,10 +1,9 @@
 # Managing templates
 
 In SMTPeter's dashboard it's easy and convenient to manage your templates. 
-All the templates are available by using the REST API. You can then use 
+All the templates are available by using the [REST API](./rest-api). You can then use 
 various methods to download, edit or create templates. And of course
 you can [send email](rest-send-template) with the templates.
-
 
 ## Retrieve templates
 
@@ -17,7 +16,7 @@ https://www.smtpeter.com/v1/templates/{start}/{length}
 ```
 
 The template method is only available when making a HTTP GET call.
-If you don't want to be porovided with all the templates, it's wise 
+If you don't want to be provided with all the templates, it's wise 
 to limit the timeframe with `{start}` and `{length}`. The call gives 
 back a JSON array in the following format:
 
@@ -52,12 +51,12 @@ You can specify what format you want the returned content to be. You do
 this by adding the parameter to the URL. The default format is JSON, 
 other formats SMTPeter supports are:
 
-- JSON: gives back the template in JSON format;
-- HTML: gives back the template in HTML format, optimized for email clients;
-- Webversion: gives back the template in HTML format, optimized for web clients;
-- MIME: gives back the template in MIME format, with externally hosted images;
-- Embedded: gives back the template in MIME format, with embedded images;
-- Text: gives back the text version from a template.
+- JSON: gives back the template in JSON format
+- HTML: gives back the template in HTML format, optimized for emailclients
+- Webversion: gives back the template in HTML format, optimized for webclients
+- MIME: gives back the template in MIME format, with externally hosted images
+- Embedded: gives back the template in MIME format, with embedded images
+- Text: gives back the text version from a template
 
 It's also possible to add extra personalization variables in the GET method, because
 then your templates will actually be personalized. 
@@ -77,7 +76,7 @@ For all specifications of the properties that can be used, you can take a look a
 [www.ResponsiveEmail.com](https://www.responsiveemail.com).
 
 The API gives back a link of the new template in the location header. 
-Accompanied a JSON object is also sent back, containing the template ID.
+A JSON object is also sent back, containing the template ID.
 The data you put in the body must be JSON. It looks like this:
 
 ```json
@@ -93,3 +92,9 @@ Content-Type: application/json
 
 { "id" : 2 }
 ```
+
+## More information
+
+* [REST API](./rest-api)
+* [Non-send REST calls](./rest-other-calls)
+* [All REST calls](all-rest-calls)

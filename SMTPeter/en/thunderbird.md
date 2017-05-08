@@ -1,14 +1,14 @@
 # Setting up Thunderbird
 
-If you use Mozilla Thunderbird as your email client, and you want to send all 
-your outgoing messages through SMTPeter, you can take the following steps
+If you use Mozilla Thunderbird as your email client and you want to send all 
+your outgoing messages through SMTPeter you can take the following steps
 to connect to SMTPeter.
 
 In Thunderbird go to account settings: 
 
 ![Account Settings](Images/account_settings.png "Go to account settings")
 
-In your account settings go to the Outgoing Server and press Add. A small 
+In your account settings go to the Outgoing Server and press "Add". A small 
 popup window comes up: 
 
 ![Add SMTP server](Images/add_smtp_server.png "Add SMTP server")
@@ -26,4 +26,9 @@ account settings page and select SMTPeter as your Outgoing Server.
 
 ![Set SMTP server](Images/set_smtp_server.png "Set SMTP server")
 
-And that's all the configuration you have to do! 
+And that's all the configuration you have to do!
+
+## More information
+
+* [Configuring the SMTP API](./introduction-smtp-api)
+* [SMTP API](./smtp-api)
