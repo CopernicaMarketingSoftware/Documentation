@@ -156,4 +156,4 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 * [Selectie condities](./selections-conditions)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
-* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)
+* [Tutorial: Email bounces afhandelen](./automatically-process-bounces)

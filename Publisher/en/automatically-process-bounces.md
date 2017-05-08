@@ -58,7 +58,7 @@ newsletter selection.
 ## More information
     
 * [Selection conditions](./selections-conditions)
-* [Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
-* [Make a birthday selection](./how-to-create-a-birthday-selection)
-* [Create a newsletter selection](./create-a-mailing-list)
+* [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
+* [Tutorial: Create a newsletter selection](./create-a-mailing-list)
 

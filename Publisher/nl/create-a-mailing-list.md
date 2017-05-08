@@ -71,4 +71,4 @@ die deze willen ontvangen.
 * [Uitschrijfgedrag](./database-unsubscribe-behavior)
 * [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
-* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)
+* [Tutorial: Email bounces afhandelen](./automatically-process-bounces)

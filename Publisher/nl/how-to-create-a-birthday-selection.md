@@ -21,4 +21,4 @@ klanten een mailtje op de verjaardag die ze hebben ingevoerd.
 * [Selectie condities](./selections-conditions)
 * [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
-* [Tutorial: Email bounces afhandelen](./automatically-process-email-bounces)
+* [Tutorial: Email bounces afhandelen](./automatically-process-bounces)

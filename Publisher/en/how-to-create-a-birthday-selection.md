@@ -17,6 +17,6 @@ your customers on their birthday!
 ## More information 
 
 * [Selection conditions](./selections-conditions)
-* [Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
-* [Create a newsletter selection](./create-a-mailing-list)
-* [Automatically process email bounces](./automatically-process-email-bounces)
+* [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Create a newsletter selection](./create-a-mailing-list)
+* [Tutorial: Automatically process email bounces](./automatically-process-email-bounces)
