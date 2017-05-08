@@ -1,18 +1,16 @@
 # Sending emails based on templates
 
-A couple of examples ([1](rest-send-json "Let SMTPeter create a MIME"), 
-[2](rest-mime)) of how you can send data to SMTPeter have already been given.
-Besides these options you can use [Responsive Email](https://www.responsiveemail.com/)
-templates too. These JSON templates brings a couple of advantages.
-Firstly, you can create the template with the extensive *drag-and-drop* 
-editor in the dashboard, so you don't have to write the raw
-HTML yourself, although this is definitely also an option. 
-Not only is it easy to create a template, you also have
-a clear overview of all your templates in the dashboard. A second benefit
+We have explained in the articles on [sending MIME data](./rest-mime) 
+and [letting SMTPeter create MIME data](./rest-send-json) how to transmit 
+data to SMTPeter. However, there is another option called [Responsive Email](https://www.responsiveemail.com/). 
+With Responsive Email you can create templates with the extensive *drag-and-drop* 
+editor in the dashboard, giving you another choice than providing your own 
+raw HTML. Not only is it easy to create a template with this, but it also 
+provides a clear overview of all your templates in the dashboard. A second benefit
 of using JSON templates is that emails based on a JSON template are responsive. This
 means that a email opened on a wide screen can be displayed differently than
-a email opened on a mobile device like tablet or smartphone. This implies
-that your email always looks great!
+a email opened on a mobile device like tablet or smartphone, making your email 
+look great on any device.
 
 
 ## Template IDs
@@ -31,7 +29,7 @@ JSON for using a template that you use in your POST request looks like this:
 
 Because of the fact that the templates make use of [Responsive Email](https://www.responsiveemail.com/)
 and thus JSON is supported, you can instead of supplying an ID also supply a complete JSON. You are free
-to supply the data as a "string" or a real JSON:
+to supply the data as a "string" or a JSON object:
 
 ```json
 {
@@ -84,11 +82,8 @@ If you have multiple recipients you can add the data per recipient like:
 ```
 
 In the template you can use the variables `{$firstname}`, `{$lastname}`,
-and `{$kids}`. For more information about the use of personalization, 
-please navigate to one of the following links:
-
-* [Personalization](personalization)
-* [Modifier overview](personalization-modifiers)
+and `{$kids}`. More information about this can be found in the article on 
+[personalization](./personalization).
 
 ## Overwrite elements from a template
 
@@ -111,21 +106,21 @@ templates:
 }
 ```
 
-With the example above you send a mailing based on template 12, but with a deviant
+With the example above you send a mailing based on template 12, but with a different
 subject. By providing the "subject" property, the saved subject from template 12 will
 not be used. In this case, the alternative subject you send along with the REST call
 is going to be used.
 
 The following template properties can all be overwritten by specifying them in the REST API:
 
-- subject;
-- text;
-- from;
-- replyTo;
-- to;
-- cc;
-- headers;
-- attachments.
+- subject
+- text
+- from
+- replyTo
+- to
+- cc
+- headers
+- attachments
 
 It's also possible for example to supply a different subject line, but also to add attachments to a mailing:
 
@@ -152,3 +147,11 @@ Or if you want SMTPeter to download the attachment for you:
     }]
 }
 ```
+
+## More information
+
+* [REST API](./rest-api)
+* [Advanced send options](./rest-send-advanced)
+* [Send MIME data](./rest-mime)
+* [Make MIME data with SMTPeter](./rest-send-json)
+* [Personalization](./personalization)

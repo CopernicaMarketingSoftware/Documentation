@@ -32,9 +32,9 @@ in `recipient`.
 
 If you want to send a mail with html, or add attachments, that is possible
 too. To see which properties SMTPeter supports you can read the
-[Let SMTPeter create MIME data](rest-send-json) documentation. SMTPeter
+["Let SMTPeter create MIME data"](rest-send-json) article. SMTPeter
 can also be used to send MIMEs created by you. For more information on this
-you can read the [Send MIME data](rest-mime) documentation.
+you can read the ["Send MIME data"](rest-mime) article.
 
 
 ## Explore the other possibilities
@@ -47,4 +47,4 @@ The REST API is comprehensive and provides a great number of options for you:
 * [Sending mail](rest-send-advanced)
 * [API response](rest-api-reaction)
 
-*All available REST calls can be found right [here](all-rest-calls).*
+*All available REST calls can be found right [here](./all-rest-calls).*

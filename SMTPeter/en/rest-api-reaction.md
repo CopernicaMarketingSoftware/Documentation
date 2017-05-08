@@ -1,7 +1,7 @@
 # API Response
 
 After a succesful request, SMTPeter sends a JSON object containing a unique identifier 
-for every recipient which is going to receive an email. 
+for every recipient that is going to receive an email. 
 
 ```json
 {
@@ -10,9 +10,9 @@ for every recipient which is going to receive an email.
 }
 ```
 
-The ids that are given back, could be used to acquire information by utilizing other methods 
-from the REST API. You are probably going to send email to multiple receivers with just 
-one call, and thus the returned value could possibly possess multiple ids and recipients.
+The IDs that are given back can be used to acquire information about this mailing 
+using other API methods. If you're sending email to multiple receivers with 
+one call the return data will also contain multiple IDs with their respective recipients.
 
 ## Settlement of errors
 
@@ -21,3 +21,9 @@ The REST API has a clear way of communicating errors. Namely, by giving back the
 that is being triggered. Providing wrong information doesn't matter per se as you will always 
 receive a textual explanation of what happened. A successful call always gives you back 
 a code between (and including) `200` and `202`.
+
+## More information
+
+* [REST API](./rest-api)
+* [Send MIME data](./rest-mime)
+* [Make MIME data with SMTPeter](./rest-send-json)

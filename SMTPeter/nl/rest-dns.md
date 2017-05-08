@@ -122,3 +122,7 @@ toegevoegd met suggesties om je records te verbeteren.
 ## Meer informatie
 
 - [Direct aan de slag met SMTPeter](./introduction)
+* [Afzenderdomeinen](./sender-domains)
+* [SPF validatie](./spf-validation)
+* [DKIM signing](./dkim-signing)
+* [DMARC deployment](./dmarc-deployment)
