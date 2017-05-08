@@ -18,10 +18,13 @@ If you do not want to bother with different accounts, you can instead use the
 email/password combination of your SMTPeter account or Copernica account to login.
 Note however that most additional features, including the tracking of clicks and opens, are disabled for this option.
 
+In general the [REST API](./rest-api) is recommended, as it is easier to use 
+and handles parameters much better.
+
 ## Examples
 
 To demonstrate how easy it is to connect with SMTPeter, we have three 
-examples of how to set SMTPeter for different email clients.
+examples of how to set up SMTPeter for different email clients.
 
 Before you set up your client, you first have to open SMTPeter's dashboard
 and create a SMTP login. Remember the password or copy it immediately to 
@@ -59,4 +62,9 @@ is disabled. When you connect to the SMTP API, you simply pick a login/password
 combination that has the features you need.
 
 The alternative method to enable or disable features is by adding special
-[MIME-headers](smtp-headers) to your email.
+[MIME-headers](smtp-headers) to your email or send through the [REST API](./rest-api).
+
+## More information
+
+* [REST API](./rest-api)
+* [MIME-headers](smtp-headers)

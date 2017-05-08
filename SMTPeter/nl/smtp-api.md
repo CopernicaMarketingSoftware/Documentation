@@ -41,3 +41,10 @@ Wanneer je verbinding maakt met de SMTP-API kies je gewoon de login en wachtwoor
 
 De alternatieve method is om opties aan en uit te zetten door middel van het
 meesturen van speciale [MIME-headers](smtp-headers) met de email.
+
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [MIME-headers](smtp-headers)
+

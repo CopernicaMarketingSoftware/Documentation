@@ -11,3 +11,8 @@ Vul de naam die je wilt weergeven en het adres dat je wilt gebruiken in. Klik op
 Hier vul je jouw SMTPeter gegevens in en de domeinnaam van SMTPeter, mail.smtpeter.com. Tevens selecteer je de poort die je wil gaan gebruiken.
 
 Hierna hoef je alleen nog maar de verificatiecode die Google naar het ingestelde e-mailadres heeft gestuurd in te vullen en je account is klaar om e-mail te versturen met SMTPeter.
+
+## Meer informatie
+
+* [SMTP API configureren](./introduction-smtp-api)
+* [SMTP API](./smtp-api)
