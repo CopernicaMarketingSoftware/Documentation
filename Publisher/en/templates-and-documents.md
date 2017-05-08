@@ -33,7 +33,5 @@ The following articles will help you in creating templates and documents.
 -   [Add textual content to a document using text blocks](./the-text-function-for-adding-textual-content-to-your-document.md)
 -   [Add images to a document using image blocks using image blocks](./the-image-function-for-adding-images-to-your-document.md)
 -   [Send a test e-mail](./send-a-test-mail-or-test-mailing.md)
--   [Do the Litmus test and find out how your email looks like in
-    various clients and browsers](./using-litmus-email-preview-to-test-your-email-newsletter.md)
 -   [Tips to reduce HTML errors](./reducing-html-errors.md)
 -   [Styling with CSS and XSLT](./css-and-xslt)

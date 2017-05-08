@@ -171,8 +171,9 @@ Amsterdam is gevestigd, EN die allemaal in de branche industrie opereren.
 Hier vindt je meer informatie en tutorials voor veelgebruikte selecties.
 
 * [Selectie beheer](./selections-introduction)
-* [Verjaardagsselectie](how-to-create-a-birthday-selection)
-* [Nieuwsbriefselectie](create-a-mailing-list)
-* [Automatisch verwerken van e-mailbounces](automatically-process-bounces)
+* [Tutorial: Verjaardagsselectie](how-to-create-a-birthday-selection)
+* [Tutorial: Nieuwsbriefselectie](create-a-mailing-list)
+* [Tutorial: Automatisch verwerken van e-mailbounces](./automatically-process-bounces)
+* [Tutorial: Een dubbele opt-in instellen voor nieuwe profielen](./create-a-double-optin-for-new-subscribers)
 
 

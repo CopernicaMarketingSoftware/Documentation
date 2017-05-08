@@ -134,5 +134,8 @@ You should then send your emails only to the selection you have created.
 
 ## More information
 
-- [Followups](./followups)
-- [Selections/Collections](./selections-introduction)
+* [Followups](./followups)
+* [Selections/Collections](./selections-introduction)
+* [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
+* [Tutorial: Create a newsletter selection](./create-a-mailing-list)
+* [Tutorial: Automatically process email bounces](./automatically-process-email-bounces)
