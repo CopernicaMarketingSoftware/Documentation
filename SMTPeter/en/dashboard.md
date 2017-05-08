@@ -12,8 +12,8 @@ overviews you can find in the dashboard:
 * [Configure sender domains](./introduction-sender-domains)
 * [Get the access token for the REST API](./introduction-rest-api)
 * [Configure the SMTP API](./introduction-smtp-api)
-* Obtain statistics
-* Browse and download log files
-* Create an administrate your email templates
-* Analyze your DMARC reports
+* [Obtain statistics](./statistics)
+* [Browse and download log files](rest-logfiles)
+* [Create an administrate your email templates](rest-templates)
+* [Analyze your DMARC reports](./dmarc-deployment)
 * Analyze your domain reputation

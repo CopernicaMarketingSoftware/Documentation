@@ -77,3 +77,8 @@ Content-Length: 302
 
 Bovenstaand bericht gebruikt JSON om de hele mail te formatteren. Je kunt 
 natuurlijk ook standaard POST data toevoegen via de REST API.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [SMTP API](./smtp-api)
