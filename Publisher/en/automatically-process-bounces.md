@@ -55,3 +55,10 @@ newsletter selection.
     opt-in](./create-a-double-optin-for-new-subscribers.md)
     to keep your database clean in the first place
 
+## More information
+    
+* [Selection conditions](./selections-conditions)
+* [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
+* [Tutorial: Create a newsletter selection](./create-a-mailing-list)
+

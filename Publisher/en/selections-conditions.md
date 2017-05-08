@@ -92,6 +92,7 @@ AND
 You can find more information and tutorials on often used selections here.
 
 * [Selection management](./selections-introduction)
-* [Birthday selection](how-to-create-a-birthday-selection)
-* [Newsletter selection](create-a-mailing-list)
-* [Automatically processing email bounces](automatically-process-bounces)
+* [Tutorial: Birthday selection](./how-to-create-a-birthday-selection)
+* [Tutorial: Newsletter selection](./create-a-mailing-list)
+* [Tutorial: Automatically processing email bounces](./automatically-process-bounces)
+* [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)

@@ -58,3 +58,10 @@ response = mySMTPeterConnection.post("send", data)
 # Print response
 pprint.pprint(response.json())
 ```
+
+## More infomation
+
+* [Configure the REST API](./introduction-rest-api)
+* [About the REST API](./rest-api)
+* [All REST API calls](./all-rest-calls)
+* [PHP example](./php-example)
