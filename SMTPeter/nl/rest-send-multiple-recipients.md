@@ -33,3 +33,9 @@ het bericht ontvangt. Charles wordt in dit geval dus ge-bcc'd.
 SMTPeter biedt ook de mogelijkheid om een gepersonaliseerde e-mail naar meerdere 
 ontvangers te versturen. Wil je weten hoe je dat kunt doen? 
 [Personalisatie van e-mails](rest-send-personalize)
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Aanmaken van MIME data met SMTPeter](./rest-send-json)
+* [Personalizatie](./rest-send-personalize)

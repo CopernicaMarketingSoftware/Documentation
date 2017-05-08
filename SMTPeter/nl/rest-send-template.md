@@ -162,3 +162,11 @@ formaat van Copernica's [Responsive Email](https://www.responsiveemail.com) serv
 Op de speciale website over Responsive Email vind je [uitgebreide documentatie](https://www.responsiveemail.com/json/top-level-properties) 
 en voorbeelden van alle properties, inclusief de opgesomde properties die via de REST 
 call mogen worden overschreven.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Geavanceerde verzender opties](./rest-send-advanced)
+* [Verzenden van MIME data](./rest-mime)
+* [Aanmaken van MIME data met SMTPeter](./rest-send-json)
+* [Personalizatie](./personalization)

@@ -36,3 +36,11 @@ Hiermee kun je aangeven welke soort berichten je over de bounces wilt ontvangen.
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
 ```
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Geavanceerde verzend opties](./rest-send-advanced)
+* [Aangepaste DSN eigenschappen voor notificaties](./rest-dsn)
+* [Aanmaken van MIME data met SMTPeter](./rest-send-json)
+* [API respons](./rest-api-reaction)

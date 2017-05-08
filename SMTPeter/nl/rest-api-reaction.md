@@ -25,3 +25,9 @@ in kwestie. Het opgeven van verkeerde data of andere foutmeldingen maakt
 niet uit, omdat je ook altijd een textuele uitleg terugkrijgt over wat
 precies fout is gegaan. Een succesvolle call geeft je altijd een status
 code terug van `200` tot en met `202`.
+
+## Meer informatie
+
+* [REST API](./rest-api)
+* [Versturen van MIME data](./rest-mime)
+* [Aanmaken van MIME data met SMTPeter](./rest-send-json)
