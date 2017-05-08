@@ -23,25 +23,29 @@ worden met Copernica marketing software.
 ## Snelle tips voor een betere score
 
 **Maak een tekstversie**
+
 Sommige ontvangers kunnen of willen alleen text emails ontvangen. Voeg daarom 
 altijd een tekstversie bij je mail. Zorg er ook voor dat deze grotendeels 
 overeenkomt met de inhoud van je HTML bericht.
 
 **Vermijd spam-achtige woorden en zinnen**
+
 Sommige woorden worden vaak gebruikt in spam, waardoor ze jouw email er minder 
 betrouwbaar uit laten zien. Dit kunnen bijvoorbeeld de namen van drugs zijn, 
 of hun chemische namen. Ook woorden die met pornografie te maken hebben worden 
 sterk geassocieerd. Het is dus verstandig deze woorden te vermijden, net 
 als verkeerd gespelde versies van deze woorden.
 
-**Gebruik tekst i.p.v. een url voor je links*
+**Gebruik tekst i.p.v. een url voor je links**
+
 Sommige email clients beschouwen links met een URL als phishing pogingen. 
 We hebben het over het volgende soort links:
 
-`<a  href="http://www.google.com">http://www.google.com</a>   <a  href="http://www.google.com">www.google.com</a>`\
+`<a  href="http://www.google.com">http://www.google.com</a>`
+`<a  href="http://www.google.com">www.google.com</a>`
 
 De originele link wordt vervangen door ons pic server domein (http://pic.vicinity...) 
-om bijvoorbeeld clicks te kunnen registreren. Sommige email clients zien 
+om bijvoorbeeld klik te kunnen registreren. Sommige email clients zien 
 dat de link niet hetzelfde is als de URL waar de gebruiker heen denkt te 
 gaan en verhogen daardoor je spam score. Je kunt beter de URL vervangen 
 door een beschrijving van de link, zoals hier:
