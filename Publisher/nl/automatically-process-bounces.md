@@ -1,4 +1,4 @@
-# Het automatisch verwerken van bounces
+# Selecties tutorial: Het automatisch verwerken van bounces
 
 Bij het afleveren van een e-mail kunnen diverse fouten optreden. Het is
 bijvoorbeeld mogelijk dat een e-mailadres niet meer bestaat, of omdat
@@ -17,15 +17,13 @@ Stap 1. Bounce selectie maken
 -----------------------------
 
 1.  Maak op de database een nieuwe selectie aan op basis van
-    ‘**Resultaten e-mailcampagnes**’.
-2.  Kies hier voor **profielen waar een mailing naar is verstuurd**.
-3.  De mailing moet zijn verstuurd na ‘de datum van de 1e verzonden
+    de resultaten van eerdere mailings.
+2.  De mailing moet zijn verstuurd na ‘de datum van de 1e verzonden
     mailing, bijvoorbeeld 1 juli 2013’ en voor **0 dagen geleden**(kies
-    onderaan de kalender voor ‘*gebruik variabele datum*’)
-4.  Kies bij resultaat ‘**Er moet een foutmelding zijn geregistreerd**’
-5.  Kies bij ‘Soort fout’ een andere fout, en vervolgens uit de lijst
-    met foutsoorten voor ‘**Fout die bij een volgende verzending
-    waarschijnlijk weer optreedt**’. Kies voor meer dan 1 bericht(en).\
+    onderaan de kalender voor ‘*gebruik variabele datum*’).
+4.  Kies bij resultaat ‘**Er moet een foutmelding zijn geregistreerd**’.
+5.  Selecteer het soort fouten dat je uit wilt sluiten, bijvoorbeeld hard 
+    bounces en hoe veel errors er voor mogen zijn gekomen.
 6.  Sla de selectieconditie op.
 
 Stap 2. Inhoud van deze selectie uitsluiten van nieuwsbriefselectie
@@ -33,7 +31,7 @@ Stap 2. Inhoud van deze selectie uitsluiten van nieuwsbriefselectie
 
 Voeg een nieuwe regel toe aan de nieuwsbriefselectie om er voor te
 zorgen dat naar adressen die in de foutselectie zijn opgenomen geen mail
-meer verstuurd zal worden .
+meer verstuurd zal worden.
 
 1.  Ga naar de selectie met je actieve nieuwsbriefabonnees om de
     selectie te bewerken.
@@ -43,3 +41,10 @@ meer verstuurd zal worden .
 4.  Kies hier voor ‘**Check inhoud andere selectie**’. Kies voor de
     bounceselectie en voor ‘**Alle profielen niet in bovenstaande
     selectie**’.
+    
+## Meer informatie
+
+* [Selectie condities](./selections-conditions)
+* [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)

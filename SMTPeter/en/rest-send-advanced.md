@@ -20,7 +20,10 @@ or you can tell SMTPeter to inlinize your CSS code.
 
 By setting the "inlinecss" variable to true you enable the feature that 
 CSS stylesheets in the header of your email are converted into inline style
-attributes in the HTML code.
+attributes in the HTML code. Because of how some email clients handle CSS 
+a standard stylesheet might cause your email to look different than intended. 
+See the article on [inline CSS](./inline-css) for more background and 
+how to prevent this.
 
 
 ### Tracking clicks, opens and bounces
@@ -105,7 +108,7 @@ JSON object with four (optional) fields:
 
 The "notify" property is the most important one: you can specify what kind of events 
 should trigger an email notification. Possible values are "NEVER", "FAILURE", 
-"SUCCESS" or "DELAY". A comma seperated list of values is also supported.
+"SUCCESS" or "DELAY". A comma separated list of values is also supported.
 
 The "ret" value may hold the values "FULL" or "HDRS" to specify whether the
 notification should hold the full original email, or just the headers.
@@ -118,9 +121,9 @@ property.
 
 ### Setting for embedded images
 
-Having embedded images in your mime may give some [issues](images). SMTPeter
-can subtract the embedded images from your mime, host them, and rewrite
-the links in the HTML part of the mime to the remote location.
+Having embedded [images](./images) in your MIME may give some issues. SMTPeter
+can remove the embedded images from your MIME, host them and rewrite
+the links in the HTML part of the MIME to the remote location to prevent issues.
 The option can be enabled to set the "images" property in the JSON to
 "hosted". The default is "default", which simply does nothing.
 
@@ -130,3 +133,11 @@ The option can be enabled to set the "images" property in the JSON to
     "images": "hosted"|"default"
 }
 ```
+
+## More information
+
+* [REST API](./rest-api)
+* [Send MIME data](./rest-mime)
+* [Make MIME data with SMTPeter](./rest-send-json)
+* [Images with SMTPeter](./images)
+* [Inline CSS](./inline-css)

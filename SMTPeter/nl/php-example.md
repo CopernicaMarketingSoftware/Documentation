@@ -149,3 +149,10 @@ $messageID = "your message id";
 $dates = $object->get("text/$messageID");
 print_r($dates);
 ```
+
+## Meer informatie
+
+* [REST API configureren](./introduction-rest-api)
+* [REST API algemeen](./rest-api)
+* [Alle REST API calls](./all-rest-calls)
+* [Python voorbeeld](./python-example)

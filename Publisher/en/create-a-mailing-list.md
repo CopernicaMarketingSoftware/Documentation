@@ -70,3 +70,6 @@ to receive it.
 * [Selections](./selections-introduction)
 * [Unsubscribe function](./personalization-functions-unsubscribe)
 * [Unsubscribe settings](./database-unsubscribe-behavior)
+* [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
+* [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
+* [Tutorial: Automatically process email bounces](./automatically-process-email-bounces)

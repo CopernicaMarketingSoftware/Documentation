@@ -82,7 +82,7 @@ use API call (2) to get the records without using CNAME's.
 ## DNS status
 
 Once you've installed the recommended DNS records, you can let us check
-whether you've done this correctly with the following API call:
+whether you've done so correctly with the following API call:
 
 ```txt
 https://www.smtpeter.com/v1/dns/yourdomain.com/status
@@ -124,4 +124,8 @@ human readable messages with improvement suggestions per record.
 
 ## More information
 
-- [Getting started with SMTPeter](./introduction)
+* [Getting started with SMTPeter](./introduction)
+* [Sender domains](./sender-domains)
+* [SPF validation](./spf-validation)
+* [DKIM signing](./dkim-signing)
+* [DMARC deployment](./dmarc-deployment)
