@@ -1,8 +1,8 @@
 # De REST API
 
-Met de REST API kun je automatische koppelingen met Copernica maken. Je kunt
-bijvoorbeeld je website of app zo programmeren dat hij met behulp van de REST
-API gegevens in je Copernica-account ophaalt, creëert, updatet of verwijdert.
+Met de REST API kun je automatische koppelingen met Copernica maken. 
+Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp 
+van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, geüpdatet of verwijderd.
 Dit gaat automatisch, dus buiten de *user interface* om.
 
 * [Introductie: de REST api in een notendop](rest-introduction)
