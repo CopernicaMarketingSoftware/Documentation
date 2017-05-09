@@ -62,7 +62,8 @@ template ook daadwerkelijk wordt gepersonaliseerd.
 
 ## Creëren van templates
 
-Je kunt een nieuwe template creëren door een HTTP POST methode te versturen 
+Naast het creëren van templates met behulp van de template editor, kun je ook
+nieuwe templates opslaan door deze met een HTTP POST methode te versturen 
 naar SMTPeter:
 
 ```text
