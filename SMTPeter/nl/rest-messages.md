@@ -57,7 +57,7 @@ https://www.smtpeter.com/v1/html/MESSAGEID
 https://www.smtpeter.com/v1/header/MESSAGEID
 ```
 
-De MESSAGEID is uiteraard de ID van het bericht en de teruggestuurde 
+De MESSAGEID is uiteraard de "id" van het bericht en de teruggestuurde 
 tekst is in regulier *plain text* formaat.
 
 
@@ -71,7 +71,7 @@ Je kunt de bijlages van een e-mail opvragen via de volgende methode:
 (3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
 ```
 
-Hierbij is MESSAGEID de message ID waar je de bijlages van wil hebben, 
+Hierbij is MESSAGEID de message "id" waar je de bijlages van wil hebben, 
 NAME de naam van de bijlage en NUMBER de rang van je bijlage 
 (startend vanaf 0).
 
@@ -93,7 +93,7 @@ wat bij een e-mail hoort, te weergeven.
 (3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
 ```
 
-Hierbij is MESSAGEID de message ID waar je de embedded content van wilt hebben,
+Hierbij is MESSAGEID de message "id" waar je de embedded content van wilt hebben,
 NAME de naam van de embedded content en NUMBER de rang van de embedded content
 (startend vanaf 0).
 

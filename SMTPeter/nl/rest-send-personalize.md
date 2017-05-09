@@ -9,7 +9,7 @@ De gegevens van de ontvanger worden, op de aangegeven plaatsen, ingevuld
 door SMTPeter nog voordat het bericht daadwerkelijk wordt verstuurd. 
 
 De manier waarop je in je bericht aangeeft waar iets vervangen moet worden
-is gebaseerd op [SMARTY](http://www.smarty.net/). SMARTY maakt het makkelijk
+is gebaseerd op een speciale syntax. Deze syntax maakt het makkelijk
 om tekst met code te mengen. Meer hierover volgt later. Allereerst bespreken
 we hoe je personalisatie data meegeeft.
 
@@ -17,8 +17,8 @@ we hoe je personalisatie data meegeeft.
 ## Personalisatie data bij één ontvanger
 
 Als je een e-mail verstuurd naar één ontvanger, kun je de personalisatie
-data in de JSON meegeven in de `data` property. Een JSON ziet er wellicht
-als volgt uit:
+data in de JSON meegeven in de `data` property. Een JSON ziet er dan als 
+volgt uit:
 
 ```json
 {
@@ -73,8 +73,8 @@ variabele "John" als de e-mail naar john@doe.com wordt verstuurd.
 ## Gebruik van personalisatie variabelen
 
 Eerder is al besproken hoe je kunt aangeven wat precies gepersonaliseerd moet worden.
-Je doet dit door middel van SMARTY. Je kunt de variabele in SMARTY aanroepen 
-door `{$variabeleNaam}` te gebruiken. Een simpel voorbeeld hiervan is:
+Je doet dit door middel van een gemakkelijke syntax. Je kunt de variabelen aanroepen 
+door bijvoorbeeld `{$variabeleNaam}` te gebruiken. Een simpel voorbeeld hiervan is:
 
 ```json
 {
@@ -115,10 +115,10 @@ De variabele `recipient` krijg je automatisch en is gelijk aan
 het recipient adres. Je kunt nagaan dat in dit voorbeeld de 
 recipient variabele in de "to" header wordt gebruikt.
 Voor uitgebreide informatie over de mogelijkheden
-van SMARTY, verwijzen we je graag naar het overzicht van
+van deze syntax, verwijzen we je graag naar het overzicht van
 de [modifiers](personalization-modifiers). 
 
 Wist je al dat je met SMTPeter ook templates kunt versturen? 
 Dit scheelt een hoop tijd en ziet er professioneel uit:
 
-* [e-mail templates](rest-send-template)
+* [E-mail templates](rest-send-template)

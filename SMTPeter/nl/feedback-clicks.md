@@ -47,7 +47,7 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
     </tr>
 </table>
 
-De "ID", "recipient" en "tags" variabelen stellen je in staat om de klik te linken aan de 
+De "id", "recipient" en "tags" variabelen stellen je in staat om de klik te linken aan de 
 originele verstuurde e-mail.
 
 ## Meer informatie

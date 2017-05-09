@@ -3,8 +3,8 @@
 Het kan voorkomen dat je dezelfde e-mail naar meerdere ontvangers wilt versturen. 
 Bijvoorbeeld wanneer er meerdere "to" of "cc" headers zijn, of wanneer je dezelfde 
 e-mail wilt bcc-en. Je hoeft niet per se voor elke ontvanger een POST request te sturen.
-Je kunt in zo'n geval alle recipients die de e-mail moeten ontvangen in de
-mee te zenden JSON specificeren in de "recipients" property. 
+Je kunt in zo'n geval alle recipients, die de e-mail moeten ontvangen, in de
+mee te zenden JSON specificeren. Je doet dit bij de "recipients" property. 
 
 Hieronder staat een voorbeeld van een JSON waarbij de e-mail naar meerdere ontvangers wordt verstuurd:
 

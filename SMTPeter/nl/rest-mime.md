@@ -10,11 +10,11 @@ protocol en de algehele "MIME" data.
     "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
 ```
-Om alles leesbaar te maken, hebben we het merendeel van de "MIME" code van het 
-voorbeeld verwijderd. Als je zelf geen "MIME" bericht wil maken, kun je de 
-property weglaten. Gebruik dan wel de speciale properties zoals "subject", 
-"text" en "html", zodat SMTPeter de mime data kan aanmaken (zie 
-[MIME door SMTPeter laten maken](rest-send-json)).
+Het merendeel van de "MIME" code is in dit geval weggelaten om het voorbeeld
+makkelijk te kunnen begrijpen. Je kunt de "mime" property weglaten, als je 
+zelf geen "MIME" bericht wil maken. Gebruik dan wel de speciale properties 
+zoals "subject", "text" en "html", zodat SMTPeter de mime data kan aanmaken 
+(zie [MIME door SMTPeter laten maken](rest-send-json)).
 
 Je hoeft enkel en alleen een *recipient adress* aan te leveren om een e-mail te
 versturen. Echter, als je bekend bent met het SMTP protocol weet je dat je
@@ -26,8 +26,8 @@ doet dit proces helemaal zelfstandig.
 
 Het is ook mogelijk om zelf bounces af te handelen. Dit doe je door een extra 
 envelope adres toe te voegen aan de *input data*. Naast dit envelope adres
-is het wellicht ook interessant om een [DSN property](rest-dsn "REST en DSN Messages") toe te voegen.
-Hiermee kun je aangeven welke soort berichten je over de bounces wilt ontvangen.
+is het wellicht ook interessant om een [DSN property](rest-dsn "REST en DSN Messages") 
+toe te voegen. Hiermee kun je aangeven welke soort berichten je over de bounces wilt ontvangen.
 
 ```json
 {

@@ -5,7 +5,7 @@ Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp
 van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, geüpdatet of verwijderd.
 Dit gaat automatisch, dus buiten de *user interface* om.
 
-* [Introductie: de REST api in een notendop](rest-introduction)
+* [Introductie: de REST API in een notendop](rest-introduction)
 * [HTTP requests sturen en antwoorden ontvangen](rest-requests)
 * [OAuth2 koppelingen](rest-oauth)
 * [REST events](rest-get-events.md)
@@ -59,11 +59,11 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/subprofile/$id](./rest-get-subprofile.md)                                               | Opvragen subprofielgegevens                       |
 | GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields.md)                                 | Opvragen subprofielvelden                         |
 | GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles.md)                                                       | Opvragen van alle logfiles                        |
-| GET       | [api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)					                            | Opvragen van namen van logfiles                   |
+| GET       | [api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)                                              | Opvragen van namen van logfiles                   |
 | GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv.md)                                             | Downloaden van logfile in CSV formaat             |
 | GET       | [api.copernica.com/v1/logfiles/$name/json](./rest-get-logfiles-json.md)                                       | Downloaden van logfile in JSON formaat            |
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml.md)                                         | Downloaden van logfile in XML formaat             |
-| GET       | [api.copernica.com/v1/email/$addres/events](./rest-get-email-events)                                          | Opvragen email events                             |
+| GET       | [api.copernica.com/v1/email/$addres/events](./rest-get-email-events)                                          | Opvragen e-mail events                            |
 | GET       | [api.copernica.com/v1/message/$id/events](./rest-get-message-events)                                          | Opvragen MS bericht events                        |
 | GET       | [api.copernica.com/v1/old/message/$id/events](./rest-get-old-message-events)                                  | Opvragen Publisher bericht events                 |
 | GET       | [api.copernica.com/v1/old/document/$id/events](./rest-get-old-document-events)                                | Opvragen Publisher document events                |
@@ -106,7 +106,7 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                            | Toevoegen van een subprofielen aan een profiel    |
 | PUT       | [api.copernica.com/v1/collection/$id](./rest-put-collection.md)                                               | Bijwerken collectiegegevens                       |
 | POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields.md)                                | Aanmaken veld in een collectie                    |
-| PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)                               | Bijwerken veld in collectie                        |
+| PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)                               | Bijwerken veld in collectie                       |
 | POST      | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews.md)                          | Aanmaken van een miniselectie                     |
 | PUT       | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe.md)                       | Bijwerken afmeldgedrag van een collectie          |
 | PUT       | [api.copernica.com/v1/miniview/$id](./rest-put-miniview.md)                                                   | Bewerken miniselectiegegevens                     |

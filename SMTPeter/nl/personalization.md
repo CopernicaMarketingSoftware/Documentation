@@ -24,29 +24,34 @@ Er zijn een aantal variabelen die we veelvuldig voorbij zien komen,
 bijvoorbeeld `{$firstname}`, `{$age}` en `{$city}`.
 In het algemeen moet een variabele aan de volgende criteria voldoen:
 
-* is omringd met accolades,
-* beginnen met een $ teken,
-* kan alphanumerieke karakters bevatten. Mag niet met een cijfer beginnen,
-* kan een verbindingsstreepje (-) en/of lage streepje (_) bevatten,
-* kan niet beginnen met verbindingsstreepje of lagestreepje,
-* is hoofdlettergevoelig, wat betekent dat {$NAME} anders is dan {$name}.
+* is omringd met accolades;
+* beginnen met een `$` teken;
+* kan alphanumerieke karakters bevatten. Mag niet met een cijfer beginnen;
+* kan een verbindingsstreepje (-) en/of lage streepje (_) bevatten;
+* kan niet beginnen met verbindingsstreepje of lagestreepje;
+* is hoofdlettergevoelig, wat betekent dat `{$NAME}` anders is dan `{$name}`.
 
 De volgende tabel weergeeft alle variabelen:
 
+```text
 | Syntax     | Betekenis                                               |  
 | ---------- | ------------------------------------------------------- |
 | {$foo}     | Laat een simpele variabele zien (geen array/object).    |
 | {$foo[4]}  | Laat het 5de element van een 'zero-indexed array' zien. |
 | {$foo.bar} | Laat de "bar" value van een object zien.                |
+```
 
 Met deze notaties kun je combinaties maken. Voorbeelden van combinaties 
 zijn:
+
+```text
 
 | Syntax            | Betekenis                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------- |
 | {$foo.bar.baz}    | Laat de value zien van de "baz" key binnen de array "bar" wat behoort tot $foo.          |
 | {$foo[4].baz}     | Laat de value zien van de "baz" key binnen het 5de element van $foo.                     |
 | {$foo.bar.baz[4]} | Laat het 5de element van "baz" zien, die in "bar" zit en onderdeel is van $foo.          |
+```
 
 Het is mogelijk om met een index nummer toegang te krijgen tot elementen in 
 een array, als een variabele een object is. Let erop dat je ook hier start 
@@ -148,6 +153,8 @@ De conditie evalueert tot true als de linkerkant gelijk is aan de rechterkant. D
 operator `==` is een van de vele operators die je kunt gebruiken om de condities voor
 de statements op te bouwen. Hier is de complete lijst:
 
+```text
+
 | Syntax voorbeeld  | Betekenis                                             |
 | ----------------- | ----------------------------------------------------- |
 | $a == $b          | $a en $b zijn gelijk                                  |
@@ -159,7 +166,7 @@ de statements op te bouwen. Hier is de complete lijst:
 | $a AND $b         | $a en $b zijn true                                    |
 | $a OR $b          | $a of $b (of beide) zijn true                         |
 | not $a            | Tegengestelde, niet gelijk aan $a evalueert tot true  |
-
+```
 
 Met de eerste zes operators (== tot aan <=) vergelijk je $a en $b met elkaar.
 De uitkomst van de conditie evalueert tot true als de twee geteste waardes 
@@ -175,22 +182,25 @@ werk gaat.
 
 Voor AND geldt:
 
+```text
+
 | $a    | $b    | resultaat |
 | ----- | ----- | --------- |
 | true  | true  | true      |
 | true  | false | false     |
 | false | true  | false     |
 | false | false | false     |
-
+```
 Voor OR geldt:
 
+```text
 | $a    | $b    | resultaat |
 | ----- | ----- | --------- |
 | true  | true  | true      |
 | true  | false | true      |
 | false | true  | true      |
 | false | false | false     |
-
+```
 Je kunt AND bijvoorbeeld op deze manier gebruiken:
 
 ```text
