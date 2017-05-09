@@ -1,4 +1,4 @@
-# Send via REST API
+# Send with REST API
 
 SMTPeter has a powerful and secure REST API which makes use of the HTTPS protocol.
 To access the REST API, you need an API access token. You can find this
@@ -26,9 +26,9 @@ Content-Length: 246
     "text":         "This is example content",
 }
 ```
-When sending this call, SMTPeter generates a MIME (i.e. an email) with the specified `from`,
-`to`, `subject`, and `text` and will send the mail to the address specified
-in `recipient`. 
+When sending this call, SMTPeter generates a MIME (i.e. an email) with the 
+specified `from`, `to`, `subject`, and `text` and will send the mail to the 
+address specified in `recipient`. 
 
 If you want to send a mail with html, or add attachments, that is possible
 too. To see which properties SMTPeter supports you can read the

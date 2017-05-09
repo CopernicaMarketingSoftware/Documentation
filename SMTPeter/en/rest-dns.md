@@ -1,4 +1,4 @@
-# Obtaining DNS information
+# DNS settings
 
 After you've set up one or more sender domains, you must update your DNS records 
 to ensure that the public keys for the DKIM signatures, and your SPF and DMARC 
