@@ -1,6 +1,6 @@
 # SMTP API configureren
 
-Naast de REST API heeft SMTPeter een traditionele SMTP API. Deze API is
+Naast de REST API heeft SMTPeter ook een traditionele SMTP API. Deze API is
 vooral nuttig als je e-mails wilt versturen met traditionele e-mailclients
 zoals Outlook en Thunderbird, of wanneer je wilt verbinden met een mobiele
 telefoon of tablet.
@@ -12,8 +12,8 @@ Nu kun je per aangemaakt account de verschillende toepassingen beheren.
 Vervolgens kun je de e-mailclient met SMTPeter verbinden. De benodigde
 instelling voor de specifieke ports kun je [hier](smtp-ports) vinden. 
 Voor meer informatie kun je de algemene documentatie omtrent de [SMTP API](smtp-api) bekijken. 
-Hier vind je onder anderen ook voorbeelden hoe je GMail, Apple mail, 
-Thunderbird, en Android in kunt stellen.
+Hier vind je onder anderen ook voorbeelden over hoe je Gmail, Apple mail, 
+Thunderbird, en Android kunt instellen.
 
 
 ## Meer informatie

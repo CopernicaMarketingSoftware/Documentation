@@ -17,10 +17,8 @@ dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
 ## Template ID's
 
-In het SMTPeter dashboard heb je toegang tot de uitgebreide *drag-and-drop* editor en 
-HTML editor. Hier kun je templates maken, bewerken en beheren. Elke template
-krijgt een eigen *id* die je kunt gebruiken om e-mail te versturen via de REST API.
-Een mogelijke JSON voor het versturen ziet er als volgt uit:
+Elke template krijgt een eigen *id* die je kunt gebruiken om e-mail te versturen 
+via de REST API. Een mogelijke JSON voor het versturen ziet er als volgt uit:
 
 ```json
 {
@@ -30,10 +28,9 @@ Een mogelijke JSON voor het versturen ziet er als volgt uit:
 ```
 
 Omdat templates die gemaakt zijn met de drag-and-drop editor gebruik maken van 
-[Responsive Email](https://www.responsiveemail.com/)
-en Responsive Email JSON ondersteunt, kun je in plaats van een template ID
-ook een complete JSON bij de template property meegeven. Dit kan als string
-of als echte JSON:
+[Responsive Email](https://www.responsiveemail.com/) en Responsive Email 
+JSON ondersteunt, kun je in plaats van een template ID ook een complete JSON
+bij de template property meegeven. Dit kan als string of als echte JSON:
 
 ```json
 {
@@ -99,8 +96,9 @@ we je naar de onderstaand links.
 ## Onderdelen van de template overschrijven
 
 Als je met onze tool templates maakt, worden de deze onder 
-de motorkap als JSON opgeslagen. Dit kun je ook zien in de eenvoudige template editor: er is een 
-optie in het menu om de JSON broncode van de template te bekijken en te bewerken.
+de motorkap als JSON opgeslagen. Dit kun je ook zien in de 
+eenvoudige template editor: er is een optie in het menu om
+de JSON broncode van de template te bekijken en te bewerken.
 
 Als je via de API naar een template verwijst (in bovenstaande voorbeelden
 verwezen we bijvoorbeeld steeds naar template 12), dan wordt de JSON code van 
@@ -160,8 +158,8 @@ Of, als je wilt dat SMTPeter het attachment voor je downloadt:
 }
 ```
 
-De templates worden opgeslagen volgens het JSON
-formaat van Copernica's [Responsive Email](https://www.responsiveemail.com) service.
+De templates worden opgeslagen volgens het JSON formaat van Copernica's 
+[Responsive Email](https://www.responsiveemail.com) service.
 Op de speciale website over Responsive Email vind je [uitgebreide documentatie](https://www.responsiveemail.com/json/top-level-properties) 
 en voorbeelden van alle properties, inclusief de opgesomde properties die via de REST 
 call mogen worden overschreven.

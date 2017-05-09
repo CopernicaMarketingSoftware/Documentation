@@ -26,9 +26,10 @@ voor de "to" en "cc" velden.
 
 De notatie voor e-mailadressen in de "from", "to" en "cc" velden is veel flexibeler dan de "envelope" en "recipient" velden. 
 Je kunt onder andere namen weergeven of gebruik maken van punthaken. Voor de "to" en "cc" velden kun je ook kommagescheiden 
-lijsten gebruiken. De "from", "to" en "cc" velden bepalen welke e-mailadressen worden toegevoegd aan de MIME data. Let er op
-dat deze e-mailadressen niet identiek hoeven te zijn aan de adressen die gebruikt worden in de "envelope" en "recepient" 
-velden. Uiteraard is het een goede gewoonte om e-mails te versturen naar de e-mailadressen die in het "to" veld worden gespecificeerd.
+lijsten gebruiken. De "from", "to" en "cc" velden bepalen welke e-mailadressen worden toegevoegd aan de MIME data. Deze 
+e-mailadressen hoeven niet per se identiek te zijn aan de adressen die gebruikt worden in de "envelope" en "recepient" 
+velden. Uiteraard is het een goede gewoonte om e-mails te versturen naar de e-mailadressen die in het "to" veld worden 
+gespecificeerd.
 
 
 ```json

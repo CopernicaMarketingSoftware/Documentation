@@ -50,12 +50,12 @@ De datum kun je opvragen door het volgende formaat aan te houden:
 ]
 ```
 
-De namen van de log files bestaan uit de volgende indeling *PREFIX.DATE.log*.
+De namen van de log files bestaan uit de volgende indeling *PREFIX.DATE.log*. 
 De *PREFIX* verteld je wat voor soort *event* wordt gelogd. Dit is een lijst 
 met bestaande prefixes:
 
 | Prefix                                                 | Beschrijving                                                       |
-| ------------------------------------------------------ | ------------------------------------------------------------------ |
+| ------------------------------------------------------ | -------------------------------------------------------------------|
 | [attempts log file](log-attempts "attempts log file")  | informatie over alle beschikbare mails verzonden met SMTPeter      |
 | [bounces log file](log-bounces "bounces log file")     | informatie over het aantal bounces                                 |
 | [clicks log file](log-clicks "clicks log file")        | informatie over het aantal kliks                                   |

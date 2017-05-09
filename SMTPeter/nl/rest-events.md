@@ -55,7 +55,7 @@ kan worden als de performance dit vereist.
 
 Het is ook mogelijk om een *tag* mee te geven. Vanaf dat moment kunnen de events ook 
 worden gefilterd op de tags. Het kan natuurlijk voorkomen dat je op meerdere tags 
-tegelijkertijd wil filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
+tegelijkertijd wilt filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
 door middel van puntkomma's.
 
 

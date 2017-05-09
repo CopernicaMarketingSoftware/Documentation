@@ -44,7 +44,7 @@ uitzetten. Zie onderstaande JSON data:
 De *click-tracking* is automatisch geactiveerd. Dit betekent dat alle hyperlinks
 zijn ingesteld om *clicks* te traceren en na te gaan. Echter, sommige *e-mail clients*
 tonen een waarschuwing aan de gebruiks op het moment dat links zijn bewerkt. 
-Dit is in sterkere mate het geval waneer de link waarop geklikt kan worden,
+Dit is in sterkere mate het geval wanneer de link waarop geklikt kan worden,
 niet overeenkomt met de hyperlink. In dat geval kun je altijd de "preventscam"
 property opgeven, waardoor SMTPeter van de links afblijft en ze dus niet bewerkt:
 
@@ -71,9 +71,9 @@ adres toe te voegen aan de JSON:
 
 ```json
 {
-    "envelope":     "your@address.com",
-    "recipient":    "john@doe.com",
-    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
+    "envelope": "your@address.com",
+    "recipient": "john@doe.com",
+    "mime": "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n....",
     "trackbounces": false
 }
 ```

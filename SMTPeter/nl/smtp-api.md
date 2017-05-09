@@ -21,14 +21,13 @@ Het is makkelijk om een connectie te maken met SMTPeter, hier kun je een voorbee
 * [Gmail](gmail "Gmail voorbeeld")
 * [Apple mail](applemail "Apple mail voorbeeld")
 * [Mozilla Thunderbird](thunderbird "Mozilla Thunderbird voorbeeld")
-* [Android email app](android "Android e-mail app voorbeeld")
+* [Android e-mail app](android "Android e-mail app voorbeeld")
 * [Postfix](postfix "Postfix voorbeeld")
 
 
-Voordat je een connectie kunt maken met SMTPeter moet je in het dashboard van SMTPeter een SMTP login maken. Bewaar het wachtwoord goed. 
+Voordat je een connectie kunt maken met SMTPeter, moet je in het dashboard van SMTPeter een SMTP login maken. Bewaar het wachtwoord goed. 
 Intern worden alle wachtwoorden versleuteld door SMTPeter, dus als je het wachtwoord verliest moet je een nieuw wachtwoord aanmaken.
-Na het configureren van je e-mailclient kan je SMTPeter gebruiken. SMTPeter is dan je standaard SMTP-gateway. De eerste keer dat je 
-een e-mail verstuurd wordt er aan je gevraagd om je wachtwoord in te voeren, hierna ben je klaar.
+Na het configureren van je e-mailclient kun je SMTPeter gebruiken. SMTPeter is dan je standaard SMTP-gateway.
 
 
 ## Parameters doorgeven
@@ -39,12 +38,10 @@ berichten, moet je gebruik maken van SMTP credentials. Of je moet gebruik maken 
 In het SMTPeter dashboard kun je meerdere SMTP-logins aanmaken. Je kunt bijvoorbeeld een login aanmaken waar “inlinecss” is ingeschakeld. 
 Wanneer je verbinding maakt met de SMTP-API kies je gewoon de login en wachtwoord combinatie voor de functies die je nodig hebt.
 
-De alternatieve method is om opties aan en uit te zetten door middel van het
-meesturen van speciale [MIME-headers](smtp-headers) met de email.
+De alternatieve method is om opties aan en uit te zetten door middel van het meesturen van speciale [MIME-headers](smtp-headers) met de email.
 
 
 ## Meer informatie
 
 * [REST API](./rest-api)
 * [MIME-headers](smtp-headers)
-

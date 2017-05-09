@@ -1,7 +1,7 @@
 # Verzenden via REST API
 
-SMTPeter heeft een eenvoudige en veilige REST API ontwikkeld, waarmee je e-mails 
-kunt versturen via het HTTPS protocol. Stuur een POST request naar onderstaande URL 
+SMTPeter heeft een eenvoudige en betrouwbare REST API ontwikkeld, waarmee je e-mails 
+kunt versturen via het HTTP protocol. Stuur een POST request naar onderstaande URL 
 om een e-mail te versturen:
 
 ```text
@@ -34,9 +34,9 @@ velden. De e-mail wordt uiteindelijk op de juiste manier afgeleverd bij de opgeg
 
 De data die je meegeeft aan SMTPeter, kan uit verschillende variabelen bestaan.
 In bovenstaand voorbeeld wordt het e-mailbericht door SMTPeter opgemaakt,
-maar je kunt ook andere parameters gebruiken: bijvoorbeeld omdat je al zelf 
+maar je kunt ook andere parameters gebruiken: bijvoorbeeld omdat je zelf al 
 de MIME hebt opgemaakt of om te verwijzen naar een voorgedefinieerde template.
-Alle opties die SMTPeter, bij het versturen van een e-mail ondersteund, zijn beschreven 
+Alle ondersteunde opties, bij het versturen van e-mail, zijn beschreven 
 in de [MIME door SMTPeter laten maken](rest-send-json) documentatie.
 
 
