@@ -36,7 +36,6 @@ class SMTPeter:
 ```
 Using this class is easy:
 
-```
 # your token
 token = "abcde"
 
@@ -44,14 +43,18 @@ token = "abcde"
 mySMTPeterConnection = SMTPeter(token)
 
 # The data we want to send
-data = {"envelope"  : "sender@example.com",
-        "recipient" : "receiver@example.com",
-        "subject"   : "This is the mail subject",
-        "from"      : "sender@example.com",
-        "to"        : "receiver@example.com",
-        "html"      : "<html><head><style>body { font-weight: 600; }</style></head><body>This is the html version.</body></html>",
-        "text"      : "And this is the text version"
-       }
+
+```json
+{
+"envelope"  : "sender@example.com",
+"recipient" : "receiver@example.com",
+"subject"   : "This is the mail subject",
+"from"      : "sender@example.com",
+"to"        : "receiver@example.com",
+"html"      : "<html><head><style>body { font-weight: 600; }</style></head><body>This is the html version.</body></html>",
+"text"      : "And this is the text version"
+}
+```
 
 # Post
 response = mySMTPeterConnection.post("send", data)
