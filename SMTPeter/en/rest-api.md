@@ -7,7 +7,7 @@ an HTTP POST request to the following URL:
 
 `https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}`
 
-where `{YOUR_API_TOKEN}` is the token you have obtained from the dashboard.
+Where `{YOUR_API_TOKEN}` is the token you have obtained from the dashboard.
 The extra data of the POST call, containing the information about the email and optionally some
 SMTPeter settings, can be added as a JSON. A simple but complete call can
 look like this:

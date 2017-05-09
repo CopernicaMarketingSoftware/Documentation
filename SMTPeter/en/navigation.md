@@ -11,7 +11,7 @@
     * [Multiple recipients](rest-send-multiple-recipients)
     * [Personalization of emails](rest-send-personalize)
     * [Advanced send options](rest-send-advanced)
-    * [API response](rest-api-reaction)
+    * [API response](rest-api-response)
 * [Send with SMTP API](smtp-api)
     * [Creating credentials](smtp-credentials)
     * [Hostname and port numbers](smtp-ports)
