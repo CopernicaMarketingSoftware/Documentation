@@ -28,13 +28,13 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden:
 
     // data voor de methode
     $data = array(
-        'name'      =>  'rule-name',
+        'name'      =>  'rulename',
         'view'      =>  1234,
         'inversed'  =>  False
     );
     
     // voer het verzoek uit
-    $api->post("miniview/1234/minirules", $data);
+    $api->post("miniview/1234/rules", $data);
 
 Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
 

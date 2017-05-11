@@ -6,7 +6,7 @@ that you want to send. However, you can also let SMTPeter create the
 MIME string for you. If you do not include a "mime" property in your
 request, but use separate "subject", "text", "html" and so properties,
 the MIME is created by SMTPeter. The following table lists all 
-supported propreties:
+supported properties:
 
 | Property           | Description                          |
 |--------------------|--------------------------------------|
@@ -17,14 +17,14 @@ supported propreties:
 | text               | Text version of the mail             |
 | html               | HTML version of the mail             |
 | unsubscribe        | The "list-unsubscribe" header        |
-| extra              | Extra "x-\*" headers                 |
+| extra              | Extra `x-\*` headers                 |
 | attachments        | Attachments to be added to the mail  |
 
 
 ## Email addresses
 
 The "from", "to" and "cc" fields decide which email addresses are going
-to appear in the MIME object. The "from" variable must be a **single** email
+to appear in the MIME object. The "from" variable must be a *single* email
 address, but there is no limit for the number of addresses that you use
 for the "to" and the "cc" fields.
 
@@ -34,11 +34,11 @@ You can include display names or use angle brackets, and for the "to" and
 "cc" fields you can also use comma separated lists. How the adresses show 
 up to the recipients is explained in the article on [multiple recipients](./rest-send-multiple-recipients).
 
-Note that the address
-set in these "from", "to" and "cc" fields just decide what addresses are
-included in the MIME data, and do not have to be identical to the
-addresses used in the "envelope" and "recipient" fields (although it
-is good practice to send email to the addresses mentioned in "to").
+Note that the address set in these "from", "to" and "cc" fields just 
+decide what addresses are included in the MIME data, and do not have 
+to be identical to the addresses used in the "envelope" and "recipient" 
+fields (although it is good practice to send email to the addresses 
+mentioned in "to").
 
 ```json
 {
@@ -51,6 +51,7 @@ is good practice to send email to the addresses mentioned in "to").
     "cc": "John Doe <johndoe@example.org>"
 }
 ```
+
 
 ## Subject, text and HTML
 
