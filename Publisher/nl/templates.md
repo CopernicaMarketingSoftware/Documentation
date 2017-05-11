@@ -8,16 +8,17 @@ kun je navigeren naar de tool in kwestie om te lezen wat het verschil precies in
 
 ## De Marketing Suite
 
-Met de Marketing Suite stel je e-mails samen in een handomdraai. In de
-Marketing Suite vind je de *fancy* drag-and-drop editor, waarmee je 
-allerlei contentblokken in je e-mail kunt slepen. Denk bijvoorbeeld aan
+Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
+namelijk met de drag-and-drop editor en met de HTML template editor. 
+Met de *fancy* drag-and-drop editor kun je op een eenvoudige manier
+allerlei contentblokken in je e-mail slepen. Denk bijvoorbeeld aan
 blokken voor afbeeldingen, tekst en buttons. 
 
 Als je iets meer vrijheid nodig hebt in het ontwerpen van je 
 e-mailtemplates kun je ook gebruik maken van de HTML template editor, 
 al heb je enige kennis nodig in het ontwikkelen van een HTML e-mail. 
 Om je te helpen wordt je CSS bij het versturen van een HTML template 
-inline gezet. 
+inline gezet.
 
 Binnen de Marketing Suite vind je ook nog een andere handige tool: 
 de [Follow-up Manager](follow-up-manager-ms). Hiermee creëer je op 
@@ -28,7 +29,7 @@ een later moment altijd weer gebruiken of aanpassen. Voor de
 uitgebreide documentatie over de functionaliteiten van de
 template editor, in de Marketing Suite, kun je hier terecht:
 
-* [Werken met JSON templates binnen de Marketing Suite](templates-marketing-suite)
+* [Werken met templates binnen de Marketing Suite](templates-marketing-suite)
 
 
 ## De Publisher

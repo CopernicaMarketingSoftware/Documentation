@@ -1,9 +1,7 @@
 # Werken met templates binnen de Marketing Suite
 
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
-namelijk met de drag-and-drop editor en met de HTML editor. 
-
-Met de drag-and-drop editor maak je in een handomdraai 
+namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai 
 hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangeveven
 waar afbeeldingen, tekst en buttons moeten worden geplaatst. 
 Naast de [Follow-up Manager](follow-up-manager-ms), heeft de 
@@ -39,7 +37,7 @@ wat er is veranderd op het moment dat het scherm werd afgesloten.
 
 ## Responsive templates
 
-Templates die worden aangemaakt (en gebruikt) binnen de Marketing Suite zijn
+Templates die worden aangemaakt (en gebruikt) met de drag-and-drop editor zijn
 automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk 
 JSON bestanden. Door onze geavanceerde [Responsive Email](www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
