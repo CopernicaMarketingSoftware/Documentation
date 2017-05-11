@@ -1,7 +1,5 @@
 # Documenten maken in de Publisher
 
-## Toevoegen van inhoudsblokken
-
 Als je je HTML-template hebt ontwikkeld, kan je in de HTML-broncode met
 behulp van speciale tags aangeven waar in het document door de
 eindgebruiker textuele inhoud en afbeeldingen kunnen worden toegevoegd.
@@ -10,8 +8,7 @@ herhaald kunnen worden. Hieronder zijn de tags beknopt uitgelegd. Let
 op: als je bijvoorbeeld meerdere tekstblokken opneemt in je template,
 dan geef je deze verschillende namen.
 
-
-## Tekst blok
+## Tekstblok
 
 Geef aan waar in het document door de eindgebruiker tekstuele content
 kan worden toegevoegd met behulp van de uitgebreide editor of met de
@@ -21,7 +18,6 @@ De tag: **[text name="artikel"]**
 
 [Volledige artikel over tekstblokken en de extra
 opties](./the-text-function-for-adding-textual-content-to-your-document.md)
-
 
 ## Afbeeldingblok
 

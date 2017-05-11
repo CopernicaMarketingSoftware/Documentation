@@ -1,13 +1,10 @@
-# Een e-mailtemplate samenstellen
+# Een e-mailtemplate samenstellen in de Publisher
 
 Zodra je een e-mailtemplate gereed hebt, kun je starten met het maken
 van een e-maildocument.
 
 Standaard is Copernica uitgerust met een aantal voorbeeldtemplates, die
 je ook mag gebruiken voor je eigen mailings.
-
-Heb je nog geen template? [Lees ons helpartikel over dit
-onderwerp](./getting-started---building-email-templates.md)
 
 Zoals je inmiddels weet vormt de e-mailtemplate de blauwdruk voor de
 documenten die je onder het template aanmaakt. Met behulp van tekst-,
@@ -92,8 +89,7 @@ naar het afbeeldingblok.
 -   In het tabblad **Formaat** kun je een afbeelding kleiner maken.
 -   In het tabblad **Uitsnijden** kun je een deel van de afbeelding
     uitsnijden.
--   In het tabblad **Condities** kan je de [condities
-    instellen](./the-easy-script-editor.md)
+-   In het tabblad **Condities** kan je de condities instellen
     voor het wel of niet tonen van de afbeelding, op basis van gegevens
     van de ontvanger. Je kunt bijvoorbeeld een andere afbeelding laden
     voor vrouwelijke nieuwsbriefabonnees (als je het geslacht van je
