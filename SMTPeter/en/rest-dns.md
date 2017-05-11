@@ -6,7 +6,7 @@ settings can all be queried by email receivers.
 
 SMTPeter hosts all required DNS records under its DNS domain, so that you
 only have to create a number of CNAME records that refer to SMTPeter's
-DNS records. The "/dns" API call can be used to get a list of all 
+DNS records. The  `/dns` API call can be used to get a list of all 
 recommended DNS records that you should copy to your own DNS server.
 
 ```txt
@@ -19,6 +19,7 @@ We support three API calls: one to get the recommended DNS configuration
 that you should copy to the DNS servers, one to get the DNS configuration
 if you do not want to make use of CNAME records, and one API call to check 
 whether you've correctly set up your DNS records.
+
 
 ## DNS recommendations
 
@@ -82,7 +83,7 @@ use API call (2) to get the records without using CNAME's.
 ## DNS status
 
 Once you've installed the recommended DNS records, you can let us check
-whether you've done so correctly with the following API call:
+whether you've done that correctly. Use the following API call:
 
 ```txt
 https://www.smtpeter.com/v1/dns/yourdomain.com/status
@@ -112,7 +113,7 @@ DKIM and SPF records in DNS. The "mx" and "a" records tell you whether
 you have correctly set up MX and A records.
 
 The possible status values for the records are "perfect", "ok" and 
-"error". The status is perfect if you exactly followed our suggestions. 
+"error". "Perfect" means that you exactly followed our suggestions. 
 In general, records that score a perfect will never have to be adjusted 
 again. The "ok" status is set if you did not follow our recommended setting,
 but you did set up valid DNS records (for example, if you did not use
@@ -121,6 +122,7 @@ address).
 
 If things are not perfect, an extra property "remarks" is added that holds
 human readable messages with improvement suggestions per record.
+
 
 ## More information
 
