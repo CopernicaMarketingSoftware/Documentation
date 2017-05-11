@@ -27,7 +27,7 @@ The following PHP script demonstrates how to use the API method:
 	);
 
 	// do the call
-	api->post("databases", $data);
+	$api->post("databases", $data);
 
 This example uses the [CopernicaRestApi class](rest-php).
 
