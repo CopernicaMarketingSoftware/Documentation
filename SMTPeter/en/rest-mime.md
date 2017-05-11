@@ -2,7 +2,7 @@
 
 You need at least two properties to send an email. The so called "recipient" address
 (that's going to be used in the *RCPT TO* part of the SMTP protocol) and the comprehensive
-"MIME" data. This simplest case looks somewhat like this:
+"MIME" data. It looks like this:
 
 ```json
 {
@@ -14,7 +14,7 @@ To make the example more readable, we've cut down on most of the "MIME"
 code in the above mentioned example. You are not required to provide your own "MIME" data 
 and are able to leave out *mime* property of the JSON. However, in this case 
 you should use special MIME properties such as "subject", "text" and "html", 
-in order for SMTPeter to construct your MIME data. [This](rest-send-json)) 
+in order for SMTPeter to construct your MIME data. [This](rest-send-json)
 article provides more information on how to let SMTPeter construct your MIME data.
 
 You just have to provide SMTPeter with a "recipient" address to send an email. 
@@ -25,9 +25,9 @@ don't have to provide an envelope address.
 
 It's possible to take care of bounces yourself. Just assign an extra envelope
 address to the input data. Besides this envelope address, you might be interested 
-in adding the [DSN variable](rest-dsn "REST and DSN Messages") to configure these 
-notifications to your envelope adress. After adding your envelope adress 
-your code should look similar to this:
+in adding the [DSN variable](rest-dsn) to configure these notifications to your 
+envelope address. After adding your envelope address your code should look similar 
+to this:
 
 ```json
 {
@@ -37,7 +37,7 @@ your code should look similar to this:
 }
 ```
 
-If all information is provided in a correct format you will get a [reaction from the API](./rest-api-reaction).
+If all information is provided in a correct format you will get a [response from the API](./rest-api-response).
 
 ## More information
 
