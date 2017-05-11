@@ -1,3 +1,5 @@
+# Tekstblokken in de Publisher
+
 Een tekst tag is de code waarmee een tekstblok in een HTML template
 wordt opgenomen. Een text tag staat in de broncode van het template, en
 kan alleen daar worden toegevoegd. In de documenten onder de template

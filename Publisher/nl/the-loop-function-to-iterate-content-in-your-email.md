@@ -1,3 +1,5 @@
+# Loopblokken
+
 In e-mail en webtemplates kun je gebruik maken van loopblokken om
 HTML-content en andere content blokken te herhalen in het document. In
 het document geef je uiteindelijk aan hoevaak je het blok wilt herhalen.

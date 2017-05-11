@@ -1,7 +1,6 @@
 # Het data-script attribuut
 
-Of je nu gebruik maakt van de drag-and-drop editor van Marketing Suite of
-van de oude HTML gebasseerde templates van Publisher: je kunt altijd gebruik 
+Of je nu gebruik maakt van de Marketing Suite of van de Publisher: je kunt altijd gebruik 
 maken van Copernica-specifieke "data-script" attributen. Met deze attributen 
 kun je scripts koppelen aan hyperlinks. Deze scripts worden uitgevoerd zodra 
 iemand op de hyperlink klikt. Hiermee kun je bijvoorbeeld opvolgacties maken
@@ -22,23 +21,22 @@ naar de oorspronkelijke URL.
 Bovenstaand code demonstreert hoe je gebruik kunt maken van het data-script
 attribuut. Als je een link in je mailing opneemt (zoals naar www.example.com
 in het voorbeeld), dan kun je daar een script aan toevoegen om per profiel
-bij te houden hoeveel kliks er in totaal zijn geweest. Dit script wordt
-uitgevoerd zodra iemand daadwerkelijk op de hyperlink klikt.
+bij te houden hoeveel kliks er in totaal zijn geweest (handing  voor lead 
+scoring). Dit script wordt uitgevoerd zodra iemand daadwerkelijk op de 
+hyperlink klikt.
 
 
-## Publisher vs Marketing Suite
+## HTML editor vs drag-and-drop editor
 
-Als je met Publisher werkt dan moet je zelf de HTML code templates bewerken,
-en kun je dus zelf naar hartelust data-script attributen toevoegen. Elke
+Als je met een HTML editor werkt, kun je dus zelf naar hartelust data-script attributen toevoegen. Elke
 &lt;a&gt; tag (elke hyperlink dus) kan worden voorzien van een data-script
 attribuut met daarin het script dat je wilt uitvoeren als op de link wordt
 geklikt.
 
-Als je niet met de Publisher werkt, maar met de drag-and-drop editor van de 
-Marketing Suite, dan hoef je (meestal) niet zelf de HTML code te bewerken. 
-Toch kan je ook hier gebruik maken van data-script attributen. We hebben 
-namelijk in de editor een tekstveld opgenomen waarin je het script kan plaatsen. 
-Dit tekstveld is rechtstreeks gekoppeld met het onderliggende data-script 
+Als met de drag-and-drop editor werkt, dan hoef je (meestal) niet zelf de HTML code te bewerken. 
+Toch kun je ook hier gebruik maken van data-script attributen. We hebben 
+namelijk in de editor een script editor en flowchart editor waarin je javascript kunt gebruiken. 
+Deze editors zijn rechtstreeks gekoppeld met het onderliggende data-script 
 attribuut dat in de mail zal worden opgenomen.
 
 Voor beide systemen geldt: het attribuut werkt alleen als het script dat

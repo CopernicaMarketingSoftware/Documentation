@@ -15,8 +15,8 @@ eenvoudig te houden. Je kunt later altijd extra velden toevoegen.
 
 ## Marketing Suite
 
-De Marketing Suite maakt het mogelijk om gemakkelijk databases te beheren. 
-Navigeer naar het **Profiles** kopje in het menu.
+De Marketing Suite maakt het mogelijk om gemakkelijk je databases te beheren. 
+Navigeer naar het **Database & Profiles** kopje in het menu.
 Binnen die omgeving is het mogelijk om databases te creëeren, filters toe te voegen, 
 selecties te bewerken en nog veel meer. De mogelijkheden zijn eindeloos.
 

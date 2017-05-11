@@ -1,8 +1,10 @@
 # Werken met templates binnen de Marketing Suite
 
-De Marketing Suite geeft je de mogelijkheid om in een handomdraai
-hoogwaardige kwaliteit e-mails samen te stellen. Je kunt met je 
-muis blokken slepen in de body van de e-mail en zo aangeveven
+Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
+namelijk met de drag-and-drop editor en met de HTML editor. 
+
+Met de drag-and-drop editor maak je in een handomdraai 
+hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangeveven
 waar afbeeldingen, tekst en buttons moeten worden geplaatst. 
 Naast de [Follow-up Manager](follow-up-manager-ms), heeft de 
 Marketing Suite nog een aantal andere toepassingen die wellicht 
