@@ -1,7 +1,7 @@
 # Templates
 
 In de (nieuwe) Marketing Suite en de (oude) Publisher wordt gewerkt met templates.
-Let op dat de manier waarop met templates wordt gewerkt, totaal 
+Let op dat de manier waarop met templates wordt gewerkt totaal 
 verschillend is binnen deze twee omgevingen. In de kopjes hieronder
 kun je navigeren naar de tool in kwestie om te lezen wat het verschil precies inhoudt.
 
@@ -10,7 +10,7 @@ kun je navigeren naar de tool in kwestie om te lezen wat het verschil precies in
 
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
 namelijk met de drag-and-drop editor en met de HTML template editor. 
-Met de *fancy* drag-and-drop editor kun je op een eenvoudige manier
+Met de verfijnde drag-and-drop editor kun je op een eenvoudige manier
 allerlei contentblokken in je e-mail slepen. Denk bijvoorbeeld aan
 blokken voor afbeeldingen, tekst en buttons. 
 
@@ -27,7 +27,7 @@ een klant op een bepaald element in je e-mails klikt. Als je klaar
 bent met het aanmaken van je templates, kun je deze opslaan en op 
 een later moment altijd weer gebruiken of aanpassen. Voor de 
 uitgebreide documentatie over de functionaliteiten van de
-template editor, in de Marketing Suite, kun je hier terecht:
+template editor in de Marketing Suite, kun je hier terecht:
 
 * [Werken met templates binnen de Marketing Suite](templates-marketing-suite)
 
