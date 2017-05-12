@@ -56,6 +56,9 @@ The following feedback loops can be used:
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
 * [Feedback loops for opens](feedback-opens)
+* [Feedback loops for profile creations](feedback-creates)
+* [Feedback loops for profile updates](feedback-updates)
+* [Feedback loops for profile removals](feedback-deletes)
 
 
 ## URL validation
