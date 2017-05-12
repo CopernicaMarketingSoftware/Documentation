@@ -14,6 +14,10 @@ gemaakt door middel van JSON. Door onze geavanceerde [Responsive E-mail](www.res
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
+Het verzenden van een template doe je op dezelfde manier als een MIME-bericht, maar dan geef je in je JSON aan welk template verstuurd moet worden. De URL hiervoor ziet er als volgt uit:
+
+`www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}`
+
 
 ## Template ID's
 
