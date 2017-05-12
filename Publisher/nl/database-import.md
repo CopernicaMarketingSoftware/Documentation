@@ -15,7 +15,7 @@ de Marketing Suite binnen het kopje 'profielen'.
 
 Het bestand dat je wilt importeren moet aan een specfiek formaat voldoen.
 Het moet een tab- of kommagescheiden bestand zijn, en de bovenste regel van 
-dat bestand moet de namen van de kolommen (de veldname) bevatten die je gaat 
+dat bestand moet de namen van de kolommen (de veldnamen) bevatten die je gaat 
 importeren.
 
     Voornaam,Achternaam,Stad,Telefoonnummer
@@ -29,13 +29,9 @@ elke kolom bepalen aan welk databaseveld het moet worden gekoppeld. Meestal
 spreekt deze koppeling voor zich: het veld "Voornaam" in het importbestand
 koppel je aan het veld "Voornaam" in de database. Als er nog geen veld "Voornaam" 
 in je database aanwezig is, kun je de kolom ook aan een ander veld koppelen, of 
-kun je ter plekke een nieuwe veld aanmaken.
+kun je ter plekke een nieuw veld aanmaken.
 
-Je kunt tijdens het koppelen van de kolommen ook de *sleutelvelden* instellen. 
-Door gebruik te maken van sleutelvelden kun je de importmodule gebruiken
-om profielen bij te werken. Voor elke regel in het importbestand wordt aan de
-hand van het sleutelveld / de sleutelvelden gezocht naar een bijpassend profiel
-in de database, en wordt dit overeenkomende profiel bijgewerkt. Als er geen
+Je kunt tijdens het koppelen van de kolommen ook de *sleutelvelden* instellen. Sleutelvelden zijn de velden die Copernica gebruikt om regels uit je importbestand te koppelen aan profielen in de database wanneer je een profiel updatet. Als er geen
 match is kun je instellen dat er een nieuw profiel moet worden aangemaakt.
 
 ## Subprofielen importeren
@@ -55,7 +51,7 @@ Jan twee huisdieren heeft en elk huisdier (elke subprofiel dus) op een aparte
 regel moet staan. De profieldata ("Jan Bakker") wordt herhaald om aan te geven
 dat de twee dieren bij hetzelfde profiel horen. Let wel op dat je goed de 
 sleutelvelden instelt (ook als je alleen maar nieuwe profielen wilt toevoegen),
-omdat Copernica anders niet herkent dat de twee "Jan De Vries" regels bij elkaar
+omdat Copernica anders niet herkent dat de twee "Jan De Vries"-regels bij elkaar
 horen.
 
 ## Periodieke imports
@@ -74,8 +70,8 @@ imports moet zitten.
 ## Converteren van datumnotatie
 
 De datumnotatie in Copernica is de JJJJ-MM-DD uu:mm:ss. Dit is een handige
-notatie, omdat datums hierdoor makkelijk zijn te sorteren. Maar let wel op
-dat je dezelfde notatie gebruikt in je invoerbestand, en dat je in je
+notatie, omdat datums hierdoor makkelijk zijn te sorteren. Let wel op
+dat je dezelfde notatie gebruikt in je invoerbestand en dat je in je
 importbestand niet per ongeluk datums in DD-MM-JJ notaties hebt staan.
 
 De importmodule heeft een optie om datums die in de verkeerde volgorde staan
@@ -95,13 +91,13 @@ je dit met een trucje grotendeels ongedaan maken:
 Na een verkeerde import kun je een selectie aanmaken waarin je alle nieuwe 
 profielen opneemt. Je maakt hiervoor een selectie met een conditie van het
 type "check op wijzigingen". Als type verandering kies je voor "het profiel
-is aangemaakt", waarbij je een periode maakt waarin de import heeft 
-plaatsgevonden. Als de selectie klaar is met opbouwen dan kun je alle profielen
+is aangemaakt", waarbij je de periode instelt waarin de import heeft 
+plaatsgevonden. Als de selectie klaar is met opbouwen kun je alle profielen
 in deze selectie verwijderen via de optie "wijzigen/verwijderen meerdere profielen".
 
 Zijn er door de import bestaande profielen abusievelijk gewijzigd? Het 
 terughalen van profieldata kan alleen per individueel profiel met de rollback
-functie. Veel werk dus. Eventueel kan je Copernica vragen om een back-up van 
+functie: veel werk dus. Eventueel kun je Copernica vragen om een back-up van 
 de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
 
 ## Meer informatie 
