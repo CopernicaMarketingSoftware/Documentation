@@ -4,14 +4,14 @@ Selecties worden in Copernica actief bijgehouden, wat betekent dat ze
 regelmatig opnieuw worden opgebouwd. Dit is deels waarom Copernica zo 
 krachtig is: je hoeft slechts de voorwaarden voor een selectie op te geven 
 en Copernica doet de rest voor je. De actieve filters vragen echter wel wat 
-rekenkracht. Als je er teveel hebt, of te zware, kan het de performace van 
-Copernica negatief beinvloeden. Door je database slim in te richten, 
+rekenkracht. Als je er teveel hebt, of te zware, kan het de performance van 
+Copernica negatief beïnvloeden. Door je database slim in te richten, 
 presteert hij een stuk beter en sneller. Hieronder vertellen we hoe je 
 dat kunt doen.
 
 ### **Verwijder en heers**
 Ook als je een selectie niet actief gebruikt, wordt hij meerdere malen 
-per dag opnieuw opgebouwd en geupdatet. Gebruik je een selectie niet, 
+per dag opnieuw opgebouwd en geüpdatet. Gebruik je een selectie niet, 
 dan is het dus beter om hem te verwijderen zodat je er geen rekenkracht 
 aan verspilt. Heb je selecties die je niet gebruikt op het moment, maar 
 wil je ze niet weggooien? Dan kun je de voorwaarden van de selectie 
@@ -20,9 +20,9 @@ Meer informatie over verwijderen en deactiveren vind je [hier](selections-settin
 
 Hetzelfde geldt voor databases: sommige gebruikers maken wekelijks een 
 nieuwe database aan voor het versturen van een nieuwsbrief of zelfs een 
-klein persbericht. Hoewel wij dit natuurlijk afraden (beter kan je alles 
+klein persbericht. Hoewel wij dit natuurlijk afraden (het is beter om alles 
 binnen een enkele database organiseren) verbieden we het ook niet. Als 
-je dan toch behoeftig bent om voor iedere mailing een nieuwe database 
+je dan toch de behoefte hebt om voor iedere mailing een nieuwe database 
 te gebruiken, gooi ze dan na verloop van tijd ook weer weg.
 
 ### **Filter alleen op velden die echt nodig zijn**
@@ -30,17 +30,17 @@ Verwijder de selectiecondities die je niet nodig hebt om je doel te bereiken. Ho
 
 ### **Indexeer je velden slim**
 
-In een geindexeerd veld wordt slimmer gezocht naar de opgevraagde
+In een geïndexeerd veld wordt slimmer gezocht naar de opgevraagde
 informatie. Normaliter wordt een databasekolom van A tot Z doorzocht. In
-een geindexeerd veld kan sneller worden vastgesteld waar de informatie
-zich ongeveer bevindt, en hoeft er uiteindelijk veel minder te worden
+een geïndexeerd veld kan sneller worden vastgesteld waar de informatie
+zich ongeveer bevindt. Zo hoeft er uiteindelijk veel minder te worden
 doorzocht, wat het zoeken natuurlijk in zijn geheel sneller maakt. 
 
 Het beste is om alleen velden te indexeren die je regelmatig in
 selecties gebruikt. Het aanmaken van te veel indexvelden zal weer
 vertragend werken voor de database als geheel. 
 
-Je kan het beste numerieke velden indexeren, velden waarop je sorteert
+Je kunt het beste numerieke velden indexeren, velden waarop je sorteert
 (sorteer en selecteer conditie) en velden waar je veldcondities op
 loslaat (waarde in veld X is gelijk aan Y).
 
@@ -50,7 +50,7 @@ databaseveld.
 ### **Doe eerst het lichte werk, dan pas het zware**
 
 De ene selectie is de ander niet. Een eenvoudige selectie die een
-numeriek veld doorzoekt is veel makkelijker en sneller uitgevoerd dan
+numeriek veld doorzoekt is veel makkelijker en sneller opgebouwd dan
 een selectie die zoekt naar profielen die in een bepaalde periode hebben
 geklikt in een willekeurig emailing. Je kan daarom het beste werken met
 subselecties, waarmee je het aantal te doorzoeken profielen steeds
@@ -83,20 +83,20 @@ Zware selectiecondities zijn:
 
 ### **Selecties groeperen met lege selectie**
 
-Veel gebruikers gebruiken lege ouderselecties om andere selecties te
+Veel gebruikers gebruiken lege bovenliggende selecties om andere selecties te
 groeperen. De ouderselectie heeft alleen als doel om visueel overzicht
-te creeren. Prima allemaal, maar gebruik dan niet een actieve
-selectieregel als 'de waarde in het veld ID moet groter zijn dan 0'.
+te creeren. Dit is op zich een prima tactiek, maar gebruik dan niet een actieve
+selectieregel als 'de waarde in het veld ID moet groter zijn dan 0', want dat kost weer rekenkracht.
 
-Beter kan je een enkele selectieconditie maken, en deze uitschakelen
+Beter is het om een enkele selectieconditie te maken, en deze uit te schakelen
 (deze optie vind je bij de conditie). Nu voldoen alle profielen
-automatisch en hoeft er niks meer te worden doorzocht.
+automatisch en hoeft er niets meer te worden doorzocht.
 
-### **Zorg dat je geen duplicate condities hebt**
+### **Zorg dat je geen dubbele condities hebt**
 
 We zien nog wel eens dat gebruikers in subselecties onder elkaar
 dezelfde filtercriteria toevoegen. Dit is vanzelfsprekend verspilde
-moeite. Verwijder dus de dubbel aangemaakte condities. Scheelt weer wat
+moeite. Verwijder dus de dubbel aangemaakte condities. Dat scheelt weer wat
 zoekwerk.
 
 ### **Gebruik de juiste veldtypes**
@@ -123,20 +123,20 @@ soms noodzakelijk en maakt het je database makkelijker beheerbaar, maar
 als het anders kan worden opgelost (zonder deze referenties), heeft dit
 absoluut onze voorkeur.
 
-### **Selecties op basis van e-mailcampagnes; liever niet**
+### **Selecties op basis van e-mailcampagnes: liever niet**
 
 Dit is veruit het zwaarste conditietype. De conditie wordt meestal
 ingezet om hardbounces te zoeken en filteren uit andere selecties. Beter
-kan je door middel van document opvolgacties de fouten registreren en
-direct opslaan in het profiel. Je bounce selectie kan je dan maken op
+kun je door middel van opvolgacties op documenten de fouten registreren en
+direct opslaan in het profiel. Je bounce-selectie kun je dan maken op
 basis van een lichte veldconditie. Toegegeven, het is niet ideaal
 (document opvolgacties kunnen bijvoorbeeld nog niet worden gekopieerd
 naar andere documenten), maar je selecties worden wel een stuk sneller.
 
 ### **Gebruik je de sorteer / selecteer selectieconditie?**
 
-Indexeer het veld of de velden waarop je sorteert. Het beste wijs je
-geen velden aan waarop je sorteert. Dan wordt automatisch het profiel ID
+Indexeer het veld of de velden waarop je sorteert. Het is beter om
+geen velden aan te geven waarop je sorteert, omdat dan automatisch het profiel-ID wordt
 gebruikt. Dit is absoluut het snelst.
 
 [Terug naar selectie beheer](./selections-introductions).
