@@ -36,7 +36,7 @@
     * [Deliverability](./deliverability)
     * [Spam score](./some-tips-to-lower-your-email-spam-score)
     * [Reducing HTML errors](./reducing-html-errors)
-    * [Database corruption](./database-marketing-and-web-surveys-avoid-corruption)
+    * [Database corruption](./prevent-database-corruption)
 * [Publisher only features](./publisher-only)
     * [Surveys](./surveys)
     * [Websites](./websites)

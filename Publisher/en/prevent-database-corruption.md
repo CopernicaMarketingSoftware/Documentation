@@ -13,7 +13,7 @@ are some pitfalls you want to avoid. By asking the wrong questions, you
 could be gathering irrelevant, or even incorrect data.
 
 To illustrate the issues this can lead to: according to research from
-Dun & Bradstreet, in an average database 60 per cent of the files is
+Dun & Bradstreet, in an average database 60 percent of the files is
 corrupted. A nightmare for anyone who works in database marketing. A lot
 of companies even turned out to have 35 percent less customers than
 they thought.
