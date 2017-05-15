@@ -48,7 +48,7 @@ informatie en voorbeelden.
 Je kunt heel makkelijk een profiel aanpassen als iemand op een link klikt:
 
 ```html
-<a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">klik hier om af te melden</a>
+<a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Klik hier om af te melden</a>
 ```
 
 Als iemand op de link klikt, wordt het script in het "data-script" attribuut

@@ -1,6 +1,6 @@
-# REST API: rule conditions aanmaken
+POST rule conditions
 
-Een methode om *conditions* voor een *rule* aan te passen. 
+Een methode om *conditions* voor een *rule* aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
@@ -18,13 +18,13 @@ precies lezen wat iedere condition inhoudt door erop te klikken:
 - [Change conditions](./rest-condition-type-change.md)
 - [Date conditions](./rest-condition-type-date.md)
 - [DoubleField conditions](./rest-condition-type-doublefield.md)
-- [Email conditions](./rest-condition-type-email.md)
+- [E-mail conditions](./rest-condition-type-email.md)
 - [Export conditions](./rest-condition-type-export.md)
 - [Fax conditions](./rest-condition-type-fax.md)
 - [Field conditions](./rest-condition-type-field.md)
 - [Interesse conditions](./rest-condition-type-interest.md)
 - [LastContact conditions](./rest-condition-type-lastcontact.md)
-- [Miniview conditions](./rest-condition-type-miniview.md)
+- [MiniView conditions](./rest-condition-type-miniview.md)
 - [SMS conditions](./rest-condition-type-sms.md)
 - [Todo conditions](./rest-condition-type-todo.md)
 - [Survey conditions](./rest-condition-type-survey.md)
@@ -45,7 +45,7 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $data = array(
-    'type' = 'date'
+    'type' = 'Date'
 );
 
 // voer het verzoek uit en print het resultaat
@@ -58,6 +58,6 @@ Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [Regels opvragen](./rest-get-rules)
-* [Regels per ID opvragen](./rest-get-rule)
-* [Een regel aanmaken](./rest-post-rule)
+* [GET rules](./rest-get-rules)
+* [GET rules voor specifieke ID](./rest-get-rule)
+* [POST rule](./rest-post-rule)
