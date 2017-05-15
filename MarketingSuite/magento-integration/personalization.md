@@ -57,7 +57,7 @@ only subscriber, etc.)._
 
 A personalization object represents a collection of related data. For example the object 
 `address` will have information about the street address, city and country of the 
-target destination, accessed seperately by using the object name, followed by a
+target destination, accessed separately by using the object name, followed by a
 dot and then the name of the specific field, eg., `$address.city`, `$address.country` et cetera. 
 
 Magento object are related to each other. A customer can have multiple orders,

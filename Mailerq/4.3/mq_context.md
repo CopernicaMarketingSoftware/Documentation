@@ -6,13 +6,13 @@ to the event loop as well as indicating to MailerQ when the plugin is done.
 ## Functions that your plugin can export
 
 MailerQ is a multi-threading application, with multiple working threads that are all sending and receiving
-messages at the same time. For every single worker thread, a seperate context object is created. If you want
+messages at the same time. For every single worker thread, a separate context object is created. If you want
 to be notified when a new context is created, or when a context is destroyed, you can define the following functions in your plugin:
 
 | Implementable function                                          | Description                                         |
 |-----------------------------------------------------------------|-----------------------------------------------------|
-| [mq_context_initialize()](mq_context_initialize) | Called by MailerQ when a worker thread is created   |
-| [mq_context_cleanup()](mq_context_cleanup)       | Called by MailerQ when a worker thread is destroyed |
+| [mq_context_initialize()](mq_context_initialize)                | Called by MailerQ when a worker thread is created   |
+| [mq_context_cleanup()](mq_context_cleanup)                      | Called by MailerQ when a worker thread is destroyed |
 
 Both of the listed functions are optional. It is not necessary for your plugin to export them, but you can for example use these functions to initialize plugin specific data, and to deallocate that data when the worker thread exits.
 

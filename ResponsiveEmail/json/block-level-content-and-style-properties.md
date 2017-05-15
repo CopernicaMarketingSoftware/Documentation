@@ -102,7 +102,7 @@ A rastafari colored email template could be constructed as follows.
 You may change the amount of whitespace that is reserved around a block. 
 The margin property can be used for that. The margin can either be a numeric value, 
 if you want to use the same margin for all four sides around the block, 
-or an object if you want to set the top, left, right and bottom margins seperately.
+or an object if you want to set the top, left, right and bottom margins separately.
 
 ```json
     {

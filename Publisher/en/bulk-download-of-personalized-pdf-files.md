@@ -23,7 +23,7 @@ If any, you see a list of previously generated downloaded.
 -   Choose the selection of miniselection the download should be
     personalized with.
 -   In addition, you specify whether you want to download a large PDF
-    file or a separate file for each recipient. The seperate PDF files
+    file or a separate file for each recipient. The separate PDF files
     are then bundled in a ZIP-file.
 
 The file is made immediately. Once this is finished, you will see a blue

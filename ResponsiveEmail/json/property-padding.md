@@ -4,7 +4,7 @@ You may change the amount of whitespace that is reserved around a block.
 The `padding` property can be used for that. The padding can either be
 a numeric value, if you want to use the same padding for all four sides
 around the block, or an object if you want to set the top, left, right
-and bottom padding seperately. This difference between `padding` and
+and bottom padding separately. This difference between `padding` and
 [`margin`](../json/property-margin) is that padding 
 will get the background color of said block, unlike margin.
 

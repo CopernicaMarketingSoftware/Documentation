@@ -24,6 +24,6 @@ If one or more forced errors are configured for the domain they will appear in t
 To give you an idea of where your messages are in MailerQ, the "Queues" section contains counters indicating how many messages are 
 contained in each queue. MailerQ keeps an in-memory queue for the messages it plans to send as soon as possible, this is a fast
 queue that is flushed as soon as connections are available. If MailerQ gets more messages than it can handle at a time it will
-temporarily save this messages in a seperate RabbitMQ queue; as soon as MailerQ can send more messages to the domain it will
+temporarily save this messages in a separate RabbitMQ queue; as soon as MailerQ can send more messages to the domain it will
 consume messages from this queue. Lastly, there is a counter for the messages that are still being processed by MailerQ,
 these messages are still being sent over SMTP or being appended to the logs.

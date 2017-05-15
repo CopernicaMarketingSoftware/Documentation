@@ -23,4 +23,4 @@ should be supplemented with a .*afm*or .*pfm*font
 
 **Bold**and *italic* fonts from Windows usually have their own files, eg
 *verdana.ttf*, *verdanab.ttf* and *verdanai.ttf*. You need to upload all
-types seperately to be able to use them in your PDF documents.
+types separately to be able to use them in your PDF documents.

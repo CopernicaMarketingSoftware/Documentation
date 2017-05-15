@@ -98,7 +98,7 @@ Strangely enough, most storage drivers only offer a synchronous and blocking
 API. This means that storage operations can only be started after previous
 operations were completed. To prevent that the entire MailerQ process gets
 blocked while a storage operation is in progress, MailerQ maintains multiple
-connections to the storage servers, and starts seperate threads in which the
+connections to the storage servers, and starts separate threads in which the
 storage operations are being executed.
 
 The number of threads (and the number of storage connections) can be set

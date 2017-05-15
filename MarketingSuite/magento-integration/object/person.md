@@ -9,7 +9,7 @@ Example, when someone registers on your website, or places an order for the firs
 time, a new person record will be created, and the data known about this person 
 will be stored in it. Months later, this same person can decide to do another 
 purchase but now as an anonymous guest, using the same email address. For Magento 
-internally, those are two seperate users. Copernica however, will link together 
+internally, those are two separate users. Copernica however, will link together 
 those two entities based on the provided email address and merge them into one 
 single object: a person. 
 
