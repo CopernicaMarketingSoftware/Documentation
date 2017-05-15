@@ -1,6 +1,6 @@
 # Change conditions
 
-Om gebruik te maken van de change conditions moet je 
+Om gebruik te maken van de change conditions, moet je 
 ervoor zorgen dat je gebruik maakt van de 'Change' value
 bij de 'type' property. Daarna ben je in staat om de 
 conditie naar wens op te geven. In de onderstaande tabel 
@@ -27,7 +27,7 @@ vind je alle condities en een voorbeeld van een request.
 | lostinterest         | Interesse verloren               |
 
 
-## Voorbeeld
+## Voorbeeld 
 
 ```php
 // required code
@@ -35,7 +35,6 @@ require_once("copernica_rest_api.php");
 
 // create an API object (add your own access token!)
 $api = new CopernicaRestApi("my-access-token");
-
 
 $data = array(
     // declare that you want to use the change type
@@ -45,7 +44,7 @@ $data = array(
 );
 
 // do the call
-$result = $api->post("rule/1234/conditions", $data);
+$result = $api->post("rule/id/conditions", $data);
 
 // print the result
 print_r($result);
@@ -53,13 +52,14 @@ print_r($result);
 
 ## Toevoegen van een datum
 
-Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer het is aangemaakt
-of geüpdatet. Deze datums kun je op de volgende manier meegeven aan de POST request:
+Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
+conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+meegeven aan de POST request:
 
-* before-time: matcht alleen de change conditie voor deze tijd;
-* after-time: matcht alleen de change conditie na deze tijd;
-* before-mutation: tijdverschil voor de change conditie;
-* after-mutation: tijdverschil na de change conditie.
+* before-time: 			matcht alleen de change conditie voor deze tijd;
+* after-time: 			matcht alleen de change conditie na deze tijd;
+* before-mutation: 		tijdverschil voor de change conditie;
+* after-mutation: 		tijdverschil na de change conditie.
 
 ```text
 De 'time' properties accepteren voor de value de volgende stringvolgorde:

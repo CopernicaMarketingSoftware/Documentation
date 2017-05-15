@@ -5,14 +5,14 @@ Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de rule waarvan je de condition op wilt vragen.
+De `$id` moet hier vervangen worden door de ID van de rule waarvan je de condition wilt vragen.
 
 
 ## Verschillende type conditions
 
-Je kunt verschillende conditions opvragen. In onderstaande lijst zijn alle 
-conditions weergegeven. vJe kunt precies lezen wat iedere condition inhoudt 
-door erop te klikken:
+In onderstaande lijst zijn alle conditions weergegeven die mogelijk 
+kunnen worden teruggegeven door de REST API. Je kunt precies lezen 
+wat iedere condition inhoudt door erop te klikken:
 
 - [Change conditions](./rest-condition-type-change.md)
 - [Date conditions](./rest-condition-type-date.md)
