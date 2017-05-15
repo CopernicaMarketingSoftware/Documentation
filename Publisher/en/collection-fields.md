@@ -14,7 +14,7 @@ key-value pair.
 -   ID: the identifier of the collection field (integer)
 -   Name: the name of the collection field (string)
 -   Type: the type of the field (see below)
--   Value: the default value of the field. Can be a newline seperated
+-   Value: the default value of the field. Can be a newline separated
     list. (string)
 -   Displayed: is the field displayed in the subprofile overview in the
     user interface of the marketing software (bool)

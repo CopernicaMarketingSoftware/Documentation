@@ -22,7 +22,7 @@ general settings where each user's rights are determined per
 database/selection/template/document.
 
 Note: This setting doesn't make users account admins. This is set
-seperately.
+separately.
 
 #### Account removal
 

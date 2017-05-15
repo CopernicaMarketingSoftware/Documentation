@@ -16,7 +16,7 @@ To understand how this exactly works, we need to explain two important concepts
 of email: envelope addresses and MX records. Let's start with envelope addresses.
 
 Email messages normally have two different source addresses: the *from* address
-that you can see in your email program, and a seperate invisible *envelope* address.
+that you can see in your email program, and a separate invisible *envelope* address.
 This invisible address is normally not displayed to end users, because it is 
 intended to be used by mail servers. If mail servers need to send messages to 
 each other, like they do in case of a bounce, they use this special envelope address.

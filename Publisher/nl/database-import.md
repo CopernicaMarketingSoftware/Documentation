@@ -31,15 +31,18 @@ koppel je aan het veld "Voornaam" in de database. Als er nog geen veld "Voornaam
 in je database aanwezig is, kun je de kolom ook aan een ander veld koppelen, of 
 kun je ter plekke een nieuw veld aanmaken.
 
-Je kunt tijdens het koppelen van de kolommen ook de *sleutelvelden* instellen. Sleutelvelden zijn de velden die Copernica gebruikt om regels uit je importbestand te koppelen aan profielen in de database wanneer je een profiel updatet. Als er geen
-match is kun je instellen dat er een nieuw profiel moet worden aangemaakt.
+Je kunt tijdens het koppelen van de kolommen ook de *sleutelvelden* instellen. 
+Sleutelvelden zijn de velden die Copernica gebruikt om regels uit je 
+importbestand te koppelen aan profielen in de database wanneer je een 
+profiel updatet. Als er geen match is kun je instellen dat er een nieuw 
+profiel moet worden aangemaakt.
 
 ## Subprofielen importeren
 
 Je kunt ook imports in gelaagde databases (databases met subprofielen) doen. 
 In de header van het bestand geef je met een punt als scheidingsteken aan dat 
 een kolom voor subprofielen wordt gebruikt. Als je een dierenwinkel hebt met 
-een database met klanten, en bij elke klant een collectie van huisdieren, dan 
+een database met klanten en bij elke klant een collectie van huisdieren dan 
 zou je het volgende bestand kunnen uploaden:
 
     Voornaam,Achternaam,Stad,Dieren.Naam,Dieren.Type
@@ -51,7 +54,7 @@ Jan twee huisdieren heeft en elk huisdier (elke subprofiel dus) op een aparte
 regel moet staan. De profieldata ("Jan Bakker") wordt herhaald om aan te geven
 dat de twee dieren bij hetzelfde profiel horen. Let wel op dat je goed de 
 sleutelvelden instelt (ook als je alleen maar nieuwe profielen wilt toevoegen),
-omdat Copernica anders niet herkent dat de twee "Jan De Vries"-regels bij elkaar
+omdat Copernica anders niet herkent dat de twee "Jan Bakker"-regels bij elkaar
 horen.
 
 ## Periodieke imports
@@ -84,20 +87,20 @@ niet bestaan in datumvelden, dus worden ze automatisch overgezet naar
 
 ## Verkeerde import terugdraaien
 
-Als je iets verkeerd doet, kun je zomaar je hele database overschrijven met
-verkeerde gegevens. Goed opletten dus. Als het toch verkeerd is gegaan, kun
+Als je iets verkeerd doet kun je zomaar je hele database overschrijven met
+verkeerde gegevens. Goed opletten dus. Als het toch verkeerd is gegaan kun
 je dit met een trucje grotendeels ongedaan maken:
 
 Na een verkeerde import kun je een selectie aanmaken waarin je alle nieuwe 
 profielen opneemt. Je maakt hiervoor een selectie met een conditie van het
 type "check op wijzigingen". Als type verandering kies je voor "het profiel
-is aangemaakt", waarbij je de periode instelt waarin de import heeft 
+is aangemaakt" waarbij je de periode instelt waarin de import heeft 
 plaatsgevonden. Als de selectie klaar is met opbouwen kun je alle profielen
 in deze selectie verwijderen via de optie "wijzigen/verwijderen meerdere profielen".
 
-Zijn er door de import bestaande profielen abusievelijk gewijzigd? Het 
+Zijn er door de import bestaande profielen verkeerd gewijzigd? Het 
 terughalen van profieldata kan alleen per individueel profiel met de rollback
-functie: veel werk dus. Eventueel kun je Copernica vragen om een back-up van 
+functie. Eventueel kun je Copernica vragen om een back-up van 
 de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
 
 ## Meer informatie 

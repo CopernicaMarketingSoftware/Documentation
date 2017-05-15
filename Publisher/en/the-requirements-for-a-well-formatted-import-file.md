@@ -33,7 +33,7 @@ following:
     subprofile data must be present that can be used as the key field
     during the import.
 -   If your import file contains data for multiple subprofiles from a
-    profile, use seperate rows for the different subprofiles, following
+    profile, use separate rows for the different subprofiles, following
     the same requirements as mentioned above.
 
 ![](../images/importer12.png)

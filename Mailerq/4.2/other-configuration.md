@@ -2,7 +2,7 @@
 
 MailerQ can be configured using the "/etc/mailerq/config.txt" config file. 
 Most of the variables and settings in this config file are discussed in 
-seperate articles. However, the following settings are not mentioned
+separate articles. However, the following settings are not mentioned
 anywhere else:
 
 ````
