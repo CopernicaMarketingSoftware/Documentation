@@ -22,17 +22,17 @@ toegevoegd:
 De methode retourneert een lijst van databases. 
 Van elke database in de lijst wordt een aantal velden teruggegeven:
 
-* ID:             Unieke ID;
-* name:           Naam van de database;
-* description:    Omschrijving van de database;
-* archived:       Is de database gearchiveerd of niet?;
-* created:        Tijdstip waarop de database is aangemaakt;
-* fields:         Array met de fields in de database;
-* interests:      Array met de interests in de database;
-* collections:    Array met de collections in de database.
+* ID:             unieke ID;
+* name:           naam van de database;
+* description:    omschrijving van de database;
+* archived:       is de database gearchiveerd of niet?;
+* created:        tijdstip waarop de database is aangemaakt;
+* fields:         array met de fields in de database;
+* interests:      array met de interests in de database;
+* collections:    array met de collections in de database.
 
 Het is ook mogelijk om apart informatie over fields, interests en
-collectons op te vragen:
+collections op te vragen:
 
 * [GET fields](rest-get-database-fields)
 * [GET interests](rest-get-database-interests)
