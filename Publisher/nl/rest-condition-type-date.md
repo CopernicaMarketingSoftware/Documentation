@@ -1,13 +1,12 @@
-# REST API: Conditie type date (datum)
+# Date conditions
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Om gebruik te maken van de date condition moet je 
+ervoor zorgen dat je gebruik maakt van de 'Date' value
+bij de 'type' property. Daarna ben je in staat om de 
+conditie naar wens op te geven. Hieronder is uiteengezet
+van welke functionaliteiten je gebruik kunt maken. Ook is 
+er een voorbeeld van een request gegeven.
 
-Dit artikel gaat over de verschillende eigenschappen van de date conditie.
 
 ## Datum eigenschappen
 
@@ -15,16 +14,47 @@ De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren
 binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
 worden in YYYY-MM-DD HH:MM:SS formaat.
 
-* **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
-* **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
-* **before-mutation**: De beforemutation (tijdverschil) voor de date conditie.
-* **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
+* before-time: matcht alleen de change conditie voor deze tijd;
+* after-time: matcht alleen de change conditie na deze tijd;
+* before-mutation: tijdverschil voor de change conditie;
+* after-mutation: tijdverschil na de change conditie.
 
 ## Individuele eigenschappen
 
-* **field**: Het database veld van de dateconditie.
-* **compare-mode**: Vergelijk modus van de dateconditie. Mogelijke waarden: 
-"full" als de hele datum moet matchen, "ignoreyear" als het jaar anders mag zijn.
+* field: het database veld van de date condition;
+* compare-mode: vergelijk modus van de date condition.
+
+*compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
+moet de hele datum matchen en bij de tweede waarde mag het jaar anders zijn.
+
+## Voorbeeld
+
+```php
+
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+    $data = array(
+    // declare that you want to use the date type
+    'type' => 'Date',
+
+    // use before-time or after-time
+    'before-time' => '2018-01-01 00:00:00',
+
+    // or use before-mutation or after-mutation (overwrites the before/after-time)
+    'after-mutation' => '["plus","2016-01-01", "7:34:23"]',
+);
+
+// do the call
+$result = $api->post("rule/1234/conditions", $data);
+
+// print the result
+print_r($result);
+```
+
 
 ## Meer informatie
 
