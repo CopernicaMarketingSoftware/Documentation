@@ -1,13 +1,13 @@
 # Prevent corruption in database marketing
 
-When it comes to [database marketing](./creating-your-own-databases.md),
+When it comes to [database marketing](./database-introduction),
 corrupted lists are your worst enemy. Not only should your data be as up
 to date as possible, you also want it to be relevant and qualitative.
 Because the more irrelevant data you have, the higher the risk of a
 corrupted database.
 
 Good database marketing starts with gathering the right information.
-[Web surveys](./create-your-own-survey.md)
+[Web surveys](./surveys)
 are a great way of enriching your database with relevant data. But there
 are some pitfalls you want to avoid. By asking the wrong questions, you
 could be gathering irrelevant, or even incorrect data.
@@ -82,3 +82,7 @@ sometimes they just don’t want to. By compelling them do so anyway, you
 aren’t exactly increasing your chances of getting reliable information.
 So if you want to keep your database clean, offer your respondents the
 option to skip a question.
+
+## More information
+
+* [Tips and tricks](./tips-and-tricks)
