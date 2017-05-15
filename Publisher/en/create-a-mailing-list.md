@@ -26,7 +26,7 @@ we will add a field to your database to distinguish between them. Select
 your database and create a new field. 
 
 * Give your field a nice descriptive name such as *newsletter*
-* Make it a multiple choice field with values \<empty\>, "Yes" and "No".
+* Make it a multiple choice field with values <empty\>, "Yes" and "No".
 * Check '*Show field on overview pages*' (to show this field in the 
 profile list) and ‘*The field is indexed*’ (to make the selection faster)
 * Store the field

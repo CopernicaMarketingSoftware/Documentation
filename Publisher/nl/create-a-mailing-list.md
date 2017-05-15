@@ -27,7 +27,7 @@ iemand wel of niet je nieuwsbrief wil ontvangen. Selecteer je database
 en voeg een veld toe.
 
 * Geef je veld een duidelijk omschrijvende naam, zoals *nieuwsbrief*.
-* Maak het veld multiple choice met waardes \<empty\>, "Ja" en "Nee".
+* Maak het veld multiple choice met waardes <empty\>, "Ja" en "Nee".
 * Klik '*Show field on overview pages*' (om het veld bij het profiel 
 zichtbaar te maken) en ‘*The field is indexed*’ (om de selectie sneller te maken) aan.
 * Sla het veld op.
