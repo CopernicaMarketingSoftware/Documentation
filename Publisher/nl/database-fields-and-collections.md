@@ -9,8 +9,9 @@ enkelvoudige velden.
 
 Er zijn verschillende veldtypes beschikbaar, geschikt voor het opslaan van 
 specifieke gegevens. Er zijn bijvoorbeeld velden voor het opslaan van 
-tekst, en velden voor getallen en datums (we schrijven en spreken altijd over *datums* in 
-plaats van *data*, omdat *data* ook een andere, meer algemene, betekenis heeft).
+tekst en velden voor getallen en datums (we gebruiken hier de term *datums* in 
+plaats van *data* om verwarring te voorkomen).
+
 Als je je database aan het inrichten bent, dan spreekt het formulier om een
 veld toe te voegen grotendeels voor zich, maar voor de volledigheid zullen we 
 elk type veld verderop in dit artikel de revue laten passeren.
@@ -81,7 +82,6 @@ instellen wordt alleen gebruikt in dialoogvensters om een profiel te bewerken
 en in het profieloverzicht. Het heeft geen invloed op de weergave van 
 webformulieren.
 
-
 ### Grote velden
 
 Grote velden zijn in principe hetzelfde als tekstvelden, op een klein verschil 
@@ -89,7 +89,6 @@ na: ze kunnen tot 16 miljoen tekens bevatten (genoeg om een bestseller in op
 te slaan). Het is beter om dit soort velden niet te gebruiken, en al helemaal
 niet om selecties te maken op basis van grote velden. Grote velden zijn de 
 enige velden die niet kunnen worden geïndexeerd.
-
 
 ### Datumveld
 
@@ -110,7 +109,7 @@ minuten en seconden, bijvoorbeeld "1980-09-03 08:56:36"
 Een emailveld is hetzelfde als een tekstveld, maar dan speciaal voor 
 emailadressen. Als je Copernica voor mailings gebruikt (en dat is bijna altijd
 het geval), dan moet je zorgen dat je in ieder geval een dergelijk veld in je
-database opneemt, anders kunnen er geen mailings worden verstuurd.
+database opneemt. Dit adres wordt namelijk gebruikt voor mailings. 
 Een database kan maar één emailveld bevatten. Als een tweede emailveld wordt
 toegevoegd, wordt het eerste veld automatisch omgezet naar een tekstveld.
 
@@ -125,8 +124,7 @@ Daarnaast wordt gecontroleerd of het adres daadwerkelijk bestaat door een
 proefconnectie met de ontvangende server te maken. Wanneer een emailadres 
 volgens deze controle niet bestaat, ontvang je hierover ook een melding. Maar 
 let op: de controle is niet waterdicht. Het emailadres kan tijdens de controle
-bijvoorbeeld tijdelijk onbereikbaar zijn. Je moet het daarom zien als
-een hulpmiddeltje.
+bijvoorbeeld tijdelijk onbereikbaar zijn. Je kunt het beter zien als hulpmiddel.
 
 ### Telefoonveld
 
@@ -146,7 +144,7 @@ andere plaatsen in de applicatie getoond als een uitklapmenu. Hierin
 zijn dan alleen de vooraf ingevoerde waarden beschikbaar. Typ de opties
 in het veld 'waarde'. De bovenste waarde wordt automatisch de
 standaardwaarde voor nieuwe profielen. Als je een andere standaardwaarde
-wil gebruiken, kan je gebruik maken van een asterisk (\*). In het
+wil gebruiken kan je gebruik maken van een asterisk (\*). In het
 volgende voorbeeld, is de stad Haarlem de standaardwaarde:
 
 -   Amsterdam
@@ -168,17 +166,15 @@ Dit veld accepteert alleen landcodes volgens de ISO 3166 standaard. De
 landcode voor Nederland is NL en die van België BE. Voor een volledige
 lijst met landencodes kan je terecht op de website van ISO.org.
 
-[Bekijk alle
-landcodes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
-
+[Bekijk alle landcodes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 
 ## Extra opties
 
-Als je velden aan het bewerken bent, kun je per veld een aantal extra opties
+Als je velden aan het bewerken bent kun je per veld een aantal extra opties
 selecteren. Je kunt bijvoorbeeld aangeven dat een veld standaard gesorteerd is,
 of dat het verborgen moet blijven. Hieronder een korte uitleg van al die opties.
 
-### Bij het bewerken verborgen velden
+### Verborgen velden
 
 Verborgen velden zijn niet zichtbaar in het dialoogvenster om een profiel
 te bewerken. Gebruik deze optie voor velden die je niet meer wilt tonen of 
@@ -200,8 +196,12 @@ optie kan slechts bij één veld tegelijkertijd worden geactiveerd.
 
 ### Geïndexeerde velden
 
-Gebruik deze optie voor velden die je vaak gebruikt voor het zoeken van
-profielen, en waarmee je selecties hebt gemaakt. Het indexeren van deze velden
-versnelt het zoeken binnen je database en het opbouwen van selecties en 
-miniselecties. Indexeer niet te veel velden. Je kan maximaal 64 velden indexeren.
-Velden van het type "Groot veld" kunnen niet worden geïndexeerd.
+Het indexeren van velden kan het zoeken van profielen en het maken van 
+selecties versnellen. Het is dus verstandig velden die je vaak opzoekt 
+of in selecties gebruikt te indexeren. Je kan maximaal 64 velden indexeren, 
+maar het is ook niet nodig er veel te indexeren. Velden van het type 
+"Groot veld" kunnen niet worden geïndexeerd.
+
+## Meer informatie
+
+* [Database management](./database-introduction)
