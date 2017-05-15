@@ -1,42 +1,42 @@
-# REST API: opvragen databases
+# GET databases
 
-Methode om een overzicht op te vragen van alle beschikbare databases. Dit is
-een HTTP GET call naar het volgende adres:
+Je kunt alle informatie omtrent databases opvragen 
+met de onderstaande methode. Dit is een HTTP GET 
+call naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
+
 ## Beschikbare parameters
 
-De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
+De volgende parameters kunnen aan de URL als parameters worden
+toegevoegd:
 
-* **start**: eerste database die wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal databases in de output
+* start: eerste database die wordt opgevraagd;
+* limit: lengte van de batch die wordt opgevraagd;
+* total: toon wel/niet het totaal aantal databases in de output.
 
-Meer informatie over de betekenis van deze parameters vind je in het
-[artikel over paging](rest-paging).
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van databases. Van elke database in de lijst
-wordt een aantal velden teruggegeven:
+De methode retourneert een lijst van databases. 
+Van elke database in de lijst wordt een aantal velden teruggegeven:
 
-* **ID**: Unieke numerieke identifier
-* **name**: Naam van de database
-* **description**: Omschrijving van de database
-* **archived**: Is de database gearchiveerd of niet?
-* **created**: Tijdstip waarop de database is aangemaakt
-* **fields**: Array met de velden in de database
-* **interests**: Array met de interesses in de database
-* **collections**: Array met de collecties in de database
+* ID:             Unieke ID;
+* name:           Naam van de database;
+* description:    Omschrijving van de database;
+* archived:       Is de database gearchiveerd of niet?;
+* created:        Tijdstip waarop de database is aangemaakt;
+* fields:         Array met de fields in de database;
+* interests:      Array met de interests in de database;
+* collections:    Array met de collections in de database.
 
-Als je wilt weten hoe de *fields*, *interests* en *collections* arrays zijn
-opgebouwd, kun je een blik werpen op de documentatien van de volgende API
-methodes. Deze methodes retourneren dezelfde soort gegevens:
+Het is ook mogelijk om apart informatie over fields, interests en
+collectons op te vragen:
 
-* [Opvragen van velden](rest-get-database-fields)
-* [Opvragen van interesses](rest-get-database-interests)
-* [Opvragen van collecties](rest-get-database-collections) 
+* [GET fields](rest-get-database-fields)
+* [GET interests](rest-get-database-interests)
+* [GET collections](rest-get-database-collections) 
 
 
 ## Voorbeeld in PHP
@@ -44,21 +44,23 @@ methodes. Deze methodes retourneren dezelfde soort gegevens:
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen 
 vanuit een PHP script:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once("copernica_rest_api.php");
 
-    // parameters voor de methode
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("databases", $parameters));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+// parameters voor de methode
+$parameters = array(
+    'limit'     =>  100
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("databases", $parameters));
+```
+
+Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
 
 ## Meer informatie
 

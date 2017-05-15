@@ -1,4 +1,4 @@
-# Get rule conditions
+# GET rule conditions
 
 Dit is een methode om alle conditions van een rule op te vragen. 
 Deze methode ondersteunt geen parameters. De methode is aan te 

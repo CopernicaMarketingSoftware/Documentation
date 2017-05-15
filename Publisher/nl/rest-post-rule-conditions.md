@@ -1,4 +1,4 @@
-POST rule conditions
+# POST rule conditions
 
 Een methode om *conditions* voor een *rule* aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
@@ -58,6 +58,5 @@ Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [GET rules](./rest-get-rules)
 * [GET rules voor specifieke ID](./rest-get-rule)
-* [POST rule](./rest-post-rule)
+* [POST rule](./rest-post-view-rules)
