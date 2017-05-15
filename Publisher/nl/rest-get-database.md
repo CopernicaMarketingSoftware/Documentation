@@ -1,4 +1,10 @@
-# REST API: opvragen gegevens van een database
+GET database gegevens
+
+Dit is een methode om alle conditions van een rule op te vragen. 
+Deze methode ondersteunt geen parameters. De methode is aan te 
+roepen met een HTTP GET request naar de volgende URL:
+
+
 
 Methode om alle meta gegevens van een database op te vragen. De methode
 ondersteunt geen parameters. De methode wordt aangeroepen via het volgende adres:
@@ -10,37 +16,37 @@ van een database.
 
 ## Geretourneerde velden
 
-* **ID**: Unieke numerieke identifier
-* **name**: Naam van de database
-* **description**: Omschrijving van de database
-* **archived**: Is de database gearchiveerd of niet?
-* **created**: Tijdstip waarop de database is aangemaakt
-* **fields**: Array met de velden in de database
-* **interests**: Array met de interesses in de database
-* **collections**: Array met de collecties in de database
+* ID: 			uniek ID;
+* name: 		naam van de database;
+* description: 	omschrijving van de database;
+* archived: 	is de database gearchiveerd of niet?;
+* created: 		tijdstip waarop de database is aangemaakt;
+* fields: 		array met de velden in de database;
+* interests: 	array met de interesses in de database;
+* collections: 	array met de collecties in de database.
 
-De velden, interesses en collecties worden teruggegeven als arrays van
-objecten. Als je wilt weten hoe deze arrays zijn opgebouwd, kun je een blik 
-werpen op de documentatie van de volgende API methodes. Deze methodes 
-retourneren dezelfde soort gegevens:
+Het is ook mogelijk om apart informatie over fields, interests en
+collections op te vragen:
 
-* [Opvragen van velden](rest-get-database-fields)
-* [Opvragen van interesses](rest-get-database-interests)
-* [Opvragen van collecties](rest-get-database-collections) 
+* [GET fields](rest-get-database-fields)
+* [GET interests](rest-get-database-interests)
+* [GET collections](rest-get-database-collections) 
 
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit in je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once("copernica_rest_api.php");
 
-    // voer de opdracht uit en print het resultaat
-    print_r($api->get("database/1234"));
+// verander dit in je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer de opdracht uit en print het resultaat
+print_r($api->get("database/id"));
+```
 
 ## Meer informatie
 

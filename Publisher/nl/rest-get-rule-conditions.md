@@ -1,36 +1,34 @@
 # GET rule conditions
 
-Dit is een methode om alle conditions van een rule op te vragen. 
-Deze methode ondersteunt geen parameters. De methode is aan te 
-roepen met een HTTP GET request naar de volgende URL:
+Een methode om conditions van een rule op te vragen. 
+Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` hier moet vervangen worden door de ID van de rule waarvan je de conditions op wilt vragen.
+De `$id` moet hier vervangen worden door de ID van de rule waarvan je de condition op wilt vragen.
 
 
 ## Verschillende type conditions
-
 
 Je kunt verschillende conditions opvragen. In onderstaande lijst zijn alle 
 conditions weergegeven. vJe kunt precies lezen wat iedere condition inhoudt 
 door erop te klikken:
 
-- [Veranderings voorwaarden](./rest-condition-type-change.md)
-- [Datum voorwaarden](./rest-condition-type-date.md)
-- [DoubleField voorwaarden](./rest-condition-type-doublefield.md)
-- [E-mail voorwaarden](./rest-condition-type-email.md)
-- [Export voorwaarden](./rest-condition-type-export.md)
-- [Fax voorwaarden](./rest-condition-type-fax.md)
-- [Veld voorwaarden](./rest-condition-type-field.md)
-- [Interesse voorwaarden](./rest-condition-type-interest.md)
-- [LastContact voorwaarden](./rest-condition-type-lastcontact.md)
-- [MiniView voorwaarden](./rest-condition-type-miniview.md)
-- [SMS voorwaarden](./rest-condition-type-sms.md)
-- [Todo voorwaarden](./rest-condition-type-todo.md)
-- [Survey voorwaarden](./rest-condition-type-survey.md)
-- [Part voorwaarden](./rest-condition-type-part.md)
-- [ReferView voorwaarden](./rest-condition-type-referview.md)
+- [Change conditions](./rest-condition-type-change.md)
+- [Date conditions](./rest-condition-type-date.md)
+- [DoubleField conditions](./rest-condition-type-doublefield.md)
+- [E-mail conditions](./rest-condition-type-email.md)
+- [Export conditions](./rest-condition-type-export.md)
+- [Fax conditions](./rest-condition-type-fax.md)
+- [Field conditions](./rest-condition-type-field.md)
+- [Interesse conditions](./rest-condition-type-interest.md)
+- [LastContact conditions](./rest-condition-type-lastcontact.md)
+- [MiniView conditions](./rest-condition-type-miniview.md)
+- [SMS conditions](./rest-condition-type-sms.md)
+- [Todo conditions](./rest-condition-type-todo.md)
+- [Survey conditions](./rest-condition-type-survey.md)
+- [Part conditions](./rest-condition-type-part.md)
+- [ReferView conditions](./rest-condition-type-referview.md)
 
 
 ## Voorbeeld in PHP
@@ -45,7 +43,7 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("rule/1234/conditions"));
+print_r($api->get("rule/id/conditions"));
 ```
 
 Dit voorbeeld vereist de [REST API class](./rest-php).

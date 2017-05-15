@@ -15,10 +15,10 @@ door middel van een [OAuth koppeling](./rest-oath.md).
 
 De methode retourneert accountgegevens:
 
-* id:           Unieke numerieke identifier van het account;
-* name:         Naam van het account;
-* description:  Omschrijving van het account;
-* company:      Naam van het bedrijf dat betaalt voor het account.
+* id:           unieke numerieke identifier van het account;
+* name:         naam van het account;
+* description:  omschrijving van het account;
+* company:      naam van het bedrijf dat betaalt voor het account.
 
 
 ## Voorbeeld in PHP
