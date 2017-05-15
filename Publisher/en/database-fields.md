@@ -14,7 +14,7 @@ pair
 -   id: the identifier of the database field (integer)
 -   name: the name of the database field (string)
 -   type: the type of the field (see below)
--   value: the default value of the field. Can be a newline seperated
+-   value: the default value of the field. Can be a newline separated
     list. (string)
 -   displayed: is the field displayed in the subprofile overview in the
     user interface of the marketing software (bool)

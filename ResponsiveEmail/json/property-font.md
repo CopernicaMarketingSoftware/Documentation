@@ -7,13 +7,13 @@ nested font block.
 
 ## Font properties
 
-| Property | Value | Description                                     |
-|:---------|-------|-------------------------------------------------|
-| family | _string_ | Equivalent to the CSS font-family property     |
-| size | _string_ | Equivalent to the CSS font-size property         |
-| lineHeight | _string_ | Equivalent to the CSS line-height property |
-| color | _string_ | Equivalent to the CSS color property            |
-| weight | _mixed_ | Equivalent to the CSS font-weight property      |
+| Property   | Value    | Description                                     |
+|:-----------|----------|-------------------------------------------------|
+| family     | _string_ | Equivalent to the CSS font-family property      |
+| size       | _string_ | Equivalent to the CSS font-size property        |
+| lineHeight | _string_ | Equivalent to the CSS line-height property      |
+| color      | _string_ | Equivalent to the CSS color property            |
+| weight     | _mixed_  | Equivalent to the CSS font-weight property      |
 
 ## Where to use?
 
@@ -64,7 +64,7 @@ with a different font.
 
 ### Nested property family
 
-The font family is a comma seperated list of font names. It is best to use 
+The font family is a comma separated list of font names. It is best to use 
 web safe fonts, because your mail will be delivered to many different devices 
 that may not have the exotic font installed that you would like to use.
 
