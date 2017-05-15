@@ -10,4 +10,4 @@ more on the software and how to use it.
 * [Lowering your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Reducing HTML errors](./reducing-html-errors)
 * [Selections optimization](./selections-optimization)
-* [Prevent database corruptions](./database-marketing-and-web-surveys-avoid-corruption)
+* [Prevent database corruptions](./prevent-database-corruption)
