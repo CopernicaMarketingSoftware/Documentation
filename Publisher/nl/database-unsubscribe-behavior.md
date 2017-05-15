@@ -1,26 +1,18 @@
 # Uitschrijfgedrag instellen
 
-Copernica ontvangt op allerlei manieren feedback van ontvangers dat ze zich
-voor mailings willen afmelden. Je kunt zelf instellen hoe we met deze
-afmeldtriggers moeten omgaan: wil je dat we ze negeren (dit is zeer af te 
-raden!), moeten we het profiel volledig uit de database verwijderen, of wil
-je dat we een veld in het profiel veranderen? In het laatste geval kun je 
-makkelijk een veld voor "nieuwsbrief" op "nee" zetten, zodat je bij het 
-aanmaken van een selectie kunt zorgen dat deze mensen geen mail meer ontvangen.
+Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan 
+je (commerciële) mails toe te voegen. Copernica kan daarnaast ook op andere 
+manieren feedback ontvangen dat jouw ontvangers zich uit willen schrijven. 
+Je kunt hier op verschillende manieren mee omgaan: De meldingen negeren 
+(waar je je klanten erg boos mee zult maken), het profiel volledig verwijderen 
+(en daarmee alle data) of een waarde in het profiel aanpassen. Als je kiest 
+voor deze laatste optie kun je bijvoorbeeld de waarde van het veld "nieuwsbrief" 
+aanpassen zodat je uitschrijvers voor je [nieuwsbriefselectie](create-a-mailing-list) kan uitsluiten.
 
-Er zijn verschillende manieren waarop de triggers binnenkomen. Het meest voor
-de hand liggen natuurlijk de kliks op de afmeldlink in de mail, en de
-terugkoppelingen als iemand op de snelle afmeldbutton van de emailclient 
-klikt. Deze snelle afmeldbutton wordt door sommige clients (met name 
-webmailomgevingen) getoond als er een *list-unsubscribe* header in de mail
-aanwezig is.
-
-Maar er zijn meer manieren waarop afmeldtriggers binnenkomen. Bijvoorbeeld
-als er bij ons een klacht binnenkomt op ons *abuseadres*. Ook dan wordt de 
-afmeldprocedure opgestart. En sommige grote emailproviders hebben speciale 
-feedbackloops die ons melden dat iemand op de button "dit is spam" klikt. Al
-dit soort terugkoppelingen worden door ons opgevangen, en verwerkt op de 
-manier zoals je bij het uitschrijfgedrag hebt ingesteld.
+Uitschrijvingen kunnen binnenkomen via de afmeldlink in de mail, de afmeldlink 
+van de client, klachten op ons *abuseadres*, mensen die de mail als spam markeren 
+en nog veel meer. Copernica vangt al deze uitschrijvingen op en verwerkt 
+deze volgens je gewenste uitschrijfgedrag.
 
 ## Marketing Suite instellen
 
@@ -34,4 +26,7 @@ In Publisher ga je naar het **Profiles** menu en selecteer je je database.
 Onder **Database management** kun je de uitschrijf opties vinden en naar 
 wens instellen.
 
-[Terug naar database management](./database-introduction)
+## Meer informatie
+
+* [Database management](./database-introduction)
+* [Selecties tutorial: Nieuwsbriefselectie maken]
