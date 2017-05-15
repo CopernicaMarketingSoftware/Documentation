@@ -1,54 +1,59 @@
-# REST API: regel condities aanpassen
-Een methode om condities voor een regel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
+# REST API: rule conditions aanmaken
+
+Een methode om *conditions* voor een *rule* aan te passen. 
+Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de regel waaraan je een conditie toe wilt voegen.
+De `$id` moet hier vervangen worden door de identifier van de rule waaraan je de condition wilt toevoegen.
 
-## Beschikbare parameters
 
-De message body kan de volgende eigenschappen voor de conditie bevatten:
+## Verschillende type conditions
 
-- **type**: type van de conditie
-- **rule**: numeriek ID van regel waar de conditie toe hoort
+Je kunt verschillende conditions aan een rule toevoegen. 
+De precieze eigenschappen hangen af van het type van de conditie. 
+In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
+precies lezen wat iedere condition inhoudt door erop te klikken:
 
-De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
+- [Change conditions](./rest-condition-type-change.md)
+- [Date conditions](./rest-condition-type-date.md)
+- [DoubleField conditions](./rest-condition-type-doublefield.md)
+- [Email conditions](./rest-condition-type-email.md)
+- [Export conditions](./rest-condition-type-export.md)
+- [Fax conditions](./rest-condition-type-fax.md)
+- [Field conditions](./rest-condition-type-field.md)
+- [Interesse conditions](./rest-condition-type-interest.md)
+- [LastContact conditions](./rest-condition-type-lastcontact.md)
+- [Miniview conditions](./rest-condition-type-miniview.md)
+- [SMS conditions](./rest-condition-type-sms.md)
+- [Todo conditions](./rest-condition-type-todo.md)
+- [Survey conditions](./rest-condition-type-survey.md)
+- [Part conditions](./rest-condition-type-part.md)
+- [ReferView conditions](./rest-condition-type-referview.md)
 
-- [Veranderings voorwaarden](./rest-condition-type-change.md)
-- [Datum voorwaarden](./rest-condition-type-date.md)
-- [DoubleField voorwaarden](./rest-condition-type-doublefield.md)
-- [Email voorwaarden](./rest-condition-type-email.md)
-- [Export voorwaarden](./rest-condition-type-export.md)
-- [Fax voorwaarden](./rest-condition-type-fax.md)
-- [Veld voorwaarden](./rest-condition-type-field.md)
-- [Interesse voorwaarden](./rest-condition-type-interest.md)
-- [LastContact voorwaarden](./rest-condition-type-lastcontact.md)
-- [Miniview voorwaarden](./rest-condition-type-miniview.md)
-- [SMS voorwaarden](./rest-condition-type-sms.md)
-- [Todo voorwaarden](./rest-condition-type-todo.md)
-- [Survey voorwaarden](./rest-condition-type-survey.md)
-- [Part voorwaarden](./rest-condition-type-part.md)
-- [ReferView voorwaarden](./rest-condition-type-referview.md)
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters voor de methode
-	$data = array(
-		'type' = 'date'
-	)
+// parameters voor de methode
+$data = array(
+    'type' = 'date'
+);
 
-	// voer het verzoek uit en print het resultaat
-	$api->post("rule/1234/conditions", array(), $data);
+// voer het verzoek uit en print het resultaat
+$api->post("rule/1234/conditions", array(), $data);
+```
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
+
 
 ## Meer informatie
 

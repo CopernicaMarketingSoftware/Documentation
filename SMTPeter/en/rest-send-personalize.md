@@ -9,7 +9,7 @@ allows you to add some code in your message that will be replaced with data
 specific for each recipient.
 
 The way how you indicate what parts of a message needs to be replaced with
-personal data is based on [SMARTY](http://www.smarty.net/). SMARTY makes
+personal data is based on special syntax. This syntax makes
 it easy to combine text and code, but more on this later. Firstly, we discuss
 how personalization data can be added to a POST request.
 
