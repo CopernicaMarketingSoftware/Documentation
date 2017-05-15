@@ -9,6 +9,7 @@ De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 
+
 ## Body data
 
 De nieuwe veldwaardes moet je als body data aan je request meegeven. Deze
@@ -20,28 +21,32 @@ Als je gebruik maakt van een traditioneel x-www-form-urlencoded formaat, dan
 moeten de variabelen de namen van de te wijzigen velden bevatten, en de 
 waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call wordt een profiel met ID 4567 aangepast.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data voor de methode
-    $data = array(
-        'firstname' =>  'John',
-        'lastname'  =>  'Doe',
-        'email'     =>  'johndoe@example.com'
-    );
-    
-    // voer het verzoek uit
-    $api->put("profile/1234/fields", $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+// data voor de methode
+$data = array(
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
+);
+
+// voer het verzoek uit
+$api->put("profile/1234/fields", array(), $data);
+```
+
+Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
+
     
 ## Meer informatie
 

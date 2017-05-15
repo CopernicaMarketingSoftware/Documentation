@@ -1,32 +1,26 @@
-# REST API: Conditie type doublefield (dubbelveld)
+DoubleField condition
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Om gebruik te maken van de doublefield condition moet je 
+ervoor zorgen dat je gebruik maakt van de 'DoubleField' value
+bij de 'type' property. Daarna ben je in staat om de 
+conditie naar wens op te geven. Je kunt, na het opgeven
+van de type, uit twee eigenschappen kiezen:
 
-Dit artikel gaat over de verschillende eigenschappen van de doublefield conditie.
+* match-mode: matcht modus van de doublefield conditie. Zie de match mode tabel.
+* fields: de combinatie van velden die gecheckt moet worden.
 
-## Individuele eigenschappen
+In de onderstaande tabel vind je alle condities voor de match mode en een voorbeeld 
+van een request.
 
-* **match-mode**: Match modus van de doublefield conditie. Zie de match mode tabel.
-* **fields**: De combinatie van velden die gecheckt moet worden.
+| Match mode                   | Omschrijving                                         |
+|------------------------------|------------------------------------------------------|
+| match_unique_profiles        | Matcht alle unieke profielen                         |
+| match_non_unique_profiles    | Matcht alle niet unieke profielen                    |
+| match_repeated_profiles      | Matcht alle profielen die eerder voorkwamen          |
+| match_non_repeated_profiles  | Matcht alle profielen die niet eerder voorkwamen     |
+| match_last_profiles          | Matcht alle profielen die later niet voorkomen       |
+| match_toberepeated_profiles  | Matcht alle profielen die ook voorkomen een hoger ID |
 
-## Match Modes
-
-De volgende tabel bevat de mogelijke waarden voor de match mode en hun
-omschrijvingen.
-
-| Match mode                   | Omschrijving                                        |
-|------------------------------|-----------------------------------------------------|
-| match_unique_profiles        | Match alle unieke profielen                         |
-| match_non_unique_profiles    | Match alle niet unieke profielen                    |
-| match_repeated_profiles      | Match alle profielen die eerder voorkwamen          |
-| match_non_repeated_profiles  | Match alle profielen die niet eerder voorkwamen     |
-| match_last_profiles          | Match alle profielen die later niet voorkomen       |
-| match_toberepeated_profiles  | Match alle profielen die ook voorkomen een hoger ID |
 
 ## Voorbeeld
 
@@ -35,8 +29,31 @@ We kunnen deze selectie maken door de velden voor de voornaam en achternaam te
 bekijken met de juiste matchmode. Om deze mensen te omschrijven kunnen we de volgende 
 waarden gebruiken:
 
-* **match-mode**: match_unique profiles
-* **fields**: \[voornaam, achternaam\]
+```php
+
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+    $data = array(
+    // declare that you want to use the doublefiel type
+    'type' => 'DoubleField',
+
+    // use match-mode with desired value
+    'match-mode' => 'match_unique_profiles',
+
+    // and select from which field
+    'fields' => '[voornaam, achternaam]',
+);
+
+// do the call
+$result = $api->get("rule/1234/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## Meer informatie
 
