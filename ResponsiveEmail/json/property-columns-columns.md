@@ -1,6 +1,6 @@
 # Property `columns`
 
-The property `columns` accepts a JSON array, with a comma seperated list with 
+The property `columns` accepts a JSON array, with a comma separated list with 
 JSON objects, containing the actual `blocks` inside the `columns`.
 
 ```javascript

@@ -1,6 +1,6 @@
 # Property `platforms`
 
-The property `platforms` is a JSON array, which contains a comma seperated JSON strings, representing the names of the platforms which are used inside the `share` block.
+The property `platforms` is a JSON array, which contains a comma separated JSON strings, representing the names of the platforms which are used inside the `share` block.
 
 ## Example usage
 

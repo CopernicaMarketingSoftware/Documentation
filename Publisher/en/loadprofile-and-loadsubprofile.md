@@ -1,3 +1,5 @@
+# Loadprofile and loadsubprofile
+
 Do you have multiple databases with related data? Within Smarty
 personalization, you are not limited to getting the data from the target
 database only. Loadprofile enables you to retrieve data from any
@@ -11,9 +13,9 @@ from a different database.
    {loadprofile source="nameofyourdatabase" assign=loadedprofile}
 ```
 
-*Source*must contain the name of the database. Optionally you can also
+*Source* must contain the name of the database. Optionally you can also
 refer to a selection in the database. The name of the database and the
-selection are seperated by a dot.
+selection are separated by a dot.
 
 *(source=Databasename.Selectionname)*
 

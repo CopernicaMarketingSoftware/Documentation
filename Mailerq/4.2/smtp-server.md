@@ -44,7 +44,7 @@ smtp-secure-port:   2526
 
 The "smtp-port" variable holds the port or ports that MailerQ opens and
 on which incoming connections are accepted. You can assign a single port,
-but comma-seperated values and port-ranges are also accepted. The
+but comma-separated values and port-ranges are also accepted. The
 default SMTP port is 25, which is the one that you probably want to use.
 
 Normally, MailerQ opens this port on all IP address that are available on

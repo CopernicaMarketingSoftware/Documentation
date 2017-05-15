@@ -11,7 +11,7 @@ Creating and managing your stylesheets
 The **Style** component allows you to create new stylesheets using the
 *Stylesheet* menu. \
 The stylesheet is generic and contains tabs to create stylesheets for
-general, RSS, Atom, surveys and web forms. **All in one file seperated
+general, RSS, Atom, surveys and web forms. **All in one file separated
 with tabs.**
 
 You can compose each style sheet with example coding, or create an empty
