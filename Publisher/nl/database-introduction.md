@@ -30,7 +30,7 @@ Het belangrijkst is dat de structuur van je database efficient en logisch is.
 Voordat je kunt mailen moet je bijvoorbeeld aangeven dat een database geschikt
 is om naar te mailen, en je kunt allerlei regels opstellen om te voorkomen
 dat ongeldige data in een database wordt opgeslagen. Dit kun je regelen
-door middel van *databaserestricties* en *gebruiksmogelijkheden* in te stellen.
+door middel van [*databaserestricties* en *gebruiksmogelijkheden*](database-restrictions-and-capabalities) in te stellen.
 
 ## Meer informatie
 

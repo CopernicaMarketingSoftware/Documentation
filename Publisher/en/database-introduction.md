@@ -30,7 +30,7 @@ a collection, or a parent's children.
 
 The most important thing to consider in your database is the structure. 
 You want your database to be clear and effective. It's also possible to 
-install rules and restrictions to prevent invalid data from entering your 
+install [*rules* and *restrictions*](database-restrictions-and-capabilities) to prevent invalid data from entering your 
 system or sending out unintended mailings.
 
 ## More information 
