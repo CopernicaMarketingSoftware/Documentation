@@ -29,12 +29,12 @@ available for document peronalization:
 -   Account manager with name and contact information
 
 Now you could of course store all these data in each database profile
-seperately, however this is not very convenient and certainly not very
+separately, however this is not very convenient and certainly not very
 manageable. Suppose that one office moves to a different physical
 location. This would require you to change all of the profiles
 affiliated with this office. \
 An easy way to eliminate this problem is by storing the office and
-account manager information into a seperate database and then link this
+account manager information into a separate database and then link this
 to the individual clients. You can accomplish this with the
 *loadprofile* and *loadsubprofile* functions.
 
@@ -69,7 +69,7 @@ destination**.
 
 #### The Offices database
 
-The *Offices* database is a seperate database that we use to store
+The *Offices* database is a separate database that we use to store
 information about the regional offices. Each office has its own profile
 and has a database field *Area* which will hold a unique code assigned
 to that office. This code will later be used to connect each profile

@@ -82,8 +82,8 @@ DSN parameters to the receiver. You can use the following four DSN settings:
 The "notify" variable specifies what sort of events trigger the Delivery
 Status Notification. Possible values are "NEVER", "SUCCESS", "FAILURE" and
 "DELAY". If you set it to "FAILURE", you will only receive bounces on
-failure. It is also allowed to set this to a comma seperated list of
-values. If you set the "notify" property to "SUCCESS,FAILURE", a bounce message
+failure. It is also allowed to set this to a comma separated list of
+values. If you set the "notify" property to "SUCCESS, FAILURE", a bounce message
 will be sent on successful delivery as well as on failure.
 
 The bounce message holds a full delivery report, as well as the full original

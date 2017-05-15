@@ -42,7 +42,7 @@ Once you have linked the stylesheet to the document or template, an exta
 tab [style] will show up above the document. From here you can quickly
 edit its content.
 
-### Example of working with classes and a seperate style sheet
+### Example of working with classes and a separate style sheet
 
 **The following examples explain how you can apply style rules to each
 H1 header inside a text block.**

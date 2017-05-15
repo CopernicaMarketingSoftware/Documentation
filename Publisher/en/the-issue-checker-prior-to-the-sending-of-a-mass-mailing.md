@@ -305,7 +305,7 @@ Keep your document as small as possible. If your document exceeds the
 before uploading them to the template or document.
 
 Images used in an image block can also be cropped and / or resized in
-Copernica. You will find these features at the image block (two seperate
+Copernica. You will find these features at the image block (two separate
 tabs).
 
 #### The total size of the attachments is too big
