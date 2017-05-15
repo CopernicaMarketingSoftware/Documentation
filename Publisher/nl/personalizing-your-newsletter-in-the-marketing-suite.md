@@ -30,7 +30,7 @@ mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
 
-## Waar kan ik personaliseren in de drag-and-drop editor
+## Waar kan ik personaliseren in de drag-and-drop editor?
 
 In de Marketing Suite kun je naast de tekstvelden ook op vele andere 
 plaatsen personalisatie toevoegen. Deze velden zijn te herkennen aan 

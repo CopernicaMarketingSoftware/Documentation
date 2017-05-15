@@ -107,7 +107,7 @@ instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelf
 database waaraan je je mailing of andere uiting wilt richten.
 
 
-## Waar kan je Smarty personalisatie gebruiken?
+## Waar kun je Smarty personalisatie gebruiken?
 
 Vrijwel overal kan je Smarty personalisatie toepassen:
 
@@ -120,7 +120,7 @@ Vrijwel overal kan je Smarty personalisatie toepassen:
 * Opvolgacties
 * Et cetera...
 
-Op een paar plekken kun je echter momenteel nog geen gebruik maken van personaliseren:
+Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 
 * In enquêtes
 * In content feeds
