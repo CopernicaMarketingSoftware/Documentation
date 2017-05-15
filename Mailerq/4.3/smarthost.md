@@ -110,7 +110,7 @@ incoming messages, you can use [Postfix' smtp-sink](http://www.postfix.org/smtp-
 
 It is possible to configure both the smtp-sink option and
 the smarthost at the very same time. If you do this, MailerQ will keep
-a single queue of messages to the smarthost (and thus not seperate queues
+a single queue of messages to the smarthost (and thus not separate queues
 for hotmail, gmail, yahoo, et cetera) - but when the TCP connection is
 set up, it does not connect to this smarthost, but to the sink address
 instead.

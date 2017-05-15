@@ -14,7 +14,7 @@ Joomla-plugin for Copernica installation guide
     -   If you do not have API details yet you have to create them from
         within Copernica
     -   This is the default set of Copernica credentials that the plugin
-        uses. You can choose to override these for each form seperately
+        uses. You can choose to override these for each form separately
 
 7.  Go to "Components" -\> "RSForm! Pro" -\> "Manage Forms"
 8.  Select a Form where you want to use the Copernica connector

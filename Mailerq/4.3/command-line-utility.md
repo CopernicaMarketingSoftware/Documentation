@@ -4,7 +4,7 @@ The MailerQ program can be started in two different modes: as a daemon process
 that runs all the time and that sends out the messages, or as a command line 
 utility that reads a message from standard input and publishes it to the inbox 
 queue. As a command line utility, MailerQ does not attempt to send out the mail, 
-it just puts the message in the RabbitMQ message queue. You need a seperate 
+it just puts the message in the RabbitMQ message queue. You need a separate 
 running MailerQ daemon process that takes care of the delivery.
 
 ![MailerQ mime output](../Images/mailerq-mime-output-stdout.png)

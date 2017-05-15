@@ -4,7 +4,7 @@ The Style component allows you to create new stylesheets using the
 Stylesheet menu.
 The stylesheet is generic and contains tabs to create stylesheets for
 general, RSS feeds, Atom feeds, surveys and web forms. **All in one file
-seperated with tabs.**
+separated with tabs.**
 
 You can compose each style sheet with example coding, or create an empty
 stylesheet to start from scratch. The example CSS files comes with lots
