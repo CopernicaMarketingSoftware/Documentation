@@ -3,9 +3,9 @@
 Voordat we beginnen met het uitleggen van data-scripts, is het goed om te weten
 dat je data-scripts alleen kunt gebruiken met het **nieuwe link tracking system**.
 De Marketing Suite maakt sinds de ontwikkeling al gebruik van dit nieuwe systeem 
-en hoef je daarom dus niet te activeren. In de Publisher is het nieuwe link
-tracking systeem niet automatisch geactiveerd. Als je gebruik wilt maken 
-van dit systeem, kun je dat handmatig activeren.
+en daarom hoef je hier dus geen speciale stappen voor te ondernemen. In de 
+Publisher is het nieuwe link tracking systeem niet automatisch geactiveerd. 
+Als je gebruik wilt maken van dit systeem, kun je dat handmatig activeren.
 
 Met data-scripts kun je allerlei opvolgacties aan hyperlinks koppelen.
 Deze scripts worden door Copernica uitgevoerd, zodra iemand op

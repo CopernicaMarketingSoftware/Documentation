@@ -1,34 +1,33 @@
 # De software inrichten
 
-Voordat je mailings kunt versturen met Copernica moet je de software 
-opzetten om samen te werken met jouw database en zender domain. Eerst 
-moet je een zender domein opzetten en je DNS en subdomeinen configureren. 
-Dit zorgt ervoor dat Copernica namens jou mail kan versturen en succesvol 
-aan kan laten komen. Hierna kun je een database aanmaken of importeren. 
-Hierna kun je er [selecties](./selections-introduction) in aanmaken om 
-subgroepen binnen je database te mailen. 
+Voordat je mailings kunt versturen met Copernica, moet je eerst de software 
+configureren. Deze configuratie bestaat uit twee stappen: opzetten van een
+sender domain en het invullen van je DNS instellingen. Op deze manier zorg
+je ervoor dat Copernica namens jou e-mails kan versturen. Na het opzetten
+van je database, kun je beginnen met het maken van [selecties](./selections-introduction) 
+en regels.
 
-Als je dit allemaal hebt gedaan kun je je eerste template aan maken met 
-de gebruiksvriendelijke template editor in de Marketing Suite. Als deze 
-af is kun je gaan mailen!
+Na het opzetten van de fundatie kun je aan de slag met templates. Je doet 
+dit met de gebruiksvriendelijke template editor in de Marketing Suite. 
+Klaar met je templates? Mooi! Dan kan de mailing nu worden verstuurd.
 
-Copernica verzamelt een hoop data over de mailings die je verstuurt. Als 
-je deze ook wil integreren met je eigen systeem kun je daar 
-[feedback loops](./feedback-loops) voor instellen.
 
 ## Checklist snel-op-weg
  
-Om je op weg te helpen, hebben we een kleine checklist gemaakt. Als je de volgende
-stappen zet, dan heb je genoeg gedaan om je eerste mailing te versturen.
+Om je op weg te helpen, hebben we een kleine checklist gemaakt. Door het 
+volgen van de volgende stappen heb je alle benodigdhedenom je eerste mailing 
+te versturen.
 
 * [Afzenderdomain instellen](quick-sender-domain-guide)
 * [Database inrichten](quick-database-guide)
-* [Je eerste mail met de drag-and-drop editor](quick-mailing-guide)
+* [Je eerste e-mail met de drag-and-drop editor](quick-mailing-guide)
+
 
 ## Meer informatie
 
-Voor het integreren met je eigen systeem en het aanmaken van selecties 
-om naar te mailen vindt je meer informatie in de artikelen hieronder.
+Wil je realtime op de hoogte worden gehouden van de processen die rondom je
+mailings plaatsvinden? Stel dan [feedback loops](./feedback-loops) in op je
+eigen systeem en ontvang alle meldingen die van onze servers komen.
 
-* [Selecties maken in een database](./selections-introduction)
 * [Integreren met je eigen systeem](./feedback-loops)
+* [Selecties maken in een database](./selections-introduction)
