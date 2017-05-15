@@ -49,7 +49,7 @@ $api = new CopernicaRestApi("my-access-token");
 );
 
 // do the call
-$result = $api->post("rule/1234/conditions", $data);
+$result = $api->post("rule/id/conditions", $data);
 
 // print the result
 print_r($result);
@@ -58,6 +58,6 @@ print_r($result);
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
-* [Conditie type aanpassing](rest-condition-type-change)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
+* [Change conditions](rest-condition-type-change)
