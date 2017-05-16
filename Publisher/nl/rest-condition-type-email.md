@@ -3,12 +3,12 @@
 Je kunt gebruik maken van een e-mail condition, door een property ("type")
 en een value ("Email") op te geven. Daarna ben je in staat om de 
 condities naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de EmailCondition en een voorbeeld van een request.
+eigenschappen van de Email condition en een voorbeeld van een request.
 
 
 ## E-mail condition eigenschappen
 
-* match-mode:                 matchmode van de mailing conditie. Zie match modus tabel;
+* match-mode:                 match mode van de mailing conditie. Zie match modus tabel;
 * required-destination:       bestemming van de mailing. Mogelijke waarden:
 
 ```text
@@ -32,6 +32,12 @@ eigenschappen van de EmailCondition en een voorbeeld van een request.
 
 ## Match modes
 
+Je kunt, net zoals bij de [DoubleField](rest-condition-type-doublefield) conditie, 
+gebruik maken van match modes. Hiermee kun je gemakkelijk segmenteren op bepaalde 
+uitkomsten van je verstuurde e-mails. In de onderstaande tabel vind je alle mogelijke 
+match modes.
+
+
 | Match modes                               | Omschrijving                                                           |
 |-------------------------------------------|------------------------------------------------------------------------|
 | match_profiles_that_received_something    | Match alle profielen die iets ontvangen hebben.                        |
@@ -42,8 +48,8 @@ eigenschappen van de EmailCondition en een voorbeeld van een request.
 
 ## Individuele eigenschappen
 
-* required-result: het zekere resultaat van een e-mail. Zie ook de required result tabel;
-* clicked-url: URL die aangeklikt moet worden als required-result op "clickonurl" staat;
+* required-result: het resultaat van een e-mail. Zie ook de required result tabel;
+* clicked-url: gespecificeerde URL voor de required-result die in dit geval op "clickonurl" staat;
 * required-errors: error codes om te gebruiken met "error" als required-result. Mogelijke waarden: 
 
 ```text
@@ -114,12 +120,15 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-    // declare that you want to use the EmailCondition type
-    'type' => 'EmailCondition',
-    // then you use the property of choice
+    // declare that you want to use the Email condition type
+    'type' => 'Email',
+    // then you set the property of choice
     'required-result' => 'clickonurl',
     // and in this case the required URL
-    'required-url' => 'wwww.example.com'
+    'required-url' => 'wwww.example.com',
+
+    // you could also choose to use the match mode
+    'match-mode' => 'match_profiles_that_received_something'
 );
 
 // do the call

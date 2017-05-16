@@ -6,10 +6,10 @@ op te geven. Daarna ben je in staat om de conditie
 naar wens op te geven. Je kunt, na het opgeven van 
 de type, uit twee eigenschappen kiezen:
 
-* match-mode: matcht modus van de doublefield conditie. Zie de match mode tabel.
+* match-mode: matcht modus van de DoubleField conditie. Zie de match mode tabel.
 * fields: de combinatie van velden die gecheckt moet worden.
 
-In de onderstaande tabel vind je alle condities voor de match mode en een voorbeeld 
+In de onderstaande tabel vind je alle mogelijke match modes en een voorbeeld 
 van een request.
 
 | Match mode                   | Omschrijving                                         |
