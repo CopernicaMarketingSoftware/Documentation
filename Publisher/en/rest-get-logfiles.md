@@ -19,7 +19,7 @@ The following PHP script demonstrates how to use the API method:
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call, and print result
-    print_r($api->get("logfiles"=));
+    print_r($api->get("logfiles"));
 
 For the example above you need the [CopernicaRestApi class](./rest-php.md).
 

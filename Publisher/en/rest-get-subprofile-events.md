@@ -8,6 +8,7 @@ to the following URL:
 The $id should be replaced with the numerical identifier of the subprofile 
 you're requesting the events of.
 
+
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
@@ -16,7 +17,6 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 ### Start and end
 
@@ -30,11 +30,13 @@ start is leading. Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
 
+
 ### Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags
 with a semicolon.
+
 
 ## Returned fields
 
@@ -49,7 +51,7 @@ A JSON with all the event for the provided subprofile:
         ...
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "fieldname1" : "data1",
         "fieldname2" : "data2",
         ...
@@ -57,6 +59,9 @@ A JSON with all the event for the provided subprofile:
     ...
 ]
 ```
+The `event` property in the JSON describes which type of event it is. The types that
+are available are listed in the [event types page](./event-types.md).
+
 
 ## PHP Example
 

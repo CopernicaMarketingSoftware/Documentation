@@ -17,7 +17,6 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 ### Start and end
 
@@ -30,6 +29,7 @@ the two is longer than a month, it will be shortened to a month where the
 start is leading. Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
+
 
 ### Tags
 
@@ -51,7 +51,7 @@ This method returns a JSON containing all the events.
         ...
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "fieldname1" : "data1",
         "fieldname2" : "data2",
         ...
@@ -59,6 +59,9 @@ This method returns a JSON containing all the events.
     ...
 ]
 ```
+The `event` property in the JSON describes which type of event it is. The types that
+are available are listed in the [event types page](./event-types.md).
+
 
 ## PHP Example
 

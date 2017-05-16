@@ -21,20 +21,20 @@ De logfiles bevatten de volgende informatie.
 ## Andere logfiles
 
 * [Marketing suite algemeen log](./rest-cdm-attempts-logfiles)
-* [Marketing suite misbruik log](./rest-cdm-abuses-logfile)
+* [Marketing suite misbruik log](./rest-cdm-abuse-logfile)
 * [Marketing suite click log](./rest-cdm-click-logfile)
 * [Marketing suite ontvangst log](./rest-cdm-delivery-logfile)
 * [Marketing suite error log](./rest-cdm-error-logfile)
 * [Marketing suite impressies log](./rest-cdm-impression-logfile)
 * [Marketing suite herzendingen log](./rest-cdm-retry-logfile)
-* [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribes-logfile)
+* [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
-* [Publisher misbruik log](./rest-pom-abuses-logfile)
+* [Publisher misbruik log](./rest-pom-abuse-logfile)
 * [Publisher clicks log](./rest-pom-clicks-logfile)
-* [Publisher ontvangst log](./rest-pom-deliveries-logfile)
-* [Publisher error log](./rest-pom-errors-logfile)
-* [Publisher impressies log](./rest-pom-impressions-logfile)
-* [Publisher uitschrijvingen log](./rest-pom-unsubscribes-logfile)
+* [Publisher ontvangst log](./rest-pom-delivery-logfile)
+* [Publisher error log](./rest-pom-error-logfile)
+* [Publisher impressies log](./rest-pom-impression-logfile)
+* [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
 
 ## Meer informatie over log files
