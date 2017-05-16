@@ -15,7 +15,6 @@ The following parameters can be added to the URL as variables:
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 ### Start and end
 
@@ -44,7 +43,7 @@ A JSON with all the events for this message.
         ...
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "fieldname1" : "data1",
         "fieldname2" : "data2",
         ...
@@ -52,6 +51,8 @@ A JSON with all the events for this message.
     ...
 ]
 ```
+The `event` property in the JSON describes which type of event it is. The types that
+are available are listed in the [event types page](./event-types.md).
 
 
 ## PHP Example

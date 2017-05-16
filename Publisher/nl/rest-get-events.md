@@ -1,19 +1,22 @@
 # Rest events
 
-Het loggen van data gebeurt bij SMTPeter volledig automatisch. Zo houdt SMTPeter onder 
-meer de volgende events bij: afleveringen, bounces, clicks en opens. Deze log files 
-zijn op te vragen via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
-naar een specifiek event. De flexibele API geeft je de mogelijkheid om het event naar 
-keuze op te vragen. Je doet dit middels een van de volgende URLs:
+Wij loggen alles wat er met jouw mailing gebeurt. Zo houden we
+bijvoorbeeld events bij met betrekking tot afleveringen, bounces, clicks, opens, etc..
+Deze events schrijven we weg naar log files en en deze log files zijn op te vragen
+via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
+naar een specifieke events. De flexibele API geeft je de mogelijkheid om deze events 
+op te vragen. Je doet dit middels een van de volgende URLs:
 
 ```text
-https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
-https://api.copernica.com/v1/events/email/$email?access_token=xxxx
-https://api.copernica.com/v1/events/tags/$tag1/$optionaltag2/$optionaltag3/...?access_token=xxxx
-https://api.copernica.com/v1/events/profile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/subprofile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/template/$id?access_token=xxxx
-https://api.copernica.com/v1/events/document/$id?access_token=xxxx
+https://api.copernica.com/v1/message/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
+https://api.copernica.com/v1/email/$email/events?access_token=xxxx
+https://api.copernica.com/v1/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx
+https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
+https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
+https://api.copernica.com/v1/template/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
 ```
 
 ## Beschikbare parameters
@@ -29,10 +32,11 @@ variabelen worden toegevoegd:
 - **tags**:  optionele tags waarop gefilterd kan worden.
 
 
-## Start en end parameters
+### Start en end parameters
 
-De *default* instelling voor het tonen van calls is afhankelijk van het type event. 
-Er wordt uitgegaan van een maand als er geen specifieke start en eind datum worden gespecificeerd.
+Als er geen specifieke start en eind datum worden gespecificeerd wordt de 
+standaard periode bij het event getoond. Deze periode is afhankelijk van het
+type event.
 
 Bij het opgeven van een startdatum (zonder einddatum), wordt vanaf de startdatum een maand 
 weergegeven.
@@ -49,12 +53,12 @@ Houd er ook rekening mee dat de beperking van de periode tot een maand gewijzigd
 de performance dit vereist.
 
 
-## Tags
+### Tags
 
-Het is ook mogelijk om een tag mee te geven. Vanaf dat moment kunnen de events 
-ook worden gefilterd op de tags. Het kan natuurlijk voorkomen dat je op meerdere 
-tags tegelijkertijd wil filteren. In dat geval kun je tags achter elkaar zetten 
-en ze scheiden door middel van puntkomma's.
+Het is ook mogelijk om een tag mee te geven waarop de events gefilterd moeten
+worden. Het kan natuurlijk voorkomen dat je op meerdere tags tegelijkertijd
+wilt filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
+door middel van puntkomma's.
 
 
 ## Geretourneerde informatie
@@ -64,7 +68,7 @@ Na het verzoek ontvang je de volgende JSON:
 ```json
 [
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -72,7 +76,7 @@ Na het verzoek ontvang je de volgende JSON:
         }
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -82,71 +86,127 @@ Na het verzoek ontvang je de volgende JSON:
     ...
 ]
 ```
+De `event` property in de JSON geeft het type event weer. De mogelijke
+types staan beschreven op de [event types pagnina](./event-types.md).
 
-Het `type` in de JSON geeft het type record. De beschikbare types staan in de 
-onderstaande tabel. De beschikbare data wordt beschreven op de betreffende 
-pagina van het type.
+## Events bij een bericht
 
-| Marketing Suite Event Type            | Description                                                                                   |
-| ------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [attempt](./cdm-attempts-logfile.md)  | Generieke informatie over e-mails, verstuurd met de Marketing Suite                           |
-| [abuse](./cdm-abuse-logfile.md)       | Informatie over e-mails verstuurd met Marketing Suite die een notificatie hebben getriggerd   | 
-| [click](./cdm-click-logfile.md)       | Informatie over clicks, gegenereerd uit e-mails, verstuurd met Marketing Suite                |
-| [delivery](./cdm-delivery-logfile.md) | Informatie over afgeleverde e-mails, verstuurd met Marketing Suite                            |
-| [error](./cdm-error-logfile.md)       | Informatie over e-mails, verstuurd met Marketing Suite die een error hebben getriggerd        |
-| [open](./cdm-impression-logfile.md)   | Informatie over het aantal opens van een e-mail, verstuurd met Marketing Suite                |
-| [retry](./cdm-retry-logfile.md)       | Informatie over e-mails, verstuurd met Marketing Suite waar nog een poging is geprobeerd      |
-| [unsubscribe](./cdm-unsubscribe.md)   | Informatie over e-mails, verstuurd met Marketing Suite die tot een unsubscribe hebben geleid  |
-
-
-| Publisher Event Type                         | Beschrijving                                                                                   |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------     |
-| [attempt](./pom-attempts-logfile.md)         | Generieke informatie over e-mails, verstuurd met de Publisher                                  |
-| [abuse](./pom-abuses-logfile.md)             | Informatie over e-mails, verstuurd met de Publisher die een notificatie hebben getriggerd      |
-| [click](./pom-clicks-logfile.md)             | Informatie over clicks, gegenereerd uit e-mails, verstuurd met de Publisher                    |
-| [delivery](./pom-deliveries-logfile.md)      | Informatie over  afgeleverde e-mails, verstuurd met de Publisher                               |
-| [error](./pom-errors-logfile.md)             | Informatie over e-mails, verstuurd met de Publisher die een error hebben getriggerd            |
-| [open](./pom-impressions-logfile.md)         | Informatie over het aantal impressies van een e-mail, verstuurd met Marketing Suite            |
-| [retry](./pom-retries-logfile.md)            | Informatie over e-mails, verstuurd met de Publisher waar nog een poging is geprobeerd          |
-| [unsubscribe](./pom-unsubscribes-logfile.md) | Informatie over e-mails, verstuurd met Marketing Suite die tot een unsubscribe hebben geleid   |
-
-
-## Events gebasseerd op de destinationid
-
-Alle informatie over een specifiek bericht kun je opvragen door een request te doen
-naar:
+Events bij een met Marketing Suite verstuurd bericht kun je opvragen
+door een request te doen naar:
 
 ```text
-https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
+https://api.copernica.com/v1/message/$id/events?access_token=xxxx
 ```
-waar `$id` de destinationid is van de *interest*.
-
-## Events gebasseerd op het e-mailadres
-
-Alle informatie over een specifiek e-mailadres kun je opvragen door een request
-te doen naar:
+waar `$id` de id van het bericht is. Je krijgt vervolgens de informatie over dit bericht vanaf
+het moment van verzenden tot één maand na verzenden. Als je deze informatie
+voor een met Publisher verstuurd bericht wilt hebben kun je een request te
+sturen naar:
 
 ```text
-https://api.copernica.com/v1/events/email/$email?access_token=xxxx
+https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
 ```
-waar `$email` het e-mailadres is waar je geintresseerd in bent.
 
-## Events gebasseerd op tags
+Als je de gegevens voor een andere periode wilt opvragen kun je `start`
+en/of `end` parameter meegeven.
 
-Alle informatie over een tag kun je opvragen door een request te doen naar:
+
+## Events bij een e-mailadres
+
+Events bij een specifiek e-mailadres kun je opvragen door een request
+te sturen naar:
 
 ```text
-https://api.copernica.com/v1/events/tags/$tag1?access_token=xxxx
+https://api.copernica.com/v1/email/$email/events?access_token=xxxx
 ```
-waar `TAG` de tag is waarin je bent geintresseerd.
-Optioneel kun je ook filteren op meerdere tags. Dit kun je doen door de call als volgt uit te breiden:
+waar `$email` het e-mailadres is waar je geïnteresseerd in bent. Je krijgt
+alle events die bij dit e-mailadres horen tot een maand geleden.
+Als je de informatie voor een andere periode wilt kun je een `start` en/of
+`end` parameter meegeven.
+
+Als je wilt filteren op tags dan kun je de `tag` parameter gebruiken om deze 
+
+## Events bij tags
+
+Events bij een tag kun je opvragen door een request te sturen naar:
 
 ```text
-https://www.smtpeter.com/v1/events/tags/TAG1/TAG2/TAG3/...
+https://api.copernica.com/v1/tags/$tag1/events?access_token=xxxx
+```
+waar `$tag1` de tag is waarin je bent geïnteresseerd. Je krijgt alle events
+die bij deze tag horen tot een maand geleden. 
+Je kunt ook op meerdere tags tegelijkertijd filteren door de tags te scheiden
+met puntkomma's:
+
+```text
+https://www.smtpeter.com/v1/tags/TAG1/TAG2/TAG3/.../events?acces_token=xxx
 ```
 
-De geretourneerde JSON bevat alleen informatie voor berichten die alle tags hebben opgegeven.
+De geretourneerde JSON bevat alleen events voor berichten die alle tags
+bevatten.
 
-## Meer information
+
+## Events bij een profiel
+
+Events bij een profiel kun je opvragen door een request te sturen naar:
+
+```text
+https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
+```
+waar `$id` vervangen moet worden door de numerieke identifier van het profiel.
+Je krijgt vervolgens de events tot een maand terug voor dit profiel. Als
+je de events voor een andere periode wilt dan kun je een `start` en/of
+`end` parameter gebruiken.
+Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
+
+
+## Events bij een subprofiel
+
+Events bij een subprofiel kun je opvragen door een request te sturen naar:
+
+```text
+https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
+```
+waar `$id` vervangen moet worden door de numerieke identfier van het subprofiel.
+Je krijgt vervolgens de events tot een maand terug. Als je events voor een
+andere periode wilt dan kun jee een `start` en/of `end` parameter gebruiken.
+Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
+
+
+## Events bij een template
+
+Events bij een Marketing Suite template kun je opvragen door een request
+te sturen naar:
+
+```text
+https://api.copernica.com/v1/template/$id/events?access_token=xxxx
+```
+`$id` is hier de numerieke identifier van de Marketing Suite template
+waarvoor je de events wilt hebben. Als je de events voor een publisher
+template wilt hebben kun je een request sturen naar:
+
+```text
+https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
+```
+
+Je krijgt vervolgens de events tot een maand terug voor de betreffende
+template. Als je de events voor een andere periode wilt hebben kun je
+optioneel een `start` en/of `end` parameter meegeven. Optioneel kun je ook
+filteren op tags door een `tags` parameter mee te geven.
+
+
+## Events bij een document
+
+Events bij een document kun je opvragen door een request te sturen naar:
+
+```text
+https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
+```
+waar `$id` de numeriek identifier van het document is. Je krijgt vervolgens
+de events tot een maand terug van dit document. Als je events voor een andere
+periode wilt hebben dan kun je een `start` en/of `end` parameter meegeven.
+Optioneel kun je ook filter op tags door een `tags` parameter mee te geven.
+
+
+## Meer informatie
 
 * [REST API](./rest-api)
