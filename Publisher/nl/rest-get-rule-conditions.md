@@ -14,21 +14,21 @@ In onderstaande lijst zijn alle conditions weergegeven die mogelijk
 kunnen worden teruggegeven door de REST API. Je kunt precies lezen 
 wat iedere condition inhoudt door erop te klikken:
 
-- [Change conditions](./rest-condition-type-change.md)
-- [Date conditions](./rest-condition-type-date.md)
-- [DoubleField conditions](./rest-condition-type-doublefield.md)
-- [E-mail conditions](./rest-condition-type-email.md)
-- [Export conditions](./rest-condition-type-export.md)
-- [Fax conditions](./rest-condition-type-fax.md)
-- [Field conditions](./rest-condition-type-field.md)
-- [Interesse conditions](./rest-condition-type-interest.md)
-- [LastContact conditions](./rest-condition-type-lastcontact.md)
-- [MiniView conditions](./rest-condition-type-miniview.md)
-- [SMS conditions](./rest-condition-type-sms.md)
-- [Todo conditions](./rest-condition-type-todo.md)
-- [Survey conditions](./rest-condition-type-survey.md)
-- [Part conditions](./rest-condition-type-part.md)
-- [ReferView conditions](./rest-condition-type-referview.md)
+- [Change condition](./rest-condition-type-change.md)
+- [Date condition](./rest-condition-type-date.md)
+- [DoubleField condition](./rest-condition-type-doublefield.md)
+- [E-mail condition](./rest-condition-type-email.md)
+- [Export condition](./rest-condition-type-export.md)
+- [Fax condition](./rest-condition-type-fax.md)
+- [Field condition](./rest-condition-type-field.md)
+- [Interest condition](./rest-condition-type-interest.md)
+- [LastContact condition](./rest-condition-type-lastcontact.md)
+- [MiniView condition](./rest-condition-type-miniview.md)
+- [SMS condition](./rest-condition-type-sms.md)
+- [Todo condition](./rest-condition-type-todo.md)
+- [Survey condition](./rest-condition-type-survey.md)
+- [Part condition](./rest-condition-type-part.md)
+- [ReferView condition](./rest-condition-type-referview.md)
 
 
 ## Voorbeeld in PHP

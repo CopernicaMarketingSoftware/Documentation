@@ -1,28 +1,29 @@
-# E-mailCondition
+# E-mail condition
 
 Je kunt gebruik maken van een e-mail condition, door een property ("type")
-en een value ("EmailCondition") op te geven. Daarna ben je in staat om de 
+en een value ("Email") op te geven. Daarna ben je in staat om de 
 condities naar wens op te geven. In de onderstaande tabel vind je alle 
 eigenschappen van de EmailCondition en een voorbeeld van een request.
 
 
-## E-mailCondition eigenschappen
+## E-mail condition eigenschappen
 
 * match-mode:                 matchmode van de mailing conditie. Zie match modus tabel;
-* required-destination:       bestemming van de mailing. Mogelijke waarden: "profile", "subprofile", anything" als beide mag;
+* required-destination:       bestemming van de mailing. Mogelijke waarden: <br>
+"profile"; <br>
+"subprofile"; <br>
+"anything" als beide mag; <br>
 * document:                   naam van het document gebruikt voor matchmode. (Alleen bij "match_profiles_that_received_document", "match_profiles_that_received_not_document");
 * template:                   naam van de template van de conditie;
 * number:                     het aantal berichten dat door de ontvanger moeten zijn ontvangen;
-* operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren:
+* operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren: <br>
 
-```text
-= (gelijk);
-!= (niet gelijk);
-<> (tussen);
-< (minder dan); 
-> (meer dan).
+= (gelijk); <br>
+!= (niet gelijk); <br>
+<> (tussen); <br>
+< (minder dan); <br>
+> (meer dan). <br>
 
-```
 
 ## Match modes
 
