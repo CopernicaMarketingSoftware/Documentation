@@ -5,16 +5,16 @@ an email address, a profile or a subprofile. The types of events that are
 available are listed in the tables below. The data that these types contain
 are described on the page of the particular log file.
 
-| Marketing Suite Event Type                 | Description                                                 |
-| ------------------------------------------ | ----------------------------------------------------------- |
-| [attempt](./rest-cdm-attempts-logfile.md)  | General info about mails sent with Marketing Suite (MS)     |
-| [abuse](./rest-cdm-abuse-logfile.md)       | Info about mails sent via MS that triggered a notification  |
-| [click](./rest-cdm-click-logfile.md)       | Info about clicks generated from mails sent with MS         |
-| [delivery](./rest-cdm-delivery-logfile.md) | Info about delivered mails sent with MS                     |
-| [error](./rest-cdm-error-logfile.md)       | Info about mails sent with MS that triggered an error       |
-| [open](./rest-cdm-impression-logfile.md)   | Info about opens from mails sent with MS                    |
-| [retry](./rest-cdm-retry-logfile.md)       | Info about mails sent via MS for which we retry a delivery  |
-| [unsubscribe](./rest-cdm-unsubscribe.md)   | Info about mails sent via MS that triggered an unsubscribe  |
+| Marketing Suite Event Type                       | Description                                                 |
+| ------------------------------------------------ | ----------------------------------------------------------- |
+| [attempt](./rest-cdm-attempts-logfile.md)        | General info about mails sent with Marketing Suite (MS)     |
+| [abuse](./rest-cdm-abuse-logfile.md)             | Info about mails sent via MS that triggered a notification  |
+| [click](./rest-cdm-click-logfile.md)             | Info about clicks generated from mails sent with MS         |
+| [delivery](./rest-cdm-delivery-logfile.md)       | Info about delivered mails sent with MS                     |
+| [error](./rest-cdm-error-logfile.md)             | Info about mails sent with MS that triggered an error       |
+| [open](./rest-cdm-impression-logfile.md)         | Info about opens from mails sent with MS                    |
+| [retry](./rest-cdm-retry-logfile.md)             | Info about mails sent via MS for which we retry a delivery  |
+| [unsubscribe](./rest-cdm-unsubscribe-logfile.md) | Info about mails sent via MS that triggered an unsubscribe  |
 
 
 | Publisher Event Type                              | Description                                                        |
