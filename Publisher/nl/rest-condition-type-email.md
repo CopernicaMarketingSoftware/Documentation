@@ -1,4 +1,4 @@
-Email condition
+# E-mail condition
 
 Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
 de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 

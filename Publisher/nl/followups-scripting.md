@@ -51,16 +51,15 @@ Je kunt heel makkelijk een profiel aanpassen als iemand op een link klikt:
 <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Klik hier om af te melden</a>
 ```
 
-Als iemand op de link klikt, wordt het script in het "data-script" attribuut
-uitgevoerd. In bovenstaand voorbeeld wordt het veld "newsletter" dus op "no"
-gezet bij een klik. Het voorbeeld is eenvoudig, maar als je wilt kun je
-ook heel complexe scripts uitvoeren.
+Het script in het "data-script" attribuut wordt uitgevoerd, als iemand op de link klikt.
+In bovenstaand voorbeeld wordt het veld "newsletter" dus op "no" gezet bij een klik. 
+Het voorbeeld is eenvoudig, maar als je wilt kun je ook heel complexe scripts uitvoeren.
 
 Overigens, als je de broncode van een door Copernica verstuurd bericht inspecteert, 
-dan zul je hier nooit een data-script attribuut in aantreffen. Het data-script 
-attribuut wordt namelijk uit de mail gefilterd voordat het bericht wordt verstuurd, zodat
-dit niet zichtbaar is voor de ontvanger. Maar Copernica slaat het script wel op en voert het 
-uit als op de link wordt geklikt.
+tref je nooit een data-script attribuut aan. Het data-script attribuut wordt namelijk 
+uit de mail gefilterd voordat het bericht wordt verstuurd, zodat dit niet zichtbaar is
+voor de ontvanger. Maar Copernica slaat het script wel op en voert het uit als op de 
+link wordt geklikt.
 
 
 ## Meer informatie

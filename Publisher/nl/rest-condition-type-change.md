@@ -1,9 +1,9 @@
 # Change conditions
 
-Om gebruik te maken van de change conditions, moet je 
-ervoor zorgen dat je gebruik maakt van de 'Change' value
-bij de 'type' property. Daarna ben je in staat om de 
-conditie naar wens op te geven. In de onderstaande tabel 
+Je kunt gebruik maken van een change condition,
+door een property ("type") en een value ("Change")
+op te geven. Daarna ben je in staat om de conditie 
+naar wens op te geven. In de onderstaande tabel 
 vind je alle condities en een voorbeeld van een request.
 
 | Change type          | Omschrijving                     |

@@ -1,13 +1,8 @@
 GET database gegevens
 
-Dit is een methode om alle conditions van een rule op te vragen. 
+Dit is een methode om meta gegevens van een database op te vragen. 
 Deze methode ondersteunt geen parameters. De methode is aan te 
 roepen met een HTTP GET request naar de volgende URL:
-
-
-
-Methode om alle meta gegevens van een database op te vragen. De methode
-ondersteunt geen parameters. De methode wordt aangeroepen via het volgende adres:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
@@ -16,7 +11,7 @@ van een database.
 
 ## Geretourneerde velden
 
-* ID: 			uniek ID;
+* id: 			uniek ID;
 * name: 		naam van de database;
 * description: 	omschrijving van de database;
 * archived: 	is de database gearchiveerd of niet?;

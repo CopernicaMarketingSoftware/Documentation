@@ -14,8 +14,8 @@ Als `$id` kun je de ID of de naam van een database opgeven.
 
 ## Geretourneerde velden
 
-* behavior: de daadwerkelijke instelling.
-* fields: de nieuwe profielinstelling (alleen van toepassing indien het veld behavior op 'update' staat)
+* behavior: de daadwerkelijke instelling;
+* fields: de nieuwe profielinstelling (alleen van toepassing indien het veld behavior op 'update' staat).
 
 Het veld "behavior" kan drie mogelijke waardes hebben en bepaalt hoe Copernica
 met afmeldingen omgaat. De ondersteunde waardes zijn "nothing", "remove" en "update".
@@ -42,7 +42,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de methode uit en print het resultaat
-print_r($api->get("database/1234/unsubscribe"));
+print_r($api->get("database/id/unsubscribe"));
 ```
 
 ## Meer informatie
