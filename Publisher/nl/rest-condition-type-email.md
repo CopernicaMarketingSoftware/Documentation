@@ -22,7 +22,7 @@ eigenschappen van de EmailCondition en een voorbeeld van een request.
 != (niet gelijk); <br>
 <> (tussen); <br>
 < (minder dan); <br>
-> (meer dan). <br>
+> (meer dan). 
 
 
 ## Match modes
