@@ -24,10 +24,10 @@ van een request.
 
 ## Voorbeeld
 
-Laten we zeggen dat we alleen de mensen willen selecteren met een unieke naam. 
-We kunnen deze selectie maken door de velden voor de voornaam en achternaam te 
-bekijken met de juiste matchmode. Om deze mensen te omschrijven kunnen we de volgende 
-waarden gebruiken:
+Stel dat je uit een database alleen de mensen wilt selecteren met een unieke naam. 
+Je kunt dit doen door een selectie te maken van de voor- en achternaam velden. Vervolgens
+match je deze twee velden door middel van de matchmode. Hieronder zie je precies hoe dat 
+werkt.
 
 ```php
 
@@ -37,19 +37,19 @@ require_once("copernica_rest_api.php");
 // create an API object (add your own access token!)
 $api = new CopernicaRestApi("my-access-token");
 
-    $data = array(
-    // declare that you want to use the doublefiel type
-    'type' => 'DoubleField',
+$data = array(
+// declare that you want to use the DoubleField type
+'type' => 'DoubleField',
 
-    // use match-mode with desired value
-    'match-mode' => 'match_unique_profiles',
+// use match-mode with desired value
+'match-mode' => 'match_unique_profiles',
 
-    // and select from which field
-    'fields' => '[voornaam, achternaam]',
+// and select from which field
+'fields' => '[voornaam, achternaam]',
 );
 
 // do the call
-$result = $api->get("rule/1234/conditions", $data);
+$result = $api->get("rule/id/conditions", $data);
 
 // print the result
 print_r($result);
