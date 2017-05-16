@@ -22,11 +22,11 @@ eigenschappen van de Email condition en een voorbeeld van een request.
 * operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren: <br>
 
 
-= (gelijk); 
-\!= (niet gelijk); 
-<\> (tussen); 
-< (minder dan); 
-\> (meer dan).
+= (gelijk); <br>
+\!= (niet gelijk); <br>
+<\> (tussen); <br>
+< (minder dan); <br>
+\> (meer dan). 
 
 
 ## Match modes
