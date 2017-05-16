@@ -11,24 +11,23 @@ eigenschappen van de Email condition en een voorbeeld van een request.
 * match-mode:                 match mode van de mailing conditie. Zie match modus tabel;
 * required-destination:       bestemming van de mailing. Mogelijke waarden:
 
-```text
 "profile";
 "subprofile";
 "anything" als beide mag.
-```
+
 
 * document:                   naam van het document gebruikt voor matchmode. (Alleen bij "match_profiles_that_received_document", "match_profiles_that_received_not_document");
 * template:                   naam van de template van de conditie;
 * number:                     het aantal berichten dat door de ontvanger moeten zijn ontvangen;
 * operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren: <br>
 
-```text
+
 = (gelijk); 
-!= (niet gelijk); 
-<> (tussen); 
+\!= (niet gelijk); 
+<\> (tussen); 
 < (minder dan); 
-> (meer dan).
-```
+\> (meer dan).
+
 
 ## Match modes
 
