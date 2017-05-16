@@ -1,10 +1,10 @@
-DoubleField condition
+# DoubleField condition
 
-Om gebruik te maken van de doublefield condition moet je 
-ervoor zorgen dat je gebruik maakt van de 'DoubleField' value
-bij de 'type' property. Daarna ben je in staat om de 
-conditie naar wens op te geven. Je kunt, na het opgeven
-van de type, uit twee eigenschappen kiezen:
+Je kunt gebruik maken van een change condition,
+door een property ("type") en een value ("DoubleField")
+op te geven. Daarna ben je in staat om de conditie 
+naar wens op te geven. Je kunt, na het opgeven van 
+de type, uit twee eigenschappen kiezen:
 
 * match-mode: matcht modus van de doublefield conditie. Zie de match mode tabel.
 * fields: de combinatie van velden die gecheckt moet worden.

@@ -1,11 +1,11 @@
 # Date conditions
 
-Om gebruik te maken van de date condition moet je 
-ervoor zorgen dat je gebruik maakt van de 'Date' value
-bij de 'type' property. Daarna ben je in staat om de 
-conditie naar wens op te geven. Hieronder is uiteengezet
-van welke functionaliteiten je gebruik kunt maken. Ook is 
-er een voorbeeld van een request gegeven.
+Je kunt gebruik maken van een change condition,
+door een property ("type") en een value ("Date")
+op te geven. Daarna ben je in staat om de conditie 
+naar wens op te geven. Hieronder is uiteengezet
+van welke functionaliteiten je gebruik kunt maken. 
+Ook is er een voorbeeld van een request gegeven.
 
 
 ## Datum eigenschappen
@@ -19,13 +19,15 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 * before-mutation: tijdverschil voor de change conditie;
 * after-mutation: tijdverschil na de change conditie.
 
+
 ## Individuele eigenschappen
 
 * field: het database veld van de date condition;
 * compare-mode: vergelijk modus van de date condition.
 
-*compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
+Compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
 moet de hele datum matchen en bij de tweede waarde mag het jaar anders zijn.
+
 
 ## Voorbeeld
 
@@ -54,7 +56,6 @@ $result = $api->post("rule/id/conditions", $data);
 // print the result
 print_r($result);
 ```
-
 
 ## Meer informatie
 
