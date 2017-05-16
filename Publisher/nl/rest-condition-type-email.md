@@ -9,21 +9,26 @@ eigenschappen van de EmailCondition en een voorbeeld van een request.
 ## E-mail condition eigenschappen
 
 * match-mode:                 matchmode van de mailing conditie. Zie match modus tabel;
-* required-destination:       bestemming van de mailing. Mogelijke waarden: <br>
-"profile"; <br>
-"subprofile"; <br>
-"anything" als beide mag; <br>
+* required-destination:       bestemming van de mailing. Mogelijke waarden:
+
+```text
+"profile";
+"subprofile";
+"anything" als beide mag.
+```
+
 * document:                   naam van het document gebruikt voor matchmode. (Alleen bij "match_profiles_that_received_document", "match_profiles_that_received_not_document");
 * template:                   naam van de template van de conditie;
 * number:                     het aantal berichten dat door de ontvanger moeten zijn ontvangen;
 * operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren: <br>
 
-= (gelijk); <br>
-!= (niet gelijk); <br>
-<> (tussen); <br>
-< (minder dan); <br>
-> (meer dan). 
-
+```text
+= (gelijk); 
+!= (niet gelijk); 
+<> (tussen); 
+< (minder dan); 
+> (meer dan).
+```
 
 ## Match modes
 
