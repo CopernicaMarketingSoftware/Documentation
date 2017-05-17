@@ -27,6 +27,28 @@ vind je alle condities en een voorbeeld van een request.
 | lostinterest         | Interesse verloren               |
 
 
+## Toevoegen van een datum
+
+Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
+condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+meegeven aan de POST request:
+
+* before-time: 			matcht alleen de change condition voor deze tijd;
+* after-time: 			matcht alleen de change condition na deze tijd;
+* before-mutation: 		tijdverschil voor de change condition;
+* after-mutation: 		tijdverschil na de change condition.
+
+```text
+De 'time' properties accepteren voor de value de volgende stringvolgorde:
+'YYYY-MM-DD HH:MM:SS'
+'2017-01-01 00:00:00'
+
+De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
+'["plus", "2017-01-01", "05:43:21"]'
+```
+
+
 ## Voorbeeld 
 
 ```php
@@ -49,27 +71,9 @@ $result = $api->post("rule/id/conditions", $data);
 // print the result
 print_r($result);
 ```
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
-## Toevoegen van een datum
 
-Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
-conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
-meegeven aan de POST request:
-
-* before-time: 			matcht alleen de change conditie voor deze tijd;
-* after-time: 			matcht alleen de change conditie na deze tijd;
-* before-mutation: 		tijdverschil voor de change conditie;
-* after-mutation: 		tijdverschil na de change conditie.
-
-```text
-De 'time' properties accepteren voor de value de volgende stringvolgorde:
-'YYYY-MM-DD HH:MM:SS'
-'201701-01 00:00:00'
-
-De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
-'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
-'["plus", "2017-01-01", "05:43:21"]'
-```
 
 ## Meer informatie
 

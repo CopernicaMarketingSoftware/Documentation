@@ -2,7 +2,7 @@
 
 Je kunt gebruik maken van een e-mail condition, door een property ("type")
 en een value ("Email") op te geven. Daarna ben je in staat om de 
-condities naar wens op te geven. In de onderstaande tabel vind je alle 
+eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
 eigenschappen van de Email condition en een voorbeeld van een request.
 
 
@@ -11,16 +11,14 @@ eigenschappen van de Email condition en een voorbeeld van een request.
 * match-mode:                 match mode van de mailing conditie. Zie match modus tabel;
 * required-destination:       bestemming van de mailing. Mogelijke waarden:
 
-"profile";
-"subprofile";
+"profile"; <br>
+"subprofile"; <br>
 "anything" als beide mag.
-
 
 * document:                   naam van het document gebruikt voor matchmode. (Alleen bij "match_profiles_that_received_document", "match_profiles_that_received_not_document");
 * template:                   naam van de template van de conditie;
 * number:                     het aantal berichten dat door de ontvanger moeten zijn ontvangen;
 * operator:                   de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren: <br>
-
 
 = (gelijk); <br>
 \!= (niet gelijk); <br>
@@ -79,15 +77,14 @@ hun omschrijvingen.
 
 ## Toevoegen van een datum
 
-Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
-conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
+condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
 meegeven aan de POST request:
 
-* before-time:          matcht alleen de change conditie voor deze tijd;
-* after-time:           matcht alleen de change conditie na deze tijd;
-* before-mutation:      tijdverschil voor de change conditie;
-* after-mutation:       tijdverschil na de change conditie.
-
+* before-time:          matcht alleen de Email condition voor deze tijd;
+* after-time:           matcht alleen de Email condition na deze tijd;
+* before-mutation:      tijdverschil voor de Email condition;
+* after-mutation:       tijdverschil na de Email condition.
 
 ```text
 De 'time' properties accepteren voor de value de volgende stringvolgorde:
@@ -99,9 +96,10 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
+
 ## Voorbeeld
 
-Je kunt met bovenstaande eigenschappen op een hele geavanceerde selecties maken.
+Je kunt met bovenstaande eigenschappen op een hele geavanceerde manier selecties maken.
 Stel dat je een aparte selectie wilt aanmaken voor klanten die je e-mails ontvangen. 
 Een e-mail kan wel of niet aankomen en dat wil je graag na kunnen gaan. Je doet dit
 door de property "required-result" te combineren met de values "error" of "noerror". 
@@ -136,11 +134,11 @@ $result = $api->post("rule/id/conditions", $data);
 // print the result
 print_r($result);
 ```
-
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
-* [Condition type sms](rest-condition-type-sms)
-* [Condition type fax](rest-condition-type-fax)
+* [Sms condition](rest-condition-type-sms)
+* [Fax condition](rest-condition-type-fax)

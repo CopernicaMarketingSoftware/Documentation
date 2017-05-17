@@ -1,37 +1,31 @@
-# REST API: Conditie type fax
+# Fax condition
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Je kunt gebruik maken van een Fax condition, door een property ("type")
+en een value ("Fax") op te geven. Daarna ben je in staat om de 
+eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
+eigenschappen van de Fax condition en een voorbeeld van een request.
 
-Dit artikel gaat over de verschillende eigenschappen van de fax conditie.
 
-## Datum eigenschappen
+## Individuele eigenschappen
 
-De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
-binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
-worden in YYYY-MM-DD HH:MM:SS formaat.
+* match-mode: 					matchmode van de mailing condition. Zie matchmode tabel.
+* required-destination: 		bestemming van de mailing. Mogelijke waarden:
 
-* **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
-* **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
-* **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
-* **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
+"profile"; <br>
+"subprofile"; <br>
+"anything" als beide mag.
 
-## Mailing eigenschappen
+* document: 					naam van het document gebruikt voor matchmode. (Alleen bij "match_profiles_that_received_document", "match_profiles_that_received_not_document");
+* template: 					naam van de template van de condition;
+* number: 						het aantal berichten dat door de ontvanger moeten zijn ontvangen;
+* operator: 					de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren:
 
-* **match-mode**: Matchmode van de mailing conditie. Zie matchmode tabel.
-* **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
-"profile", "subprofile", anything" als beide mag.
-* **document**: Naam van het document gebruikt voor matchmode. (Alleen bij
-"match_profiles_that_received_document", "match_profiles_that_received_not_document")
-* **template**: Naam van de template van de conditie.
-* **number**: Het aantal berichten dat door de ontvanger moeten zijn ontvangen.
-* **operator**: De operator om het aantal berichten van de ontvanger met de waarde 
-van **number** te vergelijken. Ondersteunde operatoren:
-= (gelijk), \!= (niet gelijk), <\> (tussen), < (minder dan), \> (meer dan).
+= (gelijk); <br>
+\!= (niet gelijk); <br>
+<\> (tussen); <br>
+< (minder dan); <br>
+\> (meer dan).
+
 
 ## Match modes
 
@@ -42,21 +36,64 @@ van **number** te vergelijken. Ondersteunde operatoren:
 | match_profiles_that_received_nothing      | Match alle profielen die niets ontvangen hebben.                       |
 | match_profiles_that_received_not_document | Match alle profielen die niet een specifiek document ontvangen hebben. |
 
+
+## Toevoegen van een datum
+
+Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
+conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+meegeven aan de POST request:
+
+* before-time:          matcht alleen de Fax condition voor deze tijd;
+* after-time:           matcht alleen de Fax condition na deze tijd;
+* before-mutation:      tijdverschil voor de Fax condition;
+* after-mutation:       tijdverschil na de Fax condition.
+
+
 ## Voorbeelden
 
-Met de fax conditie kunnen we een selectie maken van mensen die meer dan 
-10 berichten hebben ontvangen in de laatste twee maanden, zodat we niet 
-te veel berichten versturen naar dezelfde persoon. Deze kan ons dan als 
-spam registreren, wat we natuurlijk willen voorkomen. We kunnen voor deze 
-selectie de volgende waarden gebruiken:
+Met de fax condition kun je een selectie maken van mensen die meer dan 
+10 berichten hebben ontvangen in de laatste twee maanden, zodat je niet 
+te veel berichten verstuurt naar dezelfde persoon. Zo voorkom je dat je 
+als verstuurder van spam wordt geregistreerd.  De waarden voor de selectie
+zien er als volgt uit:
 
-* **after-time**: Huidige dag - 2 maanden in YYYY-MM-DD HH:MM:SS formaat
-* **number**: 10
-* **operator**: >
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+// declare that you want to use the Fax type
+'type' => 'Fax',
+
+// use the after-time property
+'after-time' => '2017-01-01 00:00:00',
+
+// set the number
+'number' => '10',
+
+// set the operator
+'operator' => '>'
+
+
+// use property
+'match-mode' => 'match_profiles_that_received_nothing',
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
+
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
-* [Conditie type email](rest-condition-type-email)
-* [Conditie type sms](rest-condition-type-sms)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
+* [Email condition](rest-condition-type-email)
+* [Sms condition](rest-condition-type-sms)

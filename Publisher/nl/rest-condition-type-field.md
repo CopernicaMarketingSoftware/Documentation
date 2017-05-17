@@ -1,22 +1,19 @@
-# REST API: Conditie type field (veld)
+# Field condition
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Je kunt gebruik maken van een e-mail condition, door een property ("type")
+en een value ("Field") op te geven. Daarna ben je in staat om de 
+eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
+eigenschappen van de Field condition en een voorbeeld van een request.
 
-Dit artikel gaat over de verschillende eigenschappen van de field conditie.
 
 ## Individuele eigenschappen
 
-* **comparison**: Vergelijk type voor fieldconditie. Zie de comparison types tabel.
-* **field**: Veld om te vergelijken met waarde
-* **value**: Waarde om mee te vergelijken. (Aanpassing hiervan reset **other-field**)
-* **other-field**: Ander veld om **field** mee te vergelijken. Als deze is 
-ingesteld wordt **value** niet gebruikt.
-* **numeric-comparison**: Boolean value om aan te geven of value numeriek wordt vergeleken.
+* comparison:           vergelijk type voor fieldconditie. Zie de comparison types tabel.
+* field:                veld om te vergelijken met waarde.
+* value:                waarde om mee te vergelijken. (Aanpassing hiervan reset other-field).
+* other-field:          ander veld om field mee te vergelijken. Als deze is ingesteld wordt value niet gebruikt.
+* numeric-comparison:   boolean value om aan te geven of value numeriek wordt vergeleken.
+
 
 ## Comparison types
 
@@ -35,19 +32,43 @@ omschrijvingen.
 |regexp            | Regex          |
 |is-numeric        | Is numeriek    |
 
+
 ## Voorbeelden
 
-Laten we aannemen dat we een product hebben dat alleen kinderen leuk vinden 
-en dat we weten welke profielen kinderen hebben. Dit wordt aangegeven in het 
-veld "has_children" in de velden van de database profielen. We kunnen nu een 
-specifieke doelgroep emailen door een selectie te maken, namelijk de ouders, 
-met de field conditie. We gebruiken de volgende waarden:
+Stel dat je door middel van een "has_children" veld, weet welke profielen 
+kinderen hebben. In dit geval kun je een specifieke doelgroep e-mailen door
+een selectie te maken op de ouders. Je doet dit met de field condition. 
 
-* **field**: "has_children"
-* **value**: "yes"
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+
+// declare that you want to use the Field type
+'type' => 'Field',
+
+// use property field and check to see wether it is true
+'field' => 'has_children',
+'value' => 'yes',
+
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
+
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
-* [Conditie type interesse](rest-condition-type-interest)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
+* [Interest condition](rest-condition-type-interest)

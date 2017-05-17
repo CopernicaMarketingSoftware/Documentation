@@ -63,3 +63,6 @@ selecteer in de lijst het gewenste item en eventueel een XLST. Let op,
 de publicatie vervangt de reeds aanwezige content in het tekstblok.
 
 ![](../images/loadfeedfunction.png)
+
+
+<!-- incorporate this article in docs - > https://archive.copernica.com/en/support/personalization-in-feeds -->
