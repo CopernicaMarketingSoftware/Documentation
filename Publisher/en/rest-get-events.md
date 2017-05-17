@@ -1,19 +1,21 @@
 # Rest events
 
-Everything that passes through SMTPeter gets logged: deliveries, bounces, clicks, opens 
-all these events are written to log files. These log files are accessible through the 
+Everything that happens with your mailings gets logged: deliveries, bounces, clicks, opens, etc..
+All these events are written to log files. These log files are accessible through the 
 REST API. Yet, if you are only interested in particular events that fulfill a certain 
 requirement you can use the events rest call. All calls that are supported are:
 
 
 ```text
-https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
-https://api.copernica.com/v1/events/email/$email?access_token=xxxx
-https://api.copernica.com/v1/events/tags/$tag1/$optionaltag2/$optionaltag3/...?access_token=xxxx
-https://api.copernica.com/v1/events/profile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/subprofile/$id?access_token=xxxx
-https://api.copernica.com/v1/events/template/$id?access_token=xxxx
-https://api.copernica.com/v1/events/document/$id?access_token=xxxx
+https://api.copernica.com/v1/message/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
+https://api.copernica.com/v1/email/$email/events?access_token=xxxx
+https://api.copernica.com/v1/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx
+https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
+https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
+https://api.copernica.com/v1/template/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
+https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
 ```
 
 
@@ -29,7 +31,7 @@ The following parameters can be added to the URL as variables:
 - **tags**:  optional tags you want to filter for.
 
 
-## Start and end parameters
+### Start and end parameters
 
 If no start and end parameters are provided you will get the default period
 for the particular events. 
@@ -49,7 +51,7 @@ Also take into account that the monthly period limitation is subject to
 change if performance requires this.
 
 
-## Tags
+### Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags
@@ -66,7 +68,7 @@ The layout of this json is:
 ```json
 [
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -74,7 +76,7 @@ The layout of this json is:
         }
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -85,70 +87,118 @@ The layout of this json is:
 ]
 ```
 
-The `type` in the JSON describes which type of record it is. The types that
-are available are listed in the tables below. The data that these types
-contain are described on the page of the particular log file.
-
-| Marketing Suite Event Type            | Description                                                 |
-| ------------------------------------- | ----------------------------------------------------------- |
-| [attempt](./cdm-attempts-logfile.md)  | General info about mails sent with Marketing Suite (MS)     |
-| [abuse](./cdm-abuse-logfile.md)       | Info about mails sent via MS that triggered a notification  |
-| [click](./cdm-click-logfile.md)       | Info about clicks generated from mails sent with MS         |
-| [delivery](./cdm-delivery-logfile.md) | Info about delivered mails sent with MS                     |
-| [error](./cdm-error-logfile.md)       | Info about mails sent with MS that triggered an error       |
-| [open](./cdm-impression-logfile.md)   | Info about opens from mails sent with MS                    |
-| [retry](./cdm-retry-logfile.md)       | Info about mails sent via MS for which we retry a delivery  |
-| [unsubscribe](./cdm-unsubscribe.md)   | Info about mails sent via MS that triggered an unsubscribe  |
+The `event` property in the JSON describes which type of event it is. The types that
+are available are listed in the [event types page](./event-types.md).
 
 
-| Publisher Event Type                         | Description                                                        |
-| -------------------------------------------- | ------------------------------------------------------------------ |
-| [attempt](./pom-attempts-logfile.md)         | General info about mails sent with Publisher                       |
-| [abuse](./pom-abuses-logfile.md)             | Info about mails sent via Publisher that triggered a notification  |
-| [click](./pom-clicks-logfile.md)             | info about clicks generated from mails sent with Publisher         |
-| [delivery](./pom-deliveries-logfile.md)      | Info about delivered mails sent with Publisher                     |
-| [error](./pom-errors-logfile.md)             | Info about failed mails sent with Publisher                        |
-| [open](./pom-impressions-logfile.md)         | Info about impressions from mails sent with Publisher              |
-| [retry](./pom-retries-logfile.md)            | Info about mails sent via Publisher for which we retry a delivery  |
-| [unsubscribe](./pom-unsubscribes-logfile.md) | Info about mails sent via Publisher that triggered an unsubscribe  |
+## Events based on a message id
 
-
-## Events based on destinationid
-
-If you want to retrieve all information about a particular message you can 
-make a get request to
+If you want to retrieve information about a message sent with Marketing
+Suite till one month after the message has been sent you can make a get request to:
 
 ```text
-https://api.copernica.com/v1/events/destinationid/$id?access_token=xxxx
+https://api.copernica.com/v1/message/$id/events?access_token=xxxx
 ```
-where `$id` is the destinationid of interest.
+where `$id` is the id of the message of interest. If you want to have this
+information for a  message sent with Publisher you can make the following
+call:
+
+```text
+https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
+```
+
+If you want to have events for a different period, you can specify the `start`
+and/or `end` option.
+
 
 ## Events based on an email address
 
-If you want to retrieve all inforamtion about a particular email address
-you can make a get request to:
+If you want to retrieve information about a particular email address for
+the last monthly period, you can make a get request to:
 
 ```text
-https://api.copernica.com/v1/events/email/$email?access_token=xxxx
+https://api.copernica.com/v1/email/$email/events?access_token=xxxx
 ```
-where `$email` is the address you are interested in
+where `$email` is the address you are interested in. If you want to have events
+for a different period, you can specify the `start` and/or `end` option.
+Optionally, you can filter on tags as well by providing the `tags` option.
+
 
 ## Events based on tags
 
-If you want to retrieve all information about one tag, you can make a get
-request to:
+If you want to retrieve information about one tag, for the last monthly
+period you can make a get request to:
 
 ```text
-https://api.copernica.com/v1/events/tags/$tag1?access_token=xxxx
+https://api.copernica.com/v1/tags/$tag1/events?access_token=xxxx
 ```
-where `TAG` is the tag you are interested in. Optionally you can also filter
+where `$tag1` is the tag you are interested in. Optionally you can also filter
 on multiple tags. If you want to do so, you can extend the call to:
 
 ```text
-https://www.smtpeter.com/v1/events/tags/TAG1/TAG2/TAG3/...
+https://www.copernica.com/v1/tags/TAG1;TAG2;TAG3;.../events?access_token=xxxx
 ```
 The returned JSON will only contain information for messages that have
-all tags set.
+all tags set. 
+
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option.
+
+
+## Events based on a profile
+
+If you want to retrieve the information about a particular profile for
+the last monthly period, you can make a get request to:
+
+```text
+https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
+```
+where `$id` is the profile id of interest.
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option. Optionally, you can filter on tags as well by providing
+the `tags` option.
+
+
+## Events based  on a sub profile
+
+If you want to retrieve the information about a particular sub profile for
+the last monthly period, you can make a get request to:
+```text
+https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
+```
+where `$id` is the sub profile id of interest.
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option. Optionally, you can filter on tags as well by providing
+the `tags` option.
+
+
+## Events base on template
+
+If you want to retrieve the information about a particular Marketing Suite
+template for the last monthly period, you can make a get request to:
+```text
+https://api.copernica.com/v1/template/$id/events?access_token=xxxx
+```
+If you want to have the events for a Publisher template you can make a call to:
+```text
+https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
+```
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option. Optionally, you can filter on tags as well by providing
+the `tags` option.
+
+
+## Events base on a document
+
+If you want to retrieve the information about a particular document for
+the last monthly period, you can make a get request to:
+
+https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
+
+If you want to have events for a different period, you can specify the 
+`start` and/or `end` option. Optionally, you can filter on tags as well by providing
+the `tags` option.
+
 
 ## More information
 
