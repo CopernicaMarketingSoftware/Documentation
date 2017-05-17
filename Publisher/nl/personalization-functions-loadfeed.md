@@ -64,5 +64,29 @@ de publicatie vervangt de reeds aanwezige content in het tekstblok.
 
 ![](../images/loadfeedfunction.png)
 
+## Personalisatie in feeds
 
-<!-- incorporate this article in docs - > https://archive.copernica.com/en/support/personalization-in-feeds -->
+Feeds kunnen ook gepersonaliseerd worden voor de ontvanger met behulp van speciale personalisatietags. Deze tags worden echter niet standaard meegenomen in je XSLT of in de feed. Hieronder staan twee soorten personalisatie beschreven: enkel in anchor tags of in alle toepassingen.
+
+### Personalisatie in hyperlinks
+Voor personalisatie in het 'href'-gedeelte van je link `<a href='dit gedeelte'>...</a>` van je anchor tag, hoef je alleen de parameter 'personalizable' op 'true' te zetten:
+
+
+`{loadfeed feed=".." xslt=".." personalizable=true}`
+
+#### Personalisatie in andere delen
+
+Als je volledige kracht van personalisatie wil gebruiken, heb je nog een ander stukje code nodig om alles te laten parsen:
+
+```
+{capture assign="my_feed_content"}
+    {loadfeed feed=".." xslt=".."}
+{/capture}
+{eval var=$my_feed_content}
+```
+
+Als hiernaast de XSLT en de feed correct zijn, hoef je verder niets te doen om je personalisatiecode te laten werken.
+
+Bij personalisatie in feeds is het wel belangrijk om te onthouden in welke volgorde taken worden uitgevoerd door Copernica: de XSLT wordt eerst geparset en daarna wordt de personalisatie pas toegepast. De `eval` functie in het stukje code hierboven zorgt ervoor dat alle personalisatie wordt uitgevoerd. Dit betekent dus wel dat je niet een conditie kunt maken met <xsl:if> met een van je databasevelden. Op dat punt weet de XSLT namelijk nog niet wat de waarde van dat veld zal zijn.
+
+Naast deze dingen kun je in principe alles doen met personalisatie, het enige waar je rekening moet houden is dat je XSLT klopt voordat je begint met het parsen van personalisatievariabelen.
