@@ -16,8 +16,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
 
-Meer informatie over de betekenis van deze parameters vind je in het
-[artikel over paging](rest-paging).
 
 ### Start en end
 
@@ -54,7 +52,7 @@ ziet er als volgt uit:
         ...
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "fieldname1" : "data1",
         "fieldname2" : "data2",
         ...
@@ -62,6 +60,9 @@ ziet er als volgt uit:
     ...
 ]
 ```
+De `event` property in de JSON geeft het type event weer. De mogelijke
+types staan beschreven op de [event types pagnina](./event-types.md).
+
 
 ## PHP Voorbeeld
 

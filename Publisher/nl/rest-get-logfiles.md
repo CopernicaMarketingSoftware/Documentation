@@ -21,7 +21,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit
     $api = new CopernicaRestApi("your-access-token");
 
     // do the call, and print result
-    print_r($api->get("logfiles"=));
+    print_r($api->get("logfiles"));
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](./rest-php.md).
 
