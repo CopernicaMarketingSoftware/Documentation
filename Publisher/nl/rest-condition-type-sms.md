@@ -1,38 +1,31 @@
-# REST API: Conditie type sms
+# Sms condition
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). De instellingen van deze 
-eigenschappen vormen samen de conditie. Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Je kunt gebruik maken van een Sms condition, door een property ("type")
+en een value ("Sms") op te geven. Daarna ben je in staat om de 
+eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
+eigenschappen van de Sms condition en een voorbeeld van een request.
 
-Dit artikel gaat over de verschillende eigenschappen van de sms conditie.
 
-## Datum eigenschappen
+## Individuele eigenschappen
 
-De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
-binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
-worden in YYYY-MM-DD HH:MM:SS formaat.
+* match-mode:               matchmode van de mailing conditie. Zie matchmode tabel.
+* required-destination:     bestemming van de mailing. Mogelijke waarden: 
+"profile"; <br>
+"subprofile"; <br>
+"anything" als beide mag.
 
-* **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
-* **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
-* **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
-* **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
-
-## Mailing eigenschappen
-
-* **match-mode**: Matchmode van de mailing conditie. Zie matchmode tabel.
-* **required-destination**: Bestemming van de mailing. Mogelijke waarden: 
-"profile", "subprofile", anything" als beide mag.
-* **document**: Naam van het document gebruikt voor matchmode. (Alleen bij
+* document:                 naam van het document gebruikt voor matchmode. (Alleen bij
 "match_profiles_that_received_document", "match_profiles_that_received_not_document")
-* **template**: Naam van de template van de conditie.
-* **number**: Het aantal berichten dat door de ontvanger moeten zijn ontvangen.
-* **operator**: De operator om het aantal berichten van de ontvanger met de waarde 
-van **number** te vergelijken. Ondersteunde operatoren:
-= (gelijk), \!= (niet gelijk), <\> (tussen), < (minder dan), \> (meer dan).
+* template:                 naam van de template van de conditie.
+* number:                   het aantal berichten dat door de ontvanger moeten zijn ontvangen.
+* operator:                 de operator om het aantal berichten van de ontvanger met de waarde van number te vergelijken. Ondersteunde operatoren:
+
+= (gelijk); <br> 
+\!= (niet gelijk); <br>
+<\> (tussen); <br> 
+< (minder dan); <br>
+\> (meer dan).
+
 
 ## Match modes
 
@@ -43,20 +36,55 @@ van **number** te vergelijken. Ondersteunde operatoren:
 | match_profiles_that_received_nothing      | Match alle profielen die niets ontvangen hebben.                       |
 | match_profiles_that_received_not_document | Match alle profielen die niet een specifiek document ontvangen hebben. |
 
+
+## Toevoegen van een datum
+
+Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
+condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+meegeven aan de POST request:
+
+* before-time:          matcht alleen de Sms condition voor deze tijd;
+* after-time:           matcht alleen de Sms condition na deze tijd;
+* before-mutation:      tijdverschil voor de Sms condition;
+* after-mutation:       tijdverschil na de Sms condition.
+
+
 ## Voorbeeld
 
-Laten we zeggen dat we per ongeluk een verkeerd document hebben gestuurd 
-naar een aantal klanten en we hier een mail achteraan willen sturen. Als 
-de originele selectie nog bestaat is het makkelijker om die te gebruiken, 
-maar in het geval dat deze niet meer bestaat is het mogelijk de sms conditie 
-te gebruiken met de volgende waarden:
 
-* **document**: Verkeerd document
-* **match-mode**: "match_profiles_that_received_document"
+Stel dat bij een mailing per ongeluk een verkeerd document is verstuurd.
+Het is daarom de bedoeling dat er snel een e-mail achteraan wordt gestuurd. 
+Stel dat de originele selectie niet meer bestaat en dat we die niet meer
+terug kunnen halen. In dat geval is er altijd nog de Sms condition, waarmee
+toch nog naar een specifieke selectie e-mail kan worden verstuurd.
+
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+
+    // declare that you want to use the MiniView type
+    'type' => 'Sms',
+
+    // use property document 
+    'document' => 'document x',
+    'match-mode' => 'match_profiles_that_received_document'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
-* [Conditie type email](rest-condition-type-email)
-* [Conditie type fax](rest-condition-type-fax)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
+* [Email condition](rest-condition-type-email)
+* [Fax condition](rest-condition-type-fax)
