@@ -8,15 +8,15 @@ eigenschappen van de LastContact condition en een voorbeeld van een request.
 
 ## Individuele eigenschappen
 
-* match-type:       match type van het laatste contact. Mogelijke waarden:
+* match-type:       match type van het laatste contact. Mogelijke waarden: <br>
 "match_intelligent"; <br>
 "match_exact".
 
-* match-mode:       matchmode van de lastcontactconditie. Mogelijke waarden: 
+* match-mode:       matchmode van de lastcontactconditie. Mogelijke waarden: <br>
 "match_contacted_profiles"; <br>
 "match_not_contacted_profiles".
 
-* contact-type:     het type contact of geen contact. Mogelijke waarden:
+* contact-type:     het type contact of geen contact. Mogelijke waarden: <br>
 "PxPomContactType"; <br>
 "false".
 

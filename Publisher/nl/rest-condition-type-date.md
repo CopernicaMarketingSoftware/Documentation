@@ -8,6 +8,15 @@ van welke functionaliteiten je gebruik kunt maken.
 Ook is er een voorbeeld van een request gegeven.
 
 
+## Individuele eigenschappen
+
+* field: het database veld van de date condition;
+* compare-mode: vergelijk modus van de date condition.
+
+Compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
+moet de hele datum matchen en bij de tweede waarde mag het jaar anders zijn.
+
+
 ## Datum eigenschappen
 
 De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
@@ -19,14 +28,15 @@ worden in YYYY-MM-DD HH:MM:SS formaat.
 * before-mutation: tijdverschil voor de change conditie;
 * after-mutation: tijdverschil na de change conditie.
 
+```text
+De 'time' properties accepteren voor de value de volgende stringvolgorde:
+'YYYY-MM-DD HH:MM:SS'
+'2017-01-01 00:00:00'
 
-## Individuele eigenschappen
-
-* field: het database veld van de date condition;
-* compare-mode: vergelijk modus van de date condition.
-
-Compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
-moet de hele datum matchen en bij de tweede waarde mag het jaar anders zijn.
+De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
+'["plus", "2017-01-01", "05:43:21"]'
+```
 
 
 ## Voorbeeld

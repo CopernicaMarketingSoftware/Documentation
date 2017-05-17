@@ -1,4 +1,4 @@
-ToDo condition
+# ToDo condition
 
 Je kunt gebruik maken van een ToDo condition, door een property ("type")
 en een value ("ToDo") op te geven. Daarna ben je in staat om de 
@@ -8,15 +8,15 @@ eigenschappen van de ToDo condition en een voorbeeld van een request.
 
 ## Individuele eigenschappen
 
-* match-type:               match type van het laatste contact. Mogelijke waarden:
+* match-type:               match type van het laatste contact. Mogelijke waarden: <br>
 "match_intelligent"; <br>
 "match_exact".
 
-* match-mode:               matchmode van de lastcontactconditie. Mogelijke waarden: 
+* match-mode:               matchmode van de lastcontactconditie. Mogelijke waarden: <br>
 "match_contacted_profiles"; <br>
 "match_not_contacted_profiles". 
 
-* contact-type:             het type contact of geen contact. Mogelijke waarden: 
+* contact-type:             het type contact of geen contact. Mogelijke waarden: <br>
 PxPomContactType; <br>
 "false".
 
@@ -38,6 +38,15 @@ meegeven aan de POST request:
 * before-mutation:          tijdverschil voor de Sms condition;
 * after-mutation:           tijdverschil na de Sms condition.
 
+```text
+De 'time' properties accepteren voor de value de volgende stringvolgorde:
+'YYYY-MM-DD HH:MM:SS'
+'2017-01-01 00:00:00'
+
+De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
+'["plus", "2017-01-01", "05:43:21"]'
+```
 
 ## Voorbeeld
 
