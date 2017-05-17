@@ -67,7 +67,32 @@ the text block.
 
 ![](../images/loadfeedfunction.png)
 
+## Personalization in feeds
 
+Feeds can also be personalized for the recipient using special personalization tags. However, in order for these tags to be parsed, you have to add some additional lines of code. Below, two ways of doing so are described.
+
+### Personalization in hyperlinks
+
+If you're only looking to personalize `<a href='this part'>...</a>` of anchor tags, all you have to do is set the 'perzonalizable' parameter to 'true':
+
+`{loadfeed feed=".." xslt=".." personalizable=true}`
+
+### Further personalization
+
+If you want to use the full power of personalization, you'll need another bit of code to parse everything:
+
+```
+{capture assign="my_feed_content"}
+    {loadfeed feed=".." xslt=".."}
+{/capture}
+{eval var=$my_feed_content}
+```
+
+Besides this, you only have to make sure your feed and XSLT are correct to make the personalization work.
+
+With personalization in feeds, it is important to note the order in which tasks are completed by Copernica: first, the XSLT is parsed. The personalisation tags are parsed after that. The `eval` function makes sure all personalisation actually happens. This means that you cannot create a condition using `<xsl:if>` and a value from your database, simply because the XSLT does not know the value of the field at that point.
+
+The possibilities are endless when it comes to personalization in  feeds, you just have to make sure your feed and XSLT are in order before parsing.
 
 ## More information
 
