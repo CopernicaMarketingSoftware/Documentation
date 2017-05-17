@@ -1,4 +1,4 @@
-# OAuth2 authenticatie
+# OAuth2 
 
 OAuth 2.0 is het standaardprotocol voor autorisatie. OAuth 2.0 vervangt 
 het werk dat is verricht op het oorspronkelijke OAuth protocol dat in 2006

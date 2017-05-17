@@ -52,7 +52,7 @@ Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [Selectie regel opvragen met ID](./get-view-rule)
-- [Lijst van regels opvragen uit database](./rest-get-rule)
+- [GET view rule](./get-view-rule)
+- [GET rule](./rest-get-rule)
 
 

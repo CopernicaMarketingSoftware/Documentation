@@ -48,6 +48,16 @@ meegeven aan de POST request:
 * before-mutation:      tijdverschil voor de Fax condition;
 * after-mutation:       tijdverschil na de Fax condition.
 
+```text
+De 'time' properties accepteren voor de value de volgende stringvolgorde:
+'YYYY-MM-DD HH:MM:SS'
+'2017-01-01 00:00:00'
+
+De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
+'["plus", "2017-01-01", "05:43:21"]'
+```
+
 
 ## Voorbeelden
 
