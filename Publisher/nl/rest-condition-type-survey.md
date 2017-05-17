@@ -1,29 +1,15 @@
-# REST API: Condition type survey ()
+# Survey condition
 
-Condities hebben onderling verschillende eigenschappen. Sommigen betreffen 
-de periode waarin iets is gebeurd (datum eigenschappen), anderen informatie 
-over een mailing (mailing eigenschappen) en weer anderen zijn specifiek voor 
-het type condities (individuele eigenschappen). Alle eigenschappen moeten waar zijn 
-om de conditie waar te maken en er hoeft maar een conditie waar te zijn 
-om een regel waar te maken. 
+Je kunt gebruik maken van een Survey condition, door een property ("type")
+en een value ("Survey") op te geven. Daarna ben je in staat om de 
+eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
+eigenschappen van de Survey condition en een voorbeeld van een request.
 
-Dit artikel gaat over de verschillende eigenschappen van de lastcontact conditie.
-
-## Datum eigenschappen
-
-De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
-binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
-worden in YYYY-MM-DD HH:MM:SS formaat.
-
-* **before-time**: Matcht alleen profielen die het document ontvingen voor deze tijd.
-* **after-time**: Matcht alleen profielen die het document ontvingen na deze tijd.
-* **before-mutation**: De beforemutation (tijdverschil) voor de change conditie.
-* **after-mutation**: De aftermutation (tijdverschil) voor de change conditie.
 
 ## Individuele eigenschappen
 
-* **submitter**: Vereiste submitter van de enquête. Zie de required submitters tabel.
-* **survey-name**: Naam van enquête om indien-status te vergelijken.
+* submitter:            vereiste submitter van de enquête. Zie de required submitters tabel.
+* survey-name:          naam van enquête om indien-status te vergelijken.
 
 ## Required submitters
 
@@ -39,17 +25,58 @@ en hun omschrijvingen.
 | noprofile          | Enquête werd niet ingediend door een profiel.      |
 | nosubprofile       | Enquête werd niet ingediend door een subprofiel.   |
 
+
+## Toevoegen van een datum
+
+Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
+condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+meegeven aan de POST request:
+
+* before-time:          matcht alleen de Sms condition voor deze tijd;
+* after-time:           matcht alleen de Sms condition na deze tijd;
+* before-mutation:      tijdverschil voor de Sms condition;
+* after-mutation:       tijdverschil na de Sms condition.
+
+
 ## Voorbeeld
+
 
 Stel dat je een belangrijke enquête hebt verstuurd, maar nog niet van alle 
 profielen in je database een reactie hebt gekregen. Je kunt dan een selectie 
 maken met de survey condition van de mensen die je een reminder wilt sturen. 
-Je gebruikt hiervoor de volgende waarden:
 
-* **survey-name**: Enquête waarvoor je een reminder wilt versturen
-* **submitter**: "none"
+
+* survey-name:          enquête waarvoor je een reminder wilt versturen
+* submitter:            "none"
+
+
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// create an API object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+
+    // declare that you want to use the MiniView type
+    'type' => 'Survey',
+
+    // use property for survey-name and submitter
+    'survey-name' => 'survey x',
+    'submitter' => 'none'
+
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
+
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

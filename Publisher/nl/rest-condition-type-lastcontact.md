@@ -1,30 +1,30 @@
 # LastContact condition
 
-Je kunt gebruik maken van een Interest condition, door een property ("type")
+Je kunt gebruik maken van een LastContact condition, door een property ("type")
 en een value ("LastContact") op te geven. Daarna ben je in staat om de
 eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de Interest condition en een voorbeeld van een request.
+eigenschappen van de LastContact condition en een voorbeeld van een request.
 
 
 ## Individuele eigenschappen
 
-* match-type: 		match type van het laatste contact. Mogelijke waarden:
+* match-type:       match type van het laatste contact. Mogelijke waarden:
 "match_intelligent"; <br>
 "match_exact".
 
-* match-mode: 		matchmode van de lastcontactconditie. Mogelijke waarden: 
+* match-mode:       matchmode van de lastcontactconditie. Mogelijke waarden: 
 "match_contacted_profiles"; <br>
 "match_not_contacted_profiles".
 
-* contact-type: 	het type contact of geen contact. Mogelijke waarden:
+* contact-type:     het type contact of geen contact. Mogelijke waarden:
 "PxPomContactType"; <br>
 "false".
 
-* min-closed: 		minimum hoeveelheid items vereist op de contact lijst.
-* max-closed: 		maximum hoeveelheid items vereist op de contact lijst.
-* user:				gebruiker van de conditie (PxPomUser), of "false" als er geen selectie nodig is.
-* priority:			vraag prioriteit van geselecteerde contacten op.
-* contains: 		zoek string voor het doorzoeken van contact rapporten.
+* min-closed:       minimum hoeveelheid items vereist op de contact lijst.
+* max-closed:       maximum hoeveelheid items vereist op de contact lijst.
+* user:             gebruiker van de conditie (PxPomUser), of "false" als er geen selectie nodig is.
+* priority:         vraag prioriteit van geselecteerde contacten op.
+* contains:         zoek string voor het doorzoeken van contact rapporten.
 
 
 ## Toevoegen van een datum
@@ -33,10 +33,10 @@ Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
 condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
 meegeven aan de POST request:
 
-* before-time: 			matcht alleen de change condition voor deze tijd;
-* after-time: 			matcht alleen de change condition na deze tijd;
-* before-mutation: 		tijdverschil voor de change condition;
-* after-mutation: 		tijdverschil na de change condition.
+* before-time:          matcht alleen de change condition voor deze tijd;
+* after-time:           matcht alleen de change condition na deze tijd;
+* before-mutation:      tijdverschil voor de change condition;
+* after-mutation:       tijdverschil na de change condition.
 
 ```text
 De 'time' properties accepteren voor de value de volgende stringvolgorde:
@@ -65,14 +65,13 @@ $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
 
-// declare that you want to use the Interest type
-'type' => 'LastContact',
+    // declare that you want to use the LastContact type
+    'type' => 'LastContact',
 
-// use property match-mode
-'after-time' => '2016-12-11 00:34:56',
-'min-closed' => '3',
-'contains' => 'Bob' 
-
+    // use property match-mode
+    'after-time' => '2016-12-11 00:34:56',
+    'min-closed' => '3',
+    'contains' => 'Bob' 
 );
 
 // do the call

@@ -27,13 +27,9 @@ meegeven aan de POST request:
 
 ## Voorbeeld
 
-Als je alleen profielen zou willen selecteren die je eerder hebt geëxporteerd 
-voor een bepaalde dag, dan kun je deze selectie maken met de export conditie. 
-Je kunt dan de volgende waarden gebruiken:
-
-* after-time: Tijdstip in YYYY-MM-DD HH:MM:SS formaat
-* include-never-exported-profiles: false
-
+Je kunt ook selecteren op profielen die je voor een bepaalde dag een keer 
+hebt geëxporteerd. Hieronder is weergegeven hoe je zo'n scenario vertaald
+naar daadwerkelijke code.
 
 ```php
 // required code
