@@ -25,7 +25,7 @@ wat iedere condition inhoudt door erop te klikken:
 - [LastContact condition](./rest-condition-type-lastcontact.md)
 - [MiniView condition](./rest-condition-type-miniview.md)
 - [SMS condition](./rest-condition-type-sms.md)
-- [Todo condition](./rest-condition-type-todo.md)
+- [ToDo condition](./rest-condition-type-todo.md)
 - [Survey condition](./rest-condition-type-survey.md)
 - [Part condition](./rest-condition-type-part.md)
 - [ReferView condition](./rest-condition-type-referview.md)
@@ -45,7 +45,6 @@ $api = new CopernicaRestApi("your-access-token");
 // voer het verzoek uit en print het resultaat
 print_r($api->get("rule/id/conditions"));
 ```
-
 Dit voorbeeld vereist de [REST API class](./rest-php).
 
 

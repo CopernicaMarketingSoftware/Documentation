@@ -2,7 +2,7 @@
 
 Je kunt gebruik maken van een change condition,
 door een property ("type") en een value ("DoubleField")
-op te geven. Daarna ben je in staat om de conditie 
+op te geven. Daarna ben je in staat om de eigenschappen 
 naar wens op te geven. Je kunt, na het opgeven van 
 de type, uit twee eigenschappen kiezen:
 
@@ -49,11 +49,13 @@ $data = array(
 );
 
 // do the call
-$result = $api->get("rule/id/conditions", $data);
+$result = $api->post("rule/id/conditions", $data);
 
 // print the result
 print_r($result);
 ```
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 
 ## Meer informatie
 
