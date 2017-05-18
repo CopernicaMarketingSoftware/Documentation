@@ -1,16 +1,16 @@
 # Sender Domains
 
 SMTPeter gebruikt het concept van *sender domains* om e-mail simpeler te maken.
-*SPF, DKIM en DMARC* zijn lastig te begrijpen en in te stellen. SMTPeter heeft
-hier handige oplossingen voor bedacht, zodat jij bezig kunt zijn met je bedrijf 
-en andere zaken.
+Binnen de verschillende diensten van Copernica zijn sender domains *verplicht*
+gesteld, omdat het zo'n essentieel onderdeel is voor het succesvol versturen
+van e-mail.
 
 Dit artikel gaat over wat een sender domain precies doet. Het werkt als 
 volgt: 'in het SMTPeter dashboard geef je aan vanaf welke domeinen je 
 wilt mailen en wij vertellen vervolgens hoe je je DNS moet configureren. 
 Het sender domain is de domeinnaam die je gaat gebruiken in je e-mails'.
 
-Stel dat je e-mails wil versturen vanaf adressen die eindigen op 
+Stel dat je e-mails wilt versturen vanaf adressen die eindigen op 
 "@example.com" of "@example.org". Je kunt simpelweg het 
 dashboard gebruiken om domeinen "example.com" en "example.org" 
 op te zetten. Wanneer je dit hebt gedaan geeft SMTPeter een lijst van 
@@ -43,8 +43,9 @@ archieven:
 * [DKIM sleutels](dkim-signing "E-mail ondertekenen met DKIM") met je publieke sleutels die we per maand wisselen
 * [DMARC archieven](dmarc-deployment "DMARC deployment") met je DMARC beleid
 
-We vragen jou om CNAME archieven en andere verwijzingen in je DNS op te 
+Je hoeft enkel de CNAME archieven en andere verwijzingen in je DNS op te 
 zetten.
+
 
 ## Het "from" adres
 
@@ -57,6 +58,7 @@ dat we gebruiken. Daarom is het belangrijk dat je altijd geregistreerde
 sender domains gebruikt. Als je geen keys hebt opgezet wordt jij niet 
 geverifieerd als de afzender van de e-mail.
 
+
 ## Tracking en bounce domeinen
 
 Als je een sender domain opzet word je ook gevraagd om je tracking en 
@@ -65,7 +67,7 @@ kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn
 voor de meeste gebruikers geschikt ("tracking.example.nl" en 
 "clicks.example.nl").
 
-Als je SMTPeter gebruikt om [kliks](/statistics "Click en open tracking") op te slaan, worden gebruikers 
+Als je SMTPeter gebruikt om [clicks](/statistics "Click en open tracking") op te slaan, worden gebruikers 
 eerst doorgestuurd naar een andere website die de klik opslaat in onze databases. 
 De hyperlinks zien er daarom uit als "clicks.example.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 
@@ -75,9 +77,10 @@ kun je het klik domein aanpassen in de sender domainn configuratie.
 Je kunt ook je bounce domein aanpassen, maar deze is alleen zichtbaar in 
 de broncode van de e-mail.
 
+
 ## Meer informatie
 
-* [Configureren van een zender domein](./introduction-sender-domains)
+* [Configureren van een sender domain](./introduction-sender-domains)
 * [SPF records](./spf-validation)
 * [DKIM keys](./dkim-signing)
 * [DMARC records](./dmarc-deployment)

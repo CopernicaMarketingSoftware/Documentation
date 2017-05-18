@@ -9,14 +9,13 @@ dingen doen. De stappen worden in dit artikel besproken.
 ## Sender Domain opzetten en DNS instellen
 
 SMTPeter gebruikt het concept van *Sender Domains* om het versturen van e-mail
-makkelijker te maken. Je kunt via onze servers namelijk e-mail versturen zonder 
-je zorgen te hoeven maken over dingen als SPF, DKIM and DMARC. 
-Je moet eerst een [sender domain instellen](./introduction-sender-domains), zodat SMTPeter
-e-mail namens jou kan versturen.
-Maak je nog geen zorgen over click- en tracking domeinen of DMARC deployment voor 
-nu. Je kunt dit later nog aanpassen. Je moet dan je [DNS instellingen](./rest-dns) verwerken 
-en de verificatie code gebruiken om je domein te verifiëren. Na deze 
-stappen ben je klaar om e-mails te versturen met SMTPeter.
+makkelijker te maken. Je kunt via onze servers namelijk e-mails versturen zonder 
+je zorgen te hoeven maken over onderwerpen als SPF, DKIM and DMARC. Je moet eerst 
+een [sender domain instellen](./introduction-sender-domains)(*dit is sinds kort verplicht*), 
+zodat SMTPeter e-mail namens jou kan gaan versturen. Maak je voor nu nog geen zorgen over 
+click- en tracking domeinen of DMARC deployment. Je kunt dit later altijd nog aanpassen. 
+Je moet dan je [DNS instellingen](./rest-dns) verwerken en de verificatie code gebruiken 
+om je domein te verifiëren. Na deze stappen ben je klaar om e-mails te versturen met SMTPeter.
 
 
 ## REST vs SMTP

@@ -7,13 +7,14 @@ After registering, you only need a few things to do in order to start with SMTPe
 
 ## Setting up a Sender Domain and DNS settings
 
-SMTPeter uses the concept of "Sender Domains" to simplify email. This allows 
+SMTPeter uses the concept of "Sender Domains" to simplify email. This allows
 you to send your email through our servers without having to worry about 
 complicated things like SPF, DKIM and DMARC. The sender domain confirms 
-that we are sending email on your behalf. First you [configure your sender domain](./introduction-sender-domains).
-Don't worry about click- and tracking domains or DMARC deployment for now. 
-Then you [incorporate your DNS settings](./rest-dns) and use your verification code. 
-After these steps you are ready to send mail with SMTPeter.
+that we are sending email on your behalf. First you [configure your sender domain](./introduction-sender-domains) 
+(*this is from now on mandatory*). Don't worry about click- and tracking domains 
+or DMARC deployment for now. Then you [incorporate your DNS settings](./rest-dns) 
+and use your verification code. After these steps you are ready to send mail with 
+SMTPeter.
 
 
 ## REST vs SMTP
