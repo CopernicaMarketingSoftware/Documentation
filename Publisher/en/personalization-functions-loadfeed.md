@@ -4,8 +4,8 @@ With the loadfeed function you can simply load feeds in your emails
 or webdocument. It's possible to load in a feed you've made in the
 content section or just a feed that's curated and hosted somewhere else.
 
-Syntax and use
---------------
+## Syntax and use
+
 
 You can load a feed in from the *content* section, just like this:
 `loadfeed feed='address from the feed'}`
@@ -17,8 +17,8 @@ want to use. You'll see an Atom as well as a RSS version you can use.
 In Copernica publication they can be used both.
 
 
-Load in external feeds
-----------------------
+## Load in external feeds
+
 
 Of course it's also possible to publish external RSS and atom feeds
 in your documents: 
@@ -33,8 +33,8 @@ with the address (URL) that has been publiced somewhere else.
 *Image: Load feed tag in the text block rich text editor*
 
 
-Extra options
--------------
+## Extra options
+
 
 The loadfeed has additional properties, like xlst for example.
 You can use *xlst=* to get yourself an own XLST (and use it for 
@@ -52,8 +52,8 @@ Substitute *address from xlst* with the actual location of the XLST,
 for example: 'http://example.com/feed.xsl'
 
 
-Selecting a feed in a text block
---------------------------------
+## Selecting a feed in a text block
+
 
 On top of all previous mentioned options, you can also publish a 
 feed without having to remember the tag or name of the feed. In 
@@ -67,21 +67,24 @@ the text block.
 
 ![](../images/loadfeedfunction.png)
 
+
 ## Personalization in feeds
 
 Feeds can also be personalized for the recipient using special personalization tags. However, in order for these tags to be parsed, you have to add some additional lines of code. Below, two ways of doing so are described.
 
-### Personalization in hyperlinks
+
+## Personalization in hyperlinks
 
 If you're only looking to personalize `<a href='this part'>...</a>` of anchor tags, all you have to do is set the 'perzonalizable' parameter to 'true':
 
 `{loadfeed feed=".." xslt=".." personalizable=true}`
 
-### Further personalization
+
+## Further personalization
 
 If you want to use the full power of personalization, you'll need another bit of code to parse everything:
 
-```
+```text
 {capture assign="my_feed_content"}
     {loadfeed feed=".." xslt=".."}
 {/capture}
