@@ -54,8 +54,8 @@ profielen in je database een reactie hebt gekregen. Je kunt dan een selectie
 maken met de survey condition van de mensen die je een reminder wilt sturen. 
 
 
-* survey-name:          enquête waarvoor je een reminder wilt versturen
-* submitter:            "none"
+* survey-name:          enquête waarvoor je een reminder wilt versturen;
+* submitter:            "none".
 
 
 ```php
