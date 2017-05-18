@@ -6,7 +6,7 @@ verschillend is binnen deze twee omgevingen. In de kopjes hieronder
 kun je navigeren naar de tool in kwestie om te lezen wat het verschil precies inhoudt.
 
 
-## De Marketing Suite
+## Marketing Suite
 
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
 namelijk met de drag-and-drop editor en met de HTML template editor. 
@@ -32,7 +32,7 @@ template editor in de Marketing Suite, kun je hier terecht:
 * [Werken met templates binnen de Marketing Suite](templates-marketing-suite)
 
 
-## De Publisher
+## Publisher
 
 De Publisher hanteert, zoals eerder is aangegeven, een andere manier om 
 tot een mooie en werkende template te komen. In vergelijking met Marketing 
