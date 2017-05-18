@@ -3,6 +3,7 @@
 This page describes how you can get a license for SMTPeter, what the price
 structure is and how the billing works.
 
+
 ## License
 
 You need to have a license before you can use SMTPeter. You can create a license
@@ -14,16 +15,18 @@ yet, you can create one over [here](https://www.smtpeter.com/app/#/menu/register
 ## Payment structure
 
 You pay a small amount per month to use SMTPeter. This amount includes a 
-certain amount of emails that can be sent for free (see our [pricing page](https://www.smtpeter.com/pricing)
-for the exact details). If you want to send more emails, you simply can
-increase your payment. You can send emails as long as your balance is high enough to 
-support the amount of emails you want to send (e.g. if your balance allows for
-100.000 emails and you want to send 100.001 emails, you will have to increase
-your balance). You only pay for the amount of emails that you have sent in
-a month. So, if you happen to have sent less emails in a month, your credit will be
-passed to the next month. The price per sent email decreases with the amount
-of sent emails. This discount will be calculated automatically. For the exact
-prices you can visit our [pricing page](https://www.smtpeter.com/pricing)
+certain amount of emails that can be sent for free. If you want to send 
+more emails, you simply increase your payment. You can send emails as 
+long as your balance is high enough to support the amount of emails you 
+want to send (e.g. if your balance allows for 100.000 emails and you want
+to send 100.001 emails, you will have to increase your balance). You only 
+pay for the amount of emails that you have sent in a month. So, if you 
+happen to have sent less emails in a month, your credit will be passed to 
+the next month. The price per sent email decreases with the amount of sent 
+emails. This discount will be calculated automatically. For the exact prices 
+you can visit our [homepage](https://www.smtpeter.com/pricing) and scroll to 
+the pricing section below.
+
 
 ## Billing
 
