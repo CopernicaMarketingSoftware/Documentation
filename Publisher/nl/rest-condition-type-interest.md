@@ -10,7 +10,7 @@ eigenschappen van de Interest condition en een voorbeeld van een request.
 
 * match-mode: 		matchmode van de interest condition. Zie de match-mode tabel.
 * interest: 		interesse voor de condition. Dit geeft alleen een valide waarde terug als de match-mode staat op "match_profiles_with_interest" of "match_profiles_without_interest".
-* interest-group: 	interessegroep van de condition. Dit geeft alleen een valide waarde terug als de **match-mode** staat op "match_profiles_with_interestgroup" of "match_profiles_without_interestgroup".
+* interest-group: 	interessegroep van de condition. Dit geeft alleen een valide waarde terug als de match-mode staat op "match_profiles_with_interestgroup" of "match_profiles_without_interestgroup".
 
 
 ## Match Modes

@@ -6,6 +6,7 @@ Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen 
 
 De `$id` moet hier vervangen worden door de ID van de selectie waar je de regels van op wilt vragen.
 
+
 ## Ondersteunde parameters
 
 Je kunt een of meer van de volgende parameters toevoegen aan de URL:
@@ -16,6 +17,7 @@ Je kunt een of meer van de volgende parameters toevoegen aan de URL:
 
 Je kan meer informatie vinden over de *start*, *limit* en *total* parameters 
 in ons [artikel over paging](./rest-paging.md).
+
 
 ## Teruggegeven velden
 
