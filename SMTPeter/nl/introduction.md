@@ -11,7 +11,7 @@ dingen doen. De stappen worden in dit artikel besproken.
 SMTPeter gebruikt het concept van *Sender Domains* om het versturen van e-mail
 makkelijker te maken. Je kunt via onze servers namelijk e-mails versturen zonder 
 je zorgen te hoeven maken over onderwerpen als SPF, DKIM and DMARC. Je moet eerst 
-een [sender domain instellen](./introduction-sender-domains)(**dit is sinds kort verplicht**), 
+een [sender domain instellen](./introduction-sender-domains) (**dit is sinds kort verplicht**), 
 zodat SMTPeter e-mail namens jou kan gaan versturen. Maak je voor nu nog geen zorgen over 
 click- en tracking domeinen of DMARC deployment. Je kunt dit later altijd nog aanpassen. 
 Je moet dan je [DNS instellingen](./rest-dns) verwerken en de verificatie code gebruiken 
