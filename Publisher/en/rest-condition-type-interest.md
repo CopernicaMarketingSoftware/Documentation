@@ -9,6 +9,7 @@ Only one condition needs to be satisfied to satisfy a rule.
 
 This article is about the properties of the interest condition.
 
+
 ## Individual properties
 
 * **match-mode**: Matchmode of interest condition. Possible values: 
@@ -18,6 +19,7 @@ This article is about the properties of the interest condition.
 if the matchmode is "match_profiles_with_interest" or "match_profiles_without_interest".
 * **interest-group**: Interestgroup of the condition. This only returns a valid value 
 if the matchmode is "match_profiles_with_interestgroup" or "match_profiles_without_interestgroup".
+
 
 ## Example
 
@@ -33,6 +35,6 @@ We use the following values:
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
-* [Condition type field](rest-condition-type-field)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
+* [Field condition](rest-condition-type-field)
