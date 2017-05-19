@@ -1,8 +1,9 @@
 # Beheeropties voor selecties
 
 Naast aanmaken en verwijderen ([hier](selections-introduction.md) beschreven) 
-kun je nog meer uithalen met selecties. Hieronder een overzicht van 
+kun je nog meer doen met selecties. Hieronder een overzicht van 
 beheeropties voor selecties en miniselecties.
+
 
 ## Selecties kopiëren of verplaatsen
 
@@ -22,12 +23,14 @@ Je kunt selecties kopiëren en verplaatsen in de Marketing Suite. Het
 kopiëren of verplaatsen van (mini)selecties heeft geen effect op de 
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
+
 ## Profielen uit een (mini)selectie weergeven
 
 De profielen van een selectie kun je inzien door simpelweg op de naam 
 van de selectie te klikken. Voor miniselecties ligt het net iets anders: 
 de subprofielen verkrijg je door in het menu *huidige weergave* op 
 *subprofielen weergeven* te klikken.
+
 
 ## Selecties authoriseren voor mailings
 
@@ -43,15 +46,17 @@ selectie. Als opties niet aanklikbaar zijn, komt dat doordat je geen
 geschikt veld ervoor hebt in je database. Dit dien je dus eerst aan te 
 maken.
 
+
 ## Verwijderen, deactiveren of archiveren?
+
 Selecties die je niet of amper gebruikt, kun je het beste (tijdelijk) 
 uit je database halen om je performance te verhogen. Hier zijn 
 verschillende opties voor: verwijderen, deactiveren of archiveren.
 
 Wanneer je een selectie helemaal niet meer gebruikt, kun je hem het 
 beste verwijderen. Hoe minder selecties, hoe sneller ze worden opgebouwd. 
-Het verwijderen van een selectie betekent echter niet dat je de 
-profielen in de selectie ook verwijdert; deze blijven gewoon bestaan.
+Het verwijderen van een selectie betekent niet dat je de profielen in de 
+selectie ook verwijdert; deze blijven gewoon bestaan.
 
 Deactiveren is handig wanneer je een selectie tijdelijk niet gebruikt, 
 maar dit in de toekomst wel weer gaat doen. Ook dit versnelt het opbouwen 
@@ -66,4 +71,4 @@ actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties
 heeft dus geen invloed op de performance van je overige selecties; als 
 performance je doel is, kun je ze beter verwijderen.
 
-[Terug naar selectie beheer](./selections-introduction).
+[Terug naar selectiebeheer](./selections-introduction).

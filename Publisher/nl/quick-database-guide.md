@@ -15,19 +15,19 @@ eenvoudig te houden. Je kunt later altijd extra velden toevoegen.
 
 ## Marketing Suite
 
-De Marketing Suite maakt het mogelijk om gemakkelijk je databases te beheren. 
-Navigeer naar het **Database & Profiles** kopje in het menu.
-Binnen die omgeving is het mogelijk om databases te creëeren, filters toe te voegen, 
-selecties te bewerken en nog veel meer. De mogelijkheden zijn eindeloos.
+De Marketing Suite maakt het mogelijk om gemakkelijk databases te beheren. 
+Navigeer eerst naar het `Profiles` kopje in het menu. Binnen die omgeving 
+is het mogelijk om databases te creëeren, filters toe te voegen, 
+selecties te bewerken en nog veel meer.
 
 ## Velden, interesses en collecties
 
-Binnen een database onderscheiden we velden, interesses en collecties. Velden
-en interesses zijn eenvoudig: daarin sla je enkelvoudige data op, zoals een 
+Binnen een database worden velden onderscheiden op interesses en collecties. 
+Velden en interesses zijn eenvoudig. Er wordt enkelvoudige data opgeslagen, zoals een 
 nummer of een stukje tekst. Een interesse is eigenlijk ook een veld, maar kan 
 alleen de waarde "ja" of "nee" kan bevatten. Als je een online sportwinkel 
-beheert, zou je database bijvoorbeeld kunnen bestaan uit de tekstvelden "voornaam" en
-"achternaam", het emailveld "emailadres" en de interesses "voetbal", "tennis"
+beheert, kan je database bijvoorbeeld bestaan uit de tekstvelden "voornaam" en
+"achternaam", het e-mailveld "emailadres" en de interesses "voetbal", "tennis"
 en "hockey".
 
 Met collecties wordt het wat ingewikkelder. Met collecties kun je een extra laag 
