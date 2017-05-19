@@ -2,11 +2,6 @@
 
 Het moment is aangebroken om je eerste e-mail te gaan versturen! 
 Ga naar de Marketing Suite en navigeer naar de `e-mail templates`. 
-Je hoeft in Marketing Suite ook geen code te schrijven. Dit artikel beschrijft hoe je een mail 
-kunt versturen uit beide programma's.
-
-Als je graag wat geavanceerdere technieken wil proberen kun je de artikelen 
-onder "Meer informatie" bekijken.
 
 
 ## Een template maken
@@ -26,12 +21,14 @@ dingen zoals het onderwerp van de mail in en het domein waar je de mail
 van wil verzenden. Je kunt ook kiezen wanneer de mail verstuurd moet worden 
 en tags toevoegen om je mails te categorizen en organizeren. De ontvangers van 
 je mail kun je kiezen als een [database](./database-introduction) of een [selectie](./selections-introduction). 
-Je kunt ook automatisch mails versturen met behulp van [followups](./follow-up-manager).
+Je kunt ook automatisch e-mails versturen met behulp van de [Follow-up Manager](./follow-up-manager).
 
 
 ## Meer informatie
 
+Voor de wat meer geavanceerdere toepassingen kun je onderstaande artikelen bekijken.
+
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
-* [Personalizatie](./personalizatie)
-* [Followups](./follow-up-manager)
+* [Personalisatie](./personalizatie)
+* [Follow-up Manager](./follow-up-manager)
