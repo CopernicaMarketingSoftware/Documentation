@@ -1,22 +1,22 @@
-# Sender Domains
+# Sender-domains
 
-SMTPeter gebruikt het concept van *sender domains* om e-mail simpeler te maken.
-Binnen de verschillende diensten van Copernica zijn sender domains **verplicht**
+SMTPeter gebruikt het concept van *sender-domains* om e-mail simpeler te maken.
+Binnen de verschillende diensten van Copernica zijn sender-domains **verplicht**
 gesteld, omdat het zo'n essentieel onderdeel is voor het succesvol versturen
 van e-mail.
 
-Dit artikel gaat over wat een sender domain precies doet. Het werkt als 
-volgt: 'in het SMTPeter dashboard geef je aan vanaf welke domeinen je 
-wilt mailen en wij vertellen vervolgens hoe je je DNS moet configureren. 
-Het sender domain is de domeinnaam die je gaat gebruiken in je e-mails'.
+DHet gebruik van sender-domains werkt als volgt: in het SMTPeter dashboard 
+geef je aan vanaf welke domeinen je wilt e-mailen. SMTPeter laat je vervolgens 
+wetem je DNS instellingen geconfigureerd moeten worden. 
 
-Stel dat je e-mails wilt versturen vanaf adressen die eindigen op 
-"@example.com" of "@example.org". Je kunt simpelweg het 
-dashboard gebruiken om domeinen "example.com" en "example.org" 
-op te zetten. Wanneer je dit hebt gedaan geeft SMTPeter een lijst van 
-DNS records terug, die je aan je *DNS provider* kunt geven of op je eigen 
-DNS server kunt zetten. We hebben daarna nog tips voor je, maar je kunt 
-nu beginnen met e-mail sturen via SMTPeter.
+Dus als je e-mails wilt versturen vanaf adressen die eindigen op 
+"@example.com" of "@example.org", gebruik je het dashboad om de domeinen 
+"example.com" en "example.org" op te zetten. SMTPeter geeft je een lijst van 
+DNS records als je de stappen goed hebt doorlopen. De DNS records hoef je 
+vervolgens alleen nog maar te overhandigen aan je DNS provider of je eigen 
+DNS server.
+
+Je kunt meer informatie vinden in het achtergrond artikel voor [sender-domains](sender-domains).
 
 
 ## Meer details
@@ -28,7 +28,7 @@ publieke en persoonlijke key pairs voor DKIM ondertekeningen en het bijhouden
 van DMARC archieven, zodat de wereld weet dat jij de enige bent die een 
 bepaald domein gebruikt om mee te e-mailen.
 
-SMTPeter neemt deze verantwoordelijkheden van je over met sender domains.
+SMTPeter neemt deze verantwoordelijkheden van je over met sender-domains.
 We maken SPF, DKIM en DMARC archieven voor je aan en slaan ze op onze 
 DNS servers op. Zelf hoef je alleen een aantal archieven in je eigen DNS 
 archief aan te maken, door deze aan je DNS provider te geven of op je eigen 
@@ -49,19 +49,19 @@ zetten.
 
 ## Het "from" adres
 
-Voor elk sender domain hebben we de publieke DKIM sleutels in onze DNS.
+Voor elk sender-domain hebben we de publieke DKIM sleutels in onze DNS.
 We hebben ook een kopie van de persoonlijke key op onze server, zodat we een 
 DKIM ondertekenening onder elke mail via de SMTPeter servers kunnen zetten.
 
 Om de juiste sleutels te gebruiken halen we de sleutels uit elk "van" adres
 dat we gebruiken. Daarom is het belangrijk dat je altijd geregistreerde 
-sender domains gebruikt. Als je geen keys hebt opgezet wordt jij niet 
+sender-domains gebruikt. Als je geen keys hebt opgezet wordt jij niet 
 geverifieerd als de afzender van de e-mail.
 
 
 ## Tracking en bounce domeinen
 
-Als je een sender domain opzet word je ook gevraagd om je tracking en 
+Als je een sender-domain opzet word je ook gevraagd om je tracking en 
 bounce domeinen op te zetten. Dit zijn de hostnames die we gebruiken om 
 kliks, opens en errors op te slaan. De gesuggereerde standaarden zijn 
 voor de meeste gebruikers geschikt ("tracking.example.nl" en 
@@ -72,7 +72,7 @@ eerst doorgestuurd naar een andere website die de klik opslaat in onze databases
 De hyperlinks zien er daarom uit als "clicks.example.com". Sommige 
 gebruikers zullen dit herkennen als tracking domein. Als je de naam van 
 deze URLs wilt veranderen naar iets zoals "aanbiedingen.example.com" 
-kun je het klik domein aanpassen in de sender domainn configuratie.
+kun je het klik domein aanpassen in de sender-domainn configuratie.
 
 Je kunt ook je bounce domein aanpassen, maar deze is alleen zichtbaar in 
 de broncode van de e-mail.
@@ -80,7 +80,7 @@ de broncode van de e-mail.
 
 ## Meer informatie
 
-* [Configureren van een sender domain](./introduction-sender-domains)
+* [Configureren van een sender-domain](./introduction-sender-domains)
 * [SPF records](./spf-validation)
 * [DKIM keys](./dkim-signing)
 * [DMARC records](./dmarc-deployment)
