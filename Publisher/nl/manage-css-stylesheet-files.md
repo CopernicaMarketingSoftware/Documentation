@@ -9,8 +9,7 @@ diverse beheerfuncties geactiveerd in het Stijlsheet menu.
 
 ![Manage stylesheet ](../images/Stylesheet.png)
 
-Nieuwe stylesheet aanmaken
---------------------------
+## Nieuwe stylesheet aanmaken
 
 Onder *Stijl*kan je stylesheets aanmaken vanuit het gelijknamige menu.
 
@@ -22,15 +21,15 @@ Elke nieuwe stylesheet wordt voorzien van voorbeeldcode. Deze is gelijk
 aan de standaardopmaak van de publicaties. Deze kan je als basis
 gebruiken voor jouw eigen stylesheet.
 
-Stylesheet hernoemen
---------------------
+
+## Stylesheet hernoemen
 
 Een stylesheet kan je hernoemen vanuit het Stijlsheet menu. Het
 hernoemen heeft geen invloed op de publicaties die reeds gebruik maken
 van de stylesheet.
 
-Stylesheet verwijderen
-----------------------
+
+## Stylesheet verwijderen
 
 Wanneer je niet langer gebruik maakt van een stylesheet, kan je deze
 verwijderen vanuit het *Stylesheet*menu.
@@ -45,8 +44,8 @@ voor een publicatie, kan je de sheet beter archiveren.
 Bij het verwijderen van een stylesheet vraagt de software altijd om een
 dubbelcheck.
 
-Stylesheet archiveren
----------------------
+
+## Stylesheet archiveren
 
 Een stylesheet die je niet actief meer gebruikt, kan worden
 gearchiveerd. Het bestand verdwijnt dan uit de lijst van actieve
@@ -57,8 +56,7 @@ Publicaties blijven gebruik maken van een gearchiveerde stylesheet.
 Gearchiveerde stylesheets blijven beschikbaar vanuit het tabblad
 *Gearchiveerd*, en kunnen te allen tijde worden gedearchiveerd.
 
-Stylesheet importeren
----------------------
+## Stylesheet importeren
 
 Een stylesheet die je buiten de applicatie hebt gemaakt kan je
 importeren naar het onderdeel Stijl via de functie *stylesheet
