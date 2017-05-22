@@ -18,7 +18,6 @@ om je database eenvoudig te houden. Je kunt later altijd nog extra velden toevoe
 Een veld binnen de database kan een interesse of een collectie bevatten. 
 Een interesse kan alleen de waarde "ja" of "nee" bevatten, waardoor je
 nauwkeurig informatie van je klanten bij kunt houden. 
-
 Collecties zijn wat ingewikkelder, omdat je als het ware een extra laag 
 toevoegt aan een database. In een collectie kun je namelijk meerdere 
 items opslaan zoals: "voornaam", "achternaam" en "e-mailadres". Eigenlijk
@@ -38,7 +37,7 @@ je doen door middel van database *intenties*.
 
 Een database heeft natuurlijk data nodig om van waarde te kunnen zijn. 
 De datasets die je gaat toevoegen worden binnen de omgeving van Copernica aangeduid
-als `profielen`. Om één en ander te testen kun je het beste eerst een 
+als `DATABASE & PROFILES`. Om één en ander te testen kun je het beste eerst een 
 profiel met je eigen gegevens aanmaken.
 
 Je kunt je e-mails, tijdens het schrijven, constant testen door een e-mail te versturen
