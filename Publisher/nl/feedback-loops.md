@@ -1,6 +1,6 @@
 # Feedback loops
 
-In het menu van de Marketing Suite zie je een kopje met `feedback loops` staan.
+In het menu van de Marketing Suite zie je een kopje met `FEEDBACK LOOPS` staan.
 Hier kun je instellen dat Copernica je real-time notificaties via HTTP POST
 stuurt als er een events zoals kliks, opens of errors plaatsvinden. Je kunt dit 
 bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie wilt bijwerken
@@ -51,7 +51,7 @@ is het beter om [algemene statistieken](statistics) te gebruiken.
 
 ## Feedback loops instellen
 
-Klik op het kopje `feedback loops` binnen de Marketing Suite. Via het 
+Klik op het kopje `FEEDBACK LOOPS` binnen de Marketing Suite. Via het 
 configuratiemenu kun je het adres instellen waar de HTTP POST call naar
 toe wordt gestuurd. Het wijst zich eigenlijk vanzelf: je geeft aan in 
 welke events je geïnteresseerd bent, en wat het adres van je script is.

@@ -1,4 +1,4 @@
-# Sender domains
+# Sender-domains
 
 Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
@@ -10,7 +10,7 @@ Als je dit niet doet, zal een groot deel van de berichten die je verstuurt niet
 goed aankomen.
 
 Het instellen van al deze [DNS records](./dns.md) kan ingewikkeld zijn, maar met 
-behulp van een technologie die we *Sender Domains* hebben genoemd, maken we het 
+behulp van een technologie die we sender-domains hebben genoemd, maken we het 
 makkelijk. Het werkt zo: om goed te kunnen mailen moet je [DNS records](./dns.md) 
 aanmaken, [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) en [DMARC](./dmarc.md) 
 records. Om je te helpen hoef je dit echter niet zelf te doen, maar maken wij deze 
@@ -40,9 +40,20 @@ aantal zaken goed letten. Met name de DMARC records die je moet aanmaken of
 wijzigen behoeft speciale aandacht.
 
 
+## Domeinnaam valideren
+
+Om misbruik van sender-domains te voorkomen, moet je bewijzen dat jij echt de 
+eigenaar bent van het domein. Nadat je een sender-domain hebt aangemaakt toont de Marketing Suite
+daarom een waarschuwingsbericht. Je moet eerst een TXT record aan je domein
+toevoegen met daarin een speciale code die alleen door Copernica wordt begrepen. 
+Pas als Copernica ziet dat je dit record aan het domein hebt toegevoegd, geloven
+we dat je echt de eigenaar van het domein bent en kun je verder gaan met
+het configueren van het domein.
+
+
 ## De verschillende DNS records
 
-Als je gebruik maakt van een Sender Domain om je DNS te configuren, dan plaatsen wij,
+Als je gebruik maakt van een sender-domain om je DNS te configuren, dan plaatsen wij,
 Copernica, in onze DNS server allerlei records met de juiste DNS instellingen. In
 jouw DNS hoef je alleen nog maar aliassen te maken (door middel van CNAME records)
 die verwijzen naar de records in ons DNS. In het dashboard van Copernica kun je 
@@ -71,6 +82,32 @@ en ze conflicteren niet met bestaande records. Je kunt de aliassen naar deze
 records dus zonder al te veel zorgen aanmaken. Ook [SPF](./spf.md) gaat goed 
 omdat we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
 
+```html
+    Geadviseerde DNS records die                DNS records op de server
+    aan het domein moeten worden                van Copernica, met instellingen
+    toegevoegd:                                 van het sender-domain:
+
+    +-------------------+                       +-------------------+
+    |   SPF alias       |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DKIM alias      |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DMARC alias     |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   Tracking alias  |           --->        |   A record(s)     |
+    +-------------------+                       +-------------------+
+    |   Bounce alias    |           --->        |   MX record(s)    |
+    +-------------------+                       +-------------------+
+```
+Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 
+Marketing Suite opvolgt, dan voeg je aan jouw domein een aantal aliassen toe 
+die verwijzen naar DNS records van Copernica. Dit stelt ons vervolgens in staat 
+om de instellingen van jouw domein te beheren.
+
+Nadat je het sender-domain hebt aangemaakt, je domein hebt gevalideerd, en
+de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een 
+afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
+
 
 ## Let op met DMARC
 
@@ -84,7 +121,7 @@ het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra
 maatregelen treffen. Hoe dat precies werkt leggen we uit in het artikel over 
 [DMARC configureren](./dmarc.md).
 
-Het instellen van sender domains, en de DNS records die je moet maken, kun
+Het instellen van sender-domains, en de DNS records die je moet maken, kun
 je doen via de Copernica Marketing Suite. De wizards in de Marketing Suite 
 werken intuïtief en door middel van groene vinkjes of rode kruisjes kun je 
 precies zien of je het goed hebt gedaan.

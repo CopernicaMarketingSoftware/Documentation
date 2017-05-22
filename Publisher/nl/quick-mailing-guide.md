@@ -18,5 +18,5 @@ Voor de wat meer geavanceerdere toepassingen kun je onderstaande artikelen bekij
 
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
-* [Personalisatie](./personalizatie)
+* [Personalisatie](./personalization)
 * [Follow-up Manager](./follow-up-manager)
