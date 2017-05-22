@@ -1,26 +1,25 @@
 # Je eerste e-mails met Copernica
 
 Het moment is aangebroken om je eerste e-mail te gaan versturen! 
-Ga naar de Marketing Suite en navigeer naar de `e-mail templates`. 
+Ga naar de Marketing Suite en navigeer naar de `E-MAIL TEMPLATES`. 
 
 
 ## Een template maken
 
 In de Marketing Suite is het gemakkelijk om via de drag-and-drop editor blokken 
 naar de template te slepen. Deze blokken bestaan uit onder andere: tekstblokken, 
-afbeeldingen, filmpjes, enzovoort. Nadat je de mail hebt samengesteld, druk
-je op de verzendbutton en de rest wijst zich vanzelf. Als je snel mooie en 
-professioneel uitziende emails wilt samenstellen is de Marketing Suite de beste 
-optie.
+afbeeldingen, filmpjes, enzovoort. Nadat je de e-mail hebt samengesteld, druk
+je op de verzendbutton en de rest wijst zich vanzelf. 
 
 
 ## De mailing versturen
 
-Om een mailing te versturen moet je een template selecteren. Je vult ook 
-dingen zoals het onderwerp van de mail in en het domein waar je de mail 
-van wil verzenden. Je kunt ook kiezen wanneer de mail verstuurd moet worden 
-en tags toevoegen om je mails te categorizen en organizeren. De ontvangers van 
-je mail kun je kiezen als een [database](./database-introduction) of een [selectie](./selections-introduction). 
+Voor het versturen van een e-mail, selecteer je eerst een template. Daarna vul
+je de gewenste informatie aan, zoals het onderwerp van de e-mail en bijvoorbeeld
+het domein dat je wilt gaan gebruiken om je e-mails te versturen. Daarnaast kun 
+je ook concrete informatie achterlaten over het verzendtijdstip alsook de tags
+die je aan een e-mail toe kunt voegen. Tot slot, de ontvangers van je e-mail 
+kun je kiezen als een [database](./database-introduction) of een [selectie](./selections-introduction). 
 Je kunt ook automatisch e-mails versturen met behulp van de [Follow-up Manager](./follow-up-manager).
 
 
