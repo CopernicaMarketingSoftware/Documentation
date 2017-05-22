@@ -1,11 +1,11 @@
-# Email aflevering verbeteren
+# E-mail aflevering verbeteren
 
 Bij het opstellen van uw e-mailcampagnes wilt u zeker zijn van een goede
 deliverability. Copernica Marketing Software biedt verschillende
 methodes en tools die helpen bij het verbeteren van uw verzendreputatie.
 
-Split-run testen
-----------------
+
+## Split-run testen
 
 Relevante e-mails genereren de minste afmeldingen en de meeste respons,
 daarom wilt u weten welke content, vormgeving en presentatievorm uw
@@ -18,8 +18,8 @@ deliverability en response ratio. Via Copernica kunt u vanuit één
 functie gemakkelijk de doelgroepselecties aanmaken en uw split-run test
 uitvoeren.
 
-Litmus preview tool
--------------------
+
+## Litmus preview tool
 
 Ontvangers zijn meestal verspreid over vele e-mailclients, die elk hun
 eigen invloed op de weergave van uw e-mail hebben. Toch wilt u dat de
@@ -40,7 +40,7 @@ o.a.
 
 Dankzij deze toepassing zijn uw e-mailings te optimaliseren voor elke
 ontvangende mailserver wat uw deliverability ook ten goede komt.\
- HTML check
+HTML check
 
 De broncode van de HTML documenten waarop u e-mailings baseert, moet
 altijd voldoen aan de internationale standaard. Eventuele fouten binnen
@@ -48,8 +48,8 @@ uw HTML-code kunnen leiden tot problemen bij het weergeven van de
 e-mail. Dit resulteert in foutmeldingen of een verkeerde indeling van uw
 e-mail bij de ontvangende mailserver.
 
-SPAM & blacklist check
-----------------------
+
+## SPAM & blacklist check
 
 Nadat de e-mail is opgesteld, kunt u via de marketing software nog een
 controle op spamgevoeligheid uitvoeren. Hierbij wordt gekeken of de
@@ -63,17 +63,15 @@ mailservers van Copernica in verbinding met een aantal organisaties die
 hierover waken (Return Path,
 Lashback, Listbox,e.a.).
 
-Verbeteren van e-mailreputatie
-------------------------------
 
-Uw e-mailreputatie is in hoge mate medebepalend voor de deliverability van uw
-e-mailcampagnes bij ontvangende mailservers. Wanneer u een e-mail
+## Verbeteren van e-mailreputatie
+
+Je e-mailreputatie is in hoge mate bepalend voor de deliverability van
+e-mailcampagnes bij ontvangende mailservers. Wanneer je een e-mail
 verzendt, kunnen twee situaties zich voordoen:
 
--   De e-mail wordt succesvol afgeleverd
--   De e-mail wordt tegengehouden doordat bijvoorbeeld:
-     - De mailbox niet meer bestaat
-     - De e-mail wordt beschouwd als spam
+*   De e-mail wordt succesvol afgeleverd;
+*   De e-mail wordt tegengehouden.
 
 De frequentie van deze situaties bepaalt uiteindelijk uw reputatie als
 mailserver. Indien teveel e-mails worden tegengehouden, zal dit uw
@@ -92,8 +90,8 @@ u via Copernica:
 -   Abusemeldingen (spamklachten) van ontvangers die gerapporteerd
     worden door de mailservers direct omzetten in afmeldingen
 
-Certificering
--------------
+
+## Certificering
 
 Naast de stappen die u met behulp van de marketing software kunt
 ondernemen om uw e-mailreputatie positief te beïnvloeden kunt u ook nog
@@ -133,8 +131,7 @@ Spamfilters kijken naar de aanwezigheid van een list-unsubscribe header.
 De opname van deze functie heeft een positief effect op de
 deliverability.
 
-Authenticatietechnieken
------------------------
+## Authenticatietechnieken
 
 Authenticatie wordt standaard uitgevoerd door ontvangende servers bij
 binnenkomende e-mails. Omdat spamverzenders gebruik maken van valse

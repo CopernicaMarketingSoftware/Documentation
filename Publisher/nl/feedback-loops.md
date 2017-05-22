@@ -58,12 +58,12 @@ welke events je geïnteresseerd bent, en wat het adres van je script is.
 
 Je kunt gebruik maken van de volgende feedback loops:
 * [Feedback loops voor bounces](feedback-bounces)
-* [Feedback loops voor fouten](feedback-failures)
-* [Feedback loops voor kliks](feedback-clicks)
+* [Feedback loops voor failures](feedback-failures)
+* [Feedback loops voor clicks](feedback-clicks)
 * [Feedback loops voor opens](feedback-opens)
-* [Feedback loops voor aangemaakte profielen](feedback-creates)
-* [Feedback loops voor gewijzigde profielen](feedback-updates)
-* [Feedback loops voor verwijderede profielen](feedback-deletes)
+* [Feedback loops voor creates](feedback-creates)
+* [Feedback loops voor updates](feedback-updates)
+* [Feedback loops voor deletes](feedback-deletes)
 
 
 ## URL validatie
