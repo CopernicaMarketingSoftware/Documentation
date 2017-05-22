@@ -5,14 +5,16 @@ Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp
 van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, geüpdatet of verwijderd.
 Dit gaat automatisch, dus buiten de *user interface* om.
 
-* [Introductie: de REST API in een notendop](rest-introduction)
+* [De REST API in een notendop](rest-introduction)
 * [HTTP requests sturen en antwoorden ontvangen](rest-requests)
 * [OAuth2 koppelingen](rest-oauth)
 * [REST events](rest-get-events.md)
 
+
 ## REST API: overzicht van methodes
 
 De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE.
+
 
 ## GET
 
