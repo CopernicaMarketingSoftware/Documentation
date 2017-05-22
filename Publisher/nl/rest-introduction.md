@@ -1,10 +1,5 @@
 # De REST API in een notendop
 
-
-
-
-## Aanmelden voor de API
-
 Je kunt gemakkelijk een applicatie aanmelden via het dashboard van de Copernica 
 website. Na het opgeven van een naam, krijg je een API key. Met deze key kun je
 vervolgens calls maken naar de Copernica REST API.
