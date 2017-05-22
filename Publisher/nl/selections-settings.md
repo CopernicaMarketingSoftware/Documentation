@@ -71,4 +71,4 @@ actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties
 heeft dus geen invloed op de performance van je overige selecties; als 
 performance je doel is, kun je ze beter verwijderen.
 
-[Terug naar selectiebeheer](./selections-introduction).
+* [Terug naar selectiebeheer](./selections-introduction)
