@@ -24,7 +24,7 @@ pay for the amount of emails that you have sent in a month. So, if you
 happen to have sent less emails in a month, your credit will be passed to 
 the next month. The price per sent email decreases with the amount of sent 
 emails. This discount will be calculated automatically. For the exact prices 
-you can visit our [homepage](https://www.smtpeter.com/pricing) and scroll to 
+you can visit our [homepage](https://www.smtpeter.com/en) and scroll to 
 the pricing section below.
 
 

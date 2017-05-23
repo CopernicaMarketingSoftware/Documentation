@@ -23,10 +23,11 @@ alleen te betalen voor de hoeveelheid emails die je hebt verstuurd binnen
 een maand. Dus wanneer je minder emails verstuurt dan verwacht wordt je 
 krediet behouden voor de volgende maand. Als je grotere hoeveelheden 
 emails inkoopt is het ook mogelijk om korting te krijgen. De hoeveelheid 
-kun je bekijken op de [pagina met onze prijzen](https://www.smtpeter.com/pricing).
+kun je bekijken op de [homepage](https://www.smtpeter.com/nl/) door naar 
+beneden te scrollen.
 
 ## Factureren
-
+icing
 Alle kosten worden automatisch in rekening gebracht en aan het einde van 
 de maand ontvang je een factuur met de kosten voor de afgelopen maand.
 
