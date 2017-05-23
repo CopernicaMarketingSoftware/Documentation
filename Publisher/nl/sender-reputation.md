@@ -40,7 +40,7 @@ Elke email ontvangt een spam score, die je makkelijk zelf kunt beïnvloeden
 om je reputatie schoon te houden. Je kunt onder andere een tekstversie toevoegen, 
 spamwoorden vermijden en je HTML schoonhouden om deze score te verlagen. 
 Voor meer simpele tips en uitleg kun je meer lezen in het artikel over je 
-[spamscore verlagen](./some-tips-to-lower-your-spam-score).
+[spamscore verlagen](./some-tips-to-lower-your-email-spam-score).
 
 Zorg er ook voor dat je email relevant is. Door [personalizatie](./personalization) 
 te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. Als je lezers 
@@ -52,5 +52,5 @@ geïnteresseerd zijn zullen ze minder snel je mail als spam markeren.
 * [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
 * [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
-* [Spam score verlagen](./some-tips-to-lower-your-spam-score)
+* [Spam score verlagen](./some-tips-to-lower-your-email-spam-score)
 * [Aflevering verbeteren](./deliverability)
