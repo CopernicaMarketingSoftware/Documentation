@@ -51,7 +51,7 @@ om periodiek notificaties te ontvangen over de processen die misgaan.
 
 DMARC instellen is niet altijd even gemakkelijk. SPF en DKIM staan vele parameters 
 toe en DMARC maakt dit dan ook alleen maar complexer. Het SMTPeter dashboard helpt
-je met het concept over sender domains. Een sender domain is een domein die je
+je met het concept over senderdomains. Een sender domain is een domein die je
 gebruikt om e-mail vanaf te versturen. Bij gebruik van het dashboard creëert SMTPeter
 alle DNS records en privésleutels voor je. Deze hoef je alleen maar te kopiëren
 naar je eigen DNS server (of aan je provider te geven) en je bent klaar om e-mails
