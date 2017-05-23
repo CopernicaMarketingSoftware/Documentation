@@ -12,8 +12,8 @@ Het dashboard biedt de volgende mogelijkheden:
 * [Het configureren van sender domains](./introduction-sender-domains)
 * [Het opvragen van de access token voor de REST API](./introduction-rest-api)
 * [Het configureren van de SMTP API](./introduction-smtp-api)
-* Het opvragen van statistieken
-* Het doorzoeken en downloaden van logfiles
-* Het creëren en beheren van e-mailtemplates
-* Het analyseren van DMARC rapporten
-* Het analyseren van de domeinreputatie
+* [Het opvragen van statistieken](./statistics)
+* [Het doorzoeken en downloaden van logfiles](./rest-logfiles)
+* [Het creëren en beheren van e-mailtemplates](./templates)
+* [Het analyseren van DMARC rapporten](./dmarc-deployment)
+* [Het analyseren van de domeinreputatie](./sender-reputation)
