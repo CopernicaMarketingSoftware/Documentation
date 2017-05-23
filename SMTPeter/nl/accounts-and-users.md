@@ -22,4 +22,4 @@ Het is ook mogelijk om een extern persoon toegang te verlenen tot een
 account. Dit soort relaties maak je gemakkelijk aan in het gebruiksbeheer, 
 waar alles overzichtelijk wordt gepresenteerd.
 
-![Accounts en bedrijven](../Images/accounts-users-nl.png)
+![Accounts en bedrijven](./Images/accounts-users-nl.png)
