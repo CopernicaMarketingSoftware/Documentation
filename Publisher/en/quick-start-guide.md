@@ -11,7 +11,7 @@ After you have completed these steps you can create your first template with
 the very user-friendly template editor inside the Marketing Suite.
 
 Done finishing your template? Good! You are now ready to send your first 
-mailing!.
+mailing.
 
 
 ## Quick start checklist
@@ -31,5 +31,5 @@ Do you want to receive realtime updates about your mailings? Incorporate
 feedback loops into your own system and receive all eventsright off our
 servers.
 
-* [Database selections](./selections-introduction)
 * [Feedback loops](./feedback-loops)
+* [Database selections](./selections-introduction)
