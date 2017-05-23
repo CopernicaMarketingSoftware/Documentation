@@ -16,4 +16,4 @@ overviews you can find in the dashboard:
 * [Browse and download log files](rest-logfiles)
 * [Create an administrate your email templates](rest-templates)
 * [Analyze your DMARC reports](./dmarc-deployment)
-* Analyze your domain reputation
+* [Analyze your domain reputation](./sender-reputation)
