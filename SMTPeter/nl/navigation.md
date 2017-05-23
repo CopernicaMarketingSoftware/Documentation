@@ -4,6 +4,7 @@
     * [DNS instellingen](./rest-dns)
     * [REST API configureren](./introduction-rest-api)
     * [SMTP API configureren](./introduction-smtp-api)
+* [Accounts en gebruikers](accounts-and-users)
 * [Verzenden via REST](rest-api)
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
