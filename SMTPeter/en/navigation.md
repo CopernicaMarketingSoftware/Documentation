@@ -5,6 +5,7 @@
     * [Configure REST API](./introduction-rest-api)
     * [Configure SMTP API](./introduction-smtp-api)
 * [Accounts and users](accounts-and-users)
+* [License and billing](license-and-billing)
 * [Send with REST API](rest-api)
     * [Send MIME data](rest-mime)
     * [Let SMTPeter create MIME data](rest-send-json)

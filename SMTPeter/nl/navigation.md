@@ -5,6 +5,7 @@
     * [REST API configureren](./introduction-rest-api)
     * [SMTP API configureren](./introduction-smtp-api)
 * [Accounts en gebruikers](accounts-and-users)
+* [Licensie en facturering](license-and-billing)
 * [Verzenden via REST](rest-api)
     * [MIME data versturen](rest-mime)
     * [MIME door SMTPeter laten maken](rest-send-json)
