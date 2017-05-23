@@ -1,4 +1,4 @@
-# De software inrichten
+# Snel aan de slag
 
 Voordat je mailings kunt versturen met Copernica, moet je eerst de software 
 configureren. Deze configuratie bestaat uit twee stappen: het opzetten van een
@@ -11,13 +11,13 @@ dit met de gebruiksvriendelijke template editor in de Marketing Suite.
 Klaar met je templates? Mooi! Dan kan de mailing nu worden verstuurd.
 
 
-## Checklist snel-op-weg
+## Checklist
  
-Om je op weg te helpen, hebben we een kleine checklist gemaakt. Door het 
+Om je op weg te helpen, heeft Copernica een kleine checklist gemaakt. Door het 
 volgen van de volgende stappen heb je alle benodigdhedenom je eerste mailing 
 te versturen.
 
-* [Sender-domain instellen](quick-sender-domain-guide)
+* [Sender domain instellen](quick-sender-domain-guide)
 * [Database inrichten](quick-database-guide)
 * [Je eerste e-mail met de drag-and-drop editor](quick-mailing-guide)
 
@@ -25,7 +25,7 @@ te versturen.
 ## Meer informatie
 
 Wil je realtime op de hoogte worden gehouden van de processen die rondom je
-mailings plaatsvinden? Stel dan feedback loops in op je eigen systeem en 
+mailings plaatsvinden? Stel dan feedbackloops in op je eigen systeem en 
 ontvang alle meldingen die van onze servers komen.
 
 * [Integreren met je eigen systeem](./feedback-loops)
