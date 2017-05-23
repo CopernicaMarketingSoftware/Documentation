@@ -13,7 +13,7 @@ Het dashboard biedt de volgende mogelijkheden:
 * [Het opvragen van de access token voor de REST API](./introduction-rest-api)
 * [Het configureren van de SMTP API](./introduction-smtp-api)
 * Het opvragen van statistieken
-* Het doorzoeken en downloaden van log files
+* Het doorzoeken en downloaden van logfiles
 * Het creëren en beheren van e-mailtemplates
 * Het analyseren van DMARC rapporten
 * Het analyseren van de domeinreputatie
