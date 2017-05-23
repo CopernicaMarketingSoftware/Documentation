@@ -37,7 +37,7 @@
     * [Accounts and users](./accounts-and-users)
     * [License and billing](./license-and-billing)
     * [Sender reputation](./sender-reputation)
-    * [Sender Domains](./sender-domains)
+    * [Sender domains](./sender-domains)
     * [SPF validation](./spf-validation)
     * [DKIM signing](./dkim-signing)
     * [DMARC deployment](./dmarc-deployment)
