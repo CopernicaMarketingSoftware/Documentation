@@ -4,6 +4,7 @@
     * [Setting up a database](./quick-database-guide.md)
     * [Your first mailing](./quick-mailing-guide.md)
 * [Accounts and users](./accounts-and-users.md)
+    * [License and billing](./license-and-billing)
 * [Database management](./database-introduction.md)
     * [Fields and collections](./database-fields-and-collections.md)
     * [Restrictions](./database-restrictions-and-capabilities.md)
