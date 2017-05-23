@@ -39,6 +39,7 @@
     * [Reducing HTML errors](./reducing-html-errors)
     * [Database corruption](./prevent-database-corruption)
 * [Publisher only features](./publisher-only)
+    * [Sender reputation](./sender-reputation)
     * [Surveys](./surveys)
     * [Websites](./websites)
     * [Web forms](./web-forms)
