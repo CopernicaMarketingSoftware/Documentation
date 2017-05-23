@@ -34,6 +34,7 @@
     * [DMARC records](./dmarc.md)
     * [DNS](./dns)
 * [Tips en tricks](./tips-and-tricks)
+    * [Zender reputatie](./sender-reputation)
     * [E-mail aflevering verbeteren](./deliverability)
     * [Verlaag je spam score](./some-tips-to-lower-your-email-spam-score)
     * [Verminder HTML fouten](./reducing-html-errors)
