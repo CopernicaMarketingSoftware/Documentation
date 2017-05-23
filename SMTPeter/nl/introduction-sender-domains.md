@@ -1,6 +1,6 @@
-# Sender Domains instellen
+# Sender domains instellen
 
-Door middel van *Sender Domains* kun je in het dashboard van SMTPeter aangeven vanuit welke 
+Door middel van *sender domains* kun je in het dashboard van SMTPeter aangeven vanuit welke 
 domeinnaam je e-mail gaat versturen. Klik op `Add sender domain` en volg de stappen. Bij 
 alle stappen staat een uitgebreide omschrijving, zodat je telkens na kunt gaan wat het 
 belang is van een bepaalde instelling. Echter, de meeste standaardinstellingen staan 
