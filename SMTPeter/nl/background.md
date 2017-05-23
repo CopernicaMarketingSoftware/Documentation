@@ -9,11 +9,11 @@ rondom alle processen te verbeden of te verdiepen, zodat je het maximale resulta
 uit je mailings kunt halen. 
 
 - [Alle beschikbare REST calls](all-rest-calls "Alle beschikbare REST calls")
-- [Sender Domains](sender-domains "Sender Ddomains")
+- [Sender domains](sender-domains "Sender domains")
 - [SPF validatie](spf-validation "SPF email validatie - een korte introductie")
 - [DKIM ondertekenen](dkim-signing "DKIM ondertekenen")
 - [DMARC deployment](dmarc-deployment "DMARC deployment")
 - [Bounce protocol](bounce-handling "Bounce protocol")
 - [Inline CSS code](inline-css "Inline CSS")
 - [E-mail throttling](email-throttling "Email throttling")
-- [Click en open tracking](statistics "Click en open tracking")
+- [Click- en open tracking](statistics "Click- en open tracking")

@@ -34,7 +34,7 @@
     * [Alle beschikbare REST calls](all-rest-calls)
     * [Accounts en gebruikers](accounts-and-users)
     * [Bounce protocol](bounce-handling)
-    * [Click en open tracking](statistics)
+    * [Click- en open tracking](statistics)
     * [DKIM ondertekenen](dkim-signing)
     * [DMARC deployment](dmarc-deployment)
     * [E-mail throttling](email-throttling)
