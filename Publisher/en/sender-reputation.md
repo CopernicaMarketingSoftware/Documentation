@@ -39,7 +39,7 @@ using a valid email adress you can [create a double opt-in](create-a-double-opti
 Every email receives a spam score, which is also important to your reputation. 
 Tips to lower your spam score include adding a text version, avoiding 
 'spammy' words and keeping your HTML clean. See the article on 
-[lowering your spam score](./some-tips-to-lower-your-spam-score) for more 
+[lowering your spam score](./some-tips-to-lower-your-email-spam-score) for more 
 tips and explanations.
 
 Make sure your email is also relevant. Using [personalization](./personalization) 
@@ -52,5 +52,5 @@ in your emails they are less likely to report them as spam.
 * [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
 * [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
 * [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
-* [Lower your spam score](./some-tips-to-lower-your-spam-score)
+* [Lower your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Improve your deliverability](./deliverability)
