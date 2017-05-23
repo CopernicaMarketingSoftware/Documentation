@@ -40,6 +40,6 @@
     * [E-mail throttling](email-throttling)
     * [Inline CSS code](inline-css)
     * [Licentie en facturering](license-and-billing)
-    * [Sender-domains](sender-domains)
+    * [Sender domains](sender-domains)
     * [SPF validatie](spf-validation)
     * [Webversie](webversion)
