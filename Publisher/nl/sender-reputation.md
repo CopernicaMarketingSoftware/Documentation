@@ -49,8 +49,8 @@ geïnteresseerd zijn zullen ze minder snel je mail als spam markeren.
 ## Meer informatie
 
 * [Uitschrijf gedrag](database-unsubscribe-behavior) 
-* [Selecties Tutorial: Bounce handling](./automatically-process-bounces) 
-* [Selecties Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
-* [Selecties Tutorial: Newsletter selection](./create-a-mailing-list)
+* [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
+* [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
+* [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
 * [Spam score verlagen](./some-tips-to-lower-your-spam-score)
 * [Aflevering verbeteren](./deliverability)
