@@ -4,7 +4,7 @@ Copernica gebruikt het concept van sender-domains om e-mail simpeler te maken.
 Binnen de verschillende diensten van Copernica zijn sender-domains verplicht gesteld, 
 omdat het zo'n essentieel onderdeel is voor het succesvol versturen van e-mail.
 
-Het gebrukik van sender-domains werkt als volgt: in het dashboard van de Marketing Suite
+Het gebruik van sender-domains werkt als volgt: in het dashboard van de Marketing Suite
 geef je aan vanaf welke domeinen je wilt mailen. Copernica laat je vervolgens weten hoe 
 je DNS instellingen geconfigureerd moeten worden. 
 
