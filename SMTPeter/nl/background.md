@@ -17,3 +17,6 @@ uit je mailings kunt halen.
 - [Inline CSS code](inline-css "Inline CSS")
 - [E-mail throttling](email-throttling "Email throttling")
 - [Click- en open tracking](statistics "Click- en open tracking")
+- [Licentie en facturering](license-and-billing)
+- [Webversie](webversion)
+- [Accounts en gebruikers](accounts-and-users)

@@ -29,7 +29,7 @@
     * [Feedbackloops voor clicks](feedback-clicks)
     * [Feedbackloops voor opens](feedback-opens)
 * [Personalisatie](personalization)
-    * [Modifiers](personalization-modifiers)
+    * [Modifiers](./personalization-modifiers)
 * [Achtergrondinformatie](background)
     * [Alle beschikbare REST calls](all-rest-calls)
     * [Accounts en gebruikers](accounts-and-users)
@@ -43,3 +43,5 @@
     * [Sender domains](sender-domains)
     * [SPF validatie](spf-validation)
     * [Webversie](webversion)
+
+
