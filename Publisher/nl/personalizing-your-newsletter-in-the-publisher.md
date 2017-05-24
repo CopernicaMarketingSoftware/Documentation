@@ -131,4 +131,3 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 * [Overzicht van variabelen](./personalization-variables.md)
 * [Overzicht van modifiers](./personalization-modifiers.md)
 * [Overzicht van functies](./personalization-functions.md)
-* [Tips en trucs](./personalization-tricks.md)
