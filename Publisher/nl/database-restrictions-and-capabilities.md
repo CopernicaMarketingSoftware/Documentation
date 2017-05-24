@@ -43,7 +43,7 @@ bestaande uit 10 karakters" of "elke zin met twee kommas en een hoofdletter Q".
 De volgende regex laat alleen postcodes toe die bestaan uit 4 getallen,
 gevolgd door twee letters (0000AA).
 
-**/\^[0-9]4[a-z|A-Z]2\$/**
+`'~\A[1-9]\d{3} ?[a-zA-Z]{2}\z~'`
 
 Met deze regex als databaserestrictie voorkom je dat foutieve postcodes
 kunnen worden ingevoerd. Op het internet zijn goede tutorials en
