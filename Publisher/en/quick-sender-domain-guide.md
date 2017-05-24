@@ -36,7 +36,7 @@ tool in the Marketing Suite menu.
 
 ## The next step
 
-To send your first mailing, you need a database with profiles to send it to.
+To send your first mailing, you need [a database with profiles](./quick-database-guide) to send it to.
 
 
 ## More information

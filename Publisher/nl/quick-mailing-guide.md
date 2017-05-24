@@ -1,7 +1,7 @@
-# Je eerste e-mails met Copernica
+# Je eerste mailing
 
 Het moment is aangebroken om je eerste e-mail te versturen! Ga naar de Marketing 
-Suite en navigeer naar de `E-MAIL TEMPLATES`. 
+Suite en navigeer naar de `EMAIL TEMPLATES`. 
 
 Voor het versturen van een e-mail, selecteer je eerst een template. Daarna vul
 je de gewenste informatie aan, zoals het onderwerp van de e-mail en bijvoorbeeld
