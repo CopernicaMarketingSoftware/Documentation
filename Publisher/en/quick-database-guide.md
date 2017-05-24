@@ -15,27 +15,37 @@ add fields later on.
 
 ## Fields, interest and collections
 
-A field in a database 
-
+A field in a database can encompass an interest or collection.
+An interest can only consist of the value "yes" or "no".
+Collections are a little more complicated, because you kind of
+add a new layer to your database. In a collection you can add 
+multiple items like: "voornaam", "achternaam" en "e-mailadres".
+Concluding, collections are structure-wise more or less 
+identical to databases. 
 
 
 ## Database intentions
 
-There are various things to set up when designing databases. One is 
-database intentions, in which you can specify whether a database is
-suitable for sending mailings. You can also set a variety of rules
-to which data must comply in order to be added to the databases. 
-You'll find these settings under the 'profiles' tab in the Marketing
-Suite.
- 
+There are various things to set up when designing databases. 
+One is database intentions, in which you can specify whether 
+a database is suitable for sending mailings. You can also set 
+a variety of rules to which data must comply in order to be 
+added to the databases. You can do this with database 
+*intentions*. 
+
+
 ## Creating profiles
 
-After you've created the database and added fields to it, it is time to add data to it. We call these data *profiles* and they can be added through the profile module in Copernica. To test some things, it's best to start out with a test profile containing your own data.
+Databases need of course data to be of any value. The sets of 
+data you acquire are called `DATABASE & PROFILES` inside 
+Copernica. You can get a grasp of how to work with profiles
+by making a profile with your own details. 
 
-If you plan on using Copernica to design and send email, you can send test emails all through the process at any given time. These tests are sent to your *test destination*. It's logical to set your own profile as the test destination
-
-## The next step
-Once your database is ready and filled with your profile, you're ready to [make your first mailing](quick-mailing-guide) to further discover the magic of Copernica.
+You can test your emails constantly by sending an email to a
+*predetermined test destination*. This is a profile from the
+database that is marked as the profile for test emails.
+This email address is most likely your own.
+ 
 
 ## More information
 
