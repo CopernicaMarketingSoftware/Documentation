@@ -23,6 +23,6 @@ Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies
 en informatie om snel van start te gaan.
 
 * [Snel aan de slag](./quick-start-guide)
-* [Configureren van een sender-domain](./quick-sender-domain-guide)
+* [Configureren van een sender domain](./quick-sender-domain-guide)
 * [Configureren van een database](./quick-database-guide)
 * [Je eerste mailing versturen](./quick-mailing-guide)
