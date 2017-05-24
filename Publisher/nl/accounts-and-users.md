@@ -9,11 +9,12 @@ toegang heeft tot een bepaald account.
 De interface is gebouwd met inachtneming van het feit dat Copernica veel 
 met partners werkt. Denk aan reclamenbureaus of teksschrijvers die op hun
 beurt andere gebruikers ondersteunen bij het inzetten van Copernica. Al 
-deze partners hebben op meerdere manieren toegang nodig tot de software,
-omdat ze de software zelf gebuiken en tegelijkertijd mee moeten kijken 
-met hun klanten. In het gebruikersbeheer is daarom onderscheid gemaakt
-tussen "gebruikers", "accounts" en "bedrijven". Je kunt op de volgende
-manieren toegang verlenen aan een andere gebruiker:
+deze partners hebben op meerdere manieren toegang nodig tot de software.
+Bijvoorbeeld omdat ze de software zelf gebuiken en tegelijkertijd mee 
+moeten kijken met hun klanten. In het gebruikersbeheer is daarom 
+onderscheid gemaakt tussen "gebruikers", "accounts" en "bedrijven". 
+Je kunt op de volgende manieren toegang verlenen aan een andere 
+gebruiker:
 
 * Gebruiker krijgt toegang tot de API;
 * Gebruiker krijgt toegang tot de gebruikersinterface;

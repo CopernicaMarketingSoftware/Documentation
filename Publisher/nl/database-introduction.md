@@ -1,8 +1,8 @@
 # Databasebeheer
 
-Copernica werkt met databases die je zelf kunt figureren. Je kunt 
-de database makkelijk naar wens structureren en daarnaast ook data [importeren](./database-import) 
-en [exporteren](./database-export).
+Copernica werkt met databases die je zelf kunt configureren. Je kunt 
+de database makkelijk naar wens structureren en daarnaast ook data 
+[importeren](./database-import) en [exporteren](./database-export).
 
 Je kunt ook verschillende lagen aanmaken in je database, bijvoorbeeld om 
 de aankoopgeschiedenis van een klant op te slaan in zijn profiel. Je kunt 
