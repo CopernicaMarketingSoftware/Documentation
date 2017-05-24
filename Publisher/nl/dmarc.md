@@ -113,17 +113,17 @@ Copernica in de wind slaan en je bestaande DMARC record handhaven.
 Als je de CNAME alias aanmaakt (eventueel nadat je het bestaande DMARC record
 hebt verwijderd), dan is vanaf dat moment het dashboard van Copernica de enige
 tool om je DMARC policy in te stellen. Alle DMARC rapportages komen vanaf dat 
-moment binnen bij Copernica en je kunt via het dashboard de DMARC analyzer
+moment binnen bij Copernica en je kunt via het dashboard de [DMARC Analyzer](DMARC-Analyzer)
 openen om deze rapportages te analyseren. In eerste instantie kun je het best
 de policy zo vriendelijk mogelijk zetten: alle mail accepteren. Hiermee voorkom
 je dat een foutje in je configuratie er toe leidt dat je berichten niet worden
-geaccepteerd. Als je na een paar dagen met behulp van de DMARC analyzer ziet
+geaccepteerd. Als je na een paar dagen met behulp van de DMARC Analyzer ziet
 dat alles goed gaat, kun je langzaamaan voor een strictere policy kiezen.
 
 Als je voor de andere optie kiest, en dus je eigen DMARC record handhaaft, dan 
 heeft de policy instelling die je vindt in het dashboard geen effect. Je moet 
 dan zelf handmatig je eigen DMARC record beheren. Als je toch wilt dat de rapportages
-(ook) bij Copernica binnenkomen, zodat je alsnog onze DMARC analyzer kunt
+(ook) bij Copernica binnenkomen, zodat je alsnog onze DMARC Analyzer kunt
 gebruiken, dan kun je het volgende statement toevoegen aan je DMARC record:
 
     rua=mailto:dmarc@smtpeter.com
