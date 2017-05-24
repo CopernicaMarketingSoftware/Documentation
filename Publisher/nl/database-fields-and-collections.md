@@ -21,7 +21,7 @@ beschikbare veldtypes.
 | Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden. |
 | E-mailveld         | E-mailveld is een tekstveld, bedoelt voor het opslaan van e-mailadressen.                     |
 | Telefoonveld       | Kan worden gespecificeerd voor fax, mobiele en andere telefoonnummers.                        |
-| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste waarde is standaardwaarde.          |
+| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste optie is standaardwaarde.           |
 | Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                               |
 
 
@@ -32,7 +32,7 @@ selecteren. Je kunt bijvoorbeeld aangeven dat een veld standaard gesorteerd is,
 of dat het verborgen moet blijven. Hieronder een korte uitleg van al die opties.
 
 
-## Verborgen velden
+### Verborgen velden
 
 Verborgen velden zijn niet zichtbaar in het dialoogvenster om een profiel
 te bewerken. Gebruik deze optie voor velden die je niet meer wilt tonen of 
@@ -40,7 +40,7 @@ kunt bewerken via de interface. De gegevens uit een verborgen veld kunnen
 wel gewoon geïmporteerd en geëxporteerd worden, zoals alle andere velden.
 
 
-## Veld tonen op overzichtspagina's
+### Veld tonen op overzichtspagina's
 
 Deze toepassing kun je gebruiken op plaatsen in de applicatie waar een lijst
 van profielen wordt getoond. Er worden dan alleen velden gebruikt waarvoor 
@@ -49,13 +49,13 @@ je wilt laten zien in een profielenlijst. Deze optie stelt je in staat om zelf
 te bepalen wat de belangrijke velden zijn.
 
 
-## Gesorteerde velden
+### Gesorteerde velden
 
 Met deze optie kun je invoeren welk veld wordt gesorteerd. Deze 
 optie kan slechts bij één veld tegelijkertijd worden geactiveerd.
 
 
-## Geïndexeerde velden
+### Geïndexeerde velden
 
 Het indexeren van velden kan het zoeken van profielen en het maken van 
 selecties versnellen. Het is dus verstandig om velden die je vaak opzoekt 

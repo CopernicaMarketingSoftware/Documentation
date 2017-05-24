@@ -4,7 +4,7 @@
     * [Database inrichten](./quick-database-guide.md)
     * [Je eerste mailing](./quick-mailing-guide.md)
 * [Accounts en gebruikers](./accounts-and-users.md)
-    * [Licensie en facturering](./license-and-billing)
+    * [Licentie en facturering](./license-and-billing)
 * [Databasebeheer](./database-introduction.md)
     * [Velden en collecties](./database-fields-and-collections.md)
     * [Restricties](./database-restrictions-and-capabilities.md)
