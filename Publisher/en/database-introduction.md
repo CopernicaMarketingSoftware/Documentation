@@ -41,4 +41,3 @@ The following articles will help you build and maintain a database.
 * [Configuring a database](./quick-database-guide)
 * [Exporting a database](./database-export)
 * [Managing databases with the REST API](./rest-api)
-
