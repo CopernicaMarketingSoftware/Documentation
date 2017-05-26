@@ -40,7 +40,7 @@ error-log:              /var/log/mailerq/instance1/errors.log
 send-log-directory:     /var/log/mailerq/instance1/
 download-log-directory: /var/log/mailerq/instance1/
 received-log-directory: /var/log/mailerq/instance1/
-``
+```
  
 This is an example if you use different prefixes:
  
