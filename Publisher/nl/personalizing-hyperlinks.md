@@ -27,3 +27,7 @@ Het is dus ook mogelijk om op deze manier een link te personaliseren:
     {/foreach}
 
 Let op! dit kan alleen met [het nieuwe link tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem).
+
+## Meer informatie
+
+* [Webformulieren](./webforms)

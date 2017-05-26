@@ -1,14 +1,18 @@
-Stel, je hebt een situatie waarbij je wilt dat iemand een webformulier
-maar 3 keer mag invullen. Dit kan. Hieronder de uitleg in steno.
+# Webformulieren: Limiet stellen op aantal keer invullen.
 
-Let op, het aantal wordt per profiel bijgehouden. Er wordt dus niet
+Stel, je hebt een situatie waarbij je wilt dat iemand een webformulier
+maar 3 keer mag invullen. Je kunt dit dan bereiken door middel van 
+[Smarty personalizatie](./personalization). In dit artikel wordt 
+uitgelegd hoe.
+
+Let op: Het aantal wordt per profiel bijgehouden. Er wordt dus niet
 bijgehouden hoe vaak het webformulier in totaal (door alle bezoekers) is
 ingevuld.
 
 ## Database
 
 Je hebt nodig: een veld in de database (noem dit veld 'huidigaantal';
-een numeriek veld met standaardwaarde = 1).
+een numeriek veld met standaardwaarde = 0).
 
 ### Webformulier
 
@@ -25,7 +29,7 @@ Maak nog een formulierveld, bijvoorbeeld e-mailadres. Maak dit
 een **sleutelveld**.
 
 Instelling webformulier: check sleutelveld, wijzig profiel, inloggen
-als profiel in database [database]
+als profiel in [database](./database-introduction).
 
 De waarde in het veld 'huidigaantal' wordt nu iedere keer wanneer het
 webformulier wordt verwerkt met 1 verhoogd.
@@ -36,3 +40,5 @@ Op de bedanktpagina van het webformulier kan je tot slot het volgende
 doen:
 
 `{if $huidigaantal > 3}Helaas, u heeft het formulier te vaak ingevuld{else}Probeer het nog een keer.{/if}`
+
+[Terug naar webformulieren](./webforms)
