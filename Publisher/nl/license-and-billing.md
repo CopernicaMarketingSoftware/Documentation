@@ -23,7 +23,7 @@ voor 100.000 emails maar er 100.001 wil versturen moet je dus eerst je
 balans verhogen. Als je aan het einde van de maand nog krediet hebt 
 wordt dit overgezet. 
 
-De kosten voor een mail zijn variabel. Hoe meer je verstuurd 
+De kosten voor een mail zijn variabel. Hoe meer je verstuurt 
 per maand, hoe meer korting je krijgt op toekomstige emails in dezelfde maand. 
 Het is ook mogelijk om emailbundels te kopen als je van tevoren weet hoeveel 
 berichten je gaat versturen. Als je kiest voor een emailbundel wordt je 
