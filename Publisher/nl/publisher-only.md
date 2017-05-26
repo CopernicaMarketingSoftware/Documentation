@@ -7,6 +7,7 @@ beschikbaar in Marketing Suite. Je kunt echter binnen de Marketing Suite
 nog wisselen naar de Publisher en zo toch deze functies gebruiken. De volgende 
 functies zijn alleen beschikbaar in Publisher op het moment:
 
+* [Mobiele mailings](./compose-sms-message)
 * [Enquêtes](./surveys)
 * [Websites](./websites)
 * [Webformulieren](./web-forms)
