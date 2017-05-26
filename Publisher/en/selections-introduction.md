@@ -69,7 +69,7 @@ properties in order to belong to a selection. These properties are set
 in Copernica using *selection rules* and *selection conditions*. There 
 are many options for filtering, from a birthday to clicks in mailings 
 during a certain period of time. It's quite a bit of information, so 
-e've created a separate article explaining it all. You'll find it 
+we've created a separate article explaining it all. You'll find it 
 [here](selections-conditions).
 
 ## More information

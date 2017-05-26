@@ -17,7 +17,7 @@ aanmaken onder het **Stijl** kopje in de software en deze een naam geven
 om in de tag te gebruiken. (Zie [stylesheets](./stylesheets))
 
 Een survey kan om technische redenen alleen op een webpagina gebruikt worden.
-Zie voor meer informatie over het [aanmaken van een webpagina](./create-and-publish-your-own-web-pages.md)
+Zie voor meer informatie over het [aanmaken van een webpagina](./websites)
 de documentatie hierover. Als je een link in een email plaatst kun je 
 meteen de gegevens uit de enquête opslaan. (Zie [linken naar enquête](./surveys-register-participants))
 

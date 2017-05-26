@@ -125,7 +125,6 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 * In enquêtes
 * In content feeds
 
-
 ## Verder lezen
 
 * [Overzicht van variabelen](./personalization-variables.md)

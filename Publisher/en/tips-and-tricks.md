@@ -12,6 +12,7 @@ more on the software and how to use it.
 * [Reducing HTML errors](./reducing-html-errors)
 * [Selections optimization](./selections-optimization)
 * [Prevent database corruptions](./prevent-database-corruption)
+* [Maintaining your database](./database-maintenance)
 
 ## Selection tutorials
 
