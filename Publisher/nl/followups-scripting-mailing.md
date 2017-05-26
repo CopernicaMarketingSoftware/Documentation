@@ -1,4 +1,4 @@
-# Followups: Mailing Class
+# Followups scripting: Mailing Class
 
 De **Mailing** Class kan worden gebruikt om informatie op te vragen over een mailing binnen het account. 
 De enige beschikbare instantie is momenteel de globale `mailing` variabele, en omdat deze mailing al geweest

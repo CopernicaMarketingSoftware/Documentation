@@ -1,4 +1,4 @@
-# Followups: Subprofile Class
+# Followups scripting: Subprofile Class
 
 De **Subprofile** Class kan worden gebruikt om informatie over een subprofiel op te vragen en aan te passen. 
 Een subprofiel kan op meerdere manieren worden verkregen. Ten eerste, als de huidige bestemming een collectie 

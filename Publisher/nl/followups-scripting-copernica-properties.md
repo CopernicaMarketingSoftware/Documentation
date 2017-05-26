@@ -1,4 +1,4 @@
-# Followups: Copernica eigenschappen
+# Followups scripting: Copernica eigenschappen
 
 Het **properties** in het Copernica object bevat verschillende functies om 
 informatie over het account op te vragen. Deze vind je in de lijst hieronder.

@@ -1,4 +1,4 @@
-# Followups: Message Class
+# Followups scripting: Message Class
 
 De **Message** Class geeft toegang tot een gepersonalizeerde snaphot van een
 [template](./followups-scripting-template). Hiermee kan gepersonaliseerde informatie worden

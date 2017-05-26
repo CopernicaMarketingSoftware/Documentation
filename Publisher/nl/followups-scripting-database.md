@@ -1,4 +1,4 @@
-# Followups: Database Class
+# Followups scripting: Database Class
 
 Een database gelinkt aan jouw account kan worden opgevraagd en gebruikt in data-scripts binnen het account.
 Het is met dit object mogelijk om informatie binnen de database aan te passen, om de database te 
