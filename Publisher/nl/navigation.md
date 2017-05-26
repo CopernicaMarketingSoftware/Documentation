@@ -41,6 +41,6 @@
 * [Publisher exclusief](./publisher-only)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
-    * [Webformulieren](./web-forms)
+    * [Webformulieren](./webforms)
     * [CSS en XSLT](./css-and-xslt)
     * [RSS en ATOM feeds](./rss-and-atom-feeds)

@@ -1,2 +1,0 @@
-# DMARC Analyzer
-
