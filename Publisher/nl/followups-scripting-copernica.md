@@ -1,4 +1,4 @@
-# Followups: Copernica Class
+# Followups scripting: Copernica Class
 
 De **copernica** class is gelinkt aan het account die je hebt geregistreerd bij Copernica. De globale `copernica`
 variabele is de enige instantie van deze class. Deze is beschikbaar in het script en geeft 

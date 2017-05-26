@@ -1,4 +1,4 @@
-# Followups: Template Class
+# Followups scripting: Template Class
 
 De **Template** Class kan worden gebruikt om informatie van een template op te vragen en aan te passen. 
 Er is in ieder script een globale `template` variabele aanwezig, met een instantie van het template 

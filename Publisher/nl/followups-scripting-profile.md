@@ -1,4 +1,4 @@
-# Followups: Profile Class
+# Followups scripting: Profile Class
 
 De **Profile** Class wordt gebruikt om gegevens van een profiel aan te passen en op
 te vragen. Een profiel kan op meerdere manieren worden verkregen. Ten eerste is er altijd 

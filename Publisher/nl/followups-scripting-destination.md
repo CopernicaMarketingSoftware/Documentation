@@ -1,4 +1,4 @@
-# Followups: destination/bestemming variabele
+# Followups scripting: destination/bestemming variabele
 
 De globale **destination** variabele geeft toegang tot de huidige email ontvanger. 
 Dit is een alias voor een [profiel](./followups-scripting-profile.md) of een

@@ -1,4 +1,4 @@
-# Followups: Data Class
+# Followups scripting: Data Class
 
 De Data Class kan worden gebruikt om scalars voor je scripts op te slaan, waarbij de data in dit object verder niet door ons wordt gebruikt.
 Een instantie van de **data** class is aanwezig op al onze objecten binnen het [data-script](./followups-scripting), binnen het gehele
