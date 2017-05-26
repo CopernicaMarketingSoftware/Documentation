@@ -1,9 +1,9 @@
-# Followups: subprofiel klasse
+# Followups: Subprofile Class
 
-De **subprofiel** klasse kan worden gebruikt om informatie over een subprofiel op te vragen en aan te passen. 
+De **Subprofile** Class kan worden gebruikt om informatie over een subprofiel op te vragen en aan te passen. 
 Een subprofiel kan op meerdere manieren worden verkregen. Ten eerste, als de huidige bestemming een collectie 
 of mini-selectie was, dan is er een globale `subprofile` variabele aanwezig met een instantie van het subprofiel
-waar het naar verzonden is. Daarnaast kan het nog per ID worden opgevraagd via de [copernica klasse](./followups-scripting-copernica).
+waar het naar verzonden is. Daarnaast kan het nog per ID worden opgevraagd via de [Copernica Class](./followups-scripting-copernica).
 Als laatste kan het ook nog uit een [collectie](./followups-scripting-collection) worden verkregen.
 
 ## Beschikbare eigenschappen
@@ -35,7 +35,7 @@ het subprofiel op deze manier opvragen.
 ## Meer informatie
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Database klasse](./followups-scripting-database)
-* [Profiel klasse](./followups-scripting-profile)
+* [Database Class](./followups-scripting-database)
+* [Profile Class](./followups-scripting-profile)
 * [Destination variabele](./followups-scripting-destination)
 

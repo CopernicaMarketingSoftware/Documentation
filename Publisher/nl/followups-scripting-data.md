@@ -1,7 +1,7 @@
-# Followups: **data** klasse
+# Followups: Data Class
 
-De **data** klasse kan worden gebruikt om scalars voor je scripts op te slaan, waarbij de data in dit object verder niet door ons wordt gebruikt.
-Een instantie van de **data** klasse is aanwezig op al onze objecten binnen het [data-script](./followups-scripting), binnen het gehele
+De Data Class kan worden gebruikt om scalars voor je scripts op te slaan, waarbij de data in dit object verder niet door ons wordt gebruikt.
+Een instantie van de **data** class is aanwezig op al onze objecten binnen het [data-script](./followups-scripting), binnen het gehele
 account. Iedere unieke instantie heeft dan ook zijn eigen **data** instantie. Zo heeft bijvoorbeeld ieder uniek profiel zijn eigen
 **data** instantie, maar twee instanties van *hetzelfde* profiel delen ook *dezelfde* data instantie.
 
@@ -40,12 +40,12 @@ mensen niet meerdere keren op de link hebben geklikt.
 ## Meer informatie
 
 * [Het data-script](./followups-scripting)
-* [Copernica klasse](./followups-scripting-copernica)
-* [Database klasse](./followups-scripting-database)
-* [Collectie klasse](./followups-scripting-collection)
-* [Profiel klasse](./followups-scripting-profile)
-* [Subprofiel klasse](./followups-scripting-subprofile)
-* [Bestemming klasse](./followups-scripting-destination)
-* [Mailing klasse](./followups-scripting-mailing)
-* [Template klasse](./followups-scripting-template)
-* [Message klasse](./followups-scripting-message)
+* [Copernica Class](./followups-scripting-copernica)
+* [Database Class](./followups-scripting-database)
+* [Collectie Class](./followups-scripting-collection)
+* [Profiel Class](./followups-scripting-profile)
+* [Subprofiel Class](./followups-scripting-subprofile)
+* [Bestemming Class](./followups-scripting-destination)
+* [Mailing Class](./followups-scripting-mailing)
+* [Template Class](./followups-scripting-template)
+* [Message Class](./followups-scripting-message)
