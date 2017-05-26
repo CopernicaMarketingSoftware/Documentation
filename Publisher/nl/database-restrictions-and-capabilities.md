@@ -33,7 +33,7 @@ kunnen alleen profielen worden opgeslagen die aan alle regels voldoen.
 Bij een "OR" regel hoeft het profiel maar aan één van de 
 voorwaarden te voldoen om toegelaten te worden.
 
-### Reguliere expressies
+## Reguliere expressies
 
 Reguliere expressies (vaak afgekort naar *regex*) zijn een krachtig middel 
 om restricties in te stellen door het herkennen van patronen. Bijvoorbeeld: 
@@ -43,7 +43,9 @@ bestaande uit 10 karakters" of "elke zin met twee kommas en een hoofdletter Q".
 De volgende regex laat alleen postcodes toe die bestaan uit 4 getallen,
 gevolgd door twee letters (0000AA).
 
-`'~\A[1-9]\d{3} ?[a-zA-Z]{2}\z~'`
+```javascript
+var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
+```
 
 Met deze regex als databaserestrictie voorkom je dat foutieve postcodes
 kunnen worden ingevoerd. Op het internet zijn goede tutorials en
@@ -54,4 +56,4 @@ uitgebreide libraries beschikbaar om met reguliere expressies te leren werken.
 
 Let op: reguliere expressies beginnen en eindigen altijd met een slash (/)
 
-[Terug naar database beheer](./database-introduction).
+-   [Terug naar database beheer](./database-introduction)
