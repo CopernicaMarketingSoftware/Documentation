@@ -1,10 +1,10 @@
-# Followups: profiel klasse
+# Followups scripting: Profile Class
 
-De **profiel** klasse wordt gebruikt om gegevens van een profiel aan te passen en op
+De **Profile** Class wordt gebruikt om gegevens van een profiel aan te passen en op
 te vragen. Een profiel kan op meerdere manieren worden verkregen. Ten eerste is er altijd 
-een globale `profile` variabele, welke een instantie van de **profiel** klasse bevat. Dit is altijd 
+een globale `profile` variabele, welke een instantie van de **profiel** class bevat. Dit is altijd 
 het profiel waar de mail naar is verzonden. Daarnaast kan een profiel worden opgevraagd via het 
-[copernica](./followups-scripting-copernica) object, met een ID. Als laatste kan een profiel worden verkregen
+[Copernica](./followups-scripting-copernica) object, met een ID. Als laatste kan een profiel worden verkregen
 uit een [database](./followups-scripting-database).
 
 ## Beschikbare eigenschappen
@@ -37,6 +37,6 @@ het profiel op deze manier opvragen.
 
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Database klasse](./followups-scripting-database)
-* [Subprofiel klasse](./followups-scripting-subprofile)
+* [Database Class](./followups-scripting-database)
+* [Subprofile Class](./followups-scripting-subprofile)
 * [Destination variabele](./followups-scripting-destination)

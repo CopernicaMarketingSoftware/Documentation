@@ -39,6 +39,7 @@
     * [Verlaag je spam score](./some-tips-to-lower-your-email-spam-score)
     * [Verminder HTML fouten](./reducing-html-errors)
 * [Publisher exclusief](./publisher-only)
+    * [SMS mailing](./compose-sms-message)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
     * [Webformulieren](./webforms)
