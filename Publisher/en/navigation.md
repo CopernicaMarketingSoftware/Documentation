@@ -42,6 +42,6 @@
     * [Sender reputation](./sender-reputation)
     * [Surveys](./surveys)
     * [Websites](./websites)
-    * [Web forms](./web-forms)
+    * [Web forms](./webforms)
     * [CSS and XSLT](./css-and-xslt)
     * [RSS and ATOM feeds](./rss-and-atom-feeds)
