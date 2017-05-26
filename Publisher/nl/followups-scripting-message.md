@@ -1,10 +1,10 @@
-# Followups: message klasse
+# Followups: Message Class
 
-De **message** klasse geeft toegang tot een gepersonalizeerde snaphot van een
+De **Message** Class geeft toegang tot een gepersonalizeerde snaphot van een
 [template](./followups-scripting-template). Hiermee kan gepersonaliseerde informatie worden
 opgevraagd, zoals de broncode en het onderwerp van de message zoals deze verzonden is. Omdat dit
 een snapshot is, maakt het niet uit als ondertussen de template compleet veranderd is of andere
-eigenschappen zijn aangepast, deze zijn binnen de message klasse nog hetzelfde als het moment
+eigenschappen zijn aangepast, deze zijn binnen de message class nog hetzelfde als het moment
 dat de email verzonden is.
 
 De enige instantie van de **message** klasse is momenteel het globale `message` object, wat
@@ -27,4 +27,4 @@ Met het volgende voorbeeld in javascript kun je de broncode van een gepersonaliz
 
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Template klasse](./followups-scripting-template)
+* [Template Class](./followups-scripting-template)

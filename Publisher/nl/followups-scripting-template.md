@@ -1,11 +1,10 @@
-# Followups: template variabele
+# Followups: Template Class
 
-De **template** class kan worden gebruikt om informatie van een template op te vragen en aan te passen. 
+De **Template** Class kan worden gebruikt om informatie van een template op te vragen en aan te passen. 
 Er is in ieder script een globale `template` variabele aanwezig, met een instantie van het template 
 waarmee de email is gemaakt. Dit is ongepersonaliseerd, in tegenstelling tot de [message](./followups-scripting-message).
 
 Zie daarnaast de documentatie van de [Copernica class](./followups-scripting-message) om een template op te vragen met een id.
-
 
 ## Beschikbare eigenschappen
 
@@ -14,7 +13,6 @@ Zie daarnaast de documentatie van de [Copernica class](./followups-scripting-mes
 * **subject**: Onderwerp van de templates (Read, write)
 * **data**: Zie documentatie over [het data object](./followups-scripting-data)
 
-
 ## Beschikbare methoden
 
 `send(*target*): direct verzenden van een email naar een target (database, collectie, profiel of subprofiel)`
@@ -22,7 +20,6 @@ Zie daarnaast de documentatie van de [Copernica class](./followups-scripting-mes
 De send methode kan worden gebruikt om een template naar een *target* te versturen. 
 Het target kan een gewone (enkele) bestemming zijn, zoals een profiel of een subprofiel, 
 maar ook met meerdere bestemmingen zoals een gehele database of collectie. 
-
 
 ## Voorbeeld
 
@@ -42,8 +39,8 @@ var templateID = 1520;
 copernica.template(templateID).send(destination)
 ```
 
-
 ## Meer informatie
+
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Message class](./followups-scripting-message)
+* [Message Class](./followups-scripting-message)

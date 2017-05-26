@@ -13,7 +13,7 @@ under **Style** in the marketing software and use the name in the XSLT option.
 (See [stylesheets](./stylesheets))
 
 A survey can only be published on a webpage. See the documentation 
-on [how to create a webpage](./create-and-publish-your-own-web-pages.md).
+on [how to create a webpage](./websites).
 It is not possible to publish a survey in an email. When you link to a survey 
 and it is completed, however, the given answers will automatically be linked 
 to the profile the email was sent to.

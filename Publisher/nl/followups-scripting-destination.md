@@ -14,5 +14,5 @@ de mailing verstuurd is naar een collectie of mini-selectie.
 
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Profiel klasse](./followups-scripting-profile)
-* [Subprofiel klasse](./followups-scripting-subprofile)
+* [Profile Class](./followups-scripting-profile)
+* [Subprofile Class](./followups-scripting-subprofile)

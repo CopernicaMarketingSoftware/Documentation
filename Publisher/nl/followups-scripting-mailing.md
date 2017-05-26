@@ -1,6 +1,6 @@
-# Followups: mailing klasse
+# Followups: Mailing Class
 
-De **mailing** klasse kan worden gebruikt om informatie op te vragen over een mailing binnen het account. 
+De **Mailing** Class kan worden gebruikt om informatie op te vragen over een mailing binnen het account. 
 De enige beschikbare instantie is momenteel de globale `mailing` variabele, en omdat deze mailing al geweest
 is zijn de eigenschappen alleen leesbaar. 
 
