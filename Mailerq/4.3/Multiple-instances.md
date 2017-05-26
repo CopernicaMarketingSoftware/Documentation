@@ -20,9 +20,9 @@ rabbitmq-outbox:	outbox1
 There can only be one process listening on a given IP/port combination. MailerQ uses the listening ports for the web interface and the SMTP server. You can choose to use different IPs, ports or IP/port combinations. The simplest setup is to use different IPs.
  
 ```
-smtp-ip:	10.0.0.1
-www-ip:	10.0.0.1
-www-host:	mta001.example.com
+smtp-ip: 10.0.0.1
+www-ip: 10.0.0.1
+www-host: mta001.example.com
 ```
  
 ### Log files location
@@ -45,8 +45,8 @@ received-log-directory: /var/log/mailerq/instance1/
 This is an example if you use different prefixes:
  
 ```
-error-log:		/var/log/mailerq/instance1-errors.log
-send-log-prefix:	instance1-attemtps.log
+error-log:           /var/log/mailerq/instance1-errors.log
+send-log-prefix:     instance1-attemtps.log
 download-log-prefix:	instance1-downloads.log
 received-log-prefix:	instance1-received.log
 ```
@@ -79,32 +79,32 @@ An example of two configuration files for different instances:
  
 /etc/mailerq/instance1.txt:
 ```
-rabbitmq-outbox:	outbox1
-rabbitmq-inbox:	outbox1
-smtp-ip:		10.0.0.1
-www-ip:		10.0.0.1
-www-host:		mta001.example.com
-error-log:		/var/log/mailerq/instance1-errors.log
-send-log-prefix:	instance1-attempts.log
-download-log-prefix:	instance1-downloads.log
-received-log-prefix:	instance1-received.log
-lock:			/tmp/mailerq-instance1.pid
-server-id:		1
+rabbitmq-outbox: outbox1
+rabbitmq-inbox: outbox1
+smtp-ip: 10.0.0.1
+www-ip: 10.0.0.1
+www-host: mta001.example.com
+error-log: /var/log/mailerq/instance1-errors.log
+send-log-prefix: instance1-attempts.log
+download-log-prefix: instance1-downloads.log
+received-log-prefix: instance1-received.log
+lock: /tmp/mailerq-instance1.pid
+server-id: 1
 ```
  
 /etc/mailerq/instance2.txt:
 ```
-rabbitmq-outbox:	outbox2
-rabbitmq-inbox:	outbox2
-smtp-ip:		10.0.0.2
-www-ip:		10.0.0.2
-www-host:		mta002.example.com
-error-log:		/var/log/mailerq/instance2-errors.log
-send-log-prefix:	instance2-attempts.log
-download-log-prefix:	instance2-downloads.log
-received-log-prefix:	instance2-received.log
-lock:			/tmp/mailerq-instance2.pid
-server-id:		2
+rabbitmq-outbox: outbox2
+rabbitmq-inbox: outbox2
+smtp-ip: 10.0.0.2
+www-ip: 10.0.0.2
+www-host: mta002.example.com
+error-log: /var/log/mailerq/instance2-errors.log
+send-log-prefix: instance2-attempts.log
+download-log-prefix: instance2-downloads.log
+received-log-prefix: instance2-received.log
+lock: /tmp/mailerq-instance2.pid
+server-id: 2
 ```
  
 ## 3. Clustering
