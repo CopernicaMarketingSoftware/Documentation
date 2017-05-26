@@ -78,8 +78,8 @@ wordt dan alleen bijgewerkt wanneer het aan alle sleutelvelden voldoet.
 Bijvoorbeeld als zowel iemands e-mailadres als zijn achternaam
 overeenkomen met een bestaand profiel.
 
-Dit geldt voor formulieren waarbij de instelling '[controleer op
-sleutelvelden](./the-content-web-form-behaviour-wizard.md)'
+Dit geldt voor formulieren waarbij de instelling 'controleer op
+sleutelvelden'
 geactiveerd is. Bij inlogformulieren moeten inlognaam en wachtwoord
 altijd als sleutelvelden worden aangemerkt.
 
@@ -187,5 +187,4 @@ Werking formulier wijzigen
 
 Nadat je de webformuliervelden hebt toegevoegd, is het formulier nog
 niet functioneel. Om te bepalen wat met de ingevoerde gegevens moet
-gebeuren, stel je in bij de
-[formulierinstellingen](./the-content-web-form-behaviour-wizard.md).
+gebeuren, stel je in bij de formulierinstellingen.
