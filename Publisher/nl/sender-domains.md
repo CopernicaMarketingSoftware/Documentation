@@ -1,4 +1,4 @@
-# Sender-domains
+# Sender domains
 
 Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
 *faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
