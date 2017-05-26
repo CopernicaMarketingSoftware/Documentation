@@ -1,4 +1,4 @@
-# Rest events
+# REST API: Rest events
 
 Wij loggen alles wat er met jouw mailing gebeurt. Zo houden we
 bijvoorbeeld events bij met betrekking tot afleveringen, bounces, clicks, opens, etc..

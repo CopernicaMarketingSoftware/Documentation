@@ -1,11 +1,12 @@
-# Followups: database klasse
+# Followups scripting: Database Class
 
 Een database gelinkt aan jouw account kan worden opgevraagd en gebruikt in data-scripts binnen het account.
 Het is met dit object mogelijk om informatie binnen de database aan te passen, om de database te 
 archiveren en om de profielen van de database te verkrijgen. 
-Zie [de profiel klasse](./followups-scripting-profile) om een database instantie van een profiel te verkrijgen, en zie de documentatie over \
-[de copernica klasse](./followups-scripting-copernica) voor het verkrijgen van een willekeurige database instantie op 
-basis van ID of naam.
+Zie de [Profile Class](./followups-scripting-profile) om een database 
+instantie van een profiel te verkrijgen, en zie de documentatie over de 
+[Copernica Class](./followups-scripting-copernica) voor het verkrijgen 
+van een willekeurige database instantie op basis van ID of naam.
 
 ## Beschikbare eigenschappen
 
@@ -29,6 +30,6 @@ opvragen.
 ## Meer informatie
 
 * [Het data-script](./followups-scripting)
-* [Data klasse](./followups-scripting-data)
-* [Collectie klasse](./followups-scripting-collection)
-* [Profiel klasse](./followups-scripting-data)
+* [Data Class](./followups-scripting-data)
+* [Collection Class](./followups-scripting-collection)
+* [Profile Class](./followups-scripting-data)

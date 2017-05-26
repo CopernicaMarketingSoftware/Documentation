@@ -1,4 +1,4 @@
-# Followups: Copernica eigenschappen
+# Followups scripting: Copernica eigenschappen
 
 Het **properties** in het Copernica object bevat verschillende functies om 
 informatie over het account op te vragen. Deze vind je in de lijst hieronder.
@@ -135,6 +135,7 @@ Door "null" als filter mee te geven krijg je alle bestaande objecten voor het ac
 * **setTracking($forced, $value)**: stel force in op tracking parameter
 
 ## Meer informatie
+
 [Het data-script](./followups-scripting)
-[De copernica klasse](./followups-scripting-copernica)
+[De Copernica Class](./followups-scripting-copernica)
 

@@ -1,6 +1,5 @@
 # Database management
 
-
 Copernica works with databases that are fully configurable. You can structure 
 the database exactly how you wish and [importing](./database-import) and 
 [exporting](database-export) data has never been easier.
@@ -41,3 +40,4 @@ The following articles will help you build and maintain a database.
 * [Configuring a database](./quick-database-guide)
 * [Exporting a database](./database-export)
 * [Managing databases with the REST API](./rest-api)
+* [Database maintenance](./database-maintenance)

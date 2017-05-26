@@ -1,7 +1,7 @@
-# Followups: copernica klasse
+# Followups scripting: Copernica Class
 
-De **copernica** klasse is gelinkt aan het account die je hebt geregistreerd bij Copernica. De globale `copernica`
-variabele is de enige instantie van deze klasse. Deze is beschikbaar in het script en geeft 
+De **copernica** class is gelinkt aan het account die je hebt geregistreerd bij Copernica. De globale `copernica`
+variabele is de enige instantie van deze class. Deze is beschikbaar in het script en geeft 
 toegang tot de data die bij jouw account hoort. Deze informatie is beschikbaar binnen alle scripts gemaakt met deze account,
 dus aanpassing van het globale `copernica.data` object zijn in alle scripts over het hele account zichtbaar.
 
@@ -25,8 +25,9 @@ Met het volgende voorbeeld in javascript kun je een database van een account opv
     var myDatabase = copernica.database(databaseName);
 
 ## Meer informatie
+
 * [Het data-script](./followups-scripting)
 * [Het data object](./followups-scripting-data)
-* [Profiel klasse](./followups-scripting-profile)
-* [Subprofiel klasse](./followups-scripting-subprofile)
-* [Template klasse](./followups-scripting-template)
+* [Profile Class](./followups-scripting-profile)
+* [Subprofile Class](./followups-scripting-subprofile)
+* [Template Class](./followups-scripting-template)
