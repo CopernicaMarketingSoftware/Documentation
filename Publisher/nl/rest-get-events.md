@@ -1,10 +1,9 @@
 # Rest events
 
-Wij loggen alles wat er met jouw mailing gebeurt. Zo houden we
-bijvoorbeeld events bij met betrekking tot afleveringen, bounces, clicks, opens, etc..
-Deze events schrijven we weg naar log files en en deze log files zijn op te vragen
-via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
-naar een specifieke events. De flexibele API geeft je de mogelijkheid om deze events 
+Copernica houdt alle processen rondom je mailing in de gaten. De events die worden gelogd zijn:
+afleveringen, bounces, clicks, opens, etc. Deze events komen terecht in de log files. Vervolgens
+kun je deze log files opvragen via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
+naar specifieke events. De flexibele API geeft je de mogelijkheid om deze events 
 op te vragen. Je doet dit middels een van de volgende URLs:
 
 ```text
@@ -32,11 +31,10 @@ variabelen worden toegevoegd:
 - **tags**:  optionele tags waarop gefilterd kan worden.
 
 
-### Start en end parameters
+## Start en end parameters
 
-Als er geen specifieke start en eind datum worden gespecificeerd wordt de 
-standaard periode bij het event getoond. Deze periode is afhankelijk van het
-type event.
+De standaard periode van een event wordt getoond als er geen specifieke start- en einddatum wordt 
+gespecificeerd. Deze periode is afhankelijk van het type event.
 
 Bij het opgeven van een startdatum (zonder einddatum), wordt vanaf de startdatum een maand 
 weergegeven.
@@ -53,7 +51,7 @@ Houd er ook rekening mee dat de beperking van de periode tot een maand gewijzigd
 de performance dit vereist.
 
 
-### Tags
+## Tags
 
 Het is ook mogelijk om een tag mee te geven waarop de events gefilterd moeten
 worden. Het kan natuurlijk voorkomen dat je op meerdere tags tegelijkertijd
@@ -71,23 +69,21 @@ Na het verzoek ontvang je de volgende JSON:
         "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
-            "fieldname2" : "data2",
-            ...
+            "fieldname2" : "data2"
         }
     },
     {
         "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
-            "fieldname2" : "data2",
-            ...
+            "fieldname2" : "data2"
         }
-    },
-    ...
+    }
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
+
 
 ## Events bij een bericht
 
@@ -97,7 +93,8 @@ door een request te doen naar:
 ```text
 https://api.copernica.com/v1/message/$id/events?access_token=xxxx
 ```
-waar `$id` de id van het bericht is. Je krijgt vervolgens de informatie over dit bericht vanaf
+
+Je krijgt vervolgens de informatie over dit bericht vanaf
 het moment van verzenden tot één maand na verzenden. Als je deze informatie
 voor een met Publisher verstuurd bericht wilt hebben kun je een request te
 sturen naar:
@@ -106,7 +103,7 @@ sturen naar:
 https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
 ```
 
-Als je de gegevens voor een andere periode wilt opvragen kun je `start`
+Je kunt de gegevens over een andere periode opvragen door een `start`
 en/of `end` parameter meegeven.
 
 
@@ -118,12 +115,11 @@ te sturen naar:
 ```text
 https://api.copernica.com/v1/email/$email/events?access_token=xxxx
 ```
-waar `$email` het e-mailadres is waar je geïnteresseerd in bent. Je krijgt
-alle events die bij dit e-mailadres horen tot een maand geleden.
+Je krijgt alle events die bij dit e-mailadres horen tot een maand geleden.
 Als je de informatie voor een andere periode wilt kun je een `start` en/of
 `end` parameter meegeven.
 
-Als je wilt filteren op tags dan kun je de `tag` parameter gebruiken om deze 
+Je kunt de `tag` parameter gebruiken als je wilt filteren op tags.
 
 ## Events bij tags
 
@@ -132,8 +128,8 @@ Events bij een tag kun je opvragen door een request te sturen naar:
 ```text
 https://api.copernica.com/v1/tags/$tag1/events?access_token=xxxx
 ```
-waar `$tag1` de tag is waarin je bent geïnteresseerd. Je krijgt alle events
-die bij deze tag horen tot een maand geleden. 
+
+Je krijgt alle events die bij deze tag horen tot een maand geleden. 
 Je kunt ook op meerdere tags tegelijkertijd filteren door de tags te scheiden
 met puntkomma's:
 
@@ -201,10 +197,11 @@ Events bij een document kun je opvragen door een request te sturen naar:
 ```text
 https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
 ```
-waar `$id` de numeriek identifier van het document is. Je krijgt vervolgens
-de events tot een maand terug van dit document. Als je events voor een andere
-periode wilt hebben dan kun je een `start` en/of `end` parameter meegeven.
-Optioneel kun je ook filter op tags door een `tags` parameter mee te geven.
+
+Je krijgt vervolgens de events tot een maand terug van dit document. Als 
+je events voor een andere periode wilt hebben dan kun je een `start` 
+en/of `end` parameter meegeven. Optioneel kun je ook filter op tags 
+door een `tags` parameter mee te geven.
 
 
 ## Meer informatie
