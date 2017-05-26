@@ -47,3 +47,4 @@ database en het onderhouden ervan.
 * [Configureren van een database](./quick-database-guide)
 * [Exporteren van een database](./database-export)
 * [Databases beheren met de REST API](./rest-api)
+* [Tips voor het beheren van je database](./database-maintenance)

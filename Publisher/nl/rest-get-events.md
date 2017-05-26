@@ -1,4 +1,4 @@
-# Rest events
+# REST API: Rest events
 
 Copernica houdt alle processen rondom je mailing in de gaten. De events die worden gelogd zijn:
 afleveringen, bounces, clicks, opens, etc. Deze events komen terecht in de log files. Vervolgens

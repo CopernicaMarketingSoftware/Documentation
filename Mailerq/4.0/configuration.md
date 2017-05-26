@@ -9,6 +9,7 @@ The config file, and the documentation, has been split up in different
 sections. Please select the section that you're interested in.
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
+* [Multiple instances](Multiple-instances "Multiple MailerQ instances on a single server")
 * [Cluster settings](cluster "Cluster configuration")
 * [Database settings](database-access "Database access")
 * [Message store settings](message-store-options "Message Store options")
