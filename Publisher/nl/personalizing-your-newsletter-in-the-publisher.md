@@ -12,9 +12,9 @@ Een personalisatievariabele bestaat uit een dollarteken `$` en de naam van een v
 geplaatst tussen accolades. De volgende variabelen kun je bijvoorbeeld in een template
 of document gebruiken:
 
-* `{$naam}`
-* `{$email}`
-* `{$aanhef}`
+* `{$naam}`;
+* `{$email}`;
+* `{$aanhef}`.
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
 velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 
@@ -23,16 +23,17 @@ het geval is, dan kun je deze variabelen gewoon in je mailing
 gebruiken:
 
 ```text
-Geachte {$aanhef} {$naam},
+Beste {$aanhef} {$naam},
     
-U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email}.
+Je ontvangt deze e-mail omdat bent aangemeld 
+met het volgende e-mailadres: {$email}.
 ```
 
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
 in je database met de [in_selection](./personalization-function-in_selection) 
 en [in_miniselection](./personalization-function-in_miniselection) functies.
 
-Er zijn echter wel wat belangrijke dingen om op te letten als je werkt met 
+Echter, er zijn wel wat belangrijke dingen om op te letten als je werkt met 
 Smarty:
 
 * Houd het veilig en door de `escape` toe te passen op variabelen;
@@ -59,9 +60,10 @@ modifier halen om te zorgen dat eventueel schadelijke HTML code ongedaan wordt
 gemaakt:
 
 ```text
-Geachte {$aanhef|escape} {$naam|escape},
+Beste {$aanhef|escape} {$naam|escape},
     
-U ontvangt deze e-mail omdat u zich heeft aangemeld met uw adres {$email|escape}.
+Je ontvangt deze e-mail omdat bent aangemeld 
+met het volgende e-mailadres: {$email|escape}.
 ```
 
 Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
@@ -111,14 +113,14 @@ database waaraan je je mailing of andere uiting wilt richten.
 
 Vrijwel overal kan je Smarty personalisatie toepassen:
 
-* De onderwerpregel van een email
-* In email en webdocumenten
-* Andere e-mail headers (zoals afzenderadres, CC, BCC, X-Mailer)
-* Gepersonaliseerde website content
-* Webformulieren (standaardwaardes, labels, et cetera)
-* Hyperlinks and mailto: links
-* Opvolgacties
-* Et cetera...
+* De onderwerpregel van een e-mail;
+* In e-mail en webdocumenten;
+* Andere e-mail headers (zoals afzenderadres, CC, BCC, X-Mailer);
+* Gepersonaliseerde website content;
+* Webformulieren (standaardwaardes, labels, etc.);
+* Hyperlinks and mailto: links;
+* Opvolgacties;
+* Etc.
 
 Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 
