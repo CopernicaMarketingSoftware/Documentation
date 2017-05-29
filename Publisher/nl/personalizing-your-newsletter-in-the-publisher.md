@@ -125,8 +125,9 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 * In enquêtes
 * In content feeds
 
+
 ## Verder lezen
 
-* [Overzicht van variabelen](./personalization-variables.md)
-* [Overzicht van modifiers](./personalization-modifiers.md)
-* [Overzicht van functies](./personalization-functions.md)
+* [Overzicht van personalizatievariabelen](./personalization-variables.md)
+* [Overzicht van personalizatiemodifiers](./personalization-modifiers.md)
+* [Overzicht van personalizatiefuncties](./personalization-functions.md)

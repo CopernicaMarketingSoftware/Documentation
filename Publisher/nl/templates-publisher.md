@@ -1,4 +1,4 @@
-# Publisher templates
+# Werken met templates binnen de Publisher
 
 In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
