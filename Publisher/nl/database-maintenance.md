@@ -8,6 +8,7 @@ wil je zeker zijn dat de gegevens die je gebruikt kloppen. Mede om je
 en [e-mailreputatie](./sender-reputation "E-mailreputatie")
 hoog te houden.
 
+
 ## Onderhoud
 
 1.  Bewaar alle relatiegegevens centraal in één bestand of programma. Zo
