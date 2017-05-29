@@ -9,7 +9,7 @@
     * [Let SMTPeter create MIME data](rest-send-json)
     * [Sending based on templates](rest-send-templates)    
     * [Multiple recipients](rest-send-multiple-recipients)
-    * [Personalization of emails](rest-send-personalize)
+    * [Personalize emails](rest-send-personalize)
     * [Advanced send options](rest-send-advanced)
     * [API response](rest-api-response)
 * [Send with SMTP API](smtp-api)

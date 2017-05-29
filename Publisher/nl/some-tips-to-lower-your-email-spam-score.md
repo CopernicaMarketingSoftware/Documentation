@@ -1,4 +1,4 @@
-# Je spam score verlagen
+# Spamscore verlagen
 
 Je spam score wordt bepaald door een grote hoeveelheid checks die kijken 
 naar je DNS en de inhoud van je document. De meeste checks zijn gebaseerd 
@@ -19,6 +19,7 @@ Als je spam score boven de 3 ligt raden we je sterk aan de mail niet te
 versturen. Dit zal namelijk effect hebben op de betrouwbaarheid van je 
 zender domein. Als je score hoger is dan 5 mag het bericht niet verstuurd 
 worden met Copernica marketing software.
+
 
 ## Snelle tips voor een betere score
 
@@ -50,7 +51,7 @@ dat de link niet hetzelfde is als de URL waar de gebruiker heen denkt te
 gaan en verhogen daardoor je spam score. Je kunt beter de URL vervangen 
 door een beschrijving van de link, zoals hier:
 
-`<a  href="http://www.google.com">Klik hier voor een goede zoekmachine!</a>`
+`<a href="http://www.google.com">Klik hier voor een goede zoekmachine!</a>`
 
 **Gebruik een betrouwbaar "from" adres**
 
@@ -63,12 +64,14 @@ door een beschrijving van de link, zoals hier:
     maar het staat ook onprofessioneel om volledige zinnen in je email 
     in hoofdletters te schrijven.
 
+
 **Gebruik een geschikt onderwerp**
 
 -   Gebruik geen geld (euro/dollar/yen) symbolen in je onderwerp.
 -   Praat niet over drugs, gewicht verliezen of het vergroten van lichaamsdelen in 
     je onderwerp.
 -   Maak geen valse beloftes!
+
 
 **Hou je HTML netjes**
 
@@ -83,14 +86,15 @@ door een beschrijving van de link, zoals hier:
     dit natuurlijk wel. Meer informatie hierover vindt je in het [artikel over personalizatie](./personalization)
 -   Verwijder de HTML code die je niet gebruikt.
 
+
 **Afbeeldingen**
 
 -   Gebruik korte namen voor je afbeeldingen. 1.jpg is beter dan header.jpg.
 -   Gebruik niet te grote afbeeldingen en zorg dat de ratio tussen tekst en 
     afbeeldingen normaal is. Te veel afbeeldingen kunnen erop duiden dat je 
     iets probeert te verbergen, waardoor je spam score omhoog gaat.
-    
+
+
 ## Meer informatie
 
-* [Verbeter je deliverability](./deliverability)
-
+* [Verbeter deliverability](./deliverability)

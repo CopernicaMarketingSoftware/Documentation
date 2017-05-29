@@ -44,4 +44,4 @@ Marketing Suite nog niet of deels beschikbaar zijn. Voor de uitgebreide
 documentatie over het werken met templates, in de oude Publisher omgeving, 
 kun je hier terecht:
 
-* [Werken met templates binnen de Publisher](templates-and-documents)
+* [Werken met templates binnen de Publisher](templates-publisher)

@@ -11,8 +11,7 @@ op te delen en om te personalizeren. Copernica linkt ook veel informatie
 aan de profielen in je database, waaronder clicks, opens en errors. Om deze 
 reden is het ook belangrijk dat je een database netjes houdt en update, in plaats 
 van periodiek een geheel nieuwe database aan te maken. Deze data, waarmee 
-je vorige campagnes kan evalueren en toekomstige campagnes kan verbeteren, 
-raakt anders verloren.
+je campagnes kunt evalueren en verbeteren, raakt anders verloren.
 
 
 ## Meerdere dimensies

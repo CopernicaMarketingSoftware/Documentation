@@ -1,40 +1,37 @@
-# Zender reputatie
+# Sender Reputation
 
-Jouw zender reputatie bepaalt hoe betrouwbaar jij overkomt op het internet. 
-Het bepaalt ook hoe emailclienten jouw IP adres zien, wat invloed heeft 
-op de beslissing om jouw email wel of niet te accepteren. Er zijn verschillende 
-factoren die invloed hebben op je reputatie, waardoor het belangrijk is 
-dat je database schoon is en je mails goede en relevante inhoud hebben. 
-We zullen nu een aantal factoren bespreken en tips geven om je zender 
-reputatie te verbeteren.
+De *sender reputation* spreekt min of meer voor zich. Het is een indicator
+die aangeeft hoe sterk je reputatie is met betrekking tot je verstuurde
+e-mails. Het opstellen van een reputatie wordt voornamelijk bepaald aan
+de hand van *engagement* (opens, clicks etc.) en reputatie (spam complaints, 
+unknown users, spam traps etc.).
 
-## Factoren
 
-### Database
+## Factoren beïnvloeden
 
-Je database bevat (zeer waarschijnlijk) veel informatie. Je profieldata komt 
-vaak van gebruikers zelf, maar niet alle informatie is relevant en correct. 
-Als een email niet aankomt of als spam wordt gemarkeerd dan is dit slecht 
-voor je reputatie. Daarom is het [onderhoud van je database](./database-introduction) 
+Er zijn een aantal vooraf te treffen maatregelen waardoor je e-mails een 
+betere kans van slagen hebben. Hierdoor blijft je reputatie sterk.
+
+Allereerst kun je ervoor zorgen dat je database goed is ingericht. 
+Profieldata komt vaak van gebruikers zelf, maar niet alle 
+informatie is relevant en correct. Het is slecht voor je
+reputatie als een e-mail niet aankomt of als spam wordt 
+gemarkeerd. Daarom is het [onderhoud van je database](./database-introduction) 
 zeer belangrijk.
 
-Je ontvangers moeten zich altijd uit kunnen schrijven van je nieuwsbrief. 
-Door een uitschrijf link toe te voegen geef je ze de mogelijkheid geen 
-nieuwsbrieven meer te ontvangen, waardoor ze minder snel je mails als spam 
-zullen markeren. Je kunt ook [uitschrijfgedrag](database-unsubscribe-behavior) 
-zelf instellen. Wanneer je dit gedaan hebt kun je een [selectie voor je nieuwsbrief](./create-a-mailing-list) 
-aanmaken, zodat alleen geïnteresseerden je nieuwsbrief ontvangen.
+Ontvangers moeten zich altijd uit kunnen schrijven van een nieuwsbrief. 
+Een uitschrijflink maakt dit mogelijk. Door het aanbieden van een uitschrijflink
+komt een onderneming betrouwbaar over en worden je e-maisl minder snel als spam
+gemarkeerd. Je kunt ook [uitschrijfgedrag](database-unsubscribe-behavior) 
+zelf instellen.
 
-Bounce handling is ook erg belangrijk: Als een email van een ontvanger verkeerd 
-gespeld is of incorrect is komt deze niet aan, wat slecht voor je reputatie 
-is. [Automatisch bounces afhandelen](./automatically-process-bounces) zorgt 
-ervoor dat je database en reputatie schoon blijven.
+Bounce handling is belangrijk, omdat dit ook invloed heeft op je reputatie.
+Een incorrect of verkeerd gespeld e-mailadress zorgt ervoor dat een e-mail niet
+wordt afgeleverd. [Automatisch bounces afhandelen](./automatically-process-bounces) 
+zorgt ervoor dat je database en reputatie op het juiste niveau blijven.
 
-Om je ervan te verzekeren dat alle profielen in je database je emails willen 
-ontvangen en een valide emailadres hebben ingevuld is het handig om een 
-[dubbele opt-in](create-a-double-optin-for-new-subscribers) in te stellen.
 
-### Email inhoud
+## E-mailinhoud
 
 Elke email ontvangt een spam score, die je makkelijk zelf kunt beïnvloeden 
 om je reputatie schoon te houden. Je kunt onder andere een tekstversie toevoegen, 
@@ -46,11 +43,9 @@ Zorg er ook voor dat je email relevant is. Door [personalizatie](./personalizati
 te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. Als je lezers 
 geïnteresseerd zijn zullen ze minder snel je mail als spam markeren.
 
+
 ## Meer informatie
 
-* [Uitschrijf gedrag](database-unsubscribe-behavior) 
-* [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
-* [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
-* [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
-* [Spam score verlagen](./some-tips-to-lower-your-email-spam-score)
-* [Aflevering verbeteren](./deliverability)
+* [Uitschrijfgedrag](database-unsubscribe-behavior) 
+* [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
+* [Deliverability](./deliverability)
