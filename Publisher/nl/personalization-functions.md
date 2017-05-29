@@ -1,25 +1,29 @@
-# Functies en blokken
+# Personalizatie functies
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er
 hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende 
 functie kun je bijvoorbeeld gebruiken om een link naar de [webversie](./personalization-functions-linkemail) van een 
 e-mail te maken:
 
-    {webversion}
+```text
+{webversion}
+```
 
 Sommige functies bestaan uit een open- en een sluittag en hebben invloed op
 de tekst die door de tags wordt omsloten:
 
-    {mailonly}
-        Klik <a href="{webversion}">hier</a> voor de webversie
-    {/mailonly}
-    
+```text
+{mailonly}
+    Klik <a href="{webversion}">hier</a> voor de webversie
+{/mailonly}
+```    
 Het {mailonly} blok wordt gebruikt om een stuk code te markeren dat alleen 
 zichtbaar is in de mailversie van de e-mail. Als het bericht op een andere
 manier wordt weergegeven, als webversie bijvoorbeeld, dan wordt de code binnen
 het blok niet getoond. In bovenstaand voorbeeld maken we daar handig gebruik 
 van: de link naar de webversie hoef je natuurlijk alleen te tonen in de mail,
 en nooit in de webversie zelf.
+
 
 ## Beschikbare functies
 
@@ -33,7 +37,6 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{condition}](./personalization-functions-condition)                  | conditioneel blok op basis van JavaScript                                    |
 | [{counter}](./personalization-functions-counter)                      | teller                                                                       |
 | [{cycle}](./personalization-functions-cycle)                          | wisselen tussen array van waardes                                            |
-| [{feed}](./personalization-functions-feed)                            | inladen van een externe RSS feed                                             |
 | [{fetch}](./personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
 | [{foreach}](./personalization-functions-foreach)                      | itereren over een array                                                      |
 | [{if}](./personalization-functions-if)                                | conditionele blokken                                                         |
@@ -61,4 +64,4 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 ## Meer informatie
 
 * [Personalizatie](./personalization)
-* [Personalization modifiers](./personalization-modifiers)
+* [Overzicht van personalizatiemodifiers](./personalization-modifiers)
