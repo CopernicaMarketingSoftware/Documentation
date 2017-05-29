@@ -23,6 +23,6 @@ collectie opvragen.
     var someSubProfile = collection.subprofiles[subProfileID];
 
 ## Meer informatie
-* [Het data-script](./followups-scripting)
-* [Het data object](./followups-scripting-data)
-* [Database variabele](./followups-scripting-database)
+* [Data-script](./followups-scripting)
+* [Data data-script](./followups-scripting-data)
+* [Database data-script](./followups-scripting-database)

@@ -1,4 +1,4 @@
-# Het gebruik van data-scripts
+# Data-scripts
 
 Voordat we beginnen met het uitleggen van data-scripts, is het goed om te weten
 dat je data-scripts alleen kunt gebruiken met het **nieuwe link tracking system**.
