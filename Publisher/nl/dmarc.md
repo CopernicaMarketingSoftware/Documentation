@@ -169,7 +169,7 @@ de ontvanger aankomen.
 
 ## Meer informatie
 
-* [Afzenderdomeinen](./sender-domains)
+* [Sender domains](./sender-domains)
 * [DKIM](./dkim)
 * [SPF](./spf)
 * [MX](./mx)

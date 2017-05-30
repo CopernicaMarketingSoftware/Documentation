@@ -31,7 +31,7 @@ var myDatabase = copernica.database(databaseName);
 
 ## Meer informatie
 
-* [Data-script](./followups-scripting)
+* [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
 * [Profile data-script](./followups-scripting-profile)
 * [Subprofile data-script](./followups-scripting-subprofile)
