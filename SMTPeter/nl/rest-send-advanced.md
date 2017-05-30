@@ -14,6 +14,11 @@ de CSS code *inline* zet.
     "trackopens":   false,
     "trackbounces": true,
     "preventscam":  true
+    "tags": [
+        "tag1",
+        "tag2",
+        ...
+    ]
 }
 ```
 
@@ -130,6 +135,30 @@ te geven, genaamd: "hosted". De "default" waarde doet vanzelfsprekend niets.
     "images": "hosted"|"default"
 }
 ```
+
+## Tagging een mail
+
+Het is mogelijk om één of meerdere tags aan een mail te hangen. Deze tags
+kunnen vervolgens gebruikt worden om bijvoorbeeld clicks of opens te filteren.
+Stel, je stuurt een speciale zomeractie mail en je wilt weten hoeveel clicks
+en opens deze actie oplevert. Elke mail voor deze zomeractie tag je bijvoorbeeld
+met de tag zomerActie2016. Vervolgens kun je de opens en clicks eenvoudig filteren aan
+de hand van de tag zomerActie2016 om te zien hoeveel opens en clicks de actie
+opgeleverd heeft. 
+Tags kunnen als array via de `tags` property toegevoegd worden aan de json:
+```json
+{
+    ...,
+    "tags" : [
+        "tag1",
+        "tag2",
+        ...
+    ],
+    ...
+}
+```
+Een tag mag geen *whitespace* of puntkomma's bevatten.
+
 
 ## Meer informatie
 
