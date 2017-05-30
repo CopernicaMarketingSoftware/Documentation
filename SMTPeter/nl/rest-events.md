@@ -93,7 +93,7 @@ beschreven op de betreffende pagina van het type.
 | ------------------------------------------- | ------------------------------------------------ |
 | [attempt](get-logfiles "attempts log file") | Algemene informatie over het bericht             |
 | [bounce](get-logfiles "bounces log file")   | informatie over een bounce                       |
-| [click](get-logfiles"clicks log file")      | informatie over een gegenereerde klik            |
+| [click](get-logfiles "clicks log file")     | informatie over een gegenereerde klik            |
 | [delivery](get-logfiles "log-deliveries")   | informatie over de aflevering                    |
 | [failure](get-logfiles "log-failures")      | informatie over een mislukte aflevering          |
 | [open](get-logfiles "opens log file")       | informatie over wanneer een bericht is geopend   |
