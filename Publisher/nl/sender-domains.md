@@ -93,7 +93,7 @@ artikel: [DMARC configureren](./dmarc.md).
 
 ## Meer informatie
 
-* [Sender domains configureren](./quick-sender-domain-guide)
+* [Sender domain instellen](./quick-sender-domain-guide)
 * [DMARC](./dmarc)
 * [DKIM](./dkim)
 * [SPF](./spf)
