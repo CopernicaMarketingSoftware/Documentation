@@ -134,6 +134,29 @@ The option can be enabled to set the "images" property in the JSON to
 }
 ```
 
+## Tagging a mail
+
+It is possible to add one or more tags to a mail. These tags can for example
+be used to track the number of clicks or opens for a certain mailing. For
+example, you send a special summer sale mailing and are curious how much
+opens and clicks this mailing generates. In this case you can tag each mail
+that belongs to this mailing with the tag summerSale2016. Subsequently,
+you can filter the opens and click on this tag summerSale2016 to see how
+many clicks and opens this mailing has generated.
+Tags can be added as an array via the `tags` property in the json like:
+```json
+{
+    ...,
+    "tags" : [
+        "tag1",
+        "tag2",
+        ...
+    ],
+    ...
+}
+```
+It is not allowed to have white-spaces or semicolons in your tags.
+
 ## More information
 
 * [REST API](./rest-api)
