@@ -72,7 +72,7 @@ meer in te stellen.
 
 ## Meer informatie
 
-* [Afzenderdomeinen](./sender-domains)
+* [Sender domains](./sender-domains)
 * [DMARC](./dmarc)
 * [SPF](./spf)
 * [MX](./mx)

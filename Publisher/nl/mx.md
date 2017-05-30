@@ -74,7 +74,7 @@ Als het Copernica dashboard je adviseert om een MX record aan te maken, dan
 kun je daarvoor in de plaats ook een CNAME record aanmaken, en wel volgens het
 volgende schema:
 
-```html
+```text
 <table>
     <tr>
         <td><strong>Geadviseerd MX record</strong></td>
@@ -100,7 +100,7 @@ de waarde "feedback.copernica.com".
 
 ## Meer informatie
 
-* [Afzenderdomeinen](./sender-domains)
+* [Sender domains](./sender-domains)
 * [DMARC](./dmarc)
 * [DKIM](./dkim)
 * [SPF](./spf)

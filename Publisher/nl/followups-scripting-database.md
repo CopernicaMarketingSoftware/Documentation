@@ -29,7 +29,7 @@ opvragen.
 
 ## Meer informatie
 
-* [Het data-script](./followups-scripting)
-* [Data Class](./followups-scripting-data)
+* [Data-scripts](./followups-scripting)
+* [Data data-scripts](./followups-scripting-data)
 * [Collection Class](./followups-scripting-collection)
 * [Profile Class](./followups-scripting-data)

@@ -1,4 +1,4 @@
-# Followups scripting: Profile Class
+# Profile data-script
 
 De **Profile** Class wordt gebruikt om gegevens van een profiel aan te passen en op
 te vragen. Een profiel kan op meerdere manieren worden verkregen. Ten eerste is er altijd 
@@ -19,7 +19,7 @@ uit een [database](./followups-scripting-database).
 * **database**: [Database](./followups-scripting-database) van het profiel (Read-only)
 * **fields**: Hash map van de "fields" parameter van een profiel. De naam wordt hier gebruikt als eigenschap (Read and write)
 * **interests**: Hash map van de "interests" parameter van een profiel. De naam wordt hier gebruikt als eigenschap (Read and write)
-* **data**: Zie documentatie over [het data object](./followups-scripting-data)
+* **data**: Zie documentatie over [data data-script](./followups-scripting-data)
 
 ## Beschikbare functies
 * **remove()**: Verwijder dit profiel
@@ -35,8 +35,8 @@ het profiel op deze manier opvragen.
 
 ## Meer informatie
 
-* [Het data-script](./followups-scripting)
-* [Het data object](./followups-scripting-data)
-* [Database Class](./followups-scripting-database)
-* [Subprofile Class](./followups-scripting-subprofile)
-* [Destination variabele](./followups-scripting-destination)
+* [Data-scripts](./followups-scripting)
+* [Data data-script](./followups-scripting-data)
+* [Database data-script](./followups-scripting-database)
+* [Subprofile data-script](./followups-scripting-subprofile)
+* [Destination data-script](./followups-scripting-destination)

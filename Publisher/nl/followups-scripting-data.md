@@ -39,13 +39,13 @@ mensen niet meerdere keren op de link hebben geklikt.
 
 ## Meer informatie
 
-* [Het data-script](./followups-scripting)
-* [Copernica Class](./followups-scripting-copernica)
-* [Database Class](./followups-scripting-database)
-* [Collectie Class](./followups-scripting-collection)
-* [Profiel Class](./followups-scripting-profile)
-* [Subprofiel Class](./followups-scripting-subprofile)
-* [Bestemming Class](./followups-scripting-destination)
-* [Mailing Class](./followups-scripting-mailing)
-* [Template Class](./followups-scripting-template)
-* [Message Class](./followups-scripting-message)
+* [Data-scripts](./followups-scripting)
+* [Copernica data-script](./followups-scripting-copernica)
+* [Database data-script](./followups-scripting-database)
+* [Collection data-script](./followups-scripting-collection)
+* [Profile data-script](./followups-scripting-profile)
+* [Subprofile data-script](./followups-scripting-subprofile)
+* [Destination data-script](./followups-scripting-destination)
+* [Mailing data-script](./followups-scripting-mailing)
+* [Template data-script](./followups-scripting-template)
+* [Message data-script](./followups-scripting-message)

@@ -1,86 +1,62 @@
 # Sender domains
 
-Hoewel het vroeger heel makkelijk was om het afzenderadres van een mailing te
-*faken*, is het versturen van e-mail uit naam van een ander tegenwoordig lang
-zo eenvoudig niet meer. Copernica kan daarom niet zomaar uit jouw naam mailings
-versturen. Hiervoor moet jij, als eigenaar van het afzenderadres en van de domeinnaam, 
-eerst allerlei [DNS instellingen](./dns.md) goed zetten. Dit stelt ontvangers in 
-staat om te zien dat wij inderdaad toestemming hebben om uit jouw naam te mailen. 
-Als je dit niet doet, zal een groot deel van de berichten die je verstuurt niet 
-goed aankomen.
-
-Het instellen van al deze [DNS records](./dns.md) kan ingewikkeld zijn, maar met 
-behulp van een technologie die we sender domains hebben genoemd, maken we het 
-makkelijk. Het werkt zo: om goed te kunnen mailen moet je [DNS records](./dns.md) 
-aanmaken, [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) en [DMARC](./dmarc.md) 
-records. Om je te helpen hoef je dit echter niet zelf te doen, maar maken wij deze 
-records aan in *onze* [DNS server](./dns.md). Het enige wat jij hoeft te doen is 
-het plaatsen van een aantal aliassen (CNAME records) die verwijzen naar de instellingen bij ons.
-
-Zo simpel is het. In het 
-[snel-aan-de-slag artikel over het instellen van een sender domain](./quick-sender-domain-guide.md)
-leggen we het uitgebreid uit. We gaan daarom hier, in dit wat diepgravender
-onderdeel van de documentatie, alleen in op de ingewikkelder zaken.
+Copernica gebruikt het concept van *sender domains* om e-mail simpeler te maken. 
+Om de effectiviteit van je mailing te waarborgen moet je een aantal 
+[DNS records](./dns.md) aanmaken. Deze records gaan over zaken als
+[MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) en [DMARC](./dmarc.md) 
+records. Copernica heeft het aanmaken van sender domains zo simpel mogelijk
+voor je gemaakt. Dit betekent dat in het dialoogvenster wordt aangegeven
+welke aliassen (CNAME records) je toe moet voegen om van onze [DNS server](./dns.md)
+gebruik te maken. Dit stelt ontvangers in staat om te zien dat Copernica 
+toestemming heeft om vanuit iemand anders naam te e-mailen. Er worden 
+significant minder e-mails afgeleverd als je bovenstaand proces overslaat. 
 
 
 ## Subdomein of hoofddomein?
 
-Als je een sender domain instelt kun je kiezen of je dat doet voor je hoofddomein,
-zeg maar bedrijfsnaam.nl, of dat je dit doet voor een subdomein, zoals
-nieuwsbrief.bedrijfsnaam.nl. Natuurlijk is het een stuk chiquer wanneer alle
-e-mail, inclusief de transactionele e-mails en de nieuwsbrieven, worden verstuurd
-vanuit het hoofdomein. Maar vermoedelijk worden er al allerlei berichten vanuit
-het hoofddomein verstuurd (zoals je reguliere mail!) en zijn er daarom al allerlei 
-instellingen in je DNS om dit mogelijk te maken. Als je het niet aandurft om
-deze instellingen te veranderen, dan kun je er voor kiezen om een subdomein 
-(zoals nieuwsbrief.bedrijfsnaam.nl) te gebruiken voor de mail vanuit Copernica.
-
-Maar als je wel vanuit het hoofddomein wilt gaan versturen, dan moet je op een
-aantal zaken goed letten. Met name de DMARC records die je moet aanmaken of 
-wijzigen behoeft speciale aandacht.
+Bij het opzetten van een sender domain kun je tussen twee opties kiezen. 
+Je kunt of een hoofddomein aanmaken zoals *example.com* of een subdomein
+zoals *newsletter.example.com*. 
+Het hoofddomein komt logischerwijs het beste over wanneer je e-mails naar
+je klanten verstuurt. Je reguliere e-mails worden waarschijnlijk al verstuurd
+vanuit het hoofddomein en dus staan de DNS instellingen daarop ingesteld. 
+Laat je deze instellingen liever intact? Dan kun je het beste gebruik maken van
+een subdomein. 
+Let goed op als je vanuit het hoofddomein wilt gaan versturen. Het wijzigen/aanmaken
+van DMARC records behoeft extra aandacht.
 
 
 ## Domeinnaam valideren
 
-Om misbruik van sender domains te voorkomen, moet je bewijzen dat jij echt de 
-eigenaar bent van het domein. Nadat je een sender domain hebt aangemaakt toont de Marketing Suite
-daarom een waarschuwingsbericht. Je moet eerst een TXT record aan je domein
-toevoegen met daarin een speciale code die alleen door Copernica wordt begrepen. 
-Pas als Copernica ziet dat je dit record aan het domein hebt toegevoegd, geloven
-we dat je echt de eigenaar van het domein bent en kun je verder gaan met
-het configueren van het domein.
+Je kunt misbruik van sender domains voorkomen, door te bewijzen dat je echt de 
+eigenaar bent van een domein. De Marketing Suite toont je een bericht, zodra je 
+een sender domain hebt aangemaakt. Dit is een TXT record dat je toe moet voegen
+aan je domein. In dit TXT record zit een speciale code die alleen Copernica
+kan ontcijferen. Copernica ziet, nadat je het record aan je domein hebt toegevoegd,
+dat je daadwerklijk de eigenaar van het domein bent. Vervolgens kun je verder 
+gaan met het configureren van het domein. 
 
 
 ## De verschillende DNS records
 
-Als je gebruik maakt van een sender domain om je DNS te configuren, dan plaatsen wij,
-Copernica, in onze DNS server allerlei records met de juiste DNS instellingen. In
-jouw DNS hoef je alleen nog maar aliassen te maken (door middel van CNAME records)
-die verwijzen naar de records in ons DNS. In het dashboard van Copernica kun je 
-precies zien welke records je moet aanmaken, en tonen we een waarschuwing als je
-het niet (helemaal) goed hebt gedaan.
+De DNS server van Copernica wordt gebruikt om de juiste DNS instellingen in op te
+slaan. In je eigen domein hoef je daarom, zoals eerder is aangeven, alleen nog de
+alisassen (CNAME records) te plaatsen. De aliassen verwijzen op hun beurt weer terug
+naar de instelling op de servers van Copernica. In het dashboard van de Marketing
+Suite kun je precies zien welke records je moet aanmaken en aan de andere kant 
+ook een waarschuwing gegeven als een record niet helemaal in orde is.
 
-Omdat de aliassen die je aanmaakt naar onze servers verwijzen zijn wij in staat 
-om, als dat nodig is, wijzigingen aan te brengen aan jouw configuratie. Bijvoorbeeld 
-als we extra IP adressen gaan gebruiken om mail te versturen of om kliks te 
-registreren, of als we DKIM keys roteren, dan kunnen we dat doen zonder dat jij
-iets in jouw DNS hoeft te veranderen. De aliassen verwijzen naar de records bij 
-ons, en die records kunnen wij aanpassen wanneer dat nodig is.
+Het komt geregeld voor dat wijzigingen worden doorgevoerd op de DNS servers van 
+Copernica. Je merkt niets van deze wijzigingen, omdat de aliassen van jouw domein
+verwijzen naar die van Copernica. De doorgevoerde veranderingen worden dus automatisch
+bijgewerkt. Er zijn nogal wat records die je aan moet maken. Hieronder een overzicht:
 
-We maken verschillende records aan, en je moet daarom ook veel aliassen (CNAME 
-records) aanmaken. De volgende records worden aangemaakt:
+* Een A record om clicks en opens te registreren;
+* Een MX record om de bounces en out-of-office replies af te vangen;
+* Meerdere DKIM records om e-mails van een digitaal DKIM signature te voorzien;
+* Een SPF record om de IP addressen van Copernica toestemming te geven om te mailen;
+* Een DMARC record om de DMARC rapportages van ontvangers af te vangen.
 
-* Een A record om kliks en opens te registreren
-* Een MX record om de bounces en out-of-office replies af te vangen
-* Meerdere DKIM records om mails van een digitaal DKIM dignature te voorzien
-* Een SPF record om de IP addressen van Copernica toestemming te geven om te mailen
-* Een DMARC record om de DMARC rapportages van ontvangers af te vangen
-
-De A, MX en DKIM records leveren meestal niet zo veel problemen op. Het is
-toegestaan om net zo veel van deze records aan te maken als je maar nodig hebt,
-en ze conflicteren niet met bestaande records. Je kunt de aliassen naar deze
-records dus zonder al te veel zorgen aanmaken. Ook [SPF](./spf.md) gaat goed 
-omdat we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
 
 ```text
     Geadviseerde DNS records die                DNS records op de server
@@ -99,32 +75,20 @@ omdat we een heel nieuw subdomein aanmaken voor het afvangen van bounces.
     |   Bounce alias    |           --->        |   MX record(s)    |
     +-------------------+                       +-------------------+
 ```
-Bovenstaand, versimpeld, schema legt het uit. Als je de adviezen van de 
-Marketing Suite opvolgt, dan voeg je aan jouw domein een aantal aliassen toe 
-die verwijzen naar DNS records van Copernica. Dit stelt ons vervolgens in staat 
-om de instellingen van jouw domein te beheren.
 
-Nadat je het sender domain hebt aangemaakt, je domein hebt gevalideerd, en
-de aliassen hebt toegevoegd aan DNS, kun je mailings gaan versturen met een 
-afzenderadres dat overeenkomt met het aangemaakte afzenderdomein.
+Klaar met het instellen van je sender domain? Dan kun je nu e-mails gaan versturen!
 
 
 ## Let op met DMARC
 
-Het wordt wat ingewikkelder met DMARC records, met name als je wilt versturen 
-vanuit het hoofddomain (vanuit @bedrijfsnaam.nl). Er kan namelijk maar één DMARC 
-record per (sub)domein worden aangemaakt, en er is een goede kans dat voor jouw 
-hoofddomein een dergelijk record al bestaat. Dit bestaande record kun je niet 
-zomaar weghalen of overschrijven. De simpele oplossing is om er dan toch maar 
-voor te kiezen om vanuit een subdomein te versturen. Als je echter wel vanuit 
-het hoofddomein wilt mailen, dat is immers chiquer, dan moet je wat extra 
-maatregelen treffen. Hoe dat precies werkt leggen we uit in het artikel over 
-[DMARC configureren](./dmarc.md).
-
-Het instellen van sender domains, en de DNS records die je moet maken, kun
-je doen via de Copernica Marketing Suite. De wizards in de Marketing Suite 
-werken intuïtief en door middel van groene vinkjes of rode kruisjes kun je 
-precies zien of je het goed hebt gedaan.
+Het wordt wat ingewikkelder met DMARC records. Zeker als je e-mails wilt versturen 
+vanuit het hoofddomein. Er kan namelijk maar één DMARC record per (sub)domein worden
+aangemaakt en er is een grote kans dat voor jouw hoofddomein een dergelijk record al
+bestaat. Dit bestaande record kun je niet zomaar weghalen of overschrijven. Je kunt 
+ervoor kiezen om dan toch maar vanuit een subdomein e-mails te versturen. Dit is de 
+simpele oplossing. Echter, voor het versturen vanuit het hoofddomein moet je wel 
+extra maatregelen treffen. Hoe dat precies werkt leggen kun je teruglezen in het 
+artikel: [DMARC configureren](./dmarc.md).
 
 
 ## Meer informatie

@@ -96,7 +96,7 @@ de nieuwe instelling.
 
 ## Meer informatie
 
-* [Afzenderdomeinen](./sender-domains)
+* [Sender domains](./sender-domains)
 * [MX](mx)
 * [SPF](spf)
 * [DKIM](dkim)

@@ -22,26 +22,25 @@ zeer belangrijk.
 Ontvangers moeten zich altijd uit kunnen schrijven van een nieuwsbrief. 
 Een uitschrijflink maakt dit mogelijk. Door het aanbieden van een uitschrijflink
 komt een onderneming betrouwbaar over en worden je e-maisl minder snel als spam
-gemarkeerd. Je kunt ook [uitschrijfgedrag](database-unsubscribe-behavior) 
+gemarkeerd. Je kunt het [uitschrijfgedrag](database-unsubscribe-behavior) ook
 zelf instellen.
 
-Bounce handling is belangrijk, omdat dit ook invloed heeft op je reputatie.
-Een incorrect of verkeerd gespeld e-mailadress zorgt ervoor dat een e-mail niet
+Bounce handling heeft tenslotte ook een sterk effect op je reputatie. Een incorrect
+of verkeerd gespeld e-mailadress zorgt ervoor dat een e-mail niet
 wordt afgeleverd. [Automatisch bounces afhandelen](./automatically-process-bounces) 
 zorgt ervoor dat je database en reputatie op het juiste niveau blijven.
 
 
 ## E-mailinhoud
 
-Elke email ontvangt een spam score, die je makkelijk zelf kunt beïnvloeden 
+Elke e-mail ontvangt een spamscore, die je makkelijk zelf kunt beïnvloeden 
 om je reputatie schoon te houden. Je kunt onder andere een tekstversie toevoegen, 
 spamwoorden vermijden en je HTML schoonhouden om deze score te verlagen. 
-Voor meer simpele tips en uitleg kun je meer lezen in het artikel over je 
-[spamscore verlagen](./some-tips-to-lower-your-email-spam-score).
+Er is ook een artikel geheel gewijd aan het [verlagen van je spamscore](./some-tips-to-lower-your-email-spam-score).
 
-Zorg er ook voor dat je email relevant is. Door [personalizatie](./personalization) 
-te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. Als je lezers 
-geïnteresseerd zijn zullen ze minder snel je mail als spam markeren.
+Zorg er ook voor dat je e-mail relevant is. Door [personalisatie](./personalization) 
+te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. E-mails die voor de
+lezers interessant zijn worden logischerwijs niet als spam aangemerkt. 
 
 
 ## Meer informatie
