@@ -3,14 +3,15 @@ Een methode om condities voor een miniregel aan te passen. Deze methode onderste
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De $id moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
+De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
+
 
 ## Beschikbare parameters
 
 De message body kan de volgende eigenschappen hebben voor een conditie:
 
-- **type**: type van de conditie
-- **rule**: numeriek ID van de miniregel waar de conditie toe hoort
+- type: type van de conditie
+- rule: numeriek ID van de miniregel waar de conditie toe hoort
 
 De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
 
@@ -33,25 +34,28 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$data = array(
-		'type' = 'date'
-	)
+// parameters to pass to the call
+$data = array(
+	'type' = 'date'
+)
 
-	// do the call, and print result
-	$api->post("minirule/1234/conditions", array(), $data);
+// do the call, and print result
+$api->post("minirule/id/conditions", array(), $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [Regels opvragen](./rest-get-minirules)
-* [Regels bij ID opvragen](./rest-get-minirule)
-* [Een regel aanmaken](./rest-post-minirule)
+* [GET minirules](./rest-get-minirules)
+* [GET specific minirule](./rest-get-minirule)
+* [POST minirule](./rest-post-minirule)

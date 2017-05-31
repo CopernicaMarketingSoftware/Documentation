@@ -13,33 +13,36 @@ moet als message body aan het HTTP request worden toegevoegd.
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
-* **name**: Naam van de nieuw aan te maken collectie
-* **database**: ID van de database waarin de collectie komt te staan
-* **fields**: Beschikbare velden in de collectie
+* name:             naam van de nieuw aan te maken collectie
+* database:         id van de database waarin de collectie komt te staan
+* fields:           beschikbare fields in de collection
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data om mee te geven aan de methode
-    $data = array(
-        'name'      =>  'example-collection',
-    );
-    
-    // voer het verzoek uit
-    $api->post("database/1234/collections", $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data om mee te geven aan de methode
+$data = array(
+    'name'      =>  'example-collection',
+);
+
+// voer het verzoek uit
+$api->post("database/id/collections", $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van alle collecties in een database](rest-get-database-collections)
-* [Opvragen van elle velden in een collectie](rest-get-collection-fields)
-* [Veld toevoegen aan een collectie](rest-post-collection-fields)
+* [GET database collections](rest-get-database-collections)
+* [GET collection fields](rest-get-collection-fields)
+* [POST collection fields](rest-post-collection-fields)

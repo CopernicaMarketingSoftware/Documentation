@@ -2,29 +2,29 @@
 
 Je kunt gebruik maken van een change condition,
 door een property ("type") en een value ("Change")
-op te geven. Daarna ben je in staat om de conditie 
+op te geven. Daarna ben je in staat om de condition 
 naar wens op te geven. In de onderstaande tabel 
 vind je alle condities en een voorbeeld van een request.
 
 | Change type          | Omschrijving                     |
 |----------------------|----------------------------------|
-| any                  | Elke verandering                 |
-| none                 | Geen verandering                 |
-| field                | Veld waarde veranderd            |
-| nofield              | Veld waarde onveranderd          |
-| new                  | Profiel werd aangemaakt          |
-| notnew               | Profiel werd niet aangemaakt     |
-| edit                 | Profiel werd aangepast           |
-| noedit               | Profiel werd niet aangepast      |
-| newsubprofile        | Nieuw subprofiel aangemaakt      |
-| nonewsubprofile      | Geen nieuw subprofiel aangemaakt |
-| editsubprofile       | Subprofiel werd veranderd        |
-| noeditsubprofile     | Subprofiel werd niet veranderd   |
-| removesubprofile     | Subprofiel werd verwijderd       |
-| noremovesubprofile   | Subprofiel werd niet verwijderd  |
-| interest             | Interesses veranderd             |
-| gotinterest          | Nieuwe interesse toegevoegd      |
-| lostinterest         | Interesse verloren               |
+| any                  | elke verandering                 |
+| none                 | geen verandering                 |
+| field                | field waarde veranderd           |
+| nofield              | field waarde onveranderd         |
+| new                  | profile werd aangemaakt          |
+| notnew               | profile werd niet aangemaakt     |
+| edit                 | profile werd aangepast           |
+| noedit               | profile werd niet aangepast      |
+| newsubprofile        | nieuw subprofile aangemaakt      |
+| nonewsubprofile      | geen nieuw subprofile aangemaakt |
+| editsubprofile       | subprofile werd veranderd        |
+| noeditsubprofile     | subprofile werd niet veranderd   |
+| removesubprofile     | subprofile werd verwijderd       |
+| noremovesubprofile   | subprofile werd niet verwijderd  |
+| interest             | interest veranderd               |
+| gotinterest          | nieuwe interest toegevoegd       |
+| lostinterest         | interest verloren                |
 
 
 ## Toevoegen van een datum
@@ -71,11 +71,11 @@ $result = $api->post("rule/id/conditions", $data);
 // print the result
 print_r($result);
 ```
-Dit voorbeeld vereist de [REST API class](./rest-php).
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 
 ## Meer informatie
 
-* [Regel condities opvragen](rest-get-rule-conditions)
-* [Regel condities aanpassen](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

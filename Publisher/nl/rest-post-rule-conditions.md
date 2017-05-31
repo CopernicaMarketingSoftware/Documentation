@@ -50,6 +50,7 @@ $data = array(
 
 // voer het verzoek uit en print het resultaat
 $api->post("rule/id/conditions", array(), $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
