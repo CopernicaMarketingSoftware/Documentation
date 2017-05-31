@@ -1,4 +1,4 @@
-# REST API: aanmaken van een collectie in een database
+# REST API - POST database collections
 
 Om een collectie (een tweede laag dus) aan een database toe te voegen, kun
 je een HTTP POST request sturen naar het volgende adres:

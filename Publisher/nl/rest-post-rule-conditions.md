@@ -1,4 +1,4 @@
-# POST rule conditions
+# REST API - POST rule conditions
 
 Een methode om *conditions* voor een *rule* aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
