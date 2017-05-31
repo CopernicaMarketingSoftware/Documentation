@@ -109,9 +109,9 @@ instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelf
 database waaraan je je mailing of andere uiting wilt richten.
 
 
-## Waar kun je Smarty personalisatie gebruiken?
+## Waar kun je Smarty-personalisatie gebruiken?
 
-Vrijwel overal kan je Smarty personalisatie toepassen:
+Je kunt vrijwel overal Smarty personalisatie toepassen:
 
 * De onderwerpregel van een e-mail;
 * In e-mail en webdocumenten;
@@ -130,6 +130,6 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 
 ## Verder lezen
 
-* [Overzicht van personalizatievariabelen](./personalization-variables.md)
-* [Overzicht van personalizatiemodifiers](./personalization-modifiers.md)
-* [Overzicht van personalizatiefuncties](./personalization-functions.md)
+* [Overzicht van personalisatievariabelen](./personalization-variables.md)
+* [Overzicht van personalisatiemodifiers](./personalization-modifiers.md)
+* [Overzicht van personalisatiefuncties](./personalization-functions.md)

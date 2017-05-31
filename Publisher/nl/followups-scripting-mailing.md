@@ -1,21 +1,24 @@
-# Followups scripting: Mailing Class
+# Mailing data-script
 
-De **Mailing** Class kan worden gebruikt om informatie op te vragen over een mailing binnen het account. 
-De enige beschikbare instantie is momenteel de globale `mailing` variabele, en omdat deze mailing al geweest
-is zijn de eigenschappen alleen leesbaar. 
+Het mailing data-script kan worden gebruikt om informatie op te vragen over een mailing. 
+
 
 ## Beschikbare eigenschappen
 
-* **ID**: ID van de mailing (Read-only)
-* **subject**: Onderwerp van de mailing (Read-only)
-* **data**: Zie documentatie over [het data object](./followups-scripting-data)
+* id: id van de mailing (Read-only);
+* subject: onderwerp van de mailing (Read-only);
+* data: zie documentatie over [het data object](./followups-scripting-data).
+
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in javascript kun je het onderwerp van een mailing opvragen.
+Met het volgende voorbeeld kun je het onderwerp van een mailing opvragen.
 
-    var mySubject = mailing.subject;
+```javascipt
+var mySubject = mailing.subject;
+```
+
 
 ## Meer informatie
-* [Het data-script](./followups-scripting)
-* [Het data object](./followups-scripting-data)
+* [Data-scripts](./followups-scripting)
+* [Data data-script](./followups-scripting-data)

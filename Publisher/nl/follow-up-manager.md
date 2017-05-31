@@ -11,4 +11,4 @@ programmeren hoe er met inkomende clicks wordt omgegaan.
 
 * Met de [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * Met de [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
-* Met het [data-script attribuut](./followups-scripting.md)
+* Met [Data-scripts](./followups-scripting.md)
