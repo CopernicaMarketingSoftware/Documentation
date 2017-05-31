@@ -1,18 +1,16 @@
-# Followups scripting: destination/bestemming variabele
+# Destination data-script
 
-De globale **destination** variabele geeft toegang tot de huidige email ontvanger. 
-Dit is een alias voor een [profiel](./followups-scripting-profile.md) of een
-[subprofiel](./followups-scripting-subprofile.md). Het is een profiel als deze 
-email is verstuurd naar een database of een selectie, en het is een subprofiel als 
-de mailing verstuurd is naar een collectie of mini-selectie. 
+**Hier wordt momenteel aan gewerkt..**
+
 
 ## Beschikbare eigenschappen
 
-* **data**: Zie documentatie over [het data object](./followups-scripting-data)
+* data: zie documentatie over het [data data-script](./followups-scripting-data)
+
 
 ## Meer informatie
 
-* [Het data-script](./followups-scripting)
-* [Het data object](./followups-scripting-data)
-* [Profile Class](./followups-scripting-profile)
-* [Subprofile Class](./followups-scripting-subprofile)
+* [Data-scripts](./followups-scripting)
+* [Data data-script](./followups-scripting-data)
+* [Profile data-script](./followups-scripting-profile)
+* [Subprofile data-script](./followups-scripting-subprofile)

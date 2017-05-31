@@ -1,9 +1,9 @@
 # Geavanceerde verzendopties
 
-Door speciale *properties* toe te voegen aan de input van de JSON, kun je bepaalde
-properties van SMTPeter aan- of uitzetten. Zo kun je bijvoorbeeld het aantal *clicks*, 
-*opens* en *bounces* nagaan. Ook kun je bijvoorbeeld aangeven dat je wilt dat SMTPeter 
-de CSS code *inline* zet.
+Door speciale properties toe te voegen aan de input van de JSON, kun je bepaalde
+properties van SMTPeter aan- of uitzetten. Zo kun je bijvoorbeeld het aantal clicks, 
+opens en bounces nagaan. Ook kun je bijvoorbeeld aangeven dat je wilt dat SMTPeter 
+de CSS code inline zet.
 
 ```json
 {
@@ -13,26 +13,25 @@ de CSS code *inline* zet.
     "trackclicks":  true,
     "trackopens":   false,
     "trackbounces": true,
-    "preventscam":  true
+    "preventscam":  true,
     "tags": [
         "tag1",
-        "tag2",
-        ...
+        "tag2"
     ]
 }
 ```
 
 ## Zet CSS inline
 
-Door de "inlinecss" variabele op *true* te zetten, activeer je de toepassing
+Door de "inlinecss" variabele op true te zetten, activeer je de toepassing
 die ervoor zorgt dat *CSS stylesheets* uit de *header* worden omgezet naar
 inline attributen in de HTML code.
 
 
 ## Het nagaan van clicks, opens en bounces
 
-SMTPeter vervangt automatisch alle *hyperlinks* in je e-mails met eigen URLs.
-Op deze manier kunnen de verschillende *events* worden nagegaan. Het *envelope
+SMTPeter vervangt automatisch alle hyperlinks in je e-mails met eigen URLs.
+Op deze manier kunnen de verschillende events worden nagegaan. Het *envelope
 address* van de e-mails wordt ook automatisch omgezet naar een SMTPeter adres. Nu 
 kan SMTPeter ook die events afhandelen. Je kunt deze toepassingen gemakkelijk
 uitzetten. Zie onderstaande JSON data:
@@ -46,8 +45,8 @@ uitzetten. Zie onderstaande JSON data:
     "trackbounces": false
 }
 ```
-De *click-tracking* is automatisch geactiveerd. Dit betekent dat alle hyperlinks
-zijn ingesteld om *clicks* te traceren en na te gaan. Echter, sommige *e-mail clients*
+De *click tracking* is automatisch geactiveerd. Dit betekent dat alle hyperlinks
+zijn ingesteld om clicks te traceren en na te gaan. Echter, sommige *e-mail clients*
 tonen een waarschuwing aan de gebruiks op het moment dat links zijn bewerkt. 
 Dit is in sterkere mate het geval wanneer de link waarop geklikt kan worden,
 niet overeenkomt met de hyperlink. In dat geval kun je altijd de "preventscam"
@@ -71,8 +70,8 @@ De "preventscam" optie voorkomt dus de door SMTPeter bewerkte hyperlinks, zoals:
 ## Instellingen voor Delivery Status Notifications
 
 SMTPeter kan bounces voor je nagaan. Deze worden gestuurd naar jouw
-envelope adres. Je kunt deze toepassing aanzetten door het "envelope"
-adres toe te voegen aan de JSON:
+envelope adres. Je kunt deze toepassing aanzetten door het envelope
+address toe te voegen aan de JSON:
 
 ```json
 {
@@ -107,7 +106,7 @@ accepteert een JSON object met vier optionele velden:
 }
 ```
 
-De *notify* property is de allerbelangrijkste. Je kunt specificeren voor welke
+De "notify" property is de allerbelangrijkste. Je kunt specificeren voor welke
 soorten events een e-mail notificatie moet worden getriggerd. Mogelijke waardes
 zijn "NEVER", "FAILURE", "SUCCESS" of "DELAY". Een kommagescheiden lijst met 
 waardes wordt ook ondersteund. 
@@ -136,16 +135,18 @@ te geven, genaamd: "hosted". De "default" waarde doet vanzelfsprekend niets.
 }
 ```
 
-## Tagging een mail
+## Een e-mail taggen
 
 Het is mogelijk om één of meerdere tags aan een mail te hangen. Deze tags
-kunnen vervolgens gebruikt worden om bijvoorbeeld clicks of opens te filteren.
-Stel, je stuurt een speciale zomeractie mail en je wilt weten hoeveel clicks
-en opens deze actie oplevert. Elke mail voor deze zomeractie tag je bijvoorbeeld
-met de tag zomerActie2016. Vervolgens kun je de opens en clicks eenvoudig filteren aan
-de hand van de tag zomerActie2016 om te zien hoeveel opens en clicks de actie
-opgeleverd heeft. 
-Tags kunnen als array via de `tags` property toegevoegd worden aan de json:
+kunnen vervolgens worden gebruikt om bijvoorbeeld clicks of opens te filteren.
+Stel, je stuurt een speciale e-mail over een kortingsactie die te maken heeft
+met het warme weer in de zomer. Je wilt uiteindelijk weten hoeveel clicks
+en opens deze actie oplevert. Elke e-mail voor deze zomeractie tag je bijvoorbeeld
+met de tag: "zomerActie2016". Vervolgens kun je de opens en clicks eenvoudig filteren 
+aan de hand van de "zomerActie2016" tag om te zien hoeveel opens en clicks de actie
+heeft opgeleverd. Tags kunnen als array via de `tags` property toegevoegd worden aan 
+de json:
+
 ```json
 {
     ...,
