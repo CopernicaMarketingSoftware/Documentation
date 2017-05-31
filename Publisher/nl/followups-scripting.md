@@ -10,12 +10,12 @@ Als je gebruik wilt maken van dit systeem, kun je dat handmatig activeren.
 Met data-scripts kun je allerlei opvolgacties aan hyperlinks koppelen.
 Deze scripts worden door Copernica uitgevoerd, zodra iemand op
 zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde als de scripts die je 
-in een "onclick" attribuut van een hyperlink plaatst, met een belangrijk 
+in een "onclick" van een hyperlink plaatst, met een belangrijk 
 verschil: de scripts worden niet door de browser uitgevoerd, maar op de 
 servers van Copernica. In de Marketing Suite hoef je alleen maar data-scripts
 toe te voegen op een van de volgende manieren:
 
-* Je kunt ze in het "data-script" attribuut plaatsen van een &lt;a&gt; tag;
+* Je kunt ze in het "data-script" plaatsen van een &lt;a&gt; tag;
 * Je kunt ze met de "drag-and-drop" editor invoeren.
 
 
@@ -51,12 +51,12 @@ Je kunt heel makkelijk een profiel aanpassen als iemand op een link klikt:
 <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Klik hier om af te melden</a>
 ```
 
-Het script in het "data-script" attribuut wordt uitgevoerd, als iemand op de link klikt.
+Het script in het "data-script" wordt uitgevoerd, als iemand op de link klikt.
 In bovenstaand voorbeeld wordt het veld "newsletter" dus op "no" gezet bij een klik. 
 Het voorbeeld is eenvoudig, maar als je wilt kun je ook heel complexe scripts uitvoeren.
 
 Overigens, als je de broncode van een door Copernica verstuurd bericht inspecteert, 
-tref je nooit een data-script attribuut aan. Het data-script attribuut wordt namelijk 
+tref je nooit een data-script aan. Het data-script wordt namelijk 
 uit de e-mail gefilterd voordat het bericht wordt verstuurd, zodat dit niet zichtbaar 
 is voor de ontvanger. Maar Copernica slaat het script wel op en voert het uit als op 
 de link wordt geklikt.

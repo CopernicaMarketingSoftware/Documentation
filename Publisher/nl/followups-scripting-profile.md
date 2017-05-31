@@ -1,39 +1,42 @@
 # Profile data-script
 
-Het profile data-script wordt gebruikt om gegevens van een profiel aan te passen en op
-te vragen. Een profiel kan op meerdere manieren worden verkregen. Ten eerste is er altijd 
-een globale `profile` variabele, welke een instantie van de **profiel** class bevat. Dit is altijd 
-het profiel waar de mail naar is verzonden. Daarnaast kan een profiel worden opgevraagd via het 
-[Copernica](./followups-scripting-copernica) object, met een id. Als laatste kan een profiel worden verkregen
-uit een [database](./followups-scripting-database).
+Het profile data-script wordt gebruikt om gegevens van een profile aan te passen of op
+te vragen. Een profile kan op meerdere manieren worden verkregen. Bijvoorbeeld via het 
+[copernica data-script](./followups-scripting-copernica) of via het [database data-script](./followups-scripting-database).
+
 
 ## Beschikbare eigenschappen
 
-* id: 				id van een profile (Read-only);
-* secret: 			geheime code van het profile, gelijk aan `code`. (Read and write);
-* code: 			geheime code van het profile, gelijk aan `secret`. (Read and write);
+* id: 				id van een profile (read-only);
+* secret: 			geheime code van het profile, gelijk aan code (read and write);
+* code: 			geheime code van het profile, gelijk aan secret (read and write);
 * extra: 			extra data (Read and write);
-* created: 			tijdstip van aanmaken profile (Read-only);
-* removed: 			tijdstip van verwijderen profile (Read-only);
-* unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (Read-only);
-* database: 		[Database](./followups-scripting-database) van het profile (Read-only);
-* fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (Read and write);
-* interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (Read and write);
-* data: 			zie documentatie over [data data-script](./followups-scripting-data).
+* created: 			tijdstip van aanmaken profile (read-only);
+* removed: 			tijdstip van verwijderen profile (read-only);
+* unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only);
+* database: 		[database](./followups-scripting-database) van het profile (read-only);
+* fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
+* interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
+* data: 			zie documentatie over het [data data-script](./followups-scripting-data).
 
 
 ## Beschikbare functies
 
-* remove():			verwijder dit profile
-* unsubscribe(): 	unsubscribe dit profile
+* remove():			remove profile;
+* unsubscribe(): 	unsubscribe profile.
+
 
 ## Voorbeeld
 
 Met het volgende voorbeeld kun je een veld van een profile opvragen. 
-In dit geval vragen we de leeftijd op, maar je kunt elk veld in 
-het profile op deze manier opvragen.
+In dit geval wordt de leeftijd van een profile opgevraagd. Uiteraard
+kun je elk veld linken aan een profile.
 
-    var profileAge = profile.fields.age;
+
+```javascript
+var profileAge = profile.fields.age;
+```
+
 
 ## Meer informatie
 

@@ -1,41 +1,49 @@
-# Followups scripting: Subprofile Class
+# Subprofile data-script
 
-De **Subprofile** Class kan worden gebruikt om informatie over een subprofiel op te vragen en aan te passen. 
-Een subprofiel kan op meerdere manieren worden verkregen. Ten eerste, als de huidige bestemming een collectie 
-of mini-selectie was, dan is er een globale `subprofile` variabele aanwezig met een instantie van het subprofiel
-waar het naar verzonden is. Daarnaast kan het nog per ID worden opgevraagd via de [Copernica Class](./followups-scripting-copernica).
-Als laatste kan het ook nog uit een [collectie](./followups-scripting-collection) worden verkregen.
+Het subprofile data-script kan worden gebruikt om 
+informatie over een subprofile op te vragen of aan 
+te passen. Hieronder staan de beschikbare eigenschappen
+beschreven. 
+
 
 ## Beschikbare eigenschappen
 
-* **ID**: ID van een profiel (Read-only)
-* **secret**: Geheime code van het profiel, gelijk aan `code`. (Read and write)
-* **code**: Geheime code van het profiel, gelijk aan `secret`. (Read and write)
-* **extra**: Extra data (Read and write)
-* **created**: Tijdstip van aanmaken profiel (Read-only)
-* **removed**: Tijdstip van verwijderen profiel (Read-only)
-* **unsubscribed**: Boolean waarde die aangeeft of een profiel uitgeschreven is (Read-only)
-* **collection**: [Collectie](./followups-scripting-collection) van het subprofiel (Read-only)
-* **fields**: Hash map van de "fields" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
-* **interests**: Hash map van de "interests" parameter van een profiel. De namen worden hier gebruikt als eigenschap (Read and write)
-* **data**: Zie documentatie over [het data object](./followups-scripting-data)
+* id:				id van een profile (read-only);
+* secret: 			geheime code van het profile, gelijk aan code (read and write);
+* code: 			geheime code van het profile, gelijk aan secret (read and write);
+* extra: 			extra data (read and write);
+* reated: 			tijdstip van aanmaken profile (read-only);
+* removed: 			tijdstip van verwijderen profile (read-only);
+* unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only);
+* collection: 		[collection](./followups-scripting-collection) van het subprofiel (read-only);
+* fields: 			hash map van de "fields" parameter van een profile. De namen worden hier gebruikt als eigenschap (read and write);
+* interests: 		hash map van de "interests" parameter van een profile. De namen worden hier gebruikt als eigenschap (read and write);
+* data:				zie documentatie over het [data data-script](./followups-scripting-data).
+
 
 ## Beschikbare methoden
-* **remove()**: Verwijder dit subprofiel
-* **unsubscribe()**: Unsubscribe dit subprofiel
+
+* remove(): 		remove subprofile;
+* unsubscribe(): 	unsubscribe subprofile.
+
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in javascript kun je een veld van een subprofiel 
-opvragen. In dit geval vragen we de leeftijd op, maar je kunt elk veld in 
-het subprofiel op deze manier opvragen.
+Met het volgende voorbeeld kun je een veld van een subprofile 
+opvragen. In dit geval wordt de leeftijd opgevraagd. Uiteraard
+kun je elk veld linken aan een profile.
 
-    var profileAge = subprofile.fields.age;
+
+```javascript
+var profileAge = subprofile.fields.age;
+```
+
 
 ## Meer informatie
-* [Het data-script](./followups-scripting)
-* [Het data object](./followups-scripting-data)
-* [Database Class](./followups-scripting-database)
-* [Profile Class](./followups-scripting-profile)
-* [Destination variabele](./followups-scripting-destination)
+
+* [Data-scripts](./followups-scripting)
+* [Data data-script](./followups-scripting-data)
+* [Database data-script](./followups-scripting-database)
+* [Profile data-script](./followups-scripting-profile)
+* [Destination data-script](./followups-scripting-destination)
 
