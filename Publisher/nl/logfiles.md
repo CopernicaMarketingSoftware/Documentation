@@ -1,4 +1,4 @@
-# Logfiles in Marketing Suite
+# Logfiles in MarketingSuite
 
 Copernica houdt een log bij van alle verzonden emails. We houden informatie bij over *events*: deliveries, bounces, clicks, pogingen om af te leveren, et cetera. Deze *logfiles* kunnen worden opgehaald door middel van een [REST API call](https://www.copernica.com/nl/documentation/rest-get-logfiles), maar de MarketingSuite heeft er ook een interface voor; je vindt hem onder het tabblad 'Operations Log' in het linkermenu.
 
