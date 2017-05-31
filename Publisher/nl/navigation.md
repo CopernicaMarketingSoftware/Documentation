@@ -20,6 +20,7 @@
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)
     * [Statistieken exporteren](./statistics-export)
+    * [Logfiles](./logfiles)
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
     * [REST events](./rest-get-events.md)
