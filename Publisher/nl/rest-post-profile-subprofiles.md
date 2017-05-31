@@ -1,30 +1,31 @@
-# REST API: een subprofiel aan een profiel toevoegen
+# REST API: een subprofile aan een profiel toevoegen
 
-Om een subprofiel aan een profiel in een bepaalde collectie toe te voegen,
+Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
 kun je een HTTP POST request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
-waaraan je een subprofiel wil toevoegen en $collectionID moet vervangen worden
+waaraan je een subprofiel wil toevoegen en `$collectionID` moet vervangen worden
 met de identifier van de collectie waarin je het subprofiel wil toevoegen.
 De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
 
-Het subprofiel kan de volgende eigenschappen hebben:
+Het subprofile kan de volgende eigenschappen hebben:
 
-- **secret**: Geheime code geassocieerd met dit subprofiel
-- **profile**: ID van het profiel waar het subprofiel bij hoort
-- **fields**: Velden van het subprofiel
-- **collection**: ID van de collectie waar het subprofiel bij hoort
-- **created**: Tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat
-- **modified**: Tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat
+- secret:           geheime code geassocieerd met dit subprofile;
+- profile:          id van het subprofile waar het subprofile bij hoort;
+- fields:           velden van het subprofile;
+- collection:       id van de collectie waar het subprofile bij hoort;
+- created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
+- modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
+```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
@@ -39,6 +40,8 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     
     // voer het verzoek uit
     $api->post("profile/1234/subprofiles/321", $data);
+    // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 

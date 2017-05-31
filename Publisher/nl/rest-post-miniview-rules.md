@@ -20,21 +20,24 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 
 Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data voor de methode
-    $data = array(
-        'name'      =>  'rulename',
-        'view'      =>  1234,
-        'inversed'  =>  False
-    );
-    
-    // voer het verzoek uit
-    $api->post("miniview/1234/rules", $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'name'      =>  'rulename',
+    'view'      =>  1234,
+    'inversed'  =>  False
+);
+
+// voer het verzoek uit
+$api->post("miniview/1234/rules", $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
 
 Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
 

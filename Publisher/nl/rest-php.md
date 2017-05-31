@@ -3,12 +3,7 @@
 Hieronder vind je een REST API script, geschreven in PHP.
 Met dit voorbeeld kun je gemakkelijk een HTTP request doen.
 Alle calls worden ondersteund. Je kunt dus gebruik maken
-van GET, POST, PUT en DELETE calls.
-
-Om het leven wat makkelijker te maken hebben we een voorbeeldklasse gemaakt
-die je kunt gebruiken om API calls uit te voeren. Je hoeft dat niet zelf alle
-relevante CURL functies aan te roepen, maar je kunt gewoonweg deze klasse 
-gebruiken om de API aan te roepen.
+van: GET, POST, PUT en DELETE calls.
 
 ```php
 <?php
@@ -168,11 +163,14 @@ class CopernicaRestAPI
 }
 ```
 
-Het bovenstaande script kun je dus gemakkelijk kopiëren en plakken voor het gebruik
-in je eigen codebase. Door onderstaande code te implementeren kun je vanuit andere 
-scripts ook de API aanroepen. 
+## Gebruik in eigen applicatie
+
+Het bovenstaande script kun je gemakkelijk kopiëren en plakken, zodat je het kunt
+gebruiken in je eigen applicatie. Door onderstaande code te implementeren kun je 
+vanuit andere scripts ook de API aanroepen. 
 
 ```php
+<?php
 // required code
 require_once('copernica_rest_api.php');
 
@@ -185,7 +183,3 @@ $result = $api->get("databases");
 // print the result
 print_r($result);
 ```
-
-## Meer informatie
-
-* [Overzicht van alle API calls](rest-api)

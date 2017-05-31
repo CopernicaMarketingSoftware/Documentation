@@ -16,38 +16,42 @@ Zorg ervoor dat je hier een POST request stuurt en geen PUT request. Hoewel deze
 De parameters die je in de body van het HTTP POST request plaatst, zijn de
 velden van het aan te maken profiel. De volgende informatie kan meegegeven worden aan het profiel.
 
-- **fields**: associatieve array/object van veldnamen en waardes
-- **interests**: array van interesses van een profiel
-- **database**: ID van de database waar het profiel staat
-- **secret**: de "geheime" code die aan een profiel gelinkt is 
-- **created**: tijdstip waarop het profiel werd gemaakt, YYYY-MM-DD hh:mm:ss formaat
-- **modified**: tijdstip waarop het profiel laatst werd aangepast, YYYY-MM-DD hh:mm:ss formaat
+- fields:           associatieve array/object van veldnamen en waardes;
+- interests:        array van interesses van een profiel;
+- database:         ID van de database waar het profiel staat;
+- secret:           de "geheime" code die aan een profiel gelinkt is;
+- created:          tijdstip waarop het profiel werd gemaakt, YYYY-MM-DD hh:mm:ss formaat;
+- modified:         tijdstip waarop het profiel laatst werd aangepast, YYYY-MM-DD hh:mm:ss formaat.
+
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data voor de methode
-    $data = array(
-        'database' =>  database_id
-    );
-    
-    // voer het verzoek uit
-    $api->post("database/1234/profiles", $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+// data voor de methode
+$data = array(
+    'database' =>  database_id
+);
+
+// voer het verzoek uit
+$api->post("database/1234/profiles", $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
+
+Voor bovenstaand voorbeeld heb je de [REST API class](rest-php) nodig.
 
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van alle profielen](rest-get-database-profiles)
-* [Profiel bijwerken](rest-put-profile-fields)
-* [Profiel verwijderen](rest-delete-profile)
-* [Velden aanmaken](rest-put-profile-fields)
-* [Interesses aanmaken](rest-post-profile-interests)
+* [GET database profiles](rest-get-database-profiles)
+* [PUT profile fields](rest-put-profile-fields)
+* [DELETE profile](rest-delete-profile)
+* [PUT profile fields](rest-put-profile-fields)
+* [POST profile interests](rest-post-profile-interests)

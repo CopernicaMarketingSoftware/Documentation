@@ -20,20 +20,23 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data voor de methode
-    $data = array(
-        'name'      =>  'Voetbal',
-        'group'     =>  'Sport'
-    );
-    
-    // voer het verzoek uit
-    $api->post("database/1234/interests", $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'name'      =>  'Voetbal',
+    'group'     =>  'Sport'
+);
+
+// voer het verzoek uit
+$api->post("database/id/interests", $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+```
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 
