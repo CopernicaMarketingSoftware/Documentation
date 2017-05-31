@@ -1,4 +1,4 @@
-# REST API: aanmaken van een veld in een database
+# REST API - POST database fields
 
 Methode om een veld toe te voegen aan een bestaande database. Dit is een HTTP 
 POST call naar het volgende adres:

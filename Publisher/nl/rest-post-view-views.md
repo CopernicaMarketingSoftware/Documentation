@@ -1,4 +1,4 @@
-# REST API: aanpassen van genestelde selecties
+# REST API - POST view views
 
 Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan te passen kan er een HTTP post request gestuurd worden naar de volgende URL:
 

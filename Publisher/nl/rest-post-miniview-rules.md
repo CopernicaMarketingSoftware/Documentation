@@ -1,4 +1,4 @@
-# REST API: toevoegen van een regel aan een selectie uit een collectie.
+# REST API - POST miniview rules
 
 Deze methode voegt een regel toe aan een bestaande selectie van een collectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
 
