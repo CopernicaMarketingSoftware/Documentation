@@ -1,4 +1,4 @@
-# Subprofile data-script
+# Data-script - subprofile
 
 Het subprofile data-script kan worden gebruikt om 
 informatie over een subprofile op te vragen of aan 

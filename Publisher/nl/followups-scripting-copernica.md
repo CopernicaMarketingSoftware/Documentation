@@ -1,4 +1,4 @@
-# Copernica data-script 
+#  Data-script - copernica 
 
 Het copernica data-script is gelinkt aan het account dat je hebt geregistreerd bij Copernica. 
 Asnpassingen aan het globale `copernica.data` object zijn in alle scripts van het account 

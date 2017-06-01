@@ -1,4 +1,4 @@
-# Profile data-script
+# Data-script - profile
 
 Het profile data-script wordt gebruikt om gegevens van een profile aan te passen of op
 te vragen. Een profile kan op meerdere manieren worden verkregen. Bijvoorbeeld via het 

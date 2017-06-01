@@ -1,4 +1,4 @@
-# Message data-script
+# Data-script - message
 
 Het message data-script geeft toegang tot een gepersonaliseerde snapshot van een
 [template](./followups-scripting-template). Er kan dus gepersonaliseerde informatie
