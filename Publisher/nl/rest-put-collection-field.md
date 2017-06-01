@@ -37,7 +37,7 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.  some
     // do the call
     api->put("collection/1234/field", array(), $data);
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

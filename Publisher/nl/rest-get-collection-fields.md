@@ -35,21 +35,23 @@ worden de volgende eigenschappen teruggegeven:
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit in je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters om mee te geven
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
-    // voer de methode uit en print de resultaten
-    print_r($api->get("collection/1234/fields", $parameters));
+// verander dit in je access token
+$api = new CopernicaRestApi("your-access-token");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+// parameters om mee te geven
+$parameters = array(
+    'limit' =>  100
+);
+
+// voer de methode uit en print de resultaten
+print_r($api->get("collection/1234/fields", $parameters));
+```
+
+Dit voorbeeld vereist de [REST API class](rest-php).
     
 ## Meer informatie
 

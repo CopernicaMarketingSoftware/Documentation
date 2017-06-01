@@ -37,7 +37,7 @@ $api = new CopernicaRestApi("your-access-token");
 print_r($api->get("identity"));
 ```
 
-Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 
 ## Meer informatie

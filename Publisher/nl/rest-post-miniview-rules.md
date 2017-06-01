@@ -39,7 +39,7 @@ $api->post("miniview/1234/rules", $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

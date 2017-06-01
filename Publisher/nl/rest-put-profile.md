@@ -45,7 +45,7 @@ Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
     // voer het verzoek uit en print het resultaat
     print_r($api->put("profile/1234", array(), $data));
 
-Dit voorbeeld vereist de [Copernica REST API class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

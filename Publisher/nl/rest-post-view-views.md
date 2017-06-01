@@ -12,7 +12,7 @@ De volgende parameters kunnen toegevoegd worden aan de body van het bericht. De 
 
 - name: 				naam van de selectie;
 - description: 			omschrijving van de selectie;
-- parent-type: 			type van de bovenliggende structuur; selectie of database?;
+- parent-type: 			type van de bovenliggende structuur; selectie of database;
 - parent-id: 			id van de selectie of database waar de selectie onder valt;
 - has-children: 		boolean waarde om aan te geven of er nog selecties onder deze selectie liggen;
 - has-referred: 		boolean waarde om aan te geven of er andere selecties naar deze selectie verwijzen;

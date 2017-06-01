@@ -50,7 +50,7 @@ Het volgende PHP script demonstreert hoe je de API methode gebruikt:
     // voer het verzoek uit en print het resultaat
     print_r($api->get("logfiles/2017-02-12"));
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](./rest-php.md).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

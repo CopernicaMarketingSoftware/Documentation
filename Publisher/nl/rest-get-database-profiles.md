@@ -73,7 +73,7 @@ klasse automatisch.
     // voer de methode uit en print het resultaat
     print_r($api->get("database/1234/profiles", $parameters));
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
     
 
 ## Meer informatie

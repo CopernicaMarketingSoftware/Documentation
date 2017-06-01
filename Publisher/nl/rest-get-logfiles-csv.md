@@ -39,7 +39,7 @@ Het volgende PHP script demonstreert hoe je de API methode gebruikt.
     // voer het verzoek uit en print het resultaat
     print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/header"));
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

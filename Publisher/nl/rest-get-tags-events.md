@@ -79,7 +79,7 @@ The following PHP script demonstrates how to use the API method.
     // do the call, and print result
     print_r($api->get("tags/myTag/events", $parameters));
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## More information
 

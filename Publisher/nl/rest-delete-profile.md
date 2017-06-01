@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert hoe je gebruik maakt van deze methode met de
 	// voer het verzoek uit
 	$api->delete("profile/1234");
 
-Dit voorbeeld vereist de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## More information
 

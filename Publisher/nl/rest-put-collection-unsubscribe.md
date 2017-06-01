@@ -35,7 +35,7 @@ Het volgende PHP script demonstreert hoe de methode gebruikt kan worden. In dit 
     // voer het verzoek uit
     api->put("collection/1234", array(), $data);
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

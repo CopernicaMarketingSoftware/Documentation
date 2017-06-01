@@ -21,29 +21,30 @@ Het subprofile kan de volgende eigenschappen hebben:
 - created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
 - modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 ```php
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // data voor de methode
-    $data = array(
-        'collection'  =>  '13',
-        'profile'    =>  '1234'
-    );
-    
-    // voer het verzoek uit
-    $api->post("profile/1234/subprofiles/321", $data);
-    // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'collection'  =>  '13',
+    'profile'    =>  '1234'
+);
+
+// voer het verzoek uit
+$api->post("profile/id/subprofiles/321", $data);
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

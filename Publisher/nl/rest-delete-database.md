@@ -21,7 +21,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode uitvoert in PHP:
     // voer het verzoek uit
     $api->delete("database/1234");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

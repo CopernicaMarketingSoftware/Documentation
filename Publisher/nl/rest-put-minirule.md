@@ -33,8 +33,8 @@ Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden:
 
 	// voer het verzoek uit en print het resultaat
 	print_r($api->put("minirule/1234", array(), $data));
-
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+	
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie 
 

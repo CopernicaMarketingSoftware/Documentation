@@ -57,8 +57,7 @@ $api->post("database/id/views", $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Voor bovenstaand voorbeeld heb je de 
-[CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

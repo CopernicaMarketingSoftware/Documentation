@@ -22,10 +22,10 @@ toegevoegd:
 De methode retourneert een lijst van databases. 
 Van elke database in de lijst wordt een aantal velden teruggegeven:
 
-* ID:             unieke ID;
+* id:             unieke id;
 * name:           naam van de database;
 * description:    omschrijving van de database;
-* archived:       is de database gearchiveerd of niet?;
+* archived:       checkt of een database is gearchiveerd;
 * created:        tijdstip waarop de database is aangemaakt;
 * fields:         array met de fields in de database;
 * interests:      array met de interests in de database;
@@ -41,8 +41,7 @@ collections op te vragen:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen 
-vanuit een PHP script:
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
 // vereiste scripts
@@ -60,10 +59,10 @@ $parameters = array(
 print_r($api->get("databases", $parameters));
 ```
 
-Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van een enkele database](rest-get-database)
-* [Aanmaken van een database](rest-post-databases)
+* [GET id van database](rest-get-database)
+* [POST databases](rest-post-databases)

@@ -48,7 +48,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     // voer het verzoek uit
     $api->post("profile/1235/interests", $data2);
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

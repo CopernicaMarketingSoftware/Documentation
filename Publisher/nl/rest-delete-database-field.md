@@ -20,7 +20,7 @@ verwijderen.
     // voer het verzoek uit
     $api->delete("database/1234/field/firstname");
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

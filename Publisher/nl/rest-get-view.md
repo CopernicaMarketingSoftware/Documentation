@@ -34,7 +34,7 @@ Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden met de 
 	// voer de methode uit en print het resultaat
 	print_r($api->get("view/1234"));
 
-Dit voorbeeld gebruikt de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

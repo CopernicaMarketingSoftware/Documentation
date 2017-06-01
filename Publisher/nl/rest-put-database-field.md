@@ -47,7 +47,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // do the call
     api->put("database/1234/field/456", $data);
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
