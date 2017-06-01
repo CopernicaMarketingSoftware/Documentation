@@ -1,4 +1,4 @@
-# REST API: opvragen van bestandsnamen van logfiles
+# REST API - GET logfiles names
 
 Copernica houdt logfiles bij over bijvoorbeeld clicks, opens, errors, 
 ontvangen berichten, etc. Deze logfiles kunnen gedownload worden met de API 
@@ -8,6 +8,7 @@ URL krijg je een lijst van alle bestaande logfiles voor een datum.
 `https://api.copernica.com/v1/logfiles/$date?access_token=xxxx`
 
 Je moet hier `$date` vervangen door de datum waarvoor je logfiles wilt zien.
+
 
 ## Teruggegeven velden
 
@@ -41,20 +42,23 @@ onder het kopje "Meer informatie" bekijken.
 
 Het volgende PHP script demonstreert hoe je de API methode gebruikt:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer het verzoek uit en print het resultaat
-    print_r($api->get("logfiles/2017-02-12"));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer het verzoek uit en print het resultaat
+print_r($api->get("logfiles/2017-02-12"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 
 * [Overzicht van API calls](./rest-api.md)
-* [Downloaden van een logfile in JSON formaat](./rest-get-logfiles-json.md)
+* [GET logfiles .csv](./rest-get-logfiles-json.md)
 * [Downloaden van een logfile in CSV formaat](./rest-get-logfiles-csv.md)
 * [Downloaden van een logfile in XML formaat](./rest-get-logfiles-xml.md)

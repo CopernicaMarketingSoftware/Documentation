@@ -1,4 +1,4 @@
-# REST API: Downloaden van een log file als CSV bestand
+# REST API - GET logfiles .csv
 
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een CSV 
@@ -15,6 +15,7 @@ HTTP GET verzoek sturen naar deze URL:
 
 In beide URLs moet je `$filename` vervangen door de bestandsnaam.
 
+
 ## Teruggegeven bestand
 
 Deze functie geeft een CSV file terug met of zonder header, afhankelijk van 
@@ -26,20 +27,24 @@ gebruikt kommas in plaatst van lijnen om de waardes te scheiden.
 | XX1 | 2016-11-04 11:01:00 | 12345     | 111111    | 2            | 123        | ... |
 | XX2 | 2016-11-04 11:06:00 | 12346     | 111112    | 3            | 123        | ... |
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode gebruikt.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer het verzoek uit en print het resultaat
-    print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/header"));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer het verzoek uit en print het resultaat
+print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/header"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

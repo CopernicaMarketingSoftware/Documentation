@@ -1,4 +1,4 @@
-# REST API: verwijder een veld uit een collectie
+# REST API - DELETE collection field
 
 Deze methode verwijdert een veld uit een collectie. De methode kan aangeroepen worden met een HTTP DELETE verzoek aan de volgende URL:
 
@@ -9,14 +9,16 @@ De eerste `$id` moet vervangen worden door de numerieke identifier van de collec
 ## Voorbeeld in PHP
 Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken met de API:
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// voer de methode uit
-	$api->delete("collection/1234/field/firstname");
+// voer de methode uit
+$api->delete("collection/id/field/id");
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 

@@ -1,4 +1,4 @@
-# REST API: aanpassen van profiel eigenschappen
+# REST API - PUT profile
 
 Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 
@@ -16,36 +16,39 @@ De volgende parameters kunnen in de message body van het HTTP PUT command worden
 - **secret**: De geheime code die gelinkt is aan het profiel
 
 
-## Voorbeeld in PHP
+## Voorbeeld
 
 Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data voor de methode
+// data voor de methode
 
-    $data = array(
-        "fields" => array(
-            'firstname' =>  'John',
-            'lastname'  =>  'Doe',
-            'email'     =>  'johndoe@example.com'
-        ),
-        "interests" = array(
-            'football'  =>  0,
-            'tennis'    =>  1,
-            'hockey'    =>  1
-        ),
-        "secret" => "geheimecode"
-    );
+$data = array(
+    "fields" => array(
+        'firstname' =>  'John',
+        'lastname'  =>  'Doe',
+        'email'     =>  'johndoe@example.com'
+    ),
+    "interests" = array(
+        'football'  =>  0,
+        'tennis'    =>  1,
+        'hockey'    =>  1
+    ),
+    "secret" => "geheimecode"
+);
 
-    // voer het verzoek uit en print het resultaat
-    print_r($api->put("profile/1234", array(), $data));
+// voer het verzoek uit en print het resultaat
+print_r($api->put("profile/1234", array(), $data));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

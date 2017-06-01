@@ -1,4 +1,4 @@
-# REST API: opvragen beschikbare miniselecties
+# REST API - GET collection miniviews
 
 Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,
@@ -25,31 +25,35 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van miniselecties. Voor elke selectie
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: numeriek ID van de miniselectie
-* **name**: naam van de miniselectie
-* **description**: omschrijving van de miniselectie
-* **parent-type**: dit is altijd de string "collection"
-* **parent-id**: ID van de collectie waar deze miniselectie onder valt
+* id:               numeriek id van de miniselectie;
+* name:             naam van de miniselectie;
+* description:      omschrijving van de miniselectie;
+* parent-type:      dit is altijd de string "collection";
+* parent-id:        id van de collectie waar deze miniselectie onder valt.
+
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit in je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters voor de opvraag
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
-    // voer de methode uit en print de resultaten
-    print_r($api->get("collection/1234/miniviews", $parameters));
+// verander dit in je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de opvraag
+$parameters = array(
+    'limit'     =>  100
+);
+
+// voer de methode uit en print de resultaten
+print_r($api->get("collection/id/miniviews", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

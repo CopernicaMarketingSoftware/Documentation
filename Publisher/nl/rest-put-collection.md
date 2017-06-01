@@ -1,4 +1,4 @@
-# REST API: bijwerken gegevens van een collectie
+# REST API - PUT collection
 
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
@@ -7,6 +7,7 @@ kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.
+
 
 ## Beschikbare parameters
 
@@ -17,25 +18,29 @@ geplaatst:
 * **database**: de ID van de database waar de collectie in staat
 * **fields**: velden in de collectie
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica-rest-api.php');
+```php
+// vereiste scripts
+require_once('copernica-rest-api.php');
 
-    // verander dit naar access token
-    $api = new CopernicaRestApi("your-access-token");
+// verander dit naar access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data voor de methode
-    $data = array(
-        'name'  =>  'new-collection-name'
-    );
-    
-    // voer het verzoek uit
-    api->put("collection/1234", $data);
-    
+// data voor de methode
+$data = array(
+    'name'  =>  'new-collection-name'
+);
+
+// voer het verzoek uit
+api->put("collection/1234", $data);
+```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

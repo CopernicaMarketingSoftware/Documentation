@@ -1,4 +1,4 @@
-# REST API: interesses aan een profiel toevoegen
+# REST API - POST profile interests
 
 Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
@@ -7,6 +7,7 @@ request sturen naar de volgende URL:
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.
+
 
 ## Body data
 
@@ -22,10 +23,12 @@ De tweede manier is om een object te sturen als body data dat als keys interesse
 als waardes booleans om aan te geven of een interesse geactiveerd moet worden. Zo kunnen bestaande 
 interesses ook uitgeschakeld worden. Elke interesse die hierin niet genoemd wordt blijft hetzelfde.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
+```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
@@ -47,8 +50,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
     // voer het verzoek uit
     $api->post("profile/1235/interests", $data2);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

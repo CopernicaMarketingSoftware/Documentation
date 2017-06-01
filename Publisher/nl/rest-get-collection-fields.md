@@ -1,4 +1,4 @@
-# REST API: opvragen velden van een collectie
+# REST API - GET collection fields
 
 Een collectie is een geneste tweede laag bij een database. Een collectie 
 heeft dus ook velden. Om deze velden op te vragen kun je een HTTP GET request
@@ -8,6 +8,7 @@ sturen naar het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
+
 
 ## Beschikbare parameters
 
@@ -26,7 +27,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van velden in de database. Voor elk veld
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: numeriek ID van het veld
+* **id**: numeriek id van het veld
 * **name**: naam van het veld
 * **type**: veld type
 
@@ -52,7 +53,8 @@ print_r($api->get("collection/1234/fields", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-    
+   
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

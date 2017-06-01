@@ -1,4 +1,4 @@
-# GET rule conditions
+# REST API - GET rule conditions
 
 Een methode om conditions van een rule op te vragen. 
 Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:

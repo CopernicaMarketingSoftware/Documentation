@@ -6,6 +6,7 @@ Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit
 
 De `$id` moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
 
+
 ## Beschikbare parameters
 
 De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet tenminste een naam worden meegegeven.
@@ -15,6 +16,7 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 - conditions:               array van condities waar profielen binnen de selectie aan moeten voldoen, zoals bepaalde waarden in bepaalde velden;
 - inversed:                 boolean waarde die met waarde "True" alleen profielen teruggeeft die juist *niet* aan de regel voldoen;
 - disabled:                 boolean waarde die aangeeft of de regel wel of niet uitgeschakeld is.
+
 
 ## Voorbeeld in PHP
 
@@ -40,6 +42,7 @@ $api->post("view/id/rules", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

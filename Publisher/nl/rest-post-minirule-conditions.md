@@ -1,4 +1,5 @@
 # REST API - POST minirule conditions
+
 Een methode om condities voor een miniregel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
@@ -30,6 +31,7 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -52,6 +54,7 @@ $api->post("minirule/id/conditions", array(), $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

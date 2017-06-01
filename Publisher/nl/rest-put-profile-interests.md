@@ -1,4 +1,4 @@
-# REST API: interesses van profiel overschrijven
+# REST API - PUT profile interests
 
 Om de interesses van een profiel te overschrijven, kun je een HTTP PUT
 request sturen naar de volgende URL:
@@ -8,6 +8,7 @@ request sturen naar de volgende URL:
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel
 kun je in de body van het bericht plaatsen.
+
 
 ## Body data
 
@@ -23,7 +24,8 @@ de interessenamen, en de velden boolean waardes om te bepalen of de interesse
 aan of uit wordt geschakeld. Eventuele interesses die je _niet_ in het object
 opneemt, worden automatisch uitgeschakeld.
 
-## Voorbeeld in PHP
+
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call worden de interessen van een profiel met ID 4567 aangepast.
@@ -31,6 +33,7 @@ Voor profiel 1234 worden de interesses "tennis" en "hockey" geactiveerd, en
 alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld) 
 uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'football' geactiveerd en alle andere interesses uitgeschakeld (eerste methode).
 
+```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
@@ -52,8 +55,10 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     
     // voer het verzoek uit
     $api->put("profile/1235/interests", $parameters, $data);
-    
+```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
+
     
 ## Meer informatie
 

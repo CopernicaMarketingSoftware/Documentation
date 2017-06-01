@@ -1,4 +1,4 @@
-# REST API: vraag selectie metadata op
+# REST API - GET view
 
 Een methode om de metadata van een database op te vragen. De methode kan aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
@@ -6,13 +6,15 @@ Een methode om de metadata van een database op te vragen. De methode kan aangero
 
 Hier moet de `$id` vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
 
+
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
 
+
 ## Geretourneerde velden
 
-- **ID**: unieke numerieke identifier van selectie
+- **id**: unieke numerieke identifier van selectie
 - **name**: naam van de selectie
 - **description**: beschrijving van de selectie
 - **parent-type**: type van de parent (view/database)
@@ -25,16 +27,19 @@ Er zijn geen beschikbare parameters voor deze methode.
 
 Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden met de API:
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// voer de methode uit en print het resultaat
-	print_r($api->get("view/1234"));
+// voer de methode uit en print het resultaat
+print_r($api->get("view/1234"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

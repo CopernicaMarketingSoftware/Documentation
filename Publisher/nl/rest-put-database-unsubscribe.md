@@ -1,4 +1,4 @@
-# REST API: afmeldalgoritme instellen
+# REST API - PUT database unsubscribe
 
 Bij elke database kun je het afmeldalgoritme instellen. Als er op de servers
 van Copernica een afmelding binnenkomt wordt deze instelling gebruikt om te
@@ -14,6 +14,7 @@ De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet
 je in de body van het HTTP request plaatsen.
 
+
 ## Beschikbare parameters
 
 De volgende variabelen moeten in de body van het HTTP PUT commando worden
@@ -24,28 +25,32 @@ geplaatst:
 
 De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij 'remove' wordt het profiel uit de database verwijderd en bij 'update' wordt het profiel geupdate om aan te geven dat deze klant geen email meer wil ontvangen. Op deze manier blijft de klant wel in de database staan. De "fields" instelling geeft nieuwe veldwaardes in het geval dat het profiel geupdate wordt. In de andere gevallen heeft deze parameter dus geen nut.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. In
 het voorbeeld wordt ingesteld dat, als iemand zich afmeldt, het veld 'newsletter'
 op 'no' wordt gezet:
 
-    // vereiste scripts
-    require_once('copernica-rest-api.php');
+```php
+// vereiste scripts
+require_once('copernica-rest-api.php');
 
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // data voor de methode
-    $data = array(
-        'behavior'      =>  'update',
-        'fields'        =>  array('newsletter' => 'no')
-    );
-    
-    // voer het verzoek uit
-    api->put("database/1234", array(), $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'behavior'      =>  'update',
+    'fields'        =>  array('newsletter' => 'no')
+);
+
+// voer het verzoek uit
+api->put("database/1234", array(), $data);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

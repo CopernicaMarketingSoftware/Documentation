@@ -1,4 +1,4 @@
-# REST API: opvragen van profielen in een database
+# REST API - GET database profiles
 
 De methode om profielen uit een database op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:
@@ -7,6 +7,7 @@ en beschikbaar via het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de profielen van wilt opvragen.
+
 
 ## Beschikbare parameters
 
@@ -37,6 +38,7 @@ parameter *order* geven:
 * **random**: de profielen worden in willekeurige volgorde teruggegeven
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
 
+
 ## Geretourneerde velden
 
 De methode retourneert een lijst van profielen. Voor elk profiel worden de 
@@ -50,6 +52,7 @@ volgende eigenschappen teruggegeven:
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. Omdat
@@ -57,21 +60,23 @@ we in het voorbeeld de CopernicaRestApi klasse gebruiken, hoef je je niet heel
 druk te maken over het vervangen van speciale tekens in de URL. Dat doet de
 klasse automatisch.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je acces token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters voor de methode
-    $parameters = array(
-        'limit'     =>  100,
-        'orderby'   =>  'country',
-        'fields'    =>  array("age>16", "age<=65")
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("database/1234/profiles", $parameters));
+// verander dit naar je acces token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("database/1234/profiles", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
     

@@ -1,4 +1,4 @@
-# REST API: Opvragen van events bij een Marketing Suite bericht
+# REST API - GET message events
 
 Als je events bij een met Marketing Suite verstuurd bericht wilt
 downloaden, dan kun je die opvragen door middel van een eenvoudige
@@ -9,6 +9,7 @@ HTTP GET call naar de volgende URL:
 De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben. 
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -17,7 +18,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**: de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
 
 
-### Start en end
+## Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
 tot een maand geleden. Als een start parameter opgegeven
@@ -53,28 +54,33 @@ ziet er als volgt uit:
     ...
 ]
 ```
+
 De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
-## PHP Voorbeeld
+
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // parameters voor de methode
-    $parameters = array(
-        "start"     =>  "2017-02-27"
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("message/1sadf323/events", $parameters));
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
+
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    "start"     =>  "2017-02-27"
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("message/1sadf323/events", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -1,4 +1,4 @@
-# REST API: verwijderen van een veld uit een database
+# REST API - DELETE database field
 
 Als je een HTTP DELETE request stuurt naar de volgende URL, verwijder je een 
 veld uit een database:
@@ -11,14 +11,16 @@ verwijderen.
 
 ## Voorbeeld in PHP
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer het verzoek uit
-    $api->delete("database/1234/field/firstname");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer het verzoek uit
+$api->delete("database/id/field/id");
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 

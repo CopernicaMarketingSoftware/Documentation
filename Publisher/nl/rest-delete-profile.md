@@ -1,4 +1,4 @@
-# REST API: profiel verwijderen
+# REST API - DELETE profile
 
 Het verwijderen van een profiel kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
@@ -6,20 +6,24 @@ Het verwijderen van een profiel kan gedaan worden door een HTTP DELETE verzoek t
 
 De `$id` hier moet vervangen worden door de ID van het profiel dat je wilt verwijderen.
 
+
 ## Voorbeeld in PHP
 
 Het volgende voorbeeld demonstreert hoe je gebruik maakt van deze methode met de API:
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// voer het verzoek uit
-	$api->delete("profile/1234");
+// voer het verzoek uit
+$api->delete("profile/id");
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## More information
 

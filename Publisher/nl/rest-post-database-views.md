@@ -13,6 +13,7 @@ selectie aan wilt toevoegen. De naam van de selectie
 moet als message body aan het HTTP request worden 
 toegevoegd.
 
+
 ## Beschikbare parameters
 
 De volgende variabele moet in de body van de HTTP 
@@ -58,6 +59,7 @@ $api->post("database/id/views", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -1,4 +1,4 @@
-# REST API: opvragen instelling voor het afmeldalgoritme
+# REST API - GET collection unsubscribe
 
 Net als bij databases, kun je ook bij collecties het afmeldalgoritme instellen. 
 Als er op de servers van Copernica een afmelding binnenkomt wordt deze instelling 
@@ -11,6 +11,7 @@ volgende adres:
 `GET https://api.copernica.com/v1/collection/$id/unsubscribe?access_token=xxxx`
 
 Als `$id` moet je de numerieke identifier van een collectie opgeven.
+
 
 ## Geretourneerde velden
 
@@ -28,20 +29,24 @@ De instelling 'update' geeft aan dat subprofielen weliswaar in de collectie blij
 staan en dus niet worden verwijderd, maar dat ze wel worden aangepast. De 
 teruggegeven "fields" setting bevat een object met de nieuwe subprofielwaardes.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer de methode uit en print het resultaat
-    print_r($api->get("collection/1234/unsubscribe"));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer de methode uit en print het resultaat
+print_r($api->get("collection/1234/unsubscribe"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -1,4 +1,4 @@
-# REST API: bijwerken eigenschappen van een databaseveld
+# REST API - PUT database field
 
 Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar
@@ -8,7 +8,8 @@ de volgende URL te sturen:
 
 De eerste `$id` variabele in de URL moet worden vervangen door de numerieke 
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
-tweede $id variabele bevat de naam of het ID van het veld.
+tweede `$id` variabele bevat de naam of het ID van het veld.
+
 
 ## Beschikbare parameters
 
@@ -33,21 +34,24 @@ Dit zijn precies dezelfde velden die ook worden ondersteund door de
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
-    require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // data to be sent to the api
-    $data = array(
-        'name'          =>  'new-field-name'
-    );
-    
-    // do the call
-    api->put("database/1234/field/456", $data);
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data to be sent to the api
+$data = array(
+    'name'          =>  'new-field-name'
+);
+
+// do the call
+api->put("database/1234/field/456", $data);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

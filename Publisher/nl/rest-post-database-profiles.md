@@ -11,6 +11,7 @@ kun je in de body van het HTTP request plaatsen.
 
 Zorg ervoor dat je hier een POST request stuurt en geen PUT request. Hoewel deze vaak niet verschillen zou je in dit geval een methode aanroepen om meerdere profielen te bewerken, zie [meerdere profielen te bewerken](rest-put-database-profiles).
 
+
 ## Beschikbare parameters
 
 De parameters die je in de body van het HTTP POST request plaatst, zijn de
@@ -46,6 +47,7 @@ $api->post("database/1234/profiles", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

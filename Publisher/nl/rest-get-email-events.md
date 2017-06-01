@@ -1,4 +1,4 @@
-# REST API: Opvragen van events bij een email adres
+# REST API - GET email events
 
 Als je events voor een email adres wilt downloaden, dan kun je die opvragen
 door middel van een eenvoudige HTTP GET call naar de volgende URL:
@@ -8,6 +8,7 @@ door middel van een eenvoudige HTTP GET call naar de volgende URL:
 Het `$adres` moet je vervangen door het email adres waarvoor je de gebeurtenissen
 wilt hebben. 
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -16,7 +17,8 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
 
-### Start en end
+
+## Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
 tot een maand geleden. Als een start parameter opgegeven wordt, krijg
@@ -30,11 +32,13 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
 
-### Tags
+
+## Tags
 
 Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
 op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
 je meerdere tags gescheiden door puntkomma's opgeven.
+
 
 ## Geretourneerde informatie
 
@@ -66,21 +70,24 @@ types staan beschreven op de [event types pagnina](./event-types.md).
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // parameters voor de methode
-    $parameters = array(
-        "start"     =>  "2017-02-27"
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("email/john.doe@example.com/events", $parameters));
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
+
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    "start"     =>  "2017-02-27"
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("email/john.doe@example.com/events", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -7,7 +7,6 @@ vervolgens calls maken naar de Copernica REST API.
 
 ## HTTP requests
 
-
 Met de REST API kun je HTTP requests sturen naar de servers van Copernica. 
 De requests worden door onze API servers verwerkt en de opgehaalde of bewerkte 
 data wordt in JSON formaat teruggestuurd. Copernica ondersteunt vier verschillende 
@@ -31,5 +30,3 @@ De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
 * [Requests naar de API sturen en antwoorden verwerken](rest-requests)
 * [Overzicht van de beschikbare API methodes](rest-api)
 * [Veelgebruikte REST parameters bij het opvragen van lijsten](rest-paging)
-
-

@@ -1,4 +1,4 @@
-# REST API: regels opvragen uit een selectie
+# REST API - GET view rules
 
 Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen naar de volgende URL:
 
@@ -31,10 +31,12 @@ Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSO
 - **inversed**: boolean waarde om aan te geven of de regel moet worden geinverteerd. Als deze op "True" staat zijn alle resultaten profielen die *niet* aan de condities voldoen
 - **disabled**: boolean waarde om aan te geven of de regel uitgeschakeld moet zijn of niet
 
-## Voorbeeld in PHP
+
+## Voorbeeld
 
 Het volgende script kan worden gebruikt om regels op te vragen uit een selectie. Omdat de CopernicaRestAPI zelf speciale tekens vervangt hoef je dit alleen zelf te doen als je zelf code schrijf om de URL op te stellen.
 
+```php
     // dependencies
     require_once('copernica_rest_api.php');
     
@@ -48,13 +50,13 @@ Het volgende script kan worden gebruikt om regels op te vragen uit een selectie.
     
     // do the call, and print result
     print_r($api->get("view/1234/rules", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
     
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
 - [GET view rule](./get-view-rule)
 - [GET rule](./rest-get-rule)
-
-

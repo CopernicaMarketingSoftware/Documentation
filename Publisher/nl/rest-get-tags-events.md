@@ -1,4 +1,4 @@
-# REST API: Opvragen van gebeurtenissen met een tag
+# REST API - GET tags events
 
 Als je  gebeurtenissen met een bepaalde tag wilt downloaden, dan kun je
 die opvragen door middel van een eenvoudige HTTP GET call naar de volgende
@@ -13,6 +13,7 @@ scheiden door middel van puntkomma's.
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -21,7 +22,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
 
 
-### Start en end
+## Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
 tot een maand geleden. Als een start parameter opgegeven wordt, krijg
@@ -61,25 +62,28 @@ De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
 
-## PHP Example
+## Voorbeeld
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // parameters voor de methode
-    $parameters = array(
-        "start"     =>  "2017-02-27"
-    );
-    
-    // do the call, and print result
-    print_r($api->get("tags/myTag/events", $parameters));
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    "start"     =>  "2017-02-27"
+);
+
+// do the call, and print result
+print_r($api->get("tags/myTag/events", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## More information
 

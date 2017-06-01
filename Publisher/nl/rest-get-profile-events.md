@@ -1,4 +1,4 @@
-# REST API: Opvragen van profiel gebeurtenissen
+# REST API - GET profile events
 
 Als je profiel events wilt downloaden, dan kun je een eenvoudige  HTTP GET
 call naar de volgende URL sturen.
@@ -7,6 +7,7 @@ call naar de volgende URL sturen.
 
 De `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvoor je de gebeurtenissen wilt hebben.
+
 
 ## Beschikbare parameters
 
@@ -17,7 +18,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **tags**:  optionele tags waarop gefilterd wordt.
 
 
-### Start en end
+## Start en end
 
 Als er geen start en end parameters opgegeven worden, krijg je de events
 tot een maand geleden. Als een start parameter opgegeven wordt, krijg
@@ -31,7 +32,8 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
 
-### Tags
+
+## Tags
 
 Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
 op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
@@ -64,23 +66,25 @@ De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
 
-## PHP Voorbeeld
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // parameters voor de methode
-    $parameters = array(
-        "start"     =>  "2017-02-27"
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("profile/1234/events"), $parameters);
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
+
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    "start"     =>  "2017-02-27"
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("profile/1234/events"), $parameters);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 

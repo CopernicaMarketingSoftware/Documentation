@@ -1,4 +1,4 @@
-# REST API: opvragen van subprofielen van een miniview
+# REST API - GET miniview subprofiles
 
 Subprofielen zijn voor collecties wat reguliere profielen zijn in een database. Je kunt een lijst van subprofielen van een miniselectie
 opvragen door een HTTP GET verzoek naar de volgende URL te sturen:
