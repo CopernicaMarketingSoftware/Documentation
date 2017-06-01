@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode uitvoert in php:
 	// voer het verzoek uit
 	$api->delete("minirule/1234");
 
-Dit voorbeeld gebruikt de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## More information
 

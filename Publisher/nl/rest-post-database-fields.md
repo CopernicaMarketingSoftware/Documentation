@@ -62,7 +62,7 @@ $api->post("database/id/fields", $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Voor bovenstaand voorbeeld heb je de [REST API class](rest-php) nodig.  
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -46,7 +46,7 @@ Het volgende script kan gebruikt worden om de regels van een selectie op te vrag
     // voer het verzoek uit en print het resultaat
     print_r($api->get("view/1234/rules", $parameters));
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode gebruikt in PHP:
 	// voer het verzoek uit
 	$api->delete("miniview/1234");
 
-Dit voorbeeld heeft de [CopernicaRestAPi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -41,6 +41,8 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // voer de methode uit en print het resultaat
     print_r($api->get("collection/1234/unsubscribe"));
 
+Dit voorbeeld vereist de [REST API class](rest-php).
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

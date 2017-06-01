@@ -72,7 +72,7 @@ In de API call wordt een profiel met ID 4567 aangepast.
     // do the call
     $api->put("database/1234/profiles", $parameters, $data);
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
     
 ## Meer informatie
 

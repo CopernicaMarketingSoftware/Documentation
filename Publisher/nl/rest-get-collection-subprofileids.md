@@ -29,8 +29,8 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
     // voer de methode uit en print het resultaat
     print_r($api->get("collection/1234/subprofileids"));
-
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+    
+Dit voorbeeld vereist de [REST API class](rest-php).
     
 ## Meer informatie
 

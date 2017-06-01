@@ -43,6 +43,8 @@ $api = new CopernicaRestApi("your-access-token");
 print_r($api->get("database/id"));
 ```
 
+Dit voorbeeld vereist de [REST API class](rest-php).
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

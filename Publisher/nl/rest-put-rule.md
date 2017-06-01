@@ -35,7 +35,7 @@ Het volgende voorbeeld laat zien hoe je deze methode gebruikt met de API:
 	// voer het verzoek uit en print het resultaat
 	print_r($api->put("database/1234", array(), $data));
 
-Dit voorbeeld vereist de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -45,7 +45,7 @@ $data = array(
 $api->put("profile/1234/fields", array(), $data);
 ```
 
-Dit voorbeeld kun je gebruiken in onze [Copernica REST API class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
     
 ## Meer informatie

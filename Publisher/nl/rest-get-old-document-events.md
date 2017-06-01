@@ -83,7 +83,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     // do the call, and print result
     print_r($api->get("old/document/1234/events", $parameters));
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

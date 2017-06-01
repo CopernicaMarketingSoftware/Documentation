@@ -33,7 +33,7 @@ wat iedere condition inhoudt door erop te klikken:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe de API method te gebruiken is.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ```php
 // vereiste scripts

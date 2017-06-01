@@ -52,8 +52,8 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     
     // voer het verzoek uit
     $api->put("profile/1235/interests", $parameters, $data);
-
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+    
+Dit voorbeeld vereist de [REST API class](rest-php).
     
 ## Meer informatie
 

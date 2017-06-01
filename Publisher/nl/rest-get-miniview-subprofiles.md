@@ -33,10 +33,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("miniview/1234/subprofiles"));
+print_r($api->get("miniview/id/subprofiles"));
 ```
 
-Dit voorbeeld vereist de Copernica [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 
 ## Meer informatie

@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert het gebruik van deze methode met de API:
 	// voer het verzoek uit
 	$api->delete("view/1234");
 
-Dit voorbeeld vereist de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

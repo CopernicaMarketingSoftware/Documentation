@@ -32,8 +32,8 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
 	// voer het verzoek uit en print het resultaat
 	print_r($api->get("minirule/1234"));
-
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+	
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

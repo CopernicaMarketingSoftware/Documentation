@@ -18,7 +18,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken met de AP
 	// voer de methode uit
 	$api->delete("collection/1234/field/firstname");
 
-Dit voorbeeld gebruikt de [CopernicaRestAPi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -29,9 +29,9 @@ Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken:
 	$api = new CopernicaRestApi("your-access-token");
 
 	// voer het verzoek uit en print het resultaat
-	print_r($api->get("view/1234"));
+	print_r($api->get("view/id"));
 
-Dit voorbeeld vereist de [CopernicaRestApi klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

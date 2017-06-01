@@ -53,7 +53,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
     // voer methode uit en print resultaat
     print_r($api->get("database/1234/fields", $parameters));
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 

@@ -23,7 +23,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit
     // do the call, and print result
     print_r($api->get("logfiles"));
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](./rest-php.md).
+Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
