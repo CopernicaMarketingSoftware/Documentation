@@ -1,4 +1,4 @@
-# REST API: opvragen meta data
+# REST API - GET minirule
 
 Dit is een methode om alle metadata van een regel binnen een selectie in een collectie (miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 
@@ -6,9 +6,11 @@ Dit is een methode om alle metadata van een regel binnen een selectie in een col
 
 De `$id` hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
 
+
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
+
 
 ## Teruggeven velden
 
@@ -20,20 +22,24 @@ Deze methode geeft een JSON miniregel object terug met de volgende eigenschappen
 - **inversed**: boolean waarde om aan te geven of de regel wel of niet geinverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
-	// vereiste scripts
-	require_once('copernica_rest_api.php');
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-	// verander dit naar je access token
-	$api = new CopernicaRestApi("your-access-token");
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// voer het verzoek uit en print het resultaat
-	print_r($api->get("minirule/1234"));
-	
+// voer het verzoek uit en print het resultaat
+print_r($api->get("minirule/1234"));
+```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

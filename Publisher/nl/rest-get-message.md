@@ -1,4 +1,4 @@
-# REST API: Opvragen van algemene informatie voor een Marketing Suite message ID
+# REST API - GET message
 
 Als je algemene informatie van een met Marketing Suite verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
@@ -7,14 +7,17 @@ hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
 waar `$id` de unieke string van het bericht is.
 
+
 ## Geretourneerde waarde
 
 Een JSON met de algemene informatie.
+
 
 ## PHP Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
+```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
@@ -23,8 +26,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
     // voer de methode uit en print het resultaat
     print_r($api->get("message/AMRJHv989dfds"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

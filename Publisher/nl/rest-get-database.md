@@ -1,4 +1,4 @@
-GET database gegevens
+REST API - GET database
 
 Dit is een methode om meta gegevens van een database op te vragen. 
 Deze methode ondersteunt geen parameters. De methode is aan te 
@@ -8,6 +8,7 @@ roepen met een HTTP GET request naar de volgende URL:
 
 Als `$id` kun je de numerieke identifier van een database opgeven, of de naam
 van een database.
+
 
 ## Geretourneerde velden
 
@@ -44,6 +45,7 @@ print_r($api->get("database/id"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

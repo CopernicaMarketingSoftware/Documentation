@@ -1,9 +1,10 @@
-# REST API: aanmaken nieuwe database
+# REST API - POST databases
 
 Methode om een nieuwe database aan te maken. Dit is een HTTP POST methode
 naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
+
 
 ## Beschikbare parameters
 
@@ -11,26 +12,30 @@ naar het volgende adres:
 * **description**: optionele omschrijving van de database
 * **archived**: optionele boolean waarde om de database direct te archiveren
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica-rest-api.php');
+```php
+// vereiste scripts
+require_once('copernica-rest-api.php');
 
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // data voor de methode
-    $data = array(
-        'name'          =>  'mijn-test-database',
-        'description'   =>  'omschrijving van de database'
-    );
-    
-    // voer het verzoek uit
-    $api->post("databases", $data);
-    
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'name'          =>  'mijn-test-database',
+    'description'   =>  'omschrijving van de database'
+);
+
+// voer het verzoek uit
+$api->post("databases", $data);
+```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

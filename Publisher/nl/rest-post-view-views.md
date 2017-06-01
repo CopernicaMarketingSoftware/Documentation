@@ -6,6 +6,7 @@ Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan t
 
 De eerste `$id` moet hier vervangen worden door de bovenliggende selectie en de tweede `$id` door de lager gelegen selectie.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen toegevoegd worden aan de body van het bericht. De eigenschappen van deze genestelde selectie zien er hetzelfde uit als die van een reguliere selectie.
@@ -17,6 +18,7 @@ De volgende parameters kunnen toegevoegd worden aan de body van het bericht. De 
 - has-children: 		boolean waarde om aan te geven of er nog selecties onder deze selectie liggen;
 - has-referred: 		boolean waarde om aan te geven of er andere selecties naar deze selectie verwijzen;
 - has-rules: 			boolean waarde om te geven of de selectie regels heeft.
+
 
 ## Voorbeeld
 
@@ -38,6 +40,8 @@ $api->post("view/id/views", array(), $data);
 ```
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
+
 - [Overzicht van alle API methodes](rest-api)
 - [GET view views](./rest-get-view-views)

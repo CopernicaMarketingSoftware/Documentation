@@ -1,4 +1,4 @@
-# REST API: Downloaden van een log file als XML
+# REST API - GET logfiles .xml
 
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een CSV 
@@ -9,6 +9,7 @@ verstuur je een HTTP GET verzoek naar de volgende URL:
 `https://api.copernica.com/v1/logfiles/$filename/xml?access_token=xxxx`
 
 Hier moet je `$filename` vervangen door de bestandsnaam.
+
 
 ## Teruggegeven bestand
 
@@ -41,6 +42,7 @@ Er volgt nu een voorbeeld van hoe zo'n representatie eruit ziet.
 
 Het volgende PHP script demonstreert hoe je de API methode gebruikt.
 
+```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
@@ -49,8 +51,10 @@ Het volgende PHP script demonstreert hoe je de API methode gebruikt.
 
     // voer het verzoek uit en print het resultaat
     print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/xml"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

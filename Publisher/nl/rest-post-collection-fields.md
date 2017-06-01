@@ -1,4 +1,4 @@
-# REST API: aanmaken van een veld in een collectie
+# REST API - POST collection fields
 
 Methode om een veld toe te voegen aan een bestaande collectie. Dit is een HTTP 
 POST call naar het volgende adres:
@@ -8,6 +8,7 @@ POST call naar het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier van de collectie
 waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele
 andere waardes moeten als message body aan het HTTP request worden toegevoegd.
+
 
 ## Beschikbare parameters
 
@@ -40,26 +41,30 @@ Een veld kan de volgende types hebben:
 * **big**: groot tekstveld
 * **foreign_key**: numerieke waarde met verwijzing naar ander profiel
 
-## Voorbeeld in PHP
+
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-    // data to pass to the call
-    $data = array(
-        'name'      =>  'extra-veld',
-        'type'      =>  'text'
-    );
-    
-    // do the call
-    $api->post("collection/1234/fields", $data);
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data to pass to the call
+$data = array(
+    'name'      =>  'extra-veld',
+    'type'      =>  'text'
+);
+
+// do the call
+$api->post("collection/1234/fields", $data);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

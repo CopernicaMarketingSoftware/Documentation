@@ -9,6 +9,7 @@ De code `$id` moet je vervangen door de numerieke identifier of de naam van de
 database waar je een interesse aan wilt toevoegen. De naam van de interesse, 
 en eventuele andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 
+
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
@@ -16,7 +17,8 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 * **name**: Naam van de nieuw aan te maken interesse. Dit veld is verplicht
 * **group**: Optionele groepnaam. Interesses met dezelfde groupnaam worden bij elkaar gezet in de user interface
 
-## Voorbeeld in PHP
+
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
@@ -40,9 +42,10 @@ $api->post("database/id/interests", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
 * [Alle interesses van een database opvragen](rest-get-database-interests)
-* [Interesse bijwerken](rest-put-database-interest)
+* [PUT database interest](rest-put-database-interest)
 * [Interesse verwijderen](rest-delete-database-interest)

@@ -1,4 +1,4 @@
-# REST API: opvragen beschikbare selecties
+# REST API - GET database views
 
 Om op te vragen welke selecties er beschikbaar zijn, kun je de volgende URL
 gebruiken. Je moet een HTTP GET request naar deze URL sturen om de selecties
@@ -8,6 +8,7 @@ op te vragen.
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
+
 
 ## Beschikbare parameters
 
@@ -19,6 +20,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
+
 
 ## Geretourneerde velden
 
@@ -35,25 +37,29 @@ worden de volgende eigenschappen teruggegeven:
 * **has-referred**: boolean waarde; zijn er andere selecties die verwijzen naar deze selectie?
 * **has-rules**: boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters voor de methode
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("database/1234/views", $parameters));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    'limit'     =>  100
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("database/1234/views", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

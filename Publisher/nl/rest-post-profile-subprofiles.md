@@ -1,4 +1,4 @@
-# REST API: een subprofile aan een profiel toevoegen
+# REST API - POST profile subprofiles
 
 Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
 kun je een HTTP POST request sturen naar de volgende URL:
@@ -9,6 +9,7 @@ De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waaraan je een subprofiel wil toevoegen en `$collectionID` moet vervangen worden
 met de identifier van de collectie waarin je het subprofiel wil toevoegen.
 De inhoud van het subprofiel kun je in de message body plaatsen.
+
 
 ## Body data
 
@@ -45,6 +46,7 @@ $api->post("profile/id/subprofiles/321", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

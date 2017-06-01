@@ -1,4 +1,4 @@
-# REST API: bijwerken gegevens van een selectie
+# REST API - PUT view
 
 Methode om de properties van een selectie bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:
@@ -7,6 +7,7 @@ methode die toegankelijk is via het volgende adres:
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de selectie die je wilt bewerken.
+
 
 ## Beschikbare parameters
 
@@ -21,25 +22,29 @@ geplaatst:
 - **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren
 - **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet
 
-## Voorbeeld in PHP
+
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica-rest-api.php');
+```php
+// vereiste scripts
+require_once('copernica-rest-api.php');
 
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
-    
-    // data voor de methode
-    $data = array(
-        'description'   =>  'een nieuwe omschrijving',
-    );
-    
-    // voer het verzoek uit
-    api->put("view/1234", $parameters, $data);
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// data voor de methode
+$data = array(
+    'description'   =>  'een nieuwe omschrijving',
+);
+
+// voer het verzoek uit
+api->put("view/1234", $parameters, $data);
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

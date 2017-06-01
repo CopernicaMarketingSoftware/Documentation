@@ -1,4 +1,4 @@
-# REST API: profielvelden overschrijven
+# REST API - PUT profile fields
 
 Om de velden van een profiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:
@@ -22,7 +22,7 @@ moeten de variabelen de namen van de te wijzigen velden bevatten, en de
 waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 
 
-## Voorbeeld in PHP
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call wordt een profiel met ID 4567 aangepast.
@@ -47,7 +47,7 @@ $api->put("profile/1234/fields", array(), $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-    
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

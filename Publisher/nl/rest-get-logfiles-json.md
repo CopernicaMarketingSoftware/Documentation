@@ -1,4 +1,4 @@
-# REST API: Downloaden van een logfile als JSON bestand
+# REST API - GET logfiles .json
 
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een JSON 
@@ -9,6 +9,7 @@ verzoek sturen naar de volgende URL:
 `https://api.copernica.com/v1/logfiles/$filename/json?access_token=xxxx`
 
 Hier moet je `$filename` vervangen door de bestandsnaam.
+
 
 ## Teruggegeven bestand
 
@@ -52,16 +53,19 @@ Hieronder staat een voorbeeld van hoe deze representatie eruit ziet.
 
 Het volgende PHP script demonstreert hoe je de API methode gebruikt.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer het verzoek uit en print het resultaat
-    print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/json"));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// voer het verzoek uit en print het resultaat
+print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/json"));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

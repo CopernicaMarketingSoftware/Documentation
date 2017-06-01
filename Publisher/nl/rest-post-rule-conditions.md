@@ -55,6 +55,7 @@ $api->post("rule/id/conditions", array(), $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)

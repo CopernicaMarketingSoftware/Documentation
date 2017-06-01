@@ -1,4 +1,4 @@
-# GET unsubscribe behavior
+# REST API - GET database unsubscribe
 
 Bij elke database kun je het afmeldalgoritme instellen. Hiermee wordt bepaald
 hoe met afmeldingen moet worden omgaan. Er wordt bijvoorbeeld bepaald of een 
@@ -44,6 +44,7 @@ $api = new CopernicaRestApi("your-access-token");
 // voer de methode uit en print het resultaat
 print_r($api->get("database/id/unsubscribe"));
 ```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
 
 

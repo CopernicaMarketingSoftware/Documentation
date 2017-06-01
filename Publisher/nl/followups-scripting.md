@@ -29,14 +29,14 @@ data-scripts kunt gebruiken. Met deze objecten kun
 je gegevens uit je account ophalen en bewerken. 
 Hiervoor zijn de volgende objecten beschikbaar:
 
-| Objecten                                           |
-|----------------------------------------------------|
-| [copernica](./followups-scripting-copernica)       |
-| [mailing](./followups-scripting-mailing)           |
-| [template](./followups-scripting-template)         |
-| [message](./followups-scripting-message)           |
-| [destination](./followups-scripting-destination)   |
-| [profile](./followups-scripting-profile)           |
+Objecten:
+                                      
+* [copernica](./followups-scripting-copernica);
+* [mailing](./followups-scripting-mailing);      
+* [template](./followups-scripting-template);  
+* [message](./followups-scripting-message);     
+* [destination](./followups-scripting-destination);
+* [profile](./followups-scripting-profile).        
 
 
 Deze objecten hebben een ding gemeen. Namelijk, ze bezitten 

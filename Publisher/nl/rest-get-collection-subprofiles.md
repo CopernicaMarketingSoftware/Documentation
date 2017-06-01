@@ -1,4 +1,4 @@
-# REST API: opvragen van subprofielen in een collectie
+# REST API - GET collection subprofiles
 
 De methode om subprofielen uit een collectie op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:
@@ -7,6 +7,7 @@ en beschikbaar via het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen.
+
 
 ## Beschikbare parameters
 
@@ -28,27 +29,29 @@ alleen subprofielen wil opvragen waarbij de waarde van het veld "land" gelijk is
 gebruik van deze *fields* parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele *order* kun je de naam of het ID van een veld geven. De profielen
-worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
+De variabele *order* kun je de naam of het id van een veld geven. De profielen
+worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of id van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
 parameter *order* geven:
 
-* **id**: dit is de standaardwaarde, subprofielen worden gesorteerd aan de hand van het ID
+* **id**: dit is de standaardwaarde, subprofielen worden gesorteerd aan de hand van het id
 * **random**: de subprofielen worden in willekeurige volgorde teruggegeven
 * **modified**: de subprofielen worden gesorteerd op basis het *modified* timestamp.
+
 
 ## Geretourneerde velden
 
 De methode retourneert een lijst van subprofielen. Voor elk subprofiel worden de 
 volgende eigenschappen teruggegeven:
 
-* **ID**: numeriek ID van het subprofiel
-* **collection**: ID van de collectie waarin het subprofiel is opgeslagen
-* **profile**: ID van het profiel waar het subprofiel bij hoort
+* **id**: numeriek id van het subprofiel
+* **collection**: id van de collectie waarin het subprofiel is opgeslagen
+* **profile**: id van het profiel waar het subprofiel bij hoort
 * **secret**: de "geheime" code die aan een subprofiel is gekoppeld
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **created**: tijdstip waarop het subprofiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
 * **modified**: tijdstip waarop het subprofiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
+
 
 ## Voorbeeld in PHP
 
@@ -57,22 +60,24 @@ we in het voorbeeld de CopernicaRestApi klasse gebruiken, hoef je je niet heel
 druk te maken over het vervangen van speciale tekens in de URL. Dat doet de
 klasse automatisch.
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters voor de methode
-    $parameters = array(
-        'limit'     =>  100,
-        'orderby'   =>  'country',
-        'fields'    =>  array("age>16", "age<=65")
-    );
-    
-    // voer de methode uit en print het resultaat
-    print_r($api->get("collection/1234/subprofiles", $parameters));
-    
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("collection/1234/subprofiles", $parameters));
+```
+
 Dit voorbeeld vereist de [REST API class](rest-php).
     
 

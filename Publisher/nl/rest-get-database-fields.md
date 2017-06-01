@@ -1,4 +1,4 @@
-# REST API: opvragen velden in een database
+# REST API - GET database fields
 
 Methode om een overzicht op te vragen van alle beschikbare velden in een database. 
 Dit is een HTTP GET call naar het volgende adres:
@@ -8,16 +8,18 @@ Dit is een HTTP GET call naar het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de velden van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste database die wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal databases in de output
+* start: eerste database die wordt opgevraagd
+* limit: lengte van de batch die wordt opgevraagd
+* total: toon wel/niet het totaal aantal databases in de output
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
+
 
 ## Geretourneerde velden
 
@@ -35,25 +37,29 @@ worden de volgende eigenschappen teruggegeven:
 * **hidden**: boolean waarde of dit veld verborgen is en *nooit* wordt getoond in de user interface
 * **index**: boolean waarde die aangeeft of er een index bijgehouden word (dit maakt lookups en selecties sneller)
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // parameters voor de methode
-    $parameters = array(
-        'limit'     =>  100
-    );
-    
-    // voer methode uit en print resultaat
-    print_r($api->get("database/1234/fields", $parameters));
+// verander dit naar je access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters voor de methode
+$parameters = array(
+    'limit'     =>  100
+);
+
+// voer methode uit en print resultaat
+print_r($api->get("database/1234/fields", $parameters));
+```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 
