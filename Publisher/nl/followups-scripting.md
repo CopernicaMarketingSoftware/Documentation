@@ -28,8 +28,6 @@ Er zijn verschillende soorten objecten die je in je
 data-scripts kunt gebruiken. Met deze objecten kun 
 je gegevens uit je account ophalen en bewerken. 
 Hiervoor zijn de volgende objecten beschikbaar:
-
-Objecten:
                                       
 * [copernica](./followups-scripting-copernica);
 * [mailing](./followups-scripting-mailing);      

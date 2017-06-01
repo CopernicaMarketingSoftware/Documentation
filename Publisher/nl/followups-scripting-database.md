@@ -1,4 +1,4 @@
-# Database data-script
+# Data-script - database
 
 Je kunt het database data-script gebruiken om data uit de database
 op te vragen of te veranderen. Er zijn een aantal eigenschappen

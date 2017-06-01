@@ -1,4 +1,4 @@
-# Mailing data-script
+# Data-script - mailing
 
 Het mailing data-script kan worden gebruikt om informatie op te vragen over een mailing. 
 

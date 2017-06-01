@@ -1,4 +1,4 @@
-# Template data-script
+# Data-script - template
 
 Het template data-script kan worden gebruikt om informatie van een template op te vragen of aan te passen. 
 
