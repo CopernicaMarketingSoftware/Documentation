@@ -25,21 +25,23 @@ The following variables can be set in the message body:
 ## PHP example
 The following script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'database' => database_id
-	);
+// data to pass to the call
+$data = array(
+    'database' => database_id
+);
 
-	// do the call
-	$api->post("database/1234/profiles", $data);
+// do the call
+$api->post("database/1234/profiles", $data);
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information:
 - [Overview of all API calls](rest-api)

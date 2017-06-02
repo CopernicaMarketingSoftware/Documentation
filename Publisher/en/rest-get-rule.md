@@ -28,16 +28,18 @@ If set to "True" only profiles *not* conforming to the conditions are selected
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("rule/1234"));
+// do the call, and print result
+print_r($api->get("rule/1234"));
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

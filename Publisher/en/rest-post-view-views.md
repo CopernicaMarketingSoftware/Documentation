@@ -21,21 +21,23 @@ The following parameters can be added to the message body. Note that because thi
 ## PHP example
 The following PHP example demonstrates how to use the method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$data = array(
-	    'description'     =>  'new description'
-	);
+// parameters to pass to the call
+$data = array(
+    'description'     =>  'new description'
+);
 
-	// do the call
-	$api->post("view/1234/views", array(), $data);
+// do the call
+$api->post("view/1234/views", array(), $data);
+```
 
-This example uses the [CopernicaRestApi class](rest-php)
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 * [Overview of all API methods](rest-api)

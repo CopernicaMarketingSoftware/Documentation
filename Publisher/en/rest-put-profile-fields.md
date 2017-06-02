@@ -14,23 +14,25 @@ If, however, you’re using a traditional x-www-form-urlencoded format, the vari
 ## PHP example
 The following example illustrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'firstname' =>  'John',
-	    'lastname'  =>  'Doe',
-	    'email'     =>  'johndoe@example.com'
-	);
+// data to pass to the call
+$data = array(
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
+);
 
-	// do the call
-	$api->put("profile/1234/fields", $data);
+// do the call
+$api->put("profile/1234/fields", $data);
+```
 
-For this example, you need [the CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

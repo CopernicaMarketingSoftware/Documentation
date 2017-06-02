@@ -17,16 +17,18 @@ The method retuns a JSON array consisting of numerical identifiers of profiles.
 ## PHP example
 The following PHP script demonstrates how to use the API method.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("database/1234/profileids"));
+// do the call, and print result
+print_r($api->get("database/1234/profileids"));
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

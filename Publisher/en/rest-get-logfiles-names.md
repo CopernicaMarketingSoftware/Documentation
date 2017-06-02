@@ -39,16 +39,18 @@ To download a log file please see the links under "More information".
 
 The following PHP script demonstrates how to use the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("logfiles/2017-02-12"));
+// do the call, and print result
+print_r($api->get("logfiles/2017-02-12"));
+```
 
-For the example above you need the [CopernicaRestApi class](./rest-php.md).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

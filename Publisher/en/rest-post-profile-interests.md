@@ -32,27 +32,29 @@ For profile 1234 the interests "tennis" and "hockey" are activated and the
 interest "football" is deactivated. All other interests remain the same.
 After this the interest "football" is added to profile 1235.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+   
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call, the new interests
-    $data = array(
-        'football'  =>  0,
-        'tennis'    =>  1,
-        'hockey'    =>  1
-    );
+// data to pass to the call, the new interests
+$data = array(
+    'football'  =>  0,
+    'tennis'    =>  1,
+    'hockey'    =>  1
+);
     
-    // do the call
-    $api->post("profile/1234/interests", $data);
+// do the call
+$api->post("profile/1234/interests", $data);
 
-    // data to pass to a second call
-    $data = array('football');
+// data to pass to a second call
+$data = array('football');
     
-    // do the call
-    $api->post("profile/1235/interests", $data);
+// do the call
+$api->post("profile/1235/interests", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
     

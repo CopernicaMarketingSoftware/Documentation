@@ -35,21 +35,23 @@ information is returned:
 
 The following PHP script demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // insert your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+  
+// insert your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters for the call
-    $parameters = array(
-        'limit'     =>  100
-    );
+// parameters for the call
+$parameters = array(
+    'limit'     =>  100
+);
     
-    // execute the method and print the results
-    print_r($api->get("collection/1234/miniviews", $parameters));
+// execute the method and print the results
+print_r($api->get("collection/1234/miniviews", $parameters));
+```
 
-The above example requires the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

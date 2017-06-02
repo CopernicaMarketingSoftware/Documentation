@@ -16,22 +16,24 @@ The following variables can be used in the body of the HTTP PUT request:
 ## PHP example
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to be sent to the api
-	$data = array(
-	    'description'   =>  'a new description',
-	    'archived'      =>  true
-	);
+// data to be sent to the api
+$data = array(
+    'description'   =>  'a new description',
+    'archived'      =>  true
+);
 
-	// do the call
-	api->put("database/1234", $data);
+// do the call
+api->put("database/1234", $data);
+```
 
-For this example, you need [the CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

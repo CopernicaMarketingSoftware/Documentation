@@ -21,16 +21,18 @@ the subprofiles from the given collection.
 
 The following PHP script demonstrates how to call this API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+   
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("collection/1234/subprofileids"));
+// do the call, and print result
+print_r($api->get("collection/1234/subprofileids"));
+```
 
-The example above needs the [CopernicaRestApi class](rest-php).    
+The example above requires the [CopernicaRestApi class](rest-php).   
 
 ## More information
 

@@ -54,24 +54,25 @@ CopernicaRestApi class that we use in the example takes care of escaping the
 parameters that are passed to the URL. If you write your own code to construct
 the URL, you must take care of escaping the parameters yourself.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100,
-        'orderby'   =>  'country',
-        'fields'    =>  array("age>16", "age<=65")
-    );
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
     
-    // do the call, and print result
-    print_r($api->get("view/1234/profiles", $parameters));
+// do the call, and print result
+print_r($api->get("view/1234/profiles", $parameters));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
-    
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

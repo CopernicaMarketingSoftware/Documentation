@@ -38,22 +38,24 @@ The following types are available for fields:
 ## Example in PHP
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'name'      =>  'extra-field',
-	    'type'      =>  'text'
-	);
+// data to pass to the call
+$data = array(
+    'name'      =>  'extra-field',
+    'type'      =>  'text'
+);
 
-	// do the call
-	$api->post("database/1234/fields", $data);
+// do the call
+$api->post("database/1234/fields", $data);
+```
 
-For this example, you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
