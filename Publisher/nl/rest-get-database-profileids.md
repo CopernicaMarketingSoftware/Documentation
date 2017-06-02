@@ -1,4 +1,4 @@
-# REST API - GET database profile id
+# REST API: GET database profile id
 
 Als je alleen maar de ID's van de profielen in een database wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 

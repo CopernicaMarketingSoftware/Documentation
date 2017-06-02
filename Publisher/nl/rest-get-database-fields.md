@@ -1,4 +1,4 @@
-# REST API - GET database fields
+# REST API: GET database fields
 
 Methode om een overzicht op te vragen van alle beschikbare velden in een database. 
 Dit is een HTTP GET call naar het volgende adres:

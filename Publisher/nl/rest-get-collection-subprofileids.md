@@ -1,4 +1,4 @@
-# REST API - GET collection subrofile id
+# REST API: GET collection subrofile id
 
 Als je alleen maar de ID's van de subprofielen in een collectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 

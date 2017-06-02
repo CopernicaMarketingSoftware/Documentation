@@ -1,4 +1,4 @@
-# REST API - GET collection unsubscribe
+# REST API: GET collection unsubscribe
 
 Net als bij databases, kun je ook bij collecties het afmeldalgoritme instellen. 
 Als er op de servers van Copernica een afmelding binnenkomt wordt deze instelling 

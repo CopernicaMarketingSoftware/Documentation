@@ -1,4 +1,4 @@
-# REST API - GET tags events
+# REST API: GET tags events
 
 Als je  gebeurtenissen met een bepaalde tag wilt downloaden, dan kun je
 die opvragen door middel van een eenvoudige HTTP GET call naar de volgende

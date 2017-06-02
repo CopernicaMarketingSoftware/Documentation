@@ -1,4 +1,4 @@
-# REST API - GET old message events
+# REST API: GET old message events
 
 Als je events bij een met Publisher verstuurd bericht wilt downloaden,
 dan kun je die opvragen door middel van een eenvoudige HTTP GET call naar

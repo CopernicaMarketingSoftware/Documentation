@@ -1,4 +1,4 @@
-# REST API - GET databases
+# REST API: GET databases
 
 Je kunt alle informatie omtrent databases opvragen 
 met de onderstaande methode. Dit is een HTTP GET 

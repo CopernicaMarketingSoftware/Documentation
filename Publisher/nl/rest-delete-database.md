@@ -1,4 +1,4 @@
-# REST API - DELETE database
+# REST API: DELETE database
 
 Methode om een database (en dus ook alle bijbehorende profielen!) te verwijderen.
 Dit is een HTTP DELETE methode, naar het volgende adres:

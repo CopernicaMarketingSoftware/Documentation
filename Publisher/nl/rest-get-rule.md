@@ -1,4 +1,4 @@
-# REST API - GET rule
+# REST API: GET rule
 
 Dit is een methode om alle metadata van een regel op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 

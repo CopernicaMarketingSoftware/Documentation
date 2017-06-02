@@ -1,4 +1,4 @@
-# REST API - GET database unsubscribe
+# REST API: GET database unsubscribe
 
 Bij elke database kun je het afmeldalgoritme instellen. Hiermee wordt bepaald
 hoe met afmeldingen moet worden omgaan. Er wordt bijvoorbeeld bepaald of een 

@@ -1,4 +1,4 @@
-# REST API - GET collection fields
+# REST API: GET collection fields
 
 Een collectie is een geneste tweede laag bij een database. Een collectie 
 heeft dus ook velden. Om deze velden op te vragen kun je een HTTP GET request

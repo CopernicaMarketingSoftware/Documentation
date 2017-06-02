@@ -1,4 +1,4 @@
-# REST API - POST profile subprofiles
+# REST API: POST profile subprofiles
 
 Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
 kun je een HTTP POST request sturen naar de volgende URL:

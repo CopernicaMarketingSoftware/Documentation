@@ -1,4 +1,4 @@
-# REST API - PUT profile interests
+# REST API: PUT profile interests
 
 Om de interesses van een profiel te overschrijven, kun je een HTTP PUT
 request sturen naar de volgende URL:

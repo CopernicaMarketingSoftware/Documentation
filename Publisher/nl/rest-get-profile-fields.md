@@ -1,4 +1,4 @@
-# REST API - GET profile fields
+# REST API: GET profile fields
 
 Om alleen de velden van een profiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:

@@ -1,4 +1,4 @@
-# REST API - GET database interests
+# REST API: GET database interests
 
 Een overzicht van alle beschikbare interesses in een database kun je opvragen
 met de volgende URL:

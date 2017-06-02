@@ -1,4 +1,4 @@
-# REST API - GET subprofile
+# REST API: GET subprofile
 
 Als je alle gegevens van een enkel subprofiel wilt opvragen, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL

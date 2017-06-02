@@ -1,4 +1,4 @@
-# REST API - GET old message
+# REST API: GET old message
 
 Als je algemene informatie van een met Publisher verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
