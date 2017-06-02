@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **miniview** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## MiniView type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -19,7 +19,7 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 
 Het is mogelijk om meerdere miniviews te combineren als we er te veel hebben. 
 Om te checken of een miniview klein genoeg is kunnen we max-subprofiles naar
-het maximum aantal subprofielen in de miniview zetten
+het maximum aantal subprofielen in de miniview zetten.
 
 ```php
 // vereiste module

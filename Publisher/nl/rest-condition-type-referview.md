@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **referview** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -17,8 +17,8 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 
 ## Voorbeeld
 
-Je kunt deze conditie gebruiken als je na wilt gaan of twee profielen geen
-enkele overlap hebben.
+Je kunt deze conditie gebruiken als je wil weten of twee profielen geen
+enkele overlap hebben, binnen of buiten een view.
 
 ```php
 // vereiste module

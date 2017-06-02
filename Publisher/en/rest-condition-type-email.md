@@ -1,26 +1,27 @@
-# REST API: Condition type email
+# REST conditions: Email
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the email condition.
+This article is about the **email** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
-## Date properties
+## Individual properties
 
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
+The email condition has the following parameters:
 
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: The beforemutation (time difference) for mails sent too early.
-* **after-mutation**: The aftermutation (time difference) for mails sent too late.
+* **required-result**: The certain result of an email. See the required result table.
+* **clicked-url**: The url that must be clicked (only for **required-result** set to "clickonurl").
+* **required-errors**: Error code to use with "error" for **required-result**. 
+Possible values: Error code, "mailmessage", "unreachable", "nocontent", "nohost", 
+"nodata", "privateiprange", "other", "temp" for a temporary error and "final" for 
+an unresolvable error.
 
 ## Mailing properties
+
+The mailing properties are properties related to a mass mailing sent by 
+mail, SMS or fax. The following properties can be used for this condition:
+
 * **match-mode**: Matchmode of the mailing condition. Possible values: 
 "match_profiles_that_received_something", "match_profiles_that_received_document", 
 "match_profiles_that_received_nothing", "match_profiles_that_received_not_document"
@@ -33,14 +34,6 @@ format.
 * **operator**: The operator to compare the number of messages with the number 
 of received messages by the profile/subprofile. Possible values: 
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
-
-## Individual properties
-* **required-result**: The certain result of an email. See the required result table.
-* **clicked-url**: The url that must be clicked (only for **required-result** set to "clickonurl").
-* **required-errors**: Error code to use with "error" for **required-result**. 
-Possible values: Error code, "mailmessage", "unreachable", "nocontent", "nohost", 
-"nodata", "privateiprange", "other", "temp" for a temporary error and "final" for 
-an unresolvable error.
 
 ## Required results
 
@@ -62,17 +55,58 @@ of an email and their descriptions.
 | nothing         | No result is registered.                    |
 | anything        | Any result is registered.                   |
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that received the document before this time
+* **after-time**: Matches only profiles that received the document after this time
+* **before-mutation**: The beforemutation (time difference) for mails sent too early.
+* **after-mutation**: The aftermutation (time difference) for mails sent too late.
+
 ## Example
 
-If we don't want to send emails to people who have errors before we could 
-set "noerror" as a **required-result** setting. This would result in a 
-condition that only destinations that do not cause error satisfy.
+With the properties above you can make selections in very advanced manners. Let's 
+say you want to make a separate selection for people who want to receive 
+your emails. An email might or might not be delivered, which is something 
+you want to keep track of. You can do this by using the required-result 
+with the values "error" or "noerror".
 
-Another example would be to make another selection using a condition for 
-people who clicked on a specific URL. If they have seen an item then it might 
-be a good idea to send them another mail about it! To do this **required-result** 
-would have to be set to "clickonurl" and the **clicked-url** should be set to 
-the item link.
+You can also make selections for people who click a specific URL. If the 
+URL links to a product it would be start to send more information about 
+the product later to convince people to buy it. This increases your chances 
+of your customers buying your projects. The following condition determines 
+whether a specific link was clicked.
+
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select email condition
+    'type' => 'Email',
+    
+    // select desired properties
+    'required-result' => 'clickonurl',
+    
+    // select (in this case) the needed URL
+    'required-url' => 'wwww.example.com',
+
+    // use matchmode
+    'match-mode' => 'match_profiles_that_received_something'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

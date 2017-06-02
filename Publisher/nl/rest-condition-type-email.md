@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **date** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## E-mail type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 

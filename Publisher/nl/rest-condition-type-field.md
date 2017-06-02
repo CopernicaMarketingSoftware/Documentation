@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **field** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
 
 * comparison:           vergelijk type voor fieldconditie. Zie de comparison types tabel.
 * field:                veld om te vergelijken met waarde.
@@ -36,7 +36,8 @@ omschrijvingen.
 
 Stel dat je door middel van een "has_children" veld, weet welke profielen 
 kinderen hebben. In dit geval kun je een specifieke doelgroep e-mailen door
-een selectie te maken op de ouders. Je doet dit met de field conditie. 
+een selectie te maken op de ouders. Je doet dit met de field conditie, die 
+geldt wanneer dit voorbeeldt geldt. 
 
 ```php
 // vereiste module

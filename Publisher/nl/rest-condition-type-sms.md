@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **SMS** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## SMS type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -70,7 +70,6 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
     // selecteer sms conditie
     'type' => 'Sms',
 

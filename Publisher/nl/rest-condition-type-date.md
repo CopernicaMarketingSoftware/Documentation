@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **date** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Date type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -42,7 +42,10 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeeld
+## Voorbeeld in PHP
+
+We kijken hier naar een datum in de database in combinatie met een 
+after-mutation. Als de datum binnen de after-mutation valt geldt deze conditie.
 
 ```php
 // vereiste module

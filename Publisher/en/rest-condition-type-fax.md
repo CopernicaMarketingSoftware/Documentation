@@ -1,26 +1,16 @@
-# REST API: Condition type fax
+# REST conditions: Fax
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the fax condition.
-
-## Date properties
-
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
-
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: The beforemutation (time difference) of the faxcondition.
-* **after-mutation**: The aftermutation (time difference) of the faxcondition.
+This article is about the **fax** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Mailing properties
+
+The mailing properties are properties related to a mass mailing sent by 
+mail, SMS or fax. The following properties can be used for this condition:
+
 * **match-mode**: Matchmode of the mailing condition. Possible values: 
 "match_profiles_that_received_something", "match_profiles_that_received_document", 
 "match_profiles_that_received_nothing", "match_profiles_that_received_not_document"
@@ -34,16 +24,54 @@ format.
 of received messages by the profile/subprofile. Possible values: 
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that received the document before this time
+* **after-time**: Matches only profiles that received the document after this time
+* **before-mutation**: The beforemutation (time difference) of the faxcondition.
+* **after-mutation**: The aftermutation (time difference) of the faxcondition.
+
 ## Example
 
-Using the fax condition we can make a selection of people who have received 
-over 10 messages in the last two months, to prevent us from sending too 
-many messages to the same user. We don't want them to unsubscribe, after all.
-To do this we can use the following values:
+With the fax condition you can make a selectie of people who have received 
+more than 10 messages in the last two months, so they don't get too many 
+emails from you. This way you prevent your receivers from marking your 
+email as spam. The following condition is validated if this is the case.
 
-* **after-time**: Current day - 2 months in YYYY-MM-DD HH:MM:SS format
-* **number**: 10
-* **operator**: >
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select fax condition
+    'type' => 'Fax',
+
+    // use time interval
+    'after-time' => '2017-01-01 00:00:00',
+
+    // set number
+    'number' => '10',
+
+    // set operator
+    'operator' => '>'
+
+    // use matchmode
+    'match-mode' => 'match_profiles_that_received_nothing',
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

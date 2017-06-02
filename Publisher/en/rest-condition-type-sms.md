@@ -1,26 +1,15 @@
-# REST API: Condition type sms
+# REST conditions: SMS
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the sms condition.
-
-## Date properties
-
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
-
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: The beforemutation (time difference) for the smscondition.
-* **after-mutation**: The aftermutation (time difference) for the smscondition.
+This article is about the **SMS** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Mailing properties
+
+The mailing properties are properties related to a mass mailing sent by 
+mail, SMS or fax. The following properties can be used for this condition:
 
 * **match-mode**: Matchmode of the mailing condition. Possible values: 
 "match_profiles_that_received_something", "match_profiles_that_received_document", 
@@ -35,15 +24,48 @@ format.
 of received messages by the profile/subprofile. Possible values: 
 = (equal), \!= (not equal), <\> (between), < (less than), \> (greater than).
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that received the document before this time
+* **after-time**: Matches only profiles that received the document after this time
+* **before-mutation**: The beforemutation (time difference) for the sms condition.
+* **after-mutation**: The aftermutation (time difference) for the sms condition.
+
 ## Example
 
-Let's say we have accidentally send a wrong document to several of our 
-customers and we want to send another mail to apologize (and we don't 
-have the original selection anymore, you could use that as well). We 
-could then select using the sms condition with the following values:
+Imagine that a mailing has been sent with the wrong document by accident. 
+It's crucial to correct this mistake quickly, but the original selection 
+has already been deleted. The SMS condition is perfect for retrieving the 
+profiles the SMS has been sent to.
 
-* **document**: Name of wrong document
-* **match-mode**: "match_profiles_that_received_document"
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select sms condition
+    'type' => 'Sms',
+
+    // set document
+    'document' => 'document x',
+    
+    // use matchmode
+    'match-mode' => 'match_profiles_that_received_document'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 
