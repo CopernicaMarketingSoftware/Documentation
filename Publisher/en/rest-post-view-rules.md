@@ -1,4 +1,4 @@
-# REST API: adding a rule to a selection
+# REST API: POST view rules
 
 Method to add a rule to an existing selection. This is an HTTP POST call to 
 the following URL:

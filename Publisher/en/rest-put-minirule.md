@@ -1,4 +1,4 @@
-# REST API: edit properties of a minirule
+# REST API: PUT minirule
 
 A minirule is to a miniview what a rule is to a view. A method to edit the properties of an existing minirule can be called by sending an HTTP PUT request to the following URL:
 

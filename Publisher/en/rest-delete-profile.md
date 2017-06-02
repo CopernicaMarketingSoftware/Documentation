@@ -1,4 +1,4 @@
-# REST API: deleting a profile
+# REST API: DELETE profile
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a profile:

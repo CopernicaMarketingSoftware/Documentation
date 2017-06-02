@@ -1,4 +1,4 @@
-# REST API: fetch rule meta data
+# REST API: GET rule
 
 A method to request all metadata from a rule. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:

@@ -1,4 +1,4 @@
-# REST API: deleting a miniview
+# REST API: DELETE miniview
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a miniview:

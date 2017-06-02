@@ -1,4 +1,4 @@
-# REST API: fetch subprofile identifiers
+# REST API: GET subprofile identifiers
 
 This is a simple method to fetch all IDs of subprofiles in a collection.
 To use the method send an HTTP GET request to the following URL:

@@ -1,4 +1,4 @@
-# REST API: fetch collection fields
+# REST API: GET collection fields
 
 A collection is a nested second layer within a database, that also contains
 fields. To fetch these fields an HTTP GET request can be made to the following

@@ -1,4 +1,4 @@
-# REST API: request subprofiles from miniview
+# REST API: GET miniview subprofiles
 
 Subprofiles are to a collection what regular profiles are to a database. To request the subprofiles that represent a certain profile from a miniview you can send an HTTP GET request to the following URL:
 

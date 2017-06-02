@@ -1,4 +1,4 @@
-# REST API: edit properties of a selection of a collection
+# REST API: PUT miniview
 
 A miniview is for a collection what a selection is on a database. To edit a miniview an HTTP PUT request can be sent to the following URL:
 

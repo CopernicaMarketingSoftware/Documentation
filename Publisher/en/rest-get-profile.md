@@ -1,4 +1,4 @@
-# REST API: fetch profile information
+# REST API: GET profile
 
 This is a simple method to request all information from a profile given 
 its ID. The profile information can be requested with an HTTP GET call to the

@@ -1,4 +1,4 @@
-# REST API: request events from a profile
+# REST API: GET profile events
 
 To request the profile events you can send an HTTP GET request to the
 following URL:

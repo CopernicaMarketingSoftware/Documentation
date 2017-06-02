@@ -1,4 +1,4 @@
-# REST API: deleting a database
+# REST API: DELETE database
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a database:

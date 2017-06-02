@@ -1,4 +1,4 @@
-# REST API: adding a profile to a database
+# REST API: POST database profile
 
 The HTTP POST method to add a profile to an existing database is available at the following address:
 

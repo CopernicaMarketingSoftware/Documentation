@@ -1,4 +1,4 @@
-# REST API: fetching collection miniviews
+# REST API: GET collection miniviews
 
 What selections are to a database is what miniselections, or miniviews, 
 are to a collection. To fetch the miniselections applied to this collection 

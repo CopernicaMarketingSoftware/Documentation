@@ -1,4 +1,4 @@
-# Rest events
+# Rest API: GET events
 
 Everything that happens with your mailings gets logged: deliveries, bounces, clicks, opens, etc..
 All these events are written to log files. These log files are accessible through the 

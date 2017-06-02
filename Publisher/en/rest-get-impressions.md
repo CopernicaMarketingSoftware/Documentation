@@ -1,4 +1,4 @@
-# REST API: fetch all registered impressions
+# REST API: GET impressions
 
 All impressions that have been registered by Copernica can be fetched by
 sending a HTTP GET request to the following URL:

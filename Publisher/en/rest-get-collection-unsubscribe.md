@@ -1,4 +1,4 @@
-# REST API: requesting unsubscribe behaviour for a collection
+# REST API: GET collection unsubscribe
 
 Every collection has the option to set unsubscribe behaviour. When 
 Copernica’s servers receive an unsubscription, the unsubscribe behaviour 

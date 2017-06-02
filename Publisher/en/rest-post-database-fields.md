@@ -1,4 +1,5 @@
-# REST API: creating a field in a database
+# REST API: POST database field
+
 Method to add a new field to an existing database. This is an HTTP POST call to the following address:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`

@@ -1,4 +1,4 @@
-# REST API: fetching your identity
+# REST API: GET identity
 
 This method can be used if you want to find out the account that is linked to
 an API access token. By sending a GET request to the following URL, you can

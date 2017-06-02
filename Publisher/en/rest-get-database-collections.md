@@ -1,4 +1,4 @@
-# REST API: requesting collections in a database
+# REST API: GET database collections
 
 This method is used to request all collections in a database. It is an HTTP GET call to the following address:
 

@@ -1,4 +1,4 @@
-# REST API: fetching subprofiles from a collection
+# REST API: GET collection subprofiles
 
 The method to fetch subprofiles from a collection is an HTTP GET method which is
 available on the following URL:

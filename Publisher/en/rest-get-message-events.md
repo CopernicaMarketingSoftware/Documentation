@@ -1,4 +1,4 @@
-# REST API: Retrieve events for a message id sent with Marketing Suite
+# REST API: GET message events
 
 If you are interested in the events of a message sent with Marketing Suite
 you can make a GET request to the following URL:

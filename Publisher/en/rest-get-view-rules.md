@@ -1,4 +1,4 @@
-# REST API: fetching rules from a selection
+# REST API: GET view rules
 
 To retrieve all rules in a selection, send a HTTP GET request to this address:
 

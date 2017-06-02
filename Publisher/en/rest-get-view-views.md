@@ -1,4 +1,4 @@
-# REST API: fetching nested selections
+# REST API: GET view views
 
 Copernica supports nested selections. To obtain a list of all selections that
 are nested under a higher level selection you can send a HTTP GET request

@@ -1,4 +1,4 @@
-# REST API: adding a field to a collection
+# REST API: POST collection fields
 
 Method to add a field to an existing collection. This is an HTTP 
 POST call to the following URL:

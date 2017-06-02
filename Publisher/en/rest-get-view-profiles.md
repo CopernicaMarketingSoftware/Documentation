@@ -1,4 +1,4 @@
-# REST API: fetching profiles from a selection
+# REST API: GET view profiles
 
 To retrieve all profiles in a selection, send a HTTP GET request to this address:
 

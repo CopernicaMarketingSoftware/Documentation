@@ -1,4 +1,5 @@
-# REST API: requesting profiles in a database
+# REST API: GET database profiles
+
 The method to request profiles in a database is an HTTP GET request and available at the following address:
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
@@ -6,6 +7,7 @@ The method to request profiles in a database is an HTTP GET request and availabl
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to request profiles from.
 
 ## Available parameters
+
 The following parameters can be added to the URL as variables:
 
 - **start**: the first profile to be requested
@@ -26,6 +28,7 @@ Instead of a field to sort on, you can also assign one of the following special 
 - **modified**: profiles are sorted on the timestamp they were last modified on.
 
 ## Returned fields
+
 The method returns a list of profiles. For each profile, the following properties are returned:
 
 - **ID**: numerical ID of the profile
@@ -37,6 +40,7 @@ The method returns a list of profiles. For each profile, the following propertie
 - **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
 
 ## PHP example
+
 The following script demonstrates how to use this method. Because we use the CopernicaRestApi class, you don’t have to worry about escaping special characters in the URL; it is done automatically.
 
 	// dependencies

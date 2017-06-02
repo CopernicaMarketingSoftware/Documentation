@@ -1,4 +1,4 @@
-# REST API: request events for a Publisher template
+# REST API: GET Publisher template events
 
 To request the events for a Publisher template you can send an HTTP GET
 request to the following URL:

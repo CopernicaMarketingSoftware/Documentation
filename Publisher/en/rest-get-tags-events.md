@@ -1,4 +1,4 @@
-# REST API: request events with some tags
+# REST API: GET tags events
 
 To request the events for a specific tag you can send an HTTP GET request
 to the following URL:

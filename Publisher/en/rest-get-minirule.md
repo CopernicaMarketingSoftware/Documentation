@@ -1,4 +1,4 @@
-# REST API: fetch minirule meta data
+# REST API: GET minirule
 
 A minirule is to a collection what a regular rule is to a database. A method to request all metadata from a minirule can be called by sending an HTTP GET request to the following URL:
 

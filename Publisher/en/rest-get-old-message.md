@@ -1,4 +1,4 @@
-# REST API: Retrieve general information from a Publisher message id
+# REST API: GET Publisher message
 
 If you want to get some general information from a mail sent with Publisher
 you can make a simple a GET request to the following URL:

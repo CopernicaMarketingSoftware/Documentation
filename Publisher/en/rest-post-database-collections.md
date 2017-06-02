@@ -1,4 +1,4 @@
-# REST API: adding a collection to a database
+# REST API: POST database collection
 
 A collection is similar to a second layer within the database. To add such 
 a collection to an existing database you can send an HTTP POST request to 

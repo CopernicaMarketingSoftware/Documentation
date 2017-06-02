@@ -1,4 +1,4 @@
-# REST API: edit properties of a profile
+# REST API: PUT profile
 
 A method to edit the properties of an existing profile. It is called using the following URL:
 

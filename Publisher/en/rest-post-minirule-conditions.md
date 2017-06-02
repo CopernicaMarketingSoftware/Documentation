@@ -1,4 +1,5 @@
-# REST API: edit minirule conditions
+# REST API: POST minirule condition
+
 A method to edit conditions for a minirule. This method does not 
 support parameters. It is called by sending an HTTP POST request to the following URL:
 

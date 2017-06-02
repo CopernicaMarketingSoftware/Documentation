@@ -1,4 +1,4 @@
-# REST API: fetch collection data
+# REST API: GET collection
 
 A collection is somewhat like a second layer within a database. These collections
 have a numerical ID which can be used to fetch information with an HTTP GET request

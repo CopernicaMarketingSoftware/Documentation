@@ -1,4 +1,4 @@
-# REST API: updating properties of a database field
+# REST API: PUT database field
 
 When you want to update the properties of a database field, like the name or the type, you can do so by sending an HTTP PUT request to the following URL:
 

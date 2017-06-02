@@ -1,4 +1,4 @@
-# REST API: requesting interests in a database
+# REST API: GET database interests
 
 A list of all available interests in a database can be requested using the following URL:
 

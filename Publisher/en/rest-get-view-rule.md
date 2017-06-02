@@ -1,4 +1,4 @@
-# REST API: fetching rule data
+# REST API: GET view rule
 
 Selections use *rules* to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 

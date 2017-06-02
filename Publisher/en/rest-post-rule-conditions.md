@@ -1,4 +1,4 @@
-# REST API: edit rule conditions
+# REST API: POST rule conditions
 A method to edit conditions for a rule. This method does not 
 support parameters. It is called by sending an HTTP POST request to the following URL:
 

@@ -1,4 +1,5 @@
-# REST API: requesting profile identifiers in a selection
+# REST API: GET view profile identifiers
+
 It’s very easy to request just the IDs of profiles in a selection. Just send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/view/$id/profileids?access_token=xxxx`

@@ -1,4 +1,4 @@
-# REST API: adding a rule to a selection of a collection
+# REST API: POST miniview rules
 
 Method to add a rule to an existing selection from a collection (miniview, see [view documentation](rest-post-view-rules) for selections from a database). This is an HTTP POST call to the following URL:
 

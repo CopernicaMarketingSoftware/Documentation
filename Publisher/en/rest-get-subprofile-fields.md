@@ -1,4 +1,4 @@
-# REST API: request field from subprofile
+# REST API: GET subprofile fields
 
 To request the fields from a subprofile you can send an HTTP GET
 request to the following URL:

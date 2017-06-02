@@ -1,4 +1,4 @@
-# REST API: requesting profile identifiers
+# REST API: GET database profile identifiers
 
 It’s very easy to request just the IDs of profiles in a database. Just send an HTTP GET request to the following URL:
 

@@ -1,4 +1,4 @@
-# REST API: request events for an email address
+# REST API: GET email events
 
 To request the email events you can send an HTTP GET request to the following
 URL:
