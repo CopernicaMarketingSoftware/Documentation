@@ -44,4 +44,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 - [Overview of all API method](rest-api)
-- [Requesting unsubscribe behaviour of a collection](rest-get-collection-unsubscribe)
+- [GET collection unsubscribe](rest-get-collection-unsubscribe)

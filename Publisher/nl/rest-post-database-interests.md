@@ -47,5 +47,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 
 * [Overzicht van alle API calls](rest-api)
 * [Alle interesses van een database opvragen](rest-get-database-interests)
-* [PUT database interest](rest-put-database-interest)
 * [Interesse verwijderen](rest-delete-database-interest)

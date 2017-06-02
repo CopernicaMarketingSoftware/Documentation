@@ -36,6 +36,7 @@ The following types are available for fields:
 - **foreign_key**: numerical value that directs to another profile
 
 ## Example in PHP
+
 The following example demonstrates how to use the API method:
 
 ```php
@@ -58,7 +59,8 @@ $api->post("database/1234/fields", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Requesting all fields in a database](rest-get-database-fields)
-- [Updating a field](rest-put-database-field)
-- [Deleting a field](rest-delete-database-field)
+- [GET database fields](rest-get-database-fields)
+- [PUT database field](rest-put-database-field)
+- [DELETE database field](rest-delete-database-field)

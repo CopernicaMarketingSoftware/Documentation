@@ -45,5 +45,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Requesting a list of collections](rest-get-databases-collections)
-* [Deleting a collection](rest-delete-collection)
+* [GET database collections](rest-get-database-collections)
+* [DELETE collection](rest-delete-collection)

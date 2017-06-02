@@ -61,34 +61,33 @@ als verstuurder van spam wordt geregistreerd.  De waarden voor de selectie
 zien er als volgt uit:
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-// declare that you want to use the Fax type
-'type' => 'Fax',
+    // selecteer fax conditie
+    'type' => 'Fax',
 
-// use the after-time property
-'after-time' => '2017-01-01 00:00:00',
+    // gebruik tijdsinterval
+    'after-time' => '2017-01-01 00:00:00',
 
-// set the number
-'number' => '10',
+    // stel nummer in
+    'number' => '10',
 
-// set the operator
-'operator' => '>'
+    // stel operator in
+    'operator' => '>'
 
-
-// use property
-'match-mode' => 'match_profiles_that_received_nothing',
+    // gebruik matchmode
+    'match-mode' => 'match_profiles_that_received_nothing',
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

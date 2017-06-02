@@ -42,6 +42,7 @@ api->put("database/1234/field/456", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API methods](rest-api)
-- [Requesting all fields in a database](rest-get-database-fields)
-- [Deleting a field](rest-delete-database-field)
+- [GET database fields](rest-get-database-fields)
+- [DELETE database field](rest-delete-database-field)

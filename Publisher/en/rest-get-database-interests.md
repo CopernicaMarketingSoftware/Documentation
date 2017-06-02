@@ -46,7 +46,8 @@ print_r($api->get("database/1234/interests", $parameters));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Adding an interest to a database](rest-post-database-interests)
-- [Updating an interest](rest-post-profile-interests)
-- [Deleting an interest](rest-delete-database-interest)
+- [POST database interests](rest-post-database-interests)
+- [POST profile interests](rest-post-profile-interests)
+- [DELETE database interest](rest-delete-database-interest)

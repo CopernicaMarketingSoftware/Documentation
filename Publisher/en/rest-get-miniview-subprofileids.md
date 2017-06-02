@@ -36,4 +36,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetch subprofiles including all information](rest-get-view-subprofiles)
+* [GET view subprofiles](rest-get-view-subprofiles)

@@ -16,6 +16,7 @@ The following variables can be added to the body of the HTTP POST call:
 - **parent-id**: ID of the parent selection/collection
 
 ## PHP example
+
 The following example demonstrates how to use the API method:
 
 ```php
@@ -38,7 +39,8 @@ $api->post("collection/1234/miniviews", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Requesting selections of a collection](rest-get-collection-miniviews)
-- [Requesting selection rules](rest-get-miniview-rules)
-- [Creating selection rules](rest-post-miniview-rules)
+- [GET collection miniviews](rest-get-collection-miniviews)
+- [GET miniview rules](rest-get-miniview-rules)
+- [POST miniview rules](rest-post-miniview-rules)

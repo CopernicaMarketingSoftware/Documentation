@@ -71,8 +71,8 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Fetch all selection rules from miniview](./rest-get-miniview-rules.md)
-* [Add a new selection rule](./rest-post-miniview-rules.md)
-* [Edit a selection rule](./rest-put-minirule.md)
-* [Remove a selection rule](./rest-delete-minirule.md)
-* [Edit a condition](./rest-post-minirule-condition.md)
+* [GET miniview rules](./rest-get-miniview-rules.md)
+* [POST miniview rules](./rest-post-miniview-rules.md)
+* [PUT minirule](./rest-put-minirule.md)
+* [DELETE minirule](./rest-delete-minirule.md)
+* [POST minirule condition](./rest-post-minirule-condition.md)

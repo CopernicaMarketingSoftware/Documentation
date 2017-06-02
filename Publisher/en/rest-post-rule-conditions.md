@@ -58,6 +58,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch rules](./rest-get-rules)
-* [Get rule by ID](./rest-get-rule)
-* [Create rule](./rest-put-rule)
+* [GET rules](./rest-get-rules)
+* [GET rule](./rest-get-rule)
+* [PUT rule](./rest-put-rule)

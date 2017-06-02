@@ -47,7 +47,7 @@ could then select using the sms condition with the following values:
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type email](rest-condition-type-email)
 * [Condition type fax](rest-condition-type-fax)

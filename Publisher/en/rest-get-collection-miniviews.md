@@ -56,5 +56,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Adding a miniselection to a collection](rest-post-collection-views)
-* [Get selection rules](rest-get-miniview-rules)
+* [POST collection ](rest-post-collection-views)
+* [GET miniview rules](rest-get-miniview-rules)

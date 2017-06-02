@@ -43,6 +43,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Requesting selections of a database](rest-get-database-views)
-- [Requesting selection rules](rest-get-view-rules)
-- [Creating selection rules](rest-post-view-rules)
+- [GET database views](rest-get-database-views)
+- [GET view rules](rest-get-view-rules)
+- [POST view rule](rest-post-view-rules)

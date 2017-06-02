@@ -47,26 +47,24 @@ hebt geëxporteerd. Hieronder is weergegeven hoe je zo'n scenario vertaald
 naar daadwerkelijke code.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer export conditie
+    'type' => 'Export',
 
-// declare that you want to use the Export type
-'type' => 'Export',
-
-// use property
-'include-never-exported-profiles' => true,
-
+    // gebruik gewenste eigenschappen
+    'include-never-exported-profiles' => true,
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

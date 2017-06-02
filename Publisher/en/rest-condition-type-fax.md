@@ -47,7 +47,7 @@ To do this we can use the following values:
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type email](rest-condition-type-email)
 * [Condition type sms](rest-condition-type-sms)

@@ -26,6 +26,6 @@ format.
 "full" when the full data must match, "ignoreyear" if the year may not match.
 
 ## More information
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type change](rest-condition-type-change)

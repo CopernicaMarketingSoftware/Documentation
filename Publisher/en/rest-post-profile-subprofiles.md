@@ -45,7 +45,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API calls](rest-api)
-* [Overwrite profile interests](rest-put-profile-interests)
-* [Creating a profile](rest-post-database-profiles)
-* [Fetch subprofile data](rest-get-subprofile)
-* [Edit a subprofile](rest-post-profile-subprofiles)
+* [PUT profile interests](rest-put-profile-interests)
+* [POST database profile](rest-post-database-profiles)
+* [GET subprofile](rest-get-subprofile)
+* [POST profile subprofile](rest-post-profile-subprofiles)

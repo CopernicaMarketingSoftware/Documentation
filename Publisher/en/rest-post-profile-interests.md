@@ -61,7 +61,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API calls](rest-api)
-* [Overwrite profile interests](rest-put-profile-interests)
-* [Fetch profile data](rest-get-profile)
-* [Edit a profile](rest-put-profile)
-* [Remove a profile](rest-delete-profile)
+* [PUT profile interests](rest-put-profile-interests)
+* [GET profile](rest-get-profile)
+* [PUT profile](rest-put-profile)
+* [DELETE profile](rest-delete-profile)

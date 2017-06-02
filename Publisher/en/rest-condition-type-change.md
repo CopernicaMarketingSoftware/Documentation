@@ -62,5 +62,5 @@ selection. This selection can be made with the change condition by setting
 **change-type** to "new".
 
 ## More information
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

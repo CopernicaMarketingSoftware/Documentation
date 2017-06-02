@@ -62,23 +62,23 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 ## Voorbeeld in PHP
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-    // declare that you want to use the change type
+    // selecteer email conditie
     'type' => 'Change',
-    // then you use the condition
+    // selecteer gewenste eigenschappen
     'change-type' => 'any'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

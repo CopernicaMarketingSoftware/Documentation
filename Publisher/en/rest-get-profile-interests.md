@@ -60,4 +60,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all profile information](rest-get-profile)
+* [GET profile](rest-get-profile)

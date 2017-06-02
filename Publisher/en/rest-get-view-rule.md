@@ -72,8 +72,8 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Fetch all selection rules](./rest-get-view-rules.md)
-* [Add a new selection rule](./rest-post-view-rules.md)
-* [Edit a selection rule](./rest-put-rule.md)
-* [Remove a selection rule](./rest-delete-rule.md)
-* [Edit a condition](./rest-put-rule-conditions.md)
+* [GET view rules](./rest-get-view-rules.md)
+* [POST view rule](./rest-post-view-rules.md)
+* [PUT rule](./rest-put-rule.md)
+* [DELETE rule](./rest-delete-rule.md)
+* [PUT rule condition](./rest-put-rule-conditions.md)

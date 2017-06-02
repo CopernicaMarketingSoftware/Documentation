@@ -14,11 +14,13 @@ A method to request all metadata from a database. This method does not support p
 - **interests**: array with interests in the database
 - **collections**: array with the collections in the database
 
-Fields, interests and collections are returned as arrays of objects. If you want to know how these arrays are built, you can check out the pages of these API methods, which return similar data:
+Fields, interests and collections are returned as arrays of objects. 
+If you want to know how these arrays are built, you can check out 
+the pages of these API methods, which return similar data:
 
-- [Requesting fields](rest-get-database-fields)
-- [Requesting interests](rest-get-database-interests)
-- [Requesting collections](rest-get-database-collections)
+- [GET database fields](rest-get-database-fields)
+- [GET database interests](rest-get-database-interests)
+- [GET database collections](rest-get-database-collections)
 
 ## PHP example
 
@@ -39,4 +41,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all REST API methods](rest-api)
-- [Create a new database](rest-post-database)
+- [POST database](rest-post-database)
