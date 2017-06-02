@@ -7,7 +7,7 @@ yet. However, by switching to Publisher in the Marketing Suite you can
 still use these functionalities. The following features are only available 
 for Publisher at the moment:
 
-* [SMS mailings](./compose-sms-message)
+* [Mobile mailings](./mobile-mailing)
 * [Surveys](./surveys)
 * [Websites](./websites)
 * [Webforms](./web-forms)

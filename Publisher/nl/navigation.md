@@ -40,7 +40,7 @@
     * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
     * [Verminder HTML fouten](./reducing-html-errors)
 * [Publisher exclusief](./publisher-only)
-    * [SMS mailing](./compose-sms-message)
+    * [Mobiele mailings](./mobile-mailing)
     * [Enquêtes](./surveys)
     * [Websites](./websites)
     * [Webformulieren](./webforms)
