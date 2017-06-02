@@ -1,49 +1,57 @@
-# ToDo condition
+# REST condities: ToDo
 
-Je kunt gebruik maken van een ToDo condition, door een property ("type")
-en een value ("ToDo") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de ToDo condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **todo** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## ToDo type
 
-* match-type:               match type van het laatste contact. Mogelijke waarden: <br>
-"match_intelligent"; <br>
-"match_exact".
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
-* match-mode:               matchmode van de lastcontactconditie. Mogelijke waarden: <br>
-"match_contacted_profiles"; <br>
-"match_not_contacted_profiles". 
-
-* contact-type:             het type contact of geen contact. Mogelijke waarden: <br>
-PxPomContactType; <br>
-"false".
-
+* match-type:               match type van het laatste contact. 
+Mogelijke waarden: "match_intelligent", "match_exact".
+* match-mode:               matchmode van de lastcontactconditie, zie matchmodus tabel;
+* contact-type:             het type contact of geen contact.
+Mogelijke waarden: PxPomContactType, "false";
 * min-closed:               minimum hoeveelheid items vereist op de todo lijst;
 * max-closed:               maximum hoeveelheid items vereist op de todo lijst;
 * user:                     gebruiker van de conditie (PxPomUser), of "false" als er geen selectie nodig is;
 * priority:                 vraag prioriteit van geselecteerde todo's op;
 * contains:                 zoek string voor het doorzoeken van todo's.
 
+In de onderstaande tabel vind je alle mogelijke match modes.
 
-## Toevoegen van een datum
+| Match modes                               | Omschrijving                                                           |
+|-------------------------------------------|------------------------------------------------------------------------|
+| match_profiles_that_received_something    | Match alle profielen die iets ontvangen hebben.                        |
+| match_profiles_that_received_document     | Match alle profielen die een specifiek document ontvangen hebben.      |
+| match_profiles_that_received_nothing      | Match alle profielen die niets ontvangen hebben.                       |
+| match_profiles_that_received_not_document | Match alle profielen die niet een specifiek document ontvangen hebben. |
 
-Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
-condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+## ToDo per tijdsinterval
+
+Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
+conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
 meegeven aan de POST request:
 
-* before-time:              matcht alleen de Sms condition voor deze tijd;
-* after-time:               matcht alleen de Sms condition na deze tijd;
-* before-mutation:          tijdverschil voor de Sms condition;
-* after-mutation:           tijdverschil na de Sms condition.
+* before-time:              matcht alleen de todo conditie voor deze tijd;
+* after-time:               matcht alleen de todo conditie na deze tijd;
+* before-mutation:          tijdverschil voor de todo conditie;
+* after-mutation:           tijdverschil na de todo conditie.
+
+Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
 
 ```text
-De 'time' properties accepteren voor de value de volgende stringvolgorde:
 'YYYY-MM-DD HH:MM:SS'
 '2017-01-01 00:00:00'
+```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+
+```text
 '["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
 '["plus", "2017-01-01", "05:43:21"]'
 ```
@@ -85,8 +93,24 @@ $result = $api->post("rule/id/conditions", $data);
 print_r($result);
 ```
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
-* [LastContact condition](rest-condition-type-lastcontact)
+* [GET rule condities](rest-get-rule-conditions)
+* [POST rule condities](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)

@@ -1,14 +1,15 @@
-# Date conditions
+# REST condities: Date
 
-Je kunt gebruik maken van een change condition,
-door een property ("type") en een value ("Date")
-op te geven. Daarna ben je in staat om de conditie 
-naar wens op te geven. Hieronder is uiteengezet
-van welke functionaliteiten je gebruik kunt maken. 
-Ook is er een voorbeeld van een request gegeven.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **date** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Date type
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * field: het database veld van de date condition;
 * compare-mode: vergelijk modus van de date condition.
@@ -16,33 +17,34 @@ Ook is er een voorbeeld van een request gegeven.
 Compare-mode kan de waarde 'full' of 'ignoreyear' hebben. Bij de eerste waarde
 moet de hele datum matchen en bij de tweede waarde mag het jaar anders zijn.
 
-
-## Datum eigenschappen
+## Date per tijdsinterval
 
 De datum eigenschappen kunnen gebruikt worden om de selectie te limiteren 
 binnen een gegeven tijdperiode. Alle variabelen hieronder moeten ingesteld 
 worden in YYYY-MM-DD HH:MM:SS formaat.
 
-* before-time: matcht alleen de change conditie voor deze tijd;
-* after-time: matcht alleen de change conditie na deze tijd;
-* before-mutation: tijdverschil voor de change conditie;
-* after-mutation: tijdverschil na de change conditie.
+* before-time: matcht alleen de date conditie voor deze tijd;
+* after-time: matcht alleen de date conditie na deze tijd;
+* before-mutation: tijdverschil voor de date conditie;
+* after-mutation: tijdverschil na de date conditie.
+
+Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
 
 ```text
-De 'time' properties accepteren voor de value de volgende stringvolgorde:
 'YYYY-MM-DD HH:MM:SS'
 '2017-01-01 00:00:00'
+```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+
+```text
 '["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-
 ## Voorbeeld
 
 ```php
-
 // required code
 require_once("copernica_rest_api.php");
 
@@ -67,8 +69,23 @@ $result = $api->post("rule/id/conditions", $data);
 print_r($result);
 ```
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 ## Meer informatie
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
-* [Change conditions](rest-condition-type-change)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)
