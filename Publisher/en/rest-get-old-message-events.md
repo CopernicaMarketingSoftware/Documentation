@@ -1,4 +1,4 @@
-# REST API: Retrieve events for a message ID sent with Publisher
+# REST API: GET Publisher message events
 
 If you are interested in the events of a message sent with Publisher you
 can make a GET request to the following URL:

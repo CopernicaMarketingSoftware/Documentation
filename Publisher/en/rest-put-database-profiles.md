@@ -1,4 +1,4 @@
-# REST API: editing multiple profiles at once
+# REST API: PUT database profiles
 
 If you want to modify multiple profiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:

@@ -1,4 +1,4 @@
-# REST API: fetch minirule conditions
+# REST API: GET minirule conditions
 
 A method to request all conditions from a minirule. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:

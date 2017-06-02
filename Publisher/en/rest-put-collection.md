@@ -1,4 +1,4 @@
-# REST API: editing collection properties
+# REST API: PUT collection
 
 Method to change the properties of a collection. This method can be used by 
 sending an HTTP PUT request to the following URL:

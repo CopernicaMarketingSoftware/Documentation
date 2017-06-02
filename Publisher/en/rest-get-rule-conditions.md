@@ -1,4 +1,4 @@
-# REST API: fetch rule conditions
+# REST API: GET rule conditions
 A method to request all conditions from a rule. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 

@@ -1,4 +1,4 @@
-# REST API: Creating a new selection
+# REST API: POST database view
 
 In order to create a new selection using the REST API, you need to send an HTTP POST request to the following URL. 
 The selection will then be created, nested underneath the database.

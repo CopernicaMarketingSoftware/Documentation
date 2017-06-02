@@ -1,4 +1,4 @@
-# REST API: Creating a new selection in collection
+# REST API: POST collection miniviews
 
 In order to create a new selection using the REST API, you need to send an HTTP POST request to the following URL. The selection will then be created, nested underneath the collection.
 

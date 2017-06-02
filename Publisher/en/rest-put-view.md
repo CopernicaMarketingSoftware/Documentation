@@ -1,4 +1,4 @@
-# REST API: edit properties of a selection
+# REST API: PUT view
 
 A method to edit a selection from a database. It is called using the following URL:
 

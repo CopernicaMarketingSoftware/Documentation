@@ -1,4 +1,4 @@
-# REST API: adding an interest to a database
+# REST API: POST database interest
 
 The HTTP POST method to add an interest to an existing database is available at the following address:
 

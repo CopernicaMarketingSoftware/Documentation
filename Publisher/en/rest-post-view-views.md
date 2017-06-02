@@ -1,4 +1,4 @@
-# REST API: editing nested selections
+# REST API: POST view views
 
 Copernica supports nested selections. To edit a nested selection you can send a HTTP POST request to the following URL:
 

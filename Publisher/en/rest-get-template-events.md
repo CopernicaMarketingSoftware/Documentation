@@ -1,4 +1,4 @@
-# REST API: request events for a Marketing Suite template
+# REST API: GET template events
 
 To request the events for a Marketing Suite template you can send an HTTP GET
 request to the following URL:

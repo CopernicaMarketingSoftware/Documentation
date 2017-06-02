@@ -1,4 +1,5 @@
-# REST API: requesting unsubscribe settings
+# REST API: GET database unsubscribe
+
 Every database has the option to set unsubscribe behaviour. When Copernica’s servers receive an unsubscription, the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
 You can request your settings using the following URL:

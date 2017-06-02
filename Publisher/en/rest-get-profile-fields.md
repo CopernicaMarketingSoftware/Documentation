@@ -1,4 +1,4 @@
-# REST API: request field from profile
+# REST API: GET profile fields
 
 To request the fields from a profile you can send an HTTP GET
 request to the following URL:

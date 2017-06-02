@@ -1,4 +1,4 @@
-# REST API: edit properties of a rule
+# REST API: PUT rule
 
 A method to edit the properties of an existing rule. It is called using the following URL:
 

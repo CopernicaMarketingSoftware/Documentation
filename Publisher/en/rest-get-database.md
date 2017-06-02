@@ -1,5 +1,4 @@
-# REST API: requesting data from a database
-
+# REST API: GET database
 A method to request all metadata from a database. This method does not support parameters. By sending a GET request to the following URL, you can fetch the database metadata:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`

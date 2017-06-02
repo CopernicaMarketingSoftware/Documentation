@@ -1,4 +1,4 @@
-# REST API: request subprofiles from profile
+# REST API: GET profile subprofiles
 
 Subprofiles are to a collection what regular profiles are to a database.
 To request the subprofiles that represent a certain profile in a certain

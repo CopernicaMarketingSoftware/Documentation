@@ -1,4 +1,4 @@
-# REST API: deleting a selection
+# REST API: DELETE view
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a selection of profiles:

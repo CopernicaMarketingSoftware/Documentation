@@ -1,4 +1,4 @@
-# REST API: requesting fields in a database
+# REST API: GET database fields
 
 This method is used to request all fields in a database. It is an HTTP GET call to the following address:
 

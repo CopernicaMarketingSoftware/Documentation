@@ -1,4 +1,5 @@
-# REST API: setting unsubscribe behaviour for a collection
+# REST API: PUT collection unsubscribe
+
 For every collection you may also set the unsubscribe settings separately. 
 When Copernica’s servers receive an unsubscription the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 

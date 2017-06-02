@@ -1,4 +1,4 @@
-# REST API: fetch logfile names
+# REST API: GET logfiles names
 
 Copernica keeps logfiles about several things such as clicks, opens, errors, 
 accepted messages, etc. These logfiles can be downloaded with the API.

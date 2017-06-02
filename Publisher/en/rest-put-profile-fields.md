@@ -1,4 +1,5 @@
-# REST API: updating a field
+# REST API: PUT profile fields
+
 To update existing fields of a profile, you need to do an HTTP PUT request to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`

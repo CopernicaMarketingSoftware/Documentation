@@ -1,4 +1,4 @@
-# REST API: requesting available selections
+# REST API: GET database views
 
 To request which selections are available in a database, do an HTTP GET request to the following URL:
 

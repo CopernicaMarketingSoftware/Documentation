@@ -1,4 +1,4 @@
-# REST API: adding subprofile to a profile
+# REST API: POST profile subprofiles
 
 To add subprofiles to a profile an HTTP post request can be sent to the following URL:
 

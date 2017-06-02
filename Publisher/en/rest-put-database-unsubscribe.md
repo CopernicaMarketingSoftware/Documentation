@@ -1,4 +1,5 @@
-# REST API: setting unsubscribe behaviour
+# REST API: PUT database unsubscribe
+
 For every database, you can set the unsubscribe algorithm separately. When Copernica’s servers receive an unsubscription the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
 To set this algorithm using an API call, make an HTTP PUT request to the following URL:

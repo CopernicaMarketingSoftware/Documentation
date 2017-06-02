@@ -1,4 +1,4 @@
-# REST API: deleting a rule
+# REST API: DELETE rule
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a rule:

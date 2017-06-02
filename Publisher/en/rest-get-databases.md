@@ -1,4 +1,4 @@
-# REST API: requesting databases
+# REST API: GET databases
 
 A method to request a list of all available databases. This is an HTTP GET call to the following address:
 

@@ -1,4 +1,4 @@
-# REST API: fetch subprofile information
+# REST API: GET subprofile
 
 This is a simple method to request all information from a subprofile given 
 its ID. The profile information can be requested with an HTTP GET call to the

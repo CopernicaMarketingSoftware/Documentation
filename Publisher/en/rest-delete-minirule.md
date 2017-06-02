@@ -1,4 +1,4 @@
-# REST API: deleting a minirule
+# REST API: DELETE minirule
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a minirule:

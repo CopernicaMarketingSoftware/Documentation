@@ -1,4 +1,4 @@
-# REST API: request event information from a subprofile
+# REST API: GET subprofile events
 
 To request the events from a subprofile you can send an HTTP GET request
 to the following URL:

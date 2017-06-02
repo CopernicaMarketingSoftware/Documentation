@@ -1,4 +1,4 @@
-# REST API: fetch selection meta data
+# REST API: GET view
 
 A method to request all metadata from a database. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
