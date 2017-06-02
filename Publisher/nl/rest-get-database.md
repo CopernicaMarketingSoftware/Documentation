@@ -1,4 +1,4 @@
-REST API: GET database
+# REST API: GET database
 
 Dit is een methode om meta gegevens van een database op te vragen. 
 Deze methode ondersteunt geen parameters. De methode is aan te 
