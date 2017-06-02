@@ -1,17 +1,19 @@
-# MiniView condition
+# REST condities: MiniView
 
-Je kunt gebruik maken van een MiniView condition, door een property ("type")
-en een value ("MiniView") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de MiniView condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **miniview** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## MiniView type
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * mini-view:                    miniview geassocieerd met de conditie
 * min-subprofiles:              minimum hoeveelheid subprofielen in de miniview
 * max-subprofiles:              maximum hoevelheid subprofielen in de miniview
-
 
 ## Voorbeeld
 
@@ -43,8 +45,23 @@ $result = $api->post("rule/id/conditions", $data);
 print_r($result);
 ```
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
-* [ReferView condition](rest-condition-type-referview)
+* [GET rule condities](rest-get-rule-conditions)
+* [POST rule condities](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)
