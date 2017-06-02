@@ -24,6 +24,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Requesting all fields from a database](rest-get-database-fields)
-- [Creating a new field](rest-post-database-fields)
-- [Editing a field](rest-put-database-fields)
+- [GET database fields](rest-get-database-fields)
+- [POST database field](rest-post-database-fields)
+- [PUT database field](rest-put-database-fields)

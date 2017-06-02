@@ -32,4 +32,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all subprofile information](rest-get-subprofile)
+* [GET subprofile](rest-get-subprofile)

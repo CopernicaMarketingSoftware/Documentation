@@ -38,4 +38,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all selection metadata](rest-get-miniview)
+* [GET miniview](rest-get-miniview)

@@ -41,4 +41,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Requesting minirules](./rest-get-minirule)
+* [GET minirules](./rest-get-minirule)

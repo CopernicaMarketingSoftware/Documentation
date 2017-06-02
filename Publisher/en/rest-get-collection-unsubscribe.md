@@ -38,4 +38,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Setting unsubscribe behaviour](rest-get-database-unsunscribe)
+- [GET database unsubscribe](rest-get-database-unsunscribe)

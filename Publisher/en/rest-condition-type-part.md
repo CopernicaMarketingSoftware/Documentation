@@ -18,5 +18,5 @@ using a negative value the begin count begins at the end.
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

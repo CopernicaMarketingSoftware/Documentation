@@ -37,26 +37,24 @@ interesses je klant heeft. In onderstaand voorbeeld zie je precies hoe je zo'n s
 kunt maken.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer interest conditie
+    'type' => 'Interest',
 
-// declare that you want to use the Interest type
-'type' => 'Interest',
-
-// use property match-mode
-'match-mode' => 'match_profiles_with_interest'
-
+    // gebruik matchmode
+    'match-mode' => 'match_profiles_with_interest'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

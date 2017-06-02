@@ -46,5 +46,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 - [Overview of all API method](rest-api)
-- [Editing database field](rest-put-database-field)
-- [Editing field of a profile](rest-put-profile-field)
+- [PUT database field](rest-put-database-field)
+- [PUT profile field](rest-put-profile-field)

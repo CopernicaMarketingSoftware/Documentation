@@ -45,27 +45,27 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 ## Voorbeeld
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
-    $data = array(
-    // declare that you want to use the date type
+$data = array(
+    // selecteer date conditie
     'type' => 'Date',
 
-    // use before-time or after-time
+    // gebruik tijdsinterval
     'before-time' => '2018-01-01 00:00:00',
 
-    // or use before-mutation or after-mutation (overwrites the before/after-time)
+    // gebruik mutatie interval (overschrijft before-time/after-time)
     'after-mutation' => '["plus","2016-01-01", "7:34:23"]',
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

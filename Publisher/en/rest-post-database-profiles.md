@@ -23,6 +23,7 @@ The following variables can be set in the message body:
 - **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
 
 ## PHP example
+
 The following script demonstrates how to use the API method:
 
 ```php
@@ -44,9 +45,10 @@ $api->post("database/1234/profiles", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information:
+
 - [Overview of all API calls](rest-api)
-- [Request all profiles in a database](rest-get-database-profiles)
-- [Updating a profile](rest-put-profile-interests)
-- [Deleting a profile](rest-delete-profile)
-- [Add fields to profile](rest-put-profile-fields)
-- [Add interests to profile](rest-post-profile-interests)
+- [GET database profiles](rest-get-database-profiles)
+- [PUT profile interests](rest-put-profile-interests)
+- [DELETE profile](rest-delete-profile)
+- [PUT profile fields](rest-put-profile-fields)
+- [POST profile interests](rest-post-profile-interests)

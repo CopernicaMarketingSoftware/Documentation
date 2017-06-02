@@ -33,28 +33,27 @@ match je deze twee velden door middel van de matchmode. Hieronder zie je precies
 werkt.
 
 ```php
-
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-// declare that you want to use the DoubleField type
-'type' => 'DoubleField',
+    // selecteer doublefield conditie
+    'type' => 'DoubleField',
 
-// use match-mode with desired value
-'match-mode' => 'match_unique_profiles',
+    // gebruik matchmode
+    'match-mode' => 'match_unique_profiles',
 
-// and select from which field
-'fields' => '[voornaam, achternaam]',
+    // selecteer velden voor matchmode
+    'fields' => '[voornaam, achternaam]',
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

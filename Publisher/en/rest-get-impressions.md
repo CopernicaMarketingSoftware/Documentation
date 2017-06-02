@@ -63,9 +63,9 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of API calls](./rest-api.md)
-* [Fetch abuse reports](./rest-get-abuses.md)
-* [Fetch clicks](./rest-get-clicks.md)
-* [Fetch deliveries](./rest-get-deliveries.md)
-* [Fetch error](./rest-get-errors.md)
-* [Fetch unsubscribes](./rest-get-unsubscribes.md)
+* [GET abuses](./rest-get-abuses.md)
+* [GET clicks](./rest-get-clicks.md)
+* [GET deliveries](./rest-get-deliveries.md)
+* [GET errors](./rest-get-errors.md)
+* [GET unsubscribes](./rest-get-unsubscribes.md)
 

@@ -54,27 +54,30 @@ helpen van klanten. Hieronder is een zo'n scenario vertaald naar de daadwerkelij
 conditie.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
-    // declare that you want to use the LastContact type
+    // selecteer lastcontact conditie
     'type' => 'LastContact',
 
-    // use property match-mode
+    // gebruik tijdsinterval
     'after-time' => '2016-12-11 00:34:56',
+    
+    // stel minimum in
     'min-closed' => '3',
+    
+    // zoek 'Bob' in rapporten
     'contains' => 'Bob' 
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

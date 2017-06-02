@@ -77,4 +77,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Get general message information](rest-get-message)
+* [GET message](rest-get-message)

@@ -40,6 +40,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Editing a selection (of a database)](./rest-put-view)
-* [Requesting a list of miniviews](./rest-get-collection-miniviews)
+* [PUT view](./rest-put-view)
+* [GET collection miniviews](./rest-get-collection-miniviews)
 

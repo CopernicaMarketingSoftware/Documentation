@@ -33,4 +33,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Requesting profiles in a selection](rest-get-view-profiles)
+- [GET view profiles](rest-get-view-profiles)

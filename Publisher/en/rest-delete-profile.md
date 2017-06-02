@@ -28,6 +28,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Remove a database](rest-delete-database)
-* [Fetching a profile](rest-get-profile)
-* [Edit a profile](rest-put-profile)
+* [DELETE database](rest-delete-database)
+* [GET profile](rest-get-profile)
+* [PUT profile](rest-put-profile)

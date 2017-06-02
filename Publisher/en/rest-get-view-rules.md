@@ -59,7 +59,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Get a selection rule by ID](./get-miniview-rule)
-* [Request a list of rules from database](./rest-get-rule)
+* [GET miniview rule](./get-miniview-rule)
+* [GET rule](./rest-get-rule)
 
 

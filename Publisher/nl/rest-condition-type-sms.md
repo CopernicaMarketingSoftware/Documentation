@@ -63,26 +63,28 @@ terug kunnen halen. In dat geval is er altijd nog de SMS conditie, waarmee
 toch nog naar een specifieke selectie e-mail kan worden verstuurd.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
 
-    // declare that you want to use the MiniView type
+    // selecteer sms conditie
     'type' => 'Sms',
 
-    // use property document 
+    // stel document in
     'document' => 'document x',
+    
+    // gebruik matchmode
     'match-mode' => 'match_profiles_that_received_document'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

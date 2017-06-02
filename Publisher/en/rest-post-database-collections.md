@@ -42,7 +42,8 @@ $api->post("database/1234/interests", $data);
 
 The example above requires the [CopernicaRestApi class](rest-php).
 
-## More information:
+## More information
+
 - [Overview of all API calls](rest-api)
-- [Request all collections in a database](rest-get-database-collections)
-- [Updating a collection](rest-put-collection)
+- [GET database collections](rest-get-database-collections)
+- [PUT collection](rest-put-collection)

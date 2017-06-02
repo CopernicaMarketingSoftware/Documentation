@@ -38,4 +38,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Editing a database](rest-put-database)
+* [PUT database](rest-put-database)

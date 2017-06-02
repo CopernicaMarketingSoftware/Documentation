@@ -17,7 +17,7 @@ It is also possible to add an array along with activation values as the message
 body. This activation value can then be used to determine whether the interest 
 'counts' or not in other applications. Both methods will overwrite the current 
 profile interests. If you wish to keep the existing interests, please see the 
-documentation on [Adding interests to a profile](rest-post-profile-interests).
+documentation on [adding interests to a profile](rest-post-profile-interests).
 
 ## PHP example
 The following PHP script demonstrates how to call the API method.
@@ -53,7 +53,8 @@ $api->put("profile/1235/interests", $parameters, $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Updating multiple profiles](rest-put-database-profiles)
-- [Deleting a profile](rest-delete-database-profile)
-- [Fetch profile interests](rest-get-profile-interests)
+- [PUT database profiles](rest-put-database-profiles)
+- [DELETE database profile](rest-delete-database-profile)
+- [GET profile interests](rest-get-profile-interests)

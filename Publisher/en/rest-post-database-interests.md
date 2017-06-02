@@ -40,6 +40,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information:
 
 - [Overview of all API calls](rest-api)
-- [Request all interests in a database](rest-get-database-interests)
-- [Updating an interest](rest-put-profile)
-- [Deleting an interest](rest-delete-profile)
+- [GET database interests](rest-get-database-interests)
+- [PUT profile](rest-put-profile)
+- [DELETE profile](rest-delete-profile)

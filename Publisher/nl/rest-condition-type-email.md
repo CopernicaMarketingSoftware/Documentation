@@ -104,12 +104,14 @@ $api = new CopernicaRestApi("my-access-token");
 $data = array(
     // selecteer email conditie
     'type' => 'Email',
-    // selecteer gewenste eigenschap
+    
+    // selecteer gewenste eigenschappen
     'required-result' => 'clickonurl',
+    
     // selecteer (in dit geval) de juiste URL
     'required-url' => 'wwww.example.com',
 
-    // eventueel: gebruik een matchmode
+    // gebruik matchmode
     'match-mode' => 'match_profiles_that_received_something'
 );
 

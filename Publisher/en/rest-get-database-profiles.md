@@ -66,7 +66,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 - [Overview of all API calls](rest-api)
-- [Requesting profile IDs](rest-get-database-profileids)
-- [Adding a profile to a database](rest-post-database-profiles)
-- [Editing a profile](rest-put-profile-fields)
-- [Delete profile](rest-delete-profile)
+- [GET database profile identifiers](rest-get-database-profileids)
+- [POST database profiles](rest-post-database-profiles)
+- [PUT profile fields](rest-put-profile-fields)
+- [DELETE profile](rest-delete-profile)

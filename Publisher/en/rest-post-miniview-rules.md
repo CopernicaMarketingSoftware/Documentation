@@ -48,6 +48,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Make new selection](rest-put-miniview)
-* [Add rule conditions](rest-post-minirule-conditions)
-* [Get selection rules](rest-get-miniview-rules)
+* [PUT miniview](rest-put-miniview)
+* [POST minirule conditions](rest-post-minirule-conditions)
+* [GET miniview rules](rest-get-miniview-rules)

@@ -66,6 +66,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Get all field from collection](rest-get-collection-fields)
-* [Edit field](rest-put-collection-field)
-* [Delete field](rest-delete-collection-field)
+* [GET collection fields](rest-get-collection-fields)
+* [PUT collection field](rest-put-collection-field)
+* [DELETE collection field](rest-delete-collection-field)

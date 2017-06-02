@@ -40,7 +40,8 @@ $api->post("view/1234/views", array(), $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 * [Overview of all API methods](rest-api)
-* [Request list of nested views](./rest-get-view-views)
+* [GET view views](./rest-get-view-views)
 
 

@@ -55,7 +55,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](./rest-api.md)
-* [Get names of log files](rest-get-logfiles-names)
-* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
-* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
-* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)
+* [GET JSON logfile](rest-get-logfiles-json)
+* [GET CSV logfile](rest-get-logfiles-csv)
+* [GET XML logfile](rest-get-logfiles-xml)

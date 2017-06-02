@@ -57,6 +57,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API methods](rest-api)
-* [Adding a nested selection](rest-post-view-views)
-* [Request top level selections](rest-get-database-views)
-* [Fetch selection rules](rest-get-view-rules)
+* [POST view views](rest-post-view-views)
+* [GET database views](rest-get-database-views)
+* [GET view rules](rest-get-view-rules)

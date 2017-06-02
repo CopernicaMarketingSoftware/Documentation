@@ -76,7 +76,7 @@ the item link.
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type sms](rest-condition-type-sms)
 * [Condition type fax](rest-condition-type-fax)

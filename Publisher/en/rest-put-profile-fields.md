@@ -35,6 +35,7 @@ $api->put("profile/1234/fields", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Updating multiple profiles](rest-put-database-profiles)
-- [Deleting a profile](rest-delete-database-profile)
+- [PUT database profiles](rest-put-database-profiles)
+- [DELETE database profile](rest-delete-database-profile)

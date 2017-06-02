@@ -59,27 +59,27 @@ maken met de survey conditie van de mensen die je een reminder wilt sturen.
 * submitter:            "none".
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
-    // declare that you want to use the MiniView type
+    // selecteer survey conditie
     'type' => 'Survey',
 
-    // use property for survey-name and submitter
+    // stel survey naam in
     'survey-name' => 'survey x',
+    
+    // stel submitter in
     'submitter' => 'none'
-
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

@@ -22,26 +22,24 @@ Om te checken of een miniview klein genoeg is kunnen we max-subprofiles naar
 het maximum aantal subprofielen in de miniview zetten
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
-    // declare that you want to use the MiniView type
+    // selecteer miniview conditie
     'type' => 'MiniView',
 
-    // use property mini-view to get 
+    // stel maximum in
     'max-subprofiles' => '14'
-
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

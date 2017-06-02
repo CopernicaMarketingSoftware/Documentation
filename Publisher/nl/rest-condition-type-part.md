@@ -22,28 +22,30 @@ die een bepaalde veldwaarde hebben.
 
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer part conditie
+    'type' => 'Part',
 
-// declare that you want to use the Part type
-'type' => 'Part',
-
-// use properties
-'begin' => '54',
-'length' => '20',
-'fields' => 'dog_owner',
-
+    // stel begin in
+    'begin' => '54',
+    
+    // stel lengte in
+    'length' => '20',
+    
+    // stel veld in
+    'fields' => 'dog_owner',
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

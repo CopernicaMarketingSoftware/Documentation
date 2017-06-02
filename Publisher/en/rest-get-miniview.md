@@ -39,4 +39,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch selection rules for a collection](./rest-get-miniview-rules)
+* [GET miniview rules](./rest-get-miniview-rules)

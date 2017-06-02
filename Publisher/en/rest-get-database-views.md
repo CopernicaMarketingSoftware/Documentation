@@ -49,7 +49,8 @@ print_r($api->get("database/1234/views", $parameters));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API methods](rest-api)
-- [Adding a selection to a database](rest-post-view)
-- [Requesting nested selections](rest-get-view-views)
-- [Fetch selection rules](rest-get-view-rules)
+- [POST view](rest-post-view)
+- [GET view views](rest-get-view-views)
+- [GET view rules](rest-get-view-rules)

@@ -70,26 +70,28 @@ Met het gebruik van "match_intelligent" voorkom je dat documenten niet
 gevonden worden door typo's of gespreide woorden.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
 
-    // declare that you want to use the ToDo type
+    // selecteer todo conditie
     'type' => 'ToDo',
 
-    // use property match-type and contains  
+    // gebruikt matchtype 
     'match_type' => 'match_intelligent',
-    'contains' => 'document name'
+    
+    // zoek op 'document naam'
+    'contains' => 'document naam'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

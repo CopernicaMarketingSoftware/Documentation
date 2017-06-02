@@ -31,6 +31,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Remove a database](rest-delete-database)
-* [Fetch all profiles in a selection](rest-get-view-profiles)
-* [Remove an individual profile](rest-delete-profile)
+* [DELETE database](rest-delete-database)
+* [GET view profiles](rest-get-view-profiles)
+* [DELETE profile](rest-delete-profile)

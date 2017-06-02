@@ -39,27 +39,27 @@ kinderen hebben. In dit geval kun je een specifieke doelgroep e-mailen door
 een selectie te maken op de ouders. Je doet dit met de field conditie. 
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer field conditie
+    'type' => 'Field',
 
-// declare that you want to use the Field type
-'type' => 'Field',
-
-// use property field and check to see wether it is true
-'field' => 'has_children',
-'value' => 'yes',
-
+    // selecteer veld
+    'field' => 'has_children',
+    
+    // stel waarde in
+    'value' => 'yes',
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

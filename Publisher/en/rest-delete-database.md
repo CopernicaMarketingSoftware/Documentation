@@ -28,5 +28,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Create a database](rest-post-database)
-* [Remove an individual profile](rest-delete-profile)
+* [POST database](rest-post-database)
+* [DELETE profile](rest-delete-profile)

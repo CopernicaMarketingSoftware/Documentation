@@ -21,25 +21,24 @@ Je kunt deze conditie gebruiken als je na wilt gaan of twee profielen geen
 enkele overlap hebben.
 
 ```php
-
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-    // declare that you want to use the Referview
+    // selecteer referview conditie
     'type' => 'ReferView',
 
-    // use the checktype to determine if you want to select other views
+    // stel check-type in
     'check-type' => 'no'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 

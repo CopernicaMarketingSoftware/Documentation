@@ -75,6 +75,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetch profile IDs](rest-get-collection-profileids)
-* [Add subprofile to collection](rest-post-collection-subprofiles)
-* [Delete subprofile](rest-delete-subprofile)
+* [GET collection profile identifiers](rest-get-collection-profileids)
+* [POST collection subprofiles](rest-post-collection-subprofiles)
+* [DELETE subprofile](rest-delete-subprofile)

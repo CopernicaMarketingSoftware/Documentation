@@ -33,5 +33,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 - [Overview of all API calls](rest-api)
-- [Requesting profiles including all profile data](rest-get-database-profiles)
+- [GET database profiles](rest-get-database-profiles)
 
