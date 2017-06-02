@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **survey** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Survey type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -55,9 +55,6 @@ Stel dat je een belangrijke enquête hebt verstuurd, maar nog niet van alle
 profielen in je database een reactie hebt gekregen. Je kunt dan een selectie 
 maken met de survey conditie van de mensen die je een reminder wilt sturen. 
 
-* survey-name:          enquête waarvoor je een reminder wilt versturen;
-* submitter:            "none".
-
 ```php
 // vereiste module
 require_once("copernica_rest_api.php");
@@ -73,6 +70,7 @@ $data = array(
     'survey-name' => 'survey x',
     
     // stel submitter in
+    // (none = niet ingevuld!)
     'submitter' => 'none'
 );
 

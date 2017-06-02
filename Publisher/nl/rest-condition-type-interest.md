@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **interest** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Interest type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -33,8 +33,8 @@ In de onderstaande tabel vind je alle mogelijke match modes.
 Stel dat een sportwinkel een e-mail wilt versturen naar alle klanten die tennis spelen. 
 Hiervoor moet tennis wel als interesse in de database zijn aangemaakt. In dit geval kun 
 je op een hele effectieve manier je marketing inzetten, want je weet precies welke
-interesses je klant heeft. In onderstaand voorbeeld zie je precies hoe je zo'n selectie
-kunt maken.
+interesses je klant heeft. In onderstaand voorbeeld laten we zien hoe je de conditie 
+instelt, zodat je deze kunt gebruiken voor regels voor een selectie.
 
 ```php
 // vereiste module

@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **fax** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Fax type
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -57,8 +57,8 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 Met de fax conditie kun je een selectie maken van mensen die meer dan 
 10 berichten hebben ontvangen in de laatste twee maanden, zodat je niet 
 te veel berichten verstuurt naar dezelfde persoon. Zo voorkom je dat je 
-als verstuurder van spam wordt geregistreerd.  De waarden voor de selectie
-zien er als volgt uit:
+als verstuurder van spam wordt geregistreerd. De volgende conditie geldt 
+als dit het geval is:
 
 ```php
 // vereiste module

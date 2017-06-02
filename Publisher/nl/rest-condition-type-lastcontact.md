@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **lastcontact** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## LastContact type
+## Eigenschappen
 
 * match-type:       match type van het laatste contact. Mogelijke waarden: 
 "match_intelligent" of "match_exact".

@@ -1,26 +1,14 @@
-# REST API: Condition type lastcontact
+# REST conditions: Lastcontact
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the lastcontact condition.
-
-## Date properties
-
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
-
-* **before-time**: Matches only profiles that were contacted before this time
-* **after-time**: Matches only profiles that were contacted after this time
-* **before-mutation**: beforemutation (time difference) for lastcontactcondition.
-* **after-mutation**: aftermutation (time difference) for lastcontactcondition.
+This article is about the **lastcontact** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The lastcontact condition has the following parameters:
 
 * **match-type**: Match type of last contact. Possible values: 
 "match_intelligent", "match_exact"
@@ -35,21 +23,52 @@ is required.
 * **priority**: Get priority of selected contacts.
 * **contains**: Search string for searching contact report contents.
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that were contacted before this time
+* **after-time**: Matches only profiles that were contacted after this time
+* **before-mutation**: beforemutation (time difference) for lastcontact condition.
+* **after-mutation**: aftermutation (time difference) for lastcontact condition.
+
 ## Example
 
-Let's say our new customer service employee, Bob, has been working here 
-since one month and we want to evaluate his performance. Then we can 
-make a selection of customers he has contacted at least three times, for 
-an accurate representation of him, and ask them to evaluate their contact. 
-We can do this with the following values for the lastcontact condition:
+It's also possible to make selections based on the last contactmoment with 
+your profiles. If you haven't contacted a customer in a while it might 
+be a good idea to get in touch with them again. You can also check how 
+often your employees are contacting your customers to see if they are doing 
+well. The following example shows such a condition.
 
-* **after-time**: Today - 1 month in YYYY-MM-DD HH:MM:SS format
-* **min-closed**: 3
-* **contains**: "Bob"
+```php
+// required code
+require_once("copernica_rest_api.php");
 
-We only search for the relevant time period and documents that contain Bob. 
-Then we also look for profiles that have been in contact with him at least 
-three times.
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select lastcontact condition
+    'type' => 'LastContact',
+
+    // use time interval
+    'after-time' => '2016-12-11 00:34:56',
+    
+    // set minimum
+    'min-closed' => '3',
+    
+    // search 'Bob' in reports
+    'contains' => 'Bob' 
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

@@ -1,16 +1,14 @@
-# REST API: Condition type interest
+# REST conditions: Interest
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the interest condition.
-
+This article is about the **interest** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The interest condition has the following parameters:
 
 * **match-mode**: Matchmode of interest condition. Possible values: 
 "match_profiles_with_interest", "match_profiles_without_interest", 
@@ -20,18 +18,34 @@ if the matchmode is "match_profiles_with_interest" or "match_profiles_without_in
 * **interest-group**: Interestgroup of the condition. This only returns a valid value 
 if the matchmode is "match_profiles_with_interestgroup" or "match_profiles_without_interestgroup".
 
-
 ## Example
 
-Let's assume, for the purpose of this example, that we have a sports store 
-and we would like to send an email with our new range of tennis clothes to 
-avid tennisplayers. Let's also assume that we have interests in our database 
-profiles that contain "tennis" for people who like tennis. We can now market 
-effectively by making a selection of tennisplayers by using the interestcondition. 
-We use the following values:
+Imagine that you have a sports store and want to send an email showcasing 
+your new tennis collection. This requires "tennis" to exist as an interest 
+in the database. When this is the case you can easily write a condition, as 
+shown below, to make a selection of tennis players and enthusiasts.
 
-* **interest**: "tennis"
-* **match-mode**: "match_profiles_with_interest"
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select interest condition
+    'type' => 'Interest',
+
+    // use matchmode
+    'match-mode' => 'match_profiles_with_interest'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

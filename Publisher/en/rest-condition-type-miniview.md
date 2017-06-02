@@ -1,15 +1,14 @@
-# REST API: Condition type miniview
+# REST conditions: Miniview
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the miniview condition.
+This article is about the **miniview** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The miniview condition has the following parameters:
 
 * **mini-view**: Miniview associated with condition
 * **min-subprofiles**: Minimum number of subprofiles in the miniview
@@ -17,9 +16,31 @@ This article is about the properties of the miniview condition.
 
 ## Example
 
-We can choose to combine several smaller miniviews if we have too many. 
-We can check if a mini-view is small enough with the miniview condition by 
-using **max-subprofiles** to the maximum number of subprofiles in the miniview.
+It's possible to combine multiple miniviews if there are too many. Too check 
+if the miniview is small enough to combine you can use the max-subprofiles 
+property of the miniview condition, like this:
+
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select miniview condition
+    'type' => 'MiniView',
+
+    // set maximum
+    'max-subprofiles' => '14'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

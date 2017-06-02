@@ -1,15 +1,14 @@
-# REST API: Condition type doublefield
+# REST conditions: Doublefield
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the doublefield condition.
+This article is about the **doublefield** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The doublefield condition has the following parameters:
 
 * **match-mode**: Match mode of doublefield condition. See the match mode table.
 * **fields**: The combination of fields that should be checked.
@@ -37,6 +36,31 @@ match-mode. The following values describe this set of people:
 
 * **match-mode**: match_unique profiles
 * **fields**: \[first_name, last_name\]
+
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // selecteer doublefield conditie
+    'type' => 'DoubleField',
+
+    // gebruik matchmode
+    'match-mode' => 'match_unique_profiles',
+
+    // selecteer velden voor matchmode
+    'fields' => '[first_name, last_name]',
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 

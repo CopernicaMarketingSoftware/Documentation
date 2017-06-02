@@ -7,6 +7,14 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **change** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
+## Eigenschappen
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
+
+* **change-type**: Changetype van de change conditie, zie changetypes tabel;
+* **field**: Database veld om wel/niet te veranderen;
+* **interest**: Database interesse om wel/niet te veranderen.
+
 ## Change types
 
 Er zijn verschillende soorten veranderingen die kunnen voorkomen in je 
@@ -61,6 +69,9 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 
 ## Voorbeeld in PHP
 
+We gebruiken hier een conditie die geldt als er ooit veranderingen zijn 
+gemaakt.
+
 ```php
 // vereiste module
 require_once("copernica_rest_api.php");
@@ -71,6 +82,7 @@ $api = new CopernicaRestApi("my-access-token");
 $data = array(
     // selecteer email conditie
     'type' => 'Change',
+    
     // selecteer gewenste eigenschappen
     'change-type' => 'any'
 );

@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **export** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Export types
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -42,7 +42,7 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 
 ## Voorbeeld
 
-Je kunt ook selecteren op profielen die je voor een bepaalde dag een keer 
+Je kunt ook selecteren op profielen die je voor een bepaalde dag al eens  
 hebt geëxporteerd. Hieronder is weergegeven hoe je zo'n scenario vertaald
 naar daadwerkelijke code.
 

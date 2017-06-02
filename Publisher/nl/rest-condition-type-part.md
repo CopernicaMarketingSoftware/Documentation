@@ -7,7 +7,7 @@ Elke conditie heeft specifieke eigenschappen.
 Dit artikel gaat over de **part** conditie. Als je op zoek bent 
 naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
 
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
@@ -18,8 +18,8 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 ## Voorbeeld
 
 Met de part conditie kun je gemakkelijk een gedeelte van een selectie bekijken 
-die een bepaalde veldwaarde hebben. 
-
+die een bepaalde veldwaarde hebben. We kijken hier naar 20 honden eigenaren 
+uit onze selectie.
 
 ```php
 // vereiste module
