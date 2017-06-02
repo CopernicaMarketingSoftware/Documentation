@@ -1,4 +1,4 @@
-# REST API - GET profile events
+# REST API: GET profile events
 
 Als je profiel events wilt downloaden, dan kun je een eenvoudige  HTTP GET
 call naar de volgende URL sturen.

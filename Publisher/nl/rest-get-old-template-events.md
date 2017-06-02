@@ -1,4 +1,4 @@
-# REST API - GET old template events
+# REST API: GET old template events
 
 Als je events van een Publisher template wilt downloaden, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL:

@@ -1,4 +1,4 @@
-# REST API - PUT database field
+# REST API: PUT database field
 
 Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar

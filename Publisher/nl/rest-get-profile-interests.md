@@ -1,4 +1,4 @@
-# REST API - GET profile interests
+# REST API: GET profile interests
 
 Er zijn verschillende methodes om de interesses van een profiel op te 
 vragen. Welke methode het meest geschikt is hangt af van hoe je deze wilt 

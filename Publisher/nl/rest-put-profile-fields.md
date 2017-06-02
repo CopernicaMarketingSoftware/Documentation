@@ -1,4 +1,4 @@
-# REST API - PUT profile fields
+# REST API: PUT profile fields
 
 Om de velden van een profiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:

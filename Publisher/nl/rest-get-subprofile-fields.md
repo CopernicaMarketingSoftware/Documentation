@@ -1,4 +1,4 @@
-# REST API - GET subprofile fields
+# REST API: GET subprofile fields
 
 Om alleen de velden van een subprofiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:

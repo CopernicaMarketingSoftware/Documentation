@@ -1,4 +1,4 @@
-# REST API - GET minirule
+# REST API: GET minirule
 
 Dit is een methode om alle metadata van een regel binnen een selectie in een collectie (miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 

@@ -1,4 +1,4 @@
-# REST API - GET view profiles
+# REST API: GET view profiles
 
 De methode om profielen uit een selectie op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:

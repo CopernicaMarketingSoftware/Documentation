@@ -1,4 +1,4 @@
-# REST API - PUT collection unsubscribe
+# REST API: PUT collection unsubscribe
 
 Voor elke collectie kunnen apart de instellingen voor unsubscribes worden aangepast. Wanneer Copernica's servers een verzoek voor uitschrijving ontvangen geeft deze instelling aan wat er in de collectie gebeurt.
 

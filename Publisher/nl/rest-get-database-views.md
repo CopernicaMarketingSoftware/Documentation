@@ -1,4 +1,4 @@
-# REST API - GET database views
+# REST API: GET database views
 
 Om op te vragen welke selecties er beschikbaar zijn, kun je de volgende URL
 gebruiken. Je moet een HTTP GET request naar deze URL sturen om de selecties

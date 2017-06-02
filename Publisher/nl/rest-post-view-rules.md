@@ -1,4 +1,4 @@
-# REST API - POST view rules
+# REST API: POST view rules
 
 Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
 

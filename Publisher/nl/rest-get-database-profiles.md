@@ -1,4 +1,4 @@
-# REST API - GET database profiles
+# REST API: GET database profiles
 
 De methode om profielen uit een database op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:

@@ -1,4 +1,4 @@
-# REST API - DELETE minirule
+# REST API: DELETE minirule
 
 Een miniregel kan verwijdered worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 

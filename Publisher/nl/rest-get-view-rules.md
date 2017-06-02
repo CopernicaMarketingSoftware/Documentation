@@ -1,4 +1,4 @@
-# REST API - GET view rules
+# REST API: GET view rules
 
 Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen naar de volgende URL:
 

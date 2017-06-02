@@ -1,4 +1,4 @@
-# REST API - GET miniview subprofile id
+# REST API: GET miniview subprofile id
 
 Als je alleen maar de ID's van de subprofielen in een miniselectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 

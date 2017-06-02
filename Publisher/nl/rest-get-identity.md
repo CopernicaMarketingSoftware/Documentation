@@ -1,4 +1,4 @@
-# REST API - GET identity
+# REST API: GET identity
 
 Je kunt makkelijk nagaan welke accountgegevens bij een bepaalde 
 access token hoort. De onderstaande methode retourneert de 

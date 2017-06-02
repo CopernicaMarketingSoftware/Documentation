@@ -1,4 +1,4 @@
-# REST API - POST database views
+# REST API: POST database views
 
 Om een nieuwe selectie aan te maken, moet je 
 een HTTP POST request sturen naar de volgende 

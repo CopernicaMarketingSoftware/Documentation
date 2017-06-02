@@ -1,4 +1,4 @@
-# REST API - GET collection subprofiles
+# REST API: GET collection subprofiles
 
 De methode om subprofielen uit een collectie op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:

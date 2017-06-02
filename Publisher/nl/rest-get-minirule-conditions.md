@@ -1,4 +1,4 @@
-# REST API - GET minirule conditions
+# REST API: GET minirule conditions
 
 Dit is een methode om alle condities van een miniregel (voor een miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 

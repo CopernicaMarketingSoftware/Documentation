@@ -1,4 +1,4 @@
-# REST API - PUT profile
+# REST API: PUT profile
 
 Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 

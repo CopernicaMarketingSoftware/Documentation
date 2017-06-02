@@ -1,4 +1,4 @@
-# REST API - GET view rule
+# REST API: GET view rule
 
 Selecties gebruiken *regels* om te beslisses welke profielen worden gebruikt in de selectie en welke niet. Profielen die tenminste een regel matchen worden toegevoegd. Om de informatie van een enkele regel op te vragen kan er een HTTP GET verzoek worden verstuurd naar de volgende URL:
 

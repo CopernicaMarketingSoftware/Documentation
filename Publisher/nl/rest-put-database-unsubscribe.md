@@ -1,4 +1,4 @@
-# REST API - PUT database unsubscribe
+# REST API: PUT database unsubscribe
 
 Bij elke database kun je het afmeldalgoritme instellen. Als er op de servers
 van Copernica een afmelding binnenkomt wordt deze instelling gebruikt om te

@@ -1,4 +1,4 @@
-# REST API - GET subprofile events
+# REST API: GET subprofile events
 
 Als je subprofiel events wilt downloaden, dan kun je een eenvoudige HTTP
 GET call naar de volgende URL sturen.
