@@ -24,19 +24,21 @@ The subprofile can have the following properties:
 
 The following PHP script demonstrates how the API method can be called.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call, the new interests
-    $data = array(
-        'profile' => '1234'
-    );
+// data to pass to the call, the new interests
+$data = array(
+    'profile' => '1234'
+);
     
-    // do the call
-    $api->post("profile/1234/subprofiles/321", $data);
+// do the call
+$api->post("profile/1234/subprofiles/321", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
     

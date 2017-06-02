@@ -9,16 +9,18 @@ The $id needs to be replaced by the numerical identifier, the ID, of the databas
 ## PHP example
 The following example demonstrates how to make a call using this method.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call
-	$api->delete("database/1234/field/firstname");
+// do the call
+$api->delete("database/1234/field/firstname");
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

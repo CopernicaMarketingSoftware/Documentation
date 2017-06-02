@@ -47,30 +47,32 @@ assign to matching profiles.
 THis PHP script demonstrates how you can use this API call. In the script
 we modify the profile with ID 4567.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to select profiles
-    $parameters = array(
-        'fields'    =>  array("customerid==4567"),
-        'async'     =>  1,
-        'create'    =>  0
-    );
+// parameters to select profiles
+$parameters = array(
+    'fields'    =>  array("customerid==4567"),
+    'async'     =>  1,
+    'create'    =>  0
+);
 
-    // data to pass to the call
-    $data = array(
-        'firstname' =>  'John',
-        'lastname'  =>  'Doe',
-        'email'     =>  'johndoe@example.com'
-    );
+// data to pass to the call
+$data = array(
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
+);
     
-    // do the call
-    $api->put("database/1234/profiles", $parameters, $data);
+// do the call
+$api->put("database/1234/profiles", $parameters, $data);
+```
 
-You need the [CopernicaRestApi klasse](rest-php) to run the above example
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

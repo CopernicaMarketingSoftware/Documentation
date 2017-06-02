@@ -20,24 +20,27 @@ The following variables can be set in the message body:
 - **fields**: fields in the collection
 
 ## PHP example
+
 The following script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'name'      =>  'some_collection',
-	    'database'  =>  'some_database'
-	);
+// data to pass to the call
+$data = array(
+    'name'      =>  'some_collection',
+    'database'  =>  'some_database'
+);
 
-	// do the call
-	$api->post("database/1234/interests", $data);
+// do the call
+$api->post("database/1234/interests", $data);
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information:
 - [Overview of all API calls](rest-api)

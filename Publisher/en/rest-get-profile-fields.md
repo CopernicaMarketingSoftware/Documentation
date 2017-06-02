@@ -16,16 +16,18 @@ This method returns the fields of a profile.
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("profile/1234/fields"));
+// do the call, and print result
+print_r($api->get("profile/1234/fields"));
+```
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

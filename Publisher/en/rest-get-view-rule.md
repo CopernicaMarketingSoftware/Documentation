@@ -56,17 +56,18 @@ the specific articles:
 The following script can be used to fetch the properties of rule 12 inside
 selection 1234:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("view/1234/rule/12"));
+// do the call, and print result
+print_r($api->get("view/1234/rule/12"));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
-    
+The example above requires the [CopernicaRestApi class](rest-php).    
 
 ## More information
 

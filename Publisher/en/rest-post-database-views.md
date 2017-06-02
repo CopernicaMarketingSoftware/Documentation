@@ -21,23 +21,25 @@ The following variables can be added to the body of the HTTP POST call:
 ## PHP example
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'name'      =>  'my-selection',
-        'description'	=> 'example selection',
-        'has-rules'	=> False
-	);
+// data to pass to the call
+$data = array(
+    'name'      =>  'my-selection',
+    'description'	=> 'example selection',
+    'has-rules'	=> False
+);
 
-	// do the call
-	$api->post("database/1234/views", $data);
+// do the call
+$api->post("database/1234/views", $data);
+```
 
-	This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

@@ -22,14 +22,18 @@ The field "behavior" has three possible values: "nothing", "remove" and "update"
 ## PHP example
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("database/1234/unsubscribe"));
+// do the call, and print result
+print_r($api->get("database/1234/unsubscribe"));
+```
+
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

@@ -52,23 +52,25 @@ The following PHP script demonstrates how to call the API method. There is no
 need to escape special characters from the API, because this is done by the 
 CopernicaRestApi class.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100,
-        'orderby'   =>  'country',
-        'fields'    =>  array("age>16", "age<=65")
-    );
+// parameters to pass to the call
+$parameters = array(
+   'limit'     =>  100,
+   'orderby'   =>  'country',
+   'fields'    =>  array("age>16", "age<=65")
+);
     
-    // do the call, and print result
-    print_r($api->get("collection/1234/subprofiles", $parameters));
+// do the call, and print result
+print_r($api->get("collection/1234/subprofiles", $parameters));
+```
 
-To execute this example you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

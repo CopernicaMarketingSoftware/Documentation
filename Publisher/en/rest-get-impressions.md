@@ -42,21 +42,23 @@ the following properties:
 
 The following PHP script can be used to call this method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100
-    );
+// parameters to pass to the call
+$parameters = array(
+   'limit'     =>  100
+);
     
-    // do the call, and print result
-    print_r($api->get("impressions", $parameters));
+// do the call, and print result
+print_r($api->get("impressions", $parameters));
+```
 
-You need the [CopernicaRestApi class](./rest-php.php) to run this example.
+The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 

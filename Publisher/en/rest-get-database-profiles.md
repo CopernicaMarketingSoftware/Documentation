@@ -43,23 +43,25 @@ The method returns a list of profiles. For each profile, the following propertie
 
 The following script demonstrates how to use this method. Because we use the CopernicaRestApi class, you don’t have to worry about escaping special characters in the URL; it is done automatically.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$parameters = array(
-	    'limit'     =>  100,
-	    'orderby'   =>  'country',
-	    'fields'    =>  array("age>16", "age<=65")
-	);
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
 
-	// do the call, and print result
-	print_r($api->get("database/1234/profiles", $parameters));`
+// do the call, and print result
+print_r($api->get("database/1234/profiles", $parameters));`
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

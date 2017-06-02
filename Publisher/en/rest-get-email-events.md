@@ -58,6 +58,7 @@ A JSON with all the events for this profile.
     ...
 ]
 ```
+
 The `event` property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
 
@@ -66,21 +67,23 @@ are available are listed in the [event types page](./event-types.md).
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
     
-    // parameters to pass to the call
-	$parameters = array(
-        "start"     =>  "2017-02-27"
-    );
+// parameters to pass to the call
+$parameters = array(
+   "start"     =>  "2017-02-27"
+);
     
-    // do the call, and print result
-    print_r($api->get("email/john.doe@example.com/events", $parameters));
+// do the call, and print result
+print_r($api->get("email/john.doe@example.com/events", $parameters));
+```
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

@@ -19,16 +19,21 @@ These fields are returned as arrays of objects. If you would like to know more
 about what these arrays look like the following link might help you.
 
 ## PHP example
+
 The following PHP scripts is an example of how to call this API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this to your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this to your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // execute the call and print the result.
-    print_r($api->get("collection/1234"));
+// execute the call and print the result.
+print_r($api->get("collection/1234"));
+```
+
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

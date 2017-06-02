@@ -26,29 +26,31 @@ In the API call the interests of a profile with ID 1234 are edited to activate
 interests. Then we activate the interest "football" for profile with ID 1235, 
 overwriting the current interests for this profile (first method).
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call
-    $data = array(
-        'football'  =>  0,
-        'tennis'    =>  1,
-        'hockey'    =>  1
-    );
+// data to pass to the call
+$data = array(
+    'football'  =>  0,
+    'tennis'    =>  1,
+    'hockey'    =>  1
+);
     
-    // do the call
-    $api->put("profile/1234/interests", $parameters, $data);
+// do the call
+$api->put("profile/1234/interests", $parameters, $data);
 
-    // data to pass to a second call
-    $data = array('football');
-    
-    // do the call
-    $api->put("profile/1235/interests", $parameters, $data);
+// data to pass to a second call
+$data = array('football');
+   
+// do the call
+$api->put("profile/1235/interests", $parameters, $data);
+```
 
-For this example, you need [the CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)

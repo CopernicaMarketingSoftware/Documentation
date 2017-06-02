@@ -23,21 +23,23 @@ These are the exact fields the [method to create new fields](rest-post-database-
 ## PHP example
 The following PHP script demonstrates how to use the API method:
 
-    // dependencies
-    require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to be sent to the api
-    $data = array(
-        'name'          =>  'new-field-name'
-    );
+// data to be sent to the api
+$data = array(
+    'name'          =>  'new-field-name'
+);
 
-    // do the call
-    api->put("database/1234/field/456", $data);
+// do the call
+api->put("database/1234/field/456", $data);
+```
 
-This example uses the [CopernicaRestApi](rest-php) class.
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API methods](rest-api)
