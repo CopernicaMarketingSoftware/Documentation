@@ -46,7 +46,7 @@ We kunnen ook de andere eigenschappen van de iterator gebruiken:
     {/foreach}
     
 Hier printen we de index van elk item en een berichtje voor we de laatste 
-printen. De output zoet er als volgt uit:
+printen. De output ziet er als volgt uit:
 
 `1, 2, End of the list, 3`
     
