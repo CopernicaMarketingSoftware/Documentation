@@ -1,3 +1,4 @@
+# Importeren: kolommen koppelen en sleutelvelden aanwijzen
 Wanneer je gegevens importeert naar de applicatie word je na het
 uploaden van het bestand gevraagd om de kolommen te controleren. Als een
 kolomnaam overeenkomt met een reeds bestaande veldnaam in de database,
