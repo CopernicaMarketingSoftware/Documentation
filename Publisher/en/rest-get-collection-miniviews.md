@@ -1,4 +1,4 @@
-# REST API: fetching collection miniviews
+# REST API: GET collection miniviews
 
 What selections are to a database is what miniselections, or miniviews, 
 are to a collection. To fetch the miniselections applied to this collection 
@@ -35,24 +35,26 @@ information is returned:
 
 The following PHP script demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // insert your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+  
+// insert your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters for the call
-    $parameters = array(
-        'limit'     =>  100
-    );
+// parameters for the call
+$parameters = array(
+    'limit'     =>  100
+);
     
-    // execute the method and print the results
-    print_r($api->get("collection/1234/miniviews", $parameters));
+// execute the method and print the results
+print_r($api->get("collection/1234/miniviews", $parameters));
+```
 
-The above example requires the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Adding a miniselection to a collection](rest-post-collection-views)
-* [Get selection rules](rest-get-miniview-rules)
+* [POST collection ](rest-post-collection-views)
+* [GET miniview rules](rest-get-miniview-rules)

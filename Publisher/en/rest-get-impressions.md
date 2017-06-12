@@ -1,4 +1,4 @@
-# REST API: fetch all registered impressions
+# REST API: GET impressions
 
 All impressions that have been registered by Copernica can be fetched by
 sending a HTTP GET request to the following URL:
@@ -42,28 +42,30 @@ the following properties:
 
 The following PHP script can be used to call this method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100
-    );
+// parameters to pass to the call
+$parameters = array(
+   'limit'     =>  100
+);
     
-    // do the call, and print result
-    print_r($api->get("impressions", $parameters));
+// do the call, and print result
+print_r($api->get("impressions", $parameters));
+```
 
-You need the [CopernicaRestApi class](./rest-php.php) to run this example.
+The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 
 * [Overview of API calls](./rest-api.md)
-* [Fetch abuse reports](./rest-get-abuses.md)
-* [Fetch clicks](./rest-get-clicks.md)
-* [Fetch deliveries](./rest-get-deliveries.md)
-* [Fetch error](./rest-get-errors.md)
-* [Fetch unsubscribes](./rest-get-unsubscribes.md)
+* [GET abuses](./rest-get-abuses.md)
+* [GET clicks](./rest-get-clicks.md)
+* [GET deliveries](./rest-get-deliveries.md)
+* [GET errors](./rest-get-errors.md)
+* [GET unsubscribes](./rest-get-unsubscribes.md)
 

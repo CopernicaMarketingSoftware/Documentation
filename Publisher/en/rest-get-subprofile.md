@@ -1,4 +1,4 @@
-# REST API: fetch subprofile information
+# REST API: GET subprofile
 
 This is a simple method to request all information from a subprofile given 
 its ID. The profile information can be requested with an HTTP GET call to the
@@ -27,19 +27,21 @@ following properties:
 
 The following PHP script demonstrates how to call the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("profile/1234"));
+// do the call, and print result
+print_r($api->get("profile/1234"));
+```
 
-For this example you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 
 * [List of all the API calls](rest-api)
-* [Get only profile IDs](rest-get-database-profileids)
-* [Add subprofile to database](rest-post-profile-subprofiles)
+* [GET database profile identifiers](rest-get-database-profileids)
+* [POST profile subprofiles](rest-post-profile-subprofiles)

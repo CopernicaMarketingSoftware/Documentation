@@ -1,4 +1,4 @@
-# REST API - DELETE rule
+# REST API: DELETE rule
 
 Een regel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 

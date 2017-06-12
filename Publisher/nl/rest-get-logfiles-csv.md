@@ -1,4 +1,4 @@
-# REST API - GET logfiles .csv
+# REST API: GET logfiles .csv
 
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een CSV 

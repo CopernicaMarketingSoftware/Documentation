@@ -1,4 +1,4 @@
-# REST API - GET logfiles .json
+# REST API: GET logfiles .json
 
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een JSON 

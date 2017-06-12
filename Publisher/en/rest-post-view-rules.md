@@ -1,4 +1,4 @@
-# REST API: adding a rule to a selection
+# REST API: POST view rules
 
 Method to add a rule to an existing selection. This is an HTTP POST call to 
 the following URL:
@@ -26,27 +26,29 @@ that do *not* adhere to the rule.
 
 The following PHP script demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call
-    $data = array(
-        'name'      =>  'rule-name',
-        'view'      =>  1234,
-        'inversed'  =>  False
-    );
+// data to pass to the call
+$data = array(
+   'name'      =>  'rule-name',
+   'view'      =>  1234,
+   'inversed'  =>  False
+);
     
-    // do the call
-    $api->post("view/1234/rules", $data);
+// do the call
+$api->post("view/1234/rules", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Make new selection](rest-put-view)
-* [Add rule conditions](rest-post-rule-conditions)
-* [Get selection rules](rest-get-view-rules)
+* [PUT selection](rest-put-view)
+* [POST rule conditions](rest-post-rule-conditions)
+* [GET view rules](rest-get-view-rules)

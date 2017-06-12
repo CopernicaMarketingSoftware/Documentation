@@ -1,4 +1,5 @@
-# REST API: edit minirule conditions
+# REST API: POST minirule condition
+
 A method to edit conditions for a minirule. This method does not 
 support parameters. It is called by sending an HTTP POST request to the following URL:
 
@@ -36,25 +37,27 @@ the specific articles:
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$data = array(
-		'type' = 'date'
-	)
+// parameters to pass to the call
+$data = array(
+	'type' = 'date'
+)
 
-	// do the call, and print result
-	$api->post("minirule/1234/conditions", array(), $data);
+// do the call, and print result
+$api->post("minirule/1234/conditions", array(), $data);
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch rules](./rest-get-minirules)
-* [Get rule by ID](./rest-get-minirule)
-* [Create rule](./rest-post-minirule)
+* [GET minirules](./rest-get-minirules)
+* [GET minirule](./rest-get-minirule)
+* [POST minirule](./rest-post-minirule)

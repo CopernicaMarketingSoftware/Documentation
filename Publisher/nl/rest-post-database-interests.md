@@ -1,4 +1,4 @@
-# REST API - POST database interests
+# REST API: POST database interests
 
 De HTTP POST methode om een interesse toe te voegen aan een bestaande database
 is beschikbaar via het volgende adres:
@@ -47,5 +47,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 
 * [Overzicht van alle API calls](rest-api)
 * [Alle interesses van een database opvragen](rest-get-database-interests)
-* [PUT database interest](rest-put-database-interest)
 * [Interesse verwijderen](rest-delete-database-interest)

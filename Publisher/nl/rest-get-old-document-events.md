@@ -1,4 +1,4 @@
-# REST API - GET old document events
+# REST API: GET old document events
 
 Als je events bij een Publisher document wilt downloaden, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL:

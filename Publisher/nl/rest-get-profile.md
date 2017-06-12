@@ -1,4 +1,4 @@
-# REST API - GET profile
+# REST API: GET profile
 
 Als je alle gegevens van een enkel profiel wilt opvragen, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL

@@ -1,4 +1,4 @@
-# REST API - GET database collections
+# REST API: GET database collections
 
 Als je een HTTP GET request naar de volgende URL stuurt, krijg je een lijst
 terug van alle collecties binnen een database:

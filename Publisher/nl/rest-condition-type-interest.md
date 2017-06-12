@@ -1,27 +1,25 @@
-# Interest condition
+# REST condities: Interest
 
-Je kunt gebruik maken van een Interest condition, door een property ("type")
-en een value ("Interest") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de Interest condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **interest** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
 
-* match-mode: 		matchmode van de interest condition. Zie de match-mode tabel.
-* interest: 		interesse voor de condition. Dit geeft alleen een valide waarde terug als de match-mode staat op: <br>
-"match_profiles_with_interest"; <br>
+Voor deze conditie zijn de volgende parameters beschikbaar:
+
+* match-mode: 		matchmode van de interest conditie. Zie de match-mode tabel.
+* interest: 		interesse voor de conditie. Dit geeft alleen een 
+valide waarde terug als de match-mode staat op "match_profiles_with_interest", 
 "match_profiles_without_interest".
+* interest-group: 	interessegroep van de conditie. Dit geeft alleen 
+een valide waarde terug als de match-mode staat op "match_profiles_with_interestgroup"
+of "match_profiles_without_interestgroup".
 
-* interest-group: 	interessegroep van de condition. Dit geeft alleen een valide waarde terug als de match-mode staat op: <br>
-"match_profiles_with_interestgroup"; <br>
-"match_profiles_without_interestgroup".
-
-
-## Match Modes
-
-De volgende tabel bevat de mogelijke waarden voor de match mode en hun
-omschrijvingen.
+In de onderstaande tabel vind je alle mogelijke match modes.
 
 | Match mode                           | Omschrijving                                  |
 |--------------------------------------|-----------------------------------------------|
@@ -30,41 +28,53 @@ omschrijvingen.
 |match_profiles_with_interest_group    | Match alleen profielen met interesse groep    |
 |match_profiles_without_interestgroup  | Match alleen profielen zonder interesse groep |
 
-
 ## Voorbeeld
 
 Stel dat een sportwinkel een e-mail wilt versturen naar alle klanten die tennis spelen. 
 Hiervoor moet tennis wel als interesse in de database zijn aangemaakt. In dit geval kun 
 je op een hele effectieve manier je marketing inzetten, want je weet precies welke
-interesses je klant heeft. In onderstaand voorbeeld zie je precies hoe je zo'n selectie
-kunt maken.
+interesses je klant heeft. In onderstaand voorbeeld laten we zien hoe je de conditie 
+instelt, zodat je deze kunt gebruiken voor regels voor een selectie.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer interest conditie
+    'type' => 'Interest',
 
-// declare that you want to use the Interest type
-'type' => 'Interest',
-
-// use property match-mode
-'match-mode' => 'match_profiles_with_interest'
-
+    // gebruik matchmode
+    'match-mode' => 'match_profiles_with_interest'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
+
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
-* [Field condition](rest-condition-type-field)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)

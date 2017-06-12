@@ -1,4 +1,4 @@
-# REST API: deleting a minirule
+# REST API: DELETE minirule
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a minirule:
@@ -12,20 +12,22 @@ that you want to remove.
 
 The following example demonstrates how to make a call using this method.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call
-	$api->delete("minirule/1234");
+// do the call
+$api->delete("minirule/1234");
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Remove a database](rest-delete-database)
-* [Create a miniselection rule](rest-get-minirule)
-* [Edit a miniselection rule](rest-put-minirule)
+* [DELETE database](rest-delete-database)
+* [GET minirule](rest-get-minirule)
+* [PUT minirule](rest-put-minirule)

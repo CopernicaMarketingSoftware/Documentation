@@ -1,4 +1,4 @@
-# REST API - GET email events
+# REST API: GET email events
 
 Als je events voor een email adres wilt downloaden, dan kun je die opvragen
 door middel van een eenvoudige HTTP GET call naar de volgende URL:

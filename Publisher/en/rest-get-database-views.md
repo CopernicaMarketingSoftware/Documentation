@@ -1,4 +1,4 @@
-# REST API: requesting available selections
+# REST API: GET database views
 
 To request which selections are available in a database, do an HTTP GET request to the following URL:
 
@@ -30,24 +30,27 @@ For every selection, the following properties are returned:
 ## PHP example
 The following PHP script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$parameters = array(
-	    'limit'     =>  100
-	);
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100
+);
 
-	// do the call, and print result
-	print_r($api->get("database/1234/views", $parameters));
+// do the call, and print result
+print_r($api->get("database/1234/views", $parameters));
+```
 
-This example uses the [CopernicaRestApi class](rest-php)
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API methods](rest-api)
-- [Adding a selection to a database](rest-post-view)
-- [Requesting nested selections](rest-get-view-views)
-- [Fetch selection rules](rest-get-view-rules)
+- [POST view](rest-post-view)
+- [GET view views](rest-get-view-views)
+- [GET view rules](rest-get-view-rules)

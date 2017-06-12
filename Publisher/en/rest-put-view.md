@@ -1,4 +1,4 @@
-# REST API: edit properties of a selection
+# REST API: PUT view
 
 A method to edit a selection from a database. It is called using the following URL:
 
@@ -21,24 +21,26 @@ The following parameters can be placed in the message body of the HTTP PUT comma
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to be sent to the api
-	$data = array(
-    	'description'   =>  'a new description',
-    	'has_rules'      =>  true
-	);
+// data to be sent to the api
+$data = array(
+   	'description'   =>  'a new description',
+   	'has_rules'      =>  true
+);
 
-	// do the call, and print result
-	print_r($api->put("database/1234", array(), $data));
+// do the call, and print result
+print_r($api->put("database/1234", array(), $data));
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Create selection rules](./rest-post-view-rules)
+* [POST view rule](./rest-post-view-rules)

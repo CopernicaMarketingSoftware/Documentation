@@ -1,4 +1,4 @@
-# REST API - POST profile interests
+# REST API: POST profile interests
 
 Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:

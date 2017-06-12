@@ -1,4 +1,4 @@
-# REST API - GET profile subprofiles
+# REST API: GET profile subprofiles
 
 Subprofielen zijn voor collecties wat reguliere profielen zijn in een database. 
 Om een lijst van subprofielen van een profiel uit een collectie op te

@@ -1,15 +1,14 @@
-# REST API: Condition type field
+# REST conditions: Field
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the field condition.
+This article is about the **field** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The field condition has the following parameters:
 
 * **comparison**: Comparison type for fieldcondition. Possible values: 
 "equals", "not equals", "contains", "not contains", "less", "more", "is_email", 
@@ -22,17 +21,38 @@ This article is about the properties of the field condition.
 
 ## Example
 
-Let's assume, for the purposes of the example, that we have a product only 
-children like and that we know which of our customers have children. This is 
-indicated in the field "has_children" in the fields of the database profiles. 
-Now we can pick a specific target for marketing, namely parents, using the field 
-condition. We use the following values:
+Imagine that you would have a "has_children" field, alllowing you 
+to group those that have children. In this case you can email a specific 
+target group by making a selection that selects on this field. The following 
+condition is validated if "has_children" is set to true.
 
-* **field**: "has_children"
-* **value**: "yes"
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select field condition
+    'type' => 'Field',
+
+    // select field
+    'field' => 'has_children',
+    
+    // set value
+    'value' => 'yes',
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type interest](rest-condition-type-interest)

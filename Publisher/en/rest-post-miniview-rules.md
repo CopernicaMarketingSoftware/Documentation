@@ -1,4 +1,4 @@
-# REST API: adding a rule to a selection of a collection
+# REST API: POST miniview rules
 
 Method to add a rule to an existing selection from a collection (miniview, see [view documentation](rest-post-view-rules) for selections from a database). This is an HTTP POST call to the following URL:
 
@@ -25,27 +25,29 @@ that do *not* adhere to the rule.
 
 The following PHP script demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call
-    $data = array(
-        'name'      =>  'rule-name',
-        'view'      =>  1234,
-        'inversed'  =>  False
-    );
+// data to pass to the call
+$data = array(
+    'name'      =>  'rule-name',
+    'view'      =>  1234,
+    'inversed'  =>  False
+);
     
-    // do the call
-    $api->post("miniview/1234/minirules", $data);
+// do the call
+$api->post("miniview/1234/minirules", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Make new selection](rest-put-miniview)
-* [Add rule conditions](rest-post-minirule-conditions)
-* [Get selection rules](rest-get-miniview-rules)
+* [PUT miniview](rest-put-miniview)
+* [POST minirule conditions](rest-post-minirule-conditions)
+* [GET miniview rules](rest-get-miniview-rules)

@@ -1,26 +1,14 @@
-# REST API: Condition type survey
+# REST conditions: Survey
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the survey condition.
-
-## Date properties
-
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
-
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: The beforemutation (time difference) for the surveycondition.
-* **after-mutation**: The aftermutation (time difference) for the surveycondition.
+This article is about the **survey** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The survey condition has the following parameters:
 
 * **submitter**: Required submitter of the survey. See the required submitters table.
 * **survey-name**: Name of survey to check submission for.
@@ -39,17 +27,50 @@ and their description.
 | noprofile          | Survey was not submitted by profile.         |
 | nosubprofile       | Survey was not submitted by subprofile.      |
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that received the document before this time
+* **after-time**: Matches only profiles that received the document after this time
+* **before-mutation**: The beforemutation (time difference) for the survey condition.
+* **after-mutation**: The aftermutation (time difference) for the survey condition.
+
 ## Example
 
-Let's say you have sent an important survey for the profiles in your database 
-to fill out, but some of them have not sent a reaction yet. Using the survey 
-condition you can select everyone that did not submit your survey yet, by 
-using the following values:
+Sometimes people forget that you sent them an import survey, while you need 
+the data! You can easily send an email to a selection of the people that 
+forget with the survey condition. The following condition is validated when 
+someone has not submitted your survey yet. 
 
-* **survey-name**: Survey you want to send a reminder for
-* **submitter**: "none"
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select survey condition
+    'type' => 'Survey',
+
+    // set survey name
+    'survey-name' => 'survey x',
+    
+    // set submitter
+    'submitter' => 'none'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

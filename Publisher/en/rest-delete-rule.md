@@ -1,4 +1,4 @@
-# REST API: deleting a rule
+# REST API: DELETE rule
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a rule:
@@ -12,20 +12,22 @@ that you want to remove.
 
 The following example demonstrates how to make a call using this method.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call
-	$api->delete("rule/1234");
+// do the call
+$api->delete("rule/1234");
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Remove a database](rest-delete-database)
-* [Create a rule](rest-get-rule)
-* [Edit a rule](rest-put-rule)
+* [DELETE database](rest-delete-database)
+* [GET rule](rest-get-rule)
+* [PUT rule](rest-put-rule)

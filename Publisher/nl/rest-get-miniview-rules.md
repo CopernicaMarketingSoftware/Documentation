@@ -1,4 +1,4 @@
-# REST API - GET miniview rules
+# REST API: GET miniview rules
 
 Een miniview is voor een collectie wat een view/selectie is voor een database. Om de regels van zo'n miniview op te vragen kun je een HTTP GET verzoek versturen naar de volgende URL:
 

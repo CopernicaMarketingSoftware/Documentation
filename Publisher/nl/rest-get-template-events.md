@@ -1,4 +1,4 @@
-# REST API - GET template events
+# REST API: GET template events
 
 Als je events bij een Marketing Suite template wilt downloaden, dan kun
 je die opvragen door middel van een eenvoudige HTTP GET call naar de volgende

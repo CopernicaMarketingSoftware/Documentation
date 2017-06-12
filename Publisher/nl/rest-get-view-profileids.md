@@ -1,4 +1,4 @@
-# REST API - GET view profile id
+# REST API: GET view profile id
 
 Als je alleen maar de ID's van de profielen in een selectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 

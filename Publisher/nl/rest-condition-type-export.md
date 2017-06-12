@@ -1,19 +1,21 @@
-# Export condition
+# REST condities: Export
 
-Je kunt gebruik maken van een Export condition, door een property ("type")
-en een value ("Export") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de Email condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **export** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * include-never-exported-profiles: een boolean value om aan te geven of 
 profielen die niet eerder zijn geëxporteerd, alsnog meengenomen moeten 
 worden.
 
-
-## Toevoegen van een datum
+## Export per tijdsinterval
 
 Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
 conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
@@ -24,50 +26,65 @@ meegeven aan de POST request:
 * before-mutation:      tijdverschil voor de Export condition;
 * after-mutation:       tijdverschil na de Export condition.
 
+Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
+
 ```text
-De 'time' properties accepteren voor de value de volgende stringvolgorde:
 'YYYY-MM-DD HH:MM:SS'
 '2017-01-01 00:00:00'
+```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+
+```text
 '["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
 ## Voorbeeld
 
-Je kunt ook selecteren op profielen die je voor een bepaalde dag een keer 
+Je kunt ook selecteren op profielen die je voor een bepaalde dag al eens  
 hebt geëxporteerd. Hieronder is weergegeven hoe je zo'n scenario vertaald
 naar daadwerkelijke code.
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
+    // selecteer export conditie
+    'type' => 'Export',
 
-// declare that you want to use the Export type
-'type' => 'Export',
-
-// use property
-'include-never-exported-profiles' => true,
-
+    // gebruik gewenste eigenschappen
+    'include-never-exported-profiles' => true,
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 
 Dit voorbeeld vereist de [REST API class](./rest-php).
 
-
 ## Meer informatie
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)

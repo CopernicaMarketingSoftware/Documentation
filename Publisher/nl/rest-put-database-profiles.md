@@ -1,4 +1,4 @@
-# REST API - PUT database profiles
+# REST API: PUT database profiles
 
 Er is een API methode om meerdere profielen tegelijk te bewerken. Dit kun je
 doen met behulp van een HTTP PUT request naar de volgende URL:

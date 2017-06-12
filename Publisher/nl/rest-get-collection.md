@@ -1,4 +1,4 @@
-# REST API - GET collection
+# REST API: GET collection
 
 Een collectie is een "tweede laag" binnen een database. Als je de numerieke
 identifier van een collectie weet, dan kun je met een HTTP GET request de

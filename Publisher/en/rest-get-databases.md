@@ -1,4 +1,4 @@
-# REST API: requesting databases
+# REST API: GET databases
 
 A method to request a list of all available databases. This is an HTTP GET call to the following address:
 
@@ -32,23 +32,26 @@ If you want to know more about *fields*, *interests* and *collections*,  take a 
 
 The following PHP script demonstrates how to use the method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$parameters = array(
-	    'limit'     =>  100
-	);
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100
+);
 
-	// do the call, and print result
-	print_r($api->get("databases", $parameters));
+// do the call, and print result
+print_r($api->get("databases", $parameters));
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API methods](rest-api)
-- [Requesting a single database](rest-get-database)
-- [Creating a database](rest-post-database)
+- [GET database](rest-get-database)
+- [POST database](rest-post-database)

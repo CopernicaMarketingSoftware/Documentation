@@ -1,4 +1,4 @@
-# REST API: adding subprofile to a profile
+# REST API: POST profile subprofiles
 
 To add subprofiles to a profile an HTTP post request can be sent to the following URL:
 
@@ -24,26 +24,28 @@ The subprofile can have the following properties:
 
 The following PHP script demonstrates how the API method can be called.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call, the new interests
-    $data = array(
-        'profile' => '1234'
-    );
+// data to pass to the call, the new interests
+$data = array(
+    'profile' => '1234'
+);
     
-    // do the call
-    $api->post("profile/1234/subprofiles/321", $data);
+// do the call
+$api->post("profile/1234/subprofiles/321", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 
 * [Overview of all REST API calls](rest-api)
-* [Overwrite profile interests](rest-put-profile-interests)
-* [Creating a profile](rest-post-database-profiles)
-* [Fetch subprofile data](rest-get-subprofile)
-* [Edit a subprofile](rest-post-profile-subprofiles)
+* [PUT profile interests](rest-put-profile-interests)
+* [POST database profile](rest-post-database-profiles)
+* [GET subprofile](rest-get-subprofile)
+* [POST profile subprofile](rest-post-profile-subprofiles)

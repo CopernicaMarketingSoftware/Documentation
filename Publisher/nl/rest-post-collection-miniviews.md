@@ -1,4 +1,4 @@
-# REST API - POST collection miniviews
+# REST API: POST collection miniviews
 
 Om een nieuwe selectie aan te maken, moet je een HTTP POST request sturen
 naar de volgende URL. De selectie wordt dan direct onder de collectie aangemaakt.

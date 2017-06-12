@@ -1,4 +1,5 @@
-# REST API: requesting profiles in a database
+# REST API: GET database profiles
+
 The method to request profiles in a database is an HTTP GET request and available at the following address:
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
@@ -6,6 +7,7 @@ The method to request profiles in a database is an HTTP GET request and availabl
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to request profiles from.
 
 ## Available parameters
+
 The following parameters can be added to the URL as variables:
 
 - **start**: the first profile to be requested
@@ -26,6 +28,7 @@ Instead of a field to sort on, you can also assign one of the following special 
 - **modified**: profiles are sorted on the timestamp they were last modified on.
 
 ## Returned fields
+
 The method returns a list of profiles. For each profile, the following properties are returned:
 
 - **ID**: numerical ID of the profile
@@ -37,30 +40,33 @@ The method returns a list of profiles. For each profile, the following propertie
 - **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
 
 ## PHP example
+
 The following script demonstrates how to use this method. Because we use the CopernicaRestApi class, you don’t have to worry about escaping special characters in the URL; it is done automatically.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$parameters = array(
-	    'limit'     =>  100,
-	    'orderby'   =>  'country',
-	    'fields'    =>  array("age>16", "age<=65")
-	);
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
 
-	// do the call, and print result
-	print_r($api->get("database/1234/profiles", $parameters));`
+// do the call, and print result
+print_r($api->get("database/1234/profiles", $parameters));`
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 - [Overview of all API calls](rest-api)
-- [Requesting profile IDs](rest-get-database-profileids)
-- [Adding a profile to a database](rest-post-database-profiles)
-- [Editing a profile](rest-put-profile-fields)
-- [Delete profile](rest-delete-profile)
+- [GET database profile identifiers](rest-get-database-profileids)
+- [POST database profiles](rest-post-database-profiles)
+- [PUT profile fields](rest-put-profile-fields)
+- [DELETE profile](rest-delete-profile)

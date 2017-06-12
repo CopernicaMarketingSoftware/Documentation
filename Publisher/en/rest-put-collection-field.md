@@ -1,4 +1,4 @@
-# REST API: editing a field in a collection
+# REST API: PUT collection field
 Method to edit a certain field in a collection. To use this method you can make an HTTP PUT request to the following URL:
 
 `https://api.copernica/com/v1/collection/$id/field/$id?access_token=xxxx`
@@ -25,24 +25,26 @@ grids and lists in the user interface
 
 The following PHP script demonstrates how to use the method.
 
-    // dependencies
-    require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to be sent to the api
-    $data = array(
-        'name'      => 'new_name'
-    );
+// data to be sent to the api
+$data = array(
+   'name'      => 'new_name'
+);
 
-    // do the call
-    api->put("collection/1234/field", array(), $data);
+// do the call
+api->put("collection/1234/field", array(), $data);
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 - [Overview of all API method](rest-api)
-- [Editing database field](rest-put-database-field)
-- [Editing field of a profile](rest-put-profile-field)
+- [PUT database field](rest-put-database-field)
+- [PUT profile field](rest-put-profile-field)

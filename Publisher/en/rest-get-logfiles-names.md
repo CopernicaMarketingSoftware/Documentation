@@ -1,4 +1,4 @@
-# REST API: fetch logfile names
+# REST API: GET logfiles names
 
 Copernica keeps logfiles about several things such as clicks, opens, errors, 
 accepted messages, etc. These logfiles can be downloaded with the API.
@@ -39,21 +39,22 @@ To download a log file please see the links under "More information".
 
 The following PHP script demonstrates how to use the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("logfiles/2017-02-12"));
+// do the call, and print result
+print_r($api->get("logfiles/2017-02-12"));
+```
 
-For the example above you need the [CopernicaRestApi class](./rest-php.md).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](./rest-api.md)
-* [Get names of log files](rest-get-logfiles-names)
-* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
-* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
-* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)
+* [GET JSON logfile](rest-get-logfiles-json)
+* [GET CSV logfile](rest-get-logfiles-csv)
+* [GET XML logfile](rest-get-logfiles-xml)

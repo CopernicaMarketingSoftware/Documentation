@@ -1,4 +1,4 @@
-# REST API: fetching rules from a selection
+# REST API: GET view rules
 
 To retrieve all rules in a selection, send a HTTP GET request to this address:
 
@@ -38,26 +38,28 @@ CopernicaRestApi class that we use in the example takes care of escaping the
 parameters that are passed to the URL. If you write your own code to construct
 the URL, you must take care of escaping the parameters yourself.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100,
-    );
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+);
     
-    // do the call, and print result
-    print_r($api->get("miniview/1234/minirules", $parameters));
+// do the call, and print result
+print_r($api->get("miniview/1234/minirules", $parameters));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
+The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Get a selection rule by ID](./get-miniview-rule)
-* [Request a list of rules from database](./rest-get-rule)
+* [GET miniview rule](./get-miniview-rule)
+* [GET rule](./rest-get-rule)
 
 

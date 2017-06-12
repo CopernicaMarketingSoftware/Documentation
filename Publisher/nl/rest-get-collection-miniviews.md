@@ -1,4 +1,4 @@
-# REST API - GET collection miniviews
+# REST API: GET collection miniviews
 
 Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,

@@ -1,4 +1,5 @@
-# REST API: requesting unsubscribe settings
+# REST API: GET database unsubscribe
+
 Every database has the option to set unsubscribe behaviour. When Copernica’s servers receive an unsubscription, the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
 You can request your settings using the following URL:
@@ -21,15 +22,20 @@ The field "behavior" has three possible values: "nothing", "remove" and "update"
 ## PHP example
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("database/1234/unsubscribe"));
+// do the call, and print result
+print_r($api->get("database/1234/unsubscribe"));
+```
+
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Setting unsubscribe behaviour](rest-put-database-unsubscribe)
+- [PUT database unsubscribe](rest-put-database-unsubscribe)

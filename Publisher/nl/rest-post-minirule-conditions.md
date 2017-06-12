@@ -1,4 +1,4 @@
-# REST API - POST minirule conditions
+# REST API: POST minirule conditions
 
 Een methode om condities voor een miniregel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 

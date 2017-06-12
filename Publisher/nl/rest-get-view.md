@@ -1,4 +1,4 @@
-# REST API - GET view
+# REST API: GET view
 
 Een methode om de metadata van een database op te vragen. De methode kan aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 

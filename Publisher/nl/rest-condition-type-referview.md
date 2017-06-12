@@ -1,44 +1,44 @@
-# ReferView condition
+# REST condities: ReferView
 
-Je kunt gebruik maken van een ReferView condition, door een property ("type")
-en een value ("ReferView") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de ReferView condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **referview** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * refer-view: 			view waar de conditie naar verwijst.
 * check-type: 			boolean value om aan te geven of een profiel zichtbaar moet zijn in de andere view. Mogelijke waarden: 
-"yes"; <br>
-"no".
-
+"yes", "no".
 
 ## Voorbeeld
 
-Je kunt deze condition gebruiken als je na wilt gaan of twee profielen geen
-enkele overlap hebben.
+Je kunt deze conditie gebruiken als je wil weten of twee profielen geen
+enkele overlap hebben, binnen of buiten een view.
 
 ```php
-
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-    // declare that you want to use the Referview
+    // selecteer referview conditie
     'type' => 'ReferView',
 
-    // use the checktype to determine if you want to select other views
+    // stel check-type in
     'check-type' => 'no'
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 
@@ -46,9 +46,23 @@ Het is ook mogelijk om een overkoepelende view te maken, die juist wel
 uit de andere views selecteert. Je kunt dit doen door check-type op 
 "yes" in plaats van "no" te zetten.
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
-* [MiniView condition](rest-condition-type-miniview)
+* [GET rule condities](rest-get-rule-conditions)
+* [POST rule condities](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)

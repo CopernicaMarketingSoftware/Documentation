@@ -1,4 +1,4 @@
-# REST API: fetch profile information
+# REST API: GET profile
 
 This is a simple method to request all information from a profile given 
 its ID. The profile information can be requested with an HTTP GET call to the
@@ -26,22 +26,24 @@ following properties:
 
 The following PHP script demonstrates how to call the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("profile/1234"));
+// do the call, and print result
+print_r($api->get("profile/1234"));
+```
 
-For this example you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
     
 
 ## More information
 
 * [List of all the API calls](rest-api)
-* [Get only profile IDs](rest-get-database-profileids)
-* [Add profile to database](rest-post-database-profiles)
-* [Edit profile](rest-put-profile-fields)
-* [Delete profile](rest-delete-profile)
+* [GET database profile identifiers](rest-get-database-profileids)
+* [POST database profile](rest-post-database-profiles)
+* [PUT profile fields](rest-put-profile-fields)
+* [DELETE profile](rest-delete-profile)

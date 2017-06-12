@@ -1,88 +1,103 @@
-# LastContact condition
+# REST condities: LastContact
 
-Je kunt gebruik maken van een LastContact condition, door een property ("type")
-en een value ("LastContact") op te geven. Daarna ben je in staat om de
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de LastContact condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **lastcontact** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
 
-* match-type:       match type van het laatste contact. Mogelijke waarden: <br>
-"match_intelligent"; <br>
-"match_exact".
-
-* match-mode:       matchmode van de lastcontactconditie. Mogelijke waarden: <br>
-"match_contacted_profiles"; <br>
-"match_not_contacted_profiles".
-
-* contact-type:     het type contact of geen contact. Mogelijke waarden: <br>
-"PxPomContactType"; <br>
-"false".
-
+* match-type:       match type van het laatste contact. Mogelijke waarden: 
+"match_intelligent" of "match_exact".
+* match-mode:       matchmode van de lastcontactconditie. Mogelijke waarden: 
+"match_contacted_profiles", "match_not_contacted_profiles".
+* contact-type:     het type contact of geen contact. Mogelijke waarden: 
+"PxPomContactType", "false".
 * min-closed:       minimum hoeveelheid items vereist op de contact lijst.
 * max-closed:       maximum hoeveelheid items vereist op de contact lijst.
 * user:             gebruiker van de conditie (PxPomUser), of "false" als er geen selectie nodig is.
 * priority:         vraag prioriteit van geselecteerde contacten op.
 * contains:         zoek string voor het doorzoeken van contact rapporten.
 
+## LastContact per tijdsinterval
 
-## Toevoegen van een datum
-
-Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
-condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
+conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
 meegeven aan de POST request:
 
-* before-time:          matcht alleen de change condition voor deze tijd;
-* after-time:           matcht alleen de change condition na deze tijd;
-* before-mutation:      tijdverschil voor de change condition;
-* after-mutation:       tijdverschil na de change condition.
+* before-time:          matcht alleen de lastcontact conditie voor deze tijd;
+* after-time:           matcht alleen de lastcontact conditie na deze tijd;
+* before-mutation:      tijdverschil voor de lastcontact conditie;
+* after-mutation:       tijdverschil na de lastcontact conditie.
+
+Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
 
 ```text
-De 'time' properties accepteren voor de value de volgende stringvolgorde:
 'YYYY-MM-DD HH:MM:SS'
 '2017-01-01 00:00:00'
+```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
+
+```text
 '["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
 ## Voorbeeld
 
-Het is ook mogelijk om een selectie te maken naar aanleiding van een contact moment.
-Je kunt zo bijvoorbeeld testen of een werknemener zijn werk goed doet omtrent het
+Het is ook mogelijk om een selectie te maken naar aanleiding van een contactmoment.
+Je kunt zo bijvoorbeeld testen of een werknemer zijn werk goed doet omtrent het
 helpen van klanten. Hieronder is een zo'n scenario vertaald naar de daadwerkelijk 
 conditie.
 
 ```php
-
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
-    // declare that you want to use the LastContact type
+    // selecteer lastcontact conditie
     'type' => 'LastContact',
 
-    // use property match-mode
+    // gebruik tijdsinterval
     'after-time' => '2016-12-11 00:34:56',
+    
+    // stel minimum in
     'min-closed' => '3',
+    
+    // zoek 'Bob' in rapporten
     'contains' => 'Bob' 
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
+
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
-* [ToDo condition](rest-condition-type-todo)
+* [GET rule condities](rest-get-rule-conditions)
+* [POST rule condities](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type survey](rest-condition-type-survey)
+* [Conditie type todo](rest-condition-type-todo)
