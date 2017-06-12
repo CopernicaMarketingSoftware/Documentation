@@ -24,8 +24,8 @@ opnemen in een e-mailbericht. Deze code wordt in het verstuurde bericht
 vervangen door de veldwaarde in het profiel van de ontvanger.
 
 Er moet altijd gespecificeerd worden of een veld uit het profiel of het
-subprofiel aangeroepen wordt. Door in plaats van `{\$Voornaam}`,
-`{\$profile.Voornaam}` of `{\$subprofile.veldnaam}` te gebruiken is het
+subprofiel aangeroepen wordt. Door in plaats van `{$Voornaam}`,
+`{$profile.Voornaam}` of `{$subprofile.veldnaam}` te gebruiken is het
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
@@ -48,6 +48,3 @@ plaatsen personalisatie toevoegen. Deze velden zijn te herkennen aan
 het Dollar `$` teken in het input-veld. Zo kun je bijvoorbeeld de
 'from name', het onderwerp, maar ook het 'from adres' aanpassen door
 in deze velden de code toe te passen.
-
-
-[Ga naar de Marketing Suite](https://ms.copernica.com)
