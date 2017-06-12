@@ -1,4 +1,4 @@
-# REST API - DELETE database field
+# REST API: DELETE database field
 
 Als je een HTTP DELETE request stuurt naar de volgende URL, verwijder je een 
 veld uit een database:

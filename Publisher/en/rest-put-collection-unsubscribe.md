@@ -1,4 +1,5 @@
-# REST API: setting unsubscribe behaviour for a collection
+# REST API: PUT collection unsubscribe
+
 For every collection you may also set the unsubscribe settings separately. 
 When Copernica’s servers receive an unsubscription the unsubscribe behaviour determines what happens with the profile: should it be edited or removed?
 
@@ -21,24 +22,26 @@ The following variables must be put into the body of the request:
 
 The following PHP script demonstrates how to use the method. In this example, when somebody unsubscribes, the field ‘newsletter’ is set to ‘no’.
 
-    // dependencies
-    require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to be sent to the api
-    $data = array(
-        'behavior'      =>  'update',
-        'fields'        =>  array('newsletter' => 'no')
-    );
+// data to be sent to the api
+$data = array(
+    'behavior'      =>  'update',
+    'fields'        =>  array('newsletter' => 'no')
+);
 
-    // do the call
-    api->put("collection/1234", array(), $data);
+// do the call
+api->put("collection/1234", array(), $data);
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 - [Overview of all API method](rest-api)
-- [Requesting unsubscribe behaviour of a collection](rest-get-collection-unsubscribe)
+- [GET collection unsubscribe](rest-get-collection-unsubscribe)

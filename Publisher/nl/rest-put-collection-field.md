@@ -1,4 +1,4 @@
-# REST API - PUT collection field
+# REST API: PUT collection field
 
 Methode om een bepaald veld in een collectie aan te passen. Om deze methode uit te voeren kun je een HTTP PUT verzoek sturen aan de volgende URL:
 

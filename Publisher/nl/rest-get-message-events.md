@@ -1,4 +1,4 @@
-# REST API - GET message events
+# REST API: GET message events
 
 Als je events bij een met Marketing Suite verstuurd bericht wilt
 downloaden, dan kun je die opvragen door middel van een eenvoudige

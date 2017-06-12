@@ -1,4 +1,4 @@
-# REST API: edit rule conditions
+# REST API: POST rule conditions
 A method to edit conditions for a rule. This method does not 
 support parameters. It is called by sending an HTTP POST request to the following URL:
 
@@ -37,25 +37,27 @@ the specific articles:
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$data = array(
-		'type' = 'date'
-	)
+// parameters to pass to the call
+$data = array(
+	'type' = 'date'
+);
 
-	// do the call, and print result
-	$api->post("rule/1234/conditions", array(), $data);
+// do the call, and print result
+$api->post("rule/1234/conditions", array(), $data);
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch rules](./rest-get-rules)
-* [Get rule by ID](./rest-get-rule)
-* [Create rule](./rest-put-rule)
+* [GET rules](./rest-get-rules)
+* [GET rule](./rest-get-rule)
+* [PUT rule](./rest-put-rule)

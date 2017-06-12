@@ -1,4 +1,4 @@
-# REST API: requesting fields in a database
+# REST API: GET database fields
 
 This method is used to request all fields in a database. It is an HTTP GET call to the following address:
 
@@ -34,24 +34,26 @@ The method returns a list of fields in the database. For each field, the followi
 
 The following PHP script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// parameters to pass to the call
-	$parameters = array(
-	    'limit'     =>  100
-	);
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100
+);
 	
-	// do the call, and print result
-	print_r($api->get("database/1234/fields", $parameters));
+// do the call, and print result
+print_r($api->get("database/1234/fields", $parameters));
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API methods](rest-api)
-- [Adding a field to a database](rest-post-database-fields)
-- [Updating a field](rest-put-database-field)
-- [Deleting a field](rest-delete-database-field)
+- [POST database fields](rest-post-database-fields)
+- [PUT database field](rest-put-database-field)
+- [DELETE database field](rest-delete-database-field)

@@ -1,4 +1,4 @@
-# REST API: fetch selection meta data
+# REST API: GET miniview
 
 A method to request all metadata from a selection in a collection (miniview). This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
@@ -23,18 +23,20 @@ There are no available parameters for this method.
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("view/1234"));
+// do the call, and print result
+print_r($api->get("view/1234"));
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Fetch selection rules for a collection](./rest-get-miniview-rules)
+* [GET miniview rules](./rest-get-miniview-rules)

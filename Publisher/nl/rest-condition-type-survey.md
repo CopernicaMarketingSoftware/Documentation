@@ -1,12 +1,15 @@
-# Survey condition
+# REST condities: Survey
 
-Je kunt gebruik maken van een Survey condition, door een property ("type")
-en een value ("Survey") op te geven. Daarna ben je in staat om de 
-eigenschappen naar wens op te geven. In de onderstaande tabel vind je alle 
-eigenschappen van de Survey condition en een voorbeeld van een request.
+Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
+conditie van een regel te worden voldaan om aan de regel te voldoen. 
+Elke conditie heeft specifieke eigenschappen.
 
+Dit artikel gaat over de **survey** conditie. Als je op zoek bent 
+naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 
-## Individuele eigenschappen
+## Eigenschappen
+
+Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * submitter:            vereiste submitter van de enquête. Zie de required submitters tabel.
 * survey-name:          naam van enquête om indien-status te vergelijken.
@@ -25,17 +28,16 @@ en hun omschrijvingen.
 | noprofile          | Enquête werd niet ingediend door een profiel.      |
 | nosubprofile       | Enquête werd niet ingediend door een subprofiel.   |
 
+## Surveys per tijdsinterval
 
-## Toevoegen van een datum
-
-Voor deze condition kun je ook een datum toevoegen, zodat je weet wanneer de
-condition is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
+Voor deze conditie kun je ook een datum toevoegen, zodat je weet wanneer de
+conditie is aangemaakt of geüpdatet. Deze datums kun je op de volgende manier
 meegeven aan de POST request:
 
-* before-time:          matcht alleen de Sms condition voor deze tijd;
-* after-time:           matcht alleen de Sms condition na deze tijd;
-* before-mutation:      tijdverschil voor de Sms condition;
-* after-mutation:       tijdverschil na de Sms condition.
+* before-time:          matcht alleen de survey conditie voor deze tijd;
+* after-time:           matcht alleen de survey conditie na deze tijd;
+* before-mutation:      tijdverschil voor de survey conditie;
+* after-mutation:       tijdverschil na de survey conditie.
 
 ```text
 De 'time' properties accepteren voor de value de volgende stringvolgorde:
@@ -51,40 +53,51 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 
 Stel dat je een belangrijke enquête hebt verstuurd, maar nog niet van alle 
 profielen in je database een reactie hebt gekregen. Je kunt dan een selectie 
-maken met de survey condition van de mensen die je een reminder wilt sturen. 
-
-
-* survey-name:          enquête waarvoor je een reminder wilt versturen;
-* submitter:            "none".
-
+maken met de survey conditie van de mensen die je een reminder wilt sturen. 
 
 ```php
-// required code
+// vereiste module
 require_once("copernica_rest_api.php");
 
-// create an API object (add your own access token!)
+// maak een API object met je eigen token
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-
-    // declare that you want to use the MiniView type
+    // selecteer survey conditie
     'type' => 'Survey',
 
-    // use property for survey-name and submitter
+    // stel survey naam in
     'survey-name' => 'survey x',
+    
+    // stel submitter in
+    // (none = niet ingevuld!)
     'submitter' => 'none'
-
 );
 
-// do the call
+// voer het verzoek uit
 $result = $api->post("rule/id/conditions", $data);
 
-// print the result
+// print het resultaat
 print_r($result);
 ```
 
+Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
+* [GET rule condities](rest-get-rule-conditions)
+* [POST rule condities](rest-post-rule-conditions)
+* [Conditie type change](rest-condition-type-change)
+* [Conditie type date](rest-condition-type-date)
+* [Conditie type doublefield](rest-condition-type-doublefield)
+* [Conditie type email](rest-condition-type-email)
+* [Conditie type export](rest-condition-type-export)
+* [Conditie type fax](rest-condition-type-fax)
+* [Conditie type field](rest-condition-type-field)
+* [Conditie type interest](rest-condition-type-interest)
+* [Conditie type lastcontact](rest-condition-type-lastcontact)
+* [Conditie type miniview](rest-condition-type-miniview)
+* [Conditie type part](rest-condition-type-part)
+* [Conditie type referview](rest-condition-type-referview)
+* [Conditie type sms](rest-condition-type-sms)
+* [Conditie type todo](rest-condition-type-todo)

@@ -1,4 +1,4 @@
-# REST API - PUT minirule
+# REST API: PUT minirule
 
 Een minirule is voor een miniview wat een regel is voor een selectie. 
 Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT 

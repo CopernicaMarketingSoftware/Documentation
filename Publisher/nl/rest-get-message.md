@@ -1,4 +1,4 @@
-# REST API - GET message
+# REST API: GET message
 
 Als je algemene informatie van een met Marketing Suite verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.

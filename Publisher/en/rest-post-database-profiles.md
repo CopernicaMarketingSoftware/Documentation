@@ -1,4 +1,4 @@
-# REST API: adding a profile to a database
+# REST API: POST database profile
 
 The HTTP POST method to add a profile to an existing database is available at the following address:
 
@@ -23,28 +23,32 @@ The following variables can be set in the message body:
 - **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
 
 ## PHP example
+
 The following script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'database' => database_id
-	);
+// data to pass to the call
+$data = array(
+    'database' => database_id
+);
 
-	// do the call
-	$api->post("database/1234/profiles", $data);
+// do the call
+$api->post("database/1234/profiles", $data);
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information:
+
 - [Overview of all API calls](rest-api)
-- [Request all profiles in a database](rest-get-database-profiles)
-- [Updating a profile](rest-put-profile-interests)
-- [Deleting a profile](rest-delete-profile)
-- [Add fields to profile](rest-put-profile-fields)
-- [Add interests to profile](rest-post-profile-interests)
+- [GET database profiles](rest-get-database-profiles)
+- [PUT profile interests](rest-put-profile-interests)
+- [DELETE profile](rest-delete-profile)
+- [PUT profile fields](rest-put-profile-fields)
+- [POST profile interests](rest-post-profile-interests)

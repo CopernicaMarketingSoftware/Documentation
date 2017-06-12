@@ -1,4 +1,4 @@
-# REST API: fetching rule data from selection from collection
+# REST API: GET miniview rule
 
 Selections use *rules* to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 
@@ -55,22 +55,24 @@ the specific articles:
 The following script can be used to fetch the properties of rule 12 inside
 selection 1234:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("miniview/1234/minirule/12"));
+// do the call, and print result
+print_r($api->get("miniview/1234/minirule/12"));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
+The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Fetch all selection rules from miniview](./rest-get-miniview-rules.md)
-* [Add a new selection rule](./rest-post-miniview-rules.md)
-* [Edit a selection rule](./rest-put-minirule.md)
-* [Remove a selection rule](./rest-delete-minirule.md)
-* [Edit a condition](./rest-post-minirule-condition.md)
+* [GET miniview rules](./rest-get-miniview-rules.md)
+* [POST miniview rules](./rest-post-miniview-rules.md)
+* [PUT minirule](./rest-put-minirule.md)
+* [DELETE minirule](./rest-delete-minirule.md)
+* [POST minirule condition](./rest-post-minirule-condition.md)

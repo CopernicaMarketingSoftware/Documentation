@@ -1,4 +1,4 @@
-# REST API - GET view views
+# REST API: GET view views
 
 Selecties kunnen worden genest. Om op te vragen welke selecties er direct
 onder een andere selectie vallen, kun je een HTTP GET request naar de 

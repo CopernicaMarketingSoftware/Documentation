@@ -1,4 +1,4 @@
-# REST API: requesting unsubscribe behaviour for a collection
+# REST API: GET collection unsubscribe
 
 Every collection has the option to set unsubscribe behaviour. When 
 Copernica’s servers receive an unsubscription, the unsubscribe behaviour 
@@ -23,17 +23,19 @@ changed in the profile so you know it shouldn’t receive email any longer.
 ## PHP example
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("collection/1234/unsubscribe"));
+// do the call, and print result
+print_r($api->get("collection/1234/unsubscribe"));
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all API calls](rest-api)
-- [Setting unsubscribe behaviour](rest-get-database-unsunscribe)
+- [GET database unsubscribe](rest-get-database-unsunscribe)

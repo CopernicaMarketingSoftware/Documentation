@@ -1,4 +1,4 @@
-# REST API: editing collection properties
+# REST API: PUT collection
 
 Method to change the properties of a collection. This method can be used by 
 sending an HTTP PUT request to the following URL:
@@ -21,27 +21,29 @@ in the message body of the HTTP PUT command:
 
 The following PHP scripts demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
     
-    // no parameters are supported
-    $parameters = array();
+// no parameters are supported
+$parameters = array();
     
-    // data to be sent to the api
-    $data = array(
-        'name'  =>  'new-collection-name'
-    );
+// data to be sent to the api
+$data = array(
+    'name'  =>  'new-collection-name'
+);
     
-    // do the call
-    api->put("collection/1234", $data);
+// do the call
+api->put("collection/1234", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Requesting a list of collections](rest-get-databases-collections)
-* [Deleting a collection](rest-delete-collection)
+* [GET database collections](rest-get-database-collections)
+* [DELETE collection](rest-delete-collection)

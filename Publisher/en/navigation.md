@@ -41,7 +41,7 @@
     * [Reducing HTML errors](./reducing-html-errors)
     * [Database corruption](./prevent-database-corruption)
 * [Publisher only features](./publisher-only)
-    * [SMS mailings](./compose-sms-message)
+    * [Mobile mailings](./mobile-mailing)
     * [Surveys](./surveys)
     * [Websites](./websites)
     * [Web forms](./webforms)

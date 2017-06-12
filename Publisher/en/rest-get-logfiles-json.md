@@ -1,4 +1,4 @@
-# REST API: Download a log file as JSON
+# REST API: GET JSON logfiles
 
 Copernica keeps logfiles which you can request with the API. This method can be used to download a logfile as JSON using its filename. If you don't know the filename please see "More information" for instructions. To execute the method you can send an HTTP GET request to the following URL:
 
@@ -47,21 +47,22 @@ A JSON representation of the requested log file. An example of such a logfile is
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/json"));
+// do the call, and print result
+print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/json"));
+```
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](rest-api)
-* [Get names of log files](rest-get-logfiles-names)
-* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
-* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
-* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)
+* [GET logfile names](rest-get-logfiles-names)
+* [GET CSV logfile](rest-get-logfiles-csv)
+* [GET XML logfile](rest-get-logfiles-xml)

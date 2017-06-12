@@ -1,4 +1,4 @@
-# REST API - DELETE profile
+# REST API: DELETE profile
 
 Het verwijderen van een profiel kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 

@@ -1,4 +1,4 @@
-# REST API - PUT rule
+# REST API: PUT rule
 
 Dit is een methode om de eigenschappen van een bestaande regel aan te passen. Om deze uit te voeren kan er een HTTP PUT verzoek worden verstuurd naar de volgende URL:
 

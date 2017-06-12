@@ -1,4 +1,4 @@
-# REST API - GET miniview
+# REST API: GET miniview
 
 Een methode om alle metadata van een selectie binnen een collectie op te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen met een HTTP GET verzoek aan de volgende URL:
 

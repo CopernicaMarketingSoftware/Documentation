@@ -1,4 +1,4 @@
-# REST API - DELETE view
+# REST API: DELETE view
 
 Om een selectie van profielen te verwijderen kan er een HTTP DELETE verzoek gestuurd worden naar de volgende URL:
 

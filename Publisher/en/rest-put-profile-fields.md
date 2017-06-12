@@ -1,4 +1,5 @@
-# REST API: updating a field
+# REST API: PUT profile fields
+
 To update existing fields of a profile, you need to do an HTTP PUT request to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
@@ -13,25 +14,28 @@ If, however, you’re using a traditional x-www-form-urlencoded format, the vari
 ## PHP example
 The following example illustrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'firstname' =>  'John',
-	    'lastname'  =>  'Doe',
-	    'email'     =>  'johndoe@example.com'
-	);
+// data to pass to the call
+$data = array(
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
+);
 
-	// do the call
-	$api->put("profile/1234/fields", $data);
+// do the call
+$api->put("profile/1234/fields", $data);
+```
 
-For this example, you need [the CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Updating multiple profiles](rest-put-database-profiles)
-- [Deleting a profile](rest-delete-database-profile)
+- [PUT database profiles](rest-put-database-profiles)
+- [DELETE database profile](rest-delete-database-profile)

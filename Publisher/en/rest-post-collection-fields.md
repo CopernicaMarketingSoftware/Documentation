@@ -1,4 +1,4 @@
-# REST API: adding a field to a collection
+# REST API: POST collection fields
 
 Method to add a field to an existing collection. This is an HTTP 
 POST call to the following URL:
@@ -44,27 +44,28 @@ A field can have any of the following types:
 
 The following PHP script demonstrates how to call the API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // data to pass to the call
-    $data = array(
-        'name'      =>  'extra-veld',
-        'type'      =>  'text'
-    );
+// data to pass to the call
+$data = array(
+    'name'      =>  'extra-veld',
+    'type'      =>  'text'
+);
     
-    // do the call
-    $api->post("collection/1234/fields", $data);
+// do the call
+$api->post("collection/1234/fields", $data);
+```
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
-
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Get all field from collection](rest-get-collection-fields)
-* [Edit field](rest-put-collection-field)
-* [Delete field](rest-delete-collection-field)
+* [GET collection fields](rest-get-collection-fields)
+* [PUT collection field](rest-put-collection-field)
+* [DELETE collection field](rest-delete-collection-field)

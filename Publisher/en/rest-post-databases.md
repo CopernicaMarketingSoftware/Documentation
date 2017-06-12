@@ -1,4 +1,4 @@
-# REST API: creating a new database
+# REST API: POST database
 
 This method is used to create a new database with the REST API. It uses an HTTP POST request to the following address:
 
@@ -14,25 +14,27 @@ This method is used to create a new database with the REST API. It uses an HTTP 
 
 The following PHP script demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica-rest-api.php');
+```php
+// dependencies
+require_once('copernica-rest-api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to be sent to the api
-	$data = array(
-	    'name'          =>  'my-test-database',
-	    'description'   =>  'a description of the database'
-	);
+// data to be sent to the api
+$data = array(
+    'name'          =>  'my-test-database',
+    'description'   =>  'a description of the database'
+);
 
-	// do the call
-	$api->post("databases", $data);
+// do the call
+$api->post("databases", $data);
+```
 
-This example uses the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 - [Overview of all API methods](rest-api)
-- [Requesting a list of databases](rest-get-databases)
-- [Deleting a database](rest-delete-database)
+- [GET databases](rest-get-databases)
+- [DELETE database](rest-delete-database)

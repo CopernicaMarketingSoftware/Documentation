@@ -1,26 +1,14 @@
-# REST API: Condition type todo
+# REST conditions: Todo
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the todo condition.
-
-## Date properties
-
-The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
-
-* **before-time**: Matches only profiles that received the document before this time
-* **after-time**: Matches only profiles that received the document after this time
-* **before-mutation**: The beforemutation (time difference) for the todocondition.
-* **after-mutation**: The beforemutation (time difference) for the todocondition.
+This article is about the **todo** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
 
 ## Individual properties
+
+The todo condition has the following parameters:
 
 * **match-type**: Match type of last contact. Possible values: 
 "match_intelligent", "match_exact"
@@ -35,22 +23,55 @@ is required.
 * **priority**: Get priority of todo's.
 * **contains**: Search string the todo should contain.
 
+## Date properties
+
+The date properties can be used to limit the selection to a specified 
+time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
+format.
+
+* **before-time**: Matches only profiles that received the document before this time
+* **after-time**: Matches only profiles that received the document after this time
+* **before-mutation**: The beforemutation (time difference) for the todo condition.
+* **after-mutation**: The beforemutation (time difference) for the todo condition.
+
 ## Example
 
-Let's say there is an update to your software you want to inform the users 
-about. You put this in the todo's some time ago, but the document is only 
-finished now. You want to use the todo's you made previously to select the 
-customers you needed to email. You can do this with the todo condition with 
-the following values:
+Imagine that you just updated your software and some customers need to be 
+informed about this. The document for the email was not ready however, 
+but you did make todo's for the customers you wanted to contact. You can 
+now send to a selection based on todo's. The example below shows the example 
+of the condition to achieve this.
 
-* **match_type**: "match_intelligent"
-* **contains**: Name of document
+The match_intelligent value can be used to ignore potential typo's or 
+different spellings of a word.
 
-By using "match_intelligent" you ensure that typos or spread out words don't 
-cause you to miss any of the todo's.
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select todo condition
+    'type' => 'ToDo',
+
+    // use matchtype 
+    'match_type' => 'match_intelligent',
+    
+    // search 'document name'
+    'contains' => 'document name'
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
 
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)
 * [Condition type lastcontact](rest-condition-lastcontact)

@@ -1,4 +1,4 @@
-# REST API - PUT view
+# REST API: PUT view
 
 Methode om de properties van een selectie bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:

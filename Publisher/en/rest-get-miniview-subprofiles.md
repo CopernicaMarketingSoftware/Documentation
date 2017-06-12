@@ -1,4 +1,4 @@
-# REST API: request subprofiles from miniview
+# REST API: GET miniview subprofiles
 
 Subprofiles are to a collection what regular profiles are to a database. To request the subprofiles that represent a certain profile from a miniview you can send an HTTP GET request to the following URL:
 
@@ -22,18 +22,20 @@ This method returns an array of subprofiles of a miniview. These subprofiles are
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+  
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("miniview/1234/subprofiles"));
+// do the call, and print result
+print_r($api->get("miniview/1234/subprofiles"));
+```
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all selection metadata](rest-get-miniview)
+* [GET miniview](rest-get-miniview)

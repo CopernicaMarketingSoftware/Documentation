@@ -1,4 +1,4 @@
-# REST API - POST database profiles
+# REST API: POST database profiles
 
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
 naar de volgende URL.

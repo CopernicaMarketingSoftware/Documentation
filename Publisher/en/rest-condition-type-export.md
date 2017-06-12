@@ -1,13 +1,17 @@
-# REST API: Condition type export
+# REST conditions: Export
 
-Conditions have different types of properties. Some concern the timeframe in 
-which something happened (date properties), others concern mailing information 
-(mailing properties) and others concern just the specific type of condition 
-(individual properties). All of these properties together combine to a condition 
-for which all properties should be satisfied to satisfy the condition as a whole.
-Only one condition needs to be satisfied to satisfy a rule.
+Conditions are smaller parts of rules. Only one condition has to be 
+satisfied to satisfy a rule. Every condition has a few specific properties.
 
-This article is about the properties of the export condition.
+This article is about the **export** condition. If you're looking for 
+any other condition you can find them in the **More information** section.
+
+## Individual properties
+
+The export condition has the following parameters:
+
+* **include-never-exported-profiles**: Boolean value to indicate whether 
+profiles not exported before should be included.
 
 ## Date properties
 
@@ -20,11 +24,6 @@ format.
 * **before-mutation**: The beforemutation (time difference) of the exportcondition.
 * **after-mutation**: The aftermutation (time difference) of the exportcondition.
 
-## Individual properties
-
-* **include-never-exported-profiles**: Boolean value to indicate whether 
-profiles not exported before should be included.
-
 ## Example
 
 If you wanted to only export profiles you have exported before after a 
@@ -34,7 +33,29 @@ following values should be used:
 * **after-time**: Timestamp you want the exports after
 * **include-never-exported-profiles**: false
 
+```php
+// required code
+require_once("copernica_rest_api.php");
+
+// make a new api object with your access token
+$api = new CopernicaRestApi("my-access-token");
+
+$data = array(
+    // select export condition
+    'type' => 'Export',
+
+    // use desired properties
+    'include-never-exported-profiles' => true,
+);
+
+// do the call
+$result = $api->post("rule/id/conditions", $data);
+
+// print the result
+print_r($result);
+```
+
 ## More information
 
-* [Fetch rule conditions](rest-get-rule-conditions)
-* [Post rule conditions](rest-post-rule-conditions)
+* [GET rule conditions](rest-get-rule-conditions)
+* [POST rule conditions](rest-post-rule-conditions)

@@ -1,4 +1,4 @@
-# REST API - PUT miniview
+# REST API: PUT miniview
 
 Een miniview is voor een collectie wat een selectie is voor een database. Om een miniview aan te passen kan er een HTTP PUt verzoek verstuurd worden naar de volgende URL:
 

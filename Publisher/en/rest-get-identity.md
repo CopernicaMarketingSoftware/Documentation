@@ -1,4 +1,4 @@
-# REST API: fetching your identity
+# REST API: GET identity
 
 This method can be used if you want to find out the account that is linked to
 an API access token. By sending a GET request to the following URL, you can
@@ -27,16 +27,18 @@ properties:
 
 The following PHP script calls this API method:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("account"));
+// do the call, and print result
+print_r($api->get("account"));
+```
 
-You need the [CopernicaRestApi class](./rest-php) to run the PHP script.
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

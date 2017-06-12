@@ -1,4 +1,4 @@
-# REST API: request subprofiles from profile
+# REST API: GET profile subprofiles
 
 Subprofiles are to a collection what regular profiles are to a database.
 To request the subprofiles that represent a certain profile in a certain
@@ -26,18 +26,20 @@ This method returns an array of subprofiles of a profile. These subprofiles are 
 
 The following PHP script demonstrates how to use the API method.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+  
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("profile/1234/subprofiles/321"));
+// do the call, and print result
+print_r($api->get("profile/1234/subprofiles/321"));
+```
 
-For the example above you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [List of all API calls](rest-api)
-* [Fetching all profile information](rest-get-profile)
+* [GET profile](rest-get-profile)

@@ -1,4 +1,4 @@
-# REST API: fetching profiles from a selection
+# REST API: GET view profiles
 
 To retrieve all profiles in a selection, send a HTTP GET request to this address:
 
@@ -54,29 +54,30 @@ CopernicaRestApi class that we use in the example takes care of escaping the
 parameters that are passed to the URL. If you write your own code to construct
 the URL, you must take care of escaping the parameters yourself.
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
-    $parameters = array(
-        'limit'     =>  100,
-        'orderby'   =>  'country',
-        'fields'    =>  array("age>16", "age<=65")
-    );
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
     
-    // do the call, and print result
-    print_r($api->get("view/1234/profiles", $parameters));
+// do the call, and print result
+print_r($api->get("view/1234/profiles", $parameters));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
-    
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Fetching profile IDs](./rest-get-view-profileids.md)
-* [Add profile to database](./rest-post-database-profiles.md)
-* [Edit a profile](./rest-put-profile-fields.md)
-* [Remove a profile](./rest-delete-profile.md)
+* [GET view profile identifiers](./rest-get-view-profileids.md)
+* [POST database profile](./rest-post-database-profiles.md)
+* [PUT profile](./rest-put-profile-fields.md)
+* [DELETE profile](./rest-delete-profile.md)

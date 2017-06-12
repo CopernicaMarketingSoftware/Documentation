@@ -1,4 +1,4 @@
-# REST API - POST databases
+# REST API: POST databases
 
 Methode om een nieuwe database aan te maken. Dit is een HTTP POST methode
 naar het volgende adres:

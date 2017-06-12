@@ -1,4 +1,4 @@
-# REST API: fetching rule data
+# REST API: GET view rule
 
 Selections use *rules* to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 
@@ -56,23 +56,24 @@ the specific articles:
 The following script can be used to fetch the properties of rule 12 inside
 selection 1234:
 
-    // dependencies
-    require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
     
-    // change this into your access token
-    $api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
-    print_r($api->get("view/1234/rule/12"));
+// do the call, and print result
+print_r($api->get("view/1234/rule/12"));
+```
 
-You need the [CopernicaRestApi class](./rest-php.md) to run the example.
-    
+The example above requires the [CopernicaRestApi class](rest-php).    
 
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [Fetch all selection rules](./rest-get-view-rules.md)
-* [Add a new selection rule](./rest-post-view-rules.md)
-* [Edit a selection rule](./rest-put-rule.md)
-* [Remove a selection rule](./rest-delete-rule.md)
-* [Edit a condition](./rest-put-rule-conditions.md)
+* [GET view rules](./rest-get-view-rules.md)
+* [POST view rule](./rest-post-view-rules.md)
+* [PUT rule](./rest-put-rule.md)
+* [DELETE rule](./rest-delete-rule.md)
+* [PUT rule condition](./rest-put-rule-conditions.md)

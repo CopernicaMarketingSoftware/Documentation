@@ -1,5 +1,4 @@
-# REST API: requesting data from a database
-
+# REST API: GET database
 A method to request all metadata from a database. This method does not support parameters. By sending a GET request to the following URL, you can fetch the database metadata:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
@@ -15,27 +14,31 @@ A method to request all metadata from a database. This method does not support p
 - **interests**: array with interests in the database
 - **collections**: array with the collections in the database
 
-Fields, interests and collections are returned as arrays of objects. If you want to know how these arrays are built, you can check out the pages of these API methods, which return similar data:
+Fields, interests and collections are returned as arrays of objects. 
+If you want to know how these arrays are built, you can check out 
+the pages of these API methods, which return similar data:
 
-- [Requesting fields](rest-get-database-fields)
-- [Requesting interests](rest-get-database-interests)
-- [Requesting collections](rest-get-database-collections)
+- [GET database fields](rest-get-database-fields)
+- [GET database interests](rest-get-database-interests)
+- [GET database collections](rest-get-database-collections)
 
 ## PHP example
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call, and print result
-	print_r($api->get("database/1234"));
+// do the call, and print result
+print_r($api->get("database/1234"));
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 - [Overview of all REST API methods](rest-api)
-- [Create a new database](rest-post-database)
+- [POST database](rest-post-database)

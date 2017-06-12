@@ -1,4 +1,4 @@
-# REST API: deleting a selection
+# REST API: DELETE view
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a selection of profiles:
@@ -15,20 +15,22 @@ individual API calls to remove profiles one by one.
 
 The following example demonstrates how to make a call using this method.
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// do the call
-	$api->delete("view/1234");
+// do the call
+$api->delete("view/1234");
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [Remove a database](rest-delete-database)
-* [Fetch all profiles in a selection](rest-get-view-profiles)
-* [Remove an individual profile](rest-delete-profile)
+* [DELETE database](rest-delete-database)
+* [GET view profiles](rest-get-view-profiles)
+* [DELETE profile](rest-delete-profile)

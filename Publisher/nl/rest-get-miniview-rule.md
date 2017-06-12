@@ -1,4 +1,4 @@
-# REST API - GET miniview rule
+# REST API: GET miniview rule
 
 Selecties gebruiken regels om te bepalen welke profielen zij bevatten. Profielen die tenminste een selectie regel matchen worden geselecteerd. Om de eigenschappen en condities van een enkele regel op te vragen kun je een HTTP GET verzoek sturen naar de volgende URL:
 

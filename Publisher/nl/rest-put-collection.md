@@ -1,4 +1,4 @@
-# REST API - PUT collection
+# REST API: PUT collection
 
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:

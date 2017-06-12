@@ -1,4 +1,4 @@
-# REST API: edit properties of a rule
+# REST API: PUT rule
 
 A method to edit the properties of an existing rule. It is called using the following URL:
 
@@ -21,24 +21,26 @@ If set to "True" only profiles *not* conforming to the conditions are selected
 
 The following example demonstrates how to use this method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to be sent to the api
-	$data = array(
-    	'description'   =>  'a new description',
-    	'has_rules'      =>  true
-	);
+// data to be sent to the api
+$data = array(
+   	'description'   =>  'a new description',
+   	'has_rules'      =>  true
+);
 
-	// do the call, and print result
-	print_r($api->put("rule/1234", array(), $data));
+// do the call, and print result
+print_r($api->put("rule/1234", array(), $data));
+```
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [Create a rule](./rest-post-view-rules)
+* [POST view rule](./rest-post-view-rules)

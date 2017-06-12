@@ -1,4 +1,5 @@
-# REST API: creating a field in a database
+# REST API: POST database field
+
 Method to add a new field to an existing database. This is an HTTP POST call to the following address:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
@@ -35,27 +36,31 @@ The following types are available for fields:
 - **foreign_key**: numerical value that directs to another profile
 
 ## Example in PHP
+
 The following example demonstrates how to use the API method:
 
-	// dependencies
-	require_once('copernica_rest_api.php');
+```php
+// dependencies
+require_once('copernica_rest_api.php');
 
-	// change this into your access token
-	$api = new CopernicaRestApi("your-access-token");
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
 
-	// data to pass to the call
-	$data = array(
-	    'name'      =>  'extra-field',
-	    'type'      =>  'text'
-	);
+// data to pass to the call
+$data = array(
+    'name'      =>  'extra-field',
+    'type'      =>  'text'
+);
 
-	// do the call
-	$api->post("database/1234/fields", $data);
+// do the call
+$api->post("database/1234/fields", $data);
+```
 
-For this example, you need the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Requesting all fields in a database](rest-get-database-fields)
-- [Updating a field](rest-put-database-field)
-- [Deleting a field](rest-delete-database-field)
+- [GET database fields](rest-get-database-fields)
+- [PUT database field](rest-put-database-field)
+- [DELETE database field](rest-delete-database-field)
