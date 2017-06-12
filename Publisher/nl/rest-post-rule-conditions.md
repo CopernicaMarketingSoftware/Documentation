@@ -59,5 +59,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [GET rules voor specifieke ID](./rest-get-rule)
-* [POST rule](./rest-post-view-rules)
+* [GET rule](./rest-get-rule)
+* [POST view rules](./rest-post-view-rules)

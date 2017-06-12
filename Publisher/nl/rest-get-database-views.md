@@ -1,12 +1,11 @@
 # REST API - GET database views
 
-Om op te vragen welke selecties er beschikbaar zijn, kun je de volgende URL
-gebruiken. Je moet een HTTP GET request naar deze URL sturen om de selecties
-op te vragen.
+Je kunt bekijken welke selecties beschikbaar zijn door een HTTP GET request te 
+sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
+De `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
 
 
@@ -14,9 +13,9 @@ database waar je de selecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste database die wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal databases in de output
+* start: 		eerste database die wordt opgevraagd;
+* limit: 		lengte van de batch die wordt opgevraagd;
+* total: 		toon wel/niet het totaal aantal databases in de output.
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
@@ -24,18 +23,18 @@ Meer informatie over de betekenis van deze parameters vind je in het
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van selecties. Voor elke selectie
+De methode retourneert een lijst van selecties. Voor elke selection
 worden de volgende eigenschappen teruggegeven:
 
-* **ID**: numeriek ID van de selectie
-* **name**: naam van de selectie
-* **description**: omschrijving van de selectie
-* **parent-type**: mogelijke waardes: "database" of "view", gebruikt om aan te geven
-    of dit een selectie direct onder een database is, of een geneste selectie onder een andere selectie
-* **parent-id**: ID van de database of selectie waar deze selectie onder valt
-* **has-children**: boolean waarde; heeft deze selectie geneste selecties onder zich?
-* **has-referred**: boolean waarde; zijn er andere selecties die verwijzen naar deze selectie?
-* **has-rules**: boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
+* id: 				numeriek id van de selection;
+* name: 			naam van de selection;
+* description: 		omschrijving van de selection;
+* parent-type: 		mogelijke waardes: "database" of "view", gebruikt om aan te geven of 
+dit een selection direct onder een database is, of een geneste selection onder een andere selection;
+* parent-id: 		id van de database of selection waar deze selection onder valt;
+* has-children: 	boolean waarde; heeft deze selection geneste selecties onder zich?
+* has-referred: 	boolean waarde; zijn er andere selection die verwijzen naar deze selection?
+* has-rules: 		boolean waarde; zijn er selection-regels voor deze selection ingesteld?
 
 
 ## Voorbeeld in PHP

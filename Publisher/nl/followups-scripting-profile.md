@@ -1,8 +1,10 @@
 # Data-script - profile
 
-Het profile data-script wordt gebruikt om gegevens van een profile aan te passen of op
-te vragen. Een profile kan op meerdere manieren worden verkregen. Bijvoorbeeld via het 
-[copernica data-script](./followups-scripting-copernica) of via het [database data-script](./followups-scripting-database).
+Het profile data-script wordt gebruikt om gegevens 
+van een profile aan te passen of op te vragen. 
+Een profile kan op meerdere manieren worden 
+verkregen. Bijvoorbeeld via het [copernica data-script](./followups-scripting-copernica) 
+of via het [database data-script](./followups-scripting-database).
 
 
 ## Beschikbare eigenschappen
@@ -28,9 +30,10 @@ te vragen. Een profile kan op meerdere manieren worden verkregen. Bijvoorbeeld v
 
 ## Voorbeeld
 
-Met het volgende voorbeeld kun je een veld van een profile opvragen. 
-In dit geval wordt de leeftijd van een profile opgevraagd. Uiteraard
-kun je elk veld linken aan een profile.
+Met het volgende voorbeeld kun je een veld 
+van een profile opvragen. In dit geval wordt 
+de leeftijd van een profile opgevraagd. 
+Uiteraard kun je elk veld linken aan een profile.
 
 
 ```javascript
