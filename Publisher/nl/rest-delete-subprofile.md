@@ -1,10 +1,10 @@
-# REST API: DELETE profile
+# REST API: DELETE subprofile
 
-Het verwijderen van een profile kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
+Het verwijderen van een subprofiel kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-De `$id` hier moet vervangen worden door de id van het profile dat je wilt verwijderen.
+De `$id` hier moet vervangen worden door de ID van het subprofiel dat je wilt verwijderen.
 
 
 ## Voorbeeld in PHP
@@ -30,4 +30,3 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 * [Overzicht van alle REST API calls](rest-api)
 * [GET profile](rest-get-profile)
 * [PUT profile](rest-put-profile)
-
