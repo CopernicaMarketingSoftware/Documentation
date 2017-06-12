@@ -22,6 +22,7 @@ if (profile.data.klikopAanbieding1 === "ja") {
 }
 ```
 
+
 ## Meer informatie
 
 * [Data-scripts](./followups-scripting)

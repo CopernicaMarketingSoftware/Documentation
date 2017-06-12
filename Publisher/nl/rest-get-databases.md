@@ -39,7 +39,7 @@ collections op te vragen:
 * [GET collections](rest-get-database-collections) 
 
 
-## Voorbeeld in PHP
+## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
@@ -52,7 +52,7 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $parameters = array(
-    'limit'     =>  100
+	'limit'	=>  100
 );
 
 // voer de methode uit en print het resultaat

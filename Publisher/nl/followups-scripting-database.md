@@ -8,11 +8,11 @@ opvragen.
 
 ## Beschikbare eigenschappen
 
-* id: 				id van de database (Read only);
-* name: 			naam van de database (Read and write);
-* description: 		omschrijving van de database (Read and write);
-* archived: 		een boolean waarde om aan te geven of de database gearchiveerd is (Read and write);
-* created: 			tijdstip van aanmaken (Read only);
+* id: 				id van de database (read only);
+* name: 			naam van de database (read and write);
+* description: 		omschrijving van de database (read and write);
+* archived: 		een boolean waarde om aan te geven of de database gearchiveerd is (read and write);
+* created: 			tijdstip van aanmaken (read only);
 * profiles: 		array van database [profielen](./followups-scripting-profile). De keys in dit object zijn ids van profielen die gebruikt kunnen worden om de profielen zelf op te vragen;
 * data: 			zie de documentatie over [het data object](./followups-scripting-data).
 
@@ -33,4 +33,3 @@ var someProfile = database.profiles[profileID];
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
 * [Collection data-script](./followups-scripting-collection)
-* [Profile data-script](./followups-scripting-data)
