@@ -124,11 +124,11 @@ zijn beschikbaar:
 
 | Methode   | Adres                                                                                                         | Omschrijving                                      |
 |-----------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| DELETE    | [api.copernica.com/v1/database/$id](./rest-delete-database.md)                                                | Verwijderen database                              |
 | DELETE    | [api.copernica.com/v1/database/$id/field/$id](./rest-delete-database-field.md)                                | Veld uit database verwijderen                     |
 | DELETE    | [api.copernica.com/v1/view/$id](./rest-delete-view.md)                                                        | Verwijderen selectie                              |
 | DELETE    | [api.copernica.com/v1/rule/$id](./rest-delete-rule.md)                                                        | Verwijderen van een selectieregel                 |
 | DELETE    | [api.copernica.com/v1/profile/$id](./rest-delete-profile.md)                                                  | Verwijderen profiel                               |
+| DELETE    | [api.copernica.com/v1/profile/$id](./rest-delete-subprofile.md)                                               | Verwijderen subprofiel                            |
 | DELETE    | [api.copernica.com/v1/collection/$id/field/$id](./rest-delete-collection-field.md)                            | Verwijderen veld in collectie                     |
 | DELETE    | [api.copernica.com/v1/miniview/$id](./rest-delete-miniview.md)                                                | Verwijderen miniselectie                          |
 | DELETE    | [api.copernica.com/v1/minirule/$id](./rest-delete-minirule.md)                                                | Verwijderen van een miniselectieregel             |
