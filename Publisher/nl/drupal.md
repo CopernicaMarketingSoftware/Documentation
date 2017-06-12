@@ -18,19 +18,16 @@ De kracht van de Drupal modules
     op basis van aankoopgedrag
 -   [Automatiseer je salesproces](./automate-your-campaigns.md)
     zoals onder andere orderbevestigigen of track & trace e-mails
--   Maak gebruik van [lead nurturing en lead
-    scoring](./what-is-lead-scoring-infographic.md)
+-   Maak gebruik van lead nurturing en lead scoring
     om zo slim in te spelen op de lifecycle van je klant
 -   [React to form fills](./various-types-of-web-forms.md) and downloads on your B2B website
 
 
-Over de Drupal modules
-----------------------
+## Over de Drupal modules
 
--   **Ontwikkeld door:**[Livelink New
-    Media](http://www.livelinknewmedia.com/ "LiveLink New Media")
--   **Datum:**1 september, 2011
--   **Type licentie:**Freeware
+-   **Ontwikkeld door:** [Livelink New Media](http://www.livelinknewmedia.com/ "LiveLink New Media")
+-   **Datum:** 1 september, 2011
+-   **Type licentie:** Freeware
 
 Copernica beschikt over zes verschillende modules voor Drupal:
 
@@ -46,21 +43,18 @@ contact op met onze partner Livelink New Media
 (louise.davies@livelinknewmedia.com). Je hebt een Copernica licentie
 nodig om gebruik te kunnen maken van deze modules.
 
-Download Drupal modules
------------------------
+## Download Drupal modules
 
-Copernica Connector
--------------------
+### Copernica Connector
 
 Deze module verzorgt de koppeling tussen Copernica en Drupal en maakt de
 uitwisseling van gegevens mogelijk tussen beide systemen. Als developer
 heb je via deze module toegang tot een reeks aan Drupal-functies.
 
-**Bestandsgrootte:**12 kB
+**Bestandsgrootte:** 12 kB
 [Download](../downloads/copernica_connector_v2.zip "Download Drupal connector integratie voor Copernica Marketing Software")
 
-Copernica User
---------------
+### Copernica User
 
 Een Drupal-site vereist standaard registratie van gebruikers. Deze
 module maakt het mogelijk automatisch gebruikersgegevens te verzamelen
@@ -69,24 +63,22 @@ combinatie met de Copernica Drupal Commerce module biedt dit kansen voor
 bijvoorbeeld plaatsgebonden communicatie of aanbiedingen op basis van
 persoonlijke interesses.
 
-**Bestandsgrootte:**3 kB
+**Bestandsgrootte:** 3 kB
 
 [Download](../downloads/copernica_basic_user.zip "Download Drupal user integratie voor Copernica Marketing Software")
 
-Copernica Webform
------------------
+### Copernica Webform
 
 Gebruik deze module om gegevens uit complexe webformulieren in Copernica
 te verzamelen. Alle gegevens die je uit de ingevulde formulieren
 verzamelt, zijn later te gebruiken als selectiecriteria voor je
 marketingcampagnes.
 
-**Bestandsgrootte:**13 kB
+**Bestandsgrootte:** 13 kB
 
 [Download](../downloads/copernica_webform.zip "Download Drupal webform integratie voor Copernica Marketing Software")
 
-Copernica Drupal Commerce
--------------------------
+### Copernica Drupal Commerce
 
 Deze integratie gebruik je in combinatie met [Drupal
 Commerce](http://www.drupalcommerce.org/ "Drupal Commerce"). Met behulp
@@ -94,12 +86,11 @@ van deze module ben je in staat met Copernica gerichte
 marketingcampagnes op te zetten. Bijvoorbeeld loyaliteitscampagnes of
 verlaten winkelmandjes campagnes.
 
-**Bestandsgrootte:**20 kB
+**Bestandsgrootte:** 20 kB
 
 [Download](../downloads/copernica_commerce.zip "Download Copernica Drupal Commerce integratie voor Copernica Marketing Software")
 
-Copernica Queue
----------------
+### Copernica Queue
 
 Met deze module ben je in staat webwinkel items op te slaan voor je ze
 opstuurt naar Copernica. Deze module werkt niet zelfstandig en wordt
@@ -107,12 +98,11 @@ door andere modules zoals Copernica Entity gebruikt. Zo kan allerlei
 data naar Copernica worden gestuurd via een background request wat de
 snelheid en user experience van de site niet vertraagd.
 
-**Bestandsgrootte:**12 kB
+**Bestandsgrootte:** 12 kB
 
 [Download](../downloads/copernica_queue.zip "Download Copernica Drupal queue integratie voor Copernica Marketing Software")
 
-Copernica Entity
-----------------
+### Copernica Entity
 
 Deze module maakt het mogelijk om iedere Drupal entiteit naar Copernica
 te sturen. Het kan data versturen op basis van een entiteit die wordt
@@ -122,7 +112,7 @@ entiteiten kan je koppelen aan Copernica velden en met behulp van PHP,
 kan je ook aangepaste eigenschappen en gewijzigde waarden doorsturen. Om
 met deze module te werken heb je ook de Copernica Queue module nodig.
 
-**Bestandsgrootte:**21 kB
+**Bestandsgrootte:** 21 kB
 
 [Download](../downloads/copernica_entity.zip "Download Copernica Drupal Entity voor Copernica Marketing Software")
 

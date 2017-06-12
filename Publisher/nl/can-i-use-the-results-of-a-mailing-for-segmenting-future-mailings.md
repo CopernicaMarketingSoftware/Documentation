@@ -1,4 +1,4 @@
-# E-mail resultaten gebruiken voor segmentatie
+# E-mailresultaten gebruiken voor segmentatie
 
 Tot een bepaalde hoogte wel ja. het is mogelijk om een selectie te maken
 gebaseerd op de de resultaten van een mailing. Gebruik hiervoor de

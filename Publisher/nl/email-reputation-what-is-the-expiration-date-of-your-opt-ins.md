@@ -1,20 +1,17 @@
+# E-mailreputatie verloopdatum
+
 Als het goed is heb je jouw zaken goed geregeld en verstuur je alleen
 e-mailings aan mensen die zich daarvoor hebben ingeschreven. Misschien
-heb je zelfs voor een [double
-opt-in](http://www.copernica.com/nl/over-ons/nieuws/opt-in-double-opt-in-vraagt-u-om-toestemming)
-gekozen om er 100 procent zeker van te zijn dat jouw ontvangers wel echt
-zitten te wachten op jouw berichten.
+heb je zelfs voor een double opt-in gekozen om er 100 procent zeker van te zijn
+dat jouw ontvangers wel echt zitten te wachten op jouw berichten.
 
-Maar hoewel je dan netjes aan de [Code E-mail
-voldoet](http://www.copernica.com/nl/over-ons/nieuws/de-nieuwe-code-e-mail-wat-betekent-dit-voor-mij),
+Maar hoewel je dan netjes aan de Code E-mail voldoet,
 is dit niet genoeg om te voorkomen dat je op een gegeven moment als
 spammer wordt gemarkeerd. Een opt-in is namelijk niet onbeperkt
-houdbaar. Denk daarom aan je
-[e-mailreputatie](./how-to-build-up-your-email-reputation.md)
+houdbaar. Denk daarom aan je [e-mailreputatie](./how-to-build-up-your-email-reputation.md)
 en vraag je abonnees na verloop van tijd hun opt-in te verlengen.
 
-Interesses veranderen
----------------------
+## Interesses veranderen
 
 ![E-mailreputatie: wat is de houdbaarheid van een
 opt-in?](http://vicinity.picsrv.net/127/0/112876/houdbaarheid.png "E-mailreputatie: wat is de houdbaarheid van een opt-in?")Iemand
@@ -29,8 +26,7 @@ houdbaarheid heeft verloren. En niet alleen heeft het weinig zin om
 iemand te bestoken met e-mails waar hij niet op zit te wachten, het kan
 op de lange termijn ook schadelijk zijn voor je e-mailreputatie.
 
-Verlopen opt-ins zorgen voor lagere open rates
-----------------------------------------------
+## Verlopen opt-ins zorgen voor lagere open rates
 
 Mensen die niet meer geïnteresseerd zijn in je e-mails, nemen niet
 altijd de moeite om zich er ook voor af te melden. Resultaat is dat ze
@@ -38,11 +34,9 @@ na verloop van tijd ongeopend worden weggegooid. Nou is dat op zichzelf
 al niet goed voor je
 [zendreputatie](http://www.marketingfacts.nl/berichten/20091007_ontvangers_bepalen_verzendreputatie),
 maar het kan nog erger: dat ontvangers je e-mails op een gegeven moment
-markeren als
-[spam](./reduce-your-spam-rating-some-focus-points.md).
+markeren als spam.
 
-Een opt-in vandaag is de spamtrap van morgen
---------------------------------------------
+## Een opt-in vandaag is de spamtrap van morgen
 
 Om spammers te identificeren maken veel e-mailproviders bovendien
 gebruik van zogenaamde
@@ -111,4 +105,3 @@ twee die hem ongeopend weggooien. Of ze markeren als spam.
     e-mailheader](./list-unsubscribe-header-a-reputation-improving-email-header.md "List-unsubscribe header: een reputatieverbeterende e-mailheader")
 -   [Opt-out: Hou je klant niet
     tegen!](http://www.copernica.com/nl/over-ons/nieuws/opt-out-hou-je-klant-niet-tegen "Opt-out: Hou je klant niet tegen!")
-
