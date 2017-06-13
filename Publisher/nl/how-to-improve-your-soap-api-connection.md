@@ -1,3 +1,5 @@
+# SOAP API optimaal gebruiken
+
 In dit artikel geven wij een overzicht van verbeteringen die u kunt
 doorvoeren wanneer u gebruik maakt van de SOAP API om verbinding te
 maken met Copernica Marketing Software. Deze verbeteringen helpen u het

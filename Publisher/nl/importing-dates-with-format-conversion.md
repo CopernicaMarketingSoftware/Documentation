@@ -1,3 +1,5 @@
+# Datumnotatie
+
 Voor het opslaan van datums\* in datumvelden maakt Copernica gebruik van
 de standaard MySQL database notatie: *JJJJ-MM-UU uu:mm:ss*. Een voordeel
 hiervan is dat een selectie op basis van datum en tijd een stuk sneller

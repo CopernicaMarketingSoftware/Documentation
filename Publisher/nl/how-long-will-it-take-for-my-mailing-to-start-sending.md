@@ -4,8 +4,7 @@ De mailing zal in principe meteen nadat je op 'verzenden' hebt gedrukt
 starten. Dit proces is onomkeerbaar, de mailing zal volledig worden
 afgeleverd.
 
-Ingeroosterde mailings
-----------------------
+## Ingeroosterde mailings
 
 Voordat er een ingesroosterde mailing is verzonden, wordt de doelgroep
 selectie eerst bijgewerkt. Dit kan enkele minuten duren,

@@ -1,8 +1,9 @@
+# Opt-out
+
 Als een relatie geen berichten per e-mail of sms wil ontvangen, is dat
 moeilijk te voorkomen. Maak daarom de opt-out functie zo toegankelijk
 mogelijk, bied een alternatief en leer van het vertrek. Binnen
-[e-mailmarketing](http://www.copernica.com/nl/ondersteuning/begrippenlijst/e-mailmarketing "e-mailmarketing")
-en mobile marketing is het volgens de Nederlandse wetgeving zelfs
+e-mailmarketing en mobile marketing is het volgens de Nederlandse wetgeving zelfs
 verplicht de relatie te allen tijde dit recht van verzet, oftewel de
 opt-out, te bieden.
 
@@ -19,11 +20,8 @@ makkelijker vindbaar zijn. Zo voorkom je dat de klant sneller op
 
 ### List-unsubscribe
 
-Gebruik een [list-unsubcribe
-header](http://www.copernica.com/nl/ondersteuning/begrippenlijst/list-unsubscribe-header "list-unsubcribe header")
-zodat men met 1 klik kan afmelden en voor het verwerken van
-[abusemeldingen](http://www.copernica.com/nl/ondersteuning/begrippenlijst/abuse-report "abusemeldingen")
-(spamklachten).
+Gebruik een list-unsubcribe header zodat men met 1 klik kan afmelden en voor het verwerken van
+abusemeldingen (spamklachten).
 
 ### Double opt-out
 
@@ -48,11 +46,3 @@ herkennen wie er op de pagina komt en de gegevens alvast invullen.
 Wanneer een relatie het formulier verzendt, worden de gegevens direct in
 de database aangepast of verwijderd. Hierdoor wordt het uitschrijfproces
 geautomatiseerd.
-
-### Bekijk ook
-
--   [Wat is een list-unsubcribe
-    header](http://www.copernica.com/nl/ondersteuning/begrippenlijst/list-unsubscribe-header "Wat is een list-unsubcribe header")
--   [List-unsubscribe header: een reputatieverbeterende
-    e-mailheader](http://www.copernica.com/nl/over-ons/nieuws/list-unsubscribe-header-een-reputatieverbeterende-e-mailheader "List-unsubscribe header: een reputatieverbeterende e-mailheader")
-
