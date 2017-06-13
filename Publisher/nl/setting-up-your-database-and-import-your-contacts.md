@@ -1,3 +1,5 @@
+# Aanmaken van databases & het importeren van data
+
 Je database vormt de basis van al je marketingcampagnes. In dit artikel
 wordt uitgelegd hoe je een database aanmaakt, en hoe je vervolgens een
 bestand met relaties importeert naar je nieuwe database.

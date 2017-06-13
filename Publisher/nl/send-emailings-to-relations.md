@@ -1,3 +1,5 @@
+# E-mailing verzenden
+
 De eerste keer een e-mailing verzenden is altijd een spannend maar leuk
 moment. Gaat het wel goed? Komt je e-mailing wel aan bij de juiste
 relaties? Met Copernica Marketing Software hoef je je daar niet langer

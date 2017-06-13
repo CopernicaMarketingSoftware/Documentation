@@ -1,3 +1,5 @@
+# Ingeroosterde mailings
+
 Een bulkmailing kan direct worden verzonden, maar je kan de mailing ook
 op ieder ander gewenst tijdstip verzenden. Je kan er zelfs voor kiezen
 de mailing periodiek te herhalen, zoals dagelijks of wekelijks.
