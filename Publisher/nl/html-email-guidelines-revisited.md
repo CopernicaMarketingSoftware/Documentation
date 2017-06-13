@@ -1,3 +1,5 @@
+# E-maildevelopment
+
 Sommige mensen zeggen dat HTML-e-maildesign moeilijk is. Persoonlijk
 vind ik dat niet. Natuurlijk, de laatste HTML- en CSS-technieken worden
 niet ondersteund door de meeste e-mailclients. Maar dat is niet erg, dat
