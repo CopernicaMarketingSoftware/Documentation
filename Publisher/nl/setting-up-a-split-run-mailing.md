@@ -1,4 +1,6 @@
-Bij een split-run e-mailing (vaak ook A/B-test genoemd) is het mogelijk
+# Split-run mailing
+
+Bij een split-run mailing (vaak ook A/B-test genoemd) is het mogelijk
 verschillende documenten op te stellen voor dezelfde bulkmailing. De
 verschillende versies worden eerst naar een beperkt aantal contacten
 verstuurd om te zien welke versie het meeste resultaat oplevert onder

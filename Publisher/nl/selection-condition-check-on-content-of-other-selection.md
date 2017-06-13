@@ -1,3 +1,5 @@
+# Check op inhoud andere (mini)selectie
+
 Het is mogelijk om referenties te maken tussen selecties en
 miniselecties. Je gebruikt hiervoor de conditietypes 'Check op inhoud
 andere (mini)selectie' en 'Check op inhoud miniselectie'.

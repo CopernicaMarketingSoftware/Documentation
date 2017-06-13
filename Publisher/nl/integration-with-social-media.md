@@ -1,3 +1,5 @@
+# Social media integraties
+
 Copernica beschikt over verschillende
 [integraties](./integrations.md "Integraties met Copernica")
 met social media als Facebook. Zo kan je met behulp van een van deze

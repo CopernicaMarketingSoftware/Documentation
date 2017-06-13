@@ -1,3 +1,5 @@
+# Intressevelden
+
 Als je aan je database interessevelden hebt toegevoegd, kan je hierop
 selecties maken. Een interesseveld is een speciaal soort veld dat alleen
 de waarden ‘*ja*’ en ‘*nee*’ kan bevatten. Interesses zijn altijd

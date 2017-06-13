@@ -1,3 +1,5 @@
+# Bulkmailing
+
 Het mailen van meerdere relaties ineens noemen wij een bulkmailing.
 Onder deze vernoeming van het menu Mailings vindt je de opties voor het
 verzenden van een e-mail aan meerdere relaties.

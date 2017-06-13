@@ -1,3 +1,5 @@
+# Profielen en subprofielen
+
 In Copernica maken we onderscheid tussen profielen en subprofielen.
 Profielen bestaan op het database-niveau, en deelprofielen op collectie
 niveau. Als je geen gebruik maakt van collecties, kun je altijd je
