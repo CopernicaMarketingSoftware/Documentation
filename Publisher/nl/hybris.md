@@ -1,3 +1,5 @@
+# Hybris
+
 Maak je gebruik van Hybris als e-commerce-platform? Dan is het mogelijk
 de koppeling te maken met Copernica dankzij de Hybris-integratie.
 Synchroniseer de data vanuit Hybris met Copernica door gebruik te maken
@@ -26,4 +28,3 @@ zetten:
 -   Winbackcampagnes: Heractiveer klanten die bijvoorbeeld 6 maanden
     niet meer in je webwinkel zijn geweest en stuur ze een persoonlijk
     aanbod.
-

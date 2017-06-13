@@ -1,13 +1,11 @@
-Aan de slag met
-[e-mailmarketing](http://www.copernica.com/nl/functies/e-mailings "E-mailings")
-of [mobile
-marketing](http://www.copernica.com/nl/functies/mobile/sms-bericht-verzenden "Sms-berichten verzenden")?
-Maak dan gebruik van opt-in. Het is belangrijk dat klanten
+# Dubbele opt-in
+
+Aan de slag met e-mailmarketing of mobile
+marketing Maak dan gebruik van opt-in. Het is belangrijk dat klanten
 'ondubbelzinnige' toestemming geven voor verdere verwerking van hun
 persoonsgegevens. Bovendien is het gebruik maken van opt-in verplicht
-voor e-mailcampagnes en mobile campagnes volgens de [Nederlandse
-wetgeving](http://www.copernica.com/nl/ondersteuning/wetgeving "Nederlandse wetgeving").
-De klant geeft hierbij duidelijk te kennen dat de persoonlijke gegevens
+voor e-mailcampagnes en mobile campagnes volgens de Nederlandse
+wetgeving. De klant geeft hierbij duidelijk te kennen dat de persoonlijke gegevens
 verwerkt en gebruikt mogen worden voor een bepaalde reden. Bijvoorbeeld
 voor het versturen van een nieuwsbrief.
 
@@ -41,6 +39,5 @@ e-mailmarketing wordt ingezet:
 -   Waarbij de verstrekte informatie binnen de redelijke verwachtingen
     van de ontvanger valt
 
-Naast opt-in dient er te allen tijde een
-[opt-out](http://www.copernica.com/nl/over-ons/nieuws/opt-out-hou-je-klant-niet-tegen "Opt-out")
+Naast opt-in dient er te allen tijde een opt-out
 aanwezig te zijn. De klant moet zich zonder moeite kunnen uitschrijven.

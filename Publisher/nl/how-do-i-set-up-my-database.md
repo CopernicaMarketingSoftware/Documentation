@@ -1,3 +1,5 @@
+# Inrichten van een database
+
 In een database kan je gegevens over gebruikers en contacten
 gestructureerd opslaan. Dit kunnen bijvoorbeeld alle bedrijven of
 personen zijn aan wie je je nieuwsbrief gaat versturen. Een enkele

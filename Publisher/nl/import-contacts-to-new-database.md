@@ -1,3 +1,5 @@
+# Importeren
+
 Je kan met de importfunctionaliteit van Copernica snel en gemakkelijk
 een bestand met relaties (of andere gegevens) importeren naar een
 database. Ook is het mogelijk een bestaande gegevens bij te werken door
@@ -54,4 +56,3 @@ Kies hieronder de handleiding voor het type import dat je wilt uitvoeren
     aangemaakt](#)
 -   [Bestaande gegevens bijwerken met gegevens uit een importbestand](#)
 -   [Importeren en/of bijwerken van een database met collectie](#)
-

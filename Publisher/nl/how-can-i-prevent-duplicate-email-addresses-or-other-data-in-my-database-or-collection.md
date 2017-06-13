@@ -1,3 +1,5 @@
+# Dubbele adressen filteren
+
 Om te voorkomen dat dubbele waardes in een database of collectie terecht
 komen, kan je een databaserestrictie instellen voor het betreffende
 veld.

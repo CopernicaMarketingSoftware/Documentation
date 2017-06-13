@@ -1,5 +1,4 @@
-Normale import (altijd profielen aanmaken)
-==========================================
+# Normale import (altijd profielen aanmaken)
 
 Deze handleiding helpt je bij het importeren van profielen naar een
 database in de marketing software. Raadpleeg voor de eerste stappen het
