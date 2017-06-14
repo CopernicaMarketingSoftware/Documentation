@@ -2,7 +2,7 @@
 
 Het verwijderen van een subprofiel kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v1/subprofile/$id?access_token=xxxx`
 
 De `$id` hier moet vervangen worden door de ID van het subprofiel dat je wilt verwijderen.
 
@@ -19,7 +19,9 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit
-$api->delete("profile/id");
+$api->delete("subprofile/id");
+
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
