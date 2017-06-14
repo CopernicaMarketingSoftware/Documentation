@@ -1,3 +1,5 @@
+# Unieke actiecodes
+
 Iedereen die zich inschrijft voor de nieuwsbrief krijgt automatisch een
 unieke actiecode toegestuurd. Hiermee kunnen nieuwe abonnees vervolgens
 weer ergens op korting krijgen, of een voetreis naar Rome winnen. Enfin.

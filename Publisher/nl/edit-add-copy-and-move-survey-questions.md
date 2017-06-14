@@ -30,8 +30,6 @@ overzicht links.\
 meerdere vragen invoeren door na de invoer voor 'vraag toevoegen'
 linksonder in de pop-up te kiezen.
 
-[Meer lezen over de beschikbare soorten enquêtevragen](#)
-
 Een vraag kopieren
 ------------------
 

@@ -1,3 +1,5 @@
+# Een mailing inroosteren
+
 Je kan een mailing eenmalig en direct versturen. Maar het is ook
 mogelijk om een mailing in te roosteren voor latere verzending. Het is
 tevens mogelijk de mailing periodiek te versturen. Bijvoorbeeld

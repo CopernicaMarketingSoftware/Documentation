@@ -1,3 +1,5 @@
+# Integraties
+
 Wil je Copernica met jouw CMS, e-commerce-platform of CRM software
 integreren? Wij bieden verschillende integraties die voornamelijk door
 onze Copernica [partners](./vind-een-partner.md "Partneroverzicht")

@@ -1,3 +1,5 @@
+# E-mailreputatie
+
 Je e-mailreputatie wordt gemeten aan de hand van verschillende factoren.
 Dit zijn onder andere:
 
@@ -23,6 +25,5 @@ Enkele van deze tools zijn:
     ReputationAuthority](http://www.reputationauthority.org/index.php "Watchguard ReputationAuthority")
 
 Naast het gebruik van deze tools kan je jezelf ook inschrijven voor
-[feedbackloopprogramma's](http://www.copernica.com/nl/ondersteuning/begrippenlijst/feedbackloops).
-Dit zijn programma's die ervoor zorgen dat je spamklachten snel en
-automatisch kan verwerken in je marketingsoftware.
+feedbackloopprogramma's. Dit zijn programma's die ervoor zorgen dat je
+spamklachten snel en automatisch kan verwerken in je marketingsoftware.

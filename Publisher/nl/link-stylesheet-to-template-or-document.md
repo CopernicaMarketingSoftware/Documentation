@@ -1,3 +1,5 @@
+# Stylesheets
+
 Stylesheets kun je vinden in het onderdeel **Stijl**. Om een stylesheet
 goed te gebruiken zal deze moeten worden gekoppeld aan een template of
 document.
@@ -12,7 +14,6 @@ voor alle documenten die op basis van deze stylesheet zijn gemaakt.**
 ![Stijlblokken](../images/nl-stylesheet.png)
 
 ## Stijlblokken
-
 
 Enkele belangrijke e-mail clients negeren stijl blokken die zijn
 toegevoegd aan de header van een HTML-template. Als gevolg hiervan,

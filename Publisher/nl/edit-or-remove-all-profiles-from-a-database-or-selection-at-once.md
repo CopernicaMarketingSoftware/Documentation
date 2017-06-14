@@ -8,7 +8,7 @@ terughalen. Er is geen - ik herhaal- géén Ctrl+Z.
 ### Alle profielen uit een database of selectie weggooien
 
 -   Selecteer in het linkeroverzicht de database of selectie
--   Kies in het menu **Huidige weergave**de functie '**Meerdere
+-   Kies in het menu **Huidige weergave** de functie '**Meerdere
     (sub)profielen wijzigen / verwijderen...**'
 -   Klik op '**verwijderen**'.
 

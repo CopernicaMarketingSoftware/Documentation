@@ -24,7 +24,7 @@ Om het personalisatieveld te gebruiken in het document, dien je eerst
 nog een speciale code aan de HTML broncode van de template toe te
 voegen.
 
-**{\$property.*veldnaam*}**
+**{$property.*veldnaam*}**
 
 Vervang *veldnaam* met de naam die je aan het extra personalisatieveld
 hebt gegeven.

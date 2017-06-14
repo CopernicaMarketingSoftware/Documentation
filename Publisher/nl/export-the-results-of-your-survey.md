@@ -8,10 +8,10 @@ exporteren**
 
 Je hebt hier de volgende twee opties:
 
--   **alleen de resultaten exporteren.**Dit geeft een som weer van hoe
+-   **alleen de resultaten exporteren.** Dit geeft een som weer van hoe
     vaak elk antwoord op elke vraag is gegeven. Vergelijkbaar met het
     resultaatoverzicht in de applicatie zelf.
--   **alle antwoorden exporteren.**Dit geeft een compleet overzicht van
+-   **alle antwoorden exporteren.** Dit geeft een compleet overzicht van
     de antwoorden per respondent.
 
 Beide exports kan je doen naar een XML of een tabgescheiden bestand.

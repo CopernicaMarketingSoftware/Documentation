@@ -1,3 +1,5 @@
+# Verwijder dubbele profielen
+
 Dubbele profielen in de database? Verwijder de duplicate profielen. Om
 profielen die een of meerdere malen voorkomen in de database te
 verwijderen, maak je een nieuwe selectie aan waarin je alle dubbele

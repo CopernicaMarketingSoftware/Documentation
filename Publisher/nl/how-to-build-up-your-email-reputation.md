@@ -1,3 +1,5 @@
+# E-mailreputatie
+
 Als een verzender van e-mail krijg je van Internet Service Providers en
 externe partijen een e-mailreputatie aangemeten. Deze score bepaalt of
 je als spammer of als legitieme verzender behandeld wordt. Een goede
@@ -111,4 +113,3 @@ op de websites.
     bieden zij de mogelijkheid aan de gebruikers van Gmail om zich af te
     melden van onnodige e-mailings als er gebruik wordt gemaakt van
     List-unsubscribe headers door de verzender.
-
