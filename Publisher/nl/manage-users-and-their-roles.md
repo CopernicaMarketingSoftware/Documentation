@@ -1,3 +1,5 @@
+# Gebruikers
+
 Iedereen die gebruik maakt van de applicatie, heeft een eigen gebruiker
 met unieke inloggegevens. Het is dus niet toegestaan om meerdere
 personen te laten inloggen met dezelfde gebruiker.

@@ -1,3 +1,5 @@
+# Exporteren of importeren van templates
+
 In het template menu vind je een functie om templates te exporteren of
 te importeren.
 

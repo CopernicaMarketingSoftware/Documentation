@@ -1,3 +1,5 @@
+# Personalisatie van het afzendadres
+
 Met behulp van smarty is het mogelijk om de afzender en het afzendadres
 te personaliseren. Als elke klant automatisch een mailtje van zijn
 accountmanager ontvangt (een bekende), dan komt dat erg professioneel

@@ -1,12 +1,9 @@
 # Markdown
 
 Gebruikers van de Publisher hebben nu de mogelijkheid om inhoud van
-[artikelen in
-markdown](https://www.copernica.com/nl/ondersteuning/hoe-je-markdown-gebruikt-in-copernica "Markdown gebruiken in Copernica")
-op te maken. Deze functionaliteit is zojuist geïntroduceerd. Markdown is
+artikelen in markdown op te maken. Deze functionaliteit is zojuist geïntroduceerd. Markdown is
 een simpele opmaaktaal, bedacht als eenvoudig alternatief voor HTML.
-Gebruikers die niet willen HTML'en konden in Copernica al terecht bij de
-[WYSIWYG-editor](https://www.copernica.com/nl/functies/webpaginas/maak-en-publiceer-je-eigen-webpaginas "Maak en publiceer je eigen webpagina’s").
+Gebruikers die niet willen HTML'en konden in Copernica al terecht bij de WYSIWYG-editor.
 
 Voorbeeld
 ---------
@@ -44,7 +41,7 @@ Gebruikers van Copernica kunnen deze tekst nu op de volgende manier met
 markdown opmaken:
 
     E-mailmarketing
-    --------------- 
+    ---------------
 
     Als kind wist Henk het al: hij wilde e-mailmarketeer worden.
 

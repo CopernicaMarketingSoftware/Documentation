@@ -1,3 +1,5 @@
+# list-unsubscribe header
+
 Diverse grote e-mailclients waaronder Gmail en Hotmail bieden een
 afmeldfunctie voor commerciële mailinglijsten aan hun gebruikers. Deze
 functie voegt een extra knop toe aan de interface van het
@@ -94,15 +96,3 @@ beheersen van uw e-mailreputatie en het is niet de grootste of
 belangrijkste. Maar het is wel een middel dat eenvoudig is in te zetten
 en waar goed op gereageerd wordt door ontvangers. Plaats het vandaag nog
 in al uw e-mailtemplates!
-
-### Bekijk ook
-
--   [Deliverability: hogere e-mailaflevering met
-    Copernica](./deliverability-better-email-delivery-with-copernica.md "Deliverability: hogere e-mailaflevering met Copernica")
--   [E-mailreputatie: hoe bouw je dit
-    op?](./how-to-build-up-your-email-reputation.md "E-mailreputatie: hoe bouw je dit op?")
--   [DKIM: DomainKey Identified
-    Mail](./dkim-domainkey-identified-mail.md "DKIM: DomainKey Identified Mail")
--   [Opt-out: Hou je klant niet
-    tegen!](./opt-out-do-not-stop-your-client.md "Opt-out: Hou je klant niet tegen!")
-

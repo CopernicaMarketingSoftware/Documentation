@@ -1,3 +1,5 @@
+# Markdown
+
 In de *Content*-sectie van Copernica Marketing Software is het mogelijk
 om artikelen op te maken met markdown. Markdown is een simpele
 opmaaktaal, bedoeld als eenvoudig alternatief voor het HTML.
@@ -47,11 +49,11 @@ Hij gaat elke dag —met plezier— naar zijn werk.
 Dat kan in markdown op de volgende manier:
 
     E-mailmarketing
-    --------------- 
+    ---------------
 
     Als kind wist Henk het al: hij wilde e-mailmarketeer worden.
 
-    Helemaal *te gek* leek het hem, een **fantastisch beroep**. Kijk eens naar al die 
+    Helemaal *te gek* leek het hem, een **fantastisch beroep**. Kijk eens naar al die
     `letters` in die e-mails.
 
     Nu werkt hij bij [Copernica](http://www.copernica.com).

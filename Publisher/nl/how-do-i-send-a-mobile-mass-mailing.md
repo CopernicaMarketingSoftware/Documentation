@@ -1,3 +1,5 @@
+# Bulk sms-mailings
+
 De software is ook geschikt voor het versturen van bulk sms-mailings. De
 werking hiervan verschilt niet heel erg van het versturen van
 e-mailings.
