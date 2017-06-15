@@ -140,12 +140,11 @@ authentiek bent. Authenticatiegegevens die niet kloppen zullen daarom
 voor problematische aflevering van uw e-mailings zorgen. Via Copernica
 kunt u de volgende gegevens gemakkelijk aanmaken en controleren:
 
--   [SPF](./what-is-sender-policy-framework-spf.md "SPF (Sender Framework Policy)")
--   [DKIM](./dkim-domainkey-identified-mail.md "DKIM")
+-   [SPF](./spf "SPF (Sender Framework Policy)")
+-   [DKIM](./dkim "DKIM")
 
 ## Meer informatie
 
-* [Followups](./followups)
 * [Uitschrijfgedrag](./database-unsubscribe-behavior)
 * [Je spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 
