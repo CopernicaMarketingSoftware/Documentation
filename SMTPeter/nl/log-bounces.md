@@ -6,14 +6,16 @@ en XML formaat via de [REST logfiles API](rest-logfiles) of via het dashboard.
 Deze bestanden bevatten de volgende informatie:
 
 
-| Naam        | Beschrijving                                                             |
-| ----------- | ------------------------------------------------------------------------ |
-| id          | De unieke id van het bericht dat gebounced is                            |
-| time        | Het tijdstip waarop de bounce ontvangen is (JJJJ-MM-DD uu:mm:ss formaat) |
-| envelope    | Het envelope adres van het bericht                                       |
-| recipient   | De recipient van het bericht                                             |
-| mime        | De MIME inhoud van de ontvangen bounce                                   |
-| tags        | De tags van het bericht dat gebounced is, gescheiden door puntkomma's    |
+| Naam        | Beschrijving                                                                                                                                    |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| id          | De unieke id van het bericht dat gebounced is                                                                                                   |
+| time        | Het tijdstip waarop de bounce ontvangen is (JJJJ-MM-DD uu:mm:ss formaat)                                                                        |
+| envelope    | Het envelope adres van het bericht                                                                                                              |
+| recipient   | De recipient van het bericht                                                                                                                    |
+| mime        | De MIME inhoud van de ontvangen bounce                                                                                                          |
+| tags        | De tags van het bericht dat gebounced is, gescheiden door puntkomma's                                                                           |
+| templateid  | De ID van de template die gebruikt is voor het bericht dat gebounced is (0 als er geen template gebruikt is of wanneer dit niet beschikbaar is) |
+
 
 ## Meer informatie
 

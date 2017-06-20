@@ -6,21 +6,22 @@ in CSV, JSON, and XML format using the [REST logfiles API](rest-logfiles)
 or the dashboard. These log files contain the following data in the respective
 order:
 
-| Name        | Description                                                                             |
-| ----------- | --------------------------------------------------------------------------------------- |
-| id          | The unique id of the message for which delivery failed                                  |
-| time        | The time we figured the message never could be delivered (YYYY-MM-DD hh:mm:ss formatted)|
-| envelope    | The envelope of the message that failed                                                 |
-| recipient   | The recipient of the failed message                                                     |
-| attempt     | The attempt number (starting from zero)                                                 |
-| from        | The "from" IP address                                                                   |
-| to          | The "to" IP address                                                                     |
-| type        | The result type                                                                         |
-| code        | The SMTP error code                                                                     |
-| status      | SMTP status code (like "5.0.0")                                                         |
-| description | Human readable description received over SMTP                                           |
-| state       | State in the SMTP protocol during which the error occured                               |
-| tags        | The tags of the message (semicolon separated)                                           |
+| Name        | Description                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| id          | The unique id of the message for which delivery failed                                                            |
+| time        | The time we figured the message never could be delivered (YYYY-MM-DD hh:mm:ss formatted)                          |
+| envelope    | The envelope of the message that failed                                                                           |
+| recipient   | The recipient of the failed message                                                                               |
+| attempt     | The attempt number (starting from zero)                                                                           |
+| from        | The "from" IP address                                                                                             |
+| to          | The "to" IP address                                                                                               |
+| type        | The result type                                                                                                   |
+| code        | The SMTP error code                                                                                               |
+| status      | SMTP status code (like "5.0.0")                                                                                   |
+| description | Human readable description received over SMTP                                                                     |
+| state       | State in the SMTP protocol during which the error occured                                                         |
+| tags        | The tags of the message (semicolon separated)                                                                     |
+| templateid  | The id of the template that is used for the failed message (0 if no template is used or when it is not available) |
 
 ## More information
 
