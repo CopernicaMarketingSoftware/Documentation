@@ -6,7 +6,6 @@ bounce messages are therefore sent back to the Marketing Suite. You can set
 up a "bounce" feedback loop to be notified about these bounces too.
 If you are only interested in failed deliveries then you can also use [feedback loops for failures](feedback-failures).
 
-
 ## Type of messages
 
 The bounce feedback loop is used for literally _all_ messages that are 
