@@ -18,7 +18,6 @@ voordat we de feedback loop aanroepen. De data die jouw script ontvangt bevat
 hierdoor alle data die het makkelijk maakt om de terugmelding te koppelen
 aan gegevens in jouw systeem.
 
-
 ## Feedback loops van Microsoft, Gmail, Yahoo, enzovoort
 
 Als je je al wat langer met email en emailmarketing bezighoudt, ben je wellicht
