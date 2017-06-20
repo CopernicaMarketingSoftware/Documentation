@@ -23,7 +23,7 @@ the following rule of code in the block:
 Make a new webform field that is of the type invisible with the 
 following default value:
 
-`{math equation="x+y" x=$aantal y=1}`
+`{math equation="x+y" x=$number y=1}`
 
 Make another field that correspond to the profile, for example the 
 email adress. Make this a *key field* so it can be matched to the profile.
@@ -37,6 +37,6 @@ when the webform is submitted. You can now place the form on your page.
 On the closing page of the webform (this should be a webpage) you should 
 now add the following code to inform your users of the amount of submits.
 
-`{if $huidigaantal > 3}You have submitted the form too many times{else}Please try again.{/if}`
+`{if $currentnumber > 3}You have submitted the form too many times{else}Please try again.{/if}`
 
 [Back to webforms](./webforms)
