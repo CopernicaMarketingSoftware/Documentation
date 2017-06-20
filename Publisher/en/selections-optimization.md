@@ -49,4 +49,4 @@ Selecting based on email campaigns is by far the heaviest condition type. It is 
 ## Using the sort/select condition?
 Index the fields you sort on, or better yet, don't select fields to sort on. In that case, the profile ID is used automatically, which is by far the fastest.
 
-[Back to selections management](./selections-introductions).
+[Back to selections management](./selections-introduction).
