@@ -9,7 +9,7 @@ The results of your survey can be viewed in Copernica and downloaded to
 an Excel file. You can also lookup the answers given by a specific
 respondent in your Copernica database. For tips on good data gathering 
 please see our article on 
-[avoiding data corruption](./database-marketing-and-web-surveys-avoid-corruption.md)
+[avoiding data corruption](./prevent-database-corruption).
 
 Please note that it is not (yet) possible to make surveys in Marketing Suite.
 
@@ -22,7 +22,6 @@ also found in the **Survey** menu.
 
 -   [Create new survey](./surveys-create.md)
 -   [Survey question types](./surveys-question-types.md)
--   [Survey question options](./surveys-question-options.md)
 -   [Conditional survey questions](./surveys-question-conditional.md)
 -   [Edit, add, copy and move survey questions](./surveys-edit)
 -   [How to edit the survey title and introduction text](./surveys-title-introduction.md)
@@ -51,7 +50,6 @@ be, for example, opened in Excel or SPSS statistical software.
 
 -   [View survey results](./surveys-view-results.md)
 -   [Export survey results](./surveys-export-results.md)
--   [Taking the survey offline/archiving](./surveys-archive)
 -   [Deleting a survey](./surveys-delete)
 
 ## Other topics
@@ -59,6 +57,4 @@ be, for example, opened in Excel or SPSS statistical software.
 -   [Edit button text](./surveys-edit-buttons)
 -   [Remove the number sign (\#) at each survey
     question](./surveys-remove-hashtag.md)
--   [Database marketing and web surveys; avoid
-    corruption](./database-marketing-and-web-surveys-avoid-corruption.md)
 

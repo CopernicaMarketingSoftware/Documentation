@@ -17,7 +17,7 @@ The registration form for the REST API can be found on the dashboard of the
 Copernica website. This is probably not the location that you had expected, 
 because we usually use the Marketing Suite of the Publisher for these kind of 
 configuration forms. However, the REST API registration forms can only be found
-on the [the dashboard](/nl/applications) on www.copernica.com. If you register 
+on the [the dashboard](/en/applications) on www.copernica.com. If you register 
 an application, it is best to use a descriptive name, for example the address 
 of the website from where you will be making the API calls.
 

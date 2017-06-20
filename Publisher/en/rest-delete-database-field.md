@@ -26,4 +26,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 - [Overview of all API calls](rest-api)
 - [GET database fields](rest-get-database-fields)
 - [POST database field](rest-post-database-fields)
-- [PUT database field](rest-put-database-fields)
+- [PUT database field](rest-put-database-field)

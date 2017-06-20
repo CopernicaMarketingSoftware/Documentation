@@ -74,5 +74,5 @@ Het is best een hoop informatie, vandaar het volgende uitlegartikel:
 
 * [Beheeropties voor selecties](./selections-settings)
 * [Regels en condities](./selections-conditions)
-* [Optimaliseren van selecties](./selections-optimazation)
+* [Optimaliseren van selecties](./selections-optimization)
 
