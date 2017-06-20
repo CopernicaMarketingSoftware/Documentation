@@ -39,8 +39,8 @@ selection.
 -   Scroll to the selection that holds your newsletter subscribers and
     click to *Database management*-\>**Edit selection** to edit the
     newsletter selection.
--   In the condition overview, create a new ['AND'
-    condition](./or-and-and-selection-conditions.md).
+-   In the condition overview, create a new 'AND'
+    condition.
     Add it to the existing 'OR' rule.
 -   Now choose '**Check content other selection**'. Choose the bounce
     selection and select '**All profiles are not in the above

@@ -27,3 +27,11 @@ To use the stylesheet with your document or template, find the so called
 option in the template or document menu. Once you have linked a style
 sheet, a new tab Style is added above the document or template. From
 here you can instantly edit its rules.
+
+## More information
+
+* [Templates](./templates)
+* [Surveys](./surveys)
+* [Websites](./websites)
+* [Web forms](./webforms)
+* [RSS feeds and Atom feeds](./rss-and-atom-feeds.md)
