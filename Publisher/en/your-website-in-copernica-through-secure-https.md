@@ -1,3 +1,5 @@
+# Website through secure HTTPS
+
 It is possible to make your website in Copernica available through a
 secure https connection. If you use a subdomain under Copernica.com (eg.
 mycompany.copernica.com) then no additional actions are required from

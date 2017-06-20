@@ -31,7 +31,7 @@ service providers) such as Microsoft or Gmail offer. These feedback loops
 can be used to notify senders when a message is reported as spam or interacts 
 with the email. These loops are used to send aggregated information to us, 
 while our feedback loops send notifications to you in real-time. Copernica 
-handles spam reports for you according to your [unsubscribe behaviour](./database-unsubscribe-behaviour).
+handles spam reports for you according to your [unsubscribe behavior](./database-unsubscribe-behaviour).
 
 ## Handling the calls
 
@@ -89,4 +89,4 @@ loop, and send it right away.
 ## More information
 
 - [Statistics](./statistics)
-- [Unsubscribe behaviour](./database-unsubscribe-behaviour)
+- [Unsubscribe behaviour](./database-unsubscribe-behavior)

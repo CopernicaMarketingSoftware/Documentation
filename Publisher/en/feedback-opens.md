@@ -1,9 +1,9 @@
-# Feedback loops for opens
+# Feedback loops: opens
 
-The Marketing Suite can rewrite image links in emails to track opens. When an email
-is opened for which this option was set, the image will not be downloaded from your
-own server, but from the cache on our web servers instead. This
-allows us to track all opens and to use that for statistics.
+Copernica can rewrite image links in emails to track opens. If this option is enabled 
+the image will be downloaded from our server instead of yours, allowing 
+Copernica to track the opens of the image and therefore the email. This way we can notify 
+you through our [statistics](./statistics) or a feedback loop.
 
 If you set up a feedback loop for opens, the Marketing Suite notifies you in realtime
 about each registered image download. For each open that we monitor we send 
@@ -17,36 +17,15 @@ of handling this.
 
 With each POST call the following variables are passed to your script:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unique identifier of the message that was opened</td>
-    </tr>
-    <tr>
-        <td>recipient</td>
-        <td>email address of the person that opened the mail</td>
-    </tr>
-    <tr>
-        <td>ip</td>
-        <td>ip address of the opened</td>
-    </tr>
-    <tr>
-        <td>time</td>
-        <td>time when the url was opened</td>
-    </tr>
-    <tr>
-        <td>useragent</td>
-        <td>optional user agent string (extracted from http request header)</td>
-    </tr>
-    <tr>
-        <td>referer</td>
-        <td>optional referer (extracted from http request header)</td>
-    </tr>
-    <tr>
-        <td>tags</td>
-        <td>the tags that you associated with the mail</td>
-    </tr>
-</table>
+| Variable  | Description                                                     |
+|-----------|-----------------------------------------------------------------|
+| id        | unique identifier of the message that was opened                |
+| recipient | email address of the person that opened the mail                |
+| ip        | ip address of the opened                                        |
+| time      | time when the url was opened                                    |
+| useragent | optional user agent string (extracted from http request header) |
+| referer   | optional referer (extracted from http request header)           |
+| tags      | the tags that you associated with the mail                      |
 
 The "id", "recipient" and "tags" variables allow you to link the open to the 
 originally sent email message.

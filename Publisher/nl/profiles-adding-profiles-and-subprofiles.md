@@ -3,12 +3,7 @@
 In deze Copernica-tutorial leer je hoe je profielen en subprofielen
 aanmaakt.
 
-<iframe
-	width="560" height="315"
-	src="https://www.youtube.com/embed/wUf-CcZJ7Fw?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj"
-	frameborder="0"
-	allowfullscreen="allowfullscreen">
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wUf-CcZJ7Fw?list=PLgCg-YR2FABaNJPDwzCOUhoCZAzwFPQoj" frameborder="0" allowfullscreen="allowfullscreen"></iframe> 
 
 ## Hoe maak je een profiel aan?
 
