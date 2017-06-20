@@ -1,3 +1,5 @@
+# Bulkmailings inroosteren en uitschakelen
+
 Bulkmailings van mobiele documenten kunnen worden ingeroosterd om op een
 later tijdstip te versturen. Dit doe je door een Bulkmailing te
 verzenden, en dan bij stap 2 aan te geven wanneer de mailing verstuurd
@@ -11,7 +13,7 @@ aantal stappen.
 -   Kies vervolgens in het menu **Mailings** voor **Ingeroosterde
     mailing bewerken**.
 
-#### Interval en instellingen aanpassen
+## Interval en instellingen aanpassen
 
 In het dialoogvenster vind je twee tabbladen: **Interval** en
 **Instellingen**
@@ -21,7 +23,7 @@ In het dialoogvenster vind je twee tabbladen: **Interval** en
 -   In het tabblad **Instellingen** kan je de instellingen van de
     mailing wijzigen.
 
-#### Mailing uitschakelen
+## Mailing uitschakelen
 
 Om een ingeroosterde mailing niet te versturen (te annuleren), klik je
 onderaan op **Uitschakelen**.

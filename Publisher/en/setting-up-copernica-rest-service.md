@@ -22,8 +22,7 @@ protocol](../images/oauth-copernica.png "This graph depicts the procedure to lin
 This graph depicts the procedure to link an external application to
 Copernica using the OAuth 2.0 protocol
 
-Let's get started
------------------
+## Let's get started
 
 In order to make authorized calls, your application must obtain an
 access token on behalf of a Copernica account. If you do not have
@@ -34,8 +33,7 @@ In this example we'll be using a fictional external application
 example.com. The goal is to enable users with an example.com account to
 give this site access to their data in Copernica.
 
-Registering your application
-----------------------------
+## Registering your application
 
 Before you can even start implementing the OAuth protocol, you need to
 register your application on the Copernica.com dashboard. By registering your application you will
@@ -54,8 +52,7 @@ Identifies the client that is making the request.
 
 This is the secret token, so don't share it with anyone you don't trust.
 
-Add a hyperlink to your website
--------------------------------
+## Add a hyperlink to your website
 
 On your website, make a hyperlink that users can click to connect their
 example.com account with their Copernica account. The link should point
@@ -96,8 +93,7 @@ this access. The user will be asked to enter his login credentials. If
 the user has access to more than one account, he will also be asked to
 select the account that he would like your application to get access to.
 
-Authorization successful
-------------------------
+## Authorization successful
 
 After the user has confirmed access to his account on the Copernica.com
 website, he is redirected to the supplied redirect URI. Two extra URI
@@ -114,8 +110,7 @@ Is the `code` parameter missing in the redirect URL? Make sure that your
 `state` parameter added to your authentication URL is at least a MD5
 hash string.
 
-Verify identification
----------------------
+## Verify identification
 
 Once the user returned to your site, it's it time to convert the code
 variable that was supplied in the redirect URL to the access token that
@@ -150,8 +145,7 @@ With this access token you can start doing API calls. You can also store
 this token in a database, because it will stay valid until it is
 manually revoked by the user.
 
-Creating the API calls
-----------------------
+## Creating the API calls
 
 You've got everything up and running now and can start making calls to
 the Copernica Marketing Software.
@@ -165,9 +159,13 @@ accompanied with the access token as a query string:
 View our [REST API documentation](./rest-api.md) for in depth
 information on making API calls.
 
-Revoking access data
---------------------
+## Revoking access data
 
 Users of Copernica can easily revoke access to your application from
 their admin panel in Copernica. The access token will be destroyed and
 calls from your application will get an error response from our servers.
+
+## More information
+
+* [REST introduction](./rest-introduction)
+* [REST API calls](./rest-api.md)

@@ -119,11 +119,6 @@ database "customers" that refer to the veterinarian profile. You could even expl
 name the referring field, which is useful if a database contains multiple foreign
 key fields: {$profile.referrers.veterinarian@customers}.
 
-The foreign key fields have only later been added to Copernica. Before we had
-thse fields, you had to use the [{loadprofile} and {loadsubprofile} functions](./loadprofile-and-loadsubprofile.md)
-to include data of other (sub)profiles in your mailing. The functions still exist,
-and you can still use them if you want.
-
 ## Accounts and mailings
 
 Besides the {$profile} and {$subprofile} objects, you can also use the {$account}

@@ -12,7 +12,7 @@ could solve it.
 
 Some HTML errors may only come up when the document is
 **personalized**. Set the preview version to personalized in the lower left
-corner to validate the personalized document using the [test destination](./what-is-the-test-destination.md).
+corner to validate the personalized document using the test destination.
 
 ![](../images/htmlerrors.png)
 

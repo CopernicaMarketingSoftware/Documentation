@@ -3,9 +3,9 @@
 When composing your survey you can choose from four 'question' types: open
 question, multiple choice, grid question or an in-between text.
 
-This article is about the question types. [Were you looking for
-information on how to create a survey
-instead?](./create-new-survey.md)
+This article is about the question types. 
+[Were you looking for information on how to create a survey
+instead?](./surveys-create.md)
 
 ## Text between questions
 
@@ -13,7 +13,7 @@ Text between questions is given the same space as a question, but has no
 answering option. It is mostly used to add introductory headers to
 questions or divisions between topics. If you want to expand on a question it 
 is recommended to do so in the underwriting when making a question. (see 
-[create a new survey](./surveys.md))
+[create a new survey](./surveys-create.md))
 
 ## Open questions
 
