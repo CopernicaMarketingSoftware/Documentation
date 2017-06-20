@@ -9,7 +9,7 @@ Copernica negatief beïnvloeden. Door je database slim in te richten,
 presteert hij een stuk beter en sneller. Hieronder vertellen we hoe je 
 dat kunt doen.
 
-## **Verwijder en heers**
+### Verwijder en heers
 Ook als je een selectie niet actief gebruikt, wordt hij meerdere malen 
 per dag opnieuw opgebouwd en geüpdatet. Gebruik je een selectie niet, 
 dan is het dus beter om hem te verwijderen zodat je er geen rekenkracht 
@@ -25,10 +25,11 @@ binnen een enkele database organiseren) verbieden we het ook niet. Als
 je dan toch de behoefte hebt om voor iedere mailing een nieuwe database 
 te gebruiken, gooi ze dan na verloop van tijd ook weer weg.
 
-## **Filter alleen op velden die echt nodig zijn**
-Verwijder de selectiecondities die je niet nodig hebt om je doel te bereiken. Hoe meer er moet worden doorzocht, hoe langer het opbouwen van de selectie duurt.
+### Filter alleen op velden die echt nodig zijn
+Verwijder de selectiecondities die je niet nodig hebt om je doel te bereiken. 
+Hoe meer er moet worden doorzocht, hoe langer het opbouwen van de selectie duurt.
 
-## **Indexeer je velden slim**
+### Indexeer je velden slim
 
 In een geïndexeerd veld wordt slimmer gezocht naar de opgevraagde
 informatie. Normaliter wordt een databasekolom van A tot Z doorzocht. In
@@ -47,7 +48,7 @@ loslaat (waarde in veld X is gelijk aan Y).
 Je vindt de optie 'indexeer dit veld' bij de eigenschappen van het
 databaseveld.
 
-## **Doe eerst het lichte werk, dan pas het zware**
+### Doe eerst het lichte werk, dan pas het zware
 
 De ene selectie is de ander niet. Een eenvoudige selectie die een
 numeriek veld doorzoekt is veel makkelijker en sneller opgebouwd dan
@@ -81,7 +82,7 @@ Zware selectiecondities zijn:
 -   check op wijzigingen in het profiel
 -   check op dubbele of unieke profielen
 
-## **Selecties groeperen met lege selectie**
+### Selecties groeperen met lege selectie
 
 Veel gebruikers gebruiken lege bovenliggende selecties om andere selecties te
 groeperen. De ouderselectie heeft alleen als doel om visueel overzicht
@@ -92,14 +93,14 @@ Beter is het om een enkele selectieconditie te maken, en deze uit te schakelen
 (deze optie vind je bij de conditie). Nu voldoen alle profielen
 automatisch en hoeft er niets meer te worden doorzocht.
 
-## **Zorg dat je geen dubbele condities hebt**
+### Zorg dat je geen dubbele condities hebt
 
 We zien nog wel eens dat gebruikers in subselecties onder elkaar
 dezelfde filtercriteria toevoegen. Dit is vanzelfsprekend verspilde
 moeite. Verwijder dus de dubbel aangemaakte condities. Dat scheelt weer wat
 zoekwerk.
 
-## **Gebruik de juiste veldtypes**
+### Gebruik de juiste veldtypes
 
 Sla numerieke waardes op in een numeriek veld. Sla je het toch in een
 tekstveld op, geef dan in de selectieconditie aan dat het veld numeriek
@@ -113,7 +114,7 @@ op dit veld is.
 Werkt je veel met datums? Gebruik dan datumvelden. Datumcondities zijn
 sneller (en betrouwbaarder) wanneer wordt gezocht in een datumveld.
 
-## **Selecties met referenties**
+### Selecties met referenties
 
 Refereer alleen naar andere selecties als dit niet anders kan. Als een
 selectie afhankelijk is van 10 andere selecties, moeten deze 10
@@ -123,7 +124,7 @@ soms noodzakelijk en maakt het je database makkelijker beheerbaar, maar
 als het anders kan worden opgelost (zonder deze referenties), heeft dit
 absoluut onze voorkeur.
 
-## **Selecties op basis van e-mailcampagnes: liever niet**
+### Selecties op basis van e-mailcampagnes: liever niet
 
 Dit is veruit het zwaarste conditietype. De conditie wordt meestal
 ingezet om hardbounces te zoeken en filteren uit andere selecties. Beter
@@ -133,10 +134,12 @@ basis van een lichte veldconditie. Toegegeven, het is niet ideaal
 (document opvolgacties kunnen bijvoorbeeld nog niet worden gekopieerd
 naar andere documenten), maar je selecties worden wel een stuk sneller.
 
-## **Gebruik je de sorteer / selecteer selectieconditie?**
+### Gebruik je de sorteer / selecteer selectieconditie?
 
 Indexeer het veld of de velden waarop je sorteert. Het is beter om
 geen velden aan te geven waarop je sorteert, omdat dan automatisch het profiel-ID wordt
 gebruikt. Dit is absoluut het snelst.
 
-[Terug naar selectie beheer](./selections-introductions).
+* [Selecties en miniselecties](selections-introduction)
+* [Beheeropties voor selecties](selections-settings)
+* [Regels en condities](selections-conditions)

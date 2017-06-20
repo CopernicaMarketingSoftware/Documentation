@@ -1,48 +1,31 @@
-# Feedback loops voor opens
+# Feedback loops: opens
 
-De Marketing Suite kan links naar plaatjes in emails herschrijven om opens de registreren.
-Als een email waarvoor dit aanstaat geopend wordt, wordt het plaatje niet
-van jouw server gedownload, maar van de cache op onze servers.
-Dit stelt ons in staat om alle opens te registreren en zo statistieken bij te houden.
+Copernica kan links naar afbeeldingen in emails herschrijven om 
+opens te registreren. Hierdoor wordt de afbeelding via onze server gedownload, 
+in plaats van de server van jouw bedrijf. Hierdoor kan Copernica de 
+opens opslaan en naar jou doorsturen via een feedback loop.
 
 Als je een feedback loop voor opens instelt, word je in real-time op de hoogte
-gebracht van elke geopende mail.
-Voor elke open sturen we via HTTP of HTTPS een POST bericht naar jouw server
-met daarin de relevante informatie over de open.
+gebracht van elke geopende mail. Voor elke open sturen we via HTTP of 
+HTTPS een POST bericht naar jouw server met daarin de relevante 
+informatie over de open.
 
 ## Variabelen
 
 Met elk POST bericht worden de volgende variabelen meegestuurd:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>het unieke ID van het bericht dat geopend werd</td>
-    </tr>
-    <tr>
-        <td>recipient</td>
-        <td>het email address van de ontvanger</td>
-    </tr>
-    <tr>
-        <td>ip</td>
-        <td>het ip address van de ontvanger</td>
-    </tr>
-    <tr>
-        <td>time</td>
-        <td>het tijdstip waarop er op de email geopend werd</td>
-    </tr>
-    <tr>
-        <td>useragent</td>
-        <td>optionele informatie over de user-agent van de ontvanger (uit de HTTP request header)</td>
-    </tr>
-    <tr>
-        <td>referer</td>
-        <td>optionele informatie over de referer van de ontvanger (uit de HTTP request header)</td>
-    </tr>
-    <tr>
-        <td>tags</td>
-        <td>de tags die je aan de mail koppelde</td>
-    </tr>
-</table>
+| Variabele  | Omschrijving                                             |
+|------------|----------------------------------------------------------|
+| id         | unieke identifier van het geopende bericht               |
+| recipient  | email adres van de opener                                |
+| ip         | ip adres van de opener                                   |
+| time       | tijd van openen                                          |
+| useragent  | optionele user agent string (vanuit http request header) |
+| referer    | optionele referer (vanuit http request header)           |
+| tags       | tags geassocieerd met het bericht                        |
 
 De variabelen "id", "recipient" en "tags" stellen je in staat om de open te koppelen aan de oorspronkelijke mail.
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)

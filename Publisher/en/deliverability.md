@@ -1,4 +1,4 @@
-## Deliverability
+# Deliverability
 
 Deliverability refers to ensuring email messages are delivered and
 aren’t blocked by spam filters because the email content or structure
@@ -9,8 +9,7 @@ Chaffey).
 This article addresses all key ingredients that will help you
 maintaining a healthy sender reputation and deliverability.
 
-Split-run testen
-----------------
+## Split-run testen
 
 Relevant e-mails generate the least unsubscribes and the most opens and clicks. 
 Since those are good for the reputation of your sender domain, you want to 
@@ -20,8 +19,7 @@ In a split-run test you send different versions of an email to a smaller
 group to determine which version gets the best results. You can then 
 send the best version to the rest of the database. 
 
-**E-mail authentication**
--------------------------
+## **E-mail authentication**
 
 To be able to distinguish legitimate e-mails from the relentless flow of
 spam messages, large mailbox providers, including Google, Microsoft and
@@ -92,8 +90,7 @@ trust**. Recipients will see *your* company domain when they hover links in
 your emails, and not ours. Wouldn't you be suspicious if a company linked 
 you to another company's website?
 
-2. Optimize your database and email documents
----------------------------------------------
+## Optimize your database and email documents
 
 ESPs do not like it if you keep sending them emails to mailboxes that no
 longer exist, to people that have unsubscribed from your list or try to

@@ -11,7 +11,7 @@
     * [Exporteren van profielgegevens](./database-export.md)
 * [Selecties en miniselecties](./selections-introduction.md)
     * [Beheeropties voor selecties](./selections-settings.md)
-    * [Selectiecondities](./selections-conditions.md)
+    * [Regels en condities](./selections-conditions.md)
     * [Optimaliseren van selecties](./selections-optimization.md)
 * [Templates](./templates)
     * [Personaliseren](./personalization.md)
