@@ -14,9 +14,9 @@ collectie waar je de velden van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste veld dat wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare velden
+* start: eerste veld dat wordt opgevraagd
+* limit: lengte van de batch die wordt opgevraagd
+* total: toon wel/niet het totaal aantal beschikbare velden
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
@@ -27,9 +27,9 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een lijst van velden in de database. Voor elk veld
 worden de volgende eigenschappen teruggegeven:
 
-* **id**: numeriek id van het veld
-* **name**: naam van het veld
-* **type**: veld type
+* id: 	numeriek id van het veld
+* name: naam van het veld
+* type: veld type
 
 
 ## Voorbeeld in PHP
@@ -45,15 +45,15 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters om mee te geven
 $parameters = array(
-    'limit' =>  100
+    'limit' =>  100,
 );
 
 // voer de methode uit en print de resultaten
-print_r($api->get("collection/1234/fields", $parameters));
+print_r($api->get("collection/id/fields", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-   
+
 
 ## Meer informatie
 
