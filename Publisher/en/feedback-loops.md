@@ -1,48 +1,45 @@
 # Feedback loops
 
 In the Marketing Suite menu you find a tab called `feedback loops`. 
-Feedback loops are processes that are triggered whenever a certain event 
-happens, such as a click or an open, and report it to the user in real 
-time via HTTP POST. Please note that they are not available in Publisher.
+Feedback loops are processes that notify their user of events that happen 
+in real time through HTTP POST. This allows you to always have the most 
+recent results of your mailing. Please note that this functionality is 
+currently only available in Marketing Suite.
 
-You could use this if you want to update data in your own application 
-upon certain events Copernica picks up. To achieve this, place a script 
-on your own server that executes upon Copernica's calls, and in the 
-feedback loops tab, set the triggers. That is all!
+WARNING: Some feedback loops generate a large amount of calls. Please make 
+sure your server is capable of handling the load before setting up a 
+feedback loop.
 
-The good thing about feedback loops is that the data Copernica sends 
-you is a lot richer than the data Copernica receives in the first place. 
-All Copernica sees when receiving a click or open is the IP addresss and 
-HTTP headers of the incoming request. To that, we add the e-mail address, 
-profile data and the linked tags and send it to you. This way, your 
-script receives the data that makes it easy to link the data to data 
-in your own system.
+## Feedback loops with Marketing Suite
 
+Feedback loops can be used to sync data that passes through Copernica 
+directly into your own application. Feedback loops require a script on 
+you own server to execute whenever information is provided through the 
+feedback loop. You can set several triggers in the feedback loop tab such 
+as opens, clicks, profile edits and bounces.
+
+The data you receive is very rich and allows you to easily link it to the 
+data already present in your system. Copernica receives the IP address and 
+HTTP headers of the incoming request and adds the e-mail address, profile 
+data and linked tags to send to you. Based on this information it is 
+easy to add the information to the correct profile.
 
 ## Microsoft's, Gmail's and Yahoo's feedback loops
 
-If you've been around for a while in the email marketing business, 
-you might know about the feedback loops ESP's like Microsoft and Gmail 
-offer. These, however, are different feedback loops than the ones 
-described in this article.
+Another type of feedback loop is the feedback loop that ESP's (Email 
+service providers) such as Microsoft or Gmail offer. These feedback loops 
+can be used to notify senders when a message is reported as spam or interacts 
+with the email. These loops are used to send aggregated information to us, 
+while our feedback loops send notifications to you in real-time. Copernica 
+handles spam reports for you according to your [unsubscribe behaviour](./database-unsubscribe-behaviour).
 
-Feedback loops from ESP's are used to notify senders (like Copernica) 
-when users hit the "this is spam"-button or interact with the email 
-otherwise. These loops send feedback from the ESP to us, whereas the 
-feedback loops we offer are from us to you. Contrary to the ESP feedback 
-loops, ours are non-aggregated and sent in real-time.
+## Handling the calls
 
-
-## Watch out!
-
-Before you set up a feedback loop, please do make sure that your server
-is capable of handling the load. Especially the feedback loop that is
-called [when someone opens a mail](feedback-opens) receives huge
-numbers of calls.
-
-If you're not sure whether your server can handle the load, or when you do
-not need realtime feedback, you better use the [general statistics](statistics).
-
+As mentioned before feedback loops may generate a lot of calls. This can 
+be taxing on your server, so make sure it can handle the load. Especially 
+the [feedback loop for opens](feedback-opens) may cause a huge number of calls. 
+If you are unsure about the server capacity or not interested in real-time 
+feedback you can also use the [general statistics](statistics).
 
 ## Setting up a feedback loop
 
@@ -51,7 +48,9 @@ In the feedback loops menu, you can fill in the address the HTTP POST
 call is sent to in the manage menu. It's pretty self explanatory: 
 select the events you're interested in and provide the location of your script.
 
-The following feedback loops can be used:
+There are several types of feedback loops. The articles linked below explain 
+these types in more detail:
+
 * [Feedback loops for bounces](feedback-bounces)
 * [Feedback loops for failures](feedback-failures)
 * [Feedback loops for clicks](feedback-clicks)
@@ -81,9 +80,13 @@ to your webserver so that it becomes accessible via either
 You can remove the text file from your server after the address has been 
 validated.
 
-
 ## Testing the feedback loop
 
 The dashboard comes with a useful tool to test your feedback
 loop. You can enter the post data that you want to send to your feedback
 loop, and send it right away.
+
+## More information
+
+- [Statistics](./statistics)
+- [Unsubscribe behaviour](./database-unsubscribe-behaviour)

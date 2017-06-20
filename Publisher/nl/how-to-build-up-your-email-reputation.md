@@ -7,12 +7,11 @@ e-mailreputatie zorgt voor optimale deliverability en biedt je de
 grootste kans dat jouw e-mails daadwerkelijk de inbox van je relatie
 bereiken.
 
-Hoe wordt e-mailreputatie gemeten?
-----------------------------------
+## Hoe wordt e-mailreputatie gemeten?
 
 E-mailreputatie wordt bepaald aan de hand van verschillende factoren.
 
-### 1. Aantal maandelijkse e-mails
+## 1. Aantal maandelijkse e-mails
 
 Consistentie is belangrijk. Je e-mailreputatie wordt beschadigd als er
 ineens meer dan het normaal aantal berichten wordt verzonden. Als je
@@ -22,14 +21,14 @@ analyseren. Je e-mailreputatie kan hierdoor lager zijn dan wanneer al je
 e-mail van hetzelfde adres afkomstig is. En dit verhoogt weer de kans
 dat jouw e-mail niet op de juiste wijze wordt afgeleverd.
 
-### 2. Aantal spamklachten
+## 2. Aantal spamklachten
 
 Een klein aantal spamklachten is geen ramp voor je reputatie, maar houd
 er wel rekening mee. Maar wat is de drempel? Hier hebben wij helaas geen
 antwoord op. Met behulp van feedbackloopprogramma's kan je klachten die
 binnen zijn gekomen over jouw verzonden e-mailing in de gaten houden.
 
-### 3. Aantal e-mailings naar onbekenden
+## 3. Aantal e-mailings naar onbekenden
 
 Een 'bounce'-percentage van 3% is acceptabel. In die 3% zitten
 ontvangers die de mail niet hebben geopend of waar een foutmelding is
@@ -40,7 +39,7 @@ onderhouden is een zeer belangrijke taak naast het bieden van relevante
 content. Met een 'gezonde' en actuele verzendlijst voorkom je ook andere
 problemen zoals het slachtoffer worden van spamtraps (zie punt 5).
 
-### 4. Aantal geopende e-mails (relevantie)
+## 4. Aantal geopende e-mails (relevantie)
 
 Als je e-mails niet worden geopend, betekent het dat de content niet
 relevant/boeiend wordt gevonden. Of dat het onderwerp niet voldoende
@@ -48,7 +47,7 @@ aanspreekt om door te lezen. Ontvangers kunnen jouw berichten zien als
 spam en besluiten deze te markeren als spam. En voor je het weet stromen
 de spamklachten binnen.
 
-### 5. Spamtraps
+## 5. Spamtraps
 
 Spamtraps zijn e-mailadressen speciaal ingesteld om te kijken of men er
 spam naar toe verzendt. Het kunnen ook 'dode' e-mailadressen zijn om te
@@ -67,24 +66,19 @@ e-mailcertificatieprogramma aan waarbij jouw e-mail een
 voorkeursbehandeling krijgt bij 1.8 miljard inboxen. Je kunt dit
 e-mailcertificatieprogramma zien als één grote whitelist.
 
-De e-mailreputatie beheren
---------------------------
+## De e-mailreputatie beheren
 
 Met behulp van online tools is het mogelijk om je e-mailreputatie op te
 bouwen en te monitoren. Zo laat je de afzender ip-adres checken via
 verschillende websites die reputatiescorechecks aanbieden. Zie hieronder
 een aantal websites die zo'n check aanbieden:
 
--   [McAfee
-    TrustedSource](http://www.trustedsource.org/en/feedback/checking "McAfee TrustedSource")
--   [Cisco Ironport Email and Web
-    Security](http://www.senderbase.org/home "Cisco Ironport Email and Web Security")
--   [Return Path Sender
-    Score](https://senderscore.org/ "Return Path Sender Score")
--   [Watchguard
-    ReputationAuthority](http://www.reputationauthority.org/index.php "Watchguard ReputationAuthority")
+-   [McAfee TrustedSource](https://www.trustedsource.org "McAfee TrustedSource")
+-   [Talos](http://www.talosintelligence.com "Cisco Ironport Email and Web Security")
+-   [Return Path Sender Score](https://senderscore.org "Return Path Sender Score")
+-   [Watchguard ReputationAuthority](http://www.reputationauthority.org "Watchguard ReputationAuthority")
 
-### Feedbackloopprogramma's
+## Feedbackloopprogramma's
 
 Het is mogelijk om klachten die binnenkomen over jouw verzonden e-mail
 automatisch te verwerken. Meld je daarvoor aan bij de
@@ -100,16 +94,14 @@ domeinnaam zoals: abuse@ of postmaster@. Hieronder een aantal ISP's die
 feedbackloopprogramma's aanbieden. Het aanmelden kan middels formulieren
 op de websites.
 
--   [Yahoo Feedback Loop](http://feedbackloop.yahoo.net/ "Yahoo Feedback Loop")
--   [MSN/Hotmail Feedback
-    Loop](https://support.msn.com/eform.aspx?productKey=edfsjmrpp&ct=eformts "MSN/Hotmail Feedback Loop")
 -   [AOL Feedback Loop](https://postmaster.aol.com/fbl-request "AOL Feedback Loop")
 -   [OpenSRS/ Tucows](http://fbl.hostedemail.com/ "OpenSRS/ Tucows")
 -   [Comcast](http://feedback.comcast.net "Comcast")
 -   [United Online](http://www.unitedonline.net/postmaster/whitelisted.html "United Online")
--   Gmail: biedt helaas geen feedbacklooppprogramma aan partijen die
-    bulkmailings versturen. Zij maken gebruik van ingewikkelde
-    filtertechnieken om zelf te bepalen wat spam is en wat niet. Wel
-    bieden zij de mogelijkheid aan de gebruikers van Gmail om zich af te
-    melden van onnodige e-mailings als er gebruik wordt gemaakt van
-    List-unsubscribe headers door de verzender.
+
+Gmail biedt helaas geen feedbacklooppprogramma aan partijen die
+bulkmailings versturen. Zij maken gebruik van ingewikkelde
+filtertechnieken om zelf te bepalen wat spam is en wat niet. Wel
+bieden zij de mogelijkheid aan de gebruikers van Gmail om zich af te
+melden van onnodige e-mailings als er gebruik wordt gemaakt van
+List-unsubscribe headers door de verzender.
