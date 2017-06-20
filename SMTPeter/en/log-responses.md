@@ -7,14 +7,15 @@ of these files in CSV, JSON, and XML format using the [REST logfiles API](rest-l
 or the dashboard. These log files contain the following data in the
 respective order:
 
-| Name        | Description                                                                  |
-| ----------- | ---------------------------------------------------------------------------- |
-| id          | The unique id of the message that generated the response                     |
-| time        | The time we received the response (YYYY-MM-DD hh:mm:ss formatted)            |
-| envelope    | The envelope of the message                                                  |
-| recipient   | The recipient of the message                                                 |
-| mime        | The MIME content of the response                                             |
-| tags        | The tags of the message that generated the response, separated by semicolons |
+| Name        | Description                                                                                                                       |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| id          | The unique id of the message that generated the response                                                                          |
+| time        | The time we received the response (YYYY-MM-DD hh:mm:ss formatted)                                                                 |
+| envelope    | The envelope of the message                                                                                                       |
+| recipient   | The recipient of the message                                                                                                      |
+| mime        | The MIME content of the response                                                                                                  |
+| tags        | The tags of the message that generated the response, separated by semicolons                                                      |
+| templateid  | The id of the template that is used for the message which was responded to (0 if no template is used or when it is not available) |
 
 ## More information
 
