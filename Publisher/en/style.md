@@ -1,45 +1,47 @@
-# Documentation styleguide
+# Documentation style test document
 
-Introduction text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. *Lay-out* menu under *Admin*.
+Introduction text Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore *magnam aliquam quaerat* voluptatem. `Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis` suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure **reprehenderit qui in ea voluptate velit** esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? [style links](style "style").
 
-## h2
+## h2 title
+### h3 title
+### h4 title
+##### h5 title
+###### h6 title
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. `Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis` suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? [style](style "style").
+## lists
 
 - Nam libero tempore, cum soluta 
 - nobis est eligendi optio cumque 
 - nihil impedit quo minus id quod 
 - maxime placeat facere possimus
 
-* omnis voluptas assumenda est
-* omnis dolor repellendus. 
-* Temporibus autem quibusdam 
-* et aut officiis debitis aut 
-
 1. At vero eos et accusamus et iusto odio dignissimos 
 2. ducimus qui blanditiis praesentium voluptatum 
 3. deleniti atque corrupti quos dolores et quas 
 4. molestias excepturi sint occaecati cupiditate
 
-### h3
+**Important** bold
+*em* with emphasis
+[style links](style "style")
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+### combination
 
-#### h4
+[**style** *links*](style "style")
+**bold** with *emphasis*
 
-**Important**: Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+## tables
 
 | Markdown table                                        | Description
 |-------------------------------------------------------|--------------------------------------|
-| [**copernica**](./style)                              | Copernica account                    |
-| [**mailing**](./style)                                | Previous mailing                     |
-| [**message**](./style)                                | Personalized template                |
-| [**template**](./style)                               | Standard template                    |
-| [**database**](./style)                               | Database                             |
-| [**collection**](./style)                             | Collection (subset of database)      |
-| [**profile**](./style)                                | Profile                              |
-| [**subprofile**](./style)                             | Subprofile (profile from collection) |
-| [**destination**](./style)                            | Alias to profile/subprofile          |
+| [**copernica**](./style)                              | Description                          |
+| [**mailing**](./style)                                | Description                          |
+| [**message**](./style)                                | Description                          |
+| [**template**](./style)                               | Description                          |
+| [**database**](./style)                               | Description                          |
+| [**collection**](./style)                             | Description                          |
+| [**profile**](./style)                                | Description                          |
+| [**subprofile**](./style)                             | Description                          |
+| [**destination**](./style)                            | Description                          |
 
 
 <table>
@@ -48,23 +50,23 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
         <td>optio cumque nihil impedit quo minus id quod maxime placeat</td>
     </tr>
     <tr>
-        <td>type</td>
+        <td>table</td>
         <td>optio cumque nihil impedit quo minus id quod maxime placeat</td>
     </tr>
     <tr>
-        <td>parameters</td>
+        <td>table</td>
         <td>optio cumque nihil impedit quo minus id quod maxime placeat</td>
     </tr>
     <tr>
-        <td>timestamp</td>
+        <td>table</td>
         <td>optio cumque nihil impedit quo minus id quod maxime placeat</td>
     </tr>
 </table>
 
 
-##### h5
+## code blocks
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Sed ut perspiciatis `unde` omnis iste natus error sit voluptatem accusantium `doloremque laudantium`, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta `sunt explicabo. Nemo enim ipsam voluptatem quia voluptas` sit aspernatur aut odit aut fugit, sed quia `consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt`.
 
 html
 ```html
@@ -104,8 +106,5 @@ json
 }
 ```
 
-###### h6
+![](http://via.placeholder.com/895x150)
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
-![](../images/webform-set-behaviour-key-fields.png)
