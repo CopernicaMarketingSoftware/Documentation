@@ -4,7 +4,7 @@ Er zijn, naast het [aanmaken en verwijderen van selecties](selections-introducti
 nog andere beheeropties. Hieronder een overzicht:
 
 
-## Selecties kopiëren of verplaatsen
+### Selecties kopiëren of verplaatsen
 
 Het kan gebeuren dat je een selectie per ongeluk op de verkeerde plaats 
 aanmaakt. Gelukkig kun je een selectie eenvoudig verplaatsen naar een 
@@ -20,7 +20,7 @@ Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
 
-## Profielen uit een (mini)selectie weergeven
+### Profielen uit een (mini)selectie weergeven
 
 De profielen van een selectie kun je inzien door simpelweg op de naam 
 van de selectie te klikken. Voor miniselecties ligt het net iets anders: 
@@ -28,7 +28,7 @@ de subprofielen verkrijg je door in het menu *huidige weergave* op
 *subprofielen weergeven* te klikken.
 
 
-## Selecties authoriseren voor mailings
+### Selecties authoriseren voor mailings
 
 Met het authoriseren van mailings zorgt Copernica dat je niet per ongeluk
 een mailing verstuurt naar klanten die daar niet op zitten te wachten. 
@@ -37,7 +37,7 @@ Echter, het kan voorkomen dat deze optie niet beschikbaar is. Dat komt dan
 waarschijnlijk doordat je geen geschikt veld hebt aangemaakt in je database.
 
 
-## Verwijderen, deactiveren of archiveren?
+### Verwijderen, deactiveren of archiveren?
 
 Selecties die je niet of amper gebruikt, kun je het beste (tijdelijk) 
 uit je database halen om je performance te verhogen. Hier zijn 
@@ -60,4 +60,9 @@ actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties
 heeft dus geen invloed op de performance van je overige selecties. Je kunt
 ze dus beter verwijderen als performance je doel is.
 
-* [Terug naar selectiebeheer](./selections-introduction)
+
+### Meer informatie
+
+* [Selecties en miniselecties](./selections-introduction)
+* [Optimaliseren van selecties](selections-optimalization)
+* [Regels en condities](selections-conditions)

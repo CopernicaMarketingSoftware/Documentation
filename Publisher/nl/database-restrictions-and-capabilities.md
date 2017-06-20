@@ -1,4 +1,4 @@
-# Database restricties en gebruiksmogelijkheden
+# Restricties
 
 Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
 dat ongeldige gegevens in je database belanden. Tegelijkertijd voorkomt het
