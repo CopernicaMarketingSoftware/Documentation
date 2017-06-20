@@ -43,8 +43,6 @@ it. You can link a style sheet to
 the page, document or template through its context menu. The same
 applies to stylesheets for surveys and feeds.
 
-Further reading: [Manage CSS stylesheet files](./manage-css-stylesheet-files.md)
-
 ### Link your stylesheet to a template, document or web page
 
 To use a stylesheet with your document or template, find the
@@ -150,4 +148,3 @@ feed.
 ## More information
 
 * [Publisher only functions](./publisher-only)
-* [Managing stylesheets](./manage-css-stylesheet-files)
