@@ -128,3 +128,8 @@ alle trucjes en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt
 van vierkante haakjes in plaats van accolades. Meer informatie over Smarty kun 
 je vinden op [www.smarty.net](http://www.smarty.net).
 
+## Meer informatie
+
+* [Templates](./templates)
+* [Text tag](./text-tag)
+* [Image tag](./image-tag)

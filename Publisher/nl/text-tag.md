@@ -55,3 +55,8 @@ Als op documentniveau het tekstblok leeg blijft dan wordt de waarde van de
 ingevoerd, dan wordt de waardes van deze attributen automatisch rond de
 ingevoerde tekst geplaatst.
 
+## Meer informatie
+
+* [Templates](./templates)
+* [Loop tag](./loop-tag)
+* [Image tag](./image-tag)
