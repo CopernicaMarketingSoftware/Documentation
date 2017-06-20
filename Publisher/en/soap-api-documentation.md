@@ -28,7 +28,7 @@ Full control with Copernica's object model
 ------------------------------------------
 
 Copernica's API uses a logical and structured object model. All data in
-the software is represented by objects. Read the properties of these
+the software is represennted by objects. Read the properties of these
 objects with SOAP API and then update them. The methods can also be
 invoked. Every project is built up from smaller sub-objects. An object
 that represents a
@@ -49,8 +49,7 @@ Renewed callback system
 -----------------------
 
 By synchronizing data between Copernica and an external location or
-database, you don't have to keep
-[importing](./import-and-export.md "Import and export data")
+database, you don't have to keep importing 
 data manually from Copernica and vice versa. Both systems do this fully
 automatically. In Copernica, one can easily set up callback URLs.
 Copernica will use this to keep the third party application informed
