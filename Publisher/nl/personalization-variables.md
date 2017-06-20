@@ -116,12 +116,6 @@ database "klanten" die verwijzen naar het profiel. Je kunt zelfs specifiek
 opgeven welk foreign key veld je wilt gebruiken, wat handig als je meerdere foreign
 key velden hebt: {$profile.referrers.dierenarts@klanten}.
 
-De foreign key velden zijn pas later toegevoegd aan Copernica. Voordat deze 
-velden werden ondersteund, diende je gebruik te maken van de 
-[{loadprofile} en {loadsubprofile} functies](./loadprofile-and-loadsubprofile.md)
-om (sub)profielen in te laden. Deze functies bestaan nog steeds, en kun je
-gebruiken als je ze nodig hebt.
-
 ## Accounts en mailings
 
 Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
@@ -140,11 +134,6 @@ van de mailing waartoe het bericht behoort:
 * **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
 * **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
 * **{$mailing.snapshot.subject}**: onderwerp van de mailing 
-
-[Het *trigger* object](./personalization-triggers.md) is speciaal. Als een mailing 
-automatisch wordt ingeroosterd naar aanleiding van een bepaalde gebeurtenis (zoals 
-een ingevulde enquete of een gewijzigd profiel), dan bevat het trigger object 
-allerlei gegevens over deze gebeurtenis.
 
 ## Extra personalisatievariabelen toevoegen
 
