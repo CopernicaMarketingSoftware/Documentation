@@ -1,4 +1,4 @@
-# Feedback loops voor het aanpassen van profielen
+# Feedback loops: aanpassen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel in een van je database aangepast wordt,
@@ -10,90 +10,43 @@ server met daarin alle relevante informatie over het zojuist aangepaste profiel.
 
 Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
-<table>
-    <tr>
-        <td>profile / subprofile</td>
-        <td>het unieke ID van het profiel/subprofiel dat aangepast werd</td>
-    </tr>
-    <tr>
-        <td>type</td>
-        <td>welk type actie er op het (sub)profiel was uitgevoerd ('create', 'update' of 'delete')</td>
-    </tr>
-    <tr>
-        <td>parameters</td>
-        <td>de parameters waarmee de actie uitgevoerd werd</td>
-    </tr>
-    <tr>
-        <td>timestamp</td>
-        <td>het tijdstip waarop het (sub)profiel aangepast werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-</table>
+| Variables          | Description                                                            |
+|--------------------|------------------------------------------------------------------------|
+| profile/subprofile | unieke identifier van het profile/subprofiel dat werd aangepast        |
+| type               | type actie uitgevoerd op (sub)profiel ('create', 'update' or 'delete') |
+| parameters         | parameter voor uitvoeren actie                                         |
+| timestamp          | tijd van aanpassing (in YYYY-MM-DD HH:MM:SS format)                    |
 
 De variabele "action" heeft altijd de waarde 'update'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
 profiel [aangemaakt](feedback-creates) of [verwijderd](feedback-deletes) wordt.
 Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. Voor profielen zijn dit de volgende variabelen:
 
-<table>
-    <tr>
-        <td>ID</td>
-        <td>het unieke ID van het profiel</td>
-    </tr>
-    <tr>
-        <td>database</td>
-        <td>het unieke ID van de database waarin het profiel zich bevindt</td>
-    </tr>
-    <tr>
-        <td>fields</td>
-        <td>de huidige velden van het profiel</td>
-    </tr>
-    <tr>
-        <td>interests</td>
-        <td>de huidige interesses van het profiel</td>
-    </tr>
-    <tr>
-        <td>created</td>
-        <td>het tijdstip waarop het profiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-    <tr>
-        <td>modified</td>
-        <td>het tijdstip waarop het profiel gewijzigd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-</table>
+| Variabelen  | Omschrijving                                                  |
+|-------------|---------------------------------------------------------------|
+| id          | unieke identifier van het profiel                             |
+| database    | unieke identifier van de database van het profiel             |
+| fields      | huidige velden van het profiel                                |
+| interests   | huidige interesses van het profiel                            |
+| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)             |
+| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)   |
 
 Voor subprofielen zijn dit de volgende variabelen:
 
-<table>
-    <tr>
-        <td>ID</td>
-        <td>het unieke ID van het subprofiel</td>
-    </tr>
-    <tr>
-        <td>profile</td>
-        <td>het unieke ID van het profiel dat bij dit subprofiel hoort</td>
-    </tr>
-    <tr>
-        <td>database</td>
-        <td>het unieke ID van de database waarin het subprofiel zich bevindt</td>
-    </tr>
-    <tr>
-        <td>collection</td>
-        <td>het unieke ID van de collection waarin het subprofiel zich bevindt</td>
-    </tr>
-    <tr>
-        <td>fields</td>
-        <td>de huidige velden van het subprofiel</td>
-    </tr>
-    <tr>
-        <td>created</td>
-        <td>het tijdstip waarop het subprofiel aangemaakt werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-    <tr>
-        <td>modified</td>
-        <td>het tijdstip waarop het subprofiel gewijzigd werd (in YYYY-MM-DD HH:MM:SS formaat)</td>
-    </tr>
-</table>
+| Variabele   | Omschrijving                                                |
+|-------------|-------------------------------------------------------------|
+| id          | unieke identifier van het subprofiel                        |
+| profile     | unieke identifier van het profiel van het subprofiel        |
+| database    | unieke identifier van de database van het subprofiel        |
+| collection  | unieke identifier van de collectie van het subprofiel       |
+| fields      | huidige velden van het subprofiel                           |
+| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)           |
+| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format) |
 
 Associative arrays zoals "parameters" en "fields" worden per key-valuepaar verstuurd,
 bijvoorbeeld als *parameters[key]=value*.
 Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
+
+## Meer informatie
+
+* [Feedback loops](./feedback-loops)
