@@ -18,27 +18,25 @@ zo is de redenatie.
 
 ### Klopt dat niet dan?
 
-Nee, niet helemaal. Indirect misschien wel, maar ook als bonafide
+Nee, niet helemaal. Indirect misschien wel, maar ook als 
 e-mailmarketeer kan het gebeuren dat je e-mailings bij een spamtrap
 aankomen en jij zo op een blacklist komt te staan.
 
-## Hoe kan dat nou?
+### Hoe kan dat nou?
 
 Spammers hebben er alle baat bij de betrouwbaarheid van blacklists te
 beschadigen door legitieme verzendadressen in een spamtrap te laten
 lopen. Als zij dus het vermoeden hebben dat bepaalde e-mailadressen
-spamvallen zijn, kunnen zij deze aanmelden voor bonafide e-mailings om
+spamvallen zijn, kunnen zij deze aanmelden voor legetime e-mailings om
 zo de reputatie van een blacklist te beschadigen.
 
 Hoe vaker dit gebeurt, hoe minder betrouwbaar de spamtrap en de daaruit
-komende zwarte lijst.
-Bovendien gebruiken veel e-mailserviceproviders ongeldige e-mailadressen
-als spamtraps. Zij kijken dan naar e-mailings die binnenkomen op
-adressen die nooit bestaan hebben bijvoorbeeld.
+komende zwarte lijst. Bovendien gebruiken veel e-mailserviceproviders 
+ongeldige e-mailadressen als spamtraps. Zij kijken dan naar e-mailings die 
+binnenkomen op adressen die nooit bestaan hebben bijvoorbeeld.
 Maar ook als iemand zich ooit een keer heeft aangemeld voor je
 e-mailings en op een gegeven moment zijn e-mailaccount opzegt, kan dat
 er toe leiden dat je op een blacklist terecht komt.
-
 
 ## Wat kan ik doen om te voorkomen dat ik e-mailings naar spamtraps zend?
 
@@ -74,3 +72,5 @@ symptoom van het probleem zijn. Een verzendlijst vol spamvallen is
 namelijk niet meer dan een teken van een vervuilde database. Wees dus
 zorgvuldig bij het verzamelen van informatie en houd je database
 schoon.
+
+

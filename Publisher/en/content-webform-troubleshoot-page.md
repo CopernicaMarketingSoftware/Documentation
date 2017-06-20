@@ -13,10 +13,10 @@ Content web forms can only be published within Copernica hosted websites
 
 -   **To edit the behaviour of the web form**\
      Go to Content \> Select the web form \> In the web form menu,
-    choose Settings \> Go to **Edit profiles**tab
+    choose Settings \> Go to **Edit profiles** tab
 -   **To edit the settings for the fields of the web form**\
      Go to Content \> Select the web form \> Click the field that you
-    would like to edit \> Click **Edit field**from the lower toolbar.
+    would like to edit \> Click **Edit field** from the lower toolbar.
 
 ![Webform behave yourself!](../images/webform-behaviour-wizard.png)
 
@@ -51,7 +51,7 @@ should be in this database, and you target your mailing to this
 database).
 
 To see to which database the web form has been linked, go to the web
-form **Settings**dialog.
+form **Settings** dialog.
 
 ### The data could not be stored
 
@@ -80,7 +80,7 @@ forms, to check for instance both on username and password).
 You have designated one or more fields in the web form as key fields.
 However the webform behaviour is not configured to search for the
 profile using these key fields. To solve the issue, go to **Edit
-form**(in the web form menu), go to the **Edit profiles tab**and click
+form**(in the web form menu), go to the **Edit profiles tab** and click
 **Change behaviour** to start through the wizard.
 
 When the wizard asks *'The form applies to*...', choose *'each profile
