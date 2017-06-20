@@ -1,7 +1,7 @@
 # Introduction
 
 Copernica develops multiple email-related products like 
-[MailerQ](www.mailerq.com) and [SMTPeter](www.smtpeter.com).
+[MailerQ](https://www.mailerq.com) and [SMTPeter](https://www.smtpeter.com).
 However, Copernica is mostly recognized for the comprehensive
 email-toolkit which is designed especially for marketeers and 
 webshops. Inside Copernica you find both the new Marketing Suite
