@@ -143,6 +143,9 @@ Indexeer het veld of de velden waarop je sorteert. Het is beter om
 geen velden aan te geven waarop je sorteert, omdat dan automatisch het profiel-ID wordt
 gebruikt. Dit is absoluut het snelst.
 
+
+### Meer informatie
+
 * [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
 * [Regels en condities](selections-conditions)
