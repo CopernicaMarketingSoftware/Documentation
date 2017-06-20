@@ -1,10 +1,12 @@
+# Importeren en exporteren
+
 Gebruik je al een extern CRM-systeem of een ander pakket om je
 relatiegegevens op te slaan? Met de verschillende [integraties van
 Copernica](./integrations.md "integraties")
 of onze [SOAP API](./soap-api-documentation.md "SOAP API")
 zet je gegevens van je huidige systeem makkelijk over naar Copernica. Of
 wil je graag aan je collega’s laten zien welke relaties hebben
-doorgeklikt in je laatste [e-mailing](./view-detailed-reports.md "e-mailing")?
+doorgeklikt in je laatste e-mailing?
 Exporteer dan de gewenste gegevens uit Copernica naar een overzichtelijk
 bestand voor verdere analyse.
 
