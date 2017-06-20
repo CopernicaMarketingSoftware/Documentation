@@ -13,6 +13,7 @@ These log files contain the following data in the respective order:
 | recipient  | The recipient of the message                                                                                            |
 | properties | The properties (preventscam, inlinecss, trackbounces, trackopens, and trackclicks) of the message (semicolon separated) |
 | tags       | The tags of the message (semicolon separated)                                                                           |
+| templateid | The id of the template that is used for this mailing (0 if no template is used or when it is not available)             |
 
 ## More information
 
