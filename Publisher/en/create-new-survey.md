@@ -4,9 +4,8 @@ Surveys are a very powerful tool to learn how contacts think of your
 company, your service, products or whatever you like to know about them.
 
 Surveys are easily created and can be published on your website in a
-wink. If you [link to this website from an
-emailing](./linking-to-your-website-from-an-emailing.md),
-individual answers given are even automatically linked to the profile.
+wink. If you link to this website from an emailing individual answers 
+given are even automatically linked to the profile.
 
 To add a new survey to the application, use the function labeled so
 under the **Survey menu** of **Content**.
