@@ -37,3 +37,4 @@ of the new data with your existing data. The "mailfrom", "rcptto" and
 ## More information
  
 * [Feedback loops](./feedback-loops)
+* [Types of bounces](./bounces)
