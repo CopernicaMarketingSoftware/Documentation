@@ -114,7 +114,6 @@ op dit veld is.
 Werkt je veel met datums? Gebruik dan datumvelden. Datumcondities zijn
 sneller (en betrouwbaarder) wanneer wordt gezocht in een datumveld.
 
-
 ### Selecties met referenties
 
 Refereer alleen naar andere selecties als dit niet anders kan. Als een
@@ -125,7 +124,6 @@ soms noodzakelijk en maakt het je database makkelijker beheerbaar, maar
 als het anders kan worden opgelost (zonder deze referenties), heeft dit
 absoluut onze voorkeur.
 
-
 ### Selecties op basis van e-mailcampagnes: liever niet
 
 Dit is veruit het zwaarste conditietype. De conditie wordt meestal
@@ -135,7 +133,6 @@ direct opslaan in het profiel. Je bounce-selectie kun je dan maken op
 basis van een lichte veldconditie. Toegegeven, het is niet ideaal
 (document opvolgacties kunnen bijvoorbeeld nog niet worden gekopieerd
 naar andere documenten), maar je selecties worden wel een stuk sneller.
-
 
 ### Gebruik je de sorteer / selecteer selectieconditie?
 
