@@ -36,7 +36,6 @@ Surveys can be published on web pages only due to technical constraints.
 
 -   [Reset your survey](./surveys-reset-results.md)
 -   [Publishing the survey](./surveys-publish.md)
--   [Link to the survey from an emailing](./linking-to-your-website-from-an-emailing.md)
 -   [Register survey participant profiles](./surveys-register-participants.md)
 
 ## Survey follow-up actions
