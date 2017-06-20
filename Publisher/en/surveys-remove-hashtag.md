@@ -23,5 +23,5 @@ For more information on layout changes please see the documentation on
 
 ## More information
 
-* [Surveys](./Surveys)
+* [Surveys](./surveys)
 * [Stylesheets](./stylesheets.md)

@@ -138,15 +138,9 @@ The {$mailing} object has more properties, en contains some mailing settings:
 * **{$mailing.snapshot.created}**: time when a snapshot of the document was created (YYYY-MM-DD hh:mm::ss format)
 * **{$mailing.snapshot.subject}**: mailing subject line
 
-[The *trigger* object](./personalization-triggers.md) is special. Some mailings
-are automatically started/triggered as a result of a certain event, like a submitted
-survey or a modified profile. For these type of mailings, the {$mailing.trigger}
-variable holds the data of this event.
-
 ## Extra personalization variables
 
-When you're editing a template, you can add 
-[extra personalization variables](./personalization-extra-variables.md).
+When you're editing a template, you can add extra personalization variables.
 These variables can be set for documents to influence the template. These extra 
 personalization variables are accessible via their name after assignment: 
 

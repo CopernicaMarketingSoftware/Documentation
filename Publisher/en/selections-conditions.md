@@ -12,7 +12,7 @@ As you may know, Copernica determines which profiles are added to a selection ba
 * **Previous exports**. Use this to select profiles that have been exported between two points in time.
 
 It's also possible to use selections to alphanumerically sort a given amount of profiles. Read [here](sorting-and-selecting-profiles-in-a-database-or-collection) how to to this.
-More on conditions and rules can be found [here](selection-conditions).
+More on conditions and rules can be found [here](selections-conditions).
 
 ## Rules and conditions
 

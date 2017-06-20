@@ -38,7 +38,7 @@ braces.
 
 ### Creating variables is done quicker and easier
 
-Using Smarty 2 you can [capture](./personalization-function-capture.md) something in a variable as follows:
+Using Smarty 2 you can [capture](./personalization-functions-capture.md) something in a variable as follows:
 
 `{capture assign="namevar"}This is a var{/capture}`
 

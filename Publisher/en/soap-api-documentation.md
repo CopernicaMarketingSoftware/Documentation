@@ -1,5 +1,4 @@
-Besides the existing
-[integrations](./integrations.md "Integrations")
+Besides the existing integrations 
 for different systems, with our powerful SOAP API you are able to create
 an integration with your own software. Synchronize all data from
 Copernica with the data from your own software to keep all information

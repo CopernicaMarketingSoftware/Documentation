@@ -22,7 +22,7 @@
 * [Statistics](./statistics)
     * [Results of a mailing](./statistics-mailing)
     * [Exporting statistics](./statistics-export)
-    * [Logfiles](../logfiles-ms)
+    * [Logfiles](./logfiles-ms)
 * [API documentation](./apis.md)
     * [REST API](./rest-api.md)
     * [Feedback loops](./feedback-loops.md)
