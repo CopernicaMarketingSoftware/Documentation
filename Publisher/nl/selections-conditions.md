@@ -18,7 +18,7 @@ genoemd. Hieronder zijn de verschillende opties uiteengezet:
 
 ### Veldwaarde 
 Stelt een selectie samen aan de hand van de opgegeven veldwaarde.
-Deze veldwaarde kan bijvoorbeeld `woonplaats = x` zijn.
+Deze veldwaarde kan bijvoorbeeld 'woonplaats = x' zijn.
 Alle woonplaatsen die gelijk zijn aan x komen dan in de selectie.
 
 
@@ -68,3 +68,10 @@ iedereen die onlangs is verhuisd een mailing sturen.
 ### Eerdere exports
 Het is mogelijk om profielen te selecteren die zijn geëxporteerd 
 gedurende een bepaalde periode.
+
+
+### Meer informatie
+
+* [Selecties en miniselecites](selections-introduction)
+* [Beheeropties voor selecties](selections-settings)
+* [Optimaliseren van selecties](selections-optimalization)
