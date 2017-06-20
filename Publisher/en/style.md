@@ -106,5 +106,5 @@ json
 }
 ```
 
-![](../images/webform-set-behaviour-key-fields.png)
+![](http://via.placeholder.com/895x150)
 
