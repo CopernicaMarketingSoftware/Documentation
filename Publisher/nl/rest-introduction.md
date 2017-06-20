@@ -15,10 +15,12 @@ soorten requests:
 * HTTP GET voor het ophalen van data;
 * HTTP POST voor het toevoegen van nieuwe data;
 * HTTP PUT voor het bijwerken van bestaande data;
-* HTTP DELETE om data te verwijderen.
+* HTTP DELETE voor het verwijderne van data.
 
-*Het verschil tussen HTTP POST en HTTP PUT is in de praktijk vaak een grijs gebied,
-omdat het ongeveer hetzelfde resultaat oplevert. Echter, met het oog op de toekomst 
+* HTTP POST en HTTP PUT verschillen in de praktijk niet zoveel van elkaar. 
+In de toekomst kan het onderscheid echter wel van belang zijn.
+
+met het oog op de toekomst 
 wordt aangeraden om het onderscheid wel te hanteren.*
 
 
