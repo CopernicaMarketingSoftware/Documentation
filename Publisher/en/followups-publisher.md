@@ -78,7 +78,6 @@ more information [here](./followups-publisher-stop).
 
 ## Tutorials
 
-* [The White Paper marketing campaign](./followups-publisher-tutorial-white-paper)
 * [Sending an email when a customer has spent over 1000 euros](./followups-publisher-tutorial-email-total)
 * [Count submits and send an email to the Xth submitter](./followups-publisher-tutorial-count-submits)
 * [Send confirmation mails](./followups-publisher-tutorial-confirmation-mail)

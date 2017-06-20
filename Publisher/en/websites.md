@@ -11,7 +11,6 @@ The getting started article covers most things you need to know for creating web
 ### Other topics
 
 - [Create new website](./create-new-website.md)
-- [Create web template](./create-web-template.md)
 - [Create web pages](./create-web-pages.md)
 - [Link a (sub)domain to your website](./link-domain-to-website.md)
 - [Set the website default page, the 404 error page and the login page](./set-the-website-default-page-the-error-page-and-the-login-page.md)
