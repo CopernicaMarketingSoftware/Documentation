@@ -24,4 +24,4 @@ wijzigen:
 ## Meer informatie
 
 * [Enquêtes](./surveys)
-* [Stylesheets](./creating-and-using-your-stylesheets.md)
+* [Stylesheets](./stylesheets.md)

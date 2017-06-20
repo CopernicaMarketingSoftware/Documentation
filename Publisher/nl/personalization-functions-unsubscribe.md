@@ -8,10 +8,8 @@ laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 **{unsubscribe}**.
 
 **Belangrijke noot:** Wanneer je gebruik maakt van de {unsubscribe},
-dien je tevens het
-[uitschrijfgedrag](./setting-unsubscribe-behaviour-for-your-database-or-collection.md) in
+dien je tevens het [uitschrijfgedrag](./database-unsubscribe-behavior) in
 te stellen op de database of collectie waaraan je de e-mailing richt!
-
 
 ## De uitschrijflink toevoegen
 
