@@ -53,6 +53,6 @@ When copying a document, follow-ups are not copied along. 
 
 * [Surveys](./surveys)
 * [Conditions for follow-up actions](./automate-campaigns-with-follow-up-actions.md)
-* [More information on follow-up actions](./conditions-for-follow-ups.md)
+* [More information on follow-up actions](./follow-up-manager-publisher)
 * [Follow-up manager](./follow-up-manager.md)
 

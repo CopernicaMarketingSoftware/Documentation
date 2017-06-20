@@ -3,9 +3,8 @@
 Let op: Deze functionaliteit bestaat (nog) niet in Marketing Suite.
 
 Weet je even niet welke content te plaatsen op je
-[webpagina](./create-and-publish-your-own-web-pages.md "Maak en publiceer je eigen webpagina's")
-of in je
-[e-mailing](./emailings.md "E-mailings")?
+[webpagina](./websites "Maak en publiceer je eigen webpagina's")
+of in je e-mailing?
 Had je al eens gedacht aan een contentfeed? Daarbij heb je zelf in de
 hand welke content op je webpagina of in je e-mailing verschijnt. Met
 Copernica voeg je gemakkelijk een RSS of Atom feed toe aan je
@@ -42,3 +41,8 @@ Of ben je op zoek naar iemand die je kan helpen bij het vormgeven van je
 contentfeed? In Copernica's
 [partnernetwerk](./get-the-most-out-of-the-partner-license.md "Ontdek ons partnernetwerk")
 vind je de geschikte partner die je graag te woord staat.
+
+## Meer informatie
+
+* [Publisher only functies](./publisher-only)
+* [Stylesheets](./stylesheets)
