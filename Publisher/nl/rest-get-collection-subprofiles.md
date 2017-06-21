@@ -13,12 +13,12 @@ collectie waar je de subprofielen van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste profiel dat wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
-* **fields**: optionele parameter om alleen subprofielen op te halen die matchen met de opgegeven velden
-* **orderby**: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
-* **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
+* start: eerste profiel dat wordt opgevraagd
+* limit: lengte van de batch die wordt opgevraagd
+* total: toon wel/niet het totaal aantal beschikbare/matchende profielen
+* fields: optionele parameter om alleen subprofielen op te halen die matchen met de opgegeven velden
+* orderby: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
+* order: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
 
 Meer informatie over de betekenis van de *start*, *limit* en *total* parameters 
 vind je in het [artikel over paging](rest-paging). 

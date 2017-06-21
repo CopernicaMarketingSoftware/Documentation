@@ -25,7 +25,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 - [Overzicht van alle API calls](rest-api)
-- [Alle velden van een collectie opvragen](rest-get-collection-fields)
-- [Nieuw veld in een collectie aanmaken](rest-post-collection-fields)
-- [Veld in een collectie aanpassen](rest-put-collection-fields)
-
+- [GET collection fields](rest-get-collection-fields)
+- [POST collection fields](rest-post-collection-fields)
+- [PUT collection field](rest-put-collection-field)

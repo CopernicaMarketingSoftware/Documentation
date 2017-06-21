@@ -37,4 +37,4 @@ Gebruik de beknopte editor om de volgende code toe te voegen aan de standaard be
 ## Meer informatie
 
 * [Enquêtes overzicht](./surveys)
-* [Gepersonalizeerde bedank pagina](./surveys-personalized-conclude-page)
+* [Gepersonalizeerde bedank pagina](./personalized-survey-conclude-page)
