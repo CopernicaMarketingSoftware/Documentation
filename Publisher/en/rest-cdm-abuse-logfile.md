@@ -20,7 +20,7 @@ respective order:
 
 ## Other logfile names
 
-* [Marketing suite general log](./rest-cdm-attempts-logfiles)
+* [Marketing suite general log](./rest-cdm-attempts-logfile)
 * [Marketing suite click log](./rest-cdm-click-logfile)
 * [Marketing suite delivery log](./rest-cdm-delivery-logfile)
 * [Marketing suite error log](./rest-cdm-error-logfile)

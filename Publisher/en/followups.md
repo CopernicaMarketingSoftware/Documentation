@@ -21,7 +21,7 @@ campaigns with a clear beginning and end.
 
 ## Follow-Up Manager (Publisher)
 
-[Follow-ups in Publisher](./followups-publisher) are always accessible in the menu of the 
+[Follow-ups in Publisher](./publisher-follow-up-manager) are always accessible in the menu of the 
 selected **database**, **document**, **survey** or **web form**. See the 
 link for more information on creating followups in Publisher. The Publisher does not have
 a scripting API and is not as powerful as the new systems, but because it has

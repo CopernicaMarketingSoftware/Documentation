@@ -37,5 +37,6 @@ print_r($api->get("collection/1234/unsubscribe"));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [GET database unsubscribe](rest-get-database-unsunscribe)
+- [GET database unsubscribe](rest-get-database-unsubscribe)

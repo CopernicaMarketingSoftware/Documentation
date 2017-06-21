@@ -1,8 +1,6 @@
 # SOAP API Documentatie
 
-Behalve de bestaande
-[integraties](./integrations.md "Integraties")
-voor verschillende systemen, is het dankzij onze krachtige SOAP API ook
+Behalve de bestaande integraties voor verschillende systemen, is het dankzij onze krachtige SOAP API ook
 mogelijk zelf een integratie met je eigen software te maken.
 Synchroniseer zo de gegevens vanuit Copernica met de gegevens uit jouw
 software. Zo houd je alle gegevens en je marketingcampagnes continu
@@ -63,9 +61,12 @@ Vernieuwd callback-systeem
 --------------------------
 
 Door het synchroniseren van gegevens tussen Copernica en de externe
-applicatie, hoef je niet telkens handmatig nieuwe data te
-[importeren](./import-and-export-data.md "Importeer en exporteer gegevens")
+applicatie, hoef je niet telkens handmatig nieuwe data te [importeren](./database-import)
 in Copernica en vice versa. De beide systemen lopen automatisch
 synchroon. Stel met Copernica gemakkelijk callback URL's in. Hierdoor
 houdt Copernica de externe applicatie op de hoogte van wijzigingen in de
 database of relatieprofielen.
+
+## Meer information
+
+* [REST API](./rest-api)

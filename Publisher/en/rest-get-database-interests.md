@@ -50,4 +50,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 - [Overview of all API calls](rest-api)
 - [POST database interests](rest-post-database-interests)
 - [POST profile interests](rest-post-profile-interests)
-- [DELETE database interest](rest-delete-database-interest)

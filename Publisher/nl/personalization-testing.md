@@ -4,7 +4,6 @@ Als je bezig bent met het ontwikkelen van een gepersonaliseerde mailing, dan
 wil je vaak even een *sneak preview* zien om te controleren of de personalisatie 
 wel uitpakt zoals je dat hebt bedoeld. Voor dit doel is er een *standaardbestemming*.
 
-
 ## De bewerkmodus instellen
 
 Onderaan een document, naast de button voor de 
@@ -59,3 +58,7 @@ ook een tabblad om de standaardbestemming in te stellen.
 De standaardbestemming is gekoppeld aan je persoonlijke login. Een collega
 die toegang heeft tot hetzelfde account zou een heel andere standaardbestemming
 kunnen hebben.
+
+## Meer informatie
+
+* [Personalization](./personalizing-your-newsletter-in-the-publisher)

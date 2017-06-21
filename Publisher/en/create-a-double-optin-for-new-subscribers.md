@@ -55,7 +55,7 @@ and a field for the email address of the profile.
 
 Your database needs at least a field containing the profile's email and 
 a newsletter preference field. Please note that there is a special type 
-for the [e-mail field](./database-and-collection-field-types.md) that 
+for the [e-mail field](./database-fields-and-collections) that 
 should be user in order for our system to recognize it.
 
 The field for newsletter preference should contain at least the following 
@@ -136,4 +136,4 @@ You should then send your emails only to the selection you have created.
 * [Selections/Collections](./selections-introduction)
 * [Tutorial: Make a birthday selection](./how-to-create-a-birthday-selection)
 * [Tutorial: Create a newsletter selection](./create-a-mailing-list)
-* [Tutorial: Automatically process email bounces](./automatically-process-email-bounces)
+* [Tutorial: Automatically process email bounces](./automatically-process-bounces)

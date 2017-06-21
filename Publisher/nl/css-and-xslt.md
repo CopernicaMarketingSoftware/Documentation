@@ -137,4 +137,4 @@ zoals in het voorbeeld hieronder.
 ## Meer informatie
 
 * [Publisher exclusieve functies](./publisher-only)
-* [Stylesheets beheren](./manage-css-stylesheet-files)
+* [Stylesheets beheren](./stylesheets)
