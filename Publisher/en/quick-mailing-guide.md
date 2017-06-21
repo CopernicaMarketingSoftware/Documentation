@@ -11,7 +11,8 @@ declare information about the point in time and tags you want to
 send along with your emails. Subsequently, you set the receivers 
 for your mailing by pointing to a database or selection. Lastly, 
 you can also automate your mailing with a little help from the 
-[Follow-up Manager](follow-up-manager).
+[Follow-up Manager](follow-up-manager). This tool is extremely
+powerful and is there to help you create automated campagins.
 
 
 ## More information

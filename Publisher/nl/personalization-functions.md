@@ -1,4 +1,4 @@
-# Personalizatie functies
+# Personalisatie functies
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er
 hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende 

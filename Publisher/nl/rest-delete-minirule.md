@@ -1,6 +1,6 @@
 # REST API: DELETE minirule
 
-Een miniregel kan verwijdered worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
+Een minirule kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
@@ -28,7 +28,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## More information
 
 * [Overzicht van alle API calls](rest-api)
-* [Verwijderen van een database](rest-delete-database)
-* [Creeeren van een minirule](rest-get-minirule)
-* [Een minirule aanpassen](rest-put-minirule)
-
+* [DELETE database field](rest-delete-database-field)
+* [GET minirule](rest-get-minirule)
+* [PUT minirule](rest-put-minirule)

@@ -50,11 +50,11 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $parameters = array(
-    'limit'     =>  100
+    'limit'     =>  100,
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("database/1234/collections", $parameters));
+print_r($api->get("database/id/collections", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
