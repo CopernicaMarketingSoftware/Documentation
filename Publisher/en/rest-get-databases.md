@@ -54,4 +54,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 - [Overview of all API methods](rest-api)
 - [GET database](rest-get-database)
-- [POST database](rest-post-database)
+- [PUT database](rest-put-database)

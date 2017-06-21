@@ -2,7 +2,7 @@
 
 For every document and template you can configure the personalization settings.
 With these settings you contol the language that is used for displaying 
-[dates](./using-the-smarty-date-function.md). You can find the personalization
+dates. You can find the personalization
 settings on the left of your screen under every opened template or document.
 
 ![](../images/personalisatieinstellingen.png)
@@ -18,14 +18,12 @@ to the template settings. The following four things can be set:
 
 ## Language and timezone
 
-In the article about [displaying dates and times](./using-the-smarty-date-function.md)
-this is being discussed too: you can use the special |date_format modifier for
+You can use the special |date_format modifier for
 showing dates or times. This modifier converts a timestamp in computer notation
 into a format understandable for humans. The language that is used for 
 converting the dates (because every language uses its own month and weekday names),
 and displaying the times (because *now* is a different time in Moscow than in
 San Francisco) can be set with the personalization settings.
-
 
 ## Character set
 
@@ -62,10 +60,8 @@ use the personalization settings to do this automatically. If you enable the
 HTML filtering option, all personalization variables are automatically 
 repaired, and you do not have to explicitly |escape them.
 
-
 ## Edit mode
 
 When you're working on a document, you'll find a edit mode button right next
-to the personaization settings. This is a useful button when you're
-[testing personalization code](./personalization-testing.md).
-
+to the personalization settings. This is a useful button when you're
+testing personalization code.

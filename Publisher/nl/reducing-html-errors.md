@@ -14,7 +14,7 @@ oplossen hiervan.
 
 Sommige HTML errors worden pas zichtbaar wanneer het document is gepersonalizeerd.
 Als je klikt op *Voorbeeldweergave* kun je de gepersonalizeerde weergave
-aanzetten. Je kunt deze dan checken met de [test ontvanger](./what-is-the-test-destination.md).
+aanzetten. Je kunt deze dan checken met de test ontvanger.
 
 ![](../images/htmlerrors.png)
 

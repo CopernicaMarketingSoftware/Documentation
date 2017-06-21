@@ -17,7 +17,6 @@ vier settings veranderen:
 * codering: de wijze waarop "rare" tekens worden gecodeerd
 * html filteren: moeten personalisatievariabelen automatisch worden gefilterd?
 
-
 ## Taal en tijdzone
 
 In het artikel over het [weergeven van datums en tijden](./using-the-smarty-date-function.md)
@@ -28,7 +27,6 @@ taal en tijdzone settings worden hierbij gebruikt om te bepalen in welke taal
 een datum wordt getoond (elke taal heeft immers andere namen voor de maanden en
 de dagen), en welke tijdzone moet worden gebruikt (*nu* in Tokyo is iets anders
 dan *nu* in New York).
-
 
 ## Codering
 
@@ -49,7 +47,6 @@ De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter
 wereld bevat. Dit omvat de gewone toetsenbordtekens, maar ook de "rare" tekens
 uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
-
 ## HTML filteren
 
 Zoals we [al eerder schreven](./personalization.md), is het escapen
@@ -69,10 +66,12 @@ voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisc
 doen. Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
 hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
 
-
 ## Bewerkmodus
 
 Als je een document bewerkt, zit naast het menu met de personalisatieopties 
 een button om de bewerkmodus in te stellen. Deze knop is handig bij het
 [testen van de personalisatie](./personalization-testing.md).
 
+## Meer informatie
+
+* [Personalization](./personalizing-your-newsletter-in-the-publisher)

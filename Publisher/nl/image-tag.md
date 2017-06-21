@@ -14,7 +14,6 @@ gekoppeld aan de juiste image tags, zelfs als je later de template wijzigt
 en de volgorde van de tags verandert. Elke afbeelding binnen de template moet
 een unieke naam hebben.
 
-
 ## Formaat
 
 De afbeelding die op documentniveau door de gebruiker wordt ingevoerd, wordt
@@ -59,7 +58,6 @@ geen &lt;img&gt; tag in het uiteindelijke document staan.
 
 `[image name="example" optional="yes"]`
 
-
 ## Inleidende en afsluitende HTML code
 
 Als op documentniveau een afbeelding wordt geüpload, dan wordt in het document 
@@ -72,3 +70,8 @@ hebt gezet:
 Met bovenstaande code zorg je er voor dat er altijd een &lt;div&gt; element 
 rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 
+## Meer informatie
+
+* [Templates](./templates)
+* [Text tag](./text-tag)
+* [Loop tag](./loop-tag)

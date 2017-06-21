@@ -19,4 +19,4 @@ your customers on their birthday!
 * [Selection conditions](./selections-conditions)
 * [Tutorial: Create a double opt-in for new subscribers](./create-a-double-optin-for-new-subscribers)
 * [Tutorial: Create a newsletter selection](./create-a-mailing-list)
-* [Tutorial: Automatically process email bounces](./automatically-process-email-bounces)
+* [Tutorial: Automatically process email bounces](./automatically-process-bounces)

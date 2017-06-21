@@ -88,4 +88,3 @@ should be pre-entered if known.
 ## More information
 
 * [Limit the number of submits](./limit-the-number-of-times-a-web-form-can-be-submitted)
-* [Personalized hyperlinks](./personalizing-hyperlinks)
