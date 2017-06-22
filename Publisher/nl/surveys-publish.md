@@ -4,7 +4,7 @@ Je kunt alleen surveys publiceren op webpages aangemaakt onder **Websites**.
 Om te publiceren op een van je websites kun je volgende speciale tag 
 gebruiken:
 
-`[survey name='surveyname']`
+`{survey name='surveyname'}`
 
 Dit is een survey met aangepaste XSLT. XSLT wordt gebruikt om XML om te 
 zetten in een document dat herkent wordt door je browser, zoals HTML.
