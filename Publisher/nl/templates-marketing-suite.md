@@ -1,4 +1,4 @@
-# Werken met templates binnen de Marketing Suite
+# Templates: Marketing Suite
 
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
 namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai 
@@ -39,16 +39,20 @@ wat er is veranderd op het moment dat het scherm werd afgesloten.
 
 Templates die worden aangemaakt (en gebruikt) met de drag-and-drop editor zijn
 automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk 
-JSON bestanden. Door onze geavanceerde [Responsive Email](www.responsiveemail.com)
+JSON bestanden. Door onze geavanceerde [Responsive Email](http://www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
 
 ## Spam check
 
-Het is ook mogelijk om, voordat je de e-mails versuurt, na te gaan of je e-mail
+Het is ook mogelijk om, voordat je de e-mails verstuurt, na te gaan of je e-mail
 daadwerkelijk in de inbox van de ontvanger belandt. Je kunt dit doen door op
 het `tools` knopje te drukken en vervolgens naar de `spam check` te navigeren.
 Aan de hand van een aantal checks wordt nagegaan hoe spamgevoelig je e-mail is.
 Hoewel e-mailclients binnenkomende e-mails verschillende waarderen van elkaar,
 is het handig om wellicht toch de verbeteringen door te voeren.
+
+## Meer informatie
+
+* [Templates](./templates)
