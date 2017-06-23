@@ -20,7 +20,8 @@ GIFs can be used to add a short animation, scene cut from a video or slideshow
 to your email without worrying about external hosting. You can use to 
 display different colors or styles of your product, for example. 
 GIFs are an older format, so it is generally well-supported. 
-They are supported in every client except Outlook and Windows Phone 7. 
+They are supported in every client except Outlook and Windows Phone 7, 
+which only show the first frame.
 
 Tips for using GIFs:
 
