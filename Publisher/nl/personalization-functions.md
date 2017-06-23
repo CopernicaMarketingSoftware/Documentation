@@ -49,6 +49,8 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{linkpdf}](./personalization-functions-linkpdf)                      | linken naar een PDF bestand                                                  |
 | [{loadfeed}](./personalization-functions-loadfeed)                    | inladen van een externe RSS feed                                             |
 | [{loadfile}](./personalization-functions-loadfile)                    | inladen van een bestand                                                      |
+| [{loadprofile}](./personalization-functions-loadprofile)              | inladen van een andere database                                              |
+| [{loadsubprofile}](./personalization-functions-loadsubprofile)        | inladen van een subprofiel                                                   |
 | [{mailonly}](./personalization-functions-mailonly)                    | blok markeren dat alleen in de mailversie wordt getoond                      |
 | [{math}](./personalization-functions-math)                            | berekening uitvoeren                                                         |
 | [{rawcapture}](./personalization-functions-rawcapture)                | als {capture}, maar dan zonder html escaping                                 |
