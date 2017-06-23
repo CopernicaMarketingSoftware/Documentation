@@ -3,6 +3,7 @@
     * [Sender domains instellen](./quick-sender-domain-guide.md)
     * [Database inrichten](./quick-database-guide.md)
     * [Je eerste mailing](./quick-mailing-guide.md)
+    * [Begrippenlijst](./definitions)
 * [Databasebeheer](./database-introduction.md)
     * [Velden en collecties](./database-fields-and-collections.md)
     * [Restricties](./database-restrictions-and-capabilities.md)
