@@ -3,6 +3,7 @@
     * [Setting up a sender domain](./quick-sender-domain-guide.md)
     * [Setting up a database](./quick-database-guide.md)
     * [Your first mailing](./quick-mailing-guide.md)
+    * [Glossary](./definitions)
 * [Database management](./database-introduction.md)
     * [Fields and collections](./database-fields-and-collections.md)
     * [Restrictions](./database-restrictions-and-capabilities.md)
