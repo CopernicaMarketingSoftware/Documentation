@@ -60,7 +60,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](./rest-api.md)
-* [GET view rule](./get-view-rule)
+* [GET view rule](./rest-get-view-rule)
 * [GET rule](./rest-get-rule)
 
 

@@ -5,7 +5,7 @@ is visible to every commercial mail. Copernica offers different options
 for adding such an unsubscribe link, of which the **{unsubscribe}** is 
 the easiest.
 
-Note: When using this function you should have set the [unsubscribe behaviour](./database-unsubscribe-behaviour) 
+Note: When using this function you should have set the [unsubscribe behaviour](./database-unsubscribe-behavior) 
 already.
 
 ## Adding the unsubscribe link

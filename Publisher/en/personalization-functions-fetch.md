@@ -27,7 +27,7 @@ Or you can put them in a variable to apply your own divs.
       <div id="weather">{$weather}</div>
     {/if}
 
-Please note that this example also uses the [if function](./personalize-functions-if).    
+Please note that this example also uses the [if function](./personalization-functions-if).    
 You can also download from an FTP server. This example also nicely demonstrates 
 how to use variables in the link.
 
@@ -37,4 +37,4 @@ how to use variables in the link.
 
 * [Personalization](./personalization)
 * [Personalization functions](./personalization-functions)
-* [if function](./personalize-functions-if)
+* [if function](./personalization-functions-if)

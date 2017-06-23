@@ -1,6 +1,14 @@
 # Websites in Copernica
 
-You can easily create your own website in Copernica. You need to publish your web forms and surveys to a website. Your website can be linked to a subdomain under your company website address, so that visitors do not see that the website is hosted by Copernica.
+In the Copernica Publisher it is made easy to create and host your own 
+webpage. You can use these pages to inform your customers or place webforms 
+and surveys to get to know your customers. You can use a [template](./templates) 
+for your website and edit the source code with ease. It's also possible 
+to use [personalization](./personalization) if your users are logged in.
+
+You can also link the website to a subdomain of your own website. This 
+prevents users from seeing your website is hosted by Copernica and makes 
+it look more trustworthy and professional in general.
 
 ### Getting started with Websites in Copernica
 

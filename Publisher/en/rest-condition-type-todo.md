@@ -74,4 +74,4 @@ print_r($result);
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
-* [Condition type lastcontact](rest-condition-lastcontact)
+* [Condition type lastcontact](rest-condition-type-lastcontact)

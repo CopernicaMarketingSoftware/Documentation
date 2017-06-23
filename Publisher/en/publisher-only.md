@@ -10,6 +10,6 @@ for Publisher at the moment:
 * [Mobile mailings](./mobile-mailing)
 * [Surveys](./surveys)
 * [Websites](./websites)
-* [Webforms](./web-forms)
+* [Webforms](./webforms)
 * [CSS and XSLT](./css-and-xslt)
 * [RSS and ATOM feeds](./rss-and-atom-feeds)

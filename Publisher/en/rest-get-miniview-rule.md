@@ -75,4 +75,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [POST miniview rules](./rest-post-miniview-rules.md)
 * [PUT minirule](./rest-put-minirule.md)
 * [DELETE minirule](./rest-delete-minirule.md)
-* [POST minirule condition](./rest-post-minirule-condition.md)
+* [POST minirule conditions](./rest-post-minirule-conditions.md)
