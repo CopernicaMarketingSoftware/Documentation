@@ -53,7 +53,7 @@ only work on Copernica hosted pages.
 
 ## Creating pages
 
-First you have to create a new template and a new website in the `Website` 
+First you have to create a new template and a new website in the `Websites` 
 menu. You will edit the HTML source code to create the template for the 
 webpage. There are several types of content blocks that you should add 
 to the template such that you can fill them in later. The table below 
