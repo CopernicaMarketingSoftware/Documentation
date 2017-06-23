@@ -64,7 +64,7 @@ between text and images, as it may affect your [spam score](./some-tips-to-lower
 |---------------|-------------------------------------------------------------------|------------------------------------------|
 | Text          | [text name="TEXTBLOCKNAME"]                                       | Add textual content to your email        |
 | Image         | [image name="IMAGEBLOCKNAME"]                                     | Add images to your email                 |
-| Loop          | [loop name="LOOPNAME"]Source code that should be repeated[/loop]  | Repeat image, text and other loop blocks |
+| Loop          | [loop name="LOOPNAME"]code to repeat[/loop]                       | Repeat image, text and other loop blocks |
 | Survey        | {survey name="name of the survey"}                                | Include survey made under `Content`      |
 | Webform       | {webform name="name of the form"}                                 | Include webform made under `Content`     |
 
