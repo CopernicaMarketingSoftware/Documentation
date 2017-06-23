@@ -45,5 +45,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van een lijst van collecties](rest-get-databases-collections)
-* [Verwijderen van een collectie](rest-delete-collection)
+* [GET collecties in database](rest-get-database-collections)

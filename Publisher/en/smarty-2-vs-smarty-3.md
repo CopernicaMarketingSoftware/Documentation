@@ -9,6 +9,8 @@ In 2011 we upgraded the template engine from version 2 to version 3. The
 syntax of personalization code used created in smarty 3 is slightly
 different.
 
+There are a few small things to pay attention to:
+
 -   Personalization used in existing templates based on Smarty 2 will
     remain valid after the release (backwards compatible).
 -   When creating a new template, you can still choose to use Smarty
@@ -17,8 +19,8 @@ different.
 -   Smarty 3 has a slightly different syntax in some places. You may run
     into personalization errors when copying a Smarty 2 template to a
     Smarty 3 template (most of them are easily fixed).
--   Personalization used in web forms and personalization in follow up
-    actions will still use the Smarty 2 engine, even if they are
+-   Personalization used in [webforms](./webforms) and personalization in 
+    [follow-up actions](./followups) will still use the Smarty 2 engine, even if they are
     affiliated with a Smarty 3 document or template.
 -   If you are not sure about the smarty version used in your template
     or document, you can find out by (temporarily) placing the code
@@ -33,8 +35,8 @@ Smarty insignia, such as {} surrounded by trailing spaces are no longer
 recognized as Smarty tags. For instance { abc } will be ignored and
 treated like a normal accolade, as opposed to {abc} which will still be
 treated as a Smarty variable. In templates rendered with Smarty 3, it is
-no longer necessary to use {ldelim} and {rdelim} to escape the curly
-braces.
+no longer necessary to use [{ldelim} and {rdelim}](./personalization-functions-delim) 
+to escape the curly braces.
 
 ### Creating variables is done quicker and easier
 
@@ -62,7 +64,7 @@ or in our article on [personalization functions](./personalization-functions.md)
 
 ### The syntax is more strict
 
-Adding multiple parameters to a smarty 3 function requires you to
+Adding multiple parameters to a Smarty 3 function requires you to
 surround the parameter with quotes, especially when spaces or colons are
 used in the pararmeter. Example:
 
