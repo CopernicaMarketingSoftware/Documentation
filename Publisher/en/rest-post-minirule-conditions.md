@@ -58,6 +58,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [GET minirules](./rest-get-minirules)
 * [GET minirule](./rest-get-minirule)
-* [POST minirule](./rest-post-minirule)
+* [PUT minirule](./rest-put-minirule)

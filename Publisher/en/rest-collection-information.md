@@ -1,3 +1,5 @@
+# REST Collection information
+
 Databases in Copernica can be extended with additional collections of
 data.
 
@@ -75,5 +77,5 @@ similar to the example below.
     token](./register-your-app-on-copernica-com.md)
 -   [PHP example scripts for POST, GET and DELETE
     requests](./example-get-post-and-delete-requests.md)
--   [REST API resources / methods](./the-copernica-rest-api.md)
+-   [REST API overview](./rest-api)
 

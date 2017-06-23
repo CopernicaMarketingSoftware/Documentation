@@ -23,10 +23,11 @@ $api = new CopernicaRestApi("your-access-token");
 $api->delete("database/1234");
 ```
 
-The example above requires the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](./rest-php).
 
 ## More information
 
-* [Overview of all API calls](rest-api)
-* [POST database](rest-post-database)
-* [DELETE profile](rest-delete-profile)
+* [Overview of all API calls](./rest-api)
+* [POST databases](./rest-post-databases)
+* [PUT database](./rest-put-database)
+* [DELETE profile](./rest-delete-profile)

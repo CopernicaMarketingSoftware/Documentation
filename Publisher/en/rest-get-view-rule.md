@@ -76,4 +76,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [POST view rule](./rest-post-view-rules.md)
 * [PUT rule](./rest-put-rule.md)
 * [DELETE rule](./rest-delete-rule.md)
-* [PUT rule condition](./rest-put-rule-conditions.md)
+* [PUT rule condition](./rest-post-rule-conditions.md)
