@@ -21,6 +21,11 @@ It is wise to add a text version of your mail as well. This will decrease
 your spam score and is a courtesy to users who want to have their mails 
 displayed as plain text.
 
+Videos and GIFs are also a very useful way to grab your users attention, 
+but are not always supported by all clients. See the 
+[article on videos and GIFs](./templates-video-gif) for tips on how 
+to use videos and GIFs and making them look beautiful in every email client.
+
 ## Personalizing your template
 
 Templates can be personalized with Smarty functions, modifiers and 

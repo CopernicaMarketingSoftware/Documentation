@@ -5,7 +5,6 @@ Let op dat de manier waarop met templates wordt gewerkt totaal
 verschillend is binnen deze twee omgevingen. In de kopjes hieronder
 kun je navigeren naar de tool in kwestie om te lezen wat het verschil precies inhoudt.
 
-
 ## Marketing Suite
 
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
@@ -31,7 +30,6 @@ template editor in de Marketing Suite, kun je hier terecht:
 
 * [Werken met templates binnen de Marketing Suite](templates-marketing-suite)
 
-
 ## Publisher
 
 De Publisher hanteert, zoals eerder is aangegeven, een andere manier om 
@@ -45,3 +43,16 @@ documentatie over het werken met templates, in de oude Publisher omgeving,
 kun je hier terecht:
 
 * [Werken met templates binnen de Publisher](templates-publisher)
+
+## Videos en GIFs
+
+Videos en GIFs zijn een goede manier om de aandacht van je gebruikers te 
+trekken, maar worden niet altijd goed ondersteund door alle email clients. 
+Zie het [artikel over videos en GIFs](./templates-video-gif) voor tips 
+om deze er mooi uit te laten zien in elke email client.
+
+## Meer informatie
+
+* [Personalizatie](./personalization)
+* [Scripting en follow-ups](./followups)
+* [Videos en GIFs](./templates-video-gif)
