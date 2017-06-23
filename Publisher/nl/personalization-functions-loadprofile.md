@@ -1,4 +1,4 @@
-Personalizatie functions: loadprofile
+# Personalizatie functions: loadprofile
 
 Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de `<body>` tag in je broncode.
 
@@ -18,7 +18,8 @@ Je kan hiermee bijvoorbeeld een document personaliseren met het telefoonnummer v
 {loadprofile source="Offices" Area="$Area" assign="office"}
 {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$offices.id"}
 Beste {$FirstName},
-U bent aangesloten bij ons regiokantoor in {$office.City}. U kunt dit kantoor direct bereiken door te bellen met {$office.Phone}.
+U bent aangesloten bij ons regiokantoor in {$office.City}. 
+U kunt dit kantoor direct bereiken door te bellen met {$office.Phone}.
 Voor vragen kan je altijd contact met mij opnemen.
 Met vriendelijke groet,
 {$account.Firstname} {$account.Lastname}, uw accountmanager
@@ -36,4 +37,5 @@ Voor vragen kan je altijd contact met mij opnemen.
 Met vriendelijke groet,
 
 Jerome Greenheart, uw accountmanager
+
 j.greenheart@example.com
