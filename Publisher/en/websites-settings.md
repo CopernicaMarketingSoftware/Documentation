@@ -1,7 +1,7 @@
 # Websites: settings
 
 For each website you can specify different settings for the storing of 
-session cookies (time-out) and https secure access.
+session cookies (time-out) and HTTPS secure access.
 
 ## Time-out settings
 
@@ -42,7 +42,8 @@ to associate with social media websites, for example.
 
 Please follow the following steps to use HTTPS with your own domain:
 
-1. Apply for a SSL certificate of any type if you do not have one yet.
+1. Apply for a SSL certificate of any type if you do not have one yet. You 
+can find any company providing these on Google.
 2. Request a dedicated IP adress at Copernica if you do not have one yet. 
 You can request the adress with our Support team (support@copernica.com) for a small monthly fee.
 3. Hand in the SSL certificate to our Support team along with its private key, 
@@ -55,3 +56,4 @@ to use HTTPS.
 ## More information
 
 * [Websites](./websites)
+* [Setting access](./websites#restricting-access)

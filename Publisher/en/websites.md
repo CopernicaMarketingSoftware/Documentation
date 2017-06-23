@@ -4,7 +4,9 @@ In the Copernica Publisher it is made easy to create and host your own
 webpage using HTML. You can use these pages to inform your customers or place webforms 
 and surveys to get to know your customers. You can use a [template](./templates) 
 for your website and edit the source code with ease. It's also possible 
-to use [personalization](./personalization) (only) if your users are logged in.
+to use [personalization](./personalization) (only) if your users are logged in. 
+We will explain how to automatically log users in through your emails later 
+in this article.
 
 You can also link the website to a subdomain of your own website. This 
 prevents users from seeing your website is hosted by Copernica and makes 
@@ -14,7 +16,7 @@ NOTE: Building a website with Copernica required HTML knowledge. If you
 do not have HTML knowledge you may use our default template, import one 
 from the internet or let a Copernica partner create one for you.
 
-Contents:
+Article contents:
 
 * [Getting started](./websites#getting-started)
 * [Creating pages](./websites#creating-pages)
@@ -33,11 +35,11 @@ website is the collective of webpages.
 
 The template is the blueprint of your website that determines what it 
 should look like and how it should be structured. Since it only 
-determines the style you can use such a template for the whole website 
+determines the style and structure you can use such a template for the whole website 
 to give it a uniform look, but it's also possible to use multiple 
 templates for your website. After creating a template you can start 
 adding content such as text, image and loop blocks to create the webpage. 
-They can also be personalized.
+They can also be [personalized](./personalization).
 
 Some important points:
 * A website contains webpages, which are like documents.
@@ -62,7 +64,7 @@ between text and images, as it may affect your [spam score](./some-tips-to-lower
 
 | Content block | Example                                                           | Use                                      |
 |---------------|-------------------------------------------------------------------|------------------------------------------|
-| Text          | [text name="TEXTBLOCKNAME"]                                       | Add textual content to your email        |
+| Text          | [text name="TEXTBLOCKNAME"]                                       | Add textual content to your webpage      |
 | Image         | [image name="IMAGEBLOCKNAME"]                                     | Add images to your email                 |
 | Loop          | [loop name="LOOPNAME"]code to repeat[/loop]                       | Repeat image, text and other loop blocks |
 | Survey        | {survey name="name of the survey"}                                | Include survey made under `Content`      |
@@ -127,7 +129,7 @@ webpage.
 * *Error page*: Where the user is sent if they are sent to a non-existing 
 page.
 * *Login page*: The page that is displayed when a user needs to login 
-to continue.
+to continue. Place a login form here.
 
 ## Restricting access
 
@@ -139,4 +141,3 @@ can also (temporarily) deactivate a webpage.
 
 - [Statistics](./statistics)
 - [Website settings](./websites-settings)
-- [Website personalization settings/issues](./websites-settings-personalization)
