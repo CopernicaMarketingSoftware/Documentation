@@ -12,7 +12,7 @@ and drop editor for marketing specialists.
 
 ## Follow-Up Manager (Marketing Suite)
 
-Within the flowchart editor you can chain boxes together to create 
+Within the [flowchart editor](./follow-up-manager-ms) you can chain boxes together to create 
 advanced follow up- and marketing campaigns. In some boxes you can add 
 extra functionality with the use of JavaScript. The available properties 
 are the same as those of the script editor and can be [found here](./followups-scripting.md). 
@@ -39,8 +39,8 @@ own scripts.
 
 ## More information
 
-* [Follow-Up Manager Marketing Suite](./follow-up-manager.md)
-* [Follow-Up Manager Publisher](./publisher-follow-up-manager.md)
+* [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
+* [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
 * [Followups scripting](./followups-scripting.md)
 
 
