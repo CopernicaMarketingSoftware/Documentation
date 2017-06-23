@@ -63,9 +63,8 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api.md)
-* [Vraag alle selectie regels op](./rest-get-view-rules.md)
-* [Voeg selectie regel toe](./rest-post-view-rules.md)
-* [Pas selectie regel aan](./rest-put-rule.md)
-* [Verwijder selectie regel](./rest-delete-rule.md)
-* [Pas een conditie aan](./rest-put-condition.md)
-* [Verwijder een conditie](./rest-delete-condition.md)
+* [GET view regels](./rest-get-view-rules.md)
+* [POST view regels](./rest-post-view-rules.md)
+* [PUT rule](./rest-put-rule.md)
+* [DELETE regel](./rest-delete-rule.md)
+* [POST regel condities](./rest-post-rule-conditions.md)

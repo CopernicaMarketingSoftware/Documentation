@@ -48,6 +48,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [Aanpassen veld in de database](rest-put-database-field)
-- [Aanpassen veld van een profiel](rest-put-profile-field)
+- [PUT database veld](rest-put-database-field)
 

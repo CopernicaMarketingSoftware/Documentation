@@ -84,7 +84,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profiel ID's](rest-get-collection-profileids)
-* [Subprofiel toevoegen aan een collectie](rest-post-collection-subprofiles)
-* [Subprofiel bijwerken](rest-put-subprofile-fields)
+* [Opvragen van profiel ID's](rest-get-collection-subprofileids)
 * [Subprofiel verwijderen](rest-delete-subprofile)

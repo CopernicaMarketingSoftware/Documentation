@@ -11,7 +11,8 @@ maar wel HTML en de uitgebreide editor.
 ![Editing the conclude page](../images/editconcludepage.png)
 
 Code om te personalizeren wordt hier niet ondersteund, maar je kunt wel 
-doorverwijzen naar je eigen pagina. Zie de pagina over [gepersonalizeerde bedank pagina](./surveys-personalized-conclude-page)
+doorverwijzen naar je eigen pagina. Je kunt vervolgens deze pagina personalizeren 
+zoals je bij elke andere website zou doen.
 
 ## Personalizeren met profiel informatie
 

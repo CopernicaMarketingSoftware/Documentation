@@ -28,7 +28,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](rest-api)
-* [Verwijder een database](rest-delete-database)
-* [Een regel aanmaken](rest-get-rule)
-* [Een regel aanpassen](rest-put-rule)
+* [GET regel](rest-get-rule)
+* [PUT regel](rest-put-rule)
 

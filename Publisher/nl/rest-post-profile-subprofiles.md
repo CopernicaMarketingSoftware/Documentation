@@ -10,7 +10,6 @@ waaraan je een subprofiel wil toevoegen en `$collectionID` moet vervangen worden
 met de identifier van de collectie waarin je het subprofiel wil toevoegen.
 De inhoud van het subprofiel kun je in de message body plaatsen.
 
-
 ## Body data
 
 Het subprofile kan de volgende eigenschappen hebben:
@@ -21,7 +20,6 @@ Het subprofile kan de volgende eigenschappen hebben:
 - collection:       id van de collectie waar het subprofile bij hoort;
 - created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
 - modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
-
 
 ## Voorbeeld in PHP
 
@@ -47,11 +45,10 @@ $api->post("profile/id/subprofiles/321", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Interesses van een profiel overschrijven](rest-put-subprofile-interests)
-* [Opvragen van profieldata](rest-get-subprofile)
-* [Alle profiel bijwerken](rest-put-subprofile)
-* [Profiel verwijderen](rest-delete-subprofile)
+* [PUT profiel interesses](rest-put-profile-interests)
+* [GET subprofiel](rest-get-subprofile)
+* [PUT subprofiel](rest-post-profile-subprofiles)
+* [DELETE subprofiel](rest-delete-subprofile)

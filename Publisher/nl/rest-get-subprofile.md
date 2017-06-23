@@ -45,7 +45,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profiel ID's](rest-get-database-subprofileids)
-* [Profiel toevoegen aan een database](rest-post-profile-subprofiles)
-* [Profiel bijwerken](rest-put-subprofile-fields)
-* [Profiel verwijderen](rest-delete-subprofile)
+* [GET collectie subprofiel identifiers](rest-get-collection-subprofileids)
+* [POST profiel subprofielen](rest-post-profile-subprofiles)
+* [DELETE subprofiel](rest-delete-subprofile)
