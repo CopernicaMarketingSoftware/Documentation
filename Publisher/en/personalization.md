@@ -67,7 +67,7 @@ There are two very simple ways to prevent this: enable the auto-escaping
 feature in the [small form with personalization settings](./personalization-settings.md), 
 or use the Smarty *escape modifier*.
 
-Smarty contains an extremely useful function called the [escape modifier](./personalization-modifiers-escape). 
+Smarty contains an extremely useful function called the [escape modifier](./personalization-modifiers#escape). 
 Every variable that you use in a mailing or website should be passed
 through this modifier if auto-escaping is not enabled to neutralize 
 possibly harmful HTML code that was entered by users:
