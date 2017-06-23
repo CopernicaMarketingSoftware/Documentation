@@ -25,8 +25,8 @@ was exchanged, even if someone does manage to get their hands on the information
 HTTPS is often used where privacy-sensitive information such as name, adress, 
 date of birth, social security numbers etc. are exchanged.
 
-Copernica offers three options for HTTPS access: Accept *HTTP only*, *HTTPS 
-only* or *both*. If you handle sensitive information please consider using HTTPS only. 
+Copernica offers the option to force HTTPS connection. 
+If you handle sensitive information please consider using HTTPS. 
 Your website visitor will be redirected if SSL connection is required and 
 the user requests the site using HTTP. If you are using your own domain name 
 there are some extra steps you should follow for using SSL.
