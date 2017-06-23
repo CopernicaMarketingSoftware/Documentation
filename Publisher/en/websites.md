@@ -4,7 +4,7 @@ In the Copernica Publisher it is made easy to create and host your own
 webpage using HTML. You can use these pages to inform your customers or place webforms 
 and surveys to get to know your customers. You can use a [template](./templates) 
 for your website and edit the source code with ease. It's also possible 
-to use [personalization](./personalization) if your users are logged in.
+to use [personalization](./personalization) (only) if your users are logged in.
 
 You can also link the website to a subdomain of your own website. This 
 prevents users from seeing your website is hosted by Copernica and makes 
@@ -138,7 +138,5 @@ can also (temporarily) deactivate a webpage.
 ## More information
 
 - [Statistics](./statistics)
-- [Website session time-out and HTTPS secure access settings](./website-session-time-out-and-https-secure-access-settings.md)
-- [Linking from an emailing to a personalized landing page](./linking-to-your-website-from-an-emailing.md)
-- [Website personalization settings (language, timezone, character encoding)](./document-and-template-personalization-settings.md)
-- [Website not displayed personalized? ](./website-not-displayed-personalized.md)
+- [Website settings](./websites-settings)
+- [Website personalization settings/issues](./websites-settings-personalization)
