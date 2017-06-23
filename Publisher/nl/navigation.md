@@ -17,6 +17,7 @@
     * [Personaliseren](./personalization.md)
     * [Follow-up Manager](./follow-up-manager.md)
     * [Data-scripts](./followups-scripting.md)
+    * [Video's en GIFs](./templates-video-gif)
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)
     * [Statistieken exporteren](./statistics-export)
