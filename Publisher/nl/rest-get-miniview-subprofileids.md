@@ -41,4 +41,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Subprofielen inclusief alle subprofieldata opvragen](rest-get-view-subprofiles)
+* [GET miniview subprofielen](rest-get-miniview-subprofiles)
