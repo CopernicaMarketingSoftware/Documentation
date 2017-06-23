@@ -1,4 +1,4 @@
-# Websites in Copernica
+# Websites in Publisher
 
 In the Copernica Publisher it is made easy to create and host your own 
 webpage using HTML. You can use these pages to inform your customers or place webforms 
