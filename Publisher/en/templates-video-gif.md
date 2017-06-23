@@ -16,13 +16,24 @@ start playing the video immediately when the user clicks the link.
 
 ## GIFs
 
-GIFs can be used to add a short animation to your email without worrying 
-about external hosting. You can use to display different colors or styles 
-of your product, for example. GIFs are an older format, so email clients 
-have had some time to adapt. They are supported in every client except 
-Outlook and Windows Phone 7. Outlook and Windows Phone 7 will only show 
-the first frame of your GIF, so you can still use them, but keep in mind 
-that this is the only information the users of these clients will receive.
+GIFs can be used to add a short animation, scene cut from a video or slideshow 
+to your email without worrying about external hosting. You can use to 
+display different colors or styles of your product, for example. 
+GIFs are an older format, so it is generally well-supported. 
+They are supported in every client except Outlook and Windows Phone 7. 
+
+Tips for using GIFs:
+
+* Use them sparingly! You want to surprise your user, not annoy them 
+with too much happening before their eyes.
+* Make sure the first frame is interesting and informative. Outlook and 
+Windows Phone 7 users will only see this frame, so use it wisely.
+* Don't make your GIFs too large; This might make them slow and eat up a 
+lot of your users data.
+* Cropping as much as possible and removing unnecessary frames will make 
+your GIF smaller. If you are experienced in Photoshop you can reduce file 
+size further by using layers for the animated parts of the GIF, preventing 
+the image from redrawing for each frame.
 
 ## Animated link to your video
 
