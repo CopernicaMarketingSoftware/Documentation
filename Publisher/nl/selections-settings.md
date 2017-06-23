@@ -64,5 +64,5 @@ ze dus beter verwijderen als performance je doel is.
 ### Meer informatie
 
 * [Selecties en miniselecties](./selections-introduction)
-* [Optimaliseren van selecties](selections-optimalization)
+* [Optimaliseren van selecties](selections-optimization)
 * [Regels en condities](selections-conditions)

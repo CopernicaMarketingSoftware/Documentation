@@ -50,5 +50,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van een lijst van databases](rest-get-databases)
-* [DELETE database](rest-delete-database)
+* [GET databases](rest-get-databases)

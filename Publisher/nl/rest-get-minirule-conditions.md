@@ -59,5 +59,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](./rest-api)
-* [Vraag regels op](./rest-get-minirules)
-* [Vraag regel op bij ID](./rest-get-minirule)
+* [GET minirule](./rest-get-minirule)

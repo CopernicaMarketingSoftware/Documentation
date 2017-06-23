@@ -37,7 +37,7 @@ eigen smaak. Omdat de standaard sheet veel commentaar bevat is het snel
 duidelijk hoe je dit kunt doen. Een stylesheet is nooit gelinkt aan een 
 web formulier maar aan de template of webpagina waar deze binnen valt. 
 
-Lees ook het artikel over het [beheren van CSS stylesheet files](./manage-css-stylesheet-files.md)
+Lees ook het artikel over het [beheren van CSS stylesheet files](./stylesheets.md)
 
 ### Stylesheets gebruiken
 

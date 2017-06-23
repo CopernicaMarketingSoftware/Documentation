@@ -51,5 +51,4 @@ Dit voorbeeld vereist de [REST API class](./rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](./rest-api)
-* [Get rules](./rest-get-rules)
-* [Get rules voor specifieke ID](./rest-get-rule)
+* [GET rule](./rest-get-rule)

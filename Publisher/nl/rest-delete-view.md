@@ -28,7 +28,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](rest-api)
-* [Verwijder een database](rest-delete-database)
-* [Vraag alle profielen in selectie op](rest-get-view-profiles)
-* [Profiel verwijderen](rest-delete-profile)
+* [GET view profielen](rest-get-view-profiles)
+* [DELETE profiel](rest-delete-profile)
 

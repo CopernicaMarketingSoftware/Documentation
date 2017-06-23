@@ -19,7 +19,7 @@ bevatten de volgende informatie.
 
 ## Andere logfiles
 
-* [Marketing suite algemeen log](./rest-cdm-attempts-logfiles)
+* [Marketing suite algemeen log](./rest-cdm-attempt-logfiles)
 * [Marketing suite misbruik log](./rest-cdm-abuse-logfile)
 * [Marketing suite click log](./rest-cdm-click-logfile)
 * [Marketing suite ontvangst log](./rest-cdm-delivery-logfile)

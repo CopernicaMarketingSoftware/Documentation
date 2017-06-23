@@ -57,6 +57,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Interesse toevoegen aan een database](rest-post-database-interests)
-* [Interesse bijwerken](rest-post-database-interest)
-* [Interesse verwijderen](rest-delete-database-interest)
+* [POST database interesses](rest-post-database-interests)

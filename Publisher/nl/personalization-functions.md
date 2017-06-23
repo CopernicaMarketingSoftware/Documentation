@@ -55,7 +55,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{strip}](./personalization-functions-strip)                          | witruimte verwijderen                                                        |
 | [{survey}](./personalization-functions-survey)                        | inladen van een enquête                                                      |
 | [{rdelim}](./personalization-functions-delim)                         | rechteraccolade                                                              |
-| [{textformat}](./personalization-functions-textform)                  | tekst formatteren                                                            |
+| [{textformat}](./personalization-functions-textformat)                | tekst formatteren                                                            |
 | [{unsubscribe}](./personalization-functions-unsubscribe)              | afmeldlink                                                                   |
 | [{webform}](./personalization-functions-webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |

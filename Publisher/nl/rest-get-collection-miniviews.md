@@ -58,5 +58,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Miniselectie toevoegen aan collectie](rest-post-collection-views)
-* [Selectieregels opvragen](rest-get-miniview-rules)
+* [POST collectie miniviews](rest-post-collection-miniviews)
+* [GET miniview regels](rest-get-miniview-rules)

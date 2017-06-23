@@ -28,13 +28,18 @@ Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSO
 - **description**: omschrijving van een regel
 - **view**: ID van de selectie waar de regel toe behoort
 - **conditions**: array met condities voor de regel
-- **inversed**: boolean waarde om aan te geven of de regel moet worden geinverteerd. Als deze op "True" staat zijn alle resultaten profielen die *niet* aan de condities voldoen
-- **disabled**: boolean waarde om aan te geven of de regel uitgeschakeld moet zijn of niet
+- **inversed**: boolean waarde om aan te geven of de regel moet worden 
+geinverteerd. Als deze op "True" staat zijn alle resultaten profielen 
+die *niet* aan de condities voldoen
+- **disabled**: boolean waarde om aan te geven of de regel 
+uitgeschakeld moet zijn of niet
 
 
 ## Voorbeeld
 
-Het volgende script kan worden gebruikt om regels op te vragen uit een selectie. Omdat de CopernicaRestAPI zelf speciale tekens vervangt hoef je dit alleen zelf te doen als je zelf code schrijf om de URL op te stellen.
+Het volgende script kan worden gebruikt om regels op te vragen uit een 
+selectie. Omdat de CopernicaRestAPI zelf speciale tekens vervangt hoef 
+je dit alleen zelf te doen als je zelf code schrijf om de URL op te stellen.
 
 ```php
     // dependencies
@@ -58,5 +63,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [GET view rule](./get-view-rule)
+- [GET view rule](./rest-get-view-rules)
 - [GET rule](./rest-get-rule)

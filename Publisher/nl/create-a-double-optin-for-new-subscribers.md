@@ -67,7 +67,7 @@ e-mailadres in op te slaan en een veld om de nieuwsbriefvoorkeur van de
 abonnee op te slaan.
 
 Het veld voor e-mailadres dient uiteraard een veld van het type
-[e-mailveld](./database-and-collection-field-types.md)
+[e-mailveld](./database-fields-and-collections)
 te zijn (zodat het systeem weet dat dit veld de adressen bevat).
 
 Van het veld voor nieuwbriefvoorkeur maak je een meerkeuzeveld met de
