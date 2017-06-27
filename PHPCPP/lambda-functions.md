@@ -48,7 +48,7 @@ Php::Value objects.
 /**
  *  Native function that is callable from PHP
  *
- *  This function gets one parameter that holds a callable anonynous
+ *  This function gets one parameter that holds a callable anonymous
  *  PHP function.
  *
  *  @param  params      The parameters passed to the function
