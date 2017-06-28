@@ -12,7 +12,6 @@ volgende adres:
 
 Als `$id` moet je de numerieke identifier van een collectie opgeven.
 
-
 ## Geretourneerde velden
 
 * **behavior**: De daadwerkelijke instelling.
@@ -47,9 +46,8 @@ print_r($api->get("collection/1234/unsubscribe"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Afmeldalgoritme instellen](rest-put-collection-unsubscribe)
+* [PUT collection unsubscribe](rest-put-collection-unsubscribe)
 

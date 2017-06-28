@@ -10,8 +10,10 @@ database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
 kun je in de body van het HTTP request plaatsen. 
 Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
-Zorg ervoor dat je hier een POST request stuurt en geen PUT request. Hoewel deze vaak niet verschillen zou je in dit geval een methode aanroepen om meerdere profielen te bewerken, zie [meerdere profielen te bewerken](rest-put-database-profiles).
-
+Zorg ervoor dat je hier een POST request stuurt en geen PUT request. 
+Hoewel deze vaak niet verschillen zou je in dit geval een methode 
+aanroepen om meerdere profielen te bewerken, zie 
+[meerdere profielen bewerken](rest-put-database-profiles).
 
 ## Beschikbare parameters
 
@@ -24,7 +26,6 @@ velden van het aan te maken profiel. De volgende informatie kan meegegeven worde
 - secret:           de "geheime" code die aan een profiel gelinkt is;
 - created:          tijdstip waarop het profiel werd gemaakt, YYYY-MM-DD hh:mm:ss formaat;
 - modified:         tijdstip waarop het profiel laatst werd aangepast, YYYY-MM-DD hh:mm:ss formaat.
-
 
 ## Voorbeeld in PHP
 
@@ -49,7 +50,6 @@ $api->post("database/1234/profiles", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

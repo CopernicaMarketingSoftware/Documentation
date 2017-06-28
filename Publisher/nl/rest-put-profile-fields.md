@@ -9,7 +9,6 @@ De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 
-
 ## Body data
 
 De nieuwe veldwaardes moet je als body data aan je request meegeven. Deze
@@ -20,7 +19,6 @@ als *keys* de veldnamen en als *values* de veldwaardes versturen.
 Als je gebruik maakt van een traditioneel x-www-form-urlencoded formaat, dan
 moeten de variabelen de namen van de te wijzigen velden bevatten, en de 
 waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
-
 
 ## Voorbeeld
 
@@ -47,10 +45,9 @@ $api->put("profile/1234/fields", array(), $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profieldata](rest-get-profile)
-* [Alle profiel bijwerken](rest-put-profile)
-* [Profiel verwijderen](rest-delete-profile)
+* [GET profile](rest-get-profile)
+* [PUT profile](rest-put-profile)
+* [DELETE profile](rest-delete-profile)

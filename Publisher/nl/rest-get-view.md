@@ -6,11 +6,9 @@ Een methode om de metadata van een database op te vragen. De methode kan aangero
 
 Hier moet de `$id` vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
 
-
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
-
 
 ## Geretourneerde velden
 
@@ -40,9 +38,8 @@ print_r($api->get("view/1234"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle REST API methods](./rest-api)
-* [Vraag selectie regels op](./rest-get-view-rules)
+* [GET view rules](./rest-get-view-rules)
 

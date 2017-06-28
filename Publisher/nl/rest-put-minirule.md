@@ -8,7 +8,6 @@ verzoek verstuurd worden naar de volgende URL:
 
 De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen in de message body geplaatst worden:
@@ -18,7 +17,6 @@ De volgende parameters kunnen in de message body geplaatst worden:
 - conditions: 	array van condities voor de regel;
 - inversed: 	boolean waarde die aangeeft of de regel geinverteerd moet worden of niet. Als deze op "True" staat worden alleen profielen die *niet* aan de condities voldoen teruggegeven;
 - disabled: 	boolean waarde om aan te geven of de regel uitgeschakeld moet worden of niet.
-
 
 ## Voorbeeld in PHP
 
@@ -41,7 +39,6 @@ print_r($api->put("minirule/1234", array(), $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie 
 

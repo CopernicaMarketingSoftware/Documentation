@@ -48,7 +48,7 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-api)
-* [Vraag namen van logfiles op](rest-get-logfiles-names)
-* [Downloaden van een logfile in JSON formaat](./rest-get-logfiles-json.md)
-* [Downloaden van een logfile in XML formaat](./rest-get-logfiles-xml.md)
+* [Overzicht van alle API calls](./rest-api.md)
+* [GET logfiles names](./rest-get-logfiles-names.md)
+* [GET logfiles JSON](rest-get-logfiles-json)
+* [GET logfiles XML](rest-get-logfiles-xml)

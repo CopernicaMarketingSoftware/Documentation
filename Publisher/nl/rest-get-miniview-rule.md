@@ -6,7 +6,6 @@ Selecties gebruiken regels om te bepalen welke profielen zij bevatten. Profielen
 
 De eerste `$id` moet vervangen worden met de numerieke identifier van de miniview waarvan je een regel wil opvragen. De tweede `$id` moet de ID van de regel zijn.
 
-
 ## De teruggegeven velden
 
 Deze methode geeft een JSON minirule object terug. Deze bevat de volgende eigenschappen:
@@ -41,7 +40,6 @@ De precieze eigenschappen hangen af van het type van de voorwaarde. Voor een ove
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -58,7 +56,6 @@ print_r($api->get("miniview/1234/minirule/12"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

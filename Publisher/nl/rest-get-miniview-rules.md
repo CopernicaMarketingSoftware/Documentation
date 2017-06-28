@@ -6,7 +6,6 @@ Een miniview is voor een collectie wat een view/selectie is voor een database. O
 
 De `$id` moet vervangen worden door de id van de selectie van een collectie waarvoor je de regels op wilt vragen.
 
-
 ## Ondersteunde parameters
 
 Je kunt een of meerdere van de volgende parameters aan de URL toevoegen:
@@ -18,7 +17,6 @@ Je kunt een of meerdere van de volgende parameters aan de URL toevoegen:
 Je kunt meer informatie vinden over de *start*, *limit* en *total* parameters 
 in ons [artikel over paging](./rest-paging.md). 
 
-
 ## Teruggegeven eigenschappen
 
 Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSON object met de volgende eigenschappen:
@@ -29,7 +27,6 @@ Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSO
 - disabled:	  waarde om aan te geven of de regel niet (1) / wel (0) geactiveerd is;
 - inversed:	  waarde die aangeeft of de regel een inverse is. Als deze variabele waar is worden profielen teruggegeven als ze de regel niet *matchen*;
 - conditions: array van voorwaarden voor de regel.
-
 
 ## Voorbeeld in PHP
 
@@ -55,7 +52,6 @@ print_r($api->get("view/id/rules", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

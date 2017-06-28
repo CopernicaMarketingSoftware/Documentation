@@ -56,5 +56,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api)
-* [Opvragen van profieldata](./rest-get-subprofile)
-* [Profiel verwijderen](./rest-delete-subprofile)
+* [GET subprofile](./rest-get-subprofile)
+* [DELETE profile](./rest-delete-subprofile)

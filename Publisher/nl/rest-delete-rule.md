@@ -24,7 +24,6 @@ $api->delete("rule/id");
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](rest-api)

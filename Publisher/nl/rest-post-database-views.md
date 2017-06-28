@@ -14,7 +14,6 @@ moet als message body aan het HTTP request worden
 toegevoegd. Bij een succesvolle call wordt de ID van het aangemaakte 
 verzoek teruggegeven.
 
-
 ## Beschikbare parameters
 
 De volgende variabele moet in de body van de HTTP 
@@ -61,7 +60,6 @@ $api->post("database/id/views", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

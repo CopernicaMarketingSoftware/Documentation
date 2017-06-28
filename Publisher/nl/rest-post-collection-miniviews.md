@@ -10,7 +10,6 @@ collectie waar je een selectie aan wilt toevoegen. De naam van de selectie moet
 als message body aan het HTTP request worden toegevoegd. Bij een succesvolle 
 call wordt de ID van het aangemaakte verzoek teruggegeven.
 
-
 ## Beschikbare parameters
 
 De volgende variabele moet in de body van de HTTP POST call worden geplaatst.
@@ -19,7 +18,6 @@ De volgende variabele moet in de body van de HTTP POST call worden geplaatst.
 - **description**: Beschrijving van de nieuwe selectie
 - **parent-type**: Geeft aan of de selectie onder een onder selectie of de database is geplaatst
 - **parent-id**: ID van de selectie/database waar de selectie onder valt
-
 
 ## Voorbeeld
 
@@ -46,7 +44,6 @@ $api->post("collection/id/miniviews", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

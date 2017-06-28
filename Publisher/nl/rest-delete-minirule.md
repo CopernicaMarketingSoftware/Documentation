@@ -24,8 +24,7 @@ $api->delete("minirule/id");
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
-## More information
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
 * [DELETE database field](rest-delete-database-field)

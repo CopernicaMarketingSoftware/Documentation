@@ -39,7 +39,6 @@ $api->post("database/id/views", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

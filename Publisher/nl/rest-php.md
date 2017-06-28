@@ -183,3 +183,7 @@ $result = $api->get("databases");
 // print the result
 print_r($result);
 ```
+
+## Meer informatie
+
+* [REST API](./rest-api)

@@ -11,7 +11,6 @@ volgende adres:
 
 Als `$id` kun je de ID of de naam van een database opgeven.
 
-
 ## Geretourneerde velden
 
 * behavior: de daadwerkelijke instelling;
@@ -28,7 +27,6 @@ De "update" instelling geeft aan dat profielen weliswaar in de database blijven
 staan en dus niet worden verwijderd, maar dat ze wel worden aangepast. De 
 teruggegeven "fields" setting bevat een object met de nieuwe profielwaardes. 
 Zo kun je de data bewaren.
-
 
 ## Voorbeeld in PHP
 
@@ -47,8 +45,7 @@ print_r($api->get("database/id/unsubscribe"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [PUT unsubscribe behavior](rest-put-database-unsubscribe)
+* [PUT database unsubscribe](rest-put-database-unsubscribe)

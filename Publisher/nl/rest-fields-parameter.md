@@ -76,9 +76,9 @@ dan automatisch.
 
 De *fields* parameter kun je gebruiken bij de volgende API methodes:
 
-* [Opvragen van profielen uit een database](rest-get-database-profiles)
-* [Opvragen van profielen uit een selectie](rest-get-view-profiles)
-* [Opvragen van subprofielen uit een collectie](rest-get-collection-subprofiles)
-* [Opvragen van subprofielen uit een miniselectie](rest-get-miniview-subprofiles)
-* [Meerdere profielen bewerken in een database](rest-put-database-profiles)
+* [GET database profiles](rest-get-database-profiles)
+* [GET view profiles](rest-get-view-profiles)
+* [GET collection subprofiles](rest-get-collection-subprofiles)
+* [GET miniview subprofiles](rest-get-miniview-subprofiles)
+* [PUT database profiles](rest-put-database-profiles)
 

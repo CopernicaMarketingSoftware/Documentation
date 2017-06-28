@@ -67,10 +67,9 @@ $api->post("collection/1234/fields", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Alle velden van een collectie opvragen](rest-get-collection-fields)
-* [Veld bijwerken](rest-put-collection-field)
-* [Veld verwijderen](rest-delete-collection-field)
+* [GET collection fields](rest-get-collection-fields)
+* [PUT collection field](rest-put-collection-field)
+* [DELETE collection field](rest-delete-collection-field)

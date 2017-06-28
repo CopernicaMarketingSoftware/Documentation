@@ -55,4 +55,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [Unsubscribe instellingen van collectie opvragen](rest-get-collection-unsubscribe)
+- [GET collection unsubscribe](rest-get-collection-unsubscribe)

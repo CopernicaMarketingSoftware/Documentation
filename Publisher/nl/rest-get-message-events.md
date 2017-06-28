@@ -9,14 +9,12 @@ HTTP GET call naar de volgende URL:
 De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben. 
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
 - **end**: de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
-
 
 ## Start en end
 
@@ -58,7 +56,6 @@ ziet er als volgt uit:
 De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -80,7 +77,6 @@ print_r($api->get("message/1sadf323/events", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

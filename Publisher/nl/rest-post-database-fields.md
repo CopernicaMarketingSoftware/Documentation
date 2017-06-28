@@ -41,7 +41,6 @@ Een veld kan de volgende types hebben:
 * big: groot        tekstveld;
 * foreign_key:      numerieke waarde met verwijzing naar ander profile.
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -66,7 +65,6 @@ $api->post("database/id/fields", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 
