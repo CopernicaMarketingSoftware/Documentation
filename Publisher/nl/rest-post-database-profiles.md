@@ -7,7 +7,8 @@ naar de volgende URL.
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
-kun je in de body van het HTTP request plaatsen.
+kun je in de body van het HTTP request plaatsen. 
+Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 Zorg ervoor dat je hier een POST request stuurt en geen PUT request. Hoewel deze vaak niet verschillen zou je in dit geval een methode aanroepen om meerdere profielen te bewerken, zie [meerdere profielen te bewerken](rest-put-database-profiles).
 
@@ -43,7 +44,8 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("database/1234/profiles", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

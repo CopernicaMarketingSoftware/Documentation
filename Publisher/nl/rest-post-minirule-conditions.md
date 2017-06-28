@@ -4,8 +4,8 @@ Een methode om condities voor een miniregel aan te passen. Deze methode onderste
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
-
+De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen. 
+Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Beschikbare parameters
 
@@ -31,30 +31,29 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica_rest_api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// parameters to pass to the call
+// data voor het verzoek
 $data = array(
 	'type' = 'date'
 )
 
-// do the call, and print result
+// voer het verzoek uit
 $api->post("minirule/id/conditions", array(), $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

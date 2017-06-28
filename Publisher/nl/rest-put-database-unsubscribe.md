@@ -14,17 +14,23 @@ De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet
 je in de body van het HTTP request plaatsen.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen moeten in de body van het HTTP PUT commando worden
 geplaatst:
 
-* **behavior**: de nieuwe instelling van het afmeldgedrag. Ondersteunde waardes zijn "nothing", "remove" en "update". 
-* **fields**: optioneel associatief array / object met daarin de nieuwe veldwaardes
+* **behavior**: de nieuwe instelling van het afmeldgedrag. Ondersteunde 
+waardes zijn "nothing", "remove" en "update". 
+* **fields**: optioneel associatief array / object met daarin de nieuwe 
+veldwaardes
 
-De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij 'remove' wordt het profiel uit de database verwijderd en bij 'update' wordt het profiel geupdate om aan te geven dat deze klant geen email meer wil ontvangen. Op deze manier blijft de klant wel in de database staan. De "fields" instelling geeft nieuwe veldwaardes in het geval dat het profiel geupdate wordt. In de andere gevallen heeft deze parameter dus geen nut.
-
+De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. Bij 
+'nothing' wordt het verzoek van de gebruiker genegeerd, bij 'remove' 
+wordt het profiel uit de database verwijderd en bij 'update' wordt het 
+profiel geupdate om aan te geven dat deze klant geen email meer wil 
+ontvangen. Op deze manier blijft de klant wel in de database staan. De 
+"fields" instelling geeft nieuwe veldwaardes in het geval dat het profiel 
+geupdate wordt. In de andere gevallen heeft deze parameter dus geen nut.
 
 ## Voorbeeld in PHP
 
@@ -51,9 +57,7 @@ api->put("database/1234", array(), $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van afmeldalgoritme](rest-get-database-unsubscribe)
-
+* [GET database unsubscribe](rest-get-database-unsubscribe)

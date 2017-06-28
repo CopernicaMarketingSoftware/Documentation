@@ -8,7 +8,8 @@ kun je een HTTP POST request sturen naar de volgende URL:
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waaraan je een subprofiel wil toevoegen en `$collectionID` moet vervangen worden
 met de identifier van de collectie waarin je het subprofiel wil toevoegen.
-De inhoud van het subprofiel kun je in de message body plaatsen.
+De inhoud van het subprofiel kun je in de message body plaatsen. Bij een 
+succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Body data
 
@@ -40,7 +41,8 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("profile/id/subprofiles/321", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

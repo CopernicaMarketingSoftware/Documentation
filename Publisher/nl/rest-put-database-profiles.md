@@ -14,7 +14,6 @@ de meeste API methodes precies hetzelfde werken of je nou HTTP POST of PUT
 gebruikt, geldt dit niet voor deze methode. HTTP PUT is vereist. Als je toch
 een POST zou sturen, dan [maak je een nieuw profiel aan](rest-post-database-profiles). 
 
-
 ## Beschikbare parameters
 
 Bij deze methodes zijn er twee verplichte manieren om data mee te geven: via de URL en als body van het HTTP request. Over de body vindt je meer onder het kopje body data. Aan de URL kun je de volgende parameters toevoegen:
@@ -38,7 +37,6 @@ als er veel matchende profielen zijn. Als je niet zo lang op een API
 call wilt wachten, kun je de parameter *async* op 1 zetten. De API retourneert
 dan onmiddellijk, terwijl de operatie in de achtergrond wordt voortgezet.
 
-
 ## Body data
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
@@ -46,40 +44,38 @@ PUT request toevoegen. In de body van het request plaats je de velden die je
 wilt bijwerken, met de bijbehorende data. Deze body data wordt ook gebruikt
 als de *create* parameter op true staat en een profiel wordt aangemaakt.
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call wordt een profiel met ID 4567 aangepast.
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica_rest_api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// parameters to select profiles
+// parameters voor het verzoek
 $parameters = array(
     'fields'    =>  array("customerid==4567"),
     'async'     =>  1,
     'create'    =>  0
 );
 
-// data to pass to the call
+// data voor het verzoek
 $data = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
 );
 
-// do the call
+// voer het verzoek uit
 $api->put("database/1234/profiles", $parameters, $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-   
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

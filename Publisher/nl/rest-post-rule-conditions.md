@@ -5,8 +5,9 @@ Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de rule waaraan je de condition wilt toevoegen.
-
+De `$id` moet hier vervangen worden door de ID van de rule waaraan je de 
+condition wilt toevoegen. Bij een succesvolle call wordt de ID van het 
+aangemaakte verzoek teruggegeven.
 
 ## Verschillende type conditions
 
@@ -31,7 +32,6 @@ precies lezen wat iedere condition inhoudt door erop te klikken:
 - [Part condition](./rest-condition-type-part.md)
 - [ReferView condition](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -50,11 +50,11 @@ $data = array(
 
 // voer het verzoek uit en print het resultaat
 $api->post("rule/id/conditions", array(), $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 
