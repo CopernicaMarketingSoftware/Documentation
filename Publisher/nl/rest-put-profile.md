@@ -6,7 +6,6 @@ Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. 
 
 De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen in de message body van het HTTP PUT command worden geplaatst:
@@ -14,7 +13,6 @@ De volgende parameters kunnen in de message body van het HTTP PUT command worden
 - **fields**: Velden die het profiel bevat en hun waarden
 - **interests**: Interesses van het profiel
 - **secret**: De geheime code die gelinkt is aan het profiel
-
 
 ## Voorbeeld
 
@@ -49,11 +47,10 @@ print_r($api->put("profile/1234", array(), $data));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle REST API methodes](./rest-api)
-* [Het aanmaken van een profiel](./rest-put-profile)
-* [Het aanpassen van de velden van een profiel](./rest-put-profile-fields)
-* [Het aanpassen van de interesses van een profiel](./rest-put-profile-interests)
+* [PUT profile](./rest-put-profile)
+* [PUT profile fields](./rest-put-profile-fields)
+* [PUT profile interests](./rest-put-profile-interests)
 

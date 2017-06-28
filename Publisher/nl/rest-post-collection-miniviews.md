@@ -7,7 +7,8 @@ naar de volgende URL. De selectie wordt dan direct onder de collectie aangemaakt
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 collectie waar je een selectie aan wilt toevoegen. De naam van de selectie moet
-als message body aan het HTTP request worden toegevoegd.
+als message body aan het HTTP request worden toegevoegd. Bij een succesvolle 
+call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 
 ## Beschikbare parameters
@@ -40,7 +41,8 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("collection/id/miniviews", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

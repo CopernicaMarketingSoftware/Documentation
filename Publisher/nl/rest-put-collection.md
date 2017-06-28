@@ -8,7 +8,6 @@ kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.
 
-
 ## Beschikbare parameters
 
 De volgende variabele kan in de body van het HTTP PUT commando worden
@@ -17,7 +16,6 @@ geplaatst:
 * **name**: de optionele nieuwe naam van de collectie
 * **database**: de ID van de database waar de collectie in staat
 * **fields**: velden in de collectie
-
 
 ## Voorbeeld in PHP
 
@@ -41,8 +39,7 @@ api->put("collection/1234", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET collecties in database](rest-get-database-collections)
+* [GET database collections](rest-get-database-collections)

@@ -35,18 +35,18 @@ Dit zijn precies dezelfde velden die ook worden ondersteund door de
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica-rest-api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data to be sent to the api
+// data voor het verzoek
 $data = array(
     'name'          =>  'new-field-name'
 );
 
-// do the call
+// voer het verzoek uit
 api->put("database/1234/field/456", $data);
 ```
 

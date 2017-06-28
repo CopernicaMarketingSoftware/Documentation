@@ -5,6 +5,8 @@ naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
+Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+
 
 ## Beschikbare parameters
 
@@ -32,6 +34,8 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("databases", $data);
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

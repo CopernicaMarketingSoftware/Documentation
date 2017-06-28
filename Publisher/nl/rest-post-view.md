@@ -16,7 +16,6 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 - name:                     naam van de regel. Deze moet uniek zijn binnen de regelnamen in de selectie en is verplicht;
 - description:				korte omschrijving van de view.
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden:
@@ -36,7 +35,6 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("database/id/views", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
