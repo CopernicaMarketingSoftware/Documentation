@@ -66,27 +66,27 @@ voorbeelden zien van hoe je de blokken gebruikt. Vergeet niet de ratio
 tussen tekst en afbeeldingen in de gaten te houden; Deze kan invloed hebben 
 op je [spam score](./some-tips-to-lower-your-email-spam-score).
 
-| Content blok  | Voorbeeld                                          | Gebruik                                           |
-|---------------|----------------------------------------------------|---------------------------------------------------|
-| Text          | [text name="tekstblok naam"]                       | Voeg tekst toe aan de webpagina                   |
-| Image         | [image name="afbeeldingblok naam"]                 | Voeg afbeeldingen toe aan de webpagina            |
-| Loop          | [loop name="loop naam"]code om te herhalen[/loop]  | Herhaal afbeeldingen, tekst en andere loop blocks |
-| Survey        | {survey name="enquête naam"}                       | Voeg enquête gemaakt in `Content` toe             |
-| Webform       | {webform name="webformulier naam"}                 | Voeg webformulier gemaakt in `Content` toe        |
+| Content blok           | Voorbeeld                                          | Gebruik                                           |
+|------------------------|----------------------------------------------------|---------------------------------------------------|
+| [Text](./text-tag)     | [text name="tekstblok naam"]                       | Voeg tekst toe aan de webpagina                   |
+| [Image](./image-tag)   | [image name="afbeeldingblok naam"]                 | Voeg afbeeldingen toe aan de webpagina            |
+| [Loop](./loop-tag)     | [loop name="loop naam"]code om te herhalen[/loop]  | Herhaal afbeeldingen, tekst en andere loop blocks |
+| [Survey](./surveys)    | {survey name="enquête naam"}                       | Voeg enquête gemaakt in `Content` toe             |
+| [Webform](./webforms)  | {webform name="webformulier naam"}                 | Voeg webformulier gemaakt in `Content` toe        |
 
 Media kan beheerd worden onder de *Media bibliotheek* onder het kopje 
 `Content`. Je kunt afbeeldingen uit de media bibliotheek gebruiken met 
 <img src="afbeelding.png"\>.
 
-Het loop blok kan heel handig zijn als je nog niet weet hoeveel afbeeldingen 
+Het [loop blok](./loop-tag) kan heel handig zijn als je nog niet weet hoeveel afbeeldingen 
 je wil gebruiken, of als niet alle pagina's even veel afbeeldingen gebruiken. 
 Je kunt met het loop blok kiezen hoeveel afbeeldingen je in wil voegen tijdens 
 het aanmaken van de webpagina, zonder de HTML te moeten aanpassen.
 
-Je kunt als alternatief ook een enquête of webformulier toevoegen met de 
-*Speciale content toevoegen* knop in het scherm waar je de inhoud van een 
-tekstblok aanpast. Dit zal je tekstblok vervangen door de enquête of het 
-webformulier.
+Je kunt als alternatief ook een [enquête](./surveys) of 
+[webformulier](./webforms) toevoegen met de *Speciale content toevoegen* 
+knop in het scherm waar je de inhoud van een tekstblok aanpast. Dit zal 
+je tekstblok vervangen door de enquête of het webformulier.
 
 Als je de template hebt aangemaakt kun je simpelweg een webpagina aanmaken 
 en de content toevoegen.

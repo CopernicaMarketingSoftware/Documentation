@@ -62,24 +62,25 @@ to the template such that you can fill them in later. The table below
 shows examples on how to use the blocks. Be sure to consider the ratio 
 between text and images, as it may affect your [spam score](./some-tips-to-lower-your-email-spam-score).
 
-| Content block | Example                                                           | Use                                      |
-|---------------|-------------------------------------------------------------------|------------------------------------------|
-| Text          | [text name="TEXTBLOCKNAME"]                                       | Add textual content to your webpage      |
-| Image         | [image name="IMAGEBLOCKNAME"]                                     | Add images to your email                 |
-| Loop          | [loop name="LOOPNAME"]code to repeat[/loop]                       | Repeat image, text and other loop blocks |
-| Survey        | {survey name="name of the survey"}                                | Include survey made under `Content`      |
-| Webform       | {webform name="name of the form"}                                 | Include webform made under `Content`     |
+| Content block         | Example                                                           | Use                                      |
+|-----------------------|-------------------------------------------------------------------|------------------------------------------|
+| [Text](./text-tag)    | [text name="TEXTBLOCKNAME"]                                       | Add textual content to your webpage      |
+| [Image](./image-tag)  | [image name="IMAGEBLOCKNAME"]                                     | Add images to your email                 |
+| [Loop](./loop-tag)    | [loop name="LOOPNAME"]code to repeat[/loop]                       | Repeat image, text and other loop blocks |
+| [Survey](./surveys)   | {survey name="name of the survey"}                                | Include survey made under `Content`      |
+| [Webform](./webforms) | {webform name="name of the form"}                                 | Include webform made under `Content`     |
 
 Media is managed under the *Media Library* in `Content`. You can use 
 images from the media library with <img src="image.png"\>.
 
-The loop block is very useful when you don't know how many images you will use, 
+The [loop block](./loop-tag) is very useful when you don't know how many images you will use, 
 or if not every webpage uses the same amount of images. You may then choose 
 how many images to use while creating the webpage without changing the HTML.
 
-You can also add a survey or webform by using the *Include special content* 
-function in the screen to edit the contents of a text block. This will 
-replace the text block with a survey or webform block.
+You can also add a [survey](./surveys) or [webform](./webform) by using 
+the *Include special content* function in the screen to edit the 
+contents of a text block. This will replace the text block with a survey 
+or webform block.
 
 When you have created the template you can simply create a webpage and edit 
 its content.
