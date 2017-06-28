@@ -140,3 +140,8 @@ naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;,
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
 een afbeelding, via dit dialoogvenster koppelen.
 
+## Meer informatie
+
+* [Templates](./templates)
+* [Templates in Marketing Suite](./templates-marketing-suite)
+
