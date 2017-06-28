@@ -61,7 +61,6 @@ ziet er als volgt uit:
 De `event` property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagina](./event-types.md).
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -83,7 +82,6 @@ print_r($api->get("profile/1234/events"), $parameters);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

@@ -6,7 +6,6 @@ Dit is een methode om de eigenschappen van een bestaande regel aan te passen. Om
 
 De `$id` moet hier vervangen worden door de ID van de regel waarvan je de eigenschappen aan wilt passen.
 
-
 ## Beschikbare parameters
 
 De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT command:
@@ -17,7 +16,6 @@ De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT
 - **conditions**: 		array van condities van de regel
 - **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geinverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: 		boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
-
 
 ## Voorbeeld
 
@@ -41,7 +39,6 @@ print_r($api->put("database/id", array(), $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

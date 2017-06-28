@@ -8,7 +8,6 @@ methode die toegankelijk is via het volgende adres:
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de selectie die je wilt bewerken.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
@@ -21,7 +20,6 @@ geplaatst:
 - **has-children**: boolean waarde om aan te geven of er selecties onder deze selectie vallen
 - **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren
 - **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet
-
 
 ## Voorbeeld
 
@@ -45,9 +43,8 @@ api->put("view/1234", $parameters, $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van een lijst van selecties in een databases](rest-get-database-views)
-* [Verwijderen van een selectie](rest-delete-view)
+* [GET database views](rest-get-database-views)
+* [DELETE view](rest-delete-view)

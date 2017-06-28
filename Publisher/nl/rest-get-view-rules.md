@@ -6,7 +6,6 @@ Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen 
 
 De `$id` moet hier vervangen worden door de ID van de selectie waar je de regels van op wilt vragen.
 
-
 ## Ondersteunde parameters
 
 Je kunt een of meer van de volgende parameters toevoegen aan de URL:
@@ -17,7 +16,6 @@ Je kunt een of meer van de volgende parameters toevoegen aan de URL:
 
 Je kan meer informatie vinden over de *start*, *limit* en *total* parameters 
 in ons [artikel over paging](./rest-paging.md).
-
 
 ## Teruggegeven velden
 
@@ -34,7 +32,6 @@ die *niet* aan de condities voldoen
 - **disabled**: boolean waarde om aan te geven of de regel 
 uitgeschakeld moet zijn of niet
 
-
 ## Voorbeeld
 
 Het volgende script kan worden gebruikt om regels op te vragen uit een 
@@ -42,24 +39,23 @@ selectie. Omdat de CopernicaRestAPI zelf speciale tekens vervangt hoef
 je dit alleen zelf te doen als je zelf code schrijf om de URL op te stellen.
 
 ```php
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // parameters to pass to the call
+    // data voor het verzoek
     $parameters = array(
         'limit'     =>  100,
     );
     
-    // do the call, and print result
+    // voer het verzoek uit en print het resultaat
     print_r($api->get("view/1234/rules", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-    
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)

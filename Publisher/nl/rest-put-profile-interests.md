@@ -9,7 +9,6 @@ De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel
 kun je in de body van het bericht plaatsen.
 
-
 ## Body data
 
 Je kunt op twee manieren body data aan dit request meesturen, en de wijze waarop
@@ -23,7 +22,6 @@ Je kunt ook een object sturen als body data. De keys van het object zijn dan
 de interessenamen, en de velden boolean waardes om te bepalen of de interesse
 aan of uit wordt geschakeld. Eventuele interesses die je _niet_ in het object
 opneemt, worden automatisch uitgeschakeld.
-
 
 ## Voorbeeld
 
@@ -59,11 +57,10 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-    
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Interesses toevoegen aan een profiel](rest-post-profile-interests)
-* [Opvragen van profieldata](rest-get-profile)
-* [Alle profiel bijwerken](rest-put-profile)
-* [Profiel verwijderen](rest-delete-profile)
+* [POST profile interests](rest-post-profile-interests)
+* [GET profile](rest-get-profile)
+* [PUT profile](rest-put-profile)
+* [DELETE profile](rest-delete-profile)

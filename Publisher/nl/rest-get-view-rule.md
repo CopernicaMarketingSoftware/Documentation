@@ -6,7 +6,6 @@ Selecties gebruiken *regels* om te beslisses welke profielen worden gebruikt in 
 
 De eerste `$id` code moet vervangen worden met de numerieke identifier van de selectie waar je een regel uit wilt opvragen. De tweede `$id` parameter moet de ID van de regel zijn.
 
-
 ## De geretourneerde informatie
 
 Het resultaat van deze methode is een regel met bijhorende informatie:
@@ -41,7 +40,6 @@ De precieze eigenschappen hangen af van het type van de voorwaarde. Voor een ove
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende script kan gebruikt worden om de eigenschappen van regel 12 binnen selectie 1234 op te vragen:
@@ -58,7 +56,6 @@ print_r($api->get("view/1234/rule/12"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

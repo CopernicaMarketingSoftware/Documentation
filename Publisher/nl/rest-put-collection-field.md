@@ -6,7 +6,6 @@ Methode om een bepaald veld in een collectie aan te passen. Om deze methode uit 
 
 De eerste `$id` is de collectie waarvan je het veld aan wilt passen en de tweede `$id` is de ID van het veld dat je aan wilt passen. De rest van de informatie voor het veld moet toegevoegd worden aan de message body van het HTTP verzoek.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
@@ -21,32 +20,30 @@ De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 - **hidden**: Boolean waarde om aan te geven of een veld altijd verborgen moet worden voor een gebruiker
 - **index**: Boolean waarde om aan te geven of er een index aangemaakt moet worden op het veld
             
-
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.  somebody unsubscribes, the field ‘newsletter’ is set to ‘no’.
+Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden. 
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica-rest-api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data to be sent to the api
+// data voor het verzoek
 $data = array(
     'name'      => 'nieuwe_naam'
 );
 
-// do the call
+// voer het verzoek uit
 api->put("collection/1234/field", array(), $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [PUT database veld](rest-put-database-field)
+- [PUT database field](rest-put-database-field)
 

@@ -79,6 +79,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van alle profielen](rest-get-database-profiles)
-* [Profiel bijwerken](rest-put-profile-fields)
-* [Profiel verwijderen](rest-delete-profile)
+* [GET database profiles](rest-get-database-profiles)
+* [PUT profile fields](rest-put-profile-fields)
+* [DELETE profile](rest-delete-profile)

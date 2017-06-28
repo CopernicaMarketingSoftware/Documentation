@@ -10,14 +10,12 @@ database waar je een interesse aan wilt toevoegen. De naam van de interesse,
 en eventuele andere waardes moeten als message body aan het HTTP request worden toegevoegd. 
 Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 
 * **name**: Naam van de nieuw aan te maken interesse. Dit veld is verplicht
 * **group**: Optionele groepnaam. Interesses met dezelfde groupnaam worden bij elkaar gezet in de user interface
-
 
 ## Voorbeeld
 
@@ -43,7 +41,6 @@ $api->post("database/id/interests", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

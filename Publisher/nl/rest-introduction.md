@@ -4,7 +4,6 @@ Je kunt gemakkelijk een applicatie aanmelden via het dashboard van de Copernica
 website. Na het opgeven van een naam, krijg je een API key. Met deze key kun je
 vervolgens calls maken naar de Copernica REST API.
 
-
 ## HTTP requests
 
 Met de REST API kun je HTTP requests sturen naar de servers van Copernica. 
@@ -22,7 +21,6 @@ In de toekomst kan het onderscheid echter wel van belang zijn.
 
 met het oog op de toekomst 
 wordt aangeraden om het onderscheid wel te hanteren.*
-
 
 ## Meer informatie
 

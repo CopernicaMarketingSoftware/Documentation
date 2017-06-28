@@ -53,4 +53,3 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 * [PUT profile](./rest-put-profile)
 * [PUT profile fields](./rest-put-profile-fields)
 * [PUT profile interests](./rest-put-profile-interests)
-

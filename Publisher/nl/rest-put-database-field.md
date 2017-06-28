@@ -10,7 +10,6 @@ De eerste `$id` variabele in de URL moet worden vervangen door de numerieke
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
 tweede `$id` variabele bevat de naam of het ID van het veld.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
@@ -28,7 +27,6 @@ geplaatst:
 
 Dit zijn precies dezelfde velden die ook worden ondersteund door de
 [methode om nieuwe velden aan te maken](./rest-post-database-fields).
-
 
 ## Voorbeeld in PHP
 
@@ -52,9 +50,8 @@ api->put("database/1234/field/456", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van alle velden van de database](rest-get-database-fields)
-* [Verwijderen van een veld](rest-delete-database-field)
+* [GET database fields](rest-get-database-fields)
+* [DELETE database field](rest-delete-database-field)
