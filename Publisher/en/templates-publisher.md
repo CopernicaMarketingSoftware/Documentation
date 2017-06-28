@@ -90,3 +90,4 @@ and opens.
 ## More information
 
 * [Templates](./templates)
+* [Templates in Marketing Suite](./templates-marketing-suite)
