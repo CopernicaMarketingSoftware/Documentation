@@ -5,7 +5,10 @@ The selection will then be created, nested underneath the database.
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. The name of the selection is not in the URL, as it needs to be added to the message body of the HTTP request.
+In this, $id should be replaced by the numerical identifier, the ID, of 
+the database you want to add a selection to. The name of the selection 
+is not in the URL, as it needs to be added to the message body of the 
+HTTP request. After a succesful call the ID of the created request is returned.
 
 ## Available parameters
 The following variables can be added to the body of the HTTP POST call:
@@ -37,6 +40,8 @@ $data = array(
 
 // do the call
 $api->post("database/1234/views", $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

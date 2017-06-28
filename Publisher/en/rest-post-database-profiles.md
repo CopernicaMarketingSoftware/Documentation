@@ -6,6 +6,7 @@ The HTTP POST method to add a profile to an existing database is available at th
 
 In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add an profile to. 
 Profile information needs to be added to the message body of the HTTP request. 
+After a succesful call the ID of the created request is returned.
 
 Please note that while POST and PUT 
 are generally the same it is import to distinguish them in this case. This method posts a new profile, while PUT 
@@ -40,6 +41,8 @@ $data = array(
 
 // do the call
 $api->post("database/1234/profiles", $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
