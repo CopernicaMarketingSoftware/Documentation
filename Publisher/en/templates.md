@@ -1,56 +1,52 @@
-# Templates and mailings
+# Templates
 
-Templates are the base for all your mails. They contain the document you 
-will send to your user. You can style them using Marketing Suite's very 
-user-friendly template editor, or by coding in XSLT or CSS. You can 
-automatize them with [followup actions](./follow-up-manager).
-After sending a mail with your template you can view the [template statistics](./statistics-template) 
-or [mailing statistics](./statistics-mailing).
+In the (new) Marketing Suite and the (old) Publisher templates are used, 
+which are then used to make beautiful email documents. Please note that 
+both systems have a very different way of creating these, however. We 
+recommend the new Marketing Suite to new users, as it is very 
+user-friendly. We will discuss the creation of templates in both 
+environments in this article.
 
-## Creating and styling your template
+## Marketing Suite
 
-In the Marketing Suite, you simply drag and drop content blocks onto your 
-template such as text, headers, images, social media buttons, and much more. 
-Hit send after you've finished and the rest speaks for itself. If you want 
-to quickly put together a beautiful and professional looking email, 
-the Marketing Suite is the way to go.
+Within the Marketing Suite there are two ways to create e-mailtemplates: 
+Using the drag-and-drop editor and with the HTML editor. The drag-and-drop 
+editor is extremely easy to use and allows you to drop content blocks 
+straight into your email, including images, text and buttons.
 
-In Publisher you can create CSS stylesheets or use XSLT files.
+If you need more freedom in designing your emails you can also use the 
+HTML template editor, which requires knowledge of composing HTML documents. 
+To help you make the email look good on every device and client the CSS 
+is automatically inlinized.
 
-It is wise to add a text version of your mail as well. This will decrease 
-your spam score and is a courtesy to users who want to have their mails 
-displayed as plain text.
+Another useful tool in the Marketing Suite is the [Follow-up Manager](follow-up-manager-ms). 
+This tool can be used to customize fully automated campaigns that will 
+start when elements in your emails are clicked. If you would like to 
+read the full documentation about the template editor's functionalities 
+you can read more in the following article:
 
-Videos and GIFs are also a very useful way to grab your users attention, 
-but are not always supported by all clients. See the 
-[article on videos and GIFs](./templates-video-gif) for tips on how 
-to use videos and GIFs and making them look beautiful in every email client.
+* [Templates in Marketing Suite](templates-marketing-suite)
 
-## Personalizing your template
+## Publisher
 
-Templates can be personalized with Smarty functions, modifiers and 
-variables. You can use them to send a personalized greeting, or even 
-to modify the content blocks the mail will contain. See the 
-[article on personalization](./personalization) for more information 
-on how to personalize.
+The Publisher uses a different approach to create beautiful responsive 
+templates. The approach is a bit more difficult as more HTML knowledge is 
+required. The Publisher has the advantage of having more functionalities, 
+as it has been developed for many more years than its newer counterpart. 
+For the full documentation on creating templates with Publisher you can 
+consult the article below.
 
-## Followups
+* [Templates in Publisher](templates-publisher)
 
-Followups can be used to automate campaigns. Some of the possibilities 
-include automatic mails, updating or removing a profile and contacting 
-a profile. The easiest way to add followups is with the [Marketing Suite Follow-Up Manager](./follow-up-manager).
+## Videos and GIFs
 
-## Statistics
-
-You can view the statistics for individual mailings of a template or the 
-template in general. The latter is very handy for example if you send 
-birthday emails, because this can lead to a new mailing every day. You can 
-find more information in the [article on template statistics](./statistics-template).
+Videos and GIFs are a good way to capture the attention of your users, 
+but are not always properly supported by email clients. See the article on 
+[videos and GIFs](./templates-video-gif) for tips on how to use video 
+that looks beautiful in every email client.
 
 ## More information
 
-* [Stylesheets](./stylesheets)
 * [Personalization](./personalization)
-* [Followups](./follow-up-manager)
-* [Marketing Suite Follow-Up Manager](./follow-up-manager)
-* [Template statistics](./statistics-template)
+* [Scripting and follow-ups](./followups)
+* [Videos and GIFs](./templates-video-gif)
