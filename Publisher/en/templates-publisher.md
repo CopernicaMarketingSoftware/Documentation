@@ -48,6 +48,10 @@ in the document, whether it be of text or images. It is possible to add
 minimum and maximum values, but in principle it can be used as often as 
 needed.
 
+* [[text] tags](./text-tag)
+* [[image] tags](./image-tag)
+* [[loop] tags](./loop-tag)
+
 ## Watch out for brackets
 
 Within a template the square brackets have a special meaning; They are 
