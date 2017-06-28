@@ -56,5 +56,6 @@ ook alle tekst schuingedrukt maken of tussen quotes zetten.
 
 * [Templates](./templates)
 * [Publisher templates](./publisher-templates)
+* [Websites](./websites)
 * [Loop tag](./loop-tag)
 * [Image tag](./image-tag)
