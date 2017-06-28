@@ -36,14 +36,13 @@ Op documentniveau kan een gebruiker zelf kiezen hoeveel iteraties (herhalingen)
 van de loop er in de mailing moeten worden geplaatst. Nul is ook een geldige 
 waarde, waardoor je loop blocks ook kunt gebruiken voor conditionele content: 
 als de gebruiker kiest voor nul iteraties verschijnt de HTML code niet in de 
-mailing, en bij een waarde van 1 of hoger verschijnt de code wel in de mailing 
-(en misschien zelfs meerdere keren).
+mailing, en bij een waarde van een of hoger verschijnt de code een of 
+meerdere malen in de mailing.
 
 Ook voor loopblokken geldt, net als bij alle andere soorten blokken, dat het
 is aan te raden om elke blok een eigen unieke naam mee te geven. Bij loopblokken
 heeft de naam zelfs een extra functie, omdat je de naam kunt gebruiken voor
-scripting en *if* statements (hierover later meer).
-
+scripting en *if* statements. Deze worden later meer besproken.
 
 ## Minimum en maximum waardes
 
@@ -85,16 +84,16 @@ tags worden alleen gebruikt als het aantal iteraties groter is.
 ## Templatevariabelen
 
 Als je gebruik maakt van loop bloks, kun je ook templatevariabelen gebruiken.
-Templatevariabelen lijken erg op personalisatievariabelen, maar ze bevatten
-geen informatie over de geadresseerde, maar over de staat van de loop.
-Er zijn verschillende variabelen die je kunt gebruiken:
+Templatevariabelen lijken erg op [personalisatie](./personalization) 
+variabelen, maar ze bevatten geen informatie over de geadresseerde, maar 
+over de staat van de loop. Er zijn verschillende variabelen die je kunt gebruiken:
 
 * [$loop.naamvanloop.index] - het totaal aantal iteraties
 * [$loop.naamvanloop.iteration] - de huidige iteratie
 * [$loop.naamvanloop.first] - boolean waarde of dit de eerste iteratie is
 * [$loop.naamvanloop.last] - boolean waarde of dit de laatste iteratie is
 
-Deze variabalen kun je gebruiken om de opmaak van de loops wat te verfraaien:
+Deze variabelen kun je gebruiken om de opmaak van de loops wat te verfijnen:
 
 ```html
 [loop name="myloop"]
@@ -108,10 +107,10 @@ Deze variabalen kun je gebruiken om de opmaak van de loops wat te verfraaien:
 ```
 
 Hierboven zie je een loop van paragrafen waarbij op documentniveau kan worden 
-ingesteld hoeveel paragrafen er in de mailing moeten worden opgenomen. Tussen
-elke twee paragrafen staan een horizontale lijn (dit is de &lt;hr/&gt; tag). Het
-if-statement zorgt er voor dat de scheidingslijn alleen tussen de paragrafen
-komt te staan, en niet ook onder de laatste paragraaf.
+ingesteld hoeveel paragrafen er in de mailing moeten worden opgenomen. Na 
+elke paragraaf wordt een lijn geplaatst om deze te scheiden van de 
+volgende paragraaf. Het *if* statement voorkomt echter dat er een 
+scheidingslijn wordt geplaatst onder de laatste paragraaf.
 
 Als je gebruik maakt van geneste loops kun je ook gebruik maken van 
 templatevariabelen, alleen heeft de variabele dan een iets langere naam. Je
@@ -126,7 +125,7 @@ blokken zijn dus eigenlijk gewone Smarty functies, en de [$loop.naamvanloop.*]
 variabelen zijn gewone Smarty variabelen. Je kunt daarom binnen een template 
 alle trucjes en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt 
 van vierkante haakjes in plaats van accolades. Meer informatie over Smarty kun 
-je vinden op [www.smarty.net](http://www.smarty.net).
+je [hier](http://www.smarty.net) vinden.
 
 ## Meer informatie
 

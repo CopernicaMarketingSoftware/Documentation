@@ -37,7 +37,7 @@ The *what-you-see-is-what-you-get-editor* has been named the "rich" editor,
 because it has many tools and buttons to help you enrich your text boxes. 
 The HTML editor, which is the opposite, is called the "poor" editor.
 
-## Begin and end text
+## Start and end code
 
 It's also possible to add two attributes *begin* and *end* to the [text] 
 tag. The *begin* and *end* attributes are added to the start and end of 
