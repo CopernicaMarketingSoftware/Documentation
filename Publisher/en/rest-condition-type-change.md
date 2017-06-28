@@ -56,29 +56,31 @@ We use a condition here when there has ever been a change in any of the
 data.
 
 ```php
-// vereiste module
+
 require_once("copernica_rest_api.php");
 
-// maak een API object met je eigen token
+// change this to your access token
 $api = new CopernicaRestApi("my-access-token");
 
+// add data for the call
 $data = array(
-    // selecteer email conditie
+    // select email condition
     'type' => 'Change',
     
-    // selecteer gewenste eigenschappen
+    // select change type
     'change-type' => 'any'
 );
 
-// voer het verzoek uit
+// execute the call
 $result = $api->post("rule/id/conditions", $data);
 
-// print het resultaat
+// print the result
 print_r($result);
 ```
 
 This example requires the [REST API class](./rest-php).
 
 ## More information
+
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
