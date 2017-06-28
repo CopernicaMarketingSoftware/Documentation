@@ -1,6 +1,6 @@
 # Loop tags
 
-Vermoedelijk de ingewikkeldste tag die je in templates kunt gebruiken, is de
+De meest ingewikkeldste tag die je in templates kunt gebruiken, is de
 [loop] tag. Maar hij is wel erg handig! Je kunt met de [loop] tags code 
 markeren die op documentniveau herhaald kan worden. Hierdoor kun je bijvoorbeeld
 templates maken die net zo makkelijk kunnen worden gebruikt voor een nieuwsbrief 
@@ -131,5 +131,6 @@ je vinden op [www.smarty.net](http://www.smarty.net).
 ## Meer informatie
 
 * [Templates](./templates)
+* [Publisher templates](./publisher-templates)
 * [Text tag](./text-tag)
 * [Image tag](./image-tag)

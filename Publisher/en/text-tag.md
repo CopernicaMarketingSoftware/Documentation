@@ -1,8 +1,8 @@
 # Text tags
 
 If you're writing your own HTML template you can use [text] tags in the 
-source code. The tag is meant to help with the structure of your document 
-and indicates where text can be placed when making the document.
+source code to create a text block. The tag is meant to help with the 
+structure of your document and indicates where text can be placed when making the document.
 
 ![](../images/textblockcode.png)
 
