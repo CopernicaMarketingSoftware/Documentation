@@ -40,7 +40,7 @@ The code above should be familiar to most PHP programmers. The
 but to demonstrate how to do this with PHP-CPP we are going to
 build it with C++. Just like all the other functions that you've
 seen in the earlier examples, such a C++ function function receives 
-a Php::Parmeters object as its parameter, which is a std::vector of 
+a Php::Parameters object as its parameter, which is a std::vector of 
 Php::Value objects.
 
 ```cpp
@@ -48,7 +48,7 @@ Php::Value objects.
 /**
  *  Native function that is callable from PHP
  *
- *  This function gets one parameter that holds a callable anonynous
+ *  This function gets one parameter that holds a callable anonymous
  *  PHP function.
  *
  *  @param  params      The parameters passed to the function
