@@ -51,7 +51,7 @@ image for the tag. This option will make the tag look as following.
 
 `[image name="example" optional="yes"]`
 
-## Begin and end text
+## Begin and end code
 
 It's also possible to add two attributes *begin* and *end* to the [image] 
 tag. The *begin* and *end* attributes are added to the start and end of 
