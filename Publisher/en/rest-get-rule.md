@@ -1,11 +1,13 @@
 # REST API: GET rule
 
 A method to request all metadata from a rule. This method does not 
-support parameters. It is called by sending an HTTP GET request to the following URL:
+support parameters. It is called by sending an HTTP GET request to the 
+following URL:
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the rule you wish to request the selections for.
+In this, `$id` needs to be replaced by the numerical identifier or the 
+name of the rule you wish to request the selections for.
 
 ## Available parameters
 

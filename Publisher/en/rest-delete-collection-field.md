@@ -19,7 +19,7 @@ The following example demonstrates how to make a call using this method.
 	// do the call
 	$api->delete("collection/1234/field/firstname");
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestAPI class](rest-php).
 
 ## More information
 

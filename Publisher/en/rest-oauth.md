@@ -23,7 +23,6 @@ list, et cetera. Is that OK with you?". After you have confirmed this access
 you are redirected back to the original website, which now has access to your
 Facebook profile. A similar thing can be done with Copernica.
 
-
 ## Do you actually need this?
 
 Before you continue reading this article, you must first wonder whether you 
@@ -44,9 +43,7 @@ analyze your database. Do you want to give this access?". If the user allows
 this access, he is redirected back to your website, and from that moment on
 your website can fetch data from the Copernica account of that other user.
 
-
 ![](../images/oauth-copernica.png)
-
 
 ## Registering your application
 
@@ -83,7 +80,6 @@ other values.
 
 Do make sure that the **state** parameter is indeed hard to guess. If we do not
 like the string (too short, too predictable) we will not open up an accounts.
-
 
 ## The return page
 

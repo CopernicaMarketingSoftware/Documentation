@@ -5,9 +5,8 @@ to the following URL:
 
 `https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the subprofile 
+The `$id` should be replaced with the numerical identifier of the subprofile 
 you're requesting the events of.
-
 
 ## Available parameters
 
@@ -16,7 +15,6 @@ The following parameters can be added to the URL as variables:
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
-
 
 ### Start and end
 
@@ -30,13 +28,11 @@ start is leading. Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
 
-
 ### Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags
 with a semicolon.
-
 
 ## Returned fields
 
@@ -61,7 +57,6 @@ A JSON with all the event for the provided subprofile:
 ```
 The `event` property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
-
 
 ## PHP Example
 

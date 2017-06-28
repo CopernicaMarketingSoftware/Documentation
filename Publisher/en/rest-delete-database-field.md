@@ -1,12 +1,16 @@
 # REST API: DELETE database field
 
-When you send an HTTP DELETE request to the following URL, you’ll delete a field from a database:
+When you send an HTTP DELETE request to the following URL, you’ll delete 
+a field from a database:
 
 `https://api.copernica.com/v1/database/$id/field/$id?access_token=xxxx`
 
-The $id needs to be replaced by the numerical identifier, the ID, of the database. The second needs to be replaced by the ID or the name of the field you want to delete.
+The $id needs to be replaced by the numerical identifier, the ID, of the 
+database. The second needs to be replaced by the ID or the name of the 
+field you want to delete.
 
 ## PHP example
+
 The following example demonstrates how to make a call using this method.
 
 ```php

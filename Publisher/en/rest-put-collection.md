@@ -5,7 +5,7 @@ sending an HTTP PUT request to the following URL:
 
 `https://api.copernica.com/v1/collection/$id?access_token=xxxx`
 
-The $id should be replaced with the ID of the collection that you want to 
+The `$id` should be replaced with the ID of the collection that you want to 
 edit.
 
 ## Available parameters

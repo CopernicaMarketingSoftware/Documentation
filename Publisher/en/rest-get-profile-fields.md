@@ -5,7 +5,7 @@ request to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the profile 
+The `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the fields of.
 
 ## Returned fields

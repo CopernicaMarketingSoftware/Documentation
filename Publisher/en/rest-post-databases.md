@@ -1,6 +1,7 @@
 # REST API: POST database
 
-This method is used to create a new database with the REST API. It uses an HTTP POST request to the following address:
+This method is used to create a new database with the REST API. It uses 
+an HTTP POST request to the following address:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 

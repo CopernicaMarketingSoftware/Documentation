@@ -6,7 +6,7 @@ to the following URL:
 
 `https://api.copernica.com/v1/collection/$id?access_token=xxxx`
 
-The $id here should be replaced with the numerical identifier of the collection.
+The `$id` here should be replaced with the numerical identifier of the collection.
 
 ## Returned fields
 

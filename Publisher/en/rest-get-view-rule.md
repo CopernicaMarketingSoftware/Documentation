@@ -7,7 +7,7 @@ single rule, you can send a HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
 
-The first $id code should be replaced with the numeric identifier of the 
+The first `$id` code should be replaced with the numeric identifier of the 
 selection from which you want to retrieve a rule. The second $id parameter
 should be the ID of the rule.
 
@@ -49,7 +49,6 @@ the specific articles:
 - [Survey conditions](./rest-condition-type-survey.md)
 - [Part conditions](./rest-condition-type-part.md)
 - [ReferView conditions](./rest-condition-type-referview.md)
-
 
 ## PHP example
 
