@@ -1,10 +1,12 @@
 # REST API: GET database interests
 
-A list of all available interests in a database can be requested using the following URL:
+A list of all available interests in a database can be requested using 
+the following URL:
 
 `https://api.copernica.com/v1/database/$id/interests?access_token=xxx`
 
-The variable $id has to be replaced by the numerical identifier or the name of the database of which you want to request the interests.
+The variable `$id` has to be replaced by the numerical identifier or the 
+name of the database of which you want to request the interests.
 
 ## Available parameters
 
@@ -14,10 +16,12 @@ The following parameters can be added to the URL as variables:
 - **limit**: length of the batch that is requested
 - **total**: whether or not the total amount of interests should be counted
 
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging)
+More information on the meaning of these parameters can be found 
+[in the article on paging](rest-paging).
 
 ## Returned fields
-The method returns a list of interests in the database. For each interest, the following properties are returned:
+The method returns a list of interests in the database. For each interest 
+the following properties are returned:
 
 - **ID**: numerical ID of the interest
 - **name**: the name of the interest

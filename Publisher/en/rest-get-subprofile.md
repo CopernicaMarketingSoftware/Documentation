@@ -6,7 +6,7 @@ following URL:
 
 `https://api.copernica.com/v1/subprofile/$id?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the subprofile you're
+The `$id` should be replaced with the numerical identifier of the subprofile you're
 requesting the information of.
 
 ## Returned fields

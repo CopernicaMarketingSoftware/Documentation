@@ -3,7 +3,8 @@
 Selections use *rules* to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 
 are included in the selection. To retrieve the properties and the conditions of a 
-single rule in a selection from a collection (miniview) you can send a HTTP GET request to the following URL:
+single rule in a selection from a collection (miniview) you can send a 
+HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/miniview/$id/minirule/$id?access_token=xxxx`
 
@@ -18,8 +19,10 @@ This method returns rule data. The following properties are returned:
 - **ID**: numeric ID of the rule
 - **name**: name of the rule
 - **view**: ID of the selection to which the rule belongs
-- **disabled**: boolean value whether the rule is disabled / not used to match profiles
-- **inversed**: boolean value whether this is an inversed rule, meaning that profiles are included in the rule if they do *not* match the rule
+- **disabled**: boolean value whether the rule is disabled / not used to 
+match profiles
+- **inversed**: boolean value whether this is an inversed rule, meaning 
+that profiles are included in the rule if they do *not* match the rule
 - **conditions**: array of conditions in the rule.
 
 A rule on its own contains *conditions*. For a profile to match a rule, it 

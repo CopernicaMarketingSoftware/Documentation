@@ -4,7 +4,7 @@ There are several different ways to request the interests of a profile.
 Which method is best depends on how you want to use it. You can request 
 a list of interest names, interest ID's or an array of JSON objects.
 
-Please remember that $id should always be replaced with the numerical 
+Please remember that `$id` should always be replaced with the numerical 
 identifier of the profile you're requesting the interests of.
 
 ## List of interest names

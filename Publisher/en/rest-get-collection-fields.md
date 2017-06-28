@@ -6,7 +6,7 @@ URL:
 
 `https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
 
-The $id should be replaced by the unique numerical identifier of the collection
+The `$id` should be replaced by the unique numerical identifier of the collection
 you want to get the fields from.
 
 ## Available parameters

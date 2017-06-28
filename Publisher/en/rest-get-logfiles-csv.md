@@ -1,6 +1,10 @@
-# REST API: GET csv logfiles
+# REST API: GET CSV logfiles
 
-Copernica keeps logfiles which you can request with the API. This method can be used to download a logfile as CSV using its filename. If you don't know the filename please see "More information" for instructions. To execute the method you can send an HTTP GET request to the following URL for a CSV file without header:
+Copernica keeps logfiles which you can request with the API. This method 
+can be used to download a logfile as CSV using its filename. If you don't 
+know the filename please see "More information" for instructions. To 
+execute the method you can send an HTTP GET request to the following URL 
+for a CSV file without header:
 
 `https://api.copernica.com/v1/logfiles/$filename?access_token=xxxx`
 
@@ -13,9 +17,10 @@ In both URLs `$filename` is the name of the file you want to request.
 
 ## Returned value
 
-A csv file with optionally a header row of the requested log file. In the table below is an example 
-of what a CSV file could look like. In the real file, however, the values would be separated by commas 
-instead of lines in a table.
+A csv file with optionally a header row of the requested log file. In 
+the table below is an example of what a CSV file could look like. In the 
+real file, however, the values would be separated by commas instead of 
+lines in a table.
 
 | id  |        time         | mailingid | profileid | subprofileid | databaseid | ... |
 |-----|---------------------|-----------|-----------|--------------|------------|-----|

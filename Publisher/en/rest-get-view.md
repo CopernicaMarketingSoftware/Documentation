@@ -5,7 +5,7 @@ support parameters. It is called by sending an HTTP GET request to the following
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
+In this, `$id` needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
 
 ## Available parameters
 

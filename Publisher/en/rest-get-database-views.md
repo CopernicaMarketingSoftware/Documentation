@@ -1,10 +1,12 @@
 # REST API: GET database views
 
-To request which selections are available in a database, do an HTTP GET request to the following URL:
+To request which selections are available in a database, do an HTTP GET 
+request to the following URL:
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
+In this, $id needs to be replaced by the numerical identifier or the 
+name of the database you wish to request the selections for.
 
 ## Available parameters
 
@@ -21,13 +23,18 @@ For every selection, the following properties are returned:
 - **ID**: the numerical identifier of the selection
 - **name**: the name of the selection
 - **description**: optional description of the selection
-- **parent-type**: used to display whether a selection is placed directly under a database, or nested under another selection
+- **parent-type**: used to display whether a selection is placed 
+directly under a database, or nested under another selection
 - **parent-id**: ID of the parent selection/database
-- **has-children**: boolean value: whether or not the database has selections nested underneath it
-- **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
-- **has-rules**: boolean value: whether or not the selection has selection rules
+- **has-children**: boolean value: whether or not the database has 
+selections nested underneath it
+- **has-referred**: boolean value: whether or not there are other 
+selections that refer to this selection.
+- **has-rules**: boolean value: whether or not the selection has 
+selection rules
 
 ## PHP example
+
 The following PHP script demonstrates how to use the API method:
 
 ```php

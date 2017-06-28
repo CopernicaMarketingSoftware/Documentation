@@ -4,7 +4,7 @@ It’s very easy to request just the IDs of profiles in a selection. Just send a
 
 `https://api.copernica.com/v1/view/$id/profileids?access_token=xxxx`
 
-In this, $id should be replaced by the unique numerical identifier of the selection.
+In this, `$id` should be replaced by the unique numerical identifier of the selection.
 
 ## Available parameters
 
@@ -32,5 +32,6 @@ print_r($api->get("collection/1234/profileids"));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
 - [GET view profiles](rest-get-view-profiles)

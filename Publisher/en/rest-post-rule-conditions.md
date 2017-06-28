@@ -4,7 +4,7 @@ support parameters. It is called by sending an HTTP POST request to the followin
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name 
+In this, `$id` needs to be replaced by the numerical identifier or the name 
 of the rule you wish to edit the conditions of. After a succesful call 
 the ID of the created request is returned.
 

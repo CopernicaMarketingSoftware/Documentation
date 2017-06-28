@@ -1,12 +1,16 @@
 # REST API: PUT database
 
-A method to update the properties of a database. This is an HTTP PUT method, accessible at the following address:
+A method to update the properties of a database. This is an HTTP PUT 
+method, accessible at the following address:
 
 `https://api.copernica.com/v1/database/$id?access_token=XXX`
+
+Replace the `$id` by the identifier of the database you want to edit.
 
 ## Available parameters
 
 The following variables can be used in the body of the HTTP PUT request:
+
 - **name**: the optional new name of the database
 - **description**: the optional new database description
 - **archived**: optional boolean to determine whether or not a database should be archived.
@@ -39,6 +43,7 @@ api->put("database/1234", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
 - [GET databases](rest-get-databases)
 - [DELETE database](rest-delete-database)
