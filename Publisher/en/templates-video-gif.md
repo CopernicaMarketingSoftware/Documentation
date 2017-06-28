@@ -4,7 +4,7 @@ Video is very useful in marketing: It's fun, it's engaging and can be
 used to convey powerful messages. Unfortunately many email clients do 
 not support video in an email, but there are ways to get around that. 
 In this article we will discuss some methods to use GIFs and videos to 
-make your email more interesting
+make your email more interesting.
 
 ## Link to your video
 
