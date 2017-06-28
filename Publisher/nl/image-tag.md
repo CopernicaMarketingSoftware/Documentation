@@ -69,5 +69,6 @@ rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 
 * [Templates](./templates)
 * [Publisher templates](./publisher-templates)
+* [Websites](./websites)
 * [Text tag](./text-tag)
 * [Loop tag](./loop-tag)
