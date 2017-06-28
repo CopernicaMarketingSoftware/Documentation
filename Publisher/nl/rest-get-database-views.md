@@ -59,6 +59,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [POST view](rest-post-view)
+* [PUT view](rest-put-view)
 * [GET view views](rest-get-view-views)
 * [GET view rules](rest-get-view-rules)

@@ -53,7 +53,7 @@ ziet er als volgt uit:
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Voorbeeld
 
