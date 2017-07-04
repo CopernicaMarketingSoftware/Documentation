@@ -33,8 +33,12 @@ fouten ook een [feedback loop voor bounces](feedback-bounces) instellen.
 
 ## Variabelen
 
-De Marketing Suite stuurt via HTTP of via HTTPS een POST bericht naar jouw server.
-Met elk POST bericht worden de volgende variabelen meegestuurd:
+Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
+De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
+
+Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
+bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
+bijvoorbeeld *interests[]=xyz*.
 
 | Variable     | Description                                                                |
 |--------------|----------------------------------------------------------------------------|

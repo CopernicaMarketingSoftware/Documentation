@@ -8,7 +8,12 @@ server met daarin alle relevante informatie over het zojuist aangepaste profiel.
 
 ## Variabelen
 
-Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
+Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
+De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
+
+Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
+bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
+bijvoorbeeld *interests[]=xyz*.
 
 | Variables          | Description                                                            |
 |--------------------|------------------------------------------------------------------------|
@@ -46,6 +51,52 @@ Voor subprofielen zijn dit de volgende variabelen:
 Associative arrays zoals "parameters" en "fields" worden per key-valuepaar verstuurd,
 bijvoorbeeld als *parameters[key]=value*.
 Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
+
+## Voorbeeld
+
+Een ontcijferde POST call ziet er bijvoorbeeld zo uit voor een profiel:
+
+{
+    "action":       "update",
+    "profile":      123,
+    "parameters": {
+        "mail":     "johny+newemail@example.com",
+    },
+    "timestamp":    "1979-02-12 12:49:23",
+    "id":           123,
+    "database":     1,
+    "fields": {
+        "name":     "Johny",
+        "mail":     "johny+newemail@example.com",
+    },
+    "interests": {
+        "blue":     1,
+        "red":      0
+    },
+    "created":      "1979-02-12 12:49:23",
+    "modified":     "1979-02-12 12:49:23"
+}
+
+Een voorbeeld voor een subprofiel:
+
+{
+    "action":       "update",
+    "subprofile":   123,
+    "parameters": {
+        "mail":     "johny+newemail@example.com",
+    },
+    "timestamp":    "1979-02-12 12:49:23",
+    "id":           12,
+    "database":     1,
+    "collection":   2,
+    "profile":      123,
+    "fields": {
+        "name":     "Johny",
+        "mail":     "johny+newemail@example.com",
+    },
+    "created":    "1979-02-12 12:49:23",
+    "modified":   "1979-02-12 12:49:23"
+}
 
 ## Meer informatie
 

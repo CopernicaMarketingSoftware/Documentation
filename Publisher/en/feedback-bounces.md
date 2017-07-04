@@ -18,7 +18,7 @@ to have them delivered to you in real-time with a feedback loop.
 
 ## Variables
 
-With each POST call the variables in the table below are sent over. The 
+With each POST call the variables in the table below are sent cover. The 
 POST data is sent with the application/x-www-form-urlencoded content type.
 
 Associative arrays such as "parameters" and "fields" are sent per key-value pair,
