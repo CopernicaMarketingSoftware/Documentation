@@ -26,7 +26,7 @@ following default value:
 `{math equation="x+y" x=$number y=1}`
 
 Make another field that correspond to the profile, for example the 
-email adress. Make this a *key field* so it can be matched to the profile.
+email address. Make this a *key field* so it can be matched to the profile.
 
 Set the webform to check on the keyfields, edit the profile, login as the 
 profile in the [database](./database-introduction).

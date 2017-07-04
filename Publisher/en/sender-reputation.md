@@ -1,7 +1,7 @@
 # Sender reputation
 
 Your sender reputation determines your trustworthiness on the internet. It 
-determines how email clients view your IP adress, which influences their 
+determines how email clients view your IP address, which influences their 
 decision to accept or reject your email. There are several factors which 
 influence your reputation, which is why it is important to 
 manage your database effectively, send good content 
@@ -32,7 +32,7 @@ database. With Copernica you can [automatically process bounces](./automatically
 to prevent this from happening.
 
 To ensure that all of your subscribers want to receive your emails and are 
-using a valid email adress you can [create a double opt-in](create-a-double-optin-for-new-subscribers).
+using a valid email address you can [create a double opt-in](create-a-double-optin-for-new-subscribers).
 
 ### Email content
 

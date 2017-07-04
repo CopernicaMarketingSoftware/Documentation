@@ -55,7 +55,7 @@ are handled and displayed:
 mask a password.
 * **Repeat password**: Can be used to set a password. This option creates 
 two password fields. The form can not be submitted if these are not identical.
-* **E-mail adress**: Can be used to check the entered email adress for validity.
+* **E-mail address**: Can be used to check the entered email address for validity.
 * **Drop-down list**: Field with multiple answers that you can scroll 
 through. You can also type the value you want in the database, followed by 
 two colons (::) and the value you want to display.

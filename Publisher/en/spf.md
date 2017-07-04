@@ -46,7 +46,7 @@ an include do the same thing: your own DNS settins refers to the setting in our 
 
 ## What should be listed in the SPF record
 
-If you send mail with Copernica, it speaks for itselves that Copernica's IP adresses
+If you send mail with Copernica, it speaks for itselves that Copernica's IP addresses
 also have to be included in the SPF record. Receivers can only then validate that
 the messages that we send on your behalf (and that come from our IP's) are legitimate. 
 But because we create your DNS record we already take care of this and you can

@@ -92,7 +92,7 @@ can find under the form settings.
 
 Now place the form on the first webpage you made and make the following page 
 the notice that the automatic email was sent. You can display their email 
-address with `{\$emailadres}`.
+address with `{\$emailaddress}`.
 
 ![](../images/afbeelding2.png)
 

@@ -9,7 +9,7 @@ value you can use it to make a [newsletter selection](./create-a-mailing-list).
 Triggers come in different ways. Usually they come in the form of 
 unsubscribe links in mailings and feedback from a user clicking the 
 unsubscribe button in their email client. However, we can also receive 
-complaints at our abuse adress or be informed when a user marks your mail 
+complaints at our abuse address or be informed when a user marks your mail 
 as spam. Copernica collects and handles these triggers according to your 
 preferred unsubscribe behaviour.
 
