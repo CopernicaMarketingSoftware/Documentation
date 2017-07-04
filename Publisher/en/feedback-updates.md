@@ -7,7 +7,12 @@ relevant information about the profile at the time of the update.
 
 ## Variables
 
-With each POST call the following variables are sent over:
+With each POST call the variables in the table below are sent over. The 
+POST data is sent with the application/x-www-form-urlencoded content type.
+
+Associative arrays such as "parameters" and "fields" are sent per key-value pair,
+e.g. *parameters[key]=value*.
+Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variables          | Description                                                                             |
 |--------------------|-----------------------------------------------------------------------------------------|
@@ -43,9 +48,51 @@ For subprofiles, this consists of the following variables:
 | created    | time when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)  |
 | modified   | time when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format) |
 
-Associative arrays such as "parameters" and "fields" are sent per key-value pair,
-e.g. *parameters[key]=value*.
-Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
+## Example
+
+A decoded POST request for a profile might look similar to this:
+
+{
+    "action":       "update",
+    "profile":      123,
+    "parameters": {
+        "mail":     "johny+newemail@example.com",
+    },
+    "timestamp":    "1979-02-12 12:49:23",
+    "id":           123,
+    "database":     1,
+    "fields": {
+        "name":     "Johny",
+        "mail":     "johny+newemail@example.com",
+    },
+    "interests": {
+        "blue":     1,
+        "red":      0
+    },
+    "created":      "1979-02-12 12:49:23",
+    "modified":     "1979-02-12 12:49:23"
+}
+
+An example for a subprofile looks like this:
+
+{
+    "action":       "update",
+    "subprofile":   123,
+    "parameters": {
+        "mail":     "johny+newemail@example.com",
+    },
+    "timestamp":    "1979-02-12 12:49:23",
+    "id":           12,
+    "database":     1,
+    "collection":   2,
+    "profile":      123,
+    "fields": {
+        "name":     "Johny",
+        "mail":     "johny+newemail@example.com",
+    },
+    "created":    "1979-02-12 12:49:23",
+    "modified":   "1979-02-12 12:49:23"
+}
 
 ## More information
 

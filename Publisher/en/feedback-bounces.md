@@ -18,8 +18,12 @@ to have them delivered to you in real-time with a feedback loop.
 
 ## Variables
 
-The bounce feedback loop is sent over HTTP POST, and the following
-variables are submitted:
+With each POST call the variables in the table below are sent over. The 
+POST data is sent with the application/x-www-form-urlencoded content type.
+
+Associative arrays such as "parameters" and "fields" are sent per key-value pair,
+e.g. *parameters[key]=value*.
+Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variable  | Description                                                              |  
 |-----------|--------------------------------------------------------------------------|

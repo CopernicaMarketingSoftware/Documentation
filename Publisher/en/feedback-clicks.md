@@ -12,7 +12,12 @@ click to your existing data.
 
 ## Variables
 
-With each POST call the following variables are sent over:
+With each POST call the variables in the table below are sent over. The 
+POST data is sent with the application/x-www-form-urlencoded content type.
+
+Associative arrays such as "parameters" and "fields" are sent per key-value pair,
+e.g. *parameters[key]=value*.
+Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
