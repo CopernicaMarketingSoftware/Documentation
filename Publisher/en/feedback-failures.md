@@ -26,9 +26,12 @@ you can set up a [feedback loop for bounces](feedback-bounces).
 
 ## Variables
 
-The Marketing Suite uses HTTP POST calls to send the data to you. This can be done
-over HTTP or over HTTPS. The following variables are used in the POST
-calls:
+With each POST call the variables in the table below are sent over. The 
+POST data is sent with the application/x-www-form-urlencoded content type.
+
+Associative arrays such as "parameters" and "fields" are sent per key-value pair,
+e.g. *parameters[key]=value*.
+Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variable     | Description                                                                               |
 |--------------|-------------------------------------------------------------------------------------------|
