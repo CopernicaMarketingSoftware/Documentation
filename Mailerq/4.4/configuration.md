@@ -10,7 +10,7 @@ sections. Please select the section that you're interested in or
 find the desired setting in the [A-Z settings overview](settings-alphabetical).
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
-* [Multiple instances](Multiple-instances "Multiple MailerQ instances on a single server")
+* [Multiple instances](multiple-instances "Multiple MailerQ instances on a single server")
 * [Cluster settings](cluster "Cluster configuration")
 * [Database settings](database-access "Database access")
 * [Message store settings](message-store-options "Message Store options")
