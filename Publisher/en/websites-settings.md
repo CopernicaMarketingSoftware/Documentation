@@ -22,7 +22,7 @@ that aims to transfer information safely. It combines the Hypertext Transfer
 Protocol (HTTP) with the SSL/TLS protocol to safely exchange encrypted 
 information. Encryption makes it impossible to know what kind of information 
 was exchanged, even if someone does manage to get their hands on the information. 
-HTTPS is often used where privacy-sensitive information such as name, adress, 
+HTTPS is often used where privacy-sensitive information such as name, address, 
 date of birth, social security numbers etc. are exchanged.
 
 Copernica offers the option to force HTTPS connection. 
@@ -44,8 +44,8 @@ Please follow the following steps to use HTTPS with your own domain:
 
 1. Apply for a SSL certificate of any type if you do not have one yet. You 
 can find any company providing these on Google.
-2. Request a dedicated IP adress at Copernica if you do not have one yet. 
-You can request the adress with our Support team (support@copernica.com) for a small monthly fee.
+2. Request a dedicated IP address at Copernica if you do not have one yet. 
+You can request the address with our Support team (support@copernica.com) for a small monthly fee.
 3. Hand in the SSL certificate to our Support team along with its private key, 
 the intermediate-certificate and the root-certificate. This is sensitive information, 
 so don't send this unencrypted. You can also upload the certificate to a secure 

@@ -34,7 +34,7 @@ Processing an email and delivering it is done in five steps.
 Sometimes an error between step 1 through 3 is classified as a hardbounce 
 and everything after as a hardbounce. Other times 1 through 4 is classified 
 as a hardbounce. Other times the steps are ignored and the error code is 
-used to determine whether a soft or a hardbounce occurred.
+used to determine whether a soft- or a hardbounce occurred.
 
 You can find the errors occurring from your mailings in the **Error** tab. 
 The error code is also specified here if it exists.
@@ -43,7 +43,7 @@ The error code is also specified here if it exists.
 
 How to solve an error depends on the user of the software and the receiver. 
 Some users might have another route to contact the receiver, such as calling, 
-to get the correct email adress if this is the problem.
+to get the correct email address if this is the problem.
 
 If emails are never delivered to certain addresses it is better to remove 
 them from the database or not email them. It is possible to make a selection 
