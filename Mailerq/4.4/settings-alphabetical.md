@@ -5,73 +5,107 @@ alphabetically. Each setting links to a documentation article that explains
 the setting more in-depth. Want to search by topic? [Click here](configuration "Configure by topic").
 
 | Setting                                                                  | Description
-|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------
-| [Cache dimensions](responsiveemail#config-file-variables)                | Max no. of images in cache (Used in ResponsiveEmail)
-| [Cache size](responsiveemail#config-file-variables)                      | Max size of image cache (Used in ResponsiveEmail)
-| [Cluster address](cluster#config-file-options)                           | Address for a cluster to share between instances
-| [Cluster exchange](cluster#config-file-options)                          | Set cluster exchange
-| [Database](database-access#database-settings-in-the-config-file)         | Relational database for config data and delivery settings
-| [Database TTL](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
-| [Download log compression](logging#download-logs)                        | Download log compression
-| [Download log directory](logging#download-logs)                          | Download log directory
-| [Download log history](logging#download-logs)                            | Download log history
-| [Download log maxage](logging#download-logs)                             | Download log maximum age
-| [Download log maxsize](logging#download-logs)                            | Download log maximum size
-| [Download log prefix](logging#download-logs)                             | Download log prefix
-| [Error log](logging#error-logs)                                          | Name and error of error
-| [Error log directory](multiple-instances#log-files-location)             | Error log directory
-| [Error log prefix](multiple-instances#log-files-location)                | Error log prefix
-| [Heartbeat enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)
-| [License](other-configuration#license)                                   | MailerQ license file
-| [Lock](multiple-instances#lock)                                          | Process ID for MailerQ instance to prevent from starting instances more than once
-| [Maximum attempts](other-configuration)                                  | Maximum attempts to deliver email
-| [Maximum delivery time](other-configuration)                             | Maximum time spent trying to deliver email
-| [RabbitMQ address](rabbitmq-config#rabbitmq-address)                     | Location and authentication to connect to RabbitMQ
-| [RabbitMQ consumers](rabbitmq-config#multiple-threads)                   | Amount of consumer threads (default: 1)
-| [RabbitMQ dsn](rabbitmq-config#rabbitmq-queues)                          | Your RabbitMQ delivery status notification queue  
-| [RabbitMQ durable](rabbitmq-config#persistent-and-durable-settings)      | Durable/not durable RabbitMQ queues (default: true)
-| [RabbitMQ encoding](rabbitmq-config#compression)                         | Choose encoding for messages (such as gzip)
-| [RabbitMQ inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
-| [RabbitMQ exchange](rabbitmq-config#the-exchange)                        | RabbitMQ exchange
-| [RabbitMQ failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
-| [RabbitMQ local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
-| [RabbitMQ outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
-| [RabbitMQ persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
-| [RabbitMQ publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
-| [RabbitMQ queues](rabbitmq-config#rabbitmq-queues)                       | Names of the RabbitMQ queues to manage email (inbox, failures, retries, etc...)
-| [RabbitMQ refused](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ refused queue
-| [RabbitMQ reports](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ report queue
-| [RabbitMQ results](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ result queue
-| [RabbitMQ retry](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ retry queue
-| [RabbitMQ success](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ success queue
-| [Received log compression](logging#received-messages)                    | Received log compression
-| [Received log directory](logging#received-messages)                      | Received log directory
-| [Received log history](logging#received-messages)                        | Received log history
-| [Received log maxage](logging#received-messages)                         | Received log maximum age
-| [Received log maxsize](logging#received-messages)                        | Received log maximum size
-| [Received log prefix](logging#received-messages)                         | Received log prefix
-| [Retry interval](other-configuration)                                    | Interval for retrying to send
-| [Smarthost (hostname)](smarthost#how-to-configure-the-smarthost-feature) | Smarthost name (only needed if Smarthost is desired)
-| [Smarthost password](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost password
-| [Smarthost port](smarthost#how-to-configure-the-smarthost-feature)       | Smarthost port
-| [Smarthost username](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost username
-| [SMTP IP](rabbitmq-config#listening-ip/ports-combinations)               | SMTP server IP
-| [SMTP sink IP](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
-| [SMTP sink password](smarthost#using-smarthost-for-debugging)            | SMTP sink password
-| [SMTP sink port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
-| [SMTP sink username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
-| [Send log compression](logging#send-logs)                                | Send log compression
-| [Send log directory](logging#send-logs)                                  | Send log directory
-| [Send log history](logging#send-logs)                                    | Send log history
-| [Send log maxage](logging#send-logs)                                     | Send log maximum age
-| [Send log maxsize](logging#send-logs)                                    | Send log maximum size
-| [Send log prefix](logging#send-logs)                                     | Send log prefix
-| [Server ID](multiple-instances#server-id)                                | Server ID to prevent multiple instances from assigning same message ID
-| [Storage address](message-store-options)                                 | Address for external message storage
-| [Storage policy](message-store-options)                                  | Message store policy
-| [Storage threads](message-store-options)                                 | Storage threads
-| [Storage TTL](message-store-options)                                     | Time to live: Storage reload interval
-| [User](other-configuration#user)                                         | Change user for MTA
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| [cache-dimensions](responsiveemail#config-file-variables)                | Max no. of images in cache (Used in ResponsiveEmail)
+| [cache-size](responsiveemail#config-file-variables)                      | Max size of image cache (Used in ResponsiveEmail)
+| [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
+| [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
+| config-file                                                              | Path to configuration file
+| [database](database-access#database-settings-in-the-config-file)         | Relational database for config data and delivery settings
+| [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
+| [download-log-compression](logging#download-logs)                        | Download log compression
+| [download-log-directory](logging#download-logs)                          | Download log directory
+| [download-log-history](logging#download-logs)                            | Download log history
+| [download-log-maxage](logging#download-logs)                             | Download log maximum age
+| [download-log-maxsize](logging#download-logs)                            | Download log maximum size
+| [download-log-prefix](logging#download-logs)                             | Download log prefix
+| [dsn-advertise](sending-bounces#receiving-dsn-settings)                  | Toggle announcement about DSN extension and parameters
+| [dsn-notify](sending-bounces#mime-headers-and-config-file-settings)      | Events that trigger a notify
+| [dsn-ret](sending-bounces#passing-dsn-settings)                          | Send full mail (FULL) or headers (HDRS) for notifications
+| dns-threads                                                              | Amount of threads used for DNS lookup
+| envelope                                                                 | Envelope address
+| [error-log](logging#error-logs)                                          | Name and error of error
+| [error-log-directory](logging#error-logs)                                | Error log directory
+| [error-log-prefix](logging#error-logs)                                   | Error log prefix
+| [heartbeat-enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)
+| [heartbeat-ip](other-configuration#user-statistics)                      | IP for sending heartbeat
+| [heartbeat-period](other-configuration#user-statistics)                  | Periods between sending user statistics
+| [heartbeat-port](other-configuration#user-statistics)                    | Port for sending heartbeat
+| [license](other-configuration#license)                                   | MailerQ license file
+| [lock](other-configuration#lockfile)                                     | Process ID for MailerQ instance to prevent from starting instances more than once
+| [max-attempts](other-configuration)                                      | Maximum attempts to deliver email
+| [max-delivertime](other-configuration)                                   | Maximum time spent trying to deliver email
+| [plugin-directory](plugins#how-are-plugins-loaded)                       | Directory with MailerQ plugins
+| [rabbitmq-address](rabbitmq-config#rabbitmq-address)                     | Location and authentication to connect to RabbitMQ
+| [rabbitmq-consumers](rabbitmq-config#multiple-threads)                   | Amount of consumer threads (default: 1)
+| [rabbitmq-dsn](rabbitmq-config#rabbitmq-queues)                          | Your RabbitMQ delivery status notification queue  
+| [rabbitmq-durable](rabbitmq-config#persistent-and-durable-settings)      | Durable/not durable RabbitMQ queues (default: true)
+| [rabbitmq-encoding](rabbitmq-config#compression)                         | Choose encoding for messages (such as gzip)
+| [rabbitmq-exchange](rabbitmq-config#the-exchange)                        | RabbitMQ exchange
+| [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
+| [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
+| [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
+| [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
+| [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
+| [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
+| [rabbitmq-queues](rabbitmq-config#rabbitmq-queues)                       | Names of the RabbitMQ queues to manage email (inbox, failures, retries, etc...)
+| [rabbitmq-refused](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ refused queue
+| [rabbitmq-reports](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ report queue
+| [rabbitmq-results](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ result queue
+| [rabbitmq-retry](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ retry queue
+| [rabbitmq-success](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ success queue
+| [received-log-compression](logging#received-messages)                    | Received log compression
+| [received-log-directory](logging#received-messages)                      | Received log directory
+| [received-log-history](logging#received-messages)                        | Received log history
+| [received-log-maxage](logging#received-messages)                         | Received log maximum age
+| [received-log-maxsize](logging#received-messages)                        | Received log maximum size
+| [received-log-prefix](logging#received-messages)                         | Received log prefix
+| [retry-interval](other-configuration)                                    | Interval for retrying to send
+| [send-log-compression](logging#send-logs)                                | Send log compression
+| [send-log-directory](logging#send-logs)                                  | Send log directory
+| [send-log-history](logging#send-logs)                                    | Send log history
+| [send-log-maxage](logging#send-logs)                                     | Send log maximum age
+| [send-log-maxsize](logging#send-logs)                                    | Send log maximum size
+| [send-log-prefix](logging#send-logs)                                     | Send log prefix
+| [server-id](multiple-instances#server-id)                                | Server ID to prevent multiple instances from assigning same message ID
+| [smarthost](smarthost#how-to-configure-the-smarthost-feature)            | Smarthost name (only needed if Smarthost is desired)
+| [smarthost-password](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost password
+| [smarthost-port](smarthost#how-to-configure-the-smarthost-feature)       | Smarthost port
+| [smarthost-username](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost username
+| [smtp-auth-results](smtp-server#testing-incoming-messages)               | Toggle adding authentication results to MIME header
+| [smtp-certificate](smtp-server#secure-connections)                       | Certificate for secure SMTP connections
+| [smtp-check](smtp-server#testing-incoming-messages)                      | Comma separated list of checks to perform on incoming messages
+| [smtp-ciphers](smtp-server#secure-connections)                           | Supported ciphers for secure SMTP connections
+| [smtp-connections](smtp-server#other-settings)                           | Maximum amount of open TCP connections allowed
+| [smtp-default-ips](smtp-server#config-file-settings)                     | List of default outgoing IP addresses
+| [smtp-extract](smtp-server#mime-headers)                                 | Toggle automatic extraction of metadata
+| [smtp-ip](smtp-server#config-file-settings)                              | SMTP server IP
+| [smtp-key](smtp-server#secure-connections)                               | Private key for secure SMTP connections
+| [smtp-mappable-ips](smtp-server#config-file-settings)                    | List of mappable IP adresses
+| [smtp-maxsize](smtp-server#other-settings)                               | Maximum message size to accept
+| [smtp-password](smtp-server#controlling-access)                          | Password for authenticating to SMTP server
+| [smtp-port](smtp-server#config-file-settings)                            | Ports for incoming MailerQ connections
+| [smtp-proxy](smtp-server#running-behind-haproxy)                         | IPs to treat as connection from proxy server
+| [smtp-range](smtp-server#controlling-access)                             | Range of IP address to allow incoming email for
+| [smtp-secure port](smtp-server#config-file-settings)                     | Ports for secure incoming MailerQ connections
+| [smtp-sink-ip](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
+| [smtp-sink-password](smarthost#using-smarthost-for-debugging)            | SMTP sink password
+| [smtp-sink-port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
+| [smtp-sink-username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
+| [smtp-threads](smtp-server#other-settings)                               | Number of threads started for SMTP traffic
+| [smtp-unmappable-ips](smtp-server#config-file-settings)                  | List of unmappable IP addresses
+| [smtp-username](smtp-server#controlling-access)                          | Username for authenticating to SMTP server
+| [spamassassin-host](smtp-server#testing-incoming-messages)               | Address for SpamAssassin daemon 
+| [spamassassin-port](smtp-server#testing-incoming-messages)               | Port for SpamAssassin daemon
+| [spool-delay](spool-directory#config-file-options)                       | Delay for processing spool directory files
+| [spool-directory](spool-directory#config-file-options)                   | Path to the directory to monitor
+| [spool-extract](spool-directory#config-file-options)                     | Toggle scanning for headers in spool directory mail
+| [spool-remove](spool-directory#config-file-options)                      | Toggle removal of files from spool directory
+| [storage-address](message-store-options)                                 | Address for external message storage
+| [storage-policy](message-store-options)                                  | Message store policy
+| [storage-threads](message-store-options)                                 | Storage threads
+| [storage-ttl](message-store-options)                                     | Time to live: Storage reload interval
+| [user](other-configuration#user)                                         | Change user for MTA
 | [www certificate](mgmt-setup#setting-up-a-secure-management-console)     | Certificate file for secure connection to management console
 | [www ciphers](mgmt-setup#setting-up-a-secure-management-console)         | Supported ciphers for secure management console
 | [www connections](mgmt-setup#activation)                                 | Limit for simultaneous HTTP connections to built-in HTTP server
