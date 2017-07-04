@@ -248,7 +248,7 @@ In the initial SMTP handshake the client advertises its capabilities
 contains the maximum allowed input size for message.
 
 To prevent that MailerQ exhausts the max number of open TCP connections
-that is allowed by the OS, you can set a "smtp-maxsize" setting. There will
+that is allowed by the OS, you can set a "smtp-connections" setting. There will
 never be more than this number of total _incoming_ and _outgoing_ connections.
 
 All SMTP traffic is handled by separate threads. The number of threads that 
