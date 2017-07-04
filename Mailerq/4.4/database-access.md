@@ -68,7 +68,7 @@ it is not possible to connect to the database.
 
 As we wrote, the database is not used for real time queries. Instead, all data
 is periodically copied into main memory. This ensures that the speed of the
-database is never a limitting factor in your mail deliveries.
+database is never a limiting factor in your mail deliveries.
 
 MailerQ normally reloads the database every 10 minutes. However, this is 
 a configurable interval. In the config file you can set the "database-ttl"
