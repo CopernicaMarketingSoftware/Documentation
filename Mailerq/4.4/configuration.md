@@ -1,7 +1,7 @@
 # Configuration file
 
 MailerQ reads its configuration from the "/etc/mailerq/config.txt" config 
-file.  This file holds configuration options for the connection to RabbitMQ, 
+file. This file holds configuration options for the connection to RabbitMQ, 
 NoSQL storage engine and database (MySql, Sqlite or PostgreSql) and other 
 options for MailerQ itself.
 
