@@ -8,7 +8,7 @@ De eerste `$id` moet vervangen worden met de numerieke identifier van de minivie
 
 ## De teruggegeven velden
 
-Deze methode geeft een JSON minirule object terug. Deze bevat de volgende eigenschappen:
+Deze methode geeft een JSON rule object terug. Deze bevat de volgende eigenschappen:
 
 - id:		  numerieke identifier van de regel
 - name:		  naam van de regel
