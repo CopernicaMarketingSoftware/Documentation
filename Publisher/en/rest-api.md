@@ -68,6 +68,7 @@ GET methods are used to fetch data. The following GET methods are available:
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml)                                        | Download logfile in XML format          |
 | GET       | [api.copernica.com/v1/email/$addres/events](./rest-get-email-events)                                      | Fetch email events                      |
 | GET       | [api.copernica.com/v1/message/$id/events](./rest-get-message-events)                                      | Fetch MS message events                 |
+| GET       | [api.copernica.com/v1/message/$id/body/](./rest-get-message-body)                                         | Fetch MS message body (HTML/MIME/text)  |
 | GET       | [api.copernica.com/v1/old/message/$id/events](./rest-get-old-message-events)                              | Fetch Publisher message events          |
 | GET       | [api.copernica.com/v1/old/document/$id/events](./rest-get-old-document-events)                            | Fetch Publisher document events         |
 | GET       | [api.copernica.com/v1/profile/$id/events](./rest-get-profile-events)                                      | Fetch profile events                    |
