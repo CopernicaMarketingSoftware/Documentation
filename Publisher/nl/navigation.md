@@ -16,7 +16,7 @@
     * [Optimaliseren van selecties](./selections-optimization.md)
 * [Templates](./templates)
     * [Personaliseren](./personalization.md)
-    * [Follow-up Manager](./follow-up-manager.md)
+    * [Follow-up Manager](./followups.md)
     * [Data-scripts](./followups-scripting.md)
     * [Video's en GIFs](./templates-video-gif)
 * [Statistieken](./statistics)

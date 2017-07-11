@@ -1,4 +1,4 @@
-# Follow-up Manager
+# Opvolgacties
 
 Als op een link in een mailing wordt geklikt, of als een andersoortige 
 gebeurtenis plaatsvindt, kan Copernica automatisch nieuwe acties uitvoeren 

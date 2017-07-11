@@ -62,6 +62,6 @@ de e-mail gefilterd en is dus niet zichtbaar voor de ontvanger.
 
 ## Meer informatie
 
-* [Follow-up Manager](./follow-up-manager)
+* [Follow-up Manager](./followups)
 * [Database data-script](./followups-scripting-database)
 * [Collection data-script](./followups-scripting-collection)

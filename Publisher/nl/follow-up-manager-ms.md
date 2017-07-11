@@ -30,5 +30,5 @@ link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting
 
 ## Meer informatie
 
-* [Follow-up Manager](./follow-up-manager)
+* [Follow-up Manager](./followups)
 * [Data-script attribuut](./followups-scripting.md)
