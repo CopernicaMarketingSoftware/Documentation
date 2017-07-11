@@ -28,3 +28,4 @@ element is clicked. The available objects can be found [here](./followups-script
 
 * [Follow-up manager](follow-up-manager-publisher)
 * [Data-script attribute](followups-scripting)
+* [Follow-up conditions](./conditions-for-follow-ups)

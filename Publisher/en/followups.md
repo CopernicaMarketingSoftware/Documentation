@@ -45,7 +45,7 @@ of the condition) or execution (of the followup). Read more about conditions
 
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
-* [Followups scripting](./followups-scripting.md)
-* [Conditions](./conditions-for-follow-ups)
+* [Follow-up scripting](./followups-scripting.md)
+* [Follow-up conditions](./conditions-for-follow-ups)
 
 

@@ -46,4 +46,5 @@ maar ook bij het uitvoeren. Meer over condities vindt je [hier](./conditions-for
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
 * [Data-scripts](./followups-scripting.md)
+* [Opvolgactie condities](./conditions-for-follow-ups)
 
