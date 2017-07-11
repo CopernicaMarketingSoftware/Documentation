@@ -35,6 +35,14 @@ benutten met het [*data-script* attribuut](./followups-scripting.md). Elke
 hyperlink kun je zo bijvoorbeeld verreiken met je eigen script om kliks 
 af te handelen.
 
+## Soorten follow-ups
+
+Opvolgacties bestaan uit een aanleiding en een actie. Voor **databases**, 
+**documenten**, **enquêtes** en **webformulieren** zijn verschillende 
+aanleidingen beschikbaar. Daarnaast kan er een wachttijd ingesteld worden 
+en een bestemming. Ook voor de acties zijn er verschillende instellingen. 
+Meer over aanleidingen, acties en instellingen vindt je [hier](./followups-types)
+
 ## Condities
 
 Je kunt condities toevoegen aan opvolgacties zodat deze zich exact gedragen 
@@ -46,5 +54,6 @@ maar ook bij het uitvoeren. Meer over condities vindt je [hier](./conditions-for
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
 * [Data-scripts](./followups-scripting.md)
+* [Opvolgactie types](./followups-types)
 * [Opvolgactie condities](./conditions-for-follow-ups)
 

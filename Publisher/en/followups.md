@@ -34,6 +34,14 @@ Programmers can use the full power of Copernica's follow up system with the
 every hyperlink in an email for example to handle clicks exactly how you 
 want.
 
+## Followup types
+
+Followups consist of a cause and an action. For **databases**, 
+**documents**, **surveys** and **webforms** there are different types 
+of causes available. You can also set a delay and a destination. Different 
+actions have different settings. More about all of this can be found 
+[here](./followups-types).
+
 ## Conditions
 
 You can add conditions to follow-up actions to make sure they behave 
@@ -46,6 +54,7 @@ of the condition) or execution (of the followup). Read more about conditions
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
 * [Follow-up scripting](./followups-scripting.md)
+* [Followup types](./followups-types)
 * [Follow-up conditions](./conditions-for-follow-ups)
 
 
