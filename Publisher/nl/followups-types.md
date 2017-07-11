@@ -74,7 +74,7 @@ hier bijvoorbeeld weer een email over sturen.
 
 ### Er is een profiel of subprofiel gevonden
 
-Deze aanleiding kan toegevoegd worden aan een webformulieer. Je kunt hier 
+Deze aanleiding kan toegevoegd worden aan een webformulier. Je kunt hier 
 checken of het webformulier is ingevuld door iemand die in je database 
 staat. Je kunt hier nog een extra controle toevoegen om te kijken of de 
 waarden van velden of interesses overeenkomen met een gespecificeerde waarde. 
