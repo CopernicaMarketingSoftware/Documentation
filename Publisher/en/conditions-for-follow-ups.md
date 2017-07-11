@@ -3,7 +3,9 @@
 Follow-ups can be set up in the [Publisher](./follow-up-manager-publisher), 
 [Marketing Suite](./follow-up-manager-ms) or with 
 [data-scripts](./followups-scripting). All of these methods support conditions 
-to check on set-up or execution, considering the data at the specified moment.
+to check on set-up or execution, considering the data at the specified moment. 
+To add such a condition make a followup first and then add it to the 
+finished followup.
 
 We distinguish between two types of conditions. The difference between 
 them is when the data is evaluated: at condition activation or followup 
