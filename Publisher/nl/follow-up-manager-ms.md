@@ -29,4 +29,5 @@ link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting
 
 * [Follow-up Manager](./followups)
 * [Data-script attribuut](./followups-scripting.md)
+* [Opvolgactie types](./followups-types)
 * [Opvolgactie condities](./conditions-for-follow-ups)

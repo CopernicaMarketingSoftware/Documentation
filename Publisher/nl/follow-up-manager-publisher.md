@@ -36,4 +36,5 @@ aangepast door op de oorzaak, wachtijd of op de actie zelf te klikken.
 
 * [Follow-up Manager](./followups.md)
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
+* [Opvolgactie types](./followups-types)
 * [Opvolgactie condities](./conditions-for-follow-ups)
