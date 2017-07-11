@@ -1,4 +1,4 @@
-# Follow up actions
+# Follow-up actions
 
 If someone clicks on a link in a mailing, or when some other kind of event
 happens, Copernica can automatically execute or schedule follow up actions.
@@ -37,10 +37,18 @@ can be enriched with a special script that will be executed when the link is
 clicked. This is a very powerful follow-up system because you can write your
 own scripts.
 
+## Conditions
+
+You can add conditions to follow-up actions to make sure they behave 
+exactly as intended. You can check these conditions on activation (creation 
+of the condition) or execution (of the followup). Read more about conditions 
+[here](./conditions-for-follow-ups).
+
 ## More information
 
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
 * [Followups scripting](./followups-scripting.md)
+* [Conditions](./conditions-for-follow-ups)
 
 
