@@ -96,7 +96,7 @@ of een vaste bestemming. Onder instellingen kun je nog kiezen
 wat je meestuurt, wat er geregistreerd wordt en hoe de mailing opgeslagen 
 wordt.
 
-### Send drag and drop template
+### Verstuur drag and drop template
 
 Deze actie verstuurt een drag and drop template. Je kunt hier de template, 
 de naam van de verzender, het adres van de verzender en het onderwerp 
