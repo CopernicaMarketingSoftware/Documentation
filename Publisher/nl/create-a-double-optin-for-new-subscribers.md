@@ -152,7 +152,7 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 ## Meer informatie
 
-- [Followups](./follow-up-manager)
+- [Followups](./followups)
 * [Selectie condities](./selections-conditions)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)

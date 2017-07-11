@@ -37,5 +37,5 @@ aangepast door op de oorzaak, wachtijd of op de actie zelf te klikken.
 
 ## Meer informatie
 
-* [Follow-up Manager](./follow-up-manager.md)
+* [Follow-up Manager](./followups.md)
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
