@@ -83,14 +83,16 @@ van de velden, of simpelweg op basis van het invullen van het webformulier.
 
 ## Acties
 
-De aanleiding triggert de acties, ofwel wat er gebeurt na de aanleiding.
+De aanleiding triggert de acties, ofwel wat er gebeurt na de aanleiding. 
+Bij een aantal van deze acties kan er een bericht worden verstuurd naar 
+een vaste bestemming. Dit is erg nuttig om bijvoorbeeld te testen of te 
+informeren, maar hou er altijd rekening mee dat het aantal emails snel 
+kan oplopen.
 
 ### Verstuur een opgemaakt document per e-mail
 
 Deze actie verstuurt een document naar het profiel dat de actie triggerde 
-of een vaste bestemming. Deze laatste kun je bijvoorbeeld gebruiken om 
-jezelf te informeren of om te testen, maar wees hier voorzichtig mee aangezien het 
-aantal emails snel kan oplopen. Onder instellingen kun je nog kiezen 
+of een vaste bestemming. Onder instellingen kun je nog kiezen 
 wat je meestuurt, wat er geregistreerd wordt en hoe de mailing opgeslagen 
 wordt.
 
