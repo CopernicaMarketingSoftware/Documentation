@@ -5,7 +5,7 @@ you can send a GET request to the following URL:
 
 `https://api.copernica.com/v1/message/$id/body/$type?access_token=xxx`
 
-where $id is the unique string that identifies a message and $type is 
+where `$id` is the unique string that identifies a message and `$type` is 
 the format for the message. Don't forget to add your access token! 
 This method can not be called with a PHP script.
 
@@ -17,7 +17,7 @@ The message can be returned in three formats:
 * **HTML**: HyperText Language Markup/internet markup
 * **Text**: Simple plain text
 
-Depending on the format the output looks different. MIME includes all 
+Depending on the format the output looks different. *MIME* includes all 
 the headers for example, while *text* only shows the plain text.
 
 ## More information
