@@ -11,14 +11,12 @@ CTA te selecteren waarvoor je een opvolgactie wilt gaan maken. Een
 follow-up actie kan je op twee manieren maken, met de flowchart editor 
 en met de script editor.
 
-
 ## Flowchart editor
 
 Binnen de flowchart editor kun je, door verschillende boxen met elkaar 
 te combineren, geavanceerde marketingcampagnes maken. 
 Sommige boxen staan het toe om met JavaScript extra functionaliteiten toe te voegen. 
 De beschikbare objecten kun je [hier](./followups-scripting) vinden. 
-
 
 ## Script editor
 
@@ -27,8 +25,8 @@ met JavaScript om zo geavanceerde campagnes op te zetten. Deze scripts worden,
 net als in de flowchart editor, uitgevoerd op de servers van Copernica als er op een 
 link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting).
 
-
 ## Meer informatie
 
 * [Follow-up Manager](./followups)
 * [Data-script attribuut](./followups-scripting.md)
+* [Opvolgactie condities](./conditions-for-follow-ups)
