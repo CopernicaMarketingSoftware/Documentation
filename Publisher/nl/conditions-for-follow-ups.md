@@ -4,7 +4,8 @@ Opvolgacties kun je instellen in de [Publisher](./follow-up-manager-publisher),
 [Marketing Suite](./follow-up-manager-ms) of met 
 [data-scripts](./followups-scripting). Binnen al deze methoden kun je 
 condities verbinden aan de uitvoering hiervan. Er wordt dan op basis van 
-je data op het aangegeven moment gekeken hoe de opvolgactie zich moet gedragen.
+je data op het aangegeven moment gekeken hoe de opvolgactie zich moet gedragen. 
+Maak hiervoor eerst een opvolgactie aan en voeg dan een conditie toe.
 
 De condities kunnen worden ingesteld voor zowel het inroosteren en het
 uitvoeren van de opvolgacties. We onderscheiden hierbinnen twee soorten condities:
