@@ -6,7 +6,7 @@ een aantal acties bespreken om je op weg te helpen. Al deze opvolgacties
 kun je gebruiken met de [Publisher](./follow-up-manager-publisher), 
 [Marketing Suite](./follow-up-manager-ms) en [follow-up scripting](./followups-scripting).
 
-## Aanleiding
+## Aanleidingen
 
 De aanleiding is wat ervoor zorgt dat de opvolgactie wordt verstuurd. Dit 
 moet dus eerst gebeuren voor een actie wordt uitgevoerd. Met een wachttijd 
