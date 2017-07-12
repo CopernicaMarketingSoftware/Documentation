@@ -10,7 +10,7 @@ recommendation and create the required MX record, all bounces and most
 out-of-office are sent back to Copernica, where we can use them for statistics
 and follow-up actions.
 
-## Envelope adresses
+## Envelope addresses
 
 To understand how this exactly works, we need to explain two important concepts
 of email: envelope addresses and MX records. Let's start with envelope addresses.

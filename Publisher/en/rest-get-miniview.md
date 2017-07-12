@@ -1,11 +1,13 @@
 # REST API: GET miniview
 
-A method to request all metadata from a selection in a collection (miniview). This method does not 
-support parameters. It is called by sending an HTTP GET request to the following URL:
+A method to request all metadata from a selection in a collection 
+(miniview). This method does not support parameters. It is called by 
+sending an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the collection you wish to request the miniselections for.
+In this, $id needs to be replaced by the numerical identifier or the 
+name of the collection you wish to request the miniselections for.
 
 ## Available parameters
 

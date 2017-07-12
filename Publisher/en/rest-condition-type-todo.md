@@ -70,8 +70,10 @@ $result = $api->post("rule/id/conditions", $data);
 print_r($result);
 ```
 
+The example above requires the [CopernicaRestApi class](rest-php).
+
 ## More information
 
 * [GET rule conditions](rest-get-rule-conditions)
 * [POST rule conditions](rest-post-rule-conditions)
-* [Condition type lastcontact](rest-condition-lastcontact)
+* [Condition type lastcontact](rest-condition-type-lastcontact)

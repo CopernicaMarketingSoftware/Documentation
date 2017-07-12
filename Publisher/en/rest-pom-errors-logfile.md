@@ -27,14 +27,14 @@ respective order:
 
 ## Other logfile names
 
-* [Marketing suite general log](./rest-cdm-attempts-logfile)
-* [Marketing suite abuse log](./rest-cdm-abuse-logfile)
-* [Marketing suite click log](./rest-cdm-click-logfile)
-* [Marketing suite delivery log](./rest-cdm-delivery-logfile)
-* [Marketing suite error log](./rest-cdm-error-logfile)
-* [Marketing suite impressions log](./rest-cdm-impression-logfile)
-* [Marketing suite retry log](./rest-cdm-retry-logfile)
-* [Marketing suite unsubscribe log](./rest-cdm-impression-logfile)
+* [Marketing Suite general log](./rest-cdm-attempts-logfile)
+* [Marketing Suite abuse log](./rest-cdm-abuse-logfile)
+* [Marketing Suite click log](./rest-cdm-click-logfile)
+* [Marketing Suite delivery log](./rest-cdm-delivery-logfile)
+* [Marketing Suite error log](./rest-cdm-error-logfile)
+* [Marketing Suite impressions log](./rest-cdm-impression-logfile)
+* [Marketing Suite retry log](./rest-cdm-retry-logfile)
+* [Marketing Suite unsubscribe log](./rest-cdm-impression-logfile)
 * [Publisher general log](./rest-pom-attempts-logfile)
 * [Publisher abuse log](./rest-pom-abuses-logfile)
 * [Publisher clicks log](./rest-pom-clicks-logfile)
@@ -43,11 +43,10 @@ respective order:
 * [Publisher retry log](./rest-pom-retries-logfile)
 * [Publisher unsubscribe log](./rest-pom-unsubscribes-logfile)
 
-
 ## More information on logfiles
 
 * [List of all API calls](rest-api)
-* [Get names of log files](rest-get-logfiles-names)
-* [Downloading a logfile in JSON format](./rest-get-logfiles-json.md)
-* [Downloading a logfile in CSV format](./rest-get-logfiles-csv.md)
-* [Downloading a logfile in XML format](./rest-get-logfiles-xml.md)
+* [GET logfiles names](rest-get-logfiles-names)
+* [GET logfiles JSON](./rest-get-logfiles-json.md)
+* [GET logfiles CSV](./rest-get-logfiles-csv.md)
+* [GET logfiles XML](./rest-get-logfiles-xml.md)

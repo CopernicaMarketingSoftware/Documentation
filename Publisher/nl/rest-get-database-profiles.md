@@ -8,7 +8,6 @@ en beschikbaar via het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de profielen van wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -38,7 +37,6 @@ parameter *order* geven:
 * random: de profielen worden in willekeurige volgorde teruggegeven;
 * modified: de profielen worden gesorteerd op basis het *modified* timestamp.
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van profielen. Voor elk profiel worden de 
@@ -51,7 +49,6 @@ volgende eigenschappen teruggegeven:
 * modified: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat;
 * fields: associative array / object van veldnamen en veldwaardes;
 * interests: array van de interesses van het profiel.
-
 
 ## Voorbeeld in PHP
 
@@ -80,11 +77,10 @@ print_r($api->get("database/1234/profiles", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profiel ID's](rest-get-database-profileids)
-* [Profiel toevoegen aan een database](rest-post-database-profiles)
-* [Profiel bijwerken](rest-put-profile-fields)
-* [Profiel verwijderen](rest-delete-profile)
+* [GET database profileids](rest-get-database-profileids)
+* [POST database profiles](rest-post-database-profiles)
+* [PUT profile fields](rest-put-profile-fields)
+* [DELETE profile](rest-delete-profile)

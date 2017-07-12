@@ -1,7 +1,7 @@
 # Personalisatieinstellingen
 
 Bij elk document en template kun je de personalisatie-instellingen wijzigen. 
-Met deze instellingen bepaal je ondermeer in welke taal [datums](./using-the-smarty-date-function.md)
+Met deze instellingen bepaal je ondermeer in welke taal [datums](./personalization-modifiers#date)
 worden weergegeven. Je vindt deze instelling linksonder de geopende
 template of document.
 
@@ -19,7 +19,7 @@ vier settings veranderen:
 
 ## Taal en tijdzone
 
-In het artikel over het [weergeven van datums en tijden](./using-the-smarty-date-function.md)
+Bij de modifier over het weergeven van [datums en tijden](./personalization-modifiers#date)
 hebben we dit ook al behandeld: als je de huidige datum wilt weergeven is daar
 een speciale |date_format modifier voor. Deze modifier kun je gebruiken om een 
 tijdstip in computernotatie om te zetten naar een tijdstip in mensennotatie. De

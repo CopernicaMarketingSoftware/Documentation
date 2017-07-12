@@ -34,7 +34,7 @@ wordt ingeroosterd of uitgevoerd, dan kan je dit instellen met condities
 voor opvolgacties. Je kan zo bijvoorbeeld voorkomen dat een e-mail wordt 
 verstuurd terwijl de ontvanger zich reeds heeft uitgeschreven.
 
-[Lees meer over condities voor opvolgacties](./follow-up-manager-publisher)
+[Lees meer over condities voor opvolgacties](./conditions-for-follow-ups)
 
 ## Kopiëren opvolgacties
 
@@ -44,7 +44,7 @@ gekopiëerd.
 ## Meer informatie
 
 * [Enquêtes](./surveys)
-* [Condities voor opvolgacties](./automate-campaigns-with-follow-up-actions.md)
+* [Condities voor opvolgacties](./conditions-for-follow-ups)
 * [Meer informatie over opvolgacties](./follow-up-manager-publisher)
-* [Opvolgactie manager](./follow-up-manager.md)
+* [Opvolgactie manager](./followups)
 

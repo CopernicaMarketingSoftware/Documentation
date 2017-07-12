@@ -1,10 +1,12 @@
 # REST API: GET database fields
 
-This method is used to request all fields in a database. It is an HTTP GET call to the following address:
+This method is used to request all fields in a database. It is an HTTP 
+GET call to the following address:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier or the name of the database of which you want to request the fields.
+In this, $id should be replaced by the numerical identifier or the name 
+of the database of which you want to request the fields.
 
 ## Available parameters
 
@@ -18,17 +20,23 @@ More information on the meaning of these parameters can be found [in the article
 
 ## Returned fields
 
-The method returns a list of fields in the database. For each field, the following properties are displayed:
+The method returns a list of fields in the database. For each field, 
+the following properties are displayed:
+
 - **ID**: ID of the field in the database
 - **name**: the name of the new field. (mandatory)
 - **type**: type of the new field
 - **value**: default value of the new field
-- **displayed**: boolean value to determine whether or not the field should be placed into lists and grids in the user interface
-- **ordered**: boolean value to determine whether or not profiles should be ordered by this field.
+- **displayed**: boolean value to determine whether or not the field 
+should be placed into lists and grids in the user interface
+- **ordered**: boolean value to determine whether or not profiles should 
+be ordered by this field.
 - **length**: maximum text length
 - **textlines**: number of lines in forms to edit the field
-- **hidden**: boolean value to make sure a field is never shown in the interface
-- **index**: boolean value that shows whether or not the field should be indexed
+- **hidden**: boolean value to make sure a field is never shown in the 
+interface
+- **index**: boolean value that shows whether or not the field should 
+be indexed
 
 ## PHP example
 
@@ -53,6 +61,7 @@ print_r($api->get("database/1234/fields", $parameters));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all API methods](rest-api)
 - [POST database fields](rest-post-database-fields)
 - [PUT database field](rest-put-database-field)

@@ -19,7 +19,7 @@ A field in a database can encompass an interest or collection.
 An interest can only consist of the value "yes" or "no".
 Collections are a little more complicated, because you kind of
 add a new layer to your database. In a collection you can add 
-multiple items like: "voornaam", "achternaam" en "e-mailadres".
+multiple items like: "first name", "last name" en "email address".
 Concluding, collections are structure-wise more or less 
 identical to databases. 
 
@@ -42,7 +42,7 @@ Copernica. You can get a grasp of how to work with profiles
 by making a profile with your own details. 
 
 You can test your emails constantly by sending an email to a
-*predetermined test destination*. This is a profile from the
+*pre-determined test destination*. This is a profile from the
 database that is marked as the profile for test emails.
 This email address is most likely your own.
  

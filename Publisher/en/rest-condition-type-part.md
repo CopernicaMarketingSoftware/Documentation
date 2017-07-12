@@ -48,6 +48,8 @@ $result = $api->post("rule/id/conditions", $data);
 print_r($result);
 ```
 
+The example above requires the [CopernicaRestApi class](rest-php).
+
 ## More information
 
 * [GET rule conditions](rest-get-rule-conditions)

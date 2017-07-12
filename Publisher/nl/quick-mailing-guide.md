@@ -9,7 +9,7 @@ het domein dat je wilt gaan gebruiken om je e-mails mee te versturen. Daarnaast 
 je ook concrete informatie achterlaten over het verzendtijdstip en de tags
 die je aan een e-mail mee wilt geven. Vervolgens kies je de ontvangers van je e-mail 
 door een [database](./database-introduction) of een [selectie](./selections-introduction) 
-aan te wijzen. Je kunt ook automatisch e-mails versturen met behulp van de [Follow-up Manager](./follow-up-manager).
+aan te wijzen. Je kunt ook automatisch e-mails versturen met behulp van de [Follow-up Manager](./followups).
 
 
 ## Meer informatie
@@ -19,4 +19,4 @@ Voor de wat meer geavanceerdere toepassingen kun je onderstaande artikelen bekij
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
 * [Personalisatie](./personalization)
-* [Follow-up Manager](./follow-up-manager)
+* [Follow-up Manager](./followups)

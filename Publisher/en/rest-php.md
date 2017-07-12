@@ -174,3 +174,7 @@ As an example, the following code retrieves the list of databases via an API cal
     
     // print the result
     print_r($result);
+    
+## More information
+
+* [REST API](./rest-api)

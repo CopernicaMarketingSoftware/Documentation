@@ -40,4 +40,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Subprofielen inclusief alle subprofieldata opvragen](rest-get-collection-subprofiles)
+* [GET collection subprofiles](rest-get-collection-subprofiles)

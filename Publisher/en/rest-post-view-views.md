@@ -4,7 +4,9 @@ Copernica supports nested selections. To edit a nested selection you can send a 
 
 `https://api.copernica.com/view/$id/views?access_token=xxxx`
 
-The first $id needs to be replaced by the numerical identifier of the upper selection and the second $id by the lower selection.
+The first `$id` needs to be replaced by the numerical identifier of the 
+upper selection and the second $id by the lower selection. After a 
+succesful call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -19,6 +21,7 @@ The following parameters can be added to the message body. Note that because thi
 - **has-rules**: Indicates whether the selection has rules or not
 
 ## PHP example
+
 The following PHP example demonstrates how to use the method:
 
 ```php
@@ -35,6 +38,8 @@ $data = array(
 
 // do the call
 $api->post("view/1234/views", array(), $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -43,5 +48,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 * [Overview of all API methods](rest-api)
 * [GET view views](./rest-get-view-views)
-
-

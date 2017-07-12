@@ -4,12 +4,15 @@ Method to add a new field to an existing database. This is an HTTP POST call to 
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. 
-The name of the field and other variables need to be added to the message body of the HTTP request.
+In this, `$id` should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. 
+The name of the field and other variables need to be added to the message 
+body of the HTTP request. After a succesful call the ID of the created 
+request is returned.
 
 ## Available parameters
 
 The following variables can be put into the message body of the HTTP POST call:
+
 - **name**: the name of the new field (mandatory)
 - **type**: type of the new field
 - **value**: default value of the new field
@@ -21,6 +24,7 @@ The following variables can be put into the message body of the HTTP POST call:
 - **index**: boolean value, sets whether or not the field should be indexed
 
 The following types are available for fields:
+
 - **integer**: numerical value
 - **float**: numerical floating point value
 - **date**: mandatory date field
@@ -54,6 +58,8 @@ $data = array(
 
 // do the call
 $api->post("database/1234/fields", $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

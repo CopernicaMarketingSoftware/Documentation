@@ -18,7 +18,7 @@ The following parameters can be added to the URL as variables:
 * **total**: boolean value for displaying the total amount of miniselections
 
 More information on the meaning of these parameters can be found in the 
-[article on paging](rest-paging).
+[article on paging](./rest-paging).
 
 ## Returned fields
 
@@ -55,6 +55,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-* [Overview of all API calls](rest-api)
-* [POST collection ](rest-post-collection-views)
-* [GET miniview rules](rest-get-miniview-rules)
+* [Overview of all API calls](./rest-api)
+* [POST collection ](./rest-post-collection-miniviews)
+* [GET miniview rules](./rest-get-miniview-rules)

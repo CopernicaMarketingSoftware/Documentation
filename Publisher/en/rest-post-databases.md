@@ -1,8 +1,11 @@
 # REST API: POST database
 
-This method is used to create a new database with the REST API. It uses an HTTP POST request to the following address:
+This method is used to create a new database with the REST API. It uses 
+an HTTP POST request to the following address:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
+
+After a succesful call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -29,6 +32,8 @@ $data = array(
 
 // do the call
 $api->post("databases", $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

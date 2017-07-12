@@ -31,7 +31,6 @@ worden de volgende eigenschappen teruggegeven:
 * name: naam van het veld
 * type: veld type
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -54,10 +53,9 @@ print_r($api->get("collection/id/fields", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Veld toevoegen aan een collection](rest-post-collection-fields)
-* [Veld bijwerken](rest-put-collection-field)
-* [Veld verwijderen](rest-delete-collection-field)
+* [POST collection fields](rest-post-collection-fields)
+* [PUT collection field](rest-put-collection-field)
+* [DELETE collection field](rest-delete-collection-field)

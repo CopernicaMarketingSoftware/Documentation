@@ -20,13 +20,13 @@ are described on the page of the particular log file.
 | Publisher Event Type                              | Description                                                        |
 | ------------------------------------------------- | ------------------------------------------------------------------ |
 | [attempt](./rest-pom-attempts-logfile.md)         | General info about mails sent with Publisher                       |
-| [abuse](./rest-pom-abuse-logfile.md)              | Info about mails sent via Publisher that triggered a notification  |
+| [abuse](./rest-pom-abuses-logfile.md)              | Info about mails sent via Publisher that triggered a notification  |
 | [click](./rest-pom-clicks-logfile.md)             | info about clicks generated from mails sent with Publisher         |
-| [delivery](./rest-pom-delivery-logfile.md)        | Info about delivered mails sent with Publisher                     |
-| [error](./rest-pom-error-logfile.md)              | Info about failed mails sent with Publisher                        |
-| [open](./rest-pom-impression-logfile.md)          | Info about impressions from mails sent with Publisher              |
-| [retry](./rest-pom-retry-logfile.md)              | Info about mails sent via Publisher for which we retry a delivery  |
-| [unsubscribe](./rest-pom-unsubscribe-logfile.md)  | Info about mails sent via Publisher that triggered an unsubscribe  |
+| [delivery](./rest-pom-deliveries-logfile.md)        | Info about delivered mails sent with Publisher                     |
+| [error](./rest-pom-errors-logfile.md)              | Info about failed mails sent with Publisher                        |
+| [open](./rest-pom-impressions-logfile.md)          | Info about impressions from mails sent with Publisher              |
+| [retry](./rest-pom-retries-logfile.md)              | Info about mails sent via Publisher for which we retry a delivery  |
+| [unsubscribe](./rest-pom-unsubscribes-logfile.md)  | Info about mails sent via Publisher that triggered an unsubscribe  |
 
 ## More information
 

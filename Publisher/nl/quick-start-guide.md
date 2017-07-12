@@ -28,5 +28,6 @@ Wil je realtime op de hoogte worden gehouden van de processen die rondom je
 mailings plaatsvinden? Stel dan feedbackloops in op je eigen systeem en 
 ontvang alle meldingen die van onze servers komen.
 
+* [Copernica begrippenlijst](./definitions)
 * [Integreren met je eigen systeem](./feedback-loops)
 * [Selecties maken in een database](./selections-introduction)

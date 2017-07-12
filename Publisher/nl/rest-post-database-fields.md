@@ -7,7 +7,8 @@ POST call naar het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een veld aan wilt toevoegen. De naam van het veld en eventuele
-andere waardes moeten als message body aan het HTTP request worden toegevoegd.
+andere waardes moeten als message body aan het HTTP request worden toegevoegd. 
+Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Beschikbare parameters
 
@@ -40,31 +41,30 @@ Een veld kan de volgende types hebben:
 * big: groot        tekstveld;
 * foreign_key:      numerieke waarde met verwijzing naar ander profile.
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica_rest_api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data to pass to the call
+// data voor het verzoek
 $data = array(
     'name'      =>  'extra-veld',
     'type'      =>  'text'
 );
 
-// do the call
+// voer het verzoek uit
 $api->post("database/id/fields", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

@@ -1,6 +1,9 @@
 # REST API: GET XML logfiles
 
-Copernica keeps logfiles which you can request with the API. This method can be used to download a logfile as XML using its filename. If you don't know the filename please see "More information" for instructions. To execute the method you can send an HTTP GET request to the following URL:
+Copernica keeps logfiles which you can request with the API. This method 
+can be used to download a logfile as XML using its filename. If you don't 
+know the filename please see "More information" for instructions. To 
+execute the method you can send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/logfiles/$filename/xml?access_token=xxxx`
 

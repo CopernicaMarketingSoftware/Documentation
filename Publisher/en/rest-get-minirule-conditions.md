@@ -5,7 +5,8 @@ support parameters. It is called by sending an HTTP GET request to the following
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the rule you wish to request the conditions for.
+In this, $id needs to be replaced by the numerical identifier or the 
+name of the rule you wish to request the conditions for.
 
 ## Available parameters
 

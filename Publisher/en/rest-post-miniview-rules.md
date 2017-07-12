@@ -4,8 +4,9 @@ Method to add a rule to an existing selection from a collection (miniview, see [
 
 `https://api.copernica.com/v1/miniview/$id/minirules?access_token=xxxx`
 
-The $id should be replaced by the ID of the miniview you want to add a rule to. 
-The name of the rule and other values should be added to the message body.
+The `$id` should be replaced by the ID of the miniview you want to add a rule to. 
+The name of the rule and other values should be added to the message body. 
+After a succesful call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -41,6 +42,8 @@ $data = array(
     
 // do the call
 $api->post("miniview/1234/minirules", $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

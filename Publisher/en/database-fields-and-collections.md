@@ -17,7 +17,7 @@ for good measure we'll describe the different aspects of databases below anyway.
 | Text field         	| Letters [A-Z], numeric values [0-9] and/or underscores. Maximal number of characters is 225.  |
 | Large field        	| Text field up to 16 million characters. Not recommended, because no indexing possible.        |
 | Date and time fields 	| Date field (yyyy-mm-dd). Time field contains the hours, minutes and seconds. 					|
-| Email field       	| Email field is textfield, intented to safe emailadresses.                                     |
+| Email field       	| Email field is textfield, intented to safe emailaddresses.                                     |
 | Phone field        	| Can be specified for fax, mobile and other phonenumbers.				                        |
 | Multiple choice field | Can be used to provide multiple options.					                                    |
 | Country code field   	| Accepts country codes by ISO 3166 standards.					                                |

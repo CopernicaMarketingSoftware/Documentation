@@ -1,13 +1,18 @@
 # REST API: PUT minirule
 
-A minirule is to a miniview what a rule is to a view. A method to edit the properties of an existing minirule can be called by sending an HTTP PUT request to the following URL:
+A minirule is to a miniview what a rule is to a view. A method to edit 
+the properties of an existing minirule can be called by sending an HTTP 
+PUT request to the following URL:
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-The $id needs to be replaced with the ID of the minirule you want to edit the properties of.
+The `$id` needs to be replaced with the ID of the minirule you want to 
+edit the properties of.
 
 ## Available parameters
-The following parameters can be placed in the message body of the HTTP PUT command:
+
+The following parameters can be placed in the message body of the HTTP 
+PUT command:
 
 - **name**: name of the rule
 - **view**: ID of the selection that the rule belongs to

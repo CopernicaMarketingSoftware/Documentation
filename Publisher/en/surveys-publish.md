@@ -3,7 +3,7 @@
 You can only publish surveys on webpages you have create in the **Websites**.
 To publish it on one of your websites you use the following special tag:
 
-`[survey name='surveyname']`
+`{survey name='surveyname'}`
 
 This is a survey with custom XSLT. XSLT is used to transform XML 
 into a document recognized by a browser, such as HTML. If you want to 

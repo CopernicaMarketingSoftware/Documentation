@@ -39,7 +39,6 @@ print_r($api->get("profile/1234"));
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
-
 ## More information
 
 * [List of all the API calls](rest-api)

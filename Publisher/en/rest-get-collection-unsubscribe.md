@@ -8,7 +8,7 @@ You can request your settings using the following URL:
 
 `https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
 
-$id can be the numerical identifier or the name of the database.
+`$id` can be the numerical identifier or the name of the database.
 
 ## Returned fields
 

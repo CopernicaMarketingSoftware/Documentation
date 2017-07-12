@@ -6,11 +6,9 @@ Dit is een methode om alle condities van een miniregel (voor een miniview) op te
 
 De `$id` hier moet vervangen worden door de ID van de miniregel waarvan je de condities op wil vragen.
 
-
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
-
 
 ## Teruggegeven velden
 
@@ -37,7 +35,6 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -55,9 +52,7 @@ print_r($api->get("minirule/1234/conditions"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API methodes](./rest-api)
-* [Vraag regels op](./rest-get-minirules)
-* [Vraag regel op bij ID](./rest-get-minirule)
+* [GET minirule](./rest-get-minirule)

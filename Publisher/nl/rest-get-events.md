@@ -30,7 +30,6 @@ variabelen worden toegevoegd:
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload moeten worden;
 - **tags**:  optionele tags waarop gefilterd kan worden.
 
-
 ## Start en end parameters
 
 De standaard periode van een event wordt getoond als er geen specifieke start- en einddatum wordt 
@@ -50,14 +49,12 @@ Deze datum begint 1 of 2 uur later (afhankelijk van zomer- en wintertijd) dan de
 Houd er ook rekening mee dat de beperking van de periode tot een maand gewijzigd kan worden als 
 de performance dit vereist.
 
-
 ## Tags
 
 Het is ook mogelijk om een tag mee te geven waarop de events gefilterd moeten
 worden. Het kan natuurlijk voorkomen dat je op meerdere tags tegelijkertijd
 wilt filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
 door middel van puntkomma's.
-
 
 ## Geretourneerde informatie
 
@@ -82,8 +79,7 @@ Na het verzoek ontvang je de volgende JSON:
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
-
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Events bij een bericht
 
@@ -105,7 +101,6 @@ https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
 
 Je kunt de gegevens over een andere periode opvragen door een `start`
 en/of `end` parameter meegeven.
-
 
 ## Events bij een e-mailadres
 
@@ -140,7 +135,6 @@ https://www.smtpeter.com/v1/tags/TAG1/TAG2/TAG3/.../events?acces_token=xxx
 De geretourneerde JSON bevat alleen events voor berichten die alle tags
 bevatten.
 
-
 ## Events bij een profiel
 
 Events bij een profiel kun je opvragen door een request te sturen naar:
@@ -154,7 +148,6 @@ je de events voor een andere periode wilt dan kun je een `start` en/of
 `end` parameter gebruiken.
 Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
 
-
 ## Events bij een subprofiel
 
 Events bij een subprofiel kun je opvragen door een request te sturen naar:
@@ -166,7 +159,6 @@ waar `$id` vervangen moet worden door de numerieke identfier van het subprofiel.
 Je krijgt vervolgens de events tot een maand terug. Als je events voor een
 andere periode wilt dan kun jee een `start` en/of `end` parameter gebruiken.
 Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
-
 
 ## Events bij een template
 
@@ -189,7 +181,6 @@ template. Als je de events voor een andere periode wilt hebben kun je
 optioneel een `start` en/of `end` parameter meegeven. Optioneel kun je ook
 filteren op tags door een `tags` parameter mee te geven.
 
-
 ## Events bij een document
 
 Events bij een document kun je opvragen door een request te sturen naar:
@@ -202,7 +193,6 @@ Je krijgt vervolgens de events tot een maand terug van dit document. Als
 je events voor een andere periode wilt hebben dan kun je een `start` 
 en/of `end` parameter meegeven. Optioneel kun je ook filter op tags 
 door een `tags` parameter mee te geven.
-
 
 ## Meer informatie
 

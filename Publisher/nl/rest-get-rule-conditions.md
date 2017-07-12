@@ -7,7 +7,6 @@ Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:
 
 De `$id` moet hier vervangen worden door de ID van de rule waarvan je de condition wilt vragen.
 
-
 ## Verschillende type conditions
 
 In onderstaande lijst zijn alle conditions weergegeven die mogelijk 
@@ -30,7 +29,6 @@ wat iedere condition inhoudt door erop te klikken:
 - [Part condition](./rest-condition-type-part.md)
 - [ReferView condition](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Dit voorbeeld vereist de [REST API class](rest-php).
@@ -47,9 +45,7 @@ print_r($api->get("rule/id/conditions"));
 ```
 Dit voorbeeld vereist de [REST API class](./rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API methodes](./rest-api)
-* [Get rules](./rest-get-rules)
-* [Get rules voor specifieke ID](./rest-get-rule)
+* [GET rule](./rest-get-rule)

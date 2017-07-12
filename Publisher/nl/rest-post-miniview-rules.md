@@ -4,8 +4,10 @@ Deze methode voegt een regel toe aan een bestaande selectie van een collectie. O
 
 `https://api.copernica.com/v1/miniview/$id/minirules?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
-
+De `$id` moet hier vervangen worden door de ID van de selectie waar een 
+regel aan toegevoegd moet worden. De naam van de regel en de andere waarden 
+moeten toegevoegd worden aan de message body. Bij een succesvolle call 
+wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Beschikbare parameters
 
@@ -16,7 +18,6 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 - **conditions**: Array van condities waar profielen binnen de selectie aan moeten voldoen, zoals bepaalde waarden in bepaalde velden
 - **inversed**: Boolean waarde die met waarde "True" alleen profielen teruggeeft die juist *niet* aan de regel voldoen
 - **disabled**: Boolean waarde die aangeeft of de regel wel of niet uitgeschakeld is
-
 
 ## Voorbeeld in PHP
 
@@ -29,7 +30,7 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor de methode
+// data voor het verzoek
 $data = array(
     'name'      =>  'rulename',
     'view'      =>  1234,
@@ -38,16 +39,16 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("miniview/1234/rules", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Aanmaken van een nieuwe selectie](rest-put-miniview)
-* [Toevoegen van condities aan een regel](rest-post-minirule-conditions)
-* [Selectie regels opvragen](rest-get-miniview-rules)
+* [PUT miniview](rest-put-miniview)
+* [POST minirule conditions](rest-post-minirule-conditions)
+* [GET miniview rules](rest-get-miniview-rules)
 

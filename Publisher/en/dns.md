@@ -2,7 +2,7 @@
 
 If you configure Copernica, while setting up a [sender domain](./sender-domains), 
 you have to make changes to your DNS. DNS is the worldwide system used by 
-computers to change domain names into IP adresses used by computers. 
+computers to change domain names into IP addresses used by computers. 
 
 If you want to use Copernica's suggested DNS records you need to know who 
 your DNS provider is. This is often the same company that hosts your website. 
@@ -24,7 +24,7 @@ information about a domain name, some of them pertaining to email. The following
 list contains some of them and links to their respective background articles.
 
 * [MX](mx): The server that processes incoming mail for a domain.
-* [SPF](spf): The IP adresses that send email from the domain.
+* [SPF](spf): The IP addresses that send email from the domain.
 * [DKIM](dkim): Used to determine validity of the digital signature.
 * [DMARC](dmarc): Policy on (possibly) incorrect email.
 
@@ -55,7 +55,7 @@ a DNS lookup at the server of your provider. The DNS server of your provider
 first searches its cache to see if anyone queried the IP of www.example.com 
 earlier. If this is the case the answer can immediately be sent to you.
 
-If the adress is not in the cache the provider looks the adress up in a 
+If the address is not in the cache the provider looks the address up in a 
 higher DNS server. This server might know the answer, or refer to 
 another server that knows more about this type of adresses. If a lookup 
 is used very little, for example because it is a little-known domain from 

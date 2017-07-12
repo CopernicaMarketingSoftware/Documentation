@@ -1,14 +1,15 @@
-## Reduce HTML errors in Publisher
+## Reducing HTML errors
 
-In Publisher all of your templates are written in HTML and sometimes errors 
-may occur. Having lots of HTML errors in your template and document may affect your
-deliverability. It is advised to reduce errors as much as possible.
+In Copernica software templates can be written in HTML and this may sometimes 
+result in HTML errors. Not all of them are visible to the eye of your customer, 
+but they can be visible to email clients accepting your email. Leaving errors 
+in your templates may influence your deliverability, so reduce HTML errors 
+as much as possible. This article will help you with locating errors and 
+solving some of the most common ones.
 
 To see if your template and/or document has any HTML errors, click on
-the warnings button in the lower toolbar of the screen.
-
-This check provides some information on the found error and how you
-could solve it.
+the warnings button in the lower toolbar of the screen. This check 
+provides some information on the found error and how you could solve it.
 
 Some HTML errors may only come up when the document is
 **personalized**. Set the preview version to personalized in the lower left
@@ -16,8 +17,7 @@ corner to validate the personalized document using the test destination.
 
 ![](../images/htmlerrors.png)
 
-Common HTML errors are
-----------------------
+## Common HTML errors
 
 **Warning: <img\> lacks "alt" attribute**
 The image has no alt attribute. You should solve this, because not
@@ -55,4 +55,5 @@ check for spelling errors.
 
 ## More information
 
-* [Templates in Publisher](./templates-and-documents)
+* [Deliverability](./deliverability)
+* [Templates](./templates)

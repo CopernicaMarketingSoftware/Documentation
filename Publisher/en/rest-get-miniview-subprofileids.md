@@ -18,16 +18,16 @@ This method returns a JSON array consisting of unique numerical identifiers.
 
 ## PHP example
 
-The following PHP scriptt demonstrates how to use the API method.
+The following PHP script demonstrates how to use the API method.
 
 ```php
-// vereiste scripts
+// required modules
 require_once('copernica_rest_api.php');
    
-// verander dit naar je access token
+// change this to your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// voer de methode uit en print het resultaat
+// execute the call and print the result
 print_r($api->get("miniview/1234/subprofileids"));
 ```
 
