@@ -1,6 +1,6 @@
-# Begrippen binnen Copernica
+# Begrippenlijst 
 
-Als je net nieuw bent in de wereld van e-mailmarketing kom je misschien 
+Als je net nieuw bent in de wereld van e-mailmarketing, kom je misschien 
 nog veel nieuwe termen tegen in onze documentatie en software. Deze pagina 
 legt enkele kernbegrippen uit om je op weg te helpen. Sommige begrippen 
 linken naar achtergrondartikelen met meer informatie.
@@ -31,7 +31,7 @@ linken naar achtergrondartikelen met meer informatie.
                                                                                                                                                                                                                                               
 ## Meer informatie                                                                                                                                                                                                                            
 
-* [Snelle start](./quick-start-guide)
-* [Zenderdomein instellen](./quick-sender-domain-guide)
+* [Snel aan de slag](./quick-start-guide)
+* [Sender domain instellen](./quick-sender-domain-guide)
 * [Database inrichten](./quick-database-guide)
 * [Je eerste mailing](./quick-mailing-guide)

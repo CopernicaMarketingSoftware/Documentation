@@ -1,25 +1,21 @@
-# Video en GIFs in email
+# Video en GIFs
 
-Video is een erg nuttig medium in marketing: Het is leuk, trekt je aandacht 
-en kan belangrijke boodschappen overbrengen. Helaas ondersteunen weinig 
-email clients video in een email, maar er zijn andere manieren om toch 
-video in je mail te verwerken. In dit artikel bespreken we een aantal 
-manieren om je email interessanter te maken met GIFs en video.
+Hieronder is een korte toelichting gegeven over het gebruik van video en GIF
+in e-mails. 
 
-## Link naar je video
+## Video
 
-Als je een video host, bijvoorbeeld op youtube of je eigen website, kun 
-je ernaar linken vanuit je email. Wij raden bijvoorbeeld aan om een mooi 
-beeld uit je video in je email te plaatsen met een afspeelicoontje erop. 
-Als je hieraan een hyperlink toevoegt kunnen de gebruikers direct naar je 
-video gestuurd worden vanuit de email. Vergeet ook niet `?play` aan het 
-einde van de URL toe te voegen zodat de video meteen afspeelt als de 
-gebruiker klikt.
+Als je een video host, bijvoorbeeld op YouTube of je eigen website, kun 
+je ernaar linken vanuit je e-mail. Je kunt bijvoorbeeld een beeld uit de
+video combineren met een afspeelicoontje om gebruikers middels een 
+hyperlink direct naar je video te sturen als ze erop klikken in de e-mail. 
+Vergeet ook niet `?play` aan het einde van de URL toe te voegen, zodat de 
+video meteen afspeelt als de gebruiker klikt.
 
 ## GIFs
 
 GIFs kun je gebruiken om een korte animatie, scene uit een video of 
-slideshow toe te voegen aan je email. Je hoeft je dan ook geen zorgen te 
+slideshow toe te voegen aan je e-mail. Je hoeft je dan ook geen zorgen te 
 maken over het hosten van je video. Je kunt zo'n GIF bijvoorbeeld gebruiken 
 om verschillende kleuren of stijlen van je product te laten zien. GIFs 
 zijn een ouder formaat en worden over het algemeen goed ondersteund. 
@@ -39,13 +35,6 @@ je gebruikers innemen.
 overbodige frames te verwijderen. Als je ervaren bent met photoshop kun 
 je er ook voor kiezen om alleen de bewegende onderdelen te animeren, 
 waardoor de afbeelding niet voor elk frame opnieuw getekend hoeft te worden.
-
-## Geanimeerde link naar je video
-
-Daarnaast is het ook heel interessant om de GIF en de afbeelding met het 
-afspeelicoon te combineren. GIFs kunnen door middel van een hyperlink ook 
-doorverwijzen naaar je video. Je trekt de aandacht met de GIF en nodigt 
-zo je gebruiker uit om verder te kijken naar wat jij te zeggen hebt.
 
 ## Meer informatie
 
