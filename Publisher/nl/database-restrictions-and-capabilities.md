@@ -37,7 +37,7 @@ voldoen om toegelaten te worden.
 
 Reguliere expressies (vaak afgekort naar *regex*) is een krachtig methode 
 om restricties in te stellen. Deze expressies kunnen patronen herleiden en
-de uitkomst goed of afkeuren. De volgende regex laat alleen postcodes toe
+de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
 die bestaan uit 4 getallen, gevolgd door twee letters (0000AA).
 
 ```javascript
