@@ -8,7 +8,6 @@ sturen naar de volgende URL:
 De `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -19,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -35,7 +33,6 @@ dit een selection direct onder een database is, of een geneste selection onder e
 * has-children: 	boolean waarde; heeft deze selection geneste selecties onder zich?
 * has-referred: 	boolean waarde; zijn er andere selection die verwijzen naar deze selection?
 * has-rules: 		boolean waarde; zijn er selection-regels voor deze selection ingesteld?
-
 
 ## Voorbeeld in PHP
 
@@ -59,10 +56,9 @@ print_r($api->get("database/1234/views", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Selectie toevoegen aan database](rest-post-view)
-* [Opvragen geneste selecties](rest-get-view-views)
-* [Selectieregels opvragen](rest-get-view-rules)
+* [PUT view](rest-put-view)
+* [GET view views](rest-get-view-views)
+* [GET view rules](rest-get-view-rules)

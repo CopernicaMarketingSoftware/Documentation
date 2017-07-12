@@ -34,7 +34,7 @@ te benaderen.
 
 Feedback loops zijn heel krachtig omdat je *realtime* notificaties van 
 gebeurtenissen krijgt. Het nadeel van feedback loops is echter dat je geen 
-contôle hebt over de snelheid van de calls. Met name als je een feedback loop
+controle hebt over de snelheid van de calls. Met name als je een feedback loop
 instelt die wordt aangeroepen telkens wanneer een mail wordt geopend (en
 zoiets gebeurt heel vaak), dan kan de stroom van calls vanuit Copernica 
 gigantisch worden. Als jouw servers onvoldoende capaciteit hebben om al deze 

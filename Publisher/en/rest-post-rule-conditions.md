@@ -4,7 +4,9 @@ support parameters. It is called by sending an HTTP POST request to the followin
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the rule you wish to edit the conditions of.
+In this, `$id` needs to be replaced by the numerical identifier or the name 
+of the rule you wish to edit the conditions of. After a succesful call 
+the ID of the created request is returned.
 
 ## Available parameters
 
@@ -51,6 +53,8 @@ $data = array(
 
 // do the call, and print result
 $api->post("rule/1234/conditions", array(), $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

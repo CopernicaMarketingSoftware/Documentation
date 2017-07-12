@@ -1,14 +1,18 @@
 # REST API: GET miniview subprofiles
 
-Subprofiles are to a collection what regular profiles are to a database. To request the subprofiles that represent a certain profile from a miniview you can send an HTTP GET request to the following URL:
+Subprofiles are to a collection what regular profiles are to a database. 
+To request the subprofiles that represent a certain profile from a 
+miniview you can send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/miniview/$id/subprofile?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the miniview you're requesting the subprofiles of.
+The $id should be replaced with the numerical identifier of the miniview 
+you're requesting the subprofiles of.
 
 ## Returned fields
 
-This method returns an array of subprofiles of a miniview. These subprofiles are JSON objects with the following properties:
+This method returns an array of subprofiles of a miniview. These 
+subprofiles are JSON objects with the following properties:
 
 - **id**: unique numerical identifier of the subprofile
 - **secret**: secret code associated with the subprofile

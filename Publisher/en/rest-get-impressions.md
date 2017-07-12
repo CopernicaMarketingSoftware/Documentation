@@ -63,9 +63,25 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of API calls](./rest-api.md)
-* [GET abuses](./rest-get-abuses.md)
-* [GET clicks](./rest-get-clicks.md)
-* [GET deliveries](./rest-get-deliveries.md)
-* [GET errors](./rest-get-errors.md)
-* [GET unsubscribes](./rest-get-unsubscribes.md)
+
+### Publisher logfiles
+
+* [GET abuses](./rest-pom-abuses-logfile.md)
+* [GET attempts](./rest-pom-attempts-logfile.md)
+* [GET clicks](./rest-pom-clicks-logfile.md)
+* [GET deliveries](./rest-pom-deliveries-logfile.md)
+* [GET errors](./rest-pom-errors-logfile.md)
+* [GET impressions](./rest-pom-impressions-logfile.md)
+* [GET retries](./rest-pom-retries-logfile.md)
+* [GET unsubscribes](./rest-pom-unsubscribes-logfile.md)
+
+### Marketing Suite logfiles
+
+* [GET abuses](./rest-cdm-abuse-logfile.md)
+* [GET attempts](./rest-cdm-attempts-logfile.md)
+* [GET clicks](./rest-cdm-click-logfile.md)
+* [GET deliveries](./rest-cdm-delivery-logfile.md)
+* [GET errors](./rest-cdm-error-logfile.md)
+* [GET impressions](./rest-cdm-impression-logfile.md)
+* [GET unsubscribes](./rest-cdm-unsubscribe-logfile.md)
 

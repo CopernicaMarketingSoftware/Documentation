@@ -7,7 +7,6 @@ you can make a GET request to the following URL:
 
 where `$id` is the unique string that identifies a message.
 
-
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
@@ -28,7 +27,6 @@ it will be shortened to a month where the start is leading. Take into
 account that the dates are treated as UTC dates. Also take into account
 that the monthly period limitation is subject to change if performance
 requires this.
-
 
 ## Returned fields
 

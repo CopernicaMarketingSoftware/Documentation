@@ -1,10 +1,12 @@
 # REST API: PUT rule
 
-A method to edit the properties of an existing rule. It is called using the following URL:
+A method to edit the properties of an existing rule. It is called using 
+the following URL:
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`
 
-The $id needs to be replaced with the ID of the rule you want to edit the properties of.
+The `$id` needs to be replaced with the ID of the rule you want to edit 
+the properties of.
 
 ## Available parameters
 The following parameters can be placed in the message body of the HTTP PUT command:

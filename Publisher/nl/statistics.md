@@ -56,7 +56,7 @@ informatie.
 
 ## Meer informatie
 
-* [Mailing statistieken](./view-the-results-of-your-mailing)
+* [Mailing statistieken](./statistics-mailing)
 * [Kerncijfers periode](./statistics-key-figures)
 * [Export statistieken](./statistics-export)
 * [Export statistieken met REST API](./rest-get-logfiles-names)

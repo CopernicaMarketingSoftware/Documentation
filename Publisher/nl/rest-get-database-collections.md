@@ -8,7 +8,6 @@ request:
 De `$id` moet je vervangen door de numerieke identifier of de naam van 
 de database waar je de collecties van wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -19,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -35,7 +33,6 @@ De *fields* property bevat een array van de velden in de collectie. Elke veld
 in dit array is ook een object. Zie de documentatie van de 
 [methode om velden op te vragen](./rest-get-collection-fields) voor de betekenis
 van deze geneste data.
-
 
 ## Voorbeeld in PHP
 
@@ -59,7 +56,6 @@ print_r($api->get("database/id/collections", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-    
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

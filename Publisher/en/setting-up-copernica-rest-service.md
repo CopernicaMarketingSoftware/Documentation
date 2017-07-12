@@ -67,7 +67,7 @@ the variables, although in reality you should of course encode them):
 -   **client\_id** This is the public client key obtained in the first
     step.
 -   **state** This is a random session string and can be anything. It is
-    used to prevent forgery by malicious users. Therefor this string
+    used to prevent forgery by malicious users. Therefore this string
     MUST be a 'hard to guess' string. Otherwise the procedure will fail.
     The state value is later matched against the authentication response
     from Copernica. You can for example use a 32 bytes md5 hash string

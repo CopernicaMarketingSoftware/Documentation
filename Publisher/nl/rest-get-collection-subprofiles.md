@@ -80,11 +80,8 @@ print_r($api->get("collection/1234/subprofiles", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
     
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profiel ID's](rest-get-collection-profileids)
-* [Subprofiel toevoegen aan een collectie](rest-post-collection-subprofiles)
-* [Subprofiel bijwerken](rest-put-subprofile-fields)
-* [Subprofiel verwijderen](rest-delete-subprofile)
+* [GET collection subprofileids](rest-get-collection-subprofileids)
+* [DELETE subprofile](rest-delete-subprofile)

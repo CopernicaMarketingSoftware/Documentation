@@ -67,7 +67,7 @@ There are two very simple ways to prevent this: enable the auto-escaping
 feature in the [small form with personalization settings](./personalization-settings.md), 
 or use the Smarty *escape modifier*.
 
-Smarty contains an extremely useful function called the [escape modifier](./personalization-modifiers-escape). 
+Smarty contains an extremely useful function called the [escape modifier](./personalization-modifiers#escape). 
 Every variable that you use in a mailing or website should be passed
 through this modifier if auto-escaping is not enabled to neutralize 
 possibly harmful HTML code that was entered by users:
@@ -122,8 +122,10 @@ not be recognized as Smarty code, but is literally included in the mailing.
 
 ## Testing personalization
 
-If you're creating a template or document, you can immediately 
-[test the personalization](./personalization-testing.md). The data from the
+While creating a template or document you can immediately 
+test the personalization. In Publisher the button to enable personalization 
+is found in the bottom of the dashboard. In the Marketing Suite the option 
+is located on the right of the screen. The data from the
 profile that you assigned as test destination is used for this test/preview.
 Do make sure that you assign a profile that comes from the
 same database that you will use for your mailing, so that it uses the
@@ -153,5 +155,4 @@ Personalization is not yet supported in the following places:
 * [Overview of variables](./personalization-variables.md)
 * [Overview of modifiers](./personalization-modifiers.md)
 * [Overview of functions](./personalization-functions.md)
-* [Tips and tricks](./personalization-tricks.md)
 * [Smarty Documentation](http://www.smarty.net/docs/en/) 

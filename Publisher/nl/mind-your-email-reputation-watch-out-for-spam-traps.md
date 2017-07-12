@@ -27,7 +27,7 @@ aankomen en jij zo op een blacklist komt te staan.
 Spammers hebben er alle baat bij de betrouwbaarheid van blacklists te
 beschadigen door legitieme verzendadressen in een spamtrap te laten
 lopen. Als zij dus het vermoeden hebben dat bepaalde e-mailadressen
-spamvallen zijn, kunnen zij deze aanmelden voor legetime e-mailings om
+spamvallen zijn, kunnen zij deze aanmelden voor legitieme e-mailings om
 zo de reputatie van een blacklist te beschadigen.
 
 Hoe vaker dit gebeurt, hoe minder betrouwbaar de spamtrap en de daaruit

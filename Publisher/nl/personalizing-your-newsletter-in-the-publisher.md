@@ -30,8 +30,8 @@ met het volgende e-mailadres: {$email}.
 ```
 
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
-in je database met de [in_selection](./personalization-function-in_selection) 
-en [in_miniselection](./personalization-function-in_miniselection) functies.
+in je database met de [in_selection](./personalization-functions-in_selection) 
+en [in_miniselection](./personalization-functions-in_miniselection) functies.
 
 Echter, er zijn wel wat belangrijke dingen om op te letten als je werkt met 
 Smarty:

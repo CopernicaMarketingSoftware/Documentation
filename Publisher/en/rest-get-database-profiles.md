@@ -41,7 +41,9 @@ The method returns a list of profiles. For each profile, the following propertie
 
 ## PHP example
 
-The following script demonstrates how to use this method. Because we use the CopernicaRestApi class, you don’t have to worry about escaping special characters in the URL; it is done automatically.
+The following script demonstrates how to use this method. Because we use 
+the CopernicaRestApi class, you don’t have to worry about escaping 
+special characters in the URL; it is done automatically.
 
 ```php
 // dependencies

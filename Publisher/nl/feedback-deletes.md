@@ -8,7 +8,12 @@ server met daarin alle relevante informatie over het zojuist verwijderde profiel
 
 ## Variabelen
 
-Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
+Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
+De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
+
+Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
+bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
+bijvoorbeeld *interests[]=xyz*.
 
 | Variabele          | Omschrijving
 |--------------------|----------------------------------------------------------------------------------------|
@@ -33,6 +38,27 @@ Voor subprofielen zijn dit de volgende variabelen:
 | profile    | unieke identifier van het profiel van het subprofiel        |
 | database   | unieke identifier van de database van het subprofiel        |
 | collection | unieke identifier van de collectie van het subprofiel       |
+
+## Voorbeeld
+
+Een ontcijferde POST call ziet er bijvoorbeeld zo uit voor een profiel:
+
+    {
+        "action":       "delete",
+        "profile":      123,
+        "timestamp":    "1979-02-12 12:49:23",
+        "database":     1,
+    }
+    
+Een voorbeeld voor een subprofiel:
+
+    {
+        "action":       "delete",
+        "subprofile":   456,
+        "timestamp":    "1979-02-12 12:49:23",
+        "profile":      123
+        "collection":   2,
+    }
 
 ## Meer informatie
 

@@ -10,9 +10,7 @@ ervoor kan zorgen dat het aantal deelnemers hier hoger is dan in het tabje
 **Deelnemers**.
 
 Herkende profielen kunnen zowel profielen als subprofielen zijn die 
-ingelogd waren op het moment dat de enquête werd ingevuld. Om zo veel 
-mogelijk ingelogde gebruikers te registreren kun je kijken naar de 
-documentatie over het [toevoegen van gepersonaliseerde hyperlinks](./surveys-register-participants).
+ingelogd waren op het moment dat de enquête werd ingevuld.
 
 ## Meer informatie
 

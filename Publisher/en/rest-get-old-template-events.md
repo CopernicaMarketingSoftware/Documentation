@@ -16,7 +16,6 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-
 ### Start and end
 
 If no start and end parameters are provided you will get the events

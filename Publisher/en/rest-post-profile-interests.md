@@ -5,7 +5,7 @@ following URL:
 
 `https://api.copernica.com/v1/profile/$id/interests?access_token=xxxx`
 
-The $id should be replaced with the ID of the profile you want to change 
+The `$id` should be replaced with the ID of the profile you want to change 
 the interests of. The new interests of the profile can be placed in the 
 body of the message.
 

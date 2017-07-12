@@ -7,6 +7,7 @@ When you send an HTTP DELETE request to the following URL, you’ll delete a fie
 The $id needs to be replaced by the numerical identifier, the ID, of the collection. The second needs to be replaced by the ID or the name of the field you want to delete.
 
 ## PHP example
+
 The following example demonstrates how to make a call using this method.
 
 	// dependencies
@@ -18,10 +19,11 @@ The following example demonstrates how to make a call using this method.
 	// do the call
 	$api->delete("collection/1234/field/firstname");
 
-This example uses the [CopernicaRestAPi class](rest-php).
+The example above requires the [CopernicaRestAPI class](rest-php).
 
 ## More information
+
 - [Overview of all API calls](rest-api)
-- [Requesting all fields from a collection](rest-get-collection-fields)
-- [Creating a new field in a collection](rest-post-collection-fields)
-- [Editing a field in a collection](rest-put-collection-fields)
+- [GET collection fields](rest-get-collection-fields)
+- [POST collection fields](rest-post-collection-fields)
+- [PUT collection field](rest-put-collection-field)

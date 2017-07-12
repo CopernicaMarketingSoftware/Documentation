@@ -4,7 +4,7 @@ To retrieve all rules in a selection, send a HTTP GET request to this address:
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
 
-The $id code should be replaced with the numeric identifier of the selection
+The `$id` code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.
 
 ## Supported parameters
@@ -61,5 +61,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [Overview of all API calls](./rest-api.md)
 * [GET miniview rule](./rest-get-miniview-rules)
 * [GET rule](./rest-get-rule)
-
-

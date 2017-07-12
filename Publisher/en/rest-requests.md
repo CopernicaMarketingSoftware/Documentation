@@ -13,7 +13,6 @@ The HTTP GET requests normally return a JSON string as body data. The other
 requests (POST, PUT and DELETE) do not return body data, but do add a header
 holding the identifier of the resource that was created, updated or removed.
 
-
 ## Sending data to the API
 
 There are two ways to encode the data that you send with POST and PUT requests: using 
@@ -44,7 +43,6 @@ Instead of JSON encoding, you can also use the old-fashioned form encoding:
 De content-type header is only used for POST and PUT requests. For GET and 
 DELETE requests we do not accept body data.
 
-
 ## The response from Copernica
 
 The reply that you receive from the API servers depends on the type of 
@@ -62,7 +60,6 @@ DELETE request holds an "X-deleted" header: "X-deleted: profile $profileID".
 
 For failed API calls a "400 Bad request" response is sent back. The body then
 holds a JSON message describing the error.
-
 
 ## More information
 

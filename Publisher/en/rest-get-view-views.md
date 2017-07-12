@@ -6,7 +6,7 @@ to the following URL:
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier of the selection
+In this, `$id` needs to be replaced by the numerical identifier of the selection
 that you wish to request the subselections of.
 
 ## Available parameters

@@ -8,7 +8,6 @@ methode die toegankelijk is via het volgende adres:
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken.
 
-
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
@@ -21,7 +20,6 @@ geplaatst:
 - fields:           array met velden in de database;
 - interests:        array met interesses in de database;
 - collections:      array met de collecties in de database.
-
 
 ## Voorbeeld in PHP
 
@@ -46,9 +44,7 @@ api->put("database/1234", $data);
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van een lijst van databases](rest-get-databases)
-* [DELETE database](rest-delete-database)
+* [GET databases](rest-get-databases)

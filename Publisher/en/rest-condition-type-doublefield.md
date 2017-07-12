@@ -35,7 +35,7 @@ selection by comparing the first name and the last name fields with the correct
 match-mode. The following values describe this set of people:
 
 * **match-mode**: match_unique profiles
-* **fields**: \[first_name, last_name\]
+* **fields**: [first_name, last_name]
 
 ```php
 // required code
@@ -45,13 +45,13 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestApi("my-access-token");
 
 $data = array(
-    // selecteer doublefield conditie
+    // select doublefield condition
     'type' => 'DoubleField',
 
-    // gebruik matchmode
+    // use matchmode
     'match-mode' => 'match_unique_profiles',
 
-    // selecteer velden voor matchmode
+    // select fields for matchmode
     'fields' => '[first_name, last_name]',
 );
 
@@ -61,6 +61,8 @@ $result = $api->post("rule/id/conditions", $data);
 // print the result
 print_r($result);
 ```
+
+The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 

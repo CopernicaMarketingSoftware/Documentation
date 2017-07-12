@@ -1,10 +1,11 @@
 # REST API: GET rule conditions
+
 A method to request all conditions from a rule. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the rule you wish to request the conditions for.
+In this, `$id` needs to be replaced by the numerical identifier or the name of the rule you wish to request the conditions for.
 
 ## Available parameters
 
@@ -58,5 +59,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [GET rules](./rest-get-rules)
 * [GET rule](./rest-get-rule)

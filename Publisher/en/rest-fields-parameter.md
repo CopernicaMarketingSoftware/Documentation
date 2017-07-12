@@ -65,8 +65,8 @@ as escaping characters is done automatically.
 
 The *fields* parameter can be used within the following API methods:
 
-* [Fetching profiles from a database](rest-get-database-profiles)
-* [Fetching profiles from a selection](rest-get-view-profiles)
-* [Fetching subprofiles from a collection](rest-get-collection-subprofiles)
-* [Fetching subprofiles from a mini selection](rest-get-miniview-subprofiles)
-* [Editing multiple profiles in a database](rest-put-database-profiles)
+* [GET database profiles](rest-get-database-profiles)
+* [GET view profiles](rest-get-view-profiles)
+* [GET collection subprofiles](rest-get-collection-subprofiles)
+* [GET miniview subprofiles](rest-get-miniview-subprofiles)
+* [PUT database profiles](rest-put-database-profiles)

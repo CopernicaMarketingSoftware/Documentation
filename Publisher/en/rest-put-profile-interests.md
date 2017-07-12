@@ -5,7 +5,9 @@ request can be sent to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. This method adds the given interest to the current interest array.
+In this, `$id` should be replaced by the numerical identifier, the ID, of 
+the database you want to add a selection to. This method adds the given 
+interest to the current interest array.
 
 ## Available parameters
 

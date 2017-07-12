@@ -5,7 +5,7 @@ can send a HTTP PUT request to the following URL:
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 
-The $id code should be replaced with the numeric identifier or the name
+The `$id` code should be replaced with the numeric identifier or the name
 of the database in which you want to modify profiles. The new field values
 should be sent in the request body.
 
@@ -21,7 +21,9 @@ via the request body. You can pass the following parameters to the URL:
 
 * **fields**: required parameter to select the profiles that are going to be modified
 * **create**: boolean parameter that determines whether to create a new profile if none exist.
-* **async**: boolean parameter to modify the profiles asynchronously. If you set this to 1, the method immediately returns and proceeds in the background with updating profiles
+* **async**: boolean parameter to modify the profiles asynchronously. 
+If you set this to 1, the method immediately returns and proceeds in 
+the background with updating profiles.
 
 The *fields* parameter is required. By passing this parameter to the the method
 you prevent that you overwrite all your profiles with a single API call. Only

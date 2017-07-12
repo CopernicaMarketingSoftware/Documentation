@@ -8,7 +8,6 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL:
 De `$id` moet je vervangen door de numerieke identifier van de template
 waarvoor je de gebeurtenissen wilt hebben.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -16,7 +15,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
-
 
 ## Start en end
 
@@ -32,13 +30,11 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
 
-
 ## Tags
 
 Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
 op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
 je meerdere tags gescheiden door puntkomma's opgeven.
-
 
 ## Geretourneerde informatie
 
@@ -63,8 +59,7 @@ ziet er als volgt uit:
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
-
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Voorbeeld
 
@@ -87,7 +82,6 @@ print_r($api->get("old/template/1234/events", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

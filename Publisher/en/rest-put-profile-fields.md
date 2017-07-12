@@ -1,17 +1,28 @@
 # REST API: PUT profile fields
 
-To update existing fields of a profile, you need to do an HTTP PUT request to the following URL:
+To update existing fields of a profile, you need to do an HTTP PUT 
+request to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. The name of the field and other variables need to be added to the message body of the HTTP request.
+In this, `$id` should be replaced by the numerical identifier, the ID, of 
+the database you want to add a selection to. The name of the field and 
+other variables need to be added to the message body of the HTTP request.
 
 ## Available parameters
-The new field values need to be added to the body of the message. This data simply consists of the existing field names on the profile you want to change and their new values. If you send your data in JSON format, you’ll need to create an object with field names as keys and field values as values. 
 
-If, however, you’re using a traditional x-www-form-urlencoded format, the variables should contain the names of the fields you want to change, and the values should be the new field values.
+The new field values need to be added to the body of the message. This 
+data simply consists of the existing field names on the profile you want 
+to change and their new values. If you send your data in JSON format, 
+you’ll need to create an object with field names as keys and field 
+values as values. 
+
+If, however, you’re using a traditional x-www-form-urlencoded format, 
+the variables should contain the names of the fields you want to change, 
+and the values should be the new field values.
 
 ## PHP example
+
 The following example illustrates how to use the API method:
 
 ```php

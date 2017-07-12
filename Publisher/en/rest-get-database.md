@@ -1,7 +1,12 @@
 # REST API: GET database
-A method to request all metadata from a database. This method does not support parameters. By sending a GET request to the following URL, you can fetch the database metadata:
+A method to request all metadata from a database. This method does not 
+support parameters. By sending a GET request to the following URL, 
+you can fetch the database metadata:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
+
+where `$id` should be replaced by the identifier of the database you want 
+to get the metadata of.
 
 ## Returned fields
 
@@ -40,5 +45,6 @@ print_r($api->get("database/1234"));
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
+
 - [Overview of all REST API methods](rest-api)
 - [POST database](rest-post-databases)

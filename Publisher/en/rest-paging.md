@@ -1,7 +1,7 @@
 # REST API: paging
 
 Many REST methods, e.g. the method to [fetch databases](rest-get-databases)
-and the method to [fetch profiles](rest-getprofiles), return lists of objects.
+and the method to [fetch profiles](rest-get-profile), return lists of objects.
 In order to reduce the amount of time a REST API call takes and to prevent a
 single call from overtaxing our API servers, the output of these methods is
 restricted. Each call returns at most 100 objects, even if there are more.

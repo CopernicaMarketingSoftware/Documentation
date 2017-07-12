@@ -1,10 +1,11 @@
 # REST API: PUT miniview
 
-A miniview is for a collection what a selection is on a database. To edit a miniview an HTTP PUT request can be sent to the following URL:
+A miniview is for a collection what a selection is on a database. To 
+edit a miniview an HTTP PUT request can be sent to the following URL:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
 
-The $id is the ID of the miniview you want to edit.
+The `$id` is the ID of the miniview you want to edit.
 
 ## Available parameters
 
@@ -12,8 +13,10 @@ The following properties can be added to the message body of the HTTP request:
 
 - **name**: Name of the selection
 - **description**: Description of the selection
-- **parent-type**: Indicates whether the current selection belongs to another selection or a collection.
-- **parent-id**: ID of the selection or the collection the selection belongs to
+- **parent-type**: Indicates whether the current selection belongs to 
+another selection or a collection.
+- **parent-id**: ID of the selection or the collection the selection 
+belongs to
 
 ## PHP example
 

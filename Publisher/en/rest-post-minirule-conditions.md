@@ -5,7 +5,9 @@ support parameters. It is called by sending an HTTP POST request to the followin
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the name of the minirule you wish to edit the conditions of.
+In this, `$id` needs to be replaced by the numerical identifier or the 
+name of the minirule you wish to edit the conditions of. After a succesful 
+call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -51,6 +53,8 @@ $data = array(
 
 // do the call, and print result
 $api->post("minirule/1234/conditions", array(), $data);
+
+// return id of created request if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -58,6 +62,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [GET minirules](./rest-get-minirules)
 * [GET minirule](./rest-get-minirule)
-* [POST minirule](./rest-post-minirule)
+* [PUT minirule](./rest-put-minirule)

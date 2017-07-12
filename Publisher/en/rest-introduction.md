@@ -6,7 +6,6 @@ HTTP GET requests to fetch data, and POST and PUT requests to modify data.
 These requests are processed by our API servers, and the requested data is 
 sent back in a format that can easily be handled by computers (JSON).
 
-
 ## Registering your app
 
 To prevent that unauthorized applications get access to the API, you must first
@@ -42,7 +41,6 @@ that was given to you in the dashboard. If you have successfully completed
 the registration process, this method returns a JSON object with the name of
 your company and account.
 
-
 ## HTTP requests
 
 The REST API uses the HTTP protocol for exchanging data. Your website or app
@@ -68,7 +66,6 @@ recommendations: POST is used for adding data, and PUT for modify'ing.
 Every API request requires a access_token parameter. You can simply add
 this parameter to the URL as a regular get-parameter.
 
-
 ## More information
 
 De following articles also contain information about the REST API:
@@ -78,5 +75,3 @@ De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
 * [The format of requests and responses](./rest-requests.md)
 * [Overview of all available API methods](./rest-api.md)
 * [Paging though lists of entities](./rest-paging.md)
-
-

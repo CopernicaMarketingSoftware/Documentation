@@ -5,7 +5,7 @@ to the following URL:
 
 `https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
 
-The $tag should be replaced with the the tag of interest. If you have multiple
+The `$tag` should be replaced with the the tag of interest. If you have multiple
 tags on which you want to filter, you can separate them with semicolons like:
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
@@ -17,7 +17,6 @@ The following parameters can be added to the URL as variables:
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events
 
-
 If no start and end parameters are provided you will get the events
 of the last monthly period. If you provide a start you will get events
 from the start date up to one month after the start. If you provide an
@@ -27,7 +26,6 @@ the two is longer than a month, it will be shortened to a month where the
 start is leading. Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
-
 
 ## Returned fields
 

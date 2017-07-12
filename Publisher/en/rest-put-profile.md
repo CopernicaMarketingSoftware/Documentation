@@ -1,14 +1,17 @@
 # REST API: PUT profile
 
-A method to edit the properties of an existing profile. It is called using the following URL:
+A method to edit the properties of an existing profile. It is called 
+using the following URL:
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-The $id needs to be replaced with the ID of the profile you want to edit the properties of.
+The `$id` needs to be replaced with the ID of the profile you want to 
+edit the properties of.
 
 ## Available parameters
 
-The following parameters can be placed in the message body of the HTTP PUT command:
+The following parameters can be placed in the message body of the HTTP 
+PUT command:
 
 - **fields**: Fields that the profile contains
 - **interests**: Interests that the profile contains

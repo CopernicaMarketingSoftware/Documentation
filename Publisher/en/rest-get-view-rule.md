@@ -7,7 +7,7 @@ single rule, you can send a HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
 
-The first $id code should be replaced with the numeric identifier of the 
+The first `$id` code should be replaced with the numeric identifier of the 
 selection from which you want to retrieve a rule. The second $id parameter
 should be the ID of the rule.
 
@@ -50,7 +50,6 @@ the specific articles:
 - [Part conditions](./rest-condition-type-part.md)
 - [ReferView conditions](./rest-condition-type-referview.md)
 
-
 ## PHP example
 
 The following script can be used to fetch the properties of rule 12 inside
@@ -76,4 +75,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [POST view rule](./rest-post-view-rules.md)
 * [PUT rule](./rest-put-rule.md)
 * [DELETE rule](./rest-delete-rule.md)
-* [PUT rule condition](./rest-put-rule-conditions.md)
+* [PUT rule condition](./rest-post-rule-conditions.md)

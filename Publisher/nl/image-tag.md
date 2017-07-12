@@ -31,30 +31,25 @@ je dit doen door middel van de volgende code:
 Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch 
 vergroot of verkleind. Naast deze precies afgedongen grootte
 die je met de *width* en *height* attributen instelt, kun je ook een minumum- 
-of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld
-binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
+of maximumgrootte opgeven. Je kunt zo bijvoorbeeld specificeren dat de 
+afbeelding elke grootte tussen 100x100 en 150x150 pixels mag hebben.
 
-`[image name="example" minwidth="100" maxwidth="150"]`
+`[image name="example" minwidth="100" maxwidth="150" minheight="100" maxheight="150"]`
 
-Er zijn ook *minheight* en *maxheight* attributen die hetzelfde doen voor de
-hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten
+Afbeeldingen die niet voldoen aan de opgegeven limieten
 worden vergroot of verkleind, waarbij de verhoudig tussen breedte en hoogte 
-zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
-
+zoveel mogelijk wordt behouden.
 
 ## Optionele afbeeldingen
 
 Als een gebruiker besluit om een afbeelding leeg te laten onstaat een
 lege plek in het document. Een [image] tag die niet wordt ingevuld, wordt
-namelijk standaard voorzien van een doorzichtige afbeelding. Er komt dus
-in het uiteindelijke document in principe altijd een &lt;img&gt; tag op de 
-plaats van de [image] tag. 
+namelijk standaard voorzien van een doorzichtige afbeelding.
 
 Maar het kan ook anders. Als je aangeeft dat een afbeelding *optioneel* is,
 dan wordt er alleen een afbeelding in het document geplaatst als de gebruiker
 ook zelf expliciet op documentniveau een afbeelding op de plaats van de
-[image] tag plaatst. Als de gebruiker geen afbeelding uploadt, dan zal er ook
-geen &lt;img&gt; tag in het uiteindelijke document staan.
+[image] tag plaatst. Dit ziet er als volgt uit:
 
 `[image name="example" optional="yes"]`
 
@@ -73,5 +68,7 @@ rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 ## Meer informatie
 
 * [Templates](./templates)
+* [Publisher templates](./publisher-templates)
+* [Websites](./websites)
 * [Text tag](./text-tag)
 * [Loop tag](./loop-tag)

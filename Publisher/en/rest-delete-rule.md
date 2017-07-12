@@ -5,7 +5,7 @@ a rule:
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`
 
-The $id needs to be replaced by the numerical identifier of the rule
+The `$id` needs to be replaced by the numerical identifier of the rule
 that you want to remove.
 
 ## PHP example

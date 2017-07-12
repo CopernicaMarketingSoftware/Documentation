@@ -7,14 +7,12 @@ can make a GET request to the following URL:
 
 where `$id` is the unique string that identifies a message. 
 
-
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
 
 - **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
-
 
 ### Start and end
 
@@ -28,7 +26,6 @@ it will be shortened to a month where the start is leading. Take into
 account that the dates are treated as UTC dates. Also take into account
 that the monthly period limitation is subject to change if performance
 requires this.
-
 
 ## Returned fields
 

@@ -59,4 +59,6 @@ script and runs it when a click is registered.
 
 ## More information
 
-* [Followups general](./follow-up-manager)
+* [Followups general](./followups)
+* [Followup types](./followups-types)
+* [Follow-up conditions](./conditions-for-follow-ups)

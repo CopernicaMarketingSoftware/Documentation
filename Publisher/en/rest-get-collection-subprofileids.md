@@ -5,7 +5,7 @@ To use the method send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/collection/$id/subprofileids?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the collection
+The `$id` should be replaced with the numerical identifier of the collection
 you want to get the IDs of.
 
 ## Available parameters

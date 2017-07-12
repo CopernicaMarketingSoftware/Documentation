@@ -4,7 +4,7 @@ Je kunt alleen surveys publiceren op webpages aangemaakt onder **Websites**.
 Om te publiceren op een van je websites kun je volgende speciale tag 
 gebruiken:
 
-`[survey name='surveyname']`
+`{survey name='surveyname'}`
 
 Dit is een survey met aangepaste XSLT. XSLT wordt gebruikt om XML om te 
 zetten in een document dat herkent wordt door je browser, zoals HTML.
@@ -19,11 +19,11 @@ om in de tag te gebruiken. (Zie [stylesheets](./stylesheets))
 Een survey kan om technische redenen alleen op een webpagina gebruikt worden.
 Zie voor meer informatie over het [aanmaken van een webpagina](./websites)
 de documentatie hierover. Als je een link in een email plaatst kun je 
-meteen de gegevens uit de enquête opslaan. (Zie [linken naar enquête](./surveys-register-participants))
+meteen de gegevens uit de enquête opslaan.
 
 ## Meer informatie
 
 * [Enquêtes](./surveys)
 * [Stylesheets](./stylesheets)
 * [Linken naar enquête](./surveys-register-participants)
-* [Aanmaken van een webpagina](./create-and-publish-your-own-web-pages.md)
+* [Aanmaken van een webpagina](./websites)

@@ -1,4 +1,4 @@
-# Werken met templates binnen de Publisher
+# Templates: Publisher
 
 In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
@@ -139,4 +139,9 @@ naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;,
 &lt;iframe&gt; en &lt;applet&gt;. Als je dit soort tags gebruikt (wat we *zeer
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
 een afbeelding, via dit dialoogvenster koppelen.
+
+## Meer informatie
+
+* [Templates](./templates)
+* [Templates in Marketing Suite](./templates-marketing-suite)
 

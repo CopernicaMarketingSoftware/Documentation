@@ -6,8 +6,8 @@ request sturen naar de volgende URL:
 `https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
-waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.
-
+waaraan je interesses wil toevoegen. De inhoud van de interesses kun je 
+in de message body plaatsen.
 
 ## Body data
 
@@ -22,7 +22,6 @@ Deze zullen dan toegevoegd worden aan het profiel, terwijl de oude interesses be
 De tweede manier is om een object te sturen als body data dat als keys interesses heeft en 
 als waardes booleans om aan te geven of een interesse geactiveerd moet worden. Zo kunnen bestaande 
 interesses ook uitgeschakeld worden. Elke interesse die hierin niet genoemd wordt blijft hetzelfde.
-
 
 ## Voorbeeld in PHP
 
@@ -54,11 +53,8 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api)
-* [Interesses van een profiel overschrijven](./rest-put-subprofile-interests)
-* [Opvragen van profieldata](./rest-get-subprofile)
-* [Alle profiel bijwerken](./rest-put-subprofile)
-* [Profiel verwijderen](./rest-delete-subprofile)
+* [GET subprofile](./rest-get-subprofile)
+* [DELETE profile](./rest-delete-subprofile)
