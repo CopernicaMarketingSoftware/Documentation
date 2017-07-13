@@ -1,6 +1,6 @@
 # Personaliseren binnen de Publisher
 
-In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp 
+In de Publisher kun je gemakkelijk nieuwsbrieven personaliseren. Je doet dit met behulp 
 van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 nieuwsbrieven.
@@ -25,7 +25,7 @@ gebruiken:
 ```text
 Beste {$aanhef} {$naam},
     
-Je ontvangt deze e-mail omdat bent aangemeld 
+Je ontvangt deze e-mail, omdat bent aangemeld 
 met het volgende e-mailadres: {$email}.
 ```
 
