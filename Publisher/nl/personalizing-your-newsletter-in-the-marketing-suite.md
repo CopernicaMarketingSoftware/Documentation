@@ -1,9 +1,9 @@
 # Personaliseren binnen de Marketing Suite
 
-In de drag-and-drop editor van de [Copernica Marketing Suite](https://ms.copernica.com)
+In de drag-and-drop editor van de [Marketing Suite](https://ms.copernica.com)
 stel je gemakkelijk e-mails samen. De e-mails verzonden vanuit
-deze editor zijn automatisch responsive en makkelijk in elkaar
-te slepen.
+deze editor zijn automatisch responsive en zien er goed uit op
+elk apparaat
 
 Personaliseren kan op verschillende manieren: een persoonlijke aanhef
 met de voor- en achternaam van de relatie, bepaalde content tonen op
@@ -25,7 +25,7 @@ vervangen door de veldwaarde in het profiel van de ontvanger.
 
 Er moet altijd gespecificeerd worden of een veld uit het profiel of het
 subprofiel aangeroepen wordt. Door in plaats van `{$Voornaam}`,
-`{$profile.Voornaam}` of `{$subprofile.veldnaam}` te gebruiken is het
+`{$profile.Voornaam}` of `{$subprofile.Voornaam}` te gebruiken is het
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
@@ -33,11 +33,11 @@ van de klant te personaliseren.
 
 Hyperlinks in e-mailings kunnen worden aangevuld met gegevens uit een profiel
 of subprofiel. Een voorbeeld hiervan zijn de unieke inloggegevens
-($profile.id en $profile.code) die je in de hyperlink meestuurt,
+(`$profile.id` en `$profile.code`) die je in de hyperlink meestuurt,
 zodat relaties automatisch worden ingelogd als zij vanuit een e-mail
 naar een webpagina klikken.
 
-```
+```text
 https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
 ```
 
