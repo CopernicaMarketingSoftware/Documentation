@@ -5,7 +5,6 @@ nog veel nieuwe termen tegen in onze documentatie en software. Deze pagina
 legt enkele kernbegrippen uit om je op weg te helpen. Sommige begrippen 
 linken naar achtergrondartikelen met meer informatie.
 
-## Begrippenlijst
 
 | Begrip                                               | Omschrijving                                                                                                                                                                                         |
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

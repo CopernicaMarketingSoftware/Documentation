@@ -1,4 +1,4 @@
-# Follow-up actions
+# Data-scripts
 
 If someone clicks on a link in a mailing, or when some other kind of event
 happens, Copernica can automatically execute or schedule follow up actions.

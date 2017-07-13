@@ -1,4 +1,4 @@
-# Setting unsubscribe options
+# Unsubscribe behaviour
 
 Copernica receives all sorts of feedback from users who want to unsubscribe 
 from mailing lists. It’s up to you how you react to unsubscribe triggers: 

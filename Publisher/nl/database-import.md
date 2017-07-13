@@ -18,9 +18,9 @@ Het moet een tab- of kommagescheiden bestand zijn, en de bovenste regel van
 dat bestand moet de namen van de kolommen (de veldnamen) bevatten die je gaat 
 importeren.
 
-    Voornaam,Achternaam,Stad,Telefoonnummer
-    Jan,de Jong,Amersfoort,0612456631
-    Roos,Schippers,Groningen,0612222444
+    Voornaam, Achternaam, Stad, Telefoonnummer
+    Jan, de Jong, Amersfoort, 0612456631
+    Roos, Schippers, Groningen, 0612222444
 
 ## Kolommen koppelen
 
@@ -45,9 +45,9 @@ een kolom voor subprofielen wordt gebruikt. Als je een dierenwinkel hebt met
 een database met klanten en bij elke klant een collectie van huisdieren dan 
 zou je het volgende bestand kunnen uploaden:
 
-    Voornaam,Achternaam,Stad,Dieren.Naam,Dieren.Type
-    Jan,Bakker,Apeldoorn,Blacky,Hond
-    Jan,Bakker,Apeldoorn,Minoes,Kat
+    Voornaam, Achternaam, Stad, Dieren. Naam, Dieren. Type
+    Jan, Bakker, Apeldoorn, Blacky, Hond
+    Jan, Bakker, Apeldoorn, Minoes, Kat
 
 Zoals je ziet wordt "Jan Bakker" twee keer genoemd. Dit moet je doen omdat
 Jan twee huisdieren heeft en elk huisdier (elke subprofiel dus) op een aparte 
@@ -105,5 +105,5 @@ de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
 
 ## Meer informatie 
 
-* [Database beheer](./database-introduction)
+* [Databasebeheer](./database-introduction)
 * [Database exporteren](./database-export)

@@ -24,4 +24,4 @@ en informatie om snel van start te gaan.
 * [Snel aan de slag](./quick-start-guide)
 * [Sender domains instellen](./quick-sender-domain-guide)
 * [Database inrichten](./quick-database-guide)
-* [Je eerste mailing versturen](./quick-mailing-guide)
+* [Je eerste mailing](./quick-mailing-guide)

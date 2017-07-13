@@ -1,4 +1,4 @@
-# Database restrictions and intentions
+# Restrictions
 
 The Copernica software is equiped with a couple of safety systems to prevent
 that invalid data ends up in the database and to prevent that you accidentally

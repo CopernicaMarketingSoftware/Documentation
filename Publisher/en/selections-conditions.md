@@ -1,4 +1,4 @@
-# Selection rules
+# Rules and conditions
 
 As you may know, Copernica determines which profiles are added to a selection based on certain properties. All profile data you store in Copernica can be used for selection rules. There are many different filter options:
 

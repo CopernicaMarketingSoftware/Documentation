@@ -1,4 +1,4 @@
-# Management options for selections
+# Managemenet options for selections
 
 Apart from creating and deleting, there's more you can do to manage 
 your selections. Below, you'll find an overview of management options 

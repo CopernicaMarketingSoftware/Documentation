@@ -1,11 +1,10 @@
-# Terms in Copernica
+# Glossary
 
 If you are new to Copernica and e-mailmarketing you might encounter many 
 new terms in our documentation and software. This page is meant to explain 
 some of the most important terms to help you get started. Some terms 
 also contain a link to our documentation to provide you with more information.
 
-## Glossary
 
 | Term                                                 | Description                                                                                                                                                                       |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -32,6 +31,6 @@ also contain a link to our documentation to provide you with more information.
 ## More information                                                                                                                                                                                                                        
 
 * [Quick start](./quick-start-guide)
-* [Sender domain configuration](./quick-sender-domain-guide)
+* [Setting up a sender domain](./quick-sender-domain-guide)
 * [Database management](./quick-database-guide)
 * [Your first mailing](./quick-mailing-guide)

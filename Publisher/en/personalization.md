@@ -1,4 +1,4 @@
-# Personalizing
+# Personalization
 
 You can personalize mailings, web pages, text messages and PDF files by using
 special *personalization tags*. These tags are automatically recognized and 
