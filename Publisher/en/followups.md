@@ -56,5 +56,3 @@ of the condition) or execution (of the followup). Read more about conditions
 * [Follow-up scripting](./followups-scripting.md)
 * [Followup types](./followups-types)
 * [Follow-up conditions](./conditions-for-follow-ups)
-
-
