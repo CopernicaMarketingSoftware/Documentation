@@ -31,6 +31,6 @@ Do you want to receive realtime updates about your mailings? Incorporate
 feedback loops into your own system and receive all eventsright off our
 servers.
 
-* [Copernica glossary](./definitions)
+* [Glossary](./definitions)
 * [Feedback loops](./feedback-loops)
 * [Database selections](./selections-introduction)

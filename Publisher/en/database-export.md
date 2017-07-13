@@ -1,4 +1,4 @@
-# Exporting profile data
+# Exporting profiles
 
 You can export profiles and subprofiles to a tab delimited file, or files in
 other formats. The export feature can be use to export the entire database
@@ -8,10 +8,10 @@ emailed to your addres.
 
 ## Extra remarks
 
-* The fields *ID*, *Access code* and *Profile created* are system fields.
-* You can only export fields from one collection at a time to a CSV file. To export multiple collections, choose for export to XML.
-* UTF-8 is normally the best encoding for output files
-* Date fields can be formatted in a the format that best suits your needs
+* The fields *ID*, *Access code* and *Profile created* are system fields;
+* You can only export fields from one collection at a time to a CSV file. To export multiple collections, choose for export to XML;
+* UTF-8 is normally the best encoding for output files;
+* Date fields can be formatted in a the format that best suits your needs;
 * If you want to keep the export files small, you can compress them. This is especially useful if you want to send export files by mail.
 
 
@@ -32,16 +32,7 @@ for more information.
 To export profiles or subprofiles based on results of email campaigns (like 
 exporting all profiles that clicked last week), you first have to create the 
 appropriate selection. After you built this selection, you can start the 
-export dialog to export the profiles from this selection. 
-
-## Exporting in Publisher
-
-To export a database or collection you should select in under **Profiles** 
-and find the options to import/export under **Current view**.
-
-## Exporting in Marketing Suite
-
-It is not (yet) possible to export with Marketing Suite.
+export dialog to export the profiles from this selection.
 
 ## More information
 

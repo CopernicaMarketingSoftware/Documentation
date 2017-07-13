@@ -1,4 +1,4 @@
-# Follow-up Manager Marketing Suite
+# Follow-up Manager
 
 The follow-up manager is a user-friendly tool to make advanced campaigns. 
 By integrating this tool with the template editor it is made easy to make 

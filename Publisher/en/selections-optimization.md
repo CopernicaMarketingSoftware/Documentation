@@ -1,4 +1,5 @@
-# Optimalising selections
+# Optimizing selections
+
 In Copernica, selections are maintained actively, which means they are rebuilt multiple times a day to keep them updated. This is part of why Copernica is so powerful: all users have to to is specify the conditions for a selection, and Copernica sorts profiles automatically. Active filters do take up some computing power. If your filters are too heavy or you have too many, it can negatively affect your database performance. Organising a database well makes it perform better and faster. Below, we'll show you how to achieve that.
 
 ## Delete and conquer

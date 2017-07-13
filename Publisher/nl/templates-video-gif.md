@@ -1,4 +1,4 @@
-# Video en GIFs
+# Video's en GIFs
 
 Hieronder is een korte toelichting gegeven over het gebruik van video en GIF
 in e-mails. 

@@ -1,4 +1,4 @@
-# Profile imports
+# Import profiles
 
 There are a couple of ways to get your profile data into a Copernica database.
 You can manually enter the profile them, one profile at a time, or you can use
@@ -19,9 +19,9 @@ for an import. It must be a tab or comma delimited file and the first line
 should hold the names of the database fields into which you are going to import. 
 It should look similar to this:
 
-    Firstname,Lastname,City,Phone
-    John,Doe,Denver,555-343-32
-    Peter,Smith,Nashville,555-341-66
+    Firstname, Lastname, City, Phone
+    John, Doe, Denver, 555-343-32
+    Peter, Smith, Nashville, 555-341-66
 
 ## Linking columns
 
@@ -46,9 +46,9 @@ fields in the collection you use the "collectionname.fieldname" notation. If
 you're running a pet shop and you have a customer database with for each 
 customer a collection of its pets you can import the following file:
 
-    Firstname,Lastname,City,Pets.Name,Pets.Type
-    John,Doe,Denver,Blacky,Dog
-    John,Doe,Denver,Princess,Cat
+    Firstname, Lastname, City, Pets. Name, Pets. Type
+    John, Doe, Denver, Blacky, Dog
+    John, Doe, Denver, Princess, Cat
 
 You notice that "John Doe" is mentioned twice. This is the same customer "John Doe" 
 that happens to have two pets: Blacky the dog and Princess the cat. Because each 
