@@ -76,3 +76,10 @@ Het is best een hoop informatie, vandaar het volgende uitlegartikel:
 * [Regels en condities](./selections-conditions)
 * [Optimaliseren van selecties](./selections-optimization)
 
+### Selection tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Dubbele opt-in aanmaken](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selections Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+
