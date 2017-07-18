@@ -17,7 +17,7 @@ voorwaarden van de selectie voldoen.
 Naast 'gewone' selecties bestaan er ook miniselecties en subselecties. 
 
 
-### Miniselecties
+## Miniselecties
 
 Je kunt ook selecties maken binnen collecties; we noemen ze miniselecties. 
 Een collectie is een sub-database die je aan een profiel kunt hangen, 
@@ -30,7 +30,7 @@ doen die daarmee te maken heeft. Zo kun je jouw mailings dus nog
 persoonlijker en gerichter maken. 
 
 
-### Subselecties
+## Subselecties
 
 Een subselectie is een selectie van profielen in een selectie. 
 Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van 
@@ -48,7 +48,7 @@ Het maken van subselecties is alleen mogelijk op profielniveau;
 Subselecties maak je op dezelfde manier aan als selecties.
 
 
-### Selecties, miniselecties en subselecties aanmaken
+## Selecties, miniselecties en subselecties aanmaken
 
 Je kunt selecties, subselecties en miniselecties beheren onder 
 *profielen* > *bewerk selecties* in de Marketing Suite. Een subselectie 
@@ -60,7 +60,7 @@ rechtsbovenin de knop *Create selection*. Andere beheeropties voor
 selecties vind je [hier](selections-settings).
 
 
-### Regels en condities
+## Regels en condities
 
 Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen 
 hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica 
