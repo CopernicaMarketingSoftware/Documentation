@@ -27,7 +27,7 @@ It is possible to use Copernica for sending mass fax mailings . Sending
 a faxmailing is not substantially different from sending a normal mass
 mailing .
 
-### Fax mailing
+## Fax mailing
 
 To send a fax you need to have a PDF file of the document you want to fax 
 uploaded to Publisher. You also need the fax numbers of the profiles you 
