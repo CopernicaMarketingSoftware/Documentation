@@ -43,3 +43,9 @@ die bestaan uit 4 getallen, gevolgd door twee letters (0000AA).
 ```javascript
 var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
 ```
+
+## Meer informatie
+
+* [Database management](./database-introduction)
+* [Database velden en collecties](./database-fields-and-collections)
+* [Database uitschrijfgedrag](./database-unsubscribe-behavior)
