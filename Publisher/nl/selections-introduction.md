@@ -16,7 +16,6 @@ voorwaarden van de selectie voldoen.
 
 Naast 'gewone' selecties bestaan er ook miniselecties en subselecties. 
 
-
 ## Miniselecties
 
 Je kunt ook selecties maken binnen collecties; we noemen ze miniselecties. 
@@ -28,7 +27,6 @@ gekocht van dat merk (dus als er meerdere subprofielen in de
 miniselectie zitten), kun je overwegen om een persoonlijke aanbieding te 
 doen die daarmee te maken heeft. Zo kun je jouw mailings dus nog 
 persoonlijker en gerichter maken. 
-
 
 ## Subselecties
 
@@ -47,18 +45,17 @@ Het maken van subselecties is alleen mogelijk op profielniveau;
 "subminiselecties" maken in een collectie is dus niet mogelijk. 
 Subselecties maak je op dezelfde manier aan als selecties.
 
+## Het aanmaken van selecties, subselecties en miniselecties
 
-## Selecties, miniselecties en subselecties aanmaken
+### Marketing Suite
 
-Je kunt selecties, subselecties en miniselecties beheren onder 
-*profielen* > *bewerk selecties* in de Marketing Suite. Een subselectie 
-maak je door *selectie aanmaken* aan te klikken en bij *onder* de 
-selectie aan te klikken waar je subselectie onder moet hangen. 
-In MarketingSuite vindt je links in je database de knop 
-*Create a first selection* wanneer je nog geen selecties hebt, en 
-rechtsbovenin de knop *Create selection*. Andere beheeropties voor 
-selecties vind je [hier](selections-settings).
+Selecties, subselecties en miniselecties kunnen toegevoegd, verwijderd en 
+bewerkt worden onder `DATABASE & PROFIELEN`.
 
+### Publisher (old)
+
+Selecties, subselecties en miniselecties kunnen toegevoegd, verwijderd en 
+bewerkt worden onder **Profielen** > **Database management**.
 
 ## Regels en condities
 

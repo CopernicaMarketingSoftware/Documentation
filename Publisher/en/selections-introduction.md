@@ -44,21 +44,12 @@ Creating subselections is only possible on profile level; making
 ### Marketing Suite
 
 Selections, subselections and miniselections can be added, deleted and 
-managed under **profiles** > **edit selections** in the Marketing Suite. A 
-subselection is created by clicking *create selection* and then assigning 
-it to exist under the selection you want it to. In MarketingSuite, you'll 
-find the **create a first selection** button on the left side of your database, 
-if you haven't got any yet, and the **create (mini)selection** button on 
-the top right if you do.
+managed under `DATABASE & PROFILES`.
 
 ### Publisher (old)
 
-It is also possible to make selections in Publisher. Since Marketing Suite 
-and Publisher use the same data any selection made in either program are 
-also accessible in the other program. To add a selection in Publisher 
-go to **Profiles** > **Database management** > **Edit selections...**. 
-Here you can make and edit selections and access their title, description 
-and conditions.
+Selections, subselections and miniselections can be added, deleted and 
+managed under **Profiles** > **Database management**.
 
 ## Selection rules and conditions
 
