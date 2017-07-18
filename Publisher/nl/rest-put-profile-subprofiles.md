@@ -1,4 +1,4 @@
-REST API: PUT profile subprofiles
+# REST API: PUT profile subprofiles
 
 Om een subprofile aan een profiel in een bepaalde collectie te bwerken,
 kun je een HTTP PUT request sturen naar de volgende URL:
