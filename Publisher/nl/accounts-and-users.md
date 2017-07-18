@@ -30,3 +30,7 @@ account. Dit soort relaties maak je gemakkelijk aan in het gebruiksbeheer,
 waar alles overzichtelijk wordt gepresenteerd.
 
 ![Accounts en bedrijven](../images/accounts-users-nl.png)
+
+## Meer informatie
+
+* [Tips, tricks en achtergrond](./tips-and-tricks)

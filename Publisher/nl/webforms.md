@@ -91,3 +91,7 @@ een profiel. Dit is bijvoorbeeld nuttig voor een inlogformulier.
 moeten worden voor de invuller.
 * **Standaardwaarde**: De waarde die wordt gebruikt als het veld niet ingevuld
 is.
+
+## More information
+
+* [Limit the number of submits](./limit-the-number-of-times-a-web-form-can-be-submitted)
