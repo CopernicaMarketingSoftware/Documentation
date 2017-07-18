@@ -17,7 +17,7 @@
 * [Templates](./templates.md)
     * [Personalization](./personalization.md)
     * [Follow-up Manager](./follow-up-manager-ms.md)
-    * [Data-scripts](./followups.md)
+    * [Data-scripts](./followups-scripting.md)
     * [Videos and GIFs](./templates-video-gif)
 * [Statistics](./statistics)
     * [Results of a mailing](./statistics-mailing)
