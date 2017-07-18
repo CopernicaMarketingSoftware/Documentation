@@ -15,17 +15,11 @@ Hoewel deze vaak niet verschillen zou je in dit geval een methode
 aanroepen om meerdere profielen te bewerken, zie 
 [meerdere profielen bewerken](rest-put-database-profiles).
 
-## Beschikbare parameters
+## Body data
 
-De parameters die je in de body van het HTTP POST request plaatst, zijn de
-velden van het aan te maken profiel. De volgende informatie kan meegegeven worden aan het profiel.
-
-- fields:           associatieve array/object van veldnamen en waardes;
-- interests:        array van interesses van een profiel;
-- database:         ID van de database waar het profiel staat;
-- secret:           de "geheime" code die aan een profiel gelinkt is;
-- created:          tijdstip waarop het profiel werd gemaakt, YYYY-MM-DD hh:mm:ss formaat;
-- modified:         tijdstip waarop het profiel laatst werd aangepast, YYYY-MM-DD hh:mm:ss formaat.
+Naast de parameters die je aan de URL meegeeft, moet je ook body data aan de
+POST request toevoegen. In de body van de request plaats je de velden waarmee het 
+profiel wordt aangemaakt.
 
 ## Voorbeeld in PHP
 
@@ -38,9 +32,11 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor de methode
+// de veld waarden van het profiel
 $data = array(
-    'database' =>  database_id
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
 
 // voer het verzoek uit
