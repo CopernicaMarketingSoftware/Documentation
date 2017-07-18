@@ -107,6 +107,8 @@ to get some inspiration:
 * Follow-up actions;
 * Etc.
 
+## More information
+
 * [Personalization variables overview](./personalization-variables.md)
 * [Personalization modifiers overview](./personalization-modifiers.md)
 * [Personalization functions overview](./personalization-functions.md)
