@@ -4,7 +4,7 @@ Apart from creating and deleting, there's more you can do to manage
 your selections. Below, you'll find an overview of management options 
 for selections and miniselections.
 
-## Copying and moving selections
+### Copying and moving selections
 
 It's not improbable that at some point, you'll accidentally create a 
 selection in the wrong place. This is not a big problem: Copernica 
@@ -20,13 +20,13 @@ Note that no two selections can have the same name in your database.
 Copying or moving a selection can be done under *profiles* > *edit 
 selections*. In doing so, no profiles are lost.
 
-## Displaying profiles in a (mini) selection
+### Displaying profiles in a (mini) selection
 
 You can display the profiles in a selection by simply clicking its name. 
 For profiles in mini selections, go to *current view* and click 
 *subprofiles*.
 
-## Authorize a selection for emails
+### Authorize a selection for emails
 
 Before you can start sending emails to profiles in a selection, you must 
 first authorize it for email sending. Go to the Marketing Suite and 
@@ -36,7 +36,7 @@ emails, such as unsubscribers. If these options are not clickable,
 it's probably because you don't have a corresponding field in your 
 database. You'll need to create these first.
 
-## Delete, deactivate or archive?
+### Delete, deactivate or archive?
 
 It's a good idea to (temporarily) remove selections you never or rarely 
 use from your database. Copernica has three options to do that: delete, 
