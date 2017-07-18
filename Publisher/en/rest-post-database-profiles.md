@@ -12,16 +12,11 @@ Please note that while POST and PUT
 are generally the same it is import to distinguish them in this case. This method posts a new profile, while PUT 
 is the method to edit several profiles (see: [editing multiple profiles](rest-put-database-profiles)).
 
-## Available parameters
+## Body data
 
-The following variables can be set in the message body:
-
-- **fields**: associative array/object of field names and values
-- **interests**: array of the interests the profile has
-- **database**: ID of the database the profile is stored in
-- **secret**: the “secret” code that is linked to a profile
-- **created**: the timestamp on which the profile was created, in YYYY-MM-DD hh:mm:ss format.
-- **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
+Besided the parameters that you append to the URL, you must also include a
+request body in the POST request. The body should contain the fields values
+of the profile.
 
 ## PHP example
 
@@ -34,9 +29,11 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data to pass to the call
+// field values for the profile
 $data = array(
-    'database' => database_id
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
 
 // do the call
