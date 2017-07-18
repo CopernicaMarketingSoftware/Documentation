@@ -23,7 +23,7 @@ Je moet ook de verzender van het bericht instellen. Dit is wat de ontvanger
 te zien krijgt als het bericht binnenkomt. Deze is in te stellen onder
 het *document* menu en personalizatie is ook hier toegestaan.
 
-### Fax mailing
+## Fax mailing
 
 Om een fax te kunnen versturen moet je een PDF file geupload hebben van
 het document dat je wil verzenden. Je moet ook de fax nummers opslaan in
