@@ -34,7 +34,7 @@
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
     * [DNS](./dns)
-* [Tips and tricks](./tips-and-tricks)
+* [Tips, tricks and background](./tips-and-tricks)
     * [Accounts and users](./accounts-and-users.md)
     * [Sender reputation](./sender-reputation)
     * [Deliverability](./deliverability)

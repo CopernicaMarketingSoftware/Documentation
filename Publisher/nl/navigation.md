@@ -34,7 +34,7 @@
     * [DKIM records](./dkim.md)
     * [DMARC records](./dmarc.md)
     * [DNS](./dns)
-* [Tips en tricks](./tips-and-tricks)
+* [Tips, tricks en achtergrond](./tips-and-tricks)
     * [Accounts en gebruikers](accounts-and-users.md)
     * [Licentie en facturering](./license-and-billing)
     * [Sender reputation](./sender-reputation)
