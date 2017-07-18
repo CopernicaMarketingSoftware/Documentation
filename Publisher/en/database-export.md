@@ -14,7 +14,6 @@ emailed to your addres.
 * Date fields can be formatted in a the format that best suits your needs;
 * If you want to keep the export files small, you can compress them. This is especially useful if you want to send export files by mail.
 
-
 ## The delimiter
 
 The delimiter is a special character that is used to separate the fields in
@@ -24,15 +23,24 @@ values (for example a hardcoded tab inside a postal code), you can shoose for
 "Quoted columns". The values in the output file will then be wrapped in quotes
 to prevent conflicts with the delimiter.
 
-## Exporting email results
+## Exporting
 
-You can also export the results of mailings. See [this article](./statistics-export) 
+The results of a mailing can be exported too. See [this article](./statistics-export) 
 for more information.
 
-To export profiles or subprofiles based on results of email campaigns (like 
-exporting all profiles that clicked last week), you first have to create the 
-appropriate selection. After you built this selection, you can start the 
-export dialog to export the profiles from this selection.
+### Exports in Publisher
+
+To export a database or collection you need to select it under profile. 
+Under **Current view** you can find the option to import or export.
+
+If you want to export profiles or subprofiles based on email results you 
+can make a selectie with condition type *Check on email campaign results*. 
+Use the export function in the *Profiles* section to download the profiles 
+from this selection.
+
+### Exports in Marketing Suite
+
+Currently it's not possible to export a database using the Marketing Suite.
 
 ## More information
 
