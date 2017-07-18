@@ -20,7 +20,6 @@ In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
 HTML beschikt om in ieder geval een eenvoudige website te bouwen.
 
-
 ## Houd het eenvoudig
 
 Via Copernica Publisher kun je templates maken. Als je voor de "e-mailings"
@@ -47,7 +46,6 @@ template zo op te maken als je zelf wilt. Copernica verstuurt de HTML code
 precies zoals jij die hebt ingevoerd, en je kunt het dus zo bont maken als
 je maar wilt.
 
-
 ## Contentblokken
 
 Zoals gezegd bestaat een template uit HTML code. Deze kun je zelf maken en je
@@ -69,7 +67,6 @@ template op te nemen.
 * [[text] tags](text-tag)
 * [[image] tags](image-tag)
 * [[loop] tags](loop-tag)
-
 
 ## Let op met blokhaken!
 
@@ -111,7 +108,6 @@ waarbinnen alle blokhaken geen speciale betekenis hebben.
         [/literal]
     </style>
 
-
 ## Vaste afbeeldingen
 
 Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook 
@@ -144,4 +140,11 @@ een afbeelding, via dit dialoogvenster koppelen.
 
 * [Templates](./templates)
 * [Templates in Marketing Suite](./templates-marketing-suite)
+* [Personalizatie in Publisher](personalizing-your-newsletter-in-the-publisher)
+* [Followups](./followups)
 
+### Template content
+
+* [Text tag](text-tag)
+* [Image tag](image-tag)
+* [Loop tag](loop-tag)

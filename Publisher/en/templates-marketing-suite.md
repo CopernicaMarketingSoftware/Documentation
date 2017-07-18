@@ -52,3 +52,12 @@ reputation.
 ## More information
 
 * [Templates](./templates)
+* [Templates in Publisher](./templates-publisher)
+* [Personalizing in the Marketing Suite](personalizing-your-newsletter-in-the-marketing-suite)
+* [Followups](./followups)
+
+### Template content
+
+* [Text tag](text-tag)
+* [Image tag](image-tag)
+* [Loop tag](loop-tag)

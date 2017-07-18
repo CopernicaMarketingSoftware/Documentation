@@ -95,3 +95,11 @@ and opens.
 
 * [Templates](./templates)
 * [Templates in Marketing Suite](./templates-marketing-suite)
+* [Personalization in Publisher](personalizing-your-newsletter-in-the-publisher)
+* [Followups](./followups)
+
+### Template content
+
+* [Text tag](text-tag)
+* [Image tag](image-tag)
+* [Loop tag](loop-tag)
