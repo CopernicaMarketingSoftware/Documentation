@@ -108,7 +108,8 @@ The following PUT and POST methods are available:
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                                      | Edit profile fields                     |     
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                               | Add interests to profile                |     
 | PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Edit profile interests                  |     
-| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)                           | Create subprofile                       |     
+| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)                           | Create subprofile                       |
+| PUT       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-put-profile-subprofiles)                            | Edit subprofile                         |
 | POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields)                               | Create collection field                 |     
 | PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field)                              | Edit collection field                   |     
 | PUT       | [api.copernica.com/v1/collection/$id](./rest-put-collection)                                              | Edit collection data                    |     
