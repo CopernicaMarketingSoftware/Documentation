@@ -49,3 +49,8 @@ het Dollar `$` teken in het input-veld. Zo kun je bijvoorbeeld de
 'from name', het onderwerp, maar ook het 'from adres' aanpassen door
 in deze velden de code toe te passen.
 
+## Meer informatie
+
+* [Overzicht van personalisatievariabelen](./personalization-variables.md)
+* [Overzicht van personalisatiemodifiers](./personalization-modifiers.md)
+* [Overzicht van personalisatiefuncties](./personalization-functions.md)
