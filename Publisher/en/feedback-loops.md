@@ -1,6 +1,6 @@
 # Feedback loops
 
-In the Marketing Suite menu you find a tab called `feedback loops`. 
+In the Marketing Suite menu you find a tab called `FEEDBACK LOOPS`. 
 Feedback loops are processes that notify their user of events that happen 
 in real time through HTTP POST. This allows you to always have the most 
 recent results of your mailing. Please note that this functionality is 
