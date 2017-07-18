@@ -4,7 +4,7 @@ In the Marketing Suite menu you find a tab called `feedback loops`.
 Feedback loops are processes that notify their user of events that happen 
 in real time through HTTP POST. This allows you to always have the most 
 recent results of your mailing. Please note that this functionality is 
-currently only available in Marketing Suite.
+currently only available in the Marketing Suite.
 
 WARNING: Some feedback loops generate a large amount of calls. Please make 
 sure your server is capable of handling the load before setting up a 
@@ -14,7 +14,7 @@ feedback loop.
 
 Feedback loops can be used to sync data that passes through Copernica 
 directly into your own application. Feedback loops require a script on 
-you own server to execute whenever information is provided through the 
+your own server to execute whenever information is provided through the 
 feedback loop. You can set several triggers in the feedback loop tab such 
 as opens, clicks, profile edits and bounces.
 
@@ -46,7 +46,8 @@ feedback you can also use the [general statistics](statistics).
 Click on the tab called `feedback loops` inside the Marketing Suite.
 In the feedback loops menu, you can fill in the address the HTTP POST 
 call is sent to in the manage menu. It's pretty self explanatory: 
-select the events you're interested in and provide the location of your script.
+select the events you're interested in and provide the location of 
+your script.
 
 There are several types of feedback loops. The articles linked below explain 
 these types in more detail:
@@ -59,6 +60,11 @@ these types in more detail:
 * [Feedback loops for profile updates](feedback-updates)
 * [Feedback loops for profile removals](feedback-deletes)
 
+## Feedback loops for specific database or collection
+
+The Marketing Suite gives you the possibility to see all feedback
+loops that are linked to a certain database or collection. It's 
+thus easier to check which feedback loops are set up. 
 
 ## URL validation
 

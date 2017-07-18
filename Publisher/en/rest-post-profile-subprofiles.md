@@ -14,12 +14,12 @@ call the ID of the created request is returned.
 
 The subprofile can have the following properties:
 
-- **secret**: Secret code associated with subprofiles
-- **profile**: ID of the profile the subprofile is associated with
-- **fields**: Fields of the subprofile
-- **collection**: ID of the collection the subprofile belongs to
-- **created**: Timestamp of creation in YYYY-MM-DD hh:mm:ss format
-- **modified**: Timestamp of last edit in YYYY-MM-DD hh:mm:ss format
+- secret: 		Secret code associated with subprofiles;
+- profile: 		ID of the profile the subprofile is associated with;
+- fields: 		Fields of the subprofile;
+- collection: 	ID of the collection the subprofile belongs to;
+- created: 		Timestamp of creation in YYYY-MM-DD hh:mm:ss format;
+- modified: 	Timestamp of last edit in YYYY-MM-DD hh:mm:ss format.
 
 ## PHP example
 
