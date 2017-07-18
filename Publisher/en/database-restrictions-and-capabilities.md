@@ -58,4 +58,8 @@ full of information and good tutorials to help you get started.
 
 Watch out: a regular expression always starts and ends with a slash (/).
 
-[Back to Database management](./database-introduction)
+## More information
+
+* [Database management](./database-introduction)
+* [Database fields and collections](./database-fields-and-collections)
+* [Database unsubscribe behaviour](./database-unsubscribe-behavior)
