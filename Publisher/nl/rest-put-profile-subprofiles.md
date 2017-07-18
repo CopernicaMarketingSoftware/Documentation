@@ -1,7 +1,7 @@
-# REST API: POST profile subprofiles
+REST API: PUT profile subprofiles
 
-Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
-kun je een HTTP POST request sturen naar de volgende URL:
+Om een subprofile aan een profiel in een bepaalde collectie te bwerken,
+kun je een HTTP PUT request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
@@ -40,9 +40,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("profile/id/subprofiles/321", $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+$api->put("profile/id/subprofiles/321", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
@@ -50,7 +48,7 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [PUT profile interests](rest-put-profile-interests)
+* [POST profile subprofiles](rest-post-profile-subprofiles)
+* [PUT profiel interesses](rest-put-profile-interests)
 * [GET subprofiel](rest-get-subprofile)
-* [PUT subprofiel](rest-put-profile-subprofiles)
 * [DELETE subprofiel](rest-delete-subprofile)

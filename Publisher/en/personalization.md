@@ -6,5 +6,5 @@ compiled and substitutes the code with the correct credentials of the receiver.
 By clicking on the links below, you'll find out how to personalize your e-mails
 in the Marketing Suite as well as the Publisher:
 
-* [Personalize with the Marketing Suite](personalizing-your-newsletter-with-the-marketing-suite.md)
-* [Personalize with the Publisher](personalizing-your-newsletter-with-the-publisher.md)
+* [Personalizing with the Marketing Suite](personalizing-your-newsletter-with-the-marketing-suite.md)
+* [Personalizing with the Publisher](personalizing-your-newsletter-with-the-publisher.md)

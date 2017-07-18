@@ -106,7 +106,8 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields.md)                                       | Bijwerken profielvelden                           |
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests.md)                                | Toevoegen interesses van profiel                  |
 | PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests.md)                                 | Overschrijven interesses van profiel              |
-| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                            | Toevoegen van een subprofielen aan een profiel    |
+| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                            | Toevoegen van subprofielen aan een profiel        |
+| PUT       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-put-profile-subprofiles.md)                             | Bijwerken van subprofielen aan een profiel        |
 | PUT       | [api.copernica.com/v1/collection/$id](./rest-put-collection.md)                                               | Bijwerken collectiegegevens                       |
 | POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields.md)                                | Aanmaken veld in een collectie                    |
 | PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)                               | Bijwerken veld in collectie                       |
