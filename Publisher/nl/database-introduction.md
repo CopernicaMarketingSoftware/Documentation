@@ -39,12 +39,22 @@ door middel van databaserestricties en gebruiksmogelijkheden in te stellen.
 De volgende artikelen helpen je op weg bij het opzetten van een
 database en het onderhouden ervan.
 
-* [Selecties](./selections-introduction)
+### Inrichting
+
+* [Configureren van een database](./quick-database-guide)
 * [Velden en collecties](database-fields-and-collections)
 * [Database restricties en intenties](database-restrictions-and-capabilities)
-* [Configureren van een database](./quick-database-guide)
+* [Selecties](./selections-introduction)
+
+### Importeren, exporteren en updaten
+
+* [Importeren van een database](./database-import)
 * [Exporteren van een database](./database-export)
 * [Databases beheren met de REST API](./rest-api)
+
+### Onderhoud en tips
+
 * [Tips voor het beheren van je database](./database-maintenance)
+* [Voorkom database corruptie](./prevent-database-corruption)
 * [Spamtraps](./mind-your-email-reputation-watch-out-for-spam-traps)
 * [E-mailreputatie](./how-to-build-up-your-email-reputation)
