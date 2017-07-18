@@ -100,7 +100,17 @@ format. The XML code below represents a web form, and contains
 information about its fields, label texts and the unique ID of the web
 form.
 
-    <webform>    <id>42</id>   <buttontext>Send</buttontext>   <field>     <id>2b3616f2a90c96c8193b932bded51985</id>     <label>Voornaam</label>     <required>yes</required>      <type>text</type>     <value/>    </field>  </webform>  
+    <webform>    
+        <id>42</id>   
+        <buttontext>Send</buttontext>   
+        <field>     
+            <id>2b3616f2a90c96c8193b932bded51985</id>     
+            <label>Voornaam</label>     
+            <required>yes</required>      
+            <type>text</type>     
+            <value/>    
+        </field>  
+    </webform>  
 
 Very interesting, all that plain information, but unless it's converted
 to HTML, it is useless to an internet browser. And that's where XSLT
@@ -111,7 +121,11 @@ browser. The XSLT code below puts the label from the XML in a *div* with
 a CSS class. Whenever the field is required, an asterisk is placed
 behind the field.
 
-    <!-- Add a label in front of the input field -->  <div class="label">     <xsl:value-of select="label" />     <div class="colon">:</div>     <xsl:if test="required = 'yes'"><div class="required">*</div></xsl:if>  </div>
+    <!-- Add a label in front of the input field -->  
+    <div class="label">     
+    <xsl:value-of select="label" />     
+    <div class="colon">:</div>     
+    <xsl:if test="required = 'yes'"><div class="required">*</div></xsl:if>  </div>
 
 ### Create your own XSLT
 
@@ -130,12 +144,6 @@ Creating a new XSLT file is fairly simple.
 -   When creating a new XSLT, you can choose to 'Fill the new XSLT with
     default code'.
 
-### XSLT resources
-
-As opposed to CSS, XSLT programming is quite complex, and requires
-specific knowledge. Much can be found on the internet about XSLT's,
-since it is a standard technology.
-
 ### Link your XSLT to a webform, feed or survey
 
 Once you have created your own XSLT it can easily be linked to the
@@ -143,7 +151,9 @@ publication where you have created the XSLT for. This is done by adding
 the *xslt=* parameter to the tag to publish the webform, survey or web
 feed.
 
-> `{feed name=my_feed xslt=myxslt}     {survey name=my_survey xslt=myxslt}     {webform name=my_webform xslt=myxslt}`
+    {feed name=my_feed xslt=myxslt}
+    {survey name=my_survey xslt=myxslt}
+    {webform name=my_webform xslt=myxslt}
 
 ## More information
 
