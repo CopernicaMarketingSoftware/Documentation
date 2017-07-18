@@ -10,7 +10,6 @@ aanmaken door in te loggen in de [Marketing Suite](https://ms.copernica.com/#/me
 met de inloggegevens van je Copernica account. Als je deze nog niet hebt 
 kun je deze [hier](https://www.copernica.com/en/copernica-trial) aanmaken.
 
-
 ## Prijsstructuur
 
 Copernica hanteert een standaard prijsstructuur waarbij het aantal verstuurde
@@ -38,8 +37,12 @@ het versturen van e-mails. Je kunt dus gebruik maken van variabele prijsopbouw
 alsook het gebruik van bundels. Er worden geen API calls overgeheveld naar een 
 volgende maand.
 
-
 ## Facturering
 
 Alle facturering is geautomatiseerd, waardoor je aan het eind van elke 
 maand een factuur ontvangt met al je kosten voor de afgelopen maand.
+
+## Meer informatie
+
+- [Tarieven](https://www.copernica.com/nl/pricing)
+- [Litmus previews](./litmus)
