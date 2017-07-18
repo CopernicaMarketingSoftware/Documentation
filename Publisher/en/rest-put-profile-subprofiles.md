@@ -1,6 +1,6 @@
 # REST API: POST profile subprofiles
 
-To add subprofiles to a profile an HTTP post request can be sent to the following URL:
+To add subprofiles to a profile an HTTP PUT request can be sent to the following URL:
 
 `https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
