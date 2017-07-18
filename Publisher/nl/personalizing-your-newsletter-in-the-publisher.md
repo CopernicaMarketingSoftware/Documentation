@@ -108,7 +108,6 @@ Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zel
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
 
-
 ## Waar kun je Smarty-personalisatie gebruiken?
 
 Je kunt vrijwel overal Smarty personalisatie toepassen:
@@ -127,8 +126,7 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 * In enquêtes
 * In content feeds
 
-
-## Verder lezen
+## Meer informatie
 
 * [Overzicht van personalisatievariabelen](./personalization-variables.md)
 * [Overzicht van personalisatiemodifiers](./personalization-modifiers.md)

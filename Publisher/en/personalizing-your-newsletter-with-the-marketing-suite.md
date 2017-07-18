@@ -48,3 +48,9 @@ you can apply personalization. These fields can be recognized
 by the Dollar `$` sign in the input field. You can for example
 edit the 'from name', subject or 'from adres' by adding the code
 to each of these fields.
+
+## More information
+
+* [Personalization variables overview](./personalization-variables.md)
+* [Personalization modifiers overview](./personalization-modifiers.md)
+* [Personalization functions overview](./personalization-functions.md)
