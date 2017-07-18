@@ -59,4 +59,8 @@ selections remain active, so they still take up computing power and
 make your database slower. If you're going for performance, it's best 
 to delete or deactivate selections.
 
-[Back to selections management](./selections-introduction).
+## More information
+
+* [Selections and miniselections](./selections-introduction)
+* [Optimalizing selections](selections-optimization)
+* [Rules and conditions](selections-conditions)
