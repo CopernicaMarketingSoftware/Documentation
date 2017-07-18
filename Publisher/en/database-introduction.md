@@ -34,10 +34,22 @@ mailings.
 
 The following articles will help you build and maintain a database.
 
-* [Selections](./selections-introduction)
+### Configuration
+
+* [Configuring a database](./quick-database-guide)
 * [Fields and collections](database-fields-and-collections)
 * [Database restrictions and intentions](database-restrictions-and-capabilities)
-* [Configuring a database](./quick-database-guide)
+* [Selections](./selections-introduction)
+
+### Importing, exporting and updating
+
+* [Importing a database](./database-import)
 * [Exporting a database](./database-export)
 * [Managing databases with the REST API](./rest-api)
+
+### Maintenance and tips
+
 * [Database maintenance](./database-maintenance)
+* [Prevent database corruption](./prevent-database-corruption)
+* [Spamtraps](./mind-your-email-reputation-watch-out-for-spam-traps)
+* [E-mail reputation](./how-to-build-up-your-email-reputation)
