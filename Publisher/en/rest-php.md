@@ -162,7 +162,7 @@ class CopernicaRestAPI
 }
 ```
 
-## Use in own application
+## Use in your own application
 
 Just copy and paste the script in your own application. 
 The script below lets you call the API from every script.

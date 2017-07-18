@@ -163,7 +163,7 @@ class CopernicaRestAPI
 }
 ```
 
-## Gebruik in eigen applicatie
+## Gebruik in je eigen applicatie
 
 Het bovenstaande script kun je gemakkelijk kopiëren en plakken, zodat je het kunt
 gebruiken in je eigen applicatie. Door onderstaande code te implementeren kun je 
