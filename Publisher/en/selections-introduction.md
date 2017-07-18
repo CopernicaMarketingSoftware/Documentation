@@ -77,3 +77,10 @@ we've created a separate article explaining it all. You'll find it
 * [Database management](./database-introduction)
 * [Selection management](./selections-settings)
 * [Selection conditions](./selections-conditions)
+
+### Selection tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
+* [Selections Tutorial: Birthday selection](./how-to-create-a-birthday-selection)
