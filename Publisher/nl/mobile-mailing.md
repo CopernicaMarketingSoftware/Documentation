@@ -32,3 +32,7 @@ Nadat je de mailing hebt voorbereid kun je deze versturen via het normale
 mail menu. Als je ervoor kiest om Smarty [personalizatie](./personalization)
 te gebruiken moet je zoals altijd je document uitvoerig testen om te zorgen
 dat alle ontvangers het document zien zoals bedoeld.
+
+## Meer informatie
+
+* [Publisher exclusieve functies](./publisher-only)
