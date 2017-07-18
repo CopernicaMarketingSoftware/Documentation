@@ -60,5 +60,5 @@ associated with the last month.
 
 ## More information
 
-- [Pricing](https://www.copernica.com/nl/pricing)
+- [Pricing](https://www.copernica.com/en/pricing)
 - [Litmus previews](./litmus)
