@@ -1,7 +1,5 @@
 # Selections and miniselections
 
-## What's a selection?
-
 Apart from fields and collections, Copernica also has selections and 
 miniselections. Selections are used to group parts of the profiles in 
 your database, so you can use them as a destination for mailings or 
