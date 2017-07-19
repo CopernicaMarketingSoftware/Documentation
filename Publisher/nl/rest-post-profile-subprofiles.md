@@ -13,14 +13,8 @@ succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Body data
 
-Het subprofile kan de volgende eigenschappen hebben:
-
-- secret:           geheime code geassocieerd met dit subprofile;
-- profile:          id van het subprofile waar het subprofile bij hoort;
-- fields:           velden van het subprofile;
-- collection:       id van de collectie waar het subprofile bij hoort;
-- created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
-- modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
+Je kunt een field aanmaken door de properties mee te geven aan de data
+array.
 
 ## Voorbeeld in PHP
 
@@ -35,12 +29,13 @@ $api = new CopernicaRestApi("your-access-token");
 
 // data voor de methode
 $data = array(
-    'collection'  =>  '13',
-    'profile'    =>  '1234'
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
 
 // voer het verzoek uit
-$api->post("profile/id/subprofiles/321", $data);
+$api->post("profile/id/subprofiles/id", $data);
 
 // bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
