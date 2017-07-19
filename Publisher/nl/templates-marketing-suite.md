@@ -8,14 +8,12 @@ Naast de [Follow-up Manager](follow-up-manager-ms), heeft de
 Marketing Suite nog een aantal andere toepassingen die wellicht 
 handig zijn bij het creëren van je e-mailtemplates.
 
-
 ## Extend hyperlinks
 
 Binnen de template editor kun je gebruik maken van "extend hyperlinks".
 Voeg de benodigde informatie (tags) toe om uit te vinden hoe klanten op 
 bepaalde links en e-mails reageren. Je kunt ook kiezen voor de custom 
 optie en op je eigen tags meegeven om data te verwerken. 
-
 
 ## CSS automatisch inline
 
@@ -26,14 +24,12 @@ editor zorgt voor een automatische omzetting van CSS, waardoor alle
 stijlopmaak intact blijft en je klanten de e-mails exact zo ontvangen
 als jij voor ogen had.
 
-
 ## Diff tool 
 
 Het kan natuurlijk altijd voorkomen dat je per ongeluk je tabblad of 
 scherm afsluit. In de meeste gevallen ben je dan je werk kwijt. In
 de Marketing Suite wordt alles voor je opgeslagen en kun je nagaan
 wat er is veranderd op het moment dat het scherm werd afgesloten.
-
 
 ## Responsive templates
 
@@ -42,7 +38,6 @@ automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk
 JSON bestanden. Door onze geavanceerde [Responsive Email](http://www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
-
 
 ## Spam check
 
@@ -56,3 +51,12 @@ is het handig om wellicht toch de verbeteringen door te voeren.
 ## Meer informatie
 
 * [Templates](./templates)
+* [Templates in Publisher](./templates-publisher)
+* [Personalizatie in de Marketing Suite](personalizing-your-newsletter-in-the-marketing-suite)
+* [Followups](./followups)
+
+### Template content
+
+* [Text tag](text-tag)
+* [Image tag](image-tag)
+* [Loop tag](loop-tag)

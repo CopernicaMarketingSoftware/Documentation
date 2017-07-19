@@ -27,16 +27,16 @@ tussen quotes geplaatst zodat er geen conflicten met het scheidingsteken optrede
 Ook de resultaten van mailings kunnen worden geëxporteerd. Zie [dit artikel](./statistics-export) 
 voor meer informatie.
 
-Als je profielen of subprofielen wilt exporteren gebaseerd op e-mailresultaten, 
-maak dan een selectie aan met de conditietype *Check op resultaten e-mailcampagnes*. 
-Gebruik dan de exportfunctie in het onderdeel *profielen* om de profielgegevens 
-uit de selectie te downloaden.
-
 ## Exporteren in Publisher
 
 Om een database of collectie te exporteren moet je deze eerst selecteren 
 onder **Profielen**. Je kunt daarna onder **Huidige weergave** de optie 
 vinden om te exporteren of importeren.
+
+Als je profielen of subprofielen wilt exporteren gebaseerd op e-mailresultaten, 
+maak dan een selectie aan met de conditietype *Check op resultaten e-mailcampagnes*. 
+Gebruik dan de exportfunctie in het onderdeel *profielen* om de profielgegevens 
+uit de selectie te downloaden.
 
 ## Exporteren met Marketing Suite
 

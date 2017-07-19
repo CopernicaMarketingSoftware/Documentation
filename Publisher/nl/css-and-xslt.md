@@ -93,11 +93,11 @@ zijn unieke identifier.
         <id>42</id>   
         <buttontext>Send</buttontext>   
         <field>     
-        <id>2b3616f2a90c96c8193b932bded51985</id>     
-        <label>Voornaam</label>     
-        <required>yes</required>      
-        <type>text</type>     
-        <value/>    
+            <id>2b3616f2a90c96c8193b932bded51985</id>     
+            <label>Voornaam</label>     
+            <required>yes</required>      
+            <type>text</type>     
+            <value/>    
         </field>  
     </webform>  
 

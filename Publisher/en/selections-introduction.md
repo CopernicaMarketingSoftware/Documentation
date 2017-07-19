@@ -1,7 +1,5 @@
 # Selections and miniselections
 
-## What's a selection?
-
 Apart from fields and collections, Copernica also has selections and 
 miniselections. Selections are used to group parts of the profiles in 
 your database, so you can use them as a destination for mailings or 
@@ -46,21 +44,12 @@ Creating subselections is only possible on profile level; making
 ### Marketing Suite
 
 Selections, subselections and miniselections can be added, deleted and 
-managed under **profiles** > **edit selections** in the Marketing Suite. A 
-subselection is created by clicking *create selection* and then assigning 
-it to exist under the selection you want it to. In MarketingSuite, you'll 
-find the **create a first selection** button on the left side of your database, 
-if you haven't got any yet, and the **create (mini)selection** button on 
-the top right if you do.
+managed under `DATABASE & PROFILES`.
 
 ### Publisher (old)
 
-It is also possible to make selections in Publisher. Since Marketing Suite 
-and Publisher use the same data any selection made in either program are 
-also accessible in the other program. To add a selection in Publisher 
-go to **Profiles** > **Database management** > **Edit selections...**. 
-Here you can make and edit selections and access their title, description 
-and conditions.
+Selections, subselections and miniselections can be added, deleted and 
+managed under **Profiles** > **Database management**.
 
 ## Selection rules and conditions
 
@@ -77,3 +66,10 @@ we've created a separate article explaining it all. You'll find it
 * [Database management](./database-introduction)
 * [Selection management](./selections-settings)
 * [Selection conditions](./selections-conditions)
+
+### Selection tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
+* [Selections Tutorial: Birthday selection](./how-to-create-a-birthday-selection)

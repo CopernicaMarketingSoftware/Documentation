@@ -28,7 +28,6 @@ the '@' is a code that is unique for each addressee. When we receive a bounce th
 is sent to such an address, we can easily link this bounce to the original message 
 because of this unique identifier. 
 
-
 ## MX records
 
 Email messages (remember that bounces are email messages too) are sent to email 
@@ -49,26 +48,24 @@ recommendation from the dashboard and you've correctly configured the MX record,
 the MX lookup succeeds and contains the address of Copernica's mail servers, so
 that the bounce is sent to one of our servers where we can process it.
 
+## Can't make MX records?
 
-## Are you unable to create MX records?
+Not all DNS providers allow you to make MX records. If your domain is 
+hosten under such a service it becomes a bit harder to follow the quick 
+start instructions, because you can't make the MX records. Luckily there 
+exists a workaround.
 
-Some DNS providers, especially certain Microsoft services, do not permit users
-to create their own MX records. If you use such a service it is impossible to 
-follow the recommendations given on the dashboard. However, with a simple 
-workaround you can still create a DNS configuration in which the bounces end 
-up on our servers.
+When the Copernica dashboard advises you to make a MX record you can make 
+a CNAME record instead with the following scheme:
 
-If the Copernica dashboard recommends to create a MX record, while you are
-unable to create such records, you can create a CNAME record instead, 
-according to the following scheme:
-
+```text
 <table>
     <tr>
-        <td><strong>Recommended MX record</strong></td>
-        <td><strong>CNAME record that can be used too</strong></td>
+        <td><strong>Advised MX record</strong></td>
+        <td><strong>Alternative CNAME record</strong></td>
     </tr>
     <tr>
-        <td>MX 0 ms.copernica.nl</td>
+        <td>MX 0 ms.copernica.com</td>
         <td>CNAME feedback.copernica.com</td>
     </tr>
     <tr>
@@ -76,11 +73,10 @@ according to the following scheme:
         <td>CNAME smtpeter.com</td>
     </tr>
 </table>
+```
 
-You can use the table above to lookup the recommended advice. If the dashboard
-says that you should create a MX record for "feedback.yourdomain.com" with
-value "0 ms.copernica.nl" you can create CNAME record for 
-"feedback.yourdomain.com" with value "feedback.copernica.com" instead.
+In the table above you can the MX record advised by the dashboard and 
+the CNAME record you may use instead.
 
 ## More information
 

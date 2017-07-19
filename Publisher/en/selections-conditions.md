@@ -92,6 +92,11 @@ AND
 You can find more information and tutorials on often used selections here.
 
 * [Selection management](./selections-introduction)
+* [Settings for selections](selections-settings)
+* [Optimalizing selections](selections-optimalization)
+
+### Selection tutorials
+
 * [Tutorial: Birthday selection](./how-to-create-a-birthday-selection)
 * [Tutorial: Newsletter selection](./create-a-mailing-list)
 * [Tutorial: Automatically processing email bounces](./automatically-process-bounces)

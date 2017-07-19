@@ -70,8 +70,15 @@ Het is mogelijk om profielen te selecteren die zijn geëxporteerd
 gedurende een bepaalde periode.
 
 
-### Meer informatie
+## Meer informatie
 
-* [Selecties en miniselecites](selections-introduction)
+* [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
 * [Optimaliseren van selecties](selections-optimalization)
+
+### Selectie tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Dubbele opt-in aanmaken](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selections Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
