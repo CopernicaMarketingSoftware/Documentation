@@ -31,3 +31,7 @@ easily in the user management section, where everything is neatly
 displayed for your convenience. 
 
 ![Account-user relationship](../images/accounts-users.png)
+
+## More information
+
+* [Tips, tricks and background](./tips-and-tricks)

@@ -1,4 +1,4 @@
-# SOAP API Documentatie
+# SOAP API
 
 Behalve de bestaande integraties voor verschillende systemen, is het dankzij onze krachtige SOAP API ook
 mogelijk zelf een integratie met je eigen software te maken.

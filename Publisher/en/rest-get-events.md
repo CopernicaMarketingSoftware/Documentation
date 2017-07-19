@@ -28,7 +28,7 @@ The following parameters can be added to the URL as variables:
 - **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
 - **tags**:  optional tags you want to filter for.
 
-### Start and end parameters
+## Start and end parameters
 
 If no start and end parameters are provided you will get the default period
 for the particular events. 
@@ -47,7 +47,7 @@ Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
 change if performance requires this.
 
-### Tags
+## Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags

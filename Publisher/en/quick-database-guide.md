@@ -13,7 +13,7 @@ beginning it's wise to just keep things simple. You can always
 add fields later on. 
 
 
-## Fields, interest and collections
+## Fields, interests and collections
 
 A field in a database can encompass an interest or collection.
 An interest can only consist of the value "yes" or "no".

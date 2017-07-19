@@ -1,7 +1,10 @@
 # Video's en GIFs
 
-Hieronder is een korte toelichting gegeven over het gebruik van video en GIF
-in e-mails. 
+Video is erg nuttig in marketing: Het is leuk, trekt je aandacht en je 
+kan er krachtige boodschappen mee overbrengen. Helaas ondersteunen veel 
+email clients nog geen video in een email, maar er zijn manieren om dit 
+te omzeilen. In dit artikel zullen we een aantal manieren om GIFs en videos 
+in je mail te gebruiken bespreken.
 
 ## Video
 
@@ -35,6 +38,15 @@ je gebruikers innemen.
 overbodige frames te verwijderen. Als je ervaren bent met photoshop kun 
 je er ook voor kiezen om alleen de bewegende onderdelen te animeren, 
 waardoor de afbeelding niet voor elk frame opnieuw getekend hoeft te worden.
+
+## Geanimeerde link naar je video
+
+Het kan ook heel interessant zijn om de GIF en de afbeelding met de 
+play knop te combineren. Het is namelijk ook mogelijk een link toe te voegen 
+aan een GIF. Op deze manier kun je bijvoorbeeld met een GIF een 
+highlight of preview laten zien, waarop iemand kan klikken om de 
+hele video te tonen. Zo trek je meteen de aandacht en nodig je de 
+lezer uit om je bedrijf verder te verkennen.
 
 ## Meer informatie
 

@@ -61,7 +61,6 @@ bovendien staat dat de berichten naar Copernica moet worden verstuurd, dan komen
 alle bounces bij ons terecht. En dat is precies de bedoeling, en daarom moet
 je een MX record aanmaken waarin het adres van onze mailserver staat.
 
-
 ## Kun je geen MX records aanmaken?
 
 Sommige DNS providers, waaronder bepaalde Microsoftdiensten, staan het niet toe 
@@ -93,10 +92,7 @@ volgende schema:
 
 In bovenstaande tabel kun je in de linkerkolom opzoeken welk advies het dashboard
 je geeft, en in de rechterkolom welk CNAME record je daarvoor in de plaats ook
-zou kunnen gebruiken. Kortom, als het dashboard je adviseert om een MX record 
-voor "feedback.jouwdomein.nl" aan te maken met de waarde "0 ms.copernica.com",
-dan kun je dus ook een CNAME record aanmaken voor "feedback.jouwdomein.nl" met
-de waarde "feedback.copernica.com".
+zou kunnen gebruiken.
 
 ## Meer informatie
 

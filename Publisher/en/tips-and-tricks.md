@@ -7,17 +7,20 @@ new things you may not know yet. Some articles are based on background, others
 more on the software and how to use it.
 
 ### Reputation
+
 * [Sender reputation](./sender-reputation)
 * [Deliverability](./deliverability)
 * [Lowering your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Reducing HTML errors](./reducing-html-errors)
 
 ### Databases and selections
+
 * [Prevent database corruption](./prevent-database-corruption)
 * [Maintaining your database](./database-maintenance)
 * [Selections optimization](./selections-optimization)
 
 ### Selection tutorials
+
 * [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
 * [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
 * [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
