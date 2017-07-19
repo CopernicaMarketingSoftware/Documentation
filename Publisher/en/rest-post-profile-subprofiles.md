@@ -12,14 +12,7 @@ call the ID of the created request is returned.
 
 ## Body data
 
-The subprofile can have the following properties:
-
-- secret: 		Secret code associated with subprofiles;
-- profile: 		ID of the profile the subprofile is associated with;
-- fields: 		Fields of the subprofile;
-- collection: 	ID of the collection the subprofile belongs to;
-- created: 		Timestamp of creation in YYYY-MM-DD hh:mm:ss format;
-- modified: 	Timestamp of last edit in YYYY-MM-DD hh:mm:ss format.
+You can create fields by specifying the properties and assigning it to the data body.
 
 ## PHP example
 
@@ -34,11 +27,13 @@ $api = new CopernicaRestApi("your-access-token");
 
 // data to pass to the call, the new interests
 $data = array(
-    'profile' => '1234'
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
-    
+
 // do the call
-$api->post("profile/1234/subprofiles/321", $data);
+$api->post("profile/id/subprofiles/id", $data);
 
 // return id of created request if successful
 ```
