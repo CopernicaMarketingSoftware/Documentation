@@ -9,7 +9,6 @@ more on the software and how to use it.
 ### Reputation
 
 * [Sender reputation](./sender-reputation)
-* [Deliverability](./deliverability)
 * [Lowering your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Reducing HTML errors](./reducing-html-errors)
 

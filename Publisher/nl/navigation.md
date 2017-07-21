@@ -37,7 +37,7 @@
 * [Tips, tricks en achtergrond](./tips-and-tricks)
     * [Accounts en gebruikers](accounts-and-users.md)
     * [Licentie en facturering](./license-and-billing)
-    * [E-mail aflevering verbeteren](./deliverability)
+    * [Sender reputation](./sender-reputation)
     * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
     * [Verminder HTML fouten](./reducing-html-errors)
 * [Publisher exclusief](./publisher-only)
