@@ -19,7 +19,7 @@ array.
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
+Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.
 
 ```php
 // vereiste scripts
@@ -45,6 +45,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 
 * [Overzicht van alle API calls](rest-api)
 * [POST profile subprofiles](rest-post-profile-subprofiles)
-* [PUT profiel interesses](rest-put-profile-interests)
-* [GET subprofiel](rest-get-subprofile)
-* [DELETE subprofiel](rest-delete-subprofile)
+* [PUT profile interests](rest-put-profile-interests)
+* [GET subprofile](rest-get-subprofile)
+* [DELETE subprofile](rest-delete-subprofile)
