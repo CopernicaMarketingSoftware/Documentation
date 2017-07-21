@@ -1,33 +1,23 @@
 # Sender domains
 
-In the old times it was very easy to *fake* the from address of an e-mail. However, 
-this is no longer as easy as it used to be. For Copernica it is therefore
-also not directly possible to start out sending mails on your behalf. To be able 
-to send out messages out of your name, you (in your role as owner of the domain name) first
-have to add a bunch of records to your [DNS](./dns.md) configuration. By adding
-these records to your DNS, you enable receivers to check whether we were indeed 
-given permission to send your e-mail. If you do not do this, a huge percentage 
-of the mails that you send with our software will not be accepted.
+Nowadays sending email is a very complicated procedure. However, there is 
+a very good reason for this: Email with a *fake* "from" address, which 
+can be very harmful to your reputation as a company. Of course Copernica 
+can't just start sending email in your name either. First you need to configure 
+your [DNS](./dns), which is a complicated matter that is simplified with 
+**sender domains**. The sender domain handles complicated matters such 
+as [MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) and [DMARC](./dmarc.md), 
+allowing Copernica to send email for you. This is why sender domains are 
+also mandatory. We will create the DNS records for you and maintain the 
+records, you just refer to our DNS server.
 
-Setting up all these [DNS records](./dns.md) can be a complex task. To help you 
-out with this we have introduced a technology that we call *Sender Domains*.
-This is how it works: for us to be able to send your e-mail, you normally have to add
-[MX](./mx.md), [SPF](./spf.md), [DKIM](./dkim.md) and [DMARC](./dmarc.md) 
-records to your DNS settings. With Sender Domains however, you do not have to
-do create and maintain all these records yourself. Instead, *we* create the DNS 
-records for you, and store them on *our* DNS server. You just have to create a 
-couple of simple aliases (CNAME records) that refer to these settings on our server.
-The aliases that you have to create are listed in the sender domain section of
-the Marketing Suite dashboard.
-
-That's it. In our special [quick-start guide to set up sender domains](./quick-sender-domain-guide.md)
+That's all. In our [quick-start guide to set up sender domains](./quick-sender-domain-guide.md)
 we already explained all the aliases that you had to set up. In this article we
 will focus on the more advanced features of sender domains.
 
-
 ## Subdomain or the main domain?
 
-If you setup a sender domain you can choose whether you want to do this for the
+If you set up a sender domain you can choose whether you want to do this for the
 main domain, say yourcompany.com, or for a subdomain, like newsletter.yourcompany.com.
 Of course, it is way more elegant if all your email messages are sent from the
 main domain, including your newsletters and transactional email. But your main domain 
@@ -40,8 +30,8 @@ have to add completely new records.
 
 Setting up a subdomain is safer and easier than setting up a Sender Domain for
 a subdomain. If you do choose to use the main domain, you must pay close attention 
-to a couple of DNS settings. Especially the DMARC settings require attention.
-
+to a couple of DNS settings. Especially the DMARC settings require attention. 
+For information how to set these up you can refer to the [article on DMARC](./dmarc).
 
 ## The DNS records
 
@@ -67,28 +57,29 @@ following records are hosted by us:
 * A SPF record so that our IP addresses can be used to send out your mail
 * A DMARC record to collect DMARC reports
 
+```text
+    Advised DNS records to add to               DNS records on the server
+    the domain:                                 of Copernica, with settings 
+                                                of the sender domain:
+
+    +-------------------+                       +-------------------+
+    |   SPF alias       |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DKIM alias      |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   DMARC alias     |           --->        |   TXT record      |
+    +-------------------+                       +-------------------+
+    |   Tracking alias  |           --->        |   A record(s)     |
+    +-------------------+                       +-------------------+
+    |   Bounce alias    |           --->        |   MX record(s)    |
+    +-------------------+                       +-------------------+
+```
+
 The A, MX and DKIM records are normally easy to set up. The DNS standard allows
 to create as many of these records as one need, and they cannot conflict with 
 other records. SPF is also not an issue because we use a subdomain for collecting
-bounces. DMARC however, might require extra attention.
-
-
-## Watch out with DMARC
-
-Things are more complex with DMARC, especially if you want to setup Copernica to
-send out mail using the main domain. In DNS, you can only
-have one DMARC record per (sub)domain, and this DMARC record is probably already
-in use for your regular mail flow. You can not simply remove or overwrite this
-existing record because that might influence your existing mail flow. The simple
-solution would then be to setup Copernica to use a new subdomain instead. However,
-if you insist on using the main domain, which of course is way more elegant, you
-will have to take some extra steps, and merge your existing DMARC record with the
-one that we take care of. We've explained this in more detail in the article 
-on [setting up DMARC](./dmarc.md).
-
-Setting up sender domains can be done via the advanced interface of the Marketing Suite.
-With green checks and red warnings we show whether you've created the right aliases.
-No hassle whatsoever. 
+bounces. [DMARC](./dmarc) however, might require extra attention, because 
+it can cause a conflict.
 
 ## More information
 
