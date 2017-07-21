@@ -21,26 +21,28 @@ te voegen op een van de volgende manieren:
 * Je kunt ze in het "data-script" plaatsen van een &lt;a&gt; tag;
 * Je kunt ze met de "drag-and-drop" editor invoeren.
 
-
 ## Beschikbare data-scripts
 
 Er zijn verschillende soorten objecten die je in je 
 data-scripts kunt gebruiken. Met deze objecten kun 
 je gegevens uit je account ophalen en bewerken. 
 Hiervoor zijn de volgende objecten beschikbaar:
-                                      
-* [copernica](./followups-scripting-copernica);
-* [mailing](./followups-scripting-mailing);      
-* [template](./followups-scripting-template);  
-* [message](./followups-scripting-message);     
-* [destination](./followups-scripting-destination);
-* [profile](./followups-scripting-profile).        
 
+| Object                                               | Omschrijving                       |
+|------------------------------------------------------|------------------------------------|               
+| [**copernica**](./followups-scripting-copernica)     | Copernica account                  |
+| [**mailing**](./followups-scripting-mailing)         | Vorige mailing                     |
+| [**message**](./followups-scripting-message)         | Gepersonalizeerde template         |
+| [**template**](./followups-scripting-template)       | Standaard template                 |
+| [**database**](./followups-scripting-database)       | Database                           |
+| [**collection**](./followups-scripting-collection)   | Collectie                          |
+| [**profile**](./followups-scripting-profile)         | Bestemming profiel                 |
+| [**subprofile**](./followups-scripting-subprofile)   | Bestemming subprofiel              |
+| [**destination**](./followups-scripting-destination) | Alias naar profiel of subprofiel   |        
 
 Deze objecten hebben een ding gemeen. Namelijk, ze bezitten 
 allen het [data data-script](./followups-scripting-data) 
 dat je kunt gebruiken om informatie in op te slaan. 
-
 
 ## Voorbeeld
 
@@ -58,7 +60,6 @@ kun je ook hele complexe scripts uitvoeren. Je treft nooit een
 data-script aan als je de broncode van een verstuurd bericht 
 inspecteert. Het data-script wordt, vlak voor het versturen, uit 
 de e-mail gefilterd en is dus niet zichtbaar voor de ontvanger. 
-
 
 ## Meer informatie
 

@@ -11,7 +11,6 @@ to the hyperlinks via:
 * the *data-script* attribute on &lt;a&gt; tags
 * the drag-and-drop editor in the follow-up form
 
-
 ## Available objects
 
 Inside the script you can make use of a couple of global variables that identify 
@@ -26,14 +25,13 @@ writable properties to change them as well. The following variables are accessib
 | [**message**](./followups-scripting-message)          | Personalized template                |
 | [**template**](./followups-scripting-template)        | Standard template                    |
 | [**database**](./followups-scripting-database)        | Database                             |
-| [**collection**](./followups-scripting-collection)    | Collection (subset of database)      |
+| [**collection**](./followups-scripting-collection)    | Collection                           |
 | [**profile**](./followups-scripting-profile)          | Profile                              |
-| [**subprofile**](./followups-scripting-subprofile)    | Subprofile (profile from collection) |
+| [**subprofile**](./followups-scripting-subprofile)    | Subprofile                           |
 | [**destination**](./followups-scripting-destination)  | Alias to profile/subprofile          |
 
 A few of these objects also have [the data object](./followups-scripting-data), 
 which you can use to store your own information regarding the object.
-
 
 ## A very simple example
 
@@ -55,7 +53,6 @@ Before an email is delivered, the data-script is removed from the original code.
 receivers therefore do not get to see the script when they open the source code of
 the message. However, the script stays active because Copernica has stored the
 script and runs it when a click is registered.
-
 
 ## More information
 
