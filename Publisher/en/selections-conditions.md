@@ -5,24 +5,24 @@ selection based on certain properties. All profile data you store in
 Copernica can be used for selection rules. Selection rules consist 
 of conditions. There are many different conditions to use:
 
-| Condition type                            | Description                                                                                                    |
-|-------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Check on field                            | Check on values of a certain field, for example to select all residents of a city.                             |
-| Check on interest                         | Check on interests of a profile, for example to select all interested in "tennis".                             |
-| Check on date                             | Check on date, for example to make a [birthday selection](./how-to-create-a-birthday-selection).               |
-| Check on e-mail results                   | Check on the results of Publisher e-mail campaigns, for example if the last email was delivered.               |
-| Check on results of mobile mailings       | Check on the results of mobile mailings.                                                                       |
-| Check on results of fax mailings          | Check on the results of fax mailings.                                                                          |
-| Check on marketing suite e-mail results   | Check on the results of Marketing Suite e-mail campaigns.                                                      |
-| Check on survey results                   | Check on survey results, for example to send a reminder about answering your survey.                           |
-| Check on double or single profiles        | Check if profiles are unique or duplicates, for example to ask users which account is the correct one.         |
-| Check on contact history                  | Check on contact history, for example to make a selection to re-establish contact with.                        |
-| Check on planned contacts                 | Check on planned contacts, for example to send a mailing the targets were already marked for.                  |
-| Check on miniselection content            | Check on miniselection content, for example to exclude a miniselection of profiles with invalid data.          |
-| Check on changes                          | Check on changes in the profile, for example to send a confirmation mail of recent profile changes.            |
-| Sort and/or select profiles               | Sort or select profiles based on field values.                                                                 |
-| Check content of other selection          | Check on other selection content.                                                                              |
-| Check based on previous exports           | Check based on previous exports, for example if you only want to export profiles that weren't exported before. |
+| Condition type                                                       | Description                                                                                                    |
+|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Check on field                                                       | Check on values of a certain field, for example to select all residents of a city.                             |
+| Check on interest                                                    | Check on interests of a profile, for example to select all interested in "tennis".                             |
+| Check on date                                                        | Check on date, for example to make a [birthday selection](./how-to-create-a-birthday-selection).               |
+| Check on e-mail results                                              | Check on the results of Publisher e-mail campaigns, for example if the last email was delivered.               |
+| Check on results of mobile mailings                                  | Check on the results of mobile mailings.                                                                       |
+| Check on results of fax mailings                                     | Check on the results of fax mailings.                                                                          |
+| Check on marketing suite e-mail results                              | Check on the results of Marketing Suite e-mail campaigns.                                                      |
+| Check on survey results                                              | Check on survey results, for example to send a reminder about answering your survey.                           |
+| Check on double or single profiles                                   | Check if profiles are unique or duplicates, for example to ask users which account is the correct one.         |
+| Check on contact history                                             | Check on contact history, for example to make a selection to re-establish contact with.                        |
+| Check on planned contacts                                            | Check on planned contacts, for example to send a mailing the targets were already marked for.                  |
+| Check on miniselection content                                       | Check on miniselection content, for example to exclude a miniselection of profiles with invalid data.          |
+| Check on changes                                                     | Check on changes in the profile, for example to send a confirmation mail of recent profile changes.            |
+| [Sort and/or select profiles](./selections-conditions-partcondition) | Sort or select profiles based on field values.                                                                 |
+| Check content of other selection                                     | Check on other selection content.                                                                              |
+| Check based on previous exports                                      | Check based on previous exports, for example if you only want to export profiles that weren't exported before. |
 
 ## Rules vs. conditions
 
@@ -66,6 +66,7 @@ You can find more information and tutorials on often used selections here.
 * [Selection management](./selections-introduction)
 * [Settings for selections](selections-settings)
 * [Optimalizing selections](selections-optimalization)
+* [The sorting condition in-depth](./selections-conditions-partcondition)
 
 ### Selection tutorials
 
