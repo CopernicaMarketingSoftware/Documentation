@@ -37,7 +37,7 @@
 * [Tips, tricks and background](./tips-and-tricks)
     * [Accounts and users](./accounts-and-users.md)
     * [License and billing](./license-and-billing)
-    * [Deliverability](./deliverability)
+    * [Sender reputation](./sender-reputation)
     * [Spam score](./some-tips-to-lower-your-email-spam-score)
     * [Reducing HTML errors](./reducing-html-errors)
 * [Publisher only features](./publisher-only)
