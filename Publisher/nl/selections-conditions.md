@@ -1,74 +1,65 @@
 # Regels en condities
 
-Regels en condities verschillen wel degelijk van elkaar.
-Een conditie is een onderdeel van een regel; er kunnen namelijk
-meerdere condities in een regel zitten. Oftewel, binnen een OF of OF NIET 
-regel worden EN condities aan elkaar gelinkt. De profielen worden toegekend
-aan een selectie als aan een van de verschillende regels wordt voldaan.
+Zoals je misschien al weet kun je met Copernica selecties maken van 
+profielen op basis van bepaalde eigenschappen die ze bezitten. De data 
+die opgeslagen staat in je profielen kun je gebruiken voor selectie 
+regels. Regels zijn opgebouwd uit condities. De volgende condities 
+zijn beschikbaar:
 
-Als profielen in een selectie moeten voldoen aan een of meerdere voorwaarden,
-gebruik je een OF regel met EN-conditie(s). Als profielen juist niet moeten
-voldoen aan een of meerdere voorwaarden, gebruik je een OF NIET regel met 
-EN-conditie(s).
+| Conditie type                                             | Omschrijving                                                                                                                                  |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Check op veldwaarde                                       | Check de waarde van een veld voor een profiel, bijvoorbeeld om iedereen uit "Amsterdam" te selecteren.                                        |
+| Check op interessegebied                                  | Check of een profiel een interesse heeft, bijvoorbeeld om iedereen met de interesse "tennis" een mail hierover te sturen.                     |
+| Check op datum                                            | Check op een datum, bijvoorbeeld om een [verjaardagsselectie](./how-to-create-a-birthday-selection) te maken.                                 |
+| Check op resultaten e-mailcampagnes                       | Check op de resultaten van een Publisher e-mailcampagne, bijvoorbeeld om een selectie te maken van mensen die je laatste mail hebben geopend. |
+| Check op resultaten sms-campagnes                         | Check op de resultaten van een sms-campagne.                                                                                                  |
+| Check op resultaten fax-mailings                          | Check op de resulaten van een fax-mailing.                                                                                                    |
+| Profielen selecteren gebaseerd op MarketingSuite mailing  | Check op de resultaten van een Marketing Suite e-mailcampagne.                                                                                |
+| Check op resultaten enquêtes                              | Check op de resultaten van een enquête, bijvoorbeeld om een reminder te sturen aan mensen die hem nog niet ingevuld hebben.                   |
+| Check op dubbele of unieke profielen                      | Check op unieke of dubbele profielen, bijvoorbeeld om klanten te vragen welk profiel correct is.                                              |
+| Check op contactgeschiedenis                              | Check op contactgeschiedenis, bijvoorbeeld om profielen te emailen die al een poos niet gecontacteerd zijn.                                   |
+| Check op actiepunten                                      | Check op actiepunten, bijvoorbeeld om profielen te mailen die al gemarkeerd zijn om een mailing te ontvangen.                                 |
+| Check op inhoud van miniselectie                          | Check op inhoud van een miniselectie, bijvoorbeeld om profielen uit te sluiten die vaak errors veroorzaken.                                   |
+| Check op wijziging                                        | Check op wijziging, bijvoorbeeld om profielen te informeren dat hun recente wijzingen succesvol doorgegeven zijn.                             |
+| Sorteer en/of selecteer profielen                         | Sorteer of selecteer profielen op basis van veldwaarden.                                                                                      |
+| Check inhoud andere selectie                              | Check op inhoud van een andere selectie.                                                                                                      |
+| Check op basis van eerdere exports                        | Check op basis van eerdere exports, bijvoorbeeld om te voorkomen dat profielen meerdere keren geëxporteerd worden.                            |
 
-Je kunt op een aantal manieren bepalen hoe profielen worden toegevoegd
-aan selecties. Deze filters worden binnen Copernica selectiecondities 
-genoemd. Hieronder zijn de verschillende opties uiteengezet:
+## Regels vs. condities
 
+Profielen kunnen gefilterd worden met selectie regels en condities. 
+Deze worden gebruikt om te specificeren waar een profiel aan moet 
+voldoen om binnen een selectie te vallen. Een regel en een conditie 
+zijn twee verschillende dingen: Condities worden gebruikt om regels 
+te vormen. "Vrouw" en "jonger dan 30" zijn voorbeelden van condities, 
+bijvoorbeeld, terwijl ze samen de regel "Vrouw AND jonger dan 30" kunnen 
+vormen.
 
-### Veldwaarde 
-Stelt een selectie samen aan de hand van de opgegeven veldwaarde.
-Deze veldwaarde kan bijvoorbeeld 'woonplaats = x' zijn.
-Alle woonplaatsen die gelijk zijn aan x komen dan in de selectie.
+## AND of OR
 
+Er zijn drie relaties: AND, OR en OR NOT. Alle regels bestaan uit een 
+of meer condities en om aan een regel te voldoen moeten alle condities 
+gelden. De regel "Vrouw AND jonger dan 30" geldt alleen als "Vrouw" en 
+"Jonger dan 30" beide ook gelden.
 
-### Interesse 
-Stelt een selectie samen aan de hand van een bepaalde interesse. 
-Deze interesse kan bijvoorbeeld gaan over 'product x'.
-Alle interesses die gelijk zijn aan x komen dan in de selectie.
+Als je echter de OR conditie wil gebruiken hoef je alleen meerdere 
+regels aan te maken. Een profiel valt binnen een selectie als er 
+aan tenminste een regel voldaan is. Als je bijvoorbeeld een selectie 
+zou willen maken van alleen jonge mensen met een interesse in "wintersport" 
+kun je twee regels maken: "Jonger dan 30 AND geïnteresseerd in skïen" en 
+"Jonger dan 30 AND geïnteresseerd in snowboarden". In dit geval 
+worden profielen toegevoegd die jonger dan 30 zijn en geïnteresseerd in 
+skïen, snowboarden of beide.
 
-
-### Datum
-Stelt een selectie samen aan de hand van een specifieke tijdsperiode.
-De datum kan bijvoorbeeld worden toegekend aan een bepaalde gebeurtenis.
-Denk aan datum aflopen garantie, datum na eerste aankoop of datum na 
-aanmelding voor nieuwsbrief. Alle datums die x-aantal dagen overeenkomen 
-met de dag van vandaag, komen dan in de selectie.
-
-
-### Campagneresultaat
-Stelt een selectie samen aan de hand van het opgegeven campagneresultaat.
-Dit campagneresultaat kan gaan over e-mailcampagnes, sms-campagnes, 
-faxcampagnes en enquetes. Denk bijvoorbeeld aan de ontvangers van een 
-e-mail die op een hyperlink hebben geklikt.
-Alle profielen met hetzelfde campagneresultaat komen dan in een selectie.
-
-
-### Contactgeschiedenis
-Stelt een selectie samen aan de hand van de contactgeschiedenis.
-De contactgeschiedenis kun je bijvoorbeeld gebruiken om een 
-periode te selecteren waarbinnen geen ontact is geweest. 
-Alle profielen met deze conditie komen dan in de selectie.
-
-
-### Combineren van (mini)selecties
-Stelt een selectie samen aan de hand van een eerder aangemaakte selectie.
-Het combineren van (mini)selecties geeft je nog meer flexibiliteit in het 
-doen van aanbiedingen aan je klanten. 
-Profielen die voorkomen in de twee opgestelde selecties, ontvangen dan 
-de mailing.
-
-
-### Veldwijziging
-Het is mogelijk om velden te checken op veranderingen en vervolgens het 
-bijbehorende profiel in een selectie te plaatsen. Zo kun je bijvoorbeeld
-iedereen die onlangs is verhuisd een mailing sturen.
-
-
-### Eerdere exports
-Het is mogelijk om profielen te selecteren die zijn geëxporteerd 
-gedurende een bepaalde periode.
-
+Deze laatste relatie kan ook omgekeerd worden om mensen buiten te sluiten 
+die aan bepaalde regels voldoen: De OR NOT relatie. Stel je voor dat je 
+twee versies hebt van je nieuwsbrief: Een voor mensen geïnteresseerd in 
+auto's en een voor mensen geïnteresseerd in fietsen. Je besluit om de 
+auto nieuwsbrief te sturen naar iedereen met de interesse "auto's". Je 
+wil wel minstens een nieuwsbrief sturen naar elk profiel, maar je wil 
+mensen die geïnteresseerd zijn in beide ook beide nieuwsbrieven sturen. 
+Om de fiets selectie te maken gebruik je twee regels: "geïnteresseerd in 
+fietsen", OR NOT "geïnteresseerd in auto's".                                                       
 
 ## Meer informatie
 
