@@ -13,7 +13,7 @@ ingaan op de software.
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
 
-### Databases en selecties
+### Databases en selecties tips
 
 * [Database schoonhouden](./database-maintenance)
 * [Voorkom database corruptie](./prevent-database-corruption)
@@ -25,3 +25,12 @@ ingaan op de software.
 * [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
 * [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+
+### Sender domains
+
+* [Sender domains](./sender-domains)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)
+* [DNS](./dns)
