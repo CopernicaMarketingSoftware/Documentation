@@ -33,3 +33,8 @@ optionality.
 Need help loading an RSS or Atom feed? Or are you looking for someone
 that can help you design your content feed? Find a helping hand with our
 [partner network](http://www.copernica.com/en/support/find-a-partner "Find a partner").
+
+## More information
+
+* [Publisher only functions](./publisher-only)
+* [Stylesheets](./stylesheets)
