@@ -6,24 +6,24 @@ die opgeslagen staat in je profielen kun je gebruiken voor selectie
 regels. Regels zijn opgebouwd uit condities. De volgende condities 
 zijn beschikbaar:
 
-| Conditie type                                             | Omschrijving                                                                                                                                  |
-|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Check op veldwaarde                                       | Check de waarde van een veld voor een profiel, bijvoorbeeld om iedereen uit "Amsterdam" te selecteren.                                        |
-| Check op interessegebied                                  | Check of een profiel een interesse heeft, bijvoorbeeld om iedereen met de interesse "tennis" een mail hierover te sturen.                     |
-| Check op datum                                            | Check op een datum, bijvoorbeeld om een [verjaardagsselectie](./how-to-create-a-birthday-selection) te maken.                                 |
-| Check op resultaten e-mailcampagnes                       | Check op de resultaten van een Publisher e-mailcampagne, bijvoorbeeld om een selectie te maken van mensen die je laatste mail hebben geopend. |
-| Check op resultaten sms-campagnes                         | Check op de resultaten van een sms-campagne.                                                                                                  |
-| Check op resultaten fax-mailings                          | Check op de resulaten van een fax-mailing.                                                                                                    |
-| Profielen selecteren gebaseerd op MarketingSuite mailing  | Check op de resultaten van een Marketing Suite e-mailcampagne.                                                                                |
-| Check op resultaten enquêtes                              | Check op de resultaten van een enquête, bijvoorbeeld om een reminder te sturen aan mensen die hem nog niet ingevuld hebben.                   |
-| Check op dubbele of unieke profielen                      | Check op unieke of dubbele profielen, bijvoorbeeld om klanten te vragen welk profiel correct is.                                              |
-| Check op contactgeschiedenis                              | Check op contactgeschiedenis, bijvoorbeeld om profielen te emailen die al een poos niet gecontacteerd zijn.                                   |
-| Check op actiepunten                                      | Check op actiepunten, bijvoorbeeld om profielen te mailen die al gemarkeerd zijn om een mailing te ontvangen.                                 |
-| Check op inhoud van miniselectie                          | Check op inhoud van een miniselectie, bijvoorbeeld om profielen uit te sluiten die vaak errors veroorzaken.                                   |
-| Check op wijziging                                        | Check op wijziging, bijvoorbeeld om profielen te informeren dat hun recente wijzingen succesvol doorgegeven zijn.                             |
-| Sorteer en/of selecteer profielen                         | Sorteer of selecteer profielen op basis van veldwaarden.                                                                                      |
-| Check inhoud andere selectie                              | Check op inhoud van een andere selectie.                                                                                                      |
-| Check op basis van eerdere exports                        | Check op basis van eerdere exports, bijvoorbeeld om te voorkomen dat profielen meerdere keren geëxporteerd worden.                            |
+| Conditie type                                                              | Omschrijving                                                                                                                                  |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Check op veldwaarde                                                        | Check de waarde van een veld voor een profiel, bijvoorbeeld om iedereen uit "Amsterdam" te selecteren.                                        |
+| Check op interessegebied                                                   | Check of een profiel een interesse heeft, bijvoorbeeld om iedereen met de interesse "tennis" een mail hierover te sturen.                     |
+| Check op datum                                                             | Check op een datum, bijvoorbeeld om een [verjaardagsselectie](./how-to-create-a-birthday-selection) te maken.                                 |
+| Check op resultaten e-mailcampagnes                                        | Check op de resultaten van een Publisher e-mailcampagne, bijvoorbeeld om een selectie te maken van mensen die je laatste mail hebben geopend. |
+| Check op resultaten sms-campagnes                                          | Check op de resultaten van een sms-campagne.                                                                                                  |
+| Check op resultaten fax-mailings                                           | Check op de resulaten van een fax-mailing.                                                                                                    |
+| Profielen selecteren gebaseerd op MarketingSuite mailing                   | Check op de resultaten van een Marketing Suite e-mailcampagne.                                                                                |
+| Check op resultaten enquêtes                                               | Check op de resultaten van een enquête, bijvoorbeeld om een reminder te sturen aan mensen die hem nog niet ingevuld hebben.                   |
+| Check op dubbele of unieke profielen                                       | Check op unieke of dubbele profielen, bijvoorbeeld om klanten te vragen welk profiel correct is.                                              |
+| Check op contactgeschiedenis                                               | Check op contactgeschiedenis, bijvoorbeeld om profielen te emailen die al een poos niet gecontacteerd zijn.                                   |
+| Check op actiepunten                                                       | Check op actiepunten, bijvoorbeeld om profielen te mailen die al gemarkeerd zijn om een mailing te ontvangen.                                 |
+| Check op inhoud van miniselectie                                           | Check op inhoud van een miniselectie, bijvoorbeeld om profielen uit te sluiten die vaak errors veroorzaken.                                   |
+| Check op wijziging                                                         | Check op wijziging, bijvoorbeeld om profielen te informeren dat hun recente wijzingen succesvol doorgegeven zijn.                             |
+| [Sorteer en/of selecteer profielen](./selections-conditions-partcondition) | Sorteer of selecteer profielen op basis van veldwaarden.                                                                                      |
+| Check inhoud andere selectie                                               | Check op inhoud van een andere selectie.                                                                                                      |
+| Check op basis van eerdere exports                                         | Check op basis van eerdere exports, bijvoorbeeld om te voorkomen dat profielen meerdere keren geëxporteerd worden.                            |
 
 ## Regels vs. condities
 
@@ -66,10 +66,11 @@ fietsen", OR NOT "geïnteresseerd in auto's".
 * [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
 * [Optimaliseren van selecties](selections-optimalization)
+* [Sorteerconditie in detail](./selections-conditions-partcondition)
 
 ### Selectie tutorials
 
-* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
-* [Selections Tutorial: Dubbele opt-in aanmaken](create-a-double-optin-for-new-subscribers).
-* [Selections Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
-* [Selections Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Selecties Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selecties Tutorial: Dubbele opt-in aanmaken](create-a-double-optin-for-new-subscribers).
+* [Selecties Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
