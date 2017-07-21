@@ -17,7 +17,13 @@ yet you can create them [here](https://www.copernica.com/en/copernica-trial).
 You pay a small amount each month to use Copernica software, which 
 includes a certain amount of emails. If you want to create some extra 
 accounts you pay extra, but for companies sending their own email this is 
-usually not necessary. 
+usually not necessary.
+
+Copernica offers the possibility to use the software and license for 
+multiple colleagues. This requires personal credentials for each employee. 
+It might benefit you to allow multiple employees access, to allow them 
+to use different departments, locations or businesses. All prices related 
+to accounts and users can be found [here](www.copernica.com/nl/pricing).
 
 ### Email
 

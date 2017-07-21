@@ -22,8 +22,8 @@ van.
 
 Copernica biedt wel de mogelijkheid om de software en licentie voor meerdere 
 collega's beschikbaar te maken. Echter, hiervoor is wel een persoonsgebonden
-login voor nodig. Het kan ook handig zijn om extra accounts af te nemen, zodat
-gebruikers toegang kunnen krijgen tot verschillende afdelingen, vestigingen of
+login voor nodig. Het kan ook handig zijn om extra gebruikers af te nemen, zodat
+werknemers toegang kunnen krijgen tot verschillende afdelingen, vestigingen of
 ondernemingen. Alle prijzen omtrent gebruikers en accounts kun je 
 [hier](www.copernica.com/nl/pricing) bekijken.
 
