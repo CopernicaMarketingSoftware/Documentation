@@ -33,3 +33,7 @@ more on the software and how to use it.
 * [SPF](./spf)
 * [MX](./mx)
 * [DNS](./dns)
+
+## Other
+
+* [HTTP and HTTPS](./http-https)

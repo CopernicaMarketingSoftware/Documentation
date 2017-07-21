@@ -34,3 +34,7 @@ ingaan op de software.
 * [SPF](./spf)
 * [MX](./mx)
 * [DNS](./dns)
+
+### Overig
+
+* [HTTP en HTTPS](./http-https)
