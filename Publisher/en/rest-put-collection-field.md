@@ -9,9 +9,9 @@ and the second `$id` should be replaced by the ID of the field you want
 to edit. Any other information should be added to the message body of 
 the HTTP request.
 
-## Available data keys
+## Available data
 
-The following variables must be put into the body of the request:
+The following data must be put into the body of the request:
 
 - **name**: Name of the field
 - **type** Type of the field
