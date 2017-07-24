@@ -9,7 +9,7 @@ In this, `$id` should be replaced by the numerical identifier, the ID, of
 the database you want to add a selection to. The name of the field and 
 other variables need to be added to the message body of the HTTP request.
 
-## Available parameters
+## Available data
 
 The new field values need to be added to the body of the message. This 
 data simply consists of the existing field names on the profile you want 
@@ -32,6 +32,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the profile that you want to edit
+$id = 1;
+
 // data to pass to the call
 $data = array(
     'firstname' =>  'John',
@@ -40,7 +43,7 @@ $data = array(
 );
 
 // do the call
-$api->put("profile/1234/fields", $data);
+$api->put("profile/{$id}/fields", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
