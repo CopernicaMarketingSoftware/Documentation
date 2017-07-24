@@ -7,7 +7,7 @@ method, accessible at the following address:
 
 Replace the `$id` by the identifier of the database you want to edit.
 
-## Available data keys
+## Available data
 
 The following variables can be used in the body of the HTTP PUT request:
 
