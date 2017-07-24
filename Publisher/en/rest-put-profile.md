@@ -8,7 +8,7 @@ using the following URL:
 The `$id` needs to be replaced with the ID of the profile you want to 
 edit the properties of.
 
-## Available data keys
+## Available data
 
 The following data can be placed in the message body of the HTTP 
 PUT command:
