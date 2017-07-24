@@ -12,7 +12,7 @@ In this, the variable `$id` has to be replaced by the numerical identifier
 of the database you wish to set the unsubscribe behaviour for. The 
 new setting should be added to the body of the HTTP request.
 
-## Available data keys
+## Available data
 
 The following data must be put into the body of the request:
 
