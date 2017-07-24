@@ -7,7 +7,7 @@ edit a miniview an HTTP PUT request can be sent to the following URL:
 
 The `$id` is the ID of the miniview you want to edit.
 
-## Available data keys
+## Available data
 
 The following properties can be added to the message body of the HTTP request:
 
