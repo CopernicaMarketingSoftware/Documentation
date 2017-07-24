@@ -23,7 +23,7 @@ documentation on [adding interests to a profile](rest-post-profile-interests).
 
 ## PHP example
 The following PHP script demonstrates how to call the API method.
-In the API call the interests of a profile with ID 1234 are edited to activate 
+In the API call the interests of a profile with ID 1 are edited to activate 
 "tennis" and "hockey" and to disactivate "football" (second method). This overwrites previous 
 interests. Then we activate the interest "football" for profile with ID 1235, 
 overwriting the current interests for this profile (first method).
