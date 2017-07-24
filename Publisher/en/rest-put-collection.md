@@ -8,7 +8,7 @@ sending an HTTP PUT request to the following URL:
 The `$id` should be replaced with the ID of the collection that you want to 
 edit.
 
-## Available data keys
+## Available data
 
 The following properties can be adjusted by placing their new values 
 in the message body of the HTTP PUT command:
