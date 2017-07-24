@@ -8,7 +8,7 @@ following URL:
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the database you wish to create the selections for.
 
-## Available parameters
+## Available data keys
 The following parameters can be placed in the message body of the HTTP 
 PUT command:
 
@@ -34,6 +34,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the selection that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
    	'description'   =>  'a new description',
@@ -41,7 +44,7 @@ $data = array(
 );
 
 // do the call, and print result
-print_r($api->put("database/1234", array(), $data));
+print_r($api->put("view/{$id}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
