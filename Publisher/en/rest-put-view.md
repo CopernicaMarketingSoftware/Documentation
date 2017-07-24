@@ -9,7 +9,7 @@ In this, `$id` needs to be replaced by the numerical identifier or the
 name of the database you wish to create the selections for.
 
 ## Available data keys
-The following parameters can be placed in the message body of the HTTP 
+The following data can be placed in the message body of the HTTP 
 PUT command:
 
 - **name**: name of the selection
