@@ -56,12 +56,8 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// parameters to select profiles
-$parameters = array(
-    'fields'    =>  array("customerid==4567"),
-    'async'     =>  1,
-    'create'    =>  0
-);
+// declare the id of the database that you want to edit
+$id = 1;
 
 // data to pass to the call
 $data = array(
@@ -69,9 +65,16 @@ $data = array(
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
 );
+
+// parameters to select profiles
+$parameters = array(
+    'fields'    =>  array("customerid==4567"),
+    'async'     =>  1,
+    'create'    =>  0
+);
     
 // do the call
-$api->put("database/1234/profiles", $parameters, $data);
+$api->put("database/{$id}/profiles", $data, $parameters);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
