@@ -10,7 +10,7 @@ In this, the first `$id` has to be replaced by the numerical ID or the
 name of the database the field you want to edit is in. The second `$id` 
 has to be the ID of the field itself.
 
-## Available parameters
+## Available data keys
 
 - **name**: the name of the new field. (mandatory)
 - **type**: type of the new field
@@ -39,13 +39,17 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the database and field that you want to edit
+$database = 1;
+$field = 2;
+
 // data to be sent to the api
 $data = array(
     'name'          =>  'new-field-name'
 );
 
 // do the call
-api->put("database/1234/field/456", $data);
+$api->put("database/{$database}/field/{$field}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

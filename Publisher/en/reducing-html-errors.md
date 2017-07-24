@@ -1,4 +1,4 @@
-## Reducing HTML errors
+# Reducing HTML errors
 
 In Copernica software templates can be written in HTML and this may sometimes 
 result in HTML errors. Not all of them are visible to the eye of your customer, 

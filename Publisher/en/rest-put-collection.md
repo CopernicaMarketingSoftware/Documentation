@@ -8,7 +8,7 @@ sending an HTTP PUT request to the following URL:
 The `$id` should be replaced with the ID of the collection that you want to 
 edit.
 
-## Available parameters
+## Available data keys
 
 The following properties can be adjusted by placing their new values 
 in the message body of the HTTP PUT command:
@@ -28,16 +28,16 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
     
-// no parameters are supported
-$parameters = array();
-    
+// declare the id of the collection that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
     'name'  =>  'new-collection-name'
 );
     
 // do the call
-api->put("collection/1234", $data);
+$api->put("collection/{$id}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

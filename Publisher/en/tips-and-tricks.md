@@ -9,7 +9,6 @@ more on the software and how to use it.
 ### Reputation
 
 * [Sender reputation](./sender-reputation)
-* [Deliverability](./deliverability)
 * [Lowering your spam score](./some-tips-to-lower-your-email-spam-score)
 * [Reducing HTML errors](./reducing-html-errors)
 
@@ -25,3 +24,16 @@ more on the software and how to use it.
 * [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
 * [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
 * [Selections Tutorial: Birthday selection](./how-to-create-a-birthday-selection)
+
+### Sender domains
+
+* [Sender domains](./sender-domains)
+* [DMARC](./dmarc)
+* [DKIM](./dkim)
+* [SPF](./spf)
+* [MX](./mx)
+* [DNS](./dns)
+
+## Other
+
+* [HTTP and HTTPS](./http-https)

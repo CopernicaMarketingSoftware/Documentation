@@ -10,9 +10,9 @@ collection in which the subprofile should be stored. The new subprofile
 of the profile can be placed in the body of the message. After a succesful 
 call the ID of the created request is returned.
 
-## Body data
-
-The you can create a field  properties.
+## Available data
+The new field values need to be added to the body of the message. This data simply consists of the existing field names on the sub profile you want to change and their new values. If you send your data in JSON format, you’ll need to create an object with field names as keys and field values as values.
+If, however, you’re using a traditional x-www-form-urlencoded format, the variables should contain the names of the fields you want to change, and the values should be the new field values.
 
 ## PHP example
 
@@ -25,6 +25,10 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the profile and sub profile that you want to edit
+$profile = 1;
+$subprofile = 1
+
 // data to pass to the call, the new interests
 $data = array(
     'firstname' =>  'John',
@@ -33,10 +37,7 @@ $data = array(
 );
   
 // do the call
-$api->put("profile/id/subprofiles/id", $data);
-
-// return id of created request if successful
-```
+$api->put("profile/{$profile}/subprofiles/{$subprofile}", $data);
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
