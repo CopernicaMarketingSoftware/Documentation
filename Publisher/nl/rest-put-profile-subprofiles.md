@@ -25,6 +25,10 @@ Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.
 // vereiste scripts
 require_once('copernica_rest_api.php');
 
+// database en subprofiles id dat je wilt bewerken
+$id = 1;
+$id2 = 2; 
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -36,7 +40,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("profile/id/subprofiles/id", $data);
+$api->put("profile/{$id}/subprofiles/{$id2}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

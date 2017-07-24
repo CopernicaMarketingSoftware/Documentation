@@ -53,15 +53,12 @@ In de API call wordt een profiel met ID 4567 aangepast.
 // vereiste scripts
 require_once('copernica_rest_api.php');
 
+// profiles id dat je wilt bewerken
+$id = 1;
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// parameters voor het verzoek
-$parameters = array(
-    'fields'    =>  array("customerid==4567"),
-    'async'     =>  1,
-    'create'    =>  0
-);
 
 // data voor het verzoek
 $data = array(
@@ -70,8 +67,15 @@ $data = array(
     'email'     =>  'johndoe@example.com'
 );
 
+// parameters voor het verzoek
+$parameters = array(
+    'fields'    =>  array("customerid==4567"),
+    'async'     =>  1,
+    'create'    =>  0
+);
+
 // voer het verzoek uit
-$api->put("database/1234/profiles", $parameters, $data);
+$api->put("database/{$id}/profiles", $data, $parameters );
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

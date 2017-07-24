@@ -14,7 +14,7 @@ Hier moet de `$id` aangepast worden naar de ID van de collectie waar je
 de instellingen voor aan wilt passen. De nieuwe instellingen zelf moeten 
 toegevoegd worden aan de message body van het verzoek.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende variabelen zijn beschikbaar om aan te passen binnen het verzoek:
 
@@ -37,6 +37,9 @@ te zetten, zodat dit profiel geen nieuwsbrief meer ontvangt.
 // vereiste scripts
 require_once('copernica-rest-api.php');
 
+// collection id dat je wilt bewerken
+$id = 1;
+
 // verander dit naar je acces token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -47,7 +50,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("collection/1234", array(), $data);
+$api->put("collection/{$id}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
