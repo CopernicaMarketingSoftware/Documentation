@@ -39,8 +39,9 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// declare the id of the database that you want to edit
-$id = 1;
+// declare the id of the database and field that you want to edit
+$database = 1;
+$field = 2;
 
 // data to be sent to the api
 $data = array(
@@ -48,7 +49,7 @@ $data = array(
 );
 
 // do the call
-$api->put("database/1234/field/456", $data);
+$api->put("database/{$database}/field/{$field}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
