@@ -8,15 +8,15 @@ verzoek verstuurd worden naar de volgende URL:
 
 De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende parameters kunnen in de message body geplaatst worden:
 
-- name: 		naam van de regel;
-- view: 		id van de selectie waar de regel bij hoort;
-- conditions: 	array van condities voor de regel;
-- inversed: 	boolean waarde die aangeeft of de regel geinverteerd moet worden of niet. Als deze op "True" staat worden alleen profielen die *niet* aan de condities voldoen teruggegeven;
-- disabled: 	boolean waarde om aan te geven of de regel uitgeschakeld moet worden of niet.
+- **name**: 		naam van de regel;
+- **view**: 		id van de selectie waar de regel bij hoort;
+- **conditions**: 	array van condities voor de regel;
+- **inversed**: 	boolean waarde die aangeeft of de regel geinverteerd moet worden of niet. Als deze op "True" staat worden alleen profielen die *niet* aan de condities voldoen teruggegeven;
+- **disabled**: 	boolean waarde om aan te geven of de regel uitgeschakeld moet worden of niet.
 
 ## Voorbeeld in PHP
 
@@ -35,7 +35,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("minirule/1234", array(), $data));
+print_r($api->put("minirule/{$id}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

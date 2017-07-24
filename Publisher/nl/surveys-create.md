@@ -1,4 +1,4 @@
-# Enquêtes: Een nieuwe enquête maken
+# Enquêtes: Een nieuwe  maken
 
 Enquêtes zijn een krachtige tool in Publisher om informatie te verzamelen 
 over de contacten van je bedrijf. Je kunt onder andere informatie over hen 
@@ -37,3 +37,22 @@ Je kunt nu de opties selecteren die voor deze vraag van belang zijn.
 * [Enquêtes](./surveys)
 * [Enquête vraag types](./surveys-question-types.md)
 * [Enquête vraag opties](./surveys-question-options.md)
+
+
+
+
+
+
+# Enquêtes maken
+
+Een enquête is een krachtige tool om informatie te verzamelen over de contacten van 
+je bedrijf. Je kunt onder andere informatie over klaten opvragen alsook hun mening 
+over jouw services. In dit artikel wordt kort uitgelegd hoe je enquêtes kunt maken 
+in de Publisher.
+
+Het aanmaken van een enquête vergt geen ingewikkelde stappen; je maakt enquêtes
+namelijk gemakkelijk aan door in het menu aan de bovenkant van je scherm op
+`content` te klikken en daarna in het submenu op enquêtes te klikken. 
+
+
+

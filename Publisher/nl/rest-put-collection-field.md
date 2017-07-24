@@ -6,7 +6,7 @@ Methode om een bepaald veld in een collectie aan te passen. Om deze methode uit 
 
 De eerste `$id` is de collectie waarvan je het veld aan wilt passen en de tweede `$id` is de ID van het veld dat je aan wilt passen. De rest van de informatie voor het veld moet toegevoegd worden aan de message body van het HTTP verzoek.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 
@@ -28,6 +28,9 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.
 // vereiste scripts
 require_once('copernica-rest-api.php');
 
+// field id dat je wilt bewerken
+$id = 1;
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -37,7 +40,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("collection/1234/field", array(), $data);
+$api->put("collection/{$id}/field", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

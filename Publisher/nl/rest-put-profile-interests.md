@@ -35,6 +35,9 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
+    // interests id dat je wilt bewerken
+    $id = 1;
+
     // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
@@ -46,13 +49,7 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     );
     
     // voer het verzoek uit
-    $api->put("profile/1234/interests", $parameters, $data);
-
-    // data voor het tweede verzoek
-    $data = array('football');
-    
-    // voer het verzoek uit
-    $api->put("profile/1235/interests", $parameters, $data);
+    $api->put("profile/{$id}/interests", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

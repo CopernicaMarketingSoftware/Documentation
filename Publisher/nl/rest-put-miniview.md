@@ -6,14 +6,14 @@ Een miniview is voor een collectie wat een selectie is voor een database. Om een
 
 De `$id` is de ID van de miniview die je aan wilt passen.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende eigenschappen kunnen toegevoegd worden aan de body van het HTTP verzoek:
 
-- **name**: Naam van de miniview/selectie
-- **description**: Omschrijving van de selectie
-- **parent-type**: Geeft aan of de huidige selectie onder een andere selectie of een collectie valt.
-- **parent-id**: ID van de selectie of de collectie waar de selectie onder valt
+- **name**: Naam van de miniview/selectie;
+- **description**: Omschrijving van de selectie;
+- **parent-type**: Geeft aan of de huidige selectie onder een andere selectie of een collectie valt;
+- **parent-id**: ID van de selectie of de collectie waar de selectie onder valt.
 
 ## Voorbeeld
 
@@ -23,16 +23,19 @@ Het volgende voorbeeld demonstreert hoe de methode gebruikt kan worden:
 // vereiste scripts
 require_once('copernica_rest_api.php');
 
+// miniview id dat je wilt bewerken
+$id = 1;
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
 // data voor de methode
 $data = array(
-	'description'   =>  'a new description',
+	'description' => 'a new description',
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("miniview/1234", array(), $data));
+print_r($api->put("miniview/{$id}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

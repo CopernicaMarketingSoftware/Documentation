@@ -10,20 +10,20 @@ De eerste `$id` variabele in de URL moet worden vervangen door de numerieke
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
 tweede `$id` variabele bevat de naam of het ID van het veld.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
-* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
-* **type**: Type van het nieuwe veld
-* **value**: Standaardwaarde van het nieuwe veld
-* **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken
-* **length**: Maximum lengte voor teksten
-* **index**: Boolean waarde of een index op het veld moet worden aangemaakt
-* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
-* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface
-* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
+* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht;
+* **type**: Type van het nieuwe veld;
+* **value**: Standaardwaarde van het nieuwe veld;
+* **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken;
+* **length**: Maximum lengte voor teksten;
+* **index**: Boolean waarde of een index op het veld moet worden aangemaakt;
+* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst;
+* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface;
+* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd.
 
 Dit zijn precies dezelfde velden die ook worden ondersteund door de
 [methode om nieuwe velden aan te maken](./rest-post-database-fields).
@@ -36,6 +36,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 // vereiste scripts
 require_once('copernica-rest-api.php');
 
+// dataqbase en field id dat je wilt bewerken
+$id = 1;
+$id2 = 2;
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -45,7 +49,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("database/1234/field/456", $data);
+$api->put("database/{$id}/field/{$id2}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

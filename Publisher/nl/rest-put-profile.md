@@ -6,13 +6,13 @@ Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. 
 
 De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende parameters kunnen in de message body van het HTTP PUT command worden geplaatst:
 
-- **fields**: Velden die het profiel bevat en hun waarden
-- **interests**: Interesses van het profiel
-- **secret**: De geheime code die gelinkt is aan het profiel
+- **fields**: Velden die het profiel bevat en hun waarden;
+- **interests**: Interesses van het profiel;
+- **secret**: De geheime code die gelinkt is aan het profiel.
 
 ## Voorbeeld
 
@@ -21,6 +21,9 @@ Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 ```php
 // vereiste scripts
 require_once('copernica_rest_api.php');
+
+// profile id dat je wilt bewerken
+$id = 1;
 
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
@@ -42,7 +45,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("profile/1234", array(), $data));
+print_r($api->put("profile/{$id}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).

@@ -14,7 +14,7 @@ De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet
 je in de body van het HTTP request plaatsen.
 
-## Beschikbare parameters
+## Beschikbare datavelden
 
 De volgende variabelen moeten in de body van het HTTP PUT commando worden
 geplaatst:
@@ -42,6 +42,9 @@ op 'no' wordt gezet:
 // vereiste scripts
 require_once('copernica-rest-api.php');
 
+// database id dat je wilt bewerken
+$id = 1;
+
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -52,7 +55,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("database/1234", array(), $data);
+$api->put("database/{$id}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
