@@ -14,7 +14,7 @@ new setting should be added to the body of the HTTP request.
 
 ## Available data keys
 
-The following variables must be put into the body of the request:
+The following data must be put into the body of the request:
 
 - **behavior**: the setting itself
 - **fields**: the new profile setting (only applicable if ‘behavior’ is 
@@ -48,7 +48,7 @@ $data = array(
 );
 
 // do the call
-api->put("database/{$id}/unsubscribe", $data);
+$api->put("database/{$id}/unsubscribe", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
