@@ -9,9 +9,9 @@ PUT request to the following URL:
 The `$id` needs to be replaced with the ID of the minirule you want to 
 edit the properties of.
 
-## Available parameters
+## Available data keys
 
-The following parameters can be placed in the message body of the HTTP 
+The following keys can be placed in the message body of the HTTP 
 PUT command:
 
 - **name**: name of the rule
@@ -32,13 +32,16 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the rule that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(  	
 	'name'   =>  'new rule name',
 );
 
 // do the call, and print result
-print_r($api->put("minirule/1234", array(), $data));
+print_r($api->put("minirule/{$id}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
