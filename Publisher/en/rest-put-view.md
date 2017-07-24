@@ -8,7 +8,7 @@ following URL:
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the database you wish to create the selections for.
 
-## Available data keys
+## Available data
 The following data can be placed in the message body of the HTTP 
 PUT command:
 
