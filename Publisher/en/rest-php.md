@@ -100,11 +100,11 @@ class CopernicaRestAPI
     /**
      *  Do a PUT request
      *  @param  string      Resource name
-     *  @param  array       Associative array with additional parameters
      *  @param  array       Associative array with data to post
+     *  @param  array       Associative array with additional parameters
      *  @return bool
      */
-    public function put($resource, array $parameters = array(), array $data = array())
+    public function put($resource, array $data = array(), array $parameters = array())
     {
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
