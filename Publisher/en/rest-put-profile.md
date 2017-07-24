@@ -8,9 +8,9 @@ using the following URL:
 The `$id` needs to be replaced with the ID of the profile you want to 
 edit the properties of.
 
-## Available parameters
+## Available data keys
 
-The following parameters can be placed in the message body of the HTTP 
+The following data can be placed in the message body of the HTTP 
 PUT command:
 
 - **fields**: Fields that the profile contains
@@ -28,6 +28,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the profile that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
     "fields" => array(
@@ -44,7 +47,7 @@ $data = array(
 );
 
 // do the call, and print result
-print_r($api->put("profile/1234", array(), $data));
+print_r($api->put("profile/{$id}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
