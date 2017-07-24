@@ -10,7 +10,7 @@ In this, the first `$id` has to be replaced by the numerical ID or the
 name of the database the field you want to edit is in. The second `$id` 
 has to be the ID of the field itself.
 
-## Available data keys
+## Available data
 
 - **name**: the name of the new field. (mandatory)
 - **type**: type of the new field
