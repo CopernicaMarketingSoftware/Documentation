@@ -9,7 +9,7 @@ In this, `$id` should be replaced by the numerical identifier, the ID, of
 the database you want to add a selection to. This method adds the given 
 interest to the current interest array.
 
-## Available parameters
+## Available data
 
 There are two ways to send body data to this request, which influences the way 
 the method works.
@@ -35,6 +35,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the profile that you want to edit
+$id = 1;
+
 // data to pass to the call
 $data = array(
     'football'  =>  0,
@@ -43,13 +46,13 @@ $data = array(
 );
     
 // do the call
-$api->put("profile/1234/interests", $parameters, $data);
+$api->put("profile/{$id}/interests", $data);
 
 // data to pass to a second call
 $data = array('football');
    
 // do the call
-$api->put("profile/1235/interests", $parameters, $data);
+$api->put("profile/{$id}/interests", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
