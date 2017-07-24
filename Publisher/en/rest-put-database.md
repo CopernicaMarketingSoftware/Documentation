@@ -7,7 +7,7 @@ method, accessible at the following address:
 
 Replace the `$id` by the identifier of the database you want to edit.
 
-## Available parameters
+## Available data keys
 
 The following variables can be used in the body of the HTTP PUT request:
 
@@ -30,6 +30,9 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the database that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
     'description'   =>  'a new description',
@@ -37,7 +40,7 @@ $data = array(
 );
 
 // do the call
-api->put("database/1234", $data);
+$api->put("database/{$id}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

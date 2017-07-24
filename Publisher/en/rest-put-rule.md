@@ -8,8 +8,8 @@ the following URL:
 The `$id` needs to be replaced with the ID of the rule you want to edit 
 the properties of.
 
-## Available parameters
-The following parameters can be placed in the message body of the HTTP PUT command:
+## Available data keys
+The following data can be placed in the message body of the HTTP PUT command:
 
 - **name**: name of the rule
 - **description**: description of the rule
@@ -30,6 +30,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the rule that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
    	'description'   =>  'a new description',
@@ -37,7 +40,7 @@ $data = array(
 );
 
 // do the call, and print result
-print_r($api->put("rule/1234", array(), $data));
+print_r($api->put("rule/{$id}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
