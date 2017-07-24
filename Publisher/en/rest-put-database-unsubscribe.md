@@ -12,7 +12,7 @@ In this, the variable `$id` has to be replaced by the numerical identifier
 of the database you wish to set the unsubscribe behaviour for. The 
 new setting should be added to the body of the HTTP request.
 
-## Available parameters
+## Available data keys
 
 The following variables must be put into the body of the request:
 
@@ -38,6 +38,9 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
+// declare the id of the database that you want to edit
+$id = 1;
+
 // data to be sent to the api
 $data = array(
     'behavior'      =>  'update',
@@ -45,7 +48,7 @@ $data = array(
 );
 
 // do the call
-api->put("database/1234", array(), $data);
+api->put("database/{$id}/unsubscribe", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
