@@ -39,9 +39,6 @@ $data = array(
 // do the call
 $api->put("profile/{$profile}/subprofiles/{$subprofile}", $data);
 
-// return id of created request if successful
-```
-
 The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information
