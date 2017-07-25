@@ -34,7 +34,7 @@ more on the software and how to use it.
 * [MX](./mx)
 * [DNS](./dns)
 
-## Other
+### Other
 
 * [HTTP and HTTPS](./http-https)
 * [Headers](./headers)
