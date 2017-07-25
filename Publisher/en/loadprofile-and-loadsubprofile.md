@@ -6,7 +6,7 @@ database only. Loadprofile enables you to retrieve data from any
 database. Loadsubprofile does the same, but from any data collection
 within your account.
 
-The code below provides an example how you can retreive profile data
+The code below provides an example how you can retrieve profile data
 from a different database.
 
 ```
@@ -22,9 +22,9 @@ selection are separated by a dot.
 Assign the loaded data to a variable of your choosing (in the example
 *loadedprofile*)
 
-You can now retreive data via*{\$loadedprofile.fieldname}*
+You can now retrieve data via*{\$loadedprofile.fieldname}*
 
-If you do not specifiy which profile you want to retreive, only the
+If you do not specify which profile you want to retreive, only the
 first in the database will be returned. You can select a particular
 profile by using the ID-parameter. For example:
 
@@ -110,7 +110,7 @@ like this:
     only 2 subprofiles are returned.
 -   The returned subprofiles sorted ascending (asc) using the value in
     the field "*orderdate*"
--   Finaly smarty foreach is used to iterate through the results (you
+-   Finally smarty foreach is used to iterate through the results (you
     need foreach to be able to show data from all returned subprofiles!)
 
 ### The result

@@ -6,7 +6,7 @@ Method to add a new field to an existing database. This is an HTTP POST call to 
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. 
 The name of the field and other variables need to be added to the message 
-body of the HTTP request. After a succesful call the ID of the created 
+body of the HTTP request. After a successful call the ID of the created 
 request is returned.
 
 ## Available parameters

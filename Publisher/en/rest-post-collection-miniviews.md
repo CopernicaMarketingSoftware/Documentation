@@ -9,7 +9,7 @@ created, nested underneath the collection.
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the collection you want to add a selection to. The name of the selection 
 is not in the URL, as it needs to be added to the message body of the 
-HTTP request. After a succesful call the ID of the created request is returned.
+HTTP request. After a successful call the ID of the created request is returned.
 
 ## Available parameters
 

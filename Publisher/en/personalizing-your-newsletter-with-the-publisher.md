@@ -19,7 +19,7 @@ or document:
 These personalization variables only work when you have
 the exact same fields in your database. Of course, the 
 receivers information must be stored in the database as 
-well. If that's all set, you can use the varibales like 
+well. If that's all set, you can use the variables like 
 this:
 
 ```text
@@ -29,7 +29,7 @@ You receive this email, because you subscribed
 with the following email address: {$email}.
 ```
 
-You can also send seperate content to different
+You can also send separate content to different
 [selecties](selections-introduction) in your database
 with the [in_selection](./personalization-functions-in_selection)
 and [in_miniselection](./personalization-functions-in_miniselection)
@@ -80,7 +80,7 @@ Our software automatically tracks curly braces as it
 indicates that Smarty code is being stated. However, 
 sometimes you want to use curly braces just as symbols.
 You have to write some code in order to make sure that
-the software does not make a mistake by interpretting 
+the software does not make a mistake by interpreting 
 the curly braces as Smarty. You can do it in two ways:
 you can use {ldelim} and {rdelim} or {literal} en 
 {/literal}. The difference is that with literal you 
@@ -89,7 +89,7 @@ that goes in between these tags.
 
 ```text
 {literal}
-    Ik ben gek op {accolades}!
+    I love {curly braces}!
 {/literal}
 ```
 

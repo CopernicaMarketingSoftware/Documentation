@@ -9,7 +9,7 @@ the following URL:
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to add an collection to. The name of the 
 collection and other values need to be added to the message body of the 
-HTTP request. After a succesful call the ID of the created request is returned.
+HTTP request. After a successful call the ID of the created request is returned.
 
 ## Available parameters
 

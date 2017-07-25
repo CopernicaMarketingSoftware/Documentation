@@ -29,7 +29,7 @@ Full control with Copernica's object model
 ------------------------------------------
 
 Copernica's API uses a logical and structured object model. All data in
-the software is represennted by objects. Read the properties of these
+the software is represented by objects. Read the properties of these
 objects with SOAP API and then update them. The methods can also be
 invoked. Every project is built up from smaller sub-objects. An object
 that represents a

@@ -69,7 +69,6 @@ this parameter to the URL as a regular get-parameter.
 ## More information
 
 De following articles also contain information about the REST API:
-De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
 
 * [OAuth integrations with the REST API](./rest-oauth.md)
 * [The format of requests and responses](./rest-requests.md)

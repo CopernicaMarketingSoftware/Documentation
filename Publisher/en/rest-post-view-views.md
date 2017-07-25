@@ -6,7 +6,7 @@ Copernica supports nested selections. To edit a nested selection you can send a 
 
 The first `$id` needs to be replaced by the numerical identifier of the 
 upper selection and the second $id by the lower selection. After a 
-succesful call the ID of the created request is returned.
+successful call the ID of the created request is returned.
 
 ## Available parameters
 

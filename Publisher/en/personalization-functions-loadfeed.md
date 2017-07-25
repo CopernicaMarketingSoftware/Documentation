@@ -26,7 +26,7 @@ in your documents:
 `{loadfeed feed='http://www.example.com/feed/feed.xml'}`
 
 Substitute *loadfeed feed='http://www.example.com/feed/feed.xml*
-with the address (URL) that has been publiced somewhere else.
+with the address (URL) that has been publicized somewhere else.
 
 ![](../images/loadfeed1.png)
 
@@ -60,7 +60,7 @@ feed without having to remember the tag or name of the feed. In
 every text block there is a possibility to incorporate special
 content such as: webforms, RSS and Atom feeds. When in a specific 
 text block, specify the type of publication and select in the list
-the prefered item. Optionally you could also choose a XLST. Note
+the preferred item. Optionally you could also choose a XLST. Note
 that the publication substitutes the content that is already in
 the text block.
 
@@ -75,7 +75,7 @@ Feeds can also be personalized for the recipient using special personalization t
 
 ## Personalization in hyperlinks
 
-If you're only looking to personalize `<a href='this part'>...</a>` of anchor tags, all you have to do is set the 'perzonalizable' parameter to 'true':
+If you're only looking to personalize `<a href='this part'>...</a>` of anchor tags, all you have to do is set the personalizable parameter to 'true':
 
 `{loadfeed feed=".." xslt=".." personalizable=true}`
 
@@ -93,7 +93,7 @@ If you want to use the full power of personalization, you'll need another bit of
 
 Besides this, you only have to make sure your feed and XSLT are correct to make the personalization work.
 
-With personalization in feeds, it is important to note the order in which tasks are completed by Copernica: first, the XSLT is parsed. The personalisation tags are parsed after that. The `eval` function makes sure all personalisation actually happens. This means that you cannot create a condition using `<xsl:if>` and a value from your database, simply because the XSLT does not know the value of the field at that point.
+With personalization in feeds, it is important to note the order in which tasks are completed by Copernica: first, the XSLT is parsed. The personalization tags are parsed after that. The `eval` function makes sure all personalization actually happens. This means that you cannot create a condition using `<xsl:if>` and a value from your database, simply because the XSLT does not know the value of the field at that point.
 
 The possibilities are endless when it comes to personalization in  feeds, you just have to make sure your feed and XSLT are in order before parsing.
 

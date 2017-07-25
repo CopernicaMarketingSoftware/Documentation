@@ -17,7 +17,7 @@ PUT command:
 - **name**: name of the rule
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: array of conditions for the rule
-- **inversed**: boolean value to indicate whether the rule should be inversed. 
+- **inverted**: boolean value to indicate whether the rule should be inverted. 
 If set to "True" only profiles *not* conforming to the conditions are selected
 - **disabled**: boolean value to indicate whether the rule should be disabled or not
 

@@ -12,7 +12,7 @@ have to be confirmed.
 
 So if you want to send emails from addresses that end 
 with "@example.com" or "example.org", you can set up these
-domains in the Marketing Suite dashboard. Copernice returns
+domains in the Marketing Suite dashboard. Copernica returns
 a list with DNS records if you correctly followed the 
 steps when setting everything up. The DNS records only need
 to be given to your DNS provider or your own DNS server.

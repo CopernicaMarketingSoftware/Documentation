@@ -8,7 +8,7 @@ almost no restrictions given for a certain database design.
 It's for example perfectly possible to just set up an easy to 
 grasp firstname-lastname-emailaddress-structure or to make it
 slightly more advanced by using a nested database to store 
-purchase history and abondoned shopping carts. However, in the
+purchase history and abandoned shopping carts. However, in the
 beginning it's wise to just keep things simple. You can always
 add fields later on. 
 

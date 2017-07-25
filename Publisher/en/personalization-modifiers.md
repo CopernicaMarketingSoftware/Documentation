@@ -78,7 +78,7 @@ The decoded information is {$base64encoded|base64_decode}
 
 ## cat
 
-With this modefier you can concatenate a string to your variable. If the
+With this modifier you can concatenate a string to your variable. If the
 variable is an arrary, the string will be used.
 Usage:
 

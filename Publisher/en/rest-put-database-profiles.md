@@ -40,13 +40,13 @@ to immediately return, while it updates the profiles in the background.
 
 ## Body data
 
-Besided the parameters that you append to the URL, you must also include a
+Besides the parameters that you append to the URL, you must also include a
 request body in the PUT request. The body should contain the fields to
 assign to matching profiles.
 
 ## PHP example
 
-THis PHP script demonstrates how you can use this API call. In the script
+This PHP script demonstrates how you can use this API call. In the script
 we modify the profile with ID 4567.
 
 ```php

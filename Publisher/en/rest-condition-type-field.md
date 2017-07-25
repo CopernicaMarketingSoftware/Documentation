@@ -21,7 +21,7 @@ The field condition has the following parameters:
 
 ## Example
 
-Imagine that you would have a "has_children" field, alllowing you 
+Imagine that you would have a "has_children" field, allowing you 
 to group those that have children. In this case you can email a specific 
 target group by making a selection that selects on this field. The following 
 condition is validated if "has_children" is set to true.

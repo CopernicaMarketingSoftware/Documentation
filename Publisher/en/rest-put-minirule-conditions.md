@@ -7,7 +7,7 @@ support parameters. It is called by sending an HTTP POST request to the followin
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the minirule you wish to edit the condition of. The `$type` specifies 
-the type of the condition you want to edit. After a succesful call the 
+the type of the condition you want to edit. After a successful call the 
 ID of the created request is returned.
 
 ## Available parameters

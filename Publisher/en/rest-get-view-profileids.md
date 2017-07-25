@@ -12,7 +12,7 @@ This method does not support any parameters.
 
 ## Returned fields
 
-The method retuns a JSON array consisting of numerical identifiers of profiles.
+The method returns a JSON array consisting of numerical identifiers of profiles.
 
 ## PHP example
 

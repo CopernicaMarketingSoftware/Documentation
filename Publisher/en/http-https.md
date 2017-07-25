@@ -35,7 +35,7 @@ how a request was processed and give errors if something went wrong.
 
 HTTPS uses an encrypted connection to secure send your data. 
 This prevents the wrong people from getting access to sensitive data 
-such as phone numbers, addressses and social security numbers. Copernica 
+such as phone numbers, addresses and social security numbers. Copernica 
 offers the possibility to force HTTPS on your own websites (built in 
 Publisher). If you use a Copernica domain you don't need to take 
 any extra steps. If you use your own domain you can HTTPS by following 

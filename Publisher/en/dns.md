@@ -6,7 +6,7 @@ computers to change domain names into IP addresses used by computers.
 
 If you want to use Copernica's suggested DNS records you need to know who 
 your DNS provider is. This is often the same company that hosts your website. 
-It might also be the organisation where you registered your domain name or 
+It might also be the organization where you registered your domain name or 
 handles your incoming email or some other party entirely. You can 
 tell your provider to change your DNS settings. There is often even a 
 web interface where you can do this yourself, but you might need to 

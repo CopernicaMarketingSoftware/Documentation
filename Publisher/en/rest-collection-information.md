@@ -5,7 +5,7 @@ data.
 
 This method gives you access to the data collection associated with a
 given \$collectionID. The result contains the collection identifier, the
-collection name, the database associated with the colledction and an
+collection name, the database associated with the collection and an
 array of fields with the field name and its data type in a key-value
 pair.
 

@@ -7,7 +7,7 @@ the following URL:
 
 The `$id` should be replaced by the ID of the view you want to add a rule to. 
 The name of the rule and other values should be added to the message body. 
-After a succesful call the ID of the created request is returned.
+After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -19,7 +19,7 @@ names and is mandatory
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: Array of conditions profiles within the selection should conform to, 
 such as certain values within certain fields
-- **inversed**: Boolean value that when set to "True" will return only profiles 
+- **inverted**: Boolean value that when set to "True" will return only profiles 
 that do *not* adhere to the rule.
 - **disabled**: Boolean value that when set to "True" will disable the rule.
 
@@ -38,7 +38,7 @@ $api = new CopernicaRestApi("your-access-token");
 $data = array(
    'name'      =>  'rule-name',
    'view'      =>  1234,
-   'inversed'  =>  False
+   'inverted'  =>  False
 );
     
 // do the call

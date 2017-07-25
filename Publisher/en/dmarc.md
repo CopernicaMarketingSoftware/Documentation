@@ -58,7 +58,7 @@ Of course, in reality the settings in your DMARC record are mainly guidelines
 for receivers. A receiver can decide to ignore the settings, and handle your mail
 differently than you have specified.
 
-Besided the delivery policy and the percentage, you can also add email addresses 
+Besides the delivery policy and the percentage, you can also add email addresses 
 to your DMARC record. Receivers use this address to notify you when they get 
 invalid messages. This could be an indication that your domain
 name is being abused, or that one of your employees does not have its settings
@@ -116,7 +116,7 @@ will get your email blocked. After a couple of days, and when you see that
 the DMARC analyzer tool in the dashboard does not report any issues, you can
 slowly grow to a stricter policy.
 
-If you choose to take care of hosting your own DMARD record (instead of setting
+If you choose to take care of hosting your own DMARC record (instead of setting
 up a CNAME to Copernica's servers), the settings in the dashboard have no
 effect. You must then set the policy and percentage manually in your DMARC
 record. But if you still want Copernica to process your DMARC reports, you
@@ -137,11 +137,11 @@ others can send out of your name? Or are you looking for a setting so that
 your messages end up with as many receivers as possible? Are you idealistic
 and do you want to make the internet a safer place? Or are you more pragmatic?
 
-Copernica is a member of M3AAWG. This is an organisation that fights all sort
+Copernica is a member of M3AAWG. This is an organization that fights all sort
 of internet messaging abuse. The general consensus over there is that the sooner
 everyone is on the most strict DMARC setting (p=reject), the better it is. Some 
 of the visitors even walk around in p=reject t-shirts. In practice life is 
-however not that simple. For organisations that are very vulnerable for fishing
+however not that simple. For organizations that are very vulnerable for fishing
 (like financial organisations, banks) it of course is recommended to switch
 to p=reject. But this it not so crucial for other types of organisations. Many
 big M3AAWG members still use the tolerant setting.
@@ -154,7 +154,7 @@ they are a result of wrong settings on your side, you can update these settings.
 If the analyzer tells you that your domain is being abused, you can switch to
 a very strict that prevents this abuse. If however all is ok (no errors but also
 no indication of abuse) you are faces with a business decission: is the 
-tolerant setting acceptible for you or do you want to move to a stricter setting.
+tolerant setting acceptable for you or do you want to move to a stricter setting.
 A strict setting (p=reject) makes it much harder for others to abuse your mail,
 but also more likely that you messages accidentally can not be delivered.
 

@@ -7,7 +7,7 @@ POST call to the following URL:
 
 The $id should be replaced by the ID of the collection you want to add a
 field to. The name of the field and other values should be added to the 
-message body. After a succesful call the ID of the created request is returned.
+message body. After a successful call the ID of the created request is returned.
 
 ## Available parameters
 

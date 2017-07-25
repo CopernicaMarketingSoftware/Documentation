@@ -4,7 +4,7 @@ Once you have connected a website or app to [the Copernica REST API](./rest-api.
 you can start sending HTTP requests to the API endpoint. The address of this 
 endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*,
 where the "/path/to/resource" part of the URL identifies the data that you're
-feching or updating. With every request you have to append an *access_token*
+fetching or updating. With every request you have to append an *access_token*
 variable to the URL to identify your application and the account that is being accessed.
 
 Just like every REST API, you use HTTP GET requests to retrieve data, POST
@@ -66,4 +66,4 @@ holds a JSON message describing the error.
 The following articles contain other relevant information about the REST API:
 
 * [Overview of available API methods](./rest-api.md)
-* [Parameters that are suported by methods to fetch lists of entities](rest-paging)
+* [Parameters that are supported by methods to fetch lists of entities](rest-paging)
