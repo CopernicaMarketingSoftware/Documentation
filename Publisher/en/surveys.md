@@ -1,7 +1,7 @@
 # Surveys in Publisher
 
 In Publisher you can easily create beautiful surveys to learn the 
-opinion of your customers on your product or serivce. It's an easy way 
+opinion of your customers on your product or service. It's an easy way 
 to gather data about your customers, but it's important that you ask the 
 right questions in the right manner. For tips on how to ask questions 
 you can read [this article](./prevent-database-corruption).
@@ -62,7 +62,7 @@ case you only have to add the following tag with the name of your survey.
 
 `{survey name='surveyname'}`
 
-You can add your own XSLt as well using the following code:
+You can add your own XSLT as well using the following code:
 
 `{survey name='surveyname' xslt='xsltname'}`
 
