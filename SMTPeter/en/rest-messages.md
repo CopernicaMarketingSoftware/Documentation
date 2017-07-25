@@ -16,7 +16,7 @@ https://www.smtpeter.com/v1/recipient/MESSAGEID
 https://www.smtpeter.com/v1/envelope/MESSAGEID
 https://www.smtpeter.com/v1/text/MESSAGEID
 https://www.smtpeter.com/v1/html/MESSAGEID
-https://www.smtpeter.com/v1/header/MESSAGEID
+https://www.smtpeter.com/v1/headers/MESSAGEID
 https://www.smtpeter.com/v1/attachments/MESSAGEID
 https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
 https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
