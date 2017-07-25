@@ -6,18 +6,17 @@ participate. In the email you refer to the survey with a personalized
 hyperlink.
 
 For example, if your survey is published on
-    
-    *http://www.yourcompany.com/survey*
+*http://www.yourcompany.com/survey*
 
 Use the following link:
 
 **Mailing to profiles:**
 
-    http://www.yourcompany.com/survey*?profile={\$profile.id}&code={\$profile.code}
+http://www.yourcompany.com/survey*?profile={\$profile.id}&code={\$profile.code}*\
 
 **Mailing to subprofiles:**
 
-    http://www.yourcompany.com/survey*?subprofile={\$subprofile.id}&code={\$subprofile.code}
+http://www.yourcompany.com/survey*?subprofile={\$subprofile.id}&code={\$subprofile.code}*
 
 After the participant completed the survey, you can look up his or her
 answers at the tab **Surveys** at the profile of the participant. You can also 
