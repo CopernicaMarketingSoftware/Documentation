@@ -51,6 +51,9 @@ is het handig om wellicht toch de verbeteringen door te voeren.
 
 ## Headers
 
+Alle headers uit dit artikel kun je vinden bovenaan de Template Editor in 
+de Marketing Suite.
+
 ### BCC header
 
 De BCC (Blind Carbon Copy) kan gebruikt worden om kopieën van emails te 
