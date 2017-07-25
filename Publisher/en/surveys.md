@@ -1,60 +1,90 @@
 # Surveys in Publisher
 
-Customers have an opinion. About politics, and Justin Bieber's haircut.
-Or about your product or service. Use the Copernica survey module to
-make these opinions quantifiable. This will help you improve your product
-or service.
+In Publisher you can easily create beautiful surveys to learn the 
+opinion of your customers on your product or serivce. It's an easy way 
+to gather data about your customers, but it's important that you ask the 
+right questions in the right manner. For tips on how to ask questions 
+you can read [this article](./prevent-database-corruption).
 
-The results of your survey can be viewed in Copernica and downloaded to
-an Excel file. You can also lookup the answers given by a specific
-respondent in your Copernica database. For tips on good data gathering 
-please see our article on 
-[avoiding data corruption](./prevent-database-corruption).
+Note: Surveys are currently not available in the Marketing Suite.
 
-Please note that it is not (yet) possible to make surveys in Marketing Suite.
+## Creating a survey
 
-## Creating surveys
+You can easily create your own survey under `Content` in the Publisher 
+main menu. It's even possible to automatically link information gathered 
+in the survey to your profiles by creating smart hyperlinks.
 
-You'll find the survey module in the **Content** section. From the
-**Survey menu**, you can create a new survey. Existing surveys can be
-found in the left overview. All other options related to a survey are
-also found in the **Survey** menu.
+If you have added a name and description to your survey you can start 
+adding questions. There are multiple types of questions, such as the open 
+question and the multiple choice question. The different types of questions 
+are described in [this article](./surveys-question-types). Questions can 
+always be created, edited and removed in the **Surveys** menu.
 
--   [Create new survey](./surveys-create.md)
--   [Survey question types](./surveys-question-types.md)
--   [Conditional survey questions](./surveys-question-conditional.md)
--   [Edit, add, copy and move survey questions](./surveys-edit)
--   [How to edit the survey title and introduction text](./surveys-title-introduction.md)
--   [Edit the survey conclude page](./surveys-conclude-page.md)
--   [Change styling of your survey with CSS](./stylesheets.md)
--   [Question on new page](./survey-question-options)
+Each questions has a few settings. Using these you can choose to make 
+a question optional or to start a question on a new page. A multiple choice 
+question also has the option of allowing multiple answers or not.
 
-## Publish your survey
+To finish your survey you send the participants to a concluding page. 
+You can add content to this page yourself. While it is not possible to 
+use [personalization](./personalization) here, you can link to your own 
+page using the following code:
 
-Surveys can be published on web pages only due to technical constraints.
+`<script type="text/javascript"> document.location = "http://www.mijnwebsite.nl/bedankt"; </script>`
 
--   [Reset your survey](./surveys-reset-results.md)
--   [Publishing the survey](./surveys-publish.md)
--   [Register survey participant profiles](./surveys-register-participants.md)
+## Publishing a survey
 
-## Survey follow-up actions
+### Linking
 
--   [Survey follow-up actions](./surveys-followup.md)
--   [Recieve answers in email](./surveys-email-results.md)
+The best way to link to your survey is to use the profile identifier and 
+code. With this information Copernica can link the results to the profiles 
+in your database.
 
-## Results of your survey
+Image that your survey is published here:
 
-Of course you are curious about the answers given in the survey. You can
-view the results in Copernica, or download it to a text file, which can
-be, for example, opened in Excel or SPSS statistical software.
+`http://www.yourdomain.com/survey`
 
--   [View survey results](./surveys-view-results.md)
--   [Export survey results](./surveys-export-results.md)
--   [Deleting a survey](./surveys-delete)
+This means that you can use the following code for profiles:
 
-## Other topics
+`http://www.yourdomain.com/survey?profile={\$profile.id}&code={\$profile.code}`
 
--   [Edit button text](./surveys-edit-buttons)
--   [Remove the number sign (\#) at each survey
-    question](./surveys-remove-hashtag.md)
+And this code for subprofiles:
 
+`http://www.yourdomain.com/survey?subprofile={\$subprofile.id}&code={\$subprofile.code}`
+
+When this link is used by a profile to submit the survey you can find the 
+answers in the survey tab when the profile is selected.
+
+### Adding to webpage
+
+You can also choose to host your own [website](./websites) with Copernica 
+and add your survey to one of the webpages created in our software. In this 
+case you only have to add the following tag with the name of your survey.
+
+`{survey name='surveyname'}`
+
+You can add your own XSLt as well using the following code:
+
+`{survey name='surveyname' xslt='xsltname'}`
+
+An [XSLT](css-and-xslt) stylesheet can be created under the `Style` menu.
+
+## Results
+
+The results of a survey can be viewed per profile when the profile is 
+selected. You can also choose to [export](./surveys-export-results) or 
+follow them up with [followups](./followups).
+
+## More information
+
+You can do a lot more with surveys. The links below will help you 
+out with some more information.
+
+### General
+
+* [Prevent database corruption](./prevent-database-corruption)
+* [Survey question types](./surveys-question-types)
+
+### Edit style
+
+* [Edit button text](./surveys-edit-buttons)
+* [Remove # sign for numbering](./surveys-remove-hashtag)
