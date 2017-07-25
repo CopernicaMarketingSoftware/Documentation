@@ -24,6 +24,11 @@ of conditions. There are many different conditions to use:
 | Check content of other selection                                     | Check on other selection content.                                                                              |
 | Check based on previous exports                                      | Check based on previous exports, for example if you only want to export profiles that weren't exported before. |
 
+Profiles can be sorted or selected use the sort/select condition. Since 
+this is a very powerful condition with many options we have written 
+[this article](./selections-conditions-partcondition) to explain it 
+in detail.
+
 ## Rules vs. conditions
 
 Filtering profiles is done using selection rules and selection conditions. 
