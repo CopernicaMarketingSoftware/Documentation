@@ -9,7 +9,7 @@ order:
 
 | Data         | Description |
 | ------------ | ----------------------------------------------------------- |
-| id           | The ID of the messsage the triggered the impression         |
+| id           | The ID of the message the triggered the impression          |
 | time         | The time of the impression                                  |
 | ip           | The IP address that triggered the impression                |
 | header       | The header of the impression request                        |
