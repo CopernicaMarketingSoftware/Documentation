@@ -1,6 +1,6 @@
 # REST API: POST minirule condition
 
-A method to edit conditions for a minirule. This method does not 
+A method to add conditions for a minirule. This method does not 
 support parameters. It is called by sending an HTTP POST request to the following URL:
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
@@ -14,7 +14,6 @@ call the ID of the created request is returned.
 The message body can hold the following properties for a condition:
 
 - **type**: type of condition
-- **rule**: numeric ID of the minirule the condition belongs to
 
 Based on the condition type, specific properties are set. For an overview
 of the supported conditions and the properties that they support, check
@@ -52,7 +51,7 @@ $data = array(
 )
 
 // do the call, and print result
-$api->post("minirule/1234/conditions", array(), $data);
+$api->post("minirule/id/conditions/type", array(), $data);
 
 // return id of created request if successful
 ```

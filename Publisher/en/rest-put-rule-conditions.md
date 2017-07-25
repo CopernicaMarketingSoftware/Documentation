@@ -1,12 +1,12 @@
-# REST API: POST rule conditions
+# REST API: PUT rule conditions
 
-A method to add conditions for a rule. It is called by sending an HTTP POST request to the following URL:
+A method to edit conditions for a rule. It is called by sending an HTTP 
+POST request to the following URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v1/rule/$id/conditions/$id?access_token=xxxx`
 
-In this, `$id` needs to be replaced by the numerical identifier or the name 
-of the rule you wish to edit the conditions of. After a succesful call 
-the ID of the created request is returned.
+The `$id` is the ID of the rule and the `$type` is the type of condition 
+you want to edit.
 
 ## Available parameters
 
@@ -36,7 +36,8 @@ the specific articles:
 
 ## PHP example
 
-The following example demonstrates how to use this method:
+The following example demonstrates how to use this method. This condition 
+is a field condition, satisfied by anyone with the first name Bob.
 
 ```php
 // dependencies
@@ -47,16 +48,16 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters to pass to the call
 $data = array(
-	'type' = 'date'
+	'type' = 'field'
+    'field' = 'firstname'
+    'value' = 'Bob'
 );
 
 // do the call, and print result
-$api->post("rule/1234/conditions", array(), $data);
+$api->post("rule/id/conditions/id", array(), $data);
 
 // return id of created request if successful
 ```
-
-The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
@@ -64,4 +65,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 * [GET rules](./rest-get-view-rules)
 * [GET rule](./rest-get-rule)
 * [PUT rule](./rest-put-rule)
-* [PUT rule condition](./rest-put-rule-conditions)
+* [POST rule condition](./rest-post-rule-conditions)

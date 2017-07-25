@@ -102,6 +102,7 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | POST      | [api.copernica.com/v1/view/$id/views](./rest-post-view-views.md)                                              | Aanmaken geneste selectie                         |
 | PUT       | [api.copernica.com/v1/rule/$id](./rest-put-rule.md)                                                           | Bijwerken instellingen van selectieregel          |
 | POST      | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions.md)                                    | Aanmaken nieuwe conditie bij selectieregel        |
+| PUT       | [api.copernica.com/v1/rule/$id/conditions/type](./rest-put-rule-conditions.md)                                | Aanpassen conditie bij selectieregel              |
 | PUT       | [api.copernica.com/v1/profile/$id](./rest-put-profile.md)                                                     | Bijwerken profielgegevens                         |
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields.md)                                       | Bijwerken profielvelden                           |
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests.md)                                | Toevoegen interesses van profiel                  |
@@ -117,7 +118,7 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules.md)                                      | Aanmaken nieuwe miniselectieregel                 |
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule.md)                                                   | Bijwerken instellingen van miniselectieregel      |
 | POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions.md)                            | Aanmaken nieuwe conditie bij miniselectieregel    |
-
+| PUT       | [api.copernica.com/v1/minirule/$id/conditions/$type](./rest-put-minirule-conditions.md)                       | Aanpassen conditie bij miniselectieregel          |
 ## DELETE
 
 DELETE methodes worden gebruikt om data te verwijderen. Dit is permanent, 
