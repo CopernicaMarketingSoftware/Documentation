@@ -66,6 +66,18 @@ Add rows and columns. You may also change their order and/or position in the opt
 *Image: This grid question has two rows with subject and 3 columns with 
 possible ratings for these subjects.*
 
+## Conditional questions
+
+Sometimes there are questions in a survey that make other questions 
+redundant. It depends whether these questions should be answered or not. 
+This is called a conditional question, which is not yet available in 
+our software. Instead you can write your questions like this:
+
+1. How old are you?
+2. If you are older than 18, how do you feel about being an adult?
+
+The second question can be made optional to complete the workaround.
+
 ## More information
 
 * [Surveys](./surveys)
