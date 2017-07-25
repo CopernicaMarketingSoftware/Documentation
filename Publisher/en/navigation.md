@@ -33,6 +33,7 @@
     * [License and billing](./license-and-billing)
     * [Sender reputation](./sender-reputation)
     * [Sender domains](./sender-domains)
+    * [Headers](./headers)
 * [Publisher only features](./publisher-only)
     * [Mobile mailings](./mobile-mailing)
     * [Surveys](./surveys)

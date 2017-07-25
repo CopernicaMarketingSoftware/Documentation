@@ -33,6 +33,7 @@
     * [Licentie en facturering](./license-and-billing)
     * [Sender domains](./sender-domains)
     * [Sender reputation](./sender-reputation)
+    * [Headers](./headers)
 * [Publisher exclusief](./publisher-only)
     * [Mobiele mailings](./mobile-mailing)
     * [Enquêtes](./surveys)
