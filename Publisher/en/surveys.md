@@ -45,11 +45,11 @@ Image that your survey is published here:
 
 This means that you can use the following code for profiles:
 
-`http://www.yourdomain.com/survey?profile={\$profile.id}&code={\$profile.code}`
+`http://www.yourdomain.com/survey?profile={$profile.id}&code={$profile.code}`
 
 And this code for subprofiles:
 
-`http://www.yourdomain.com/survey?subprofile={\$subprofile.id}&code={\$subprofile.code}`
+`http://www.yourdomain.com/survey?subprofile={$subprofile.id}&code={$subprofile.code}`
 
 When this link is used by a profile to submit the survey you can find the 
 answers in the survey tab when the profile is selected.
