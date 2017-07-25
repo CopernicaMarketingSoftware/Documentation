@@ -22,7 +22,7 @@ ingaan op de software.
 ### Selectie tutorials
 
 * [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
-* [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
+* [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers)
 * [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
 * [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 
