@@ -47,11 +47,11 @@ Stel dat dit de link naar je enquête is:
 
 Dan kun je de volgende link gebruiken voor profielen:
 
-`http://www.jouwdomein.com/enquete?profile={\$profile.id}&code={\$profile.code}`
+`http://www.jouwdomein.com/enquete?profile={$profile.id}&code={$profile.code}`
 
 En de volgende voor subprofielen:
 
-`http://www.jouwdomein.com/enquete?subprofile={\$subprofile.id}&code={\$subprofile.code}`
+`http://www.jouwdomein.com/enquete?subprofile={$subprofile.id}&code={$subprofile.code}`
 
 Wanneer een profiel deze link gebruikt om de enquête in te vullen kun je 
 daarna de antwoorden terugvinden onder het tabjes *Enquêtes* onder het profiel.
