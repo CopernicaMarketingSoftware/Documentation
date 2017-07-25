@@ -21,7 +21,7 @@ more on the software and how to use it.
 ### Selection tutorials
 
 * [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
-* [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers)
 * [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
 * [Selections Tutorial: Birthday selection](./how-to-create-a-birthday-selection)
 
