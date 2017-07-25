@@ -33,5 +33,5 @@ here you can instantly edit its rules.
 * [Templates](./templates)
 * [Surveys](./surveys)
 * [Websites](./websites)
-* [Web forms](./webforms)
+* [Webforms](./webforms)
 * [RSS feeds and Atom feeds](./rss-and-atom-feeds.md)
