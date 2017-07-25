@@ -38,3 +38,4 @@ ingaan op de software.
 ### Overig
 
 * [HTTP en HTTPS](./http-https)
+* [Headers](./headers)

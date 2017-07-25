@@ -136,12 +136,22 @@ naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;,
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
 een afbeelding, via dit dialoogvenster koppelen.
 
+## Headers
+
+Headers are used to add information to an email. There are standardized 
+headers such as "From" and "Subject", but you can also use so called "x-headers". 
+Using these you can add any type of information you like. You can use them 
+to make analysing your campaign easier, for example. You can also send 
+a BCC (Blind Carbon Copy) or add the *List unsubscribe* header. See 
+also the [article on headers](./headers)
+
 ## Meer informatie
 
 * [Templates](./templates)
 * [Templates in Marketing Suite](./templates-marketing-suite)
 * [Personalizatie in Publisher](personalizing-your-newsletter-in-the-publisher)
 * [Followups](./followups)
+* [Headers](./headers)
 
 ### Template content
 

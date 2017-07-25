@@ -37,3 +37,4 @@ more on the software and how to use it.
 ## Other
 
 * [HTTP and HTTPS](./http-https)
+* [Headers](./headers)
