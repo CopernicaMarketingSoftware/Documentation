@@ -104,6 +104,7 @@ The following PUT and POST methods are available:
 | POST      | [api.copernica.com/v1/view/$id/views](./rest-post-view-views)                                             | Create a nested selection               |     
 | PUT       | [api.copernica.com/v1/rule/$id](./rest-put-rule)                                                          | Edit selection rule                     |     
 | POST      | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions)                                   | Create a selection condition            |     
+| PUT       | [api.copernica.com/v1/rule/$id/conditions/$type](./rest-put-rule-conditions)                              | Edit selection condition                |
 | PUT       | [api.copernica.com/v1/profile/$id](./rest-put-profile)                                                    | Edit profile data                       |     
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                                      | Edit profile fields                     |     
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                               | Add interests to profile                |     
@@ -119,7 +120,7 @@ The following PUT and POST methods are available:
 | POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules)                                     | Create miniview rule                    |	    
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule)                                                  | Edit miniselection rule                 |     
 | POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions)                           | Create condition for a miniselection    |     
-
+| PUT       | [api.copernica.com/v1/minirule/$id/conditions/$type](./rest-put-minirule-conditions)                      | Edit condition for a miniselection      |
 
 ## DELETE
 

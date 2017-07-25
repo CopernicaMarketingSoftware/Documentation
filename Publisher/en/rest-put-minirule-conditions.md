@@ -1,12 +1,14 @@
-# REST API: POST rule conditions
+# REST API: PUT minirule condition
 
-A method to add conditions for a rule. It is called by sending an HTTP POST request to the following URL:
+A method to edit conditions for a minirule. This method does not 
+support parameters. It is called by sending an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v1/minirule/$id/conditions/$type?access_token=xxxx`
 
-In this, `$id` needs to be replaced by the numerical identifier or the name 
-of the rule you wish to edit the conditions of. After a succesful call 
-the ID of the created request is returned.
+In this, `$id` needs to be replaced by the numerical identifier or the 
+name of the minirule you wish to edit the condition of. The `$type` specifies 
+the type of the condition you want to edit. After a succesful call the 
+ID of the created request is returned.
 
 ## Available parameters
 
@@ -22,7 +24,6 @@ the specific articles:
 - [Date conditions](./rest-condition-type-date.md)
 - [DoubleField conditions](./rest-condition-type-doublefield.md)
 - [Email conditions](./rest-condition-type-email.md)
-- [Export conditions](./rest-condition-type-export.md)
 - [Fax conditions](./rest-condition-type-fax.md)
 - [Field conditions](./rest-condition-type-field.md)
 - [Interest conditions](./rest-condition-type-interest.md)
@@ -48,10 +49,10 @@ $api = new CopernicaRestApi("your-access-token");
 // parameters to pass to the call
 $data = array(
 	'type' = 'date'
-);
+)
 
 // do the call, and print result
-$api->post("rule/1234/conditions", array(), $data);
+$api->post("minirule/id/conditions/type", array(), $data);
 
 // return id of created request if successful
 ```
@@ -61,7 +62,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [GET rules](./rest-get-view-rules)
-* [GET rule](./rest-get-rule)
-* [PUT rule](./rest-put-rule)
-* [PUT rule condition](./rest-put-rule-conditions)
+* [GET minirule](./rest-get-minirule)
+* [PUT minirule](./rest-put-minirule)

@@ -1,22 +1,21 @@
-# REST API: POST rule conditions
+# REST API: PUT rule conditions
 
-Een methode om *conditions* voor een *rule* aan te maken. 
-Je kunt de methode aanroepen met een HTTP POST request naar de volgende URL:
+Een methode om *conditions* voor een *rule* aan te passen. 
+Je kunt de methode aanroepen met een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v1/rule/$id/conditions/$type?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de rule waaraan je de 
-condition wilt toevoegen. Bij een succesvolle call wordt de ID van het 
-aangemaakte verzoek teruggegeven.
+De `$id` is de ID van de regel, de `$type` is het type conditie dat je 
+voor de regel aan wil passen.
 
-## Parameters
+## Verschillende type conditions
 
 De body van het bericht kan de volgende eigenschappen bevatten voor een 
 conditie:
 
 - **type**: type van de conditie
 
-Je kunt verschillende type condities gebruiken. 
+Je kunt verschillende type condities gebruiken.
 De precieze eigenschappen hangen af van het type van de conditie. 
 In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
 precies lezen wat iedere condition inhoudt door erop te klikken:
@@ -39,7 +38,8 @@ precies lezen wat iedere condition inhoudt door erop te klikken:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe de API method te gebruiken is.
+Het volgende PHP script demonstreert hoe de API method te gebruiken is. 
+Hier wordt aan de conditie voldaan als "firstname" de waarde "Bob" heeft.
 
 ```php
 // vereiste scripts
@@ -50,11 +50,13 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $data = array(
-    'type' = 'Date'
+    'type' = 'field'
+    'field' = 'firstname'
+    'value' = 'Bob'
 );
 
 // voer het verzoek uit en print het resultaat
-$api->post("rule/id/conditions", array(), $data);
+$api->post("rule/id/conditions/id", array(), $data);
 
 // bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
@@ -66,4 +68,4 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 * [Overzicht van alle API methodes](rest-api)
 * [GET rule](./rest-get-rule)
 * [POST view rules](./rest-post-view-rules)
-* [PUT rule condities](./rest-put-rule-conditions)
+* [POST rule condities](./rest-post-rule-conditions)
