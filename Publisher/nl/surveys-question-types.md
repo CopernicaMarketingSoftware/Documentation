@@ -61,6 +61,18 @@ Je kunt hier ook de volgorde van de opties aanpassen.
 *Afbeelding: Grid vraag met twee rijen en drie kolommen om een rating 
 te kunnen geven.*
 
+## Conditionele vragen
+
+Soms worden er in een enquête vragen gebruikt die andere vragen 
+overbodig maken. Deze vragen hoeven dus niet altijd beantwoord te worden. 
+Deze functionaliteit is helaas nog niet beschikbaar. In plaats daarvan 
+zou je vragen op de volgende manier kunnen schrijven.
+
+1. Hoe oud ben je?
+2. Als je ouder bent dan 18, hoe vind je het om geen kind meer te zijn?
+
+De tweede vraag kun je vervolgens optioneel maken als een workaround.
+
 ## Meer informatie
 
 * [Enquêtes](./surveys)
