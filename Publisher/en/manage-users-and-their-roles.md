@@ -14,7 +14,7 @@ Enter the email address of the new user and then click on submit. You can also p
 
 ## Same user in different accounts
 
-If you have access to multiple accounts, you use the same credentials to access these accounts. If you have access to bothAccount A and Account B, you are asked which account you wish to access right after loggin in.
+If you have access to multiple accounts, you use the same credentials to access these accounts. If you have access to bothAccount A and Account B, you are asked which account you wish to access right after login in.
 Once you're logged into an account, you may wish to switch to your other accounts via the personal menu in the top-right corner (Welcome name...). Click on Switch accountto choose a different account.
 
 ## Edit access rights

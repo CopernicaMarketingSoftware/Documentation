@@ -82,8 +82,8 @@ are available:
 
 * [$loop.naamvanloop.index] - total iterations
 * [$loop.naamvanloop.iteration] - current iteration
-* [$loop.naamvanloop.first] - boolean waarde to indicate first iteration
-* [$loop.naamvanloop.last] - boolean waarde to indicate last iteration
+* [$loop.naamvanloop.first] - boolean value to indicate first iteration
+* [$loop.naamvanloop.last] - boolean value to indicate last iteration
 
 You can use these loops to add some more detail to the loop, for example 
 to improve the layout:
@@ -99,7 +99,7 @@ to improve the layout:
 [/loop]
 ```
 
-In the exmaple above you see a loop of paragraphs. The amount of paragraphs 
+In the example above you see a loop of paragraphs. The amount of paragraphs 
 that will be used can be determined at the document level. After each 
 paragraph a horizontal line is drawn to separate it from the paragraph 
 below. However, the *if* loop specifies that this is not done for the last 

@@ -27,7 +27,7 @@ data of the profile. This {$profile} variables holds the profile to which the ma
 is sent, or, for mailings to subprofiles, the profile to which the subprofile
 addressee belongs. The {$profile} object has a number of properties:
 
-* **{$profile.id}**: nummeric identifier of the profile
+* **{$profile.id}**: numeric identifier of the profile
 * **{$profile.extra}**: the extra profile data that is accessible through the API
 * **{$profile.secret}**: the *secret code* that is stored for this profile
 * **{$profile.code}**: alias for {$profile.secret}, the secret code
@@ -47,7 +47,7 @@ mentioned {$profile} object. But you can then also use the {$subprofile} variabl
 This is an object holding the subprofile to which the mailing is sent, with
 the following properties:
 
-* **{$subprofile.id}**: nummeric identifier of the subprofile
+* **{$subprofile.id}**: numeric identifier of the subprofile
 * **{$subprofile.secret}**: the *secret code* that is stored for this subprofile
 * **{$subprofile.code}**: alias for {$subprofile.secret}, the secret code
 * **{$subprofile.created}**: time when the subprofile was created (in YYYY-MM-DD hh:mm:ss format)
@@ -92,7 +92,7 @@ this to make great campaigns.
 ## Foreign key fields
 
 But you can achieve even more. As you might know, databases support *foreign
-key* fields. A foreign key field is a nummeric field that holds the ID of a profile
+key* fields. A foreign key field is a numeric field that holds the ID of a profile
 from the same or even from a different database. Foreign key fields allow you
 to create full relational models that can be used for your personalized campaigns.
 
@@ -126,7 +126,7 @@ and {$mailing} objects. These are objects holding information about your account
 and about the mailing that is being personalized. The {$account} object holds
 the following members:
 
-* **{$account.id}**: nummeric identifier of the account
+* **{$account.id}**: numeric identifier of the account
 * **{$account.name}**: name of the account
 
 The {$mailing} object has more properties, en contains some mailing settings:

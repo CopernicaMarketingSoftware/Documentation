@@ -7,7 +7,7 @@ To add subprofiles to a profile an HTTP POST request can be sent to the followin
 The `$id` should be replaced with the ID of the profile you want to add a
 subprofile to. The `$collectionID` should be replaced with the ID of the
 collection in which the subprofile should be stored. The new subprofile
-of the profile can be placed in the body of the message. After a succesful 
+of the profile can be placed in the body of the message. After a successful 
 call the ID of the created request is returned.
 
 ## Body data

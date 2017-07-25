@@ -1,7 +1,7 @@
 # Personalization settings
 
 For every document and template you can configure the personalization settings.
-With these settings you contol the language that is used for displaying 
+With these settings you control the language that is used for displaying 
 dates. You can find the personalization
 settings on the left of your screen under every opened template or document.
 
@@ -31,7 +31,7 @@ Short summary: always choose UTF-8. Then you're always safe. The UTF-8 character
 set supports basically all characters in the world.
 
 But what is this exactly? Traditionally, you could only use traditional ASCII
-characters in email: the latin alphabet, digits and a couple of special characters. 
+characters in email: the Latin alphabet, digits and a couple of special characters. 
 Only the characters that you find on an American keyboard. Exotic characters,
 but also characters that are used in Europe (like ë, ï of é) were not supported.
 If you did want to send out an email with such characters, you had to explicitly
@@ -54,7 +54,7 @@ ruin your layout, or worse: makes your application vulnerable for all sorts
 of hacks.
 
 That's why we always advise to **escape all your variables**. The Smarty |escape
-modifier should be used to disarm potentional harmful variables. So, use 
+modifier should be used to disarm potential harmful variables. So, use 
 "Dear {$name|escape}" to prevent disasters. Alternatively, you can also
 use the personalization settings to do this automatically. If you enable the
 HTML filtering option, all personalization variables are automatically 

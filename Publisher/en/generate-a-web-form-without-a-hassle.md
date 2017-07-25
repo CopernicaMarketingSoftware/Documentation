@@ -47,7 +47,7 @@ after he submitted the webform.
 In the last step you get the HTML. Paste the code into an HTML file,
 store it on you computer, and open it with your browser .
 
-Fill in the form and submit it. You will see that it works correcly.
+Fill in the form and submit it. You will see that it works correctly.
 
 **Note** : Once a form has been created, you cannot subsequently add or
 remove fields of the form. You must then generate a new web form.

@@ -31,7 +31,7 @@ to prevent this from happening.
 ### Certification
 
 Through Copernica you can enter a request to be a certified sender. If 
-you satisfy the requirements Return Path, a company specialised in email 
+you satisfy the requirements Return Path, a company specialized in email 
 reputation, will check you and give you the certificate. With Return Path 
 Sender Certification you will be placed on the best whitelists, improving 
 your reputation with email clients. It also improves the chances of your 
@@ -43,7 +43,7 @@ A pic-server domain is used to track clicks and opens, for example.
 Copernica offers some default pic-server domains, but sadly there are 
 also Copernica users sending spammy mails that harm their reputation.
 
-Luckily, you can set up your own pic-register domain easily. Most peope 
+Luckily, you can set up your own pic-register domain easily. Most people 
 create a subdomain under their company domain 
 (e.g., *newsletter.companydomain.com*). Point the (sub)domain to 
 pic.vicinity.com using a CNAME. Then go to the delivery settings of 

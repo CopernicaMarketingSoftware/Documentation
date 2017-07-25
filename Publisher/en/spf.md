@@ -39,14 +39,14 @@ Copernica utilizes these additional elements. If you go to the
 [sender domain dashboard](./sender-domains.md) in Marketing Suite, you get a
 list of recommended DSN settings. For most of the records we recommend to use
 CNAME record, because CNAME is the standard record type for aliases and
-referals. For SPF however, we recommand to create a regular TXT record holding
+referals. For SPF however, we recommend to create a regular TXT record holding
 an "include" element. In practice both a CNAME record and a SPF record with
-an include do the same thing: your own DNS settins refers to the setting in our DNS.
+an include do the same thing: your own DNS settings refers to the setting in our DNS.
 
 
 ## What should be listed in the SPF record
 
-If you send mail with Copernica, it speaks for itselves that Copernica's IP addresses
+If you send mail with Copernica, it speaks for themselves that Copernica's IP addresses
 also have to be included in the SPF record. Receivers can only then validate that
 the messages that we send on your behalf (and that come from our IP's) are legitimate. 
 But because we create your DNS record we already take care of this and you can
@@ -54,7 +54,7 @@ sit back and relax (if you correctly set up the alias).
 
 You may already know that email messages use two different sender addresses: the
 "normal" from address that you normally see when you open a message, and a second
-address that we call the *envelope* address. This envelope address is not dislayed
+address that we call the *envelope* address. This envelope address is not displayed
 to the user and is intended for communication between mail servers. When a message
 bounces (could not be delivered), receiving servers can send back an error to
 this envelope addresses. We add such an envelope address to the mail that we send 
@@ -71,7 +71,7 @@ standard recommendation refers to a list of IP addresses of the Copernica server
 and is normally (always) sufficient because only we use your subdomain to send out
 mail. However, if, for whatever reason, you want to modify the SPF record, you
 of course are free to do so. You can copy our recommended SPF records and modify 
-it (for example to add more IP addresses to it). ALthough that is probably not 
+it (for example to add more IP addresses to it). Although that is probably not 
 necessary.
 
 ## More information

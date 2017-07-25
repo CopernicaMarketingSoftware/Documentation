@@ -6,7 +6,7 @@ signature to check whether the message was indeed sent by the sender, and that i
 was not spoofed or modified in transit. Together with [SPF](./spf.md) and 
 [DMARC](./dmarc), DKIM is used to prevent email abuse.
 
-To create digitial signatures, DKIM uses a private and public key pair. The 
+To create digital signatures, DKIM uses a private and public key pair. The 
 private key of this pair is required to sign an email and is only known to 
 the sender (thus to us if you send with Copernica). The private key is linked 
 to a public key that is published in DNS and accessible to everyone (hence the 

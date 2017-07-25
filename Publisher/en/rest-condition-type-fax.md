@@ -37,7 +37,7 @@ format.
 
 ## Example
 
-With the fax condition you can make a selectie of people who have received 
+With the fax condition you can make a selection of people who have received 
 more than 10 messages in the last two months, so they don't get too many 
 emails from you. This way you prevent your receivers from marking your 
 email as spam. The following condition is validated if this is the case.

@@ -1,7 +1,7 @@
 # Personalization functions: if
 
 With the *if* function it is possible to make conditional statements and 
-adjust content based on any avaible information (profile field and profile 
+adjust content based on any available information (profile field and profile 
 interests are very useful for example). It is also possible to use `{elseif}` 
 and `{else}` or nest *if* statements.
 
@@ -19,7 +19,7 @@ The following table show the qualifiers that are supported by this function.
 | \=         | $a lte/le $b     | smaller than         |
 | ===        | $a === 0         | check for identity   |
 | !          | not $a           | negation             |
-| %          | $a mod $b        | modulous             |
+| %          | $a mod $b        | modulus             |
 | is div by  | $a is div by $b  | divisible by         |
 | is even    | $a is even       | is even              |
 | is even by | $a is even by $b | grouping level even  |

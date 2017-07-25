@@ -1,6 +1,6 @@
 # Restrictions
 
-The Copernica software is equiped with a couple of safety systems to prevent
+The Copernica software is equipped with a couple of safety systems to prevent
 that invalid data ends up in the database and to prevent that you accidentally
 send out a mailing to a wrong address list. The *database restrictions* feature
 allows you to create rules to filter input data to prevent that invalid are
@@ -33,7 +33,7 @@ profiles will keep their existing values, but will have to satisfy your
 restrictions on their next edit.
 
 Selections rules can also be chained together with "AND" and "OR" operators. 
-If you make a restruction with multiple "AND" rules a profile must match all the rules to
+If you make a restriction with multiple "AND" rules a profile must match all the rules to
 be allowed in the database. If you use the operator "OR" to combine rules a 
 profile only has to match a single rule. 
 

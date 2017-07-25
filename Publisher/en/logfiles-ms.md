@@ -1,4 +1,4 @@
-# Logfiles in MarketingSuite
+# Logfiles in Marketing Suite
 
 Copernica keeps a log of all sent messages. We keep data on *events*: 
 deliveries, clicks, opens, retries, etc. These log files can be 
@@ -13,6 +13,7 @@ on a specific day. The files are sorted by application (MarketingSuite
  destination ID, and some other information.
 
 ## Message information
+
 The destination IDs of messages are clickable. Click one, and you'll 
 get to the Message Information screen. Here, you'll find all the details 
 on the message, such as the full content of the message, recipient, 
@@ -29,6 +30,7 @@ operating system was used.
 and how many times it has been used.
 
 ## Downloading log files
+
 It is possible to download log files to your computer using the 
 'Download' button in the Operations Log. Another way of retrieving log 
 files is through the [REST API](./rest-get-logfiles), or to get notified 

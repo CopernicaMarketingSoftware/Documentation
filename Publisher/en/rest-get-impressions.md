@@ -28,7 +28,7 @@ You can read more about the *start*, *limit* and *total* parameters in out
 The method returns a list of impression objects. Each object in this list has
 the following properties:
 
-* **ID**: Unieke numeric impression identifier
+* **ID**: Unique numeric impression identifier
 * **timestamp**: Timestamp of the impression
 * **ip**: IP address
 * **user-agent**: The user-agent string

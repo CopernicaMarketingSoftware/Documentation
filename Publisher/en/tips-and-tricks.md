@@ -2,7 +2,7 @@
 
 The Copernica software has a lot of functionalities that are based on a 
 lot of techniques and background information. This is why we have compiled 
-some tips and tricks to optimalize the result of your mailings and teach you 
+some tips and tricks to optimize the result of your mailings and teach you 
 new things you may not know yet. Some articles are based on background, others 
 more on the software and how to use it.
 

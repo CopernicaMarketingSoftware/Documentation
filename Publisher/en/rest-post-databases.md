@@ -5,7 +5,7 @@ an HTTP POST request to the following address:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
-After a succesful call the ID of the created request is returned.
+After a successful call the ID of the created request is returned.
 
 ## Available parameters
 

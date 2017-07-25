@@ -106,7 +106,7 @@ Clever hyperlinks can help you and your customer. Adding login codes to
 the hyperlink in your email gives you the profile information, which 
 has quite a few advantages:
 
-* Webforms can be prefilled with profile data
+* Webforms can be pre-filled with profile data
 * Surveys results can be linked automatically
 * Personalization with profile data
 * Users don't need to log in

@@ -8,7 +8,7 @@ respective order:
 
 | Data         | Description                                                        |
 | ------------ | ------------------------------------------------------------------ |
-| id           | The ID of the message that triggered the unsubscibe                |
+| id           | The ID of the message that triggered the unsubscribe                |
 | time         | The time when the unsubscribe was registered                       |
 | email        | The email address of the the message the triggered the unsubscribe |
 | tags         | The tags of the email (semicolon separated)                        |

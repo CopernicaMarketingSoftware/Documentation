@@ -82,7 +82,7 @@ See also the [general article on events](./rest-get-events).
 
 ## PUT & POST
 
-PUT and POST methodes are used to create and edit data. They are often 
+PUT and POST methods are used to create and edit data. They are often 
 very similar. If you can not find a POST method of what you are looking 
 for there might be a PUT method to do it. It also works the other way around. 
 The following PUT and POST methods are available:

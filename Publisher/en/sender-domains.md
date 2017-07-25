@@ -20,7 +20,7 @@ will focus on the more advanced features of sender domains.
 If you set up a sender domain you can choose whether you want to do this for the
 main domain, say yourcompany.com, or for a subdomain, like newsletter.yourcompany.com.
 Of course, it is way more elegant if all your email messages are sent from the
-main domain, including your newsletters and transactional email. But your main domain 
+main domain, including your newsletters and n email. But your main domain 
 is probably already in use for sending out email and you therefore also have already 
 set up DNS records to enable this. If you do not want to risk breaking things by 
 modifying your existing DNS settings, you can opt for a subdomain instead, and use 
@@ -53,7 +53,7 @@ following records are hosted by us:
 
 * An A record so that we can track clicks and opens
 * A MX record to receive bounces and out-of-office replies
-* Multiple DKIM records so that we can add digital DKIM dignature to your messages
+* Multiple DKIM records so that we can add digital DKIM n to your messages
 * A SPF record so that our IP addresses can be used to send out your mail
 * A DMARC record to collect DMARC reports
 

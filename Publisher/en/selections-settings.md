@@ -40,7 +40,7 @@ database. You'll need to create these first.
 
 It's a good idea to (temporarily) remove selections you never or rarely 
 use from your database. Copernica has three options to do that: delete, 
-deactive or archive. A selection that is not used at all is best deleted. 
+inactive or archive. A selection that is not used at all is best deleted. 
 Selections are rebuilt often, which takes up computing power. Therefore, 
 having less selections will make your database faster. Removing a 
 selection does not mean the profiles in it are removed.

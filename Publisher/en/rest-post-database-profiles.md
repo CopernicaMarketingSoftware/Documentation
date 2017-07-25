@@ -6,7 +6,7 @@ The HTTP POST method to add a profile to an existing database is available at th
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of the database you want to add an profile to. 
 Profile information needs to be added to the message body of the HTTP request. 
-After a succesful call the ID of the created request is returned.
+After a successful call the ID of the created request is returned.
 
 Please note that while POST and PUT 
 are generally the same it is import to distinguish them in this case. This method posts a new profile, while PUT 
@@ -14,7 +14,7 @@ is the method to edit several profiles (see: [editing multiple profiles](rest-pu
 
 ## Body data
 
-Besided the parameters that you append to the URL, you must also include a
+Besides the parameters that you append to the URL, you must also include a
 request body in the POST request. The body should contain the fields values
 of the profile.
 

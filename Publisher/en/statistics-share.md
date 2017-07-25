@@ -33,7 +33,7 @@ date\* when you open or refresh the web page.
 **Note:**To prevent server overload, statistics can walk behind with the
 displaying of errors and impressions.
 
-## Who can view / recieve the document
+## Who can view / receive the document
 
 Anyone can open the document. The document is not indexed by any search
 engine or other crawlers.

@@ -7,7 +7,7 @@ or the dashboard. These log files contain the following data in the respective
 order:
 
 
-| Data         | Description |
+| Data         | Description                                                 |
 | ------------ | ----------------------------------------------------------- |
 | id           | The ID of the message the triggered the impression          |
 | time         | The time of the impression                                  |

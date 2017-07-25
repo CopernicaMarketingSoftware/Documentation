@@ -19,7 +19,7 @@ This method returns rule data. The following properties are returned:
 - **name**: name of the rule
 - **view**: ID of the selection to which the rule belongs
 - **disabled**: boolean value whether the rule is disabled / not used to match profiles
-- **inversed**: boolean value whether this is an inversed rule, meaning that profiles are included in the rule if they do *not* match the rule
+- **inverted**: boolean value whether this is an inverted rule, meaning that profiles are included in the rule if they do *not* match the rule
 - **conditions**: array of conditions in the rule.
 
 A rule on its own contains *conditions*. For a profile to match a rule, it 

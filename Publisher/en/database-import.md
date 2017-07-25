@@ -80,7 +80,7 @@ dates in the recommended YYYY-MM-DD format in input files.
 But if you do use a different format you can use the option to automatically
 convert these wrong dates. Dates in other formats are automatically recognized
 and converted to our notation. However, this is not a 100% safe conversion. The
-date 03-09-1980 can be read as 3 september or as 9 march. So it is better not
+date 03-09-1980 can be read as 3 September or as 9 March. So it is better not
 to rely on this conversion and always upload files that use the Copernica format.
 
 Invalid dates are ignored and are converted into 0000-00-00 dates.
