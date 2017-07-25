@@ -51,6 +51,9 @@ reputation.
 
 ## Headers
 
+All headers from this article can be found at the top of the Template 
+Editor in the Marketing Suite.
+
 ### BCC header
 
 The BCC (Blind Carbon Copy) can be used to send copies of emails to one 
