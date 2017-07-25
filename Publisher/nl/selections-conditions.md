@@ -25,6 +25,11 @@ zijn beschikbaar:
 | Check inhoud andere selectie                                               | Check op inhoud van een andere selectie.                                                                                                      |
 | Check op basis van eerdere exports                                         | Check op basis van eerdere exports, bijvoorbeeld om te voorkomen dat profielen meerdere keren geëxporteerd worden.                            |
 
+Profielen kunnen gesorteerd en geselecteerd worden met de sorteer/selectie 
+conditie. Omdat dit een erg krachtige conditie is met veel opties 
+kun je in [dit artikel](./selections-conditions-partcondition) uitgebreid 
+lezen hoe je optimaal gebruik maakt van deze conditie.
+
 ## Regels vs. condities
 
 Profielen kunnen gefilterd worden met selectie regels en condities. 
