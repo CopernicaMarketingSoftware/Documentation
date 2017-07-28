@@ -1,59 +1,66 @@
-# Condities voor opvolgacties
+# Follow-up Manager: Condities
 
-Het is mogelijk om een opvolgactie wel / niet in te roosteren en/of uit
-te voeren op basis van gegevens uit het profiel of subprofiel aan wie de
-opvolgactie is gericht. Voor het instellen van deze condities kan je
-gebruik maken van de *eenvoudige script editor*, of van de *geavanceerde
-script editor*voor vrije invoer van JavaScript.
+Opvolgacties kun je instellen in de [Publisher](./follow-up-manager-publisher), 
+[Marketing Suite](./follow-up-manager-ms) of met 
+[data-scripts](./followups-scripting). Binnen al deze methoden kun je 
+condities verbinden aan de uitvoering hiervan. Er wordt dan op basis van 
+je data op het aangegeven moment gekeken hoe de opvolgactie zich moet gedragen. 
+Maak hiervoor eerst een opvolgactie aan en voeg dan een conditie toe.
 
 De condities kunnen worden ingesteld voor zowel het inroosteren en het
-uitvoeren van de opvolgacties.
-
-We onderscheiden hierbinnen twee soorten condities:
+uitvoeren van de opvolgacties. We onderscheiden hierbinnen twee soorten condities:
 
 1.  Activeringsconditie (A)
 2.  Uitvoeringsconditie (B)
 
-![](../images/followupsconditions.png)
+Het grote verschil ligt hem in wanneer de conditie geëvalueerd wordt: 
+De activatieconditie evalueert de data op het moment van het aanmaken van 
+de conditie, de uitvoeringsconditie evalueert de data op het moment dat 
+de opvolgactie daadwerkelijk wordt uitgevoerd.
 
-A. Activatie conditie
----------------------
+## A. Activeringsconditie
 
-Conditie op de activatie van de opvolgactie
+Wanneer je een activeringsconditie instelt wordt de betreffende data 
+meteen gecontroleerd. Als dit nodig is wordt de opvolgactie hierdoor 
+meteen uitgevoerd, maar het kan ook zijn dat je deze voor maanden later 
+ingeroosterd hebt. Hou er dus ook rekening mee dat de data die je gebruikt 
+hebt inmiddels kan zijn veranderd.
 
-**De opvolgactie wordt alleen geactiveerd als het profiel (op het moment
-van activatie) voldoet aan de gestelde conditie(s).**
+Stel je voor dat je bijvoorbeeld een email hebt verstuurd waarin je naar 
+verschillende artikelen hebt gelinkt. Je slaat daarnaast op in elk profiel 
+op welke links geklikt zijn. Een van de artikelen is op het moment in 
+de aanbieding en je besluit de klanten die al op een link naar dit artikel 
+hebben geklikt (dus mogelijk geïnteresseerd!) op de hoogte te brengen met 
+een email. Je kunt dan een opvolgactie instellen met een activeringsconditie. 
+Deze kijkt op het moment dat de conditie wordt geactiveerd naar wie er 
+al op deze link geklikt hebben en stuurt een nieuwe mail naar deze mensen. 
+Je gebruikt hier de activeringsconditie omdat je alleen mensen wil mailen 
+die op dit moment geïnteresseerd zijn. Als je dit niet zou doen zou iemand 
+later op de link kunnen klikken en een mail kunnen ontvangen over een 
+actie die op dat moment misschien niet meer geldt.
 
-De condities worden geëvalueerd wanneer de opvolgactie wordt
-aangeroepen, bijvoorbeeld: het profiel heeft op een link geklikt. De
-opvolgactie wordt direct geactiveerd wanneer het profiel voldoet aan de
-activatieconditie. Anders wordt de opvolgactie **niet** geactiveerd voor
-dit profiel.
+## B. Uitvoeringsconditie
 
-Voorbeeld: je wilt een opvolgmail over Viagra sturen. Met behulp van de
-activatieconditie kan je voorkomen dat deze opvolgactie geactiveerd voor
-personen die op het moment van activatie jonger zijn dan 65. Je maakt
-dan de conditie: *[Leeftijd is ouder dan 65]*
+De uitvoerings conditie checkt de betreffende data op het moment dat je 
+opvolgactie wordt uitgevoerd. De data op het moment van het instellen 
+van de conditie wordt hier dus niet gebruikt.
 
-Deze conditie wordt NIET geëvalueerd wanneer de opvolgactie zou worden
-uitgevoerd, wat maanden later kan zijn. Hiervoor gebruik je de
-uitvoeringsconditie.
+Stel je voor dat je een email hebt ingeroosterd over een wijnproeverij 
+waar je je klanten voor uit wil nodigen. Je weet echter dat niet iedereen 
+geïnteresseerd is in wijn en om niet-geïnteresseerden niet lastig te vallen 
+wil je mail alleen versturen naar mensen met "wijn" in hun interesses. 
+Interesses van mensen kunnen veranderen, dus het is handiger om pas bij 
+het versturen van de mail te kijken wie er geïnteresseerd zijn. Hier 
+gebruik je de uitvoeringsconditie, zodat je op het moment dat de mail 
+ingeroosterd staat deze alleen verstuurd naar mensen met de interesse "wijn". 
+Als je hier de activeringsconditie zou gebruiken zou je bijvoorbeeld mensen 
+kunnen missen die "wijn" toegevoegd hebben in de tussentijd, of mensen 
+kunnen emailen die op dat moment aangegeven geen interesse meer te hebben 
+in wijn.
 
-B. Uitvoeringsconditie
-----------------------
+## Meer informatie
 
-Conditie op het uitvoeren van de opvolgactie
-
-De conditie wordt geëvalueerd wanneer de opvolgactie moet worden
-uitgevoerd. De opvolgactie wordt dus alleen daadwerkelijk uitgevoerd als
-het profiel of subprofiel op dat moment aan de gestelde eisen voldoet.
-
-Voorbeeld: je hebt een opvolgactie gekoppeld aan een mailing, waardoor
-een maand later automatisch een vervolgmail wordt gestuurd aan deze
-persoon. Echter, in deze maand heeft de persoon te kennen gegeven geen
-e-mails meer te willen ontvangen van jou.
-
-Met behulp van een uitvoeringsconditie kan je voorkomen dat de
-opvolgactie wordt uitgevoerd voor deze persoon. Bijvoorbeeld door te
-controleren of het veld *Nieuwbrief* nog steeds op 'ja' staat in het
-profiel.
+* [Follow-up Manager Publisher](./follow-up-manager-publisher)
+* [Follow-up Manager Marketing Suite](./follow-up-manager-ms)
+* [Opvolgactie scripting](./followups-scripting)
+* [Opvolgactie types](./followups-types)
