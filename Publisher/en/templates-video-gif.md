@@ -1,4 +1,4 @@
-# Using video and GIFs in emails
+# Video and GIFs in emails
 
 Video is very useful in marketing: It's fun, it's engaging and can be 
 used to convey powerful messages. Unfortunately many email clients do 
@@ -45,4 +45,8 @@ the link allows the user to explore your company further.
 
 ## More information
 
+Now would be a good time to finish your template or add some follow-ups. 
+More information can be found in the articles below.
+
 * [Templates](./templates)
+* [Followups](./followups)

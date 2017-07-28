@@ -8,3 +8,13 @@ in the Marketing Suite as well as the Publisher:
 
 * [Personalizing with the Marketing Suite](personalizing-your-newsletter-with-the-marketing-suite.md)
 * [Personalizing with the Publisher](personalizing-your-newsletter-with-the-publisher.md)
+
+## More information
+
+Besides personalization there are many more fun things you can do with 
+your templates. You can add videos or GIF's to make your email more 
+interesting or add follow-ups to automate your campaigns. Find out more 
+in the articles below.
+
+* [Videos and GIFs](./templates-video-gif)
+* [Follow-ups](./followups)

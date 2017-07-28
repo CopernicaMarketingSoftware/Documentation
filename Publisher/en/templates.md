@@ -47,6 +47,11 @@ that looks beautiful in every email client.
 
 ## More information
 
+With Copernica you can make beautiful campaigns, simple or complicated. 
+Think about things like personalization, followups for automating your 
+campaign and videos and GIF's. For instructions, tips and ideas you can 
+consult the articles below.
+
 * [Personalization](./personalization)
 * [Scripting and follow-ups](./followups)
 * [Videos and GIFs](./templates-video-gif)
