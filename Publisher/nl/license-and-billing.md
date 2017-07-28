@@ -1,61 +1,74 @@
 # Licentie en facturering informatie
 
 Dit artikel beschrijft hoe je een licentie voor Copernica kunt krijgen en 
-hoe de prijsstructuur en facturering werkt. 
+hoe de prijsstructuur en facturering werkt.
 
 ## Licentie
 
 Je hebt een licentie nodig voor je Copernica software kan gebruiken. Je kunt deze 
 aanmaken door in te loggen in de [Marketing Suite](https://ms.copernica.com/#/menu/login) 
 met de inloggegevens van je Copernica account. Als je deze nog niet hebt 
-kun je deze [hier](https://www.copernica.com/en/copernica-trial) aanmaken.
+kun je deze [hier](https://www.copernica.com/nl/copernica-trial) aanmaken.
 
 ## Prijsstructuur
 
-### Basis en email
+### Basiskosten en accounts
 
-Je betaald een kleine hoeveelheid per maand om Copernica software te 
-gebruiken, waar een bepaalde hoeveelheid emails bij inbegrepen zit. Daarnaast 
-betaal je apart als je extra gebruikers aan wil maken. Je kunt ervoor kiezen 
-om vooraf of achteraf te betalen. Als je vooraf betaalt moet je altijd genoeg 
-krediet hebben voor het aantal mails dat je wil versturen. Als je genoeg hebt 
-voor 100.000 emails maar er 100.001 wil versturen moet je dus eerst je 
-balans verhogen. Als je aan het einde van de maand nog krediet hebt 
-wordt dit overgezet. 
+Bij Copernica betaal je een kleine hoeveelheid voor het gebruik van de 
+software, waarbij een hoeveelheid emails inbegrepen is. Voor het gebruiken 
+van meerdere accounts hanteert Copernica een meerprijs, maar bedrijven 
+die hun eigen email versturen maken hier over het algemeen weinig gebruik 
+van. 
 
-De kosten voor een mail zijn variabel. Hoe meer je verstuurt 
-per maand, hoe meer korting je krijgt op toekomstige emails in dezelfde maand. 
-Het is ook mogelijk om emailbundels te kopen als je van tevoren weet hoeveel 
-berichten je gaat versturen. Als je kiest voor een emailbundel wordt je 
-overgebleven krediet niet overgezet naar de volgende maand.
+Copernica biedt wel de mogelijkheid om de software en licentie voor meerdere 
+collega's beschikbaar te maken. Echter, hiervoor is wel een persoonsgebonden
+login voor nodig. Het kan ook handig zijn om extra gebruikers af te nemen, zodat
+werknemers toegang kunnen krijgen tot verschillende afdelingen, vestigingen of
+ondernemingen. Alle prijzen omtrent gebruikers en accounts kun je 
+[hier](www.copernica.com/nl/pricing) bekijken.
+
+### Email
+
+Er zijn drie betaalopties voor email: Met krediet, aan het einde van de 
+maand of met een abonnement.
+
+Betalen met krediet of aan het einde van de maand is handiger als je 
+niet zeker weet hoeveel email je zal versturen. Zo betaal je niet voor 
+meer emails dan je nodig hebt. Als je betaalt met krediet moet je wel 
+altijd genoeg hebben voor het aantal emails. Je kan niet 10.001 emails 
+versturen als je maar krediet hebt voor 10.000 emails. Krediet wordt 
+daarnaast overgeheveld naar de volgende maand. De kosten voor 
+emails zijn variabel en zijn beschikbaar op de [prijzen pagina](www.copernica.com/nl/pricing).
+
+Een abonnement is erg geschikt voor mensen die al weten hoeveel email ze 
+zullen versturen per maand. Het abonnement loopt een jaar, maar kan in de 
+tussentijd geüpgradet worden naar een bundel met meer emails. Overgebleven 
+emails worden niet overgezet naar de volgende maand, maar een abonnement 
+maakt emailen wel voordeliger!
 
 ### API calls
 
-API calls werken vergelijkbaar met emails. De eerste bepaalde hoeveelheid 
-is gratis, waarna de kosten variabel zijn. Daarnaast zijn er ook bundels 
-te koop voor API calls. Overgebleven balans van vooraf betalen wordt 
-overgezet, resterende calls uit een bundel niet.
+API calls worden op dezelfde manier in rekening gebracht als het model voor
+het versturen van e-mails. Je kunt dus gebruik maken van variabele prijsopbouw
+alsook het gebruik van bundels.
 
-### Overige variabele kosten
+### Andere variabele kosten
 
-Het is naast email ook mogelijk om SMS en fax te versturen met Copernica. 
-Je betaalt hier een vaste prijs per bericht voor. Met Publisher is het 
-nog mogelijk om verschillende webpagina's en enquêtes te plaatsen, waar de 
-prijs variabel voor is. Tenslotte kun je [Litmus](./litmus) gebruiken om 
-je email te bekijken in verschillende omgevingen als je met Publisher werkt. 
-De kosten hiervoor worden doorberekend.
-
-### Huidige prijzen 
-
-Voor het huidige overzicht van de prijzen kun je deze bekijken op onze 
-[prijzenpagina](https://www.copernica.com/nl/pricing).
+Naast email kun je ook mailings versturen met SMS en fax. De prijs per 
+fax of SMS staat vast en er zijn momenteel geen bundels beschikbaar.
+Daarnaast kun je in Publisher websites en enquêtes hosten, waarvoor de 
+kosten ook variabel zijn. Er zijn ook dedicated IP adressen beschikbaar, 
+waar de prijs wordt berekend aan de hand van de hoeveelheid per maand. 
+Daarnaast zijn er [Litmus](./litmus) previews beschikbaar om je emails 
+te previewen in verschillende omgevingen. Je betaalt per preview.
 
 ## Facturering
 
-Alle facturering is geautomatiseerd, waardoor je aan het eind van elke 
-maand een factuur ontvangt met al je kosten voor de afgelopen maand.
+Als je kiest voor betalen aan het einde van de maand of een abonnement 
+wordt er automatisch een factuur opgesteld, waar je alle kosten voor de 
+afgelopen maand terug kan vinden.
 
 ## Meer informatie
 
-- [Prijzen](https://www.copernica.com/nl/pricing)
+- [Tarieven](https://www.copernica.com/nl/pricing)
 - [Litmus previews](./litmus)

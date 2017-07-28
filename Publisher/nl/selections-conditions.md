@@ -47,7 +47,7 @@ Alle profielen met hetzelfde campagneresultaat komen dan in een selectie.
 ### Contactgeschiedenis
 Stelt een selectie samen aan de hand van de contactgeschiedenis.
 De contactgeschiedenis kun je bijvoorbeeld gebruiken om een 
-periode te selecteren waarbinnen geen contact is geweest. 
+periode te selecteren waarbinnen geen ontact is geweest. 
 Alle profielen met deze conditie komen dan in de selectie.
 
 
@@ -70,8 +70,15 @@ Het is mogelijk om profielen te selecteren die zijn geëxporteerd
 gedurende een bepaalde periode.
 
 
-### Meer informatie
+## Meer informatie
 
-* [Selecties en miniselecites](selections-introduction)
+* [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
 * [Optimaliseren van selecties](selections-optimalization)
+
+### Selectie tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Dubbele opt-in aanmaken](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selections Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
