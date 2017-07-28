@@ -4,10 +4,9 @@ Een schone en actuele database is de basis van een goede
 marketingcampagne. Het is belangrijk om te weten wie je wil benaderen en
 hoe. Bij het opmaken en personaliseren van bijvoorbeeld e-mailcampagnes
 wil je zeker zijn dat de gegevens die je gebruikt kloppen. Mede om je
-[deliverability](./deliverability "Deliverability")
+[deliverability](./sender-reputation "Sender reputation en deliverability")
 en [e-mailreputatie](./sender-reputation "E-mailreputatie")
 hoog te houden.
-
 
 ## Onderhoud
 

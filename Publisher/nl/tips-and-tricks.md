@@ -7,13 +7,13 @@ te verbeteren en meer bekend te maken met de software. Sommige van deze
 artikelen zullen gebaseerd zijn op achtergrondkennis, terwijl andere dieper 
 ingaan op de software.
 
-* [Sender reputation](./sender-reputation)
-* [Deliverability](./deliverability)
+## Reputatie en onderhoud
+
+* [Afzenderreputatie en deliverability](./sender-reputation)
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
 * [Selecties optimalizeren en sneller maken](./selections-optimization)
 * [Database schoonhouden](./database-maintenance)
-
 
 ## Selectie tutorials
 

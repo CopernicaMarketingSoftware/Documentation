@@ -55,5 +55,5 @@ check for spelling errors.
 
 ## More information
 
-* [Deliverability](./deliverability)
+* [Sender reputation and deliverability](./sender-reputation)
 * [Templates](./templates)

@@ -20,7 +20,6 @@ versturen. Dit zal namelijk effect hebben op de betrouwbaarheid van je
 zender domein. Als je score hoger is dan 5 mag het bericht niet verstuurd 
 worden met Copernica marketing software.
 
-
 ## Snelle tips voor een betere score
 
 **Maak een tekstversie**
@@ -86,7 +85,6 @@ door een beschrijving van de link, zoals hier:
     dit natuurlijk wel. Meer informatie hierover vindt je in het [artikel over personalizatie](./personalization)
 -   Verwijder de HTML code die je niet gebruikt.
 
-
 **Afbeeldingen**
 
 -   Gebruik korte namen voor je afbeeldingen. 1.jpg is beter dan header.jpg.
@@ -94,7 +92,6 @@ door een beschrijving van de link, zoals hier:
     afbeeldingen normaal is. Te veel afbeeldingen kunnen erop duiden dat je 
     iets probeert te verbergen, waardoor je spam score omhoog gaat.
 
-
 ## Meer informatie
 
-* [Verbeter deliverability](./deliverability)
+* [Afzenderreputatie en deliverability](./sender-reputation)
