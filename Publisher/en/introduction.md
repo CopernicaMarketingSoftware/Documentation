@@ -20,12 +20,24 @@ the toggle in the Marketing Suite, which allows you to switch to the
 Publisher environment. If you're still transitioning to Marketing Suite 
 from Publisher this will make it easier for you.
 
-## More information
+## Set up
 
 Eager to get started? The articles below provide instructions to make 
-a quick start.
+a quick start. After following the instruction you will be all set 
+to send email with Copernica. 
 
-* [Quick start](./quick-start-guide.md)
-* [Configure a sender domain](./quick-sender-domain-guide)
-* [Configure your database](./quick-database-guide)
-* [Send your first mailing](./quick-mailing-guide)
+1. [Quick start](./quick-start-guide.md)
+2. [Configure a sender domain](./quick-sender-domain-guide)
+3. [Configure your database](./quick-database-guide)
+4. [Send your first mailing](./quick-mailing-guide)
+
+## More information
+
+Did you send your first email? If you already completed the steps above 
+you're ready to get advanced! Want to customize emails for your customers? 
+Want to automate your campaigns? You can find all the information you 
+need in the links below.
+
+* [Personalization](./personalization)
+* [Followups](./followups)
+* [Sender reputation and deliverability](./sender-reputation)

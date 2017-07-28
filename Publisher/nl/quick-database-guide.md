@@ -48,6 +48,10 @@ als de standaardbestemming.
 
 ## Meer informatie
 
+Wil je meer weten over het beheren van databases en het maken van effectieve 
+selecties? Of over je afzenderreputatie en hoe deze je deliverability 
+beïnvloedt? Zie de onderstaande links.
+
 * [Database management](./database-introduction)
 * [Selecties en miniselecties](./selections-introduction)
-* [E-mail aflevering verbeteren](./deliverability)
+* [Afzenderreputatie en deliverability](./sender-reputation)

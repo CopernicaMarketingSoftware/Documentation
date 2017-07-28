@@ -12,7 +12,6 @@ purchase history and abandoned shopping carts. However, in the
 beginning it's wise to just keep things simple. You can always
 add fields later on. 
 
-
 ## Fields, interests and collections
 
 A field in a database can encompass an interest or collection.
@@ -23,7 +22,6 @@ multiple items like: "first name", "last name" en "email address".
 Concluding, collections are structure-wise more or less 
 identical to databases. 
 
-
 ## Database intentions
 
 There are various things to set up when designing databases. 
@@ -32,7 +30,6 @@ a database is suitable for sending mailings. You can also set
 a variety of rules to which data must comply in order to be 
 added to the databases. You can do this with database 
 *intentions*. 
-
 
 ## Creating profiles
 
@@ -45,9 +42,13 @@ You can test your emails constantly by sending an email to a
 *pre-determined test destination*. This is a profile from the
 database that is marked as the profile for test emails.
 This email address is most likely your own.
- 
 
 ## More information
 
+Want to know more about how to maintain your database and make effective 
+selections? Or about your reputation and how it affects the deliverability 
+of your emails? See the links below!
+
 * [Database management](./database-introduction)
 * [Selections and miniselections](./selections-introduction)
+* [Sender reputation and deliverability](./sender-reputation)
