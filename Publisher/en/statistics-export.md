@@ -35,5 +35,10 @@ page. If you click **Mailing** again the menu will now offer the option
 
 ## More information
 
+The REST API is another good way to export your results. You can write 
+your own script to periodically request and store your statistics, for 
+example. Find out more in the articles below.
+
 * [Statistics](./statistics)
+* [API's](./apis)
 * [Export with REST API](./rest-get-logfiles-names)

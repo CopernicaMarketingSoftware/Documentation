@@ -24,5 +24,10 @@ processing, navigate to the **Scheduled tab**.
 
 ## More information
 
+There are many more statistics you can check out. You can also receive 
+notifications or sync with your own systems in real-time with feedback loops. 
+Find out more in the articles below!
+
 * [Statistics](./statistics)
 * [Key figures](./statistics-key-figures)
+* [Feedback loops](./feedback-loops)
