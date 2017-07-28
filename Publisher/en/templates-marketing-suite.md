@@ -44,7 +44,7 @@ This means that no matter which device, your email always looks as intended.
 It's also possible to check your spam score so you are sure the email will 
 reach your recipients. You can check it by clicking `Tools` and navigating 
 to `Spam check`. Several things determine your spam score, which influences 
-your [deliverability](./deliverability). Tips on how to lower your spam 
+your [deliverability](./sender-reputation). Tips on how to lower your spam 
 score can be found [here](./some-tips-to-lower-your-email-spam-score). If your 
 spam score is above 5 we will not send your email to protect our and our customers 
 reputation.

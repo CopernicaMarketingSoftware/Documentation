@@ -92,4 +92,3 @@ marked as spam by the user.
 * [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
 * [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
 * [Lower your spam score](./some-tips-to-lower-your-email-spam-score)
-* [Improve your deliverability](./deliverability)

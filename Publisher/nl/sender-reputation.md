@@ -6,7 +6,6 @@ e-mails. Het opstellen van een reputatie wordt voornamelijk bepaald aan
 de hand van *engagement* (opens, clicks etc.) en reputatie (spam complaints, 
 unknown users, spam traps etc.).
 
-
 ## Factoren beïnvloeden
 
 Er zijn een aantal vooraf te treffen maatregelen waardoor je e-mails een 
@@ -30,7 +29,6 @@ of verkeerd gespeld e-mailadress zorgt ervoor dat een e-mail niet
 wordt afgeleverd. [Automatisch bounces afhandelen](./automatically-process-bounces) 
 zorgt ervoor dat je database en reputatie op het juiste niveau blijven.
 
-
 ## E-mailinhoud
 
 Elke e-mail ontvangt een spamscore, die je makkelijk zelf kunt beïnvloeden 
@@ -42,9 +40,8 @@ Zorg er ook voor dat je e-mail relevant is. Door [personalisatie](./personalizat
 te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. E-mails die voor de
 lezers interessant zijn worden logischerwijs niet als spam aangemerkt. 
 
-
 ## Meer informatie
 
 * [Uitschrijfgedrag](database-unsubscribe-behavior) 
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
-* [Deliverability](./deliverability)
+* [Afzenderreputatie en deliverability](./sender-reputation)

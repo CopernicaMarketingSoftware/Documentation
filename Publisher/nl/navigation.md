@@ -36,7 +36,6 @@
     * [Accounts en gebruikers](accounts-and-users.md)
     * [Licentie en facturering](./license-and-billing)
     * [Sender reputation](./sender-reputation)
-    * [E-mail aflevering verbeteren](./deliverability)
     * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
     * [Verminder HTML fouten](./reducing-html-errors)
 * [Publisher exclusief](./publisher-only)

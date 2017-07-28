@@ -3,7 +3,7 @@
 In Publisher worden alle templates geschreven in HTML en soms ontstaan
 er zo errors. Als je veel HTML errors hebt kan dit een negatief effect hebben
 op de deliverability van je mail. Zie voor meer tips over deliverability
-[dit artikel](./deliverability). In dit artikel geven we tips om HTML
+[dit artikel](./sender-reputation). In dit artikel geven we tips om HTML
 errors op te lossen.
 
 Je kunt in je template/document de HTML errors bekijken door op de *Waarschuwingen*

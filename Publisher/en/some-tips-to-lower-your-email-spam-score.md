@@ -92,4 +92,4 @@ obfuscation**
 
 ## More information
 
-* [Improve your deliverability](./deliverability)
+* [Sender reputation and deliverability](./sender-reputation)
