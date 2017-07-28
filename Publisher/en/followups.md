@@ -51,8 +51,13 @@ of the condition) or execution (of the followup). Read more about conditions
 
 ## More information
 
+There are many ways to create followups, so make sure you find out what 
+works for you. There are different types of actions and triggers. You can 
+also add a condition to indicate when to evaluate data. The articles 
+below will teach you everything you need to know.
+
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
 * [Follow-up scripting](./followups-scripting.md)
-* [Followup types](./followups-types)
+* [Follow-up types](./followups-types)
 * [Follow-up conditions](./conditions-for-follow-ups)
