@@ -16,13 +16,22 @@ de centrale plek is vanwaar je kunt navigeren naar alle Copernica accounts en ap
 Je kunt als gebruiker makkelijk schakelen tussen de Marketing Suite en de Publisher, zodat 
 je de transitie rustig in gang kunt zetten (mocht je nog van de oude Publisher gebruik maken).
 
+## Beginnen!
+
+Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies 
+om snel van start te gaan.
+
+1. [Snel aan de slag](./quick-start-guide)
+2. [Sender domains instellen](./quick-sender-domain-guide)
+3. [Database inrichten](./quick-database-guide)
+4. [Je eerste mailing versturen](./quick-mailing-guide)
 
 ## Meer informatie
 
-Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies 
-en informatie om snel van start te gaan.
+Alles gelukt? Dan hebben we hier nog een aantal artikelen om je 
+emails nog geavanceerder te maken. Wil je leren personalizeren en 
+automatiseren? Je kunt alle informatie vinden in onze artikels.
 
-* [Snel aan de slag](./quick-start-guide)
-* [Sender domains instellen](./quick-sender-domain-guide)
-* [Database inrichten](./quick-database-guide)
-* [Je eerste mailing versturen](./quick-mailing-guide)
+* [Personalizatie](./personalization)
+* [Followups](./followups)
+* [Afzenderreputatie en deliverability](./sender-reputation)
