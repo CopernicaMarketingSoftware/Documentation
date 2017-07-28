@@ -15,20 +15,17 @@ van de client, klachten op ons *abuseadres*, mensen die de e-mail als spam marke
 en nog veel meer. Copernica vangt al deze uitschrijvingen op en verwerkt 
 deze volgens je gewenste uitschrijfgedrag.
 
-
 ## Marketing Suite instellen
 
 In Marketing Suite navigeer je eerst naar je database. In de balk bovenin 
 zie je een tandwiel. Je kunt hier instellen wat je met afmeldtriggers doet, 
 bijvoorbeeld het profiel aanpassen of volledig verwijderen.
 
-
 ## Publisher instellen
 
 In de Publisher ga je naar het `Profiles` menu en selecteer je de database
 naar keuze. Onder `Database management` kun je de uitschrijf opties vinden 
 en naar wens instellen.
-
 
 ## Meer informatie
 
