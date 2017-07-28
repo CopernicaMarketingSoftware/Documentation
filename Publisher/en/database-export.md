@@ -43,10 +43,8 @@ from this selection.
 
 ### Exports in Marketing Suite
 
-Currently it's not possible to export a database using the Marketing Suite. 
-You can set up a [feedback loop](./feedback-loops) to synchronize important 
-information with your own database or send email notifications. We recommend 
-adding new information in your own system and scheduling imports.
+You can export your database from the Marketing Suite in the database 
+management menu.
 
 ## More information
 
