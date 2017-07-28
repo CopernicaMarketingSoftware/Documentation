@@ -105,5 +105,11 @@ a backup of your database, but you might be charged extra for that.
 
 ## More information
 
+Your database should be safely in the system now. Now it might be the 
+time to add some restrictions to protect it, or to add some more fields. 
+Find out more in the articles below.
+
 * [Database management](./database-introduction)
 * [Exporting a database](./database-export)
+* [Fields and collections](./database-fields-and-collections)
+* [Restrictions and capabilities](./database-restrictions-and-capabilities)

@@ -6,6 +6,9 @@ in one go, or to export only parts of the database, for example one collection
 at a time. An export creates a file that you can download or you can have it
 emailed to your address.
 
+If you want to receive information about clicks, opens, etc. as they happen 
+you can also set up a [feedback loop](./feedback-loops). 
+
 ## Extra remarks
 
 * The fields *ID*, *Access code* and *Profile created* are system fields;
@@ -40,9 +43,16 @@ from this selection.
 
 ### Exports in Marketing Suite
 
-Currently it's not possible to export a database using the Marketing Suite.
+Currently it's not possible to export a database using the Marketing Suite. 
+You can set up a [feedback loop](./feedback-loops) to synchronize important 
+information with your own database or send email notifications. We recommend 
+adding new information in your own system and scheduling imports.
 
 ## More information
+
+We always recommend checking if your database is up-to-date before exporting 
+data. You can then easily sync it to your own system or use it for your 
+own statistics.
 
 * [Database management](./database-introduction)
 * [Importing a database](./database-import)

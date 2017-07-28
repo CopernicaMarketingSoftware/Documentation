@@ -22,20 +22,17 @@ for good measure we'll describe the different aspects of databases below anyway.
 | Multiple choice field | Can be used to provide multiple options.					                                    |
 | Country code field   	| Accepts country codes by ISO 3166 standards.					                                |
 
-
 ## Extra options for fields
 
 While editing fields it is possible to select various extra options, 
 such as sorting a field by default or hiding it. Below you'll find 
 all options.
 
-
 ### Editing hidden fields
 
 Hidden fields cannot be seen in the profile editing interface. Use this 
 option for fields you don't want to see or edit in the interface. It is 
 still possible to import and export the data in these fields.
-
 
 ### Showing a field on overview pages
 
@@ -44,12 +41,10 @@ this option activated are shown. Often times, a database has many more
 fields than the ones shown in such a list of profiles. By using this 
 option you can display the profiles more clearly.
 
-
 ### Sorted fields
 
 This option allows you to sort your list based on a field. It can only 
 be activated for one field at a time.
-
 
 ### Indexed fields
 
@@ -58,7 +53,10 @@ in selections, making them faster. You may index up to 64 fields, but
 using few fields will give you the fastest results. Large fields can not 
 be indexed.
 
-
 ## More information
 
-* [Database management](./database-introduction)
+Having a clean well-maintained database is the key to successful campaigns. 
+The articles below give you some tips on building and maintaining your database.
+
+* [Databases](./database-introduction)
+* [Database maintenance](./database-maintenance)

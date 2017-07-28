@@ -32,15 +32,11 @@ Restrictions apply only to new additions and edits to the database. Existing
 profiles will keep their existing values, but will have to satisfy your 
 restrictions on their next edit.
 
-Selections rules can also be chained together with "AND" and "OR" operators. 
-If you make a restriction with multiple "AND" rules a profile must match all the rules to
-be allowed in the database. If you use the operator "OR" to combine rules a 
-profile only has to match a single rule. 
-
 ## Regular expressions
 
 Regular expressions (often abbreviated to *regex*) are very powerful patterns to
-validate texts. Regular expressions can do things like "check whether the value
+validate texts. You can use them to add restrictions for data entering 
+your database. Regular expressions can do things like "check whether the value
 begins with a capital", "the telephone number must contain exact 10 digits" or
 "the sentence must have two comma's and a single capital Q". You can make 
 these as complicated as you want.
@@ -54,6 +50,9 @@ Regex is fairly standard and a lot more information can be found on the
 internet about it.
 
 ## More information
+
+To add restrictions you need a database with some fields. If you don't 
+have those yet you can find out how to create them in the articles below.
 
 * [Database management](./database-introduction)
 * [Database fields and collections](./database-fields-and-collections)
