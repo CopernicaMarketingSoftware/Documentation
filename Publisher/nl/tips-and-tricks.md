@@ -1,4 +1,4 @@
-# Tips en tricks
+# Tips, tricks en achtergrond
 
 De Copernica software heeft vele functionaliteiten die gebaseerd zijn op 
 vele technieken en kennis over het verzenden van email. We hebben daarom 

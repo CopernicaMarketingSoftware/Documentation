@@ -30,7 +30,8 @@ which prevents fields being stored twice to help you keep your database clean.
 
 Restrictions apply only to new additions and edits to the database. Existing 
 profiles will keep their existing values, but will have to satisfy your 
-restrictions on their next edit.
+restrictions on their next edit. You can also choose to remove the 
+existing data with the "Edit multiple profiles" function.
 
 ## Regular expressions
 

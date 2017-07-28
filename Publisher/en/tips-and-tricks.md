@@ -1,4 +1,4 @@
-# Tips and tricks
+# Tips, tricks and background
 
 The Copernica software has a lot of functionalities that are based on a 
 lot of techniques and background information. This is why we have compiled 
