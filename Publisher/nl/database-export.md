@@ -7,11 +7,16 @@ gegenereert, dat je kunt downloaden of laten e-mailen.
 
 ## Extra opmerkingen 
 
-* De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden waarvan de waarde door het systeem is toegekend.
-* Je kunt maximaal 1 collectie in een CSV bestand opnemen. Als je meerdere collecties tegelijk wilt exporteren, kies dan XML als bestandstype.
-* UTF-8 is in de meeste gevallen de beste encoding voor outputbestanden en wordt aangeraden
-* Datumvelden worden geëxporteerd in het formaat dat je zelf opgeeft, zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
-* Om bestanden klein te houden kun je compressie inschakelen. Dit is zeker handig als je de exports per mail wilt versturen.
+* De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden 
+waarvan de waarde door het systeem is toegekend.
+* Je kunt maximaal 1 collectie in een CSV bestand opnemen. Als je meerdere 
+collecties tegelijk wilt exporteren, kies dan XML als bestandstype.
+* UTF-8 is in de meeste gevallen de beste encoding voor outputbestanden 
+en wordt aangeraden
+* Datumvelden worden geëxporteerd in het formaat dat je zelf opgeeft, 
+zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
+* Om bestanden klein te houden kun je compressie inschakelen. 
+Dit is zeker handig als je de exports per mail wilt versturen.
 
 ## Scheidingsteken instellen
 
