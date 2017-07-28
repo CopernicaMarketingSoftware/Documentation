@@ -50,3 +50,9 @@ De HTML doctype mist in de template. Deze waarschuwing kun je negeren.
 **Warning: <html element\> proprietary attribute "*attribute name*"**
 Het HTML element heeft een attribuut meegekregen dat niet ondersteund wordt.
 Check je spelling of verwijder het attribuut.
+
+## Meer informatie
+
+* [Afzenderreputatie en deliverability](./sender-reputation)
+* [Email spamscore](./some-tips-to-lower-your-email-spam-score)
+* [Templates](./templates)
