@@ -14,9 +14,12 @@ you can also automate your mailing with a little help from the
 [Follow-up Manager](follow-up-manager). This tool is extremely
 powerful and is there to help you create automated campagins.
 
-
 ## More information
 
+Did you send your first email? Feel brave enough to get advanced? The 
+articles below will help you set up expert campaigns in no time!
+
+* [Glossary](./definitions)
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
 * [Personalization](./personalization)

@@ -23,7 +23,7 @@ from Publisher this will make it easier for you.
 ## Set up
 
 Eager to get started? The articles below provide instructions to make 
-a quick start. After following the instruction you will be all set 
+a quick start. After following the instructions you will be all set 
 to send email with Copernica. 
 
 1. [Quick start](./quick-start-guide.md)
@@ -38,6 +38,7 @@ you're ready to get advanced! Want to customize emails for your customers?
 Want to automate your campaigns? You can find all the information you 
 need in the links below.
 
+* [Glossary](./definitions)
 * [Personalization](./personalization)
 * [Followups](./followups)
 * [Sender reputation and deliverability](./sender-reputation)

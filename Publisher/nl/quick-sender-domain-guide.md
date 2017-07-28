@@ -36,6 +36,7 @@ nodig om die mailing naartoe te sturen.
 
 ## Meer informatie
 
+* [Begrippenlijst](./definitions)
 * [Sender domains achtergrond](./sender-domains)
 * [Database configureren](./quick-database-guide)
 * [DKIM](./dkim)

@@ -49,6 +49,7 @@ Want to know more about how to maintain your database and make effective
 selections? Or about your reputation and how it affects the deliverability 
 of your emails? See the links below!
 
+* [Glossary](./definitions)
 * [Database management](./database-introduction)
 * [Selections and miniselections](./selections-introduction)
 * [Sender reputation and deliverability](./sender-reputation)

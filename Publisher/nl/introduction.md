@@ -32,6 +32,7 @@ Alles gelukt? Dan hebben we hier nog een aantal artikelen om je
 emails nog geavanceerder te maken. Wil je leren personalizeren en 
 automatiseren? Je kunt alle informatie vinden in onze artikels.
 
+* [Begrippenlijst](./definitions)
 * [Personalizatie](./personalization)
 * [Followups](./followups)
 * [Afzenderreputatie en deliverability](./sender-reputation)
