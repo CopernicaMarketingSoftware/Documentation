@@ -9,15 +9,54 @@ ingaan op de software.
 
 ## Reputatie en onderhoud
 
+Je reputatie bij email clienten is heel belangrijk. Als deze niet in orde 
+is kan het zijn dat je emails niet bij je klanten aankomen. Een schone 
+database, lage spamscore en nette HTML dragen allemaal bij aan een goede 
+reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
+
 * [Afzenderreputatie en deliverability](./sender-reputation)
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
-* [Selecties optimalizeren en sneller maken](./selections-optimization)
+
+## Databases en selecties tips
+
+Voor zowel je reputatie als je eigen gemak is het belangrijk dat je 
+database schoon en volledig is. Met effectieve selecties kun je gemakkelijk 
+je doelgroep bereiken. Hier helpen we graag mee, dus in de onderstaande 
+artikelen geven we je tips. Verder in dit artikel vindt je ook tutorials 
+voor enkele selecties.
+
 * [Database schoonhouden](./database-maintenance)
+* [Voorkom database corruptie](./prevent-database-corruption)
+* [Selecties optimalizeren en sneller maken](./selections-optimization)
+
+## Sender domains
+
+Sender domains zorgen ervoor dat Copernica in jouw naam mag mailen. Er zijn 
+namelijk vele technieken om misbruik van jouw naam te voorkomen. Daarnaast 
+zorgen de sender domains dat Copernica alles up-to-date houdt, zodat 
+je dat zelf niet hoeft te doen.
+
+* [Sender domains globaal](./sender-domains)
+* [DKIM](./dkim)
+* [DMARC](./dmarc)
+* [DNS](./dns)
+* [MX](./mx)
+* [SPF](./spf)
 
 ## Selectie tutorials
 
+Met selecties kun je makkelijk je email afleveren bij de juiste doelgroep. 
+Hieronder vindt je tutorials voor veelvoorkomende selecties en toepassingen.
+
 * [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
 * [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
-* [Selecties Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
+* [Selecties Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+
+### Andere
+
+Hier vindt je nog meer uitleg en tips over verschillende onderwerpen.
+
+* [HTTP en HTTPS](./http-https)
+* [Headers](./headers)
