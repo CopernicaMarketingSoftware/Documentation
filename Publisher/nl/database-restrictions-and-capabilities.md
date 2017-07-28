@@ -32,7 +32,6 @@ kunnen alleen profielen worden opgeslagen die aan alle regels voldoen.
 Bij een "OR" regel hoeft het profiel, maar aan één van de voorwaarden te 
 voldoen om toegelaten te worden.
 
-
 ## Reguliere expressies
 
 Reguliere expressies (vaak afgekort naar *regex*) is een krachtig methode 
@@ -43,3 +42,13 @@ die bestaan uit 4 getallen, gevolgd door twee letters (0000AA).
 ```javascript
 var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
 ```
+
+## Meer informatie
+
+Om restricties toe te voegen heb je een database en een aantal velden nodig. 
+Als je deze nog niet hebt aangemaakt kun je in onderstaande artikelen lezen 
+hoe je dit doet.
+
+* [Database management](./database-introduction)
+* [Database velden en collecties](./database-fields-and-collections)
+* [Database uitschrijfgedrag](./database-unsubscribe-behavior)

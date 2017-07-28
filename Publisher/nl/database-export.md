@@ -40,7 +40,8 @@ vinden om te exporteren of importeren.
 
 ## Exporteren met Marketing Suite
 
-Het is (nog) niet mogelijk een database te exporteren met Marketing Suite.
+In de Marketing Suite kun je een database exporteren in het database 
+management menu.
 
 ## Meer informatie 
 
