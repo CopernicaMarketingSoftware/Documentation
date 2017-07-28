@@ -4,6 +4,8 @@ The sort/select condition can be used to select profiles from a
 sorted version of your database. You can choose one or multiple fields, 
 choose an offset and set the amount of profiles to include.
 
+You can find the article about all other conditions [here](./selections-conditions).
+
 ## Variables
 
 ### Ordered fields
@@ -81,6 +83,8 @@ same thing by setting the "Score" to ascending and the offset to 0. As
 you can see, there are sometimes multiple ways to build your selections.
 
 ## More information
+
+Read more about other conditions and rules for selections below.
 
 * [Selections](selections-introduction)
 * [Selection conditions and rules](selections-conditions)

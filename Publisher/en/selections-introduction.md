@@ -63,6 +63,10 @@ we've created a separate article explaining it all. You'll find it
 
 ## More information
 
+Eager to get started? In the articles below you can read more about how 
+rules and conditions for selections work. We also have tutorials for the 
+most common uses of selections.
+
 * [Database management](./database-introduction)
 * [Selection management](./selections-settings)
 * [Selection conditions](./selections-conditions)

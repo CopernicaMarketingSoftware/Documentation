@@ -1,4 +1,4 @@
-# Management options for selections
+# Selections: Settings
 
 Apart from creating and deleting, there's more you can do to manage 
 your selections. Below, you'll find an overview of management options 
@@ -17,7 +17,7 @@ When you move a selection, you automatically move any subselections
 along with the selection. This is optional when copying a selection. 
 Note that no two selections can have the same name in your database. 
 
-Copying or moving a selection can be done under *profiles* > *edit 
+Copying or moving a selection can be done under *Profiles* > *edit 
 selections*. In doing so, no profiles are lost.
 
 ### Displaying profiles in a (mini) selection
@@ -61,6 +61,8 @@ to delete or deactivate selections.
 
 ## More information
 
+Read more about building and optimizing your selections below.
+
 * [Selections and miniselections](./selections-introduction)
-* [Optimalizing selections](selections-optimization)
+* [Optimizing selections](selections-optimization)
 * [Rules and conditions](selections-conditions)
