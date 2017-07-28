@@ -45,6 +45,9 @@ for target groups and much more.
 
 ## More information
 
+We hope our tips helped you out! In the articles below we give you some 
+more tips and information about databases and selections.
+
 * [Tips and tricks](./tips-and-tricks)
 * [Database management](./database-introduction)
 * [Optimalize selections](./selections-optimization)

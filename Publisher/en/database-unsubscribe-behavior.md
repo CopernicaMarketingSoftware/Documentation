@@ -28,5 +28,11 @@ to change the behaviour of. You can then find the unsubscribe options under
 
 ## More information
 
+Now you know who your most valuable profiles are: Those who want to receive 
+your email. If you keep profile data from unsubscribes you should make a 
+newsletter selection to exclude them from your mailings. Find out more 
+in the articles below.
+
 * [Database management](./database-introduction)
+* [Selections](./selections-introduction)
 * [Selections tutorial: Making a newsletter selection](./create-a-mailing-list)

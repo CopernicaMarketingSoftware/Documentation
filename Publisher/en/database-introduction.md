@@ -11,7 +11,6 @@ like clicks, opens, bounces and errors. For this exact reason it's also
 important that you structure and update your databases correctly, 
 preventing you from creating new databases every now and then. 
 
-
 ## Multiple dimensions
 
 Inside the Copernica database management you find terms like *collection* 
@@ -19,7 +18,6 @@ and *subprofile*. In the *purchase history* example, you can create a
 collection of orders. The customer is in this case the *profile* and the 
 product is the *subprofile*. You could apply the same principle on for 
 example employees of a company or the children from parents.
-
 
 ## Things to consider
 
@@ -29,10 +27,11 @@ set up [*rules* and *restrictions*](database-restrictions-and-capabilities)
 to prevent invalid data from entering your system or sending out unintended 
 mailings.
 
-
 ## More information 
 
-The following articles will help you build and maintain a database.
+There is a lot to know about databases, which is why we have documented 
+everything you need to know thoroughly. The following articles will help 
+you build, maintain and export your databases.
 
 ### Configuration
 
