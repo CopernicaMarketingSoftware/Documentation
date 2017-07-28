@@ -5,7 +5,8 @@ vele technieken en kennis over het verzenden van email. We hebben daarom
 een lijstje samengesteld van tips en tricks om het resultaat van je mailings 
 te verbeteren en meer bekend te maken met de software. Sommige van deze 
 artikelen zullen gebaseerd zijn op achtergrondkennis, terwijl andere dieper 
-ingaan op de software.
+ingaan op de software. Als je een onbekend woord tegenkomt kun je de 
+[begrippenlijst](./definitions) raadplegen.
 
 ## Reputatie en onderhoud
 
@@ -60,3 +61,4 @@ Hier vindt je nog meer uitleg en tips over verschillende onderwerpen.
 
 * [HTTP en HTTPS](./http-https)
 * [Headers](./headers)
+* [Begrippenlijst](./definitions)

@@ -19,7 +19,6 @@ to be given to your DNS provider or your own DNS server.
 
 You can find more information in the [background-article for sender domains](./sender-domains). 
 
-
 ## Marketing Suite
 
 The newly designed Marketing Suite interface lets you 
@@ -33,16 +32,19 @@ sender domain settings have priority, even if you choose to only
 send email through the Publisher. You'll find the `SENDER DOMAIN`
 tool in the Marketing Suite menu.
 
-
 ## The next step
 
-To send your first mailing, you need [a database with profiles](./quick-database-guide) to send it to.
-
+To send your first mailing, you need [a database with profiles](./quick-database-guide) 
+to send it to. After this you'll get to send your first mail, we promise!
 
 ## More information
 
+Did you set up a sender domain? If you're curious about sender domains 
+and the technologies that protect your reputation you can also find more 
+information in the background articles.
+
+* [Glossary](./definitions)
 * [Sender domains background](./sender-domains)
-* [Setting up a database](./quick-database-guide)
 * [DKIM](./dkim)
 * [DMARC](./dmarc)
 * [SPF](./spf)

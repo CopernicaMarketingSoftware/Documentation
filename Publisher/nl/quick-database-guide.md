@@ -52,6 +52,7 @@ Wil je meer weten over het beheren van databases en het maken van effectieve
 selecties? Of over je afzenderreputatie en hoe deze je deliverability 
 beïnvloedt? Zie de onderstaande links.
 
+* [Begrippenlijst](./definitions)
 * [Database management](./database-introduction)
 * [Selecties en miniselecties](./selections-introduction)
 * [Afzenderreputatie en deliverability](./sender-reputation)

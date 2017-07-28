@@ -16,6 +16,7 @@ aan te wijzen. Je kunt ook automatisch e-mails versturen met behulp van de [Foll
 
 Voor de wat meer geavanceerdere toepassingen kun je onderstaande artikelen bekijken.
 
+* [Begrippenlijst](./definitions)
 * [Templates](./templates)
 * [Stylesheets](./stylesheets)
 * [Personalisatie](./personalization)

@@ -4,7 +4,9 @@ The Copernica software has a lot of functionalities that are based on a
 lot of techniques and background information. This is why we have compiled 
 some tips and tricks to optimize the result of your mailings and teach you 
 new things you may not know yet. Some articles are based on background, others 
-more on the software and how to use it.
+more on the software and how to use it. If you get lost at any point 
+we suggest trying the [glossary](./definitions) for a quick definition 
+of the words that are used in these articles.
 
 ### Reputation
 
@@ -62,3 +64,4 @@ Here you can find some more background and tips on miscellaneous topics.
 
 * [HTTP and HTTPS](./http-https)
 * [Headers](./headers)
+* [Glossary](./definitions)
