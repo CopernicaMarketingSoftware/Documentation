@@ -8,6 +8,7 @@ request:
 De `$id` moet je vervangen door de numerieke identifier of de naam van 
 de database waar je de collecties van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -18,6 +19,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
+
 
 ## Geretourneerde velden
 
@@ -34,6 +36,7 @@ in dit array is ook een object. Zie de documentatie van de
 [methode om velden op te vragen](./rest-get-collection-fields) voor de betekenis
 van deze geneste data.
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -47,15 +50,16 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $parameters = array(
-    'limit'     =>  100,
+    'limit'     =>  100
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("database/id/collections", $parameters));
+print_r($api->get("database/1234/collections", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+    
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

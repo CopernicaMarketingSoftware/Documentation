@@ -9,6 +9,7 @@ De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel
 kun je in de body van het bericht plaatsen.
 
+
 ## Body data
 
 Je kunt op twee manieren body data aan dit request meesturen, en de wijze waarop
@@ -23,10 +24,11 @@ de interessenamen, en de velden boolean waardes om te bepalen of de interesse
 aan of uit wordt geschakeld. Eventuele interesses die je _niet_ in het object
 opneemt, worden automatisch uitgeschakeld.
 
+
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
-In de API call worden de interessen van een profiel met ID 4567 aangepast.
+In de API call worden de interesses van een profiel met ID 4567 aangepast.
 Voor profiel 1234 worden de interesses "tennis" en "hockey" geactiveerd, en
 alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld) 
 uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'football' geactiveerd en alle andere interesses uitgeschakeld (eerste methode).
@@ -35,9 +37,6 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // interests id dat je wilt bewerken
-    $id = 1;
-
     // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
@@ -49,15 +48,22 @@ uitgeschakeld (tweede methode). Daarna wordt voor profiel 1235 de interesse 'foo
     );
     
     // voer het verzoek uit
-    $api->put("profile/{$id}/interests", $data);
+    $api->put("profile/1234/interests", $parameters, $data);
+
+    // data voor het tweede verzoek
+    $data = array('football');
+    
+    // voer het verzoek uit
+    $api->put("profile/1235/interests", $parameters, $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+    
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [POST profile interests](rest-post-profile-interests)
-* [GET profile](rest-get-profile)
-* [PUT profile](rest-put-profile)
-* [DELETE profile](rest-delete-profile)
+* [Interesses toevoegen aan een profiel](rest-post-profile-interests)
+* [Opvragen van profieldata](rest-get-profile)
+* [Alle profiel bijwerken](rest-put-profile)
+* [Profiel verwijderen](rest-delete-profile)

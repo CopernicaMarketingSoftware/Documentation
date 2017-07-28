@@ -12,7 +12,7 @@ naar andere type condities kun je deze vinden onder het kopje *Meer informatie*.
 Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * include-never-exported-profiles: een boolean value om aan te geven of 
-profielen die niet eerder zijn geëxporteerd, alsnog meengenomen moeten 
+profielen die niet eerder zijn geëxporteerd, alsnog meegenomen moeten 
 worden.
 
 ## Export per tijdsinterval

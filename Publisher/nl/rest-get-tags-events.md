@@ -13,12 +13,14 @@ scheiden door middel van puntkomma's.
 
 `https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
+
 
 ## Start en end
 
@@ -33,6 +35,7 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 1 of 2 uur later  (afhankelijk van zomer- en wintertijd) dan de Nederlandse
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
+
 
 ## Returned fields
 
@@ -56,7 +59,8 @@ A JSON with all the events for the provided tags.
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagina](./event-types.md).
+types staan beschreven op de [event types pagnina](./event-types.md).
+
 
 ## Voorbeeld
 
@@ -80,7 +84,8 @@ print_r($api->get("tags/myTag/events", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-## Meer informatie
 
-* [Overzicht van alle API calls](rest-api)
-* [GET profile](rest-get-profile)
+## More information
+
+* [List of all API calls](rest-api)
+* [Fetching all profile information](rest-get-profile)

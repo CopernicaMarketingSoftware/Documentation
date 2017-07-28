@@ -37,7 +37,7 @@ eigen smaak. Omdat de standaard sheet veel commentaar bevat is het snel
 duidelijk hoe je dit kunt doen. Een stylesheet is nooit gelinkt aan een 
 web formulier maar aan de template of webpagina waar deze binnen valt. 
 
-Lees ook het artikel over het [beheren van CSS stylesheet files](./stylesheets.md)
+Lees ook het artikel over het [beheren van CSS stylesheet files](./manage-css-stylesheet-files.md)
 
 ### Stylesheets gebruiken
 
@@ -93,11 +93,11 @@ zijn unieke identifier.
         <id>42</id>   
         <buttontext>Send</buttontext>   
         <field>     
-            <id>2b3616f2a90c96c8193b932bded51985</id>     
-            <label>Voornaam</label>     
-            <required>yes</required>      
-            <type>text</type>     
-            <value/>    
+        <id>2b3616f2a90c96c8193b932bded51985</id>     
+        <label>Voornaam</label>     
+        <required>yes</required>      
+        <type>text</type>     
+        <value/>    
         </field>  
     </webform>  
 

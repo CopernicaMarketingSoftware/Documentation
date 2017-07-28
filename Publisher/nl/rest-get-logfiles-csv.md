@@ -20,7 +20,7 @@ In beide URLs moet je `$filename` vervangen door de bestandsnaam.
 
 Deze functie geeft een CSV file terug met of zonder header, afhankelijk van 
 welke URL gebruikt is. De CSV file is vergelijkbaar met de tabel hieronder, maar 
-gebruikt kommas in plaatst van lijnen om de waardes te scheiden.
+gebruikt komma's in plaatst van lijnen om de waardes te scheiden.
 
 | id  |        time         | mailingid | profileid | subprofileid | databaseid | ... |
 |-----|---------------------|-----------|-----------|--------------|------------|-----|
@@ -48,7 +48,7 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](./rest-api.md)
-* [GET logfiles names](./rest-get-logfiles-names.md)
-* [GET logfiles JSON](rest-get-logfiles-json)
-* [GET logfiles XML](rest-get-logfiles-xml)
+* [Overzicht van alle API calls](rest-api)
+* [Vraag namen van logfiles op](rest-get-logfiles-names)
+* [Downloaden van een logfile in JSON formaat](./rest-get-logfiles-json.md)
+* [Downloaden van een logfile in XML formaat](./rest-get-logfiles-xml.md)

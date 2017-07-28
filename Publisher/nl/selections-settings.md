@@ -28,9 +28,9 @@ de subprofielen verkrijg je door in het menu *huidige weergave* op
 *subprofielen weergeven* te klikken.
 
 
-### Selecties authoriseren voor mailings
+### Selecties authorizeren voor mailings
 
-Met het authoriseren van mailings zorgt Copernica dat je niet per ongeluk
+Met het authorizeren van mailings zorgt Copernica dat je niet per ongeluk
 een mailing verstuurt naar klanten die daar niet op zitten te wachten. 
 In de Marketing Suite kun je, na het aanmaken van selecties, meteen authoriseren.
 Echter, het kan voorkomen dat deze optie niet beschikbaar is. Dat komt dan 
@@ -64,5 +64,5 @@ ze dus beter verwijderen als performance je doel is.
 ### Meer informatie
 
 * [Selecties en miniselecties](./selections-introduction)
-* [Optimaliseren van selecties](selections-optimization)
+* [Optimaliseren van selecties](selections-optimalization)
 * [Regels en condities](selections-conditions)

@@ -1,4 +1,4 @@
-# Templates: Publisher
+# Werken met templates binnen de Publisher
 
 In de oude Copernica Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
@@ -19,6 +19,7 @@ mailings mee worden verstuurd.
 In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
 HTML beschikt om in ieder geval een eenvoudige website te bouwen.
+
 
 ## Houd het eenvoudig
 
@@ -46,6 +47,7 @@ template zo op te maken als je zelf wilt. Copernica verstuurt de HTML code
 precies zoals jij die hebt ingevoerd, en je kunt het dus zo bont maken als
 je maar wilt.
 
+
 ## Contentblokken
 
 Zoals gezegd bestaat een template uit HTML code. Deze kun je zelf maken en je
@@ -67,6 +69,7 @@ template op te nemen.
 * [[text] tags](text-tag)
 * [[image] tags](image-tag)
 * [[loop] tags](loop-tag)
+
 
 ## Let op met blokhaken!
 
@@ -108,6 +111,7 @@ waarbinnen alle blokhaken geen speciale betekenis hebben.
         [/literal]
     </style>
 
+
 ## Vaste afbeeldingen
 
 Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook 
@@ -136,25 +140,3 @@ naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;,
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
 een afbeelding, via dit dialoogvenster koppelen.
 
-## Headers
-
-Headers are used to add information to an email. There are standardized 
-headers such as "From" and "Subject", but you can also use so called "x-headers". 
-Using these you can add any type of information you like. You can use them 
-to make analysing your campaign easier, for example. You can also send 
-a BCC (Blind Carbon Copy) or add the *List unsubscribe* header. See 
-also the [article on headers](./headers)
-
-## Meer informatie
-
-* [Templates](./templates)
-* [Templates in Marketing Suite](./templates-marketing-suite)
-* [Personalizatie in Publisher](personalizing-your-newsletter-in-the-publisher)
-* [Followups](./followups)
-* [Headers](./headers)
-
-### Template content
-
-* [Text tag](text-tag)
-* [Image tag](image-tag)
-* [Loop tag](loop-tag)

@@ -61,8 +61,8 @@ Dit voorbeeld vereist de [REST API class](./rest-php).
 
 ## Meer informatie
 
-* [GET rule conditions](rest-get-rule-conditions)
-* [POST rule conditions](rest-post-rule-conditions)
+* [Regel condities opvragen](rest-get-rule-conditions)
+* [Regel condities aanpassen](rest-post-rule-conditions)
 * [Conditie type change](rest-condition-type-change)
 * [Conditie type date](rest-condition-type-date)
 * [Conditie type email](rest-condition-type-email)

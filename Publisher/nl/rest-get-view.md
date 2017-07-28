@@ -41,5 +41,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API methods](./rest-api)
-* [GET view rules](./rest-get-view-rules)
-
+* [Vraag selectie regels op](./rest-get-view-rules)

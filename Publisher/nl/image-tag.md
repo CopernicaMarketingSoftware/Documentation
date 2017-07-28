@@ -31,25 +31,30 @@ je dit doen door middel van de volgende code:
 Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch 
 vergroot of verkleind. Naast deze precies afgedongen grootte
 die je met de *width* en *height* attributen instelt, kun je ook een minumum- 
-of maximumgrootte opgeven. Je kunt zo bijvoorbeeld specificeren dat de 
-afbeelding elke grootte tussen 100x100 en 150x150 pixels mag hebben.
+of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld
+binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
 
-`[image name="example" minwidth="100" maxwidth="150" minheight="100" maxheight="150"]`
+`[image name="example" minwidth="100" maxwidth="150"]`
 
-Afbeeldingen die niet voldoen aan de opgegeven limieten
-worden vergroot of verkleind, waarbij de verhoudig tussen breedte en hoogte 
-zoveel mogelijk wordt behouden.
+Er zijn ook *minheight* en *maxheight* attributen die hetzelfde doen voor de
+hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten
+worden vergroot of verkleind, waarbij de verhouding tussen breedte en hoogte 
+zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
+
 
 ## Optionele afbeeldingen
 
-Als een gebruiker besluit om een afbeelding leeg te laten onstaat een
+Als een gebruiker besluit om een afbeelding leeg te laten ontstaat een
 lege plek in het document. Een [image] tag die niet wordt ingevuld, wordt
-namelijk standaard voorzien van een doorzichtige afbeelding.
+namelijk standaard voorzien van een doorzichtige afbeelding. Er komt dus
+in het uiteindelijke document in principe altijd een &lt;img&gt; tag op de 
+plaats van de [image] tag. 
 
 Maar het kan ook anders. Als je aangeeft dat een afbeelding *optioneel* is,
 dan wordt er alleen een afbeelding in het document geplaatst als de gebruiker
 ook zelf expliciet op documentniveau een afbeelding op de plaats van de
-[image] tag plaatst. Dit ziet er als volgt uit:
+[image] tag plaatst. Als de gebruiker geen afbeelding uploadt, dan zal er ook
+geen &lt;img&gt; tag in het uiteindelijke document staan.
 
 `[image name="example" optional="yes"]`
 
@@ -68,7 +73,5 @@ rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 ## Meer informatie
 
 * [Templates](./templates)
-* [Publisher templates](./publisher-templates)
-* [Websites](./websites)
 * [Text tag](./text-tag)
 * [Loop tag](./loop-tag)

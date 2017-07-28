@@ -8,6 +8,7 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 De `$id` moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
 
+
 ## Geretourneerde velden
 
 De methode retourneert gegevens van een profiel. De volgende eigenschappen 
@@ -20,6 +21,7 @@ worden teruggegeven:
 * **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
+
 
 ## Voorbeeld
 
@@ -38,10 +40,11 @@ print_r($api->get("profile/1234"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database profileids](rest-get-database-profileids)
-* [POST database profiles](rest-post-database-profiles)
-* [PUT profile fields](rest-put-profile-fields)
-* [DELETE profile](rest-delete-profile)
+* [Opvragen van profiel ID's](rest-get-database-profileids)
+* [Profiel toevoegen aan een database](rest-post-database-profiles)
+* [Profiel bijwerken](rest-put-profile-fields)
+* [Profiel verwijderen](rest-delete-profile)

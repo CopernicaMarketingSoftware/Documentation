@@ -7,9 +7,11 @@ hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
 waar `$id` de unieke string van het bericht is.
 
+
 ## Geretourneerde waarde
 
 Een JSON met de algemene informatie.
+
 
 ## Voorbeeld
 
@@ -27,6 +29,7 @@ print_r($api->get("old/message/AMRJHv989dfds"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -1,15 +1,11 @@
 # REST API: POST view rules
 
-Deze methode voegt een regel toe aan een bestaande selectie. Om deze 
-methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar 
-de volgende URL:
+Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de selectie waar een 
-regel aan toegevoegd moet worden. De naam van de regel en de andere 
-waarden moeten toegevoegd worden aan de message body. Bij een 
-succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+De `$id` moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
+
 
 ## Beschikbare parameters
 
@@ -20,6 +16,7 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 - conditions:               array van condities waar profielen binnen de selectie aan moeten voldoen, zoals bepaalde waarden in bepaalde velden;
 - inversed:                 boolean waarde die met waarde "True" alleen profielen teruggeeft die juist *niet* aan de regel voldoen;
 - disabled:                 boolean waarde die aangeeft of de regel wel of niet uitgeschakeld is.
+
 
 ## Voorbeeld in PHP
 
@@ -36,16 +33,16 @@ $api = new CopernicaRestApi("your-access-token");
 $data = array(
     'name'      =>  'rule-name',
     'view'      =>  1234,
-    'inversed'  =>  False
+    'inverted'  =>  False
 );
 
 // voer het verzoek uit
 $api->post("view/id/rules", $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

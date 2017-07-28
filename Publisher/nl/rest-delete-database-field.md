@@ -27,6 +27,7 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database velden](rest-get-database-fields)
-* [POST database veld](rest-post-database-fields)
+* [Alle velden van een database opvragen](rest-get-database-fields)
+* [Nieuw veld aanmaken](rest-post-database-fields)
+* [Veld aanpassen](rest-put-database-fields)
 

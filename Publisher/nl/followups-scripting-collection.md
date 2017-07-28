@@ -14,7 +14,7 @@ opvragen van een instantie van een collectie.
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in javascript kun je een subprofile uit een 
+Met het volgende voorbeeld in JavaScript kun je een subprofile uit een 
 collection opvragen.
 
 ```javascript

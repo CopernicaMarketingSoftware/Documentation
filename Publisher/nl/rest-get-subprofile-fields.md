@@ -8,29 +8,32 @@ request sturen naar de volgende URL:
 De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
 
+
 ## Geretourneerde velden
 
 De methode retourneert de velden van een subprofiel.
+
 
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 ```php
-// vereiste scripts
+// dependencies
 require_once('copernica_rest_api.php');
 
-// verander dit naar je access token
+// change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// voer het verzoek uit en print het resultaat
+// do the call, and print result
 print_r($api->get("subprofile/1234/fields"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET profile](rest-get-profile)
-* [GET subprofile](rest-get-subprofile)
+* [Opvragen van alle gegevens van een profiel](rest-get-profile)
+* [Opvragen van alle gegevens van een subprofiel](rest-get-subprofile)

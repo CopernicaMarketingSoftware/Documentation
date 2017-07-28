@@ -15,12 +15,7 @@ informatie over de klik.
 
 ## Variabelen
 
-Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
-De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
-
-Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
-bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
-bijvoorbeeld *interests[]=xyz*.
+Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|

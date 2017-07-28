@@ -19,6 +19,7 @@ Deze call geeft simpelweg een lijst van namen van interesses terug. Je kunt
 in je code deze gebruiken om te checken of een profiel een bepaalde interesse 
 heeft, bijvoorbeeld.
 
+
 ## Array van interesse ID's
 
 Een lijst van ID's van interesses kan opgevraagd worden door een HTTP 
@@ -28,6 +29,7 @@ GET request te sturen naar de volgende URL:
 
 Deze call geeft simpelweg een lijst van ID's van interesses terug. Deze 
 kun je ook gebruiken voor vergelijkingen of het opvragen van de interesses zelf.
+
 
 ## Array van interesse objects
 
@@ -41,6 +43,7 @@ Elk object in de array heeft de volgende eigenschappen:
 - **ID**: numerieke identifier van de interesse
 - **name**: de naam van de interesse
 - **group**: de groep waar de interesse bij hoort
+
 
 ## Voorbeeld in PHP
 
@@ -59,7 +62,8 @@ print_r($api->get("profile/1234/interests"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [GET profile](rest-get-profile)
+- [Opvragen van alle profiel informatie](rest-get-profile)

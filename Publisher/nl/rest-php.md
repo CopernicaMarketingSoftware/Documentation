@@ -101,11 +101,11 @@ class CopernicaRestAPI
     /**
      *  Do a PUT request
      *  @param  string      Resource name
-     *  @param  array       Associative array with data to post
      *  @param  array       Associative array with additional parameters
+     *  @param  array       Associative array with data to post
      *  @return bool
      */
-    public function put($resource, array $data = array(), array $parameters = array())
+    public function put($resource, array $parameters = array(), array $data = array())
     {
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
@@ -163,7 +163,7 @@ class CopernicaRestAPI
 }
 ```
 
-## Gebruik in je eigen applicatie
+## Gebruik in eigen applicatie
 
 Het bovenstaande script kun je gemakkelijk kopiëren en plakken, zodat je het kunt
 gebruiken in je eigen applicatie. Door onderstaande code te implementeren kun je 
@@ -183,7 +183,3 @@ $result = $api->get("databases");
 // print the result
 print_r($result);
 ```
-
-## Meer informatie
-
-* [REST API](./rest-api)

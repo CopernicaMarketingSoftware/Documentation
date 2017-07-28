@@ -1,24 +1,27 @@
-# Enquêtes: De \# voor nummering verwijderen
+# Enquêtes: Verwijder het hekje voor nummering
 
-Standaard wordt elke vraag genummerd met een nummer symbool (\#). Je kunt 
-er echter voor kiezen deze weg te halen door de standaard [XSLT](./css-and-xslt) aan te passen. 
-Deze bepaalt namelijk de stijl van de enquête.
+Verwijder het hekje (#) voor nummering dat wordt weergegeven bij elke 
+enquêtevraag.
 
-Open eerst een (nieuwe) XSLT onder het *Stijl* kopje en vindt de volgende 
-regel:
+Standaard wordt er bij elke enquête vraag een hekje (#) weergegeven. 
+Je kunt dit teken verwijderen door de standaard XSLT een klein beetje te 
+wijzigen:
+
+* Navigeer naar de Stijl sectie.
+* Maak een nieuwe XSLT voor onderzoeken (of bewerk een bestaande XSLT).
+* Open de XSLT, en vind de volgende code:
 
 `<div class="number">#<xsl:value-of select="number"/></div>`
 
-Verwijder vervolgens het symbool of vervang deze door het 
-gewenste symbool:
+* Verwijder de # (of vervang dit door iets anders):
 
 `<div class="number"><xsl:value-of select="number"/></div>`
 
-Sla de XSLT op en zorg ervoor dat deze gebruikt wordt bij je enquête.
+* Bewaar de XSLT, en zorg ervoor in de enquête-tag naar deze XSLT wordt verwezen:
+
+`{survey name="name survey" xslt="name of the xslt"}`
 
 ## Meer informatie
 
-* [Surveys](./surveys)
-* [Enquêtes](./stylesheets.md)
-* [CSS en XSLT](./css-and-xslt)
-
+* [Enquêtes](./surveys)
+* [Stylesheets](./stylesheets.md)

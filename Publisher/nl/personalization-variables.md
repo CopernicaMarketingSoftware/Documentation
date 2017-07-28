@@ -37,7 +37,7 @@ heeft een aantal eigenschappen:
 * **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
 * **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
 
-Je kunt eenvoudige personalisaties als {$voornaam} en {$achternaam} dus ook
+Je kunt eenvoudige personalizaties als {$voornaam} en {$achternaam} dus ook
 schrijven als {$profile.voornaam} en {$profile.achternaam}.
 
 ## Mailings naar subprofielen
@@ -66,7 +66,7 @@ Als je gebruik maakt van een gelaagde databasestructuur, dan kun je *itereren*
 over de subprofielen die aan een profiel zijn gelinkt. Als je, bijvoorbeeld,
 eigenaar van een dierenwinkel bent en een database met klantgegevens hebt met 
 per klant een collecties met katten en een collectie met honden, dan kun je 
-dit soort personalisaties maken:
+dit soort personalizaties maken:
 
     Beste {$profile.voornaam|escape},
     
@@ -110,7 +110,7 @@ het "gewone" {$profile} object, met ook weer collecties en foreign keys.
 Je kun dus eindeloos de diepte in.
 
 Maar het kan ook andersom. Je kunt een mailing naar de dierenartsen sturen, en
-verwijzen naar de patienten van de dierenarts. Hiervoor is de {$profile.referrers}
+verwijzen naar de patiënten van de dierenarts. Hiervoor is de {$profile.referrers}
 variabele. De variabele {$profile.referrers.klanten} bevat alle profielen in de
 database "klanten" die verwijzen naar het profiel. Je kunt zelfs specifiek
 opgeven welk foreign key veld je wilt gebruiken, wat handig als je meerdere foreign

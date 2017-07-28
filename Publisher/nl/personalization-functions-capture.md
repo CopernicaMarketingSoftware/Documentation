@@ -23,7 +23,7 @@ wat parameters zien voor de functie en vervolgens hoe je ze gebruikt.
 |----------------|------------------------------------------|
 | name           | Naam van het blok                        |
 | assign         | Variabele om het blok op te slaan        |
-| append         | (Bestaande) variablee om aan te plakken  |
+| append         | (Bestaande) variabele om aan te plakken  |
 
 Geen van deze variabelen is verplicht. Als je geen naam meegeeft aan 
 de functie kun wordt de naam op 'default' gezet. Je gebruikt dit blok 

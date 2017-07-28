@@ -21,7 +21,7 @@ Er zijn vier mogelijke instellingen, en ze spreken allemaal nogal voor zich:
     * preview mode, nog niet gepersonaliseerd
     
 Eigenlijk zijn het twee verschillende instellingen: (1) wil je het document 
-weergeven in bewerkmodes of previewmodus, en (2) wil je dat de smarty variabelen
+weergeven in bewerkmodes of previewmodus, en (2) wil je dat de Smarty variabelen
 direct worden ingevuld of niet?
 
 Als je het document in bewerkmodus weergeeft, dan zijn de contentblokken 

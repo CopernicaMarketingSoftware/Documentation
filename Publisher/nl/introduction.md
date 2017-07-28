@@ -11,10 +11,11 @@ ook aangeraden als je een nieuwe gebruiker bent.
 Bij het lezen van de documentatie is het handig om toegang te hebben tot de software. 
 Daarvoor heb je een login en wachtwoord nodig. Deze krijg je automatisch als je via 
 [www.copernica.com](https://www.copernica.com) een profiel aanmaakt. Met deze gegevens 
-kun je het beste inloggen via [www.copernica.com](https://www.copernica.com). Binnen deze
-centrale omgeving kun je vervolgens navigeren naar alle, voor jou beschikbare, Copernica 
-accounts en applicaties. Je kunt makkelijk schakelen tussen de Marketing Suite en de Publisher 
-via de grote switch button linksboven in het scherm.
+kun je het beste inloggen via [www.copernica.com](https://www.copernica.com), omdat dit 
+de centrale plek is vanwaar je kunt navigeren naar alle Copernica accounts en applicaties. 
+Je kunt als gebruiker makkelijk schakelen tussen de Marketing Suite en de Publisher, zodat 
+je de transitie rustig in gang kunt zetten (mocht je nog van de oude Publisher gebruik maken).
+
 
 ## Meer informatie
 
@@ -24,4 +25,4 @@ en informatie om snel van start te gaan.
 * [Snel aan de slag](./quick-start-guide)
 * [Sender domains instellen](./quick-sender-domain-guide)
 * [Database inrichten](./quick-database-guide)
-* [Je eerste mailing](./quick-mailing-guide)
+* [Je eerste mailing versturen](./quick-mailing-guide)

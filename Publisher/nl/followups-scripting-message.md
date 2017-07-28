@@ -15,7 +15,7 @@ worden opgevraagd, zoals de broncode en het onderwerp van de message.
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in javascript kun je de broncode van een gepersonalizeerde template opvragen.
+Met het volgende voorbeeld in JavaScript kun je de broncode van een gepersonalizeerde template opvragen.
 
 ```javascript
 var mySourceCode = message.source;

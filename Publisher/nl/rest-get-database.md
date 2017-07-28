@@ -9,6 +9,7 @@ roepen met een HTTP GET request naar de volgende URL:
 Als `$id` kun je de numerieke identifier van een database opgeven, of de naam
 van een database.
 
+
 ## Geretourneerde velden
 
 * id: 			uniek ID;
@@ -27,6 +28,7 @@ collections op te vragen:
 * [GET interests](rest-get-database-interests)
 * [GET collections](rest-get-database-collections) 
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -44,7 +46,8 @@ print_r($api->get("database/id"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [PUT database](rest-put-database)
+* [Bewerken van een database](rest-put-database)

@@ -11,8 +11,7 @@ maar wel HTML en de uitgebreide editor.
 ![Editing the conclude page](../images/editconcludepage.png)
 
 Code om te personalizeren wordt hier niet ondersteund, maar je kunt wel 
-doorverwijzen naar je eigen pagina. Je kunt vervolgens deze pagina personalizeren 
-zoals je bij elke andere website zou doen.
+doorverwijzen naar je eigen pagina. Zie de pagina over [gepersonalizeerde bedank pagina](./surveys-personalized-conclude-page)
 
 ## Personalizeren met profiel informatie
 
@@ -27,7 +26,7 @@ regel code gebruiken.
 
 ## Doorverwijzen
 Als je direct wilt doorverwijzen naar een eigen (extern gehoste) webpagina, 
-dan kan dat door het volgende stukje Javascipt toe te voegen met behulp 
+dan kan dat door het volgende stukje JavaScript toe te voegen met behulp 
 van de beknopte editor. De invuller gaat dan direct naar de link uit het 
 stukje code.
 
@@ -38,4 +37,4 @@ Gebruik de beknopte editor om de volgende code toe te voegen aan de standaard be
 ## Meer informatie
 
 * [Enquêtes overzicht](./surveys)
-* [Gepersonalizeerde bedank pagina](./personalized-survey-conclude-page)
+* [Gepersonalizeerde bedank pagina](./surveys-personalized-conclude-page)

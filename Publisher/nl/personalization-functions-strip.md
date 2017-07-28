@@ -7,7 +7,7 @@ die dit kan hebben.
 
 ## Voorbeeld
 
-Het volgende voorbeed laat zien hoe je de functie gebruikt. Dit voorbeeld 
+Het volgende voorbeeld laat zien hoe je de functie gebruikt. Dit voorbeeld 
 komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 
     {strip}

@@ -8,16 +8,17 @@ en beschikbaar via het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de profielen van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* start: eerste profiel dat wordt opgevraagd
-* limit: lengte van de batch die wordt opgevraagd
-* total: toon wel/niet het totaal aantal beschikbare/matchende profielen
-* fields: optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden
-* orderby: naam of id van het veld waarop je de profielen wilt sorteren (standaard is dit het id van elk profiel)
-* order: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
+* **start**: eerste profiel dat wordt opgevraagd
+* **limit**: lengte van de batch die wordt opgevraagd
+* **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
+* **fields**: optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden
+* **orderby**: naam of id van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel)
+* **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
 
 Meer informatie over de betekenis van de *start*, *limit* en *total* parameters 
 vind je in het [artikel over paging](rest-paging). 
@@ -28,27 +29,29 @@ alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aa
 gebruik van deze *fields* parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele *order* kun je de naam of het id van een veld geven. De profielen
-worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of id van het
+De variabele *order* kun je de naam of het ID van een veld geven. De profielen
+worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
 parameter *order* geven:
 
-* id: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het id;
-* random: de profielen worden in willekeurige volgorde teruggegeven;
-* modified: de profielen worden gesorteerd op basis het *modified* timestamp.
+* **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID
+* **random**: de profielen worden in willekeurige volgorde teruggegeven
+* **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
+
 
 ## Geretourneerde velden
 
 De methode retourneert een lijst van profielen. Voor elk profiel worden de 
 volgende eigenschappen teruggegeven:
 
-* id: numeriek id van het profiel;
-* database: id van de database waarin het profiel is opgeslagen;
-* secret: de "geheime" code die aan een profiel is gekoppeld;
-* created tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat;
-* modified: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat;
-* fields: associative array / object van veldnamen en veldwaardes;
-* interests: array van de interesses van het profiel.
+* **ID**: numeriek ID van het profiel
+* **database**: ID van de database waarin het profiel is opgeslagen
+* **secret**: de "geheime" code die aan een profiel is gekoppeld
+* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
+* **fields**: associative array / object van veldnamen en veldwaardes
+* **interests**: array van de interesses van het profiel
+
 
 ## Voorbeeld in PHP
 
@@ -77,10 +80,11 @@ print_r($api->get("database/1234/profiles", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
     
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database profileids](rest-get-database-profileids)
-* [POST database profiles](rest-post-database-profiles)
-* [PUT profile fields](rest-put-profile-fields)
-* [DELETE profile](rest-delete-profile)
+* [Opvragen van profiel ID's](rest-get-database-profileids)
+* [Profiel toevoegen aan een database](rest-post-database-profiles)
+* [Profiel bijwerken](rest-put-profile-fields)
+* [Profiel verwijderen](rest-delete-profile)

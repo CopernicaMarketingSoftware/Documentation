@@ -9,13 +9,16 @@ naar het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier van de 
 miniselectie waar je de ID's van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 Deze methode ondersteunt geen parameters.
 
+
 ## Geretourneerde velden
 
 De methode retourneert een JSON array bestaande uit numerieke identifiers.
+
 
 ## Voorbeeld in PHP
 
@@ -33,8 +36,9 @@ print_r($api->get("miniview/1234/subprofileids"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+   
  
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET miniview subprofielen](rest-get-miniview-subprofiles)
+* [Subprofielen inclusief alle subprofieldata opvragen](rest-get-view-subprofiles)

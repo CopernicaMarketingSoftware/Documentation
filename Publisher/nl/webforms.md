@@ -15,7 +15,7 @@ kun je bijvoorbeeld de gebruiker in- of uitloggen, of niets veranderen. Hierna
 kun je reacties ontvangen die netjes terechtkomen in de gelinkte velden in
 je database. Eventuele selecties worden aangepast op basis van de nieuwe
 data op het moment dat deze door Copernica wordt geupdate. Je kunt ook een
-bevestigingsmail of een bedankmail sturen met [opvolgacties](./followups).
+bevestigingsmail of een bedankmail sturen met [opvolgacties](./follow-up-manager).
 
 ### Aanmaken in website
 
@@ -91,7 +91,3 @@ een profiel. Dit is bijvoorbeeld nuttig voor een inlogformulier.
 moeten worden voor de invuller.
 * **Standaardwaarde**: De waarde die wordt gebruikt als het veld niet ingevuld
 is.
-
-## Meer informatie
-
-* [Beperk aantal inzendingen](./limit-the-number-of-times-a-web-form-can-be-submitted)

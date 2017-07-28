@@ -9,7 +9,7 @@ records adviseren we om CNAME's aan te maken (tracking domain, [DKIM](dkim),
 Een SPF record is een record dat je plaatst in [DNS](dns) en waarin, heel simpel
 gezegd, een lijst met IP adressen staat vanuit waar je normaal gesproken e-mail 
 verstuurt. Met behulp van SPF records kun je dus, als domeineigenaar, aan de
-wereld laten weten vanuit welke IP addressen jouw e-mail wordt verzonden. Een
+wereld laten weten vanuit welke IP adressen jouw e-mail wordt verzonden. Een
 ontvanger (zoals gmail.com of live.com) kan deze lijst opvragen. Als zo'n ontvanger 
 een e-mail ontvangt die van jou afkomstig lijkt te zijn, maar is verstuurd vanaf 
 een IP adres dat niet op de lijst staat, dan weet hij dat er mogelijk iets met 
@@ -39,7 +39,7 @@ toch) een lijst met IP adressen.
 Copernica maakt gebruik van de mogelijkheid om de hierboven genoemde elementen 
 in SPF records op te nemen. Als je het dashboard van de Marketing Suite gebruikt 
 om een [Sender Domain](sender-domains) te configureren, zie je dat in het overzicht
-van geadviseerde DNS instelligen er meestal CNAME records worden getoond. CNAME
+van geadviseerde DNS instellingen er meestal CNAME records worden getoond. CNAME
 is het gangbare aliassysteem van DNS. Voor SPF adviseren we echter om een gewoon
 SPF record aan te maken, bestaande uit een "include" statement. In de praktijk 
 komt het gebruik van een CNAME of een SPF record met een include op hetzelfde
@@ -74,7 +74,7 @@ Omdat Copernica de mail dus verstuurt vanaf een bounce *subdomain* moet je voor
 dit bounce domain een SPF record aanmaken. Omdat waarschijnlijk alleen wij, 
 Copernica, mail sturen vanaf het bounce domain is het door ons aangemaakte SPF
 record, dat dus alleen onze IP adressen bevat, goed genoeg. Echter, als je, om 
-wat voor reden dan ook, ook andere IP addressen (of andere elementen) in het SPF 
+wat voor reden dan ook, ook andere IP adressen (of andere elementen) in het SPF 
 record wilt opnemen, dan kan dit. Je kunt gewoon het door ons geadviseerde SPF
 record overnemen en aanpassen, en de aangepaste versie in je DNS plaatsen. Nodig 
 is dit echter meestal niet.

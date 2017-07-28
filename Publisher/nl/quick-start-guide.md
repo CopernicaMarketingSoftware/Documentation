@@ -14,7 +14,7 @@ Klaar met je templates? Mooi! Dan kan de mailing nu worden verstuurd.
 ## Checklist
  
 Om je op weg te helpen, heeft Copernica een kleine checklist gemaakt. Door het 
-volgen van de volgende stappen heb je alle benodigdhedenom je eerste mailing 
+volgen van de volgende stappen heb je alle benodigdheden om je eerste mailing 
 te versturen.
 
 * [Sender domain instellen](quick-sender-domain-guide)
@@ -28,6 +28,5 @@ Wil je realtime op de hoogte worden gehouden van de processen die rondom je
 mailings plaatsvinden? Stel dan feedbackloops in op je eigen systeem en 
 ontvang alle meldingen die van onze servers komen.
 
-* [Copernica begrippenlijst](./definitions)
 * [Integreren met je eigen systeem](./feedback-loops)
 * [Selecties maken in een database](./selections-introduction)

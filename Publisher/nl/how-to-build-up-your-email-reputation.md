@@ -60,7 +60,7 @@ blacklist is een referentielijst van niet-legitieme afzenders oftewel
 spammers die jouw inbox vervuilen met ongevraagde reclame. Een whitelist
 is dus een referentielijst van legitieme afzenders.\
  Helaas zijn er geen globale whitelists beschikbaar om je e-mail
-afleveringpercentage te verhogen. Maar Return Path, de marktleider op
+afleveringspercentage te verhogen. Maar Return Path, de marktleider op
 het gebied van sender reputation data, biedt een
 e-mailcertificatieprogramma aan waarbij jouw e-mail een
 voorkeursbehandeling krijgt bij 1.8 miljard inboxen. Je kunt dit

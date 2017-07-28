@@ -8,7 +8,7 @@ gegevens van een specifieke access token.
 
 Deze methode is vooral handig als je een applicatie hebt gemaakt 
 die is gekoppeld aan veel verschillende accounts (bijvoorbeeld 
-door middel van een [OAuth2 koppeling](./rest-oauth.md). 
+door middel van een [OAuth2 koppeling](./rest-oath.md). 
 
 
 ## Geretourneerde velden

@@ -9,7 +9,7 @@ te klikken. Je kunt aan de hand van de CTR voor verschillende templates
 vergelijken welke het best lijkt te werken.
 
 De formule die Copernica hanteert voor het berekenen van de CTR ziet er
-alsvolgt uit:
+op deze manier uit:
 
 ![Click through rate](../images/CTR.png)
 
@@ -27,7 +27,7 @@ geregistreerd, en bij 12 ontvangers een klik is geregistreerd is:
 Dit verschilt per branche, doelgroep, type mailing enzovoorts en er kan
 dus weinig over gezegd worden. Voor de ene verzender is een CTR van 5%
 een prachtig resultaat, terwijl een e-mailmarketeer in een andere
-branche pas warmloopt voor een CTR van 30%.
+branche pas warm loopt voor een CTR van 30%.
 
 Je bent aardig bezig als je een CTR weet te behouden (wat betekent dat
 je content niet gaat vervelen). Nog beter is vanzelfsprekend als je de

@@ -1,8 +1,8 @@
 # Personalizatie functies: condition
 
 Een *condition* lijkt qua werking veel op de [if functie](./personalization-functions-if) 
-maar evalueert Javascript expressies. De enige parameter is de expressie 
-in Javascript die geëvalueerd moet worden.
+maar evalueert JavaScript expressies. De enige parameter is de expressie 
+in JavaScript die geëvalueerd moet worden.
 
 ## Voorbeeld
 

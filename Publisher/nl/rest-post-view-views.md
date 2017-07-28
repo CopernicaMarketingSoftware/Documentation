@@ -4,9 +4,8 @@ Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan t
 
 `https://api.copernica.com/view/$id/views?access_token=xxxx`
 
-De eerste `$id` moet hier vervangen worden door de bovenliggende selectie 
-en de tweede `$id` door de lager gelegen selectie. Bij een succesvolle 
-call wordt de ID van het aangemaakte verzoek teruggegeven.
+De eerste `$id` moet hier vervangen worden door de bovenliggende selectie en de tweede `$id` door de lager gelegen selectie.
+
 
 ## Beschikbare parameters
 
@@ -19,6 +18,7 @@ De volgende parameters kunnen toegevoegd worden aan de body van het bericht. De 
 - has-children: 		boolean waarde om aan te geven of er nog selecties onder deze selectie liggen;
 - has-referred: 		boolean waarde om aan te geven of er andere selecties naar deze selectie verwijzen;
 - has-rules: 			boolean waarde om te geven of de selectie regels heeft.
+
 
 ## Voorbeeld
 
@@ -36,10 +36,10 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("view/id/views", array(), $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

@@ -1,18 +1,18 @@
 # REST API: PUT profile
 
-Dit is een methode om de eigenschapppen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
+Dit is een methode om de eigenschappen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 
-## Beschikbare datavelden
+## Beschikbare parameters
 
 De volgende parameters kunnen in de message body van het HTTP PUT command worden geplaatst:
 
-- **fields**: Velden die het profiel bevat en hun waarden;
-- **interests**: Interesses van het profiel;
-- **secret**: De geheime code die gelinkt is aan het profiel.
+- **fields**: Velden die het profiel bevat en hun waarden
+- **interests**: Interesses van het profiel
+- **secret**: De geheime code die gelinkt is aan het profiel
 
 ## Voorbeeld
 
@@ -21,9 +21,6 @@ Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 ```php
 // vereiste scripts
 require_once('copernica_rest_api.php');
-
-// profile id dat je wilt bewerken
-$id = 1;
 
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
@@ -45,7 +42,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("profile/{$id}", $data));
+print_r($api->put("profile/1234", array(), $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
@@ -53,6 +50,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API methodes](./rest-api)
-* [PUT profile](./rest-put-profile)
-* [PUT profile fields](./rest-put-profile-fields)
-* [PUT profile interests](./rest-put-profile-interests)
+* [Het aanmaken van een profiel](./rest-put-profile)
+* [Het aanpassen van de velden van een profiel](./rest-put-profile-fields)
+* [Het aanpassen van de interesses van een profiel](./rest-put-profile-interests)

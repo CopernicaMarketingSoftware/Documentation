@@ -51,3 +51,8 @@ te vervangen.
 
 Als je je eigen domein wilt gebruiken moet deze een CNAME referentie hebben naar 
 pic.vicinity.nl.
+
+## Meer informatie
+
+* [Personalizatie(./personalization)
+* [Personalizatie functies](./personalization-functions)

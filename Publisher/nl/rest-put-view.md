@@ -8,18 +8,20 @@ methode die toegankelijk is via het volgende adres:
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de selectie die je wilt bewerken.
 
-## Beschikbare datavelden
+
+## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
-- **name**: de optionele nieuwe naam van de selectie;
-- **description**: de optionele nieuwe omschrijving van de selectie;
-- **parent-type**: geeft aan of de selectie onder een selectie of database valt;
-- **parent-id**: id van de database of selectie waar de selectie onder valt;
-- **has-children**: boolean waarde om aan te geven of er selecties onder deze selectie vallen;
-- **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren;
-- **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet.
+- **name**: de optionele nieuwe naam van de selectie
+- **description**: de optionele nieuwe omschrijving van de selectie
+- **parent-type**: geeft aan of de selectie onder een selectie of database valt
+- **parent-id**: id van de database of selectie waar de selectie onder valt
+- **has-children**: boolean waarde om aan te geven of er selecties onder deze selectie vallen
+- **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren
+- **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet
+
 
 ## Voorbeeld
 
@@ -28,9 +30,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 ```php
 // vereiste scripts
 require_once('copernica-rest-api.php');
-
-// database view dat je wilt bewerken
-$id = 1;
 
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
@@ -41,13 +40,14 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("view/{$id}", $data);
+api->put("view/1234", $parameters, $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database views](rest-get-database-views)
-* [DELETE view](rest-delete-view)
+* [Opvragen van een lijst van selecties in een databases](rest-get-databases-views)
+* [Verwijderen van een selectie](rest-delete-view)

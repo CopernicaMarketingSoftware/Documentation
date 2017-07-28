@@ -1,7 +1,7 @@
 # Personalizatie functies: in_selection
 
 De *in_selection* functie kan gebruikt worden om te checken of een 
-gespecifeerd profiel in een specifieke view/selectie zit. Deze functie is 
+gespecificeerd profiel in een specifieke view/selectie zit. Deze functie is 
 ontwikkeld door Copernica en kan gebruikt worden om content te specialiseren 
 met behulp van selecties in je database. Je kunt bijvoorbeeld een 
 selectie maken van vrouwen waarvan je weet dat ze kinderen hebben en in 

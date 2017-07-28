@@ -1,10 +1,11 @@
 # REST API: GET view rule
 
-Selecties gebruiken *regels* om te beslisses welke profielen worden gebruikt in de selectie en welke niet. Profielen die tenminste een regel matchen worden toegevoegd. Om de informatie van een enkele regel op te vragen kan er een HTTP GET verzoek worden verstuurd naar de volgende URL:
+Selecties gebruiken *regels* om te beslissen welke profielen worden gebruikt in de selectie en welke niet. Profielen die tenminste een regel matchen worden toegevoegd. Om de informatie van een enkele regel op te vragen kan er een HTTP GET verzoek worden verstuurd naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
 
 De eerste `$id` code moet vervangen worden met de numerieke identifier van de selectie waar je een regel uit wilt opvragen. De tweede `$id` parameter moet de ID van de regel zijn.
+
 
 ## De geretourneerde informatie
 
@@ -40,6 +41,7 @@ De precieze eigenschappen hangen af van het type van de voorwaarde. Voor een ove
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
+
 ## Voorbeeld in PHP
 
 Het volgende script kan gebruikt worden om de eigenschappen van regel 12 binnen selectie 1234 op te vragen:
@@ -57,11 +59,13 @@ print_r($api->get("view/1234/rule/12"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api.md)
-* [GET view regels](./rest-get-view-rules.md)
-* [POST view regels](./rest-post-view-rules.md)
-* [PUT rule](./rest-put-rule.md)
-* [DELETE regel](./rest-delete-rule.md)
-* [POST regel condities](./rest-post-rule-conditions.md)
+* [Vraag alle selectie regels op](./rest-get-view-rules.md)
+* [Voeg selectie regel toe](./rest-post-view-rules.md)
+* [Pas selectie regel aan](./rest-put-rule.md)
+* [Verwijder selectie regel](./rest-delete-rule.md)
+* [Pas een conditie aan](./rest-put-condition.md)
+* [Verwijder een conditie](./rest-delete-condition.md)

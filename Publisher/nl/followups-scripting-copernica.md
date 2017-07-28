@@ -1,7 +1,7 @@
 #  Data-script - copernica 
 
 Het copernica data-script is gelinkt aan het account dat je hebt geregistreerd bij Copernica. 
-Asnpassingen aan het globale `copernica.data` object zijn in alle scripts van het account 
+Aanpassingen aan het globale `copernica.data` object zijn in alle scripts van het account 
 zichtbaar.
 
 
@@ -21,7 +21,7 @@ zichtbaar.
 
 ## Voorbeeld
 
-Met het volgende voorbeeld in Javascript kun je een database van een account opvragen.
+Met het volgende voorbeeld in JavaScript kun je een database van een account opvragen.
 
 ```javascript
 var databaseName = "Mijn database";

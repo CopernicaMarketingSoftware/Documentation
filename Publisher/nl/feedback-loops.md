@@ -42,7 +42,7 @@ meestal geanonimiseerde, terugkoppeling naar ons.
 
 Dit in tegenstelling tot de feedback loops die we hier bespreken. Dit zijn 
 terugkoppelingen van ons naar jou. Deze terugkoppelingen worden niet 
-geanonimiseerd of gebundeld, en gebeuren in *real time*. Wanneer een
+geanonimiseerd of gebundeld, en gebeuren in *real time*. Wanneer een 
 spam rapportage ons bereikt kun je deze ontvangen met een 
 [failure feedback loop](./feedback-failures). We handelen deze melding 
 ook af volgens jouw [uitschrijfgedrag](./database-unsubscribe-behavior).
@@ -73,12 +73,6 @@ Je kunt gebruik maken van de volgende feedback loops:
 * [Feedback loops voor creates](feedback-creates)
 * [Feedback loops voor updates](feedback-updates)
 * [Feedback loops voor deletes](feedback-deletes)
-
-## Feedback loops voor specifieke database of collectie
-
-De Marketing Suite geeft je de mogelijkheid om alle feedback loops zien
-die bij een specifieke database of collectie behoren. Het is nu dus ook 
-makkelijke om te zien welke feedback loops zijn ingesteld.
 
 ## URL validatie
 

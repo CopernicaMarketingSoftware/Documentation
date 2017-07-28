@@ -27,6 +27,7 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET miniview](rest-get-miniview)
-* [PUT miniview](rest-put-miniview)
+* [Verwijder een database](rest-delete-database)
+* [Vraag miniview regels op](rest-get-miniview)
+* [Pas miniview regels aan](rest-put-miniview)
 
