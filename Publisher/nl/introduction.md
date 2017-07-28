@@ -36,3 +36,4 @@ automatiseren? Je kunt alle informatie vinden in onze artikels.
 * [Personalizatie](./personalization)
 * [Followups](./followups)
 * [Afzenderreputatie en deliverability](./sender-reputation)
+* [Achtergrond artikelen](./tips-and-tricks)
