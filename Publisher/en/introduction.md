@@ -41,5 +41,4 @@ need in the links below.
 * [Glossary](./definitions)
 * [Personalization](./personalization)
 * [Followups](./followups)
-* [Sender reputation and deliverability](./sender-reputation)
 * [Background articles](./tips-and-tricks)
