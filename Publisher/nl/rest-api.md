@@ -67,7 +67,6 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/logfiles/$name/xml](./rest-get-logfiles-xml.md)                                         | Downloaden van logfile in XML formaat             |
 | GET       | [api.copernica.com/v1/email/$addres/events](./rest-get-email-events)                                          | Opvragen e-mail events                            |
 | GET       | [api.copernica.com/v1/message/$id/events](./rest-get-message-events)                                          | Opvragen MS bericht events                        |
-| GET       | [api.copernica.com/v1/message/$id/body/](./rest-get-message-body)                                             | Opvragen MS bericht body                          |
 | GET       | [api.copernica.com/v1/old/message/$id/events](./rest-get-old-message-events)                                  | Opvragen Publisher bericht events                 |
 | GET       | [api.copernica.com/v1/old/document/$id/events](./rest-get-old-document-events)                                | Opvragen Publisher document events                |
 | GET       | [api.copernica.com/v1/profile/$id/events](./rest-get-profile-events)                                          | Opvragen profiel events                           |
@@ -102,13 +101,11 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | POST      | [api.copernica.com/v1/view/$id/views](./rest-post-view-views.md)                                              | Aanmaken geneste selectie                         |
 | PUT       | [api.copernica.com/v1/rule/$id](./rest-put-rule.md)                                                           | Bijwerken instellingen van selectieregel          |
 | POST      | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions.md)                                    | Aanmaken nieuwe conditie bij selectieregel        |
-| PUT       | [api.copernica.com/v1/rule/$id/conditions/type](./rest-put-rule-conditions.md)                                | Aanpassen conditie bij selectieregel              |
 | PUT       | [api.copernica.com/v1/profile/$id](./rest-put-profile.md)                                                     | Bijwerken profielgegevens                         |
 | PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields.md)                                       | Bijwerken profielvelden                           |
 | POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests.md)                                | Toevoegen interesses van profiel                  |
 | PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests.md)                                 | Overschrijven interesses van profiel              |
-| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                            | Toevoegen van subprofielen aan een profiel        |
-| PUT       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-put-profile-subprofiles.md)                             | Bijwerken van subprofielen aan een profiel        |
+| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)                            | Toevoegen van een subprofielen aan een profiel    |
 | PUT       | [api.copernica.com/v1/collection/$id](./rest-put-collection.md)                                               | Bijwerken collectiegegevens                       |
 | POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields.md)                                | Aanmaken veld in een collectie                    |
 | PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)                               | Bijwerken veld in collectie                       |
@@ -118,7 +115,7 @@ De volgende PUT en POST methodes zijn beschikbaar:
 | POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules.md)                                      | Aanmaken nieuwe miniselectieregel                 |
 | PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule.md)                                                   | Bijwerken instellingen van miniselectieregel      |
 | POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions.md)                            | Aanmaken nieuwe conditie bij miniselectieregel    |
-| PUT       | [api.copernica.com/v1/minirule/$id/conditions/$type](./rest-put-minirule-conditions.md)                       | Aanpassen conditie bij miniselectieregel          |
+
 ## DELETE
 
 DELETE methodes worden gebruikt om data te verwijderen. Dit is permanent, 

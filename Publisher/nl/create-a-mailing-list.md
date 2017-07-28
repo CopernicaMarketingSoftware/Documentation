@@ -9,7 +9,7 @@ bij het versturen van een mail.
 Zie het [artikel over je database inrichten](./quick-database-guide) 
 voor meer informatie.*
 
-Je creërt een mailinglist in drie stappen:
+Je creëert een mailinglist in drie stappen:
 
 1.  Voeg een "nieuwsbrief" veld toe aan je database.
 2.  Stel je [uitschrijf gedrag](./database-unsubscribe-behavior) in en voeg uitschrijf links toe.

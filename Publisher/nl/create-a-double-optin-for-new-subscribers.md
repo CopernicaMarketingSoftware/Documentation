@@ -1,6 +1,6 @@
 # Publisher Tutorial: Dubbele opt-in voor nieuwe profielen
 
-Je mag van de Wet niet door rood rijden en alleen commerciele e-mails
+Je mag van de Wet niet door rood rijden en alleen commerciële e-mails
 versturen aan personen die zich hiervoor hebben aangemeld. Zulks een
 aanmelding noemt men in de wereld van de internet marketing ook wel
 opt-in (en een uitschrijving opt-out). Een dubbel opt-in gaat nog even
@@ -24,7 +24,7 @@ De dubbele optin heeft een aantal belangrijke voordelen ten aanzien van
 zijn enkele zusje:
 
 -   De persoon die zich inschrijft is altijd dezelfde persoon als de
-    persoon die de nieuwbrief ontvangt.
+    persoon die de nieuwsbrief ontvangt.
 -   Het e-mailadres waarnaar je de nieuwsbrief verstuurt is altijd een
     werkende
 -   Dit leidt tot significant minder fouten bij het versturen van
@@ -67,10 +67,10 @@ e-mailadres in op te slaan en een veld om de nieuwsbriefvoorkeur van de
 abonnee op te slaan.
 
 Het veld voor e-mailadres dient uiteraard een veld van het type
-[e-mailveld](./database-fields-and-collections)
+[e-mailveld](./database-and-collection-field-types.md)
 te zijn (zodat het systeem weet dat dit veld de adressen bevat).
 
-Van het veld voor nieuwbriefvoorkeur maak je een meerkeuzeveld met de
+Van het veld voor nieuwsbriefvoorkeur maak je een meerkeuzeveld met de
 volgende opties voorgedefinieerd:
 
 -   *lege optie*
@@ -95,7 +95,7 @@ Dit wordt een aanmeldformulier met hierin **twee velden** opgenomen.
     database
 2.  Een **onzichtbaar veld** die gekoppeld is aan het veld met de
     nieuwbriefvoorkeur. De standaardwaarde van dit onzichtbare veld zet
-    je op ‘Ja, niet bevestigd’
+    je op ‘Ja, niet bevestigd'
 
 Let op, omdat er straks een automatische e-mail moet worden verstuurd
 naar de invuller, gebruikt je bij de formulierinstellingen ‘inloggen als
@@ -147,12 +147,12 @@ Maak een nieuwsbriefselectie
 Maak tot slot in de database een
 [nieuwsbriefselectie](./create-a-mailing-list.md)
 (Selectietype: *Check op veldwaarde*) aan waarin alleen mensen worden
-opgenomen waarbij de waarde in het nieuwbriefveld gelijk is aan ‘Ja,
+opgenomen waarbij de waarde in het nieuwsbriefveld gelijk is aan ‘Ja,
 bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 ## Meer informatie
 
-- [Followups](./followups)
+- [Followups](./follow-up-manager)
 * [Selectie condities](./selections-conditions)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)

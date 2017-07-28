@@ -14,13 +14,14 @@ de meeste API methodes precies hetzelfde werken of je nou HTTP POST of PUT
 gebruikt, geldt dit niet voor deze methode. HTTP PUT is vereist. Als je toch
 een POST zou sturen, dan [maak je een nieuw profiel aan](rest-post-database-profiles). 
 
+
 ## Beschikbare parameters
 
 Bij deze methodes zijn er twee verplichte manieren om data mee te geven: via de URL en als body van het HTTP request. Over de body vindt je meer onder het kopje body data. Aan de URL kun je de volgende parameters toevoegen:
 
-* **fields**: verplichte parameter om de profielen te selecten die worden aangepast
+* **fields**: verplichte parameter om de profielen te selecteren die worden aangepast
 * **create**: boolean parameter om aan te geven dat een nieuw profiel moet worden aangemaakt indien er geen matchende profielen zijn
-* **async**: boolean parameter om aan te geven dat de profiel asynchroon moeten worden aangemaakt. De API methode returnt dan onmiddellijk, en gaat in de achtergrond verder met het bijwerken van profielen
+* **async**: boolean parameter om aan te geven dat de profiel asynchroon moeten worden aangemaakt. De API methode returned dan onmiddellijk, en gaat in de achtergrond verder met het bijwerken van profielen
 
 De *fields* parameter is verplicht. Deze parameter voorkomt dat je met een
 enkele API call alle profielen in de database bijwerkt. Alleen de matchende
@@ -37,6 +38,7 @@ als er veel matchende profielen zijn. Als je niet zo lang op een API
 call wilt wachten, kun je de parameter *async* op 1 zetten. De API retourneert
 dan onmiddellijk, terwijl de operatie in de achtergrond wordt voortgezet.
 
+
 ## Body data
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
@@ -44,45 +46,43 @@ PUT request toevoegen. In de body van het request plaats je de velden die je
 wilt bijwerken, met de bijbehorende data. Deze body data wordt ook gebruikt
 als de *create* parameter op true staat en een profiel wordt aangemaakt.
 
+
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call wordt een profiel met ID 4567 aangepast.
 
 ```php
-// vereiste scripts
+// dependencies
 require_once('copernica_rest_api.php');
 
-// profiles id dat je wilt bewerken
-$id = 1;
-
-// verander dit naar je access token
+// change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-
-// data voor het verzoek
-$data = array(
-    'firstname' =>  'John',
-    'lastname'  =>  'Doe',
-    'email'     =>  'johndoe@example.com'
-);
-
-// parameters voor het verzoek
+// parameters to select profiles
 $parameters = array(
     'fields'    =>  array("customerid==4567"),
     'async'     =>  1,
     'create'    =>  0
 );
 
-// voer het verzoek uit
-$api->put("database/{$id}/profiles", $data, $parameters );
+// data to pass to the call
+$data = array(
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
+);
+
+// do the call
+$api->put("database/1234/profiles", $parameters, $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+   
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database profiles](rest-get-database-profiles)
-* [PUT profile fields](rest-put-profile-fields)
-* [DELETE profile](rest-delete-profile)
+* [Opvragen van alle profielen](rest-get-database-profiles)
+* [Profiel bijwerken](rest-put-profile-fields)
+* [Profiel verwijderen](rest-delete-profile)

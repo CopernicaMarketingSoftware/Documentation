@@ -16,7 +16,7 @@ beschikbare veldtypes.
 | Veldtype           | Omschrijving                                                                                  |
 |--------------------|-----------------------------------------------------------------------------------------------|
 | Numeriek veld      | Alleen numerieke waardes [0-9]. Kan geen leeg veld zijn. Geef altijd standaardwaarde 0 op.    |
-| Tekstveld          | Letters [A-Z], nummerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 225.  |
+| Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 225.  |
 | Grote velden       | Tekstveld tot 16 mln. tekens. Word niet aangeraden, omdat je niet kunt indexeren.             |
 | Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden. |
 | E-mailveld         | E-mailveld is een tekstveld, bedoelt voor het opslaan van e-mailadressen.                     |

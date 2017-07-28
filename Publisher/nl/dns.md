@@ -50,7 +50,7 @@ soorten records worden aangemaakt.
 
 ## Caching
 
-DNS is een gedistribuurd systeem en bestaat uit miljoenen nameservers wereldwijd.
+DNS is een gedistribueerd systeem en bestaat uit miljoenen nameservers wereldwijd.
 Elke server beheert een klein deel van de database, en er is niet één DNS 
 server die alle gegevens van alle domeinnamen van de hele wereld heeft. Daarom 
 kan een DNS lookup soms enige tijd duren: sommige DNS lookups kunnen niet onmiddellijk 
@@ -73,7 +73,7 @@ Als het adres niet in de cache staat, dan doet de provider een lookup bij een
 DNS server hoger in de hierarchie. Deze server weet het antwoord wellicht wel,
 maar kan ook doorverwijzen: "nee, ik weet niet wat het ip adres van 
 www.example.com is, maar vraag het eens bij server X, want die weet heel veel
-van *.com adressen". Voor sommige lookups, vooral die van weiniggebruikte
+van *.com adressen". Voor sommige lookups, vooral die van weinig gebruikte
 domeinen in verre landen, zijn er meerdere doorverwijzingen en lookups nodig 
 voordat de DNS server de juiste gegevens heeft achterhaald en je een antwoord 
 kan terugsturen.

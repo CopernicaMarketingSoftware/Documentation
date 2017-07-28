@@ -25,7 +25,6 @@ broncode van het template of in een tekstblok in het document.
         Stuur mij geen e-mails meer
     </a>
 
-
 ## Extra opties
 
 Nadat een ontvanger op de uitschrijflink heeft gedrukt, wordt hij of zij

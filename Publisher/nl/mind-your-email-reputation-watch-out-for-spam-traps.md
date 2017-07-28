@@ -70,7 +70,7 @@ ongeldige of verlopen e-mailadressen.
 Uiteindelijk komt het er op neer dat spamtraps niet de oorzaak, maar een
 symptoom van het probleem zijn. Een verzendlijst vol spamvallen is
 namelijk niet meer dan een teken van een vervuilde database. Wees dus
-zorgvuldig bij het verzamelen van informatie en houd je database
+zorgvuldig bij het verzamelen van informatie en houdt je database
 schoon.
 
 

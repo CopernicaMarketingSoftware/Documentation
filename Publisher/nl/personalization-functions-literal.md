@@ -17,13 +17,13 @@ moet worden tussen de begin tag (`{literal}`) en end tag (`{\literal}`)
 te plaatsen.
  
     <script>
-       // These braces would be automatically escaped in Smarty 3
-       // because of the whitespace
+       // Deze haakjes zouden in Smarty 3 automatisch 
+       // genegeerd worden door de whitespace
        function myFoo {
          alert('Foo!');
        }
-       // This is a good place to use the literal block
-       // to escape while keeping the function readable.
+       // Dit is een goede plek voor het literal blok,
+       // omdat dat de code leesbaar houdt.
        {literal}
          function myBar {alert('Bar!');}
        {/literal}

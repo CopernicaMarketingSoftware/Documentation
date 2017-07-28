@@ -1,93 +1,78 @@
 # Enquêtes in Publisher
 
-In Publisher is het mogelijk om zelf makkelijk enquêtes in elkaar te 
-zetten om erachter te komen wat een klant vindt van jouw product of dienst. 
-Het is daarnaast een makkelijke manier om data te verzamelen. Let echter 
-wel op dat je de juiste vragen stelt op de juiste manier om database 
-corruptie te voorkomen. Voor tips over het stellen van vragen klik je 
-[hier](./prevent-database-corruption).
+Nieuwsgierig naar de mening van je klanten over jouw product of dienst?
+Met de enquêtemodule maak je je eigen enquêtes in een handomdraai. De
+resultaten kan je naderhand downloaden naar een excelbestand. Of bekijk
+in Copernica de antwoorden van individuele relaties.
 
-Let op: Enquêtes maken in de Marketing Suite is helaas nog niet mogelijk.
+De enquêtemodule is te vinden in het onderdeel **Content**. Vanuit het
+menu **Enquête** kan je een nieuwe enquête aanmaken. Bestaande enquêtes
+zijn terug te vinden in het linkeroverzicht.
 
-## Een enquête maken
+Let op: Het is op het moment (nog) niet mogelijk enquêtes te maken in 
+Marketing Suite.
 
-Je kan gemakkelijk zelf een enquête aanmaken onder `Content` in de 
-Publisher. Het is zelfs mogelijk data automatisch aan profielen te linken 
-als je op een slimme manier hyperlinks creëert.
+## Enquêtes maken
 
-Als je je enquête een naam en beschrijving hebt gegeven kun je vragen 
-toe gaan voegen. Er zijn verschillende soorten vragen, zoals de open 
-vraag en de multiple choice vraag. De soorten vragen worden behandeld 
-in [dit artikel](./surveys-question-types). Vragen kun je altijd 
-aanmaken, aanpassen en verwijderen in het **Enquête** menu. 
+Hier vindt je een aantal artikelen die je op weg helpen met het maken 
+van je enquêtes:
 
-Voor elke vraag krijg je ook een aantal instellingen. Hier kun je aangeven 
-of een vraag optioneel is of op een nieuwe pagina moet beginnen bijvoorbeeld. 
-Bij een multiple choice vraag kun je ervoor kiezen om wel of niet meerdere 
-antwoorden toe te staan.
-
-Om je enquête af te maken stuur je deelnemers door naar een bedanktpagina. 
-Je kunt deze zelf van inhoud voorzien. Het is hierbij niet mogelijk om 
-[personalizatie](./personalization) te gebruiken, maar je kan eventueel 
-wel doorverwijzen naar je eigen pagina. Dit doe je met de volgende code:
-
-`<script type="text/javascript"> document.location = "http://www.mijnwebsite.nl/bedankt"; </script>`
+-   [Een nieuwe enquête
+    maken](./surveys-create)
+-   [Vraag types](./surveys-question-types)
+-   [Vraag opties](./surveys-question-options)
+-   [Enquêtevragen verwijderen, bewerken of
+    verplaatsen](./surveys-edit)
+-   [De enquête bedanktpagina
+    instellen](./surveys-conclude-page)
+-   [Tekst van enquête buttons
+    wijzigen](./surveys-edit-buttons)
+-   [Gegeven antwoorden van een enquête mailen in
+    opvolgactie](./surveys-email-results)
+-   [Enquête titel en introductietekst
+    aanpassen](./surveys-title-introduction.md)
+-   [Conditionele vragen in
+    enquête](./surveys-question-conditional)
+-   [Enquête
+    opvolgacties](./surveys-followup)
+-   Herinneringsmail sturen voor invullen enquête
+-   [Vraag op nieuwe pagina beginnen](./surveys-question-options)
 
 ## Enquête publiceren
 
-### Linken
+Enquêtes kunnen alleen worden gepubliceerd in webpagina's. Het is dus
+niet mogelijk om een enquête te e-mailen.
 
-De beste manier om naar je enquête te linken is met de profiel identifier 
-en code. Door deze informatie mee te geven kunnen de resultaten namelijk 
-meteen aan het profiel gelinkt worden.
+-   [Enquête publiceren met {survey}
+    tag](./surveys-publish)
+-   Enquête weer offline halen
+-   Aantal keer invullen per gebruiker beperken
+-   [Vanuit e-mailing naar enquête
+    linken](./linking-to-your-website-from-an-emailing.md)
 
-Stel dat dit de link naar je enquête is:
+## Enquête resultaten
 
-`http://www.jouwdomein.com/enquete`
+Je bent natuurlijk nieuwsgierig naar de antwoorden die zijn gegeven in
+de enquête. Je kan de resultaten in Copernica bekijken, of downloaden
+naar een text-bestand die geopend kan worden met bijvoorbeeld Excel.
 
-Dan kun je de volgende link gebruiken voor profielen:
+-   [De enquête resultaten
+    exporteren](./surveys-export-results)
+-   Resultaten per deelnemer bekijken
+-   [Gegeven antwoorden enquête bij profiel
+    inzien](./surveys-view-results)
+-   [Enquêteresultaten
+    wissen](./surveys-reset-results)
 
-`http://www.jouwdomein.com/enquete?profile={$profile.id}&code={$profile.code}`
+## Opmaak van enquête
 
-En de volgende voor subprofielen:
+Copernica maakt gebruik van een standaard CSS stylesheet en XSLT voor de
+enquêtes. Je bent vrij om deze aan te passen, zodat ze naadloos
+aansluiten bij jouw huisstijl of dat van een klant.
 
-`http://www.jouwdomein.com/enquete?subprofile={$subprofile.id}&code={$subprofile.code}`
+-   [Eigen CSS of XSLT gebruiken voor
+    enquête](./stylesheets.md)
+-   [Het hekje (\#) bij elke vraag
+    verwijderen](./surveys-remove-hashtag.md)
+-   [Corruptie in de database voorkomen](./database-marketing-and-web-surveys-avoid-corruption.md)
 
-Wanneer een profiel deze link gebruikt om de enquête in te vullen kun je 
-daarna de antwoorden terugvinden onder het tabjes *Enquêtes* onder het profiel.
-
-### Invoegen op webpagina
-
-Als je zelf je enquête niet host kun je deze ook plaatsen op een Copernica 
-[website](./websites). Met de volgende tag hoef je alleen de naam van 
-je enquête in te vullen:
-
-`{survey name='enquetenaam'}`
-
-Je eigen XSLT stylesheet kun je gebruiken als volgt:
-
-`{survey name='enquetenaam' xslt='xsltnaam'}`
-
-Een [XSLT](css-and-xslt) stylesheet kun je aanmaken onder het kopje `Stijl`.
-
-## Resultaten
-
-De resultaten van een enquête kun je per profiel inzien wanneer je het 
-profiel zelf hebt geselecteerd. Je kunt er ook voor kiezen om je resultaten 
-te [exporteren](./surveys-export-results) of deze te verwerken met 
-[opvolgacties](./followups).
-
-## Meer informatie
-
-Met enquêtes kun je nog veel meer. Hieronder vindt je een aantal links 
-met meer informatie.
-
-### Algemeen
-
-* [Voorkom database corruptie](./prevent-database-corruption)
-* [Soorten enquête vragen](./surveys-question-types)
-
-### Stijl aanpassen
-
-* [Tekst op knoppen aanpassen](./surveys-edit-buttons)
-* [Het hekje voor nummering verwijderen](./surveys-remove-hashtag)

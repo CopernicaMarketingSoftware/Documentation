@@ -5,13 +5,13 @@ naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
-Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 
 ## Beschikbare parameters
 
 * **name**: naam van de nieuw aan te maken database
 * **description**: optionele omschrijving van de database
 * **archived**: optionele boolean waarde om de database direct te archiveren
+
 
 ## Voorbeeld in PHP
 
@@ -32,13 +32,13 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("databases", $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET databases](rest-get-databases)
+* [Opvragen van een lijst van databases](rest-get-databases)
+* [Verwijderen van een database](rest-delete-database)

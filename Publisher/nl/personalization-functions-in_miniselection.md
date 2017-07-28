@@ -1,7 +1,7 @@
 # Personalizatie functies: in_miniselection
 
 De *in_miniselection* functie kan gebruikt worden om te checken of een 
-gespecifeerd subprofiel in een specifieke miniview zit. Deze functie is 
+gespecificeerd subprofiel in een specifieke miniview zit. Deze functie is 
 ontwikkeld door Copernica en kan gebruikt worden om content te specialiseren 
 met behulp van miniselecties in je database. Je kunt bijvoorbeeld een 
 selectie maken van vrouwen waarvan je weet dat ze kinderen hebben en in 

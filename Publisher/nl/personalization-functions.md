@@ -1,4 +1,4 @@
-# Personalisatie functies
+# Personalizatie functies
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er
 hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende 
@@ -49,15 +49,13 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{linkpdf}](./personalization-functions-linkpdf)                      | linken naar een PDF bestand                                                  |
 | [{loadfeed}](./personalization-functions-loadfeed)                    | inladen van een externe RSS feed                                             |
 | [{loadfile}](./personalization-functions-loadfile)                    | inladen van een bestand                                                      |
-| [{loadprofile}](./personalization-functions-loadprofile)              | inladen van een andere database                                              |
-| [{loadsubprofile}](./personalization-functions-loadsubprofile)        | inladen van een subprofiel                                                   |
 | [{mailonly}](./personalization-functions-mailonly)                    | blok markeren dat alleen in de mailversie wordt getoond                      |
 | [{math}](./personalization-functions-math)                            | berekening uitvoeren                                                         |
 | [{rawcapture}](./personalization-functions-rawcapture)                | als {capture}, maar dan zonder html escaping                                 |
 | [{strip}](./personalization-functions-strip)                          | witruimte verwijderen                                                        |
 | [{survey}](./personalization-functions-survey)                        | inladen van een enquête                                                      |
 | [{rdelim}](./personalization-functions-delim)                         | rechteraccolade                                                              |
-| [{textformat}](./personalization-functions-textformat)                | tekst formatteren                                                            |
+| [{textformat}](./personalization-functions-textform)                  | tekst formatteren                                                            |
 | [{unsubscribe}](./personalization-functions-unsubscribe)              | afmeldlink                                                                   |
 | [{webform}](./personalization-functions-webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |

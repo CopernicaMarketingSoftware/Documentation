@@ -4,14 +4,15 @@ Een methode om condities voor een miniregel aan te passen. Deze methode onderste
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen. 
-Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
+
 
 ## Beschikbare parameters
 
 De message body kan de volgende eigenschappen hebben voor een conditie:
 
 - type: type van de conditie
+- rule: numeriek ID van de miniregel waar de conditie toe hoort
 
 De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
 
@@ -30,32 +31,34 @@ De precieze eigenschappen hangen af van het type van de conditie. Voor een overz
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
 ```php
-// vereiste scripts
+// dependencies
 require_once('copernica_rest_api.php');
 
-// verander dit naar je access token
+// change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor het verzoek
+// parameters to pass to the call
 $data = array(
 	'type' = 'date'
 )
 
-// voer het verzoek uit
+// do the call, and print result
 $api->post("minirule/id/conditions", array(), $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [GET miniregel](./rest-get-minirule)
-* [POST miniregel](./rest-put-minirule)
+* [GET minirules](./rest-get-minirules)
+* [GET specific minirule](./rest-get-minirule)
+* [POST minirule](./rest-post-minirule)

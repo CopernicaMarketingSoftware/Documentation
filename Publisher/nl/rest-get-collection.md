@@ -39,7 +39,8 @@ print_r($api->get("collection/1234"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [PUT database](rest-put-database)
+* [Bewerken van een collectie](rest-put-database)

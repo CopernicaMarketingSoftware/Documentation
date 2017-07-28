@@ -12,10 +12,11 @@ volgende adres:
 
 Als `$id` moet je de numerieke identifier van een collectie opgeven.
 
+
 ## Geretourneerde velden
 
 * **behavior**: De daadwerkelijke instelling.
-* **fields**: De nieuwe subprofielinsteling (alleen van toepassing indien het veld behavior op 'update' staat)
+* **fields**: De nieuwe subprofielinstelling (alleen van toepassing indien het veld behavior op 'update' staat)
 
 Het veld "behavior" kan drie mogelijke waardes hebben en bepaalt hoe Copernica
 met afmeldingen omgaat. De ondersteunde waardes zijn "nothing", "remove" en "update".
@@ -46,8 +47,9 @@ print_r($api->get("collection/1234/unsubscribe"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [PUT collection unsubscribe](rest-put-collection-unsubscribe)
+* [Afmeldalgoritme instellen](rest-put-collection-unsubscribe)
 

@@ -1,6 +1,6 @@
 # Personaliseren binnen de Publisher
 
-In de Publisher kun je gemakkelijk nieuwsbrieven personaliseren. Je doet dit met behulp 
+In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp 
 van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 nieuwsbrieven.
@@ -25,13 +25,13 @@ gebruiken:
 ```text
 Beste {$aanhef} {$naam},
     
-Je ontvangt deze e-mail, omdat bent aangemeld 
+Je ontvangt deze e-mail omdat bent aangemeld 
 met het volgende e-mailadres: {$email}.
 ```
 
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
-in je database met de [in_selection](./personalization-functions-in_selection) 
-en [in_miniselection](./personalization-functions-in_miniselection) functies.
+in je database met de [in_selection](./personalization-function-in_selection) 
+en [in_miniselection](./personalization-function-in_miniselection) functies.
 
 Echter, er zijn wel wat belangrijke dingen om op te letten als je werkt met 
 Smarty:
@@ -108,6 +108,7 @@ Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zel
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
 
+
 ## Waar kun je Smarty-personalisatie gebruiken?
 
 Je kunt vrijwel overal Smarty personalisatie toepassen:
@@ -126,7 +127,8 @@ Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
 * In enquêtes
 * In content feeds
 
-## Meer informatie
+
+## Verder lezen
 
 * [Overzicht van personalisatievariabelen](./personalization-variables.md)
 * [Overzicht van personalisatiemodifiers](./personalization-modifiers.md)

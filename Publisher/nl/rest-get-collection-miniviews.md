@@ -2,7 +2,7 @@
 
 Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,
-kun je een HTTP GET requet naar het volgende adres sturen:
+kun je een HTTP GET request naar het volgende adres sturen:
 
 `https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
 
@@ -54,8 +54,9 @@ print_r($api->get("collection/id/miniviews", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [POST collection miniviews](rest-post-collection-miniviews)
-* [GET miniview rules](rest-get-miniview-rules)
+* [Miniselectie toevoegen aan collectie](rest-post-collection-views)
+* [Selectieregels opvragen](rest-get-miniview-rules)

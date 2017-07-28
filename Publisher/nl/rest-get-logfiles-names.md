@@ -27,10 +27,10 @@ bevat het type als prefix en ook de datum.
 | [cdm-retry](rest-cdm-retry-logfile)               | Info over herzonden mails verstuurd via MS                                          |
 | [cdm-unsubscribe](rest-cdm-unsubscribe-logfile)   | Info over uitschrijvingen als gevolg van een mail verstuurd via MS                  |
 | [pom-attempts](rest-pom-attempts-logfile)         | Algemene info over mails verstuurd met Publisher                                    |
-| [pom-abuses](rest-pom-abuse-logfile)              | Info over mails verstuurd met Publisher die een misbruik' notificatie veroorzaakten |
+| [pom-abuses](rest-pom-abuses-logfile)             | Info over mails verstuurd met Publisher die een misbruik' notificatie veroorzaakten |
 | [pom-clicks](rest-pom-clicks-logfile)             | Info over clicks in mails verstuurd via Publisher                                   |
 | [pom-deliveries](rest-pom-delivery-logfile)       | Info over aangekomen mails verstuurd via Publisher                                  |
-| [pom-errors](rest-pom-error-logfile)              | Info over errors in mails verstuurd via Publisher                                   |
+| [pom-errors](rest-pom-errors-logfile)             | Info over errors in mails verstuurd via Publisher                                   |
 | [pom-impressions](rest-pom-impression-logfile)    | Info over impressies uit mails verstuurd via Publisher                              |
 | [pom-retries](rest-pom-retry-logfile)             | Info over herzonden mails verstuurd via Publisher                                   |
 | [pom-unsubscribes](rest-pom-unsubscribe-logfile)  | Info over uitschrijvingen als gevolg van een mail verstuurd via Publisher           |
@@ -59,6 +59,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van API calls](./rest-api.md)
-* [GET logfiles JSON](./rest-get-logfiles-json.md)
-* [GET logfiles CSV](./rest-get-logfiles-csv.md)
-* [GET logfiles XML](./rest-get-logfiles-xml.md)
+* [GET logfiles .csv](./rest-get-logfiles-json.md)
+* [Downloaden van een logfile in CSV formaat](./rest-get-logfiles-csv.md)
+* [Downloaden van een logfile in XML formaat](./rest-get-logfiles-xml.md)

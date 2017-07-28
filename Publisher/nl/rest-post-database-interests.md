@@ -7,8 +7,8 @@ is beschikbaar via het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een interesse aan wilt toevoegen. De naam van de interesse, 
-en eventuele andere waardes moeten als message body aan het HTTP request worden toegevoegd. 
-Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+en eventuele andere waardes moeten als message body aan het HTTP request worden toegevoegd.
+
 
 ## Beschikbare parameters
 
@@ -16,6 +16,7 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 
 * **name**: Naam van de nieuw aan te maken interesse. Dit veld is verplicht
 * **group**: Optionele groepnaam. Interesses met dezelfde groupnaam worden bij elkaar gezet in de user interface
+
 
 ## Voorbeeld
 
@@ -36,14 +37,14 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("database/id/interests", $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database interests](rest-get-database-interests)
-* [DELETE database interest](rest-delete-database-interest)
+* [Alle interesses van een database opvragen](rest-get-database-interests)
+* [Interesse verwijderen](rest-delete-database-interest)

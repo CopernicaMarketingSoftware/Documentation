@@ -6,6 +6,7 @@ call naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als parameters worden
@@ -14,6 +15,7 @@ toegevoegd:
 * start: eerste database die wordt opgevraagd;
 * limit: lengte van de batch die wordt opgevraagd;
 * total: toon wel/niet het totaal aantal databases in de output.
+
 
 ## Geretourneerde velden
 
@@ -35,6 +37,7 @@ collections op te vragen:
 * [GET fields](rest-get-database-fields)
 * [GET interests](rest-get-database-interests)
 * [GET collections](rest-get-database-collections) 
+
 
 ## Voorbeeld
 
@@ -61,5 +64,5 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database](rest-get-database)
+* [GET id van database](rest-get-database)
 * [POST databases](rest-post-databases)

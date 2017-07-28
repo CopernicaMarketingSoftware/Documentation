@@ -65,7 +65,7 @@ ongeluk mails stuurt die niet of niet geheel matchen met SPF en DKIM. Dat kan
 immers een indicatie zijn dat iemand misbruikt maakt van jouw domeinnaam, of dat 
 één van je medewerkers zijn instellingen niet goed heeft staan, of dat er een 
 server verkeerd is geconfigureerd. Als je een e-mailadres in je DMARC record 
-opneemt, dan zul je opeens e-mails gaan onvangen met daarin DMARC rapportages.
+opneemt, dan zul je opeens e-mails gaan ontvangen met daarin DMARC rapportages.
 
 Als je gebruik maakt van een [sender domain](sender-domains) neemt Copernica al
 deze DNS-perikelen van je over. Dit geldt ook voor de rapportages. Als je een 
@@ -113,12 +113,12 @@ Copernica in de wind slaan en je bestaande DMARC record handhaven.
 Als je de CNAME alias aanmaakt (eventueel nadat je het bestaande DMARC record
 hebt verwijderd), dan is vanaf dat moment het dashboard van Copernica de enige
 tool om je DMARC policy in te stellen. Alle DMARC rapportages komen vanaf dat 
-moment binnen bij Copernica en je kunt via het dashboard de DMARC Analyzer
+moment binnen bij Copernica en je kunt via het dashboard de [DMARC Analyzer](DMARC-Analyzer)
 openen om deze rapportages te analyseren. In eerste instantie kun je het best
 de policy zo vriendelijk mogelijk zetten: alle mail accepteren. Hiermee voorkom
 je dat een foutje in je configuratie er toe leidt dat je berichten niet worden
 geaccepteerd. Als je na een paar dagen met behulp van de DMARC Analyzer ziet
-dat alles goed gaat, kun je langzaamaan voor een strictere policy kiezen.
+dat alles goed gaat, kun je langzaamaan voor een strengere policy kiezen.
 
 Als je voor de andere optie kiest, en dus je eigen DMARC record handhaaft, dan 
 heeft de policy instelling die je vindt in het dashboard geen effect. Je moet 

@@ -5,7 +5,8 @@ het werk dat is verricht op het oorspronkelijke OAuth protocol dat in 2006
 is ontworpen. Door OAuth 2.0 kunnen gebruikers toegang verlenen tot gegevens,
 zonder hun gebruikersnaam en wachtwoord uit handen te geven.  
 
-## Waavoor heb je dit nodig?
+
+## Waarvoor heb je dit nodig?
 
 De OAuth2 functionaliteit komt van pas als je een applicatie maakt die je aan 
 heel veel Copernica accounts wilt koppelen. Bijvoorbeeld aan accounts van 
@@ -20,6 +21,7 @@ je database te analyseren. Vind je dat goed?".
 
 ![](../images/oauth-copernica.png)
 
+
 ## Applicatie aanmelden
 
 De hierboven beschreven koppeling kun je met OAuth2 maken. Om te beginnen 
@@ -33,6 +35,7 @@ Nadat je de applicatie hebt aangemeld, ontvang je een *client_key* en *client_se
 Dit is de logincode en het wachtwoord dat je later moet doorgeven aan Copernica
 om toegang te krijgen tot andere accounts. Let op dat je de waarde van *client_secret*
 geheim houdt. Alleen jij mag toegang hebben tot deze data.
+
 
 ## Button of hyperlink plaatsen
 
@@ -54,6 +57,7 @@ invullen met waardes die voor jou relevant zijn:
 Je moet er goed voor zorgen dat de **state** variabele echt een moeilijk te raden
 random string is. Als de string niet naar onze zin is (te kort, te voorspelbaar),
 dan wordt sowieso geen toegang verleend.
+
 
 ## De terugkeerpagina
 
@@ -92,6 +96,7 @@ Als alles goed gaat, dan krijg je als resultaat van deze API call een
 doen, en de gegevens in het desbetreffende account op te vragen.
 
 `{ access_token : "ed430a95c58fd7d230c9dc453396cf5" }`
+
 
 ## Meer informatie
 

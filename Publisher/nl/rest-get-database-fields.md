@@ -8,6 +8,7 @@ Dit is een HTTP GET call naar het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de velden van wilt opvragen.
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -18,6 +19,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
+
 
 ## Geretourneerde velden
 
@@ -34,6 +36,7 @@ worden de volgende eigenschappen teruggegeven:
 * **textlines**: voor meerregelige velden: het aantal regels dat beschikbaar is om het veld te bewerken
 * **hidden**: boolean waarde of dit veld verborgen is en *nooit* wordt getoond in de user interface
 * **index**: boolean waarde die aangeeft of er een index bijgehouden word (dit maakt lookups en selecties sneller)
+
 
 ## Voorbeeld in PHP
 
@@ -57,9 +60,10 @@ print_r($api->get("database/1234/fields", $parameters));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [POST database fields](rest-post-database-fields)
-* [PUT database field](rest-put-database-field)
-* [DELETE database field](rest-delete-database-field)
+* [Veld toevoegen aan een database](rest-post-database-fields)
+* [Veld bijwerken](rest-put-database-field)
+* [Veld verwijderen](rest-delete-database-field)

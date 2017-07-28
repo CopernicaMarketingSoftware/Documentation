@@ -1,4 +1,4 @@
-# REST API: GET collection subrofile id
+# REST API: GET collection subprofile id
 
 Als je alleen maar de ID's van de subprofielen in een collectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
@@ -40,4 +40,4 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET collection subprofiles](rest-get-collection-subprofiles)
+* [Subprofielen inclusief alle subprofieldata opvragen](rest-get-collection-subprofiles)

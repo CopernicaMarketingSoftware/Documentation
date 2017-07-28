@@ -23,13 +23,13 @@ bevatten de volgende informatie.
 
 ## Andere logfiles
 
-* [Marketing Suite algemeen log](./rest-cdm-attempts-logfile)
-* [Marketing Suite misbruik log](./rest-cdm-abuse-logfile)
-* [Marketing Suite click log](./rest-cdm-click-logfile)
-* [Marketing Suite ontvangst log](./rest-cdm-delivery-logfile)
-* [Marketing Suite impressies log](./rest-cdm-impression-logfile)
-* [Marketing Suite herzendingen log](./rest-cdm-retry-logfile)
-* [Marketing Suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
+* [Marketing suite algemeen log](./rest-cdm-attempts-logfile)
+* [Marketing suite misbruik log](./rest-cdm-abuse-logfile)
+* [Marketing suite click log](./rest-cdm-click-logfile)
+* [Marketing suite ontvangst log](./rest-cdm-delivery-logfile)
+* [Marketing suite impressies log](./rest-cdm-impression-logfile)
+* [Marketing suite herzendingen log](./rest-cdm-retry-logfile)
+* [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
 * [Publisher clicks log](./rest-pom-clicks-logfile)
@@ -40,10 +40,10 @@ bevatten de volgende informatie.
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
 
-## Meer informatie over logfiles
+## Meer informatie over log files
 
 * [Overzicht van alle API calls](rest-api)
-* [GET logfiles names](rest-get-logfiles-names)
-* [GET logfiles JSON](./rest-get-logfiles-json.md)
-* [GET logfiles CSV](./rest-get-logfiles-csv.md)
-* [GET logfiles XML](./rest-get-logfiles-xml.md)
+* [Vraag namen van logfiles op](rest-get-logfiles-names)
+* [Een logfile downloaden in JSON formaat](./rest-get-logfiles-json.md)
+* [Een logfile downloaden in CSV formaat](./rest-get-logfiles-csv.md)
+* [Een logfile downloaden in XML formaat](./rest-get-logfiles-xml.md)

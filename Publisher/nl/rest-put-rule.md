@@ -6,16 +6,18 @@ Dit is een methode om de eigenschappen van een bestaande regel aan te passen. Om
 
 De `$id` moet hier vervangen worden door de ID van de regel waarvan je de eigenschappen aan wilt passen.
 
-## Beschikbare datavelden
+
+## Beschikbare parameters
 
 De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT command:
 
-- **name**: 			naam van de regel;
-- **description**: 		omschrijving van de regel;
-- **view**: 			ID van de selectie waar de regel bij hoort;
-- **conditions**: 		array van condities van de regel;
-- **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geinverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen;
+- **name**: 			naam van de regel
+- **description**: 		omschrijving van de regel
+- **view**: 			ID van de selectie waar de regel bij hoort
+- **conditions**: 		array van condities van de regel
+- **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: 		boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
+
 
 ## Voorbeeld
 
@@ -24,9 +26,6 @@ Het volgende voorbeeld laat zien hoe je deze methode gebruikt met de API:
 ```php
 // vereiste scripts
 require_once('copernica_rest_api.php');
-
-// database id dat je wilt bewerken
-$id = 1;
 
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
@@ -38,10 +37,11 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("database/{$id}", $data));
+print_r($api->put("database/id", array(), $data));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 

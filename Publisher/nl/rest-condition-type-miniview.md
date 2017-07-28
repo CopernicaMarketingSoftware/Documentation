@@ -13,7 +13,7 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 
 * mini-view:                    miniview geassocieerd met de conditie
 * min-subprofiles:              minimum hoeveelheid subprofielen in de miniview
-* max-subprofiles:              maximum hoevelheid subprofielen in de miniview
+* max-subprofiles:              maximum hoeveelheid subprofielen in de miniview
 
 ## Voorbeeld
 

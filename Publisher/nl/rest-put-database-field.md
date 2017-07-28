@@ -10,52 +10,51 @@ De eerste `$id` variabele in de URL moet worden vervangen door de numerieke
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
 tweede `$id` variabele bevat de naam of het ID van het veld.
 
-## Beschikbare datavelden
+
+## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
-* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht;
-* **type**: Type van het nieuwe veld;
-* **value**: Standaardwaarde van het nieuwe veld;
-* **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken;
-* **length**: Maximum lengte voor teksten;
-* **index**: Boolean waarde of een index op het veld moet worden aangemaakt;
-* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst;
-* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface;
-* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd.
+* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
+* **type**: Type van het nieuwe veld
+* **value**: Standaardwaarde van het nieuwe veld
+* **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken
+* **length**: Maximum lengte voor teksten
+* **index**: Boolean waarde of een index op het veld moet worden aangemaakt
+* **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
+* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface
+* **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
 
 Dit zijn precies dezelfde velden die ook worden ondersteund door de
 [methode om nieuwe velden aan te maken](./rest-post-database-fields).
+
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// vereiste scripts
+// dependencies
 require_once('copernica-rest-api.php');
 
-// dataqbase en field id dat je wilt bewerken
-$id = 1;
-$id2 = 2;
-
-// verander dit naar je access token
+// change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor het verzoek
+// data to be sent to the api
 $data = array(
     'name'          =>  'new-field-name'
 );
 
-// voer het verzoek uit
-$api->put("database/{$id}/field/{$id2}", $data);
+// do the call
+api->put("database/1234/field/456", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database fields](rest-get-database-fields)
-* [DELETE database field](rest-delete-database-field)
+* [Opvragen van alle velden van de database](rest-get-database-fields)
+* [Verwijderen van een veld](rest-delete-database-field)

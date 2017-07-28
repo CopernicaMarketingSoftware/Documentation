@@ -12,23 +12,18 @@ geïnteresseerd bent in verzendfouten kan je ook de
 De feedback loop voor bounces wordt gebruikt voor _alle_ berichten die 
 naar het envelope-adres teruggestuurd worden.
 Niet alleen de normale verzendstatusnotificaties, maar ook foutmeldingen
-van servers die het officiele format voor bounce-berichten niet respecteren.
+van servers die het officiële format voor bounce-berichten niet respecteren.
 Al dit soort berichten worden naar Copernica verstuurd, die 
 via de feedback loop jou weer kan informeren.
 
 ## Variabelen
 
-Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
-De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
-
-Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
-bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
-bijvoorbeeld *interests[]=xyz*.
+Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele  | Omschrijving                                                       |  
 |------------|--------------------------------------------------------------------|
-| id         | orignele bericht ID voor de bounce                                 |
-| recipient  | email adres waarnaar de origenele mail werd verstuurd              |
+| id         | originele bericht ID voor de bounce                                 |
+| recipient  | email adres waarnaar de originele mail werd verstuurd              |
 | mailfrom   | "MAIL FROM" adres dat is gebruikt voor het afleveren van de bounce |
 | rcptto     | "RCPT TO" adres dat is gebruikt voor het afleveren van de bounce   |
 | mime       | de verstuurde MIME data (het bericht zelf)                         |

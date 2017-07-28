@@ -19,7 +19,7 @@ worden.
 
 Mailservers gebruiken meestal de officiële Delivery Status Notification 
 (DNS) standaard om bounce-berichten terug te sturen.
-Bounces in dit standaardformat worden automatisch door Copernica herkend, 
+Bounces in dit standaardformaat worden automatisch door Copernica herkend, 
 gelogd en naar de feedback loop doorgestuurd.
 Helaas hebben niet alle mailservers deze standaard overgenomen
 en sommige grote mailservers sturen notificaties in een format
@@ -33,19 +33,15 @@ fouten ook een [feedback loop voor bounces](feedback-bounces) instellen.
 
 ## Variabelen
 
-Met elke POST call worden de variabelen in de onderstaande tabel verstuurd. 
-De POST data wordt verstuurd met het application/x-www-form-urlencoded content type.
+De Marketing Suite stuurt via HTTP of via HTTPS een POST bericht naar jouw server.
+Met elk POST bericht worden de volgende variabelen meegestuurd:
 
-Associatieve arrays zoals "parameters" en "velden" worden verstuurd per sleutel-waarde paar, 
-bijvoorbeeld *parameters[sleutel]=waarde*. Arrays zoals "interesses" worden verstuurd per item, 
-bijvoorbeeld *interests[]=xyz*.
-
-| Variable     | Description                                                                |
+| Variabele     | Description                                                                |
 |--------------|----------------------------------------------------------------------------|
 | id           | unieke id van de fout                                                      |
 | recipient    | emailadres van de fout                                                     |
-| state        | staat in het smtp protocol van de fout ("bounce" for asynchronous bounces) |
-| code         | optinele smtp error code                                                   |
+| state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces) |
+| code         | optionele smtp error code                                                   |
 | extended     | optionele extended smtp status code                                        |
 | description  | optionele omschrijving van de fout                                         |
 | tags         | tags geassocieerd met het bericht                                          |

@@ -1,7 +1,7 @@
 # Personalisatieinstellingen
 
 Bij elk document en template kun je de personalisatie-instellingen wijzigen. 
-Met deze instellingen bepaal je ondermeer in welke taal [datums](./personalization-modifiers#date)
+Met deze instellingen bepaal je onder meer in welke taal [datums](./using-the-smarty-date-function.md)
 worden weergegeven. Je vindt deze instelling linksonder de geopende
 template of document.
 
@@ -19,7 +19,7 @@ vier settings veranderen:
 
 ## Taal en tijdzone
 
-Bij de modifier over het weergeven van [datums en tijden](./personalization-modifiers#date)
+In het artikel over het [weergeven van datums en tijden](./using-the-smarty-date-function.md)
 hebben we dit ook al behandeld: als je de huidige datum wilt weergeven is daar
 een speciale |date_format modifier voor. Deze modifier kun je gebruiken om een 
 tijdstip in computernotatie om te zetten naar een tijdstip in mensennotatie. De
@@ -32,7 +32,7 @@ dan *nu* in New York).
 
 Lang verhaal kort: de codering moet je altijd op UTF-8 zetten. Dat is eigenlijk 
 altijd goed. De UTF-8 karakterset is namelijk een karakterset die eigenlijk alle 
-letters en tekens ter wereld op een efficiente manier kan coderen.
+letters en tekens ter wereld op een efficiënte manier kan coderen.
 
 Hoe zit dat precies? Traditioneel kon e-mail alleen worden gebruikt voor ASCII 
 teksten: teksten die bestaan uit letters van het gewone alfabet, cijfers en een 
@@ -63,7 +63,7 @@ Daarom is ons advies: escape al je variabelen. De Smarty |escape modifier
 kun je gebruiken om alle variabelen te filteren en eventuele scripts of HTML
 code onschadelijk te maken. Gebruik dus "Beste {$naam|escape}" om drama's te 
 voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisch 
-doen. Als je deze optie inschakelt wordt alle personalisatiedata gefiltered en
+doen. Als je deze optie inschakelt wordt alle personalisatiedata gefilterd en
 hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
 
 ## Bewerkmodus

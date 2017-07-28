@@ -26,7 +26,8 @@ $api->delete("subprofile/id");
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-## Meer informatie
+
+## More information
 
 * [Overzicht van alle REST API calls](rest-api)
 * [GET profile](rest-get-profile)

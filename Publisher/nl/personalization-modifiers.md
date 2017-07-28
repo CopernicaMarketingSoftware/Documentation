@@ -34,11 +34,11 @@ De volgende tabel laat alle geldige modifiers zien:
 | [sha512](personalization-modifiers#sha512)                                                 | *sha512 hashing*                                                                                             |
 | [spacify](personalization-modifiers#spacify):separator = " "                               | plaats een verdeler tussen elk input teken                                                                   |
 | [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
-| [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschrijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
-| [substr](personalization-modifiers#substr):start position:length                           | geef de substring teurg vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
+| [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
+| [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
 | [tolower](personalization-modifiers#tolower)                                               | zet alle tekens om naar kleine letters                                                                       |
 | [toupper](personalization-modifiers#toupper)                                               | zet alle tekens om naar grote letters                                                                        |
-| [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kunten van het inputveld                                       |
+| [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kanten van het inputveld                                       |
 | [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | deel de inputvelden op die niet langer dan lengte en toevoegen zijn aan het eind. break_words = true staat het opdelen van delen van woorden toe.                                                                                                                                                                                                |
 | [ucfirst](personalization-modifiers#ucfirst)                                               | vervang eerste teken met een hoofdletter                                                                     |
 | [urlencode](personalization-modifiers#urlencode)                                           | codeer input om te gebruiken in een url                                                                      |
@@ -157,10 +157,10 @@ is gelijk aan:
 ## indent
 
 Met deze modifier kun je indentatie toevoegen aan je tekst. 
-Je kunt zelfs specificere hoeveel indentatie er nodig is en welke
+Je kunt zelfs specificeren hoeveel indentatie er nodig is en welke
 tekens indentatie moeten ontvangen. De syntax is indent:num:char en
 de default is 1 en spacing respectievelijk. De modifier wordt 
-genegereerd bij gebruik op een array. 
+genegeerd bij gebruik op een array. 
 Gebruik:
 
 ```text
@@ -202,7 +202,7 @@ Gebruik:
 ## regex_replace
 
 Met deze modifier kun je delen van je tekst vervangen met andere tekst,
-gebasseerd op [regular expressions](@todo). Dit werkt niet als de 
+gebaseerd op [regular expressions](@todo). Dit werkt niet als de 
 variabele een array is.
 Gebruik:
 
@@ -277,7 +277,7 @@ Gebruik:
 
 ## strstr
 
-Met deze modifer kun je naar een string zoeken in de variabele en het 
+Met deze modifier kun je naar een string zoeken in de variabele en het 
 punt aangeven van waar je de rest van de variabele terug wilt hebben.
 Dit kun het gedeelte voor de string zijn, maar ook het gedeelte vanaf de 
 gevonden string. Deze modifier werkt niet op een array.
@@ -349,7 +349,7 @@ Gebruik:
 
 ## ucfirst
 
-Met deze modifer kun je het eerste teken van de tekst vervangen met een
+Met deze modifier kun je het eerste teken van de tekst vervangen met een
 hoofdletter teken.
 Gebruik:
 

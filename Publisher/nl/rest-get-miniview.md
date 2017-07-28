@@ -6,9 +6,11 @@ Een methode om alle metadata van een selectie binnen een collectie op te vragen.
 
 De `$id` hier moet vervangen worden door de ID of de naam van de collectie waarvoor je de selecties op wil vragen.
 
+
 ## Ondersteunde parameters
 
 Er zijn geen ondersteunde parameters voor deze methode.
+
 
 ## Teruggegeven velden
 
@@ -17,6 +19,7 @@ Er zijn geen ondersteunde parameters voor deze methode.
 - **description**: omschrijving van de selectie
 - **parent-type**: bovenliggende structuur van de selectie; selectie of collectie
 - **parent-id**: ID van de bovenliggende selectie/collectie
+
 
 ## Voorbeeld in PHP
 
@@ -35,7 +38,8 @@ print_r($api->get("view/id"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [GET miniview rules](./rest-get-miniview-rules)
+- [Opvragen selectie regels voor een collectie](./rest-get-miniview-rules)

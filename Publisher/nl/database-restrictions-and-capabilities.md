@@ -10,7 +10,7 @@ is te vinden in de Marketing Suite.
 
 ## Gebruiksmogelijkheden instellen
 
-Copernica verkomt dat een nieuwe database of selectie direct gebruikt kan worden.
+Copernica voorkomt dat een nieuwe database of selectie direct gebruikt kan worden.
 Hiermee voorkom je dat per ongeluk mailings worden verstuurd naar een selectie of 
 database, terwijl dat niet de bedoeling was. De databases en selecties die gebruikt
 mogen worden voor mailings moeten specifiek ingeschakeld worden. 
@@ -37,16 +37,9 @@ voldoen om toegelaten te worden.
 
 Reguliere expressies (vaak afgekort naar *regex*) is een krachtig methode 
 om restricties in te stellen. Deze expressies kunnen patronen herleiden en
-de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
+de uitkomst goed of afkeuren. De volgende regex laat alleen postcodes toe
 die bestaan uit 4 getallen, gevolgd door twee letters (0000AA).
 
-`var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;`
-
-Omdat regex een vrij standaard technologie is valt er op het internet nog 
-veel meer informatie over te vinden.
-
-## Meer informatie
-
-* [Database management](./database-introduction)
-* [Database velden en collecties](./database-fields-and-collections)
-* [Database uitschrijfgedrag](./database-unsubscribe-behavior)
+```javascript
+var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
+```

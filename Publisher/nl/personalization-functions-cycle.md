@@ -12,7 +12,7 @@ een andere array van waarden.
 | name           | Naam van de cycle                               |
 | values         | Waarden in de cycle (in array of met delimiter) |
 | print          | Wel/niet de waarde printen                      |
-| advance        | Wel/niet doorgaan naar de volgnde waarde        |
+| advance        | Wel/niet doorgaan naar de volgende waarde        |
 | delimiter      | Delimiter voor cycle                            |
 | assign         | Variabele om output in op te slaan              |
 | reset          | Reset naar eerste waarde                        |

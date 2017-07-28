@@ -1,7 +1,7 @@
 # Database inrichten
 
 Copernica werkt met multidimensionale databases die je helemaal zelf
-kunt inrichten. Multidimensionale databses geven je enorme flexibiliteit
+kunt inrichten. Multidimensionale databases geven je enorme flexibiliteit
 en vrijheid, omdat je zelf kunt bepalen welke velden je toevoegt en uit
 hoeveel lagen je de database laat bestaan.
 

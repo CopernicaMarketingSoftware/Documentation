@@ -7,6 +7,7 @@ opvragen door een HTTP GET verzoek naar de volgende URL te sturen:
 
 De `$id` moet vervangen worden met de ID van de miniselectie.
 
+
 ## Teruggeven velden
 
 Deze methode geeft een array van subprofielen terug. Deze subprofielen zijn JSON objecten met de volgende eigenschappen:
@@ -18,6 +19,7 @@ Deze methode geeft een array van subprofielen terug. Deze subprofielen zijn JSON
 - **collection**: ID van de collectie waar het subprofiel bij hoort
 - **created**: tijdstip van aanmaken van het subprofiel in YYYY-MM-DD hh:mm:ss formaat
 - **modified**: tijdstip van laatste aanpassing van het subprofiel in YYYY-MM-DD hh:mm:ss formaat
+
 
 ## Voorbeeld in PHP
 
@@ -36,7 +38,8 @@ print_r($api->get("miniview/id/subprofiles"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
-- [GET miniview](rest-get-miniview)
+- [Alle selectie metadata opvragen](rest-get-miniview)

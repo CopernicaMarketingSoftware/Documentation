@@ -8,7 +8,8 @@ kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.
 
-## Beschikbare datavelden
+
+## Beschikbare parameters
 
 De volgende variabele kan in de body van het HTTP PUT commando worden
 geplaatst:
@@ -17,6 +18,7 @@ geplaatst:
 * **database**: de ID van de database waar de collectie in staat
 * **fields**: velden in de collectie
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -24,9 +26,6 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 ```php
 // vereiste scripts
 require_once('copernica-rest-api.php');
-
-// collection id dat je wilt bewerken
-$id = 1;
 
 // verander dit naar access token
 $api = new CopernicaRestApi("your-access-token");
@@ -37,12 +36,14 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("collection/{$id}", $data);
+api->put("collection/1234", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database collections](rest-get-database-collections)
+* [Opvragen van een lijst van collecties](rest-get-databases-collections)
+* [Verwijderen van een collectie](rest-delete-collection)

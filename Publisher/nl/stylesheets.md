@@ -31,5 +31,3 @@ ervan direct aan kan passen.
 # Meer informatie
 
 * [Templates](./templates)
-* [Webforms](./webforms)
-* [Surveys](./surveys)

@@ -8,7 +8,7 @@ tekst blok.
 
 ## Voorbeeld
 
-De *linkfile* functie kan gebruikt worden om een file te linken die geupload 
+De *linkfile* functie kan gebruikt worden om een file te linken die geüpload 
 is onder profielen in een webpagina of mail document.
 
 `{linkfile file='path/somepicture.jpg' fallback='defaultimage.jpg'}`

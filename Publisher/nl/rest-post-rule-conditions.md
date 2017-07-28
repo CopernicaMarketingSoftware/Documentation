@@ -1,22 +1,16 @@
 # REST API: POST rule conditions
 
 Een methode om *conditions* voor een *rule* aan te maken. 
-Je kunt de methode aanroepen met een HTTP POST request naar de volgende URL:
+Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de rule waaraan je de 
-condition wilt toevoegen. Bij een succesvolle call wordt de ID van het 
-aangemaakte verzoek teruggegeven.
+De `$id` moet hier vervangen worden door de ID van de rule waaraan je de condition wilt toevoegen.
 
-## Parameters
 
-De body van het bericht kan de volgende eigenschappen bevatten voor een 
-conditie:
+## Verschillende type conditions
 
-- **type**: type van de conditie
-
-Je kunt verschillende type condities gebruiken. 
+Je kunt verschillende conditions aan een rule toevoegen. 
 De precieze eigenschappen hangen af van het type van de conditie. 
 In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
 precies lezen wat iedere condition inhoudt door erop te klikken:
@@ -37,6 +31,7 @@ precies lezen wat iedere condition inhoudt door erop te klikken:
 - [Part condition](./rest-condition-type-part.md)
 - [ReferView condition](./rest-condition-type-referview.md)
 
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -55,15 +50,14 @@ $data = array(
 
 // voer het verzoek uit en print het resultaat
 $api->post("rule/id/conditions", array(), $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
+// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API klasse](rest-php).
+Dit voorbeeld vereist de [REST API class](rest-php).
+
 
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
 * [GET rule](./rest-get-rule)
 * [POST view rules](./rest-post-view-rules)
-* [PUT rule condities](./rest-put-rule-conditions)

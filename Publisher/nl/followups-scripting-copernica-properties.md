@@ -40,7 +40,7 @@ Door "null" als filter mee te geven krijg je alle bestaande objecten voor het ac
 * **articles(PxCDMArticleFilter $filter)**: vraag alle/gefilterde artikelen op
 * **createArticle(PxtLanguage $language, $title)**: maak een artikel aan
 * **articleCategory($identifier)**: vraag artikel categorie op per ID
-* **articleCategories(PxCDMArticleCategoryFilter $filter): vraag alle/gefilterde artikel categorieen op
+* **articleCategories(PxCDMArticleCategoryFilter $filter): vraag alle/gefilterde artikel categorieën op
 * **createArticleCategory(PxtLanguage $language, $name)**: maak artikel categorie aan
 * **articleUrl($identifier)**: vraag artikel URL op per ID
 * **articleUrls(PxCDMArticleUrlFilter $filter)**: vraag alle/gefilterde artikel URLs op
@@ -66,7 +66,7 @@ Door "null" als filter mee te geven krijg je alle bestaande objecten voor het ac
 * **envelopeDomain()**: vraag envelope domain for mail op
 * **setEnvelopeDomain(PxtHostname $hostname**: stel nieuw envelope domain voor mail in
 * **senderIps(PxCDMSenderIpFilter $filter)**: vraag alle/gefilterde toegestane zender IPs op
-* **designatedSenderIp()**: vraag zender IP op uit toegestande zender IPs
+* **designatedSenderIp()**: vraag zender IP op uit toegestane zender IPs
 * **mailQueueProperties()**: vraag mail wachtlijst instellingen op
 * **articleComments(PxCDMArticleCommentFilter $filter)**: vraag alle/gefilterde artikel commentaren op
 * **database($database)**: vraag database op met naam of identifier

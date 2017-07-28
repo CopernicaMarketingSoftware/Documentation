@@ -9,6 +9,7 @@ de volgende URL:
 De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben. 
 
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -29,6 +30,7 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 1 of 2 uur later  (afhankelijk van zomer- en wintertijd) dan de Nederlandse
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
+
 
 ## Geretourneerde informatie
 
@@ -53,7 +55,8 @@ ziet er als volgt uit:
 ]
 ```
 De `event` property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagina](./event-types.md).
+types staan beschreven op de [event types pagnina](./event-types.md).
+
 
 ## Voorbeeld
 
@@ -76,6 +79,7 @@ print_r($api->get("old/message/1sadf323/events", $parameters));
 ```
 Dit voorbeeld vereist de [REST API class](rest-php).
 
-## Meer informatie
+
+## More information## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

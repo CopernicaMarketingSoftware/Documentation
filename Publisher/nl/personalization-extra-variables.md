@@ -37,6 +37,6 @@ In de footer doe je iets soortgelijks:
     {if $property.seizoen == "winter"}
         Alleen op donderdag en vrijdag open van 09:00 tot 17:00 uur.
     {else}
-        Zeven dagen per weeg geopen van 08:00 to 20:00 uur.
+        Zeven dagen per weeg geopend van 08:00 to 20:00 uur.
     {/if}
 

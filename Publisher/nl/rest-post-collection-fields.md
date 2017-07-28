@@ -7,8 +7,8 @@ POST call naar het volgende adres:
 
 De code `$id` moet je vervangen door de numerieke identifier van de collectie
 waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele
-andere waardes moeten als message body aan het HTTP request worden toegevoegd. 
-Bij een succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+andere waardes moeten als message body aan het HTTP request worden toegevoegd.
+
 
 ## Beschikbare parameters
 
@@ -47,29 +47,28 @@ Een veld kan de volgende types hebben:
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// vereiste scripts
+// dependencies
 require_once('copernica_rest_api.php');
 
-// verander dit naar je access token
+// change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor het verzoek
+// data to pass to the call
 $data = array(
     'name'      =>  'extra-veld',
     'type'      =>  'text'
 );
 
-// voer het verzoek uit
+// do the call
 $api->post("collection/1234/fields", $data);
-
-// bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET collection fields](rest-get-collection-fields)
-* [PUT collection field](rest-put-collection-field)
-* [DELETE collection field](rest-delete-collection-field)
+* [Alle velden van een collectie opvragen](rest-get-collection-fields)
+* [Veld bijwerken](rest-put-collection-field)
+* [Veld verwijderen](rest-delete-collection-field)

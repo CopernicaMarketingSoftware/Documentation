@@ -3,7 +3,7 @@
 De linkpdf tag kan gebruikt worden om een link op te stellen naar een 
 bestaand PDF bestand. Eerst moet er een document of template gevonden 
 worden dat matcht met de aanvraag. Deze wordt dan omgezet naar een link, 
-die atuomatisch escaped wordt, tenzij anders gespecificeerd.
+die automatisch escaped wordt, tenzij anders gespecificeerd.
 
 ## Voorbeeld
 

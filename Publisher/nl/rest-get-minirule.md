@@ -6,9 +6,11 @@ Dit is een methode om alle metadata van een regel binnen een selectie in een col
 
 De `$id` hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
 
+
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
+
 
 ## Teruggeven velden
 
@@ -17,8 +19,9 @@ Deze methode geeft een JSON miniregel object terug met de volgende eigenschappen
 - **name**: naam van de regel
 - **view**: ID van de selectie waar de regel bij hoort
 - **conditions**: array van condities van de regel
-- **inversed**: boolean waarde om aan te geven of de regel wel of niet geinverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
+- **inversed**: boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
+
 
 ## Voorbeeld in PHP
 
@@ -37,7 +40,8 @@ print_r($api->get("minirule/1234"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+
 ## Meer informatie
 
-* [Overzicht van alle API methodes](rest-api)
-* [GET miniview rules](./rest-get-miniview-rules)
+- [Overzicht van alle API methodes](rest-api)
+* [Vraag alle regels van een selectie op](./rest-get-miniview-rules)

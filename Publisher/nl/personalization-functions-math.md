@@ -1,7 +1,7 @@
 # Personalizatie functies: math
 
 De *math* functie maakt het mogelijk om wiskunde vergelijkingen uit te voeren 
-in de template. Dit is echter een computationaal zware functie die sneller 
+in de template. Dit is echter een computationeel zware functie die sneller 
 is in PHP. Het wordt niet aangeraden deze functie in loops te gebruiken.
 
 ## Parameters

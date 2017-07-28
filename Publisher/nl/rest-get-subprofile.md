@@ -8,6 +8,7 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
 
+
 ## Geretourneerde velden
 
 De methode retourneert gegevens van een subprofiel. De volgende eigenschappen 
@@ -21,6 +22,7 @@ worden teruggegeven:
 * **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
+
 
 ## Voorbeeld in PHP
 
@@ -39,9 +41,11 @@ print_r($api->get("profile/1234"));
 
 Dit voorbeeld vereist de [REST API class](rest-php).
 
+    
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET collectie subprofiel identifiers](rest-get-collection-subprofileids)
-* [POST profiel subprofielen](rest-post-profile-subprofiles)
-* [DELETE subprofiel](rest-delete-subprofile)
+* [Opvragen van profiel ID's](rest-get-database-subprofileids)
+* [Profiel toevoegen aan een database](rest-post-profile-subprofiles)
+* [Profiel bijwerken](rest-put-subprofile-fields)
+* [Profiel verwijderen](rest-delete-subprofile)

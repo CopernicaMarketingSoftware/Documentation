@@ -8,7 +8,7 @@ tekst blok.
 
 ## Voorbeeld
 
-De *loadfile* functie kan gebruikt worden om een file te laden die geupload 
+De *loadfile* functie kan gebruikt worden om een file te laden die geüpload 
 is onder profielen in een webpagina of mail document.
 
 `{loadfile file='path/somepicture.jpg' fallback='defaultimage.jpg'}`
