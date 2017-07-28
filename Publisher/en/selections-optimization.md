@@ -1,6 +1,13 @@
-# Optimizing selections
+# Selections: Optimization
 
-In Copernica, selections are maintained actively, which means they are rebuilt multiple times a day to keep them updated. This is part of why Copernica is so powerful: all users have to to is specify the conditions for a selection, and Copernica sorts profiles automatically. Active filters do take up some computing power. If your filters are too heavy or you have too many, it can negatively affect your database performance. Organizing a database well makes it perform better and faster. Below, we'll show you how to achieve that.
+In Copernica, selections are maintained actively, which means they are 
+rebuilt multiple times a day to keep them updated. This is part of why 
+Copernica is so powerful: all users have to to is specify the conditions 
+for a selection, and Copernica sorts profiles automatically. Active 
+filters do take up some computing power. If your filters are too heavy 
+or you have too many, it can negatively affect your database performance. 
+Organizing a database well makes it perform better and faster. Below, 
+we'll show you how to achieve that.
 
 ### Delete and conquer
 
@@ -115,6 +122,17 @@ the fastest.
 
 ## More information
 
+Now is the time to create new effective selections. Try the newsletter or 
+birthday selection for example. You can find the articles you might need 
+below.
+
 * [Selections and miniselections](./selections-introduction)
 * [Selection settings](./selections-settings)
 * [Selection conditions](./selections-settings)
+
+### Selection tutorials
+
+* [Selections Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Selections Tutorial: Create a double opt-in](create-a-double-optin-for-new-subscribers).
+* [Selections Tutorial: Newsletter selection](./create-a-mailing-list)
+* [Selections Tutorial: Birthday selection](./how-to-create-a-birthday-selection)

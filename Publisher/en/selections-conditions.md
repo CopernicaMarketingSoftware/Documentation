@@ -1,4 +1,4 @@
-# Rules and conditions
+# Selections: Rules and conditions
 
 As you may know, Copernica determines which profiles are added to a 
 selection based on certain properties. All profile data you store in 
@@ -66,7 +66,9 @@ bike newsletter selection you make two rules: "has interest biking", OR NOT
 
 ## More information
 
-You can find more information and tutorials on often used selections here.
+By removing old selections and indexing you can make your selections faster. 
+We have also written a few tutorials for common selections to help you 
+get started. You can find out more in the articles below.
 
 * [Selection management](./selections-introduction)
 * [Settings for selections](selections-settings)
