@@ -28,7 +28,7 @@
     * [Feedbackloops](./feedback-loops.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks)
-    * [Accounts en gebruikers](accounts-and-users.md)
+    * [Gebruikersbeheer](accounts-and-users.md)
     * [Sender domains](./sender-domains)
     * [Sender reputation](./sender-reputation)
     * [Licentie en facturering](./license-and-billing)
