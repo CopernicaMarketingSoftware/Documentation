@@ -17,7 +17,7 @@ waarden tegenkomen. Je kunt specificeren hoe je omgaat met deze
 dubbele waarden door meer velden toe te voegen, zoals bijvoorbeeld de 
 voornaam. Je kunt zoveel velden toevoegen als je nodig hebt.
 
-Om te soorteren kun je ook kiezen of je profielen oplopend of aflopend 
+Om te sorteren kun je ook kiezen of je profielen oplopend of aflopend 
 wil sorteren en of je alfabetisch of numeriek wil sorteren.
 
 ### Offset en hoeveelheid
