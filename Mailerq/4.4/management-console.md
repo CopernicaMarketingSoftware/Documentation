@@ -20,11 +20,3 @@ Documentation on the Management Console has been split up in the following parts
 * [Live SMTP monitor](mgmt-live "Live SMTP monitoring through the management console")
 * [Local email addresses](mgmt-local "Managing local email addresses through the management console")
 
-
-## View the Management Console demo
-
-If you want to see the MailerQ management console in action without 
-setting up a MailerQ environment, you can take a look at our 
-[Management Console Demo](http://demo.mailerq.com "MailerQ Demo environment").
-The data in this environment is fictional, but all settings are real. 
-Feel free to play around with the settings and explore the options available.
