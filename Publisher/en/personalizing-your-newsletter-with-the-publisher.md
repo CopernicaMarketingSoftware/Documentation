@@ -7,6 +7,15 @@ find a few personalization examples.
 
 ## Use of variables
 
+With Smarty it is easy to store and use variables. Remember though, that 
+there are important rules to keep in mind while working with Smarty:
+
+* Escape variables your users entered by adding |escape after the variable name, not everyone has good intentions!
+* Smarty is capital sensitive. `{$name}` is different than `{$NAME}`;
+* Curcly braces can be used as symbol with [literal](./personalization-functions-literal).
+
+### Database variables
+
 A personalization variable consists of a dollar sign `$`
 and the name of the variable placed between curly braces.
 The following variables can for example be used in a template
@@ -29,18 +38,25 @@ You receive this email, because you subscribed
 with the following email address: {$email}.
 ```
 
+### Template variables
+
+You can also use extra personalization variables by adding them in the 
+Template menu. Here you define the name, the value should be specified 
+when creating the document. You can use the value with **{$property.name}**, 
+where name is replaced with the name of the property.
+
+Let's say you want to give users a score based on their purchases and 
+put it in your email. You don't need the score later (if you do, save it 
+to your database!). You can then set a template variable **score**, calculate 
+and assign the score and use it with **{$property.score}**.
+
+### Custom content
+
 You can also send separate content to different
-[selecties](selections-introduction) in your database
-with the [in_selection](./personalization-functions-in_selection)
+[selections](selections-introduction) in your database
+with the handy [in_selection](./personalization-functions-in_selection)
 and [in_miniselection](./personalization-functions-in_miniselection)
 functions. 
-
-Remember though, that there are important rules to keep in mind
-while working with Smarty:
-
-* Keep it safe by using `escape`;
-* Smarty is capital sensitive. `{$name}` is something else as `{$name}`;
-* Curcly braces can be used as symbol with [literal](./personalization-functions-literal).
 
 ## Escape
 

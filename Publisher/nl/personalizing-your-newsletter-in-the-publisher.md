@@ -8,6 +8,15 @@ nieuwsbrieven.
 
 ## Gebruik van variabelen
 
+Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter 
+wel wat belangrijke dingen om op te letten als je werkt met Smarty:
+
+* Houd het veilig en door de `|escape` toe te passen op variabelen, niet iedereen heeft goede intenties.
+* SMARTY is *hooflettergevoelig*. `{$name}` is dus wat anders dan `{$NAME}`;
+* Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
+
+### Database variabelen 
+
 Een personalisatievariabele bestaat uit een dollarteken `$` en de naam van een variabele,
 geplaatst tussen accolades. De volgende variabelen kun je bijvoorbeeld in een template
 of document gebruiken:
@@ -29,17 +38,23 @@ Je ontvangt deze e-mail omdat bent aangemeld
 met het volgende e-mailadres: {$email}.
 ```
 
+### Template variables
+
+Je kunt ook extra personalizatie variabelen toevoegen door deze aan te maken 
+in het Template menu. Hier definieer je de naam, tijdens het aanmaken van 
+het document geef je er een waarde aan. Gebruik de waarde vervolgens met 
+**{$property.name}**, waar je "name" vervangt door de naam van je variabele.
+
+Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun 
+aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer 
+nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een 
+template variabele **score** instellen en deze gebruiken met **{$property.score}**.
+
+### Custom content
+
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
 in je database met de [in_selection](./personalization-function-in_selection) 
 en [in_miniselection](./personalization-function-in_miniselection) functies.
-
-Echter, er zijn wel wat belangrijke dingen om op te letten als je werkt met 
-Smarty:
-
-* Houd het veilig en door de `escape` toe te passen op variabelen;
-* SMARTY is *hooflettergevoelig*. `{$name}` is dus wat anders dan `{$NAME}`;
-* Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
-
 
 ## Escapen van variabelen
 
