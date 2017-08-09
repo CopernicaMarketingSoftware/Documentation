@@ -1,4 +1,4 @@
-# How to inject email into MailerQ?
+# How to send email with MailerQ?
 
 Once you have a running MailerQ instance, you want to use it to send
 out mailings. But how do you get your mails into MailerQ? There are
