@@ -23,7 +23,7 @@ met een duidelijk begin en eind.
 
 ## Follow-Up Manager (Publisher)
 
-[Follow-ups in Publisher](./publisher-follow-up-manager) zijn altijd 
+[Follow-ups in Publisher](./follow-up-manager-publisher) zijn altijd 
 beschikbaar in het menu van een **database**, **document**, **enquête** 
 of **webformulier**. De Publisher heeft geen scripting API, maar is door 
 de jaren heen ontwikkeld tot een krachtige editor.
