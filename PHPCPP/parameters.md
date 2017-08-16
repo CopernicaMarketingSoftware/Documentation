@@ -185,8 +185,8 @@ This would be identical to the following code in C++:
 ```cpp
 #include <phpcpp.h>;
 
-void example1(Php::Parameters &amp;params) { Php::Value time = params[0]; ... }
-void example2(Php::Parameters &amp;params) { Php::Value time = params[0]; ... }
+void example1(Php::Parameters &params) { Php::Value time = params[0]; ... }
+void example2(Php::Parameters &params) { Php::Value time = params[0]; ... }
 
 extern "C" {
     PHPCPP_EXPORT void *get_module() {
