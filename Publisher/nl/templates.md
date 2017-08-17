@@ -38,7 +38,7 @@ De Publisher hanteert een andere manier om tot een mooie en werkende
 template te komen. In vergelijking met Marketing Suite is de aanpak wat 
 technischer en moeilijker, omdat kennis van HTML en CSS vereist is.
 De Publisher heeft echter wel enkele functionaliteiten die in de Marketing 
-Suite niet bestaan, omdat deze al veel langer in ontwikkeling is. Voor 
+Suite niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. Voor 
 de uitgebreide documentatie over het werken met templates in Publisher 
 kun je terecht in het onderstaande artikel.
 

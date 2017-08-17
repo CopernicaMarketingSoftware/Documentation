@@ -2,7 +2,7 @@
 
 Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de `<body>` tag in je broncode.
 
-```
+```text
 {loadprofile source="Offices" Area="$Area" assign="office"}
 ```
 
@@ -14,7 +14,7 @@ Je kan hiermee bijvoorbeeld een document personaliseren met het telefoonnummer v
 
 ## Voorbeeld
 
-```
+```text
 {loadprofile source="Offices" Area="$Area" assign="office"}
 {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$offices.id"}
 Beste {$FirstName},

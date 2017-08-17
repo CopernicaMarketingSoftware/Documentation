@@ -37,7 +37,7 @@ of subprofiel. Een voorbeeld hiervan zijn de unieke inloggegevens
 zodat relaties automatisch worden ingelogd als zij vanuit een e-mail
 naar een webpagina klikken.
 
-```
+```text
 https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
 ```
 
