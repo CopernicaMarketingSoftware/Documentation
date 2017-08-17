@@ -47,7 +47,7 @@ De volgende tabel laat alle geldige modifiers zien:
 
 ## base64_encode
 
-Met deze modifier codeer je data naar base64. Dit werkt niet op arrays.
+Met deze modifier codeer je data naar base64. Dit werkt alleen niet op arrays.
 Gebruik:
 
 ```text

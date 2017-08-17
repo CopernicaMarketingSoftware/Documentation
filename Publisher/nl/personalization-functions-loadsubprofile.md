@@ -2,7 +2,7 @@
 
 Als de gegevens die je wilt gebruiken zijn opgeslagen in een subprofiel in de collectie account kan je ze bereiken met de loadsubprofile functie. Voor het halen van gegevens uit een collectie gebruik je de functie loadsubprofile. De volgende regel volstaat in het geval van dit voorbeeld:
 
-```
+```text
 {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$office.id"}
 ```
 
@@ -14,7 +14,7 @@ Je kan een document hiermee personaliseren met een telefoonnummer van de juiste 
 
 ## Voorbeeld
 
-```
+```text
 {loadprofile source="Offices" Area="$Area" assign="office"}
 {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$offices.id"}
 Beste {$FirstName},
