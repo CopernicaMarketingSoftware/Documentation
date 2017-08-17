@@ -5,7 +5,6 @@ van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 nieuwsbrieven.
 
-
 ## Gebruik van variabelen
 
 Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter 
@@ -94,7 +93,6 @@ te denken om overal |escape achter te zetten, kun je dat onder de template of
 onder het document via het [formulier met personalisatieinstellingen](./personalization-settings.md)
 aangeven.
 
-
 ## Accolades
 
 Als je accolades in een template of een document wilt opnemen die niet als Smarty 
@@ -115,7 +113,6 @@ zelfs als het wel geldige Smarty variabelen lijken te zijn:
 Als je bovenstaand code in een mailing opneemt, dan wordt de code {accolades}
 niet gezien als Smarty code en blijft het gewoon in de mailing staan.
 
-
 ## Personalisatie testen
 
 Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personalization-testing.md). 
@@ -123,25 +120,24 @@ Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zel
 instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
 database waaraan je je mailing of andere uiting wilt richten.
 
-
 ## Waar kun je Smarty-personalisatie gebruiken?
 
 Je kunt vrijwel overal Smarty personalisatie toepassen:
 
-* De onderwerpregel van een e-mail;
-* In e-mail en webdocumenten;
-* Andere e-mail headers (zoals afzenderadres, CC, BCC, X-Mailer);
+* In de onderwerpregel van een e-mail;
+* In e-mails en webdocumenten;
+* Andere e-mail headers (zoals afzenderadres, CC, BCC, x-headers);
 * Gepersonaliseerde website content;
 * Webformulieren (standaardwaardes, labels, etc.);
-* Hyperlinks and mailto: links;
+* Hyperlinks en mailto links;
+* UTM parameters (bij het uitbreiden van hyperlinks); 
 * Opvolgacties;
 * Etc.
 
-Op een paar plekken kun je momenteel nog geen gebruik maken van personaliseren:
+Op een paar plekken kun je geen gebruik maken van personaliseren:
 
 * In enquêtes
 * In content feeds
-
 
 ## Verder lezen
 
