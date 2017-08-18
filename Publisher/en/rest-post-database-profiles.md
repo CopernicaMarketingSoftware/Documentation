@@ -1,22 +1,27 @@
 # REST API: POST database profile
 
-The HTTP POST method to add a profile to an existing database is available at the following address:
+The HTTP POST method to add a profile to an existing database is 
+available at the following address:
 
 `https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
 
-In this, `$id` should be replaced by the numerical identifier, the ID, of the database you want to add an profile to. 
+In this, `$id` should be replaced by the numerical identifier, the ID, 
+of the database you want to add an profile to. 
 Profile information needs to be added to the message body of the HTTP request. 
 After a successful call the ID of the created request is returned.
 
 Please note that while POST and PUT 
-are generally the same it is import to distinguish them in this case. This method posts a new profile, while PUT 
-is the method to edit several profiles (see: [editing multiple profiles](rest-put-database-profiles)).
+are generally the same it is import to distinguish them in this case. 
+This method posts a new profile, while PUT 
+is the method to edit several profiles (see: 
+[editing multiple profiles](rest-put-database-profiles)).
 
 ## Body data
 
 Besides the parameters that you append to the URL, you must also include a
 request body in the POST request. The body should contain the fields values
-of the profile.
+of the profile. Make sure you include an email address so you can reach the 
+profile with your email campaigns!
 
 ## PHP example
 
