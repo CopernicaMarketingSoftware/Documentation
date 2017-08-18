@@ -9,21 +9,18 @@ De code `$id` moet je vervangen door de numerieke identifier of de naam van de
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
 kun je in de body van het HTTP request plaatsen.
 
-Zorg ervoor dat je hier een POST request stuurt en geen PUT request. Hoewel deze vaak niet verschillen zou je in dit geval een methode aanroepen om meerdere profielen te bewerken, zie [meerdere profielen te bewerken](rest-put-database-profiles).
+Zorg ervoor dat je hier een POST request stuurt en geen PUT request. 
+Hoewel deze vaak niet verschillen zou je in dit geval een methode 
+aanroepen om meerdere profielen te bewerken, zie 
+[meerdere profielen te bewerken](rest-put-database-profiles).
 
 
 ## Beschikbare parameters
 
-De parameters die je in de body van het HTTP POST request plaatst, zijn de
-velden van het aan te maken profiel. De volgende informatie kan meegegeven worden aan het profiel.
-
-- fields:           associatieve array/object van veldnamen en waardes;
-- interests:        array van interesses van een profiel;
-- database:         ID van de database waar het profiel staat;
-- secret:           de "geheime" code die aan een profiel gelinkt is;
-- created:          tijdstip waarop het profiel werd gemaakt, YYYY-MM-DD hh:mm:ss formaat;
-- modified:         tijdstip waarop het profiel laatst werd aangepast, YYYY-MM-DD hh:mm:ss formaat.
-
+Naast de parameters die zich al in de URL bevinden moeten er ook waarden 
+voor het profiel meegegeven worden in de body van het POST verzoek. Vergeet 
+vooral het emailadres niet mee te geven, zodat je het profiel straks 
+met je emailcampagnes kunt bereiken.
 
 ## Voorbeeld in PHP
 
@@ -36,14 +33,17 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data voor de methode
+// veldwaarden voor het profiel
 $data = array(
-    'database' =>  database_id
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
 
 // voer het verzoek uit
 $api->post("database/1234/profiles", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+
+// retourneer het ID van het aangemaakte profiel indien het verzoek succesvol uitgevoerd is
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
