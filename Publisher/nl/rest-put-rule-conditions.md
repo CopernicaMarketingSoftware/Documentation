@@ -5,7 +5,7 @@ Je kunt de methode aanroepen met een HTTP PUT request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions/$type?access_token=xxxx`
 
-De `$id` is de ID van de regel, de `$type` is het type conditie dat je 
+De **$id** is de ID van de regel, de **$type** is het type conditie dat je 
 voor de regel aan wil passen.
 
 ## Verschillende type conditions

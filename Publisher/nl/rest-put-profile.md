@@ -4,7 +4,7 @@ Dit is een methode om de eigenschappen van een bestaand profiel aan te passen. H
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
+De **$id** moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 
 ## Beschikbare parameters
 

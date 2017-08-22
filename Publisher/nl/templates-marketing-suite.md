@@ -48,7 +48,7 @@ dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
 Het is ook mogelijk om, voordat je de e-mails versuurt, na te gaan of je e-mail
 daadwerkelijk in de inbox van de ontvanger belandt. Je kunt dit doen door op
-het `tools` knopje te drukken en vervolgens naar de `spam check` te navigeren.
+het **tools** knopje te drukken en vervolgens naar de `spam check` te navigeren.
 Aan de hand van een aantal checks wordt nagegaan hoe spamgevoelig je e-mail is.
 Hoewel e-mailclients binnenkomende e-mails verschillende waarderen van elkaar,
 is het handig om wellicht toch de verbeteringen door te voeren.

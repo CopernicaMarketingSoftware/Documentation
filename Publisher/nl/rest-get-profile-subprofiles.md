@@ -6,8 +6,8 @@ vragen kun je een HTTP GET verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
 
-De `$id` moet vervangen worden met de ID van het profiel waar je de subprofielen
-van opvraagt en `$collectionID` moet vervangen worden met de ID van de
+De **$id** moet vervangen worden met de ID van het profiel waar je de subprofielen
+van opvraagt en **$collectionID** moet vervangen worden met de ID van de
 collectie.
 
 

@@ -6,7 +6,7 @@ gegevens van de collectie ophalen:
 
 `https://api.copernica.com/v1/collection/$id?access_token=xxxx`
 
-Als `$id` moet je de numerieke identifier van de collectie opgeven.
+Als **$id** moet je de numerieke identifier van de collectie opgeven.
 
 
 ## Geretourneerde velden

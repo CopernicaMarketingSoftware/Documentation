@@ -5,7 +5,7 @@ opvragen kun je een GET request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/message/$id/body/$type?access_token=xxx`
 
-waar `$id` de unieke string is die het bericht identificeert en `$type` 
+waar **$id** de unieke string is die het bericht identificeert en **$type** 
 het formaat is voor het bericht. Vergeet je access token niet toe te voegen! 
 Deze methode kan niet aangeroepen worden met een PHP script.
 

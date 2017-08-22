@@ -5,7 +5,7 @@ sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-De `$id` moet je vervangen door de numerieke identifier of de naam van de 
+De **$id** moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
 
 

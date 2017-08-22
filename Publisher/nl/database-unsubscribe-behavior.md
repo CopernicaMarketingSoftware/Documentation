@@ -23,7 +23,7 @@ bijvoorbeeld het profiel aanpassen of volledig verwijderen.
 
 ## Publisher instellen
 
-In de Publisher ga je naar het `Profiles` menu en selecteer je de database
+In de Publisher ga je naar het **Profiles** menu en selecteer je de database
 naar keuze. Onder `Database management` kun je de uitschrijf opties vinden 
 en naar wens instellen.
 

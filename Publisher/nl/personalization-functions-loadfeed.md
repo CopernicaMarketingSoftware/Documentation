@@ -43,12 +43,12 @@ Gebruik *xslt=* om een eigen XSLT te gebruiken voor de feed. Wanneer je
 deze parameter achterwege laat, wordt teruggevallen op de
 standaard XSLT die is geleverd in de software.
 
-`{loadfeed feed='naam' xslt='naamvanxslt'}`
+**{loadfeed feed='naam' xslt='naamvanxslt'}**
 
 Vervang *naamvanxslt* door de naam van de XSLT uit het onderdeel Stijl
 van de marketing software.
 
-`{loadfeed feed='adres' xslt='adresvanxslt'}`
+**{loadfeed feed='adres' xslt='adresvanxslt'}**
 
 Vervang *adresvanxslt* door de internetlocatie van de XSLT, bijvoorbeeld
 http://uwdomein.com/feed.xsl
@@ -99,7 +99,7 @@ Na het opzetten van de correcte XSLT en een correcte feed, hoef je verder
 niets te doen om je personalisatiecode te laten werken. Bij personalisatie 
 in feeds is het wel belangrijk om te onthouden in welke volgorde taken worden
 uitgevoerd. De XSLT wordt eerst geparset en daarna wordt de personalisatie pas 
-toegepast. De `eval` functie in het stukje code hierboven zorgt ervoor dat alle 
+toegepast. De **eval** functie in het stukje code hierboven zorgt ervoor dat alle 
 personalisatie wordt uitgevoerd. Dit betekent dus dat je niet een conditie aan
 kunt maken met <xsl:if> in combinatie met een van je databasevelden. Op dat punt
 weet de XSLT namelijk nog niet wat de waarde van dat veld gaat worden.

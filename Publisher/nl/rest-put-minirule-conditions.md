@@ -5,8 +5,8 @@ aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/minirule/$id/conditions/$type?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de miniregel 
-waaraan je een conditie toe wilt voegen. De `$type` moet vervangen 
+De **$id** moet hier vervangen worden door de identifier van de miniregel 
+waaraan je een conditie toe wilt voegen. De **$type** moet vervangen 
 worden door het type van de conditie. Bij een 
 succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
 

@@ -6,7 +6,7 @@ kun je een HTTP GET request naar het volgende adres sturen:
 
 `https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van de 
+De code **$id** moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
 ## Beschikbare parameters

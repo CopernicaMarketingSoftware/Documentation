@@ -5,7 +5,7 @@ POST call naar het volgende adres:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
+De code **$id** moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een veld aan wilt toevoegen. De naam van het veld en eventuele
 andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 

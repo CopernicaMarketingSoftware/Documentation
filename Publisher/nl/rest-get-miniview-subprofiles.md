@@ -5,7 +5,7 @@ opvragen door een HTTP GET verzoek naar de volgende URL te sturen:
 
 `https://api.copernica.com/v1/miniview/$id/subprofiles?access_token=xxxx`
 
-De `$id` moet vervangen worden met de ID van de miniselectie.
+De **$id** moet vervangen worden met de ID van de miniselectie.
 
 
 ## Teruggeven velden

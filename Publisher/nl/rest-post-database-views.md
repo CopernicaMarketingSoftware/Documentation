@@ -7,7 +7,7 @@ database aangemaakt.
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke 
+De code **$id** moet je vervangen door de numerieke 
 identifier of de naam van de database waar je een 
 selectie aan wilt toevoegen. De naam van de selectie 
 moet als message body aan het HTTP request worden 

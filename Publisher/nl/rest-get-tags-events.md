@@ -6,7 +6,7 @@ URL.
 
 `https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
 
-De `$tag` moet je vervangen door de tag waarvoor je de gebeurtenissen wilt
+De **$tag** moet je vervangen door de tag waarvoor je de gebeurtenissen wilt
 hebben.
 Als je op meerdere tags tegelijkertijd wilt filteren, dan kun je de tags
 scheiden door middel van puntkomma's.
@@ -58,7 +58,7 @@ A JSON with all the events for the provided tags.
     ...
 ]
 ```
-De `event` property in de JSON geeft het type event weer. De mogelijke
+De **event** property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
 

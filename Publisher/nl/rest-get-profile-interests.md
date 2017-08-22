@@ -5,7 +5,7 @@ vragen. Welke methode het meest geschikt is hangt af van hoe je deze wilt
 gebruiken. Je kunt namelijk een array met de namen van interesses opvragen, 
 een array van ID's of een array met JSON objecten.
 
-Hou in gedachten dat `$id` zoals altijd vervangen moet worden met de numerieke 
+Hou in gedachten dat **$id** zoals altijd vervangen moet worden met de numerieke 
 identifier van het profiel waar je de interesses van opvraagt.
 
 ## Array van interesse namen

@@ -4,7 +4,7 @@ Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan t
 
 `https://api.copernica.com/view/$id/views?access_token=xxxx`
 
-De eerste `$id` moet hier vervangen worden door de bovenliggende selectie en de tweede `$id` door de lager gelegen selectie.
+De eerste **$id** moet hier vervangen worden door de bovenliggende selectie en de tweede **$id** door de lager gelegen selectie.
 
 
 ## Beschikbare parameters

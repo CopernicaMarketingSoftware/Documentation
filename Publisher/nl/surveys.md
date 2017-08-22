@@ -11,7 +11,7 @@ Let op: Enquêtes maken in de Marketing Suite is helaas nog niet mogelijk.
 
 ## Een enquête maken
 
-Je kan gemakkelijk zelf een enquête aanmaken onder `Content` in de 
+Je kan gemakkelijk zelf een enquête aanmaken onder **Content** in de 
 Publisher. Het is zelfs mogelijk data automatisch aan profielen te linken 
 als je op een slimme manier hyperlinks creëert.
 
@@ -68,7 +68,7 @@ Je eigen XSLT stylesheet kun je gebruiken als volgt:
 
 `{survey name='enquetenaam' xslt='xsltnaam'}`
 
-Een [XSLT](css-and-xslt) stylesheet kun je aanmaken onder het kopje `Stijl`.
+Een [XSLT](css-and-xslt) stylesheet kun je aanmaken onder het kopje **Stijl**.
 
 ## Resultaten
 

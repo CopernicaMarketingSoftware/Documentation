@@ -5,7 +5,7 @@ hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
 `https://api.copernica.com/v1/old/message/$id?access_token=xxxx`
 
-waar `$id` de unieke string van het bericht is.
+waar **$id** de unieke string van het bericht is.
 
 
 ## Geretourneerde waarde

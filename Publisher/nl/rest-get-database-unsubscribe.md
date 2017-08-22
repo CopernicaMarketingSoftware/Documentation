@@ -9,7 +9,7 @@ volgende adres:
 
 `https://api.copernica.com/v1/database/$id/unsubscribe?access_token=xxxx`
 
-Als `$id` kun je de ID of de naam van een database opgeven.
+Als **$id** kun je de ID of de naam van een database opgeven.
 
 
 ## Geretourneerde velden

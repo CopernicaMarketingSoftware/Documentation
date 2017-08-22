@@ -6,7 +6,7 @@ verzoek verstuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
+De **$id** moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 
 
 ## Beschikbare parameters

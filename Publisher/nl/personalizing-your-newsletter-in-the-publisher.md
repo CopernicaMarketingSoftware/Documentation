@@ -10,19 +10,19 @@ nieuwsbrieven.
 Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter 
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
-* Houd het veilig en door de `|escape` toe te passen op variabelen, niet iedereen heeft goede intenties.
-* SMARTY is *hooflettergevoelig*. `{$name}` is dus wat anders dan `{$NAME}`;
+* Houd het veilig en door de **|escape** toe te passen op variabelen, niet iedereen heeft goede intenties.
+* SMARTY is *hooflettergevoelig*. **{$name}** is dus wat anders dan `{$NAME}`;
 * Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
 
 ### Database variabelen 
 
-Een personalisatievariabele bestaat uit een dollarteken `$` en de naam van een variabele,
+Een personalisatievariabele bestaat uit een dollarteken **$** en de naam van een variabele,
 geplaatst tussen accolades. De volgende variabelen kun je bijvoorbeeld in een template
 of document gebruiken:
 
 * `{$naam}`;
 * `{$email}`;
-* `{$aanhef}`.
+* **{$aanhef}**.
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
 velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 

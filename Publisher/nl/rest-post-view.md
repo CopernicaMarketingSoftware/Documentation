@@ -5,7 +5,7 @@ je een HTTP POST verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/view?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de id van de database waar een view aan toegevoegd 
+De **$id** moet hier vervangen worden door de id van de database waar een view aan toegevoegd 
 moet worden.
 
 
