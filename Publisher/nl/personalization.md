@@ -35,7 +35,7 @@ vervangen door de veldwaarde in het profiel van de ontvanger.
 
 Er moet altijd gespecificeerd worden of een veld uit het profiel of het
 subprofiel aangeroepen wordt. Door in plaats van **{$Voornaam}** ,
-`{$profile.Voornaam}` of `{$subprofile.veldnaam}` te gebruiken is het
+**{$profile.Voornaam}** of **{$subprofile.veldnaam}** te gebruiken is het
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
