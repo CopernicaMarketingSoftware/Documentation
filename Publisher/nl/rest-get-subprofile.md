@@ -5,7 +5,7 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 
 `https://api.copernica.com/v1/subprofile/$id?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
+De code **$id** moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
 
 

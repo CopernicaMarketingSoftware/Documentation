@@ -67,7 +67,7 @@ De kortere versie ziet er als volgt uit:
         This is some text that I would like to use later in the template.
     {/capture}
     
-Je kunt nu het blok aanroepen met `{$myText}`.
+Je kunt nu het blok aanroepen met **{$myText}**.
     
 In dit voorbeeld is de tekst kort en had ook de [assign](./personalization-functions-assign), 
 gebruikt kunnen worden, maar je kunt alles wat geen HTML is tussen deze 

@@ -1,6 +1,6 @@
 # Personalizatie functions: loadprofile
 
-Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de `<body>` tag in je broncode.
+Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de **<body>** tag in je broncode.
 
 ```text
 {loadprofile source="Offices" Area="$Area" assign="office"}

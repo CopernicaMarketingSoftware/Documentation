@@ -4,7 +4,7 @@ Selecties gebruiken regels om te bepalen welke profielen zij bevatten. Profielen
 
 `https://api.copernica.com/v1/miniview/$id/minirule/$id?access_token=xxxx`
 
-De eerste `$id` moet vervangen worden met de numerieke identifier van de miniview waarvan je een regel wil opvragen. De tweede `$id` moet de ID van de regel zijn.
+De eerste **$id** moet vervangen worden met de numerieke identifier van de miniview waarvan je een regel wil opvragen. De tweede **$id** moet de ID van de regel zijn.
 
 
 ## De teruggegeven velden

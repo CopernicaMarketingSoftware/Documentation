@@ -2,8 +2,8 @@
 
 Met de *if* function is het mogelijke conditionele uitdrukkingen te maken 
 en inhoud te plaatsen op basis van beschikbare informatie. Profiel en subprofiel 
-velden zijn hier heel nuttig, bijvoorbeeld. Het is ook mogelijk om `{elseif}` 
-en `{else}` te gebruiken of *if* statements in elkaar te plaatsen.
+velden zijn hier heel nuttig, bijvoorbeeld. Het is ook mogelijk om **{elseif}** 
+en **{else}** te gebruiken of *if* statements in elkaar te plaatsen.
 
 ## Qualifiers
 

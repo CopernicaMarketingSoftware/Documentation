@@ -81,7 +81,7 @@ Na het verzoek ontvang je de volgende JSON:
     }
 ]
 ```
-De `event` property in de JSON geeft het type event weer. De mogelijke
+De **event** property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
 
@@ -103,8 +103,8 @@ sturen naar:
 https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
 ```
 
-Je kunt de gegevens over een andere periode opvragen door een `start`
-en/of `end` parameter meegeven.
+Je kunt de gegevens over een andere periode opvragen door een **start**
+en/of **end** parameter meegeven.
 
 
 ## Events bij een e-mailadres
@@ -116,10 +116,10 @@ te sturen naar:
 https://api.copernica.com/v1/email/$email/events?access_token=xxxx
 ```
 Je krijgt alle events die bij dit e-mailadres horen tot een maand geleden.
-Als je de informatie voor een andere periode wilt kun je een `start` en/of
-`end` parameter meegeven.
+Als je de informatie voor een andere periode wilt kun je een **start** en/of
+**end** parameter meegeven.
 
-Je kunt de `tag` parameter gebruiken als je wilt filteren op tags.
+Je kunt de **tag** parameter gebruiken als je wilt filteren op tags.
 
 ## Events bij tags
 
@@ -148,11 +148,11 @@ Events bij een profiel kun je opvragen door een request te sturen naar:
 ```text
 https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
 ```
-waar `$id` vervangen moet worden door de numerieke identifier van het profiel.
+waar **$id** vervangen moet worden door de numerieke identifier van het profiel.
 Je krijgt vervolgens de events tot een maand terug voor dit profiel. Als
-je de events voor een andere periode wilt dan kun je een `start` en/of
-`end` parameter gebruiken.
-Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
+je de events voor een andere periode wilt dan kun je een **start** en/of
+**end** parameter gebruiken.
+Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
 
 
 ## Events bij een subprofiel
@@ -162,10 +162,10 @@ Events bij een subprofiel kun je opvragen door een request te sturen naar:
 ```text
 https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
 ```
-waar `$id` vervangen moet worden door de numerieke identifier van het subprofiel.
+waar **$id** vervangen moet worden door de numerieke identifier van het subprofiel.
 Je krijgt vervolgens de events tot een maand terug. Als je events voor een
-andere periode wilt dan kun jee een `start` en/of `end` parameter gebruiken.
-Optioneel kun je ook filteren op tags door een `tags` parameter mee te geven.
+andere periode wilt dan kun jee een **start** en/of **end** parameter gebruiken.
+Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
 
 
 ## Events bij een template
@@ -176,7 +176,7 @@ te sturen naar:
 ```text
 https://api.copernica.com/v1/template/$id/events?access_token=xxxx
 ```
-`$id` is hier de numerieke identifier van de Marketing Suite template
+**$id** is hier de numerieke identifier van de Marketing Suite template
 waarvoor je de events wilt hebben. Als je de events voor een Publisher
 template wilt hebben kun je een request sturen naar:
 
@@ -186,8 +186,8 @@ https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
 
 Je krijgt vervolgens de events tot een maand terug voor de betreffende
 template. Als je de events voor een andere periode wilt hebben kun je
-optioneel een `start` en/of `end` parameter meegeven. Optioneel kun je ook
-filteren op tags door een `tags` parameter mee te geven.
+optioneel een **start** en/of **end** parameter meegeven. Optioneel kun je ook
+filteren op tags door een **tags** parameter mee te geven.
 
 
 ## Events bij een document
@@ -199,9 +199,9 @@ https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
 ```
 
 Je krijgt vervolgens de events tot een maand terug van dit document. Als 
-je events voor een andere periode wilt hebben dan kun je een `start` 
-en/of `end` parameter meegeven. Optioneel kun je ook filter op tags 
-door een `tags` parameter mee te geven.
+je events voor een andere periode wilt hebben dan kun je een **start** 
+en/of **end** parameter meegeven. Optioneel kun je ook filter op tags 
+door een **tags** parameter mee te geven.
 
 
 ## Meer informatie

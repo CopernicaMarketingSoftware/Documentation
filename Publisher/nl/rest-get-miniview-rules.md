@@ -4,7 +4,7 @@ Een miniview is voor een collectie wat een view/selectie is voor een database. O
 
 `https://api.copernica.com/v1/miniview/$id/rules?access_token=xxxx`
 
-De `$id` moet vervangen worden door de ID van de selectie van een collectie waarvoor je de regels op wilt vragen.
+De **$id** moet vervangen worden door de ID van de selectie van een collectie waarvoor je de regels op wilt vragen.
 
 
 ## Ondersteunde parameters

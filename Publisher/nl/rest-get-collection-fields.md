@@ -6,7 +6,7 @@ sturen naar het volgende adres:
 
 `https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van de 
+De code **$id** moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
 
 

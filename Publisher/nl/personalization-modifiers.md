@@ -1,10 +1,10 @@
 # Overzicht modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
-Je gebruikt bijvoorbeeld `tolower` om de variabele `{$name}` te
-bewerken. Dit ziet er dan zo uit: `{$name|tolower}`.
+Je gebruikt bijvoorbeeld **tolower** om de variabele **{$name}** te
+bewerken. Dit ziet er dan zo uit: **{$name|tolower}**.
 Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
-Je kunt bijvoorbeeld `{$name|tolower|ucfirst}` gebruiken om te zorgen dat alle
+Je kunt bijvoorbeeld **{$name|tolower|ucfirst}** gebruiken om te zorgen dat alle
 namen met een hoofdletter beginnen en de resterende letters altijd kleine 
 letters zijn. 
 

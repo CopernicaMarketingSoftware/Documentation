@@ -5,7 +5,7 @@ Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de rule waarvan je de condition wilt vragen.
+De **$id** moet hier vervangen worden door de ID van de rule waarvan je de condition wilt vragen.
 
 
 ## Verschillende type conditions

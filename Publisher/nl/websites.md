@@ -29,7 +29,7 @@ Inhoud van het artikel:
 
 ## Beginnen
 
-Je kunt het `Websites` menu vinden in het Publisher menu. Hier kun je een 
+Je kunt het **Websites** menu vinden in het Publisher menu. Hier kun je een 
 website aanmaken met verschillende webpagina's. We maken hier het onderscheid 
 tussen een website en een webpagina: Webpagina's zijn vergelijkbaar met 
 email documenten en gebruiken hun eigen templates. De website is het geheel 
@@ -58,7 +58,7 @@ functioneren alleen op pagina's gehost door Copernica.
 ## Pagina's maken
 
 Eerst zul je een nieuwe template aan moeten maken en een website onder 
-`Websites` als je deze nog niet hebt. Je kunt dan de HTML broncode aanpassen 
+**Websites** als je deze nog niet hebt. Je kunt dan de HTML broncode aanpassen 
 om de template naar je eigen smaak aan te passen. Als je tevreden bent 
 met de stijl kun je content blocks toe gaan voegen. Dit moet in de template 
 gebeuren zodat je ze later in kan vullen. De onderstaande tabel laat 
@@ -71,11 +71,11 @@ op je [spam score](./some-tips-to-lower-your-email-spam-score).
 | [Text](./text-tag)     | [text name="tekstblok naam"]                       | Voeg tekst toe aan de webpagina                   |
 | [Image](./image-tag)   | [image name="afbeeldingblok naam"]                 | Voeg afbeeldingen toe aan de webpagina            |
 | [Loop](./loop-tag)     | [loop name="loop naam"]code om te herhalen[/loop]  | Herhaal afbeeldingen, tekst en andere loop blocks |
-| [Survey](./surveys)    | {survey name="enquête naam"}                       | Voeg enquête gemaakt in `Content` toe             |
-| [Webform](./webforms)  | {webform name="webformulier naam"}                 | Voeg webformulier gemaakt in `Content` toe        |
+| [Survey](./surveys)    | {survey name="enquête naam"}                       | Voeg enquête gemaakt in **Content** toe             |
+| [Webform](./webforms)  | {webform name="webformulier naam"}                 | Voeg webformulier gemaakt in **Content** toe        |
 
 Media kan beheerd worden onder de *Media bibliotheek* onder het kopje 
-`Content`. Je kunt afbeeldingen uit de media bibliotheek gebruiken met 
+**Content**. Je kunt afbeeldingen uit de media bibliotheek gebruiken met 
 <img src="afbeelding.png"\>.
 
 Het [loop blok](./loop-tag) kan heel handig zijn als je nog niet weet hoeveel afbeeldingen 
@@ -122,7 +122,7 @@ informatie.
 * Gebruikers hoeven niet in te loggen
 
 Je kunt hyperlinks voorbereiden met de *Hyperlinks voorbereiden* functie 
-onder *Document* in het `E-mailings` menu of de volgende code toevoegen aan 
+onder *Document* in het **E-mailings** menu of de volgende code toevoegen aan 
 je hyperlink.
 
 `http://subdomein.jouwdomein.nl/websitename**?profile={\$profile.id}&code={\$profile.code}**`

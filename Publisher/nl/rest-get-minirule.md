@@ -4,7 +4,7 @@ Dit is een methode om alle metadata van een regel binnen een selectie in een col
 
 `https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
 
-De `$id` hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
+De **$id** hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
 
 
 ## Beschikbare parameters

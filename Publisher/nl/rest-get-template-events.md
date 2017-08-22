@@ -6,7 +6,7 @@ URL:
 
 `https://api.copernica.com/v1/template/$id/events?access_token=xxxx`
 
-De `$id` moet je vervangen door de numerieke identifier van de template
+De **$id** moet je vervangen door de numerieke identifier van de template
 waarvoor je de gebeurtenissen wilt hebben.
 
 
@@ -63,7 +63,7 @@ ziet er als volgt uit:
     ...
 ]
 ```
-De `event` property in de JSON geeft het type event weer. De mogelijke
+De **event** property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
 

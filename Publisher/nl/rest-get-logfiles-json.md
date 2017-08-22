@@ -8,7 +8,7 @@ verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/logfiles/$filename/json?access_token=xxxx`
 
-Hier moet je `$filename` vervangen door de bestandsnaam.
+Hier moet je **$filename** vervangen door de bestandsnaam.
 
 
 ## Teruggegeven bestand

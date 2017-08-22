@@ -4,7 +4,7 @@ Een methode om condities voor een miniregel aan te passen. Deze methode onderste
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
+De **$id** moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
 
 
 ## Beschikbare parameters

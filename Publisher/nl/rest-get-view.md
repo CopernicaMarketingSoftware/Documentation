@@ -4,7 +4,7 @@ Een methode om de metadata van een database op te vragen. De methode kan aangero
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`
 
-Hier moet de `$id` vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
+Hier moet de **$id** vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
 
 ## Beschikbare parameters
 

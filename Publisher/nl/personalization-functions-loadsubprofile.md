@@ -6,8 +6,8 @@ Als de gegevens die je wilt gebruiken zijn opgeslagen in een subprofiel in de co
 {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$office.id"}
 ```
 
-- Met `source` verwijs je naar de database Offices en de collectie Account
-- Met de veldzoeker `AM` koppel je het profiel met de juiste accountmanager, aan de hand van de waarde die in het collectieveld AM is opgeslagen.
+- Met **source** verwijs je naar de database Offices en de collectie Account
+- Met de veldzoeker **AM** koppel je het profiel met de juiste accountmanager, aan de hand van de waarde die in het collectieveld AM is opgeslagen.
 - Met de toevoeging `profile="$office.id"` zorg je ervoor dat alleen in de collectie van het aangeroepen profiel wordt gekeken (en dus niet in alle collecties).
 
 Je kan een document hiermee personaliseren met een telefoonnummer van de juiste accountmanager middels de volgende smarty code: `{$account.Phone}`

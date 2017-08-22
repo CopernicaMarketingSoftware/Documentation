@@ -4,7 +4,7 @@ Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
+De **$id** moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
 
 
 ## Beschikbare parameters

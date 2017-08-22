@@ -9,7 +9,7 @@ een link creëren naar de webversie van een andere mail.
 ## De functie gebruiken
 
 Om de functie te gebruiken hoef je alleen een tag toe te voegen aan je 
-document: `{webversion}`. Je kunt in de volgende voorbeelden ook `{linkemail}` 
+document: **{webversion}**. Je kunt in de volgende voorbeelden ook **{linkemail}** 
 gebruiken in plaats hiervan.
 
 Zo simpel is het! De tag voegt alleen een URL in en de pagina wordt automatisch 

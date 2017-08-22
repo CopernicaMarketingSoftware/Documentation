@@ -13,7 +13,7 @@ HTTP GET verzoek sturen naar deze URL:
 
 `https://api.copernica.com/v1/logfiles/$filename/header?access_token=xxxx`
 
-In beide URLs moet je `$filename` vervangen door de bestandsnaam.
+In beide URLs moet je **$filename** vervangen door de bestandsnaam.
 
 
 ## Teruggegeven bestand

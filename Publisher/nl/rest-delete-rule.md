@@ -4,7 +4,7 @@ Een regel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de v
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`
 
-De `$id` moet vervangen worden door de ID van de regel die je wilt verwijderen.
+De **$id** moet vervangen worden door de ID van de regel die je wilt verwijderen.
 
 ## Voorbeeld in PHP
 

@@ -7,7 +7,7 @@ URL krijg je een lijst van alle bestaande logfiles voor een datum.
 
 `https://api.copernica.com/v1/logfiles/$date?access_token=xxxx`
 
-Je moet hier `$date` vervangen door de datum waarvoor je logfiles wilt zien.
+Je moet hier **$date** vervangen door de datum waarvoor je logfiles wilt zien.
 
 
 ## Teruggegeven velden

@@ -4,7 +4,7 @@ Het verwijderen van een subprofiel kan gedaan worden door een HTTP DELETE verzoe
 
 `https://api.copernica.com/v1/subprofile/$id?access_token=xxxx`
 
-De `$id` hier moet vervangen worden door de ID van het subprofiel dat je wilt verwijderen.
+De **$id** hier moet vervangen worden door de ID van het subprofiel dat je wilt verwijderen.
 
 
 ## Voorbeeld in PHP

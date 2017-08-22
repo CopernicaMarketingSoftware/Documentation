@@ -4,7 +4,7 @@ Selecties gebruiken *regels* om te beslissen welke profielen worden gebruikt in 
 
 `https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
 
-De eerste `$id` code moet vervangen worden met de numerieke identifier van de selectie waar je een regel uit wilt opvragen. De tweede `$id` parameter moet de ID van de regel zijn.
+De eerste **$id** code moet vervangen worden met de numerieke identifier van de selectie waar je een regel uit wilt opvragen. De tweede **$id** parameter moet de ID van de regel zijn.
 
 
 ## De geretourneerde informatie

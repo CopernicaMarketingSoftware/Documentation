@@ -39,7 +39,7 @@ in de korte versie.
 
 Als we een breuk uit willen rekenen echter is het handiger om decimalen 
 weer te geven. We willen dit resultaat ook opslaan, zodat we "1.33" krijgen 
-als we `{$frac}` in de template typen.
+als we **{$frac}** in de template typen.
 
     {assign "height" 1}
     {assign "width" 3}
