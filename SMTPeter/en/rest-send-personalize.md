@@ -105,7 +105,7 @@ Let's say you have the following JSON:
         "children": [
             "Peter", "Angela", "Brandon"
         ]
-    }
+    },
     "from": "....",
     "to": "...",
     ...
