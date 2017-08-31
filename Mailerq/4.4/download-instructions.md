@@ -17,15 +17,15 @@ older Debian 6 and Debian 7 versions.
 <table>
     <tr>
         <td>Ubuntu 12.04 and up</td>
-        <td>deb http://packages.copernica.com/debian stable main</td>
+        <td>deb https://packages.copernica.com/debian stable main</td>
     </tr>
     <tr>
         <td>Debian 8 and up</td>
-        <td>deb http://packages.copernica.com/debian stable main</td>
+        <td>deb https://packages.copernica.com/debian stable main</td>
     </tr>
     <tr>
         <td>Debian 6 and Debian 7</td>
-        <td>deb http://packages.copernica.com/debian legacy main</td>
+        <td>deb https://packages.copernica.com/debian legacy main</td>
     </tr>
 </table>
 
@@ -33,10 +33,10 @@ You can enter the following instructions to add our repository to your
 software list, and to download and install MailerQ.
 
 ```
-$ wget http://packages.copernica.com/copernica.key
+$ wget https://packages.copernica.com/copernica.key
 $ sudo apt-key add copernica.key 
 $ rm copernica.key
-$ echo "deb http://packages.copernica.com/debian stable main" | sudo tee /etc/apt/sources.list.d/copernica.list
+$ echo "deb https://packages.copernica.com/debian stable main" | sudo tee /etc/apt/sources.list.d/copernica.list
 $ sudo apt-get update
 $ sudo apt-get install mailerq
 ```
@@ -53,11 +53,11 @@ the latest versions of these systems, and one for older releases.
 <table>
     <tr>
         <td>CentOS 7+, Red Hat 7+, Fedora 22+</td>
-        <td>http://packages.copernica.com/rpm/copernica.repo</td>
+        <td>https://packages.copernica.com/rpm/copernica.repo</td>
     </tr>
     <tr>
         <td>CentOS 6, Red Hat 6, Fedora 21</td>
-        <td>http://packages.copernica.com/rpm-legacy/copernica.repo</td>
+        <td>https://packages.copernica.com/rpm-legacy/copernica.repo</td>
     </tr>
 </table>
 
@@ -65,7 +65,7 @@ To install MailerQ on a new version of CentOS, Red Hat or Fedora, enter
 the following instructions in your shell:
 
 ```
-sudo wget http://packages.copernica.com/rpm/copernica.repo -O /etc/yum.repos.d/copernica.repo
+sudo wget https://packages.copernica.com/rpm/copernica.repo -O /etc/yum.repos.d/copernica.repo
 sudo yum update
 sudo yum install mailerq
 ```
