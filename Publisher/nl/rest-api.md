@@ -124,7 +124,6 @@ zijn beschikbaar:
 
 | Methode   | Adres                                                                                                         | Omschrijving                                      |
 |-----------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| DELETE    | [api.copernica.com/v1/database/$id/field/$id](./rest-delete-database-field.md)                                | Veld uit database verwijderen                     |
 | DELETE    | [api.copernica.com/v1/view/$id](./rest-delete-view.md)                                                        | Verwijderen selectie                              |
 | DELETE    | [api.copernica.com/v1/rule/$id](./rest-delete-rule.md)                                                        | Verwijderen van een selectieregel                 |
 | DELETE    | [api.copernica.com/v1/profile/$id](./rest-delete-profile.md)                                                  | Verwijderen profiel                               |
