@@ -130,7 +130,6 @@ available:
 
 | Method    | Address                                                                                                   | Description                             |       
 |-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| DELETE    | [api.copernica.com/v1/database/$id](./rest-delete-database)                                               | Remove a database                       |     
 | DELETE    | [api.copernica.com/v1/database/$id/field/$id](./rest-delete-database-field)                               | Remove database field                   |     
 | DELETE    | [api.copernica.com/v1/view/$id](./rest-delete-view)                                                       | Remove selection                        |     
 | DELETE    | [api.copernica.com/v1/rule/$id](./rest-delete-rule)                                                       | Remove selection rule                   |     
