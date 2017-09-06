@@ -1,3 +1,5 @@
+# Link domain to website
+
 To publish web pages from the application they need to have a correct
 domain set.
 
