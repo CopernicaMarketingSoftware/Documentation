@@ -11,19 +11,19 @@ With Smarty it is easy to store and use variables. Remember though, that
 there are important rules to keep in mind while working with Smarty:
 
 * Escape variables your users entered by adding |escape after the variable name, not everyone has good intentions!
-* Smarty is capital sensitive. `{$name}` is different than `{$NAME}`;
+* Smarty is capital sensitive. `{$profile.name}` is different than `{$profile.NAME}`;
 * Curcly braces can be used as symbol with [literal](./personalization-functions-literal).
 
 ### Database variables
 
-A personalization variable consists of a dollar sign `$`
+A personalization variable consists of a dollar sign `$`, profile or subprofile
 and the name of the variable placed between curly braces.
 The following variables can for example be used in a template
 or document:
 
-* `{$name}`
-* `{$email}`
-* `{$aanhef}`
+* `{$profile.name}`
+* `{$profile.email}`
+* `{$profile.aanhef}`
 
 These personalization variables only work when you have
 the exact same fields in your database. Of course, the 
@@ -32,10 +32,10 @@ well. If that's all set, you can use the variables like
 this:
 
 ```text
-Dear {$salutation} {$name},
+Dear {$profile.salutation} {$profile.name},
 
 You receive this email, because you subscribed 
-with the following email address: {$email}.
+with the following email address: {$profile.email}.
 ```
 
 ### Template variables
@@ -77,11 +77,11 @@ converted to a neutral format that is safe to store in your
 database. It goes like this:
 
 ```text
-Dear {$salutation|escape} {$name|escape},
+Dear {$profile.salutation|escape} {$profile.name|escape},
     
 
 You receive this email, because you subscribed 
-with the following email address: {$email|escape}.
+with the following email address: {$profile.email|escape}.
 ```
 
 Again, always take in consideration to use |escape when
