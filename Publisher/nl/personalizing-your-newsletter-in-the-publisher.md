@@ -1,91 +1,91 @@
 # Personaliseren binnen de Publisher
 
-In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp 
+In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp
 van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 nieuwsbrieven.
 
 ## Gebruik van variabelen
 
-Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter 
+Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
 * Houd het veilig en door de **|escape** toe te passen op variabelen, niet iedereen heeft goede intenties.
-* SMARTY is *hooflettergevoelig*. **{$name}** is dus wat anders dan `{$NAME}`;
+* SMARTY is *hooflettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
 * Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
 
-### Database variabelen 
+### Database variabelen
 
-Een personalisatievariabele bestaat uit een dollarteken **$** en de naam van een variabele,
-geplaatst tussen accolades. De volgende variabelen kun je bijvoorbeeld in een template
-of document gebruiken:
+Een personalisatievariabele bestaat uit een dollarteken **$**, het woord profile
+of subprofile en de naam van een variabele, geplaatst tussen accolades. De
+volgende variabelen kun je bijvoorbeeld in een template of document gebruiken:
 
-* `{$naam}`;
-* `{$email}`;
-* **{$aanhef}**.
+* `{$profile.naam}`;
+* `{$profile.email}`;
+* `{$profile.aanhef}`;
 
 Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook
-velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de 
+velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de
 geadresseerden van de mailing deze gegevens hebt ingevuld. Als dat
 het geval is, dan kun je deze variabelen gewoon in je mailing
 gebruiken:
 
 ```text
-Beste {$aanhef} {$naam},
-    
-Je ontvangt deze e-mail omdat bent aangemeld 
-met het volgende e-mailadres: {$email}.
+Beste {$profile.aanhef} {$profile.naam},
+
+Je ontvangt deze e-mail omdat bent aangemeld
+met het volgende e-mailadres: {$profile.email}.
 ```
 
 ### Template variables
 
-Je kunt ook extra personalizatie variabelen toevoegen door deze aan te maken 
-in het Template menu. Hier definieer je de naam, tijdens het aanmaken van 
-het document geef je er een waarde aan. Gebruik de waarde vervolgens met 
+Je kunt ook extra personalizatie variabelen toevoegen door deze aan te maken
+in het Template menu. Hier definieer je de naam, tijdens het aanmaken van
+het document geef je er een waarde aan. Gebruik de waarde vervolgens met
 **{$property.name}**, waar je "name" vervangt door de naam van je variabele.
 
-Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun 
-aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer 
-nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een 
+Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
+aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer
+nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
 template variabele **score** instellen en deze gebruiken met **{$property.score}**.
 
 ### Custom content
 
-Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction) 
-in je database met de [in_selection](./personalization-function-in_selection) 
+Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction)
+in je database met de [in_selection](./personalization-function-in_selection)
 en [in_miniselection](./personalization-function-in_miniselection) functies.
 
 ## Escapen van variabelen
 
 Hoewel het best een ingewikkeld onderwerp is behandelen we het escapen direct. Het
-is erg belangrijk. De variabele data die je in mailings of websites gebruikt 
-is vaak door mensen zelf ingevoerd toen ze zich aanmeldden voor de nieuwsbrief. 
-Mensen voeren hun eigen naam, woonplaats en e-mailadres in, en kunnen daarbij 
+is erg belangrijk. De variabele data die je in mailings of websites gebruikt
+is vaak door mensen zelf ingevoerd toen ze zich aanmeldden voor de nieuwsbrief.
+Mensen voeren hun eigen naam, woonplaats en e-mailadres in, en kunnen daarbij
 (opzettelijk!) foutieve gegevens invoeren. Je kunt de gegevens in de database
-dus niet zonder meer vertrouwen en ongecontroleerd in je nieuwsbrief 
-plaatsen. Wat gebeurt er met de opmaak van je mailing als iemand heeft ingevoerd 
-dat zijn naam "&lt;/table&gt;" is? En opmaak is niet eens het grootste probleem. Als 
-je de ongecontroleerde ruwe input van gebruikers ongefilterd in mailings en op 
+dus niet zonder meer vertrouwen en ongecontroleerd in je nieuwsbrief
+plaatsen. Wat gebeurt er met de opmaak van je mailing als iemand heeft ingevoerd
+dat zijn naam "&lt;/table&gt;" is? En opmaak is niet eens het grootste probleem. Als
+je de ongecontroleerde ruwe input van gebruikers ongefilterd in mailings en op
 websites gebruikt ben je kwetsbaar voor allerlei vormen van misbruik en hacks.
 
-Er is gelukkig een eenvoudige Smarty *modifier* om dit te voorkomen: de *|escape* 
-modifier. Elke variabele die je in een mailing opneemt moet je eerst door deze 
-modifier halen om te zorgen dat eventueel schadelijke HTML code ongedaan wordt 
+Er is gelukkig een eenvoudige Smarty *modifier* om dit te voorkomen: de *|escape*
+modifier. Elke variabele die je in een mailing opneemt moet je eerst door deze
+modifier halen om te zorgen dat eventueel schadelijke HTML code ongedaan wordt
 gemaakt:
 
 ```text
-Beste {$aanhef|escape} {$naam|escape},
-    
-Je ontvangt deze e-mail omdat bent aangemeld 
-met het volgende e-mailadres: {$email|escape}.
+Beste {$profile.aanhef|escape} {$profile.naam|escape},
+
+Je ontvangt deze e-mail omdat bent aangemeld
+met het volgende e-mailadres: {$profile.email|escape}.
 ```
 
 Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
-niet zeker bent van de data in de database omdat de gegevens door mensen 
-door middel van vrije tekstvelden zijn ingevoerd, dan moet je de |escape modifier 
+niet zeker bent van de data in de database omdat de gegevens door mensen
+door middel van vrije tekstvelden zijn ingevoerd, dan moet je de |escape modifier
 gebruiken om de data te neutraliseren. Dit geldt voor alle Smarty code binnen
-HTML tekst. Variabelen binnen de tekstversie van een mail of in de 
-onderwerpsregel hoef je echter niet de escapen. De tekstversie en de onderwerpsregel 
+HTML tekst. Variabelen binnen de tekstversie van een mail of in de
+onderwerpsregel hoef je echter niet de escapen. De tekstversie en de onderwerpsregel
 bestaat niet uit HTML code en daar is de |escape modifier dus niet nodig.
 
 Als je variabelen automatisch wilt escapen, zodat je er niet steeds aan hoeft
@@ -95,7 +95,7 @@ aangeven.
 
 ## Accolades
 
-Als je accolades in een template of een document wilt opnemen die niet als Smarty 
+Als je accolades in een template of een document wilt opnemen die niet als Smarty
 code hoeven te worden herkend, dan kun je dit op twee manieren doen: door {ldelim} en
 {rdelim} te gebruiken, of door van {literal} en {/literal} gebruik te maken.
 
@@ -115,9 +115,9 @@ niet gezien als Smarty code en blijft het gewoon in de mailing staan.
 
 ## Personalisatie testen
 
-Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personalization-testing.md). 
-Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf 
-instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde 
+Je kan in Copernica direct de uitvoer van je [personalisatie testen](./personalization-testing.md).
+Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Deze kan je zelf
+instellen. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde
 database waaraan je je mailing of andere uiting wilt richten.
 
 ## Waar kun je Smarty-personalisatie gebruiken?
@@ -130,7 +130,7 @@ Je kunt vrijwel overal Smarty personalisatie toepassen:
 * Gepersonaliseerde website content;
 * Webformulieren (standaardwaardes, labels, etc.);
 * Hyperlinks en mailto links;
-* UTM parameters (bij het uitbreiden van hyperlinks); 
+* UTM parameters (bij het uitbreiden van hyperlinks);
 * Opvolgacties;
 * Etc.
 
