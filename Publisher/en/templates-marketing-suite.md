@@ -62,7 +62,7 @@ also the [article on headers](./headers)
 
 * [Templates](./templates)
 * [Templates in Publisher](./templates-publisher)
-* [Personalizing in the Marketing Suite](personalizing-your-newsletter-in-the-marketing-suite)
+* [Personalizing in the Marketing Suite](personalization)
 * [Followups](./followups)
 * [Headers](./headers)
 
