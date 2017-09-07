@@ -5,8 +5,7 @@ on an iPhone? Or, why doesn't our email look just as nice as our
 competitor's email? I'm going to teach you how to create an email
 template that will look nice on an iPhone, Android or Windows8 phone. In
 other words, today you are going to learn how to create a
-[responsive](./responsive-design-preparing-your-emails-for-mobile.md "Responsive design: preparing your emails for mobile")
-HTML email from scratch.
+responsive HTML email from scratch.
 
 ## Before you continue...
 
