@@ -2,8 +2,7 @@
 
 Note: This function does not yet exist in Marketing Suite.
 
-Don't know what content to put on a [web page](https://www.copernica.com/en/documentation/websites "Web pages") or
-[emailing](https://www.copernica.com/en/templates "Emailings")?
+Don't know what content to put on a web page or emailing?
 Have you ever thought of a content feed? You decide what content you
 want on a certain page or email. Just add an RSS or Atom feed to your
 marketing campaign in Copernica.

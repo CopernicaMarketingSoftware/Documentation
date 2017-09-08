@@ -42,4 +42,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 - [Overview of all API methods](rest-api)
 - [GET databases](rest-get-databases)
-- [DELETE database](rest-delete-database)

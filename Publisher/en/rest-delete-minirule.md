@@ -28,6 +28,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [DELETE database](rest-delete-database)
 * [GET minirule](rest-get-minirule)
 * [PUT minirule](rest-put-minirule)

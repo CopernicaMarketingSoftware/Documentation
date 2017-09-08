@@ -6,7 +6,7 @@ mogelijk internationale campagnes te verzenden zonder extra kosten. Je
 kunt SMS mailings versturen vanuit het **Mobile** menu in de Publisher.
 Fax mailings kun je vinden onder het **E-mailings** menu
 
-Tarieven voor deze mailings kun je vinden op de [tarieven pagina](https://www.copernica.com/nl/pricing).
+Tarieven voor deze mailings kun je vinden op de tarieven pagina.
 
 ## SMS mailing
 

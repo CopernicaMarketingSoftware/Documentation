@@ -2,9 +2,7 @@
 
 Let op: Deze functionaliteit bestaat (nog) niet in Marketing Suite.
 
-Weet je even niet welke content te plaatsen op je
-[webpagina](./websites "Maak en publiceer je eigen webpagina's")
-of in je e-mailing?
+Weet je even niet welke content te plaatsen op je webpagina of in je e-mailing?
 Had je al eens gedacht aan een contentfeed? Daarbij heb je zelf in de
 hand welke content op je webpagina of in je e-mailing verschijnt. Met
 Copernica voeg je gemakkelijk een RSS of Atom feed toe aan je
@@ -30,7 +28,7 @@ je feed, op te delen aan de hand van die rubrieken.
 
 Met Copernica stel in je in enkele stappen het adres van je feed samen.
 Dit is de link die verwijst naar je contentfeed wanneer je deze gebruikt
-in een [e-mailing](./emailings.md "E-mailings")
+in een mailing
 of op je webpagina. Gebruik je eigen stijldocumenten (CSS of XSLT) voor
 de verdere vormgeving van je RSS of Atom feed. Deze maak je gemakkelijk
 aan binnen Copernica. Beschik je al over bestaande stijldocumenten? Laad
@@ -39,10 +37,4 @@ deze dan in via Copernica's importeerfunctie.
 Wil je liever hulp inschakelen bij het inladen van een RSS of Atom feed?
 Of ben je op zoek naar iemand die je kan helpen bij het vormgeven van je
 contentfeed? In Copernica's
-[partnernetwerk](./get-the-most-out-of-the-partner-license.md "Ontdek ons partnernetwerk")
-vind je de geschikte partner die je graag te woord staat.
-
-## Meer informatie
-
-* [Publisher only functies](./publisher-only)
-* [Stylesheets](./stylesheets)
+partnernetwerk vind je de geschikte partner die je graag te woord staat.

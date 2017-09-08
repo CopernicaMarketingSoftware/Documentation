@@ -41,11 +41,8 @@ objectmodel. Alle gegevens in de software worden door objecten
 gerepresenteerd. Lees de eigenschappen van deze objecten uit met behulp
 van de SOAP API en werk ze bij. De methodes zijn ook aan te roepen. Elk
 object is opgebouwd uit kleinere deelobjecten. Zo is een object dat een
-[database](./creating-your-own-databases.md "Maak en beheer je eigen database(s)")
-representeert bijvoorbeeld opgebouwd uit objecten die de profielen
-representeren. Een object dat een
-[template](./create-custom-templates.md "Ontwikkel je eigen dynamische templates")
-omvat, heeft een methode waarmee je alle documenten opvraagt die op
+database representeert bijvoorbeeld opgebouwd uit objecten die de profielen
+representeren. Een object dat een template omvat, heeft een methode waarmee je alle documenten opvraagt die op
 basis van dit template zijn aangemaakt.
 
 Gebruik functionaliteiten van Copernica in de applicatie

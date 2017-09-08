@@ -50,5 +50,4 @@ you build, maintain and export your databases.
 
 * [Database maintenance](./database-maintenance)
 * [Prevent database corruption](./prevent-database-corruption)
-* [Spamtraps](./mind-your-email-reputation-watch-out-for-spam-traps)
 * [E-mail reputation](./how-to-build-up-your-email-reputation)

@@ -23,7 +23,7 @@ Copernica offers the possibility to use the software and license for
 multiple colleagues. This requires personal credentials for each employee. 
 It might benefit you to allow multiple employees access, to allow them 
 to use different departments, locations or businesses. All prices related 
-to accounts and users can be found [here](www.copernica.com/nl/pricing).
+to accounts and users can be found on our pricing page.
 
 ### Email
 
@@ -36,7 +36,7 @@ pay for emails you don't use. If you pay-as-you-go you always need enough
 credit to send the amount of emails you want to send. You can't send 10.0001 
 emails if you only have enough credit for 10.000. All credit will be 
 transferred to the next month. Costs for email are variable and can be 
-found on the [pricing page](www.copernica.com/en/pricing).
+found on our pricing page.
 
 It is also possible to buy a bundle if you already know how many messages 
 you will send. Bundles are a year long contract where a set amount of 
@@ -65,8 +65,3 @@ Publisher. You pay per preview.
 If you choose to pay at the end of the month or use a bundle you receive 
 an automatically generated bill. Your account is charged according to 
 your account usage and you receive a receipt or invoice with all costs.
-
-## More information
-
-- [Pricing](https://www.copernica.com/en/pricing)
-- [Litmus previews](./litmus)

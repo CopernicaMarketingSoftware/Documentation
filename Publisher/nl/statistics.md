@@ -53,10 +53,3 @@ collega's, vrienden, familie of wie je dan ook zou willen informeren.
 Je kunt hiervoor een live document aanmaken dat zichzelf update en geen 
 login gegevens vereist. Zie [dit artikel](./statistics-share) voor  meer 
 informatie.
-
-## Meer informatie
-
-* [Mailing statistieken](./view-the-results-of-your-mailing)
-* [Kerncijfers periode](./statistics-key-figures)
-* [Export statistieken](./statistics-export)
-* [Export statistieken met REST API](./rest-get-logfiles-names)
