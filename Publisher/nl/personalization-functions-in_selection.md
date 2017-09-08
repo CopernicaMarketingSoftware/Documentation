@@ -7,18 +7,21 @@ met behulp van selecties in je database. Je kunt bijvoorbeeld een
 selectie maken van vrouwen waarvan je weet dat ze kinderen hebben en in 
 je mails naar hen specifiek kinderkleren adverteren.
 
-Om de functie uit te voeren is een selectie verplicht. Als het profiel 
-niet meegegeven wordt probeert de functie zelf het profiel op te halen 
-waarvoor je personalizeert.
+Om de functie uit te voeren is een specifieke selectie of miniselectie verplicht. 
+Als het profiel niet meegegeven wordt, probeert de functie zelf het profiel 
+op te halen waarvoor je personalizeert.
 
 ## Voorbeeld
 
-    {in_selection selection="womenwithkids"}}
+    {in_selection selection=145}
+        { Display your content here! }
+    {/in_selection}
+
+    {in_selection miniselection=54}
         { Display your content here! }
     {/in_selection}
     
-Door je te specializeren in 
-personalizatie en goede data bij te houden kun je voor iedereen hele 
+Door je te specializeren in personalizatie en goede data bij te houden kun je voor iedereen hele 
 relevante mails versturen!
 
 ## Meer informatie
