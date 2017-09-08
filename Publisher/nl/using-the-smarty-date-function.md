@@ -1,6 +1,6 @@
 # Weergeven van datums en tijden
 
-Met behulp van de {\$smarty.now} functie van Smarty, kun je dynamisch
+Met behulp van de {$smarty.now} functie van Smarty, kun je dynamisch
 datums en tijden tonen in emailings, landingspagina's en dergelijke.
 
 **Enkele toepassingen:**
