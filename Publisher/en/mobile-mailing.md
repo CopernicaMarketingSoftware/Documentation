@@ -5,7 +5,7 @@ SMS. SMS messages are easy to compose and even international campaigns are
 possible without extra charges. You can send SMS mailings from the **Mobile** 
 menu and fax mailings from the regular **E-mailings** menu.
 
-Tariffs can be found on the [pricing page](https://www.copernica.com/en/pricing).
+Tariffs can be found on our pricing page.
 
 ## SMS mailing
 
@@ -36,7 +36,3 @@ you can find under the field type *Phone*. After preparing the mailing
 you can send it to a selection through the mailings menu. 
 If you use Smarty [personalization](./personalization) test your document 
 thoroughly as always to make sure the receivers see the document as you intended.
-
-## More information
-
-* [Publisher only features](./publisher-only)

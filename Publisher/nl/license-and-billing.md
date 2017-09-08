@@ -24,8 +24,8 @@ Copernica biedt wel de mogelijkheid om de software en licentie voor meerdere
 collega's beschikbaar te maken. Echter, hiervoor is wel een persoonsgebonden
 login voor nodig. Het kan ook handig zijn om extra gebruikers af te nemen, zodat
 werknemers toegang kunnen krijgen tot verschillende afdelingen, vestigingen of
-ondernemingen. Alle prijzen omtrent gebruikers en accounts kun je 
-[hier](www.copernica.com/nl/pricing) bekijken.
+ondernemingen. Alle prijzen omtrent gebruikers en accounts kun je bekijken 
+op onze tarieven pagina.
 
 ### Email
 
@@ -38,7 +38,7 @@ meer emails dan je nodig hebt. Als je betaalt met krediet moet je wel
 altijd genoeg hebben voor het aantal emails. Je kan niet 10.001 emails 
 versturen als je maar krediet hebt voor 10.000 emails. Krediet wordt 
 daarnaast overgeheveld naar de volgende maand. De kosten voor 
-emails zijn variabel en zijn beschikbaar op de [prijzen pagina](www.copernica.com/nl/pricing).
+emails zijn variabel en zijn beschikbaar op onze tarieven pagina.
 
 Een abonnement is erg geschikt voor mensen die al weten hoeveel email ze 
 zullen versturen per maand. Het abonnement loopt een jaar, maar kan in de 
@@ -67,8 +67,3 @@ te previewen in verschillende omgevingen. Je betaalt per preview.
 Als je kiest voor betalen aan het einde van de maand of een abonnement 
 wordt er automatisch een factuur opgesteld, waar je alle kosten voor de 
 afgelopen maand terug kan vinden.
-
-## Meer informatie
-
-- [Tarieven](https://www.copernica.com/nl/pricing)
-- [Litmus previews](./litmus)

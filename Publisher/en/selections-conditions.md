@@ -72,7 +72,6 @@ get started. You can find out more in the articles below.
 
 * [Selection management](./selections-introduction)
 * [Settings for selections](selections-settings)
-* [Optimalizing selections](selections-optimalization)
 * [The sorting condition in-depth](./selections-conditions-partcondition)
 
 ### Selection tutorials

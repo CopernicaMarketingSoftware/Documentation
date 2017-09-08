@@ -32,10 +32,8 @@ Copernica's API uses a logical and structured object model. All data in
 the software is represented by objects. Read the properties of these
 objects with SOAP API and then update them. The methods can also be
 invoked. Every project is built up from smaller sub-objects. An object
-that represents a
-[database](./creating-your-own-databases.md "Creating your own databases")
-for example, has a method that requests all documents that were created
-based on this [template](./create-custom-templates.md "Create custom templates").
+that represents a database for example, has a method that requests all 
+documents that were created based on this template.
 
 Use Copernica functionalities in the application
 ------------------------------------------------

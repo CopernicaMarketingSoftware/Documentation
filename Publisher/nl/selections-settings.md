@@ -59,10 +59,3 @@ overzicht bewaren in je database. Let op, gearchiveerde selecties blijven
 actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties 
 heeft dus geen invloed op de performance van je overige selecties. Je kunt
 ze dus beter verwijderen als performance je doel is.
-
-
-### Meer informatie
-
-* [Selecties en miniselecties](./selections-introduction)
-* [Optimaliseren van selecties](selections-optimalization)
-* [Regels en condities](selections-conditions)

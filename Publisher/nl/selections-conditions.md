@@ -74,7 +74,6 @@ gedurende een bepaalde periode.
 
 * [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
-* [Optimaliseren van selecties](selections-optimalization)
 
 ### Selectie tutorials
 

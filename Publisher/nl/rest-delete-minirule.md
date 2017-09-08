@@ -28,7 +28,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## More information
 
 * [Overzicht van alle API calls](rest-api)
-* [Verwijderen van een database](rest-delete-database)
 * [Creeeren van een minirule](rest-get-minirule)
 * [Een minirule aanpassen](rest-put-minirule)
 
