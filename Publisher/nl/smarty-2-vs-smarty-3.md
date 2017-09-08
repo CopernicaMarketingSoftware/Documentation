@@ -21,7 +21,7 @@ de voordelen van Smarty 3.
 - De syntax van Smarty 3 is iets anders. Het kan dus gebeuren dat je een 
 aantal (vaak simpele) errors krijg als je een Smarty 2 template naar een 
 Smarty 3 template kopieert.
-- Personalizatie gebruikt in [webformulieren](./webforms) en [followups](./followups) 
+- Personalizatie gebruikt in webformulieren en followups 
 gebruiken nog de Smarty 2 engine, zelfs als deze gerelateerd zijn aan een 
 Smarty 3 document of template.
 - Je kunt de gebruikte versie van Smarty opvragen met {\$smarty.version}.

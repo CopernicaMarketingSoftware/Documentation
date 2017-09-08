@@ -105,7 +105,6 @@ also the [article on headers](./headers)
 * [Templates](./templates)
 * [Templates in Marketing Suite](./templates-marketing-suite)
 * [Personalization in Publisher](personalizing-your-newsletter-in-the-publisher)
-* [Followups](./followups)
 * [Headers](./headers)
 
 ### Template content

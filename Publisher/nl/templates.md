@@ -54,5 +54,4 @@ om deze er mooi uit te laten zien in elke email client.
 ## Meer informatie
 
 * [Personalizatie](./personalization)
-* [Scripting en follow-ups](./followups)
 * [Videos en GIFs](./templates-video-gif)

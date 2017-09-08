@@ -74,8 +74,7 @@ Een [XSLT](css-and-xslt) stylesheet kun je aanmaken onder het kopje **Stijl**.
 
 De resultaten van een enquête kun je per profiel inzien wanneer je het 
 profiel zelf hebt geselecteerd. Je kunt er ook voor kiezen om je resultaten 
-te [exporteren](./surveys-export-results) of deze te verwerken met 
-[opvolgacties](./followups).
+te [exporteren](./surveys-export-results) of deze te verwerken met opvolgacties.
 
 ## Meer informatie
 

@@ -26,9 +26,3 @@ De script editor is voor de ervaren gebruiker. Hier kun je namelijk zelf aan de 
 met JavaScript om zo geavanceerde campagnes op te zetten. Deze scripts worden, 
 net als in de flowchart editor, uitgevoerd op de servers van Copernica als er op een 
 link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting).
-
-
-## Meer informatie
-
-* [Follow-up Manager](./follow-up-manager)
-* [Data-script attribuut](./followups-scripting.md)

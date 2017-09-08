@@ -42,11 +42,3 @@ It is also very interesting to combine the GIF and the image with the
 play button. GIFs may also contain a link and can be used to give a 
 preview for the video you are linking to. The GIF engages the user and 
 the link allows the user to explore your company further.
-
-## More information
-
-Now would be a good time to finish your template or add some follow-ups. 
-More information can be found in the articles below.
-
-* [Templates](./templates)
-* [Followups](./followups)
