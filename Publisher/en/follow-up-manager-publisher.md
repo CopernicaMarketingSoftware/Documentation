@@ -41,7 +41,6 @@ or edit existing follow-up actions.
 
 ## More information
 
-* [Follow-ups](./followups)
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms)
 * [Data-script object](./followups-scripting.md)
 * [Followup types](./followups-types)

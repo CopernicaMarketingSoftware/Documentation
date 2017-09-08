@@ -34,5 +34,4 @@ automatiseren? Je kunt alle informatie vinden in onze artikels.
 
 * [Begrippenlijst](./definitions)
 * [Personalizatie](./personalization)
-* [Followups](./followups)
 * [Achtergrond artikelen](./tips-and-tricks)

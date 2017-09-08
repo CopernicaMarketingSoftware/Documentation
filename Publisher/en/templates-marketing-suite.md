@@ -5,7 +5,7 @@ is the very user-friendly drag-and-drop editor and the more technical
 HTML editor. With the drag-and-drop editor anyone can make high quality 
 emails in very little time. Simply drag elements to indicate where to 
 place your text, images, share buttons, follow icons, unsubscribe buttons 
-and much more. Besides the [follow-up manager](./followups) the Marketing Suite has many 
+and much more. Besides the follow-up manager the Marketing Suite has many 
 more functionalities to create a beautiful functional email.
 
 ## Extend hyperlinks
@@ -57,14 +57,6 @@ Using these you can add any type of information you like. You can use them
 to make analyzing your campaign easier, for example. You can also send 
 a BCC (Blind Carbon Copy) or add the *List unsubscribe* header. See 
 also the [article on headers](./headers)
-
-## More information
-
-* [Templates](./templates)
-* [Templates in Publisher](./templates-publisher)
-* [Personalizing in the Marketing Suite](personalization)
-* [Followups](./followups)
-* [Headers](./headers)
 
 ### Template content
 

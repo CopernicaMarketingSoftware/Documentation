@@ -53,5 +53,4 @@ campaign and videos and GIF's. For instructions, tips and ideas you can
 consult the articles below.
 
 * [Personalization](./personalization)
-* [Scripting and follow-ups](./followups)
 * [Videos and GIFs](./templates-video-gif)

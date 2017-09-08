@@ -151,7 +151,6 @@ Dit is permanent, dus wees hier voorzichtig mee.
 
 ## Meer informatie
 
-* [Opvolgacties](./followups)
 * [Opvolgactie condities](./conditions-for-follow-ups)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher)
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms)

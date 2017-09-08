@@ -57,11 +57,4 @@ gezet bij een klik. Het voorbeeld is eenvoudig, maar als je wilt
 kun je ook hele complexe scripts uitvoeren. Je treft nooit een 
 data-script aan als je de broncode van een verstuurd bericht 
 inspecteert. Het data-script wordt, vlak voor het versturen, uit 
-de e-mail gefilterd en is dus niet zichtbaar voor de ontvanger. 
-
-
-## Meer informatie
-
-* [Follow-up Manager](./follow-up-manager)
-* [Database data-script](./followups-scripting-database)
-* [Collection data-script](./followups-scripting-collection)
+de e-mail gefilterd en is dus niet zichtbaar voor de ontvanger.

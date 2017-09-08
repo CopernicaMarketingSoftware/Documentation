@@ -15,7 +15,7 @@ kun je bijvoorbeeld de gebruiker in- of uitloggen, of niets veranderen. Hierna
 kun je reacties ontvangen die netjes terechtkomen in de gelinkte velden in
 je database. Eventuele selecties worden aangepast op basis van de nieuwe
 data op het moment dat deze door Copernica wordt geupdate. Je kunt ook een
-bevestigingsmail of een bedankmail sturen met [opvolgacties](./follow-up-manager).
+bevestigingsmail of een bedankmail sturen met opvolgacties.
 
 ### Aanmaken in website
 
