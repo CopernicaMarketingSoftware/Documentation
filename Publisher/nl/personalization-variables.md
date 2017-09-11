@@ -37,7 +37,7 @@ heeft een aantal eigenschappen:
 * **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
 * **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
 
-Je kunt eenvoudige personalizaties als {$voornaam} en {$achternaam} dus ook
+Je kunt eenvoudige personalisaties als {$voornaam} en {$achternaam} dus ook
 schrijven als {$profile.voornaam} en {$profile.achternaam}.
 
 ## Mailings naar subprofielen
@@ -66,7 +66,7 @@ Als je gebruik maakt van een gelaagde databasestructuur, dan kun je *itereren*
 over de subprofielen die aan een profiel zijn gelinkt. Als je, bijvoorbeeld,
 eigenaar van een dierenwinkel bent en een database met klantgegevens hebt met 
 per klant een collecties met katten en een collectie met honden, dan kun je 
-dit soort personalizaties maken:
+dit soort personalisaties maken:
 
     Beste {$profile.voornaam|escape},
     
@@ -138,13 +138,13 @@ van de mailing waartoe het bericht behoort:
 ## Extra personalisatievariabelen toevoegen
 
 Op templateniveau kun je [extra variabelen](./personalization-functions-assign)
-toevoegen. De extra personalizatievariabelen zijn daarna benaderbaar
+toevoegen. De extra personalisatievariabelen zijn daarna benaderbaar
 via de gegeven naam.
 
     {$variabele}
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
-* [Personalizatie modifiers](./personalization-modifiers)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
+* [Personalisatie modifiers](./personalization-modifiers)

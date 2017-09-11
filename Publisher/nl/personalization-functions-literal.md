@@ -1,4 +1,4 @@
-# Personalizatie functies: literal
+# Personalisatie functies: literal
 
 De *literal* functie wordt gebruikt om een blok code letterlijk te nemen. 
 Dit is vooral nuttig als je een blok code wil gebruiken waarin veel 
@@ -33,6 +33,6 @@ Dit voorbeeld komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Linker en rechter delimiter](./personalization-functions-delim)

@@ -5,7 +5,7 @@ maken en te hosten met HTML. Je kunt Copernica webpagina's gebruiken om je
 klanten te informeren of webformulieren en enquêtes te plaatsen om je 
 klanten beter te leren kennen. Je kunt een [template](./templates) aanmaken 
 voor je website en zo met gemak de layout van een of meedere pagina's aanpassen. 
-Je kunt daarnaast [personalizatie](./personalization) gebruiken (alleen) als 
+Je kunt daarnaast [personalisatie](./personalization) gebruiken (alleen) als 
 je gebruikers ingelogd zijn. Later in dit artikel leggen we uit hoe je dit 
 automatisch kunt doen vanuit je email.
 
@@ -41,7 +41,7 @@ en structuur bepaalt is het mogelijk deze voor meerdere pagina's te gebruiken.
 Als je overal dezelfde of een vergelijkbare template gebruikt maakt dat je 
 site een goed geheel, al is het ook mogelijk overal andere templates te 
 gebruiken. Na het aanmaken van een template kun je beginnen met content toevoegen 
-zoals text, afbeeldingen en loop blokken. Je kunt deze ook [personalizeren](./personalization).
+zoals text, afbeeldingen en loop blokken. Je kunt deze ook [personaliseren](./personalization).
 
 Een aantal aandachtspunten:
 * Een website bevat webpagina's, die vergelijkbaar zijn met documenten.
@@ -118,7 +118,7 @@ van het profiel, wat een aantal voordelen heeft:
 * Webformulieren kunnen alvast deels ingevuld worden met reeds bekende 
 informatie.
 * Enquête resultaten kunnen meteen gelinkt worden aan bestaande profielen. 
-* Personalizatie met profieldata
+* Personalisatie met profieldata
 * Gebruikers hoeven niet in te loggen
 
 Je kunt hyperlinks voorbereiden met de *Hyperlinks voorbereiden* functie 

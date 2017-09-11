@@ -74,4 +74,4 @@ een button om de bewerkmodus in te stellen. Deze knop is handig bij het
 
 ## Meer informatie
 
-* [Personalization](./personalizing-your-newsletter-in-the-publisher)
+* [Personalisatie](./personalizing-your-newsletter-in-the-publisher)

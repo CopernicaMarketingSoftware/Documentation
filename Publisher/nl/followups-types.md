@@ -108,13 +108,13 @@ triggerde of naar een vaste bestemming.
 Deze actie verstuurt een PDF document via fax. Je kunt hier het document 
 selecteren en deze versturen naar het profiel dat de actie triggerde 
 of naar een vaste bestemming. Bij "Instelling" kun je kiezen of het 
-document gepersonalizeerd moet worden, of het een testverzending 
+document gepersonaliseerd moet worden, of het een testverzending 
 betreft en of foutmeldingen geregistreerd moeten worden.
 
 ### Verstuur een opgemaakt sms-document
 
 Deze actie verstuurt een SMS document naar het profiel dat de actie triggerde 
-of een vaste bestemming. Bij "Instelling" kun je personalizatie aan of uit 
+of een vaste bestemming. Bij "Instelling" kun je personalisatie aan of uit 
 zetten, kiezen of je langere SMS berichten wil splitsen en of het bericht 
 als testverzending verzonden moet worden.
 

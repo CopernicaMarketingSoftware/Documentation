@@ -1,4 +1,4 @@
-# Personalizatie functies: Unsubscribe
+# Personalisatie functies: Unsubscribe
 
 Het is wettelijk verplicht om iedere (commerciële) e-mail die je
 verstuurt, te voorzien van een goed zichtbare en werkende
@@ -47,4 +47,4 @@ server (http://vicinity.picsrv.net/) om de link te laten werken.
 
 ## Meer informatie
 
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie functies](./personalization-functions)

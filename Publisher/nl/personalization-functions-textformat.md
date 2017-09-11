@@ -1,4 +1,4 @@
-# Personalizatie functies: textformat
+# Personalisatie functies: textformat
 
 *Textformat* is een functie die toegepast kan worden op blokken tekst om 
 deze te formatteren. Het verwijdert vooral spaties, speciale karakters en 
@@ -88,5 +88,5 @@ deze functie.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

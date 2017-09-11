@@ -1,4 +1,4 @@
-# Personalizatie functies: linkpdf
+# Personalisatie functies: linkpdf
 
 De linkpdf tag kan gebruikt worden om een link op te stellen naar een 
 bestaand PDF bestand. Eerst moet er een document of template gevonden 
@@ -14,5 +14,5 @@ om de link te vervangen door woorden en klikbaar te maken.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

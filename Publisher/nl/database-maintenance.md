@@ -41,7 +41,7 @@ hoog te houden.
 
 Als je goede kennis van je relaties overzichtelijk weet vast te leggen biedt 
 dit weer kansen voor je marketingafdeling. Je kunt groepen zo veel beter 
-benaderen, bijvoorbeeld door middel van [personalizatie](./personalization).
+benaderen, bijvoorbeeld door middel van [personalisatie](./personalization).
 
 ## Meer informatie
 

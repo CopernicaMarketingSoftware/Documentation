@@ -13,6 +13,6 @@ naam toe in de stijl van de gegeven XSLT aan je template.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Enquête invoegen](./personalization-functions-survey)

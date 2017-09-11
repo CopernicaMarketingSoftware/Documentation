@@ -82,7 +82,7 @@ door een beschrijving van de link, zoals hier:
     tekst.
 -   Gebruik geen technieken om inhoud voor gebruikers te verbergen zoals 
     CSS display none. Als je inhoud wil aanpassen aan je gebruikers kan 
-    dit natuurlijk wel. Meer informatie hierover vindt je in het [artikel over personalizatie](./personalization)
+    dit natuurlijk wel. Meer informatie hierover vindt je in het [artikel over personalisatie](./personalization)
 -   Verwijder de HTML code die je niet gebruikt.
 
 **Afbeeldingen**

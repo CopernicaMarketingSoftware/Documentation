@@ -29,9 +29,9 @@ om snel van start te gaan.
 ## Meer informatie
 
 Alles gelukt? Dan hebben we hier nog een aantal artikelen om je 
-emails nog geavanceerder te maken. Wil je leren personalizeren en 
+emails nog geavanceerder te maken. Wil je leren personaliseren en 
 automatiseren? Je kunt alle informatie vinden in onze artikels.
 
 * [Begrippenlijst](./definitions)
-* [Personalizatie](./personalization)
+* [Personalisatie](./personalization)
 * [Achtergrond artikelen](./tips-and-tricks)

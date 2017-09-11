@@ -1,4 +1,4 @@
-# Personalizatie functies: if
+# Personalisatie functies: if
 
 Met de *if* function is het mogelijke conditionele uitdrukkingen te maken 
 en inhoud te plaatsen op basis van beschikbare informatie. Profiel en subprofiel 
@@ -42,5 +42,5 @@ Het is ook mogelijk expressies aan elkaar te schakelen met 'and' en 'or'.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

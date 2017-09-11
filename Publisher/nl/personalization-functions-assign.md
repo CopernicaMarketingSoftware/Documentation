@@ -1,4 +1,4 @@
-# Personalizatie functions: assign
+# Personalisatie functions: assign
 
 De {assign} functie kan gebruikt worden om een waarde in een variabele 
 op te slaan. Je kunt deze dan later gebruiken. Er zijn twee manieren om 
@@ -11,7 +11,7 @@ Deze commando's gedragen zich hetzelfde, omdat het tweede voorbeeld slechts
 een kortere manier is om hetzelfde te schrijven.
 
 Nu dat we een naam toegekend hebben aan onze ontvanger kunnen we deze 
-gebruiken om een email te personalizeren:
+gebruiken om een email te personaliseren:
 
     Hallo {$name},
     
@@ -24,7 +24,7 @@ deze hier beter voor geschikt zijn.
      
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Capture functie](./personalization-functions-capture)
 * [Rawcapture functie](./personalization-functions-rawcapture)

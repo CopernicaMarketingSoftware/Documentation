@@ -1,4 +1,4 @@
-# Personalizatie functies: math
+# Personalisatie functies: math
 
 De *math* functie maakt het mogelijk om wiskunde vergelijkingen uit te voeren 
 in de template. Dit is echter een computationeel zware functie die sneller 
@@ -47,5 +47,5 @@ als we **{$frac}** in de template typen.
     
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
