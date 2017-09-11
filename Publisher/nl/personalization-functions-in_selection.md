@@ -13,12 +13,16 @@ waarvoor je personaliseert.
 
 ## Voorbeeld
 
-    {in_selection selection="womenwithkids"}}
+    {in_selection selection=145}
+        { Display your content here! }
+    {/in_selection}
+
+    {in_selection miniselection=54}
         { Display your content here! }
     {/in_selection}
     
 Door je te specializeren in 
-personalisatie en goede data bij te houden kun je voor iedereen hele 
+personalisatie en goede data bij te houden, kun je voor iedereen hele 
 relevante mails versturen!
 
 ## Meer informatie
