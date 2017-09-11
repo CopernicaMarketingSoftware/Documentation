@@ -1,4 +1,4 @@
-# Personalizatie functions: loadprofile
+# Personalisatie functions: loadprofile
 
 Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de **<body>** tag in je broncode.
 

@@ -1,4 +1,4 @@
-# Personalizatie functie: capture
+# Personalisatie functie: capture
 
 *Capture* kan gebruikt worden om de code tussen de begin tag en de eind 
 tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./personalization-functions-assign), 
@@ -103,7 +103,7 @@ deze omzetten naar tekst en printen. Het resultaat ziet er als volgt uit:
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Assign functie](./personalization-functions-assign)
 * [Foreach functie](./personalization-functions-foreach)

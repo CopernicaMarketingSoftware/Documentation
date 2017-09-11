@@ -1,4 +1,4 @@
-# Personalizatie functies: condition
+# Personalisatie functies: condition
 
 Een *condition* lijkt qua werking veel op de [if functie](./personalization-functions-if) 
 maar evalueert JavaScript expressies. De enige parameter is de expressie 
@@ -15,5 +15,5 @@ maar je kunt de expressies zo ingewikkeld maken als je wil.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

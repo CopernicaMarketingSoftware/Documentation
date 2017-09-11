@@ -1,4 +1,4 @@
-# Personalizatie functies: linkfile
+# Personalisatie functies: linkfile
 
 De *linkfile* functie laat je een file linken uit het files onderdeel 
 van de profielen in je template of document.
@@ -29,6 +29,6 @@ wordt deze file in plaats daarvan weergeven.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
-* [Personalizatie functie loadfile](./personalization-functions-loadfile)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
+* [Personalisatie functie loadfile](./personalization-functions-loadfile)

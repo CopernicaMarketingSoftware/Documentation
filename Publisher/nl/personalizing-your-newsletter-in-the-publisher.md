@@ -39,7 +39,7 @@ met het volgende e-mailadres: {$profile.email}.
 
 ### Template variables
 
-Je kunt ook extra personalizatie variabelen toevoegen door deze aan te maken
+Je kunt ook extra personalisatie variabelen toevoegen door deze aan te maken
 in het Template menu. Hier definieer je de naam, tijdens het aanmaken van
 het document geef je er een waarde aan. Gebruik de waarde vervolgens met
 **{$property.name}**, waar je "name" vervangt door de naam van je variabele.

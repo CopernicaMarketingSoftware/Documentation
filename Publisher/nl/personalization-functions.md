@@ -1,4 +1,4 @@
-# Personalizatie functies
+# Personalisatie functies
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er
 hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende 
@@ -63,5 +63,5 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Overzicht van personalizatiemodifiers](./personalization-modifiers)
+* [Personalisatie](./personalization)
+* [Overzicht van personalisatiemodifiers](./personalization-modifiers)

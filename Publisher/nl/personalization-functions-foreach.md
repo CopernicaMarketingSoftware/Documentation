@@ -1,4 +1,4 @@
-# Personalizatie functies: foreach
+# Personalisatie functies: foreach
 
 De *foreach* functie kan gebruikt worden om bijvoorbeeld over arrays 
 met data te loopen. Je kunt *foreach* loops ook in elkaar plaatsen. Het aantal 
@@ -52,6 +52,6 @@ printen. De output ziet er als volgt uit:
     
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Capture functie](./personalization-functions-capture).

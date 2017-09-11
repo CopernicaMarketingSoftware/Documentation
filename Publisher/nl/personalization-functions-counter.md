@@ -1,4 +1,4 @@
-# Personalizatie functies: counter
+# Personalisatie functies: counter
 
 De *counter* tag kan gebruikt worden om tellingen te printen en verhoogt 
 zichzelf elke keer dat hij wordt aangeroepen. Je kunt zoveel tellingen 
@@ -35,7 +35,7 @@ en het volgende resultaat krijgen:
     2<br />
     3<br />
     
-## Gepersonalizeerde teller
+## Gepersonaliseerde teller
 
 Kijk nu eens naar een wat ingewikkelder stuk code dat er als volgt uitziet:
 
@@ -58,5 +58,5 @@ komen van de opteller en de even getallen van de afteller in de volgende output:
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

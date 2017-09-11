@@ -1,4 +1,4 @@
-# Personalizatie functies: linkemail
+# Personalisatie functies: linkemail
 
 Soms als een email aankomt kan deze niet goed weergegeven worden in de 
 email client. Copernica heeft hier een mooie oplossing voor: De webversie. 
@@ -54,5 +54,5 @@ pic.vicinity.nl.
 
 ## Meer informatie
 
-* [Personalizatie(./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie(./personalization)
+* [Personalisatie functies](./personalization-functions)

@@ -1,4 +1,4 @@
-# Personalizatie functies: fetch
+# Personalisatie functies: fetch
 
 Fetch kan gebruikt worden om bestanden van het locale systeem, HTTP of FTP 
 op te vragen. Je kunt dan de inhoud van de bestanden tonen.
@@ -37,6 +37,6 @@ daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
 ## Meer informatie 
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [if functie](./personalize-functions-if)

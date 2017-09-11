@@ -7,12 +7,12 @@ goed gedocumenteerd door vele enthousiastelingen. Zie hun eigen documentatie
 [hier](http://www.smarty.net/docs/en/) (geen Nederlands beschikbaar).
 
 In 2011 heeft Copernica de overstap gemaakt van Smarty 2 naar Smarty 3. 
-De syntax van de personalizatie code die gebruikt wordt in Smarty 3 verschilt 
+De syntax van de personalisatie code die gebruikt wordt in Smarty 3 verschilt 
 enigzins.
 
 Hierbij een aantal aandachtspunten:
 
-- Personalizatie in bestaande templates gebaseerd op versie 2 zal valide 
+- Personalisatie in bestaande templates gebaseerd op versie 2 zal valide 
 blijven. Je hoeft deze templates dus niet aan te passen, deze werken nog 
 gewoon.
 - Als je een nieuwe template aanmaakt kun je er nog voor kiezen Smarty 2 
@@ -21,7 +21,7 @@ de voordelen van Smarty 3.
 - De syntax van Smarty 3 is iets anders. Het kan dus gebeuren dat je een 
 aantal (vaak simpele) errors krijg als je een Smarty 2 template naar een 
 Smarty 3 template kopieert.
-- Personalizatie gebruikt in webformulieren en followups 
+- Personalisatie gebruikt in webformulieren en followups 
 gebruiken nog de Smarty 2 engine, zelfs als deze gerelateerd zijn aan een 
 Smarty 3 document of template.
 - Je kunt de gebruikte versie van Smarty opvragen met {\$smarty.version}.
@@ -61,7 +61,7 @@ keren aanroepen in plaats van je code te moeten kopiëren. Zo hoef je
 de functie ook maar een keer aan te passen als je hem wil veranderen. 
 
 Meer over functies kun je leren in de [Smarty documentatie](http://www.smarty.net/docs/en/) 
-of in ons artikel over [personalizatie functies](./personalization-functions.md)
+of in ons artikel over [personalisatie functies](./personalization-functions.md)
 
 ### Syntax
 
@@ -78,5 +78,5 @@ of
 ## Meer informatie
 
 * [Smarty documentatie](http://www.smarty.net/docs/en/)
-* [Personalizatie algemeen](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie algemeen](./personalization)
+* [Personalisatie functies](./personalization-functions)

@@ -1,4 +1,4 @@
-# Personalizatie functies: strip
+# Personalisatie functies: strip
 
 De *strip* functie verwijdert ruimte uit de template, die anders de HTML 
 output zou kunnen veranderen. Het is nuttig als je graag je code uitschrijft 
@@ -28,5 +28,5 @@ hebt staan, dit kan het resultaat onverwacht veranderen.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

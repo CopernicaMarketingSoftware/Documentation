@@ -1,4 +1,4 @@
-# Personalizatie functies: webonly
+# Personalisatie functies: webonly
 
 Het {webonly} blok kan gebruikt worden om een stuk content alleen zichtbaar 
 te maken in de webversie van een bericht. Als deze template gebruikt zou 
@@ -16,7 +16,7 @@ zichtbaar in de browser.
     
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Mailonly functie](./personalization-functions-mailonly)
 

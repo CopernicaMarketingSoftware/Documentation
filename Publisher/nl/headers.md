@@ -26,7 +26,7 @@ om extra informatie mee te geven aan je email. Je kunt dus helemaal zelf
 bepalen welke X-headers je gebruikt of wat je meegeeft. Je kan bijvoorbeeld 
 de naam van je selectie of campagne meegeven voor je eigen statistieken.
 
-Met Copernica kun je hier ook Smarty [personalizatie](./personalization) 
+Met Copernica kun je hier ook Smarty [personalisatie](./personalization) 
 gebruiken. Zo kun je bijvoorbeeld aan elke email een "X-PF-ID" meegeven, 
 waar je de ID van een profiel meegeeft (bijvoorbeeld omdat deze anders 
 is in je eigen database). Als de email vervolgens niet aankomt kun je 

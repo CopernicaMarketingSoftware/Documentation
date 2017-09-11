@@ -1,4 +1,4 @@
-# Personalizatie functies: cycle
+# Personalisatie functies: cycle
 
 De *cycle* functie kan gebruikt worden om te wisselen tussen een set waarden. 
 Je kunt deze bijvoorbeeld gebruiken om twee kleuren af te wisselen in de 
@@ -36,6 +36,6 @@ Dit voorbeeld gebruikt ook de [foreach functie](./personalization-functions-fore
     
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [foreach functie](./personalization-functions-foreach.md)

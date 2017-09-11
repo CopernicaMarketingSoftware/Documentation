@@ -1,4 +1,4 @@
-# Personalizatie functies: in_selection
+# Personalisatie functies: in_selection
 
 De *in_selection* functie kan gebruikt worden om te checken of een 
 gespecificeerd profiel in een specifieke view/selectie zit. Deze functie is 
@@ -9,7 +9,7 @@ je mails naar hen specifiek kinderkleren adverteren.
 
 Om de functie uit te voeren is een selectie verplicht. Als het profiel 
 niet meegegeven wordt probeert de functie zelf het profiel op te halen 
-waarvoor je personalizeert.
+waarvoor je personaliseert.
 
 ## Voorbeeld
 
@@ -18,11 +18,11 @@ waarvoor je personalizeert.
     {/in_selection}
     
 Door je te specializeren in 
-personalizatie en goede data bij te houden kun je voor iedereen hele 
+personalisatie en goede data bij te houden kun je voor iedereen hele 
 relevante mails versturen!
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [in_selection functie](./personalization-functions-in_selection)

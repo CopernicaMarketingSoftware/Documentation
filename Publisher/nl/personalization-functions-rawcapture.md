@@ -1,4 +1,4 @@
-# Personalizatie functies: rawcapture
+# Personalisatie functies: rawcapture
 
 Rawcapture werkt vergelijkbaar met [capture](./personalization-functions-capture), 
 maar gebruikt geen HTML escaping. Dit is nuttig als je bijvoorbeeld een 
@@ -9,7 +9,7 @@ met de [assign functie](./personalization-functions-assign).
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Assign functie](./personalization-functions-assign)
 * [Capture functie](./personalization-functions-capture)

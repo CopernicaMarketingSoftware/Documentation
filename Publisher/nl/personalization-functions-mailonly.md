@@ -1,4 +1,4 @@
-# Personalizatie functies: mailonly
+# Personalisatie functies: mailonly
 
 Het {mailonly} blok kan gebruikt worden om een stuk code alleen zichtbaar 
 te maken in de mail versie van het bericht. Als het vervolgens in de 
@@ -15,6 +15,6 @@ naar de webversie te verbergen uit de webversie.
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
 * [Webonly functie](./personalization-functions-webonly)

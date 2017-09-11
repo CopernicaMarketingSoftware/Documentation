@@ -1,4 +1,4 @@
-# Personalizatie functions: ldelim en rdelim
+# Personalisatie functions: ldelim en rdelim
 
 Zoals je misschien wel hebt gezien in de voorbeelden gebruikt Smarty 
 syntax krulhaken. De Smarty code voor een naam is bijvoorbeeld **{$name}**.
@@ -17,5 +17,5 @@ te gebruiken.
 
 ## More information
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)

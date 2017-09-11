@@ -28,7 +28,7 @@ antwoorden toe te staan.
 
 Om je enquête af te maken stuur je deelnemers door naar een bedanktpagina. 
 Je kunt deze zelf van inhoud voorzien. Het is hierbij niet mogelijk om 
-[personalizatie](./personalization) te gebruiken, maar je kan eventueel 
+[personalisatie](./personalization) te gebruiken, maar je kan eventueel 
 wel doorverwijzen naar je eigen pagina. Dit doe je met de volgende code:
 
 `<script type="text/javascript"> document.location = "http://www.mijnwebsite.nl/bedankt"; </script>`

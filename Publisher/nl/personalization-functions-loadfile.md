@@ -1,4 +1,4 @@
-# Personalizatie functies: loadfile
+# Personalisatie functies: loadfile
 
 De *loadfile* functie laat je een file laden uit het files onderdeel 
 van de profielen in je template of document.
@@ -27,6 +27,6 @@ Als je andere formaten wil gebruiken kun je ook [linken naar een file](./persona
 
 ## Meer informatie
 
-* [Personalizatie](./personalization)
-* [Personalizatie functies](./personalization-functions)
-* [Personalizatie functie linkfile](./personalization-functions-linkfile)
+* [Personalisatie](./personalization)
+* [Personalisatie functies](./personalization-functions)
+* [Personalisatie functie linkfile](./personalization-functions-linkfile)
