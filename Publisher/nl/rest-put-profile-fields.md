@@ -25,7 +25,7 @@ waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
-In de API call wordt een profiel met ID 4567 aangepast.
+In de API call wordt een profiel met ID 1234 aangepast.
 
 ```php
 // vereiste scripts
