@@ -12,12 +12,25 @@ follow-up actie kan je op twee manieren maken, met de flowchart editor
 en met de script editor.
 
 
-## Flowchart editor
+## Flowchart Editor
 
 Binnen de flowchart editor kun je, door verschillende boxen met elkaar 
 te combineren, geavanceerde marketingcampagnes maken. 
 Sommige boxen staan het toe om met JavaScript extra functionaliteiten toe te voegen. 
 De beschikbare objecten kun je [hier](./followups-scripting) vinden. 
+
+### Lead Scoring met de Flowchart Editor
+
+Om een score met een punt te verhogen, is een Advanced Javascript Execute Box nodig. Je wilt namelijk niet alleen een score in een veld stoppen, maar ook de bestaande score behouden.
+
+
+```Javascript
+// update de score met 1
+if (profile.fields.leadscore) profile.fields.leadscore += 1;
+
+// als er nog geen waarde is opgeslagen 
+else profile.fields.leadscrore = 1;
+```
 
 
 ## Script editor
