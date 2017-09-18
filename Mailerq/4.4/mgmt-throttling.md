@@ -6,9 +6,6 @@ improve your email delivery when needed. You can choose to set up
 throttling settings for a single domain for all IP addresses or for all 
 IP addresses.
 
-Read more about setting up global limits and other delivery settings in 
-our [delivery throttling documentation](delivery-limits).
-
 ## Domain specific limits
 
 To add domain-specific limits using the management console, all you have to do 
@@ -61,8 +58,6 @@ Our database access documentation shows exactly which tables and which fields
 and field types MailerQ creates.  
 [Read more about database access](database-access).
 
-
-
 # Flood patterns view
 
 Flood patterns are rules that override the default throttling settings 
@@ -76,7 +71,6 @@ receiving mail server often gives a specific response, such as "too many
 connections from your ip". MailerQ allows you to set Flood Patterns that 
 activate when you get a specific response so you can temporarily pause or slow 
 down your email delivery.
-
 
 ## Creating flood patterns
 
