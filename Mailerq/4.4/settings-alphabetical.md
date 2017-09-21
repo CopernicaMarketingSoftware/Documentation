@@ -119,10 +119,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 
 ## Boolean options
 
-To check your version of MailerQ for example, just type:
+To check your version of MailerQ for example, just type in the cli:
 
 ```txt
-mailerq --version
+$ mailerq --version
 ```
 
 | Setting                     | Description
