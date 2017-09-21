@@ -2,7 +2,7 @@
 
 This article contains a list of all configuration settings, sorted 
 alphabetically. Each setting links to a documentation article that explains 
-the setting more in-depth. Want to search by topic? [Click here](configuration "Configure by topic").
+the setting more in-depth. Or do you want to [search by topic](configuration "Configure by topic")?
 
 | Setting                                                                  | Description
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -116,6 +116,27 @@ the setting more in-depth. Want to search by topic? [Click here](configuration "
 | [www port](mgmt-setup#activation)                                        | Port number for the management console
 | [www private key](mgmt-setup#setting-up-a-secure-management-console)     | Private key for secure connection to management console
 | [www secure port](mgmt-setup#setting-up-a-secure-management-console)     | Secure (HTTPS) port number for the management console
+
+## Boolean options
+
+To check your version of MailerQ for example, just type:
+
+```txt
+mailerq --version
+```
+
+| Setting                     | Description
+|-----------------------------|--------------------------------------------------------|
+| daemon                      | Deamon process (deafault true)
+| disable-crash-report        | Disable crash report
+| extract-recipients          | Read in a mime message from standard input and filter out the destination addresses
+| ignore-dot                  | Instruct MailerQ that dots do not have a special meaning
+| paused                      | Pause
+| list-ips                    | List IP addresses
+| loopback                    | Loopback
+| notify-cluster              | Notify cluster
+| purge-database              | Rebuilding the database tables
+| version                     | Version
 
 ## More information
 
