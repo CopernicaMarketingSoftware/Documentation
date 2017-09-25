@@ -32,7 +32,7 @@ older Debian 6 and Debian 7 versions.
 You can enter the following instructions to add our repository to your
 software list, and to download and install MailerQ.
 
-```
+```txt
 $ wget https://packages.copernica.com/copernica.key
 $ sudo apt-key add copernica.key 
 $ rm copernica.key
