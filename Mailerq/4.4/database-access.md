@@ -106,7 +106,7 @@ $ mailerq --purge-database
 ```
 
 This option tells MailerQ not to check and repair tables, but to drop
-them all and create new ones. If you do not want to wa
+them all and create new ones.
 
 
 ## Multiple MailerQ instances

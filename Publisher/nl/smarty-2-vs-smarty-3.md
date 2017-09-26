@@ -24,7 +24,7 @@ Smarty 3 template kopieert.
 - Personalisatie gebruikt in webformulieren en followups 
 gebruiken nog de Smarty 2 engine, zelfs als deze gerelateerd zijn aan een 
 Smarty 3 document of template.
-- Je kunt de gebruikte versie van Smarty opvragen met {\$smarty.version}.
+- Je kunt de gebruikte versie van Smarty opvragen met {$smarty.version}.
 
 ## Advantages of smarty 3
 

@@ -105,7 +105,7 @@ like this:
     '*Customers'*
 -   The result is assigned to the variable *'orderedproducts'*
 -   There is only search to subprofiles associated with the parent
-    profile of the current destination (*profile=\$profile.id*)
+    profile of the current destination (*profile=$profile.id*)
 -   The **multiple=true** in combination with **limit=2** ensures that
     only 2 subprofiles are returned.
 -   The returned subprofiles sorted ascending (asc) using the value in

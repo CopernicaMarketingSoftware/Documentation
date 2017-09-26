@@ -115,7 +115,7 @@ You can prepare the hyperlink with the function *Prepare hyperlinks*
 under *Document* in the `E-mailings` menu, or add the following code to 
 your hyperlink:
 
-`http://subdomain.yourdomain.nl/namewebpage**?profile={\$profile.id}&code={\$profile.code}**`
+`http://subdomain.yourdomain.nl/namewebpage**?profile={$profile.id}&code={$profile.code}**`
 
 Please remember to replace *profile* by *subprofile* if you are emailing 
 subprofiles instead.

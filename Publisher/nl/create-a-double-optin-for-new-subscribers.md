@@ -103,7 +103,7 @@ profiel uit de database'
 
 Plaats het webformulier op webpagina 1, en zorg dat de vervolgpagina van
 het webform een webpagina is waarop je vermeldt dat een bevestigingsmail
-is verstuurd naar {\$emailadres}.
+is verstuurd naar {$emailadres}.
 
 ![](../images/afbeelding2.png)
 
