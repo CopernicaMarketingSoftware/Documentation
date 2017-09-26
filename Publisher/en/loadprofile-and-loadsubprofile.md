@@ -22,7 +22,7 @@ selection are separated by a dot.
 Assign the loaded data to a variable of your choosing (in the example
 *loadedprofile*)
 
-You can now retrieve data via*{\$loadedprofile.fieldname}*
+You can now retrieve data via*{$loadedprofile.fieldname}*
 
 If you do not specify which profile you want to retreive, only the
 first in the database will be returned. You can select a particular
