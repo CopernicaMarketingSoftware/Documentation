@@ -24,7 +24,7 @@ There are a few small things to pay attention to:
     affiliated with a Smarty 3 document or template.
 -   If you are not sure about the smarty version used in your template
     or document, you can find out by (temporarily) placing the code
-    {\$smarty.version} in your document. This will output the smarty
+    {$smarty.version} in your document. This will output the smarty
     version used.
 
 ## Advantages of smarty 3

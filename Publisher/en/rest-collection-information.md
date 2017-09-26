@@ -4,14 +4,14 @@ Databases in Copernica can be extended with additional collections of
 data.
 
 This method gives you access to the data collection associated with a
-given \$collectionID. The result contains the collection identifier, the
+given $collectionID. The result contains the collection identifier, the
 collection name, the database associated with the collection and an
 array of fields with the field name and its data type in a key-value
 pair.
 
 | Request url | Methods | Parameters |
 | --- | --- | --- |
-| https://api.copernica.com/v1/collection/\$collectionid | GET | none |
+| https://api.copernica.com/v1/collection/$collectionid | GET | none |
 
 ### Collection field properties
 

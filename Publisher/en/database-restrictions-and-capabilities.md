@@ -45,7 +45,7 @@ these as complicated as you want.
 The following regex can be used to check whether a value is a dutch postal code,
 which contains four digits and two letters (for example 1244XK):
 
-`**/\^[0-9]4[a-z|A-Z]2\$/**`
+`**/^[1-9][0-9]{3}[a-z|A-Z]{2}$/**`
 
 Regex is fairly standard and a lot more information can be found on the 
 internet about it.

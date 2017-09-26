@@ -125,7 +125,7 @@ Je kunt hyperlinks voorbereiden met de *Hyperlinks voorbereiden* functie
 onder *Document* in het **E-mailings** menu of de volgende code toevoegen aan 
 je hyperlink.
 
-`http://subdomein.jouwdomein.nl/websitename**?profile={\$profile.id}&code={\$profile.code}**`
+`http://subdomein.jouwdomein.nl/websitename**?profile={$profile.id}&code={$profile.code}**`
 
 Zorg wel dat je altijd *profile* vervangt door *subprofile* als je 
 subprofiles mailt.
