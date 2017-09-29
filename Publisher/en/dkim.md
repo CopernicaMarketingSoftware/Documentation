@@ -58,9 +58,9 @@ DKIM keys. Users had to manually store (copy-paste) the public keys in DNS,
 and they had to rotate their keys once in a while. The new sender domain
 technology makes this manual editing obsolete: it all happens automatically.
 
-However, in the old Publisher environment you can still find some leftover forms
-and dialog windows to manage DKIM keys. These forms are still used by users
-that have not you set up a sender domain, which we strongly recommend.
+However, in the Publisher environment you can still find forms
+and dialog windows to manage DKIM keys. These forms are used by users that 
+can't set up a sender domain.
 
 When using a sender domain you can safely ignore these forms in both 
 Marketing Suite and Publisher. With sender domains all your messages are 

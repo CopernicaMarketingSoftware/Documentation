@@ -1,24 +1,8 @@
 # Introduction
 
-Copernica develops multiple email-related products like 
-[MailerQ](https://www.mailerq.com) and [SMTPeter](https://www.smtpeter.com).
-However, Copernica is mostly recognized for the comprehensive
-email-toolkit which is designed especially for marketeers and 
-webshops. Inside Copernica you find both the new Marketing Suite
-and the older Publisher. These services both serve the same goal,
-but are used quite differently. Marketing Suite is the newer software 
-and is the most user-friendly. Therefore it is strongly recommended 
-to start with the Marketing Suite if you are new to Copernica software.
+Copernica has a very comprehensive email tool kit for marketers and developers. In addition to other email-related products such as [SMTPeter](https://www.smtpeter.com) and [MailerQ](https://www.mailerq.com), our Marketing Software also consists of two different products, the Marketing Suite and the Publisher. The Marketing Suite enables you to quickly and easily develop and send personalized templates with conditional content. If you need more flexibility in developing email templates, for example, by dynamically building your templates with atom/rss feeds, you can use the Publisher. You can also create web forms and sms messages within the Publisher's environment.
 
-While reading the Copernica documentation, it's best practice to 
-have access to the software. To login, you'll need a username 
-and password to do so. You'll receive these credentials
-automatically once you create a profile via www.copernica.com.
-From this central point you can navigate to all Copernica
-services seamlessly. If you are already a customer you have probably seen 
-the toggle in the Marketing Suite, which allows you to switch to the 
-Publisher environment. If you're still transitioning to Marketing Suite 
-from Publisher this will make it easier for you.
+Via the Copernica dashboard, accessible through [copernica.com](https://www.copernica.com), you can control all users and account cases. You can also simply navigate to the Marketing Suite or Publisher.
 
 ## Set up
 
@@ -26,10 +10,9 @@ Eager to get started? The articles below provide instructions to make
 a quick start. After following the instructions you will be all set 
 to send email with Copernica. 
 
-1. [Quick start](./quick-start-guide.md)
-2. [Configure a sender domain](./quick-sender-domain-guide)
-3. [Configure your database](./quick-database-guide)
-4. [Send your first mailing](./quick-mailing-guide)
+* [Configure a sender domain](./quick-sender-domain-guide)
+* [Configure your database](./quick-database-guide)
+* [Send your first mailing](./quick-mailing-guide)
 
 ## More information
 
