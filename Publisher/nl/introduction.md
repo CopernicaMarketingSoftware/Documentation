@@ -1,30 +1,17 @@
 # Introductie
 
-Copernica ontwikkelt meerdere e-mailgerelateerde producten, 
-zoals [MailerQ](https://www.mailerq.com) en [SMTPeter](https://www.smtpeter.com). 
-Copernica wordt vooral geroemd om de uitgebreide e-mailtoolkit die speciaal is gemaakt
-voor marketeers en webshops. Binnen Copernica vind je de nieuwe Marketing Suite en de 
-oude Publisher. Deze diensten dienen hetzelfde doel, maar zijn qua gebruik totaal anders.
-De Marketing Suite is veel makkelijker te gebruiken dan de Publisher en wordt door ons
-ook aangeraden als je een nieuwe gebruiker bent. 
+Copernica heeft een zeer uitgebreide e-mailtoolkit voor marketeers en developers. Naast andere e-mailgeralateerde producten zoals [SMTPeter](https://www.smtpeter.com) en [MailerQ](https://www.mailerq.com) bestaat Copernica Marketing Software ook uit twee verschillende producten. Namelijk de Marketing Suite en de Publisher. De Marketing Suite stelt je in staat om snel en eenvoudig gepersonaliseerde templates met conditionele content te ontwikkelen. Als je meer flexibiliteit nodig hebt in het ontwikkelen van e-mailtemplates, door bijvoorbeeld je templates dynamisch te laten opbouwen met atom/rss feeds, kun je gebruik maken van de Publisher. Ook webformulieren en sms berichten kun je binnen de omgeving van de Publisher maken.
 
-Bij het lezen van de documentatie is het handig om toegang te hebben tot de software. 
-Daarvoor heb je een login en wachtwoord nodig. Deze krijg je automatisch als je via 
-[www.copernica.com](https://www.copernica.com) een profiel aanmaakt. Met deze gegevens 
-kun je het beste inloggen via [www.copernica.com](https://www.copernica.com), omdat dit 
-de centrale plek is vanwaar je kunt navigeren naar alle Copernica accounts en applicaties. 
-Je kunt als gebruiker makkelijk schakelen tussen de Marketing Suite en de Publisher, zodat 
-je de transitie rustig in gang kunt zetten (mocht je nog van de oude Publisher gebruik maken).
+Via het Copernica dashboard, bereikbaar via [copernica.com](https://www.copernica.com) regel je alle gebruikers en acountzaken. Ook navigeer je hier eenvoudig naar de Marketing Suite of Publisher. 
 
 ## Beginnen!
 
 Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies 
 om snel van start te gaan.
 
-1. [Snel aan de slag](./quick-start-guide)
-2. [Sender domains instellen](./quick-sender-domain-guide)
-3. [Database inrichten](./quick-database-guide)
-4. [Je eerste mailing versturen](./quick-mailing-guide)
+1. [Sender domains instellen](./quick-sender-domain-guide)
+2. [Database inrichten](./quick-database-guide)
+3. [Je eerste mailing versturen](./quick-mailing-guide)
 
 ## Meer informatie
 
