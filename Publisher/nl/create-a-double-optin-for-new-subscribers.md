@@ -11,8 +11,7 @@ Let op: Deze tutorial laat alleen zien hoe je dit kunt doen vanuit Publisher.
 Helaas werkt deze tutorial niet voor Marketing Suite, omdat webformulieren 
 hier nog niet bestaan.
 
-Hoe werkt dubbele optin?
-------------------------
+## Hoe werkt dubbele optin?
 
 Een nieuwe abonnee wil graag een periodieke nieuwsbrief ontvangen.
 Wanneer deze persoon zijn e-mailadres achterlaat, ontvangt hij (of zij)
