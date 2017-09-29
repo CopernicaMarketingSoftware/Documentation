@@ -1,6 +1,6 @@
 # Templates: Publisher
 
-In the old Copernica publisher environment every document has a template. 
+In the Publisher environment every document has a template. 
 The template contains the global layout of the mail and the elements 
 that are present in every email, such as a company logo and unsubscribe 
 link. There are also blank spots that can be filled with content later. 

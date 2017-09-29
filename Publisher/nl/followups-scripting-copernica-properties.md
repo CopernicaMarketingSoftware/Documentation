@@ -30,7 +30,7 @@ Door "null" als filter mee te geven krijg je alle bestaande objecten voor het ac
 * **roles(PxCDMRoleFilter $filter)**: vraag alle rollen op die toegang geven tot dit account
 * **createRole(PxCDMUser $user, PxCDMUser $creator)**: geef een gebruiker toegang tot dit account
 * **users(PxCDMUserFilter $filter)**: vraag alle/gefilterede gebruikers op voor dit account
-* **pomAccount()**: vraag oude POM account op
+* **pomAccount()**: vraag POM account op
 * **fromAddresses()**: vraag valide zender adressen op
 * **fromAddress($identifier)**: vraag valide zender adres op met ID
 * **createFromAddress($name, PxtEmailAddress $email)**: maak valide zender adres aan
