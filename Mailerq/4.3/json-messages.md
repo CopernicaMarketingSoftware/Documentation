@@ -292,7 +292,7 @@ For more information about using personalization, check our
 
 ## Local IP addresses
 
-MailerQ can send out mail from all IP addresses configured on your server and will allways try
+MailerQ can send out mail from all IP addresses configured on your server and will always try
 to make as many connections as it takes to send out your mailing.
 This can be useful to increase the delivery rate, because receivers often restrict deliveries per IP address.
 
@@ -400,7 +400,7 @@ up the layout and look of your messages. To overcome this, it is better not to s
 CSS settings in the header in the first place, but use "style=..." attributes 
 in the HTML code.
 
-MailerQ can do this automatically. If you set "inlinecss" propety to true, 
+MailerQ can do this automatically. If you set "inlinecss" property to true, 
 MailerQ parses the HTML email, and converts the CSS code from the HTML header 
 into inline "style=..." attributes in the HTML body.
 
