@@ -350,7 +350,7 @@ up the layout and look of your messages. To overcome this, it is better not to s
 CSS settings in the header in the first place, but use "style=..." attributes 
 in the HTML code.
 
-MailerQ can do this automatically. If you set "inlinecss" propety to true, 
+MailerQ can do this automatically. If you set "inlinecss" property to true, 
 MailerQ parses the HTML email, and converts the CSS code from the HTML header 
 into inline "style=..." attributes in the HTML body.
 
