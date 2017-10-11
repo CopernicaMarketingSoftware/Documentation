@@ -1,24 +1,15 @@
 # Getting started with MailerQ
 
 To get MailerQ up and running on your own computer or on a server you
-need to take four simple steps:
+need to take a couple of simple steps.
 
-- [Download and install MailerQ](download-instructions)
-- [Get access to a RabbitMQ message broker (or run one yourself)](rabbitmq-install)
-- [Obtain a valid "license.txt" file from the MailerQ website](license-file)
-- [Modify your local MailerQ config file](minimal-configuration)
+[A quick start to download and install MailerQ](../../download)
 
-That's all. After these steps you're ready to start MailerQ and inject emails.
-To start MailerQ, just enter `mailerq` on the command line and your MTA is running.
-
-```bash
-$ mailerq
-```
+After you finished these instructions you're ready to start MailerQ and inject emails.
 
 MailerQ comes with a web based [management console](management-console)
 that you can use to monitor exactly what is happening, and to adjust all
-your delivery settings. The default location is `http://your-server-name:8485`.
-
+your delivery settings.
 
 ## System dependencies
 
