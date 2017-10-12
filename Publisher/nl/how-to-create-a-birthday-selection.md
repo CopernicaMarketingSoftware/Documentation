@@ -1,4 +1,4 @@
-# Selecties Tutorial: Een verjaardagsselectie maken
+# Een verjaardagsselectie maken
 
 In deze tutorial gaan we een verjaardagsselectie aanmaken. Deze selectie
 zal dagelijks de contacten selecteren die op die dag jarig zijn. Je hoeft
