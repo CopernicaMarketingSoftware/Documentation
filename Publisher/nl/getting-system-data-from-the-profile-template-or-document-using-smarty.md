@@ -25,7 +25,7 @@ Het is mogelijk om gegevens te ontvangen van een document of template, bijvoorbe
     {$template.name} Naam van het template
     {$template.description} Beschrijving van het template
     {$template.pdf} Naam van het originele PDF bestand
-    {$template.pages} Aantal pagina\'s van de PDF 
+    {$template.pages} Aantal pagina's van de PDF 
     {$template.created} Tijdstip van het aanmaken van het template
     {$template.lastmodified} Tijdstip van de laatste wijziging aan het template
     {$template.archive} Is het template gearchiveerd?
