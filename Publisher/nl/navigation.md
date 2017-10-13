@@ -18,7 +18,7 @@
     * [Personaliseren](./personalization.md)
     * [Follow-up Manager](./follow-up-manager.md)
     * [Data-scripts](./followups-scripting.md)
-* [Emailings](./emailings)
+* [E-mailings](./emailings)
     * [Een mailing versturen](./sending-a-mass-mailing.md)
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)
