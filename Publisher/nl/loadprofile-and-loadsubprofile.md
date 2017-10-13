@@ -70,10 +70,10 @@ plaatsen. $geladensubprofielen is een zogenaamde *array*, een lijst van
 gegevens. Die moeten we systematisch doorlopen, waarbij we gebruik maken
 van de functie *foreach*. Doorgaand op ons praktische voorbeeld:
 
-`{foreach $geladensubprofielen as $geladensubprofiel} //of in Smarty 2: {foreach from=$geladensubprofielen item="geladensubprofiel"}
+    {foreach $geladensubprofielen as $geladensubprofiel} //of in Smarty 2: {foreach from=$geladensubprofielen item="geladensubprofiel"}
 
-{$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres}
-{/foreach}`
+    {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres}
+    {/foreach}
 
 Hierboven wordt de *array* (lijst gegevens) $geladensubprofielen met
 subprofiel doorlopen. Tijdens dit doorlopen wordt het huidige subprofiel
@@ -111,26 +111,26 @@ medewerkers staan in collectie 'Medewerkers'. Ter demonstratie willen we
 die in omgekeerd alfabetisch volgorde van voornaam sturen. Ook sturen we
 maximaal 5. De code:
 
-`{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
+    {loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
 
-Geachte {$Bedrijfsleider},
+    Geachte {$Bedrijfsleider},
 
-Van uw bedrijf, {$Bedrijf} zijn de volgende medewerkers bekend:
-{foreach $geladensubprofielen as $geladensubprofiel}
-- {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres};
-{/foreach}`
+    Van uw bedrijf, {$Bedrijf} zijn de volgende medewerkers bekend:
+    {foreach $geladensubprofielen as $geladensubprofiel}
+    - {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres};
+    {/foreach}
 
 Het resultaat:
 
-*Beste Jan Janssen,*
+    Beste Jan Janssen,
 
- Van uw bedrijf, Boodschappen B.V., zijn de volgende medewerkers
-bekend:
- - Freek Frekens, f.frekens@boodschappenbv.nl;
- - Egbert Douwes, e.douwes@boodschappenbv.nl;
- - Douwe Egberts, d.egberts@boodschappenbv.nl;
- - Charles Fransman, c.fransman@boodschappenbv.nl;
- - Bert Bakker, b.bakker@boodschappenbv.nl;
+     Van uw bedrijf, Boodschappen B.V., zijn de volgende medewerkers
+    bekend:
+     - Freek Frekens, f.frekens@boodschappenbv.nl;
+     - Egbert Douwes, e.douwes@boodschappenbv.nl;
+     - Douwe Egberts, d.egberts@boodschappenbv.nl;
+     - Charles Fransman, c.fransman@boodschappenbv.nl;
+     - Bert Bakker, b.bakker@boodschappenbv.nl;
 
 Ook Albert Albertsma is een medewerker van Boodschappen B.V., maar
 gezien we maximaal 5 subprofielen hebben opgevraagd en we dat op
