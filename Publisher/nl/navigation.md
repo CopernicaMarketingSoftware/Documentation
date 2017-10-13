@@ -20,7 +20,7 @@
     * [Data-scripts](./followups-scripting.md)
 * [E-mailings](./emailings)
     * [Een mailing versturen](./sending-a-mass-mailing)
-    * [Standaard campagnes] (./standard-email-campaigns)
+    * [Standaard campagnes](./standard-email-campaigns)
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)
     * [Statistieken exporteren](./statistics-export)
