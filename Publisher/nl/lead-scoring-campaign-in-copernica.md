@@ -35,7 +35,7 @@ Een stappenplan om dit te realiseren:
     profiel zelf. De waarde wordt {math equation="x-y" x=$Leadscore
     y=1}: met deze formule geven we aan dat bij het verzenden van het
     document 1 punt moet worden afgetrokken van de veldwaarde
-    \$Leadscore.
+    $Leadscore.
 3.  Aanleiding: registreren van een impressie. Wijzig gegevens profiel
     met de volgende waarde: {math equation="x+y" x=$Leadscore y=2}.
 4.  Aanleiding: registreren van een klik. We laten de linkwaarde leeg,
@@ -49,7 +49,7 @@ Een stappenplan om dit te realiseren:
     zijn naar Copernica worden gestuurd. We gaan er nu van uit dat de
     order na 24 uur wel is afgerond. De actie van de opvolgactie is het
     wijzigen van veld Leadscore van het profiel: {math equation="x+y"
-    x=\$Leadscore y=20}. Sla de opvolgactie op
+    x=$Leadscore y=20}. Sla de opvolgactie op
 6.  Gezien we pas 20 punten willen toekennen als de order daadwerkelijk
     afgerond is, moeten we nog een conditie op het actie-deel van de
     opvolgactie instellen.. Klik op conditie bewerken onder ‘actie’ en
