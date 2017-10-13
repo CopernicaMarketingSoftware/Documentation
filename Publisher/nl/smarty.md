@@ -1,6 +1,5 @@
 # Smarty
-[Smarty](http://www.copernica.com/en/about-us/news/smarty-2-to-smarty-3-copernica-whiteboard)
-is a template engine for PHP. It is a special code used for the
+Smarty is a template engine for PHP. It is a special code used for the
 personalization of your marketing campaigns. Emailings, websites, text
 messages and PDF documents can be personalized using Smarty tags.
 
