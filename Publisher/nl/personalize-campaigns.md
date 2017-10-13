@@ -1,3 +1,4 @@
+# Personaliseer campagnes
 Personalisatie is het toespitsen van publicaties op de individuele
 ontvanger. Hierbij kan je denken aan het aanspreken van geadresseerden
 met de naam bij mailings, het tonen van verschillende afbeeldingen aan
