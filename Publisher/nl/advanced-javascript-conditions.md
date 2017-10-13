@@ -1,3 +1,5 @@
+# Geavanceerde JavaScript condities
+
 Bij e-mailings en webformulieren biedt de applicatie de mogelijkheid om blokken tekst 'conditioneel' te maken. Ze worden alleen getoond indien aan een bepaalde conditie wordt voldaan. Dezelfde mogelijkheid biedt de applicatie bij het instellen van opvolgacties voor e-mailings, opvolgacties, webformulieren, databases, database callbacks en enquêtes.
 
 Let op: Probeer geen condities in te voeren zonder goed begrip van onderstaande uitleg of gedegen kennis van JavaScript. Daarmee kunt u uw mailings verstoren. Gebruik voor eenvoudige condities de Eenvoudige script editor
