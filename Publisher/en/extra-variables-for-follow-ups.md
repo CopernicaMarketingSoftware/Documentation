@@ -6,83 +6,83 @@ Please note that smarty 2 is still being used within follow-up actions. This req
 
 ### Example: 
 
-<ul>
-    {foreach from=$mailing.trigger.fields.interests key=k item=v}
-      <li>{$k}: {$v}</li>
-    {/foreach}
-</ul>
+    <ul>
+        {foreach from=$mailing.trigger.fields.interests key=k item=v}
+          <li>{$k}: {$v}</li>
+        {/foreach}
+    </ul>
 
 ### Variables available in follow-up actions
 
-//always available
-$mailing // return NULL
+    //always available
+    $mailing // return NULL
 
-// When was the mailing sent
-.sendtime $mailing.sendtime
+    // When was the mailing sent
+    .sendtime $mailing.sendtime
 
-// ++ when was the mailing triggered ++ //
+    // ++ when was the mailing triggered ++ //
 
-// what time was the follow-up action triggered? (datetime)
-$mailing.trigger.triggertime
+    // what time was the follow-up action triggered? (datetime)
+    $mailing.trigger.triggertime
 
-// What time was the follow-up action executed? (datetime)
-$mailing.trigger.executetime
+    // What time was the follow-up action executed? (datetime)
+    $mailing.trigger.executetime
 
-// by which profile was the follow-up triggered (array)
-$mailing.trigger.profile.fieldname
-...
+    // by which profile was the follow-up triggered (array)
+    $mailing.trigger.profile.fieldname
+    ...
 
-// The subprofile that triggered the follow-up action. 
+    // The subprofile that triggered the follow-up action. 
 
-// Without a fieldname specified, it will return an array with data of the subprofile. 
-$mailing.trigger.subprofile.fieldname     
-...
+    // Without a fieldname specified, it will return an array with data of the subprofile. 
+    $mailing.trigger.subprofile.fieldname     
+    ...
 
-// ++ by database or collection ++ //
+    // ++ by database or collection ++ //
 
-// The fields that were updated in the follow up (array)
-$mailing.trigger.fields.fields
+    // The fields that were updated in the follow up (array)
+    $mailing.trigger.fields.fields
 
-// only for profiles, the Interest fields that were updated (array)
-$mailing.trigger.fields.interests
+    // only for profiles, the Interest fields that were updated (array)
+    $mailing.trigger.fields.interests
 
-// ++ by webform ++ //
+    // ++ by webform ++ //
 
-// the submitted fields (array)
-$mailing.trigger.webform.fields
+    // the submitted fields (array)
+    $mailing.trigger.webform.fields
 
-// the submitted interests (profiles only, array)
-$mailing.trigger.webform.interests
+    // the submitted interests (profiles only, array)
+    $mailing.trigger.webform.interests
 
-// information about the person who submitted the form (array)
-$mailing.trigger.webform.submitter.fieldname
+    // information about the person who submitted the form (array)
+    $mailing.trigger.webform.submitter.fieldname
 
-// information about the (sub)profiles updated/created (array)
-$mailing.trigger.webform.submittees.fieldname
+    // information about the (sub)profiles updated/created (array)
+    $mailing.trigger.webform.submittees.fieldname
 
-// ++ by survey ++ //
+    // ++ by survey ++ //
 
-// outputs an xml file with given answers
-$mailing.trigger.survey.xml
-    
-// outputs an html file with given answers
-$mailing.trigger.survey.html
+    // outputs an xml file with given answers
+    $mailing.trigger.survey.xml
 
-// returns an array with answers of respondent
-$mailing.trigger.survey.questions
+    // outputs an html file with given answers
+    $mailing.trigger.survey.html
 
-// ++ by any mailing ++ //
+    // returns an array with answers of respondent
+    $mailing.trigger.survey.questions
 
-// timestamp of mail sent in follow-up acion (datetime)
-$mailing.trigger.sendtime
+    // ++ by any mailing ++ //
 
-// ++ by mailing ++ //
+    // timestamp of mail sent in follow-up acion (datetime)
+    $mailing.trigger.sendtime
 
-// Name of the document that triggered the follow-up (string)
-$mailing.trigger.snapshot.name
+    // ++ by mailing ++ //
 
-//  Document date created of the snaphot triggered (datetime)
-$mailing.trigger.snapshot.created
+    // Name of the document that triggered the follow-up (string)
+    $mailing.trigger.snapshot.name
 
-//  Subject of the document in the follow-up (string)
-$mailing.trigger.snapshot.subject</code></pre>
+    //  Document date created of the snaphot triggered (datetime)
+    $mailing.trigger.snapshot.created
+
+    //  Subject of the document in the follow-up (string)
+    $mailing.trigger.snapshot.subject
