@@ -74,5 +74,5 @@ een **CNAME** verwijzing hebben naar **pic.vicinity.nl**
 
 **Voorbeeld:** `{linkemail domain='nieuwsbrief.uweigendomein.nl'}`
 
-*nieuwsbrief.uweigendomein.nl* moet dan voorzien zijn van een *CNAME*die
+*nieuwsbrief.uweigendomein.nl* moet dan voorzien zijn van een *CNAME* die
 verwijst naar *pic.vicinity.nl*
