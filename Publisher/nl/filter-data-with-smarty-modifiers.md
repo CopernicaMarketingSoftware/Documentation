@@ -31,14 +31,14 @@ maar kan op alle datumvelden worden toepepast.
 
 In het volgende overzicht een aantal voorbeelden van de mogelijkheden.
 
-  -------------------------------------------- -----------------------------
-  `{$smarty.now|date_format}  `                Dec 4, 2007
-  `{$smarty.now|date_format:"%D"}    `         12/04/07
-  `{$smarty.now|date_format:“%d-%m-%Y”}  `     04-12-2007
-  `{$smarty.now|date_format:"%A, %e %B %Y"}`   Tuesday, 4 decembre 2007
-  `{$smarty.now|date_format:“%A"} `            Tuesday
-  `{$smarty.now|date_format:"%c"}    `         Tu 04 dec 2007 15:20:28 CET
-  -------------------------------------------- -----------------------------
+    -------------------------------------------- -----------------------------
+    {$smarty.now|date_format}                   Dec 4, 2007
+    {$smarty.now|date_format:"%D"}              12/04/07
+    {$smarty.now|date_format:“%d-%m-%Y”}        04-12-2007
+    {$smarty.now|date_format:"%A, %e %B %Y"}    Tuesday, 4 decembre 2007
+    {$smarty.now|date_format:“%A"}              Tuesday
+    {$smarty.now|date_format:"%c"}              Tu 04 dec 2007 15:20:28 CET
+    -------------------------------------------- -----------------------------
 
 Als je een datum ophaalt uit het profiel kan je op dezelfde wijze het
 filter toepassen:
