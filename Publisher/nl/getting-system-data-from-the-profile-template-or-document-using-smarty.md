@@ -4,10 +4,10 @@ Het is mogelijk om gegevens te ontvangen van een document of template, bijvoorbe
 
 ### Profiel gegevens
 
-{$profile.id} ID van het profiel
-{$profile.code} Verborgen code van het profiel
-{$profile.interests} Array van interesses van het profiel
-{$profile.fieldname} Gegevens van een profiel veld
+`{$profile.id} ID van het profiel`
+`{$profile.code} Verborgen code van het profiel`
+`{$profile.interests} Array van interesses van het profiel`
+`{$profile.fieldname} Gegevens van een profiel veld`
 
 ### Document gegevens
 
