@@ -15,7 +15,7 @@ Tabellen worden het beste ondersteund door de meeste e-mail programma’s
 dus is het aan te raden om de layout volledig uit tabellen te laten
 bestaan in plaats van gepositioneerde ‘divs’.
 
-**Tip:**Gebruik altijd een aparte tabel om de boel bij elkaar te houden.
+**Tip:** Gebruik altijd een aparte tabel om de boel bij elkaar te houden.
 Zo voorkom je dat er onwenselijke ruimte ontstaat tussen de overige
 tabellen.
 
