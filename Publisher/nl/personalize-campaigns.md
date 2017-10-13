@@ -1,5 +1,3 @@
-# Personaliseer campagnes
-
 Personalisatie is het toespitsen van publicaties op de individuele
 ontvanger. Hierbij kan je denken aan het aanspreken van geadresseerden
 met de naam bij mailings, het tonen van verschillende afbeeldingen aan
@@ -16,7 +14,62 @@ In Copernica kan je vrijwel overal gebruik maken van Smarty
 personalisatie. Dus niet alleen in templates en documenten, maar ook in
 bijvoorbeeld **webformulieren** en **opvolgacties**.
 
-## Smarty variabelen voor opvolgacties
+Wanneer je een nieuw template aanmaakt in Copernica, kan je kiezen of je
+smarty versie 2 of 3 wilt gebruiken. [Kies versie
+3.](./smarty-2-vs-smarty-3.md)
+
+-   [De basisbeginselen van smarty
+    personalisatie](./what-is-personalization.md)
+-   [Personalisatie-instellingen van het template of
+    document](./document-and-template-personalization-settings.md)
+-   [Persoonlijke aanhef
+    maken](./personalized-salutation-in-email-using-smarty-code.md)
+-   [Personalisatie uit een profiel of uit een
+    subprofiel](./personalizing-from-a-profile-or-subprofile.md)
+-   [Voorbeeldweergave en
+    bewerkmodus](./view-document-in-edit-mode-or-in-preview-mode.md)
+-   [Opmaak van smarty personalisatie (Smarty
+    filters)](./filter-data-with-smarty-modifiers.md)
+-   [Personaliseren van
+    hyperlinks](./personalizing-hyperlinks.md)
+-   [Gebruik van smarty personalisatie in
+    webformulieren](./smarty-personalization-in-web-forms.md)
+-   [Loadprofile en loadsubprofile toegepast in een praktisch
+    voorbeeld](./example-of-the-loadprofile-and-loadsubprofile-functions.md)
+-   [Linken naar een (gepersonaliseerd)
+    PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
+-   [Extra velden voor document
+    personalisatie](./extra-fields-for-personalizing.md)
+-   [Informatie uit een URL gebruiken voor
+    personalisatie](./get-url-parameters-within-smarty-personalization.md)
+-   [(Mini)selecties gebruiken binnen Smarty
+    personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
+-   [Datums en tijden met
+    Smarty](./using-the-smarty-date-function.md)
+
+Bekijk ook [ons overzicht van beschikbare extra functies en speciale
+invoegcodes](./special-functions-and-tags.md)
+
+Smarty reference
+----------------
+
+Bekijk de lijst met smarty variabelen die beschikbaar zijn binnen jouw
+standaardbestemming, en lees hoe je deze kan aanroepen. Let op, om deze
+pagina te bekijken dien je ingelogd te zijn op Copernica.com.
+
+[Ga naar onze smarty
+reference](./smarty.md)
+
+Veel gestelde vragen en problemen
+---------------------------------
+
+-   [Hoe kan ik de enquete bedanktpagina
+    personaliseren?](./personalized-survey-conclude-page.md)
+-   [Probleem: Blokhaken en accolades veroorzaken
+    personalisatiefouten](./how-to-solve-errors-in-personalization.md)
+
+Smarty variabelen voor opvolgacties
+-----------------------------------
 
 Binnen opvolgacties zijn er extra variabelen beschikbaar gemaakt waarmee
 je informatie kan opvragen over de actie die de opvolgactie getriggerd
@@ -25,80 +78,23 @@ kan deze variabelen bijvoorbeeld gebruiken als je een notificatie e-mail
 wilt versturen, waarin je de gegeven antwoorden van een ingevuld
 formulier wilt tonen.
 
-### Beschikbare variabelen in opvolgacties
+-   [Beschikbare variabelen in
+    opvolgacties](./extra-variables-for-follow-ups.md)
 
-```txt
-//always available
-$mailing // return NULL
-
-// When was the mailing sent
-.sendtime $mailing.sendtime
-
-// ++ when was the mailing triggered ++ //
-// what time was the follow-up action triggered? (datetime)
-
-$mailing.trigger.triggertime
-
-// What time was the follow-up action executed? (datetime)
-$mailing.trigger.executetime
-
-// by which profile was the follow-up triggered (array)
-$mailing.trigger.profile.fieldname
-
-// The subprofile that triggered the follow-up action. 
-// Without a fieldname specified, it will return an array with data of the subprofile. 
-$mailing.trigger.subprofile.fieldname     
-
-// ++ by database or collection ++ //
-// The fields that were updated in the follow up (array)
-$mailing.trigger.fields.fields
-
-// only for profiles, the Interest fields that were updated (array)
-$mailing.trigger.fields.interests
-
-// ++ by webform ++ //
-// the submitted fields (array)
-$mailing.trigger.webform.fields
-
-// the submitted interests (profiles only, array)
-$mailing.trigger.webform.interests
-
-// information about the person who submitted the form (array)
-$mailing.trigger.webform.submitter.fieldname
-
-// information about the (sub)profiles updated/created (array)
-$mailing.trigger.webform.submittees.fieldname
-
-// ++ by survey ++ //
-// outputs an xml file with given answers
-$mailing.trigger.survey.xml
-    
-// outputs an html file with given answers
-$mailing.trigger.survey.html
-
-// returns an array with answers of respondent
-$mailing.trigger.survey.questions
-
-// ++ by any mailing ++ //
-// timestamp of mail sent in follow-up acion (datetime)
-$mailing.trigger.sendtime
-
-// ++ by mailing ++ //
-// Name of the document that triggered the follow-up (string)
-$mailing.trigger.snapshot.name
-
-//  Document date created of the snaphot triggered (datetime)
-$mailing.trigger.snapshot.created
-
-//  Subject of the document in the follow-up (string)
-$mailing.trigger.snapshot.subject
-```
-
-## Javascript condities
+Javascript condities
+--------------------
 
 Naast personalisatie met Smarty, kan je in Copernica condities opstellen
 met JavaScript. Al voldoet voor de meeste gebruikers de eenvoudige
 script editor. Je gebruikt JavaScript condities onder andere voor het
 wel/niet tonen van content blokken aan een doelgroep. Maar ook aan
 bijvoorbeeld opvolgacties kunnen condities worden gehangen.
+
+-   [Werken met de eenvoudige script editor](./the-easy-script-editor.md)
+
+Overig
+------
+
+-   [Personaliseren met behulp van multidimensionale
+    databases](./personalizing-using-multi-dimensional-databases.md)
 
