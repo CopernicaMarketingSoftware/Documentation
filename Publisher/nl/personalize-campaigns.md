@@ -15,10 +15,6 @@ In Copernica kan je vrijwel overal gebruik maken van Smarty
 personalisatie. Dus niet alleen in templates en documenten, maar ook in
 bijvoorbeeld **webformulieren** en **opvolgacties**.
 
-Wanneer je een nieuw template aanmaakt in Copernica, kan je kiezen of je
-smarty versie 2 of 3 wilt gebruiken. [Kies versie
-3.](./smarty-2-vs-smarty-3.md)
-
 -   [De basisbeginselen van smarty
     personalisatie](./what-is-personalization.md)
 -   [Personalisatie-instellingen van het template of
