@@ -41,3 +41,4 @@
     * [Web forms](./webforms)
     * [CSS and XSLT](./css-and-xslt)
     * [RSS and ATOM feeds](./rss-and-atom-feeds)
+    * [Advanced options](./advanced-options)
