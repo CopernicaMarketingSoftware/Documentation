@@ -16,7 +16,7 @@ Deze functionaliteit heeft één extra optie: **xslt=**
 
 Hiermee kan je jouw enquête inladen via een aangepaste of eigen
 *XSLT*-bestand. Indien je geen eigen *XSLT* specificeert, wordt
-automatisch teruggevallen op de standaard *XSLT** *van de software.
+automatisch teruggevallen op de standaard *XSLT* van de software.
 
 `{survey name='naamvanenquête' xslt='naamvanxslt'}`
 
