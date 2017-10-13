@@ -1,43 +1,40 @@
-# Getting system data from the profile, template or document using Smarty
+# Copernica variabelen bij profiel, template of document via Smarty
 
-It is possible to retreive data from a document or a templatesuch as the document name, or the document creation date,using the available Smarty system variables. The variables are enlisted below. 
+Het is mogelijk om gegevens te ontvangen van een document of template, bijvoorbeeld de naam van het document, door het gebruik van Copernica Smarty variabelen.
 
-### Profile data
+### Profiel gegevens
 
-{$profile.id} ID of the profile
-{$profile.code} Access code to change data
-{$profile.interests} Array of interests of a profile
-{$profile.fieldname} Value of a profile field
+{$profile.id} ID van het profiel
+{$profile.code} Verborgen code van het profiel
+{$profile.interests} Array van interesses van het profiel
+{$profile.fieldname} Gegevens van een profiel veld
 
-### Document data
+### Document gegevens
 
-{$document.id} ID of the document
-{$document.name} Current name of the document
-{$snapshot.name} Name of the document when it was sent (even if the document name was changed later on)
-{$document.created} Time of document creation
-{$document.lastmodified} Time of last modification
+{$document.id} ID van het document
+{$document.name} Huidige naam van het document
+{$snapshot.name} Naam van het document op het moment van versturen (zelfs als de naam gewijzigd is achteraf)
+{$document.created} Tijdstip van het aanmaken van het document
+{$document.lastmodified} Tijdstip van de laatste wijziging aan het document
 {$document.template} Template object
-{$document.language} Language setting of the document
+{$document.language} Taal instellingen van het document
 
-### Template data
+### Template gegevens
 
-{$template.id} ID of the template
-{$template.name} Name of the template
-{$template.description} Description of the template
-{$template.pdf} Name of original pdf file
-{$template.pages} Number of pages (PDF templates only){$template.created} Time when a template is created
-{$template.lastmodified} Time when a template is modified
-{$template.archive} Is the template archived?
-{$template.quality} Quality of the template: screen/press/print (PDF templates only)
-{$smarty.version} The smarty version of the template
+{$template.id} ID van het template
+{$template.name} Naam van het template
+{$template.description} Beschrijving van het template
+{$template.pdf} Naam van het originele PDF bestand
+{$template.pages} Aantal pagina's van de PDF 
+{$template.created} Tijdstip van het aanmaken van het template
+{$template.lastmodified} Tijdstip van de laatste wijziging aan het template
+{$template.archive} Is het template gearchiveerd?
+{$template.quality} Kwaliteit van het template: screen/press/print (alleen voor PDF templates)
+{$smarty.version} Smarty versie van het template
 
 ### Smarty date
 
- Returns the current time measured in the number of seconds since the Unix Epoch (January 1 1970 00:00:00 GMT).You can use **date_format** to have complete control of the formatting of the date. 
-
-Note: the smarty.now function uses the language of the template or document. The language can be set from the <a href="#">personalization settings menu</a> in the lower toolbar of the document or template.
-
-{$timestamp} returns the (fixed) timestamp on which the document was composed and sent. 
+{$timestamp} Geeft het tijdstip terug waarop het document is samengesteld en verzonden 
 
 {$smarty.now|date_format} makes: Dec 4, 2007 
 {$smarty.now|date_format:"%D"} makes: 12/04/07
@@ -45,4 +42,3 @@ Note: the smarty.now function uses the language of the template or document. The
 {$smarty.now|date_format:"%A, %e %B %Y"} makes: Tuesday, 4 decembre 2007
 {$smarty.now|date_format:“%A"} makes: Tuesday
 {$smarty.now|date_format:"%c"} makes: Tu 04 dec 2007 15:20:28 CET
-{$timestamp} 
