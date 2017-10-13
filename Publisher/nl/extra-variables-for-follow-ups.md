@@ -8,7 +8,7 @@ Let op, binnen opvolgacties wordt nog alijd gebruik gemaakt van smarty 2. Je die
 ### Bijvoorbeeld: 
 
     {foreach from=$mailing.trigger.fields.interests key=k item=v}
-      &lt;li&gt;$k}: $v}&lt;/li&gt;
+      <li>{$k}: {$v}</li>
     {/foreach}
 
 
