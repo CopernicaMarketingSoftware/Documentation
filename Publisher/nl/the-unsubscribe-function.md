@@ -1,4 +1,8 @@
 # De Unsubscribe tag
+
+**Marketing Suite**: {$unsubscribe}\
+**Publisher**: {unsubscribe}
+
 Het is wettelijk verplicht om iedere (commerciële) e-mail die je
 verstuurt, te voorzien van een goed zichtbare en werkende
 uitschrijfmogelijkheid. Copernica biedt verschillende mogelijkheden voor
