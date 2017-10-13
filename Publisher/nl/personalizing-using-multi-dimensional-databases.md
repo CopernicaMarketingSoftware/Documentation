@@ -163,7 +163,7 @@ meerdere referentievelden zijn? Bijvoorbeeld niet alleen een veld
 database *Bedrijven* verwijst? In een mailing naar de medewerkers kun je
 beide velden natuurlijk gewoon gebruiken met {$werkgever.bedrijfsnaam}
 en {$vorige\_werkgever.bedrijfsnaam}. Maar wat gebeurt er als je
-{\$werkgever.referrers.medewerkers} aanroept?
+{$werkgever.referrers.medewerkers} aanroept?
 
 De variabele {$referrers.medewerkers} bevat alle verwijzingen vanuit de
 database *Medewerkers* - dus ongeacht welk referentieveld je gebruikt.
@@ -185,7 +185,7 @@ te geven op basis van welk referentieveld je wilt selecteren:
     {/foreach}
     {/if}
 
-Zo simpel is het. Normaal gesproken bevat {\$referrers.medewerkers} (of
+Zo simpel is het. Normaal gesproken bevat {$referrers.medewerkers} (of
 {$referrers["medewerkers"] - je kunt dat in Smarty op meerdere manieren
 schrijven, met een punt-notatie of met vierkante haakjes) alle
 verwijzingen vanuit de database *Medewerkers*. Met een @-teken kun je
@@ -206,7 +206,7 @@ Javascript
 Alle variabelen die toegankelijk zijn in Smarty, kun je ook via
 javascript aanspreken. Javascript gebruik je bijvoorbeeld voor condities
 bij opvolgacties of conditionele tekstblokken. Daar waar je in smarty
-{\$profile.naam} kon gebruiken, is er in javascript de equivalente
+{$profile.naam} kon gebruiken, is er in javascript de equivalente
 variabele profile.naam. Een overzichtje:
 
 **Smarty**\
