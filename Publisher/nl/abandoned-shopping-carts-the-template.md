@@ -45,17 +45,13 @@ Hiervoor vragen we met behulp van *loadsubprofile* de subprofielen uit
 de collectie op, waarbij we de *limit* op 1 zetten en we (omgekeerd)
 sorteren op de veld 'Timestamp'. De code:
 
-~~~~ {.language-javascript}
-{loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
-~~~~
+    {loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
 
 Vervolgens halen we alle door dit profiel achtergelaten producten uit de
 collectie 'BasketProducts'. Nu gebruiken we parameter *multiple* om aan
 te geven dat we meerdere (alle!) subprofielen willen:
 
-~~~~ {.language-javascript}
- {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
-~~~~
+    {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
 
 ### Een loop met foreach
 
@@ -70,18 +66,16 @@ met de ID van het opgehaalde mandje. De code om dit te controleren en om
 alleen bij de juiste subprofielen de naam van het product te laten zien
 is als volgt:
 
-~~~~ {.language-javascript}
-{foreach from=$loadedProducts item=loadedProduct}                          
-    {if $loadedProduct.BasketID == $loadedBasket.id}
-        {$loadedProduct.Product}
-    /if}
-{/foreach}
-~~~~
+    {foreach from=$loadedProducts item=loadedProduct}                          
+        {if $loadedProduct.BasketID == $loadedBasket.id}
+            {$loadedProduct.Product}
+        /if}
+    {/foreach}
 
 *N.B. Als je een link naar de pagina van het product wilt opnemen in je
 document, dan zul je die ook in de for-each moeten laten zien. Het is
-dan vereist om \<code\>-tags te gebruiken. Bijvoorbeeld:
-\<code\>{\$loadedProduct.Link}\</code\>.*
+dan vereist om gebruik te maken van de nieuwe link tracking (onderin het document in te stellen voor het gehele account) of om <code>-tags te gebruiken. Bijvoorbeeld:
+<code>{$loadedProduct.Link}</code>.
 
 ### Prijs per product
 
@@ -91,20 +85,18 @@ product welk aantal ervan in het winkelmandje zijn achtergelaten. Ook
 staat de prijs per stuk in de database. We willen dat graag in het
 document laten zien, samen met de totaalprijs van het artikel:
 
-~~~~ {.language-javascript}
-{foreach from=$loadedProducts item=loadedProduct}                          
-    {if $loadedProduct.BasketID == $loadedBasket.id}
-        {$loadedProduct.Product}
+    {foreach from=$loadedProducts item=loadedProduct}                          
+        {if $loadedProduct.BasketID == $loadedBasket.id}
+            {$loadedProduct.Product}
 
-        {$loadedProduct.Amount}
-        {$loadedProduct.Price}
-        {capture assign="productTotal"}
-            {math equation="x*y" x=$loadedProduct.Amount y=$loadedProduct.Price}
-                {/capture}
-                {$productTotal}
-    {/if}
-{/foreach}
-~~~~
+            {$loadedProduct.Amount}
+            {$loadedProduct.Price}
+            {capture assign="productTotal"}
+                {math equation="x*y" x=$loadedProduct.Amount y=$loadedProduct.Price}
+                    {/capture}
+                    {$productTotal}
+        {/if}
+    {/foreach}
 
 ### Totaalprijs
 
@@ -113,17 +105,13 @@ plaatsen, maken we bovenaan in het document een variabele *basketTotal*
 aan welke we in de *foreach-loop* en het *if-statement* verhogen met de
 totale prijs van het product.
 
-Buiten de *foreach-loop*:
+Buiten de **foreach-loop**:
 
-~~~~ {.language-javascript}
-{capture assign="basketTotal"}0{/capture}
-~~~~
+    {capture assign="basketTotal"}0{/capture}
 
-In de *foreach-loop* en het *if-statement*:
+In de **foreach-loop** en het **if-statement**:
 
-~~~~ {.language-javascript}
-{assign var="basketTotal" value=$basketTotal+$productTotal}
-~~~~
+    {assign var="basketTotal" value=$basketTotal+$productTotal}
 
 ### Het complete document
 
@@ -131,49 +119,47 @@ Voor de overzichtelijkheid is het verstandig om het mandje in een tabel
 weer te geven. Door al het bovenstaande samen te voegen en in een tabel
 te zetten ontstaat de volgende code:
 
-~~~~ {.language-javascript}
-<table align="center" width="400px">
-    <tr><th></th><th>Product</th><th>Amount</th><th>Price (1 pc.)</th><th>Total price</th></tr>
+    <table align="center" width="400px">
+        <tr><th></th><th>Product</th><th>Amount</th><th>Price (1 pc.)</th><th>Total price</th></tr>
 
-    {capture assign="basketTotal"}0{/capture}
-  
-    {loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
+        {capture assign="basketTotal"}0{/capture}
 
-    {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
-    {foreach from=$loadedProducts item=loadedProduct}                          
-        {if $loadedProduct.BasketID == $loadedBasket.id}
-            <tr>
-                <td>
-                    <img src="{$loadedProduct.imageurl}" width="80px">
-                </td>
-                <td>
-                    {$loadedProduct.Product}
-                </td>
-                <td>
-                    {$loadedProduct.Amount}
-                </td>
-                <td>
-                  {$loadedProduct.Price}
-                </td>
-                <td>
-                    {capture assign="productTotal"}
-                        {math equation="x*y" x=$loadedProduct.Amount y=$loadedProduct.Price}
-                    {/capture}
-                    {$productTotal}
-                </td>
-            </tr>
+        {loadsubprofile source="Toothbrush inc:Baskets" profile=$profile.id assign=loadedBasket multiple=false limit=1 orderby='Timestamp desc'}
+
+        {loadsubprofile source="Toothbrush inc:BasketProducts" profile=$profile.id assign=loadedProducts multiple=true}
+        {foreach from=$loadedProducts item=loadedProduct}                          
+            {if $loadedProduct.BasketID == $loadedBasket.id}
+                <tr>
+                    <td>
+                        <img src="{$loadedProduct.imageurl}" width="80px">
+                    </td>
+                    <td>
+                        {$loadedProduct.Product}
+                    </td>
+                    <td>
+                        {$loadedProduct.Amount}
+                    </td>
+                    <td>
+                      {$loadedProduct.Price}
+                    </td>
+                    <td>
+                        {capture assign="productTotal"}
+                            {math equation="x*y" x=$loadedProduct.Amount y=$loadedProduct.Price}
+                        {/capture}
+                        {$productTotal}
+                    </td>
+                </tr>
+
+                {assign var="basketTotal" value=$basketTotal+$productTotal}
+            {/if}
+
+        {/foreach}
+
+        <tr><td></td><td></td><td></td>
+            <td><b>Total price:</b></td><td><b>{$basketTotal}</b>
+        </td></tr>
+    </table>
     
-            {assign var="basketTotal" value=$basketTotal+$productTotal}
-        {/if}
- 
-    {/foreach}
-  
-    <tr><td></td><td></td><td></td>
-        <td><b>Total price:</b></td><td><b>{$basketTotal}</b>
-    </td></tr>
-</table>
-~~~~
-
 ### Het resultaat
 
 ![](../images/abandoned-shopping-cart-tandenborstel.png)
