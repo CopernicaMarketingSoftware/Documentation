@@ -9,27 +9,27 @@ voorkomen.
 Let op: wanneer je aan een selectie of miniselectie wilt refereren,
 zonder hierbij het hele pad op te geven
 (*Database:selectie:subselectie*) dien je het *ID*van de (mini)selectie
-te gebruiken. Het *ID*van een selectie kan je ophalen door in het
+te gebruiken. Het *ID* van een selectie kan je ophalen door in het
 onderdeel *Profielen* in het database-overzicht enkele tijd met de
 cursor over de naam van de selectie te zweven. Die van een miniselectie
 kan je op dezelfde wijze achterhalen, maar dan onder *Huidige weergave
 \>***Subprofielen weergeven**. 
 
-**Voorbeeld in\_miniselection met verwijzing naar selectie ID**\
+**Voorbeeld in\_miniselection met verwijzing naar selectie ID**
 
 `{in_selection selection="20"}   Deze tekst is alleen zichtbaar voor personen uit de selectie met ID 20 {/in_selection}`
 
 **Voorbeeld in\_miniselection met verwijzing naar selectie \>
-subselectie**\
+subselectie**
 
 `{in_selection selection="Database:mySelection:mySubSelection"}   Deze tekst is alleen zichtbaar voor personen uit de subselectie 'mySubSelection' onder selectie 'mySelection'   {/in_selection}`
 
-**Hetzelfde kan ook met miniselecties, als volgt:**\
+**Hetzelfde kan ook met miniselecties, als volgt:**
 
-`{in_miniselection miniselection="50"}   Deze tekst is alleen zichtbaar voor personen uit de mminiselectie met ID 50. {/in_miniselection}`
+`{in_miniselection miniselection="50"}Deze tekst is alleen zichtbaar voor personen uit de mminiselectie met ID 50. {/in_miniselection}`
 
 **Let op, als je aan een andere database refereert, dan dien je deze ook
-te vermelden:**\
+te vermelden:**
 
 `{in_miniselection miniselection="Database:myCollection:myMiniSelection"}   Deze tekst is alleen zichtbaar voor mensen uit de selectie 'myMiniSelection' in de collectie myCollection.   {/in_miniselection}`
 
