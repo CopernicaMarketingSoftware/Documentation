@@ -66,7 +66,7 @@ aangekochte producten van een klant), dan kan je de smarty foreach
 gebruiken, eventueel in samenwerking met de loadsubprofile functie. Je
 gebruikt smarty foreach om door de subprofielen heen te loopen.
 
-      {foreach  $Contacts as $Contact}
+      {foreach $Contacts as $Contact}
         {$Contact.id}, </br>   
       {/foreach}`
 
@@ -81,8 +81,8 @@ in een smarty 3 template. Oudere smarty versies hebben een iets andere
 syntax.
 
 Let nogmaals op, als je hyperlinks uit de geladen (sub)profielen wilt
-printen in de foreach-loop, gebruik dan \<code\>-tags. Voorbeeld:
-\<code\>{$Contact.hyperlink}\</code\>
+printen in de foreach-loop, gebruik dan <code\>-tags. Voorbeeld:
+<code\>{$Contact.hyperlink}</code\>
 
 Meer informatie over foreach op de website van
 [Smarty](http://www.smarty.net/)
