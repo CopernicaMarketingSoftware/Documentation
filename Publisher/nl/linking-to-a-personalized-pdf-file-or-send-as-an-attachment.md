@@ -7,7 +7,7 @@ Mogelijkheid 1. De speciale {linkpdf} tag
 -----------------------------------------
 
 Als je een PDF bestand hebt geimporteerd naar het onderdeel PDF, dan kan
-je eenvoudig naar dit bestand linken met behulp van de *linkpdf S*marty
+je eenvoudig naar dit bestand linken met behulp van de *linkpdf* Smarty
 tag.
 
 Het voordeel van deze manier van linken is dat het PDF document
