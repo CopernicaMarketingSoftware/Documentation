@@ -25,7 +25,7 @@ map, of kan een media library gekoppeld hebben. Je kan een PDF-bestand
 uploaden naar deze map. In je document of template refereer je als volgt
 naar de geuploade PDF:
 
-`<a href="bestandsnaam.pdf">Link</a>`
+`<a href="bestandsnaam.pdf">Download PDF</a>`
 
 Mogelijkheid 3. PDF bestand meesturen als bijlage
 -------------------------------------------------
