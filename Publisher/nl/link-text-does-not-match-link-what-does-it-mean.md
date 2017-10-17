@@ -7,7 +7,7 @@ melding vrij eenvoudig te verhelpen.
 Je krijgt deze melding als in het e-mail document dat je wilt versturen
 een hyperlink is gevonden die de link URL als link tekst heeft.
 
-\<a href="http://www.google.com">http://www.google.com</a\>
+\<a href="http://www.google.com"\>http://www.google.com\</a\>
 
 #### Waarom levert dit punten op?
 
