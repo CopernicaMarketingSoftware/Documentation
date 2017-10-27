@@ -70,6 +70,12 @@ hebt gezet:
 Met bovenstaande code zorg je er voor dat er altijd een &lt;div&gt; element 
 rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 
+## Class toevoegen
+
+Voeg een class toe aan het image blok. Hiermee kun je de afbeelding responsive maken.
+
+`[image name='nameofblock' class='className']`
+
 ## Meer informatie
 
 * [Templates](./templates)
