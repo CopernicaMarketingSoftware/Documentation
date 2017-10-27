@@ -29,9 +29,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [error-log-directory](logging#error-logs)                                | Error log directory
 | [error-log-prefix](logging#error-logs)                                   | Error log prefix
 | [heartbeat-enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)
-| [heartbeat-ip](other-configuration#user-statistics)                      | IP for sending heartbeat
-| [heartbeat-period](other-configuration#user-statistics)                  | Periods between sending user statistics
-| [heartbeat-port](other-configuration#user-statistics)                    | Port for sending heartbeat
 | [license](other-configuration#license)                                   | MailerQ license file
 | [lock](other-configuration#lockfile)                                     | Process ID for MailerQ instance to prevent from starting instances more than once
 | [max-attempts](other-configuration)                                      | Maximum attempts to deliver email
