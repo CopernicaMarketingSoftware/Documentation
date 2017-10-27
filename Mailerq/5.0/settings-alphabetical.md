@@ -11,7 +11,8 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
 | [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
 | config-file                                                              | Path to configuration file
-| [database](database-access#database-settings-in-the-config-file)         | Relational database for config data and delivery settings
+| [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
+| [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
 | [download-log-compression](logging#download-logs)                        | Download log compression
 | [download-log-directory](logging#download-logs)                          | Download log directory
