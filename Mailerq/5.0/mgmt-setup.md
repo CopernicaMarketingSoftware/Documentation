@@ -80,7 +80,7 @@ If you have [a cluster with multiple MailerQ instances](cluster),
 the web interface of these interfaces contains links to the other instances. 
 MailerQ does its best to find out the URL for each of the other interfaces (by 
 combining the host names and port numbers), but you can use the following
-variables config file variables to override this:
+optional config file variables to help a hand:
 
 ````
 www-host:               your.hostname (default: auto-detected)
