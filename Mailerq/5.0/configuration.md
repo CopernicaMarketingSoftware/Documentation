@@ -10,7 +10,6 @@ sections. Please select the section that you're interested in or
 find the desired setting in the [A-Z settings overview](settings-alphabetical).
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
-* [Multiple instances](multiple-instances "Multiple MailerQ instances on a single server")
 * [Cluster settings](cluster "Cluster configuration")
 * [Database settings](database-access "Database access")
 * [Message store settings](message-store-options "Message Store options")
@@ -18,6 +17,7 @@ find the desired setting in the [A-Z settings overview](settings-alphabetical).
 * [Smarthost & debugging](smarthost "Smarthost & debugging")
 * [Management console](management-console "Management console")
 * [Responsive Email](responsiveemail "ResponsiveEmail.com integration")
+* [Multiple instances](multiple-instances "Multiple MailerQ instances on one server")
 * [Other options](other-configuration "Other configuration options")
 
 ## Are you looking for more settings?
