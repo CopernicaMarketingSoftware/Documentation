@@ -1,31 +1,34 @@
 # Getting started with MailerQ
 
 To get MailerQ up and running on your own computer or on a server you
-need to take a couple of simple steps.
+need to take a couple of simple steps:
 
-[A quick start to download and install MailerQ](../../download)
+* [Download and install MailerQ](download-instructions)
+* [Download and install RabbitMQ](rabbitmq-install)
+* [Fetch a license file (trial or commercial)](license-file)
 
-After you finished these instructions you're ready to start MailerQ and inject emails.
+To make this all even simpler, we have even
+[a quick start to download and install MailerQ](../../download).
 
 MailerQ comes with a web based [management console](management-console)
 that you can use to monitor exactly what is happening, and to adjust all
 your delivery settings.
 
+
 ## System dependencies
 
-MailerQ runs on Linux, so you need a Linux server or Linux computer to be
-able to start and run MailerQ. We distribute the software in binary form for
-Debian/Ubuntu based systems and for Red Hat based systems. Please drop us a
-message if you need a version for a different type of system.
+MailerQ runs on Linux, so you need a Linux server or Linux computer to run 
+MailerQ. We distribute the software in binary form for Debian/Ubuntu based 
+systems and for Red Hat based systems. Please drop us a message if you need 
+a version for a different type of system.
 
-The binary executable that you can download is statically linked against most
-libraries. This means that all the libraries required by MailerQ are embedded
-into the binary code, and that MailerQ runs straight out of the box with no need
-for you to fix all kinds of dependencies. However, when MailerQ starts, it does
+Most libraries that are needed by MailerQ are statically linked. This means 
+that most of the required libraries are embedded into the binary code, so 
+MailerQ runs straight out of the box with no need for you to fix dependencies 
+and install other software. However, when MailerQ starts, it does
 do a scan of your system to detect which libraries are available. If MailerQ
-happens to find out that one or more of the following libraries
-are available on your system, it does load them to use specific features
-from these libs:
+happens to find one or more of the following libraries, it does load them to 
+use specific features from these libs:
 
 <table>
     <tr>
@@ -85,8 +88,8 @@ from these libs:
     </tr>
 </table>
 
-From the above list, only the openssl, libz and libidn libraries are required. All
-other libraries are optional, and MailerQ can run without them. If a library
+From the above list, the openssl, libz and libidn libraries are required. All
+other libraries are optional and MailerQ can run without them. If a library
 is missing, MailerQ will either fall back on its own implementation, or will
 run without the features from the specific library.
 
