@@ -64,6 +64,12 @@ In this case a class is placed around the image, allowing the stylesheet
 to modify the layout of the image accordingly. It's also possible to 
 add other HTML code to these tags.
 
+## Class toevoegen
+
+Add a class to your image block. 
+
+`[image name='example' class='className']`
+
 ## More information
 
 * [Templates](./templates)
