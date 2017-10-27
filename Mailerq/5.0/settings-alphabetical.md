@@ -114,6 +114,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [www-port](mgmt-setup#activation)                                        | Port number for the management console
 | [www-private-key](mgmt-setup#setting-up-a-secure-management-console)     | Private key for secure connection to management console
 | [www-secure-port](mgmt-setup#setting-up-a-secure-management-console)     | Secure (HTTPS) port number for the management console
+| [www-url](mgmt-setup#announcing-the-interface-on-the-cluster)            | The URL via which the mgmt console is accessible
 
 ## Boolean options
 

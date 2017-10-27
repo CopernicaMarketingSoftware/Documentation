@@ -48,24 +48,22 @@ includes active web sockets.
 
 ## Setting up a secure management console
 
-If is a good idea to secure your management console, as it will also
-used to manage private DKIM keys; by definition, these should not be transferered
-over interceptable non-secure HTTP connections.
+If is a good idea to secure your management console, as it will also be
+used to manage private DKIM keys; by definition, these should be kept private 
+and thus not transferered over interceptable non-secure HTTP connections.
 
 The following configuration file variables are relevant for enabling 
 HTTPS support:
 
 ````
-www-port:                   0
 www-secure-port:            443 (empty by default)
 www-certificate:            /path/to/certificate.crt (empty by default)
 www-privatekey:             /path/to/privatekey.key (empty by default)
 www-ciphers:                !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH (empty by default)
 ````
 
-If you enable HTTPS, switch off the regular HTTP
-interface by setting the `www-port` to zero. This prevents that users
-will connect to the old unsecure interface by accident. The `www-secure-port`
+If you enable both HTTP and HTTPS, users who access the non-secure interface
+will automatically be forwarded to the secure connections. The `www-secure-port`
 holds the port number for the HTTPS connections (443 is the default for 
 this, so that you won't have to include the port number in URLS). The
 certifate and key files, and the supported ciphers can be set using
@@ -74,3 +72,18 @@ the `www-certificate`, `www-privatekey` and `www-ciphers` variables.
 Once enabled, the encrypted management console can be accessed using
 the address `https://hostname.of.your.server` if you use default port 443,
 or `https://hostname.of.your.server:port` for any other port.
+
+
+## Announcing the interface on the cluster
+
+If you have [a cluster with multiple MailerQ instances](cluster),
+the web interface of these interfaces contains links to the other instances. 
+MailerQ does its best to find out the URL for each of the other interfaces (by 
+combining the host names and port numbers), but you can use the following
+variables config file variables to override this:
+
+````
+www-host:               your.hostname (default: auto-detected)
+www-url:                https://your.hostname:port (default: auto-detected)
+````
+
