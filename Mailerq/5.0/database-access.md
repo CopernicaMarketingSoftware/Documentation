@@ -1,32 +1,32 @@
 # The MailerQ database
 
-MailerQ uses a relational database to store all sorts of configuration 
-data and delivery settings. The data stored in the database includes
-for example the delivery throttles and DKIM keys. The database is read
-and updated by MailerQ, but you are free to write your own scripts and
-programs that also modify this data.
+MailerQ uses a relational database to store all sorts of configuration data 
+and delivery settings. The data stored in the database includes the delivery 
+throttles and DKIM keys. The database is read and updated by MailerQ, but you
+are free to write your own scripts and programs that also modify this data.
 
-MailerQ supports multiple database platforms. Currently, we support
-MySQL(5.5+), MariaDB(5.5+), PostgreSQL(9.1+) and SQLite3 databases. The SQLite database is by far 
-the simplest to set up because it does not require a server process to
-run. All you need is the "sqlite3" library to be installed on your system.
+MailerQ supports multiple database platforms: MySQL(5.5+), MariaDB(5.5+), 
+PostgreSQL(9.1+) and SQLite3. The SQLite database is by far the simplest to 
+set up because it does not require a server process to run. All you need is 
+the "sqlite3" library to be installed on your system.
 
 The other database systems, MySQL, MariaDB and PostgreSQL, take a little
-more effort, but are not too difficult to install either. You only 
-need to create the database and put the login and password in the 
-MailerQ configuration file. MailerQ does the rest and creates all
-tables.
+more effort to set up, but they are not too difficult to install either. You 
+just have to create the database and put the login and password in the 
+MailerQ configuration file and MailerQ will do the rest: all the tables
+are created and will be filled with the settings that you enter via the
+management console.
 
 
 ## Database settings in the config file
 
 Only one variable has to be set in the config file to connect to a
-database: the "database" variable:
+database: the "database-address" variable:
 
 ```
-database:           sqlite:///path/to/database/file.sql
-database:           mysql://user:password@hostname/databasename
-database:           postgresql://user:password@hostname/databasename
+database-address:   sqlite:///path/to/database/file.sql
+database-address:   mysql://user:password@hostname/databasename
+database-address:   postgresql://user:password@hostname/databasename
 ```
 
 SQLite is the simplest database to set up, because you just specify the 
@@ -84,6 +84,29 @@ If the database-ttl is set to 60 seconds, like we did above, the data is reloade
 every minute.
 
 
+## Threads for DNS lookups
+
+The private DKIM keys that are stored in the database can be configured to be
+verified against the public keys found in DNS. If this is enabled, MailerQ will
+do a DNS query for each DKIM key to see if the private key indeed matches the
+published public key. Keys that do not match will not be used.
+
+This is a nice feature, but has as downside that it could take a long time to
+run all these DNS queries - especially if you have a lot of DKIM keys in your
+database. To speed things up, you can higher the number of threads that are 
+started for these DNS queries. The "database-threads" config file option limits
+the number of threads to be used for DNS lookups that are triggered by a 
+database reload:
+
+````
+database-threads:       10
+````
+
+The default value for this variable is one. If you notice that it takes a lot
+of time to start MailerQ because of all these DKIM key checks, you can 
+experiment with higher values.
+
+
 ## Rebuilding the database
 
 When MailerQ starts, it first connects to the database and checks whether
@@ -107,6 +130,8 @@ $ mailerq --purge-database
 
 This option tells MailerQ not to check and repair tables, but to drop
 them all and create new ones.
+
+
 
 
 ## Multiple MailerQ instances
