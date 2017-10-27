@@ -91,10 +91,10 @@ verified against the public keys found in DNS. If this is enabled, MailerQ will
 do a DNS query for each DKIM key to see if the private key indeed matches the
 published public key. Keys that do not match will not be used.
 
-This is a nice feature, but has as downside that it could take a long time to
-run all these DNS queries - especially if you have a lot of DKIM keys in your
-database. To speed things up, you can higher the number of threads that are 
-started for these DNS queries. The "database-threads" config file option limits
+This is a nice feature, but has as downside that it sometime takes a long time
+to run all these DNS queries - especially if you have a lot of DKIM keys in your
+database. To speed things up, you can increase the number of threads that are 
+used for these DNS queries. The "database-threads" config file option sets
 the number of threads to be used for DNS lookups that are triggered by a 
 database reload:
 
