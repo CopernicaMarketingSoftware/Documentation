@@ -26,7 +26,7 @@
 * [API documentation](./apis.md)
     * [REST API](./rest-api.md)
     * [REST events](./rest-get-events.md)
-    * [Feedback loops](./feedback-loops.md)
+    * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation)
 * [Tips, tricks and background](./tips-and-tricks)
     * [Accounts and users](./accounts-and-users.md)

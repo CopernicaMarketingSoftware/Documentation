@@ -1,8 +1,8 @@
-# Feedback loops: verwijderen van profielen
+# WebHooks: verwijderen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel uit een van je database verwijderd wordt,
-kun je hiervoor een feedback loop instellen.
+kun je hiervoor een webhook instellen.
 Voor elk verwijderd profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist verwijderde profiel.
 
@@ -18,7 +18,7 @@ Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
 De variabele "action" heeft altijd de waarde 'delete'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangemaakt](feedback-creates) of [aangepast](feedback-updates) wordt.
+profiel [aangemaakt](webhook-creates) of [aangepast](webhook-updates) wordt.
 Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
 Voor profielen zijn dit de volgende variabelen:
 
@@ -36,4 +36,4 @@ Voor subprofielen zijn dit de volgende variabelen:
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

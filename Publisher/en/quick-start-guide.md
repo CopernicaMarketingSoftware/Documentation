@@ -28,9 +28,9 @@ mass mailing.
 ## More information
 
 Do you want to receive realtime updates about your mailings? Incorporate
-feedback loops into your own system and receive all eventsright off our
+WebHooks into your own system and receive all eventsright off our
 servers.
 
 * [Glossary](./definitions)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
 * [Database selections](./selections-introduction)

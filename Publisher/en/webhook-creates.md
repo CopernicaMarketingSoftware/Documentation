@@ -1,6 +1,6 @@
-# Feedback loops: (sub)profile creations
+# WebHooks: (sub)profile creations
 
-If you set up a profile creation feedback loop you are notified in real-time
+If you set up a profile creation webhook you are notified in real-time
 whenever a profile or subprofile in one of your databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the newly created profile.
@@ -23,7 +23,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 The "action" variable will always have the value 'create'; this helps discern
 these messages from messages that are sent when a profile is
-[updated](feedback-updates) or [deleted](feedback-deletes).
+[updated](webhook-updates) or [deleted](webhook-deletes).
 Additional information about the profile or subprofile is also sent;
 for profiles this consists of the following variables:
 
@@ -100,6 +100,6 @@ An example for a subprofile looks like this:
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Update feedback](./feedback-updates)
-* [Delete feedback](./feedback-deletes)
+* [WebHooks](./webhooks)
+* [Update webhook](./webhook-updates)
+* [Delete webhook](./webhook-deletes)

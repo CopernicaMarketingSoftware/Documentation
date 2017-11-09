@@ -36,10 +36,10 @@ Je kunt logfiles downloaden door middel van de knop 'Download' in het
 overzicht van logfiles, maar je kunt ze ook ophalen door middel van de 
 [REST API](./rest-get-logfiles), 
 of je kunt notificaties krijgen van events door middel van 
-[feedback loops](./feedback-loops).
+[WebHooks](./webhooks).
 
 ## Meer informatie
 
 * [REST API](./rest-get-logfiles)
 * [Statistieken](./statistics)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

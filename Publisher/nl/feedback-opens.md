@@ -1,11 +1,11 @@
-# Feedback loops: opens
+# WebHooks: opens
 
 Copernica kan links naar afbeeldingen in emails herschrijven om 
 opens te registreren. Hierdoor wordt de afbeelding via onze server gedownload, 
 in plaats van de server van jouw bedrijf. Hierdoor kan Copernica de 
-opens opslaan en naar jou doorsturen via een feedback loop.
+opens opslaan en naar jou doorsturen via een webhook.
 
-Als je een feedback loop voor opens instelt, word je in real-time op de hoogte
+Als je een webhook voor opens instelt, word je in real-time op de hoogte
 gebracht van elke geopende mail. Voor elke open sturen we via HTTP of 
 HTTPS een POST bericht naar jouw server met daarin de relevante 
 informatie over de open.
@@ -28,4 +28,4 @@ De variabelen "id", "recipient" en "tags" stellen je in staat om de open te kopp
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
