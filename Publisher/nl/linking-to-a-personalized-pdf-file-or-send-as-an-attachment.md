@@ -1,4 +1,5 @@
 # Linken naar een (gepersonaliseerd) PDF-bestand
+
 Je kan vanuit een emailing of een webpagina op twee verschillende
 manieren naar een PDF-bestand linken. Het is ook mogelijk om een
 PDF-bestand als bijlage mee te sturen per elektronische post.

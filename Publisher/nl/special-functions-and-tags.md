@@ -1,4 +1,5 @@
 # Speciale functies en codes
+
 Copernica beschikt over een groot aantal speciale functies voor
 personalisatie en invoegcodes voor het publiceren van speciale content.
 

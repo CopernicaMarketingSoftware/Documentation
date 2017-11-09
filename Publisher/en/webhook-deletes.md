@@ -1,4 +1,4 @@
-WebHooks# WebHooks: (sub)profile deletions
+# WebHooks: (sub)profile deletions
 
 If you set up a profile deletion webhook, you are notified in real-time
 whenever a profile or subprofile is deleted from your account's databases.

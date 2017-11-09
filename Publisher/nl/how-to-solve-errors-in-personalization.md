@@ -1,4 +1,5 @@
 # Personalisatie fouten oplossen
+
 Zoals je weet gebruik je in Copernica speciale tags om in een document
 gebruik te kunnen maken van variabele content en voor het toevoegen van
 formulieren, enquetes et cetera. In deze tags worden blokhaken en
