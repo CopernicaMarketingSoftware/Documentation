@@ -67,7 +67,7 @@ Nadat je webhook is gevalideerd, kan het bestand weer verwijderd worden.
 ## De webhook testen
 
 Het dashboard beschikt over een krachtige tool om je webhook mee te testen.
-Vul simpelweg de post data in die je feedback loop moet ontvangen en verstuur direct een voorbeeldnotificatie.
+Vul simpelweg de post data in die je WebHook moet ontvangen en verstuur direct een voorbeeldnotificatie.
 
 ## Calls afhandelen
 
