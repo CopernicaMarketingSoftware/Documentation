@@ -22,7 +22,7 @@
     * [Retrieve logfiles](rest-logfiles)
     * [Retrieve DMARC reports](rest-dmarc)
     * [Managing templates](rest-templates)
-* [WebHooks(webhooks)
+* [WebHooks](webhooks)
     * [Setting up a WebHook](webhook-setup)
     * [WebHooks loops for bounces](webhook-bounces)
     * [WebHooks loops for failures](webhook-failures)
