@@ -1,8 +1,8 @@
-# Feedback loops: aanmaken van profielen
+# WebHooks: aanmaken van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer er een nieuw
 profiel of subprofiel in een van je database aangemaakt wordt,
-kun je hiervoor een feedback loop instellen.
+kun je hiervoor een webhook instellen.
 Voor elk nieuw profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist aangemaakte profiel.
 
@@ -19,7 +19,7 @@ Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
 De variabele "action" heeft altijd de waarde 'create'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangepast](feedback-updates) of [verwijderd](feedback-deletes) wordt.
+profiel [aangepast](webhook-updates) of [verwijderd](webhook-deletes) wordt.
 Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
 Voor profielen zijn dit de volgende variabelen:
 
@@ -50,4 +50,4 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

@@ -29,7 +29,7 @@
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
     * [REST events](./rest-get-events.md)
-    * [Feedbackloops](./feedback-loops.md)
+    * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks)
     * [Gebruikersbeheer](accounts-and-users.md)

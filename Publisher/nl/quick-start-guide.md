@@ -25,9 +25,9 @@ te versturen.
 ## Meer informatie
 
 Wil je realtime op de hoogte worden gehouden van de processen die rondom je
-mailings plaatsvinden? Stel dan feedback loops in op je eigen systeem en 
+mailings plaatsvinden? Stel dan WebHooks in op je eigen systeem en 
 ontvang alle meldingen die van onze servers komen.
 
 * [Begrippenlijst](./definitions)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
 * [Selecties](./selections-introduction)

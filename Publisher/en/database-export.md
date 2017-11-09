@@ -7,7 +7,7 @@ at a time. An export creates a file that you can download or you can have it
 emailed to your address.
 
 If you want to receive information about clicks, opens, etc. as they happen 
-you can also set up a [feedback loop](./feedback-loops). 
+you can also set up a [WebHook](./webhooks). 
 
 ## Extra remarks
 

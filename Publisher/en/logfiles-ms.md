@@ -34,10 +34,10 @@ and how many times it has been used.
 It is possible to download log files to your computer using the 
 'Download' button in the Operations Log. Another way of retrieving log 
 files is through the [REST API](./rest-get-logfiles), or to get notified 
-of events using [feedback loops](./feedback-loops).
+of events using [WebHooks](./webhooks).
 
 ## More information
 
 * [REST API](./rest-get-logfiles)
 * [Statistics](./statistics)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
