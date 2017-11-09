@@ -1,27 +1,26 @@
-# Feedback loops for bounces
+# WebHooks for bounces
 
 SMTPeter normally modifies the envelope address of all mails that flow
 through it to track bounces and other messages that are sent back. All
 bounce messages are therefore sent back to SMTPeter. You can however set 
-up a "bounce" feedback loop to be notified about these bounces too.
+up a "bounce" webhook to be notified about these bounces too.
 
 
 ## Type of messages
 
-The bounce feedback loop is used for literally _all_ messages that are 
+The bounce webhook is used for literally _all_ messages that are 
 sent back to the envelope address. This includes the regular
 delivery status notifications, but also out-of-office replies, vacation
 mails, or error messages from servers that do not respect the official
 format for bounce messages. All these type of messages are sent back to
-SMTPeter and to you, if you set up a feedback loop.
+SMTPeter and to you, if you set up a webhook.
 
 
 ## Bounces vs Delivery Status Notifications
 
 SMTPeter sends out messages using the SMTP protocol. This protocol allows
 remote servers to either accept a message or to refuse it. Refused mails
-are written to the failure logfile and are sent to the failure feedback
-loops (see diagram 1). 
+are written to the failure logfile and are sent to the failure webhooks (see diagram 1). 
 
 
 **Diagram 1**
@@ -33,7 +32,7 @@ to send back a bounce email later on in which we're told that the message
 is rejected after all. These bounce messages are Delivery Status Notifications
 and have a special format. SMTPeter recognizes these bounces, and adds
 these errors to the log file too, and calls your 
-[failure feedback loop](feedback-failures) (see diagram 2).
+[failure webhook](webhook-failures) (see diagram 2).
 
 
 **Diagram 2**
@@ -48,16 +47,16 @@ format. These messages are also picked up by SMTPeter.
 
 Because such messages do not follow the official standard for
 Delivery Status Notifications, they can not be recognized by SMTPeter and
-are not written to the error log file or are sent to failure feedback loops.
+are not written to the error log file or are sent to failure webhooks.
 Such incoming bounces are only written to the bounce log file, and are 
-sent to the bounce feedback loops. The bounce feedback loop thus receives
+sent to the bounce webhooks. The bounce webhook thus receives
 two sort of messages: official Delivery Status Notifications, *and*
 bounces and out-of-office replies that could not be recognized.
 
 
 ## Format
 
-The bounce feedback loop is sent over HTTP POST, and the following
+The bounce webhook is sent over HTTP POST, and the following
 variables are submitted:
 
 | variables | Omschrijving                                                                      |
@@ -74,5 +73,5 @@ and "data" fields hold the message that was received by SMTPeter.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Set up a feedback loop](./feedback-setup)
+* [WebHooks](./webhooks)
+* [Set up a webhook](./webhook-setup)

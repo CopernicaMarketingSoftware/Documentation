@@ -20,7 +20,7 @@ The following methods are accessible via HTTP GET, POST and DELETE:
 | GET            | www.smtpeter.com/v1/embeds        | List of all embedded files + content id (cid)          |
 | GET            | www.smtpeter.com/v1/envelope      | Request used envelope address for specific message id  |
 | GET            | www.smtpeter.com/v1/events        | Request events                                         |
-| GET            | www.smtpeter.com/v1/feedbackloops | Request feedback loop settings                         |
+| GET            | www.smtpeter.com/v1/webhooks      | Request webhook settings (feedbackloop is deprecated)  |
 | GET            | www.smtpeter.com/v1/headers       | Reqeust headers of sent message                        |
 | GET            | www.smtpeter.com/v1/html          | Request HTML part of sent message                      |
 | GET            | www.smtpeter.com/v1/text          | Request text part of sent message                      |
@@ -31,7 +31,7 @@ The following methods are accessible via HTTP GET, POST and DELETE:
 | GET            | www.smtpeter.com/v1/templates     | Request all template identifiers                       |
 | POST           | www.smtpeter.com/v1/dkimkey       | Add new DKIM to sender domain                          |
 | POST           | www.smtpeter.com/v1/domain        | Make or assign a new domain                            |
-| POST           | www.smtpeter.com/v1/feedbackloop  | Configure a feedback loop                              |
+| POST           | www.smtpeter.com/v1/webhook       | Configure a webhook (feedbackloop is deprecated)       |
 | POST           | www.smtpeter.com/v1/send          | Send data to SMTPeter                                  |
 | POST           | www.smtpeter.com/v1/spf           | Create a SPF record                                    |
 | POST           | www.smtpeter.com/v1/template      | Create a templates                                     |

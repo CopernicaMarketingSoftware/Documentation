@@ -103,5 +103,5 @@ contact them for support.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
 * [Downloading logfiles with REST](./rest-logfiles)
