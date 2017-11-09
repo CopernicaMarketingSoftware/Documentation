@@ -106,5 +106,5 @@ Als je hierover vragen hebt, moedigen we je aan deze aan hen te stellen.
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
 * [Logfiles download met REST](./rest-logfiles)

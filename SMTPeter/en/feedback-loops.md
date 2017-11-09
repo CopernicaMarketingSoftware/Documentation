@@ -1,36 +1,28 @@
 # Feedback loops
 
-SMTPeter allows you to set up feedback loops. These feedback loops can be 
-used to receive realtime event notifications. Every time when something happens
-on the SMTPeter servers (like an incoming bounce, a failed  delivery or 
-when someone clicks on a link), SMTPeter makes a call to your server to 
-notify you about this event.
+If you have been in e-mailmarketing for a while you might know the term 
+"Feedback Loops". This term is used for the feedback we get from ESP's 
+about bounces. 
 
-The feedback is sent over the HTTP or HTTPS protocol using the HTTP POST
-mechanism. When you [set up a feedback loop](feedback-setup), you register 
-a web address and specify the type of events that you are interested in. 
-Once your URL has been validated, SMTPeter starts making calls to it.
+However, Copernica has also previously used "Feedback Loops" 
+for what are now called [Webhooks](./webhooks). WebHooks can be used 
+to send information to your server in real-time about clicks, opens, bounces 
+etc. You can read more about them in [this article](./webhooks).
 
+## Changes with the new name
 
-## Watch out!
+Of course you know what changes for you, besides the new name. You can 
+configure WebHooks with an API call or within the software. In the software 
+nothing will change and all of your previous WebHooks will work like you 
+are used to. In the API there are two calls related to the name "Feedback 
+loops": **feedbackloop** and **feedbackloops**. They configure a new 
+webhook and request webhook settings respectively. In future versions of 
+the API they will be replaced by **webhook** and **webhooks** respectively. 
+Currently, you can use both names for your API calls.
 
-Before you set up a feedback loop, please do make sure that your server
-is capable of handling the load. Especially the feedback loop that is
-called when someone [opens a mail](feedback-opens) receives huge
-numbers of calls.
+## More information
 
-If you're not sure whether your server can handle the load, or when you do
-not need realtime feedback, you better use the [REST API](rest-api) to 
-periodically download [the latest log files](rest-logfiles). The REST API 
-gives you access to exactly the same data as the feedback loops, but you 
-stay in control and you decide when to fetch the data.
+Do you want to know more about WebHooks and how to use them? You can find 
+the full article by clicking on the link below.
 
-
-## Type of events
-
-The following feedback loops can be used:
-
-* [Feedback loops for bounces](feedback-bounces)
-* [Feedback loops for failures](feedback-failures)
-* [Feedback loops for clicks](feedback-clicks)
-* [Feedback loops for opens](feedback-opens)
+* [WebHooks](./webhooks)

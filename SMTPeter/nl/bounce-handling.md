@@ -194,4 +194,4 @@ envelope adres.
 
 * [REST API](./rest-api)
 * [SMTP API](./smtp-api)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

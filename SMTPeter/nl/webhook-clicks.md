@@ -1,10 +1,10 @@
-# Feedback loops voor kliks
+# WebHooks voor kliks
 
 SMTPeter kan alle *hyperlinks* in je e-mails herschrijven als je *click-tracking*
 toestaat. Op deze manier worden alle kliks van je gebruikers geregistreerd. Dit 
 gebeurt automatisch, snel en eigenlijk onbewust voor de gebruiker. 
 
-Met een feedback loop kun je meldingen over kliks zelf live ontvangen. Voor elke 
+Met een webhook kun je meldingen over kliks zelf live ontvangen. Voor elke 
 klik wordt een HTTP POST call (HTTPS is ook mogelijk) naar je server verstuurd
 met relevante informatie over de klik.
 
@@ -52,5 +52,5 @@ originele verstuurde e-mail.
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
-* [Feedback loops instellen](./feedback-setup)
+* [WebHooks](./webhooks)
+* [WebHooks instellen](./webhook-setup)
