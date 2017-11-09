@@ -1,4 +1,5 @@
 # Smarty
+
 Smarty is a template engine for PHP. It is a special code used for the
 personalization of your marketing campaigns. Emailings, websites, text
 messages and PDF documents can be personalized using Smarty tags.

@@ -1,4 +1,5 @@
 # Persoonlijke aanhef maken
+
 Met behulp van smarty code kan je op vrij eenvoudige wijze je
 nieuwsbrief van een persoonlijke noot voorzien. In dit artikel leer je
 hoe je met behulp van smarty voorwaarden (if en else- statements) de

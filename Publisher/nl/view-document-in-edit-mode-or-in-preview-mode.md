@@ -1,4 +1,5 @@
 # Voorbeeldweergave en bewerkmodus
+
 Als je een document of template aan het opmaken bent, is het
 vanzelfsprekend mogelijk om de gebruikte smarty personalisatie te
 testen. Je dient wel een standaardbestemming in te stellen. Voor smarty

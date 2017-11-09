@@ -1,4 +1,5 @@
 # Werken met de eenvoudige script editor
+
 Voor het maken van eenvoudige condities kun je gebruik maken van de
 eenvoudige script editor. Voor de meeste gebruikers biedt deze tool
 voldoende mogelijkheden.

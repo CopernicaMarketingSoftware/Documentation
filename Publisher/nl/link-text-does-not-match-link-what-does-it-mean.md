@@ -1,4 +1,5 @@
 # Spam score: LINK_TEXT_DOES_NOT_MATCH_LINK
+
 Deze waarschuwing wordt regelmatig weergegeven bij het bekijken van de
 spamscore van een document en levert bij veel gebruikers vragen op.
 Temeer omdat er twee strafpunten aan verbonden zijn. Gelukkig is de

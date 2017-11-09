@@ -1,4 +1,5 @@
 # Informatie uit een URL gebruiken voor personalisatie
+
 Het is mogelijk om de query string uit een URL te gebruiken in smarty
 personalisatie. Hiervoor gebruik je de {\$smarty.get.\<query name\>}.
 
