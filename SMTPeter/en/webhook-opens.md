@@ -23,8 +23,8 @@ With each POST call the following variables are passed to your script:
 | url       | The original image url (the url <i>before</i> it was rewritten)    |
 | useragent | Optional user agent string (extracted from http request header)    |
 | referer   | Optional referer (extracted from http request header)              |
-                                                                                 |
-The "ID" and "recipient" variables allow you to link the open to the             |
+
+The "ID" and "recipient" variables allow you to link the open to the 
 originally sent email message.
 
 ## More information
