@@ -22,7 +22,7 @@
     * [Opvragen van events](rest-events)
     * [Opvragen van logfiles](rest-logfiles)
     * [Templates beheren](rest-templates)
-* [WebHooks loops](webhooks)
+* [WebHooks](webhooks)
     * [WebHooks aanmaken](webhook-setup)
     * [WebHooks voor bounces](webhook-bounces)
     * [WebHooks voor failures](webhook-failures)
