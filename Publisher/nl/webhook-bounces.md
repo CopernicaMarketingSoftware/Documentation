@@ -1,7 +1,7 @@
 # WebHooks: bounces
 
 Normaal gesproken past Copernica het envelope-adres van mails aan,
-zodat alle *bounces* en andere berichten naar de Marketing Suite 
+zodat alle [*bounces*](./bounces) en andere berichten naar de Marketing Suite 
 teruggestuurd worden. Je kan een webhook voor bounces instellen 
 om van deze bounces een notificatie te ontvangen. Als je alleen maar 
 geïnteresseerd bent in verzendfouten kan je ook de 
@@ -22,7 +22,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele  | Omschrijving                                                       |  
 |------------|--------------------------------------------------------------------|
-| id         | originele bericht ID voor de bounce                                 |
+| id         | originele bericht ID voor de bounce                                |
 | recipient  | email adres waarnaar de originele mail werd verstuurd              |
 | mailfrom   | "MAIL FROM" adres dat is gebruikt voor het afleveren van de bounce |
 | rcptto     | "RCPT TO" adres dat is gebruikt voor het afleveren van de bounce   |

@@ -31,13 +31,14 @@ Processing an email and delivering it is done in five steps.
     the email is sent back to us, usually with an error code. You can 
     read more information about these error codes [here](http://www.emailaddressmanager.com/tips/codes.html).
 
-Sometimes an error between step 1 through 3 is classified as a hardbounce 
-and everything after as a hardbounce. Other times 1 through 4 is classified 
+Sometimes an error between step 1 through 3 is classified as a hard bounce 
+and everything after as a soft bounce. Other times 1 through 4 is classified 
 as a hardbounce. Other times the steps are ignored and the error code is 
 used to determine whether a soft- or a hardbounce occurred.
 
 You can find the errors occurring from your mailings in the **Error** tab. 
-The error code is also specified here if it exists.
+The error code is also specified here if it exists. You can also have them 
+delivered to a script on your own server with [WebHooks](./webhooks).
 
 ## Solving errors
 
