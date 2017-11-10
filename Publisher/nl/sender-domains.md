@@ -52,7 +52,7 @@ verwijzen naar die van Copernica. De doorgevoerde veranderingen worden dus autom
 bijgewerkt. Er zijn nogal wat records die je aan moet maken. Hieronder een overzicht:
 
 * Een A record om clicks en opens te registreren;
-* Een MX record om de bounces en out-of-office replies af te vangen;
+* Een MX record om de [bounces](./bounces) en out-of-office replies af te vangen;
 * Meerdere DKIM records om e-mails van een digitaal DKIM signature te voorzien;
 * Een SPF record om de IP adressen van Copernica toestemming te geven om te mailen;
 * Een DMARC record om de DMARC rapportages van ontvangers af te vangen.
