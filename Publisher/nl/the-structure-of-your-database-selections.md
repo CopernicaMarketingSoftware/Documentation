@@ -1,3 +1,5 @@
+# Standaard database selecties
+
 Een goede verzendlijst voor je email marketing draagt bij aan je
 deliverability en heeft een positief effect op je email marketing
 resultaten. Vandaar dat het belangrijk is dat je regelmatig de bezem
