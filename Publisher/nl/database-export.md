@@ -5,6 +5,9 @@ Je kunt een hele database in één keer exporteren, of in onderdelen (bijvoorbee
 per collectie). Bij een export wordt een bestand in een formaat naar keuze 
 gegenereert, dat je kunt downloaden of laten e-mailen.
 
+Als je graag in real-time de clicks, opens e.d. van profielen wilt ontvangen 
+kun je ook een [WebHook](./webhooks) instellen.
+
 ## Extra opmerkingen 
 
 * De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden 

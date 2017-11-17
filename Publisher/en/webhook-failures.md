@@ -1,7 +1,7 @@
-# Feedback loops: failures
+# WebHooks: failures
 
 If you want to receive notifications about failed deliveries,
-you can set up a failures feedback loop. You will receive notifications
+you can set up a failures webhook. You will receive notifications
 for both synchronous failures (failures during the SMTP handshake)
 as well as asynchronous failures (messages that were initially accepted,
 but for which we received a failure report later on). The failures are 
@@ -11,10 +11,10 @@ reported to your server with a HTTP(S) POST call.
 
 The SMTP protocol allows receiving servers to either accept or reject a 
 message. When a message is rejected this is called a failure and Copernica 
-sends you a notification if a feedback loop has been set up. However, it 
+sends you a notification if a webhook has been set up. However, it 
 is possible that an email is accepted by the server, but could eventually 
 not be delivered. These are called asynchronous errors, while the first 
-type are called synchronous errors. Both are reported by the feedback loop.
+type are called synchronous errors. Both are reported by the webhook.
 
 Mail servers often use the official Delivery Status Notification (DNS) 
 standard for sending back bounce messages, which allows Copernica to 
@@ -22,7 +22,7 @@ automatically recognize and log them. However, there are exceptions
 that use their own format. Copernica tries to recognize as many as possible 
 of these unofficial formats, but might not recognize every asynchronous 
 bounce written in a different format. If you want to receive all bounces 
-you can set up a [feedback loop for bounces](feedback-bounces).
+you can set up a [webhook for bounces](webhook-bounces).
 
 ## Variables
 
@@ -48,4 +48,4 @@ the data in your system.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

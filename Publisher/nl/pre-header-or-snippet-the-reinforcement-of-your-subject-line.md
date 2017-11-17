@@ -1,4 +1,5 @@
 # Preheader of snippet: de versterking van je onderwerpregel
+
 Zorg jij ervoor dat alle elementen van je e-mail goed zijn ingesteld
 voor je op die verzendknop drukt zoals je afzendadres, je
 authenticatiegegevens (SPF, SenderID, DKIM) of je onderwerpregel?

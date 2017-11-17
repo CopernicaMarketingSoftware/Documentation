@@ -1,4 +1,5 @@
 # De image tag
+
 Een afbeelding tag is de code waarmee je in een HTML template een
 afbeeldingblok kan opnemen. Een afbeelding tag staat in de broncode van
 het template, en kan alleen daar worden toegevoegd.

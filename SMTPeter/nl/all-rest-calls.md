@@ -31,7 +31,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | www.smtpeter.com/v1/templates     | Opvragen van alle template identifiers                                  |
 | POST           | www.smtpeter.com/v1/dkimkey       | Voeg een nieuwe DKIM toe aan het 'sender domain'                        |
 | POST           | www.smtpeter.com/v1/domain        | Maak een nieuw domein aan of wijs een domein toe                        |
-| POST           | www.smtpeter.com/v1/feedbackloop  | Configureren van een feedback loop                                      |
+| POST           | www.smtpeter.com/v1/webhook       | Configureren van een webhook (feedbackloop is deprecated)               |
 | POST           | www.smtpeter.com/v1/send          | Versturen van data naar SMTP                                            |
 | POST           | www.smtpeter.com/v1/spf           | Het aanmaken van een spf record                                         |
 | POST           | www.smtpeter.com/v1/template      | Het aanmaken van een template                                           |

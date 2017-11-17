@@ -1,6 +1,6 @@
-# Feedback loops: (sub)profile updates
+# WebHooks: (sub)profile updates
 
-If you set up a profile update feedback loop, you are notified in real-time
+If you set up a profile update webhook, you are notified in real-time
 whenever a profile or subprofile is updated in one of your databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile at the time of the update.
@@ -23,7 +23,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 The "action" variable will always have the value 'update'; this helps discern
 these messages from messages that are sent when a profile is
-[created](feedback-creates) or [deleted](feedback-deletes).
+[created](webhook-creates) or [deleted](webhook-deletes).
 Additional information about the profile or subprofile is also sent. 
 For profiles this consists of the following variables:
 
@@ -96,6 +96,6 @@ An example for a subprofile looks like this:
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Creation feedback](./feedback-creates)
-* [Delete feedback](./feedback-deletes)
+* [WebHooks](./webhooks)
+* [Creation feedback](./webhook-creates)
+* [Delete feedback](./webhook-deletes)

@@ -1,27 +1,26 @@
-# Feedback loops: aanmaken van profielen
+# WebHooks: aanpassen van profielen
 
-Als je in real-time op de hoogte gebracht wil worden wanneer er een nieuw
-profiel of subprofiel in een van je database aangemaakt wordt,
-kun je hiervoor een feedback loop instellen.
-Voor elk nieuw profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
-server met daarin alle relevante informatie over het zojuist aangemaakte profiel.
+Als je in real-time op de hoogte gebracht wil worden wanneer een
+profiel of subprofiel in een van je database aangepast wordt,
+kun je hiervoor een webhook instellen.
+Voor elk aangepast profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
+server met daarin alle relevante informatie over het zojuist aangepaste profiel.
 
 ## Variabelen
 
 Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
 
-| Variabelen         | Omschrijving 
-|--------------------|-----------------------------------------------------------------------------------------|
-| profile/subprofile | unieke identifier van het (sub)profiel dat werd aangemaakt                              |
-| type               | welke actie werd uitgevoerd op het betreffende profiel ('create', 'update' or 'delete') |
-| parameters         | parameters voor het uitvoeren van de actie                                              |
-| timestamp          | tijd voor het uitvoeren van de actie (in YYYY-MM-DD HH:MM:SS format)                    |
+| Variables          | Description                                                            |
+|--------------------|------------------------------------------------------------------------|
+| profile/subprofile | unieke identifier van het profile/subprofiel dat werd aangepast        |
+| type               | type actie uitgevoerd op (sub)profiel ('create', 'update' or 'delete') |
+| parameters         | parameter voor uitvoeren actie                                         |
+| timestamp          | tijd van aanpassing (in YYYY-MM-DD HH:MM:SS format)                    |
 
-De variabele "action" heeft altijd de waarde 'create'; dit helpt je om deze
+De variabele "action" heeft altijd de waarde 'update'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangepast](feedback-updates) of [verwijderd](feedback-deletes) wordt.
-Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
-Voor profielen zijn dit de volgende variabelen:
+profiel [aangemaakt](webhook-creates) of [verwijderd](webhook-deletes) wordt.
+Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. Voor profielen zijn dit de volgende variabelen:
 
 | Variabelen  | Omschrijving                                                  |
 |-------------|---------------------------------------------------------------|
@@ -50,4 +49,4 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

@@ -1,4 +1,4 @@
-# Feedback loops: kliks
+# WebHooks: kliks
 
 Als je het click-tracking aan hebt staan herschrijft Copernica 
 alle hyperlinks in de emails die je verstuurt. Als iemand op zo'n 
@@ -8,7 +8,7 @@ worden naar de oorspronkelijke URL. Dit gebeurt automatisch en razendsnel
 en dus meestal zonder dat de ontvanger het doorheeft. Deze functionaliteit  
 maakt het mogelijk dat Copernica elke klik op een van je mails registreert.
 
-Als je een feedback loop voor kliks instelt, word je in real-time op de 
+Als je een webhook voor kliks instelt, word je in real-time op de 
 hoogte gebracht van deze kliks. Voor elke klik sturen we via HTTP of 
 HTTPS een POST bericht naar jouw server met daarin de relevante 
 informatie over de klik.
@@ -33,4 +33,4 @@ te koppelen aan de oorspronkelijke mail.
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

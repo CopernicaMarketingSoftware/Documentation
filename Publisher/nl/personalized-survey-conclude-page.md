@@ -1,4 +1,5 @@
 # Personaliseren bedanktpagina enquête
+
 De pagina die getoond wordt nadat iemand een enquête heeft ingevuld,
 noemen wij de bedanktpagina. Deze stel je in in via Enquête \>
 **Bedanktpagina aanpassen...** Je kan hier de beknopte of de uitgebreide

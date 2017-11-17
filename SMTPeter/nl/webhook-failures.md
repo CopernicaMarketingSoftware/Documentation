@@ -1,11 +1,10 @@
-# Feedback loops voor failures
+# WebHooks voor failures
 
 Het is mogelijk om live notificaties te ontvangen over *failed deliveries*.
 Je kunt dit doen door een *feedack loop* op te zetten voor deze vorm van
 meldingen. Je krijgt dan meldingen over fouten die ontstaan bij de
 *SMTP handshake* en meldingen over e-mails die vooraf werden goedgekeurd 
 en later alsnog een failure rapport ontvingen.
-
 
 ## Synchronous versus asynchronous
 
@@ -14,20 +13,20 @@ wijzen of te accepteren. SMTPeter maakt een *call*, naar de door jou
 aangegeven URL als een e-mail wordt afgewezen. Het kan ook voorkomen dat
 een e-mail wordt geaccepteerd om vervolgens later alsnog afgewezen te worden.
 Deze *asynchronous errors* worden ook door SMTPeter opgepikt en vervolgens
-meegegeven aan de feedback loop.
+meegegeven aan de webhook.
 
 De meeste *e-mail servers* gebruiken vaak de officiele *Delivery Status Notification*
 om *bounce* meldingen te versturen. Dit formaat stelt SMTPeter in staat om automatisch
-bounces te herkennen, te loggen en te rapporteren via feedbackloops. Echter,
+bounces te herkennen, te loggen en te rapporteren via webhooks. Echter,
 deze officiele standaard wordt niet door iedere e-mail server gebruikt en
 sommige grote spelers sturen zelfs eigen bedachte notificaties. We doen uiteraard
-ons uiterste best om alle type bounces te registreren en aan de feedback loop
+ons uiterste best om alle type bounces te registreren en aan de webhook 
 mee te geven, maar dit lukt niet altijd vanwege de vele verschillende formaten
 waarin bounces worden gemeld. 
 
 Je kunt alsnog alle bounces ontvangen als je dat wilt. Zelfs degene die we niet
-hebben getraceerd met de failures feedback loop. 
-In dat geval kun je additioneel een [feedback loop opzetten voor bounces](feedback-bounces "Feedback loops voor bounces").
+hebben getraceerd met de failures webhook. 
+In dat geval kun je additioneel een [webhook opzetten voor bounces](webhook-bounces "WebHooks voor bounces").
 
 
 ## Formaat
@@ -65,5 +64,5 @@ calls:
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
-* [Feedback loops instellen](./feedback-setup)
+* [WebHooks](./webhooks)
+* [WebHooks instellen](./webhook-setup)

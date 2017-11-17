@@ -1,4 +1,5 @@
 # in_selection en in_miniselection
+
 Het is mogelijk om selecties en/of miniselecties te gebruiken binnen
 Smarty personalisatie. Hiervoor zijn door Copernica twee speciale tags
 het leven in geroepen: **in\_selection** en **in\_miniselection**.

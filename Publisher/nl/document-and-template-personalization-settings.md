@@ -1,4 +1,5 @@
 # Personalisatie-instellingen van het template of document
+
 Bij ieder document en / of template kan je de
 personalisatie-instellingen wijzigen. Met de personalisatie-instellingen
 bepaal je ondermeer in welke taal [Smarty
