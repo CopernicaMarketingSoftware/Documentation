@@ -104,6 +104,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [storage-threads](message-store-options)                                 | Storage threads
 | [storage-ttl](message-store-options)                                     | Time to live: Storage reload interval
 | [user](other-configuration#user)                                         | Change user for MTA
+| [www-cache-control](mgmt-setup#advanced-caching-options)                 | Enable or disable browser cache
 | [www-certificate](mgmt-setup#setting-up-a-secure-management-console)     | Certificate file for secure connection to management console
 | [www-ciphers](mgmt-setup#setting-up-a-secure-management-console)         | Supported ciphers for secure management console
 | [www-connections](mgmt-setup#activation)                                 | Limit for simultaneous HTTP connections to built-in HTTP server
