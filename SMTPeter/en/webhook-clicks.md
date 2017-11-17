@@ -1,4 +1,4 @@
-# Feedback loops for clicks
+# WebHooks for clicks
 
 If you enable click-tracking, SMTPeter rewrites all hyperlinks in your emails.
 If someone clicks on one of these rewritten links that user first goes to
@@ -7,7 +7,7 @@ redirected to the original URL. This all happens automatically and very fast
 and is most of the time unnoticeable for your receiver. This technology
 allows SMTPeter to track all clicks on your mails.
 
-If you set up a click feedback loop, SMTPeter also notifies you in realtime
+If you set up a click webhook, SMTPeter also notifies you in realtime
 about these clicks. For each click we send a HTTP POST call (HTTPS is possible 
 too) to your server with the relevant information about the click.
 
@@ -32,5 +32,5 @@ originally sent email message.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Set up a feedback loop](./feedback-setup)
+* [WebHooks](./webhooks)
+* [Set up a webhook](./webhook-setup)

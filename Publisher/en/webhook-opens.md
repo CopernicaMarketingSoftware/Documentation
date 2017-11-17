@@ -1,11 +1,11 @@
-# Feedback loops: opens
+# WebHooks: opens
 
 Copernica can rewrite image links in emails to track opens. If this option is enabled 
 the image will be downloaded from our server instead of yours, allowing 
 Copernica to track the opens of the image and therefore the email. This way we can notify 
-you through our [statistics](./statistics) or a feedback loop.
+you through our [statistics](./statistics) or a WebHook.
 
-If you set up a feedback loop for opens, the Marketing Suite notifies you in realtime
+If you set up a WebHook for opens, the Marketing Suite notifies you in realtime
 about each registered image download. For each open that we monitor we send 
 a HTTP POST call (HTTPS is possible too) to your server with the relevant 
 information about the open. 
@@ -37,4 +37,4 @@ originally sent email message.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

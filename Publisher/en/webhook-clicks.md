@@ -1,11 +1,11 @@
-# Feedback loops: clicks
+# WebHooks: clicks
 
 Copernica advises you to enable click-tracking to rewrite all hyperlinks. 
 This allows Copernica to track every click on a link before redirecting 
 to the original URL. This is an automated process that happens so fast 
 it is usually unnoticeable for your receiver. 
 
-When a click feedback loop has been set up these click are also sent to 
+When a click webhook has been set up these click are also sent to 
 your server as HTTP(S) POST calls. The calls happen in real-time and 
 contain more information about the click to allow for easy linking the 
 click to your existing data. 
@@ -35,4 +35,4 @@ originally sent email message.
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

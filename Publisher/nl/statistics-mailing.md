@@ -24,5 +24,10 @@ voor verwerking kun je onder de scheduled mails kijken.
 
 ## Meer informatie
 
+Er zijn nog veel meer statistieken om te bekijken! Je kunt je statistieken 
+zelfs in real-time ontvangen met WebHooks. Voor meer informatie kun je 
+de onderstaande artikelen eens doorlezen.
+
 * [Statistieken](./statistics)
 * [Kerncijfers](./statistics-key-figures)
+* [WebHooks](./webhooks)

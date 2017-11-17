@@ -1,36 +1,34 @@
-# Feedback loops for failures
+# WebHooks for failures
 
 If you want to receive realtime notifications about failed deliveries,
-you can set up a failures feedback loop. You will receive notifications
+you can set up a failures webhook. You will receive notifications
 for both synchronous failures (failures during the SMTP handshake)
 as well as asynchronous failures (messages that were initially accepted,
 but for which we received a failure report later on).
-
 
 ## Synchronous vs. asynchronous
 
 The SMTP protocol allows receiving servers to either accept or reject a 
 message. When a message is rejected, SMTPeter simply makes a call to the 
-URL that you set up for the feedback loop. However, when a message is 
+URL that you set up for the webhook. However, when a message is 
 accepted, it still is possible that the receiving server sends back a 
 bounce email later on to report that the delivery failed after all. These 
 asynchronous errors are also picked up by SMTPeter, and when they are 
-recognized, are also passed to the failures feedback loop.
+recognized, are also passed to the failures webhook.
 
 Mail servers often use the official Delivery Status Notification standard 
 for sending back bounce messages. This standardized format allows SMTPeter
 to automatically recognize bounces, log them and report them via the
-feedback loops. However, this standard has not been adopted by all
+webhooks. However, this standard has not been adopted by all
 mail servers, and even a couple of big email senders still send back 
 notifications in a format that they invented themselves. Although we do
 our best to recognize all types of bounce messages and pass them on to
-the feedback loops, it is not always possible to process such non-standardized
-asynchronous bounces, and to pass them to feedback loops.
+the webhooks, it is not always possible to process such non-standardized
+asynchronous bounces, and to pass them to webhooks.
 
 If you want to receive all failures, even the ones that we did not recognize,
-you can set up a [feedback loop for bounces](feedback-bounces) besides
-the failure feedback loop.
-
+you can set up a [webhook for bounces](webhook-bounces) besides
+the failure webhook.
 
 ## Format
 
@@ -49,5 +47,5 @@ calls:
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Set up a feedback loop](./feedback-setup)
+* [WebHooks](./webhooks)
+* [Set up a webhook](./webhook-setup)

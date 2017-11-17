@@ -1,4 +1,5 @@
 # Linkfile
+
 Je kan vanuit een mail- of webdocument eenvoudig een link maken naar een
 PDF document dat je hebt geupload in het onderdeel *PDF*. Hiervoor
 gebruik je een speciale tag: **{linkpdf}**. The tag heeft twee

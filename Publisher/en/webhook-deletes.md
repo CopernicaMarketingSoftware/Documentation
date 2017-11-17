@@ -1,6 +1,6 @@
-# Feedback loops: (sub)profile deletions
+# WebHooks: (sub)profile deletions
 
-If you set up a profile deletion feedback loop, you are notified in real-time
+If you set up a profile deletion webhook, you are notified in real-time
 whenever a profile or subprofile is deleted from your account's databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile that was removed.
@@ -22,7 +22,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 The "action" variable will always have the value 'delete'; this helps discern
 these messages from messages that are sent when a profile is
-[created](feedback-creates) or [updated](feedback-updates).
+[created](webhook-creates) or [updated](webhook-updates).
 Additional information about the profile or subprofile is also sent 
 for profiles this consists of the following variables:
 
@@ -61,6 +61,6 @@ An example for a subprofile looks like this:
 
 ## More information
 
-* [Feedback loops](./feedback-loops)
-* [Creation feedback](./feedback-creates)
-* [Update feedback](./feedback-updates)
+* [WebHooks](./webhooks)
+* [Creation feedback](./webhook-creates)
+* [Update feedback](./webhook-updates)

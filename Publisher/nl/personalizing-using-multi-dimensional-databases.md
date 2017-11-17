@@ -1,4 +1,5 @@
 # Personaliseren met behulp van multidimensionale databases
+
 Als je extra gegevens aan een
 [profiel](./introduction-to-databases.md "Personaliseren met behulp van multidimensionale databases")
 wilt koppelen, welke aankopen iemand heeft gedaan in je webshop

@@ -1,27 +1,26 @@
-# Feedback loops voor bounces
+# WebHooks voor bounces
 
 SMTPeter bewerkt normaal gesproken het *envelope* adres van alle e-mails
 die middels SMTPeter worden verstuurd. Dit wordt gedaan om *bounces* te
 traceren en ook om andere *events* te kunnen onderscheppen.
 Naast dat SMTPeter alles automatisch ontvangt, kan je er voor kiezen om
-zelf ook meldingen over *feedback loops* te ontvangen.
+zelf ook meldingen over *WebHooks* te ontvangen.
 
 
 ## Type meldingen
 
-De feedback loop voor bounces traceert letterlijk _alle_ meldingen
+De webhook voor bounces traceert letterlijk _alle_ meldingen
 die terug worden gestuurd naar het envelope adres. Dit betekent ook 
 dat reguliere delivery status notifications, *out-of-office replies* 
 en foutmeldingen worden teruggestuurd. Al deze type meldingen kun je 
-ontvangen door de feedback loop voor bounces op te zetten.
-
+ontvangen door de [webhook voor bounces](./webhooks) op te zetten.
 
 ## Bounces versus Delivery Status Notifications
 
 SMTPeter verstuurt e-mails door middel van het SMTP protocol. Dit
 protocol staat *remote servers* toe om een bericht te accepteren of
 te weigeren. Geweigerde e-mails worden bijgeschreven op de *failure logfile*
-en respectievelijk ook toegevoegd aan de *failure feedback loop* (zie diagram 1).
+en respectievelijk ook toegevoegd aan de *failure webhook* (zie diagram 1).
 
 **Diagram 1**
 <img style="float: center; max-width: 60%; max-height: 60%; margin-bottom: 20px;" src="Images/smtpeter-diagram-send-email.svg">
@@ -31,7 +30,7 @@ maar dat de server achteraf toch nog een bounce e-mail verstuurd
 waarin mede wordt gedeeld dat het bericht toch is geweigerd. 
 Deze vorm van bounces duiden op een Delivery Status Notification
 en hebben een speciaal formaat. SMTPeter herkent ook deze type van bounces
-en schrijft ze naar de *log files*. Ook de [failure feedback loop](feedback-failures)
+en schrijft ze naar de *log files*. Ook de [failure webhook](webhook-failures)
 wordt aangeroepen (zie diagram 2).
 
 **Diagram 2**
@@ -46,12 +45,12 @@ respecteren. SMTPeter pakt deze meldingen ook gewoon op.
 
 SMTPeter herkent dat deze meldingen niet naar de reguliere error log file
 moeten worden geschreven en stuurt ze dus naar de bounce log file en 
-consequent ook naar de bounce feedback loops.
+consequent ook naar de bounce webhooks.
 
 
 ## Formaat
 
-De bounce feedback loop wordt door middel van het HTTP POST mechanisme verstuurd. 
+De bounce webhook wordt door middel van het HTTP POST mechanisme verstuurd. 
 De volgende variabelen worden dan ingevoerd:
 
 | Variabelen| Omschrijving                                                                      |
@@ -68,5 +67,5 @@ te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom",
 
 ## Meer informatie
 
-* [Feedback loops](./feedback-loops)
-* [Feedback loops instellen](./feedback-setup)
+* [WebHooks](./webhooks)
+* [WebHookss instellen](./webhook-setup)

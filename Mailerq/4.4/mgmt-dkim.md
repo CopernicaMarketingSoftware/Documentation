@@ -56,7 +56,7 @@ Although the ARC standard is still in development, MailerQ can already sign mess
 Behind the scenes the ARC specification is rather complicated, but borrows a lot of ideas from DKIM.
 It is therefore enough to simply set the "Signature type" of a DKIM key to "ARC" (or "Both" if you also want to add a DKIM signature)
 and MailerQ will decide when and how to add an ARC signature to your message.
-If you want to test the ARC algorithm first, you can visit our [ARC test page](http://arc.copernica.com).
+If you want to test the ARC algorithm first, you can visit our [ARC test page](http://arc.mailerq.com).
 
 ## Failure reporting
 

@@ -1,4 +1,5 @@
 # Personalisatie uit een profiel of uit een subprofiel
+
 Personalisatie die je toevoegt aan publicaties moet toegespitst zijn op
 de bestemming van jouw publicatie. Oftewel, je kan alleen variabelen
 gebruiken uit de database en/of collectie waaraan je de uiting richt.

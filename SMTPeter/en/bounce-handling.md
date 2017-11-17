@@ -220,4 +220,4 @@ to you, even the Delivery Status Notifications.
 
 * [REST API](./rest-api)
 * [SMTP API](./smtp-api)
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)

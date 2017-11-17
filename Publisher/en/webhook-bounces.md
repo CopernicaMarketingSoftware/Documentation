@@ -1,20 +1,20 @@
-# Feedback loops: bounces
+# WebHooks: bounces
 
 The Marketing Suite normally modifies the envelope address of all mails that flow
 through it to track bounces and other messages that are sent back. All
 bounce messages are therefore sent back to the Marketing Suite. You can set 
-up a "bounce" feedback loop to be notified about these bounces too with an 
+up a "bounce" webhook to be notified about these bounces too with an 
 HTTP(S) POST call.
-If you are only interested in failed deliveries then you can also use [feedback loops for failures](feedback-failures).
+If you are only interested in failed deliveries then you can also use [webhooks for failures](webhook-failures).
 
 ## Type of messages
 
-The bounce feedback loop is used for _all_ messages that are 
+The bounce webhook is used for _all_ messages that are 
 sent back to the envelope address. This includes the regular
 delivery status notifications and error messages from servers that do 
 not respect the official format for bounce messages. 
 All these type of messages are sent back to Copernica and you can opt 
-to have them delivered to you in real-time with a feedback loop.
+to have them delivered to you in real-time with a webhook.
 
 ## Variables
 
@@ -40,5 +40,5 @@ of the new data with your existing data. The "mailfrom", "rcptto" and
 
 ## More information
  
-* [Feedback loops](./feedback-loops)
+* [WebHooks](./webhooks)
 * [Types of bounces](./bounces)
