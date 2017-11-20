@@ -1,10 +1,9 @@
 # Message store options
 
-To reduce the load on RabbitMQ, MailerQ can be set
-up to use an external message store. If you do this, only the email meta
-data (like the recipient, the envelope address, et cetera) has to be
-stored in the JSON object that is published to RabbitMQ, while the full
-MIME data can be stored in the message store.
+To reduce the load on RabbitMQ, MailerQ can use an external message store. 
+In that case only the email meta data (like the recipient, the envelope 
+address, et cetera) has to be stored in the JSON object that is published 
+to RabbitMQ, while the full MIME data can be stored in the message store.
 
 ```
 storage-address:        mongodb://hostname/database/collection
@@ -75,12 +74,20 @@ storage-address:        mongodb://hostname/database/collection?readAttempts=3
 The default number of attempts is 1. If you want to repeat failed lookups
 a couple of times, you can pass in a higher value.
 
+To prevent that many small read operations are fired at MongoDB, MailerQ 
+groups operations into "multi-get" operations. The max number of fetch
+operations that can be grouped together is configurable:
+
+````
+storage-address:        mongodb://hostname/database/collection?maxQuerySize=10
+````
+
 MongoDB has a limitation of around 16 MB per document (there is some overhead
-due to the usage of their internal BSON representation). We work around this
-by splitting up large messages into smaller parts. Assume a message has a
-size of 20 MB and should be stored with ID "abc" (without the quotes). This
-is impossible because the message would be too big for MongoDB. We therefore
-split up the message, and store it using keys:
+due to the usage of their internal BSON representation). If MailerQ has to
+store a bigger document, we do this by splitting up the message into smaller 
+parts. Assume a message has a size of 20 MB and should be stored with ID "abc"
+(without the quotes). This would be impossible because the message is too big 
+for MongoDB. However, by splitting up the message, using keys:
 
 * "abc\00\02"
 * "abc\01\02"
@@ -167,6 +174,22 @@ Note that the time-to-live is added _to the mail max delivery time_. If you try
 to send out an email using MailerQ, and that email has to be delivered within
 24 hours, and your "storage-ttl" is set to 3600 seconds (one hour), the
 mime data will be stored in NoSQL for at most 25 hours.
+
+
+## Timeout
+
+MailerQ uses a timeout for storage operations. If the storage server does not
+respond within this time, the message is published back to RabbitMQ and will
+be retried later.
+
+````
+storage-timeout:        20
+storage-reschedule:     120
+````
+
+With the above settings you tell MailerQ to timeout fetch-operation after 20 
+seconds, and publish the mail back to RabbitMQ for 120 seconds.
+
 
 ## Compression
 
