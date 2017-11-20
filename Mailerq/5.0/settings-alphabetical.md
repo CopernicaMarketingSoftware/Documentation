@@ -101,7 +101,9 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [spool-remove](spool-directory#config-file-options)                      | Toggle removal of files from spool directory
 | [storage-address](message-store-options)                                 | Address for external message storage
 | [storage-policy](message-store-options)                                  | Message store policy
+| [storage-reschedule](message-store-options)                              | Number of seconds to wait before a mail is retried
 | [storage-threads](message-store-options)                                 | Storage threads
+| [storage-timeout](message-store-options)                                 | Timeout for fetch operations
 | [storage-ttl](message-store-options)                                     | Time to live: Storage reload interval
 | [user](other-configuration#user)                                         | Change user for MTA
 | [www-cache-control](mgmt-setup#advanced-caching-options)                 | Enable or disable browser cache
