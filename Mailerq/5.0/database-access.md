@@ -132,6 +132,20 @@ This option tells MailerQ not to check and repair tables, but to drop
 them all and create new ones.
 
 
+## Fixing values in the database
+
+When MailerQ starts, it does a very rough validation of the data in the 
+database. Possible invalid or strange settings are fixed. It especially 
+checks if any of the timeouts are set to zero, because this almost always
+is an indication of a wrong setting (even the fastest receivers cannot
+respond withing 0 seconds).
+
+If you do not want to run this validation algorithm on startup, you can
+disable it in the config file:
+
+````
+database-validate:      false
+````
 
 
 ## Multiple MailerQ instances
