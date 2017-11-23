@@ -57,24 +57,7 @@ bijgewerkt. Er zijn nogal wat records die je aan moet maken. Hieronder een overz
 * Een SPF record om de IP adressen van Copernica toestemming te geven om te mailen;
 * Een DMARC record om de DMARC rapportages van ontvangers af te vangen.
 
-
-```text
-    Geadviseerde DNS records die                DNS records op de server
-    aan het domein moeten worden                van Copernica, met instellingen
-    toegevoegd:                                 van het sender-domain:
-
-    +-------------------+                       +-------------------+
-    |   SPF alias       |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   DKIM alias      |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   DMARC alias     |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   Tracking alias  |           --->        |   A record(s)     |
-    +-------------------+                       +-------------------+
-    |   Bounce alias    |           --->        |   MX record(s)    |
-    +-------------------+                       +-------------------+
-```
+![DNS records](../images/sender-domains.png)
 
 Klaar met het instellen van je sender domain? Dan kun je nu e-mails gaan versturen!
 

@@ -57,23 +57,7 @@ following records are hosted by us:
 * A SPF record so that our IP addresses can be used to send out your mail
 * A DMARC record to collect DMARC reports
 
-```text
-    Advised DNS records to add to               DNS records on the server
-    the domain:                                 of Copernica, with settings 
-                                                of the sender domain:
-
-    +-------------------+                       +-------------------+
-    |   SPF alias       |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   DKIM alias      |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   DMARC alias     |           --->        |   TXT record      |
-    +-------------------+                       +-------------------+
-    |   Tracking alias  |           --->        |   A record(s)     |
-    +-------------------+                       +-------------------+
-    |   Bounce alias    |           --->        |   MX record(s)    |
-    +-------------------+                       +-------------------+
-```
+![DNS records](../images/sender-domains.png)
 
 The A, MX and DKIM records are normally easy to set up. The DNS standard allows
 to create as many of these records as one need, and they cannot conflict with 
