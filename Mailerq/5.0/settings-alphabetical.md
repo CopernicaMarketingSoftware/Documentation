@@ -6,8 +6,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 
 | Setting                                                                  | Description
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [cache-dimensions](responsiveemail#config-file-variables)                | Max no. of images in cache (Used in ResponsiveEmail)
-| [cache-size](responsiveemail#config-file-variables)                      | Max size of image cache (Used in ResponsiveEmail)
+| [download-blacklist](responsiveemail#firewall-bypass)                    | IP addresses from which no resources can be downloaded
+| [download-dimensions](responsiveemail#config-file-variables)             | Max no. of images sizes in cache (Used in ResponsiveEmail)
+| [download-size](responsiveemail#config-file-variables)                   | Max size of downloaded resources in memory (Used in ResponsiveEmail)
+| [download-whitelist](responsiveemail#firewall-bypass)                    | Exceptions to the download-blacklist
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
 | [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
 | [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
