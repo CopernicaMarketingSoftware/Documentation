@@ -38,10 +38,6 @@ use specific features from these libs:
         <td>Used for parsing and modifying XML/HTML code</td>
     </tr>
     <tr>
-        <td>libcurl</td>
-        <td>Used to download resources from the internet</td>
-    </tr>
-    <tr>
         <td>libimagemagick</td>
         <td>Used to find out the dimensions of images</td>
     <tr>
