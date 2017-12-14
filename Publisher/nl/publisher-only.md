@@ -11,6 +11,6 @@ functies zijn alleen beschikbaar in Publisher op het moment:
 * [Enquêtes](./surveys)
 * [Webformulieren](./web-forms)
 * [Websites](./websites)
-* [PDF](./pdf-documents)
+* [PDF](./pdf-document)
 * [CSS en XSLT](./css-and-xslt)
 * [RSS en ATOM feeds](./rss-and-atom-feeds)
