@@ -11,5 +11,6 @@ for Publisher at the moment:
 * [Surveys](./surveys)
 * [Websites](./websites)
 * [Webforms](./webforms)
+* [PDF](./pdf-documents)
 * [CSS and XSLT](./css-and-xslt)
 * [RSS and ATOM feeds](./rss-and-atom-feeds)

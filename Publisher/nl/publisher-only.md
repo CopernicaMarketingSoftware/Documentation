@@ -10,5 +10,7 @@ functies zijn alleen beschikbaar in Publisher op het moment:
 * [Mobiele mailings](./mobile-mailing)
 * [Enquêtes](./surveys)
 * [Webformulieren](./web-forms)
+* [Websites](./websites)
+* [PDF](./pdf-documents)
 * [CSS en XSLT](./css-and-xslt)
 * [RSS en ATOM feeds](./rss-and-atom-feeds)
