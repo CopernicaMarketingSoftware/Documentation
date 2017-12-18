@@ -60,6 +60,10 @@ overigens JSON. De andere formaten zijn:
 Je kunt ook extra personalisatie variabelen toevoegen in de GET method, zodat je
 template ook daadwerkelijk wordt gepersonaliseerd. 
 
+Als je altijd unieke namen aan jouw templates geeft, kun je in plaats van
+de template ID ook de naam van de template opgeven om een template op te
+vragen.
+
 ## Creëren van templates
 
 Naast het creëren van templates met behulp van de template editor, kun je ook
@@ -94,6 +98,29 @@ Content-Type: application/json
 
 { "id" : 2 }
 ```
+
+## Updaten van templates
+
+Je kunt ook een bestaande template updaten. Dit doe je door in plaats van
+een *POST request* een *PUT request* te versturen. Je voegt aan de JSON
+de id toe van de template die je wilt updaten. 
+
+```json
+PUT /v1/template/html?access_token=yourtoken
+Host: www.smtpeter.com
+Content-Type: application/json
+
+{ "id" : 2 }
+
+HTTP/1.1 201 Created
+Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Content-Type: application/json
+
+{ "id" : 2 }
+```
+
+Als je altijd unieke namen aan jouw templates geeft, kun je een template ook
+updaten door de naam van de template mee te geven.
 
 ## Meer informatie
 
