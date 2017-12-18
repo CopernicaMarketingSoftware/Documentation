@@ -61,6 +61,11 @@ other formats SMTPeter supports are:
 It's also possible to add extra personalization variables in the GET method, because
 then your templates will actually be personalized. 
 
+If you always give unique names to your templates, it is also possible to
+retrieve your template by the template's name by instead of passing the
+template's id, the template's name.
+
+
 ## Creating templates
 
 You can build HTML and JSON templates with one of our template editors 
@@ -92,6 +97,29 @@ Content-Type: application/json
 
 { "id" : 2 }
 ```
+
+## Updating existing templates
+
+You can also update an existing template. Instead of making a POST request,
+you make a PUT request. You add the template ID to your JSON from the
+template you want to update.
+
+```json
+PUT /v1/template/html?access_token=yourtoken
+Host: www.smtpeter.com
+Content-Type: application/json
+
+{ "id" : 2 }
+
+HTTP/1.1 201 Created
+Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Content-Type: application/json
+
+{ "id" : 2 }
+```
+
+If you always give unique names to your templates, you can also update a
+template by providing its name instead of the id.
 
 ## More information
 
