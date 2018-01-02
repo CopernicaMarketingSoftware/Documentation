@@ -1,4 +1,4 @@
-# WebHooks: opens
+# Webhooks: opens
 
 Copernica kan links naar afbeeldingen in emails herschrijven om 
 opens te registreren. Hierdoor wordt de afbeelding via onze server gedownload, 
@@ -28,4 +28,4 @@ De variabelen "id", "recipient" en "tags" stellen je in staat om de open te kopp
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

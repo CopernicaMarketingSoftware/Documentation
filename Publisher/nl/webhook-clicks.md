@@ -1,4 +1,4 @@
-# WebHooks: kliks
+# Webhooks: kliks
 
 Als je het click-tracking aan hebt staan herschrijft Copernica 
 alle hyperlinks in de emails die je verstuurt. Als iemand op zo'n 
@@ -33,4 +33,4 @@ te koppelen aan de oorspronkelijke mail.
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

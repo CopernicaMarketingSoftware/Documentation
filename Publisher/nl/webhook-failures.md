@@ -1,4 +1,4 @@
-# WebHooks: fouten
+# Webhooks: fouten
 
 Als je notificaties wil ontvangen over verzendfouten,
 kan je een webhook voor fouten instellen.
@@ -50,4 +50,4 @@ De variabelen "id", "recipient" en "tags" stellen je in staat om de foutmelding 
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

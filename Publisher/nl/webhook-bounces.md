@@ -1,4 +1,4 @@
-# WebHooks: bounces
+# Webhooks: bounces
 
 Normaal gesproken past Copernica het envelope-adres van mails aan,
 zodat alle [*bounces*](./bounces) en andere berichten naar de Marketing Suite 
@@ -35,4 +35,4 @@ De variabelen "mailfrom", "rcptto" en "data" bevatten het bericht dat bij de Mar
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
