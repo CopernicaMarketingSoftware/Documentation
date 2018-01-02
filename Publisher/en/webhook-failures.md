@@ -1,4 +1,4 @@
-# WebHooks: failures
+# Webhooks: failures
 
 If you want to receive notifications about failed deliveries,
 you can set up a failures webhook. You will receive notifications
@@ -48,4 +48,4 @@ the data in your system.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
