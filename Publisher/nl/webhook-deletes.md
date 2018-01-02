@@ -1,4 +1,4 @@
-# WebHooks: verwijderen van profielen
+# Webhooks: verwijderen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel uit een van je database verwijderd wordt,
@@ -36,4 +36,4 @@ Voor subprofielen zijn dit de volgende variabelen:
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

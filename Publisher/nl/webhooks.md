@@ -1,4 +1,4 @@
-# WebHooks
+# Webhooks
 
 In het menu van de Marketing Suite zie je een kopje met `WEBHOOKS` staan.
 Hier kun je instellen dat Copernica je real-time notificaties via HTTP POST
@@ -7,7 +7,7 @@ stuurt als er een events zoals kliks, opens of errors plaatsvinden.
 WAARSCHUWING: Sommige webhooks kunnen grote aantallen calls veroorzaken. 
 Zorg er dus voor dat je server de lading aankan voordat je een webhook instelt.
 
-## WebHooks met Marketing Suite
+## Webhooks met Marketing Suite
 
 Onder `WEBHOOKS` kun je al je loops instellen. Je kunt ze 
 bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie wilt bijwerken

@@ -1,4 +1,4 @@
-# WebHooks: aanmaken van profielen
+# Webhooks: aanmaken van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer er een nieuw
 profiel of subprofiel in een van je database aangemaakt wordt,
@@ -50,4 +50,4 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

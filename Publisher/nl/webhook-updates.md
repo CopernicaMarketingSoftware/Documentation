@@ -1,4 +1,4 @@
-# WebHooks: aanpassen van profielen
+# Webhooks: aanpassen van profielen
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel in een van je database aangepast wordt,
@@ -49,4 +49,4 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
