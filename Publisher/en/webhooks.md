@@ -1,4 +1,4 @@
-# WebHooks
+# Webhooks
 
 In the Marketing Suite menu you find a tab called `WEBHOOKS`, previously 
 called Feedback Loops. Webhooks are processes that notify their 
@@ -10,7 +10,7 @@ WARNING: Some webhooks generate a large amount of calls. Please make
 sure your server is capable of handling the load before setting up a 
 WebHook.
 
-## WebHooks with Marketing Suite
+## Webhooks with Marketing Suite
 
 Webhooks can be used to sync data that passes through Copernica 
 directly into your own application. Webhooks require a script on 
@@ -24,10 +24,10 @@ HTTP headers of the incoming request and adds the e-mail address, profile
 data and linked tags to send to you. Based on this information it is 
 easy to add the information to the correct profile.
 
-## Setting up WebHooks
+## Setting up Webhooks
 
 Click on the tab called `WEBHOOKS` inside the Marketing Suite.
-In the WebHooks menu, you can fill in the address the HTTP POST 
+In the Webhooks menu, you can fill in the address the HTTP POST 
 call is sent to in the manage menu. It's pretty self explanatory: 
 select the events you're interested in and provide the location of 
 your script.

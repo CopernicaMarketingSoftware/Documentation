@@ -1,4 +1,4 @@
-# WebHooks: opens
+# Webhooks: opens
 
 Copernica can rewrite image links in emails to track opens. If this option is enabled 
 the image will be downloaded from our server instead of yours, allowing 
@@ -37,4 +37,4 @@ originally sent email message.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

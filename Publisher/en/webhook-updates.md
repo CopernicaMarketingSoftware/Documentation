@@ -1,4 +1,4 @@
-# WebHooks: (sub)profile updates
+# Webhooks: (sub)profile updates
 
 If you set up a profile update webhook, you are notified in real-time
 whenever a profile or subprofile is updated in one of your databases.
@@ -96,6 +96,6 @@ An example for a subprofile looks like this:
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Creation feedback](./webhook-creates)
 * [Delete feedback](./webhook-deletes)

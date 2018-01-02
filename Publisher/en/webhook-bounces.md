@@ -1,4 +1,4 @@
-# WebHooks: bounces
+# Webhooks: bounces
 
 The Marketing Suite normally modifies the envelope address of all mails that flow
 through it to track bounces and other messages that are sent back. All
@@ -40,5 +40,5 @@ of the new data with your existing data. The "mailfrom", "rcptto" and
 
 ## More information
  
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Types of bounces](./bounces)

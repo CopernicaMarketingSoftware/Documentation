@@ -1,4 +1,4 @@
-# WebHooks: (sub)profile creations
+# Webhooks: (sub)profile creations
 
 If you set up a profile creation webhook you are notified in real-time
 whenever a profile or subprofile in one of your databases.
@@ -100,6 +100,6 @@ An example for a subprofile looks like this:
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Update webhook](./webhook-updates)
 * [Delete webhook](./webhook-deletes)

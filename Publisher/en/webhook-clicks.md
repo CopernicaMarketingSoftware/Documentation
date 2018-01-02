@@ -1,4 +1,4 @@
-# WebHooks: clicks
+# Webhooks: clicks
 
 Copernica advises you to enable click-tracking to rewrite all hyperlinks. 
 This allows Copernica to track every click on a link before redirecting 
@@ -35,4 +35,4 @@ originally sent email message.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
