@@ -1,9 +1,9 @@
 # Message store options
 
 To reduce the load on RabbitMQ, MailerQ can use an external message store. 
-In that case only the email meta data (like the recipient, the envelope 
-address, et cetera) has to be stored in the JSON object that is published 
-to RabbitMQ, while the full MIME data can be stored in the message store.
+Only the email meta data (like the recipient, the envelope address, et cetera) 
+has then to be stored in the JSON object in RabbitMQ, while the full MIME 
+data can be stored in the message store.
 
 ```
 storage-address:        mongodb://hostname/database/collection
@@ -12,7 +12,7 @@ storage-policy:         all
 storage-ttl:            3600
 ```
 
-The message store is completely optional: if you set the "storage-address"
+This message store is completely optional: if you set the "storage-address"
 variable to an empty string, MailerQ works just as well (even faster
 because no extra communication with the storage server is necessary), but
 the load on RabbitMQ and the network will be much higher.
@@ -97,6 +97,19 @@ as a message that was split up ("\0"), followed by the sequence number
 (ascii "0"), another NULL character ("\0") and then the total number of parts
 (ascii "2"). If you wish to add messages to mongo yourself you should use the 
 same scheme for large messages.
+
+
+## Directory specifics
+
+If you use the "directory://" storage backend, MailerQ stores all the
+messages in seperate files on the file system. To prevent that the number of
+files in a directory becomes too big, MailerQ creates a nested directory 
+structure. By default, this directory structure is four files deep. If you
+want to use a different depth, you can specify this via a "depth" parameter:
+
+````
+storage-address:        directory:///path/to/directory?depth=3
+````
 
 
 ## Threads
