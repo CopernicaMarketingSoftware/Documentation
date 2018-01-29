@@ -82,43 +82,51 @@ generating the MIME.
 }
 ````
 
-Normally, you would assign a nested JSON object to the "content" property.
-In this object you specify the images, texts, buttons and other elements
-that you want to include in your email. The ResponsiveEmail algorithm
-turns this content into a responsive email message. However, in the above 
-JSON we assigned a string to this "content" property. By doing this, the
-ResponsiveEmail algorithm gets by-passed, and MailerQ creates a MIME
-property with exactly the text and HTML that you've set in the JSON. 
+If you use the full blown ResponsiveEmail.com algorithm, you assign a 
+nested JSON object to the "content" property. Inside this nested object you 
+specify the images, texts, buttons and other elements that you want to include 
+in your email. The ResponsiveEmail algorithm turns this content into a 
+responsive email message. However, in the above JSON we assigned a string to 
+the "content" property. By doing this, the ResponsiveEmail algorithm gets 
+by-passed, and MailerQ creates a MIME property with exactly the text and HTML 
+that you've set in the JSON. 
 
 
 ## Config file variables
 
 When responsive emails are generated, MailerQ downloads resources from the 
-internet to find out the dimensions of images, and to fetch attachments. To 
+internet to find out the dimensions of images and to fetch attachments. To 
 prevent that the same resources are downloaded over and over again, MailerQ 
-uses a small in-memory cache. In the global configuration file you can limit 
-the size of this cache.
+can be configured to use a cache. In the global configuration file you can set 
+the address of this cache:
 
 ````
-download-memory:        100MB
-download-dimensions:    100000
+download-cache:         directory:///path/to/dir
+download-ttl:           3600
 ````
 
-The "download-memory" property holds the maximum size of the cache, and the 
-"download-dimension" holds the max number of images for which the dimensions 
-(width and height) are kept in memory.
+The "download-cache" property holds the address of the cache. The format of
+this address is the same as the [message-store-options](message-store-options)
+variable, and can refer to a directory (like we did above) or a nosql database
+if you use an address that starts with "mongodb://" or "couchbase://".
+
+MailerQ inspects the 'cache-control' and 'expires' headers to decide how long
+a resource will be stored in the cache. With the 'download-ttl' config file
+variable you can set the upper limit for this. If you set this to 3600, downloaded
+files will stay for at most one hour in the cache, even if the http response 
+headers allow a longer cache time.
 
 
 ## Firewall bypass
 
-You probably run MailerQ _behind_ your own firewall. MailerQ is therefore
-capable of fetching resources from local servers that would otherwise be 
-protected by your firewall. It is, for example, possible to use attachment
+Most users run MailerQ in a local network. MailerQ is then not only capable of 
+fetching resources from the internet, but also directly from servers inside this
+local network. It is, for example, possible to use attachment
 URL's like "http://192.168.0.22/attachment.pdf". This could be a security risk,
-especially if the attachment and image URL's in your mails acn be entered by 
+especially if the attachment and image URL's in your mails can be entered by 
 third parties.
 
-To prevent such downloads, you can use the config file variables 
+To prevent such internal downloads, you can use the config file variables 
 "download-blacklist" and "download-whitelist" to limit the IP addresses to
 which MailerQ can connect.
 
