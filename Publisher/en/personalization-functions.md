@@ -40,7 +40,6 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 | **[{in_selection}](./personalization-functions-in_selection)**         | Mark text that is only rendered if profile belongs to a selection        |
 | **[{ldelim}](./personalization-functions-delim)**                      | Left curly bracket                                                       |
 | **[{literal}](./personalization-functions-literal)**                   | Mark literal block in which curly brackets are permitted                 |
-| **[{linkemail}](./personalization-functions-linkemail)**               | Link to web version of a different email                                 |
 | **[{linkfile}](./personalization-functions-linkfile)**                 | Link to a file                                                           |
 | **[{linkpdf}](./personalization-functions-linkpdf)**                   | Link to a PDF document                                                   |
 | **[{loadfeed}](./personalization-functions-loadfeed)**                 | Load external RSS feed                                                   |
