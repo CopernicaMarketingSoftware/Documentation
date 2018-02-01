@@ -36,25 +36,27 @@ The URL to the (S)FTP server should look as follows:
 
 In case of FTP:
 ```text
-ftp://ftp.example.com/~/export.txt
+ftp://ftp.example.com/~/
 ```
 
 In case of SFTP:
 ```text
-sftp://ftp.example.com/~/export.txt
+sftp://ftp.example.com/~/
 ```
 
 We reformat the tilde used in the path to `/home/username/` if you want a
 location different from the home folder, you can use absolute paths in the
 following way:
 ```text
-sftp://ftp.example.com//mnt/storage/export.txt
+sftp://ftp.example.com//mnt/storage/
 ```
 
-A username always has to be supplied. In the case of password authentication,
-the password has to be filled in. When authenticating with publickey,
-a privatekey has to be supplied. For security purposes we encode the privatekey
-when the export is created and decode it when it is run.
+We use the name of the export as the filename and the extension is taken from
+the information entered in the specifications of the file. A username always
+has to be supplied. In the case of password authentication, the password has to
+be filled in. When authenticating with publickey, a privatekey has to be
+supplied. For security purposes we encode the privatekey when the export is
+created and decode it when it is run.
 
 ## Exporting
 
