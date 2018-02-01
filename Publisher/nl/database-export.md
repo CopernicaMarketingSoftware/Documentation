@@ -41,26 +41,29 @@ De URL naar de (S)FTP server moet er als volgt uitzien:
 
 In het geval van FTP:
 ```text
-ftp://ftp.example.com/~/export.txt
+ftp://ftp.example.com/~/
 ```
 
 In het geval van SFTP:
 ```text
-sftp://ftp.example.com/~/export.txt
+sftp://ftp.example.com/~/
 ```
 
 Wij vervangen de tilde die gebruikt wordt in de URL automatisch naar
 `home/gebruikersnaam`. Als je gebruikt wilt maken van absolute paden dan kan
 dat als volgt:
 ```text
-sftp://ftp.example.com//mnt/storage/export.txt
+sftp://ftp.example.com//mnt/storage/
 ```
 
-Een gebruikersnaam moet altijd worden opgegeven. In het geval van authenticatie
-met gebruik van een wachtwoord moet een wachtwoord worden opgegeven. Bij het
-gebruik van publickey authenticatie moet een privatekey worden gegeven. Wegens
-veiligheidsredenen coderen wij de privatekey wanneer de export wordt
-aangemaakt, bij het uitvoeren van de export decoderen wij de privatekey weer.
+Wij gebruiken de naam van de export als bestandsnaam van het bestand dat over
+(S)FTP wordt geschreven. Het type bestand en de extensie hiervan kunnen worden
+gespecificeerd in het tabje 'Bestand'. Een gebruikersnaam moet altijd worden
+opgegeven. In het geval van authenticatie met gebruik van een wachtwoord moet
+een wachtwoord worden opgegeven. Bij het gebruik van publickey authenticatie
+moet een privatekey worden gegeven. Wegens veiligheidsredenen coderen wij de
+privatekey wanneer de export wordt aangemaakt, bij het uitvoeren van de export
+decoderen wij de privatekey weer.
 
 ## Exporteren van e-mailstatistieken
 
