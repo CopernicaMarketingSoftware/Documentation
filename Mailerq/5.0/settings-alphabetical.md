@@ -8,7 +8,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | [download-blacklist](responsiveemail#firewall-bypass)                    | IP addresses from which no resources can be downloaded
 | [download-cache](responsiveemail#config-file-variables)                  | Address of the cache (Used in ResponsiveEmail)
-| [download-dimensions](responsiveemail#config-file-variables)             | Max no. of images sizes in cache (Used in ResponsiveEmail)
 | [download-ttl](responsiveemail#config-file-variables)                    | Max time to keep downloaded resources in the cache (Used in ResponsiveEmail)
 | [download-whitelist](responsiveemail#firewall-bypass)                    | Exceptions to the download-blacklist
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
