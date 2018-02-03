@@ -38,7 +38,7 @@ objects hold properties like "envelope", "recipient" and "mime", where the
 "mime" property is normally set to a string holding the full message source
 in MIME format. However, you can also assign a nested JSON object to this
 "mime" property (see above example). This nested object is processed by 
-MailerQ, and transformed into a MIME message.
+MailerQ and transformed into a MIME message.
 
 There are many nested properties that are supported by the algorithm,
 which are all documented on the [ResponsiveEmail.com website](https://www.responsiveemail.com/support/json/introduction).
