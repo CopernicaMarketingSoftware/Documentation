@@ -118,11 +118,11 @@ this address is the same as the [message-store-options](message-store-options)
 variable, and can refer to a directory (like we did above) or a nosql database
 if you use an address that starts with "mongodb://" or "couchbase://".
 
-MailerQ inspects the 'cache-control' and 'expires' headers to decide how long
-a resource will be stored in the cache. With the 'download-ttl' config file
-variable you can set the upper limit for this. If you set this to 3600, downloaded
-files will stay for at most one hour in the cache, even if the http response 
-headers allow a longer cache time.
+MailerQ inspects the 'cache-control' and 'expires' headers in the HTTP response
+to decide for how long a resource can be stored in the cache. With the 'download-ttl'
+config file variable you can set the upper limit for this. If you set it to 3600, 
+downloaded files will stay for at most one hour (3600 seconds) in the cache, even 
+if the HTTP response headers allowed a longer cache time.
 
 
 ## Firewall bypass
