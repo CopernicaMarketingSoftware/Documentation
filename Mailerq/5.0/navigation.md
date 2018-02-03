@@ -1,4 +1,5 @@
 * [Getting started](introduction "Getting started")
+    * [Try with Docker](try-with-docker "Try with Docker")
     * [Download instructions](download-instructions "Download instructions")
     * [Setting up RabbitMQ](rabbitmq-install "Settup up RabbitMQ")
     * [License file](license-file "Obtaining a license file")
