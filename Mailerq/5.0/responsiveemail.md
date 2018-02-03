@@ -57,7 +57,7 @@ to make your message compatible with all the various email clients.
 
 However, if you do want to take care of the HTML yourself, you can also use
 the ResponsiveEmail algorithm for just the HTML-to-MIME conversion. In that
-case you just specify the header properties (from and to addresses, subject line)
+case you just specify the header properties (from and to address, subject line)
 and the HTML and text source of your message, and rely on MailerQ to turn
 this into a valid MIME message:
 
@@ -102,7 +102,7 @@ a MIME property with exactly the text and HTML that you've set in the JSON.
 
 ## Config file variables
 
-When responsive emails are generated, MailerQ sometimes have to download resources 
+When emails are generated, MailerQ sometimes has to download resources 
 from the internet to find out the dimensions of images and to fetch attachments. To 
 prevent that the same resources are downloaded over and over again, MailerQ 
 can be configured to use a cache. In the configuration file you can set 
