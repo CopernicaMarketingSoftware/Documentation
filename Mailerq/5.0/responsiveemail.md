@@ -24,33 +24,42 @@ JSON (instead of MIME), it will be converted into valid email messages.
             "blocks": [{
                 "type": "html",
                 "content": "<p>Example content</p>"
+            }, {
+                "type": "button",
+                "label": "click here"
             }]
         }
     }    
 }
 ````
 
-Normally, the JSON messages that are read from the outbox queue contain
-a "mime" property that holds a string value . However, you can also assign a
-nested JSON object, as we did in the example above. This nested object
-is processed by the ResponsiveEmail engine inside MailerQ, and transformed
-into the actual MIME message that gets delivered.
+MailerQ reads JSON objects from the RabbitMQ "outbox" queue. These JSON
+objects hold properties like "envelope", "recipient" and "mime", where the
+"mime" property is normally set to a string holding the full message source
+in MIME format. However, you can also assign a nested JSON object to this
+"mime" property (see above example). This nested object is processed by 
+MailerQ, and transformed into a MIME message.
 
 There are many nested properties that are supported by the algorithm,
 which are all documented on the [ResponsiveEmail.com website](https://www.responsiveemail.com/support/json/introduction).
+Note that the properties that are described as top-level properties
+on the responsiveemail.com website, are (of course) nested properties inside 
+the "mime" property of the object that is processed by MailerQ.
 
-The algorithm is embedded in the MailerQ process that runs on your server, and 
-although we sometimes call it the "ResponsiveEmail.com" algorithm, MailerQ does
-not connect to this online service. It runs completely on your own servers.
 
+## Writing your own HTML code
 
-## Regular emails
+The ResponsiveEmail algorithm reads in a JSON object in which the texts, 
+buttons and images are defined, and generates the HTML and MIME 
+content based on that input. This means that you do not have to write the
+message source (HTML, CSS and MIME) yourself, or worry about the tricks 
+to make your message compatible with all the various email clients. 
 
-The ResponsiveEmail module can also be used to create regular (non-responsive)
-emails based on JSON input. If you do not want to create MIME strings yourself
-(which we understand, generating MIME strings can be complex), you can feed 
-MailerQ with all the properties of your email, and let MailerQ take care of 
-generating the MIME.
+However, if you do want to take care of the HTML yourself, you can also use
+the ResponsiveEmail algorithm for just the HTML-to-MIME conversion. You
+can also specify the header properties (from and to addresses, subject line)
+and the HTML and text source of your message, and rely on MailerQ to turn
+this into a valid MIME message:
 
 ````
 {
@@ -82,22 +91,21 @@ generating the MIME.
 }
 ````
 
-If you use the full blown ResponsiveEmail.com algorithm, you assign a 
-nested JSON object to the "content" property. Inside this nested object you 
-specify the images, texts, buttons and other elements that you want to include 
-in your email. The ResponsiveEmail algorithm turns this content into a 
-responsive email message. However, in the above JSON we assigned a string to 
-the "content" property. By doing this, the ResponsiveEmail algorithm gets 
-by-passed, and MailerQ creates a MIME property with exactly the text and HTML 
-that you've set in the JSON. 
+If you use the full ResponsiveEmail algorithm (where you do not have to
+write the HTML code yourself), you assign a deeply nested JSON object to the 
+"content" property. Inside this "content" object you specify the images, texts, 
+buttons and other elements that you want to include in your email. MailerQ 
+turns this content into a responsive email message. However, in the above example
+we assigned a string to the "content" property. By doing this, MailerQ creates 
+a MIME property with exactly the text and HTML that you've set in the JSON.
 
 
 ## Config file variables
 
-When responsive emails are generated, MailerQ downloads resources from the 
-internet to find out the dimensions of images and to fetch attachments. To 
+When responsive emails are generated, MailerQ sometimes have to download resources 
+from the internet to find out the dimensions of images and to fetch attachments. To 
 prevent that the same resources are downloaded over and over again, MailerQ 
-can be configured to use a cache. In the global configuration file you can set 
+can be configured to use a cache. In the configuration file you can set 
 the address of this cache:
 
 ````
@@ -119,12 +127,12 @@ headers allow a longer cache time.
 
 ## Firewall bypass
 
-Most users run MailerQ in a local network. MailerQ is then not only capable of 
-fetching resources from the internet, but also directly from servers inside this
-local network. It is, for example, possible to use attachment
-URL's like "http://192.168.0.22/attachment.pdf". This could be a security risk,
-especially if the attachment and image URL's in your mails can be entered by 
-third parties.
+Most users run MailerQ on a server with unrestricted access to the local network. 
+MailerQ is then not only capable of fetching resources from the internet, but 
+also directly from servers inside this local network. This makes it, for example, 
+possible to use attachment URL's like "http://192.168.0.22/attachment.pdf". This 
+could be a security risk, especially if the attachment and image URL's in your 
+mails can be entered by third parties.
 
 To prevent such internal downloads, you can use the config file variables 
 "download-blacklist" and "download-whitelist" to limit the IP addresses to
