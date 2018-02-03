@@ -56,8 +56,8 @@ message source (HTML, CSS and MIME) yourself, or worry about the tricks
 to make your message compatible with all the various email clients. 
 
 However, if you do want to take care of the HTML yourself, you can also use
-the ResponsiveEmail algorithm for just the HTML-to-MIME conversion. You
-can also specify the header properties (from and to addresses, subject line)
+the ResponsiveEmail algorithm for just the HTML-to-MIME conversion. In that
+case you just specify the header properties (from and to addresses, subject line)
 and the HTML and text source of your message, and rely on MailerQ to turn
 this into a valid MIME message:
 
