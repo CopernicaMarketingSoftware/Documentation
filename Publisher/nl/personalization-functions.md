@@ -2,7 +2,7 @@
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er
 hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende 
-functie kun je bijvoorbeeld gebruiken om een link naar de [webversie](./personalization-functions-linkemail) van een 
+functie kun je bijvoorbeeld gebruiken om een link naar de webversie van een 
 e-mail te maken:
 
 ```text
@@ -44,7 +44,6 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{in_selection}](./personalization-functions-in_selection)            | blok dat alleen wordt getoond indien profiel tot een selectie behoort        |
 | [{ldelim}](./personalization-functions-delim)                         | linkeraccolade                                                               |
 | [{literal}](./personalization-functions-literal)                      | blok markeren dat letterlijk genomen wordt                                   |
-| [{linkemail}](./personalization-functions-linkemail)                  | linken naar de webversie van een (andere) mailing                            |
 | [{linkfile}](./personalization-functions-linkfile)                    | linken naar een file                                                         |
 | [{linkpdf}](./personalization-functions-linkpdf)                      | linken naar een PDF bestand                                                  |
 | [{loadfeed}](./personalization-functions-loadfeed)                    | inladen van een externe RSS feed                                             |
