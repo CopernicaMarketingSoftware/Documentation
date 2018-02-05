@@ -41,7 +41,7 @@ seconds. This low TTL value causes a lot of unnecessary DNS lookups, because
 DNS queries are repeated every single minute, while in reality most TTL are 
 set to a much higher values (for example 24 or 48 hours).
 
-You can prevent all these extra DNS lookups, you can instruct MailerQ to forget 
+To prevent all these extra DNS lookups, you can instruct MailerQ to forget 
 about the "getaddrinfo" function and send queries to DNS server directly. If 
 MailerQ does this, it will have access to the real TTL value, and can cache 
 the DNS results for a much longer time. You can disable the "getaddrinfo" calls 
