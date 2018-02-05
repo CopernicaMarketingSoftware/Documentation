@@ -61,9 +61,11 @@ lookups of system utilities.
 Every couple of minutes, MailerQ reloads all its information from the database,
 and validates all the DKIM keys in the database by matching the public key
 found in DNS with the private key in the database. If you have a lot of 
-DKIM keys in your database, this could take a very long time. If you want
-to speed this up, you can start special DNS threads that are only used when
-DKIM keys are being reloaded. This can also be set in the config file:
+DKIM keys in your database, this could take a very long time because the DNS
+lookups are slow and MailerQ can only run one at a time. If you want to speed 
+this up, you can start special DNS threads that are only used when
+DKIM keys are being reloaded. This allows MailerQ to run many lookups in 
+parallel. The number of threads can be set in the config file:
 
 ```
 database-threads:   10
