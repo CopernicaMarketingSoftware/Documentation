@@ -22,12 +22,12 @@ dns-threads:        5
 ```
 
 The management console has a special DNS widget that you can use to monitor
-how many DNS operations are busy. If you see that the number of DNS operations
+how many DNS operations are in progress. If you see that the number of DNS operations
 is almost always higher than the number of threads, it is best to increase
 the number of threads. This will immediately improve your MTA's performance.
 
 
-## Using getaddrinfo()
+## Using getaddrinfo
 
 For the DNS lookups of IP addresses, MailerQ uses the standard "getaddrinfo"
 library call that is available on all Linux systems. This function checks the 
@@ -35,16 +35,16 @@ library call that is available on all Linux systems. This function checks the
 a DNS query to a DNS server if necessary. This is exactly what you want.
 
 However, this standard "getaddrinfo" function does not expose the time-to-live 
-(TTL) value, which is needed to know for how long DNS results can be cached. 
+(TTL) value to its caller, which is needed to know for how long DNS results can be cached. 
 MailerQ is therefore conservative and assumes that all TTL's are set to 60 
 seconds. This low TTL value causes a lot of unnecessary DNS lookups, because 
 most TTL are set to a much higher values (for example 24 or 48 hours).
 
-You can also instruct MailerQ to forget about the "getaddrinfo" function and
-send a query to the DNS server directly. If MailerQ does this, it will have
-access to the real TTL value, and can cache the DNS results for a much longer
-time. You can disable the "getaddrinfo" calls with the following config file
-variable:
+You prevent all these extra DNS lookups, you can instruct MailerQ to forget 
+about the "getaddrinfo" function and send queries to DNS server directly. If 
+MailerQ does this, it will have access to the real TTL value, and can cache 
+the DNS results for a much longer time. You can disable the "getaddrinfo" calls 
+with the following config file setting:
 
 ```
 dns-getaddrinfo:    no
