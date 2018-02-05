@@ -25,8 +25,8 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [dsn-advertise](sending-bounces#receiving-dsn-settings)                  | Toggle announcement about DSN extension and parameters
 | [dsn-notify](sending-bounces#mime-headers-and-config-file-settings)      | Events that trigger a notify
 | [dsn-ret](sending-bounces#passing-dsn-settings)                          | Send full mail (FULL) or headers (HDRS) for notifications
-| dns-threads                                                              | Amount of threads used for DNS lookup
-| envelope                                                                 | Envelope address
+| [dns-threads](dns-settings)                                              | Number of threads used for DNS lookups
+| [dns-getaddrinfo](dns-settings)                                          | Whether the MailerQ resolver should rely on getaddrinfo() library calls
 | [error-log](logging#error-logs)                                          | Name and error of error
 | [error-log-directory](logging#error-logs)                                | Error log directory
 | [error-log-prefix](logging#error-logs)                                   | Error log prefix

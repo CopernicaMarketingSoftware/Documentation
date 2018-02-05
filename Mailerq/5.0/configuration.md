@@ -18,6 +18,7 @@ find the desired setting in the [A-Z settings overview](settings-alphabetical).
 * [Management console](management-console "Management console")
 * [Responsive Email](responsiveemail "ResponsiveEmail.com integration")
 * [Multiple instances](multiple-instances "Multiple MailerQ instances on one server")
+* [DNS settings](dns-settings "DNS settings")
 * [Other options](other-configuration "Other configuration options")
 
 ## Are you looking for more settings?

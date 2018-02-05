@@ -12,6 +12,7 @@
     * [Logging](logging "Logging")
     * [Smarthost & debugging](smarthost "Smarthost & debugging")
     * [Responsive Email integration](responsiveemail "ResponsiveEmail integration")
+    * [DNS settings](dns-settings "DNS settings")
     * [Other options](other-configuration "Other configuration options")
 * [Injecting/sending email](send-email "Send email with MailerQ")
     * [Using the spool directory](spool-directory "Using the spool directory")
