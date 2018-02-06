@@ -6,7 +6,7 @@ scripts can read out these result queues and further process the failures
 and succesful deliveries. The messages on the result queues are all JSON 
 encoded.
 
-![MailerQ JSON results](/Resources/Images/mailerq-json-results.jpg)
+![MailerQ JSON results](../Images/mailerq-json-results.png)
 
 ## Different result queues
 
