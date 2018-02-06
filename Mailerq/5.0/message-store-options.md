@@ -75,8 +75,12 @@ The default number of attempts is 1. If you want to repeat failed lookups
 a couple of times, you can pass in a higher value.
 
 To prevent that many small read operations are fired at MongoDB, MailerQ 
-groups operations into "multi-get" operations. The max number of fetch
-operations that can be grouped together is configurable:
+normally groups fetch operations into a single "multi-get" operation that
+fetches many documents with just a single query. This reduces the number of 
+queries that are sent to MongoDB, but if one of the requested documents is
+hard to find, it also slows down the lookup of all the other documents in 
+the same query. To get a balance between this, you can limit the number of 
+fetch operations that can be grouped together:
 
 ````
 storage-address:        mongodb://hostname/database/collection?maxQuerySize=10
