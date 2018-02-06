@@ -188,8 +188,8 @@ goes through the following states:
 
 <table>
     <tr>
-        <td>amqp</td>
-        <td>the message is loaded from the outbox, and parsed as json</td>
+        <td>process</td>
+        <td>the input is checked and assigned to the from and to ip address between which it will be sent</td>
     </tr>
     <tr>
         <td>storage</td>
@@ -335,14 +335,19 @@ combinations can also occur, and should be interpreted in a special way:
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <td>amqp</td>
-        <td>invalid</td>
-        <td>incoming message was not a valid JSON formatted message</td>
-    </tr>
-    <tr>
-        <td>amqp</td>
+        <td>process</td>
         <td>timeout</td>
         <td>incoming message was expired (maxdelivertime or maxattempts exceeded)</td>
+    </tr>
+    <tr>
+        <td>process</td>
+        <td>error</td>
+        <td>the input json contains a mail that could not be assigned to an ip address (for example because no sufficient secure ip exists)</td>
+    </tr>
+    <tr>
+        <td>process</td>
+        <td>invalid</td>
+        <td>the input json contains a mail that could not be sent (for example due to license constraints, or because the recipient is missing or not parsable)</td>
     </tr>
     <tr>
         <td>storage</td>
