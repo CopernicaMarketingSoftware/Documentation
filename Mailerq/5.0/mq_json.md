@@ -7,11 +7,10 @@
     the <a href="mq_json">MQ_json()</a> function.
 </p>
 <p>
-    This function returns a 
-    <a href="http://json-c.github.io/json-c/json-c-0.12/doc/html/json__object_8h.html">struct json_object</a>
-    pointer. This is a pointer to a data type defined by the <a href="https://github.com/json-c/json-c">json-c</a>
+    This function returns a "struct fjson_object". This is a pointer to a data 
+    from the >a href="https://github.com/rsyslog/libfastjson">libfastjson</a>
     library. If you want to work with this data pointer, you therefore
-    also need access to this JSON library.
+    also need access to this JSON handling library.
 </p>
 <pre class="language-c"><code class="language-c">
 /**
@@ -20,14 +19,12 @@
  *  @param  message the message to retrieve the JSON from
  *  @return json    pointer to the JSON object
  */
-struct json_object *<a href="mq_json">MQ_json</a>(<a href="mq_message">MQ_Message</a> *message);
+struct fjson_object *<a href="mq_json">MQ_json</a>(<a href="mq_message">MQ_Message</a> *message);
 </code></pre>
 <p>
     For more information on how to work with the JSON structure,
-    please check the documentation of the json-c library:
+    please check the documentation of the libjson library:
 </p>
 <ul>
-    <li><a href="https://github.com/json-c/json-c">JSON-C on Github</a></li>
-    <li><a href="https://github.com/json-c/json-c/wiki">JSON-C wiki (also on Github)</a></li>
-    <li><a href="http://json-c.github.io/json-c/">JSON-C API reference</a></li>
+    <li><a href="https://github.com/rsyslog/libfastjson">Libfastjson on Github</a></li>
 </ul>
