@@ -15,7 +15,11 @@ wordt altijd **gepersonaliseerd** weergegeven.
 De tag en het maken van de link
 -------------------------------
 
-Om de webversie mee te sturen in je emails, gebruik je onderstaande tag:
+Om de webversie mee te sturen in je Marketing Suite e-mails, gebruik je onderstaande tag:
+
+`{$webversion}`
+
+Als je gebruikt maakt van de Copernica Publisher ziet het er net iets anders uit:
 
 `{webversion}`
 
@@ -23,7 +27,7 @@ That's it. In de email wordt de tag omgezet naar het (voor iedere
 ontvanger unieke) webadres (URL) van de webversie. Deze is nog niet
 klikbaar. Hiervoor gebruik je nog een beetje HTML:
 
-`<a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>`
+`<a href="{$webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>`
 
 ### Extra opties
 
