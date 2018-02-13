@@ -8,15 +8,16 @@ alle processen die worden uitgevoerd. Echter, het is goed om je kennis
 rondom alle processen te verbeden of te verdiepen, zodat je het maximale resultaat
 uit je mailings kunt halen. 
 
+- [Accounts en gebruikers](accounts-and-users)
 - [Alle beschikbare REST calls](all-rest-calls "Alle beschikbare REST calls")
-- [Sender domains](sender-domains "Sender domains")
-- [SPF validatie](spf-validation "SPF email validatie - een korte introductie")
+- [Bounce protocol](bounce-handling "Bounce protocol")
+- [Click- en open tracking](statistics "Click- en open tracking")
 - [DKIM ondertekenen](dkim-signing "DKIM ondertekenen")
 - [DMARC deployment](dmarc-deployment "DMARC deployment")
-- [Bounce protocol](bounce-handling "Bounce protocol")
-- [Inline CSS code](inline-css "Inline CSS")
 - [E-mail throttling](email-throttling "Email throttling")
-- [Click- en open tracking](statistics "Click- en open tracking")
+- [Inline CSS code](inline-css "Inline CSS")
 - [Licentie en facturering](license-and-billing)
+- [Logfiles](logfiles-smtpeter)
+- [Sender domains](sender-domains "Sender domains")
+- [SPF validatie](spf-validation "SPF email validatie - een korte introductie")
 - [Webversie](webversion)
-- [Accounts en gebruikers](accounts-and-users)
