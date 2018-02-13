@@ -22,6 +22,8 @@ profile. To request a profile object please see the documentation on [the accoun
 ## Available methods
 * **remove()**: Remove this profile from the database
 * **unsubscribe()**: Unsubscribe this profile
+* **createSubProfile(collection)**:  Create a new subprofile in the specified collection, returns the newly created subprofile;
+* **subProfiles(collection (optional))**:  Retrieve all subprofiles for this profile, optionally specify a collection.
 
 ## Example
 
