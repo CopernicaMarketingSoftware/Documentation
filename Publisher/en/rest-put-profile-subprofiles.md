@@ -1,14 +1,11 @@
-# REST API: POST profile subprofiles
+# REST API: PUT profile subprofiles
 
-To add subprofiles to a profile an HTTP PUT request can be sent to the following URL:
+To update or add subprofiles to a profile an HTTP PUT request can be sent to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
+`https://api.copernica.com/v1/subprofile/$id/fields?access_token=xxxx`
 
-The `$id` should be replaced with the ID of the profile you want to add a
-subprofile to. The `$collectionID` should be replaced with the ID of the
-collection in which the subprofile should be stored. The new subprofile
-of the profile can be placed in the body of the message. After a successful 
-call the ID of the created request is returned.
+The `$id` should be replaced with the ID of the subprofile you want to update or add
+information to.
 
 ## Available data
 The new field values need to be added to the body of the message. This data simply consists of the existing field names on the sub profile you want to change and their new values. If you send your data in JSON format, you’ll need to create an object with field names as keys and field values as values.
@@ -37,7 +34,7 @@ $data = array(
 );
   
 // do the call
-$api->put("profile/{$profile}/subprofiles/{$subprofile}", $data);
+$api->put("subprofile/{$id}/fields", $data);
 
 The example above requires the [CopernicaRestApi class](rest-php).
     
