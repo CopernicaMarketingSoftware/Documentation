@@ -19,7 +19,7 @@ Klik op de destination ID voor gedetailleerde informatie over de e-mail.
 In dit scherm, 'Message information', vind je alle details van de mailing. 
 Zo kun je de content zien, de ontvanger, het onderwerp en de bijlagen.
 
-![message information](../Images/message-information.png "Message information interface")
+![message information](Images/message-information.png "Message information interface")
 
 Daarnaast vind je twee tabbladen genaamd 'Events' en 'Template'. 'Events' 
 bevat informatie over pogingen, afleveringen, clicks, opens, en meer. Je 
