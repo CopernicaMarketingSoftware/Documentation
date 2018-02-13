@@ -37,6 +37,6 @@ of events using [WebHooks](./webhooks).
 
 ## More information
 
-* [REST API](./rest-logfiles)
 * [Background information](./background)
+* [REST API](./rest-logfiles)
 * [WebHooks](./webhooks)
