@@ -4,13 +4,10 @@ Je kunt een subprofile bewerken door een
 HTTP PUT request sturen naar de volgende 
 URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
+`https://api.copernica.com/v1/subprofile/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het profiel 
-waaraan je een subprofiel wil toevoegen en **$collectionID** moet vervangen worden
-met de identifier van de collectie waarin je het subprofiel wil toevoegen.
-De inhoud van het subprofiel kun je in de message body plaatsen. Bij een 
-succesvolle call wordt de ID van het aangemaakte verzoek teruggegeven.
+De code **$id** moet je vervangen door de numerieke identifier van het subprofiel 
+waaraan je een data wilt toevoegen De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
 
@@ -40,7 +37,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("profile/{$id}/subprofiles/{$id2}", $data);
+$api->put("subprofile/{$id}/fields", $data);
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
