@@ -25,7 +25,9 @@ of via het [database data-script](./followups-scripting-database).
 ## Beschikbare functies
 
 * remove():			remove profile;
-* unsubscribe(): 	unsubscribe profile.
+* unsubscribe(): 	unsubscribe profile;
+* createSubProfile(collection):  Create a subprofile in the specified collection, returns the newly created subprofile;
+* subProfiles(collection (optional)):  Retrieve subprofiles from this profile, optionally specify a collection.
 
 
 ## Voorbeeld
