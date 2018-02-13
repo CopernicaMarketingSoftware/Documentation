@@ -18,7 +18,7 @@ get to the Message Information screen. Here, you'll find all the details
 on the message, such as the full content of the message, recipient, 
 subject, attachments, and more.
 
-![message information](../Images/message-information.png "Message information interface")
+![message information](Images/message-information.png "Message information interface")
 
 Next to the mailing itself are two tabs: 'Events' and 'Template'. 
 'Events' shows the full details on every event that occurred with the 
