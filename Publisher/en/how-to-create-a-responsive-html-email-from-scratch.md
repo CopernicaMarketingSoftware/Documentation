@@ -100,7 +100,7 @@ Responsive emails are characterized by elements appearing below one another, rat
 ### Test for all email clients
 Although most of the major email clients support media queries, not everyone is on board with them at all times. Sometimes providers change their stance on them. Therefore, testing your emails on several clients before sending them is essential. This is possible with Copernica marketing software. Furthermore Copernica shows you which clients and which devices are used by your audience, so you know what to focus on while testing and designing. 
 
-Example template
+## Example template
 
 This is an example template with a basic layout that uses all of the elements we discussed in this article. Feel free to use it and tweak it to your own preferences.
 
