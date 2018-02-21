@@ -62,7 +62,7 @@ The trick is to use two ‘td’ elements that are automatically displayed next 
     </table>
 ```
 
-CSS media queries
+## CSS media queries
 
 Media queries use an @media rule to determine whether or not to include a block of CSS properties. They consist of three parts: the media type, a condition and the styles that need to be applied. So, the rule “@media only screen and {max-width: 600px}” means “if it is on a screen and it's less than 600px wide, use the following CSS”. If this is not the case, your inline CSS is used.
 
