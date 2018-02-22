@@ -30,6 +30,10 @@ The account statistics provide information about the usage of the account.
 [This article](./statistics-account) explains more about the account statistics. 
 It is not possible to export this information currently.
 
+## Inbox placement test
+To retrieve statistics on your your emails perform in different clients without having to send
+an actual mass mailing, use an imbox placement test. [This article](./inbox-placement-test) tells you all about it.
+
 ## Webpage statistics
 
 If you have a Copernica webpage the behaviour is tracked automatically. 
