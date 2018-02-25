@@ -38,6 +38,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [plugin-directory](plugins#how-are-plugins-loaded)                       | Directory with MailerQ plugins
 | [rabbitmq-address](rabbitmq-config#rabbitmq-address)                     | Location and authentication to connect to RabbitMQ
 | [rabbitmq-consumers](rabbitmq-config#multiple-threads)                   | Amount of consumer threads (default: 1)
+| [rabbitmq-declare](rabbitmq-config#disable-startup-declarations)         | Enable or disable checking and declaring the queues on startup  
 | [rabbitmq-dsn](rabbitmq-config#rabbitmq-queues)                          | Your RabbitMQ delivery status notification queue  
 | [rabbitmq-durable](rabbitmq-config#persistent-and-durable-settings)      | Durable/not durable RabbitMQ queues (default: true)
 | [rabbitmq-encoding](rabbitmq-config#compression)                         | Choose encoding for messages (such as gzip)
@@ -45,6 +46,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
 | [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
+| [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)

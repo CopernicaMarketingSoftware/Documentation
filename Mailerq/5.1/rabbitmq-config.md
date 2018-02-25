@@ -9,7 +9,8 @@ queues to which incoming messages are delivered.
 ## RabbitMQ address
 
 MailerQ reads the location and authentication information to connect to 
-RabbitMQ from its config file. 
+RabbitMQ from its config file. This data is stored in the "rabbitmq-address"
+setting:
 
 ```
 rabbitmq-address: amqp://login:passwd@hostname/vhost
@@ -215,6 +216,29 @@ specific results (like failures), you can set one or more of the result queues
 to empty strings. MailerQ will then not publish messages to them.
 
 
+## Priority queues
+
+RabbitMQ supports _priority queues_. If you use a priority queue for the outbox, 
+messages with a higher priority are consumed by MailerQ before messages
+with a lower priority, and are therefore also sent out faster. This could be useful
+if you want to inject messages that should be sent before emails already queued.
+
+To turn a queue into a priority queue, the queue in RabbitMQ must have been
+declared with the "x-max-priority" property set. If you declare your own queues,
+you have to do this yourself. If you rely on MailerQ to declare the queues, you
+can specify the value of this property in the config file:
+
+```
+rabbitmq-maxpriority: 4
+```
+
+The above config file option instructs MailerQ to set the "x-max-priority"
+property on the outbox queue to the given value. This setting is used
+during application startup when the outbox queue is declared. If the outbox
+queue already exists, it must match the "x-max-priority" setting of the
+existing queue.
+
+
 ## The exchange
 
 The "rabbitmq-exchange" variable holds the name of the RabbitMQ exchange  
@@ -253,6 +277,23 @@ To use the flexibility that RabbitMQ offers, you can use the "rabbitmq-exchange"
 setting to assign a custom exchange. If you leave the setting empty however,
 the messages still end up in the right queues.
 
+
+## Disable startup declarations
+
+All queues and the exchange are automatically created when MailerQ starts. If
+you do not want MailerQ to declare the queues and exchanges, you can use the
+"rabbitmq-declare" setting in the config file. If you set this to false, no queues
+or exchanges are declared on startup.
+
+```
+rabbitmq-declare: false
+```
+
+Disabling the declaration of queues and exchanges is helpful if you have
+already created them yourself and you do not want MailerQ to do this for you. 
+If you have created the queues with slightly different settings than MailerQ 
+does, you even need this setting because otherwise MailerQ reports a queue
+incompatibility error and refuses to start.
 
 
 ## Persistent and durable settings
