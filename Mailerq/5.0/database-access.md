@@ -11,11 +11,11 @@ set up because it does not require a server process to run. All you need is
 the "sqlite3" library to be installed on your system.
 
 The other database systems, MySQL, MariaDB and PostgreSQL, take a little
-more effort to set up, but they are not too difficult to install either. You 
-just have to create the database and put the login and password in the 
-MailerQ configuration file and MailerQ will do the rest: all the tables
-are created and will be filled with the settings that you enter via the
-management console.
+more effort, but they are not too difficult to configure either. If you 
+already have such a database server running, you only have to create a new
+database and put the address, login and password to that database in MailerQ's 
+configuration file. MailerQ will do the rest: the tables will be created and 
+filled with the settings that you enter via the management console.
 
 
 ## Database settings in the config file
@@ -29,18 +29,20 @@ database-address:   mysql://user:password@hostname/databasename
 database-address:   postgresql://user:password@hostname/databasename
 ```
 
-SQLite is the simplest database to set up, because you just specify the 
-path to a file on the MailerQ server (this file does not even have to 
-exist). However, an SQLite database can not be used if you want to access
-the same database from multiple machines.
+SQLite is the simplest database to set up, just specify the path to a file 
+on the MailerQ server (this file does not even have to exist). However, an 
+SQLite database can not be used if you want to access the same database 
+from multiple machines.
 
 If you do use SQLite, note that you need three (!) slashes in
 the address: the "sqlite://" prefix, followed by the "/path/to/database".
-
-MailerQ automatically creates or alters missing or incomplete tables. 
 If you use a MySQL, MariaDB or PostgreSQL database, make sure that the 
 database exists, and that MailerQ not only gets enough privileges to read 
 and write from and to the database, but also to create and modify tables.
+
+On startup, MailerQ automatically checks if the tables in your database
+exist, and whether the database structure is correct. Missing, broken or 
+incomplete tables are reported. 
 
 
 ## Choosing the right engine
@@ -56,8 +58,8 @@ Do you already use MySQL databases? Then it is best to use it for MailerQ
 too. Do you run a single MailerQ instance, and does data not have to be
 shared amongst multiple MailerQ instances? Then the SQLite database is sufficient.
 
-MailerQ makes use of client libraries to connect to the database. To
-connect to a MySQL or MariaDB database, you must make sure that either 
+MailerQ makes use of client libraries on your system to connect to the 
+database. To connect to a MySQL or MariaDB database, you must make sure that either 
 libmysqlclient or libmariadbclient is installed on your system. For
 PostgreSql connections libpq has to be installed, and libsqlite3 is needed
 for SQLite3 databases. If these libraries are not available on the system,
@@ -66,9 +68,10 @@ it is not possible to connect to the database.
 
 ## Time to live
 
-As we wrote, the database is not used for real time queries. Instead, all data
+As we mentioned, the database is not used for real time queries. Instead, all data
 is periodically copied into main memory. This ensures that the speed of the
-database is never a limiting factor in your mail deliveries.
+database is never a limiting factor in your mail deliveries, or that a slow
+query slows down your email deliveries.
 
 MailerQ normally reloads the database every 10 minutes. However, this is 
 a configurable interval. In the config file you can set the "database-ttl"
@@ -109,16 +112,19 @@ experiment with higher values.
 
 ## Rebuilding the database
 
-When MailerQ starts, it first connects to the database and checks whether
-all tables are in a valid state. Tables that do not exist are created,
-and tables that miss columns are automatically altered and the missing
-columns are added. This automatic table-checking is done every time
-MailerQ starts up.
+When MailerQ starts, it normally first connects to the database and checks whether
+all tables are in a valid state. If this test fails, MailerQ does not start and
+reports an error instead. With the `--repair-database` command line switch,
+you can instruct MailerQ to repair all broken tables. Tables and columns that
+are missing will be created, and obsolete columns are removed,
 
-Normally, the only time when tables are created is the very first
-time that you start MailerQ, and the only time when tables are altered 
-is after upgrading to a new MailerQ version that uses a slightly different 
-database schema.
+```bash
+$ mailerq --repair-database
+```
+
+This option tells MailerQ to create and alter missing or broken tables. The only 
+time when you normally do this, is when you install MailerQ for the first time, 
+or when you are upgrading from a previous version.
 
 If you want to enforce that all tables in the database are dropped and
 replaced by brand new empty tables, you can start MailerQ with the 
@@ -132,16 +138,12 @@ This option tells MailerQ not to check and repair tables, but to drop
 them all and create new ones.
 
 
-## Fixing values in the database
+## Disable the database check
 
-When MailerQ starts, it does a very rough validation of the data in the 
-database. Possible invalid or strange settings are fixed. It especially 
-checks if any of the timeouts are set to zero, because this almost always
-is an indication of a wrong setting (even the fastest receivers cannot
-respond withing 0 seconds).
-
-If you do not want to run this validation algorithm on startup, you can
-disable it in the config file:
+You may want MailerQ to skip the database consistency check on startup. For
+example if you have manually modified the tables and added a couple of extra
+columns. To skip the validation on startup, you can set the config file
+variables 'database-validate' to false:
 
 ````
 database-validate:      false
@@ -152,7 +154,7 @@ database-validate:      false
 
 It is possible to run multiple MailerQ instances that all connect to the
 same database. If you do this, we recommend setting up a [cluster](cluster)
-of MailerQ instances too. The different MailerQ instances then notify each
+of MailerQ instances. The different MailerQ instances then notify each
 other every time the settings in the database are updated, so that each
 instance can update its cache.
 
