@@ -1,32 +1,34 @@
 # Opvolgacties
 
-Als op een link in een mailing wordt geklikt, of als een andersoortige 
-gebeurtenis plaatsvindt, kan Copernica automatisch nieuwe acties uitvoeren 
-of inroosteren. Je kunt dus verschillende campagnes maken en automatische 
-opvolgacties instellen. Ook hier is er onderscheid tussen de (nieuwe) Marketing
-Suite en de (oude) Publisher. 
+Automatisering is het favoriete buzzword van veel marketeers. Opvolgacties in 
+Copernica kunnen automatisch acties uitvoeren of plannen op basis van condities, 
+waardoor je makkelijk je eigen e-mailcampagnes kunt automatiseren. Je kunt 
+zo zelf prachtige campagnes creëren, bijvoorbeeld om een e-mail te sturen 
+wanneer iemand op een link klinkt of iemand te feliciteren met zijn verjaardag.
 
-Geadviseerd wordt om gebruik te maken van de Marketing
-Suite, omdat het gebruiksgemak groter is dan bij de Publisher. Het gebruik
-van data-script attributen is voor de gevorderde gebruiker die met JavaScript zelf kan
-programmeren hoe er met inkomende clicks wordt omgegaan.
+Er zijn een aantal verschillende manieren om opvolgacties in te stellen met 
+Copernica software. Als je onbekend bent met automatiseren kun je het best 
+beginnen in de Marketing Suite's flowchart editor, waarin je gemakkelijk 
+condities en acties in de juiste configuratie kunt slepen. Programmeurs 
+kunnen aan de slag met de geavanceerde script editor in de Marketing Suite en 
+de Publisher biedt een menu editor.
 
 ## Follow-Up Manager (Marketing Suite)
 
 In de [flowchart editor](./follow-up-manager-ms) kun je blokken aan elkaar 
 linken om geavanceerde campagnes op te zetten met hulp van followups. 
-Er zijn ook blokken waar je zelf functionaliteit aan toe kan voegen met 
-enige kennis van JavaScript. Deze heeft toegang tot dezelfde eigenschappen 
-als de [script editor](./followups-scripting.md). De flowchart editor is 
-bedoeld om marketeers een krachtige manier te geven om campagnes te bouwen 
-met een duidelijk begin en eind.
+Deze editor is speciaal ontworpen met marketeers in gedachten. Als je ervaring 
+hebt met het programmeren van javascript kun je de krachtige mogelijkheden 
+van de geavanceerde modus gebruiken, waarin je je eigen logica kan definiëren 
+in Javascript.
 
 ## Follow-Up Manager (Publisher)
 
-[Follow-ups in Publisher](./follow-up-manager-publisher) zijn altijd 
+[Opvolgacties in Publisher](./follow-up-manager-publisher) zijn altijd 
 beschikbaar in het menu van een **database**, **document**, **enquête** 
-of **webformulier**. De Publisher heeft geen scripting API, maar is door 
-de jaren heen ontwikkeld tot een krachtige editor.
+of **webformulier**. Opvolgacties in Publisher worden gemaakt door een 
+conditie en een actie te definiëren in de menu editor. Publisher heeft 
+geen scripting API.
 
 ## Script Editor
 
@@ -35,25 +37,15 @@ benutten met het [*data-script* attribuut](./followups-scripting.md). Elke
 hyperlink kun je zo bijvoorbeeld verreiken met je eigen script om kliks 
 af te handelen.
 
-## Soorten follow-ups
-
-Opvolgacties bestaan uit een aanleiding en een actie. Voor **databases**, 
-**documenten**, **enquêtes** en **webformulieren** zijn verschillende 
-aanleidingen beschikbaar. Daarnaast kan er een wachttijd ingesteld worden 
-en een bestemming. Ook voor de acties zijn er verschillende instellingen. 
-Meer over aanleidingen, acties en instellingen vindt je [hier](./followups-types)
-
-## Condities
-
-Je kunt condities toevoegen aan opvolgacties zodat deze zich exact gedragen 
-als bedoeld is. Je kunt deze condities uitvoeren tijdens het aanmaken hiervan, 
-maar ook bij het uitvoeren. Meer over condities vindt je [hier](./conditions-for-follow-ups).
-
 ## Meer informatie
+
+Er zijn verschillende manieren om opvolgacties aan te maken, dus je 
+kunt kijken welke editor het beste werkt voor jou. Je kunt er ook voor kiezen 
+beide editors te gebruiken, maar we raden je af om geen dubbele opvolgacties 
+aan te maken. De artikelen hieronder kunnen je verder begeleiden in het 
+aanmaken van opvolgacties.
 
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
 * [Data-scripts](./followups-scripting.md)
-* [Opvolgactie types](./followups-types)
-* [Opvolgactie condities](./conditions-for-follow-ups)
 
