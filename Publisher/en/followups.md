@@ -1,63 +1,46 @@
-# Data-scripts
+# Follow-ups
 
-If someone clicks on a link in a mailing, or when some other kind of event
-happens, Copernica can automatically execute or schedule follow up actions.
-This allows you to make fancy campaigns that trigger new mailings when
-things happen. 
+Automation is the favorite buzzword of many marketeers. Follow-ups in Copernica 
+can automatically execute or schedule actions based on triggers, making them 
+a great way to automate your own campaigns. You can design your own 
+fancy campaigns, for example to send an email when someone clicks your 
+link, or to congratulate someone on their birthday.
 
-There are even multiple ways how you can configure these
-follow-ups. You can configure them in Publisher with a menu editor and 
-in Marketing Suite with a script editor for programmers and a simple drag 
-and drop editor for marketing specialists.
+There are several different ways to do this with Copernica software. If you 
+are new to automating campaigns the easiest way to create follow-ups is with 
+the user-friendly drag 'n drop editor in the Marketing Suite. Programmers 
+can use the advanced script editor in the Marketing Suite and Publisher offers 
+a menu editor.
 
 ## Follow-Up Manager (Marketing Suite)
 
-Within the [flowchart editor](./follow-up-manager-ms) you can chain boxes together to create 
-advanced campaigns using followups. In some boxes you can add 
-extra functionality with the use of JavaScript. The available properties 
-are the same as those of the script editor and can be [found here](./followups-scripting.md). 
-We designed the flowchart editor for marketers to create powerful 
-campaigns with a clear beginning and end.
+Within the [flowchart editor](./follow-up-manager-ms) you can chain boxes 
+together to create advanced campaigns using followups. It has been specifically 
+designed with marketeers in mind. If you have Javascript programming experience 
+the advanced mode can also be a really powerful tool, as it allows you to 
+define your own logic.
 
 ## Follow-Up Manager (Publisher)
 
-[Follow-ups in Publisher](./publisher-follow-up-manager) are always accessible in the menu of the 
-selected **database**, **document**, **survey** or **web form**. See the 
-link for more information on creating followups in Publisher. The Publisher does not have
-a scripting API, but because it has been around for so many years, it 
-has still evolved into a very powerful tool.
+[Follow-ups in Publisher](./follow-up-manager-publisher) are always accessible 
+in the menu of the selected **database**, **document**, **survey** or **web form**. 
+Follow-ups are created by combining a trigger and an action in the menu editor. 
+The Publisher does not have a scripting API.
 
 ## Script Editor
 
 Programmers can use the full power of Copernica's follow up system with the
 [*data-script* attribute](./followups-scripting.md). You can enrich 
-every hyperlink in an email for example to handle clicks exactly how you 
+every hyperlink in an email, for example, to handle clicks exactly how you 
 want.
-
-## Followup types
-
-Followups consist of a cause and an action. For **databases**, 
-**documents**, **surveys** and **webforms** there are different types 
-of causes available. You can also set a delay and a destination. Different 
-actions have different settings. More about all of this can be found 
-[here](./followups-types).
-
-## Conditions
-
-You can add conditions to follow-up actions to make sure they behave 
-exactly as intended. You can check these conditions on activation (creation 
-of the condition) or execution (of the followup). Read more about conditions 
-[here](./conditions-for-follow-ups).
 
 ## More information
 
-There are many ways to create followups, so make sure you find out what 
-works for you. There are different types of actions and triggers. You can 
-also add a condition to indicate when to evaluate data. The articles 
-below will teach you everything you need to know.
+There are many ways to create follow-ups, so you can try which editor 
+works better for you. You can also use both, but it is recommended that you 
+don't create duplicate follow-ups. The articles below provide more information 
+on how follow-ups work.
 
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
 * [Follow-up scripting](./followups-scripting.md)
-* [Follow-up types](./followups-types)
-* [Follow-up conditions](./conditions-for-follow-ups)
