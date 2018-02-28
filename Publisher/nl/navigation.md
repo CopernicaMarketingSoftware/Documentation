@@ -19,7 +19,6 @@
     * [Follow-up Manager](./followups.md)
     * [Data-scripts](./followups-scripting.md)
     * [Litmus checks](./litmus.md)
-* [E-mailings](./emailings)
     * [Een mailing versturen](./sending-a-mass-mailing)
     * [Standaard campagnes](./standard-email-campaigns)
 * [Statistieken](./statistics)
