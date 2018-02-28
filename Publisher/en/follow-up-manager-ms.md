@@ -1,32 +1,28 @@
-# Follow-up Manager
-
-The follow-up manager is a user-friendly tool to make advanced campaigns. 
-By integrating this tool with the template editor it is made easy to make 
-complicated and personalized follow-up actions. The follow-up manager can 
-be used when someone clicks on an element, for example a hyperlink, image, 
-video or other call-to-action. You could even keep track of what links 
-someone clicks in their profile.
-
-You can navigate to the follow-up-manager by selecting a CTA in the 
-template editor that you want to create a follow-up for. You can make 
-a follow-up with the flowchart editor or with the script editor.
-
-## Flowchart editor
-
-The flowchart editor creates follow-up actions by combining different boxes. 
-Some boxes even allow for additional JavaScript programming to add 
-extra functionalities. The available objects can be found [here](./followups-scripting).
-
+# Follow-up Manager Marketing Suite
+The Follow-up Manager is a user-friendly tool for creating advanced campaigns. Because this tool is integrated within the template editor and the database application, you can design advanced and personal follow-up actions at these locations.
+Within the follow-up manager you can combine advanced marketing campaigns by combining boxes. Advanced boxes allow you to add extra functionalities with JavaScript objects. You can find the available objects [here](./followups-scripting).
+ 
+## Database application
+With the follow-up manager you can easily start automating in the database application. The follow-ups always start with a trigger. For example, this trigger is a new or modified profile in a database. Around this you can automate campaigns with the follow-up manager. You can create follow-up actions on both a database and a collection.
+Within the database app you can find the followups within the database settings.
+ 
+## Template editor
+Within the HTML and the drag-n-drop template editor you can make an automatic follow-up action on every link.
+You will find the Follow-up Manager in the right column by selecting a button or link in the drag-n-drop template editor for which you want to create a follow-up action. 
+Within the HTML template editor you navigate within the Tools menu to the link click follow-ups.
+ 
+You can make a follow-up action in two ways, with the flowchart editor and with the script editor.
+ 
 ## Script editor
-
-The script editor is for the more advanced user or programmer. This is 
-where you can use JavaScript to create advanced campaigns. These scripts are, 
-just like the flowchart editor, executed on the Copernica server if an 
-element is clicked. The available objects can be found [here](./followups-scripting).
-
-## More information
-
-* [Follow-up manager](follow-up-manager-publisher)
-* [Data-script attribute](followups-scripting)
-* [Followup types](./followups-types)
-* [Follow-up conditions](./conditions-for-follow-ups)
+The script editor is just like an advanced box. Here you can use JavaScript in order to set up advanced campaigns. These scripts, like in the flowchart editor, are executed on the Copernica servers when a link is clicked. You can find the available objects [here](./followups-scripting).
+ 
+## Lead Scoring with the Flowchart Editor 
+To increase a score by a point, an Advanced Javascript Execute Box is required. Because you want to increment from an existing score, if there is one.
+ 
+```Javascript
+// update the score with 1
+if (profile.fields.leadscore) profile.fields.leadscore + = 1;
+ 
+// if no value has been saved yet
+else profile.fields.leadscore = 1;
+```
