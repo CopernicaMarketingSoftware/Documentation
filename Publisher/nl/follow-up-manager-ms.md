@@ -12,7 +12,7 @@ Je navigeert naar de Follow-up Manager door in de drag-n-drop template editor ee
 Binnen de HTML template editor navigeer je binnen het menu Tools naar de link click follow-ups.
 
 ## Script editor
-De script editor is net als de advanced boxes, voor een ervaren gebruiker. Hier kun je namelijk zelf aan de slag met JavaScript om zo geavanceerde campagnes op te zetten. Deze scripts worden, net als in de flowchart editor, uitgevoerd op de servers van Copernica als er op een link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting).
+De script editor is net als de advanced boxes, voor een developer. Hier kun je namelijk zelf aan de slag met JavaScript om zo geavanceerde campagnes op te zetten. Deze scripts worden, net als in de flowchart editor, uitgevoerd op de servers van Copernica als er op een link wordt geklikt. De beschikbare objecten vind je [hier](./followups-scripting).
  
 ## Lead scoring met de flowchart editor
 Om een score met een punt te verhogen, is een Advanced Javascript Execute Box nodig. Je wilt namelijk niet alleen een score in een veld stoppen, maar ook de bestaande score behouden.
