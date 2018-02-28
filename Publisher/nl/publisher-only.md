@@ -1,4 +1,4 @@
-# Functies alleen in Publisher
+# Publisher functies 
 
 Copernica heeft twee online marketing tools: De Publisher en de Marketing
 Suite. De Marketing Suite is nieuwer en de functionaliteit hiervan wordt
