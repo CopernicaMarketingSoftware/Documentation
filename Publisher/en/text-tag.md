@@ -52,7 +52,6 @@ whole text in italics or between quotes, for example.
 ## More information
 
 * [Templates](./templates)
-* [Publisher templates](./publisher-templates)
 * [Websites](./websites)
 * [Loop tag](./loop-tag)
 * [Image tag](./image-tag)

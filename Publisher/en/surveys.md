@@ -71,7 +71,7 @@ An [XSLT](css-and-xslt) stylesheet can be created under the `Style` menu.
 ## Results
 
 The results of a survey can be viewed per profile when the profile is 
-selected. You can also choose to [export](./surveys-export-results) or 
+selected. You can also choose to export or 
 follow them up with followups](./followups).
 
 ## More information

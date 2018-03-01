@@ -1,8 +1,7 @@
 # Verlaten winkelmandje campagne
 
 Een van de meest gevraagde functies voor gebruik met onze software
-is de abandoned shopping cart, het [verlaten
-winkelmandje](./abandonded-shopcarts.md "Verlaten winkelwagens").
+is de abandoned shopping cart, het verlaten winkelmandje.
 Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
