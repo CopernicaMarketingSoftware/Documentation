@@ -36,15 +36,15 @@ aangepast door op de actie zelf te klikken.
 
 De volgende databaseopvolgacties kun je met deze Follow-up manager maken:
 
-- Verstuur een Publisher document
-- Verstuur een Marketing Suite template
-- Verstuur een PDF document als fax
-- Verstuur naar een mobiel
-- Verstuur een tekst e-mail
-- Verstuur een SMS
-- Maak een actiepunt aan
-- Maak een nieuw (sub)profiel
-- Verwijder de gegevens van de geadresseerde
+-   Verstuur een Publisher document
+-   Verstuur een Marketing Suite template
+-   Verstuur een PDF document als fax
+-   Verstuur naar een mobiel
+-   Verstuur een tekst e-mail
+-   Verstuur een SMS
+-   Maak een actiepunt aan
+-   Maak een nieuw (sub)profiel
+-   Verwijder de gegevens van de geadresseerde
 
 
 ## Meer informatie
