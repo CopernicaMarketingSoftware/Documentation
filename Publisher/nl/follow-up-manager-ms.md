@@ -1,6 +1,31 @@
 # Follow-up Manager Marketing Suite
 De Follow-up Manager is een gebruiksvriendelijke tool om geavanceerde campagnes te maken. Doordat deze tool geïntegreerd is met de template editor en database applicatie kun je op deze plaatsen geavanceerde en persoonlijke opvolgacties worden ontworpen. 
 Binnen de follow-up manager kun je, door verschillende boxen met elkaar te combineren, geavanceerde marketingcampagnes maken. Geavanceerde boxen staan het toe om met JavaScript extra functionaliteiten toe te voegen. De beschikbare objecten kun je [hier](./followups-scripting) vinden.
+
+## Triggers
+De Follow-up manager begint altijd met een trigger. Binnen de template editor kan dit bijvoorbeeld een klik zijn op een link en in de database applicatie kan dit bijvoorbeeld een gewijzigd of nieuw (sub)profiel zijn. Vanaf dit moment heb jij de regie in handen met de Follow-up manager en kun je e-mails automatisch gaan versturen op basis van data.
+
+## Beslissingsmoment
+Door een beslissingsmoment in te stellen, bepaal jij wat voor e-mails er worden verstuurd. Zo kun je acties instellen op basis van bestedingsbedrag of de keren dat iemand je website bezoekt.
+
+Je kunt eenvoudig controleren of:
+- Een profiel is subscribed
+- Een profiel of subprofiel overeenkomt met een waarde
+- Als er op een specifieke link is geklikt
+- En je kunt een actie of beslissingsmoment uitstellen
+
+## Actie
+Met een actie kun je op het juiste moment e-mails versturen of een profiel verrijken.
+
+- Je kunt een profiel of subprofiel bijwerken
+- Een profiel of subprofiel aanmaken
+- Abonnement opzeggen of een bestemming verwijderen
+- En je kunt een e-mail sturen
+
+## Advanced boxes
+Het is ook mogelijk om door middel van Javascript klantendata op te slaan. Deze kun je vervolgens inzetten om de follow-up mogelijkheden uit te breiden.
+
+Met de geavanceerde boxes kun je JavaScript evaluatie checks maken maar ook Javascript functies uitvoeren. 
  
 ## Database applicatie
 Met de follow-up manager kun je in de database applicatie eenvoudig beginnen met automatiseren. De followups starten altijd met een trigger. Deze trigger is bijvoorbeeld een nieuw of gewijzigd profiel in een database. Hieromheen kun je met de follow-up manager campagnes automatiseren. Je kunt opvolgacties aanmaken op zowel een database als op een collectie.
@@ -27,4 +52,7 @@ else profile.fields.leadscore = 1;
 
 ## More information
 - [Opvolgacties](./followups)
-- [Opvolgacties in Publisher](./follow-up-manager-publisher)
+- [Opvolgacties in de Publisher](./follow-up-manager-publisher)
+
+
+
