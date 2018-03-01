@@ -1,24 +1,21 @@
-# Follow-Up Manager for Publisher
+# The Publisher Follow-up manager
 
-The Follow-Up Manager provides a handy overview of all follow-ups that
-are linked to a database, document, form or survey. Also, from here you
-manage all follow-ups. You can create new follow-ups and edit or remove
-existing follow-ups.
+The Follow-Up Manager within the Publisher provides a handy overview of all follow-ups that are linked to a database, document, form or survey. Also, from here you manage all follow-ups. You can create new follow-ups and edit or remove existing follow-ups.
 
 ![](../images/overview1.png)
 
-***Image:** database with multiple collections and their follow-ups.*
+**Image:** database with multiple collections and their follow-ups.
 
 The Follow-Up Manager is located behind an additional tab at the
 database, form, document, or survey.
 
 ![](../images/follow-up-tab.png)
 
-***Image:** This database has two follow-ups. When a new profile is
+**Image:** This database has two follow-ups. When a new profile is
 created, an email will be sent to the profile. The other follow-up
 removes the profile entirely, 5 days after the a profile opted out.*
 
-### Create new follow-ups
+## Create new follow-ups
 
 If no follow-up actions are linked, you can immediately create one. This
 will open the program to make new follow-up actions. The same
@@ -35,9 +32,19 @@ or edit existing follow-up actions.
 -   To edit the action, click the action of the follow-up (eg: Remove
     the profile or subprofile).
 
-![](../images/edit-follow-up.png)
+The following database follow-up actions can be made:
 
-***Image:** editing the settings of the follow-up*
+    - Send a Publisher document
+    - Send a Marketing Suite template
+    - Send a PDF document as fax
+    - Send a styled SMS
+    - send a text mail
+    - Send an SMS
+    - Create an action point
+    - Create a new (sub) profile
+    - Delete the data of the addressee
+
+**Image:** editing the settings of the follow-up*
 
 ## More information
 

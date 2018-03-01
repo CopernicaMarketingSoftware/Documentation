@@ -1,4 +1,4 @@
-# De Follow-up manager in de Publisher
+# De Follow-up manager van de Publisher
 
 De Follow-up manager biedt een handig overzicht van alle ingestelde
 opvolgacties op een database, collectie, document, enquête of
@@ -32,7 +32,19 @@ bereikbaar via het menu dat hoort bij de database, formulier, document
 of enquete.
 
 Bestaande opvolgacties kunnen vanuit het overzicht gemakkelijk worden
-aangepast door op de oorzaak, wachttijd of op de actie zelf te klikken.
+aangepast door op de actie zelf te klikken.
+
+De volgende databaseopvolgacties kun je met deze Follow-up manager maken:
+
+- Verstuur een Publisher document
+- Verstuur een Marketing Suite template
+- Verstuur een PDF document als fax
+- Verstuur naar een mobiel
+- Verstuur een tekst e-mail
+- Verstuur een SMS
+- Maak een actiepunt aan
+- Maak een nieuw (sub)profiel
+- Verwijder de gegevens van de geadresseerde
 
 
 ## Meer informatie
