@@ -1,4 +1,4 @@
-# Follow-up Manager Marketing Suite
+# De Follow-up manager in de Marketing Suite
 De Follow-up Manager is een gebruiksvriendelijke tool om geavanceerde campagnes te maken. Doordat deze tool geïntegreerd is met de template editor en database applicatie kun je op deze plaatsen geavanceerde en persoonlijke opvolgacties worden ontworpen. 
 Binnen de follow-up manager kun je, door verschillende boxen met elkaar te combineren, geavanceerde marketingcampagnes maken. Geavanceerde boxen staan het toe om met JavaScript extra functionaliteiten toe te voegen. De beschikbare objecten kun je [hier](./followups-scripting) vinden.
 
