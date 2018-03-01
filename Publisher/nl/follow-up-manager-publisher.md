@@ -1,6 +1,6 @@
-# Follow-up Manager Publisher
+# De Follow-up manager in de Publisher
 
-De Follow-Up Manager biedt een handig overzicht van alle ingestelde
+De Follow-up manager biedt een handig overzicht van alle ingestelde
 opvolgacties op een database, collectie, document, enquête of
 webformulier. Het is tevens mogelijk om vanuit het overzicht nieuwe
 opvolgacties aan te maken en bestaande opvolgacties te bewerken.
@@ -10,9 +10,9 @@ opvolgacties aan te maken en bestaande opvolgacties te bewerken.
 **Afbeelding:***een database met hieraan een heel web aan opvolgacties*
 
 
-## Waar vind ik de Follow-up Manager?
+## Waar vind ik de Follow-up manager?
 
-Je vindt de followupmanager achter een extra tab bij de database,
+Je vindt de follow-up manager achter een extra tab bij de database,
 document, formulier of enquete.
 
 ![](../images/follow-up-tab.png)
@@ -37,5 +37,5 @@ aangepast door op de oorzaak, wachttijd of op de actie zelf te klikken.
 
 ## Meer informatie
 
-* [Follow-up Manager](./follow-up-manager.md)
-* [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
+* [Follow-up manager](./follow-up-manager.md)
+* [De Follow-up manager in de Marketing Suite](./follow-up-manager-ms.md)
