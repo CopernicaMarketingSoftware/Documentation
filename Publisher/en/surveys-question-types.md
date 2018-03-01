@@ -81,5 +81,4 @@ The second question can be made optional to complete the workaround.
 ## More information
 
 * [Surveys](./surveys)
-* [Survey question options](./surveys-question-options)
 * [Editing surveys](./surveys-edit)

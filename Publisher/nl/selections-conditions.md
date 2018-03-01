@@ -71,7 +71,6 @@ gedurende een bepaalde periode.
 
 ### Sorteren en selecteren
 Je kunt ook een aantal profielen selecteren uit een gesorteerde lijst. 
-Hoe je dit precies kunt doen kun je lezen in [dit artikel](./selection-conditions-partcondition.md).
 
 ## Meer informatie
 

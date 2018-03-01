@@ -39,7 +39,7 @@ wat er is veranderd op het moment dat het scherm werd afgesloten.
 
 Templates die worden aangemaakt (en gebruikt) met de drag-and-drop editor zijn
 automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk 
-JSON bestanden. Door onze geavanceerde [Responsive Email](www.responsiveemail.com)
+JSON bestanden. Door onze geavanceerde Responsive Email
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 

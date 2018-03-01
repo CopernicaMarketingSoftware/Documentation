@@ -120,7 +120,6 @@ available [here](http://www.smarty.net).
 ## More information
 
 * [Templates](./templates)
-* [Publisher templates](./publisher-templates)
 * [Websites](./websites)
 * [Text tag](./text-tag)
 * [Image tag](./image-tag)

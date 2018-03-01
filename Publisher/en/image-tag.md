@@ -73,7 +73,6 @@ Add a class to your image block.
 ## More information
 
 * [Templates](./templates)
-* [Publisher templates](./publisher-templates)
 * [Websites](./websites)
 * [Text tag](./text-tag)
 * [Loop tag](./loop-tag)

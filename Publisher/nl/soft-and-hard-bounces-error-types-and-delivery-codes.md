@@ -56,9 +56,8 @@ e-mailadres te verkrijgen.
 
 Als een e-mailadres blijft bouncen, dan kan het e-mailadres beter
 verwijderd worden. Voor het selecteren van e-mailadressen op basis van
-afleverfouten kan je gebruik maken van het selectietype [check op
-resultaten
-e-mailcampagnes](./selectie-condities-check-op-resultaten-campagnes.md)
+afleverfouten kan je gebruik maken van het selectietype check op
+resultaten e-mailcampagnes
 .
 
 ## Meer informatie
