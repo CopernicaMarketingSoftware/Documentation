@@ -34,15 +34,15 @@ or edit existing follow-up actions.
 
 The following database follow-up actions can be made:
 
-    * Send a Publisher document
-    * Send a Marketing Suite template
-    * Send a PDF document as fax
-    * Send a styled SMS
-    * send a text mail
-    * Send an SMS
-    * Create an action point
-    * Create a new (sub) profile
-    * Delete the data of the addressee
+-   Send a Publisher document
+-   Send a Marketing Suite template
+-   Send a PDF document as fax
+-   Send a styled SMS
+-   send a text mail
+-   Send an SMS
+-   Create an action point
+-   Create a new (sub) profile
+-   Delete the data of the addressee
 
 ## More information
 
