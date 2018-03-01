@@ -8,14 +8,14 @@ The Followups starting always with a trigger. This can be a click within the tem
 ## Decision moments
 By setting up decision moments, you decide what your customers will see. You can set up actions based on customer behavior.
 
-You can easyily setup a check to see if:
+You can easily setup a check to see if:
 - A user is subscribed
-- If a profile or subprofile maches a condition
+- If a profile or subprofile matches a condition
 - If a link is clicked
 - Or you can delay a check
 
 ## Insert actions
-With an action you can send e-mails or enrich a profile.
+With an action you can send emails or enrich a profile.
 
 - You can update a profile
 - Create a profile or subprofile
@@ -56,3 +56,5 @@ else profile.fields.leadscore = 1;
 ## More information
 - [Follow-ups](./followups)
 - [Follow-ups in Publisher](./follow-up-manager-publisher)
+
+
