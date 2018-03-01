@@ -26,3 +26,7 @@ if (profile.fields.leadscore) profile.fields.leadscore + = 1;
 // if no value has been saved yet
 else profile.fields.leadscore = 1;
 ```
+
+## More information
+- [Follow-ups](./followups)
+- [Follow-ups in Publisher](./follow-up-manager-publisher)
