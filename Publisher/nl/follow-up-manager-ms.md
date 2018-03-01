@@ -24,3 +24,7 @@ if (profile.fields.leadscore) profile.fields.leadscore += 1;
 // als er nog geen waarde is opgeslagen 
 else profile.fields.leadscore = 1;
 ```
+
+## More information
+- [Opvolgacties](./followups)
+- [Opvolgacties in Publisher](./follow-up-manager-publisher)
