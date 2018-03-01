@@ -1,9 +1,9 @@
-# Follow-ups
+# The Follow-up manager
 
-Automation is the favorite buzzword of many marketeers. Follow-ups in Copernica 
+Marketing automation is a favorite subject of many marketeers. Follow-ups in Copernica 
 can automatically execute or schedule actions based on triggers, making them 
-a great way to automate your own campaigns. You can design your own 
-fancy campaigns, for example to send an email when someone clicks your 
+a great way to automate your campaigns. You can design your own 
+fancy campaigns, for example to send an email when someone clicks on a  
 link, or to congratulate someone on their birthday.
 
 There are several different ways to do this with Copernica software. If you 

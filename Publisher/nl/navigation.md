@@ -16,7 +16,7 @@
     * [Optimaliseren van selecties](./selections-optimization.md)
 * [Templates](./templates)
     * [Personaliseren](./personalization.md)
-    * [Follow-up Manager](./followups.md)
+    * [De Follow-up manager](./followups.md)
     * [Data-scripts](./followups-scripting.md)
     * [Litmus checks](./litmus.md)
     * [Een mailing versturen](./sending-a-mass-mailing)

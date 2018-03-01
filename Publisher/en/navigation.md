@@ -16,7 +16,7 @@
     * [Optimizing selections](./selections-optimization.md)
 * [Templates](./templates.md)
     * [Personalization](./personalization.md)
-    * [Follow-up Manager](./followups.md)
+    * [The Follow-up manager](./followups.md)
     * [Data-scripts](./followups-scripting.md)
     * [Videos and GIFs](./templates-video-gif.md)
     * [Litmus](./litmus.md)

@@ -1,6 +1,6 @@
-# Opvolgacties
+# De Follow-up manager
 
-Automatisering is het favoriete buzzword van veel marketeers. Opvolgacties in 
+Marketing automation is het favoriete buzzword van veel marketeers. Opvolgacties in 
 Copernica kunnen automatisch acties uitvoeren of plannen op basis van condities, 
 waardoor je makkelijk je eigen e-mailcampagnes kunt automatiseren. Je kunt 
 zo zelf prachtige campagnes creëren, bijvoorbeeld om een e-mail te sturen 
