@@ -12,6 +12,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [download-whitelist](responsiveemail#firewall-bypass)                    | Exceptions to the download-blacklist
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
 | [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
+| [cluster-timeout](cluster#command-line-option)                           | Number of seconds the --list-cluster option waits
 | [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
 | [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)

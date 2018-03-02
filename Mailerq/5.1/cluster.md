@@ -13,7 +13,7 @@ Every MailerQ server in the cluster shares its configuration with the other
 instances. This allows the management consoles to link to each other, 
 and more importantly, to trigger other instances to reload cached data
 when settings change. For example, when you add a DKIM key via the management
-console of your first MailerQ server, the other MailerQ servers also have
+console of your first MailerQ server, the other MailerQ servers will also have
 direct access to this new DKIM key.
 
 Another advantage of setting up a cluster is that email messages automatically
@@ -78,4 +78,55 @@ server can take over the deliveries. If you do want to achieve this, you have
 to set up a [heartbeat daemon](http://www.linux-ha.org/wiki/Heartbeat) so that other 
 servers can automatically jump in and take over when one of the servers fails.
 
+
+## Command line option
+
+To find out if the cluster is working, you can simply go to the management console
+of one of your MailerQ instances. If the console shows hyperlinks to your other
+MailerQ instances, you know that the instances have identified each other over
+the shared RabbitMQ exchange. You can also start MailerQ with the "--list-cluster"
+command line argument to find out if the cluster is working:
+
+```
+$ mailerq --list-cluster
+```
+
+If you start MailerQ like this, it will connect to the cluster and wait for one
+second. All the MailerQ instances that announce themselves within that second
+are displayed. This are normally all instances. However, if your servers or internal
+network is overloaded, the 1 second period could be too limited. In that case you
+can change the "cluster-timeout" variable to use a different timeout. This setting
+can be set in the config file or via the command line:
+
+```
+$ mailerq --list-cluster --cluster-timeout=5
+```
+
+
+## Accessing the cluster yourself
+
+You can also write your own scripts or programs to access the cluster. You can
+for example write an application that connects to RabbitMQ, and that publishes a 
+single JSON message to the cluster exchange to instruct all running MailerQ 
+instances that they should reload the database:
+
+````
+{ "reload": true; }
+````
+
+If the above instruction is received by a MailerQ instance, it will immediately
+connect to the database and reload all settings from it.
+
+It's also possible to intercept all cluster traffic. For this you simply have
+to create a queue in RabbitMQ and bind it to the shared cluster exchange. All
+messages that are sent to the cluster will then also end up in your queue. By
+reading out the messages from the queue, you will exactly see what is going on.
+
+Tip: normally all MailerQ instances report once every couple of minutes their
+status on the cluster. If you do not want to wait that long, you can send a
+single "hello" json message:
+
+````
+{ "hello": true; }
+````
 
