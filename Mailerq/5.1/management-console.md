@@ -15,11 +15,11 @@ The management console can be enabled in MailerQ's configuration file.
 The following variables should be used:
 
 ````
-www-port:           8485 (default: 8485)
-www-ip:             1.2.3.4 (default: 0.0.0.0, meaning all available IP's)
-www-password:       admin (empty by default)
-www-dir:            /usr/share/mailerq/www (default: /usr/share/mailerq/current/www)
-www-connections:    10
+www-port:               8485 (default: 8485)
+www-ip:                 1.2.3.4 (default: 0.0.0.0, meaning all available IP's)
+www-password:           admin (empty by default)
+www-dir:                /usr/share/mailerq/www (default: /usr/share/mailerq/current/www)
+www-connections:        10
 ````
 
 The `www-port` variable holds the port number for the management console;
@@ -60,10 +60,10 @@ The following configuration file variables are relevant for enabling
 HTTPS support:
 
 ````
-www-secure-port:            443 (empty by default)
-www-certificate:            /path/to/certificate.crt (empty by default)
-www-privatekey:             /path/to/privatekey.key (empty by default)
-www-ciphers:                !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH (empty by default)
+www-secure-port:        443 (empty by default)
+www-certificate:        /path/to/certificate.crt (empty by default)
+www-privatekey:         /path/to/privatekey.key (empty by default)
+www-ciphers:            !aNULL:!eNULL:!LOW:!SSLv2:!EXPORT:!EXPORT56:FIPS:MEDIUM:HIGH:@STRENGTH (empty by default)
 ````
 
 If you enable both HTTP and HTTPS, users who access the non-secure interface
@@ -90,6 +90,43 @@ optional config file variables to help a hand:
 www-host:               your.hostname (default: auto-detected)
 www-url:                https://your.hostname:port (default: auto-detected)
 ````
+
+## Rendering emails
+
+The management console allows administrators to monitor live SMTP traffic.
+All incoming or outgoing connections can be intercepted, and the entire SMTP
+handshake (EHLO, MAIL FROM, RCPT TO, DATA) is real time visible via the management
+console. You can thus see he raw MIME message data that is being sent or
+received.
+
+In fact, the management console even has an option to not only display the raw
+MIME data, but to extract the HTML source code too, and render this in your browser. 
+With this tool you can exactly see what type of messages your users are sending, 
+and you can take action if you see messages that look like spam, phishing or 
+other types of abuse. 
+
+However, if you use the console to look at rendered emails, your browser automatically 
+downloads images and other resources from the mail as well. This could trigger actions 
+(like statistics updates) on the servers where these files are hosted. If you
+do not want this and you have control over these servers, you can take precautionary
+measures, for example by ignoring downloads that come from your IP address, or 
+by ignoring downloads from clients with a specific user agent setting.
+
+At Copernica we use this approach. Our devops have browsers with a special
+user agent setting (with Firefox you can change this using the "about:config" url),
+so that clicks and opens from us do not pollute mailing stats. In MailerQ's config 
+file we have set the "render-useragent" value too, so that MailerQ refuses to 
+share emails with browsers with a different user agent setting.
+
+````
+render-useragent:       Copernica DevOps
+````
+
+The "render-useragent" setting ensures that only browsers with the specified user
+agent can render emails. If you have also updated your tracking servers to ignore
+clicks and opens from browsers with this user agent setting, you can make sure
+that you can safely look at rendered emails on the management console, without
+triggering any actions on your tracking servers.
 
 
 ## Advanced caching options
