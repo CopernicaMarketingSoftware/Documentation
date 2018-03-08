@@ -1,9 +1,9 @@
-# The Follow-up manager
+# Follow-ups
 
-Marketing automation is a favorite subject of many marketeers. Follow-ups in Copernica 
+Automation is the favorite buzzword of many marketeers. Follow-ups in Copernica 
 can automatically execute or schedule actions based on triggers, making them 
-a great way to automate your campaigns. You can design your own 
-fancy campaigns, for example to send an email when someone clicks on a  
+a great way to automate your own campaigns. You can design your own 
+fancy campaigns, for example to send an email when someone clicks your 
 link, or to congratulate someone on their birthday.
 
 There are several different ways to do this with Copernica software. If you 
@@ -20,12 +20,33 @@ designed with marketeers in mind. If you have Javascript programming experience
 the advanced mode can also be a really powerful tool, as it allows you to 
 define your own logic.
 
+### When to use the Marketing Suite flowchart editor?
+
+The Marketing Suite flowchart editor is the best option for you in the 
+following cases:
+
+    * You're new to follow-ups and want the most user-friendly editor.
+    * You want to trigger actions when users unsubscribe.
+    * You want to re-use follow-up actions.
+    * You want to execute additional or complex checks.
+    * You want to use your own Javascript code to write checks and actions.
+
 ## Follow-Up Manager (Publisher)
 
 [Follow-ups in Publisher](./follow-up-manager-publisher) are always accessible 
 in the menu of the selected **database**, **document**, **survey** or **web form**. 
 Follow-ups are created by combining a trigger and an action in the menu editor. 
 The Publisher does not have a scripting API.
+
+### When to use the Publisher menu editor?
+
+The Publisher menu editor is the best option for you in the following cases:
+    
+    * You want to define follow-ups for webforms or surveys.
+    * You want to send mobile mailings.
+    * You want to create tasks to contact the person triggering the follow-up.
+    * You want to trigger follow-ups when errors or impressions of a document 
+    are registered.
 
 ## Script Editor
 

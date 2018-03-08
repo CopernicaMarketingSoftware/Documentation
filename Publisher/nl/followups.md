@@ -1,6 +1,6 @@
-# De Follow-up manager
+# Opvolgacties
 
-Marketing automation is het favoriete buzzword van veel marketeers. Opvolgacties in 
+Automatisering is het favoriete buzzword van veel marketeers. Opvolgacties in 
 Copernica kunnen automatisch acties uitvoeren of plannen op basis van condities, 
 waardoor je makkelijk je eigen e-mailcampagnes kunt automatiseren. Je kunt 
 zo zelf prachtige campagnes creëren, bijvoorbeeld om een e-mail te sturen 
@@ -22,6 +22,16 @@ hebt met het programmeren van javascript kun je de krachtige mogelijkheden
 van de geavanceerde modus gebruiken, waarin je je eigen logica kan definiëren 
 in Javascript.
 
+### Wanneer gebruik ik de Marketing Suite flowchart editor?
+
+De Marketing Suite flowchart editor is zeer geschikt voor de volgende gevallen:
+
+    * Je begint net met follow-ups en wil de meest gebruiksvriendelijke editor gebruiken.
+    * Je wilt acties uitvoeren wanneer gebruikers zich uitschrijven.
+    * Je wilt opvolgacties hergebruiken.
+    * Je wilt extra checks of ingewikkelde checks toepassen op de opvolgactie.
+    * Je wilt Javascript code gebruiken om zelf checks en acties te schrijven.
+
 ## Follow-Up Manager (Publisher)
 
 [Opvolgacties in Publisher](./follow-up-manager-publisher) zijn altijd 
@@ -29,6 +39,16 @@ beschikbaar in het menu van een **database**, **document**, **enquête**
 of **webformulier**. Opvolgacties in Publisher worden gemaakt door een 
 conditie en een actie te definiëren in de menu editor. Publisher heeft 
 geen scripting API.
+
+### Wanneer gebruik ik de Publisher menu editor?
+
+De Publisher menu editor is zeer geschikt voor de volgende gevallen:
+    
+    * Je wilt opvolgacties aanmaken voor webformulieren en enquêtes.
+    * Je wilt mobiele mailings versturen.
+    * Je wilt taken om contact op te nemen aanmaken.
+    * Je wilt opvolgacties activeren op het moment dat er een impressie 
+    of error wordt geregistreerd.
 
 ## Script Editor
 
@@ -48,4 +68,3 @@ aanmaken van opvolgacties.
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
 * [Data-scripts](./followups-scripting.md)
-
