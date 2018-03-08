@@ -1,4 +1,4 @@
-# The use of data-scripts
+# Data-scripts
 
 If you're writing the HTML code of your mailings yourself, you can add a piece
 of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
@@ -9,7 +9,11 @@ while this script runs on the Copernica servers. You only have to add the data-s
 to the hyperlinks via:
 
 * the *data-script* attribute on &lt;a&gt; tags
-* the drag-and-drop editor in the follow-up form
+* the flowchart editor in the follow-up form
+
+Warning: You need the new link tracking system to use data-scripts. If you're using 
+Marketing Suite this is already enabled, but Publisher users have to enable the system 
+manually in their account settings.
 
 ## Available objects
 
@@ -56,6 +60,4 @@ script and runs it when a click is registered.
 
 ## More information
 
-* [Followups general](./followups)
-* [Followup types](./followups-types)
-* [Follow-up conditions](./conditions-for-follow-ups)
+* [Follow-ups](./followups)

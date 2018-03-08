@@ -26,4 +26,4 @@ var mySourceCode = message.source;
 
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
-* [Template Class](./followups-scripting-template)
+* [Template variabele](./followups-scripting-template)

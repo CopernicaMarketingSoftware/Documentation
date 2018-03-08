@@ -33,6 +33,6 @@ var myDatabase = copernica.database(databaseName);
 
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
-* [Profile data-script](./followups-scripting-profile)
-* [Subprofile data-script](./followups-scripting-subprofile)
+* [Profiel data-script](./followups-scripting-profile)
+* [Subprofiel data-script](./followups-scripting-subprofile)
 * [Template data-script](./followups-scripting-template)

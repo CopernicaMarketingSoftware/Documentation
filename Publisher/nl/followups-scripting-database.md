@@ -32,4 +32,4 @@ var someProfile = database.profiles[profileID];
 
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
-* [Collection data-script](./followups-scripting-collection)
+* [Collectie data-script](./followups-scripting-collection)

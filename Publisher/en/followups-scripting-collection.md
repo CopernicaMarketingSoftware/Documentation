@@ -22,8 +22,8 @@ The following example in javascript can be used to access a subprofile from a co
 
 ## More information
 * [The data-script object](./followups-scripting)
-* [Account object](./followups-scripting-copernica)
-* [The data object](./followups-scripting-data)
+* [Copernica/account variable](./followups-scripting-copernica)
+* [Data variable](./followups-scripting-data)
 * [Database variable](./followups-scripting-database)
 * [Subprofile variable](./followups-scripting-subprofile)
 

@@ -29,10 +29,9 @@ The following example in javascript can be used to access a database from an acc
     var myDatabase = copernica.database(databaseName);
 
 ## More information
-* [The data-script object](./followups-scripting)
-* [The data object](./followups-scripting-data)
-* [User profile information](./followups-scripting-profile)
-* [User subprofile information](./followups-scripting-subprofile)
-* [Template information](./followups-scripting-template)
-* [Destination information](./followups-scripting-destination)
-* [Copernica variable properties](./followups-scripting-copernica-properties)
+* [Data-scripts](./followups-scripting)
+* [Data variable](./followups-scripting-data)
+* [Profile variable](./followups-scripting-profile)
+* [Subprofile variable](./followups-scripting-subprofile)
+* [Template variable](./followups-scripting-template)
+* [Destination variable](./followups-scripting-destination)

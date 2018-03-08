@@ -4,7 +4,11 @@ A variable that gives access to current emailing **destination**. This variable 
 be either an alias to a [profile](./followups-scripting-profile.md) or a
 [subprofile](./followups-scripting-subprofile.md). It's set to a profile if
 emailing was sent to a database or selection. It's set to a subprofile if emailing
-was sent to a collection or mini-selection. 
+was sent to a collection or mini-selection.
+
+You can edit the variable and its available properties from Javascript code 
+or by editing the data-object of the profile/subprofile itself. You can edit 
+profile data with the stack icon when a (sub)profile is selected under "Database & Profiles".
 
 ## Available properties
 
