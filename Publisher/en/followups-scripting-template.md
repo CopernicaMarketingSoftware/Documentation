@@ -1,7 +1,9 @@
 # Followups: template variable
 
-A variable that gives access to a unpersonalized **template**.
+A variable that gives access to a unpersonalized **template**. 
 
+You can edit the value of this variable and its properties under the "Tools" menu in 
+the email designer.
 
 ## Available properties:
 
@@ -9,7 +11,6 @@ A variable that gives access to a unpersonalized **template**.
 * **name**: The name of the template (Read, write)
 * **subject**: The subject of the templates (Read, write)
 * **data**: See the documentation on [the data object](./followups-scripting-data)
-
 
 ## Available methods
 
@@ -19,7 +20,6 @@ The send method can be used to send this template object to a *target*. The targ
 be a normal single destination - such as a profile or a subprofile - but also many destinations, 
 such as an entire database or collection. The mail is currently scheduled to be sent immediately,
 and will be treated as any other scheduled email to the target.
-
 
 ## Example
 

@@ -3,6 +3,10 @@
 A variable that gives access to current **subprofile**. To request a 
 subprofile object please see the documentation on [the account object](./followups-scripting-copernica).
 
+You can edit the variable and its available properties from Javascript code 
+or with the stack icon when a subprofile is selected under the *Database & Profiles* 
+tab.
+
 ## Available properties
 
 * **ID**: The ID of the subprofile (Read-only)

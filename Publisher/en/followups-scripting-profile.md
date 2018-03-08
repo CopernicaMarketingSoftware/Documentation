@@ -4,6 +4,10 @@ In the data-script object you can access information about any **profile**.
 From a profile object you request and edit the information of the current 
 profile. To request a profile object please see the documentation on [the account object](./followups-scripting-copernica).
 
+You can edit the variable and its available properties from Javascript code 
+or with the stack icon when a profile is selected under the *Database & Profiles* 
+tab.
+
 ## Available properties
 
 * **ID**: The ID of the profile (Read-only)
@@ -20,6 +24,7 @@ profile. To request a profile object please see the documentation on [the accoun
 * **data**: See the documentation on [the data object](./followups-scripting-data)
 
 ## Available methods
+
 * **remove()**: Remove this profile from the database
 * **unsubscribe()**: Unsubscribe this profile
 * **createSubProfile(collection)**:  Create a new subprofile in the specified collection, returns the newly created subprofile;
@@ -32,6 +37,7 @@ The following example in javascript can be used to access the "age" field of a p
     var profileAge = profile.fields.age;
 
 ## More information
+
 * [The data-script object](./followups-scripting)
 * [The data object](./followups-scripting-data)
 * [Database information](./followups-scripting-database)
