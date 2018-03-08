@@ -35,4 +35,3 @@ The following example in javascript can be used to access a database from an acc
 * [User subprofile information](./followups-scripting-subprofile)
 * [Template information](./followups-scripting-template)
 * [Destination information](./followups-scripting-destination)
-* [Copernica variable properties](./followups-scripting-copernica-properties)
