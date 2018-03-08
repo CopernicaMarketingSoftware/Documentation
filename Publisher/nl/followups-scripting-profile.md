@@ -6,6 +6,9 @@ Een profile kan op meerdere manieren worden
 verkregen. Bijvoorbeeld via het [copernica data-script](./followups-scripting-copernica) 
 of via het [database data-script](./followups-scripting-database).
 
+Je kunt de variabele en zijn beschikbare eigenschappen aanpassen vanuit 
+Javascript code of met het "Profile microdata" knopje wanneer je een profiel 
+geselecteerd hebt onder het *Database & Profiles* tabje.
 
 ## Beschikbare eigenschappen
 
@@ -21,14 +24,12 @@ of via het [database data-script](./followups-scripting-database).
 * interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
 * data: 			zie documentatie over het [data data-script](./followups-scripting-data).
 
-
 ## Beschikbare functies
 
 * remove():			remove profile;
 * unsubscribe(): 	unsubscribe profile;
 * createSubProfile(collection):  Maak een nieuw subprofile aan, returnwaarde is het nieuwe subprofile;
 * subProfiles(collection (optioneel)):  Haal alle subprofiles op, eventueel uit een specifieke collectie.
-
 
 ## Voorbeeld
 
@@ -37,16 +38,14 @@ van een profile opvragen. In dit geval wordt
 de leeftijd van een profile opgevraagd. 
 Uiteraard kun je elk veld linken aan een profile.
 
-
 ```javascript
 var profileAge = profile.fields.age;
 ```
-
 
 ## Meer informatie
 
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
 * [Database data-script](./followups-scripting-database)
-* [Subprofile data-script](./followups-scripting-subprofile)
+* [Subprofiel data-script](./followups-scripting-subprofile)
 * [Destination data-script](./followups-scripting-destination)

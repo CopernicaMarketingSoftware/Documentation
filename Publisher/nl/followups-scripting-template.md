@@ -1,7 +1,10 @@
 # Data-script - template
 
-Het template data-script kan worden gebruikt om informatie van een template op te vragen of aan te passen. 
+Het template data-script kan worden gebruikt om informatie van een template op te vragen 
+of aan te passen. 
 
+Je kunt de variabele en beschikbare eigenschappen aanpassen met Javascript code 
+of in het "Tools" menu van de Email Designer.
 
 ## Beschikbare eigenschappen
 
@@ -10,12 +13,10 @@ Het template data-script kan worden gebruikt om informatie van een template op t
 * subject: 		onderwerp van de templates (read, write);
 * data: 		zie documentatie over het [data data-script](./followups-scripting-data).
 
-
 ## Beschikbare methoden
 
 send(target): 	direct verzenden van een e-mail naar een target (database, collection, 
 destination, profile of subprofile)
-
 
 ## Voorbeeld
 
@@ -33,7 +34,6 @@ var templateID = 1520;
 //set global destination
 copernica.template(templateID).send(destination);
 ```
-
 
 ## Meer informatie
 
