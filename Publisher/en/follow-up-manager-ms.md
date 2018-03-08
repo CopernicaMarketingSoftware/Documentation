@@ -1,6 +1,6 @@
 # Follow-up Manager Marketing Suite
 The Follow-up manager is a user-friendly tool for creating advanced campaigns. Because this tool is integrated within the template editor and the database application, you can design advanced and personal follow-up actions at these locations.
-Within the follow-up manager you can combine advanced marketing campaigns by combining boxes. Advanced boxes allow you to add extra functionalities with JavaScript objects. You can find the available objects [here](./followups-scripting).
+Within the follow-up manager you can combine advanced marketing campaigns by combining boxes. Advanced boxes allow you to add extra functionalities with JavaScript objects, [these are the available objects](./followups-scripting).
 
 ## Triggers
 The Followups starting always with a trigger. This can be a click within the template editor or a new or adjusted (sub)profile within the database application. From this moment on you can start automating emails based on actual data.
@@ -9,10 +9,9 @@ The Followups starting always with a trigger. This can be a click within the tem
 By setting up decision moments, you decide what your customers will see. You can set up actions based on customer behavior.
 
 You can easily setup a check to see if:
-- A user is subscribed
 - If a profile or subprofile matches a condition
 - If a link is clicked
-- Or you can delay a check
+- And you can delay a check
 
 ## Insert actions
 With an action you can send emails or enrich a profile.
@@ -23,18 +22,19 @@ With an action you can send emails or enrich a profile.
 - And you can send an email
 
 ## Advanced boxes
-Through JavaScript it's also possible to store customer data. You can execute these actions later on to develop sophisticated follow-up actions.
+Through JavaScript it's also possible to store customer data. You can execute these actions later on to develop sophisticated follow-up actions. [These are the available objects](./followups-scripting).
 
 With the advanced boxes you can make your own javascript evaluation and Javascript execution boxes.
  
 
 ## Database application
-With the follow-up manager you can easily start automating in the database application. The follow-ups always start with a trigger. For example, this trigger is a new or modified profile in a database. Around this you can automate campaigns with the follow-up manager. You can create follow-up actions on both a database and a collection.
+With the follow-up manager you can easily start automating in the database application. The follow-ups always start with a trigger. For example, this trigger is for example a click or a new/modified profile in a database. Around this you can automate campaigns with the follow-up manager. You can create follow-up actions on both a database and a collection.
 Within the database app you can find the followups within the database settings.
  
 ## Template editor
 Within the HTML and the drag-n-drop template editor you can make an automatic follow-up action on every link.
-You will find the Follow-up Manager in the right column by selecting a button or link in the drag-n-drop template editor for which you want to create a follow-up action. 
+You will find the Follow-up Manager in the right column by selecting a button or link in the drag-n-drop template editor for which you want to create a follow-up action.
+
 Within the HTML template editor you navigate within the Tools menu to the link click follow-ups.
  
 You can make a follow-up action in two ways, with the flowchart editor and with the script editor.
