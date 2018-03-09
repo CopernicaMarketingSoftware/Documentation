@@ -1,4 +1,4 @@
-# Data-script - data
+# Scripting - data eigenschap
 
 Het data data-script kan worden gebruikt om data in op te slaan. Dit kan 
 van alles zijn, maar over het algemeen kun je het beste data opslaan die 

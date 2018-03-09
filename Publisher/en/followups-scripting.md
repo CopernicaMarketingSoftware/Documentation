@@ -1,27 +1,27 @@
-# The use of data-scripts
+# Scripting in follow-ups 
 
-If you're writing the HTML code of your mailings yourself, you can add a piece
-of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
-by Copernica when the link is clicked. This works more or less the same as the 
-"onclick" attribute that you are probably already familiar with.
-However, there is one big difference: the "onclick" script is executed on the client, 
-while this script runs on the Copernica servers. You only have to add the data-scripts 
-to the hyperlinks via:
+In Copernica software you can write your own Javascript code to embed in 
+hyperlinks. If your Javascript is attached to a link the code is executed when the link is 
+clicked. It's similar to the "onlick" attribute, but your script will run 
+on Copernica servers. You can also write your own triggers and actions in the 
+[Marketing Suite follow-up editor](./follow-up-manager-ms).
+
+You can use your script by using:
 
 * the *data-script* attribute on &lt;a&gt; tags
-* the drag-and-drop editor in the follow-up form
+* the Javascript boxes in the advanced Marketing Suite flowchart editor for follow-ups
 
 ## Available objects
 
 Inside the script you can make use of a couple of global variables that identify 
-the (sub)profile that clicked on the link and other data that is relevant for 
-the click. Each of these objects have readonly properties to get data and some
-writable properties to change them as well. The following variables are accessible:
+the (sub)profile that clicked on the link and other relevant data. 
+Each of these objects have read-only properties to get data, others have 
+write properties as well. The following variables are accessible:
 
 | Variable name                                         | Description
 |-------------------------------------------------------|--------------------------------------|
 | [**copernica**](./followups-scripting-copernica)      | Copernica account                    |
-| [**mailing**](./followups-scripting-mailing)          | Previous mailing                     |
+| [**mailing**](./followups-scripting-mailing)          | Sent mailings                        |
 | [**message**](./followups-scripting-message)          | Personalized template                |
 | [**template**](./followups-scripting-template)        | Standard template                    |
 | [**database**](./followups-scripting-database)        | Database                             |
@@ -35,19 +35,20 @@ which you can use to store your own information regarding the object.
 
 ## A very simple example
 
-A possibility of the data-script object is to change a profile when a link 
+A possibility of the data-script object is to change profile data when a link 
 is clicked. This can be used to place an unsubscribe link that when clicked 
-sets a profile setting such that no more newsletters are send. To place a 
-link like this you can use the following code:
+sets a profile setting to indicate this person doesn't want to receive newsletters 
+anymore. Note that this functionality is also available in the 
+[unsubscribe settings](./database-unsubscribe-behavior), 
+but this is a simple example to get you started. 
 
 ```html
 <a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 ```
 
-While the example above is very simple you can write a lot more complicated 
-data-scripts. This data-script is executed when the link is clicked and 
-sets the profile field "newsletter" to "no". Now the user will be in the system, 
-but not receive any newsletters.
+When the script is executed (on click) the profile will be updated. Now 
+you can make your own [newsletter selection](./create-a-mailing-list) 
+to make sure you only send mail to people who are subscribed to your newsletter.
 
 Before an email is delivered, the data-script is removed from the original code. Your
 receivers therefore do not get to see the script when they open the source code of

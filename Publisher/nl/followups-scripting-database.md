@@ -1,10 +1,9 @@
-# Data-script - database
+# Scripting - database
 
 Je kunt het database data-script gebruiken om data uit de database
 op te vragen of te veranderen. Er zijn een aantal eigenschappen
 beschikbaar om aan te geven wat je precies uit de database wilt
 opvragen.
-
 
 ## Beschikbare eigenschappen
 
@@ -14,8 +13,8 @@ opvragen.
 * archived: 		een boolean waarde om aan te geven of de database gearchiveerd is (read and write);
 * created: 			tijdstip van aanmaken (read only);
 * profiles: 		array van database [profielen](./followups-scripting-profile). De keys in dit object zijn ids van profielen die gebruikt kunnen worden om de profielen zelf op te vragen;
-* data: 			zie de documentatie over [het data object](./followups-scripting-data).
-
+* data: 			een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
+Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
 ## Voorbeeld
 
@@ -26,7 +25,6 @@ opvragen:
 var profileID = 54840;
 var someProfile = database.profiles[profileID];
 ```
-
 
 ## Meer informatie
 
