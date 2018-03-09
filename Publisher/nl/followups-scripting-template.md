@@ -12,7 +12,7 @@ voor de gepersonalizeerde versie van een template.
 * data: 		een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
 Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
-## Beschikbare methoden
+## Beschikbare functies
 
 send(target): 	direct verzenden van een e-mail naar een target (database, collection, 
 destination, profile of subprofile)

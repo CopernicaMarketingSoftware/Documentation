@@ -20,7 +20,7 @@ beschreven.
 * data:				een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
 Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
-## Beschikbare methoden
+## Beschikbare functies
 
 * remove(): 		remove subprofile;
 * unsubscribe(): 	unsubscribe subprofile.
