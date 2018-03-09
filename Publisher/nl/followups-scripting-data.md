@@ -15,13 +15,12 @@ profile.data.klikopAanbieding1 = "ja";
 Vervolgens kun je de informatie gebruiken in een ander script:
 
 ```javascript
-if (profile.data.klikopAanbieding1 === "ja") {
+if (profile.data.klikopAanbieding1 == "ja") {
     // Voeg hier een actie toe.
 } else {
     // Voeg hier een andere actie toe.
 }
 ```
-
 
 ## Meer informatie
 
