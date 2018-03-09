@@ -7,11 +7,11 @@ opvragen van een instantie van een collectie.
 
 ## Beschikbare eigenschappen
 
-* id: 			id van de collection (read only)
-* name: 		naam van de collection (read and write)
-* created: 		tijdstip waarop de collection is aangemaakt (read only)
+* id: 			id van de collectie (read only)
+* name: 		naam van de collectie (read and write)
+* created: 		tijdstip waarop de collectie is aangemaakt (read only)
 * subprofiles: 	een array met [subprofiles](./followups-scripting-data) 
-                in deze collection. Het id van een subprofile kan als key gebruikt 
+                in deze collectie. Het id van een subprofile kan als key gebruikt 
                 worden om een subprofile object uit de array op te vragen (zie voorbeeld).
 * data: 		een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
 Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).

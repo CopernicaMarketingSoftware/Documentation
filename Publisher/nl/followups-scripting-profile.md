@@ -24,8 +24,8 @@ Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
 ## Beschikbare functies
 
-* remove():			remove profile;
-* unsubscribe(): 	unsubscribe profile;
+* remove():			Verwijder profiel;
+* unsubscribe(): 	Schrijf profiel uit;
 * createSubProfile(collection):  Maak een nieuw subprofiel aan, returnwaarde is het nieuwe subprofiel;
 * subProfiles(collection (optioneel)):  Haal alle subprofielen op, eventueel uit een specifieke collectie.
 

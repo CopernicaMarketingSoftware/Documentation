@@ -1,6 +1,6 @@
 # Scripting - destination
 
-Destination is een variabele die toegang geeft aan de ontvanger van de email. 
+De destination is een variabele die toegang geeft aan de ontvanger van de email. 
 De destination is altijd een alias voor het profiel of het subprofiel waarnaar 
 gemaild is. Als je mailt naar een database of selectie is dit een profiel, 
 als je mailt naar een collectie of mini-selectie is dit een subprofiel.
