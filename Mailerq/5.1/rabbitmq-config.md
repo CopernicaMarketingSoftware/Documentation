@@ -33,6 +33,11 @@ rabbitmq-address: amqp://guest:guest@host1/vhost,amqp://guest:guest@host2/vhost,
 ```
 Running a cluster allows you to use [highly available queues](https://www.rabbitmq.com/ha.html).
 
+If your RabbitMQ server supports secure connections, you can configure MailerQ
+to connect to a "amqps://" address instead. The communication between MailerQ
+and RabbitMQ will then be encrypted. MailerQ does not check the server's certificate,
+so self-signed certificates work too.
+
 
 ## RabbitMQ queues
 
