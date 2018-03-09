@@ -12,8 +12,7 @@ the documentation on the [data property](./followups-scripting-data) (Read and w
 
 ## Available methods
 
-`send(*target*): send directly from an email to a target (database, collection, profile or subprofile)`
-
+### send(*target*)
 The send method can be used to send this template object to a *target*. The target can
 be a normal single destination - such as a profile or a subprofile - but also many destinations, 
 such as an entire database or collection. The mail is currently scheduled to be sent immediately,
