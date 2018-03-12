@@ -13,6 +13,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
 | [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
 | [cluster-timeout](cluster#command-line-option)                           | Number of seconds the --list-cluster option waits
+| [cluster-verify](cluster#config-file-options)                            | Should the server certificate be verified (only used for amqps:// connections)
 | [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
 | [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
@@ -57,6 +58,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-results](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ result queue
 | [rabbitmq-retry](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ retry queue
 | [rabbitmq-success](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ success queue
+| [rabbitmq-verify](rabbitmq-config#rabbitmq-address)                      | Should the server certificate be verified (only used for amqps:// connections)
 | [received-log-compression](logging#received-messages)                    | Received log compression
 | [received-log-directory](logging#received-messages)                      | Received log directory
 | [received-log-history](logging#received-messages)                        | Received log history

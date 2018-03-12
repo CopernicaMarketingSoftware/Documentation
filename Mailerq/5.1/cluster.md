@@ -48,6 +48,22 @@ settings.
 It is also recommended to use the same relational database for each instance.
 By doing this, the instances use the same delivery throttles and DKIM keys.
 
+If your RabbitMQ server supports secure connections, you can configure MailerQ
+to connect to a "amqps://" address instead. The communication between MailerQ
+and RabbitMQ will then be encrypted.
+
+```
+cluster-address:        amqps://guest:guest@hostname/vhost
+cluster-verify:         false
+```
+
+MailerQ checks the server certificate when it connects to a secured RabbitMQ
+server. If this certificate can not be verified with one of the known openssl
+certificate authorities, MailerQ refuses to set up a connection. If you use a
+self-signed certificate, you may want to skip this extra test, and set the
+config file option "cluster-verify" to "false".
+
+
 
 ## How does it work internally?
 

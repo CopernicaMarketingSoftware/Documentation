@@ -35,8 +35,18 @@ Running a cluster allows you to use [highly available queues](https://www.rabbit
 
 If your RabbitMQ server supports secure connections, you can configure MailerQ
 to connect to a "amqps://" address instead. The communication between MailerQ
-and RabbitMQ will then be encrypted. MailerQ does not check the server's certificate,
-so self-signed certificates work too.
+and RabbitMQ will then be encrypted.
+
+```
+rabbitmq-address: amqps://guest:guest@hostname/vhost
+rabbitmq-verify:  false
+```
+
+MailerQ checks the server certificate when it connects to a secured RabbitMQ
+server. If this certificate can not be verified with one of the known openssl
+certificate authorities, MailerQ refuses to set up a connection. If you use a
+self-signed certificate, you may want to skip this extra test, and set the
+config file option "rabbitmq-verify" to "false".
 
 
 ## RabbitMQ queues
