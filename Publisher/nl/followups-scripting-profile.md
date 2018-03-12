@@ -1,11 +1,10 @@
-# Data-script - profile
+# Scripting - profile
 
-Het profile data-script wordt gebruikt om gegevens 
-van een profile aan te passen of op te vragen. 
-Een profile kan op meerdere manieren worden 
+Het profiel data-script wordt gebruikt om gegevens 
+van een profiel aan te passen of op te vragen. 
+Een profiel kan op meerdere manieren worden 
 verkregen. Bijvoorbeeld via het [copernica data-script](./followups-scripting-copernica) 
 of via het [database data-script](./followups-scripting-database).
-
 
 ## Beschikbare eigenschappen
 
@@ -19,15 +18,16 @@ of via het [database data-script](./followups-scripting-database).
 * database: 		[database](./followups-scripting-database) van het profile (read-only);
 * fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
 * interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
-* data: 			zie documentatie over het [data data-script](./followups-scripting-data).
+* data: 			een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
+Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
 
 ## Beschikbare functies
 
-* remove():			remove profile;
-* unsubscribe(): 	unsubscribe profile;
-* createSubProfile(collection):  Maak een nieuw subprofile aan, returnwaarde is het nieuwe subprofile;
-* subProfiles(collection (optioneel)):  Haal alle subprofiles op, eventueel uit een specifieke collectie.
+* remove():			Verwijder profiel;
+* unsubscribe(): 	Schrijf profiel uit;
+* createSubProfile(collection):  Maak een nieuw subprofiel aan, returnwaarde is het nieuwe subprofiel;
+* subProfiles(collection (optioneel)):  Haal alle subprofielen op, eventueel uit een specifieke collectie.
 
 
 ## Voorbeeld

@@ -1,4 +1,4 @@
-# Followups: copernica variable
+# Scripting: copernica variable
 
 The **copernica** variable is linked to the account registered with 
 Copernica. It is available in the data-script object and provides access 
@@ -7,7 +7,8 @@ inside this account.
 
 ## Available properties
 
-* **data**: see the documentation on [the data object](./followups-scripting-data)
+* **data**: An advanced property you can use to store more information. See 
+the documentation on the [data property](./followups-scripting-data) (Read and write)
 
 ## Available functions
 
@@ -29,10 +30,10 @@ The following example in javascript can be used to access a database from an acc
     var myDatabase = copernica.database(databaseName);
 
 ## More information
+
 * [The data-script object](./followups-scripting)
 * [The data object](./followups-scripting-data)
 * [User profile information](./followups-scripting-profile)
 * [User subprofile information](./followups-scripting-subprofile)
 * [Template information](./followups-scripting-template)
 * [Destination information](./followups-scripting-destination)
-* [Copernica variable properties](./followups-scripting-copernica-properties)

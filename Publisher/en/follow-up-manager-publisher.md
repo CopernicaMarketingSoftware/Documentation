@@ -17,22 +17,31 @@ removes the profile entirely, 5 days after the a profile opted out.*
 
 ## Create new follow-ups
 
-If no follow-up actions are linked, you can immediately create one. This
-will open the program to make new follow-up actions. The same
-functionality can also be accessed via the database / document / form /
-survey menu.
+You can make a new follow-up from the database, collection, document, form 
+or survey menu. You will see a menu where you can choose a trigger and 
+an action.
 
-To add a new follow-up, click on the item. From here you can also delete
-or edit existing follow-up actions.
+Existing follow-ups can also be edited by clicking on them.
 
--   To edit the cause of an existing follow-up action, click the cause
-    (a 'cause' is for example: when a profile is modified)
--   To set the delay of the follow-up, click the delay (eg 'Wait 5
-    days').
--   To edit the action, click the action of the follow-up (eg: Remove
-    the profile or subprofile).
+### Triggers
 
-The following database follow-up actions can be made:
+| Database                          | Collection                         |
+|-----------------------------------|------------------------------------|
+| Profile created                   | Subprofile created                 |
+| Profile modified                  | Subprofile modified                |
+| Profile created or modified       | Subprofile created or modified     |
+|                                   | Subprofiel removed                 |
+
+| Document                  | Survey                       | Webform               |
+|---------------------------|------------------------------|-----------------------|
+| Document sent             | Survey sent                  | Form submitted        |
+| Error registered          | Specific answer given        | New (sub)profile      |
+| Impression registered     |                              | (Sub)profile found    |
+| Click registered          |                              |                       |
+
+### Actions
+
+A follow-up can execute the following actions:
 
 -   Send a Publisher document
 -   Send a Marketing Suite template
@@ -42,6 +51,7 @@ The following database follow-up actions can be made:
 -   Send an SMS
 -   Create an action point
 -   Create a new (sub) profile
+-   Change (sub)profile data
 -   Delete the data of the addressee
 
 ## More information

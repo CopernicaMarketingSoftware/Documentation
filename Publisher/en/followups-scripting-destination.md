@@ -1,4 +1,4 @@
-# Followups: destination variable
+# Scripting: destination variable
 
 A variable that gives access to current emailing **destination**. This variable might
 be either an alias to a [profile](./followups-scripting-profile.md) or a
@@ -8,7 +8,8 @@ was sent to a collection or mini-selection.
 
 ## Available properties
 
-* **data**: See documentation on [the data object](./followups-scripting-data).
+* **data**: An advanced property you can use to store more information. See 
+the documentation on the [data property](./followups-scripting-data) (Read and write)
 
 ## More information
 

@@ -1,6 +1,7 @@
-# Followups: data variable
+# Scripting: data property
 
-The **data** variable is present on all [data-script objects](./followups-scripting) and can be used to store scalar information for your 
+The **data** property is present on all [data-script objects](./followups-scripting) 
+and can be used to store scalar information for your 
 scripts, which is not used by us. Therefore, it works similar to the fields parameters for a 
 profile and can store strings and numbers, but no arrays or objects. Every 
 data-script variable has a data object that can be used in all instances of 
@@ -19,7 +20,7 @@ By embedding this script in every link we can now see which items have been
 clicked. In our next data-script we can use this value to perform certain 
 actions.
 
-    if (profile.data.clickedSaleItem1 = "yes") {
+    if (profile.data.clickedSaleItem1 == "yes") {
         // Your action
     } else {
         // Some other action

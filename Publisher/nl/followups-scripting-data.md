@@ -1,4 +1,4 @@
-# Data-script - data
+# Scripting - data eigenschap
 
 Het data data-script kan worden gebruikt om data in op te slaan. Dit kan 
 van alles zijn, maar over het algemeen kun je het beste data opslaan die 
@@ -15,13 +15,12 @@ profile.data.klikopAanbieding1 = "ja";
 Vervolgens kun je de informatie gebruiken in een ander script:
 
 ```javascript
-if (profile.data.klikopAanbieding1 === "ja") {
+if (profile.data.klikopAanbieding1 == "ja") {
     // Voeg hier een actie toe.
 } else {
     // Voeg hier een andere actie toe.
 }
 ```
-
 
 ## Meer informatie
 
