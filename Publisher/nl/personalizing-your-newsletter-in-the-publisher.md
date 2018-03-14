@@ -1,9 +1,9 @@
 # Personaliseren binnen de Publisher
 
-In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp
+In de Publisher kun je van alles personaliseren. Je doet dit met behulp
 van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
-nieuwsbrieven.
+mailings en nieuwsbrieven.
 
 ## Gebruik van variabelen
 
@@ -11,7 +11,7 @@ Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
 * SMARTY is *hooflettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
-* Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
+* Accolades gebruiken kan met de [literal](./personalization-functions-literal) functie.
 
 ### Database variabelen
 
@@ -47,11 +47,6 @@ Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
 aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer
 nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
 template variabele **score** instellen en deze gebruiken met **{$property.score}**.
-
-### Custom content
-
-Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction)
-in je database met deze [functie](personalization-functions-in_miniselection).
 
 ## Accolades
 

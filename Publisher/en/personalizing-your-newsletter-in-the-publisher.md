@@ -1,9 +1,9 @@
 # Personalizing with the Publisher
 
-The Publisher is meant to make advanced newsletters. 
-On top of that the Publisher makes personalization 
-of your created e-mails very simple. Below, you'll
-find a few personalization examples. 
+There are advanced personalization functions available within the Publisher so 
+you can make very personalized newsletters. On top of that the Publisher makes 
+personalization of your created emails very simple. Below, you'll find a few 
+personalization examples. 
 
 ## Use of variables
 
@@ -49,26 +49,15 @@ put it in your email. You don't need the score later (if you do, save it
 to your database!). You can then set a template variable **score**, calculate 
 and assign the score and use it with **{$property.score}**.
 
-### Custom content
-
-You can also send separate content to different
-[selections](selections-introduction) in your database
-with the handy [in_selection](./personalization-functions-in_selection)
-and [in_miniselection](./personalization-functions-in_miniselection)
-functions. 
-
 ## Curly braces
 
-Our software automatically tracks curly braces as it 
-indicates that Smarty code is being stated. However, 
-sometimes you want to use curly braces just as symbols.
-You have to write some code in order to make sure that
-the software does not make a mistake by interpreting 
-the curly braces as Smarty. You can do it in two ways:
-you can use {ldelim} and {rdelim} or {literal} en 
-{/literal}. The difference is that with literal you 
-can turn of the Smarty engine for a whole set of text  
-that goes in between these tags.
+Our software automatically tracks curly braces as it indicates that Smarty 
+code is being stated. However, sometimes you want to use curly braces just as 
+symbols.You have to write some code in order to make sure thatthe software does 
+not make a mistake by interpreting the curly braces as Smarty. You can do it in 
+two ways: you can use {ldelim} and {rdelim} or {literal} en {/literal}. The 
+difference is that with literal you can turn of the Smarty engine for a whole 
+set of text that goes in between these tags.
 
 ```text
 {literal}
