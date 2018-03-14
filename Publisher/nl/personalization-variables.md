@@ -68,7 +68,7 @@ eigenaar van een dierenwinkel bent en een database met klantgegevens hebt met
 per klant een collecties met katten en een collectie met honden, dan kun je 
 dit soort personalisaties maken:
 
-    Beste {$profile.voornaam|escape},
+    Beste {$profile.voornaam},
     
     Volgens onze database heb je {$profile.katten|count} katten en 
     {$profile.honden|count} honden. 
@@ -76,10 +76,10 @@ dit soort personalisaties maken:
     De dieren in ons systeem:
     
     {foreach from=$profile.katten item=kat}
-        {$kat.naam|escape} (kat)
+        {$kat.naam} (kat)
     {/foreach}
     {foreach from=$profile.honder item=hond}
-        {$hond.naam|escape} (hond)
+        {$hond.naam} (hond)
     {/foreach}
 
 Bovenstaand eenvoudige voorbeeld demonstreert hoe krachtig de personalisatiemogelijkheden
@@ -99,9 +99,9 @@ is opgenomen dat verwijst naar een database met gegevens van dierenartsen.
 Je kunt dan in de mailing naar je klanten ook gebruik maken van gegevens van
 de dierenarts.
 
-    Beste {$profile.voornaam|escape},
+    Beste {$profile.voornaam},
     
-    Volgens ons systeem is uw dierenarts {$profile.dierenarts.naam|escape}.
+    Volgens ons systeem is uw dierenarts {$profile.dierenarts.naam}.
  
 Bij het personaliseren herkent Copernica dat *dierenarts* een foreign key veld
 is. Alle velden van de desbetreffende dierenarts zijn dan automatisch beschikbaar.

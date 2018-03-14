@@ -7,11 +7,9 @@ variable `{$name}` you use: `{$name|tolower}`.
 
 An example of how the modifiers can be used for a personalized mail is:
 ````text
-Hello {$name|escape},
+Hello {$name|ucfirst},
 
-Your name {$name|escape} is {$name|strlen} characters long.
-
-Bye!
+Your name {$name|ucfirst} is {$name|strlen} characters long.
 ````
 Besides calling one modifier on a variable it is possible to chain modifiers.
 E.g. you have name data. However, the strings containing names, are sometimes

@@ -275,8 +275,8 @@ HTML
 
 Dit filter wordt gebruikt om HTML-code uit een (sub)profielveld te
 filteren. Wanneer bijvoorbeeld per ongeluk in het veld {$Voornaam}
-'Pieter' staat, wordt via {$Voornaam|escape} het gedeelte weggefilterd,
-zodat de adressering toch gewoon 'Pieter' zal zijn.
+'<h1>Pieter</h1>' staat, wordt via {$Voornaam|escape} het html gedeelte escaped
+weergegeven zodat deze html geen effect heeft op je ontwerp.
 
 Let op: Dubbel escapen kan tot ongewenste situaties leiden. Smarty
 personalisatie wordt door de applicatie automatisch gefilterd, tenzij je

@@ -1,9 +1,9 @@
 # Personalization variables
 
-You normally personalize your mailings using the profile data of the addressee. 
-All database fields are directly usable as personalization variables. If a
-database contains the fields *firstname*, *lastname*, *city* and *email*,
-you can use the same variables for personalization:
+You normally personalize your mailings in the Publisher using the profile data
+of the addressee. All database fields are directly usable as personalization 
+variables. If a database contains the fields *firstname*, *lastname*, *city* 
+and *email*, you can use the same variables for personalization:
 
 * {$firstname}
 * {$lastname}
@@ -11,7 +11,8 @@ you can use the same variables for personalization:
 * {$email}
 
 You can either use this variables directly, or you can use them as member
-of one of the predefined objects {$profile}, {$subprofile} and {$destination}
+of one of the predefined objects {$profile.firstname}, {$subprofile.status} 
+and {$destination}
 
 ## Mailings to profiles
 
@@ -70,7 +71,7 @@ you are the owner of a pet shop and you have a database with information about
 your customers, with collections for the cats and dogs that your customers have,
 you can make personalizations like this:
 
-    Dear {$profile.firstname|escape},
+    Dear {$profile.firstname},
     
     According to our database, you have {$profile.cats|count} cats and
     {$profile.dogs|count} dogs. 
@@ -78,10 +79,10 @@ you can make personalizations like this:
     According to our system, you have the following pets:
     
     {foreach from=$profile.cats item=cat}
-        {$cat.name|escape} (cat)
+        {$cat.name} (cat)
     {/foreach}
     {foreach from=$profile.dogs item=dog}
-        {$dog.name|escape} (dog)
+        {$dog.name} (dog)
     {/foreach}
 
 The simple example above is a good indication how powerful the personalization 
@@ -101,9 +102,9 @@ database now also contains a foreign key field *veterinarian* that refers to a
 profile in a database holding all known veterinarians. You can use this field
 to include extra information in your campaigns:
 
-    Dear {$profile.firstname|escape},
+    Dear {$profile.firstname},
     
-    According to our database, your veterinarian is {$profile.veterinarian.name|escape}.
+    According to our database, your veterinarian is {$profile.veterinarian.name}.
  
 Copernica automatically recognizes that *veterination* is a foreign key field, and
 looks up the veterinarian profile that the field refers to. All fields of this 
