@@ -1,10 +1,10 @@
 # Personaliseren
 
-De Marketing Suite en Publisher stellen je in staat om e-mails te personaliseren. Je doet dit
-door middel van een speciaal stukje script. Dit script wordt, nadat de e-mail is verstuurd, 
-meteen vervangen door de correcte gegevens van de ontvanger. 
-Hieronder kun je nalezen hoe het personaliseren precies werkt binnen de omgeving van de Marketing
-Suite en de Publisher:
+De Marketing Suite en Publisher stellen je in staat om e-mails te 
+personaliseren. Je doet dit door middel van een speciaal stukje script. Dit 
+script wordt, voordat de e-mail is verstuurd, vervangen door de correcte data. 
+Hieronder kun je nalezen hoe het personaliseren precies werkt binnen de omgeving
+van de Marketing Suite en de Publisher:
 
 * [Personaliseren binnen de Publisher](./personalizing-your-newsletter-in-the-publisher.md)
 
@@ -22,7 +22,7 @@ als deze recent zijn aangeschaft, enzovoorts. In de Marketing Suite
 kun je personaliseren met behulp van de volgende syntax:
 
 ```text
-{$profile/subprofile.<veld>}
+{$profile.<veld>}
 
 Voorbeeld:
 
@@ -38,6 +38,40 @@ subprofiel aangeroepen wordt. Door in plaats van **{$Voornaam}** ,
 **{$profile.Voornaam}** of **{$subprofile.veldnaam}** te gebruiken is het
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
+
+## Data uit een collectie weergeven
+
+Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op 
+verschillende manieren doen. Om data uit de eerste rij van de collectie weer te 
+geven kun je deze syntax gebruiken.
+
+```text
+{$profile.collectie[0].veldnaam}
+```
+
+Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
+
+```text
+{$profile.collectie[1].veldnaam}
+```
+
+Om alle subprofielen weer te geven kun je een foreach functie gebruiken.
+
+```text
+{foreach $item in $profile.collectie}
+{$item.veldnaam}
+{/foreach}
+```
+
+Als je niet alle velden wilt weergeven kun je gebruik maken van de if functie
+in combinatie met de foreach functie.
+
+```text
+{foreach $item in $profile.collectie}{if $item.status == "InWinkelmandje"}
+{$item.veldnaam}
+{/if}
+{/foreach}
+```
 
 ## Personaliseren van hyperlinks
 
