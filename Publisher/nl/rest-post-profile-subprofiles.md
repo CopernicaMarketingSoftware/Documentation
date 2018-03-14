@@ -51,7 +51,6 @@ Dit voorbeeld vereist de [REST API class](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Interesses van een profiel overschrijven](rest-put-subprofile-interests)
 * [Opvragen van profieldata](rest-get-subprofile)
 * [Alle profiel bijwerken](rest-put-subprofile)
 * [Profiel verwijderen](rest-delete-subprofile)

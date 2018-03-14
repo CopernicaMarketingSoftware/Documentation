@@ -36,7 +36,7 @@ the screen was closed.
 Templates created and used with the drag-and-drop editor are automatically 
 responsive. If you would take a look under the hood you would see that 
 each template is actually a JSON file, which is converted into a beautiful 
-email with our [ResponsiveEmail](http://www.responsiveemail.com) service. 
+email with our [ResponsiveEmail](https://www.responsiveemail.com) service. 
 This means that no matter which device, your email always looks as intended.
 
 ## Spam check

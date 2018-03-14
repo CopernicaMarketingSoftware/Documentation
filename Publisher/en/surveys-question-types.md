@@ -81,4 +81,3 @@ The second question can be made optional to complete the workaround.
 ## More information
 
 * [Surveys](./surveys)
-* [Editing surveys](./surveys-edit)

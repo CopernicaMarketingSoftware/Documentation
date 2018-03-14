@@ -52,8 +52,7 @@ template variabele **score** instellen en deze gebruiken met **{$property.score}
 ### Custom content
 
 Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction)
-in je database met de [in_selection](./personalization-function-in_selection)
-en [in_miniselection](./personalization-function-in_miniselection) functies.
+in je database met deze [functie](personalization-functions-in_miniselection).
 
 ## Escapen van variabelen
 
