@@ -1,4 +1,4 @@
-# Follow-up tutorial: Profile enrichment
+# Campaign tutorial: Profile enrichment
 
 Profiles can be enriched with information you gather from your mailings. 
 What links a user views and what purchases they make can indicate what 
@@ -9,7 +9,9 @@ can also choose to personalize the email directly, for example by using
 different content blocks for different interests.
 
 In this tutorial we show you how to use follow-ups to enrich your profiles 
-with both clicks and orders.
+with both clicks and orders. You can also find the JSON code from this 
+tutorial in [this article](./campaign-tutorial-profile-enrichment-json) 
+so you can import it yourself.
 
 ## Information from clicks
 
@@ -103,6 +105,7 @@ Now that you have information about your customers it's important to use
 it well. The articles below can give you some ideas on how to group your 
 customers in selections and personalize emails just for them.
 
+* [Follow-ups in Marketing Suite](follow-up-manager-ms)
 * [Selections](./selections-introduction)
 * [Collections](./database-fields-and-collections)
 * [Personalization](./personalization)

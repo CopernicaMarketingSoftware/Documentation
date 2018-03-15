@@ -24,6 +24,6 @@ Want to know more about follow-ups in general or would you like some tutorials
 to get you started? Find out more in the links below.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
-* [Profile enrichment tutorial](./followups-tutorial-profile-enrichment)
+* [Profile enrichment tutorial](./campaign-tutorial-profile-enrichment)
 
 

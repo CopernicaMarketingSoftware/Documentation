@@ -75,7 +75,7 @@ can find the available objects [here](./followups-scripting).
 To show you the possibilities of follow-ups and get you started we 
 have prepared some tutorials for you:
 
-* [Profile enrichment](./followups-tutorial-profile-enrichment)
+* [Profile enrichment](./campaign-tutorial-profile-enrichment)
 
 ## More information
 

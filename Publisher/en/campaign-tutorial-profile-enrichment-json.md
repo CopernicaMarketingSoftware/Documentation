@@ -1,7 +1,7 @@
-# Follow-up Tutorial: Profile enrichment JSON
+# Campaign Tutorial: Profile enrichment JSON
 
 This page contains all the JSON code for the examples discussed in the 
-[Profile enrichment tutorial](./followups-tutorial-profile-enrichment). 
+[Profile enrichment tutorial](./campaign-tutorial-profile-enrichment). 
 Each example provides additional instructions on using the code where needed. 
 Make sure your fields always have the same (case-sensitive) name as the 
 example, or adapt the follow-up yourself where necessary.
@@ -226,4 +226,4 @@ This follow-up is applied to a collection.
 }
 ```
 
-[Back to the tutorial](./followups-tutorial-profile-enrichment)
+[Back to the tutorial](./campaign-tutorial-profile-enrichment)

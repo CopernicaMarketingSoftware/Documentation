@@ -25,6 +25,6 @@ mee aan de slag te gaan? Meer informatie is te vinden in de onderstaande
 artikelen.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
-* [Profiel verrijking tutorial](./followups-tutorial-profile-enrichment)
+* [Profiel verrijking tutorial](./campaign-tutorial-profile-enrichment)
 
 

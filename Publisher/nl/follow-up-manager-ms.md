@@ -79,7 +79,7 @@ objecten vind je [hier](./followups-scripting).
 Om je te laten zien wat er mogelijk is met follow-ups en je op weg te helpen 
 hebben we een aantal tutorials voor je klaar staan:
 
-* [Profiel verrijking](./followups-tutorial-profile-enrichment)
+* [Profiel verrijking](./campaign-tutorial-profile-enrichment)
 
 ## Meer informatie
 

@@ -1,7 +1,7 @@
 # Follow-up Tutorial: Profiel verrijking JSON
 
 Deze pagina bevat alle JSON code voor de voorbeelden besproken in de 
-[Profiel verrijking tutorial](./followups-tutorial-profile-enrichment). 
+[Profiel verrijking tutorial](./campaign-tutorial-profile-enrichment). 
 De voorbeelden geven meer instructies waar nodig. Zorg ervoor dat je 
 altijd dezelfde (hoofdlettergevoelige) namen gebruikt voor de velden of 
 dat je de follow-up zelf aanpast om je eigen namen te gebruiken.
@@ -227,4 +227,4 @@ Deze follow-up wordt toegepast op een collectie.
 }
 ```
 
-[Terug naar de tutorial](./followups-tutorial-profile-enrichment)
+[Terug naar de tutorial](./campaign-tutorial-profile-enrichment)
