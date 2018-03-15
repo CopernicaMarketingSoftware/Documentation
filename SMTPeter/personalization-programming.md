@@ -9,9 +9,8 @@ simple stuff can have bugs).
 ## Variables
 
 Let's just start with the basics of printing a user supplied variable. A variable
-starts with a `{$` than your variable name and is closed with a `}`. Valid
-variables for example are "{$firstname}", "{$age}" and "{$city}".
-Formally, a variable is required to:
+looks like {$name}, {$city} or {$country}: it starts with a `{$` than the variable 
+name and is closed with a `}`. Formally, a variable is required to:
 
 * start with a dollar sign,
 * is surrounded by curly braces
@@ -133,6 +132,7 @@ Here's the complete list:
 | $a >= $b       | $a is greather than or equal to $b            |
 | $a < $b        | $a is less than $b                            |
 | $a <= $b       | $a is less than or equal to $b                |
+| $a =~ "regex"  | $a matches with supplied regular expression   |
 | $a AND $b      | $a and $b are true                            |
 | $a OR $b       | $a or $b (or both) are true                   |
 | not $a         | Negation, will invert the boolean value of $a |
@@ -140,32 +140,16 @@ Here's the complete list:
 
 With the first six operators ("==" to "<=") you compare the the values
 of variables $a and $b. If the comparison holds, a true will be returned.
-If the comparison does not hold, you will get a false. With the next two
-operators in the table above (`AND` and `OR`) you can combine statements.
-If you are writing conditional blocks, you will sometimes find yourself
-ending up with blocks that become too long or complex. To shorten long or
-more complex conditional blocks, you can put multiple statements in one
-single {if} block using the AND and/or OR operators. The AND and/or OR
-operators combine the value of $a and $b into a true or a false. The
-following tables give the rules.
+If the comparison does not hold, you will get a false. The regular expression
+operator is special and powerful, and allows you to check if the variable
+matches a certain pattern. 
 
-The truth table for AND is:
-
-| $a    | $b    | result |
-| ----- | ----- | ------ |
-| true  | true  | true   |
-| true  | false | false  |
-| false | true  | false  |
-| false | false | false  |
-
-The truth table for OR is:
-
-| $a    | $b    | result |
-| ----- | ----- | ------ |
-| true  | true  | true   |
-| true  | false | true   |
-| false | true  | true   |
-| false | false | false  |
+With the next two operators in the table above (`AND` and `OR`) you can combine 
+statements. If you are writing conditional blocks, you will sometimes find 
+yourself ending up with blocks that become too long or complex. To shorten 
+long or more complex conditional blocks, you can put multiple statements in 
+one single {if} block using the AND and/or OR operators. The AND and/or OR
+operators combine the value of $a and $b into a true or a false.
 
 E.g. you can use AND like:
 

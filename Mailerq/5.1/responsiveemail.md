@@ -127,7 +127,7 @@ if the HTTP response headers allowed a longer cache time.
 
 ## Firewall bypass
 
-Most users run MailerQ on a server with unrestricted access to the local network. 
+Many users run MailerQ on a server with unrestricted access to the local network. 
 MailerQ is then not only capable of fetching resources from the internet, but 
 also directly from servers inside this local network. This makes it, for example, 
 possible to use attachment URL's like "http://192.168.0.22/attachment.pdf". This 
