@@ -76,6 +76,9 @@ To show you the possibilities of follow-ups and get you started we
 have prepared some tutorials for you:
 
 * [Profile enrichment](./campaign-tutorial-profile-enrichment)
+* [Re-activation](./campaign-tutorial-reactivation)
+* [Repeat purchases](./campaign-tutorial-repeat-purchase)
+* [Lead scoring](./campaign-tutorial-lead-scoring)
 
 ## More information
 

@@ -80,6 +80,9 @@ Om je te laten zien wat er mogelijk is met follow-ups en je op weg te helpen
 hebben we een aantal tutorials voor je klaar staan:
 
 * [Profiel verrijking](./campaign-tutorial-profile-enrichment)
+* [Re-activatie](./campaign-tutorial-reactivation)
+* [Herhalingsaankopen](./campaign-tutorial-repeat-purchase)
+* [Lead scoring](./campaign-tutorial-lead-scoring)
 
 ## Meer informatie
 
