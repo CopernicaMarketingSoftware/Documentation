@@ -10,4 +10,4 @@ the next box will be processed.
 
 If you don't want to take care about the outputs use execution box.
 
-[data-script]: https://www.copernica.com/en/documentation/followups-scripting
+[data-script]: https://www.copernica.com/en/documentation/data-object

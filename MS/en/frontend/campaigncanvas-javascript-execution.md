@@ -4,4 +4,4 @@ the [*data-script*][data-script] attribute.
 
 If you want to take actions depending on script output use evaluation box.
 
-[data-script]: https://www.copernica.com/en/documentation/followups-scripting
+[data-script]: https://www.copernica.com/en/documentation/data-object
