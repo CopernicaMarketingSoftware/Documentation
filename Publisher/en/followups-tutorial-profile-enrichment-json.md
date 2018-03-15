@@ -6,6 +6,9 @@ Each example provides additional instructions on using the code where needed.
 Make sure your fields always have the same (case-sensitive) name as the 
 example, or adapt the follow-up yourself where necessary.
 
+See the article on [importing](./followups-importing-exporting) for more 
+information.
+
 ## Information from clicks
 
 ### Collection
