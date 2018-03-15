@@ -63,4 +63,3 @@ in wijn.
 * [Follow-up Manager Publisher](./follow-up-manager-publisher)
 * [Follow-up Manager Marketing Suite](./follow-up-manager-ms)
 * [Opvolgactie scripting](./followups-scripting)
-* [Opvolgactie types](./followups-types)

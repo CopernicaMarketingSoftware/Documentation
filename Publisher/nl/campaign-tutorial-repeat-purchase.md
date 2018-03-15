@@ -5,6 +5,10 @@ van je producten weet kun je deze makkelijk gebruiken om herhaalde aankopen aan
 te moedigen. In deze tutorial laten we je een campagne zien waarmee je 
 herhalingsaankopen stimuleert.
 
+De JSON code voor de follow-ups kun je vinden in 
+[dit artikel](./campaign-tutorial-repeat-purchase-json) zodat je 
+deze ook kunt importeren.
+
 ## Mogelijkheden identiferen
 
 Om mogelijkheden te identificeren zullen we kijken naar de aankoopgeschiedenis. 

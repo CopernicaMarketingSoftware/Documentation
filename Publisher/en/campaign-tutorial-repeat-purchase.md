@@ -4,6 +4,10 @@ Purchases offer the opportunity for new purchases! If you know the lifespan
 of your products you can easily use this to encourage repeat purchases. 
 In this tutorial we'll show you how to set up such a campaign.
 
+You can also find the JSON code for the follow-ups from this 
+tutorial in [this article](./campaign-tutorial-repeat-purchases-json) 
+so you can import it yourself.
+
 ## Identifying possibilities
 
 To identify possibilities we'll be looking at their order history. 

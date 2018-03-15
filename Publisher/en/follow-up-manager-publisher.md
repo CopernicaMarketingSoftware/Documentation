@@ -48,5 +48,4 @@ The following database follow-up actions can be made:
 
 * [The Follow-up manager in the Marketing Suite](./follow-up-manager-ms)
 * [Data-script object](./followups-scripting.md)
-* [Followup types](./followups-types)
 * [Follow-up conditions](./conditions-for-follow-ups)

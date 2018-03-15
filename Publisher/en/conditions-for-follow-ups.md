@@ -51,4 +51,3 @@ you email people who have let you know that they are not interested anymore.
 * [Follow-up Manager Publisher](./follow-up-manager-publisher)
 * [Follow-up Manager Marketing Suite](./follow-up-manager-ms)
 * [Followups scripting](./followups-scripting)
-* [Followup types](./followups-types)
