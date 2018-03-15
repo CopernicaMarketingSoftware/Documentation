@@ -92,13 +92,11 @@ van de soft bounces en inactieve te agressief zijn.
     spamtrap](http://education.returnpath.com/questions/spam-traps-full-content-page/ "Spam Trap Best Practices")
     .
 -   Hoewel Copernica automatisch indieners van een spamklacht
-    uitschrijft als je dit [juist hebt
-    ingesteld](./setting-unsubscribe-behaviour-for-your-database-or-collection.md "Uitschrijfgedrag instellen op database of collectie")
-    , is het advies om ook een selectie te maken van de klagers. Deze
-    selectie kan jou namelijk informatie geven of je wel op een juiste
-    manier je opt-ins hebt gegenereerd of dat je jouw inschrijvers op
-    een gemakkelijke wijze de mogelijkheid biedt om zich uit te
-    schrijven. Maak daarvoor eenzelfde selectie aan als bij A\_Bounces
+    uitschrijft als je dit juist hebt ingesteld, is het advies om ook een 
+    selectie te maken van de klagers. Deze selectie kan jou namelijk informatie
+    geven of je wel op een juiste manier je opt-ins hebt gegenereerd of dat je 
+    jouw inschrijvers op een gemakkelijke wijze de mogelijkheid biedt om zich 
+    uit te schrijven. Maak daarvoor eenzelfde selectie aan als bij A\_Bounces
     met de naam F\_Klachten. Kies vervolgens bij de optie resultaat voor
     "Er moet een spamklacht ontvangen zijn". De datum hou je gelijk aan
     A\_Bounces.
@@ -146,7 +144,7 @@ gestuurd;
     betere verzendlijst waardoor je ook beter kunt testen in waar je
     doelgroep in geïnteresseerd is.
 
-    Het database-management houdt hier overigens niet bij op. Het is
+    Het databasemanagement houdt hier overigens niet bij op. Het is
     namelijk altijd van belang om je e-mailmarketingstatistieken in de
     gaten te houden. - Kijk naar je foutpercentage. Het advies is om
     deze onder de 2% of zelfs 1% te houden. Hoe lager hoe beter in

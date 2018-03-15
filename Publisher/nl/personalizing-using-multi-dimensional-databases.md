@@ -70,8 +70,8 @@ Hoe kun je hier nu op personaliseren? Veronderstel dat je een mailing
 wilt sturen aan alle medewerkers. In de mailing wil je personaliseren op
 naam van de medewerker, en het bedrijf waar ze voor werken.
 
-    Beste {$naam|escape},
-    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam|escape}.
+    Beste {$naam},
+    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam}.
 
 In bovenstaand voorbeeld maken we gebruik van de korte notatie, maar je
 zou ook kunnen personaliseren met {$profile.naam} en
@@ -96,11 +96,11 @@ databases en welke andere profielen er naar een bedrijf verwijzen, heeft
 elk profiel voortaan standaard ook een referentieveld. Via dit veld kun
 je opvragen welke verwijzende profielen er zijn:
 
-Mailing aan bedrijf {$bedrijfsnaam|escape},
+Mailing aan bedrijf {$bedrijfsnaam},
 
     Dit zijn jullie medewerkers:
     {foreach $referrers.medewerkers as $medewerker}
-        {$medewerker.naam|escape}
+        {$medewerker.naam}
     {/foreach}*
 
 Opnieuw gebruiken we de korte notatie. Het had ook met
@@ -117,15 +117,15 @@ medewerkers, en bij elke medewerker willen we opnieuw melden bij welk
 bedrijf hij werkt, maar ook wie er volgens ons zijn of haar collega's
 zijn:
 
-    Beste {$naam|escape},
+    Beste {$naam},
 
-    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam|escape}.
+    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam}.
 
     {if $werkgever.referrers.medewerkers|count > 1}
     En dit zijn je collega's:
     {foreach from=$werkgever.referrers.medewerkers item=collega}
         {if $collega.id != $id}
-            {$collega.naam|escape}
+            {$collega.naam}
         {/if}
     {/foreach}
     {/if}
@@ -172,16 +172,16 @@ We moeten dus ons volgende voorbeeld een beetje aanpassen, omdat we
 alleen de huidige collega's willen vermelden. Dat kan door precies aan
 te geven op basis van welk referentieveld je wilt selecteren:
 
-    Beste {$naam|escape},
+    Beste {$naam},
 
     Volgens onze gegevens werk je bij bedrijf
-    {$werkgever.bedrijfsnaam|escape}.
+    {$werkgever.bedrijfsnaam}.
 
     {if $werkgever.referrers["werkgever@medewerkers"]|count > 1}
     En dit zijn je collega's:
     {foreach from=$werkgever.referrers["werkgever@medewerkers"] item=collega}
         {if $collega.id != $id}
-            {$collega.naam|escape}
+            {$collega.naam}
         {/if}
     {/foreach}
     {/if}

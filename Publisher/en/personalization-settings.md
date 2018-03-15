@@ -41,25 +41,6 @@ russian, chinese, et cetera.
 The UTF-8 character set was developed later, en contains almost all characters
 used in the world. Thus, if you choose UTF-8, you're always good.
 
-
-## HTML filtering
-
-We [mentioned it before](./personalization.md): it is very important
-to escape personalization variables. Personalization variables often come
-from registration forms that were entered by anonymous users, and you therefore 
-never can be sure that they hold valid data. It is very well possible
-that someone entered a malicious piece of javascript which would end up
-in your website or mail if you personalize with "Dear {$name}". This could
-ruin your layout, or worse: makes your application vulnerable for all sorts
-of hacks.
-
-That's why we always advise to **escape all your variables**. The Smarty |escape
-modifier should be used to disarm potential harmful variables. So, use 
-"Dear {$name|escape}" to prevent disasters. Alternatively, you can also
-use the personalization settings to do this automatically. If you enable the
-HTML filtering option, all personalization variables are automatically 
-repaired, and you do not have to explicitly |escape them.
-
 ## Edit mode
 
 When you're working on a document, you'll find a edit mode button right next

@@ -64,4 +64,3 @@ te kunnen geven.*
 ## Meer informatie
 
 * [Enquêtes](./surveys)
-* [Enquêtes aanpassen](./surveys-edit)

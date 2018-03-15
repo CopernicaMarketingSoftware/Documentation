@@ -1,18 +1,17 @@
 # Personaliseren binnen de Publisher
 
-In de Publisher stel je gemakkelijk nieuwsbrieven samen. Je doet dit met behulp
+In de Publisher kun je van alles personaliseren. Je doet dit met behulp
 van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
-nieuwsbrieven.
+mailings en nieuwsbrieven.
 
 ## Gebruik van variabelen
 
 Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
-* Houd het veilig en door de **|escape** toe te passen op variabelen, niet iedereen heeft goede intenties.
 * SMARTY is *hooflettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
-* Accolades gebruiken als symbool kan met [literal](./personalization-functions-literal).
+* Accolades gebruiken kan met de [literal](./personalization-functions-literal) functie.
 
 ### Database variabelen
 
@@ -48,50 +47,6 @@ Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
 aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer
 nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
 template variabele **score** instellen en deze gebruiken met **{$property.score}**.
-
-### Custom content
-
-Je kunt daarnaast zelfs aparte content sturen naar verschillende [selecties](selections-introduction)
-in je database met de [in_selection](./personalization-function-in_selection)
-en [in_miniselection](./personalization-function-in_miniselection) functies.
-
-## Escapen van variabelen
-
-Hoewel het best een ingewikkeld onderwerp is behandelen we het escapen direct. Het
-is erg belangrijk. De variabele data die je in mailings of websites gebruikt
-is vaak door mensen zelf ingevoerd toen ze zich aanmeldden voor de nieuwsbrief.
-Mensen voeren hun eigen naam, woonplaats en e-mailadres in, en kunnen daarbij
-(opzettelijk!) foutieve gegevens invoeren. Je kunt de gegevens in de database
-dus niet zonder meer vertrouwen en ongecontroleerd in je nieuwsbrief
-plaatsen. Wat gebeurt er met de opmaak van je mailing als iemand heeft ingevoerd
-dat zijn naam "&lt;/table&gt;" is? En opmaak is niet eens het grootste probleem. Als
-je de ongecontroleerde ruwe input van gebruikers ongefilterd in mailings en op
-websites gebruikt ben je kwetsbaar voor allerlei vormen van misbruik en hacks.
-
-Er is gelukkig een eenvoudige Smarty *modifier* om dit te voorkomen: de *|escape*
-modifier. Elke variabele die je in een mailing opneemt moet je eerst door deze
-modifier halen om te zorgen dat eventueel schadelijke HTML code ongedaan wordt
-gemaakt:
-
-```text
-Beste {$profile.aanhef|escape} {$profile.naam|escape},
-
-Je ontvangt deze e-mail omdat bent aangemeld
-met het volgende e-mailadres: {$profile.email|escape}.
-```
-
-Houd hier altijd rekening mee als je Smarty code in HTML code gebruikt. Als je
-niet zeker bent van de data in de database omdat de gegevens door mensen
-door middel van vrije tekstvelden zijn ingevoerd, dan moet je de |escape modifier
-gebruiken om de data te neutraliseren. Dit geldt voor alle Smarty code binnen
-HTML tekst. Variabelen binnen de tekstversie van een mail of in de
-onderwerpsregel hoef je echter niet de escapen. De tekstversie en de onderwerpsregel
-bestaat niet uit HTML code en daar is de |escape modifier dus niet nodig.
-
-Als je variabelen automatisch wilt escapen, zodat je er niet steeds aan hoeft
-te denken om overal |escape achter te zetten, kun je dat onder de template of
-onder het document via het [formulier met personalisatieinstellingen](./personalization-settings.md)
-aangeven.
 
 ## Accolades
 

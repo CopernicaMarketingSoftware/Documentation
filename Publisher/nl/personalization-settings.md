@@ -47,25 +47,6 @@ De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter
 wereld bevat. Dit omvat de gewone toetsenbordtekens, maar ook de "rare" tekens
 uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
-## HTML filteren
-
-Zoals we [al eerder schreven](./personalization.md), is het escapen
-van variabelen van heel groot belang. De variabelen die je gebruikt bij het
-personaliseren zijn namelijk vaak door anonieme gebruikers van je website
-ingevoerd, bijvoorbeeld bij het aanmelden voor de nieuwsbrief. Deze gegevens
-kun je niet vertrouwen, omdat je nooit zeker weet of iemand niet stiekem HTML
-code of een script als naam heeft gebruikt. Als je de ruwe personalisatie 
-"Beste {$naam}" in een mailing of op een website plaatst, dan zou dit zomaar 
-een script kunnen zijn die de opmaak van je mailing verpest, of erger: die er
-voor zorgt dat je website of de accounts van je klanten worden gehackt.
-
-Daarom is ons advies: escape al je variabelen. De Smarty |escape modifier
-kun je gebruiken om alle variabelen te filteren en eventuele scripts of HTML
-code onschadelijk te maken. Gebruik dus "Beste {$naam|escape}" om drama's te 
-voorkomen. Met de personalisatieinstelling "HTML filteren" kun je dit automatisch 
-doen. Als je deze optie inschakelt wordt alle personalisatiedata gefilterd en
-hoe je dus niet langer zelf expliciet de |escape modifier aan te roepen.
-
 ## Bewerkmodus
 
 Als je een document bewerkt, zit naast het menu met de personalisatieopties 
