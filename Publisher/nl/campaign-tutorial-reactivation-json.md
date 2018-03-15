@@ -1,21 +1,21 @@
-# Campaign Tutorial: Re-activation campaign tutorial
+# Campagne Tutorial: Re-activation
 
-This page contains all the JSON code for the follow-ups discussed in the 
-[Re-activation campaign tutorial](./campaign-tutorial-reactivation). 
+Deze pagina bevat alle JSON code voor de follow-ups besproken in de 
+[Re-activation tutorial](./campaign-tutorial-reactivation). 
 
-See the article on [importing](./followups-importing-exporting) for more 
-information.
+Zie het [artikel over importeren](./followups-importing-exporting) voor meer informatie.
 
-## Example
+## Voorbeeld
 
-This follow-up example is applied to a collection. It copies a value 
-from a subprofile to a profile, in this case "purchase_date" from the 
-subprofile to "last_purchase_date" in the profile.
+Dit voorbeeld van een follow-up wordt toegepast op een collectie. 
+Het voorbeeld kopieert de waarde van een subprofiel naar een profiel, in dit geval 
+de waarde "order_datum" van het subprofiel naar "order_datum_laatst" in het profiel.
+Je kunt deze code niet gebruiken zonder de juiste velden in je eigen database/collectie.
 
 ```
 {
-    "name": "Last purchase date updater",
-    "description": "This follow-up updates the \"last purchase date\"  field in the profile.",
+    "name": "Laatste aankoop updater",
+    "description": "Deze follow-up update het \"order_datum_laatst\"  veld in het profiel.",
     "target": {
         "database": "7656",
         "collection": 20985
@@ -43,7 +43,7 @@ subprofile to "last_purchase_date" in the profile.
             },
             "description": "Script defined",
             "data": {
-                "script": "profile.fields.last_purchase_date = subprofile.fields.purchase_date;"
+                "script": "profile.fields.order_datum = subprofile.fields.order_datum_laatst;"
             },
             "type": "execute",
             "subtype": null,
@@ -65,17 +65,17 @@ subprofile to "last_purchase_date" in the profile.
                 "x": -288,
                 "y": -160
             },
-            "description": "Purchase is made."
+            "description": "Aankoop is gedaan."
         },
         {
             "position": {
                 "x": -288,
                 "y": -48
             },
-            "description": "Update date of last purchase in the profile."
+            "description": "Datum van laatste aankoop wordt geupdate."
         }
     ]
 }
 ```
 
-[Back to the tutorial](./campaign-tutorial-reactivation)
+[Terug naar de tutorial](./campaign-tutorial-reactivation)

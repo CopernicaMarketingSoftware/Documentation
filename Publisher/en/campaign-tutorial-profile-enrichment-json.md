@@ -1,6 +1,6 @@
 # Campaign Tutorial: Profile enrichment JSON
 
-This page contains all the JSON code for the examples discussed in the 
+This page contains all the JSON code for the follow-ups discussed in the 
 [Profile enrichment tutorial](./campaign-tutorial-profile-enrichment). 
 Each example provides additional instructions on using the code where needed. 
 Make sure your fields always have the same (case-sensitive) name as the 

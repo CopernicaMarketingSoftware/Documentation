@@ -1,6 +1,6 @@
-# Follow-up Tutorial: Profiel verrijking JSON
+# Campagne Tutorial: Profiel verrijking JSON
 
-Deze pagina bevat alle JSON code voor de voorbeelden besproken in de 
+Deze pagina bevat alle JSON code voor de follow-ups besproken in de 
 [Profiel verrijking tutorial](./campaign-tutorial-profile-enrichment). 
 De voorbeelden geven meer instructies waar nodig. Zorg ervoor dat je 
 altijd dezelfde (hoofdlettergevoelige) namen gebruikt voor de velden of 

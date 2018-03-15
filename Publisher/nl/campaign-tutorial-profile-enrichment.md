@@ -1,4 +1,4 @@
-# Follow-up tutorial: Profiel verrijking
+# Campagne tutorial: Profiel verrijking
 
 Profielen kunnen verrijkt worden met informatie die je uit je mailings 
 haalt. Wat een gebruiker bekijkt en wat zij kopen kan aangeven wat zij 
@@ -81,7 +81,7 @@ Je kunt follow-ups nog sneller toevoegen onder het follow-up tabje van een gesel
 
 Met [collecties](./database-fields-and-collections) kun je makkelijk 
 de aankopen van je klanten opslaan in je database. Wij raden je aan een 
-[integratie](https://www.copernica.com/en/integrations) met je webshop te maken 
+[integratie](https://www.copernica.com/nl/integrations) met je webshop te maken 
 om dit proces volledig te automatiseren. Je orders worden nu automatisch 
 geregistreerd als subprofielen in een collectie. Let op dat je in de collectie 
 velden aanmaakt voor alle informatie die je over een order wil opslaan.

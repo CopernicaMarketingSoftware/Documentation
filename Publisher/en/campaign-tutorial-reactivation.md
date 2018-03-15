@@ -1,4 +1,4 @@
-# Campaign Tutorial: Re-activation campaign tutorial
+# Campaign Tutorial: Re-activation
 
 Keeping your customers happy and engaged is very important. Gathering new 
 customers is expensive and time consuming, so re-activation campaigns 
@@ -10,7 +10,10 @@ them something like a discount or free shipping.
 
 ## Identifying inactive customers
 
-To identify inactive customers we'll be looking at their order history. 
+To identify inactive customers we'll be looking at their order history. You 
+can also do something like this with a last click. See 
+[this tutorial](./campaign-tutorial-profile-enrichment) for more information 
+on storing click data.
 With [collections](./database-fields-and-collections) you can easily 
 store purchases made by your customers. We recommend using an 
 [integration](https://www.copernica.com/en/integrations) with your webshop 
