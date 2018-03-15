@@ -7,7 +7,7 @@ persoonlijke opvolgacties worden ontworpen.
 Binnen de follow-up manager kun je, door verschillende boxen met elkaar 
 te combineren, geavanceerde marketingcampagnes maken. Geavanceerde boxen 
 staan het toe om met JavaScript extra functionaliteiten toe te voegen. 
-De beschikbare objecten kun je [hier](./followups-scripting) vinden.
+De beschikbare objecten kun je [hier](./data-object) vinden.
 
 ## Triggers
 
@@ -72,7 +72,7 @@ De script editor is net als de advanced boxes, voor een developer. Hier
 kun je namelijk zelf aan de slag met JavaScript om zo geavanceerde campagnes 
 op te zetten. Deze scripts worden, net als in de flowchart editor, uitgevoerd 
 op de servers van Copernica als er op een link wordt geklikt. De beschikbare 
-objecten vind je [hier](./followups-scripting).
+objecten vind je [hier](./data-object).
  
 ## Tutorials
 

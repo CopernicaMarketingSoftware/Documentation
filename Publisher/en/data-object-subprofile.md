@@ -1,7 +1,7 @@
-# Followups: subprofile variable
+# Data object: subprofile variable
 
 A variable that gives access to current **subprofile**. To request a 
-subprofile object please see the documentation on [the account object](./followups-scripting-copernica).
+subprofile object please see the documentation on [the account object](./data-object-copernica).
 
 You can edit the variable and its available properties from Javascript code 
 or with the stack icon when a subprofile is selected under the *Database & Profiles* 
@@ -16,10 +16,10 @@ tab.
 * **created**: Timestamp of profile creation (Read-only)
 * **removed**: Timestamp of profile removal (Read-only)
 * **unsubscribed**: A boolean value whether the subprofile is explicitly unsubscribed (Read-only)
-* **profile**: An object that gives access to a [profile](./followups-scripting-data) that the subprofile is from
-* **collection**: An object that gives access to a [collection](./followups-scripting-data) that the subprofile is from
+* **profile**: An object that gives access to a [profile](./data-object-data) that the subprofile is from
+* **collection**: An object that gives access to a [collection](./data-object-data) that the subprofile is from
 * **fields**: A hash map of all profiles fields. Fields are set as properties (Read and write)
-* **data**: See the documentation on [the data object](./followups-scripting-data)
+* **data**: See the documentation on [the data object](./data-object-data)
 
 ## Available methods
 * **remove()**: Remove this subprofile
@@ -33,7 +33,7 @@ The following example in javascript can be used to access the "age" field of a s
 
 ## More information
 
-* [The data-script object](./followups-scripting)
-* [The data object](./followups-scripting-data)
-* [User profile information](./followups-scripting-profile)
-* [Destination information](./followups-scripting-destination)
+* [The data-script object](./data-object)
+* [The data object](./data-object-data)
+* [User profile information](./data-object-profile)
+* [Destination information](./data-object-destination)

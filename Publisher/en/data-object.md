@@ -1,4 +1,4 @@
-# Data-scripts
+# Data scripting/Data object
 
 If you're writing the HTML code of your mailings yourself, you can add a piece
 of JavaScript (data-scripting) to each hyperlink. This JavaScript is executed 
@@ -22,19 +22,19 @@ the (sub)profile that clicked on the link and other data that is relevant for
 the click. Each of these objects have readonly properties to get data and some
 writable properties to change them as well. The following variables are accessible:
 
-| Variable name                                         | Description
-|-------------------------------------------------------|--------------------------------------|
-| [**copernica**](./followups-scripting-copernica)      | Copernica account                    |
-| [**mailing**](./followups-scripting-mailing)          | Previous mailing                     |
-| [**message**](./followups-scripting-message)          | Personalized template                |
-| [**template**](./followups-scripting-template)        | Standard template                    |
-| [**database**](./followups-scripting-database)        | Database                             |
-| [**collection**](./followups-scripting-collection)    | Collection                           |
-| [**profile**](./followups-scripting-profile)          | Profile                              |
-| [**subprofile**](./followups-scripting-subprofile)    | Subprofile                           |
-| [**destination**](./followups-scripting-destination)  | Alias to profile/subprofile          |
+| Variable name                                 | Description
+|-----------------------------------------------|--------------------------------------|
+| [**copernica**](./data-object-copernica)      | Copernica account                    |
+| [**mailing**](./data-object-mailing)          | Previous mailing                     |
+| [**message**](./data-object-message)          | Personalized template                |
+| [**template**](./data-object-template)        | Standard template                    |
+| [**database**](./data-object-database)        | Database                             |
+| [**collection**](./data-object-collection)    | Collection                           |
+| [**profile**](./data-object-profile)          | Profile                              |
+| [**subprofile**](./data-object-subprofile)    | Subprofile                           |
+| [**destination**](./data-object-destination)  | Alias to profile/subprofile          |
 
-A few of these objects also have [the data object](./followups-scripting-data), 
+A few of these objects also have [the data object](./data-object-data), 
 which you can use to store your own information regarding the object.
 
 ## A very simple example

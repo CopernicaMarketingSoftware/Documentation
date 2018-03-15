@@ -1,4 +1,4 @@
-# Data-script - template
+# Data object - template
 
 Het template data-script kan worden gebruikt om informatie van een template op te vragen 
 of aan te passen. 
@@ -11,7 +11,7 @@ of in het "Tools" menu van de Email Designer.
 * id: 			id van de template (read-only);
 * name: 		naam van de template (read, write);
 * subject: 		onderwerp van de templates (read, write);
-* data: 		zie documentatie over het [data data-script](./followups-scripting-data).
+* data: 		zie documentatie over het [data data-script](./data-object-data).
 
 ## Beschikbare methoden
 
@@ -37,6 +37,6 @@ copernica.template(templateID).send(destination);
 
 ## Meer informatie
 
-* [Data-scripts](./followups-scripting)
-* [Data data-script](./followups-scripting-data)
-* [Message data-script](./followups-scripting-message)
+* [Data-scripts](./data-object)
+* [Data data-script](./data-object-data)
+* [Message data-script](./data-object-message)

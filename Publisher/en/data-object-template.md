@@ -1,4 +1,4 @@
-# Followups: template variable
+# Data object: template variable
 
 A variable that gives access to a unpersonalized **template**. 
 
@@ -10,7 +10,7 @@ the email designer.
 * **ID**: The ID of the template (Read-only)
 * **name**: The name of the template (Read, write)
 * **subject**: The subject of the templates (Read, write)
-* **data**: See the documentation on [the data object](./followups-scripting-data)
+* **data**: See the documentation on [the data object](./data-object-data)
 
 ## Available methods
 
@@ -41,7 +41,7 @@ copernica.template(templateID).send(destination)
 
 ## More information
 
-* [The data-script object](./followups-scripting)
-* [The data object](./followups-scripting-data)
-* [Personalized template variable](./followups-scripting-message)
-* [Mailing variable](./followups-scripting-mailing)
+* [The data-script object](./data-object-scripting)
+* [The data object](./data-object-data)
+* [Personalized template variable](./data-object-message)
+* [Mailing variable](./data-object-mailing)

@@ -1,6 +1,6 @@
-# Followups: data variable
+# Data object: data variable
 
-The **data** variable is present on all [data-script objects](./followups-scripting) and can be used to store scalar information for your 
+The **data** variable is present on all [data-script objects](./data-object) and can be used to store scalar information for your 
 scripts, which is not used by us. Therefore, it works similar to the fields parameters for a 
 profile and can store strings and numbers, but no arrays or objects. Every 
 data-script variable has a data object that can be used in all instances of 
@@ -36,13 +36,13 @@ you could add a check to prevent people from clicking multiple times.
 
 ## More information
 
-* [The data-script object](./followups-scripting)
-* [Copernica/Account variable](./followups-scripting-copernica)
-* [Database variable](./followups-scripting-database)
-* [Collection variable](./followups-scripting-collection)
-* [Profile variable](./followups-scripting-profile)
-* [Subprofile variable](./followups-scripting-subprofile)
-* [Destination variable](./followups-scripting-profile)
-* [Mailing variable](./followups-scripting-mailing)
-* [Template variable](./followups-scripting-template)
-* [Message variable](./followups-scripting-message)
+* [The data-script object](./data-object)
+* [Copernica/Account variable](./data-object-copernica)
+* [Database variable](./data-object-database)
+* [Collection variable](./data-object-collection)
+* [Profile variable](./data-object-profile)
+* [Subprofile variable](./data-object-subprofile)
+* [Destination variable](./data-object-profile)
+* [Mailing variable](./data-object-mailing)
+* [Template variable](./data-object-template)
+* [Message variable](./data-object-message)

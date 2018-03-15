@@ -6,7 +6,7 @@ application, you can design advanced and personal follow-up actions at these
 locations. Within the follow-up manager you can combine advanced marketing 
 campaigns by combining boxes. Advanced boxes allow you to add extra 
 functionalities with JavaScript objects. You can find the available 
-objects [here](./followups-scripting).
+objects [here](./data-object).
 
 ## Triggers
 
@@ -68,7 +68,7 @@ and with the script editor.
 The script editor is just like an advanced box. Here you can use JavaScript 
 in order to set up advanced campaigns. These scripts, like in the flowchart 
 editor, are executed on the Copernica servers when a link is clicked. You 
-can find the available objects [here](./followups-scripting).
+can find the available objects [here](./data-object).
  
 ## Tutorials
 

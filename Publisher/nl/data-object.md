@@ -1,5 +1,4 @@
 # Data-scripts
-
 Met data-scripts kun je allerlei opvolgacties aan hyperlinks 
 koppelen. Deze scripts worden door Copernica uitgevoerd, zodra 
 iemand op zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde 
@@ -23,15 +22,15 @@ data-scripts kunt gebruiken. Met deze objecten kun
 je gegevens uit je account ophalen en bewerken. 
 Hiervoor zijn de volgende objecten beschikbaar:
                                       
-* [copernica](./followups-scripting-copernica);
-* [mailing](./followups-scripting-mailing);      
-* [template](./followups-scripting-template);  
-* [message](./followups-scripting-message);     
-* [destination](./followups-scripting-destination);
-* [profile](./followups-scripting-profile).        
+* [copernica](./data-object-copernica);
+* [mailing](./data-object-mailing);      
+* [template](./data-object-template);  
+* [message](./data-object-message);     
+* [destination](./data-object-destination);
+* [profile](./data-object-profile).        
 
 Deze objecten hebben een ding gemeen. Namelijk, ze bezitten 
-allen het [data data-script](./followups-scripting-data) 
+allen het [data data-script](./data-object-data) 
 dat je kunt gebruiken om informatie in op te slaan. 
 
 ## Voorbeeld

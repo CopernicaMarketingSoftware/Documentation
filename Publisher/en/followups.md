@@ -51,7 +51,7 @@ The Publisher menu editor is the best option for you in the following cases:
 ## Script Editor
 
 Programmers can use the full power of Copernica's follow up system with the
-[*data-script* attribute](./followups-scripting.md). You can enrich 
+[*data-script* attribute](./data-object.md). You can enrich 
 every hyperlink in an email, for example, to handle clicks exactly how you 
 want.
 
@@ -64,4 +64,4 @@ on how follow-ups work.
 
 * [Follow-Up Manager Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-Up Manager Publisher](./follow-up-manager-publisher.md)
-* [Follow-up scripting](./followups-scripting.md)
+* [Follow-up scripting](./data-object.md)

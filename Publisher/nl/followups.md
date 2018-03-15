@@ -53,7 +53,7 @@ De Publisher menu editor is zeer geschikt voor de volgende gevallen:
 ## Script Editor
 
 Programmeurs kunnen de volledige kracht van Copernica's follow-up systeem 
-benutten met het [*data-script* attribuut](./followups-scripting.md). Elke 
+benutten met het [*data-script* attribuut](./data-object.md). Elke 
 hyperlink kun je zo bijvoorbeeld verreiken met je eigen script om kliks 
 af te handelen.
 
@@ -67,4 +67,4 @@ aanmaken van opvolgacties.
 
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)
 * [Follow-up Manager van de Publisher](./follow-up-manager-publisher.md)
-* [Data-scripts](./followups-scripting.md)
+* [Data-scripts](./data-object.md)

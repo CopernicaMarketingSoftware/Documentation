@@ -1,8 +1,8 @@
-# Followups: destination variable
+# Data object: destination variable
 
 A variable that gives access to current emailing **destination**. This variable might
-be either an alias to a [profile](./followups-scripting-profile.md) or a
-[subprofile](./followups-scripting-subprofile.md). It's set to a profile if
+be either an alias to a [profile](./data-object-profile.md) or a
+[subprofile](./data-object-subprofile.md). It's set to a profile if
 emailing was sent to a database or selection. It's set to a subprofile if emailing
 was sent to a collection or mini-selection.
 
@@ -12,11 +12,11 @@ profile data with the stack icon when a (sub)profile is selected under "Database
 
 ## Available properties
 
-* **data**: See documentation on [the data object](./followups-scripting-data).
+* **data**: See documentation on [the data object](./data-object-data).
 
 ## More information
 
-* [The data-script object](./followups-scripting)
-* [Data object](./followups-scripting-data)
-* [Profile variable](./followups-scripting-profile)
-* [Subprofile variable](./followups-scripting-subprofile)
+* [The data-script object](./data-object)
+* [Data object](./data-object-data)
+* [Profile variable](./data-object-profile)
+* [Subprofile variable](./data-object-subprofile)

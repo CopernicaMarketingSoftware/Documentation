@@ -1,4 +1,4 @@
-# Data-script - mailing
+# Data object - mailing
 
 Het mailing data-script kan worden gebruikt om informatie op te vragen over een mailing. 
 
@@ -7,7 +7,7 @@ Het mailing data-script kan worden gebruikt om informatie op te vragen over een 
 
 * id: 			id van de mailing (Read-only);
 * subject: 		onderwerp van de mailing (Read-only);
-* data: 		zie documentatie over het [data data-script](./followups-scripting-data).
+* data: 		zie documentatie over het [data data-script](./data-object-data).
 
 
 ## Voorbeeld
@@ -21,5 +21,5 @@ var mySubject = mailing.subject;
 
 ## Meer informatie
 
-* [Data-scripts](./followups-scripting)
-* [Data data-script](./followups-scripting-data)
+* [Data-scripts](./data-object)
+* [Data data-script](./data-object-data)

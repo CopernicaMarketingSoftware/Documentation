@@ -1,4 +1,4 @@
-# Followups: message variable
+# Data object: message variable
 
 A variable that gives access to personalized **snapshot** of a template.
 
@@ -7,7 +7,7 @@ A variable that gives access to personalized **snapshot** of a template.
 * **name**: The name of the snapshot (Read-only property)
 * **source**: The source code of the personalized snapshot (Read-only property)
 * **subject**: The subject of the snapshot (Read-only property)
-* **data**: See the documentation on [the data object](./followups-scripting-data)
+* **data**: See the documentation on [the data object](./data-object-data)
 
 ## Example
 
@@ -17,6 +17,6 @@ The following example in javascript can be used to access the source code for a 
 
 ## More information
 
-* [The data-script object](./followups-scripting)
-* [Template information](./followups-scripting-template)
-* [Mailing information](./followups-scripting-mailing)
+* [The data-script object](./data-object)
+* [Template information](./data-object-template)
+* [Mailing information](./data-object-mailing)

@@ -17,7 +17,7 @@
 * [Templates](./templates)
     * [Personaliseren](./personalization.md)
     * [De Follow-up manager](./followups.md)
-    * [Data-scripts](./followups-scripting.md)
+    * [Data-scripts](./data-object.md)
     * [Litmus checks](./litmus.md)
     * [Een mailing versturen](./sending-a-mass-mailing)
     * [Standaard campagnes](./standard-email-campaigns)
