@@ -86,6 +86,3 @@ hebben we een aantal tutorials voor je klaar staan:
 - [Opvolgacties](./followups)
 - [Importeren en exporteren van follow-ups](./followups-importing-exporting)
 - [Opvolgacties in de Publisher](./follow-up-manager-publisher)
-
-
-
