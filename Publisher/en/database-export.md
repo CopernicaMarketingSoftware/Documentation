@@ -48,7 +48,7 @@ We reformat the tilde used in the path to `/home/username/` if you want a
 location different from the home folder, you can use absolute paths in the
 following way:
 ```text
-sftp://ftp.example.com//mnt/storage/
+sftp://ftp.example.com/mnt/storage/
 ```
 
 We use the name of the export as the filename and the extension is taken from

@@ -53,7 +53,7 @@ Wij vervangen de tilde die gebruikt wordt in de URL automatisch naar
 `home/gebruikersnaam`. Als je gebruikt wilt maken van absolute paden dan kan
 dat als volgt:
 ```text
-sftp://ftp.example.com//mnt/storage/
+sftp://ftp.example.com/mnt/storage/
 ```
 
 Wij gebruiken de naam van de export als bestandsnaam van het bestand dat over
