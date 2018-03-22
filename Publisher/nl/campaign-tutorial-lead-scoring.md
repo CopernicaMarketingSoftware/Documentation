@@ -12,15 +12,13 @@ wil toewijzen of aftrekken hangt compleet van jou af. Deze tutorial legt
 simpelweg uit hoe je een score kan instellen, aanpassen en geeft tips 
 over hoe je actie kunt ondernemen bij een veelbelovende lead.
 
-## Lead score aanmaken en aanpassen
-
-### Aanmaken
+## Leadscore aanmaken
 
 Selecteer de database waar je de leads in bewaart. Voeg een numeriek 
 veld toe waarin je de score bijhoudt en zet de standaard waarde op 0. 
 Nu kun je beginnen je leads te tracken.
 
-### Aanpassen
+## Leadscore updaten
 
 De score aanpassen wordt gedaan met follow-ups, die toegevoegd kunnen worden 
 voor databases, collecties, templates en links. Open de follow-up editor 
@@ -39,15 +37,40 @@ if (profile.fields.leadscore) profile.fields.leadscore + = 1;
 else profile.fields.leadscore = 1;
 ```
 
-### Actie ondernemen
+## Actie ondernemen!
 
-Als je lead score hoog genoeg is wil je natuurlijk actie ondernemen. Je kunt 
+Als je leadscore hoog genoeg is wil je natuurlijk actie ondernemen. Je kunt 
 een handige [selectie](./selections-introduction) aanmaken om de meest 
-veelbelovende leads te organizeren. Zo kan bijvoorbeeld jouw sales afdeling 
-snel aan de slag. Het is dan wel handig om ook bij te houden of de leads 
-al gecontacteerd zijn. 
+veelbelovende leads te organizeren, zodat de sales afdeling deze makkelijk 
+kan contacteren. Je kan er ook voor kiezen om een automatische email te sturen, 
+bijvoorbeeld om een uitnodiging voor een afspraak te sturen. We laten je 
+zien hoe je beide kunt doen.
 
-Zo krijg je het voor elkaar:
+### Een geautomatiseerde email versturen
+
+- Ga naar de database of collectie waar je de leads van wil mailen.
+- Maak een veld genaamd "lead_gecontacteerd" aan in je database. Zet de 
+default op "nee".
+- Open de follow-up manager en maak een follow-up aan met "(Sub)profile 
+modified" als de trigger. 
+- Voeg een "Check destination" box toe; hiermee gaan we checken of de score 
+hoog genoeg is. Selecteer het veld met de leadscore en vergelijk deze met 
+de gewenste waarde.
+- Maak een "match" link met nog een "Check destination" box. Selecteer 
+"lead_gecontacteerd" en controleer of deze op "nee" staat, zo niet is deze 
+lead al gecontacteerd en hoeven we geen email te sturen.
+- Maak opnieuw een "match" link aan en verbind deze met een "Send email" 
+box om de daadwerkelijke email te versturen. Vul de details van je mailing 
+in.
+- Maak hier nog een "match" link naast met een "Update destination" box. 
+Hierin selecteer je het "lead_gecontacteerd" veld en verander je de waarde 
+naar "ja" om aan te geven dat deze lead nu gecontacteerd is.
+
+Tip: Voeg je sales team toe aan de BCC; zo kunnen zij ook zien dat er 
+iemand geïnteresseerd is.
+
+### Een selectie op basis van de leadscore maken
+
 * Maak een veld aan genaamd "lead_gecontacteerd" voor de database. Zet de 
 default op "nee".
 * Maak een nieuwe selectie "NieuweLeads".
@@ -59,10 +82,6 @@ toe.
 * Selecteer ditmaal de leadscore, "is greater than" en vul bij de waarde 
 de minimale leadscore in.
 * Sla de selectie op en test deze.
-
-Nu ben je klaar om contact op te nemen met je leads! Dit kan ook met een 
-automatische mail, maar zorg er altijd voor dat "lead_gecontacteerd" aangepast 
-wordt.
 
 ## Meer informatie 
 

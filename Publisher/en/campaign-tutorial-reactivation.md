@@ -1,4 +1,4 @@
-# Campaign Tutorial: Re-activation
+# Campaign Tutorial: Reactivation
 
 Keeping your customers happy and engaged is very important. Gathering new 
 customers is expensive and time consuming, so re-activation campaigns 
@@ -47,7 +47,7 @@ period"
 * Set the "before" and "after" dates to 1 year ago.
 * Rebuild the selection to test if it works.
 
-## Re-activation
+## Reactivation
 
 Now that you know which customers are inactive it's time to win them 
 back. You can send them a simple email telling them you miss them, but 

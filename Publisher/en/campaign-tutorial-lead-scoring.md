@@ -9,15 +9,13 @@ modifications, or subprofile removals.
 Which triggers you use and the amount of points you give or subtract are 
 completely up to you. This tutorial simply shows you how to keep the score. 
 
-## Creating and updating the lead score
-
-### Creation
+## Creating the lead score
 
 First select the database in which your leads are kept. Add a numeric 
 field to keep score in and set the default value to 0. You can now start 
 keeping track of your leads.
 
-### Updating
+## Updating the score
 
 Updating the lead score is done with follow-ups, which can be added 
 for databases, collections, templates and links. Open the follow-up editor 
@@ -36,28 +34,45 @@ if (profile.fields.leadscore) profile.fields.leadscore + = 1;
 else profile.fields.leadscore = 1;
 ```
 
-### Taking action
+## Taking action!
 
 If your lead score is high enough you'll want to take action. We recommend 
 making a handy [selection](./selections-introduction) to view the most 
-promising leads with ease. This makes it easy for your sales department 
-to get started and contact all promising leads. When you do this you should 
-consider keeping track of which leads have already been contacted.
+promising leads with ease, so your sales department can contact them manually. 
+However, you can also send them an automated email, for example to ask 
+them to meet with you. We will show you how to do both.
 
-This is how to do it:
-* Create a field named "lead_contacted" in the database. Set the 
+### Sending an automated email
+
+- Go to the database or collection you want to email leads for.
+- Create a field named "lead_contacted" in the database. Set the 
 default value to "no". 
-* Make a new selection "NewLeads".
-* Go to the selection rules and add a condition "Check on field value". 
-* Select "lead_contacted", "not equal to" and add "no" to the value to 
-prevent from contacting people multiple times.
-* Add a new condition "Check on field value". 
-* Select the leadscore, "is greater than" and set the minimal score a lead should have.
-* Save the selection and test it.
+- Open the follow-up manager and create a follow-up with the trigger 
+"(Sub)profile modified".
+- Add a "Check destination" box and check the leadscore field to 
+see if its value is high enough for your liking.
+- Add a match link to another "Check destination" box to check if the "lead_contacted" 
+field is set to no; We don't want to send the email multiple times if 
+the lead keeps getting warmer.
+- Create a match link from the checks to a new "Send email" box to send 
+the actual email. Fill in the details for the mailing.
+- Create a match link next to it connected to a new "Update destination" box. 
+Use it to set "lead_contacted" to "yes" to indicate that we have contacted this lead.
 
-Now you're ready to contact your leads! You can also do this with an 
-automatical email, but always make sure "lead_contacted" is updated 
-accordingly.
+Tip: Add your sales team to the BCC so they also get notified that someone 
+is interested.
+
+### Creating a selection based on the lead score
+
+- Create a field named "lead_contacted" in the database. Set the 
+default value to "no". 
+- Make a new selection "NewLeads".
+- Go to the selection rules and add a condition "Check on field value". 
+- Select "lead_contacted", "not equal to" and add "no" to the value to 
+prevent from contacting people multiple times.
+- Add a new condition "Check on field value". 
+- Select the leadscore, "is greater than" and set the minimal score a lead should have.
+- Save the selection and test it.
 
 ## More information
 

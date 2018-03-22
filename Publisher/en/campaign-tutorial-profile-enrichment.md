@@ -1,73 +1,45 @@
 # Campaign tutorial: Profile enrichment
 
 Profiles can be enriched with information you gather from your mailings. 
-What links a user views and what purchases they make can indicate what 
-they might like to buy in the future, for example. With a clever 
-[selection](./selections-introduction) you can use this information to 
+Information from link clicks and orders can easily be used to identify 
+what matters to your customers and how you can send more relevant emails.
+
+With a clever [selection](./selections-introduction) you can use this information to 
 make target groups and send them different, more targeted, emails. You 
 can also choose to personalize the email directly, for example by using 
 different content blocks for different interests.
 
-In this tutorial we show you how to use follow-ups to enrich your profiles 
-with both clicks and orders. You can also find the JSON code for the follow-ups 
+In this tutorial we show you how to use follow-ups to enrich your profiles in 
+different ways. You can also find the JSON code for the follow-ups 
 from this tutorial in [this article](./campaign-tutorial-profile-enrichment-json) 
 so you can import it yourself.
 
-## Information from clicks
+## Creating a custom subscribe link
 
-Follow-ups can also be used to keep track of which links people clicked. 
-If you (want to) do this often we recommend storing all clicks in a [collection](./database-fields-and-collections), 
-but you can also store it in a regular profile field if you like.
-
-### Collection
-
-To store clicks we need a collection first. You'll want to create a collection 
-in the database you will be emailing to and name it something descriptive such 
-as "Clicks". Add the fields you need; We recommend using 
-the name of the link and the url. There is no option to add the time of 
-clicking yet.
+With follow-ups it is possible to create a custom subscribe link. All 
+you need to get started is a field in the database. In this case we'll 
+call the field "subscribed".
 
 Now we can create the follow-up:
 
 * Create or open a template.
 * Open the "Follow-ups" menu under **Tools**.
 * Create a new follow-up and select "Link click" as the trigger. You can now 
-choose the link you want to make a follow-up for. You can also select "Any link" 
-so you can save clicks on a template.
-* Add a "Create subprofile" box and click on "edit".
-* Select your database and the collection you just made.
-* Enter a descriptive name for the "name" field and the url in the "url" 
-field.
-
-Now a new subprofile will be made in the collection "Clicks" every time 
-a user clicks your URL. You can add follow-ups faster by clicking the 
-"Follow-up" tab when your link is selected.
-
-### Profile field
-
-If you don't plan on saving link clicks often you can also store some 
-data in the profile itself. You can use this to have users subscribe to 
-your newsletter, for example. To do this we'll add a field named "subscribed" 
-to the profile.
-
-Now we can create the follow-up:
-
-* Create or open a template.
-* Open the "Follow-ups" menu under **Tools**.
-* Create a new follow-up and select "Link click" as the trigger. You can now 
-choose the link you want to make a follow-up for. You can also select "Any link" 
-so you can save clicks on a template.
+choose the link you want to make a follow-up for. You can also select "Any link", but 
+this will make all links in the template subscribe links.
 * Add an "Update destination" box and click on "edit".
 * Select "field" and enter the name of the field you want to update. In 
 this case we use "subscribed".
 * Add a new value for the field and save the follow-up. In this case we use the value "yes".
 
 Now the "subscribed" field will be set to "yes" every time 
-a user clicks your URL. You can set a target in the follow-up menu 
-to get suggestions for the field names, making editing easier. You can also 
-add follow-ups faster by clicking the "Follow-up" tab when your link is selected.
+a user clicks your URL.
 
-## Information from orders
+Tip: You can set a target in the follow-up menu to get suggestions for 
+the field names, making editing easier. You can also add follow-ups 
+faster by clicking the "Follow-up" tab when your link is selected.
+
+## Gathering interests from orders
 
 With [collections](./database-fields-and-collections) you can easily 
 store purchases made by your customers. We recommend using an 

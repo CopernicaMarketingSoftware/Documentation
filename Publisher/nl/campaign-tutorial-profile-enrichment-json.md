@@ -8,88 +8,7 @@ dat je de follow-up zelf aanpast om je eigen namen te gebruiken.
 
 Zie het [artikel over importeren](./followups-importing-exporting) voor meer informatie.
 
-## Informatie uit kliks
-
-### Collectie
-
-Deze follow-up wordt toegepast op een enkele link. Om de code te gebruiken 
-moet je ook de "Create subprofile" box aanpassen en hier je eigen collectie 
-selecteren. Voeg hier ook de URL en naam van je URL toe zodat deze correct 
-in de collectie belanden.
-
-```json
-{
-    "name": "",
-    "description": "",
-    "target": null,
-    "boxes": [
-        {
-            "id": "74e88d7a-7601-4f5e-aeee-9d15e4ad3260",
-            "title": "Click on a link",
-            "position": {
-                "x": -480,
-                "y": -400
-            },
-            "description": "",
-            "data": {},
-            "type": "link-click",
-            "subtype": null,
-            "disabled": false
-        },
-        {
-            "id": "649f5816-0c75-459b-b027-b724d8a4e8c2",
-            "title": "Create subprofile",
-            "position": {
-                "x": -480,
-                "y": -192
-            },
-            "description": "Edit this box to create a new subprofile.",
-            "data": {
-                "database": "7656",
-                "collection": "21008",
-                "fields": {
-                    "name": "promotie1",
-                    "url": "www.winkel.nl/promotie1"
-                },
-                "script": "if (!profile) return;var collection = copernica.collection(21008);var subprofile = profile.createSubProfile(collection);if (subprofile) { subprofile.fields.name = \"promotion1\";subprofile.fields.date_clicked = \"\";subprofile.fields.url = \"www.store.com/promotion1\"; }"
-            },
-            "type": "execute",
-            "subtype": "create-subprofile",
-            "disabled": false
-        }
-    ],
-    "links": [
-        {
-            "label": "",
-            "from": "74e88d7a-7601-4f5e-aeee-9d15e4ad3260",
-            "to": {
-                "x": -392.125,
-                "y": -193.5625
-            },
-            "comparison": "=="
-        }
-    ],
-    "events": [],
-    "comments": [
-        {
-            "position": {
-                "x": -768,
-                "y": -400
-            },
-            "description": "Een link naar een promotie wordt aangeklikt."
-        },
-        {
-            "position": {
-                "x": -752,
-                "y": -192
-            },
-            "description": "De klik wordt opgeslagen om later te gebruiken."
-        }
-    ]
-}
-```
-
-### Profiel
+## Een eigen subscribe link maken
 
 Deze follow-up wordt toegepast op een enkele link.
 
@@ -160,7 +79,7 @@ Deze follow-up wordt toegepast op een enkele link.
 }
 ```
 
-## Informatie uit orders
+## Interesses uit orders afleiden
 
 Deze follow-up wordt toegepast op een collectie.
 
