@@ -8,10 +8,6 @@ To re-activate inactive customers it's important to identify them first
 and then take action. You can send them a simple email or you can offer 
 them something like a discount or free shipping. 
 
-You can also find the JSON code for the follow-ups from this 
-tutorial in [this article](./campaign-tutorial-reactivation-json) 
-so you can import it yourself.
-
 ## Identifying inactive customers
 
 To identify inactive customers we'll be looking at their order history. You 

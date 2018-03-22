@@ -12,9 +12,7 @@ template te [personalizeren](./personalization), bijvoorbeeld door content
 afhankelijk te maken van interesse.
 
 In deze tutorial gaan we ja laten zien hoe je je profielen verrijkt met 
-follow-ups. De JSON code voor de follow-ups kun je vinden in 
-[dit artikel](./campaign-tutorial-profile-enrichment-json) zodat je 
-deze ook kunt importeren.
+follow-ups.
 
 ## Een eigen subscribe link maken
 

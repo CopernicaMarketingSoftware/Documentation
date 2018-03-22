@@ -10,9 +10,7 @@ can also choose to personalize the email directly, for example by using
 different content blocks for different interests.
 
 In this tutorial we show you how to use follow-ups to enrich your profiles in 
-different ways. You can also find the JSON code for the follow-ups 
-from this tutorial in [this article](./campaign-tutorial-profile-enrichment-json) 
-so you can import it yourself.
+different ways. 
 
 ## Creating a custom subscribe link
 

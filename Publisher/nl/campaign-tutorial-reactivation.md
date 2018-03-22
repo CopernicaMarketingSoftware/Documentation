@@ -8,10 +8,6 @@ Om je klanten te re-activeren is het belangrijk dat je ze eerst weet te
 identificeren en dan de juiste actie onderneemt. Je kunt ze bijvoorbeeld 
 een simpele email sturen, of een beloning als ze bij jou kopen.
 
-De JSON code voor de follow-ups kun je vinden in 
-[dit artikel](./campaign-tutorial-reactivation-json) zodat je 
-deze ook kunt importeren.
-
 ## Inactieve klanten identificeren
 
 Om inactieve klanten te identificeren kijken we naar hun aankoop geschiedenis. 
