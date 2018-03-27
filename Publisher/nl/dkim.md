@@ -10,7 +10,7 @@ e-mail tegen te gaan.
 DKIM maakt gebruik van geheime sleutels (private keys) om handtekeningen mee 
 te maken. Deze private key is alleen bij de verzender (bij ons dus) bekend zodat 
 alleen de verzender een geldige digitale handtekening aan een bericht kan 
-toegevoegen. Bij elke private key hoort ook een voor iedereen inzichtelijke 
+toevoegen. Bij elke private key hoort ook een voor iedereen inzichtelijke 
 *public key* waarmee de handtekening kan worden gecontroleerd. Omdat de public key 
 voor iedereen toegankelijk is (vandaar het woord public), kan iedereen zien 
 of een mail geldig is of niet. De private key kent alleen de verzender, zodat 
