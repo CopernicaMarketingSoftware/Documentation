@@ -80,6 +80,7 @@ Nu je informatie hebt over je klanten is het tijd om het verstandig
 te gebruiken. De artikelen hieronder kunnen je wat ideeën geven over 
 hoe je doelgroepen kunt aanmaken en emails kunt personalizeren.
 
+* [Follow-ups in Marketing Suite](follow-up-manager-ms)
 * [Selecties](./selections-introduction)
 * [Collecties](./database-fields-and-collections)
 * [Personalizatie](./personalization)
