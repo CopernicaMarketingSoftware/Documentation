@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Publisher/en/followups-scripting.md
-# Scripting in follow-ups 
-=======
 # Data scripting/Data object
->>>>>>> newfollowups:Publisher/en/data-object.md
 
 In Copernica software you can write your own Javascript code to embed in 
 hyperlinks. If your Javascript is attached to a link the code is executed when the link is 
@@ -13,15 +9,11 @@ on Copernica servers. You can also write your own triggers and actions in the
 You can use your script by using:
 
 * the *data-script* attribute on &lt;a&gt; tags
-<<<<<<< HEAD:Publisher/en/followups-scripting.md
-* the Javascript boxes in the advanced Marketing Suite flowchart editor for follow-ups
-=======
 * the flowchart editor in the follow-up form
 
 Warning: You need the new link tracking system to use data-scripts. If you're using 
 Marketing Suite this is already enabled, but Publisher users have to enable the system 
 manually in their account settings.
->>>>>>> newfollowups:Publisher/en/data-object.md
 
 ## Available objects
 
@@ -30,21 +22,6 @@ the (sub)profile that clicked on the link and other relevant data.
 Each of these objects have read-only properties to get data, others have 
 write properties as well. The following variables are accessible:
 
-<<<<<<< HEAD:Publisher/en/followups-scripting.md
-| Variable name                                         | Description
-|-------------------------------------------------------|--------------------------------------|
-| [**copernica**](./followups-scripting-copernica)      | Copernica account                    |
-| [**mailing**](./followups-scripting-mailing)          | Sent mailings                        |
-| [**message**](./followups-scripting-message)          | Personalized template                |
-| [**template**](./followups-scripting-template)        | Standard template                    |
-| [**database**](./followups-scripting-database)        | Database                             |
-| [**collection**](./followups-scripting-collection)    | Collection                           |
-| [**profile**](./followups-scripting-profile)          | Profile                              |
-| [**subprofile**](./followups-scripting-subprofile)    | Subprofile                           |
-| [**destination**](./followups-scripting-destination)  | Alias to profile/subprofile          |
-
-A few of these objects also have [the data object](./followups-scripting-data), 
-=======
 | Variable name                                 | Description
 |-----------------------------------------------|--------------------------------------|
 | [**copernica**](./data-object-copernica)      | Copernica account                    |
@@ -58,7 +35,6 @@ A few of these objects also have [the data object](./followups-scripting-data),
 | [**destination**](./data-object-destination)  | Alias to profile/subprofile          |
 
 A few of these objects also have [the data object](./data-object-data), 
->>>>>>> newfollowups:Publisher/en/data-object.md
 which you can use to store your own information regarding the object.
 
 ## A very simple example
