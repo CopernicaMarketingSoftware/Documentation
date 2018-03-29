@@ -65,7 +65,7 @@ Nu kunnen we een follow-up aan gaan maken voor deze collectie:
 
 `profile.interests[subprofile.fields.categorie] = true;`
 
-In de code refereert `subprofile.fields.category` naar het veld "categorie" in 
+In de code refereert `subprofile.fields.categorie` naar het veld "categorie" in 
 je database. Als jouw veld anders heeft moet je dus "categorie" vervangen 
 door de naam die jij hebt gekozen. Je kunt interesses ook uitzetten op 
 dezelfde manier door "true" door "false" te vervangen.
