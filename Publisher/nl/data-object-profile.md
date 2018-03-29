@@ -1,13 +1,3 @@
-<<<<<<< HEAD:Publisher/nl/followups-scripting-profile.md
-# Scripting - profile
-
-Het profiel data-script wordt gebruikt om gegevens 
-van een profiel aan te passen of op te vragen. 
-Een profiel kan op meerdere manieren worden 
-verkregen. Bijvoorbeeld via het [copernica data-script](./followups-scripting-copernica) 
-of via het [database data-script](./followups-scripting-database).
-
-=======
 # Data object - profile
 
 Het profile data-script wordt gebruikt om gegevens 
@@ -20,26 +10,19 @@ Je kunt de variabele en zijn beschikbare eigenschappen aanpassen vanuit
 Javascript code of met het "Profile microdata" knopje wanneer je een profiel 
 geselecteerd hebt onder het *Database & Profiles* tabje.
 
->>>>>>> newfollowups:Publisher/nl/data-object-profile.md
 ## Beschikbare eigenschappen
 
-* id: 				id van een profile (read-only);
-* secret: 			geheime code van het profile, gelijk aan code (read and write);
-* code: 			geheime code van het profile, gelijk aan secret (read and write);
-* extra: 			extra data (Read and write);
-* created: 			tijdstip van aanmaken profile (read-only);
-* removed: 			tijdstip van verwijderen profile (read-only);
-* unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only);
-* database: 		[database](./data-object-database) van het profile (read-only);
-* fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
-* interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
-<<<<<<< HEAD:Publisher/nl/followups-scripting-profile.md
-* data: 			een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
-Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
-
-=======
-* data: 			zie documentatie over het [data data-script](./data-object-data).
->>>>>>> newfollowups:Publisher/nl/data-object-profile.md
+* id: 				id van een profile (read-only)
+* secret: 			geheime code van het profile, gelijk aan code (read and write)
+* code: 			geheime code van het profile, gelijk aan secret (read and write)
+* extra: 			extra data (Read and write)
+* created: 			tijdstip van aanmaken profile (read-only)
+* removed: 			tijdstip van verwijderen profile (read-only)
+* unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only)
+* database: 		[database](./data-object-database) van het profile (read-only)
+* fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write)
+* interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write)
+* data: 			zie documentatie over het [data data-script](./data-object-data)
 
 ## Beschikbare functies
 

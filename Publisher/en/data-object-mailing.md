@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Publisher/en/followups-scripting-mailing.md
-# Scripting: mailing variable
-=======
 # Data object: mailing variable
->>>>>>> newfollowups:Publisher/en/data-object-mailing.md
 
 The **mailing** variable can also be accessed in the data-script object. From 
 a mailing object you can access its properties, but not edit them.
@@ -11,12 +7,7 @@ a mailing object you can access its properties, but not edit them.
 
 * **ID**: The ID of the emailing. (Read-only)
 * **subject**: The subject of the emailing. (Read-only)
-<<<<<<< HEAD:Publisher/en/followups-scripting-mailing.md
-* **data**: An advanced property you can use to store more information. See 
-the documentation on the [data property](./followups-scripting-data) (Read and write)
-=======
 * **data**: See the documentation on [the data object](./data-object-data)
->>>>>>> newfollowups:Publisher/en/data-object-mailing.md
 
 ## Example
 

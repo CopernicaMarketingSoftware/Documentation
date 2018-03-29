@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
-# Scripting: profile variable
-=======
 # Data object: profile variable
->>>>>>> newfollowups:Publisher/en/data-object-profile.md
 
 In the data-script object you can access information about any **profile**. 
 From a profile object you request and edit the information of the current 
@@ -25,12 +21,7 @@ tab.
 * **fields**: A hash map of all profiles fields. Names of fields are set as properties (Read and write)
 * **interests**: A hash map of all profiles interests. Names of interests are
   set as properties (Read and write)
-<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
-* **data**: An advanced property you can use to store more information. See 
-the documentation on the [data property](./followups-scripting-data) (Read and write)
-=======
 * **data**: See the documentation on [the data object](./data-object-data)
->>>>>>> newfollowups:Publisher/en/data-object-profile.md
 
 ## Available methods
 
@@ -47,16 +38,8 @@ The following example in javascript can be used to access the "age" field of a p
 
 ## More information
 
-<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
-* [The data-script object](./followups-scripting)
-* [The data object](./followups-scripting-data)
-* [Database information](./followups-scripting-database)
-* [User subprofile information](./followups-scripting-subprofile)
-* [Destination information](./followups-scripting-destination)
-=======
 * [The data-script object](./data-object)
 * [The data object](./data-object-data)
 * [Database information](./data-object-database)
 * [User subprofile information](./data-object-subprofile)
 * [Destination information](./data-object-destination)
->>>>>>> newfollowups:Publisher/en/data-object-profile.md

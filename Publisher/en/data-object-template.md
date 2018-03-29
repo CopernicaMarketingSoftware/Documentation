@@ -1,28 +1,16 @@
-<<<<<<< HEAD:Publisher/en/followups-scripting-template.md
-# Scripting: template variable
-=======
 # Data object: template variable
->>>>>>> newfollowups:Publisher/en/data-object-template.md
 
 A variable that gives access to a unpersonalized **template**. 
 
-<<<<<<< HEAD:Publisher/en/followups-scripting-template.md
-=======
 You can edit the value of this variable and its properties under the "Tools" menu in 
 the email designer.
 
->>>>>>> newfollowups:Publisher/en/data-object-template.md
 ## Available properties:
 
 * **ID**: The ID of the template (Read-only)
 * **name**: The name of the template (Read, write)
 * **subject**: The subject of the templates (Read, write)
-<<<<<<< HEAD:Publisher/en/followups-scripting-template.md
-* **data**: An advanced property you can use to store more information. See 
-the documentation on the [data property](./followups-scripting-data) (Read and write)
-=======
 * **data**: See the documentation on [the data object](./data-object-data)
->>>>>>> newfollowups:Publisher/en/data-object-template.md
 
 ## Available methods
 

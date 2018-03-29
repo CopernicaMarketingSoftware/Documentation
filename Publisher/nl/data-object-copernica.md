@@ -12,11 +12,11 @@ zichtbaar.
 
 ## Beschikbare functies
 
-* database(id of naam): 		een [database](./data-object-database) instantie kan opgevraagd worden per naam of id;
-* collection(id): 				een [collection](./data-object-collection) instantie kan opgevraagd worden per id;
-* profile(id): 					een [profile](./data-object-profile) instantie kan opgevraagd worden per id;
-* subprofile(id):				een [subprofile](./data-object-subprofile) instantie kan opgevraagd worden per id;
-* template(id): 				een [template](./data-object-template) instantie kan opgevraagd worden per id.
+* database(id of naam): 		een [database](./data-object-database) instantie kan opgevraagd worden per naam of id
+* collection(id): 				een [collection](./data-object-collection) instantie kan opgevraagd worden per id
+* profile(id): 					een [profile](./data-object-profile) instantie kan opgevraagd worden per id
+* subprofile(id):				een [subprofile](./data-object-subprofile) instantie kan opgevraagd worden per id
+* template(id): 				een [template](./data-object-template) instantie kan opgevraagd worden per id
 
 
 ## Voorbeeld

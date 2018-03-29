@@ -26,11 +26,11 @@ boxes to write your own logic.
 The Marketing Suite flowchart editor is the best option for you in the 
 following cases:
 
-    - You're new to follow-ups and want the most user-friendly editor.
-    - You want use link clicks, profile modifications and unsubscribes as triggers.
-    - You want to re-use follow-up actions.
-    - You want to execute additional or complex checks.
-    - You want to use your own Javascript code to write checks and actions.
+* You're new to follow-ups and want the most user-friendly editor.
+* You want use link clicks, profile modifications and unsubscribes as triggers.
+* You want to re-use follow-up actions.
+* You want to execute additional or complex checks.
+* You want to use your own Javascript code to write checks and actions.
 
 ## Follow-Up Manager (Publisher)
 
@@ -43,12 +43,11 @@ The Publisher does not have a scripting API.
 
 The Publisher menu editor is the best option for you in the following cases:
     
-    - You want to define follow-ups for webforms or surveys.
-    - You want to use link clicks, impressions and profile modifications as triggers.
-    - You want to send mobile mailings.
-    - You want to create tasks to contact the person triggering the follow-up.
-    - You want to trigger follow-ups when errors or impressions of a document 
-    are registered.
+* You want to define follow-ups for webforms or surveys.
+* You want to use link clicks, impressions and profile modifications as triggers.
+* You want to send mobile mailings.
+* You want to create tasks to contact the person triggering the follow-up.
+* You want to trigger follow-ups when errors or impressions of a document are registered.
 
 ## Script Editor
 

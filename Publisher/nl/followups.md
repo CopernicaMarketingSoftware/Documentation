@@ -26,11 +26,11 @@ in Javascript.
 
 De Marketing Suite flowchart editor is zeer geschikt voor de volgende gevallen:
 
-    - Je begint net met follow-ups en wil de meest gebruiksvriendelijke editor gebruiken.
-    - Je wilt acties uitvoeren wanneer gebruikers zich uitschrijven, links klikken of hun profiel aanpassen.
-    - Je wilt opvolgacties hergebruiken.
-    - Je wilt extra checks of ingewikkelde checks toepassen op de opvolgactie.
-    - Je wilt Javascript code gebruiken om zelf checks en acties te schrijven.
+* Je begint net met follow-ups en wil de meest gebruiksvriendelijke editor gebruiken.
+* Je wilt acties uitvoeren wanneer gebruikers zich uitschrijven, links klikken of hun profiel aanpassen.
+* Je wilt opvolgacties hergebruiken.
+* Je wilt extra checks of ingewikkelde checks toepassen op de opvolgactie.
+* Je wilt Javascript code gebruiken om zelf checks en acties te schrijven.
 
 ## Follow-Up Manager (Publisher)
 
@@ -44,12 +44,11 @@ geen scripting API.
 
 De Publisher menu editor is zeer geschikt voor de volgende gevallen:
     
-    - Je wilt opvolgacties aanmaken voor webformulieren en enquêtes.
-    - Je wilt acties uitvoeren wanneer profielen worden aangepast, links worden geklikt en mails worden geopend.
-    - Je wilt mobiele mailings versturen.
-    - Je wilt taken om contact op te nemen aanmaken.
-    - Je wilt opvolgacties activeren op het moment dat er een impressie 
-    of error wordt geregistreerd.
+* Je wilt opvolgacties aanmaken voor webformulieren en enquêtes.
+* Je wilt acties uitvoeren wanneer profielen worden aangepast, links worden geklikt en mails worden geopend.
+* Je wilt mobiele mailings versturen.
+* Je wilt taken om contact op te nemen aanmaken.
+* Je wilt opvolgacties activeren op het moment dat er een impressie of error wordt geregistreerd.
 
 ## Script Editor
 

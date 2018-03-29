@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Publisher/en/followups-scripting-subprofile.md
-# Scripting: subprofile variable
-=======
 # Data object: subprofile variable
->>>>>>> newfollowups:Publisher/en/data-object-subprofile.md
 
 A variable that gives access to current **subprofile**. To request a 
 subprofile object please see the documentation on [the account object](./data-object-copernica).
@@ -23,12 +19,7 @@ tab.
 * **profile**: An object that gives access to a [profile](./data-object-data) that the subprofile is from
 * **collection**: An object that gives access to a [collection](./data-object-data) that the subprofile is from
 * **fields**: A hash map of all profiles fields. Fields are set as properties (Read and write)
-<<<<<<< HEAD:Publisher/en/followups-scripting-subprofile.md
-* **data**: An advanced property you can use to store more information. See 
-the documentation on the [data property](./followups-scripting-data) (Read and write)
-=======
 * **data**: See the documentation on [the data object](./data-object-data)
->>>>>>> newfollowups:Publisher/en/data-object-subprofile.md
 
 ## Available methods
 
