@@ -85,7 +85,6 @@ have prepared some tutorials for you:
 ## More information
 
 - [Follow-ups](./followups)
-- [Importing and exporting follow-ups](./followups-importing-exporting)
 - [Follow-ups in Publisher](./follow-up-manager-publisher)
 
 
