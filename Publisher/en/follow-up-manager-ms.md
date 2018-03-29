@@ -56,6 +56,7 @@ Within the database app you can find the followups within the database
 settings.
  
 ## Template editor
+
 Within the HTML and the drag-n-drop template editor you can make an 
 automatic follow-up action on every link.
 You will find the Follow-up Manager in the right column by selecting a 
@@ -66,8 +67,12 @@ the link click follow-ups.
 
 You can make a follow-up action in two ways, with the flowchart editor 
 and with the script editor.
+
+Tip: You can always use the current date (and time) by filling in "now" as the 
+value.
  
 ## Script editor
+
 The script editor is just like an advanced box. Here you can use JavaScript 
 in order to set up advanced campaigns. These scripts, like in the flowchart 
 editor, are executed on the Copernica servers when a link is clicked. You 

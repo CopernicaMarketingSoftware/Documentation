@@ -70,6 +70,9 @@ maken. Een follow-up actie kan je op twee manieren maken, met de eenvoudige
 flowchart editor en met de script editor. Binnen de HTML template editor 
 navigeer je binnen het menu Tools naar de link click follow-ups.
 
+Tip: Je kunt altijd de huidige datum (en tijd) gebruiken door "now" 
+te typen in een datum veld.
+
 ## Script editor
 
 De script editor is net als de advanced boxes, voor een developer. Hier 
