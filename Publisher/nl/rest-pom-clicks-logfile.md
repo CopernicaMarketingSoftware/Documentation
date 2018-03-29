@@ -1,8 +1,9 @@
-# REST API: Click registratie in de Marketing Suite
+# REST API: Click registratie in de Publisher
 
-Elke klik op een link in de berichten verstuurd met de Marketing Suite is
-opgeslagen in de cdm-click log files. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+Elke klik op een link in de berichten verstuurd met de publisher is
+opgeslagen in de cdm-click log files. Hou er wel rekening mee dat klik 
+tracking alleen met het [nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") 
+werkt. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
