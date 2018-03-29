@@ -25,7 +25,8 @@ worden verstuurd. Zo kun je acties instellen op basis van bestedingsbedrag
 of de keren dat iemand je website bezoekt.
 
 Je kunt eenvoudig controleren of:
-- Een profiel is subscribed
+
+- Een profiel is ingeschreven
 - Een profiel of subprofiel overeenkomt met een waarde
 - Als er op een specifieke link is geklikt
 - En je kunt een actie of beslissingsmoment uitstellen
