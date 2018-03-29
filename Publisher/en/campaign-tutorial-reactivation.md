@@ -40,7 +40,10 @@ descriptive like "Inactive".
 * Add a new "AND" condition to the rule and select "Check on date or 
 period"
 * Select the field with the last purchase date.
-* Set the "before" and "after" dates to 1 year ago.
+* Set the "before" date to 1 year ago.
+* Optional: If you want to send an automatic email to the selection the "after" 
+date should be set to 1 year ago too, so profiles only receive an email exactly 
+1 year after their last purchase.
 * Rebuild the selection to test if it works.
 
 ## Reactivation
@@ -49,13 +52,13 @@ Now that you know which customers are inactive it's time to win them
 back. You can send them a simple email telling them you miss them, but 
 you can also offer them incentives like a discount or free shipping. 
 Make sure your customers know they can unsubscribe whenever they want; 
-This may seem counterintuitive but it keeps your mailing list, and therefore 
+This may seem counterintuitive but it keeps your mailing list, and by extension 
 your reputation, clean. However, do remind them of all the benefits your 
 company can offer them!
 
 When you've created the template you can simply set up a daily mailing; 
-We've set both dates to 1 year ago so we only email when the last order 
-was exactly 1 year ago.
+Make sure the after date is also set to 1 year ago or they will be emailed 
+daily, which will likely land your emails in their spam folder.
 
 ## More information
 
