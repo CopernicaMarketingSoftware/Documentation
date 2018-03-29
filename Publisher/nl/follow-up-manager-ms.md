@@ -29,12 +29,12 @@ Je kunt eenvoudig controleren of:
 - Een profiel is ingeschreven
 - Een profiel of subprofiel overeenkomt met een waarde
 - Als er op een specifieke link is geklikt
-- En je kunt een actie of beslissingsmoment uitstellen
 
 ## Actie
 
 Met een actie kun je op het juiste moment e-mails versturen of een profiel verrijken.
 
+- Een vertraging toevoegen om acties later uit te voeren
 - Je kunt een profiel of subprofiel bijwerken
 - Een profiel of subprofiel aanmaken
 - Abonnement opzeggen of een bestemming verwijderen

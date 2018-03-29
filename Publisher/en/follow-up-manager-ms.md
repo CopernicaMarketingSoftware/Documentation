@@ -21,14 +21,16 @@ By setting up decision moments, you decide what your customers will see.
 You can set up actions based on customer behavior.
 
 You can easily setup a check to see if:
+
+- A profile is subscribed
 - If a profile or subprofile matches a condition
 - If a link is clicked
-- And you can delay a check
 
 ## Insert actions
 
 With an action you can send emails or enrich a profile.
 
+- Delay an action
 - You can update a profile
 - Create a profile or subprofile
 - Unsubscribe or remove a destination
