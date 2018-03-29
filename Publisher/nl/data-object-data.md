@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Publisher/nl/followups-scripting-data.md
 # Scripting - data eigenschap
+=======
+# Data object - data
+>>>>>>> newfollowups:Publisher/nl/data-object-data.md
 
 Het data data-script kan worden gebruikt om data in op te slaan. Dit kan 
 van alles zijn, maar over het algemeen kun je het beste data opslaan die 
@@ -24,13 +28,13 @@ if (profile.data.klikopAanbieding1 == "ja") {
 
 ## Meer informatie
 
-* [Data-scripts](./followups-scripting)
-* [Copernica data-script](./followups-scripting-copernica)
-* [Database data-script](./followups-scripting-database)
-* [Collection data-script](./followups-scripting-collection)
-* [Profile data-script](./followups-scripting-profile)
-* [Subprofile data-script](./followups-scripting-subprofile)
-* [Destination data-script](./followups-scripting-destination)
-* [Mailing data-script](./followups-scripting-mailing)
-* [Template data-script](./followups-scripting-template)
-* [Message data-script](./followups-scripting-message)
+* [Data-scripts](./data-object)
+* [Copernica data-script](./data-object-copernica)
+* [Database data-script](./data-object-database)
+* [Collectie data-script](./data-object-collection)
+* [Profiel data-script](./data-object-profile)
+* [Subprofiel data-script](./data-object-subprofile)
+* [Destination data-script](./data-object-destination)
+* [Mailing data-script](./data-object-mailing)
+* [Template data-script](./data-object-template)
+* [Bericht data-script](./data-object-message)

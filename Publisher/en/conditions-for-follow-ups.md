@@ -2,7 +2,7 @@
 
 Follow-ups can be set up in the [Publisher](./follow-up-manager-publisher), 
 [Marketing Suite](./follow-up-manager-ms) or with 
-[data-scripts](./followups-scripting). All of these methods support conditions 
+[data-scripts](./data-object). All of these methods support conditions 
 to check on set-up or execution, considering the data at the specified moment. 
 To add such a condition make a followup first and then add it to the 
 finished followup.
@@ -50,5 +50,4 @@ you email people who have let you know that they are not interested anymore.
 
 * [Follow-up Manager Publisher](./follow-up-manager-publisher)
 * [Follow-up Manager Marketing Suite](./follow-up-manager-ms)
-* [Followups scripting](./followups-scripting)
-* [Followup types](./followups-types)
+* [Followups scripting](./data-object)

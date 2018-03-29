@@ -7,6 +7,6 @@ Besides checking fields or interests it's also possible to check for
 a custom value set on a (sub)profile. This custom value is a value set in
 the [*data property*][data-property] of the (sub)profile. 
 
-[data-property]: https://www.copernica.com/en/documentation/followups-scripting-data
+[data-property]: https://www.copernica.com/en/documentation/data-object-data
 
 

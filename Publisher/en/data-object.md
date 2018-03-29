@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Publisher/en/followups-scripting.md
 # Scripting in follow-ups 
+=======
+# Data scripting/Data object
+>>>>>>> newfollowups:Publisher/en/data-object.md
 
 In Copernica software you can write your own Javascript code to embed in 
 hyperlinks. If your Javascript is attached to a link the code is executed when the link is 
@@ -9,7 +13,15 @@ on Copernica servers. You can also write your own triggers and actions in the
 You can use your script by using:
 
 * the *data-script* attribute on &lt;a&gt; tags
+<<<<<<< HEAD:Publisher/en/followups-scripting.md
 * the Javascript boxes in the advanced Marketing Suite flowchart editor for follow-ups
+=======
+* the flowchart editor in the follow-up form
+
+Warning: You need the new link tracking system to use data-scripts. If you're using 
+Marketing Suite this is already enabled, but Publisher users have to enable the system 
+manually in their account settings.
+>>>>>>> newfollowups:Publisher/en/data-object.md
 
 ## Available objects
 
@@ -18,6 +30,7 @@ the (sub)profile that clicked on the link and other relevant data.
 Each of these objects have read-only properties to get data, others have 
 write properties as well. The following variables are accessible:
 
+<<<<<<< HEAD:Publisher/en/followups-scripting.md
 | Variable name                                         | Description
 |-------------------------------------------------------|--------------------------------------|
 | [**copernica**](./followups-scripting-copernica)      | Copernica account                    |
@@ -31,6 +44,21 @@ write properties as well. The following variables are accessible:
 | [**destination**](./followups-scripting-destination)  | Alias to profile/subprofile          |
 
 A few of these objects also have [the data object](./followups-scripting-data), 
+=======
+| Variable name                                 | Description
+|-----------------------------------------------|--------------------------------------|
+| [**copernica**](./data-object-copernica)      | Copernica account                    |
+| [**mailing**](./data-object-mailing)          | Previous mailing                     |
+| [**message**](./data-object-message)          | Personalized template                |
+| [**template**](./data-object-template)        | Standard template                    |
+| [**database**](./data-object-database)        | Database                             |
+| [**collection**](./data-object-collection)    | Collection                           |
+| [**profile**](./data-object-profile)          | Profile                              |
+| [**subprofile**](./data-object-subprofile)    | Subprofile                           |
+| [**destination**](./data-object-destination)  | Alias to profile/subprofile          |
+
+A few of these objects also have [the data object](./data-object-data), 
+>>>>>>> newfollowups:Publisher/en/data-object.md
 which you can use to store your own information regarding the object.
 
 ## A very simple example
@@ -57,6 +85,4 @@ script and runs it when a click is registered.
 
 ## More information
 
-* [Followups general](./followups)
-* [Followup types](./followups-types)
-* [Follow-up conditions](./conditions-for-follow-ups)
+* [Follow-ups](./followups)

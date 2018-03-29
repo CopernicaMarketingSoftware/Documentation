@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Publisher/nl/followups-scripting-profile.md
 # Scripting - profile
 
 Het profiel data-script wordt gebruikt om gegevens 
@@ -6,6 +7,20 @@ Een profiel kan op meerdere manieren worden
 verkregen. Bijvoorbeeld via het [copernica data-script](./followups-scripting-copernica) 
 of via het [database data-script](./followups-scripting-database).
 
+=======
+# Data object - profile
+
+Het profile data-script wordt gebruikt om gegevens 
+van een profile aan te passen of op te vragen. 
+Een profile kan op meerdere manieren worden 
+verkregen. Bijvoorbeeld via het [copernica data-script](./data-object-copernica) 
+of via het [database data-script](./data-object-database).
+
+Je kunt de variabele en zijn beschikbare eigenschappen aanpassen vanuit 
+Javascript code of met het "Profile microdata" knopje wanneer je een profiel 
+geselecteerd hebt onder het *Database & Profiles* tabje.
+
+>>>>>>> newfollowups:Publisher/nl/data-object-profile.md
 ## Beschikbare eigenschappen
 
 * id: 				id van een profile (read-only);
@@ -15,12 +30,16 @@ of via het [database data-script](./followups-scripting-database).
 * created: 			tijdstip van aanmaken profile (read-only);
 * removed: 			tijdstip van verwijderen profile (read-only);
 * unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only);
-* database: 		[database](./followups-scripting-database) van het profile (read-only);
+* database: 		[database](./data-object-database) van het profile (read-only);
 * fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
 * interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write);
+<<<<<<< HEAD:Publisher/nl/followups-scripting-profile.md
 * data: 			een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
 Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 
+=======
+* data: 			zie documentatie over het [data data-script](./data-object-data).
+>>>>>>> newfollowups:Publisher/nl/data-object-profile.md
 
 ## Beschikbare functies
 
@@ -29,7 +48,6 @@ Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
 * createSubProfile(collection):  Maak een nieuw subprofiel aan, returnwaarde is het nieuwe subprofiel;
 * subProfiles(collection (optioneel)):  Haal alle subprofielen op, eventueel uit een specifieke collectie.
 
-
 ## Voorbeeld
 
 Met het volgende voorbeeld kun je een veld 
@@ -37,16 +55,14 @@ van een profile opvragen. In dit geval wordt
 de leeftijd van een profile opgevraagd. 
 Uiteraard kun je elk veld linken aan een profile.
 
-
 ```javascript
 var profileAge = profile.fields.age;
 ```
 
-
 ## Meer informatie
 
-* [Data-scripts](./followups-scripting)
-* [Data data-script](./followups-scripting-data)
-* [Database data-script](./followups-scripting-database)
-* [Subprofile data-script](./followups-scripting-subprofile)
-* [Destination data-script](./followups-scripting-destination)
+* [Data-scripts](./data-object)
+* [Data data-script](./data-object-data)
+* [Database data-script](./data-object-database)
+* [Subprofiel data-script](./data-object-subprofile)
+* [Destination data-script](./data-object-destination)

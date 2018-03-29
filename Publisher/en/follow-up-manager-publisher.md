@@ -57,6 +57,5 @@ A follow-up can execute the following actions:
 ## More information
 
 * [The Follow-up manager in the Marketing Suite](./follow-up-manager-ms)
-* [Data-script object](./followups-scripting.md)
-* [Followup types](./followups-types)
+* [Data-script object](./data-object.md)
 * [Follow-up conditions](./conditions-for-follow-ups)

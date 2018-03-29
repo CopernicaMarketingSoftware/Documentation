@@ -2,7 +2,7 @@
 
 Opvolgacties kun je instellen in de [Publisher](./follow-up-manager-publisher), 
 [Marketing Suite](./follow-up-manager-ms) of met 
-[data-scripts](./followups-scripting). Binnen al deze methoden kun je 
+[data-scripts](./data-object). Binnen al deze methoden kun je 
 condities verbinden aan de uitvoering hiervan. Er wordt dan op basis van 
 je data op het aangegeven moment gekeken hoe de opvolgactie zich moet gedragen. 
 Maak hiervoor eerst een opvolgactie aan en voeg dan een conditie toe.
@@ -62,5 +62,4 @@ in wijn.
 
 * [Follow-up Manager Publisher](./follow-up-manager-publisher)
 * [Follow-up Manager Marketing Suite](./follow-up-manager-ms)
-* [Opvolgactie scripting](./followups-scripting)
-* [Opvolgactie types](./followups-types)
+* [Opvolgactie scripting](./data-object)

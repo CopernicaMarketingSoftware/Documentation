@@ -1,8 +1,16 @@
+<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
 # Scripting: profile variable
+=======
+# Data object: profile variable
+>>>>>>> newfollowups:Publisher/en/data-object-profile.md
 
 In the data-script object you can access information about any **profile**. 
 From a profile object you request and edit the information of the current 
-profile. To request a profile object please see the documentation on [the account object](./followups-scripting-copernica).
+profile. To request a profile object please see the documentation on [the account object](./data-object-copernica).
+
+You can edit the variable and its available properties from Javascript code 
+or with the stack icon when a profile is selected under the *Database & Profiles* 
+tab.
 
 ## Available properties
 
@@ -13,12 +21,16 @@ profile. To request a profile object please see the documentation on [the accoun
 * **created**: Timestamp of profile creation (Read-only)
 * **removed**: Timestamp of profile removal (Read-only)
 * **unsubscribed**: A boolean value whether the profile is explicitly unsubscribed (Read-only)
-* **database**: An object that gives access to the [database](./followups-scripting-database) that hold the profile (Read-only)
+* **database**: An object that gives access to the [database](./data-object-database) that hold the profile (Read-only)
 * **fields**: A hash map of all profiles fields. Names of fields are set as properties (Read and write)
 * **interests**: A hash map of all profiles interests. Names of interests are
   set as properties (Read and write)
+<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
 * **data**: An advanced property you can use to store more information. See 
 the documentation on the [data property](./followups-scripting-data) (Read and write)
+=======
+* **data**: See the documentation on [the data object](./data-object-data)
+>>>>>>> newfollowups:Publisher/en/data-object-profile.md
 
 ## Available methods
 
@@ -35,8 +47,16 @@ The following example in javascript can be used to access the "age" field of a p
 
 ## More information
 
+<<<<<<< HEAD:Publisher/en/followups-scripting-profile.md
 * [The data-script object](./followups-scripting)
 * [The data object](./followups-scripting-data)
 * [Database information](./followups-scripting-database)
 * [User subprofile information](./followups-scripting-subprofile)
 * [Destination information](./followups-scripting-destination)
+=======
+* [The data-script object](./data-object)
+* [The data object](./data-object-data)
+* [Database information](./data-object-database)
+* [User subprofile information](./data-object-subprofile)
+* [Destination information](./data-object-destination)
+>>>>>>> newfollowups:Publisher/en/data-object-profile.md

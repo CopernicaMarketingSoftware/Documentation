@@ -17,7 +17,7 @@
 * [Templates](./templates.md)
     * [Personalization](./personalization.md)
     * [The Follow-up manager](./followups.md)
-    * [Data-scripts](./followups-scripting.md)
+    * [Data-scripts](./data-object.md)
     * [Videos and GIFs](./templates-video-gif.md)
     * [Litmus](./litmus.md)
 * [Statistics](./statistics)

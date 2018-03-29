@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Publisher/nl/followups-scripting-database.md
 # Scripting - database
+=======
+# Data object - database
+>>>>>>> newfollowups:Publisher/nl/data-object-database.md
 
 Je kunt het database data-script gebruiken om data uit de database
 op te vragen of te veranderen. Er zijn een aantal eigenschappen
@@ -12,9 +16,15 @@ opvragen.
 * description: 		omschrijving van de database (read and write);
 * archived: 		een boolean waarde om aan te geven of de database gearchiveerd is (read and write);
 * created: 			tijdstip van aanmaken (read only);
+<<<<<<< HEAD:Publisher/nl/followups-scripting-database.md
 * profiles: 		array van database [profielen](./followups-scripting-profile). De keys in dit object zijn ids van profielen die gebruikt kunnen worden om de profielen zelf op te vragen;
 * data: 			een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
 Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
+=======
+* profiles: 		array van database [profielen](./data-object-profile). De keys in dit object zijn ids van profielen die gebruikt kunnen worden om de profielen zelf op te vragen;
+* data: 			zie de documentatie over [het data object](./data-object-data).
+
+>>>>>>> newfollowups:Publisher/nl/data-object-database.md
 
 ## Voorbeeld
 
@@ -28,6 +38,12 @@ var someProfile = database.profiles[profileID];
 
 ## Meer informatie
 
+<<<<<<< HEAD:Publisher/nl/followups-scripting-database.md
 * [Data-scripts](./followups-scripting)
 * [Data data-script](./followups-scripting-data)
 * [Collection data-script](./followups-scripting-collection)
+=======
+* [Data-scripts](./data-object)
+* [Data data-script](./data-object-data)
+* [Collectie data-script](./data-object-collection)
+>>>>>>> newfollowups:Publisher/nl/data-object-database.md
