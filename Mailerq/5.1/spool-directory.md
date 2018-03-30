@@ -20,7 +20,7 @@ queue to the "rabbitmq-inbox" setting, the email is immediately delivered to
 the recipient(s).
 
 Although using the spool directory is very convenient for sending out mails
-it is also very slow. This is caused byt the fact the every mail needs to
+it is also very slow. This is caused by the fact that every mail needs to
 be written to and read from disk. We therefore encourage you to use the
 other methods to send mails to MailerQ.
 
