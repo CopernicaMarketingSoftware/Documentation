@@ -16,8 +16,7 @@ voorwaarden van de selectie voldoen.
 
 Naast 'gewone' selecties bestaan er ook miniselecties en subselecties. 
 
-
-### Miniselecties
+## Miniselecties
 
 Je kunt ook selecties maken binnen collecties; we noemen ze miniselecties. 
 Een collectie is een sub-database die je aan een profiel kunt hangen, 
@@ -29,8 +28,7 @@ miniselectie zitten), kun je overwegen om een persoonlijke aanbieding te
 doen die daarmee te maken heeft. Zo kun je jouw mailings dus nog 
 persoonlijker en gerichter maken. 
 
-
-### Subselecties
+## Subselecties
 
 Een subselectie is een selectie van profielen in een selectie. 
 Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van 
@@ -47,8 +45,7 @@ Het maken van subselecties is alleen mogelijk op profielniveau;
 "subminiselecties" maken in een collectie is dus niet mogelijk. 
 Subselecties maak je op dezelfde manier aan als selecties.
 
-
-### Selecties, miniselecties en subselecties aanmaken
+## Selecties, miniselecties en subselecties aanmaken
 
 Je kunt selecties, subselecties en miniselecties beheren onder 
 *profielen* > *bewerk selecties* in de Marketing Suite. Een subselectie 
@@ -59,8 +56,7 @@ In Marketing Suite vindt je links in je database de knop
 rechtsbovenin de knop *Create selection*. Andere beheeropties voor 
 selecties vind je [hier](selections-settings).
 
-
-### Regels en condities
+## Regels en condities
 
 Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen 
 hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica 
@@ -69,10 +65,16 @@ filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode.
 Het is best een hoop informatie, vandaar het volgende uitlegartikel: 
 [regels en condities](selections-conditions).
 
-
-### Meer informatie
+## Meer informatie
 
 * [Beheeropties voor selecties](./selections-settings)
 * [Regels en condities](./selections-conditions)
 * [Optimaliseren van selecties](./selections-optimazation)
+
+### Selectie tutorials
+
+* [Tutorial: Bounce handling](./automatically-process-bounces)
+* [Tutorial: Dubbele opt-in](create-a-double-optin-for-new-subscribers)
+* [Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 
