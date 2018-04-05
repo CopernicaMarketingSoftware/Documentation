@@ -52,8 +52,8 @@ Je kunt selecties, subselecties en miniselecties beheren onder
 maak je door *selectie aanmaken* aan te klikken en bij *onder* de 
 selectie aan te klikken waar je subselectie onder moet hangen. 
 In Marketing Suite vindt je links in je database de knop 
-*Create a first selection* wanneer je nog geen selecties hebt, en 
-rechtsbovenin de knop *Create selection*. Andere beheeropties voor 
+*Eerste selectie aanmaken* wanneer je nog geen selecties hebt, en 
+rechtsbovenin de knop *Selectie aanmaken*. Andere beheeropties voor 
 selecties vind je [hier](selections-settings).
 
 ## Regels en condities
@@ -62,7 +62,7 @@ Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen
 hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica 
 in door middel van *selectieregels* en *condities*. Je kunt op van alles 
 filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode. 
-Het is best een hoop informatie, vandaar het volgende uitlegartikel: 
+Dit artikel gaat er dieper op in:
 [regels en condities](selections-conditions).
 
 ## Meer informatie
