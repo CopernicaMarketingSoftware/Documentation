@@ -33,9 +33,10 @@ worden. Dit en veel meer kun je bereiken met [opvolgacties](./followups).
 
 [Email personalizeren](./personalization) kan door variabelen rechtstreeks 
 te gebruiken in je template, maar je kunt bijvoorbeeld ook informatie 
-gebruiken om condities te specificeren. Copernica werkt met template 
-engine [Smarty](https://www.smarty.net/), maar heeft zelf ook een aantal 
-handige functies beschikbaar gesteld.
+gebruiken om condities te specificeren. Met deze condities kun je dan 
+bijvoorbeeld kiezen welke content blokken je in een email gebruikt. 
+Copernica werkt met template engine [Smarty](https://www.smarty.net/), 
+maar heeft zelf ook een aantal handige functies beschikbaar gesteld.
 
 ## Database automatiseren
 
@@ -45,9 +46,22 @@ Zo kun je bijvoorbeeld je eigen uitschrijfgedrag schrijven.
 
 ## Meer informatie
 
-Nu je weet wat de mogelijkheden zijn kun je zelf proberen te personalizeren! 
+Nu je weet wat de mogelijkheden zijn kun je zelf proberen te automatizeren! 
 We raden je de volgende artikelen aan om van start te gaan.
 
+## Artikelen
+
 * [Selecties](./selections-introduction)
-* [Personalisatie](./personalization) 
+* [Personalisatie](./personalization)
 * [Opvolgacties](./followups)
+
+## Tutorials
+
+* [Tutorial: Bounce handling](./automatically-process-bounces) 
+* [Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)
+* [Tutorial: Dubbele opt-in](./campaign-tutorial-double-opt-in)
+* [Tutorial: Lead scoring](./campaign-tutorial-lead-scoring)
+* [Tutorial: Reactivatie campagne](./campaign-tutorial-reactivation)
+* [Tutorial: Herhaalaankopen campagne](./campaign-tutorial-repeat-purchase)
