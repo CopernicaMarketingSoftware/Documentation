@@ -5,11 +5,12 @@ versturen aan personen die zich hiervoor hebben aangemeld. Zulks een
 aanmelding noemt men in de wereld van de internet marketing ook wel
 opt-in (en een uitschrijving opt-out). Een dubbel opt-in gaat nog even
 verder en geeft je de garantie dat aanmelders zichzelf daadwerkelijk
-hebben aangemeld en met een bestaand e-mailadres.
+hebben aangemeld en met een bestaand e-mailadres, wat ook beter is 
+voor de [aflevering van emails](./deliverability).
 
-Let op: Deze tutorial laat alleen zien hoe je dit kunt doen vanuit Publisher. 
-Helaas werkt deze tutorial niet voor Marketing Suite, omdat webformulieren 
-hier nog niet bestaan.
+Let op: Dit is een oudere tutorial geschreven voor Publisher. Als je in 
+Marketing Suite werkt kun je [deze tutorial](./campaign-tutorials-double-opt-in) 
+volgen.
 
 ## Hoe werkt dubbele optin?
 

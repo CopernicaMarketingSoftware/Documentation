@@ -5,10 +5,12 @@ light, but you are also not allowed to send commercial email to people
 who did not register for it. Such a registration is dubbed an "opt-in" 
 in the internet marketing world. When you unsubscribe this is called an 
 "opt-out". A double opt-in asks the user to confirm their email so you 
-can guarantee your users registered a valid email address.
+can guarantee your users registered a valid email address, which also 
+improves your [deliverability](./deliverability).
 
-Note: This tutorial is aimed at Publisher users. See [followups](./follow-up-manager) 
-for more information on followup actions in Publisher and Marketing Suite.
+Note: This is an older tutorial aimed at Publisher users. If you use 
+Marketing Suite you should use [this tutorial](./campaign-tutorials-double-opt-in) 
+instead.
 
 ## How does it work?
 
