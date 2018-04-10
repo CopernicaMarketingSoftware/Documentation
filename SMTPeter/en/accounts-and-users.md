@@ -37,5 +37,5 @@ i.e. a single account with a few colleagues, this may look a little superfluous:
 you have a list of colleagues and a list of people with access to the account, 
 while these are often the same list.
 
-As described, this is because of the triangular structure, which you can use in the case of multiple
-accounts, or if you want to grant access to a non-colleague.
+As described, this is because of the triangular structure, which you can 
+use in the case of multiple accounts, or if you want to grant access to a non-colleague.
