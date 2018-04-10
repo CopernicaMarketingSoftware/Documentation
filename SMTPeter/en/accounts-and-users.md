@@ -22,7 +22,7 @@ for example to give an external specialist access to the software and data.
 The triangle below illustrates the relation between 'company', 'account' 
 and 'user'.
 
-![Account-user relationship](../Images/accounts-users.png)
+![Account-user relationship](./Images/accounts-users.png)
 
 The triangular relationship as pictured above makes it possible to grant 
 different sorts of access to accounts. In the user dashboard you can 
