@@ -1,18 +1,9 @@
 # CSS en XSLT in Publisher
 
-Designers met CSS en/of XSLT ervaring zijn altijd erg blij met de Publisher 
-omgeving. Alle publicaties hierin kunnen namelijk gestijld en gestructureerd 
-worden met CSS en XSLT. We vinden het zo belangrijk dat jouw merk goed 
-over komt dat de Publisher een aparte tab heeft voor Stijl.
-
 Het **Stijl** component in Copernica is volledig ontworpen met het 
-maken en beheren van je eigen style sheets en XSLT files in gedachten.
-
-![](../images/new-xslt.png)
+maken en beheren van je eigen huisstijl. 
 
 ## CSS Stylesheets gebruiken in Publisher
-
-### Stylesheets maken
 
 Met CSS kun je regels instellen voor het weergeven van verschillende HTML 
 elemeneten. Met CSS kun je bijvoorbeeld aangeven dat alle paragrafen 
@@ -26,7 +17,6 @@ kan.
 Gebruik bijvoorbeeld CSS voor:
 
 -   Het bepalen van de kleur en lettergrootte van paragrafen
--   Een rode lijn om elke afbeelding die je invoegt
 -   Het centreren van alle headers
 -   Het veranderen van het symbool voor elk element van een opsomming
 -   Afgeronde hoeken om een textveld
@@ -35,7 +25,7 @@ Gebruik bijvoorbeeld CSS voor:
 Copernica heeft een standaard stijl, maar je kunt deze aanpassen naar je 
 eigen smaak. Omdat de standaard sheet veel commentaar bevat is het snel 
 duidelijk hoe je dit kunt doen. Een stylesheet is nooit gelinkt aan een 
-web formulier maar aan de template of webpagina waar deze binnen valt. 
+document of webformulier maar aan het template of webpagina waar deze binnen valt. 
 
 Lees ook het artikel over het [beheren van CSS stylesheet files](./manage-css-stylesheet-files.md)
 
@@ -45,9 +35,8 @@ Om een stylesheet te gebruiken navigeer je naar de optie **Stijl instellen...**
 in het menu. Er wordt nu een **Stijl** tab toegevoegd bij het document 
 of de template, waardoor je de stijl meteen makkelijk aan kan passen.
 
-Een aantal email clients (waaronder grote met veel gebruikers)
- kunnen of willen geen CSS styling accepteren. 
-Copernica zet daarom zelf je CSS om naar inline CSS. Dit betekent dat 
+Een groot aantal email clients kunnen of willen geen externe CSS styling accepteren. 
+Copernica zet daarom je CSS om naar inline CSS. Dit betekent dat 
 je CSS regels binnen de HTML elementen wordt gekopieerd. Dit zorgt ervoor 
 dat je stylesheet niet zomaar genegeerd kan worden en zorgt ervoor dat 
 jouw email er voor de ontvanger ook daadwerkelijk zo uitziet als jij hem 
@@ -62,17 +51,15 @@ Als je de stijl voor je document instelt krijg je een aantal opties:
 
 ## XSLT in Copernica
 
-### Wat is XSLT?
-
-Webformulieren, enquêtes en content feeds zijn gebouwd met XML. De XML 
+Webformulieren, enquêtes en content feeds (RSS & Atom) zijn gebouwd met XML. De XML 
 file bevat en omschrijft de data. De XSLT, wat staat voor Extensible Stylesheet 
 Language Transformations, zet de XML om naar markup voor de internet browser. 
 
 Toepassingen van XSLT:
 
--   Alle titels binnen HTML header tags \<h1\> plaatsen
+-   Alle titels binnen HTML header tags <h1> plaatsen
 -   Een paragraaf binnen paragraaf tags plaatsen
--   Een CSS klasse toekennen aan een afbeelding
+-   Een CSS class toekennen aan een afbeelding
 -   Informatie selecteren en structureren.
 -   Et cetera...
 
