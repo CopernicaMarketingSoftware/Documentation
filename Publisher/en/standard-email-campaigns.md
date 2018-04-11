@@ -1,4 +1,4 @@
-# Standard e-mail campaigns
+# Standard email campaigns
 
 Below are some examples of email campaigns you can simply implemented within the Marketing Suite. You can find a simple step-by-step guide per campaign.
 
