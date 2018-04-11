@@ -37,6 +37,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{condition}](./personalization-functions-condition)                  | conditioneel blok op basis van JavaScript                                    |
 | [{counter}](./personalization-functions-counter)                      | teller                                                                       |
 | [{cycle}](./personalization-functions-cycle)                          | wisselen tussen array van waardes                                            |
+| {eval}                                                                | Het evalueren van variabele als template                                     |
 | [{fetch}](./personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
 | [{foreach}](./personalization-functions-foreach)                      | itereren over een array                                                      |
 | [{if}](./personalization-functions-if)                                | conditionele blokken                                                         |
