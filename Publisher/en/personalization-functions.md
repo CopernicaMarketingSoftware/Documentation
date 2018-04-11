@@ -32,6 +32,7 @@ are built-in Smarty functions, and a number of Copernica-only functions:
 | **[{condition}](./personalization-functions-condition)**               | Conditional block based on a JavaScript expression                       |
 | **[{counter}](./personalization-functions-counter)**                   | Counter (ascending/descending)                                           |
 | **[{cycle}](./personalization-functions-cycle)**                       | Cycle between two values                                                 |
+| **{eval}**                                                             | To evaluate a variable as a template                                     |
 | **[{feed}](./personalization-functions-feed)**                         | Load an external RSS feed                                                |
 | **[{fetch}](./personalization-functions-fetch)**                       | Import externally hosted content                                         |
 | **[{foreach}](./personalization-functions-foreach)**                   | Iterate over an array                                                    |
