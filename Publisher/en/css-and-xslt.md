@@ -1,19 +1,9 @@
 # CSS and XSLT in Publisher
 
-Designers that work with CSS and XSLT get very happy when they work with
-Copernica. You see, all publications you create with our software can be
-fully restyled and restructured. We find this part so important, we
-created a whole section for it in Copernica.
-
 The **Style** component in Copernica is fully equipped for creating and
-managing your own style sheets and XSLT files.
+managing your own style with style sheets and XSLT files.
 
-![](../images/new-xslt.png)
-
-Using stylesheets in Copernica
-------------------------------
-
-### What can I do with CSS
+## Using stylesheets in Copernica
 
 With CSS you set up rules to define different displaying of HTML
 elements. Using CSS you can for example state that all paragraphs should
@@ -23,10 +13,9 @@ Webforms, surveys and feeds come with a standard style sheet that you
 can edit as much as you like. They're equipped with /\* clear commentary
 \*/, so that you can get started right away.
 
-#### Use a CSS stylesheet to
+### Use a CSS stylesheet to
 
 -   Change the colour and font size of each paragraph
--   Give every image used in a document a red border
 -   Centrally align all headers
 -   Change the bullet type of an unordered list
 -   Give a web form text field those neat rounded borders
@@ -34,14 +23,13 @@ can edit as much as you like. They're equipped with /\* clear commentary
 
 ### Create and manage your own stylesheets
 
-Web forms, feeds, surveys always have a default style sheet. If you wish
+Web forms, feeds and surveys always have a default style sheet. If you wish
 to modify their rules, or create your own style sheet, you can do so
 under **Style**. The default style sheets come with lots of comments
 that will help you modifying it. Note that a stylesheet is not linked to
 a web form, but to the web page or template whereon you have published
-it. You can link a style sheet to
-the page, document or template through its context menu. The same
-applies to stylesheets for surveys and feeds.
+it. You can link a style sheet to the page, document or template through 
+its context menu. The same applies to stylesheets for surveys and feeds.
 
 ### Link your stylesheet to a template, document or web page
 
@@ -55,8 +43,7 @@ that the changes apply to all publications that use this style sheet.
 
 Because some important email clients can't (or just refuse to) handle
 CSS styling very well, Copernica converts certain elements to inline CSS
-when your email is sent, so that your email still looks like it's
-supposed in clients like Gmail.
+when your email is sent, so that your email still looks good.
 
 When setting the style for your document, you are presented with a few
 options
@@ -73,10 +60,7 @@ Once you have linked the stylesheet to the document or template, an exta
 tab [style] will show up above the document. From here you can quickly
 edit its content.
 
-XSLT in Copernica
------------------
-
-### What is XSLT
+## XSLT in Copernica
 
 Web forms, surveys and content feeds are built upon XML. The XML file
 contains the data, and describes what kind of data it is. The XSLT
@@ -84,7 +68,7 @@ contains the data, and describes what kind of data it is. The XSLT
 transform the data from the XML to the mark-up language readable for the
 internet browser: HTML. So, what can you do with XSLT?
 
--   All titles should be placed within HTML  header tags \<h1\>
+-   All titles should be placed within HTML header tags <h1>
 -   A paragraph should be placed within HTML paragraph tags
 -   Give an image a CSS class
 -   The publish date of an article should not appear in the HTML
@@ -113,7 +97,7 @@ form.
     </webform>  
 
 Very interesting, all that plain information, but unless it's converted
-to HTML, it is useless to an internet browser. And that's where XSLT
+to HTML, it is useless to an internet browser or email client. And that's where XSLT
 comes in.
 
 In the XSLT file you define how the plain XML should be given to the
