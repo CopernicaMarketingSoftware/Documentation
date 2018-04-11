@@ -104,7 +104,7 @@ Indien een subprofiel beschikbaar is, zitten in de variabele subprofile al dez
     
     paid(subprofile);
 
-### Enquetes
+### Enquêtes
 
 In opvolgacties naar aanleiding van een enquête, en ook in de e-mails die naar aanleiding van deze opvolgacties worden opgestart, zijn variabelen beschikbaar met gegevens over de ingevulde enquête.
 
@@ -122,7 +122,7 @@ Als je een opvolgactie alleen wilt uitvoeren indien er bij meerkeuzevraag 7 mins
 
 Zoals hierboven al geschreven zijn alle variabelen in de conditie ook beschikbaar als smarty variabelen! Je kunt dus in een document dat naar aanleiding van een ingevulde enquete wordt verstuurd deze variabelen ook uitlezen! Zo kun je een notificatie naar iemand sturen waarin je meldt welke vragen zijn ingevoerd:
 
-Op vraag 2 heb je geantwoord: `{$survey.questions.2.answer.1|escape}`
+Op vraag 2 heb je geantwoord: `{$survey.questions.2.answer.1}`
 
 ### Formulieren
 
