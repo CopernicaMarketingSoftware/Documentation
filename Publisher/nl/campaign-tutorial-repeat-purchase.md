@@ -8,7 +8,6 @@ herhalingsaankopen stimuleert.
 ## Mogelijkheden identificeren
 
 Om mogelijkheden te identificeren zullen we kijken naar de aankoopgeschiedenis. 
-ssibilities we'll be looking at their order history. 
 Met [collecties](./database-fields-and-collections) kun je makkelijk 
 de aankopen van je klanten opslaan in je database. Wij raden je aan een 
 [integratie](https://www.copernica.com/nl/integrations) met je webshop te maken 
@@ -17,7 +16,7 @@ opslaan in de collectie om de tutorial te kunnen volgen. Als je een email adres
 hebt voor elke order maakt dat de vervolgstappen gemakkelijker, maar dit is 
 niet vereist. 
 
-Laten we zeggen dat we twee telefoon merken verkopen: A en B. Een telefoon 
+Laten we zeggen dat we twee telefoonmerken verkopen: A en B. Een telefoon 
 van A gaat meestal 2 jaar mee, terwijl B maar 1,5 jaar mee gaat. We weten 
 ook dat de klanten van de merken erg loyaal zijn en niet snel zullen switchen.
 
@@ -35,7 +34,7 @@ die een nieuwe telefoon B nodig hebben:
 18 maanden in de regel. Door twee miniselecties aan te maken promoten we 
 de juiste telefoon voor de klant op het moment dat zij deze nodig hebben.
 
-### Zonder emailadressen in collectie
+### Zonder e-mailadressen in collectie
 
 Zonder een email adres in de collectie moeten we data opslaan in het 
 profiel zodat we deze kunnen emailen. We kopiëren data naar het profiel 
@@ -66,7 +65,7 @@ period"
 * Maak dezelfde selectie voor "NieuweTelefoonB" met 18 maanden in plaats van 
 24 maanden.
 
-## Aanmoedingen tot herhalingskoop
+## Aanmoedigen tot herhalingsaankoop
 
 Je kunt nu simpelweg een template aanmaken voor beide telefoons en een 
 dagelijkse mailing inroosteren voor beide. Je klanten zullen de mail alleen 
@@ -75,10 +74,10 @@ ontvangen als de levensduur precies verlopen is en daarna niet meer.
 ## Meer informatie
 
 Wil je meer informatie over follow-ups of selecties? Wil je meer informatie 
-over personalizatie om je re-activatie campagnes nog interessanter te maken?
+over personalisatie om je re-activatie campagnes nog interessanter te maken?
 De onderstaande links helpen je op weg.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
 * [Selecties](./selections-introduction.md)
-* [Personalizatie](./personalization)
+* [Personalisatie](./personalization)
 * [Campagne Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)
