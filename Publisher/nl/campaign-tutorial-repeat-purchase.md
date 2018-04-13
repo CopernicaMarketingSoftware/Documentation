@@ -5,7 +5,7 @@ van je producten weet kun je deze makkelijk gebruiken om herhaalde aankopen aan
 te moedigen. In deze tutorial laten we je een campagne zien waarmee je 
 herhalingsaankopen stimuleert.
 
-## Mogelijkheden identiferen
+## Mogelijkheden identificeren
 
 Om mogelijkheden te identificeren zullen we kijken naar de aankoopgeschiedenis. 
 ssibilities we'll be looking at their order history. 
