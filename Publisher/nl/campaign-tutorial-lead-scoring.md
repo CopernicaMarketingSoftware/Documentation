@@ -48,6 +48,7 @@ zien hoe je beide kunt doen.
 
 ### Een geautomatiseerde email versturen
 
+De follow-up:
 - Ga naar de database of collectie waar je de leads van wil mailen.
 - Maak een veld genaamd "lead_gecontacteerd" aan in je database. Zet de 
 default op "nee".
@@ -65,6 +66,8 @@ in.
 - Maak hier nog een "match" link naast met een "Update destination" box. 
 Hierin selecteer je het "lead_gecontacteerd" veld en verander je de waarde 
 naar "ja" om aan te geven dat deze lead nu gecontacteerd is.
+
+![Follow-up in de editor](../images/campaign-tutorial-lead-scoring-nl.svg)
 
 Tip: Voeg je sales team toe aan de BCC; zo kunnen zij ook zien dat er 
 iemand geïnteresseerd is.
