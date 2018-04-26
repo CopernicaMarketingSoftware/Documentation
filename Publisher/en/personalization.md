@@ -55,6 +55,13 @@ To display data from the next row, you can replace [0] with [1].
 {$profile.collection[1].fieldname}
 ```
 
+To display data from the last row we have to count the rows first.
+Because we start from zero we have to subtract one of the total amount of rows.
+
+```text
+{$profile.collection[{$profile.collection|count -1].fieldname}
+```
+
 To display all subprofiles you can use a foreach function.
 
 ```text
@@ -66,7 +73,7 @@ To display all subprofiles you can use a foreach function.
 If you do not want to display all fields you can use the if function in combination with the foreach function.
 
 ```text
-{foreach $item in $profile.collection} {if $item.status == "InShoppingCart"}
+{foreach $item in $profile.collection}{if $item.status == "InShoppingCart"}
 {$item.fieldname}
 {/if}{/foreach}
 ```
