@@ -55,6 +55,14 @@ Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
 {$profile.collectie[1].veldnaam}
 ```
 
+Om data uit de laatste (en nieuwste) rij weer te geven kun je de count 
+modifier gebruiken om het aantal subprofielen te tellen waarna je 
+van het totaal 1 moet aftrekken omdat wij beginnen met nul.
+
+```text
+{$profile.collectie[$profile.collectie|count -1].veldnaam}
+```
+
 Om alle subprofielen weer te geven kun je een foreach functie gebruiken.
 
 ```text
