@@ -67,10 +67,10 @@ in.
 Hierin selecteer je het "lead_gecontacteerd" veld en verander je de waarde 
 naar "ja" om aan te geven dat deze lead nu gecontacteerd is.
 
-![Follow-up in de editor](../images/campaign-tutorial-lead-scoring-nl.svg)
 
 Tip: Voeg je sales team toe aan de BCC; zo kunnen zij ook zien dat er 
-iemand geïnteresseerd is.
+iemand geïnteresseerd is. Je kunt de email ook rechtstreeks naar de sales 
+afdeling sturen.
 
 ### Een selectie op basis van de leadscore maken
 
