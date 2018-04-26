@@ -85,7 +85,8 @@ to leave them alone, to avoid the risk of being marked as spam. If you
 choose to send more information you should go through the steps above again. 
 
 The key to a successful campaign is to determine how interested your leads 
-are and tailor your content according to their interest.
+are and tailor your content according to their interest. It might be useful 
+to draw a flowchart before starting your follow-up.
 
 ## Example
 
