@@ -90,14 +90,10 @@ MongoDB has a limitation of around 16 MB per document (there is some overhead
 due to the usage of their internal BSON representation). If MailerQ has to
 store a bigger document, the message is split up into smaller parts that are
 all individually stored into MongoDB. As a consequence, you can find three 
-types of documents in the database:
+types of documents in the database.
 
-1. Regular message (for mails smaller than 16mb) holding full mime data.
-2. For big messages (more than 16mb) master documents that refer to partial documents
-3. Partial messages that only hold a part of a message.
-
-A *regular message* (smaller than 16mb) stored in MongoDB has the following 
-properties:
+Most mails are less than 16mb big. So you will mostly see *regular messages*
+in the database with the following properties:
 
 * **_id**: unique message identifier
 * **value**: the full mime message, normally stored as utf8 data
@@ -105,8 +101,8 @@ properties:
 * **modified**: last modified timestamp
 * **encoding**: either "gzip" or "identity"
 
-If the message is bigger than 16mb, MailerQ stores a *master document*
-with the following properties:
+If the message is bigger than 16mb, MailerQ splits up the message and stores 
+a *master document* with the following properties:
 
 * **_id**: unique message identifier
 * **keys**: array of message identifiers of the individual parts
@@ -115,7 +111,7 @@ with the following properties:
 * **modified**: last modified timestamp
 * **encoding**: either "gzip" or "identity"
 
-Each individual part has the following properties:
+Each individual part of a big message has the following properties:
 
 * **_id**: unique message identifier, this is unique for each part
 * **parent**: identifier of the master document
