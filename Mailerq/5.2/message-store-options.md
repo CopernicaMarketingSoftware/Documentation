@@ -61,11 +61,11 @@ the address string.
 
 [Click here for the MongoDB documentation](https://docs.mongodb.org/manual/reference/connection-string/)
 
-We discovered that MongoDB sometimes has strange hiccups and that it does
-not always succeed in fetching data, even when it is available. We've added
-a quick and dirty fix for this by simply repeating the fetch operation
-a couple of times in case of a failure. To enable this feature, you can
-add a special option to the address:
+Some of our issues ran into issues with fetch operations. They reported 
+strange hiccups and that MailerQ did not always succeed in fetching data, 
+even when it is available. We've added a quick and dirty fix for this by 
+simply repeating the fetch operation a couple of times in case of a failure. 
+To enable this feature, you can add a special option to the address:
 
 ````
 storage-address:        mongodb://hostname/database/collection?readAttempts=3
@@ -88,20 +88,41 @@ storage-address:        mongodb://hostname/database/collection?maxQuerySize=10
 
 MongoDB has a limitation of around 16 MB per document (there is some overhead
 due to the usage of their internal BSON representation). If MailerQ has to
-store a bigger document, we do this by splitting up the message into smaller 
-parts. Assume a message has a size of 20 MB and should be stored with ID "abc"
-(without the quotes). This would be impossible because the message is too big 
-for MongoDB. However, by splitting up the message, using keys:
+store a bigger document, the message is split up into smaller parts that are
+all individually stored into MongoDB. As a consequence, you can find three 
+types of documents in the database:
 
-* "abc\00\02"
-* "abc\01\02"
+1. Regular message (for mails smaller than 16mb) holding full mime data.
+2. For big messages (more than 16mb) master documents that refer to partial documents
+3. Partial messages that only hold a part of a message.
 
-This is the original key ("abc"), followed by a NULL character to mark it
-as a message that was split up ("\0"), followed by the sequence number
-(ascii "0"), another NULL character ("\0") and then the total number of parts
-(ascii "2"). If you wish to add messages to mongo yourself you should use the 
-same scheme for large messages.
+A *regular message* (smaller than 16mb) stored in MongoDB has the following 
+properties:
 
+* **_id**: unique message identifier
+* **value**: the full mime message, normally stored as utf8 data
+* **expire**: expiration timestamp
+* **modified**: last modified timestamp
+* **encoding**: either "gzip" or "identity"
+
+If the message is bigger than 16mb, MailerQ stores a *master document*
+with the following properties:
+
+* **_id**: unique message identifier
+* **keys**: array of message identifiers of the individual parts
+* **size**: total message size of all the parts together
+* **expire**: expiration timestamp
+* **modified**: last modified timestamp
+* **encoding**: either "gzip" or "identity"
+
+Each individual part has the following properties:
+
+* **_id**: unique message identifier, this is unique for each part
+* **parent**: identifier of the master document
+* **value**: part of the message data
+* **offset**: the offset of the data into the full message
+* **expire**: expiration timestamp
+* **modified**: last modified timestamp
 
 ## Directory specifics
 
