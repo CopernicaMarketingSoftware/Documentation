@@ -12,6 +12,7 @@ Kortom, met de flexibele REST API heb je alle denkbare opties tot je beschikking
 
 De REST API geeft je een aantal handige opties om je mailings te verbeteren:
 
+* [Opvragen van persoonlijke data](rest-email-data)
 * [Opvragen van berichten](rest-messages)
 * [Opvragen van events](rest-events)
 * [Opvragen van log files](rest-logfiles)

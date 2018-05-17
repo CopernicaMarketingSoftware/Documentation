@@ -8,7 +8,7 @@ and 'templates'. In short, with the REST API you have all information and option
 
 ## Explore other capabilities  
 
-The REST APIbrings various tools to increase the quality of your mailings:
+The REST API brings various tools to increase the quality of your mailings:
 
 * [Retrieve messages](rest-messages)
 * [Retrieve events](rest-events)
