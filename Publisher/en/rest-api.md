@@ -42,7 +42,7 @@ GET methods are used to fetch data. The following GET methods are available:
 | GET       | [api.copernica.com/v1/view/$id/views](./rest-get-view-views)                                              | Fetch nested selections                 |     
 | GET       | [api.copernica.com/v1/rule/$id](./rest-get-rule)                                                          | Fetch selection rule                    |     
 | GET       | [api.copernica.com/v1/rule/$id/conditions](./rest-get-rule-conditions)                                    | Get selection conditions                |     
-| GET       | [api.copernica.com/v1/profile/$id/data](./rest-get-profile)                                               | Fetch profile data                      |     
+| GET       | [api.copernica.com/v1/profile/$id/](./rest-get-profile)                                                   | Fetch profile data                      |     
 | GET       | [api.copernica.com/v1/profile/$id/events](./rest-get-profile-events)                                      | Fetch profile events                    |
 | GET       | [api.copernica.com/v1/profile/$id/fields](./rest-get-profile-fields)                                      | Fetch profile fields                    |     
 | GET       | [api.copernica.com/v1/profile/$id/interests](./rest-get-profile-interests)                                | Fetch profile interests                 |     
@@ -60,7 +60,7 @@ GET methods are used to fetch data. The following GET methods are available:
 | GET       | [api.copernica.com/v1/miniview/$id/rule/$id](./rest-get-miniview-rule)                                    | Fetch miniview rule                     |	    
 | GET       | [api.copernica.com/v1/minirule/$id](./rest-get-minirule)                                                  | Fetch miniselection rule                |     
 | GET       | [api.copernica.com/v1/minirule/$id/conditions](./rest-get-minirule-conditions)                            | Fetch conditions for a miniselection    |     
-| GET       | [api.copernica.com/v1/subprofile/$id/data](./rest-get-subprofile)                                         | Fetch subprofile data                   |     
+| GET       | [api.copernica.com/v1/subprofile/$id/](./rest-get-subprofile)                                             | Fetch subprofile data                   |     
 | GET       | [api.copernica.com/v1/subprofile/$id/events](./rest-get-subprofile-events)                                | Fetch subprofile events                 |
 | GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields)                                | Fetch subprofile fields                 |     
 | GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles)                                                      | Fetch all logfiles                      |     
