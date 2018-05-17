@@ -69,7 +69,7 @@ if (profile.fields.leadscore) profile.fields.leadscore + = 1;
 else profile.fields.leadscore = 1;
 ```
 
-## De lead nurturing campagne opbouwen
+## De informatiestroom opbouwen
 
 Als je er zeker van bent dat de content naar smaak is en de informatie 
 in het profiel wordt bijgehouden kun je de opvolgactie voor de informatie 
@@ -89,7 +89,21 @@ De sleutel naar een succesvolle campagne is de interesse van je leads
 goed peilen en je content erop aanpassen. Het kan ook nuttig zijn om eerst 
 een flowchart te maken om je follow-up overzichtelijk te houden.
 
+## Het eindpunt
+
+Uiteindelijk zal je campagne aflopen. Dit kan zijn omdat de klant niet 
+reageert, omdat je alle informatie gedeeld hebt die je wilde delen of 
+omdat de klant al zo geïnteresseerd is dat je deze kan contacteren. 
+Wanneer de campagne afgelopen is kun je nadenken over de volgende stap, 
+bijvoorbeeld het verwijderen van leads die niet geïnteresseerd zijn of 
+het versturen van een mail naar sales voor elke lead met een interessante 
+leadscore. Vergeet niet deze laatste stappen toe te voegen aan je follow-up 
+om het maximale uit je campagne te halen.
+
 ## Meer informatie
+
+Zin om aan de slag te gaan? Met de onderstaande artikelen kun je je meer 
+verdiepen in follow-ups en de campagnes die je ermee kunt opzetten.
 
 * [Opvolgacties](./follow-up-manager-ms)
 * [Campagne Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)

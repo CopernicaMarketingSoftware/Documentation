@@ -88,7 +88,18 @@ The key to a successful campaign is to determine how interested your leads
 are and tailor your content according to their interest. It might be useful 
 to draw a flowchart before starting your follow-up.
 
+## The endpoint
+
+Eventually your campaign will end. There can be several reasons; Customers 
+might not be responding, you might be out of information or the customer 
+is already interested enough. Make sure to consider the next step at the 
+end of the follow-up, for example removing leads that are not interested 
+or contacting your sales department about those who are.
+
 ## More information
+
+Eager to get started on your campaign? The articles below will provide 
+you with more background information and inspiration on follow-ups.
 
 * [Follow-ups](./follow-up-manager-ms)
 * [Campaign Tutorial: Profile enrichment](./campaign-tutorial-profile-enrichment)
