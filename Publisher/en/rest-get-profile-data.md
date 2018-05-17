@@ -13,10 +13,10 @@ you want to retrieve the data of.
 The following parameters can be added to the URL:
 
 * *report*: The target to report to; This can either be an email address or 
-a web address. If the file is small enough the JSON file will be added as 
-an attachment to the email, otherwise a link will be provided to download the 
-data. If you choose to use a web address an HTTP POST call will be made with 
-the JSON data.
+a web address. If the target is an email address and the file is small enough the 
+JSON file will be added as an attachment to the email, otherwise a link will 
+be provided to download the data. If you choose to use a web address an 
+HTTP POST call will be made with the JSON data.
 
 ## Return value
 
