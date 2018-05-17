@@ -19,13 +19,13 @@ De methode retourneert de velden van een profiel.
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 ```php
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestApi("your-access-token");
 
-    // do the call, and print result
+    // voer het verzoek uit en print het resultaat
     print_r($api->get("profile/1234/fields"));
 ```
 
