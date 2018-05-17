@@ -89,11 +89,6 @@ De sleutel naar een succesvolle campagne is de interesse van je leads
 goed peilen en je content erop aanpassen. Het kan ook nuttig zijn om eerst 
 een flowchart te maken om je follow-up overzichtelijk te houden.
 
-## Voorbeeld
-
-Het volgende is een voorbeeld van een lead nurturing campagne, gemaakt in de 
-follow-up manager.
-
 ## Meer informatie
 
 * [Opvolgacties](./follow-up-manager-ms)

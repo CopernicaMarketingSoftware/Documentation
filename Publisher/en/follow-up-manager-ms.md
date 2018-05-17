@@ -85,7 +85,7 @@ have prepared some tutorials for you:
 
 * [Profile enrichment](./campaign-tutorial-profile-enrichment)
 * [Double opt-in](./campaign-tutorial-double-opt-in)
-* [Lead scoring](./campaign-tutorial-lead-scoring)
+* [Lead scoring/nurturing](./campaign-tutorial-lead-nurturing)
 * [Re-activation](./campaign-tutorial-reactivation)
 * [Repeat purchases](./campaign-tutorial-repeat-purchase)
 
