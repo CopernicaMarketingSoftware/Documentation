@@ -23,5 +23,5 @@ need in the links below.
 
 * [Glossary](./definitions)
 * [Personalization](./personalization)
-* [Followups](./followups)
+* [Follow-ups](./followups)
 * [Background articles](./tips-and-tricks)
