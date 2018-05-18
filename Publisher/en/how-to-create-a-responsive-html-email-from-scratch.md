@@ -27,39 +27,39 @@ If you plan to make a responsive email you have to use a meta viewport. This tel
 ```
 
 ## Basic structure
-The basic structure of two boxes placed next to each other needs to be placed within a couple of tables. In email, every box needs to be contained within a table. Otherwise, your content will break in many clients. Start with a background table, then a wrapper table that you can center, two cells/columns next to each other and finally a table for your content.
+The basic structure of two boxes placed next to each other needs to be placed within a couple of tables. In email, every box needs to be contained within a table. Otherwise, your content will break in many clients. Start with a background table, then a wrapper that you can center and finally a table for your content.
 
 The trick is to use two ‘td’ elements that are automatically displayed next to each other. You only want to change this behaviour on smaller screens. You can do this with media queries. 
 
 ```html
 <table width="100%">
-        <tr>
-            <td class="wrapper" width="600" align="center">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td class="column" width="300">
-                            <table>
-                                <tr>
-                                    <td align="left">
-                                        <h2>Left column</h2>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="column" width="300">
-                            <table>
-                                <tr>
-                                    <td align="left">
-                                        <h2>Right column</h2>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <tr>
+        <td class="wrapper" width="600" align="center">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="column" width="300">
+                        <table>
+                            <tr>
+                                <td align="left">
+                                    <h2>Left column</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="column" width="300">
+                        <table>
+                            <tr>
+                                <td align="left">
+                                    <h2>Right column</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 ```
 
 ## CSS media queries
@@ -71,18 +71,18 @@ Media queries are specified in the `<head>` section of the document and only wor
 There are many more possible rules for media queries, but for this example we're using the max-width property. 
 
 ```html
- <style rel="stylesheet" type="text/css">
-@media only screen and (max-width: 600px) {
-.wrapper table {
-width: 100% !important;
-}
+<style rel="stylesheet" type="text/css">
+    @media only screen and (max-width: 600px) {
+        .wrapper table {
+            width: 100% !important;
+        }
 
-.wrapper .column {
-// make the column full width on small screens and allow stacking
-width: 100% !important;
-display: block !important;
-}
-}
+        .wrapper .column {
+            // make the column full width on small screens and allow stacking
+            width: 100% !important;
+            display: block !important;
+        }
+    }
 </style>
 ```
 
@@ -90,7 +90,7 @@ What happens when the screen is less than 600 pixels the width of the wrapper on
 
 To make the columns flow over each other you need to use display block. This enables stacking.
 
-Note that we've used the `!important` declaration here. Normally you don’t need to do this but it’s common practice to use this declaration when building HTML email templates within media queries. With this declaration you override all the inline styles that sometimes get priority. For email, it's best to use only inline styles, because some clients do not support embedded style sheets yet. We know inline CSS can be a bit of a hassle to write, so Copernica Marketing Software has a tool to inlinize your CSS automatically. Create a clear structure of classes in your document: not only does this make your source code look more organized, it also makes style sheets and media queries a lot easier to write.
+Note that we've used the `!important` declaration here. Normally you don’t need to do this but it’s common practice to use this declaration when building HTML email templates within media queries. With this declaration you override all the inline styles. For email, it's best to use only inline styles, because some clients do not support embedded style sheets yet. We know inline CSS can be a bit of a hassle to write, so Copernica Marketing Software has a tool to inlinize your CSS automatically. Create a clear structure of classes in your document: not only does this make your source code look more organized, it also makes style sheets and media queries a lot easier to write.
 
 ## Other best practices
 
@@ -114,7 +114,6 @@ This is an example template with a basic layout that uses all of the elements we
     <title>A responsive two column example</title>
 
     <style rel="stylesheet" type="text/css">
-        
         @media only screen and (max-width: 600px) {
 
             .wrapper table {
@@ -126,11 +125,9 @@ This is an example template with a basic layout that uses all of the elements we
                 display: block;
             }
         }
-
     </style>
 
 </head>
-
 <body>
     <table width="100%">
         <tr>
