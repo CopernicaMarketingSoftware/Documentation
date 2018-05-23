@@ -21,7 +21,7 @@ The following methods are accessible via HTTP GET, POST and DELETE:
 | GET            | www.smtpeter.com/v1/envelope         | Request used envelope address for specific message id  |
 | GET            | www.smtpeter.com/v1/events           | Request events                                         |
 | GET            | www.smtpeter.com/v1/webhooks         | Request webhook settings (feedbackloop is deprecated)  |
-| GET            | www.smtpeter.com/v1/headers          | Reqeust headers of sent message                        |
+| GET            | www.smtpeter.com/v1/headers          | Request headers of sent message                        |
 | GET            | www.smtpeter.com/v1/html             | Request HTML part of sent message                      |
 | GET            | www.smtpeter.com/v1/text             | Request text part of sent message                      |
 | GET            | www.smtpeter.com/v1/logfiles         | Request log files information                          |
