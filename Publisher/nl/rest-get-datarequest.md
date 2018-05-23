@@ -10,7 +10,6 @@ Voor dit verzoek kun je een HTTP GET request sturen naar de volgende URL:
 
 waar **$id** de ID van van het betreffende dataverzoek is.
 
-
 ## Resultaat
 
 Een JSON met alle beschikbare informatie. Als de data beschikbaar zijn heeft

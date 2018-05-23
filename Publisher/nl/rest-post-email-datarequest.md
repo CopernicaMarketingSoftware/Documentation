@@ -14,7 +14,7 @@ naar de volgende URL:
 
 `https://api.copernica.com/v1/email/$email/datarequest?access_token=xxxx`
 
-De code `$email` kun je hier vervangen door het e-mailadres waarvoor je 
+De code **$email** kun je hier vervangen door het e-mailadres waarvoor je 
 het verzoek wil indienen.
 
 ## Beschikbare parameters
@@ -71,12 +71,13 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 ## JSON Bestand
 
-De JSON in de geleverde file bevat twee members, `info` en `data`. De info
-member heeft ook twee members, `type` en `id`. Het type geeft aan wat voor
-type informatie de JSON bevat. Dit kan de waarde `email`, `profile` of `subprofile`
-hebben. De `id` is het e-mail adres of ID van het profiel of sub profiel.
+De JSON in de geleverde file bevat twee members, **info** en **data**. De info
+member heeft ook twee members, **type** en **id**. Het type geeft aan wat voor
+type informatie de JSON bevat. Dit kan de waarde **email**, **profile** of **subprofile**
+hebben. De **id** is het e-mail adres of ID van het profiel of subprofiel.
 De data member in de JSON bevat een array van arrays met daarin alle informatie
 die wij gevonden hebben. Voorbeelden van deze informatie zijn:
+
 - Volledige MIMEs die verstuurd zijn,
 - Informatie over opens en clicks,
 - Ingevulde enquête's,
