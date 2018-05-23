@@ -63,6 +63,7 @@ type informatie de JSON bevat. Dit kan de waarde `email`, `profile` of `subprofi
 hebben. De `id` is het e-mail adres of ID van het profiel of sub profiel.
 De data member in de JSON bevat een array van arrays met daarin alle informatie
 die wij gevonden hebben. Voorbeelden van deze informatie zijn:
+
 - Volledige MIMEs die verstuurd zijn,
 - Informatie over opens en clicks,
 - Ingevulde enquête's,
