@@ -20,8 +20,9 @@ uiteraard aan deze regulaties voldoen.
 ## Informatie ophalen 
 
 Copernica's [REST API](./rest-api) biedt de optie om alle informatie opgeslagen 
-over een e-mailadres, profiel of subprofiel op te vragen. Afhankelijk van 
-waar je de data over op wilt vragen kun je hieronder de relevante API call 
+over een e-mailadres, profiel of subprofiel op te vragen. Je kunt ook meer 
+informatie opvragen over een dataverzoek. Afhankelijk van waar je de data 
+over op wilt vragen kun je hieronder de relevante API call 
 vinden.
 
 * [Data verzoek voor een e-mailadres](./rest-post-email-datarequest)
