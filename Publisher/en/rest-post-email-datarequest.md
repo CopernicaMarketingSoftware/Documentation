@@ -2,10 +2,12 @@
 
 With this method you can post a request to collect all data available about
 an email address, apart from the profile/subprofile information. If we
-receive such a request, we will collect all the data and store this data
-in a JSON file. You can choose to receive this file, when it is ready, 
-attached to an email, or when too large a link in an email, or via us
-posting the data to you. It is also possible to check if the data is
+receive such a request we will collect all the data and store this data
+in a JSON file. You can choose to receive this file 
+per email or with a POST request from us to your web address when it is ready.
+
+If you choose to receive it per email the file will be attached if possible, 
+or linked if the size limit is exceeded. It is also possible to check if the data is
 available via a GET request and the unique ID that this method
 returns.
 
@@ -60,11 +62,13 @@ This example requires the [REST API class](./rest-php).
 
 The JSON with all available information. If the data is available, the
 JSON contains two members, *info* and *data*. The info member has also 
-two members *type* and *id*.  The type provides the type of info, which 
+two members *type* and *id*.  The type provides the type of info which 
 can be *email*, *profile*, or  *subprofile*, the *id* is the email
-address, or the numeric identifier of the profile or subprofile. The data
-member in the JSON contains an array of arrays with all the info we have
-found. Examples of the information that is in the data member are:
+address or the numeric identifier of the profile or subprofile. 
+
+The data member in the JSON contains an array of arrays with all the info 
+we have found. Examples of the information that is in the data member are:
+
 - Complete MIMEs that where sent,
 - Opens, an clicks information,
 - Filled in surveys
