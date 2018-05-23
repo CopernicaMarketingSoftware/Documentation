@@ -24,9 +24,10 @@ over een e-mailadres, profiel of subprofiel op te vragen. Afhankelijk van
 waar je de data over op wilt vragen kun je hieronder de relevante API call 
 vinden.
 
-* [Data by email](./rest-get-email-data)
-* [Data by profile](./rest-get-profile-data)
-* [Data by subprofile](./rest-get-subprofile-data)
+* [Data verzoek voor een e-mailadres](./rest-post-email-datarequest)
+* [Data verzoek voor een profiel](./rest-post-profile-datarequest)
+* [Data verzoek voor een subprofiel](./rest-post-subprofile-datarequest)
+* [Data van een dataverzoek](./rest-get-datarequest)
 
 ## Meer informatie
 
