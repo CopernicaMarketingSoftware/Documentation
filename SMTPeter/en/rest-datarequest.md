@@ -1,12 +1,11 @@
 # Retrieving data based on an email address
 
-Since SMTPeter stores a lot of data, it may be useful to get all the information
-that we have for a specific email address.  Since collecting all the data
-for a specific email address may take some time, getting the data is split
-into two parts. In the first part you can post a data request to us to retrieve
-the data for an email address. For the second part you can make a GET request
-to check if the data are available. These requests are discussed below.
-
+SMTPeter stores data about email addresses that you can retrieve with two 
+API calls. Since collecting all the data for a specific email address may 
+take some time the data retrieval process is split into two steps. 
+First you will have to use a POST request to make the request for the 
+data. The second call is a GET request to see if the data is available and 
+return it if possible. We will explain the steps in this article.
 
 ## Creating an email data request
 
@@ -64,7 +63,7 @@ found. Examples of the information that is in the data member are:
 - etc.
 
 If the data are not available yet, the JSON has in the data member the text:
-"Data are not available (yet).".
+"Data not available (yet).".
 
 ## More information
 

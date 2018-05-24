@@ -1,4 +1,4 @@
-# REST API: POST subprofile data request
+# REST API: POST/GET subprofile data request
 
 With this method you can post a request to collect all data available about
 a subprofile. If we receive such a request, we will collect all the data
@@ -27,6 +27,9 @@ JSON file will be added as an attachment to the email, otherwise a link will
 be provided to download the data. If you choose to use a web address an 
 HTTP POST call will be made with the JSON data.
 
+If you don't use the report parameter you will still be able to retrieve 
+the data with the GET request as explained below.
+
 ## Return value
 
 The result of this POST call is a unique identifier. This identifier can be
@@ -35,8 +38,11 @@ to the following URL:
 
 `https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
 
-The code *id* should be replaced with the identifier obtained from your
-HTTP POST request.
+The code **id** should be replaced with the identifier obtained from your
+HTTP POST request. Note that this file will expire eventually.
+
+If the data is not available yet the data member of the JSON will contain the 
+text "Data not available (yet)".
 
 ## PHP example
 
@@ -53,24 +59,24 @@ $data = array(
 );
 
 // process the request (don't forget to add the ID!)
-$api->post("subprofile/12345/datarequest", $data)
+$api->post("subprofile/$id/datarequest", $data);
 ```
 This example requires the [REST API class](./rest-php).
 
 ## JSON File
 
 The JSON with all available information. If the data is available the
-JSON contains two members, *info* and *data*. The info member has also 
-two members *type* and *id*.  The type provides the type of info which 
-can be *email*, *profile*, or  *subprofile*, the *id* is the email
+JSON contains two members, **info** and **data**. The info member has also 
+two members **type** and **id**.  The type provides the type of info which 
+can be **email**, **profile**, or  **subprofile**, the **id** is the email
 address or the numeric identifier of the profile or subprofile. 
 
 The data member in the JSON contains an array of arrays with all the info 
 we have found. Examples of the information that is in the data member are:
 
-- Complete MIMEs that where sent,
-- Opens, an clicks information,
-- Filled in surveys
+- Complete MIMEs that were sent
+- Opens and clicks information
+- Completed surveys
 - etc.
 
 ## More information

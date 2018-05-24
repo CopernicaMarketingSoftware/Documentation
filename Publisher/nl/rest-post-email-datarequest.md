@@ -1,4 +1,4 @@
-# REST API: POST email data request
+# REST API: POST/GET email data request
 
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 e-mailadres bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 
@@ -12,7 +12,7 @@ verzoek en de unieke ID die deze methode retourneert.
 Voor het indienen van een data verzoek voor een e-mailadres kun je een HTTP POST verzoek sturen 
 naar de volgende URL:
 
-`https://api.copernica.com/v1/email/$email/datarequest?access_token=xxxx`
+`https://api.copernica.com/v1/email/$email/datarequest?access_token=xxx`
 
 De code **$email** kun je hier vervangen door het e-mailadres waarvoor je 
 het verzoek wil indienen.
@@ -27,29 +27,24 @@ toegevoegd als bijlage of als link als de bijlage te groot is. Als je ervoor
 kiest een webadres te gebruiken wordt er een HTTP POST verzoek verstuurd met 
 de data naar het opgegeven adres.
 
+Als je ervoor kiest de report parameter niet te gebruiken kun je nog steeds 
+de data opvragen met een GET request. Dit wordt hieronder uitgelegd.
+
 ## Resultaat
 
 Het resultaat van deze POST call is een uniek ID. Met dit ID kan je controleren
-of the data beschikbaar is en indien dit het geval is de data opvragen. Dit
+of de data beschikbaar is en indien dit het geval is ook opvragen. Dit
 kan je doen door een HTTP GET verzoek te sturen naar de volgende URL
 
 `https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
 
-The code `$id` moet je vervangen door de unieke ID die je via het POST verzoek
-hebt gekregen. 
+The code **$id** moet je vervangen door de unieke ID die je via het POST verzoek
+hebt gekregen. Let erop dat dit bestand uiteindelijk verloopt.
 
+Als de data nog niet beschikbaar is zal de data member in de JSON de tekst 
+"Data not available (yet)" bevatten.
 
-JSON bestand dat alle informatie 
-bevat die bekend is over dit e-mail adres. Dit bestand bevat twee JSON 
-objecten. De eerste hiervan is een info component dat je informatie toont 
-over het verzoek, wat bijvoorbeeld nuttig is als je meerdere verzoeken achter 
-elkaar uitvoert of de bestanden langer bewaart. 
-
-Het tweede object bevat de data zelf. Er zit hier veel informatie in: 
-Profiel data, geschiedenis, de MIME van elke e-mail die verstuurd is naar hen, 
-enquête data, gepersonalizeerde PDF's verstuurd naar hen, kliks, opens, etc...
-
-## PHP example
+## PHP voorbeeld
 
 ```php
 // vereiste scripts
@@ -64,7 +59,7 @@ $data = array(
 );
 
 // voer de methode uit (vergeet de email niet)
-$api->get("email/email/data", $data)
+$api->get("email/$email/data", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -78,11 +73,10 @@ hebben. De **id** is het e-mail adres of ID van het profiel of subprofiel.
 De data member in de JSON bevat een array van arrays met daarin alle informatie
 die wij gevonden hebben. Voorbeelden van deze informatie zijn:
 
-- Volledige MIMEs die verstuurd zijn,
-- Informatie over opens en clicks,
-- Ingevulde enquête's,
+- Volledige MIMEs die verstuurd zijn
+- Informatie over opens en clicks
+- Ingevulde enquête's
 - etc.
-
 
 ## Meer informatie
 
