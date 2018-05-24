@@ -48,7 +48,7 @@ de POST call.
 
 Als het verzoek reeds is afgerond, retourneren we een JSON met alle beschikbare
 informatie voor het betreffende e-mailadres. Deze JSON heeft twee members **info**
-en `data`. De info member heeft ook twee members **type** en **id**. Het type
+en **data**. De info member heeft ook twee members **type** en **id**. Het type
 geeft het type informatie aan. Dit zal altijd **email** zijn omdat de 
 data opgevraagd wordt voor een e-mailadres. De **id** bevat het
 specifieke e-mailadres waar de gegevens voor zijn. De data member in de

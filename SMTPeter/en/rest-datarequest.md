@@ -14,7 +14,7 @@ URL:
 
 `https://www.smtpeter.com/v1/datarequest/$email`
 
-where `$email` should be replace with the email address of interest. 
+where **$email** should be replace with the email address of interest. 
 
 Optionally you can add a JSON as payload to the POST request. Within the
 JSON you can specify a an address to which we report back when the data is
@@ -25,9 +25,9 @@ available. The json should look like as follows:
     "report": $address
 }
 ```
-where `address` can be an email address or a URL. If it is an email address
+where **address** can be an email address or a URL. If it is an email address
 we will send you an email with the data attached, if it is not to large, or
-with a link where you can download the data. If `address` is a URL, we will
+with a link where you can download the data. If **address** is a URL, we will
 POST the date to the provided URL (see below how the data looks like).
 
 
@@ -44,14 +44,14 @@ to the following URL:
 
 `https://www.smtpeter.com/v1/datarequest/$id`
 
-where `$id` is the unique identifier you have obtained by making 
+where **$id** is the unique identifier you have obtained by making 
 
 
 ## Return value of a GET request
 
 When the request has been finished, we return a JSON with all available
 information for the particular email address. This JSON contains two members,
-`info` and `data`. The info member has also two members `type` and `id`.
+**info** and **data**. The info member has also two members **type** and **id**.
  The type provides the type of info, which is in this case email. 
 The *id* is the specific email address, The data
 member in the JSON contains an array of arrays with all the info we have
