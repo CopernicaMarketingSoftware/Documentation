@@ -125,7 +125,7 @@ The following PUT and POST methods are available:
 ## DELETE
 
 DELETE methods are used to delete data. This is permanent, so always be 
-double check your calls and be careful. The following DELETE methods are 
+careful and double check your calls. The following DELETE methods are 
 available:
 
 | Method    | Address                                                                                                   | Description                             |       
