@@ -1,7 +1,7 @@
 # REST API: GET data request
 
 With this method you can get the data from a posted data request. It will
-return the json with the data requested data when the data are available. Or
+return the JSON with the data requested data when the data are available. Or
 it will simply state that the data are not available yet.
 
 To make this request you send an HTTP GET request to the following URL:
@@ -26,7 +26,6 @@ found. Examples of the information that is in the data member are:
 
 If the data are not yet available, the data member holds the string:
 "no data available (yet).".
-
 
 ## PHP example
 

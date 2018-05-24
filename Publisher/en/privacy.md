@@ -17,9 +17,11 @@ manner. As a customer of Copernica you have to comply with these regulations.
 ## Information retrieval
 
 Copernica's [REST API](./rest-api) offers the option to retrieve all data stored on an 
-email address, profile or subprofile. Depending on what you want to use 
-to retrieve the information you can choose the correct API call below.
+email address, profile or subprofile. You can also get more information about 
+a data request. Depending on what you want to use to retrieve the information 
+you can choose the correct API call below.
 
+* [Data of a data request](./rest-get-datarequest)
 * [Data request for an email address](./rest-post-email-datarequest)
 * [Data request for a profile](./rest-post-profile-datarequest)
 * [Data request for a subprofile](./rest-post-subprofile-datarequest)

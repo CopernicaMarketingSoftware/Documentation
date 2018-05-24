@@ -30,7 +30,7 @@ Hiervoor zijn de volgende objecten beschikbaar:
 * [destination](./data-object-destination);
 * [profile](./data-object-profile).        
 
-Deze objecten hebben een ding gemeen. Namelijk, ze bezitten 
+Deze objecten hebben een ding gemeen. Ze bezitten namelijk 
 allen het [data data-script](./data-object-data) 
 dat je kunt gebruiken om informatie in op te slaan. 
 

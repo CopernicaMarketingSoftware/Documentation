@@ -42,7 +42,6 @@ $api->get("datarequest/$id", $data)
 ```
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
-
 ## Meer informatie
 
 * [Alle REST calls](./rest-api)
