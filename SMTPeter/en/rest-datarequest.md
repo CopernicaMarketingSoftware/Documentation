@@ -12,30 +12,30 @@ return it if possible. We will explain the steps in this article.
 In order to create a data request you can make a POST request to the following
 URL:
 
-`https://www.smtpeter.com/v1/datarequest/$email`
+`https://www.smtpeter.com/v1/datarequest/`
 
-where **$email** should be replace with the email address of interest. 
-
-Optionally you can add a JSON as payload to the POST request. Within the
-JSON you can specify a an address to which we report back when the data is
-available. The json should look like as follows:
+A JSON should be send as a payload for the POST request. Within the JSON 
+you should specify the **email** (mandatory) and optionally a report address, 
+which we report back to when the data is available. The JSON should look 
+like this:
 
 ```json
 {
-    "report": $address
+    "email": $emailaddress
+    "report": $address          // optional
 }
 ```
-where **address** can be an email address or a URL. If it is an email address
-we will send you an email with the data attached, if it is not to large, or
-with a link where you can download the data. If **address** is a URL, we will
-POST the date to the provided URL (see below how the data looks like).
-
+The **email** variable should contain the email address. The **address** 
+variable can be an email address or a URL. In the case of an email address
+we will send you an email with the data attached, if the size limit for 
+attachments allows it, or a link where you can download the data. 
+If **address** is a URL, we will POST the date to the provided URL 
+(see below what the data looks like).
 
 ## Return value of a POST request
 
 The result of this POST call is a unique identifier. This identifier can be
 used to get the data.
-
 
 ## Retrieving the data from a data request
 
@@ -45,7 +45,6 @@ to the following URL:
 `https://www.smtpeter.com/v1/datarequest/$id`
 
 where **$id** is the unique identifier you have obtained by making 
-
 
 ## Return value of a GET request
 

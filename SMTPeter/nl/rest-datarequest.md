@@ -12,24 +12,26 @@ op te vragen.
 
 Om een data verzoek te creëren stuur je een POST request naar de volgende URL:
 
-`https://www.smtpeter.com/v1/datarequest/$email`
+`https://www.smtpeter.com/v1/datarequest/`
 
-waar **$email** vervangen moet worden met het e-mailadres waarvoor de data
-opgevraagd wordt. Optioneel kan je een JSON aan het POST request toevoegen.
-In deze JSON kan je een adres zetten waar naar toe gerapporteerd wordt wanneer
-de data beschikbaar zijn. De JSON moet er als volgt uitzien:
+Ook moet er een JSON meegestuurd worden met dit verzoek. In de JSON staat 
+de **email** (verplicht) en optioneel een adres om naar te rapporteren als 
+de data beschikbaar is. De JSON moet er als volgt uitzien:
 
 ```json
 {
-    "report": $address
+    "email": $emailaddress
+    "report": $address          // optioneel
 }
 ```
-**address** mag hier een e-mailadres of een URL zijn. Als er een e-mailadres
-is opgegeven wordt er een e-mail verstuurd naar het genoemde adres. De data 
-wordt als bijlage meegestuurd indien mogelijk, of gelinkt wanneer het bestand 
-te groot is. Als er een URL opgegeven wordt versturen wij
-door middel van een POST request de data naar de genoemde URL (zie hieronder
-hoe de data er uitzien).
+
+Hier is **email** het e-mailadres. Het adres om naar te rapporteren kan 
+opgegeven worden als **address**, als een URL of e-mailadres. Als er een 
+e-mailadres is opgegeven bij **address** wordt er een e-mail verstuurd 
+naar het genoemde adres. De data wordt als bijlage meegestuurd indien 
+mogelijk, of gelinkt wanneer het bestand te groot is. Als er een URL 
+opgegeven wordt versturen wij door middel van een POST request de data 
+naar de genoemde URL. De structuur van de data vind je verder in dit artikel.
 
 In beide gevallen is het resultaat van deze POST request een unieke ID. 
 Met deze ID kan de data opgevraagd worden.
@@ -44,7 +46,7 @@ sturen naar de volgende URL:
 waar **$id** de unieke ID van het verzoek is die je hebt ontvangen na 
 de POST call.
 
-## Resultaat van een GET request
+## Het JSON bestand
 
 Als het verzoek reeds is afgerond, retourneren we een JSON met alle beschikbare
 informatie voor het betreffende e-mailadres. Deze JSON heeft twee members **info**
