@@ -27,7 +27,8 @@ vinden.
 * [Data verzoek voor een e-mailadres](./rest-post-email-datarequest)
 * [Data verzoek voor een profiel](./rest-post-profile-datarequest)
 * [Data verzoek voor een subprofiel](./rest-post-subprofile-datarequest)
-* [Data van een dataverzoek](./rest-get-datarequest)
+* [Data van een dataverzoek](./rest-get-datarequest-data)
+* [Status van een dataverzoek](./rest-get-datarequest-status)
 
 ## Meer informatie
 

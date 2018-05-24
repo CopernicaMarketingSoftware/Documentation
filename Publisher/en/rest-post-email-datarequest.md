@@ -54,7 +54,7 @@ $data = array(
 );
 
 // process the request (don't forget to add the email!)
-$api->post("email/email/data", $data)
+$api->post("email/email/datarequest", $data)
 ```
 This example requires the [REST API class](./rest-php).
 
@@ -79,5 +79,6 @@ we have found. Examples of the information that is in the data member are:
 * [All REST calls](./rest-api)
 * [Data request for a profile](./rest-post-profile-datarequest)
 * [Data request for a subprofile](./rest-post-subprofile-datarequest)
-* [Get data from a data request](./rest-get-datarequest)
+* [Get data from a data request](./rest-get-datarequest-data)
+* [Get status of a data request](./rest-get-datarequest-status)
 * [Privacy](./privacy)

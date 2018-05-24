@@ -81,4 +81,5 @@ die wij gevonden hebben. Voorbeelden van deze informatie zijn:
 * [Privacy](./privacy)
 * [Een dataverzoek voor een subprofiel indienen ](./rest-post-subprofile-datarequest)
 * [Een dataverzoek voor een e-mail adres indienen](./rest-post-email-datarequest)
-* [Data van een dataverzoek opvragen](./rest-get-datarequest)
+* [Data van een dataverzoek opvragen](./rest-get-datarequest-data)
+* [Status van een dataverzoek opvragen](./rest-get-datarequest-status)

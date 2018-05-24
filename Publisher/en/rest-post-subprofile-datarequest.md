@@ -78,5 +78,6 @@ we have found. Examples of the information that is in the data member are:
 * [All REST calls](./rest-api)
 * [Data request for a profile](./rest-profile-profile-datarequest)
 * [Data request for an email address](./rest-post-email-datarequest)
-* [Get data from a data request](./rest-get-datarequest)
+* [Get data from a data request](./rest-get-datarequest-data)
+* [Get status of a data request](./rest-get-datarequest-status)
 * [Privacy](./privacy)

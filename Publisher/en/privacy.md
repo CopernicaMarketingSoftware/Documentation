@@ -23,6 +23,8 @@ to retrieve the information you can choose the correct API call below.
 * [Data request for an email address](./rest-post-email-datarequest)
 * [Data request for a profile](./rest-post-profile-datarequest)
 * [Data request for a subprofile](./rest-post-subprofile-datarequest)
+* [Data from a data request](./rest-get-datarequest-data)
+* [Status of a data request](./rest-get-datarequest-status)
 
 ## More information
 

@@ -80,5 +80,6 @@ we have found. Examples of the information that is in the data member are:
 * [Privacy](./privacy)
 * [Data request for a subprofile](./rest-post-subprofile-datarequest)
 * [Data request for an email address](./rest-post-email-datarequest)
-* [Get data from a data request](./rest-get-datarequest)
+* [Get data from a data request](./rest-get-datarequest-data)
+* [Get status of a data request](./rest-get-datarequest-status)
 
