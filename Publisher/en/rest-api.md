@@ -87,40 +87,43 @@ very similar. If you can not find a POST method of what you are looking
 for there might be a PUT method to do it. It also works the other way around. 
 The following PUT and POST methods are available:
 
-| Method    | Address                                                                                                   | Description                             |       
-|-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| POST      | [api.copernica.com/v1/databases](./rest-post-databases)                                                   | Create a new database                   |     
-| PUT       | [api.copernica.com/v1/database/$id](./rest-put-database)                                                  | Modify database settings                |     
-| PUT       | [api.copernica.com/v1/database/$id/unsubscribe](./rest-put-database-unsubscribe)                          | Set unsubscribe behavior                |     
-| POST      | [api.copernica.com/v1/database/$id/fields](./rest-post-database-fields)                                   | Create database field                   |     
-| PUT       | [api.copernica.com/v1/database/$id/field/$id](./rest-put-database-field)                                  | Edit database field                     |     
-| POST      | [api.copernica.com/v1/database/$id/interests](./rest-post-database-interests)                             | Create interest                         |     
-| POST      | [api.copernica.com/v1/database/$id/collections](./rest-post-database-collections)                         | Create collection                       |     
-| POST      | [api.copernica.com/v1/database/$id/profiles](./rest-post-database-profiles)                               | Create new profile                      |     
-| PUT       | [api.copernica.com/v1/database/$id/profiles](./rest-put-database-profiles)                                | Edit multiple profiles                  |     
-| POST      | [api.copernica.com/v1/database/$id/views](./rest-post-database-views)                                     | Create new selection                    |     
-| PUT       | [api.copernica.com/v1/view/$id](./rest-put-view)                                                          | Update selection data                   |     
-| POST      | [api.copernica.com/v1/view/$id/rules](./rest-post-view-rules)                                             | Create selection rules                  |     
-| POST      | [api.copernica.com/v1/view/$id/views](./rest-post-view-views)                                             | Create a nested selection               |     
-| PUT       | [api.copernica.com/v1/rule/$id](./rest-put-rule)                                                          | Edit selection rule                     |     
-| POST      | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions)                                   | Create a selection condition            |     
-| PUT       | [api.copernica.com/v1/rule/$id/conditions/$type](./rest-put-rule-conditions)                              | Edit selection condition                |
-| PUT       | [api.copernica.com/v1/profile/$id](./rest-put-profile)                                                    | Edit profile data                       |     
-| PUT       | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                                      | Edit profile fields                     |     
-| POST      | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                               | Add interests to profile                |     
-| PUT       | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                                | Edit profile interests                  |     
-| POST      | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)                           | Create subprofile                       |
-| PUT       | [api.copernica.com/v1/profile/$id/subprofiles](./rest-put-profile-subprofiles)                            | Edit subprofile                         |
-| POST      | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields)                               | Create collection field                 |     
-| PUT       | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field)                              | Edit collection field                   |     
-| PUT       | [api.copernica.com/v1/collection/$id](./rest-put-collection)                                              | Edit collection data                    |     
-| POST      | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews)                         | Create miniview                         |  	
-| PUT       | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)                      | Update collection unsubscribe behavior  |
-| PUT       | [api.copernica.com/v1/miniview/$id](./rest-put-miniview)                                                  | Update miniview data                    |	         
-| POST      | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules)                                     | Create miniview rule                    |	    
-| PUT       | [api.copernica.com/v1/minirule/$id](./rest-put-minirule)                                                  | Edit miniselection rule                 |     
-| POST      | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions)                           | Create condition for a miniselection    |     
-| PUT       | [api.copernica.com/v1/minirule/$id/conditions/$type](./rest-put-minirule-conditions)                      | Edit condition for a miniselection      |
+| Method  | Address                                                  | Description                 |    
+|-----------|-----------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| POST   | [api.copernica.com/v1/databases](./rest-post-databases)                          | Create a new database            |   
+| PUT    | [api.copernica.com/v1/database/$id](./rest-put-database)                         | Modify database settings          |   
+| PUT    | [api.copernica.com/v1/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Set unsubscribe behavior          |   
+| POST   | [api.copernica.com/v1/database/$id/fields](./rest-post-database-fields)                  | Create database field            |   
+| PUT    | [api.copernica.com/v1/database/$id/field/$id](./rest-put-database-field)                 | Edit database field             |   
+| POST   | [api.copernica.com/v1/database/$id/interests](./rest-post-database-interests)               | Create interest               |   
+| POST   | [api.copernica.com/v1/database/$id/collections](./rest-post-database-collections)             | Create collection              |   
+| POST   | [api.copernica.com/v1/database/$id/profiles](./rest-post-database-profiles)                | Create new profile             |   
+| PUT    | [api.copernica.com/v1/database/$id/profiles](./rest-put-database-profiles)                | Edit multiple profiles           |   
+| POST   | [api.copernica.com/v1/database/$id/views](./rest-post-database-views)                   | Create new selection            |   
+| PUT    | [api.copernica.com/v1/view/$id](./rest-put-view)                             | Update selection data            |   
+| POST   | [api.copernica.com/v1/view/$id/rules](./rest-post-view-rules)                       | Create selection rules           |   
+| POST   | [api.copernica.com/v1/view/$id/views](./rest-post-view-views)                       | Create a nested selection          |   
+| PUT    | [api.copernica.com/v1/rule/$id](./rest-put-rule)                             | Edit selection rule             |   
+| POST   | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions)                  | Create a selection condition        |   
+| PUT    | [api.copernica.com/v1/rule/$id/conditions/$type](./rest-put-rule-conditions)               | Edit selection condition          |
+| PUT    | [api.copernica.com/v1/profile/$id](./rest-put-profile)                          | Edit profile data              |   
+| PUT    | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields)                   | Edit profile fields             |   
+| POST   | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests)                | Add interests to profile          |   
+| PUT    | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests)                | Edit profile interests           |   
+| POST   | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Create subprofile              |
+| PUT    | [api.copernica.com/v1/profile/$id/subprofiles](./rest-put-profile-subprofiles)              | Edit subprofile               |
+| POST   | [api.copernica.com/v1/profile/$id/datarequest](./rest-post-profile-datarequest)              | Request all data regarding a profile    |
+| POST   | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields)                | Create collection field           |   
+| PUT    | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field)               | Edit collection field            |   
+| PUT    | [api.copernica.com/v1/collection/$id](./rest-put-collection)                       | Edit collection data            |   
+| POST   | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews)             | Create miniview               |   
+| PUT    | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)           | Update collection unsubscribe behavior   |
+| PUT    | [api.copernica.com/v1/miniview/$id](./rest-put-miniview)                         | Update miniview data            |     
+| POST   | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules)                   | Create miniview rule            |   
+| PUT    | [api.copernica.com/v1/minirule/$id](./rest-put-minirule)                         | Edit miniselection rule           |   
+| POST   | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions)              | Create condition for a miniselection    |   
+| PUT    | [api.copernica.com/v1/minirule/$id/conditions/$type](./rest-put-minirule-conditions)           | Edit condition for a miniselection     |
+| POST   | [api.copernica.com/v1/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)           | Request all data regarding a subprofile   |
+| POST   | [api.copernica.com/v1/email/$email/datarequest](./rest-post-email-datarequest.md)             | Request all data regarding an email address |      
 
 ## DELETE
 
