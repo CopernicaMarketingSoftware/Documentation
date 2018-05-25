@@ -10,6 +10,7 @@
     * [Uitschrijfgedrag](./database-unsubscribe-behavior.md)
     * [Importeren van profielgegevens](./database-import.md)
     * [Exporteren van profielgegevens](./database-export.md)
+    * [Privacy](./privacy.md)
 * [Selecties en miniselecties](./selections-introduction.md)
     * [Beheeropties voor selecties](./selections-settings.md)
     * [Regels en condities](./selections-conditions.md)
