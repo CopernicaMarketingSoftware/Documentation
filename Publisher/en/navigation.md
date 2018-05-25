@@ -10,6 +10,7 @@
     * [Unsubscribe behaviour](./database-unsubscribe-behavior.md)
     * [Importing profiles](./database-import.md)
     * [Exporting profiles](./database-export.md)
+    * [Privacy](./privacy.md)
 * [Selections and miniselections](./selections-introduction.md)
     * [Management options for selections](./selections-settings.md)
     * [Rules and conditions](./selections-conditions.md)
