@@ -60,7 +60,7 @@ modifier gebruiken om het aantal subprofielen te tellen waarna je
 van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 
 ```text
-{$profile.collectie[$profile.collectie|count -1].veldnaam}
+{$profile.collectie[$profile.collectie.last].veldnaam}
 ```
 
 Om alle subprofielen weer te geven kun je een foreach functie gebruiken.
