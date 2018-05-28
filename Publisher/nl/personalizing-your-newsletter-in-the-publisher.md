@@ -36,6 +36,33 @@ Je ontvangt deze e-mail omdat bent aangemeld
 met het volgende e-mailadres: {$profile.email}.
 ```
 
+### Load subprofile
+Je kunt profielen of subprofielen in een oplopende of aflopende volgorde ophalen, aan de hand van de waarde in een specifiek database of collectieveld.
+
+Je doet dit door de optie als parameter toe te voegen aan de loadprofile of loadsubprofile tag
+
+#### Voorbeeld
+Je hebt een collectieveld 'fruit' en een aantal subprofielen, die respectievelijk de waardes Appel, Banaan, Citroen, Nectarine, Watermeloen hebben in het veld 'fruit'
+
+```
+{loadsubprofile assign=loadedfruits multiple=true limit=2 orderby='fruit asc'}
+
+Ik heb in mijn fruitschaal een:
+{foreach $loadedfruits as $loadedfruit}
+{$loadedfruit.fruit}
+{/foreach}
+```
+
+Resultaat (asc):
+
+Ik heb in mijn fruitschaal een: Appel, Banaan
+
+Resultaat (desc):
+
+Ik heb in mijn fruitschaal een: Watermeloen, Nectarine
+
+Als je geen order parameter meegeeft in je load(sub)profile, dan wordt automatisch oplopend gesorteerd op het veld ID.
+
 ### Template variables
 
 Je kunt ook extra personalisatie variabelen toevoegen door deze aan te maken
