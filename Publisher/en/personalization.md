@@ -39,7 +39,7 @@ called from a profile or from a subprofile. It's perfectly
 fine to call `{$profile.firstname}` or `{$subprofile.firstname}`.
 You just call the firstname property from a different place.
 
-## Display data from a collection
+## Display data from a collection in the Marketing Suite
 
 You can also easily display data from a collection. You can do this
 in two different ways. To display data from the first row of the collection
