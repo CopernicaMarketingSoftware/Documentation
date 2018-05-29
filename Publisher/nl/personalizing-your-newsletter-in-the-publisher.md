@@ -61,7 +61,7 @@ Resultaat (desc):
 
 Ik heb in mijn fruitschaal een: Watermeloen, Nectarine
 
-Als je geen order parameter meegeeft in je load(sub)profile, dan wordt automatisch oplopend gesorteerd op het veld ID.
+Als je geen order parameter meegeeft in je load(sub)profile, dan wordt automatisch oplopend gesorteerd op het veld ID. [Voor meer informatie kun je dit artikel lezen](loadprofile-and-loadsubprofile).
 
 ### Template variables
 
