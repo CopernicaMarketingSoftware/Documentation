@@ -10,7 +10,7 @@ The code below provides an example how you can retrieve profile data
 from a different database.
 
 ```
-   {loadprofile source="nameofyourdatabase" assign=loadedprofile}
+{loadprofile source="nameofyourdatabase" assign=loadedprofile}
 ```
 
 *Source* must contain the name of the database. Optionally you can also
@@ -35,7 +35,7 @@ profile by using the ID-parameter. For example:
 The same applies for loading subprofiles from a **collection**
 
 ```
-  {loadsubprofile source="Databasename:Collectionname" profile=$profile.id assign=loadedsubprofile}
+{loadsubprofile source="Databasename:Collectionname" profile=$profile.id assign=loadedsubprofile}
 ```
 
 ### **Options**
@@ -86,7 +86,6 @@ customer and show these in your template, your code can look something
 like this:
 
 ```
-
 {loadsubprofile source="Customers:Products" assign="orderedproducts" profile=$profile.id multiple=true limit=2 orderby='orderdate asc' }
 <ul>
   {foreach $orderedproducts as $product}
