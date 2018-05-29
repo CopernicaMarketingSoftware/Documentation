@@ -37,6 +37,33 @@ You receive this email, because you subscribed
 with the following email address: {$profile.email}.
 ```
 
+#### Load subprofile
+You can retrieve profiles or sub-profiles in ascending or descending order, based on the value in a specific database or collection field.
+
+You do this by adding the option as a parameter to the loadprofile or loadsubprofile tag
+
+##### Example
+You have a collection field 'fruit' and a number of subprofiles, which respectively have the values Apple, Banana, Lemon, Nectarine, Watermelon in the field 'fruit'
+
+```
+{loadsubprofile assign=loadedfruits multiple=true limit=2 orderby='fruit asc'}
+
+I have in my fruit bowl a:
+{foreach $ loadedfruits as $ loadedfruit}
+{$ loadedfruit.fruit}
+{/ foreach}
+```
+
+Result (asc):
+
+I have one in my fruit bowl: Apple, Banana
+
+Result (desc):
+
+I have one in my fruit bowl: Watermelon, Nectarine
+
+If you do not provide an order parameter in your load (sub) profile, the ID field is automatically sorted in ascending order. [Here you can find more info](loadprofile-and-loadsubprofile).
+
 ### Template variables
 
 You can also use extra personalization variables by adding them in the 
