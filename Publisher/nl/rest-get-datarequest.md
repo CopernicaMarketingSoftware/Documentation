@@ -37,7 +37,7 @@ require_once('copernica_rest_api.php');
 // insert your access token here
 $api = new CopernicaRestApi("your-access-token");
 
-// process the request (don't forget to add the email!)
+// process the request (don't forget to add the id!)
 $api->get("datarequest/$id", $data)
 ```
 Dit voorbeeld vereist de [REST API klasse](./rest-php).

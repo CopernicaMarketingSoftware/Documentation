@@ -1,4 +1,4 @@
-# REST API: POST/GET subprofile datarequest
+# REST API: POST subprofile datarequest
 
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 sub profiel bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 

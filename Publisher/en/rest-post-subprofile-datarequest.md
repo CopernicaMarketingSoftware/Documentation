@@ -1,4 +1,4 @@
-# REST API: POST/GET subprofile data request
+# REST API: POST subprofile data request
 
 With this method you can post a request to collect all data available about
 a subprofile. If we receive such a request, we will collect all the data

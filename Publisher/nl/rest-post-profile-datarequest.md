@@ -1,4 +1,4 @@
-# REST API: POST/GET profile data
+# REST API: POST profile data
 
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 profiel bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 

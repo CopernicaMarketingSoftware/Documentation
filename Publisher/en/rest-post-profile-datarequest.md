@@ -1,4 +1,4 @@
-# REST API: POST/GET profile data request
+# REST API: POST profile data request
 
 With this method you can post a request to collect all data available about
 a profile. If we receive such a request, we will collect all the data

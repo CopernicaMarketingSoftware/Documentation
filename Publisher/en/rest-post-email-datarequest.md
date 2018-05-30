@@ -1,4 +1,4 @@
-# REST API: POST/GET email data request
+# REST API: POST email data request
 
 With this method you can post a request to collect all data available about
 an email address, apart from the profile/subprofile information. If we
@@ -60,11 +60,7 @@ $data = array(
 );
 
 // process the request (don't forget to add the email!)
-<<<<<<< HEAD
 $api->post("email/email/datarequest", $data)
-=======
-$api->post("email/$email/data", $data);
->>>>>>> c12e2025b8c6c3272ecd2fbeaa3c05c119a5c648
 ```
 This example requires the [REST API class](./rest-php).
 

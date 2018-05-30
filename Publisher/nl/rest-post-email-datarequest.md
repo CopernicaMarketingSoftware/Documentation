@@ -1,4 +1,4 @@
-# REST API: POST/GET email data request
+# REST API: POST email data request
 
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 e-mailadres bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 
