@@ -22,7 +22,7 @@ De volgende tabel laat alle geldige modifiers zien:
 | [count_paragraphs](personalization-modifiers#count_paragraphs)                             | telt het aantal paragrafen in een tekst (door *newlines* te tellen)                                          |
 | [count_words](personalization-modifiers#count_words)                                       | telt het aantal woorden in een tekst                                                                         |
 | [default](personalization-modifiers#default):default value                                 | gebruik *default* waarde als variabele niet is aangegeven                                                    |
-| [empty](personalization-modifiers#empty)                                                   | check of een variabele leeg is                                                                               |
+| [empty](personalization-modifiers#empty)                                                   | niet beschikbaar; gebruik {!variabele} om te checken of deze een waarde bevat                                |
 | [escape](personalization-modifiers#escape):"string"                                        | *escape* html tekens (of andere tekens) binnen een string                                                    |
 | [indent](personalization-modifiers#indent):num = 1:char = " "                              | zet het aantal *whitespaces* aan het begin van elke regel                                                    |
 | [md5](personalization-modifiers#md5)                                                       | voer md5 hashing uit                                                                                         |
@@ -36,9 +36,9 @@ De volgende tabel laat alle geldige modifiers zien:
 | [spacify](personalization-modifiers#spacify):separator = " "                               | plaats een verdeler tussen elk input teken                                                                   |
 | [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
-| [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanafsw startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
-| [tolower](personalization-modifiers#tolower)                                               | zet alle tekens om naar kleine letters                                                                       |
-| [toupper](personalization-modifiers#toupper)                                               | zet alle tekens om naar grote letters                                                                        |
+| [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanaf startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
+| [lower](personalization-modifiers#tolower)                                                 | zet alle tekens om naar kleine letters                                                                       |
+| [upper](personalization-modifiers#toupper)                                                 | zet alle tekens om naar grote letters                                                                        |
 | [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kanten van het inputveld                                       |
 | [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | deel de inputvelden op die niet langer dan lengte en toevoegen zijn aan het eind. break_words = true staat het opdelen van delen van woorden toe.                                                                                                                                                                                                |
 | [ucfirst](personalization-modifiers#ucfirst)                                               | vervang eerste teken met een hoofdletter                                                                     |
@@ -131,8 +131,9 @@ This will always show {$name|default:"something"}
 
 ## empty
 
-Met deze modifier kun je checken of een bepaalde variabele is aangegeven.
-Het resultaat evalueert tot true of false.
+Deze modifier is niet meer beschikbaar. Je kunt checken of een variabele 
+een waarde bevat door deze om te zetten in een boolean, zoals te zien is 
+in het onderstaande voorbeeld.
 Gebruik:
 
 ```text
@@ -228,7 +229,7 @@ Gebruik:
 ## sha1
 
 Met deze modifier krijg je de *SHA1 hash* van de text terug. Een array 
-wordt in z'n geheel gecalculeerd, behalve de *keys*.
+wordt volledig berekend, behalve de *keys*.
 Gebruik:
 
 ```text
@@ -237,22 +238,24 @@ Gebruik:
 
 ## sha256
 
-Met deze modifier krijg je de *SHA256 hash* van de text terug. Een array 
-wordt in z'n geheel gecalculeerd, behalve de keys.
+De modifier voor de SHA256 hash van een tekst is niet beschikbaar meer. 
+Je kunt echter deze nog wel berekenen met de hash functie, zoals getoond 
+in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve 
+de *keys*.
 Gebruik:
-
 ```text
-{$text|sha256}
+{hash($text, 'sha256')}
 ```
 
 ## sha512
 
-Met deze modifier krijg je de *SHA512 hash* van de text terug. Een array 
-wordt in z'n geheel gecalculeerd, behalve de keys.
+De modifier voor de SHA512 hash van een tekst is niet beschikbaar meer. 
+Je kunt echter deze nog wel berekenen met de hash functie, zoals getoond 
+in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve 
+de *keys*.
 Gebruik:
-
 ```text
-{$text|sha512}
+{hash($text, 'sha512')}
 ```
 
 ## spacify
@@ -304,22 +307,22 @@ and this will print 456
 {$variable|substr:4:3}
 ```
 
-## tolower
+## lower
 
 Met deze modifier kun je alle tekens naar kleine letters omzetten.
 Gebruik:
 
 ```text
-{$text|tolower}
+{$text|lower}
 ```
 
-## toupper
+## upper
 
 Met deze modifier kun je alle tekens naar hoofdletters omzetten.
 Gebruik:
 
 ```text
-The next part looks like it is shouted {$text|toupper}
+The next part looks like it is shouted {$text|upper}
 ```
 
 ## trim
