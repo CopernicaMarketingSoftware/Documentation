@@ -10,6 +10,7 @@ and 'templates'. In short, with the REST API you have all information and option
 
 The REST API brings various tools to increase the quality of your mailings:
 
+* [Retrieve personal data](rest-datarequest)
 * [Retrieve messages](rest-messages)
 * [Retrieve events](rest-events)
 * [Retrieve logfiles](rest-logfiles)
