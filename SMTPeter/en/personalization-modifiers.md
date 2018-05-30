@@ -45,8 +45,8 @@ The following table lists all supported modifiers:
 | [regex_replace](personalization-modifiers#regex_replace):regex:replace_text                | replace substrings using regular expression                                                                                                  |
 | [replace](personalization-modifiers#replace):"string1":"string2"                           | replace occurrences of string1 with string2                                                                                                  |
 | [sha1](personalization-modifiers#sha1)                                                     | perform sha1 hashing                                                                                                                         |
-| [sha256](personalization-modifiers#sha256)                                                 | perform sha256 hashing                                                                                                                       |
-| [sha512](personalization-modifiers#sha512)                                                 | sha512 hashing                                                                                                                               |
+| [sha256](personalization-modifiers#sha256)                                                 | not available; hash with {hash($text, 'sha256')}                                                                                             |
+| [sha512](personalization-modifiers#sha512)                                                 | not available; hash with {hash($text, 'sha512')}                                                                                             |
 | [spacify](personalization-modifiers#spacify):separator = " "                               | place a separator between every input character                                                                                              |
 | [strlen](personalization-modifiers#strlen)                                                 | count the characters in a string                                                                                                             |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. |
@@ -144,12 +144,11 @@ This will always show {$name|default:"customer"}
 
 ## empty
 
-With this modifier you can check if the variable is set or not. It
-will return true if the variable is set or false if it isn't.
+This modifier is not in use anymore. You can check if a variable contains 
+a value by converting it to a boolean, as shown in the example below.
 Usage:
-
 ```text
-{if {$name|empty}}
+{if !$name}
     Dear customer,
 {else}
     Dear {$name},
@@ -252,24 +251,24 @@ Usage:
 
 ## sha256
 
-With this modifier you get the SHA256 hash of your text. If the variable is
-an array the SHA256 hash will be calculated over the entire array, excluding
-the keys.
+The modifier to get the SHA256 hash of your text is not available anymore. 
+However, you can still get the SHA256 hash using the hash function as 
+shown in the example below. If the variable is an array the SHA256 hash 
+will be calculated over the entire array, excluding the keys.
 Usage:
-
 ```text
-{$text|sha256}
+{hash($text, 'sha256')}
 ```
 
 ## sha512
 
-With this modifier you get the SHA512 hash of your text. If the variable is
-an array the SHA512 hash will be calculated over the entire array, excluding
-the keys.
+The modifier to get the SHA512 hash of your text is not available anymore. 
+However, you can still get the SHA512 hash using the hash function as 
+shown in the example below. If the variable is an array the SHA512 hash 
+will be calculated over the entire array, excluding the keys.
 Usage:
-
 ```text
-{$text|sha512}
+{hash($text, 'sha512')}
 ```
 
 ## spacify
@@ -327,24 +326,24 @@ and this will print 456
 {$variable|substr:4:3}
 ```
 
-## tolower
+## lower
 
 With this modifier you can change all character in your text to lowercase
 characters.
 Usage:
 
 ```text
-{$text|tolower}
+{$text|lower}
 ```
 
-## toupper
+## upper
 
 With this modifier you can change all characters in your text to uppercase
 characters.
 Usage:
 
 ```text
-The next part looks like it is shouted {$text|toupper}
+{$text|upper}
 ```
 
 ## trim

@@ -31,12 +31,12 @@ De volgende tabel laat alle geldige modifiers zien:
 | [regex_replace](personalization-modifiers#regex_replace):regex:replace_text                | vervang *substrings* door *regular expressions* te gebruiken                                                 |
 | [replace](personalization-modifiers#replace):"string1":"string2"                           | vervang het voorkomen van string1 met string2                                                                |
 | [sha1](personalization-modifiers#sha1)                                                     | voer sha1 hashing uit                                                                                        |
-| [sha256](personalization-modifiers#sha256)                                                 | voer sha256 hashing uit                                                                                      |
-| [sha512](personalization-modifiers#sha512)                                                 | *sha512 hashing*                                                                                             |
+| [sha256](personalization-modifiers#sha256)                                                 | niet beschikbaar; hash met {hash($text, 'sha256')}                                                           |
+| [sha512](personalization-modifiers#sha512)                                                 | niet beschikbaar; hash met {hash($text, 'sha512')}                                                           |
 | [spacify](personalization-modifiers#spacify):separator = " "                               | plaats een verdeler tussen elk input teken                                                                   |
 | [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
-| [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanaf startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters       |
+| [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanaf startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters         |
 | [lower](personalization-modifiers#tolower)                                                 | zet alle tekens om naar kleine letters                                                                       |
 | [upper](personalization-modifiers#toupper)                                                 | zet alle tekens om naar grote letters                                                                        |
 | [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kanten van het inputveld                                       |
@@ -138,9 +138,9 @@ Gebruik:
 
 ```text
 {if $name|empty}
-Dear customer,
+Beste klant,
 {else}
-Dear {$name},
+Beste {$name},
 {/if}
 ```
 

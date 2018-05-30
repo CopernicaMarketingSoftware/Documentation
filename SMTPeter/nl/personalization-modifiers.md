@@ -30,8 +30,8 @@ De volgende tabel laat alle geldige modifiers zien:
 | [regex_replace](personalization-modifiers#regex_replace):regex:replace_text                | vervang *substrings* door *regular expressions* te gebruiken                                                 |
 | [replace](personalization-modifiers#replace):"string1":"string2"                           | vervang het voorkomen van string1 met string2                                                                |
 | [sha1](personalization-modifiers#sha1)                                                     | voer sha1 hashing uit                                                                                        |
-| [sha256](personalization-modifiers#sha256)                                                 | voer sha256 hashing uit                                                                                      |
-| [sha512](personalization-modifiers#sha512)                                                 | *sha512 hashing*                                                                                             |
+| [sha256](personalization-modifiers#sha256)                                                 | niet beschikbaar; hash met {hash($text, 'sha256')}                                                           |
+| [sha512](personalization-modifiers#sha512)                                                 | niet beschikbaar; hash met {hash($text, 'sha512')}                                                           |
 | [spacify](personalization-modifiers#spacify):separator = " "                               | plaats een verdeler tussen elk input teken                                                                   |
 | [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschrijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
@@ -130,15 +130,16 @@ This will always show {$name|default:"something"}
 
 ## empty
 
-Met deze modifier kun je checken of een bepaalde variabele is aangegeven.
-Het resultaat evalueert tot true of false.
+Deze modifier is niet meer beschikbaar. Je kunt checken of een variabele 
+een waarde bevat door deze om te zetten in een boolean, zoals te zien is 
+in het onderstaande voorbeeld.
 Gebruik:
 
 ```text
 {if $name|empty}
-    Dear customer,
+Beste klant,
 {else}
-    Dear {$name},
+Beste {$name},
 {/if}
 ```
 
@@ -236,22 +237,24 @@ Gebruik:
 
 ## sha256
 
-Met deze modifier krijg je de *SHA256 hash* van de text terug. Een array 
-wordt in z'n geheel gecalculeerd, behalve de keys.
+De modifier voor de SHA256 hash van een tekst is niet beschikbaar meer. 
+Je kunt echter deze nog wel berekenen met de hash functie, zoals getoond 
+in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve 
+de *keys*.
 Gebruik:
-
 ```text
-{$text|sha256}
+{hash($text, 'sha256')}
 ```
 
 ## sha512
 
-Met deze modifier krijg je de *SHA512 hash* van de text terug. Een array 
-wordt in z'n geheel gecalculeerd, behalve de keys.
+De modifier voor de SHA512 hash van een tekst is niet beschikbaar meer. 
+Je kunt echter deze nog wel berekenen met de hash functie, zoals getoond 
+in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve 
+de *keys*.
 Gebruik:
-
 ```text
-{$text|sha512}
+{hash($text, 'sha512')}
 ```
 
 ## spacify
@@ -303,22 +306,22 @@ and this will print 456
 {$variable|substr:4:3}
 ```
 
-## tolower
+## lower
 
 Met deze modifier kun je alle tekens naar kleine letters omzetten.
 Gebruik:
 
 ```text
-{$text|tolower}
+{$text|lower}
 ```
 
-## toupper
+## upper
 
 Met deze modifier kun je alle tekens naar hoofdletters omzetten.
 Gebruik:
 
 ```text
-The next part looks like it is shouted {$text|toupper}
+{$text|upper}
 ```
 
 ## trim
