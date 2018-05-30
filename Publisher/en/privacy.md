@@ -30,7 +30,6 @@ to a web address. If you do not wish to use these methods you can use
 other API calls to retrieve the status of your request and download the 
 data when ready. You will find all relevant API calls below:
 
-* [Data of a data request](./rest-get-datarequest)
 * [Data request for an email address](./rest-post-email-datarequest)
 * [Data request for a profile](./rest-post-profile-datarequest)
 * [Data request for a subprofile](./rest-post-subprofile-datarequest)

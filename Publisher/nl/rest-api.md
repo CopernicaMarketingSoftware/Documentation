@@ -15,7 +15,6 @@ Dit gaat automatisch, dus buiten de *user interface* om.
 
 De volgende methodes zijn toegankelijk via HTTP GET, POST, PUT en DELETE.
 
-
 ## GET
 
 GET methodes worden gebruikt om data op te vragen. De volgende GET methodes 
@@ -74,6 +73,8 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/tags/$tag/events](./rest-get-tags-events)                                               | Opvragen tag events                               |
 | GET       | [api.copernica.com/v1/template/$id/events](./rest-get-template-events)                                        | Opvragen MS template events                       |
 | GET       | [api.copernica.com/v1/old/template/$id/events](./rest-get-old-template-events)                                | Opvragen Publisher template events                |
+| GET       | [api.copernica.com/v1/datarequest/$id/data](./rest-get-datarequest-data)                                      | Opvragen data van een datarequest                 |
+| GET       | [api.copernica.com/v1/datarequest/$id/status](./rest-get-datarequest-status)                                  | Opvragen status van een datarequest               |
 
 Zie ook het [algemene artikel over events](./rest-get-events).
 
@@ -84,40 +85,40 @@ Dit zijn vaak zeer vergelijkbare methodes en als je geen POST methode
 kunt vinden voor wat je zoekt staat deze misschien onder PUT, of andersom. 
 De volgende PUT en POST methodes zijn beschikbaar:
 
-| Methode  | Adres                                                     | Omschrijving                   |
-|-----------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| POST   | [api.copernica.com/v1/databases](./rest-post-databases.md)                          | Aanmaken nieuwe database             |
-| PUT    | [api.copernica.com/v1/database/$id](./rest-put-database.md)                          | Bijwerken databasegegevens            |
-| PUT    | [api.copernica.com/v1/database/$id/unsubscribe](./rest-put-database-unsubscribe.md)              | Instellen afmeldalgoritme             |
-| POST   | [api.copernica.com/v1/database/$id/fields](./rest-post-database-fields.md)                  | Aanmaken databaseveld               |
-| PUT    | [api.copernica.com/v1/database/$id/field/$id](./rest-put-database-field.md)                  | Veld uit database bijwerken            |
-| POST   | [api.copernica.com/v1/database/$id/interests](./rest-post-database-interests.md)               | Aanmaken interesse                |
-| POST   | [api.copernica.com/v1/database/$id/collections](./rest-post-database-collections.md)             | Aanmaken collectie                |
-| POST   | [api.copernica.com/v1/database/$id/profiles](./rest-post-database-profiles.md)                | Aanmaken nieuw profiel              |
-| PUT    | [api.copernica.com/v1/database/$id/profiles](./rest-put-database-profiles.md)                 | Meerdere profielen tegelijk bewerken       |
-| POST   | [api.copernica.com/v1/database/$id/views](./rest-post-database-views.md)                   | Aanmaken nieuwe selectie             |
-| PUT    | [api.copernica.com/v1/view/$id](./rest-put-view.md)                              | Bewerken selectiegegevens             |
-| POST   | [api.copernica.com/v1/view/$id/rules](./rest-post-view-rules.md)                       | Aanmaken nieuwe selectieregel           |
-| POST   | [api.copernica.com/v1/view/$id/views](./rest-post-view-views.md)                       | Aanmaken geneste selectie             |
-| PUT    | [api.copernica.com/v1/rule/$id](./rest-put-rule.md)                              | Bijwerken instellingen van selectieregel     |
-| POST   | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions.md)                  | Aanmaken nieuwe conditie bij selectieregel    |
-| PUT    | [api.copernica.com/v1/profile/$id](./rest-put-profile.md)                           | Bijwerken profielgegevens             |
-| PUT    | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields.md)                    | Bijwerken profielvelden              |
-| POST   | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests.md)                | Toevoegen interesses van profiel         |
-| PUT    | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests.md)                 | Overschrijven interesses van profiel       |
-| POST   | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)              | Toevoegen van een subprofielen aan een profiel  |
-| POST   | [api.copernica.com/v1/profile/$id/datarequest](./rest-post-profile-datarequest)                | Alle data van een profiel opvragen        |
-| PUT    | [api.copernica.com/v1/collection/$id](./rest-put-collection.md)                        | Bijwerken collectiegegevens            |
-| POST   | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields.md)                | Aanmaken veld in een collectie          |
-| PUT    | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)                | Bijwerken veld in collectie            |
-| POST   | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews.md)             | Aanmaken van een miniselectie           |
-| PUT    | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe.md)            | Bijwerken afmeldgedrag van een collectie     |
-| PUT    | [api.copernica.com/v1/miniview/$id](./rest-put-miniview.md)                          | Bewerken miniselectiegegevens           |
-| POST   | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules.md)                   | Aanmaken nieuwe miniselectieregel         |
-| PUT    | [api.copernica.com/v1/minirule/$id](./rest-put-minirule.md)                          | Bijwerken instellingen van miniselectieregel   |
-| POST   | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions.md)              | Aanmaken nieuwe conditie bij miniselectieregel  |
-| POST   | [api.copernica.com/v1/subprofile/$id/datarequest](./rest-post-subprofile-datarequest.md)           | Alle data van een subprofiel opvragen       |
-| POST   | [api.copernica.com/v1/email/$email/datarequest](./rest-post-email-datarequest.md)               | Alle data van een e-mailadres opvragen      |  
+| Methode  | Adres                                                                                    | Omschrijving                                    |
+|----------|------------------------------------------------------------------------------------------|-------------------------------------------------|
+| POST     | [api.copernica.com/v1/databases](./rest-post-databases.md)                               | Aanmaken nieuwe database                        |
+| PUT      | [api.copernica.com/v1/database/$id](./rest-put-database.md)                              | Bijwerken databasegegevens                      |
+| PUT      | [api.copernica.com/v1/database/$id/unsubscribe](./rest-put-database-unsubscribe.md)      | Instellen afmeldalgoritme                       |
+| POST     | [api.copernica.com/v1/database/$id/fields](./rest-post-database-fields.md)               | Aanmaken databaseveld                           |
+| PUT      | [api.copernica.com/v1/database/$id/field/$id](./rest-put-database-field.md)              | Veld uit database bijwerken                     |
+| POST     | [api.copernica.com/v1/database/$id/interests](./rest-post-database-interests.md)         | Aanmaken interesse                              |
+| POST     | [api.copernica.com/v1/database/$id/collections](./rest-post-database-collections.md)     | Aanmaken collectie                              |
+| POST     | [api.copernica.com/v1/database/$id/profiles](./rest-post-database-profiles.md)           | Aanmaken nieuw profiel                          |
+| PUT      | [api.copernica.com/v1/database/$id/profiles](./rest-put-database-profiles.md)            | Meerdere profielen tegelijk bewerken            |
+| POST     | [api.copernica.com/v1/database/$id/views](./rest-post-database-views.md)                 | Aanmaken nieuwe selectie                        |
+| PUT      | [api.copernica.com/v1/view/$id](./rest-put-view.md)                                      | Bewerken selectiegegevens                       |
+| POST     | [api.copernica.com/v1/view/$id/rules](./rest-post-view-rules.md)                         | Aanmaken nieuwe selectieregel                   |
+| POST     | [api.copernica.com/v1/view/$id/views](./rest-post-view-views.md)                         | Aanmaken geneste selectie                       |
+| PUT      | [api.copernica.com/v1/rule/$id](./rest-put-rule.md)                                      | Bijwerken instellingen van selectieregel        |
+| POST     | [api.copernica.com/v1/rule/$id/conditions](./rest-post-rule-conditions.md)               | Aanmaken nieuwe conditie bij selectieregel      |
+| PUT      | [api.copernica.com/v1/profile/$id](./rest-put-profile.md)                                | Bijwerken profielgegevens                       |
+| PUT      | [api.copernica.com/v1/profile/$id/fields](./rest-put-profile-fields.md)                  | Bijwerken profielvelden                         |
+| POST     | [api.copernica.com/v1/profile/$id/interests](./rest-post-profile-interests.md)           | Toevoegen interesses van profiel                |
+| PUT      | [api.copernica.com/v1/profile/$id/interests](./rest-put-profile-interests.md)            | Overschrijven interesses van profiel            |
+| POST     | [api.copernica.com/v1/profile/$id/subprofiles](./rest-post-profile-subprofiles.md)       | Toevoegen van een subprofielen aan een profiel  |
+| POST     | [api.copernica.com/v1/profile/$id/datarequest](./rest-post-profile-datarequest)          | Alle data van een profiel opvragen              |
+| PUT      | [api.copernica.com/v1/collection/$id](./rest-put-collection.md)                          | Bijwerken collectiegegevens                     | 
+| POST     | [api.copernica.com/v1/collection/$id/fields](./rest-post-collection-fields.md)           | Aanmaken veld in een collectie                  |
+| PUT      | [api.copernica/com/v1/collection/$id/field/$id](./rest-put-collection-field.md)          | Bijwerken veld in collectie                     |
+| POST     | [api.copernica.com/v1/collection/$id/miniviews](./rest-post-collection-miniviews.md)     | Aanmaken van een miniselectie                   |
+| PUT      | [api.copernica.com/v1/collection/$id/unsubscribe](./rest-put-collection-unsubscribe.md)  | Bijwerken afmeldgedrag van een collectie        |
+| PUT      | [api.copernica.com/v1/miniview/$id](./rest-put-miniview.md)                              | Bewerken miniselectiegegevens                   |
+| POST     | [api.copernica.com/v1/miniview/$id/rules](./rest-post-miniview-rules.md)                 | Aanmaken nieuwe miniselectieregel               |
+| PUT      | [api.copernica.com/v1/minirule/$id](./rest-put-minirule.md)                              | Bijwerken instellingen van miniselectieregel    |
+| POST     | [api.copernica.com/v1/minirule/$id/conditions](./rest-post-minirule-conditions.md)       | Aanmaken nieuwe conditie bij miniselectieregel  |
+| POST     | [api.copernica.com/v1/subprofile/$id/datarequest](./rest-post-subprofile-datarequest.md) | Alle data van een subprofiel opvragen           |
+| POST     | [api.copernica.com/v1/email/$email/datarequest](./rest-post-email-datarequest.md)        | Alle data van een e-mailadres opvragen          |  
 
 ## DELETE
 
