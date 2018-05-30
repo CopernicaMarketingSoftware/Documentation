@@ -37,14 +37,23 @@ If **address** is a URL, we will POST the date to the provided URL
 The result of this POST call is a unique identifier. This identifier can be
 used to get the data.
 
+## Retrieving the status of a data request
+
+You can retrieve the status of a data request by sending an an HTTP GET 
+request to the following URL:
+
+`https://www.smtpeter.com/v1/datarequest/$id/status`
+
+where **$id** is the unique identifier you have obtained from the POST request. 
+
 ## Retrieving the data from a data request
 
-You can retrieve the data from a data request by sending a HTTP GET request
+You can retrieve the data from a data request by sending an HTTP GET request
 to the following URL:
 
 `https://www.smtpeter.com/v1/datarequest/$id`
 
-where **$id** is the unique identifier you have obtained by making 
+where **$id** is the unique identifier you have obtained from the POST request. 
 
 ## Return value of a GET request
 

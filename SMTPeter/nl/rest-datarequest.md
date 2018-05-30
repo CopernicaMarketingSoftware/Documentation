@@ -36,9 +36,19 @@ naar de genoemde URL. De structuur van de data vind je verder in dit artikel.
 In beide gevallen is het resultaat van deze POST request een unieke ID. 
 Met deze ID kan de data opgevraagd worden.
 
+## Opvragen van de status van een data verzoek
+
+Je kan de status van een data verzoek opvragen door een HTTP GET request 
+te versturen naar de volgende URL:
+
+`https://www.smtpeter.com/v1/datarequest/$id/status`
+
+waar **$id** de unieke ID van het verzoek is die je hebt ontvangen na 
+de POST call.
+
 ## Opvragen van de data van een data verzoek
 
-Je kan de data van een data verzoek opvragen door en HTTP GET request to
+Je kan de data van een data verzoek opvragen door een HTTP GET request to
 sturen naar de volgende URL:
 
 `https://www.smtpeter.com/v1/datarequest/$id`
