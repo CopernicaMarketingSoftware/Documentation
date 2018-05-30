@@ -14,12 +14,21 @@ regulation all data stored should be relevant to the goal of the organization
 storing it and data that has become irrelevant should be deleted in a timely 
 manner. As a customer of Copernica you have to comply with these regulations.
 
-## Information retrieval
+## Retrieving personal data
 
-Copernica's [REST API](./rest-api) offers the option to retrieve all data stored on an 
-email address, profile or subprofile. You can also get more information about 
-a data request. Depending on what you want to use to retrieve the information 
-you can choose the correct API call below.
+In the Marketing Suite you can retrieve the data of a (sub)profile or 
+email address by navigating the GDPR tab in the **Configuration** menu. 
+You can also retrieve data using our [REST API](./rest-api).
+
+### Retrieving personal data with the REST API
+
+Copernica's [REST API](./rest-api) offers the option to retrieve all data 
+stored on an email address, profile or subprofile. To retrieve the data 
+you submit a request for the data of a (sub)profile or email address first. 
+You can choose to send the data directly through an email or a POST call 
+to a web address. If you do not wish to use these methods you can use 
+other API calls to retrieve the status of your request and download the 
+data when ready. You will find all relevant API calls below:
 
 * [Data of a data request](./rest-get-datarequest)
 * [Data request for an email address](./rest-post-email-datarequest)

@@ -17,13 +17,21 @@ doel van deze organisatie en moet de data ook binnen redelijke tijd verwijderd
 worden wanneer deze niet relevant meer is. Als klant van Copernica moet je 
 uiteraard aan deze regulaties voldoen.
 
-## Informatie ophalen 
+## Persoonlijke data opvragen 
+
+In de Marketing Suite vindt je onder **Configuration** een GDPR kopje waar 
+je de data voor een (sub)profiel of e-mailadres op kunt vragen. Je kunt 
+deze data ook opvragen via onze [REST API](./rest-api).
+
+### Persoonlijke data opvragen met de REST API
 
 Copernica's [REST API](./rest-api) biedt de optie om alle informatie opgeslagen 
-over een e-mailadres, profiel of subprofiel op te vragen. Je kunt ook meer 
-informatie opvragen over een dataverzoek. Afhankelijk van waar je de data 
-over op wilt vragen kun je hieronder de relevante API call 
-vinden.
+over een e-mailadres, profiel of subprofiel op te vragen. Om de data op te 
+vragen dien je eerst een verzoek in voor een (sub)profiel of e-mailadres. 
+Je kunt de data laten versturen in een e-mail of met een POST call naar 
+een webadres. Kies je daar echter niet voor dan kun je de status van de 
+data en de data zelf opvragen met aparte calls. Je vindt alle gerelateerde 
+calls hieronder:
 
 * [Data verzoek voor een e-mailadres](./rest-post-email-datarequest)
 * [Data verzoek voor een profiel](./rest-post-profile-datarequest)
