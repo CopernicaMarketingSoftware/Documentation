@@ -5,10 +5,10 @@ of the addressee. All database fields are directly usable as personalization
 variables. If a database contains the fields *firstname*, *lastname*, *city* 
 and *email*, you can use the same variables for personalization:
 
-* {$firstname}
-* {$lastname}
-* {$city}
-* {$email}
+* {$profile.firstname}
+* {$profile.lastname}
+* {$profile.city}
+* {$profile.email}
 
 You can either use this variables directly, or you can use them as member
 of one of the predefined objects {$profile.firstname}, {$subprofile.status} 
