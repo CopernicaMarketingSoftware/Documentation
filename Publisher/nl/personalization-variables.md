@@ -7,10 +7,10 @@ met de naam *voornaam*, *achternaam*, *woonplaats* en *emailadres*, dan kun
 je bij het personaliseren gebruik maken van de gelijknamige 
 personalisatievariabelen:
 
-* {$voornaam}
-* {$achternaam}
-* {$woonplaats}
-* {$emailadres}
+* {$profile.voornaam}
+* {$profile.achternaam}
+* {$profile.woonplaats}
+* {$profile.emailadres}
 
 Je kunt deze variabelen rechtstreeks in de template of het document zetten,
 maar je kunt de velden ook benaderen via de voorgedefinieerde objecten 
