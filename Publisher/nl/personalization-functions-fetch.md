@@ -20,11 +20,11 @@ te laten zien.
 Met de volgende code kun je informatie opvragen van een website, bijvoorbeeld 
 het weer voor komende week:
 
-    {fetch file='http://www.myweather.com/today/'}
+    {fetch file="http://www.myweather.com/today/"}
     
 Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
 
-    {fetch file='http://www.theweather.com/today/' assign='weather'}
+    {fetch file="http://www.theweather.com/today/" assign='weather'}
     {if $weather ne ''}
       <div id="weather">{$weather}</div>
     {/if}
