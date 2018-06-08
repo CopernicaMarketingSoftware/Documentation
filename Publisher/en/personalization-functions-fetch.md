@@ -18,11 +18,11 @@ you can use to store a website in a variable instead of displaying it.
 Using the following code you can add information from a website, for example 
 the weather:
 
-    {fetch file='http://www.myweather.com/today/'}
+    {fetch file="http://www.myweather.com/today/"}
     
 Or you can put them in a variable to apply your own divs.
 
-    {fetch file='http://www.theweather.com/today/' assign='weather'}
+    {fetch file="http://www.theweather.com/today/" assign='weather'}
     {if $weather ne ''}
       <div id="weather">{$weather}</div>
     {/if}
