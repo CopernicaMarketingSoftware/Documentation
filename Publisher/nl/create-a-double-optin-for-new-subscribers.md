@@ -1,16 +1,12 @@
 # Publisher Tutorial: Dubbele opt-in voor nieuwe profielen
 
-Je mag van de Wet niet door rood rijden en alleen commerciële e-mails
-versturen aan personen die zich hiervoor hebben aangemeld. Zulks een
-aanmelding noemt men in de wereld van de internet marketing ook wel
-opt-in (en een uitschrijving opt-out). Een dubbel opt-in gaat nog even
+Je mag van de Wet alleen commerciële e-mails
+versturen aan personen die zich hiervoor hebben aangemeld. Een
+aanmelding noemt men in de wereld van de internetmarketing ook wel
+opt-in (en een uitschrijving opt-out). Een dubbele opt-in gaat een stap
 verder en geeft je de garantie dat aanmelders zichzelf daadwerkelijk
 hebben aangemeld en met een bestaand e-mailadres, wat ook beter is 
-voor de [aflevering van emails](./deliverability).
-
-Let op: Dit is een oudere tutorial geschreven voor Publisher. Als je in 
-Marketing Suite werkt kun je [deze tutorial](./campaign-tutorials-double-opt-in) 
-volgen.
+voor de aflevering van emails.
 
 ## Hoe werkt dubbele optin?
 
@@ -59,16 +55,14 @@ worden opgeslagen.
         (3)
 -   Een e-maildocument met hierin de bevestigingslink.
 
-Stap 1. Het prepareren van de database
---------------------------------------
+## Stap 1. Het prepareren van de database
 
 In de database dienen twee velden aanwezig te zijn: een veld om het
 e-mailadres in op te slaan en een veld om de nieuwsbriefvoorkeur van de
 abonnee op te slaan.
 
 Het veld voor e-mailadres dient uiteraard een veld van het type
-[e-mailveld](./database-and-collection-field-types.md)
-te zijn (zodat het systeem weet dat dit veld de adressen bevat).
+e-mailveld te zijn (zodat het systeem weet dat dit veld de adressen bevat).
 
 Van het veld voor nieuwsbriefvoorkeur maak je een meerkeuzeveld met de
 volgende opties voorgedefinieerd:
@@ -80,8 +74,7 @@ volgende opties voorgedefinieerd:
 
 ![](../images/afbeelding.png)
 
-Stap 2. Reserveer een drietal webpagina’s
------------------------------------------
+## Stap 2. Reserveer een drietal webpagina’s
 
 Zorg dat de drie webpagina’s klaar zijn voor gebruik (zodat je hier
 direct het formulier op kan plaatsen en naartoe kunt linken.
