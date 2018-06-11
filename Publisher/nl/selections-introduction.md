@@ -47,13 +47,11 @@ Subselecties maak je op dezelfde manier aan als selecties.
 
 ## Selecties, miniselecties en subselecties aanmaken
 
-Je kunt selecties, subselecties en miniselecties beheren onder 
-*profielen* > *bewerk selecties* in de Marketing Suite. Een subselectie 
-maak je door *selectie aanmaken* aan te klikken en bij *onder* de 
-selectie aan te klikken waar je subselectie onder moet hangen. 
-In Marketing Suite vindt je links in je database de knop 
-*Eerste selectie aanmaken* wanneer je nog geen selecties hebt, en 
-rechtsbovenin de knop *Selectie aanmaken*. Andere beheeropties voor 
+In de Publisher kun je selecties, subselecties en miniselecties beheren onder 
+*profielen* > *Databasebeheer* > *Selecties beheren*. Voordat je een miniselectie kan aanmaken, dien je een collectie te hebben. Een collecie maak je aan door in profielen te gaan naar: *Databasebeheer > Databasevelden wijzigen > Collectie toevoegen. 
+
+In de Marketing Suite maak je een selectie aan door links in beeld op de groene "plus-teken" te drukken of door op het tandwieletje te drukken. Wanneer je nog geen selecties hebt vind je links in je database, de knop 
+*Eerste selectie aanmaken* en rechtsbovenin de knop *Selectie aanmaken*. Andere beheeropties voor 
 selecties vind je [hier](selections-settings).
 
 ## Regels en condities
