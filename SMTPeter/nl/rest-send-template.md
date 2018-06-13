@@ -55,7 +55,7 @@ bij de template property meegeven. Dit kan als string of als echte JSON:
 Het is bekend dat je zelf HTML en MIME kunt maken en mee kunt geven aan de API call. 
 De e-mails die je hebt gemaakt kunnen een groot scala aan personalisatiedata bevatten, 
 zoals eerder al is uitgelegd. Bij het gebruik van templates heb je ook de volledige 
-beschikking over het invoegen van personalisatiedata. In onderstaand voorbeeld wordt een 
+beschikking over het invoegen van personalisatiedata. In onderstaande voorbeeld wordt een 
 recipient gebruikt met tempalate 12. Vervolgens wordt in de "data" property de 
 personalisatiedata meegegeven. 
 ```json

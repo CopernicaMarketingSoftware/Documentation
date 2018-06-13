@@ -32,4 +32,4 @@ Lees meer over de mogelijkheden van SMTPeter:
 
 - [Sender Domains](sender-domains "Sender Domains")
 - [SMTP API](smtp-api "SMTP API")
-- [REST API](rest-send "REST API")
+- [REST API](rest-api "REST API")
