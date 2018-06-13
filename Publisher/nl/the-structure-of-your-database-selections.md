@@ -9,7 +9,7 @@ e-mailadressen een negatieve invloed op je e-mailreputatie. Gelukkig
 heeft Copernica verschillende mogelijkheden om je verzendlijst
 grotendeels automatisch te optimaliseren.
 
-Een standaard selectie indeling voor een optimale email verzendlijst
+Een standaard selectie indeling voor een optimale verzendlijst
 --------------------------------------------------------------------
 
 Veel van onze gebruikers hanteren een standaard selectie indeling voor
@@ -82,7 +82,7 @@ van de soft bounces en inactieve te agressief zijn.
     mailingen het geval moet zijn. Je hebt nu alle profielen
     geselecteerd die in het afgelopen jaar meer dan zes mailings niet
     hebben geopend of niet op een link in de mailing hebben geklikt.
-    Schrijf deze semi-automatisch uit van je mailingen. Klik hiervoor
+    Schrijf deze semi-automatisch uit van je mailingen. Klik hier voor
     eens in de zes maanden deze selectie aan, klik op 'huidige weergave'
     en vervolgens op meerdere profielen wijzigen. Geef het veld aan dat
     je wilt wijzigen (bijvoorbeeld 'nieuwsbrief') en geef aan naar welke
@@ -101,7 +101,7 @@ van de soft bounces en inactieve te agressief zijn.
     "Er moet een spamklacht ontvangen zijn". De datum hou je gelijk aan
     A\_Bounces.
 
-Maak een verzendselectie aan voor email marketing campagnes
+Maak een verzendselectie aan voor e-mailmarketingcampagnes
 -----------------------------------------------------------
 
 Je hebt nu je selecties voor automatisch databasemanagement aangemaakt.
@@ -156,4 +156,5 @@ gestuurd;
     onderwerpregel en de preheader. Voor je klikratio bekijk je of
     gebruik maakt van de juiste call-to-actions en of men ook met de
     mobiele telefoon op je links goed kunnen klikken.
+
 
