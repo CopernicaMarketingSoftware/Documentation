@@ -102,7 +102,7 @@ Although most of the major email clients support media queries, not everyone is 
 
 ## Example template
 
-This is an example template with a basic layout that uses all of the elements we discussed in this article. Feel free to use it and tweak it to your own preferences.
+This is an example template with a basic layout that uses the elements we discussed in this article. Feel free to use it and tweak it to your own preferences.
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -112,50 +112,122 @@ This is an example template with a basic layout that uses all of the elements we
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A responsive two column example</title>
+    <style>
+        /* A simple css reset */
+        body,table,thead,tbody,tr,td,img {
+            padding: 0;
+            margin: 0;
+            border: none;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            vertical-align: top;
+        }
 
-    <style rel="stylesheet" type="text/css">
-        @media only screen and (max-width: 600px) {
+        /* Add some padding for small screens */
+        .wrapper {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-            .wrapper table {
+        h1,h2,h3,h4,h5,h6,p {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+            line-height: 1.6;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+        
+        p,a,li {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        @media only screen and (max-width: 620px) {
+            
+            .wrapper .section {
                 width: 100%;
             }
-
+            
             .wrapper .column {
                 width: 100%;
                 display: block;
             }
         }
     </style>
-
 </head>
+
 <body>
     <table width="100%">
-        <tr>
-            <td class="wrapper" width="600" align="center">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td class="column" width="300">
-                            <table>
-                                <tr>
-                                    <td align="left">
-                                        <h2>Left column</h2>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="column" width="300">
-                            <table>
-                                <tr>
-                                    <td align="left">
-                                        <h2>Right column</h2>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+        <tbody>
+            <tr>
+                <td class="wrapper" width="600" align="center">
+                    <!-- Header image -->
+                    <table class="section header" cellpadding="0" cellspacing="0" width="600">
+                        <tr>
+                            <td class="column">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <img src="https://picsum.photos/600/100?image=14" alt="picsum" width="600" />
+                                                <h2>Header</h2>
+                                                <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat.</p>
+                                                <p style="text-align:justify;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum. Ut enim ad minim veniam.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Two columns -->
+                    <table class="section" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="column" width="290" valign="top">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <img src="https://picsum.photos/300/100?image=15" alt="picsum" width="300" />
+                                                <h2>Left column</h2>
+                                                <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="column" width="20" valign="top">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td> &nbsp; </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="column" width="290" valign="top">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <img src="https://picsum.photos/300/100?image=10" alt="picsum" width="300" />
+                                                <h2>Right column</h2>
+                                                <p style="text-align:justify;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
