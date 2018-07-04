@@ -30,6 +30,7 @@ information is returned:
 * **description**: description of the miniselection
 * **parent-type**: the parent-type is always the string "collection"
 * **parent-id**: ID of the collection this miniselection belongs to
+* **collection**: ID of the collection this miniselection belongs to
 
 ## PHP example
 

@@ -36,6 +36,7 @@ worden de volgende eigenschappen teruggegeven:
 * **has-children**: boolean waarde; heeft deze selectie geneste selecties onder zich?
 * **has-referred**: boolean waarde; zijn er andere selecties die verwijzen naar deze selectie?
 * **has-rules**: boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
+* **database**: id van de database waar deze selectie onder valt
 
 
 ## Voorbeeld

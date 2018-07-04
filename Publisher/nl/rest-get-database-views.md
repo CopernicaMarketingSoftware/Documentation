@@ -23,18 +23,19 @@ Meer informatie over de betekenis van deze parameters vind je in het
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van selecties. Voor elke selection
+De methode retourneert een lijst van selecties. Voor elke selectie
 worden de volgende eigenschappen teruggegeven:
 
-* id: 				numeriek id van de selection;
-* name: 			naam van de selection;
-* description: 		omschrijving van de selection;
+* id: 				numeriek id van de selectie;
+* name: 			naam van de selectie;
+* description: 		omschrijving van de selectie;
 * parent-type: 		mogelijke waardes: "database" of "view", gebruikt om aan te geven of 
-dit een selection direct onder een database is, of een geneste selection onder een andere selection;
-* parent-id: 		id van de database of selection waar deze selection onder valt;
-* has-children: 	boolean waarde; heeft deze selection geneste selecties onder zich?
-* has-referred: 	boolean waarde; zijn er andere selection die verwijzen naar deze selection?
-* has-rules: 		boolean waarde; zijn er selection-regels voor deze selection ingesteld?
+dit een selectie direct onder een database is, of een geneste selectie onder een andere selectie;
+* parent-id: 		id van de database of selectie waar deze selectie onder valt;
+* has-children: 	boolean waarde; heeft deze selectie geneste selecties onder zich?
+* has-referred: 	boolean waarde; zijn er andere selectie die verwijzen naar deze selectie?
+* has-rules: 		boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
+* database:			id van de database waar deze selectie onder valt
 
 
 ## Voorbeeld in PHP

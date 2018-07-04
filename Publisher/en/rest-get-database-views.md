@@ -32,6 +32,7 @@ selections nested underneath it
 selections that refer to this selection.
 - **has-rules**: boolean value: whether or not the selection has 
 selection rules
+- **database**: ID of the database this selection belongs to.
 
 ## PHP example
 
