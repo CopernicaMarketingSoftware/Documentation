@@ -78,7 +78,7 @@ te exporteren of deze te verwerken met opvolgacties.
 
 ## Meer informatie
 
-Met enquêtes kun je nog veel meer. Hieronder vindt je een aantal links 
+Met enquêtes kun je nog veel meer. Hieronder vind je een aantal links 
 met meer informatie.
 
 ### Algemeen

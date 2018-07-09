@@ -28,7 +28,7 @@ specifieke wensen hebt kun je beter een formulier aanmaken onder **Content**.
 
 ### Aanmaken onder content
 
-Binnen **Content** vindt je de webformulierwizard. Je kunt de standaard
+Binnen **Content** vind je de webformulierwizard. Je kunt de standaard
 stylesheet of standaard XSLT gebruiken om de stijl van je formulier
 naar je eigen smaak aan te passen.
 

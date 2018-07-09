@@ -24,7 +24,7 @@ reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 Voor zowel je reputatie als je eigen gemak is het belangrijk dat je 
 database schoon en volledig is. Met effectieve selecties kun je gemakkelijk 
 je doelgroep bereiken. Hier helpen we graag mee, dus in de onderstaande 
-artikelen geven we je tips. Verder in dit artikel vindt je ook tutorials 
+artikelen geven we je tips. Verder in dit artikel vind je ook tutorials 
 voor enkele selecties.
 
 * [Database schoonhouden](./database-maintenance)
@@ -48,7 +48,7 @@ je dat zelf niet hoeft te doen.
 ## Selectie tutorials
 
 Met selecties kun je makkelijk je email afleveren bij de juiste doelgroep. 
-Hieronder vindt je tutorials voor veelvoorkomende selecties en toepassingen.
+Hieronder vind je tutorials voor veelvoorkomende selecties en toepassingen.
 
 * [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
 * [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
@@ -57,7 +57,7 @@ Hieronder vindt je tutorials voor veelvoorkomende selecties en toepassingen.
 
 ### Andere
 
-Hier vindt je nog meer uitleg en tips over verschillende onderwerpen.
+Hier vind je nog meer uitleg en tips over verschillende onderwerpen.
 
 * [HTTP en HTTPS](./http-https)
 * [Headers](./headers)

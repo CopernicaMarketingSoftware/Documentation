@@ -1,7 +1,7 @@
 # Een mailing versturen
 
 Het mailen van meerdere relaties ineens noemen wij een bulkmailing.
-Onder deze vernoeming van het menu Mailings vindt je de opties voor het
+Onder deze vernoeming van het menu Mailings vind je de opties voor het
 verzenden van een e-mail aan meerdere relaties.
 
 Het versturen van een bulkmailing verloopt in 4 stappen:

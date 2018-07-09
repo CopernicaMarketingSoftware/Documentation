@@ -9,7 +9,7 @@ Dit is niet hetzelfde als de [algemene account mailing statistieken](./statistic
 In Marketing Suite ga je eerst naar jouw account. Je vind hier verschillende 
 opties, waaronder het gebruik van je account. Je vindt hier informatie over 
 onder andere het aantal berichten dat je verstuurt, je websites en het 
-aantal API calls dat je hebt uitgevoerd. Aan de rechterkant vindt je 
+aantal API calls dat je hebt uitgevoerd. Aan de rechterkant vind je 
 een knop om de statistieken te downloaden als PDF.
 
 ## Publisher 

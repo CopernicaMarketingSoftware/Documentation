@@ -19,7 +19,7 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 
 Er zijn verschillende soorten veranderingen die kunnen voorkomen in je 
 database. Daarom kun je bij de change conditie een type en een waarde 
-opgeven. In de onderstaande tabel vindt je de soorten veranderingen 
+opgeven. In de onderstaande tabel vind je de soorten veranderingen 
 die gebruikt kunnen worden voor de conditie.
 
 | Change type          | Omschrijving                     |

@@ -134,7 +134,7 @@ beschikbaar.
 Open in het onderdeel **Mobile** het document dat je wilt versturen en
 kies in het **Sms-mailings**menu **Bulkmailing versturen**.
 
--   Allereerst wordt je gevraagd akkoord te gaan met de regels en
+-   Allereerst word je gevraagd akkoord te gaan met de regels en
     nettiquette
 -   In de volgende stap kies de selectie of miniselectie waaraan je de
     mailing wilt richten

@@ -25,7 +25,7 @@ Je kunt zo zien hoe jouw content eruit ziet met de gekozen CSS of XSLT.
 
 Om de stylesheet te gebruiken met je document of template selecteer je 
 "Stijl instellen..." uit het document/template menu. Als deze gelinkt is 
-vindt je een tabje *Stijl* boven je document/template, waar je de regels 
+vind je een tabje *Stijl* boven je document/template, waar je de regels 
 ervan direct aan kan passen.
 
 # Meer informatie
