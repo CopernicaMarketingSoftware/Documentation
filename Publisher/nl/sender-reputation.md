@@ -20,7 +20,7 @@ zeer belangrijk.
 
 Ontvangers moeten zich altijd uit kunnen schrijven van een nieuwsbrief. 
 Een uitschrijflink maakt dit mogelijk. Door het aanbieden van een uitschrijflink
-komt een onderneming betrouwbaar over en worden je e-maisl minder snel als spam
+komt een onderneming betrouwbaar over en worden je e-mails minder snel als spam
 gemarkeerd. Je kunt het [uitschrijfgedrag](database-unsubscribe-behavior) ook
 zelf instellen.
 
