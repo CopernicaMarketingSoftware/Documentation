@@ -31,6 +31,7 @@ For every selection, a JSON object with the following properties is returned:
 - **has-children**: boolean value: whether or not the database has selections nested underneath it
 - **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
 - **has-rules**: boolean value: whether or not the selection has selection rules
+- **database**: ID of the database this selection belongs to
 
 ## PHP example
 

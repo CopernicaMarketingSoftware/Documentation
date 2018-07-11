@@ -19,6 +19,7 @@ Er zijn geen ondersteunde parameters voor deze methode.
 - **description**: omschrijving van de selectie
 - **parent-type**: bovenliggende structuur van de selectie; selectie of collectie
 - **parent-id**: ID van de bovenliggende selectie/collectie
+- **collection**: ID van de collectie waar deze miniselectie onder valt.
 
 
 ## Voorbeeld in PHP

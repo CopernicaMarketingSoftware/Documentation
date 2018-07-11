@@ -20,6 +20,7 @@ There are no available parameters for this method.
 - **description**: description of the selection
 - **parent-type**: type of the parent: view or collection
 - **parent-id**: id of the database or view
+- **collection**: id of the collection this miniselection belongs to
 
 ## PHP example
 
