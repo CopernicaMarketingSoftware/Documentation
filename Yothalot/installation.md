@@ -197,7 +197,7 @@ file system can be found. See our special article about [setting up a local Yoth
 for more information.
 
 
-## Getting a license
+<!--## Getting a license
 
 Yothalot is a commercial product; you need a license to run it. Without a valid
 license, Yothalot is limited to run on only one node and it only runs four concurrent
@@ -211,7 +211,7 @@ license:        <Path to your license>
 ```
 
 If you have questions about your license, feel free to send an email to
-[support@copernica.com](mailto:support@copernica.com).
+[support@copernica.com](mailto:support@copernica.com).-->
 
 
 ## Starting the processes
