@@ -34,12 +34,12 @@ links, maar ook op (sub)domeinen. Hierdoor kun je bijvoorbeeld alle hyperlinks n
 
 Mocht je dit willen uitvoeren in de software open je eerst het "Hyperlinks uitbreiden" menu in de template editor. Hier kun je bij domein `enquetes.voorbeeld.nl` invullen. Vervolgens kun je bij "Extra parameters" bijvoorbeeld een parameter aanmaken met de naam "gebruikersnaam". Als je veld voor de gebruikersnaam dan "gebruikersnaam" heet in je database koppel je deze door `{$profile.gebruikersnaam}` in te vullen bij de waarde van de parameter.
 
-Als je meerdere domeinen hebt kun je een zogenaamde wildcard ('\*' symbool) gebruiken om aan te geven welke domeinen gematcht moeten worden. Zo matcht `\*.voorbeeld.nl` bijvoorbeeld alle subdomeinen van `voorbeeld.nl`. Er zijn echter wel een aantal regels:
+Als je meerdere domeinen hebt kun je een zogenaamde wildcard ('\*' symbool) gebruiken om aan te geven welke domeinen gematcht moeten worden. Zo matcht `*.voorbeeld.nl` bijvoorbeeld alle subdomeinen van `voorbeeld.nl`. Er zijn echter wel een aantal regels:
 
 - Er mag maar een wildcard voorkomen.
 - De wildcard mag alleen het eerste karakter zijn en matcht een volledige naam.
 
-Dit betekent dat `\*.\*.domein.nl`, `subsubdomein.\*.domein.nl`, `\*iets.domein.nl` niet geldig zijn, maar `\*.subdomein.domein.nl` bijvoorbeeld wel.
+Dit betekent dat `*.*.domein.nl`, `subsubdomein.*.domein.nl`, `*iets.domein.nl` niet geldig zijn, maar `*.subdomein.domein.nl` bijvoorbeeld wel.
 
 ## Extra parameters
 
