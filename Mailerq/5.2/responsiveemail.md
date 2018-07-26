@@ -102,6 +102,8 @@ a MIME property with exactly the text and HTML that you've set in the JSON.
 
 ## Config file variables
 
+### Cache
+
 When emails are generated, MailerQ sometimes has to download resources 
 from the internet to find out the dimensions of images and to fetch attachments. To 
 prevent that the same resources are downloaded over and over again, MailerQ 
@@ -125,7 +127,21 @@ downloaded files will stay for at most one hour (3600 seconds) in the cache, eve
 if the HTTP response headers allowed a longer cache time.
 
 
-## Firewall bypass
+### User Agent
+
+For the downloads, a custom user agent can be supplied. By default, the user agent
+mailerq uses is 'MailerQ <version>'. This will be set in the header of all download
+requests MailerQ performs. This can be very useful for statistical purposes, where
+you want to keep track of all the requests that were made by MailerQ. Another example
+usecase is for basic authentication, however keep in mind that it is sent along with
+_all_ requests to all downloaded URLs.
+
+```
+download-user-agent:    My custom user agent
+```
+
+
+### Firewall bypass
 
 Many users run MailerQ on a server with unrestricted access to the local network. 
 MailerQ is then not only capable of fetching resources from the internet, but 
