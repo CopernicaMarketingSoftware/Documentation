@@ -49,7 +49,7 @@ Je kunt ook speciale links maken waarmee mensen een gepersonaliseerde webpagina 
 
 ## Met het oude link tracking systeem
 
-Een e-mail wordt op twee verschillende momenten gepersonaliseerd:
+Het werkte vroeger net even wat anders waardoor er links niet werkten. Een e-mail wordt namelijk met het oude link tracking systeem op twee verschillende momenten gepersonaliseerd:
 
 1.  Het document wordt gepersonaliseerd bij het samenstellen van de mailing (vlak voordat deze naar de outbox wordt geplaatst)
 2.  Smarty code binnen hyperlinks wordt door onze picserver verwerkt, en wordt pas uitgevoerd direct nadat de ontvanger op de hyperlink klikt.
