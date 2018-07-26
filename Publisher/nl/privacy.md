@@ -19,7 +19,7 @@ uiteraard aan deze regulaties voldoen.
 
 ## Persoonlijke data opvragen 
 
-In de Marketing Suite vindt je onder **Configuration** een GDPR kopje waar 
+In de Marketing Suite vind je onder **Configuration** een GDPR kopje waar 
 je de data voor een (sub)profiel of e-mailadres op kunt vragen. Je kunt 
 deze data ook opvragen via onze [REST API](./rest-api).
 

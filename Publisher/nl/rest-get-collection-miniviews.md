@@ -30,6 +30,7 @@ worden de volgende eigenschappen teruggegeven:
 * description:      omschrijving van de miniselectie;
 * parent-type:      dit is altijd de string "collection";
 * parent-id:        id van de collectie waar deze miniselectie onder valt.
+* collection:       id van de collectie waar deze miniselectie onder valt.
 
 
 ## Voorbeeld in PHP

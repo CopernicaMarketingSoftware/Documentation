@@ -146,7 +146,7 @@ loggen om toegang te krijgen. Plaats hier ook een inlogformulier.
 
 De login pagina wordt getoond wanneer een gebruiker geen toegang heeft 
 tot de huidige pagina. Je kunt de toegang instellen in het website menu. 
-In hetzelfde menu vindt je de optie om een webpagina (tijdelijk) offline 
+In hetzelfde menu vind je de optie om een webpagina (tijdelijk) offline 
 te halen.
 
 ## Meer informatie

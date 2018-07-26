@@ -1,7 +1,7 @@
 # Sender domains
 
 SMTPeter gebruikt het concept van *sender domains* om e-mail simpeler te maken.
-Binnen de verschillende diensten van Copernica zijn sender domains **verplicht**
+Binnen de verschillende diensten van SMTPeter zijn sender domains **verplicht**
 gesteld, omdat het zo'n essentieel onderdeel is voor het succesvol versturen
 van e-mail.
 

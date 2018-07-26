@@ -79,13 +79,13 @@ In dat geval maak je een API call (2) om de records te krijgen zonder CNAME's.
 
 ## DNS status
 Je kunt checken of alles correct is ingesteld als je de aanbevolen DNS Records hebt 
-geinstaleerd. Je doet dit met de volgende API methode:
+geïnstalleerd. Je doet dit met de volgende API methode:
 
 ```txt
 https://www.smtpeter.com/v1/dns/yourdomain.com/status
 ```
 
-SMTpeter vraagt je DNS Records op als je deze methode aanroept. Daarna worden deze 
+SMTPeter vraagt je DNS Records op als je deze methode aanroept. Daarna worden deze 
 vergeleken met de aanbevolen instellingen. SMTPeter rapporteert je als er iets niet 
 klopt aan je instellingen. De output voor deze REST calls ziet er ongeveer zo uit:
 

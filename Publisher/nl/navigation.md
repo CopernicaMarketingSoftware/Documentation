@@ -22,7 +22,6 @@
 * [Automatisering](./automation)
     * [Personaliseren](./personalization.md)
     * [Opvolgacties](./followups.md)
-    * [Selecties](./selections-introduction)
     * [Data-scripts](./data-object.md)
 * [Statistieken](./statistics)
     * [Resultaten van een mailing](./statistics-mailing)

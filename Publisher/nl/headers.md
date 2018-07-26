@@ -4,7 +4,7 @@ Headers worden gebruikt om informatie mee te geven aan een email.
 Er zijn gestandaardizeerde headers zoals "From" en "Subject", maar je 
 kunt ook zelf zogenaamde "x-headers" gebruiken.
 
-In Marketing Suite vindt je al deze editors bovenaan de Template Editor 
+In Marketing Suite vind je al deze editors bovenaan de Template Editor 
 bij het aanmaken van een email. In Publisher kun je deze vinden bij het 
 aanmaken van een mailing onder het **E-mailings** menu.
 

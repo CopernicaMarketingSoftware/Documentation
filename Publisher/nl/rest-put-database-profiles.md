@@ -17,7 +17,7 @@ een POST zou sturen, dan [maak je een nieuw profiel aan](rest-post-database-prof
 
 ## Beschikbare parameters
 
-Bij deze methodes zijn er twee verplichte manieren om data mee te geven: via de URL en als body van het HTTP request. Over de body vindt je meer onder het kopje body data. Aan de URL kun je de volgende parameters toevoegen:
+Bij deze methodes zijn er twee verplichte manieren om data mee te geven: via de URL en als body van het HTTP request. Over de body vind je meer onder het kopje body data. Aan de URL kun je de volgende parameters toevoegen:
 
 * **fields**: verplichte parameter om de profielen te selecteren die worden aangepast
 * **create**: boolean parameter om aan te geven dat een nieuw profiel moet worden aangemaakt indien er geen matchende profielen zijn
