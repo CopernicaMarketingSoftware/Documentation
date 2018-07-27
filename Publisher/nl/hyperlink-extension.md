@@ -29,7 +29,29 @@ Let op: Op deze manier hyperlinks uitbreiden is alleen mogelijk als het nieuwe l
 
 Met het nieuwe link tracking systeem worden alle links op het laatste moment aangepast. Je kunt nu bijvoorbeeld dit ook gebruiken: `<a href="[text name="mijnlink"]"></a>`
 
-## Toepassen op verschillende domeinen
+Voorbeeld van hyperlink die wordt gepersonaliseerd met de unieke
+inloggegevens van de ontvanger:
+
+    http://www.mijnbedrijf.nl/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
+
+Het is ook mogelijk een volledige URL in een databaseveld op te slaan
+bij het profiel of subprofiel.
+
+    <a href="{$url}">Ga naar website</a>
+
+Desgewenst aangevuld met inlogcode
+
+    <a href="{$url}?profile={$profile.id}&code={$profile.code}">Ga naar website</a>
+
+### URL zit in subprofiel
+
+Als je een e-mailing richt aan een profiel, en je wilt de URL
+personaliseren met gegevens uit een subprofiel onder dit profiel, dan
+gebruik je hiervoor de loadsubprofile functie, bijvoorbeeld:
+
+    <a href="{loadsubprofile source='databasenaam:collectienaam' assign=ls profile=$profile.id}{$ls.url}">Ga naar uw persoonlijke pagina</a>
+
+### Toepassen op verschillende domeinen
 
 Met de Copernica publisher kun je hyperlink extensie niet alleen toepassen op individuele 
 links, maar ook op (sub)domeinen. Hierdoor kun je bijvoorbeeld alle hyperlinks naar `enquetes.voorbeeld.nl` informatie meegeven om in te loggen, waardoor je informatie makkelijk aan profielen kan koppelen en je website meteen gebruiksvriendelijker maakt.
@@ -43,7 +65,7 @@ Als je meerdere domeinen hebt kun je een zogenaamde wildcard ('\*' symbool) gebr
 
 Dit betekent dat `*.*.domein.nl`, `subsubdomein.*.domein.nl`, `*iets.domein.nl` niet geldig zijn, maar `*.subdomein.domein.nl` bijvoorbeeld wel.
 
-## Extra parameters
+### Extra parameters
 
 De extra parameters zijn alle parameters die niet gebruikt worden door Google services. Je kunt hiervoor zelf een naam en waarde specificeren. Je kunt zowel de naam als de waarde personaliseren met elke waarde die ook beschikbaar is binnen templates. Je kunt bijvoorbeeld "achternaam" meegeven als naam en `{$profile.achternaam}` om de achternaam van de gebruiker uit de database te gebruiken.
 
