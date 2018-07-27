@@ -93,13 +93,13 @@ en de content toevoegen.
 
 ### Informatie uit een URL gebruiken voor personalisatie
 
-Het is mogelijk om de query string uit een URL te gebruiken in smarty
-personalisatie. Hiervoor gebruik je de {$smarty.get.<query name\>}.
+Het is mogelijk om een waarde uit een URL parameter te gebruiken in smarty
+personalisatie. Hiervoor gebruik je de {$smarty.get.<parameter naam\>}.
 
-**Voorbeeld:** voeg de query *name=Sjon* toe aan de link URL van je
+**Voorbeeld:** voeg *name=Sjon* toe aan de link URL van je
 webpagina
 
-http://mywebsite.example.com?name=Sjon
+  http://mywebsite.example.com?name=Sjon
 
 Voeg vervolgens de volgende smarty code toe aan jouw
 webpagina **{$smarty.get.name}**
