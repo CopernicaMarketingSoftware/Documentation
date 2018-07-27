@@ -60,7 +60,11 @@ en vul je op de links in je document de parameter utm_content toe.
 
 Als je een e-mailing richt aan een profiel, en je wilt de URL personaliseren met gegevens uit een subprofiel onder dit profiel, dan gebruik je hiervoor de loadsubprofile functie, bijvoorbeeld:
 
-    <a href="{loadsubprofile source='databasenaam:collectienaam' assign=ls profile=$profile.id}{$ls.url}">Ga naar uw persoonlijke pagina</a>
+```
+<a href="{loadsubprofile source='databasenaam:collectienaam' assign=ls profile=$profile.id}{$ls.url}">
+    Ga naar uw persoonlijke pagina
+</a>
+```
 
 ### Toepassen op verschillende domeinen
 
