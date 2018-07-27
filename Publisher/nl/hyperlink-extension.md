@@ -89,4 +89,12 @@ aangemaakt.
 
     <a href="{capture assign="url"}http://www.google.nl{/capture}{$url}">Ga naar google.nl</a>
 
-
+Als je om redenen niet in iedere hyperlink een hele berg code wilt
+opnemen (bijvoorbeeld om de templatecode in zijn geheel overzichtelijk
+te houden) dan kan je ervoor kiezen geen kliks te registreren bij de
+e-mailing. Deze instelling vind je in het tabblad 'opties' in de tweede
+stap in het dialoogvenster om een bulkmailing te versturen. De ontvanger
+wordt bij het klikken op de link niet langer geredirect via onze
+picserver en de link wordt tegelijkertijd met het document
+gepersonaliseerd. Maar er worden geen kliks meer geregistreerd. Die
+afweging zal je moeten maken.
