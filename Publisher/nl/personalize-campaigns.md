@@ -38,8 +38,6 @@ bijvoorbeeld **webformulieren** en **opvolgacties**.
     PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Extra velden voor document
     personalisatie](./extra-fields-for-personalizing.md)
--   [Informatie uit een URL gebruiken voor
-    personalisatie](./get-url-parameters-within-smarty-personalization.md)
 -   [(Mini)selecties gebruiken binnen Smarty
     personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
 -   [Datums en tijden met
