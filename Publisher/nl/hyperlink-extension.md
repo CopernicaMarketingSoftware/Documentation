@@ -27,6 +27,8 @@ Je kunt hyperlinks gepersonaliseerd uitbreiden in de marketing suite. Dit gaat p
 
 Let op: Op deze manier hyperlinks uitbreiden is alleen mogelijk als het nieuwe link tracking systeem wordt gebruikt! [Hyperlings uitbreiden met het oude link tracking systeem werkt net even anders](#met-het-oude-link-tracking-systeem).
 
+Met het nieuwe link tracking systeem worden alle links op het laatste moment aangepast. Je kunt nu bijvoorbeeld dit ook gebruiken: `<a href="[text name="mijnlink"]"></a>`
+
 ## Toepassen op verschillende domeinen
 
 Met de Copernica publisher kun je hyperlink extensie niet alleen toepassen op individuele 
@@ -64,7 +66,5 @@ Om de link te laten werken, moet de variabel dus ook in de link worden
 aangemaakt.
 
     <a href="{capture assign="url"}http://www.google.nl{/capture}{$url}">Ga naar google.nl</a>
-
-Met het nieuwe link tracking systeem worden alle links op het laatste moment aangepast. Je kunt nu bijvoorbeeld dit ook gebruiken: `<a href="[text name="mijnlink"]"></a>`
 
 
