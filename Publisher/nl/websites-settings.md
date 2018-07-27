@@ -58,4 +58,3 @@ alleen HTTPS te gebruiken.
 ## Meer informatie
 
 * [Websites](./websites)
-* [Toegang beperken](./websites#toegang-beperken)
