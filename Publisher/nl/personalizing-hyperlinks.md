@@ -27,34 +27,44 @@ Je kunt hyperlinks gepersonaliseerd uitbreiden in de marketing suite. Dit gaat p
 
 Let op: Op deze manier hyperlinks uitbreiden is alleen mogelijk als het nieuwe link tracking systeem wordt gebruikt! [Hyperlings uitbreiden met het oude link tracking systeem werkt net even anders](#met-het-oude-link-tracking-systeem).
 
-Met het nieuwe link tracking systeem worden alle links op het laatste moment aangepast. Je kunt nu bijvoorbeeld dit ook gebruiken: `<a href="[text name="mijnlink"]"></a>`
+In het dialoogvenster hyperlinks uitbreiden kun je zowel op template niveau als op document niveau hyperlinks uitbreiden. Deze instellingen worden samengevoegd. Als het document dezelfde parameters gebruikt als in het template worden deze overschreven.
 
-Voorbeeld van hyperlink die wordt gepersonaliseerd met de unieke
-inloggegevens van de ontvanger:
+Met het nieuwe link tracking systeem worden alle links op het laatste moment aangepast. In de voorbeeldweergave zal de hele url getoont worden maar in de bewerkmodes zal de hyperlink niet worden uitgebreid. De links worden pas uitgebreid na het personalizeren van het document, in de laatste stap voor het verzenden.
 
-    http://www.mijnbedrijf.nl/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
+Het is ook mogelijk een volledige URL in een databaseveld op te slaan bij het profiel of subprofiel.
 
-Het is ook mogelijk een volledige URL in een databaseveld op te slaan
-bij het profiel of subprofiel.
+    <a href="{$profile.url}">Ga naar website</a>
+    
+Of in een text block:
 
-    <a href="{$url}">Ga naar website</a>
+    <a href="[text name="mijnlink"]"></a>
+    
+### Specifieke hyperlinks testen
 
-Desgewenst aangevuld met inlogcode
+Met de parameter utm_content kun je onderscheid maken tussen vergelijkbare content of links die verwijzen naar dezelfde advertentie. Als er bijvoorbeeld in een e-mailbericht twee call-to-action-links zijn opgenomen, kun je de parameter 'utm_content' gebruiken om voor beide links verschillende waarden in te stellen. Op deze manier kun je bepalen welke link effectiever is."
 
-    <a href="{$url}?profile={$profile.id}&code={$profile.code}">Ga naar website</a>
+Als je wilt weten op welke specifieke link mensen drukken laat je die leeg in het dialoogvenster 'Hyperlinks uitbreiden'
+en vul je op de links in je document de parameter utm_content toe.
+
+```
+<a href="https://www.example.com/ad?utm_content=top-link">
+    link
+</a>
+
+<a href="https://www.example.com/ad?utm_content=bottom-link">
+    link
+</a>
+```
 
 ### URL zit in subprofiel
 
-Als je een e-mailing richt aan een profiel, en je wilt de URL
-personaliseren met gegevens uit een subprofiel onder dit profiel, dan
-gebruik je hiervoor de loadsubprofile functie, bijvoorbeeld:
+Als je een e-mailing richt aan een profiel, en je wilt de URL personaliseren met gegevens uit een subprofiel onder dit profiel, dan gebruik je hiervoor de loadsubprofile functie, bijvoorbeeld:
 
     <a href="{loadsubprofile source='databasenaam:collectienaam' assign=ls profile=$profile.id}{$ls.url}">Ga naar uw persoonlijke pagina</a>
 
 ### Toepassen op verschillende domeinen
 
-Met de Copernica publisher kun je hyperlink extensie niet alleen toepassen op individuele 
-links, maar ook op (sub)domeinen. Hierdoor kun je bijvoorbeeld alle hyperlinks naar `enquetes.voorbeeld.nl` informatie meegeven om in te loggen, waardoor je informatie makkelijk aan profielen kan koppelen en je website meteen gebruiksvriendelijker maakt.
+Met de Copernica publisher kun je hyperlink extensie niet alleen toepassen op individuele links, maar ook op (sub)domeinen. Hierdoor kun je bijvoorbeeld alle hyperlinks naar `enquetes.voorbeeld.nl` informatie meegeven om in te loggen, waardoor je informatie makkelijk aan profielen kan koppelen en je website meteen gebruiksvriendelijker maakt.
 
 Mocht je dit willen uitvoeren in de software open je eerst het "Hyperlinks uitbreiden" menu in de template editor. Hier kun je bij domein `enquetes.voorbeeld.nl` invullen. Vervolgens kun je bij "Extra parameters" bijvoorbeeld een parameter aanmaken met de naam "gebruikersnaam". Als je veld voor de gebruikersnaam dan "gebruikersnaam" heet in je database koppel je deze door `{$profile.gebruikersnaam}` in te vullen bij de waarde van de parameter.
 
@@ -71,6 +81,14 @@ De extra parameters zijn alle parameters die niet gebruikt worden door Google se
 
 Je kunt ook speciale links maken waarmee mensen een gepersonaliseerde webpagina zien. Lees hier meer over in [dit documentatieartikel](websites).
 
+Dit kan met zo'n link:
+
+```
+<a href="https://www.example.com?profile={$profile.id}&code={$profile.code}">
+    Ga naar deze website
+</a>
+```
+
 ## Met het oude link tracking systeem
 
 Het werkte vroeger net even wat anders waardoor er links niet werkten. Een e-mail wordt namelijk met het oude link tracking systeem op twee verschillende momenten gepersonaliseerd:
@@ -82,19 +100,20 @@ De smarty code uit het document is op dat moment dus al uitgevoerd, en niet meer
 
 Onderstaand voorbeeld zal wel werken wanneer je deze in Copernica test, maar in de verstuurde e-mail zal de ontvanger na het klikken op een blanco pagina terechtkomen, omdat de capture als is uitgevoerd.
 
-    {capture assign="url"}http://www.google.nl{/capture}<a href="{$url}">Ga naar google.nl</a> 
+``` 
+{capture assign="url"}http://www.google.nl{/capture}
+<a href="{$url}">
+    Ga naar google.nl
+</a>
+```
 
 Om de link te laten werken, moet de variabel dus ook in de link worden
 aangemaakt.
 
-    <a href="{capture assign="url"}http://www.google.nl{/capture}{$url}">Ga naar google.nl</a>
+```
+<a href="{capture assign="url"}http://www.google.nl{/capture}{$url}">
+    Ga naar google.nl
+</a>
+```
 
-Als je om redenen niet in iedere hyperlink een hele berg code wilt
-opnemen (bijvoorbeeld om de templatecode in zijn geheel overzichtelijk
-te houden) dan kan je ervoor kiezen geen kliks te registreren bij de
-e-mailing. Deze instelling vind je in het tabblad 'opties' in de tweede
-stap in het dialoogvenster om een bulkmailing te versturen. De ontvanger
-wordt bij het klikken op de link niet langer geredirect via onze
-picserver en de link wordt tegelijkertijd met het document
-gepersonaliseerd. Maar er worden geen kliks meer geregistreerd. Die
-afweging zal je moeten maken.
+Als je om redenen niet in iedere hyperlink een hele berg code wilt opnemen (bijvoorbeeld om de templatecode in zijn geheel overzichtelijk te houden) dan kan je ervoor kiezen geen kliks te registreren bij de e-mailing. Deze instelling vind je in het tabblad 'opties' in de tweede stap in het dialoogvenster om een bulkmailing te versturen. De ontvanger wordt bij het klikken op de link niet langer geredirect via onze picserver en de link wordt tegelijkertijd met het document gepersonaliseerd. Maar er worden geen kliks meer geregistreerd. Die afweging zal je moeten maken.
