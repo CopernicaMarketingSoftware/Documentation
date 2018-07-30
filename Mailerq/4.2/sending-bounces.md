@@ -88,7 +88,7 @@ will be sent on successful delivery as well as on failure.
 
 The bounce message holds a full delivery report, as well as the full original
 message. If you want to save a lot of network bandwidth, you can set the "ret" 
-property to the value "HDRS". By doing so, you instruct MTA's not to include 
+property to the value "HDRS". By doing so, you instruct MTAs not to include 
 the full MIME message in the status notification, but only the original MIME headers.
 
 The property "orcpt" is an optional property and holds the original
@@ -149,7 +149,7 @@ results to [log files](logging). These reporting methods are powerful,
 and easy to integrate. Most of the MailerQ users therefore do no let 
 MailerQ send out its own DSN messages back to the envelope address. The 
 only DSN messages that are normally sent back to your envelope address 
-are notifications from MTA's that initially accepted the mail.
+are notifications from MTAs that initially accepted the mail.
 
 However, MailerQ can be configured to send out DSN messages too. If you set
 up a RabbitMQ DSN queue (using the "rabbitmq-dsn" config file property),
@@ -169,7 +169,7 @@ in normal circumstances bounces are sent on failure.
 If you set the "rabbitmq-dsn" setting to an empty string (which is the
 default), no Delivery Status Notifications are sent by MailerQ. But MailerQ 
 does forward the DSN settings to the receiving MTA, so you could still 
-receive DSN's from MTA's further up the chain.
+receive DSNs from MTAs further up the chain.
 
 
 

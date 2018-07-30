@@ -284,7 +284,7 @@ to the outbox queue so that it will be picked up and delivered.
 However, if you want your DSN message to be sent by a separate MailerQ instance, or 
 if you want to process and filter the messages yourself (before sending them), you can 
 assign a different queue to be used for DSN messages. MailerQ will then not publish
-the DSN's to the normal outbox queue, but to this alternative queue instead. The
+the DSNs to the normal outbox queue, but to this alternative queue instead. The
 config file variable `rabbitmq-dsn` can be used for this:
 
 ````

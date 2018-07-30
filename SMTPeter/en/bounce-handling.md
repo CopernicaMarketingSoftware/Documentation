@@ -83,8 +83,8 @@ with these credentials will then have this feature turned on.
 ## Delivery Status Notifications
 
 A special type of bounce messages are Delivery Status Notifications,
-(in short: DSN's). Unlike many out-of-office replies and other type of
-bounces that are difficult to recognize for computers DSN's are 
+(in short: DSNs). Unlike many out-of-office replies and other type of
+bounces that are difficult to recognize for computers DSNs are 
 standardized automatically generated notifications that can be processed 
 by mail servers. SMTPeter recognizes these type of bounces too and logs 
 the reported errors. Because SMTPeter already recognizes such messages, 
@@ -175,7 +175,7 @@ out-of-office replies and other types of bounces. The "trackbounces"
 setting is also set to true, which means that SMTPeter is going to intercept,
 process and log all bounces and forward them to you. However, the DSN
 "notify" setting is set to "NEVER". This means that you're never going
-to receive Delivery Status Notifications. Such DSN's will be intercepted
+to receive Delivery Status Notifications. Such DSNs will be intercepted
 by SMTPeter and are not going to be forwarded to your address.
 
 If you're not interested in processing bounces at all, but you do want 

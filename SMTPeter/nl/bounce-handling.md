@@ -70,8 +70,8 @@ verzender.
 ## Aankomst Status Notificaties
 
 Een speciaal type bounce bericht is aankomst status notificatie van 
-DSN's. Veel bounce berichten zijn moeilijk te herkennen voor computers, 
-maar DSN's zijn gestandardizeerd en kunnen daarom verwerkt worden door 
+DSNs. Veel bounce berichten zijn moeilijk te herkennen voor computers, 
+maar DSNs zijn gestandardizeerd en kunnen daarom verwerkt worden door 
 e-mail servers. SMTPeter herkent dit type bounces en slaat de errors op. 
 Je kunt er daarom ook voor kiezen om deze niet daarnaast nog door te 
 laten sturen.
@@ -157,9 +157,9 @@ je e-mail.
 ```
 
 In het voorbeeld geef je wel een envelope adres mee om bounces te ontvangen. 
-De "trackbounces" variabele staat op waar zodat SMTPeter de DSN's kan loggen.
+De "trackbounces" variabele staat op waar zodat SMTPeter de DSNs kan loggen.
 De "notify" parameter binnen de DSN extensie staat op "NEVER" waardoor je 
-nooit DSN's ontvangt in je inbox.
+nooit DSNs ontvangt in je inbox.
 
 Als je zelf geen bounces wilt maar wel dat de errors worden opgeslagen 
 kun je het envelope adres weglaten en "trackbounces" op true zetten.

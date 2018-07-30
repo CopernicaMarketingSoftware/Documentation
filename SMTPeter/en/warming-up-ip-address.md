@@ -1,7 +1,7 @@
 # Warming up an IP address
 
 Sending a large number of emails immediately from a fresh new IP address, can get you
-deferred or blocked by ISP's such as outlook.com, gmail.com. This is mostly because a
+deferred or blocked by ISPs such as outlook.com, gmail.com. This is mostly because a
 new IP does not have a reputation score since email has not been sent from it yet.
 The reputation score is an indication of the trustworthiness of an email sender’s IP
 address and is used by email providers and filters to determine additional email
@@ -24,7 +24,7 @@ accept more email from your IP address because of the increasing reputation.
 
 ## Do I need to warm up my IP address?
 If you are a small sender, around 10,000 or less emails per month, you will most likely stay below
-the radar of ISP's. Then, there is no need to warm up an IP. But if you send more than 10,000 emails a month,
+the radar of ISPs. Then, there is no need to warm up an IP. But if you send more than 10,000 emails a month,
 you should consider warming up your IP address.
 
 ## First things first...

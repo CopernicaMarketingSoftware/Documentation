@@ -170,7 +170,7 @@ these messages before you move them to the outbox queue), you can set the
 published.
 
 If you do not explicitly set the `mailerq-bounces` variable, it will be set
-to the outbox queue, so that DSN's are normally sent.
+to the outbox queue, so that DSNs are normally sent.
 
 [Read more about how MailerQ handles bounces](sending-bounces)
 

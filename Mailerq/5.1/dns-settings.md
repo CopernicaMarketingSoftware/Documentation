@@ -2,7 +2,7 @@
 
 MailerQ relies on the DNS resolver functions that are standard installed on
 your system. The bad thing about these standard functions is that they are 
-not very good, and they were never intended for high performance MTA's that 
+not very good, and they were never intended for high performance MTAs that 
 do many DNS lookups at the same time. There is however also a nice thing about
 using the standard resolver functions: the DNS lookups of MailerQ return 
 exactly the same results as the lookups done by system utilities like telnet, 
