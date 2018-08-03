@@ -57,7 +57,7 @@ Language Transformations, zet de XML om naar markup voor de internet browser.
 
 Toepassingen van XSLT:
 
--   Alle titels binnen HTML header tags <h1> plaatsen
+-   Alle titels binnen HTML header tags `<h1>` plaatsen
 -   Een paragraaf binnen paragraaf tags plaatsen
 -   Een CSS class toekennen aan een afbeelding
 -   Informatie selecteren en structureren.
