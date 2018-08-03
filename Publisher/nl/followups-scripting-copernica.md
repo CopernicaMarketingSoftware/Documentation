@@ -7,7 +7,7 @@ zichtbaar.
 ## Beschikbare eigenschappen
 
 * data: een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. 
-Zie ook de documentatie over de [data eigenschap](./followups-scripting-data).
+Zie ook de documentatie over de [data eigenschap](./data-object-data).
 
 ## Beschikbare functies
 
@@ -29,7 +29,7 @@ var myDatabase = copernica.database(databaseName);
 ## Meer informatie
 
 * [Data-scripts](./followups-scripting)
-* [Data data-script](./followups-scripting-data)
-* [Profile data-script](./followups-scripting-profile)
+* [Data object](./data-object-data)
+* [Profile object](./followups-scripting-profile)
 * [Subprofile data-script](./followups-scripting-subprofile)
 * [Template data-script](./followups-scripting-template)
