@@ -56,6 +56,7 @@ met bestaande prefixes:
 
 | Prefix                                                 | Beschrijving                                                       |
 | ------------------------------------------------------ | -------------------------------------------------------------------|
+| [abuses log file](log-abuses "abuses log file")        | informatie over misbruikrapportages ontvangen door SMTPeter        |
 | [attempts log file](log-attempts "attempts log file")  | informatie over alle beschikbare mails verzonden met SMTPeter      |
 | [bounces log file](log-bounces "bounces log file")     | informatie over het aantal bounces                                 |
 | [clicks log file](log-clicks "clicks log file")        | informatie over het aantal kliks                                   |

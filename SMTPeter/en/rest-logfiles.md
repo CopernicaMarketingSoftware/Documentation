@@ -52,6 +52,7 @@ prefixes exist:
 
 | Prefix                                                | Description                                           |
 | ----------------------------------------------------- | ----------------------------------------------------- |
+| [abuses log file](log-abuses "abuses log file")       | information about abuse reports received by SMTPeter  |
 | [attempts log file](log-attempts "attempts log file") | information about all messages sent through SMTPeter  |
 | [bounces log file](log-bounces "bounces log file")    | information about messages that bounced               |
 | [clicks log file](log-clicks "clicks log file")       | information about the clicks generated                |
