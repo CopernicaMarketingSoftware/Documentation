@@ -1,4 +1,4 @@
-# WebHooks for clicks
+# Webhooks for clicks
 
 If you enable click-tracking, SMTPeter rewrites all hyperlinks in your emails.
 If someone clicks on one of these rewritten links that user first goes to
@@ -32,5 +32,5 @@ originally sent email message.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Set up a webhook](./webhook-setup)

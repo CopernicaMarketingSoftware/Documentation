@@ -1,4 +1,4 @@
-# WebHooks for failures
+# Webhooks for failures
 
 If you want to receive realtime notifications about failed deliveries,
 you can set up a failures webhook. You will receive notifications
@@ -47,5 +47,5 @@ calls:
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Set up a webhook](./webhook-setup)

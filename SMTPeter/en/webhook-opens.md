@@ -1,4 +1,4 @@
-# WebHooks for opens
+# Webhooks for opens
 
 SMTPeter can rewrite image links in emails to track opens. When an email
 is opened for which this option was set, the image will not be downloaded from your
@@ -29,5 +29,5 @@ originally sent email message.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Set up a webhook](./webhook-setup)
