@@ -7,7 +7,7 @@ zichtbaar.
 
 ## Beschikbare eigenschappen
 
-* data: zie de documentatie van [data data-script](./data-object-data)
+data: een geavanceerde eigenschap waarin je zelf meer informatie op kan slaan. Zie ook de documentatie over het [data object](./data-object-data)
 
 
 ## Beschikbare functies
