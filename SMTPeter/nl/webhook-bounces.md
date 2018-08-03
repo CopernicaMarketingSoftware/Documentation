@@ -1,10 +1,10 @@
-# WebHooks voor bounces
+# Webhooks voor bounces
 
 SMTPeter bewerkt normaal gesproken het *envelope* adres van alle e-mails
 die middels SMTPeter worden verstuurd. Dit wordt gedaan om *bounces* te
 traceren en ook om andere *events* te kunnen onderscheppen.
 Naast dat SMTPeter alles automatisch ontvangt, kan je er voor kiezen om
-zelf ook meldingen over *WebHooks* te ontvangen.
+zelf ook meldingen over *Webhooks* te ontvangen.
 
 
 ## Type meldingen
@@ -67,5 +67,5 @@ te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom",
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
-* [WebHookss instellen](./webhook-setup)
+* [Webhooks](./webhooks)
+* [Webhookss instellen](./webhook-setup)

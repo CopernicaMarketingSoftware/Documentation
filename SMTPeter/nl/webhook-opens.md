@@ -1,4 +1,4 @@
-# WebHooks voor opens
+# Webhooks voor opens
 
 SMTPeter kan ook de link van afbeeldingen herschrijven. Dit is handig, omdat
 de afbeelding dan niet wordt gedownload van je eigen server. SMTPeter zet de 
@@ -47,5 +47,5 @@ linken aan de originele verstuurde e-mail.
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
-* [WebHooks instellen](./webhook-setup)
+* [Webhooks](./webhooks)
+* [Webhooks instellen](./webhook-setup)

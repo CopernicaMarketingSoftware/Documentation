@@ -1,4 +1,4 @@
-# WebHooks voor kliks
+# Webhooks voor kliks
 
 SMTPeter kan alle *hyperlinks* in je e-mails herschrijven als je *click-tracking*
 toestaat. Op deze manier worden alle kliks van je gebruikers geregistreerd. Dit 
@@ -52,5 +52,5 @@ originele verstuurde e-mail.
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
-* [WebHooks instellen](./webhook-setup)
+* [Webhooks](./webhooks)
+* [Webhooks instellen](./webhook-setup)
