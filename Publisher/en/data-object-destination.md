@@ -1,12 +1,12 @@
-# Data object: destination variable
+# Data object: destination
 
-A variable that gives access to current emailing **destination**. This variable might
+An object that gives access to current emailing **destination**. This object might
 be either an alias to a [profile](./data-object-profile.md) or a
 [subprofile](./data-object-subprofile.md). It's set to a profile if
 emailing was sent to a database or selection. It's set to a subprofile if emailing
 was sent to a collection or mini-selection.
 
-You can edit the variable and its available properties from Javascript code 
+You can edit its available properties with Javascript code 
 or by editing the data-object of the profile/subprofile itself. You can edit 
 profile data with the stack icon when a (sub)profile is selected under "Database & Profiles".
 

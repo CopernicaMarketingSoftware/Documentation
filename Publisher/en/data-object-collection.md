@@ -1,7 +1,7 @@
-# Data object: collection variable
+# Data object: collection
 
 A **collection** is a subset of a [database](./data-object-database) and can be accessed in a data-script.
-To request a collection object please see the documentation on [the account object](./data-object-copernica).
+To request a collection object please see the documentation on [the copernica object](./data-object-copernica).
 
 ## Available properties
 

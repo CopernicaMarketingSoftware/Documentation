@@ -1,6 +1,6 @@
-# Data object: data variable
+# Data object: data
 
-The **data** variable is present on all [data-script objects](./data-object) 
+The **data** object is present on all [data-script objects](./data-object) 
 and can be used to store scalar information for your scripts, which is not 
 used by us. Therefore, it works similar to the fields parameters for a 
 profile and can store strings and numbers, but no arrays or objects. Every 
@@ -11,7 +11,7 @@ the same variable over multiple scripts.
 
 Let's say you have written an email to the user containing ten sale items 
 and you want to keep track of which items they clicked. In the following example 
-we'll show you a script (that you can put in the data-script environment) 
+we'll show you a script (that you can put in this data object) 
 to store a click on a specific item.
 
     profile.data.clickedSaleItem1 = "yes";

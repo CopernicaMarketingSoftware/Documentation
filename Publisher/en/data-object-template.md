@@ -1,6 +1,6 @@
-# Data object: template variable
+# Data object: template
 
-A variable that gives access to a unpersonalized **template**. 
+An object that gives access to an unpersonalized **template**. 
 
 You can edit the value of this variable and its properties under the "Tools" menu in 
 the email designer.

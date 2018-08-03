@@ -1,4 +1,4 @@
-# Data object: database variable
+# Data object: database
 
 A **database** linked to your account can be accessed in the data-scripts. 
 To request a database object please see the documentation on [the account object](./data-object-copernica)

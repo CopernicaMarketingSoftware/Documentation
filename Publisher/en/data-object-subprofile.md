@@ -1,6 +1,6 @@
-# Data object: subprofile variable
+# Data object: subprofile
 
-A variable that gives access to current **subprofile**. To request a 
+An object that gives access to current **subprofile**. To request a 
 subprofile object please see the documentation on [the account object](./data-object-copernica).
 
 You can edit the variable and its available properties from Javascript code 

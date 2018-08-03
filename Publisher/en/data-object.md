@@ -4,7 +4,7 @@ In Copernica software you can write your own Javascript code to embed in
 hyperlinks. If your Javascript is attached to a link the code is executed when the link is 
 clicked. It's similar to the "onlick" attribute, but your script will run 
 on Copernica servers. You can also write your own triggers and actions in the 
-[Marketing Suite follow-up editor](./follow-up-manager-ms).
+[Marketing Suite follow up editor](./follow-up-manager-ms).
 
 You can use your script by using:
 
@@ -22,7 +22,7 @@ the (sub)profile that clicked on the link and other relevant data.
 Each of these objects have read-only properties to get data, others have 
 write properties as well. The following variables are accessible:
 
-| Variable name                                 | Description
+| Object name                                   | Description
 |-----------------------------------------------|--------------------------------------|
 | [**copernica**](./data-object-copernica)      | Copernica account                    |
 | [**mailing**](./data-object-mailing)          | Previous mailing                     |
@@ -47,7 +47,7 @@ anymore. Note that this functionality is also available in the
 but this is a simple example to get you started. 
 
 ```html
-<a href="http://www.example.com" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
+<a href="http://www.example.com/unsubscribe" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 ```
 
 When the script is executed (on click) the profile will be updated. Now 

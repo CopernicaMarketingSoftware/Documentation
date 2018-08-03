@@ -1,6 +1,6 @@
-# Data object: message variable
+# Data object: message
 
-A variable that gives access to personalized **snapshot** of a template.
+An object that gives access to personalized **snapshots** of a template.
 
 ## Available properties
 

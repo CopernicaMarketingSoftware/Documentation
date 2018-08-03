@@ -1,6 +1,6 @@
-# Data object: mailing variable
+# Data object: mailing
 
-The **mailing** variable can also be accessed in the data-script object. From 
+The **mailing** object can also be accessed in the data-script object. From 
 a mailing object you can access its properties, but not edit them.
 
 ## Available properties

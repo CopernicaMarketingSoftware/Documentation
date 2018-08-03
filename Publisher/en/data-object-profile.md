@@ -1,8 +1,8 @@
-# Data object: profile variable
+# Data object: profile
 
 In the data-script object you can access information about any **profile**. 
 From a profile object you request and edit the information of the current 
-profile. To request a profile object please see the documentation on [the account object](./data-object-copernica).
+profile. To request a profile object please see the documentation on [the copernica object](./data-object-copernica).
 
 You can edit the variable and its available properties from Javascript code 
 or with the stack icon when a profile is selected under the *Database & Profiles* 

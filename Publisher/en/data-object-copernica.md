@@ -1,4 +1,4 @@
-# Data object: copernica variable
+# Data object: copernica
 
 The **copernica** variable is linked to the account registered with 
 Copernica. It is available in the data-script object and provides access 
