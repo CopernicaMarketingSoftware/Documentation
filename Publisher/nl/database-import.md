@@ -103,7 +103,10 @@ terughalen van profieldata kan alleen per individueel profiel met de rollback
 functie. Eventueel kun je Copernica vragen om een back-up van 
 de database terug te zetten. Hieraan zijn meestal wel kosten verbonden.
 
-## Meer informatie 
+## Importeren Marketing Suite
+Klik op de database of collectie waar de import gestart voor dient te worden. Klik op het **blauwe tandwiel** rechtsboven > **Importeren** > **Nieuwe import aanmaken**. Geef de import een naam, kies het juiste scheidingsteken en upload het bestand. Kies vervolgens de juiste opties zoals hierboven beschreven. 
 
-* [Database beheer](./database-introduction)
-* [Database exporteren](./database-export)
+## Importeren Publisher
+Om een bestand te importeren dien je eerst een database te selecteren onder **Profielen**. Je kunt daarna onder **Huidige weergave** de optie vinden om te **exporteren of importeren**.
+
+
