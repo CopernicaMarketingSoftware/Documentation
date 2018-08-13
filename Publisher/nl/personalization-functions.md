@@ -25,7 +25,7 @@ van: de link naar de webversie hoef je natuurlijk alleen te tonen in de mail,
 en nooit in de webversie zelf.
 
 
-## Beschikbare functies
+## Beschikbare functies in de Publisher
 
 Er zijn heel veel functies standaard in Smarty, en een paar functies zijn
 specifiek voor Copernica. Hieronder zie je alle beschikbare functies:       
