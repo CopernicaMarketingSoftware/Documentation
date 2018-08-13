@@ -95,7 +95,7 @@ If the smarty code from the document has already been executed, than it is no lo
 The example below does not work with our old link tracking system. The hyperlink will end up empty and will direct you to a blank page after you clicked it, because the capture has been executed a long time ago.
 
 ```html
-{capture assign = "url"}http://www.google.nl{/ capture}
+{capture assign ="url"}http://www.google.nl{/ capture}
 <a href="{$url}">
     Go to google.com
 </a>
