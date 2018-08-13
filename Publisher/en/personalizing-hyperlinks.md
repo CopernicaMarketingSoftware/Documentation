@@ -10,7 +10,7 @@ There are many applications for expanding hyperlinks. Examples are:
 
 - *Track website traffic*: Every link has its source, for example from social media, from an email campaign or from a search engine. By extending the hyperlink with a utm_source you can keep track of how people end up on your website.
 - *Automatic login*: If a user clicks on a personalized link from your email. 
-- *Google Analytics *: With Google Analytics you can gain insight into your website traffic from campaigns, advertisements and mailings. By expanding hyperlinks you can pass on more information to this service to further enrich your data.
+- *Google Analytics*: With Google Analytics you can gain insight into your website traffic from campaigns, advertisements and mailings. By expanding hyperlinks you can pass on more information to this service to further enrich your data.
 
 ## Google analytics UTM tracking code
 
@@ -33,13 +33,17 @@ With the new link tracking system, all links are adjusted at the last moment. In
 It is also possible to store a complete URL in a database field in a profile or sub-profile.
 
 ```html
-<a href="{$profile.url}"> Go to website </a>
+<a href="{$profile.url}">
+  Go to website
+</a>
 ```
 
 Or in a text block:
 
 ```html
-<a href="[text name='mylink']"> </a>
+<a href="[text name='mylink']">
+  Go to website
+</a>
 ```
 
 ### A URL in a subprofile
@@ -47,23 +51,23 @@ Or in a text block:
 If you send a mailing to a profile, and you want to personalize the URL with data from a sub-profile under this profile, you use the loadsubprofile function, for example:
 
 ```html
-<a href="{loadsubprofile source='databasename :collectionname' assign=ls profile=$profile.id}{$ls.url}">
-Go to your personal page
+<a href="{loadsubprofile source='databasename:collectionname' assign=ls profile=$profile.id}{$ls.url}">
+  Go to your personal page
 </a>
 ```
 
 ### Apply settings to different domains
 
-With the Copernica Publisher you can extent hyperlinks not only to individual links, but also to (sub) domains. This allows you, for example, to provide all hyperlinks to `form.example.com 'to log in, so that you can easily link information to profiles and make your website more user-friendly.
+With the Copernica Publisher you can extent hyperlinks not only to individual links, but also to (sub) domains. This allows you, for example, to provide all hyperlinks to `form.example.com` 'to log in, so that you can easily link information to profiles and make your website more user-friendly.
 
-If you want to do this in the software, first open the "Expand Hyperlinks" menu in the template editor. Here you can fill in domain `surveys.example.com`. You can then create a parameter with the name "username" under "Extra parameters". If your field for the username is called "username" in your database, you can add it by entering `{$ profile.username}` in the value of the parameter.
+If you want to do this in the software, first open the "Expand Hyperlinks" menu in the template editor. Here you can fill in domain `surveys.example.com`. You can then create a parameter with the name "username" under "Extra parameters". If your field for the username is called "username" in your database, you can add it by entering `{$profile.username}` in the value of the parameter.
 
-If you have multiple domains you can use a so-called wildcard ('\ *' symbol) to indicate which domains must be matched. For example, `* .example.com` matches all subdomains of` example.nl`. There are, however, a number of rules:
+If you have multiple domains you can use a so-called wildcard ('\ *' symbol) to indicate which domains must be matched. For example, `*.example.com` matches all subdomains of `example.nl`. There are, however, a number of rules:
 
-- Only a wildcard may occur.
-- The wildcard can only be the first character and matches a full name.
+- Only one wildcard may occur.
+- The wildcard can only be the first character and has to match a full name.
 
-This means that `*. *. Domain.nl`,` subsubdomein. *. Domain.nl`, `* iets.domain.nl` are not valid, but` * .subdomain.domein.nl` for example does.
+This means that `*.*.domain.nl`,` subdomain.*.Domain.nl`, `*something.domain.nl` are not valid, but `*.subdomain.domain.com` is valid.
 
 ### Additional parameters
 
@@ -95,7 +99,7 @@ The example below does not work with our old link tracking system. The hyperlink
 <a href="{$url}">
     Go to google.com
 </a>
-`` `
+```
 
 To make the link work, the variable must be included in the link.
 
