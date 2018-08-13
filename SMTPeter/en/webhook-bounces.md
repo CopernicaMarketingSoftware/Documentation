@@ -1,4 +1,4 @@
-# WebHooks for bounces
+# Webhooks for bounces
 
 SMTPeter normally modifies the envelope address of all mails that flow
 through it to track bounces and other messages that are sent back. All
@@ -73,5 +73,5 @@ and "data" fields hold the message that was received by SMTPeter.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 * [Set up a webhook](./webhook-setup)

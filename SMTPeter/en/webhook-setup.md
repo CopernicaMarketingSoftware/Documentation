@@ -1,6 +1,6 @@
-# Setting up a WebHook
+# Setting up a Webhook
 
-WebHooks can be set up via the SMTPeter dashboard. The interface
+Webhooks can be set up via the SMTPeter dashboard. The interface
 is very straight forward: you enter a feedback URL (for example:
 "https://www.yourwebsite.com/path/to/your/script.php") and the type
 of webhook that you want to set up (clicks, bounces, and so on). 
@@ -34,6 +34,6 @@ SMTPeter will send it to your script right away, so you can test it.
 
 ## More information
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)
 
 

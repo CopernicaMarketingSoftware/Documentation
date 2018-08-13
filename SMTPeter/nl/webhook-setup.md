@@ -1,6 +1,6 @@
-# WebHooks aanmaken
+# Webhooks aanmaken
 
-*WebHooks* kunnen worden aangemaakt via het SMTPeter dashboard.
+*Webhooks* kunnen worden aangemaakt via het SMTPeter dashboard.
 Allereerst voer je een feedback URL in:
 
 ```text
@@ -53,4 +53,4 @@ dat de webhook loop klaar voor gebruik is!
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
+* [Webhooks](./webhooks)

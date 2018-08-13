@@ -1,12 +1,12 @@
-# WebHooks
+# Webhooks
 
-SMTPeter maakt het mogelijk om *WebHooks* aan te maken, die voorheen feedback loops werden genoemd. 
+SMTPeter maakt het mogelijk om *Webhooks* aan te maken, die voorheen feedback loops werden genoemd. 
 Deze webhooks kunnen worden gebruikt om live *event* notificaties te ontvangen. Elke keer wanneer 
 er iets gebeurt op de servers van SMTPeter (zoals bijvoorbeeld een *bounce*, *failed delivery* 
 of een link-click), krijg je een melding.
 
 De feedback wordt verstuurd over het HTTP of HTTPS protocol door middel van 
-het HTTP POST mechanisme. Tijdens het [aanmaken van een webhook](webhook-setup "WebHooks aanmaken") 
+het HTTP POST mechanisme. Tijdens het [aanmaken van een webhook](webhook-setup "Webhooks aanmaken") 
 registreer je een web adres en geef je aan welke events moeten worden aangeleverd.
 SMTPeter begint met het maken van calls als de URL is gevalideerd.  
 
@@ -15,7 +15,7 @@ SMTPeter begint met het maken van calls als de URL is gevalideerd.
 
 Voordat je begint met het aanmaken van een webhook, is het handig om te checken of
 je server de lading van de processen aankan. Zeker wanneer de webhook wordt 
-aangeroepen als [iemand een e-mail opent](webhook-opens "WebHooks voor opens"), aangezien hier vaak een grote
+aangeroepen als [iemand een e-mail opent](webhook-opens "Webhooks voor opens"), aangezien hier vaak een grote
 hoeveelheid calls mee gemoeid is.
 
 Vind je deze optie op dit moment te gevaarlijk voor je servers of heb je geen live events
@@ -28,7 +28,8 @@ Echter, met de REST API hou je de controle en bepaal je zelf welke data je wilt 
 
 De volgende webhooks kunnen worden gebruikt:
 
-* [WebHooks voor bounces](webhook-bounces "WebHooks voor bounces")
-* [WebHooks voor failures](webhook-failures "WebHooks voor failures")
-* [WebHooks voor clicks](webhook-clicks "WebHooks voor kliks")
-* [WebHooks voor opens](webhook-opens "WebHooks voor opens")
+* [Webhooks voor bounces](webhook-bounces "Webhooks voor bounces")
+* [Webhooks voor failures](webhook-failures "Webhooks voor failures")
+* [Webhooks voor clicks](webhook-clicks "Webhooks voor kliks")
+* [Webhooks voor opens](webhook-opens "Webhooks voor opens")
+* [Webhooks voor abuses](webhook-abuses "Webhooks voor abuses")

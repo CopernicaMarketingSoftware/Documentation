@@ -1,7 +1,7 @@
-# WebHooks
+# Webhooks
 
-SMTPeter allows you to set up WebHooks, previously named Feedback Loops. 
-These WebHooks can be 
+SMTPeter allows you to set up Webhooks, previously named Feedback Loops. 
+These Webhooks can be 
 used to receive realtime event notifications. Every time when something happens
 on the SMTPeter servers (like an incoming bounce, a failed  delivery or 
 when someone clicks on a link), SMTPeter makes a call to your server to 
@@ -29,7 +29,8 @@ stay in control and you decide when to fetch the data.
 
 The following webhooks can be used:
 
-* [WebHooks for bounces](webhook-bounces)
-* [WebHooks for failures](webhook-failures)
-* [WebHooks for clicks](webhook-clicks)
-* [WebHooks for opens](webhook-opens)
+* [Webhooks for bounces](webhook-bounces)
+* [Webhooks for failures](webhook-failures)
+* [Webhooks for clicks](webhook-clicks)
+* [Webhooks for opens](webhook-opens)
+* [Webhooks for abuses](webhook-abuses)

@@ -1,4 +1,4 @@
-# WebHooks voor failures
+# Webhooks voor failures
 
 Het is mogelijk om live notificaties te ontvangen over *failed deliveries*.
 Je kunt dit doen door een *feedack loop* op te zetten voor deze vorm van
@@ -26,7 +26,7 @@ waarin bounces worden gemeld.
 
 Je kunt alsnog alle bounces ontvangen als je dat wilt. Zelfs degene die we niet
 hebben getraceerd met de failures webhook. 
-In dat geval kun je additioneel een [webhook opzetten voor bounces](webhook-bounces "WebHooks voor bounces").
+In dat geval kun je additioneel een [webhook opzetten voor bounces](webhook-bounces "Webhooks voor bounces").
 
 
 ## Formaat
@@ -64,5 +64,5 @@ calls:
 
 ## Meer informatie
 
-* [WebHooks](./webhooks)
-* [WebHooks instellen](./webhook-setup)
+* [Webhooks](./webhooks)
+* [Webhooks instellen](./webhook-setup)
