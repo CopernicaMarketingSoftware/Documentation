@@ -1,6 +1,6 @@
 # Webhooks for abuses
 
-In any email clients, it is possible to mark a received email as spam. If a 
+In email clients, it is possible to mark a received email as spam. If a 
 receiver of you email does so, and his/hers client supports this, SMTPeter will
 receive an *abuse report* of this. In this report, it is described about which
 email the receiver is complaining.
