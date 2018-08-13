@@ -20,7 +20,7 @@ about reading in [this article](https://support.google.com/analytics/answer/1033
 
 ## Expand hyperlinks in the Marketing Suite
 
-You can personalize hyperlinks in the marketing suite. This goes by domain. You can indicate per domain whether you want to use tracking codes for Google Analytics or not. You can use both personalization in the parameters and in the value.
+You can personalize hyperlinks in the marketing suite. You can indicate per (sub)domain whether you want to use tracking codes for Google Analytics or not. You can use both personalization in the parameters and in the value.
 
 ## Expand hyperlinks in the Publisher
 
