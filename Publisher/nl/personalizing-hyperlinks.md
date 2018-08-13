@@ -21,7 +21,7 @@ over lezen in [dit artikel](https://support.google.com/analytics/answer/1033173?
 
 ## Hyperlinks uitbreiden in de Marketing suite
 
-Je kunt hyperlinks gepersonaliseerd uitbreiden in de marketing suite. Dit gaat per domein. Per domein kun je aangeven of je tracking codes wilt gebruiken voor Google Analytics of niet. Je kunt zowel personalisatie gebruiken in de parameters als in de waarde.
+Je kunt hyperlinks gepersonaliseerd uitbreiden in de marketing suite. Per (sub)domein kun je aangeven of je tracking codes wilt gebruiken voor Google Analytics of niet. Je kunt zowel personalisatie gebruiken in de parameters als in de waarde.
 
 ## Hyperlinks uitbreiden in de Publisher
 
