@@ -33,6 +33,6 @@ various clients** function on the bottom right of the screen.
 
 Marketing Suite uses a user-friendly drag 'n drop editor that can be 
 used to create beautiful templates that are stored in JSON format to create 
-responsive emails. Therefore Litmus is not needed here. You can click the 
+responsive emails. You can click the 
 **Template preview** button under **Tools** to see your mail on different 
 devices. 
