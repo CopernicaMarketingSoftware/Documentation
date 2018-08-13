@@ -63,6 +63,8 @@ van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 {$profile.collectie[$profile.collectie|count -1].veldnaam}
 ```
 
+### De foreach functie
+
 Om alle subprofielen weer te geven kun je een foreach functie gebruiken.
 
 ```text
@@ -81,13 +83,33 @@ in combinatie met de foreach functie.
 {/foreach}
 ```
 
+Als er geen subprofiel bestaat kun je automatisch iets anders laten zien.
+
+```text
+{foreach $item in $profile.collectie}
+Als er subprofielen zijn
+{foreachelse}
+Als er geen subprofielen zijn
+{/foreach}
+```
+
+## Variabelen opslaan
+
+Je kunt ook variabelen opslaan. Dit kan bijvoorbeeld handig zijn als je een template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
+
+{$name = $profile.firstName}
+
+Beste {$name}
+
+{$foo = 'helo'}
+
 ## Personaliseren van hyperlinks
 
 Hyperlinks in e-mailings kunnen worden aangevuld met gegevens uit een profiel
 of subprofiel. Een voorbeeld hiervan zijn de unieke inloggegevens
 ($profile.id en $profile.code) die je in de hyperlink meestuurt,
 zodat relaties automatisch worden ingelogd als zij vanuit een e-mail
-naar een webpagina klikken.
+naar een webpagina klikken. [Meer info kun je hier vinden](personalizing-hyperlinks).
 
 ```text
 https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
