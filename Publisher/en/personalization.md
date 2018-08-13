@@ -1,7 +1,7 @@
 # Personalization
 
 The Marketing Suite and Publisher let you personalize emails in an easy way.
-Just incorporate a little piece of code in your e-mail. When sent, the code gets
+Just incorporate a little piece of code in your email. When sent, the code gets
 compiled and substitutes the code with the correct credentials of the receiver.
 By clicking on the links below, you'll find out how to personalize your emails
 in the Marketing Suite as well as the Publisher:
@@ -30,7 +30,7 @@ Dear {$profile.firstname}
 ```
 
 With this syntax, every piece of data from a database
-or collection field can be put inside an e-mail. When sent,
+or collection field can be put inside an email. When sent,
 this code gets evaluated and substituted by the field value 
 in the profile of the receiver.
 
@@ -62,6 +62,8 @@ Because we start from zero we have to subtract one of the total amount of rows.
 {$profile.collection[{$profile.collection|count -1].fieldname}
 ```
 
+### The foreach function
+
 To display all subprofiles you can use a foreach function.
 
 ```text
@@ -76,6 +78,39 @@ If you do not want to display all fields you can use the if function in combinat
 {foreach $item in $profile.collection}{if $item.status == "InShoppingCart"}
 {$item.fieldname}
 {/if}{/foreach}
+```
+
+If there aren't any subprofiles you can automatically show different content.
+
+```text
+{foreach $item in $profile.collection}
+If there are subprofiles
+{foreachelse}
+If there aren't’ any subprofiles
+{/foreach}
+```
+
+## Variables
+
+You can also use variables. This can be useful, for example, if you have created a template that suddenly has to use other database fields.
+
+```
+{$name = $profile.firstName}
+
+Dear {$name}
+```
+
+You can also store text in a variable.
+```
+{$foo = 'hello'}
+{$foo}
+```
+
+And you can calculate:
+
+```
+{$total = $profile.product_price * $profile.product_qty}
+{$total}
 ```
 
 ## Personalizing hyperlinks
@@ -112,3 +147,6 @@ in the articles below.
 
 * [Videos and GIFs](./templates-video-gif)
 * [Follow-ups](./followups)
+
+
+
