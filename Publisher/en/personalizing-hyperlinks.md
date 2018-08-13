@@ -34,7 +34,7 @@ It is also possible to store a complete URL in a database field in a profile or 
 
 ```html
 <a href="{$profile.url}">
-  Go to website
+    Go to website
 </a>
 ```
 
@@ -42,7 +42,7 @@ Or in a text block:
 
 ```html
 <a href="[text name='mylink']">
-  Go to website
+    Go to website
 </a>
 ```
 
@@ -52,7 +52,7 @@ If you send a mailing to a profile, and you want to personalize the URL with dat
 
 ```html
 <a href="{loadsubprofile source='databasename:collectionname' assign=ls profile=$profile.id}{$ls.url}">
-  Go to your personal page
+    Go to your personal page
 </a>
 ```
 
@@ -79,7 +79,7 @@ This can be done with such a link:
 
 ```html
 <a href="https://www.example.com?profile={$profile.id}&code={$profile.code}">
-  Go to this website
+    Go to this website
 </a>
 ```
 
@@ -95,7 +95,7 @@ If the smarty code from the document has already been executed, than it is no lo
 The example below does not work with our old link tracking system. The hyperlink will end up empty and will direct you to a blank page after you clicked it, because the capture has been executed a long time ago.
 
 ```html
-{capture assign = "url"} http://www.google.nl {/ capture}
+{capture assign = "url"}http://www.google.nl{/ capture}
 <a href="{$url}">
     Go to google.com
 </a>
