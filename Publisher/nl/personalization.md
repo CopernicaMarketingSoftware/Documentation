@@ -98,17 +98,18 @@ Als er geen subprofielen zijn
 Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
 
 ```
-{$name = $profile.firstName}
+{$naam = $profile.voornaam}
 
-Beste {$name}
+Beste {$naam}
 ```
 
 Verder kun je ook tekst opslaan in een variabele.
 ```
 {$foo = 'hello'}
+{$foo}
 ```
 
-En je kunt rekenen:
+En je kunt ook rekenen:
 
 ```
 {$totaal = $profile.product_price * $profile.product_qty}
