@@ -20,7 +20,7 @@ tags will not be rendered. In the above example we cleverly use the {mailonly}
 block to hide the web version link if the user already views the mail in his
 or her browser.
     
-## Available functions
+## Available functions in the Publisher
 
 The list of available functions is long. There are a lot of functions that 
 are built-in Smarty functions, and a number of Copernica-only functions:
