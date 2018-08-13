@@ -93,15 +93,27 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-## Variabelen opslaan
+## Variabelen
 
-Je kunt ook variabelen opslaan. Dit kan bijvoorbeeld handig zijn als je een template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
+Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
 
+```
 {$name = $profile.firstName}
 
 Beste {$name}
+```
 
-{$foo = 'helo'}
+Verder kun je ook tekst opslaan in een variabele.
+```
+{$foo = 'hello'}
+```
+
+En je kunt rekenen:
+
+```
+{$totaal = $profile.product_price * $profile.product_qty}
+{$totaal}
+```
 
 ## Personaliseren van hyperlinks
 
