@@ -92,7 +92,9 @@ If there aren't’ any subprofiles
 
 ## Variables
 
-You can also use variables. This can be useful, for example, if you have created a template that suddenly has to use other database fields.
+You can also use variables. This can be useful, for example, if you have created a template that suddenly has to use other database fields. 
+
+First you have to define a variable. Then you can use this variable.
 
 ```
 {$name = $profile.firstName}
