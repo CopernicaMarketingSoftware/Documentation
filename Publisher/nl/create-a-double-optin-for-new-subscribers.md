@@ -145,7 +145,6 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 ## Meer informatie
 
-* [Selectie condities](./database-selections-introduction)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
 * [Tutorial: Email bounces afhandelen](./automatically-process-bounces)

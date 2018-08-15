@@ -44,7 +44,6 @@ meer verstuurd zal worden.
     
 ## Meer informatie
 
-* [Selectie condities](./database-selections-introduction)
 * [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
