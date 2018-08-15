@@ -8,14 +8,14 @@ mogelijk voor je maken.
 
 ## GDPR/AVG
 
-De GDPR (General Data Protection Regulation), ook wel AVG (Algemene Verordening Gegevensbescherming) 
-geheten in het Nederlands, beschermt de data van de staatsburgers van de 
-Europese Unie. Mensen hebben het recht om te weten welke persoonlijke 
-gegevens van hen opgeslagen worden en moeten deze kunnen corrigeren. 
-Daarnaast moet alle data opgeslagen door organisaties relevant zijn voor het 
-doel van deze organisatie en moet de data ook binnen redelijke tijd verwijderd 
-worden wanneer deze niet relevant meer is. Als klant van Copernica moet je 
-uiteraard aan deze regulaties voldoen.
+De GDPR (General Data Protection Regulation), ook wel AVG (Algemene Verordening 
+Gegevensbescherming) geheten in het Nederlands, beschermt de data van de 
+staatsburgers van de Europese Unie. Mensen hebben het recht om te weten welke 
+persoonlijke gegevens van hen opgeslagen worden en moeten deze kunnen 
+corrigeren. Daarnaast moet alle data opgeslagen door organisaties relevant zijn 
+voor het doel van deze organisatie en moet de data ook binnen redelijke tijd 
+verwijderd worden wanneer deze niet relevant meer is. Als klant van Copernica 
+moet je uiteraard aan deze regulaties voldoen.
 
 ## Persoonlijke data opvragen 
 

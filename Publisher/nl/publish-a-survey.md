@@ -10,8 +10,7 @@ De invoegtag ziet er alsvolgt uit:
 De tag kan je zowel gebruiken in de template HTML code, als in een
 tekstblok in het document.
 
-Extra opties
-------------
+## Extra opties
 
 Deze functionaliteit heeft één extra optie: **xslt=**
 

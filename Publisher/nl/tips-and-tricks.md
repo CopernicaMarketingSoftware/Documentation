@@ -28,7 +28,6 @@ artikelen geven we je tips. Verder in dit artikel vind je ook tutorials
 voor enkele selecties.
 
 * [Database schoonhouden](./database-maintenance)
-* [Voorkom database corruptie](./prevent-database-corruption)
 * [Selecties optimalizeren en sneller maken](./selections-optimization)
 
 ## Sender domains

@@ -1,21 +1,18 @@
 # Personaliseren met behulp van multidimensionale databases
 
-Als je extra gegevens aan een
-[profiel](./introduction-to-databases.md "Personaliseren met behulp van multidimensionale databases")
-wilt koppelen, welke aankopen iemand heeft gedaan in je webshop
-bijvoorbeeld, kun je dat het makkelijkst doen door gebruik te maken van
-een [multidimensionale
-database](./creating-your-own-databases.md).
+Als je extra gegevens aan een [profiel](./database-introduction "Databasebeheer")
+wilt koppelen, welke aankopen iemand heeft gedaan in je webshop bijvoorbeeld, 
+kun je dat het makkelijkst doen door gebruik te maken van een multidimensionale 
+database.
 
-In Copernica hoeven profielgegevens daarom niet perse in een platte
-structuur te worden opgeslagen (bijvoorbeeld naam, e-mailadres,
-woonplaats), maar kunnen ze ook multidimensionaal worden bewaard.
-Voorheen kon dit alleen door voor elke dimensie een collectie (een
-verzameling van gegevens of ‘subprofielen’ die gekoppeld zijn aan een
-profiel) aan te maken in de database. Nu heb je echter ook de
-mogelijkheid gegevens uit verschillende databases aan elkaar koppelen,
-waardoor het gebruik van de door veel gebruikers als lastig ervaren
-collecties niet meer nodig is.
+In Copernica hoeven profielgegevens daarom niet perse in een platte structuur 
+te worden opgeslagen (bijvoorbeeld naam, e-mailadres, woonplaats), maar kunnen 
+ze ook multidimensionaal worden bewaard. Voorheen kon dit alleen door voor elke 
+dimensie een collectie (een verzameling van gegevens of ‘subprofielen’ die 
+gekoppeld zijn aan een profiel) aan te maken in de database. Nu heb je echter 
+ook de mogelijkheid gegevens uit verschillende databases aan elkaar koppelen, 
+waardoor het gebruik van de door veel gebruikers als lastig ervaren collecties 
+niet meer nodig is.
 
 In e-mailings kun je vervolgens personaliseren op basis van die
 verschillende databases.
@@ -35,8 +32,7 @@ deze tutorial houden we bedrijven en werknemers aan.
 -   Een database met *Medewerkers* waar bij elke medewerker de naam en
     het e-mailadres wordt opgeslagen.
 
-Hoe richt je een dergelijke database in?
-----------------------------------------
+## Hoe richt je een dergelijke database in?
 
 Als je wilt bijhouden welke medewerkers een bedrijf heeft, doe je dat
 niet door een extra veld aan te maken in de bedrijvendatabase, maar
@@ -50,33 +46,31 @@ referentieveld *Werkgever* dat je laat verwijzen naar de database
 
 We kunnen onze databases dan vullen met de volgende gegevens:
 
-**Database *Bedrijven*** \
- ID 1, bedrijfsnaam: Initech \
+**Database *Bedrijven**
+ ID 1, bedrijfsnaam: Initech 
  ID 2, bedrijfsnaam: Intertrode
 
-**Database *Medewerkers***\
- ID 1, naam: Milton Waddams, werkgever: 1\
- ID 2, naam: Peter Gibbons, werkgever: 1\
+**Database *Medewerkers**
+ ID 1, naam: Milton Waddams, werkgever: 1
+ ID 2, naam: Peter Gibbons, werkgever: 1
  ID 3, naam: Michael Bolton, werkgever: 2
 
 Omdat bij het inrichten van de database is ingesteld dat *Werkgever* een
 referentieveld is, weet de software nu dat Milton en Peter bij Initech
 werken, en Michael bij Intertrode.
 
-Personaliseren
---------------
+## Personaliseren
 
 Hoe kun je hier nu op personaliseren? Veronderstel dat je een mailing
 wilt sturen aan alle medewerkers. In de mailing wil je personaliseren op
 naam van de medewerker, en het bedrijf waar ze voor werken.
 
-    Beste {$naam},
-    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam}.
+```
+Beste {$profile.naam},
+Volgens onze gegevens werk je bij bedrijf {$profile.werkgever.bedrijfsnaam}.
+```
 
-In bovenstaand voorbeeld maken we gebruik van de korte notatie, maar je
-zou ook kunnen personaliseren met {$profile.naam} en
-{$profile.werkgever.bedrijfsnaam}. Hoe dan ook: het is eenvoudig. Omdat
-is aangegeven dat *werkgever* een referentieveld is, worden automatisch
+Omdat is aangegeven dat *werkgever* een referentieveld is, worden automatisch
 alle gegevens van het profiel waarnaar wordt verwezen in die variabele
 ingeladen.
 
@@ -96,7 +90,7 @@ databases en welke andere profielen er naar een bedrijf verwijzen, heeft
 elk profiel voortaan standaard ook een referentieveld. Via dit veld kun
 je opvragen welke verwijzende profielen er zijn:
 
-Mailing aan bedrijf {$bedrijfsnaam},
+Mailing aan bedrijf {$profile.bedrijfsnaam},
 
     Dit zijn jullie medewerkers:
     {foreach $referrers.medewerkers as $medewerker}
@@ -109,15 +103,14 @@ variabele {$profile.referrers} bevat alle databases die verwijzen naar
 het profiel, en via {$profile.referrers.*databasenaam*} kun je door die
 verwijzende profielen heen itereren.
 
-Nog een stap verder
--------------------
+## Nog een stap verder
 
 De volgende uitdaging: we willen nu een mailing sturen naar alle
 medewerkers, en bij elke medewerker willen we opnieuw melden bij welk
 bedrijf hij werkt, maar ook wie er volgens ons zijn of haar collega's
 zijn:
 
-    Beste {$naam},
+    Beste {$profile.naam},
 
     Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam}.
 
@@ -157,37 +150,39 @@ zien dat ze één collega hebben.
 Meerdere referentievelden
 -------------------------
 
-We gaan nog een stap verder. In de database *Medewerkers*was er maar een
+We gaan nog een stap verder. In de database *Medewerkers* was er maar een
 referentieveld opgenomen: het veld *werkgever*. Wat gebeurt er als er
 meerdere referentievelden zijn? Bijvoorbeeld niet alleen een veld
-*werkgever*, maar ook een veld *vorige\_werkgever* dat ook naar de
+*werkgever*, maar ook een veld *vorige_werkgever* dat ook naar de
 database *Bedrijven* verwijst? In een mailing naar de medewerkers kun je
-beide velden natuurlijk gewoon gebruiken met {$werkgever.bedrijfsnaam}
-en {$vorige\_werkgever.bedrijfsnaam}. Maar wat gebeurt er als je
-{$werkgever.referrers.medewerkers} aanroept?
+beide velden natuurlijk gewoon gebruiken met {$profile.werkgever.bedrijfsnaam}
+en {$profile.vorige_werkgever.bedrijfsnaam}. Maar wat gebeurt er als je
+{$profile.werkgever.referrers.medewerkers} aanroept?
 
-De variabele {$referrers.medewerkers} bevat alle verwijzingen vanuit de
+De variabele {$profile.referrers.medewerkers} bevat alle verwijzingen vanuit de
 database *Medewerkers* - dus ongeacht welk referentieveld je gebruikt.
 We moeten dus ons volgende voorbeeld een beetje aanpassen, omdat we
 alleen de huidige collega's willen vermelden. Dat kan door precies aan
 te geven op basis van welk referentieveld je wilt selecteren:
 
-    Beste {$naam},
+```
+Beste {$profile.naam},
 
-    Volgens onze gegevens werk je bij bedrijf
-    {$werkgever.bedrijfsnaam}.
+Volgens onze gegevens werk je bij bedrijf
+{$profile.werkgever.bedrijfsnaam}.
 
-    {if $werkgever.referrers["werkgever@medewerkers"]|count > 1}
+{if $profile.werkgever.referrers["werkgever@medewerkers"]|count > 1}
     En dit zijn je collega's:
-    {foreach from=$werkgever.referrers["werkgever@medewerkers"] item=collega}
-        {if $collega.id != $id}
-            {$collega.naam}
-        {/if}
-    {/foreach}
+{foreach from=$profile.werkgever.referrers["werkgever@medewerkers"] item=collega}
+    {if $collega.id != $id}
+        {$collega.naam}
     {/if}
+{/foreach}
+{/if}
+```
 
-Zo simpel is het. Normaal gesproken bevat {$referrers.medewerkers} (of
-{$referrers["medewerkers"] - je kunt dat in Smarty op meerdere manieren
+Zo simpel is het. Normaal gesproken bevat {$profile.referrers.medewerkers} (of
+{$profile.referrers["medewerkers"] - je kunt dat in Smarty op meerdere manieren
 schrijven, met een punt-notatie of met vierkante haakjes) alle
 verwijzingen vanuit de database *Medewerkers*. Met een @-teken kun je
 aangeven dat je alleen de verwijzingen door een specifiek referentieveld
@@ -201,8 +196,7 @@ template wilt gebruiken, moet je de vierkante haken vervangen door
 [ldelim] en [rdelim]. Voor personalisatie binnen een document, in een
 tekstblok bijvoorbeeld, hoef je je hier geen zorgen over te maken.
 
-Javascript
-----------
+## Javascript
 
 Alle variabelen die toegankelijk zijn in Smarty, kun je ook via
 javascript aanspreken. Javascript gebruik je bijvoorbeeld voor condities
@@ -210,36 +204,35 @@ bij opvolgacties of conditionele tekstblokken. Daar waar je in smarty
 {$profile.naam} kon gebruiken, is er in javascript de equivalente
 variabele profile.naam. Een overzichtje:
 
-**Smarty**\
- *{$profile.naam}   *
+**Smarty**
+    {$profile.naam}
 
-**Javascript-alternatief**\
- *profile.naam*
+**Javascript-alternatief**
+    profile.naam
 
-**Smarty**\
- *{$profile.werkgever.bedrijfsnaam} *
+**Smarty**
+    {$profile.werkgever.bedrijfsnaam}
 
-**Javascript-alternatief**\
- *profile.werkgever.bedrijfsnaam*
+**Javascript-alternatief**
+    profile.werkgever.bedrijfsnaam
 
-**Smarty**\
- *{foreach $profile.werkgever.referrers.medewerkers as $medewerker}*\
- *{/foreach}*
+**Smarty**
+    {foreach $profile.werkgever.referrers.medewerkers as $medewerker}
+    {/foreach}
 
-**Javascript-alternatief**\
- *for (var i=0; i<profile.werkgever.referrers.medewerkers.length; i++)
-{*\
- *...*\
- *}*
+**Javascript-alternatief**
+    for (var i=0; i<profile.werkgever.referrers.medewerkers.length; i++)
+    {
+    ...
+    }
 
-**Smarty**\
- *{foreach $profile.werkgever.referrers["werkgever@medewerkers"] as
-$medewerker}*\
- *    ...*\
- *{/foreach}*
+**Smarty**
+    {foreach $profile.werkgever.referrers["werkgever@medewerkers"] as $medewerker}
+    ...
+    {/foreach}
 
-**Javascript-alternatief**\
- *for (var i=0;
-i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) {*\
- *...*\
- *}*
+**Javascript-alternatief**
+    for (var i=0; i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) 
+    {
+    ...
+    }

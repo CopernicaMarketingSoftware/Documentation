@@ -2,10 +2,7 @@
 
 In Publisher is het mogelijk om zelf makkelijk enquêtes in elkaar te 
 zetten om erachter te komen wat een klant vindt van jouw product of dienst. 
-Het is daarnaast een makkelijke manier om data te verzamelen. Let echter 
-wel op dat je de juiste vragen stelt op de juiste manier om database 
-corruptie te voorkomen. Voor tips over het stellen van vragen klik je 
-[hier](./prevent-database-corruption).
+Het is daarnaast een makkelijke manier om data te verzamelen. 
 
 Let op: Enquêtes maken in de Marketing Suite is helaas nog niet mogelijk.
 
@@ -81,9 +78,6 @@ te exporteren of deze te verwerken met opvolgacties.
 Met enquêtes kun je nog veel meer. Hieronder vind je een aantal links 
 met meer informatie.
 
-### Algemeen
-
-* [Voorkom database corruptie](./prevent-database-corruption)
 * [Soorten enquête vragen](./surveys-question-types)
 
 ### Stijl aanpassen

@@ -5,22 +5,19 @@ tekstblokken om content toe te voegen aan het document of pagina. Naast
 normale tekst kan je een tekstblok ook gebruiken om speciale content in
 te voegen.
 
-In webpagina's
---------------
+## In webpagina's
 
 -   Content webformulieren
--   Enquetes
+-   Enquêtes
 
-In e-maildocumenten en webpagina's
-----------------------------------
+## In e-maildocumenten en webpagina's
 
 -   RSS en Atom feeds
 -   Externe HTML
 
 Er zijn twee manieren om de content in te laden:
 
-1. Invoegen speciale content
-----------------------------
+## 1. Invoegen speciale content
 
 -   Schakel over naar bewerkmodus
 -   Klik op het tekstblok waaraan je de speciale content wilt toevoegen
@@ -37,13 +34,12 @@ content.
 *Afbeelding - in het bewerkvenster van het tekstblok kan je direct
 speciale content toevoegen*
 
-2. Gebruik van tags
--------------------
+## 2. Gebruik van tags
 
 Webformulieren, enquetes, feeds en dergelijke kunnen ook ingeladen
 worden met behulp van speciale invoegcodes. Je kan ze zowel in de HTML
 broncode van de template, als op documentniveuw in een tekstblok
 invoegen.
 
-**Let op:**webformulieren en enquetes kunnen niet worden ingevoegd in
+**Let op:** webformulieren en enquêtes kunnen niet worden ingevoegd in
 e-maildocumenten
