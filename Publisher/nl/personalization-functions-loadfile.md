@@ -27,6 +27,4 @@ Als je andere formaten wil gebruiken kun je ook [linken naar een file](./persona
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Personalisatie functie linkfile](./personalization-functions-linkfile)

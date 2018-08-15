@@ -12,6 +12,4 @@ gegeven XSLT geplaatst in de template.
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Een webformulier invoegen](./personalization-functions-webform)

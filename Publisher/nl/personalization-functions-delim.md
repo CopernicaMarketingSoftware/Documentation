@@ -14,8 +14,3 @@ gebruiken, wat staat voor right delimiter.
 Als je echter een groot stuk letterlijk wil printen zonder alle haken 
 te vervangen is het verstandiger [literal](./personalization-functions-literal) 
 te gebruiken.
-
-## More information
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

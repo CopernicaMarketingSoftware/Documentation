@@ -35,7 +35,6 @@ precies zoals je ze hebt ingevoerd (dus {$voornaam}, {$achternaam}, enzovoort).
 Als je echter omschakelt naar de gepersonaliseerde modus, dan worden al deze
 variabelen vervangen door de echte waardes van een profiel uit je database.
 
-
 ## De standaardbestemming instellen
 
 In je database kun je één profiel aanwijzen als *standaardbestemming*. Dit

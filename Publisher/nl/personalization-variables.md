@@ -145,6 +145,5 @@ via de gegeven naam.
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
 * [Personalisatie functies](./personalization-functions)
 * [Personalisatie modifiers](./personalization-modifiers)

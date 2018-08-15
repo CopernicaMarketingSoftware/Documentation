@@ -39,8 +39,3 @@ Het is ook mogelijk expressies aan elkaar te schakelen met 'and' en 'or'.
     {elseif $name == $foo}
         {* doe een ander ding *}
     {/if}
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

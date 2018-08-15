@@ -32,10 +32,3 @@ linken naar achtergrondartikelen met meer informatie.
 | [SMTPeter](https://www.smtpeter.com/)                | Een Copernica product om voltooide email documenten te versturen.                                                                                                                                    |
 | [SOAP API](soap-api-documentation)                   | Simple Object Access Protocol: Een geavanceerde API met alle beschikbare methodes die ook beschikbaar zijn in de publisher interface.                                                                |
 | [SPF records](./spf)                                 | Sender Policy Framework: In een SPF record waarin staat vanaf welk IP adressen je e-mail verstuurd.                                                                                                  |
-                                                                                                                                                                                                                                              
-## Meer informatie                                                                                                                                                                                                                            
-
-* [Snel aan de slag](./quick-start-guide)
-* [Sender domain instellen](./quick-sender-domain-guide)
-* [Database inrichten](./quick-database-guide)
-* [Je eerste mailing](./quick-mailing-guide)

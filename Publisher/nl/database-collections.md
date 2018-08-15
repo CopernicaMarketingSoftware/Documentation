@@ -1,4 +1,5 @@
 # Collecties
+
 Een **Collectie** is een soort minidatabase binnen een profiel. Een profiel kan bijvoorbeeld een collectie orders, een collectie gedownloade whitepapers, of een collectie contactpersonen (wanneer een profiel een bedrijf is) bevatten. Deze bevat **Subprofielen** met kenmerken zoals naam, aantal, prijs en categorie (zoals in de afbeelding ook aangegeven).
 
 ## Selecties en miniselecties:

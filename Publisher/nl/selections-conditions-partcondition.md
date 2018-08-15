@@ -84,4 +84,3 @@ door "Score" oplopend te sorteren en te beginnen vanaf positie 0.
 ## Meer informatie
 
 * [Selecties](selections-introduction)
-* [Selectie condities en regels](selections-conditions)

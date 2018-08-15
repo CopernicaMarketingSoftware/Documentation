@@ -52,7 +52,6 @@ We raden je de volgende artikelen aan om van start te gaan.
 ## Artikelen
 
 * [Selecties](./database-selections-introduction)
-* [Personalisatie](./personalization)
 * [Opvolgacties](./followups)
 
 ## Tutorials

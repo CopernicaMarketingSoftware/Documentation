@@ -36,6 +36,4 @@ Dit voorbeeld gebruikt ook de [foreach functie](./personalization-functions-fore
     
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [foreach functie](./personalization-functions-foreach.md)

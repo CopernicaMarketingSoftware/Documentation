@@ -24,9 +24,3 @@ waarvoor je personaliseert.
 Door je te specializeren in 
 personalisatie en goede data bij te houden, kun je voor iedereen hele 
 relevante mails versturen!
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
-* [in_selection functie](./personalization-functions-in_selection)

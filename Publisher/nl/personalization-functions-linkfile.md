@@ -29,6 +29,4 @@ wordt deze file in plaats daarvan weergeven.
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Personalisatie functie loadfile](./personalization-functions-loadfile)

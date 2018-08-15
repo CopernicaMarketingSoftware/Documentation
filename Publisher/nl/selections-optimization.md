@@ -145,4 +145,3 @@ gebruikt. Dit is absoluut het snelst.
 
 * [Selecties en miniselecties](selections-introduction)
 * [Beheeropties voor selecties](selections-settings)
-* [Regels en condities](selections-conditions)

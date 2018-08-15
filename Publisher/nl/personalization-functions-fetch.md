@@ -37,6 +37,4 @@ daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
 ## Meer informatie 
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [if functie](./personalize-functions-if)

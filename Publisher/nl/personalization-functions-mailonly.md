@@ -15,6 +15,4 @@ naar de webversie te verbergen uit de webversie.
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Webonly functie](./personalization-functions-webonly)

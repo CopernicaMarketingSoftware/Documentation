@@ -12,8 +12,3 @@ in JavaScript die geëvalueerd moet worden.
     
 Deze inhoud wordt maar in 50% van de gevallen getoond op willekeurige wijze, 
 maar je kunt de expressies zo ingewikkeld maken als je wil.
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

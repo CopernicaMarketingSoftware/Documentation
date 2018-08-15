@@ -23,6 +23,4 @@ relevante mails versturen!
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [in_selection functie](./personalization-functions-in_selection)

@@ -25,8 +25,3 @@ komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 Dit verandert alle HTML tags in een lange regel in je daadwerkelijke mail. 
 Let wel op dat je geen normale tekst aan het begin of einde van een regel 
 hebt staan, dit kan het resultaat onverwacht veranderen.
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

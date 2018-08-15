@@ -52,6 +52,5 @@ printen. De output ziet er als volgt uit:
     
 ## Meer informatie
 
-* [Personalisatie](./personalization)
 * [Personalisatie functies](./personalization-functions)
 * [Capture functie](./personalization-functions-capture).

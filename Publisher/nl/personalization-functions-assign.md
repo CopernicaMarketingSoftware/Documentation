@@ -24,7 +24,5 @@ deze hier beter voor geschikt zijn.
      
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Capture functie](./personalization-functions-capture)
 * [Rawcapture functie](./personalization-functions-rawcapture)

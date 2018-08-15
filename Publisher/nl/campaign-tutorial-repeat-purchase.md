@@ -79,5 +79,4 @@ De onderstaande links helpen je op weg.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
 * [Selecties](./database-selections-introduction.md)
-* [Personalisatie](./personalization)
 * [Campagne Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)

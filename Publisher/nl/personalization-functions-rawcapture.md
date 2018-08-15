@@ -9,7 +9,5 @@ met de [assign functie](./personalization-functions-assign).
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Assign functie](./personalization-functions-assign)
 * [Capture functie](./personalization-functions-capture)

@@ -11,8 +11,3 @@ die automatisch escaped wordt, tenzij anders gespecificeerd.
     
 Dit geeft alleen de link zelf weer, maar je kunt altijd HTML gebruiken 
 om de link te vervangen door woorden en klikbaar te maken.
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

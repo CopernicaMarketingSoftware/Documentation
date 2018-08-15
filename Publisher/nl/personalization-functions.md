@@ -63,5 +63,4 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
 * [Overzicht van personalisatiemodifiers](./personalization-modifiers)

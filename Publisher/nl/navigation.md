@@ -1,7 +1,7 @@
 * [Introductie](./introduction.md)
 * [Snel aan de slag](./quick-start-guide.md)
     * [Sender domains instellen](./quick-sender-domain-guide.md)
-    * [Database inrichten](./quick-database-guide.md)
+    * [Database inrichten](./database-management.md)
     * [Je eerste mailing](./quick-mailing-guide.md)
     * [Begrippenlijst](./definitions)
 * [Database en profielen](./database-profiles.md)

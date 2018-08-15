@@ -44,8 +44,3 @@ als we **{$frac}** in de template typen.
     {assign "height" 1}
     {assign "width" 3}
     {math equation="1 + x / y" assign="frac" format="%.2f" x=$height y=$width}
-    
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

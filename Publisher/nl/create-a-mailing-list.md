@@ -5,10 +5,6 @@ kunnen schrijven van jouw mailing lijst. Deze tutorial laat zien hoe je
 deze uitschrijvers automatisch buiten jouw lijst van ontvangers kan laten 
 bij het versturen van een mail.
 
-*Je hebt voor deze tutorial een database nodig. 
-Zie het [artikel over je database inrichten](./quick-database-guide) 
-voor meer informatie.*
-
 Je creëert een mailinglist in drie stappen:
 
 1.  Voeg een "nieuwsbrief" veld toe aan je database.

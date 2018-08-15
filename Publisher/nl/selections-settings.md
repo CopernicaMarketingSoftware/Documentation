@@ -1,8 +1,7 @@
 # Beheeropties voor selecties
 
-Er zijn, naast het [aanmaken en verwijderen van selecties](selections-introduction.md),
+Er zijn, naast het [aanmaken en verwijderen van selecties](database-selections-introduction.md),
 nog andere beheeropties. Hieronder een overzicht:
-
 
 ### Selecties kopiëren of verplaatsen
 

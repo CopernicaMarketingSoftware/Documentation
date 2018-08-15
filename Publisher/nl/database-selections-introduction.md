@@ -3,7 +3,7 @@ Naast velden en collecties, kun je in Copernica ook gebruik maken van selecties.
 
 Met selecties kun je je database nauwkeurig segmenteren, waardoor je gerichte mailings kunt sturen. De inhoud van selecties wordt automatisch bijgewerkt, zodat je selecties altijd de profielen bevatten die aan de voorwaarden van de selectie voldoen.
 
-Naast 'gewone' selecties bestaan er ook miniselecties](./database-collections.md) en subselecties.
+Naast 'gewone' selecties bestaan er ook [miniselecties](./database-collections.md) en subselecties.
 
 ## Subselecties
 Een subselectie is een selectie van profielen in een selectie. Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van vrouwen. De profielen in een subselectie moeten aan alle condities van de selectie voldoen, alsmede die van de subselectie. In ons voorbeeld betekent dit dus dat ze zowel vrouw als onder de 30 moeten zijn. Dit is niet alleen handig voor het overzicht in je database, het kan je database ook een stuk sneller maken. Als je namelijk een subselectie van mensen onder de 30 maakt onder de selectie van vrouwen, hoeft Copernica alleen de profielen die al in de selectie Vrouwen staan te doorzoeken. Met een selectie Vrouwen onder de 30 moet er twee keer door alle profielen gezocht worden: iedereen checken op geslacht en op leeftijd.

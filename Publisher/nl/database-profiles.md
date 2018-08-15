@@ -7,6 +7,12 @@ Een profiel kan een persoon of bedrijf zijn, dit hangt af of je een B2B of B2C b
 ## Multidimensionale databases
 Binnen Copernica is het mogelijk om een extra laag aan je database toe te voegen. Deze extra laag zit gekoppeld aan de profielen, denk hierbij aan de aankoophistorie van een klant of de bekeken producten van een klant. Een database die onder een profiel hangt wordt een collectie genoemd. 
 
+Er zijn bijna geen beperkingen opgelegd voor de structuur van een database.
+Zo kun je bijvoorbeeld een eenvoudige voornaam-achternaam-emailadres-structuur
+opzetten of een geneste database waarin per profiel de bestelgeschiedenis en
+*abandoned shopping carts* worden opgeslagen. Echter, in het begin is het handig
+om je database eenvoudig te houden. Je kunt later altijd nog extra velden toevoegen.
+
 ## Database aanmaken in de Marketing Suite
 In de Marketing Suite kan een database aangemaakt worden in het **Database & Profielen** gedeelte. Klik op het plusteken in de linkerbovenhoek. Klik op Database en geef de database een naam. 
 

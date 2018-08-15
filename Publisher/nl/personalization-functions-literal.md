@@ -33,6 +33,4 @@ Dit voorbeeld komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Linker en rechter delimiter](./personalization-functions-delim)

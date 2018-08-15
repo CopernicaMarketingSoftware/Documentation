@@ -85,8 +85,3 @@ De output van deze code is het volgende:
 Hoewel dit niet de mooiste manier is om te formatteren geeft het wel een 
 indruk van hoeveel er mogelijk is in het formatteren van je tekst met 
 deze functie.
-
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

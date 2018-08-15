@@ -16,7 +16,5 @@ zichtbaar in de browser.
     
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Mailonly functie](./personalization-functions-mailonly)
 

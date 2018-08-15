@@ -56,7 +56,3 @@ komen van de opteller en de even getallen van de afteller in de volgende output:
     3<br />
     0<br />
 
-## Meer informatie
-
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)

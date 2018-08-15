@@ -18,7 +18,8 @@ volgen van de volgende stappen heb je alle benodigdheden om je eerste mailing
 te versturen.
 
 * [Sender domain instellen](quick-sender-domain-guide)
-* [Database inrichten](quick-database-guide)
+* [Database inrichten](database-management)
+* [Profielen importeren](database-import)
 * [Je eerste e-mail met de drag-and-drop editor](quick-mailing-guide)
 
 
@@ -30,4 +31,3 @@ ontvang alle meldingen die van onze servers komen.
 
 * [Begrippenlijst](./definitions)
 * [WebHooks](./webhooks)
-* [Selecties](./database-selections-introduction)

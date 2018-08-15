@@ -103,7 +103,5 @@ deze omzetten naar tekst en printen. Het resultaat ziet er als volgt uit:
 
 ## Meer informatie
 
-* [Personalisatie](./personalization)
-* [Personalisatie functies](./personalization-functions)
 * [Assign functie](./personalization-functions-assign)
 * [Foreach functie](./personalization-functions-foreach)

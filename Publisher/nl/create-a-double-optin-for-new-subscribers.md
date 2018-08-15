@@ -107,7 +107,7 @@ Wanneer het formulier is ingevuld en verzonden, moet er een
 bevestingsmail worden verstuurd naar het zojuist ingevulde e-mailadres.
 Dit kan met een formulieropvolgactie.
 
-Ga naar *webformulier \>***opvolgacties** en creëer een opvolgactie
+Ga naar *webformulier >* **opvolgacties** en creëer een opvolgactie
 waarbij een opgemaakte e-mail wordt verstuurd aan het profiel. Selecteer
 het e-maildocument met hierin (straks) de bevestigingslink.
 
@@ -123,7 +123,7 @@ voltooid is.
 
 **Aan deze hyperlink gaan we een documentopvolgactie koppelen:**
 
-Ga naar het *document menu \>***opvolgacties**
+Ga naar het *document menu >* **opvolgacties**
 
 Maak een opvolgactie waarbij een klik op een specifieke link (de
 bevestigingslink)  tot gevolg heeft dat een waarde in de database
@@ -145,7 +145,7 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 ## Meer informatie
 
-* [Selectie condities](./selections-conditions)
+* [Selectie condities](./database-selections-introduction)
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
 * [Tutorial: Email bounces afhandelen](./automatically-process-bounces)

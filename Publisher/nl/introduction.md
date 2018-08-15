@@ -10,7 +10,7 @@ Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies
 om snel van start te gaan.
 
 * [Sender domains instellen](./quick-sender-domain-guide)
-* [Database inrichten](./quick-database-guide)
+* [Database inrichten](./database-management)
 * [Je eerste mailing versturen](./quick-mailing-guide)
 
 ## Meer informatie

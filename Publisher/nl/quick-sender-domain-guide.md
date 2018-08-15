@@ -31,14 +31,13 @@ Je vindt de `SENDER DOMAIN` tool in het menu van de Marketing Suite.
 
 ## De volgende stap
 
-Om de eerste mail te kunnen versturen, heb je natuurlijk [een database met profielen](quick-database-guide) 
+Om de eerste mail te kunnen versturen, heb je natuurlijk een database met profielen
 nodig om die mailing naartoe te sturen.
 
 ## Meer informatie
 
 * [Begrippenlijst](./definitions)
 * [Sender domains achtergrond](./sender-domains)
-* [Database configureren](./quick-database-guide)
 * [DKIM](./dkim)
 * [DMARC](./dmarc)
 * [SPF](./spf)
