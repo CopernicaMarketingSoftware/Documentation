@@ -1,6 +1,5 @@
 * [Introductie](./introduction.md)
     * [Sender domains instellen](./quick-sender-domain-guide.md)
-    * [Database inrichten](./database-management.md)
     * [Begrippenlijst](./definitions)
 * [Database en profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
