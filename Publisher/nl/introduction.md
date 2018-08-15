@@ -26,6 +26,9 @@ te versturen.
 * [Database inrichten](database-management)
 * [Profielen importeren](database-import)
 
+## Je eerste mailing
+
+Voor het versturen van een je eerste mailing heb je een verzendselectie nodig waarin profielen zitten. Hierna kun je een template maken en deze selecteren. Hier vul je de gewenste informatie aan, zoals het onderwerp van de e-mail en bijvoorbeeld het domein dat je wilt gaan gebruiken om je e-mails mee te versturen. Daarnaast kun je ook concrete informatie achterlaten over het verzendtijdstip en de tags die je aan een e-mail mee wilt geven. Vervolgens kies je de ontvangers van je e-mail door de verzendselectie aan te wijzen als target. 
 
 ## Meer informatie
 
