@@ -75,18 +75,11 @@ maak dan een selectie aan met de conditietype *Check op resultaten e-mailcampagn
 Gebruik dan de exportfunctie in het onderdeel *profielen* om de profielgegevens
 uit de selectie te downloaden.
 
-## Exporteren in Publisher
+## Exporteren in de Marketing Suite
+Klik op de database of collectie waar de export gestart voor dient te worden. Klik op het **blauwe tandwiel** rechtsboven > **Exporteren** > **Nieuwe export aanmaken**. Geef de export een naam, kies vervolgens de juiste opties zoals hierboven beschreven. 
+
+## Exporteren in de Publisher
 
 Om een database of collectie te exporteren moet je deze eerst selecteren
 onder **Profielen**. Je kunt daarna onder **Huidige weergave** de optie
 vinden om te exporteren of importeren.
-
-## Exporteren met Marketing Suite
-
-In de Marketing Suite kun je een database exporteren in het database
-management menu.
-
-## Meer informatie
-
-* [Database beheer](./database-introduction)
-* [Database importeren](./database-import)

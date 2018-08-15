@@ -1,4 +1,4 @@
-# Restricties
+# Database restricties
 
 Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
 dat ongeldige gegevens in je database belanden. Tegelijkertijd voorkomt het
@@ -37,11 +37,21 @@ voldoen om toegelaten te worden.
 Reguliere expressies (vaak afgekort naar *regex*) is een krachtig methode 
 om restricties in te stellen. Deze expressies kunnen patronen herleiden en
 de uitkomst goed of afkeuren. De volgende regex laat alleen postcodes toe
-die bestaan uit 4 getallen, gevolgd door twee letters (0000AA).
+die bestaan uit 4 getallen, gevolgd door twee letters (1000AA).
 
 ```javascript
-var rege = /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i;
+^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$
 ```
+
+Wat deze regex doet:
+
+1. `^` komt overeen met het begin van een string (tekenreeks)
+2. `[1-9]` komt overeen met een reeks van 1 tot 9
+3. `[0-9]{3}` gevolgd door drie keer een cijfer van 0 tot 9. 
+4. `?` komt overeen met 0 of 1 spaties
+5. `(?!sa|sd|ss)` kijkt vooruit om te controleren of de rest niet "sa", "sd" of "ss" bevat.
+6. `[a-z]{2}` komt overeen met 2 letters
+7. `$` komt overeen met het einde van de string
 
 ## Meer informatie
 
