@@ -1,4 +1,4 @@
-# Database collecties
+# Collecties
 Een **Collectie** is een soort minidatabase binnen een profiel. Een profiel kan bijvoorbeeld een collectie orders, een collectie gedownloade whitepapers, of een collectie contactpersonen (wanneer een profiel een bedrijf is) bevatten. Deze bevat **Subprofielen** met kenmerken zoals naam, aantal, prijs en categorie (zoals in de afbeelding ook aangegeven).
 
 ## Selecties en miniselecties:
@@ -19,6 +19,4 @@ Klik op het **blauwe tandwiel** in de rechterbovenhoek, hierna volgt een menu, k
 Om een selectie aan te passen dient er weer naar hetzelfde menu gegaan te worden en aan de linkerkant de aan te passen selectie te selecteren. Klik vervolgens op  **Selectieregels bewerken**. In dit overzicht kunnen nieuwe regels of condities toegevoegd worden aan de selecties. 
 
 ## Aanmaken of wijzigen (mini)selectie Publisher
-Klik op **Databasebeheer > Selecties beheren**. Om een nieuwe selectie te maken dient er geklikt te worden op **selectie aanmaken**. Kies de naam van de selectie en klik op **onder** om aan te geven onder welke selectie of database de nieuwe selectie zal vallen. Klik vervolgens op het tweede tabblad **Selectie condities**, hier kunnen extra regels en condities toegevoegd worden. Om een conditie aan dezelfde regel toe te voegen klik dan op **Voeg een nieuwe 'EN' conditie toe aan deze 'OF' regel**, wil je een nieuwe regel maken met een nieuwe conditie klik dan op **Voeg een nieuwe 'EN' conditie toe aan een nieuwe 'OF' regel**
-
-
+Klik op **Databasebeheer > Selecties beheren**. Om een nieuwe selectie te maken dient er geklikt te worden op **selectie aanmaken**. Kies de naam van de selectie en klik op **onder** om aan te geven onder welke selectie of database de nieuwe selectie zal vallen. Klik vervolgens op het tweede tabblad **Selectie condities**, hier kunnen extra regels en condities toegevoegd worden. Om een conditie aan dezelfde regel toe te voegen klik dan op **Voeg een nieuwe 'EN' conditie toe aan deze 'OF' regel**, wil je een nieuwe regel maken met een nieuwe conditie klik dan op **Voeg een nieuwe 'EN' conditie toe aan een nieuwe 'OF' regel**.

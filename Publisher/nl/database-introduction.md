@@ -38,7 +38,7 @@ database en het onderhouden ervan.
 
 * [Selecties](database-selections-introduction)
 * [Databasevelden](database-fields)
-* [Database restricties](database-restrictions-and-capabilities)
+* [Database restricties](database-restrictions)
 * [Importeren](database-import)
 * [Exporteren van een database](database-export)
 * [Databases beheren met de REST API](rest-api)

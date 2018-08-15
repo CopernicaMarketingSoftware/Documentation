@@ -1,4 +1,4 @@
-# Database restricties
+# Databaserestricties
 
 Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
 dat ongeldige gegevens in je database belanden. Tegelijkertijd voorkomt het
@@ -14,7 +14,6 @@ Copernica voorkomt dat een nieuwe database of selectie direct gebruikt kan worde
 Hiermee voorkom je dat per ongeluk mailings worden verstuurd naar een selectie of 
 database, terwijl dat niet de bedoeling was. De databases en selecties die gebruikt
 mogen worden voor mailings moeten specifiek ingeschakeld worden. 
-
 
 ## Databaserestricties
 

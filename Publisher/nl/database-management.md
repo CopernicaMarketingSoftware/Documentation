@@ -1,4 +1,4 @@
-# Standaard selectie structuur
+# Databasemanagement
 De klant is binnen Copernica vrij om zelf de selectie structuur te bepalen, maar wij als Copernica bieden een selectie structuur aan zodat de juiste profielen een mail ontvangen. Veel van onze gebruikers hanteren deze standaard selectie structuur voor hun databasebeheer. Daarmee halen ze automatisch alle foutieve en dubbele e-mailadressen, bounces en uitschrijvingen uit hun verzendselectie. De structuur is in 2 hoofdselectie verdeeld, **A_DatabaseManagement** en **B_Verzendselectie**. Hieronder zullen deze twee hoofdselecties behandeld worden. 
 
 ```

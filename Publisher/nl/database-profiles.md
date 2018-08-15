@@ -1,4 +1,4 @@
-# Een Copernica database
+# Database en profielen
 Copernica werkt met databases die je zelf kunt configureren. Databases zijn het centrale punt binnen Copernica. In een database worden alle contacten opslagen die jij als gebruiker gaat mailen, deze contacten binnen de database worden profielen genoemd. 
 
 ## Profielen
