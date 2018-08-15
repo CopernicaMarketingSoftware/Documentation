@@ -4,14 +4,28 @@ Copernica heeft een zeer uitgebreide e-mailtoolkit voor marketeers en developers
 
 Via het Copernica dashboard, bereikbaar via [copernica.com](https://www.copernica.com) regel je alle gebruikers en accountzaken. Ook navigeer je hier eenvoudig naar de Marketing Suite of Publisher. 
 
-## Beginnen!
+# Snel aan de slag
 
-Ben je klaar om te beginnen? De onderstaande artikelen bevatten instructies 
-om snel van start te gaan.
+Voordat je mailings kunt versturen met Copernica, moet je eerst de software 
+configureren. Deze configuratie bestaat uit twee stappen: het opzetten van een
+sender-domain en het invullen van je DNS instellingen. Op deze manier zorg
+je ervoor dat Copernica namens jou e-mails kan versturen. Na het opzetten
+van je database, kun je beginnen met het maken van selecties en regels.
 
-* [Sender domains instellen](./quick-sender-domain-guide)
-* [Database inrichten](./database-management)
-* [Je eerste mailing versturen](./quick-mailing-guide)
+Na het opzetten van de fundatie, kun je aan de slag met templates. Je doet 
+dit met de gebruiksvriendelijke template editor in de Marketing Suite. 
+Klaar met je templates? Mooi! Dan kan de mailing nu worden verstuurd.
+
+## Checklist
+ 
+Om je op weg te helpen, heeft Copernica een kleine checklist gemaakt. Door het 
+volgen van de volgende stappen heb je alle benodigdheden om je eerste mailing 
+te versturen.
+
+* [Sender domain instellen](quick-sender-domain-guide)
+* [Database inrichten](database-management)
+* [Profielen importeren](database-import)
+
 
 ## Meer informatie
 
