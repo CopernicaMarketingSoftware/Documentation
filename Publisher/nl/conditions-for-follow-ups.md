@@ -1,4 +1,4 @@
-# Follow-up Manager: Condities
+# Follow-up manager: Condities
 
 Opvolgacties kun je instellen in de [Publisher](./follow-up-manager-publisher), 
 [Marketing Suite](./follow-up-manager-ms) of met 

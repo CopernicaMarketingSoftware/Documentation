@@ -4,18 +4,16 @@ datum of getal in kan worden opgeslagen. In het geval van interesses wordt hier 
 
 Er zijn verschillende veldtypes beschikbaar voor het opslaan van specifieke gegevens. Bijvoorbeeld velden voor het opslaan van tekst, getallen en datums. Hieronder is een tabel weergegeven met alle beschikbare veldtypes.
 
-
-
-| Veldtype           | Omschrijving                                                                                  |
-|--------------------|-----------------------------------------------------------------------------------------------|
-| Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 225.  |
-| Numeriek veld      | Alleen numerieke waardes [0-9]. Kan geen leeg veld zijn. Geef bijvoorbeeld standaardwaarde 0 op.    |
-| E-mailveld         | E-mailveld is een tekstveld, bedoeld voor het opslaan van e-mailadressen.                     |
-| Telefoonveld       | Kan worden gespecificeerd voor fax, mobiele en andere telefoonnummers.                        |
-| Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden. |
-| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste optie is standaardwaarde.           |
-| Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                               |
-| Grote velden       | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je niet kunt indexeren.             |
+| Veldtype           | Omschrijving                                                                                         |
+|--------------------|------------------------------------------------------------------------------------------------------|
+| Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 225.          |
+| Numeriek veld      | Alleen numerieke waardes [0-9]. Kan geen leeg veld zijn. Geef bijvoorbeeld standaardwaarde 0 op.     |
+| E-mailveld         | E-mailveld is een tekstveld, bedoeld voor het opslaan van e-mailadressen.                            |
+| Telefoonveld       | Kan worden gespecificeerd voor fax, mobiele en andere telefoonnummers.                               |
+| Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden.        |
+| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste optie is standaardwaarde.                  |
+| Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                                      |
+| Grote velden       | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je niet kunt indexeren.                   |
 
 ## Extra opties
 

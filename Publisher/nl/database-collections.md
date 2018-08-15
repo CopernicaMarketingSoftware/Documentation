@@ -1,15 +1,15 @@
 # Database collecties
-**Collectie** is een soort minidatabase binnen een profiel. Een profiel kan bijvoorbeeld een collectie orders, een collectie gedownloade whitepapers, of een collectie contactpersonen (wanneer een profiel een bedrijf is) bevatten. Deze bevat **Subprofielen** met kenmerken zoals naam, aantal, prijs en categorie (zoals in de afbeelding ook aangegeven).
+Een **Collectie** is een soort minidatabase binnen een profiel. Een profiel kan bijvoorbeeld een collectie orders, een collectie gedownloade whitepapers, of een collectie contactpersonen (wanneer een profiel een bedrijf is) bevatten. Deze bevat **Subprofielen** met kenmerken zoals naam, aantal, prijs en categorie (zoals in de afbeelding ook aangegeven).
 
 ## Selecties en miniselecties:
 Een selectie selecteert profielen op basis van veldwaarden (kenmerken) binnen een database, aan de hand van een conditie. Een miniselectie doet in principe hetzelfde, maar dan met subprofielen binnen een collectie. Het is ook mogelijk om een selectie te maken van profielen met subprofielen die voldoen aan de condities van een miniselectie. In dat geval moet er een aparte selectie worden aangemaakt met als conditie dat de profielen erin tenminste ‘1 subprofiel’ hebben dat voldoet aan de condities van de miniselectie, of helemaal geen. Je zou bijvoorbeeld een selectie kunnen maken van profielen die ooit een order hebben geplaatst (minimaal 1 subprofiel in de collectie ‘Orders’), of juist van profielen die nog nooit een order hebben geplaatst (0 subprofielen in de collectie ‘Orders’).
 
-## Collectie aanmaken Marketing Suite
+## Een Collectie aanmaken in de Marketing Suite
 In de Marketing Suite kan een collectie aangemaakt worden in het **Database & Profielen** gedeelte. Klik op het plusteken in de linkerbovenhoek. Klik op Collectie, kies onder welke database de collectie geplaatst moet worden  en geef de collectie een naam. 
 
 Het maakt niet uit of een collectie in de Publisher of Marketing suite gemaakt is, dit is dezelfde collectie. Als een aanpassing in de Publisher gedaan wordt, dan is deze ook zichtbaar in de Marketing Suite. Nadat de collectie aangemaakt is, is de volgende stap is structuur aan je collectie geven door databasevelden toe te voegen.
 
-## Database aanmaken Publisher
+## Een Collectie aanmaken in de Publisher
 Binnen de Publisher kan een collectie aangemaakt worden via **Databasebeheer > Databasevelden wijzigen > collectie toevoegen**. In het venster hierna kan een naam gegeven worden aan de collectie. De nieuw aangemaakte collectie verschijnt als tabblad bij de database. Er kan per profiel gekeken worden naar de bijbehorende collecties.  
 
 Het maakt niet uit of een collectie in de Publisher of Marketing suite gemaakt is, dit is dezelfde collectie. Als een aanpassing in de Marketing Suite gedaan wordt, dan is deze ook zichtbaar in de Publisher. Nadat de collectie aangemaakt is, is de volgende stap is structuur aan je collectie geven door databasevelden toe te voegen.

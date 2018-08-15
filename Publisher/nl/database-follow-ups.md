@@ -8,7 +8,7 @@ wanneer iemand op een link klinkt of iemand te feliciteren met zijn verjaardag.
 
 Er zijn verschillende manieren om database opvolgacties te maken. De database opvolgacties kunnen zowel in de Marketing Suite als de Publisher ingesteld worden. De Marketing Suite biedt een drag en drop flow editor. De Publisher is meer stapsgewijs opvolgacties aanmaken. 
 
-## Follow-Up Manager (Marketing Suite)
+## Follow-up manager (Marketing Suite)
 
 In de [flowchart editor](./follow-up-manager-ms) kun je blokken aan elkaar 
 linken om geavanceerde campagnes op te zetten met hulp van followups. 
@@ -18,12 +18,11 @@ van de geavanceerde modus gebruiken, waarin je je eigen logica kan definiëren
 in Javascript.
 Deze kunnen aangemaakt worden door te klikken op het **blauwe tandwiel** in de rechterbovenhoek en klik op **Opvolgacties**. In dit menu staan alle opvolgacties van een database. Klik op de **groene knop** om een nieuwe database opvolgactie aan te maken en kies waarom de opvolgactie gestart wordt. Voor informatie over de aanleidingen van opvolgacties klik [hier](./follow-up-manager-ms). 
 
-## Follow-Up Manager (Publisher)
+## Follow-up manager (Publisher)
 
 [Opvolgacties in Publisher](./follow-up-manager-publisher) zijn altijd  beschikbaar in het menu van een **database**, **document**, **enquête** of **webformulier**. Opvolgacties in Publisher worden gemaakt door een conditie en een actie te definiëren in de menu editor. Publisher heeft 
 geen scripting API. 
 In de Publisher kan een opvolgactie aangemaakt worden door te gaan naar **Databasebeheer** > **Database opvolgacties**. In dit venster worden alle opvolgacties aangegeven en hier is het ook mogelijk om nieuwe opvolgacties aan te maken. Voor meer informatie over database opvolgacties aanmaken in de Publisher klik [hier](./follow-up-manager-publisher). 
-
 
 ## Kies je editor
 

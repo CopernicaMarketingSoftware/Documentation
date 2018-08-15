@@ -1,9 +1,9 @@
-# Error types en codes
+# Soft en hard bounces
 
 Dit artikel legt het verschil tussen zogenaamde soft en hard bounces uit 
 en hoe je om kunt gaan met errors van mails die niet aankomen.
 
-## E-mail error codes
+## Error codes
 
 Als een email niet afgeleverd kan worden stuurt de ontvangende mailserver 
 meestal een bericht terug met de error code en een korte beschrijving van 

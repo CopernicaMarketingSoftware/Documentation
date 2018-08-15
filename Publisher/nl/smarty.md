@@ -12,7 +12,7 @@ of Smarty. Using this code you can include every database or collection
 field within your campaigns. The Smarty tags will be replaced by the
 correct contact data of the addressee or recipient. Smarty tags are
 characterized by the use of braces, **{** and **}**, and the dollar sign
-**\$**. Next to filling in contact data, Smarty tags can also be used to
+**$**. Next to filling in contact data, Smarty tags can also be used to
 include dynamic content in your marketing campaigns.
 
 Using these Smarty tags within Copernica allows you to:
@@ -66,20 +66,26 @@ Set conditional content blocks
 Thanks to the use of Smarty tags you can also use contact data as
 conditions when displaying certain content. This can be done with the
 help of the 'if-then'-statements: {if} and {else}. You always use { }
-and \$, completed with some extra code.
+and $, completed with some extra code.
 
-*For example:*\
- {if \$fieldname==”thisvalue”}show this text{else}if not, show this
-text{/if}\
- This states: IF field X contains the value Y, THEN, show this text,
+*For example:*
+```
+{if $fieldname == "thisvalue"}
+    show this text
+{else}
+    if not, show this text
+{/if}
+```
+
+This states: IF field X contains the value Y, THEN, show this text,
 ELSE, show this text, END of the command.
 
-To use dynamic content, you can also use the variable {in\_selection
+To use dynamic content, you can also use the variable {in_selection
 selection=x}. By using this code, your content will only be shown to
 relations from a specific (mini)selection. You can select the specific
 selection by:
 
--   Describing the entire path to the selection: \
-    {in\_selection selection=Database:mySelection:mySubSelection}
--   Formulating the ID of the selection: {in\_selection selection=20}
+-   Describing the entire path to the selection: 
+    `{in_selection selection=Database:mySelection:mySubSelection}`
+-   Formulating the ID of the selection: `{in_selection selection=20}`
 
