@@ -33,7 +33,7 @@ er de volgende code in:
 Elke keer dat er een subprofiel wordt aangemaakt voor een nieuwe order 
 wordt nu de waarde van het "order_datum" veld gekopieerd naar het veld 
 "order_datum_laatst" in het profiel. Zo hebben we altijd toegang tot de 
-laatste aankoopdatum, waarmee we een [selectie](./selections-introduction) 
+laatste aankoopdatum, waarmee we een [selectie](./database-selections-introduction) 
 aan kunnen maken met inactieve klanten:
 
 * Open nu de database en maak een nieuwe selectie aan. Geef deze 
@@ -68,6 +68,6 @@ over personalizatie om je re-activatie campagnes nog interessanter te maken?
 De onderstaande links helpen je op weg.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
-* [Selecties](./selections-introduction.md)
+* [Selecties](./database-selections-introduction.md)
 * [Personalizatie](./personalization)
 * [Campagne Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)

@@ -6,7 +6,7 @@ de database makkelijk naar wens structureren en daarnaast ook data
 
 Je kunt ook verschillende lagen aanmaken in je database, bijvoorbeeld om
 de aankoopgeschiedenis van een klant op te slaan in zijn profiel. Je kunt
-ook [selecties](./selections-introduction) aanmaken om de database makkelijk
+ook [selecties](./database-selections-introduction) aanmaken om de database makkelijk
 op te delen en om te personalizeren. Copernica linkt ook veel informatie
 aan de profielen in je database, waaronder clicks, opens en errors. Om deze
 reden is het ook belangrijk dat je een database netjes houdt en update, in plaats

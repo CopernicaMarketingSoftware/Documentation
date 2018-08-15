@@ -66,7 +66,7 @@ die deze willen ontvangen.
 
 ## Meer informatie
 
-* [Selecties](./selections-introduction)
+* [Selecties](./database-selections-introduction)
 * [Unsubscribe functie](./personalization-functions-unsubscribe)
 * [Uitschrijfgedrag](./database-unsubscribe-behavior)
 * [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)

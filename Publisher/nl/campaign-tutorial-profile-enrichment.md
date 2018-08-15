@@ -5,7 +5,7 @@ haalt. Zo kunnen hun kliks en orders je vertellen wat zij belangrijk vinden
 en hoe jouw bedrijf van dienst kan zijn in de toekomst en helpen om relevantere 
 emails te sturen.  
 
-Met een handige [selectie](./selections-introduction) kun je deze informatie bijvoorbeeld 
+Met een handige [selectie](./database-selections-introduction) kun je deze informatie bijvoorbeeld 
 gebruiken om doelgroepen aan te maken en hen verschillende, meer toegespitste, 
 emails te sturen. Je kunt er ook voor kiezen deze informatie te gebruiken om je 
 template te [personalizeren](./personalization), bijvoorbeeld door content 
@@ -81,6 +81,6 @@ De artikelen hieronder kunnen je wat ideeën geven over hoe je segmentaties kunt
 maken en emails kunt personalizeren.
 
 * [Follow-ups in Marketing Suite](follow-up-manager-ms)
-* [Selecties](./selections-introduction)
+* [Selecties](./database-selections-introduction)
 * [Collecties](./database-fields-and-collections)
 * [Personalizatie](./personalization)

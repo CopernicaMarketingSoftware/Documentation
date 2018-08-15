@@ -44,6 +44,6 @@ hieronder kunnen je wat ideeën geven over hoe je doelgroepen kunt
 aanmaken en emails kunt personalizeren.
 
 * [Follow-ups in Marketing Suite](follow-up-manager-ms)
-* [Selecties](./selections-introduction)
+* [Selecties](./database-selections-introduction)
 * [Personalizatie](./personalization)
 * [Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)

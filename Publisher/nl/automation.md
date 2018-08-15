@@ -11,7 +11,7 @@ groet kent vrijwel iedereen al, maar wist je dat je ook de inhoud van je
 email aan kunt passen aan de interesses van je klant?
 
 In dit artikel geven we uitleg over de mogelijkheden van 
-[selecties](./selections-introduction), [personalisatie](./personalization) 
+[selecties](./database-selections-introduction), [personalisatie](./personalization) 
 en [opvolgacties](./followups). Met selecties kun je klanten groeperen en 
 met personalisatie kun je emails op maat maken voor elke klant. Opvolgacties 
 kun je gebruiken om automatische handelingen uit te laten voeren op basis 
@@ -20,7 +20,7 @@ van kliks, uitschrijvingen en profielen die aangepast worden.
 ## Email verzenden
 
 Copernica heeft een krachtig database systeem waarin je makkelijk 
-klanten kunt groeperen in [selecties](./selections-introduction). Zo kun 
+klanten kunt groeperen in [selecties](./database-selections-introduction). Zo kun 
 je bijvoorbeeld een nieuwsbriefselectie aanmaken, waardoor je alleen 
 mensen mailt die zich hebben ingeschreven voor je nieuwsbrief. Of een 
 verjaardagsselectie, waardoor je iedereen persoonlijk met zijn of haar 
@@ -51,7 +51,7 @@ We raden je de volgende artikelen aan om van start te gaan.
 
 ## Artikelen
 
-* [Selecties](./selections-introduction)
+* [Selecties](./database-selections-introduction)
 * [Personalisatie](./personalization)
 * [Opvolgacties](./followups)
 

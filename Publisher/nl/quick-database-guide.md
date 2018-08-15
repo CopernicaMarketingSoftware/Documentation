@@ -54,5 +54,5 @@ beïnvloedt? Zie de onderstaande links.
 
 * [Begrippenlijst](./definitions)
 * [Database management](./database-introduction)
-* [Selecties en miniselecties](./selections-introduction)
+* [Selecties en miniselecties](./database-selections-introduction)
 * [Afzenderreputatie en deliverability](./sender-reputation)

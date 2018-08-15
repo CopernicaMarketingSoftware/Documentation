@@ -30,4 +30,4 @@ ontvang alle meldingen die van onze servers komen.
 
 * [Begrippenlijst](./definitions)
 * [WebHooks](./webhooks)
-* [Selecties](./selections-introduction)
+* [Selecties](./database-selections-introduction)

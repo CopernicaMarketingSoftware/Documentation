@@ -52,7 +52,7 @@ else if (subprofile.fields.category == "phones B") profile.fields.last_phone_b =
 
 Elke keer dat er een subprofiel aan wordt gemaakt kijken we naar de categorie. 
 Als de categorie een telefoon van A of B is wordt de aankoopdatum opgeslagen in 
-het profiel. We kunnen nu twee [selecties](./selections-introduction) aanmaken 
+het profiel. We kunnen nu twee [selecties](./database-selections-introduction) aanmaken 
 om de klanten te mailen wanneer zij een nieuwe telefoon nodig hebben:
 
 * Open de database en maak een nieuwe selectie aan. Geef het een duidelijke 
@@ -78,6 +78,6 @@ over personalisatie om je re-activatie campagnes nog interessanter te maken?
 De onderstaande links helpen je op weg.
 
 * [Follow-ups in Marketing Suite](./follow-up-manager-ms)
-* [Selecties](./selections-introduction.md)
+* [Selecties](./database-selections-introduction.md)
 * [Personalisatie](./personalization)
 * [Campagne Tutorial: Profiel verrijking](./campaign-tutorial-profile-enrichment)

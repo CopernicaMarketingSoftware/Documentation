@@ -6,7 +6,7 @@
     * [Begrippenlijst](./definitions)
 * [Database en Profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
-    * [Selecties en miniselecties](./selections-introduction.md)
+    * [Selecties en miniselecties](./database-selections-introduction.md)
     * [Databasemangement](./database-management.md)
     * [Collecties](./database-collections.md)
     * [Importeren van profielgegevens](./database-import.md)
