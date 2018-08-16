@@ -17,8 +17,7 @@ niet meer nodig is.
 In e-mailings kun je vervolgens personaliseren op basis van die
 verschillende databases.
 
-Hoe gaat dat in zijn werk?
---------------------------
+## Hoe gaat dat in zijn werk?
 
 Stel: je wilt van je database met bedrijven bijhouden welke werknemers
 zij allemaal in dienst hebben. En in e-mailings wil je bij de
@@ -46,14 +45,18 @@ referentieveld *Werkgever* dat je laat verwijzen naar de database
 
 We kunnen onze databases dan vullen met de volgende gegevens:
 
-**Database *Bedrijven**
- ID 1, bedrijfsnaam: Initech 
- ID 2, bedrijfsnaam: Intertrode
+**Database Bedrijven**
+```
+ID 1, email: info@initech.com, bedrijfsnaam: Initech 
+ID 2, email: info@ intertrode.com, bedrijfsnaam: Intertrode
+```
 
-**Database *Medewerkers**
- ID 1, naam: Milton Waddams, werkgever: 1
- ID 2, naam: Peter Gibbons, werkgever: 1
- ID 3, naam: Michael Bolton, werkgever: 2
+**Database Medewerkers**
+```
+ID 1, naam: Milton Waddams, email: milton@initech.com, werkgever: 1
+ID 2, naam: Peter Gibbons,  email: peter@initech.com, werkgever: 1
+ID 3, naam: Michael Bolton, email: michael@intertrode.com, werkgever: 2
+```
 
 Omdat bij het inrichten van de database is ingesteld dat *Werkgever* een
 referentieveld is, weet de software nu dat Milton en Peter bij Initech
@@ -74,33 +77,30 @@ Omdat is aangegeven dat *werkgever* een referentieveld is, worden automatisch
 alle gegevens van het profiel waarnaar wordt verwezen in die variabele
 ingeladen.
 
-In dit voorbeeld heeft de database *Bedrijven* slechts één veld,
-namelijk *bedrijfsnaam* - maar in een live omgeving is dit natuurlijk
-veel uitgebreider.
+In dit voorbeeld heeft de database *Bedrijven* slechts twee velden,
+namelijk *bedrijfsnaam* en *email* - maar in een live omgeving kan dit natuurlijk
+veel uitgebreider zijn.
 
-Een stap verder
----------------
+## Een stap verder
 
-Laten we het een stap verder gaan - we willen nu een mailing versturen
-aan alle bedrijven (dan moet er natuurlijk nog wel een e-mailveld aan
-het bedrijf worden toegevoegd, dus naast de bedrijfsnaam hebben we nu
-ook een e-mailadres) en in die e-mail willen we melden welke medewerkers
+Laten we nog een stap verder gaan - we willen nu een mailing versturen
+aan alle bedrijven, in die e-mail willen we melden welke medewerkers
 er bij het bedrijf werken. Om precies te achterhalen welke andere
 databases en welke andere profielen er naar een bedrijf verwijzen, heeft
-elk profiel voortaan standaard ook een referentieveld. Via dit veld kun
+elk profiel ook een *referentieveld*. Via dit veld kun
 je opvragen welke verwijzende profielen er zijn:
 
 Mailing aan bedrijf {$profile.bedrijfsnaam},
 
-    Dit zijn jullie medewerkers:
-    {foreach $referrers.medewerkers as $medewerker}
-        {$medewerker.naam}
-    {/foreach}*
+```
+Dit zijn jullie medewerkers:
+{foreach $profile.referrers.medewerkers as $medewerker}
+{$medewerker.naam}
+{/foreach}*
+```
 
-Opnieuw gebruiken we de korte notatie. Het had ook met
-{$profile.bedrijfsnaam} en {$profile.referrers.medewerkers} gekund. De
-variabele {$profile.referrers} bevat alle databases die verwijzen naar
-het profiel, en via {$profile.referrers.*databasenaam*} kun je door die
+De variabele {$profile.referrers} bevat alle databases die verwijzen naar
+het profiel. Via {$profile.referrers.*databasenaam*} kun je door die
 verwijzende profielen heen itereren.
 
 ## Nog een stap verder
@@ -110,29 +110,33 @@ medewerkers, en bij elke medewerker willen we opnieuw melden bij welk
 bedrijf hij werkt, maar ook wie er volgens ons zijn of haar collega's
 zijn:
 
-    Beste {$profile.naam},
+```
+Beste {$profile.naam},
 
-    Volgens onze gegevens werk je bij bedrijf {$werkgever.bedrijfsnaam}.
+Volgens onze gegevens werk je bij bedrijf {$profile.werkgever.bedrijfsnaam}.
 
-    {if $werkgever.referrers.medewerkers|count > 1}
-    En dit zijn je collega's:
-    {foreach from=$werkgever.referrers.medewerkers item=collega}
-        {if $collega.id != $id}
-            {$collega.naam}
-        {/if}
-    {/foreach}
-    {/if}
+{if $profile.werkgever.referrers.medewerkers|count > 1}
+En dit zijn je collega's:
+
+{foreach from=$profile.werkgever.referrers.medewerkers item=collega}
+{if $collega.id != $id}
+    {$collega.naam}
+{/if}
+{/foreach}
+
+{/if}
+```
 
 Het begint makkelijk: we sturen de mailing naar de database
-*Werknemers*, dus de variabele {$naam} bevat gewoon de naam van de
-medewerker. Ook redelijk simpel is de variabele {$werkgever}, een veld
+*Werknemers*, dus de variabele {$profile.naam} bevat gewoon de naam van de
+medewerker. Ook redelijk simpel is de variabele {$profile.werkgever}, een veld
 dat verwijst naar het profiel uit de bedrijvendatabase, en waar dus weer
 de bedrijfsnaam van kan worden opgevraagd: {$werkgever.bedrijfsnaam}.
 
 Als we nu willen weten welke profielen uit de database *Medewerkers*
 naar dat bedrijf verwijzen (met andere woorden: welke medewerkers dat
 bedrijf heeft), dan kunnen we dat opvragen via de 'referrers'-variabele:
-{$werkgever.referrers.medewerkers}. Dan zie je in ons voorbeeld nog
+{$profile.werkgever.referrers.medewerkers}. Dan zie je in ons voorbeeld nog
 twee {if} statements staan. Hiermee zorgen we dat we alleen maar de
 collega's van de desbetreffende medewerker opsommen en niet de naam van
 de medewerker zelf. Eerst controleren we of het bedrijf wel meer dan een
@@ -147,8 +151,7 @@ ontvangen waarin alleen maar de tekst "Volgens onze gegevens werk je bij
 Intertrode" staat. Milton en Peter zouden een mail ontvangen waarin ze
 zien dat ze één collega hebben.
 
-Meerdere referentievelden
--------------------------
+## Meerdere referentievelden
 
 We gaan nog een stap verder. In de database *Medewerkers* was er maar een
 referentieveld opgenomen: het veld *werkgever*. Wat gebeurt er als er
@@ -205,37 +208,51 @@ bij opvolgacties of conditionele tekstblokken. Daar waar je in smarty
 variabele profile.naam. Een overzichtje:
 
 **Smarty**
-    {$profile.naam}
+```
+{$profile.naam}
+```
 
 **Javascript-alternatief**
-    profile.naam
+```
+profile.naam
+```
 
 **Smarty**
-    {$profile.werkgever.bedrijfsnaam}
+```
+{$profile.werkgever.bedrijfsnaam}
+```
 
 **Javascript-alternatief**
-    profile.werkgever.bedrijfsnaam
+```
+profile.werkgever.bedrijfsnaam
+```
 
 **Smarty**
-    {foreach $profile.werkgever.referrers.medewerkers as $medewerker}
-    {/foreach}
+```
+{foreach $profile.werkgever.referrers.medewerkers as $medewerker}
+{/foreach}
+```
 
 **Javascript-alternatief**
-    for (
-        var i = 0; 
-        i < profile.werkgever.referrers.medewerkers.length; 
-        i++)
-    {
-    ...
-    }
+```
+for (var i = 0; i < profile.werkgever.referrers.medewerkers.length; i++)
+{
+...
+}
+```
 
 **Smarty**
-    {foreach $profile.werkgever.referrers["werkgever@medewerkers"] as $medewerker}
-    ...
-    {/foreach}
+
+```
+{foreach $profile.werkgever.referrers["werkgever@medewerkers"] as $medewerker}
+...
+{/foreach}
+```
 
 **Javascript-alternatief**
-    for (var i =0; i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) 
-    {
-    ...
-    }
+```
+for (var i =0; i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) 
+{
+...
+}
+```
