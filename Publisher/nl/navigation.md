@@ -28,7 +28,6 @@
     * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks)
-    * [Gebruikersbeheer](accounts-and-users.md)
     * [Sender domains](./sender-domains)
     * [Sender reputation](./sender-reputation)
     * [Licentie en facturering](./license-and-billing)

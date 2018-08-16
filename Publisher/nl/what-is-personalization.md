@@ -61,8 +61,7 @@ code die vervangen moet worden door gegevens uit jouw database.
     **{/literal}**. Gebruik dit bijvoorbeeld als je Javascript code wilt
     toevoegen aan je webtemplate.
 
-Zie ook: [Probleem: Blokhaken en accolades veroorzaken
-personalisatiefouten](./how-to-solve-errors-in-personalization.md)
+Zie ook: [Probleem: Blokhaken en accolades veroorzaken personalisatiefouten](./how-to-solve-errors-in-personalization.md)
 
 ### **Dollarteken**
 

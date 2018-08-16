@@ -1,4 +1,4 @@
-# Gebruikersbeheer
+# Accounts en gebruikers
 
 Het kan voorkomen dat je op een bepaald moment je gegevens wilt wijzigen.
 Denk bijvoorbeeld aan je bedrijfsnaam of je inloggegevens. Je kunt dit 

@@ -1,4 +1,4 @@
-# Loadfile en linkfile
+# De loadfile en linkfile functies
 
 Het is mogelijk om bij profielen in een database bestanden op te slaan.
 Deze bestanden kan je handmatig toevoegen, of ze kunnen door het profiel

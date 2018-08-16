@@ -1,4 +1,4 @@
-# Loadfeed functie
+# De Loadfeed functie
 
 Met de loadfeed functie kan je eenvoudig feeds in je e-mail of
 webdocument laden. Je kan met deze functie een feed inladen die je in

@@ -221,7 +221,10 @@ variabele profile.naam. Een overzichtje:
     {/foreach}
 
 **Javascript-alternatief**
-    for (var i=0; i<profile.werkgever.referrers.medewerkers.length; i++)
+    for (
+        var i = 0; 
+        i < profile.werkgever.referrers.medewerkers.length; 
+        i++)
     {
     ...
     }
@@ -232,7 +235,7 @@ variabele profile.naam. Een overzichtje:
     {/foreach}
 
 **Javascript-alternatief**
-    for (var i=0; i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) 
+    for (var i =0; i<profile.werkgever.referrers["werkgever@medewerkers"].length; i++) 
     {
     ...
     }
