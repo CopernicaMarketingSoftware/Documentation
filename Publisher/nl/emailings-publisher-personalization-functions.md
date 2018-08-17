@@ -49,9 +49,9 @@ Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger o
 ---
 ## capture
 
-*Capture* kan gebruikt worden om de code tussen de begin tag en de eind tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./emailings-publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden. 
+*Capture* kan gebruikt worden om de code tussen de begintag en de eind-tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./emailings-publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden. 
 
-De [rawcapture](./emailings-publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* overal vervangen door *rawcapture* 
+De [rawcapture](./emailings-publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* vervangen door *rawcapture* 
 in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
 *Capture* heeft vele functionaliteiten. Je kunt er informatie mee opslaan of toevoegen aan een bestaande variabele om een array te maken. We laten nu eerst wat parameters zien voor de functie en vervolgens hoe je ze gebruikt.
@@ -108,7 +108,7 @@ In dit voorbeeld is de tekst kort en had ook de [assign](./emailings-publisher-p
 
 ## Capture gebruiken met arrays
 
-Een meer geavanceerde techniek is om *capture* te gebruiken in combinatiemet een array, die je kunt printen met de [foreach functie](./emailings-publisher-personalization-functions#foreach). Dit kan ontzettend nuttig zijn als je informatie op meerdere plekken op wil slaan in een object.
+Een meer geavanceerde techniek is om *capture* te gebruiken in combinatie met een array, die je kunt printen met de [foreach functie](./emailings-publisher-personalization-functions#foreach). Dit kan ontzettend nuttig zijn als je informatie op meerdere plekken op wil slaan in een object.
 
 Je kunt de onderstaande code gebruiken en aanpassen om een array te maken:
 
@@ -225,7 +225,7 @@ Zoals je misschien wel hebt gezien in de voorbeelden gebruikt Smarty syntax krul
 
 Om een linkerhaak '{' te printen kun je de code **{ldelim}** wat staat voor left delimiter. Om de rechterhaak '}' te printen kun je de code **{rdelim}** gebruiken, wat staat voor right delimiter.
 
-Als je echter een groot stuk letterlijk wil printen zonder alle haken te vervangen is het verstandiger literalte gebruiken.
+Als je echter een groot stuk letterlijk wil printen zonder alle haken te vervangen is het verstandiger literal te gebruiken.
 
 ---
 # fetch
@@ -261,7 +261,7 @@ Dit voorbeeld gebruikt ook de [if functie](./emailings-publisher-personalize-fun
 
 De *foreach en foreachelse* functies kunnen gebruikt worden om bijvoorbeeld over arrays met data te loopen. Je kunt *foreach* loops ook in elkaar plaatsen. Het aantal iteraties wordt altijd bepaald door de lengte van de array of een integer voor een arbitraire hoeveelheid iteraties.
 
-### Parmaters
+### Parameters
 
 | Parameter naam | Omschrijving                                    |
 |----------------|-------------------------------------------------|
@@ -384,7 +384,7 @@ van de profielen in je template of document.
 Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier 
 tekst blok.
 
-### Ondersteunde bestand types
+### Ondersteunde bestandstypen
 
 * ZIP bestand: *.zip
 * Plain tekst
@@ -428,7 +428,7 @@ In een simpel geval waarin bijvoorbeeld maar twee krulhaken gebruikt worden kan 
 
 ### Voorbeeld
 
-Om de *literal* functie te gebruiken hoef je alleen wat letterlijk genomen moet worden tussen de begin tag (`{literal}`) en end tag (`{\literal}`) te plaatsen.
+Om de *literal* functie te gebruiken hoef je alleen wat letterlijk genomen moet worden tussen de begintag (`{literal}`) en end-tag (`{\literal}`) te plaatsen.
  
     <script>
        // Deze haakjes zouden in Smarty 3 automatisch 
@@ -449,7 +449,7 @@ Dit voorbeeld komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 
 ## loadfeed
 
-Met de loadfeed functie kun je eenvoudig feeds in je e-mail ofwebdocument laden. Je kunt met deze functie een feed inladen die je in het onderdeel Content hebt gemaakt of een feed welke elders issamengesteld en gehost.
+Met de loadfeed functie kun je eenvoudig feeds in je e-mail of webdocument laden. Je kunt met deze functie een feed inladen die je in het onderdeel Content hebt gemaakt of een feed welke elders is samengesteld en gehost.
 
 ### Voorbeeld
 
@@ -457,7 +457,7 @@ Met de loadfeed functie kun je eenvoudig feeds in je e-mail ofwebdocument laden.
     {loadfeed feed='http://www.eendomein.nl/feed/feed.xml'}
 
 Vervang *http://www.eendomein.nl/feed/feed.xml*  met het adres (URL) van de feed die elders is gepubliceerd.
-Voor uitgebereide informatie over loadfeed met eigen styling klik dan [hier](./personalization-functions-loadfeed.md).
+Voor uitgebreide informatie over loadfeed met eigen styling klik dan [hier](./personalization-functions-loadfeed.md).
 
 ---
 
@@ -467,7 +467,7 @@ De *loadfile* functie laat je een file laden uit het files onderdeel van de prof
 
 Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier tekst blok.
 
-### Ondersteunde bestand types
+### Ondersteunde bestandstypen
 
 - HTML files: *.html
 - TXT files: *.txt
@@ -747,7 +747,7 @@ Om een eigen pagina te tonen, gebruik je de 'redirect' functie
 
 De uitschrijver wordt, bij het klikken op de link, direct doorverwezen naar de pagina die je als redirect hebt opgegeven.
 
-Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica eeneigen domein te tonen, is de optie *domain* beschikbaar.
+Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica een eigen domein te tonen, is de optie *domain* beschikbaar.
 
     {unsubscribe domain='nieuwsbrief.yourdomain.com'}
 
@@ -795,6 +795,8 @@ worden in een mail wordt het deel tussen de *webonly* tags genegeerd.
 In het voorbeeld gebruiken we het {webonly} blok om de link naar de homepage 
 te verstoppen als de gebruiker in zijn mail kijkt. Deze content is alleen 
 zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./emailings-publisher-personalization-functions#mailonly) deze toont content in de mailclient. 
+
+
 
 
 

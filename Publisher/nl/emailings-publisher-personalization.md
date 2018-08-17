@@ -10,7 +10,7 @@ mailings en nieuwsbrieven.
 Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
-* SMARTY is *hooflettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
+* SMARTY is *hoofdlettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
 * Accolades gebruiken kan met de [literal](./emailings-publisher-personalization-functions#literal) functie.
 
 ### Database variabelen
@@ -104,16 +104,14 @@ wel uitpakt zoals je dat hebt bedoeld. Voor dit doel is er een *standaardbestemm
 ### De bewerkmodus instellen
 
 Onderaan een document, naast de button voor de 
-[personalisatieinstellingen](emailings-publisher-personalisatie#personalization_settings), vind je de button
-voor de bewerkmodus. Met deze button kun je de weergave van het document
-veranderen.
+[personalisatieinstellingen](emailings-publisher-personalisatie#personalization_settings), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
 
 ![Edit and preview mode](../images/preview.png)
 
 Er zijn vier mogelijke instellingen, en ze spreken allemaal nogal voor zich:
 
-    * bewerkmode, met gepersonaliseerde content
-    * bewerkmode, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
+    * bewerkmodes, met gepersonaliseerde content
+    * bewerkmodes, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
     * preview mode, met gepersonaliseerde content
     * preview mode, nog niet gepersonaliseerd
     
@@ -146,7 +144,7 @@ de standaardbestemming wilt gebruiken, en daarna kies je voor de optie
 "standaardbestemming instellen".
 
 Vanuit het helpmenu kan het ook. Als je de de link "welkom <jouw naam>" klikt,
-kom je bij een dialoogvenstertje met jouw persoonlijke instellingen. Hier is
+kom je bij een dialoogvenster met jouw persoonlijke instellingen. Hier is
 ook een tabblad om de standaardbestemming in te stellen.
 
 ![Test destination dialog](../images/createtestdestination.png)

@@ -1,7 +1,7 @@
 # Headers
 
 Headers worden gebruikt om informatie mee te geven aan een email. 
-Er zijn gestandaardizeerde headers zoals "From" en "Subject", maar je 
+Er zijn gestandaardiseerde headers zoals "From" en "Subject", maar je 
 kunt ook zelf zogenaamde "x-headers" gebruiken.
 
 In Marketing Suite vind je al deze editors bovenaan de Template Editor 
@@ -27,7 +27,7 @@ bepalen welke X-headers je gebruikt of wat je meegeeft. Je kan bijvoorbeeld
 de naam van je selectie of campagne meegeven voor je eigen statistieken.
 
 Met Copernica kun je hier ook Smarty [personalisatie](./personalization) 
-gebruiken. Zo kun je bijvoorbeeld aan elke email een "X-PF-ID" meegeven, 
+gebruiken. Zo kun je bijvoorbeeld aan elke e-mail een "X-PF-ID" meegeven, 
 waar je de ID van een profiel meegeeft (bijvoorbeeld omdat deze anders 
 is in je eigen database). Als de email vervolgens niet aankomt kun je 
 dit profiel zo terug zoeken in je eigen database en contacteren om het 
@@ -36,8 +36,8 @@ probleem op te lossen.
 ## Unsubscribe
 
 Je kunt ook altijd de *list unsubscribe* header toevoegen. Hiermee 
-kunnen sommige emailclienten meteen een unsubscribe link bovenaan de 
-email plaatsen. Wij raden je aan altijd minstens een uitschrijflink te 
+kunnen sommige e-mailclients meteen een unsubscribe link bovenaan de 
+e-mail plaatsen. Wij raden je aan altijd minstens een uitschrijflink te 
 plaatsen. Dit komt ten goede aan je [reputatie als verzender](./sender-reputation) 
 en je kan het [uitschrijfgedrag](./database-unsubscribe-behavior) zelf 
 instellen. 

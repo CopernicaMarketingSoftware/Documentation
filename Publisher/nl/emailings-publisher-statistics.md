@@ -1,23 +1,18 @@
 # Statistieken
 
-De servers van Copernica slaan informatie op over jouw emailings en 
-gebruikers, die vervolgens bekeken kan worden in de Publisher applicatie. 
-Je kunt hier bijvoorbeeld zien hoe vaak je email geopend is. Je kunt de resultaten van een mailing ook exporteren met Publisher of [exporteren met de REST API](./rest-get-logfiles-names).
+De servers van Copernica slaan informatie op over jouw e-mailings en gebruikers, die vervolgens bekeken kan worden in de Publisher applicatie. Je kunt hier bijvoorbeeld zien hoe vaak je e-mail geopend is. Je kunt de resultaten van een mailing ook exporteren met Publisher of [exporteren met de REST API](./rest-get-logfiles-names).
 
-Als uit je statistieken blijkt dat veel van je mails niet aankomen kun je 
+Als uit je statistieken blijkt dat veel van je mails niet aankomen, kun je 
 dit [artikel over errors](./soft-and-hard-bounces-error-types-and-delivery-codes) 
 bekijken voor meer informatie.
 
 ## Individuele statistieken
 
-Vraag jij je af hoe succesvol je laatste mailing was? Gebruik onze 
-mailing statistieken om te zien of jij tevreden bent.
+Vraag jij je af hoe succesvol je laatste mailing was? Gebruik onze mailing statistieken om te zien of jij tevreden bent.
 
-De document of template statistieken geven informatie over de errors, impressions, 
-clicks etc. De statistieken bevatten ook een tabel met kerncijfers.
+De document of template statistieken geven informatie over de errors, impressions, clicks etc. De statistieken bevatten ook een tabel met kerncijfers.
 
-De statistieken voor alle mailings verzonden met de Publisher applicatie 
-kunnen gevonden worden in het onderdeel **E-mailings**.
+De statistieken voor alle mailings verzonden met de Publisher applicatie kunnen gevonden worden in het onderdeel **E-mailings**.
 
 -   Selecteer je mailing/template
 -   Klik op het **statistieken** tabje en open het volledige rapport.
@@ -114,4 +109,3 @@ totaal aantal bestemmingen maal 100.
 Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
 impressies en alle kliks meegeteld, hierdoor zie je een verschil in
 aantallen impressies/kliks.
-
