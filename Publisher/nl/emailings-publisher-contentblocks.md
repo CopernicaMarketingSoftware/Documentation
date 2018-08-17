@@ -1,21 +1,13 @@
 # Contentblokken
-Tags kan je kunnen aangemaakt worden in de broncode van een email template. Zoals beschreven in het emailings gedeelte zijn er 3 soorten content blokken/tags. Deze tags worden in dit artikel nader toegelicht. 
+Dit kun je gebruiken in de broncode van een e-mailtemplate. Er zijn 3 soorten content blokken/tags. Deze tags worden in dit artikel nader toegelicht. 
 
 ## Text tags
 
-Als je zelf een template maakt, kun je in de broncode van de template [text] 
-tags opnemen. Op de plaats van de [text] tag in de template kan op 
-documentniveau later tekst worden ingevoerd.
+Als je zelf een template maakt, kun je in de broncode van de template [text] tags opnemen. Op de plaats van de [text] tag in de template kan op documentniveau later tekst worden ingevoerd.
 
 ![](../images/textblockcode.png)
 
-Zoals met alle tags die je in een template kunt plaatsen, is het verstandig 
-om de tag te voorzien van een *name* attribuut. Als je dan later de volgorde
-van de tags verandert, of als je later een nieuwe tag toevoegt aan de template,
-dan blijven bestaande documenten intact. Door een *name* attribuut te gebruiken,
-kunnen op documentniveau de ingevoerde teksten herleid worden tot het juiste
-blok in de template, zelfs als je later de template aanpast en de volgorde van 
-de blokken verandert.
+Zoals met alle tags die je in een template kunt plaatsen, is het verstandig om de tag te voorzien van een *name* attribuut. Als je dan later de volgorde van de tags verandert, of als je later een nieuwe tag toevoegt aan de template dan blijven bestaande documenten intact. Door een *name* attribuut te gebruiken kunnen op documentniveau de ingevoerde teksten herleid worden tot het juiste blok in de template, zelfs als je later de template aanpast en de volgorde van de blokken verandert.
 
 `[text name="example"]`
 
@@ -24,25 +16,19 @@ Zorg er voor dat je voor elke text tag een andere naam gebruikt.
 ### De editor
 
 Op documentniveau kan een tekst worden geplaatst op de plek van de [text] tag. 
-Normaal gesproken wordt hier een handige *what-you-see-is-what-you-get* editor 
-voor gebruikt, waarmee het makkelijk is om de ingevoerde tekst op te maken en
+Normaal gesproken wordt hier een handige *what-you-see-is-what-you-get* (WYSIWYG) editor voor gebruikt, waarmee het makkelijk is om de ingevoerde tekst op te maken en
 van (eenvoudige) opmaak te voorzien. Deze editor is voor de meeste mensen die 
 op documentniveau werken, vaak marketeers, het prettigst in het gebruik.
 
-Indien gewenst kan de marketeer als hij of zij een tekst bewerkt de handige editor 
-uitschakelen en overstappen op een ruwe HTML editor. Hij of zij moet dan zelf 
-de HTML code invoeren die op de plek van de [text] tag wordt geplaatst.
+Indien gewenst kan de marketeer als hij of zij een tekst bewerkt de handige editor uitschakelen en overstappen op een ruwe HTML editor. Hij of zij moet dan zelf de HTML code invoeren die op de plek van de [text] tag wordt geplaatst.
 
-Als je bij het maken van een template al van te voren weet dat een gebruiker
-de voorkeur geeft aan deze HTML editor in plaats van de WYSIWYG editor, dan
-kun je dat in de template aangeven.
+Als je bij het maken van een template al van te voren weet dat een gebruiker de voorkeur geeft aan deze HTML editor in plaats van de WYSIWYG editor, dan kun je dat in de template aangeven.
 
-`[text name="example" editor="poor"]`
+`[text name="example1" editor="poor"]`
 
-We hebben de prettig te gebruiken WYSIWIG editor de "rich" editor genoemd.
-Deze editor heeft immers allerlei tools en knopjes die het leven makkelijker 
-maken en verrijken. Voor de andere editor, waarmee je zelf de pure HTML code 
-moet invoeren, gebruiken we het tegenovergestelde als naam: "poor".
+We hebben de prettig te gebruiken WYSIWIG editor de "rich" editor genoemd. Deze editor heeft immers allerlei tools en knopjes die het leven makkelijker maken en verrijken. Voor de andere editor, waarmee je zelf de pure HTML code moet invoeren, gebruiken we het tegenovergestelde als naam: "poor".
+
+`[text name="example2" editor="rich"]`
 
 ### Inleidende en afsluitende HTML code
 
@@ -51,26 +37,18 @@ Je kunt ook een attribuut *begin* en *end* aan de [text] tag toevoegen.
 `[text name="example" begin="<b>" end="</b>"]`
 
 Als op documentniveau het tekstblok leeg blijft dan wordt de waarde van de
-*begin* en *end* tags genegereerd. Er komen dan dus ook geen &lt;b&gt; en
+*begin* en *end* tags gegenereerd. Er komen dan dus ook geen &lt;b&gt; en
 &lt;/b&gt; in het uiteindelijke document. Maar als er wel een tekst wordt
 ingevoerd, dan wordt de waardes van deze attributen automatisch rond de
 ingevoerde tekst geplaatst.
 
 ## Image tags
 
-In een template kun je met behulp van [image] tags opgeven waar afbeeldingen 
-mogen worden geplaatst. Als de template wordt gebruikt voor het samenstellen 
-van een document, kan in het document op elke plek waar je een [image] tag 
-hebt gezet door de gebruiker een afbeelding worden ingevoerd.
+In een template kun je met behulp van [image] tags opgeven waar afbeeldingen mogen worden geplaatst. Als de template wordt gebruikt voor het samenstellen van een document, kan in het document op elke plek waar je een [image] tag hebt gezet door de gebruiker een afbeelding worden ingevoerd.
 
 ![](../images/imageblocktag.png)
 
-Ook hier geldt weer, net als bij de andere *tags* die je in een template kunt
-plaatsen, dat het sterk is aan te raden om een attribuut *name* aan de tag
-toe te voegen. Hierdoor kunnen op documentniveau de afbeeldingen worden
-gekoppeld aan de juiste image tags, zelfs als je later de template wijzigt
-en de volgorde van de tags verandert. Elke afbeelding binnen de template moet
-een unieke naam hebben.
+Ook hier geldt weer, net als bij de andere *tags* die je in een template kunt plaatsen, dat het sterk is aan te raden om een attribuut *name* aan de tag toe te voegen. Hierdoor kunnen op documentniveau de afbeeldingen worden gekoppeld aan de juiste image tags, zelfs als je later de template wijzigt en de volgorde van de tags verandert. Elke afbeelding binnen de template moet een unieke naam hebben.
 
 ### Formaat
 
@@ -86,19 +64,11 @@ je dit doen door middel van de volgende code:
 
 `[image name="example" width="100" height="100"]`
 
-Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch 
-vergroot of verkleind. Naast deze precies afgedongen grootte
-die je met de *width* en *height* attributen instelt, kun je ook een minumum- 
-of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld
-binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
+Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch  vergroot of verkleind. Naast deze precies afgedongen grootte die je met de *width* en *height* attributen instelt, kun je ook een minimum - of maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld binnen de 100 en 150 pixels moet blijven, doe je dit als volgt:
 
 `[image name="example" minwidth="100" maxwidth="150"]`
 
-Er zijn ook *minheight* en *maxheight* attributen die hetzelfde doen voor de
-hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten
-worden vergroot of verkleind, waarbij de verhouding tussen breedte en hoogte 
-zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
-
+Er zijn ook *minheight* en *maxheight* attributen die hetzelfde doen voor de hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten worden vergroot of verkleind, waarbij de verhouding tussen breedte en hoogte zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
 
 ### Optionele afbeeldingen
 
@@ -157,14 +127,12 @@ tekst en afbeeldingen op te nemen:
 
 ```html
 [loop name="myloop"]
-    <div>
-        <table>
-            <tr>
-                <td>[text name="mytext"]</td>
-                <td>[image name="myimage"]</td>
-            </tr>
-        </table>
-    </div>
+<table>
+  <tr> 
+    <td>[text name="mytext"]</td>
+    <td>[image name="myimage"]</td>
+  </tr>
+</table>
 [/loop]
 ```
 
@@ -179,7 +147,6 @@ Ook voor loopblokken geldt, net als bij alle andere soorten blokken, dat het
 is aan te raden om elk blok een eigen unieke naam mee te geven. Bij loopblokken
 heeft de naam zelfs een extra functie, omdat je de naam kunt gebruiken voor
 scripting en *if* statements (hierover later meer).
-
 
 ### Minimum en maximum waardes
 
@@ -237,7 +204,7 @@ Deze variabelen kun je gebruiken om de opmaak van de loops wat te verfraaien:
         [text name="mytext"]
     </p>
     [if !$loop.myloop.last]
-        <hr/>
+        <hr />
     [/if]
 [/loop]
 ```
@@ -260,7 +227,4 @@ en functies mee aan te geven, maar vierkante haakjes. De [image], [text] en [loo
 blokken zijn dus eigenlijk gewone Smarty functies, en de [$loop.naamvanloop.*] 
 variabelen zijn gewone Smarty variabelen. Je kunt daarom binnen een template 
 alle trucjes en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt 
-van vierkante haakjes in plaats van accolades. Meer informatie over Smarty kun 
-je vinden op [www.smarty.net](http://www.smarty.net).
-
-
+van vierkante haakjes in plaats van accolades. 
