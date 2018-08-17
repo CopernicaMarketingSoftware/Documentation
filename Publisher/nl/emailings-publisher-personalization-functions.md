@@ -34,7 +34,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{unsubscribe}](./emailings-publisher-personalization-functions#unsubscribe)              | afmeldlink                                                                   |
 | [{webform}](./emailings-publisher-personalization-functions#webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./emailings-publisher-personalization-functions#webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
-
+| [{webversion}](./emailings-publisher-personalization-functions#webversion)                      | webversielink                      |
 ## assign
 
 De {assign} functie kan gebruikt worden om een waarde in een variabele op te slaan. Je kunt deze dan later gebruiken.
@@ -802,6 +802,34 @@ In het voorbeeld gebruiken we het {webonly} blok om de link naar de homepage
 te verstoppen als de gebruiker in zijn mail kijkt. Deze content is alleen 
 zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./emailings-publisher-personalization-functions#mailonly) deze toont content in de mailclient. 
 
+
+---
+
+## webversion
+
+De webversie gebruik je om vanuit de email te linken naar een versie van
+het e-maildocument die door de ontvanger kan worden bekeken in zijn of
+haar internetbrowser. Deze versie wordt automatisch door de software
+aangemaakt wanneer deze via deze functie wordt opgevraagd. De webversie
+wordt altijd **gepersonaliseerd** weergegeven. De webversie wordt met de volgende tag getoond:
+
+    {webversion}
+
+### Extra opties
+
+Beide functies hebben dezelfde opties, tenzij anders aangegeven
+
+**showheader=false**
+
+De header (met hierin afzender- en documentinformatie) die standaard
+wordt getoond bovenaan een webversie kan je verwijderen
+door *showheader=false* aan de tag toe te voegen.
+
+    {webversion showheader=false}
+    
+### Voorbeeld
+
+    <a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>
 
 
 
