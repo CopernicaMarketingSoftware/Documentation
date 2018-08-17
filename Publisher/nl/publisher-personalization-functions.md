@@ -5,40 +5,40 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 
 | Functie naam                                                          | Functie omschrijving                                                         |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [{assign}](./emailings-publisher-personalization-functions#assign)                        | waarde toekennen aan een variabele                                           |
-| [{capture}](./emailings-publisher-personalization-functions#capture)                      | tekst in een variabele opslaan                                               |
-| [{condition}](./emailings-publisher-personalization-functions#condition)                  | conditioneel blok op basis van JavaScript                                    |
-| [{counter}](./emailings-publisher-personalization-functions#counter)                      | teller                                                                       |
-| [{cycle}](./emailings-publisher-personalization-functions#cycle)                          | wisselen tussen array van waardes                                            |
+| [{assign}](./publisher-personalization-functions#assign)                        | waarde toekennen aan een variabele                                           |
+| [{capture}](./publisher-personalization-functions#capture)                      | tekst in een variabele opslaan                                               |
+| [{condition}](./publisher-personalization-functions#condition)                  | conditioneel blok op basis van JavaScript                                    |
+| [{counter}](./publisher-personalization-functions#counter)                      | teller                                                                       |
+| [{cycle}](./publisher-personalization-functions#cycle)                          | wisselen tussen array van waardes                                            |
 | {eval}                                                                | Het evalueren van variabele als template                                     |
-| [{fetch}](./emailings-publisher-personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
-| [{foreach}](./emailings-publisher-personalization-functions#foreach)                      | itereren over een array                                                      |
-| [{if}](./emailings-publisher-personalization-functions#if)                                | conditionele blokken                                                         |
-| [{in_miniselection}](./emailings-publisher-personalization-functions#in_miniselection)    | blok dat alleen wordt getoond indien subprofiel tot een miniselectie behoort |
-| [{in_selection}](./emailings-publisher-personalization-functions#in_selection)            | blok dat alleen wordt getoond indien profiel tot een selectie behoort        |
-| [{ldelim}](./emailings-publisher-personalization-functions#delim)                         | linkeraccolade                                                               |
-| [{literal}](./emailings-publisher-personalization-functions#literal)                      | blok markeren dat letterlijk genomen wordt                                   |
-| [{linkfile}](./emailings-publisher-personalization-functions#linkfile)                    | linken naar een file                                                         |
-| [{linkpdf}](./emailings-publisher-personalization-functions#linkpdf)                      | linken naar een PDF bestand                                                  |
-| [{loadfeed}](./emailings-publisher-personalization-functions#loadfeed)                    | inladen van een externe RSS feed                                             |
-| [{loadfile}](./emailings-publisher-personalization-functions#loadfile)                    | inladen van een bestand                                                      |
-| [{loadprofile}](./emailings-publisher-personalization-functions#loadprofile)                    | inladen van een profiel                                                      |
-| [{loadsubprofile}](./emailings-publisher-personalization-functions#loadsubprofile)                    | inladen van een subprofiel                                                      |
-| [{mailonly}](./emailings-publisher-personalization-functions#mailonly)                    | blok markeren dat alleen in de mailversie wordt getoond                      |
-| [{math}](./emailings-publisher-personalization-functions#math)                            | berekening uitvoeren                                                         |
-| [{rawcapture}](./emailings-publisher-personalization-functions#rawcapture)                | als {capture}, maar dan zonder html escaping                                 |
-| [{strip}](./emailings-publisher-personalization-functions#strip)                          | witruimte verwijderen                                                        |
-| [{survey}](./emailings-publisher-personalization-functions#survey)                        | inladen van een enquête                                                      |
-| [{rdelim}](./emailings-publisher-personalization-functions#delim)                         | rechteraccolade                                                              |
-| [{textformat}](./emailings-publisher-personalization-functions#textform)                  | tekst formatteren                                                            |
-| [{unsubscribe}](./emailings-publisher-personalization-functions#unsubscribe)              | afmeldlink                                                                   |
-| [{webform}](./emailings-publisher-personalization-functions#webform)                      | inladen van een webformulier                                                 |
-| [{webonly}](./emailings-publisher-personalization-functions#webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
-| [{webversion}](./emailings-publisher-personalization-functions#webversion)                      | webversielink                      |
+| [{fetch}](./publisher-personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
+| [{foreach}](./publisher-personalization-functions#foreach)                      | itereren over een array                                                      |
+| [{if}](./publisher-personalization-functions#if)                                | conditionele blokken                                                         |
+| [{in_miniselection}](./publisher-personalization-functions#in_miniselection)    | blok dat alleen wordt getoond indien subprofiel tot een miniselectie behoort |
+| [{in_selection}](./publisher-personalization-functions#in_selection)            | blok dat alleen wordt getoond indien profiel tot een selectie behoort        |
+| [{ldelim}](./publisher-personalization-functions#delim)                         | linkeraccolade                                                               |
+| [{literal}](./publisher-personalization-functions#literal)                      | blok markeren dat letterlijk genomen wordt                                   |
+| [{linkfile}](./publisher-personalization-functions#linkfile)                    | linken naar een file                                                         |
+| [{linkpdf}](./publisher-personalization-functions#linkpdf)                      | linken naar een PDF bestand                                                  |
+| [{loadfeed}](./publisher-personalization-functions#loadfeed)                    | inladen van een externe RSS feed                                             |
+| [{loadfile}](./publisher-personalization-functions#loadfile)                    | inladen van een bestand                                                      |
+| [{loadprofile}](./publisher-personalization-functions#loadprofile)                    | inladen van een profiel                                                      |
+| [{loadsubprofile}](./publisher-personalization-functions#loadsubprofile)                    | inladen van een subprofiel                                                      |
+| [{mailonly}](./publisher-personalization-functions#mailonly)                    | blok markeren dat alleen in de mailversie wordt getoond                      |
+| [{math}](./publisher-personalization-functions#math)                            | berekening uitvoeren                                                         |
+| [{rawcapture}](./publisher-personalization-functions#rawcapture)                | als {capture}, maar dan zonder html escaping                                 |
+| [{strip}](./publisher-personalization-functions#strip)                          | witruimte verwijderen                                                        |
+| [{survey}](./publisher-personalization-functions#survey)                        | inladen van een enquête                                                      |
+| [{rdelim}](./publisher-personalization-functions#delim)                         | rechteraccolade                                                              |
+| [{textformat}](./publisher-personalization-functions#textform)                  | tekst formatteren                                                            |
+| [{unsubscribe}](./publisher-personalization-functions#unsubscribe)              | afmeldlink                                                                   |
+| [{webform}](./publisher-personalization-functions#webform)                      | inladen van een webformulier                                                 |
+| [{webonly}](./publisher-personalization-functions#webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
+| [{webversion}](./publisher-personalization-functions#webversion)                      | webversielink                      |
 ## assign
 
 De {assign} functie kan gebruikt worden om een waarde in een variabele op te slaan. Je kunt deze dan later gebruiken.
-Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger om de [capture](./emailings-publisher-personalization-functions#capture) of de [rawcapture](./emailings-publisher-personalization-functions#rawcapture) functie te gebruiken, omdat deze hier beter voor geschikt zijn.
+Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger om de [capture](./publisher-personalization-functions#capture) of de [rawcapture](./publisher-personalization-functions#rawcapture) functie te gebruiken, omdat deze hier beter voor geschikt zijn.
 
 ### Voorbeeld    
     {assign var="name" value="Bob"} of {assign "name" "Bob"}
@@ -49,9 +49,9 @@ Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger o
 ---
 ## capture
 
-*Capture* kan gebruikt worden om de code tussen de begintag en de eind-tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./emailings-publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden. 
+*Capture* kan gebruikt worden om de code tussen de begintag en de eind-tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden. 
 
-De [rawcapture](./emailings-publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* vervangen door *rawcapture* 
+De [rawcapture](./publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* vervangen door *rawcapture* 
 in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
 *Capture* heeft vele functionaliteiten. Je kunt er informatie mee opslaan of toevoegen aan een bestaande variabele om een array te maken. We laten nu eerst wat parameters zien voor de functie en vervolgens hoe je ze gebruikt.
@@ -103,12 +103,12 @@ De kortere versie ziet er als volgt uit:
     
 Je kunt nu het blok aanroepen met **{$myText}**.
     
-In dit voorbeeld is de tekst kort en had ook de [assign](./emailings-publisher-personalization-functions#assign), gebruikt kunnen worden, maar je kunt alles wat geen HTML is tussen deze tags plaatsen. Als je toch HTML wil gebruiken kun je {capture} vervangen door {rawcapture}.
+In dit voorbeeld is de tekst kort en had ook de [assign](./publisher-personalization-functions#assign), gebruikt kunnen worden, maar je kunt alles wat geen HTML is tussen deze tags plaatsen. Als je toch HTML wil gebruiken kun je {capture} vervangen door {rawcapture}.
 
 
 ## Capture gebruiken met arrays
 
-Een meer geavanceerde techniek is om *capture* te gebruiken in combinatie met een array, die je kunt printen met de [foreach functie](./emailings-publisher-personalization-functions#foreach). Dit kan ontzettend nuttig zijn als je informatie op meerdere plekken op wil slaan in een object.
+Een meer geavanceerde techniek is om *capture* te gebruiken in combinatie met een array, die je kunt printen met de [foreach functie](./publisher-personalization-functions#foreach). Dit kan ontzettend nuttig zijn als je informatie op meerdere plekken op wil slaan in een object.
 
 Je kunt de onderstaande code gebruiken en aanpassen om een array te maken:
 
@@ -129,7 +129,7 @@ Wat er nu gebeurt is dat we door alle waardes in *information* heen gaan, deze o
 ---
 
 ## condition
-Een *condition* lijkt qua werking veel op de [if functie](./emailings-publisher-personalization-functions#if) maar evalueert JavaScript expressies. De enige parameter is de expressie in JavaScript die geëvalueerd moet worden.
+Een *condition* lijkt qua werking veel op de [if functie](./publisher-personalization-functions#if) maar evalueert JavaScript expressies. De enige parameter is de expressie in JavaScript die geëvalueerd moet worden.
 
 ### Voorbeeld
 
@@ -215,13 +215,13 @@ Het volgende voorbeeld laat zien hoe je kleuren van de regenboog toe kunt wijzen
         {cycle values="red;orange;yellow;green;blue;indigo;purple, name=$product.color, delimiter=";"}
     {\foreach}
     
-Natuurlijk vereist dit voorbeeld een array met producten. Nadat deze code is gerund hebben alle producten een kleur die later weer opgevraagd kan worden. Dit voorbeeld gebruikt ook de [foreach functie](./emailings-publisher-personalization-functions#foreach).
+Natuurlijk vereist dit voorbeeld een array met producten. Nadat deze code is gerund hebben alle producten een kleur die later weer opgevraagd kan worden. Dit voorbeeld gebruikt ook de [foreach functie](./publisher-personalization-functions#foreach).
 
 ---
 
 ## ldelim en rdelim
 
-Zoals je misschien wel hebt gezien in de voorbeelden gebruikt Smarty syntax krulhaken. De Smarty code voor een naam is bijvoorbeeld **{$name}**.Dit betekent echter dat de krulhaak wat lastiger te gebruiken is als symbool. Er zijn drie manieren om dit op te lossen: Spaties plaatsen rond de krulhaken (Alleen [Smarty](./smarty-2-vs-smarty-3) 3), **ldelim** en **rdelim** en [literal](./emailings-publisher-personalization-functions#literal).
+Zoals je misschien wel hebt gezien in de voorbeelden gebruikt Smarty syntax krulhaken. De Smarty code voor een naam is bijvoorbeeld **{$name}**.Dit betekent echter dat de krulhaak wat lastiger te gebruiken is als symbool. Er zijn drie manieren om dit op te lossen: Spaties plaatsen rond de krulhaken (Alleen [Smarty](./smarty-2-vs-smarty-3) 3), **ldelim** en **rdelim** en [literal](./publisher-personalization-functions#literal).
 
 Om een linkerhaak '{' te printen kun je de code **{ldelim}** wat staat voor left delimiter. Om de rechterhaak '}' te printen kun je de code **{rdelim}** gebruiken, wat staat voor right delimiter.
 
@@ -251,7 +251,7 @@ Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
       <div id="weather">{$weather}</div>
     {/if}
 
-Dit voorbeeld gebruikt ook de [if functie](./emailings-publisher-personalize-functions#if).    Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
+Dit voorbeeld gebruikt ook de [if functie](./publisher-personalize-functions#if).    Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
     {fetch file="ftp://`$user`:`$password`@`$server`/`$path`"}
     
@@ -274,7 +274,7 @@ De *foreach en foreachelse* functies kunnen gebruikt worden om bijvoorbeeld over
 
 ### Voorbeeld
 
-Als we een array met waardes hebben, in dit geval definiëren we *information*, kunnen we hierover loopen en allerlei operaties uitvoeren. In dit geval houden we het simpel en printen we slechts de inhoud als tekst. De array wordt gemaakt met de [capture functie](./emailings-publisher-personalization-functions#capture).
+Als we een array met waardes hebben, in dit geval definiëren we *information*, kunnen we hierover loopen en allerlei operaties uitvoeren. In dit geval houden we het simpel en printen we slechts de inhoud als tekst. De array wordt gemaakt met de [capture functie](./publisher-personalization-functions#capture).
 
     {capture append="information"}{assign "name" "Bob"}{$profile.age}, {\capture}
     {capture append="information"}{assign "age" "25"}{$profile.age}, {\capture}
@@ -472,7 +472,7 @@ Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier t
 - HTML files: *.html
 - TXT files: *.txt
 
-Als je andere formaten wil gebruiken kun je ook [linken naar een file](./emailings-publisher-personalization-functions#linkfile).
+Als je andere formaten wil gebruiken kun je ook [linken naar een file](./publisher-personalization-functions#linkfile).
 
 ### Voorbeeld
 
@@ -569,7 +569,7 @@ browser geopend wordt is de content binnen dit blok niet meer zichtbaar.
     {/mailonly}
     
 In dit voorbeeld maken we gebruik van het {mailonly} block om de link 
-naar de webversie te verbergen uit de webversie. De tegenhanger hiervan is [{webonly}](./emailings-publisher-personalization-functions#webonly) deze toon enkel content in de webversie. 
+naar de webversie te verbergen uit de webversie. De tegenhanger hiervan is [{webonly}](./publisher-personalization-functions#webonly) deze toon enkel content in de webversie. 
 
 ---
 
@@ -603,7 +603,7 @@ Een simpele vergelijking:
     {assign "width" 3}
     {math equation="x * y" x=$height y=$width}
     
-Deze code wordt gebruikt om het resultaat van x * y uit te rekenen, wat 6 is in dit geval. Dit is maar een simpele vergelijking, maar je kunt deze zo ingewikkeld maken als je zelf wil. Dit voorbeeld gebruikt daarnaast de [assign functie](./emailings-publisher-personalization-functions#assign) in de korte versie.
+Deze code wordt gebruikt om het resultaat van x * y uit te rekenen, wat 6 is in dit geval. Dit is maar een simpele vergelijking, maar je kunt deze zo ingewikkeld maken als je zelf wil. Dit voorbeeld gebruikt daarnaast de [assign functie](./publisher-personalization-functions#assign) in de korte versie.
 
 Als we een breuk uit willen rekenen echter is het handiger om decimalen weer te geven. We willen dit resultaat ook opslaan, zodat we "1.33" krijgen als we **{$frac}** in de template typen.
 
@@ -613,7 +613,7 @@ Als we een breuk uit willen rekenen echter is het handiger om decimalen weer te 
 
 ---
 ## rawcapture
-De rawcapture functie is heel vergelijkbaar met '[capture](./emailings-publisher-personalization-functions#capture), maar gebruikt geen HTML escaping. Als je dit niet wilt gebruiken kun je capture overal vervangen door rawcapture in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
+De rawcapture functie is heel vergelijkbaar met '[capture](./publisher-personalization-functions#capture), maar gebruikt geen HTML escaping. Als je dit niet wilt gebruiken kun je capture overal vervangen door rawcapture in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
 ### Voorbeeld
 
@@ -800,7 +800,7 @@ worden in een mail wordt het deel tussen de *webonly* tags genegeerd.
     
 In het voorbeeld gebruiken we het {webonly} blok om de link naar de homepage 
 te verstoppen als de gebruiker in zijn mail kijkt. Deze content is alleen 
-zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./emailings-publisher-personalization-functions#mailonly) deze toont content in de mailclient. 
+zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./publisher-personalization-functions#mailonly) deze toont content in de mailclient. 
 
 
 ---
