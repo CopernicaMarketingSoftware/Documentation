@@ -80,7 +80,3 @@ en een negatieve offset om onderaan te beginnen.
 
 We hebben nu Emily geselecteerd. We hadden hetzelfde kunnen bereiken 
 door "Score" oplopend te sorteren en te beginnen vanaf positie 0.
-
-## Meer informatie
-
-* [Selecties](selections-introduction)

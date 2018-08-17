@@ -15,7 +15,7 @@ hoog te houden.
     is het ook mogelijk om de data weer van Copernica naar je eigen server 
     te krijgen.
 2.  Breng overzicht in je bestand door middel van duidelijke benamingen,
-    tabbladen en definities van gegevens. [Selecties](selections-introduction) 
+    tabbladen en definities van gegevens. [Selecties](database-selections-introduction) 
     stellen je in staat om één database op verschillende manieren te 
     bekijken, zoals op doelgroep, gevoerde campagnes of relatietypes.
 3.  Hou je database zo compleet mogelijk door nieuwe informatie altijd
