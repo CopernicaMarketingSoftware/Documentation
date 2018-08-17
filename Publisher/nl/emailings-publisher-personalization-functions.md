@@ -613,7 +613,7 @@ Als we een breuk uit willen rekenen echter is het handiger om decimalen weer te 
 
 ---
 ## rawcapture
-De rawcapture functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je dit niet wilt gebruiken kun je capture overal vervangen door rawcapture in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
+De rawcapture functie is heel vergelijkbaar met '[capture](./emailings-publisher-personalization-functions#capture), maar gebruikt geen HTML escaping. Als je dit niet wilt gebruiken kun je capture overal vervangen door rawcapture in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
 ### Voorbeeld
 
