@@ -27,7 +27,7 @@ That's it. In de email wordt de tag omgezet naar het (voor iedere
 ontvanger unieke) webadres (URL) van de webversie. Deze is nog niet
 klikbaar. Hiervoor gebruik je nog een beetje HTML:
 
-`<a href="{$webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>`
+`<a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>`
 
 ### Extra opties
 
