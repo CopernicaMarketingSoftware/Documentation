@@ -612,7 +612,13 @@ Als we een breuk uit willen rekenen echter is het handiger om decimalen weer te 
     {math equation="1 + x / y" assign="frac" format="%.2f" x=$height y=$width}
 
 ---
+## rawcapture
+De rawcapture functie is heel vergelijkbaar met '[capture](./emailings-publisher-personalization-functions#capture), maar gebruikt geen HTML escaping. Als je dit niet wilt gebruiken kun je capture overal vervangen door rawcapture in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
+### Voorbeeld
+
+    {rawcapture}<h1>{$profile.title}</h1>{rawcapture}
+---
 
 ## strip
 De *strip* functie verwijdert ruimte uit de template, die anders de HTML output zou kunnen veranderen. Het is nuttig als je graag je code uitschrijft met whitespace om het meer leesbaar te maken en voorkomt de vreemde bijwerkingen die dit kan hebben.
