@@ -39,4 +39,4 @@ De header (met hierin afzender- en documentinformatie) die standaard
 wordt getoond bovenaan een webversie kan je verwijderen
 door *showheader=false* aan de tag toe te voegen.
 
-Voorbeeld: `{$webversion showheader=false}`
+Voorbeeld: `{webversion showheader=false}`
