@@ -14,7 +14,6 @@
     * [Contentblokken](./emailings-publisher-contentblocks.md)
     * [Personalisatie](./emailings-publisher-personalization.md)
     * [Uitschrijflink](./emailings-publisher-unsubscribe.md)
-    * [Webversie](./emailings-publisher-webversion.md)
     * [Headers](./headers.md)
     * [Externe content](./emailings-publisher-external-content.md)
     * [Testen](./emailings-publisher-testing.md)
