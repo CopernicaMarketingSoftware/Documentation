@@ -20,7 +20,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|
 | id        | unieke identifier van het geklikte bericht               |
-| recipient | email adres van de klikker                               |
+| recipient | e-mailadres van de klikker                               |
 | ip        | ip adres van de klikker                                  |
 | time      | tijd van klikken                                         |
 | original  | de originele URL                                         |

@@ -6,7 +6,7 @@ helpen je huidige klanten te behouden.
 
 Om je klanten te re-activeren is het belangrijk dat je ze eerst weet te 
 identificeren en dan de juiste actie onderneemt. Je kunt ze bijvoorbeeld 
-een simpele email sturen, of een beloning als ze bij jou kopen.
+een simpele e-mail sturen, of een beloning als ze bij jou kopen.
 
 ## Inactieve klanten identificeren
 

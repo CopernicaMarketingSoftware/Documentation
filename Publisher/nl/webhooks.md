@@ -19,7 +19,7 @@ De rest gaat vanzelf.
 Het aardige van de webhooks is dat de data die Copernica naar jou
 stuurt veel rijker is dan de data die in eerste instantie bij Copernica 
 binnenkomt. Als Copernica een klik of een open registreert, dan zien we alleen
-het IP adres en de HTTP headers van de binnenkomende request. Het emailadres, 
+het IP adres en de HTTP headers van de binnenkomende request. Het e-mailadres, 
 de profieldata en de aan de mailing gekoppelde tags zoeken we er snel bij
 voordat we de webhook aanroepen. De data die jouw script ontvangt bevat
 hierdoor alle data die het makkelijk maakt om de terugmelding te koppelen

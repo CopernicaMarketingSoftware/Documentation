@@ -71,7 +71,7 @@ het document geef je er een waarde aan. Gebruik de waarde vervolgens met
 **{$property.name}**, waar je "name" vervangt door de naam van je variabele.
 
 Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
-aankopen en deze wil gebruiken in je email. Later heb je deze score niet meer
+aankopen en deze wil gebruiken in je e-mail. Later heb je deze score niet meer
 nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
 template variabele **score** instellen en deze gebruiken met **{$property.score}**.
 

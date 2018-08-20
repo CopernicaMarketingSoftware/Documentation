@@ -11,7 +11,7 @@ profielen om te selecteren instellen.
 
 De sort/select conditie specificeert ten eerste hoe je je database 
 sorteerd. Je kunt een enkel veld gebruiken voor sorteren, bijvoorbeeld 
-het emailadres, wat goed werkt als je unieke waarden in dit veld hebt. 
+het e-mailadres, wat goed werkt als je unieke waarden in dit veld hebt. 
 Als je echter op achternaam wil sorteren kun je gemakkelijk dubbele 
 waarden tegenkomen. Je kunt specificeren hoe je omgaat met deze 
 dubbele waarden door meer velden toe te voegen, zoals bijvoorbeeld de 

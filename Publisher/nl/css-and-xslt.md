@@ -35,11 +35,11 @@ Om een stylesheet te gebruiken navigeer je naar de optie **Stijl instellen...**
 in het menu. Er wordt nu een **Stijl** tab toegevoegd bij het document 
 of de template, waardoor je de stijl meteen makkelijk aan kan passen.
 
-Een groot aantal email clients kunnen of willen geen externe CSS styling accepteren. 
+Een groot aantal e-mailclients kunnen of willen geen externe CSS styling accepteren. 
 Copernica zet daarom je CSS om naar inline CSS. Dit betekent dat 
 je CSS regels binnen de HTML elementen wordt gekopieerd. Dit zorgt ervoor 
 dat je stylesheet niet zomaar genegeerd kan worden en zorgt ervoor dat 
-jouw email er voor de ontvanger ook daadwerkelijk zo uitziet als jij hem 
+jouw e-mail er voor de ontvanger ook daadwerkelijk zo uitziet als jij hem 
 hebt gestijld.
 
 Als je de stijl voor je document instelt krijg je een aantal opties:

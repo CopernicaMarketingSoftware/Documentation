@@ -5,7 +5,7 @@ en hoe je om kunt gaan met errors van mails die niet aankomen.
 
 ## Error codes
 
-Als een email niet afgeleverd kan worden stuurt de ontvangende mailserver 
+Als een e-mail niet afgeleverd kan worden stuurt de ontvangende mailserver 
 meestal een bericht terug met de error code en een korte beschrijving van 
 de error. Er zijn twee belangrijke types:
 
@@ -15,18 +15,18 @@ de error. Er zijn twee belangrijke types:
 ## Een error identificeren
 
 Het verschil tussen een hard en een soft bounce lijkt simpel, maar er kunnen 
-in werkelijkheid vele redenen zijn dat een email niet aankomt, onafhankelijk 
+in werkelijkheid vele redenen zijn dat een e-mail niet aankomt, onafhankelijk 
 van het soort bounce. Omdat enkel het onderscheid kunnen maken tussen deze 
 types niet genoeg is om alle errors op te lossen kijken we liever naar 
 waar in het verstuurproces de error zich voor heeft gedaan.
 
-We delen het verwerken en afleveren van een email in vijf stappen:
+We delen het verwerken en afleveren van een e-mail in vijf stappen:
 
 -   Stap 1: Domein naam wordt omgezet naar een IP adres.
 -   Stap 2: Er wordt een connectie gemaakt met het IP adres.
 -   Stap 3: Er wordt een connectie gemaakt met de ontvangende mailserver, bijvoorbeeld Hotmail.
--   Stap 4: De email wordt geaccepteerd door de ontvangende mailserver of stuurt een error terug.
--   Stap 5: Als zich hierna nog een error voordat wordt de email teruggestuurd 
+-   Stap 4: De e-mail wordt geaccepteerd door de ontvangende mailserver of stuurt een error terug.
+-   Stap 5: Als zich hierna nog een error voordat wordt de e-mail teruggestuurd 
 naar ons, vaak inclusfief error code. Meer informatie over deze error codes 
 kun je [hier](http://www.emailaddressmanager.com/tips/codes.html) vinden.
 
@@ -45,9 +45,9 @@ ook laten aanleveren aan een script op je eigen server met [WebHooks](./webhooks
 Hoe een error opgelost wordt hangt af van de gebruiker van de software 
 en van de ontvanger van de mail. Als er bijvoorbeeld andere contactinformatie, 
 zoals een telefoonnummer, bekend is kan er op deze wijze contact opgenomen 
-worden. Zo kan bijvoorbeeld het correcte emailadres opgevraagd worden.
+worden. Zo kan bijvoorbeeld het correcte e-mailadres opgevraagd worden.
 
-Als emails nooit aankomen bij een specifiek adres is het beter om deze 
+Als e-mails nooit aankomen bij een specifiek adres is het beter om deze 
 gebruikers niet meer te mailen, door ze buiten je maillijst te laten of 
 geheel uit je database te verwijderen. Het is mogelijk een selectie te maken 
 gebaseerd op errors met het selectie type "Check op resultaten e-mailcampagnes". 

@@ -3,11 +3,11 @@
 Profielen kunnen verrijkt worden met informatie die je uit je mailings 
 haalt. Zo kunnen hun kliks en orders je vertellen wat zij belangrijk vinden 
 en hoe jouw bedrijf van dienst kan zijn in de toekomst en helpen om relevantere 
-emails te sturen.  
+e-mails te sturen.  
 
 Met een handige [selectie](./database-selections-introduction) kun je deze informatie bijvoorbeeld 
 gebruiken om doelgroepen aan te maken en hen verschillende, meer toegespitste, 
-emails te sturen. Je kunt er ook voor kiezen deze informatie te gebruiken om je 
+e-mails te sturen. Je kunt er ook voor kiezen deze informatie te gebruiken om je 
 template te [personalizeren](./personalization), bijvoorbeeld door content 
 afhankelijk te maken van interesse.
 
@@ -78,7 +78,7 @@ van de klant.
 
 Nu je extra informatie verzamelt is het tijd om dat slim in te zetten. 
 De artikelen hieronder kunnen je wat ideeën geven over hoe je segmentaties kunt 
-maken en emails kunt personalizeren.
+maken en e-mails kunt personalizeren.
 
 * [Follow-ups in Marketing Suite](follow-up-manager-ms)
 * [Selecties](./database-selections-introduction)

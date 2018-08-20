@@ -12,7 +12,7 @@ Met [collecties](./database-fields-and-collections) kun je makkelijk
 de aankopen van je klanten opslaan in je database. Wij raden je aan een 
 [integratie](https://www.copernica.com/nl/integrations) met je webshop te maken 
 om dit proces volledig te automatiseren. Je moet ook de data van de aankopen 
-opslaan in de collectie om de tutorial te kunnen volgen. Als je een email adres 
+opslaan in de collectie om de tutorial te kunnen volgen. Als je een e-mailadres 
 hebt voor elke order maakt dat de vervolgstappen gemakkelijker, maar dit is 
 niet vereist. 
 
@@ -20,7 +20,7 @@ Laten we zeggen dat we twee telefoonmerken verkopen: A en B. Een telefoon
 van A gaat meestal 2 jaar mee, terwijl B maar 1,5 jaar mee gaat. We weten 
 ook dat de klanten van de merken erg loyaal zijn en niet snel zullen switchen.
 
-### Met emailadressen in collectie
+### Met e-mailadressen in collectie
 
 Eerst maken we twee lijsten; Mensen die een telefoon A nodig hebben en mensen 
 die een nieuwe telefoon B nodig hebben:
@@ -36,8 +36,8 @@ de juiste telefoon voor de klant op het moment dat zij deze nodig hebben.
 
 ### Zonder e-mailadressen in collectie
 
-Zonder een email adres in de collectie moeten we data opslaan in het 
-profiel zodat we deze kunnen emailen. We kopiëren data naar het profiel 
+Zonder een e-mailadres in de collectie moeten we data opslaan in het 
+profiel zodat we deze kunnen e-mailen. We kopiëren data naar het profiel 
 zodat we deze kunnen mailen:
 
 * Maak twee velden "laatste_telefoon_a" en "laatste_telefoon_b" aan in je database.

@@ -27,7 +27,7 @@ de volgende standaard waarde:
 `{math equation="x+y" x=$submits y=1}`
 
 Maak nog een veld dat je kunt gebruiken om te linken aan het profiel, 
-bijvoorbeeld het emailadres. Zorg ervoor dat dit een *key field* is. 
+bijvoorbeeld het e-mailadres. Zorg ervoor dat dit een *key field* is. 
 
 Stel het webformulier in om op *key fields* te checken, pas het profiel 
 aan en log in als het profiel in de [database](./database-introduction).

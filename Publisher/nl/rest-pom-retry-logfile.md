@@ -11,7 +11,7 @@ De logfiles bevatten de volgende informatie.
 | id           | ID van het bericht                           |
 | time         | Tijdstip van de verzendpoging                |
 | attempt      | Aantal pogingen tot tijdstip van de poging   |
-| email        | Emailadres van de ontvanger                  |
+| email        | E-mailadres van de ontvanger                  |
 | tags         | Tags van de mail, gescheiden door puntkommas |
 | senderdomain | Domein van de verzender                      |
 | profile      | ID van het profiel van de ontvanger          |

@@ -27,7 +27,7 @@ uitschrijfgedrag in te stellen op de database of collectie waaraan je de
 e-mailing richt! het uitschrijfgedrag wordt uitgevoerd in de database
 wanneer de ontvanger van de e-mail klikt op de uitschrijflink. Doet u
 dit niet, dan zal er niets gebeuren, en ontvangt de uitschrijver uw
-email de volgende keer opnieuw!
+e-mail de volgende keer opnieuw!
 
 Het uitschrijfgedrag stel je in via \*Profielen \> Databasebeheer \>
 **Uitschrijfopties...**

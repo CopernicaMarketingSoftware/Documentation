@@ -1,6 +1,6 @@
 # Data object - destination
 
-**Destination** is een variabele die toegang geeft aan de ontvanger van de email. 
+**Destination** is een variabele die toegang geeft aan de ontvanger van de e-mail. 
 De destination is altijd een alias voor het [profiel](./data-object-profile.md) 
 of het [subprofiel](./data-object-subprofile.md) waarnaar gemaild is. Als je 
 mailt naar een database of selectie is dit een profiel, als je mailt naar een collectie of 

@@ -35,8 +35,8 @@ De selectie bevat 4 regels met elk 2 condities. De eerste regel heeft een condit
 
 ### B_FoutiefEmailAdres
 
-Bevat alle profielen waarbij er in het email veld geen emailadres staat. Denk hierbij dat het veld leeg is of dat er geen @ in het e mailadres zit.
-De selectie bevat 1 regel en 1 conditie. De conditie checkt of het email veld een correct emailadres bevat, vervolgens wordt de regel omgedraaid door hem op **OF NIET** te zetten. 
+Bevat alle profielen waarbij er in het email veld geen e-mailadres staat. Denk hierbij dat het veld leeg is of dat er geen @ in het e mailadres zit.
+De selectie bevat 1 regel en 1 conditie. De conditie checkt of het email veld een correct e-mailadres bevat, vervolgens wordt de regel omgedraaid door hem op **OF NIET** te zetten. 
 
 ### C_Klachten
 
@@ -46,7 +46,7 @@ Deze selectie bevat 2 regels met beide 1 conditie. De eerste regel heeft een con
 ### D_DubbeleProfielen
 
 Bevat alle profielen die dubbel in de database staan behalve het oudste/originele profiel.
-Deze selectie bevat 1 regel met 1 conditie. De conditie checkt of een profiel dubbel is op basis van het emailadres, als het emailadres niet uniek is in jouw account verander dit dan naar jouw unieke waarde.
+Deze selectie bevat 1 regel met 1 conditie. De conditie checkt of een profiel dubbel is op basis van het e-mailadres, als het e-mailadres niet uniek is in jouw account verander dit dan naar jouw unieke waarde.
 
 ### E_Uitschrijvingen
 

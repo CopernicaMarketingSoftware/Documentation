@@ -44,7 +44,7 @@ Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger o
     {assign var="name" value="Bob"} of {assign "name" "Bob"}
     Hallo {$name},
     
-    Deze email schreven we speciaal voor jou!
+    Deze e-mail schreven we speciaal voor jou!
     
 ---
 ## capture
@@ -807,7 +807,7 @@ zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./publisher-pers
 
 ## webversion
 
-De webversie gebruik je om vanuit de email te linken naar een versie van
+De webversie gebruik je om vanuit de e-mail te linken naar een versie van
 het e-maildocument die door de ontvanger kan worden bekeken in zijn of
 haar internetbrowser. Deze versie wordt automatisch door de software
 aangemaakt wanneer deze via deze functie wordt opgevraagd. De webversie
@@ -829,7 +829,7 @@ door *showheader=false* aan de tag toe te voegen.
     
 ### Voorbeeld
 
-    <a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>
+    <a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze e-mail in je favoriete browser</a>
 
 
 

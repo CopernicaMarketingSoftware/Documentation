@@ -19,7 +19,7 @@ aanroepen om meerdere profielen te bewerken, zie
 
 Naast de parameters die zich al in de URL bevinden moeten er ook waarden 
 voor het profiel meegegeven worden in de body van het POST verzoek. Vergeet 
-vooral het emailadres niet mee te geven, zodat je het profiel straks 
+vooral het e-mailadres niet mee te geven, zodat je het profiel straks 
 met je emailcampagnes kunt bereiken.
 
 ## Voorbeeld in PHP

@@ -17,7 +17,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | Variabele  | Omschrijving                                             |
 |------------|----------------------------------------------------------|
 | id         | unieke identifier van het geopende bericht               |
-| recipient  | email adres van de opener                                |
+| recipient  | e-mailadres van de opener                                |
 | ip         | ip adres van de opener                                   |
 | time       | tijd van openen                                          |
 | useragent  | optionele user agent string (vanuit http request header) |

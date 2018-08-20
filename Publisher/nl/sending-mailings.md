@@ -12,7 +12,7 @@ En dan nu versturen...
 
 ## Het onderwerp en afzenderadres instellen
 
-Elke email die je met Copernica verstuurt moet zijn voorzien van een afzenderadres, een afzendernaam en een onderwerpregel.
+Elke e-mail die je met Copernica verstuurt moet zijn voorzien van een afzenderadres, een afzendernaam en een onderwerpregel.
 
 Het onderwerp en het afzenderadres van een e-maildocument stel je per document afzonderlijk in, direct boven het geopende document.
 
@@ -125,7 +125,7 @@ Het versturen van een bulkmailing verloopt in 4 stappen:
 1.  Je dient eerst akkoord te gaan met de verzendvoorwaarden die wij
     hanteren. Je hebt je adressen op een legale manier verkregen, en
     houdt je aan de algemene gedragscodes die gelden voor het versturen
-    van commerciele emails.
+    van commerciele e-mails.
 2.  Vervolgens geef je aan naar welke selectie of miniselectie de
     mailing verstuurd moet worden, wanneer de mailing verstuurd moet
     worden en met welke instellingen.

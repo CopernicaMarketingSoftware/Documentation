@@ -5,12 +5,12 @@ is de abandoned shopping cart, het verlaten winkelmandje.
 Een klant die in jouw webshop artikelen in zijn winkelmandje plaatst,
 maar toch weggaat zonder de order af te ronden, is een gemiste sale.
 Aangezien 66% van alle mandjes wordt achtergelaten zonder de order te
-plaatsen, loont het om verlaten winkelmandjes beter onder de aandacht te brengen. Een email campagne die hierbij past is een
-campagne voor verlaten winkelmandjes. Daarmee stuur je een email zodra
+plaatsen, loont het om verlaten winkelmandjes beter onder de aandacht te brengen. Een e-mail campagne die hierbij past is een
+campagne voor verlaten winkelmandjes. Daarmee stuur je een e-mail zodra
 een klant een winkelmandje in je webshop achterlaat.
 
 In dit artikel wordt een een document opgebouwd dat kan worden ingezet
-bij een verlaten winkelmandjes email campagne. We gaan hierbij uit van
+bij een verlaten winkelmandjes e-mail campagne. We gaan hierbij uit van
 een werkende integratie tussen de webshop van het voor dit artikel
 bedachte Tandenborstel BV en Copernica, waarbij de lege winkelmandjes
 dus reeds in een database in Copernica te vinden zijn. Hieronder zie je
@@ -34,7 +34,7 @@ product in het subprofiel.
 Het document
 ------------
 
-Nu we de basis van de email campagne hebben gebouwd, is het tijd om het
+Nu we de basis van de e-mail campagne hebben gebouwd, is het tijd om het
 document op te gaan bouwen.
 
 ### Subprofielen laden met loadsubprofile
