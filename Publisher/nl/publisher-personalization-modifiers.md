@@ -1,4 +1,4 @@
-# Overzicht modifiers
+# Personalisatie modifiers
 
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
