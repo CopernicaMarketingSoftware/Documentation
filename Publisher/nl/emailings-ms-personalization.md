@@ -1,19 +1,10 @@
-# Personaliseren
+# Personaliseren binnen de Marketing Suite
 
 De Marketing Suite en Publisher stellen je in staat om e-mails te 
 personaliseren. Je doet dit door middel van een speciaal stukje script. Dit 
 script wordt, voordat de e-mail is verstuurd, vervangen door de correcte data. 
 Hieronder kun je nalezen hoe het personaliseren precies werkt binnen de omgeving
-van de Marketing Suite en de Publisher:
-
-* [Personaliseren binnen de Publisher](./personalizing-your-newsletter-in-the-publisher.md)
-
-## Personaliseren binnen de Marketing Suite
-
-In de drag-and-drop editor van de [Copernica Marketing Suite](https://ms.copernica.com)
-stel je gemakkelijk e-mails samen. De e-mails verzonden vanuit
-deze editor zijn automatisch responsive en makkelijk in elkaar
-te slepen.
+van de Marketing Suite.
 
 Personaliseren kan op verschillende manieren: een persoonlijke aanhef
 met de voor- en achternaam van de relatie, bepaalde content tonen op
