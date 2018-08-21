@@ -12,6 +12,8 @@
     * [Restricties](./database-restrictions.md)
 * [E-mailings Marketing Suite](./emailings-ms-templates.md)
     * [Personalisatie](./emailings-ms-personalization.md)
+    * [Uitschrijflink](./emailings-publisher-unsubscribe.md)
+    * [Webversie](./emailings-publisher-webversion.md)
     * [Follow up manager](./follow-up-manager-ms.md)
     * [Headers](./emailings-headers.md)
     * [Data-script](./data-object.md)

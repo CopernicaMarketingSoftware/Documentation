@@ -26,8 +26,3 @@ bijvoorbeeld het profiel aanpassen of volledig verwijderen.
 In de Publisher ga je naar het **Profiles** menu en selecteer je de database
 naar keuze. Onder `Database management` kun je de uitschrijf opties vinden 
 en naar wens instellen.
-
-## Meer informatie
-
-* [Database management](./database-introduction)
-* [Nieuwsbriefselectie](./create-a-mailing-list)
