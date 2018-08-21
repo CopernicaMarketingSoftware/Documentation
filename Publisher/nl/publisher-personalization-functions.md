@@ -359,13 +359,13 @@ Om de functie uit te voeren is een miniselectie verplicht. Als het subprofiel ni
     
 ---
 
-# in_selection
+## in_selection
 
 De *in_selection* functie kan gebruikt worden om te checken of een gespecificeerd profiel in een specifieke view/selectie zit. Deze functie is ontwikkeld door Copernica en kan gebruikt worden om content te specialiseren met behulp van selecties in je database. Je kunt bijvoorbeeld een selectie maken van vrouwen waarvan je weet dat ze kinderen hebben en in je mails naar hen specifiek kinderkleren adverteren.
 
 Om de functie uit te voeren is een selectie verplicht. Als het profiel niet meegegeven wordt probeert de functie zelf het profiel op te halen waarvoor je personaliseert.
 
-## Voorbeeld
+### Voorbeeld
 
     {in_selection selection=145}
         { Display your content here! }
@@ -486,7 +486,7 @@ Als de file niet gevonden wordt zal alleen de filename worden weergeven aan de g
 
 ## loadprofile
 
-Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de **<body>** tag in je broncode.
+Voor het ophalen van een profiel uit een andere database gebruik je loadprofile. Plaats deze functie direct onder de **body** tag in je broncode.
 
 ```text
 {loadprofile source="Offices" Area="$Area" assign="office"}
