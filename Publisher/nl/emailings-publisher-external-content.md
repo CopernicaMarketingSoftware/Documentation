@@ -11,7 +11,7 @@ Met Copernica neem je gemakkelijk elke (externe) RSS of Atom feed op in een e-ma
 
 Je voegt met Copernica ook handig verschillende rubrieken toe aan een RSS of Atom feed. Dit stelt je in staat de artikelen die je toevoegt aan je feed, op te delen aan de hand van die rubrieken.
 
-Met Copernica stel in je in enkele stappen het adres van je feed samen. Dit is de link die verwijst naar je [contentfeed](./emailings-publisher-personalization-functions#loadfeed) 
+Met Copernica stel in je in enkele stappen het adres van je feed samen. Dit is de link die verwijst naar je [contentfeed](./publisher-personalization-functions#loadfeed) 
 wanneer je deze gebruikt in een mailing of op je webpagina. Gebruik je eigen [stijldocumenten (CSS of XSLT)](./css-and-xslt.md) voor de verdere vormgeving van je RSS of Atom feed. Deze maak je gemakkelijk aan binnen Copernica. 
 
 Wil je liever hulp inschakelen bij het inladen van een RSS of Atom feed? Of ben je op zoek naar iemand die je kan helpen bij het vormgeven van je contentfeed? In Copernica's partnernetwerk vind je de geschikte partner die je graag verder helpt. 
@@ -40,6 +40,6 @@ Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
       <div id="weather">{$weather}</div>
     {/if}
 
-Dit voorbeeld gebruikt ook de [if functie](./personalize-functions-if). Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
+Dit voorbeeld gebruikt ook de [if functie](./publisher-personalization-functions#if). Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
     {fetch file="ftp://`$user`:`$password`@`$server`/`$path`"}
