@@ -23,7 +23,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | Variabele  | Omschrijving                                                       |  
 |------------|--------------------------------------------------------------------|
 | id         | originele bericht ID voor de bounce                                |
-| recipient  | email adres waarnaar de originele mail werd verstuurd              |
+| recipient  | e-mailadres waarnaar de originele mail werd verstuurd              |
 | mailfrom   | "MAIL FROM" adres dat is gebruikt voor het afleveren van de bounce |
 | rcptto     | "RCPT TO" adres dat is gebruikt voor het afleveren van de bounce   |
 | mime       | de verstuurde MIME data (het bericht zelf)                         |

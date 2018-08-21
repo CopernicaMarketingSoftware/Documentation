@@ -25,7 +25,7 @@ hoog te houden.
     mutaties nauwkeurig. Schoon je database dus op na elke e-mailing.
     Permanente foutmeldingen vervuilen je mailinglijst, wat tot
     spam-blokkering kan leiden. Bovendien vertekent het je resultaten.
-    Zie ook [dit artikel](./automatically-process-bounces) over het 
+    Zie ook [dit artikel](./tutorial-automatically-process-bounces) over het 
     automatisch verwerken van bounces.
 5.  Geef relaties toegang tot hun eigen gegevens via een [wijzigformulier](./webforms)
     of een url, zodat ze zelf kunnen bijdragen aan het up-to-date houden
@@ -41,7 +41,7 @@ hoog te houden.
 
 Als je goede kennis van je relaties overzichtelijk weet vast te leggen biedt 
 dit weer kansen voor je marketingafdeling. Je kunt groepen zo veel beter 
-benaderen, bijvoorbeeld door middel van [personalisatie](./personalization).
+benaderen, bijvoorbeeld door middel van personalisatie.
 
 ## Meer informatie
 

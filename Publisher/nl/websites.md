@@ -3,9 +3,9 @@
 In de Copernica Publisher wordt het makkelijk gemaakt om zelf je website te 
 maken en te hosten met HTML. Je kunt Copernica webpagina's gebruiken om je 
 klanten te informeren of webformulieren en enquêtes te plaatsen om je 
-klanten beter te leren kennen. Je kunt een [template](./templates) aanmaken 
+klanten beter te leren kennen. Je kunt een template aanmaken 
 voor je website en zo met gemak de layout van een of meedere pagina's aanpassen. 
-Je kunt daarnaast [personalisatie](./personalization) gebruiken (alleen) als 
+Je kunt daarnaast [personalisatie](./emailings-publisher-personalization) gebruiken (alleen) als 
 je gebruikers ingelogd zijn. Later in dit artikel leggen we uit hoe je dit 
 automatisch kunt doen vanuit je email.
 
@@ -41,7 +41,7 @@ en structuur bepaalt is het mogelijk deze voor meerdere pagina's te gebruiken.
 Als je overal dezelfde of een vergelijkbare template gebruikt maakt dat je 
 site een goed geheel, al is het ook mogelijk overal andere templates te 
 gebruiken. Na het aanmaken van een template kun je beginnen met content toevoegen 
-zoals text, afbeeldingen en loop blokken. Je kunt deze ook [personaliseren](./personalization).
+zoals text, afbeeldingen en loop blokken. Je kunt deze ook [personaliseren](./emailings-publisher-personalization).
 
 Een aantal aandachtspunten:
 * Een website bevat webpagina's, die vergelijkbaar zijn met documenten.

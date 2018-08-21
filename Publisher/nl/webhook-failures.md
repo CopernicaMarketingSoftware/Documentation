@@ -39,7 +39,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | Variabele     | Description                                                                |
 |--------------|----------------------------------------------------------------------------|
 | id           | unieke id van de fout                                                      |
-| recipient    | emailadres van de fout                                                     |
+| recipient    | e-mailadres van de fout                                                     |
 | state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces) |
 | code         | optionele smtp error code                                                   |
 | extended     | optionele extended smtp status code                                        |

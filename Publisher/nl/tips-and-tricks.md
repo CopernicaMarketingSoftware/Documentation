@@ -49,7 +49,7 @@ je dat zelf niet hoeft te doen.
 Met selecties kun je makkelijk je email afleveren bij de juiste doelgroep. 
 Hieronder vind je tutorials voor veelvoorkomende selecties en toepassingen.
 
-* [Selecties Tutorial: Bounces afhandelen](./automatically-process-bounces) 
+* [Selecties Tutorial: Bounces afhandelen](./tutorial-automatically-process-bounces) 
 * [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)

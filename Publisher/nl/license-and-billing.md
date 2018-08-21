@@ -15,9 +15,9 @@ kun je deze [hier](https://www.copernica.com/nl/copernica-trial) aanmaken.
 ### Basiskosten en accounts
 
 Bij Copernica betaal je een kleine hoeveelheid voor het gebruik van de 
-software, waarbij een hoeveelheid emails inbegrepen is. Voor het gebruiken 
+software, waarbij een hoeveelheid e-mails inbegrepen is. Voor het gebruiken 
 van meerdere accounts hanteert Copernica een meerprijs, maar bedrijven 
-die hun eigen email versturen maken hier over het algemeen weinig gebruik 
+die hun eigen e-mail versturen maken hier over het algemeen weinig gebruik 
 van. 
 
 Copernica biedt wel de mogelijkheid om de software en licentie voor meerdere 
@@ -27,24 +27,24 @@ werknemers toegang kunnen krijgen tot verschillende afdelingen, vestigingen of
 ondernemingen. Alle prijzen omtrent gebruikers en accounts kun je bekijken 
 op onze tarieven pagina.
 
-### Email
+### E-mail
 
-Er zijn drie betaalopties voor email: Met krediet, aan het einde van de 
+Er zijn drie betaalopties voor e-mail: Met krediet, aan het einde van de 
 maand of met een abonnement.
 
 Betalen met krediet of aan het einde van de maand is handiger als je 
-niet zeker weet hoeveel email je zal versturen. Zo betaal je niet voor 
-meer emails dan je nodig hebt. Als je betaalt met krediet moet je wel 
-altijd genoeg hebben voor het aantal emails. Je kan niet 10.001 emails 
-versturen als je maar krediet hebt voor 10.000 emails. Krediet wordt 
+niet zeker weet hoeveel e-mail je zal versturen. Zo betaal je niet voor 
+meer e-mails dan je nodig hebt. Als je betaalt met krediet moet je wel 
+altijd genoeg hebben voor het aantal e-mails. Je kan niet 10.001 e-mails 
+versturen als je maar krediet hebt voor 10.000 e-mails. Krediet wordt 
 daarnaast overgeheveld naar de volgende maand. De kosten voor 
-emails zijn variabel en zijn beschikbaar op onze tarieven pagina.
+e-mails zijn variabel en zijn beschikbaar op onze tarieven pagina.
 
-Een abonnement is erg geschikt voor mensen die al weten hoeveel email ze 
+Een abonnement is erg geschikt voor mensen die al weten hoeveel e-mail ze 
 zullen versturen per maand. Het abonnement loopt een jaar, maar kan in de 
-tussentijd geüpgradet worden naar een bundel met meer emails. Overgebleven 
-emails worden niet overgezet naar de volgende maand, maar een abonnement 
-maakt emailen wel voordeliger!
+tussentijd geüpgradet worden naar een bundel met meer e-mails. Overgebleven 
+e-mails worden niet overgezet naar de volgende maand, maar een abonnement 
+maakt e-mailen wel voordeliger!
 
 ### API calls
 
@@ -54,12 +54,12 @@ alsook het gebruik van bundels.
 
 ### Andere variabele kosten
 
-Naast email kun je ook mailings versturen met SMS en fax. De prijs per 
+Naast e-mail kun je ook mailings versturen met SMS en fax. De prijs per 
 fax of SMS staat vast en er zijn momenteel geen bundels beschikbaar.
 Daarnaast kun je in Publisher websites en enquêtes hosten, waarvoor de 
 kosten ook variabel zijn. Er zijn ook dedicated IP adressen beschikbaar, 
 waar de prijs wordt berekend aan de hand van de hoeveelheid per maand. 
-Daarnaast zijn er [Litmus](./litmus) previews beschikbaar om je emails 
+Daarnaast zijn er [Litmus](./litmus) previews beschikbaar om je e-mails 
 te previewen in verschillende omgevingen. Je betaalt per preview.
 
 ## Facturering

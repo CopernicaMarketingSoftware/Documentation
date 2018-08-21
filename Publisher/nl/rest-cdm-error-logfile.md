@@ -14,7 +14,7 @@ bevatten de volgende informatie.
 | status       | Status van de error                                 |
 | description  | Omschrijving van de error                           |
 | code         | Code van de error                                   |
-| email        | Emailadres van de ontvanger                         |
+| email        | E-mailadres van de ontvanger                         |
 | tags         | Tags van het bericht, gescheiden door puntkommas    |
 | senderdomain | Domein van de verzender                             |
 | profile      | ID van het profiel van de ontvanger                 |

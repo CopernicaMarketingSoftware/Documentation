@@ -2,7 +2,7 @@
 
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 profiel bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 
-kiezen om een email te krijgen wanneer dit proces is afgerond. Dit mailtje bevat
+kiezen om een e-mail te krijgen wanneer dit proces is afgerond. Dit mailtje bevat
 het dan het bestand, of wanneer het bestand te groot is een linkje naar
 de locatie waar je het kan downloaden. Je kan er ook voor kiezen om
 ons het bestaand naar je toe te sturen via een POST verzoek. 
@@ -69,7 +69,7 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 De JSON in de geleverde file bevat twee members, **info** en **data**. De info
 member heeft ook twee members, **type** en **id**. Het type geeft aan wat voor
 type informatie de JSON bevat. Dit kan de waarde **email**, **profile** of **subprofile**
-hebben. De **id** is het e-mail adres of ID van het profiel of subprofiel.
+hebben. De **id** is het e-mailadres of ID van het profiel of subprofiel.
 De data member in de JSON bevat een array van arrays met daarin alle informatie
 die wij gevonden hebben. Voorbeelden van deze informatie zijn:
 
@@ -83,6 +83,6 @@ die wij gevonden hebben. Voorbeelden van deze informatie zijn:
 * [Alle REST calls](./rest-api)
 * [Privacy](./privacy)
 * [Een dataverzoek voor een subprofiel indienen ](./rest-post-subprofile-datarequest)
-* [Een dataverzoek voor een e-mail adres indienen](./rest-post-email-datarequest)
+* [Een dataverzoek voor een e-mailadres indienen](./rest-post-email-datarequest)
 * [Data van een dataverzoek opvragen](./rest-get-datarequest-data)
 * [Status van een dataverzoek opvragen](./rest-get-datarequest-status)

@@ -11,7 +11,7 @@ bevatten de volgende informatie.
 | id           | ID van het bericht                            |
 | time         | Tijdstip van aflevering                       |
 | attempts     | Aantal pogingen tot versturen                 |
-| email        | Emailadres van de ontvanger                   |
+| email        | E-mailadres van de ontvanger                   |
 | tags         | Tags van de mail, gescheiden door puntkommas  |
 | senderdomain | Domein van de verzender                       |
 | profile      | ID van het profiel van de ontvanger           |

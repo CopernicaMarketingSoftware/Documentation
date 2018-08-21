@@ -12,7 +12,7 @@ bevatten de volgende informatie.
 | time         | Tijdstip van de impressie                         |
 | ip           | IP adres van aanroepen impressie                  |
 | header       | Header van het verzoek van de impressie           |
-| email        | Email adres van de ontvanger                      |
+| email        | E-mailadres van de ontvanger                      |
 | tags         | Tags van het bericht, gescheiden door puntkommas  |
 | countrycode  | Code van het land waar de impressie gebeurde      |
 | countryname  | Naam van het land waar de impressie gebeurde      |

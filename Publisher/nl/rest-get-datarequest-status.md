@@ -48,6 +48,6 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 * [Alle REST calls](./rest-api)
 * [Een dataverzoek voor een profiel indienen ](./rest-post-profile-datarequest)
 * [Een dataverzoek voor een subprofiel indienen ](./rest-post-subprofile-datarequest)
-* [Een dataverzoek voor een e-mail adres indienen](./rest-post-email-datarequest)
+* [Een dataverzoek voor een e-mailadres indienen](./rest-post-email-datarequest)
 * [Data voor een data verzoek downloaden](./rest-get-datarequest-data)
 * [Privacy](./privacy)

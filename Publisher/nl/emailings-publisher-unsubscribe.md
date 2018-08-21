@@ -1,7 +1,4 @@
-# De Unsubscribe tag
-
-**Marketing Suite**: {$unsubscribe}\
-**Publisher**: {unsubscribe}
+# Uitschrijflink
 
 Het is wettelijk verplicht om iedere (commerciële) e-mail die je
 verstuurt, te voorzien van een goed zichtbare en werkende
@@ -14,29 +11,26 @@ laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 dien je tevens het uitschrijfgedrag in te stellen op de database of collectie 
 waaraan je de e-mailing richt!
 
-De uitschrijflink toevoegen
----------------------------
+## De uitschrijflink toevoegen
 
 Gebruik de volgende code om een uitschrijflink toe te voegen in de HTML
 broncode van het template of in een tekstblok in het document.
 
 `<a href="{unsubscribe}">Uitschrijven</a>`
 
-De uitschrijflink activeren
----------------------------
+## De uitschrijflink activeren
 
 Als je gebruik maakt van de {unsubscribe} tag, dien je tevens het
 uitschrijfgedrag in te stellen op de database of collectie waaraan je de
 e-mailing richt! het uitschrijfgedrag wordt uitgevoerd in de database
 wanneer de ontvanger van de e-mail klikt op de uitschrijflink. Doet u
 dit niet, dan zal er niets gebeuren, en ontvangt de uitschrijver uw
-email de volgende keer opnieuw!
+e-mail de volgende keer opnieuw!
 
 Het uitschrijfgedrag stel je in via \*Profielen \> Databasebeheer \>
 **Uitschrijfopties...**
 
-Extra opties
-------------
+## Extra opties
 
 **Doorverwijzen naar eigen landingspagina**
 

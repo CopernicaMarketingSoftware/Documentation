@@ -75,9 +75,3 @@ rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 Voeg een class toe aan het image blok. Hiermee kun je de afbeelding responsive maken.
 
 `[image name='nameofblock' class='className']`
-
-## Meer informatie
-
-* [Templates](./templates)
-* [Text tag](./text-tag)
-* [Loop tag](./loop-tag)

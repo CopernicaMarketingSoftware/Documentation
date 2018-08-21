@@ -11,7 +11,7 @@ bevatten de volgende informatie.
 | id           | ID van de mail                                               |
 | time         | Tijd van rapporteren misbruik                                |
 | mail         | Betreffende mail                                             |
-| email        | Email adres van de ontvanger                                 |
+| email        | E-mailadres van de ontvanger                                 |
 | tags         | Tags van de mail, gescheiden met puntkomma's                 |
 | senderdomain | Domein naam van de verzender                                 |
 | profile      | ID van het profiel van de ontvanger                          |

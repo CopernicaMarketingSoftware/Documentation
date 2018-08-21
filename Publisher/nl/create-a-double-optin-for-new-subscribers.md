@@ -147,4 +147,4 @@ bevestigd’. Aan deze selectie verstuur je voortaan de nieuwsbrief.
 
 * [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Tutorial: Nieuwsbrief selectie](./create-a-mailing-list)
-* [Tutorial: Email bounces afhandelen](./automatically-process-bounces)
+* [Tutorial: Email bounces afhandelen](./tutorial-automatically-process-bounces)

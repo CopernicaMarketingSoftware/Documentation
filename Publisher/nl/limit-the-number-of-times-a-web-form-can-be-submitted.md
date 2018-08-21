@@ -2,7 +2,7 @@
 
 Stel je voor dat je een formulier hebt waarbij je het aantal inzendingen 
 wil beperken, bijvoorbeeld voor een prijsvraag. Je kan dit bereiken met 
-[Smarty Personalizatie tags](./personalization). In dit artikel leggen 
+[Smarty Personalizatie tags](./emailings-publisher-personalization). In dit artikel leggen 
 we haarfijn uit hoe.
 
 Let op: In dit geval houden we alleen het aantal keren invullen per profiel 
@@ -27,7 +27,7 @@ de volgende standaard waarde:
 `{math equation="x+y" x=$submits y=1}`
 
 Maak nog een veld dat je kunt gebruiken om te linken aan het profiel, 
-bijvoorbeeld het emailadres. Zorg ervoor dat dit een *key field* is. 
+bijvoorbeeld het e-mailadres. Zorg ervoor dat dit een *key field* is. 
 
 Stel het webformulier in om op *key fields* te checken, pas het profiel 
 aan en log in als het profiel in de [database](./database-introduction).
@@ -41,7 +41,3 @@ Om je invullers te laten weten dat ze het maximale aantal inzendingen
 gebruikt hebben gebruik je de volgende code:
 
 `{if $currentnumber > 3}You have submitted the form too many times{else}Please try again.{/if}`
-
-## Meer informatie
-
-* [Webformulieren](./webforms)

@@ -8,16 +8,16 @@ over het aanmaken, aanpassen en verwijderen van profielen.
 
 ## Feedback loops van Microsoft, Gmail, Yahoo, enzovoort
 
-Als je je al wat langer met email en emailmarketing bezighoudt, ben je 
+Als je je al wat langer met e-mail en e-mailmarketing bezighoudt, ben je 
 wellicht op de hoogte van het bestaan van feedback loops van 
-emailproviders als Microsoft, Gmail en Yahoo. Deze definitie is dan ook de 
+e-mailproviders als Microsoft, Gmail en Yahoo. Deze definitie is dan ook de 
 reden dat Copernica is overgestapt op de naam WebHooks voor wat voorheen 
 feedback loops werd genoemd.
 
-De feedback loops van deze emailproviders worden gebruikt om verzenders 
+De feedback loops van deze e-mailproviders worden gebruikt om verzenders 
 (zoals Copernica) op de hoogte te brengen dat een ontvanger op een 
-"dit is spam" knop drukt of op een andere manier met de ontvangen email 
-omgaat. Het gaat dus om een terugmelding van een emailprovider naar ons, 
+"dit is spam" knop drukt of op een andere manier met de ontvangen e-mail 
+omgaat. Het gaat dus om een terugmelding van een e-mailprovider naar ons, 
 die bovendien vaak geaggregeerd is: meerdere acties van gebruikers zijn 
 gebundeld tot één enkele, meestal geanonimiseerde, terugkoppeling naar 
 ons. In tegenstelling tot WebHooks, die de informatie in real-time naar 

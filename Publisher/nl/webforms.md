@@ -3,7 +3,7 @@
 In Publisher kun je eenvoudig krachtige webformulieren creëren. Je kunt
 hiermee bijvoorbeeld inschrijf- en uitschrijfformulieren mee maken, maar ook
 meer informatie over je klanten verzamelen. Ook kun je webformulieren
-[personaliseren](./personalization).
+[personaliseren](./emailings-publisher-personalization).
 
 ## Webformulier aanmaken
 
@@ -57,8 +57,8 @@ van getypte tekst.
 * **Herhaal wachtwoord**: Kan gebruikt worden bij het instellen van een wachtwoord.
 Dit type maakt twee wachtwoordvelden aan die identiek moeten zijn voor het
 formulier verzonden kan worden.
-* **Emailadres**: Kan gebruikt worden om een ingevuld antwoord te checken
-op geldigheid als emailadres.
+* **E-mailadres**: Kan gebruikt worden om een ingevuld antwoord te checken
+op geldigheid als e-mailadres.
 * **Uitschuifkeuzelijst**: Veld met meerdere antwoordmogelijkheden dat
 uitschuift. Als je hier de waarde typt die je wil opslaan in de database
 kun je hier een tekstuele weergave van het antwoord achter plaatsen door deze

@@ -1,6 +1,6 @@
 # Follow-ups in Marketing Suite
 
-De Follow-up Manager is een gebruiksvriendelijke tool om geavanceerde 
+De follow-up manager is een gebruiksvriendelijke tool om geavanceerde 
 campagnes te maken. Doordat deze tool geïntegreerd is met de template 
 editor en database applicatie kun je op deze plaatsen geavanceerde en 
 persoonlijke opvolgacties worden ontworpen. 
@@ -12,7 +12,7 @@ De beschikbare objecten kun je [hier](./data-object) vinden.
 
 ## Triggers
 
-De Follow-up manager begint altijd met een trigger. Binnen de template 
+De follow-up manager begint altijd met een trigger. Binnen de template 
 editor kan dit bijvoorbeeld een klik zijn op een link en in de database 
 applicatie kan dit bijvoorbeeld een gewijzigd of nieuw (sub)profiel zijn. 
 Vanaf dit moment heb jij de regie in handen met de Follow-up manager en 

@@ -69,7 +69,7 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 De JSON in de geleverde file bevat twee members, **info** en **data**. De info
 member heeft ook twee members, **type** en **id**. Het type geeft aan wat voor
 type informatie de JSON bevat. Dit kan de waarde **email**, **profile** of **subprofile**
-hebben. De **id** is het e-mail adres of ID van het profiel of subprofiel.
+hebben. De **id** is het e-mailadres of ID van het profiel of subprofiel.
 De data member in de JSON bevat een array van arrays met daarin alle informatie
 die wij gevonden hebben. Voorbeelden van deze informatie zijn:
 

@@ -2,7 +2,7 @@
 
 Bij ieder document en / of template kan je de
 personalisatie-instellingen wijzigen. Met de personalisatie-instellingen
-bepaal je ondermeer in welke taal [Smarty
+bepaal je onder meer in welke taal [Smarty
 personalisatie](./what-is-personalization.md)
 wordt weergegeven. Je vindt deze instelling linksonder het geopende
 template of document.
@@ -51,3 +51,6 @@ Je kan bij het template [extra velden voor
 personalisatie](./extra-fields-for-personalizing.md)
 opgeven. Vanuit het personalisatie-instellingen menu kan je deze velden
 van een waarde voorzien.
+
+
+

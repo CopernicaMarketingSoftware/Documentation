@@ -55,7 +55,7 @@ tevens mogelijk de mailing periodiek te versturen. Bijvoorbeeld
 wekelijks.
 
 Ga naar het tabblad **Wanneer** om de datum en tijd van de verzending te
-bepalen. Ook kan je in dit tabblad bepalen hoevaak de mailing herhaald
+bepalen. Ook kan je in dit tabblad bepalen hoe vaak de mailing herhaald
 moet worden en met welke interval.
 
 ![](../images/NL-bulk-inroosteren.png)
