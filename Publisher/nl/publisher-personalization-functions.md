@@ -11,7 +11,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{counter}](./publisher-personalization-functions#counter)                      | teller                                                                       |
 | [{cycle}](./publisher-personalization-functions#cycle)                          | wisselen tussen array van waardes                                            |
 | {eval}                                                                | Het evalueren van variabele als template                                     |
-| [{fetch}](./publisher-personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
+| [{fetch}](./publisher-personalization-functions#fetch)                          | inladen van een externe gehoste content                                      |
 | [{foreach}](./publisher-personalization-functions#foreach)                      | itereren over een array                                                      |
 | [{if}](./publisher-personalization-functions#if)                                | conditionele blokken                                                         |
 | [{in_miniselection}](./publisher-personalization-functions#in_miniselection)    | blok dat alleen wordt getoond indien subprofiel tot een miniselectie behoort |
@@ -228,7 +228,7 @@ Om een linkerhaak '{' te printen kun je de code **{ldelim}** wat staat voor left
 Als je echter een groot stuk letterlijk wil printen zonder alle haken te vervangen is het verstandiger literal te gebruiken.
 
 ---
-# fetch
+## fetch
 
 Fetch kan gebruikt worden om bestanden van het locale systeem, HTTP of FTP op te vragen. Je kunt dan de inhoud van de bestanden tonen.
 
@@ -238,7 +238,7 @@ Fetch kan gebruikt worden om bestanden van het locale systeem, HTTP of FTP op te
 
 De functie heeft een **name** parameter die verplicht is en met **assign** kun je ook de opgevraagde inhoud in een variabele opslaan in plaats van deze te laten zien.
 
-## Voorbeeld
+### Voorbeeld
 
 Met de volgende code kun je informatie opvragen van een website, bijvoorbeeld het weer voor komende week:
 
@@ -251,13 +251,13 @@ Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
       <div id="weather">{$weather}</div>
     {/if}
 
-Dit voorbeeld gebruikt ook de [if functie](./publisher-personalize-functions#if).    Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
+Dit voorbeeld gebruikt ook de [if functie](./publisher-personalization-functions#if).    Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
     {fetch file="ftp://`$user`:`$password`@`$server`/`$path`"}
     
 ---
 
-## foreach/foreachelse
+## foreach
 
 De *foreach en foreachelse* functies kunnen gebruikt worden om bijvoorbeeld over arrays met data te loopen. Je kunt *foreach* loops ook in elkaar plaatsen. Het aantal iteraties wordt altijd bepaald door de lengte van de array of een integer voor een arbitraire hoeveelheid iteraties.
 
@@ -424,7 +424,7 @@ Dit geeft alleen de link zelf weer, maar je kunt altijd HTML gebruiken om de lin
 
 De *literal* functie wordt gebruikt om een blok code letterlijk te nemen. Dit is vooral nuttig als je een blok code wil gebruiken waarin veel krulhaken staan, omdat deze normaal worden geïnterpreteerd als Smarty syntax, bijvoorbeeld Javascript.
 
-In een simpel geval waarin bijvoorbeeld maar twee krulhaken gebruikt worden kan het handiger zijn om de [*ldelim* en *rdelim* functies](./personalization-functions-delim)te gebruiken. Het is daarnaast in [Smarty 3](smarty-2-vs-smarty-3) ook mogelijk om simpelweg een spatie voor en achter elke haak te zetten.
+In een simpel geval waarin bijvoorbeeld maar twee krulhaken gebruikt worden kan het handiger zijn om de [*ldelim* en *rdelim*](./publisher-personalization-functions#delim) functies te gebruiken. Het is daarnaast in [Smarty 3](smarty-2-vs-smarty-3) ook mogelijk om simpelweg een spatie voor en achter elke haak te zetten.
 
 ### Voorbeeld
 
@@ -457,7 +457,7 @@ Met de loadfeed functie kun je eenvoudig feeds in je e-mail of webdocument laden
     {loadfeed feed='http://www.eendomein.nl/feed/feed.xml'}
 
 Vervang *http://www.eendomein.nl/feed/feed.xml*  met het adres (URL) van de feed die elders is gepubliceerd.
-Voor uitgebreide informatie over loadfeed met eigen styling klik dan [hier](./personalization-functions-loadfeed.md).
+Voor uitgebreide informatie over loadfeed met eigen styling klik dan [hier](./publisher-personalization-functions#loadfeed.md).
 
 ---
 
