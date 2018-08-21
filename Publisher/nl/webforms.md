@@ -3,7 +3,7 @@
 In Publisher kun je eenvoudig krachtige webformulieren creëren. Je kunt
 hiermee bijvoorbeeld inschrijf- en uitschrijfformulieren mee maken, maar ook
 meer informatie over je klanten verzamelen. Ook kun je webformulieren
-[personaliseren](./personalization).
+[personaliseren](./emailings-publisher-personalization).
 
 ## Webformulier aanmaken
 

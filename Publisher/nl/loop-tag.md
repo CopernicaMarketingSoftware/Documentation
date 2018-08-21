@@ -121,14 +121,8 @@ moet dan de hele nesting van loops in de naam van de variabele zetten:
 Onder de motorkap gebruikt Copernica de Smarty engine van PHP voor het inlezen
 van templates. Alleen gebruiken we niet de standaard accolades om variabelen
 en functies mee aan te geven, maar vierkante haakjes. De [image], [text] en [loop]
-blokken zijn dus eigenlijk gewone Smarty functies, en de [$loop.naamvanloop.*] 
+blokken zijn dus eigenlijk gewone Smarty functies, en de [$loop.naamvanloop.\*] 
 variabelen zijn gewone Smarty variabelen. Je kunt daarom binnen een template 
 alle trucjes en mogelijkheden van Smarty benutten, zolang je maar gebruik maakt 
 van vierkante haakjes in plaats van accolades. Meer informatie over Smarty kun 
 je vinden op [www.smarty.net](http://www.smarty.net).
-
-## Meer informatie
-
-* [Templates](./templates)
-* [Text tag](./text-tag)
-* [Image tag](./image-tag)

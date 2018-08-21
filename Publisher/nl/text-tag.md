@@ -52,9 +52,3 @@ Als op documentniveau het tekstblok leeg blijft dan wordt de waarde van de
 &lt;/b&gt; in het uiteindelijke document. Maar als er wel een tekst wordt
 ingevoerd, dan wordt de waardes van deze attributen automatisch rond de
 ingevoerde tekst geplaatst.
-
-## Meer informatie
-
-* [Templates](./templates)
-* [Loop tag](./loop-tag)
-* [Image tag](./image-tag)

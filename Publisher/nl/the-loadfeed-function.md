@@ -5,8 +5,7 @@ webdocument laden. Je kan met deze functie een feed inladen die je in
 het onderdeel Content hebt gemaakt of een feed welke elders is
 samengesteld en gehost.
 
-Syntax en gebruik
------------------
+## Syntax en gebruik
 
 Een feed vanuit Content inladen:
 
@@ -34,8 +33,7 @@ de feed die elders is gepubliceerd.
 
 *Afbeelding: Load feed tag in the text block rich text editor*
 
-Extra opties
-------------
+## Extra opties
 
 De loadfeed functie heeft een optionele extra parameter: xlst=
 

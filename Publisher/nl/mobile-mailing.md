@@ -11,7 +11,7 @@ Tarieven voor deze mailings kun je vinden op de tarieven pagina.
 ## SMS mailing
 
 Eerst moet je het bericht een duidelijke naam geven en een optionele
-beschrijving. Kies dan de versie van Smarty die je wil gebruiken voor [personalisatie](./personalization).
+beschrijving. Kies dan de versie van Smarty die je wil gebruiken voor [personalisatie](./emailings-publisher-personalization).
 
 Je kunt nu meteen beginnen met het schrijven van content en het personalizeren
 van je bericht. Een sms bericht kan tot 160 karakters lang zijn. Als je
@@ -29,6 +29,6 @@ Om een fax te kunnen versturen moet je een PDF file geüpload hebben van
 het document dat je wil verzenden. Je moet ook de fax nummers opslaan in
 een speciaal **FAX** veld, dat je kunt vinden onder type *Telefoonnummer*.
 Nadat je de mailing hebt voorbereid kun je deze versturen via het normale
-mail menu. Als je ervoor kiest om Smarty [personalisatie](./personalization)
+mail menu. Als je ervoor kiest om Smarty [personalisatie](./emailings-publisher-personalization)
 te gebruiken moet je zoals altijd je document uitvoerig testen om te zorgen
 dat alle ontvangers het document zien zoals bedoeld.

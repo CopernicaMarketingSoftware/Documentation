@@ -11,16 +11,14 @@ laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 dien je tevens het uitschrijfgedrag in te stellen op de database of collectie 
 waaraan je de e-mailing richt!
 
-De uitschrijflink toevoegen
----------------------------
+## De uitschrijflink toevoegen
 
 Gebruik de volgende code om een uitschrijflink toe te voegen in de HTML
 broncode van het template of in een tekstblok in het document.
 
 `<a href="{unsubscribe}">Uitschrijven</a>`
 
-De uitschrijflink activeren
----------------------------
+## De uitschrijflink activeren
 
 Als je gebruik maakt van de {unsubscribe} tag, dien je tevens het
 uitschrijfgedrag in te stellen op de database of collectie waaraan je de
@@ -32,8 +30,7 @@ e-mail de volgende keer opnieuw!
 Het uitschrijfgedrag stel je in via \*Profielen \> Databasebeheer \>
 **Uitschrijfopties...**
 
-Extra opties
-------------
+## Extra opties
 
 **Doorverwijzen naar eigen landingspagina**
 

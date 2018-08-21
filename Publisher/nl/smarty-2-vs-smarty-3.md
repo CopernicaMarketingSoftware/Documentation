@@ -74,9 +74,3 @@ dubbele punten gebruikt. Voorbeeld:
 of
 
 `{in_miniselection miniselection="database:myCollection:myMiniSelection"}`
-
-## Meer informatie
-
-* [Smarty documentatie](http://www.smarty.net/docs/en/)
-* [Personalisatie algemeen](./personalization)
-* [Personalisatie functies](./personalization-functions)

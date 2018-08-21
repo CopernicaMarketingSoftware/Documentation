@@ -45,5 +45,4 @@ aanmaken en emails kunt personalizeren.
 
 * [Follow-ups in Marketing Suite](follow-up-manager-ms)
 * [Selecties](./database-selections-introduction)
-* [Personalizatie](./personalization)
 * [Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)

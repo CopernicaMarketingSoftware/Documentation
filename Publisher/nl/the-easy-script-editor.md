@@ -12,8 +12,7 @@ het tonen van bepaalde inhoud in een nieuwsbrief.
 
 ![](../images/eenvoudigeeditor.png)
 
-Werken met de eenvoudige script editor
---------------------------------------
+## Werken met de eenvoudige script editor
 
 De eenvoudige script editor vind je in het **condities**tabblad van het
 onderdeel waarvoor je de conditie wilt instellen. Voor **opvolgacties**
@@ -46,8 +45,7 @@ worden gevoegd, en het profiel zou 17 jaar oud zijn, dan wordt de
 afbeelding of tekst niet getoond, ook niet als het profiel wel een in
 Amsterdam woonachtige vrouw is.
 
-Smarty code en de Javascript editor
------------------------------------
+## Smarty code en de Javascript editor
 
 Omdat de eenvoudige script editor een Javascript editor is, kan
 hierbinnen geen smarty code worden gebruikt. Dit is namelijk gebaseerd

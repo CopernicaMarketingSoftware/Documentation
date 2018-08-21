@@ -8,8 +8,7 @@ e-mails te sturen.
 Met een handige [selectie](./database-selections-introduction) kun je deze informatie bijvoorbeeld 
 gebruiken om doelgroepen aan te maken en hen verschillende, meer toegespitste, 
 e-mails te sturen. Je kunt er ook voor kiezen deze informatie te gebruiken om je 
-template te [personalizeren](./personalization), bijvoorbeeld door content 
-afhankelijk te maken van interesse.
+template te personalizeren, bijvoorbeeld door content afhankelijk te maken van interesse.
 
 In deze tutorial gaan we ja laten zien hoe je je profielen verrijkt met 
 follow-ups.
@@ -83,4 +82,3 @@ maken en e-mails kunt personalizeren.
 * [Follow-ups in Marketing Suite](follow-up-manager-ms)
 * [Selecties](./database-selections-introduction)
 * [Collecties](./database-fields-and-collections)
-* [Personalizatie](./personalization)

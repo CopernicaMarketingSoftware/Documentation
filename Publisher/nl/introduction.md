@@ -37,5 +37,4 @@ e-mails nog geavanceerder te maken. Wil je leren personaliseren en
 automatiseren? Je kunt alle informatie vinden in onze artikels.
 
 * [Begrippenlijst](./definitions)
-* [Personalisatie](./personalization)
 * [Achtergrond artikelen](./tips-and-tricks)

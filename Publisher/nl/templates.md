@@ -30,7 +30,7 @@ uitgebreide documentatie over de functionaliteiten van de
 template editor in de Marketing Suite kun je in het onderstaande 
 artikel terecht.
 
-* [Templates in Marketing Suite](templates-marketing-suite)
+* [Templates in Marketing Suite](emailings-ms-templates)
 
 ## Publisher
 

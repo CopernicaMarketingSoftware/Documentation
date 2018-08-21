@@ -26,7 +26,7 @@ zelf instellen.
 
 Bounce handling heeft tenslotte ook een sterk effect op je reputatie. Een incorrect
 of verkeerd gespeld e-mailadress zorgt ervoor dat een e-mail niet
-wordt afgeleverd. [Automatisch bounces afhandelen](./automatically-process-bounces) 
+wordt afgeleverd. [Automatisch bounces afhandelen](./tutorial-automatically-process-bounces) 
 zorgt ervoor dat je database en reputatie op het juiste niveau blijven.
 
 ## E-mailinhoud

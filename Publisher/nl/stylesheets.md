@@ -27,7 +27,3 @@ Om de stylesheet te gebruiken met je document of template selecteer je
 "Stijl instellen..." uit het document/template menu. Als deze gelinkt is 
 vind je een tabje *Stijl* boven je document/template, waar je de regels 
 ervan direct aan kan passen.
-
-# Meer informatie
-
-* [Templates](./templates)

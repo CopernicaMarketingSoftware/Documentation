@@ -47,7 +47,3 @@ aan een GIF. Op deze manier kun je bijvoorbeeld met een GIF een
 highlight of preview laten zien, waarop iemand kan klikken om de 
 hele video te tonen. Zo trek je meteen de aandacht en nodig je de 
 lezer uit om je bedrijf verder te verkennen.
-
-## Meer informatie
-
-* [Templates](./templates)

@@ -26,7 +26,7 @@ om extra informatie mee te geven aan je e-mail. Je kunt dus helemaal zelf
 bepalen welke X-headers je gebruikt of wat je meegeeft. Je kan bijvoorbeeld 
 de naam van je selectie of campagne meegeven voor je eigen statistieken.
 
-Met Copernica kun je hier ook Smarty [personalisatie](./personalization) 
+Met Copernica kun je hier ook Smarty [personalisatie](./emailings-ms-personalization) 
 gebruiken. Zo kun je bijvoorbeeld aan elke e-mail een "X-PF-ID" meegeven, 
 waar je de ID van een profiel meegeeft (bijvoorbeeld omdat deze anders 
 is in je eigen database). Als de e-mail vervolgens niet aankomt kun je 
@@ -44,7 +44,6 @@ instellen.
 
 ## Meer informatie
 
-* [Templates](./templates)
-* [Templates in Marketing Suite](./templates-marketing-suite)
-* [Templates in Publisher](./templates-publisher)
+* [Templates in Marketing Suite](./emailings-ms-templates)
+* [Templates in Publisher](./emailings-publisher-templates)
 * [Tips, tricks en achtergrond](./tips-and-tricks)
