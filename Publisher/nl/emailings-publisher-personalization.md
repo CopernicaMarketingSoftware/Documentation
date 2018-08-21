@@ -104,7 +104,7 @@ wel uitpakt zoals je dat hebt bedoeld. Voor dit doel is er een *standaardbestemm
 ### De bewerkmodus instellen
 
 Onderaan een document, naast de button voor de 
-[personalisatieinstellingen](#personalization_settings), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
+[personalisatieinstellingen](emailings-publisher-personalization#personalisatieinstellingen), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
 
 ![Edit and preview mode](../images/preview.png)
 
