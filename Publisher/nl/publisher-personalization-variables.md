@@ -137,13 +137,13 @@ van de mailing waartoe het bericht behoort:
 
 ## Extra personalisatievariabelen toevoegen
 
-Op templateniveau kun je [extra variabelen](./personalization-functions-assign)
+Op templateniveau kun je [extra variabelen](./publisher-personalization-functions#assign)
 toevoegen. De extra personalisatievariabelen zijn daarna benaderbaar
 via de gegeven naam.
 
     {$variabele}
 
-## Meer informatie
+## Meer informatie over personaliseren
 
-* [Personalisatie functies](./personalization-functions)
-* [Personalisatie modifiers](./personalization-modifiers)
+* [Personalisatie functies](./publisher-personalization-functions)
+* [Personalisatie modifiers](./publisher-personalization-modifiers)
