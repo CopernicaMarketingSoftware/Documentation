@@ -59,5 +59,4 @@ Hieronder vind je tutorials voor veelvoorkomende selecties en toepassingen.
 Hier vind je nog meer uitleg en tips over verschillende onderwerpen.
 
 * [HTTP en HTTPS](./http-https)
-* [Headers](./headers)
 * [Begrippenlijst](./definitions)
