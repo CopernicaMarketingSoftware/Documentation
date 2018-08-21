@@ -2,7 +2,7 @@
 
 De Publisher hanteert een andere manier om tot een mooie en werkende template te komen. In vergelijking met Marketing Suite is de aanpak wat technischer en moeilijker, omdat kennis van HTML en CSS vereist is. De Publisher heeft echter wel enkele functionaliteiten die in de Marketing Suite niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. 
 
-## Werken met templates
+## Werken met publisher templates
 In de Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
 voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
@@ -23,8 +23,7 @@ In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
 HTML beschikt om in ieder geval een eenvoudige website te bouwen.
 
-
-## Houd het eenvoudig
+### Een voorbeeld van een publisher template
 
 Via Copernica Publisher kun je templates maken. Als je voor de "e-mailings"
 optie in het hoofdmenu kiest en een nieuwe template aanmaakt, verschijnt aan
@@ -34,22 +33,22 @@ let op: de HTML code die je invoert kun je het beste eenvoudig houden. Hoe
 eenvoudiger de broncode van de template, hoe groter de kans dat je e-mail 
 door veel van je ontvangers kan worden gelezen.
 
-E-mailberichten worden op allerlei soorten manieren gelezen: via mobiele devices
-zoals tablets (met best een groot scherm), telefoons (klein scherm) of horloges
-(piepklein!). Maar ook op gewone laptops en ouderwetse desktops met speciaal
-daarvoor ontwikkelde e-mailprogramma's als Outlook of Thunderbird, of met
-webmail omgevingen als Gmail of Hotmail. Bovendien gebruiken veel mensen
-verouderde software en filteren e-mailprogramma's en providers berichten en 
-worden scripts en ingewikkelde CSS codes vaak uit mails verwijderd. Een
-template moet dus wel tegen een stootje kunnen. Een eenvoudige template is een 
-stuk minder kwetsbaar dan een complexe template, en leidt tot minder problemen 
-en een groter bereik.
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <p>
+        [text name="example"]
+    </p>
+    </body>
+</html>
+```
 
-Maar uiteindelijk ben je, als gebruiker van Copernica, helemaal vrij om je
-template zo op te maken als je zelf wilt. Copernica verstuurt de HTML code
-precies zoals jij die hebt ingevoerd, en je kunt het dus zo bont maken als
-je maar wilt.
-
+Op documentniveau kan een tekst worden geplaatst op de plek van de [text] tag.
 
 ## Contentblokken
 
@@ -68,6 +67,8 @@ om op documentniveau herhalingen in te voeren. Als je bijvoorbeeld gebruikers
 in staat wilt stellen om mailings te maken met een variabel aantal paragrafen 
 of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de 
 template op te nemen.
+
+Lees voor meer informatie het artikel over [contentblokken](emailings-publisher-contentblocks).
 
 
 ## Let op met blokhaken!
@@ -138,6 +139,19 @@ naar extern gehoste content. Bijvoorbeeld &lt;object&gt;, &lt;embed&gt;,
 &lt;iframe&gt; en &lt;applet&gt;. Als je dit soort tags gebruikt (wat we *zeer
 sterk* afraden), dan kun je het bestand waar naar wordt verwezen, gelijk 
 een afbeelding, via dit dialoogvenster koppelen.
+
+## Houd het eenvoudig
+
+E-mailberichten worden op allerlei soorten manieren gelezen: via mobiele devices
+zoals tablets (met best een groot scherm), telefoons (klein scherm) of horloges
+(piepklein!). Maar ook op gewone laptops en ouderwetse desktops met speciaal
+daarvoor ontwikkelde e-mailprogramma's als Outlook of Thunderbird, of met
+webmail omgevingen als Gmail of Hotmail. Bovendien gebruiken veel mensen
+verouderde software en filteren e-mailprogramma's en providers berichten en 
+worden scripts en ingewikkelde CSS codes vaak uit mails verwijderd. Een
+template moet dus wel tegen een stootje kunnen. Een eenvoudige template is een 
+stuk minder kwetsbaar dan een complexe template, en leidt tot minder problemen 
+en een groter bereik.
 
 ## Aanmaken templates/documenten
 Klik links boven op **Template**>**Nieuwe template** om een nieuwe template aan te maken. In het volgende venster kan er een naam gegeven worden aan de template en kan de template eventueel met voorbeeldcode gevuld worden. In het venster rechts kan het template bekeken en aangepast worden. In het broncode template tabblad kan de html van de template aangepast worden. Hier dienen ook de bovengenoemde contentblokken aangemaakt worden. Om deze contentblokken te vullen moet er een document aangemaakt worden. Klik op **Document**>**Nieuw document** om een document aan het template toe te voegen. Dit document is de uiteindelijk mailing en hierin is het mogelijk om de contentblokken te vullen. 
