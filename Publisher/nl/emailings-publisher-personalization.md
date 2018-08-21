@@ -5,15 +5,13 @@ van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 mailings en nieuwsbrieven.
 
-## Gebruik van variabelen
-
-Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
+Met Smarty kun je gemakkelijk personalizeren. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
 * SMARTY is *hoofdlettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
 * Accolades gebruiken kan met de [literal](./publisher-personalization-functions#literal) functie.
 
-### Database variabelen
+## Database variabelen
 
 Een personalisatievariabele bestaat uit een dollarteken **$**, het woord profile
 of subprofile en de naam van een variabele, geplaatst tussen accolades. De
@@ -36,12 +34,79 @@ Je ontvangt deze e-mail omdat bent aangemeld
 met het volgende e-mailadres: {$profile.email}.
 ```
 
-### Load subprofile
+### Data uit een collectie weergeven
+
+Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op 
+verschillende manieren doen. Om data uit de eerste rij van de collectie weer te 
+geven kun je deze syntax gebruiken.
+
+Vergeet in de Publisher niet de blokhaken te escapen.
+
+```text
+[literal]
+{$profile.collectie[0].veldnaam}
+[/literal]
+```
+
+Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
+
+```text
+[literal]
+{$profile.collectie[1].veldnaam}
+[/literal]
+```
+
+Om data uit de laatste (en nieuwste) rij weer te geven kun je de count 
+modifier gebruiken om het aantal subprofielen te tellen waarna je 
+van het totaal 1 moet aftrekken omdat wij beginnen met nul.
+
+```text
+[literal]
+{$profile.collectie[$profile.collectie|count -1].veldnaam}
+[/literal]
+```
+
+### Template variables
+
+Je kunt ook extra personalisatie variabelen toevoegen door deze aan te maken
+in het Template menu. Hier definieer je de naam, tijdens het aanmaken van
+het document geef je er een waarde aan. Gebruik de waarde vervolgens met
+**{$property.name}**, waar je "name" vervangt door de naam van je variabele.
+
+Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
+aankopen en deze wil gebruiken in je e-mail. Later heb je deze score niet meer
+nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
+template variabele **score** instellen en deze gebruiken met **{$property.score}**.
+
+## personalisatie functies
+
+Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende functie kun je bijvoorbeeld gebruiken om een link naar de webversie van een e-mail te maken:
+
+```
+{webversion}
+```
+
+Bekijk het [overzicht van alle functies](publisher-personalization-functions)
+
+## personalizatie modifiers
+
+Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
+van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
+Je gebruikt bijvoorbeeld **tolower** om de variabele **{$name}** te
+bewerken. Dit ziet er dan zo uit: **{$name|tolower}**.
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
+Je kunt bijvoorbeeld **{$name|tolower|ucfirst}** gebruiken om te zorgen dat alle
+namen met een hoofdletter beginnen en de resterende letters altijd kleine 
+letters zijn. 
+
+Bekijk het [overzicht van alle modifiers](./publisher-personalization-modifiers)
+
+## De load subprofile functie
 Je kunt profielen of subprofielen in een oplopende of aflopende volgorde ophalen, aan de hand van de waarde in een specifiek database of collectieveld.
 
 Je doet dit door de optie als parameter toe te voegen aan de loadprofile of loadsubprofile tag
 
-#### Voorbeeld
+### Voorbeeld
 Je hebt een collectieveld 'fruit' en een aantal subprofielen, die respectievelijk de waardes Appel, Banaan, Citroen, Nectarine, Watermeloen hebben in het veld 'fruit'
 
 ```
@@ -62,18 +127,6 @@ Resultaat (desc):
 Ik heb in mijn fruitschaal een: Watermeloen, Nectarine
 
 Als je geen order parameter meegeeft in je load(sub)profile, dan wordt automatisch oplopend gesorteerd op het veld ID. [Voor meer informatie kun je dit artikel lezen](loadprofile-and-loadsubprofile).
-
-### Template variables
-
-Je kunt ook extra personalisatie variabelen toevoegen door deze aan te maken
-in het Template menu. Hier definieer je de naam, tijdens het aanmaken van
-het document geef je er een waarde aan. Gebruik de waarde vervolgens met
-**{$property.name}**, waar je "name" vervangt door de naam van je variabele.
-
-Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
-aankopen en deze wil gebruiken in je e-mail. Later heb je deze score niet meer
-nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
-template variabele **score** instellen en deze gebruiken met **{$property.score}**.
 
 ## Accolades
 
