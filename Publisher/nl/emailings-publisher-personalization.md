@@ -11,7 +11,7 @@ Met Smarty kun je gemakkelijk variabelen aanmaken en gebruiken. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
 * SMARTY is *hoofdlettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
-* Accolades gebruiken kan met de [literal](./emailings-publisher-personalization-functions#literal) functie.
+* Accolades gebruiken kan met de [literal](./publisher-personalization-functions#literal) functie.
 
 ### Database variabelen
 
@@ -78,8 +78,8 @@ template variabele **score** instellen en deze gebruiken met **{$property.score}
 ## Accolades
 
 Als je accolades in een template of een document wilt opnemen die niet als Smarty
-code hoeven te worden herkend, dan kun je dit op twee manieren doen: door [{ldelim}](./emailings-publisher-personalization-functions#ldelim) en
-[{rdelim}](./emailings-publisher-personalization-functions#rdelim) te gebruiken, of door van {literal} en {/literal} gebruik te maken.
+code hoeven te worden herkend, dan kun je dit op twee manieren doen: door [{ldelim}](./publisher-personalization-functions#ldelim) en
+[{rdelim}](./publisher-personalization-functions#rdelim) te gebruiken, of door van {literal} en {/literal} gebruik te maken.
 
 Om voor een groot stuk HTML code de Smarty engine uit te schakelen kun je {literal}
 en {/literal} gebruiken. Alle tekst die tussen {literal} en {/literal} staat wordt
@@ -104,7 +104,7 @@ wel uitpakt zoals je dat hebt bedoeld. Voor dit doel is er een *standaardbestemm
 ### De bewerkmodus instellen
 
 Onderaan een document, naast de button voor de 
-[personalisatieinstellingen](emailings-publisher-personalisatie#personalization_settings), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
+[personalisatieinstellingen](emailings-publisher-personalization#personalisatieinstellingen), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
 
 ![Edit and preview mode](../images/preview.png)
 
