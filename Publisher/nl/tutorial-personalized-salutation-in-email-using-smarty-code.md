@@ -11,20 +11,18 @@ testprofielen die alle situaties uit jouw database dekken. Dus
 man/vrouw, gebruik grote en kleine letters door elkaar, tussenvoegsels
 en dergelijke.
 
-Let op 2: Smarty variabelen zijn hoofdlettergevoelig. {\$voornaam} is
-dus wat anders dan {\$Voornaam}.
+Let op 2: Smarty variabelen zijn hoofdlettergevoelig. {$profile.voornaam} is
+dus wat anders dan {$profile.Voornaam}.
 
-Eenvoudige informele aanhef
----------------------------
+## Eenvoudige informele aanhef
 
 Wanneer je van al je relaties de voornaam weet kan je de aanhef
 gemakkelijk personaliseren door te verwijzen naar het veld waarin de
 voornaam is opgeslagen. In dit voorbeeld het veld *Voornaam*
 
-`Beste {$Voornaam},`
+`Beste {$profile.Voornaam},`
 
-*Beste Henk,*\
- *Beste Klazien,*
+*Beste Henk,*
 
 Echter, een ontvanger waarvan je geen voornaam weet, zal boven de mail
 de aanhef 'Beste ', lezen. Om dit te voorkomen, doet je het volgende:
@@ -34,8 +32,7 @@ de aanhef 'Beste ', lezen. Om dit te voorkomen, doet je het volgende:
 Vrij vertaald: als in het veld *Voornaam* een waarde is gevonden, dan
 wordt deze waarde getoond. Toon anders de waarde *Beste relatie*.
 
-Formele aanhef
---------------
+## Formele aanhef
 
 Indien je geadresseerden formeel wilt aanspreken dien je ook het
 geslacht (M/V) van je relaties te weten:
@@ -44,20 +41,20 @@ geslacht (M/V) van je relaties te weten:
 -   Geachte mevrouw Putjes,
 -   Geachte heer Van der Sloot,
 
-Geachte {if \$Geslacht=="Man"}heer {elseif \$Geslacht=="Vrouw"}mevrouw
-{/if} {if \$Tussenvoegsel}{\$Tussenvoegsel|lower|ucfirst}{/if} {if
-\$Achternaam}{\$Achternaam}{else}relatie{/if},
+```
+Geachte {if $profile.Geslacht=="Man"}heer {elseif $profile.Geslacht=="Vrouw"}mevrouw
+{/if} {if $profile.Tussenvoegsel}{$profile.Tussenvoegsel|lower}{/if} {if
+$profile.Achternaam}{$profile.Achternaam}{else}relatie{/if},
+```
 
 Er wordt dus rekening gehouden met het geslacht van de relatie, en of
 deze persoon wel of geen tussenvoegsel heeft in de naam. Wanneer er
 helemaal geen achternaam beschikbaar is, wordt niet verder
 gepersonaliseerd, en *Geachte relatie* als aanhef getoond.
 
-[Meer over voorwaarden in
-personalisatie](./personalizing-from-a-profile-or-subprofile.md "Personalisatie uit een profiel of subprofiel")
+[Meer over voorwaarden in personalisatie](./personalizing-from-a-profile-or-subprofile.md "Personalisatie uit een profiel of subprofiel")
 
-Opmaak van personalisatie
--------------------------
+## Opmaak van personalisatie
 
 Het kan voorkomen dat gegevens in je database onderling qua hoofdletter
 gebruik van elkaar afwijken, of gegevens helemaal ontbreken. Gelukkig
@@ -68,8 +65,8 @@ afwijkingen correct af te vangen.
 
 Dit filter wordt gebruikt om alle hoofdletters te verwijderen.
 
-Als de variabele {\$Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
-zorgt de code {\$Naam|lower} ervoor dat wordt weergegeven: **'karel
+Als de variabele {$profile.Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
+zorgt de code {$profile.Naam|lower} ervoor dat wordt weergegeven: **'karel
 appel'**
 
 ### ucfirst
@@ -77,17 +74,16 @@ appel'**
 Dit filter zorgt ervoor dat het eerste karakter uit een string
 (tekenreeks) een hoofdletter wordt.
 
-Als de variabele {\$Naam|ucfirst} de waarde heeft: '**hans**' dan zal
+Als de variabele {$profile.Naam|ucfirst} de waarde heeft: '**hans**' dan zal
 het volgende in het document komen te staan: **Hans**
 
 De filters kunnen ook worden gecombineerd:
 
-Als de variabele {\$Tussenvoegsel} de waarde 'VAN dER' heeft, dan zal
-door het toevoegen van de twee filters {\$Tussenvoegsel|lower|ucfirst}
+Als de variabele {$profile.Tussenvoegsel} de waarde 'VAN dER' heeft, dan zal
+door het toevoegen van de twee filters {$profile.Tussenvoegsel|lower|ucfirst}
 de waarde ‘Van der’ in het document komen te staan.
 
-[Meer smarty filters en
-toepassingen](./filter-data-with-smarty-modifiers.md "Opmaak van smarty personalisatie (Smarty filters)")
+[Meer smarty filters en toepassingen](./filter-data-with-smarty-modifiers.md "Opmaak van smarty personalisatie (Smarty filters)")
 
 ### Initialen afvangen
 
@@ -99,9 +95,9 @@ voorletters hebt. Het resultaat zal dan zijn: Beste B.R.,
 Dit staat natuurlijk een beetje slordig. Er is gelukkig een manier om
 dit af te vangen:
 
-`Beste {if $Voornaam|count_sentences < 1}{$Voornaam}{else}klant{/if},`
+`Beste {if $profile.Voornaam|count_sentences < 1}{$profile.Voornaam}{else}klant{/if},`
 
-*count\_sentences* is een smarty functie die het aantal zinnen in een
+*count\_sentences* is een smarty modifier die het aantal zinnen in een
 reeks tekens telt op basis van het aantal gevonden punten(.). De
 bovenstaande voorwaarde kijkt of het aantal punten in de waarde kleiner
 is dan 1 (dus nul). Indien dit het geval is wordt de voornaam getoond.
