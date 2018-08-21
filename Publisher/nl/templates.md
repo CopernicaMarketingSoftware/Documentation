@@ -50,8 +50,3 @@ Videos en GIFs zijn een goede manier om de aandacht van je gebruikers te
 trekken, maar worden niet altijd goed ondersteund door alle email clients. 
 Zie het [artikel over videos en GIFs](./templates-video-gif) voor tips 
 om deze er mooi uit te laten zien in elke email client.
-
-## Meer informatie
-
-* [Personalizatie](./personalization)
-* [Videos en GIFs](./templates-video-gif)

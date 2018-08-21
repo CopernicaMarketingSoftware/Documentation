@@ -36,7 +36,7 @@ om je reputatie schoon te houden. Je kunt onder andere een tekstversie toevoegen
 spamwoorden vermijden en je HTML schoonhouden om deze score te verlagen. 
 Er is ook een artikel geheel gewijd aan het [verlagen van je spamscore](./some-tips-to-lower-your-email-spam-score).
 
-Zorg er ook voor dat je e-mail relevant is. Door [personalisatie](./personalization) 
+Zorg er ook voor dat je e-mail relevant is. Door personalisatie
 te gebruiken kun je bijvoorbeeld je inhoud relevanter maken. E-mails die voor de
 lezers interessant zijn worden logischerwijs niet als spam aangemerkt. 
 
