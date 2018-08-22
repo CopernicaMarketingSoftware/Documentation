@@ -1,49 +1,81 @@
-# Werken met templates binnen de Marketing Suite
+# E-mailings Marketing Suite
+Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangegeven waar afbeeldingen, tekst en buttons moeten worden geplaatst. Hiervoor lever je wel wat vrijheid in ten opzichte van de HTML. In dit artikel worden de verschillen tussen beiden editors behandeld.
 
-Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, 
-namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai 
-hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangegeven
-waar afbeeldingen, tekst en buttons moeten worden geplaatst. 
-Naast de [follow-up manager](follow-up-manager-ms), heeft de 
-Marketing Suite nog een aantal andere toepassingen die wellicht 
-handig zijn bij het creëren van je e-mailtemplates.
+## Drag and drop editor
+Als graag snel en makkelijk campagnes wil maken dan is de drag en drop editor perfect voor jou. Klik op het **groene plusje** rechtsbovenin. Kies voor een **blank responsive template** of een kies een van de vooraf gemaakte templates. Links staan alle blokken die gebruikt kunnen worden in de Marketing Suite, elke blok heeft 5 tabs waarin instelligen van het blok aangepast kunnen worden. Deze tabs bevinden zich in de editor aan de rechterkant. 
 
-## Extend hyperlinks
+Het eerste tabje gaat specifiek over het blok zelf, bij een tekst blok kan hier tekst ingevoerd worden, bij een afbeelding blok wordt hier de afbeelding ingevoerd, etc. 
 
-Binnen de template editor kun je gebruik maken van "extend hyperlinks".
-Voeg de benodigde informatie (tags) toe om uit te vinden hoe klanten op 
-bepaalde links en e-mails reageren. Je kunt ook kiezen voor de custom 
-optie en op je eigen tags meegeven om data te verwerken. 
+In de tweede tab kan de styling van het blok aangepast worden denk hierbij aan padding, margin of font types
+In de derde tab kan een automatische actie toegevoegd worden. Dit kan alleen als er een link in het blok aanwezig is, de actie wordt namelijk geactiveerd als erop geklikt wordt. Voor meer informatie over automatische actie klik [hier](./follow-up-manager-ms.md).
 
-## CSS automatisch inline
+In de vierde tab kan de zichtbaarheid van een blok aangepast worden. Er kan aangegeven worden of een blok in de mail of webclient getoond moet worden en of een blok op mobile of desktop getoond mag worden. Verder is het ook mogelijk om je eigen conditie te geven voor het tonen van het blok. Hiervoor wordt er data uit het profiel gehaald en wordt gecontroleerd of het blok getoond mag worden. Bijvoorbeeld **$gender == "Man"**.
 
-De stijlopmaak, waarmee je e-mails vormgeeft in de template editor,
-moet op het moment van verzenden "inline" (in de HTML) worden gezet.
-Anders kan de e-mail niet correct worden weergegeven. De template 
-editor zorgt voor een automatische omzetting van CSS, waardoor alle
-stijlopmaak intact blijft en je klanten de e-mails exact zo ontvangen
-als jij voor ogen had.
+De laatste tab wordt gebruikt voor de achtergrond kleur. In deze editor kan de achtergrond kleur van een blok, een kolom, de hele rij van een kolom, de content in het midden of de hele template aangepast worden. 
 
-## Diff tool 
+### Blokken
+Zoals hierboven genoemd zijn er veschillende content blokken, deze worden hier kort beschreven.
+| Blokken           | Omschrijving                                                                                  |
+|--------------------|-----------------------------------------------------------------------------------------------|
+|Kolommen| Geeft structuur aan mailing door deze bijvoorbeeld te verdelen in 2,3 of 4 kolomen|
+|Kop| Bevat een titel|
+|Knop| Knop met een url naar de webomgeving|
+|Lijn| Een lijn die in verschillende stylen en diktes gebruikt kan worden|
+|Afbeelding| Bevat een afbeelding met een url naar webomgeving|
+|Witruimte| Bevat witruimte van een bepaalde hoogte|
+|Tekst-HTML| Bevat zelfgeschreven HTML of tekst via de teksteditor|
+|Tekst-Geen Opmaak|Bevat tekst waar geen opmaak meegegeven kan worden, vergelijkbaar met tekstversie|
+|Hyperlink-link| Bevat een opgegeven url|
+|Hyperlink-uitschrijven| Bevat {$unsubscribe}, hiermee schrijven klanten zich uit|
+|Hyperlink-webversie| Bevat {$webversion}, link naar de webversie|
+|Video| Bevat een Youtube of Vimeo video|
+|Volg ons| Bevat knoppen naar verschillende sociale media |
+|Delen| Bevat bericht om te delen via sociale media |
 
-Het kan natuurlijk altijd voorkomen dat je per ongeluk je tabblad of 
-scherm afsluit. In de meeste gevallen ben je dan je werk kwijt. In
-de Marketing Suite wordt alles voor je opgeslagen en kun je nagaan
-wat er is veranderd op het moment dat het scherm werd afgesloten.
+### Kolommen 
+Het kolommen blok wordt gebruikt om structuur binnen het template aan te brengen. Er kan gekozen worden voor verschillen groottes en hoeveelheden kolommen. Om te zorgen dat blokken goed onder elkaar tonen in zowel de desktop als mobiele versie dienen de blokken goed in de kolommen geplaatst te worden. De kolomen worden van links naar rechts onder elkaar gezet zoals hieronder:
 
-## Responsive templates
+![](../images/emailings-ms-columns.png)
 
-Templates die worden aangemaakt (en gebruikt) met de drag-and-drop editor zijn
-automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk 
-JSON bestanden. Door onze geavanceerde Responsive Email service, worden alle 
-JSON templates automatisch responsive gemaakt. Dit betekent dat de e-mails, 
-ongeacht op welk type apparaat, altijd goed worden weergegeven.
+### Responsive
+Templates die worden aangemaakt (en gebruikt) met de drag-and-drop editor zijn automatisch responsive. Onder de motorkap zijn de gecreëerde templates namelijk JSON bestanden. Door onze geavanceerde Responsive Email service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven. 
 
-## Spam check
+### JSON 
+Een verschil met de Publisher en de HTML editor is dat de drag en drop editor JSON gebruikt. JSON is niet een programmeer taal maar een data format. In JSON wordt aangegeven hoe de mail er ongeveer uit dient te zien. Voordat de mail verstuurd wordt, wordt alle JSON omgezet in naar responsive HTML. In de drag en drop editor is het mogelijk om de JSON aan te passen naar jou wensen. Om de JSON aan te passen klik je op **Template > Bekijk broncode**. Links staat de JSON van email en rechts is een preview van de email te zien. De inhoud van de mail dient aangepast worden in het het content gedeelte van een mail, dit ziet er vaak als volgt uit
 
-Het is ook mogelijk om, voordat je de e-mails versuurt, na te gaan of je e-mail
-daadwerkelijk in de inbox van de ontvanger belandt. Je kunt dit doen door op
-het **tools** knopje te drukken en vervolgens naar de `spam check` te navigeren.
-Aan de hand van een aantal checks wordt nagegaan hoe spamgevoelig je e-mail is.
-Hoewel e-mailclients binnenkomende e-mails verschillende waarderen van elkaar,
-is het handig om wellicht toch de verbeteringen door te voeren.
+        {
+      "content": {
+        "margin": {
+          "top": 5,
+          "bottom": 5
+        },
+        "blocks": [
+          {
+            "type": "html",
+            "content": "<p>Dit is een tekstblok.&nbsp;</p>\n",
+            "margin": {
+              "top": 5,
+              "right": 0,
+              "bottom": 5,
+              "left": 0
+            },
+            "padding": 0,
+            "font": {
+              "family": "Arial, Helvetica, sans-serif",
+              "size": "14px"
+            }
+          }
+        ]
+      }
+Hierin kunnen blokken aangepast worden, maar als je volledige vrijheid hebben over de mailing dan is de volgende editor misschien meer geschikt. 
+
+## HTML editor
+Om een HTML template aan te maken in de Marketing Suite ga je naar het **groene plusje** rechtsboven in, klik in het nieuw geopende venster op **Blanco HTML**. Links kan de HTML geschreven worden, als er op de grote play knop gedrukt wordt, dan wordt er een preview getoond aan de rechtkant. Met de knoppen boven de preview kan de mailing op desktop,tablet of mobile getoond worden. 
+
+## Diff tool
+Het kan natuurlijk altijd voorkomen dat je per ongeluk je tabblad of scherm afsluit. In de meeste gevallen ben je dan je werk kwijt. In de Marketing Suite wordt alles voor je opgeslagen en kun je nagaan wat er is veranderd op het moment dat het scherm werd afgesloten.
+
+## Mappen 
+Het is fijn om structuur te houden binnen je templates, daarom is het mogelijk om mappen aan te maken voor je templates. Om een map aan te maken ga je naar **Email designer** > klik bovenin op het **mapje met het plusteken**. Geef de map een naam en sleep vervolgens de templates naar de net aangemaakte map.  
+
+
