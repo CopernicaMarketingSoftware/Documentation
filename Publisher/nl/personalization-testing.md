@@ -1,4 +1,4 @@
-# Personaliseren testen
+# Personalisatie testen
 
 Als je bezig bent met het ontwikkelen van een gepersonaliseerde mailing, dan
 wil je vaak even een *sneak preview* zien om te controleren of de personalisatie 
@@ -13,7 +13,7 @@ veranderen.
 
 ![Edit and preview mode](../images/preview.png)
 
-Er zijn vier mogelijke instellingen, en ze spreken allemaal nogal voor zich:
+Er zijn vier mogelijke instellingen:
 
     * bewerkmode, met gepersonaliseerde content
     * bewerkmode, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)

@@ -161,7 +161,7 @@ Onderaan een document, naast de button voor de
 
 ![Edit and preview mode](../images/preview.png)
 
-Er zijn vier mogelijke instellingen, en ze spreken allemaal nogal voor zich:
+Er zijn vier mogelijke instellingen:
 
     * bewerkmodes, met gepersonaliseerde content
     * bewerkmodes, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)

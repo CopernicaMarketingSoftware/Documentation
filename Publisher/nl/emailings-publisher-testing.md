@@ -17,7 +17,7 @@ veranderen.
 
 ![Edit and preview mode](../images/preview.png)
 
-Er zijn vier mogelijke instellingen, en ze spreken allemaal nogal voor zich:
+Er zijn vier mogelijke instellingen:
 
     * bewerkmode, met gepersonaliseerde content
     * bewerkmode, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
@@ -62,7 +62,7 @@ De standaardbestemming is gekoppeld aan je persoonlijke login. Een collega
 die toegang heeft tot hetzelfde account zou een heel andere standaardbestemming
 kunnen hebben.
 
-## Test mail versturen
+## Testmail versturen
 Het makkelijskte manier is een testmail naar de standaardbestemming te sturen, vaak ben je dit zelf. Om een testmail te sturen ga je naar **mailings > testmail verzenden**, klik vervolgens als de instellingen goed staan op verzenden. 
 Het is ook mogelijk een testmail naar meerdere mensen te sturen. Maak een [selectie](./database-selections-introduction) aan die alle test profielen bevat en stuur hier vervolgens een [bulkmail](./emailings-publisher-sending) naartoe. 
 Om verschillende varianten van een mail te testen kan een split-run gebruikt worden, hieronder wordt er meer uitgelegd over de split-run.
