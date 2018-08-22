@@ -1,4 +1,4 @@
-# Contentblokken
+# Contentblokken in de Publisher
 
 Dit kun je gebruiken in de broncode van een e-mailtemplate. Er zijn 3 soorten content blokken/tags. Deze tags worden in dit artikel nader toegelicht. 
 

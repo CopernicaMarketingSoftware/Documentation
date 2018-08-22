@@ -1,4 +1,4 @@
-# Een mailing versturen
+# Een mailing versturen met de Publisher
 
 Het mailen van meerdere relaties ineens noemen wij een bulkmailing.
 Onder deze vernoeming van het menu Mailings vind je de opties voor het

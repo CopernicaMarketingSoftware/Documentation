@@ -1,4 +1,4 @@
-# Uitschrijflink
+# De uitschrijflink in de Publisher
 
 Het is wettelijk verplicht om iedere (commerciële) e-mail die je
 verstuurt, te voorzien van een goed zichtbare en werkende

@@ -1,4 +1,4 @@
-# Testen
+# Testen in de Publisher
 
 Voordat je je e-mail gaat sturen wil je deze uiteraard even testen. De punten hieronder behandelen op welke dingen je dient te letten, zodat jou mail goed bij de klant aankomt!
 

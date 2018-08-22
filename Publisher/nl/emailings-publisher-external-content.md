@@ -1,4 +1,4 @@
-# Externe content
+# Externe content inladen in de Publisher
 
 Met een feed heb je zelf in de hand welke content automatisch op je webpagina of in je e-mailing verschijnt. Met Copernica voeg je gemakkelijk een RSS of Atom feed toe aan je
 marketingcampagnes. Het is daarnaast ook mogelijk om de HTML zelf op te halen via een fetch request. 
