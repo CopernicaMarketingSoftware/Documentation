@@ -1,12 +1,13 @@
 # E-mailings Marketing Suite
-Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangegeven waar afbeeldingen, tekst en buttons moeten worden geplaatst. Hiervoor lever je wel wat vrijheid in ten opzichte van de HTML. In dit artikel worden de verschillen tussen beiden editors behandeld.
+Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangeven waar afbeeldingen, tekst en buttons moeten worden geplaatst. Hiervoor lever je wel wat vrijheid in ten opzichte van de HTML. In dit artikel worden de verschillen tussen beiden editors behandeld.
 
 ## Drag and drop editor
-Als graag snel en makkelijk campagnes wil maken dan is de drag en drop editor perfect voor jou. Klik op het **groene plusje** rechtsbovenin. Kies voor een **blank responsive template** of een kies een van de vooraf gemaakte templates. Links staan alle blokken die gebruikt kunnen worden in de Marketing Suite, elke blok heeft 5 tabs waarin instelligen van het blok aangepast kunnen worden. Deze tabs bevinden zich in de editor aan de rechterkant. 
+Als je graag snel en makkelijk campagnes wil maken dan is de drag en drop editor perfect voor jou. Klik op het **groene plusje** rechtsbovenin. Kies voor een **blank responsive template** of een kies een van de vooraf gemaakte templates. Links staan alle blokken die gebruikt kunnen worden in de Marketing Suite, elke blok heeft 5 tabs waarin instelligen van het blok aangepast kunnen worden. Deze tabs bevinden zich in de editor aan de rechterkant. 
 
 Het eerste tabje gaat specifiek over het blok zelf, bij een tekst blok kan hier tekst ingevoerd worden, bij een afbeelding blok wordt hier de afbeelding ingevoerd, etc. 
 
-In de tweede tab kan de styling van het blok aangepast worden denk hierbij aan padding, margin of font types
+In de tweede tab kan de styling van het blok aangepast worden. Denk hierbij aan padding, margin of font types.
+
 In de derde tab kan een automatische actie toegevoegd worden. Dit kan alleen als er een link in het blok aanwezig is, de actie wordt namelijk geactiveerd als erop geklikt wordt. Voor meer informatie over automatische actie klik [hier](./follow-up-manager-ms.md).
 
 In de vierde tab kan de zichtbaarheid van een blok aangepast worden. Er kan aangegeven worden of een blok in de mail of webclient getoond moet worden en of een blok op mobile of desktop getoond mag worden. Verder is het ook mogelijk om je eigen conditie te geven voor het tonen van het blok. Hiervoor wordt er data uit het profiel gehaald en wordt gecontroleerd of het blok getoond mag worden. Bijvoorbeeld **$gender == "Man"**.
@@ -14,14 +15,14 @@ In de vierde tab kan de zichtbaarheid van een blok aangepast worden. Er kan aang
 De laatste tab wordt gebruikt voor de achtergrond kleur. In deze editor kan de achtergrond kleur van een blok, een kolom, de hele rij van een kolom, de content in het midden of de hele template aangepast worden. 
 
 ### Blokken
-Zoals hierboven genoemd zijn er veschillende content blokken, deze worden hier kort beschreven.
+Zoals hierboven genoemd zijn er verschillende content blokken, deze worden hier kort beschreven.
 
 | Blokken           | Omschrijving                                                                  |
 |--------------------|------------------------------------------------------------------------------|
 |Kolommen| Geeft structuur aan mailing door deze bijvoorbeeld te verdelen in 2,3 of 4 kolomen|
 |Kop| Bevat een titel|
 |Knop| Knop met een url naar de webomgeving|
-|Lijn| Een lijn die in verschillende stylen en diktes gebruikt kan worden|
+|Lijn| Een lijn die in verschillende stijlen en diktes gebruikt kan worden|
 |Afbeelding| Bevat een afbeelding met een url naar webomgeving|
 |Witruimte| Bevat witruimte van een bepaalde hoogte|
 |Tekst-HTML| Bevat zelfgeschreven HTML of tekst via de teksteditor|
