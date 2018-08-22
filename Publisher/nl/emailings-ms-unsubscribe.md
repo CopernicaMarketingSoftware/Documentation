@@ -1,4 +1,4 @@
-# Uitschrijflink
+# De uitschrijflink in de Marketing Suite
 
 Het is wettelijk verplicht om iedere (commerciële) e-mail die je
 verstuurt, te voorzien van een goed zichtbare en werkende
@@ -8,7 +8,7 @@ laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 **{$unsubscribe}**.
 
 **Belangrijke noot:** Wanneer je gebruik maakt van de {$unsubscribe},
-dien je tevens het uitschrijfgedrag in te stellen op de database of collectie 
+dien je tevens het [uitschrijfgedrag in te stellen op de database of collectie](database-unsubscribe-behavior) 
 waaraan je de e-mailing richt!
 
 ## De uitschrijflink toevoegen

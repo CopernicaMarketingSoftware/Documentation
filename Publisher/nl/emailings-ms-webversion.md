@@ -1,4 +1,4 @@
-# Webversion in de Marketing Suite
+# Webversie in de Marketing Suite
 
 Soms kan een e-mail niet goed worden weergegeven in het e-mailprogramma
 van de ontvanger. Geen nood, want het meesturen van een webversie van je
@@ -17,6 +17,10 @@ wordt altijd **gepersonaliseerd** weergegeven.
 Om de webversie mee te sturen in je Marketing Suite e-mails, gebruik je onderstaande tag:
 
 `{$webversion}`
+
+In een HTML e-mailtemplate kun je dit binnen de href plaatsen:
+
+`<a href="{$webversion}" title="Klik hier voor de webversie">Bekijk deze email in je favoriete browser</a>`
 
 That's it. In de email wordt de tag omgezet naar het (voor iedere
 ontvanger unieke) webadres (URL) van de webversie. 
