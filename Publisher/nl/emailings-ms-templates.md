@@ -15,8 +15,9 @@ De laatste tab wordt gebruikt voor de achtergrond kleur. In deze editor kan de a
 
 ### Blokken
 Zoals hierboven genoemd zijn er veschillende content blokken, deze worden hier kort beschreven.
-| Blokken           | Omschrijving                                                                                  |
-|--------------------|-----------------------------------------------------------------------------------------------|
+
+| Blokken           | Omschrijving                                                                  |
+|--------------------|------------------------------------------------------------------------------|
 |Kolommen| Geeft structuur aan mailing door deze bijvoorbeeld te verdelen in 2,3 of 4 kolomen|
 |Kop| Bevat een titel|
 |Knop| Knop met een url naar de webomgeving|
