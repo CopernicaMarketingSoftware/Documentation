@@ -34,8 +34,7 @@ zijn
 -   Je hebt de gebruiksmogelijkheden ingesteld voor de doelselectie of
     -miniselectie.
 
-De bestemming van de mailing instellen
---------------------------------------
+## De bestemming van de mailing instellen
 
 -   Kies bij *selectie* de bestemming van een mailing. Dit kan een
     database, selectie, collectie of minicollectie zijn.
@@ -46,8 +45,7 @@ Voer optioneel een omschrijving in.
 
 ![](../images/NL-bulk-inroosteren.png)
 
-Tijdstip van verzenden
-----------------------
+## Tijdstip van verzenden
 
 Je kan een mailing eenmalig en direct versturen. Maar het is ook
 mogelijk om een mailing in te roosteren voor latere verzending. Het is
@@ -60,8 +58,7 @@ moet worden en met welke interval.
 
 ![](../images/NL-bulk-inroosteren.png)
 
-Extra instellingen voor bulkmailings
-------------------------------------
+## Extra instellingen voor bulkmailings
 
 Bepaal de instellingen voor de verzending. Deze zijn standaard zo
 ingesteld dat ze volstaan voor de meeste gebruikers.
@@ -88,8 +85,7 @@ geen HTML kan weergeven.
     het instellen van afleverlimieten per ontvangende server kan je de
     afleverinstellingen van het account beter wijzigen.
 
-Split-run mailing
------------------
+## Split-run mailing
 
 Bij een split-run e-mailing is het mogelijk verschillende documenten op
 te stellen voor dezelfde bulkmailing. De verschillende versies worden

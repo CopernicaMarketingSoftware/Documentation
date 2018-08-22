@@ -8,8 +8,7 @@ Let op: Dit artikel gaat over gebruikers van de martketingsoftware.
 Iemand die geregistreerd is op Copernica.com is niet automatisch een
 accountgebruiker.
 
-Even wat feiten op een rijtje
------------------------------
+## Even wat feiten op een rijtje
 
 Een account heeft minimaal 1 gebruiker. Er is geen maximum gebonden aan
 het aantal gebruikers binnen een account.
@@ -36,8 +35,7 @@ het inloggen het account waarin hij wilt werken. Eenmaal ingelogd, kan
 hij desgewenst van account wisselen via het persoonlijk menu rechtsboven
 in de applicatie.
 
-**Gebruiker toevoegen**
------------------------
+## Gebruiker toevoegen
 
 De beheerder van een account kan gebruikers toevoegen en verwijderen. Om
 een gebruiker toe te voegen, ga je naar het onderdeel *Beheer*. Kies in
@@ -60,7 +58,7 @@ de andere accounts waartoe zij ook toegang hebben.  
 medegebruiker is van een van de accounts waar jij ook toegang tot hebt.
 Je ziet hier dus alleen gebruikers die je (waarschijnlijk) al kent.*
 
-### **SOAP API gebruiker**
+### SOAP API gebruiker
 
 Wanneer je gebruik maakt van de SOAP API koppeling van Copernica, dan
 dien je een aparte gebruiker aan te maken (met een uniek e-mailadres)
@@ -68,7 +66,7 @@ voor het tot stand brengen van de connectie. Als je de gebruiker toegang
 geeft tot de API, en de toegang tot de gebruikersinterface uitschakelt,
 dan wordt deze gebruiker niet gefactureerd (de API-gebruiker is gratis).
 
-Selecteer de gebruiker, en kies vervolgens *Toegangsrechten instellen*in
+Selecteer de gebruiker, en kies vervolgens *Toegangsrechten instellen* in
 de onderste werkbalk.
 
 ### Partnergebruiker
@@ -97,8 +95,7 @@ naar je andere accounts via het persoonlijke menu rechtsboven
 (Welkom *naam…*). Klik op *Account wisselen* om over te schakelen naar
 een ander account.
 
-Toegangsrechten gebruikers
---------------------------
+## Toegangsrechten gebruikers
 
 Per gebruiker kan worden ingesteld welke rol hij of zij heeft binnen het
 account. In Copernica maken we onderscheid tussen vier verschillende
@@ -107,7 +104,7 @@ rollen.
 Alleen een beheerder kan de toegangsrechten van anderen wijzigen. Een
 beheerder kan zijn of haar eigen toegangsrechten niet veranderen.
 
-### **Gebruiker is beheerder van het account**
+### Gebruiker is beheerder van het account
 
 Een beheerder heeft de meeste rechten. Ieder account heeft minstens 1
 beheerder. Eén enkel account kan meerdere beheerders hebben.
@@ -156,15 +153,14 @@ Een gebruiker die toegang heeft tot meerdere accounts kan in deze
 accounts een verschillende rol hebben. De gebruiker kan dus in account A
 beheerder zijn, en in account B een normale gebruiker zijn.  
 
-Gebruiker verwijderen
----------------------
+## Gebruiker verwijderen
 
 Beheerders kunnen gebruikers toevoegen en verwijderen. Het verwijderen
 van een gebruiker heeft geen invloed op gegevens binnen het account.
 Publicaties gemaakt door de gebruiker blijven behouden.
 
 Om een gebruiker te verwijderen selecteer je onder **Beheer** de
-gebruiker. Kies vervolgens *verwijderen* in het menu **Gebruiker. **
+gebruiker. Kies vervolgens *verwijderen* in het menu **Gebruiker.**
 
 ### Gebruiker tijdelijk deactiveren
 
@@ -179,8 +175,7 @@ verschillende wijzen:
     actief is in het account. Je kan de gebruiker op een later tijdstip
     altijd weer rehabiliteren door de gebruiker opnieuw toe te voegen.
 
-Individuele gebruikersstatistieken
-----------------------------------
+## Individuele gebruikersstatistieken
 
 Van iedere gebruiker wordt bijgehouden hoeveel e-mailberichten,
 sms-berichten, API-calls et cetera hij of zij heeft verstuurd /

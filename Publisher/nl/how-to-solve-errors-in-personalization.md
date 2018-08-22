@@ -25,8 +25,7 @@ Zoek de template broncode en de inhoud van tekstblokken naar blokhaken
 en accolades. Mocht je deze tegenkomen, en je kan ze niet verangen door
 iets anders, gebruik dan *ldelim* en *rdelim*. Hieronder de uitleg.
 
-Toch blokhaken of accolades gebruiken in e-mailing of website?
---------------------------------------------------------------
+## Toch blokhaken of accolades gebruiken in e-mailing of website?
 
 Dit kan door middel van **ldelim** en **rdelim**
 

@@ -79,8 +79,7 @@ volgende opties voorgedefinieerd:
 Zorg dat de drie webpagina’s klaar zijn voor gebruik (zodat je hier
 direct het formulier op kan plaatsen en naartoe kunt linken.
 
-Stap 3. De fabricatie van het formulier
----------------------------------------
+## Stap 3. De fabricatie van het formulier
 
 Dit wordt een aanmeldformulier met hierin **twee velden** opgenomen.
 
@@ -100,8 +99,7 @@ is verstuurd naar {$emailadres}.
 
 ![](../images/afbeelding2.png)
 
-Stap 4. Koppel een opvolgactie aan het webformulier
----------------------------------------------------
+## Stap 4. Koppel een opvolgactie aan het webformulier
 
 Wanneer het formulier is ingevuld en verzonden, moet er een
 bevestingsmail worden verstuurd naar het zojuist ingevulde e-mailadres.
@@ -111,8 +109,7 @@ Ga naar *webformulier >* **opvolgacties** en creëer een opvolgactie
 waarbij een opgemaakte e-mail wordt verstuurd aan het profiel. Selecteer
 het e-maildocument met hierin (straks) de bevestigingslink.
 
-Stap 5. Het e-maildocument met bevestigingslink
------------------------------------------------
+## Stap 5. Het e-maildocument met bevestigingslink
 
 ![](../images/afbeelding3.png)
 
@@ -134,8 +131,7 @@ Sla de opvolgactie op. Wanneer de kersverse abonnee op bevestigen klikt,
 wordt de waarde in het veld ‘Nieuwsbriefvoorkeur’ veranderd naar*Ja,
 bevestigd*.
 
-Maak een nieuwsbriefselectie
-----------------------------
+## Maak een nieuwsbriefselectie
 
 Maak tot slot in de database een
 [nieuwsbriefselectie](./create-a-mailing-list.md)

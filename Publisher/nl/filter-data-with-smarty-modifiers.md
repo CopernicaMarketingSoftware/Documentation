@@ -15,8 +15,7 @@ Smarty](http://www.smarty.net/docsv2/en/language.modifiers.tpl).
 Filters worden altijd vooraf gegaan door een pijpteken (|). Deze vind je
 direct boven de entertoets op je toetsenbord.
 
-Weergave van datums
--------------------
+## Weergave van datums
 
 ### Filter: |date \_format
 
@@ -31,14 +30,14 @@ maar kan op alle datumvelden worden toepepast.
 
 In het volgende overzicht een aantal voorbeelden van de mogelijkheden.
 
-    -------------------------------------------- -----------------------------
-    {$smarty.now|date_format}                   Dec 4, 2007
-    {$smarty.now|date_format:"%D"}              12/04/07
-    {$smarty.now|date_format:“%d-%m-%Y”}        04-12-2007
-    {$smarty.now|date_format:"%A, %e %B %Y"}    Tuesday, 4 decembre 2007
-    {$smarty.now|date_format:“%A"}              Tuesday
-    {$smarty.now|date_format:"%c"}              Tu 04 dec 2007 15:20:28 CET
-    -------------------------------------------- -----------------------------
+```
+{$smarty.now|date_format}                   Dec 4, 2007
+{$smarty.now|date_format:"%D"}              12/04/07
+{$smarty.now|date_format:“%d-%m-%Y”}        04-12-2007
+{$smarty.now|date_format:"%A, %e %B %Y"}    Tuesday, 4 decembre 2007
+{$smarty.now|date_format:“%A"}              Tuesday
+{$smarty.now|date_format:"%c"}              Tu 04 dec 2007 15:20:28 CET
+```
 
 Als je een datum ophaalt uit het profiel kan je op dezelfde wijze het
 filter toepassen:
@@ -48,8 +47,7 @@ Bijvoorbeeld: `{$Geboortedatum|date_format:"%D"}`
 Voor meer datumcoderingen, zie de website van smarty
 ([smarty.net](http://www.smarty.net/docs/en/language.modifier.date.format.tpl)).
 
-Hoofdletters en kleine letters
-------------------------------
+## Hoofdletters en kleine letters
 
 ### Filter: |capitalize
 
@@ -67,7 +65,7 @@ hoofdletter, tenzij de optionele parameter ‘true’ wordt meegegeven:
 ### Filter: |lower
 
 Dit filter wordt gebruikt om alle hoofdletters te verwijderen. Dit is
-gelijk aan de *PHP strtolower()*functie.
+gelijk aan de *PHP strtolower()* functie.
 
 Als de variabele {$Naam|lower} de waarde heeft: ‘Karel APPEL'
 

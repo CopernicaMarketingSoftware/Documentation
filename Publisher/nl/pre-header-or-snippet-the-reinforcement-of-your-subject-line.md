@@ -7,8 +7,7 @@ Misschien heb je ook al het ideale tijdstip van verzending bepaalt. Maar
 daarnaast kan je ook je preheader aanpassen om je e-mails nog
 aantrekkelijker te maken.
 
-Snippet: Wat is dat?
---------------------
+## Snippet: Wat is dat?
 
 De snippet of preheader is de benaming voor de eerste paar regels van je
 `<body>`-tag in
@@ -25,8 +24,7 @@ gedeelte hiervan) na het onderwerp laten zien.
 
 ![pre header in Gmail](../images/gmail_preheaders.gif)
 
-Waarom is de preheader belangrijk?
-----------------------------------
+## Waarom is de preheader belangrijk?
 
 Meeste marketeers gebruiken de preheader om lezers te verwijzen naar de
 webversie van de e-mail, naar een mobiele versie of nemen een afmeldlink
@@ -35,8 +33,7 @@ Maar indien je ontvanger de mail niet opent dan hebben deze links geen
 nut. Maak gebruik van de preheader om je onderwerpregel kracht bij te
 zetten en de ontvanger te overtuigen jouw e-mail te openen.
 
-Hoe kan ik het instellen?
--------------------------
+## Hoe kan ik het instellen?
 
 Zoals reeds vermeld, voeg je een snippet toe bovenin je `<body>` -tag.
 Dat ziet er dan ongeveer als volgt uit:
@@ -56,10 +53,8 @@ Dat ziet er dan ongeveer als volgt uit:
         </table>
     </body>  
 
-Waarna de rest van je HTML-code volgt.\
- Je kan er ook voor kiezen een extra tekstblok in je template mee te
-nemen als je gebruik maakt van marketingsoftware. Dan ziet de code er zo
-uit:
+Waarna de rest van je HTML-code volgt. Je kan er ook voor kiezen een extra tekstblok in je template mee te
+nemen als je gebruik maakt van marketingsoftware. Dan ziet de code er zo uit:
 
     <body>
         <table>
@@ -77,8 +72,7 @@ een verticaal previewvenster. In dit geval zou een gecentreerde snippet
 maar gedeeltelijk te zien zijn. Vandaar is het ook belangrijk altijd te
 testen hoe jouw e-mails eruit zien in verschillende e-mailclients.
 
-Verschillende gebruiksmethodes
-------------------------------
+## Verschillende gebruiksmethodes
 
 Er zijn ook verschillende manieren waarop je de snippet kan gebruiken
 binnen je e-mail.
@@ -111,8 +105,7 @@ je [spamrating](./reduce-your-spam-rating-some-focus-points.md "Spamrating") o
 schieten waardoor je e-mail terecht komt in de spambox of erger, niet
 meer wordt toegelaten tot de inbox.
 
-Vergeet je preheader niet te testen
------------------------------------
+## Vergeet je preheader niet te testen
 
 Test verschillende uitvoeringen van je snippet. Zo kom je te weten welke
 het beste werkt in jouw e-mails. Maak hierbij gebruik van  [split-run

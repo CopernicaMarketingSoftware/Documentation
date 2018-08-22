@@ -31,8 +31,7 @@ product in het subprofiel.
 
 ![](../images/database-tandenborstel-2.png)
 
-Het document
-------------
+## Het document
 
 Nu we de basis van de e-mail campagne hebben gebouwd, is het tijd om het
 document op te gaan bouwen.

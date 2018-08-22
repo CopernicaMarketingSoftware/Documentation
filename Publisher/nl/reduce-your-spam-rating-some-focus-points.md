@@ -4,24 +4,21 @@ Een goed opgemaakte e-mailcampagne moet natuurlijk op een
 goede deliverability kunnen rekenen. Door op een paar simpele punten te
 letten verlaag je de spamrating en waardoor e-mailings beter aankomen.
 
-Wat is spamrating?
-------------------
+## Wat is spamrating?
 
 Spamfilters onderscheppen inkomende e-mails en bepalen aan de hand van
 verschillende tests of een e-mail het label spam krijgt toegewezen. De
 e-mail krijgt strafpunten voor elke test waar hij niet voor slaagt.
 Teveel strafpunten (spamrating) en de e-mail wordt geblokkeerd.
 
-Afzender en onderwerp
----------------------
+## Afzender en onderwerp
 
 De eerste stap in het creëren van een spamvrije e-mail is het correct
 instellen van de afzender en het onderwerp. Gebruik als afzender een
 bestaand e-mailadres en vul een goed, niet te lang onderwerp in. Let
 goed op de gebruikte woorden.
 
-Tekst in de e-mailing
----------------------
+## Tekst in de e-mailing
 
 Vermijd in het onderwerp en in de rest van de e-mailing het gebruik van
 spamgevoelige woorden. Dit geldt niet alleen voor merknamen zoals
@@ -39,8 +36,7 @@ Schrijf de hyperlinks uiteraard wel volledig uit. "Meld je nu aan" werkt
 niet in de tekstversie, gebruik daar bijvoorbeeld "Meld je aan op
 www.copernica.com".
 
-Gebruik van afbeeldingen
-------------------------
+## Gebruik van afbeeldingen
 
 Teveel afbeeldingen in een e-mailing, of alleen maar afbeeldingen,
 levert veel strafpunten op. Zorg voor een goede balans tussen de
@@ -59,8 +55,7 @@ mogelijk wilt houden, gebruik je best afbeeldingsnamen van max. 3
 karakters. Wil je de afbeelding toch een volledige naam meegeven, voeg
 deze dan toe in de alt-tag van de afbeelding.
 
-Check je spamrating
--------------------
+## Check je spamrating
 
 Een spamrating is op verschillende manieren te controleren. Het kan
 ingebouwd zijn in een e-mailverzendprogramma. Copernica Marketing

@@ -44,11 +44,9 @@ document niet daadwerkelijk omgezet naar HTML, en zo voorkom je dus dat
 de rest van het document in grote letters wordt weergeven (totdat een
 \</h1\> wordt gevonden).
 
-Extra personalisatie velden
----------------------------
+## Extra personalisatie velden
 
-Je kan bij het template [extra velden voor
-personalisatie](./extra-fields-for-personalizing.md)
+Je kan bij het template [extra velden voor personalisatie](./extra-fields-for-personalizing.md)
 opgeven. Vanuit het personalisatie-instellingen menu kan je deze velden
 van een waarde voorzien.
 

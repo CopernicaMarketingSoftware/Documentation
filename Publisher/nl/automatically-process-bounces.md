@@ -13,8 +13,7 @@ tegen te gaan.
 Het is mogelijk om dit verwerkingsproces volledig automatisch te laten
 verlopen.
 
-Stap 1. Bounce selectie maken
------------------------------
+## Stap 1. Bounce selectie maken
 
 1.  Maak op de database een nieuwe selectie aan op basis van
     de resultaten van eerdere mailings.
@@ -26,8 +25,7 @@ Stap 1. Bounce selectie maken
     bounces en hoe veel errors er voor mogen zijn gekomen.
 6.  Sla de selectieconditie op.
 
-Stap 2. Inhoud van deze selectie uitsluiten van nieuwsbriefselectie
--------------------------------------------------------------------
+## Stap 2. Inhoud van deze selectie uitsluiten van nieuwsbriefselectie
 
 Voeg een nieuwe regel toe aan de nieuwsbriefselectie om er voor te
 zorgen dat naar adressen die in de foutselectie zijn opgenomen geen mail

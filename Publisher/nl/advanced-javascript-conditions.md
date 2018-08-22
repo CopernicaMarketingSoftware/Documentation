@@ -15,8 +15,7 @@ Ga direct naar de beschikbare variabelen voor
 - [Formulieren](#formulieren)
 - [Split run mailings](#splitrun)
 
-JavaScript condities
---------------------
+## JavaScript condities
 
 Onder andere bij opvolgacties, webformulieren en blokken in een HTML document kun je JavaScript conditie plaatsen. Deze condities worden door de applicatie geevalueerd om te achterhalen of een opvolgacties moet worden uitgevoerd, of een bepaald blok in een document moet worden opgenomen, of om te controleren of een bepaald profielovereenkomt met de ingevulde gegevens van een formulier. Indien een conditie naar true evalueert, dan wordt de opvolgactie uitgevoerd, en als de conditie naar false evalueert dan gebeurt dat niet.
 
