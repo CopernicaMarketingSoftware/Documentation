@@ -1,4 +1,4 @@
-# Webversion 
+# De webversie in de Publisher 
 
 Soms kan een e-mail niet goed worden weergegeven in het e-mailprogramma
 van de ontvanger. Geen nood, want het meesturen van een webversie van je

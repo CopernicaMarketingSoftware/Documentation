@@ -1,8 +1,9 @@
-# E-mailings Publisher
+# E-mailings in de Publisher
 
 De Publisher hanteert een andere manier om tot een mooie en werkende template te komen. In vergelijking met Marketing Suite is de aanpak wat technischer en moeilijker, omdat kennis van HTML en CSS vereist is. De Publisher heeft echter wel enkele functionaliteiten die in de Marketing Suite niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. 
 
 ## Werken met publisher templates
+
 In de Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
 voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
@@ -91,11 +92,13 @@ een blokhaak wilt zetten, maar niet wilt dat Copernica deze blokhaak als
 speciaal teken herkent, dan vervang je de blokhaken gewoon door 
 [ldelim] en [rdelim]:
 
-    <style type="text/css">
-        div[ldelim]class=x[rdelim] {
-            font-weight: bold;
-        }
-    </style>
+```
+<style type="text/css">
+    div[ldelim]class=x[rdelim] {
+        font-weight: bold;
+    }
+</style>
+```
 
 Als je een heel groot stuk CSS code hebt dat vol staat met blokhaken, en waar
 bovendien nergens gebruik wordt gemaakt van contentblokken (zodat alle blokhaken
@@ -103,14 +106,15 @@ in dat stuk geen speciale template betekenis hebben), dan kun je ook [literal]
 en [/literal] gebruiken. Met deze tags kun je een deel van je broncode markeren
 waarbinnen alle blokhaken geen speciale betekenis hebben.
 
-    <style type="text/css">
-        [literal]
-            div[class=x] {
-                font-weight: bold;
-            }
-        [/literal]
-    </style>
-
+```
+<style type="text/css">
+     [literal]
+         div[class=x] {
+             font-weight: bold;
+         }
+     [/literal]
+ </style>
+```
 
 ## Vaste afbeeldingen
 
@@ -154,9 +158,11 @@ stuk minder kwetsbaar dan een complexe template, en leidt tot minder problemen
 en een groter bereik.
 
 ## Aanmaken templates/documenten
+
 Klik links boven op **Template**>**Nieuwe template** om een nieuwe template aan te maken. In het volgende venster kan er een naam gegeven worden aan de template en kan de template eventueel met voorbeeldcode gevuld worden. In het venster rechts kan het template bekeken en aangepast worden. In het broncode template tabblad kan de html van de template aangepast worden. Hier dienen ook de bovengenoemde contentblokken aangemaakt worden. Om deze contentblokken te vullen moet er een document aangemaakt worden. Klik op **Document**>**Nieuw document** om een document aan het template toe te voegen. Dit document is de uiteindelijk mailing en hierin is het mogelijk om de contentblokken te vullen. 
 
 ## Archiveren en mappen
+
 Om structuur te houden binnen de templates is het mogelijk om mappen te maken. Om een map aan te maken klik je op  **Template**>**Beheer mappen**. In dit menu kunnen mappen toegevoegd of aangemaakt worden. Om een template die geselecteerd is naar een map te verplaatsen klik dan op **Template**>**Verplaats in/uit map**. 
 Het is ook mogelijk om templates te archiveren. Dit zorgt ervoor dat deze niet meer ingeladen worden en ze verdwijnen uit het overzicht, dit schept meer structuur en scheelt tijd. Klik op  **Template**>**Archiveren** om 1 template te archiveren klik op **Template**>**Archiveren van meerdere documenten** om meerdere templates te archiveren. Linksonder kan het vinkje bij **Archief** aangezet worden om alle gearchiveerde templates te zien. 
 

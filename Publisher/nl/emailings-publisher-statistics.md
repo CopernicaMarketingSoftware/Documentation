@@ -1,4 +1,4 @@
-# Statistieken
+# Statistieken in de Publisher
 
 De servers van Copernica slaan informatie op over jouw e-mailings en gebruikers, die vervolgens bekeken kan worden in de Publisher applicatie. Je kunt hier bijvoorbeeld zien hoe vaak je e-mail geopend is. Je kunt de resultaten van een mailing ook exporteren met Publisher of [exporteren met de REST API](./rest-get-logfiles-names).
 
