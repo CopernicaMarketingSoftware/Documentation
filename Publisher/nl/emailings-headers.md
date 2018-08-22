@@ -2,9 +2,9 @@
 
 Headers worden gebruikt om informatie mee te geven aan een e-mail. 
 Er zijn gestandaardiseerde headers zoals "From" en "Subject", maar je 
-kunt ook zelf zogenaamde "x-headers" gebruiken.
+kunt ook zogenaamde "x-headers" gebruiken.
 
-In Marketing Suite vind je al deze editors bovenaan de Template Editor 
+In Marketing Suite vind je al deze headers bovenaan de Template Editor 
 bij het aanmaken van een e-mail. In Publisher kun je deze vinden bij het 
 aanmaken van een mailing onder het **E-mailings** menu.
 
@@ -26,14 +26,13 @@ om extra informatie mee te geven aan je e-mail. Je kunt dus helemaal zelf
 bepalen welke X-headers je gebruikt of wat je meegeeft. Je kan bijvoorbeeld 
 de naam van je selectie of campagne meegeven voor je eigen statistieken.
 
-Met Copernica kun je hier ook Smarty [personalisatie](./emailings-ms-personalization) 
-gebruiken. Zo kun je bijvoorbeeld aan elke e-mail een "X-PF-ID" meegeven, 
-waar je de ID van een profiel meegeeft (bijvoorbeeld omdat deze anders 
-is in je eigen database). Als de e-mail vervolgens niet aankomt kun je 
-dit profiel zo terug zoeken in je eigen database en contacteren om het 
-probleem op te lossen.
+Met Copernica kun je hier ook personalisatie gebruiken. Zo kun je bijvoorbeeld 
+aan elke e-mail een "X-PF-ID" meegeven, waar je de ID van een profiel meegeeft 
+(bijvoorbeeld omdat deze anders is in je eigen database). Als de e-mail 
+vervolgens niet aankomt kun je dit profiel zo terug zoeken in je eigen database 
+en contacteren om het probleem op te lossen.
 
-## Unsubscribe
+## List-Unsubscribe header
 
 Je kunt ook altijd de *list unsubscribe* header toevoegen. Hiermee 
 kunnen sommige e-mailclients meteen een unsubscribe link bovenaan de 
