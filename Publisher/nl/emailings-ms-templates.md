@@ -28,8 +28,8 @@ Zoals hierboven genoemd zijn er verschillende content blokken, deze worden hier 
 |Tekst-HTML| Bevat zelfgeschreven HTML of tekst via de teksteditor|
 |Tekst-Geen Opmaak|Bevat tekst waar geen opmaak meegegeven kan worden, vergelijkbaar met tekstversie|
 |Hyperlink-link| Bevat een opgegeven url|
-|Hyperlink-uitschrijven| Bevat {$unsubscribe}, hiermee schrijven klanten zich uit|
-|Hyperlink-webversie| Bevat {$webversion}, link naar de webversie|
+|Hyperlink-uitschrijven| Bevat [{$unsubscribe}](./emailings-ms-unsubscribe), hiermee schrijven klanten zich uit|
+|Hyperlink-webversie| Bevat [{$webversion}](./emailings-ms-webversion), link ,naar de webversie|
 |Video| Bevat een Youtube of Vimeo video|
 |Volg ons| Bevat knoppen naar verschillende sociale media |
 |Delen| Bevat bericht om te delen via sociale media |
