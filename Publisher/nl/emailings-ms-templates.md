@@ -2,7 +2,7 @@
 Binnen de Marketing Suite zijn twee manieren om e-mailtemplates te maken, namelijk met de drag-and-drop editor en met de HTML editor. Met de drag-and-drop editor maak je in een handomdraai hoogwaardige kwaliteit e-mails. Met deze eenvoudige editor kun je elementen slepen en zo aangeven waar afbeeldingen, tekst en buttons moeten worden geplaatst. Hiervoor lever je wel wat vrijheid in ten opzichte van de HTML. In dit artikel worden de verschillen tussen beiden editors behandeld.
 
 ## Drag and drop editor
-Als je graag snel en makkelijk campagnes wil maken dan is de drag en drop editor perfect voor jou. Klik op het **groene plusje** rechtsbovenin. Kies voor een **blank responsive template** of een kies een van de vooraf gemaakte templates. Links staan alle blokken die gebruikt kunnen worden in de Marketing Suite, elke blok heeft 5 tabs waarin instelligen van het blok aangepast kunnen worden. Deze tabs bevinden zich in de editor aan de rechterkant. 
+Als je graag snel en makkelijk campagnes wil maken dan is de drag en drop editor perfect voor jou. Klik op het **groene plusje** rechtsbovenin. Kies voor een **blank responsive template** of een kies een van de vooraf gemaakte templates. Links staan alle blokken die gebruikt kunnen worden in de Marketing Suite, elke blok heeft 5 tabs waarin instellingen van het blok aangepast kunnen worden. Deze tabs bevinden zich in de editor aan de rechterkant. 
 
 Het eerste tabje gaat specifiek over het blok zelf, bij een tekst blok kan hier tekst ingevoerd worden, bij een afbeelding blok wordt hier de afbeelding ingevoerd, etc. 
 
