@@ -1,7 +1,18 @@
-# Personalisatie functies
+# Publisher personalisatie functies
 
-Er zijn heel veel functies standaard in Smarty, en een paar functies zijn
-specifiek voor Copernica. Hieronder zie je alle beschikbare functies:       
+Er zijn veel standaard Smarty functies beschikbaar in de Publisher, een paar functies zijn
+specifiek voor Copernica zoals de *webonly* functie en de *unsubscribe* functie.
+
+Sommige functies bestaan uit een open- en een sluittag en hebben invloed op
+de tekst die door de tags wordt omsloten:
+
+```text
+{mailonly}
+    Klik <a href="{webversion}">hier</a> voor de webversie
+{/mailonly}
+```
+
+Hieronder zie je alle beschikbare functies:       
 
 | Functie naam                                                          | Functie omschrijving                                                         |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -35,6 +46,7 @@ specifiek voor Copernica. Hieronder zie je alle beschikbare functies:
 | [{webform}](./publisher-personalization-functions#webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./publisher-personalization-functions#webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
 | [{webversion}](./publisher-personalization-functions#webversion)                      | webversielink                      |
+
 ## assign
 
 De {assign} functie kan gebruikt worden om een waarde in een variabele op te slaan. Je kunt deze dan later gebruiken.
@@ -43,15 +55,15 @@ Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger o
 ### Voorbeeld    
     {assign var="name" value="Bob"} of {assign "name" "Bob"}
     Hallo {$name},
-    
+
     Deze e-mail schreven we speciaal voor jou!
-    
+
 ---
 ## capture
 
-*Capture* kan gebruikt worden om de code tussen de begintag en de eind-tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden. 
+*Capture* kan gebruikt worden om de code tussen de begintag en de eind-tag op te slaan in een variabele. Het werkt vergelijkbaar met de [assign functie](./publisher-personalization-functions#assign), maar kan ook gebruikt worden op veel grotere stukken code of om arrays te maken, zonder dat dit er slordig uitziet. Het slaat de code op tijdens het verwerken van de template en kan verderop in de template weer gebruikt worden.
 
-De [rawcapture](./publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* vervangen door *rawcapture* 
+De [rawcapture](./publisher-personalization-functions#rawcapture) functie is heel vergelijkbaar, maar gebruikt geen HTML escaping. Als je  dit niet wilt gebruiken kun je *capture* vervangen door *rawcapture*
 in de volgende voorbeelden. Het wordt echter wel aangeraden om HTML escaping te gebruiken om te zorgen dat er geen schadelijke content wordt gebruikt.
 
 *Capture* heeft vele functionaliteiten. Je kunt er informatie mee opslaan of toevoegen aan een bestaande variabele om een array te maken. We laten nu eerst wat parameters zien voor de functie en vervolgens hoe je ze gebruikt.
@@ -69,19 +81,19 @@ Geen van deze variabelen is verplicht. Als je geen naam meegeeft aan de functie 
 
 ## Capture zonder variabele naam
 
-Het volgende voorbeeld laat zien hoe je *capture* gebruikt zonder op 
+Het volgende voorbeeld laat zien hoe je *capture* gebruikt zonder op
 te slaan in een variabele.
 
     {capture name="someText"}
         This is some text that I would like to use later in the template.
     {/capture}
-    
+
 De kortere versie ziet er als volgt uit en doet hetzelfde:
 
     {capture "someText"}
         This is some text that I would like to use later in the template.
     {/capture}
-    
+
 Om de code tussen de capture te gebruiken kun je de volgende code in je template plaatsen:
 
     {$smarty.capture.someText}
@@ -94,15 +106,15 @@ In het vorige voorbeeld halen we de inhoud van de capture op met `{$smarty.captu
     {capture name="someText" assign="myText"}
         This is some text that I would like to use later in the template.
     {/capture}
-    
+
 De kortere versie ziet er als volgt uit:
-    
+
     {capture "someText" assign="myText"}
         This is some text that I would like to use later in the template.
     {/capture}
-    
+
 Je kunt nu het blok aanroepen met **{$myText}**.
-    
+
 In dit voorbeeld is de tekst kort en had ook de [assign](./publisher-personalization-functions#assign), gebruikt kunnen worden, maar je kunt alles wat geen HTML is tussen deze tags plaatsen. Als je toch HTML wil gebruiken kun je {capture} vervangen door {rawcapture}.
 
 
@@ -112,19 +124,25 @@ Een meer geavanceerde techniek is om *capture* te gebruiken in combinatie met ee
 
 Je kunt de onderstaande code gebruiken en aanpassen om een array te maken:
 
-    {capture append="information"}{assign "name" "Bob"}{$profile.age}, {\capture}
-    {capture append="information"}{assign "age" "25"}{$profile.age}, {\capture}
-    {capture append="information"}{assign "location" "the Netherlands"}{$profile.age}{\capture}
-    
-Dit lijkt misschien veel code, maar er worden slechts drie variabelen gedefinieerd en opgeslagen in *information*. Dit voorbeeld laat ook zien hoe je functies kunt combineren (zoals hier met assign). 
+```
+{capture append="information"}{assign "name" "Bob"}{$profile.age}, {/capture}
+{capture append="information"}{assign "age" "25"}{$profile.age}, {/capture}
+{capture append="information"}{assign "location" "the Netherlands"}{$profile.age}{/capture}
+```
+
+Dit lijkt misschien veel code, maar er worden slechts drie variabelen gedefinieerd en opgeslagen in *information*. Dit voorbeeld laat ook zien hoe je functies kunt combineren (zoals hier met assign).
 
 Laten we nu de inhoud van de array printen in de template.
 
-    {foreach $information as $text}{$text}{/foreach}
-    
+```
+{foreach $information as $text}{$text}{/foreach}
+```
+
 Wat er nu gebeurt is dat we door alle waardes in *information* heen gaan, deze omzetten naar tekst en printen. Het resultaat ziet er als volgt uit:
 
-`Bob, 25, the Netherlands`
+```
+Bob, 25, the Netherlands
+```
 
 ---
 
@@ -136,7 +154,7 @@ Een *condition* lijkt qua werking veel op de [if functie](./publisher-personaliz
     {condition expression="Math.random<0.5"}
         {Display some content}
     {/condition}
-    
+
 Deze inhoud wordt maar in 50% van de gevallen getoond op willekeurige wijze, maar je kunt de expressies zo ingewikkeld maken als je wil.
 
 ---
@@ -169,7 +187,7 @@ en het volgende resultaat krijgen:
     1<br />
     2<br />
     3<br />
-    
+
 ### Voorbeeld 2: Gepersonaliseerde teller
 Kijk nu eens naar een wat ingewikkelder stuk code dat er als volgt uitziet:
 
@@ -179,7 +197,7 @@ Kijk nu eens naar een wat ingewikkelder stuk code dat er als volgt uitziet:
     {counter name="some less awesome counter" start="1" skip="2"}<br />
     {counter name="some less awesome counter"}<br />
     {counter name="the final countdown"}<br />
-    
+
 We hebben hier een teller die optelt en eentje die aftelt. De oneven getallen komen van de opteller en de even getallen van de afteller in de volgende output:
 
     6<br />
@@ -214,7 +232,7 @@ Het volgende voorbeeld laat zien hoe je kleuren van de regenboog toe kunt wijzen
     {foreach from $products item=product}
         {cycle values="red;orange;yellow;green;blue;indigo;purple, name=$product.color, delimiter=";"}
     {\foreach}
-    
+
 Natuurlijk vereist dit voorbeeld een array met producten. Nadat deze code is gerund hebben alle producten een kleur die later weer opgevraagd kan worden. Dit voorbeeld gebruikt ook de [foreach functie](./publisher-personalization-functions#foreach).
 
 ---
@@ -243,7 +261,7 @@ De functie heeft een **name** parameter die verplicht is en met **assign** kun j
 Met de volgende code kun je informatie opvragen van een website, bijvoorbeeld het weer voor komende week:
 
     {fetch file="http://www.myweather.com/today/"}
-    
+
 Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
 
     {fetch file="http://www.theweather.com/today/" assign='weather'}
@@ -254,7 +272,7 @@ Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
 Dit voorbeeld gebruikt ook de [if functie](./publisher-personalization-functions#if).    Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
     {fetch file="ftp://`$user`:`$password`@`$server`/`$path`"}
-    
+
 ---
 
 ## foreach
@@ -270,7 +288,7 @@ De *foreach en foreachelse* functies kunnen gebruikt worden om bijvoorbeeld over
 |first           | Boolean, alleen TRUE op eerste iteratie |
 |last            | Boolean, alleen TRUE op laatste iteratie |
 |show            | Boolean, alleen TRUE als data weergegeven wordt |
-|total           | Totaal aantal iteraties dat uitgevoerd gaat worden | 
+|total           | Totaal aantal iteraties dat uitgevoerd gaat worden |
 
 ### Voorbeeld
 
@@ -281,27 +299,27 @@ Als we een array met waardes hebben, in dit geval definiëren we *information*, 
     {capture append="information"}{assign "location" "the Netherlands"}{$profile.age}{\capture}
 
     {foreach $information as $text}{$text}{/foreach}
-    
+
 De output van deze code is:
 
 `Bob, 25, the Netherlands`
-    
+
 We kunnen ook de andere eigenschappen van de iterator gebruiken:
 
     {foreach $information as $text}
         {if $text@index eq 3}
             End of the list,
         {\if}
-        {$text@index}, 
+        {$text@index},
     {foreachelse}
         no text in the list
     {/foreach}
-    
-    
+
+
 Hier printen we de index van elk item en een berichtje voor we de laatste printen. De output ziet er als volgt uit:
 
 `1, 2, End of the list, 3`
-    
+
 ---
 
 ## if
@@ -336,13 +354,13 @@ Het is ook mogelijk expressies aan elkaar te schakelen met 'and' en 'or'.
     {if $profile.name eq 'Fred' or $profile.name eq 'Wilma'}
        ...
     {/if}
-    
+
     {if isset($profile.name) && $profile.name == 'Blog'}
-        {* doe een ding *}
+        ...
     {elseif $profile.name == $foo}
-        {* doe een ander ding *}
+        ...
     {/if}
-    
+
 ---
 
 ## in_miniselection
@@ -356,7 +374,7 @@ Om de functie uit te voeren is een miniselectie verplicht. Als het subprofiel ni
     {in_miniselection miniselection="womenwithkids"}}
         { Display your content here! }
     {/in_miniselection}
-    
+
 ---
 
 ## in_selection
@@ -378,32 +396,32 @@ Om de functie uit te voeren is een selectie verplicht. Als het profiel niet meeg
 
 ## linkfile
 
-De *linkfile* functie laat je een file linken uit het files onderdeel 
+De *linkfile* functie laat je een file linken uit het files onderdeel
 van de profielen in je template of document.
 
-Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier 
+Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier
 tekst blok.
 
 ### Ondersteunde bestandstypen
 
-* ZIP bestand: *.zip
+* ZIP bestand: \*.zip
 * Plain tekst
 * HTML tekst
-* PDF bestand: *.pdf
-* DOC/DOCX Word bestanden: *.doc/*.docx
-* GIF/PNG/JPEG/JPG/JPE afbeeldingen: *.gif/*.png/*.jpeg/*.jpg/*.jpe
+* PDF bestand: \*.pdf
+* DOC/DOCX Word bestanden: \*.doc \*.docx
+* GIF/PNG/JPEG/JPG/JPE afbeeldingen: \*.gif/ \*.png/ \*.jpeg/ \*.jpg/ \*.jpe
 
 
 ### Voorbeeld
 
-De *linkfile* functie kan gebruikt worden om een file te linken die geüpload 
+De *linkfile* functie kan gebruikt worden om een file te linken die geüpload
 is onder profielen in een webpagina of mail document.
 
     {linkfile file='path/somepicture.jpg' fallback='defaultimage.jpg'}
 
-Als de file niet gevonden wordt zal alleen de filename worden weergeven 
-aan de gebruiker. Het is daarom verstandig om naast de *file* optie ook 
-altijd een *fallback* te definiëren. Als de file dan niet beschikbaar is 
+Als de file niet gevonden wordt zal alleen de filename worden weergeven
+aan de gebruiker. Het is daarom verstandig om naast de *file* optie ook
+altijd een *fallback* te definiëren. Als de file dan niet beschikbaar is
 wordt deze file in plaats daarvan weergeven.
 
 ---
@@ -415,7 +433,7 @@ De linkpdf tag kan gebruikt worden om een link op te stellen naar een bestaand P
 ### Voorbeeld
 
     {linkpdf document="mypreviousmailing" escape="true"}
-    
+
 Dit geeft alleen de link zelf weer, maar je kunt altijd HTML gebruiken om de link te vervangen door woorden en klikbaar te maken.
 
 ---
@@ -429,9 +447,9 @@ In een simpel geval waarin bijvoorbeeld maar twee krulhaken gebruikt worden kan 
 ### Voorbeeld
 
 Om de *literal* functie te gebruiken hoef je alleen wat letterlijk genomen moet worden tussen de begintag (`{literal}`) en end-tag (`{\literal}`) te plaatsen.
- 
+
     <script>
-       // Deze haakjes zouden in Smarty 3 automatisch 
+       // Deze haakjes zouden in Smarty 3 automatisch
        // genegeerd worden door de whitespace
        function myFoo {
          alert('Foo!');
@@ -442,7 +460,7 @@ Om de *literal* functie te gebruiken hoef je alleen wat letterlijk genomen moet 
          function myBar {alert('Bar!');}
        {/literal}
     </script>
-    
+
 Dit voorbeeld komt uit de [Smarty documentatie](http://www.smarty.net/docs/en/).
 
 ---
@@ -469,8 +487,8 @@ Let op: Deze functie kan niet gebruikt worden in een **Content** web formulier t
 
 ### Ondersteunde bestandstypen
 
-- HTML files: *.html
-- TXT files: *.txt
+- HTML files: \*.html
+- TXT files: \*.txt
 
 Als je andere formaten wil gebruiken kun je ook [linken naar een file](./publisher-personalization-functions#linkfile).
 
@@ -503,7 +521,7 @@ Je kan hiermee bijvoorbeeld een document personaliseren met het telefoonnummer v
     {loadprofile source="Offices" Area="$Area" assign="office"}
     {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$offices.id"}
     Beste {$profile.FirstName},
-    U bent aangesloten bij ons regiokantoor in {$office.City}. 
+    U bent aangesloten bij ons regiokantoor in {$office.City}.
     U kunt dit kantoor direct bereiken door te bellen met {$office.Phone}.
     Voor vragen kan je altijd contact met mij opnemen.
     Met vriendelijke groet,
@@ -539,7 +557,7 @@ Je kan een document hiermee personaliseren met een telefoonnummer van de juiste 
     {loadprofile source="Offices" Area="$Area" assign="office"}
     {loadsubprofile source="Offices:Account" AM="$AM" assign="account" profile="$offices.id"}
     Beste {$profile.FirstName},
-    U bent aangesloten bij ons regiokantoor in {$office.City}. 
+    U bent aangesloten bij ons regiokantoor in {$office.City}.
     U kunt dit kantoor direct bereiken door te bellen met {$office.Phone}.
     Voor vragen kan je altijd contact met mij opnemen.
     Met vriendelijke groet,
@@ -558,8 +576,8 @@ j.greenheart@example.com
 
 ## mailonly
 
-Het {mailonly} blok kan gebruikt worden om een stuk code alleen zichtbaar 
-te maken in de mail versie van het bericht. Als het vervolgens in de 
+Het {mailonly} blok kan gebruikt worden om een stuk code alleen zichtbaar
+te maken in de mail versie van het bericht. Als het vervolgens in de
 browser geopend wordt is de content binnen dit blok niet meer zichtbaar.
 
 ### Voorbeeld
@@ -567,9 +585,9 @@ browser geopend wordt is de content binnen dit blok niet meer zichtbaar.
     {mailonly}
         Click <a href="{webversion}">here</a> to view this mail in your browser
     {/mailonly}
-    
-In dit voorbeeld maken we gebruik van het {mailonly} block om de link 
-naar de webversie te verbergen uit de webversie. De tegenhanger hiervan is [{webonly}](./publisher-personalization-functions#webonly) deze toon enkel content in de webversie. 
+
+In dit voorbeeld maken we gebruik van het {mailonly} block om de link
+naar de webversie te verbergen uit de webversie. De tegenhanger hiervan is [{webonly}](./publisher-personalization-functions#webonly) deze toon enkel content in de webversie.
 
 ---
 
@@ -593,7 +611,7 @@ Als je een formule gebruikt als `$a * $b` moeten de variabelen $a en $b eerst ge
 
 ### Ondersteunde operatoren
 
-De ondersteunde operatoren zijn +, -, /, *, abs, ceil, cos, exp, floor, log, log10, max, min, pi, pow, rand, round, sin, sqrt, srans and tan.
+De ondersteunde operatoren zijn +, -, /, \*, abs, ceil, cos, exp, floor, log, log10, max, min, pi, pow, rand, round, sin, sqrt, srans and tan.
 
 ### Voorbeeld
 
@@ -601,9 +619,9 @@ Een simpele vergelijking:
 
     {assign "height" 2}
     {assign "width" 3}
-    {math equation="x * y" x=$height y=$width}
-    
-Deze code wordt gebruikt om het resultaat van x * y uit te rekenen, wat 6 is in dit geval. Dit is maar een simpele vergelijking, maar je kunt deze zo ingewikkeld maken als je zelf wil. Dit voorbeeld gebruikt daarnaast de [assign functie](./publisher-personalization-functions#assign) in de korte versie.
+    {math equation="x \* y" x=$height y=$width}
+
+Deze code wordt gebruikt om het resultaat van x \* y uit te rekenen, wat 6 is in dit geval. Dit is maar een simpele vergelijking, maar je kunt deze zo ingewikkeld maken als je zelf wil. Dit voorbeeld gebruikt daarnaast de [assign functie](./publisher-personalization-functions#assign) in de korte versie.
 
 Als we een breuk uit willen rekenen echter is het handiger om decimalen weer te geven. We willen dit resultaat ook opslaan, zodat we "1.33" krijgen als we **{$frac}** in de template typen.
 
@@ -638,7 +656,7 @@ Het volgende voorbeeld laat zien hoe je de functie gebruikt. Dit voorbeeld komt 
      </tr>
     </table>
     {/strip}
-    
+
 Dit verandert alle HTML tags in een lange regel in je daadwerkelijke mail. Let wel op dat je geen normale tekst aan het begin of einde van een regel hebt staan, dit kan het resultaat onverwacht veranderen.
 
 ---
@@ -650,7 +668,7 @@ De *survey* functie kan gebruikt worden om een [enquête](./surveys) in je docum
 ### Voorbeeld
 
     {survey name="mysurvey" xslt="mystyle"}
-    
+
 Met deze regel wordt de enquête met de naam "mysurvey" in de stijl van de gegeven XSLT geplaatst in de template.
 
 ---
@@ -681,21 +699,21 @@ In het standaard geval wordt er geen indentatie gebruikt, maar een enkele spatie
 Er volgt nu een simpel voorbeeld uit de [Smarty documentation](http://www.smarty.net/docs/en/):
 
     {textformat wrap=40}
-    
+
        This is foo.
        This is foo.
        This is foo.
        This is foo.
-    
+
        This is bar.
-    
+
        bar foo bar foo     foo.
        bar foo bar foo     foo.
-    
+
        {/textformat}
 
 Van deze code krijgen we de volgende output:
-    
+
     This is foo. This is foo. This is foo.
     This is foo.
 
@@ -703,10 +721,10 @@ Van deze code krijgen we de volgende output:
 
     bar foo bar foo foo. bar foo bar foo
     foo.
-    
+
 Maar dit bericht kan er ook heel anders uitzien:
 
-    {textformat wrap=20 indent=5 indent_char="*" wrap_cut=TRUE}
+    {textformat wrap=20 indent=5 indent_char="\*" wrap_cut=TRUE}
 
     This is foo.
     This is foo.
@@ -719,20 +737,20 @@ Maar dit bericht kan er ook heel anders uitzien:
     bar foo bar foo     foo.
 
     {/textformat}
-    
+
 De output van deze code is het volgende:
 
     *****This is foo. Th
-    *****is is foo. This 
-    *****is foo. This is 
+    *****is is foo. This
+    *****is foo. This is
     *****foo.
-    
+
     *****This is bar.
-    
+
     *****bar foo bar foo
     *****foo. bar foo ba
     *****r foo foo.
-    
+
 
 ---
 
@@ -781,15 +799,15 @@ De *webform* functie kan gebruikt worden om een web formulier toe te voegen aan 
 ### Voorbeeld
 
     {webform name="mywebform" xslt="mystyle"}
-    
+
 Door deze regel toe te voegen voeg je het web formulier met de gegeven naam toe in de stijl van de gegeven XSLT aan je template.
 
 ---
 
 ## webonly
 
-Het {webonly} blok kan gebruikt worden om een stuk content alleen zichtbaar 
-te maken in de webversie van een bericht. Als deze template gebruikt zou 
+Het {webonly} blok kan gebruikt worden om een stuk content alleen zichtbaar
+te maken in de webversie van een bericht. Als deze template gebruikt zou
 worden in een mail wordt het deel tussen de *webonly* tags genegeerd.
 
 ### Voorbeeld
@@ -797,11 +815,10 @@ worden in een mail wordt het deel tussen de *webonly* tags genegeerd.
     {webonly}
         Click <a href="{somepage}">here</a> to go to the homepage
     {/webonly}
-    
-In het voorbeeld gebruiken we het {webonly} blok om de link naar de homepage 
-te verstoppen als de gebruiker in zijn mail kijkt. Deze content is alleen 
-zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./publisher-personalization-functions#mailonly) deze toont content in de mailclient. 
 
+In het voorbeeld gebruiken we het {webonly} blok om de link naar de homepage
+te verstoppen als de gebruiker in zijn mail kijkt. Deze content is alleen
+zichtbaar in de browser. De tegenhanger hiervan is [{mailonly}](./publisher-personalization-functions#mailonly) deze toont content in de mailclient.
 
 ---
 
@@ -826,12 +843,7 @@ wordt getoond bovenaan een webversie kan je verwijderen
 door *showheader=false* aan de tag toe te voegen.
 
     {webversion showheader=false}
-    
+
 ### Voorbeeld
 
     <a href="{webversion}" title="Klik hier voor de webversie">Bekijk deze e-mail in je favoriete browser</a>
-
-
-
-
-
