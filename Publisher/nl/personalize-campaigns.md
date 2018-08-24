@@ -28,7 +28,7 @@ bijvoorbeeld **webformulieren** en **opvolgacties**.
 -   [Linken naar een (gepersonaliseerd) PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Extra velden voor document personalisatie](./extra-fields-for-personalizing.md)
 -   [(Mini)selecties gebruiken binnen Smarty personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
--   [Datums en tijden met Smarty](./using-the-smarty-date-function.md)
+-   [Data en tijden dynamisch weergeven](./using-the-smarty-date-function.md)
 
 Bekijk ook [ons overzicht van beschikbare extra functies en speciale invoegcodes](./special-functions-and-tags.md)
 
@@ -69,4 +69,3 @@ bijvoorbeeld opvolgacties kunnen condities worden gehangen.
 ## Overig
 
 -   [Personaliseren met behulp van multidimensionale databases](./personalizing-using-multi-dimensional-databases.md)
-
