@@ -1,5 +1,6 @@
 # Verzenden
-Voordat je gaat verzenden in de Marketing Suite is het belangrijk dat je mail goed [getest](./emailings-ms-testing.md) is. Als dit gedaan is, is het tijd om de mail in te roosteren voor verzending. Klik in een e-mail template op **E-mailing verzenden**, in het volgende venster wordt gevraagd om een [selectie](./database-selections-introductions.md) te kiezen om naar te versturen. Kies de selectie waar je naartoe wilt sturen, er kan gevraagd worden om de selectie autoriseren voor de mail. Dit wordt gedaan zodat je niet naar de foute selectie kan sturen.
+
+Voordat je gaat verzenden in de Marketing Suite is het belangrijk dat je mail goed [getest](./emailings-ms-testing.md) is. Als dit gedaan is, is het tijd om de mail in te roosteren voor verzending. Klik in een e-mailtemplate op **E-mailing verzenden**. In het volgende venster wordt gevraagd om een [selectie](./database-selections-introductions.md) te kiezen om naar te versturen. Kies de selectie waar je naartoe wilt versturen, er kan gevraagd worden om de selectie te autoriseren voor de mail. Dit wordt gedaan zodat je niet naar een foute selectie kan sturen.
 
 In het volgende venster kan alle andere informatie voor de verzending klaargezet worden. In deze tabel worden alle opties aangegeven die aangepast kunnen worden.
 
@@ -12,5 +13,5 @@ In het volgende venster kan alle andere informatie voor de verzending klaargezet
 |Date and time| Mogelijkheid om het verzend moment aan te passen, keuze uit direct versturen of inroosteren.
 |Mailing tags| Mogelijkheid om een tag toe te voegen aan de mail, vergelijkbaar met Mailing name|
 
-Als alle instellingen goed staan kan erop de groene knop gedrukt worden, dan zal de mailing klaargemaakt worden voor verzending. 
+Als alle instellingen goed staan kan op de groene knop gedrukt worden. Dan zal de mailing klaargemaakt worden voor verzending. 
 
