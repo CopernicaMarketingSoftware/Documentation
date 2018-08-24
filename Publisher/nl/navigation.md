@@ -34,7 +34,7 @@
 * [Mobile](./mobile-mailing.md)
 * [Content](./content.md)
     * [Webformulier](./webforms.md)
-    * [Enquetes](./survey.md)
+    * [Enquêtes](./survey.md)
 * [Stijl](./css-and-xslt.md)
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
