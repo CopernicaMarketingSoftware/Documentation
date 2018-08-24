@@ -25,7 +25,7 @@ maar kan op alle datumvelden worden toepepast.
 
 In het volgende overzicht een aantal voorbeelden van de mogelijkheden.
 
-```
+```txt
 {$smarty.now|date_format}                   Dec 4, 2007
 {$smarty.now|date_format:"%D"}              12/04/07
 {$smarty.now|date_format:“%d-%m-%Y”}        04-12-2007
@@ -179,7 +179,7 @@ Two Sisters Reunite after---
 
 Dit filter zorgt ervoor dat een zin over meerdere regels wordt verdeeld.
 Standaard breekt het filter de zin af na 80 tekens. Als de variabele `{$Title}`
-luidt: `Blind woman gets new kidney from dad she hasn't seen in years.`.
+luidt: `Blind woman gets new kidney from dad she has not seen in years.`.
 
 Dan zal bij de volgende codes
 
@@ -197,8 +197,8 @@ Dan zal bij de volgende codes
 
 het volgende komen te staan:
 
-```
-Blind woman gets new kidney from dad she hasn't seen in years.
+```txt
+Blind woman gets new kidney from dad she has not seen in years.
 
 Blind woman gets new kidney
 from dad she hasn't seen in
@@ -232,7 +232,7 @@ heeft, dan zorgt de code
 
 voor de volgende weergave:
 
-```
+```txt
 Klant in kaart
 12 (zonder spaties)
 14 (met spaties)
@@ -243,7 +243,7 @@ Klant in kaart
 Met dit filter wordt het aantal paragrafen in een variabele geteld. Als
 de variabele `{$Article}` twee paragrafen heeft, bijvoorbeeld:
 
-```
+```txt
 Smarty is een open-source template engine voor PHP.
 
 Het zorgt er voor dat je HTML pagina's en PHP code gescheiden kan
@@ -262,7 +262,7 @@ document het volgende te zien is:
 Dit filter wordt gebruikt om het aantal zinnen in een variabele te
 tellen. Als de variabele `{$Article}` twee zinnen bevat, bijvoorbeeld;
 
-```
+```txt
 Bij grote projecten heb je ook het voordeel dat een programmeur aan
 de PHP scripts kan werken. Terwijl een graficus de HTML pagina's kan
 maken.
@@ -330,7 +330,7 @@ ontstaat tussen woorden. Zo wordt in de volgende zin de \\n vervangen door een r
 
 Dit wordt dan:
 
-```
+```txt
 Websites bouwen is erg ingewikkeld,
 zeggen experts.
 ```
