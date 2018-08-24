@@ -10,7 +10,7 @@ Om te controleren hoe de mailing op desktop, tablet en mobile eruit ziet, ga je 
 ## Standaardbestemming
 In de Marketing Suite wordt een profiel uit de database gebruikt als test profiel. Hier zullen ook de testmails naartoe gaan en deze worden gepersonaliseerd op dit profiel. Dit profiel kan ingesteld worden in de database. Klik links op **Database en Profielen** ga vervolgens naar de database waarin het profiel staat waarmee je wilt testen. Klik dit profiel, klik onderin op **eigenschappen** en klik op de grote op de knop **standaardbestemming**. Je hebt nu een standaardbestemming ingesteld. Links Onderin staat de huidige standaardbestemming, klik hierop om naar de huidige standaardbestemming te gaan.
 
-![](../images/standard-destionation.png)
+![](../images/standard-destination.png)
 
 ## Test mails
 Met een testmail kan controleren of de mail eruit ziet zoals jij wilt en kan je tevens de personalisatie testen. De testmail wordt verstuurd en gepersonaliseerd naar de standaardbestemming. Ga naar **Gereedschap** en klik op **Testmail versturen**. Klik in dit venster op de je standaardbestemming om de mail gepersonaliseerd te versturen of geef zelf een e-mailadres op als dit niet van belang is. Testmails komen niet terug in de mailings statistieken. Wil je een testmail sturen naar meerdere mensen, kies dan voor een [bulkmail](./emailings-ms-sending) versturen naar een [testselectie](./database-selections-introduction#aanmaken-of-wijzigen-(mini)selectie-publisher). 
