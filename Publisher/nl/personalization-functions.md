@@ -1,3 +1,3 @@
 # Dit artikel is verplaatst
 
-[Publisher personalisatie functies](publisher-personalization-functions)
+Het artikel kun je hier vinden: [Publisher personalisatie functies](publisher-personalization-functions)
