@@ -35,7 +35,7 @@
 * [PDF](./pdf-document.md)
 * [Content](./content.md)
     * [Webformulier](./webforms.md)
-    * [Enquêtes](./survey.md)
+    * [Enquêtes](./surveys.md)
 * [Stijl](./css-and-xslt.md)
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
