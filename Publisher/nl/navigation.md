@@ -32,6 +32,7 @@
     * [Data-script](./data-object.md)
 * [Websites](./websites.md)
 * [Mobile](./mobile-mailing.md)
+* [PDF](./pdf-document.md)
 * [Content](./content.md)
     * [Webformulier](./webforms.md)
     * [Enquêtes](./survey.md)
