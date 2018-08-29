@@ -78,7 +78,7 @@ aankopen en deze wil gebruiken in je e-mail. Later heb je deze score niet meer
 nodig (anders kun je deze beter opslaan in je database!). Je kunt dan een
 template variabele **score** instellen en deze gebruiken met **{$property.score}**.
 
-## personalisatie functies
+## Personalisatie functies
 
 Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er hetzelfde uit als een variabele, maar dan zonder dollarteken. De volgende functie kun je bijvoorbeeld gebruiken om een link naar de webversie van een e-mail te maken:
 
@@ -88,18 +88,18 @@ Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er hetz
 
 Bekijk het [overzicht van alle functies](publisher-personalization-functions)
 
-## personalisatie modifiers
+## Personalisatie modifiers
 
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
-Je gebruikt bijvoorbeeld **tolower** om de variabele **{$name}** te
-bewerken. Dit ziet er dan zo uit: **{$name|tolower}**.
+Je gebruikt bijvoorbeeld **tolower** om de variabele **{$profile.name}** te
+bewerken. Dit ziet er dan zo uit: **{$profile.name|tolower}**.
 Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken.
-Je kunt bijvoorbeeld **{$name|tolower|ucfirst}** gebruiken om te zorgen dat alle
+Je kunt bijvoorbeeld **{$profile.name|tolower|ucfirst}** gebruiken om te zorgen dat alle
 namen met een hoofdletter beginnen en de resterende letters altijd kleine
 letters zijn.
 
-Bekijk het [overzicht van alle modifiers](./publisher-personalization-modifiers)
+Bekijk het [overzicht van alle modifiers](./personalization-modifiers)
 
 ## De load subprofile functie
 Je kunt profielen of subprofielen in een oplopende of aflopende volgorde ophalen, aan de hand van de waarde in een specifiek database of collectieveld.
@@ -225,8 +225,6 @@ Op een paar plekken kun je geen gebruik maken van personaliseren:
 * In enquêtes
 * In content feeds
 
-
-
 ## Personalisatieinstellingen
 
 Bij elk document en template kun je de personalisatie-instellingen wijzigen.
@@ -277,4 +275,4 @@ wereld bevat. Dit omvat de gewone toetsenbordtekens, maar ook de "rare" tekens
 uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
 ## Extra personalisatie opties
-Binnen de e-mailings in de Publisher is het mogelijk je data verder te personaliseren, dit kan bijvoorbeeld met de [personalisatie modifiers](./publisher-personalization-modifiers.md). Hiermee kan de gepersonaliseerde data nog meer aangepast worden. Naast de standaard database velden op te halen is het mogelijk om nog meer data uit profielen of mailings te halen, dit worden [personalisatie variabelen](./publisher-personalization-variables) genoemd. Als laatst is het mogelijk om functies aan te roepen tijdens het personaliseren. Met deze [personalisatie functies](./publisher-personalization-functions)  is het bijvoorbeeld mogelijk om feeds in te laden, condities mee te geven of kan er externe html opgehaald worden.
+Binnen de e-mailings in de Publisher is het mogelijk je data verder te personaliseren, dit kan bijvoorbeeld met de [personalisatie modifiers](./personalization-modifiers.md). Hiermee kan de gepersonaliseerde data nog meer aangepast worden. Naast de standaard database velden op te halen is het mogelijk om nog meer data uit profielen of mailings te halen, dit worden [personalisatie variabelen](./publisher-personalization-variables) genoemd. Als laatst is het mogelijk om functies aan te roepen tijdens het personaliseren. Met deze [personalisatie functies](./publisher-personalization-functions)  is het bijvoorbeeld mogelijk om feeds in te laden, condities mee te geven of kan er externe html opgehaald worden.
