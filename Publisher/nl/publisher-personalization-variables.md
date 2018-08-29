@@ -32,7 +32,7 @@ heeft een aantal eigenschappen:
 * **{$profile.secret}**: de *geheime code* die bij het profiel is opgeslagen
 * **{$profile.code}**: alias voor {$profile.secret}, dus de geheime code
 * **{$profile.created}**: tijdstip waarop het profiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
-* **{$profile.referrers}**: een optioneel array van profielen die verwijzen naar dit profiel d.m.v. een *referentieveld* veld
+* **{$profile.referrers}**: een optioneel array van profielen die verwijzen naar dit profiel d.m.v. een *referentieveld*
 * **{$profile.*veldnaam*}**: elk veld van het profiel is toegankelijk via {$profile.*veldnaam*}
 * **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
 * **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
