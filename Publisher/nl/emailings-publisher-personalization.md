@@ -5,7 +5,7 @@ van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
 voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
 mailings en nieuwsbrieven.
 
-Met Smarty kun je gemakkelijk personalizeren. Er zijn echter
+Met Smarty kun je gemakkelijk personaliseren. Er zijn echter
 wel wat belangrijke dingen om op te letten als je werkt met Smarty:
 
 * SMARTY is *hoofdlettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
@@ -36,8 +36,8 @@ met het volgende e-mailadres: {$profile.email}.
 
 ### Data uit een collectie weergeven
 
-Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op 
-verschillende manieren doen. Om data uit de eerste rij van de collectie weer te 
+Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op
+verschillende manieren doen. Om data uit de eerste rij van de collectie weer te
 geven kun je deze syntax gebruiken.
 
 Vergeet in de Publisher niet de blokhaken te escapen.
@@ -56,8 +56,8 @@ Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
 [/literal]
 ```
 
-Om data uit de laatste (en nieuwste) rij weer te geven kun je de count 
-modifier gebruiken om het aantal subprofielen te tellen waarna je 
+Om data uit de laatste (en nieuwste) rij weer te geven kun je de count
+modifier gebruiken om het aantal subprofielen te tellen waarna je
 van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 
 ```text
@@ -88,16 +88,16 @@ Naast variabelen kun je ook gebruik maken van functies. Een functie ziet er hetz
 
 Bekijk het [overzicht van alle functies](publisher-personalization-functions)
 
-## personalizatie modifiers
+## personalisatie modifiers
 
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
 Je gebruikt bijvoorbeeld **tolower** om de variabele **{$name}** te
 bewerken. Dit ziet er dan zo uit: **{$name|tolower}**.
-Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken. 
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken.
 Je kunt bijvoorbeeld **{$name|tolower|ucfirst}** gebruiken om te zorgen dat alle
-namen met een hoofdletter beginnen en de resterende letters altijd kleine 
-letters zijn. 
+namen met een hoofdletter beginnen en de resterende letters altijd kleine
+letters zijn.
 
 Bekijk het [overzicht van alle modifiers](./publisher-personalization-modifiers)
 
@@ -151,12 +151,12 @@ niet gezien als Smarty code en blijft het gewoon in de mailing staan.
 ## Personalisatie testen
 
 Als je bezig bent met het ontwikkelen van een gepersonaliseerde mailing, dan
-wil je vaak even een *sneak preview* zien om te controleren of de personalisatie 
+wil je vaak even een *sneak preview* zien om te controleren of de personalisatie
 wel uitpakt zoals je dat hebt bedoeld. Voor dit doel is er een *standaardbestemming*.
 
 ### De bewerkmodus instellen
 
-Onderaan een document, naast de button voor de 
+Onderaan een document, naast de button voor de
 [personalisatieinstellingen](emailings-publisher-personalization#personalisatieinstellingen), vind je de button voor de bewerkmodus. Met deze button kun je de weergave van het document veranderen.
 
 ![Edit and preview mode](../images/preview.png)
@@ -167,20 +167,20 @@ Er zijn vier mogelijke instellingen:
     * bewerkmodes, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
     * preview mode, met gepersonaliseerde content
     * preview mode, nog niet gepersonaliseerd
-    
-Eigenlijk zijn het twee verschillende instellingen: (1) wil je het document 
+
+Eigenlijk zijn het twee verschillende instellingen: (1) wil je het document
 weergeven in bewerkmodes of previewmodus, en (2) wil je dat de Smarty variabelen
 direct worden ingevuld of niet?
 
-Als je het document in bewerkmodus weergeeft, dan zijn de contentblokken 
-aanklikbaar. Dit is meestal de handigste mode omdat je direct de teksten die 
-je wilt wijzigen kunt aanklikken. Af en schakel je over naar de previewmodus 
+Als je het document in bewerkmodus weergeeft, dan zijn de contentblokken
+aanklikbaar. Dit is meestal de handigste mode omdat je direct de teksten die
+je wilt wijzigen kunt aanklikken. Af en schakel je over naar de previewmodus
 om te zien hoe de ontvanger het bericht zal zien.
 
-Daarnaast kun je kiezen of je de ruwe Smarty variabelen wilt zien of niet. 
+Daarnaast kun je kiezen of je de ruwe Smarty variabelen wilt zien of niet.
 Als je kiest voor het tonen van variabelen, dan zie je de variabelen
 precies zoals je ze hebt ingevoerd (dus {$voornaam}, {$achternaam}, enzovoort).
-Als je echter omschakelt naar de gepersonaliseerde modus, dan worden al deze
+Als je echter schakelt naar de gepersonaliseerde modus, dan worden al deze
 variabelen vervangen door de echte waardes van een profiel uit je database.
 
 ### De standaardbestemming instellen
@@ -191,9 +191,9 @@ variabelen in een document opneemt (zoals {$voornaam} en {$achternaam}), en
 je schakelt de gepersonaliseerde modus in, dan zullen de voor- en achternaam
 van dit profiel worden getoond op de plaats van de variabelen.
 
-Je kunt op twee manieren de standaardbestemming invoeren: vanuit het profielenbeheer
-en vanuit het helpmenu. In het profielenbeheer open je het profiel dat je voor
-de standaardbestemming wilt gebruiken, en daarna kies je voor de optie 
+Je kunt op twee manieren de standaardbestemming invoeren: vanuit het profielbeheer
+en vanuit het helpmenu. In het profielbeheer open je het profiel dat je voor
+de standaardbestemming wilt gebruiken, en daarna kies je voor de optie
 "standaardbestemming instellen".
 
 Vanuit het helpmenu kan het ook. Als je de de link "welkom <jouw naam>" klikt,
@@ -229,7 +229,7 @@ Op een paar plekken kun je geen gebruik maken van personaliseren:
 
 ## Personalisatieinstellingen
 
-Bij elk document en template kun je de personalisatie-instellingen wijzigen. 
+Bij elk document en template kun je de personalisatie-instellingen wijzigen.
 Met deze instellingen bepaal je onder meer in welke taal [datums](./using-the-smarty-date-function.md)
 worden weergegeven. Je vindt deze instelling linksonder de geopende
 template of document.
@@ -250,7 +250,7 @@ vier settings veranderen:
 
 In het artikel over het [weergeven van datums en tijden](./using-the-smarty-date-function.md)
 hebben we dit ook al behandeld: als je de huidige datum wilt weergeven is daar
-een speciale |date_format modifier voor. Deze modifier kun je gebruiken om een 
+een speciale |date_format modifier voor. Deze modifier kun je gebruiken om een
 tijdstip in computernotatie om te zetten naar een tijdstip in mensennotatie. De
 taal en tijdzone settings worden hierbij gebruikt om te bepalen in welke taal
 een datum wordt getoond (elke taal heeft immers andere namen voor de maanden en
@@ -259,20 +259,20 @@ dan *nu* in New York).
 
 ### Codering
 
-Lang verhaal kort: de codering moet je altijd op UTF-8 zetten. Dat is eigenlijk 
-altijd goed. De UTF-8 karakterset is namelijk een karakterset die eigenlijk alle 
+Lang verhaal kort: de codering moet je altijd op UTF-8 zetten. Dat is eigenlijk
+altijd goed. De UTF-8 karakterset is namelijk een karakterset die eigenlijk alle
 letters en tekens ter wereld op een efficiënte manier kan coderen.
 
-Hoe zit dat precies? Traditioneel kon e-mail alleen worden gebruikt voor ASCII 
-teksten: teksten die bestaan uit letters van het gewone alfabet, cijfers en een 
-kleine verzameling leestekens. Zeg maar de tekens die op een gewoon toetsenbord 
+Hoe zit dat precies? Traditioneel kon e-mail alleen worden gebruikt voor ASCII
+teksten: teksten die bestaan uit letters van het gewone alfabet, cijfers en een
+kleine verzameling leestekens. Zeg maar de tekens die op een gewoon toetsenbord
 staan. Buitenlandse tekens, waaronder ook karakters die voor ons gewoon zijn, zoals
-letters met een trema of een accent (bijvoorbeeld ë, ï of é) horen daar niet bij. 
-Als je toch een mail met dergelijke tekens moet versturen, dan moet je expliciet 
+letters met een trema of een accent (bijvoorbeeld ë, ï of é) horen daar niet bij.
+Als je toch een mail met dergelijke tekens moet versturen, dan moet je expliciet
 in de header van het e-mailbericht opnemen in welke karakterset de mail is opgemaakt:
 de West-Europese, de Oost-Europese, Russisch, Chinees, enzovoort.
 
-De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter 
+De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter
 wereld bevat. Dit omvat de gewone toetsenbordtekens, maar ook de "rare" tekens
 uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
