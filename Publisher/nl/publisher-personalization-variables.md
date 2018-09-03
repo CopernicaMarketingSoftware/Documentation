@@ -83,6 +83,152 @@ Bovenstaand eenvoudige voorbeeld demonstreert hoe krachtig de personalisatiemoge
 zijn. Zowel de profielgegevens als de subprofieldata kun je gebruiken voor het
 personaliseren van je mailings.
 
+## Document gegevens
+
+* **{$document.id}** ID van het document
+* **{$document.name}** Huidige naam van het document
+* **{$snapshot.name}** Naam van het document op het moment van versturen (zelfs als de naam gewijzigd is achteraf)
+* **{$document.created}** Tijdstip van het aanmaken van het document
+* **{$document.lastmodified}** Tijdstip van de laatste wijziging aan het document
+* **{$document.template}** Template object
+* **{$document.language}** Taal instellingen van het document
+
+## Template gegevens
+
+* **{$template.id}** ID van het template
+* **{$template.name}** Naam van het template
+* **{$template.description}** Beschrijving van het template
+* **{$template.pdf}** Naam van het originele PDF bestand
+* **{$template.pages}** Aantal pagina's van de PDF 
+* **{$template.created}** Tijdstip van het aanmaken van het template
+* **{$template.lastmodified}** Tijdstip van de laatste wijziging aan het template
+* **{$template.archive}** Is het template gearchiveerd?
+* **{$template.quality}** Kwaliteit van het template: screen/press/print (alleen voor PDF templates)
+* **{$smarty.version}** Smarty versie van het template
+
+## Accounts en mailings
+
+Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
+een {$account} en {$mailing} object met gegevens over de mailing. In het
+{$account} object zitten de volgende members:
+
+* **{$account.id}**: numerieke identifier van je account
+* **{$account.name}**: naam van je account
+
+Het {$mailing} object is wat uitgebreider, en bevat allerlei instellingen
+van de mailing waartoe het bericht behoort:
+
+* **{$mailing.sendtime}**: tijdstip waarop de mailing wordt verstuurd, in YYYY-MM-DD hh:mm:ss format
+* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 jan 1970)
+* **{$mailing.trigger}**: optioneel object dat de mailing heeft opgestart
+* **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
+* **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
+* **{$mailing.snapshot.subject}**: onderwerp van de mailing
+
+
+
+## Extra personalisatievariabelen toevoegen
+
+Op templateniveau kun je [extra variabelen](./publisher-personalization-functions#assign)
+toevoegen. De extra personalisatievariabelen zijn daarna benaderbaar
+via de gegeven naam.
+
+    {$variabele}
+    
+## Data en tijden dynamisch weergeven
+
+Met behulp van de {$smarty.now} functie van Smarty, kun je dynamisch data en tijden tonen in mailings en landingspagina's.
+
+We zetten enkele mogelijkheden op een rij. Een volledig overzicht vind je op de website van Smarty](http://www.smarty.net/docsv2/en/language.modifiers.tpl).
+
+### Enkele toepassingen
+
+-   Toon automatisch het huidige weeknummer of maand bovenaan een
+    nieuwsbrief
+-   Stuur het tijdstip van invullen automatisch mee in een webformulier
+-   Sluit een enquete automatisch nadat de uiterste invuldatum is
+    verstreken
+
+Om een datum (in seconden sinds 1970) te tonen gebruik je
+`{$smarty.now}`.
+
+Met de `date_format` modifier kun je vervolgens de seconden omzetten
+naar een ander formaat.
+
+Voorbeeld: om de huidige datum om te zetten naar het formaat YYYY-MM-DD
+dat je kunt opslaan in een datumveld gebruik je:
+
+`{$smarty.now|date_format:"%Y-%m-%d"}`
+
+Hieronder zie je een aantal voorbeelden:
+
+```
+{$smarty.now|date_format}                // Dec 4, 2014
+{$smarty.now|date_format:"%D"}           // 12/04/14
+{$smarty.now|date_format:"%d-%m-%Y"}     // 04-12-2014
+{$smarty.now|date_format:"%A, %e %B %Y"} // Tuesday, 4 december 2014
+{$smarty.now|date_format:"%A"}           // Tuesday
+{$smarty.now|date_format:"%c"}           // Tu 04 dec 2014 15:20:28 CET
+```
+Een volledige lijst van mogelijkheden kun je vinden op de officiele
+documentatie van Smarty.
+
+### Data in een andere taal en tijdzone tonen
+
+Een datum wordt automatisch weergegeven in de taal en tijdzone van het
+template of document. Om de weergavetaal van personalisatie te bekijken,
+kies je linksonderaan de template of document
+**Personalisatie-instellingen**.
+
+### Morgen, overmorgen en de dag daar weer na
+
+Is je actie slechts een dag geldig? Smarty voorziet hierin.
+
+`{"tomorrow"|date_format:"%A, %B %e, %Y"}`
+
+Overmorgen:
+
+`{"+2 days"|date_format:"%A, %B %e, %Y"}`
+
+Enzovoorts...
+
+### Timestamp vs smarty.now
+
+Naast `{$smarty.now}` kun je ook gebruik maken van `{$timestamp}`.
+Timestamp berekent het aantal seconden die zijn verstreken sinds de UNIX
+epoch tijd (middennacht 1970-01-01 00:00:00 UTC). In tegenstelling tot
+smarty.now, die standaard gebruik maakt van de locale 0000-00-00.
+Timestamp is nuttig als je te maken hebt met verschillende tijdzones.
+Het kan nu 13u00 zijn in Nederland. In Amerika pas over 7 uur. Het
+aantal seconden verstreken sinds 1970-01-01 00:00:00 UTC is echter een
+vast gegeven, en dus tijdzone onafhankelijk.
+
+### Data vergelijken
+
+Het is mogelijk om condities te maken waarin je bijvoorbeeld data in
+een database met elkaar vergelijkt.
+
+```txt
+{if $order_date < $invoice_date} ...do something.. {/if}
+```
+
+De data moeten natuurlijk wel in hetzelfde formaat zijn opgeslagen om de vergelijking te doen.
+
+Op deze wijze kun je ook formulieren, enquetes tonen op basis van de huidige tijd:
+
+```
+De enquete mag niet meer worden ingevuld na 25 maart 2017
+
+{capture assign="currentDate"}{$smarty.now|date_format:"%Y-%m-%d"}{/capture}
+{capture assign="endDate"}2017-03-25{/capture}
+{if $currentDate < $endDate}
+{survey name="jouw enquete"}
+{else}
+  Helaas, het invullen van deze enquete is niet meer mogelijk
+{/if}
+```
+
+
 ## Referentievelden
 
 Maar er kan meer. Je kunt in een database *Reverentievelden* aanmaken. Dit zijn
@@ -114,33 +260,6 @@ opgeven welk foreign key veld je wilt gebruiken, wat handig als je meerdere fore
 key velden hebt: {$profile.referrers.dierenarts@klanten}.
 
 Bekijk ook dit voorbeeld [Personaliseren met behulp van multidimensionale databases](./personalizing-using-multi-dimensional-databases.md)
-
-## Accounts en mailings
-
-Naast de {$profile} en {$subprofile} objecten, kun je ook gebruik maken van
-een {$account} en {$mailing} object met gegevens over de mailing. In het
-{$account} object zitten de volgende members:
-
-* **{$account.id}**: numerieke identifier van je account
-* **{$account.name}**: naam van je account
-
-Het {$mailing} object is wat uitgebreider, en bevat allerlei instellingen
-van de mailing waartoe het bericht behoort:
-
-* **{$mailing.sendtime}**: tijdstip waarop de mailing wordt verstuurd, in YYYY-MM-DD hh:mm:ss format
-* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 jan 1970)
-* **{$mailing.trigger}**: optioneel object dat de mailing heeft opgestart
-* **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
-* **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
-* **{$mailing.snapshot.subject}**: onderwerp van de mailing
-
-## Extra personalisatievariabelen toevoegen
-
-Op templateniveau kun je [extra variabelen](./publisher-personalization-functions#assign)
-toevoegen. De extra personalisatievariabelen zijn daarna benaderbaar
-via de gegeven naam.
-
-    {$variabele}
 
 ## Meer informatie over personaliseren
 
