@@ -102,7 +102,7 @@ De webformulierinstellingen vind je in het *Webformulier* menu.
 - Ga naar Webformulier > *Intellingen...*
 - Ga naar het tabblad *Profielen bewerken*. Kies *Werking wijzigen *om de wizard te starten.
 
-![Web form behaviour wizard](webformbehaviour.png)In de eerste stap van de wizard stel je op wie het formulier betrekking heeft. Je hebt hier keuze uit vier opties.
+![Web form behaviour wizard](../images/webformbehaviour.png)In de eerste stap van de wizard stel je op wie het formulier betrekking heeft. Je hebt hier keuze uit vier opties.
 
 ### 1. Negeer het profiel
 
@@ -128,7 +128,7 @@ Het formulier functioneert uitsluitend vanuit een 'nieuwe' situatie. Er wordt va
 
 Het formulier functioneert zowel voor bekende als onbekende relaties. Bij verzending van het formulier wordt gecontroleerd op basis van door jou aangegeven sleutelvelden of de invuller al in de database voorkomt. Zo ja, dan worden zijn gegevens bijgewerkt. Zo nee, wordt desgewenst een profiel nieuw aangemaakt.
 
-![Webform behaviour](behaviour2.png)Er zijn meerdere matches gevonden
+![Webform behaviour](../images/behaviour2.png)Er zijn meerdere matches gevonden
 ---------------------------------
 
 Het kan voorkomen dat de sleutelvelden niet tot een unieke match in de database leiden. Bijvoorbeeld omdat twee medewerkers van een organisatie hetzelfde info@... adres hebben binnen jouw database. Geef aan of je in zo'n geval wilt dat beide profielen of slechts een profiel wordt bijgewerkt met de ingevulde informatie uit het formulier.
