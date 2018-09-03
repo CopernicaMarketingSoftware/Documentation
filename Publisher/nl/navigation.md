@@ -46,4 +46,3 @@
     * [Licentie en facturering](./license-and-billing)
     * [Privacy](./privacy.md)
     * [Logfiles](./logfiles-ms)
-    * [Geavanceerde mogelijkheden](./advanced-options)
