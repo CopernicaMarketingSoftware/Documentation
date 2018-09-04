@@ -1,7 +1,7 @@
-# Verjaardags campagne
+# Verjaardagscampagne
 ![](https://mk0exponealcw6ltqqx5.kinstacdn.com/wp-content/uploads/2017/04/automatic-emails-for-birthdays-name-days.png)
 
-In deze tutorial gaan we een verjaardagcampagne aanmaken. Deze campagne
+In deze tutorial gaan we een verjaardagscampagne aanmaken. Deze campagne
 zal dagelijks de contacten selecteren die op die dag jarig zijn. Je hoeft
 alleen een aantal simpele stappen te volgen:
 
