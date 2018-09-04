@@ -5,9 +5,8 @@ In deze tutorial gaan we een verjaardagscampagne aanmaken. Deze campagne
 zal dagelijks de contacten selecteren die op die dag jarig zijn. Je hoeft
 alleen een aantal simpele stappen te volgen:
 
-1. Maak een nieuwe selectie aan. Maak een nieuwe conditie aan en selecteer
-bij **Type conditie** de optie **Check op datum**.
-2. Selecteer het veld waar je verjaardagen opslaat om mee te vergelijken.
+1. Maak een nieuwe [selectie](./database-selections-introduction) aan. Maak een nieuwe [conditie](./database-selections-introduction#regels_en_condities) aan en selecteer bij **Type conditie** de optie **Check op datum**.
+2. Selecteer het [veld](./database-fields) waar je verjaardagen opslaat om mee te vergelijken.
 3. Als je nu bij **Ligt na** en **Ligt voor** kijkt zie je een kalender.
 Onderaan de kalender kun je ervoor kiezen een variabele datum te gebruiken.
 Selecteer dit en stel beide in op 0 dagen. Selecteer bij **Afronden op hele**
