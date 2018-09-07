@@ -31,6 +31,7 @@
     * [Opvolgacties](./follow-up-manager-publisher.md)
     * [Data-script](./data-object.md)
 * [Campagnes](./campagnes.md)
+   * [Welkom](./campaign-welcome.md)
    * [Double optin](./campaign-tutorial-double-opt-in.md)
    * [Verjaardag](./how-to-create-a-birthday-selection.md)
 * [Websites](./websites.md)
