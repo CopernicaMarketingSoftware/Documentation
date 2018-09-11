@@ -12,11 +12,11 @@ een mailing wilt samenstellen maak je op basis van een template een
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
 
-Vaak is degene die templates bouwt niet dezelfde persoon als diegene die ze gebruikt om mailings (documenten) samenstellen en versturen. Templates worden gemaakt door webdesigners of programmeurs met verstand van HTML.
+Vaak worden de templates worden gemaakt door webdesigners of programmeurs die handig zijn met HTML.
 Zij bepalen de opmaak van de mailing en wijzen de plaatsen aan waar teksten en 
 afbeeldingen kunnen worden geplaatst (de layout). Als een template eenmaal is gebouwd kan 
 deze door bijvoorbeeld een marketeer worden voorzien van teksten en afbeeldingen, en kunnen er 
-mailings mee worden verstuurd.
+mailings mee worden verstuurd. Voor die tweede stap is geen kennis van HTML vereist.
 
 In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
