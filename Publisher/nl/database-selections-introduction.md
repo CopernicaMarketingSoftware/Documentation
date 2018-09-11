@@ -8,12 +8,12 @@ Naast 'gewone' selecties bestaan er ook [miniselecties](./database-collections.m
 
 ## Subselecties
 
-Een subselectie is een selectie van profielen in een selectie. Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van vrouwen. De profielen in een subselectie moeten aan alle condities van de selectie voldoen, alsmede die van de subselectie. In ons voorbeeld betekent dit dus dat ze zowel vrouw als onder de 30 moeten zijn. Dit is niet alleen handig voor het overzicht in je database, het kan je database ook een stuk sneller maken. Als je namelijk een subselectie van mensen onder de 30 maakt onder de selectie van vrouwen, hoeft Copernica alleen de profielen die al in de selectie Vrouwen staan te doorzoeken. Met een selectie Vrouwen onder de 30 moet er twee keer door alle profielen gezocht worden: iedereen checken op geslacht en op leeftijd.
+Een subselectie is een selectie van profielen in een selectie. Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van vrouwen. De profielen in een subselectie moeten aan alle condities van de selectie voldoen, alsmede die van de subselectie. In ons voorbeeld betekent dit dus dat het profiel zowel vrouwelijk als onder de 30 moeten zijn. Dit is niet alleen handig voor het overzicht in je database, het kan je database ook een stuk sneller maken. Als je namelijk een subselectie van mensen onder de 30 maakt onder de selectie van vrouwen, hoeft Copernica alleen de profielen die al in de selectie Vrouwen staan te doorzoeken in plaats van alle profielen in de database.
 Het maken van subselecties is alleen mogelijk op profielniveau; "subminiselecties" maken in een collectie is dus niet mogelijk. Subselecties maak je op dezelfde manier aan als selecties, geeft alleen aan waar een subselectie onder dient te vallen.
 
 ## Regels en condities
 
-Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica in door middel van selectieregels en condities. Je kunt op van alles filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode.
+Zoals hierboven vermeld, moeten profielen in een selectie bepaalde eigenschappen hebben om bij die selectie te mogen. Deze voorwaarden stel je in Copernica in door middel van selectieregels en -condities. Je kunt op van alles filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode.
 
 Regels en condities verschillen wel degelijk van elkaar. Een conditie is een onderdeel van een regel; er kunnen namelijk meerdere condities in een regel zitten. Oftewel, binnen een OF of OF NIET regel worden EN condities aan elkaar gelinkt. De profielen worden toegekend aan een selectie als aan een van de verschillende regels wordt voldaan.
 
