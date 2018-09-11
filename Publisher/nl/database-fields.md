@@ -1,12 +1,12 @@
 # Databasevelden
-De structuur van een databases bestaat uit velden, interesses en collecties. Velden en interesses zijn enkelvoudige velden waar bijvoorbeeld een tekst,
-datum of getal in kan worden opgeslagen. In het geval van interesses wordt hier alleen een "ja/nee" waarde geaccepteerd. Door een collectie aan een database toe te voegen creëer je een extra laag in de database. Een collectie bestaat ook weer uit enkelvoudige velden.
+De structuur van een databases bestaat uit velden, interesses en collecties. In velden en interessevelden kan bijvoorbeeld een tekst,
+datum of getal in kan worden opgeslagen. In het geval van interesses wordt hier alleen "ja" of "nee" als waarde geaccepteerd. Door een collectie aan een database toe te voegen creëer je een extra laag in de database. Een collectie bestaat ook weer uit enkelvoudige velden.
 
 Er zijn verschillende veldtypes beschikbaar voor het opslaan van specifieke gegevens. Bijvoorbeeld velden voor het opslaan van tekst, getallen en datums. Hieronder is een tabel weergegeven met alle beschikbare veldtypes.
 
 | Veldtype           | Omschrijving                                                                                         |
 |--------------------|------------------------------------------------------------------------------------------------------|
-| Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 225.          |
+| Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 255.          |
 | Numeriek veld      | Alleen numerieke waardes [0-9]. Kan geen leeg veld zijn. Geef bijvoorbeeld standaardwaarde 0 op.     |
 | E-mailveld         | E-mailveld is een tekstveld, bedoeld voor het opslaan van e-mailadressen.                            |
 | Telefoonveld       | Kan worden gespecificeerd voor fax, mobiele en andere telefoonnummers.                               |
@@ -15,7 +15,7 @@ Er zijn verschillende veldtypes beschikbaar voor het opslaan van specifieke gege
 | Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                                      |
 | Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste optie is standaardwaarde.                  |
 | Groot veld         | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je niet kunt indexeren.                   |
-| Reverentieveld     | Veld dat kan refereren naar een andere database, dit doormiddel van een ID                           |
+| Reverentieveld     | Veld dat kan refereren naar een andere database, dit doormiddel van een ID.                          |
 
 ## Extra opties
 
@@ -31,14 +31,14 @@ Deze toepassing kun je gebruiken op plaatsen in de applicatie waar een lijst van
 
 ### Gesorteerde velden
 
-Met deze optie kun je invoeren welk veld wordt gesorteerd. Deze optie kan slechts bij één veld tegelijkertijd worden geactiveerd.
+Met deze optie kun je invoeren op welk veld een overzicht met profielen standaard wordt gesorteerd. Deze optie kan slechts bij één veld tegelijkertijd worden geactiveerd.
 
 ### Geïndexeerde velden
 
 Het indexeren van velden kan het zoeken van profielen en het maken van selecties versnellen. Het is dus verstandig om velden die je vaak opzoekt in selecties te indexeren. Je kan maximaal 64 velden indexeren, maar het is ook niet nodig er veel te indexeren. Velden van het type "Groot veld" kunnen niet worden geïndexeerd.
 
 ## Interesses
-Interesses zijn velden die aan of uitgezet kunnen worden. Een profiel kan meerdere interesses hebben per groep. Denk hierbij aan dat de groep Inschrijven de waardes nieuwsbrief op ja, aanbiedingen op nee en facturen op ja kan bevatten. Interesses kunnen aangemaakt worden in het databasevelden menu door op interesse toevoegen te drukken. 
+Interesses zijn velden die aan of uitgezet kunnen worden. Een profiel kan meerdere interesses hebben per groep. Denk hierbij aan dat de groep Inschrijvingen met drie interesses: Nieuwsbrief (op 'ja'), Aanbiedingen (op 'nee') en Facturen (op 'ja'). Interesses kunnen aangemaakt worden in het databasevelden menu door op interesse toevoegen te drukken. 
 
 ## Databasevelden aanpassen of aanmaken Marketing Suite
 Om de structuur van je databasevelden aan te passen klik je rechtsboven op het **blauwe tandwiel**, hiermee kom je in het menu om de database aan te passen in de Marketing Suite. Ga vervolgens naar **structuur bewerken** om de velden aan te maken/passen. 
