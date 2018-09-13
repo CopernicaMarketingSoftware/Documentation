@@ -59,6 +59,7 @@ zijn beschikbaar:
 | GET       | [api.copernica.com/v1/minirule/$id/conditions](./rest-get-minirule-conditions.md)                             | Opvragen van condities van een miniselectie       |
 | GET       | [api.copernica.com/v1/subprofile/$id](./rest-get-subprofile.md)                                               | Opvragen subprofielgegevens                       |
 | GET       | [api.copernica.com/v1/subprofile/$id/fields](./rest-get-subprofile-fields.md)                                 | Opvragen subprofielvelden                         |
+| GET       | [api.copernica.com/v1/emailingdocument/$id](./rest-get-emailingdocument.md)                                   | Opvragen emailingdocument gegevens                |
 | GET       | [api.copernica.com/v1/logfiles](./rest-get-logfiles.md)                                                       | Opvragen van alle logfiles                        |
 | GET       | [api.copernica.com/v1/logfiles/$date](./rest-get-logfiles-names)                                              | Opvragen van namen van logfiles                   |
 | GET       | [api.copernica.com/v1/logfiles/$name](./rest-get-logfiles-csv.md)                                             | Downloaden van logfile in CSV formaat             |
