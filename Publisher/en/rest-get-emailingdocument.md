@@ -38,6 +38,3 @@ print_r($api->get("emailingdocument/1234"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
-
-## More information
-
