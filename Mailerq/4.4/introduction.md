@@ -93,3 +93,7 @@ run without the features from the specific library.
 Most of the MailerQ runtime settings are stored in a relational database.
 This means that you must have at least one of the mysql, mariadb, postgresql
 or sqlite3 libraries installed on your system.
+
+Sqlite3 is a local solution. Mysql or Mariadb can run on a different servers, 
+but then you need libmysqlclient on the mailerq box. Postgresql 9.5+ which 
+can be on a different server too, but then you need libpq >= 9.5 to use it.
