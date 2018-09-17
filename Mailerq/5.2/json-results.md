@@ -179,6 +179,43 @@ and you had also included a DSN setting in your input JSON to request a
 success notification, you can expect a notification from the server that
 accepted the message.
 
+## Added properties
+
+For logging purposes, MailerQ also extracts some data from the MIME when publishing
+the emails back. This way, these properties can be logged using the [flexible log format](logging).
+
+```json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "results": [
+        { 
+            "state": "message",
+            "result": "accepted",
+            "time": "2016-02-04 14:01:25",
+            "mta": "mta2.example.com",
+            "from": "1.2.3.4",
+            "to": "10.11.12.14",
+            "messages": 4,
+            "code": 250,
+            "status": "2.0.0",
+            "dsn": true,
+            "description": "Requested mail action okay, completed",
+        }
+    ],
+    "extracted": {
+        "from": "my-sender-address@my-domain.com",
+        "to": ["info@example.org", "other@example.org"],
+        "subject": "Test Subject",
+        "headers": {
+            "x-example-property": "some-mime-property"
+        }
+    }
+}
+```
+
+As is shown in the example, some properties are exposed in a parsed way (from, to, subject),
+as well as unparsed exposure of all the MIME-headers that were present in the (personalized) email.
 
 ## Delivery states
 
