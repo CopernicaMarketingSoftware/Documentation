@@ -1,8 +1,8 @@
 # Personaliseren binnen de Marketing Suite
 
-De Marketing Suite en Publisher stellen je in staat om e-mails te 
-personaliseren. Je doet dit door middel van een speciaal stukje script. Dit 
-script wordt, voordat de e-mail is verstuurd, vervangen door de correcte data. 
+De Marketing Suite en Publisher stellen je in staat om e-mails te
+personaliseren. Je doet dit door middel van een speciaal stukje script. Dit
+script wordt, voordat de e-mail is verstuurd, vervangen door de correcte data.
 Hieronder kun je nalezen hoe het personaliseren precies werkt binnen de omgeving
 van de Marketing Suite.
 
@@ -30,10 +30,57 @@ subprofiel aangeroepen wordt. Door in plaats van **{$Voornaam}** ,
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
+## Waar kun je personaliseren?
+
+In de Marketing Suite kun je op vele plaatsen personalisatie toevoegen. Deze velden zijn te herkennen aan het Dollar **$** teken in het input-veld. Zo kun je bijvoorbeeld de 'from name', het onderwerp, maar ook het 'from adres' aanpassen door in deze velden de code toe te passen.
+
+## Beschikbare personalisatievariabelen
+
+In dit object staan de gegevens van het profiel
+waarnaar het bericht is gestuurd, of, in het geval van een mailing naar
+subprofielen, van het bij het subprofiel behorende profiel. Dit profiel object
+heeft een aantal eigenschappen:
+
+* **{$profile.id}**: numerieke identifier van het profiel
+* **{$profile.extra}**: de extra data van het profiel die alleen met de api kan worden ingesteld
+* **{$profile.secret}**: de *geheime code* die bij het profiel is opgeslagen
+* **{$profile.code}**: alias voor {$profile.secret}, dus de geheime code
+* **{$profile.created}**: tijdstip waarop het profiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
+* **{$profile.referrers}**: een optioneel array van profielen die verwijzen naar dit profiel d.m.v. een *referentieveld*
+* **{$profile.*veldnaam*}**: elk veld van het profiel is toegankelijk via {$profile.*veldnaam*}
+* **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
+* **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
+
+### Subprofielen
+
+Als je een mailing naar subprofielen stuurt, dan is er naast het hierboven
+genoemde {$profile} object ook een {$subprofile} beschikbaar. Dit object heeft
+de volgende members:
+
+* **{$subprofile.id}**: numerieke identifier van het subprofiel
+* **{$subprofile.secret}**: de *geheime code* die bij het profiel is opgeslagen
+* **{$subprofile.code}**: alias voor {$subprofile.secret}, dus de geheime code
+* **{$subprofile.created}**: tijdstip waarop het subprofiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
+* **{$subprofile.profile}**: het profiel object (zie hierboven) waartoe dit subprofiel hoort
+* **{$subprofile.*veldnaam*}**: elk veld van het subprofiel is toegankelijk via {$subprofile.*veldnaam*}
+
+## Personalisatie modifiers
+
+Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
+van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
+Je gebruikt bijvoorbeeld **tolower** om de variabele **{$profile.name}** te
+bewerken. Dit ziet er dan zo uit: **{$profile.name|tolower}**.
+Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken.
+Je kunt bijvoorbeeld **{$profile.name|tolower|ucfirst}** gebruiken om te zorgen dat alle
+namen met een hoofdletter beginnen en de resterende letters altijd kleine
+letters zijn.
+
+Bekijk het [overzicht van alle modifiers](./personalization-modifiers)
+
 ## Data uit een collectie weergeven
 
-Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op 
-verschillende manieren doen. Om data uit de eerste rij van de collectie weer te 
+Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op
+verschillende manieren doen. Om data uit de eerste rij van de collectie weer te
 geven kun je deze syntax gebruiken.
 
 ```text
@@ -46,8 +93,8 @@ Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
 {$profile.collectie[1].veldnaam}
 ```
 
-Om data uit de laatste (en nieuwste) rij weer te geven kun je de count 
-modifier gebruiken om het aantal subprofielen te tellen waarna je 
+Om data uit de laatste (en nieuwste) rij weer te geven kun je de count
+modifier gebruiken om het aantal subprofielen te tellen waarna je
 van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 
 ```text
@@ -69,8 +116,7 @@ in combinatie met de foreach functie.
 
 ```text
 {foreach $item in $profile.collectie}{if $item.status == "InWinkelmandje"}
-{$item.veldnaam}
-{/if}
+{$item.veldnaam}{/if}
 {/foreach}
 ```
 
@@ -118,11 +164,3 @@ naar een webpagina klikken. [Meer info kun je hier vinden](personalizing-hyperli
 ```text
 https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
 ```
-
-## Waar kan ik personaliseren in de drag-and-drop editor?
-
-In de Marketing Suite kun je naast de tekstvelden ook op vele andere
-plaatsen personalisatie toevoegen. Deze velden zijn te herkennen aan
-het Dollar **$** teken in het input-veld. Zo kun je bijvoorbeeld de
-'from name', het onderwerp, maar ook het 'from adres' aanpassen door
-in deze velden de code toe te passen.

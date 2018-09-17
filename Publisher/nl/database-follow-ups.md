@@ -1,12 +1,12 @@
 # Database opvolgacties
 
-Automatisering is het favoriete buzzword van veel marketeers. Opvolgacties in 
-Copernica kunnen automatisch acties uitvoeren of plannen op basis van condities, 
+Automatisering is het favoriete buzzword van veel marketeers. Dat is ook niet zo gek, want e-mailcampagnes automatiseren kan  tijd besparen en tot een uitstekende ROI op het e-mailkanaal leiden. Opvolgacties in 
+Copernica kunnen automatisch acties uitvoeren of inplannen op basis van condities, 
 waardoor je makkelijk je eigen e-mailcampagnes kunt automatiseren. Je kunt 
 zo zelf prachtige campagnes creëren, bijvoorbeeld om een e-mail te sturen 
-wanneer iemand op een link klinkt of iemand te feliciteren met zijn verjaardag.
+wanneer iemand op een link klinkt, *lead scoring* toe te passen of goed converende herbestelcampagnes te lanceren.
 
-Er zijn verschillende manieren om database opvolgacties te maken. De database opvolgacties kunnen zowel in de Marketing Suite als de Publisher ingesteld worden. De Marketing Suite biedt een drag en drop flow editor. De Publisher is meer stapsgewijs opvolgacties aanmaken. 
+Er zijn verschillende manieren om database opvolgacties te maken. De database opvolgacties kunnen zowel in de Marketing Suite als de Publisher ingesteld worden. De Marketing Suite biedt een drag-&-drop flow editor. Bij de Publisher doorloop je een wizard.
 
 ## Follow-up manager (Marketing Suite)
 
@@ -28,8 +28,7 @@ In de Publisher kan een opvolgactie aangemaakt worden door te gaan naar **Databa
 
 Er zijn verschillende manieren om opvolgacties aan te maken, dus je 
 kunt kijken welke editor het beste werkt voor jou. Je kunt er ook voor kiezen 
-beide editors te gebruiken, maar we raden je af om geen dubbele opvolgacties 
-aan te maken. De artikelen hieronder kunnen je verder begeleiden in het 
+beide editors te gebruiken, maar let op dat je geen dubbele opvolgacties aanmaakt. De artikelen hieronder kunnen je verder begeleiden in het 
 aanmaken van opvolgacties.
 
 * [Follow-up Manager van de Marketing Suite](./follow-up-manager-ms.md)

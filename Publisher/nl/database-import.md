@@ -2,21 +2,20 @@
 
 Er zijn verschillende manieren voor het invoeren of importeren van gegevens. 
 Zo kun je profielen niet alleen met de hand invoeren, maar kun je ze ook 
-aanmaken of bewerken met de API, of importeren vanuit een CSV bestand 
+aanmaken of bewerken met de API, of importeren vanuit een CSV-bestand 
 of tabgescheiden bestand (dit zijn bestanden die je onder meer 
 spreadsheetprogramma's kunt maken).
 
 Het importeren van CSV bestanden is krachtig en kan ook worden gebruikt voor
 gelaagde databases met collecties en subprofielen. Ook kun je periodieke
-imports maken die automatisch worden herhaald. Je vindt de importmodule in
-de Marketing Suite binnen het kopje 'profielen'.
-
+imports maken die automatisch worden herhaald. 
 ## Importbestand voorbereiden
 
 Het bestand dat je wilt importeren moet aan een specifiek formaat voldoen.
 Het moet een tab- of kommagescheiden bestand zijn, en de bovenste regel van 
 dat bestand moet de namen van de kolommen (de veldnamen) bevatten die je gaat 
-importeren.
+importeren. Het bestand moet een UTF-8 encoding hebben en het kan verstandig zijn om 
+quotes om veldwaardes te plaatsen.
 
     Voornaam,Achternaam,Stad,Telefoonnummer
     Jan,de Jong,Amersfoort,0612456631
@@ -24,14 +23,11 @@ importeren.
 
 ## Kolommen koppelen
 
-Nadat je een bestand hebt geüpload moet je de kolommen koppelen. Je kunt van
-elke kolom bepalen aan welk databaseveld het moet worden gekoppeld. Meestal 
+Nadat je een bestand hebt geüpload moet je de kolommen koppelen. Als het systeem overeenkomstige namen vindt, zullen die kolommen en velden automatisch gekoppeld worden. De overige kolommen kun je handmatig koppelen. Meestal 
 spreekt deze koppeling voor zich: het veld "Voornaam" in het importbestand
-koppel je aan het veld "Voornaam" in de database. Als er nog geen veld "Voornaam" 
-in je database aanwezig is, kun je de kolom ook aan een ander veld koppelen, of 
-kun je ter plekke een nieuw veld aanmaken.
+koppel je aan het veld "Voornaam" in de database. Als het benodigde veld nog niet aanwezig is in de database, kun je die ter plekke laten aanmaken.
 
-Je kunt tijdens het koppelen van de kolommen ook de *sleutelvelden* instellen. 
+Je kunt tijdens het koppelen van de kolommen ook *sleutelvelden* instellen. 
 Sleutelvelden zijn de velden die Copernica gebruikt om regels uit je 
 importbestand te koppelen aan profielen in de database wanneer je een 
 profiel updatet. Als er geen match is kun je instellen dat er een nieuw 
@@ -62,7 +58,7 @@ horen.
 Je kunt de importmodule ook gebruiken voor periodieke imports. Je moet dan
 geen bestand uploaden, maar het adres (de URL) van een bestand opgeven.
 Copernica zal dan periodiek jouw importbestand van het opgegeven adres
-downloaden en importeren.
+downloaden en importeren. Dit geschiedt over het FTP protocol en de beveiligde varianten SFTP en FTPS worden beide ondersteund.
 
 Voor de rest zijn de importinstellingen voor periodieke imports gelijk aan
 de instellingen bij geüploade bestanden. Ook hier kun je kolommen koppelen
@@ -89,7 +85,7 @@ niet bestaan in datumvelden, dus worden ze automatisch overgezet naar
 
 Als je iets verkeerd doet kun je zomaar je hele database overschrijven met
 verkeerde gegevens. Goed opletten dus. Als het toch verkeerd is gegaan kun
-je dit met een trucje grotendeels ongedaan maken:
+je dit met het volgende stappenplan herstellen:
 
 Na een verkeerde import kun je een selectie aanmaken waarin je alle nieuwe 
 profielen opneemt. Je maakt hiervoor een selectie met een conditie van het

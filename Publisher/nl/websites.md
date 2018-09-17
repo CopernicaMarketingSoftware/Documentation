@@ -1,4 +1,4 @@
-# Websites in Publisher
+# Websites maken in de Publisher
 
 In de Copernica Publisher wordt het makkelijk gemaakt om zelf je website te 
 maken en te hosten met HTML. Je kunt Copernica webpagina's gebruiken om je 

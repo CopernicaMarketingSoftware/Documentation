@@ -1,4 +1,4 @@
-# Enquêtes in Publisher
+# Enquêtes maken in de Publisher
 
 In Publisher is het mogelijk om zelf makkelijk enquêtes in elkaar te 
 zetten om erachter te komen wat een klant vindt van jouw product of dienst. 

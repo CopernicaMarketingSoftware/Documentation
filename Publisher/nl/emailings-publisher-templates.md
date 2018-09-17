@@ -1,8 +1,8 @@
 # E-mailings in de Publisher
 
-De Publisher hanteert een andere manier om tot een mooie en werkende template te komen. In vergelijking met Marketing Suite is de aanpak wat technischer en moeilijker, omdat kennis van HTML en CSS vereist is. De Publisher heeft echter wel enkele functionaliteiten die in de Marketing Suite niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. 
+De Publisher hanteert een andere manier om tot een mooie en werkende template te komen. In vergelijking met Marketing Suite is de aanpak wat technischer en moeilijker, omdat kennis van HTML en CSS vereist is. De Publisher heeft echter wel enkele functionaliteiten die in de Marketing Suite niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. Ook zorgt de manier van werken, namelijk met HTML, voor meer vrijheid. 
 
-## Werken met publisher templates
+## Werken met Publisher templates
 
 In de Publisher omgeving wordt een template/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
@@ -12,19 +12,17 @@ een mailing wilt samenstellen maak je op basis van een template een
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
 
-Vaak (maar niet altijd!) is er een onderscheid tussen de mensen die templates 
-bouwen, en marketeers die mailings (documenten) samenstellen en versturen. 
-Templates worden gemaakt door webdesigners of programmeurs met verstand van HTML.
+Vaak worden de templates worden gemaakt door webdesigners of programmeurs die handig zijn met HTML.
 Zij bepalen de opmaak van de mailing en wijzen de plaatsen aan waar teksten en 
-afbeeldingen kunnen worden geplaatst. Als een template eenmaal is gebouwd kan 
-deze door marketeers worden voorzien van teksten en afbeeldingen, en kunnen er 
-mailings mee worden verstuurd.
+afbeeldingen kunnen worden geplaatst (de layout). Als een template eenmaal is gebouwd kan 
+deze door bijvoorbeeld een marketeer worden voorzien van teksten en afbeeldingen, en kunnen er 
+mailings mee worden verstuurd. Voor die tweede stap is geen kennis van HTML vereist.
 
 In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
 HTML beschikt om in ieder geval een eenvoudige website te bouwen.
 
-### Een voorbeeld van een publisher template
+### Een voorbeeld van een Publisher template
 
 Via Copernica Publisher kun je templates maken. Als je voor de "e-mailings"
 optie in het hoofdmenu kiest en een nieuwe template aanmaakt, verschijnt aan
