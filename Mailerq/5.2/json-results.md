@@ -468,3 +468,37 @@ that was issued by the receiving server. Both the "cipher" as the
     ]
 }
 ```
+
+## Overriding errors
+
+With the response pattern system, properties can be added to the result json. This is useful 
+for your own classification and processing of messages, but there are also some special properties
+that can be used to override error handling logic.
+
+<table>
+    <tr>
+        <td>fatal</td>
+        <td>should be the message be retried, or was this result already a permanent failure</td>
+    </tr>
+    <tr>
+        <td>individual</td>
+        <td>override whether or not an error applies to a single message, or rather to any message sent to the domain</td>
+    </tr>
+    <tr>
+        <td>strange</td>
+        <td>is this is a strange type of result</td>
+    </tr>
+    <tr>
+        <td>greylisted</td>
+        <td>should this result be sent from the same ip later</td>
+    </tr>
+    <tr>
+        <td>fallback</td>
+        <td>should this result trigger a fallback server</td>
+    </tr>
+</table>
+
+These properties are not set by MailerQ itself, but _can_ be set by setting these properties in
+a response pattern. If they are not present, MailerQ tries to figure out these properties by reasoning
+about the response it got from the server.
+
