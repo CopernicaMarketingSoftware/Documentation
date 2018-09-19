@@ -25,7 +25,8 @@ Hiervoor zijn de volgende objecten beschikbaar:
                                       
 * [copernica](./data-object-copernica);
 * [mailing](./data-object-mailing);      
-* [template](./data-object-template);  
+* [template](./data-object-template);
+* [document](./data-object-document);
 * [message](./data-object-message);     
 * [destination](./data-object-destination);
 * [profile](./data-object-profile).        
