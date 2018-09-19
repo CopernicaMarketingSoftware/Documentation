@@ -1,7 +1,7 @@
 # Data object - template
 
 Het template data-script kan worden gebruikt om informatie van een template op te vragen 
-of aan te passen. 
+of aan te passen. Let op: het template-object is alleen beschikbaar in de Marketing Suite. In Publisher kan gebruik gemaakt worden van het vergelijkbare [document-object](./data-object-document).
 
 Je kunt de variabele en beschikbare eigenschappen aanpassen met Javascript code 
 of in het "Tools" menu van de Email Designer.
