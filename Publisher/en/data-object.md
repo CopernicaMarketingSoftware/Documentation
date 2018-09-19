@@ -27,7 +27,8 @@ write properties as well. The following variables are accessible:
 | [**copernica**](./data-object-copernica)      | Copernica account                    |
 | [**mailing**](./data-object-mailing)          | Previous mailing                     |
 | [**message**](./data-object-message)          | Personalized template                |
-| [**template**](./data-object-template)        | Standard template                    |
+| [**template**](./data-object-template)        | Standard template (only MS)          |
+| [**document**](./data-object-document)        | Emailing document (only Publisher)   |
 | [**database**](./data-object-database)        | Database                             |
 | [**collection**](./data-object-collection)    | Collection                           |
 | [**profile**](./data-object-profile)          | Profile                              |
