@@ -1,6 +1,6 @@
 # Data object: template
 
-An object that gives access to an unpersonalized **template**. 
+An object that gives access to an unpersonalized **template**. Please note that this object is only available in the Marketing Suite. Publisher uses [emailing document objects](./data-object-document).
 
 You can edit the value of this variable and its properties under the "Tools" menu in 
 the email designer.
