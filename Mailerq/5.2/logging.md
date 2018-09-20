@@ -82,7 +82,7 @@ $attempt	int, attempt number of this mail
 $date		formatted DateTime (e.g. 01-01-1970 11:53)
 ```
 
-The available properties are specified in the JSON for outgoing messages. https://www.mailerq.com/documentation/5.2/json-messages
+The available properties are [specified in the JSON for outgoing messages](json-messages).
 
 The "send-log-directory" is the directory where log files with send attempts
 are stored. The directory must be writable for MailerQ. The "send-log-prefix"
@@ -115,7 +115,7 @@ received-log-history:        20
 received-log-maxsize:        100MB
 received-log-maxage:         3600
 received-log-compression:    gzip
-received-log-format:    [{$date}]{if $json.message_id} {$json.message_id} {/if}<{$json.envelope}> <{$json.recipient}> [{$json.connection.remote_ip}] [{$json.connection.local_ip}]
+received-log-format:         [{$date}]{if $json.message_id} {$json.message_id} {/if}<{$json.envelope}> <{$json.recipient}> [{$json.connection.remote_ip}] [{$json.connection.local_ip}]
 ```
 
 You can specify your own log lines via the `received-log-format` setting. These are the available variables.
@@ -127,8 +127,7 @@ $date		The datetime
 $time		unix timestamp
 ```
 
-The available properties are specified in the JSON for incoming messages.
-https://www.mailerq.com/documentation/5.2/json-incoming
+The available properties are [specified in the JSON for incoming messages](json-incoming)
 
 The log file only holds messages that are received over the SMTP port.
 Messages dropped in the spool directory or that are injected using the
@@ -153,7 +152,7 @@ download-log-history:       20
 download-log-maxsize:       100MB
 download-log-maxage:        3600
 download-log-compression:   gzip
-download-log-format:   {$date}, {$time}, {$url}
+download-log-format:        {$date}, {$time}, {$url}
 ```
 
 You can specify your own log lines via the `download-log-format` setting. These are the available variables.
@@ -176,7 +175,7 @@ www-log-history:                10
 www-log-maxsize:                100MB
 www-log-maxage:                 3600
 www-log-compression:            gzip
-www-log-format:            {$date}, {$ip}, {$request}
+www-log-format:                 {$date}, {$ip}, {$request}
 ```
 
 You can specify your own log lines via the `www-log-format` setting. These are the available variables.
