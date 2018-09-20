@@ -145,15 +145,11 @@ $ mailerq --version
 | disable-crash-report        | Disable crash report
 | extract-recipients          | Read in a mime message from standard input and filter out the destination addresses
 | ignore-dot                  | Instruct MailerQ that dots do not have a special meaning
-| paused                      | Pause
 | list-ips                    | List IP addresses
 | loopback                    | Loopback
 | notify-cluster              | Notify cluster
+| paused                      | Pause
 | purge-database              | Rebuilding the database tables
+| repair-database             | Repair the database
 | version                     | Version
 
-## More information
-
-* [MailerQ configuration](configuration "Configuring MailerQ")
-* [MailerQ minimal configuration](minimal-configuration "Minimal configuration for MailerQ")
-* [Management console](management-console "The management console")
