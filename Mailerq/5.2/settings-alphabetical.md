@@ -20,6 +20,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [database-validate](database-access#fixing-values-in-the-database)       | Check and fix database settings on startup
 | [download-log-compression](logging#download-logs)                        | Download log compression
 | [download-log-directory](logging#download-logs)                          | Download log directory
+| [download-log-format](logging#download-logs)                             | Download log format
 | [download-log-history](logging#download-logs)                            | Download log history
 | [download-log-maxage](logging#download-logs)                             | Download log maximum age
 | [download-log-maxsize](logging#download-logs)                            | Download log maximum size
@@ -29,9 +30,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [dsn-ret](sending-bounces#passing-dsn-settings)                          | Send full mail (FULL) or headers (HDRS) for notifications
 | [dns-threads](dns-settings)                                              | Number of threads used for DNS lookups
 | [dns-getaddrinfo](dns-settings)                                          | Whether the MailerQ resolver should rely on getaddrinfo() library calls
-| [error-log](logging#error-logs)                                          | Name and error of error
-| [error-log-directory](logging#error-logs)                                | Error log directory
-| [error-log-prefix](logging#error-logs)                                   | Error log prefix
+| [error-log](logging#error-logs)                                          | Full path to the error log
 | [heartbeat-enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)
 | [license](other-configuration#license)                                   | MailerQ license file
 | [lock](other-configuration#lockfile)                                     | Process ID for MailerQ instance to prevent from starting instances more than once
@@ -61,13 +60,19 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-verify](rabbitmq-config#rabbitmq-address)                      | Should the server certificate be verified (only used for amqps:// connections)
 | [received-log-compression](logging#received-messages)                    | Received log compression
 | [received-log-directory](logging#received-messages)                      | Received log directory
+| [received-log-format](logging#received-messages)                         | Received log format
 | [received-log-history](logging#received-messages)                        | Received log history
 | [received-log-maxage](logging#received-messages)                         | Received log maximum age
 | [received-log-maxsize](logging#received-messages)                        | Received log maximum size
 | [received-log-prefix](logging#received-messages)                         | Received log prefix
 | [retry-interval](other-configuration)                                    | Interval for retrying to send
+| [send-bin-log-directory](logging#send-logs)                              | Binary send log directory
+| [send-bin-log-history](logging#send-logs)                                | Binary send log history
+| [send-bin-log-maxage](logging#send-logs)                                 | Binary send log maximum age
+| [send-bin-log-maxsize](logging#send-logs)                                | Binary send log maximum size
 | [send-log-compression](logging#send-logs)                                | Send log compression
 | [send-log-directory](logging#send-logs)                                  | Send log directory
+| [send-log-format](logging#send-logs)                                     | Send log format
 | [send-log-history](logging#send-logs)                                    | Send log history
 | [send-log-maxage](logging#send-logs)                                     | Send log maximum age
 | [send-log-maxsize](logging#send-logs)                                    | Send log maximum size
