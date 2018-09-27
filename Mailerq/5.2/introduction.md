@@ -1,7 +1,6 @@
 # Getting started with MailerQ 5.2
 
-MailerQ runs on Linux, so [you need a Linux server or Linux computer](system-dependencies) to run 
-MailerQ. To get MailerQ up and running on your own computer or on a server you
+MailerQ runs on Linux. To get MailerQ up and running on your own computer or on a server you
 need to take a couple of simple steps:
 
 * Download and install MailerQ
