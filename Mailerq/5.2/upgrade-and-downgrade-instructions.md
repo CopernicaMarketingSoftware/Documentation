@@ -1,6 +1,6 @@
 # Upgrade and downgrade instructions
 
-To upgrade MailerQ from version < 5.2 to 5.2
+To upgrade MailerQ from version < 5.2 to 5.2+
 
 **Debian/Ubuntu:**
 
@@ -17,7 +17,7 @@ yum update
 mailerq --repair-database
 ```
 
-To downgrade MailerQ from version 5.2 to 5.1
+To downgrade MailerQ from version 5.2+ to 5.1
 
 **Debian/Ubuntu:**
 
