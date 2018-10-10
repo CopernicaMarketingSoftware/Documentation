@@ -36,7 +36,7 @@ Verifying all these headers will ensure that the full message is from SMTPeter.
 
 ### Example
 
-You can find an example implementation of correct message verification [here](Images/Security.php).
+You can find an example implementation of correct message verification [here](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/SMTPeter/Images/Security.php).
 
 ## More information
 

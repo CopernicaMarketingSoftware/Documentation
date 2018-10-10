@@ -30,7 +30,7 @@ class Digest
 
     /**
      *  The value
-     *  @var
+     *  @var string
      */
     private $value;
 
