@@ -24,6 +24,7 @@
     * [Managing templates](rest-templates)
 * [Webhooks](webhooks)
     * [Setting up a Webhook](webhook-setup)
+    * [Securing a Webhook](webhook-security)
     * [Webhooks for bounces](webhook-bounces)
     * [Webhooks for failures](webhook-failures)
     * [Webhooks for clicks](webhook-clicks)
