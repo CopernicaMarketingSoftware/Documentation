@@ -25,6 +25,11 @@ periodically download [the latest log files](rest-logfiles). The REST API
 gives you access to exactly the same data as the webhooks, but you 
 stay in control and you decide when to fetch the data.
 
+## Security
+
+To protect your endpoint from abuse and false information injection, SMTPeter 
+[signs all requests](webhook-security) to your endpoint. 
+
 ## Type of events
 
 The following webhooks can be used:
