@@ -24,8 +24,9 @@ The headers are signed using a draft for a standard of signing HTTP messages, wh
 find [here](https://tools.ietf.org/html/draft-cavage-http-signatures-10).
 
 As a `keyId`, an url is provided in which a key can be found in the TXT record. Currently, the field contains
-a full URL which can be queried for a `TXT` record, where a valid DKIM key can be found. To improve security, 
-these keys automatically rotate.
+a full URL which can be queried for a `TXT` record, where a valid DKIM record can be found. To improve security, 
+these keys are automatically rotated every month. For information on the DKIM key formatting, check out 
+[RFC 6367](https://tools.ietf.org/html/rfc6376#section-3.6.1).
 
 As an additional security measure, the headers in the signature should at least contain the following fields
 - `(request-target)` - the target resource, e.g. `/path/to/your/script.php`
@@ -34,10 +35,19 @@ As an additional security measure, the headers in the signature should at least 
 - `X-Copernica-ID` - the environment identifier, see above
 - `Digest` - the message digest, see above
 
-Verifying all these headers will ensure that the full message is from SMTPeter, that the message is recent
-(which prevents replay attacks), that this is actually a message for your endpoint and that this message
-is actually meant for your account. Because of the `Digest` header, the integrity of the message body can 
-be checked.
+### Checklist
+
+The headers in itself are not enough to verify the message security. To make the connection fully secure, check 
+off all steps in the following list.
+
+- `Date` is recent
+- `Host` header is correct
+- `Digest` header is correct
+- `Signature` header is correct
+- `Signature` contains _at least_ the recommended headers
+- `Signature` header `keyId` is pointing to a `copernica.com` subdomain
+
+Performing all these steps will ensure maximum security.
 
 ### Example
 
