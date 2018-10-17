@@ -11,7 +11,7 @@ Je doet dit middels een van de volgende URls:
 https://www.smtpeter.com/v1/events/messageid/MESSAGEID
 https://www.smtpeter.com/v1/events/email/EMAILADRES
 https://www.smtpeter.com/v1/events/template/TEMPLATEID
-https://www.smtpeter.com/v1/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
+https://www.smtpeter.com/v1/events/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
 ```
 
 ## Beschikbare parameters
