@@ -36,7 +36,7 @@ dit een selectie direct onder een database is, of een geneste selectie onder een
 * has-referred: 	boolean waarde; zijn er andere selectie die verwijzen naar deze selectie?
 * has-rules: 		boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
 * database:			id van de database waar deze selectie onder valt
-
+* lastbuilt:        tijdstip wanneer de selectie voor het laatst is opgebouwd
 
 ## Voorbeeld in PHP
 
