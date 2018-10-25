@@ -33,7 +33,7 @@ selections that refer to this selection.
 - **has-rules**: boolean value: whether or not the selection has 
 selection rules
 - **database**: ID of the database this selection belongs to.
-- **lastbuilt**: Timestamp of the last time the view was built
+- **lastbuilt**: timestamp of the last time the view was built
 
 ## PHP example
 
