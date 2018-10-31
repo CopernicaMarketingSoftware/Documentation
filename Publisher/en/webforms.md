@@ -82,7 +82,10 @@ a profile in the database. This is especially useful for login forms.
 * **Case sensitive**: Determines whether or not the field is case 
 sensitive.
 * **Value from database**: Determines whether or not the value of a field 
-should be pre-entered if known.
+should be pre-entered if known. If you want to check the value 
+(for example to check a checkbox or select a radio button) you can 
+display a different text by entering `value :: Displayed text` in the 
+"Default value" field.
 * **Default value**: Value to use if no answer is given.
 
 ## More information

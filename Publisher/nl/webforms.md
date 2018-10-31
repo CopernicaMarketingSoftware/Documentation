@@ -88,8 +88,11 @@ Informatie wordt alleen gelinkt wanneer alle sleutelvelden overeenkomen met
 een profiel. Dit is bijvoorbeeld nuttig voor een inlogformulier.
 * **Hoofdlettergevoelig**: Geeft aan of het veld hoofdlettergevoelig is.
 * **Waarde uit de database**: Geeft aan of reeds bekende waarden vast ingevuld
-moeten worden voor de invuller.
-* **Standaardwaarde**: De waarde die wordt gebruikt als het veld niet ingevuld
+moeten worden voor de invuller. Als je naar een specifieke waarde zoekt 
+(bijvoorbeeld voor het selecteren van een selectievakje of keuzerondjes) 
+kun je een andere tekst tonen door `waarde :: Weergegeven tekst` in te vullen 
+in het "Standaard waarde" veld.
+* **Standaard waarde**: De waarde die wordt gebruikt als het veld niet ingevuld
 is.
 
 
