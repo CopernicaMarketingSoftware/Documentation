@@ -16,7 +16,7 @@ the form to log in or out of a profile, or change nothing at all. After
 sending a webform and entering the settings you can receive reactions. If 
 you have changed a field in the profile, such as the newsletter field this 
 might influence your selections next time they are refreshed. It's also 
-possible to send a confirmation mail or thank you mail using [followups](./follow-up-manager).
+possible to send a confirmation mail or thank you mail using [follow-ups](./follow-up-manager).
 
 ### Create a webform in website
 
