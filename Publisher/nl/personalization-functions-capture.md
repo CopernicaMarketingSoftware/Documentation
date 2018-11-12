@@ -84,9 +84,9 @@ slaan in een object.
 
 Je kunt de onderstaande code gebruiken en aanpassen om een array te maken:
 
-    {capture append="information"}{assign "name" "Bob"}{$age}, {\capture}
-    {capture append="information"}{assign "age" "25"}{$age}, {\capture}
-    {capture append="information"}{assign "location" "the Netherlands"}{$age}{\capture}
+    {capture append="information"}{assign "name" "Bob"}{$name}, {/capture}
+    {capture append="information"}{assign "age" "25"}{$age}, {/capture}
+    {capture append="information"}{assign "location" "the Netherlands"}{$location}{/capture}
     
 Dit lijkt misschien veel code, maar er worden slechts drie variabelen 
 gedefinieerd en opgeslagen in *information*. Dit voorbeeld laat ook zien 
