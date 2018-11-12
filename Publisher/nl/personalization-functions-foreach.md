@@ -26,9 +26,9 @@ kunnen we hierover loopen en allerlei operaties uitvoeren. In dit geval
 houden we het simpel en printen we slechts de inhoud als tekst. De array 
 wordt gemaakt met de [capture functie](./personalization-functions-capture).
 
-    {capture append="information"}{assign "name" "Bob"}{$age}, {\capture}
-    {capture append="information"}{assign "age" "25"}{$age}, {\capture}
-    {capture append="information"}{assign "location" "the Netherlands"}{$age}{\capture}
+    {capture append="information"}{assign "name" "Bob"}{$name}, {/capture}
+    {capture append="information"}{assign "age" "25"}{$age}, {/capture}
+    {capture append="information"}{assign "location" "the Netherlands"}{$location}{/capture}
 
     {foreach $information as $text}{$text}{/foreach}
     
