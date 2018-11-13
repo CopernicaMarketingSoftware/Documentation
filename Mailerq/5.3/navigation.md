@@ -1,5 +1,5 @@
 * [Getting started](introduction.md "Getting started")
-    * [System dependencies](system-dependencies.md "System dependencies")
+    * [System dependencies](system-dependencies "System dependencies")
     * [Try with Docker](try-with-docker "Try with Docker")
     * [Download instructions](download-instructions "Download instructions")
     * [Upgrade/downgrade](upgrade-and-downgrade-instructions "Upgrade and downgrade instructions")
