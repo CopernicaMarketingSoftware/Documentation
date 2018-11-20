@@ -23,7 +23,7 @@ short-lived license on each startup, ideal for testing.
 Alternatively, you can manually download the `license.txt` file, and bind the image license
 file to the host file. To accomplish this, you can run
 ```
-docker run -v `pwd`/license.txt:/etc/mailerq/license.txt -it mailerq/mailerq:5.1
+docker run -v `pwd`/license.txt:/etc/mailerq/license.txt -it mailerq/mailerq:5.3
 ```
 with the `license.txt` in the current working directory.
 
