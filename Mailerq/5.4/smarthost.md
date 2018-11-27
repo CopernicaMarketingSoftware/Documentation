@@ -87,17 +87,19 @@ want to actually deliver the mails, but send them to a dummy destination:
 the "smarthost". This is where the smtp-sink options comes in.
 
 ````
-smtp-sink-ip:           <ip address>    (default: 0.0.0.0)
-smtp-sink-port:         <port>          (default: 25)
-smtp-sink-username:     <username>      (empty by default)
-smtp-sink-password:     <password>      (empty by default)
+smtp-sink-address:      <ip address or hostname>    (default: 0.0.0.0)
+smtp-sink-port:         <port>                      (default: 25)
+smtp-sink-username:     <username>                  (empty by default)
+smtp-sink-password:     <password>                  (empty by default)
 ````
 
-If you include the "smtp-sink-ip" and "smtp-sink-port" options in the config
+If you include the "smtp-sink-address" and "smtp-sink-port" options in the config
 file, MailerQ runs normally, and all mails are routed through different
 internal queues with their own send capacities. However, when a TCP 
 connection is created, the connection will be set up to the sink instead
-of to the actual recipient mail server.
+of to the actual recipient mail server. Bear in mind that if a hostname is provided,
+it will only be resolved _once_, at the start of the application, and the 
+resolved IP will be used until the application is stopped.
 
 The "smtp-sink-username" and "smtp-sink-password" options can be used
 if your sink requires authentication.

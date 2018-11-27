@@ -98,7 +98,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-proxy](smtp-server#running-behind-haproxy)                         | IPs to treat as connection from proxy server
 | [smtp-range](smtp-server#controlling-access)                             | Range of IP address to allow incoming email for
 | [smtp-secure port](smtp-server#config-file-settings)                     | Ports for secure incoming MailerQ connections
-| [smtp-sink-ip](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
+| [smtp-sink-address](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
 | [smtp-sink-password](smarthost#using-smarthost-for-debugging)            | SMTP sink password
 | [smtp-sink-port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
 | [smtp-sink-username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
