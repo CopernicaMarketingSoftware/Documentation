@@ -21,6 +21,7 @@ Er zijn geen beschikbare parameters voor deze methode.
 - **has-referred**: geeft aan of er andere selecties zijn die naar deze selectie refereren.
 - **has-rules**: geeft aan of de selectie regels heeft
 - **database**: id van de database waar deze selectie onder valt
+- **last-built**: tijdstip laatste opbouw van de selectie
 
 ## Voorbeeld in PHP
 
