@@ -22,6 +22,7 @@ There are no available parameters for this method.
 - **has-referred**: boolean value: whether or not there are other selections that refer to this selection.
 - **has-rules**: boolean value: whether or not the selection has selection rules
 - **database**: id of the database this selection belongs to
+- **last-built**: timestamp of the last time the view was built
 
 ## PHP example
 
