@@ -3,7 +3,7 @@
 To update existing fields of a profile, you need to do an HTTP PUT 
 request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the database you want to add a selection to. The name of the field and 
@@ -43,7 +43,7 @@ $data = array(
 );
 
 // do the call
-$api->put("profile/{$id}/fields", $data);
+$api->put("profile/{$profileID}/fields", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

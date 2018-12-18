@@ -12,16 +12,16 @@ returns.
 
 To create this data request you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/datarequest?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/datarequest?access_token=xxxx`
 
-The code *id* should be replaced by the numerical identifier of the profile 
+The code `id` should be replaced by the numerical identifier of the profile 
 you want to retrieve the data of.
 
 ## Available parameters
 
 The following parameters can be added to the URL:
 
-* *report*: The target to report to; This can either be an email address or 
+* **report**: The target to report to; This can either be an email address or 
 a web address. If the target is an email address and the file is small enough the 
 JSON file will be added as an attachment to the email, otherwise a link will 
 be provided to download the data. If you choose to use a web address an 
@@ -36,9 +36,9 @@ The result of this POST call is a unique identifier. This identifier can be
 used to check if the data is already available by sending a HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v2/datarequest/$id?access_token=xxxx`
 
-The code *id* should be replaced with the identifier obtained from your
+The code `id` should be replaced with the identifier obtained from your
 HTTP POST request. Note that this file will expire eventually.
 
 If the data is not available yet the data member of the JSON will contain the 
@@ -59,7 +59,7 @@ $data = array(
 );
 
 // process the request (don't forget to add the ID!)
-$api->post("profile/$id/data", $data);
+$api->post("profile/{$profileID}/data", $data);
 ```
 
 This example requires the [REST API class](./rest-php).
@@ -67,9 +67,9 @@ This example requires the [REST API class](./rest-php).
 ## JSON File
 
 The JSON in the provided file contains two members, *info* and *data*.
-The info member has also two members *type* and *id*. The type provides
-the type of info which can be *email*, *profile*, or *subprofile*, the 
-*id* is the email address or the numeric identifier of the profile or
+The info member has also two members **type** and **id**. The type provides
+the type of info which can be **email**, **profile**, or **subprofile**, the 
+**id** is the email address or the numeric identifier of the profile or
 subprofile.
 
 The data member in the JSON contains an array of arrays with all the info

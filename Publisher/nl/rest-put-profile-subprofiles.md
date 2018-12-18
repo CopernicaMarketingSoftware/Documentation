@@ -1,12 +1,11 @@
 # REST API: PUT profile subprofiles
 
-Je kunt een subprofile bewerken door een 
-HTTP PUT request sturen naar de volgende 
+Je kunt een subprofile bewerken door een HTTP PUT request sturen naar de volgende 
 URL:
 
-`https://api.copernica.com/v1/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het subprofiel 
+De code `$id` moet je vervangen door de numerieke identifier van het subprofiel 
 waaraan je een data wilt toevoegen De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
@@ -22,10 +21,6 @@ Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.
 // vereiste scripts
 require_once('copernica_rest_api.php');
 
-// database en subprofiles id dat je wilt bewerken
-$id = 1;
-$id2 = 2; 
-
 // verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
@@ -37,10 +32,10 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("subprofile/{$id}/fields", $data);
+$api->put("subprofile/{$subprofielID}/fields", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

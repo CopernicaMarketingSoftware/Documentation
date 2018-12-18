@@ -3,11 +3,10 @@
 Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/subprofiles?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het profiel 
+De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.
-
 
 ## Body data
 
@@ -23,10 +22,12 @@ De tweede manier is om een object te sturen als body data dat als keys interesse
 als waardes booleans om aan te geven of een interesse geactiveerd moet worden. Zo kunnen bestaande 
 interesses ook uitgeschakeld worden. Elke interesse die hierin niet genoemd wordt blijft hetzelfde.
 
-
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. 
+Voor het eerste profiel worden de interessses 'tennis' en 'hockey' aangezet, 
+terwijl 'voetbal' wordt uitgeschakeld. In de tweede API call wordt de interessse 
+'voetbal' geactiveerd. 
 
 ```php
     // vereiste scripts
@@ -37,23 +38,22 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
     // data voor de methode
     $data = array(
-        'football'  =>  0,
+        'voetbal'   =>  0,
         'tennis'    =>  1,
         'hockey'    =>  1
     );
     
-    // voer het verzoek uit
-    $api->post("profile/1234/interests", $data);
+    // voer het eerste verzoek uit
+    $api->post("profile/{$profielID1}/interests", $data);
 
     // data voor het tweede verzoek
     $data2 = array('voetbal')
 
-    // voer het verzoek uit
-    $api->post("profile/1235/interests", $data2);
+    // voer het tweede verzoek uit
+    $api->post("profile/{$profielID2}/interests", $data2);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

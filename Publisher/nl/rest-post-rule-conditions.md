@@ -1,35 +1,34 @@
 # REST API: POST rule conditions
 
-Een methode om *conditions* voor een *rule* aan te maken. 
+Een methode om condities voor een regel aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v2/rule/$id/conditions?access_token=xxxx`
 
-De **$id** moet hier vervangen worden door de ID van de rule waaraan je de condition wilt toevoegen.
+De `$id` moet hier vervangen worden door de ID van de regel waaraan je de condition wilt toevoegen.
 
+## Verschillende type condities
 
-## Verschillende type conditions
-
-Je kunt verschillende conditions aan een rule toevoegen. 
+Je kunt verschillende condities aan een regel toevoegen. 
 De precieze eigenschappen hangen af van het type van de conditie. 
 In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
-precies lezen wat iedere condition inhoudt door erop te klikken:
+precies lezen wat iedere conditie inhoudt door erop te klikken:
 
-- [Change condition](./rest-condition-type-change.md)
-- [Date condition](./rest-condition-type-date.md)
-- [DoubleField condition](./rest-condition-type-doublefield.md)
-- [E-mail condition](./rest-condition-type-email.md)
-- [Export condition](./rest-condition-type-export.md)
-- [Fax condition](./rest-condition-type-fax.md)
-- [Field condition](./rest-condition-type-field.md)
-- [Interest condition](./rest-condition-type-interest.md)
-- [LastContact condition](./rest-condition-type-lastcontact.md)
-- [MiniView condition](./rest-condition-type-miniview.md)
-- [SMS condition](./rest-condition-type-sms.md)
-- [ToDo condition](./rest-condition-type-todo.md)
-- [Survey condition](./rest-condition-type-survey.md)
-- [Part condition](./rest-condition-type-part.md)
-- [ReferView condition](./rest-condition-type-referview.md)
+- [Change conditie](./rest-condition-type-change.md)
+- [Date conditie](./rest-condition-type-date.md)
+- [DoubleField conditie](./rest-condition-type-doublefield.md)
+- [E-mail conditie](./rest-condition-type-email.md)
+- [Export conditie](./rest-condition-type-export.md)
+- [Fax conditie](./rest-condition-type-fax.md)
+- [Field conditie](./rest-condition-type-field.md)
+- [Interest conditie](./rest-condition-type-interest.md)
+- [LastContact conditie](./rest-condition-type-lastcontact.md)
+- [MiniView conditie](./rest-condition-type-miniview.md)
+- [SMS conditie](./rest-condition-type-sms.md)
+- [ToDo conditie](./rest-condition-type-todo.md)
+- [Survey conditie](./rest-condition-type-survey.md)
+- [Part conditie](./rest-condition-type-part.md)
+- [ReferView conditie](./rest-condition-type-referview.md)
 
 
 ## Voorbeeld in PHP
@@ -49,12 +48,12 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-$api->post("rule/id/conditions", array(), $data);
+$api->post("rule/{$regelID}/conditions", array(), $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

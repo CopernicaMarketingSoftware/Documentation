@@ -1,11 +1,11 @@
 # REST API: PUT rule conditions
 
-Een methode om *conditions* voor een *rule* aan te passen. 
+Een methode om condities voor een regel aan te passen. 
 Je kunt de methode aanroepen met een HTTP PUT request naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id/conditions/$type?access_token=xxxx`
 
-De **$id** is de ID van de regel, de **$type** is het type conditie dat je 
+De `$id` is de ID van de regel, de `$type` is het type conditie dat je 
 voor de regel aan wil passen.
 
 ## Verschillende type conditions
@@ -17,29 +17,29 @@ conditie:
 
 Je kunt verschillende type condities gebruiken.
 De precieze eigenschappen hangen af van het type van de conditie. 
-In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
-precies lezen wat iedere condition inhoudt door erop te klikken:
+In onderstaande lijst zijn alle condities weergegeven. Je kunt 
+precies lezen wat iedere conditie inhoudt door erop te klikken:
 
-- [Change condition](./rest-condition-type-change.md)
-- [Date condition](./rest-condition-type-date.md)
-- [DoubleField condition](./rest-condition-type-doublefield.md)
-- [E-mail condition](./rest-condition-type-email.md)
-- [Export condition](./rest-condition-type-export.md)
-- [Fax condition](./rest-condition-type-fax.md)
-- [Field condition](./rest-condition-type-field.md)
-- [Interest condition](./rest-condition-type-interest.md)
-- [LastContact condition](./rest-condition-type-lastcontact.md)
-- [MiniView condition](./rest-condition-type-miniview.md)
-- [SMS condition](./rest-condition-type-sms.md)
-- [ToDo condition](./rest-condition-type-todo.md)
-- [Survey condition](./rest-condition-type-survey.md)
-- [Part condition](./rest-condition-type-part.md)
-- [ReferView condition](./rest-condition-type-referview.md)
+- [Change conditie](./rest-condition-type-change.md)
+- [Date conditie](./rest-condition-type-date.md)
+- [DoubleField conditie](./rest-condition-type-doublefield.md)
+- [E-mail conditie](./rest-condition-type-email.md)
+- [Export conditie](./rest-condition-type-export.md)
+- [Fax conditie](./rest-condition-type-fax.md)
+- [Field conditie](./rest-condition-type-field.md)
+- [Interest conditie](./rest-condition-type-interest.md)
+- [LastContact conditie](./rest-condition-type-lastcontact.md)
+- [MiniView conditie](./rest-condition-type-miniview.md)
+- [SMS conditie](./rest-condition-type-sms.md)
+- [ToDo conditie](./rest-condition-type-todo.md)
+- [Survey conditie](./rest-condition-type-survey.md)
+- [Part conditie](./rest-condition-type-part.md)
+- [ReferView conditie](./rest-condition-type-referview.md)
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is. 
-Hier wordt aan de conditie voldaan als "firstname" de waarde "Bob" heeft.
+Hier wordt aan de conditie voldaan als het veld "voornaam" de waarde "Bob" heeft.
 
 ```php
 // vereiste scripts
@@ -50,13 +50,13 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters voor de methode
 $data = array(
-    'type' = 'field'
-    'field' = 'firstname'
-    'value' = 'Bob'
+    'type'  => 'field',
+    'field' => 'voornaam',
+    'value' => 'Bob'
 );
 
 // voer het verzoek uit en print het resultaat
-$api->post("rule/id/conditions/id", array(), $data);
+$api->post("rule/{regelID}/conditions/", array(), $data);
 
 // bij een succesvolle call wordt de id van het aangemaakte verzoek teruggegeven
 ```

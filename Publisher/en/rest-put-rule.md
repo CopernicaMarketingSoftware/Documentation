@@ -3,12 +3,13 @@
 A method to edit the properties of an existing rule. It is called using 
 the following URL:
 
-`https://api.copernica.com/v1/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/rule/$id?access_token=xxxx`
 
 The `$id` needs to be replaced with the ID of the rule you want to edit 
 the properties of.
 
 ## Available data
+
 The following data can be placed in the message body of the HTTP PUT command:
 
 - **name**: name of the rule
@@ -30,17 +31,13 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// declare the id of the rule that you want to edit
-$id = 1;
-
 // data to be sent to the api
 $data = array(
-   	'description'   =>  'a new description',
-   	'has_rules'      =>  true
+   	'description'   =>  'a new description'
 );
 
 // do the call, and print result
-print_r($api->put("rule/{$id}", $data));
+print_r($api->put("rule/{$ruleID}", array(), $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

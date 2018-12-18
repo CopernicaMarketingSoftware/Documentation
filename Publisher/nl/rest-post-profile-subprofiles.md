@@ -3,13 +3,12 @@
 Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
 kun je een HTTP POST request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/profile/$id/subprofiles/$collectionID?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/subprofiles/$id?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het profiel 
-waaraan je een subprofiel wil toevoegen en **$collectionID** moet vervangen worden
-met de identifier van de collectie waarin je het subprofiel wil toevoegen.
+De eerste `$id` moet je vervangen door de numerieke identifier van het profiel 
+waaraan je een subprofiel wil toevoegen en de tweede `$id` moet vervangen worden
+met de identifier of naam van de collectie waarin je het subprofiel wil toevoegen.
 De inhoud van het subprofiel kun je in de message body plaatsen.
-
 
 ## Body data
 
@@ -21,7 +20,6 @@ Het subprofile kan de volgende eigenschappen hebben:
 - collection:       id van de collectie waar het subprofile bij hoort;
 - created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
 - modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
-
 
 ## Voorbeeld in PHP
 
@@ -36,17 +34,17 @@ $api = new CopernicaRestApi("your-access-token");
 
 // data voor de methode
 $data = array(
-    'collection'  =>  '13',
-    'profile'    =>  '1234'
+    'firstname' =>  'John',
+    'lastname'  =>  'Doe',
+    'email'     =>  'johndoe@example.com'
 );
 
 // voer het verzoek uit
-$api->post("profile/id/subprofiles/321", $data);
+$api->post("profile/{$profielID}/subprofiles/{$collectieID}", $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

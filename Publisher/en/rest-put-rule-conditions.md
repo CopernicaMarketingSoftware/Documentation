@@ -3,10 +3,9 @@
 A method to edit conditions for a rule. It is called by sending an HTTP 
 POST request to the following URL:
 
-`https://api.copernica.com/v1/rule/$id/conditions/$id?access_token=xxxx`
+`https://api.copernica.com/v2/rule/$id/conditions/?access_token=xxxx`
 
-The `$id` is the ID of the rule and the `$type` is the type of condition 
-you want to edit.
+The `$id` is the ID of the rule.
 
 ## Available parameters
 
@@ -54,7 +53,7 @@ $data = array(
 );
 
 // do the call, and print result
-$api->post("rule/id/conditions/id", array(), $data);
+$api->post("rule/{$ruleID}/conditions/", array(), $data);
 
 // return id of created request if successful
 ```

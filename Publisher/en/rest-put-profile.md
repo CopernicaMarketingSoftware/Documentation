@@ -3,7 +3,7 @@
 A method to edit the properties of an existing profile. It is called 
 using the following URL:
 
-`https://api.copernica.com/v1/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id?access_token=xxxx`
 
 The `$id` needs to be replaced with the ID of the profile you want to 
 edit the properties of.
@@ -28,26 +28,23 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// declare the id of the profile that you want to edit
-$id = 1;
-
 // data to be sent to the api
 $data = array(
     "fields" => array(
         'firstname' =>  'John',
         'lastname'  =>  'Doe',
         'email'     =>  'johndoe@example.com'
-        ),
-        "interests" = array(
-            'football'  =>  0,
-            'tennis'    =>  1,
-            'hockey'    =>  1
-        ),
-"secret" => "geheimecode"
+    ),
+    'interests' = array(
+        'football'  =>  0,
+        'tennis'    =>  1,
+        'hockey'    =>  1
+    ),
+    'secret' => "geheimecode"
 );
 
 // do the call, and print result
-print_r($api->put("profile/{$id}", $data));
+print_r($api->put("profile/{$profileID}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
