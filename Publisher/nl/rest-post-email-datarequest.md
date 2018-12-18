@@ -12,22 +12,22 @@ verzoek en de unieke ID die deze methode retourneert.
 Voor het indienen van een data verzoek voor een e-mailadres kun je een HTTP POST verzoek sturen 
 naar de volgende URL:
 
-`https://api.copernica.com/v1/email/$email/datarequest?access_token=xxx`
+`https://api.copernica.com/v2/email/$email/datarequest?access_token=xxx`
 
-De code **$email** kun je hier vervangen door het e-mailadres waarvoor je 
+De code `$email` kun je hier vervangen door het e-mailadres waarvoor je 
 het verzoek wil indienen.
 
 ## Beschikbare parameters
 
 De volgende parameters kunnen toegevoegd worden aan de URL:
 
-* *report*: Het doel om het resultaat aan af te leveren; Dit kan een 
+* **report**: Het doel om het resultaat aan af te leveren; Dit kan een 
 e-mailadres of webadres zijn. Als je kiest om deze te e-mailen wordt de bijlage 
 toegevoegd als bijlage of als link als de bijlage te groot is. Als je ervoor 
 kiest een webadres te gebruiken wordt er een HTTP POST verzoek verstuurd met 
 de data naar het opgegeven adres.
 
-Als je ervoor kiest de report parameter niet te gebruiken kun je nog steeds 
+Als je ervoor kiest de **report** parameter niet te gebruiken kun je nog steeds 
 de data opvragen met een GET request. Dit wordt hieronder uitgelegd.
 
 ## Resultaat
@@ -36,9 +36,9 @@ Het resultaat van deze POST call is een uniek ID. Met dit ID kan je controleren
 of de data beschikbaar is en indien dit het geval is ook opvragen. Dit
 kan je doen door een HTTP GET verzoek te sturen naar de volgende URL
 
-`https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v2/datarequest/$id?access_token=xxxx`
 
-The code **$id** moet je vervangen door de unieke ID die je via het POST verzoek
+The code `$id` moet je vervangen door de unieke ID die je via het POST verzoek
 hebt gekregen. Let erop dat dit bestand uiteindelijk verloopt.
 
 Als de data nog niet beschikbaar is zal de data member in de JSON de tekst 
@@ -59,7 +59,7 @@ $data = array(
 );
 
 // voer de methode uit (vergeet de email niet)
-$api->get("email/$email/data", $data);
+$api->get("email/{$emailAdres}/data", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).

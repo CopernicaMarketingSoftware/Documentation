@@ -3,9 +3,9 @@
 Methode om een veld toe te voegen aan een bestaande database. Dit is een HTTP 
 POST call naar het volgende adres:
 
-`https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een veld aan wilt toevoegen. De naam van het veld en eventuele
 andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 
@@ -46,25 +46,25 @@ Een veld kan de volgende types hebben:
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica_rest_api.php');
 
-// change this into your access token
+// verander dit naar je access token
 $api = new CopernicaRestApi("your-access-token");
 
-// data to pass to the call
+// data voor het verzoek
 $data = array(
     'name'      =>  'extra-veld',
     'type'      =>  'text'
 );
 
-// do the call
-$api->post("database/id/fields", $data);
+// voer het verzoek uit
+$api->post("database/{$databaseID}/fields", $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

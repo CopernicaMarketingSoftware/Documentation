@@ -3,7 +3,7 @@
 If you want to modify multiple profiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier or the name
 of the database in which you want to modify profiles. The new field values
@@ -16,8 +16,8 @@ send a POST request, you [would be making a brand new profile](./rest-post-datab
 
 ## Supported parameters
 
-You must use two different ways to pass data to this method: via the URL and
-via the request body. You can pass the following parameters to the URL:
+You must use two different ways to pass data to this method; through the URL and
+the request body. You can pass the following parameters to the URL:
 
 * **fields**: required parameter to select the profiles that are going to be modified
 * **create**: boolean parameter that determines whether to create a new profile if none exist.
@@ -25,13 +25,13 @@ via the request body. You can pass the following parameters to the URL:
 If you set this to 1, the method immediately returns and proceeds in 
 the background with updating profiles.
 
-The *fields* parameter is required. By passing this parameter to the the method
+The **fields** parameter is required. By passing this parameter to the the method
 you prevent that you overwrite all your profiles with a single API call. Only
 the profiles that match with the supplied fields are modified. You can find more
 information about this parameter in [the article about this parameter](./rest-fields-parameter.md).
 
-If there are no profiles that match the supplied *fields*, and when you have set
-*create* to 1, the REST API creates a brand new profile using
+If there are no profiles that match the supplied **fields**, and when you have set
+**create** to 1, the REST API creates a brand new profile using
 the profile fields passed in the HTTP request body.
 
 Updating a large list of profiles can take a long time. If you do not want to
@@ -46,8 +46,9 @@ assign to matching profiles.
 
 ## PHP example
 
-This PHP script demonstrates how you can use this API call. In the script
-we modify the profile with ID 4567.
+This PHP script demonstrates how you can use this API call. In this specific 
+case we use the profile selection parameters to select the profile where the ID 
+field is set to 4567 and insert new profile data.
 
 ```php
 // dependencies
@@ -59,14 +60,14 @@ $api = new CopernicaRestApi("your-access-token");
 // declare the id of the database that you want to edit
 $id = 1;
 
-// data to pass to the call
+// body data to pass to the call (new profile data)
 $data = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
 );
 
-// parameters to select profiles
+// parameters for profile selection
 $parameters = array(
     'fields'    =>  array("customerid==4567"),
     'async'     =>  1,
@@ -74,7 +75,7 @@ $parameters = array(
 );
     
 // do the call
-$api->put("database/{$id}/profiles", $data, $parameters);
+$api->put("database/{$databaseID}/profiles", $data, $parameters);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

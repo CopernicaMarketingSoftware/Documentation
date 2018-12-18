@@ -5,7 +5,7 @@ methode die toegankelijk is via het volgende adres:
 
 `https://api.copernica.com/v1/database/$id?access_token=xxxx`
 
-De variabele **$id** in de URL moet worden vervangen door de numerieke identifier
+De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken.
 
 
@@ -41,11 +41,10 @@ $data = array(
 );
 
 // voer verzoek uit
-api->put("database/1234", $data);
+api->put("database/{$databaseID}", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

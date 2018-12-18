@@ -1,20 +1,22 @@
 # REST API: POST minirule conditions
 
-Een methode om condities voor een miniregel aan te passen. Deze methode ondersteunt geen parameters. De method kan aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
+Een methode om condities voor een miniregel aan te passen. De methode kan 
+aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
-`https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v2/minirule/$id/conditions?access_token=xxxx`
 
-De **$id** moet hier vervangen worden door de identifier van de miniregel waaraan je een conditie toe wilt voegen.
-
+De `$id` moet hier vervangen worden door de identifier van de miniregel 
+waaraan je een conditie toe wilt voegen.
 
 ## Beschikbare parameters
 
 De message body kan de volgende eigenschappen hebben voor een conditie:
 
-- type: type van de conditie
-- rule: numeriek ID van de miniregel waar de conditie toe hoort
+- **type**: type van de conditie
 
-De precieze eigenschappen hangen af van het type van de conditie. Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen die zij bezitten kunt u de volgende specifiekere artikels bekijken:
+De precieze eigenschappen hangen af van het type van de conditie. 
+Voor een overzicht van de ondersteunde voorwaarden en de eigenschappen 
+die zij bezitten kunt u de volgende specifiekere artikels bekijken:
 
 - [Veranderings voorwaarden](./rest-condition-type-change.md)
 - [Datum voorwaarden](./rest-condition-type-date.md)
@@ -49,12 +51,12 @@ $data = array(
 )
 
 // do the call, and print result
-$api->post("minirule/id/conditions", array(), $data);
+$api->post("minirule/{$regelID}/conditions", array(), $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

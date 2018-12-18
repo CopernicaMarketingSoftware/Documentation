@@ -3,7 +3,7 @@
 The HTTP POST method to add a profile to an existing database is 
 available at the following address:
 
-`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to add an profile to. 
@@ -42,7 +42,7 @@ $data = array(
 );
 
 // do the call
-$api->post("database/1234/profiles", $data);
+$api->post("database/{$databaseID}/profiles", $data);
 
 // return id of created request if successful
 ```

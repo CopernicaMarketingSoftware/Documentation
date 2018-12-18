@@ -13,9 +13,9 @@ this method returns.
 
 To create this data request you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v1/email/$email/datarequest?access_token=xxxx`
+`https://api.copernica.com/v2/email/$email/datarequest?access_token=xxxx`
 
-The code **email** should be replaced by the email address you want to retrieve 
+The code `email` should be replaced by the email address you want to retrieve 
 data of.
 
 ## Available parameters
@@ -37,9 +37,9 @@ The result of this POST call is a unique identifier. This identifier can be
 used to check if the data is already available by sending a HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v2/datarequest/$id?access_token=xxxx`
 
-The code **id** should be replaced with the identifier obtained from your
+The code `id` should be replaced with the identifier obtained from your
 HTTP POST request. Note that this file will expire eventually.
 
 If the data is not available yet the data member of the JSON will contain the 
@@ -60,7 +60,7 @@ $data = array(
 );
 
 // process the request (don't forget to add the email!)
-$api->post("email/email/datarequest", $data)
+$api->post("email/{$emailAddress}/datarequest", $data)
 ```
 This example requires the [REST API class](./rest-php).
 
@@ -69,7 +69,7 @@ This example requires the [REST API class](./rest-php).
 The JSON with all available information. If the data is available, the
 JSON contains two members, **info** and **data**. The info member has also 
 two members **type** and **id**.  The type provides the type of info which 
-can be **email**, **profile**, or  **subprofile**, the **id** is the email
+can be **email**, **profile**, or **subprofile**, the **id** is the email
 address or the numeric identifier of the profile or subprofile. 
 
 The data member in the JSON contains an array of arrays with all the info 

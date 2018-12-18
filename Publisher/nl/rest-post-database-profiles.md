@@ -3,17 +3,16 @@
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
 naar de volgende URL.
 
-`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
 kun je in de body van het HTTP request plaatsen.
 
 Zorg ervoor dat je hier een POST request stuurt en geen PUT request. 
 Hoewel deze vaak niet verschillen zou je in dit geval een methode 
-aanroepen om meerdere profielen te bewerken, zie 
-[meerdere profielen te bewerken](rest-put-database-profiles).
-
+aanroepen om meerdere profielen te bewerken, zie de 
+[methode om meerdere profielen te bewerken](rest-put-database-profiles).
 
 ## Beschikbare parameters
 
@@ -41,13 +40,12 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("database/1234/profiles", $data);
+$api->post("database/{$databaseID}/profiles", $data);
 
 // retourneer het ID van het aangemaakte profiel indien het verzoek succesvol uitgevoerd is
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

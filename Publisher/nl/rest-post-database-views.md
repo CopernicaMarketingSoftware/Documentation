@@ -7,11 +7,9 @@ database aangemaakt.
 
 `https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke 
-identifier of de naam van de database waar je een 
-selectie aan wilt toevoegen. De naam van de selectie 
-moet als message body aan het HTTP request worden 
-toegevoegd.
+De code `$id` moet je vervangen door de numerieke identifier of de naam 
+van de database waar je een selectie aan wilt toevoegen. De naam van de selectie 
+moet als message body aan het HTTP request worden toegevoegd.
 
 
 ## Beschikbare parameters
@@ -19,25 +17,17 @@ toegevoegd.
 De volgende variabele moet in de body van de HTTP 
 POST call worden geplaatst.
 
-- name:             naam van de nieuw aan te maken 
-selectie (verplicht);
-- description:      beschrijving van de nieuwe 
-selectie;
-- parent-type:      geeft aan of de selectie onder 
-een onder selectie of de database is geplaatst;
-- parent-id:        id van de selectie/database waar 
-de selectie onder valt;
-- has-children:     boolean value die aangeeft of er 
-selecties onder deze selectie vallen;
-- has-referred:     boolean value om aan te geven of 
-andere selecties naar deze selectie refereren;
-- has-rules:        boolean value om aan te geven of 
-deze selectie regels heeft.
+- name:             naam van de nieuw aan te maken selectie (verplicht);
+- description:      beschrijving van de nieuwe selectie;
+- parent-type:      geeft aan of de selectie onder een onder selectie of de database is geplaatst;
+- parent-id:        id van de selectie/database waar de selectie onder valt;
+- has-children:     boolean value die aangeeft of er selecties onder deze selectie vallen;
+- has-referred:     boolean value om aan te geven of andere selecties naar deze selectie refereren;
+- has-rules:        boolean value om aan te geven of deze selectie regels heeft.
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API 
-methode kunt aanroepen:
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
 // vereiste scripts
@@ -54,12 +44,12 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("database/id/views", $data);
+$api->post("database/{$databaseID}/views", $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

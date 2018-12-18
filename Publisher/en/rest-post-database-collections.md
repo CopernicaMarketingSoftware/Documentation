@@ -4,7 +4,7 @@ A collection is similar to a second layer within the database. To add such
 a collection to an existing database you can send an HTTP POST request to 
 the following URL:
 
-`https://api.copernica.com/v1/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/collections?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to add an collection to. The name of the 
@@ -37,7 +37,7 @@ $data = array(
 );
 
 // do the call
-$api->post("database/1234/interests", $data);
+$api->post("database/{$databaseID}/interests", $data);
 
 // return id of created request if successful
 ```

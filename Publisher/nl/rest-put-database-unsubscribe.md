@@ -8,12 +8,11 @@ of moet het profiel worden aangepast?
 Om deze instelling door middel van een API call in te stellen, kun je een
 HTTP PUT request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/database/$id/unsubscribe?access_token=XXX`
+`https://api.copernica.com/v2/database/$id/unsubscribe?access_token=XXX`
 
-De variabele **$id** in de URL moet worden vervangen door de numerieke identifier
+De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken. De nieuwe instelling moet
 je in de body van het HTTP request plaatsen.
-
 
 ## Beschikbare parameters
 
@@ -23,14 +22,21 @@ geplaatst:
 * **behavior**: de nieuwe instelling van het afmeldgedrag. Ondersteunde waardes zijn "nothing", "remove" en "update". 
 * **fields**: optioneel associatief array / object met daarin de nieuwe veldwaardes
 
-De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij 'remove' wordt het profiel uit de database verwijderd en bij 'update' wordt het profiel geüpdate om aan te geven dat deze klant geen email meer wil ontvangen. Op deze manier blijft de klant wel in de database staan. De "fields" instelling geeft nieuwe veldwaardes in het geval dat het profiel geüpdate wordt. In de andere gevallen heeft deze parameter dus geen nut.
-
+De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. 
+Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij 
+'remove' wordt het profiel uit de database verwijderd en bij 'update' 
+wordt het profiel geüpdate om aan te geven dat deze klant geen email 
+meer wil ontvangen. Op deze manier blijft de klant wel in de database 
+staan. De "fields" instelling geeft nieuwe veldwaardes in het geval 
+dat het profiel geüpdate wordt. In de andere gevallen heeft deze 
+parameter dus geen nut.
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. In
 het voorbeeld wordt ingesteld dat, als iemand zich afmeldt, het veld 'newsletter'
-op 'no' wordt gezet:
+op 'no' wordt gezet. Je kunt dit bijvoorbeeld gebruiken om een 
+[nieuwsbrief selectie](./create-a-mailing-list) aan te maken.
 
 ```php
 // vereiste scripts
@@ -46,11 +52,10 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("database/1234", array(), $data);
+api->put("database/{$databaseID}", array(), $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

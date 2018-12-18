@@ -4,11 +4,11 @@ Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar
 de volgende URL te sturen:
 
-`https://api.copernica.com/v1/database/$id/field/$id?access_token=XXX`
+`https://api.copernica.com/v2/database/$id/field/$id?access_token=XXX`
 
-De eerste **$id** variabele in de URL moet worden vervangen door de numerieke 
+De eerste `$id` variabele in de URL moet worden vervangen door de numerieke 
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
-tweede **$id** variabele bevat de naam of het ID van het veld.
+tweede `$id` variabele bevat de naam of het ID van het veld.
 
 
 ## Beschikbare parameters
@@ -16,7 +16,7 @@ tweede **$id** variabele bevat de naam of het ID van het veld.
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
-* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
+* **name**: Naam van het nieuw aan te maken veld (verplicht)
 * **type**: Type van het nieuwe veld
 * **value**: Standaardwaarde van het nieuwe veld
 * **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken
@@ -28,7 +28,6 @@ geplaatst:
 
 Dit zijn precies dezelfde velden die ook worden ondersteund door de
 [methode om nieuwe velden aan te maken](./rest-post-database-fields).
-
 
 ## Voorbeeld in PHP
 
@@ -47,11 +46,10 @@ $data = array(
 );
 
 // do the call
-api->put("database/1234/field/456", $data);
+api->put("database/{$databaseID}/field/{veldID}", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 
