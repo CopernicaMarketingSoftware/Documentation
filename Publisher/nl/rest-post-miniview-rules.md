@@ -1,11 +1,14 @@
 # REST API: POST miniview rules
 
-Deze methode voegt een regel toe aan een bestaande selectie van een collectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
+Deze methode voegt een regel toe aan een bestaande selectie van een collectie. 
+Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden 
+naar de volgende URL:
 
-`https://api.copernica.com/v1/miniview/$id/minirules?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id/minirules?access_token=xxxx`
 
-De **$id** moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
-
+De `$id` moet hier vervangen worden door de ID van de selectie waar een 
+regel aan toegevoegd moet worden. De naam van de regel en de andere waarden 
+moeten toegevoegd worden aan de message body.
 
 ## Beschikbare parameters
 
@@ -16,7 +19,6 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 - **conditions**: Array van condities waar profielen binnen de selectie aan moeten voldoen, zoals bepaalde waarden in bepaalde velden
 - **inversed**: Boolean waarde die met waarde "True" alleen profielen teruggeeft die juist *niet* aan de regel voldoen
 - **disabled**: Boolean waarde die aangeeft of de regel wel of niet uitgeschakeld is
-
 
 ## Voorbeeld in PHP
 
@@ -37,11 +39,11 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("miniview/1234/rules", $data);
+$api->post("miniview/{$miniviewID}/rules", $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 
 ## Meer informatie

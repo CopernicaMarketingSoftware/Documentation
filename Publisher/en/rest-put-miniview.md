@@ -3,7 +3,7 @@
 A miniview is for a collection what a selection is on a database. To 
 edit a miniview an HTTP PUT request can be sent to the following URL:
 
-`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id?access_token=xxxx`
 
 The `$id` is the ID of the miniview you want to edit.
 
@@ -29,16 +29,13 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// declare the id of the selection that you want to edit
-$id = 1;
-
 // data to be sent to the api
 $data = array(
    	'description'   =>  'a new description',
 );
 
 // do the call, and print result
-print_r($api->put("miniview/{$id}", $data));
+print_r($api->put("miniview/{$miniviewID}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

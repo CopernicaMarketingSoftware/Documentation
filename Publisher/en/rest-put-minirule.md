@@ -4,7 +4,7 @@ A minirule is to a miniview what a rule is to a view. A method to edit
 the properties of an existing minirule can be called by sending an HTTP 
 PUT request to the following URL:
 
-`https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
 
 The `$id` needs to be replaced with the ID of the minirule you want to 
 edit the properties of.
@@ -41,7 +41,7 @@ $data = array(
 );
 
 // do the call, and print result
-print_r($api->put("minirule/{$id}", $data));
+print_r($api->put("minirule/{$ruleID}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

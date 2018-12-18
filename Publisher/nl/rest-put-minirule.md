@@ -4,10 +4,9 @@ Een minirule is voor een miniview wat een regel is voor een selectie.
 Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT 
 verzoek verstuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
 
-De **$id** moet aangepast worden naar de ID van de minirule die je aan wilt passen.
-
+De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 
 ## Beschikbare parameters
 
@@ -18,7 +17,6 @@ De volgende parameters kunnen in de message body geplaatst worden:
 - conditions: 	array van condities voor de regel;
 - inversed: 	boolean waarde die aangeeft of de regel geïnverteerd moet worden of niet. Als deze op "True" staat worden alleen profielen die *niet* aan de condities voldoen teruggegeven;
 - disabled: 	boolean waarde om aan te geven of de regel uitgeschakeld moet worden of niet.
-
 
 ## Voorbeeld in PHP
 
@@ -37,11 +35,10 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("minirule/1234", array(), $data));
+print_r($api->put("minirule/{$miniruleID}", array(), $data));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie 
 
