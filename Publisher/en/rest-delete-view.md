@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a selection of profiles:
 
-`https://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id?access_token=xxxx`
 
 The `$id` needs to be replaced by the numerical identifier of the selection
 that you want to remove. With this method you only remove the selection, and
@@ -23,7 +23,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call
-$api->delete("view/1234");
+$api->delete("view/{viewID}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

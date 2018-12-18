@@ -2,9 +2,11 @@
 
 Een miniview kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id?access_token=xxxx`
 
-De **$id** hier moet vervangen worden door de ID van de selectie die je wilt verwijderen. Let op dat je alleen de miniview verwijderd op deze manieren, alle profielen die het bevat blijven bestaan.
+De `$id` hier moet vervangen worden door de ID van de selectie die je wilt verwijderen. 
+Let op dat je alleen de miniview verwijderd op deze manieren, 
+alle profielen in de miniview blijven bestaan.
 
 
 ## Voorbeeld in PHP
@@ -19,10 +21,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit
-$api->delete("miniview/id");
+$api->delete("miniview/{$miniviewID}");
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

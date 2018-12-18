@@ -2,9 +2,9 @@
 
 Een regel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/rule/$id?access_token=xxxx`
 
-De **$id** moet vervangen worden door de ID van de regel die je wilt verwijderen.
+De `$id` moet vervangen worden door de ID van de regel die je wilt verwijderen.
 
 ## Voorbeeld in PHP
 
@@ -18,10 +18,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit
-$api->delete("rule/id");
+$api->delete("rule/{$regelID}");
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

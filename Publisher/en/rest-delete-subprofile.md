@@ -1,11 +1,11 @@
-# REST API: DELETE minirule
+# REST API: DELETE subprofile
 
 When you send an HTTP DELETE request to the following URL, you’ll delete 
-a minirule:
+a subprofile:
 
-`https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id?access_token=xxxx`
 
-The `$id` needs to be replaced by the numerical identifier of the minirule
+The `$id` needs to be replaced by the numerical identifier of the profile
 that you want to remove.
 
 ## PHP example
@@ -20,7 +20,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call
-$api->delete("minirule/{$miniruleID}");
+$api->delete("subprofile/{$subprofileID}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -28,5 +28,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all API calls](rest-api)
-* [GET minirule](rest-get-minirule)
-* [PUT minirule](rest-put-minirule)

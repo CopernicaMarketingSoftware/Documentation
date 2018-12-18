@@ -2,9 +2,10 @@
 
 Deze methode verwijdert een veld uit een collectie. De methode kan aangeroepen worden met een HTTP DELETE verzoek aan de volgende URL:
 
-`https://api.copernica.com/v1/collection/$id/field/$id?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/field/$id?access_token=xxxx`
 
-De eerste **$id** moet vervangen worden door de numerieke identifier van de collectie. De tweede **$id** moet vervangen worden door de ID of de naam van het veld dat je wilt verwijderen.
+De eerste `$id` moet vervangen worden door de numerieke identifier van de collectie. 
+De tweede `$id` moet vervangen worden door de ID of de naam van het veld dat je wilt verwijderen.
 
 ## Voorbeeld in PHP
 Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken met de API:
@@ -17,10 +18,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de methode uit
-$api->delete("collection/id/field/id");
+$api->delete("collection/{$collectieID}/field/{$veldID}");
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

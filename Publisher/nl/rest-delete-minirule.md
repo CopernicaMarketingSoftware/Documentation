@@ -2,10 +2,9 @@
 
 Een miniregel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
 
-De **$id** moet vervangen worden door de ID van de miniregel die je wilt verwijderen.
-
+De `$id` moet vervangen worden door de ID van de miniregel die je wilt verwijderen.
 
 ## Voorbeeld in PHP
 
@@ -19,15 +18,14 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit
-$api->delete("minirule/id");
+$api->delete("minirule/{$miniruleID}");
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
-
-## More information
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Creeeren van een minirule](rest-get-minirule)
+* [Creëren van een minirule](rest-get-minirule)
 * [Een minirule aanpassen](rest-put-minirule)
 

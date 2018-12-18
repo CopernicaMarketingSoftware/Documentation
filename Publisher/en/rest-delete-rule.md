@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a rule:
 
-`https://api.copernica.com/v1/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/rule/$id?access_token=xxxx`
 
 The `$id` needs to be replaced by the numerical identifier of the rule
 that you want to remove.
@@ -20,7 +20,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call
-$api->delete("rule/1234");
+$api->delete("rule/{$ruleID}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
