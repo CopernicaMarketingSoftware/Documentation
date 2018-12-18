@@ -12,16 +12,16 @@ returns.
 
 To create this data request you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v1/subprofile/$id/datarequest?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/datarequest?access_token=xxxx`
 
-The code *id* should be replaced by the numerical identifier of the subprofile 
+The code `$id` should be replaced by the numerical identifier of the subprofile 
 you want to request the data for.
 
 ## Available parameters
 
 The following parameters can be added to the URL:
 
-* *report*: The target to report to. This target can either be an email address or 
+* **report**: The target to report to. This target can either be an email address or 
 a web address. If the target is an email address and the file is small enough the 
 JSON file will be added as an attachment to the email, otherwise a link will 
 be provided to download the data. If you choose to use a web address an 
@@ -36,9 +36,9 @@ The result of this POST call is a unique identifier. This identifier can be
 used to check if the data is already available by sending a HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v2/datarequest/$id?access_token=xxxx`
 
-The code **id** should be replaced with the identifier obtained from your
+The code `$id` should be replaced with the identifier obtained from your
 HTTP POST request. Note that this file will expire eventually.
 
 If the data is not available yet the data member of the JSON will contain the 
@@ -59,7 +59,7 @@ $data = array(
 );
 
 // process the request (don't forget to add the ID!)
-$api->post("subprofile/$id/datarequest", $data);
+$api->post("subprofile/{$subprofileID}/datarequest", $data);
 ```
 This example requires the [REST API class](./rest-php).
 
