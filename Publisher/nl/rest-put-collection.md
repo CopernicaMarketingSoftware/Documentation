@@ -3,11 +3,10 @@
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 
-`https://api.copernica.com/v1/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id?access_token=xxxx`
 
-De variabele **$id** in de URL moet worden vervangen door de numerieke identifier
+De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.
-
 
 ## Beschikbare parameters
 
@@ -17,7 +16,6 @@ geplaatst:
 * **name**: de optionele nieuwe naam van de collectie
 * **database**: de ID van de database waar de collectie in staat
 * **fields**: velden in de collectie
-
 
 ## Voorbeeld in PHP
 
@@ -36,11 +34,10 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("collection/1234", $data);
+api->put("collection/{$collectionID}", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

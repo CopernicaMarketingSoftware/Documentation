@@ -3,25 +3,24 @@
 Methode om een veld toe te voegen aan een bestaande collectie. Dit is een HTTP 
 POST call naar het volgende adres:
 
-`https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de collectie
+De code `$id` moet je vervangen door de numerieke identifier van de collectie
 waar je een veld aan wilt toevoegen. De naam van het veld, en eventuele
 andere waardes moeten als message body aan het HTTP request worden toegevoegd.
-
 
 ## Beschikbare parameters
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
-* **name**: Naam van het nieuw aan te maken veld. Dit veld is verplicht
+* **name**: Naam van het nieuw aan te maken veld (verplicht)
 * **type**: Type van het nieuwe veld
 * **value**: Standaardwaarde van het nieuwe veld
 * **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken
 * **length**: Maximum lengte voor teksten
 * **index**: Boolean waarde of een index op het veld moet worden aangemaakt
 * **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
-* **hidden**: Boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface
+* **hidden**: Boolean waarde om aan te geven dat een veld nooit zichtbaar mag zijn in de user interface
 * **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
 
 Een veld kan de volgende types hebben:
@@ -41,8 +40,7 @@ Een veld kan de volgende types hebben:
 * **big**: groot tekstveld
 * **foreign_key**: numerieke waarde met verwijzing naar ander profiel
 
-
-## Voorbeeld
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
@@ -60,11 +58,10 @@ $data = array(
 );
 
 // do the call
-$api->post("collection/1234/fields", $data);
+$api->post("collection/{$collectieID}/fields", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

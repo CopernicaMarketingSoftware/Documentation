@@ -1,10 +1,10 @@
 # REST API: POST collection miniviews
 
 In order to create a new selection using the REST API, you need to send 
-a HTTP POST request to the following URL. The selection will then be 
+an HTTP POST request to the following URL. The selection will then be 
 created, nested underneath the collection.
 
-`https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/miniviews?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the collection you want to add a selection to. The name of the selection 
@@ -38,7 +38,7 @@ $data = array(
 );
 
 // do the call
-$api->post("collection/1234/miniviews", $data);
+$api->post("collection/{$collectionID}/miniviews", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

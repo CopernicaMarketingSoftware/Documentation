@@ -2,13 +2,13 @@
 
 For every collection you may also set the unsubscribe settings separately. 
 When Copernica’s servers receive an unsubscription the unsubscribe 
-behaviour determines what happens with the profile: should it be edited 
+behavior determines what happens with the profile: should it be edited 
 or removed?
 
 To set this algorithm using an API call, make an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v1/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/unsubscribe?access_token=xxxx`
 
 In this, the variable `$id` has to be replaced by the numerical identifier 
 of the collection you wish to set the unsubscribe behaviour for. The 
@@ -31,7 +31,9 @@ wish not to receive more email.
 ## PHP example
 
 The following PHP script demonstrates how to use the method. In this 
-example, when somebody unsubscribes, the field ‘newsletter’ is set to ‘no’.
+example, when somebody unsubscribes, the field ‘newsletter’ is set to ‘no’. 
+Now you can create a [newsletter selection](./create-a-mailing-list) to make 
+sure your unsubscribers don't receive any more email.
 
 ```php
 // dependencies
@@ -50,7 +52,7 @@ $data = array(
 );
 
 // do the call
-$api->put("collection/{$id}/unsubscribe", $data);
+$api->put("collection/{$collectionID}/unsubscribe", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

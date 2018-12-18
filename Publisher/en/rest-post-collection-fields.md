@@ -3,9 +3,9 @@
 Method to add a field to an existing collection. This is an HTTP 
 POST call to the following URL:
 
-`https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/fields?access_token=xxxx`
 
-The $id should be replaced by the ID of the collection you want to add a
+The `$id` should be replaced by the ID of the collection you want to add a
 field to. The name of the field and other values should be added to the 
 message body. After a successful call the ID of the created request is returned.
 
@@ -58,7 +58,7 @@ $data = array(
 );
     
 // do the call
-$api->post("collection/1234/fields", $data);
+$api->post("collection/{$collectionID}/fields", $data);
 
 // return id of created request if successful
 ```

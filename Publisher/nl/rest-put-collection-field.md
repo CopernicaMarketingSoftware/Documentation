@@ -1,11 +1,13 @@
 # REST API: PUT collection field
 
-Methode om een bepaald veld in een collectie aan te passen. Om deze methode uit te voeren kun je een HTTP PUT verzoek sturen aan de volgende URL:
+Methode om een bepaald veld in een collectie aan te passen. 
+Om deze methode uit te voeren kun je een HTTP PUT verzoek sturen aan de volgende URL:
 
-`https://api.copernica/com/v1/collection/$id/field/$id?access_token=xxxx`
+`https://api.copernica/com/v2/collection/$id/field/$id?access_token=xxxx`
 
-De eerste **$id** is de collectie waarvan je het veld aan wilt passen en de tweede **$id** is de ID van het veld dat je aan wilt passen. De rest van de informatie voor het veld moet toegevoegd worden aan de message body van het HTTP verzoek.
-
+De eerste `$id` is de collectie waarvan je het veld aan wilt passen en 
+de tweede `$id` is de ID van het veld dat je aan wilt passen. 
+De rest van de informatie voor het veld moet toegevoegd worden aan de message body van het HTTP verzoek.
 
 ## Beschikbare parameters
 
@@ -24,7 +26,7 @@ De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.  somebody unsubscribes, the field ‘newsletter’ is set to ‘no’.
+Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.
 
 ```php
 // dependencies
@@ -39,10 +41,10 @@ $data = array(
 );
 
 // do the call
-api->put("collection/1234/field", array(), $data);
+api->put("collection/{$collectieID}/field", array(), $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 
 ## Meer informatie
