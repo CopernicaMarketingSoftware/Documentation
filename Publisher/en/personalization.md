@@ -120,7 +120,7 @@ And you can calculate:
 It's possible to extend the hyperlinks in your emails with data
 from a profile or subprofile. You can use unique credentials such as 
 (`$profile.id` and `$profile.code`) that you can incorporate in a hyperlink. 
-You can make a landing page that recognizes the ID and CODE. Than when users 
+You can make a landing page that recognizes the ID and CODE. Then when users 
 click on that hyperlink, they can be automatically logged in on the page the
 hyperlink points to. 
 
