@@ -244,7 +244,7 @@ in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve
 de *keys*.
 Gebruik:
 ```text
-{hash($text, 'sha256')}
+{hash('sha256', $text)}
 ```
 
 ## sha512
@@ -255,7 +255,7 @@ in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve
 de *keys*.
 Gebruik:
 ```text
-{hash($text, 'sha512')}
+{hash('sha512', $text)}
 ```
 
 ## spacify
