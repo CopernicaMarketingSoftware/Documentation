@@ -244,7 +244,7 @@ shown in the example below. If the variable is an array the SHA256 hash
 will be calculated over the entire array, excluding the keys.
 Usage:
 ```text
-{hash($text, 'sha256')}
+{hash('sha256', $text)}
 ```
 
 ## sha512
@@ -255,7 +255,7 @@ shown in the example below. If the variable is an array the SHA512 hash
 will be calculated over the entire array, excluding the keys.
 Usage:
 ```text
-{hash($text, 'sha512')}
+{hash('sha512', $text)}
 ```
 
 ## spacify
