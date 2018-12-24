@@ -3,11 +3,10 @@
 Je kunt collecties van een database opvragen middels een HTTP GET 
 request:
 
-`https://api.copernica.com/v1/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/collections?access_token=xxxx`
 
-De **$id** moet je vervangen door de numerieke identifier of de naam van 
+De `$id` moet je vervangen door de numerieke identifier of de naam van 
 de database waar je de collecties van wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -20,7 +19,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van collecties in de database. Voor elke collectie
@@ -30,12 +28,6 @@ worden de volgende eigenschappen teruggegeven:
 * name: 		naam van de collectie;
 * database: 	numerieke identifier van de database waartoe de collectie behoort;
 * fields: 		array van velden binnen de collectie.
-
-De *fields* property bevat een array van de velden in de collectie. Elke veld
-in dit array is ook een object. Zie de documentatie van de 
-[methode om velden op te vragen](./rest-get-collection-fields) voor de betekenis
-van deze geneste data.
-
 
 ## Voorbeeld in PHP
 
@@ -54,11 +46,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("database/1234/collections", $parameters));
+print_r($api->get("database/{$databaseID}/collections", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
     
 ## Meer informatie
 

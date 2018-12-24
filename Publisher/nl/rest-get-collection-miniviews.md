@@ -6,7 +6,7 @@ kun je een HTTP GET request naar het volgende adres sturen:
 
 `https://api.copernica.com/v1/collection/$id/miniviews?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
 
 ## Beschikbare parameters
@@ -32,7 +32,6 @@ worden de volgende eigenschappen teruggegeven:
 * parent-id:        id van de collectie waar deze miniselectie onder valt.
 * collection:       id van de collectie waar deze miniselectie onder valt.
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -50,11 +49,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print de resultaten
-print_r($api->get("collection/id/miniviews", $parameters));
+print_r($api->get("collection/{$collectieID}/miniviews", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

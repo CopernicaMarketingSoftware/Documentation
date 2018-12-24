@@ -3,11 +3,10 @@
 Een overzicht van alle beschikbare interesses in een database kun je opvragen
 met de volgende URL:
 
-`https://api.copernica.com/v1/database/$id/interests?access_token=xxx`
+`https://api.copernica.com/v2/database/$id/interests?access_token=xxx`
 
-De variabele **$id** moet je vervangen door de numerieke identifier of de naam
+De variabele `$id` moet je vervangen door de numerieke identifier of de naam
 van de database waar je de interesses van wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -20,7 +19,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van interesses in de database. Voor elke interesse
@@ -29,7 +27,6 @@ worden de volgende eigenschappen teruggegeven:
 * **ID**: numeriek ID van de interesse
 * **name**: naam van de interesse
 * **group**: naam van de interessegroep waar de interesse bij hoort
-
 
 ## Voorbeeld in PHP
 
@@ -48,11 +45,10 @@ $parameters = array(
 );
 
 // voer methode uit en print resultaat
-print_r($api->get("database/1234/interests", $parameters));
+print_r($api->get("database/{$databaseID}/interests", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
     
 ## Meer informatie
 

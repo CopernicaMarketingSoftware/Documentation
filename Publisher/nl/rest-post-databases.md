@@ -5,13 +5,11 @@ naar het volgende adres:
 
 `https://api.copernica.com/v1/databases?access_token=xxxx`
 
-
 ## Beschikbare parameters
 
 * **name**: naam van de nieuw aan te maken database
 * **description**: optionele omschrijving van de database
 * **archived**: optionele boolean waarde om de database direct te archiveren
-
 
 ## Voorbeeld in PHP
 
@@ -34,8 +32,7 @@ $data = array(
 $api->post("databases", $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

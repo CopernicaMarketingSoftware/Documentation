@@ -3,11 +3,10 @@
 Methode om een overzicht op te vragen van alle beschikbare velden in een database. 
 Dit is een HTTP GET call naar het volgende adres:
 
-`https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier of de naam van de 
+De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de velden van wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -19,7 +18,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -36,7 +34,6 @@ worden de volgende eigenschappen teruggegeven:
 * **textlines**: voor meerregelige velden: het aantal regels dat beschikbaar is om het veld te bewerken
 * **hidden**: boolean waarde of dit veld verborgen is en *nooit* wordt getoond in de user interface
 * **index**: boolean waarde die aangeeft of er een index bijgehouden word (dit maakt lookups en selecties sneller)
-
 
 ## Voorbeeld in PHP
 
@@ -55,11 +52,10 @@ $parameters = array(
 );
 
 // voer methode uit en print resultaat
-print_r($api->get("database/1234/fields", $parameters));
+print_r($api->get("database/{$databaseID}/fields", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

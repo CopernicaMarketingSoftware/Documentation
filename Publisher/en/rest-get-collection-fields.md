@@ -4,7 +4,7 @@ A collection is a nested second layer within a database, that also contains
 fields. To fetch these fields an HTTP GET request can be made to the following
 URL:
 
-`https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/fields?access_token=xxxx`
 
 The `$id` should be replaced by the unique numerical identifier of the collection
 you want to get the fields from.
@@ -47,7 +47,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("collection/1234/fields", $parameters));
+print_r($api->get("collection/{$collectionID}/fields", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

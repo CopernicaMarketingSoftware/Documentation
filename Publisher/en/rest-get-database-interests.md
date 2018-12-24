@@ -20,12 +20,13 @@ More information on the meaning of these parameters can be found
 [in the article on paging](rest-paging).
 
 ## Returned fields
+
 The method returns a list of interests in the database. For each interest 
 the following properties are returned:
 
-- **ID**: numerical ID of the interest
-- **name**: the name of the interest
-- **group**: the group the interest belongs to
+- **ID**:       The ID of the interest
+- **name**:     The name of the interest
+- **group**:    The group the interest belongs to
 
 ## PHP example
 
@@ -44,7 +45,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("database/1234/interests", $parameters));
+print_r($api->get("database/{$databaseID}/interests", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

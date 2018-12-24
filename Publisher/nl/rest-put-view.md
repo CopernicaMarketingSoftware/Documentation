@@ -3,11 +3,10 @@
 Methode om de properties van een selectie bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v1/view/$id?access_token=XXX`
+`https://api.copernica.com/v2/view/$id?access_token=XXX`
 
-De variabele **$id** in de URL moet worden vervangen door de numerieke identifier
+De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de selectie die je wilt bewerken.
-
 
 ## Beschikbare parameters
 
@@ -40,11 +39,10 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("view/1234", $parameters, $data);
+api->put("view/{$viewID}", $parameters, $data);
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

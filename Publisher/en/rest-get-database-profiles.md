@@ -1,10 +1,12 @@
 # REST API: GET database profiles
 
-The method to request profiles in a database is an HTTP GET request and available at the following address:
+The method to request profiles in a database is an HTTP GET request and 
+available at the following address:
 
-`https://api.copernica.com/v1/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier, the ID, of the database you want to request profiles from.
+In this, `$id` should be replaced by the numerical identifier, the ID, 
+of the database you want to request profiles from.
 
 ## Available parameters
 
@@ -17,12 +19,20 @@ The following parameters can be added to the URL as variables:
 - **orderby**: name or id of the field you want to use to sort the returned profiles
 - **order**: whether the profiles should be ordered in ascending or descending order.
 
-More information on the meaning of start, limit and total parameters can be found in the [article on paging](rest-paging).
+More information on the meaning of start, limit and total parameters can 
+be found in the [article on paging](rest-paging).
 
-The *fields* parameter can be used to select profiles. For example, if you only want to request profiles where the field “country” equals “The Netherlands”, you can do so using “fields”. More information on this parameter can be found in the [article on the “fields” parameter](rest-fields-parameter).
+The **fields** parameter can be used to select profiles. For example, 
+if you only want to request profiles where the field “country” equals 
+“The Netherlands”, you can do so using “fields”. More information on 
+this parameter can be found in the 
+[article on the “fields” parameter](rest-fields-parameter).
 
-The *order* variable can have the name or the ID of a field assigned to it. When you do so, profiles are sorted by the value in that field. 
-Instead of a field to sort on, you can also assign one of the following special values to “order”:
+The **order** variable can have the name or the ID of a field assigned to 
+it. When you do so, profiles are sorted by the value in that field. 
+Instead of a field to sort on, you can also assign one of the following 
+special values to “order”:
+
 - **id**: this is the default value, profiles are sorted by ID.
 - **random**: profiles are returned in random order
 - **modified**: profiles are sorted on the timestamp they were last modified on.
@@ -41,9 +51,7 @@ The method returns a list of profiles. For each profile, the following propertie
 
 ## PHP example
 
-The following script demonstrates how to use this method. Because we use 
-the CopernicaRestApi class, you don’t have to worry about escaping 
-special characters in the URL; it is done automatically.
+The following script demonstrates how to use this method.
 
 ```php
 // dependencies
@@ -60,7 +68,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("database/1234/profiles", $parameters));`
+print_r($api->get("database/{$databaseID}/profiles", $parameters));`
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

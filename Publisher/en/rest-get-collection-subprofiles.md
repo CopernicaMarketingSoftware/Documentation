@@ -1,9 +1,9 @@
 # REST API: GET collection subprofiles
 
-The method to fetch subprofiles from a collection is an HTTP GET method which is
-available on the following URL:
+You can request all subprofiles from a collection with an HTTP GET call 
+to the following URL:
 
-`https://api.copernica.com/v1/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the collection you
 want to fetch the subprofiles of.
@@ -19,7 +19,7 @@ The following parameters can be added to the URL as variables for the call:
 * **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
 * **order**: Ascending (asc) or descending (desc) order.
 
-More information on the *start*, *limit* and *total* parameters can be found in 
+More information on the **start**, **limit** and **total** parameters can be found in 
 the [article on paging](rest-paging).
 
 The parameter fields can be used to select subprofiles. In case you only want 
@@ -48,9 +48,7 @@ This method returns a list of subprofiles containing the following properties:
 
 ## PHP Example
 
-The following PHP script demonstrates how to call the API method. There is no 
-need to escape special characters from the API, because this is done by the 
-CopernicaRestApi class.
+The following PHP script demonstrates how to call the API method.
 
 ```php
 // dependencies
@@ -67,7 +65,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("collection/1234/subprofiles", $parameters));
+print_r($api->get("collection/{$collectionID}/subprofiles", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

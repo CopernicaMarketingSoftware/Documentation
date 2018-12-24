@@ -4,11 +4,10 @@ Dit is een methode om meta gegevens van een database op te vragen.
 Deze methode ondersteunt geen parameters. De methode is aan te 
 roepen met een HTTP GET request naar de volgende URL:
 
-`https://api.copernica.com/v1/database/$id?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id?access_token=xxxx`
 
-Als **$id** kun je de numerieke identifier van een database opgeven, of de naam
+Als `$id` kun je de numerieke identifier van een database opgeven, of de naam
 van een database.
-
 
 ## Geretourneerde velden
 
@@ -28,7 +27,6 @@ collections op te vragen:
 * [GET interests](rest-get-database-interests)
 * [GET collections](rest-get-database-collections) 
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -41,11 +39,10 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de opdracht uit en print het resultaat
-print_r($api->get("database/id"));
+print_r($api->get("database/{$databaseID}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

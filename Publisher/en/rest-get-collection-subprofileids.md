@@ -3,7 +3,7 @@
 This is a simple method to fetch all IDs of subprofiles in a collection.
 To use the method send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/collection/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/subprofileids?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the collection
 you want to get the IDs of.
@@ -29,7 +29,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("collection/1234/subprofileids"));
+print_r($api->get("collection/{$collectionID}/subprofileids"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).   

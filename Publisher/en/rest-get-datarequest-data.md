@@ -1,23 +1,22 @@
 # REST API: GET data request data
 
-With this request you can get the data of your data request.
+You can request the data of your data request by sending an HTTP GET call 
+to the following URL:
 
-To make this request you send an HTTP GET request to the following URL:
-
-`https://api.copernica.com/v1/datarequest/$id/data?access_token=xxxx`
+`https://api.copernica.com/v2/datarequest/$id/data?access_token=xxxx`
 
 where `$id` is the request identifier of interest. You may first want to
 check if the data is available with the [data request status](/rest-get-datarequest-status).
 
-
-## Return value
+## Returned fields
 
 A file containing a JSON with all available information. The
-JSON contains two members, *info* and *data*. The info member has also 
-two members *type* and *id*.  The type provides the type of info, which 
-can be *email*, *profile*, or  *subprofile*, the *id* is the email
-address, or the numeric identifier of the profile or subprofile. The data
-member in the JSON contains an array of arrays with all the info we have
+JSON contains two members, **info** and **data**. The info member has also 
+two members **type** and **id**. The type provides the type of info, which 
+can be **email**, **profile**, or **subprofile**, the **id** is the email
+address, or the numeric identifier of the profile or subprofile. 
+
+The data member in the JSON contains an array of arrays with all the info we have
 found. Examples of the information that is in the data member are:
 - Complete MIMEs that where sent,
 - Opens, and clicks information,
@@ -36,7 +35,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // get the status of the data request
-$api->get("datarequest/$id/data")
+$api->get("datarequest/{$requestID}/data")
 ```
 This example requires the [REST API class](./rest-php).
 

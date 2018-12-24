@@ -1,10 +1,14 @@
 # REST API: POST view rules
 
-Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
+Deze methode voegt een regel toe aan een bestaande selectie. 
+Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd 
+worden naar de volgende URL:
 
-`https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/rules?access_token=xxxx`
 
-De **$id** moet hier vervangen worden door de ID van de selectie waar een regel aan toegevoegd moet worden. De naam van de regel en de andere waarden moeten toegevoegd worden aan de message body.
+De `$id` moet hier vervangen worden door de ID van de selectie waar 
+een regel aan toegevoegd moet worden. De naam van de regel en de andere 
+waarden moeten toegevoegd worden aan de message body.
 
 
 ## Beschikbare parameters
@@ -37,12 +41,12 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("view/id/rules", $data);
+$api->post("view/{$id}/rules", $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

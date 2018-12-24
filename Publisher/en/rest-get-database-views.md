@@ -3,14 +3,15 @@
 To request which selections are available in a database, do an HTTP GET 
 request to the following URL:
 
-`https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/views?access_token=xxxx`
 
-In this, $id needs to be replaced by the numerical identifier or the 
+In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the database you wish to request the selections for.
 
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
+
 - **start**: the first interest to be requested
 - **limit**: length of the batch that is requested
 - **total**: whether or not the total amount of interests should be counted
@@ -52,7 +53,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("database/1234/views", $parameters));
+print_r($api->get("database/{$databaseID}/views", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

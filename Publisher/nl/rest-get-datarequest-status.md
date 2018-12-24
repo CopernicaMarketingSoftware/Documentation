@@ -1,23 +1,22 @@
 # REST API: GET data request status
 
-Met dit verzoek kun je de status van jouw dataverzoek opvragen.
+Om de status van je dataverzoek op te vragen kun je een HTTP GET request 
+sturen naar de volgende URL:
 
-Voor dit verzoek kun je een HTTP GET request sturen naar de volgende URL:
+`https://api.copernica.com/v2/datarequest/$id/status?access_token=xxxx`
 
-`https://api.copernica.com/v1/datarequest/$id/status?access_token=xxxx`
-
-waar **$id** de ID van van het betreffende dataverzoek is.
+De code `$id` moet hier vervangen worden door de ID van het relevante dataverzoek.
 
 ## Resultaat
 
 Een JSON met informatie over de status van jouw dataverzoek. Deze JSON bevat
-altijd de member *status*. Status kan de waarde hebben van: available, pending of
-not available. Als de status available is, dan zijn de data beschikbaar om
-te downloaden. Als de status pending is, dan zijn wij nog bezig om data toe
-te voegen. Als de status not available is, dan is er geen status beschikbaar.
-Mogelijk is er een fout ID ingevoerd. De JSON kan ook een member *available*
+altijd de member **status**. Status kan de volgende waardes hebben: "available", "pending" of
+"not available". Als de status "available" is, dan zijn de data beschikbaar om
+te downloaden. Als de status "pending" is, dan zijn wij nog bezig om data toe
+te voegen. Als de status "not available" is, dan is er geen status beschikbaar.
+Mogelijk is er een fout ID ingevoerd. De JSON kan ook een member **available**
 bevatten. Deze member geeft aan hoe groot de data (reeds) is in bytes.
-De JSON kan ook de waarde *content-type* bevatten. Momenteel is de enige
+De JSON kan ook de waarde **content-type** bevatten. Momenteel is de enige
 waarde die deze member kan hebben application/json.
 
 Voorbeeld:
@@ -39,7 +38,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // get the status of the data request (don't forget the id)
-$api->get("datarequest/$id/status")
+$api->get("datarequest/{$verzoekID}/status")
 ```
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
 

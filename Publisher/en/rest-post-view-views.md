@@ -1,12 +1,12 @@
-# REST API: POST view views
+# REST API: POST view views (nested selections)
 
-Copernica supports nested selections. To edit a nested selection you can send a HTTP POST request to the following URL:
+Copernica supports nested selections. To add a nested selection you can 
+send a HTTP POST request to the following URL:
 
-`https://api.copernica.com/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/views?access_token=xxxx`
 
-The first `$id` needs to be replaced by the numerical identifier of the 
-upper selection and the second $id by the lower selection. After a 
-successful call the ID of the created request is returned.
+The `$id` needs to be replaced by the numerical identifier of the 
+selection. After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
@@ -37,7 +37,7 @@ $data = array(
 );
 
 // do the call
-$api->post("view/1234/views", array(), $data);
+$api->post("view/{$viewID}/views", array(), $data);
 
 // return id of created request if successful
 ```

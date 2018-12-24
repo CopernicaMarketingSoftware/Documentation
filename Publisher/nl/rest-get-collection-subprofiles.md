@@ -1,13 +1,12 @@
 # REST API: GET collection subprofiles
 
-De methode om subprofielen uit een collectie op te vragen is een HTTP GET methode
-en beschikbaar via het volgende adres:
+Alle subprofielen uit een collectie kunnen opgevraagd worden met een HTTP GET 
+call naar de volgende URL:
 
-`https://api.copernica.com/v1/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -20,16 +19,16 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **orderby**: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
 * **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
 
-Meer informatie over de betekenis van de *start*, *limit* en *total* parameters 
+Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
 vind je in het [artikel over paging](rest-paging). 
 
-De parameter *fields* kun je gebruiken om subprofielen te selecteren. Als je bijvoorbeeld
+De parameter **fields** kun je gebruiken om subprofielen te selecteren. Als je bijvoorbeeld
 alleen subprofielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
 "Nederland", kun je dat opgeven in het veld "fields". Meer informatie over het
-gebruik van deze *fields* parameter kun je vinden in een 
+gebruik van deze **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele *order* kun je de naam of het id van een veld geven. De profielen
+De variabele **order** kun je de naam of het id van een veld geven. De profielen
 worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of id van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
 parameter *order* geven:
@@ -37,7 +36,6 @@ parameter *order* geven:
 * **id**: dit is de standaardwaarde, subprofielen worden gesorteerd aan de hand van het id
 * **random**: de subprofielen worden in willekeurige volgorde teruggegeven
 * **modified**: de subprofielen worden gesorteerd op basis het *modified* timestamp.
-
 
 ## Geretourneerde velden
 
@@ -52,13 +50,9 @@ volgende eigenschappen teruggegeven:
 * **created**: tijdstip waarop het subprofiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
 * **modified**: tijdstip waarop het subprofiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 
-
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. Omdat
-we in het voorbeeld de CopernicaRestApi klasse gebruiken, hoef je je niet heel
-druk te maken over het vervangen van speciale tekens in de URL. Dat doet de
-klasse automatisch.
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 ```php
 // vereiste scripts
@@ -75,11 +69,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("collection/1234/subprofiles", $parameters));
+print_r($api->get("collection/{$collectieID}/subprofiles", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-    
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

@@ -4,9 +4,9 @@ Een collectie is een geneste tweede laag bij een database. Een collectie
 heeft dus ook velden. Om deze velden op te vragen kun je een HTTP GET request
 sturen naar het volgende adres:
 
-`https://api.copernica.com/v1/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
 
 
@@ -21,7 +21,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-
 ## Geretourneerde velden
 
 De methode retourneert een lijst van velden in de database. Voor elk veld
@@ -30,7 +29,6 @@ worden de volgende eigenschappen teruggegeven:
 * id: 	numeriek id van het veld
 * name: naam van het veld
 * type: veld type
-
 
 ## Voorbeeld in PHP
 
@@ -49,11 +47,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print de resultaten
-print_r($api->get("collection/id/fields", $parameters));
+print_r($api->get("collection/{$collectieID}/fields", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

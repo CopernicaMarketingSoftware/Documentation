@@ -5,7 +5,7 @@ GET call to the following address:
 
 `https://api.copernica.com/v1/database/$id/fields?access_token=xxxx`
 
-In this, $id should be replaced by the numerical identifier or the name 
+In this, `$id` should be replaced by the numerical identifier or the name 
 of the database of which you want to request the fields.
 
 ## Available parameters
@@ -55,7 +55,7 @@ $parameters = array(
 );
 	
 // do the call, and print result
-print_r($api->get("database/1234/fields", $parameters));
+print_r($api->get("database/{$databaseID}/fields", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

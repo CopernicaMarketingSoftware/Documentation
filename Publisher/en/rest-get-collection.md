@@ -4,19 +4,15 @@ A collection is somewhat like a second layer within a database. These collection
 have a numerical ID which can be used to fetch information with an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v2/collection/$id?access_token=xxxx`
 
 The `$id` here should be replaced with the numerical identifier of the collection.
 
 ## Returned fields
 
-* **ID**: unique numerical identifier
 * **name**: name of the collection
 * **database**: ID of the database this collection belongs to.
 * **fields**:array with the fields in the collection
-
-These fields are returned as arrays of objects. If you would like to know more
-about what these arrays look like the following link might help you.
 
 ## PHP example
 
@@ -30,7 +26,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // execute the call and print the result.
-print_r($api->get("collection/1234"));
+print_r($api->get("collection/{$collectionID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
