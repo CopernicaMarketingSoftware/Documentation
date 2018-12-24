@@ -1,14 +1,14 @@
 # REST API: GET view rule
 
-Selections use *rules* to decide which profiles are included in the selection
+Selections use rules to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 
 are included in the selection. To retrieve the properties and the conditions of a 
 single rule, you can send a HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/rule/$id?access_token=xxxx`
 
 The first `$id` code should be replaced with the numeric identifier of the 
-selection from which you want to retrieve a rule. The second $id parameter
+selection from which you want to retrieve a rule. The second `$id` parameter
 should be the ID of the rule.
 
 ## The returned properties
@@ -22,8 +22,8 @@ This method returns rule data. The following properties are returned:
 - **inverted**: boolean value whether this is an inverted rule, meaning that profiles are included in the rule if they do *not* match the rule
 - **conditions**: array of conditions in the rule.
 
-A rule on its own contains *conditions*. For a profile to match a rule, it 
-has to match all the conditions. The *conditions* property that is returned
+A rule on its own contains conditions. For a profile to match a rule, it 
+has to match all the conditions. The **conditions** property that is returned
 by this method holds an array of condition objects, with the following 
 properties per condition:
 
@@ -52,8 +52,7 @@ the specific articles:
 
 ## PHP example
 
-The following script can be used to fetch the properties of rule 12 inside
-selection 1234:
+The following script can be used to fetch the properties of a rule.
 
 ```php
 // dependencies
@@ -63,7 +62,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("view/1234/rule/12"));
+print_r($api->get("view/{$viewID}/rule/{$ruleID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).    

@@ -4,8 +4,7 @@ Je kunt alle informatie omtrent databases opvragen
 met de onderstaande methode. Dit is een HTTP GET 
 call naar het volgende adres:
 
-`https://api.copernica.com/v1/databases?access_token=xxxx`
-
+`https://api.copernica.com/v2/databases?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -15,7 +14,6 @@ toegevoegd:
 * start: eerste database die wordt opgevraagd;
 * limit: lengte van de batch die wordt opgevraagd;
 * total: toon wel/niet het totaal aantal databases in de output.
-
 
 ## Geretourneerde velden
 
@@ -38,7 +36,6 @@ collections op te vragen:
 * [GET interests](rest-get-database-interests)
 * [GET collections](rest-get-database-collections) 
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -59,7 +56,7 @@ $parameters = array(
 print_r($api->get("databases", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

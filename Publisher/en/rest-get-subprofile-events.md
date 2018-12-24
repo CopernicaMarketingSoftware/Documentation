@@ -3,7 +3,7 @@
 To request the events from a subprofile you can send an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the subprofile 
 you're requesting the events of.
@@ -55,7 +55,7 @@ A JSON with all the event for the provided subprofile:
     ...
 ]
 ```
-The `event` property in the JSON describes which type of event it is. The types that
+The **event** property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
 
 ## PHP Example
@@ -75,7 +75,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("subprofile/1234/events", $parameters));
+print_r($api->get("subprofile/{$subprofileID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

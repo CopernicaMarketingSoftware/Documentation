@@ -4,7 +4,7 @@ Copernica supports nested selections. To obtain a list of all selections that
 are nested under a higher level selection you can send a HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/views?access_token=xxxx`
 
 In this, `$id` needs to be replaced by the numerical identifier of the selection
 that you wish to request the subselections of.
@@ -50,7 +50,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("view/1234/views", $parameters));
+print_r($api->get("view/{$viewID}/views", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -3,16 +3,14 @@
 Om alleen de velden van een subprofiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het subprofiel
+De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
-
 
 ## Geretourneerde velden
 
 De methode retourneert de velden van een subprofiel.
-
 
 ## Voorbeeld
 
@@ -26,11 +24,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("subprofile/1234/fields"));
+print_r($api->get("subprofile/{$subprofielID}/fields"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

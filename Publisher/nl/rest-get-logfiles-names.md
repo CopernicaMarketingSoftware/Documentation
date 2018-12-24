@@ -5,10 +5,9 @@ ontvangen berichten, etc. Deze logfiles kunnen gedownload worden met de API
 of via het dashboard. Door een HTTP GET verzoek te sturen naar de volgende 
 URL krijg je een lijst van alle bestaande logfiles voor een datum.
 
-`https://api.copernica.com/v1/logfiles/$date?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles/$date?access_token=xxxx`
 
-Je moet hier **$date** vervangen door de datum waarvoor je logfiles wilt zien.
-
+Je moet hier `$date` vervangen door de datum waarvoor je logfiles wilt zien.
 
 ## Teruggegeven velden
 
@@ -35,12 +34,13 @@ bevat het type als prefix en ook de datum.
 | [pom-retries](rest-pom-retry-logfile)             | Info over herzonden mails verstuurd via Publisher                                   |
 | [pom-unsubscribes](rest-pom-unsubscribe-logfile)  | Info over uitschrijvingen als gevolg van een mail verstuurd via Publisher           |
 
-Voor meer informatie over het downloaden van deze files kun je de documentatie 
-onder het kopje "Meer informatie" bekijken.
+Voor meer informatie over het downloaden van deze files in het gewenste formaat 
+kun je de documentatie onder het kopje "Meer informatie" bekijken.
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode gebruikt:
+Het volgende PHP script demonstreert hoe je de API methode gebruikt. 
+Vergeet niet de datum in te voegen in de URL (YYYY-MM-DD formaat).
 
 ```php
 // vereiste scripts
@@ -50,15 +50,14 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("logfiles/2017-02-12"));
+print_r($api->get("logfiles/{$date}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 
 * [Overzicht van API calls](./rest-api.md)
-* [GET logfiles .csv](./rest-get-logfiles-json.md)
+* [Downloaden van een logfile in JSON formaat](./rest-get-logfiles-json.md)
 * [Downloaden van een logfile in CSV formaat](./rest-get-logfiles-csv.md)
 * [Downloaden van een logfile in XML formaat](./rest-get-logfiles-xml.md)

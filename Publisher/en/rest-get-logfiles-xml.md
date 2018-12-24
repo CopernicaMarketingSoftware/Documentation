@@ -7,7 +7,7 @@ execute the method you can send an HTTP GET request to the following URL:
 
 `https://api.copernica.com/v1/logfiles/$filename/xml?access_token=xxxx`
 
-where `$filename` is the name of the file you want to request.
+The `$filename` should be replaced by the name of the file you want to request.
 
 ## Returned value
 
@@ -37,7 +37,10 @@ An XML representation of the requested log file. An example is shown below.
 
 ## PHP Example
 
-The following PHP script demonstrates how to use the API method.
+The following PHP script demonstrates how to use the API method. Don't forget 
+to substitute the filename in the URL. An example of such a filename is 
+`cdm-attempts.2016-11-04.log` to retrieve all delivery attemps made on the 4th 
+of November 2016.
 
 ```php
 // dependencies
@@ -47,7 +50,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/xml"));
+print_r($api->get("logfiles/{$filename}/xml"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

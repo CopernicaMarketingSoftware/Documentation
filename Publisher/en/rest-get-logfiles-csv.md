@@ -6,18 +6,18 @@ know the filename please see "More information" for instructions. To
 execute the method you can send an HTTP GET request to the following URL 
 for a CSV file without header:
 
-`https://api.copernica.com/v1/logfiles/$filename?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles/$filename?access_token=xxxx`
 
 If you want to have a header row with the field names included in the
-csv you can send an HTTP GET request to:
+CSV you can send an HTTP GET request to:
 
-`https://api.copernica.com/v1/logfiles/$filename/header?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles/$filename/header?access_token=xxxx`
 
 In both URLs `$filename` is the name of the file you want to request.
 
 ## Returned value
 
-A csv file with optionally a header row of the requested log file. In 
+A CSV file with optionally a header row of the requested log file. In 
 the table below is an example of what a CSV file could look like. In the 
 real file, however, the values would be separated by commas instead of 
 lines in a table.
@@ -29,7 +29,10 @@ lines in a table.
 
 ## PHP Example
 
-The following PHP script demonstrates how to use the API method.
+The following PHP script demonstrates how to use the API method. Don't forget 
+to substitute the filename in the URL. An example of such a filename is 
+`cdm-attempts.2016-11-04.log` to retrieve all delivery attemps made on the 4th 
+of November 2016.
 
 ```php
 // dependencies
@@ -39,7 +42,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("logfiles/cdm-attempts.2016-11-04.log/header"));
+print_r($api->get("logfiles/{$filename}/header"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

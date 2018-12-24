@@ -3,7 +3,7 @@
 To request the fields from a profile you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the fields of.
@@ -24,7 +24,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("profile/1234/fields"));
+print_r($api->get("profile/{$profileID}/fields"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -4,7 +4,7 @@ This is a simple method to request all information from a subprofile given
 its ID. The profile information can be requested with an HTTP GET call to the
 following URL:
 
-`https://api.copernica.com/v1/subprofile/$id?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the subprofile you're
 requesting the information of.
@@ -35,7 +35,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("profile/1234"));
+print_r($api->get("subprofile/{$subprofileID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -4,11 +4,10 @@ Selecties kunnen worden genest. Om op te vragen welke selecties er direct
 onder een andere selectie vallen, kun je een HTTP GET request naar de 
 volgende URL sturen:
 
-`https://api.copernica.com/v1/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/views?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de selectie 
+De code `$id` moet je vervangen door de numerieke identifier van de selectie 
 waarvan je de geneste selecties wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -20,7 +19,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
-
 
 ## Geretourneerde velden
 
@@ -37,7 +35,6 @@ worden de volgende eigenschappen teruggegeven:
 * **has-referred**: boolean waarde; zijn er andere selecties die verwijzen naar deze selectie?
 * **has-rules**: boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
 * **database**: id van de database waar deze selectie onder valt
-
 
 ## Voorbeeld
 
@@ -56,11 +53,10 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("view/1234/views", $parameters));
+print_r($api->get("view/{$view}/views", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-    
 
 ## Meer informatie
 

@@ -1,11 +1,13 @@
 # REST API: GET logfiles
 
 Copernica keeps logfiles about several things such as clicks, opens, 
-errors, accepted messages, etc. These logfiles can be downloaded with 
+errors, accepted messages, etc. See  
+[the article on retrieving logfile names](./rest-get-logfiles-names.md) 
+for more information on available logfiles. These logfiles can be downloaded with 
 the API. By sending an HTTP GET request to the following URL you will 
 get a list of all dates we have kept logfiles of.
 
-`https://api.copernica.com/v1/logfiles?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles?access_token=xxxx`
 
 ## Returned fields
 

@@ -3,11 +3,10 @@
 De methode om profielen uit een selectie op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:
 
-`https://api.copernica.com/v1/view/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/profiles?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van de 
+De code `$id` moet je vervangen door de numerieke identifier van de 
 selectie waar je de profielen van wilt opvragen.
-
 
 ## Beschikbare parameters
 
@@ -20,7 +19,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **orderby**: naam of id van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel)
 * **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
 
-Meer informatie over de betekenis van de *start*, *limit* en *total* parameters 
+Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
 vind je in het [artikel over paging](rest-paging). 
 
 De parameter *fields* kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
@@ -29,7 +28,7 @@ alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aa
 gebruik van deze *fields* parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele *order* kun je de naam of het ID van een veld geven. De profielen
+De variabele **order** kun je de naam of het ID van een veld geven. De profielen
 worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
 parameter *order* geven:
@@ -37,7 +36,6 @@ parameter *order* geven:
 * **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID
 * **random**: de profielen worden in willekeurige volgorde teruggegeven
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
-
 
 ## Geretourneerde velden
 
@@ -51,7 +49,6 @@ volgende eigenschappen teruggegeven:
 * **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
-
 
 ## Voorbeeld in PHP
 
@@ -75,11 +72,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print resultaat
-print_r($api->get("view/1234/profiles", $parameters));
+print_r($api->get("view/{$view}/profiles", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-    
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

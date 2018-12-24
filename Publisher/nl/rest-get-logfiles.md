@@ -1,16 +1,20 @@
 # REST API: GET logfiles
 
-Copernica houdt logfiles bij met verschillende informatie zoals clicks, geopende mails, errors, geaccepteerde berichten, etc. Deze logfiles kunnen opgevraagd worden met de API. Zie [Namen van logfiles voor een datum opvragen](./rest-get-logfiles-names.md) voor meer informatie over de verschillende logfiles die beschikbaar zijn. Door een HTTP GET verzoek te sturen naar de volgende URL kun je een lijst terugkrijgen van alle datums waarvoor logfiles zijn opgeslagen.
+Copernica houdt logfiles bij met verschillende informatie zoals clicks, 
+geopende mails, errors, geaccepteerde berichten, etc. 
+Deze logfiles kunnen opgevraagd worden met de API. Zie 
+[het artikel over namen van logfiles opvragen](./rest-get-logfiles-names.md) 
+voor meer informatie over de verschillende logfiles die beschikbaar zijn. 
+Door een HTTP GET verzoek te sturen naar de volgende URL kun je een lijst 
+terugkrijgen van alle datums waarvoor logfiles zijn opgeslagen.
 
-`https://api.copernica.com/v1/logfiles?access_token=xxxx`
-
+`https://api.copernica.com/v2/logfiles?access_token=xxxx`
 
 ## Geretourneerde velden
 
 Deze methode geeft een JSON array terug van datum strings. De links onder 
 "Meer informatie" bevatten instructies om de logfiles voor een datum te downloaden 
 in het gewenste formaat.
-
 
 ## Voorbeeld in PHP
 
@@ -27,8 +31,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit
     print_r($api->get("logfiles"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

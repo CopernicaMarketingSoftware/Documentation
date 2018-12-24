@@ -1,11 +1,12 @@
 # REST API: GET view
 
-A method to request all metadata from a database. This method does not 
+A method to request all metadata from a view. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id?access_token=xxxx`
 
-In this, `$id` needs to be replaced by the numerical identifier or the name of the database you wish to request the selections for.
+In this, `$id` needs to be replaced by the numerical identifier or the 
+name of the view you wish to request the selections for.
 
 ## Available parameters
 
@@ -36,7 +37,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("view/1234"));
+print_r($api->get("view/{$viewID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -3,12 +3,12 @@
 To request the events for a specific tag you can send an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
+`https://api.copernica.com/v2/tags/$tag/events?access_token=xxxx`
 
 The `$tag` should be replaced with the the tag of interest. If you have multiple
-tags on which you want to filter, you can separate them with semicolons like:
+tags on which you want to filter, you can separate them with semicolons as following:
 
-`https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
+`https://api.copernica.com/v2/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
 
 ## Available parameters
 
@@ -48,9 +48,8 @@ A JSON with all the events for the provided tags.
     ...
 ]
 ```
-The `event` property in the JSON describes which type of event it is. The types that
+The **event** property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
-
 
 ## PHP Example
 
@@ -69,7 +68,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("tags/myTag/events", $parameters));
+print_r($api->get("tags/{$tag}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

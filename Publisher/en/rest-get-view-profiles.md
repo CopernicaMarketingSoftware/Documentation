@@ -2,7 +2,7 @@
 
 To retrieve all profiles in a selection, send a HTTP GET request to this address:
 
-`https://api.copernica.com/v1/view/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/profiles?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the profiles.
@@ -18,15 +18,15 @@ You can add one or more of the following parameters to the URL:
 - **orderby**: name or id of the field on which the profiles are ordered (default value is the profile ID)
 - **order**: should the profiles be ordered in ascending or descending order (asc or desc)?
 
-You can find more information about the *start*, *limit* and *total* parameters 
+You can find more information about the **start**, **limit** and **total** parameters 
 in our [paging article](./rest-paging.md). 
 
-The *fields* parameter can be used to filter the profiles. You can for example
+The **fields** parameter can be used to filter the profiles. You can for example
 use this parameter to only fetch profiles for which the field "country" equals
 "France". More information about using this parameter can be found in our
 [article about this fields parameter](./rest-fields-parameter.md).
 
-You can assign the name or numeric identifier of a field to the parameter *order*.
+You can assign the name or numeric identifier of a field to the parameter **order**.
 This will order the profiles on the given field.
 Besides a name or ID, you can also pass a couple of special values to this parameter:
 
@@ -69,7 +69,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("view/1234/profiles", $parameters));
+print_r($api->get("view/{$viewID}/profiles", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

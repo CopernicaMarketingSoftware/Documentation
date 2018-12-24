@@ -3,7 +3,7 @@
 A method to request a list of all available databases. This is an HTTP 
 GET call to the following address:
 
-`https://api.copernica.com/v1/databases?access_token=xxxx`
+`https://api.copernica.com/v2/databases?access_token=xxxx`
 
 ## Available parameters
 
@@ -16,7 +16,9 @@ More information on the meaning of start, limit and total parameters
 can be found in the [article on paging](rest-paging).
 
 ## Returned fields
+
 The method returns a list of databases. For each database in the list, the following properties are returned:
+
 - **ID**: unique numerical identifier
 - **name**: name of the database
 - **description**: optional description of the database

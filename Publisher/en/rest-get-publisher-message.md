@@ -22,7 +22,7 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
 
-// do the call, and print result
+    // do the call, and print result
 print_r($api->get("publisher/message/{$messageID}"));
 ```
 

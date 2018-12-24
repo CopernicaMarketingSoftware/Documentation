@@ -1,16 +1,17 @@
 # REST API: GET minirule
 
-Dit is een methode om alle metadata van een regel binnen een selectie in een collectie (miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
+Dit is een methode om alle metadata van een regel binnen een selectie in 
+een collectie (miniview) op te vragen. Deze methode ondersteunt geen parameters. 
+De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 
-`https://api.copernica.com/v1/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
 
-De **$id** hier moet vervangen worden door de ID van de regel waarvan je de data op wil vragen.
-
+De `$id` hier moet vervangen worden door de ID van de regel waarvan je de 
+data op wil vragen.
 
 ## Beschikbare parameters
 
 Er zijn geen beschikbare parameters voor deze methode.
-
 
 ## Teruggeven velden
 
@@ -19,9 +20,11 @@ Deze methode geeft een JSON miniregel object terug met de volgende eigenschappen
 - **name**: naam van de regel
 - **view**: ID van de selectie waar de regel bij hoort
 - **conditions**: array van condities van de regel
-- **inversed**: boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden. Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
-- **disabled**: boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
-
+- **inversed**: boolean waarde om aan te geven of de regel wel of niet 
+geïnverteerd moet worden. Als deze op "True" staat worden er alleen profielen 
+teruggegeven die niet aan de condities voldoen.
+- **disabled**: boolean waarde om aan te geven of een regel uitgeschakeld 
+moet worden of niet.
 
 ## Voorbeeld in PHP
 
@@ -35,11 +38,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("minirule/1234"));
+print_r($api->get("minirule/{$minirule}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

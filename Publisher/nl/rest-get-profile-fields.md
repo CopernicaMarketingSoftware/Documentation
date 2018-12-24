@@ -3,16 +3,14 @@
 Om alleen de velden van een profiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v1/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
 
-De code **$id** moet je vervangen door de numerieke identifier van het profiel
+De code `$id` moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
-
 
 ## Geretourneerde velden
 
 De methode retourneert de velden van een profiel.
-
 
 ## Voorbeeld in PHP
 
@@ -26,10 +24,10 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     $api = new CopernicaRestApi("your-access-token");
 
     // voer het verzoek uit en print het resultaat
-    print_r($api->get("profile/1234/fields"));
+    print_r($api->get("profile/{$profielID}/fields"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

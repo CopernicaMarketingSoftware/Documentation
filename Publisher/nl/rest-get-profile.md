@@ -3,11 +3,10 @@
 Als je alle gegevens van een enkel profiel wilt opvragen, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 
-`https://api.copernica.com/v1/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id?access_token=xxxx`
 
-De **$id** moet je vervangen door de numerieke identifier van het profiel
+De `$id` moet je vervangen door de numerieke identifier van het profiel
 dat je opvraagt.
-
 
 ## Geretourneerde velden
 
@@ -22,7 +21,6 @@ worden teruggegeven:
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -35,11 +33,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de methode uit en print het resultaat
-print_r($api->get("profile/1234"));
+print_r($api->get("profile/{$profielID}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

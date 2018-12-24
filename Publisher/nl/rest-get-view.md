@@ -1,10 +1,12 @@
 # REST API: GET view
 
-Een methode om de metadata van een database op te vragen. De methode kan aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
+Een methode om de metadata van een database op te vragen. De methode kan 
+aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v1/view/$id?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id?access_token=xxxx`
 
-Hier moet de **$id** vervangen worden met de numerieke identifier van de database waarvan de selecties moeten worden opgevraagd.
+Hier moet de `$id` vervangen worden met de numerieke identifier van de 
+database waarvan de selecties moeten worden opgevraagd.
 
 ## Beschikbare parameters
 
@@ -35,10 +37,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de methode uit en print het resultaat
-print_r($api->get("view/1234"));
+print_r($api->get("view/{$viewID}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

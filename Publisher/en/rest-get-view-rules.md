@@ -2,7 +2,7 @@
 
 To retrieve all rules in a selection, send a HTTP GET request to this address:
 
-`https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/rules?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.
@@ -15,7 +15,7 @@ You can add one or more of the following parameters to the URL:
 - **limit**: max size of the requested batch
 - **total**: show/hide the total number of matching rules
 
-You can find more information about the *start*, *limit* and *total* parameters 
+You can find more information about the **start**, **limit** and **total** parameters 
 in our [paging article](./rest-paging.md). 
 
 ## The returned properties
@@ -51,7 +51,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("miniview/1234/minirules", $parameters));
+print_r($api->get("miniview/{$miniviewID}/minirules", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

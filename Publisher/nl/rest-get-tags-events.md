@@ -1,18 +1,17 @@
 # REST API: GET tags events
 
-Als je  gebeurtenissen met een bepaalde tag wilt downloaden, dan kun je
+Als je gebeurtenissen met een bepaalde tag wilt downloaden, dan kun je
 die opvragen door middel van een eenvoudige HTTP GET call naar de volgende
 URL.
 
-`https://api.copernica.com/v1/tags/$tag/events?access_token=xxxx`
+`https://api.copernica.com/v2/tags/$tag/events?access_token=xxxx`
 
-De **$tag** moet je vervangen door de tag waarvoor je de gebeurtenissen wilt
+De `$tag` moet je vervangen door de tag waarvoor je de gebeurtenissen wilt
 hebben.
 Als je op meerdere tags tegelijkertijd wilt filteren, dan kun je de tags
-scheiden door middel van puntkomma's.
+scheiden door middel van puntkomma's zoals in het volgende voorbeeld:
 
-`https://api.copernica.com/v1/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
-
+`https://api.copernica.com/v2/tags/$tag1;$tag2;$tag3/events?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -20,7 +19,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
-
 
 ## Start en end
 
@@ -35,7 +33,6 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 1 of 2 uur later  (afhankelijk van zomer- en wintertijd) dan de Nederlandse
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
-
 
 ## Returned fields
 
@@ -59,8 +56,7 @@ A JSON with all the events for the provided tags.
 ]
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
-
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Voorbeeld
 
@@ -79,13 +75,12 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("tags/myTag/events", $parameters));
+print_r($api->get("tags/{$tag}/events", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
+## Meer informatie
 
-## More information
-
-* [List of all API calls](rest-api)
-* [Fetching all profile information](rest-get-profile)
+* [Overzicht van alle API calls](rest-api)
+* [Alle profiel informatie opvragen](rest-get-profile)

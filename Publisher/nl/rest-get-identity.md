@@ -4,12 +4,11 @@ Je kunt makkelijk nagaan welke accountgegevens bij een bepaalde
 access token hoort. De onderstaande methode retourneert de 
 gegevens van een specifieke access token. 
 
-`https://api.copernica.com/v1/identity?access_token=xxxx`
+`https://api.copernica.com/v2/identity?access_token=xxxx`
 
 Deze methode is vooral handig als je een applicatie hebt gemaakt 
 die is gekoppeld aan veel verschillende accounts (bijvoorbeeld 
 door middel van een OAuth2 koppeling). 
-
 
 ## Geretourneerde velden
 
@@ -19,7 +18,6 @@ De methode retourneert accountgegevens:
 * name:         naam van het account;
 * description:  omschrijving van het account;
 * company:      naam van het bedrijf dat betaalt voor het account.
-
 
 ## Voorbeeld in PHP
 
@@ -38,7 +36,6 @@ print_r($api->get("identity"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

@@ -5,7 +5,7 @@ accepted messages, etc. These logfiles can be downloaded with the API.
 By sending an HTTP GET request to the following URL you will get a list of
 all log files for a particular date.
 
-`https://api.copernica.com/v1/logfiles/$date?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles/$date?access_token=xxxx`
 
 where `$date` is the date for which you want to see the logfiles.
 
@@ -33,11 +33,13 @@ are provided in the table below.
 | [pom-retries](rest-pom-retries-logfile)           | Info about mails sent via Publisher for which we retry a delivery  |
 | [pom-unsubscribes](rest-pom-unsubscribes-logfile) | Info about mails sent via Publisher that triggered an unsubscribe  |
 
-To download a log file please see the links under "More information".
+To download a log file please see the links under "More information" to 
+find the instructions for the desired logfile format.
 
 ## PHP Example
 
-The following PHP script demonstrates how to use the API method:
+The following PHP script demonstrates how to use the API method. Don't forget 
+to substitute the date in the URL (YYYY-MM-DD format).
 
 ```php
 // dependencies
@@ -47,7 +49,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("logfiles/2017-02-12"));
+print_r($api->get("logfiles/{$date}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
