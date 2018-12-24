@@ -5,7 +5,6 @@ het werk dat is verricht op het oorspronkelijke OAuth protocol dat in 2006
 is ontworpen. Door OAuth 2.0 kunnen gebruikers toegang verlenen tot gegevens,
 zonder hun gebruikersnaam en wachtwoord uit handen te geven.  
 
-
 ## Waarvoor heb je dit nodig?
 
 De OAuth2 functionaliteit komt van pas als je een applicatie maakt die je aan 
@@ -21,7 +20,6 @@ je database te analyseren. Vind je dat goed?".
 
 ![](../images/oauth-copernica.png)
 
-
 ## Applicatie aanmelden
 
 De hierboven beschreven koppeling kun je met OAuth2 maken. Om te beginnen 
@@ -35,7 +33,6 @@ Nadat je de applicatie hebt aangemeld, ontvang je een *client_key* en *client_se
 Dit is de logincode en het wachtwoord dat je later moet doorgeven aan Copernica
 om toegang te krijgen tot andere accounts. Let op dat je de waarde van *client_secret*
 geheim houdt. Alleen jij mag toegang hebben tot deze data.
-
 
 ## Button of hyperlink plaatsen
 
@@ -58,7 +55,6 @@ Je moet er goed voor zorgen dat de **state** variabele echt een moeilijk te rade
 random string is. Als de string niet naar onze zin is (te kort, te voorspelbaar),
 dan wordt sowieso geen toegang verleend.
 
-
 ## De terugkeerpagina
 
 Ook moet je een terugkeerpagina maken. Nadat iemand op de link op je website heeft
@@ -71,10 +67,10 @@ of de waarde van de variabele *state* overeenkomt met de waarde die je in de
 oorspronkelijke link had gezet. Als dat niet het geval is, is er iets vreemds
 aan de hand (misbruik!) en hoef je dus niks meer te doen.
 
-Als de *state* variabele in orde is, kun je de REST API gebruiken om de *access key*
+Als de **state** variabele in orde is, kun je de REST API gebruiken om de *access key*
 te downloaden. Gebruik hiervoor de volgende URL:
 
-`https://api.copernica.com/v1/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
+`https://api.copernica.com/v2/token?client_id=XXX&client_secret=XXX&redirect_uri=XXX&code=XXX`
 
 Ook hier moet je de XXX waarden weer vervangen door je eigen variabelen:
 
@@ -96,7 +92,6 @@ Als alles goed gaat, dan krijg je als resultaat van deze API call een
 doen, en de gegevens in het desbetreffende account op te vragen.
 
 `{ access_token : "ed430a95c58fd7d230c9dc453396cf5" }`
-
 
 ## Meer informatie
 

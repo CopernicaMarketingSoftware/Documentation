@@ -3,7 +3,7 @@
 If you are interested in the events of a message sent with Marketing Suite
 you can make a GET request to the following URL:
 
-`https://api.copernica.com/v1/message/$id/events/?access_token=xxxx`
+`https://api.copernica.com/v2/message/$id/events/?access_token=xxxx`
 
 where `$id` is the unique string that identifies a message.
 

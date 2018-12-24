@@ -17,14 +17,18 @@ class CopernicaRestAPI
      */
     private $token;
 
+    private $version;
+
     /**
      *  Constructor
      *  @param  string      Access token
      */
-    public function __construct($token)
+    public function __construct($token, $version = 1)
     {
         // copy the token
         $this->token = $token;
+        
+        $this->version = $version;
     }
 
     /**
@@ -38,14 +42,18 @@ class CopernicaRestAPI
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
+        echo "https://api.copernica.com/v{$this->version}/$resource?$query".PHP_EOL;
+
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(CURLOPT_RETURNTRANSFER => true));
 
         // do the call
         $answer = curl_exec($curl);
+        
+        print_r($answer);
 
         // clean up curl resource
         curl_close($curl);
@@ -66,7 +74,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -86,7 +94,7 @@ class CopernicaRestAPI
 
         // clean up curl resource
         curl_close($curl);
-        
+
         // bad request
         if (!$httpCode || $httpCode == 400) return false;
 
@@ -110,7 +118,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -143,7 +151,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(
@@ -165,8 +173,10 @@ class CopernicaRestAPI
 ## Use in your own application
 
 Just copy and paste the script in your own application. 
-The script below lets you call the API from every script.
-
+The script below lets you call the API from every script. The version 
+variable should be replaced with a '2' for the newest version of the API. 
+It will default to the older version 1 for backwards compatibility with 
+existing scripts.
 
 ```php
 <?php
@@ -174,7 +184,7 @@ The script below lets you call the API from every script.
 require_once('copernica_rest_api.php');
 
 // create an api object (add your own access token!)
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestApi("my-access-token", $version);
 
 // do the call
 $result = $api->get("databases");
@@ -185,4 +195,4 @@ print_r($result);
 
 ## More information
 
-* [REST API](./rest-api)
+* [Overview of REST API calls](./rest-api)

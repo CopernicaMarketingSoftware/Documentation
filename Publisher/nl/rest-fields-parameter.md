@@ -6,14 +6,13 @@ kun je bijvoorbeeld aangeven dat de desbetreffende API methode alleen betrekking
 heeft op (sub)profielen waarvan het veld "land" op "nederland" staat, en/of dat het 
 veld "leeftijd" tussen 18 en 65 moet staan.
 
-De *fields* parameter is een array-parameter. Dit wil zeggen dat je blokhaken
+De **fields** parameter is een array-parameter. Dit wil zeggen dat je blokhaken
 achter de naam van de variabele moet zetten en (heel handig) dat de variabele 
 meerdere keren in de URL mag worden gebruikt. In onderstaande URL zie je 
 bijvoorbeeld hoe de variabele *fields[]* inderdaad meerdere keren (namelijk 
 twee keer) in een URL voorkomt:
 
-`https://api.copernica.com/v1/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
-
+`https://api.copernica.com/v2/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
 
 ## Ondersteunde waardes
 
@@ -49,7 +48,6 @@ ook als je niet van dergelijke velden hebt aangemaakt. Dit zijn de volgende veld
 
 Je kunt dus ook vergelijkingen maken als "id>1000" en "modified<2017-01-01".
 
-
 ## Escapen van variabelen
 
 Zoals gezegd moet de *fields* parameters worden toevoegd aan de URL. Om echter een
@@ -71,10 +69,9 @@ Als je API calls doet met behulp van onze [voorbeeld PHP code](rest-php), dan
 hoef je je hier overigens niet al te druk over te maken. Het escapen gebeurt
 dan automatisch.
 
-
 ## Toepasselijke methodes
 
-De *fields* parameter kun je gebruiken bij de volgende API methodes:
+De **fields** parameter kun je gebruiken bij de volgende API methodes:
 
 * [Opvragen van profielen uit een database](rest-get-database-profiles)
 * [Opvragen van profielen uit een selectie](rest-get-view-profiles)

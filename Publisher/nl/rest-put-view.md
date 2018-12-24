@@ -21,7 +21,6 @@ geplaatst:
 - **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren
 - **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet
 
-
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

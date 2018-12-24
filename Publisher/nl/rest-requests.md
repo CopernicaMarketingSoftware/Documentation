@@ -2,16 +2,17 @@
 
 Als je een website of app hebt gekoppeld aan [de REST API](rest-api) van Copernica,
 dan kan deze applicatie HTTP requests sturen naar het *endpoint* van de API
-op onze server. Het adres van dit endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*.
+op onze server. Het adres van dit endpoint is 
+`https://api.copernica.com/v2/path/to/resource?access_token=yourtoken`.
+
 Het "/path/to/resource" deel van de URL is voor elk request anders, en bepaalt
-welke data je opvraagt of wijzigt. Ook moet je aan de URL altijd een *access_token*
+welke data je opvraagt of wijzigt. Ook moet je aan de URL altijd een **access_token**
 parameter toevoegen om jouw applicatie te identificeren.
 
 Je kunt HTTP GET requests sturen om data op te vragen, HTTP POST en HTTP PUT
 om gegevens toe te voegen of te wijzigen, en HTTP DELETE om dingen te verwijderen.
 De data die je bij een GET request terugkrijgt is meestal een JSON object. Voor
 POST, PUT en DELETE requests zit het antwoord in de header.
-
 
 ## Data naar Copernica sturen
 
@@ -46,7 +47,6 @@ echter ook een "traditioneel" HTTP POST request kunnen sturen:
 De content-type header is natuurlijk alleen van toepassing op POST en PUT
 requests. GET en DELETE requests ondersteunen geen body data.
 
-
 ## Het antwoord verwerken
 
 Het antwoord dat Copernica terugstuurt is afhankelijk van het request type.
@@ -57,14 +57,13 @@ De andere type requests (POST, PUT en DELETE) gebruiken ook de "200 OK"
 code als het request is gelukt, maar ze sturen geen data terug. Door middel van 
 speciale HTTP headers wordt het resultaat van de actie gerapporteerd. In de 
 resultaatheader van succesvolle POST en PUT requests staat een link naar de 
-aangepaste/toegevoegde data. Hiervoor gebruiken we een *X-location* header,
-bijvoorbeeld "X-location: https://api.copernica.com/v1/profile/$profileID" als 
+aangepaste/toegevoegde data. Hiervoor gebruiken we een **X-location** header,
+bijvoorbeeld "X-location: https://api.copernica.com/v2/profile/$profileID" als 
 je een profiel wijzigt of toevoegt. Een succesvolle DELETE request bevat een
 *X-deleted* header: "X-deleted: profile $profileID".
 
 Als er een fout optreedt, ontvang je een "400 Bad request" returncode. In de
 body staat vaak een JSON bericht met een foutmelding.
-
 
 ## Meer informatie
 

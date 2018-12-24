@@ -3,7 +3,7 @@
 Om een collectie (een tweede laag dus) aan een database toe te voegen, kun
 je een HTTP POST request sturen naar het volgende adres:
 
-`https://api.copernica.com/v1/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/collections?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de collectie aan wilt toevoegen. De naam van de collectie
@@ -35,6 +35,7 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("database/{$databaseID}/collections", $data);
+
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 

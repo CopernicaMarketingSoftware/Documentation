@@ -6,17 +6,17 @@ kun je deze log files opvragen via de REST API. Het kan natuurlijk ook voorkomen
 naar specifieke events. De flexibele API geeft je de mogelijkheid om deze events 
 op te vragen. Je doet dit middels een van de volgende URLs:
 
-```text
-https://api.copernica.com/v1/message/$id/events?access_token=xxxx
-https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
-https://api.copernica.com/v1/email/$email/events?access_token=xxxx
-https://api.copernica.com/v1/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx
-https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
-https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
-https://api.copernica.com/v1/template/$id/events?access_token=xxxx
-https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
-https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
-```
+| Call                                                                                            | Beschrijving                        |
+|-------------------------------------------------------------------------------------------------|-------------------------------------|
+|https://api.copernica.com/v2/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx | Events voor tags.                   |
+|https://api.copernica.com/v2/email/$email/events?access_token=xxxx                               | Events voor een emailadres.         |
+|https://api.copernica.com/v2/profile/$id/events?access_token=xxxx                                | Events voor een profiel.            |
+|https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx                             | Events voor een subprofiel.         |
+|https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx                             | Events voor een MS bericht.         |
+|https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx                            | Events voor een MS template.        |
+|https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx                      | Events voor een Publisher bericht.  |
+|https://api.copernica.com/v2/publisher/template/$id/events?access_token=xxxx                     | Events voor een Publisher template. |
+|https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx                     | Events voor een Publisher document. |
 
 ## Beschikbare parameters
 
@@ -29,7 +29,6 @@ variabelen worden toegevoegd:
 - **start**: de startdatum (jjjj-mm-dd) vanaf wanneer de events gedownload worden;
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload moeten worden;
 - **tags**:  optionele tags waarop gefilterd kan worden.
-
 
 ## Start en end parameters
 
@@ -50,14 +49,12 @@ Deze datum begint 1 of 2 uur later (afhankelijk van zomer- en wintertijd) dan de
 Houd er ook rekening mee dat de beperking van de periode tot een maand gewijzigd kan worden als 
 de performance dit vereist.
 
-
 ## Tags
 
 Het is ook mogelijk om een tag mee te geven waarop de events gefilterd moeten
 worden. Het kan natuurlijk voorkomen dat je op meerdere tags tegelijkertijd
 wilt filteren. In dat geval kun je tags achter elkaar zetten en ze scheiden
 door middel van puntkomma's.
-
 
 ## Geretourneerde informatie
 
@@ -90,31 +87,25 @@ types staan beschreven op de [event types pagina](./event-types.md).
 Events bij een met Marketing Suite verstuurd bericht kun je opvragen
 door een request te doen naar:
 
-```text
-https://api.copernica.com/v1/message/$id/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx`
 
 Je krijgt vervolgens de informatie over dit bericht vanaf
 het moment van verzenden tot één maand na verzenden. Als je deze informatie
 voor een met Publisher verstuurd bericht wilt hebben kun je een request te
 sturen naar:
 
-```text
-https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx`
 
 Je kunt de gegevens over een andere periode opvragen door een **start**
 en/of **end** parameter meegeven.
-
 
 ## Events bij een e-mailadres
 
 Events bij een specifiek e-mailadres kun je opvragen door een request
 te sturen naar:
 
-```text
-https://api.copernica.com/v1/email/$email/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/email/$email/events?access_token=xxxx`
+
 Je krijgt alle events die bij dit e-mailadres horen tot een maand geleden.
 Als je de informatie voor een andere periode wilt kun je een **start** en/of
 **end** parameter meegeven.
@@ -125,85 +116,69 @@ Je kunt de **tag** parameter gebruiken als je wilt filteren op tags.
 
 Events bij een tag kun je opvragen door een request te sturen naar:
 
-```text
-https://api.copernica.com/v1/tags/$tag1/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/tags/$tag1/events?access_token=xxxx`
 
 Je krijgt alle events die bij deze tag horen tot een maand geleden. 
 Je kunt ook op meerdere tags tegelijkertijd filteren door de tags te scheiden
 met puntkomma's:
 
-```text
-https://www.smtpeter.com/v1/tags/TAG1/TAG2/TAG3/.../events?acces_token=xxx
-```
+`https://www.smtpeter.com/v2/tags/TAG1/TAG2/TAG3/.../events?acces_token=xxx`
 
 De geretourneerde JSON bevat alleen events voor berichten die alle tags
 bevatten.
-
 
 ## Events bij een profiel
 
 Events bij een profiel kun je opvragen door een request te sturen naar:
 
-```text
-https://api.copernica.com/v1/profile/$id/events?access_token=xxxx
-```
-waar **$id** vervangen moet worden door de numerieke identifier van het profiel.
+`https://api.copernica.com/v2/profile/$id/events?access_token=xxxx`
+
+waar `$id` vervangen moet worden door de numerieke identifier van het profiel.
 Je krijgt vervolgens de events tot een maand terug voor dit profiel. Als
 je de events voor een andere periode wilt dan kun je een **start** en/of
 **end** parameter gebruiken.
 Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
 
-
 ## Events bij een subprofiel
 
 Events bij een subprofiel kun je opvragen door een request te sturen naar:
 
-```text
-https://api.copernica.com/v1/subprofile/$id/events?access_token=xxxx
-```
-waar **$id** vervangen moet worden door de numerieke identifier van het subprofiel.
+`https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx`
+
+waar `$id` vervangen moet worden door de numerieke identifier van het subprofiel.
 Je krijgt vervolgens de events tot een maand terug. Als je events voor een
 andere periode wilt dan kun jee een **start** en/of **end** parameter gebruiken.
 Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
-
 
 ## Events bij een template
 
 Events bij een Marketing Suite template kun je opvragen door een request
 te sturen naar:
 
-```text
-https://api.copernica.com/v1/template/$id/events?access_token=xxxx
-```
-**$id** is hier de numerieke identifier van de Marketing Suite template
+`https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx`
+
+`$id` is hier de numerieke identifier van de Marketing Suite template
 waarvoor je de events wilt hebben. Als je de events voor een Publisher
 template wilt hebben kun je een request sturen naar:
 
-```text
-https://api.copernica.com/v1/old/template/$id/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/publisher/template/$id/events?access_token=xxxx`
 
 Je krijgt vervolgens de events tot een maand terug voor de betreffende
 template. Als je de events voor een andere periode wilt hebben kun je
 optioneel een **start** en/of **end** parameter meegeven. Optioneel kun je ook
 filteren op tags door een **tags** parameter mee te geven.
 
-
 ## Events bij een document
 
 Events bij een document kun je opvragen door een request te sturen naar:
 
-```text
-https://api.copernica.com/v1/old/document/$id/events?access_token=xxxx
-```
+`https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx`
 
 Je krijgt vervolgens de events tot een maand terug van dit document. Als 
 je events voor een andere periode wilt hebben dan kun je een **start** 
 en/of **end** parameter meegeven. Optioneel kun je ook filter op tags 
 door een **tags** parameter mee te geven.
 
-
 ## Meer informatie
 
-* [REST API](./rest-api)
+* [Overzicht van alle REST API calls](./rest-api)

@@ -3,11 +3,10 @@
 Methode om de properties van een database bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v1/database/$id?access_token=xxxx`
+`https://api.copernica.com/v2/database/$id?access_token=xxxx`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken.
-
 
 ## Beschikbare parameters
 
@@ -21,7 +20,6 @@ geplaatst:
 - fields:           array met velden in de database;
 - interests:        array met interesses in de database;
 - collections:      array met de collecties in de database.
-
 
 ## Voorbeeld in PHP
 

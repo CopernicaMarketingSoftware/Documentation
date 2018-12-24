@@ -1,14 +1,13 @@
-# REST API: GET template events
+# REST API: GET template events (Marketing Suite)
 
 Als je events bij een Marketing Suite template wilt downloaden, dan kun
 je die opvragen door middel van een eenvoudige HTTP GET call naar de volgende
 URL:
 
-`https://api.copernica.com/v1/template/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx`
 
-De **$id** moet je vervangen door de numerieke identifier van de template
+De `$id` moet je vervangen door de numerieke identifier van de template
 waarvoor je de gebeurtenissen wilt hebben.
-
 
 ## Beschikbare parameters
 
@@ -17,7 +16,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - start:        de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden;
 - end:          de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden;
 - tags:         optionele tags waarop gefilterd wordt.
-
 
 ## Start en end
 
@@ -64,8 +62,7 @@ ziet er als volgt uit:
 ]
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
-
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Voorbeeld
 
@@ -84,10 +81,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("template/1234/events", $parameters));
+print_r($api->get("template/{$templateID}/events", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 
 ## Meer informatie

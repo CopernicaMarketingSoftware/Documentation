@@ -126,7 +126,7 @@ The other parameter is the parameter **code**. To convert this code into
 an access token, you will have to download the access token from the
 api.copernica.com site via the following URL:
 
-    https://api.copernica.com/v1/token?  
+    https://api.copernica.com/v2/token?  
         client_id = client_key   
         client_secret =  client_secret   
         redirect_uri = https://www.example.com/success
@@ -154,7 +154,7 @@ The below example shows you how you retrieve data from a profile (a
 database record) with its unique ID in Copernica. A call is always
 accompanied with the access token as a query string:
 
-    https://api.copernica.com/v1/profile/123456?access_token=ed430a95c58fd7d2830c9dc453396cf5
+`https://api.copernica.com/v2/profile/{$profileID}?access_token={$token}`
 
 View our [REST API documentation](./rest-api.md) for in depth
 information on making API calls.

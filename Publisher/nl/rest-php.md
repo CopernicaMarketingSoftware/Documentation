@@ -18,14 +18,18 @@ class CopernicaRestAPI
      */
     private $token;
 
+    private $version;
+
     /**
      *  Constructor
      *  @param  string      Access token
      */
-    public function __construct($token)
+    public function __construct($token, $version = 1)
     {
         // copy the token
         $this->token = $token;
+        
+        $this->version = $version;
     }
 
     /**
@@ -39,14 +43,18 @@ class CopernicaRestAPI
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
+        echo "https://api.copernica.com/v{$this->version}/$resource?$query".PHP_EOL;
+
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(CURLOPT_RETURNTRANSFER => true));
 
         // do the call
         $answer = curl_exec($curl);
+        
+        print_r($answer);
 
         // clean up curl resource
         curl_close($curl);
@@ -67,7 +75,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -87,7 +95,7 @@ class CopernicaRestAPI
 
         // clean up curl resource
         curl_close($curl);
-        
+
         // bad request
         if (!$httpCode || $httpCode == 400) return false;
 
@@ -101,17 +109,17 @@ class CopernicaRestAPI
     /**
      *  Do a PUT request
      *  @param  string      Resource name
-     *  @param  array       Associative array with additional parameters
      *  @param  array       Associative array with data to post
+     *  @param  array       Associative array with additional parameters
      *  @return bool
      */
-    public function put($resource, array $parameters = array(), array $data = array())
+    public function put($resource, array $data = array(), array $parameters = array())
     {
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -144,7 +152,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v1/$resource?$query");
+        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(
@@ -167,7 +175,10 @@ class CopernicaRestAPI
 
 Het bovenstaande script kun je gemakkelijk kopiëren en plakken, zodat je het kunt
 gebruiken in je eigen applicatie. Door onderstaande code te implementeren kun je 
-vanuit andere scripts ook de API aanroepen. 
+vanuit andere scripts ook de API aanroepen. De variabele $versie kun je 
+vervangen door een '2' om de nieuwste versie van de API te gebruiken. Wanneer 
+deze variabele niet wordt gebruikt zal automatisch de oude versie van de 
+API gebruikt worden om compatibel te blijven met bestaande scripts.
 
 ```php
 <?php
@@ -175,7 +186,7 @@ vanuit andere scripts ook de API aanroepen.
 require_once('copernica_rest_api.php');
 
 // create an api object (add your own access token!)
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestApi("my-access-token", $versie);
 
 // do the call
 $result = $api->get("databases");
@@ -183,3 +194,7 @@ $result = $api->get("databases");
 // print the result
 print_r($result);
 ```
+
+## Meer informatie
+
+* [Overzicht van alle API calls](./rest-api)

@@ -1,16 +1,16 @@
 # REST API: the fields parameter
 
-There are several API methods that are able to use the *fields* parameter 
+There are several API methods that are able to use the **fields** parameter 
 in the URL to select profiles and subprofiles. You could use this, for example, 
 to only select profiles where "country" is "the netherlands", or profiles 
 aged between 18 en 65.
 
-The *fields* parameter is an array, which means square brackets should be 
+The **fields** parameter is an array, which means square brackets should be 
 added after the name of the variable in the URL. The variable may even be 
 used multiple times. The following URL demonstrates how the variable *fields[]* 
 can occur twice:
 
-`https://api.copernica.com/v1/database/$id/profiles?fields[]=land%3D%3Dnetherlands&fields[]=age%3E16&access_token=xxxx`
+`https://api.copernica.com/v2/database/$id/profiles?fields[]=land%3D%3Dnetherlands&fields[]=age%3E16&access_token=xxxx`
 
 ## Supported values
 
@@ -23,7 +23,7 @@ like "country==netherlands" or "age>18". The following operators are available:
 * **&lt;=**, **&gt;=**: smaller or equal to, greater or equal to
 * **=~** en **!~**: *like*, *not like*
 
-The *like* and *not like* operators can be used to match profiles. If you use 
+The "like" and "not like" operators can be used to match profiles. If you use 
 such an operator you can use the % and \_ wildcards. The \_ replaces exactly 
 one token, regardless of what that token is. The % matches a series of tokens 
 of any length. You could specifically fetch all profiles with a first name 
