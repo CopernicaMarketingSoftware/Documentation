@@ -1,14 +1,13 @@
-# REST API: GET message events
+# REST API: GET message events (Marketing Suite)
 
 Als je events bij een met Marketing Suite verstuurd bericht wilt
 downloaden, dan kun je die opvragen door middel van een eenvoudige
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v1/message/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/message/$id/events?access_token=xxxx`
 
-De **$id** moet je vervangen door de unieke string van het bericht waarvoor 
-je de gebeurtenissen wilt hebben. 
-
+De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
+je de gebeurtenissen wilt hebben.
 
 ## Beschikbare parameters
 
@@ -16,7 +15,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
 - **end**: de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden
-
 
 ## Start en end
 
@@ -76,11 +74,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("message/1sadf323/events", $parameters));
+print_r($api->get("message/{$berichtID}/events", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

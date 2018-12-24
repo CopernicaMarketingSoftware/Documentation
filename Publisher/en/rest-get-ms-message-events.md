@@ -1,4 +1,4 @@
-# REST API: GET message events
+# REST API: GET message events (Marketing Suite)
 
 If you are interested in the events of a message sent with Marketing Suite
 you can make a GET request to the following URL:
@@ -67,7 +67,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("message/dkJDF343Df/events", $parameters));
+print_r($api->get("message/{$messageID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

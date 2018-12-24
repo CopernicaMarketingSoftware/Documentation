@@ -4,9 +4,9 @@ A miniview is to a collection what view is to the database. To retrieve
 the rules of such a selection you can send an HTTP GET request to this 
 address:
 
-`https://api.copernica.com/v1/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id/rules?access_token=xxxx`
 
-The $id code should be replaced with the numeric identifier of the selection
+The `$id` should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.
 
 ## Supported parameters
@@ -17,7 +17,7 @@ You can add one or more of the following parameters to the URL:
 - **limit**: max size of the requested batch
 - **total**: show/hide the total number of matching rules
 
-You can find more information about the *start*, *limit* and *total* parameters 
+You can find more information about the **start**, **limit** and **total** parameters 
 in our [paging article](./rest-paging.md). 
 
 ## The returned properties
@@ -36,10 +36,7 @@ If set to "True" only profiles *not* conforming to the conditions are selected
 
 ## PHP example
 
-The following script can be used to fetch rules from a selection. The 
-CopernicaRestApi class that we use in the example takes care of escaping the
-parameters that are passed to the URL. If you write your own code to construct
-the URL, you must take care of escaping the parameters yourself.
+The following script can be used to fetch rules from a selection.
 
 ```php
 // dependencies
@@ -54,9 +51,9 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("view/1234/rules", $parameters));
+print_r($api->get("view/{$viewID}/rules", $parameters));
 ```
-
+    
 The example above requires the [CopernicaRestApi class](rest-php).
     
 ## More information

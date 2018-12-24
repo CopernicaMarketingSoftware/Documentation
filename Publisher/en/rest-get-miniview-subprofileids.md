@@ -3,9 +3,9 @@
 A simple method for fetching the identifiers of all subprofiles in a miniselection.
 Execute this method by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/miniview/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id/subprofileids?access_token=xxxx`
 
-The $id should be replaced by the numerical identifier of the miniselection 
+The `$id` should be replaced by the numerical identifier of the miniselection 
 you want to fetch the IDs of.
 
 ## Available parameters
@@ -28,7 +28,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // execute the call and print the result
-print_r($api->get("miniview/1234/subprofileids"));
+print_r($api->get("miniview/{$miniviewID}/subprofileids"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -1,11 +1,12 @@
 # REST API: GET miniview rules
 
-Een miniview is voor een collectie wat een view/selectie is voor een database. Om de regels van zo'n miniview op te vragen kun je een HTTP GET verzoek versturen naar de volgende URL:
+Een miniview is voor een collectie wat een view/selectie is voor een database. 
+Om de regels van zo'n miniview op te vragen kun je een HTTP GET verzoek 
+versturen naar de volgende URL:
 
-`https://api.copernica.com/v1/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id/rules?access_token=xxxx`
 
-De **$id** moet vervangen worden door de ID van de selectie van een collectie waarvoor je de regels op wilt vragen.
-
+De `$id` moet vervangen worden door de ID van de selectie van een collectie waarvoor je de regels op wilt vragen.
 
 ## Ondersteunde parameters
 
@@ -18,7 +19,6 @@ Je kunt een of meerdere van de volgende parameters aan de URL toevoegen:
 Je kunt meer informatie vinden over de *start*, *limit* en *total* parameters 
 in ons [artikel over paging](./rest-paging.md). 
 
-
 ## Teruggegeven eigenschappen
 
 Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSON object met de volgende eigenschappen:
@@ -30,10 +30,10 @@ Deze methode geeft een lijst van regels terug. Elk item in deze lijst is een JSO
 - **inversed**: waarde die aangeeft of de regel een inverse is. Als deze variabele waar is worden profielen teruggegeven als ze de regel niet *matchen*
 - **conditions**: array van voorwaarden voor de regel
 
-
 ## Voorbeeld in PHP
 
-Het volgende script kan gebruikt worden om de regels van een selectie op te vragen. De CopernicaRestApi klasse die we gebruiken zorgt ervoor dat je niet op speciale karakters hoeft te letten, maar als je zelf code schrijft om de URL op te stellen moet dit wel.
+Het volgende script kan gebruikt worden om de regels van een selectie op 
+te vragen.
 
 ```php
 // vereiste scripts
@@ -48,11 +48,10 @@ $parameters = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("view/1234/rules", $parameters));
+print_r($api->get("view/{$viewID}/rules", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

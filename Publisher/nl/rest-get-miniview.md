@@ -1,16 +1,17 @@
 # REST API: GET miniview
 
-Een methode om alle metadata van een selectie binnen een collectie op te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen met een HTTP GET verzoek aan de volgende URL:
+Een methode om alle metadata van een selectie binnen een collectie op 
+te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen 
+met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v1/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id?access_token=xxxx`
 
-De **$id** hier moet vervangen worden door de ID of de naam van de collectie waarvoor je de selecties op wil vragen.
-
+De `$id` hier moet vervangen worden door de ID of de naam van de collectie 
+waarvoor je de selecties op wil vragen.
 
 ## Ondersteunde parameters
 
 Er zijn geen ondersteunde parameters voor deze methode.
-
 
 ## Teruggegeven velden
 
@@ -20,7 +21,6 @@ Er zijn geen ondersteunde parameters voor deze methode.
 - **parent-type**: bovenliggende structuur van de selectie; selectie of collectie
 - **parent-id**: ID van de bovenliggende selectie/collectie
 - **collection**: ID van de collectie waar deze miniselectie onder valt.
-
 
 ## Voorbeeld in PHP
 
@@ -34,11 +34,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("view/id"));
+print_r($api->get("view/{$viewID}"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 

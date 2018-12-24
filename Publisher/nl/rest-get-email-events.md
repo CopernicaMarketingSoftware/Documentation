@@ -3,11 +3,10 @@
 Als je events voor een e-mailadres wilt downloaden, dan kun je die opvragen
 door middel van een eenvoudige HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v1/email/$adres/events?access_token=xxxx`
+`https://api.copernica.com/v2/email/$adres/events?access_token=xxxx`
 
-Het **$adres** moet je vervangen door het e-mailadres waarvoor je de gebeurtenissen
+Het `$adres` moet je vervangen door het e-mailadres waarvoor je de gebeurtenissen
 wilt hebben. 
-
 
 ## Beschikbare parameters
 
@@ -16,7 +15,6 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 - **start**: de start datum (jjjj-mm-dd) vanaf wanneer de events gedownload worden,
 - **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload worden,
 - **tags**:  optionele tags waarop gefilterd wordt.
-
 
 ## Start en end
 
@@ -32,13 +30,11 @@ mee dat de data als een UTC datum geïnterpreteerd wordt. Deze datum begint
 tijd. Houd er ook rekening mee dat de beperking van de periode tot een
 maand gewijzigd kan worden als als de performance dit vereist.
 
-
 ## Tags
 
 Als er een tag parameter opgegeven wordt, worden de events ook gefilterd
 op de tag. Als je op meerdere tags tegelijkertijd wilt filteren, dan kun
 je meerdere tags gescheiden door puntkomma's opgeven.
-
 
 ## Geretourneerde informatie
 
@@ -65,7 +61,6 @@ ziet er als volgt uit:
 De **event** property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagnina](./event-types.md).
 
-
 ## PHP Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
@@ -83,11 +78,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("email/john.doe@example.com/events", $parameters));
+print_r($api->get("email/{$emailAdres}/events", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

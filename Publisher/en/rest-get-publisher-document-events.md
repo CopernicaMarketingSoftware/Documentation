@@ -1,11 +1,11 @@
-# REST API: GET template events
+# REST API: GET Publisher document events
 
-To request the events for a Marketing Suite template you can send an HTTP GET
+To request the events for a Publisher document you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v1/template/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx`
 
-The `$id` should be replaced with the numerical identifier of the template 
+The `$id` should be replaced with the numerical identifier of the document 
 you're requesting the events of.
 
 ## Available parameters
@@ -26,14 +26,13 @@ the end. If you provide both a start and an end and the interval between
 the two is longer than a month, it will be shortened to a month where the
 start is leading. Take into account that the dates are treated as UTC dates.
 Also take into account that the monthly period limitation is subject to
-change if performance requires this.
+change if performance requires this
 
 ### Tags
 
 If you provide a tags parameter, your events will also be filtered on the
 provided tag. If you filter on multiple tags you can separate the tags
 with a semicolon.
-
 
 ## Returned fields
 
@@ -56,9 +55,9 @@ This method returns a JSON containing all the events.
     ...
 ]
 ```
-The `event` property in the JSON describes which type of event it is. The types that
-are available are listed in the [event types page](./event-types.md).
 
+The **event** property in the JSON describes which type of event it is. The types that
+are available are listed in the [event types page](./event-types.md).
 
 ## PHP Example
 
@@ -67,7 +66,7 @@ The following PHP script demonstrates how to use the API method.
 ```php
 // dependencies
 require_once('copernica_rest_api.php');
-    
+   
 // change this into your access token
 $api = new CopernicaRestApi("your-access-token");
     
@@ -77,7 +76,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("template/1234/events", $parameters));
+print_r($api->get("publisher/document/{$documentID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -4,9 +4,9 @@ Subprofiles are to a collection what regular profiles are to a database.
 To request the subprofiles that represent a certain profile from a 
 miniview you can send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v1/miniview/$id/subprofile?access_token=xxxx`
+`https://api.copernica.com/v2/miniview/$id/subprofile?access_token=xxxx`
 
-The $id should be replaced with the numerical identifier of the miniview 
+The `$id` should be replaced with the numerical identifier of the miniview 
 you're requesting the subprofiles of.
 
 ## Returned fields
@@ -34,7 +34,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("miniview/1234/subprofiles"));
+print_r($api->get("miniview/{$miniviewID}/subprofiles"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

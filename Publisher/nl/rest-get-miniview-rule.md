@@ -1,11 +1,15 @@
 # REST API: GET miniview rule
 
-Selecties gebruiken regels om te bepalen welke profielen zij bevatten. Profielen die tenminste een selectie regel matchen worden geselecteerd. Om de eigenschappen en condities van een enkele regel op te vragen kun je een HTTP GET verzoek sturen naar de volgende URL:
+Selecties gebruiken regels om te bepalen welke profielen zij bevatten. 
+Profielen die tenminste een selectie regel matchen worden geselecteerd. 
+Om de eigenschappen en condities van een enkele regel op te vragen kun 
+je een HTTP GET verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/miniview/$id/minirule/$id?access_token=xxxx`
 
-De eerste **$id** moet vervangen worden met de numerieke identifier van de miniview waarvan je een regel wil opvragen. De tweede **$id** moet de ID van de regel zijn.
-
+De eerste `$id` moet vervangen worden met de numerieke identifier van 
+de miniview waarvan je een regel wil opvragen. De tweede `$id` moet 
+de ID van de regel zijn.
 
 ## De teruggegeven velden
 
@@ -41,7 +45,6 @@ De precieze eigenschappen hangen af van het type van de voorwaarde. Voor een ove
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
@@ -54,11 +57,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("miniview/1234/minirule/12"));
+print_r($api->get("miniview/{$miniviewID}/minirule/{$regelID}"));
 ```
 
 Dit voorbeeld vereist de [REST API class](rest-php).
-
 
 ## Meer informatie
 
