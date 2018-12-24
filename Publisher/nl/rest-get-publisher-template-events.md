@@ -8,6 +8,8 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL:
 De `$id` moet je vervangen door de numerieke identifier van de template
 waarvoor je de gebeurtenissen wilt hebben.
 
+Je kunt de events voor een Marketing Suite template [hier](./rest-get-ms-template-events) vinden.
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -59,7 +61,7 @@ ziet er als volgt uit:
 ]
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## Voorbeeld
 

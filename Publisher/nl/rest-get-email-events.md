@@ -1,9 +1,9 @@
-# REST API: GET email events
+# REST API: GET email events 
 
 Als je events voor een e-mailadres wilt downloaden, dan kun je die opvragen
 door middel van een eenvoudige HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/email/$adres/events?access_token=xxxx`
+`https://api.copernica.com/v2/ms/email/$adres/events?access_token=xxxx`
 
 Het `$adres` moet je vervangen door het e-mailadres waarvoor je de gebeurtenissen
 wilt hebben. 
@@ -59,7 +59,7 @@ ziet er als volgt uit:
 ]
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
+types staan beschreven op de [event types pagina](./event-types.md).
 
 ## PHP Voorbeeld
 

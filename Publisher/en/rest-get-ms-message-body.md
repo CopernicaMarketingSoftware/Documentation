@@ -3,7 +3,7 @@
 If you want to retrieve the body of a message sent with Marketing Suite 
 you can send a GET request to the following URL:
 
-`https://api.copernica.com/v2/message/$id/body/$type?access_token=xxx`
+`https://api.copernica.com/v2/ms/message/$id/body/$type?access_token=xxx`
 
 where `$id` is the unique string that identifies a message and `$type` is 
 the format for the message. Don't forget to add your access token! 

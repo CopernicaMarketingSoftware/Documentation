@@ -7,6 +7,8 @@ can make a GET request to the following URL:
 
 where `$id` is the unique string that identifies a message. 
 
+You can find the events for a Marketing Suite message [here](./rest-get-ms-message-events).
+
 ## Available parameters
 
 The following parameters can be added to the URL as variables:

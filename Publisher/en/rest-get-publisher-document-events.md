@@ -1,4 +1,4 @@
-# REST API: GET Publisher document events
+# REST API: GET document events (Publisher)
 
 To request the events for a Publisher document you can send an HTTP GET
 request to the following URL:

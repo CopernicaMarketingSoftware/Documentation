@@ -1,11 +1,13 @@
-# REST API: GET message
+# REST API: GET message (Marketing Suite)
 
 If you want to get some general information from a mail sent with Marketing
 Suite you can make a simple a GET request to the following URL:
 
-`https://api.copernica.com/v2/message/$id?access_token=xxxx`
+`https://api.copernica.com/v2/ms/message/$id?access_token=xxxx`
 
 where `$id` is the unique string that identifies a message. 
+
+You can find the call to retrieve a Publisher message [here](./rest-get-publisher-message).
 
 ## Return value
 
@@ -23,7 +25,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("message/{$messsageID}"));
+print_r($api->get("ms/message/{$messsageID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

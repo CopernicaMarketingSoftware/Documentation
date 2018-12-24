@@ -7,6 +7,8 @@ you can make a simple a GET request to the following URL:
 
 where `$id` is the unique string that identifies a message. 
 
+You can find the call to retrieve a Marketing Suite message [here](./rest-get-ms-message).
+
 ## Return value
 
 A JSON with the general information about the message.

@@ -3,10 +3,12 @@
 To request the events for a Marketing Suite template you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v2/template/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the template 
 you're requesting the events of.
+
+You can find the events for a Publisher template [here](./rest-get-publisher-template-events).
 
 ## Available parameters
 
@@ -77,7 +79,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("template/{$templateID}/events", $parameters));
+print_r($api->get("ms/template/{$templateID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

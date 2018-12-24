@@ -7,6 +7,8 @@ hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
 De `$id` moet hier vervangen worden door de unieke identifier van het bericht.
 
+Je kunt de methode om een Marketing Suite bericht op te vragen [hier](./rest-get-ms-message) vinden.
+
 ## Geretourneerde waarde
 
 Een JSON met de algemene informatie.

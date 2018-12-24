@@ -9,6 +9,8 @@ URL:
 De `$id` moet je vervangen door de numerieke identifier van de template
 waarvoor je de gebeurtenissen wilt hebben.
 
+Je kunt de events voor een Publisher template [hier](./rest-get-publisher-template-events) vinden.
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -81,7 +83,7 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("template/{$templateID}/events", $parameters));
+print_r($api->get("ms/template/{$templateID}/events", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

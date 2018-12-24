@@ -9,6 +9,9 @@ de volgende URL:
 De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben. 
 
+Je kunt de events voor een Marketing Suite message [hier](./rest-get-ms-message-events) 
+vinden.
+
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -54,7 +57,7 @@ ziet er als volgt uit:
 ]
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
+types staan beschreven op de [event types pagina](./event-types.md).
 
 
 ## Voorbeeld

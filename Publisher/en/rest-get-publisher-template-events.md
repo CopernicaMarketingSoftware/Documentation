@@ -8,6 +8,8 @@ request to the following URL:
 The `$id` should be replaced with the numerical identifier of the template 
 you're requesting the events of.
 
+You can find the events for a Marketing Suite template [here](./rest-get-ms-template-events).
+
 ## Available parameters
 
 The following parameters can be added to the URL as variables:

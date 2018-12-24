@@ -4,10 +4,13 @@ Als je events bij een met Marketing Suite verstuurd bericht wilt
 downloaden, dan kun je die opvragen door middel van een eenvoudige
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/message/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx`
 
 De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben.
+
+Je kunt de events voor een Publisher message [hier](./rest-get-publisher-message-events) 
+vinden.
 
 ## Beschikbare parameters
 
@@ -54,7 +57,7 @@ ziet er als volgt uit:
 ```
 
 De **event** property in de JSON geeft het type event weer. De mogelijke
-types staan beschreven op de [event types pagnina](./event-types.md).
+types staan beschreven op de [event types pagina](./event-types.md).
 
 
 ## Voorbeeld
@@ -74,7 +77,7 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("message/{$berichtID}/events", $parameters));
+print_r($api->get("ms/message/{$berichtID}/events", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

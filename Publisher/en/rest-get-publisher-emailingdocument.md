@@ -1,4 +1,5 @@
-# REST API: GET emailingdocument
+# REST API: GET emailingdocument (Publisher)
+
 A method to request all metadata from an emailingdocument. This method does not 
 support parameters. By sending a GET request to the following URL, 
 you can fetch the emailingdocument metadata:

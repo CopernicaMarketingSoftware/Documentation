@@ -1,12 +1,11 @@
-# REST API: GET (Publisher) emailings
+# REST API: GET emailings (Publisher)
 
 A method to request a list of all mailings sent from Publisher. 
 This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v2/old/emailings?access=token=xxxx`
+`https://api.copernica.com/v2/publisher/emailings?access=token=xxxx`
 
-The corresponding method for the Marketing suite can be found 
-[here](./rest-get-ms-emailings).
+You can find all the call to retrieve all Marketing Suite emailings [here](./rest-get-ms-emailings).
 
 ## Available parameters
 
@@ -62,7 +61,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("old/emailings", $parameters));
+print_r($api->get("publisher/emailings", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](./rest-php).

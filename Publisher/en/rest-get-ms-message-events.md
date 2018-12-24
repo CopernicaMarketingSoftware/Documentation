@@ -3,9 +3,11 @@
 If you are interested in the events of a message sent with Marketing Suite
 you can make a GET request to the following URL:
 
-`https://api.copernica.com/v2/message/$id/events/?access_token=xxxx`
+`https://api.copernica.com/v2/ms/message/$id/events/?access_token=xxxx`
 
-where `$id` is the unique string that identifies a message.
+The `$id` here is the unique string that identifies a message.
+
+You can find the events for a Publisher message [here](./rest-get-publisher-message-events).
 
 ## Available parameters
 
@@ -67,7 +69,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("message/{$messageID}/events", $parameters));
+print_r($api->get("ms/message/{$messageID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
