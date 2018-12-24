@@ -1,14 +1,13 @@
-# REST API: GET old message events
+# REST API: GET message events (Publisher)
 
 Als je events bij een met Publisher verstuurd bericht wilt downloaden,
 dan kun je die opvragen door middel van een eenvoudige HTTP GET call naar
 de volgende URL:
 
-`https://api.copernica.com/v1/old/message/$id/events?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx`
 
-De **$id** moet je vervangen door de unieke string van het bericht waarvoor 
+De `$id` moet je vervangen door de unieke string van het bericht waarvoor 
 je de gebeurtenissen wilt hebben. 
-
 
 ## Beschikbare parameters
 
@@ -75,11 +74,10 @@ $parameters = array(
 );
 
 // voer de methode uit en print het resultaat
-print_r($api->get("old/message/1sadf323/events", $parameters));
+print_r($api->get("publisher/message/{$berichtID}/events", $parameters));
 ```
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
-
-## More information## Meer informatie
+## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)

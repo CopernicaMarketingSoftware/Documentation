@@ -1,17 +1,15 @@
-# REST API: GET old message
+# REST API: GET message (Publisher)
 
 Als je algemene informatie van een met Publisher verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
-`https://api.copernica.com/v1/old/message/$id?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/message/$id?access_token=xxxx`
 
-waar **$id** de unieke string van het bericht is.
-
+De `$id` moet hier vervangen worden door de unieke identifier van het bericht.
 
 ## Geretourneerde waarde
 
 Een JSON met de algemene informatie.
-
 
 ## Voorbeeld
 
@@ -25,11 +23,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // voer de methode uit en print het resultaat
-print_r($api->get("old/message/AMRJHv989dfds"));
+print_r($api->get("publisher/message/{$berichtID}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
-
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

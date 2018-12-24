@@ -3,7 +3,7 @@ A method to request all metadata from an emailingdocument. This method does not
 support parameters. By sending a GET request to the following URL, 
 you can fetch the emailingdocument metadata:
 
-`https://api.copernica.com/v1/emailingdocument/$id?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/emailingdocument/$id?access_token=xxxx`
 
 where `$id` should be replaced by the identifier of the emailingdocument you want 
 to get the metadata of.
@@ -11,15 +11,10 @@ to get the metadata of.
 ## Returned fields
 
 - **id**: unique numerical identifier
-
 - **template_id**: unique numerical identifier of template
-
 - **name**: name of document
-
 - **from_address**: from address of document
-
 - **subject**: subject of document
-
 - **source**: source of document
 
 ## PHP example
@@ -34,7 +29,11 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestApi("your-access-token");
 
 // do the call, and print result
-print_r($api->get("emailingdocument/1234"));
+print_r($api->get("publisher/emailingdocument/{$documentID}"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
+
+## More information
+
+* [List of all API calls](rest-api)

@@ -1,9 +1,9 @@
-# REST API: GET Publisher message events
+# REST API: GET message events (Publisher)
 
 If you are interested in the events of a message sent with Publisher you
 can make a GET request to the following URL:
 
-`https://api.copernica.com/v1/old/message/$id/events/?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/message/$id/events/?access_token=xxxx`
 
 where `$id` is the unique string that identifies a message. 
 
@@ -48,7 +48,7 @@ A JSON with all the events for this message.
     ...
 ]
 ```
-The `event` property in the JSON describes which type of event it is. The types that
+The **event** property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
 
 
@@ -69,7 +69,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("old/message/dkJDF343Df/events", $parameters));
+print_r($api->get("publisher/message/{$messageID}/events", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
