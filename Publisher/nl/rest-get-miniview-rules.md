@@ -51,7 +51,7 @@ $parameters = array(
 print_r($api->get("view/{$viewID}/rules", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

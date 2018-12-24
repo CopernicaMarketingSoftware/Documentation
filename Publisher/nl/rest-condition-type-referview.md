@@ -36,7 +36,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$result = $api->post("rule/id/conditions", $data);
+$result = $api->post("rule/{$regelID}/conditions", $data);
 
 // print het resultaat
 print_r($result);
@@ -46,7 +46,7 @@ Het is ook mogelijk om een overkoepelende view te maken, die juist wel
 uit de andere views selecteert. Je kunt dit doen door check-type op 
 "yes" in plaats van "no" te zetten.
 
-Dit voorbeeld vereist de [REST API class](./rest-php).
+Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 ## Meer informatie
 

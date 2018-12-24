@@ -56,7 +56,7 @@ $parameters = array(
 print_r($api->get("view/{$view}/views", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

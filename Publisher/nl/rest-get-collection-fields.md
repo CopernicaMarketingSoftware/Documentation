@@ -9,7 +9,6 @@ sturen naar het volgende adres:
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
@@ -50,7 +49,7 @@ $parameters = array(
 print_r($api->get("collection/{$collectieID}/fields", $parameters));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

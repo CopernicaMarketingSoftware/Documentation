@@ -37,7 +37,7 @@ $api = new CopernicaRestApi("your-access-token");
 print_r($api->get("profile/{$profielID}/subprofiles/{$collectieID}"));
 ```
 
-Dit voorbeeld vereist de [REST API class](rest-php).
+Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 

@@ -85,13 +85,13 @@ $data = array(
 );
 
 // voer het verzoek uit
-$result = $api->post("rule/id/conditions", $data);
+$result = $api->post("rule/{$regelID}/conditions", $data);
 
 // print het resultaat
 print_r($result);
 ```
 
-Dit voorbeeld vereist de [REST API class](./rest-php).
+Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 ## Meer informatie
 
