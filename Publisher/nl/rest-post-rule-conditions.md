@@ -1,6 +1,6 @@
 # REST API: POST rule conditions
 
-Een methode om condities voor een regel aan te maken. 
+Een methode om een conditie voor een regel aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 `https://api.copernica.com/v2/rule/$id/conditions?access_token=xxxx`

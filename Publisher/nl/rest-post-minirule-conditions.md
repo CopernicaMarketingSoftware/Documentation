@@ -1,6 +1,6 @@
 # REST API: POST minirule conditions
 
-Een methode om condities voor een miniregel aan te passen. De methode kan 
+Een methode om een conditie aan een miniregel toe te voegen. De methode kan 
 aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
 `https://api.copernica.com/v2/minirule/$id/conditions?access_token=xxxx`

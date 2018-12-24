@@ -1,6 +1,6 @@
 # REST API: POST minirule condition
 
-A method to add conditions for a minirule. It is called by sending an 
+A method to add a condition for a minirule. It is called by sending an 
 HTTP POST request to the following URL:
 
 `https://api.copernica.com/v2/minirule/$id/conditions?access_token=xxxx`

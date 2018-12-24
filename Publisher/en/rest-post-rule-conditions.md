@@ -1,6 +1,6 @@
 # REST API: POST rule conditions
 
-A method to add conditions for a rule. It is called by sending an HTTP POST request to the following URL:
+A method to add a condition for a rule. It is called by sending an HTTP POST request to the following URL:
 
 `https://api.copernica.com/v2/rule/$id/conditions?access_token=xxxx`
 

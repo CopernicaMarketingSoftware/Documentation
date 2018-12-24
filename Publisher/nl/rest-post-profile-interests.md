@@ -1,6 +1,6 @@
 # REST API: POST profile interests
 
-Om een subprofiel aan een profiel toe te voegen, kun je een HTTP POST
+Om interesses aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
 
 `https://api.copernica.com/v2/profile/$id/subprofiles?access_token=xxxx`

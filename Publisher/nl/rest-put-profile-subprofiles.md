@@ -1,6 +1,6 @@
 # REST API: PUT profile subprofiles
 
-Je kunt een subprofile bewerken door een HTTP PUT request sturen naar de volgende 
+Je kunt een subprofiel bewerken door een HTTP PUT request sturen naar de volgende 
 URL:
 
 `https://api.copernica.com/v2/subprofile/$id/fields?access_token=xxxx`
