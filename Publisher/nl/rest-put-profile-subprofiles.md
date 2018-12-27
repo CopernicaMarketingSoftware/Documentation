@@ -1,4 +1,4 @@
-# REST API: PUT profile subprofiles
+# REST API: PUT profiel subprofielen
 
 Je kunt een subprofiel bewerken door een HTTP PUT request sturen naar de volgende 
 URL:
@@ -40,7 +40,7 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [POST profile subprofiles](rest-post-profile-subprofiles)
-* [PUT profile interests](rest-put-profile-interests)
-* [GET subprofile](rest-get-subprofile)
-* [DELETE subprofile](rest-delete-subprofile)
+* [POST profiel subprofielen](rest-post-profile-subprofiles)
+* [PUT profiel interesses](rest-put-profile-interests)
+* [GET subprofiel](rest-get-subprofile)
+* [DELETE subprofiel](rest-delete-subprofile)
