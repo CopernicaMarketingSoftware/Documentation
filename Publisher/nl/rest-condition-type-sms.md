@@ -67,7 +67,7 @@ toch nog naar een specifieke selectie e-mail kan worden verstuurd.
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 $data = array(
     // selecteer sms conditie

@@ -60,7 +60,7 @@ te vragen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("logfiles/{$bestandsnaam}/json"));

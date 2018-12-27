@@ -16,7 +16,7 @@ respective order:
 | tags         | The tags of the mail (semicolon separated)              |
 | countrycode  | The country code in which the impression took place     |
 | countryname  | The country name in which the impression took place     |
-| regioncode   | The region code in which the impressiosn took place     |
+| regioncode   | The region code in which the impression took place     |
 | city         | The city in which the impression took place             |
 | senderdomain | The sender domain from which the original mail was sent |
 | profile      | The ID of the profile                                   |

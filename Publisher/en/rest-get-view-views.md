@@ -42,7 +42,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters to pass to the call
 $parameters = array(

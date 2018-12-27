@@ -26,7 +26,7 @@ het maximum aantal subprofielen in de miniview zetten.
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 $data = array(
     // selecteer miniview conditie

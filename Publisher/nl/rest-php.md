@@ -186,7 +186,7 @@ API gebruikt worden om compatibel te blijven met bestaande scripts.
 require_once('copernica_rest_api.php');
 
 // create an api object (add your own access token!)
-$api = new CopernicaRestApi("my-access-token", $versie);
+$api = new CopernicaRestAPI("my-access-token", $versie);
 
 // do the call
 $result = $api->get("databases");

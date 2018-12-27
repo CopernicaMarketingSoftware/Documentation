@@ -32,7 +32,7 @@ The following script demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // field values for the profile
 $data = array(

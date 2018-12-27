@@ -9,13 +9,13 @@ respective order:
 
 | Data         | Description                                              |
 | ------------ | -------------------------------------------------------- |
-| id           | The id of the message that triggered the error           |
+| id           | The ID of the message that triggered the error           |
 | time         | The time when the error was reported to us               |
 | type         | The type of error                                        |
 | status       | The status of the error                                  |
 | description  | The description of the error                             |
 | code         | The error code                                           |
-| content      |                                                          |
+| content      | The content of the error message                         |
 | email        | The email address to which the original message was sent |
 | tags         | The tags of the message (semicolon separated             |
 | senderdomain | The sender domain name that was used                     |

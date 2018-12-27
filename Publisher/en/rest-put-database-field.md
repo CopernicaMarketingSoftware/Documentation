@@ -37,11 +37,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestApi("your-access-token");
-
-// declare the id of the database and field that you want to edit
-$database = 1;
-$field = 2;
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // data to be sent to the api
 $data = array(

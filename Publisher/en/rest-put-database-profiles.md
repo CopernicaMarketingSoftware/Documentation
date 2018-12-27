@@ -55,7 +55,7 @@ field is set to 4567 and insert new profile data.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // declare the id of the database that you want to edit
 $id = 1;

@@ -35,7 +35,7 @@ Voorbeeld:
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // get the status of the data request (don't forget the id)
 $api->get("datarequest/{$verzoekID}/status")

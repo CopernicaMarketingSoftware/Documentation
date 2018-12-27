@@ -62,11 +62,12 @@ te worden berekend. Dit maakt de API call iets sneller.
 Onderstaand voorbeeld demonstreert hoe je van de complete lijst van databases 
 alleen de tweede vijf items kunt opvragen.
 
+```php
     // required code
     require_once('copernica_rest_api.php');
     
     // change this into your access token
-    $api = new CopernicaRestApi("private-access-token")
+    $api = new CopernicaRestAPI("your-access-token", 2);
 
     // parameters to be passed to the api
     $parameters = array(
@@ -77,6 +78,7 @@ alleen de tweede vijf items kunt opvragen.
 
     // fetch and print the databases
     print_r($api->get("databases", $parameters));
+```
 
 Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
 

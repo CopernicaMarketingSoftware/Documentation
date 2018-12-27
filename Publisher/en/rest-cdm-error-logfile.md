@@ -8,7 +8,7 @@ respective order:
 
 | Data         | Description                                              |
 | ------------ | -------------------------------------------------------- |
-| id           | The id of the message that triggered the error           |
+| id           | The ID of the message that triggered the error           |
 | time         | The time when the error was reported to us               |
 | type         | The type of error                                        |
 | status       | The status of the error                                  |

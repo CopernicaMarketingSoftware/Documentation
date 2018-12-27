@@ -59,7 +59,7 @@ Het volgende script kan gebruikt worden om de eigenschappen van een regel op te 
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer de methode uit en print het resultaat
 print_r($api->get("view/{$view}/rule/{4regelID}"));

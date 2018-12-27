@@ -8,7 +8,7 @@ respective order:
 
 | Data         | Description                                                                    |
 | ------------ | ------------------------------------------------------------------------------ |
-| id           | The id of the message that was delivered                                       |
+| id           | The ID of the message that was delivered                                       |
 | time         | The time of the delivery                                                       |
 | attempts     | The number of attempts needed before delivery was successful (starting from 0) |
 | email        | The email address of the delivery                                              |

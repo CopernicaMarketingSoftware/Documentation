@@ -11,7 +11,7 @@ respective order:
 | id           | The ID of the message from which was clicked            |
 | senderdomain | The sender domain from which the message was sent       |
 | time         | The time when the click occurred                        |
-| linkinfo     | The link id                                             |
+| linkinfo     | The link ID                                             |
 | ip           | The IP address that clicked                             |
 | header       | The header of the request form the click                |
 | email        | The email address to which the mail was originally sent |

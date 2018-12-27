@@ -57,7 +57,7 @@ van speciale karakters; dit wordt automatisch afgehandeld.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters om aan de call mee te geven
 $parameters = array(

@@ -31,7 +31,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("view/{$viewID}"));

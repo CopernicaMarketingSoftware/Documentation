@@ -28,7 +28,7 @@ die van een reguliere selectie.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $data = array(

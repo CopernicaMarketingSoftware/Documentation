@@ -7,18 +7,18 @@ These log files contain the following data in the respective order:
 
 | Data         | Description                               |
 | ------------ | ----------------------------------------- |
-| id           | A unique id that identifies each message  |
+| id           | A unique ID that identifies each message  |
 | time         | The time when the mail was sent           |
-| groupid      | The id of the group the mail belongs to   |
-| mailingid    | The id of the mailing                     |
-| profileid    | The id of the profile                     |
-| subprofileid | The id of the subprofile                  |
-| databaseid   | The id of the database                    |
-| collectionid | The id of the collection                  |
+| groupid      | The ID of the group the mail belongs to   |
+| mailingid    | The ID of the mailing                     |
+| profileid    | The ID of the profile                     |
+| subprofileid | The ID of the subprofile                  |
+| databaseid   | The ID of the database                    |
+| collectionid | The ID of the collection                  |
 | senderdomain | The sender domain that was used           |
 | templateid   | The ID of the used template               |
 | documentid   | The ID of the used document               |
-| tags         | The tags of the mail (semicolon separated |
+| tags         | The tags of the mail (semicolon separated)|
 | email        | The email to which the mail was sent      |
 
 ## Other logfile names

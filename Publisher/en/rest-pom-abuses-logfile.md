@@ -9,7 +9,7 @@ respective order:
 
 | Data         | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
-| id           | The id of the mail that triggered the abuse                  |
+| id           | The ID of the mail that triggered the abuse                  |
 | time         | The time when the abuse was reported                         |
 | mail         | The abuse mail                                               |
 | email        | The email address to which the original mail was sent        |

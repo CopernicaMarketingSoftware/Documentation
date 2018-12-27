@@ -23,7 +23,7 @@ The following PHP scripts is an example of how to call this API method:
 require_once('copernica_rest_api.php');
     
 // change this to your access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call and print the result.
 print_r($api->get("collection/{$collectionID}"));

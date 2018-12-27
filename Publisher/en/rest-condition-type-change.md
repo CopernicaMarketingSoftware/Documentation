@@ -56,11 +56,11 @@ We use a condition here when there has ever been a change in any of the
 data.
 
 ```php
-
+// dependencies
 require_once("copernica_rest_api.php");
 
 // change this to your access token
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // add data for the call
 $data = array(

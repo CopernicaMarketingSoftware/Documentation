@@ -22,7 +22,7 @@ The following PHP script demonstrates how the API method can be called.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // data to pass to the call, the new fields
 $data = array(

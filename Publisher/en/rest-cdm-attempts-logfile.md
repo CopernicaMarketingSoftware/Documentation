@@ -9,11 +9,11 @@ These log files contain the following data in the respective order:
 | ------------ | ------------------------------------------ |
 | id           | A unique id that identifies each message   |
 | time         | The time when the mail was sent            |
-| mailingid    | The id of the mailing                      |
-| profileid    | The id of the profile                      |
-| subprofileid | The id of the subprofile                   |
-| databaseid   | The id of the database                     |
-| collectionid | The id of the collection                   |
+| mailingid    | The ID of the mailing                      |
+| profileid    | The ID of the profile                      |
+| subprofileid | The ID of the subprofile                   |
+| databaseid   | The ID of the database                     |
+| collectionid | The ID of the collection                   |
 | senderdomain | The sender domain that was used            |
 | templateid   | The template id                            |
 | tags         | The tags of the mail (semicolon separated) |

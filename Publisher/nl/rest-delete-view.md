@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert het gebruik van deze methode met de API:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("your-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
 $api->delete("view/{$selectieID}");

@@ -27,7 +27,7 @@ Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestApi("jouw-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 // data voor de methode
 $data = array(

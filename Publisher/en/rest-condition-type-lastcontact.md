@@ -47,7 +47,7 @@ well. The following example shows such a condition.
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestApi("my-access-token");
+$api = new CopernicaRestAPI("your-access-token", 2);
 
 $data = array(
     // select lastcontact condition
