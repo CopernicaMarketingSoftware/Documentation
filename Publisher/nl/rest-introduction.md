@@ -1,29 +1,69 @@
 # De REST API in een notendop
 
-Je kunt gemakkelijk een applicatie aanmelden via het dashboard van de Copernica 
-website. Na het opgeven van een naam, krijg je een API key. Met deze key kun je
-vervolgens calls maken naar de Copernica REST API.
+De REST API is makkelijk om te gebruiken. Door middel van API calls worden 
+er HTTP verzoeken verstuurd naar de servers van Copernica om data 
+op te vragen (HTTP GET), aan te maken (HTTP POST), te updaten (HTTP PUT) 
+of te verwijderen (HTTP DELETE). Deze verzoeken worden behandeld door onze 
+API servers, waarna er eventueel data teruggestuurd kan worden in een 
+formaat dat makkelijk te begrijpen is voor een computer (JSON in dit geval).
 
-## HTTP requests
+## Registreren van je applicatie of website
 
-Met de REST API kun je HTTP requests sturen naar de servers van Copernica. 
-De requests worden door onze API servers verwerkt en de opgehaalde of bewerkte 
-data wordt in JSON formaat teruggestuurd. Copernica ondersteunt vier verschillende 
-soorten requests:
+Om ongeautoriseerde toegang te voorkomen wordt de API beschermd met access 
+token. Om de API te gebruiken moet je eerst je website of applicatie 
+registreren bij Copernica om een access token te ontvangen. 
 
-* HTTP GET voor het ophalen van data;
-* HTTP POST voor het toevoegen van nieuwe data;
-* HTTP PUT voor het bijwerken van bestaande data;
-* HTTP DELETE voor het verwijderen van data.
-* HTTP POST en HTTP PUT verschillen in de praktijk niet zoveel van elkaar. 
-Waar er een verschil wordt gemaakt wordt dit specifiek aangeduid binnen de 
-documentatie.
+Copernica gebruikt het [*OAuth*](./rest-oauth.md) protocol om applicaties 
+toegang te geven tot de API. Dit is een gestandaardizeerd protocol waarvoor 
+je eerst je website of applicatie moet registreren. Je kan dit doen met 
+het registratie formulier op het [dashboard](/nl/applications) van de 
+Copernica website. Het is niet mogelijk te registreren in de Marketing Suite 
+of Publisher omgevingen. Na het voltooien van de registratie kun je met een ander 
+formulier op het dashboard een of meerdere accounts linken aan je applicatie.
+
+Nadat je de applicatie geregistreerd hebt en aan je account hebt gelinkt 
+krijg je toegang tot je API access token. Dit is een lange reeks alphanumerieke 
+karakters die meegegeven moet worden aan elke call die je maakt. Als je 
+de access token hebt kun je testen of je toegang hebt tot de API met de 
+volgende URL, die je direct in je browser in kan voeren:
+
+`https://api.copernica.com/v2/identity?access_token=jouwaccesstoken`
+
+In de URL vervang je de tekst "jouwaccesstoken" met je eigen access token. 
+Als je het registratie proces succesvol hebt afgerond geeft deze methode 
+een JSON object met de naam van je bedrijf en account terug. 
+
+## HTTP verzoeken
+
+De REST API gebruikt het HTTP protocol voor het uitwisselen van data. Jouw 
+website of app kan simpelweg een HTTP verzoek sturen naar een van onze API 
+servers om toegang te krijgen tot de data opgeslagen door Copernica. Er 
+zijn vier type methodes die worden ondersteund door dit protocol:
+
+* **GET**: Vraagt data op
+* **POST**: Maakt data aan en voegt data toe
+* **PUT**: Past data aan
+* **DELETE**: Verwijdert data
+
+Het is hier belangrijk om de types te onderscheiden. Het verschil tussen 
+een HTTP GET of een HTTP POST verzoek is groot. Hoewel de URL voor beide 
+hetzelfde kan zijn bepaalt het type van de methode namelijk of er 
+data opgevraagd wordt (GET) of overschreven wordt (PUT)!
+
+In de praktijk is het verschil tussen HTTP POST en HTTP PUT minder groot. 
+Voor de meeste URL's worden POST en PUT verzoeken hetzelfde behandeld. 
+Als je een POST verzoek indient voor een methode die alleen PUT ondersteund 
+zullen we deze ook behandelen als een PUT call en andersom. Er zijn 
+echter een aantal methodes die PUT en POST verzoeken anders afhandelen. 
+Hierom adviseren wij het type methode dat genoemd wordt in de documentatie 
+te gebruiken, aangezien het mogelijk is dat API calls aangepast worden in 
+de toekomst.
 
 ## Meer informatie
 
-De volgende artikelen bevatten ook uitgebreide informatie over de REST API:
+De volgende artikelen bevatten meer informatie over de REST API:
 
-* [OAuth koppeling maken met de REST API](rest-oauth)
-* [Requests naar de API sturen en antwoorden verwerken](rest-requests)
-* [Overzicht van de beschikbare API methodes](rest-api)
-* [Veelgebruikte REST parameters bij het opvragen van lijsten](rest-paging)
+* [OAuth integraties met de REST API](./rest-oauth.md)
+* [Formaat van verzoeken en antwoorden](./rest-requests.md)
+* [Overzicht van alle API methodes](./rest-api.md)
+* [Paging](./rest-paging.md)
