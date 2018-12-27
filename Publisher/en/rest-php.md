@@ -17,6 +17,10 @@ class CopernicaRestAPI
      */
     private $token;
 
+    /**
+     *  The version
+     *  @var int
+     */
     private $version;
 
     /**
@@ -28,6 +32,7 @@ class CopernicaRestAPI
         // copy the token
         $this->token = $token;
         
+        // copy the version
         $this->version = $version;
     }
 
@@ -42,8 +47,6 @@ class CopernicaRestAPI
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
-        echo "https://api.copernica.com/v{$this->version}/$resource?$query".PHP_EOL;
-
         // construct curl resource
         $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
@@ -52,8 +55,6 @@ class CopernicaRestAPI
 
         // do the call
         $answer = curl_exec($curl);
-        
-        print_r($answer);
 
         // clean up curl resource
         curl_close($curl);

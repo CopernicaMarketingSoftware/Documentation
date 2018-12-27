@@ -18,6 +18,10 @@ class CopernicaRestAPI
      */
     private $token;
 
+    /**
+     *  The version
+     *  @var int
+     */
     private $version;
 
     /**
@@ -29,6 +33,7 @@ class CopernicaRestAPI
         // copy the token
         $this->token = $token;
         
+        // copy the version
         $this->version = $version;
     }
 
@@ -43,8 +48,6 @@ class CopernicaRestAPI
         // the query string
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
-        echo "https://api.copernica.com/v{$this->version}/$resource?$query".PHP_EOL;
-
         // construct curl resource
         $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
 
@@ -53,8 +56,6 @@ class CopernicaRestAPI
 
         // do the call
         $answer = curl_exec($curl);
-        
-        print_r($answer);
 
         // clean up curl resource
         curl_close($curl);
@@ -169,6 +170,29 @@ class CopernicaRestAPI
         return $answer;
     }
 }
+```
+
+## Use in your own application
+
+Just copy and paste the script in your own application. 
+The script below lets you call the API from every script. The version 
+variable should be replaced with a '2' for the newest version of the API. 
+It will default to the older version 1 for backwards compatibility with 
+existing scripts.
+
+```php
+<?php
+// required code
+require_once('copernica_rest_api.php');
+
+// create an api object (add your own access token!)
+$api = new CopernicaRestApi("my-access-token", $version);
+
+// do the call
+$result = $api->get("databases");
+
+// print the result
+print_r($result);
 ```
 
 ## Gebruik in eigen applicatie
