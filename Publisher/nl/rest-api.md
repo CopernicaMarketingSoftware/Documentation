@@ -2,13 +2,13 @@
 
 Met de REST API kun je automatische koppelingen met Copernica maken. 
 Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp 
-van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, geüpdatet of verwijderd.
-Dit gaat automatisch, dus buiten de *user interface* om.
+van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, 
+geüpdatet of verwijderd. Dit gaat automatisch, dus buiten de *user interface* om. 
+Deze pagina bevat een overzicht van alle API calls.
 
-* [Introductie: de REST API in een notendop](rest-introduction)
+* [Introductie en registratie](rest-introduction)
 * [HTTP requests versturen en ontvangen](rest-requests)
-* [OAuth2 koppelingen](rest-oauth)
-* [Setting up Copernica REST service](./setting-up-copernica-rest-service)
+* [Externe OAuth2 koppelingen](rest-oauth)
 * [REST events](./rest-get-events.md)
 
 ## Types voor methodes
@@ -20,11 +20,7 @@ Er zijn vier verschillende soorten methodes in de REST API:
 * **PUT**: Wordt gebruikt om data te overschrijven
 * **DELETE**: Wordt gebruikt om data te verwijderen
 
-In de praktijk is het verschil tussen POST en PUT methodes erg klein. 
-Hoewel in de meeste gevallen een POST en PUT verzoek naar dezelfde URL 
-hetzelfde resultaat zullen hebben raden wij aan om de methode te kiezen 
-die in de documentatie wordt aangegeven om verwarring in de toekomst te 
-voorkomen.
+Meer informatie over HTTP request kun je vinden in de [introductie](./rest-introduction).
 
 ## Inhoud
 
@@ -251,8 +247,8 @@ calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvr
 ## Logfiles & Statistieken
 
 Copernica houdt uitgebreide data bij over alles gerelateerd aan een 
-mailing. Je kunt alle calls gerelateerd aan logfiles en statistieken in 
-de onderstaande tabel vinden.
+mailing, waaronder [events](./rest-get-events). Je kunt alle calls 
+gerelateerd aan logfiles en statistieken in de onderstaande tabel vinden.
 
 | Type   | Adres                                                                                        | Omschrijving
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------

@@ -4,12 +4,12 @@ The REST API allows you to retrieve and update the data that is stored inside
 Copernica from out of your own website or app. You can write your own scripts 
 that send requests and instructions to our servers to fetch this data or
 to update it. You can use this API to automatically synchronize the data in 
-Copernica with your own system, without any human interference.
+Copernica with your own system, without any human interference. This page 
+contains an overview of all API calls.
 
-* [Introduction: the REST api in a nutshell](rest-introduction)
-* [Send and receive HTTP requests](rest-requests)
-* [Fancy OAuth2 links](rest-oauth)
-* [Setting up Copernica REST service](./setting-up-copernica-rest-service)
+* [Introduction & registration](rest-introduction)
+* [Sending and receiving HTTP requests](rest-requests)
+* [External OAuth2 links](rest-oauth)
 * [REST events](./rest-get-events.md)
 
 ## Method types
@@ -21,12 +21,10 @@ There are four types of methods:
 * **PUT**: Used to overwrite existing data
 * **DELETE**: Used to delete data
 
-In practice the difference between POST and PUT methods is very small. 
-In most cases a PUT and POST request will yield the same result, but we 
-recommend using the method specified in the documentation to prevent 
-issues in the future.
+See the [introduction](./rest-introduction) for more information about 
+HTTP requests.
 
-## Content
+## Overview
 
 Use the links to jump to the type of API call you are looking for.
 
@@ -247,7 +245,8 @@ calls.
 ## Logfiles & Statistics
 
 Copernica keeps extensive logfiles about everything that happens to your 
-emails after sending. You can find all calls related to logfiles and statistics 
+emails after sending, including [events](./-rest-get-events). You can 
+find all calls related to logfiles and statistics 
 in the table below.
 
 | Type   | Address                                                                                      | Description                                  |
