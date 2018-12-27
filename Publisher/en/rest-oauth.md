@@ -122,4 +122,5 @@ making API calls on behalf of the user who gave you access to his account.
 
 ## More information
 
-* [Introduction to the REST API](rest-api)
+* [Introduction to the REST API](rest-introduction)
+* [Overview of all API calls](rest-api)

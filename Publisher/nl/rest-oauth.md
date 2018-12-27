@@ -95,5 +95,5 @@ doen, en de gegevens in het desbetreffende account op te vragen.
 
 ## Meer informatie
 
-* [Introductie tot de REST API](rest-api)
+* [Introductie tot de REST API](rest-introductie)
 * [Overzicht van alle API calls](rest-api)

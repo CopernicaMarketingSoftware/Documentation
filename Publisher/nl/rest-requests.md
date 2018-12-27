@@ -1,16 +1,17 @@
 # Requests en replies van de REST API
 
-Als je een website of app hebt gekoppeld aan [de REST API](rest-api) van Copernica,
-dan kan deze applicatie HTTP requests sturen naar het *endpoint* van de API
-op onze server. Het adres van dit endpoint is 
+Na het [registreren van je applicatie](./rest-introduction) kan deze 
+HTTP requests sturen naar het *endpoint* van de API op onze server. 
+Het adres van dit endpoint is:
+
 `https://api.copernica.com/v2/path/to/resource?access_token=yourtoken`.
 
-Het "/path/to/resource" deel van de URL is voor elk request anders, en bepaalt
+Het "/path/to/resource" deel van de URL is voor elk verzoek anders, en bepaalt
 welke data je opvraagt of wijzigt. Ook moet je aan de URL altijd een **access_token**
 parameter toevoegen om jouw applicatie te identificeren.
 
 Je kunt HTTP GET requests sturen om data op te vragen, HTTP POST en HTTP PUT
-om gegevens toe te voegen of te wijzigen, en HTTP DELETE om dingen te verwijderen.
+om gegevens toe te voegen of te wijzigen, en HTTP DELETE om gegevens te verwijderen.
 De data die je bij een GET request terugkrijgt is meestal een JSON object. Voor
 POST, PUT en DELETE requests zit het antwoord in de header.
 

@@ -1,15 +1,17 @@
 # REST API requests and replies
 
-Once you have connected a website or app to [the Copernica REST API](./rest-api.md),
-you can start sending HTTP requests to the API endpoint. The address of this 
-endpoint is *https://api.copernica.com/v2/path/to/resource?access_token=yourtoken*,
-where the "/path/to/resource" part of the URL identifies the data that you're
-fetching or updating. With every request you have to append an *access_token*
-variable to the URL to identify your application and the account that is being accessed.
+You can start sending HTTP requests to the API endpoint after 
+[registering your application](./rest-introduction). The address of the 
+endpoint is:
+
+`https://api.copernica.com/v2/path/to/resource?access_token=yourtoken`
+
+Where "/path/to/resource" differs depending on the call you are executing. 
+You should also always add your access token to the call.
 
 Just like every REST API, you use HTTP GET requests to retrieve data, POST
-and PUT requests to add or overwrite data, and HTTP DELETE to remove things.
-The HTTP GET requests normally return a JSON string as body data. The other
+and PUT requests to create or overwrite data, and HTTP DELETE to remove data.
+The HTTP GET requests usually return a JSON string as body data. The other
 requests (POST, PUT and DELETE) do not return body data, but do add a header
 holding the identifier of the resource that was created, updated or removed.
 
@@ -19,7 +21,7 @@ There are two ways to encode the data that you send with POST and PUT requests: 
 the traditional *application/x-www-form-urlencoded* content-type, or using the 
 *application/json* content-type. The Copernica API server inspects the content-type
 header of your request to decide how the request body should be treated: as normal
-HTTP POST data, or as a JSON object.
+HTTP POST data or as a JSON object.
 
 JSON is the most powerful and therefore recommended way to send data to the API, 
 because it allows you to send nested data structures. But we also recognize 
@@ -32,7 +34,7 @@ request that you should send to the API to add a profile to database with ID 123
     
     {"email":"info@example.com"}
 
-Instead of JSON encoding, you can also use the old-fashioned form encoding: 
+Instead of JSON encoding, you can also use the old-fashioned form encoding:
 
     POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
     Host: api.copernica.com
@@ -40,7 +42,7 @@ Instead of JSON encoding, you can also use the old-fashioned form encoding:
     
     email=info@example.com
 
-De content-type header is only used for POST and PUT requests. For GET and 
+The content-type header is only used for POST and PUT requests. For GET and 
 DELETE requests we do not accept body data.
 
 ## The response from Copernica
