@@ -242,8 +242,8 @@ calls.
 | POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Create a request for all data stored for an emailaddress    |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Create a request for all data stored for a profile          |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile       |
-| GET    | [api.copernica.com/v2/datarequest/$id/data]                                                  | Fetch the data of a previous data request                   |
-| GET    | [api.copernica.com/v2/datarequest/$id/status]                                                | Fetch the status of a previous data request                 |
+| GET    | [api.copernica.com/v2/datarequest/$id/data](./rest-get-datarequest-data)                     | Fetch the data of a previous data request                   |
+| GET    | [api.copernica.com/v2/datarequest/$id/status](./rest-get-datarequest-status)                 | Fetch the status of a previous data request                 |
 
 ## Logfiles & Statistics
 
