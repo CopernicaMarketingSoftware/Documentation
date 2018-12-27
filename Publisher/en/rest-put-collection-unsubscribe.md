@@ -42,9 +42,6 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// declare the id of the collection that you want to edit
-$id = 1;
-
 // data to be sent to the api
 $data = array(
     'behavior'      =>  'update',
