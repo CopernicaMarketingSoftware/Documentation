@@ -12,6 +12,9 @@ contains an overview of all API calls.
 * [External OAuth2 links](./rest-oauth)
 * [REST events](./rest-get-events.md)
 
+We are currently on version 2 of the REST API. [This article](./rest-introduction#REST version) 
+explains the new version in full detail.
+
 ## Method types
 
 There are four types of methods:

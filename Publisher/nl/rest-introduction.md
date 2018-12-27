@@ -7,6 +7,32 @@ of te verwijderen (HTTP DELETE). Deze verzoeken worden behandeld door onze
 API servers, waarna er eventueel data teruggestuurd kan worden in een 
 formaat dat makkelijk te begrijpen is voor een computer (JSON in dit geval).
 
+## REST versie
+
+Versie 2 van de API is de meest recente versie. In deze nieuwere versie 
+zijn een aantal API calls verplaatst om het duidelijk te maken welke 
+calls uniek zijn voor de Marketing Suite of de Publisher. Het voordeel 
+aan deze nieuwe versie is dat deze duidelijker is en een aantal nieuwe 
+calls bevat die je helpen data over je mailings te beheren.
+
+### Upgraden naar v2
+
+1. Als je onze CopernicaRestAPI klasse gebruikt kun je deze nu instantiëren 
+met een versie parameter. Op het moment heb je iets als de volgende regel 
+in je code staan.
+
+`$api = new CopernicaRestAPI("your-access-token");`
+
+Ten eerste moet de klasse vervangen worden met de [verbeterde klasse](./rest-php) 
+die beide versies van de API ondersteunt, waarna je de eerder genoemde 
+code kunt veranderen naar:
+
+`$api = new CopernicaRestAPI("your-access-token", 2);`
+
+2. Als je calls gebruikt om mailings of data hierover op te vragen 
+zijn deze waarschijnlijk verplaatst. Gebruik onze documentatie om de URL's 
+te updaten.
+
 ## Registreren van je applicatie of website
 
 Om ongeautoriseerde toegang te voorkomen wordt de API beschermd met access 

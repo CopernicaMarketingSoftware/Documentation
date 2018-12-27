@@ -6,6 +6,29 @@ modify data (HTTP PUT) or delete data (HTTP DELETE). These requests are
 processed by our API servers and if the call results in data it will be sent 
 back in a format that can easily be handled by computers (JSON).
 
+## REST version
+
+Currently we are using version 2 of the API. In this newest version some calls 
+were moved to make it clearer which calls were unique to the Marketing Suite 
+or the Publisher. The new version of the API is easier to understand and 
+offers some new calls to help you manage all data surrounding your mailings.
+
+### Upgrading to v2
+
+1. If you are using our CopernicaRestAPI class you can now instantiate it 
+with a version parameter. Your instantiation currently should look somewhat like this:
+
+`$api = new CopernicaRestAPI("your-access-token");`
+
+You should replace the class with the [updated code](./rest-php) that 
+supports both versions and change the line constructing the class to the 
+following:
+
+`$api = new CopernicaRestAPI("your-access-token", 2);`
+
+2. Check all of the URL's you use for your mailing related calls. They have 
+been moved and the new locations can be found in our documentation.
+
 ## Registering your app
 
 To prevent unauthorized applications from accessing the API we have protected 

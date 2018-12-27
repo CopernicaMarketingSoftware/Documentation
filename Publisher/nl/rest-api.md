@@ -11,6 +11,9 @@ Deze pagina bevat een overzicht van alle API calls.
 * [Externe OAuth2 koppelingen](rest-oauth)
 * [REST events](./rest-get-events.md)
 
+De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST versie) 
+gaat hier dieper op in.
+
 ## Types voor methodes
 
 Er zijn vier verschillende soorten methodes in de REST API:
