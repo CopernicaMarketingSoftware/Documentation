@@ -51,7 +51,7 @@ $parameters = array(
 );
     
 // do the call, and print result
-print_r($api->get("view/{$viewID}/rules", $parameters));
+print_r($api->get("miniview/{$miniviewID}/rules", $parameters));
 ```
     
 The example above requires the [CopernicaRestApi class](rest-php).

@@ -31,15 +31,15 @@ Gebruik de onderstaande links om naar de gewenste API calls te
 navigeren:
 
 * [Account](./rest-api#Account)
-* [Databases & Collecties](./rest-api#Databases & Collecties)
-* [Selecties & Miniselecties](./rest-api#Selecties & Miniselecties)
-* [Regels & Miniregels](./rest-api#Regels & Miniregels)
-* [Profielen & Subprofielen](./rest-api#Profielen & Subprofielen)
+* [Databases & Collecties](./rest-api#Databases-&-Collecties)
+* [Selecties & Miniselecties](./rest-api#Selecties-&-Miniselecties)
+* [Regels & Miniregels](./rest-api#Regels-&-Miniregels)
+* [Profielen & Subprofielen](./rest-api#Profielen-&-Subprofielen)
 * [E-mailadressen](./rest-api#E-mailadressen)
-* [Publisher Mailings](./rest-api#Publisher Mailings)
-* [Marketing Suite Mailings](./rest-api#Marketing Suite Mailings)
+* [Publisher Mailings](./rest-api#Publisher-Mailings)
+* [Marketing Suite Mailings](./rest-api#Marketing-Suite-Mailings)
 * [Dataverzoeken](./rest-api#Dataverzoeken)
-* [Logfiles & Statistieken](./rest-api#Logfiles & Statistieken)
+* [Logfiles & Statistieken](./rest-api#Logfiles-&-Statistieken)
 
 ## Account
 
@@ -244,8 +244,8 @@ calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvr
 | POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken dataverzoek voor een e-mailadres    |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken dataverzoek voor een profiel        |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken dataverzoek voor een subprofiel     |
-| GET    | [api.copernica.com/v2/datarequest/$id/data]                                                  | Opvragen data van een dataverzoek            |
-| GET    | [api.copernica.com/v2/datarequest/$id/status]                                                | Opvragen status van een dataverzoek          |
+| GET    | [api.copernica.com/v2/datarequest/$id/data](./rest-get-datarequest-data)                     | Opvragen data van een dataverzoek            |
+| GET    | [api.copernica.com/v2/datarequest/$id/status](./rest-get-datarequest-status)                 | Opvragen status van een dataverzoek          |
 
 ## Logfiles & Statistieken
 
