@@ -1,22 +1,23 @@
 # REST API: GET events
 
 Copernica houdt alle processen rondom je mailing in de gaten. De events die worden gelogd zijn:
-afleveringen, bounces, clicks, opens, etc. Deze events komen terecht in de log files. Vervolgens
-kun je deze log files opvragen via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 
+afleveringen, bounces, clicks, opens, etc. Deze events komen terecht in de logfiles. Vervolgens
+kun je deze log files opvragen via de REST API. Het kan natuurlijk ook voorkomen dat je op zoek bent 
 naar specifieke events. De flexibele API geeft je de mogelijkheid om deze events 
-op te vragen. Je doet dit middels een van de volgende URLs:
+op te vragen. In de onderstaande tabel vindt je de ondersteunde calls en links 
+naar de volledige documentatie hiervan:
 
-| Call                                                                                            | Beschrijving                        |
-|-------------------------------------------------------------------------------------------------|-------------------------------------|
-|https://api.copernica.com/v2/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx | Events voor tags.                   |
-|https://api.copernica.com/v2/email/$email/events?access_token=xxxx                               | Events voor een emailadres.         |
-|https://api.copernica.com/v2/profile/$id/events?access_token=xxxx                                | Events voor een profiel.            |
-|https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx                             | Events voor een subprofiel.         |
-|https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx                             | Events voor een MS bericht.         |
-|https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx                            | Events voor een MS template.        |
-|https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx                      | Events voor een Publisher bericht.  |
-|https://api.copernica.com/v2/publisher/template/$id/events?access_token=xxxx                     | Events voor een Publisher template. |
-|https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx                     | Events voor een Publisher document. |
+| Call                                                                                              | Beschrijving                        |
+|---------------------------------------------------------------------------------------------------|-------------------------------------|
+|[api.copernica.com/v2/tags/$tag1;$optionaltag2;$optionaltag3;.../events](./rest-get-tags-events)   | Events voor tags                    |
+|[api.copernica.com/v2/email/$email/events](./rest-get-email-events)                                | Events voor een emailadres          |
+|[api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                               | Events voor een profiel             |
+|[api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                         | Events voor een subprofiel          |
+|[api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                         | Events voor een MS bericht          |
+|[api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                       | Events voor een MS template         |
+|[api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)           | Events voor een Publisher bericht   |
+|[api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)         | Events voor een Publisher template  |
+|[api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)         | Events voor een Publisher document  |
 
 ## Beschikbare parameters
 
@@ -80,104 +81,6 @@ Na het verzoek ontvang je de volgende JSON:
 ```
 De **event** property in de JSON geeft het type event weer. De mogelijke
 types staan beschreven op de [event types pagina](./event-types.md).
-
-
-## Events bij een bericht
-
-Events bij een met Marketing Suite verstuurd bericht kun je opvragen
-door een request te doen naar:
-
-`https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx`
-
-Je krijgt vervolgens de informatie over dit bericht vanaf
-het moment van verzenden tot één maand na verzenden. Als je deze informatie
-voor een met Publisher verstuurd bericht wilt hebben kun je een request te
-sturen naar:
-
-`https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx`
-
-Je kunt de gegevens over een andere periode opvragen door een **start**
-en/of **end** parameter meegeven.
-
-## Events bij een e-mailadres
-
-Events bij een specifiek e-mailadres kun je opvragen door een request
-te sturen naar:
-
-`https://api.copernica.com/v2/email/$email/events?access_token=xxxx`
-
-Je krijgt alle events die bij dit e-mailadres horen tot een maand geleden.
-Als je de informatie voor een andere periode wilt kun je een **start** en/of
-**end** parameter meegeven.
-
-Je kunt de **tag** parameter gebruiken als je wilt filteren op tags.
-
-## Events bij tags
-
-Events bij een tag kun je opvragen door een request te sturen naar:
-
-`https://api.copernica.com/v2/tags/$tag1/events?access_token=xxxx`
-
-Je krijgt alle events die bij deze tag horen tot een maand geleden. 
-Je kunt ook op meerdere tags tegelijkertijd filteren door de tags te scheiden
-met puntkomma's:
-
-`https://www.smtpeter.com/v2/tags/TAG1/TAG2/TAG3/.../events?acces_token=xxx`
-
-De geretourneerde JSON bevat alleen events voor berichten die alle tags
-bevatten.
-
-## Events bij een profiel
-
-Events bij een profiel kun je opvragen door een request te sturen naar:
-
-`https://api.copernica.com/v2/profile/$id/events?access_token=xxxx`
-
-waar `$id` vervangen moet worden door de numerieke identifier van het profiel.
-Je krijgt vervolgens de events tot een maand terug voor dit profiel. Als
-je de events voor een andere periode wilt dan kun je een **start** en/of
-**end** parameter gebruiken.
-Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
-
-## Events bij een subprofiel
-
-Events bij een subprofiel kun je opvragen door een request te sturen naar:
-
-`https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx`
-
-waar `$id` vervangen moet worden door de numerieke identifier van het subprofiel.
-Je krijgt vervolgens de events tot een maand terug. Als je events voor een
-andere periode wilt dan kun jee een **start** en/of **end** parameter gebruiken.
-Optioneel kun je ook filteren op tags door een **tags** parameter mee te geven.
-
-## Events bij een template
-
-Events bij een Marketing Suite template kun je opvragen door een request
-te sturen naar:
-
-`https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx`
-
-`$id` is hier de numerieke identifier van de Marketing Suite template
-waarvoor je de events wilt hebben. Als je de events voor een Publisher
-template wilt hebben kun je een request sturen naar:
-
-`https://api.copernica.com/v2/publisher/template/$id/events?access_token=xxxx`
-
-Je krijgt vervolgens de events tot een maand terug voor de betreffende
-template. Als je de events voor een andere periode wilt hebben kun je
-optioneel een **start** en/of **end** parameter meegeven. Optioneel kun je ook
-filteren op tags door een **tags** parameter mee te geven.
-
-## Events bij een document
-
-Events bij een document kun je opvragen door een request te sturen naar:
-
-`https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx`
-
-Je krijgt vervolgens de events tot een maand terug van dit document. Als 
-je events voor een andere periode wilt hebben dan kun je een **start** 
-en/of **end** parameter meegeven. Optioneel kun je ook filter op tags 
-door een **tags** parameter mee te geven.
 
 ## Meer informatie
 

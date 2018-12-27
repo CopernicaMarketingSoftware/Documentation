@@ -1,7 +1,7 @@
 # REST API: Geregistreerde uitschrijvingen in Marketing Suite
 
 Berichten verzonden via Marketing Suite die een uitschrijving hebben veroorzaakt 
-worden bijgehouden in de cdm-unsubscribe log files. Je kunt de 
+worden bijgehouden in de cdm-unsubscribe logfiles. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
@@ -10,7 +10,7 @@ bevatten de volgende informatie.
 | ------------ | --------------------------------------------- |
 | id           | ID van het bericht                            |
 | time         | Tijdstip van uitschrijving                    |
-| email        | E-mailadres van de ontvanger                   |
+| email        | E-mailadres van de ontvanger                  |
 | tags         | Tags van de mail, gescheiden door puntkommas  |
 | senderdomain | Domein van de verzender                       |
 | profile      | ID van het profiel                            |

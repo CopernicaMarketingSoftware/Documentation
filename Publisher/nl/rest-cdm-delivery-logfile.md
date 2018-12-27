@@ -1,7 +1,7 @@
 # REST API: Ontvangst registratie in Marketing Suite
 
 Elke mail die verstuurd is via Marketing Suite en is aangekomen wordt 
-opgeslagen in de cdm-delivery log files. Je kunt de 
+opgeslagen in de cdm-delivery logfiles. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
@@ -11,7 +11,7 @@ bevatten de volgende informatie.
 | id           | ID van het bericht                            |
 | time         | Tijdstip van aflevering                       |
 | attempts     | Aantal pogingen tot versturen                 |
-| email        | E-mailadres van de ontvanger                   |
+| email        | E-mailadres van de ontvanger                  |
 | tags         | Tags van de mail, gescheiden door puntkommas  |
 | senderdomain | Domein van de verzender                       |
 | profile      | ID van het profiel van de ontvanger           |

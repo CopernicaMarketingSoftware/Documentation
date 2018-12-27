@@ -250,18 +250,19 @@ Copernica houdt uitgebreide data bij over alles gerelateerd aan een
 mailing, waaronder [events](./rest-get-events). Je kunt alle calls 
 gerelateerd aan logfiles en statistieken in de onderstaande tabel vinden.
 
-| Type   | Adres                                                                                        | Omschrijving
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------
-| GET    | [api.copernica.com/v2/tags/$tag/events](./rest-get-tags-events)                              | Fetch all events for a tag
-| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Fetch all MS message events
-| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Fetch all MS template events
-| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Fetch all Publisher document events
-| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Fetch all Publisher message events
-| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Fetch all Publisher template events
-| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events
-| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Fetch logfiles
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch all logfile names
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-csv)                                     | Fetch logfiles in CSV format
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-json)                                    | Fetch logfiles in JSON format
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-xml)                                     | Fetch logfiles in XML format
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/tags/$tag/events](./rest-get-tags-events)                              | Fetch all events for a tag                    |
+| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Fetch all MS message events                   |
+| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Fetch all MS template events                  |
+| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Fetch all Publisher document events           |
+| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Fetch all Publisher message events            |
+| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Fetch all Publisher template events           |
+| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events                      |
+| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                   |
+| GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Opvragen van alle events voor een e-mailadres |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Fetch logfiles                                |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch all logfile names                       |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-csv)                                     | Fetch logfiles in CSV format                  |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-json)                                    | Fetch logfiles in JSON format                 |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-xml)                                     | Fetch logfiles in XML format                  |

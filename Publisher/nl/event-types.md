@@ -27,3 +27,8 @@ beschreven op de pagina van het type.
 | [open](./rest-pom-impression-logfile.md)         | Informatie over het aantal impressies van een e-mail, verstuurd met Marketing Suite            |
 | [retry](./rest-pom-retry-logfile.md)             | Informatie over e-mails, verstuurd met de Publisher waar nog een poging is geprobeerd          |
 | [unsubscribe](./rest-pom-unsubscribe-logfile.md) | Informatie over e-mails, verstuurd met Marketing Suite die tot een unsubscribe hebben geleid   |
+
+## Meer informatie
+
+* [Overzicht van alle REST API calls](./rest-api)
+* [REST events](./rest-get-events)

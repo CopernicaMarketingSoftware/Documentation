@@ -8,7 +8,7 @@ respective order:
 
 | Data         | Description                                             |
 | ------------ | ------------------------------------------------------- |
-| id           | The ID of the message the triggered the impression     |
+| id           | The ID of the message the triggered the impression      |
 | time         | The time when the impression took place                 |
 | ip           | The IP address from which the impression was triggered  |
 | header       | The header of the request for the impression            |

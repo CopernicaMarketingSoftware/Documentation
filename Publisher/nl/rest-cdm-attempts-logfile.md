@@ -38,7 +38,6 @@ informatie.
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
-
 ## Meer informatie over log files
 
 * [Overzicht van alle API calls](rest-api)

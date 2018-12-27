@@ -2,7 +2,7 @@
 
 Als een bericht uit Marketing Suite niet meteen aankomt proberen we het 
 opnieuw te verzenden, deze herzendingen worden bijgehouden in de cdm-retry 
-log files. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. 
+logfiles. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. 
 Zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. 
 De logfiles bevatten de volgende informatie.
 
@@ -11,7 +11,7 @@ De logfiles bevatten de volgende informatie.
 | id           | ID van het bericht                           |
 | time         | Tijdstip van de verzendpoging                |
 | attempt      | Aantal pogingen tot tijdstip van de poging   |
-| email        | E-mailadres van de ontvanger                  |
+| email        | E-mailadres van de ontvanger                 |
 | tags         | Tags van de mail, gescheiden door puntkommas |
 | senderdomain | Domein van de verzender                      |
 | profile      | ID van het profiel van de ontvanger          |

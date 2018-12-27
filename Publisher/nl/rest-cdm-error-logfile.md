@@ -1,7 +1,7 @@
 # REST API: Error registratie in Marketing Suite
 
 Elk bericht dat een error heeft veroorzaakt en is verstuurd vanuit Marketing 
-Suite is opgeslagen in de cdm-error log files. Je kunt de 
+Suite is opgeslagen in de cdm-error logfiles. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
@@ -14,7 +14,7 @@ bevatten de volgende informatie.
 | status       | Status van de error                                 |
 | description  | Omschrijving van de error                           |
 | code         | Code van de error                                   |
-| email        | E-mailadres van de ontvanger                         |
+| email        | E-mailadres van de ontvanger                        |
 | tags         | Tags van het bericht, gescheiden door puntkommas    |
 | senderdomain | Domein van de verzender                             |
 | profile      | ID van het profiel van de ontvanger                 |

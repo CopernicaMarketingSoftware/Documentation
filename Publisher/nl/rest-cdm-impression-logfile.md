@@ -1,7 +1,7 @@
 # REST API: Impressie registratie in Marketing Suite
 
 Elke impressie van berichten verstuurd met de Marketing Suite is
-opgeslagen in de cdm-impression log files. Je kunt de 
+opgeslagen in de cdm-impression logfiles. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
@@ -20,7 +20,7 @@ bevatten de volgende informatie.
 | city         | Naam van de stad waar de impressie gebeurde       |
 | senderdomain | Domein van de verzender                           |
 | profile      | ID van het profiel van de ontvanger               |
-| subprofile   | Id van het subprofiel van de ontvanger            |
+| subprofile   | ID van het subprofiel van de ontvanger            |
 | template     | ID van de gebruikte template                      |
 
 ## Andere logfiles

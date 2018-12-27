@@ -1,21 +1,22 @@
 # Rest API: GET events
 
 Everything that happens with your mailings gets logged: deliveries, bounces, clicks, opens, etc..
-All these events are written to log files. These log files are accessible through the 
-REST API. Yet, if you are only interested in particular events that fulfill a certain 
-requirement you can use the events rest call. All calls that are supported are:
+All of these events are written to log files. These log files are accessible through the 
+REST API. However, if you are only interested in particular events that fulfill a certain 
+requirement you can use the events REST calls. You can find all supported calls and links 
+to their full documentation in the table below:
 
-| Call                                                                                                | Description                     |
-|-----------------------------------------------------------------------------------------------------|---------------------------------|
-| https://api.copernica.com/v2/tags/$tag1;$optionaltag2;$optionaltag3;.../events?access_token=xxxx    | Events for a tag                |
-| https://api.copernica.com/v2/email/$email/events?access_token=xxxx                                  | Events for an email address     |
-| https://api.copernica.com/v2/profile/$id/events?access_token=xxxx                                   | Events for a profile            |
-| https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx                                | Events for a subprofile         |
-| https://api.copernica.com/v2/ms/message/$id/events?access_token=xxxx                                | Events for an MS message        |
-| https://api.copernica.com/v2/ms/template/$id/events?access_token=xxxx                               | Events for an MS template       |
-| https://api.copernica.com/v2/publisher/message/$id/events?access_token=xxxx                         | Events for a Publisher message  |
-| https://api.copernica.com/v2/publisher/template/$id/events?access_token=xxxx                        | Events for a Publisher template |
-| https://api.copernica.com/v2/publisher/document/$id/events?access_token=xxxx                        | Events for a Publisher document |
+| Call                                                                                              | Description                     |
+|---------------------------------------------------------------------------------------------------|---------------------------------|
+|[api.copernica.com/v2/tags/$tag1;$optionaltag2;$optionaltag3;.../events](./rest-get-tags-events)   | Events for a tag                |
+|[api.copernica.com/v2/email/$email/events](./rest-get-email-events)                                | Events for an email address     |
+|[api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                               | Events for a profile            |
+|[api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                         | Events for a subprofile         |
+|[api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                         | Events for an MS message        |
+|[api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                       | Events for an MS template       |
+|[api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)           | Events for a Publisher message  |
+|[api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)         | Events for a Publisher template |
+|[api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)         | Events for a Publisher document |
 
 ## Available parameters
 
@@ -83,101 +84,6 @@ The layout of this json is:
 
 The `event` property in the JSON describes which type of event it is. The types that
 are available are listed in the [event types page](./event-types.md).
-
-## Events based on a message id
-
-If you want to retrieve information about a message sent with Marketing
-Suite till one month after the message has been sent you can make a get request to:
-
-`https://api.copernica.com/v2/message/$id/events?access_token=xxxx`
-
-where `$id` is the id of the message of interest. If you want to have this
-information for a  message sent with Publisher you can make the following
-call:
-
-`https://api.copernica.com/v2/old/message/$id/events?access_token=xxxx`
-
-If you want to have events for a different period, you can specify the `start`
-and/or `end` option.
-
-## Events based on an email address
-
-If you want to retrieve information about a particular email address for
-the last monthly period, you can make a get request to:
-
-`https://api.copernica.com/v2/email/$email/events?access_token=xxxx`
-
-where `$email` is the address you are interested in. If you want to have events
-for a different period, you can specify the `start` and/or `end` option.
-Optionally, you can filter on tags as well by providing the `tags` option.
-
-## Events based on tags
-
-If you want to retrieve information about one tag, for the last monthly
-period you can make a get request to:
-
-`https://api.copernica.com/v2/tags/$tag1/events?access_token=xxxx`
-
-where `$tag1` is the tag you are interested in. Optionally you can also filter
-on multiple tags. If you want to do so, you can extend the call to:
-
-`https://www.copernica.com/v2/tags/TAG1;TAG2;TAG3;.../events?access_token=xxxx`
-
-The returned JSON will only contain information for messages that have
-all tags set. 
-
-If you want to have events for a different period, you can specify the 
-`start` and/or `end` option.
-
-## Events based on a profile
-
-If you want to retrieve the information about a particular profile for
-the last monthly period, you can make a get request to:
-
-`https://api.copernica.com/v2/profile/$id/events?access_token=xxxx`
-
-where `$id` is the profile id of interest.
-If you want to have events for a different period, you can specify the 
-`start` and/or `end` option. Optionally, you can filter on tags as well by providing
-the `tags` option.
-
-## Events based on a sub profile
-
-If you want to retrieve the information about a particular sub profile for
-the last monthly period, you can make a get request to:
-
-`https://api.copernica.com/v2/subprofile/$id/events?access_token=xxxx`
-
-where `$id` is the sub profile id of interest.
-If you want to have events for a different period, you can specify the 
-`start` and/or `end` option. Optionally, you can filter on tags as well by providing
-the `tags` option.
-
-## Events based on template
-
-If you want to retrieve the information about a particular Marketing Suite
-template for the last monthly period, you can make a get request to:
-
-`https://api.copernica.com/v2/template/$id/events?access_token=xxxx`
-
-If you want to have the events for a Publisher template you can make a call to:
-
-`https://api.copernica.com/v2/old/template/$id/events?access_token=xxxx`
-
-If you want to have events for a different period, you can specify the 
-`start` and/or `end` option. Optionally, you can filter on tags as well by providing
-the `tags` option.
-
-## Events based on a document
-
-If you want to retrieve the information about a particular document for
-the last monthly period, you can make a get request to:
-
-`https://api.copernica.com/v2/old/document/$id/events?access_token=xxxx`
-
-If you want to have events for a different period, you can specify the 
-`start` and/or `end` option. Optionally, you can filter on tags as well by providing
-the `tags` option.
 
 ## More information
 

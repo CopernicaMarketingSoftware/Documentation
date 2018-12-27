@@ -1,7 +1,7 @@
 # REST API: Geregistreerd misbruik in de Marketing Suite
 
 Elk bericht dat verstuurd is met Marketing suite en een misbruik notificatie 
-heeft veroorzaakt wordt opgeslagen in de cdm-abuse log files. Je kunt de 
+heeft veroorzaakt wordt opgeslagen in de cdm-abuse logfiles. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
@@ -35,7 +35,6 @@ bevatten de volgende informatie.
 * [Publisher impressies log](./rest-pom-impression-logfile)
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
-
 
 ## Meer informatie over log files
 
