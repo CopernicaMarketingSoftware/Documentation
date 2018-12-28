@@ -48,7 +48,7 @@ je dat zelf niet hoeft te doen.
 
 Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 
-* [Selecties: Bounces afhandelen](./tutorial-automatically-process-bounces) 
+* [Selecties: Bounces afhandelen](./automatically-process-bounces) 
 * [Selecties: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
