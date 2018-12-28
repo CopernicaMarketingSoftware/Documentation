@@ -44,15 +44,14 @@ je dat zelf niet hoeft te doen.
 * [MX](./mx)
 * [SPF](./spf)
 
-## Selectie tutorials
+## Tutorials
 
-Met selecties kun je makkelijk je email afleveren bij de juiste doelgroep. 
-Hieronder vind je tutorials voor veelvoorkomende selecties en toepassingen.
+Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 
-* [Selecties Tutorial: Bounces afhandelen](./tutorial-automatically-process-bounces) 
-* [Selecties Tutorial: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
-* [Selecties Tutorial: Nieuwsbriefselectie](./create-a-mailing-list)
-* [Selecties Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Selecties: Bounces afhandelen](./tutorial-automatically-process-bounces) 
+* [Selecties: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
+* [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 
 ### Andere
 
