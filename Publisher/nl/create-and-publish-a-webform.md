@@ -43,7 +43,7 @@ Het formulier inladen op je webpagina is op twee manieren mogelijk:
 
 ## Domein koppelen
 
-Als laatste stap dien je een eigen (sub)domein te koppelen aan je website. Je kunt dit doen in het submenu *'Website [naam] -> Domeinen'*.
+Als laatste stap dien je een eigen (sub)domein te koppelen aan je website. Je kunt dit doen in het submenu *Website [naam] -> Domeinen*.
 Nadat je het domein hebt toegevoegd zal je twee DNS wijzigingen moeten doorvoeren:
 1. een TXT record zodat wij het domein kunnen goedkeuren
 2. een CNAME record naar 'publisher.copernica.com' om de webpagina's weer te geven op de ingegeven URL.
