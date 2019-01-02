@@ -39,7 +39,7 @@ Nadat de webtemplate is aangemaakt kun je ook een website aanmaken. Onder een we
 Vervolgens kun je binnen de website een webpagina aanmaken waar je formulier op komt te staan. 
 Het formulier inladen op je webpagina is op twee manieren mogelijk:
 1. Binnen een text blok maak je gebruik van de 'feed' optie
-2. In de broncode of het text blok gebruik je de [{webform}])./personalization-functions-webform)-tag.
+2. In de broncode of het text blok gebruik je de [{webform}](./personalization-functions-webform)-tag.
 
 ## Domein koppelen
 
