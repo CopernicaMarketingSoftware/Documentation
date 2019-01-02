@@ -1,70 +1,53 @@
-# Selecties Tutorial: De nieuwsbrief selectie
+# Tutorial: Webformulier aanmaken en op een website plaatsen
 
-Volgens zowel de wet als netiquette, moeten jouw ontvangers zich uit 
-kunnen schrijven van jouw mailing lijst. Deze tutorial laat zien hoe je 
-deze uitschrijvers automatisch buiten jouw lijst van ontvangers kan laten 
-bij het versturen van een mail.
+In deze tutorial gaan we een webformulier aanmaken en op een website plaatsen.
+*Deze tutorial is geschreven voor de Publisher*
 
-Je creëert een mailinglist in drie stappen:
+## Webformulier aanmaken
+We beginnen met het aanmaken van een webformulier onder **Content**. Dit is mogelijk onder het submenu *Webformulier*.
+Na het aanmaken van het webformulier kun je beginnen met het toevoegen van velden. Je hebt hierbij de keuze uit een vijftal types:
+* Veld
+* Interesse
+* Tekstblok
+* Bestand uploaden
+* Captcha
 
-1.  Voeg een "nieuwsbrief" veld toe aan je database.
-2.  Stel je [uitschrijf gedrag](./database-unsubscribe-behavior) in en voeg uitschrijf links toe.
-3.  Maak een nieuwe mailing list aan voor nieuwsbrief ontvangers.
+**Werking van het webformulier**
+De werking van het webformulier is in te stellen onder *Webformulier [naam] -> Instellingen -> Profielen bewerken*.   
+Een webformulier heeft twee primaire opties waarmee je kunt werken:
 
-## Voeg een "nieuwsbrief" veld toe aan je database.
+1.  Op basis van een sleutelveld
+Hierbij geef je bij één of meerdere veld(en) aan dat deze gebruikt moeten worden als sleutelveld. Het systeem zoekt op basis van deze sleutelvelden in de database of het profiel al bestaat.
 
-Als iemand geen mail meer wil ontvangen moet deze zich uit kunnen schrijven. 
-Je kunt ervoor kiezen mensen volledig uit je database te verwijderen, 
-of de informatie te behouden en deze mensen niet meer actief te mailen. 
-De meeste van onze klanten kiezen de laatste optie.
+*Let op: (sub)profiel gegevens kunnen hierbij niet vooraf ingevuld worden bij het bezoeken van het formulier*
 
-Om het verschil aan te merken voegen we een veld toe dat aangeeft of 
-iemand wel of niet je nieuwsbrief wil ontvangen. Selecteer je database 
-en voeg een veld toe.
+2.  Op basis van het profiel van de ingelogde gebruiker
+Bij deze werking geef je geen sleutelvelden aan bij velden in het formulier. De gegevens van het profiel worden opgehaald op basis van de URL van je webpagina in combinatie met extra parameters:
 
-* Geef je veld een duidelijk omschrijvende naam, zoals *nieuwsbrief*.
-* Maak het veld multiple choice met waardes <empty\>, "Ja" en "Nee".
-* Klik '*Show field on overview pages*' (om het veld bij het profiel 
-zichtbaar te maken) en ‘*The field is indexed*’ (om de selectie sneller te maken) aan.
-* Sla het veld op.
+`http://subdomein.jouwdomein.nl/websitename?profile={$profile.id}&code={$profile.code}`
 
-Je hebt nu een veld aangemaakt. Nu moet je alle gebruikers in je database 
-op "Ja" zetten. Dit kan het makkelijkst in Publisher, waar meerdere profielen 
-tegelijk bewerkt kunnen worden onder de huidige selectie als je database 
-geselecteerd is. Je kunt ook [meerdere profielen bewerken](./rest-put-database-profiles) 
-met de REST API.
+## Webtemplate aanmaken
 
-### Uitschrijven
+Om het webformulier op een pagina te kunnen plaatsen dien je eerst een webtemplate aan te maken. Deze kun je aanmaken onder **Websites** *-> Template -> Nieuwe template*. Zodra het template is aangemaakt kun je de *Broncode template* vullen met HTML / CSS.
 
-Als een gebruiker zich uit wil schrijven kan deze dat doen met een 
-unsubscribe link in de mail. Je kunt deze toevoegen met de 
-[unsubscribe functie](./personalization-functions-unsubscribe) in de 
-template editor. Dit werkt alleen als je het 
-[uitschrijfgedrag](./database-unsubscribe-behavior) hebt ingesteld.
+## Website aanmaken
 
-### Selectie zonder uitschrijvers opstellen
+Nadat de webtemplate is aangemaakt kun je ook een website aanmaken. Onder een website kunnen verschillende webpagina's vallen met verschillende webtemplates. 
 
-Om uitschrijvers niet opnieuw te mailen gaan we een selectie aanmaken. 
-Je moet hier voortaan je nieuwsbrieven naartoe sturen. Alle contacten 
-die zich uit hebben geschreven worden automatisch weggelaten uit de 
-selectie.
+## Webpagina aanmaken en formulier inladen
 
--   Maak een nieuwe selectie aan.
--   Geef deze een beschrijvende naam.
--   Sla de selectie op.
--   Maak een nieuwe conditie "Check op veldwaarde" aan.
--   Selecteer je nieuwsbrief veld uit de eerste stap.
--   Selecteer *is gelijk aan* en vul bij de waarde *Ja* in.
--   Sla de conditie op.
+Vervolgens kun je binnen de website een webpagina aanmaken waar je formulier op komt te staan. 
+Het formulier inladen op je webpagina is op twee manieren mogelijk:
+1. Binnen een text blok maak je gebruik van de 'feed' optie
+2. In de broncode of het text blok gebruik je de [{webform}])./personalization-functions-webform)-tag.
 
-De selectie wordt nu vanzelf bijgewerkt en verzend mail alleen naar degenen 
-die deze willen ontvangen.
+## Domein koppelen
+
+Als laatste stap dien je een eigen (sub)domein te koppelen aan je website. Je kunt dit doen in het submenu *'Website [naam] -> Domeinen'*.
+Nadat je het domein hebt toegevoegd zal je twee DNS wijzigingen moeten doorvoeren:
+1. een TXT record zodat wij het domein kunnen goedkeuren
+2. een CNAME record naar 'publisher.copernica.com' om de webpagina's weer te geven op de ingegeven URL.
 
 ## Meer informatie
-
-* [Selecties](./database-selections-introduction)
-* [Unsubscribe functie](./personalization-functions-unsubscribe)
-* [Uitschrijfgedrag](./database-unsubscribe-behavior)
-* [Tutorial: Dubbele opt-in voor nieuwe gebruikers](./create-a-double-optin-for-new-subscribers)
-* [Tutorial: Verjaardagsselectie](./how-to-create-a-birthday-selection)
-* [Tutorial: Email bounces afhandelen](./tutorial-automatically-process-bounces)
+* [Webformulieren](./webforms)
+* [Websites](./websites)
