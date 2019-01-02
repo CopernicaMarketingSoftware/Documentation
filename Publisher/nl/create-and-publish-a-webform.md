@@ -32,7 +32,7 @@ Om het webformulier op een pagina te kunnen plaatsen dien je eerst een webtempla
 
 ## Website aanmaken
 
-Nadat de webtemplate is aangemaakt kun je ook een website aanmaken. Onder een website kunnen verschillende webpagina's vallen met verschillende webtemplates. 
+Nadat de webtemplate is aangemaakt kun je een website aanmaken. Onder een website kunnen verschillende webpagina's vallen met verschillende webtemplates. 
 
 ## Webpagina aanmaken en formulier inladen
 
@@ -47,6 +47,9 @@ Als laatste stap dien je een eigen (sub)domein te koppelen aan je website. Je ku
 Nadat je het domein hebt toegevoegd zal je twee DNS wijzigingen moeten doorvoeren:
 1. Een TXT record zodat wij het domein kunnen goedkeuren
 2. Een CNAME record naar 'publisher.copernica.com' om de webpagina's weer te geven op de ingegeven URL.
+
+De pagina is vervolgens zichtbaar via de volgende URL:
+`https://subdomein.domein.nl/webpaginanaam`
 
 ## Meer informatie
 * [Webformulieren](./webforms)
