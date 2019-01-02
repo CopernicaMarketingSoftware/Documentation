@@ -1,6 +1,7 @@
 # Tutorial: Webformulier aanmaken en op een website plaatsen
 
 In deze tutorial gaan we een webformulier aanmaken en op een website plaatsen.
+
 *Deze tutorial is geschreven voor de Publisher*
 
 ## Webformulier aanmaken
@@ -13,17 +14,16 @@ Na het aanmaken van het webformulier kun je beginnen met het toevoegen van velde
 * Captcha
 
 **Werking van het webformulier**
-De werking van het webformulier is in te stellen onder *Webformulier [naam] -> Instellingen -> Profielen bewerken*.   
+
+De werking van het webformulier is in te stellen onder *Webformulier [naam] -> Instellingen -> Profielen bewerken*.
 Een webformulier heeft twee primaire opties waarmee je kunt werken:
 
 1.  Op basis van een sleutelveld
 Hierbij geef je bij één of meerdere veld(en) aan dat deze gebruikt moeten worden als sleutelveld. Het systeem zoekt op basis van deze sleutelvelden in de database of het profiel al bestaat.
-
 *Let op: (sub)profiel gegevens kunnen hierbij niet vooraf ingevuld worden bij het bezoeken van het formulier*
 
 2.  Op basis van het profiel van de ingelogde gebruiker
 Bij deze werking geef je geen sleutelvelden aan bij velden in het formulier. De gegevens van het profiel worden opgehaald op basis van de URL van je webpagina in combinatie met extra parameters:
-
 `http://subdomein.jouwdomein.nl/websitename?profile={$profile.id}&code={$profile.code}`
 
 ## Webtemplate aanmaken
@@ -45,8 +45,8 @@ Het formulier inladen op je webpagina is op twee manieren mogelijk:
 
 Als laatste stap dien je een eigen (sub)domein te koppelen aan je website. Je kunt dit doen in het submenu *Website [naam] -> Domeinen*.
 Nadat je het domein hebt toegevoegd zal je twee DNS wijzigingen moeten doorvoeren:
-1. een TXT record zodat wij het domein kunnen goedkeuren
-2. een CNAME record naar 'publisher.copernica.com' om de webpagina's weer te geven op de ingegeven URL.
+1. Een TXT record zodat wij het domein kunnen goedkeuren
+2. Een CNAME record naar 'publisher.copernica.com' om de webpagina's weer te geven op de ingegeven URL.
 
 ## Meer informatie
 * [Webformulieren](./webforms)
