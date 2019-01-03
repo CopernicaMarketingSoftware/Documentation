@@ -5,8 +5,7 @@ In deze tutorial gaan we een webformulier aanmaken en op een website plaatsen.
 *Deze tutorial is geschreven voor de Publisher*
 
 ## Webformulier aanmaken
-We beginnen met het aanmaken van een webformulier onder **Content**. Dit is mogelijk onder het submenu *Webformulier*.
-Na het aanmaken van het webformulier kun je beginnen met het toevoegen van velden. Je hebt hierbij de keuze uit een vijftal types:
+We beginnen met het aanmaken van een webformulier onder **Content**. Dit is mogelijk onder het submenu *Webformulier -> Nieuw webformulier*. Na het aanmaken van het webformulier kun je beginnen met het toevoegen van velden. Je hebt hierbij de keuze uit een vijftal types:
 * Veld
 * Interesse
 * Tekstblok
@@ -15,7 +14,7 @@ Na het aanmaken van het webformulier kun je beginnen met het toevoegen van velde
 
 **Werking van het webformulier**
 
-De werking van het webformulier is in te stellen onder *Webformulier [naam] -> Instellingen -> Profielen bewerken*.
+Zodra je het webformulier hebt gekozen die je wilt gebruiken kun je de werking van het webformulier wijzigen onder *Webformulier [naam] -> Instellingen -> Profielen bewerken*.
 Een webformulier heeft twee primaire opties waarmee je kunt werken:
 
 1.  Op basis van een sleutelveld
@@ -38,7 +37,7 @@ Nadat de webtemplate is aangemaakt kun je een website aanmaken. Onder een websit
 
 Vervolgens kun je binnen de website een webpagina aanmaken waar je formulier op komt te staan. 
 Het formulier inladen op je webpagina is op twee manieren mogelijk:
-1. Binnen een text blok maak je gebruik van de 'feed' optie
+1. Binnen een text blok maak je gebruik van de 'formulier' optie
 2. In de broncode of het text blok gebruik je de [{webform}](./personalization-functions-webform)-tag.
 
 ## Domein koppelen
