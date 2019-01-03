@@ -105,11 +105,6 @@ malen op de spamknop hebben gedrukt naar aanleiding van je e-mailing(s).
 - **Percentage klachten:** het aantal unieke klachten, gedeeld door het
 totaal aantal bestemmingen maal 100.
 
-- **Kerncijfers vs. het dominante resultaat**
-Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
-impressies en alle kliks meegeteld, hierdoor zie je een verschil in
-aantallen impressies/kliks.
-
 # Statistieken: Dominante resultaten
 
 Bij de resultaten van e-mailings worden naast de kerncijfers ook de dominante resultaten van de mailing getoond. Per bestemming wordt het belangrijkste resultaat weergegeven. Een geregistreerde klik is belangrijker dan een impressie. De waarde die wij toekennen aan het resultaat wordt van links naar rechts weergegeven. Een fout is het minst dominant, een spamklacht het meest dominant.
