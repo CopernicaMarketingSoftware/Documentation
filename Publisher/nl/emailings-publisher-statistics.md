@@ -46,12 +46,12 @@ Om profielen of subprofielen te exporteren gebaseerd op de resultaten
 van een mailing moet je een selectie aanmaken op basis van deze resultaten. 
 Je kunt vervolgens onder **Profielen** de optie vinden om deze te exporteren.
 
-# Statistieken: Kerncijfers
+# Statistieken: Kerncijfers en dominante resultaten
 
 De tabel met kerncijfers biedt een overzicht van de belangrijkste
 resultaten van een e-mailing of een serie mailings.
 
-## Kerncijfers bij account, document en template statistieken
+## Kerncijfers
 
 - **Verzonden mailings:** Laat het totaal aantal **e-mailings** zien dat
 in de ingestelde periode is verstuurd met het account, template of
@@ -105,7 +105,7 @@ malen op de spamknop hebben gedrukt naar aanleiding van je e-mailing(s).
 - **Percentage klachten:** het aantal unieke klachten, gedeeld door het
 totaal aantal bestemmingen maal 100.
 
-# Statistieken: Dominante resultaten
+## Dominante resultaten
 
 Bij de resultaten van e-mailings worden naast de kerncijfers ook de dominante resultaten van de mailing getoond. Per bestemming wordt het belangrijkste resultaat weergegeven. Een geregistreerde klik is belangrijker dan een impressie. De waarde die wij toekennen aan het resultaat wordt van links naar rechts weergegeven. Een fout is het minst dominant, een spamklacht het meest dominant.
 
@@ -123,7 +123,7 @@ Elke bestemming wordt 1 keer geteld. Het totaal is dus altijd 100 procent. Dus o
 
 - **Spamklacht** Je ziet hoeveel unieke geadresseerden de email naar hun spambox hebben verwezen, of anderzijds een abusemelding hebben ingediend.
 
-# Kerncijfers vs. het dominante resultaat
+## Kerncijfers vs. het dominante resultaat
 
 Bij de kerncijfers (getoond boven de dominante resultaten) worden alle impressies en alle kliks meegeteld en in het dominante resultaat éénmalig.
 
