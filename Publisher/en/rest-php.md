@@ -17,11 +17,9 @@ class CopernicaRestAPI
      */
     private $token;
 
-    /**
-     *  The version
-     *  @var int
-     */
     private $version;
+
+    private $host = 'https://api.copernica.com';
 
     /**
      *  Constructor
@@ -32,7 +30,7 @@ class CopernicaRestAPI
         // copy the token
         $this->token = $token;
         
-        // copy the version
+        // set the version
         $this->version = $version;
     }
 
@@ -48,7 +46,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
+        $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(CURLOPT_RETURNTRANSFER => true));
@@ -56,11 +54,14 @@ class CopernicaRestAPI
         // do the call
         $answer = curl_exec($curl);
 
+        // do we have a JSON output? we can be nice and parse it for the user
+        if (curl_getinfo($curl, CURLINFO_CONTENT_TYPE) == 'application/json') return json_decode($answer, true);
+        
         // clean up curl resource
         curl_close($curl);
-
-        // done
-        return json_decode($answer, true);
+        
+        // it's not JSON so we out it just like that
+        return $answer;
     }
 
     /**
@@ -75,7 +76,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
+        $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -119,7 +120,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
+        $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
@@ -152,7 +153,7 @@ class CopernicaRestAPI
         $query = http_build_query(array('access_token' => $this->token));
 
         // construct curl resource
-        $curl = curl_init("https://api.copernica.com/v{$this->version}/$resource?$query");
+        $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
 
         // additional options
         curl_setopt_array($curl, array(

@@ -264,7 +264,7 @@ in the table below.
 | GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                      |
 | GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Retrieve all events related to the email address |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Fetch logfiles                                   |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch all logfile names                          |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch logfile names                               |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-csv)                                     | Fetch logfiles in CSV format                     |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-json)                                    | Fetch logfiles in JSON format                    |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-xml)                                     | Fetch logfiles in XML format                     |
