@@ -48,6 +48,7 @@ je dat zelf niet hoeft te doen.
 
 Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 
+* [Formulieren: Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
 * [Selecties: Bounces afhandelen](./automatically-process-bounces) 
 * [Selecties: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
