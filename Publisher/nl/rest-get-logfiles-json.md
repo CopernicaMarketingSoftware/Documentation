@@ -3,10 +3,10 @@
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een JSON 
 bestand met de bestandsnaam. Instructies voor het opvragen van een bestandsnaam 
-kun je vinden onder het kopje "Meer informatie". Om deze methode uit te voeren ku je een HTTP GET 
+kun je vinden onder het kopje "Meer informatie". Om deze methode uit te voeren kun je een HTTP GET 
 verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v2/logfiles/$bestandsnaam/json?access_token=xxxx`
+`https://api.copernica.com/v2/logfile/$bestandsnaam/json?access_token=xxxx`
 
 Hier moet je `$bestandsnaam` vervangen door de bestandsnaam.
 
@@ -63,7 +63,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("logfiles/{$bestandsnaam}/json"));
+print_r($api->get("logfile/{$bestandsnaam}/json"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

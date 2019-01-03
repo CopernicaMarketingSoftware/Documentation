@@ -5,7 +5,7 @@ can be used to download a logfile as JSON using its filename. If you
 don't know the filename please see "More information" for instructions. 
 To execute the method you can send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v2/logfiles/$filename/json?access_token=xxxx`
+`https://api.copernica.com/v2/logfile/$filename/json?access_token=xxxx`
 
 where `$filename` is the name of the file you want to request.
 
@@ -62,7 +62,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // do the call, and print result
-print_r($api->get("logfiles/{$filename}/json"));
+print_r($api->get("logfile/{$filename}/json"));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

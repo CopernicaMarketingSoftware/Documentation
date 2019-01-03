@@ -6,7 +6,7 @@ bestand met de bestandsnaam. Instructies voor het opvragen van een bestandsnaam
 kun je vinden onder het kopje "Meer informatie". Om de methode aan te roepen 
 verstuur je een HTTP GET verzoek naar de volgende URL:
 
-`https://api.copernica.com/v2/logfiles/$bestandsnaam/xml?access_token=xxxx`
+`https://api.copernica.com/v2/logfile/$bestandsnaam/xml?access_token=xxxx`
 
 Hier moet je `$bestandsnaam` vervangen door de bestandsnaam.
 
@@ -52,7 +52,7 @@ te vragen.
     $api = new CopernicaRestAPI("your-access-token", 2);
 
     // voer het verzoek uit en print het resultaat
-    print_r($api->get("logfiles/{$bestandsnaam}/xml"));
+    print_r($api->get("logfile/{$bestandsnaam}/xml"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

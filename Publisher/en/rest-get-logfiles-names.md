@@ -5,9 +5,12 @@ accepted messages, etc. These logfiles can be downloaded with the API.
 By sending an HTTP GET request to the following URL you will get a list of
 all log files for a particular date.
 
-`https://api.copernica.com/v2/logfiles/$date?access_token=xxxx`
+`https://api.copernica.com/v2/logfiles?access_token=xxxx&date=$date&type=$type`
 
-where `$date` is the date for which you want to see the logfiles.
+In the URL you can add the `$date` parameter to search for logfiles for a 
+specific date. You can also add `$type` to specify a specific type of 
+logfile, like cdm-attempts (attempts for Marketing Suite). You can also 
+use both. Using neither will return the [logfile dates](./rest-get-logfiles.md)
 
 ## Returned fields
 
@@ -32,6 +35,7 @@ are provided in the table below.
 | [pom-impressions](rest-pom-impressions-logfile)   | Info about impressions from mails sent with Publisher              |
 | [pom-retries](rest-pom-retries-logfile)           | Info about mails sent via Publisher for which we retry a delivery  |
 | [pom-unsubscribes](rest-pom-unsubscribes-logfile) | Info about mails sent via Publisher that triggered an unsubscribe  |
+| feedback-loop-errors                              | Info about errors in your feedback loops                           |
 
 To download a log file please see the links under "More information" to 
 find the instructions for the desired logfile format.
@@ -48,8 +52,14 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// the array used to specify the date and/or type
+$parameters = array(
+    type =>     "cdm-attempts",
+    date =>     "2019-01-01",
+);
+
 // do the call, and print result
-print_r($api->get("logfiles/{$date}"));
+print_r($api->get("logfiles", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

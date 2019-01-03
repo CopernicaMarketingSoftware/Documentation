@@ -8,11 +8,6 @@ verstuur je een HTTP GET verzoek naar de volgende URL voor een file zonder heade
 
 `https://api.copernica.com/v2/logfiles/$filename?access_token=xxxx`
 
-Om een CSV file op te vragen met een rij voor de veldnamen kun je een 
-HTTP GET verzoek sturen naar deze URL:
-
-`https://api.copernica.com/v2/logfiles/$filename/header?access_token=xxxx`
-
 In beide URLs moet je `$filename` vervangen door de bestandsnaam.
 
 
@@ -43,7 +38,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("logfiles/{$bestandsnaam}/header"));
+print_r($api->get("logfile/{$bestandsnaam}/csv"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

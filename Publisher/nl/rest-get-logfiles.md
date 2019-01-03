@@ -1,4 +1,4 @@
-# REST API: GET logfiles
+# REST API: GET logfiles (datums)
 
 Copernica houdt logfiles bij met verschillende informatie zoals clicks, 
 geopende mails, errors, geaccepteerde berichten, etc. 
@@ -21,13 +21,13 @@ in het gewenste formaat.
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit een PHP script:
 
 ```php
-    // dependencies
+    // vereiste scripts
     require_once('copernica_rest_api.php');
     
-    // change this into your access token
+    // verander dit naar je access token
     $api = new CopernicaRestAPI("your-access-token", 2);
 
-    // do the call, and print result
+    // voer het verzoek uit en print het resultaat
     print_r($api->get("logfiles"));
 ```
 

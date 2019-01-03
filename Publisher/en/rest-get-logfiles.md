@@ -1,4 +1,4 @@
-# REST API: GET logfiles
+# REST API: GET logfiles (dates)
 
 Copernica keeps logfiles about several things such as clicks, opens, 
 errors, accepted messages, etc. See  

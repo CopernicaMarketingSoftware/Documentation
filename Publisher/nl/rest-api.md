@@ -264,8 +264,8 @@ gerelateerd aan logfiles en statistieken in de onderstaande tabel vinden.
 | GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events                      |
 | GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                   |
 | GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Opvragen van alle events voor een e-mailadres |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Fetch logfiles                                |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch all logfile names                       |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-csv)                                     | Fetch logfiles in CSV format                  |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-json)                                    | Fetch logfiles in JSON format                 |
-| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-xml)                                     | Fetch logfiles in XML format                  |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Opvragen logfile datums                       |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Opvragen logfile namen                        |
+| GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Opvragen logfiles in CSV                      |
+| GET    | [api.copernica.com/v2/logfile/$filename/json](./rest-get-logfiles-json)                      | Opvragen logfiles in JSON                     |
+| GET    | [api.copernica.com/v2/logfile/$filename/xml](./rest-get-logfiles-xml)                        | Opvragen logfiles in XML                      |
