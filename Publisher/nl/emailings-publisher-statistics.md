@@ -132,4 +132,4 @@ Elke bestemming wordt 1 keer geteld. Het totaal is dus altijd 100 procent. Dus o
 
 Bij de kerncijfers (getoond boven de dominante resultaten) worden alle impressies en alle kliks meegeteld en in het dominante resultaat éénmalig.
 
-Voorbeeld: een profiel heeft een impressie en een klik dan is dit profiel bij de kerncijfers zowel bij de impressies als bij de kliks zichtbaar. Bij het dominante resultaat zal ditzelfde profiel enkel bij de kliks zichtbaar zijn (hoogste activiteit).
+Voorbeeld: een profiel heeft een impressie en een klik dan is dit profiel bij de kerncijfers zowel bij de impressies als bij de kliks zichtbaar. Bij het dominante resultaat zal ditzelfde profiel enkel bij de kliks zichtbaar zijn (belangrijkste activiteit).
