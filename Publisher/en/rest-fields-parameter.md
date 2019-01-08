@@ -61,12 +61,47 @@ and greater than operators do not conflict with other tokens in the URL.
 When using our [example PHP code](rest-php) you don't have to do this 
 as escaping characters is done automatically.
 
+## PHP example
+
+You can also add the fields parameter when executing calls with PHP. In the 
+example below it is used in the [call to retrieve profiles](./rest-get-database-profiles).
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
+
+// do the call, and print result
+print_r($api->get("database/$databaseID/profiles", $parameters));`
+```
+
 ## More information
 
-The *fields* parameter can be used within the following API methods:
+The *fields* parameter can be used within the following database API methods:
 
 * [GET database profiles](rest-get-database-profiles)
 * [GET view profiles](rest-get-view-profiles)
 * [GET collection subprofiles](rest-get-collection-subprofiles)
 * [GET miniview subprofiles](rest-get-miniview-subprofiles)
 * [PUT database profiles](rest-put-database-profiles)
+
+It is also available on the **timestamp** field for Publisher emailing abuses, clicks, 
+deliveries, errors, impressions and unsubscribes. It's also available on the 
+**timestampsent** field for the Publisher emailing destinations. You can find 
+the documentation of these calls below.
+
+* [GET emailing abuses](./rest-get-publisher-emailing-abuses)
+* [GET emailing clicks](./rest-get-publisher-emailing-clicks)
+* [GET emailing deliveries](./rest-get-publisher-emailing-deliveries)
+* [GET emailing errors](./rest-get-publisher-emailing-errors)
+* [GET emailing impressions](./rest-get-publisher-emailing-impressions)
+* [GET emailing unsubscribes](./rest-get-publisher-emailing-unsubscribes)

@@ -69,6 +69,30 @@ Als je API calls doet met behulp van onze [voorbeeld PHP code](rest-php), dan
 hoef je je hier overigens niet al te druk over te maken. Het escapen gebeurt
 dan automatisch.
 
+## PHP voorbeeld
+
+Ook kun je de fields parameter gebruiken bij het uitvoeren van calls met PHP. 
+In het onderstaande voorbeeld gebruiken we de *fields* parameter tijdens het 
+[ophalen van profielen uit de database](./rest-get-database-profiles).
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// change this into your access token
+$api = new CopernicaRestApi("your-access-token");
+
+// parameters to pass to the call
+$parameters = array(
+    'limit'     =>  100,
+    'orderby'   =>  'country',
+    'fields'    =>  array("age>16", "age<=65")
+);
+
+// do the call, and print result
+print_r($api->get("database/{$databaseID}/profiles", $parameters));`
+```
+
 ## Toepasselijke methodes
 
 De **fields** parameter kun je gebruiken bij de volgende API methodes:
@@ -79,3 +103,14 @@ De **fields** parameter kun je gebruiken bij de volgende API methodes:
 * [Opvragen van subprofielen uit een miniselectie](rest-get-miniview-subprofiles)
 * [Meerdere profielen bewerken in een database](rest-put-database-profiles)
 
+Deze parameter is ook van toepassing op het **timestamp** veld voor Publisher 
+mailing abuses, clicks, deliveries, errors, impressions en unsubscribes. 
+Ook is deze parameter beschikbaar voor het **timestampsent** veld voor de 
+Publisher emailing destinations. Je kunt de relevante documentatie hieronder vinden.
+
+* [GET emailing abuses](./rest-get-publisher-emailing-abuses)
+* [GET emailing clicks](./rest-get-publisher-emailing-clicks)
+* [GET emailing deliveries](./rest-get-publisher-emailing-deliveries)
+* [GET emailing errors](./rest-get-publisher-emailing-errors)
+* [GET emailing impressions](./rest-get-publisher-emailing-impressions)
+* [GET emailing unsubscribes](./rest-get-publisher-emailing-unsubscribes)
