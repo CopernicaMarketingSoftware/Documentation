@@ -12,11 +12,14 @@ emailings for.
 
 The following parameters are available:
 
-* **type**: Includes the type of mailings to include (mass, individual or both). Defaults to both types.
+* **type**: Includes the type of mailings to include ('mass', 'individual' or 'both').
 * **followups**: Indicates whether we should retrieve only mailings from follow-ups ('yes'), only 
-mailings *not* from follow-ups ('no') or all ('both').
-* **test**: Indicates whether we should retrieve only test mailings ('test'), only regular mailings 
-('normal') or all ('both').
+mailings *not* from follow-ups ('no') or all mailings ('both').
+* **test**: Indicates whether we should retrieve only test mailings ('yes'), only mailings that were 
+not tests ('no') or all mailings ('both').
+
+All of these parameters default to 'both', which means the result won't be 
+filtered if you don't pass any of them.
 
 ## Returned fields
 

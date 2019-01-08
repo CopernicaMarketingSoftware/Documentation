@@ -9,12 +9,15 @@ Hier moet `$id` vervangen worden door de ID van het document.
 
 ## Beschikbare parameters
 
-* **type**: Het type mailings om op te vragen: Massa ('mass') mailings 
-of individuele ('individual') mailings. Standaard worden beide opgevraagd.
+* **type**: Het type mailings om op te vragen: Massa ('mass') mailings, individuele ('individual') mailings 
+of alle mailings ('both').
 * **followups**: Geeft aan of we alleen emailings van opvolgacties ('yes') opvragen, 
 alleen emailings die geen gevolg zijn van een opvolgactie ('no') of alle emailings ('both').
-* **test**: Geeft aan of we alleen test emailings ('test') opvragen, alleen 
-mailings die geen test waren ('normal') of alle mailings ('both').
+* **test**: Geeft aan of we alleen test emailings ('yes') opvragen, alleen 
+mailings die geen test waren ('no') of alle mailings ('both').
+
+De standaardwaarde van al deze parameters is 'both'. Als je geen parameters 
+meegeeft krijg je dus alle emailings zonder dat er een filter wordt toegepast.
 
 ## Teruggegeven velden
 
