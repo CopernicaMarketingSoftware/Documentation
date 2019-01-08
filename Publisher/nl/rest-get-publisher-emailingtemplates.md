@@ -1,15 +1,14 @@
-# REST API: GET emailing template (Publisher)
+# REST API: GET emailing templates (Publisher)
 
-Je kunt de REST API gebruiken om een overzicht van een emailing template op te vragen 
+Je kunt de REST API gebruiken om een overzicht van alle emailing templates op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v2/publisher/emailingtemplate/$id?access_token=xxxx`
-
-Hier moet `$id` vervangen worden door de ID van het emailing template.
+`https://api.copernica.com/v2/publisher/emailingtemplates?access_token=xxxx`
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug dat de volgende informatie bevat:
+Deze methode geeft een JSON object met een array van emailing templates 
+in het **data** veld. Elke template bevat de volgende informatie:
 
 * **id**: De ID van de template.    
 * **name**: De naam van het template. 
@@ -28,7 +27,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailingtemplate/{$emailingTemplateID}"));
+print_r($api->get("publisher/emailingtemplates"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php)
@@ -36,5 +35,4 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php)
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van een emailing document](./rest-get-publisher-emailingdocument)
-* [Opvragen van alle emailing templates](./rest-get-publisher-emailingtemplates)
+* [Opvragen van een emailing template](./rest-get-publisher-emailingtemplate)
